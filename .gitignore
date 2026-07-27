@@ -1,0 +1,23 @@
+.DS_Store
+node_modules/
+dist/
+.astro/
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+
+# Build artefacts
+site/public/audio/
+build/
+
+# Large media — belongs in S3, not git history
+*.m4a
+*.mp3
+*.wav
+*.pdf
