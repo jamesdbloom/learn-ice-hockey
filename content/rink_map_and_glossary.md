@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is the map and the dictionary for everything else in this corpus. Every other document assumes you know where the half-wall is, what "weak-side" means, and why F1 is a job rather than a person — and every other document links here rather than re-explaining it.
+This is the map and the dictionary for everything else here. Every other document assumes you know where the half-wall is, what "weak-side" means, and why F1 is a job rather than a person — and every other document links here rather than re-explaining it.
 
 Read it once end to end. After that, use it as a lookup. If a term appears anywhere in these documents and you are not certain what it means, it is defined here.
 
@@ -49,7 +49,9 @@ The IIHF rulebook does not specify one size. It specifies a range: **60 m long a
 
 The classic "big ice" is the 30 m (98.4 ft) version — **13.4 ft wider than an NHL rink**. That is the sheet most European domestic leagues and most older Olympic tournaments used.
 
-**Don't assume "international" means "wide" any more.** The 2026 Milano Cortina Olympic tournament was played on 60 m × 26 m ice — about three feet shorter and roughly half a foot wider than an NHL rink. The 2010 Vancouver and 2022 Beijing Games also used NHL-sized sheets. The IIHF's position was that the difference is insignificant for safety and quality of play. So the wide sheet is now the exception at the top level, not the rule.
+**Don't assume "international" means "wide" any more.** The 2026 Milano Cortina Olympic tournament was played on 60 m × 26 m ice — about three feet shorter and about four inches wider than an NHL rink. The 2010 Vancouver and 2022 Beijing Games also used NHL-sized sheets. The IIHF's position was that the difference is insignificant for safety and quality of play. So the wide sheet is now the exception at the top level, not the rule.
+
+**The consequence for anyone playing outside North America — Britain included — is that "IIHF-size" is not a size.** Rule 1.2 sanctions everything from 26 m to 30 m wide, so two rinks that are both entirely legal can differ by more than thirteen feet across. Whatever your league's rulebook says, the sheet is a property of the building, not of the book. Measure it or ask, and read the next section.
 
 ### What the extra width actually changes
 
@@ -75,6 +77,8 @@ Most recreational, beer-league, youth and older community rinks are **not** buil
 - **Boards and glass in poor repair.** Dead spots in the boards eat rims. Learn your home rink's dead spots; they are a real tactical asset.
 
 **Practical instruction:** on the first shift at an unfamiliar rink, deliberately check three things — how far it is from the goal line to the end boards, whether the trapezoid is painted, and how the puck comes off the corner boards on a rim. Those three answers change your breakout.
+
+**If you play in Britain, assume nothing from the diagrams here until you have looked.** British league hockey runs the IIHF rulebook (see [Getting Started](getting_started.md)), and Rule 1.2 sanctions any sheet from 26 m to 30 m wide — so "we play IIHF rules" tells you which penalties get called and tells you nothing at all about the ice. British rinks were built across more than a century of very different building standards, so a metric sheet, an NHL-width sheet and something smaller than either are all things you will meet. **There is no published census of British rink dimensions to go on, so nothing here claims which size is most common** — which is exactly why the instruction is to look rather than to assume. The three checks above take one shift and are worth more than any published figure.
 
 ---
 
@@ -217,7 +221,7 @@ The trapezoid is the marked area behind each net inside which the goaltender is 
 
 **Where it applies:** the NHL (since 2005-06), the KHL, and IIHF play (since the unified 2021-22 rulebook). **Most rec, beer-league and youth associations do not use it.** Find out which you are under, because it changes your defencemen's retrieval game completely.
 
-> **IIHF** dimensions differ slightly: **6.80 m along the goal line, 8.60 m at the boards** (Rule 1.8), and the area is deeper simply because the IIHF goal line is 4.0 m from the boards.
+> **IIHF** dimensions differ only trivially: **6.80 m along the goal line, 8.60 m at the boards** (Rule 1.8) against the NHL's 22 ft (6.71 m) and 28 ft (8.53 m) — four inches and three inches respectively. The area is deeper, though, simply because the IIHF goal line is 4.0 m from the boards rather than 11 ft. **Note the one place the IIHF book is tidier than the NHL's:** IIHF Rule 27.7, which sets the penalty, restates the *current* 6.80 m / 8.60 m dimensions, so unlike NHL Rule 27.8 it does not leave a superseded figure sitting in the penalty rule. For a player under IIHF rules, the shape is the shape you already know.
 
 Tactically, the trapezoid is why dump-and-chase works. A puck rimmed into the corner cannot be calmly collected by the goaltender; a defenceman has to go and get it with a forechecker arriving. **Aim your dump-ins away from the trapezoid.**
 
@@ -405,7 +409,7 @@ The slot is layered, and the layers have different jobs:
 
 ## 6. Directional and relational vocabulary
 
-These words are used in every other document in this corpus. They are all **relative**, which is exactly what makes them hard at first and useful once they click.
+These words are used in every other document here. They are all **relative**, which is exactly what makes them hard at first and useful once they click.
 
 ### High and low
 
@@ -473,7 +477,7 @@ Note the asymmetry: **wide is safe for you and bad for them.** A shot from wide 
 
 **Five skaters and a goaltender** per side at even strength. An NHL team dresses **20 players — 18 skaters and 2 goaltenders** (Rule 5.1), normally organised as four forward lines and three defence pairs.
 
-Note that **"defender", "defenceman", "defenseman" and "D" all mean the same position** and all appear across this corpus, as do **"centre"** and **"center"**.
+Note that **"defender", "defenceman", "defenseman" and "D" all mean the same position** and all appear throughout, as do **"centre"** and **"center"**.
 
 ### F1 / F2 / F3 — roles, not people
 
@@ -668,7 +672,7 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 
 *USA Hockey: [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), which limits the shorthanded icing nullification to Youth 15-Only and above, Girls 16U and above, High School and Adult classifications*
 
-*International: [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rules 1.2, 1.3, 1.5, 1.6, 1.7, 1.8, 1.9 and Appendix VI Infographics · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game) · [IIHF Statement on Ice Hockey Rink (Milano Cortina 2026)](https://www.olympics.com/en/milano-cortina-2026/news/iihf-statement-on-ice-hockey-rink) — **could not be re-fetched on 28 July 2026: `olympics.com` fails the TLS handshake from this working environment, so no status code was obtained. That is a tooling limitation, not evidence the page is gone; the "insignificant for safety and quality of play" sentence above rests on this citation and has not been re-confirmed.***
+*International: [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rules 1.2, 1.3, 1.5, 1.6, 1.7, 1.8, 1.9 and Appendix VI Infographics · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game) · [IIHF Statement on Ice Hockey Rink (Milano Cortina 2026)](https://www.olympics.com/en/milano-cortina-2026/news/iihf-statement-on-ice-hockey-rink) — **a single source, and the only one: the "insignificant for safety and quality of play" sentence above rests on this citation alone and is not corroborated elsewhere.***
 
 *Rule history: [NHL Announces Rule Changes for 2014-15](https://www.nhl.com/sharks/news/nhl-announces-rules-changes-for-2014-15-season/c-730288) — trapezoid widened two feet on each side · [Scouting The Refs – NHL Rule Changes 2014-15](https://scoutingtherefs.com/2014/09/4571/nhl-rule-changes-2014-15/) · [Two-line pass — Wikipedia](https://en.wikipedia.org/wiki/Two-line_pass) — the NHL abolished the two-line pass under the 2005 CBA*
 

@@ -7,9 +7,9 @@
 
 ## Overview
 
-This is the canonical rules document for this corpus: where two documents disagree about a rule, this one wins, and most of the corpus links here rather than restating a rule at length.
+This is the canonical rules document here: where two documents disagree about a rule, this one wins, and most other documents link here rather than restating a rule at length.
 
-A handful of topics are deliberately owned elsewhere, because the document that teaches them can say more about them than a rules primer should. Each fact has exactly one owner, and the rest of the corpus links to it rather than duplicating it:
+A handful of topics are deliberately owned elsewhere, because the document that teaches them can say more about them than a rules primer should. Each fact has exactly one owner, and the other documents link to it rather than duplicating it:
 
 - **[Faceoffs](faceoffs.md)** owns the faceoff procedure, the violations, the ejection rules and the NHL/IIHF/USA Hockey splits in full. This document keeps the table of where each draw goes, plus short statements of the two things no rules reference should omit — that an encroaching winger gets the *centre* ejected, and that the IIHF issues a team warning instead. Take the detail from Faceoffs.
 - **[Zone Entries](zone_entries.md)** owns the **trail-skate drag** as a technique. This document owns the offside rule itself, delayed offside, the disallowed goal and the rule-set differences.
@@ -18,7 +18,7 @@ A handful of topics are deliberately owned elsewhere, because the document that 
 
 The aim is not to reproduce the rulebook — it is to tell you what each rule actually changes about your decisions on the ice. A rule you understand only as a definition will get you caught out; a rule you understand as a *constraint on where you can be and when* becomes a tool. Offside is why you drag a trail skate. Icing is why a tired line dumps the puck from their own blue line instead of their own goal line. The trapezoid is why your goalie stops behind the net instead of in the corner.
 
-Everything below is sourced to the **NHL Official Rules 2025-2026**, the **IIHF Official Rule Book 2025/26**, or the **USA Hockey Official Playing Rules 2025-29** — the actual rulebooks, cited by rule number. Where the three disagree, or where I could not verify a claim, that is said explicitly in the text rather than smoothed over.
+Everything below is sourced to the **NHL Official Rules 2025-2026**, the **IIHF Official Rule Book 2025/26**, or the **USA Hockey Official Playing Rules 2025-29** — the actual rulebooks, cited by rule number. Where the three disagree, or where a claim is unverified, that is said explicitly in the text rather than smoothed over.
 
 ---
 
@@ -93,15 +93,15 @@ Three-on-three is a different sport. There is enormous open ice, the value of po
 
 **Overtime with penalties** (Rule 84.3) is fiddly but worth knowing the shape of: teams never drop below three skaters, so a power play in 3-on-3 overtime is played **4-on-3**, and a two-man advantage is played **5-on-3** with the penalised team at three. Once strength evens out, the count is corrected to 3-on-3 at the next stoppage.
 
-**IIHF** (Rule 84.1, 84.4–84.6): preliminary-round games get a **five-minute 3-on-3** overtime then a **five-shooter shootout**. Playoff and bronze-medal games get **ten minutes of 3-on-3** then a shootout. The **gold-medal game** goes to unlimited sudden-death 3-on-3 periods with 15-minute intermissions until somebody scores. *Note: the IIHF rulebook text for the gold-medal game (Rule 84.6) does not state the length of each overtime period; I could not verify it from the rulebook and am not going to guess.*
+**IIHF** (Rule 84.1, 84.4–84.6): preliminary-round games get a **five-minute 3-on-3** overtime then a **five-shooter shootout**. Playoff and bronze-medal games get **ten minutes of 3-on-3** then a shootout. The **gold-medal game** goes to unlimited sudden-death 3-on-3 periods with 15-minute intermissions until somebody scores. *Note: the IIHF rulebook text for the gold-medal game (Rule 84.6) does not state the length of each overtime period, so no figure is given here rather than a guess.*
 
 **USA Hockey** (Rule 638): overtime is **recommended**, not mandated — a 5-minute rest, then a **10-minute sudden-victory period**, on-ice strength never below three skaters plus a goalie, and a shootout may be used in addition to or instead of overtime. Crucially, the rule ends with a note that **affiliates and local governing bodies may make their own rules** on overtime length, number of periods and shootout format.
 
-**Rec and beer leagues:** most commonly, **ties simply stand**. Where there is overtime it is usually short (three to five minutes) and often 4-on-4 or 3-on-3, sometimes followed by a three-shooter shootout. This varies league by league and I cannot verify any general practice — read your league's rules.
+**Rec and beer leagues:** most commonly, **ties simply stand**. Where there is overtime it is usually short (three to five minutes) and often 4-on-4 or 3-on-3, sometimes followed by a three-shooter shootout. This varies league by league, with no general practice to rely on — read your league's rules.
 
 ### Timeouts
 
-Each NHL team gets **one 30-second timeout per game** (Rule 87.1). USA Hockey gives **one 60-second timeout** (Rule 636(f)).
+Each NHL team gets **one 30-second timeout per game** (Rule 87.1). **IIHF Rule 87.1 also gives one 30-second timeout.** USA Hockey gives **one 60-second timeout** (Rule 636(f)).
 
 There are specific situations where the NHL will **not** grant a timeout (Rule 87.1):
 
@@ -112,6 +112,8 @@ There are specific situations where the NHL will **not** grant a timeout (Rule 8
 - Once instructions have been given for a **penalty shot**, or at any point during a **shootout**.
 
 The pattern is deliberate: all of those are situations where a team has just done something that is supposed to leave them stuck on the ice, tired. The rulebook closes the escape hatch.
+
+**IIHF Rule 87.1 lists the same exclusions in the same words**, so a player under IIHF rules — which is what British league hockey runs on — gets no relief anywhere on that list. **USA Hockey Rule 636(f) lists none of them.** Its only restrictions are that the timeout be requested during a stoppage before the line-change procedure ends, and that a team wanting one at the same stoppage as its opponent must ask before the first timeout finishes. So the escape hatch the NHL and IIHF close is open under USA Hockey: a team there really can ice the puck and then buy its tired players a minute.
 
 ---
 
@@ -222,7 +224,7 @@ Note the clarification the rulebook makes explicitly: the determining factor is 
 
 > **One IIHF difference.** IIHF Rule 81.1 tracks the NHL wording closely but adds a paragraph the NHL rule does not contain: *"If there is no 'race' for the puck, icing should not be called until a defending skater crosses its defending blue line and the puck crosses the goal line (not between the goal posts)."* In practice this means that under IIHF rules, an uncontested icing is not whistled until a defender has actually come back for it — so a lazily uncontested dump can stay live fractionally longer than it would in the NHL.
 
-The NHL adopted hybrid icing in **2013-14** and the IIHF in **2014**. **USA Hockey uses automatic (no-touch) icing** — Rule 624 states that "icing the puck shall have been completed the instant the puck has completely crossed the goal line", with no hybrid provision in the standing game. (Precisely: the one place "hybrid icing" does appear in the 2025-29 book is the **Disabled Hockey / sled** section, which reads *"Automatic icing will be used at youth levels. Hybrid icing will be used in adult classification games."* That does not apply to standing hockey, but the earlier flat claim that the phrase appeared nowhere in the rulebook was wrong.) Some rec and youth leagues use no-touch; a few still use touch icing. **Ask before your first game** — it changes whether you chase a dump-in at all.
+The NHL adopted hybrid icing in **2013-14** and the IIHF in **2014**. **USA Hockey uses automatic (no-touch) icing** — Rule 624 states that "icing the puck shall have been completed the instant the puck has completely crossed the goal line", with no hybrid provision in the standing game. (Precisely: the one place "hybrid icing" does appear in the 2025-29 book is the **Disabled Hockey / sled** section, which reads *"Automatic icing will be used at youth levels. Hybrid icing will be used in adult classification games."* That does not apply to standing hockey, but the phrase is in the book.) Some rec and youth leagues use no-touch; a few still use touch icing. **Ask before your first game** — it changes whether you chase a dump-in at all.
 
 ### The full wave-off list
 
@@ -257,7 +259,9 @@ If a **linesperson erred** in calling icing, the faceoff is at **centre ice** (R
 
 If the **defending team deliberately abstains** from playing the puck to force the stoppage, the referee moves the draw to the **corner spot nearest their own goal** (Rule 81.2).
 
-**USA Hockey allows a line change after an icing.** Nothing in Rule 624 restricts substitution and Rule 204 permits a change at any stoppage. This is a real difference in how tired you are allowed to be.
+**IIHF imposes all three consequences, in the NHL's own words.** IIHF Rule 81.2 gives the attacking team the choice of dot; IIHF Rule 81.4 bars substitution with the same four exceptions; and **IIHF Rule 87.1 reads *"No 'time-out' shall be granted to the defensive team following an icing, following the goalkeeper causing a stoppage of play from a shoot-in from beyond the center red line, or when a defending Player accidentally dislodges the net causing a stoppage of play"*** — the NHL sentence with the punctuation changed. If you play under IIHF rules, which is what British league hockey runs on, treat the NHL treatment above as your own.
+
+**USA Hockey allows a line change after an icing, and a timeout.** Nothing in Rule 624 restricts substitution, Rule 204 permits a change at any stoppage, and Rule 636(f) attaches no icing condition to the one 60-second timeout each team gets. This is a real difference in how tired you are allowed to be.
 
 ### What this means for how you play
 
@@ -472,7 +476,7 @@ Coincidental minors do not make either team shorthanded, so they do not expire o
 
 **A team below the numerical strength of its opponent may shoot the puck the length of the ice with no icing called** (Rule 81.6). This is the structural core of penalty killing. Every kill is built on the fact that clearing the puck costs you nothing but the time it takes them to bring it back.
 
-**It is not unconditional, and the corpus states it bare more often than it should.** There are two exceptions, and this document owns the wording of both.
+**It is not unconditional, and it is often stated bare when it should not be.** There are two exceptions, and this document owns the wording of both.
 
 **Exception 1 — the NHL's empty penalty bench (Rule 81.6).** Quoted in full: *"When a team is 'short-handed' by reason of a major penalty, and they have neglected to ensure there is a player on the penalty bench to exit upon the expiry of the penalty, they will continue to play short-handed but are not permitted to ice the puck. Icing will be called. They may substitute for this penalized player at the next stoppage of play."* (The underlying substitution requirement is Rule 20.3.) This is a bench administration failure rather than a playing decision, but on a five-minute major it is real: somebody must be sitting in the box ready to come out. Note also the timing test in the same rule — when a penalty is **about to expire**, icing is judged at the instant it expires, and a puck released before expiry is not icing.
 
@@ -531,7 +535,7 @@ This section is the **penalty**. The geometry — the NHL figures, the depth, th
 
 Related, and often forgotten: a goalie who **participates in the play beyond the centre red line** — intentionally plays the puck or checks an opponent — takes a minor (Rule 27.7). Again, **the position of the puck** decides.
 
-> **⚠️ Cite 27.8 for the penalty and never for the dimensions.** Rule 27.8 still describes the area as beginning *"six feet (6') from either goal post"* — the pre-2014 wording, from before the trapezoid was widened by two feet a side for 2014-15. It is **stale, not self-contradictory**: six feet outside each post gives 18 feet at the goal line, diverging perfectly coherently to the 28 feet at the boards that both rules quote. It is the old shape, accurately described. **Rule 1.8 is the geometry**, and every figure in this corpus follows it.
+> **⚠️ Cite 27.8 for the penalty and never for the dimensions.** Rule 27.8 still describes the area as beginning *"six feet (6') from either goal post"* — the pre-2014 wording, from before the trapezoid was widened by two feet a side for 2014-15. It is **stale, not self-contradictory**: six feet outside each post gives 18 feet at the goal line, diverging perfectly coherently to the 28 feet at the boards that both rules quote. It is the old shape, accurately described. **Rule 1.8 is the geometry**, and every figure here follows it.
 
 **Who has the trapezoid:** the **NHL** (since 2005-06), the **KHL**, and **IIHF play** (IIHF Rule 27.7). **USA Hockey has no trapezoid** — nothing in the 2025-29 playing rules restricts *where a goalkeeper may play the puck*. **Most rec, beer-league and youth associations do not use it either.**
 
@@ -726,7 +730,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 1. **One skate keeps you onside, and the blue line is a foot wide.** Drag a trail skate and enter the zone at full speed instead of coasting behind the line — but keep the blade **in contact** if you play USA Hockey, where a raised skate is offside (Rule 630(a)), unlike the NHL and IIHF. On a *delayed* offside, clear the zone and tag up — every attacker in the zone, at the same instant, with a skate genuinely touching the line — and do not chase the defenceman: touching the puck, going for a loose puck, forcing him deeper, or being about to hit him all end the play. **Tag-up is not universal either.** Under **USA Hockey Rule 630(d)** the delayed offside exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult; below those classifications there is no tagging up and the whistle goes immediately.
 2. **Under hybrid icing the race is to the puck, not the dot** — the end-zone faceoff dot is only the deadline by which the linesperson must decide who would have touched the puck first, and a race too close to call at that instant is icing. And "gaining the line" means the puck **on your stick** touching the centre red line. Hybrid is the NHL and IIHF standard; some youth and rec leagues still play no-touch or touch icing, so check yours.
-3. **Icing costs you three things: a defensive-zone draw, no line change, and no timeout** — all designed to keep tired players on the ice. Clear off the glass and out instead. The one relief: a shorthanded team may ice the puck freely, and that single sentence is the foundation of every penalty kill — **but not in every book.** USA Hockey grants it only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), and the NHL withdraws it from a team shorthanded by a major that has left nobody on the penalty bench (Rule 81.6).
+3. **Icing costs you three things: a defensive-zone draw, no line change, and no timeout** — all designed to keep tired players on the ice. **That is the NHL and the IIHF alike**, so it is the version a British player should assume; IIHF Rules 81.2, 81.4 and 87.1 impose all three in the NHL's own words. **USA Hockey imposes none of the last two** — Rule 624 restricts no substitution, Rule 204 permits a change at any stoppage, and Rule 636(f) puts no icing condition on time-outs. Clear off the glass and out instead. The one relief: a shorthanded team may ice the puck freely, and that single sentence is the foundation of every penalty kill — **but not in every book.** USA Hockey grants it only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), and the NHL withdraws it from a team shorthanded by a major that has left nobody on the penalty bench (Rule 81.6).
 4. **Minors end early when the other team scores; majors never do.** And a misconduct does not shorthand your team at all.
 5. **Almost every rec-league penalty is a stick foul, and almost every stick foul is a conditioning failure.** Stick on the puck or on the ice — never on the player.
 6. **Screening the goalie is legal — but "outside the crease" is not a safe harbour.** Get in their eyes and keep your skates out of the blue paint, but know the actual test: Rule 69.1 disallows the goal if you impair the goalie's ability to move or defend *"either by his positioning or by contact"* — positioning alone is enough, wherever you stand. Outside the crease, incidental contact is permitted if you made a reasonable effort to avoid it.
@@ -739,7 +743,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 *Sources — retrieved 27 July 2026:*
 
-*Primary rulebooks: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rules 1, 5, 10, 15–29, 31–32, 38, 41–64, 67, 69, 74–87 · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rules 27, 46, 76, 77, 81, 83, 84, 101 · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rules 201–205, 402–403, 604, 605, 613, 615, 624, 630, 636, 638 · [USA Hockey Official Rules and Casebook 2025-29 (PDF)](https://cdn3.sportngin.com/attachments/document/4f1a-3442850/2025-29_USAH_Playing_Rules___Casebook.pdf) — Casebook situations for Rules 605, 624 and 630*
+*Primary rulebooks: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rules 1, 5, 10, 15–29, 31–32, 38, 41–64, 67, 69, 74–87 · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rules 27, 46, 76, 77, 81, 83, 84, 87, 101 · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rules 201–205, 402–403, 604, 605, 613, 615, 624, 630, 636, 638 · [USA Hockey Official Rules and Casebook 2025-29 (PDF)](https://cdn3.sportngin.com/attachments/document/4f1a-3442850/2025-29_USAH_Playing_Rules___Casebook.pdf) — Casebook situations for Rules 605, 624 and 630*
 
 *Rule change history: [Scouting The Refs – NHL Rule Book Updates for 2025-26](https://scoutingtherefs.com/2025/09/49364/nhl-rule-book-updates-for-2025-26/) · [USA Hockey – 2025-29 Playing Rule Changes](https://www.usahockey.com/2025-29-usah-rule-changes) · [USA Hockey – Rule Book & Resources](https://www.usahockey.com/rulesandresources)*
 
@@ -747,4 +751,4 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 *Rec-league rules: [CARHA Hockey Official Rule Book, printed 2020 (PDF)](https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf) — Rules 34, 49, 59, 65, 73, 79, 84 and Section Seven (Tournament General Rules) items 16 and 21, quoted from the rulebook text · [ASHL (Adult Safe Hockey League) Rule Book, Fall 2025 update (PDF)](https://www.ashl.ca/wp-content/uploads/2025/09/ASHL_Rulebook_25FallUpdate_INTERACTIVE.pdf) and [ASHL — Rule Book](https://www.ashl.ca/rule-book/)*
 
-*Unverified: the "typical rec / beer league" column in section 10 remains a generalisation — CARHA Hockey and the ASHL publish real rulebooks and are cited above, but no document governs rec hockey as a whole, and neither book applies to a league that has not adopted it. The length of each overtime period in an IIHF gold-medal game is not stated in IIHF Rule 84.6: the rule specifies the numerical strength (three skaters and a goalkeeper), the 15-minute intermissions and the changing of ends, but gives no period duration, in contrast to Rule 84.5, which sets the playoff and bronze-medal overtime at "not more than 10 minutes" and has the clock "reset to 10:00 minutes". Confirmed against the rulebook text and left as unverifiable.*
+*Unverified: the "typical rec / beer league" column in section 10 remains a generalisation — CARHA Hockey and the ASHL publish real rulebooks and are cited above, but no document governs rec hockey as a whole, and neither book applies to a league that has not adopted it. The length of each overtime period in an IIHF gold-medal game is not stated in IIHF Rule 84.6: the rule specifies the numerical strength (three skaters and a goalkeeper), the 15-minute intermissions and the changing of ends, but gives no period duration, in contrast to Rule 84.5, which sets the playoff and bronze-medal overtime at "not more than 10 minutes" and has the clock "reset to 10:00 minutes". The figure is simply not in the book, so none is given.*

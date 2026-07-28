@@ -52,7 +52,7 @@ Their conclusion: *"It is likely that players give up the puck far too easily at
 
 ### Corroboration
 
-The finding has held up across other data sets. Note that these are figures reported second-hand by analysts summarising their own tracking, not peer-reviewed papers, and I could not reach every primary source:
+The finding has held up across other data sets. Note that these are figures reported second-hand by analysts summarising their own tracking, not peer-reviewed papers, and not all of the underlying tracking is published:
 
 - **Corey Sznajder**, tracking 2014-16, reported roughly **0.66 shots per carry-in** against **0.29 per dump-in**.
 - **Thibaud Chatel**, 2022, reported **47%** of controlled entry attempts led to a shot against **18%** of dump-ins, excluding dump-and-change.
@@ -364,7 +364,7 @@ The measure of a good chase is not whether you got the puck. It is whether the r
 
 **F1, F2 and F3 are roles, not people.** They are defined by order of arrival, not by position — whichever forward gets there first is F1, whoever is next is F2, regardless of whether they are the centre or a winger.
 
-Under the **house default assumed across this corpus — a 2-1-2 forecheck** — the relationship on a dump-in retrieval is:
+Under the **house default used throughout this guide — a 2-1-2 forecheck** — the relationship on a dump-in retrieval is:
 
 - **F1** goes to the puck and takes away the easy escape as described above. F1's job is to force a decision, not necessarily to win the puck.
 - **F2** reads F1's angle and covers **the side F1 forced them toward** — usually the strong-side wall or the area behind the net. F2 is the one who actually recovers most pucks; F1 creates, F2 collects.
@@ -554,4 +554,4 @@ Everything in Section 2 works for you too:
 
 *Coaching and tactics: [Ice Hockey Systems — Kyle MacLennan, "Winning the Entry: How NHL Power Plays Gain the Zone"](https://icehockeysystems.com/blog/coaching-tips/winning-entry-how-nhl-power-plays-gain-zone) · [Stanley Cup of Chowder — Shawn Ferris, "Defending the Blue Line" (squash-and-slide, receiving the entry)](https://www.stanleycupofchowder.com/2019/1/28/18197816/defending-the-blue-line-analytics-tactics-boston-bruins)*
 
-*Not verified: the season the PWHPA / Sportlogiq figures cover is not stated in the source, which was published in July 2022 and refers only to "this last year's PWHPA Secret Dream Gap Tour" — 2021-22 is an inference, and is flagged as such in Section 1. The Sznajder (0.66 / 0.29) and Chatel (47% / 18%) figures are reported second-hand by Hockey's Arsenal; the underlying tracking data sets were not reachable directly and should be treated as indicative rather than exact. The NHL rulebook's own two descriptions of the trapezoid's goal-line dimension disagree (Rule 27.8 vs Rule 1.8), as noted in Section 7.*
+*Limitations worth knowing: the season the PWHPA / Sportlogiq figures cover is not stated in the source, which was published in July 2022 and refers only to "this last year's PWHPA Secret Dream Gap Tour" — 2021-22 is an inference, and is flagged as such in Section 1. The Sznajder (0.66 / 0.29) and Chatel (47% / 18%) figures are reported second-hand by Hockey's Arsenal; the underlying tracking data sets are not published, so treat them as indicative rather than exact. The NHL rulebook's own two descriptions of the trapezoid's goal-line dimension disagree (Rule 27.8 vs Rule 1.8), as noted in Section 7.*

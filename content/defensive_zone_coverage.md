@@ -19,7 +19,7 @@ Five of you. Five of them. One net.
 
 But the ice is not equally dangerous. Almost all goals come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
 
-Some vocabulary, used consistently throughout this document and the rest of the corpus (full definitions in [Rink Map and Glossary](rink_map_and_glossary.md)):
+Some vocabulary, used consistently throughout this document and the rest of this guide (full definitions in [Rink Map and Glossary](rink_map_and_glossary.md)):
 
 - **The slot** — the lane in front of the net between the two faceoff circles.
 - **The high slot** — the upper part of it, from the faceoff dots up to the top of the circles.
@@ -73,7 +73,7 @@ Get your inside shoulder ahead of theirs, establish position between them and th
 
 ## Low Zone Collapse (Zone Coverage) — the house default
 
-**This is the system assumed throughout this corpus**, and the one coaching material most often describes as taught first in North American minor, junior and rec hockey — *again, consensus from coaching material, not a survey; no count of what teams run exists.* It is also frequently called **sagging zone**, **zone coverage**, or simply "the collapse". If your coach has never named the system, this is probably what they mean.
+**This is the system assumed throughout**, and the one coaching material most often describes as taught first in North American minor, junior and rec hockey — *again, consensus from coaching material, not a survey; no count of what teams run exists.* It is also frequently called **sagging zone**, **zone coverage**, or simply "the collapse". If your coach has never named the system, this is probably what they mean.
 
 The idea: you defend **space**, not people. Each of the five of you owns an area. Whoever skates into your area becomes yours until they leave it. **Three of you — both defencemen and the centre — live below the top of the circles**, which matches their three forwards down there, while the two wingers hold the points so the opposing defencemen never get a clean seam pass into the middle. When the centre goes low to help, the weak-side winger sags into the high slot and you are briefly four down there. Only under maximum pressure — the collapsing box described later — do all five drop below the circles.
 
@@ -312,7 +312,7 @@ Systems tell you where to stand. These are the recurring plays you'll actually f
 
 ### The net-front scramble
 
-**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play, and it is worth believing — but note that it is the **same unmeasurable claim** flagged under the low-to-high play above: shot-*location* data is public and says the ice in front of the crease is the most dangerous on the rink ([Shooting](shooting.md) owns that), while a classification of goals by the **play that produced them** is not published anywhere. Coaching consensus, not a statistic.
+**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play. **The rebound half of that is countable, and it is substantial** — **11.4%** of NHL goals are scored within three seconds of a previous shot on goal by the same team, and **19.7%** within ten seconds; [Offensive Zone Play](offensive_zone_play.md) section 10 owns that figure and carries its source. Put it alongside shot-*location* data, which says the ice in front of the crease is the most dangerous on the rink ([Shooting](shooting.md) owns that), and the direction is well supported. What is still not published is a classification of goals by the **play that produced them**, so "more than any highlight play" stays a coaching comparison rather than a measured ranking.
 
 **Defending it:**
 - **Body first, puck second.** Tie up the most dangerous stick before you look for the puck. A player with a free stick at the goalmouth will score before you get there.
@@ -397,7 +397,7 @@ Winning the puck is only half the job. The handoff from coverage into a breakout
 ## Key Takeaways
 
 1. Every defensive-zone system is a different answer to one question: how do five people protect the house and still be able to leave with the puck? Every answer concedes something on purpose.
-2. **Low zone collapse is the house default** in this corpus: strong-side D on the puck, weak-side D at the goalmouth, centre as low support, both wingers high on the points, weak-side winger sagging into the high slot when the centre goes low.
+2. **Low zone collapse is the house default** here: strong-side D on the puck, weak-side D at the goalmouth, centre as low support, both wingers high on the points, weak-side winger sagging into the high slot when the centre goes low.
 3. Under low zone collapse, wingers do **not** go to the corner. Under man-on-man, they do. That one difference is the fastest way to identify which system a team is playing.
 4. The universal principles survive every system: middle before outside, stay on the defensive side, never both D on the puck without knowing who has taken the goalmouth, somebody always has the goalmouth, sticks flat in lanes, box out at the net. Note that only the *goalmouth* half of that pair is genuinely invariant — which player holds it changes with the system, and a few systems send both defencemen low on purpose. But "middle before outside" tells you which *chance* to concede, not where to stand — a man system honours it by staying glued to the man who would receive the seam pass, not by sagging into the slot.
 5. Low zone collapse's real weakness is not the point shot — it's the **walk-down** from the point. Hybrid coverage exists mainly to fix it.

@@ -13,7 +13,7 @@
 
 This is the document that sits between knowing your position and knowing your team's systems. **Puck support** means being in a place, at a time, where the player with the puck can actually give it to you. **Spacing** means the five of you arranging yourselves so that there is always more than one such place.
 
-Everything else in the corpus — breakouts, forechecks, zone entries, power plays — is a named pattern for producing good support. This document is the principle underneath all of them, which is why it transfers to the situations no system covers. If you learn one thing here, learn this: **a puck carrier with two options beats a puck carrier with none, regardless of how skilled either of them is.**
+Everything else in this guide — breakouts, forechecks, zone entries, power plays — is a named pattern for producing good support. This document is the principle underneath all of them, which is why it transfers to the situations no system covers. If you learn one thing here, learn this: **a puck carrier with two options beats a puck carrier with none, regardless of how skilled either of them is.**
 
 ---
 
@@ -161,7 +161,7 @@ Two things about this vocabulary trip people up:
 
 Who it is depends on the system, and this is a coaching choice, not a law:
 
-- Under the corpus's **house default** — a low zone collapse (zone) defensive-zone scheme with a 2-1-2 forecheck — the convention in the offensive zone is that both defencemen stay above the puck at the points unless one of them deliberately activates, and the third forward supports high. Note that **F1, F2 and F3 are roles defined by order of arrival, not fixed people**: F1 is whoever gets there first.
+- Under the **house default** used throughout — a low zone collapse (zone) defensive-zone scheme with a 2-1-2 forecheck — the convention in the offensive zone is that both defencemen stay above the puck at the points unless one of them deliberately activates, and the third forward supports high. Note that **F1, F2 and F3 are roles defined by order of arrival, not fixed people**: F1 is whoever gets there first.
 - Under a **1-2-2 forecheck**, the deepest forward is alone below the puck and two forwards sit above as a layered wall, so the "above the puck" population is larger and the forecheck is less aggressive.
 - Some teams run a **single-high** offensive-zone structure where one defenceman is licensed to walk the line and the weak-side winger becomes the safety. Others insist both defencemen hold.
 
@@ -219,7 +219,7 @@ Three reasons, all of them understandable:
 ### How to train yourself out of it
 
 - **Adopt a default question.** Every time the puck moves, ask *"who is closest?"* If it is not you, your job is not the puck — your job is the space. This single question, asked reflexively, fixes most of it.
-- **Know how many of you are meant to be pressuring — it is not always one.** The habit to break is *everybody* converging, not the second pressurer. How many go is set by your system: under a **1-2-2** one forward pressures and the rest hold their layers, but under the corpus's house-default **2-1-2** two forwards go deep on purpose and F3 reads behind them; man-on-man coverage in your own end is different again. [Forechecking Systems](forechecking_systems.md) and [Playing Without the Puck](playing_without_the_puck.md) both state it that way. What is invariant is that the number is **decided, not improvised**: everyone not in a pressuring role is in a support or coverage role. Learn which one you are before you move.
+- **Know how many of you are meant to be pressuring — it is not always one.** The habit to break is *everybody* converging, not the second pressurer. How many go is set by your system: under a **1-2-2** one forward pressures and the rest hold their layers, but under the house-default **2-1-2** two forwards go deep on purpose and F3 reads behind them; man-on-man coverage in your own end is different again. [Forechecking Systems](forechecking_systems.md) and [Playing Without the Puck](playing_without_the_puck.md) both state it that way. What is invariant is that the number is **decided, not improvised**: everyone not in a pressuring role is in a support or coverage role. Learn which one you are before you move.
 - **Skate to where the puck will be available, not where it is.** The puck is in a corner battle; it will emerge either up the wall or behind the net. Go and stand in one of those two places. See [Scanning and Anticipation](scanning_and_anticipation.md).
 - **Use small-area games.** Cross-ice and half-ice games with restricted space punish converging immediately and obviously — you physically cannot succeed by crowding, so the habit breaks itself. This is the mechanism the coaching literature on constrained practice keeps returning to: standing still or arriving late to support visibly loses you the puck, so the lesson lands without a lecture. See [Practice and Development](practice_and_development.md).
 - **Ask to be filmed.** Spacing is the one aspect of your game you genuinely cannot self-assess in the moment, because you cannot see yourself in the pattern.
@@ -411,7 +411,7 @@ One question, asked constantly: **"Where are my two options?"**
 
 *Sources — retrieved 27 July 2026:*
 
-*Puck support and spacing: [CoachThem — What Hockey Can Learn from Lacrosse Spacing](https://coachthem.com/blog/what-hockey-can-learn-from-lacrosse-spacing) · [USA Hockey — Creating Offense with Zone Entries and Puck Support](https://www.usahockey.com/news_article/show/775908-creating-offense-with-zone-entries-and-puck-support) (**Mike Doyle**, 30 March 2017, quoting **Larry Bruyere**, former USA Hockey Pacific District coach-in-chief — this is the original; the Coach Enio page that was cited here previously is a verbatim republication that still carries Doyle's byline) · [How to Support the Puck Carrier in Any Zone](https://allblackhockeysticks.com/support-the-puck-carrier/)*
+*Puck support and spacing: [CoachThem — What Hockey Can Learn from Lacrosse Spacing](https://coachthem.com/blog/what-hockey-can-learn-from-lacrosse-spacing) · [USA Hockey — Creating Offense with Zone Entries and Puck Support](https://www.usahockey.com/news_article/show/775908-creating-offense-with-zone-entries-and-puck-support) (**Mike Doyle**, 30 March 2017, quoting **Larry Bruyere**, former USA Hockey Pacific District coach-in-chief — this is the original; the Coach Enio page carrying the same text is a verbatim republication that still shows Doyle's byline) · [How to Support the Puck Carrier in Any Zone](https://allblackhockeysticks.com/support-the-puck-carrier/)*
 
 *Above and below the puck: [The Coaches Site — Being on the Right Side of the Puck in the Offensive Zone](https://members.thecoachessite.com/article/being-on-the-right-side-of-the-puck-in-the-offensive-zone) · [Jets Nation — Systems Analysis: What is tracking "above" the puck?](https://jetsnation.ca/news/systems-analysis-what-is-tracking-above-the-puck)*
 
