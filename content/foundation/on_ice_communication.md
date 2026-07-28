@@ -106,6 +106,7 @@ Never: Send "over" or "D-to-D" through the front of your own net — go behind t
 Key: A rim goes onward around the boards with the flow, a reverse goes back against it — a rim beats a forechecker sealing you in, a reverse one who has over-run you
 Technique: Keep a rim hard and high on the glass — a soft rim is a turnover with extra steps
 Rule: Shooting the puck directly out of play from your defending zone is a two-minute delay of game (NHL Rule 63.2(iii)); over the glass behind the bench still counts
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Rule: After your own icing your line cannot change and your team cannot take a timeout under NHL and IIHF rules (81.4, 87.1) — USA Hockey blocks neither
 Read: "Ice it" is normal on the kill and expensive at even strength — the shorthanded exemption is removed by Rule 81.6 and restricted by classification under USA Hockey Rule 624(b)(1)
 Rule: A puck dumped wide has to be retrieved by a defenceman, because the goalie may only play it behind the goal line inside the trapezoid under NHL and IIHF rules

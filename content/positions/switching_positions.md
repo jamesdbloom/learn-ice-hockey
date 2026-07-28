@@ -167,6 +167,7 @@ Never: Carry or pass D-to-D through your own slot — go behind the net, where a
 Position: One of you on the puck, one at the goalmouth, swapping every time the puck crosses the middle — and talk constantly
 Convention: Under a low zone collapse the goalmouth is yours and the high slot is the centre's; under man-on-man the net front belongs to whoever's man is standing there
 Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2) — off the glass and along it is fine
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Risk: You will ice the puck far more often — defensive-zone draw, no line change, no timeout, and it lands on your pair; Rules Primer owns the rule text
 Options: Three offensive-zone depths — just inside the blue line by default, the top of the circle activated, below the circles only if a forward has taken your spot at the line
 Convention: Only one defenceman pinches at a time — a near-universal coaching convention rather than a rule, with real exceptions coaches do call

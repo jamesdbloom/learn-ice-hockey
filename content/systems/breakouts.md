@@ -394,12 +394,12 @@ A long pass from your defensive zone to a forward who has left early and is wait
 ```facts
 Read: When the alternatives are a turnover in a dangerous area or a play you are not confident in — and when you desperately need a change
 Technique: Aim high off the glass in the corner or up the wall, not flat up the middle; a flat clear up the middle is both the classic interception and the classic icing
-Rule: Hybrid icing turns on "which player would first touch the puck, not which player would first reach the end zone face-off dots" (NHL Rule 81.1)
-Key: The dot is the deadline for the decision; a race too close to call by then goes to icing
+Rule: Hybrid icing turns on "which player would first touch the puck, not which player would first reach the end zone face-off dots" (NHL Rule 81.1) — the dot is the deadline, and a race too close to call by then goes to icing
 Rule: After your own icing your line cannot change (Rule 81.4) and cannot take a time-out (Rule 87.1: "No time-out shall be granted to the defensive team following an icing")
 Rule: Both are NHL and IIHF only — USA Hockey Rule 624 restricts no substitution and 636(f) attaches no icing condition to its time-out
 Rule: Shorthanded you may ice it freely (NHL Rule 81.6), subject to two carve-outs — a major with an empty penalty bench, and USA Hockey's classification limit — owned by Special Teams and Rules Primer
 Rule: Shooting or batting the puck directly out of play from your defending zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)) — its own exceptions are where there is no glass, into the players' bench, and directly off a faceoff
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Key: Staying in is fine, and a deflection out is fine
 Key: Glass clears rarely get intercepted and rarely ice, because they slow the puck and keep it wide — which is why the play is called "off the glass", not "over the glass"
 Countered by: A defenceman holding the offensive blue line and stopping the puck getting out — a different play from a pinch, which is stepping down from the line into the zone

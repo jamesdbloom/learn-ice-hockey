@@ -549,6 +549,7 @@ Action: Decide before you touch it — scan while the battle is still going, so 
 Priority: Controlled exit whenever it is genuinely available, then a rim or a chip off the glass, then anything that ends the shift
 Convention: Under low zone collapse the pass goes to the winger coming down the wall to between the hash marks and the goal line — not to the blue line
 Rule: Off the glass and out is legal; putting the puck directly out of play from your own defending zone is a two-minute delay of game (NHL Rule 63.2(iii)), with three narrow carve-outs
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Risk: Ice it at even strength and the puck comes straight back — your tired line cannot change and cannot take a timeout
 Rule: Shorthanded you may ice the puck freely (NHL Rule 81.6), but two carve-outs apply under USA Hockey and the NHL — check your league; Special Teams owns both
 Rule: Your goalie may only play the puck behind the goal line inside the trapezoid (NHL Rule 27.8) — most rec, beer-league and youth associations don't use it, so find out

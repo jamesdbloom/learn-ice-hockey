@@ -271,6 +271,7 @@ Rule: Shooting or batting the puck directly out of the playing surface from your
 Rule: What counts is where the puck was when you hit it, not where it crossed the glass (NHL Rule 63.2(iii))
 Rule: Over the glass behind the players' bench is penalised; into the bench itself is not (NHL Rule 63.2(iii))
 Rule: Directly off a faceoff, no penalty is assessed (NHL Rule 63.2(iii))
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Rule: Even where no penalty applies, the faceoff goes to the nearest spot in the zone the puck was shot from (NHL Rule 85.1)
 Action: Off the glass and out — hard, low and along the boards so it stays in; if you are panicking, aim lower than feels right
 Action: Check your league — many recreational and youth associations do not enforce puck-over-glass at all
@@ -520,8 +521,8 @@ Note what is *not* on that list: retaliation, sending a message, standing up for
 ```facts
 Rule: Fouling a puck carrier from behind in the neutral or attacking zone, with no opponent between him and the goalkeeper, is a penalty shot (NHL Rule 57.3)
 Rule: Play the puck first and trip him in the process and it is a minor for tripping, not a penalty shot (NHL Rule 57.3)
-Rule: With your own goalkeeper pulled, that same foul is not a penalty shot but an awarded goal (NHL Rules 25.1 and 57.4, cited as a pair)
-Rule: Covering the puck in your own crease is a penalty shot (NHL Rule 67.4), or an awarded goal if your goalie has been replaced by an extra attacker (67.5)
+Rule: With your own goalkeeper pulled, ANY foul denying the chance is an awarded goal — neither awarded-goal clause carries the "from behind" requirement (NHL Rules 25.1 and 57.4, cited as a pair)
+Rule: A skater — "a defending player, except a goalkeeper" — covering the puck in your own crease is a penalty shot (NHL Rule 67.4), or an awarded goal with your net empty (67.5)
 Key: A penalty shot beats a power play but by less than the phrase suggests — 28.8% over eleven NHL seasons, computed for this document
 Action: Prevent the breakaway four seconds earlier with your positioning — chasing from behind saves nothing, and saves nothing at all with your net empty
 ```
@@ -605,7 +606,7 @@ You will make bad decisions. Everyone does, at every level. **What separates goo
 Action: Turn and skate to the middle of the ice between the puck and your net — become the extra defender
 Action: Get to the inside and take away the middle; deny the pass to the slot and a scoring chance becomes a shot from the outside
 Action: Talk — one word, "turnover", "back", "I'm high", reorganises four teammates who are still reading the play
-Never: Chase the puck carrier from behind — it achieves nothing and it invites a penalty shot
+Never: Foul the puck carrier from behind — backchecking hard is the right play, but a trip, hook, hold or slash there is a penalty shot
 Never: Change while the play is live because you are embarrassed — finish the shift
 ```
 

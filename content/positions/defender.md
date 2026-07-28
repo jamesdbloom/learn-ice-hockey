@@ -59,6 +59,7 @@ Read: Take the quick-up in the two or three seconds after your team wins the puc
 Goal: Transition the puck out of danger and start your team's breakout
 Never: Carry or pass D-to-D through the slot — skate behind the net to the other side instead
 Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor, "except where there is no glass" (NHL Rule 63.2(iii))
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 ```
 
 **Where to be:** Behind your own net or along the boards.

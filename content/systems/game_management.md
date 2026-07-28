@@ -76,6 +76,7 @@ Priority: With a lead the question is not "can I create a chance" but "can they 
 Never: Cross-ice passes through the middle, blind D-to-D across your own goalmouth, or stretch passes you are not sure about
 Action: Chip the puck past the forechecker and out rather than forcing a breakout pass under pressure
 Rule: Shooting the puck directly out of play from your own defending zone is a two-minute delay-of-game minor, with no pressure exception (NHL Rule 63.2(iii))
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Action: Take away the middle — concede the outside, keep your stick in the passing lane, defend with your feet
 Action: Shorten your shifts to 30-35 seconds; fresh legs defend, tired legs reach
 Priority: Win the defensive-zone draws, and have a plan for losing the draw as well as winning it

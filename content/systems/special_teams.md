@@ -586,6 +586,7 @@ Rule: The NHL withdraws that exemption from a team shorthanded by a major that h
 Rule: USA Hockey grants the nullification only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)); below those levels a shorthanded team can be called for icing
 Rule: Release the puck before your penalty expires and the icing does not apply, even if the penalty ends while it is travelling (NHL Rule 81.6)
 Rule: Shooting the puck directly out of the playing surface from your defending zone is a delay-of-game minor even while shorthanded (NHL Rule 63.2(iii))
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Action: Where the exemption applies, fire it the length of the ice the moment you have it — no faceoff, no line-change restriction, and a chance to change
 Action: Aim clears hard and flat, into the corner away from their goalie's trapezoid, so the retrieval is awkward
 Never: Stretch "numerical strength" beyond penalties — five skaters defending a pulled goalie are not below it and can be called for icing
