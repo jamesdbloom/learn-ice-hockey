@@ -92,7 +92,27 @@ jobs:
     if: needs.preflight.outputs.configured == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    environment: production
+
+    # Deliberately NOT `environment: production`.
+    #
+    # Naming an environment changes the OIDC token's `sub` claim. The job stops
+    # presenting
+    #   repo:jamesdbloom/learn-ice-hockey:ref:refs/heads/main
+    # and starts presenting
+    #   repo:jamesdbloom/learn-ice-hockey:environment:production
+    # which the deploy role's trust policy does not match, so the whole deploy
+    # fails at role assumption. That is exactly what happened on run 30394048283.
+    #
+    # The tempting fix — point the trust policy at the environment form — is a
+    # downgrade unless the environment also carries a deployment branch policy.
+    # The environment claim contains no branch, so on its own it would let any
+    # branch that names `environment: production` assume the deploy role, and
+    # the branch scoping documented in infra/README.md would be gone.
+    #
+    # To reinstate the environment later, do all three together: add a
+    # deployment branch policy limiting it to `main`, add a `:ref` condition to
+    # the trust policy in infra/iam.tf so AWS still enforces the branch itself,
+    # and only then change the `:sub` condition.
     permissions:
       id-token: write   # required to mint the OIDC token
       contents: read
