@@ -235,7 +235,7 @@ Because a shot from the point with a screen and a net-front presence produces th
 
 Low-to-high is a *means*, not an end. Remember the numbers from section 1: point shots are the **lowest-percentage shots on the ice**, they are **blocked more often** than shots from anywhere else, and analysis by Alex Novet found they **generate fewer rebounds** than shots from lower in the zone ([via The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)).
 
-There is a real-world cautionary tale here. The Seattle Kraken under Dave Hakstol built an offensive-zone scheme heavily around low-to-high and generated the third-most point shots per sixty minutes in the league — while producing shots with the **lowest expected value per shot of any team** ([Sound of Hockey](https://soundofhockey.com/2022/03/30/kraken-coach-dave-hakstols-scheme-and-philosophies-offensive-zone-plays-part-7/)).
+There is a real-world cautionary tale here. The Seattle Kraken under Dave Hakstol built an offensive-zone scheme heavily around low-to-high and generated the third-most point shots per sixty minutes in the league — while producing shots with the **lowest expected value per shot of any team** ([Sound of Hockey](https://soundofhockey.com/2022/03/30/kraken-coach-dave-hakstols-scheme-and-philosophies-offensive-zone-plays-part-7/), 2021-22 season). **Both quoted phrases were checked against that page verbatim on 28 July 2026 — but neither number is Sound of Hockey's own.** The article credits the point-shot rate to **Corey Sznajder's** manual tracking and the expected-value figure to **TopDownHockey/JFreshHockey**, which it labels "paid access". Neither underlying dataset is public, so this is a secondary source restating two private ones; treat it as a reported anecdote about one team in one season, not as a checkable statistic.
 
 The lesson is not "don't go low-to-high." It is: **low-to-high is only worth doing when the net front is occupied.** A point shot with a screen, a tip threat and two players hunting the rebound is a good play. The identical shot with nobody in front is a giveaway with extra steps.
 
@@ -273,7 +273,7 @@ A **tip** or **deflection** is changing the direction of an incoming shot with y
 
 ### Hunting rebounds
 
-- **Anticipate where it goes, don't react to where it went.** A puck hitting a pad squirts to the corner it came from; a puck hitting the blocker goes to the shooter's off side; a puck hitting the chest drops in the paint. Know where the shot is coming from and pre-load your feet in that direction.
+- **Anticipate where it goes, don't react to where it went.** The rough tendencies: a puck hitting a pad tends to squirt back toward the corner it came from, a puck hitting the blocker toward the shooter's off side, a puck hitting the chest to drop in the paint. **Treat these as tendencies, not rules** — they are coaching craft, not measured rebound distributions, and a goalie who is angling their surfaces deliberately (which is what [Goaltender](positions/goaltender.md) teaches them to do) will break all three on purpose. Know where the shot is coming from, pre-load your feet that way, and be ready to be wrong.
 - **Shoot it back immediately.** Do not settle it, do not look up. The window is one or two seconds, while the goalie is down and out of position.
 - **Go to the far post when you get tied up.** If your check has sealed you off from the near side, the far post is a rebound location nobody is covering and it opens the weak-side chance.
 - **Understand the odds.** The defending team recovers roughly **60% of rebounds** (Alex Novet, via The Coaches Site). That is exactly why the net-front job is a *job* and not a bonus — you have to be there, deliberately, before the shot, or you lose that race by default.
@@ -395,7 +395,7 @@ The defence is established, everyone is back, and nothing is open. The chance co
 
 ## 10. Regaining Possession After a Shot
 
-**The seconds immediately after a shot are the most likely moment in a possession to score.** The goalie has committed, is often down, and is out of position. The puck is loose in the most dangerous area on the ice. Every defender has just been pulled toward the shot.
+**Treat the seconds immediately after a shot as the most dangerous moment in a possession.** *(That is coaching emphasis, not a measured within-possession hazard — no public data ranks scoring likelihood by time-since-shot. What is sourced is the rebound-recovery figure quoted earlier in this document and the shot-location values [Shooting](shooting.md) owns, both of which point the same way.)* The goalie has committed, is often down, and is out of position. The puck is loose in the most dangerous area on the ice. Every defender has just been pulled toward the shot.
 
 This is also the moment most amateur teams stop playing — the shot goes in, everyone watches, and the defence walks out with it.
 

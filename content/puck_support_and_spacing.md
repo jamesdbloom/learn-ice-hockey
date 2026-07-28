@@ -77,7 +77,7 @@ Support has a working range. Outside it in either direction, you are not support
 
 ### Too far
 
-- **The pass takes too long.** A long pass spends longer on the ice, which gives every defender time to read it and get a stick in the lane. Coach Larry Bruyere's point in his work on zone entries and puck support is that possession play is built on the short pass — he describes "the 8-to-10-foot-or-less pass" as the heart of small-area play, and treats the 40-foot pass as generally a low-percentage option.
+- **The pass takes too long.** A long pass spends longer on the ice, which gives every defender time to read it and get a stick in the lane. **Larry Bruyere**, a former USA Hockey Pacific District coach-in-chief, makes the point that possession play is built on the short pass: *"generally, the 40-foot pass isn't a good option. The 8-to-10-foot-or-less pass is really what the small-area games are all about."* (He is speaking as an interviewee — the article is **Mike Doyle's**, for USA Hockey, 30 March 2017. Bruyere wrote no work on the subject; the words are his, the piece is Doyle's.)
 - **A long pass is harder to receive.** It arrives faster, often bouncing, and you are receiving it with a defender already closing.
 - **You arrive too late to help after the pass.** Support does not end when the puck leaves; whoever passed to you now needs support from *you*.
 
@@ -219,7 +219,7 @@ Three reasons, all of them understandable:
 ### How to train yourself out of it
 
 - **Adopt a default question.** Every time the puck moves, ask *"who is closest?"* If it is not you, your job is not the puck — your job is the space. This single question, asked reflexively, fixes most of it.
-- **Only one player pressures.** Whatever system you play, exactly one player is the puck-pursuer at any moment. Everyone else is a support or coverage role. Learn which one you are before you move.
+- **Know how many of you are meant to be pressuring — it is not always one.** The habit to break is *everybody* converging, not the second pressurer. How many go is set by your system: under a **1-2-2** one forward pressures and the rest hold their layers, but under the corpus's house-default **2-1-2** two forwards go deep on purpose and F3 reads behind them; man-on-man coverage in your own end is different again. [Forechecking Systems](forechecking_systems.md) and [Playing Without the Puck](playing_without_the_puck.md) both state it that way. What is invariant is that the number is **decided, not improvised**: everyone not in a pressuring role is in a support or coverage role. Learn which one you are before you move.
 - **Skate to where the puck will be available, not where it is.** The puck is in a corner battle; it will emerge either up the wall or behind the net. Go and stand in one of those two places. See [Scanning and Anticipation](scanning_and_anticipation.md).
 - **Use small-area games.** Cross-ice and half-ice games with restricted space punish converging immediately and obviously — you physically cannot succeed by crowding, so the habit breaks itself. This is the mechanism the coaching literature on constrained practice keeps returning to: standing still or arriving late to support visibly loses you the puck, so the lesson lands without a lecture. See [Practice and Development](practice_and_development.md).
 - **Ask to be filmed.** Spacing is the one aspect of your game you genuinely cannot self-assess in the moment, because you cannot see yourself in the pattern.
@@ -411,7 +411,7 @@ One question, asked constantly: **"Where are my two options?"**
 
 *Sources — retrieved 27 July 2026:*
 
-*Puck support and spacing: [CoachThem — What Hockey Can Learn from Lacrosse Spacing](https://coachthem.com/blog/what-hockey-can-learn-from-lacrosse-spacing) · [Coach Enio — Creating Offense with Zone Entries and Puck Support (Larry Bruyere)](https://www.coachenio.com/creating-offense-with-zone-entries-and-puck-support/) · [How to Support the Puck Carrier in Any Zone](https://allblackhockeysticks.com/support-the-puck-carrier/)*
+*Puck support and spacing: [CoachThem — What Hockey Can Learn from Lacrosse Spacing](https://coachthem.com/blog/what-hockey-can-learn-from-lacrosse-spacing) · [USA Hockey — Creating Offense with Zone Entries and Puck Support](https://www.usahockey.com/news_article/show/775908-creating-offense-with-zone-entries-and-puck-support) (**Mike Doyle**, 30 March 2017, quoting **Larry Bruyere**, former USA Hockey Pacific District coach-in-chief — this is the original; the Coach Enio page that was cited here previously is a verbatim republication that still carries Doyle's byline) · [How to Support the Puck Carrier in Any Zone](https://allblackhockeysticks.com/support-the-puck-carrier/)*
 
 *Above and below the puck: [The Coaches Site — Being on the Right Side of the Puck in the Offensive Zone](https://members.thecoachessite.com/article/being-on-the-right-side-of-the-puck-in-the-offensive-zone) · [Jets Nation — Systems Analysis: What is tracking "above" the puck?](https://jetsnation.ca/news/systems-analysis-what-is-tracking-above-the-puck)*
 

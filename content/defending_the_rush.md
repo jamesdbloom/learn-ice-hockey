@@ -274,7 +274,7 @@ Three attackers, one defender. This is a bad situation and pretending otherwise 
 
 A **breakaway** is an attacker alone with the puck against the goalie, no defender between them and the net.
 
-**The honest answer first: this is your goalie's save, and they usually make it.** Breakaways are stopped far more often than they are scored on. Your job is to do the one useful legal thing and then get out of the way.
+**The honest answer first: this is your goalie's save, and they usually make it.** Breakaways are stopped far more often than they are scored on. *(No breakaway save percentage is quoted here on purpose: the NHL does not publish one, and the penalty-shot and shootout conversion rates people reach for instead measure a different situation. Take the direction — the goalie is favoured — and not a number.)* Your job is to do the one useful legal thing and then get out of the way.
 
 **What you can legally do from behind:**
 

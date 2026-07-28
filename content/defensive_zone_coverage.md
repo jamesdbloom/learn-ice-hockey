@@ -73,7 +73,7 @@ Get your inside shoulder ahead of theirs, establish position between them and th
 
 ## Low Zone Collapse (Zone Coverage) — the house default
 
-**This is the system assumed throughout this corpus**, and the most commonly taught one in North American minor, junior and rec hockey. It is also frequently called **sagging zone**, **zone coverage**, or simply "the collapse". If your coach has never named the system, this is probably what they mean.
+**This is the system assumed throughout this corpus**, and the one coaching material most often describes as taught first in North American minor, junior and rec hockey — *again, consensus from coaching material, not a survey; no count of what teams run exists.* It is also frequently called **sagging zone**, **zone coverage**, or simply "the collapse". If your coach has never named the system, this is probably what they mean.
 
 The idea: you defend **space**, not people. Each of the five of you owns an area. Whoever skates into your area becomes yours until they leave it. **Three of you — both defencemen and the centre — live below the top of the circles**, which matches their three forwards down there, while the two wingers hold the points so the opposing defencemen never get a clean seam pass into the middle. When the centre goes low to help, the weak-side winger sags into the high slot and you are briefly four down there. Only under maximum pressure — the collapsing box described later — do all five drop below the circles.
 
@@ -165,7 +165,7 @@ Man-on-man is much less common as a pure system than it used to be. Coaching res
 
 ## Hybrid — man-on-man below the dots, zone above
 
-This is the most common arrangement in professional hockey and increasingly common everywhere else. It is a deliberate compromise: use man coverage where being unmarked is fatal, and zone coverage where it isn't.
+Coaching material routinely describes this as the most common arrangement in professional hockey, and as increasingly common below it. **Nobody publishes a count of what teams actually run**, in this zone or any other — treat that as coaching-material consensus rather than a measured fact, the same way [Forechecking Systems](forechecking_systems.md) treats "the most common forecheck". It is a deliberate compromise: use man coverage where being unmarked is fatal, and zone coverage where it isn't.
 
 **The rule of thumb:** **man-on-man below the dots, zone above them.** Some teams say "below the hash marks" or "below the top of the circles" — the line varies by a few feet, so learn your team's version. Above that line, you cover an area and pass players off. Below it, you take a body and you stay with it.
 
@@ -312,7 +312,7 @@ Systems tell you where to stand. These are the recurring plays you'll actually f
 
 ### The net-front scramble
 
-**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. More goals come from here than from any highlight play.
+**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play, and it is worth believing — but note that it is the **same unmeasurable claim** flagged under the low-to-high play above: shot-*location* data is public and says the ice in front of the crease is the most dangerous on the rink ([Shooting](shooting.md) owns that), while a classification of goals by the **play that produced them** is not published anywhere. Coaching consensus, not a statistic.
 
 **Defending it:**
 - **Body first, puck second.** Tie up the most dangerous stick before you look for the puck. A player with a free stick at the goalmouth will score before you get there.

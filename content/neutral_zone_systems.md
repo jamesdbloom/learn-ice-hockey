@@ -274,7 +274,7 @@ At your own blue line you have two broad options, and they are genuinely a trade
 
 A **regroup** is when your team, in possession but with no good way forward, **turns the puck back toward your own end, resets, and comes again**. You are not retreating in the sense of giving anything up. You still have the puck. You are declining a bad entry and buying a better one.
 
-At professional level this is routine — a team will regroup two or three times in a shift without anybody thinking twice. At amateur level it barely exists, because every player who receives the puck in the neutral zone feels obliged to go forward with it. **The result is a stream of low-percentage entries, dumped pucks nobody chases, and turnovers at the opposition blue line that become rushes the other way.**
+At professional level this is routine — a team will regroup two or three times in a shift without anybody thinking twice. At amateur level it barely exists, because every player who receives the puck in the neutral zone feels obliged to go forward with it. *(That professional-versus-amateur comparison is coaching observation, not a tracked figure — nobody publishes regroup counts at either level. It is repeated across coaching material and it matches what you will see watching a game, but do not treat "two or three a shift" as a measurement.)* **The result is a stream of low-percentage entries, dumped pucks nobody chases, and turnovers at the opposition blue line that become rushes the other way.**
 
 ### Why a regroup beats a forced entry
 
@@ -360,7 +360,7 @@ Divide the ice lengthways into three lanes: **left wall, middle, right wall.** T
 
 Also called the **trailer** or the **third man high**. One forward deliberately delays, staying 10 to 15 feet behind the play, arriving into the space the first two attackers have vacated.
 
-**Why it works.** Defenders track the puck and the immediate threats. The player arriving second is the one nobody has picked up. On entries, the late man arriving into the high slot behind a two-man rush is one of the most reliable scoring looks in hockey, and it is the direct offensive mirror of the backchecking responsibility described above.
+**Why it works.** Defenders track the puck and the immediate threats. The player arriving second is the one nobody has picked up. On entries, the late man arriving into the high slot behind a two-man rush is treated across coaching material as one of the most reliable scoring looks in hockey — **coaching consensus rather than a tracked figure**, on exactly the same footing as the backchecking responsibility described above, and for the same reason: nobody publishes a breakdown of rush goals by the play that produced them.
 
 **The discipline.** Being the late man means genuinely being late — not drifting five feet behind, but staying a full gap back so the defence has to choose between you and the puck. It also means being the first man back if it turns over, which is the deal.
 
@@ -456,7 +456,7 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 
 - **Hanging at the red line waiting for a breakaway.** It is the most damaging single habit in amateur hockey. It removes your backpressure, which forces your defencemen to back off, which concedes controlled entries all night. One player doing this ruins the neutral zone for the other four.
 - **Forcing the entry every single time.** Skating into a set structure at the blue line and losing the puck there is the worst outcome available — worse than a dump-in, worse than a regroup, worse than icing it. If it is not open, do not go.
-- **Never regrouping.** Treating a backwards pass as a failure. Professional teams regroup constantly; amateur teams almost never do, and it is the biggest single gap between the two.
+- **Never regrouping.** Treating a backwards pass as a failure. Professional teams regroup constantly; amateur teams almost never do — an observation from coaching material rather than a counted difference, but a very visible one.
 - **All three forwards in the same lane.** Chasing the puck as a group means one defender covers three attackers and the ice you needed is on the other side.
 - **Receiving a regroup pass standing still.** You must be moving when the puck arrives, or the reset achieved nothing.
 - **Blind D-to-D through the middle of the neutral zone.** An interception there is an immediate odd-man rush with both defencemen wrong-sided. Behind the net in your own end is a different pass with a different risk; the neutral zone version needs a clean lane.

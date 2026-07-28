@@ -28,7 +28,7 @@ This document covers what the demand actually is, what to train and why, how to 
 
 The best current summary of hockey physiology is a 2024 review in the *Scandinavian Journal of Medicine and Science in Sports* by Vigh-Larsen and Mohr. Its description of match play is worth taking literally:
 
-- Shifts last **roughly 30 to 80 seconds**, separated by **longer periods of largely passive recovery** on the bench. (The 2026 elite-hockey nutrition review puts a number on that bench time: shifts of "∼30-80 s" are "interspersed with passive recovery periods (**2-5 min**)".)
+- Shifts last **roughly 30 to 80 seconds**, separated by **longer periods of largely passive recovery** on the bench. **⚠️ Attribute this one carefully — the review is reporting it, not reporting it as its own.** Its introduction reads *"Studies have documented that each shift typically lasts 30–80 s, with subsequent recovery periods of ~2–5 min"* and cites references 1–3: **Lignell et al. (2018)** — the same paper this corpus already cites for positional workload — **Brocherie et al. (2018)** and **Bracko et al. (1998)**. Those three measured it; Vigh-Larsen and Mohr collected it. Documents restating this figure should name the primaries, not the review. (The 2026 elite-hockey nutrition review puts a number on that bench time: shifts of "∼30-80 s" are "interspersed with passive recovery periods (**2-5 min**)".)
 - That adds up to about **15 to 25 minutes of on-ice time per player** across a game.
 - **That on-ice time comes in about twenty shifts.** The review does not give a shift count, but the NHL's own statistics do: across the 2024-25 regular season, skaters who played at least half a season averaged **21.0 shifts per game** — **19.4 for forwards** and **24.0 for defencemen**, at a mean of **47.7 seconds per shift** (47.1 s for forwards, 48.8 s for defencemen). Individual regulars ranged from about 11 to 33 shifts a game depending on role.
 - **Nearly 50% of the distance covered is at high-intensity skating speeds** — and the review attaches a positional half to that same sentence which is worth carrying: this comes *"with an accentuated intense activity pattern in **forwards compared to defensemen**."* Note what that does and does not say. It is a claim about **intensity of activity pattern**, not about total distance skated, and it separates forwards from defencemen — **it says nothing about one forward position covering more ice than another.** On *total* distance the measured direction is the opposite of the folklore: Lignell and colleagues, tracking 36 NHL players through a game, found *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**. However, F performed **54% more** (p ≤ 0.05) high-intensity skating per minute than defensemen."* So forwards work harder per minute; defencemen cover more ground. No source consulted for this corpus measures skating distance at the level of centre versus winger, so the common assertion that "the centre covers more ice than anyone" is coaching craft — [Center](positions/center.md) sets out what is actually established and carries the citation.
@@ -72,7 +72,7 @@ Glycogen is stored carbohydrate. Individual muscle fibres can run empty even whi
 
 ### One honest caveat about aerobic testing
 
-You will read that VO₂max — the standard laboratory measure of aerobic capacity — predicts hockey performance. Be careful. The Gabrys study found **"no significant relationships between maximal oxygen uptake and the repeated high-intensity effort performance parameters, energy system contributions or lactate responses,"** except a moderate relationship between absolute VO₂max and absolute aerobic work. Parameters measured at the **anaerobic threshold** related more consistently to metabolic work than VO₂max did.
+You will read that VO₂max — the standard laboratory measure of aerobic capacity — predicts hockey performance. Be careful. The Gabrys study found **"[n]o significant relationships were observed between maximal oxygen uptake (VO2max) and the RHIE [repeated high-intensity effort] performance parameters, energy system contributions or lactate responses"** — quoted exactly as printed, checked against the Europe PMC abstract on 28 July 2026; an earlier version of this line compressed the sentence inside its quotation marks — except a moderate relationship between absolute VO₂max and absolute aerobic work. Parameters measured at the **anaerobic threshold** related more consistently to metabolic work than VO₂max did.
 
 That is one study in fourteen semi-professional players, so do not over-read it either. The reasonable position: **the mechanism by which aerobic fitness aids between-shift recovery is well established, but a single lab VO₂max number is a poor predictor of who plays well in the third period.** Train the quality; don't chase the test score.
 
@@ -321,6 +321,8 @@ Hockey has one property that makes fuelling matter more than the modest playing 
 
 ### Before the game
 
+> **The timings in this section are standard sports-nutrition practice, not figures taken from the review cited above.** The review is the source for *what* the fuel is (carbohydrate, and pre-game muscle glycogen being associated with match performance); the 3-to-4-hour and 1-to-2-hour windows below are the conventional prescription you will get from most practitioners, and they are approximate by design — individual tolerance varies enough that "what you have tested and can digest" beats any clock. If you have access to a dietitian, take their numbers over these.
+
 - **The main pre-game meal, 3 to 4 hours before**, built around carbohydrate (rice, pasta, potatoes, bread), with some protein and low fat and fibre — fat and fibre slow digestion and are the usual culprits behind a heavy stomach.
 - **A small carbohydrate top-up 1 to 2 hours before** if needed: a banana, toast, a cereal bar. Keep it small and familiar.
 - **Never experiment on game day.** Test any new food or drink at practice.
@@ -330,7 +332,7 @@ Hockey has one property that makes fuelling matter more than the modest playing 
 
 Ice hockey players sweat more than the cold rink suggests. The elite-hockey nutrition review reports **sweat losses of 2.02 ± 0.74 litres per hour**. A 2025 study of 25 NCAA Division I players compared measurements taken **the mornings of and the mornings after** games, and found a total body water deficit of **0.63 litres (1.2%)** *still present the next morning* — that is a shortfall that survived the whole post-game evening, not the loss during the game itself, which will have been larger.
 
-- **Drink on the bench, every shift or two.** Not one big drink between periods — small, regular amounts.
+- **Drink on the bench, every shift or two.** Small, regular amounts rather than one big drink between periods. *(The measured sweat and body-water figures above are sourced; the little-and-often pattern is the conventional practitioner recommendation, not something those studies tested.)*
 - **Water is fine for most rec games.** For long, hot or high-intensity games, a drink with carbohydrate and sodium (a standard sports drink) has a real rationale: it replaces fluid, adds fuel and replaces salt.
 - **Between periods is your best window** for a slightly larger drink and, in a long tournament day, a small carbohydrate snack.
 
@@ -356,7 +358,7 @@ The evidence base is more mixed than sleep advocates suggest, but it points cons
 
 **What to actually do:**
 
-- **Aim for a consistent 7 to 9 hours**, with the emphasis on *consistent* — a regular sleep and wake time is easier to sustain than a heroic occasional lie-in.
+- **Aim for a consistent 7 to 9 hours** — the general adult sleep recommendation, carried in here rather than derived from any of the hockey studies cited above — with the emphasis on *consistent* — a regular sleep and wake time is easier to sustain than a heroic occasional lie-in.
 - **Protect the night before a game more than the night after**, if you have to choose.
 - **Bank sleep before a heavy stretch** (a tournament, a run of late games) rather than trying to repay it afterwards.
 - **A 20–30 minute nap** is a legitimate tool on a day with an evening game.
