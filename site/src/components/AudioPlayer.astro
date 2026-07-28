@@ -1,0 +1,81 @@
+---
+import { AUDIO_ENABLED, AUDIO_BASE } from '../consts';
+
+interface Props {
+  /** Collection id, e.g. `faceoffs` or `positions/center`. */
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+const src = `${AUDIO_BASE}/${id}.mp3`;
+const storageKey = `audio-position:${id}`;
+---
+
+{/*
+  The narration does not exist yet (build spec phases 4–5), so the whole player
+  is behind AUDIO_ENABLED in src/consts.ts and is off by default. The shell is
+  built and styled so that turning the flag on is the only change needed.
+*/}
+{
+  AUDIO_ENABLED && (
+    <div class="audio-player" data-audio-player data-storage-key={storageKey}>
+      <span class="audio-player__label">Listen</span>
+      <audio controls preload="none" src={src} aria-label={`Narration of ${title}`}>
+        <a href={src}>Download the narration of {title}</a>
+      </audio>
+    </div>
+  )
+}
+
+{
+  AUDIO_ENABLED && (
+    <script is:inline>
+      // Resumable playback position. Additive only: the <audio> element works
+      // perfectly well without this.
+      (function () {
+        var wrap = document.querySelector('[data-audio-player]');
+        if (!wrap) return;
+        var audio = wrap.querySelector('audio');
+        var key = wrap.dataset.storageKey;
+        if (!audio || !key) return;
+
+        function read() {
+          try {
+            return parseFloat(localStorage.getItem(key) || '') || 0;
+          } catch (e) {
+            return 0;
+          }
+        }
+
+        function write(value) {
+          try {
+            localStorage.setItem(key, String(value));
+          } catch (e) {
+            /* ignore */
+          }
+        }
+
+        var resumed = false;
+        audio.addEventListener('loadedmetadata', function () {
+          if (resumed) return;
+          resumed = true;
+          var at = read();
+          if (at > 2 && at < audio.duration - 5) audio.currentTime = at;
+        });
+
+        var last = 0;
+        audio.addEventListener('timeupdate', function () {
+          var now = Date.now();
+          if (now - last < 4000) return;
+          last = now;
+          write(audio.currentTime);
+        });
+
+        audio.addEventListener('ended', function () {
+          write(0);
+        });
+      })();
+    </script>
+  )
+}

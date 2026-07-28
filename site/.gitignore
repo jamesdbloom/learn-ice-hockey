@@ -1,0 +1,7 @@
+# Generated from ../content by scripts/extract-meta.mjs on every dev/build run.
+src/data/docs-meta.json
+
+# Astro
+.astro/
+dist/
+node_modules/

@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import { READING_ORDER } from '../data/nav';
+
+const first = READING_ORDER[0];
+---
+
+<Base title="Page not found" description="That page does not exist." bare={true}>
+  <main class="main notfound" id="main">
+    <h1>Page not found</h1>
+    <p>
+      There is no document at that address. It may have been renamed, or the link may have come
+      from an older version of the corpus.
+    </p>
+    <div class="home-cta">
+      <a class="button" href="/">All documents</a>
+      <a class="button button--ghost" href="/search/">Search</a>
+      <a class="button button--ghost" href={first.href}>{first.title}</a>
+    </div>
+  </main>
+</Base>

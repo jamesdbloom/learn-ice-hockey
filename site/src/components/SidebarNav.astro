@@ -1,0 +1,37 @@
+---
+import { LAYERS } from '../data/nav';
+
+interface Props {
+  /** Collection id of the page currently being viewed, if any. */
+  currentId?: string;
+}
+
+const { currentId } = Astro.props;
+---
+
+{/*
+  Rendered after <main> in source order and moved into the left column by CSS
+  grid on wide screens. That way narrow screens get the document first and the
+  full contents list underneath it, with no JavaScript involved either way.
+*/}
+<nav class="sidebar" id="site-nav" aria-label="Corpus contents">
+  <p class="sidebar__heading">Contents</p>
+  {
+    LAYERS.map((layer) => (
+      <div class="nav-layer">
+        <p class="nav-layer__title">
+          <a href={`/#${layer.id}`}>{layer.title}</a>
+        </p>
+        <ul class="nav-list">
+          {layer.docs.map((doc) => (
+            <li>
+              <a href={doc.href} aria-current={doc.id === currentId ? 'page' : undefined}>
+                {doc.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</nav>

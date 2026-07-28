@@ -1,0 +1,59 @@
+---
+import { SITE_TITLE, SITE_SHORT_TITLE, SITE_DESCRIPTION } from '../consts';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** "article" for documents, "website" for index pages. */
+  ogType?: 'website' | 'article';
+  /** Section shown in Open Graph metadata (the corpus layer). */
+  section?: string;
+}
+
+const { title, description, ogType = 'website', section } = Astro.props;
+
+const pageTitle = title ? `${title} — ${SITE_SHORT_TITLE}` : SITE_TITLE;
+const pageDescription = description ?? SITE_DESCRIPTION;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{pageTitle}</title>
+<meta name="description" content={pageDescription} />
+<link rel="canonical" href={canonical} />
+
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title ?? SITE_TITLE} />
+<meta property="og:description" content={pageDescription} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content={SITE_TITLE} />
+{section && <meta property="article:section" content={section} />}
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title ?? SITE_TITLE} />
+<meta name="twitter:description" content={pageDescription} />
+
+<meta name="color-scheme" content="light dark" />
+<meta name="generator" content={Astro.generator} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="sitemap" href="/sitemap.xml" />
+
+<!--
+  Applied before first paint so a stored theme preference does not flash.
+  Everything on this site is readable without JavaScript; this only chooses
+  between two colour schemes.
+-->
+<script is:inline>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'light' || stored === 'dark') {
+        document.documentElement.dataset.theme = stored;
+      }
+    } catch (e) {
+      /* private mode, storage disabled — the media query still applies */
+    }
+    document.documentElement.classList.add('js');
+  })();
+</script>

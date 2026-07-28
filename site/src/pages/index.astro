@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+import { LAYERS, READING_ORDER, DOC_COUNT } from '../data/nav';
+import { SITE_DESCRIPTION } from '../consts';
+
+const first = READING_ORDER[0];
+---
+
+<Base description={SITE_DESCRIPTION} bare={true}>
+  <main class="main" id="main">
+    <section class="home-hero">
+      <h1>Ice hockey — learning to play the game</h1>
+      <p>
+        {SITE_DESCRIPTION}
+      </p>
+      <p>
+        The material is built on the idea that "how to play hockey" has five distinct on-ice
+        layers, and that most hockey instruction only ever teaches one of them. Knowing your
+        position without the systems means following rules you do not understand. Knowing the
+        systems without technique means knowing where to be but not being able to get there.
+        Knowing both without hockey IQ means executing the wrong thing at the right time.
+      </p>
+      <div class="home-cta">
+        <a class="button" href={first.href}>Start with {first.title}</a>
+        <a class="button button--ghost" href="/search/">Search all {DOC_COUNT} documents</a>
+      </div>
+    </section>
+
+    {
+      LAYERS.map((layer) => (
+        <section class="layer-section" id={layer.id}>
+          <div class="layer-section__head">
+            <h2>{layer.title}</h2>
+            <span class="layer-section__tagline">{layer.tagline}</span>
+          </div>
+          <p class="layer-section__blurb">{layer.blurb}</p>
+          <div class="card-grid">
+            {layer.docs.map((doc) => (
+              <a class="card" href={doc.href}>
+                <span class="card__title">{doc.title}</span>
+                <span class="card__desc">{doc.description}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+</Base>

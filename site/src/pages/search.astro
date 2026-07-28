@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import { LAYERS } from '../data/nav';
+---
+
+<Base
+  title="Search"
+  description="Search every document in the ice hockey learning corpus."
+  bare={true}
+>
+  {/*
+    Pagefind is self-hosted: the CLI writes /pagefind/* into dist during the
+    build (see `npm run index:search`). Nothing is loaded from a CDN and no
+    request leaves the reader's browser.
+  */}
+  <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+
+  <main class="main search-wrap" id="main">
+    <h1>Search</h1>
+
+    <div id="search"></div>
+
+    <noscript>
+      <p class="search-nojs">
+        Search needs JavaScript. Nothing else on this site does — every document is readable
+        without it, and the full contents are listed below.
+      </p>
+    </noscript>
+
+    <h2>All documents</h2>
+    {
+      LAYERS.map((layer) => (
+        <section>
+          <h3>{layer.title}</h3>
+          <ul>
+            {layer.docs.map((doc) => (
+              <li>
+                <a href={doc.href}>{doc.title}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', function () {
+        if (typeof PagefindUI === 'undefined') return;
+
+        new PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          showImages: false,
+          pageSize: 8,
+          resetStyles: false,
+        });
+
+        var params = new URLSearchParams(window.location.search);
+        var q = params.get('q');
+        var input = document.querySelector('#search input');
+        if (input) {
+          if (q) {
+            input.value = q;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+          input.focus();
+        }
+      });
+    </script>
+  </main>
+</Base>

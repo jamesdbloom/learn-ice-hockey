@@ -1,0 +1,90 @@
+{
+  "$comment": "Reading order and layer grouping for the corpus. Derived from the corpus README's own five-layer framing — NOT alphabetical. `docs` are content collection ids (path under content/, without .md). Every markdown file under content/ must appear exactly once here; scripts/extract-meta.mjs fails the build otherwise.",
+  "layers": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "tagline": "Before everything else",
+      "blurb": "The only document here that assumes you have never been on the ice: how to find a session, what registration involves, which tier you belong in, and what actually happens in your first hour at the rink.",
+      "docs": ["getting_started"]
+    },
+    {
+      "id": "foundation",
+      "title": "Foundation",
+      "tagline": "Read these first",
+      "blurb": "What everything is called, what is legal, and the words you shout. The canonical references the rest of the corpus links back to.",
+      "docs": ["rink_map_and_glossary", "rules_primer", "on_ice_communication"]
+    },
+    {
+      "id": "positional",
+      "title": "Positions",
+      "tagline": "Where do I stand and what is my job?",
+      "blurb": "The four positions, plus the bridge between them. The three skater documents share one skeleton — by zone, then by situation within each zone. The goaltender document deliberately does not.",
+      "docs": [
+        "positions/center",
+        "positions/winger",
+        "positions/defender",
+        "positions/goaltender",
+        "switching_positions"
+      ]
+    },
+    {
+      "id": "systems",
+      "title": "Systems and Situations",
+      "tagline": "How five players act as one",
+      "blurb": "Team structure in every zone and every situation. Where a system determines your job, the system is named and an alternative is given — because most breakdowns are two players working from different assumptions.",
+      "docs": [
+        "breakouts",
+        "zone_entries",
+        "offensive_zone_play",
+        "forechecking_systems",
+        "neutral_zone_systems",
+        "defensive_zone_coverage",
+        "defending_the_rush",
+        "special_teams",
+        "faceoffs",
+        "game_management"
+      ]
+    },
+    {
+      "id": "technique",
+      "title": "Technique",
+      "tagline": "How do I physically execute it?",
+      "blurb": "The physical skills every other layer is performed on top of.",
+      "docs": [
+        "skating",
+        "puck_handling",
+        "passing_and_receiving",
+        "shooting",
+        "body_contact_and_battles"
+      ]
+    },
+    {
+      "id": "hockey-iq",
+      "title": "Hockey IQ",
+      "tagline": "How do I read the play and decide?",
+      "blurb": "Support, space, scanning and risk. Knowing your position and the systems without this means executing the wrong thing at the right time.",
+      "docs": [
+        "puck_support_and_spacing",
+        "time_and_space",
+        "scanning_and_anticipation",
+        "risk_management",
+        "playing_without_the_puck"
+      ]
+    },
+    {
+      "id": "off-the-ice",
+      "title": "Off the Ice",
+      "tagline": "Underneath all five layers",
+      "blurb": "Not a layer of play, but every layer above depends on it: kit, conditioning, practice, the mental side, culture, and how to watch.",
+      "docs": [
+        "equipment",
+        "conditioning_and_recovery",
+        "practice_and_development",
+        "mental_game",
+        "team_play_and_culture",
+        "how_to_watch_hockey"
+      ]
+    }
+  ]
+}

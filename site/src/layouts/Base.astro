@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogType?: 'website' | 'article';
+  section?: string;
+  /** Adds the third (table-of-contents) grid column. */
+  withToc?: boolean;
+  /** Renders the plain single-column shell used by the home and search pages. */
+  bare?: boolean;
+}
+
+const { title, description, ogType, section, withToc = false, bare = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <BaseHead title={title} description={description} ogType={ogType} section={section} />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header navHref={bare ? '/' : '#site-nav'} />
+    <div class={bare ? 'shell shell--bare' : withToc ? 'shell shell--with-toc' : 'shell'}>
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>
