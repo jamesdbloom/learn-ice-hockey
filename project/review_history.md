@@ -208,6 +208,55 @@ Known-dead entries are retained deliberately, labelled in the content with the d
 
 ---
 
+## 4a. Round 20 — the key-facts layer *(28 July 2026)*
+
+Full report: [`reviews/round_20_key_facts.md`](reviews/round_20_key_facts.md).
+
+A new extraction layer was added to the corpus — 763 blocks, 4,319 short labelled
+imperatives across the 26 documents that teach how to play — and reviewed by 26
+readers, one per document, each scoped to a single method.
+
+**It found seven criticals**, all fixed. It also found two rule-set divergences
+stated as universal across nine documents each, one of them the very bullet §3
+of this document records as *"wrong twice, in opposite directions, and both
+errors reached six documents."* It had gone wrong a third time.
+
+**The finding that matters is about the method, and it repeats §5's shape.**
+Traceability came back clean in all 26 reports: not one fact was invented, and
+not one was borrowed from a neighbouring section. The rule the convention was
+built on worked perfectly.
+
+**Every critical was an omission** — the true half of a two-part rule,
+extracted faithfully, with the half that keeps a reader out of the penalty box
+left behind. One reviewer put it plainly: *"a reviewer running only PASS 1 on
+this file would have returned nothing."*
+
+> **The convention's rules were all about commission. Every defect was
+> omission.** A checker that verifies what a fact says cannot see what it does
+> not say, and neither can a reviewer whose brief is fidelity.
+
+Three of the seven had their correct answer **already in the corpus** — a
+sibling document, or in one case the same document's own body. A cross-document
+consistency pass would have caught them with no rulebook access at all. And
+both systemic divergences were invisible to every individual reviewer: each was
+found only by reading the reports side by side and noticing that a rule
+appeared everywhere and its exception nowhere.
+
+**Two operational findings worth carrying:**
+
+- **The primary-source paths in the style guide are stale.** Every reviewer
+  reported it. Several recovered the USA Hockey, IIHF, Hockey Canada and PWHL
+  rulebooks, two USA Hockey coaching manuals and the Tulsky paper by fetching
+  them from the documents' own Sources — one needed a browser user-agent and a
+  `Referer` header to get past a 403. Until the paths are fixed, the
+  `rules-verifier` agent is half-blind.
+- **Reviewers must be told what a concurrent fix has changed.** One reviewer
+  was briefed to check a defect that had been repaired while it worked, could
+  not reproduce it, and correctly reported that it could not — which is the
+  right behaviour, and a reminder that a report is a statement about a moment.
+
+---
+
 ## 5. The methodological lesson
 
 This is the finding that generalises beyond hockey.

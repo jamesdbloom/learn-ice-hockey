@@ -50,9 +50,27 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 
   **⚠️ Do not write that screening is "entirely legal".** That overstatement propagated into 16 places across 12 documents before it was caught. Screening from **outside** the crease, without contact, is legal and valuable — but clause (1) means **positioning alone can void a goal** if it impairs the goalie's ability to move or defend, and Rule 69.3 separately disallows a goal where an attacker *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision and impair his ability to defend his goal."* Always attach the outside-the-crease qualifier to the legality claim itself.
 
-### Primary rulebooks are available locally — use them
+### Primary rulebooks — get them yourself, the paths below are historical
 
-`nhl.com/info/rules` returns 404 and the hosted PDF often exceeds fetch limits, so **do not waste time trying to fetch the rulebook over the web.** The genuine primary sources have already been downloaded and text-extracted to this directory:
+> **⚠️ These paths are stale, and every reviewer in round 20 reported it.** The
+> scratchpad directory belongs to a session that has ended; the directories
+> still exist and are empty. Do not conclude a rule is uncheckable because a
+> path here does not resolve — **that is how a round loses its whole IIHF and
+> Hockey Canada layer**, which is exactly what happened.
+>
+> **Fetch them from the URLs in the documents' own Sources sections.** Round 20's
+> reviewers recovered the NHL, USA Hockey, Hockey Canada, IIHF and PWHL
+> rulebooks, both USA Hockey coaching manuals and the Tulsky paper that way.
+> Two things worth knowing before you give up on a 403: USA Hockey's coaching
+> PDFs serve fine with a browser user-agent plus `Referer: usahockey.com`, and
+> `iihf.com` returns a Cloudflare challenge to automated fetching while serving
+> normally to a browser. A 403 is not an absence — §3 of the review history
+> says so at length, and it applies to your own tooling too.
+>
+> The file list below is kept as a description of *what to obtain and what each
+> is called*, not as a set of working paths.
+
+`nhl.com/info/rules` returns 404 and the hosted PDF often exceeds fetch limits, so **do not fetch the rulebook from that URL.** The primary sources, as previously extracted:
 
 ```
 /private/tmp/claude-503/-Users-uk45004860-Documents-personal-ice-hockey/0595129f-cbc3-4aa3-a9cd-312c832ff5c9/scratchpad/
@@ -227,6 +245,37 @@ takes `Never:`. Using `Rule:` for coaching advice breaks
 in the most visible place on the page. Where the body hedges — *"a coaching
 default, not a law"*, *"a convention, not a law"* — the fact takes
 `Convention:`, and that hedge is not optional.
+
+### The rule this convention was missing
+
+**Extract-never-author guards against invention. Nothing guards against
+extracting the true half of a two-part rule.**
+
+Round 20 read all 763 blocks and found traceability essentially perfect — and
+seven criticals, every one of them an omission. A fact that is accurate,
+traceable, correctly labelled and correctly cited can still be the sentence
+that gets a reader penalised, because the sentence next to it was the one
+carrying the exception.
+
+So, when writing or reviewing a block:
+
+**List every hedge, exception and rule-set flag in the section's body, then
+check the block for each one.** That is the check that found all seven. It is
+not the same as asking whether the facts are true.
+
+Three specific traps, all of which recurred across several documents at once:
+
+- **A rule with an exception must carry the exception.** NHL 49.2 has two
+  prohibitions; 63.2(iii) has three carve-outs; 67.4 exempts the goalkeeper;
+  83.4 has one way a goal still counts. Each was stated with a part missing.
+- **A rule that differs by rule set must say so.** The post-icing restrictions
+  and the puck-out-of-play minor were each stated as universal in nine
+  documents. Most readers are under USA Hockey, where neither applies as
+  written.
+- **A restriction that lives in prose does not exist.** `body_contact_and_
+  battles.md` §5 confined itself to checking leagues in a blockquote, and
+  taught four blocks of how to hit without it. The layer exists so a reader can
+  skip the prose.
 
 ### Extract, never author
 

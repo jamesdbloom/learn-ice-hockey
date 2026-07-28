@@ -1,6 +1,16 @@
 # Round 20 — the key-facts layer
 
-*In progress. 26 documents, one reviewer each, scoped to a single method.*
+*Complete. 26 documents, one reviewer each, scoped to a single method.
+28 July 2026.*
+
+| | |
+|---|---|
+| Documents reviewed | 26 of 26 |
+| Blocks read | 763 |
+| Facts read | 4,319 |
+| Criticals found | 7 |
+| Criticals fixed | 7 |
+| Rulebooks reviewers recovered themselves | NHL, USA Hockey, Hockey Canada, IIHF, PWHL, plus two USA Hockey coaching manuals and the Tulsky paper |
 
 ## The brief
 
@@ -325,3 +335,62 @@ whose first line is *"Here is the insight that reorganises everything else."*
 otherwise validates only the blocks that exist. **Nothing enforces one block per
 teaching section**, so the layer can silently omit a document's central idea.
 
+
+---
+
+## The seven criticals
+
+All fixed. Every rule was re-read in the primary text before editing.
+
+| # | Document | Defect |
+|---|---|---|
+| 1 | `passing_and_receiving.md` | NHL 49.2 carries **two** prohibitions; the corpus carried one. Omitted: you cannot score with a distinct kicking motion. Body defective too |
+| 2 | `puck_handling.md` | Same defect, same rule, found independently |
+| 3 | `zone_entries.md` | Told the **defending** team a delayed-offside shot *"cannot legally end up in your net — play it out"*. Rule 83.4: the one way it scores is you putting it there |
+| 4 | `defending_the_rush.md` | Imported "from behind" into Rules 25.1 and 57.4, which do not contain it. Also restored 67.4's *"except a goalkeeper"* |
+| 5 | `risk_management.md` | Told a **goaltender** that freezing the puck in his own crease concedes a penalty shot. 67.4 exempts him. Its own body was right |
+| 6 | `goaltender.md` | Compressed USA Hockey 614(c) to one of four triggers. The missing one catches the most ordinary thing a goalie does behind the net |
+| 7 | `body_contact_and_battles.md` | **Safety-critical.** §5 teaches how to deliver a body check across four blocks; none said the section only applies where checking is legal |
+
+### Two systemic divergences, fixed corpus-wide
+
+Neither was found by a reviewer. Each was found by reading reports side by side
+and noticing that a rule appeared everywhere and its exception nowhere.
+
+- **Post-icing restrictions** — 13 facts across 9 documents stated the
+  no-change/no-timeout consequence as universal. USA Hockey Rule 624 contains
+  no substitution language at all; 636(f) attaches no icing condition. The
+  style guide records this bullet has already been wrong twice, reaching six
+  documents each time. This was the third time.
+- **Puck out of play** — 9 facts across 9 documents stated NHL 63.2(iii) as
+  universal. USA Hockey 631(a)/(d) make it a faceoff; only a *deliberate*
+  shoot-out draws a minor under 610(c). So the panic clearance the rule is
+  invoked for throughout the corpus is a faceoff in the book most North
+  American rec and youth readers play under.
+
+---
+
+## What the round proves about the method
+
+**Traceability came back clean in all 26 reports.** Not one reviewer found a
+fact drawn from a neighbouring section, another document, or authored outright.
+The extract-never-author rule worked exactly as specified.
+
+**And all seven criticals were omissions.** Every one is the true half of a
+two-part rule, extracted faithfully, with the half that keeps the reader out of
+the penalty box left behind.
+
+Four reviewers reached that conclusion independently. The sharpest statement of
+it:
+
+> A reviewer running only PASS 1 on this file would have returned nothing.
+
+**Three of the seven had their correct answer already in the corpus** —
+`rules_primer.md` held the delayed-offside carve-out, `risk_management.md` held
+the from-behind analysis, `puck_handling.md`'s own body held the kicking
+prohibition. A cross-document consistency pass would have caught them with no
+rulebook access at all.
+
+> The convention's rules are all about commission. The defects were all
+> omission. That asymmetry is the round's finding, and it is why the next
+> round's brief is the one written at the top of this document.
