@@ -1,0 +1,67 @@
+name: CI
+
+# Every pull request and every push to main. Builds nothing that leaves the
+# runner — deployment lives in deploy.yml, so a fork PR can never ship.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    name: Internal links
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - uses: actions/setup-python@v5.3.0
+        with:
+          python-version: '3.12'
+
+      # Standard library only, so there is nothing to install. This runs
+      # against the markdown source, which means it fails in seconds on a
+      # renamed file or a reworded heading, before anyone waits for a build.
+      - name: Check internal links and heading anchors
+        run: python3 scripts/check_links.py --quiet
+
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      # `npm run build` also runs Pagefind indexing and the site's own
+      # post-build link checker (site/scripts/check-links.mjs), which walks the
+      # rendered HTML. That one proves the rewriting and routing preserved the
+      # cross-links; scripts/check_links.py proves the source is sound. Both.
+      - name: Build
+        working-directory: site
+        run: npm run build
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: site-dist
+          path: site/dist
+          retention-days: 7
+          if-no-files-found: error

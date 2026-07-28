@@ -1,0 +1,245 @@
+name: Deploy
+
+# Push to main only. Everything CI does, then ship it to S3 and invalidate the
+# HTML in CloudFront.
+#
+# AWS auth is OIDC role assumption — there are no long-lived keys in this repo
+# and there must never be. The role's trust policy is scoped to this repository
+# and this branch (build spec §5.4).
+#
+# The infrastructure does not exist yet. Until the repository variables below
+# are set, the deploy job is skipped cleanly and the workflow stays green: a red
+# build on every push is worse than no deploy at all.
+#
+# Repository variables (Settings → Secrets and variables → Actions → Variables):
+#   AWS_REGION                  e.g. eu-west-2
+#   AWS_ROLE_ARN                arn:aws:iam::<account>:role/<github-actions-role>
+#   S3_BUCKET                   the private origin bucket
+#   CLOUDFRONT_DISTRIBUTION_ID  the distribution in front of it
+# All four are non-secret identifiers, so they are variables, not secrets. If
+# you would rather keep the role ARN out of the logs, set the secret
+# AWS_ROLE_ARN_SECRET instead and the preflight job will pick it up.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
+jobs:
+  links:
+    name: Internal links
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-python@v5.3.0
+        with:
+          python-version: '3.12'
+      - name: Check internal links and heading anchors
+        run: python3 scripts/check_links.py --quiet
+
+  preflight:
+    name: Is AWS configured?
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      configured: ${{ steps.check.outputs.configured }}
+      role_arn: ${{ steps.check.outputs.role_arn }}
+    steps:
+      # Done in a step rather than a job-level `if` because the secrets context
+      # is not available in job-level conditions — only vars is.
+      - id: check
+        env:
+          AWS_REGION: ${{ vars.AWS_REGION }}
+          AWS_ROLE_ARN: ${{ vars.AWS_ROLE_ARN }}
+          AWS_ROLE_ARN_SECRET: ${{ secrets.AWS_ROLE_ARN_SECRET }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          set -euo pipefail
+          ROLE="${AWS_ROLE_ARN:-${AWS_ROLE_ARN_SECRET:-}}"
+          MISSING=()
+          [ -n "$ROLE" ] || MISSING+=("AWS_ROLE_ARN")
+          [ -n "${AWS_REGION:-}" ] || MISSING+=("AWS_REGION")
+          [ -n "${S3_BUCKET:-}" ] || MISSING+=("S3_BUCKET")
+          [ -n "${CLOUDFRONT_DISTRIBUTION_ID:-}" ] || MISSING+=("CLOUDFRONT_DISTRIBUTION_ID")
+          if [ ${#MISSING[@]} -eq 0 ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+            echo "role_arn=$ROLE" >> "$GITHUB_OUTPUT"
+            echo "AWS is configured — the site will be deployed." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "role_arn=" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Deploy skipped"
+              echo
+              echo "The infrastructure is not wired up yet. Missing repository variable(s):"
+              for name in "${MISSING[@]}"; do echo "- \`$name\`"; done
+              echo
+              echo "Set them under Settings → Secrets and variables → Actions, and this job will deploy on the next push to \`main\`."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  deploy:
+    name: Build and deploy
+    needs: [links, preflight]
+    if: needs.preflight.outputs.configured == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
+    permissions:
+      id-token: write   # required to mint the OIDC token
+      contents: read
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Build
+        working-directory: site
+        run: npm run build
+
+      - name: Assume the deploy role
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          role-to-assume: ${{ needs.preflight.outputs.role_arn }}
+          aws-region: ${{ vars.AWS_REGION }}
+          role-session-name: github-actions-deploy-${{ github.run_id }}
+
+      # Two passes, in this order, because a page must never reach a reader
+      # before the assets it references.
+      #
+      # Pass 1 — content-hashed assets only, cached for a year and immutable.
+      # Astro's /_astro/* and Pagefind's *.pf_fragment / *.pf_index / *.pf_meta
+      # / *.pagefind all carry a hash in the filename, so a change is a new URL
+      # and the old one can be cached forever. Pagefind's loader scripts and
+      # pagefind-entry.json are *not* hashed and deliberately do not match here.
+      #
+      # `--delete` is scoped by the same filters, so it prunes superseded hashed
+      # assets without touching anything else.
+      #
+      # `audio/*` is excluded from every pass. The narration MP3s (Phase 5) are
+      # generated outside this build and uploaded straight to the bucket; they
+      # are not in site/dist. A sync with --delete that did not exclude them
+      # would cheerfully delete every one of them.
+      - name: Sync hashed assets (1 year, immutable)
+        env:
+          BUCKET: ${{ vars.S3_BUCKET }}
+        run: |
+          set -euo pipefail
+          aws s3 sync site/dist "s3://${BUCKET}" \
+            --delete \
+            --no-progress \
+            --exclude "*" \
+            --include "_astro/*" \
+            --include "pagefind/*.pf_fragment" \
+            --include "pagefind/*.pf_index" \
+            --include "pagefind/*.pf_meta" \
+            --include "pagefind/*.pagefind" \
+            --exclude "audio/*" \
+            --cache-control "public, max-age=31536000, immutable"
+
+      # Pass 2 — everything else: HTML, the sitemap, robots.txt, the favicon,
+      # Pagefind's entry point and loader. Five minutes, so an edit shows up
+      # promptly, and `--delete` prunes pages that no longer exist. The upload
+      # and delete lines are captured so only what actually changed gets
+      # invalidated below.
+      - name: Sync pages (5 minutes)
+        id: html
+        env:
+          BUCKET: ${{ vars.S3_BUCKET }}
+        run: |
+          set -euo pipefail
+          aws s3 sync site/dist "s3://${BUCKET}" \
+            --delete \
+            --no-progress \
+            --exclude "_astro/*" \
+            --exclude "pagefind/*.pf_fragment" \
+            --exclude "pagefind/*.pf_index" \
+            --exclude "pagefind/*.pf_meta" \
+            --exclude "pagefind/*.pagefind" \
+            --exclude "audio/*" \
+            --cache-control "public, max-age=300, must-revalidate" \
+            | tee /tmp/pages-sync.log
+
+          # "upload: site/dist/faceoffs/index.html to s3://bucket/faceoffs/index.html"
+          # becomes "/faceoffs/index.html". Deleted keys need invalidating too.
+          {
+            grep -oE "s3://${BUCKET}[^ ]*" /tmp/pages-sync.log || true
+          } | sed -E "s|s3://${BUCKET}||" | sort -u > /tmp/changed-paths.txt
+          echo "count=$(wc -l < /tmp/changed-paths.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+
+      # Audio, if this build happens to carry any. No --delete: the bucket is
+      # the source of truth for audio, not the repo.
+      - name: Sync audio
+        env:
+          BUCKET: ${{ vars.S3_BUCKET }}
+        run: |
+          set -euo pipefail
+          if [ -d site/dist/audio ]; then
+            aws s3 sync site/dist/audio "s3://${BUCKET}/audio" \
+              --no-progress \
+              --cache-control "public, max-age=31536000, immutable"
+          else
+            echo "No site/dist/audio in this build — nothing to sync."
+          fi
+
+      # CloudFront invalidations are free for the first 1,000 paths a month and
+      # billed after that, so `/*` on every push is a standing charge for no
+      # reason. Only changed HTML is invalidated: the hashed assets never need
+      # it because their filenames change instead, and everything else in pass 2
+      # carries a five-minute TTL and catches up on its own.
+      - name: Invalidate changed HTML
+        env:
+          DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          set -euo pipefail
+          PATHS=()
+          while IFS= read -r line; do
+            if [ -n "$line" ]; then PATHS+=("$line"); fi
+          done < <(grep -E '\.html$' /tmp/changed-paths.txt || true)
+
+          if [ ${#PATHS[@]} -eq 0 ]; then
+            echo "No HTML changed — no invalidation needed." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # A reader asking for /faceoffs/ is rewritten to /faceoffs/index.html
+          # by the CloudFront function before the cache is consulted, so the
+          # index.html key is the one that matters. The bare root is added
+          # because some clients ask for "/" directly.
+          if printf '%s\n' "${PATHS[@]}" | grep -qx '/index.html'; then
+            PATHS+=("/")
+          fi
+
+          if [ ${#PATHS[@]} -gt 300 ]; then
+            echo "::warning::${#PATHS[@]} HTML paths changed — invalidating /* instead, which is cheaper than 300 individual paths."
+            PATHS=("/*")
+          fi
+
+          aws cloudfront create-invalidation \
+            --distribution-id "$DISTRIBUTION_ID" \
+            --paths "${PATHS[@]}" \
+            --query 'Invalidation.Id' --output text
+
+          {
+            echo "### Deployed"
+            echo
+            echo "Invalidated ${#PATHS[@]} path(s):"
+            echo
+            printf '- `%s`\n' "${PATHS[@]}"
+          } >> "$GITHUB_STEP_SUMMARY"
