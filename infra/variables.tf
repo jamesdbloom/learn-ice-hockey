@@ -96,6 +96,51 @@ variable "github_repository" {
   }
 }
 
+variable "github_oidc_subject_prefix" {
+  description = <<-EOT
+    The "repo:..." prefix GitHub actually puts in the OIDC token's `sub` claim,
+    without the trailing ":ref:..." part.
+
+    Leave null for the historic format, "repo:<owner>/<repo>", which is what
+    almost every published example still shows.
+
+    GitHub now issues id-qualified subjects for some accounts:
+
+      repo:<owner>@<owner_id>/<repo>@<repo_id>
+
+    The ids are immutable, so trust survives a rename and does NOT survive
+    deleting a repository and recreating one with the same name. That is a
+    security improvement, but it silently breaks a trust policy written the
+    old way: the role assumption fails with a bare "Not authorized to perform
+    sts:AssumeRoleWithWebIdentity" and nothing anywhere names the mismatch.
+
+    Do not guess which form your account uses. Ask GitHub:
+
+      gh api /repos/<owner>/<repo>/actions/oidc/customization/sub \
+        --jq .sub_claim_prefix
+
+    and paste the answer here. If a deploy starts failing at role assumption
+    after this has been working, check that value again before anything else,
+    and confirm against CloudTrail, which logs the subject that was actually
+    presented:
+
+      aws cloudtrail lookup-events \
+        --lookup-attributes AttributeKey=EventName,AttributeValue=AssumeRoleWithWebIdentity
+  EOT
+  type        = string
+  default     = null
+
+  validation {
+    condition     = var.github_oidc_subject_prefix == null || startswith(coalesce(var.github_oidc_subject_prefix, "repo:"), "repo:")
+    error_message = "github_oidc_subject_prefix must start with \"repo:\"."
+  }
+
+  validation {
+    condition     = var.github_oidc_subject_prefix == null || !strcontains(coalesce(var.github_oidc_subject_prefix, ""), ":ref:")
+    error_message = "github_oidc_subject_prefix is the prefix only — leave off the \":ref:refs/heads/...\" part, which is built from github_branch."
+  }
+}
+
 variable "github_branch" {
   description = "Branch whose workflow runs may assume the deploy role. Anything else is denied by the trust policy."
   type        = string

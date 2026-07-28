@@ -36,6 +36,13 @@ locals {
 
   github_oidc_provider_arn = var.create_oidc_provider ? aws_iam_openid_connect_provider.github[0].arn : "arn:${local.partition}:iam::${local.account_id}:oidc-provider/${local.github_oidc_url}"
 
+  # The full `sub` claim the trust policy matches, built from the prefix GitHub
+  # actually issues plus the branch. github_repository is deliberately not used
+  # to build this: it also feeds the mandatory Repository tag and the role
+  # description, which want the readable "owner/repo" and not the id-qualified
+  # form. See var.github_oidc_subject_prefix.
+  github_oidc_subject = "${coalesce(var.github_oidc_subject_prefix, "repo:${var.github_repository}")}:ref:refs/heads/${var.github_branch}"
+
   # Content Security Policy. The site is entirely self-hosted: no CDN, no
   # analytics, no web fonts from anyone else, so nothing here names an external
   # origin. 'unsafe-inline' is present for styles only, because Astro inlines

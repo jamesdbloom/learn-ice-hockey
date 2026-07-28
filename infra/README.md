@@ -297,7 +297,7 @@ aws iam list-open-id-connect-providers --profile ice-hockey
 Scoped to one repository and one branch:
 
 ```
-sub = repo:<github_repository>:ref:refs/heads/<github_branch>
+sub = <github_oidc_subject_prefix>:ref:refs/heads/<github_branch>
 aud = sts.amazonaws.com
 ```
 
@@ -307,6 +307,49 @@ prevents a token minted for a different audience being replayed.
 
 Pull requests from forks cannot assume the role, because their `sub` is
 `pull_request`, not `ref:refs/heads/main`.
+
+#### Get the subject prefix from GitHub — do not assume it
+
+Every example you will find writes the prefix as `repo:<owner>/<repo>`. GitHub
+now issues an **id-qualified** subject for some accounts, including this one:
+
+```
+repo:jamesdbloom@733179/learn-ice-hockey@1314993801
+```
+
+where `733179` is the owner id and `1314993801` the repository id. Both are
+immutable, so trust survives a rename and deliberately does *not* survive
+deleting the repository and recreating one with the same name.
+
+This is set by `github_oidc_subject_prefix`, which defaults to `null` meaning
+the historic `repo:<owner>/<repo>`. Ask GitHub rather than guessing:
+
+```sh
+gh api /repos/<owner>/<repo>/actions/oidc/customization/sub --jq .sub_claim_prefix
+```
+
+**Two separate things break role assumption with the same useless error**,
+`Not authorized to perform sts:AssumeRoleWithWebIdentity`, which names neither
+the claim nor the mismatch. Both were hit on the first deploy of this project:
+
+1. **A `sub` prefix in the wrong format** — the case above.
+2. **`environment:` on the job.** Naming a GitHub environment replaces the
+   `:ref:refs/heads/<branch>` tail with `:environment:<name>`. See the comment
+   in `.github/workflows/deploy.yml`. Pointing the trust policy at the
+   environment form is not a fix on its own — the environment claim carries no
+   branch, so without a deployment branch policy any branch could deploy.
+
+CloudTrail is the only thing that will tell you what was actually presented:
+
+```sh
+aws cloudtrail lookup-events \
+  --lookup-attributes AttributeKey=EventName,AttributeValue=AssumeRoleWithWebIdentity \
+  --region <your region> \
+  --query 'Events[].CloudTrailEvent' --output text | head -1
+```
+
+The `userName` in that event is the subject the token carried. Diff it against
+the trust policy and the mismatch is immediately obvious.
 
 ### The permissions
 

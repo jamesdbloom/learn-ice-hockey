@@ -39,6 +39,17 @@ create_oidc_provider = false
 
 github_branch = "main"
 
+# The "repo:..." prefix GitHub puts in the OIDC token's sub claim. Leave
+# commented for the historic "repo:<owner>/<repo>". Some accounts get an
+# id-qualified subject instead, and a trust policy written the old way then
+# fails with a bare "Not authorized to perform sts:AssumeRoleWithWebIdentity".
+# Ask GitHub rather than guessing:
+#
+#   gh api /repos/<owner>/<repo>/actions/oidc/customization/sub \
+#     --jq .sub_claim_prefix
+#
+# github_oidc_subject_prefix = "repo:owner@1234/repo@5678"
+
 # CloudFront access logs cost money per request and are rarely read.
 enable_logging = false
 
