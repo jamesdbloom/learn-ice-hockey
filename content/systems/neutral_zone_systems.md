@@ -1,9 +1,9 @@
 # Neutral Zone Systems
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline.
 >
-> **Related:** [Zone Entries](zone_entries.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Defending the Rush](defending_the_rush.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Faceoffs](faceoffs.md) · [Time and Space](../hockey-iq/time_and_space.md)
+> **Related:** [Zone Entries](zone_entries.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Defending the Rush](defending_the_rush.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Faceoffs](faceoffs.md) · [Time and Space](../hockey-iq/time_and_space.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

@@ -1,9 +1,9 @@
 # Shooting
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline.
 >
-> **Related:** [Offensive Zone Play](../systems/offensive_zone_play.md) · [Passing and Receiving](passing_and_receiving.md) · [Puck Handling](puck_handling.md) · [Equipment](../off-the-ice/equipment.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Goaltender](../positions/goaltender.md) · [Zone Entries](../systems/zone_entries.md)
+> **Related:** [Offensive Zone Play](../systems/offensive_zone_play.md) · [Passing and Receiving](passing_and_receiving.md) · [Puck Handling](puck_handling.md) · [Equipment](../off-the-ice/equipment.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Goaltender](../positions/goaltender.md) · [Zone Entries](../systems/zone_entries.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 
@@ -557,7 +557,7 @@ Verified against the *NHL Official Rules 2025-2026*, **Rule 24 (Penalty Shot)** 
 - **The spin-o-rama is not permitted.** If you complete a 360° turn on the approach, the referee stops the shot and it is no goal.
 - **The lacrosse-style move is permitted** — picking the puck up on the blade and whipping it — *provided the puck is never raised above shoulder height and is not carried higher than the crossbar when released.*
 - **The goalie must stay in their crease until you touch the puck.** If they leave early and you do not score, you shoot again.
-- **In a shootout** each team gets three shooters, then sudden death; **no player may shoot twice until everyone eligible has shot.** Once it starts, the opposing goalie cannot be replaced unless injured, and a substitute gets no warm-up shots.
+- **In a shootout** each team gets three shooters, then sudden death; **no player may shoot twice until everyone eligible has shot.** Once it starts, the opposing goalie cannot be replaced unless injured, and a substitute gets no warm-up shots. **⚠️ That is the NHL. Under the IIHF — and so in Britain — the opposite is true:** Rule 84.4(VI) reads *"The goalkeepers from each team may be changed after each shot."* The IIHF also uses **five** shooters rather than three, with a captains' coin toss deciding who shoots first. See [UK and England Rules](../foundation/uk_rules.md) and [Game Management](../systems/game_management.md), which owns overtime and shootout formats.
 - **There is no clock.** Neither Rule 24 nor Rule 84.4 sets a time limit on the approach, so any "you have N seconds" you hear is folklore. Take the time.
 
 > **Rec and youth leagues vary.** Many run shootouts under house rules — different numbers of shooters, sometimes a start from the blue line or the red line rather than centre. Ask before the game, because a shorter approach changes your move: less run-up means less time to change pace, which pushes the read toward shooting.

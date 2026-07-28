@@ -1,9 +1,9 @@
 # Time and Space
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline.
 >
-> **Related:** [Puck Support and Spacing](puck_support_and_spacing.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Playing Without the Puck](playing_without_the_puck.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Zone Entries](../systems/zone_entries.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md)
+> **Related:** [Puck Support and Spacing](puck_support_and_spacing.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Playing Without the Puck](playing_without_the_puck.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Zone Entries](../systems/zone_entries.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

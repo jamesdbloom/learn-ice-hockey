@@ -1,6 +1,6 @@
 # Equipment
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play — and equipment is one of the areas where they
 > differ most — it is flagged inline. Equipment *rules* vary far more between leagues than
 > playing rules do, so the recurring instruction in this document is: check your own league's

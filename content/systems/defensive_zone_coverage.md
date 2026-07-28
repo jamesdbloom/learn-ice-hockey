@@ -1,9 +1,9 @@
 # Defensive Zone Coverage
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline.
 >
-> **Related:** [Center](../positions/center.md) · [Defender](../positions/defender.md) · [Winger](../positions/winger.md) · [Breakouts](breakouts.md) · [Defending the Rush](defending_the_rush.md) · [Forechecking Systems](forechecking_systems.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [On-Ice Communication](../foundation/on_ice_communication.md)
+> **Related:** [Center](../positions/center.md) · [Defender](../positions/defender.md) · [Winger](../positions/winger.md) · [Breakouts](breakouts.md) · [Defending the Rush](defending_the_rush.md) · [Forechecking Systems](forechecking_systems.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

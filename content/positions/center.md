@@ -1,8 +1,8 @@
 # Center
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Winger](winger.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Faceoffs](../systems/faceoffs.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Breakouts](../systems/breakouts.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md)
+> **Related:** [Winger](winger.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Faceoffs](../systems/faceoffs.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Breakouts](../systems/breakouts.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

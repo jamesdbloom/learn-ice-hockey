@@ -1,8 +1,8 @@
 # Scanning and Anticipation
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. This document is about perception and habit rather than rules; the few places a rule shapes the read are noted where they apply.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. This document is about perception and habit rather than rules; the few places a rule shapes the read are noted where they apply. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Playing Without the Puck](playing_without_the_puck.md) · [Risk Management](risk_management.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) · [Puck Handling](../technique/puck_handling.md) · [On-Ice Communication](../foundation/on_ice_communication.md)
+> **Related:** [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Playing Without the Puck](playing_without_the_puck.md) · [Risk Management](risk_management.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) · [Puck Handling](../technique/puck_handling.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

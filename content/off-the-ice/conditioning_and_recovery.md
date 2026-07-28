@@ -1,6 +1,6 @@
 # Conditioning and Recovery
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline. Physical preparation is
 > not governed by playing rule — but the **shift length** your league's culture permits, and
 > whether **body checking** is legal, both change what your body has to survive, and those

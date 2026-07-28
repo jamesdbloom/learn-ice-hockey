@@ -98,9 +98,11 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 - **"A player is off-side when both skates are completely over the leading edge of the blue line involved in the play."** Both. Not one. Conversely, *"a player is on-side when either of his skates are in contact with the blue line, or on his own side of the line, at the instant the puck completely crosses the leading edge of the blue line."*
 - The **leading edge** is the near edge of the blue line as you approach it. The line is painted **twelve inches wide** (Rule 1.5), and that whole foot of paint counts as "the line" — a skate touching any of it is onside.
 - **Your own side of the line is a vertical plane** rising from the leading edge. *"If a player's skate has yet to break the plane prior to the puck completely crossing the leading edge, he is deemed to be on-side for the purpose of the off-side rule."* A skate lifted in the air, held back over the neutral zone, is onside.
-- For 2025-26 the NHL clarified that **"a 'skate' is to be considered the blade of the skate only."** Your boot overhanging the line is irrelevant; the blade is what is judged.
+- For 2025-26 the NHL clarified that **"a 'skate' is to be considered the blade of the skate only."** Your boot overhanging the line is irrelevant; the blade is what is judged. **This sentence is an NHL clarification and has no counterpart in the IIHF book**, which says only "skates" — so treat the blade-only reading as certain in the NHL and as the sensible expectation, not a quoted guarantee, elsewhere.
 
-> **⚠️ The third clause is NHL and IIHF only, and USA Hockey reverses it.** Under **USA Hockey Rule 630(a)** a player is offside when they do *"not have skate contact with any part of the Neutral Zone or the blue line when the puck crosses the determining edge of the blue line"*, and the Note confirms that *"a player only needs to have skate contact with one skate with the blue line to be considered 'onside.'"* So an airborne trail skate is **onside under the NHL and IIHF and offside under USA Hockey** — and most North American rec and youth hockey runs on USA Hockey rules. This changes step 2 below. It is the single most important rule-set difference in this document.
+**The first three clauses are the IIHF's own words, not a borrowing.** IIHF Rule 83.1 reads: *"A Player is 'off-side' when both skates are completely over the leading edge of the blue line involved in the play. A Player is on-side when either of their skates are in contact with the blue line, or on their 'own side' of the line, at the instant the puck completely crosses the leading edge of the blue line. On their 'own side' of the line shall be defined by a 'plane' of the blue line which shall extend from the leading edge of the blue line upwards. If a Player's skate has yet to 'break the plane' prior to the puck completely crossing the leading edge, they are deemed to be 'on-side'."* **If you play anywhere in Britain, that is your rule** — the In-House Rules make no amendment to Rule 83.
+
+> **⚠️ The third clause is NHL and IIHF, and USA Hockey reverses it.** Under **USA Hockey Rule 630(a)** a player is offside when they do *"not have skate contact with any part of the Neutral Zone or the blue line when the puck crosses the determining edge of the blue line"*, and the Note confirms that *"a player only needs to have skate contact with one skate with the blue line to be considered 'onside.'"* So an airborne trail skate is **onside under the NHL and the IIHF — and therefore in Britain — and offside under USA Hockey**, where most North American rec and youth hockey is played. This changes step 2 below. It is the single most important rule-set difference in this document.
 
 ### The trail-skate drag
 
@@ -111,7 +113,7 @@ Technique: Stop pushing with the trail leg and let that blade glide so it stays 
 Action: Keep your body, hands and stick already in the zone — only the trail blade is holding you onside
 Action: The instant the puck completely crosses, put that blade down and push
 Key: The judgement is made at one instant — time your glide to it, don't glide for two seconds
-Rule: Lifting the trail skate is NHL and IIHF only — USA Hockey Rule 630(a) requires skate contact, so keep the blade down
+Rule: Lifting the trail skate is legal under the NHL and under the IIHF book, so it is legal in Britain (IIHF Rule 83.1) — USA Hockey Rule 630(a) requires skate contact, so keep the blade down there
 ```
 
 This is the single most useful piece of applied rules knowledge for a forward, and it comes straight out of the wording above.
@@ -121,7 +123,7 @@ You are the far-side winger. You are flying. The puck carrier is a stride behind
 Instead:
 
 1. Attack the line at full speed with your **inside foot leading**.
-2. As you reach it, **stop pushing with the trail leg** and let that blade glide so it stays touching the paint — or, **under NHL and IIHF rules only**, lift it and hold it back over the neutral zone without breaking the plane. **Under USA Hockey the blade must stay in contact** (Rule 630(a)), so keep it on the paint.
+2. As you reach it, **stop pushing with the trail leg** and let that blade glide so it stays touching the paint — or, **under NHL and IIHF rules**, lift it and hold it back over the neutral zone without breaking the plane. **In Britain that lift is legal**, because the IIHF book is the one in force at every level here (IIHF Rule 83.1). **Under USA Hockey the blade must stay in contact** (Rule 630(a)), so keep it on the paint.
 3. Keep your **body, hands and stick already in the zone**. Only the trail blade is holding you onside.
 4. The instant the puck completely crosses, **put that blade down and push**.
 
@@ -131,36 +133,36 @@ Three details that separate people who *sort of* know this from people who use i
 
 - The judgement is made at **one instant** — the moment the puck fully crosses. Before that instant nothing you do matters; after it, nothing you did matters. So the skill is timing your glide to that instant, not gliding for two seconds.
 - Because only the **blade** counts, you can be leaning most of your body over the line. Aggressive body position is free.
-- **Which rule book you are under changes step 2.** Gliding the blade along the paint is legal everywhere. *Lifting* the trail skate is **NHL and IIHF only** — **USA Hockey Rule 630(a)** requires *"skate contact with any part of the Neutral Zone or the blue line"*, so a raised trail skate is offside. Most North American rec and youth hockey runs on USA Hockey rules; if that is you, keep the blade down.
+- **Which rule book you are under changes step 2.** Gliding the blade along the paint is legal everywhere. *Lifting* the trail skate is legal under the **NHL and the IIHF** — and since British hockey runs the IIHF book at every level, it is legal here. **USA Hockey Rule 630(a)** requires *"skate contact with any part of the Neutral Zone or the blue line"*, so a raised trail skate is offside there. Most North American rec and youth hockey runs on USA Hockey rules; if that is you, keep the blade down.
 
 ### Delayed offside and tagging up — three consequences for the entry
 
 ```facts
-Rule: On a delayed offside the linesman raises a non-whistle arm and play continues (NHL Rule 83.3)
+Rule: On a delayed offside the linesman raises a non-whistle arm and play continues (NHL Rule 83.3; IIHF Rule 83.3 in the same terms)
 Rule: Under USA Hockey Rule 630(d) delayed offside and tag-up exist only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below that the whistle is immediate
-Rule: Tagging up needs actual skate contact with the line; the vertical plane does not apply — "'3D' judgement is not used in this situation" (IIHF Rule 83.3(I))
+Rule: Tagging up needs actual skate contact with the line; the vertical plane does not apply — "'3D' judgement is not used in this situation" (IIHF Rule 83.3(I), the wording British hockey plays under; NHL 83.3(i) says "skate contact with the blue line" without the gloss)
 Action: Get everybody out at once — one straggler keeps the arm up, so shout it
 Never: Forecheck during a delayed offside — touching the puck, going for a loose puck, forcing the carrier deeper, or being about to hit him all stop play
 Action: Retreat to the line, tag up, come again
 ```
 
-A **delayed offside** is what happens when attackers precede the puck but the defending team can bring it out without interference: the linesman raises a non-whistle arm and play continues (Rule 83.3). [Rules Primer](../foundation/rules_primer.md) has the full procedure — what nullifies the arm, what turns it into a whistle, and the IIHF wording on clearing. Three things change what you do at the line:
+A **delayed offside** is what happens when attackers precede the puck but the defending team can bring it out without interference: the linesman raises a non-whistle arm and play continues (Rule 83.3). **The IIHF's 83.3 is the same rule in the same order** — the arm comes down when *"All Players of the offending team clear the zone at the same instant (skate contact with the blue line, '3D' judgement is not used in this situation)"* or when *"the defending team passes or carries the puck into the neutral zone"* — so this whole subsection describes the British game as written. [Rules Primer](../foundation/rules_primer.md) has the full procedure — what nullifies the arm, what turns it into a whistle, and the IIHF wording on clearing. Three things change what you do at the line:
 
 - **⚠️ First, check that you have a delayed offside at all.** Under **USA Hockey Rule 630(d)** the delayed offside and the tag-up exist only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications **only**)"*. Below those levels there is no raised arm and no recovery — the whistle goes the moment you precede the puck in. Most North American minor hockey sits below that line, so for a lot of readers this whole subsection describes a rule they do not have, and the entry simply has to be right first time.
-- **Tagging up needs actual skate contact with the line.** The vertical plane above does *not* apply here — the IIHF text says so in terms, *"'3D' judgement is not used in this situation"* (Rule 83.3(I)). So the airborne trail skate that keeps you onside on the entry does **not** clear you on a delayed offside. Touch the paint.
+- **Tagging up needs actual skate contact with the line.** The vertical plane above does *not* apply here — the IIHF text says so in terms, *"'3D' judgement is not used in this situation"* (Rule 83.3(I)). **That is the British rule book being explicit about it**, and it is the sharper wording of the two: NHL 83.3(i) says only *"(skate contact with the blue line)"* and leaves the rest to interpretation. Either way, the airborne trail skate that keeps you onside on the entry does **not** clear you on a delayed offside. Touch the paint.
 - **Everybody has to be out at once.** One straggler keeps the arm up. This is a communication job — see [On-Ice Communication](../foundation/on_ice_communication.md). Shout it.
 - **Forechecking during a delayed offside is not a grey area — it is a whistle.** Touching the puck, trying to gain possession of a loose puck, forcing the defending carrier deeper into his own zone, or being about to make contact with him all stop play. Retreat to the line, tag up, come again.
 
 ### The territorial asymmetry — why the safe play isn't
 
 ```facts
-Rule: A botched carry-in draws only to the neutral-zone spot outside the blue line (NHL Rule 83.6)
-Rule: A botched dump-in or stretch pass draws back at the spot the shot or pass came from, which can be your own end (NHL Rule 83.6)
-Rule: A shot that creates a delayed offside and then goes in is a disallowed goal, whether or not you cleared the zone first (NHL Rule 83.4)
+Rule: A botched carry-in draws only to the neutral-zone spot outside the blue line (NHL Rule 83.6; IIHF Rule 83.6(I) the same)
+Rule: A botched dump-in or stretch pass draws back at the spot the shot or pass came from, which can be your own end (NHL Rule 83.6; IIHF Rule 83.6(II) the same)
+Rule: A shot that creates a delayed offside and then goes in is a disallowed goal, whether or not you cleared the zone first (NHL Rule 83.4; IIHF Rule 83.4 word-for-word)
 Key: Under pressure at the line, failing to carry costs you less than failing to dump
 ```
 
-A botched **carry-in** is punished lightly: the draw goes to the neutral-zone spot outside the blue line and you barely lose anything. A botched **dump-in or stretch pass** is punished back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). And a shot that creates a delayed offside and then goes in is a **disallowed goal** whether or not you cleared the zone first (Rule 83.4). Both rules are set out in full in [Rules Primer](../foundation/rules_primer.md).
+A botched **carry-in** is punished lightly: the draw goes to the neutral-zone spot outside the blue line and you barely lose anything. A botched **dump-in or stretch pass** is punished back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). And a shot that creates a delayed offside and then goes in is a **disallowed goal** whether or not you cleared the zone first (Rule 83.4). Both rules are set out in full in [Rules Primer](../foundation/rules_primer.md). **Both read the same way in the IIHF book** — 83.6 gives the same four faceoff locations in the same order, and 83.4 is word-for-word with the NHL, including *"The fact that the attacking team may have 'cleared the zone' prior to the puck entering the goal has no bearing on this ruling."*
 
 The entry consequence is the one worth carrying: under pressure at the line, **failing to carry costs you less than failing to dump**. That asymmetry runs the same direction as the shot-rate evidence in section 1, and it is worth remembering the next time the safe play looks safe.
 
@@ -508,7 +510,7 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 ```facts
 Rule: A goalkeeper may not play the puck outside the designated area behind the net — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
 Rule: What is judged is the position of the puck, not the goalie's; the only exception is playing it while maintaining skate contact with his crease (NHL Rule 27.8)
-Rule: The trapezoid applies in the NHL, the KHL and IIHF play (IIHF Rule 27.7) — most rec, beer-league and youth associations do not use it
+Rule: The trapezoid applies in the NHL, the KHL and under the IIHF book (IIHF Rule 27.7) — which means British hockey at every level; most rec, beer-league and youth associations do not use it
 Action: Dump to the corners, not to the goalie — the corners are legally out of bounds for him, straight behind the net is not
 Action: If you must put it behind the net, put it there hard — a rocketing puck is far harder to stop and distribute cleanly
 Action: Where there is no trapezoid, rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand
@@ -529,7 +531,7 @@ That gives you a simple aiming rule where the trapezoid applies. **Dump to the c
 
 If you must put it behind the net, put it there **hard** — the goalie can play it, but stopping a rocketing puck and distributing it cleanly is a much harder job than corralling a soft one.
 
-**Where the trapezoid applies:** the NHL (since 2005-06), the KHL, and IIHF play (IIHF Rule 27.7, with the area defined as 6.80 m along the goal line widening to 8.60 m at the boards). **Most rec, beer-league and youth associations do not use it.** In those leagues a puck-handling goalie can go anywhere behind his goal line, which flips the advice: rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand.
+**Where the trapezoid applies:** the NHL (since 2005-06), the KHL, and IIHF play (IIHF Rule 27.7, with the area defined as 6.80 m along the goal line widening to 8.60 m at the boards). **That includes British hockey at every level**, because the IIHF book is the one in force here and the In-House Rules do not amend Rule 27 — though British rinks are frequently non-standard, so look behind the net and check the lines are actually painted. **Most rec, beer-league and youth associations elsewhere do not use it.** In those leagues a puck-handling goalie can go anywhere behind his goal line, which flips the advice: rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand.
 
 *Flagged:* two NHL rules give different trapezoid dimensions at the goal-line end — Rule 27.8 says the lines *"begin six feet from either goal post"*, while Rule 1.8 describes the markings as seven feet outside each goal crease (eight feet from each goal post). Rule 1.8 matches the IIHF's 6.80 m figure, so 27.8's text appears to be stale. Nothing about how you play changes either way; the corners are outside it under any reading.
 
@@ -815,9 +817,9 @@ Action: Ask, and then talk to your partner about it before the puck drops
 ```facts
 Key: You do not have to prevent the entry, only make it uncontrolled — a stick in the passing lane that forces a dump has done the same job as a hit
 Action: Force them to cross before the puck — stepping up at exactly the right instant can make an onside attacker offside
-Rule: The defending team passing or carrying the puck into the neutral zone nullifies a delayed offside and resets everything (NHL Rule 83.3(ii))
-Rule: The shot that caused the delayed offside cannot score — not directly, not off you, the goalie, the boards or an official (NHL Rule 83.4)
-Never: Assume nothing can go in — the one way they score is you putting it in your own net, and that counts (NHL Rule 83.4)
+Rule: The defending team passing or carrying the puck into the neutral zone nullifies a delayed offside and resets everything (NHL Rule 83.3(ii); IIHF Rule 83.3(II) the same)
+Rule: The shot that caused the delayed offside cannot score — not directly, not off you, the goalie, the boards or an official (NHL Rule 83.4; IIHF Rule 83.4 word-for-word)
+Never: Assume nothing can go in — the one way they score is you putting it in your own net, and that counts (NHL Rule 83.4; IIHF Rule 83.4)
 ```
 
 Everything in Section 2 works for you too:
@@ -825,7 +827,7 @@ Everything in Section 2 works for you too:
 - **You do not have to prevent the entry, only make it uncontrolled.** A stick in the passing lane that forces a dump has done the same job as a hit.
 - **Force them to cross before the puck.** A defender who steps up at exactly the right instant can make an onside attacker offside, because the judgement happens at the moment the puck crosses.
 - **On a delayed offside, get the puck out of the zone.** Rule 83.3(ii) — passing or carrying the puck into the neutral zone nullifies it and resets everything.
-- **Know the disallowed-goal rule, and its one exception.** If they shot it in on a delayed offside, that shot cannot score — Rule 83.4 disallows it *"either directly or off the goalkeeper, a player, the boards, the glass, a piece of equipment or an official"*, and clearing the zone first makes no difference. So do not panic. **But read the rest of 83.4:** *"The only way an attacking team can score a goal on a delayed offside situation is if the defending team shoots or puts the puck into their own net without action or contact by the offending team."* You are the one person on the ice who can still put that puck in. Play it out, and play it out cleanly. ([Rules Primer](../foundation/rules_primer.md) owns this rule.)
+- **Know the disallowed-goal rule, and its one exception.** If they shot it in on a delayed offside, that shot cannot score — Rule 83.4 disallows it *"either directly or off the goalkeeper, a player, the boards, the glass, a piece of equipment or an official"*, and clearing the zone first makes no difference. So do not panic. **But read the rest of 83.4:** *"The only way an attacking team can score a goal on a delayed offside situation is if the defending team shoots or puts the puck into their own net without action or contact by the offending team."* You are the one person on the ice who can still put that puck in. Play it out, and play it out cleanly. **The IIHF's Rule 83.4 carries both halves in exactly those words**, so this is the British rule as well as the NHL one. ([Rules Primer](../foundation/rules_primer.md) owns this rule.)
 
 ---
 
@@ -864,7 +866,7 @@ Everything in Section 2 works for you too:
 
 *Sources — retrieved 27 July 2026:*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 83 (Off-side), Rule 1.8 (goalkeeper's restricted area — the painted dimensions: eight feet from each post at the goal line, eleven feet at the boards, a 28-foot span), Rules 27.8 and 63.2(viii) (the restricted-area penalty — cited for the offence only; its six-foot figure is stale), Rules 1.5–1.7 (lines, division of ice, crease) · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rule 83, Rule 27.7, Rule 1.8 · [Scouting The Refs — NHL Rule Book Updates for 2025-26](https://scoutingtherefs.com/2025/09/49364/nhl-rule-book-updates-for-2025-26/)*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 83 (Off-side), Rule 1.8 (goalkeeper's restricted area — the painted dimensions: eight feet from each post at the goal line, eleven feet at the boards, a 28-foot span), Rules 27.8 and 63.2(viii) (the restricted-area penalty — cited for the offence only; its six-foot figure is stale), Rules 1.5–1.7 (lines, division of ice, crease) · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — **the rule set British hockey plays under**, read directly for this document: Rule 83.1 (off-side — the both-skates test, the one-skate on-side test and the "plane" of the blue line, all word-for-word with NHL 83.1; **no** blade-only definition of "skate"), Rule 83.3 (delayed off-side and tag-up, including *"skate contact with the blue line, '3D' judgement is not used in this situation"*), Rule 83.4 (disallowed goal, word-for-word with the NHL including the own-goal exception), Rule 83.6 (face-off locations), Rule 27.7 (goalkeeper restricted area) · [IHUK In-House Rules 2025-26, Revision 1](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — Rules 37 and 38 (no on-ice video review and therefore no Coach's Challenge in EIH or SIHA competition, which removes IIHF Rule 83.5 in domestic play). Checked 29 July 2026: the In-House Rules make **no** amendment to IIHF Rule 83 (Off-side), Rule 81 (Icing) or Rule 27 · [Scouting The Refs — NHL Rule Book Updates for 2025-26](https://scoutingtherefs.com/2025/09/49364/nhl-rule-book-updates-for-2025-26/)*
 
 *Analytics: [Tulsky, Detweiler, Spencer & Sznajder, "Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance", MIT Sloan Sports Analytics Conference 2013 (PDF)](http://hockeyanalytics.com/Research_files/Using%20Zone%20Entry%20Data%20To%20Separate%20Offensive,%20Neutral,%20And%20Defensive%20Zone%20Performance.pdf) · [Notes From The Rafters — "Proving Tulsky Right: Zone Entries" (PWHPA / Sportlogiq data)](https://notesfromtherafters.substack.com/p/proving-tulsky-right-zone-entries) · [Hockey's Arsenal — "Enter the Offensive Zone With More Offence and Less Risk" (summarising Sznajder and Chatel tracking)](https://hockeysarsenal.substack.com/p/enter-the-offensive-zone-with-more) · [Sports Illustrated — "Fancystats quietly leading NHL teams to dump the dump-and-chase strategy" (2014)](https://www.si.com/nhl/2014/01/15/fancystats-quietly-leading-nhl-teams-to-dump-the-dump-and-chase-strategy)*
 

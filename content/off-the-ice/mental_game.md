@@ -1,8 +1,8 @@
 # The Mental Game
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. Almost nothing in this document is governed by a rule; the two places where the rulebook does bite — arguing with officials and losing your temper on the bench — are quoted directly from the NHL Official Rules 2025-2026.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. Almost nothing in this document is governed by a rule; the two places where the rulebook does bite — arguing with officials and losing your temper on the bench — are quoted directly from the NHL Official Rules 2025-2026. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Goaltender](../positions/goaltender.md) · [Team Play and Culture](team_play_and_culture.md) · [Practice and Development](practice_and_development.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Risk Management](../hockey-iq/risk_management.md) · [Shooting](../technique/shooting.md)
+> **Related:** [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Goaltender](../positions/goaltender.md) · [Team Play and Culture](team_play_and_culture.md) · [Practice and Development](practice_and_development.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Risk Management](../hockey-iq/risk_management.md) · [Shooting](../technique/shooting.md) · [UK and England Rules](../foundation/uk_rules.md)
 >
 > **If you are in crisis right now, do not read the rest of this document — go straight to [§13, When to seek real help](#13-when-to-seek-real-help), which has the emergency and crisis-line numbers.**
 

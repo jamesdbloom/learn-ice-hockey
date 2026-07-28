@@ -1,10 +1,10 @@
 # Skating
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline. Skating technique itself
 > is not governed by rule — nothing in this document changes between rule sets.
 >
-> **Related:** [Getting Started](../getting-started/getting_started.md) · [Puck Handling](puck_handling.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Defender](../positions/defender.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Equipment](../off-the-ice/equipment.md)
+> **Related:** [Getting Started](../getting-started/getting_started.md) · [Puck Handling](puck_handling.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Defender](../positions/defender.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Equipment](../off-the-ice/equipment.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

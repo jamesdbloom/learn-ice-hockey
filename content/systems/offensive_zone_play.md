@@ -1,9 +1,9 @@
 # Offensive Zone Play
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline.
 >
-> **Related:** [Zone Entries](zone_entries.md) · [Forechecking Systems](forechecking_systems.md) · [Shooting](../technique/shooting.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Faceoffs](faceoffs.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md)
+> **Related:** [Zone Entries](zone_entries.md) · [Forechecking Systems](forechecking_systems.md) · [Shooting](../technique/shooting.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Faceoffs](faceoffs.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 

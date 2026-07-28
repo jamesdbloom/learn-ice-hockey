@@ -1,8 +1,8 @@
 # On-Ice Communication
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. This document is almost entirely about convention rather than rules — there is no rule anywhere in hockey that governs what you may shout, and the few rules that touch communication are noted where they apply.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. This document is almost entirely about convention rather than rules — there is no rule anywhere in hockey that governs what you may shout, and the few rules that touch communication are noted where they apply. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](uk_rules.md).
 >
-> **Related:** [Rink Map and Glossary](rink_map_and_glossary.md) · [Goaltender](../positions/goaltender.md) · [Breakouts](../systems/breakouts.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md)
+> **Related:** [Rink Map and Glossary](rink_map_and_glossary.md) · [Goaltender](../positions/goaltender.md) · [Breakouts](../systems/breakouts.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [UK and England Rules](uk_rules.md)
 
 ## Overview
 

@@ -1,9 +1,9 @@
 # Playing Without the Puck
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 > differ in a way that changes how you play, it is flagged inline.
 >
-> **Related:** [Puck Support and Spacing](puck_support_and_spacing.md) · [Time and Space](time_and_space.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Risk Management](risk_management.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md)
+> **Related:** [Puck Support and Spacing](puck_support_and_spacing.md) · [Time and Space](time_and_space.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Risk Management](risk_management.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 
