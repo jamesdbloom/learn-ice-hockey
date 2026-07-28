@@ -254,7 +254,8 @@ Action: Use your hips and backside as the barrier, not your stick — the stick 
 Never: Believe the space between your feet is legally protected — no rulebook reserves it
 Rule: A stick in your skates is tripping if it brings you down (NHL Rule 57.1), and hooking with no fall at all if it restrains you (Rules 55.1, 56.1)
 Rule: Under USA Hockey Rule 639 a loss of balance is enough, and its Standard of Play names the can-opener between the legs
-Rule: Kicking the puck is legal in all zones (NHL Rule 49.2) — the limits are on scoring, and a kick off your own stick and in counts
+Rule: Kicking the puck is legal in all zones, but you cannot score with a distinct kicking motion (NHL Rule 49.2)
+Rule: A kicked puck that deflects in off a body is no goal; off your own stick it is a good goal (NHL Rule 49.2(ii), (iii))
 Rule: You may catch the puck out of the air but must immediately knock it down; closing your hand on it is a minor (NHL Rule 67.2)
 ```
 

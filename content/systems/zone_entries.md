@@ -810,8 +810,9 @@ Action: Ask, and then talk to your partner about it before the puck drops
 ```facts
 Key: You do not have to prevent the entry, only make it uncontrolled — a stick in the passing lane that forces a dump has done the same job as a hit
 Action: Force them to cross before the puck — stepping up at exactly the right instant can make an onside attacker offside
-Rule: Passing or carrying the puck into the neutral zone nullifies a delayed offside and resets everything (NHL Rule 83.3(ii))
-Key: A puck shot in on a delayed offside cannot legally end up in your net — do not panic, play it out
+Rule: The defending team passing or carrying the puck into the neutral zone nullifies a delayed offside and resets everything (NHL Rule 83.3(ii))
+Rule: The shot that caused the delayed offside cannot score — not directly, not off you, the goalie, the boards or an official (NHL Rule 83.4)
+Never: Assume nothing can go in — the one way they score is you putting it in your own net, and that counts (NHL Rule 83.4)
 ```
 
 Everything in Section 2 works for you too:
@@ -819,7 +820,7 @@ Everything in Section 2 works for you too:
 - **You do not have to prevent the entry, only make it uncontrolled.** A stick in the passing lane that forces a dump has done the same job as a hit.
 - **Force them to cross before the puck.** A defender who steps up at exactly the right instant can make an onside attacker offside, because the judgement happens at the moment the puck crosses.
 - **On a delayed offside, get the puck out of the zone.** Rule 83.3(ii) — passing or carrying the puck into the neutral zone nullifies it and resets everything.
-- **Know the disallowed-goal rule.** If they shot it in on a delayed offside, that puck cannot legally end up in your net. Do not panic; play it out.
+- **Know the disallowed-goal rule, and its one exception.** If they shot it in on a delayed offside, that shot cannot score — Rule 83.4 disallows it *"either directly or off the goalkeeper, a player, the boards, the glass, a piece of equipment or an official"*, and clearing the zone first makes no difference. So do not panic. **But read the rest of 83.4:** *"The only way an attacking team can score a goal on a delayed offside situation is if the defending team shoots or puts the puck into their own net without action or contact by the offending team."* You are the one person on the ice who can still put that puck in. Play it out, and play it out cleanly. ([Rules Primer](../foundation/rules_primer.md) owns this rule.)
 
 ---
 

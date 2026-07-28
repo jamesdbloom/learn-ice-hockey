@@ -442,7 +442,8 @@ Options: Skating to catch them and re-establish position is legal, and angling t
 Rule: A hook, trip, hold or slash from behind that denies the chance is a penalty shot, not a two-minute minor (NHL Rule 57.3)
 Rule: Make contact with the puck first and a tripping minor is assessed instead of the penalty shot (NHL Rule 57.3)
 Rule: Under USA Hockey Rule 616(a) a foul diagonally from behind also counts, and the referee may assess an optional minor instead
-Rule: With your goalie pulled the same foul is an awarded goal (NHL Rule 57.4); smothering the puck in your own crease is a penalty shot (67.4), or an awarded goal with the net empty (67.5)
+Rule: With your goalie pulled, ANY foul that denies the chance is an awarded goal — there is no "from behind" requirement in either awarded-goal clause (NHL Rules 25.1 and 57.4)
+Rule: A skater smothering the puck in their own crease gives a penalty shot (67.4), or an awarded goal with the net empty (67.5) — 67.4 exempts the goalkeeper
 Never: Stand up and look at the official — play does not stop until the attacking team loses possession (NHL Rule 57.3)
 ```
 
@@ -474,8 +475,8 @@ The four conditions the officials are checking:
 
 Two more things worth knowing:
 
-- **If your goalie has been pulled** for an extra attacker and you commit that foul against an attacker on the empty net, **a goal is awarded** — there is no shot to take (Rule 57.4).
-- **Falling on, holding, picking up or gathering the puck into your body or hands in your own goal crease** is a penalty shot under **Rule 67.4** — the trigger is not only "deliberately covering it with your hand." Smothering a loose puck in the blue paint in any of those ways stops play and gives them the shot. **With your own goalie pulled for an extra attacker, the same act is an awarded goal** under **Rule 67.5**, not a penalty shot. **Throwing your stick or any object** at the puck or the carrier in your defensive zone also produces a penalty shot. All of these come up in desperation moments at the end of a rush.
+- **If your goalie has been pulled** for an extra attacker and you foul an attacker on the empty net, **a goal is awarded** — there is no shot to take. **Note what the awarded-goal clauses do *not* say.** Rule 57.4 reads *"is tripped or **otherwise fouled** with no opposition between him and the opposing goal"*, and Rule 25.1 *"prevented from scoring as a result of an infraction"*. Neither carries the **from behind** requirement that the penalty-shot test in 57.3 does — so with the net empty the awarded goal is *easier* to trigger than the penalty shot, not harder, and stepping across from the front does it. Cite 25.1 and 57.4 as a pair; they are not alternatives. ([Risk Management](../hockey-iq/risk_management.md) sets this out at length.)
+- **Falling on, holding, picking up or gathering the puck into your body or hands in your own goal crease** is a penalty shot under **Rule 67.4**, which opens *"If a **defending player, except a goalkeeper**…"* — your goalie may smother it, you may not — the trigger is not only "deliberately covering it with your hand." Smothering a loose puck in the blue paint in any of those ways stops play and gives them the shot. **With your own goalie pulled for an extra attacker, the same act is an awarded goal** under **Rule 67.5**, not a penalty shot. **Throwing your stick or any object** at the puck or the carrier in your defensive zone also produces a penalty shot. All of these come up in desperation moments at the end of a rush.
 
 > **Rule-set note — the criteria are not the same everywhere.**
 >

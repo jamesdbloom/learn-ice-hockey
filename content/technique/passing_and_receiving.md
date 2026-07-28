@@ -395,7 +395,8 @@ Pucks arrive rolling, on edge, or hopping — from a bad pass, a bouncing rim, o
 Technique: Kick it forward to your stick with the inside of your skate — one deliberate, controlled kick, not a panicked scuff
 Options: Or open your hips and let it run through, then collect it behind your stride
 Never: Reach backwards with your stick while continuing to skate forwards
-Rule: Kicking the puck is permitted in all zones (NHL Rule 49.2) — but a kicked puck that deflects off any body into the net is no goal
+Rule: Kicking the puck is permitted in all zones, but you cannot score with a distinct kicking motion (NHL Rule 49.2)
+Rule: A kicked puck that deflects into the net off any body is no goal; off your own stick it counts (NHL Rule 49.2)
 Rule: A hand pass stops play everywhere except your own defending zone, and the puck's location decides the zone (NHL Rule 79.2)
 ```
 
@@ -404,7 +405,7 @@ It will happen, and it is a skill, not an accident to be complained about.
 - **Kick it forward to your stick with the inside of your skate.** One deliberate, controlled kick to a spot in front of you — not a panicked scuff.
 - **Or open your hips and let it run through**, then collect it behind your stride. Turning your body slightly is usually faster than reaching.
 - **Do not reach backwards with your stick while continuing to skate forwards.** That is how you end up bent over, off balance, and hit.
-- **Rules note (NHL):** kicking the puck to a teammate is legal — **Rule 49.2**, *"Kicking the puck shall be permitted in all zones."* Kicking it *into the net* is where it gets restricted, and the rule is more forgiving than the headline suggests. The headline: *"a goal cannot be scored by an attacking player who kicks a puck that deflects into the net off any player, goalkeeper or official."* But 49.2 then lists the exceptions that matter, and they turn on **body versus stick**:
+- **Rules note (NHL):** kicking the puck to a teammate is legal — **Rule 49.2**, *"Kicking the puck shall be permitted in all zones."* Kicking it *into the net* is where it gets restricted, and the rule is more forgiving than the headline suggests. The two prohibitions: *"A goal cannot be scored by an attacking player who **uses a distinct kicking motion** to propel the puck into the net with his skate/foot"*, and *"a goal cannot be scored by an attacking player who kicks a puck that deflects into the net off any player, goalkeeper or official."* The first is the one that decides most goalmouth scrambles, and it is the one people forget. But 49.2 then lists the exceptions that matter, and they turn on **body versus stick**:
   - *"(i) A kicked puck that deflects off the body of any player of either team (including the goalkeeper) shall be ruled no goal."*
   - *"(ii) A kicked puck that deflects off the **stick** of any player (excluding the goalkeeper's stick) shall be ruled a **good goal**."*
   - *"(iii) A goal will be allowed when an attacking player kicks the puck and the puck deflects off his own stick and then into the net."*
