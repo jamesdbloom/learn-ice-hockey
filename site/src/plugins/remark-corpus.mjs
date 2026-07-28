@@ -55,13 +55,34 @@ function inline(hName, properties, children) {
 /**
  * Resolve a relative markdown cross-link to a site URL.
  *
- * Links appear as `faceoffs.md`, `positions/center.md` and `../faceoffs.md`.
- * Document basenames are unique across the whole corpus, so resolution does not
- * depend on knowing which file we are currently in — which matters because the
- * content-layer pipeline does not reliably expose the source path. Anything
- * that cannot be resolved is left untouched and caught by scripts/check-links.mjs,
- * which runs against the built HTML and fails the build.
+ * Links appear as `faceoffs.md`, `../systems/faceoffs.md` and, between siblings
+ * in the same layer directory, a bare `rules_primer.md`.
+ *
+ * Resolution is by **basename**, which is unique across the whole corpus, so it
+ * does not depend on knowing which file we are currently in — which matters
+ * because the content-layer pipeline does not reliably expose the source path.
+ * That is also why the directory part of the link is deliberately not trusted:
+ * a sibling link carries no directory at all, and one layer directory's
+ * document may be reached from another by any number of `../` steps.
+ *
+ * Anything that cannot be resolved is left untouched and caught by
+ * scripts/check-links.mjs, which runs against the built HTML and fails the
+ * build. That is what caught the layer-directory move: this function used to
+ * carry a hardcoded `positions/` fallback, which silently stopped covering the
+ * corpus the moment there were seven layer directories rather than one.
  */
+const basenameIndexCache = new WeakMap();
+
+function basenameIndex(knownIds) {
+  let index = basenameIndexCache.get(knownIds);
+  if (!index) {
+    index = new Map();
+    for (const id of knownIds) index.set(id.split('/').pop(), id);
+    basenameIndexCache.set(knownIds, index);
+  }
+  return index;
+}
+
 export function resolveDocHref(href, knownIds) {
   if (!href) return null;
   if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return null; // absolute / protocol
@@ -78,9 +99,11 @@ export function resolveDocHref(href, knownIds) {
   const asPath = segments.join('/').replace(/\.md$/, '');
   const base = segments[segments.length - 1].replace(/\.md$/, '');
 
-  for (const candidate of [asPath, base, `positions/${base}`]) {
-    if (knownIds.has(candidate)) return `/${candidate}/${hash}`;
-  }
+  if (knownIds.has(asPath)) return `/${asPath}/${hash}`;
+
+  const byBasename = basenameIndex(knownIds).get(base);
+  if (byBasename) return `/${byBasename}/${hash}`;
+
   return null;
 }
 

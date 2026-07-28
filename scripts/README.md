@@ -16,7 +16,7 @@ no `pip install`, no lockfile, nothing to rot.
 ```bash
 python3 scripts/check_links.py                       # summary + failures
 python3 scripts/check_links.py --quiet                # failures only — CI mode
-python3 scripts/check_links.py --list-anchors content/skating.md
+python3 scripts/check_links.py --list-anchors content/technique/skating.md
 python3 scripts/check_links.py path/to/other/dir      # check a different tree
 ```
 
@@ -27,7 +27,7 @@ URLs (skipped — see the other script), same-document anchors, and relative
 cross-links. Relative links are resolved **against the directory of the file
 they are written in**, which is the part naive checkers get wrong:
 `../faceoffs.md` inside `content/positions/center.md` must land on
-`content/faceoffs.md`, not on something relative to the working directory. The
+`content/systems/faceoffs.md`, not on something relative to the working directory. The
 target file must exist, and if the link carries a `#fragment`, some heading in
 the target must slug to it.
 

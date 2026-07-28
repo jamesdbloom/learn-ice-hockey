@@ -43,9 +43,11 @@ CONTENT = ROOT / "content"
 STRUCTURE = ROOT / "site" / "src" / "data" / "structure.json"
 
 # Layers whose documents teach how to play. Style guide, "Key facts blocks".
-IN_SCOPE_LAYERS = {"positional", "systems", "technique", "hockey-iq"}
+# These are layer ids from structure.json, which are also the directory names
+# under content/ — the two are kept identical deliberately.
+IN_SCOPE_LAYERS = {"positions", "systems", "technique", "hockey-iq"}
 # Sits in Foundation but is purely instructional — a list of what to shout.
-IN_SCOPE_EXTRA = {"on_ice_communication"}
+IN_SCOPE_EXTRA = {"foundation/on_ice_communication"}
 
 LABELS = (
     "Position", "Action", "Goal", "Priority", "Technique", "Options",

@@ -80,6 +80,13 @@ the homepage all derive from it. Every file under `content/` must appear in it
 exactly once or the build stops — so a document cannot be silently missing from
 the navigation.
 
+**A document's directory is its layer.** `content/<layer-id>/<doc>.md`, where
+`<layer-id>` is exactly the layer's id in `structure.json`. The URL follows:
+`/systems/faceoffs/`. Cross-links inside the corpus are resolved **by basename**,
+which is unique corpus-wide, so a sibling link is a bare `rules_primer.md` and a
+cross-layer link is `../foundation/rules_primer.md` — and neither has to be
+rewritten if a document ever changes layer.
+
 **The markdown processor was replaced to protect anchors.** The build uses an
 explicit `unified()` processor rather than Astro 7's default, because the corpus
 transforms are written against mdast/hast — and critically, Astro's own

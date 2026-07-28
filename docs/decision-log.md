@@ -298,6 +298,48 @@ layer. **That review round has not yet run.**
 
 ---
 
+## One directory per layer
+
+`content/` was flat except for `content/positions/`, which held **four** of the
+positional layer's **five** documents — `switching_positions.md` sat at the
+root. So the one directory that existed looked like it encoded the layer
+grouping and did not.
+
+The corpus is now `content/<layer-id>/<doc>.md`, with the directory name equal
+to the layer id in `structure.json`, no exceptions. `getting_started` has its
+own directory despite being alone in it, because an exception is what caused the
+original confusion. The `positional` layer id was renamed to `positions` so the
+existing directory did not have to move and the URL still reads well.
+
+31 files moved · 1,270 cross-links rewritten inside `content/` · 40 in the
+README, `project/` and `docs/` · all 38 public URLs changed.
+
+### Two things this broke, and one it revealed
+
+**The remark plugin carried a hardcoded `positions/` fallback.** It resolved a
+cross-link by trying the literal path, then the basename, then
+`positions/<basename>` — which covered the corpus exactly as long as there was
+one subdirectory. With seven, every *sibling* link inside a layer directory
+stopped resolving. It now builds a basename index from the known ids, which is
+directory-agnostic; the plugin's own docstring already said basenames are unique
+corpus-wide, which is what makes that safe.
+
+**`npm run build` was validating stale HTML.** The fix above appeared not to
+work through four rebuilds. It had worked every time: Astro's content-layer
+cache was serving renders produced before the change, and `check-links` was
+faithfully checking those. Deleting `.astro`, `dist`, `node_modules/.astro` and
+`node_modules/.vite` made 376 resolver calls appear and every link resolve.
+
+> **The cache does not invalidate on plugin source changes.** A build can pass
+> or fail on output that no longer corresponds to the code. `npm run build` now
+> runs `clean:cache` first — three seconds against a class of bug where the
+> checker lies to you.
+
+CI never hit this, because `npm ci` starts with no cache. It is a local-only
+trap, which is worse: it is the environment where you iterate.
+
+---
+
 ## Open threads
 
 Things decided provisionally, or not yet decided, that a future session should

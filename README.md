@@ -6,7 +6,7 @@ A documentation corpus for learning ice hockey: where to be, how to execute, how
 
 > **Rule set:** Written to NHL rules throughout. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline.
 >
-> **Start here if you're new:** [Getting Started](content/getting_started.md) → [Rink Map and Glossary](content/rink_map_and_glossary.md) → [Rules Primer](content/rules_primer.md) → your position.
+> **Start here if you're new:** [Getting Started](content/getting-started/getting_started.md) → [Rink Map and Glossary](content/foundation/rink_map_and_glossary.md) → [Rules Primer](content/foundation/rules_primer.md) → your position.
 
 ---
 
@@ -21,7 +21,7 @@ Two things shape everything here:
 - **Nothing is presented as a law of hockey when it is a coaching choice.** Where a system determines your job, the system is named, at least one realistic alternative is given, and you are told to go and find out which one your team plays. (The corpus default, where one is needed, is **low zone collapse** defensive coverage with a **2-1-2 forecheck**.)
 - **Uncertainty is disclosed rather than smoothed over.** Claims that could not be independently verified are kept and explicitly labelled, with the uncertainty described, rather than quietly dropped or asserted with confidence they have not earned.
 
-*[Getting Started](content/getting_started.md) is the document for someone who has not played yet: how to find a session, what registration involves, which tier you belong in, and what actually happens in your first hour at the rink. Everything else here assumes you are already on the ice.*
+*[Getting Started](content/getting-started/getting_started.md) is the document for someone who has not played yet: how to find a session, what registration involves, which tier you belong in, and what actually happens in your first hour at the rink. Everything else here assumes you are already on the ice.*
 
 ---
 
@@ -41,7 +41,7 @@ Knowing your position without the systems means you follow rules you don't under
 
 A sixth group — **Off the ice** — sits underneath all five: equipment, conditioning, practice, the mental game, team culture and how to watch. It is not a layer of play, but every layer above depends on it.
 
-And before any of them sits **[Getting Started](content/getting_started.md)** — the only document here that assumes you have never been on the ice. The five layers teach you how to play; that one tells you how to get into a session in the first place.
+And before any of them sits **[Getting Started](content/getting-started/getting_started.md)** — the only document here that assumes you have never been on the ice. The five layers teach you how to play; that one tells you how to get into a session in the first place.
 
 **The order below is the reading order.** It is deliberate and it is not alphabetical. The website's navigation and previous/next links are generated from the same ordering, held in [`site/src/data/structure.json`](site/src/data/structure.json).
 
@@ -51,7 +51,7 @@ And before any of them sits **[Getting Started](content/getting_started.md)** �
 
 | Document | What it covers |
 |---|---|
-| [Getting Started](content/getting_started.md) | How to actually start playing. Learn-to-skate and learn-to-play routes for adults and children, drop-in vs stick-and-puck vs shinny, house league vs travel vs adult rec tiers, what registration and insurance involve, what a first practice looks like hour by hour, the minimum kit, and — most importantly — how to find out what applies to *your* association, because almost all of it varies locally and changes yearly. |
+| [Getting Started](content/getting-started/getting_started.md) | How to actually start playing. Learn-to-skate and learn-to-play routes for adults and children, drop-in vs stick-and-puck vs shinny, house league vs travel vs adult rec tiers, what registration and insurance involve, what a first practice looks like hour by hour, the minimum kit, and — most importantly — how to find out what applies to *your* association, because almost all of it varies locally and changes yearly. |
 
 ---
 
@@ -59,9 +59,9 @@ And before any of them sits **[Getting Started](content/getting_started.md)** �
 
 | Document | What it covers |
 |---|---|
-| [Rink Map and Glossary](content/rink_map_and_glossary.md) | Every named area of the ice, all the lines and markings, directional vocabulary, and a full glossary. The canonical reference the rest of the corpus links to. |
-| [Rules Primer](content/rules_primer.md) | The canonical rules reference — offside, icing, the full penalty catalogue, goaltender rules, faceoffs, officials, and a four-way NHL/IIHF/USA Hockey/rec comparison. |
-| [On-Ice Communication](content/on_ice_communication.md) | The actual words to shout. Forty-four calls grouped by purpose, plus the goaltender's own eight, who makes each one, and what the receiver does. |
+| [Rink Map and Glossary](content/foundation/rink_map_and_glossary.md) | Every named area of the ice, all the lines and markings, directional vocabulary, and a full glossary. The canonical reference the rest of the corpus links to. |
+| [Rules Primer](content/foundation/rules_primer.md) | The canonical rules reference — offside, icing, the full penalty catalogue, goaltender rules, faceoffs, officials, and a four-way NHL/IIHF/USA Hockey/rec comparison. |
+| [On-Ice Communication](content/foundation/on_ice_communication.md) | The actual words to shout. Forty-four calls grouped by purpose, plus the goaltender's own eight, who makes each one, and what the receiver does. |
 
 ---
 
@@ -73,7 +73,7 @@ And before any of them sits **[Getting Started](content/getting_started.md)** �
 | [Winger](content/positions/winger.md) | Width, wall battles and the forecheck. Your lane is your responsibility. |
 | [Defender](content/positions/defender.md) | Gap control, the net front, and the last line before the goalie. |
 | [Goaltender](content/positions/goaltender.md) | Angles, depth, rebound control — and the loudest voice on the ice. Includes a section written for skaters on what your goalie needs from you. |
-| [Switching Positions](content/switching_positions.md) | The bridge between the four above: what transfers when you are moved, what has to be relearned, and which of your existing good habits actively work against you in the new job. Wing↔centre, forward↔defence, anyone→goal, playing your off wing, an honest timeline, and how to ask for a switch or handle being moved without being asked. Claims are labelled coaching craft vs sourced throughout. |
+| [Switching Positions](content/positions/switching_positions.md) | The bridge between the four above: what transfers when you are moved, what has to be relearned, and which of your existing good habits actively work against you in the new job. Wing↔centre, forward↔defence, anyone→goal, playing your off wing, an honest timeline, and how to ask for a switch or handle being moved without being asked. Claims are labelled coaching craft vs sourced throughout. |
 
 The three skater documents share one skeleton: by zone (defensive, neutral, offensive), and by situation within each zone — carrying the puck in free space, carrying under pressure, pressuring an opponent, and playing without the puck. **The goaltender document deliberately does not use that grid** (you spend the game in one zone, carry the puck essentially never and pressure nobody); it is organised by skill instead, and opens with a table translating the skaters' framing into its own so you don't lose your place moving between the four.
 
@@ -85,16 +85,16 @@ The three skater documents share one skeleton: by zone (defensive, neutral, offe
 
 | Document | Summary |
 |---|---|
-| [Breakouts](content/breakouts.md) | Getting out of your own end with control. Nine named options, when each is right, and how each is defeated. |
-| [Zone Entries](content/zone_entries.md) | The hardest twenty feet in hockey. Carry vs dump vs delay, dump-in types, and using the offside rule as a tactical tool. |
-| [Offensive Zone Play](content/offensive_zone_play.md) | Cycling, low-to-high, net-front play, and the royal road — why a pass across the middle before a shot is worth so much. |
-| [Forechecking Systems](content/forechecking_systems.md) | 2-1-2, 1-2-2, 1-3-1, 1-4, the left-wing lock. Angling, and F1/F2/F3 as roles set by order of arrival. |
-| [Neutral Zone Systems](content/neutral_zone_systems.md) | The trap and how to beat it, regroups, and lane discipline. |
-| [Defensive Zone Coverage](content/defensive_zone_coverage.md) | Low zone collapse vs man-on-man vs hybrid. **Read this to find out which system your team plays** — most defensive breakdowns are two players on different assumptions. |
-| [Defending the Rush](content/defending_the_rush.md) | Gap control method, backcheck lanes, and every numerical situation from 1-on-1 to 3-on-1. |
-| [Special Teams](content/special_teams.md) | Power play formations (1-3-1, umbrella, overload, spread, and the 2-3 that most rec and youth teams actually run) and penalty kill structures (box, diamond, wedge+1). Plus 4-on-4, 3-on-3 and 5-on-3. |
-| [Faceoffs](content/faceoffs.md) | All nine dot locations, five-player alignments, technique, violations, and set plays. |
-| [Game Management](content/game_management.md) | Score effects, protecting a lead, pulling the goalie, line matching, overtime. |
+| [Breakouts](content/systems/breakouts.md) | Getting out of your own end with control. Nine named options, when each is right, and how each is defeated. |
+| [Zone Entries](content/systems/zone_entries.md) | The hardest twenty feet in hockey. Carry vs dump vs delay, dump-in types, and using the offside rule as a tactical tool. |
+| [Offensive Zone Play](content/systems/offensive_zone_play.md) | Cycling, low-to-high, net-front play, and the royal road — why a pass across the middle before a shot is worth so much. |
+| [Forechecking Systems](content/systems/forechecking_systems.md) | 2-1-2, 1-2-2, 1-3-1, 1-4, the left-wing lock. Angling, and F1/F2/F3 as roles set by order of arrival. |
+| [Neutral Zone Systems](content/systems/neutral_zone_systems.md) | The trap and how to beat it, regroups, and lane discipline. |
+| [Defensive Zone Coverage](content/systems/defensive_zone_coverage.md) | Low zone collapse vs man-on-man vs hybrid. **Read this to find out which system your team plays** — most defensive breakdowns are two players on different assumptions. |
+| [Defending the Rush](content/systems/defending_the_rush.md) | Gap control method, backcheck lanes, and every numerical situation from 1-on-1 to 3-on-1. |
+| [Special Teams](content/systems/special_teams.md) | Power play formations (1-3-1, umbrella, overload, spread, and the 2-3 that most rec and youth teams actually run) and penalty kill structures (box, diamond, wedge+1). Plus 4-on-4, 3-on-3 and 5-on-3. |
+| [Faceoffs](content/systems/faceoffs.md) | All nine dot locations, five-player alignments, technique, violations, and set plays. |
+| [Game Management](content/systems/game_management.md) | Score effects, protecting a lead, pulling the goalie, line matching, overtime. |
 
 ---
 
@@ -102,11 +102,11 @@ The three skater documents share one skeleton: by zone (defensive, neutral, offe
 
 | Document | Summary |
 |---|---|
-| [Skating](content/skating.md) | Edges, stride, crossovers, backward skating, pivots, stops. The foundation everything else is performed on top of. |
-| [Puck Handling](content/puck_handling.md) | Stickhandling, head up, puck protection, deception, and beating a defender one-on-one. |
-| [Passing and Receiving](content/passing_and_receiving.md) | Every pass type, passing into space, and the neglected half — receiving. |
-| [Shooting](content/shooting.md) | Wrist, snap, slap, backhand, one-timers, tips. Release speed, shot selection, and where shots are actually worth taking. |
-| [Body Contact and Battles](content/body_contact_and_battles.md) | Angling, stick checks, board and net-front battles, shot blocking, and receiving a hit safely. Applies in non-contact leagues too — the distinction is made throughout. |
+| [Skating](content/technique/skating.md) | Edges, stride, crossovers, backward skating, pivots, stops. The foundation everything else is performed on top of. |
+| [Puck Handling](content/technique/puck_handling.md) | Stickhandling, head up, puck protection, deception, and beating a defender one-on-one. |
+| [Passing and Receiving](content/technique/passing_and_receiving.md) | Every pass type, passing into space, and the neglected half — receiving. |
+| [Shooting](content/technique/shooting.md) | Wrist, snap, slap, backhand, one-timers, tips. Release speed, shot selection, and where shots are actually worth taking. |
+| [Body Contact and Battles](content/technique/body_contact_and_battles.md) | Angling, stick checks, board and net-front battles, shot blocking, and receiving a hit safely. Applies in non-contact leagues too — the distinction is made throughout. |
 
 ---
 
@@ -114,11 +114,11 @@ The three skater documents share one skeleton: by zone (defensive, neutral, offe
 
 | Document | Summary |
 |---|---|
-| [Puck Support and Spacing](content/puck_support_and_spacing.md) | The support triangle, distances and angles, and why everyone collapsing toward the puck is the biggest amateur failure. |
-| [Time and Space](content/time_and_space.md) | The currency of hockey. How to create it for yourself and take it from opponents. |
-| [Scanning and Anticipation](content/scanning_and_anticipation.md) | "Vision" is a habit of looking before you need to. What to read, and honestly what the research does and doesn't support. |
-| [Risk Management](content/risk_management.md) | Where a mistake costs a goal and where it costs nothing. The "never" list, with reasons, and per-zone decision hierarchies. |
-| [Playing Without the Puck](content/playing_without_the_puck.md) | You hold the puck for well under a minute a game — roughly three to four per cent of your **5-on-5** ice time, on NHL tracking data. This is the other 96%. |
+| [Puck Support and Spacing](content/hockey-iq/puck_support_and_spacing.md) | The support triangle, distances and angles, and why everyone collapsing toward the puck is the biggest amateur failure. |
+| [Time and Space](content/hockey-iq/time_and_space.md) | The currency of hockey. How to create it for yourself and take it from opponents. |
+| [Scanning and Anticipation](content/hockey-iq/scanning_and_anticipation.md) | "Vision" is a habit of looking before you need to. What to read, and honestly what the research does and doesn't support. |
+| [Risk Management](content/hockey-iq/risk_management.md) | Where a mistake costs a goal and where it costs nothing. The "never" list, with reasons, and per-zone decision hierarchies. |
+| [Playing Without the Puck](content/hockey-iq/playing_without_the_puck.md) | You hold the puck for well under a minute a game — roughly three to four per cent of your **5-on-5** ice time, on NHL tracking data. This is the other 96%. |
 
 ---
 
@@ -126,12 +126,12 @@ The three skater documents share one skeleton: by zone (defensive, neutral, offe
 
 | Document | Summary |
 |---|---|
-| [Equipment](content/equipment.md) | Fit, sharpening, stick flex/curve/lie, protection, and where to spend versus save. |
-| [Conditioning and Recovery](content/conditioning_and_recovery.md) | Training for repeated 45-second efforts, injury prevention, and recovery. |
-| [Practice and Development](content/practice_and_development.md) | Deliberate practice, what actually transfers off-ice, and realistic plans for adult players. |
-| [Mental Game](content/mental_game.md) | The shift reset, confidence, nerves, and fear. Every claim labelled by strength of evidence. |
-| [Team Play and Culture](content/team_play_and_culture.md) | The bench, being a good linemate, unwritten conventions, and talking to officials. |
-| [How to Watch Hockey](content/how_to_watch_hockey.md) | Seeing structure instead of following the puck, plus a full guide to hockey statistics and what they're worth. |
+| [Equipment](content/off-the-ice/equipment.md) | Fit, sharpening, stick flex/curve/lie, protection, and where to spend versus save. |
+| [Conditioning and Recovery](content/off-the-ice/conditioning_and_recovery.md) | Training for repeated 45-second efforts, injury prevention, and recovery. |
+| [Practice and Development](content/off-the-ice/practice_and_development.md) | Deliberate practice, what actually transfers off-ice, and realistic plans for adult players. |
+| [Mental Game](content/off-the-ice/mental_game.md) | The shift reset, confidence, nerves, and fear. Every claim labelled by strength of evidence. |
+| [Team Play and Culture](content/off-the-ice/team_play_and_culture.md) | The bench, being a good linemate, unwritten conventions, and talking to officials. |
+| [How to Watch Hockey](content/off-the-ice/how_to_watch_hockey.md) | Seeing structure instead of following the puck, plus a full guide to hockey statistics and what they're worth. |
 
 ---
 
@@ -171,8 +171,14 @@ The external citation layer has a machine-checkable baseline: [`project/verifica
 ├── LICENSE-CONTENT                 CC BY-NC 4.0, for content/ and project/
 ├── CLAUDE.md                       instructions for AI agents working in this repo
 │
-├── content/                        the corpus — 35 documents
-│   └── positions/                  4 of them: centre, winger, defender, goaltender
+├── content/                        the corpus — 35 documents, one directory per layer
+│   ├── getting-started/            1 — before any of the layers
+│   ├── foundation/                 3 — rink map, rules, communication
+│   ├── positions/                  5 — the four positions, plus switching between them
+│   ├── systems/                   10 — breakouts through game management
+│   ├── technique/                  5 — skating, handling, passing, shooting, contact
+│   ├── hockey-iq/                  5 — support, time and space, scanning, risk
+│   └── off-the-ice/                6 — equipment, conditioning, culture, watching
 │
 ├── project/                        governance and process, not teaching material
 │   ├── content_style_guide.md      the governing document; read before writing anything
@@ -200,6 +206,8 @@ The external citation layer has a machine-checkable baseline: [`project/verifica
 ```
 
 **`content/` is the source of truth.** The site reads it and never writes to it; nothing in `site/` needs to change when a document does.
+
+**A document's directory is its layer, and the directory name is the layer id in [`structure.json`](site/src/data/structure.json) — always.** The two are kept identical on purpose. The previous arrangement had a single `content/positions/` holding four of the positional layer's five documents, which looked like it held all of them; a partial encoding is worse than none. `getting_started` gets its own directory too, even though it is the only document in it, because an exception is exactly what went wrong last time.
 
 Two conventions matter if you are editing:
 

@@ -1,0 +1,578 @@
+# Team Play and Culture
+
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> differ in a way that changes how you play, it is flagged inline.
+>
+> **Related:** [Getting Started](../getting-started/getting_started.md) · [Game Management](../systems/game_management.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Mental Game](mental_game.md) · [Practice and Development](practice_and_development.md) · [Playing Without The Puck](../hockey-iq/playing_without_the_puck.md) · [Risk Management](../hockey-iq/risk_management.md)
+
+## Overview
+
+Every other document here is about what you do with a puck. This one is about being someone a team wants on the ice with them — and about the conventions nobody explains to a new player, because everybody else learned them by osmosis and has forgotten they were ever learned at all.
+
+**A warning about what kind of document this is.** The rules sections here are verified against the NHL, IIHF and USA Hockey rulebooks and cited by rule number. Almost everything else is *convention* — practice that is widespread, unwritten, unenforceable, and genuinely different between countries, levels and even individual rinks. Where something is convention rather than rule, it is labelled as convention. Do not repeat any of the convention material to a referee as though it were in a book. It isn't.
+
+---
+
+## Why This Matters Practically, Not Sentimentally
+
+Skip the poster slogans. There is a mechanical reason culture shows up in the score.
+
+Hockey is played five skaters at a time out of a roster of **twenty** in the NHL — eighteen skaters and two goaltenders (Rule 5.1) — and typically twelve to twenty in rec and beer leagues, in shifts of **roughly 30 to 80 seconds** ([Conditioning and Recovery](conditioning_and_recovery.md) owns that figure; a well-managed one is nearer 30 to 45), with substitutions happening **during live play**. That structure has two consequences that no other major team sport shares to the same degree:
+
+- **You are constantly playing with people you did not choose and cannot see.** A defenceman starting a breakout has to release the puck to a spot before the winger arrives at it. That pass is a prediction. It is only a good prediction if you know what that particular winger does. See [Passing and Receiving](../technique/passing_and_receiving.md) and [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
+- **Every shift is an act of delegation.** When you leave the ice, five different people inherit your job. When you go to the corner, someone else has to take the slot you vacated.
+
+So "trust" in hockey is not a feeling. It is a **prediction accuracy problem**. And distrust has a specific, visible symptom: **players stop leaving their own assignment to cover someone else's**, because they no longer believe the cover will be returned.
+
+What that looks like on the ice:
+
+- **The weak-side winger stops dropping into the high slot** when the centre goes to the corner, because last time they did it, the centre didn't come back and the winger got blamed for the goal. Under the house-default low zone collapse, that rotation is the whole coverage. Without it you concede slot shots. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
+- **Defencemen stop pinching**, because they don't believe the third forward will rotate back to cover the blue line. A team that never pinches never sustains offensive-zone pressure. See [Offensive Zone Play](../systems/offensive_zone_play.md).
+- **Nobody talks.** Calling "man on" or "reverse" requires a small act of exposure — you might be wrong. On a bench where being wrong gets you mocked, players go quiet, and silence is the single most expensive communication failure there is. See [On-Ice Communication](../foundation/on_ice_communication.md).
+- **Shifts get longer.** Players who don't trust the next line to hold on stay out an extra twenty seconds, arrive at the bench exhausted, and are still tired when they go back over the boards.
+
+None of that requires anybody to dislike anybody. It just requires uncertainty. **A team that trusts each other plays a structurally different, more aggressive, higher-support game than a team of equal skill that doesn't.**
+
+---
+
+## The Bench
+
+The bench is where most of a game happens to you. Most new players treat it as a rest area. It is a working position.
+
+### Where to sit and why
+
+**Convention, not rule — but a near-universal one.** Nothing in any rulebook says where you sit; the NHL rulebook specifies only the bench itself.
+
+**Sit in line order.** Forwards sit grouped by line, defencemen usually at one end (commonly the end nearest the door the defence uses). Your centre and two wingers are the people either side of you.
+
+The convention exists because:
+
+- **The change happens as a unit.** All three forwards go over the boards from adjacent positions and arrive at the play together rather than trickling on.
+- **You can talk to the people you play with** between shifts, which is the only time you can have an actual conversation.
+- **The coach can address one line** without shouting down the length of a bench. NHL benches are specified at twenty-four feet long with seating for at least fourteen (NHL Rule 3.1) — that is a long way to shout.
+
+If you are new and don't know where to sit, **ask**. Sitting in someone's spot is a trivial offence; guessing silently and being in the wrong place for a change is not.
+
+### Staying alert
+
+Three things you should be doing every second you are on the bench:
+
+1. **Watch the puck and the clock.** You need to know the game situation *before* you step on — score, time, whether you're on a penalty kill, whether the faceoff is coming in your own end. See [Game Management](../systems/game_management.md).
+2. **Watch your matchup.** Who is on the ice for them? Are they changing? Who came off their bench last? This is the raw material of a change on the fly.
+3. **Watch your own line's shift when you're not on it.** You are learning your teammates' tendencies for free.
+
+**Do not sit on the boards.** This one *is* a rule. NHL Rule 75.2(iv) makes it a minor penalty for unsportsmanlike conduct for "any player who sits on the boards (skate(s) exposed) during play," after one warning per team per game. It is also how you get a skate blade in someone's face.
+
+**Do not stand up and reach onto the ice.** Playing the puck from the bench, or interfering with it, is a penalty, and it is one of those things that only ever happens to people who weren't paying attention.
+
+### Being ready at the door
+
+Benches have **two doors**, and by NHL Rule 3.1 they must be uniform in size and location for both teams and must **swing inward** so they cannot be left protruding onto the ice. In practice, most benches operate one door as the "on" door and one as the "off" door, though which is which varies by rink and by team — **find out at your first game, don't guess.**
+
+When your line is next up:
+
+- **Get to the door before you need to.** Standing, gloves on, stick in hand, weight forward.
+- **Know who you are replacing.** Not "a forward" — a specific person. This is what prevents too many men.
+- **Watch that player, not the puck**, in the last few seconds. You are waiting for them to break for the bench.
+
+### The mechanics of a change on the fly
+
+This is the part that is genuinely rules-governed, and getting it wrong is a two-minute bench minor.
+
+**NHL Rule 74.1 (Too Many Men on the Ice)** is the governing text: players may be changed at any time during play "provided that the player or players leaving the ice shall be within five feet (5') of his players' bench and out of the play before the change is made." If your replacement steps on before you are inside that five-foot window, the bench minor is available to the officials. Note the second condition as well as the first — **out of the play**, not merely close to the bench.
+
+What that means for you, in order:
+
+1. **The call comes.** Either from the ice ("change!") or from the bench. See the bench and line-change call list in [On-Ice Communication](../foundation/on_ice_communication.md).
+2. **The player coming off skates directly to the bench** — no coasting, no last look at the puck. The five-foot rule punishes hesitation.
+3. **The player going on waits at the door**, watching their man arrive, and steps on *as* they arrive, not before.
+4. **Announce it.** "I've got Sam", "I'm coming", "last man". Too-many-men penalties are almost always two people believing the same spot is theirs.
+
+**When not to change** is more important than how. Never change when the opposition has the puck in your zone, when you are the last defender back, or after your own team has iced the puck. On an icing, **NHL Rule 82.1 forbids the offending team from making any substitution before the ensuing faceoff** — the tired five stay out for a defensive-zone draw. The same rule applies to a team in violation of Rule 63.8 (delaying the game).
+
+**Rule 82.1 does allow three exceptions**, and they are worth knowing because players assume the ban is absolute:
+
+1. **To replace a goaltender who had been substituted for an extra attacker** — so a team that iced it with the net empty can put its goalie back.
+2. **To replace an injured player.**
+3. **When a penalty has been assessed that affects the on-ice strength of either team.**
+
+The rule also fixes the timing precisely: **"the determination of players on ice will be made when the puck leaves the offending player's stick."** Whoever was out there at that instant is who stays out. That's covered in depth in [Game Management](../systems/game_management.md).
+
+**Goaltenders are different.** Under NHL Rule 71.1 (Premature Substitution), when the goaltender leaves for an extra attacker the skater cannot enter the ice until the goalie is within five feet of the bench — but the sanction is a stoppage and a faceoff, not a penalty, unless the situation falls outside that rule.
+
+### Gate and door etiquette
+
+Conventions, not rules, and they vary by rink:
+
+- **Whoever is nearest the door works it.** In most beer leagues there is no dedicated door operator, so the player sitting closest opens and closes it. If that's you, that's your job for the shift, and it means you are watching the ice rather than your phone.
+- **Hold the door for the player coming off**, then close it. An open door during play is a hazard and, in some rinks, a delay-of-game conversation with the referee.
+- **Don't block the door.** Standing in the gateway "getting ready" while someone is trying to come off is the single most common bench annoyance in amateur hockey.
+- **Sticks off the floor at the door.** Someone will step on yours and snap it, and it will be your fault.
+
+### Changes at stoppages
+
+Different mechanism entirely. At a whistle, **NHL Rule 82.2** gives the visiting team up to **five seconds** to change; the referee then **raises their hand** to close the visitors' window and open the home team's, and the home team gets up to **eight seconds**, ended by the referee lowering their hand. This is why home ice means "last change" — the home coach sees the away line first and can answer it. (The right itself is granted by Rule 82.**1**, not 82.2, and it comes with an exception — *"except in cases following an icing, which does not result in the delay of the game"* — which costs the home team its last change after an icing **it** committed, not after the visitors'. See [Rules Primer](../foundation/rules_primer.md).)
+
+> **Rule-set difference that changes the matchup game.** **USA Hockey Rule 204(a) gives five seconds to *each* team** — "the visiting team shall have five seconds to complete any player substitutions. After the visiting player substitutions, the home team shall have 5 seconds" — not the NHL's 5/8 split. The home team still changes second, so it still has the last change, but it gets three fewer seconds to do it in than an NHL bench does. If you are used to watching the NHL, a USA Hockey home bench has to be quicker off the mark.
+
+Most rec leagues do not run this procedure formally at all; if yours doesn't, your only matchup tool is the change on the fly. See [Game Management](../systems/game_management.md).
+
+---
+
+## Being a Good Linemate
+
+### Know their tendencies, and adapt to them
+
+Everything below is convention and craft, not rule.
+
+Every player has a small set of things they reliably do. Your job is to learn your linemates' set and **pass to the player who exists**, not the player you wish you had.
+
+Specific things worth knowing about each linemate:
+
+- **Where do they want the puck?** Skates, or out in front? Forehand or backhand side? A player who takes everything on their forehand needs the puck led differently from one who catches it in their feet and protects it.
+- **Do they hold or move it?** A holder needs you to get open twice. A mover needs you moving already.
+- **Do they go to the net or stop at the top of the circle?** This changes whether your rim from the corner should be hard around the boards or soft to the net-front area.
+- **How fast do they actually skate?** Not how fast they think they skate. A pass into space is only good if they get there.
+- **Which way do they turn under pressure?** Almost everyone has a preferred escape direction.
+- **On the backcheck, do they take the middle or their man?** This decides what *you* have to take.
+
+**The adaptation runs from you to them, not the other way.** This is the whole point and it is where most players get it wrong. You cannot make a linemate change their game mid-season. You can change what you give them tomorrow. If you find yourself explaining, repeatedly, that they should have been somewhere else, you have chosen the impossible half of the problem.
+
+### Talk before the shift, not after
+
+The bench, between shifts, is the highest-value communication window in hockey — you are stationary, the whistle isn't blowing, and the opposition can't hear you.
+
+Useful things to say in ten seconds:
+
+- "On the breakout I'm coming low, not to the wall."
+- "Their D-man is stepping up at the line every time — I'll chip it behind him."
+- "If I've got it in the corner, get to the net, I'm not passing it back out."
+- "Their number 8 is quick, I'll take him back."
+
+Useless things to say: anything evaluative. "You need to be sharper" is not information.
+
+### The value of consistency
+
+**A predictable teammate is worth more than a brilliant unpredictable one**, and this follows directly from the mechanics described at the top of this document. If passing is prediction, then variance is the enemy. A winger who is in the same place on every breakout lets the defenceman release the puck early, under pressure, without looking. A winger who is somewhere different every time forces the defenceman to look up first — and looking up first is how you get hit and turn the puck over.
+
+The practical version: **decide what you do, and then do it every time.** If you support the wall on the breakout, always support the wall. If you change your mind, say so on the bench first.
+
+---
+
+## Line and Defence-Pair Chemistry
+
+### What it actually is
+
+Chemistry gets talked about mystically. Stripped down, it is two things:
+
+1. **Complementary tendencies.** The pieces fit. A puck-carrying centre and a winger who gets open beats two of either. A defenceman who wants to activate and one who is happy to stay home covers both jobs; two activators leave the blue line empty.
+2. **Shared assumptions.** All three players believe the same thing about what happens next. When the puck goes into the far corner, everyone already knows who is first in, who supports, and who stays high — without anyone deciding. F1, F2 and F3 are **roles defined by order of arrival, not by position**, and a line with chemistry sorts those roles out silently and instantly. See [Forechecking Systems](../systems/forechecking_systems.md).
+
+**It is mostly not friendship.** Plenty of effective NHL lines are made of players who don't socialise, and plenty of best friends can't play together. Friendship helps with the *communication* that builds shared assumptions, which is a real but indirect contribution.
+
+### How it develops
+
+- **Repetition.** Chemistry is learned tendencies, and tendencies are learned by watching. This is why coaches keep lines together through a rough patch, and why constant "line blender" juggling has a cost even when each individual pairing looks sensible on paper.
+- **Talking about specific, recurring situations** — the breakout, the forecheck entry, the net-front assignment — rather than about hockey in general.
+- **Watching your own shifts back**, if your league films games.
+
+### Why some pairings don't work
+
+- **Duplicated tendencies.** Three players who all want to carry the puck through the neutral zone; two defencemen who both want to jump into the rush.
+- **Mismatched pace.** A player who plays north fast paired with a player who wants to slow it down and cycle will spend the whole shift a half-second out of phase.
+- **Incompatible risk appetite.** One player forcing low-percentage plays through the middle while their partner is trying to manage the game conservatively is a recipe for both being angry. See [Risk Management](../hockey-iq/risk_management.md).
+
+On defence pairs specifically, **handedness** matters, but less than people claim, and it is about the first pass out rather than the shot from the point — see the treatment in [Game Management](../systems/game_management.md).
+
+**If a pairing isn't working, that is information, not a verdict on anyone's character.** Say it to the coach that way.
+
+---
+
+## The Dressing Room
+
+All convention. It varies enormously — a junior team, a men's league team and a mixed-ability drop-in have different norms, and a rink in Helsinki has different norms from one in Toronto.
+
+**If this is your first time in one**, [Getting Started](../getting-started/getting_started.md) walks through the practical mechanics of a first session — when to arrive, what to bring, how a drill line works — and points back here for the conventions themselves.
+
+### Arriving on time
+
+**"On time" in hockey means dressed and ready before the stated time, not arriving at it.** The widespread convention is to arrive **45 to 60 minutes before a game** and **20 to 30 minutes before a practice**, because you need to get boots off, gear on, tape done, and be on the ice at the first second of a rented, expensive, immovable ice slot.
+
+There is no rule anywhere that says this. There is simply a coach who will notice, and a bench that will notice sooner.
+
+If you are going to be late or absent, **tell someone** — the ice time is paid for and rosters may be tight. Repeated silent no-shows are the fastest way to become unwelcome at any level.
+
+### The dressing order
+
+Most teams have **assigned or habitual stalls**. Common patterns: goalies at the end, defence together, forwards by line, veterans in the corners. Some teams deliberately mix so cliques don't form.
+
+**Rules of thumb if you are new:** take a spot nobody has claimed, ideally near the door, and ask if it's someone's. If the room is small, keep your bag under the bench and your gear on your hooks — sprawling into your neighbour's stall is the room's version of a bad change.
+
+### Noise and music
+
+- **Music is normal**, and there is normally one person whose job it is by long habit. Don't take over the speaker in your first month.
+- **The volume and mood convention varies wildly by level.** Loud and joking is standard in beer league. Many competitive teams go quiet for the last ten minutes before the ice.
+- **Goalies often want to be left alone** to get their head right in the last stretch before warm-up. This is one of the most consistent conventions in hockey and one of the most consistently violated by new players trying to be friendly. See [Mental Game](mental_game.md).
+
+### A new player's first few sessions
+
+- **Say hello to the room when you walk in.** One sentence. It costs nothing and its absence is noticed.
+- **Listen more than you talk.** The first three weeks are for finding out how this team does things.
+- **Don't critique anything.** Not the systems, not the line combinations, not the goalie's rebound control, however right you are.
+- **Learn names fast.** You cannot make the calls in [On-Ice Communication](../foundation/on_ice_communication.md) without them, and "hey!" doesn't identify anybody.
+
+---
+
+## Unwritten Conventions of the Game Itself
+
+**Everything in this section is convention, not rule, unless explicitly cited.** These practices differ between North America and Europe, between age groups, between competitive and recreational levels, and between individual leagues. Treat this as a description of what is common, not a code you can hold anyone to.
+
+### The handshake line
+
+Widely observed after almost every game in youth and much of recreational hockey. In the NHL it is **essentially a playoff custom** — the handshake line follows the conclusion of a playoff *series*, and it is not something that happens after ordinary regular-season games at all. "Less consistent in the regular season" would overstate it; the practice is simply not part of the NHL regular season.
+
+The interesting verified fact is that it is **explicitly not a rule** — it is a "common practice." The USA Hockey Casebook addresses the question directly: asked whether the referee may prohibit teams from proceeding through the handshake line after an unusually rough game, the answer given is *yes*, because "the Referee is charged with the general supervision of the game" and "it is well within their authority to prohibit this common practice ... in the event that they feel a problem may arise" (USA Hockey Casebook 2025-29, Officials, Situation 2, rule reference 502(a)).
+
+Practical version: shake everyone's hand, say "good game," mean it or at least sound like it, and keep moving. If you lost badly or there was an incident, this is exactly when doing it well matters.
+
+### Not running up the score
+
+There is **no rule against scoring goals** in either the NHL or USA Hockey rulebooks — neither contains a mercy or running-clock provision of any kind. Many local youth and recreational leagues *do* have running-clock or mercy rules at a set goal differential, and one of the larger ones publishes its version: the **CARHA Hockey Official Rule Book** (Section Seven, item 16) provides that *"a mercy rule will be in effect in which the game will go to running time if there is a five (5) or more goal spread with 10 minutes remaining in regulation time"*, with no reverting to stop time, and with penalty lengths stretched to 3, 7 and 12 minutes to compensate for the faster clock. That is one association's rule, not a general one — the threshold and the trigger vary wherever these exist. **Check your own league's rules.**
+
+The convention, where a game is out of hand, is a set of self-imposed restraints rather than deliberately playing badly:
+
+- Roll all four lines evenly and give the least-used players more shifts.
+- Stop forechecking hard in their end; play the neutral zone instead.
+- Work on things — complete passes, cycle, defencemen keeping the puck in — rather than hunting chances.
+- Don't celebrate goals demonstratively.
+- Don't pull anybody's stick or take needless hits.
+
+**The point is not to insult the other team by visibly easing off** — that is worse. The point is to stop trying to increase the margin.
+
+### The goalie's crease
+
+**Convention:** during a stoppage, you don't skate through, stand in, or shoot pucks at the opposing goaltender's crease. Goalies clear the crease of snow and treat that space as theirs, and standing in it after a whistle is the standard way to start something.
+
+**Rule:** the crease conventions are not in the rulebook. What *is* in the rulebook is goaltender interference during play — NHL Rule 69.1, which states that "an attacking player's position, whether inside or outside the crease, should not, by itself, determine whether a goal should be allowed or disallowed," and disallows goals only where the attacker impairs the goalie's ability to move freely or defend the goal, or initiates deliberate contact. **Screening the goalie from outside the crease, without contact, is normally legal** — though note the rule says "positioning **or** contact", so positioning alone can void a goal if it impairs the goalie. So the crease is protected by custom after the whistle and by a much narrower rule during play.
+
+### Helping an injured player
+
+Conventions: stop playing when someone is down and not getting up, wave for the bench or the officials, and if it's a head or neck injury, **do not move them** — kneel next to them and wait for whoever is trained.
+
+Where this connects to the rulebook (**NHL Rule 8.1**):
+
+- Play is **not** stopped for an injured player until their own team has secured control of the puck — unless the officials judge the injury obviously serious, in which case they may stop it immediately.
+- **But there is a second limb people forget, and it cuts the other way.** If the injured player's team *already has control of the puck at the moment of injury*, "play shall be stopped immediately **unless his team is in a scoring position**." So a team attacking on a two-on-one with a teammate down behind the play gets to finish the rush; a team cycling harmlessly in the corner does not.
+- An injured player must leave via the **players' bench**, not any other exit. Using another exit is a bench minor.
+- Once a player is attended to on the ice by the trainer or medical staff, they **must be substituted for immediately** and cannot return until play has resumed.
+
+**Tapping the pads and boards.** Tapping a goalie's pads after a good save, or a teammate's shins after a blocked shot, is the standard nonverbal "well done" — it exists because you can't hear anything through a helmet at speed. Tapping sticks on the boards from the bench is the bench's applause, for a goal, a good shift, or a teammate leaving the ice injured. **One caution:** NHL Rule 39.2(iii) makes it a minor penalty to bang the boards with sticks "in any manner show disrespect for an official's decision" — the same physical action is applause or a penalty depending on what it is aimed at, though the rule explicitly allows officials discretion when boards are banged to get their attention for a genuine reason such as a serious injury.
+
+### How much of this varies
+
+A lot.
+
+- **Fighting-adjacent conventions barely exist outside North American professional and junior hockey.** Under IIHF rules the sanctions are discretionary rather than automatic — Rule 46.1 says willing combatants *"shall be penalized accordingly by the Referee(s) and **may** be ejected from the game. Further Supplementary Discipline **may** be imposed"* — but ejection and suspension are the realistic expectation there, and under collegiate rules too, so the elaborate "code" around it — consent to fight, not fighting a tired opponent, respecting a declined fight — has almost no purchase in European or international play.
+- **Celebration norms differ by country and level.** Elaborate celebrations are read very differently in a European league than in a North American beer league.
+- **Post-game customs differ.** Some teams have a beer in the room, some go straight home, some have a formal handshake with the opposing coach.
+- **When in doubt, watch what your own team's most respected players do, and copy that.** That is genuinely how everyone learns this.
+
+---
+
+## Talking to Officials
+
+This one is rules-governed, and the rules are stricter than most players realise.
+
+### What the rulebook actually says
+
+**Only the captain may raise a rule interpretation, and only when invited.** NHL Rule 6.1: "One Captain shall be appointed by each team, and he alone shall have the privilege of discussing with the Referee any questions relating to interpretation of rules which may arise during the progress of a game." The same rule then narrows it further: "Only the Captain, **when invited to do so by the Referee**, shall have the privilege of discussing any point relating to the interpretation of rules."
+
+**An alternate captain has that privilege only when the captain is not on the ice.** NHL Rule 6.2: "If the Captain is not on the ice, an Alternate Captain on the ice shall be accorded the privileges of the Captain." A team may carry one captain and up to two alternates, or no captain and up to three alternates. **Goaltenders may not be captain or alternate captain** under Rule 6.1, which bundles them in with the coaching staff: *"No playing Coach or playing Manager or goalkeeper shall be permitted to act as Captain or Alternate Captain."* **IIHF Rule 6.1 is all but identical** — it differs by one word, reading "playing **Team** Manager" where the NHL reads "playing Manager". **USA Hockey does not** — Rule 202(a) bars a goalkeeper only from *exercising the privileges* of captain, not from holding the position. The difference is set out below under Captains and Leadership.
+
+**The Bill Durnan origin story — half of it checks out, and it is not the half people repeat.** The tale is that the rule was made because Montreal goaltender Bill Durnan kept leaving his crease to argue with officials. Three parts of that are now verifiable. Durnan really was captain: Hockey-Reference lists the 1947-48 Canadiens' captains as *"Toe Blake, Bill Durnan"*, and NHL.com's staff historian Dave Stubbs records that Dick Irvin Sr. gave him the C for *"the latter half of the 1947-48 season upon the career-ending injury suffered by Toe Blake."* Durnan confirmed the behaviour in his own words — and note where those words come from, because Stubbs is relaying them rather than reporting them: the quotation is from hockey historian **Stan Fischler's 1994 book *Heroes and History***, which Stubbs cites by name. *"I looked a little stupid if there was a bad call against us — me with all those pads and the big stick, chasing after the referee and then running to the bench to hear Irvin."* And the rule's date is attested from the period rulebook — Stubbs writes that *"the NHL decreed in its 1948-49 rules, a regulation that remains in force, that 'No goalkeeper shall be entitled to exercise the privileges of Captain or Alternate Captain on the ice.'"* Note that this makes it a **1948-49** rule; the usual telling puts it a season early.
+
+**What remains undocumented is the causal claim itself** — that Durnan is *why* the rule exists. No authority says so. The Hockey Hall of Fame's Durnan biography does not mention the captaincy at all. The NHL's own historical rule-change record has no 1948-49 entry whatsoever, and nowhere connects goaltenders to the captaincy. Most tellingly, Stubbs's article is entirely about Durnan, reports the rule in the same breath, and still declines to link them. **Treat the "Durnan rule" as plausible but undocumented folklore** — and note the rule's own wording, which lumps goalies together with playing coaches and managers, is at least as consistent with a general tidying-up as with one goaltender's temper.
+
+**Complaining about a penalty is not a rule interpretation.** Rule 6.1 is unusually blunt: "A complaint about a penalty is NOT a matter 'relating to the interpretation of the rules' and a minor penalty shall be imposed against any Captain, Alternate Captain or any other player making such a complaint."
+
+**Coming off the bench to argue is an automatic minor.** Rule 6.1 again: "Any Captain, Alternate Captain or any player who comes off the bench and makes any protest or intervention with the officials for any purpose shall be assessed a minor penalty for unsportsmanlike conduct under Rule 39 – Abuse of Officials." This is repeated in Rule 39.2(iv).
+
+**Other codes are close but not identical — and the differences bite on exactly the point that matters.**
+
+**IIHF Rule 6.1** shares most of the NHL's wording, including the complaint-about-a-penalty line and the automatic minor for coming off the bench to protest. But on the central question it is **not** the same:
+
+- **There is no "only when invited to do so by the Referee".** That clause is an NHL addition. The IIHF text is: *"If both the Captain and Alternate Captain are on the ice, only the Captain is allowed to talk to the Referee about a point of interpretation."* The restriction is about **who** talks, not about waiting to be asked. (IIHF does use the word "invited" — but only in the *next* sentence, about coming off the bench: a captain or alternate who leaves the bench "uninvited by the Referee" is penalised.)
+- **IIHF permits one captain and no more than two alternates**, with no co-captains, and unlike the NHL there is no option to run three alternates and no captain.
+- **A team cannot change its captain or alternates during a game**, and if the captain is ejected or injured, an alternate must assume the duties.
+
+**USA Hockey Rule 202(a) is looser again**: each team designates a captain and up to two alternates, and "only one of these designated players shall have the privilege of discussing with the Referee any questions relating to interpretation of rules." So under USA Hockey the privilege attaches to one designated player rather than specifically to the captain-when-on-the-ice. Rec leagues frequently run without any letters at all.
+
+### What gets you a penalty
+
+NHL Rule 39.2 assesses a **minor penalty for unsportsmanlike conduct** to:
+
+- **any player who challenges or disputes the ruling of an official** (39.2(i)) — note that this is the plain act of disputing, with no requirement of rudeness;
+- any identifiable player using obscene, profane or abusive language or gestures at any on- or off-ice official (39.2(ii));
+- players who bang the boards with sticks or otherwise show disrespect for a decision (39.2(iii));
+- any player coming off the bench to question a ruling (39.2(iv));
+- banging the glass in protest of an off-ice official's ruling (39.2(v)).
+
+And the escalation is explicit: persisting after the minor gets you a **misconduct** (Rule 39.4(iii)), and persisting after that gets you a **game misconduct** (Rule 39.5(i)). Rule 39.4(ix) states the ladder in one line: "participants displaying this type of behaviour are assessed a minor penalty, then a misconduct penalty and then a game misconduct penalty if they persist."
+
+### What actually works
+
+- **During play: nothing.** Say nothing. There is no version of this that helps.
+- **At a stoppage, if you are the captain: ask a question, don't make a statement.** "Can you tell me what you had on that one?" gets an answer. "That was a terrible call" gets you two minutes under 39.2(i).
+- **Calm and quiet beats loud and right.** Referees at every level respond to tone before content.
+- **Ask once.** The rulebook's whole structure punishes persistence, and so does every official's patience.
+- **Do it through the letter.** If you have no letter, tell your captain and let them handle it. That is what the letter is for.
+
+**Arguing has essentially never reversed a call.** Officials in the NHL cannot rescind a called penalty on the basis of a protest — the only reversal mechanism is video review, and there is no rulebook route by which complaining causes it. In amateur hockey there is even less recourse. What arguing reliably does is get you a second penalty and make the next fifty-fifty call go the other way.
+
+---
+
+## Handling Teammates Who Are Struggling
+
+Convention and judgement, not rule. The overlap with [Mental Game](mental_game.md) is deliberate — that document covers what to do when the struggling player is you.
+
+### The goalie who let in a soft one
+
+Goaltending is the position where one error is instantly visible, permanently on the scoreboard, and impossible to hide. Every goalie knows exactly how bad the goal was without being told.
+
+**What helps:**
+
+- **Say something short and move on.** "Next one." A tap on the pads. That's it.
+- **Clear the puck. Win the next faceoff. Play a simple shift.** The single best support you can give a goalie is a period of boring, structured hockey where nothing comes from the slot.
+- **Tell them what you're doing in front of them** — "I've got the net front," "shot coming, I'm screening, going left." Information restores their sense of control.
+
+**What makes it worse:**
+
+- **Analysing the goal.** Even sympathetically. Especially sympathetically.
+- **Overcompensating** by suddenly collapsing five players to the crease. It tells the goalie you don't trust them and it concedes exactly the screened, deflected chances that produce another soft goal.
+- **Silence from the whole bench** after the goal, which reads as blame whether or not it is.
+
+### The player having a bad night
+
+- **Keep giving them the puck.** Cutting a struggling player out of the play is the most common and most damaging reaction. It confirms what they already fear and guarantees the night stays bad.
+- **Give them an easy one first.** A short pass they cannot miss. Confidence is rebuilt with completed simple actions, not with a chance to redeem themselves on a hard one.
+- **Praise effort, not outcome** — "great backcheck", "good stick there." Outcome praise after a bad night sounds like pity.
+- **Say the thing that lowers the stakes.** "It's Tuesday, mate." In a rec league, this is genuinely the right intervention.
+
+**What makes it worse:** "just relax," public coaching from the bench, replaying the turnover, and — worst — a teammate visibly rolling their eyes. See the next section.
+
+---
+
+## Handling Conflict
+
+### Visible frustration is a tactical error
+
+You will at some point be furious with a teammate mid-shift. The mistake is not the feeling. The mistake is **showing it**, and the argument against it isn't etiquette — it's competitive.
+
+Throwing your head back, slapping your stick on the ice, or gesturing at where the pass should have gone does four things, all bad:
+
+1. **It tells the opposition exactly where your weakness is.** A bench that sees your defence pair arguing will attack that pair. This is free information you are giving away.
+2. **It demoralises your own bench.** Everyone can see it. The next player who makes a mistake now knows what happens to them.
+3. **It stops you playing.** The two seconds you spend gesturing are two seconds you are not backchecking, and the goal usually comes from that.
+4. **It makes the teammate worse.** A player who is worried about your reaction plays slower and passes it away sooner.
+
+**The rule for yourself: react to your own errors visibly at most, and to teammates' errors never.** Even that has limits — see [Mental Game](mental_game.md).
+
+### Deal with it after, not during
+
+- **During the game: nothing.** No conversation in a hockey game has ever improved anybody's next shift.
+- **After the game, once you have both calmed down** — not in the car park at full volume, and preferably not in a full dressing room.
+- **Talk about the specific play, once.** "On the D-to-D at the blue line I'm expecting it flat — it kept getting chipped and I was reaching." Not: "you never look up."
+- **Frame it as what you will do differently**, because that's the only half you control. Most conflicts of this kind are actually mismatched assumptions, and naming the assumption fixes it.
+- **If it's genuinely not resolvable between you, take it to the coach or captain** — quietly, as a problem to solve, not as a complaint.
+
+**The escalation you must not make** is retaliating on the ice, or shorting a teammate you're annoyed with by not passing to them. Both are visible to everyone and both convert a private irritation into a team problem.
+
+---
+
+## Captains and Leadership Without a Letter
+
+### What a captain actually does
+
+The formal duties are small and precise. Under NHL rules the captain is the only player entitled to discuss a rule interpretation with the referee, when invited (Rule 6.1); makes the formal complaint that triggers a stick measurement, alongside an alternate captain (Rule 10.5); designates which of two simultaneously expiring minor penalties releases its player first (Rule 16.2); and selects the penalty-shot taker whenever the shot was not awarded to a specifically fouled player (Rule 24.3). Beyond that short list, the letter confers almost nothing the rulebook recognises.
+
+The real job is off the sheet:
+
+- **Set the standard for what a normal shift looks like.** Not the best shift — the normal one. Teams calibrate to their captain's floor, not their ceiling.
+- **Be the interface** with the coach and, where relevant, with the league or club.
+- **Own the officials conversation** so nobody else has to, and so nobody else takes the penalty for trying.
+- **Notice who isn't talking.** The player quietly having a terrible season is the captain's problem before it's the coach's.
+
+Note the goaltender restriction, and note that the three codes word it differently:
+
+- **NHL Rule 6.1** and **IIHF Rule 6.1** both bar a goaltender from *being* captain or alternate captain at all. IIHF: "No playing Coach or playing Team Manager or goalkeeper shall be permitted to act as Captain or Alternate Captain."
+- **USA Hockey Rule 202(a) is narrower.** It says "No goalkeepers shall be entitled to **exercise the privileges** of Captain" — it bars the goalie from doing the job of talking to the referee, **not** from wearing the letter. A USA Hockey team may designate its goalie as captain; someone else just has to do the talking.
+
+Either way, a goalie who is the obvious leader of a team ends up leading without the referee-facing part of the role — the situation the next section describes.
+
+### Most leadership has no letter
+
+This is the important part. On any team, the letters go to at most four people, and the behaviour that determines a team's culture is distributed across everyone. In practice, the people who most shape a room are:
+
+- **The player who is always the first one dressed and the last one off the ice.** Nobody announces this. Everybody notices it.
+- **The player who talks on the ice.** The organising principle in [On-Ice Communication](../foundation/on_ice_communication.md) is that the player who can see it makes the call — which means the loudest useful voice on your team may well be your least experienced player, and that is correct.
+- **The player who welcomes new people.** One person doing this changes a room.
+- **The player who doesn't sulk after a bad shift.** Emotional weather is contagious in both directions.
+- **The player who does the unglamorous thing** — blocks the shot, takes the defensive-zone draw, kills the last minute — without being asked and without mentioning it afterwards.
+
+None of those require skill, seniority, or permission. **If you want to lead a hockey team, the entry requirement is to be reliable in public.**
+
+---
+
+## Rec and Beer League Specifically
+
+Most adults reading this play here, and the culture is genuinely different from organised competitive hockey.
+
+### The range on one bench
+
+A single beer-league bench routinely contains a former junior player, someone who learned to skate at thirty-five, and everything between. This is unlike almost any other sport's amateur scene, and it means:
+
+- **Adjust the pass to the receiver.** A hard, flat pass to someone who can't receive it is not a good pass. It is a turnover you caused.
+- **Cover more ice than your job description if you can.** If you are the strongest skater on your line, you are the one who backchecks.
+- **Don't coach from the bench.** Nobody paid league fees to be taught by a teammate. If someone asks, help; otherwise don't.
+
+### Playing against much weaker or stronger opponents
+
+- **Against weaker teams:** roll lines evenly, stop forechecking, make five passes before shooting, let your least experienced players take the offensive-zone shifts. See "not running up the score" above.
+- **Against stronger teams:** simplify. Get pucks deep, keep the shifts short, take away the middle, and treat it as a chance to work on structure. Trying to trade rushes with a much better team is how a 4-1 becomes 9-1. See [Game Management](../systems/game_management.md).
+- **Either way, keep your stick down and your hits soft.** The mismatch is exactly when injuries happen.
+
+### Non-contact league etiquette
+
+Most adult recreational hockey is played in a **non-check** category, and the rule is clearer than most players think. **USA Hockey Rule 604(a)** prohibits body checking in the 12-and-under youth classifications and below, all girls' and women's classifications, and **all non-check adult classifications**; body checking there is a minor penalty (604(c)), a major plus game misconduct if it recklessly endangers an opponent (604(d)), and potentially a match penalty (604(e)).
+
+The nuance that causes most of the arguments: **"non-check" does not mean "no contact."** USA Hockey's own text states that "Competitive Contact hockey does not mean 'no contact'" and explicitly permits **angling**, **physical engagement** (two players legally leaning into each other while both play the puck), and **collisions** where players maintain legally established position. What is prohibited is "overt hip, shoulder, forearm or torso action" used to separate an opponent from the puck with no effort to play it (Rule 604 Note 1). The concept of **"finishing the check" is described as unacceptable** in the USA Hockey standard of play, on the basis that it is intended to punish rather than gain possession.
+
+So: you may take and hold your ice, you may angle someone off, you may lean while both of you chase a puck. You may not step into someone. And the convention on top of the rule is simply that **the physical intensity is set by the least willing player in the battle, not the most.** See [Body Contact and Battles](../technique/body_contact_and_battles.md).
+
+### Everyone has work in the morning
+
+The single most useful sentence in adult hockey. It underwrites most of the culture:
+
+- **An 11pm game is not worth an injury.** Nobody is getting a contract.
+- **No slashing back, no crosscheck in the back, no retaliation.** The retaliation is what escalates, every time.
+- **Sticks down, blades on the ice, no follow-through above the waist.**
+- **Let the ref referee.** They are usually a teenager or a volunteer and are on their fourth game of the night.
+- **Be somebody people are pleased to see on the ice.** Rec-league rosters are filled by word of mouth; this is also, incidentally, the entire economics of getting invited back.
+
+---
+
+## Being New to a Team
+
+**Reliability beats skill, and it isn't close.** A team fills its roster with the people it can count on. Skill decides your line; reliability decides whether you are on the team next season.
+
+**If this is your first team rather than a new one**, [Getting Started](../getting-started/getting_started.md) covers what comes before this list — registration, tiers, fees, and what a season actually commits you to.
+
+The practical checklist:
+
+1. **Turn up, on time, every time.** Dressed and ready before the stated time.
+2. **Reply to messages.** Team organisers in amateur hockey are volunteers chasing people for availability. Being the person who answers within the hour makes you disproportionately popular.
+3. **Pay your fees before you're asked.**
+4. **Ask what the systems are** in your first week: what forecheck, what defensive-zone coverage, who calls the breakout. Then play them, even if you think a different one is better. See [Forechecking Systems](../systems/forechecking_systems.md) and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
+5. **Ask which door is on and which is off**, and where you should sit.
+6. **Play simple for the first few games.** Get pucks deep, complete passes, finish your shifts. Teams form their impression of you fast, and "safe" is a better first impression than "flashy and occasionally catastrophic."
+7. **Learn names.** Then use them on the ice.
+8. **Say yes to the post-game.** At least sometimes. Half of a hockey team's shared assumptions get built there.
+9. **Don't apologise constantly.** A new player narrating every mistake becomes exhausting; make the mistake, reset, next shift.
+10. **Don't compare it to your old team.** Ever.
+
+---
+
+## Coaches
+
+### What coaches actually notice
+
+This is convention and coaching-experience material rather than a measured finding, so treat it as informed opinion: **coaches watch effort and positioning far more than skill.** Skill is largely fixed within a season and is obvious in the first ten minutes. Positioning and effort are the things a coach can change, so they are what a coach is scanning for.
+
+Concretely, what gets noticed:
+
+- **Whether you backcheck all the way**, or coast in at the top of the circles.
+- **Where you are when the puck is on the other side of the ice** — the single most revealing tell of whether a player understands the system. See [Playing Without The Puck](../hockey-iq/playing_without_the_puck.md).
+- **Shift length.** A player who consistently changes at forty seconds is easier to deploy than a more skilled player who stays out for ninety.
+- **Whether your head is up on the bench.**
+- **Whether the bad shift changes your next shift.**
+
+### Getting useful feedback
+
+Coaches are usually bad at giving unsolicited individual feedback, not because they don't have it, but because there are eighteen of you and one of them.
+
+- **Ask at a good time** — after practice, not during a game, not in the two minutes after a loss.
+- **Ask a narrow question.** "What do you want from the weak-side winger on the defensive-zone collapse?" gets you an answer you can use. "How am I doing?" gets you "yeah, good."
+- **Ask about a specific shift.** "Third period, the shift where they scored — where should I have been?"
+- **Ask what would move you up.** "What would I need to do differently to play more minutes?" is direct, and most coaches respect it.
+- **Then do it, visibly, and don't mention that you're doing it.**
+
+### Asking good questions
+
+- **About systems, ask "what" and "when", not "why not something else."** "When their D steps up at the line, do you want me to chip it or hold?" is a question. "Wouldn't a 1-2-2 work better here?" is a challenge, whether or not you meant it as one.
+- **Ask in front of the group when the answer helps everyone** — most system confusions are shared.
+- **Ask privately when the answer is about you.**
+- **Accept the answer.** You can disagree; you still play the system. A player who plays a system they dislike properly gets listened to later. A player who freelances doesn't.
+
+---
+
+## Common Mistakes
+
+- **Treating the bench as a rest.** You should arrive at the door knowing the score, the clock, who you're replacing, and who you'll be matched against.
+- **Changing late.** The five-foot rule (NHL Rule 74.1) punishes hesitation; the player who looks back at the puck one more time is the reason for the bench minor.
+- **Two players thinking the same spot is theirs.** Almost every too-many-men penalty is a communication failure at the door, not a rules misunderstanding.
+- **Sitting on the boards.** It's a minor penalty after one team warning (NHL Rule 75.2(iv)) and it's dangerous.
+- **Helping a downed player up.** The instinct is to reach for them. With a head or neck injury it is the most damaging thing you can do — **do not move them**, kneel beside them, keep them still, and wait for whoever is trained.
+- **Arguing a call.** It has essentially never worked, and NHL Rule 39.2(i) makes disputing a ruling a minor penalty in itself — no swearing required.
+- **A non-captain talking to the referee.** Under NHL Rule 6.1 the privilege belongs to the captain, only when invited, and complaining about a penalty is explicitly not covered at all. Note that the "only when invited" wording is NHL-specific and has no IIHF equivalent.
+- **Coming off the bench to protest.** Automatic minor under Rules 6.1 and 39.2(iv), every time.
+- **Expecting linemates to adapt to you.** You can change what you give them tomorrow; you cannot change their game mid-season.
+- **Visible frustration at a teammate.** It tells the opposition where to attack, demoralises the bench, and takes you out of the play for two seconds — which is how long a goal takes.
+- **Analysing the soft goal with the goalie.** They know. Say "next one" and win a faceoff.
+- **Cutting a struggling teammate out of the play.** It confirms their worst read of the situation and guarantees the night stays bad.
+- **Coaching your teammates from the bench in a rec league.** Nobody paid league fees for that.
+- **Assuming "non-check" means "no contact."** Angling, leaning and legally established position are all permitted (USA Hockey Rule 604 and the Competitive Contact definition); stepping into someone is not.
+- **Being new and having opinions.** Listen for three weeks. Then have them.
+- **Treating any of the conventions in this document as rules.** They differ by country, level and rink, and none of them are enforceable.
+
+---
+
+## Key Takeaways
+
+1. **Trust is a prediction problem, not a feeling.** Hockey requires you to pass to where someone will be and to leave your assignment to cover theirs. Teams that can't predict each other stop covering, and that shows up on the scoreboard.
+2. **The bench is a working position.** Sit in line order, watch the play and your matchup, know exactly who you're replacing, and be at the door before you need to be.
+3. **The five-foot rule governs every change on the fly.** NHL Rule 74.1: the player leaving must be within five feet of the bench *and out of the play* before the substitute steps on. Announce your change out loud — too many men is a communication failure, not a rules failure. After your own icing you cannot change at all, subject to Rule 82.1's three exceptions (goalie back in for the extra attacker, injury, or a penalty that changes on-ice strength).
+4. **Adapt to your linemates; they will not adapt to you** — and **a predictable teammate beats a brilliant unpredictable one.** Consistency is what lets a defenceman release the puck without looking up, which is what stops the turnover.
+5. **Chemistry is complementary tendencies plus shared assumptions — not friendship.** It comes from repetition, which is why constant line juggling has a real cost.
+6. **Only the captain may raise a rule interpretation with an NHL referee, and only when invited** (NHL Rule 6.1). A complaint about a penalty is explicitly not a rule interpretation, and coming off the bench to argue is an automatic minor under Rule 39.2(iv). **The "when invited" clause is NHL-specific** — IIHF Rule 6.1 restricts *who* talks but does not require an invitation, and USA Hockey attaches the privilege to any one of the three designated players.
+7. **Simply disputing a ruling is a minor penalty** (NHL Rule 39.2(i)), and persistence escalates to a misconduct and then a game misconduct. Arguing has essentially never reversed a call.
+8. **When a teammate is struggling, keep giving them the puck**, and **never show frustration at a teammate on the ice.** Cutting someone out is the most damaging reaction available; visible frustration advertises your weak point to the opposition and costs you two seconds of backcheck. Deal with it after the game, about one specific play, once.
+9. **Most leadership on a team has no letter on the jersey.** Being first dressed, talking on the ice, welcoming new players and not sulking after a bad shift require no seniority and no permission — and the fastest way to be accepted on a new team is **reliability, not skill**.
+10. **When someone is down and not getting up, stop playing, wave for the bench and the officials — and if it is a head or neck injury, do not move them.** Kneel next to them, keep them still and calm, and wait for whoever is trained. Assume a possible spinal injury in any head injury. This is the one convention on the list where getting it wrong has permanent consequences — see [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Conditioning and Recovery](conditioning_and_recovery.md).
+11. **"Non-check" does not mean "no contact."** Angling, physical engagement and holding established position are legal (USA Hockey Rule 604); overt hip, shoulder or forearm action to separate a player from the puck is not. **And almost everything in this document except the cited rules is convention** — watch what the most respected players on your own team do, and copy that.
+
+---
+
+*Sources — retrieved 27 July 2026:*
+
+*Rules — captains, officials and conduct: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 3 Benches; Rule 6 Captain and Alternate Captains; Rule 8 Injured Players; Rule 10 Sticks; Rule 16 Minor Penalties; Rule 24 Penalty Shot; Rule 39 Abuse of Officials; Rule 40 Physical Abuse of Officials; Rule 69 Interference on the Goalkeeper; Rule 70 Leaving the Bench; Rule 71 Premature Substitution; Rule 74 Too Many Men on the Ice; Rule 75 Unsportsmanlike Conduct; Rule 82 Line Changes) · [IIHF Official Rule Book 2025/26](https://www.iihf.com/en/statichub/8674/rules) (Rule 6 Captain and Alternate Captains — verified against the rulebook text: **no "when invited" clause**; one captain and no more than two alternates; no goalkeeper as captain or alternate) · [USA Hockey Official Playing Rules 2025-29](https://www.usahockeyrulebook.com/) (Rule 202 Captain of Team — **"no goalkeepers shall be entitled to exercise the privileges of Captain"**; Rule 204(a) Playing Lineup and Substitution — **five seconds to each team**, not the NHL's 5/8 split; Rule 604 Body Checking; Competitive Contact definitions and Standard of Play)*
+
+*Handshake line and officials' authority: [USA Hockey Official Rules and Casebook 2025-29](https://www.usahockeyrulebook.com/), Casebook — Officials, Situation 2 (rule reference 502(a))*
+
+*Mercy rule: [CARHA Hockey Official Rule Book, printed 2020 (PDF)](https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf) — Section Seven (Tournament General Rules), item 16, quoted from the rulebook text*
+
+*Bill Durnan and the goaltender-captain rule: [NHL.com — Dave Stubbs, "Durnan's greatness for Canadiens recalled 60 years after Hall induction", 29 August 2024](https://www.nhl.com/news/bill-durnan-hall-of-fame-career-for-montreal) — source for the 1948-49 rulebook wording and for Durnan taking the C in the latter half of 1947-48. *(Two notes on this citation: the headline is as given above — "Durnan had Hall of Fame career for Canadiens", which is often seen attached to it, is the URL slug rendered as prose rather than the article's headline; and **Durnan's own quotation about chasing referees is not Stubbs's** — it is from Stan Fischler, *Heroes and History* (1994), which Stubbs quotes and credits.)* · [Hockey-Reference — 1947-48 Montreal Canadiens](https://www.hockey-reference.com/teams/MTL/1948.html) — "Captain: Toe Blake, Bill Durnan" · [NHL Records — Historical Rule Changes](https://records.nhl.com/history/historical-rule-changes) — checked and found to contain **no 1948-49 entry at all** and no reference to goaltenders and the captaincy · [Hockey Hall of Fame — Bill Durnan](https://www.hhof.com/LegendsOfHockey/jsp/LegendsMember.jsp?mem=p196402&type=Player&page=bio&list=) — checked; does not mention the captaincy*
+
+*Captains, lines and the unwritten code: [Captain (ice hockey) — Wikipedia](https://en.wikipedia.org/wiki/Captain_(ice_hockey)) · [Line (ice hockey) — Wikipedia](https://en.wikipedia.org/wiki/Line_(ice_hockey)) · [Fighting in ice hockey — Wikipedia](https://en.wikipedia.org/wiki/Fighting_in_ice_hockey)*
+
+*Could not verify — stated as convention or informed opinion in the text, not as fact:*
+
+- *All dressing-room norms (arrival times of 45–60 minutes before a game and 20–30 before practice, dressing order, music conventions, leaving goalies alone) — these are widespread custom with no authoritative published source behind them.*
+- *Gate and door etiquette, and which bench door is "on" and which is "off" — NHL Rule 3.1 requires two uniform doors per bench but says nothing about their use.*
+- *Crease etiquette during stoppages — no rulebook provision exists; Rule 69 governs only interference during play.*
+- *Mercy or running-clock provisions: searched for in both the NHL and USA Hockey rulebooks and **not found**. One association's published version is now cited in the text (CARHA Hockey, Section Seven item 16), but it governs only CARHA play; thresholds vary everywhere else — check your own league.*
+- *"Coaches notice effort and positioning more than skill" — presented as coaching experience, not as a measured finding.*
+- *Regional variation in celebration and post-game customs — described from general knowledge; no published source documents it systematically.*
+- *The handshake line being **essentially a playoff custom in the NHL**, rather than a regular-season one — stated in the text from general knowledge of the league's practice. The USA Hockey Casebook citation above establishes only that the handshake is a "common practice" a referee may prohibit, not anything about NHL regular-season usage. No NHL source states it either way.*
+- *That ejection and suspension are the realistic expectation for fighting **under collegiate rules** — the IIHF wording is quoted from the rulebook, but no NCAA or U SPORTS rule text was consulted for the collegiate half of that sentence.*
+- ***The Bill Durnan origin story for the goaltender-captain ban.** Partly resolved. Durnan's 1947-48 Canadiens captaincy, his own account of chasing referees, and the rule's 1948-49 adoption are all now sourced in the text. **The causal link is not** — no authority ties the rule to Durnan, the NHL's historical rule-change record has no 1948-49 entry at all, and the Hockey Hall of Fame's Durnan biography does not mention the captaincy. Still labelled as folklore in the text, and correctly so.*
+- ***Where players sit on a bench.** Universal convention; no rulebook says anything about it. Labelled as convention in the text.*
