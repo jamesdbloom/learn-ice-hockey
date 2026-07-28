@@ -14,6 +14,16 @@ The vocabulary below is the most widely understood version of hockey's shared la
 
 ## A note on variation — read this before you learn the list
 
+```facts
+Convention: There is no official hockey vocabulary — calls vary by team, region, level and coach
+Action: Agree your list as a team at the start of the season and drill it in practice
+Key: A call only works if the receiver decodes it in under half a second
+Risk: A call the receiver has to translate is worse than silence — it costs them a beat
+Read: This is the North American vocabulary, and at the top level the shouted words appear to be English whatever the nationality
+Never: Assume your calls travel when you move between hockey cultures — ask
+Convention: Treat every daggered (†) entry as widely used but undocumented as a spoken call
+```
+
 **There is no official hockey vocabulary.** Calls vary by team, by region, by level and by coach. Two things follow from that.
 
 **First, agree your list as a team.** A call only works if the receiver decodes it in under half a second. If they have to translate, the call has failed — they would have been better off with silence, because at least silence doesn't cost them a beat. Coaches who set their calls at the start of the season and drill them in practice get calls that work in March; coaches who leave it to chance get five private languages.
@@ -27,6 +37,15 @@ The vocabulary below is the most widely understood version of hockey's shared la
 ---
 
 ## Why verbal communication wins games
+
+```facts
+Key: The puck carrier is the least informed player on the ice — the forechecker closing from behind is where they cannot look
+Action: Say what you can see; the information costs you nothing and is useless sitting in your eyes
+Goal: Turn a blind decision into an informed one — a guess in the defensive zone is how goals get scored
+Priority: Call before the puck arrives — the same call as it arrives just startles the receiver
+Mindset: The loudest team looks like the more skilled team, and most of that "chemistry" is information
+Key: It is the cheapest improvement available to a team — no fitness, no skill development, no ice time
+```
 
 The mechanism is simple and it is worth understanding, because it tells you when to talk.
 
@@ -45,6 +64,17 @@ The mechanism is simple and it is worth understanding, because it tells you when
 Each entry gives the word, who says it, what it means, and what you do when you hear it.
 
 ### Pressure warnings
+
+```facts
+Action: Call the pressure the moment you see it — the carrier almost never can
+Action: On "man on", stop trying to make a play; protect the puck and get rid of it — rim, chip off the glass, or a short pass
+Never: Take that contact with your back to the boards — skates parallel to the wall, forearm and hip, head up, chin off your chest
+Read: One forechecker can be beaten with a reverse or a quick turn; two means you are being sealed and the puck has to leave
+Key: "Time" is the mirror of "man on" and just as valuable — fear of pressure that is not there throws pucks away
+Action: On "feet" or "under", look down, kick it to your stick and reset
+Never: Use "heads" to mean anything tactical — it means a puck or stick is in the air, so turn away and cover up
+Convention: "Wheel" is the documented call for skating it yourself; keep "turn" only if your team already agrees what it means
+```
 
 These are the highest-value calls in hockey and the ones most often missed. All of them are said by whoever can see the pressure, which is almost never the puck carrier.
 
@@ -69,6 +99,18 @@ These are the highest-value calls in hockey and the ones most often missed. All 
   Some teams use **"turn"** † for the same instruction, or simply use "time" and let the retriever decide. "Wheel" is the documented one and the one to standardise on; keep "turn" only if your team already uses it and everybody agrees what it means.
 
 ### Puck direction
+
+```facts
+Action: Only call a direction you can genuinely see, and be prepared to be the target
+Never: Send "over" or "D-to-D" through the front of your own net — go behind the goal line, because an interception there is point-blank
+Key: A rim goes onward around the boards with the flow, a reverse goes back against it — a rim beats a forechecker sealing you in, a reverse one who has over-run you
+Technique: Keep a rim hard and high on the glass — a soft rim is a turnover with extra steps
+Rule: Shooting the puck directly out of play from your defending zone is a two-minute delay of game (NHL Rule 63.2(iii)); over the glass behind the bench still counts
+Rule: After your own icing your line cannot change and your team cannot take a timeout under NHL and IIHF rules (81.4, 87.1) — USA Hockey blocks neither
+Read: "Ice it" is normal on the kill and expensive at even strength — the shorthanded exemption is removed by Rule 81.6 and restricted by classification under USA Hockey Rule 624(b)(1)
+Rule: A puck dumped wide has to be retrieved by a defenceman, because the goalie may only play it behind the goal line inside the trapezoid under NHL and IIHF rules
+Convention: "Eat it" carries two unverified meanings — say "eat the puck" for the board battle and something else for the clock
+```
 
 These tell the carrier where to put the puck. Because they arrive as instructions, they carry an obligation: only make them when you can genuinely see the option, and be prepared to be the target.
 
@@ -96,6 +138,17 @@ These tell the carrier where to put the puck. Because they arrive as instruction
 
 ### Support and availability
 
+```facts
+Goal: Tell the carrier you exist and where you are — without a voice you are not an option
+Action: On "here", look to the voice even if you do not pass; you now know there is an outlet on that side
+Read: Judge "middle" by zone — the highest-value place to move the puck going forward, the most dangerous in your own end, where it has to be certain
+Risk: A cross-ice pass in your own zone is the highest-risk pass in hockey — weigh "far side", do not take it automatically
+Rule: A receiver already across with both skates is offside; one skate on or behind keeps them onside (NHL Rule 83.1)
+Rule: A skate in the air over the neutral zone counts as onside under NHL and IIHF rules, but not under USA Hockey, whose Rule 630(a) requires skate contact
+Convention: "All alone" means no support *and* outnumbered on the published definition, but some teams use it for the support half only — agree which yours means
+Never: Attack the defence alone when you hear it — slow down, protect the puck, or chip it in and wait for help
+```
+
 These tell the carrier that you exist and where you are. The carrier's head is often down; without a voice, you are not an option.
 
 - **"Here"** — *Said by any open teammate.* The simplest call in hockey and the one most under-used. **If you hear it:** look to the voice. Even if you don't pass, you now know there is an outlet on that side.
@@ -120,6 +173,17 @@ These tell the carrier that you exist and where you are. The carrier's head is o
 
 ### Danger and coverage
 
+```facts
+Action: On "back door", the nearest player takes the unmarked opponent at the far post immediately
+Key: The player who can see the back door is almost never the one who can cover it — that is why the call exists
+Action: On "switch", take the nearer opponent, and answer it — a switch called and not acknowledged is worse than no switch at all
+Convention: "Sag" and "collapse" are low zone collapse language — meaningless under man-on-man, above the dots only under a hybrid; find out which your team plays
+Priority: On "clear", the nearest player gets the loose puck out of the high-danger area — do not stickhandle
+Action: On "screen", move out of the sightline yourself, or box the screener out with hips and back and tie up or lift their stick
+Rule: A two-handed shove on the shaft to move a screener is cross-checking, a minor under NHL Rule 59.2, and the net-front infraction officials are told to watch for
+Rule: Screening from outside the crease without contact is not a penalty — Rule 69.1 can void a goal afterwards, but it is no whistle in the moment
+```
+
 These are defensive-zone calls. They are the ones teams stop making when they get tired, and the ones whose absence shows up directly on the scoresheet.
 
 - **"Back door"** — *Said by anyone, most often the goalie or the weak-side player.* There is an unmarked opponent at the far post. **If you hear it:** the nearest player takes them, immediately. This is the highest-danger unmarked position in hockey and the call exists because the person who can see it is almost never the person who can cover it.
@@ -138,6 +202,17 @@ These are defensive-zone calls. They are the ones teams stop making when they ge
 
 ### Rush and transition
 
+```facts
+Action: On "odd man", the defenders stop thinking about the puck and start thinking about numbers
+Convention: Published call lists use the short numeric forms — "Two", "One" — and short wins at speed
+Technique: Defending a two-on-one, take away the pass and give up the shot — stick flat in the passing lane, and do not slide until the pass is released
+Key: The defenceman commits to the pass and the goalie to the shooter — it only works if both say out loud which half is theirs
+Action: On "backcheck", turn and sprint first and look second; puck-watching while drifting backwards opens the middle lane
+Action: On "pick him up", get on the defensive side of the attacker — between them and your net, not behind their shoulder
+Convention: Who owns which lane on a backcheck is a coaching choice — centre in the middle, first man back in the middle, or man-on-man from the puck outward; find out which your team plays
+Key: Under every variant somebody owns the middle and nobody assumes it is somebody else
+```
+
 The rush is where communication most often fails, because everyone is skating flat out and nobody wants to be the one who spoke wrongly.
 
 - **"Odd man"** †— *Said by a backchecker or the goalie.* They have more attackers than we have defenders. **If you hear it:** the defenders stop thinking about the puck and start thinking about numbers. Full detail in [Defending the Rush](defending_the_rush.md).
@@ -151,6 +226,17 @@ The rush is where communication most often fails, because everyone is skating fl
 - **"Pick him up" / "Take the middle"** †— *Said by a defenceman to an arriving backchecker, or between backcheckers.* There is an unmarked attacker and you are the closest. **If you hear it:** get on the defensive side of them — between them and your net — not behind their shoulder. **Who owns which lane on a backcheck is a coaching choice, not a law.** The most common assignment is that the centre owns the middle lane and the wingers own the two outside lanes; other teams use **first man back takes the middle** regardless of position, and others pick up **man-on-man from the puck outward**. [Defending the Rush](defending_the_rush.md) is the authority here and sets out all three. **Find out which your team plays** — these calls exist precisely to resolve the cases where players arrive in the wrong order, and under every variant the two constants are that somebody owns the middle and nobody assumes it is somebody else.
 
 ### Bench and line changes
+
+```facts
+Action: On "change", go as a group
+Never: Change during a defensive-zone scramble, or when you are the player caught deepest
+Never: Use "last change" or "last man" to mean a completed change — both already mean something else and will get you the wrong reaction
+Rule: The home team's last change (Rule 82.1) is lost after its own icing and kept after the visitors' (Rules 82.1, 81.4)
+Rule: A change is legal while the retiring player is within five feet of the bench and out of the play (Rule 74.1) — the offence is joining the play too early, not sharing a seat (Rule 74.2)
+Rule: After your own icing whoever is on the ice stays — no line change (82.1) and no timeout (87.1)
+Rule: Rule 82.1 allows exactly three substitutions there — a pulled goalkeeper, an injured player, or a penalty affecting on-ice strength; "he's gassed" is not on the list
+Action: On "stay", finish the shift — a tired player in position beats a fresh player arriving late
+```
 
 Changing on the fly is one of the most dangerous moments in a hockey game and it is coordinated almost entirely by voice.
 
@@ -172,6 +258,16 @@ Rule 82.1 allows exactly **three** exceptions, and they are narrow: you may subs
 
 ### Faceoffs
 
+```facts
+Action: The centre tells the other four skaters the play before lining up — an actual sentence, while the linesman is still skating in
+Priority: Keep the menu tiny — two or three plays everyone knows cold beat ten nobody remembers
+Action: Name a fallback for a scramble, usually "everyone takes their man", so a lost draw does not become a lost coverage
+Rule: A winger creeping inside the circle before the drop gets the *centre* thrown out of the dot, not the winger (NHL Rule 76.2)
+Rule: A second violation by the same team on the same draw is a bench minor, so the replacement has to be clean (NHL Rule 76.7)
+Action: Agree in advance which winger steps in when the centre is tossed, and that they are looking for a safe tie-up rather than anything clever
+Convention: Use hand signals here — you can be seen but not heard, and the opposition can hear you — provided they were agreed in the dressing room
+```
+
 Faceoff communication happens before the puck drops, when nobody is moving and everybody can hear. That makes it the easiest communication in hockey and the most commonly skipped.
 
 - **The centre tells the four other skaters what the play is, before lining up.** Not a code word shouted at the last second — an actual sentence said while the linesman is still skating in. Coaches who run set plays off the draw are unanimous that the plays only work when every player knows their assignment, and the pre-draw window is when that gets established.
@@ -187,6 +283,16 @@ Faceoff communication happens before the puck drops, when nobody is moving and e
 ---
 
 ## Who owns which call
+
+```facts
+Key: The player who can see it makes the call — not the captain, not the defenceman, not the loudest
+Action: Let the goaltender lead the defensive zone — they face the play, they are stationary, and nothing is behind them
+Action: The defencemen call the breakout — "up", "over", "reverse" and "wheel" are called *to* the retriever, not chosen by them
+Action: The centre announces the low-zone rotation, because the centre leaving is the one who knows it is happening
+Action: Backcheckers call their own pickups, so the defencemen can commit to the puck instead of hedging
+Action: The bench calls changes and warns about what the on-ice players cannot see
+Convention: Where two people can see it, both call it — the failure mode you are guarding against is silence, not duplication
+```
 
 The organising principle is one line long: **the player who can see it makes the call.** Not the captain, not the defenceman, not the loudest — whoever has the information. That means an eighteen-year-old rookie shouting at a veteran is correct behaviour, and a team where that feels wrong will concede goals for it.
 
@@ -207,6 +313,17 @@ On top of that principle sit a few standing responsibilities, which exist becaus
 ---
 
 ## The goaltender's calls
+
+```facts
+Key: The goalie's view is exactly the view your defencemen lack — the whole play, permanently, for free
+Action: Give the retriever "time" or "man on" first, and add the count with "one on you" or "two on you"
+Options: "Up" sends it up the strong side, "over" switches it behind the net, "leave it" parks it behind the net for a teammate wheeling through
+Convention: Prefer "leave it" to "set" — two syllables are easier to tell from "up" and "over" at speed in a noisy rink
+Key: A goalie shouting "shot" means they have the shooter and you take the pass — stay in the passing lane, it is not a warning that a shot is coming
+Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid — markings Rule 1.8, two-minute delay of game under Rules 27.8 and 63.2(viii)
+Read: Most rec, beer-league and youth associations use no trapezoid, and there your goalie becomes a genuine third puck-handler behind the net
+Action: Answer your goalie — a call that gets no response gets made quieter next time, and then not at all
+```
 
 Your goalie is the best-positioned communicator on the ice and most teams waste them.
 
@@ -233,6 +350,17 @@ The standard goalie vocabulary:
 
 ## How to call well
 
+```facts
+Priority: Early beats accurate — a slightly wrong call before the puck arrives beats a perfect one as it does
+Priority: Short beats specific — one or two syllables; if your call needs a comma, it is too long
+Priority: Loud beats clever — a perfect call at conversational volume did not happen, and that is the commonest reason a call fails
+Action: Use names for teammates and numbers for opponents — "Sam, man on" gets acted on, "man on" gets four heads turning
+Action: Call while the puck is travelling; once it is on their blade they are already committed
+Never: Say "time" unless you are sure — a false "time" puts a teammate into contact unbraced, and they will stop trusting you
+Convention: One word, one meaning, all season, across the whole team
+Action: Answer calls — "yep", "got it", a raised glove; an unacknowledged switch is two players hoping
+```
+
 The technique of calling matters as much as the vocabulary.
 
 - **Early beats accurate.** A slightly wrong call made before the puck arrives is more useful than a perfect one made as it does. The receiver's decision is already forming; you are trying to inform it, not correct it afterwards.
@@ -255,6 +383,16 @@ The technique of calling matters as much as the vocabulary.
 
 ## Non-verbal communication
 
+```facts
+Technique: Put your blade flat on the ice in front of your body as a target — a stick held in the air says you are not ready
+Risk: All stick taps sound alike, so an opponent can tap and induce a blind pass — use the tap to reinforce a call, never to replace one
+Action: Make eye contact before the pass — a tenth of a second confirms they have seen you and are ready
+Technique: Look a defender off by staring deliberately at one option and passing to another; defenders read heads and eyes as a shortcut
+Action: Point your glove or stick at the space you want a teammate to take, then put the puck there
+Convention: Signal faceoff plays and power-play entries rather than speaking them, but only with signals agreed off the ice — never invent one mid-game
+Key: Your feet and hips tell a teammate what you are about to do — hips open to the middle says inside, square to the boards says wide
+```
+
 Rinks are loud and sometimes a voice will not carry. Non-verbal cues are the backup, and for some things they are better than words because the opposition can hear you shout.
 
 - **Stick blade on the ice as a target.** The most basic and most reliable one. A blade flat on the ice, out in front of your body, says "pass it here" and gives the passer something to aim at. A stick held in the air says the opposite — that you are not ready. See [Passing and Receiving](passing_and_receiving.md).
@@ -274,6 +412,17 @@ Rinks are loud and sometimes a voice will not carry. Non-verbal cues are the bac
 ---
 
 ## Building the habit
+
+```facts
+Mindset: The obstacle is social, not tactical — being too self-conscious to shout is universal, and it goes away in about three sessions
+Action: Talk in every drill, including the ones where it feels stupid; treat a missing call the way you would treat a missed backcheck
+Priority: Start with "man on" and "time" and get those automatic before adding anything
+Action: Make one player responsible for volume each drill, rotating the job so the quiet players cannot hide behind the loud ones
+Action: Name the calls that worked, out loud, afterwards — "that 'over' saved us a turnover"
+Action: Agree the vocabulary in the dressing room at the start of the season, not on the ice in game three
+Key: Write down one word per meaning — one word for two things is the classic failure, as with "behind you"
+Action: Keep the list to ten or fifteen calls, include the goalie in the conversation, and revisit it about a month in
+```
 
 Almost nobody talks naturally on the ice at first. The obstacle is not tactical, it is social: **most players are simply too self-conscious to shout.** Newer players in particular are worried about being wrong, about being loud, about being the one person making noise. That is normal, it is universal, and it goes away in about three sessions of deliberate practice.
 

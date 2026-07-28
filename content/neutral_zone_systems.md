@@ -7,6 +7,12 @@
 
 ## Overview
 
+```facts
+Key: The team that controls the neutral zone decides what kind of game gets played
+Risk: A turnover in the middle third does the most damage relative to the risk you thought you were taking
+Goal: Control it and you choose whether the night is a track meet of rushes or a grinding slog — lose it and your opponent chooses for you
+```
+
 The **neutral zone** is the middle third of the ice, between the two blue lines. It is where possession changes hands most often, where odd-man rushes are manufactured, and where a turnover does the most damage relative to the risk you thought you were taking. This document covers how teams defend it, how teams attack through it, and how to read which is happening while you are carrying the puck toward it.
 
 The core idea, and the thing to hold onto if you remember nothing else: **the team that controls the neutral zone decides what kind of game gets played.** Control it and you choose whether the night is a track meet of rushes or a grinding, dump-and-forecheck slog. Lose it and your opponent chooses for you.
@@ -14,6 +20,15 @@ The core idea, and the thing to hold onto if you remember nothing else: **the te
 ---
 
 ## What the neutral zone actually is
+
+```facts
+Key: A strong skater crosses the neutral zone in about three seconds — that is the entire window for every decision in this document
+Rule: Offside needs both an attacker's skates completely over the line before the puck; an airborne trail skate stays onside under NHL and IIHF, but not under USA Hockey 630(a), which requires skate contact
+Rule: The centre red line is still the icing line — the shorthanded exemption carries carve-outs (NHL 81.6, USA Hockey 624(b)(1)); see Special Teams, which owns it
+Rule: The two-line pass is gone — NHL Rule 83 (Off-side) has no two-line provision, and neither do the IIHF, USA Hockey or CARHA books (CARHA Rule 73(d))
+Never: Rebuild your attack around a local two-line pass rule unless somebody shows it to you in writing
+Read: On a shorter sheet every structure here collapses faster — passive traps work better on small ice, aggressive pressure on big ice
+```
 
 **The neutral zone** is the area between the two blue lines. On a regulation NHL sheet (200 feet by 85 feet) the blue lines sit 75 feet from each end board, which leaves **50 feet of neutral zone**. Fifty feet is not much. A strong skater covers it in about three seconds. That is the entire window in which every decision in this document has to be made.
 
@@ -30,6 +45,13 @@ Three lines govern what happens there, and you need all three in your head at on
 ---
 
 ## Why the neutral zone decides games
+
+```facts
+Risk: A turnover at centre ice is the most expensive kind — it is the one that becomes a 2-on-1
+Key: Odd-man rushes are manufactured in the middle third, not in the offensive zone
+Read: How a defending team manages its blue line shapes the opponent's offence more than the opponent's own entry strategy does
+Goal: Win the neutral zone and you choose whether the game is rushes or a grind — neither is better, but the choice must be yours
+```
 
 Four reasons, and they compound.
 
@@ -59,6 +81,13 @@ Four reasons, and they compound.
 
 ### How to read the numbers
 
+```facts
+Convention: Structures are named from the puck outward — the first number is the layer closest to the opponent's net
+Key: A 1-2-2 is one pressuring, two across the middle, two at the back; a 1-4 is one pressuring and four in a line behind
+Never: Read a neutral zone number as its offensive-zone twin — a 2-1-2 forecheck inside their end is a separate animal
+Never: Confuse the neutral zone 1-3-1 with the power play 1-3-1 — different zone, different shape, same three digits
+```
+
 Neutral zone structures are named from the **puck outward** — the first number is the layer closest to the opponent's net, the last number is the layer closest to your own. A **1-2-2** is one player pressuring, two across the middle, two at the back. A **1-4** is one pressuring and four in a line behind.
 
 Two traps for the unwary:
@@ -76,6 +105,15 @@ Two traps for the unwary:
 
 ### 1-2-2 — the classic containment structure
 
+```facts
+Position: F1 pressures near their goal line or hash marks, F2 and F3 sit across the middle, both defencemen hold the back layer around your own blue line
+Goal: F1 takes the middle away and forces the carrier to one side — the turnover is a bonus, dictating the side is the job
+Action: F2 steps up on the winger receiving on the strong-side wall; F3 holds the middle and weak side; D2 stays home as the safety valve
+Risk: D1 stepping up on the wall is the most dangerous decision in the structure
+Countered by: Quick D-to-D behind the net to change the side, a middle-lane forward supporting low under F2 and F3, and simple patience
+Convention: Coaching material calls it the most widely played neutral zone structure, but nobody publishes a count — consensus, not a verified fact
+```
+
 **The shape.** One forward (F1) pressures near the opponent's goal line or hash marks. Two forwards (F2 and F3) sit across the middle of the neutral zone, usually near the opposing blue line or between it and the red line. Two defencemen hold the back layer, around your own blue line.
 
 **The roles.**
@@ -92,6 +130,14 @@ Two traps for the unwary:
 **How it is beaten.** Quick D-to-D behind the net to change the side before F1 can re-establish the angle; a middle-lane forward supporting low to receive under F2 and F3; and simple patience — the 1-2-2 rewards you for panicking and punishes you very little for waiting.
 
 ### The 1-2-2 trap ("the neutral zone trap")
+
+```facts
+Position: A 1-2-2 with the layers dropped back — F1 high and splitting the ice, F2 and F3 at or just inside the red line, the defence on your own blue line
+Goal: Do not stop the attack — funnel it to a wall and kill it at the red line, with their forwards ahead of the puck and behind the play
+Read: Layers up near their blue line with F1 actually closing is containment; layers back at the red line with F1 gliding is a trap
+Convention: The pure passive trap is no longer a viable full-time system at high levels — it survives as a situational tool and as DNA inside newer structures
+Countered by: Quick puck movement, the boards, the stretch pass behind the wall, and a willingness to dump it in rather than force a low-percentage entry
+```
 
 **What makes it a trap rather than a containment.** The trap is a 1-2-2 with the layers dropped back and the intent changed. Instead of F1 pressuring deep, F1 sits high in the opponent's zone or at their blue line, still splitting the ice in half, and **the entire structure retreats to defend the centre red line rather than the opponent's blue line.** F2 and F3 sit at or just inside the red line on the walls. The defence holds **your own** blue line.
 
@@ -119,6 +165,16 @@ One further correction to the usual telling: the Devils were not even the first 
 **How it is beaten.** See the dedicated section on [beating a trap](#beating-a-trap) below. Short version: quick puck movement, the boards, the stretch pass behind the wall, and the willingness to just dump it in rather than force a low-percentage entry.
 
 ### 1-3-1 — the modern standard
+
+```facts
+Position: F1 pressures, three players stand spread in a line across the ice, one defenceman sits behind them as the last man
+Convention: Conventionally F2 and F3 on the walls with a defenceman in the middle — but never three forwards across, because F1 is already one of your three
+Key: A 1-3-1 does not try to take the puck from you — it offers you the puck on terms you will not like
+Action: The three across hold their lanes and slide as a unit; their job is not to attack the puck but to leave no lane through them
+Goal: Deny the middle lane and concede no odd-man rushes — the back defenceman stays uncommitted and retrieves every dumped puck
+Risk: One of the three leaving his lane opens a seam instantly, and the single back defenceman cannot cover two lanes
+Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase past it, or quick lateral movement — a sliding wall has gaps
+```
 
 **The shape.** One forward (F1) pressures. **Three players stand spread across the ice in a line** — conventionally **F2 and F3 on the walls with one defenceman in the middle**, and the middle man is the read-maker, because he is the one who decides which way the whole line slides. One defenceman sits behind them as the last man. (Some coaches put a forward in the middle and a defenceman on a wall; what does not happen is three forwards across, because F1 is already one of your three.)
 

@@ -15,6 +15,14 @@ If you read one hockey IQ document, read this one first. It is the frame that ma
 
 ## 1. The central idea: skill is what you do with time and space
 
+```facts
+Key: Skill is what you spend; time and space are what you earn
+Goal: Create time and space with every move — a move that beats nobody and opens nothing is a habit, not a skill
+Action: Grade yourself on the room you had when the puck came to you, not on your hands
+Action: Look over your shoulder before you receive, turn away from pressure, put your stick in a passing lane
+Mindset: Hockey IQ is a learnable habit, not a mysterious gift — and it is learnable faster than skating
+```
+
 Here is the reframe. **Skill is not what makes players good. Skill is what they spend.** Time and space are what they earn.
 
 Take two players with genuinely identical hands, identical shot, identical top speed. Put them on the same line. One consistently produces; one consistently doesn't. The difference is almost never the hands. It is that the first player receives the puck with a metre and a half of clean ice and a head that is already up, and the second player receives it with a stick on their hip and no idea what is behind them. Same skill. Completely different result, because one of them had something to spend it on and the other didn't.
@@ -30,6 +38,15 @@ This has three practical consequences.
 ---
 
 ## 2. What "time" actually means
+
+```facts
+Key: Your time is the distance to the nearest threatening defender divided by their closing speed — a teaching model, not a measured quantity
+Read: Closing speed, not distance — twenty feet closing hard is less time than three feet travelling away
+Read: The hips, not the stick — a player accelerates where the hips face
+Read: Feet or glide — a defender in full crossovers is committed and can be beaten by going the other way
+Read: How many are arriving — one closing opponent you solve with a move, two you solve by getting rid of the puck
+Action: Reverse the puck back against the flow into the ice an over-skated forechecker has just vacated
+```
 
 Beginners hear "you've got time" and picture seconds on a clock. That is the wrong model, and it will get you hit.
 
@@ -57,6 +74,15 @@ Six of these seven tools require no skating speed and no hands. That is the poin
 
 ### Deception — defenders react to what you show them
 
+```facts
+Key: Space is created in the defender's mind before it exists on the ice — show them the wrong option
+Options: Fake shot, look-off, head and shoulder fake, or skating at one shoulder to open the other
+Technique: Fake shot — weight onto the back leg, shoulder dropped, stick starting back; it only sells if you sometimes really shoot from there
+Technique: Look-off — head and eyes hard to one option, then deliver to another, and only on a pass you have already surveyed
+Read: A deceived defender pivots their hips, reaches with the stick or shifts weight — every one is a positional loss you can spend
+Never: Fake when you have no time — two closing forecheckers and your back to the boards means the simple play
+```
+
 Space is created in the defender's mind before it exists on the ice. A defender cannot cover every option, so they cover the option they believe is coming. **Show them the wrong one.**
 
 - **The fake shot.** Load your weight onto the back leg, drop the shoulder, and start the stick back. A shot-blocking defender drops a knee or turns a hip; a goalie sets. Both of them have just stopped moving laterally. Now the pass across, or the step around, is open. The fake only works if it would have been a real shot — if you never actually shoot from there, nobody buys it. **Deception is credit, and you build it by occasionally paying up.**
@@ -69,6 +95,16 @@ The [Edge Ice Academy](https://www.edgeiceacademy.com/article/how-deception-crea
 **One warning.** Deception costs you a beat. If you have no time — two closing forecheckers, back to the boards — fake nothing and make the simple play. Fakes are a luxury good, purchased with time you already have.
 
 ### Delay and curl-back — turning away from pressure
+
+```facts
+Action: Turn away from the pressure, curl back, and hold the puck for a second or two while your support arrives
+Position: The offensive zone and the offensive blue line area — including a zone entry where you are first man in with no support
+Technique: A tight turn with the puck on your outside hip, body between puck and defender, feet still moving
+Goal: Synchronise the play — a forward one stride late becomes a second attacker if you give him a second and a half
+Read: Somebody has to take the depth role for the delay to work; then the defence must step or fall back, and either answer creates something
+Never: Delay in your own defensive zone, and never delay when you already have numbers
+Mindset: Be willing to look, for a second, like you are going backwards
+```
 
 **This is the most valuable under-used skill in amateur hockey.** It is also the least natural, because every instinct says "go forward."
 
@@ -86,6 +122,15 @@ The physical skill is a tight turn with the puck on your outside hip, body betwe
 
 ### Changing pace — why a change of speed beats top speed
 
+```facts
+Action: Glide, look, explode — the glide buys the scan, the scan tells you where to go, the explosion goes there
+Key: Separation comes from the difference between your speed and theirs, not from your absolute number
+Technique: Two or three hard crossovers out of a glide produce more separation than ten strides of continuous hard skating
+Read: The moment a closing defender changes speed is the moment they are least able to change direction
+Never: Skate hard the whole shift — you never have a gear left and you never have your head up
+Action: Use it off the puck too — drift, let your check relax, then break
+```
+
 Defenders don't defend speed, they defend *rhythm*. A player skating hard in a straight line at a constant velocity is trivially easy to match, because matching only requires the defender to pick a speed and hold it.
 
 **Deceleration is a weapon.** Glide, and the defender closing on you has to make a decision: close harder and risk you going around them, or ease off and give you room. Whatever they choose, the moment they change speed is the moment they are least able to change direction.
@@ -98,6 +143,15 @@ This applies without the puck too, and there it is worth more. A winger who drif
 
 ### Using the net and the boards
 
+```facts
+Position: Behind your opponents' net — attackable from only two sides, with the whole offensive zone laid out in front of you
+Key: Nothing behind the goal line is a scoring chance against you, so a mistake there is cheap
+Action: Behind your own net you are pivoting, not surveying — one look, one decision, move it
+Technique: Face the wall with the puck below your body and your back to the ice, so a defender can only come from one 180-degree arc
+Goal: Use wall possession to survive pressure and wait for support, not to create offence by itself
+Risk: The boards remove half your options too
+```
+
 Two structures on the ice cannot be skated through, and you should treat both as teammates.
 
 **Behind the net is the safest pivot in hockey.** Standing behind your opponents' net with the puck, you can only be attacked from two sides, you can see the entire offensive zone laid out in front of you, and any defender who commits to one side has surrendered the other. Nothing behind the goal line is a scoring chance against you, so a mistake there is cheap. It is the one place on the ice where you can genuinely stop, lift your head, and choose.
@@ -109,6 +163,16 @@ The same is *not* true behind your own net, where a turnover is a wraparound or 
 The trade-off is honest: the boards remove half your options too. Wall possession is for surviving pressure and waiting for support, not for creating offence by itself.
 
 ### Attacking into space, not at people
+
+```facts
+Never: Skate directly at a defender — you hand them a stationary problem they can win by doing nothing
+Action: Attack the seam, the gap between two defenders that neither has clearly claimed
+Goal: Force a communication and a decision between two players rather than a reaction from one
+Action: On a rush, drive the ice between the two defencemen rather than at the outside shoulder of one
+Action: On a zone entry, put the puck into the space behind the defender rather than at the defender
+Targets: The space your teammate is skating into, never their current blade — a stationary stick freezes them
+Action: In the offensive zone, move to the empty ice rather than to the puck
+```
 
 The single most common waste of an odd-man rush is skating directly at a defender. You have handed them a stationary problem and made their job a coin-flip they can win by doing nothing.
 
@@ -123,6 +187,13 @@ Same idea across the whole sheet:
 
 ### Scanning before you receive
 
+```facts
+Key: Knowing your out before the puck arrives buys you more time than any move you will ever learn
+Action: Shoulder-check as the pass is being made, not after — two looks are better than one
+Read: Your clock starts the instant the puck touches your blade, so arrive already decided
+Technique: Catch the puck with your hands and your peripheral vision, not by staring at it
+```
+
 **Knowing your out before the puck arrives buys you more time than any move you will ever learn.** This is not an exaggeration and it is not a nice-to-have.
 
 The mechanism: the time you have with the puck starts the instant it touches your blade. If you spend the first half-second of that finding out where everyone is, you have spent most of your budget on information you could have gathered for free while the puck was still in transit. A player who scanned before receiving starts their clock already decided, which effectively doubles the time they have.
@@ -132,6 +203,17 @@ The habit is a shoulder check as the pass is being made, not after. Two is bette
 This has its own document — [Scanning and Anticipation](scanning_and_anticipation.md) — because it is the highest-leverage habit in the game.
 
 ### Getting open
+
+```facts
+Action: Separate from your check with a change of direction, not a race — stop when they expect you to go, or cut across their momentum
+Read: Break when their head turns to the puck, and time it to the carrier's head coming up rather than to your own eagerness
+Action: If you are early, curl and come again rather than stand still waiting
+Action: Present a target — a stick on the ice in a clear lane, plus your voice, plus movement
+Rule: NHL Rule 56.1 — you are "allowed the ice he is standing on" and are not required to move to let an opponent proceed
+Rule: NHL Rule 56 and USA Hockey 625 — there is no legal pick on a skater; moving into an opponent's path without initially having body position is the two-minute minor
+Options: Space you got to first, a rub made while genuinely going somewhere yourself, or screening the goalie from outside the crease without contact
+Rule: NHL Rule 69.1 — positioning that impairs the goalkeeper's ability to move freely in the crease or defend the goal can void a goal with no contact at all
+```
 
 Space when you don't have the puck is space you have to manufacture, because nobody is going to hand it to you.
 
@@ -155,6 +237,14 @@ Everything above, run in reverse. Defending is the business of reducing someone 
 
 ### Gap control — the defenceman's version
 
+```facts
+Key: Gap is the distance between you and the puck carrier — the single biggest lever a defenceman has over an attacker's time
+Read: Watch the hips, not the puck — hips tell you where they are actually going
+Risk: A tight gap removes their time but puts space behind you, exactly where a chip-and-chase or a give-and-go wants to go
+Risk: A loose gap protects the space behind you but hands them a full head-up survey and a shot in stride
+Convention: Gap distances are a coaching starting point, not a law — take the numbers from Defending the Rush, which owns them
+```
+
 **Gap** is the distance between you and the puck carrier. Controlling it is the single biggest lever a defenceman has over how much time an attacker gets.
 
 The trade-off is symmetrical and there is no free option:
@@ -168,6 +258,13 @@ The read is the same one from section 2: **watch the hips, not the puck.** Hips 
 
 ### Angling — steering with your route, not your body
 
+```facts
+Action: Close on a curve that removes the middle of the ice, leaving the attacker only the option you want them to have
+Goal: Steer them to the boards — you are not chasing them and you are not hitting them
+Key: An angle is geometry, so it does not depend on you being faster; you arrive where they will be, on the side you chose
+Never: Learn the mechanics from this section — Body Contact and Battles owns route, closing speed, stick and finish
+```
+
 **Angling means taking a pursuit route that leaves the attacker only the option you want them to have.** You are not chasing them and you are not hitting them. You are closing on a curve that removes the middle of the ice, so that the only place left to go is the boards.
 
 Why it beats chasing, which is the reason it belongs in a document about time and space: a chase is a race you might lose, and if you lose it you are behind the play. An angle is geometry, and geometry does not depend on you being faster. You arrive at the point where they will be, on the side you chose — so you take their space away without ever having to win a foot race for it. It also works in every league, because steering somebody is not touching them.
@@ -176,6 +273,14 @@ Why it beats chasing, which is the reason it belongs in a document about time an
 
 ### The active stick — free space denial
 
+```facts
+Action: Point your stick at a lane or a threat, not resting on the ice between your feet
+Key: A blade placed in a lane before the pass prevents passes that are never even attempted
+Risk: A stick jabbed at the puck after the pass is a gamble that pulls you out of position when it fails
+Technique: One hand on the stick to extend reach when closing space, two hands in a battle or to lift a stick
+Technique: Keep the blade flat on the ice — a lane blocked at ankle height is blocked, a blade waving at hip height is not
+```
+
 **Putting your stick blade in a passing lane costs you nothing and removes an option from your opponent.** It is the highest return-on-effort action in defensive hockey and it is the first thing tired players stop doing.
 
 The principle: your stick should be pointed at a lane or a threat, not resting on the ice between your feet. A stick placed in a lane *before* the pass is made prevents passes that never even get attempted — the carrier looks, sees a blade, and looks elsewhere, which costs them time. A stick jabbed at the puck *after* the pass is a gamble that pulls you out of position when it fails.
@@ -183,6 +288,16 @@ The principle: your stick should be pointed at a lane or a threat, not resting o
 Practical detail: one hand on the stick to extend reach when you are closing space, two hands when you are in a battle or need to lift a stick. Keep the blade flat on the ice — a lane blocked at ankle height is blocked; a blade waving at hip height is not.
 
 ### Pressure with support — why lone pressure creates holes
+
+```facts
+Key: Lone pressure does not take space away, it moves it — behind you
+Action: Send pressure only with a second layer, positioned to take the puck if the first forces a rushed play and to cover the ice they left
+Convention: The house default here is a 2-1-2 forecheck and a low zone collapse — F1 pressures, F2 takes the first escape option, F3 holds the high middle
+Convention: F1/F2/F3 are roles defined by order of arrival, not by position — whoever gets there first is F1
+Options: A 1-2-2 holds two back and denies the neutral zone entirely; a 1-3-1 trap concedes more and denies harder
+Action: Find out what your team plays before your first shift, and go on the same trigger as everyone else
+Risk: If you go and your teammate doesn't, you have made a hole rather than closed one
+```
 
 Sending one player to pressure the puck, with nobody behind them, does not take space away. **It moves it.** The pressuring player vacates the ice they came from, and if they are beaten, that ice is now a clean lane and your team is a man short behind the puck.
 
@@ -193,6 +308,14 @@ This is a system question, so name your system. **The house default throughout i
 The point is not which is right. The point is that **if you go and your teammate doesn't, you have made a hole rather than closed one** — so find out what your team plays before your first shift, and go on the same trigger as everyone else. See [Forechecking Systems](forechecking_systems.md) and [Defensive Zone Coverage](defensive_zone_coverage.md).
 
 ### Take away the middle first
+
+```facts
+Priority: The middle before the outside, in every zone — the middle has more options radiating out of it
+Read: Shots from the slot go in at a far higher rate than shots from the wall, and a carrier in the middle can attack either side
+Action: When you are beaten and have to concede something, concede the outside — steer to the wall and defend the inside shoulder
+Key: For a defenceman at the offensive blue line, an attacker going around you on the outside is a manageable mistake; through you on the inside is a scoring chance
+Convention: A strong general principle rather than an absolute — some coaches ask for the wall taken away in specific spots, and some penalty kills overload one side, so ask
+```
 
 Not all space is equal, so don't defend it equally. **The middle of the ice is worth more than the outside**, in every zone, for the same reason throughout: the middle has more options radiating out of it.
 
@@ -205,6 +328,14 @@ So when you are beaten and have to concede something, **concede the outside.** S
 This is a strong general principle rather than an absolute — some coaches will ask their defencemen to take away the wall in specific spots, and some penalty-kill structures deliberately overload one side. Ask.
 
 ### Deny the reception, not the pass
+
+```facts
+Never: Lunge at the passing lane — passes are fast and you are guessing
+Action: Arrive as the puck does, on a route that puts you on the receiver with your stick on their blade or in their receiving lane
+Priority: Defend the receiver's next action, not the pass — take away their forward option and the pass gained them nothing
+Goal: The result of an interception without having to guess right, and without being out of position when you are wrong
+Key: A receiver forced to catch a puck while being closed on loses their scan — a whole second of blindness you created without touching anybody
+```
 
 You will spend a career trying to intercept passes and mostly failing, because passes are fast and you are guessing. There is a better version.
 
@@ -220,6 +351,17 @@ This is what "taking away time" concretely means. You are not preventing the pla
 ---
 
 ## 5. Where time and space live — a map of the ice
+
+```facts
+Position: Behind the net — no shot exists from there, so it is under-defended, and any defender who commits to one side gives you the other
+Position: The weak side — defences slide toward the puck, so the far side is always the last to be covered
+Position: The half-wall, the boards level with the faceoff dot — a wall on one side, sightlines to the whole zone, awkward for a defender to attack
+Position: The seams between two defenders, in any zone — space by ambiguity rather than by distance
+Action: With the puck, move it toward space; without the puck, move yourself toward where the space will be, usually the weak side
+Never: Plan to stickhandle in the slot — plan on arriving with no time, for one touch, a tip or a rebound
+Never: Treat the strong-side corner as a playmaking zone — win the battle, then move the puck out of it
+Never: Slow down in the middle of the neutral zone — cross it with speed or don't cross it with the puck
+```
 
 Learn this like a map, because it tells you where to go with the puck and where to go without it.
 
@@ -243,6 +385,18 @@ The practical translation: **with the puck, move it toward space** — behind th
 
 ## 6. How the rules create space
 
+```facts
+Rule: Offside — both skates must completely cross the blue line before the puck does; one skate on or behind keeps you onside (NHL Rule 83.1)
+Rule: A skate raised over the neutral zone is onside under NHL and IIHF rules, but offside under USA Hockey Rule 630(a), which requires skate contact
+Action: Drag a trail skate at the line instead of braking early — keeping the blade in contact is legal under all three rule sets
+Rule: Delayed offside is recoverable — all attackers clear and tag up (Rule 83.3(i) requires skate contact with the blue line by every one of them), then all may re-enter
+Rule: Rule 83.3 brings the whistle if an attacker touches the puck, attempts to gain a loose puck, forces the defending carrier deeper, or is about to make contact with him
+Rule: Hybrid icing (NHL 2013-14, IIHF 2014) — Rule 81.1 makes the determining factor "which player would first touch the puck", with the end-zone dot only the decision deadline; too close to call is icing
+Rule: Outside the trapezoid the goalie may not play the puck behind the goal line — dimensions from Rule 1.8, penalty under 27.8 and 63.2(viii), the sole exception being skate contact with the crease
+Action: Dump wide of the trapezoid so a defenceman must retrieve it with your forechecker arriving — worth much less in a league that has none, and most rec and youth associations have none
+Rule: Screening from outside the crease without contact is normally legal, but Rule 69.1 voids the goal if your positioning alone impairs the goalkeeper's ability to move freely or defend
+```
+
 The rulebook is not a list of things you may not do. It is a set of geometric constraints that manufacture space and stop teams from destroying it. Reading them this way makes them much easier to remember and much easier to exploit.
 
 **Offside prevents cherry-picking.** No attacker may enter the offensive zone ahead of the puck, so nobody can park behind the defence and wait. Without it, hockey would be two goalies and ten players standing at the far blue lines. **Both skates** must completely cross the blue line before the puck completely crosses it — one skate on or behind the line keeps you onside, and a skate raised in the air over the neutral zone counts as onside **under NHL and IIHF rules — but not under USA Hockey, where Rule 630(a) requires skate *contact* and a raised skate is offside**. **Space to exploit:** you can be well ahead of the puck and still legal, and most amateur players give away several feet of free attacking space by braking too early at the line. Drag a trail skate instead — keeping the blade in contact, which is legal under all three rule sets.
@@ -260,6 +414,17 @@ A **delayed offside** — linesman's arm up, no whistle yet — ends when **all*
 ---
 
 ## 7. How space changes with the score, the clock and the rink
+
+```facts
+Read: A team protecting a lead concedes the point and the wall and takes away the middle — take the space that is offered
+Never: Force the middle against a team protecting a lead; that is how you generate a counter-attack against yourself
+Action: Walk the line, shoot for tips and work below the goal line — pull them out of shape rather than through it
+Read: With the goalie pulled, six attackers create a genuine spare man and a lot of room at the blue line, and clearing options become worth an enormous amount
+Key: Fatigue and rink size move the same variable — closing speed; a tired player's effective gap is bigger than their actual one
+Read: "Olympic ice" is no longer a reliable synonym for wide ice — Beijing 2022 was played on the North American surface, so check the venue
+Action: On wide ice, more delay, more east-west, more patience before entries; on narrow ice, decide earlier and use the walls
+Action: Skate a warm-up lap and notice how far it is from the half-wall to the far dot — that number is your time budget
+```
 
 Space is not a constant. Four things move it.
 
@@ -283,6 +448,17 @@ On the narrow NHL sheet the opposite: space compresses, the walls are close, the
 ---
 
 ## 8. How to develop this
+
+```facts
+Action: Play small-area games — less space per player means more touches, more decisions per touch and less time to make each one
+Action: If your team doesn't run them, run them yourself — three-on-three in one zone, two nets, no offside, first to five
+Action: When you spectate, don't watch the puck — pick one player and watch only them for a full shift, including the twenty seconds they don't touch it
+Read: Watch a defenceman's gap from the moment the attacker gets the puck — most of it is decided before the attacker reaches the red line
+Action: After every shift, ask "did I have more time than I thought?" — the honest answer is almost always yes
+Key: Panic is the default state of an inexperienced player, and panic spends time you actually had
+Action: Get one more look before you receive, and when you don't know, take the turn away from pressure rather than the pass into it
+Mindset: Trust "time" when you hear it — a teammate or the goalie can see what you can't
+```
 
 Time and space is a trainable habit, not a personality trait. Three things move it fastest.
 

@@ -6,6 +6,14 @@
 
 ## Overview
 
+```facts
+Position: An attacking forward with responsibility on both sides of the puck
+Action: In attack, create width, pressure opponents in the corners and provide scoring chances
+Action: In defence, cover the opposing defenceman on your side and help your team exit the defensive zone
+Key: Your lane is your responsibility — stay in it, own it, and use it
+Key: There are two wingers per line, left and right, and the principles apply equally to both
+```
+
 You are an attacking forward with responsibility on both sides of the puck. In attack, you create width, pressure opponents in the corners, and provide scoring chances. In defence, you cover the opposing defenseman on your side and help your team exit the defensive zone. Your lane is your responsibility — stay in it, own it, and use it.
 
 There are two wingers per line: left wing and right wing. The principles below apply equally to both. Where specific side is mentioned, apply it to your own side.
@@ -13,6 +21,16 @@ There are two wingers per line: left wing and right wing. The principles below a
 ---
 
 ## A Note on Language
+
+```facts
+Position: Your lane is the outside third of the ice on your side, running the length of the rink
+Key: "Stay in your lane" is a spacing instruction — three forwards in one lane can be covered by two defenders
+Position: "Stay high" means level with the opposing point man, not halfway to the corner, and it applies only while the other team has the puck
+Key: Strong-side takes the puck up the wall; weak-side collapses to cover the slot
+Position: The half-wall — the boards level with the faceoff dot — is your home base in the offensive zone and on the power play
+Goal: Covering the point, denying the opposing defenceman time and space to shoot or walk in, is your defensive-zone job description
+Never: Treat rim and reverse as interchangeable — a rim goes onward with the flow, a reverse back against it
+```
 
 **Every line, zone and named area of the ice is defined in [Rink Map and Glossary](../rink_map_and_glossary.md), which is the dictionary for this guide.** Listed here are only the terms a winger uses in a particular sense, or leans on so heavily they need saying again.
 
@@ -35,6 +53,15 @@ Your job is to help your team exit the zone cleanly and to limit what the opposi
 
 ### Carrying the Puck — Free Space
 
+```facts
+Position: On the boards on your side, between the hash marks and the goal line — Breakouts is the authority on this landmark
+Action: Come down from your point coverage as the breakout starts; don't stand there while the other team has the puck
+Convention: The hash-mark spot belongs to the conventional swing breakout — flat/spread holds you higher, stretch sends a winger up ice, so find out which you're in
+Action: If you receive the puck, look to move immediately — carry out along the boards, or pass to the centre
+Goal: Exit the defensive zone cleanly and transition to offence
+Never: Hold the puck in your own zone longer than you need to — your first look is always up ice
+```
+
 **Where to be:** On the boards on your side, **between the hash marks and the goal line** — roughly level with the faceoff dot or just below it. You get there by coming *down* from your point coverage as the breakout starts; you do not stand there while the other team has the puck. [Breakouts](../breakouts.md) is the authority on this landmark.
 
 > **Wall position is system-dependent, and the authority says so.** The hash-mark spot belongs to the **conventional swing breakout** — the structure assumed throughout this document. Teams running a **flat/spread** structure ask wingers to hold higher toward the blue line; teams running an aggressive **stretch or flying-winger** structure send one winger up ice entirely. **Find out which one you're in** — the failure mode of a winger standing at the hash marks in a stretch system is exactly as bad as the reverse. See [Breakouts](../breakouts.md).
@@ -48,6 +75,17 @@ Your job is to help your team exit the zone cleanly and to limit what the opposi
 ---
 
 ### Carrying the Puck — Under Pressure
+
+```facts
+Position: Against the boards, with the puck on the far side of your body from the checker
+Technique: Backside into them, feet wide and low, feet still moving — a stationary player on the wall gets pinned
+Technique: Aim for skates parallel to the boards, forearm and hip to the wall, head up; facing the boards chest-first is the fallback
+Never: Turn your back to the wall or duck — and don't turn into pressure the instant you receive it
+Read: Rim to beat a checker sealing you against the boards; reverse to beat one who has over-committed and skated past you
+Rule: NHL Rule 56.1 permits your free hand to fend off an opponent or their stick — fingers closing on a jersey or a stick is a holding minor
+Action: Know your out before you get there, and don't force a pass through traffic in your own zone
+Goal: Don't lose the puck in a dangerous position — get it to safety
+```
 
 **Where to be:** Against the boards, protecting the puck with your body.
 
@@ -71,6 +109,17 @@ Your job is to help your team exit the zone cleanly and to limit what the opposi
 ---
 
 ### Pressuring an Opponent with the Puck
+
+```facts
+Position: High in the defensive zone, covering the opposing defenceman at the point on your side, between them and the slot
+Convention: Staying high out of the corner is the low zone collapse job, not a law — under man-on-man you follow your check in, under hybrid only below the hash marks
+Action: Find out which system your team plays before your first shift — breakdowns here are two players on different assumptions
+Goal: Deny shots from the point and stop the opposition setting up a clean cycle
+Read: If your man walks down off the point, follow a few feet, stay connected, and call the switch
+Read: If the puck squirts up the strong-side boards to you, engage it — that is your breakout, not a corner battle
+Read: If the centre goes into the strong-side corner, the weak-side winger collapses to the high slot until the puck leaves
+Risk: Chase into the corner and the opposing defenceman walks in free, with nobody positioned for the breakout
+```
 
 **Where to be:** High in the defensive zone, covering the opposing defenseman at the point on your side. (The "point" is the area near the blue line where defensemen normally stand — covering the point means denying that defenseman the space to operate.)
 
@@ -98,6 +147,16 @@ Your job is to help your team exit the zone cleanly and to limit what the opposi
 
 ### Without the Puck — Ready to Break Out
 
+```facts
+Position: High and level with your man while they have the puck; down the wall between the hash marks and the goal line the moment your team wins it
+Action: Watch the battle rather than the puck and read who is coming out of it with possession
+Action: Turn your feet before the puck is won, but don't leave the point until it actually is
+Technique: Present yourself as an outlet — stick on the ice, feet already moving, calling for it
+Convention: That trip down the wall is the conventional swing breakout — flat/spread holds you higher, stretch sends a winger up ice, so find out which you're in
+Key: Anticipating while still onside and able to get back is coached; abandoning coverage on a hope is not — the test is whether you can recover
+Goal: Be the first line of the breakout and get into the neutral zone with speed
+```
+
 *The section above is you denying an opponent who has the puck. This one is the moment either side of that: the puck is loose or your team is winning it, and your job flips from coverage to outlet.*
 
 **Where to be:** This is the one job on the ice that is defined by a *move* rather than a spot, so hold both ends of it:
@@ -123,6 +182,13 @@ The transition zone. Your job is to carry the puck through your lane and support
 
 ### Carrying the Puck — Free Space
 
+```facts
+Position: In your lane along the boards, on your own side of the ice
+Action: Skate hard through the neutral zone — carry into the offensive zone if the path is open, or set up an entry play with the centre
+Goal: Move the puck through the neutral zone efficiently and enter the offensive zone with speed
+Never: Drift into the centre of the ice — that's the centre's lane, and staying wide is what keeps the ice open for your line
+```
+
 **Where to be:** In your lane along the boards, carrying through the neutral zone.
 
 **What to do:** Skate hard through the neutral zone in your lane. Look to carry into the offensive zone if the path is open, or set up for a zone entry play with the center. Stay on your side of the ice.
@@ -134,6 +200,16 @@ The transition zone. Your job is to carry the puck through your lane and support
 ---
 
 ### Carrying the Puck — Under Pressure
+
+```facts
+Position: Along the boards in your lane
+Options: Hard rim, soft area dump, chip past the defenceman, cross-corner dump, or a flip over a trap
+Read: Chip past a defenceman who is stepping up; soft-dump when you'll win the race; flip when a trap has closed every route along the ice
+Technique: Angle your chase to take away their easier escape rather than skating straight at the puck
+Never: Land a flip past the goal line — behind their defence but short of the line, or you have iced it
+Never: Fight through neutral-zone pressure with the puck — a turnover here becomes an odd-man rush against
+Action: When in doubt, dump it in; it's a safe play
+```
 
 **Where to be:** Along the boards in your lane.
 
@@ -157,6 +233,16 @@ The transition zone. Your job is to carry the puck through your lane and support
 
 ### Pressuring an Opponent with the Puck
 
+```facts
+Position: In your lane, blocking the passing lanes through your side
+Action: Cut off the passing options and force the puck carrier wide toward the boards
+Convention: Lane-blocking belongs to a containment structure — a 1-2-2, a 1-2-2 trap or a 1-3-1 — and is not a law of hockey
+Options: Under an aggressive press the instruction reverses: forwards hunt the puck and the weak-side winger does leave the lane
+Action: Find out which your team plays and what the call is for switching — most run two or three depending on the score and the shift
+Risk: Leave your lane under containment and you open a seam the single defenceman behind the wall cannot cover
+Goal: Prevent a clean entry — force a difficult pass, force them wide, or force a dump-in
+```
+
 **Where to be:** In your lane, blocking passing lanes through your side.
 
 **What to do:** When the opposing team is moving the puck through the neutral zone, stay in your lane and cut off the passing options. Force the puck carrier wide toward the boards. In a containment structure, don't leave your lane to chase — block the lane and let the pressure develop naturally.
@@ -170,6 +256,17 @@ The transition zone. Your job is to carry the puck through your lane and support
 ---
 
 ### Without the Puck — Filling Your Lane on the Rush
+
+```facts
+Position: In your lane, moving toward the offensive zone
+Action: Time your skating so you arrive at the blue line in stride, and be a moving target for the centre or defenceman
+Technique: Drag a trail skate along the line while your body, stick and momentum get ahead of it — and keep the blade touching
+Rule: A dragged, touching skate is onside under all three rule sets; a lifted trail skate is onside in the NHL and IIHF but offside under USA Hockey Rule 630(a)
+Rule: Tagging up is a five-man act — the arm stays up until every teammate has cleared (NHL Rule 83.3(i)); Rules Primer owns the rule in full
+Action: Tag, then look before you go — as the winger usually first to the line, you are the one who re-enters too early
+Never: Coast at the blue line to be safe — arriving late and slow costs your line more than a whistle would
+Read: On your off wing the lane is the same, but the puck sits on your inside hand — it helps entering the zone and costs you on a breakout pass up your own wall
+```
 
 **Where to be:** In your lane, moving toward the offensive zone.
 
@@ -193,6 +290,15 @@ Your natural home as a forward. Your job is to create scoring chances, win battl
 
 ### Carrying the Puck — Free Space
 
+```facts
+Position: Along the half-wall, or driving toward the net from the wing
+Targets: Shoot, feed the centre in the slot, or find the defenceman at the point
+Action: If you have space to drive the net, use your speed and get to the front of it
+Convention: "Shoot first" is a bias, not a rule — a teammate with a clear look at an open side is always worth the extra pass
+Never: Stand still — movement is what creates the opportunities
+Goal: Create a shot on net, or force the defence to react and open space for teammates
+```
+
 **Where to be:** Along the half-wall (the boards area roughly level with the faceoff dot — between the corner and the point), or driving toward the net from the wing.
 
 **What to do:** If open on the half-wall, look to shoot, pass to the center in the slot, or find the defenseman at the point. If you have space to drive the net, do it — use your speed and get to the front of the net.
@@ -205,6 +311,15 @@ Your natural home as a forward. Your job is to create scoring chances, win battl
 
 ### Carrying the Puck — Under Pressure
 
+```facts
+Position: In the corner or along the boards
+Technique: Use your body to protect the puck and fight to maintain possession
+Options: Pass back to the defenceman at the point, or hold possession until the centre can support you
+Read: Look up before passing to the point — the strong-side defender may have stepped down to support the cycle
+Never: Force the puck out of the corner through heavy traffic — a rushed pass turns over possession
+Goal: Maintain possession in the offensive zone and keep the pressure going
+```
+
 **Where to be:** In the corner or along the boards.
 
 **What to do:** Use your body to protect the puck. Fight to maintain possession. Look for a pass back to the defenseman at the point, or hold possession until the center can support you. Don't try to force the puck out of the corner through heavy traffic.
@@ -216,6 +331,17 @@ Your natural home as a forward. Your job is to create scoring chances, win battl
 ---
 
 ### Pressuring an Opponent with the Puck
+
+```facts
+Position: As F2, in behind F1 on the strong side; as F3, higher in the zone covering the middle and the weak side
+Key: F1, F2 and F3 are roles set by order of arrival — if you dumped the puck in and got there first, you are F1
+Read: Take the next-most-likely escape route from wherever F1 has pushed the carrier — typically the strong-side boards or behind the net
+Technique: Pin the puck against the boards, not the player
+Rule: IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards
+Convention: A 2-1-2 sends two forwards deep and a 1-2-2 sends one, and F3 sits weak-side by default or puck-side in the stacked variant — find out which your team runs
+Goal: Force a turnover or a bad outlet pass by trapping the carrier with no escape route
+Key: Forechecking is about angles, not speed — stay in your role and trust your linemates to be in theirs
+```
 
 **Forechecking** means putting pressure on the opposing team in their own defensive zone (your offensive zone) — trying to win the puck back rather than retreat.
 
@@ -240,6 +366,17 @@ Your role depends on which side of the ice the puck is on, and on who got there 
 ---
 
 ### Without the Puck — Getting Open and Crashing the Net
+
+```facts
+Position: On the half-wall, in your side's faceoff circle, or at the side of the net and the goalmouth
+Never: Take the high slot between the dots and the top of the circles — that layer is the centre's
+Technique: For a one-timer, open your stance toward the passer with your weight back, start the backswing as the pass is released, and hit the ice just behind the puck
+Read: If the pass is bad, don't force the one-timer — take the extra touch, because a miss ends up in the neutral zone going the other way
+Position: At the net front, live at the edge of the blue paint, get in the goalie's eyes and keep your stick free for tips
+Rule: Screening from outside the crease without contact is legal, but positioning alone can void a goal if it stops the goalie moving freely or defending (NHL Rule 69.1)
+Action: Crash the net the moment a shot is taken — time your arrival so you reach the side of the net just as it goes
+Goal: Be a threat in your half of the zone, particularly from the side of the net for rebounds
+```
 
 **Where to be:** On the half-wall, in your side's faceoff circle, or at the side of the net and the goalmouth. **Leave the *high* slot — between the dots and the top of the circles — for the centre. The goalmouth, meaning the immediate net front, is a different patch of ice and it is very often yours** (see *Net-front and the crease* below). Two layers, two owners; running them together is how two forwards end up standing on the same square metre.
 
@@ -266,6 +403,16 @@ Your role depends on which side of the ice the puck is on, and on who got there 
 A quick reference for situations outside the zone-by-zone framework above.
 
 ### Faceoffs
+
+```facts
+Position: At the hash marks — one winger on the inside hash facing the slot, one on the outside hash facing the boards
+Convention: The winger whose natural side matches the faceoff location usually takes the outside hash, but assignments vary by team, so ask
+Action: Read the result of the draw and react instantly — pounce on a loose puck, support the centre, or get to your defensive position
+Never: Creep inside the circle or over your hash marks before the drop — it is your centre who gets thrown out of the dot, not you
+Rule: A second violation on the same draw is a bench minor; USA Hockey Rule 613(d) makes it an individual minor, and IIHF gives a team warning with no ejection
+Action: Know in advance whether you are the backup draw taker, and aim for a clean tie-up rather than anything ambitious
+```
+
 The centre takes the draw; you line up at the hash marks — one winger on the **inside** hash (facing the slot), one on the **outside** hash (facing the boards). The usual default is that the winger whose natural side matches the faceoff location takes the outside hash, but assignments vary by team and situation, so ask. **The nine locations, the full five-player alignments and the set plays off each are in [Faceoffs](../faceoffs.md).** Your job in every one of them is the same: read the result of the draw and react instantly — pounce on a loose puck, support the centre, or get to your defensive position.
 
 **Two things about faceoffs that are specifically your responsibility:**
@@ -274,6 +421,17 @@ The centre takes the draw; you line up at the hash marks — one winger on the *
 - **Be ready to take the draw.** Centres get tossed several times a game. Know in advance whether you're the backup taker, and know what you're trying to do — usually just a clean tie-up rather than anything ambitious.
 
 ### Power Play (your team has the man advantage)
+
+```facts
+Position: Almost always the half-wall or the net front — the formations are in Special Teams
+Targets: From the half-wall you have four options: the point, the bumper, the net front, and the far half-wall through the seam
+Technique: Walk down toward the goal line to drag a killer with you, then use the space you just made
+Action: From the net front, screen, tip and hunt rebounds — get in the goalie's eyes and keep your body out of the crease
+Rule: Don't initiate contact, and don't crowd the goalie so tightly he cannot move (NHL Rule 69.1)
+Convention: The bumper is usually the centre, but plenty of units put a winger there — find out whether that spot is yours
+Key: Quick puck movement is what beats a kill — it can cover any single option, but not three in two seconds
+```
+
 **The formations are set out in [Special Teams](../special_teams.md).** Wherever they put you, it is almost always one of two spots: the **half-wall** or the **net front**.
 
 **From the half-wall you are the primary distributor on your side.** Your four options are the point, the bumper, the net front, and the far half-wall through the seam — and the reason the half-wall is the best job on a power play is that a kill can take away any one of them but not all four. Walk down toward the goal line to drag a killer with you, then use the space you just made.
@@ -285,6 +443,16 @@ One thing worth asking rather than assuming: **the bumper is *usually* the centr
 Move the puck quickly, look for one-timer setups, and crash the net for rebounds. Quick puck movement is what beats a penalty kill; a kill can cover any single option, but not three in two seconds.
 
 ### Penalty Kill (your team is short-handed)
+
+```facts
+Position: In a box you are one of the two high players covering a point; in a diamond you take a middle spot on a half-wall; in a wedge+1 you are often the puck-chaser
+Action: Stay tight, block shots, and force the opposing point into low-percentage shots
+Action: Clear the puck whenever you get it — you don't need to be fancy
+Rule: A shorthanded team may ice the puck freely under NHL and IIHF rules; USA Hockey Rule 624(b)(1) grants it only from Youth 15-Only, Girls 16U, High School and Adult up
+Rule: NHL Rule 81.6 removes the exemption from a team shorthanded by a major with nobody waiting on the penalty bench — Special Teams owns this
+Never: Chase the puck around the perimeter and pull the shape apart — that is exactly what the power play wants
+```
+
 A kill is four skaters, normally two forwards and two defencemen. **The shapes are described in [Special Teams](../special_teams.md);** your job inside each one:
 
 - **Box** — the standard. You are **one of the two high players**, alongside your centre, each responsible for one point.
@@ -294,6 +462,16 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 Stay tight, block shots, and force the opposing point into low-percentage shots. Clear the puck whenever you get it — you don't need to be fancy, and a shorthanded team may ice the puck freely — **under NHL and IIHF rules.** USA Hockey gives the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)), so in most youth hockey your clear can still be iced; and NHL Rule 81.6 takes it away from a team shorthanded by a *major* with nobody waiting on the penalty bench. [Special Teams](../special_teams.md) owns it. Don't chase the puck around the perimeter and pull the shape apart; that's exactly what the power play is trying to make you do.
 
 ### Icing
+
+```facts
+Rule: The dot is a decision deadline, not a finish line — NHL Rule 81.1 judges which player would first touch the puck, and the call is made by the time a skate reaches the dots
+Action: Carry the extra stride so the puck is on your stick as it crosses the centre red line — that makes the dump legal however far it travels
+Options: Or make the dump soft enough that you win the race to it yourself
+Action: Sprint the first half of the chase — that is where the call is decided
+Read: If you are clearly beaten to the dot, ease up; you gain nothing and the end boards are unforgiving
+Risk: An icing leaves your line stuck on for a defensive-zone draw with no change and no timeout
+Key: The rule in full — hybrid icing, the wave-off list and "gaining the line" — is in Rules Primer
+```
 
 **The rule itself — hybrid icing, the full wave-off list, "gaining the line", and how USA Hockey and rec leagues differ — is in [Rules Primer](../rules_primer.md).** Icing touches a winger from both ends, which is why it is worth your attention more than most players'.
 
@@ -305,6 +483,14 @@ The cost when it does get called is your line stuck on the ice for a defensive-z
 
 ### Line Changes
 
+```facts
+Convention: Wingers change as a group led by the centre — coaching craft rather than a measured finding; Center sets out what is and is not established
+Action: When the centre calls the change, go with him rather than staying out for one more look
+Risk: A line that dribbles off one player at a time plays a stretch of every shift a man short in the middle of the ice
+Never: Change while the puck is still in your defensive zone and not under your team's control — you are the point coverage
+Key: Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are in Game Management
+```
+
 **Wingers change as a group, and the group is led by the centre.** His route covers more of the ice than yours and he fades first — **coaching craft rather than a measured finding**; [Center](center.md) sets out what is and is not established here — so when he calls it you go with him rather than staying out for one more look. A line that dribbles off one player at a time plays a stretch of every shift a man short in the middle of the ice, which is exactly the cost a change is supposed to avoid.
 
 The one that costs wingers goals: **changing while the puck is still in your defensive zone and not under your team's control.** You are the point coverage. If you leave, the opposing defenceman is unmarked at the blue line with the puck coming to him.
@@ -312,6 +498,16 @@ The one that costs wingers goals: **changing while the puck is still in your def
 Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are in [Game Management](../game_management.md).
 
 ### Backchecking
+
+```facts
+Action: Sprint back to your defensive zone the moment your team loses the puck — often faster than the opposing forwards
+Convention: Wingers take the outside lanes and the centre the middle under the standard assignment — a coaching choice, not a law
+Options: Others play first man back takes the middle, or man-on-man from the puck outward — find out which, and note somebody always owns the middle
+Read: Inside your lane the man to find is the opposing F3, the late-arriving forward — stay between them and the puck
+Never: Puck-watch — watch your assignment, and arrive at your covering position before the puck does
+Action: Once you are set, transition into your normal defensive-zone role: cover the point, be ready to break out
+```
+
 When your team loses the puck in the offensive or neutral zone, your job as a winger is to sprint back to your defensive zone — often faster than the opposing forwards. Backchecking well is one of the most important defensive responsibilities of a winger, and one of the most commonly missed.
 
 - **Take the outside lanes — under the standard assignment.** The most common backcheck scheme, and the one assumed throughout, gives the centre the middle lane and the two wingers the outside lanes. **That is a coaching choice, not a law.** Other teams use **first man back takes the middle**, whoever that is — so as a winger you can end up in the middle. Others pick up **man-on-man from the puck outward**. Find out which your team plays; [Defending the Rush](../defending_the_rush.md) sets out all three. Under every variant, somebody owns the middle and nobody assumes it is somebody else.

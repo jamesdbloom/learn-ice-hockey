@@ -79,6 +79,15 @@ Most players know offside as a thing that gets whistled against them. Learn the 
 
 ### The four clauses the technique rests on
 
+```facts
+Rule: You are off-side only when both skates are completely over the leading edge of the blue line (NHL Rule 83)
+Rule: One skate in contact with the line, or on your own side of it, keeps you onside at the instant the puck completely crosses (NHL Rule 83)
+Rule: The whole width of the painted blue line counts as "the line" — a skate touching any of it is onside (NHL Rule 1.5)
+Rule: Your own side of the line is a vertical plane — a skate lifted and held back over the neutral zone is onside (NHL Rule 83)
+Rule: For 2025-26 a "skate" is the blade only, so an overhanging boot is irrelevant (NHL Rule 83)
+Rule: Under USA Hockey Rule 630(a) an airborne trail skate is offside — the blade must have contact
+```
+
 Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 
 - **"A player is off-side when both skates are completely over the leading edge of the blue line involved in the play."** Both. Not one. Conversely, *"a player is on-side when either of his skates are in contact with the blue line, or on his own side of the line, at the instant the puck completely crosses the leading edge of the blue line."*
@@ -89,6 +98,16 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 > **⚠️ The third clause is NHL and IIHF only, and USA Hockey reverses it.** Under **USA Hockey Rule 630(a)** a player is offside when they do *"not have skate contact with any part of the Neutral Zone or the blue line when the puck crosses the determining edge of the blue line"*, and the Note confirms that *"a player only needs to have skate contact with one skate with the blue line to be considered 'onside.'"* So an airborne trail skate is **onside under the NHL and IIHF and offside under USA Hockey** — and most North American rec and youth hockey runs on USA Hockey rules. This changes step 2 below. It is the single most important rule-set difference in this document.
 
 ### The trail-skate drag
+
+```facts
+Position: Far-side winger flying at the line, a stride ahead of a carrier about to put the puck over
+Technique: Attack the line at full speed with your inside foot leading
+Technique: Stop pushing with the trail leg and let that blade glide so it stays touching the paint
+Action: Keep your body, hands and stick already in the zone — only the trail blade is holding you onside
+Action: The instant the puck completely crosses, put that blade down and push
+Key: The judgement is made at one instant — time your glide to it, don't glide for two seconds
+Rule: Lifting the trail skate is NHL and IIHF only — USA Hockey Rule 630(a) requires skate contact, so keep the blade down
+```
 
 This is the single most useful piece of applied rules knowledge for a forward, and it comes straight out of the wording above.
 
@@ -111,6 +130,15 @@ Three details that separate people who *sort of* know this from people who use i
 
 ### Delayed offside and tagging up — three consequences for the entry
 
+```facts
+Rule: On a delayed offside the linesman raises a non-whistle arm and play continues (NHL Rule 83.3)
+Rule: Under USA Hockey Rule 630(d) delayed offside and tag-up exist only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below that the whistle is immediate
+Rule: Tagging up needs actual skate contact with the line; the vertical plane does not apply — "'3D' judgement is not used in this situation" (IIHF Rule 83.3(I))
+Action: Get everybody out at once — one straggler keeps the arm up, so shout it
+Never: Forecheck during a delayed offside — touching the puck, going for a loose puck, forcing the carrier deeper, or being about to hit him all stop play
+Action: Retreat to the line, tag up, come again
+```
+
 A **delayed offside** is what happens when attackers precede the puck but the defending team can bring it out without interference: the linesman raises a non-whistle arm and play continues (Rule 83.3). [Rules Primer](rules_primer.md) has the full procedure — what nullifies the arm, what turns it into a whistle, and the IIHF wording on clearing. Three things change what you do at the line:
 
 - **⚠️ First, check that you have a delayed offside at all.** Under **USA Hockey Rule 630(d)** the delayed offside and the tag-up exist only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications **only**)"*. Below those levels there is no raised arm and no recovery — the whistle goes the moment you precede the puck in. Most North American minor hockey sits below that line, so for a lot of readers this whole subsection describes a rule they do not have, and the entry simply has to be right first time.
@@ -119,6 +147,13 @@ A **delayed offside** is what happens when attackers precede the puck but the de
 - **Forechecking during a delayed offside is not a grey area — it is a whistle.** Touching the puck, trying to gain possession of a loose puck, forcing the defending carrier deeper into his own zone, or being about to make contact with him all stop play. Retreat to the line, tag up, come again.
 
 ### The territorial asymmetry — why the safe play isn't
+
+```facts
+Rule: A botched carry-in draws only to the neutral-zone spot outside the blue line (NHL Rule 83.6)
+Rule: A botched dump-in or stretch pass draws back at the spot the shot or pass came from, which can be your own end (NHL Rule 83.6)
+Rule: A shot that creates a delayed offside and then goes in is a disallowed goal, whether or not you cleared the zone first (NHL Rule 83.4)
+Key: Under pressure at the line, failing to carry costs you less than failing to dump
+```
 
 A botched **carry-in** is punished lightly: the draw goes to the neutral-zone spot outside the blue line and you barely lose anything. A botched **dump-in or stretch pass** is punished back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). And a shot that creates a delayed offside and then goes in is a **disallowed goal** whether or not you cleared the zone first (Rule 83.4). Both rules are set out in full in [Rules Primer](rules_primer.md).
 
@@ -132,6 +167,14 @@ A **carry-in** (also called a controlled entry) is any entry where your team has
 
 ### Attack the outside shoulder
 
+```facts
+Read: The defender's weakest moment is the pivot — turning from backwards to forwards, or opening their hips to one side
+Action: Aim at the outside shoulder, the one nearest the boards on your side, with pace and your eyes up
+Read: The moment their hips open outward the inside lane is available — cut back into the middle, slip it between their feet, or hit the middle driver
+Countered by: A defender who refuses to open and stays square — then you have the outside lane for real, so take it and get to the goal line
+Key: You are not trying to beat them, you are trying to make them commit
+```
+
 The defender's job is to stay between you and the middle of the ice. Their weakest moment is the **pivot** — the instant they turn from skating backwards to skating forwards, or open their hips to one side.
 
 Aim at the **outside shoulder** of the defender: the shoulder nearest the boards on your side. Do it with pace and with your eyes up. You are threatening the outside lane, which is the lane they are least worried about but most physically awkward to defend, because covering it means opening their hips toward the boards.
@@ -141,6 +184,14 @@ The moment their hips open outward, the **inside lane is available** — that is
 The principle underneath: **you are not trying to beat them, you are trying to make them commit.** A defender who has committed to one lane cannot defend the other.
 
 ### Attack the space between two defenders, not one of them
+
+```facts
+Action: Skate at the seam between two defenders — the two defencemen, or a defenceman and a backchecking forward
+Never: Skate directly at a defender — you have handed them an easy job, because they only have to deal with you
+Action: On a 3-on-2, the middle attacker drives the space between the two defencemen, not either one
+Action: On a 2-on-1 wide, angle your route so the single defender is forced to choose between you and your partner
+Read: The moment two defenders both think the other one has it — a fraction of a second long, and where entries are won
+```
 
 This is the most important idea in this section.
 
@@ -152,6 +203,13 @@ You are looking for the moment two defenders both think the other one has it. Th
 
 ### The wide entry
 
+```facts
+Action: Take the puck down the boards outside the defenceman and get to the goal line or below it
+Goal: Make the defender turn and skate — every stride toward the boards is a stride away from the front of the net
+Targets: A support player driving the net, plus a third player high for the back-door or point option
+Risk: Going wide with nobody behind you is not an attack — it is a slow dump-in with extra steps
+```
+
 Take the puck down the boards outside the defenceman and get to the goal line or below it.
 
 - **Why it works:** the defender must turn and skate, and every stride they take toward the boards is a stride away from the front of the net.
@@ -159,6 +217,13 @@ Take the puck down the boards outside the defenceman and get to the goal line or
 - **When it fails:** when you go wide with nobody behind you. Then you are alone below the goal line with three defenders between you and the net, which is not an attack, it is a slow dump-in with extra steps.
 
 ### The middle drive
+
+```facts
+Position: A teammate without the puck, skating hard through the seam between the defencemen, at the net
+Goal: Freeze the defencemen so they cannot step up on the carrier — one route, at speed, buys the carrier several extra feet
+Key: The middle driver usually does not get the puck, and that is not the point
+Never: Drive half-heartedly — that is a player standing in the slot, which frees the defence rather than freezing it
+```
 
 A **middle drive** is a teammate without the puck skating hard through the middle of the ice, through the seam between the defencemen, at the net.
 
@@ -168,11 +233,25 @@ Middle drives only work if they are **committed**. A half-hearted middle drive i
 
 ### Using a teammate as a screen
 
+```facts
+Action: Cross with a teammate near the line so the defender tracking the carrier has to go around them
+Key: Skate your own route to the net and let the defender's chosen path be the one that gets tangled
+Never: Stop, stand, or step into a defender to make the pick — deliberately body-blocking a non-carrier is interference
+Read: Officials at every level judge it on whether you were going somewhere
+```
+
 Two attackers crossing near the line can be used so that the second one runs interference — the defender tracking the carrier ends up having to go around your teammate.
 
 **Be careful with this one.** Deliberately body-blocking a defender who is not the puck carrier is **interference**. What is legal is skating your own route to the net and letting the defender's chosen path be the one that gets tangled. What is not legal is stopping, standing, or stepping into them to make the pick. The distinction is whether you are playing hockey or setting a screen; officials at every level judge it on whether you were going somewhere. See [Body Contact and Battles](body_contact_and_battles.md).
 
 ### One thing that is not a rule
+
+```facts
+Convention: Crossing patterns, who takes the wide lane, whether the centre or a winger carries — all coaching choice, and it varies enormously
+Options: Some teams demand strict lane discipline (left wing stays left); some are built entirely on crossing and swinging
+Options: Some want the best puck carrier on the ice touching every entry
+Action: Ask your coach what your team wants before you decide you know
+```
 
 Crossing patterns, who takes the wide lane, whether the centre or a winger carries — all of this is **coaching choice**, and it varies enormously. Some teams demand strict lane discipline (left wing stays left). Some are built entirely on crossing and swinging. Some want the best puck carrier on the ice touching every entry. Ask your coach what your team wants before you decide you know.
 
@@ -182,11 +261,25 @@ Crossing patterns, who takes the wide lane, whether the centre or a winger carri
 
 ### The puck carrier should be the last to the line
 
+```facts
+Position: As the carrier, reach the line half a stride to a full stride behind your wingers
+Position: As a winger, be at the line, at speed, onside, before the puck gets there
+Goal: Make the defence respect three threats at once, so the carrier arrives into a picture already pulled apart
+Risk: If the carrier arrives first the supports are behind the play, and the defence collapses on one player
+```
+
 This is the timing principle that makes entries work. If the carrier arrives first, the supports are behind the play and the defence can collapse on one player. If the supports arrive first and the carrier arrives a beat later, the defence has to respect three threats at once and the carrier arrives into a picture that has already been pulled apart.
 
 Concretely: as the carrier, you want to reach the line **half a stride to a full stride behind** your wingers. As a winger, you want to be **at the line, at speed, onside, before the puck gets there** — which is exactly what the trail-skate drag above is for.
 
 ### Arriving with speed is not the same as arriving early
+
+```facts
+Goal: Have your acceleration peak as the puck crosses the line
+Action: Be slower thirty feet out so you can be faster at the line
+Never: Arrive early and wait — standing still is easy to cover, and curling away loses your route
+Key: Self-check — slowed down after crossing means you were early; crossing while accelerating into open ice means you were on time
+```
 
 Arriving early means you get to the line and then have to wait. Waiting at the line means either standing still — useless, because a stationary player is easy to cover — or curling away and losing your route.
 
@@ -195,6 +288,14 @@ Arriving with speed means your acceleration peaks **as** the puck crosses. To do
 A useful self-check: if you crossed the line and then had to slow down to stay with the play, you were early. If you crossed the line accelerating into open ice, you were on time.
 
 ### Timing all three forwards to hit the line together
+
+```facts
+Goal: Three attackers crossing within about a second of each other, in three different lanes — one wide each side, one middle
+Action: The middle lane player sets the clock — shortest route, so they adjust, usually by slowing or curling
+Action: Wide players run their route full out and use the trail-skate drag to hold at the line if they beat the puck there
+Read: Two supports on time and one not — go anyway; none of them on time — delay
+Convention: On the power play coaches often want four across the line, two wide and two inside-dot — a common structure, not a universal one
+```
 
 The picture you want is **three attackers crossing the line within about a second of each other, in three different lanes** — one wide on each side, one in the middle.
 
@@ -216,6 +317,16 @@ Turning away from the blue line, keeping the puck, and coming back at the line o
 
 ### How to do it
 
+```facts
+Never: Stop — approaching the line alone or outnumbered, stopping kills you
+Action: Turn away from the pressure and curl back toward the neutral zone, body between defender and puck
+Never: Take contact with your back to the boards — curl in open ice, not against the wall
+Technique: Near the wall, skates parallel to the boards, take it on your forearm and hip, head up and chin off your chest
+Action: Look back up ice as you curl — eyes to where support is coming from, not to the defender
+Action: Slow the play deliberately for one or two seconds, which is how long late support takes to arrive at speed
+Action: Attack the line again with the puck on whoever has the best angle and the most speed — often not you
+```
+
 1. Approaching the line alone or outnumbered, **do not stop**. Stopping kills you.
 2. **Turn away from the pressure** and curl away from the line, back toward the neutral zone, protecting the puck with your body between defender and puck.
 
@@ -234,6 +345,13 @@ Because turning away from the offensive zone feels like retreating, and because 
 
 ### When *not* to delay
 
+```facts
+Read: Numbers now that will be gone in a second — take the odd-man rush instead
+Never: Delay with nobody behind you — a delay only works if support is genuinely coming
+Action: If your line is caught out and the bench is calling, get it in deep and change
+Never: Delay back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze them
+```
+
 - When you have numbers now and they will be gone in a second — take the odd-man rush.
 - When you have nobody behind you at all. A delay only works if support is genuinely coming. If your line is caught out and the bench is calling, get it in deep and change.
 - When a delay would drag you back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze them.
@@ -246,6 +364,14 @@ A **drop pass** is a pass backwards, usually left behind you as you cross paths 
 
 ### How it works
 
+```facts
+Action: Attack the line to draw the defenders' eyes and weight, then leave the puck in the space the trailer is skating into
+Technique: Drop to a space, not to a stick — you leave the puck, the receiver skates onto it
+Action: Keep going hard into the zone as though you still have it, so you take a defender with you
+Key: There must be a speed differential — the trailer moving faster than the defenders can adjust
+Options: On the power play, attack straight at the first penalty killer to freeze them, then drop underneath into space
+```
+
 The carrier attacks the line, drawing the defenders' eyes and weight toward the puck. A teammate arrives from behind and slightly to one side. The carrier leaves the puck stationary or gently rolling into the space the trailer is skating into, then keeps going — hard — into the zone as though they still have it.
 
 Three things make it work:
@@ -256,11 +382,25 @@ Three things make it work:
 
 ### When it's right
 
+```facts
+Read: A passive neutral zone that backs off and gives you the red line for free — the trailer gets a running start at a stationary wall
+Read: Breakouts and power-play entries, where you can choreograph the timing in advance
+Read: A defence that has over-committed to the carrier's side
+```
+
 - Against a passive neutral zone that backs off and gives you the red line for free — the trailer gets a running start at a stationary wall.
 - On breakouts and power-play entries where you can choreograph the timing in advance.
 - When the defence has over-committed to the carrier's side.
 
 ### Why it fails so often
+
+```facts
+Risk: The drop goes backwards into nobody — the worst turnover in hockey, collected by a defender facing your net
+Never: Let both players slow down — a drop pass at low speed is a gift
+Risk: A receiver with no lane, no support and no speed is the lone attacker the drop was supposed to avoid creating
+Never: Use it as a reflex — it answers one picture, a trailing teammate with speed and space behind you
+Key: See the trailer before you drop it; if you are dropping it blind and hoping, throw it away instead
+```
 
 - **The drop goes backwards into nobody.** The trailer is not there yet, or is on the wrong side, and the puck sits in the neutral zone for a defender to collect facing your net. This is the worst turnover in hockey.
 - **Both players slow down.** A drop pass at low speed is a gift.
@@ -277,6 +417,14 @@ Putting the puck in without possession is not one play. It is at least five, and
 
 ### 1. The hard rim
 
+```facts
+Action: Fire the puck low and hard around the boards, following the curve of the corner, onward in the direction of play
+Read: Pressure on you from the inside, and a teammate coming down the far wall or the far corner
+Goal: Beat the defenceman stepping up on you and arrive at the far side before their partner can rotate
+Key: A rim is not a reverse — a reverse goes back against the flow, behind you, for a different purpose
+Risk: Too soft and it dies behind the net; too hard and it comes off the far boards to the weak-side defenceman
+```
+
 Fire the puck low and hard around the boards, following the curve of the corner, so it travels **onward around the boards** in the direction of play.
 
 - **The read:** pressure is on you from the inside, and you have a teammate coming down the far wall or the far corner.
@@ -286,6 +434,13 @@ Fire the puck low and hard around the boards, following the curve of the corner,
 
 ### 2. The soft area dump
 
+```facts
+Action: Place the puck gently into a specific area, usually a corner, so it dies there rather than rebounding
+Read: A forechecker arriving in roughly two seconds, and a defence that has to turn and retrieve
+Goal: Give your chaser a stationary puck and a body to hit, and give the retriever no help from the puck's momentum
+Never: Use it when your chaser is four seconds away — you have just given the puck to their defenceman with time
+```
+
 Place the puck gently into a specific area — usually a corner — so that it dies there rather than rebounding.
 
 - **The read:** you have a forechecker arriving in roughly two seconds, and the defence has to turn and retrieve.
@@ -293,6 +448,14 @@ Place the puck gently into a specific area — usually a corner — so that it d
 - **When it's wrong:** when your chaser is four seconds away. Then you have just given the puck to their defenceman with time.
 
 ### 3. The chip past a pinching defenceman
+
+```facts
+Read: A defender committing hard and early, with space behind them on the wall
+Action: Lift or push the puck past them down the wall and skate around the other side to collect it yourself
+Technique: Chip early, off the boards if you need to lift it over a stick, and change your line before you release so you are already accelerating around them
+Key: This is a possession play, not a surrender — you are using the defender's own momentum against them
+Mindset: Giving up the puck for a second at full speed feels wrong; it is one of the highest-value plays against an aggressive gap
+```
 
 The defenceman steps up to meet you at or before the line. You lift or push the puck **past them, down the wall**, and skate around the other side to collect it yourself.
 
@@ -306,6 +469,13 @@ Note the terminology: a **pinch** is a defenceman stepping down from the *offens
 
 ### 4. The cross-corner (north-south) dump
 
+```facts
+Action: Shoot the puck hard diagonally into the far corner, or straight north down your own side, depending on where your speed is
+Read: The retrieving defenceman is on your side, or the strong-side corner is crowded
+Goal: Force their weak-side defenceman into a long retrieval on his backhand facing his own boards — the most uncomfortable retrieval in hockey
+Never: Dump cross-corner into nobody — your far-side winger has to have read it and be going there
+```
+
 From one side of the ice, shoot the puck hard **diagonally** across into the far corner, or straight north down your own side depending on where your speed is.
 
 - **The read:** the retrieving defenceman is on your side, or the strong-side corner is crowded.
@@ -314,6 +484,14 @@ From one side of the ice, shoot the puck hard **diagonally** across into the far
 
 ### 5. The flip / area dump over a trap
 
+```facts
+Read: The opposition congesting the neutral zone — a trap, most commonly a 1-3-1 — and no route along the ice
+Action: Lift the puck high off the ice so it travels over sticks and bodies and lands in open space behind the defence
+Technique: Open the blade, get under the puck, and land it past the defence but before the goal line
+Goal: Go over the three-man wall rather than through it, and hang it long enough for your forwards to run underneath
+Risk: Overshoot it and, unless you are shorthanded, a puck crossing the goal line untouched from behind the centre red line is icing — Rules Primer owns that rule
+```
+
 Lift the puck high off the ice so it travels over sticks and bodies and lands in open space behind the defence.
 
 - **The read:** the opposition are congesting the neutral zone — a **trap**, most commonly a **1-3-1** neutral zone structure with one forechecker, three players across the middle and one back — and there is no route along the ice.
@@ -321,6 +499,15 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 - **How:** open the blade, get under the puck, and aim to land it **past** the defence but **before** the goal line so it does not carry through for icing. Beware: if your team is not shorthanded and the puck crosses the goal line untouched from behind the centre red line, that is **icing**. See the [Rules Primer](rules_primer.md) for the full icing rule, including hybrid icing.
 
 ### How the trapezoid shapes where you aim
+
+```facts
+Rule: A goalkeeper may not play the puck outside the designated area behind the net — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
+Rule: What is judged is the position of the puck, not the goalie's; the only exception is playing it while maintaining skate contact with his crease (NHL Rule 27.8)
+Rule: The trapezoid applies in the NHL, the KHL and IIHF play (IIHF Rule 27.7) — most rec, beer-league and youth associations do not use it
+Action: Dump to the corners, not to the goalie — the corners are legally out of bounds for him, straight behind the net is not
+Action: If you must put it behind the net, put it there hard — a rocketing puck is far harder to stop and distribute cleanly
+Action: Where there is no trapezoid, rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand
+```
 
 Under **NHL Rule 27.8**, *"a goalkeeper shall not play the puck outside of the designated area behind the net."* Playing the puck outside it, behind the goal line, is a **two-minute minor for delay of game** (Rules 27.8 and 63.2(viii)).
 
@@ -349,6 +536,16 @@ A dump-in is only as good as the chase. Most amateur chases fail before they sta
 
 ### Angle, don't chase
 
+```facts
+Never: Skate at the puck — your route should take away the easy escape, not shorten the distance
+Read: The easy escape is up the boards or a reverse behind the net to their partner; the hard one is being hemmed on the wall or forced to his backhand
+Action: Skate to a point between the retriever and where they want to go, arriving at the puck at an angle rather than head-on
+Action: Approach on the retriever's backhand side where you can — that is where turnovers come from
+Position: Keep your route on the inside, between the puck and the middle, so if they escape they escape to the boards, not into the slot
+Technique: Stick first — leading, on the ice, in the passing lane you are eliminating, before your body arrives
+Key: The measure of a good chase is whether the retriever's only remaining option was one you had covered
+```
+
 The retrieving defenceman has two escapes: the **easy** one (usually turning up the boards toward the neutral zone, or reversing behind the net to their partner) and the **hard** one (getting hemmed on the wall, or being forced to their backhand into traffic).
 
 Your route should **take away the easy escape**, not shorten the distance to the puck.
@@ -361,6 +558,16 @@ Your route should **take away the easy escape**, not shorten the distance to the
 The measure of a good chase is not whether you got the puck. It is whether the retriever's only remaining option was one you had covered.
 
 ### F1, F2 and what they owe each other
+
+```facts
+Key: F1, F2 and F3 are roles, not people — defined by order of arrival, not by position
+Convention: Under the house default 2-1-2 forecheck, F1 goes to the puck and takes away the easy escape; F1's job is to force a decision, not to win the puck
+Convention: F2 reads F1's angle and covers the side F1 forced them toward — F1 creates, F2 collects
+Convention: F3 stays high, around the top of the circles, protecting against the breakout pass up the middle and the counter-attack
+Options: In a 1-2-2 F1 pressures but F2 and F3 hold higher, funnelling the puck to one side — fewer pucks recovered low, far fewer odd-man rushes
+Options: In a 2-1-2 aggressive/overload both F1 and F2 attack the same side hard; in a 1-3-1 F1 pressures and three lock the neutral zone, which is a trap
+Action: Find out which one your team plays — the same dump-in requires a different second man in each
+```
 
 **F1, F2 and F3 are roles, not people.** They are defined by order of arrival, not by position — whichever forward gets there first is F1, whoever is next is F2, regardless of whether they are the centre or a winger.
 
@@ -382,6 +589,14 @@ You have roughly half a second. Read these four things in this order.
 
 ### 1. Gap
 
+```facts
+Read: Gap is the distance between you and the nearest defender — Defending the Rush owns the scale to read it against
+Read: Large gap, defender well off and backing in — carry. They have given you the line, so take it and get to the dots
+Read: Normal gap, closing — you need a move or an angle: attack the outside shoulder, or chip past them if they are committing
+Read: Tight gap, stick on you, standing up at the line — carrying is a low-percentage play. Chip past, dump, or delay
+Convention: The tighter gap figure you will also hear is a deliberate coaching choice carried by Neutral Zone Systems, not the default scale
+```
+
 **Gap** is the distance between you and the nearest defender.
 
 Read these against the defender's own scale, which [Defending the Rush](defending_the_rush.md) owns: **two to three stick lengths is a normal neutral-zone gap**, about a stick and a half at the red line, and about a stick length is what a defender aims for at their own blue line. The tighter **one to one and a half stick lengths** you will also hear is not part of that owned scale — it is the coaching description of a *tight* gap carried by [Neutral Zone Systems](neutral_zone_systems.md), and it is a deliberate choice rather than the default.
@@ -392,11 +607,26 @@ Read these against the defender's own scale, which [Defending the Rush](defendin
 
 ### 2. Support
 
+```facts
+Read: Two or more teammates at the line with you, at speed — carry, or pass in
+Read: One teammate arriving late — delay. One second of curl usually converts this into the case above
+Read: Nobody — dump to a place someone can get to, or delay if anyone at all is coming
+Never: Dump and change unless genuinely nobody is coming — and recognise you have already lost this shift
+```
+
 - **Two or more teammates at the line with you, at speed:** carry, or pass in. This is what all the timing work in Section 4 was for.
 - **One teammate, arriving late:** delay. One second of curl usually converts this into the case above.
 - **Nobody:** dump to a place someone can get to, or delay if anyone at all is coming. If genuinely nobody is coming, put it in deep and change — but recognise you have already lost this shift, because dump-and-change was the worst-valued play in the data.
 
 ### 3. Score and time
+
+```facts
+Read: Tied, or early — play the percentages and be aggressive
+Read: Protecting a one-goal lead late — dump it in, forecheck, burn clock, because a goal against costs more than a goal for gains
+Read: Chasing a goal late — carry almost regardless; a dump-in with ninety seconds left surrenders possession you cannot afford to lose
+Read: On a line change — the entry decision is secondary; get the puck deep or out of danger and change cleanly
+Key: This is the one place where the analytics argument bends
+```
 
 This is the one place where the analytics argument bends. See [Game Management](game_management.md).
 
@@ -406,6 +636,13 @@ This is the one place where the analytics argument bends. See [Game Management](
 - **On a line change:** the entry decision is secondary. Get the puck deep or out of danger and change cleanly.
 
 ### 4. Who you are
+
+```facts
+Read: The carry/dump threshold moves with team strength — Tulsky's group modelled this directly
+Action: A skilled line against a weaker pair should be attempting carries at nearly any excuse (their 26% figure)
+Action: A fourth line against a top pair genuinely does have a higher bar (their 44% figure)
+Key: Both of those are still well below "only carry when it's certain"
+```
 
 Tulsky's group modelled this directly: the carry/dump threshold moves with team strength. A skilled line against a weaker pair should be attempting carries at nearly any excuse (their 26% figure). A fourth line against a top pair genuinely does have a higher bar (their 44% figure). **Both of those are still well below "only carry when it's certain."**
 
@@ -419,6 +656,14 @@ Tulsky's group modelled this directly: the carry/dump threshold moves with team 
 
 ### Against a standing-up defence
 
+```facts
+Read: They hold the blue line, take away the middle, and dare you to go around
+Action: Chip and chase past them — a defenceman standing still has no momentum to recover, so this is the ideal chip situation
+Action: Attack the seam between the two of them — two defenders holding a line have a gap between them by definition
+Action: Use a late player — standing up requires them to watch the puck, so a fourth attacker arriving behind the play is often unmarked
+Action: Change the entry point — swing the puck to the far side and enter on the weak side
+```
+
 They hold the blue line, take away the middle, and dare you to go around.
 
 - **Chip and chase past them.** A defenceman standing still at the line has no momentum to recover. This is the ideal chip situation.
@@ -427,6 +672,15 @@ They hold the blue line, take away the middle, and dare you to go around.
 - **Change the entry point.** Cross the line where they aren't — swing the puck to the far side and enter on the weak side.
 
 ### Against a 1-3-1 neutral zone
+
+```facts
+Read: One forechecker, three across the middle, one back — the three-across layer is designed to kill the puck at the red line
+Never: Skate into the three — that is the trap working
+Action: Use the flip / area dump over the wall — this is what it exists for
+Action: Move the puck side to side quickly — the three-man layer is strong facing forward and slow rotating laterally
+Action: Attack the outside of the wall — the 1-3-1 concedes the boards to protect the middle, so take what it gives
+Action: Use a stretch player held high behind their three, which forces the back player to stay honest and thins the wall
+```
 
 One forechecker, three across the middle, one back. The three-across layer is designed to kill the puck at the red line.
 
@@ -440,6 +694,14 @@ See [Neutral Zone Systems](neutral_zone_systems.md).
 
 ### Against an aggressive gap
 
+```facts
+Read: They close hard and early, well before their own line
+Action: Chip past them — an aggressive gap is a defender with committed momentum, and this is the best possible situation for it
+Action: Get the puck off your stick early; make the play a stride before they arrive
+Action: Use the space behind them — send someone into it and hit them
+Technique: Change of pace beats a move — hard deceleration then re-acceleration ruins a defender who is closing hard
+```
+
 They close hard and early, well before their own line.
 
 - **This is the best possible situation for the chip past.** An aggressive gap is a defender with committed momentum.
@@ -448,6 +710,15 @@ They close hard and early, well before their own line.
 - **Change of pace beats a move.** A hard deceleration then re-acceleration ruins a defender who is closing hard, because their speed is now a liability.
 
 ### On the power play
+
+```facts
+Convention: Four across the line, two wide lanes and two inside-dot lanes, so the carrier always has an option
+Convention: Attack middle ice first — get the first pass to the dot line or the middle rather than pushing wide early
+Options: The drop entry against a kill that sits back — attack the first killer to freeze them, then drop underneath
+Options: Placement entries — a planned puck below the goal line, by chip or cross-corner, with the support routes already running
+Options: Rim entries when pressure is all on the strong side; without a weak-side support player a rim is just a slow turnover
+Key: Controlled entry still produces roughly two and a half times the shots of a dump-in on the power play, but the extra man narrows the penalty for getting it wrong
+```
 
 Entries on the power play are a distinct skill, and the most common failure of a bad power play is not the setup — it is that it cannot get in.
 
@@ -473,6 +744,15 @@ Everything above, from the other side. This is the summary; [Defending the Rush]
 
 ### Gap control
 
+```facts
+Key: Gap is the space between you and the puck carrier, and it is the whole game
+Risk: Too much gap and they enter with speed, get their head up and make a play — you have conceded the controlled entry
+Risk: Too little gap and one move or one chip beats you, and now they are behind you
+Convention: The general target taught by most coaches is a gap that shrinks the whole way and never grows — Defending the Rush owns the distances
+Key: Your gap should be whatever lets you match their next change of speed
+Action: Skate backwards fast enough that you never have to turn — the moment you turn and run, the attacker chooses everything
+```
+
 **Gap** is the space between you and the puck carrier, and it is the whole game.
 
 - **Too much gap** and they enter with speed, get their head up, and make a play. You have conceded the controlled entry the data says is worth double.
@@ -482,6 +762,13 @@ Everything above, from the other side. This is the summary; [Defending the Rush]
 
 ### Standing up at the line
 
+```facts
+Action: Meet the entry at your own blue line rather than backing in
+Goal: Kill controlled entries outright — if they cannot cross with the puck, they cannot get the controlled-entry shot rate
+Risk: If you are beaten you are beaten badly — flat-footed at your own line with a forward behind you and only your goalie left
+Key: It needs good reads, your forwards back, and a partner who slides with you rather than staying deep
+```
+
 Meeting the entry at your own blue line rather than backing in.
 
 - **Upside:** it kills controlled entries outright. If they cannot cross with the puck, they cannot get the 0.5-shot entry.
@@ -490,6 +777,13 @@ Meeting the entry at your own blue line rather than backing in.
 
 ### Forcing wide, and "receiving the entry"
 
+```facts
+Convention: The traditional approach — the defencemen stay roughly between the faceoff dots, mark the carrier and the slot, and steer the play outside
+Goal: Make the entry happen where it is least dangerous
+Key: Very hard to beat cleanly, and it keeps the middle protected
+Risk: It concedes the entry — the attacker gets in with the puck, gets time on the wall, and can shoot with purpose looking for rebounds
+```
+
 The traditional approach, often taught as **receiving the entry**: the defencemen stay roughly between the faceoff dots, mark the carrier and the slot, and steer the play to the outside so the entry happens where it is least dangerous.
 
 - **Upside:** very hard to beat cleanly, and it keeps the middle protected.
@@ -497,12 +791,28 @@ The traditional approach, often taught as **receiving the entry**: the defenceme
 
 ### More aggressive alternatives — name them
 
+```facts
+Options: F1 pressure with the D holding the dots — the first forward back pressures the carrier while the defencemen hold their depth
+Options: Squash-and-slide — the defenceman, not the backchecker, forces the carrier outside while the first forward back protects the slot
+Technique: In squash-and-slide the two defencemen hold the same depth and slide across together like a foosball bar
+Risk: Squash-and-slide demands a great deal from the forwards — one lazy backcheck and the weak side is wide open
+Convention: These are systems, not laws — which one your team plays changes whether you step up, hold the dots, or take the puck
+Action: Ask, and then talk to your partner about it before the puck drops
+```
+
 - **F1 pressure with the D holding the dots:** the first forward back pressures the carrier while the defencemen hold their depth. Requires the defencemen to talk and to step on the cross-ice pass.
 - **Squash-and-slide** (as described publicly of Bruce Cassidy's Boston Bruins around 2018-19): the defenceman — not the backchecker — forces the carrier outside, while the first forward back protects the slot. The two defencemen hold the same depth and slide across together like a foosball bar, "squashing" the play against the wall if it goes wide and pinching in if it goes inside. It buys time and space back at the cost of demanding a great deal from the forwards; one lazy backcheck and the weak side is wide open.
 
 **These are systems, not laws.** Which one your team plays changes your job completely — whether you step up, whether you hold the dots, whether the first forward back takes the puck or the slot. Ask, and then talk to your partner about it before the puck drops.
 
 ### The defender's version of the offside rule
+
+```facts
+Key: You do not have to prevent the entry, only make it uncontrolled — a stick in the passing lane that forces a dump has done the same job as a hit
+Action: Force them to cross before the puck — stepping up at exactly the right instant can make an onside attacker offside
+Rule: Passing or carrying the puck into the neutral zone nullifies a delayed offside and resets everything (NHL Rule 83.3(ii))
+Key: A puck shot in on a delayed offside cannot legally end up in your net — do not panic, play it out
+```
 
 Everything in Section 2 works for you too:
 

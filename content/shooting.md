@@ -38,6 +38,15 @@ There are six things you can do to a puck to send it at the net. Learn all six; 
 
 ### The Wrist Shot — the fundamental
 
+```facts
+Position: Puck behind your back foot, cupped on the heel-to-middle of the blade
+Technique: Pull, don't slap — sweep the puck forward and never let it leave the blade
+Technique: Load the flex — push down with the bottom hand while pulling back with the top
+Action: Roll the wrists at release as the puck runs heel to toe, so it spins rather than wobbles
+Key: Blade face angle at separation sets the height; the follow-through is the cue that produces it
+Goal: Accuracy and deception from almost any body position, with the least room of any shot
+```
+
 This is the shot everything else is built from. If you only ever get one shot right, get this one.
 
 **Mechanics, in order:**
@@ -64,6 +73,15 @@ This is the shot everything else is built from. If you only ever get one shot ri
 
 ### The Snap Shot — the most useful shot in modern hockey
 
+```facts
+Position: Puck beside or just behind your skate, chest facing the net, no wind-up
+Technique: Bottom hand at or just above the midpoint — the wind-up, not the grip, separates snap from slap
+Action: Drop the blade behind the puck and load the shaft — cocking a spring, not winding up an axe
+Action: Transfer weight back to front, short and sharp; flat-footed and arms-only is the fault to fix first
+Read: Inside the faceoff dots, or a window that will be shut in half a second — this is your shot
+Risk: Less power than a slap shot; you will not beat a goalie from the blue line with it
+```
+
 The snap shot is the compromise between the wrist shot and the slap shot, and the compromise is so good that at higher levels it has quietly become the default. You get most of the power of a slap shot with most of the release speed of a wrist shot.
 
 **What makes it different from a wrist shot:** there is no long sweep. The puck sits **beside or just behind your skate**, roughly where it would be if you were stickhandling, and you shoot from there. Your chest faces the net rather than your shoulder — you are already in an attacking posture, so nothing about your body tells the goalie a shot is coming.
@@ -89,6 +107,15 @@ The snap shot is the compromise between the wrist shot and the slap shot, and th
 
 ### The Slap Shot — powerful, and usually the wrong choice
 
+```facts
+Technique: Strike the ice two to five centimetres behind the puck, not the puck itself
+Technique: Hands wide, bottom hand at the midpoint or below; a three-quarter wind-up is more useful more often
+Action: Finish low with the face square — low is what a teammate can tip and what leaves a playable rebound
+Read: From the point with a lane and time, on a set one-timer, from the top of an umbrella — roughly that list
+Risk: The wind-up flags the shot to goalie and blocker, and a miss from the point clears your own zone
+Rule: USA Hockey prohibits slap shots only in Blind Hockey; other bans are local league rules, not NHL or IIHF ones
+```
+
 The slap shot is the hardest shot in hockey and the most overused. Be honest with yourself about this: it takes the longest to set up, it is the least accurate, it is the easiest to read and block, and the situations where it is genuinely the best option are narrow.
 
 **Mechanics:**
@@ -109,6 +136,15 @@ The slap shot is the hardest shot in hockey and the most overused. Be honest wit
 ---
 
 ### The Backhand — the most neglected shot in hockey
+
+```facts
+Position: Puck on the back of the blade between middle and heel, on the flat spot rather than the curve
+Technique: Hands wider than on a forehand — the extra spread buys the leverage the backhand is short of
+Technique: Keep the puck close and sweep in an arc, rolling heel to toe; reaching kills the power
+Read: In tight, on breakaways, on rebounds to your off side, or whenever turning to the forehand costs the chance
+Key: Goalies calibrate their release read to forehands, so a backhand gives them less to read
+Action: Practise it — it is bad because it is under-practised, a pure volume problem with a volume fix
+```
 
 Almost nobody practises the backhand, and almost every goalie finds it harder to stop. Those two facts are related, and they are an opportunity sitting in plain sight.
 
@@ -132,6 +168,15 @@ Almost nobody practises the backhand, and almost every goalie finds it harder to
 
 ### The One-Timer — shooting a pass without stopping it
 
+```facts
+Action: Set your feet before the pass arrives — if you are still skating, you are receiving, not one-timing
+Position: Open your body to the passer so the pass reaches your blade without going through your feet
+Technique: Start the backswing as the pass is released, not when it arrives, and keep it short
+Read: Pass behind you — kill the shot, receive it, and take a snap shot half a second later
+Read: Bouncing or rolling puck — abandon the one-timer, cup the blade, give with it and shoot second
+Convention: Whether you are the one-timer option is a system choice — a 1-3-1 is built around it, an overload usually is not
+```
+
 A one-timer is shooting a pass directly, without receiving it first. It is the fastest way to move a shot from one side of the ice to the other, which — as the section on the royal road below explains — is exactly the thing goalies most struggle with.
 
 **Mechanics:**
@@ -153,6 +198,16 @@ A one-timer is shooting a pass directly, without receiving it first. It is the f
 ---
 
 ### Tips and Deflections — changing direction beats adding speed
+
+```facts
+Position: Blade in the puck's path at the net front, flat on the ice or just above it
+Technique: Present an angled face rather than hitting the puck — open it to lift, close it to keep it low
+Technique: Soft hands — a rigid stick fires the puck to the corner, a yielding one drops it at your feet
+Action: Aim to tip at knee, waist or chest height, and watch the puck all the way in
+Rule: A tip contacting your stick above the crossbar is no goal; at or below the bar it counts (NHL Rule 80.3)
+Rule: Batting the puck above shoulder height stops play only if your team then gains possession (NHL Rule 80.1)
+Key: Changing the puck's direction late is worth far more than adding speed to it
+```
 
 A tip (or deflection) is redirecting a shot from a teammate as it passes you, usually from the net front. It is the single most valuable thing a forward can do without ever possessing the puck, and it is closer to a receiving skill than a shooting one.
 
@@ -194,6 +249,15 @@ One coaching resource puts the trade-off as: a 70 mph shot with a 0.3-second rel
 
 ### How to actually get a faster release
 
+```facts
+Action: Stop gathering — shoot off the puck you already have, in the position you are already in
+Never: Stop your feet before shooting; learn to release in stride, mid-stride, while still moving
+Action: Shoot off the "wrong" foot — it costs velocity and buys a moment the goalie's read says no shot is coming
+Action: Change your release point — pull the puck 15–30 cm laterally before releasing
+Technique: Open the face as though going high and close it at the last instant; look at one corner, shoot the other
+Action: Look off to a teammate in the slot to move the goalie's weight, then shoot into the space that opens
+```
+
 **Stop gathering.** The most common release-killer is the little pause where you settle the puck, look up, set your feet, and then shoot. Every one of those is a frame of warning. Shoot off the puck you already have, in the position you are already in.
 
 **Do not stop your feet.** Stopping your skates before shooting is the loudest tell in hockey — every goalie reads it, every defender reads it. Learn to **shoot in stride**, releasing mid-stride while you are still moving. It feels less powerful at first because you cannot plant and load; you get that power back from your momentum, and you get a half-second of surprise on top.
@@ -210,6 +274,15 @@ One coaching resource puts the trade-off as: a 70 mph shot with a 0.3-second rel
 
 ## Accuracy and Shot Selection — where to actually aim
 
+```facts
+Targets: Five-hole while the goalie is moving, reaching or mid-drop — not into a set butterfly
+Targets: The far corner low, in the instant after a cross-ice pass, while they are still moving across
+Targets: Low blocker side to generate a rebound; the gaps under the arms and over the pads
+Read: Short side high only when the goalie has cheated off their post — not a default
+Priority: With bodies at the net, shoot to create — low, hard, at the pads; alone in the slot, pick a target and finish
+Convention: "Aim for the corners" is one coaching school and this section follows the other — you are choosing, not correcting
+```
+
 "Aim for the corners" is the standard instruction given to almost every young player, and there is a **coaching school that disagrees with it** — the one this section follows. Its argument: corners are the smallest targets on the net, they are guarded by the goalie's fastest-moving limbs, and missing one means the puck goes wide and out of the zone. Aim where the goalie is *not*, and where a miss still does something useful. Plenty of good coaches still teach corners; know that you are choosing between two schools rather than correcting an error.
 
 **The targets that are actually worth having:**
@@ -225,6 +298,16 @@ One coaching resource puts the trade-off as: a 70 mph shot with a 0.3-second rel
 ---
 
 ## Shooting Through Traffic
+
+```facts
+Action: Look for the lane before you shoot — no sight of the net or of net-front sticks means no lane
+Action: Change the angle — one or two lateral steps beats the angle their sticks were set for
+Technique: Lift the puck a few inches to clear sticks; a foot or more is untippable and easy to catch
+Technique: Low and hard for tips — knee height or below, with enough pace that a small deflection still carries
+Options: Fake the shot to drop the defender into the lane, or move the puck until a lane exists
+Goal: From the point, get it through rather than shoot it hard — the shot is there to make a tip, rebound or scramble
+Never: Shoot into a defender's shins — the most commonly wasted play in hockey, and it starts the counter
+```
 
 A shot that hits a shin pad is worse than no shot at all. You have given up possession, you have not tested the goalie, and the block usually starts a counter-attack the other way. **Shooting into a defender's shins is the single most commonly wasted play in hockey**, and it happens because players decide to shoot before they check whether there is a lane.
 
@@ -284,6 +367,15 @@ Analysts have pushed back that this formalises something coaches already knew ra
 
 ### How to create those shots
 
+```facts
+Action: Pass across the middle before shooting — cross-slot, D-to-D, or low-to-high to the far point
+Action: Attack from behind the net and out the other side so the goalie must rotate and re-find the puck
+Position: Screen in the sightline, feet just outside the blue paint, stick on the ice for a tip
+Rule: Positioning alone can void the goal if it impairs the goalie moving or defending, wherever your skates are (NHL Rule 69.1)
+Action: Shoot off a rebound immediately — do not settle it and pick a corner
+Key: A shot the goalie must move for, or cannot see, is worth several times the same shot they are set for
+```
+
 - **Pass across the middle before shooting.** A cross-slot pass, a D-to-D pass at the point followed by a shot, a low-to-high play from the corner to the far point — anything that drags the goalie across.
 - **Attack from behind the net and out the other side.** The goalie must rotate their whole body and re-find the puck.
 - **Screen.** Stand in the sightline between the goalie and the shooter, feet just outside the blue paint, stick on the ice for a tip. A screen turns a routine save into a guess. Legal — but note the test above: it is not "outside the crease is fine." Rule 69.1 disallows the goal where you impair the goalie's ability to move or defend **by positioning alone**, wherever your skates are. Take away their eyes, not their room.
@@ -296,6 +388,15 @@ The general rule: **a shot the goalie has to move for, or cannot see, is worth s
 ---
 
 ## Shooting Off the Rush
+
+```facts
+Read: Release as the defender's stick is closing, not after — waiting for a "good spot" shoots into a blocked lane
+Action: Release off the foot you do not normally release off; check which foot that is on the wing you play
+Key: On your off wing the "outside foot" is already your conventional release, so that cue tells you nothing
+Never: Stop your feet — the rush shot is the purest case for shooting in stride
+Targets: Far side low on a wide rush; five-hole off a cut to the middle as the goalie pushes across
+Options: Delay a beat and feed a trailer into the high slot — it turns a perimeter shot into a slot shot
+```
 
 Rush chances — attacking with speed before the defence is set — are among the best shooting opportunities in the game, and most of them are wasted by shooting a beat too late.
 
@@ -324,11 +425,26 @@ The goaltender's half of this — what they are trying to do to you — is in [G
 
 ### The one thing that decides it: who moves first
 
+```facts
+Goal: Make the goalie commit first — every technique here is a way of buying that
+Read: A well-coached goalie meets you out, retreats on C-cuts, stays on their feet and watches the puck
+Mindset: Their entire plan is to make you commit first; yours is the mirror image
+Never: Simply wait them out — if neither of you commits you run out of ice and lose
+```
+
 A well-coached goalie meets you out, retreats with you on C-cuts to keep the angle closed, stays on their feet as long as possible, and watches the puck rather than your body. **Their entire plan is to make you commit first.** Yours is the mirror image: **make them commit first.** Every technique below is a way of buying that.
 
 If neither of you commits, you run out of ice and lose — so you cannot simply wait. You need a way to force the decision.
 
 ### Approach speed — slower than you think
+
+```facts
+Action: Arrive at the top of the circles with less speed than you feel like carrying
+Risk: Full flight cuts you to one option and hands the goalie their easiest read
+Technique: Come in hard to the blue line, ease off through the top of the circles, accelerate into your move
+Key: A change of pace beats raw pace — worth more than any hand skill
+Read: A deke needs room; you cannot pull the puck across your body once you are past the post
+```
 
 **Arrive at the top of the circles with less speed than you feel like carrying.** Speed is the enemy of a breakaway for three reasons:
 
@@ -340,6 +456,14 @@ If neither of you commits, you run out of ice and lose — so you cannot simply 
 
 ### Deception — take their eyes off the puck
 
+```facts
+Action: Look where you are not going — head and eyes to one corner, puck to the other
+Action: Sell a shot to open the five-hole; sell a deke to get the shot away into the space they open
+Technique: Move the puck's position, not just your body — a shoulder dip alone does not force a re-read
+Read: Head and shoulder fakes are the cheapest thing to sell and the first thing a good goalie discounts
+Never: Decide your move at the blue line, before you can see what the goalie is actually giving you
+```
+
 What the goalie has been told to watch is a genuine coaching split (see [Goaltender](positions/goaltender.md#breakaways)): one school says watch the puck and treat everything above it as theatre; another says watch the shooter's chest and hips rather than the stick or the eyes. Either way, **head and shoulder fakes are the cheapest thing you can sell and the first thing a good goalie discounts.** Make the deception something they cannot dismiss — the puck's position, or your hips:
 
 - **Look where you are not going.** Head and eyes to one corner, puck to the other. Cheap, and it still works at every level below professional.
@@ -349,6 +473,16 @@ What the goalie has been told to watch is a genuine coaching split (see [Goalten
 - **Do not decide before you can see them.** Deciding at the blue line is the commonest breakaway error, because you are then executing a plan against a goalie position you never actually looked at.
 
 ### The classic moves, and what each one is for
+
+```facts
+Read: Aggressive and out of their crease → forehand–backhand, you have room to go around them
+Read: Deep in the net and squared up → backhand–forehand, the shorter move finishes before they slide
+Read: Retreating and not yet square → shoot early, off the wrong foot
+Read: On their feet, big and pushing across → five-hole, because the hole opens mid-push
+Read: Stabbing with the stick or over-committing forward → toe drag inside the poke check, then shoot
+Read: Patient, deep and giving you nothing → delay, almost stop, and force them to move
+Key: One personal go-to executed without thinking beats five you half-know
+```
 
 None of these is a trick. Each solves a specific goalie behaviour, and picking the one that matches what you are seeing is the whole skill.
 
@@ -365,6 +499,14 @@ None of these is a trick. Each solves a specific goalie behaviour, and picking t
 
 ### Where to shoot
 
+```facts
+Targets: Blocker side high — the hardest place for a retreating goalie to get a hand to
+Targets: Five-hole while they are pushing sideways, open during the push and not before or after
+Targets: Short side high only if they have over-committed to the middle; far side low if they are still sliding
+Never: Shoot at the middle of their chest — that is where the puck goes when you shoot without looking
+Action: Look at the goalie, not the puck, in the last two strides; you cannot aim at a hole you have not seen
+```
+
 The targets are not the same as on a normal shot, because the goalie is moving and often deep.
 
 - **Blocker side, high** is the classic breakaway target: the hardest place for a goalie to get a hand to while retreating.
@@ -377,6 +519,14 @@ The targets are not the same as on a normal shot, because the goalie is moving a
 
 ### Shoot or deke?
 
+```facts
+Read: Goalie out at the top of the crease and coming at you → deke; they cannot recover laterally from there
+Read: Goalie deep, square and patient → shoot; a deke just walks you into the post
+Read: Goalie retreating and not yet set → shoot early, before you reach your "spot"
+Read: Being caught from behind → shoot now, because a backchecker's stick arrives sooner than you think
+Convention: At rec level, shoot more than you deke — rec goalies are usually deep, flat-footed and square
+```
+
 The honest answer is that it depends on one read: **how deep is the goalie, and are they moving?**
 
 - **Goalie out at the top of the crease or beyond, coming at you → deke.** They have given you the room and they cannot recover laterally from out there.
@@ -387,6 +537,17 @@ The honest answer is that it depends on one read: **how deep is the goalie, and 
 **At rec level, shoot more than you deke.** Rec goalies are far more likely to be deep, flat-footed and square than out and aggressive, and a deke against a deep goalie has almost nowhere to finish.
 
 ### The rules you must know before you take one
+
+```facts
+Rule: Keep the puck moving towards the goal line — no stopping, circling back or curling away to reset (NHL Rule 24)
+Rule: No goal on a rebound of any kind, except post or crossbar, then off the goalkeeper, then in (NHL Rule 24)
+Rule: The spin-o-rama is not permitted — complete a 360° on the approach and the shot is stopped, no goal (NHL Rule 24)
+Rule: The lacrosse-style move is permitted while the puck stays below shoulder height and the crossbar (NHL Rule 24)
+Rule: If the goalie leaves the crease before you touch the puck and you do not score, you shoot again (NHL Rule 24)
+Rule: Three shooters then sudden death, and nobody shoots twice until everyone eligible has (NHL Rule 84.4)
+Rule: Neither rule sets a time limit on the approach, so any "you have N seconds" is folklore (NHL Rules 24 and 84.4)
+Convention: Rec and youth shootouts often run house rules — ask first, a shorter approach pushes the read toward shooting
+```
 
 Verified against the *NHL Official Rules 2025-2026*, **Rule 24 (Penalty Shot)** and **Rule 84.4 (Shootout)**, which applies Rule 24 to shootout attempts:
 
@@ -403,6 +564,13 @@ Verified against the *NHL Official Rules 2025-2026*, **Rule 24 (Penalty Shot)** 
 
 ### How to practise it
 
+```facts
+Action: Take breakaways at the end of every practice, against a real goalie, keeping score
+Action: Drill one go-to move until it is automatic, then a second that goes the other way
+Action: Start from your own blue line so you rehearse the change of pace, not only the last ten feet
+Action: Alternate shoot, deke, shoot, deke, so you are not building a habit the goalie can read
+```
+
 - **Take breakaways at the end of every practice, against a real goalie, keeping score.** Shooting on an empty net teaches you nothing about this.
 - **Practise your one go-to move until it is automatic, then a second in the opposite direction.**
 - **Practise the approach, not just the finish** — start from your own blue line so you rehearse the change of pace, not only the last ten feet.
@@ -411,6 +579,16 @@ Verified against the *NHL Official Rules 2025-2026*, **Rule 24 (Penalty Shot)** 
 ---
 
 ## When NOT to Shoot
+
+```facts
+Mindset: Shoot-first means taking the good chance immediately; forcing means shooting because you have the puck
+Never: Shoot when there is no lane — a shot into shins is a turnover with extra steps
+Priority: A teammate in the slot when you are not gets the pass, every time
+Read: Goalie set and square, you outside the dots with no traffic → almost no value unless you have bodies to shoot for
+Risk: Shooting as the last player back — a wide shot with nobody covering is how odd-man rushes are born
+Read: If your line is cycling and the other team is pinned and tired, another five seconds of possession beats a bad shot
+Key: Before you shoot, ask what happens if it does not go in — rebound, tip or recovery means shoot
+```
 
 A "shoot-first mentality" is good. Forcing low-percentage shots is not. **Shoot-first** means your default look is the net, you do not need talking into it, and you take the good chance immediately rather than hunting a better one — a genuinely valuable trait most amateurs lack. **Forcing** means you shoot because you have the puck, not because there is a chance; that is a turnover with extra steps.
 
@@ -428,6 +606,14 @@ A "shoot-first mentality" is good. Forcing low-percentage shots is not. **Shoot-
 
 ## Equipment Factors
 
+```facts
+Technique: Roughly right flex feels like the stick loading noticeably in a wrist shot, without feeling like a whip
+Risk: Too stiff and the shot is arms-only; too soft and the shaft flaps, wasting energy and accuracy
+Options: A deeper curve lifts and helps toe drags; a flatter one gives a better backhand and better low shots
+Action: Check your lie — stand naturally in skates and see whether the whole bottom edge of the blade touches
+Never: Chase equipment as a substitute for reps — a correct stick removes an obstacle, it does not add a skill
+```
+
 Brief, because the detail lives in [Equipment](equipment.md).
 
 - **Flex** — the number on the shaft, roughly the force in pounds needed to bend it a set distance. Flex is how much of your shot's power comes from the stick rather than your arms. **Too stiff** and you cannot bend it at all, so you lose the spring entirely and your shot is arms-only. **Too soft** and the shaft over-bends, energy is wasted flapping the shaft, and accuracy suffers. Roughly right feels like the stick loading noticeably during a wrist shot without feeling like a whip. Smaller and younger players are almost always in sticks that are too stiff for them.
@@ -439,6 +625,17 @@ Do not chase equipment as a substitute for reps. A correctly sized stick removes
 ---
 
 ## How to Practise
+
+```facts
+Priority: Volume builds the motor pattern, deliberate practice builds the skill you will use — do both
+Action: Name a target, call the shot out loud before you take it, then score it and keep a count
+Action: Practise the release, not the power — set a no-gathering rule, puck arrives, shoot
+Never: Shoot from a static, pre-set position — stickhandle, move the puck laterally, then shoot
+Action: Practise the backhand every session, and split forehand and backhand 50/50 for a month
+Action: Practise the shots you dislike — off-balance, one-handed, pucks arriving behind you
+Key: Tips and rebounds cannot be trained on a garage pad; do those on the ice
+Action: Fifteen to twenty minutes a day of focused work beats two hours on a Sunday
+```
 
 Shooting is the most trainable skill in hockey because you can practise it almost entirely off the ice, alone, in a garage.
 

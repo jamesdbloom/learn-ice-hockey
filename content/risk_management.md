@@ -46,6 +46,12 @@ Three things to take from that table:
 
 ### The cost side is invisible, and that is the problem
 
+```facts
+Key: When a risky pass works everyone sees it; when it fails, the goal arrives eight seconds later and looks like somebody else's mistake
+Risk: The chain from your decision to the puck in your net is long enough that most players never connect the two
+Action: Start connecting the two yourself — it improves your decision-making faster than any skill you can train
+```
+
 When a risky pass works, everyone sees it. When it fails, the goal usually arrives eight seconds later and looks like somebody else's mistake — a missed coverage, a screened goalie, a bad bounce. **The chain of causation from your decision to the puck in your net is long enough that most players never connect the two.** Coaches connect it. Video connects it. Start connecting it yourself and your decision-making improves faster than any skill you can train.
 
 ---
@@ -71,6 +77,15 @@ Flip that around and you have the defensive version of the same fact: **the spac
 
 ### The risk map
 
+```facts
+Read: Grade every area by one question — if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?
+Risk: Your own slot is catastrophic — the opponent gets the puck in the highest-percentage shooting area with zero seconds of recovery time
+Risk: Your own zone generally is high — the puck is 30–50 feet from your net and one pass from the slot
+Risk: The middle of the neutral zone is high — dangerous and disorganised, and this is where odd-man rushes are manufactured
+Risk: The offensive blue line is moderate — the cost scales with how many of your players are ahead of the puck
+Risk: The offensive corners and below their goal line are low — this is where you should be at your most creative
+```
+
 Every area of the ice can be graded by one question: **if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?**
 
 | Where you are | Risk of a turnover | Why |
@@ -82,6 +97,13 @@ Every area of the ice can be graded by one question: **if I lose the puck here, 
 | **The offensive corners and below their goal line** | **Low** | You are 150-plus feet from your own net with all five teammates between the puck and danger. The opponent needs a clean breakout, a neutral-zone crossing and an entry before they threaten anything. **This is where you should be at your most creative.** |
 
 ### Why north turnovers are so much worse than south turnovers
+
+```facts
+Key: A turnover has a direction, and the direction changes the cost more than the location does
+Risk: A north turnover — losing it while it travels toward your own net — makes the turnover and the counterattack the same event
+Risk: A south turnover deep in their end separates the turnover from the counterattack by four or five seconds, which is enough to get organised
+Action: Weigh the direction of a risky play as well as its location — a blind pass up your own wall is bad, the same pass in their end is a nothing play
+```
 
 A turnover has a direction, and the direction changes the cost more than the location does.
 
@@ -100,6 +122,14 @@ A turnover has a direction, and the direction changes the cost more than the loc
 
 ### 1. Never pass D-to-D through the slot — go behind the net
 
+```facts
+Never: Pass D-to-D through your own slot — an interception leaves the interceptor in the slot facing your goalie
+Action: Take it behind the net instead — a longer route by maybe eight feet, and half a second slower
+Risk: A failure behind the goal line is a battle behind the net rather than a shot from twenty feet
+Convention: A coaching convention, not a rule — some teams allow a D-to-D exchange high in the zone, above the tops of the circles
+Action: Find out where your coach draws that line
+```
+
 **D-to-D** means one defenceman passing to their partner. In your own zone, the two obvious routes are *through* the front of the net or *behind* it.
 
 **Why not through.** A pass through your own slot travels across the highest-danger area on the ice, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
@@ -109,6 +139,14 @@ A turnover has a direction, and the direction changes the cost more than the loc
 *Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, where the interception would happen 50 feet out. Know where your coach draws the line.
 
 ### 2. Never make a blind backhand pass up the middle of your own zone
+
+```facts
+Never: Make a blind backhand pass up the middle of your own zone — the worst tool, the worst information and the worst location in one motion
+Risk: The backhand arrives slowly and imprecisely, and blind means you do not know whether the target is a teammate or an opponent
+Action: Turn your shoulders and take the extra half-second to look
+Options: Put it on the boards so a mistake becomes a battle, or use the glass if you genuinely have no time
+Convention: No rule forbids it — about as close to universally taught as coaching gets, and the claim that it is a top source of amateur goals is coaching observation, not measurement
+```
 
 A **blind pass** is one made without seeing the target — you throw it to where you assume someone is.
 
@@ -120,6 +158,15 @@ A **blind pass** is one made without seeing the target — you throw it to where
 
 ### 3. Never make a cross-ice pass in your own defensive zone
 
+```facts
+Never: Make a cross-ice pass in your own defensive zone — it crosses every forechecking stick and spends the longest of any pass in the air
+Risk: If it is picked off, it is picked off by someone whose momentum already carries them toward your net
+Risk: Even when it works it usually puts your teammate under immediate pressure facing the boards
+Action: Move the puck north, or move it behind the net
+Action: If the only outlet is on the far side, go D-to-D behind the goal line and then north — two low-risk passes beat one high-risk one
+Convention: Nothing in the rulebook touches this — some teams accept it above the tops of the circles, almost nobody below them
+```
+
 **Why not.** An **east–west** pass in your own end crosses every forechecking stick on the ice, travels perpendicular to the direction you want to go, and if it is picked off it is picked off by someone whose momentum already carries them toward your net. It also takes the longest time in the air of any pass available to you, which means the most time for someone to read it.
 
 There is one more cost people miss: even when it *works*, a cross-ice pass in your own end usually puts your teammate under immediate pressure facing the boards, because the forecheck slid across with the puck. You took a big risk to create a worse situation.
@@ -130,6 +177,15 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 
 ### 4. Never both defencemen to the puck
 
+```facts
+Never: Send both defencemen to the same puck — you commit 100% of your defensive-zone depth to a 50/50 battle
+Risk: Lose it and there is literally no one between the puck and your goalie
+Action: One goes and takes the body or the puck; the partner covers the space it will squirt into, staying between puck and net
+Action: Talk about it out loud
+Convention: A coaching convention with real exceptions — aggressive systems send both defencemen below the goal line on a specific read
+Key: Somebody must be home; what varies is who — find out what your team plays
+```
+
 **Why not.** If both of you attack the same puck, you have committed 100% of your defensive-zone depth to a 50/50 battle. Win it and you gain nothing you would not have gained with one of you. Lose it and there is no one — literally no one — between the puck and your goalie except forwards who are facing the wrong way.
 
 **What to do instead.** One goes, one supports. The one who goes takes the body or the puck; the partner reads the likely outcome and covers the space it will squirt into, staying between the puck and the net. Talk about it out loud — see [On-Ice Communication](on_ice_communication.md).
@@ -137,6 +193,14 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 *Coaching convention, with real exceptions.* Aggressive defensive-zone systems will send both defencemen below the goal line on a specific read — usually when a forward has already dropped in to cover the net front. The principle survives: **somebody must be home.** What varies is who. The house default throughout is a **low zone collapse (zone) coverage**, in which the strong-side defenceman pressures and the weak-side defenceman holds the net front; find out what your team plays.
 
 ### 5. Never force a low-percentage pass at the offensive blue line with no support back
+
+```facts
+Never: Force a low-percentage pass at the offensive blue line with no support back
+Risk: The cost of the failure is not the loss of possession, it is the odd-man rush — one touch turns your five-man attack into their three-man rush
+Read: If this pass is intercepted right now, how many teammates are behind the puck? Fewer than two, do not make it
+Options: Chip the puck past the defender into the space behind them and race, or dump it into the far corner and forecheck
+Convention: Not a rule and genuinely negotiable — a team trailing late, or built to attack in waves, will accept this risk deliberately
+```
 
 **Why not.** The offensive blue line is where your attack is at its most stretched — your forwards are ahead of the puck, your defencemen have often stepped up to hold the zone. A turnover there converts your five-man attack into their three-man rush in one touch. **The cost of the failure is not the loss of possession; it is the odd-man rush.**
 
@@ -148,6 +212,14 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 
 ### 6. Never stickhandle in your own slot
 
+```facts
+Never: Stickhandle in your own slot — stickhandling buys time, and there is no time to buy and nothing worth buying it for
+Risk: Head down, surrounded, in the highest-danger area — you either gain nothing or concede everything
+Action: Take the puck out of the slot first — one stride to the wall, behind the net, or a hard shot of it off the glass
+Key: Change the location first, then make the decision
+Convention: Not a rule — about as close to unanimous as coaching advice gets, but it is still advice
+```
+
 **Why not.** Stickhandling is a play that buys time. In your own slot there is no time to buy and nothing worth buying it for. Your head is down, you are surrounded, you are in the highest-danger area on the ice, and the only outcomes are "you get out of it having gained nothing" or "you lose it having conceded everything."
 
 **What to do instead.** Take the puck out of the slot before you do anything with it — one stride to the wall, behind the net, or a hard shot of it off the glass. **Change the location first, then make the decision.** This one sentence is most of what this document is about.
@@ -155,6 +227,15 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 *Coaching convention.* Not a rule. It is about as close to unanimous as coaching advice gets, but it is still advice.
 
 ### 7. Never leave your feet to make a check
+
+```facts
+Never: Leave your feet to make a check — you cannot change direction in the air
+Risk: A carrier who reads it makes you miss with one movement, and you are out of the play for four or five seconds
+Action: Skate, stay on your feet and keep your stick in the lane — take away the option rather than the puck
+Rule: NHL Rule 42.1 penalises a player who "skates, jumps into or charges" an opponent, and USA Hockey Rule 607 names "leaving one's feet (jumping)" — the leap is written into the offence
+Technique: Blocking a shot is a separate question, and the coached default is a standing block — close with your feet, not by lunging
+Key: The real cost is positional, not disciplinary — down is out of the play
+```
 
 **Why not.** You cannot change direction in the air. A puck carrier who reads it makes you miss with one movement, and you are now on the ice behind the play, out of it entirely, for four or five seconds. The upside is small — best case you break up one play — and the downside is that you have removed yourself from the defensive structure at the precise moment it needed five players.
 
@@ -168,6 +249,15 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 
 ### 8. Never change with the puck in your defensive zone, or when the play is coming at you
 
+```facts
+Never: Change with the puck in your defensive zone, or when the play is coming at you
+Risk: A line change is the most vulnerable four seconds your team has — the main risk is the opponent attacking four-on-five
+Action: Change when the puck is deep in their end, when your team has clear possession in the neutral zone, or at a stoppage
+Mindset: If you are tired and stuck in your own zone, you are not tired enough to change — get the puck out first
+Rule: A departing player must be within five feet of the bench and out of the play before the substitute steps on, or it is a bench minor for too many men (NHL Rule 74.1)
+Convention: No rule forbids changing at a bad moment — 74.1 governs only how the exchange is made
+```
+
 **Why not.** A **line change** is the most vulnerable four seconds your team has: for part of it you have players who are effectively not in the play. Under NHL **Rule 74.1**, a departing player must be within five feet of the bench and out of the play before the substitute steps on, and a bench minor for **too many men** follows if the two overlap in any meaningful way. But the penalty is not the main risk — the main risk is that the opponent attacks four-on-five into a zone where you have no margin.
 
 **What to do instead.** Change when the puck is deep in *their* end, when your team has clear possession in the neutral zone, or at a stoppage. If you are tired and stuck in your own zone, **you are not tired enough to change.** Get the puck out first, then change on the fly as the play moves north. See [Game Management](game_management.md).
@@ -175,6 +265,16 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 *Coaching convention, with a rule attached to one failure mode.* No rule forbids changing at a bad moment; Rule 74.1 only governs *how* the exchange is made. The convention is about the four seconds of vulnerability, not the penalty.
 
 ### 9. Never shoot the puck over the glass from your own zone — it is a delay-of-game minor
+
+```facts
+Rule: Shooting or batting the puck directly out of the playing surface from your defending zone is a minor, except where there is no glass (NHL Rule 63.2(iii))
+Rule: What counts is where the puck was when you hit it, not where it crossed the glass (NHL Rule 63.2(iii))
+Rule: Over the glass behind the players' bench is penalised; into the bench itself is not (NHL Rule 63.2(iii))
+Rule: Directly off a faceoff, no penalty is assessed (NHL Rule 63.2(iii))
+Rule: Even where no penalty applies, the faceoff goes to the nearest spot in the zone the puck was shot from (NHL Rule 85.1)
+Action: Off the glass and out — hard, low and along the boards so it stays in; if you are panicking, aim lower than feels right
+Action: Check your league — many recreational and youth associations do not enforce puck-over-glass at all
+```
 
 **This is an actual rule, not a convention.** NHL **Rule 63.2(iii)** imposes a minor penalty on any player who "shoots or bats (using his hand or his stick) the puck directly (non-deflected) out of the playing surface from his defending zone, except where there is no glass." Three details that matter on the ice:
 
@@ -189,6 +289,16 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 ---
 
 ## The "almost always right" list
+
+```facts
+Action: Off the glass and out when you are in trouble — it moves you from catastrophic to high, not to safe, so get organised once it lands
+Action: Shoot on net with traffic — the worst realistic outcome is an offensive-zone faceoff or a puck retrieved in the corner
+Action: Take the simple play under pressure — the give-and-go you can make with three seconds becomes a giveaway with one
+Action: Put the puck deep when your line is tired — tired players make late decisions, and late decisions in your own end are how goals happen
+Rule: Shoot it in from your own side of the centre red line and, if their goalie freezes it, the faceoff is in their zone and they may not change lines (NHL Rule 63.8)
+Action: Take the safe option in the last minute of a period — give them nothing to walk off with
+Priority: When you have time, make the possession play; when you do not, get it out — the differentiator is possession, not method
+```
 
 Every one of these is a low-variance play: modest upside, very small downside. **You will never be the story of the game for making them, and that is the point.**
 
@@ -210,6 +320,16 @@ This is the most practical section here. Each list is a **priority order**: run 
 
 ### Defensive zone — you have just retrieved the puck, forecheck arriving
 
+```facts
+Priority: Quick-up → Up → Wheel → D-to-D → Reverse → Rim → Glass, taking the first option genuinely available
+Key: This is a hierarchy for a retriever with no time to read, not a ranking of breakout plays
+Action: Quick-up first — first look up ice, then down; the window closes before you finish checking the rest of the list
+Read: Reverse beats a forechecker who has over-run you; rim beats one who is sealing you against the wall
+Never: Take D-to-D through the slot — go behind the goal line
+Action: Nothing there? Take the hit, protect the puck against the boards and eat the faceoff
+Never: Solve it by putting the puck over the glass
+```
+
 This is the same order taught in [Defender](positions/defender.md) — **Quick-up → Up → Wheel → D-to-D → Reverse → Rim → Glass** — with the reasoning attached. **It is a hierarchy for a retriever under pressure, not a ranking of breakout plays:** [Breakouts](breakouts.md) is the authority and is explicit that which breakout you run is chosen by reading the forecheck in front of you, not picked off a list of favourites. Use this list when there is no time to read anything.
 
 1. **Quick-up.** *Did we just win this puck, with their forwards still below it and no shape formed?* → Move it up ice on the first touch. [Breakouts](breakouts.md) rates this the lowest-risk, highest-reward exit there is, precisely because the two or three seconds after a turnover are the least organised the opposition will ever be. It is first on the list because the window closes before you finish checking the rest of it. **First look up ice, then down.**
@@ -223,6 +343,16 @@ This is the same order taught in [Defender](positions/defender.md) — **Quick-u
 
 ### Neutral zone — you are carrying through the middle third
 
+```facts
+Priority: Stretch pass behind their defence → winger with speed on the wall → middle lane with support → gain the line with control → chip or dump
+Read: Anyone behind their defence? That is the highest upside available here, and it travels away from your own net
+Action: Move it to a winger with speed going north and follow — north passes to moving targets are the safest productive play in this zone
+Risk: Take the middle lane only with support — a turnover there creates an odd-man rush going the other way
+Never: Turn back into the middle of the ice at your own blue line, or make an east–west pass across centre ice
+Convention: That last one is coaching consensus, not a counted comparison — no public data ranks odd-man rushes by the play that created them
+Options: Nothing there? Chip the puck past their defenceman into space and race, or dump to the far corner and forecheck
+```
+
 1. **Is anyone behind their defence?** → Stretch pass or area pass into that space. Highest upside available in the neutral zone, and it travels away from your own net.
 2. **Is a winger with speed available on the wall going north?** → Move it and follow. North passes to moving targets are the safest productive play in this zone, which is why they rank above anything through the middle.
 3. **Is the middle lane open with a teammate supporting?** → Take it, but only with support, and knowing you are choosing the highest-risk square on the risk map above. The middle of the neutral zone is graded **High** *specifically because* a turnover there creates an odd-man rush going the other way.
@@ -231,6 +361,16 @@ This is the same order taught in [Defender](positions/defender.md) — **Quick-u
 6. **Never at any point in this list:** turn back into the middle of the ice at your own blue line, or make an east–west pass across centre ice. Both are named across coaching material as prime manufacturers of 2-on-1s against — *coaching consensus, not a counted comparison; no public data ranks odd-man rushes by the play that created them.* [Defending the Rush](defending_the_rush.md) lists neutral-zone turnovers as one of four causes and states it the same way.
 
 ### Offensive zone — you have the puck below or at the tops of the circles
+
+```facts
+Priority: Lane to the net with traffic → pass into the middle → puck to the net for a rebound → cycle → point with a screen → chip back deep
+Key: Failure here is cheap and success here is worth more than anywhere else — this is where you get to be dangerous
+Action: Shoot the moment there is a lane to the net with a body in front of the goalie
+Read: Rank by value times availability — but when the seam into the middle is genuinely there, it outranks everything
+Action: Under pressure with support below you, take it behind the net or to the corner and cycle
+Key: "The point is open" means a lane to the net, not just a lane to the defenceman
+Never: Force it through their blue line on the way out — losing the puck in their corner is free, losing it at their line is a rush against
+```
 
 **This is where you get to be dangerous.** The risk map says failure here is cheap; the expected-goals data says success here is worth more than anywhere else. Both point the same way.
 
@@ -244,6 +384,17 @@ This is the same order taught in [Defender](positions/defender.md) — **Quick-u
 ---
 
 ## Risk and game state
+
+```facts
+Key: The correct risk level is not a personality trait — it moves with the scoreboard and the clock
+Action: Leading by one in the third, take risk down and reach for the safe options earlier than usual; leading by three, down hard
+Action: Trailing late, take risk up — pinch, activate, force the entry; not raising your risk when trailing is not being safe
+Action: Shorthanded, down and clear it hard — the one exception is a genuine 2-on-1 the other way
+Action: On the power play, up inside their zone and down at the blue line — a shorthanded rush against four attackers is the worst-value event there is
+Rule: NHL regular-season overtime is five minutes of 3-on-3 sudden death (Rule 84.1); playoff overtime is full 20-minute periods at 5-on-5 (Rule 84.5)
+Convention: In 3-on-3 the convention is to be patient, regroup rather than force an entry, and only attack with numbers
+Action: Empty net and trailing, risk up to the maximum — the only bad decision is a slow one
+```
 
 The correct risk level is not a fixed personality trait. **It moves with the scoreboard and the clock.** Full treatment lives in [Game Management](game_management.md); here is how it maps onto the decisions above.
 
@@ -274,11 +425,26 @@ Definitions first, because these three get conflated:
 
 ### The distinction
 
+```facts
+Key: Anticipation is acting on information; gambling is acting on hope — they look identical from the bench when they work
+Read: The carrier's hips and shoulders turned toward the receiver, two looks at the receiver, the receiver's stick already presented as a target
+Read: You counted their other options and there are none, or you have seen this player make this exact pass already tonight
+Mindset: You are gambling if the honest answer is "it felt like a pass was coming"
+```
+
 **Anticipation is acting on information. Gambling is acting on hope.** They look identical from the bench when they work. They are completely different decisions.
 
 You are anticipating if you can answer *why* before you move — the carrier's hips and shoulders turned toward the receiver, they looked at the receiver twice, the receiver's stick is already presented as a target, you counted their other options and there are none, or you have seen this player make this exact pass already tonight. The full cue list is in [Scanning and Anticipation](scanning_and_anticipation.md). You are gambling if the honest answer is "it felt like a pass was coming."
 
 ### The second test: who is behind you?
+
+```facts
+Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am right and I still miss it?"
+Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
+Risk: The same pinch with your centre below the goal line is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
+Priority: Three questions in half a second — information or a feeling? who is behind me if I miss? what does the scoreboard allow?
+Action: Two yeses and a green light from the third, go; otherwise hold your position, which is itself a decision
+```
 
 Even a well-read risk is a bad risk if nobody is covering the space you left. **Before you jump a lane, pinch or activate, the question is not only "am I right?" but "what happens if I am right and I still miss it?"**
 
@@ -295,6 +461,14 @@ Two yeses and a green light from the third: go. Otherwise, hold your position �
 ---
 
 ## The asymmetry of hockey mistakes
+
+```facts
+Key: A missed offensive chance costs you a chance; a defensive-zone turnover costs you a goal
+Risk: Ten creative plays in their end with eight failures leaves you clearly ahead; ten in your own end with eight failures puts some in your net
+Priority: In your own end simple is usually right — the downside is enormous and the upside of complexity is small
+Priority: In their end creative is usually right — the downside is nearly zero and the upside is the most valuable event in hockey
+Mindset: The players people call "smart" are not the ones who take the fewest risks, but the ones who take them in the right end of the rink
+```
 
 Here is the structural fact that makes hockey different from most team sports:
 
@@ -324,6 +498,14 @@ A penalty is a decision like any other, and it has a price you can actually look
 Against ~3.1 goals per team per game, that is a meaningful piece of a game, given away.
 
 ### When a penalty is genuinely worth taking
+
+```facts
+Read: Is the thing you are preventing more likely to become a goal than the one-in-five chance you are handing over?
+Action: Take the penalty to deny a certain goal — a 21% chance beats a 100% chance every time
+Options: Late in a game, a minor that breaks a rush which would tie or win it is a defensible trade
+Options: Stopping play when you are pinned and exhausted with no change available is real, effective and universally disliked
+Never: Retaliate, send a message, stand up for a teammate after the whistle, or take anything at all in the first period
+```
 
 Rarely, and less often than players think, because the test is unforgiving: **is the thing you are preventing more likely to become a goal than the one-in-five chance you are handing over?** Three cases pass it.
 

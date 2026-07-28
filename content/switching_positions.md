@@ -14,6 +14,14 @@ It does not re-explain the positions. Where you need to know what a centre does 
 
 ## How claims in this document are labelled
 
+```facts
+Convention: Everything here is coaching craft unless it says otherwise — widely done, tested by nothing
+Never: Repeat any of it to a teammate as though it were measured
+Key: There is no published evidence base for how players move between positions — read that as "nothing published", not as proof that nothing exists
+Key: The one piece of governing-body guidance is USA Hockey's 8U "no full-time goalies" recommendation, and it says nothing about how a transition is made
+Action: Treat a claim as sourced only where a named rulebook, study or document is cited — and carry that citation's own qualifications
+```
+
 Most of what follows is **coaching craft**: what experienced coaches and players do, tested by nothing. That is not a reason to ignore it — most of hockey is coaching craft — but it is a reason not to repeat it to a teammate as though it were measured. The labelling convention is borrowed from [Mental Game](mental_game.md), which uses it throughout:
 
 - **"Coaching craft."** Widely done, never tested. The default status of everything in this document unless it says otherwise.
@@ -40,11 +48,29 @@ Start here, because it is more than new movers expect and it is the reason a swi
 
 ### What does not transfer: the map in your head
 
+```facts
+Key: What you lose is a set of location reflexes — where to look first, where to drift, who you pick up when the puck goes to a particular place
+Key: Those reflexes are position-specific and took a season to build
+Risk: For the first few weeks you will be thinking about things you used to do without thinking, and thinking is slow
+Mindset: That is normal and it passes
+```
+
 What you actually lose is a set of location reflexes — where to look first, where to drift when nothing is happening, who you are responsible for when the puck goes to a particular place. Those took a season to build and they are position-specific. For the first few weeks in a new spot you will be **thinking** about things you used to do without thinking, and thinking is slow. That is normal and it passes.
 
 ---
 
 ## Wing → centre
+
+```facts
+Position: Under a low zone collapse your defensive-zone responsibility moves with the puck — low to the corner when it is low and strong-side, back to the high slot when it is not
+Convention: Zone, man-on-man and hybrid are coaching choices, not laws — ask your coach which one your team plays before your first shift
+Action: Swing low on the breakout — inside the faceoff dots and below the hash marks, so your defenceman has a middle-lane option
+Never: Stand where a winger stands, out on the wall, where one opponent can cover two of you
+Convention: That is the conventional swing breakout specifically — a centre fly or a flat/spread breakout wants you somewhere else, so find out which you are in
+Action: Start faceoff work with stance, grip and the defensive-zone draw — the NHL win-rate spread is owned by Faceoffs and is far too wide to be luck
+Action: Call the line change, and call it earlier than you used to
+Key: A centre works more of the ice — three zones, full width — not more distance; Center owns that claim and the measurement behind it
+```
 
 The most common switch in hockey, and the biggest step up in responsibility short of changing to defence.
 
@@ -62,6 +88,17 @@ The most common switch in hockey, and the biggest step up in responsibility shor
 ---
 
 ## Centre → wing
+
+```facts
+Position: Your lane is the outside third of the ice on your side, running the length of the rink
+Never: Drift into the middle because that is where the decisions are — it collapses your line's spacing every time
+Position: In your own end, between the opposing defenceman on your side and the slot, denying the shot and the seam at once
+Convention: That point-coverage job is the low zone collapse version — under man-on-man you follow your check wherever they go, corner included
+Action: Leave the point the moment your team wins the puck and come down the wall to the outlet spot between the hash marks and the goal line
+Technique: On the wall, puck on the far side of your body from the checker, backside into them, feet wide — and know where it is going before you arrive
+Never: Direct traffic from the wall — the rotations are no longer yours to manage, and chasing them takes you out of your lane
+Key: You will touch the puck less — the share of ice time skaters actually hold it is owned by Playing Without the Puck
+```
 
 Usually experienced as a demotion. Usually isn't — coaches move centres to the wing to get a defensively reliable player onto a line that needs one, to put a good shot in a shooting position, to reduce a young player's load, or simply because they have four centres and three of them have to play somewhere.
 
@@ -83,6 +120,17 @@ The largest change available in hockey without putting on pads. Two of the three
 
 ### The technical barrier is real: backward skating and pivots
 
+```facts
+Key: Gap control is entirely a skating problem — you cannot hold a tight gap unless you travel backwards nearly as fast as they travel forwards
+Risk: Too big a gap and you get walked into the zone; pivot early and you are beaten by the first change of direction
+Key: Both of those are skating failures being scored as decision failures
+Technique: Backward C-cut — one foot at a time to full extension, full weight onto the pushing foot, recovery back underneath you
+Never: Push weakly with both feet at once, which is the slow way most beginners default to
+Action: Drill backward crossovers, where backward speed actually comes from, and pivots in both directions
+Convention: Pivoting toward the boards is a coaching default, not a law — some coaches want a middle pivot on specific reads, so ask yours and be competent both ways
+Convention: Skating timeframes are coaching-provider estimates rather than measurements — weeks for edge feel, months for stopping both ways, a season for a rebuilt stride
+```
+
 Be honest with yourself about this, because it is the part most conversion stories skip. **Gap control — the distance you hold between yourself and an oncoming puck carrier — is entirely a skating problem.** You cannot hold a tight gap against a forward with speed unless you can travel backwards nearly as fast as they travel forwards. A defenceman who can't will do one of two things: leave a huge gap and get walked into the zone, or pivot early to skate forwards and get beaten by the first change of direction. As [Skating](skating.md) puts it: **both of those are skating failures being scored as decision failures.**
 
 So the first thing a converting forward needs is not tactical. It is:
@@ -95,6 +143,15 @@ So the first thing a converting forward needs is not tactical. It is:
 
 ### "Force them outside" and "getting beaten wide" are not the same thing
 
+```facts
+Technique: Angle your body so the inside lane is shut and the only route runs toward the boards, where the wall becomes a second defender
+Position: Still between the attacker and the net — that is what makes it forcing outside rather than getting beaten wide
+Risk: Beaten wide means the attacker is past your outside shoulder with open ice behind you, and there is nothing left
+Key: Stay on the defensive side of the puck — anything that puts an attacker between you and your net has already gone wrong
+Never: Read the instruction as "never let anyone get to the outside"
+Key: Gap distances themselves belong to Defending the Rush, which owns them — take the numbers from there
+```
+
 New defencemen routinely hear both instructions and conclude the position contradicts itself. It doesn't, and the distinction is worth getting straight before your first shift.
 
 - **Forcing them outside** means angling your body so the inside lane is shut and the only available route runs toward the boards, where the wall becomes a second defender and the shooting angle is poor. **You are still between the attacker and the net.** This is what [Defending the Rush](defending_the_rush.md) and [Defender](positions/defender.md) mean by taking away the middle.
@@ -103,6 +160,17 @@ New defencemen routinely hear both instructions and conclude the position contra
 The instinct to build is therefore *stay on the defensive side of the puck* — anything that puts an attacker between you and your net has already gone wrong — not *never let anyone get to the outside*. Gap distances themselves belong to [Defending the Rush](defending_the_rush.md), which owns them: 2–3 stick lengths in the neutral zone, closing to about a stick and a half at the red line and one stick length at your own blue line.
 
 ### What else is genuinely new
+
+```facts
+Mindset: One layer behind you now, not two — that changes how you weigh risk, not how hard you compete
+Never: Carry or pass D-to-D through your own slot — go behind the net, where an interception means nothing
+Position: One of you on the puck, one at the goalmouth, swapping every time the puck crosses the middle — and talk constantly
+Convention: Under a low zone collapse the goalmouth is yours and the high slot is the centre's; under man-on-man the net front belongs to whoever's man is standing there
+Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2) — off the glass and along it is fine
+Risk: You will ice the puck far more often — defensive-zone draw, no line change, no timeout, and it lands on your pair; Rules Primer owns the rule text
+Options: Three offensive-zone depths — just inside the blue line by default, the top of the circle activated, below the circles only if a forward has taken your spot at the line
+Convention: Only one defenceman pinches at a time — a near-universal coaching convention rather than a rule, with real exceptions coaches do call
+```
 
 - **Your mistakes are visible and close to final.** As a forward, a bad read had two layers behind it. As a defenceman it has one — your goalie — and that changes how you should weigh risk, not how hard you should compete. (The position with no layers behind it at all is described honestly in [Goaltender](positions/goaltender.md), and it is worth reading that section before you decide your new job is the exposed one.) The practical consequence is the most repeated defensive instruction in this guide: **never carry or pass D-to-D through your own slot** — go behind the net, where an interception means nothing.
 - **You play as half of a pair, not as one of three.** One defenceman is on the puck, one is at the goalmouth, and the two of you swap every time the puck crosses the middle. Under low zone collapse the goalmouth is yours and the high slot is the centre's; that split is the whole of net-front defending, and under **man-on-man** the net front belongs instead to whoever's man is standing there. Talk constantly. [Defender](positions/defender.md).
@@ -116,6 +184,17 @@ The instinct to build is therefore *stay on the defensive side of the puck* — 
 ---
 
 ## Defence → forward
+
+```facts
+Mindset: Attack space instead of denying it — find the space nobody is defending, arrive in it late, and force somebody to make a decision
+Never: Wait until the play is obviously safe before moving — by then the space has closed
+Key: F1, F2 and F3 are roles defined by order of arrival, not positions and not people — if you are first on the puck you are F1
+Convention: How many forwards go deep is your team's system — a 2-1-2 sends two, a 1-2-2 sends one — and which side F3 sits on is a genuine coaching split, so ask
+Rule: Offside needs both skates completely over the line before the puck — and a raised skate keeps you onside under NHL and IIHF rules but not under USA Hockey Rule 630(a)
+Convention: Centre in the middle on the backcheck and wingers in the outside lanes is a coaching choice, not a law — under every scheme somebody owns the middle
+Action: Work your first three steps and your stop-and-start — a forward's shift is a sequence of accelerations
+Mindset: Stop being above the puck — somebody is above it, and on most shifts it is not you
+```
 
 The overlooked direction, and often the harder mental adjustment of the two, because you are being asked to unlearn caution that has been rewarded for years.
 
@@ -134,6 +213,17 @@ The overlooked direction, and often the harder mental adjustment of the two, bec
 
 ## Anyone → goaltender
 
+```facts
+Key: Goaltending is a different sport that shares a rink — not a position you drift into for a few weeks to see how it goes
+Technique: Short lateral pushes — shuffles and T-pushes, in and out along the angle, post-to-post, recovery to your feet — almost all inside-edge work in a deep stance
+Action: Ask your club whether they have house goalie gear and a goalie coach before you buy anything
+Rule: Except when all goalkeepers are incapacitated, no player on the game roster may wear the equipment of the goalkeeper (USA Hockey Rule 203(d))
+Rule: A HECC-certified neck laceration protector is required in all age classifications except Adults (USA Hockey Rule 304(g))
+Rule: A BNQ-certified throat protector is required for minor and female hockey, and a dangler on the mask does not satisfy it on its own (Hockey Canada Rule 3.6(c))
+Action: Go to a goalie-specific session rather than a team practice, and give it a block of weeks — the first night is unrepresentative in both directions
+Action: Read "What a Goalie Needs From Their Skaters" in Goaltender whether or not you ever play the position
+```
+
 Say this plainly: **goaltending is a different sport that shares a rink.** [Goaltender](positions/goaltender.md) opens by explaining why it cannot even use the same document structure as the other three — you spend the whole game in one zone, you carry the puck essentially never, and you pressure nobody. It is not a position you drift into for a few weeks to see how it goes.
 
 Four things make this switch different in kind from the others.
@@ -151,6 +241,17 @@ Four things make this switch different in kind from the others.
 
 ## Playing your off wing
 
+```facts
+Position: Off wing means the puck sits on the inside of your body, between you and the middle of the ice
+Goal: Enter the offensive zone with your stick toward the centre — more options for moving the puck and a better forehand angle from prime mid-ice
+Convention: The off-wing half-wall is standard on the power play because it keeps the cross-seam one-timer live — Special Teams owns that
+Risk: A breakout pass up the wall now arrives on your backhand, which costs a beat and can weaken the exit
+Technique: Put your back to the boards to receive it
+Options: An open blade curve makes backhand receptions easier — Equipment covers the trade-off
+Key: Most professionals still play their strong side at even strength, on CARHA's account citing nhlspecialteams.com rather than tracking of its own
+Key: A defenceman's off side puts retrievals behind your own net and D-to-D passes on your backhand — Rink Map and Glossary covers the reasoning
+```
+
 Your **off wing** means a left-shot playing right wing, or a right-shot playing left wing, so the puck sits on the inside of your body — between you and the middle of the ice — rather than toward the boards. It is not a demotion, it is not a promotion, and it is much more common than new players expect.
 
 **Why coaches do it.** Entering the offensive zone with your stick toward the centre of the ice opens more options for moving the puck, and gives a better angle for a forehand shot from a prime mid-ice location; a winger coming in on their strong side has the stick along the boards and needs more work and more time to get into a shooting position. On the power play the **off-wing half-wall is standard**, precisely because it puts the puck on your inside hand and makes the cross-seam one-timer live at all times — [Special Teams](special_teams.md) owns that. The CARHA Hockey material, **citing nhlspecialteams.com rather than any tracking of its own**, notes that at even strength the majority of professionals still play their strong side, and that it is typically players with stronger puck-handling who elect the off wing.
@@ -162,6 +263,15 @@ Your **off wing** means a left-shot playing right wing, or a right-shot playing 
 ---
 
 ## The habits that actively work against you
+
+```facts
+Key: Your existing instincts are not neutral — several of them are precisely wrong in the new job
+Risk: Because they are automatic they surface exactly when you are under pressure and have no time to think
+Convention: Coaching craft throughout — but the most consistently described pattern in this whole topic
+Action: Name the habit out loud before the shift — "I am going to feel wrong going into that corner and I am going in anyway"
+Key: Unlearning is slower than learning
+Never: Rely on general effort — the only reliable lever you have is deliberate attention on the specific reflex
+```
 
 This is the section that distinguishes a position switch from simply learning a new position. Your existing instincts are not neutral. Several of them are precisely wrong in the new job, and because they are *automatic* they surface exactly when you are under pressure and have no time to think. **Coaching craft throughout — but it is the most consistently described pattern in this whole topic.**
 
@@ -183,6 +293,16 @@ The general fix is the same in every row: **name the habit out loud before the s
 
 ## The honest timeline
 
+```facts
+Convention: There is no published measurement of how long a position switch takes — everything below is craft, with enormous individual variation
+Convention: A few shifts to stop being lost — you will know where to stand long before you know when to move
+Convention: A handful of games before the routine reads are automatic, and a season before the position feels like yours
+Convention: Longer, and possibly much longer, for anything skating-dependent — forward to defence is a technical rebuild, not a set of decisions
+Risk: Expect a real performance dip, and expect it to feel like evidence you cannot play the position
+Never: Abandon the change in week three, right at the bottom of the dip — that is the classic error
+Mindset: Improvement is a staircase, not a line — plateaus are normal and some of them are the useful kind
+```
+
 **There is no published measurement of how long a position switch takes** (see the note at the top of this document). What follows is craft, and it is consistent with the one adjacent thing this guide does have a view on: [Practice and Development](practice_and_development.md) states plainly that **every published adult-beginner timeframe comes from coaching providers and retailers rather than research**, and should be read as experienced guesses with enormous individual variation.
 
 With that stated, the shape people describe:
@@ -203,6 +323,14 @@ Two things worth knowing in advance, both of which [Practice and Development](pr
 
 ### If you want to move
 
+```facts
+Action: Ask a day or two later, in private — not on the bench, not immediately after a game, not in front of the group
+Action: Ask a specific question — "What would I need to show you to get a look at centre?" beats "Can I play centre?", which gets a shrug
+Action: Ask to try it in practice first — far easier for a coach to say yes to than a change on a game sheet, and it costs them nothing
+Action: Then do the work where it is visible — if the answer is "I need to see you win draws", take draws at the end of every practice
+Mindset: Accept that some answers are structural — four centres and no left wingers is a roster fact, not a judgement of you
+```
+
 The model here is the same one [Mental Game](mental_game.md) sets out for asking about ice time, and it works for the same reason.
 
 - **Ask at the right time.** Not on the bench, not immediately after a game, not in front of the group. A day or two later, in private.
@@ -212,6 +340,16 @@ The model here is the same one [Mental Game](mental_game.md) sets out for asking
 - **Accept that some answers are structural.** A team with four centres and no left wingers is going to keep you on the left, and that is a roster fact rather than a judgement of you.
 
 ### If you have been moved without being asked
+
+```facts
+Mindset: It is usually not a punishment — roster arithmetic, an injury, a line that needs a defensively reliable player, or a spot that suits you better
+Key: Moving a forward to defence is frequently what happens to the player a coach trusts most with the puck in their own end
+Action: Find out the system before you find out your feelings about it — zone or man-on-man in the D-zone, and which forecheck
+Action: Ask what a good shift from you looks like in this spot — coaches rarely get asked, and the answer is more useful than you expect
+Mindset: Separate the message from the delivery — being told bluntly does not make the decision wrong
+Never: Audition for your old position by playing the new one badly — it reads as sulking and makes a temporary move permanent
+Action: Tell your linemates you are new to the position — thirty seconds before the shift saves three games of the same overlap error
+```
 
 - **It is usually not a punishment.** The commonest reasons are roster arithmetic, an injury, a line that needs a defensively reliable player, or a coach who thinks the new spot suits you better. Some of them are compliments in disguise: moving a forward to defence is frequently what happens to the player a coach trusts most with the puck in their own end.
 - **Find out the system before you find out your feelings about it.** One question — zone or man-on-man in the D-zone, and which forecheck — determines most of what your new job actually is. Ask it before your first shift, not after your first mistake.

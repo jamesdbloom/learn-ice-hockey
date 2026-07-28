@@ -7,6 +7,14 @@
 
 ## Overview
 
+```facts
+Key: Forechecking is the pressure your team applies in the opponents' end when they have the puck and you don't — the opposite of backchecking
+Key: It is the first thing your team does after losing the puck in the attacking end, and the biggest lever a coach has over how a game feels
+Convention: There is no single correct forecheck — there is a family of named systems, each buying pressure at the price of risk
+Action: Ask your coach which forecheck your team runs, and which one you switch to with a lead — most teams have at least two
+Risk: Guessing which one you are in is how odd-man rushes happen
+```
+
 **Forechecking** is the pressure your team applies in the *opponent's* defensive zone — your offensive zone — when they have the puck and you don't. It is the opposite of **backchecking**, which is racing back towards your own net to defend. Forechecking is the first thing your team does after it loses the puck in the attacking end, and it is the single biggest lever a coach has over how a game feels: an aggressive forecheck makes a game chaotic and fast, a passive one makes it slow and structured.
 
 There is no single correct forecheck. There is a family of named systems, each of which buys pressure at the price of risk. This document explains what each one is, what it gives you, what it costs you, and how to tell which one you are facing.
@@ -16,6 +24,15 @@ There is no single correct forecheck. There is a family of named systems, each o
 ---
 
 ## A Note on Language
+
+```facts
+Position: High means closer to the blue line, low means closer to the goal line — in the offensive zone, high is back towards the line you came in over
+Key: Strong side is the side of the ice the puck is on; weak side is the other
+Key: A rim sends the puck onward around the boards, a reverse sends it back against the flow — a rim beats a forechecker sealing you in, a reverse beats one who has over-committed
+Never: Treat a pinch and stepping up as the same play — a pinch steps down from the offensive blue line, stepping up challenges an attacker in the neutral zone
+Technique: Angling is forcing an opponent to go in a desired direction, normally towards the boards or the outside — Hockey Canada's own definition
+Action: Steer by shadowing the carrier; seal by arriving second and closing the escape route the first forechecker has forced them towards
+```
 
 Terms used throughout, defined here so this document stands alone. See [Rink Map and Glossary](rink_map_and_glossary.md) for the full set.
 
@@ -43,6 +60,14 @@ A forecheck has exactly two possible wins. Everything in every system serves one
 Passive systems are not "not forechecking." They are systems that have decided Win 2 is the better bet.
 
 ### The fundamental trade-off
+
+```facts
+Key: Pressure and risk are the same dial — every player you send below the top of the circles is one fewer between the puck and your goalie
+Options: One forechecker is easy to beat but almost never costs you anything
+Risk: Two forecheckers win a lot of pucks and occasionally leave you 3-on-2 going the other way
+Risk: Three forecheckers plus a pinching defenceman win pucks constantly and, when they fail, produce a breakaway
+Action: Say it out loud — "I've got F1" or "I'm high" prevents two players doing the same job while nobody does the other one
+```
 
 There are five of you on the ice. Every player you send below the top of the circles to hunt the puck is one fewer player between the puck and your goalie.
 
@@ -72,6 +97,14 @@ Some coaches do assign them by position as a teaching shortcut for beginners, an
 
 ### The roles rotate mid-shift
 
+```facts
+Read: When the opponents move the puck defenceman-to-defenceman, your F1 has just been beaten and is now behind the play
+Action: The forward closest to the new puck carrier becomes the new F1 and attacks; everyone else adjusts one slot
+Never: Turn around and chase after you have been beaten — take the vacated support role, usually the new F3, high in the zone
+Risk: Chase every puck you touch and you are doing three players' jobs — you will be dead by the second shift
+Key: Accept demotion to F3 when you get beaten and you get a rest built into the system
+```
+
 The labels change during a single possession. When the opponents move the puck defenceman-to-defenceman across the ice, your F1 has just been beaten and is now behind the play. What should happen next is:
 
 1. The forward closest to the new puck carrier becomes the new **F1** and attacks.
@@ -81,6 +114,14 @@ The labels change during a single possession. When the opponents move the puck d
 This is why forechecking is exhausting when done badly and sustainable when done well. If you chase every puck you touch, you are doing three players' jobs and will be dead by the second shift. If you accept demotion to F3 when you get beaten, you get a rest built into the system.
 
 ### The three jobs, in general terms
+
+```facts
+Action: F1 — arrive fast, arrive on an angle, take away one side of the ice and make the carrier's decision for them
+Convention: Whether F1 also hunts the puck is a coaching choice — steering in the 1-2-2, 1-3-1 and 1-4, hunting in a 2-1-2 or press; ask which your team wants
+Key: F1's first job is to make the next play predictable — nothing works if the carrier still has three good options when you arrive
+Action: F2 — skate to where the puck is about to be forced, not to the puck, and stay far enough from F1 that one deke cannot remove both of you
+Position: F3 — stay high, take away the middle of the ice, and be the first man back if the puck escapes
+```
 
 The *shape* of these three jobs holds across most systems; what changes is *where* F2 and F3 stand, and — importantly — **how hard F1 is told to go**.
 
@@ -102,6 +143,14 @@ If you only improve one thing about your forechecking, improve this. Hockey Cana
 
 ### Approach angle
 
+```facts
+Action: Skate at the space you want to deny, not at the puck
+Convention: The common default is taking away the middle and forcing them to the boards — a coaching choice, not a law; some coaches invert it
+Action: Find out which way your team angles before your first shift, not during it — F2 seals the route F1 leaves open
+Technique: Curve your approach so your body is between them and the centre of the ice and your momentum runs along the wall, not across it
+Never: Approach in a straight line — it commits you to a single point in space and any change of direction beats you
+```
+
 Do not skate at the puck. Skate at the **space you want to deny**.
 
 Pick a side before you get there and take it away, so the carrier's only remaining route is the one your teammates are covering. The common default is **taking away the middle and forcing them towards the boards**, because the boards are a wall that helps you and the middle of the ice is where they can go anywhere.
@@ -114,6 +163,13 @@ The reason this works is that a curved approach keeps you in a position to react
 
 ### Stick position
 
+```facts
+Position: Stick out front, blade on the ice, in the passing lane you are taking away — not tucked beside your skates, not raised
+Technique: Aim the blade at the puck as you close
+Goal: A stick in the lane back to the far defenceman removes that pass without costing you any body position
+Key: Even if you never make contact, the carrier has to protect the puck and has to look at you — so they are not looking for their outlet
+```
+
 **Stick out front, blade on the ice, in the passing lane you are taking away.** Not tucked beside your skates, not raised.
 
 The stick is the cheap part of angling — it takes away a pass without costing you any body position. If your stick is in the lane back to the far defenceman, that pass simply does not get made, and you have removed an option without doing anything athletic.
@@ -122,6 +178,13 @@ Aim the blade at the puck as you close. A USA Hockey ADM drill shared by **Roger
 
 ### Speed control — the part everybody gets wrong
 
+```facts
+Action: Arrive under control, not at maximum speed
+Technique: Get to top speed on the way in, then get your feet under you in the last two or three strides so you can change direction
+Key: The test — could you stop and pivot right now? If not, you are going too fast
+Risk: A forechecker who arrives flat out has one option, a straight line; one turn and you are 40 feet behind the play
+```
+
 **Arrive under control, not at maximum speed.**
 
 Get to top speed on the way in — you want to arrive early, because early pressure is what forces the rushed decision. But in the last two or three strides, get your feet under you so you can change direction. A forechecker who arrives flat out has exactly one option: continue in a straight line. Every experienced defenceman in the world beats that with a single turn, and you are now 40 feet behind the play.
@@ -129,6 +192,13 @@ Get to top speed on the way in — you want to arrive early, because early press
 The test: **could you stop and pivot right now?** If not, you are going too fast.
 
 ### Why "eliminate options" beats "make a hit"
+
+```facts
+Goal: Angle a player into a spot where they have one bad pass available — your F2 is already standing on it
+Risk: A hit takes two players out of the play, you and them; containment takes out only them
+Key: At rec and beer-league level body checking is usually not permitted at all, so angling is the whole of your forechecking toolkit
+Never: Treat angling as the beginner's version of hitting — it is the actual skill
+```
 
 - A hit you land does not reliably win you the puck — it just as often ends with the puck loose and both of you out of the play. Angling a player into a spot where they have one bad pass available wins the puck far more often, because your F2 is already standing on that pass. *(Neither claim is a measured figure; there is no public tracking of hits-versus-angling outcomes. Treat it as coaching consensus, not statistics.)*
 - A hit takes two players out of the play — you and them. Containment takes out only them.
@@ -154,6 +224,17 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 
 ### 2-1-2 — the aggressive standard
 
+```facts
+Position: Two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
+Convention: F1 goes hard at the puck carrier, angling them to one side — usually towards the boards, but ask, because F2 reads off it
+Convention: F2 attacks the first passing option, not the puck
+Convention: F3 stays high in the middle — weak-side by default here, strong-side in the stacked variant, so find out which your team runs
+Rule: After their own icing the offending team may not change lines or take a time-out under NHL and IIHF rules (81.4, 87.1) — under USA Hockey they may do both
+Read: Pick it when trailing, off an offensive-zone faceoff, against a defence pair that is slow or panics, and any time they have just iced the puck
+Risk: A successful breakout against it is frequently a 3-on-2 or worse, and it is the most physically expensive system to run
+Countered by: A quick first pass before F2 arrives, a reverse into the space F1 has vacated, and above all a rim past the pinching defenceman
+```
+
 **Shape:** Two forwards deep in the zone, one forward high (roughly the top of the circles), two defencemen at or just inside the **offensive** blue line — the opponents' line, the one you are pinching down from.
 
 > **Two positions, two phases — both are correct.** The blue line the defencemen stand on changes as the sequence does, and this is the commonest source of confusion between this document and [Neutral Zone Systems](neutral_zone_systems.md). **While the forecheck is live and the puck is still in their end**, your defencemen are at the *offensive* blue line, holding it and pinching selectively — that is the shape described here. **Once the opponents get the puck out and the play turns into a neutral-zone sequence**, those same two defencemen have retreated and are holding a deliberately tight gap in the middle third, back toward *your own* blue line, with the strong-side D ready to step up. That second phase is [Neutral Zone Systems](neutral_zone_systems.md)' "Pressure" section and it owns it. Same two players, same system, roughly 100 feet apart, two different moments.
@@ -178,6 +259,16 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 
 ### 1-2-2 — the containment default
 
+```facts
+Position: One forward deep, two forwards across the middle of the zone, two defencemen high
+Convention: F1 (the "dog") pressures but does not commit to winning the puck — cut the ice in half, then stay inside so it cannot come back across
+Convention: F2 (the "fox") sits on the strong-side wall and creates the turnover by jumping the outlet F1 has made predictable
+Convention: F3 (the "hawk") roams the high middle, committed to neither side; on a puck across, F3 becomes the new fox and everyone shifts one role
+Goal: Never being out of position — concede the retrieval and build a wall they have to pass through
+Read: Pick it protecting a lead, against a fast transition team, when your forwards are tired, or as the forgiving rec-league default
+Countered by: D-to-D to shift the wall then a quick-up to a winger coming underneath the fox, or a stretch pass past the defencemen — they are the deepest layer it has
+```
+
 **Shape:** One forward deep, two forwards across the middle of the zone, two defencemen high.
 
 Widely described in coaching material as the most common *base* structure in hockey — see the caveat on "most common" above — and the natural choice when you want to be organised rather than chaotic.
@@ -200,6 +291,13 @@ Widely described in coaching material as the most common *base* structure in hoc
 
 #### The 1-2-2 as a neutral-zone structure
 
+```facts
+Key: The same three numbers describe two things — all three layers inside their end, or the same layers held back across the middle third
+Never: Assume a neutral-zone 1-2-2 is "the trap" — the trap is one particular setting of it, funnelling the carrier into a kill zone at the red line
+Key: The neutral-zone shape is what the forecheck collapses into, so nobody has to sprint anywhere — the main practical argument for it as a base system
+Options: The 1-1-3 is the conservative cousin — the third forward drops in line with the defencemen to make a three-man wall
+```
+
 The same three numbers describe two different things, which confuses almost everyone the first time.
 
 - As an **offensive-zone forecheck** — the version this document owns — the numbers count outward from the opponents' goal line, and all three layers sit inside their end.
@@ -216,6 +314,17 @@ The New Jersey Devils' 1990s and 2000s teams are the standard reference for buil
 ---
 
 ### 1-3-1 — the modern trap-adjacent forecheck
+
+```facts
+Position: One forward pressuring, three players spread in a line across the width of the ice, one player behind them as the last man
+Convention: The single forechecker does not chase — steer, take away the middle and shepherd the breakout to one side
+Convention: The line of three is F2, F3 and one defenceman, the defenceman in the middle as the read-maker; it shifts across as a unit with the puck
+Convention: The single high player is the safety, responsible for anything that gets behind the line of three
+Goal: Take away lanes rather than players — against a team exiting on three short passes there is nowhere to put the puck
+Read: Pick it against short controlled breakouts, when you cannot get pressure on in time such as against a line change, and to protect a lead
+Risk: You concede the initial puck entirely, and a great deal of ice if the line of three is beaten in one pass — this is not a beginner system
+Countered by: Chipping past the flat line and beating it with speed, banking a pass off the boards, and moving the puck side to side before committing
+```
 
 **Shape:** One forward pressuring, three players spread across the width of the ice in a line, one player behind them as the last man.
 
@@ -238,6 +347,16 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 
 ### 1-4 — the full retreat
 
+```facts
+Position: One forward applying token pressure, the other four flat across the ice at or near their own blue line
+Key: This is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
+Convention: The lone forechecker steers and slows the exit rather than pressuring; nobody pinches and nobody gambles
+Goal: Preventing odd-man rushes and high-danger chances, full stop
+Risk: It concedes any realistic chance of getting the puck back in their end, and therefore any offence
+Read: A situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
+Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line
+```
+
 **Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **their own** blue line.
 
 **This is a neutral-zone structure, not an offensive-zone forecheck**, and [Neutral Zone Systems](neutral_zone_systems.md) is the authority on it. It is listed here only because coaches call it a forecheck and because it is the shape a failed forecheck retreats into. The short version:
@@ -252,6 +371,15 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 ---
 
 ### 2-3 and the left-wing lock
+
+```facts
+Position: Two forwards forechecking aggressively, three players across the ice behind them
+Convention: In the left-wing lock the centre and right winger forecheck as F1 and F2, and the left winger drops back to the half-boards
+Convention: If the puck is not won, the left winger slides into line with the two defencemen — effectively a third defenceman going the other way
+Goal: Two-man pressure, nearly as good as a 2-1-2, with three players always between the puck and your net
+Read: Pick it when you want pressure but cannot afford to bleed rush chances, or to nurse a lead without going fully passive
+Risk: It demands a left winger with total positional discipline and the skating to back-check, and gives up the fifth attacker so you cycle less
+```
 
 **Shape:** Two forwards forechecking aggressively, three players across the ice behind them.
 
@@ -270,6 +398,16 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 ---
 
 ### The full-ice press — maximum pressure
+
+```facts
+Position: Three forwards deep or nearly deep, both defencemen pinching at the offensive blue line, effectively no safety at all
+Convention: All three forwards hunt the puck and both defencemen pinch on anything, on the understanding that a puck past them is a breakaway
+Action: Call it a full-ice press or an all-out forecheck — "2-2-1" is basketball terminology and is not an established hockey forecheck name
+Read: Almost exclusively late and trailing — down a goal in the last two or three minutes, or with the goaltender pulled for the extra attacker
+Rule: On a delayed penalty play stops only when the offending team gains control, not when it merely touches the puck (NHL Rule 15.1) — play until the whistle
+Risk: A single clean exit is a breakaway or an empty-net goal against
+Countered by: One pass — you are betting they cannot make it in the time you allow them
+```
 
 **Shape:** Three forwards deep or nearly deep, both defencemen at the offensive blue line and pinching aggressively, effectively no safety at all.
 
@@ -296,6 +434,14 @@ Forwards get most of the attention here, but the defencemen decide whether a for
 
 ### Holding the line
 
+```facts
+Position: At or just inside the offensive blue line, feet moving, on your toes
+Never: Stand still — stationary, you can neither reach a rim coming around nor retreat
+Technique: Small forward-and-back adjustments keep you able to do both
+Rule: You are offside only once both skates have completely crossed the blue line before the puck completely crosses it (NHL Rule 83) — one skate on or behind keeps you onside
+Rule: A skate raised over the neutral zone is still onside under NHL and IIHF rules; USA Hockey Rule 630(a) requires skate contact, so there it is offside
+```
+
 Your default position as a defenceman on the forecheck is **at or just inside the offensive blue line**, feet moving, on your toes.
 
 Standing still is the mistake. If you are stationary when a rim comes around, you cannot get to it, and you cannot retreat either. Small forward-and-back adjustments keep you able to do both.
@@ -303,6 +449,15 @@ Standing still is the mistake. If you are stationary when a rim comes around, yo
 Note the offside rule while you are up there: **both of your skates must completely cross the blue line before the puck completely crosses it** for you to be offside. One skate on or behind the line keeps you onside, and a skate in the air over the neutral zone still counts as onside — **under NHL and IIHF rules only; USA Hockey Rule 630(a) requires skate *contact*, so a raised skate is offside there.** This is why a defenceman can keep one heel touching the line and still reach a long way into the zone.
 
 ### When to pinch, and when not to
+
+```facts
+Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go" — so you can play the puck or legally seal the winger
+Read: On a pure race for a loose puck or a dying rim with nobody to seal, you need to arrive clearly first, not "probably"
+Read: Pinch when the puck is on the wall and slowing down, not zipping past you
+Read: Pinch only when F3 is high and in position to rotate back and cover the point you are vacating
+Rule: A player may be checked after losing the puck only if the check is "rendered immediately following his loss of possession" (NHL Rule 56.1); later is interference (56.2)
+Never: Pinch when you are reaching, when you would turn your back to the play, when they have speed through the middle, when protecting a lead late, or after being beaten once this shift
+```
 
 A **pinch** is stepping down from the blue line along the wall to kill a rim or a chipped clear before it escapes.
 

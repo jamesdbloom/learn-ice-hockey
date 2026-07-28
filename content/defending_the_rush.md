@@ -15,6 +15,13 @@ Almost everything here is a habit rather than a system. Get the habits right and
 
 ## Why Rush Defence Matters More Than Anything You Do in the Zone
 
+```facts
+Key: On a rush your goalie is moving and cannot be set — and being set is what makes routine saves routine
+Key: Nobody has a mark, assignments are formed on the fly, and the attackers pick the play rather than you
+Priority: Preventing a rush chance is worth far more than defending one well
+Action: Kill rushes by holding a tight gap and forcing dump-ins rather than by making recoveries afterwards
+```
+
 Set defensive-zone play gets most of the practice time. Rush defence deserves more, and here is why.
 
 When a shot comes from a **set** defensive zone — your team in position, the puck cycling around the outside — the goalie is square to the puck, stationary, and already tracking. Five defenders are between the shooter and the net. The shooter is usually taking the shot the defence has decided to allow.
@@ -35,6 +42,14 @@ The practical conclusion: **preventing a rush chance is worth far more than defe
 ---
 
 ## The Organising Idea: Stay on the Defensive Side of the Puck
+
+```facts
+Key: Be between the puck and your net — every attacker, all the time
+Position: On the line between your opponent and your own goal, which is what "defensive side" or "goal side" means
+Risk: An attacker between you and your net has already gone wrong; everything after that is damage control
+Key: "Don't get beat wide" and "don't get beat to the middle" are the same instruction
+Read: When a rush goes wrong and you are not sure why, somebody lost the defensive side of somebody
+```
 
 Before any of the technique, one principle sits above everything else in this document.
 
@@ -61,6 +76,15 @@ This section expands the summary in [Defender](positions/defender.md) — it doe
 
 ### Why a big gap is the root of most rush goals
 
+```facts
+Key: A large gap looks safe and is not — it hands the attacker three things at once
+Risk: Space to accelerate into, so they arrive faster than you while you are moving backwards
+Risk: Time to lift their head, find the trailer and the far winger, and pick the best of three options
+Risk: A clean shooting lane from distance — a shot through your shins is not a real chance
+Action: Close the gap and you remove speed, vision and shooting simultaneously
+Key: Gap control is the highest-leverage habit in defensive hockey
+```
+
 A large gap looks safe. It is not. A gap gives the attacker three things, all of them bad for you:
 
 1. **Speed.** They can accelerate into the space between you. By the time they reach you they are moving faster than you, and you are moving backwards.
@@ -70,6 +94,15 @@ A large gap looks safe. It is not. A gap gives the attacker three things, all of
 Close the gap and you take away all three at once. This is why gap control is the highest-leverage habit in defensive hockey — it is one adjustment that removes speed, vision and shooting simultaneously.
 
 ### Start your feet early — you cannot close a gap from a standstill
+
+```facts
+Never: Stand still and wait for the attacker — the gap opens at the moment you most need it closed
+Action: Begin skating backwards while the puck is still being retrieved or regrouped in their end
+Read: Read the pace of the attack, not the position of the puck — a slow regroup lets you skate up and squeeze
+Action: Reset your gap on every regroup; each new attack is a new gap problem
+Technique: C-cuts and backward crossovers, low stance, chest up, weight over the balls of the feet
+Key: At full backwards speed you can hold any gap you like; at zero you can hold none at all
+```
 
 This is the most common defenceman error at every level, and the hardest to unlearn.
 
@@ -86,6 +119,15 @@ Instead:
 
 ### Target distances
 
+```facts
+Position: Roughly two to three stick lengths through the neutral zone, in open ice
+Position: Tighten to around a stick and a half as they cross the centre red line
+Position: Roughly a stick length at your own blue line — close enough to poke check, far enough that one deke doesn't beat you
+Key: The gap should be closing the whole way in; a gap that grows as they approach is a goal waiting to happen
+Convention: Distances are a guide, not a law — they vary with your backward speed and the attacker's skill
+Key: The blue line is an ally — squeezing tight at the line forces the carrier to slow for their trailers or enter alone
+```
+
 Distances are a guide, not a law, and they vary with your own backward speed and the attacker's skill.
 
 - **Through the neutral zone, in open ice:** roughly **two to three stick lengths**. Close enough to be a problem, far enough to react to a change of direction.
@@ -97,6 +139,14 @@ Notice the direction of travel: the gap should be **closing** the whole way in. 
 **The blue line is an ally here.** Under NHL rules an attacker is offside only when **both skates** completely cross the blue line before the puck completely crosses it — so a defender squeezing tight at the line can force the carrier to either slow down for their own trailers or enter alone. See [Rules Primer](rules_primer.md) and [Zone Entries](zone_entries.md).
 
 ### Read the chest and hips, not the puck, the hands or the head
+
+```facts
+Read: The chest and hips cannot lie — the torso has to point where the body mass is actually going
+Key: The puck, blade, hands, shoulders, head and eyes are all deception tools, and all of them can lie
+Action: Fix your eyes on the numbers on the front of their jersey and use peripheral vision for the puck
+Read: A dangle that doesn't move the hips is not a dangle — if the chest stays square they have gone nowhere
+Never: Watch the puck — your feet follow your eyes, and your eyes have just been sent the wrong way
+```
 
 A skilled attacker will fake with everything they can move. The puck, the stick blade, the hands, the shoulders, the head, the eyes — all of these are **deception tools**, and all of them can lie.
 
@@ -110,6 +160,15 @@ Practically:
 
 ### Stick on the ice, out front, in the passing lane
 
+```facts
+Key: Your stick is a passive weapon — used well it removes options without committing your body
+Position: Blade flat on the ice, out in front, in the lane between the carrier and their most dangerous support option
+Technique: One hand on the stick for reach, two hands for control — but never with the blade in the air
+Action: Poke check only when you can reach the puck, not as a hope
+Never: Telegraph the poke check — hide it until you use it, or they pull the puck back and go around your reach
+Risk: A missed poke check becomes a lever the attacker skates around, and often a hooking or tripping penalty
+```
+
 Your stick is a passive weapon. Used well it removes options without committing your body.
 
 - **Blade flat on the ice**, out in front of you, in the lane between the carrier and their most dangerous support option.
@@ -118,6 +177,15 @@ Your stick is a passive weapon. Used well it removes options without committing 
 - **Hide the poke check until you use it.** Telegraphing it lets the carrier pull the puck back and go around your reach.
 
 ### Angle to take the middle and force them outside
+
+```facts
+Key: The middle of the ice is the dangerous ice — shots from the slot beat goalies, shots from the wall mostly do not
+Position: Boardside shoulder roughly on the middle of their chest, your body between them and the middle of the ice
+Never: Line up chest-to-chest, or put your inside shoulder on their chest — that slides you wide and opens the middle
+Action: Force them outside, then close the outside — ride them further wide and away from the net
+Key: The boards are your second defender — no ice on one side, a shrinking angle, and nowhere to cut back
+Mindset: Good rush defence is choosing which thing to concede, not taking everything away
+```
 
 **The middle of the ice is the dangerous ice.** Shots from the slot beat goalies; shots from below the faceoff dots on the wall mostly do not.
 
@@ -128,6 +196,14 @@ So do not line up chest-to-chest with the carrier. Position yourself slightly to
 - **You are giving them something on purpose.** Good rush defence is not taking everything away; it is choosing which thing to concede.
 
 ### Pivot late
+
+```facts
+Action: Delay the moment you turn and skate forwards with them as long as you possibly can
+Risk: Once you pivot to forwards you can no longer react, and a change of direction beats you
+Technique: Hips lead the pivot, not shoulders — turning your upper body first opens the gate early
+Convention: Pivot to the boards side rather than the middle — a default, not a rule; if beaten, be beaten toward the wall
+Read: Some coaches want a middle pivot when turning away would take your eyes off the puck, or when you have inside help
+```
 
 At some point you must turn and skate forwards with them. Delay that moment as long as you possibly can.
 
@@ -142,6 +218,15 @@ At some point you must turn and skate forwards with them. Delay that moment as l
 **Backchecking** is racing back toward your own end when your team loses the puck. It is the difference between an odd-man rush and an even one, and it is the most commonly under-performed job in hockey. (Do not confuse it with **forechecking**, which is pressure in *their* end.)
 
 ### The three lanes
+
+```facts
+Position: Three vertical lanes — two outside along the boards, one middle between the faceoff dots
+Convention: The standard assignment is the centre in the middle lane and the wingers in the outside lanes
+Key: The middle-lane driver — the attacker skating hard through the middle without the puck — is the most commonly missed assignment in hockey
+Read: They are missed because they do not have the puck, and eyes go to the puck
+Options: Other teams give the middle to the first man back, or pick up man-on-man from the puck outward — find out which yours uses
+Key: Under every variant, somebody owns the middle and nobody assumes it is somebody else
+```
 
 Think of the ice as three vertical lanes running the length of the rink: the two outside lanes along the boards, and the middle lane between the faceoff dots.
 
@@ -158,6 +243,14 @@ The standard assignment, and the one most teams use:
 
 ### Come back on the defensive side of your man
 
+```facts
+Never: Chase from behind their shoulder — that is jogging, and you cannot defend anything from behind
+Action: Take a route that puts you inside them, between them and your net, even if it is slightly longer
+Position: Arrive at their inside hip, not their back pocket, so your stick reaches the passing lane
+Options: If you are genuinely beaten and can only chase, chase the stick — blade under theirs or on the puck
+Risk: Reaching around their body from behind is a hook or a trip, and near your own net that gets expensive
+```
+
 Chasing an attacker from behind their shoulder is not backchecking — it is jogging. You cannot defend anything from behind.
 
 - **Take a route that puts you inside them**, between them and your net, even if that route is slightly longer.
@@ -166,11 +259,25 @@ Chasing an attacker from behind their shoulder is not backchecking — it is jog
 
 ### Skate first, then look
 
+```facts
+Action: Turn and sprint first, and look on the third or fourth stride
+Never: Turn your head to watch what happens on a turnover — it costs you two strides you never get back
+Key: The picture will still be there when you look up, and you will be five metres further into the play
+Mindset: Full-speed backchecking is a conditioning issue as much as a hockey one
+```
+
 The instinct on a turnover is to turn your head and watch what happens. That costs you two strides you never get back.
 
 **Turn and sprint first. Look on the third or fourth stride.** The picture will still be there when you look up, and you will be five metres further into the play. Full-speed backchecking is a conditioning issue as much as a hockey one — see [Conditioning and Recovery](conditioning_and_recovery.md).
 
 ### Do not chase the puck carrier when your D has them
+
+```facts
+Never: Sprint in to help a defenceman who is already engaged with the carrier and playing a good gap
+Risk: Two defenders on one attacker, and your actual assignment left unmarked
+Action: Skate past the puck battle to the unmarked man — your job is the player nobody has
+Mindset: Trusting your defenceman to win their own 1-on-1 is what turns a 3-on-2 into three 1-on-1s
+```
 
 If a defenceman is already engaged with the carrier and playing a good gap, sprinting in to help them is worse than useless — it leaves your actual assignment unmarked and puts two defenders on one attacker.
 
@@ -184,6 +291,15 @@ The number always reads **attackers on defenders** — a 2-on-1 is two attackers
 
 ### 1-on-1
 
+```facts
+Goal: A shot from a place your goalie is comfortable with — not a hit and not a turnover
+Action: Steer them to a bad angle, force them wide, and keep forcing
+Position: Stick in the lane, on the ice, out front — passing options are arriving behind the play
+Never: Lunge — it is a single bet on their next move, and if you are wrong they have the whole net
+Action: Ride them into the boards, your second defender, until their options collapse to zero
+Priority: Position first, contact second — a body check is a bonus, not a plan
+```
+
 You against the carrier. This is gap control applied, and it is the situation everything else is built from.
 
 - **Steer them to a bad angle.** Your target is not a hit and not a turnover — it is a shot from a place your goalie is comfortable with. Force them wide and keep forcing.
@@ -193,6 +309,14 @@ You against the carrier. This is gap control applied, and it is the situation ev
 - **A body check is a bonus, not a plan.** Missing a hit on a rush is far more costly than not attempting one. Position first, contact second. See [Body Contact and Battles](body_contact_and_battles.md).
 
 ### 1-on-2
+
+```facts
+Never: Both defenders converge on the carrier — that opens the ice behind you for a late second attacker
+Action: One defender takes the puck, normally the one on the carrier's side, and plays it as a 1-on-1 with a very tight gap
+Position: The other stays back and inside, covering the trailer who has not arrived yet
+Key: The engaged defender can afford to be aggressive — a miss leaves your partner in a 1-on-1 rather than nothing
+Action: Call it — "I've got him" from the engaging defender, so the other holds
+```
 
 One attacker, two defenders. The luxury case — and one that teams waste constantly.
 
@@ -204,6 +328,17 @@ The failure mode is both defenders converging on the carrier. That opens the ice
 - **Call it.** "I've got him" from the engaging defender, so the other holds.
 
 ### 2-on-1 — the headline situation
+
+```facts
+Convention: Take away the pass and give up the shot — your goalie can save the shot and cannot save the pass
+Read: A shooter walking into the slot unpressured with no realistic pass available is no longer a 2-on-1 — close on the puck
+Action: Say the contract out loud — you own the pass, the goalie owns the shooter, and neither of you covers both
+Position: Sit in the passing lane, roughly on the line between the two attackers, biased slightly toward the middle
+Technique: Stick flat on the ice on the passing side, blade extended into the lane, arm long — your stick takes the pass, not your body
+Action: Take away the far attacker's stick as you get close to the net, where the danger converts into a tap-in
+Never: Slide before the pass is released — you remove yourself from the play and open both options at once
+Never: Try to block the shot — you abandon the pass, and a half-block deflects a puck your goalie was tracking
+```
 
 Two attackers, one defender. This is the situation every defenceman is judged on, and it has a single governing instruction:
 
@@ -237,6 +372,15 @@ Talk about this with your goalie before the game, not during it. Most goalies wa
 
 ### 2-on-2
 
+```facts
+Convention: Play it man-on-man — each defender takes an attacker and holds a tight gap on them
+Options: Zone is the realistic alternative — strong-side D takes whoever carries into their half, weak-side D holds the middle
+Read: Zone survives a crossing rush better, man-on-man is tighter on a straight one — find out which your team wants
+Never: Both drift toward the puck — a simple pass then leaves their partner the net
+Action: Follow your man through a crossing or call a clean "switch" — never do half of each
+Key: The weak-side defender is not free; being ready to help is not the same as leaving your man
+```
+
 Two attackers, two defenders. Even numbers, and it should be routine — but it is the situation most often botched, because "even" makes people relax.
 
 - **Play it man-on-man.** Each defender takes an attacker and holds a tight gap on them. This is the default in almost every system. The realistic alternative is **zone**: the strong-side D takes whoever carries the puck into their half of the ice and the weak-side D holds the middle, so the two of you trade marks rather than following them across. Zone survives a crossing rush better; man-on-man is tighter on a straight one. Find out which your team wants, because mixing them on the same rush leaves an attacker free.
@@ -245,6 +389,16 @@ Two attackers, two defenders. Even numbers, and it should be routine — but it 
 - **The weak-side defender is not free.** You are marking a person. Being ready to help is not the same as leaving your man.
 
 ### 3-on-2
+
+```facts
+Convention: The common default is "two wide, middle to the backchecker" — a defenceman on each outside attacker
+Never: Chase the puck carrier — a wide carrier belongs to the D in that lane, a middle carrier to the backchecker
+Options: The alternative is strong-side D on the puck as a 1-on-1, weak-side D splitting the middle and the far attacker
+Read: If your backchecker is genuinely not coming, squeeze the middle and concede the far wide man — but look before you assume it
+Action: Retreat together at the same speed, holding a flat line with the middle sealed between you
+Never: Back all the way to the goal line — collapsing into your crease concedes the whole slot
+Key: Ask your coach which version you play; two defencemen playing different ones on the same rush is worse than either
+```
 
 Three attackers, two defenders. Chaotic-looking, and the way you take the chaos out is to have agreed in advance which of two systems you are playing.
 
@@ -262,6 +416,15 @@ Three attackers, two defenders. Chaotic-looking, and the way you take the chaos 
 
 ### 3-on-1
 
+```facts
+Position: Central, on the defensive side of the puck, stick in the most dangerous lane
+Goal: Delay — the objective changes from "stop this" to "make it take longer"
+Action: Retreat slowly, stay in the lanes, and force them to make an extra pass
+Never: Commit to one attacker — attacking the carrier turns it into an unopposed 2-on-0
+Priority: Give your goalie the shot from distance and take away the cross-ice options, as on a 2-on-1
+Action: Call for help loudly — your backcheckers may not know how bad it is
+```
+
 Three attackers, one defender. This is a bad situation and pretending otherwise helps nobody.
 
 - **Take the middle.** Position yourself centrally, defensive side of the puck, stick in the most dangerous lane. You cannot cover three; you can make the two middle options harder.
@@ -271,6 +434,17 @@ Three attackers, one defender. This is a bad situation and pretending otherwise 
 - **Call for help loudly.** Your backcheckers may not know how bad it is.
 
 ### Breakaways
+
+```facts
+Priority: This is your goalie's save and they usually make it — do the one useful legal thing, then get out of the way
+Action: Stick on the puck only — a poke at the puck itself, or a stick lift on their blade as they release
+Options: Skating to catch them and re-establish position is legal, and angling them wide turns it into a bad-angle chance
+Rule: A hook, trip, hold or slash from behind that denies the chance is a penalty shot, not a two-minute minor (NHL Rule 57.3)
+Rule: Make contact with the puck first and a tripping minor is assessed instead of the penalty shot (NHL Rule 57.3)
+Rule: Under USA Hockey Rule 616(a) a foul diagonally from behind also counts, and the referee may assess an optional minor instead
+Rule: With your goalie pulled the same foul is an awarded goal (NHL Rule 57.4); smothering the puck in your own crease is a penalty shot (67.4), or an awarded goal with the net empty (67.5)
+Never: Stand up and look at the official — play does not stop until the attacking team loses possession (NHL Rule 57.3)
+```
 
 A **breakaway** is an attacker alone with the puck against the goalie, no defender between them and the net.
 
@@ -313,6 +487,15 @@ Two more things worth knowing:
 
 ### The late man / trailer
 
+```facts
+Key: The most under-defended player in hockey is the one who arrives second
+Position: The trailer follows a few metres behind and arrives into the high slot with a clean, unopposed look
+Convention: In the house default — low zone collapse behind a 2-1-2 forecheck — the trailer belongs to the backchecking forwards, not the defencemen
+Options: Some teams give the trailer to the weak-side defenceman and drop the third forward to the net front — ask which yours runs
+Action: If you are the last backchecker and everyone else is marked, the trailer is yours — do not skate into the pile
+Action: Defencemen, call them out — "trailer!" or "high!" is a genuinely game-saving shout
+```
+
 The most under-defended player in hockey is the one who arrives second.
 
 The **trailer** (or **late man**) is the attacker following the rush a few metres behind — often a defenceman who has activated, often a forward who was slow out of the zone. They arrive into the high slot just as the first wave has pulled everybody low, and they arrive with a clean, unopposed look.
@@ -331,6 +514,15 @@ Two legitimate ways to defend the line, and this is a genuine trade-off rather t
 
 ### Standing up (stepping up)
 
+```facts
+Position: Hold your ground at or just inside the blue line and challenge the carrier as they try to enter
+Goal: Deny the zone entirely — the attack has to dump the puck in or turn back, and neither produces a chance
+Rule: Both skates must cross the line after the puck under NHL and IIHF rules; USA Hockey Rule 630(a) requires skate contact with the line or the neutral zone, which is stricter still
+Risk: If you miss there is nothing behind you — your partner is left in a 2-on-1 or worse
+Countered by: A skilled carrier who chips the puck past you and skates onto it
+Read: Right for slow attacks, a head-down carrier, a carrier already near the boards, clear support behind you, and a clogged neutral zone
+```
+
 You hold your ground at or just inside the blue line and challenge the carrier as they try to enter, rather than retreating with them.
 
 **What it gets you:**
@@ -346,6 +538,15 @@ You hold your ground at or just inside the blue line and challenge the carrier a
 
 ### Backing off (retreating)
 
+```facts
+Position: Give ground, holding your gap, and defend them as they enter
+Goal: Nothing gets behind you — the worst case is a controlled entry, not a breakaway
+Convention: The default for most defencemen most of the time, because it is reliable and repeatable
+Risk: Concedes the blue line, so play happens in your end and the shift gets longer
+Never: Back off with a growing gap — a soft retreat gives the attacker speed and the zone, and is worse than either option
+Read: Right against attackers with speed, on odd-man situations, when you are the last defender, when unsure, and any time you are tired
+```
+
 You give ground, holding your gap, and defend as they enter.
 
 **What it gets you:**
@@ -360,6 +561,14 @@ You give ground, holding your gap, and defend as they enter.
 
 ### How to choose
 
+```facts
+Never: Step up unless you are confident you can win the puck — confidence, not hope
+Convention: How aggressive "confident" should be is a coaching choice — an aggressive 1-2-2 press wants you challenging the line, a 1-3-1 trap wants you holding
+Never: Half-commit — drifting forward, changing your mind, and arriving late with a huge gap
+Priority: When in doubt, back off with a tight gap — it has no catastrophic failure mode
+Key: Keep "step up" and "pinch" separate — stepping up is challenging in the neutral zone or at your own line, pinching is stepping down from the offensive blue line
+```
+
 - **Do not step up unless you are confident you can win the puck.** Confidence, not hope — a missed step-up is an odd-man rush behind you. **How aggressive "confident" should be is a coaching choice:** a team playing an aggressive 1-2-2 neutral-zone press wants you challenging at the line and will accept the occasional miss; a team playing a passive 1-3-1 trap wants you holding and steering the carrier wide. Find out which risk your coach wants to carry.
 - **Step up or back off — do not do neither.** The killer is the half-commit: drifting forward, then changing your mind, and arriving late with a huge gap. Pick and go.
 - **The default when in doubt is back off with a tight gap.** It has no catastrophic failure mode.
@@ -368,6 +577,15 @@ You give ground, holding your gap, and defend as they enter.
 ---
 
 ## Odd-Man Rushes: How They Are Created
+
+```facts
+Key: Almost every odd-man rush against you was manufactured by your own team, in one of four ways
+Read: Pinch on a read — when you will clearly win the puck, when a forward can cover for you, and when score and time say the risk is worth it
+Never: Turn up ice hunting a breakaway pass before your team actually has possession — the test is whether you can still get back if you are wrong
+Never: Stickhandle through the middle under pressure, or force cross-ice passes in the neutral zone
+Action: Change lines when the puck is in the offensive zone or moving away from your end, not during a scramble
+Key: One defenceman is always above the puck — both below it in the offensive zone is the fifth, subtler cause
+```
 
 The best rush defence is not creating the rush. Almost every odd-man rush against you was manufactured by your own team, in one of four ways.
 
@@ -384,6 +602,15 @@ A fifth, more subtle one: **both defencemen below the puck in the offensive zone
 ---
 
 ## Communication During a Rush
+
+```facts
+Action: Short, early, loud — a call as it happens is information, a call after it happens is commentary
+Action: Call the solution, not the problem — "back door" is useful, "watch out" is noise
+Options: "Odd man!", "I've got the pass", "Take the shooter", "Back door!", "Pick him up", "Trailer" or "high", "Switch", "I'm back"
+Key: "Back door!" — an attacker arriving unmarked at the far post — is the single most urgent call in defensive hockey
+Action: Name the number and the location rather than shouting vaguely: "pick up 12, high slot"
+Mindset: Everyone talks, and the goalie has the best view of the rush and should be the loudest voice on the ice
+```
 
 A rush is loud, fast and facing away from most of your team. Talk is the only way anyone knows what is happening. Short, early, loud. Full detail in [On-Ice Communication](on_ice_communication.md).
 
@@ -407,6 +634,15 @@ A rush is loud, fast and facing away from most of your team. Talk is the only wa
 ---
 
 ## From Rush Defence into Zone Coverage
+
+```facts
+Read: The attack losing forward momentum — a dump-in retrieved, a shot frozen or rebounded to the wall, a pass back to their point
+Priority: Locate the net front before anything else, because during a rush nobody was assigned to it
+Action: Switch from lanes to assignments in about one second — from "who is in my lane" to "who is my man"
+Convention: In the house default of low zone collapse, a backchecking winger releases their man and gets back to the point; under man-on-man they stay with them
+Action: Talk through the handover — every temporary assignment the rush created needs explicitly cancelling or confirming
+Key: A rush is not over when the shot is saved; it is over when everybody has a mark
+```
 
 Stopping the rush is only half of it. The seconds immediately after are when teams that defended the rush well still concede — everyone relaxes, nobody picks up a mark, and the attackers who were rushing are now cycling against nobody.
 
