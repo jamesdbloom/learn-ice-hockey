@@ -15,6 +15,7 @@
     "index:search": "pagefind --site dist",
     "check:links": "node scripts/check-links.mjs dist",
     "preview": "node scripts/astro.mjs preview",
+    "serve": "npm run build && node scripts/astro.mjs preview --open",
     "check": "npm run prepare:meta && node scripts/astro.mjs check",
     "astro": "node scripts/astro.mjs"
   },

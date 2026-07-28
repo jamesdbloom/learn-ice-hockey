@@ -220,7 +220,13 @@ npm run build        # metadata → astro build → Pagefind index → link chec
 npm run preview      # serve dist/ locally
 ```
 
-`npm run build` is four steps and any of them fails the build: it regenerates document metadata from `../content`, renders `dist/`, builds the Pagefind search index, and runs an internal link check against the built HTML. **Search does not work under `npm run dev`** — Pagefind indexes built HTML, so use `build` + `preview` to try it.
+`npm run build` is four steps and any of them fails the build: it regenerates document metadata from `../content`, renders `dist/`, builds the Pagefind search index, and runs an internal link check against the built HTML. **Search does not work under `npm run dev`** — Pagefind indexes built HTML.
+
+To see the site as it will actually be served, search included, one command does the lot:
+
+```bash
+npm run serve        # build, then preview and open a browser
+```
 
 Full detail, including the metadata extraction rules and what the link checker validates, is in **[site/README.md](site/README.md)**.
 

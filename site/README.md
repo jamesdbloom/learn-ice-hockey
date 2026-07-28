@@ -27,11 +27,17 @@ npm run dev          # http://localhost:4321
 [Metadata](#metadata-extraction) below), then starts Astro.
 
 **Search does not work in `npm run dev`.** Pagefind indexes the built HTML, so `/pagefind/*`
-only exists after a production build. To try search locally:
+only exists after a production build. To see the site exactly as it will be served — search
+working, links checked — use:
 
 ```bash
-npm run build && npm run preview
+npm run serve        # build, then preview and open a browser
 ```
+
+That is `npm run build && npm run preview --open`: full metadata extraction, render, Pagefind
+index and link check, then a local server on the `dist/` directory with the browser opened for
+you. It is slower than `npm run dev` and has no hot reload — use `dev` while writing components,
+and `serve` when you want to check the real thing.
 
 ## Build
 
@@ -52,6 +58,7 @@ Other scripts:
 ```bash
 npm run check        # astro check — TypeScript and .astro diagnostics
 npm run preview      # serve dist/ locally
+npm run serve        # build + preview + open a browser
 ```
 
 ## Deploy
