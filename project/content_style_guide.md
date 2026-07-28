@@ -50,13 +50,69 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 
   **⚠️ Do not write that screening is "entirely legal".** That overstatement propagated into 16 places across 12 documents before it was caught. Screening from **outside** the crease, without contact, is legal and valuable — but clause (1) means **positioning alone can void a goal** if it impairs the goalie's ability to move or defend, and Rule 69.3 separately disallows a goal where an attacker *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision and impair his ability to defend his goal."* Always attach the outside-the-crease qualifier to the legality claim itself.
 
+### The UK rule set — IIHF is the base, everywhere
+
+**Every level of hockey in Britain runs on the IIHF Rule Book.** The Elite
+League, the NIHL, the English and Scottish recreational and junior game,
+university hockey and the GB national teams. On top of it sit local amendments:
+the **In-House Rules** issued jointly by England Ice Hockey, the SIHA and the
+BUIHA, or the **EIHL Casebook** in the Elite League.
+
+The In-House Rules state it directly — England Ice Hockey, the SIHA and the
+BUIHA *"adopt the IIHF Official Rule Book 2025–2026 (Version 1.1, published July
+2025) as the foundation for the rules of the game to be applied in England and
+Scotland"* — and they are explicitly *"not intended to serve as a standalone
+rule book."*
+
+**What this means when you write a rules claim.** A British reader's flag is the
+**IIHF** one. The corpus is written to NHL rules with IIHF, USA Hockey and
+Hockey Canada differences flagged, and a British reader currently has no way to
+know that the IIHF flag is theirs. So:
+
+- Where a rule differs between books, **the IIHF position is load-bearing for UK
+  readers** — do not treat it as the minor case.
+- Where **England Ice Hockey amends** the IIHF rule, say so and cite the
+  In-House Rules. [`uk_rules.md`](../content/foundation/uk_rules.md) owns the
+  full amendment list; point at it rather than restating it.
+- **Do not write "EIHA is defunct"** — England Ice Hockey is the same body,
+  renamed. Both names are in live use.
+- **Do not attribute the EIHL Casebook's contents.** This corpus has not
+  obtained it. That the EIHL uses the IIHF book is sourced; what its casebook
+  says is not.
+
+**⚠️ The amendments most likely to catch a writer out**, because they contradict
+the North American position the corpus states elsewhere:
+
+| | England Ice Hockey | North America |
+|---|---|---|
+| Neck laceration protector | **Mandatory for all players**, no warning, 10-minute misconduct | USA Hockey exempts adults; Hockey Canada covers minor and female |
+| On-ice video review | **Not available** in EIH or SIHA competition | Used in the NHL |
+| Rink | Below **56 m × 26 m** authorised — under the IIHF minimum on both counts | NHL 200 × 85 ft; IIHF 60 m long by **26–30 m** wide (Rule 1.2) |
+| Half visor | **Women's hockey:** permitted only from the season after the 18th birthday — a relaxation of IIHF 102.1's full-face requirement, not a general rule | Differs by classification |
+| Overtime | Only NIHL, and SNL where its regulations provide | Standard |
+| Junior ages | U19/U16/U14/U12/U10 by birth year, **unisex** | USA Hockey / Hockey Canada bandings |
+
+---
+
 ### Primary rulebooks — get them yourself, the paths below are historical
 
-> **⚠️ These paths are stale, and every reviewer in round 20 reported it.** The
-> scratchpad directory belongs to a session that has ended; the directories
-> still exist and are empty. Do not conclude a rule is uncheckable because a
-> path here does not resolve — **that is how a round loses its whole IIHF and
-> Hockey Canada layer**, which is exactly what happened.
+> **⚠️ The scratchpad paths below are historical.** The directory belongs to a
+> session that has ended. **The books have since been re-downloaded to
+> `/private/tmp/`** — see the working list immediately below. Do not conclude a
+> rule is uncheckable because a path here does not resolve; that is how round 20
+> lost its whole IIHF and Hockey Canada layer.
+>
+> **Working paths, re-obtained 29 July 2026:**
+>
+> ```
+> /private/tmp/nhl_rules.txt       NHL Official Rules 2025-2026
+> /private/tmp/iihf_rules.txt      IIHF Official Rule Book 2025/26  ← the UK's base rule set
+> /private/tmp/iihf_situations.txt IIHF Situation Handbook 2025/26
+> /private/tmp/eiha_inhouse.txt    IHUK In-House Rules 2025-26 Rev 1 (England/Scotland/BUIHA)
+> /private/tmp/eih_rr.txt          England Ice Hockey Rules & Regulations (governance)
+> /private/tmp/usah.txt            USA Hockey Playing Rules 2025-29
+> /private/tmp/hc.txt              Hockey Canada Playing Rules
+> ```
 >
 > **Fetch them from the URLs in the documents' own Sources sections.** Round 20's
 > reviewers recovered the NHL, USA Hockey, Hockey Canada, IIHF and PWHL

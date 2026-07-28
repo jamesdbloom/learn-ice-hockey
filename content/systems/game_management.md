@@ -1,9 +1,13 @@
 # Game Management
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline.
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF
+> flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> [UK and England Rules](../foundation/uk_rules.md). Read **Overtime** and **Shootouts** below before
+> you rely on anything in them: those are the sections where the British position differs most, and
+> outside NIHL and some SNL fixtures there is no overtime in England or Scotland at all.
 >
-> **Related:** [Risk Management](../hockey-iq/risk_management.md) · [Special Teams](special_teams.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Faceoffs](faceoffs.md) · [Mental Game](../off-the-ice/mental_game.md) · [How To Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
+> **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Risk Management](../hockey-iq/risk_management.md) · [Special Teams](special_teams.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Faceoffs](faceoffs.md) · [Mental Game](../off-the-ice/mental_game.md) · [How To Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
 ## Overview
 
@@ -125,6 +129,7 @@ Never: Chase the extra body-check; if the player has already passed or shot it i
 Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
 Rule: Under hybrid icing the linesperson judges who would reach the puck first, not who reaches the dot first (NHL Rule 81.1)
 Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rule 82.1)
+Rule: The IIHF bar is Rule 81.4, and its exceptions run one longer — you may also replace "a Player with a broken skate", which the NHL does not allow
 Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
 Risk: A defensive-zone draw, your five most tired players, and no way to rest them
 Action: Ask before the game — many rec and youth leagues use no-touch icing, and under USA Hockey there is no no-change rule to enforce
@@ -142,7 +147,7 @@ That combination — tired players, defensive-zone draw, no escape — is a goal
 
 Three details worth knowing:
 
-- **The exceptions to the no-change rule** are narrow: you may substitute to **replace a goalkeeper who had been pulled for an extra attacker**, to **replace an injured player**, or when a **penalty has been assessed that affects on-ice strength** (Rule 82.1). The on-ice personnel are determined **at the moment the puck leaves the offending player's stick**.
+- **The exceptions to the no-change rule** are narrow: you may substitute to **replace a goalkeeper who had been pulled for an extra attacker**, to **replace an injured player**, or when a **penalty has been assessed that affects on-ice strength** (Rule 82.1). The on-ice personnel are determined **at the moment the puck leaves the offending player's stick**. **In the IIHF book — the British base rule set — the bar lives in Rule 81.4** and reads the same way, with the same three exceptions and the same "when the puck leaves the offending Player's stick" test, plus **one the NHL does not have: you may also substitute for *"a Player with a broken skate."*** (Note that IIHF 82.1 lists only the NHL's three; the broken-skate exception is in 81.4, which is the icing rule itself.)
 - **Icing is waved off if your team is shorthanded** — with two exceptions. Killing a penalty you may normally ice it freely, but under Rule 81.6 a team shorthanded *"by reason of a major penalty"* that has *"neglected to ensure there is a player on the penalty bench to exit upon the expiry of the penalty"* keeps playing a man short and *"are not permitted to ice the puck. Icing will be called."* And **USA Hockey restricts the exemption by classification**, to *"(For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)"* (Rule 624(b)(1)) — below those levels a shorthanded team cannot ice the puck at all, so a kill built on length-of-the-ice clears just feeds the power play defensive-zone draws. [Special Teams](special_teams.md) owns this rule.
 - **Rec and youth leagues vary.** Many still use no-touch (automatic) icing, and plenty do not enforce the no-change rule at all. Ask before the game; it changes how hard you should work to get the puck over the red line.
 
@@ -494,7 +499,7 @@ The practical consequence, as coaches put it: **a 90-second shift is not three t
 Never: Change when the puck is in your defensive zone and your team does not have it
 Never: Change while you are the last man back, until you are relieved — and say so out loud
 Never: Change while the opposition is on a rush; finish the defensive play first
-Rule: You cannot change after your own icing under NHL and IIHF rules (82.1), so do not start drifting toward the bench — USA Hockey Rule 624 imposes no such restriction
+Rule: You cannot change after your own icing (NHL 82.1, IIHF 81.4), so do not start drifting toward the bench — USA Hockey Rule 624 imposes no such restriction
 Never: Change in the middle of a 6-on-5 possession — change with the puck or not at all
 Action: Change when your team has the puck heading north, has just dumped it in deep, or after a completed clear
 ```
@@ -506,7 +511,7 @@ This is the part that separates good game management from a good motor.
 - **The puck is in your defensive zone and not under your team's control.** Coaches name this as one of the biggest sources of goals against in amateur hockey — an observation rather than a measured ranking, because no published data classifies goals by the cause behind them. Changing while the opposition has the puck in your end means a player leaves, a player arrives late from the bench, and for two seconds you are 4-on-5 in the most dangerous area of the rink.
 - **You are the last man back**, until you are relieved. Say so out loud.
 - **The opposition is on a rush.** Finish the defensive play, then change.
-- **You've just iced the puck.** You can't (Rule 82.1), so don't start drifting toward the bench.
+- **You've just iced the puck.** You can't (NHL Rule 82.1; IIHF Rule 81.4), so don't start drifting toward the bench.
 - **You're in the middle of a 6-on-5 possession.** Change with the puck or not at all.
 - **You'd be changing into an offensive-zone faceoff you're needed for**, if you're the faceoff man.
 
@@ -565,7 +570,7 @@ The format arrived in 2015-16 to reduce shootouts and worked — the share of **
 - A two-man advantage is **5 against 3**.
 - **No team ever has fewer than three skaters.**
 
-**Pulling the goalie in overtime (Rule 84.2)** is possible but almost never sensible: if you lose while the goalie is out, **you forfeit the point you'd already earned** — unless the goalie was pulled for a delayed penalty. And once pulled in regular-season overtime, the goalie **must wait for a stoppage to return; he cannot change on the fly** (Rules 84.2 and 74.5), on pain of a bench minor.
+**Pulling the goalie in overtime (Rule 84.2)** is possible but almost never sensible: if you lose while the goalie is out, **you forfeit the point you'd already earned** — unless the goalie was pulled for a delayed penalty. And once pulled in regular-season overtime, the goalie **must wait for a stoppage to return; he cannot change on the fly** (Rules 84.2 and 74.5), on pain of a bench minor. **Both of those riders are NHL-only** — IIHF 84.2 is a single permissive sentence, so if you play in Britain neither applies to you; see the rule-set note below.
 
 One more detail: **in the last two minutes of regulation and at any time in overtime**, the five-second whistle forcing players to set up for a faceoff does not apply (Rule 82.2(viii)) — officials give teams reasonable time.
 
@@ -582,31 +587,59 @@ Action: Manage shifts ruthlessly — teams routinely shorten to the low 30s in d
 
 This is a completely different game-management problem: it's regulation hockey, played tired, with an infinite-cost mistake. The universal advice is **play simple, get pucks behind their defence, don't be the one to make the play that loses it**, and manage shifts ruthlessly — teams routinely shorten shifts to the low 30s in double overtime.
 
-### Rec-league and other variations
+### Overtime elsewhere: IIHF, Britain and rec leagues
 
 ```facts
-Action: Ask before the game — formats run from 4-on-4 to 3-on-3 to a straight shootout to no overtime at all
 Rule: IIHF preliminary overtime is five minutes of 3-on-3, but teams do not change ends (IIHF Rule 84.1)
 Rule: IIHF playoff overtime is ten minutes of 3-on-3, not the NHL's twenty-minute 5-on-5 periods (IIHF Rule 84.5)
 Rule: The IIHF shootout is five shooters a side with a coin toss for order, not three with home-team choice (IIHF Rule 84.4)
+Rule: IIHF 84.2 is one sentence permitting the pull; the NHL's forfeited point and its bar on returning on the fly have no IIHF counterpart
+Rule: England Ice Hockey plays overtime only in NIHL fixtures, and in SNL fixtures whose competition regulations provide for it (In-House Rules, Rule 84)
+Rule: NIHL overtime is five minutes of 3-on-3 with no change of ends, then game-winning shots with three shooters a side (In-House Rules, Appendix 1, on IIHF Rule 84)
 Read: Under IIHF rules your bench is the near bench, so waiting for an exhausted defender is much less reliable
+Action: Ask before the game — formats run from 4-on-4 to 3-on-3 to a straight shootout to no overtime at all
 ```
 
-Formats vary enormously below the professional level: some leagues use 4-on-4, some 3-on-3, some go straight to a shootout, many simply record a tie, and youth leagues often have no overtime at all. **Ask before the game.**
-
-> **Rule-set note — IIHF overtime differs from the NHL in ways that change how you play it.** From the *IIHF Official Rule Book 2025/26*, Rule 84:
+> **Rule-set note — IIHF overtime differs from the NHL in ways that change how you play it.** This is the operative section if you play in Britain: every level of the game here runs the IIHF book. From the *IIHF Official Rule Book 2025/26*, Rule 84:
 >
 > - **Preliminary/round-robin (84.1):** five minutes maximum, sudden death, **3-on-3** — the same length and strength as the NHL. But it follows a **three-minute intermission** with the ice shovelled, and **teams do not change ends.** The NHL's overtime uses the long change; IIHF overtime does not, so your bench is the *near* bench and a tired player can actually get off. That single difference makes the "wait for the exhausted defender" plan much less reliable under IIHF rules.
 > - **Playoff, relegation, classification and bronze-medal games (84.5):** **ten minutes**, sudden death, still **3-on-3**, still no change of ends — not the NHL's 20-minute 5-on-5 periods. If it settles nothing, the shootout follows.
 > - **Gold-medal game (84.6):** repeating sudden-death 3-on-3 overtime periods with a **15-minute intermission** and an ice resurface between each. Teams stay at the same ends for the first overtime and **change ends from the second onward**. No shootout.
-> - **Shootout (84.4):** **five** shooters per side, not the NHL's three, then sudden death. The order of shooting is decided by a **coin toss** between the captains, rather than by the home team as in the NHL, where Rule 84.4 provides that *"the home team shall have the choice of shooting first or second."*
+> - **Pulling the goalie in overtime (84.2):** the whole rule is one sentence — *"A team shall be allowed to pull its goalkeeper in favor of an additional skater in the overtime period."* **Neither of the NHL's two riders appears anywhere in the IIHF book:** there is no forfeiture of the point already earned if you lose with the net empty, and no bar on the goalkeeper returning on the fly (the IIHF book has no Rule 74.5, and the phrase "on the fly" does not occur in it). So the standings-points arithmetic that makes an overtime pull almost never worth it in the NHL is not part of your game.
+> - **Shootout (84.4):** **five** shooters per side, not the NHL's three, then sudden death. The order of shooting is decided by a **coin toss** between the captains, rather than by the home team as in the NHL, where Rule 84.4 provides that *"the home team shall have the choice of shooting first or second."* More below, under [Shootouts](#shootouts).
 > - **Overtime penalties (84.3)** work as in the NHL: a penalty makes it 4-on-3, coincidental minors with nothing else on the clock leave it 3-on-3, a two-man advantage is 5 against 3, and no team ever has fewer than three skaters.
+
+> **⚠️ Britain — in many fixtures there is no overtime at all.** England Ice Hockey, the SIHA and the BUIHA amend IIHF Rule 84 down to a single line: overtime *"is only played in NIHL fixtures and in SNL fixtures where specifically provided for in competition regulations"* (In-House Rules, Rule 84). Recreational and junior games in England and Scotland end level, so everything above about managing a tied third period ends with the horn rather than with 3-on-3. Where overtime *is* played, the formats are set out in Appendix 1 of the In-House Rules:
+>
+> - **NIHL National League, its group-stage playoffs, and NIHL 1 and 2:** **five minutes of 3-on-3**, then a **game-winning shots (GWS)** competition of **three** shooters a side taking alternate shots — three, as in the NHL, not the IIHF's five. **Teams do not change ends**, as under the IIHF book, so the near-bench point above is yours. Goalkeepers may go to the bench during the rest period; penalised players stay in the box. No group-stage playoff game may end in a tie.
+> - **NIHL Playoff Final Weekend:** semi-finals go to **20 minutes of 5-on-5** and then game-winning shots. The **Final** goes to successive **20:00 periods of 5-on-5 sudden death** — *"golden goal"*, with **no** shots competition — and *"[t]eams change ends at the start of each overtime period."* That is the one British format in which the long change comes back, and it is the closest thing here to NHL playoff overtime.
+> - **SNL:** five minutes of 3-on-3 sudden death, then a **best-of-three penalty shot shootout**, then sudden death.
+> - **BUIHA:** fixtures marked *"VARSITY OT"* on the schedule follow the NIHL procedure.
+>
+> The full list of British amendments lives in [UK and England Rules](../foundation/uk_rules.md).
+
+Formats vary enormously below the professional level everywhere else too: some leagues use 4-on-4, some 3-on-3, some go straight to a shootout, many simply record a tie, and youth leagues often have no overtime at all. **Ask before the game.**
 
 ---
 
 ## Shootouts
 
 **Rule 84.4**: if the five-minute overtime settles nothing, each team gets **three shots**, alternating, and the **home team chooses whether to shoot first or second**. If still tied it goes to **sudden death**, and **no player may shoot twice until everyone eligible has shot**. The rules for each attempt are those of a penalty shot (Rule 24). The final score is recorded as one goal better than the opponent regardless of how many shootout goals were scored, and the winning shooter is not credited with a goal in personal statistics.
+
+> **Rule-set note — the shootout you will actually take in Britain.** Your base book is the IIHF's, and **IIHF Rule 84.4 differs from the NHL on four things that change how the competition is run**:
+>
+> - **Five shooters a side, not three**, and they must be *"five (5) different shooters"* — where the NHL gives each team *"three shots, unless the outcome is determined earlier."*
+> - **A coin toss, not the home team.** The referee calls both captains over and flips: *"The winner of the coin toss will have the choice whether their team will shoot first or second."*
+> - **The goalkeepers may be swapped.** IIHF 84.4(VI): *"The goalkeepers from each team may be changed after each shot."* NHL 84.4 is the opposite — *"Once the shootout begins, the goalkeeper cannot be replaced unless he is injured."*
+> - **Repeat shooters in the tie-break.** Once the first five are done, *"[t]he same Player can be used for each shot"*, where the NHL makes everyone eligible shoot before anyone shoots twice.
+>
+> **England Ice Hockey then replaces the whole procedure in the leagues that use it** (In-House Rules, Appendix 1). It is a **game-winning shots (GWS)** competition: **three** shooters a side taking alternate shots, then *"sudden victory"* — one shot each until it is settled. Eligibility splits by league, and this is the part to get right:
+>
+> - **NIHL National League and its group-stage playoffs:** *"Any eligible player may take a penalty-shot attempt, and the same player may be used for multiple attempts."* Eligible means not serving a penalty and not injured at the time of the attempt. Your best shooter can go every round.
+> - **NIHL 1 and 2:** the opposite — *"All eligible players (except those serving penalties or injured) must shoot before any player can take a second attempt."* That is the NHL's rule, not the National League's, in the same document.
+> - **SNL:** a *"best-of-three penalty shot shootout"*, then sudden death, with the first three designated shooters repeatable *"after every full round of three."*
+>
+> As in the NHL, the deciding goal is recorded as the game-winning goal and the final score increased by one for the winners. Full amendment list: [UK and England Rules](../foundation/uk_rules.md).
 
 ### For the shooter
 
@@ -635,13 +668,14 @@ Never: Commit first — stay square, stay patient, make them decide
 Technique: Track the puck, not the hands
 Read: Match your retreat to their approach — back in with a fast shooter, hold your depth and stay big against a slow one
 Rule: You cannot be replaced once the shootout starts unless you are injured, and a substitute gets no warm-up (NHL Rule 84.4)
+Rule: Under the IIHF book the goalkeepers "may be changed after each shot" (IIHF Rule 84.4), so in Britain a shootout substitution is legal
 ```
 
 - **Control your depth.** Coming out cuts the angle and beats shooters; staying deeper gives you more time against dekes. Know which you're better at.
 - **Don't commit first.** Nearly every shootout goal comes from a goalie who moves before the shooter does. Stay square, stay patient, make them decide.
 - **Track the puck, not the hands.**
 - **Match your retreat to their approach.** A shooter coming in fast means you back in with them; a slow shooter means you hold your depth and stay big.
-- **You cannot be replaced once the shootout starts** unless you're injured, and there is no warm-up for a substitute (Rule 84.4).
+- **You cannot be replaced once the shootout starts** unless you're injured, and there is no warm-up for a substitute (Rule 84.4). **That is the NHL position and it is reversed in the IIHF book**, where *"[t]he goalkeepers from each team may be changed after each shot"* (IIHF Rule 84.4(VI)) — so in Britain, where the IIHF book is the base and the In-House Rules leave this alone, a coach genuinely can put the other goalie in mid-competition. The no-warm-up point still holds either way: nobody is getting shots first.
 
 See [Goaltender](../positions/goaltender.md) for the technical detail.
 
@@ -899,7 +933,9 @@ Three practical habits:
 
 *Overtime strategy: [NHL Coaches' Room: Overtime success can be difference between making, missing playoffs — NHL.com](https://www.nhl.com/news/nhl-coaches-room-overtime-success-303255732) · [NHL: The Strategy in 3-on-3 Overtime Has Evolved — The Hockey Writers](https://thehockeywriters.com/nhl-overtime-3-on-3-strategy-has-evolved/) · [From chaos to control, NHLers reflect on evolution of 3-on-3 overtime — CBC Sports](https://www.cbc.ca/sports/hockey/nhl/nhl-notebook-3on3-zub-ducks-1.6693732)*
 
-*Rule-set comparison: [IIHF Official Rule Book 2025/26](https://www.iihf.com/en/statichub/6288/rules-regulations) — Rule 84 (Overtime Operations, 84.1–84.6) and Rule 87.1 (Time-outs — the same 30-second allowance and the same icing, face-off-violation, goalie-freeze, dislodged-net and penalty-shot exclusions as NHL Rule 87.1), quoted from the rulebook text · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 636(f), which gives one 60-second time-out and attaches no icing condition to it.*
+*Rule-set comparison: [IIHF Official Rule Book 2025/26](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rule 81.2 (attacking team's choice of end-zone dot after an icing), Rule 81.4 (Line Change on Icing — the same bar as NHL 82.1 plus the additional exception for "a Player with a broken skate"), Rule 82.1 (Line Change — visiting team first, and the same three substitution exceptions as the NHL), Rule 84 (Overtime Operations, 84.1–84.6, including 84.2's single permissive sentence on the overtime pull and 84.4's five different shooters, captains' coin toss, changeable goalkeepers and repeat tie-break shooters) and Rule 87.1 (Time-outs — the same 30-second allowance and the same icing, face-off-violation, goalie-freeze, dislodged-net and penalty-shot exclusions as NHL Rule 87.1), all quoted from the rulebook text · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 636(f), which gives one 60-second time-out and attaches no icing condition to it.*
+
+*The British position: [IHUK In-House Rules 2025-26, Revision 1](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — Section 10, Rule 84 (overtime played only in NIHL fixtures and in SNL fixtures whose competition regulations provide for it) and Appendix 1 (the NIHL, NIHL 1 & 2, NIHL Playoff Final Weekend, SNL and BUIHA Varsity overtime and game-winning-shots procedures quoted above). England Ice Hockey, the SIHA and the BUIHA adopt the IIHF Rule Book as their foundation and amend it; the In-House Rules make no amendment to Rule 81 (Icing), Rule 82 (Line Changes) or Rule 87 (Time-outs), so the IIHF text governs those in Britain. See [UK and England Rules](../foundation/uk_rules.md).*
 
 *Penalties in amateur hockey: [Gilbert, W.D. & Trudel, P., "A Profile of Rule Infractions in Bantam Level Ice Hockey", in *Safety in Ice Hockey: Third Volume*, ASTM STP 1341 (2000)](https://doi.org/10.1520/STP15246S) — 55 games, five leagues, 850 penalties; 15.5 penalties per game; 62.4% minor aggression penalties; 74.9% assessed to one player at a time · [McFaul, C.S. et al., "Analyzing the Relationship Between Aggression, Rule Violations, and Head Contact Events in Canadian Competitive Minor Bodychecking Hockey", *Sports Health* 18(4):738-746 (2026)](https://doi.org/10.1177/19417381251415412) — 249 verified head impacts, 48 U15/U18 AA/AAA games; ~68% nonaggressive, ~67% within the rules · [Kirker, B., Tenenbaum, G. & Mattson, J., "An Investigation of the Dynamics of Aggression: Direct Observations in Ice Hockey and Basketball", *Research Quarterly for Exercise and Sport* 71(4):373-386 (2000)](https://doi.org/10.1080/02701367.2000.10608920) — aggression instrumental two-thirds of the time · [Régnier, G. et al., "Effects of Body-Checking in the Pee-Wee (12 and 13 Years Old) Division in the Province of Quebec", in *Safety in Ice Hockey*, ASTM STP 1050 (1989)](https://doi.org/10.1520/STP24041S) — 49 teams; playing without body-checking produced fewer hostile aggression penalties*
 

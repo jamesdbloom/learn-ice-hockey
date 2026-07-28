@@ -1,9 +1,11 @@
 # Zone Entries
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline.
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
+> IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Rules Primer](../foundation/rules_primer.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Offensive Zone Play](offensive_zone_play.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md)
+> **Related:** [Rules Primer](../foundation/rules_primer.md) · [UK and England Rules](../foundation/uk_rules.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Offensive Zone Play](offensive_zone_play.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md)
 
 ## Overview
 
@@ -77,15 +79,18 @@ Most players know offside as a thing that gets whistled against them. Learn the 
 
 **[Rules Primer](../foundation/rules_primer.md) owns Rule 83** — the full statement, the delayed-offside procedure, the disallowed goal, the faceoff locations and the differences between the three rulebooks. This document owns one thing: the **trail-skate drag** as a technique. Four clauses are what make that technique work, so they are set out here; for anything beyond them, go to the primer.
 
+**If you play in Britain, read the IIHF flags below as your own.** Every level of the game here — the Elite League, the NIHL, the recreational and junior game, university hockey — runs the IIHF Rule Book, and its Rule 83 is the one that will be applied to you. One local amendment touches this rule and is worth knowing: because **on-ice video review is not available in EIH or SIHA competition**, a **Coach's Challenge is not permitted** either (In-House Rules, Rules 37 and 38, amending IIHF Rule 38 and therefore Rule 83.5). A missed offside on the ice is the end of the matter; nobody is going upstairs to wipe a goal off the board twenty seconds later. See [UK and England Rules](../foundation/uk_rules.md).
+
 ### The four clauses the technique rests on
 
 ```facts
-Rule: You are off-side only when both skates are completely over the leading edge of the blue line (NHL Rule 83)
-Rule: One skate in contact with the line, or on your own side of it, keeps you onside at the instant the puck completely crosses (NHL Rule 83)
+Rule: You are off-side only when both skates are completely over the leading edge of the blue line (NHL Rule 83; IIHF Rule 83.1 word-for-word)
+Rule: One skate in contact with the line, or on your own side of it, keeps you onside at the instant the puck completely crosses (NHL Rule 83; IIHF Rule 83.1)
 Rule: The whole width of the painted blue line counts as "the line" — a skate touching any of it is onside (NHL Rule 1.5)
-Rule: Your own side of the line is a vertical plane — a skate lifted and held back over the neutral zone is onside (NHL Rule 83)
-Rule: For 2025-26 a "skate" is the blade only, so an overhanging boot is irrelevant (NHL Rule 83)
+Rule: Your own side of the line is a vertical plane — a skate lifted and held back over the neutral zone is onside (NHL Rule 83; IIHF Rule 83.1, in the same words)
+Rule: For 2025-26 a "skate" is the blade only, so an overhanging boot is irrelevant (NHL Rule 83) — the IIHF book carries no equivalent definition
 Rule: Under USA Hockey Rule 630(a) an airborne trail skate is offside — the blade must have contact
+Rule: British hockey runs the IIHF book at every level, so the IIHF wording here is the rule you play under — see UK and England Rules
 ```
 
 Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:

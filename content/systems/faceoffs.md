@@ -3,9 +3,12 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **The faceoff-violation
 > rules are one of the biggest NHL/IIHF splits in the whole game** — see "Violations,
-> Ejections and the Bench Minor" below.
+> Ejections and the Bench Minor" below. **Playing in Britain? The IIHF flags are yours** —
+> every level of UK hockey runs the IIHF book, amended locally; see
+> [UK and England Rules](../foundation/uk_rules.md). That split is therefore not a footnote
+> for you: **nobody is ejected from a draw in British hockey.**
 >
-> **Related:** [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
+> **Related:** [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [UK and England Rules](../foundation/uk_rules.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
 
 ## Overview
 
@@ -221,15 +224,18 @@ That last rule is a genuine tactical asset for the defending team, and it is the
 
 Get this exactly right, because the consequences are asymmetric and one of them is routinely misunderstood.
 
+**Two different consequences, depending on your book.** The *list* of violations is essentially the same in the NHL and IIHF rulebooks — the same premature movement, the same encroachment, the same bad stick placement. What differs is what it costs you. The NHL throws your centre out of the circle. The IIHF issues **a warning to your team** and re-drops the puck with the same centre still in the dot. **If you play anywhere in Britain, the IIHF consequence is the one you live under** — see [UK and England Rules](../foundation/uk_rules.md). Read this section with that substitution in mind; it is flagged again at each point where it changes what you should do.
+
 ### What gets your centre thrown out of the dot
 
 ```facts
-Rule: A faceoff violation ejects the offending team's centre from that draw (Rule 76.4)
+Rule: A faceoff violation ejects the offending team's centre from that draw (NHL Rule 76.4)
+Rule: Under IIHF — the British book — the same violation is a warning to the team and a re-drop, with the centre staying in the dot (IIHF Rules 76.6, 76.7)
 Rule: Any early twitch of the stick or body before the drop is a violation (Rule 76.7)
 Rule: Improper stick placement, or skates in the wrong place relative to the restraining lines, is a violation (Rule 76.7)
 Rule: A teammate putting a skate inside the circle or across the hash marks is a violation (Rule 76.7)
 Rule: Physical contact with an opponent before the drop is a violation (Rule 76.7)
-Rule: Being late to the faceoff location costs one warning per game, not your centre (Rule 76.7)
+Rule: Being late to the faceoff location costs one warning per game, not your centre (Rule 76.7, IIHF Rule 76.7)
 ```
 
 Under NHL rules, a faceoff violation results in the **offending team's centre being ejected from that draw** — replaced "by any teammate then on the ice" (Rule 76.4). The violations (Rule 76.7):
@@ -242,10 +248,13 @@ Under NHL rules, a faceoff violation results in the **offending team's centre be
 
 **One softening worth knowing:** players who are simply **late to the faceoff location**, and therefore off-side for the draw, get **one warning per game** — given to the offending team and to its coach — and Rule 76.7 is explicit that "in this situation, the offending team's center is not ejected from the face-off." Any subsequent instance is a bench minor, announced as "Delay of Game – Slow Proceeding to Face-off Location." So being slow off the bench is not the same offence as being early on the drop: the first one costs you a warning, the second costs you your centre.
 
+**Under IIHF this softening is worth more, not less.** IIHF Rule 76.7 carries the same once-a-game lateness warning, but phrases the carve-out for a book that has no ejections: *"In this situation, the offending team's center will not receive a warning for a 'face-off' violation."* Because a warning is the currency in the IIHF book — the thing that puts you one twitch from a bench minor — that sentence means being slow to the dot does **not** burn the warning you may still need on the same draw. Your one free violation stays intact.
+
 ### The rule everybody gets wrong
 
 ```facts
-Rule: A teammate moving into the circle ejects the centre, not the teammate (Rule 76.6)
+Rule: A teammate moving into the circle ejects the centre, not the teammate (NHL Rule 76.6)
+Rule: Under IIHF the same encroachment costs the team its one warning for that draw, not the centre (IIHF Rule 76.6)
 Rule: Both skates stay outside the circle and outside the hash marks (Rule 76.7)
 Rule: Skate contact with the line is permitted — crossing it is what does it (Rule 76.7)
 Rule: Your stick may be inside the circle or the hash marks if it touches no opponent or their stick (Rule 76.7)
@@ -258,7 +267,9 @@ In both clauses the line itself is safe: *"skate contact with the line is permit
 
 So if your winger leans over the hash marks trying to time a jump, **you lose your best draw-taker for the most important draw of the game.** The winger stays. This is the highest-value piece of information in this entire document and it costs nothing to act on: tell your linemates.
 
-The specific standard (Rule 76.7): **both skates** must stay outside the circle and outside the hash marks. **Skate contact with the line is permitted** — it is crossing it that's illegal. Your **stick** may be inside the circle or inside the hash marks, provided it makes no contact with an opponent or an opponent's stick. So you can reach; you cannot step.
+**In Britain it costs you something different, and it is still worth teaching.** IIHF Rule 76.6 sets out the identical offence with the IIHF consequence: *"If a Player other than the Player taking the 'face-off' moves into the face-off circle prior to the dropping of the puck, then the offending team taking the 'face-off' shall receive a warning for a 'face-off' violation."* Your centre stays. What your winger has spent is the team's **one free violation on that draw** — and IIHF Rule 76.7 then puts a bench minor on the second. So on a defensive-zone draw you cannot afford, an early winger does not remove your specialist; it removes your margin, and the next twitch by anyone in your five is two minutes. Same instruction to your linemates, different sentence after "because".
+
+The specific standard is the same in both books and is worth quoting once, because it is the part people get wrong. **Both skates** must stay outside the circle and outside the hash marks. **Skate contact with the line is permitted** — it is crossing it that's illegal. Your **stick** may be inside the circle or inside the hash marks, provided it makes no contact with an opponent or an opponent's stick. So you can reach; you cannot step. NHL Rule 76.7 and IIHF Rule 76.7(I)–(II) are word-for-word here: *"Players on the perimeter of the face-off circle must keep both skates outside the face-off circle – skate contact with the line is permitted."*
 
 ### The second violation
 
@@ -270,13 +281,16 @@ Action: With a replacement in the dot take the simplest approach — a clean tie
 
 **Two faceoff violations by the same team on the same draw is a bench minor** for "Delay of Game – Face-off Violation" (Rule 76.7). This is why the replacement taker has to be immaculate: your team is now one twitch away from a penalty. It is also why, when your centre is tossed, the replacement should take the simplest possible approach — a clean tie-up, nothing clever.
 
-Note that any of the **four on-ice officials** may identify a faceoff violation, not just the linesperson dropping the puck.
+**This is the rule that does the work in Britain, because it is the only one with teeth.** IIHF Rule 76.7 carries the escalation in the NHL's own terms — *"When two (2) 'face-off' violations have been committed by the same team during the same 'face-off', this team shall be penalized with a bench minor penalty"* — and the IIHF Situation Handbook confirms it is served like any bench minor, by any skater the team designates. Its Situation 17.4 is precisely the case this document keeps warning you about — *"Team A has already had their center warned for a face-off violation. The winger for Team A encroaches and Team A is penalized for committing a second face-off violation"* — and the answer is that any skater may serve it (Situations 17.3 and 17.4, citing Rules 17.1 and 76.6). Under the IIHF book your first violation costs you a re-drop and your second costs you two minutes, and there is no ejection anywhere in between. So the discipline the NHL buys by removing your centre, the IIHF book buys by putting the whole five one mistake from a penalty kill. The instruction to your line is the same and the reason is different: after a warning, nobody moves early, nobody leans, nobody reaches.
 
-### The icing exception — a genuinely useful loophole
+Note that any of the **four on-ice officials** may identify a faceoff violation, not just the linesperson dropping the puck. IIHF Rule 76.7 says the same in the same parenthesis.
+
+### The icing exception — a genuinely useful NHL loophole, and the British default
 
 ```facts
-Rule: After an icing the first faceoff violation by either team does not remove the centre (Rule 76.4)
-Rule: The centre is warned instead, and any subsequent violation by that team is a bench minor (Rule 76.4)
+Rule: After an icing the first faceoff violation by either team does not remove the centre (NHL Rule 76.4)
+Rule: The centre is warned instead, and any subsequent violation by that team is a bench minor (NHL Rule 76.4)
+Rule: The IIHF book has no post-icing carve-out because it needs none — every first violation on every draw is already a warning (IIHF Rules 76.6, 76.7)
 Key: The warning is per team, so each side has its own free one
 Action: Use your free attempt to cheat the timing — and expect their centre to use theirs
 ```
@@ -284,6 +298,10 @@ Action: Use your free attempt to cheat the timing — and expect their centre to
 **On a draw that follows an icing, the *first* faceoff violation does not get anybody's centre removed — and that applies to *both* teams, not just the team that iced.** Rule 76.4: *"When an icing infraction occurs, the first face-off violation by either team will not result in the center being removed. The center will be warned by the Linesperson that the team has committed their first face-off violation, and any subsequent violation by that team will result in a bench minor penalty for delay of game - face-off violation being assessed."*
 
 Read the two limits carefully. It is the **first** violation only — not "any" violation — and the warning is per team, so each side has its own free one. Any subsequent violation by that team is a bench minor. But on the single most dangerous draw in hockey — a defensive-zone draw after your own icing, with a tired line that cannot change — you get one free attempt to cheat the timing, and so does the team that has just pinned you. Good centres use it and expect it.
+
+> **⚠️ Do not go looking for this rule in the IIHF book — it is not there, and the reason matters.** The IIHF's Rule 76 mentions icing exactly once, and in a different context (the post-whistle scrum that moves a draw to the neutral zone). There is no post-icing carve-out anywhere in IIHF Rules 76.3 to 76.7, and no equivalent sentence in IIHF Rule 81. **That is not an omission — it is redundancy.** The NHL needs a special exemption after an icing because its default is ejection; the IIHF's default is already a warning, on every draw, all game. So a British reader should not read this section as a loophole to hunt for. **You have the free first violation the NHL rations to post-icing draws, and you have it on all fifty-six of them** — one per team, per faceoff, reset each drop.
+>
+> The practical consequence is real and it cuts both ways. The timing gamble the NHL lets a centre take once per icing, an IIHF centre can take on any draw in the game, and so can his opponent. Expect the centre across from you to cheat the drop far more often than a diet of NHL hockey would lead you to expect, and understand that the cost of him being caught is a re-drop rather than a substitution.
 
 ### Closing your hand on the puck is a *penalty*, not a violation
 
@@ -302,30 +320,35 @@ Rule 76.5 sets the boundary: the two centres may not play the puck with their ha
 
 The practical line: **in the scrum after the drop, your hands and your body stay off the puck.** An *open* hand is not a loophole — Rule 67.2(ii) assesses a minor *"if he places his hand over the puck while it is on the ice in order to conceal it from or prevent an opponent from playing the puck."* Nor is your body — Rule 63.2(v) assesses a minor on *"a player other than the goalkeeper who deliberately falls on or gathers the puck into his body."* What **is** legal is tying up your opponent's stick and winning the puck with your own stick or your skates. Do not gamble on this one — it is a penalty, not a do-over.
 
-### When your centre gets tossed
+### When your centre gets tossed — and where he never is
 
 ```facts
-Rule: Any teammate then on the ice may step in (Rule 76.4)
-Rule: The replacement must come into position quickly or risk the puck being dropped without them set (Rule 76.4)
-Rule: No time-out shall be granted following a faceoff violation (Rule 87.1)
-Rule: Under IIHF rules a violation is a warning to the team, not an ejection (IIHF Rules 76.4, 76.6, 76.7)
+Rule: Any teammate then on the ice may step in (NHL Rule 76.4)
+Rule: The replacement must come into position quickly or risk the puck being dropped without them set (NHL Rule 76.4)
+Rule: No time-out shall be granted following a faceoff violation (Rule 87.1; IIHF Rule 87.1 in the same words)
+Rule: Under IIHF rules — the British book at every level — a violation is a warning to the team, not an ejection (IIHF Rules 76.4, 76.6, 76.7)
+Rule: Under IIHF the warned centre stays and the draw is simply taken again (IIHF Rule 76.7)
 Rule: IIHF also counts winning the draw with your skates as a violation (IIHF Rule 76.3(VI))
 Rule: USA Hockey keeps the ejection but makes the second violation a minor on the individual (Rule 613(d))
 Action: Agree the designated replacement in advance, and make the plan a tie-up rather than a set play
 ```
 
+**Under NHL rules**, when the violation is yours the centre goes and somebody else takes the draw:
+
 - **Any teammate on the ice may step in** (Rule 76.4) — in practice, a winger.
 - **They must get set quickly.** Rule 76.4: the replacement "must come into position quickly or risk having the puck dropped by the Linesperson without the player being set," or being ejected themselves, which is the second violation and therefore a bench minor.
 - **Agree the backup in advance.** Every winger should know whether they are the designated replacement, and every line should have a default plan for the draw they take without their centre. That plan should almost always be a **tie-up**, not a set play.
-- **No timeout can save you.** Rule 87.1: "No time-out shall be granted following a face-off violation."
+- **No timeout can save you.** Rule 87.1: "No time-out shall be granted following a face-off violation." **IIHF Rule 87.1 says it in the same words**, so that one is true wherever you play.
 
-> **IIHF rules are materially different, and this changes how you play.** Under the IIHF Official Rulebook 2025/26, a faceoff violation results in a **warning to the offending team, not an ejection of the centre** (IIHF Rules 76.4, 76.6 and 76.7 — where the NHL text says "shall be ejected from the face-off circle," the IIHF text says the team "shall receive a warning for a 'face-off' violation"). Two violations by the same team on the same draw is still a bench minor. So in IIHF play your winger's encroachment does not cost you your best draw-taker — it costs you your one warning.
+> **⚠️ In Britain none of the above happens, because nobody is ejected from a draw.** The IIHF Official Rule Book 2025/26 is the base rule set at every level of UK hockey — the Elite League, the NIHL, the English and Scottish recreational and junior game, university hockey and the GB sides ([UK and England Rules](../foundation/uk_rules.md)) — and it has no faceoff ejection anywhere in Rule 76. A violation is a **warning to the offending team**, and the draw is taken again with the same centre. IIHF Rule 76.7: *"A warning shall be issued to the offending team and the 'face-off' must be conducted again."* IIHF Rule 76.6, on a teammate entering the circle: *"the offending team taking the 'face-off' shall receive a warning for a 'face-off' violation."* IIHF Rule 76.4, on bad positioning: *"the Official may assess a warning for a 'face-off' violation."* Two violations by the same team on the same draw is still a bench minor (IIHF Rule 76.7).
 >
-> IIHF also lists a violation the NHL does not have: **"one of the centers wins the face-off by using the skates"** (IIHF Rule 76.3(VI)). Under NHL rules, using your feet to kick the puck back is legal; under IIHF rules it can be called. **The consequence is the IIHF one, though — a warning, not an ejection.** Rule 76.3 lists the skate win alongside the other violations and has the Linesperson "assess a warning for a 'face-off' violation prior to dropping the puck," so a skate win does *not* get your centre tossed internationally; it burns your team's warning, and the *next* violation by your team is the bench minor. If you play internationally or under an IIHF-derived rulebook, take the "kick it back" technique described below out of your repertoire anyway — a free warning is not free twice.
+> **What that changes about how you play.** Your specialist takes every draw he lines up for — there is no "designated replacement" problem, and no reason to keep a simple back-up plan in reserve for a winger in the dot. What you are protecting instead is **the warning**, because it is the only thing between your team and a bench minor on that draw. IIHF Rule 76.4 makes the point directly: *"If a Player received a warning for a 'face-off' violation, they must come into position quickly or risk having the puck dropped by the Linesperson without the Player being set."* So the sequence to rehearse is not "who steps in" but "what we do after the warning" — and the answer is that everybody freezes, the centre takes the re-drop straight, and nobody attempts anything with timing in it.
 >
-> **USA Hockey keeps the ejection but changes the escalation.** Rule 613(d) has the same headline consequence as the NHL — *"if a player, other than the player facing off, fails to maintain their proper position, the center of their team shall be ejected from the face-off"* — so your winger still costs you your draw-taker. What differs is the second violation: USA Hockey assesses *"a minor penalty for delay of game … to the player committing the second violation"*, a minor on an individual rather than the NHL's bench minor on the team. Same two minutes off the clock, different player in the box.
+> **The IIHF also lists a violation the NHL does not have, and it deletes a technique.** IIHF Rule 76.3(VI): a violation occurs where **"one of the centers wins the face-off by using the skates."** Under NHL rules, kicking the puck back is legal; under the book you actually play, it is not. Rule 76.3 lists the skate win alongside the other violations and has the Linesperson *"assess a warning for a 'face-off' violation prior to dropping the puck."* So a skate win burns your team's warning and the *next* violation by anyone in your five is the bench minor. **Take "kick it back" out of your repertoire** — it is in the technique list below because the document is written to NHL rules, and it is not available to you. A free warning is not free twice.
 >
-> Many rec, beer and youth leagues enforce faceoff violations loosely or not at all, and some simply re-drop. Find out what your officials actually call before you build a plan around cheating the timing.
+> **USA Hockey keeps the ejection but changes the escalation** — this flag is not yours if you play in Britain. Rule 613(d) has the same headline consequence as the NHL — *"if a player, other than the player facing off, fails to maintain their proper position, the center of their team shall be ejected from the face-off"* — so a winger still costs a draw-taker. What differs is the second violation: USA Hockey assesses *"a minor penalty for delay of game … to the player committing the second violation"*, a minor on an individual rather than the NHL's bench minor on the team. Same two minutes off the clock, different player in the box.
+>
+> Many rec, beer and youth leagues enforce faceoff violations loosely or not at all, and some simply re-drop. **In Britain the re-drop *is* the rule**, not a local softening of it — but how strictly the warning is issued in a Monday-night rec game is still a matter for your officials. Ask.
 
 ---
 
@@ -374,7 +397,7 @@ Risk: The stick lift is the higher-reward version and it fails badly if you miss
 Read: Try the "lose it forward" play at the neutral-zone dots, where there is space behind the other centre
 Never: Use "lose it forward" in your own end
 Rule: Contact before the drop is a violation; going through the man is only legal once the faceoff is complete (Rule 76.7)
-Rule: Kicking the puck back is legal in the NHL and a violation under IIHF Rule 76.3(VI)
+Rule: Kicking the puck back is legal in the NHL but a violation under IIHF Rule 76.3(VI), so it is not available anywhere in Britain
 Rule: Batting the puck out of the air is legal with the stick and a minor penalty with the hand (Rule 67.2)
 ```
 
@@ -386,7 +409,7 @@ There is no single correct draw. There are seven or eight, and the good centres 
 - **Tying up the stick.** Instead of playing the puck, get your blade over or under your opponent's and neutralise it. You are not winning the draw; you are ensuring **nobody** wins it, and converting a 1-on-1 into a 4-on-4 scramble that your wingers are already leaning into. Against a superior draw-taker this is the correct play, not a surrender.
 - **The stick lift.** A more aggressive version: lift their blade off the ice entirely, then take the puck. Higher reward, and it fails badly if you miss.
 - **Going through the man.** Drive your body into your opponent as the puck drops, taking the ice and the puck together. Beware: physical contact **before** the drop is a violation and can be a minor penalty. This only becomes legal in "the course of playing the puck after the face-off has been completed" (Rule 76.7).
-- **Using your feet.** Kick the puck back to a teammate, or open your skate as a backstop so a tied-up puck squirts the right way. Legal in the NHL. **A violation under IIHF rules** (Rule 76.3(VI)) — see the flag above.
+- **Using your feet.** Kick the puck back to a teammate, or open your skate as a backstop so a tied-up puck squirts the right way. Legal in the NHL. **A violation under IIHF rules, and therefore not a technique available in British hockey at any level** — IIHF Rule 76.3(VI) makes it a violation where *"one of the centers wins the face-off by using the skates."* Note the wording: it is *winning* the draw with the skates that is caught, so opening a skate as a backstop is a finer line than kicking the puck back, and neither is worth learning if this is your book. See the flag above.
 - **The "lose it forward" play.** Deliberately push the puck *forward* past your opponent and skate through him onto it. Used most often at the neutral-zone dots, where there is space behind the other centre and no immediate danger if it fails. In your own end it is a bad idea; in the offensive zone it can beat a centre who is committed to pulling backward.
 - **Batting it out of the air.** Advanced, and legal with the **stick** — several coaching sources describe attacking the puck mid-drop. With the **hand** it is a minor penalty (Rule 67.2). Timing this requires watching the linesperson's release, not the ice.
 
@@ -433,12 +456,13 @@ Action: Change the technique, not just the target — pull one back, tie the nex
 Risk: Win three straight draws to the same defenceman and the fourth will be jumped
 Key: Even a technique you are worse at has value if it stops an opponent pre-loading against your best one
 Technique: A shoulder feint, hip fake or delayed stick approach can draw an opponent into moving early
-Goal: Make them move before the drop — that is a faceoff violation and it ejects them
+Goal: Make them move before the drop — that is a faceoff violation, and it ejects them under NHL rules
+Rule: Under IIHF it warns their team instead, which is worth less on the first draw and a great deal once they have been warned (IIHF Rule 76.7)
 ```
 
-The counter to a scouted centre is unpredictability. If you win three straight draws pulling to the same defenceman, the fourth one will be jumped. Change the *technique*, not just the target: pull one back, tie the next one up, kick the third. Even a technique you're worse at has value if it prevents the opponent from pre-loading against your best one.
+The counter to a scouted centre is unpredictability. If you win three straight draws pulling to the same defenceman, the fourth one will be jumped. Change the *technique*, not just the target: pull one back, tie the next one up, sweep the third. Even a technique you're worse at has value if it prevents the opponent from pre-loading against your best one. (Kicking it back is a fourth option **only under NHL rules** — see the technique list above.)
 
-Deception belongs here too: a small feint of the shoulder, a hip fake, or a deliberately delayed stick approach can draw an opponent into moving early — which, if they move before the drop, is a faceoff violation and ejects *them*.
+Deception belongs here too: a small feint of the shoulder, a hip fake, or a deliberately delayed stick approach can draw an opponent into moving early — which, if they move before the drop, is a faceoff violation. **What that is worth depends on your book, and the difference is large.** Under NHL rules it ejects *them*, and you now face a winger. Under the IIHF rules you play under in Britain it issues their team a warning and the draw is taken again against the same man — so drawing an opponent early is worth little the first time. It is worth a great deal the *second* time: once their team has been warned on that draw, a further violation is a bench minor, so a centre who has just been caught cheating the drop cannot afford to try anything at the re-drop. Bait him once, then take a clean, straight draw against a man who has been told he cannot move.
 
 ### Handedness and which side you're strong on
 
@@ -662,6 +686,7 @@ Risk: A defensive-zone draw shorthanded is the most dangerous faceoff in hockey
 Rule: You may ice the puck freely while shorthanded (Rule 81.6), so a won draw is a penalty-free clear
 Rule: USA Hockey grants that exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1))
 Rule: NHL Rule 81.6 withdraws it from a team shorthanded by a major that has left nobody on the penalty bench
+Rule: IIHF Rule 81.6 carries no such carve-out, so in Britain the shorthanded icing exemption is unqualified (IIHF Rule 81.6)
 Key: A tie-up is a win here too — anything but their point man shooting into a screen is acceptable
 Action: Put your best draw man out even if he is not a natural killer
 ```
@@ -669,7 +694,7 @@ Action: Put your best draw man out even if he is not a natural killer
 Everything is inverted. You are not trying to create; you are trying to end the possession.
 
 - **A defensive-zone draw shorthanded is the most dangerous faceoff in hockey.** You are one man down, in your own end, against a set unit with a rehearsed play and a shooter with his feet planted.
-- **Winning it clean is enormous — where the shorthanded icing exemption applies.** You may **ice the puck freely while shorthanded** (Rule 81.6), so a won draw shorthanded is a guaranteed, penalty-free clear — and a chance to change tired killers. (How much time that burns depends entirely on how quickly they retrieve and re-enter; no published figure puts a number on it, so don't trust the "fifteen seconds" figure you sometimes hear.) There is no other situation in hockey where a won faceoff so directly converts into time off the clock. **Two carve-outs before you plan the shift around it**, both owned by [Special Teams](special_teams.md): USA Hockey gives the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), and NHL Rule 81.6 withdraws it from a team shorthanded by a *major* that has left nobody on the penalty bench. Below those USA Hockey levels the won draw still has to be cleared legally.
+- **Winning it clean is enormous — where the shorthanded icing exemption applies.** You may **ice the puck freely while shorthanded** (Rule 81.6), so a won draw shorthanded is a guaranteed, penalty-free clear — and a chance to change tired killers. (How much time that burns depends entirely on how quickly they retrieve and re-enter; no published figure puts a number on it, so don't trust the "fifteen seconds" figure you sometimes hear.) There is no other situation in hockey where a won faceoff so directly converts into time off the clock. **Two carve-outs before you plan the shift around it**, both owned by [Special Teams](special_teams.md): USA Hockey gives the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), and NHL Rule 81.6 withdraws it from a team shorthanded by a *major* that has left nobody on the penalty bench. Below those USA Hockey levels the won draw still has to be cleared legally. **Neither carve-out is yours in Britain.** IIHF Rule 81.6 grants the exemption in one sentence — *"If the puck was so shot by a Player of a side below the numerical strength of the opposing team, play shall continue, and the 'icing' violation shall not be called"* — and then says nothing further about majors or empty penalty benches. So the won shorthanded draw converts into a free clear under the IIHF book without qualification, which makes this one of the few places in this document where the British reader has the *simpler* rule rather than the more complicated one.
 - **A tie-up is a win here too.** Any outcome that isn't "their point man shoots into a screen" is acceptable.
 - **Put your best draw man out even if he isn't a natural killer.** The draw is worth more than the twenty seconds of coverage.
 

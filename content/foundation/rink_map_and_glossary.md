@@ -1,9 +1,11 @@
 # Rink Map and Glossary
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline.
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
+> IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> [UK and England Rules](uk_rules.md).
 >
-> **Related:** [Getting Started](../getting-started/getting_started.md) · [Rules Primer](rules_primer.md) · [On-Ice Communication](on_ice_communication.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
+> **Related:** [UK and England Rules](uk_rules.md) · [Getting Started](../getting-started/getting_started.md) · [Rules Primer](rules_primer.md) · [On-Ice Communication](on_ice_communication.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
 ## Overview
 
@@ -34,24 +36,55 @@ Every NHL rink is the same size, and it is the size most North American rinks ar
 
 *(NHL Official Rules 2025-2026, Rules 1.2, 1.3, 1.5, 2.1 and the official rink diagram.)*
 
-### IIHF / international ("Olympic ice")
+### IIHF / international ("Olympic ice") — and the British base
 
-The IIHF rulebook does not specify one size. It specifies a range: **60 m long and 26 m to 30 m wide**, with a corner radius of 7.0 m to 8.50 m (IIHF Rule 1.2).
+**If you play anywhere in Britain, this is your specification, not the NHL one above.** Every level of the game here — the Elite League, the NIHL, English and Scottish recreational and junior hockey, university hockey and the GB national teams — runs on the IIHF Rule Book, amended locally. See [UK and England Rules](uk_rules.md) — and read the England Ice Hockey amendment in the next subsection before you take any figure in the table below as describing your rink.
 
-| Feature | IIHF | In feet |
-|---|---|---|
-| Overall | 60 m × 26–30 m | ~196.9 ft × 85.3–98.4 ft |
-| Goal line to end boards | 4.0 m | 13.1 ft |
-| Blue line to goal line | 18.5 m | 60.7 ft |
-| Neutral zone (¼ of rink length) | 15.0 m | 49.2 ft |
-| Boards height | ideal 1.07 m | ~42 in |
-| Glass above boards | 2.4 m behind each goal (extending at least 4.0 m from the goal line), 1.8 m along the sides | 7.9 ft / 5.9 ft |
+The IIHF rulebook does not specify one size. It specifies a range. Rule 1.2 reads in full: *"The official size of the rink shall be 60m long and 26m to 30m wide. The corners shall be rounded in the arc of a circle with a radius of 7.0m to 8.50m. Any deviations from these dimensions for any IIHF competition require IIHF approval."*
+
+Note what that last sentence does: under the IIHF book a deviation is not simply a smaller rink, it is something that needs **approval**. Note too that the **length is fixed at 60 m** — only the width is a range.
+
+| Feature | IIHF | In feet | Rule |
+|---|---|---|---|
+| Overall | 60 m × 26–30 m | ~196.9 ft × 85.3–98.4 ft | 1.2 |
+| Corner radius | 7.0–8.50 m | 23.0–27.9 ft | 1.2 |
+| Goal line to end boards | 4.0 m | 13.1 ft | 1.5 |
+| Blue line to goal line | 18.5 m | 60.7 ft | Appendix VI (2250 cm from the end boards) |
+| Neutral zone (¼ of rink length) | 15.0 m | 49.2 ft | Appendix VI (¼ L = 1500 cm) |
+| Blue line width | 30 cm | ~12 in | 1.5 |
+| Boards height | ideal 1.07 m | ~42 in | 1.3 |
+| Glass above boards | 2.4 m behind each goal (extending at least 4.0 m from the goal line), 1.8 m along the sides | 7.9 ft / 5.9 ft | 1.3 |
+| Players' bench | 10 m long × 1.50 m wide | ~32.8 ft × 4.9 ft | 3.1 |
+
+*(IIHF Official Rule Book 2025/26, Rules 1.2, 1.3, 1.5, 3.1 and the Appendix VI "Rink Lines" infographic, whose measurements are all in centimetres.)*
 
 The classic "big ice" is the 30 m (98.4 ft) version — **13.4 ft wider than an NHL rink**. That is the sheet most European domestic leagues and most older Olympic tournaments used.
 
 **Don't assume "international" means "wide" any more.** The 2026 Milano Cortina Olympic tournament was played on 60 m × 26 m ice — about three feet shorter and about four inches wider than an NHL rink. The 2010 Vancouver and 2022 Beijing Games also used NHL-sized sheets. The IIHF's position was that the difference is insignificant for safety and quality of play. So the wide sheet is now the exception at the top level, not the rule.
 
 **The consequence for anyone playing outside North America — Britain included — is that "IIHF-size" is not a size.** Rule 1.2 sanctions everything from 26 m to 30 m wide, so two rinks that are both entirely legal can differ by more than thirteen feet across. Whatever your league's rulebook says, the sheet is a property of the building, not of the book. Measure it or ask, and read the next section.
+
+### The England Ice Hockey amendment — British rinks are outside the IIHF range
+
+This is the single most important thing on this page for a British reader, and it is the reason you cannot take either table above as a description of your rink.
+
+England Ice Hockey and the SIHA amend IIHF Rule 1 directly. Under the heading *"Rink size and eligibility"*, the In-House Rules state: *"Rinks with a non-standard playing surface (below 56 m × 26 m) are authorised by the NGB for all levels of hockey"* — with two named exceptions permitted only up to U16: **Sutton** in England, and **Coatbridge** and **Limekilns Road** in Scotland. The rule applies to all EIH and SIHA fixtures.
+
+Read the numbers carefully, because they are not a relaxation of Rule 1.2 — they sit **outside** it:
+
+- IIHF Rule 1.2 fixes the **length at 60 m**. It offers no shorter option at all. A sheet under **56 m** is at least four metres — over thirteen feet — shorter than the only length the IIHF book recognises, and shorter than an NHL rink too (200 ft is 60.96 m).
+- **26 m is the IIHF minimum width.** "Below 56 m × 26 m" is therefore below the narrowest legal international sheet, which is itself already narrower than an NHL rink is wide.
+
+So the practical position for a British player is blunt: **your working assumption should be that your rink is smaller than both the NHL standard and the IIHF standard, and that the geometry stated elsewhere in this corpus does not describe the building you are standing in.** Everything downstream of rink size — how long a rim takes to come round, how far the half-wall is from the slot, how much room there is behind the net, whether a stretch pass is even available — shifts with it.
+
+Two things about how far that goes:
+
+- The authorisation is **blanket and standing**, not a case-by-case exemption granted on application. The NGB authorises non-standard surfaces *"for all levels of hockey"* as a general rule, and then names three venues as the **exception to the authorisation** rather than as examples of it. A governing body does not write a rule in that shape for a handful of buildings — sub-standard sheets are the ordinary case here, not the awkward one.
+- **There is still no published census of British rink dimensions**, so nothing here tells you the distribution — how many rinks, or how far below. The rule tells you what to expect; it does not tell you what yours measures. That remains something to go and look at.
+
+The In-House Rules amend the benches in the same section: the home club or venue operator must provide players' benches and penalty boxes that, *"within the fixed constraints of the rink, conform as closely as reasonably practicable to IIHF dimensions and layout"*, and any unavoidable deviation must be *"communicated to both teams and the officials prior to warm-up"* (In-House Rules, Rule 3). The phrase *"the fixed constraints of the rink"* is the same admission from the other direction.
+
+[UK and England Rules](uk_rules.md) owns the full list of England Ice Hockey amendments; this document owns the geometry.
 
 ### What the extra width actually changes
 
@@ -78,7 +111,7 @@ Most recreational, beer-league, youth and older community rinks are **not** buil
 
 **Practical instruction:** on the first shift at an unfamiliar rink, deliberately check three things — how far it is from the goal line to the end boards, whether the trapezoid is painted, and how the puck comes off the corner boards on a rim. Those three answers change your breakout.
 
-**If you play in Britain, assume nothing from the diagrams here until you have looked.** British league hockey runs the IIHF rulebook (see [Getting Started](../getting-started/getting_started.md)), and Rule 1.2 sanctions any sheet from 26 m to 30 m wide — so "we play IIHF rules" tells you which penalties get called and tells you nothing at all about the ice. British rinks were built across more than a century of very different building standards, so a metric sheet, an NHL-width sheet and something smaller than either are all things you will meet. **There is no published census of British rink dimensions to go on, so nothing here claims which size is most common** — which is exactly why the instruction is to look rather than to assume. The three checks above take one shift and are worth more than any published figure.
+**If you play in Britain, assume nothing from the diagrams here until you have looked** — and note that in Britain this is not a rec-rink caveat, it is the governing body's own position. British hockey runs the IIHF rulebook at every level (see [UK and England Rules](uk_rules.md)), Rule 1.2 sanctions any sheet from 26 m to 30 m wide, and England Ice Hockey then authorises rinks *below* 56 m × 26 m for all levels on top of that. So "we play IIHF rules" tells you which penalties get called and tells you nothing at all about the ice — and unlike a North American beer-league rink, a British sub-standard sheet is running the full IIHF rule book on it, trapezoid and all. The England Ice Hockey amendment above has the wording and the two named exceptions; the three checks above take one shift and are worth more than any published figure.
 
 ---
 
@@ -119,7 +152,7 @@ Both diagrams in this document are **schematic, not to scale.** They are there t
    +-+
 ```
 
-Note how much of the rink is *behind* the goal line. That strip — 11 ft in the NHL — is live playing surface, and a large fraction of offensive-zone possession happens there.
+Note how much of the rink is *behind* the goal line. That strip — 11 ft in the NHL, **4.0 m (13.1 ft) under IIHF Rule 1.5** — is live playing surface, and a large fraction of offensive-zone possession happens there.
 
 ---
 
@@ -127,7 +160,7 @@ Note how much of the rink is *behind* the goal line. That strip — 11 ft in the
 
 ### The goal line
 
-A **2-inch red line drawn all the way across the ice**, 11 ft from the end boards, with the goal frame standing on it (NHL Rule 1.5). It is one of the most consequential lines on the rink because so many rules key off it:
+A **2-inch red line drawn all the way across the ice**, 11 ft from the end boards, with the goal frame standing on it (NHL Rule 1.5). **Under IIHF Rule 1.5 — the British book — it is a 5 cm red line drawn 4.0 m from each end and continued vertically up the boards.** It is one of the most consequential lines on the rink because so many rules key off it:
 
 - A goal is scored when the puck **completely crosses** the goal line between the posts and under the crossbar.
 - **Icing** is judged by the puck crossing the goal line (the whole line, boards to boards — not just the goalmouth).
@@ -136,7 +169,7 @@ A **2-inch red line drawn all the way across the ice**, 11 ft from the end board
 
 ### The blue lines
 
-Two **12-inch-wide blue lines**, drawn 64 ft out from each goal line, dividing the ice into three zones (NHL Rule 1.5). They are the widest lines on the ice, and the width is not decorative — it exists because offside is judged against the *whole* line.
+Two **12-inch-wide blue lines**, drawn 64 ft out from each goal line, dividing the ice into three zones (NHL Rule 1.5). **Under IIHF Rule 1.5 they are 30 cm wide — the same foot — and sit 18.5 m out from each goal line** (Appendix VI puts them 22.50 m from the end boards). They are the widest lines on the ice, and the width is not decorative — it exists because offside is judged against the *whole* line.
 
 What the blue lines do:
 
@@ -162,7 +195,7 @@ In the NHL the crease is built as follows (Rule 1.7): a 2-inch red line runs **1
 
 There are also two small **5-inch marks** on the inside of the crease lines, 4 ft out from the goal line. Those are the goaltender's reference marks, not player restraining lines.
 
-> **IIHF:** the crease is essentially the same shape at metric sizes — 2.45 m wide at the goal line, marked in 5 cm red line. One real difference: the IIHF crease space extends vertically **to the top of the crossbar** rather than to a fixed 4 ft.
+> **IIHF (Rules 1.5 and 1.7 — the British book):** the crease is essentially the same shape at metric sizes — 2.45 m wide at the goal line, marked in 5 cm red line, and *"the marked line belongs to the Goal Crease."* One real difference: Rule 1.7 says the Goal Crease Area *"includes all of the space outlined by the crease lines and extends vertically until the top of the crossbar"* — the top of the frame, rather than the NHL's fixed 4 ft.
 
 Why it matters to you: the crease is the boundary of goaltender interference. Inside it, you must not impair the goalie's ability to make a save. Outside it, *incidental* contact is legal if you made a reasonable effort to avoid it. And **screening — standing outside the crease in the goalie's sightline without contact — is normally legal.** The limit is Rule 69.1: a goal is disallowed where an attacker *"either by his positioning or by contact, impairs the goalkeeper's ability to move freely within his crease or defend his goal"* — positioning alone can be enough. Live at the edge of the paint, not in it. See [Winger](../positions/winger.md) and [Offensive Zone Play](../systems/offensive_zone_play.md).
 
@@ -195,7 +228,7 @@ How players name them in conversation:
 - **"Outside the blue"** or **"neutral-zone dot"** for the four dots flanking the blue lines.
 - **"Strong-side dot" / "weak-side dot"** when the puck is already in play near one of them.
 
-> **IIHF** equivalents: centre circle 4.50 m radius; neutral-zone spots 1.50 m from each blue line, 14.0 m apart; end-zone spots 6.0 m from the goal line and 7.0 m either side of centre, with 4.50 m radius circles. Functionally identical geometry, metricated.
+> **IIHF equivalents (Rule 1.9 and Appendix VI) — the operative set in Britain:** centre spot 30 cm across with a 4.50 m radius blue circle; neutral-zone spots 60 cm across, 1.50 m from each blue line and 14.0 m apart; end-zone spots 6.0 m from the goal line and 7.0 m either side of centre, with 4.50 m radius red circles. Functionally identical geometry, metricated — the count is the same nine, and the four neutral-zone spots have no circles there either.
 
 ### Hash marks
 
@@ -207,7 +240,7 @@ They are also the single most useful landmark in the defensive zone, because coa
 
 There is a second, smaller set of markings you may not have noticed: an L-shaped pair of lines 1 ft outside each faceoff spot, 4 ft long and 18 in apart, with a 2 ft 10 in foot at the end. Those are the **restraining lines** for the two centres' skates on a draw, and standing wrong on them is itself a faceoff violation.
 
-> **IIHF:** hash marks are 60 cm long and 1.70 m apart; the centres' restraining lines are 1.20 m long, 45 cm apart, with a 90 cm foot.
+> **IIHF (Rule 1.9):** hash marks are 5 cm wide, 60 cm long and 1.70 m apart, at the outer edge of both sides of each circle and parallel to the goal line. The centres' restraining lines start 30 cm out from the spot and are 1.20 m long, 45 cm apart, with a 90 cm foot.
 
 ### The trapezoid (goalkeeper's restricted area)
 
@@ -219,9 +252,13 @@ The trapezoid is the marked area behind each net inside which the goaltender is 
 
 **The rule itself:** the goaltender may only play the puck behind the goal line inside this area. Playing it outside is a **two-minute minor for delay of game**. The position of the puck is the determining factor. **The sole exception is a goaltender playing the puck while maintaining skate contact with the goal crease** — there is no teammate-based exception. This document owns the geometry; the **penalty** (Rules 27.8 and 63.2(viii)) belongs to [Rules Primer](rules_primer.md), and what it means for the goalie who has to live inside it is in [Goaltender](../positions/goaltender.md).
 
-**Where it applies:** the NHL (since 2005-06), the KHL, and IIHF play (since the unified 2021-22 rulebook). **Most rec, beer-league and youth associations do not use it.** Find out which you are under, because it changes your defencemen's retrieval game completely.
+**Where it applies:** the NHL (since 2005-06), the KHL, and IIHF play (since the unified 2021-22 rulebook). **Most *North American* rec, beer-league and youth associations do not use it.** Find out which you are under, because it changes your defencemen's retrieval game completely.
 
-> **IIHF** dimensions differ only trivially: **6.80 m along the goal line, 8.60 m at the boards** (Rule 1.8) against the NHL's 22 ft (6.71 m) and 28 ft (8.53 m) — four inches and three inches respectively. The area is deeper, though, simply because the IIHF goal line is 4.0 m from the boards rather than 11 ft. **Note the one place the IIHF book is tidier than the NHL's:** IIHF Rule 27.7, which sets the penalty, restates the *current* 6.80 m / 8.60 m dimensions, so unlike NHL Rule 27.8 it does not leave a superseded figure sitting in the penalty rule. For a player under IIHF rules, the shape is the shape you already know.
+> **Britain is not covered by that "most rec leagues don't" line, and this is the trap.** EIH, SIHA and BUIHA competition — recreational and junior hockey included — runs the IIHF Rule Book, and the In-House Rules amend Rule 1 only on rink size and benches. They do not touch Rule 1.8 or Rule 27.7. **So the goalkeeper's restricted area is live at every level of British hockey**, including the levels where a North American reader would reasonably assume it isn't. See [UK and England Rules](uk_rules.md).
+
+> **IIHF — the operative geometry for a British player.** Rule 1.8: *"Behind each goal, a trapezoidal area is marked on the ice surface, called the 'Goalkeeper Designated Area'. The two 5cm-wide red lines mark the restricted area between the goal line and the boards behind the goal. The outside dimension of the marking along the goal line is 6.80m and along the boards is 8.60m."* Against the NHL's 22 ft (6.71 m) and 28 ft (8.53 m) that is four inches and three inches — trivially different. The area is *deeper*, though, simply because the IIHF goal line is 4.0 m from the boards rather than 11 ft. **Note the one place the IIHF book is tidier than the NHL's:** IIHF Rule 27.7, which sets the penalty, restates the *current* 6.80 m / 8.60 m dimensions, so unlike NHL Rule 27.8 it does not leave a superseded figure sitting in the penalty rule. It also carries the same sole exception in terms — *"The minor penalty will not be assessed when a goalkeeper plays the puck while maintaining skate contact with their goal crease."* For a player under IIHF rules, the shape is the shape you already know.
+
+**One thing this document cannot tell you.** The In-House Rules authorise British rinks below 56 m × 26 m without saying how the markings are laid out on a sheet that short — and the trapezoid's depth is set by the 4.0 m goal line, which a shortened rink may not have room for. **Nothing in the IIHF book or the In-House Rules establishes what a sub-standard British rink's trapezoid actually measures**, so this is one more thing to look at rather than assume. It does not change the rule: wherever the lines are painted, your goaltender may only play the puck behind the goal line inside them.
 
 Tactically, the trapezoid is why dump-and-chase works. A puck rimmed into the corner cannot be calmly collected by the goaltender; a defenceman has to go and get it with a forechecker arriving. **Aim your dump-ins away from the trapezoid.**
 
@@ -229,7 +266,7 @@ Tactically, the trapezoid is why dump-and-chase works. A puck rimmed into the co
 
 - **The boards** (also "**the wall**") are 40–48 inches high, ideally 42. They are in play: the puck off the boards is live, and a skilled player uses the wall as a passing partner.
 - **The glass** is 8 ft above the boards at the ends and at least 6 ft along the sides. "Off the glass and out" is a legal, always-available clearing option.
-- **The players' benches** are both on the **same side of the ice**, opposite the penalty benches, each about 24 ft long, seating at least 14. The **penalty benches sit in the neutral zone**, on opposite sides of the timekeeper.
+- **The players' benches** are both on the **same side of the ice**, opposite the penalty benches, each about 24 ft long, seating at least 14. The **penalty benches sit in the neutral zone**, on opposite sides of the timekeeper. **IIHF Rule 3.1 says each bench** *"should be 10m in length and 1.50m in width"* — a longer bench than the NHL's, and "should" rather than "shall". In Britain the In-House Rules soften it further, to *"as closely as reasonably practicable"* within the rink's fixed constraints (see the England Ice Hockey amendment in §1).
 - **The change zone:** a player leaving the ice must be **within 5 ft of their own bench and out of the play** before their replacement steps on, or it is a bench minor for too many men (Rule 74.1). IIHF marks a defined 1.5 m "changing zone" on the ice for the same purpose.
 
 Because both benches are on one side, one half of the ice is the "**bench side**" and the other is the "**far side**". This is a real tactical fact, not trivia: changing is safe on the bench side and dangerous on the far side, and coaches call faceoff plays differently depending on which side the draw is.
@@ -659,8 +696,8 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 4. **The slot has layers.** High slot (dots to top of the circles), low slot (dots to the goalmouth), goalmouth (at the crease). Different jobs, different owners.
 5. **The point is at the blue line; the half-wall is level with the dot.** Never use them interchangeably.
 6. **F1 / F2 / F3 are roles defined by order of arrival, not people.** Whoever gets there first is F1.
-7. **The trapezoid is 22 ft along the goal line widening to 28 ft at the boards**, applies in the NHL, KHL and IIHF, and does not exist in most rec leagues. Its one exception is a goalie keeping skate contact with the crease.
-8. **The neutral zone is the same length everywhere** (50 ft / 15.0 m). What changes between NHL and big international ice is the width, which is why wide ice punishes forechecks and rewards skating.
+7. **The trapezoid is 22 ft along the goal line widening to 28 ft at the boards** (IIHF: 6.80 m to 8.60 m), applies in the NHL, KHL and IIHF, and does not exist in most *North American* rec leagues. **British rec and junior hockey runs the IIHF book, so it does apply there.** Its one exception is a goalie keeping skate contact with the crease.
+8. **The neutral zone is the same length on any full-size rink** (NHL 50 ft; IIHF 15.0 m, defined as ¼ of the rink's length). What changes between NHL and big international ice is the width, which is why wide ice punishes forechecks and rewards skating. On a short sheet — including most British rinks — the neutral zone shrinks with the building.
 9. **At least one player is always above the puck.** Which body it is changes; that there is one does not.
 10. **Be inside, force them outside.** The whole defensive game compresses into that.
 
@@ -672,10 +709,14 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 
 *USA Hockey: [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), which limits the shorthanded icing nullification to Youth 15-Only and above, Girls 16U and above, High School and Adult classifications*
 
-*International: [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rules 1.2, 1.3, 1.5, 1.6, 1.7, 1.8, 1.9 and Appendix VI Infographics · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game) · [IIHF Statement on Ice Hockey Rink (Milano Cortina 2026)](https://www.olympics.com/en/milano-cortina-2026/news/iihf-statement-on-ice-hockey-rink) — **a single source, and the only one: the "insignificant for safety and quality of play" sentence above rests on this citation alone and is not corroborated elsewhere.***
+*International: [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rules 1.2 Dimensions, 1.3 Boards and Protective Glass, 1.5 Lines, 1.6 Division of Ice Surface, 1.7 Goal Crease / On-Ice Officials' Crease, 1.8 Goalkeeper's Restricted Area, 1.9 Face-off Spots and Circles, 3.1 Players' Benches, 27.7 Goalkeeper Restricted Area, 74 Player's Changing Zone, and the Appendix VI "Rink Dimensions", "Rink Lines" and "Goal Crease and Goalkeeper's Restricted Area" infographics (all measurements in centimetres) · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game) · [IIHF Statement on Ice Hockey Rink (Milano Cortina 2026)](https://www.olympics.com/en/milano-cortina-2026/news/iihf-statement-on-ice-hockey-rink) — **a single source, and the only one: the "insignificant for safety and quality of play" sentence above rests on this citation alone and is not corroborated elsewhere.***
+
+*Britain — retrieved 29 July 2026: [IHUK In-House Rules 2025-26, Revision 1 (PDF)](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — Section 1, Rule 1 "Rink size and eligibility" (the below-56 m × 26 m authorisation and the Sutton / Coatbridge / Limekilns Road exceptions) and Rule 3 "Benches and Penalty Boxes". [UK and England Rules](uk_rules.md) owns the full amendment list and its sourcing.*
 
 *Rule history: [NHL Announces Rule Changes for 2014-15](https://www.nhl.com/sharks/news/nhl-announces-rules-changes-for-2014-15-season/c-730288) — trapezoid widened two feet on each side · [Scouting The Refs – NHL Rule Changes 2014-15](https://scoutingtherefs.com/2014/09/4571/nhl-rule-changes-2014-15/) · [Two-line pass — Wikipedia](https://en.wikipedia.org/wiki/Two-line_pass) — the NHL abolished the two-line pass under the 2005 CBA*
 
 *Terminology and concepts: [Ice hockey rink — Wikipedia](https://en.wikipedia.org/wiki/Ice_hockey_rink) · [High-Danger Chances in Hockey Explained](https://puckcast.ai/high-danger-chances-hockey) · [Hockey Graphs – Quantifying the Importance of Handedness](https://hockey-graphs.com/2016/03/04/quantifying-the-importance-of-handedness/) · [Cross Ice Hockey – Should You Play the Off Wing?](https://www.crossicehockey.com/play-off-wing/)*
 
-*Unverified / flagged in the text: the exact boundaries of the "home plate" high-danger area are an analytics convention rather than a rule, and differ between providers. Two NHL rules give different trapezoid widths (Rule 1.8 and the rink diagram give 8 ft from each post; Rule 27.8 still reads 6 ft, describing the pre-2014 shape) — this document follows Rule 1.8 and the diagram. Rec-rink dimension ranges are general observation, not a sourced standard.*
+*Unverified / flagged in the text: the exact boundaries of the "home plate" high-danger area are an analytics convention rather than a rule, and differ between providers. Two NHL rules give different trapezoid widths (Rule 1.8 and the rink diagram give 8 ft from each post; Rule 27.8 still reads 6 ft, describing the pre-2014 shape) — this document follows Rule 1.8 and the diagram. Rec-rink dimension ranges are general observation, not a sourced standard. **There is no published census of British rink dimensions**, so this document states what the In-House Rules authorise and does not claim a distribution; and **neither the IIHF book nor the In-House Rules establish how the markings are laid out on a British rink below 56 m × 26 m**, which is why the instruction there is to look.*
+
+> **⚠️ Note for other documents in this corpus.** This document owns rink geometry, and one figure travelling elsewhere is wrong. **IIHF Rule 1.2 specifies "60m long and 26m to 30m wide" — it does not specify a 60 m × 30 m sheet.** 30 m is the top of a range, not the standard; the Appendix VI dimension drawing is labelled "Width = 2600 to 3000" and the book carries *two* rink-dimension infographics, one at 60 × 30 and one at 60 × 26. Anywhere the corpus states the IIHF standard as "60 × 30", take the figure from this document instead. The rest of the corpus's IIHF geometry was re-checked against the book on 29 July 2026 and is accurate — including the trapezoid at 6.80 m / 8.60 m (Rule 1.8, restated in 27.7), the 4.0 m goal line, the 18.5 m blue line, the 15.0 m neutral zone, the 3.0 m officials' crease and the 4.50 m faceoff circles.
