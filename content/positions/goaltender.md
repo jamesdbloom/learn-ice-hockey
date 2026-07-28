@@ -6,6 +6,14 @@
 
 ## Overview
 
+```facts
+Key: You are the only player who sees everything, all the time — and that view is wasted unless you talk
+Position: The last line of defence; when you make the mistake, everybody in the building knows whose it was
+Mindset: Goaltending is coached as much a mental skill as a physical one — reading, tracking, deciding, recovering
+Key: The one thing that happens behind you is a puck below your goal line, which is why post integration gets its own section
+Action: If you are a skater, read Overview, Communicating with Your Defence, Goaltender Interference and What a Goalie Needs From Their Skaters
+```
+
 You are the only player on the ice who can see everything, all the time. Every other player has a blind side; you effectively do not, because the play develops in front of you, you face it permanently, and you are the only one who isn't making decisions while sprinting. That view is the position's greatest asset and it is wasted unless you talk. (The one thing that *does* happen behind you is a puck below your goal line — wrap-arounds, jam plays and pucks behind the net — which is precisely why post integration exists and why it gets its own section.)
 
 You are also the last line of defence. When everyone else makes a mistake, there is another layer behind them. When you make one, the light goes on and the horn sounds and everybody in the building knows exactly whose mistake it was. That is the honest mental demand of the position, and it is why goaltending is coached as much as a mental skill as a physical one: at higher levels almost every goalie can execute the saves, and the separation is made in reading, tracking, decision-making and recovering from mistakes.
@@ -38,6 +46,15 @@ Two sections have no skater equivalent at all and are specific to this position:
 
 ## A Note on Language
 
+```facts
+Key: The shared vocabulary — lines, zones, named areas — is in Rink Map and Glossary; only goalie-specific terms are defined here
+Key: Depth is how far out you are along the puck-to-goal line; square is chest, hips and shoulders facing the puck, centred on that line
+Key: Five-hole is the gap between your legs; six-hole is the gap between your stick arm and your body
+Key: Front door is the shooter you are challenging; back door is the space you have opened up behind you, usually at the far post
+Key: The spoken call "back door" is narrower — it means an unmarked opponent waiting at the far post, a person rather than a depth
+Key: You do not play a series of shots; you play situations, most of which never end in a shot at all
+```
+
 Goaltending has its own precise vocabulary, and these terms recur throughout this document. **The shared vocabulary every position uses — the lines, the zones, the named areas of the ice, and the full glossary — is in [Rink Map and Glossary](../rink_map_and_glossary.md);** only the goalie-specific terms are defined here.
 
 - **The crease** = the light-blue painted area in front of the net where you operate. It is a semi-circle of six-foot radius drawn from the centre of the goal line, with straight side lines starting one foot outside each post and running four feet six inches out (NHL Rule 1.7).
@@ -58,6 +75,15 @@ Goaltending has its own precise vocabulary, and these terms recur throughout thi
 
 ### The ready stance
 
+```facts
+Position: Feet slightly wider than shoulder-width, weight on the inside edges of the balls of your feet
+Technique: Get low with your knees, not your spine — bending at the waist drops your head and makes you fall through saves
+Position: Hands out in front and visible in your own peripheral vision; hands at your hips must travel forward before they travel sideways
+Technique: Stick blade flat on the ice a blade's length in front of your toes, angled so a puck deflects down and out
+Key: Head still and level — your eyes are the instrument, and everything else exists to keep them steady
+Rule: A goalkeeper's paddle may not exceed 26 inches (NHL Rule 10.2); too long and you stand taller and the six-hole opens
+```
+
 Everything else is built on this. A stance that is wrong in a small way at the start of the play is wrong in a large way by the time the shot arrives.
 
 - **Feet slightly wider than shoulder-width**, weight on the inside edges of the balls of your feet. Weight on your heels means you cannot push, and you will fall backwards on the first lateral move.
@@ -69,6 +95,16 @@ Everything else is built on this. A stance that is wrong in a small way at the s
 **Paddle length matters more than beginners think.** The paddle is the thick part of the goal stick between the blade and the shaft; the NHL maximum is 26 inches. A paddle that is too long forces you to stand taller, pushes your stick hand away from your body and opens the six-hole. If your stance feels wrong and you cannot fix it, measure the stick before you rebuild the stance.
 
 ### Depth is the fundamental decision
+
+```facts
+Key: Every save begins with a decision you made before the shot — how far out of my net am I?
+Priority: The trade is always front door against back door — shot taken away against pass still covered
+Risk: Depth costs you reaction time, lateral coverage on a pass, and awareness of where the net is behind you
+Read: One shooter, no pass available, shot from distance — challenge to the top of the crease or beyond
+Read: Puck below the dots or in tight, or a pass available across the slot — get back
+Convention: Depth against a screened shot from distance is a genuine coaching split, not a default — find out which your coach teaches
+Never: Hide deep in the net or run at shooters — both are confidence problems, not technique problems
+```
 
 Every save begins with a decision you made before the shot: **how far out of my net am I?**
 
@@ -99,6 +135,15 @@ If you take one thing from this document: **goaltending is not primarily about r
 
 ### Playing the angle
 
+```facts
+Position: Stand on the line from the puck to the exact centre of the goal line, facing along it, centred on it
+Technique: Be out — at the depth this situation calls for
+Technique: Be square — chest and hips pointed at the puck, centred on the puck-to-net line
+Technique: Be set — stationary, or as close to it as the play allows, at the moment of release
+Priority: In that order: out and square but still moving at release is worse than slightly shallow and completely set
+Action: Ask for the extra second in practice — if you are never set in practice, you will not be set in games
+```
+
 Imagine a line drawn from the puck to the exact centre of the goal line. Your job is to stand on that line, facing along it, with your body centred on it. Do that and you are covering the middle of the net by definition, and the shooter can only score by hitting the edges.
 
 Mitch Korn's three-step formulation of cutting down the angle is the clearest one in circulation, and worth memorising in order:
@@ -113,11 +158,25 @@ They are in that order for a reason. Out and square but still moving when the sh
 
 ### Squaring up
 
+```facts
+Technique: Square is about your torso, not your feet — rotate your shoulders and hips and take small shuffles
+Never: Turn your skates and skate along an arc facing the wrong way
+Never: Take the big shuffle — two large steps instead of four opens the five-hole mid-step
+Key: Smaller is better, always; a large shuffle also leaves you unable to change direction
+```
+
 Square is about your torso, not your feet. On a puck moving laterally across the top of the zone, you stay square by rotating your shoulders and hips and taking small shuffles — not by turning your skates and skating along an arc facing the wrong way.
 
 The common error is the **big shuffle**: covering the distance in two large steps rather than four small ones. A large shuffle opens the five-hole mid-step and leaves you unable to change direction. Smaller is better, always.
 
 ### The post-to-post arc
+
+```facts
+Position: Move along a shallow arc — out at the middle, curving back toward the posts as the puck goes wide
+Key: As the puck moves toward the boards the angle closes on its own, and depth there just means you cannot get back
+Technique: End each lateral movement at the post rather than near it — short side is the cheapest goal in hockey
+Key: Korn's "Y-theory" — out, back, and diagonally toward the post — is the picture of what the arc looks like
+```
 
 You are not moving in a straight line across the crease. You are moving along a shallow arc — out at the middle, curving back toward the posts as the puck goes wide. Two reasons:
 
@@ -128,6 +187,14 @@ Korn calls the efficient combination of moving out, back and diagonally to the p
 
 ### Knowing where you are without looking
 
+```facts
+Key: You cannot look at the net, so build a set of physical references instead
+Technique: Tap the posts with your stick or glove when the play allows — it is a position fix, not a nervous tic
+Technique: Feel where your skates are relative to the blue paint; the crease lines are painted for you
+Technique: Use the crease depth marks — they are painted as a depth reference (NHL Rule 1.7)
+Action: Reset at every stoppage — skate your arc, tap both posts, find your top-of-crease spot
+```
+
 You cannot look at the net. The puck is at the other end of your attention and it moves faster than your head. So you build a set of physical references:
 
 - **The posts.** Reach back and tap them with your stick or your glove when the play allows. Every goalie does this. It is not a nervous tic; it is a position fix.
@@ -137,6 +204,14 @@ You cannot look at the net. The puck is at the other end of your attention and i
 - **Reset at every stoppage.** Skate your arc, tap both posts, find your top-of-crease spot. Rebuild the map every whistle so you do not have to think about it during play.
 
 ### Angle first, or depth first?
+
+```facts
+Convention: The mainstream modern emphasis is angle before depth — get on the line first, then add depth if the situation allows
+Key: Being deep but off-angle is a goal; being on-angle but a little deep is a save you have to make
+Read: Stepping off the post to face a short-side shot is the documented exception — add depth first to close the near-post gap
+Key: Where the danger is a gap you have just created by moving, depth is the fix
+Action: Ask your own coach which they teach — this is a difference in coaching philosophy, not a settled fact
+```
 
 The mainstream modern coaching emphasis is **angle before depth**: get on the line first, then add depth if the situation allows. Being deep but off-angle is a goal; being on-angle but a little deep is a save you have to make.
 
@@ -152,6 +227,17 @@ Goalie skating is its own discipline. You almost never take a normal forward str
 
 ### On your feet
 
+```facts
+Options: Shuffle for short lateral moves, T-push for longer ones, telescope in and out, C-cut backwards to retreat
+Technique: Shuffle without turning your skates and arrive stopped rather than drifting — you stay square the whole way
+Technique: T-push turns the lead skate to form a T and covers real ground, but you are momentarily not square, so use it when you have time
+Technique: Telescope straight out and straight back along the puck-to-net line, brisk and explosive, never a stroll
+Technique: C-cut backwards on your inside edges so you retreat without ever taking your eyes off the puck
+Convention: What the lead skate does in a shuffle is not settled — BVHS teaches the flats and calls an outside edge a fault that anchors you
+Key: Take your control from the size of the shuffle and from stopping the hips together, not from digging the lead skate in
+Key: Flow is a little backward motion on a rush — too much and you retreat into your own net
+```
+
 - **The shuffle** — moving side to side without turning your skates, staying square throughout. You push off the far foot (the "drive" leg), bring it back to stance, and arrive stopped rather than drifting. This is your default for short lateral moves and for anything where the puck may be shot mid-movement, because you are square the whole way. **What the lead skate should be doing is not settled.** Mitch Korn's definition specifies only the motion and the size, with no edge detail at all. The BVHS goalie manual teaches the lead leg on its **flats**, not an edge: *"When we do shuffle, we ideally want to be on our flats instead of an edge. This makes it easier to glide and stay light through your front leg."* It also names the **outside** edge, not the inside, as the one that bites — and treats that bite as a fault rather than a braking technique: *"If your front leg is on its outside edge, you will be anchored to the ice, and no matter how hard you push, you will be stuck."* Practical reading: get your control from the size of the shuffle and from stopping the hips together, not from digging the lead skate in.
 - **The T-push** — for longer lateral distances. Turn the lead skate to point where you are going so your feet form a T, push hard off the back foot, and glide. Faster than a shuffle and it covers real ground, but you are momentarily not square, so use it when you have time — post to post on a puck behind the net, or recovering across after a rebound goes wide. The T-push is also the first motion of a two-pad slide.
 - **Telescoping** — moving straight out and straight back along the puck-to-net line, staying in your stance the whole time. This is how you add and remove depth. It should be brisk and explosive, never a stroll.
@@ -160,10 +246,29 @@ Goalie skating is its own discipline. You almost never take a normal forward str
 
 ### On your knees
 
+```facts
+Technique: Butterfly slide — push laterally off the heel of the up leg and arrive with both pads down
+Goal: Cover ground without getting back to your feet, when a pass across the slot gives you no time to stand up
+Technique: Keep your head and hands at the same level throughout, and close the five-hole as you land
+Convention: The recovery taught with the modern butterfly keeps the puck-side leg down and lifts the far leg first
+Never: Stand up away from the puck first — that is how goalies end up out of position on the second shot
+```
+
 - **The butterfly slide** (also called a **power slide**; the push itself is often called the *backside push*, but that names the mechanic rather than the move) — from a butterfly position with one pad down, you push laterally off the heel of the up leg and slide, arriving with both pads down. It lets you cover ground without getting back to your feet, which matters when a pass across the slot gives you no time to stand up. Keep your head and hands at the same level throughout and close the five-hole as you land.
 - **Butterfly recovery** — getting back up. The convention taught with the modern butterfly is to keep the **puck-side leg down** and lift the far leg first, then push toward the puck. Standing up "away" from the puck first is how goalies end up out of position on the second shot.
 
 ### Post integration: VH and RVH
+
+```facts
+Read: Seal the post when the puck is below the goal line or very tight to it — otherwise there is a gap at ice level
+Technique: VH puts the near pad up vertical against the post and the far pad down along the ice — a wall up the post
+Technique: RVH puts the near pad down along the goal line and keeps the inside leg up and vertical — a wall along the ice
+Key: RVH kills the low short-side shot and the wrap-around; VH is better against a shot that can go up the post
+Technique: Dig the off-post pad into the ice at 45 degrees — without that anchor the first shot drives you back into your net
+Risk: You can get locked onto the post, the high short side is exposed, and an early seal encourages you to stop reading
+Convention: Late on and early off is the conservative North American default; the Swedish tradition teaches an earlier, defined trigger — ask what yours is
+Never: Drop to a post out of habit, without a read — that is the one thing nobody defends
+```
 
 When the puck goes below the goal line or very tight to the post, standing normally leaves a gap between your pad and the post at ice level, which is exactly where wrap-arounds and stuff attempts go. Post integration is how you seal that.
 
@@ -201,6 +306,16 @@ Note the word: **selection**. You are not reacting randomly; you are choosing th
 
 ### The butterfly is a tool, not a religion
 
+```facts
+Never: Drop into a butterfly on every shot as a reflex — going down first and hoping the puck hits you
+Risk: It gives away the top of the net, and once you are down you cannot get back up in time
+Risk: It is worse the smaller you are — a twelve-year-old leaves a great deal of open net above them
+Risk: It removes save selection — if your answer to every situation is the same, you are not reading anything
+Key: The butterfly is a save selection, not a style
+Convention: The dominant modern approach is hybrid — butterfly as a base, but reads, positioning and staying up when staying up is right
+Action: Play the puck you can see, and stay up until going down is the answer
+```
+
 The single most common technical error in youth and rec goaltending is dropping into a butterfly on every shot as a reflex — going down first and hoping the puck hits you. This fails for concrete reasons:
 
 - **It gives away the top of the net,** and once you are down you cannot get back up in time.
@@ -226,6 +341,13 @@ Joe Bertagna's ordering of your options is the cleanest framework available, and
 
 ### Preventing the rebound — absorbing
 
+```facts
+Goal: Kill the puck's energy so it drops dead in front of you or stays in your equipment
+Technique: Let the stick blade give slightly on contact — a rigid stick sends the puck straight back out
+Technique: Relax into the shot rather than bracing against it; a tensed goalie is a trampoline
+Options: Kill a high shot by catching it cleanly, trapping it against your other equipment, or smothering it into your chest
+```
+
 Absorbing means killing the puck's energy so it drops dead in front of you or stays in your equipment.
 
 - **A soft stick.** On a shot along the ice into your stick, let the blade give slightly on contact rather than holding it rigid. A rigid stick sends the puck straight back out; a soft stick drops it at your feet where you can cover it.
@@ -234,6 +356,14 @@ Absorbing means killing the puck's energy so it drops dead in front of you or st
 
 ### Directing the rebound
 
+```facts
+Targets: The corners — wide and low toward the boards, below the goal line if you can
+Technique: Angle your surfaces — rotate the blocker so its face points at the corner, not back up the ice
+Never: Direct a rebound into the slot, where the other team's best players are standing
+Action: Look off the puck before the shot is released and register who is where
+Key: Be specific — "a left shot open at the back post", not "there's a guy open"
+```
+
 When you cannot absorb, you must aim. The target is **the corners** — wide and low toward the boards, below the goal line if you can, where no attacker is standing and where the puck ends up as a battle rather than a chance.
 
 - **Angle your surfaces.** A pad or blocker turned even slightly changes where the puck goes. On a shot to your blocker side, rotate the blocker so its face points at the corner rather than back up the ice.
@@ -241,6 +371,15 @@ When you cannot absorb, you must aim. The target is **the corners** — wide and
 - **Know where they are before the shot.** This is the mental half of rebound control, and it is the half that actually decides it. You must look off the puck *before* the shot is released and register who is where. Be specific about it: not "there's a guy open," but "there's a left shot open at the back post." That detail tells you both which save to select and where the rebound must not go.
 
 ### Freezing the puck — and the rules that govern it
+
+```facts
+Rule: You may hold the puck in your hands for up to three seconds unless actually being checked; longer is a minor (NHL Rule 67.3(i))
+Rule: Causing an unnecessary stoppage, dropping the puck into your pads or onto the net, or throwing it forward are all minors (NHL Rule 67.3)
+Rule: Racing out to beat an attacker to a loose puck and jumping on it is a minor, but a save and then a cover is legal (NHL Rule 63.2(vi))
+Rule: Freeze a puck dumped in from their own side of the centre red line and your own five cannot change for the draw (NHL Rule 63.8)
+Read: Freeze when the rebound is contested and you have it clean, and whenever there are bodies around you
+Never: Freeze when your defenceman is arriving with time — it matters much less that you have the puck than that they don't
+```
 
 Freezing means covering the puck to stop play. It is a legitimate and important tool, and it is also regulated more tightly than most players realise.
 
@@ -262,6 +401,17 @@ Freezing means covering the puck to stop play. It is a legitimate and important 
 ---
 
 ## Tracking the Puck
+
+```facts
+Key: Almost every soft goal has the same root cause — at some point you stopped seeing the puck
+Technique: Follow the puck's trajectory with your head, not just your eyes, so it stays in the centre of your vision
+Technique: Track it all the way into the pad, the glove, the chest — if you saw it hit you, you know where it went
+Never: Look past the puck at where it is going rather than where it is
+Never: Explode — flailing arms and a snapping head lose the puck at contact. Quiet head, quiet hands
+Never: Be a spectator on a pass — your movement starts when the pass is released, not when it arrives
+Convention: Read the release, not the player — but on a breakaway what to read is contested; see Breakaways
+Mindset: The "cone of shame" — nothing outside the puck exists
+```
 
 Almost every soft goal has the same root cause: at some point in the sequence, you stopped seeing the puck.
 
@@ -286,11 +436,28 @@ A screen is a player standing in your line of sight. **In the ordinary case it i
 
 ### Fighting for a sightline
 
+```facts
+Convention: Around or over a screen is a genuine coaching split — this document's default is around, BVHS teaches over to maintain size
+Key: Both schools agree on what matters most — commit to one side and see the puck cleanly there
+Never: Half-see the puck on both sides of a screen
+Action: Move to find the puck — a step or a small shuffle can open a lane through traffic
+Key: Slightly off the perfect angle with a clear view beats perfectly square and blind
+Action: Call "screen" loudly, early and every time — it means move, or move the man in front of me
+```
+
 - **Around or over — a genuine coaching split, so ask your own coach.** This document's default is **around**: trying to see over a screen means standing tall, and standing tall means you cannot move, so drop your head to one side and find the puck through legs, under arms, around a hip. The BVHS goaltending manual teaches the opposite priority — *"We want to be looking over shoulders to maintain size"* — on the view that sacrificing size to get a clean look is the worse trade. Both schools agree on the part that matters most: **commit to one side and see the puck cleanly there**, rather than half-seeing it on both. This is the same split as the depth question above, and the two tend to travel together — coaches who want you deep want you looking around, coaches who want you tall and close want you looking over.
 - **Move to find the puck.** A step or a small shuffle to one side can open a lane through traffic. Being slightly off the perfect angle with a clear view beats being perfectly square and blind.
 - **Call it.** "Screen" is your call and it means *move, or move the man who is in front of me.* This is not a request. Say it loudly, say it every time, and say it early. See [On-Ice Communication](../on_ice_communication.md).
 
 ### Playing bigger and deeper through traffic
+
+```facts
+Convention: Deeper against a screened point shot is the traditional adjustment — it costs net coverage but buys time to find the puck
+Convention: At least one current manual calls the deep retreat a fault and keeps a close gap, looking through the short side of the screen
+Action: Ask your coach which they teach; do not assume deeper is settled doctrine
+Technique: Play bigger — hands out and wide, stick down and active, chest up
+Key: When you may not see the release you are partly blocking rather than reacting, and that is the correct trade
+```
 
 Two adjustments, and they pull in different directions from your normal instincts:
 
@@ -298,6 +465,14 @@ Two adjustments, and they pull in different directions from your normal instinct
 - **Bigger.** Since you may not see the release, make yourself a larger obstacle: hands out and wide, stick down and active, chest up. You are partly blocking rather than reacting, and that is the correct trade when you cannot see.
 
 ### Reading a tip
+
+```facts
+Key: A tip changes direction a few feet in front of you and no reflex is fast enough to follow it — so do not try
+Read: A forward set up at the goalmouth with their blade in the shooting lane makes every point shot a probable tip
+Technique: Stay tall and patient as long as you can — a low tip hits you if you are big and set, a high one will not if you are already down
+Key: Your best chance is the right place with a wide body and a still head, not a heroic reaction
+Action: Shout to get the net-front player moved — that is your defenceman's job
+```
 
 A tip or deflection changes the puck's direction a few feet in front of you, and no reflex is fast enough to follow it. So you do not try.
 
@@ -311,6 +486,17 @@ A tip or deflection changes the puck's direction a few feet in front of you, and
 ## Playing the Puck
 
 ### The trapezoid — the rule that defines what you can do
+
+```facts
+Rule: You may not play the puck behind the goal line outside the trapezoid — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
+Rule: The determining factor is the position of the puck, not of your body (NHL Rule 27.8)
+Rule: The one exception is keeping skate contact with your crease — none for a teammate nearby, for pressure, or for the puck coming to you (NHL Rules 27.8 and 63.2(viii))
+Key: It applies in the NHL, the KHL and IIHF play; most rec, beer-league and youth associations do not use it
+Rule: USA Hockey has no trapezoid but restricts where you may freeze the puck, corners excluded, on the same two minutes (USA Hockey Rule 614(c))
+Rule: In front of the goal line there is no restriction, beyond not participating in the play past the centre red line (NHL Rule 27.7)
+Action: Take the dimensions from Rink Map and Glossary — Rule 1.8, never Rule 27.8, whose wording is stale
+Action: Find out which rules you are under before your first shift
+```
 
 > **A goalkeeper may not play the puck behind the goal line outside the marked trapezoid.** Doing so is a **two-minute minor for delay of game** (NHL Rules 27.8 and 63.2(viii)), and **the determining factor is the position of the puck, not of your body.**
 >
@@ -326,6 +512,14 @@ A tip or deflection changes the puck's direction a few feet in front of you, and
 
 ### Stopping pucks for your defence
 
+```facts
+Action: Kill a rimmed puck dead behind the net and leave it stationary — you have converted a race into a pickup
+Action: Call "leave it" early, while your defenceman is still coming back, not as they arrive
+Technique: Blocking a rim with your pads is legal in front of the goal line, or behind it inside the trapezoid
+Never: Body-block a puck behind the goal line and outside the trapezoid — get out of the way and let your defenceman have it
+Convention: Whether the goalie plays the puck at all is a coaching choice — ask, and then be consistent
+```
+
 Even with a trapezoid, you have real value behind the net. The most useful thing you do back there is often not a pass at all:
 
 - **Stop a rimmed puck and leave it.** A puck rimming hard around the boards will end up in the far corner with a forechecker on it. If it comes through the trapezoid, kill it dead behind the net and leave it stationary for your defenceman. You have converted a race into a pickup. Call **"leave it"** so they know to come and get it, and say it early — while they are still coming, not as they arrive.
@@ -333,6 +527,15 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
 - **Know your team's convention.** Whether your goalie plays the puck at all is a coaching choice. Some teams want the goalie handling everything they legally can; others want the goalie to touch nothing and stay in the net. Both are defensible. Ask, and then be consistent.
 
 ### The safe outlets
+
+```facts
+Priority: Rank your options by risk before you move the puck
+Options: Leave it for a defenceman with time — lowest risk, and always first when it is available
+Options: A short pass to a defenceman on the wall on your strong side, where an interception means less
+Options: A rim around the boards to the far winger — concedes possession but relieves pressure
+Options: Off the glass and out, never wrong when you are in trouble. Goalies are allowed to be boring
+Never: Pass up the middle — a goalie's turnover there is a shot on an empty net, and you are standing in it
+```
 
 When you do move the puck, rank your options by risk:
 
@@ -344,6 +547,15 @@ When you do move the puck, rank your options by risk:
 
 ### The discipline of not playing it
 
+```facts
+Key: The best puck-handling decision a goalie makes is usually to leave the puck alone
+Never: Leave your net for a 50-50 puck — lose the race and the net is empty with you behind the play
+Rule: Racing out and jumping on a loose puck instead of playing it is a penalty (NHL Rule 63.2(vi))
+Never: Handle it because you can — every touch is a chance to turn it over in the most dangerous place on the ice
+Action: If you commit, commit — call "I've got it" and mean it
+Mindset: A goalie who handles the puck well is an asset; one who believes they handle it well is a liability
+```
+
 The best puck-handling decision a goalie makes is usually to leave the puck alone.
 
 - **Don't leave your net for a 50-50 puck.** If you lose the race, the net is empty and you are behind the play. The rulebook even anticipates this: racing out and jumping on a loose puck instead of playing it is a penalty (Rule 63.2(vi)).
@@ -352,6 +564,17 @@ The best puck-handling decision a goalie makes is usually to leave the puck alon
 - **Watch the clock and the pressure, not your ego.** A goalie who handles the puck well is a real asset. A goalie who *believes* they handle the puck well is a liability.
 
 ### Icing — you are the one who can wave it off
+
+```facts
+Rule: Skating toward the puck, feigning at it or attempting to play it waves off an icing; your defencemen cannot (NHL Rule 81.3)
+Action: Usually you want the whistle, so do nothing, deliberately — drifting toward the corner hands them a live puck in your end
+Rule: Under NHL and IIHF Rule 81.4 they cannot change after an icing; under USA Hockey Rule 624 they can
+Read: Wave it off only when your defenceman is arriving with time and their forwards have already turned for the bench
+Action: Decide before the puck arrives, not halfway through it — two strides is the whole action
+Action: Talk either way — "leave it" or "I've got it"; silence produces two players and one puck
+Rule: Going to the bench for an extra attacker does not wave off an icing, provided you make no attempt on the puck (NHL Rule 81.3)
+Rule: Under USA Hockey only an actual touch waves it off — Rule 624(b) does not wave off for goalie movement
+```
 
 **The rule itself is in [Rules Primer](../rules_primer.md).** What is specific to you is that under NHL and IIHF rules **you can kill an icing without touching anything.** Merely skating in the direction of the puck, feigning at it, or attempting to play it waves the icing off (Rule 81.3), and so of course does any actual touch. Your defencemen cannot do that; only you can.
 
@@ -376,6 +599,17 @@ You see everything. You are stationary, and you are facing the play while your d
 **A call converts a blind decision into an informed one, and it costs you nothing.** The information was already sitting in your eyes, useless.
 
 ### The core calls
+
+```facts
+Convention: These are the standard vocabulary, but words vary by team — agree yours in the room, not on the ice
+Options: Pressure — "time" means lift your head and make the good play; "man on" means get rid of it now
+Options: Direction — "over", "reverse", "up", "wheel". Over means behind the net, never through the slot
+Options: Ownership — "leave it" means I will stop it and leave it for you; "I've got it" means go to your breakout position
+Key: "Screen" means move, or move the man in front of me — your most important call and the one most often ignored
+Key: "Back door" means an unmarked opponent at the far post, and the nearest player takes them right now
+Key: "Shot" means you have the shooter, so your defenceman takes away the pass — not a warning that a shot is coming
+Action: If your team already uses "shot" as a warning, pick a different word for the warning
+```
 
 These are the standard vocabulary. Words vary by team — agree yours in the room, not on the ice.
 
@@ -404,6 +638,14 @@ These are the standard vocabulary. Words vary by team — agree yours in the roo
 
 ### How to call well
 
+```facts
+Action: Early beats loud — call while the play is still developing, not as the puck arrives
+Action: Short beats descriptive — one or two syllables; nobody parses a sentence at full speed
+Never: Call sometimes — a goalie who calls intermittently trains their defencemen to filter them out
+Action: Say the same thing every time; consistency is what makes a call fast to act on
+Action: Get answered — tell your defencemen you need an acknowledgement
+```
+
 - **Early beats loud.** A call that arrives as the puck does is decoration. Call while the play is still developing.
 - **Short beats descriptive.** One or two syllables. Nobody parses a sentence at full speed.
 - **Every time, or not at all.** A goalie who calls sometimes trains their defencemen to ignore them, which is worse than silence, because the one time you shout something urgent it gets filtered out with the rest.
@@ -418,6 +660,16 @@ Full treatment, including the whole team's vocabulary and who owns which call: [
 
 ### Breakaways
 
+```facts
+Key: One attacker, you, and a lot of time to think — which is the actual difficulty
+Technique: Meet them well out, then retreat on C-cuts, matching their speed so the angle stays closed the whole way
+Technique: Keep a little backward flow so you can react either way; flat-footed means you can react to nothing
+Never: Move first — their whole plan is to make you commit, and the last one to move wins
+Convention: What to watch is a genuine coaching split — the puck, or the shooter's chest and hips. Ask your goalie coach and be consistent
+Read: Puck out in front and winding up, respect the shot and stay big; pulled to the forehand with the head up, respect the deke
+Risk: The poke check works when the puck gets too far in front of them — miss and you have neither reach nor balance
+```
+
 One attacker, you, and a lot of time to think — which is the actual difficulty.
 
 > **The shooter's half of this is in [Shooting](../shooting.md), "Breakaways and Shootouts — the Shooter's Side"** — approach speed, deception, the classic moves, where they are aiming, and how they decide between shooting and deking. Read it: everything they are coached to do is a way of making you commit first, and knowing the plan is most of the defence against it. The penalty-shot and shootout rules below are stated identically in both documents.
@@ -431,6 +683,15 @@ One attacker, you, and a lot of time to think — which is the actual difficulty
 
 ### Penalty shots
 
+```facts
+Rule: You must remain in your crease until the shooter has touched the puck, or the shot is retaken (NHL Rule 24)
+Rule: A second violation adds a misconduct and a third a game misconduct, the third retake being against the alternate goalkeeper (NHL Rule 24.4)
+Rule: No goal can be scored on a rebound, with one exception — off the post or crossbar, then off you, then in (NHL Rule 24)
+Rule: The spin-o-rama is not permitted; the lacrosse-style move is, below shoulder height and released below the crossbar (NHL Rule 24)
+Rule: Only a designated goalkeeper or alternate goalkeeper may defend a penalty shot (NHL Rule 24.2)
+Key: There is no clock on it — be patient and let them run out of ideas
+```
+
 Same as a breakaway, plus rules you should know precisely (NHL Rule 24):
 
 - **You must remain in your crease until the shooter has touched the puck.** If you leave early and the shot fails, it is taken again. A second violation adds a misconduct; a third, a game misconduct — and the shot is retaken each time, the third retake being taken *"against the alternate goalkeeper"* (Rule 24.4).
@@ -442,6 +703,15 @@ Practically: they get one attempt, from centre ice, with a long approach and no 
 
 ### 2-on-1s — and what you want from your defenceman
 
+```facts
+Convention: The standard convention is that your defenceman takes away the pass and you take the shot — a convention, not a law
+Action: Play the puck carrier as if it were a one-on-none — square up, come out to your normal depth, make the save
+Key: The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can
+Action: Say it out loud — "I've got the pass" / "take the shooter" — it only works if you both know which half is yours
+Never: Let your defenceman slide or dive before the pass is released; that opens both options at once
+Action: Ask your defencemen and your coach what your team does — some take away the shooting lane instead
+```
+
 **The standard convention is that the defenceman takes away the pass and you take the shot.** Your defenceman positions in the passing lane with their stick flat on the ice, and you play the puck carrier as if it were a one-on-none: square up, come out to your normal depth, and make the save. The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can.
 
 The call for it is **"I've got the pass" / "take the shooter."** Say it out loud rather than assuming it — this only works if both of you know which half is yours.
@@ -450,15 +720,38 @@ The call for it is **"I've got the pass" / "take the shooter."** Say it out loud
 
 ### 3-on-2s
 
+```facts
+Convention: The common default is each defenceman taking an outside attacker, the middle man left to whoever backchecks that lane
+Read: The same read as a 2-on-1, but with a wider back door
+Action: Don't over-challenge — stay a little deeper and prioritise lateral movement over the last foot of angle
+Action: Call "odd man" to tell everyone to stop thinking about the puck and start counting
+Action: Find out which version your team plays, because they fail in different directions
+```
+
 The common default is each defenceman taking an outside attacker and neither chasing the carrier, with the middle attacker left to whoever is backchecking that lane — usually the centre, though some teams instead have the strong-side defenceman take the puck carrier and the weak-side defenceman split the middle and far man. Both are coaching choices and they fail in different directions, so find out which one your team plays ([Defending the Rush](../defending_the_rush.md) sets out both). From your side, the read is the same as a 2-on-1 but with a wider back door: don't over-challenge, stay a little deeper, and prioritise the ability to move laterally over the last foot of angle. Talk — "odd man" tells everyone to stop thinking about the puck and start counting. (An **odd-man rush** is any attack where the attackers outnumber the defenders who got back: a 2-on-1, a 3-on-2, a breakaway.)
 
 ### Shootouts
+
+```facts
+Rule: Shootout attempts are governed by the penalty-shot rules, including staying in your crease until the shooter touches the puck (NHL Rule 84.4)
+Rule: Once the shootout begins you cannot be replaced unless injured, and a substitute goalie gets no warm-up shots (NHL Rule 84.4)
+Key: Each shooter gets a long, slow approach — patience is the whole thing
+Never: Commit first; most shootout goals are scored on goalies who do
+```
 
 A shootout attempt is governed by the penalty-shot rules (Rule 84.4), including the requirement that you stay in your crease until the shooter touches the puck. Two things worth knowing: **once the shootout begins you cannot be replaced unless you are injured**, and **no warm-up shots are permitted for a substitute goalie.** So there is no rescue and no easing in.
 
 Approach: you get three or more shooters, each with a long, slow approach. Patience is the whole thing. Most shootout goals are scored on goalies who commit first.
 
 ### Power play (your team is up a man)
+
+```facts
+Read: Very few shots, and then occasionally a rush the other way against tired defencemen
+Risk: The failure mode is being cold and mentally elsewhere when it arrives
+Action: Stay engaged — track the puck at the far end and move your feet at every stoppage
+Action: Talk more, not less — your point men have their backs to the neutral zone and you have the only clear view
+Read: Be ready for the shorthanded rush, usually a 2-on-1 or a breakaway, because your team has committed bodies
+```
 
 Quiet. You will see very few shots and then, occasionally, a rush the other way against tired defencemen. The failure mode is being cold and mentally elsewhere when it arrives.
 
@@ -468,6 +761,16 @@ Quiet. You will see very few shots and then, occasionally, a rush the other way 
 
 ### Penalty kill (your team is down a man)
 
+```facts
+Read: A lot of traffic, a lot of shots you cannot see, and lateral puck movement designed to make you move
+Action: Know whether your team runs a box, a diamond or wedge+1 — it tells you which lanes are conceded
+Priority: Prioritise seeing the puck; whether that means playing deeper is the coaching split flagged above
+Goal: Use freezes to buy whistles, not seconds — fresh legs, a reset and a draw
+Key: No time comes off the penalty, because play is stopped and the clock stops with it
+Rule: Shorthanded icing is allowed only if your rule set grants it — USA Hockey Rule 624(b)(1) starts at Youth 15-Only and above
+Rule: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a major that has left the penalty bench empty
+```
+
 The opposite: a lot of traffic, a lot of shots you cannot see, and a lot of lateral puck movement designed to make you move.
 
 - **The default shapes are the box (two forwards high, two defencemen low), the diamond (a single apex, used against a 1-3-1 because a box leaves the bumper in the middle of the slot unmarked), and wedge+1 (a tight triangle plus one puck-chaser).** Know which one your team runs, because it tells you which lanes are being conceded and therefore where the shots will come from. See [Special Teams](../special_teams.md).
@@ -476,6 +779,15 @@ The opposite: a lot of traffic, a lot of shots you cannot see, and a lot of late
 - **Your team may ice the puck freely while shorthanded — if your rule set allows it.** Say so, because killers under pressure sometimes try to make a play they don't need to make. But find out first: USA Hockey grants the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)), so below those levels shouting "ice it" buys your tired killers a defensive-zone draw instead of a rest. NHL Rule 81.6 also withdraws it from a team shorthanded by a *major* that has left the penalty bench empty. Full rule in [Special Teams](../special_teams.md).
 
 ### 6-on-5 with your net empty
+
+```facts
+Action: Go hard and go early when called — a slow change risks a too-many-men penalty or a goal with you halfway up the ice
+Rule: Leaving your stick or equipment near the net, or piling snow there, awards a goal to the other team (NHL Rule 67.5)
+Rule: You may shoot at their empty net with your stick, but not throw the puck forward (NHL Rule 67.3(iii)) or play past the centre red line (Rule 27.7)
+Action: Coming back in, reset your references — posts, paint, depth — before the faceoff
+Read: Defending a 6-on-5, play a little deeper and expect low-to-high plays and back-door passes rather than clean shots
+Key: A whistle does not run their clock down; what it destroys is the possession they spent thirty seconds building
+```
 
 When your coach pulls you for an extra attacker, your job changes completely.
 
@@ -489,6 +801,17 @@ Defending against a 6-on-5 (their net empty, you facing an extra attacker): play
 ---
 
 ## Goaltender Interference, From Your Side of It
+
+```facts
+Key: Rules Primer owns Rule 69 — read it there; this is only the part that changes what you do
+Rule: The blue paint is yours — an attacker who initiates contact with you inside your crease voids the goal (NHL Rule 69)
+Rule: Outside your crease incidental contact is permitted while you play the puck, if the attacker made a reasonable effort to avoid it (NHL Rule 69.4)
+Rule: On rebounds and loose pucks incidental contact is permitted and the goal counts — don't wait for a whistle, win the puck (NHL Rule 69.7)
+Rule: A screen from outside your crease without contact is normally legal; a vision-obstructing body inside the paint voids the goal (NHL Rule 69.3)
+Rule: Being pushed into your own net disallows the goal — unless one of your own players pushed the attacker into you (NHL Rule 69)
+Action: Establish and hold your crease position early, and shout for your defenceman rather than dropping to the ice
+Never: Embellish — referees see everything you do all night, and a goalie who sells contact gets fewer calls when it matters
+```
 
 You should know exactly what protection you have, because a lot of goalies believe they have more than they do and play accordingly. **This section is the rule read from behind the goal line. [Rules Primer](../rules_primer.md) owns Rule 69** — the premise (an attacker's position, inside or outside the crease, does not by itself decide anything), the two grounds on which a goal is disallowed, the strict inside-the-crease standard of Rule 69.3, and what all of it asks of an attacking player. Read it once. The short version from your side is that **the blue paint really is yours**: an attacker who initiates contact with you inside your crease voids the goal, incidental or otherwise.
 
@@ -507,6 +830,17 @@ What follows is only the part that changes what *you* do.
 
 ## What a Goalie Needs From Their Skaters
 
+```facts
+Action: Clear the net front with technique — inside shoulder ahead of theirs, box out, and lift their stick
+Never: Screen your own goalie, and don't back into the crease when you are being pushed
+Never: Block a shot from a screening position — get to the shooter and block from close, or get out of the lane entirely
+Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide or dive before the pass is released
+Action: Let your goalie play the puck when they call for it — "I've got it" means get to your breakout position
+Action: Tell your goalie what you want while you are still coming back for it, not as you arrive
+Action: Box out on rebounds — find a body, not the puck
+Never: Blame the goalie out loud; answer their calls instead, because one word back is enough
+```
+
 **This section is written for the other five players.** Most net-front goals against are not goalie errors. They are skater habits that make the goalie's job impossible.
 
 - **Clear the net front, with technique.** Get your inside shoulder ahead of theirs, box out, and lift their stick. Position *usually* beats strength — [Body Contact and Battles](../body_contact_and_battles.md) owns that claim and flags it as coaching consensus rather than a measured law, with a large enough strength gap winning anyway — and a stick lift takes away the tip and the rebound without giving up your own body position — while repeated cross-checks to the back put your team down a man. Full detail in [Body Contact and Battles](../body_contact_and_battles.md).
@@ -524,6 +858,16 @@ What follows is only the part that changes what *you* do.
 
 ## Equipment Notes
 
+```facts
+Rule: Everything except your skates and stick must be built solely for protection, with no undue assistance in keeping goal (NHL Rule 11.1)
+Rule: Neck laceration protection is mandatory and a dangler does not satisfy it — Hockey Canada Rule 3.6(c) requires a BNQ-certified throat protector
+Rule: USA Hockey Rule 304(g) requires a HECC-certified neck laceration protector in every age classification except Adults
+Rule: Paddle length is capped at 26 inches (NHL Rule 10.2), and only players 6'6" or taller may apply for the exemption
+Key: Too long a paddle makes you stand taller, drifts your stick hand from your body and opens the six-hole
+Action: Replace equipment you have outgrown — gear that hurts you teaches you to flinch, and flinching cannot be coached out
+Key: Fit and comfort beat brand and looks, and dull goalie edges destroy lateral movement first
+```
+
 Brief here — full treatment in [Equipment](../equipment.md).
 
 - **Everything except your skates and stick must be built solely for protection** (NHL Rule 11.1). You may not wear anything that gives "undue assistance in keeping goal." At professional level, pad width, pad height, chest protector and pant dimensions are all regulated and inspected. The pad specifics are in **Rule 11.2**, not 11.1: leg pads "shall not exceed eleven inches (11") in extreme width when on the leg of the player", and each goalie's maximum pad height is set individually by the League from their own floor-to-knee and knee-to-pelvis measurements.
@@ -537,6 +881,14 @@ Brief here — full treatment in [Equipment](../equipment.md).
 
 ### The goal that goes in
 
+```facts
+Mindset: Every goalie lets in goals and some will be bad — the skill is what you do in the ninety seconds afterwards
+Action: Have a reset ritual and perform it identically every time, so it signals that the previous shift is finished
+Never: Do the analysis during the game — "what could I have done?" takes attention you need for the next play
+Key: Short memory, long memory — forget the goal for the rest of the game, remember the read in the week after
+Never: Point at a teammate, with your hands, your body language or a look
+```
+
 Every goalie lets in goals. Some of them will be bad. The puck will go through you, or off your defenceman's shin, or you will be on the wrong post. The building will react and there is nowhere to hide.
 
 The skill is not avoiding this. It is what you do in the ninety seconds afterwards.
@@ -548,6 +900,15 @@ The skill is not avoiding this. It is what you do in the ninety seconds afterwar
 
 ### Spotting your own confidence problems
 
+```facts
+Key: Korn's defence mechanisms are symptoms of your head, not real problems
+Read: Blaming your equipment — suddenly nothing is right, the stick, the skates, the arm pads
+Read: Blaming your defence — "there was no way to stop that one"
+Read: Positioning drift — hiding very deep, or running at shooters and losing the net. Both show up plainly in warm-ups
+Read: Mood swings to either extreme — quiet and sorry for yourself, or conspicuously cocky
+Read: Guessing and flopping — leaving your feet early and no longer tracking the puck off the stick
+```
+
 Mitch Korn's list of defence mechanisms is uncomfortably accurate. If you catch yourself doing these, treat them as symptoms of your head rather than as real problems:
 
 - **Blaming your equipment.** Suddenly nothing is right — the stick, the skates, the arm pads.
@@ -557,6 +918,14 @@ Mitch Korn's list of defence mechanisms is uncomfortably accurate. If you catch 
 - **Guessing and flopping.** Leaving your feet early, no longer tracking the puck off the stick, and ending up swimming on the ice.
 
 ### The honest version of the mental demand
+
+```facts
+Mindset: "The most psychologically demanding position in team sport" is widely repeated with no study behind it — treat it as opinion
+Key: The supported version: at the top level the separation is mental — reading, anticipation, tracking, save selection and toughness
+Risk: Confidence is startlingly fragile — several strong games, one bad period, and it can be gone for a week
+Key: Nobody else on your team plays a position where every mistake is final and public
+Mindset: Goalies need to enjoy making saves — if the save is the thing you love, the goals are a price
+```
 
 Goaltending is routinely described as the most psychologically demanding position in team sport. **That is a widely repeated claim with no study behind it, so treat it as opinion.** The narrower version is well supported by coaches and still substantial: at the top level, where everyone has the physical skills, the separation is made in **mental** ones — reading, anticipation, tracking, save selection and toughness; confidence is startlingly fragile, and a goalie can play several strong games, have one bad period and lose it for a week; and nobody else on your team plays a position where every mistake is final and public.
 

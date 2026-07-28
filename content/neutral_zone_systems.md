@@ -590,6 +590,16 @@ A defensive structure is built to defend one side of the ice at a time — the w
 
 ## Beating a trap
 
+```facts
+Key: The trap beats teams that carry the puck; it does not beat teams that pass it
+Action: Move the puck faster than they can slide — two quick passes, D-to-D or wall-middle-wall, beat five skaters sliding
+Action: Use the boards deliberately — a rim or a chip off the wall to a forward arriving behind the pressure, especially against F2 stepping up
+Read: Stretch a forward behind the wall against a 1-3-1 or a trap, but not against a 1-4 — chip past a 1-4's flat line and race for it instead
+Never: Attempt the seam unless it is obviously there — the highest-risk answer, and the one amateurs try first and should try last
+Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth vastly more than a turnover at the blue line
+Mindset: Be patient — a trap gives you the puck and waits for you to do something stupid with it
+```
+
 This deserves its own section because it is the most common problem an amateur team cannot solve. Everything below assumes you are facing a passive structure — a 1-2-2 trap, a 1-3-1, or a 1-4 — that is refusing to come and get the puck.
 
 **1. Move the puck faster than they can slide.** A wall of four defends one side at a time. It cannot re-form faster than a hard pass travels. Two quick passes, especially D-to-D or wall-middle-wall, will always beat five skaters sliding. **The trap beats teams that carry the puck; it does not beat teams that pass it.**
@@ -607,6 +617,16 @@ This deserves its own section because it is the most common problem an amateur t
 ---
 
 ## Neutral zone faceoffs
+
+```facts
+Goal: Defending — stop a clean win back to their point, take the middle away first, and get the puck out so you can change
+Position: Defending wingers commonly line up between the opposing wingers and the middle of the ice rather than directly on their man
+Position: Your centre sets up on the defensive side of the opposing centre, so a lost draw still leaves him between the puck and his net
+Goal: Attacking — win it clean to a defenceman for an immediate entry or shot, or to the wall to chip it in and forecheck
+Action: Know before the drop whether you are winning it forward or back, and who your man is if you lose it
+Rule: A teammate's encroachment gets your centre ejected and a second team violation is a bench minor — an individual minor under USA Hockey 613(d), only a warning under IIHF (Faceoffs owns the split)
+Convention: The specific alignments are a coaching choice and vary hugely — ask your coach for yours
+```
 
 On a regulation sheet there are **four neutral zone faceoff dots** — two just inside each blue line, **five feet from the blue line and forty-four feet apart** (NHL Rule 1.9), each the same distance from the adjacent boards — plus the centre dot. Forty-four feet apart means each dot sits about twenty and a half feet from its own boards, which is roughly where the end-zone dots sit too. A neutral zone draw is where most offside infractions and many stoppages resolve, and both teams treat it as a set play.
 
@@ -633,6 +653,17 @@ Full detail on technique, positioning and the ejection rules is in [Faceoffs](fa
 ---
 
 ## Reading the neutral zone while you carry the puck
+
+```facts
+Read: F1 skating straight at you, hard → they are pressuring; the answer is one quick pass past him
+Read: F1 arcing across, showing you the boards, not really closing → containment or a trap; do not go where they are steering you
+Read: F1 standing near the red line doing nothing → 1-3-1 or 1-4; take your time, look up and start a regroup
+Read: Count the bodies across the middle — two means space to attack, three means a 1-3-1, four in a line means a 1-4 or a full trap
+Read: All their forwards on one side means the ice on the other side is real — that is what the D-to-D and the middle-lane relay are for
+Read: Their defencemen's feet stopped or squared up at the line → chip past them; feet moving backwards → carry it, you have the line
+Action: Check your own support before you commit — if both your forwards are in your lane, slow down and let them separate
+Key: Know the clock and the score — a regroup at 2-2 in the second is smart hockey, the same regroup 40 seconds down a goal is a mistake
+```
 
 You are coming out of your own end with the puck and about 1.5 seconds to decide. Here is the read, in the order it is available to you.
 
