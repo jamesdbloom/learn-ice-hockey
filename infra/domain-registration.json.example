@@ -1,0 +1,47 @@
+{
+  "DomainName": "learn-ice-hockey.com",
+  "DurationInYears": 1,
+  "AutoRenew": true,
+  "PrivacyProtectRegistrantContact": true,
+  "PrivacyProtectAdminContact": true,
+  "PrivacyProtectTechContact": true,
+  "RegistrantContact": {
+    "FirstName": "",
+    "LastName": "",
+    "ContactType": "PERSON",
+    "AddressLine1": "",
+    "AddressLine2": "",
+    "City": "",
+    "State": "",
+    "CountryCode": "GB",
+    "ZipCode": "",
+    "PhoneNumber": "+44.",
+    "Email": ""
+  },
+  "AdminContact": {
+    "FirstName": "",
+    "LastName": "",
+    "ContactType": "PERSON",
+    "AddressLine1": "",
+    "AddressLine2": "",
+    "City": "",
+    "State": "",
+    "CountryCode": "GB",
+    "ZipCode": "",
+    "PhoneNumber": "+44.",
+    "Email": ""
+  },
+  "TechContact": {
+    "FirstName": "",
+    "LastName": "",
+    "ContactType": "PERSON",
+    "AddressLine1": "",
+    "AddressLine2": "",
+    "City": "",
+    "State": "",
+    "CountryCode": "GB",
+    "ZipCode": "",
+    "PhoneNumber": "+44.",
+    "Email": ""
+  }
+}

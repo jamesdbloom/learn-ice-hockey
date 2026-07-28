@@ -28,3 +28,6 @@ __pycache__/
 
 # Speech transform output — regenerated from content/
 scripts/speech/
+
+# Domain registrant PII — never commit
+infra/domain-registration.json
