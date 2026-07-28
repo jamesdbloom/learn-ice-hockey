@@ -261,5 +261,12 @@ jobs:
             echo
             echo "Invalidated ${#PATHS[@]} path(s):"
             echo
-            printf '- `%s`\n' "${PATHS[@]}"
+            # `--` is required, not decorative. The format string starts with
+            # "- ", and bash's printf parses a leading "-" as an option:
+            #   printf: - : invalid option
+            # The step runs under `bash -e`, so that exits 2 and fails the
+            # deploy — after the sync and the invalidation have both already
+            # succeeded, which makes it look like a deploy failure when it is
+            # only the summary that broke.
+            printf -- '- `%s`\n' "${PATHS[@]}"
           } >> "$GITHUB_STEP_SUMMARY"
