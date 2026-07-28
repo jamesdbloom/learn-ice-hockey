@@ -9,14 +9,19 @@
 # The bucket and lock table must exist before `terraform init` here. Create
 # them once, by hand, with the configuration in ./bootstrap.
 #
-# Values below are placeholders for the bucket name that ./bootstrap prints.
-# Either edit them, or leave them out and use partial configuration:
+# The bucket name is NOT hardcoded here. ./bootstrap names the state bucket
+# <project>-tfstate-<account-id>, because S3 bucket names are globally unique
+# and the account id is what makes this one unique. This repository is public
+# and contains no AWS account id anywhere else; hardcoding the bucket name
+# would put one in it. So the bucket is supplied at init time instead:
 #
 #   terraform init -backend-config=backend.hcl
 #
+# backend.hcl is gitignored. Create it from backend.hcl.example, using the
+# state_bucket_name that ./bootstrap prints.
+#
 terraform {
   backend "s3" {
-    bucket = "ice-hockey-tfstate-CHANGEME"
     key    = "ice-hockey/site/terraform.tfstate"
     region = "eu-west-2"
 

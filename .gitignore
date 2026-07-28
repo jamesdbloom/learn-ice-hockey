@@ -12,6 +12,15 @@ dist/
 *.tfvars
 !*.tfvars.example
 
+# Partial backend config — the state bucket name embeds the AWS account id,
+# and this repository is public
+backend.hcl
+
+# Saved plans. A plan file carries resource attributes and account identifiers
+# in the clear, whatever the configuration does to keep them out of the repo
+tfplan
+*.tfplan
+
 # Build artefacts
 site/public/audio/
 build/

@@ -1,0 +1,9 @@
+# Copy to backend.hcl and fill in, then:
+#
+#   terraform init -backend-config=backend.hcl
+#
+# The value is the state_bucket_name output from ./bootstrap. backend.hcl is
+# gitignored because the bucket name embeds the AWS account id, and this
+# repository is public.
+
+bucket = "ice-hockey-tfstate-CHANGEME"
