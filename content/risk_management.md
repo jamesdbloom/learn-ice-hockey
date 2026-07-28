@@ -517,6 +517,15 @@ Note what is *not* on that list: retaliation, sending a message, standing up for
 
 ### The critical exception nobody accounts for: fouls that are not priced as minors
 
+```facts
+Rule: Fouling a puck carrier from behind in the neutral or attacking zone, with no opponent between him and the goalkeeper, is a penalty shot (NHL Rule 57.3)
+Rule: Play the puck first and trip him in the process and it is a minor for tripping, not a penalty shot (NHL Rule 57.3)
+Rule: With your own goalkeeper pulled, that same foul is not a penalty shot but an awarded goal (NHL Rules 25.1 and 57.4, cited as a pair)
+Rule: Covering the puck in your own crease is a penalty shot (NHL Rule 67.4), or an awarded goal if your goalie has been replaced by an extra attacker (67.5)
+Key: A penalty shot beats a power play but by less than the phrase suggests — 28.8% over eleven NHL seasons, computed for this document
+Action: Prevent the breakaway four seconds earlier with your positioning — chasing from behind saves nothing, and saves nothing at all with your net empty
+```
+
 Some fouls do not cost you 21.1%, because they do not produce a power play at all. Two families matter, and each has a worse version when your own goalie is out of the net.
 
 **1. Fouling a breakaway from behind costs you a penalty shot.** Under NHL **Rule 57.3** — the tripping rule, which the hooking, holding, slashing and interference rules all cross-reference for this purpose — a penalty shot is awarded when all four of these are true:
@@ -542,6 +551,14 @@ Two riders in the same rule are worth knowing. If you play the **puck first** an
 
 ### The far more common case
 
+```facts
+Key: Most penalties in amateur hockey are not tactical trades — nobody decided to take them, which is exactly why they are addressable
+Risk: Stick fouls that are really skating fouls — a hook because you stopped skating twenty feet ago, a trip because your feet quit
+Risk: Retaliation — a slash after losing a battle, a cross-check after the whistle, an answer to something the referee missed
+Action: Fix the stick penalty in conditioning and the retaliation penalty in the mental game
+Key: Use frustration as a lens for fixing your own game, not as a fact about the population — no published study codes penalty motive
+```
+
 Most penalties in amateur hockey are not tactical trades at all. Nobody decided to take them, which is exactly why they are addressable. Two habits produce the bulk of them:
 
 - **Stick fouls that are really skating fouls** — a hook because you stopped skating twenty feet ago, a trip because your feet quit and your stick took over.
@@ -554,6 +571,15 @@ Most penalties in amateur hockey are not tactical trades at all. Nobody decided 
 ---
 
 ## Playing to the score — and to your level
+
+```facts
+Key: The right risk profile in a Tuesday-night beer league is not the right risk profile in a competitive one
+Risk: Support is less reliable — in a team that does not practise, the give-and-go you can see is one your teammate cannot
+Risk: Recovery is worse — a rec-league turnover frequently meets nobody at all, so the cost side of every calculation is higher, not lower
+Risk: Goaltending is more variable both ways — get pucks to the net, and treat your own turnovers as costing more
+Action: Tighten nothing in your game except your own end and you will win more games — try things in the offensive zone instead
+Key: Risk level is a dial, not a switch — a big lead, a tired bench or a backup in net all shift you toward the simple play
+```
 
 An honest section, because most hockey advice pretends everyone plays in the same league.
 
@@ -575,12 +601,28 @@ You will make bad decisions. Everyone does, at every level. **What separates goo
 
 ### The immediate response
 
+```facts
+Action: Turn and skate to the middle of the ice between the puck and your net — become the extra defender
+Action: Get to the inside and take away the middle; deny the pass to the slot and a scoring chance becomes a shot from the outside
+Action: Talk — one word, "turnover", "back", "I'm high", reorganises four teammates who are still reading the play
+Never: Chase the puck carrier from behind — it achieves nothing and it invites a penalty shot
+Never: Change while the play is live because you are embarrassed — finish the shift
+```
+
 1. **Turn and skate.** Not toward the puck — toward the middle of the ice between the puck and your net. The most useful thing you can do after a turnover is become the extra defender. Chasing the puck carrier from behind achieves nothing (and, as above, invites a penalty shot).
 2. **Get to the inside.** Your job now is to take away the middle, not to win the puck back. Deny the pass to the slot and you have turned a scoring chance into a shot from the outside.
 3. **Talk.** One word — "turnover", "back", "I'm high" — reorganises four teammates who are still reading the play. Silence is the second mistake.
 4. **Finish the shift.** Do not change while the play is live because you are embarrassed. That is how a giveaway becomes a giveaway plus a 4-on-5.
 
 ### Do not compound it
+
+```facts
+Key: The most damaging thing about a bad decision is the decision that tries to fix it
+Never: Force a low-percentage play to make up for a giveaway — a pinch you have not read, a cross-ice pass, a hit you leave your feet for
+Risk: The second mistake is nearly always worse, because the first was an error of execution and the second an error of judgement made on purpose
+Mindset: The next play is a new play — its expected value has nothing to do with what just happened
+Key: If the boring option was right before your turnover, it is still right after it
+```
 
 **The most damaging thing about a bad decision is the decision that tries to fix it.** The pattern is universal and it looks like this: you give the puck away, you feel it, and thirty seconds later you force a low-percentage play to make up for it — a pinch you have not read, a cross-ice pass, a hit you leave your feet for.
 
@@ -589,6 +631,12 @@ The second mistake is nearly always worse than the first, because the first was 
 **The discipline is: the next play is a new play.** Its expected value has nothing to do with what just happened. If the boring option was right before your turnover, it is still right after it. Working on that separation is squarely the subject of the [Mental Game](mental_game.md).
 
 ### After the game
+
+```facts
+Action: Watch the video if you have it
+Read: Ask "what did I see, and what was actually there?" — the gap between those two answers is your development plan
+Key: Bad decisions are the most coachable thing in hockey, because unlike a shot or a stride they can be fixed in a conversation
+```
 
 Bad decisions are the most coachable thing in hockey, because unlike a shot or a stride they can be fixed in a conversation. Watch the video if you have it. Ask "what did I see, and what was actually there?" The gap between those two answers is your development plan. See [Practice and Development](practice_and_development.md).
 

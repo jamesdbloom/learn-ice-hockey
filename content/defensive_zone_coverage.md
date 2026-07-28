@@ -444,6 +444,15 @@ Action: Talk to your goalie — "screen left", "I've got the tip"; they are tryi
 
 ### The back door / weak-side seam
 
+```facts
+Key: While everyone watches the strong-side battle, an attacker drifts to the far post — one cross-ice pass and it is an open net
+Priority: The chance every coverage system is most afraid of, and worth conceding almost anything else to prevent
+Never: Watch the puck as the weak-side defenceman — eyes track the puck, body stays on the man at the back post
+Technique: Lie your stick flat in the seam across the slot — it makes the play impossible even when the passer is open
+Convention: Weak-side winger sags into the middle rather than standing pretty at the point — a body in the high slot is worth more than perfect point coverage
+Action: Call the arrival, not the goal — "back door!" the moment he appears, not when the pass is on the way
+```
+
 **What it is:** while everyone watches the strong-side battle, an attacker drifts to the far post. One cross-ice pass and it's an open net. This is the chance every coverage system is most afraid of, and the one worth conceding almost anything else to prevent.
 
 **Defending it:**
@@ -454,6 +463,15 @@ Action: Talk to your goalie — "screen left", "I've got the tip"; they are tryi
 
 ### The walk-down from the point
 
+```facts
+Key: Instead of shooting, the opposing defenceman skates down toward the top of the circle — in a pure zone he crosses out of the winger's area and into nobody's
+Action: Find out your team's version before you need it — this one is a coaching choice, not a rule of hockey
+Convention: Under low zone collapse, follow a few feet and stay connected but do not chase into the corner, and call the switch loudly
+Convention: Under man-on-man, you go with them all the way, wherever they go
+Convention: Under hybrid, release from zone and pick them up man-on-man as soon as they cross the dots
+Priority: When a fourth attacker arrives low, somebody gives up their area and it must not be the goalmouth — usually the centre absorbs him and the weak-side winger takes the high slot
+```
+
 **What it is:** instead of shooting, the opposing defenceman skates down from the blue line toward the top of the circle — about **35 feet** from the goal line — or all the way to the hash marks. In a pure zone system, they cross out of the winger's area and into nobody's, and get a clean look from there or an easy feed into the slot.
 
 **Defending it — and this is a coaching choice, so know your team's version:**
@@ -463,6 +481,15 @@ Action: Talk to your goalie — "screen left", "I've got the tip"; they are tryi
 - **Everyone else:** when a fourth attacker arrives low, you are outnumbered down there. Somebody has to give up their area and it must not be the goalmouth. Usually the centre absorbs the extra man and the weak-side winger takes over the high slot entirely.
 
 ### The net-front scramble
+
+```facts
+Priority: Body first, puck second — tie up the most dangerous stick before you look for the puck
+Never: Lunge at the puck through your goalie — you will knock the puck loose or knock them off their post
+Rule: Your stick is legal, your glove and your chest are not — covering the puck inside your own crease is a penalty shot (NHL Rule 67.4)
+Rule: You may hand-pass in your own zone (NHL Rule 79.2), and the test is where the puck is, not where the skates are
+Never: Hand-pass it out to a breaking winger — it is illegal the moment the puck itself has left the zone
+Technique: Stay on your feet as long as possible — a defender on the ice is out of the play for two seconds, which is the whole scramble
+```
 
 **What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play. **The rebound half of that is countable, and it is substantial** — **11.4%** of NHL goals are scored within three seconds of a previous shot on goal by the same team, and **19.7%** within ten seconds; [Offensive Zone Play](offensive_zone_play.md) section 10 owns that figure and carries its source. Put it alongside shot-*location* data, which says the ice in front of the crease is the most dangerous on the rink ([Shooting](shooting.md) owns that), and the direction is well supported. What is still not published is a classification of goals by the **play that produced them**, so "more than any highlight play" stays a coaching comparison rather than a measured ranking.
 
@@ -478,6 +505,16 @@ Action: Talk to your goalie — "screen left", "I've got the tip"; they are tryi
 ---
 
 ## When the System Breaks
+
+```facts
+Priority: Bodies to the net front immediately — not to the puck
+Technique: If you can't reach anyone, lie your stick flat in the passing lane through the slot
+Read: Find the most dangerous unmarked player — scan the house, not the puck; in a scramble it is almost never the person holding it
+Action: Count — outnumbered low, somebody high comes down and says so; even, match up loudly: "I've got 19", "you take the net"
+Action: Get the puck out any way you can — a clear that concedes possession has still bought your team a change
+Action: Reset before you attack — the commonest second goal is the one conceded straight after surviving the first
+Key: The moment you realise you don't know your assignment, go to the middle — every mistake inside the house is smaller than the same one outside it
+```
 
 Every system document describes an orderly world. A large share of your defensive-zone time will not look like that — often enough that it deserves its own plan: a broken play, a bad change, a puck ricocheting off shin pads, three of you below the goal line and nobody where the diagram says. *(How large a share is not something anybody has published; the "roughly a third" figure you sometimes hear is not sourced and is not used here.)* Systems don't cover this state, so players freeze, and freezing is what turns a scramble into a goal.
 
@@ -506,6 +543,17 @@ When it's over, take the extra second to re-form. The most common second goal is
 ---
 
 ## Clearing the Zone
+
+```facts
+Action: Decide before you touch it — scan while the battle is still going, so you already know whether it's the winger, the centre or the glass
+Priority: Controlled exit whenever it is genuinely available, then a rim or a chip off the glass, then anything that ends the shift
+Convention: Under low zone collapse the pass goes to the winger coming down the wall to between the hash marks and the goal line — not to the blue line
+Rule: Off the glass and out is legal; putting the puck directly out of play from your own defending zone is a two-minute delay of game (NHL Rule 63.2(iii)), with three narrow carve-outs
+Risk: Ice it at even strength and the puck comes straight back — your tired line cannot change and cannot take a timeout
+Rule: Shorthanded you may ice the puck freely (NHL Rule 81.6), but two carve-outs apply under USA Hockey and the NHL — check your league; Special Teams owns both
+Rule: Your goalie may only play the puck behind the goal line inside the trapezoid (NHL Rule 27.8) — most rec, beer-league and youth associations don't use it, so find out
+Never: Cheat up the ice — the puck should leave the zone before your third forward does
+```
 
 Winning the puck is only half the job. The handoff from coverage into a breakout is where good defensive shifts become good shifts. Full detail in [Breakouts](breakouts.md); this is the transition itself.
 

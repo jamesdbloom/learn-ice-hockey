@@ -38,6 +38,14 @@ So a leading team conceding shot attempts is not automatically playing badly. It
 
 ### Why it's often overdone
 
+```facts
+Key: The trade only works if you are actually trading volume of shots against for quality of shots against
+Risk: You never get the puck back, so you never change, so your legs go — fatigue in your own zone is how one-goal leads die
+Risk: Your defencemen play the whole shift below the hash marks — no exits, no relief, eventually a bad clear
+Risk: Collapsing everyone to the net front concedes screens, rebounds and scrambles — the highest-danger chances there are
+Risk: Four minutes of defending without the puck produces stick fouls, and a power play against is what a trailing team wants
+```
+
 The trade only works if you are actually trading volume for quality. Amateur and even professional teams routinely cross the line into pure retreat, and then:
 
 - **You never get the puck back.** The other team keeps possession in your end, which means you never change, which means your legs go. Fatigue in your own zone is how one-goal leads die.
@@ -63,6 +71,17 @@ The fix when watching or analysing: **look at score-adjusted numbers, or at even
 
 ### What actually works
 
+```facts
+Priority: With a lead the question is not "can I create a chance" but "can they get it back somewhere dangerous"
+Never: Cross-ice passes through the middle, blind D-to-D across your own goalmouth, or stretch passes you are not sure about
+Action: Chip the puck past the forechecker and out rather than forcing a breakout pass under pressure
+Rule: Shooting the puck directly out of play from your own defending zone is a two-minute delay-of-game minor, with no pressure exception (NHL Rule 63.2(iii))
+Action: Take away the middle — concede the outside, keep your stick in the passing lane, defend with your feet
+Action: Shorten your shifts to 30-35 seconds; fresh legs defend, tired legs reach
+Priority: Win the defensive-zone draws, and have a plan for losing the draw as well as winning it
+Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 or 1-1-3 — is a system choice, so find out yours
+```
+
 **1. Manage the puck.** The single biggest lever. With a lead, the value of a possession is not "can I create a chance" but "can I make sure they don't get it back in a dangerous place." That means:
 
 - No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) owns it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures rather than restating them here.
@@ -85,6 +104,14 @@ The fix when watching or analysing: **look at score-adjusted numbers, or at even
 
 ### What doesn't work
 
+```facts
+Risk: Sitting back entirely is a siege you will eventually lose — you need a way to get out and a way to counter
+Never: Ice the puck repeatedly — it is the classic self-inflicted wound
+Never: Play keep-away on the perimeter with no plan; the blue-line turnover becomes the rush you must not concede
+Never: Play the clock instead of the puck — watching the scoreboard makes you late to loose pucks
+Never: Chase the extra body-check; if the player has already passed or shot it is a late hit as well as bad position
+```
+
 - **Sitting back entirely.** Five players below the top of the circles for four minutes is not a system, it's a siege you will eventually lose. You need a way to *get out* and a way to *counter*.
 - **Icing the puck repeatedly.** See below — this is the classic self-inflicted wound.
 - **Playing keep-away in the offensive zone without a plan.** Pointless perimeter possession invites a turnover at the blue line and a rush the other way, which is the one thing you must not concede.
@@ -92,6 +119,15 @@ The fix when watching or analysing: **look at score-adjusted numbers, or at even
 - **Fighting for the extra body-check.** Finishing a hit that takes you out of position is a luxury you can't afford with a lead — and if the player has already passed or shot, it is also a late hit and a penalty, which is a worse outcome still.
 
 ### The icing trap
+
+```facts
+Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
+Rule: Under hybrid icing the linesperson judges who would reach the puck first, not who reaches the dot first (NHL Rule 81.1)
+Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rule 82.1)
+Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1)
+Risk: A defensive-zone draw, your five most tired players, and no way to rest them
+Action: Ask before the game — many rec and youth leagues use no-touch icing or never enforce the no-change rule
+```
 
 **Icing** is sending the puck from your own side of the centre red line all the way past the opposing goal line untouched. Under NHL **hybrid icing** (adopted 2013-14) the linesperson judges who would reach **the puck** first — not who reaches the dot first (Rule 81.1). The end-zone faceoff dot is the **deadline for that decision**: the call is made no later than the instant the first player's skate reaches it, and a race too close to call at that moment is icing.
 
@@ -115,6 +151,15 @@ Three details worth knowing:
 
 ### Pressing without giving up odd-man rushes
 
+```facts
+Action: Move the puck north faster and arrive in numbers through the neutral zone before you park extra players deep
+Options: Aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie — roughly that order of safety
+Read: Trailing, you pinch on anything close; leading, you pinch only when you are certain
+Risk: A pinch that misses is a 2-on-1 the other way, and a fourth attacker deep is a genuine odd-man risk
+Never: Leave nobody as the last man back — if a defenceman goes, a forward replaces them high
+Action: Say that swap out loud
+```
+
 Trailing, you must generate more. The trap is that the easiest way to generate more — sending everybody — is also the fastest way to concede and end the game.
 
 What to add, in roughly this order of safety:
@@ -129,6 +174,14 @@ What to add, in roughly this order of safety:
 
 ### When to start taking risks
 
+```facts
+Priority: Scale risk to how much time is left against how many goals you need, not to how frustrated you feel
+Action: Down one in the first or second period, play your normal game harder — no structural risk at all
+Action: Down one early in the third, add forecheck pressure and pinch more, but keep the last man back honest
+Action: Down two mid-third, activate defencemen and accept some rush chances against — trading one-for-one is no longer a loss
+Action: Down three or more in the third, be extremely aggressive early rather than moderately aggressive late
+```
+
 Risk should scale with **how much time is left relative to how many goals you need**, not with how frustrated you feel. A rough ladder:
 
 - **Down one, first or second period:** play your normal game harder. No structural risk at all. There is enormous time left, and a second goal against is what actually kills you.
@@ -138,6 +191,13 @@ Risk should scale with **how much time is left relative to how many goals you ne
 - **Down three or more, any time in the third:** the mathematics say be extremely aggressive early rather than moderately aggressive late — one of the clearest findings in the goalie-pull literature. A team down three with ten minutes left that plays "sensibly" is choosing to lose slowly.
 
 ### How to know it's time
+
+```facts
+Read: Lots of zone time and no slot chances means your entries are dying at the blue line — change how you enter, not how hard you skate
+Read: Their goalie seeing everything means you need traffic and pucks to the net, not better shots
+Read: Losing races out of your own end means you are too slow starting breakouts — simplify and go north earlier
+Action: Decide your clock thresholds before the third period, so nobody has to decide in the moment
+```
 
 Signs it's time to change something, rather than keep doing the same thing harder:
 
@@ -172,6 +232,16 @@ The analytics consensus has moved much earlier than tradition, and it has been m
 
 ### The 6-on-5 structure
 
+```facts
+Position: Two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
+Action: Get set up — a 6-on-5 that has to enter the zone repeatedly is wasting its advantage
+Action: Put the puck to the net with a screen; the extra man is a body in front, not a sixth passer
+Technique: One-touch it — the advantage only shows up if the puck moves faster than they can shift
+Never: Let both point men pinch — someone must be able to stop a clear, because there is no net behind you
+Action: Change with possession and change fast; changing while chasing the puck concedes an empty-netter
+Convention: Umbrella, overload or your normal power-play look at 6-on-5 is a team choice — learn yours in practice
+```
+
 The extra attacker is almost always a forward, and the sixth skater usually comes on for the goalie at a stoppage with an offensive-zone faceoff, or on the fly once you have possession in their end.
 
 The most common shape takes a standard power-play look and adds a second body high: **two players at the blue line (the points), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**. The principles matter more than the diagram:
@@ -194,6 +264,16 @@ If you are trailing *and* on a power play, pulling the goalie creates a 6-on-4. 
 
 ### The delayed-penalty freebie
 
+```facts
+Rule: On a delayed penalty the referee raises an arm and play continues until the team to be penalised gains control of the puck (NHL Rule 15.1)
+Rule: During a delayed penalty the offending team cannot score unless you shoot the puck into your own net (NHL Rule 78.5(xi))
+Action: Goalie goes to the bench immediately at the first sign of the arm — every second is a free attacker
+Action: The extra attacker jumps from the bench as the goalie arrives
+Never: Blind D-to-D passes across your own crease during a delayed call
+Action: Keep the puck away from the offending team; do not force a low-percentage shot that could be smothered
+Risk: A shot that misses and rims to an opponent ends the sequence
+```
+
 This is the one time you get an extra attacker for free, and amateur teams waste it constantly.
 
 Under **NHL Rule 15.1**, when a player on the team *not* in control of the puck commits a penalty, the referee **raises an arm and delays the call**; play continues until **the team to be penalized gains control of the puck**. So the moment the arm goes up, your goalie can skate to the bench and you play 6-on-5 with **no empty-net risk** — because the offending team cannot score.
@@ -208,6 +288,16 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 > **Rec-league note:** many recreational leagues do not allow, or do not practise, pulling the goalie on a delayed call, and some officials will stop play early. It also requires your goalie to be paying attention. Talk about it beforehand.
 
 ### Defending against 6-on-5
+
+```facts
+Never: Chase — play a tight box or diamond in the slot, block lanes and let them have the perimeter
+Position: Sticks in lanes, feet in the house; clear bodies and take sticks away at the net front
+Action: Treat every clear as a shot — get your head up and put it at the empty net when the lane is clean
+Rule: You can be iced against a pulled goalie; six players against six is equal strength, not below it (NHL Rules 81.1, 81.3, 84.1)
+Rule: After that icing they pick the dot (81.2), you cannot change (81.4) and you cannot take a time-out (87.1)
+Priority: Own-zone draws at 5-on-6 decide games — agree the plan before you line up
+Never: Take a penalty; a 6-on-4 against is close to a goal
+```
 
 Your job as the leading team defending an empty net:
 
@@ -224,6 +314,14 @@ Your job as the leading team defending an empty net:
 
 ### The rule
 
+```facts
+Rule: After a stoppage the visiting team places its line-up on the ice first, then the home team may substitute (NHL Rule 82.1)
+Rule: The referee allows the visitors up to five seconds and the home team up to eight, then no more changes (NHL Rule 82.2)
+Rule: Only the team that iced the puck is frozen — if the visitors ice it, the home team changes normally and keeps last change (NHL Rules 82.1, 81.4)
+Key: Last change is the main mechanical component of home-ice advantage, but travel, rest and rink familiarity are in there too
+Action: In a rec league, treat matching as something you do on the fly — many run no formal change procedure at all
+```
+
 Under **NHL Rule 82.1**, following a stoppage the **visiting team places its line-up on the ice first**, and only then may the home team make any substitution it wants. **Rule 82.2** sets the clock: the referee gives the visiting team **up to five seconds**, raises his hand to close visitor changes, gives the home team **up to eight seconds**, then lowers his hand. After that, no more changes until play resumes.
 
 **Icing is where this is often misread.** The first paragraph of Rule 82.1 reads in full: *"The home team may then make any desired substitution, except in cases following an icing, which does not result in the delay of the game."* Quoted short — stopping at "following an icing" — that looks like it might switch last change off after *any* icing, whoever committed it. It does not. Later in the same rule the exception is spelled out: **a team in violation of Rule 63.8 (Delaying the Game) or Rule 81 (Icing)** *"shall not be permitted to make any player substitutions prior to the ensuing face-off"* — and Rule 81.4 repeats it word for word. The bar falls on **the team that iced the puck**. So if the home team ices it, the home team is frozen and has no last change to exercise; if the **visitors** ice it, the home team changes normally and keeps last change. Full treatment in [Faceoffs](faceoffs.md).
@@ -233,6 +331,13 @@ This is what "**last change**" means, and it is the main mechanical component of
 > **Rec-league note:** many recreational and beer leagues do not enforce a formal line-change procedure at all, and the referee simply drops the puck. If you're a rec player, treat everything below as something you do *on the fly*, not at stoppages.
 
 ### What coaches do with it
+
+```facts
+Convention: The classic use is matching a checking line — picked for defensive reliability, forechecking and faceoffs — against a scoring line
+Options: Shelter a young player with soft starts, get the trusted group out for late defensive-zone draws, or chase a favourable matchup
+Risk: Last change can cost you the draw — coaches sometimes send out a worse faceoff man to win the matchup instead
+Key: The road team's counter is the change on the fly, which is why change discipline matters more on the road than at home
+```
 
 The classic use is **matching a checking line against a scoring line**. A **checking line** (or shutdown line) is a forward line selected primarily for defensive reliability, forechecking and faceoffs rather than scoring. The coach with last change waits for the opponent's top line, then sends the checkers over the boards against them.
 
@@ -246,6 +351,15 @@ Coaches also use last change to:
 **The road team's counter is the change on the fly.** Last change applies only at stoppages. On the road, coaches dictate matchups by timing changes during play — getting a line off as the opponent's top line comes on — which is why change discipline matters more on the road than at home.
 
 ### What you should do when you know you're being matched
+
+```facts
+Action: On a scoring line, change on the fly rather than at whistles — at a stoppage on the road you show your hand first
+Never: Take the bait and beat your man one-on-one into traffic — move the puck early and make them cover all five of you
+Read: If three players are focused on you, two of your teammates are unmarked
+Goal: A 0-0 shift with no penalties against a strong checking line is a win if your other lines are winning theirs
+Priority: On the checking line, your first job is to not get scored on — get the puck deep and change
+Action: On the checking line, be first on faceoffs and first back; you were sent out for reliability, not creativity
+```
 
 If you're on a scoring line being checked:
 
@@ -268,6 +382,14 @@ Almost everything in this section is a coaching choice; the point is to know why
 
 ### Shutdown pair versus offensive pair
 
+```facts
+Convention: Most teams differentiate their three pairs by role rather than purely by quality
+Priority: Shutdown pair — gap control, defending the rush, boxing out the net front, clean simple exits; not expected to produce points
+Priority: Offensive or transition pair — join the rush, activate from the point, move pucks, higher risk tolerance
+Convention: The third pair is usually sheltered, with offensive-zone starts and weaker opposition
+Never: Assume "first pair" means the hardest job — many teams use their second pair to shut down, so ask
+```
+
 Most teams differentiate their three pairs by role rather than purely by quality:
 
 - **The shutdown pair** takes the hard matchups and the defensive-zone starts. Priorities: gap control, defending the rush, boxing out the net front, clean simple exits. Not expected to produce points.
@@ -277,6 +399,15 @@ Most teams differentiate their three pairs by role rather than purely by quality
 Which pair does which varies. Many teams use their **second** pair as the shutdown pair, keeping the first pair free to play offence. Ask; don't assume that "first pair" means "hardest job."
 
 ### Left-shot / right-shot pairings
+
+```facts
+Key: On your on-hand side the outlet up the wall and the D-to-D are on your forehand, and your body shields the puck from the middle
+Technique: Retrieving on your on-hand side lets you turn away from the forecheck; off-hand you turn into the boards or the checker
+Read: At the left point a left shot's blade sits toward the boards — the gain is the puck arriving on your forehand, released in one motion
+Convention: Power-play units deliberately put off-hand defencemen at the points, because the blade is out in the middle for the one-timer
+Key: Defending the rush, on-hand suits sealing a carrier against the wall and off-hand suits taking away the seam — neither is simply better
+Technique: On your off side, take your first touch into the middle, open your hips earlier on retrievals, and treat the backhand D-to-D as normal
+```
 
 A **left shot** holds the stick with the **left hand at the top of the shaft and the right hand lower**, so the blade sits on their **left** side and their **forehand is on their left**. That is what makes the left side of the ice their natural side. **On-hand** means playing on your natural side — a left shot on the left, a right shot on the right; **off-hand** means the opposite.
 
@@ -293,6 +424,13 @@ Two honest caveats. The effect is real but small — around one percentage point
 
 ### Zone starts
 
+```facts
+Key: Zone starts are the proportion of your shifts that begin with a faceoff in the offensive, neutral or defensive zone
+Risk: Heavy defensive-zone starts make your raw shot and goal differentials look bad however well you play
+Action: Check both players' zone starts before you compare their numbers
+Mindset: A defensive-zone start means your coach trusts you — and the first ten seconds are the most dangerous of your shift
+```
+
 **Zone starts** are the proportion of your shifts that begin with a faceoff in the offensive, neutral or defensive zone. They are a coaching lever and a statistical distortion in one:
 
 - A player with heavy **defensive-zone starts** begins most shifts 200 feet from the other net, under pressure. Their raw shot and goal differentials will look bad no matter how well they play.
@@ -306,17 +444,39 @@ When you compare two players' numbers, check their zone starts first. And when y
 
 ### The rules you're working inside
 
+```facts
+Rule: You may change at any time during play, provided the player leaving is within five feet of the bench and out of the play (NHL Rule 74.1)
+Rule: If either player plays the puck, checks or makes contact while both are on the ice, it is too many men — a bench minor (NHL Rule 74.2)
+Rule: If the offending team scores before the whistle, the goal is disallowed and the penalty assessed (NHL Rule 74.2)
+Never: Leave the ice anywhere but at the bench — any other exit is a bench minor regardless
+```
+
 **NHL Rule 74.1**: players may be changed at any time during play, provided the player **leaving the ice is within five feet of the bench and out of the play** before the change is made. If either the player coming on or the player going off **plays the puck, checks or makes physical contact** with an opponent while both are on the ice, it's **too many men** — a bench minor (Rule 74.2). And if the offending team scores before the whistle, **the goal is disallowed and the penalty assessed.**
 
 The retiring player must leave **at the bench**, not through any other exit, or it's a bench minor regardless.
 
 ### How long a shift should be
 
+```facts
+Convention: 35-45 seconds for most players, 30-35 when protecting a lead or stuck in your own end — coaching prescription, not measurement
+Read: The signal to change is a reduction in your ability to accelerate, not a stopwatch
+Key: Gliding to a spot you would have skated to ten seconds earlier means you are already too tired to be useful
+Action: Take the measured shift-length range and the physiology from Conditioning and Recovery, which owns them
+```
+
 Shifts in fast, high-level hockey are typically **under a minute**, and the reason usually given is physiology: hockey is repeated maximal effort, and effort quality declines well before you feel exhausted. **[Conditioning and Recovery](conditioning_and_recovery.md) owns both the physiology and the measured range** — take the figures from there rather than from here. A reasonable target for most players is **35–45 seconds**, shortened to **30–35 seconds** when protecting a lead or when the play is stuck in your own end; **those two bands are coaching prescription, not measurement** — the measured band is 30–80 seconds and the "well-managed" 30–45 s figure is itself coaching craft, as that document states.
 
 The signal to change is not a stopwatch, it's a **reduction in your ability to accelerate**. The moment you find yourself gliding to a spot you would have skated to ten seconds earlier, you are already too tired to be useful.
 
 ### Tired players make bad decisions
+
+```facts
+Risk: Decision speed goes first — you see fewer options, later
+Risk: Then your feet go: you stop skating and start reaching, which is how sticks end up around waists and hands
+Risk: Then support goes, so a teammate loses a battle they should have won; backchecking goes last and costs most
+Key: A 90-second shift is worth less in total than a 30-second one, and it costs your next shift too
+Convention: Coaches put late-shift penalties down to fatigue — the mechanism is sound reasoning, but no published study codes penalty motive
+```
 
 Fatigue does not just cost you a step. It costs you, in this order:
 
@@ -328,6 +488,15 @@ Fatigue does not just cost you a step. It costs you, in this order:
 The practical consequence, as coaches put it: **a 90-second shift is not three times as valuable as a 30-second shift — it is worth less in total, and it costs your next shift too.** *(Nobody has measured the value of a shift as a function of its length, so read that as the shape of the argument rather than as a quantity. What is measured is the decline in repeated-sprint quality, which [Conditioning and Recovery](conditioning_and_recovery.md) owns.)*
 
 ### When NOT to change
+
+```facts
+Never: Change when the puck is in your defensive zone and your team does not have it
+Never: Change while you are the last man back, until you are relieved — and say so out loud
+Never: Change while the opposition is on a rush; finish the defensive play first
+Rule: You cannot change after your own icing (NHL Rule 82.1), so do not start drifting toward the bench
+Never: Change in the middle of a 6-on-5 possession — change with the puck or not at all
+Action: Change when your team has the puck heading north, has just dumped it in deep, or after a completed clear
+```
 
 This is the part that separates good game management from a good motor.
 
@@ -348,6 +517,13 @@ This is the part that separates good game management from a good motor.
 
 ### Why a bad change costs goals
 
+```facts
+Risk: A bad change concedes a numbers disadvantage, a structural hole and a player joining the play blind, all at once
+Key: There is no other single action in hockey that gives away that much for free
+Key: The fix is discipline and communication, not fitness
+Action: Call it — "I'm changing", "stay on", "last man"
+```
+
 A bad change concedes three things at once: a numbers disadvantage, a structural hole (the player leaving usually has a specific job nobody is doing), and a player joining the play with no idea where anybody is. There is no other single action in hockey that gives away that much for free.
 
 The fix is discipline and communication, not fitness. **Call it**: "I'm changing," "stay on," "last man." See [On-Ice Communication](on_ice_communication.md).
@@ -357,6 +533,17 @@ The fix is discipline and communication, not fitness. **Call it**: "I'm changing
 ## Overtime
 
 ### Regular-season 3-on-3 (NHL)
+
+```facts
+Rule: Five minutes maximum, sudden death, three skaters and one goalkeeper a side, teams changing ends (NHL Rule 84.1)
+Priority: Possession over shooting — if you do not have a high-quality look, you do not shoot
+Technique: With no good option, carry or pass back out through the neutral zone, reset and come again
+Never: Force a low-percentage shot — a missed net in 3-on-3 is often a goal against
+Never: Change without possession; you never surrender the puck to get fresh legs
+Read: The goal usually comes from isolating a defender who has been stuck out and cannot get off
+Rule: A penalty makes it 4-on-3, coincidental minors leave it 3-on-3, and no team ever has fewer than three skaters (NHL Rule 84.3)
+Rule: Lose with your goalie pulled in overtime and you forfeit the point you had already earned (NHL Rule 84.2)
+```
 
 **Rule 84.1**: five minutes maximum, sudden death, **three skaters and one goalkeeper** per side, teams change ends (they defend the same end as in the second period — the long change). Both points are secured before it starts: a tie after regulation guarantees each team one point.
 
@@ -383,11 +570,26 @@ One more detail: **in the last two minutes of regulation and at any time in over
 
 ### Playoff overtime (NHL)
 
+```facts
+Rule: Fifteen-minute intermission, then full twenty-minute sudden-death periods at 5-on-5, changing ends, until someone scores (NHL Rule 84.5)
+Action: Play simple and get pucks in behind their defence
+Never: Be the one who makes the play that loses it
+Action: Manage shifts ruthlessly — teams routinely shorten to the low 30s in double overtime
+```
+
 **Rule 84.5**: after a tie through regulation, a **fifteen-minute intermission**, then full **twenty-minute periods at 5-on-5**, sudden death, changing ends each period, repeating until someone scores. No 3-on-3, no shootout.
 
 This is a completely different game-management problem: it's regulation hockey, played tired, with an infinite-cost mistake. The universal advice is **play simple, get pucks behind their defence, don't be the one to make the play that loses it**, and manage shifts ruthlessly — teams routinely shorten shifts to the low 30s in double overtime.
 
 ### Rec-league and other variations
+
+```facts
+Action: Ask before the game — formats run from 4-on-4 to 3-on-3 to a straight shootout to no overtime at all
+Rule: IIHF preliminary overtime is five minutes of 3-on-3, but teams do not change ends (IIHF Rule 84.1)
+Rule: IIHF playoff overtime is ten minutes of 3-on-3, not the NHL's twenty-minute 5-on-5 periods (IIHF Rule 84.5)
+Rule: The IIHF shootout is five shooters a side with a coin toss for order, not three with home-team choice (IIHF Rule 84.4)
+Read: Under IIHF rules your bench is the near bench, so waiting for an exhausted defender is much less reliable
+```
 
 Formats vary enormously below the professional level: some leagues use 4-on-4, some 3-on-3, some go straight to a shootout, many simply record a tie, and youth leagues often have no overtime at all. **Ask before the game.**
 
@@ -407,6 +609,16 @@ Formats vary enormously below the professional level: some leagues use 4-on-4, s
 
 ### For the shooter
 
+```facts
+Action: Decide before you start skating — deciding at the hash marks is how you end up doing neither thing well
+Technique: Have two moves and know which one you are using
+Options: A shot in stride to the far side or five-hole, a deke to the backhand, or forehand-backhand-forehand
+Read: Slower approaches give you more options and force the goalie to move first; faster ones beat passive, deep goalies
+Goal: Get the goalie sliding, then go where they have just left
+Never: Telegraph — head up, puck out in front where both a shot and a deke are live
+Key: A missed net is the worst outcome; a saved shot at least creates the possibility of an error
+```
+
 - **Decide before you start skating.** Deciding at the hash marks is how you end up doing neither thing well.
 - **Have two moves and know which one you're using.** The commonest are a shot in stride (usually to the far side or five-hole), a deke to the backhand, and a forehand-backhand-forehand.
 - **Speed is a choice, not a default.** Slower approaches give you more options and force the goalie to move first; faster approaches beat goalies who are passive and deep. Pick one deliberately.
@@ -415,6 +627,14 @@ Formats vary enormously below the professional level: some leagues use 4-on-4, s
 - **You only need one good shot.** A missed net is the worst outcome; a saved shot at least creates the *possibility* of an error.
 
 ### For the goalie
+
+```facts
+Technique: Control your depth — coming out cuts the angle, staying deeper gives you more time against dekes
+Never: Commit first — stay square, stay patient, make them decide
+Technique: Track the puck, not the hands
+Read: Match your retreat to their approach — back in with a fast shooter, hold your depth and stay big against a slow one
+Rule: You cannot be replaced once the shootout starts unless you are injured, and a substitute gets no warm-up (NHL Rule 84.4)
+```
 
 - **Control your depth.** Coming out cuts the angle and beats shooters; staying deeper gives you more time against dekes. Know which you're better at.
 - **Don't commit first.** Nearly every shootout goal comes from a goalie who moves before the shooter does. Stay square, stay patient, make them decide.
@@ -432,6 +652,15 @@ Whether "momentum" is a real measurable force is genuinely disputed. What is not
 
 ### After conceding
 
+```facts
+Mindset: Take the next shift as simply as possible — win a puck, get it deep, take your man, change
+Never: "Finish your check" on a player who has already passed or shot; that is a late hit under USA Hockey's standard of play
+Mindset: Play the game in front of you — replaying the goal is a decision-making tax you cannot afford
+Action: Reset your risk to baseline; chasing the goal back immediately is how one-goal deficits become three-goal deficits
+Action: Say one short factual sentence — "reset, next shift". Silence after a goal against is corrosive
+Convention: Coaches treat the minute after a goal against as the most dangerous stretch in hockey — coaching lore, not a measured hazard rate
+```
+
 The minute after a goal against is treated by coaches everywhere as the most dangerous stretch in hockey, because the conceding team is either deflated or over-eager and both produce mistakes. **Read that as coaching lore, not as a measured hazard rate** — it is the same class of claim as "momentum" flagged just above, and there is no published count of goals by time since the last goal. The habits below are worth having whether or not the effect is real.
 
 **What to do:**
@@ -443,9 +672,25 @@ The minute after a goal against is treated by coaches everywhere as the most dan
 
 ### The value of a simple shift
 
+```facts
+Key: A simple shift is a deliberate, low-ambition, high-execution 35 seconds
+Never: Cross-ice passes, pinches or one-on-one attempts on a simple shift
+Action: First man in on the forecheck, hard on the wall, change on the whistle or on the clear
+Goal: Stop the bleeding and hand the game back to the bench in one piece
+Mindset: It is not a lack of ambition — being able to deliver one reliably makes you very hard to leave out
+```
+
 A **simple shift** is a deliberate, low-ambition, high-execution 35 seconds: no cross-ice passes, no pinches, no one-on-one attempts, first man in on the forecheck, hard on the wall, change on the whistle or on the clear. Its purpose is to stop the bleeding and hand the game back to the bench in one piece. It is not a lack of ambition; it's the correct play in a specific situation, and being the player who can reliably deliver one makes you very hard to leave out of a line-up.
 
 ### Time-outs, icing, and what the evidence says
+
+```facts
+Rule: Each team gets one thirty-second time-out per game, taken at a normal stoppage (NHL Rule 87.1)
+Rule: No time-out is granted to the defensive team following an icing — you cannot rest your way out of your own icing (NHL Rule 87.1)
+Rule: USA Hockey is the outlier: Rule 636(f) gives one sixty-second time-out and attaches no icing condition to it
+Action: Spend it on rest and instruction at a moment you choose — before a critical defensive-zone draw, or before setting up 6-on-5
+Key: The measured effect on winning is nil, but most benches finish the game with the time-out still in the pocket
+```
 
 **Rule 87.1**: each team gets **one thirty-second time-out per game**, regular season or playoffs. It must be taken at a normal stoppage, and **only one time-out — commercial or team — is permitted at any one stoppage.**
 
@@ -465,6 +710,13 @@ The practical reading: a time-out is a tool for **rest and instruction at a mome
 
 ### 4-on-4
 
+```facts
+Action: More ice means more time — hold the puck a beat longer and make the second option available
+Read: The open middle cuts both ways: more clean entries for you, more odd-man rushes against
+Convention: Two forwards and two defencemen is the common personnel choice, but many teams use three forwards — know yours
+Priority: The defensive priority is the far-side rush; losing a puck at the offensive blue line is a 2-on-1 with nobody to help
+```
+
 Under **Rule 19.1**, when **one minor is assessed to a player on each team at the same stoppage** and there are no other penalties on the clock, they are served **without substitution** and both teams play **four skaters against four for the duration**.
 
 4-on-4 is a higher-scoring game state than 5-on-5 — in 2007-08 a goal was scored every **12.1 minutes** at 4-on-4 versus **13.7 minutes** at 5-on-5. Both are **combined** rates: the time until *either* team scores, not until one particular team does. How to play it:
@@ -476,11 +728,26 @@ Under **Rule 19.1**, when **one minor is assessed to a player on each team at th
 
 ### Coincidental penalties
 
+```facts
+Rule: Coincidental minors of equal duration cancel; any difference in time is served normally (NHL Rule 19)
+Rule: A second pair of coincidental minors while already 4-on-4 leaves strength unchanged, because the first pair is still on the clock (NHL Rule 19.1)
+Rule: Penalised players in coincidental situations cannot leave the box until the first stoppage after their penalty expires (NHL Rule 19)
+Never: Retaliate — you convert your opponent's mistake into no advantage at all
+```
+
 The general principle in **Rule 19** is *cancel as many matching penalties as you can*. Coincidental minors of equal duration cancel; any difference in time is served normally. Once teams are already 4-on-4, another set of coincidental minors does **not** drop them to 3-on-3 — but nor does it put them back to 5-on-5. **They stay at 4-on-4.** The reason is in Rule 19.1: the four-skater provision applies only *"provided there are no other penalties in effect and visible on the penalty clocks,"* and the original pair is still on the clock. So the second pair gets **immediate substitution** and on-ice strength is unchanged, while four players now sit in the boxes. Penalized players in coincidental situations **cannot leave the box until the first stoppage after their penalty expires**, which is why you sometimes see a player sitting long after the clock hits zero.
 
 The game-management point: **if you retaliate, you have converted your opponent's mistake into no advantage at all.** Your team earned a power play; you gave it straight back. That is one of the few things in hockey that is pure, unforced loss.
 
 ### The last minute of a period
+
+```facts
+Never: Get caught changing — the most common late-period goal comes from a lazy change at 0:40
+Never: Force an entry; a turnover at their blue line with 20 seconds left is a 2-on-1 you will not recover from
+Action: Get the puck deep and finish the period there
+Priority: Nobody's line is more important than the clock — tired with 15 seconds left, stay on and defend
+Read: The exception is a genuine chance — possession with numbers, and you go
+```
 
 The first and second periods have their own risk profile. A goal against in the final minute of a period is disproportionately damaging — it's the last thing everyone carries into the dressing room, and there's no time to respond.
 
@@ -491,6 +758,14 @@ The first and second periods have their own risk profile. A goal against in the 
 - **The exception is a genuine chance.** If you have possession with numbers, go — just know the difference between a chance and a hope.
 
 ### The first shift after a long stoppage
+
+```facts
+Mindset: Expect your first stride to be slow, and expect both teams to play the shift badly
+Action: Keep your feet moving during the stoppage rather than leaning on your stick
+Action: Simplify the first 20 seconds — the pass you would normally complete may not connect
+Priority: Win the faceoff; possession from a cold start is worth more than usual because they are disorganised too
+Goal: Be first to the first loose puck — that race usually sets the tone of the next two minutes
+```
 
 After a TV time-out, an injury delay, a video review or an intermission, everybody is cold, the ice is different, and the first shift is played badly by both teams. That makes it an opportunity as much as a risk.
 
@@ -504,6 +779,15 @@ After a TV time-out, an injury delay, a video review or an intermission, everybo
 ## Discipline as Game Management
 
 ### When a penalty is worth taking
+
+```facts
+Key: The test is whether the thing you are preventing is more likely to become a goal than the power play you give up
+Options: Stopping an odd-man rush in the last minutes of a close game, or preventing a certain goal
+Rule: Fouling a breakaway from behind gives up a penalty shot, not a power play (NHL Rule 57.3)
+Rule: Covering the puck in your own crease is a penalty shot (NHL Rule 67.4) — still better than the goal it prevented
+Never: Foul anything once your own goalie is pulled — those trades become awarded goals (NHL Rules 25.1, 57.4, 67.5)
+Never: Take one for retaliation, for sending a message, after the whistle, or at any point in the first period
+```
 
 Rarely — but not never. The test is simple: **is the thing you are preventing more likely to become a goal than the power play you are giving up?**
 
@@ -524,6 +808,13 @@ Note what is *not* on the list above: retaliation, sending a message, standing u
 
 ### When it absolutely isn't
 
+```facts
+Never: Take a penalty with a lead in the last five minutes — if you are beaten, be beaten, and let them have the outside shot
+Never: Take one while already killing a penalty; a 5-on-3 against is the single most dangerous game state in hockey
+Never: Take one while on your own power play, or after the whistle
+Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastrophic
+```
+
 - **When you're leading late.** A penalty with a lead in the last five minutes is the fastest way to lose a game. If you're beaten, be beaten — let them have the outside shot.
 - **When you're already killing a penalty.** A 5-on-3 against is the single most dangerous game state in hockey.
 - **When you're already on a power play.** Nothing wastes an advantage faster.
@@ -531,6 +822,13 @@ Note what is *not* on the list above: retaliation, sending a message, standing u
 - **When you're 6-on-5 or defending 6-on-5.** Both directions are catastrophic — recall that teams defending a 6-on-5 take penalties at nearly twice the rate of the team attacking.
 
 ### Frustration penalties
+
+```facts
+Action: Keep your feet moving — almost every hooking and tripping call is a player who used their stick as a substitute
+Action: Give up the last word; the referee almost always catches the second player
+Action: Have a reset — a breath at the faceoff dot, a tap of the pads, a look at the clock
+Convention: That most amateur penalties are frustration-driven is coaching experience, not data — no published study codes penalty motive
+```
 
 *This section carries the full treatment of what is and is not known about why amateur players take penalties. [Risk Management](risk_management.md#the-far-more-common-case) points here rather than restating it, and the claim should never travel without the qualification set out below.*
 

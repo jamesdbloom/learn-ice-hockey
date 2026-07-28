@@ -475,6 +475,15 @@ A **pinch** is stepping down from the blue line along the wall to kill a rim or 
 
 ### The weak-side defenceman is the safety
 
+```facts
+Convention: At 5-on-5 in every forecheck above, only one defenceman pinches at a time — very widely taught, but a coaching choice rather than a law
+Position: The weak-side defenceman holds the middle and does not join in — the reason a failed pinch is a 2-on-1 rather than a breakaway
+Read: Both defencemen go only on a called situation — a full-ice press, a delayed penalty, or 6-on-5 with your goalie pulled
+Convention: Some teams run a five-man rotation or a standing green light for both defencemen instead, with the highest forward covering the line — ask which yours is
+Action: Look for your partner before you commit — if they are already down the wall, you are the safety
+Convention: When the strong-side D pinches, the common default is F3 recovering to the point; some teams slide the weak-side D across instead
+```
+
 **The default, at 5-on-5 in every forecheck described above: only one defenceman pinches at a time.** This is a very widely taught coaching choice rather than a law of hockey, but it is close to universal, and if nobody has told you otherwise it is the assumption to play on.
 
 The **weak-side defenceman** — the one away from the puck — holds the middle of the ice and does not join in. They are the last line of defence and the reason a failed pinch is a 2-on-1 rather than a breakaway. Both defencemen pinching simultaneously is described in coaching material as a last resort, because it leads directly to breakaways.
@@ -500,6 +509,15 @@ These are two completely different situations and most players forecheck them id
 
 ### Off a dump-in — you control the clock
 
+```facts
+Key: You chose when the puck went in and you know where it is going — you arrive at full speed with a head start
+Action: Leave before the puck does — F1 should be accelerating as the dump is released, not after it
+Targets: Aim the dump at a person, not a zone — put it where their defenceman must retrieve it facing their own end boards
+Never: Finish into the back of a player facing the wall — take the puck, take the ice, or angle them off it; the onus is entirely on you as the arriving player
+Convention: F1 takes the retrieval and F2 commits early to the passing lane rather than following F1 into the corner
+Options: Three kinds of dump — a hard rim, a soft chip behind the defenceman, and a cross-corner dump; your line should agree in advance
+```
+
 When you dump the puck in, **you chose when it went in and you know where it is going**. You get to arrive at full speed with a head start, and their defenceman has to turn their back on the play to retrieve it.
 
 What that means for you:
@@ -512,6 +530,14 @@ What that means for you:
 There are broadly three kinds of dump — a **hard rim** around the boards, a **soft chip** into the corner behind the defenceman, and a **cross-corner** dump that changes the side of retrieval. Which you use is a [Zone Entries](zone_entries.md) topic, but the forecheck timing differs for each and your line should agree in advance.
 
 ### Off a turnover — you are behind the play
+
+```facts
+Mindset: You are recovering, not hunting — you are disorganised and they are not
+Action: The closest player pressures immediately, whoever they are — two seconds of pressure buys the rest of your team time to sort themselves out
+Priority: Everyone else's first job is to find their layer, not the puck — a second and third chaser is how a lost puck becomes a goal against
+Never: Pinch off a turnover unless the puck is genuinely dying on the wall — you do not have the structure behind you that a dump-in gives you
+Goal: Accept the lower ambition — slow them down and collect it in the neutral zone
+```
 
 When you lose the puck in the offensive zone, **you are disorganised and they are not**. Somebody is out of position, at least one of your players is skating the wrong way, and the opposition has a numbers advantage for about two seconds.
 
@@ -542,11 +568,26 @@ This is the rule that makes the entire forechecking game viable, and most player
 
 ### Why this matters so much to a forechecker
 
+```facts
+Risk: Without the trapezoid a puck-handling goaltender is a third defenceman — no pressure is permitted on them and dump-and-chase becomes nearly pointless
+Key: With it, the corners belong to you: their defenceman has to go and get it, turning their back to a forechecker arriving at speed
+Goal: That exchange is the whole engine of modern forechecking
+```
+
 Without the trapezoid, a puck-handling goaltender is a third defenceman. They stand in the corner, collect the dump-in with no forechecking pressure permitted on them, and hand it to a defenceman who is already facing up ice. Dump-and-chase becomes nearly pointless.
 
 With the trapezoid, **the corners belong to you**. Their defenceman has to go and get it, turning their back to a forechecker arriving at speed. That is the whole engine of modern forechecking.
 
 ### How to aim your dump-ins to exploit it
+
+```facts
+Targets: Dump into the corners — the "soft" areas the goalie cannot legally touch
+Never: Dump straight down the middle behind the net — that is inside the trapezoid, exactly where the goalie is allowed to play it and will be waiting
+Technique: A rim that dies in the corner is the highest-value dump there is — a defenceman must skate all the way over for it, under pressure, facing the boards
+Options: A cross-corner dump forces the retrieval on the far side from where their defencemen are set up, adding a second or two of travel
+Read: Watch the goalie's stick side — many are far better on their forehand, so dumping to the backhand buys time even inside the trapezoid
+Action: In a league with no trapezoid, carry it in, dump where the goalie must leave the net entirely, or forecheck the outlet instead of the retrieval
+```
 
 - **Dump into the corners, not straight behind the net.** Directly behind the net is inside the trapezoid — that is exactly where the goalie is allowed to play it and where they will be waiting. The corners are the "soft" areas the goalie cannot legally touch.
 - **A rim that dies in the corner is unretrievable by their goalie.** A defenceman has to skate all the way over for it, under pressure, facing the boards. This is the highest-value dump there is.
@@ -584,6 +625,14 @@ This is the coach's decision, but you should understand the logic, because you w
 
 #### The one row coaches genuinely disagree on: facing an elite puck-mover
 
+```facts
+Read: Pressure (2-1-2) if your forwards are fast and fit, or you are chasing the game — deny the time and the skill never gets used
+Read: Contain (1-2-2 or 1-3-1) if you cannot be confident of arriving first, your forwards are tired, or you are protecting a lead
+Risk: Pressure gives an elite puck-mover exactly what they want — a committed forechecker and space behind them
+Key: The tiebreaker is not the opponent, it is you — pressure only beats a skilled passer if you actually arrive before the pass
+Action: Ask which your bench wants, because the two produce opposite F1 routes
+```
+
 This is worth spelling out, because you will be told both things by different coaches and both are defensible. **[Neutral Zone Systems](neutral_zone_systems.md) carries the same split, worded the same way.**
 
 - **The case for pressuring (2-1-2).** A defenceman who can pass is dangerous because of the *time* they get. Deny the time and the skill never gets used — you force the puck out early, before their forwards have read the play. This is the answer if your forwards are fast and fit, and it is the usual choice when you are chasing the game.
@@ -592,6 +641,15 @@ This is worth spelling out, because you will be told both things by different co
 **The tiebreaker is not the opponent — it is you.** Pressure only beats a skilled passer if you actually arrive before the pass. If you cannot, containment is not the cowardly option; it is the only one that works. Ask which your bench wants, because the two produce opposite F1 routes.
 
 ### At rec level: simpler is better
+
+```facts
+Key: Run the forecheck everybody actually remembers at 10:45pm on a Tuesday
+Convention: A 1-2-2 is usually the right default for your league — a recommendation for rec hockey, not a claim about what most teams play
+Convention: The house default throughout is a 2-1-2 because the position documents are written around it; run it if your team can sustain it
+Action: Agree only that "one goes, one supports, one stays high" and you have most of the benefit of a real system
+Never: Send both defencemen unless the bench has explicitly called an all-out press — that is where most rec-league odd-man rushes come from
+Mindset: An aggressive forecheck is a conditioning decision as much as a tactical one
+```
 
 If you play beer league or adult rec, the honest answer to "which forecheck should we run?" is **the one everybody actually remembers at 10:45pm on a Tuesday.**
 
@@ -623,6 +681,15 @@ You will spend as much time breaking a forecheck as running one. Recognising whi
 **One more tell, one pass later: what happens after a D-to-D pass?** If a new forechecker immediately attacks the receiving defenceman, they are running a rotating aggressive system and D-to-D will not save you. If the whole shape simply shifts across and holds its distance, you are facing containment and D-to-D is a free reset you can use repeatedly.
 
 ### What to do about each
+
+```facts
+Action: Against an aggressive forecheck, move the puck early — before pressure arrives, not after
+Options: Reverse against an over-committed F1, rim against a sealing one
+Targets: Your winger should come underneath the pressure to receive, not stand still on the wall
+Action: Against containment, use D-to-D and controlled regroups to make the wall shift, then chip past the line and race for it
+Options: Bank passes off the boards to teammates who have already got behind the line
+Never: Skate into the middle of three players — the one thing that never works
+```
 
 - **Against an aggressive forecheck:** move the puck early — before pressure arrives, not after. Use the reverse against an over-committed F1 and the rim against a sealing one. Attack the space behind their pinching defencemen; a rim or a chip that gets past the point is worth more than a pretty pass. Your winger should be coming *underneath* the pressure to receive, not standing still on the wall.
 - **Against a containment forecheck or trap:** stop trying to force it. Use D-to-D and controlled regroups to make the wall shift, chip the puck past the line of players and race for it, and use bank passes off the boards to teammates who have already got behind the line. The one thing that never works is skating into the middle of three players.

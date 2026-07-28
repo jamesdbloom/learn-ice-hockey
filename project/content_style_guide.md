@@ -176,14 +176,27 @@ Never: Carry through the slot — skate behind the net to the other side instead
   in the positional documents are one-sentence containers; a block there
   restates its own heading. Where a section has no subsections and is itself the
   unit of teaching, `##` is right.
-- **3–6 facts, up to 8 where the section earns it.** If a cap would force out a
-  rulebook fact, the cap is wrong. If the section needs more than 8, it is
-  probably two sections.
-- **`## Common Mistakes` and `## Key Takeaways` get no block.** They are already
-  extraction layers, and a third restatement is one more place for a correction
-  to fail to reach.
-- **One line per fact.** A terse imperative, not a sentence of prose. If it needs
-  a subordinate clause to be true, it belongs in the body.
+- **3–6 coaching facts, 8 at most.** More than 8 and the section is probably two
+  sections. **`Rule:` facts do not count against that cap** — a cap must never
+  evict a rulebook fact, so the cap governs how much *coaching* content a block
+  holds. No block may exceed 11 facts in total.
+- **No block on a section that is itself already an extraction layer.**
+  `## Common Mistakes` and `## Key Takeaways` always; also any section that is a
+  bulleted recap of the subsections above it, whatever it is called. A third
+  restatement is one more place for a correction to fail to reach.
+- **No block on a `##` that is a one-line container** above its subsections — it
+  would restate its own heading. A `##` *may* carry one where its own body holds
+  teaching that no subsection covers.
+- **One line per fact, and terse.** 200 characters at the outside. `Rule:` and
+  `Convention:` may run to 300, because a citation and a hedge are both
+  mandatory and both cost words. Past that it is prose: put it in the body.
+  **Where a fact runs long, split it into two complete facts rather than
+  trimming it** — under pressure the thing that gets trimmed is always the
+  caveat, and the caveat is the reason the corpus is trustworthy.
+
+`scripts/check_facts.py` enforces all of the above, plus the closed label set
+and the `Rule:`-must-cite requirement. It cannot check the one that matters
+most — that a fact is traceable to its own section — which needs a reader.
 
 ### The labels
 

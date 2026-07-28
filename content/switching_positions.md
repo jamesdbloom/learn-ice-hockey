@@ -360,6 +360,15 @@ Action: Tell your linemates you are new to the position — thirty seconds befor
 
 ### If you are a parent
 
+```facts
+Convention: Many programmes deliberately rotate young players through positions so nobody specialises early
+Key: USA Hockey's Parent Handbook 2025-26 recommends an 8U experience with "no full-time goalies", and says playing multiple sports is encouraged
+Key: A coach rotating your eight-year-old through the net and through defence is following the model, not experimenting on your child
+Mindset: Treat a move as information about the team, not a verdict on your child
+Action: Let them ask the coach the specific question themselves — it is a more valuable skill than the position is
+Key: Beyond that one recommendation the published guidance runs out; registration, programmes and age classifications are owned by Getting Started
+```
+
 Youth players get moved constantly, and at younger ages many programmes deliberately rotate players through positions so nobody specialises early. **That last part is not just custom — it is the governing body's own recommendation at the youngest age group.** USA Hockey's *Parent Handbook 2025-26* states that the 8U experience it recommends *"includes no full-time goalies, 7-9 players per team, station-based practices and cross-ice games to maximize fun, puck touches and skill development for every player"*, and on the same page that *"playing multiple sports is encouraged."* A coach rotating your eight-year-old through the net and through defence is following the model, not experimenting on your child.
 
 Beyond that specific recommendation the published guidance runs out — see the note at the foot of this document. Treat a move as information about the team, not a verdict on your child, and let them ask the coach the specific question themselves; it is a more valuable skill than the position is. The registration, programme and age-classification background sits in [Getting Started](getting_started.md), which owns it.
