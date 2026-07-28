@@ -75,8 +75,8 @@ Cache headers to set at the distribution (not in this repo):
 | `/_astro/*` | 1 year, immutable — content-hashed filenames |
 | `/audio/*` | 1 year |
 
-Before going live, set `site:` in `astro.config.mjs` to the real domain — canonical URLs, Open
-Graph tags and `/sitemap.xml` are all built from it. It is currently `https://example.invalid`.
+`site:` in `astro.config.mjs` is set to `https://learn-ice-hockey.com` — canonical URLs, Open
+Graph tags and `/sitemap.xml` are all built from it. Change it there if the domain ever changes.
 
 ---
 

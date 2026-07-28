@@ -23,8 +23,8 @@ const knownIds = Object.keys(meta.docs);
 
 export default defineConfig({
   // Canonical URLs, Open Graph tags and the sitemap are built from this.
-  // Set it to the real domain once decision D1 in the build spec is made.
-  site: 'https://example.invalid',
+  // Decision D1 in the build spec: learn-ice-hockey.com.
+  site: 'https://learn-ice-hockey.com',
   trailingSlash: 'always',
   build: { format: 'directory' },
 

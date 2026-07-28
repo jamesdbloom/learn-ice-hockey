@@ -247,7 +247,7 @@ Two things to know before the first apply:
 - **The Terraform state backend has to be bootstrapped by hand once.** A state backend cannot provision itself.
 - **CI deploys via GitHub Actions OIDC role assumption — there are no long-lived AWS keys in GitHub.** The trust policy is scoped to this repository and branch.
 
-Before going live, set `site:` in `site/astro.config.mjs` to the real domain; canonical URLs, Open Graph tags and `/sitemap.xml` are all built from it, and it currently points at `https://example.invalid`.
+`site:` in `site/astro.config.mjs` is set to `https://learn-ice-hockey.com` — canonical URLs, Open Graph tags and `/sitemap.xml` are all built from it. Change it there if the domain ever changes.
 
 Cache behaviour, cost estimates and the full infrastructure plan are in [`project/site_build_specification.md`](project/site_build_specification.md) §5.
 
