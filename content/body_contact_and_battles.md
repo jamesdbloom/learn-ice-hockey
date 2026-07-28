@@ -21,11 +21,27 @@ Before you read another word, find out which category your league falls into. Ge
 
 ### The two categories
 
+```facts
+Key: Body contact and body checking are not the same thing — one is legal everywhere, the other is not
+Rule: Hockey Canada defines body contact as incidental contact of two opposing players pursuing the puck in the same direction — no penalty
+Rule: USA Hockey defines a body check as intentional physical contact by a skater to an opponent in control of the puck
+Rule: Hockey Canada's mechanical test for a check — opposite-directional force, leaving your skating lane, or extending an arm, shoulder or hip after angling
+Key: Body contact is legal in every league at every age; body checking is legal only in specific classifications
+```
+
 **Body contact** is incidental or positional contact between two players who are both playing the puck — leaning on each other, rubbing shoulders as you skate the same direction, boxing someone out at the net front, sealing a player off along the wall. Hockey Canada's rulebook defines body contact as "incidental contact of two opposing players in pursuit of the puck on the ice in the same direction" and states plainly that no penalty is assessed for it. **Body contact is legal in every league, at every age, in every division.**
 
 **Body checking** is a deliberate act: you use your body to separate an opponent from the puck. USA Hockey defines a body check as "intentional physical contact, from the front, diagonally from the front or straight from the side, by a skater to an opponent who is in control of the puck." Hockey Canada adds the mechanical test — body checking occurs "when a player makes deliberate contact with an opposing player with opposite-directional force, when a player leaves their skating lane to make contact, or when a player extends an arm, shoulder, or hip after angling an opponent." **Body checking is legal only in specific classifications.**
 
 ### Where body checking is and is not permitted
+
+```facts
+Rule: Body checking is banned at 12U and below, in all girls'/women's classifications, and in all non-check adult classifications (USA Hockey Rule 604(a))
+Rule: Hockey Canada bans body checking at U13 and below and throughout female hockey (Hockey Canada Rule 7.3)
+Rule: When a checking team plays a non-checking team, body checking is prohibited outright (USA Hockey Rule 604(b))
+Never: Assume your league permits checking — a local governing body can ban it in any classification, and adult leagues in checking countries very often are non-check
+Key: "Non-check" does not mean "non-contact" — USA Hockey says a Competitive Contact game can be very physical
+```
 
 | League / level | Body checking? | Source |
 |---|---|---|
@@ -49,6 +65,15 @@ Three things that catch people out:
 
 ### Women's hockey — the nuance that is usually got wrong
 
+```facts
+Key: "Women's hockey has no hitting" is too blunt — the answer depends on which book you are under
+Rule: USA Hockey and Hockey Canada prohibit body checking in all girls'/women's classifications
+Rule: IIHF women's rules allow bodychecking where there is clear intention of playing the puck (IIHF Rule 101.1) — two players may push and lean into each other
+Rule: The PWHL permits angling with the body to separate an opponent from the puck (PWHL Rule 52.1)
+Never: Step or glide into an opponent, or move into a puck carrier trying to avoid you — that is an illegal hit
+Rule: IIHF women's rules forbid using the boards to eliminate, push or pin an opponent (IIHF Rule 101.1)
+```
+
 The common statement "women's hockey has no hitting" is too blunt. What is accurate:
 
 - **USA Hockey and Hockey Canada prohibit body checking in all girls'/women's classifications.** That part is simple and absolute.
@@ -58,6 +83,12 @@ The common statement "women's hockey has no hitting" is too blunt. What is accur
 In practice, the women's-game standard is very close to the standard for **legal angling everywhere** — which is the subject of the next section, and the most useful skill in this document.
 
 ### What this means for how you read the rest of this document
+
+```facts
+Key: Everything here applies in every league — angling, stick checks, body position, receiving a hit safely, battles, shot blocking
+Priority: The single exception is Section 5, delivering a legal body check, which applies only if your league permits checking
+Never: Treat anything here as a licence to hit in a league that does not allow it
+```
 
 Everything here applies in **every league, including yours** — angling, stick checks, body position, receiving a hit safely, board and corner and net-front battles, loose-puck races, shot blocking and staying out of the box. The single exception is the section on **delivering a legal body check**, which applies only if your league permits checking. Nothing in this document is a licence to hit in a league that does not allow it.
 
@@ -73,6 +104,15 @@ This is how good defenders actually take the puck. Not by hitting people.
 
 ### The four things you are managing
 
+```facts
+Action: Skate at the ice they want, not at the player — take away their good ice and force them to bad ice
+Position: Approach on an angle that leaves your momentum heading back toward your own net, not sideways across the ice
+Technique: Arrive under control — slow your feet as the gap shrinks, knees bent so you can still change direction
+Never: Cross over as you close — a crossover commits your weight, and a good attacker cuts back against it
+Technique: Stick on the ice in a sweeping manner, blade covering the inside lane while your body covers the outside
+Goal: A gap too small for the puck carrier to cut inside
+```
+
 **1. Your route, not their route.** Skate at the ice they want, not at the player. If they are trying to get to the middle, your line takes the middle away and leaves them the wall. Coaches call the middle **good ice** and the outside **bad ice**; the whole aim is to make bad ice the only ice available. Seth Appert, head coach at USA Hockey's National Team Development Program, frames the objective as "to take away an opponent's good ice and force them to bad ice."
 
 **2. Momentum back toward your own net.** Approach on an angle that leaves you travelling *back* toward the goal you are defending, not sideways across the ice. Appert: "When you're skating to take away time and space from your opponent, one thing you need to have for the proper angle is momentum back toward your net." The reason is simple — if they get rid of the puck, you are already going the right way and you stay above them (between them and your net). If you angled flat across the ice and they beat you, you are now chasing.
@@ -84,6 +124,14 @@ This is how good defenders actually take the puck. Not by hitting people.
 **4. Stick on the ice, blade in the passing lane.** Appert again: "you want your stick on the ice in a sweeping manner and protecting good ice." Your stick covers the inside — the lane back to the middle — while your body covers the outside. At the moment of contact, "if your opponent still has the puck, you want your stick on the puck."
 
 ### Where the angle ends
+
+```facts
+Action: In a non-checking league, end the angle with a seal — take away the last of their space and arrive stick-on-puck
+Key: Both leaning, both playing the puck, both going the same direction is legal competitive contact
+Action: In a checking league, the same angle ends with a rub-out or a check under the Section 5 rules
+Priority: The angle comes first, the contact is the last step
+Never: Throw a hit without an angle — a hit from bad position is where most penalties come from
+```
 
 In a **non-checking league**, the angle ends with a seal: your body position takes away the last of their space, you arrive stick-on-puck, and you either take it or force a dump. Contact happens — you are both leaning, both playing the puck, both going the same direction — and that is legal competitive contact.
 
@@ -105,6 +153,14 @@ Read that second one carefully. Chopping *at their stick* is still slashing if i
 
 ### The poke check
 
+```facts
+Technique: A short, straight jab of the blade at the puck, one hand or two, from a controlled distance
+Read: Use it when you are square to a carrier with the puck out in front — receiving, looking up, or beginning a deke
+Technique: Top hand on the knob, extend from the shoulder — do not lunge with your whole body
+Action: Poke, recover, stay skating
+Never: Poke from too far away — if your blade cannot reach the puck without lunging, you are too far away
+```
+
 **What it is:** A short, straight jab of the blade at the puck, one hand or two, from a controlled distance.
 
 **When it works:** When you are square to the puck carrier and they have the puck out in front of them — receiving a pass, looking up, or beginning a deke. It is also the natural finish to an angle, when the carrier has run out of room.
@@ -114,6 +170,16 @@ Read that second one carefully. Chopping *at their stick* is still slashing if i
 **The mistake:** Poking from too far away, missing, and being beaten. If your blade cannot reach the puck without you lunging, you are too far away.
 
 ### The stick lift
+
+```facts
+Technique: Blade under their shaft low, right above their bottom hand — lift crisply up, not sideways
+Action: Step through as their blade comes off the ice and take the puck
+Read: Lift late — as they are about to shoot, receive or move the puck, not while they are just carrying it
+Position: Works from behind and beside an opponent, at the net front, in a board battle and on a backcheck
+Rule: Stick-to-stick contact alone is not to be penalised as hooking (NHL Rule 55.1)
+Never: Lift the stick of a player who does not have the puck — that is interference
+Never: Lift under the hands, or yank the stick down or across — slashing, roughing, or holding the stick
+```
 
 **What it is:** You place your blade under the shaft of their stick, near the bottom hand, and lift their blade off the ice — then take the puck out from underneath it.
 
@@ -130,6 +196,14 @@ Read that second one carefully. Chopping *at their stick* is still slashing if i
 
 ### The sweep check
 
+```facts
+Technique: A low, wide arc — blade flat, shaft nearly parallel to the ice, sweeping through the puck or the passing lane
+Read: Use it when beaten to the outside, defending a pass across the slot, or covering the pass on a 2-on-1
+Technique: Bottom hand slides down the shaft, get low, sweep through the ice — not through the air
+Never: Sweep at knee or waist height — that is a hook or a slash
+Never: Lean your body after the sweep — sweep with your stick and keep your feet under you
+```
+
 **What it is:** A low, wide arc of your stick across the ice — blade flat, shaft nearly parallel to the ice — sweeping through the puck or the passing lane.
 
 **When it works:** When you are beaten to the outside and reaching across, when you are defending a pass across the slot, or when you are down low and want to take away a lane without committing your body. Defencemen use it on a 2-on-1 to cover the pass while the goalie takes the shooter.
@@ -139,6 +213,13 @@ Read that second one carefully. Chopping *at their stick* is still slashing if i
 **The mistake:** Sweeping with your body leaning after it. Sweep with your stick and keep your feet under you.
 
 ### The press-down (stick press)
+
+```facts
+Technique: Lay your blade or shaft on top of their blade, pinning it to the ice so they cannot shoot, pass or move the puck
+Read: Use it in tight — net front, board battles, faceoff scrambles — when you want the whistle or a teammate to arrive
+Key: The lift takes their blade up so you can take the puck; the press takes it down so they cannot use it
+Never: Press with force, chop down repeatedly, or press on their hands — a press is a hold-and-pin, not a chop
+```
 
 **What it is:** You lay your blade or shaft down on top of their stick blade, pinning it to the ice so they cannot shoot, pass, or move the puck.
 
@@ -160,6 +241,15 @@ USA Hockey codifies the same idea for non-checking play, listing as legal compet
 
 ### What that gives you
 
+```facts
+Action: Take away ice — standing in the place your opponent needs to be is a complete defensive act
+Technique: Box out — inside shoulder ahead of theirs, hips between them and the puck, and hold
+Action: Seal along the wall — occupy the lane out and let the boards do the rest
+Rule: A player who has lost position must skate to gain or re-establish it in order to make a check (NHL Rule 56.1)
+Never: Use your stick to make yourself wider, or your free hand to hold, pull, tug or grab
+Rule: The free hand may fend off an opponent or their stick, but may not hold their stick or body (NHL Rule 56.1)
+```
+
 **Taking away ice.** Standing in the place your opponent needs to be is a complete defensive act. You do not have to touch them. Making a player skate 15 extra feet is often worth more than a hit, because it buys your teammates time to get back.
 
 **Boxing out.** Get your inside shoulder ahead of theirs, put your hips between them and the puck, and hold. This is the basketball rebound principle and it is exactly how you defend the net front and how you win a loose puck in a crowd.
@@ -178,6 +268,14 @@ USA Hockey codifies the same idea for non-checking play, listing as legal compet
 
 ### A body check is the last step of a progression, not the first thing you learn
 
+```facts
+Key: League legality is a floor, not a readiness test
+Technique: The progression is skating, angling, stick checks, contact confidence, body blocking, take out/rub out, solid body checks
+Priority: If you cannot angle, lift a stick cleanly or stay balanced through contact, the missing skill is the step you skipped
+Key: Body play should begin to be taught at 8-and-Under, years before checking is legal
+Priority: A body check is the fourth line of defence after angling, stick checks and body blocks — not the first tool to reach for
+```
+
 League legality is a floor, not a readiness test. USA Hockey's *Introduction To Body Contact* sets out body play as an ordered progression, and a solid body check is step seven of seven:
 
 1. **Skating**
@@ -194,6 +292,16 @@ Two things follow. **For a player:** if you cannot yet angle a puck carrier off 
 
 ### What a legal check is, precisely
 
+```facts
+Goal: To gain possession of the puck — NOT to punish or intimidate an opponent
+Targets: An opponent in control of the puck, hit from the front, diagonally from the front, or straight from the side
+Technique: Trunk only — hips and shoulders. Hands, forearm, stick and elbow are all illegal
+Position: Contact above their knees and at or below their shoulders
+Technique: Start with your stick on the puck — the blade of the player delivering the check must be below the knees (USA Hockey)
+Rule: An illegal body check is intentional contact using overt hip, shoulder, forearm or torso action (USA Hockey Rule 604, Note 1)
+Key: If your stick is up, you are about to commit a cross-check, a high stick or a head-contact penalty
+```
+
 USA Hockey's definition is the most explicit in the sport, so use it as your checklist. Its mirror image is **USA Hockey Rule 604, Note 1**, which defines the illegal version: *"an illegal body check is defined as when a player makes intentional physical contact with the opponent using overt hip, shoulder, forearm or torso action. This includes physically forcing the opponent off the puck and with no effort to legally play the puck."* Everything below is what keeps you on the legal side of that line:
 
 - **Purpose:** to gain possession of the puck — "NOT to punish or intimidate an opponent."
@@ -206,6 +314,17 @@ USA Hockey's definition is the most explicit in the sport, so use it as your che
 That last point is the one that separates a coached player from an amateur. **The check starts with your stick on the puck.** If your stick is up, you are about to commit a cross-check, a high stick, or a head-contact penalty. If your stick is down on the puck, your hands are down, your elbows are down, and your shoulder arrives where it should.
 
 ### Technique
+
+```facts
+Technique: Play the body, not the head — the point of contact is the chest or upper body, square
+Never: Extend the body upward or outward to reach — NHL Rule 48.1 counts that as evidence head contact was avoidable
+Technique: Elbows down, hands down — an extended elbow is elbowing (NHL Rule 45.1) whether or not it injures
+Action: Hit through, not at — skate through the contact with your feet moving so you finish standing over the puck
+Rule: Charging is judged on distance travelled (NHL Rule 42.1); USA Hockey penalises more than two strides, Hockey Canada two or more
+Technique: For an open-ice check the opponent must be one stride away — drive the shoulder into the chest, do not lunge forward
+Never: Check a player who has already passed or shot — the NHL allows a check only immediately following loss of possession
+Never: Hit a player who is turned toward the boards
+```
 
 **Play the body, not the head.** The point of contact is the chest or the upper body, square. Do not extend upward or outward to reach — NHL Rule 48.1 lists "unnecessary extension of the body upward or outward" as evidence that head contact was avoidable, and IIHF Rule 48.1 is blunter still: "There is no clean check to the head or neck."
 
@@ -222,6 +341,16 @@ That last point is the one that separates a coached player from an amateur. **Th
 **Never hit a player who is turned toward the boards.** This is not a technique point, it is the line between hockey and a spinal injury. See below.
 
 ### The four that cause the injuries
+
+```facts
+Never: Check from behind — a major with an automatic game misconduct under NHL Rule 43 and IIHF Rule 43; USA Hockey Rule 608 can reach a match penalty
+Key: The onus is always on the checker — "he turned at the last second" is no defence unless the turn was deliberate
+Never: Make contact in the head, face or neck area, regardless of size differential (USA Hockey Rule 620; NHL Rule 48.1)
+Never: Build speed into a check to punish rather than to win the puck — USA Hockey more than two strides, Hockey Canada two or more
+Rule: Boarding is checking or pushing a defenceless opponent so they hit the boards violently or dangerously (NHL Rule 41.1)
+Never: Hit a player playing an obvious icing or offside puck into the boards — the NHL classes that as boarding
+Never: Arrive as the third man and hit someone already engaged in a battle — USA Hockey deems both players defenceless
+```
 
 These are not ordinary penalties. Treat them as things you simply do not do.
 
@@ -243,6 +372,13 @@ These are not ordinary penalties. Treat them as things you simply do not do.
 
 ### Keep your head up. Always. This one rule prevents most of it.
 
+```facts
+Never: Skate with your head down — not "look up sometimes", never
+Key: You cannot brace for something you cannot see; a body prepared for contact absorbs it
+Rule: A square check with no upward motion on a player skating head down is not an illegal check to the head (IIHF Rule 48.1)
+Action: Learn to carry the puck without staring at it — it is a stickhandling problem, and it is solved off the ice
+```
+
 Not "look up sometimes." Never skate with your head down. Two separate reasons, both serious:
 
 1. **You cannot brace for something you cannot see.** A body prepared for contact absorbs it. A body that is surprised does not.
@@ -251,6 +387,17 @@ Not "look up sometimes." Never skate with your head down. Two separate reasons, 
 Learning to carry the puck without staring at it is a stickhandling problem, and it is solved off the ice. See [Puck Handling](puck_handling.md).
 
 ### Do not turn your back to an oncoming checker near the boards
+
+```facts
+Never: Turn your back to an oncoming checker near the boards — it gives them your spine and puts your head first into the wall
+Key: A chin tucked to the chest straightens the cervical spine; the head stops, the body keeps going, and vertebrae fracture
+Risk: It can occur at walking speed — no speed is slow enough to make a head-down collision with the wall safe
+Action: Case 1, best of all — arrive on an angle, not perpendicular
+Action: Case 2, contact coming — skates parallel to the boards, forearm and upper thigh to the wall, knees bent, lean into the impact
+Action: Case 3, already facing the wall — spread the load, stick and gloves up on the glass, arms out as a shock absorber
+Never: Take the wall on the tip of your shoulder, and never crouch or duck to avoid a check
+Key: Head up, chin off your chest — hit the boards with an arm, a leg or anything but your head first
+```
 
 This is the single behaviour most associated with catastrophic injury in hockey, and it is worth understanding why it is so tempting: when contact is coming and you are facing the wall, turning away feels like protecting yourself. It is the opposite. Turning gives the checker your back and your unprotected spine, and puts your head first into the boards.
 
@@ -286,12 +433,26 @@ Note the corresponding rule on the other side: you also cannot solve the problem
 
 ### Bracing and absorbing
 
+```facts
+Position: Wide base, knees bent, weight low — an athletic stance rides contact, a stiff upright one gets knocked over
+Action: Meet it, don't wait for it — momentum you generate is momentum that does not go into you
+Position: Chest and shoulder first, hands and stick in front of your body, not out to the side
+Technique: Absorb with your legs — let your knees and hips give rather than taking it all through a locked frame
+```
+
 - **Wide base, knees bent, weight low.** A stiff, upright player gets knocked over. A player in an athletic stance rides the contact.
 - **Meet it, don't wait for it.** Skating into contact with your body prepared and your feet moving costs far less than standing still and being hit. Momentum you generate is momentum that does not go into you.
 - **Chest and shoulder first, hands in front.** Keep your hands and stick in front of your body, not out to the side. This protects you and keeps you able to play the puck the instant contact ends.
 - **Absorb with your legs.** Let your knees and hips give a little rather than taking it all through a locked frame.
 
 ### Protecting yourself along the wall
+
+```facts
+Priority: Arrive first if you possibly can — the player who arrives first controls the geometry of the collision
+Position: Get low and get wide — a low centre of gravity along the boards is very hard to move
+Technique: Forearm and hip to the wall — not the point of your shoulder, and never your back
+Never: Stop and admire the puck — standing still, bent over, back to the play is the posture the checking-from-behind rules describe
+```
 
 When you go to the wall for a puck with a checker arriving:
 
@@ -302,15 +463,39 @@ When you go to the wall for a puck with a checker arriving:
 
 ### Get off the wall
 
+```facts
+Goal: The best protection is not being pinned — avoid the collision entirely and keep possession
+Options: Chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives
+Action: Know what is around you before the puck arrives
+Action: Have a plan for the puck before you get there — a chip, a rim, a reverse, or a spin off the wall
+Key: Players who arrive at the wall with no plan get pinned; players who arrive with a plan get out
+```
+
 The best protection is not being pinned. If you can chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives, you avoid the collision entirely and keep possession.
 
 Two habits make this possible: **know what is around you before the puck arrives** (see [Scanning and Anticipation](scanning_and_anticipation.md)), and **have a plan for the puck before you get there** — a chip, a rim, a reverse, or a spin off the wall. Players who arrive at the wall with no plan get pinned. Players who arrive with a plan get out.
 
 ### Talk
 
+```facts
+Action: Call loud, immediate and specific for a teammate going back with their head down and pressure coming
+Convention: "Time!" means they have space; "Man on!" or their name plus "behind you!" means they do not
+Key: This is the most valuable thing anyone says on a hockey rink
+```
+
 If a teammate is going back for a puck with their head down and pressure coming, the correct call is loud, immediate and specific. "Time!" means you have space. "Man on!" or their name plus "behind you!" means you do not. This is the most valuable thing anyone says on a hockey rink. See [On-Ice Communication](on_ice_communication.md).
 
 ### If it happens anyway — a suspected neck injury on the ice
+
+```facts
+Never: Help the player up — it is the most common and most damaging mistake after a spinal impact
+Action: Call for immediate medical help first
+Read: Symptoms after a spinal impact — pain at the injury, buzzing or tingling in arms or legs, loss of movement, radiating pain
+Action: Ensure adequate airway and breathing, observing the ABCs — Airway, Breathing, Circulation
+Action: Reassure the player, keep them warm, and instruct and immobilise them so they do not move — head and neck especially
+Never: Remove the helmet, or roll or lift the player, unless you are trained and it is required for airway support
+Key: Do not wait for symptoms — CRT6 says assume a possible spinal cord injury in all cases of head injury
+```
 
 Everything above is prevention. This is what to do when prevention has failed, and it is short enough to memorise. **The most common and most damaging mistake is helping the player up.**
 
@@ -335,9 +520,23 @@ A **board battle** is a contest for a puck against the wall, usually between the
 
 ### Arrive first — and arrive with position, not just speed
 
+```facts
+Priority: The player who gets there first decides where the battle happens
+Position: Body between the opponent and the puck at the moment of arrival, with the wall on the far side
+Key: Arriving first with your body in the wrong place is worse than arriving second with it in the right one
+```
+
 The player who gets there first decides where the battle happens. But arriving first with your body in the wrong place is worse than arriving second with it in the right one. What you want at the moment of arrival is your **body between the opponent and the puck**, with the wall on the far side.
 
 ### The wide low base
+
+```facts
+Position: Feet wider than shoulders, knees bent deeply, backside low, chest up
+Key: You cannot be knocked off the puck when your centre of gravity is below your opponent's
+Technique: Generate force with your legs — that is where leverage lives
+Action: Stay mobile — a low wide stance can shuffle, pivot and step out; a stiff-legged stance can only fall over
+Convention: Leverage often beats strength — but not always, and not against a large enough strength gap; coaching consensus, not a measured law
+```
 
 This is the whole technique in three words. Feet wider than shoulders, knees bent deeply, backside low, chest up. From that stance:
 
@@ -349,11 +548,25 @@ This is the whole technique in three words. Feet wider than shoulders, knees ben
 
 ### Using the wall
 
+```facts
+Position: Puck between your skates and the wall, your body on the outside of it
+Technique: Create a little space between you and the boards and use your body to protect that space
+Goal: Halve the directions you can be attacked from — with the wall behind you it is only 180 degrees
+```
+
 The boards are a teammate that never gets tired. Blaine Buterbaugh, assistant hockey director at the Robert Morris University Sports Center, puts it well: "Nobody from outside of the rink is coming to steal your puck... if you can create a little bit of space between you and the boards and use your body to protect that space, you're only worried about 180 degrees, essentially, of people that are trying to steal your puck."
 
 So: put the puck between your skates and the wall, put your body on the outside of it, and you have halved the number of directions you can be attacked from.
 
 ### Working the puck free with your feet
+
+```facts
+Key: In a real battle your stick is tied up and your hands are busy — your feet are free
+Rule: You may kick the puck in all zones; you just cannot score with a distinct kicking motion (NHL Rule 49.2)
+Action: Kick it out with the inside of your skate — back to a supporting teammate, along the wall, or out to your own stick
+Action: Trap it — skates wide with the puck under you means nobody else can have it either
+Technique: Practise this deliberately — almost no amateur does, and it wins pucks every game
+```
 
 This is the part nobody teaches and everybody needs.
 
@@ -366,6 +579,15 @@ In a real board battle your stick is usually tied up, your hands are busy, and t
 Practise this deliberately. Almost no amateur does, and it wins pucks every single game.
 
 ### When to just pin it
+
+```facts
+Read: Pin when you are outnumbered, tangled with an equally stuck opponent, or a turnover here is a chance against
+Action: Pin the puck against the boards with your skate or your body and let the whistle come
+Key: Under pressure, pin it; unpressured, play it — pinning is legal only while the puck is genuinely contested
+Rule: Deliberately freezing the puck to cause a stoppage is a delay-of-game minor (NHL Rule 63.2(i); USA Hockey Rule 610(a))
+Never: Pin because a change is due or you are protecting a lead — that is the delaying purpose both rules describe
+Rule: IIHF women's rules prohibit pinning an opponent along the boards — pin the puck, not the player (IIHF Rule 101.1)
+```
 
 Sometimes you cannot win the battle and neither can they. If you are outnumbered, if you are tangled up with an opponent who is just as stuck as you are, or if a turnover here is a scoring chance against, **pin the puck against the boards with your skate or your body and let the whistle come.** A defensive-zone faceoff is a far better outcome than a turnover in the slot.
 
@@ -386,6 +608,13 @@ Corner battles are board battles with two differences that change everything.
 
 ### They are 2-on-1 by default
 
+```facts
+Key: Two players almost always beat one in a corner — the first only has to occupy the opponent, not beat them
+Action: First man in engages the carrier, takes body position and pins or seals — his job is to make the puck stop moving
+Action: Second man in stays out of the pile and reads where the puck will squirt — he is the one who recovers it
+Never: Dive into the same scrum as your teammate — two tangled players and a third opponent skating away with the puck
+```
+
 The corner is the one place on the ice where support is closest and most reliable. **Two players almost always beat one in a corner** — not because of strength, but because the first player only has to *occupy* the opponent, not beat them. The second player just picks up the loose puck.
 
 This is why the "second man in" is a defined role rather than an accident:
@@ -397,9 +626,24 @@ The commonest amateur error in the corner is two teammates fighting the same opp
 
 ### You have less room and more escape routes to cover
 
+```facts
+Read: Boards on two sides help you seal, but give them the option to spin either way — up the wall or out behind the net
+Action: Angle the carrier so the escape they have is the one you want them to take — toward the wall and up, away from the net
+Never: Leave them an escape back toward the slot
+```
+
 The corner has boards on two sides, which helps you seal a player but also gives them the option to spin either way — up the wall or out behind the net. Angle the puck carrier so that the escape they have is the one you want them to take: **toward the wall and up, away from the net, never back toward the slot.**
 
 ### Whose corner is it?
+
+```facts
+Convention: Whose corner it is is a coaching choice, not a law of hockey — find out which one your team plays
+Convention: Under the house-default low zone collapse, the low corner belongs to the strong-side defenceman with the centre supporting
+Convention: Under a low zone collapse the wingers stay high covering the points and do not come to the corner
+Options: Under man-on-man, a winger follows their check into the corner and you get help low — but the point may be left open
+Key: Two players on different assumptions about who has the corner is the commonest defensive-zone breakdown, and it is not effort
+Key: F1/F2/F3 are roles defined by order of arrival, not by position — the first forward to the puck is F1
+```
 
 **This is a coaching choice, not a law of hockey.** The house default across these documents is a **low zone collapse** (zone-based defensive-zone coverage) with a **2-1-2 forecheck**. Under a low zone collapse, the low corner belongs to the strong-side defenceman with the centre supporting; the wingers stay high covering the points and do **not** come to the corner. Under **man-on-man** coverage, a winger follows their assigned check into the corner and you will get help low — but the point may be left open.
 
@@ -419,6 +663,14 @@ The area on top of the crease is where most goals are scored and most penalties 
 
 ### Attacking the net front
 
+```facts
+Mindset: You have to have a commitment to getting there before you can play there
+Position: In front of the goalie, not beside them — on the shot lane, taking away the goalie's eyes
+Technique: Two hands on your stick, blade on the ice — you are there to tip, to screen and to bury a rebound
+Read: Track the puck while feeling the defender — eyes on the puck, body on the player
+Rule: Screening from outside the crease without contact is legal, but positioning alone can void a goal if it impairs the goalie (NHL Rule 69.1)
+```
+
 - **Get there.** Corbett's first principle is willingness: "You have to have a commitment to getting there before you can play there."
 - **Play in front of the goalie, not beside them.** "If you're going to get to that blue paint, you need to be able to play right in front of the goalie, and be able to take away the goalie's eyes... you need to play on the shot lane, because the goalie is finding that shot lane."
 - **Two hands on your stick, blade on the ice.** You are there to tip, to screen, and to bury a rebound. All three require your blade available.
@@ -426,6 +678,15 @@ The area on top of the crease is where most goals are scored and most penalties 
 - **Screening is normally legal.** Standing outside the crease in the goalie's sightline without contact is not goaltender interference. What is illegal is impairing the goalie's ability to make a save inside the crease — and, under Rule 69.1, impairing his ability to move freely or defend the goal *"either by his positioning or by contact"*, which means positioning alone can void a goal. See [Offensive Zone Play](offensive_zone_play.md).
 
 ### Defending the net front
+
+```facts
+Priority: Body position first — inside shoulder ahead of theirs, hips between them and the puck, box out
+Action: Tie sticks, don't cross-check — a stick lift or a light press removes the tip and the rebound and costs you nothing
+Technique: Work under their arms — shoulder beneath their armpit, legs driving, walking them out sideways
+Convention: Leverage over strength — the lower player usually wins, though not always and not against a large enough strength gap
+Read: Eyes on the puck, body on the player — you cannot beat them to a rebound you did not see leave the stick
+Never: Back into your own goalie — being pushed into the crease screens your netminder and turns saves into goals
+```
 
 The order of operations, and the order matters:
 
@@ -442,6 +703,15 @@ The order of operations, and the order matters:
 **6. Do not back into your own goalie.** Being pushed into the crease screens your own netminder and turns saves into goals — you have done the attacker's job for them. See [Goaltender](positions/goaltender.md).
 
 ### The cross-check problem
+
+```facts
+Rule: Cross-checking is using the shaft of the stick between the two hands to forcefully check an opponent (NHL Rule 59.1)
+Never: Believe a blade on the ice makes a shaft shove legal — that wording is USA Hockey Rule 609 only, not NHL, IIHF or Hockey Canada
+Rule: USA Hockey's enforcement standard gives the net-front shaft-and-arms shove to create space as its first example (Rule 609)
+Key: The call data makes cross-checking seventh at the net front and no likelier there than league-wide — the emphasis is real, the frequency ordinary
+Action: Control the stick instead of the body — a stick lift or a tie-up achieves what a cross-check is trying to achieve, legally
+Read: Establish position early and quietly; engage physically when the shot comes, not before
+```
 
 **Repeated cross-checking to the back is the penalty officials are specifically told to look for at the net front.** USA Hockey's cross-checking enforcement standard — **Rule 609**, which defines cross-checking as "using the shaft of the stick between the two hands to forcefully check an opponent with no portion of the stick on the ice" — gives exactly this scenario as its first example: "When a player in front of the goal uses the shaft of the stick and extension of the arms to contact an opponent in a dangerous manner to create space."
 
@@ -477,6 +747,14 @@ A **50-50 puck** is any puck that neither team possesses and both can reach — 
 
 ### Arrive with body position, not just with speed
 
+```facts
+Position: Skate the inside lane, between the opponent and the puck — half a step behind but inside usually wins it
+Rule: You are entitled to the ice you occupy while maintaining skating speed and body position (USA Hockey; NHL Rule 56.1)
+Technique: Approach on an arc so you arrive already turned, and turn your hips so your backside is between opponent and puck
+Position: Get low and wide, feet outside your shoulders, and keep your feet moving — a stationary player on the wall gets pinned
+Never: Use a stick, arm, hand or skates to hold or obstruct — the free hand may fend off, never hold, pull, tug or grab
+```
+
 Winning the race is not the same as winning the puck. The player who arrives half a step behind but *on the inside*, between the opponent and the puck, usually ends up with it.
 
 The rules are explicit that this is legal. USA Hockey: "A skater is entitled to the ice they occupy so long as they maintain their skating speed and body position between an opponent and the loose puck," and "A skater can use their body position while maintaining their skating lane, to force an opponent to take a less direct route to the puck, so long as they do not use a hand or arm to hold or block the opponent." The NHL's interference rule says the same thing in different words: you are "always entitled to use [your] body position to lengthen an opponent's path to the puck."
@@ -489,6 +767,15 @@ The mechanics of the arrival itself, in the order they happen: **approach on an 
 
 ### First to arrive, last to commit
 
+```facts
+Convention: Get there early, then decide late — a coaching heuristic in common use, not a law, with no named originator
+Action: Arrive early, slow into a wide balanced stance, then read the pressure and chip, reverse, protect or turn up ice
+Never: Arrive at speed already committed — a full-speed reach, a spin or a blind bank gives away all your options
+Risk: Winning the race and immediately swinging at the puck turns a won race into a turnover
+Read: The limit — in your own slot, or with an opponent bearing down on you, there is no beat to wait; get it out
+Key: Upright, balanced and looking around is far harder to hurt than stretched out at full extension with your head down
+```
+
 The idea is this: **get there early, then decide late.** A player who arrives at speed with their body already committed to one play — a full-speed reach for the puck, a spin, a blind bank — has given away all their options and is easy to defend. A player who arrives early, slows into a wide balanced stance, and *then* reads the pressure can chip, reverse, protect, or turn up ice as the situation dictates.
 
 The failure it is designed to prevent is specific: a player wins the race, immediately swings at the puck, misses it or shoots it into a shin pad, and turns a won race into a turnover. Arriving early and then taking body position and **waiting a beat** is very often the better play, because your support is still arriving and every tenth of a second improves your options. Its limit is equally specific: in your own slot, or with an opponent bearing down on you, there is no beat to wait. Get it out.
@@ -499,6 +786,13 @@ This is also the safest way to arrive. A player who is upright, balanced and loo
 
 ### Protecting yourself on the boards
 
+```facts
+Action: Decide before you get there whether you are taking the puck off the wall, chipping it along, or protecting it
+Never: Arrive bent over with your back to the play — get side-on
+Rule: Unnecessary contact into the boards with a player playing an obvious icing or offside puck is boarding (NHL)
+Technique: Do not rely on that protection — get your skates parallel to the wall and take the contact on your forearm and hip
+```
+
 Everything in Section 6 applies at exactly this moment, because puck races to the wall are where checking-from-behind and boarding injuries happen. The specific points:
 
 - **Decide before you get there** whether you are taking the puck off the wall, chipping it along, or protecting it. Arrive with the decision made.
@@ -506,6 +800,14 @@ Everything in Section 6 applies at exactly this moment, because puck races to th
 - **Remember the icing rule protection.** The NHL specifically classes unnecessary contact with a player playing an obvious icing or offside puck, resulting in impact with the boards, as **boarding**. That protects you — but do not rely on it. Get your skates parallel to the wall and take the contact on your forearm and hip.
 
 ### Chipping and the escape
+
+```facts
+Technique: The one-touch — arrive and immediately put the puck somewhere useful
+Options: Chip it past the defender to your own speed, bank it off the wall to a teammate, or rim it around
+Goal: Convert a coin flip into a possession, and take yourself out of the collision
+Read: Rim when a checker is sealing you against the wall; reverse when one has over-committed and skated past you
+Action: Pick by the checker's momentum, and pick before you arrive
+```
 
 The highest-value skill in a 50-50 race is the one-touch: arriving and immediately putting the puck somewhere useful — chipped past the defender to your own speed, banked off the wall to a teammate, or rimmed around. It converts a coin flip into a possession, and it takes you out of the collision.
 
@@ -518,6 +820,16 @@ The highest-value skill in a 50-50 race is the one-touch: arriving and immediate
 Blocking shots is genuinely useful and genuinely dangerous. Both facts matter.
 
 ### Technique
+
+```facts
+Position: Get close — the closer to the shooter, the more net you take away and the less the puck can accelerate or deviate
+Technique: Stay on your feet where you can — a standing block leaves you in the play
+Technique: Present your padded surfaces — shin guards front-on, thigh, hip, body square to the puck
+Position: Head up and out of the shot lane, hands tucked behind your shin pads with the backs of the gloves out, feet on the ice
+Never: Turn your back, turn sideways, or lift a leg — all three expose what armour does not cover and blind you to the puck
+Never: Lead with your stick — a puck deflected off an outstretched blade goes upward, often into your own face
+Never: Lunge — close with your feet, because a slide that misses is a defender out of the play
+```
 
 **Get close.** The closer you are to the shooter, the more net you take away and the less time the puck has to accelerate or change direction. Blocking from ten feet away is far safer and more effective than blocking from three feet in front of your own goalie, where a deflection is a goal.
 
@@ -532,6 +844,16 @@ Blocking shots is genuinely useful and genuinely dangerous. Both facts matter.
 **Close with your feet, not by lunging.** A lunge is a slide, and a slide that misses is a defender out of the play with no way to recover.
 
 ### When *not* to block
+
+```facts
+Never: Block on a 2-on-1 — your job as the lone defender is the pass, and the goalie has the shooter
+Never: Block from a screening position — a deflection off a body the goalie could not see is how soft goals are conceded
+Priority: Either commit fully and take the shot, or get out of the lane — never stand half in the way with your eyes closed
+Never: Dive to block a low-danger point shot while an unmarked opponent stands at the goalmouth
+Read: Stay on your feet until the puck is actually released — committing early is what a shot fake is designed to draw
+Convention: How much your team blocks is a coaching choice — find out which yours plays, and ask your goalie what they want
+Key: Equipment matters here more than anywhere — shin guards that cover shin and ankle, gloves not worn through in the palm
+```
 
 This is the part that gets skipped, and it is where blocking costs goals.
 
@@ -550,6 +872,15 @@ This is the part that gets skipped, and it is where blocking costs goals.
 
 ### The discipline point
 
+```facts
+Key: Most amateur penalties are not dirty — they are late, frustrated or lazy
+Rule: Illegal means are acts that establish, maintain or restore body position other than by skating (NHL Rule 56.1)
+Action: If you lost position, the only legal fix is your feet — skate more, reach less
+Never: Retaliate after the whistle — retaliating converts one penalty into two
+Rule: A player who does not retaliate after being struck shall not be penalised for fighting (USA Hockey Rule 615(a))
+Convention: That the retaliator is the one who gets caught is dressing-room lore — the written standard aims the extra penalty at the instigator
+```
+
 Here is the uncomfortable truth about amateur penalties: **most of them are not dirty, they are late, frustrated or lazy.**
 
 - **Late** — you were beaten, so you reached. Hooking, holding, tripping, and interference are overwhelmingly penalties of a player who has lost position. NHL Rule 56.1 names the mechanism precisely: "Illegal means are acts which allow a player or goalkeeper to establish, maintain or restore body position other than by skating." If you lost position, the only legal fix is your feet.
@@ -559,6 +890,16 @@ Here is the uncomfortable truth about amateur penalties: **most of them are not 
 The fix is unglamorous and entirely within your control: **skate more, reach less.** The coaching claim that goes with it — that better conditioning reduces your penalty minutes, because a tired player reaches — is **reasoning, not a measured effect**; no study links conditioning to penalties taken. See [Conditioning and Recovery](conditioning_and_recovery.md) and [Mental Game](mental_game.md).
 
 ### What actually gets called
+
+```facts
+Rule: Stick-to-stick contact alone is not hooking; the shaft above your upper hand used to hold or hook is an automatic minor (NHL Rule 55.1)
+Rule: Slashing is a forceful chop on the body, on their stick, or near their hands that is not an attempt to play the puck (NHL Rule 61.1)
+Rule: Holding is using the free hand to hold, pull, tug or grab — you may fend off, but not hold their stick or body (NHL Rule 56.1)
+Rule: Cross-checking has no blade-on-ice element outside USA Hockey Rule 609 — it is absent from NHL and IIHF Rule 59.1
+Rule: High-sticking tests contact above the shoulders, provided the shoulders are at waist level or higher (NHL Rule 60.1, rewritten 2025-26)
+Rule: Tripping requires no fall under any book — NHL Rule 57.1 and USA Hockey Rule 639 both reach the act itself
+Rule: Charging thresholds differ — USA Hockey more than two strides, Hockey Canada two or more, the NHL no stated number
+```
 
 | Infraction | The test the official applies |
 |---|---|
@@ -574,6 +915,15 @@ The fix is unglamorous and entirely within your control: **skate more, reach les
 
 ### The habits that keep you out of the box
 
+```facts
+Action: Stick on the ice, blade on the puck — almost every stick penalty starts with the blade off the ice
+Action: Move your feet instead of reaching — the single biggest driver of penalty minutes in amateur hockey
+Priority: Take the puck, not the player — if your first thought is the body, your stick is somewhere it should not be
+Never: Stay in a scrum — play the whistle, then stop; retaliating turns their penalty into two
+Never: Take a penalty out of frustration at a referee — it is the cheapest goal you will ever give up
+Action: Know your league's standard — watch how the first five minutes are being called and adjust
+```
+
 - **Stick on the ice, blade on the puck.** Almost every stick penalty starts with the blade off the ice.
 - **Move your feet instead of reaching.** The single biggest driver of penalty minutes in amateur hockey.
 - **Take the puck, not the player.** In a battle, aim for the puck. If your first thought is the body, your stick is somewhere it should not be.
@@ -582,6 +932,16 @@ The fix is unglamorous and entirely within your control: **skate more, reach les
 - **Know your league's standard.** Beer leagues, youth associations and international play call the same rulebook very differently. Watch how the first five minutes are being called and adjust.
 
 ### Fighting — and why the amateur rules are much harsher than the NHL's
+
+```facts
+Rule: Fighting in the NHL is a five-minute major (Rule 46.14), with an instigator minor (46.11) or an aggressor major plus game misconduct (46.2)
+Rule: The third man into an altercation faces a game misconduct at the referee's discretion (NHL Rule 46.16)
+Rule: USA Hockey counts an attempted punch, contact or not, as fighting — a major plus a game misconduct (Rule 615)
+Rule: A player who does not retaliate after being struck shall not be penalised for fighting (USA Hockey Rule 615(a))
+Never: Drop your stick or remove your gloves in an altercation you were not part of — a minor under USA Hockey
+Key: Rec and beer leagues are commonly harsher again — read your own league's sheet, the only version that binds you
+Action: If a scrum starts, hands down, gloves on — skate away and let the officials sort it out
+```
 
 This document is about legal contact, and fighting is not it. But it belongs here, because the moment a battle turns into a shove-fest the rules that apply are ones most players know only from watching the NHL — and **they are not the rules you play under.**
 
