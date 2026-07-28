@@ -28,6 +28,49 @@ with no default.
 
 ---
 
+## Local environment — one file, outside the repo
+
+Everything account-specific lives in a single file in your home directory,
+described by [`env.example`](env.example) and configured nowhere in this tree:
+
+```sh
+mkdir -p ~/.config/ice-hockey
+cp infra/env.example ~/.config/ice-hockey/env
+$EDITOR ~/.config/ice-hockey/env
+chmod 600 ~/.config/ice-hockey/env
+```
+
+Then, in a shell where you mean to work on this project:
+
+```sh
+source ~/.config/ice-hockey/env
+terraform init -backend-config="bucket=$ICE_HOCKEY_TF_STATE_BUCKET"
+terraform plan
+```
+
+**That file is the entire backup story.** Put it in your password vault, and a
+new laptop needs nothing else: it exports `TF_VAR_*`, which Terraform reads
+natively, so **neither `terraform.tfvars` nor `backend.hcl` has to exist** for
+a plan to run. Verified by moving both aside and planning from the environment
+alone — `No changes. Your infrastructure matches the configuration.`
+
+Two things worth knowing:
+
+- **Where both are set, `terraform.tfvars` silently wins.** Keeping a tfvars
+  file *and* the environment is fine only while they agree. If you would rather
+  have one source of truth, delete `terraform.tfvars` and `backend.hcl` and
+  work from the environment — nothing here needs them.
+- **Do not source it from `~/.zshrc`.** It exports `AWS_PROFILE`, and this
+  machine also holds credentials for an unrelated production account. A shell
+  that silently carries an `AWS_PROFILE` is how the right plan reaches the
+  wrong account. Sourcing it deliberately is the point.
+
+Why outside the repo at all: this repository is public and contains no AWS
+account id anywhere. The state bucket is named `<project>-tfstate-<account-id>`
+because S3 bucket names are globally unique, so committing it would put one in.
+
+---
+
 ## Which AWS profile
 
 Local profiles on this machine are `mockserver-build`, `mockserver-website` and
@@ -518,7 +561,12 @@ grows past a personal project, move it.
 
 ```
 infra/
-├── backend.tf                  remote state configuration
+├── env.example                 template for ~/.config/ice-hockey/env — the
+│                               one file to keep in a password vault
+├── backend.hcl.example         template for the gitignored backend.hcl;
+│                               unnecessary if you source the environment
+├── backend.tf                  remote state configuration, bucket supplied at
+│                               init time so no account id lands in the repo
 ├── versions.tf                 terraform and provider version constraints
 ├── providers.tf                aws + aws.us_east_1 aliases, default_tags
 ├── locals.tf                   name prefix, mandatory tags, CSP
