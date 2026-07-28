@@ -30,6 +30,6 @@ const { title, description, ogType, section, withToc = false, bare = false } = A
     <div class={bare ? 'shell shell--bare' : withToc ? 'shell shell--with-toc' : 'shell'}>
       <slot />
     </div>
-    <Footer />
+    <Footer bare={bare} />
   </body>
 </html>

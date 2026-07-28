@@ -1,10 +1,22 @@
 ---
 import { NON_AFFILIATION } from '../consts';
 import { DOC_COUNT } from '../data/nav';
+
+interface Props {
+  /**
+   * Matches the footer's width to the shell above it. The bare shell (home and
+   * search) is narrower than the document shell, which carries a sidebar and a
+   * table of contents either side of the text. Without this the footer starts
+   * further left than the content it sits under.
+   */
+  bare?: boolean;
+}
+
+const { bare = false } = Astro.props;
 ---
 
 <footer class="site-footer">
-  <div class="site-footer__inner">
+  <div class:list={['site-footer__inner', bare && 'site-footer__inner--bare']}>
     <p>
       {DOC_COUNT} documents. Every one ends with Common Mistakes, Key Takeaways and a dated
       Sources section, and flags anything that could not be independently verified.

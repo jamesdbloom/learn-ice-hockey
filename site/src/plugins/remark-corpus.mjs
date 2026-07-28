@@ -118,6 +118,40 @@ export default function remarkCorpus(options = {}) {
   return function transformer(tree) {
     const children = tree.children;
 
+    // ----------------------------------------------------------- key facts
+    //
+    // ```facts blocks are structure, not code. Left alone they reach Astro's
+    // default Shiki highlighter and render as an unreadable dark code block —
+    // which is exactly what shipped, in 763 places, because "valid markdown
+    // that renders readably" was assumed rather than looked at.
+    //
+    // Each line is `Label: value`. That is a definition list, so emit one and
+    // let CSS do the rest. Anything unparseable is kept verbatim as its own
+    // row rather than dropped, because silently losing a fact is worse than
+    // showing an ugly one.
+    visit(tree, 'code', (node, index, parent) => {
+      if (node.lang !== 'facts' || !parent || index === undefined) return;
+
+      const rows = [];
+      for (const line of node.value.split('\n')) {
+        if (!line.trim()) continue;
+        const m = /^([A-Z][A-Za-z ]*?):\s+(.+)$/.exec(line);
+        rows.push(
+          inline('dt', { class: 'facts__label' }, [
+            { type: 'text', value: m ? m[1] : '' },
+          ]),
+        );
+        rows.push(
+          inline('dd', { class: 'facts__value' }, [
+            { type: 'text', value: m ? m[2] : line.trim() },
+          ]),
+        );
+      }
+      if (!rows.length) return;
+
+      parent.children[index] = wrapper('dl', { class: 'facts' }, rows);
+    });
+
     // ---------------------------------------------------------------- links
     visit(tree, 'link', (node) => {
       const resolved = resolveDocHref(node.url, knownIds);

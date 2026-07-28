@@ -291,6 +291,17 @@ pre {
   padding: 0 0.9rem 4rem;
 }
 
+/*
+  The document shell is wide because it carries a sidebar and a table of
+  contents either side of the text. The bare shell carries neither, so at
+  100rem the home page's card grid ran nearly a metre of screen while its prose
+  stopped less than halfway across. Narrower here keeps the grid and the text
+  looking like one column instead of two unrelated ones.
+*/
+.shell--bare {
+  max-width: 78rem;
+}
+
 @media (min-width: 60rem) {
   .shell {
     display: grid;
@@ -411,12 +422,16 @@ pre {
 }
 
 /*
-  Prose keeps a readable ~70ch measure, but wide comparison tables are allowed
-  to use more of the column — so the cap lives on the text-bearing children
-  rather than on the container.
+  Prose fills the column, exactly as the tables do.
+
+  It used to stop at roughly the measure plus 14rem while tables ran the full
+  width, which left a ragged strip of empty space down the right of every
+  paragraph before the table of contents began — two different right edges on
+  the same page. The column is already bounded by the sidebar and the table of
+  contents either side of it, so that is the measure.
 */
 .prose {
-  max-width: min(100%, calc(var(--measure) + 14rem));
+  max-width: 100%;
   /* Long rulebook URLs in the body must not force the page sideways. */
   overflow-wrap: break-word;
 }
@@ -755,17 +770,26 @@ a.chip:hover {
   scrollbar-width: thin;
 }
 
-/* Tables are usually wider than the prose measure — let them use the column. */
+/*
+  Tables get the whole column. They used to be capped near the prose measure,
+  which made them scroll far sooner than they needed to.
+*/
 @media (min-width: 60rem) {
   .table-scroll {
-    max-width: min(100%, calc(var(--measure) + 12rem));
+    max-width: 100%;
   }
 }
 
+/*
+  `width: max-content` sized the table to its longest possible line, so no cell
+  ever wrapped and every table scrolled — even ones that would have fitted
+  comfortably. Filling the container instead lets cells wrap, and the scroll
+  wrapper is left to do what it is actually for: the genuinely wide four-way
+  rulebook comparisons, which hit the cell floor below and overflow honestly.
+*/
 .table-scroll table {
   border-collapse: collapse;
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -776,6 +800,13 @@ a.chip:hover {
   border-bottom: 1px solid var(--border);
   text-align: left;
   vertical-align: top;
+  /*
+    A floor, not a width. Wrapping is wanted; wrapping into a three-character
+    ribbon is not. Past this the table overflows and the wrapper scrolls, which
+    is the right outcome for a table with many columns.
+  */
+  min-width: 7rem;
+  text-wrap: pretty;
 }
 
 .table-scroll thead th {
@@ -960,7 +991,13 @@ a.chip:hover {
 
 .home-hero {
   padding: 3rem 0 1rem;
-  max-width: 46rem;
+  /*
+    Sized against the card grid below it, not in isolation. The hero used to
+    stop at 46rem while the grid ran the full width of the shell, which on a
+    wide screen left the page looking half-finished. This is still a lede
+    measure — the h1 and the buttons are display elements and may run wider.
+  */
+  max-width: 62rem;
 }
 
 .home-hero h1 {
@@ -1036,7 +1073,8 @@ a.chip:hover {
 .layer-section__blurb {
   margin: 0 0 1.25rem;
   color: var(--text-muted);
-  max-width: var(--measure);
+  /* Matched to the hero rather than to body prose; this sits above a grid. */
+  max-width: 62rem;
 }
 
 .card-grid {
@@ -1072,12 +1110,20 @@ a.chip:hover {
   color: var(--text);
 }
 
+/*
+  Both of these are <span>s. Without an explicit display they laid out inline
+  and ran straight together — "Rink Map and GlossaryThis is the map…" — and the
+  margin-bottom below did nothing at all, because margins do not apply to the
+  block axis of an inline box.
+*/
 .card__title {
+  display: block;
   font-weight: 650;
   margin-bottom: 0.25rem;
 }
 
 .card__desc {
+  display: block;
   font-size: 0.875rem;
   line-height: 1.55;
   color: var(--text-muted);
@@ -1132,6 +1178,28 @@ a.chip:hover {
   gap: 0.75rem;
 }
 
+/* Align with the narrower bare shell used by the home and search pages. */
+.site-footer__inner--bare {
+  max-width: 78rem;
+}
+
+/*
+  Two short legal paragraphs, side by side once there is room for it.
+
+  They used to stack, each capped at 62rem inside a 100rem container, so both
+  wrapped onto a second line and left a wide empty strip down the right — the
+  footer looked like it had failed to fill rather than like it had been laid
+  out. As columns they use the width they are given and each keeps a sane
+  measure without needing a cap at all.
+*/
+@media (min-width: 60rem) {
+  .site-footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 3rem;
+    align-items: start;
+  }
+}
+
 @media (min-width: 60rem) {
   .site-footer {
     padding-left: 1.5rem;
@@ -1141,7 +1209,11 @@ a.chip:hover {
 
 .site-footer p {
   margin: 0;
-  max-width: 62rem;
+  /*
+    No max-width. The column is the measure — see .site-footer__inner. A cap
+    here is what produced the wrap-then-void the two-column layout replaces.
+  */
+  text-wrap: pretty;
 }
 
 /* --------------------------------------------------------------- misc ---- */
@@ -1149,4 +1221,59 @@ a.chip:hover {
 .notfound {
   padding: 4rem 0;
   max-width: 46rem;
+}
+
+/* ---------------------------------------------------------------- key facts
+  Every teaching section opens with a `facts` block — a short list of labelled
+  imperatives a reader can take off the page without reading the prose. That is
+  the whole point of the layer, so it has to be scannable at a glance: label
+  and value on one row, labels aligned, values doing the talking.
+
+  remark-corpus turns the ```facts fence into a <dl> before Astro's highlighter
+  sees it. Without that transform these render as a dark code block, which is
+  what shipped first time round.
+*/
+.facts {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.3rem 0.85rem;
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  font-size: 0.95rem;
+}
+
+.facts__label {
+  margin: 0;
+  font-weight: 650;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.facts__value {
+  margin: 0;
+  color: var(--text);
+  text-wrap: pretty;
+}
+
+/*
+  Narrow screens: a two-column grid would leave the value a few characters
+  wide, so stack instead and let the label sit above its own value.
+*/
+@media (max-width: 34rem) {
+  .facts {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.15rem;
+  }
+
+  .facts__value {
+    margin-bottom: 0.5rem;
+  }
+
+  .facts__value:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -118,8 +118,20 @@ function extract(id, source) {
     warnings.push(`${id}: no "## Overview" section — falling back to first paragraph`);
   }
   const after = lines.slice(overviewIdx === -1 ? 1 : overviewIdx + 1);
+  //
+  // The ``` exclusion is load-bearing. Every teaching section now opens with a
+  // ```facts block, so on most documents the first block after `## Overview` is
+  // that fence — and without this the extractor took it as the description,
+  // putting "``facts Key: You are the engine of your line…" into the card
+  // tiles, the meta description and the Open Graph tags.
+  //
   const paragraph = blocks(after.join('\n')).find(
-    (b) => !b.startsWith('#') && !b.startsWith('>') && !b.startsWith('|') && !b.startsWith('---'),
+    (b) =>
+      !b.startsWith('#') &&
+      !b.startsWith('>') &&
+      !b.startsWith('|') &&
+      !b.startsWith('---') &&
+      !b.startsWith('```'),
   );
   if (paragraph) description = truncate(toPlainText(paragraph));
   if (!description) errors.push(`${id}: could not derive a description`);
