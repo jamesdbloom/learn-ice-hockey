@@ -271,7 +271,8 @@ Read: Against the house-default 2-1-2, two bodies arrive fast from two direction
 Action: Escape a 2-1-2 behind the net — a reverse to your partner or a wheel, into the space the forecheckers came from
 Options: Against a 1-2-2, an early up-the-wall pass or a regroup; against a 1-3-1 trap, skate it up or chip past the layer; against a full press, the safe out
 Action: Find out what your opponent is forechecking on your first shift, and tell the bench
-Rule: After your own icing you take a defensive-zone faceoff with no line change (NHL Rules 81.4 and 82.1) and no timeout (Rule 87.1) — expect immediate pressure
+Rule: After your own icing you take a defensive-zone faceoff with no line change (NHL Rules 81.4, 82.1) and no timeout (87.1) — expect immediate pressure
+Rule: USA Hockey blocks neither (Rules 624, 636(f)), so there the tired line gets off
 ```
 
 A **forecheck** is your opponents pressuring you in your own end to force a turnover. Forechecks have shapes, and the shape tells you where pressure will arrive **before it arrives** — which means you can pre-decide your breakout instead of reacting to it.

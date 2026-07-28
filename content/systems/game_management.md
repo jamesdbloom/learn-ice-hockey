@@ -124,9 +124,9 @@ Never: Chase the extra body-check; if the player has already passed or shot it i
 Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
 Rule: Under hybrid icing the linesperson judges who would reach the puck first, not who reaches the dot first (NHL Rule 81.1)
 Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rule 82.1)
-Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1)
+Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
 Risk: A defensive-zone draw, your five most tired players, and no way to rest them
-Action: Ask before the game — many rec and youth leagues use no-touch icing or never enforce the no-change rule
+Action: Ask before the game — many rec and youth leagues use no-touch icing, and under USA Hockey there is no no-change rule to enforce
 ```
 
 **Icing** is sending the puck from your own side of the centre red line all the way past the opposing goal line untouched. Under NHL **hybrid icing** (adopted 2013-14) the linesperson judges who would reach **the puck** first — not who reaches the dot first (Rule 81.1). The end-zone faceoff dot is the **deadline for that decision**: the call is made no later than the instant the first player's skate reaches it, and a race too close to call at that moment is icing.
@@ -294,7 +294,7 @@ Never: Chase — play a tight box or diamond in the slot, block lanes and let th
 Position: Sticks in lanes, feet in the house; clear bodies and take sticks away at the net front
 Action: Treat every clear as a shot — get your head up and put it at the empty net when the lane is clean
 Rule: You can be iced against a pulled goalie; six players against six is equal strength, not below it (NHL Rules 81.1, 81.3, 84.1)
-Rule: After that icing they pick the dot (81.2), you cannot change (81.4) and you cannot take a time-out (87.1)
+Rule: After that icing they pick the dot (81.2), you cannot change (81.4) and you cannot take a time-out (87.1) — all three are NHL and IIHF only
 Priority: Own-zone draws at 5-on-6 decide games — agree the plan before you line up
 Never: Take a penalty; a 6-on-4 against is close to a goal
 ```
@@ -493,7 +493,7 @@ The practical consequence, as coaches put it: **a 90-second shift is not three t
 Never: Change when the puck is in your defensive zone and your team does not have it
 Never: Change while you are the last man back, until you are relieved — and say so out loud
 Never: Change while the opposition is on a rush; finish the defensive play first
-Rule: You cannot change after your own icing (NHL Rule 82.1), so do not start drifting toward the bench
+Rule: You cannot change after your own icing under NHL and IIHF rules (82.1), so do not start drifting toward the bench — USA Hockey Rule 624 imposes no such restriction
 Never: Change in the middle of a 6-on-5 possession — change with the puck or not at all
 Action: Change when your team has the puck heading north, has just dumped it in deep, or after a completed clear
 ```

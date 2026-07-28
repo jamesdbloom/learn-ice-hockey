@@ -733,7 +733,8 @@ Priority: Get the alignment right before you get the play right
 ```facts
 Read: Expect the opponent to have a plan too, and expect it to differ from their default
 Rule: No time-out is granted following a faceoff violation (Rule 87.1)
-Rule: No time-out for the defensive team following an icing, or after their goalie stops a shot from beyond the centre red line (Rule 87.1)
+Rule: No time-out for the defensive team following an icing, after their goalie stops a shot from beyond the centre red line, or after a defender accidentally dislodges the net (NHL Rule 87.1)
+Rule: USA Hockey attaches no icing condition to its one 60-second time-out (Rule 636(f))
 Rule: IIHF Rule 87.1 carries both restrictions; USA Hockey Rule 636(f) carries neither and gives sixty seconds
 ```
 

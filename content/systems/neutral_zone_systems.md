@@ -560,7 +560,7 @@ Action: Rather than carrying through a tight gap, chip the puck past the defende
 Read: Right against a defenceman standing up at the line, against a 1-3-1 with only one man behind the wall, or when you have a speed advantage
 Technique: The chip is a placement, not a clearance — soft off the wall into the corner you are already skating to, or flat past the defender's stick-side hip
 Never: Chip without chasing — the difference from dump-and-pray is entirely whether the second and third forwards go
-Never: Chip from your own side of the red line at equal strength — untouched over their goal line it is icing, and you lose the faceoff and the change
+Never: Chip from your own side of the red line at equal strength — untouched over their goal line it is icing, and under NHL and IIHF rules you lose the faceoff and the change
 ```
 
 **What it is.** Rather than trying to carry through a defender who has a tight gap, you **chip the puck past them into space** — off the boards, off the glass, or softly into a spot behind them — and skate onto it.

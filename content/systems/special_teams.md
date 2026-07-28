@@ -805,10 +805,10 @@ Pulling the goalie during a power play, late in a game, to make it 6-on-4.
 ```facts
 Goal: With a man advantage, winning the draw skips the zone entry entirely; a skater short, losing it means defending a set power play from the first second
 Rule: The team awarded the power play chooses which end-zone dot the draw starts at (NHL Rule 76.2) — pick the side that suits your one-timer
-Rule: After an icing the attacking team picks the dot (NHL Rule 81.2), and the team that iced it can neither change lines (81.4) nor take a timeout (87.1)
+Rule: After an icing the attacking team picks the dot (NHL Rule 81.2), and the team that iced it can neither change lines (81.4) nor take a timeout (87.1) — NHL and IIHF only
 Never: Fire a loose puck the length of the ice while on the power play — you hand the kill the dot and freeze your own tired unit
 Rule: Encroachment ejects your centre from the dot, not the encroaching player (NHL Rule 76.6); a second violation by the same team on the same draw is a bench minor (76.7)
-Rule: Home last change is forfeited after your own icing — the team in violation may not substitute before the ensuing faceoff (NHL Rules 81.4, 82.1)
+Rule: Home last change is forfeited after your own icing — the team in violation may not substitute before the ensuing faceoff (NHL Rules 81.4, 82.1), which USA Hockey does not replicate
 Convention: IIHF imposes all three icing consequences in the same words; USA Hockey imposes neither the line-change ban nor the timeout ban
 Action: Agree the play before you line up — where the win is going, or whether you are tying up for a winger to sweep, and where the clear goes
 ```

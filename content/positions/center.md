@@ -485,7 +485,7 @@ If you are the last forward back and your defence is outnumbered, the priority i
 Action: You go first — call the change and the wingers follow you off
 Convention: A line that changes as a group changes on the centre's legs, because the centre fades first — coaching craft rather than a measured finding
 Never: Change into an offensive-zone faceoff you are needed to take
-Rule: After your own team's icing you cannot change at all under NHL and IIHF rules, so don't start drifting toward the bench
+Rule: After your own team's icing you cannot change at all under NHL and IIHF rules, so don't start drifting toward the bench — USA Hockey imposes neither restriction
 Key: Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are all in Game Management
 ```
 

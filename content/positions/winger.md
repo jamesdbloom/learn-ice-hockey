@@ -469,7 +469,7 @@ Action: Carry the extra stride so the puck is on your stick as it crosses the ce
 Options: Or make the dump soft enough that you win the race to it yourself
 Action: Sprint the first half of the chase — that is where the call is decided
 Read: If you are clearly beaten to the dot, ease up; you gain nothing and the end boards are unforgiving
-Risk: An icing leaves your line stuck on for a defensive-zone draw with no change and no timeout
+Risk: An icing leaves your line stuck on for a defensive-zone draw with no change and no timeout under NHL and IIHF rules — USA Hockey blocks neither
 Key: The rule in full — hybrid icing, the wave-off list and "gaining the line" — is in Rules Primer
 ```
 

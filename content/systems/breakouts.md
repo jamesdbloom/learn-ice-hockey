@@ -397,6 +397,7 @@ Technique: Aim high off the glass in the corner or up the wall, not flat up the 
 Rule: Hybrid icing turns on "which player would first touch the puck, not which player would first reach the end zone face-off dots" (NHL Rule 81.1)
 Key: The dot is the deadline for the decision; a race too close to call by then goes to icing
 Rule: After your own icing your line cannot change (Rule 81.4) and cannot take a time-out (Rule 87.1: "No time-out shall be granted to the defensive team following an icing")
+Rule: Both are NHL and IIHF only — USA Hockey Rule 624 restricts no substitution and 636(f) attaches no icing condition to its time-out
 Rule: Shorthanded you may ice it freely (NHL Rule 81.6), subject to two carve-outs — a major with an empty penalty bench, and USA Hockey's classification limit — owned by Special Teams and Rules Primer
 Rule: Shooting or batting the puck directly out of play from your defending zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)) — its own exceptions are where there is no glass, into the players' bench, and directly off a faceoff
 Key: Staying in is fine, and a deflection out is fine

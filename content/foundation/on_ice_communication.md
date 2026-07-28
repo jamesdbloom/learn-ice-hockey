@@ -233,7 +233,7 @@ Never: Change during a defensive-zone scramble, or when you are the player caugh
 Never: Use "last change" or "last man" to mean a completed change — both already mean something else and will get you the wrong reaction
 Rule: The home team's last change (Rule 82.1) is lost after its own icing and kept after the visitors' (Rules 82.1, 81.4)
 Rule: A change is legal while the retiring player is within five feet of the bench and out of the play (Rule 74.1) — the offence is joining the play too early, not sharing a seat (Rule 74.2)
-Rule: After your own icing whoever is on the ice stays — no line change (82.1) and no timeout (87.1)
+Rule: After your own icing whoever is on the ice stays — no line change (82.1) and no timeout (87.1) under NHL and IIHF rules; USA Hockey blocks neither
 Rule: Rule 82.1 allows exactly three substitutions there — a pulled goalkeeper, an injured player, or a penalty affecting on-ice strength; "he's gassed" is not on the list
 Action: On "stay", finish the shift — a tired player in position beats a fresh player arriving late
 ```
