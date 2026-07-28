@@ -1,0 +1,144 @@
+# Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Copyright (c) 2026 James Bloom
+
+The written documentation in this repository is licensed under the Creative
+Commons Attribution-NonCommercial 4.0 International License.
+
+**Canonical licence deed:** https://creativecommons.org/licenses/by-nc/4.0/
+**Full legal code:** https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+The full legal code at the URL above is the licence. What follows is a faithful
+summary of it for convenience, and a statement of scope. Where this file and the
+legal code differ, the legal code governs.
+
+SPDX-License-Identifier: CC-BY-NC-4.0
+
+---
+
+## Scope
+
+This licence covers the written material in this repository:
+
+    content/    the 35 teaching documents, including content/positions/
+    project/    the style guide, review history, build specification,
+                roadmap and podcast prompts
+
+It does **not** cover the software and configuration in `site/`, `infra/` and
+`scripts/`, which are licensed under the MIT Licence — see [LICENSE](LICENSE).
+
+It also does not, and cannot, cover third-party material quoted within these
+documents. See "Third-party material" below.
+
+---
+
+## What you may do
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format.
+- **Adapt** — remix, transform, and build upon the material.
+
+The licensor cannot revoke these freedoms as long as you follow the licence
+terms. These rights are granted worldwide, royalty-free, non-sublicensable,
+non-exclusive and irrevocable, for the duration of copyright in the material.
+
+---
+
+## Under the following terms
+
+### Attribution
+
+If you share or adapt the material, you must:
+
+- **Identify the creator** — James Bloom — and anyone else the material is
+  attributed to, in any reasonable manner requested, but not in any way that
+  suggests the licensor endorses you or your use.
+- **Include a copyright notice**, a link to this licence
+  (https://creativecommons.org/licenses/by-nc/4.0/), and a notice that the
+  material is offered under it.
+- **Include a disclaimer of warranties**, or a link to one.
+- **Link to the material** if reasonably practicable, and **indicate if you
+  modified it**, retaining an indication of any previous modifications.
+
+You may satisfy these conditions in any reasonable manner based on the medium,
+means and context — for example, by a link to a resource that includes the
+required information.
+
+### NonCommercial
+
+**You may not use the material for commercial purposes.** A commercial purpose
+is one primarily intended for or directed toward commercial advantage or
+monetary compensation.
+
+Exchange of the material for other material subject to copyright by digital
+file-sharing or similar means is not commercial, provided there is no payment
+of monetary compensation in connection with the exchange.
+
+### No additional restrictions
+
+You may not apply legal terms or technological measures that legally restrict
+others from doing anything the licence permits.
+
+---
+
+## Notices
+
+- You do not have to comply with the licence for elements of the material in
+  the public domain, or where your use is permitted by an applicable exception
+  or limitation to copyright — such as fair dealing or fair use.
+- No warranties are given. The licence may not give you all of the permissions
+  necessary for your intended use. Other rights, such as publicity, privacy or
+  moral rights, may limit how you use the material.
+- Unless otherwise separately undertaken by the licensor, the material is
+  offered **as-is and as-available**, and the licensor makes no representations
+  or warranties of any kind concerning it, express, implied, statutory or
+  otherwise.
+- If you fail to comply with this licence, your rights under it terminate
+  automatically. They reinstate automatically as of the date the violation is
+  cured, if cured within 30 days of your discovery of it, or upon express
+  reinstatement by the licensor.
+
+---
+
+## Third-party material
+
+This corpus quotes, with attribution, from copyrighted works that are **not**
+covered by this licence and are not relicensed by it. These include:
+
+- The **NHL Official Rules 2025-2026**, the **IIHF Official Rulebook 2025/26**,
+  the **USA Hockey Official Playing Rules and Casebook**, and the **Hockey
+  Canada Playing Rules** — quoted by rule number for the purpose of teaching
+  and criticism.
+- Published academic research, coaching manuals and journalism, quoted briefly
+  and cited in each document's Sources section.
+
+Those quotations remain the property of their respective owners. Rules as facts
+and as methods of operation are not copyrightable — "offside requires both
+skates over the line" is free to state — but rulebook *text* is. The corpus
+relies on fair dealing for quotation (UK Copyright, Designs and Patents Act
+1988, s30(1ZA)) and its US equivalent, which is why every quotation is
+attributed to a named rulebook and rule number, and why this licence is
+**non-commercial**: it materially strengthens that position.
+
+If you reuse this material under the licence above, that reliance does not
+transfer automatically. Satisfy yourself about the quoted material separately.
+This is not legal advice.
+
+---
+
+## Non-affiliation
+
+This project is **not affiliated with, endorsed by, sponsored by or associated
+with** the National Hockey League, the NHLPA, the International Ice Hockey
+Federation, USA Hockey, Hockey Canada, or any other league, club, association
+or governing body.
+
+All trademarks, service marks and trade names — including team names, logos and
+league marks — are the property of their respective owners. No such logo, mark
+or branding appears in this repository. Rule citations are quotations from
+publicly published rulebooks, reproduced for teaching with attribution.
+
+Nothing in the licence grants any right to use any trademark, and the
+attribution required above must not be presented in a way that implies
+endorsement by any of the bodies named here.

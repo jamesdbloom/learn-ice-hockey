@@ -12,8 +12,8 @@ It is written to be worked through over time. Each phase has an explicit **exit 
 
 | | |
 |---|---|
-| Content | 37 markdown documents, ~18,100 lines |
-| Structure | 33 at root + 4 in `positions/` |
+| Content | 35 markdown documents, ~18,100 lines |
+| Structure | 31 in `content/` + 4 in `content/positions/` |
 | Governance | `project/content_style_guide.md` — the rules every document follows |
 | Review state | 13 adversarial review rounds; 13 criticals and ~60 majors found and fixed |
 | Infrastructure | None. Local files only, no version control |
@@ -51,7 +51,7 @@ These block work and only you can answer them.
 │
 ├── content/                       ← the corpus, moved wholesale
 │   ├── getting_started.md
-│   ├── … 32 more
+│   ├── … 30 more
 │   └── positions/
 │       ├── center.md  winger.md  defender.md  goaltender.md
 │
@@ -112,7 +112,7 @@ These block work and only you can answer them.
 ### Phase 3 — Website
 
 - [ ] Astro site per §6
-- [ ] All 37 documents rendered, navigable, searchable
+- [ ] All 35 documents rendered, navigable, searchable
 - [ ] Audio player components in place, **disabled/hidden pending Phase 5**
 - [ ] Deployed via CI
 
@@ -121,7 +121,7 @@ These block work and only you can answer them.
 ### Phase 4 — Speech transform
 
 - [ ] `scripts/md_to_speech.py` per §7.1
-- [ ] Generate speech text for all 37 documents
+- [ ] Generate speech text for all 35 documents
 - [ ] **Read a sample of the output yourself** — this is where quality is won or lost
 
 **Exit gate:** speech text for three representative documents (one rules-heavy, one systems, one research-heavy) reads correctly aloud.
@@ -190,7 +190,7 @@ Two workflows:
 | CloudFront (personal traffic) | $0–1 |
 | Route 53 hosted zone | $0.50 |
 | Domain | ~$1 (annualised) |
-| **Total** | **~$2/month**, plus one-off Polly ~$120–150 |
+| **Total** | **~$2/month**, plus one-off Polly **~$207** (measured: 2,072,460 billed characters, ~46 h of audio) |
 
 ---
 

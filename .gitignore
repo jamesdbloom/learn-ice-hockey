@@ -4,13 +4,13 @@ dist/
 .astro/
 *.log
 
-# Terraform
+# Terraform — note .terraform.lock.hcl IS committed, so CI resolves
+# the same provider versions that were planned locally
 .terraform/
 *.tfstate
 *.tfstate.*
 *.tfvars
 !*.tfvars.example
-.terraform.lock.hcl
 
 # Build artefacts
 site/public/audio/
@@ -21,3 +21,10 @@ build/
 *.mp3
 *.wav
 *.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# Speech transform output — regenerated from content/
+scripts/speech/
