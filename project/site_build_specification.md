@@ -658,3 +658,238 @@ Two rules to write into the style guide alongside it:
 > section, what each one is *for* — which is the same discipline that produced
 > the corpus's separation of coaching craft from rules, and it found real
 > defects then.
+
+---
+
+## 12. Key facts: extracting the actionable layer
+
+### The request
+
+For content that teaches **how to play**, lead each section with the key facts,
+and — where a section carries many — summarise them at the end. A player should
+be able to take what they need to do off the page without reading the prose
+around it, and then read the prose when they want the reasoning.
+
+The model is `mind_map.pdf` (untracked, `*.pdf` is gitignored), a hand-made
+breakdown of the defender, centre and winger documents. Its unit is not a
+paragraph or a bullet — it is a **short labelled imperative**, one line:
+
+```
+Position: Behind net or along boards
+Action:   Quick, purposeful breakout pass
+Targets:  Winger on boards, low centre, or partner
+Never:    Carry through the high-danger slot
+Risk:     Slot turnovers lead to direct scoring chances
+```
+
+That density is the target. Each line is a thing to do, where to be, or what
+goes wrong — never an explanation.
+
+### 12.1 Scope: only where the content is about playing
+
+25 of the 35 documents, being the four instructional layers:
+
+| Layer | Documents | In scope |
+|---|---|---|
+| Positions | 5 | ✅ |
+| Systems and Situations | 10 | ✅ |
+| Technique | 5 | ✅ |
+| Hockey IQ | 5 | ✅ |
+| Getting Started | 1 | ❌ How to reach a rink, not what to do on one |
+| Foundation | 3 | ❌ Reference. The glossary and rules primer are already lookup documents; imperatives would misrepresent them |
+| Off the Ice | 6 | ❌ Equipment, conditioning, culture, watching — not on-ice action |
+
+**One judgement call to settle:** `on_ice_communication.md` sits in Foundation
+but is purely instructional — it is a list of what to shout and when. It is the
+strongest candidate for an exception, and taking it would make the count 26.
+
+### 12.2 The label vocabulary
+
+A closed set, so the blocks stay scannable and mean the same thing everywhere:
+
+| Label | Holds |
+|---|---|
+| `Position:` | Where you are |
+| `Action:` | What you do |
+| `Goal:` | What it is for |
+| `Priority:` | What wins when two things compete |
+| `Technique:` | How to execute it |
+| `Options:` | Alternatives, where more than one is legitimate |
+| `Targets:` | Who or where to pass |
+| `Never:` | A hard coaching constraint |
+| `Risk:` | What goes wrong, and how badly |
+| `Key:` | The one thing to remember |
+| `Mindset:` | The attitude the situation calls for |
+| `Convention:` | **A coaching choice, marked as one** — "a default, not a law" |
+| `Read:` | The cue that selects this option over its siblings |
+| `Countered by:` | How the opposition defeats it |
+| `Rule:` | **An actual rulebook rule, cited** |
+
+The last three were added after the pilot (§12.7). `Convention:` exists because
+the corpus hedges constantly and correctly — *"a coaching default, not a law"*,
+*"a tendency, not a law"* — and with no label for it, the hedge either bloats
+the line or gets dropped. Making the coaching-choice/rule distinction visible at
+a glance is the whole point. `Read:` and `Countered by:` exist because the
+systems documents are built from named options that each have a selecting cue
+and a defeat, and collapsing a counter into `Risk:` misrepresents it.
+
+> **⚠️ `Rule:` is the trap in this whole proposal, and the source mind map falls
+> into it.** It labels *"Never carry through the high-danger slot"* as a `Rule`.
+> That is a coaching instruction, not a law of hockey — and
+> [the cardinal rule of the style guide](content_style_guide.md) is that the two
+> must never be confused. Adopting the mind map's usage would commit that error
+> in every one of 25 documents simultaneously, which is precisely the failure
+> the corpus has spent nineteen review rounds keeping out.
+>
+> Hence `Never:` for coaching constraints, and `Rule:` reserved for NHL, IIHF,
+> USA Hockey or Hockey Canada text, cited as the body cites it.
+
+### 12.3 The real cost, from this project's own history
+
+The style guide already records what happens to a summary layer:
+
+> **The summary layer is where corrections go to die.** Every critical in round
+> 10 lived in a Key Takeaway or Common Mistakes bullet left behind when its
+> body was fixed.
+
+Each document currently has **two** summary blocks. This proposal adds one per
+`##` section — call it ten to fifteen more per document, across 25 documents.
+**That is roughly a tenfold increase in the surface where a corrected body can
+be contradicted by a stale summary**, in a corpus whose most expensive defects
+have lived in exactly that layer.
+
+This does not make the proposal wrong. It makes three controls mandatory rather
+than optional:
+
+1. **Extraction, not authorship.** Every fact must be traceable to a sentence
+   already in the body. A fact block may not contain a claim the section does
+   not make. If a fact cannot be extracted without inventing, that is a finding
+   about the section, not a licence to write it.
+2. **The body is the source of truth, always.** Where a fact and the body
+   disagree, the fact is wrong by definition.
+3. **A review pass that only reads the fact layer**, because — per §5 of the
+   review history — a check finds what its method looks at, and none of the
+   nineteen completed rounds was looking at a layer that did not yet exist.
+
+### 12.4 Where the blocks go
+
+**Revised after the pilot — the level was wrong in the first draft.**
+
+- **At `###`, not `##`, wherever subsections exist.** In `defender.md` the `##`
+  headings are one-sentence containers: `## Defensive Zone` is a single line
+  introducing its subsections, and yields two facts that restate its own
+  heading. `## Other Situations` yields none. The `###` subsections are where
+  the teaching lives, and they are already written as *Where to be / What to do
+  / Goal / Key considerations* — which maps onto the labels almost
+  mechanically.
+- **At `##` only where a section has no subsections** and is itself the unit of
+  teaching.
+- **Closing summary** — only where a section runs long or carries many facts.
+  Not every section earns one; a summary of four facts is noise.
+- **`## Common Mistakes` and `## Key Takeaways` are exempt.** Both pilots
+  reached this independently. They are already extraction layers of terse
+  one-liners — every Common Mistakes entry takes `Never:`, so the label column
+  carries no information — and a third restatement above two existing ones adds
+  another place for a correction to fail to reach. See §12.3.
+- **Document level** — the existing `## Key Takeaways` already does this job and
+  **stays as it is**. This proposal adds a section-level layer beneath it, and
+  should not duplicate it.
+
+**Fact budget: 3–6 by default, up to 8 where the section earns it, or split the
+section.** The pilots found the tight cap doing real damage in dense sections —
+in `breakouts.md` §2 the casualty was Rule 56.1, the interference/pick trap that
+costs two minutes; in `defender.md` the neutral-zone pressuring subsection had
+to choose between the step-up/pinch distinction and the trapezoid rule. **When a
+cap forces a rulebook fact out, the cap is wrong, not the fact.**
+
+### 12.5 How it interacts with §11
+
+These two are complementary, and doing them together is cheaper than doing them
+in sequence:
+
+- §11 asks *what kind* of content each section is.
+- §12 asks *what a player must do* about it.
+
+A fact block is the `instruction` kind, distilled. Sections tagged `evidence` or
+`craft` should generally **not** carry one — a statistic is not something you
+do. So **tagging first tells you which sections need fact blocks**, and the two
+passes want to be one editorial sweep rather than two.
+
+It also feeds the practical narration cut (D14) and the offline formats (§10):
+a fact block is the natural thing to read aloud at the top of a section, and the
+natural thing to render as a card on a phone.
+
+### 12.6 Plan
+
+**Phase 4c — Key facts**, after 4b and before Phase 5, for the same reason 4b
+comes before 5: narration should be generated once, from final text.
+
+- [x] **Pilot run on two documents** — `positions/defender.md` (positional) and
+      `breakouts.md` (systems). Findings in §12.7; proposals kept in
+      [`pilots/`](pilots/)
+- [ ] Settle the `on_ice_communication` question (§12.1)
+- [ ] Decide the three sections the pilot says need splitting rather than
+      capping (§12.7)
+- [ ] Add the convention to `content_style_guide.md`, including the `Rule:`
+      restriction and the exemptions
+- [ ] Apply across the in-scope documents, parallelisable per document
+- [ ] **Fact-layer-only review round**, per §12.3
+- [ ] Render fact blocks distinctly on the site; feed them to the speech
+      transform as a section preamble
+
+**Exit gate:** every in-scope section leads with facts traceable to its own
+body, and a review round that read *only* the fact layer has run clean.
+
+### 12.7 What the pilot found
+
+Two documents, chosen for different shapes. **220 facts proposed, every one
+line-traced to its source.** Full proposals in [`pilots/`](pilots/).
+
+| | `defender.md` | `breakouts.md` |
+|---|---|---|
+| Headings covered | 27 (8 `##`, 19 `###`) | 14 `##` |
+| Facts proposed | 143 | 77 |
+| Blocks recommended | 24 of 26 | 10 of 13 |
+
+**It works, and it works best exactly where the corpus is already well
+structured.** The twelve zone-by-zone `###` subsections of `defender.md` needed
+almost no interpretation. The `Rule:` discipline held completely in both runs:
+nine `Rule:` facts in `breakouts.md`, all citing provisions the document itself
+cites, and every coaching instruction that *reads* like a law — including
+"never through the slot", which the body itself calls "the absolute rule" —
+came out as `Never:` or `Priority:`.
+
+**Four things it changed in this specification**, all folded in above: the
+`###` level (§12.4), the three new labels (§12.2), the softer fact budget
+(§12.4), and the Common Mistakes / Key Takeaways exemption (§12.4).
+
+**Three things still to decide:**
+
+1. **Sections that need splitting, not capping.** `breakouts.md` §3 *The Named
+   Breakout Options* is 124 lines, nine options × five attributes, ~45
+   extractable facts. No six-fact selection is honest: naming some options and
+   not others implies a preference order **the document deliberately refuses to
+   assert**. It needs per-`###` blocks, which means giving the nine options
+   their own subheadings. Same for `defender.md`'s neutral-zone pressuring
+   subsection and `breakouts.md` §8.
+2. **What happens to the system-dependence caveats.** Five of thirteen
+   `breakouts.md` blocks spend a fact slot on one. They are the least
+   imperative-looking lines in every block and would be first cut if anyone
+   tightened the budget later — which is precisely how the cardinal rule gets
+   broken by attrition. `Convention:` is the mitigation; it needs enforcing.
+3. **Ownership collisions.** A fact can restate a number another document owns.
+   Both agents caught themselves doing it and stopped — the Tulsky zone-entry
+   rates belong to `zone_entries.md`, the hash-mark dimensions to
+   `rink_map_and_glossary.md`. The style guide's ownership convention has to
+   extend to the fact layer explicitly, or 25 documents will quietly duplicate
+   each other's numbers.
+
+**And one finding about this specification's own example.** The mind map block
+quoted in §12 is not section-traceable: `Position`, `Action` and `Targets` come
+from `defender.md` lines 36–38, but `Risk: Slot turnovers lead to direct
+scoring chances` comes from line 66 — the *next* subsection down. A hand-made
+example, by a careful author, already drifted one fact out of its section.
+
+> That is the whole argument for "extract, never author" in one line. It is not
+> a hypothetical failure mode; it is in the sample the convention was designed
+> from.
