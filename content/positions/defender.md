@@ -164,6 +164,14 @@ The transition zone. Your job is to prevent the opponent from entering your zone
 
 **Where to be:** Between the puck carrier and your net, facing the oncoming play, closing the distance as they come.
 
+**What to do:** Step up at the blue line to challenge only if you are confident you can win the puck or force a turnover. Otherwise, back up under control and deny a clean entry. Support from the neutral-zone forwards is important here.
+
+**Goal:** Prevent a clean zone entry. Force a dump-in or a turnover.
+
+**Key considerations:** Don't step up in the neutral zone unless you are certain you can win the puck. If you step up and miss, you leave your partner alone in a 2-on-1 (the most common form of odd-man rush — two attackers against one defender, with the defender forced to choose between covering the shot or the pass). When in doubt, maintain your position and back up under control.
+
+#### Gap control — the method
+
 **Gap control is the defining skill of the position, so here is the actual method.** Your "gap" is the distance between you and the puck carrier. Too big and they get a free run at you with speed and options; too small and one move puts them past you. See [Defending the Rush](../defending_the_rush.md) for the full treatment, including 2-on-1s and 3-on-2s.
 
 - **Start your feet before they reach you.** The most common defenceman error is standing still and letting the attacker build speed into you. Begin skating backwards early so you're already matching their pace when they arrive — you cannot close a gap from a standstill.
@@ -173,15 +181,12 @@ The transition zone. Your job is to prevent the opponent from entering your zone
 - **Stick in the passing lane, on the ice, out front.** An active stick on the ice takes away the pass without committing your body.
 - **Pivot late.** Once you turn to skate forwards you've given up your ability to react. Hold your backward skating as long as you can.
 
+#### Backward skating, and which way to pivot
+
 **Backward skating is the physical foundation of all of this**, and it is the skill that separates defencemen who can play a tight gap from those who can't — you cannot hold a gap you are not fast enough to hold. **Go and work through [Skating](../skating.md); it is not optional reading for this position.** The two things it will tell you that change your gap immediately: generate speed with **C-cuts and backward crossovers** rather than pushing straight back, and **pivot to the boards side rather than the middle** — so that when you are beaten you are beaten toward the wall instead of into your own slot. Note that this is a **coaching default, not a law**: some coaches want a middle pivot on specific reads, such as when turning away would take your eyes off the puck, or when you have inside help and the greater danger is the attacker cutting behind you. Ask which your coach wants, and drill both directions — the correct pivot is decided by where the attacker is, not by which way you happen to be competent. See [Skating → Which way to pivot](../skating.md#which-way-to-pivot--a-coaching-default-not-a-law). **If you have just been moved up from forward, this is the barrier** — [Switching Positions](../switching_positions.md) is honest that the forward-to-defence switch is a technical rebuild rather than a set of new decisions, and takes correspondingly longer.
 
-**What to do:** Step up at the blue line to challenge only if you are confident you can win the puck or force a turnover. Otherwise, back up under control and deny a clean entry. Support from the neutral-zone forwards is important here.
+#### "Step up" and "pinch" are two different plays
 
-**Goal:** Prevent a clean zone entry. Force a dump-in or a turnover.
-
-**Key considerations:** Don't step up in the neutral zone unless you are certain you can win the puck. If you step up and miss, you leave your partner alone in a 2-on-1 (the most common form of odd-man rush — two attackers against one defender, with the defender forced to choose between covering the shot or the pass). When in doubt, maintain your position and back up under control.
-
-**"Step up" and "pinch" are two different plays — keep them straight:**
 - **Stepping up** happens in the neutral zone or at your own blue line: you move *forward* toward an oncoming attacker to challenge them early rather than retreating. Risk: if you miss, there is nothing but open ice behind you.
 - **Pinching** happens at the *offensive* blue line: you step *down* into the offensive zone to stop a clearance and keep the puck in. Risk: if you miss, the puck is behind you going the other way — but your forwards are still in the zone to help.
 

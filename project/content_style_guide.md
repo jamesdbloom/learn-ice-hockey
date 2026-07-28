@@ -146,6 +146,98 @@ podcast's "if you only remember N things" segment.
 
 ---
 
+## Key facts blocks
+
+**Applies only to the 26 documents that teach how to play** — Positions,
+Systems, Technique, Hockey IQ, and `on_ice_communication.md`. Not Getting
+Started, not the glossary, not the rules primer, not the six off-ice documents:
+they are reference or off-ice material, and imperatives would misrepresent them.
+
+Each teaching section opens with a short block of extracted facts, so a player
+can take what they need to do off the page without reading the prose around it.
+
+````markdown
+### Carrying the Puck — Free Space
+
+```facts
+Position: Behind your own net or along the boards
+Action: Move the puck quickly and purposefully — don't hold it longer than you need to
+Targets: Winger on the boards, the centre coming low, or your defensive partner
+Goal: Transition the puck out of danger and start your team's breakout
+Never: Carry through the slot — skate behind the net to the other side instead
+```
+
+**Where to be:** …
+````
+
+### The rules
+
+- **At `###`, not `##`,** wherever a section has subsections. The `##` headings
+  in the positional documents are one-sentence containers; a block there
+  restates its own heading. Where a section has no subsections and is itself the
+  unit of teaching, `##` is right.
+- **3–6 facts, up to 8 where the section earns it.** If a cap would force out a
+  rulebook fact, the cap is wrong. If the section needs more than 8, it is
+  probably two sections.
+- **`## Common Mistakes` and `## Key Takeaways` get no block.** They are already
+  extraction layers, and a third restatement is one more place for a correction
+  to fail to reach.
+- **One line per fact.** A terse imperative, not a sentence of prose. If it needs
+  a subordinate clause to be true, it belongs in the body.
+
+### The labels
+
+A closed set. Do not invent new ones.
+
+| Label | Holds |
+|---|---|
+| `Position:` | Where you are |
+| `Action:` | What you do |
+| `Goal:` | What it is for |
+| `Priority:` | What wins when two things compete |
+| `Technique:` | How to execute it |
+| `Options:` | Alternatives, where more than one is legitimate |
+| `Targets:` | Who or where to pass |
+| `Read:` | The cue that selects this option over its siblings |
+| `Countered by:` | How the opposition defeats it |
+| `Never:` | A hard coaching constraint |
+| `Convention:` | A coaching choice, marked as one |
+| `Risk:` | What goes wrong, and how badly |
+| `Key:` | The one thing to remember |
+| `Mindset:` | The attitude the situation calls for |
+| `Rule:` | An actual rulebook rule, cited |
+
+**⚠️ `Rule:` means a rulebook rule and nothing else.** "Never carry through the
+slot" is a coaching instruction, however absolute the body makes it sound — it
+takes `Never:`. Using `Rule:` for coaching advice breaks
+[the cardinal rule](#the-cardinal-rule-never-present-a-coaching-choice-as-a-rule-of-hockey)
+in the most visible place on the page. Where the body hedges — *"a coaching
+default, not a law"*, *"a convention, not a law"* — the fact takes
+`Convention:`, and that hedge is not optional.
+
+### Extract, never author
+
+**Every fact must be traceable to a sentence already in that section.** Not the
+document — that section. This is the rule the whole convention rests on, and it
+exists because the hand-made mind map this convention was designed from already
+failed it: three of its four defender facts come from the free-space subsection
+and the fourth from the subsection below.
+
+Three consequences:
+
+1. **A fact may not contain a claim the section does not make.** If it cannot be
+   extracted without inventing, that is a finding about the section — raise it,
+   do not write around it.
+2. **The body is the source of truth.** Where a fact and the body disagree, the
+   fact is wrong by definition. Fix a body, then go and fix its facts —
+   [the summary layer is where corrections go to die](#writing-rules), and this
+   adds ten summary blocks per document to the two that already exist.
+3. **Ownership applies to facts too.** A fact may not restate a number another
+   document owns. The Tulsky zone-entry rates belong to `zone_entries.md`; rink
+   dimensions belong to `rink_map_and_glossary.md`. Point, do not copy.
+
+---
+
 ## Writing rules
 
 - **Plain English.** No jargon without definition on first use in that document.
