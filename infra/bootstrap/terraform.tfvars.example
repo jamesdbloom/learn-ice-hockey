@@ -1,0 +1,20 @@
+# Copy to terraform.tfvars and fill in.
+#
+#   cp terraform.tfvars.example terraform.tfvars
+
+# Required.
+github_repository = "CHANGEME/CHANGEME"
+
+# Must match the parent configuration.
+project_name = "ice-hockey"
+environment  = "production"
+aws_region   = "eu-west-2"
+
+# Local named profile. Must NOT be mockserver-build or mockserver-website.
+# aws_profile = "ice-hockey"
+
+# Defaults are <project_name>-tfstate-<account-id> and <project_name>-tfstate-lock.
+# Override only if you need specific names. Never point these at an existing
+# bucket or table — this configuration creates, it does not adopt.
+# state_bucket_name = "ice-hockey-tfstate-123456789012"
+# lock_table_name   = "ice-hockey-tfstate-lock"

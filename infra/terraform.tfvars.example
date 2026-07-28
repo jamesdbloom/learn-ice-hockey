@@ -1,0 +1,49 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored.
+#
+#   cp terraform.tfvars.example terraform.tfvars
+
+# --- Required: no defaults exist for these ---------------------------------
+
+# The domain. Not yet chosen — decision D1 in project/site_build_specification.md.
+domain_name = "CHANGEME.example"
+
+# The GitHub repository allowed to deploy, as owner/repo.
+github_repository = "CHANGEME/CHANGEME"
+
+# --- Isolation from MockServer: change these only with care ----------------
+
+# Prefixed to every resource name in this configuration.
+project_name = "ice-hockey"
+
+environment = "production"
+
+# --- Optional --------------------------------------------------------------
+
+aws_region = "eu-west-2"
+
+# Local named profile. Leave commented to use the default credential chain.
+# Must NOT be mockserver-build or mockserver-website.
+# aws_profile = "ice-hockey"
+
+# Extra certificate and distribution names.
+# subject_alternative_names = ["www.CHANGEME.example"]
+
+# true to create the hosted zone here (then delegate NS at the registrar),
+# false if a zone for domain_name already exists in this account.
+create_route53_zone = true
+
+# Leave false unless `aws iam list-open-id-connect-providers` shows that
+# token.actions.githubusercontent.com is absent. MockServer may own it already,
+# and a duplicate fails.
+create_oidc_provider = false
+
+github_branch = "main"
+
+# CloudFront access logs cost money per request and are rarely read.
+enable_logging = false
+
+# Merged over Project / ManagedBy / Repository / Environment, which are always set.
+tags = {
+  Owner      = "james"
+  CostCentre = "personal"
+}
