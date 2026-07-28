@@ -269,6 +269,8 @@ Rule: The free hand may fend off an opponent or their stick, but may not hold th
 ### A body check is the last step of a progression, not the first thing you learn
 
 ```facts
+Never: Deliver anything in this section in a league that does not permit checking — everything below is a penalty there
+Rule: Body checking is prohibited at 12U and below, in all girls'/women's classifications and in all non-check adult classifications (USA Hockey Rule 604(a))
 Key: League legality is a floor, not a readiness test
 Technique: The progression is skating, angling, stick checks, contact confidence, body blocking, take out/rub out, solid body checks
 Priority: If you cannot angle, lift a stick cleanly or stay balanced through contact, the missing skill is the step you skipped

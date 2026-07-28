@@ -282,6 +282,7 @@ Deciding *who* goes is the off-puck question, and it is the one this document an
 Priority: The front of your own net first — if nobody is there, go there, because nothing else matters as much
 Priority: Then take away the shooter's stick, not the puck — lift it or seal the blade
 Priority: Then get it out of the danger area — anywhere is better than the slot, and this is the one moment an unglamorous clear is unambiguously correct
+Rule: Not directly out of play, though — from your own zone that is a two-minute delay-of-game minor (NHL Rule 63.2(iii)); off the glass and along it is fine
 Priority: Then, and only then, look for the outlet — the exit pass before the danger is gone is how a scramble becomes a goal against
 Action: The mirror image applies in their end — net front first, sticks free, and shoot from anywhere before you try to be clever
 ```

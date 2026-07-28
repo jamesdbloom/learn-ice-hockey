@@ -362,8 +362,10 @@ Targets: The defence partner on the far side, reached behind the net — never t
 Position: The weak-side winger higher and wider than everyone, for the width that stops one side being loaded
 Priority: In your own end the safe outlet outranks the attacking option — support short, keep the angles safe
 Action: Use the goalie as support — best view on the ice, no puck to look at
-Rule: Firing it the length of the ice is icing: defensive-zone draw, no line change, no timeout (NHL Rule 81)
-Rule: The goalie may play the puck behind the goal line only inside the trapezoid (NHL Rule 1.8; 27.8, 63.2(viii))
+Rule: Firing it the length of the ice is icing: defensive-zone draw, no line change (NHL Rule 81.4) and no timeout (Rule 87.1 — Rule 81 contains no timeout provision)
+Rule: Both consequences are NHL and IIHF only; USA Hockey imposes neither, and shorthanded you may ice it at all (NHL 81.6, USA Hockey 624(b)(1)) — Special Teams owns the carve-outs
+Rule: Under NHL, KHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid, unless keeping skate contact with the crease (NHL Rule 1.8; 27.8, 63.2(viii))
+Key: Most rec, beer-league and youth associations have no trapezoid — there your goalie is a genuine fourth breakout option
 ```
 
 Your defenceman retrieves the puck behind your net. Before they turn, they need options, and the standard set is three:
