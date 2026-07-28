@@ -222,6 +222,82 @@ hand — the kind of thing that does not get done.
 
 ---
 
+## The key-facts layer
+
+Every teaching section in the 26 how-to-play documents now opens with a fenced
+```` ```facts ```` block of extracted labelled imperatives. The convention lives
+in [`../project/content_style_guide.md`](../project/content_style_guide.md); this
+is what building it taught.
+
+### The source example broke its own rule
+
+The convention was designed from a hand-made mind map. Its defender block draws
+`Position`, `Action` and `Targets` from lines 36–38 of `positions/defender.md`
+and `Risk` from line 66 — **the next subsection down**.
+
+A careful author, working by hand, on one block, already drifted a fact out of
+its section. That is the entire argument for *extract, never author*, and it
+came from the sample rather than from a hypothetical.
+
+### `Rule:` was the trap, and it was in the example too
+
+The mind map labels *"never carry through the high-danger slot"* as a `Rule`. It
+is a coaching instruction. Adopting that usage would have broken
+[the cardinal rule](../project/content_style_guide.md) in the most visible place
+on every page, in 26 documents at once.
+
+`Rule:` is now reserved for cited rulebook text; coaching constraints take
+`Never:`. Across 3,900+ facts, **every `Rule:` fact carries a citation and none
+is coaching advice** — including "never through the slot", which `breakouts.md`
+itself calls "the absolute rule" and which came out as `Never:`.
+
+### `Convention:` did not exist and had to
+
+The corpus hedges constantly and correctly — *"a coaching default, not a law"*,
+*"a tendency, not a law"*. With no label for that, the pilot found the hedge
+either bloated the line or was dropped. `Convention:` is used **251 times**:
+251 places where a coaching choice is marked as one at a glance.
+
+### The spec was wrong twice, and the checker found both
+
+`scripts/check_facts.py` was written to enforce the mechanical rules. It
+immediately failed content that was right:
+
+- **A flat 8-fact cap evicted rulebook facts** — Rule 56.1, the interference and
+  pick trap, and the trapezoid rule in `defender.md`. The style guide already
+  said a cap must never do that. `Rule:` facts no longer count against it.
+- **A flat 200-character limit fought the requirement to keep cross-book
+  divergences intact.** The most valuable material in this corpus is exactly the
+  material that needs a subordinate clause. `Rule:` and `Convention:` now get
+  300.
+
+> Where a fact ran long it was **split into two complete facts, never trimmed**.
+> Under pressure the thing that gets trimmed is always the caveat.
+
+### What the agents refused to write
+
+The most reassuring output was the rejections. Independently, across 26
+documents, they declined to convert qualified findings into imperatives —
+`faceoffs.md`'s r-values, `shooting.md`'s royal-road share, `scanning_and_
+anticipation.md`'s Berg data, `game_management.md`'s goalie-pull simulations —
+and refused to restate numbers another document owns, pointing instead.
+
+One found a **defect in the body**: `time_and_space.md` §6 states the
+no-line-change-after-icing rule bare, and USA Hockey is the outlier. Rather than
+promote a known-incomplete rule into the most visible layer on the page, it
+dropped the fact and flagged the prose.
+
+### The cost, stated plainly
+
+This adds ~690 blocks to a corpus that had two summary blocks per document.
+**That is roughly a tenfold increase in the surface where a corrected body can
+be contradicted by a stale summary** — in the layer the style guide already
+identifies as where corrections go to die. The controls are extraction over
+authorship, body-wins-on-conflict, and a review round that reads only the fact
+layer. **That review round has not yet run.**
+
+---
+
 ## Open threads
 
 Things decided provisionally, or not yet decided, that a future session should
@@ -235,4 +311,7 @@ pick up.
 | **`style-src 'unsafe-inline'`** | Required while Astro inlines critical CSS. Tighten if that ever stops |
 | **NotebookLM terms** | §8 of the build spec. Must be settled before a public podcast feed, not before narration |
 | **iOS offline storage behaviour** | §10.4. Documented from general knowledge and **likely stale**; verify on real hardware before promising offline audio |
-| **Stale root README** | Still claims `.github/workflows/` and the speech tooling are "not yet written". Both exist |
+| **Stale root README** | ~~Still claims `.github/workflows/` and the speech tooling are "not yet written"~~ — corrected |
+| **Fact-layer-only review round** | Not run. The one control on the key-facts layer that needs a reader rather than a checker, and the one the style guide's own history says matters most |
+| **`##` preambles carry unblocked teaching** | Found independently by six agents. A `##` with subsections may now carry a block where its own body holds material no subsection covers, but the run used the stricter earlier rule — so `puck_support_and_spacing.md` (3 sections), `passing_and_receiving.md` (2), `forechecking_systems.md` (3), `puck_handling.md`, `zone_entries.md` §5, `switching_positions.md`, `defensive_zone_coverage.md` and `positions/goaltender.md`'s save list all have teaching with no facts block. A targeted sweep would recover it |
+| **Sections at the 8-fact cap doing two jobs** | Roughly fifteen, named in the agent reports — `breakouts.md` §8, `defender.md` blocking shots, `special_teams.md` faceoffs, `offensive_zone_play.md` goaltender interference, and others. Each would be better split than capped |

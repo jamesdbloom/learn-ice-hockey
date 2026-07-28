@@ -71,6 +71,13 @@ For a defenceman at 19:31, the equivalents are about **48 seconds** total and **
 
 ### What that means for how you practise
 
+```facts
+Key: Working only on what you do with the puck trains three to four percent of your ice time — the other 96% is untrained
+Risk: The untrained 96% decides whether your possessions happen in a dangerous place with your head up, or in a corner with two men on you
+Mindset: Skill work is not wasted — one and a quarter seconds is a brutally short window in which to be unskilled
+Action: Improve the fifteen minutes you spend on the ice without the puck — it is the most reliable way to get more out of your thirty seconds with it
+```
+
 If you spend every practice and every stickhandling session working on what you do with the puck, you are training **three to four percent of your ice time**. That work is not wasted — those 24 possessions are where goals get created, and one and a quarter seconds is a brutally short window in which to be unskilled. But the other **96%** is currently untrained, and it is the part that decides whether those 24 possessions happen in a dangerous place with your head up, or in a corner with two men on you.
 
 Put it the other way round. The most reliable way to get more out of your thirty seconds with the puck is to improve the fifteen minutes you spend on the ice without it.
@@ -80,6 +87,14 @@ Put it the other way round. The most reliable way to get more out of your thirty
 ---
 
 ## The four off-puck states
+
+```facts
+Read: At any instant that you do not have the puck you are in one of four states — your team has it, they have it, it is loose, or it has just changed
+Priority: When two states apply, take the one that names the more urgent job — a loose puck you can get to is State 3, whatever else is going on
+Convention: A working sort, not a mathematical partition — states 3 and 4 genuinely overlap, and the value of the sort is that it changes what you look at and where you skate
+Key: The state changes without warning several times a shift, and most bad off-puck play is a player still doing the right thing for the previous state
+Key: Most players have a plan for one state only, which is exactly why States 3 and 4 are where the most improvement is available
+```
 
 Here is the organising idea for the rest of this document. At any instant that you do not have the puck, you are in one of four states, and each one asks something different of you:
 
@@ -110,9 +125,21 @@ Become a passing option. This is the obvious one and it gets its own full sectio
 
 ### Create options you never use
 
+```facts
+Goal: Be a credible option even when the puck never comes — one the carrier looks at and declines has still made a defender respect it
+Key: Two credible options force a defender to choose; one option lets them sit in the lane
+Position: Support is about being available in a different place, not about being close — the geometry belongs to Puck Support and Spacing
+```
+
 A passing option that the carrier *looks at* and declines still did its job, because a defender had to respect it. Two credible options force a defender to choose; one option lets them sit in the lane. This is the whole logic of [Puck Support and Spacing](puck_support_and_spacing.md) — support is about being available in a *different place*, not about being close.
 
 ### Occupy a defender
+
+```facts
+Action: Take a defender away from where the play is going to happen, whether or not the puck ever comes to you
+Key: Being the wrong player to receive the pass does not excuse you from doing anything
+Read: As the far-side winger with the puck on the opposite half-wall, whether you drift into the middle or hold width changes what the strong-side defenceman can do
+```
 
 Take a defender away from where the play is going to happen, whether or not the puck ever comes to you. Also below, in its own section, because it is the least understood work in hockey.
 
@@ -126,6 +153,16 @@ Somebody on your team has to go to the puck, and the other four have to do somet
 
 ### If you are the one pressuring
 
+```facts
+Goal: Take options away and force the carrier to decide early — winning the puck is a bonus, not the job
+Action: Angle, do not chase — approach on a curve that closes one side of the ice, so the only route left is the one your support is covering
+Action: Steer them where your help is; angling a carrier into the middle while your support sits on the wall is worse than not pressuring at all
+Technique: Arrive under control — close the last few feet with short strides, stick out front, in a position to change direction
+Priority: Stick on the puck, body on the man, in that order — take the body only when it does not cost you the lane behind you
+Action: Talk, because you are the trigger — "I've got the carrier" tells your support where to stand, and silence makes four people guess
+Convention: Who goes is a coaching choice — under the 2-1-2 and low zone collapse used throughout the nearest player pressures; under a 1-2-2 only one forward pressures at all, and under a trap almost nobody pressures deep
+```
+
 Roughly a fifth of the time it is you: **F1 on the forecheck, the first defender back on a rush, the strong-side defenceman in your own corner.** (**F1, F2 and F3 are roles defined by order of arrival, not positions** — whoever gets there first is F1.) The job is not to win the puck; winning it is a bonus. The job is to **take options away and force the carrier to decide early**, so that your four teammates are covering a narrower set of possibilities than they were a second ago.
 
 - **Angle, do not chase.** Approach on a curve that closes one side of the ice, so the only route left is the one your support is covering. Skating straight at somebody gives them both sides and gives you nothing.
@@ -137,17 +174,38 @@ Roughly a fifth of the time it is you: **F1 on the forecheck, the first defender
 
 ### If you are not the one pressuring
 
+```facts
+Position: Four of you are in this position at any moment, and only one teammate is on the puck
+Risk: This is where goals get conceded, because the four non-pressuring players either all chase the puck or all stand still
+Key: The single organising question is "what is behind me, and who is it?"
+```
+
 Four of you are in this position at any moment, and this is where goals get conceded, because the four non-pressuring players either all chase the puck or all stand still.
 
 The single organising question: **what is behind me, and who is it?**
 
 ### Watch your assignment, not the puck
 
+```facts
+Never: Watch the puck on defence — five teammates are already looking at it, and your man is the one thing nobody else is looking at
+Technique: Keep your assignment in your peripheral vision while your eyes take short, repeated looks at the puck — not the reverse
+Read: If you cannot see your man and the puck in the same glance, you are in the wrong place — adjust your position until you can
+Convention: Coaches name puck-watching as the commonest amateur defensive error — an observation rather than a measured ranking, since nobody publishes a breakdown of amateur mistakes
+```
+
 The defensive error coaches name most often in amateur hockey is watching the puck — an observation rather than a measured ranking, since nobody publishes a breakdown of amateur mistakes. It feels responsible. It is not, because the puck is the one thing on the ice that five teammates are already looking at, and the man you are supposed to be covering is the one thing nobody else is looking at.
 
 The technique is to keep your assignment in your **peripheral vision** while your eyes take short, repeated looks at the puck — not the reverse. If you cannot see your man and the puck in the same glance, you are in the wrong place: adjust your position until you can.
 
 ### Stick in the lane, body between man and net
+
+```facts
+Technique: Blade on the ice, flat, in the passing lane between the puck and your man — a stick held six inches up removes nothing
+Position: Put your body between your man and your own net, not between your man and the puck
+Technique: Face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane
+Priority: When you cannot both seal the lane and stay net-side, net-side wins in the defensive zone
+Key: A pass completed twenty feet from your net is survivable; a player alone at the goalmouth is not
+```
 
 Two separate tools, and players routinely use only one.
 
@@ -157,6 +215,14 @@ Two separate tools, and players routinely use only one.
 Doing both at once is a body-position problem: face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane. When they conflict — you cannot both seal the lane and stay net-side — **net-side wins in the defensive zone**, because a pass completed twenty feet from your net is survivable and a player alone at the goalmouth is not.
 
 ### Layer, do not duplicate
+
+```facts
+Never: Go and pressure a carrier a teammate is already pressuring
+Position: Be the second layer instead — behind and slightly to the side of them, in the space they would be beaten into
+Key: Take the layering distances from Puck Support and Spacing rather than from memory
+Convention: System-dependent — under the low zone collapse used throughout you sink toward the slot and cover areas; in man-to-man you may have to leave the layer to follow your check to the point; a hybrid is man low and zone high
+Action: Ask your coach which coverage you play, and what the trigger is for switching
+```
 
 If a teammate is already pressuring the puck carrier, **do not go and pressure them too.** Position yourself as the **second layer** instead: behind and slightly to the side of them, in the space they would be beaten into.
 
@@ -174,6 +240,15 @@ Nobody has it. It is on the boards, in a corner, sitting in the slot after a sav
 
 ### Who goes
 
+```facts
+Convention: Who goes is a coaching choice — under the 2-1-2 default the nearest two forwards go and the third reads; under a 1-2-2 one player goes and the other two hold the middle
+Key: F1, F2 and F3 are roles defined by order of arrival, not by position — whoever gets there first is F1
+Position: In your own zone under a low zone collapse, the closest player takes the corner, one teammate supports on the boards side and one covers the net front — never two
+Action: One player goes hard, one player supports, nobody else joins — the rule that survives every system
+Risk: Two players arriving at the same loose puck from the same angle is a turnover waiting to happen, because both are committed and neither is available
+Action: If it is genuinely ambiguous, call it — "I got it", "yours", "help" — and the call resolves it
+```
+
 The honest answer is that this is a **coaching choice**, and the worst version is not knowing.
 
 Under the house default used throughout — a **2-1-2 forecheck** in the offensive zone — the first forward in (F1) pressures the puck and the second (F2) supports them, so on a loose puck in their end **the nearest two forwards go and the third reads**. Remember that **F1, F2 and F3 are roles defined by order of arrival, not by position**: whoever gets there first is F1, whether they are a centre or a winger.
@@ -188,11 +263,28 @@ If it is genuinely ambiguous, **call it** — "I got it," "yours," "help" — an
 
 ### Then how you arrive — owned elsewhere
 
+```facts
+Key: Deciding who goes is the off-puck question this document answers; how you arrive belongs to Body Contact and Battles, §10
+Priority: Winning the puck never justifies arriving in any orientation other than the safe one
+Technique: Get your skates parallel to the boards before contact, and take it on your forearm and hip, not the point of your shoulder
+Technique: Head up, chin off your chest
+Never: Turn your back to the wall, and never duck
+Key: Squaring your chest to the boards is the fallback for when you cannot turn in time, not the target
+```
+
 Deciding *who* goes is the off-puck question, and it is the one this document answers. What the two players who go should actually do when they get there is not: winning the race is not winning the puck, and how you arrive, how you take body position, what the rules entitle you to, and — above all — how not to get hurt doing it all belong to **[Body Contact and Battles → Loose Puck Races and 50-50 Pucks](body_contact_and_battles.md)**, which quotes the USA Hockey entitlement standard and the NHL interference rule that make inside body position legal, and carries "first to arrive, last to commit" with its limits.
 
 > **⚠️ One thing from there that outranks winning the puck, repeated here because the moment it applies is this one.** A puck race to the wall is the single most dangerous moment in hockey — [Body Contact and Battles → §10, Loose Puck Races and 50-50 Pucks](body_contact_and_battles.md) states, under "Protecting yourself on the boards", that *"puck races to the wall are where checking-from-behind and boarding injuries happen"*, and **everything in its §6 applies at exactly this moment**. The non-negotiables: get your **skates parallel to the boards** before contact, take it on your **forearm and hip** — not the point of your shoulder — with your **head up and chin off your chest**, and **never your back to the wall, never duck**. Squaring your chest to the boards is the fallback for when you cannot turn in time, not the target. Winning the puck never justifies arriving in any other orientation.
 
 ### What to prioritise when structure has broken down
+
+```facts
+Priority: The front of your own net first — if nobody is there, go there, because nothing else matters as much
+Priority: Then take away the shooter's stick, not the puck — lift it or seal the blade
+Priority: Then get it out of the danger area — anywhere is better than the slot, and this is the one moment an unglamorous clear is unambiguously correct
+Priority: Then, and only then, look for the outlet — the exit pass before the danger is gone is how a scramble becomes a goal against
+Action: The mirror image applies in their end — net front first, sticks free, and shoot from anywhere before you try to be clever
+```
 
 Sometimes there is no structure left — a scramble in front of your net, three players down, sticks everywhere. When you cannot work out the right play, work down this list in order:
 
@@ -211,11 +303,29 @@ Possession has just changed, or is in the act of changing, and neither team has 
 
 ### Why it matters so much
 
+```facts
+Key: Every organised defensive structure is designed and rehearsed, and against a set structure your options are limited
+Read: In the two or three seconds after a turnover that structure does not exist yet — players facing the wrong way, defencemen up ice, forwards behind the puck
+Key: Almost all clean scoring chances in hockey originate in that window
+Risk: The same is true against you — two seconds of your own disorganisation is where you concede
+```
+
 Every organised defensive structure — a defensive-zone box or collapse, a neutral zone trap, a set forecheck — is designed and rehearsed. Against a set structure your options are limited. In the two or three seconds after a turnover, that structure does not exist yet. Players are facing the wrong way, defencemen are up ice, and forwards are behind the puck. Almost all clean scoring chances in hockey originate in this window.
 
 The same is true against you. Two seconds of your own disorganisation is where you concede.
 
 ### What to do off the puck in transition
+
+```facts
+Action: When you have just won it, turn and go immediately — start moving on the likelihood of possession, not the certainty of it
+Risk: Skating hard in the wrong direction is a survivable error; being late means the window is gone
+Action: Get width and get depth in the same instant — if everyone does the same one, the breakout dies
+Never: All go — transition is exactly where the "one more forward joined the rush than should have" goal against comes from
+Read: When you have just lost it, find the most dangerous man, not the puck — usually the man arriving late into the middle rather than the carrier
+Never: Everyone sprint to the middle — two wingers and a centre converging there leaves both outside attackers unmarked
+Convention: A coaching choice rather than a law — the standard assignment used throughout is centre in the middle lane, wingers on the outside; others use first man back takes the middle, or man-on-man from the puck outward
+Action: Count — know whether it is a 2-on-1, a 3-on-2 or a 3-on-3, because the correct behaviour differs completely
+```
 
 **When your team has just won it:**
 
@@ -231,6 +341,12 @@ The same is true against you. Two seconds of your own disorganisation is where y
 
 ### Recognising it first
 
+```facts
+Key: Transition is won by whoever recognises the change of possession earliest, and recognition is a trainable habit
+Action: Get your head up before the turnover happens, so you already know where the space is when it does
+Risk: If you find out about turnovers by seeing the puck go the other way, you will always be second
+```
+
 Transition is won by whoever recognises the change of possession earliest, and recognition is a trainable habit — it is the payoff for scanning. If your head is up before the turnover happens, you already know where the space is when it does. If you find out about turnovers by seeing the puck go the other way, you will always be second.
 
 ---
@@ -240,6 +356,15 @@ Transition is won by whoever recognises the change of possession earliest, and r
 Now the detail on State 1's most obvious job.
 
 ### Unmarked is not the same as available
+
+```facts
+Key: Unmarked means no defender is near you; available means the carrier can actually get you the puck — the second is the one that matters
+Technique: Stick on the ice, blade flat, in a position to receive — the blade is your target, so give the passer something to hit
+Position: Give a straight passing angle from the puck to your blade; if the carrier would have to bend the pass around a body, you are not available
+Read: Look for a defender's stick lying flat across the only lane — the commonest failure, and it leaves you unmarked and unavailable
+Action: When you get open, look at the passing lane, not at your defender — if it is blocked, move three or four feet to open the angle
+Action: Say something — a short call gives the carrier information their eyes may not have
+```
 
 This distinction is the whole section, so it comes first.
 
@@ -255,6 +380,13 @@ And say something. A short call gives the carrier the information their eyes may
 
 ### Change of speed
 
+```facts
+Key: Defenders match speed but struggle to match changes of speed, because reacting costs them a beat
+Action: Slow down, then explode — coasting for a stride invites the defender to close and settle, and the moment they settle you go
+Never: Arrive at your top speed with nowhere to go — speed is only useful if it creates separation at the moment the pass comes
+Technique: Stopping is a change of speed too — a hard stop while your check keeps going creates separation and leaves you facing the play
+```
+
 Defenders match speed. They struggle to match *changes* in speed, because reacting costs them a beat.
 
 - **Slow down, then explode.** Coasting for a stride invites the defender to close and settle. The moment they settle, go. This is the most effective and least used move in amateur hockey, because slowing down feels like laziness.
@@ -263,12 +395,31 @@ Defenders match speed. They struggle to match *changes* in speed, because reacti
 
 ### Change of direction
 
+```facts
+Technique: Two steps one way, then hard the other — the defender's weight has to transfer before they can follow
+Read: Attack their hips — break in the direction their hips are not facing
+Options: Curl rather than stop-start when you want to keep options; a full stop makes you a stationary target and costs three strides to restart
+Action: Come back toward the puck — you arrive with speed the defender cannot match from a standstill, and you shorten the pass
+```
+
 - **Two steps one way, then hard the other.** The defender's weight has to transfer before they can follow, and edge-work costs them more time than it costs you because you knew it was coming.
 - **Attack their hips.** Break in the direction their hips are *not* facing. A defender whose hips are square to the boards cannot easily follow you to the middle.
 - **Curl rather than stop-start when you want to keep options.** A tight turn keeps your feet moving and your head up; a full stop makes you a stationary target and costs you three strides to restart.
 - **Come back toward the puck.** Almost every amateur skates away from the carrier and hopes. A player skating *toward* the puck arrives with speed the defender cannot match from a standstill, shortens the pass, and gives the carrier a target moving into space rather than away from it.
 
 ### Screens and picks — what is actually legal
+
+```facts
+Rule: You are allowed the ice you are standing on and are not required to move in order to let an opponent proceed (NHL Rule 56, Interference)
+Rule: You may block an opponent's path provided you are in front of him and moving in the same direction (NHL Rule 56, Interference)
+Rule: Moving laterally without establishing body position and then making contact with a non-puck carrier is penalised as interference (NHL Rule 56)
+Rule: A pick — moving into an opponent's path without initially having body position — is an interference minor (NHL Rule 56)
+Rule: You are always entitled to use body position to lengthen an opponent's path to the puck, without your stick, your free hand or an otherwise illegal check (NHL Rule 56)
+Action: Run your route close past a teammate so your check has to go around them — legal traffic, available on almost every faceoff and net drive
+Never: Stop in a defender's path and take the contact, or drift sideways into a chaser
+Key: "Screen" here means the goaltender's sightline and nothing else — the rulebook has no legal skater-on-skater screen, so call yours traffic, or a route
+Convention: Obstruction is called far less consistently at amateur level than in the NHL, in both directions — do not build your game on getting away with picks, and do not assume the referee will punish theirs
+```
 
 Using a teammate's body to separate from your check is legal within limits, and the limits are precise. The NHL rulebook (Rule 56, Interference) defines them.
 
@@ -290,6 +441,13 @@ The illegal version is stopping in a defender's path and taking the contact, or 
 > **Rec and beer-league note:** obstruction is called far less consistently at amateur level than in the NHL, in both directions. Do not build your game on getting away with picks, and do not assume the referee will punish theirs.
 
 ### Timing your break
+
+```facts
+Key: Arriving open too early is the same as not being open — the defender has that second to recover
+Action: Watch the passer, not the space
+Read: Break when their head comes up, when the puck comes to the middle of their blade or their forehand, when they have just beaten a checker, or when their shoulders turn toward you
+Technique: Hold, hold, hold, then go on their look — keep moving in a small way throughout, so your check stays honest
+```
 
 This is the most neglected mechanic in getting open, and the most valuable.
 
@@ -314,6 +472,14 @@ Some off-puck work exists purely to move a defender somewhere unhelpful. You wil
 
 ### Drive the net
 
+```facts
+Action: Skate hard at the net without the puck — a half-hearted glide does not move anybody
+Goal: Pull a defender with you, because leaving a man driving the goalmouth is unacceptable to any defenceman
+Goal: Create a rebound and deflection threat, which changes the goalie's depth and attention
+Key: The drive bends the defence toward the net and opens the ice behind you — the high slot and the point
+Mindset: If you are going, go as if you expect the puck
+```
+
 Skating hard at the net without the puck does three things at once:
 
 - It pulls a defender with you, because leaving a man driving the goalmouth is unacceptable to any defenceman.
@@ -323,6 +489,17 @@ Skating hard at the net without the puck does three things at once:
 The most common goal in hockey involves someone drawing a defender to the net and someone else shooting into the space they vacated. **The drive has to be genuine.** A half-hearted glide does not move anybody. If you are going, go as if you expect the puck.
 
 ### Screen the goalie
+
+```facts
+Rule: A goal is disallowed where an attacker, "either by his positioning or by contact", impairs the goalkeeper's ability to move freely within his crease or defend his goal — no contact is required (NHL Rule 69.1)
+Rule: A goal is disallowed if you establish a significant position within the crease so as to obstruct the goalkeeper's vision and impair his ability to defend his goal (NHL Rule 69.3)
+Position: Stand where the goalie's eyes are, not where the puck is going — occupy the sightline between the puck and the goalie
+Position: Keep both feet outside the crease; outside it, incidental contact is legal if you made a reasonable effort to avoid it
+Never: Initiate contact with the goaltender, inside or outside the crease
+Key: Staying out of the blue paint is necessary, not sufficient — positioning alone, from outside it, can still take the goal off the board
+Action: Keep your stick on the ice — a screen is a tip threat and a rebound threat, not a place to stand and watch
+Technique: Move late — getting out of the way at the last instant, so the goalie picks the puck up a fraction too late, is more disruptive than a static body
+```
 
 Standing in the goaltender's line of sight so they cannot see the shot is **legal from outside the crease** — and that qualifier is not a footnote, it is the rule.
 
@@ -341,11 +518,25 @@ More detail from the other side in [Goaltender](positions/goaltender.md), and on
 
 ### Be a decoy on the weak side
 
+```facts
+Position: The weak side is the side of the ice away from the puck — stand there with your stick down and your feet moving
+Goal: Force the defence to keep somebody accounting for you; a player standing on the weak side watching does not
+Action: Look like you are about to receive a pass — blade down, body open to the puck, one small step toward the seam
+```
+
 The **weak side** is the side of the ice away from the puck. A player standing on the weak side with their stick down and their feet moving forces the defence to keep somebody accounting for them. A player standing on the weak side watching does not.
 
 The difference is small and entirely about intent: **look like you are about to receive a pass.** Blade down, body open to the puck, one small step toward the seam. That is what makes a defender stay.
 
 ### Stretch the defence for width
+
+```facts
+Goal: Defences want to defend a narrow rink and collapse toward the middle — your width is what stops them
+Position: As the far winger in the offensive zone, hold your position near the boards; drifting into the middle to look busy lets the defence compress
+Key: On a rush, a wide forward makes the defenceman respect the outside lane, widening the gap between the pair — and that gap is where the middle drive goes
+Position: In the neutral zone, a stretched forward high near the far blue line pins a defenceman deep and shortens the ice your breakout has to cover
+Convention: How much width a team wants in the offensive zone is a coaching choice — some want the far winger high and wide against the counter-attack, others want them crashing the back post on every shot; ask
+```
 
 The rink is 85 feet wide. Defences want to defend a narrow rink, so they collapse toward the middle. Your width is what stops them.
 
@@ -358,6 +549,16 @@ The rink is 85 feet wide. Defences want to defend a narrow rink, so they collaps
 ---
 
 ## Supporting the puck carrier: the receiver's half of the pass
+
+```facts
+Key: A completed pass has two authors — if you are waiting to be found, you are doing a quarter of your job
+Action: Give a target — stick on the ice, blade flat, angled to receive, something specific to aim at rather than a general area
+Position: Give a lane — be open along a line the puck can travel, and adjust your position to create it rather than expecting the puck to bend
+Action: Give a time — arrive as the passer is ready, not before
+Technique: Arrive facing where you intend to go, and open your body up-ice before the puck arrives
+Action: Give information — "time", "man on", "reverse", "over"; one word said early is worth more than a perfect route
+Options: When the carrier is pinned they need a close, safe, catchable option — being the boring five-foot outlet is a real job
+```
 
 [Puck Support and Spacing](puck_support_and_spacing.md) is the full treatment of where to be. This section covers only the thing that document does not: **your responsibility, as the man without the puck, for making the pass possible.**
 
@@ -380,6 +581,16 @@ Everything above is about knowledge. This section is about the part that require
 
 ### Backchecking
 
+```facts
+Key: Backchecking is racing back toward your own end when possession is lost; forechecking is applying pressure in the opponent's end
+Never: Chase the puck carrier — the dangerous man is the one arriving unmarked into the middle lane, and covering a lane beats catching the carrier
+Never: Use your stick, body or free hand to restrain a carrier from behind — you must skate to regain position
+Convention: Which lane is yours is a coaching choice — the assignment used throughout gives the centre the middle and the wingers the outside; alternatives are first man back takes the middle, and man-on-man from the puck outward
+Key: Under every one of those assignments, somebody owns the middle and nobody assumes it is somebody else
+Action: Backcheck to a man, not to a place — pick up a player and communicate that you have them
+Risk: Skating hard to the top of the circles and stopping, having covered nobody, spends the energy and buys nothing
+```
+
 **Backchecking** is racing back toward your own end when possession is lost. It is the opposite of **forechecking**, which is applying pressure in the opponent's end. The two words are easily confused and mean nearly opposite things.
 
 Backchecking well is mostly about two decisions, both made while sprinting:
@@ -389,17 +600,37 @@ Backchecking well is mostly about two decisions, both made while sprinting:
 
 ### The second effort
 
+```facts
+Key: The second effort is the play after the play — you lose a battle and, rather than gliding out of it, you turn and go again
+Action: Go to the rebound rather than admiring your shot, and take one more stride when you get beaten wide
+Read: The player who won the first battle almost always relaxes for a beat, and that beat is available to whoever takes another stride
+```
+
 Roughly: the play after the play. You lose a battle, and rather than gliding out of it you turn and go again. You shoot, and rather than admiring it you go to the rebound. You get beaten wide, and rather than conceding you take one more stride.
 
 Second efforts win a disproportionate number of pucks because the opponent has already relaxed. The player who won the first battle almost always relaxes for a beat, and that beat is available to whoever is willing to take another stride.
 
 ### Finish your route
 
+```facts
+Action: If you commit to driving the net, arrive at the net; if you break into a lane, complete the break even after the pass has gone elsewhere
+Risk: Within a period defenders learn your drives are not real and stop respecting them, and you have lost the ability to occupy anybody
+Risk: An abandoned route leaves you in an in-between place, neither supporting nor defending, and that is where odd-man rushes get conceded
+```
+
 If you commit to driving the net, **arrive at the net.** If you break into a lane, **complete the break** even after the pass has gone elsewhere.
 
 Half-finished routes are the most common off-puck failure in amateur hockey, and they cost twice. First, defenders learn within a period that your drives are not real and stop respecting them, which means you have lost the ability to occupy anybody. Second, an abandoned route leaves you in an in-between place, neither supporting nor defending, and it is from those places that odd-man rushes get conceded.
 
 ### The honest point about effort
+
+```facts
+Mindset: Off-puck effort is the most visible thing about you and the easiest thing to change
+Key: Your coach cannot easily see whether you made the right read, but can see exactly who backchecked, who finished the route and who watched
+Key: "Compete", "hard to play against" and "reliable" are almost always descriptions of off-puck behaviour
+Action: It requires no new skill — backcheck hard into your lane, finish your route, take a second stride into a battle
+Never: Skate hard in random directions — effort in the wrong place is just fatigue
+```
 
 **Off-puck effort is the most visible thing about you and the easiest thing to change.**
 
@@ -431,6 +662,14 @@ Off-puck play is trainable, but not by the drills most teams run. A line rush dr
 
 ### Small-area games
 
+```facts
+Goal: Small-area games are the most efficient off-puck training available, because in a small space you cannot hide and you are constantly forced into one of the four states
+Action: Ask for two-touch or one-touch — it removes the option of skating out of trouble, so the only way to succeed is off-puck movement by everybody else
+Action: Make a goal count only with a net-front presence, which forces net drives
+Action: Require a change of direction before receiving, which trains separation
+Action: Play three minutes with no talking, then three with mandatory calls — the difference makes the value of communication self-evident
+```
+
 Games played in a reduced space — cross-ice, one zone, three-on-three, with modified rules — are the most efficient off-puck training available, because in a small space you cannot hide and every player is constantly forced into one of the four states.
 
 USA Hockey's coaching material makes this case explicitly. Its *Teaching Concepts Through Small-Area Games* manual describes hockey as "an instinctive, largely unscripted game," notes that players "will be forced to make decisions repeatedly while battling for space in confined areas," and identifies the second component of development, after skills, as **"'sense,' both with and without the puck"** — hockey sense being "the ability to read the play and react (or anticipate) appropriately." The manual quotes NHL coach Mike Sullivan: "Situations in hockey rarely occur the same way we draw them up in practice. We, as coaches, would like to make the game black and white. The fact of the matter is that the game, by nature, is gray."
@@ -444,6 +683,12 @@ Useful constraints to ask your coach for, or to impose in a shinny game:
 
 ### Watch yourself on video away from the puck
 
+```facts
+Action: Watch a filmed shift and never look at the puck — watch only yourself
+Read: Look for long glides, routes abandoned three-quarters of the way, standing still watching a battle, and facing the wrong way when the puck came free
+Technique: Pick three shifts and write down how many times the state changed, how many of those changes you reacted to late, and one moment you were unmarked but not available
+```
+
 If any of your games are filmed, the single most valuable exercise available to you is this: **watch a shift and never look at the puck.** Watch only yourself.
 
 You will see things you do not believe. Long glides. Routes abandoned three-quarters of the way. Standing still watching a battle you could have joined. Facing the wrong way when the puck came free. Almost every player's first honest off-puck video session is uncomfortable, and almost every player improves immediately afterwards, because the problems are obvious once seen.
@@ -452,9 +697,21 @@ A structured way to do it: pick three shifts, and for each one write down (a) ho
 
 ### Watch a live game and follow one player
 
+```facts
+Action: At a live game, or on a wide-angle feed, pick one player and watch only them for a full shift — not the puck
+Read: Notice how much a good centre moves when nothing is happening, and how often they adjust position by a few feet in response to something you had not noticed
+Key: A standard broadcast follows the puck and crops out exactly the four players you are studying, so live is better
+```
+
 The best off-puck education available for free: at a live game, or on a wide-angle feed, **pick one player and watch only them for a full shift** — not the puck. Two minutes of a good centre shows you how much they move when nothing is happening and how often they adjust their position by a few feet in response to something you had not noticed. Live beats a standard broadcast, which follows the puck and crops out exactly the four players you are studying. Full method in [How to Watch Hockey](how_to_watch_hockey.md).
 
 ### Self-check questions for the bench
+
+```facts
+Position: The bench is where off-puck improvement actually happens — thirty seconds and a clear view
+Action: After each shift ask yourself one of the six questions — one, not all six
+Key: Pick one question and use it for a whole game; six questions asked vaguely change nothing, one asked six times changes behaviour by the third period
+```
 
 The bench is where off-puck improvement actually happens, because you have thirty seconds and a clear view. After each shift, ask yourself one of these — one, not all six:
 
