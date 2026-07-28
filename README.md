@@ -186,6 +186,13 @@ The external citation layer has a machine-checkable baseline: [`project/verifica
 │   ├── settings.json               permissions and environment
 │   └── agents/                     reusable review agents distilled from the rounds
 │
+├── docs/                           how it is built and why (see docs/README.md)
+│   ├── philosophy.md               the principles that decided the arguments
+│   ├── architecture.md             markdown in, website and audio out
+│   ├── aws-design.md               the AWS resource design, and what was rejected
+│   ├── operations.md               runbook: deploy, restore, troubleshoot
+│   └── decision-log.md             dated decisions and the traps found the hard way
+│
 ├── scripts/                        link checking, and speech/audio tooling
 ├── site/                           the Astro static site (see site/README.md)
 ├── infra/                          Terraform: S3, CloudFront, ACM, Route 53, GitHub OIDC
@@ -199,7 +206,7 @@ Two conventions matter if you are editing:
 - **`content/` holds only teaching documents.** Everything in it is turned into a podcast episode, so process and governance files live in `project/` and must never be fed to the generator.
 - **Adding a document means adding its id to [`site/src/data/structure.json`](site/src/data/structure.json).** The site build refuses to run until you do — there is no way to add a document and have it silently missing from the navigation.
 
-> Some of the tree above is in active development. `content/`, `project/`, `.claude/`, `site/`, `infra/` and `scripts/` exist. The **speech and narration tooling** (build specification §7) and **`.github/workflows/`** are specified in [`project/site_build_specification.md`](project/site_build_specification.md) but not yet written. Check the tree before relying on a path.
+> **Status, 28 July 2026.** Everything in the tree above exists, and the site is live at **https://learn-ice-hockey.com**. The one gap is **audio**: the markdown-to-speech transform has run over all 35 documents, but nothing has been narrated yet, so the per-document audio player is behind a flag and hidden. Narration, podcasts, downloadable bundles and the offline app are phases 5 to 8 of [`project/site_build_specification.md`](project/site_build_specification.md). Current state is tracked in [`docs/README.md`](docs/README.md).
 
 ---
 
