@@ -40,6 +40,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 <link rel="sitemap" href="/sitemap.xml" />
 
 <!--
+  Installable web app (D9). iOS does not read most of the manifest, so the
+  apple-* tags are not redundant with it — without them an installed home-screen
+  icon on iPhone is a screenshot of the page rather than the icon.
+-->
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#0f5a8f" />
+<link rel="apple-touch-icon" href="/icons/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Ice Hockey" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!--
   Applied before first paint so a stored theme preference does not flash.
   Everything on this site is readable without JavaScript; this only chooses
   between two colour schemes.
@@ -56,4 +68,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
     }
     document.documentElement.classList.add('js');
   })();
+</script>
+
+<!--
+  Service worker registration. Deferred to the load event so it never competes
+  with first paint — the site is fully readable without it, and an installed
+  reader gains offline access rather than losing anything if this fails.
+
+  The worker itself is generated at build time by scripts/build-pwa.mjs, because
+  its precache list has to name the content-hashed stylesheet.
+-->
+<script is:inline>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function (e) {
+        console.warn('[sw] registration failed', e);
+      });
+    });
+  }
 </script>

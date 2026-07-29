@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+
+// Served by the service worker when a navigation fails and the page was never
+// cached. Everything a reader has already visited comes back from the cache, so
+// this is the genuinely-new-page case only.
+---
+
+<Base
+  title="Offline"
+  description="You are offline and this page has not been saved."
+  bare={true}
+>
+  <main class="main" id="main">
+    <article>
+      <h1>You are offline</h1>
+      <p>
+        This page has not been saved to your device, so there is nothing to show
+        you. Anything you have already read is still available — go back, or open
+        the home page.
+      </p>
+      <p>
+        <a class="button" href="/">Home</a>
+      </p>
+
+      <h2>Reading without a signal</h2>
+      <p>
+        Every page you visit is saved automatically. If you know you will be
+        somewhere without signal — a rink, a train, a flight — the more reliable
+        option is to download the corpus as an EPUB and read it in your usual
+        e-reader. That works whatever happens to browser storage.
+      </p>
+      <p>
+        <a href="/downloads/">Downloads</a> — one file per section, or the whole
+        thing in one.
+      </p>
+    </article>
+  </main>
+</Base>
