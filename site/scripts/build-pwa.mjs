@@ -41,6 +41,11 @@ const PRECACHE_INCLUDE = [
   /^_astro\/.*\.css$/,
   /^pagefind\/.*\.(js|json|pf_meta|pf_index|pf_fragment|pagefind)$/,
   /^icons\/.*\.png$/,
+  // Root-level scripts: theme init, theme toggle, header shortcuts, search,
+  // the SW registration itself. These moved out of the page when the CSP
+  // stopped permitting inline scripts, so without precaching them an offline
+  // reader loses the theme toggle and the search shortcut.
+  /^[^/]+\.js$/,
   /^favicon\.svg$/,
   /^manifest\.webmanifest$/,
 ];
@@ -50,6 +55,12 @@ const PRECACHE_EXCLUDE = [
   /^audio\//,          // Phase 5. ~1.2 GB when it exists — D15 says opt-in, never precache
   /^downloads\/.*\.epub$/,
   /^downloads\/markdown\//,
+  // A service worker must never precache itself: the browser manages sw.js
+  // updates, and a cached copy can pin the worker to an old version that then
+  // serves its own stale self. It escapes the root-.js rule today only because
+  // the build cleans dist/ first, so sw.js does not exist when this walks —
+  // which is luck, not design. Stated explicitly.
+  /^sw\.js$/,
 ];
 
 async function walk(dir, base = dir) {

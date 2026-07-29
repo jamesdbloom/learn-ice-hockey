@@ -64,19 +64,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
   Everything on this site is readable without JavaScript; this only chooses
   between two colour schemes.
 -->
-<script is:inline>
-  (function () {
-    try {
-      var stored = localStorage.getItem('theme');
-      if (stored === 'light' || stored === 'dark') {
-        document.documentElement.dataset.theme = stored;
-      }
-    } catch (e) {
-      /* private mode, storage disabled — the media query still applies */
-    }
-    document.documentElement.classList.add('js');
-  })();
-</script>
+<script is:inline src="/theme-init.js"></script>
 
 <!--
   Service worker registration. Deferred to the load event so it never competes
@@ -86,7 +74,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
   The worker itself is generated at build time by scripts/build-pwa.mjs, because
   its precache list has to name the content-hashed stylesheet.
 -->
-<script src="/sw-register.js" defer></script>
+<script is:inline src="/sw-register.js" defer></script>
 
 {/*
   Google Analytics 4. Emitted only when GA_MEASUREMENT_ID is set, so local
@@ -109,7 +97,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
-      <script src="/analytics.js" defer></script>
+      <script is:inline src="/analytics.js" defer></script>
     </>
   )
 }

@@ -44,29 +44,6 @@ import { LAYERS } from '../data/nav';
     }
 
     <script is:inline src="/pagefind/pagefind-ui.js"></script>
-    <script is:inline>
-      window.addEventListener('DOMContentLoaded', function () {
-        if (typeof PagefindUI === 'undefined') return;
-
-        new PagefindUI({
-          element: '#search',
-          showSubResults: true,
-          showImages: false,
-          pageSize: 8,
-          resetStyles: false,
-        });
-
-        var params = new URLSearchParams(window.location.search);
-        var q = params.get('q');
-        var input = document.querySelector('#search input');
-        if (input) {
-          if (q) {
-            input.value = q;
-            input.dispatchEvent(new Event('input', { bubbles: true }));
-          }
-          input.focus();
-        }
-      });
-    </script>
+    <script is:inline src="/search-page.js" defer></script>
   </main>
 </Base>
