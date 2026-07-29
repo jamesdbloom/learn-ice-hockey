@@ -46,7 +46,7 @@ export const SITE_AUTHOR_URL = 'https://github.com/jamesdbloom';
  * Not a secret: a GA4 measurement ID is public by design and appears in the
  * page source of every site that uses one.
  */
-export const GA_MEASUREMENT_ID = '';
+export const GA_MEASUREMENT_ID = 'G-VTE9ZGWY15';
 
 /**
  * Google Search Console verification.
