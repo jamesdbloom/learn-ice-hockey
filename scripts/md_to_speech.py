@@ -248,6 +248,8 @@ GREEK: tuple[tuple[str, str], ...] = (
 SYMBOLS: tuple[tuple[str, str], ...] = (
     ("≤", " less than or equal to "),
     ("≥", " greater than or equal to "),
+    ("<", " less than "),      # 'p < .05' in the research citations
+    (">", " greater than "),   # the pair, so the table is not half-present
     ("÷", " divided by "),
     ("±", " plus or minus "),
     ("≈", " about "),
@@ -264,9 +266,20 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
     ("₂", " two"),
     ("️", ""),          # variation selector (emoji presentation)
     ("⚠", ""),          # warning sign
+    # 🇬🇧 is a semantic marker in this corpus, not decoration: it flags the
+    # British position — the IIHF book plus the In-House Rules issued jointly
+    # by England Ice Hockey, the SIHA and the BUIHA. Dropping it silently, which
+    # is what happened before this row existed, costs a UK listener the signal
+    # that the sentence is about their rule book. At least one occurrence
+    # introduces the mandatory neck-laceration protector, so this is a safety
+    # marker and not a flourish. (No count is given: it moves with the corpus,
+    # and `--report` prints the live one.)
+    ("🇬🇧", " For British readers, "),
     ("=", " equals "),  # glossary definitions: 'Rim = a hard puck ...'
     ("+", " plus "),    # 'Wedge+', '11+'
     ("$", " dollars "),  # any currency a named rule missed
+    ("£", " pounds "),   # ditto — note this reads after the number, so it is a
+                         # fallback only; currency-sterling is what gets it right
     ("–", "—"),         # en dash left over: read as a comma-length pause
     ("|", ", "),        # a stray table pipe outside a table block
     ("~", " about "),
@@ -612,20 +625,41 @@ def _number_with_fraction(match: re.Match) -> str:
     return f"{whole} {dict(FRACTION_AFTER_NUMBER)[match.group(2)]}"
 
 
-def _currency(match: re.Match) -> str:
-    """'$148' -> 'one hundred and forty-eight dollars'; '$10-$20' -> a range.
+def _currency_unit(singular: str, plural: str) -> Callable[[re.Match], str]:
+    """Build a currency handler for one unit.
 
-    A magnitude word must stay between the number and 'dollars', otherwise
+    '$148' -> 'one hundred and forty-eight dollars'; '$10-$20' -> a range.
+
+    A magnitude word must stay between the number and the unit, otherwise
     '$20 million' comes out as 'twenty dollars million'.
+
+    A factory rather than one handler per currency because the only thing that
+    differs is the noun, and this module's whole design is that adding a
+    construct means adding a row rather than another near-copy of a function.
     """
-    low = decimal_to_words(match.group("low"))
-    magnitude = match.group("magnitude")
-    tail = f" {magnitude}" if magnitude else ""
-    high = match.group("high")
-    if high:
-        return f"{low} to {decimal_to_words(high)}{tail} dollars"
-    singular = match.group("low") in ("1", "1.00") and not magnitude
-    return f"{low}{tail} dollar" + ("" if singular else "s")
+
+    def whole(amount: str) -> str:
+        """'5.00' -> 'five'. A price written to the penny is still a round
+        number of pounds, and 'five point zero zero pounds' is not how anyone
+        says it."""
+        return amount[:-3] if amount.endswith(".00") else amount
+
+    def handler(match: re.Match) -> str:
+        raw_low = whole(match.group("low"))
+        low = decimal_to_words(raw_low)
+        magnitude = match.group("magnitude")
+        tail = f" {magnitude}" if magnitude else ""
+        high = match.group("high")
+        if high:
+            return f"{low} to {decimal_to_words(whole(high))}{tail} {plural}"
+        is_one = raw_low == "1" and not magnitude
+        return f"{low}{tail} {singular if is_one else plural}"
+
+    return handler
+
+
+_currency = _currency_unit("dollar", "dollars")
+_currency_sterling = _currency_unit("pound", "pounds")
 
 
 MONTHS = (
@@ -845,6 +879,21 @@ NOTATION_RULES: tuple[Rule, ...] = (
         ),
         _currency,
         "$120-150 -> 'one hundred and twenty to one hundred and fifty dollars'",
+    ),
+    Rule(
+        "currency-sterling",
+        re.compile(
+            r"£(?P<low>\d+(?:,\d{3})*(?:\.\d+)?)"
+            r"(?:\s?[–-]\s?£?(?P<high>\d+(?:,\d{3})*(?:\.\d+)?))?"
+            r"(?:\s(?P<magnitude>million|billion|thousand))?"
+            # getting_started.md quotes a source verbatim as '£5.00GBP' and
+            # '£20.00GBP'. Absorb the ISO code: without this the expansion butts
+            # straight against it and Polly reads 'poundsGBP' as one word.
+            r"(?:\s?GBP)?"
+        ),
+        _currency_sterling,
+        "£5 -> 'five pounds'; £5.00GBP -> 'five pounds'; the registration fees "
+        "quoted in getting_started.md",
     ),
     Rule(
         "season-slash",
@@ -1085,7 +1134,15 @@ def apply_symbols(tokens: list[Token], counter: Counter) -> list[Token]:
         text = token.text
         for source, target in SYMBOLS:
             if source in text:
-                counter["symbol." + unicodedata.name(source, source)] += text.count(source)
+                # unicodedata.name() takes one character. Some entries are a
+                # grapheme cluster rather than a codepoint — 🇬🇧 is two regional
+                # indicators — so name the cluster by its parts.
+                label = (
+                    unicodedata.name(source, source)
+                    if len(source) == 1
+                    else "+".join(unicodedata.name(ch, ch) for ch in source)
+                )
+                counter["symbol." + label] += text.count(source)
                 text = text.replace(source, target)
         for source, target in FRACTIONS:
             if source in text:
@@ -1945,6 +2002,30 @@ def self_test() -> int:
         ("3 × 20 min", "three times twenty minutes"),
         ("8 × 15 inches", "eight by fifteen inches"),
         ("1.08×", "one point zero eight times"),
+        # The three constructs that reached the SSML unhandled in the 29 July
+        # 2026 narration pilot. Every one of them was silent — no error, just a
+        # marker or a symbol the listener never heard.
+        ("🇬🇧 Neck laceration protection is mandatory",
+         "For British readers, Neck laceration protection is mandatory"),
+        ("⚠️ 🇬🇧 The IIHF says the opposite",
+         "For British readers, The IIHF says the opposite"),
+        ("a fixed fee of £5.00GBP", "a fixed fee of five pounds"),
+        ("the £5 and £20 deductions",
+         "the five pounds and twenty pounds deductions"),
+        ("£1", "one pound"),
+        ("£1.00", "one pound"),
+        ("£120-150", "one hundred and twenty to one hundred and fifty pounds"),
+        ("£2.50", "two point five zero pounds"),
+        # the same .00 handling reaches dollars, which had it too
+        ("$148.00", "one hundred and forty-eight dollars"),
+        ("$20 million", "twenty million dollars"),
+        # "point zero five", not "nought point zero five": the leading-decimal
+        # rule deliberately omits the leading word so save percentages read as
+        # ".920 -> point nine two zero", which is how they are said. A p-value
+        # inherits that and is idiomatic either way.
+        ("(p < .05)", "(p less than point zero five)"),
+        ("n > 30", "n greater than thirty"),
+        (".920 save percentage", "point nine two zero save percentage"),
         ("**bold** and *italic*", "bold and italic"),
         ("[Faceoffs](faceoffs.md)", "Faceoffs"),
         ("`code`", "code"),
