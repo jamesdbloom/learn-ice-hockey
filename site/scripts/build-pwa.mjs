@@ -132,17 +132,28 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Downloads and audio stream from the network, always. They are large and
-  // they are meant to be saved into another app, not held twice.
-  if (url.pathname.startsWith('/downloads/') || url.pathname.startsWith('/audio/')) return;
+  // Download *files* and audio stream from the network, always: they are large
+  // and meant to be saved into another app, not held twice.
+  //
+  // The trailing-slash test is load-bearing. Excluding all of /downloads/ also
+  // excluded the /downloads/ *page*, so respondWith never ran for it — no cached
+  // copy and no offline fallback, on the one page /offline/ tells the reader to
+  // go to. Files have an extension; the page ends in a slash.
+  const isBulkFile =
+    (url.pathname.startsWith('/downloads/') && !url.pathname.endsWith('/')) ||
+    url.pathname.startsWith('/audio/');
+  if (isBulkFile) return;
 
   // Documents: network first, so a corrected page reaches the reader.
   if (request.mode === 'navigate' || request.destination === 'document') {
     event.respondWith((async () => {
       try {
         const fresh = await fetch(request);
-        const cache = await caches.open(CACHE);
-        cache.put(request, fresh.clone());
+        // Only cache a good response. Without this a transient 404 or 5xx
+        // overwrites the precached copy of a real page, and the reader then
+        // gets that error page back when they are offline — the cache turning
+        // a momentary blip into a permanent one.
+        if (fresh.ok) (await caches.open(CACHE)).put(request, fresh.clone());
         return fresh;
       } catch {
         const cached = await caches.match(request);
