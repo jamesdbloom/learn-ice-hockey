@@ -40,3 +40,17 @@ scripts/speech/
 
 # Domain registrant PII — never commit
 infra/domain-registration.json
+
+# Primary rulebooks — fetched PDFs and their extracted text.
+#
+# NOT committed, and the reason is copyright rather than secrecy: these are the
+# IIHF's, the NHL's, USA Hockey's and Hockey Canada's publications. This
+# repository is public, and 2.7 MB of searchable rulebook text is a clearer
+# redistribution than the PDFs `*.pdf` above already excludes. The corpus
+# quotes them under fair dealing; republishing them wholesale is a different
+# act.
+#
+# sources/README.md is committed and holds every URL, so any session can
+# rebuild this directory. See scripts/fetch_sources.sh.
+sources/*
+!sources/README.md

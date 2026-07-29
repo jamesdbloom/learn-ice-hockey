@@ -417,7 +417,7 @@ The centre takes the draw; you line up at the hash marks — one winger on the *
 
 **Two things about faceoffs that are specifically your responsibility:**
 
-- **Don't encroach.** If you creep inside the faceoff circle or over your hash marks before the puck drops, **your centre gets thrown out of the dot** — you don't. Your team then takes the draw with its second-best option, and a second violation on the same draw is a bench minor — **under USA Hockey Rule 613(d) it is a minor on the individual instead**, and under IIHF rules there is no ejection at all, just a team warning. Hold your position until the puck hits the ice.
+- **Don't encroach.** If you creep inside the faceoff circle or over your hash marks before the puck drops, **your centre gets thrown out of the dot** — you don't. Your team then takes the draw with its second-best option, and a second violation on the same draw is a bench minor — **under USA Hockey Rule 613(d) it is a minor on the individual instead**, and under IIHF rules there is no ejection at all, just a team warning. That is the *first* violation (IIHF Rule 76.6); a **second** by the same team on the same draw is a **bench minor** for delay of game (IIHF Rule 76.7), so it is not free. Hold your position until the puck hits the ice.
 - **Be ready to take the draw.** Centres get tossed several times a game. Know in advance whether you're the backup taker, and know what you're trying to do — usually just a clean tie-up rather than anything ambitious.
 
 ### Power Play (your team has the man advantage)

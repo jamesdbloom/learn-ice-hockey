@@ -646,7 +646,7 @@ On a regulation sheet there are **four neutral zone faceoff dots** — two just 
 **What you personally need to know before the puck drops:**
 1. **Are we winning it forward or back?** Your centre should say. If you do not know, you are guessing.
 2. **Who is your man if we lose it?** Neutral zone draws turn into rushes faster than any other faceoff, because everybody is already facing the right way.
-3. **Do not creep.** **Encroachment by a teammate gets your centre thrown out of the circle** — a winger drifting into the circle before the drop is punished by ejecting the centre, and a second violation by your team on the same draw is a bench minor — an individual minor under USA Hockey Rule 613(d), and under IIHF rules there is no ejection at all, only a team warning ([Faceoffs](faceoffs.md) owns the split). Hold your line.
+3. **Do not creep.** **Encroachment by a teammate gets your centre thrown out of the circle** — a winger drifting into the circle before the drop is punished by ejecting the centre, and a second violation by your team on the same draw is a bench minor — an individual minor under USA Hockey Rule 613(d), and under IIHF rules there is no ejection at all for the first violation — but a second by the same team on the same draw is a bench minor for delay of game (IIHF Rules 76.6 and 76.7) ([Faceoffs](faceoffs.md) owns the split). Hold your line.
 
 Full detail on technique, positioning and the ejection rules is in [Faceoffs](faceoffs.md).
 

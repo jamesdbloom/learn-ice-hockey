@@ -21,6 +21,8 @@ What Britain adds on top is a short layer of local amendment:
 
 The In-House Rules say so in terms: England Ice Hockey, the Scottish Ice Hockey Association and the British Universities Ice Hockey Association *"adopt the IIHF Official Rule Book 2025–2026 (Version 1.1, published July 2025) as the foundation for the rules of the game to be applied in England and Scotland."*
 
+⚠️ **Note the version number, because this corpus could not obtain it.** Every IIHF rule quoted anywhere in these documents is verified against the IIHF Official Rule Book 2025/26 **Version 1.0, May 2025** — the edition the IIHF publishes at the link in the Sources below. Britain adopts **Version 1.1, July 2025**. As of 29 July 2026 no copy of v1.1 could be found: the IIHF's own rulebook listing pages sit behind a bot challenge, and England Ice Hockey's site hosts the 2023 rulebook rather than the current one. **Nothing in this corpus tests whether v1.0 and v1.1 say the same thing.** Where a rule number or wording matters to you, check it against your league's own copy of v1.1. This is the largest known gap in the British coverage here and it is stated rather than hidden.
+
 > **⚠️ The In-House Rules are not a rule book.** They are amendments, and they say it themselves: *"This document is to be read alongside the IIHF Rule Book and is not intended to serve as a standalone rule book."* You need both. They are also the **overriding** interpretation — where they differ from the IIHF book, they win domestically.
 
 ---
