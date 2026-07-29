@@ -1,5 +1,8 @@
 ---
-import { SITE_TITLE, SITE_SHORT_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from '../consts';
+import {
+  SITE_TITLE, SITE_SHORT_TITLE, SITE_DESCRIPTION, SITE_AUTHOR,
+  GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION,
+} from '../consts';
 
 interface Props {
   title?: string;
@@ -35,6 +38,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 <meta name="twitter:description" content={pageDescription} />
 
 <meta name="author" content={SITE_AUTHOR} />
+{GOOGLE_SITE_VERIFICATION && (
+  <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />
+)}
 <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" />
 <meta name="color-scheme" content="light dark" />
 <meta name="generator" content={Astro.generator} />
@@ -80,12 +86,30 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
   The worker itself is generated at build time by scripts/build-pwa.mjs, because
   its precache list has to name the content-hashed stylesheet.
 -->
-<script is:inline>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('/sw.js').catch(function (e) {
-        console.warn('[sw] registration failed', e);
-      });
-    });
-  }
-</script>
+<script src="/sw-register.js" defer></script>
+
+{/*
+  Google Analytics 4. Emitted only when GA_MEASUREMENT_ID is set, so local
+  builds, previews and anyone building from a clone send nothing.
+
+  The bootstrap deliberately does NOT use define:vars, which would force an
+  inline script. The production CSP is script-src 'self' with no unsafe-inline
+  (infra/locals.tf), and adding that exemption to run four lines of setup would
+  weaken the policy for every page. Instead the id travels on a meta tag and the
+  bootstrap is a normal Astro script, bundled and served from our own origin.
+  Only gtag.js itself is off-origin, and the CSP names that host explicitly.
+*/}
+{
+  GA_MEASUREMENT_ID && (
+    <>
+      <meta name="ga-measurement-id" content={GA_MEASUREMENT_ID} />
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <script
+        is:inline
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+      />
+      <script src="/analytics.js" defer></script>
+    </>
+  )
+}

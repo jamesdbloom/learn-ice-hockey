@@ -122,9 +122,12 @@ that are merely *not ready yet*.
 
 ## 9. Self-hosted, no third parties
 
-The Content Security Policy names no external origin, and this is enforced
-rather than aspirational: no CDN, no analytics, no web fonts, no third-party
-scripts. Pagefind ships into the bundle. Astro's own CLI telemetry is switched
+The Content Security Policy names one external origin — Google Analytics — and
+is otherwise enforced rather than aspirational: no CDN, no web fonts, no other
+third-party scripts. Analytics was added deliberately in July 2026; before that
+the site sent nothing anywhere, and everything else about that position still
+holds. The site's own scripts are served from `/public` as files rather than
+inlined, so `script-src` keeps no `'unsafe-inline'` exemption. Pagefind ships into the bundle. Astro's own CLI telemetry is switched
 off in `scripts/astro.mjs` rather than left to each developer to remember.
 
 A reader of this site is not measured, and nothing they read is reported to

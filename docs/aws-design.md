@@ -98,9 +98,10 @@ browser.
 
 ### CSP that names no external origin
 
-The site is entirely self-hosted: no CDN, no analytics, no third-party fonts.
-So `script-src` is `'self'` only, `frame-ancestors` and `object-src` are
-`'none'`.
+The site is self-hosted apart from Google Analytics: no CDN, no third-party
+fonts. `script-src` is `'self'` plus `googletagmanager.com`; `connect-src` and
+`img-src` name the Google Analytics collection endpoints. `frame-ancestors` and
+`object-src` remain `'none'`.
 
 `style-src` carries `'unsafe-inline'`, and this is a known, deliberate
 weakening: Astro inlines critical CSS into the document head at build time.

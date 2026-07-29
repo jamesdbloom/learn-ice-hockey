@@ -43,19 +43,31 @@ locals {
   # form. See var.github_oidc_subject_prefix.
   github_oidc_subject = "${coalesce(var.github_oidc_subject_prefix, "repo:${var.github_repository}")}:ref:refs/heads/${var.github_branch}"
 
-  # Content Security Policy. The site is entirely self-hosted: no CDN, no
-  # analytics, no web fonts from anyone else, so nothing here names an external
-  # origin. 'unsafe-inline' is present for styles only, because Astro inlines
-  # critical CSS into the document head at build time; scripts get no such
-  # exemption.
+  # Content Security Policy. Self-hosted apart from Google Analytics, which is
+  # the only external origin named here.
+  #
+  # 'unsafe-inline' is present for styles only, because Astro inlines critical
+  # CSS into the document head at build time. Scripts get no such exemption, and
+  # that is load-bearing: the site's own scripts are served from /public as
+  # files precisely so this stays out.
+  #
+  # ⚠️ One inline script remains — the theme bootstrap in BaseHead.astro, which
+  # has to run before first paint to avoid a flash of the wrong colour scheme.
+  # It predates this policy and is blocked by it. Fix it by either serving it
+  # from /public as a blocking script or adding its sha256 hash here; a hash
+  # couples this file to that script's exact bytes, so prefer the former.
+  #
+  # The Google origins below are split by purpose deliberately: gtag.js is
+  # fetched from googletagmanager.com, the collect beacon goes to
+  # google-analytics.com, and the no-JavaScript pixel fallback is an image.
   content_security_policy = join("; ", [
     "default-src 'self'",
-    "script-src 'self'",
+    "script-src 'self' https://www.googletagmanager.com",
     "style-src 'self' 'unsafe-inline'",
-    "img-src 'self' data:",
+    "img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com",
     "font-src 'self'",
     "media-src 'self'",
-    "connect-src 'self'",
+    "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
     "manifest-src 'self'",
     "worker-src 'self'",
     "object-src 'none'",
