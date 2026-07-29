@@ -21,7 +21,8 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 
 | File | Document | Source |
 |---|---|---|
-| `iihf_rules.txt` | IIHF Official Rule Book 2025/26 **v1.0, May 2025** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) |
+| `iihf_rules.txt` | IIHF Official Rule Book 2025/26 **v1.1, July 2025** — the edition Britain adopts | [rbihf.be mirror](https://assets.rbihf.be/files/u/medical/e913d88111eb7abbd52d8c771a25d749.pdf) (see below) |
+| `iihf_rules_v1.0.txt` | IIHF Official Rule Book 2025/26 v1.0, May 2025 — superseded, kept for comparison | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) |
 | `iihf_situations.txt` | IIHF Situation Handbook 2025/26 v1.1 | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2025_iihf_situationhandbook_17082025-v1_1.pdf) |
 | `nhl_rules.txt` | NHL Official Rules 2025-2026 | [media.d3.nhle.com](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) |
 | `usah.txt` | USA Hockey Official Playing Rules 2025-29 | [cdn2.sportngin.com](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) |
@@ -31,44 +32,47 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 
 ---
 
-## Missing, and it matters
+## Resolved: the IIHF edition gap
 
-### IIHF Official Rule Book 2025/26 **Version 1.1, July 2025**
+### IIHF Official Rule Book 2025/26 Version 1.1, July 2025 — obtained 30 July 2026
 
-**This is the edition Britain actually plays under.** The In-House Rules adopt
-*"the IIHF Official Rule Book 2025–2026 (Version 1.1, published July 2025)"*.
-Every IIHF quotation in this corpus is verified against **v1.0**.
+`iihf_rules.txt` **is now v1.1**, the edition the In-House Rules adopt. v1.0 is
+kept alongside as `iihf_rules_v1.0.txt` so the comparison can be redone.
 
-Attempted on 29 July 2026 and not obtained:
+**Where it came from, and why that matters.** The IIHF's own published link
+serves **v1.0** and has done since 2 June 2025 (`Last-Modified` confirms it),
+and its rulebook index pages sit behind a Cloudflare bot challenge. The v1.1
+copy here is the **Royal Belgian Ice Hockey Federation's** mirror:
 
-- The IIHF rulebook listing pages — `/en/statichub/4719/rules-and-regulations`
-  and `/en/statichub/6323/rule-book` — return a **Cloudflare bot challenge** to
-  scripted clients and to headless Chrome. They render normally in a real
-  browser. Automated retrieval was not attempted further; bot-detection is not
-  something to work around.
-- Ten plausible direct blob URLs were probed (`-v1.1.pdf`, `-v1_1.pdf`, the
-  `downloads/officiating files/` path the Situation Handbook uses, several
-  date stamps). All 404. The **v1.0** URL above still returns 200, so the path
-  scheme is right and only the filename is unknown.
-- England Ice Hockey's own rules page hosts IIHF documents, but its rulebook is
-  the **2023** edition (`230524_iihf_rulebook_gesamt_v_6_0_rz_v1.pdf`), not the
-  current one.
+    https://assets.rbihf.be/files/u/medical/e913d88111eb7abbd52d8c771a25d749.pdf
 
-**To close this, open the IIHF page in a browser, download the 2025/26 rule
-book, and drop it here as `iihf_rules_v1.1.pdf`:**
+That is weaker provenance than the IIHF's own server, so it was verified on
+receipt rather than trusted. **If a copy becomes available from iihf.com
+directly, prefer it.**
 
-    https://www.iihf.com/en/statichub/4719/rules-and-regulations
+**What the comparison found:**
 
-Then re-extract and diff it against v1.0. The claims that most need re-checking
-are the ones a British reader acts on: **201.1** (the junior-ejection reading
-rests on it), **101.1** (women's bodychecking), **27.6/27.7** (the trapezoid
-numbering), **9.12** (neck protector), **42.1** (charging), **81.4/81.6**
-(icing), **84.4** (shootouts).
+| Check | Result |
+|---|---|
+| Rule numbers | **472 in each, identical sets** — nothing renumbered |
+| 27.7 / 27.8 | Restricted area still 27.7; 27.8 still "Infractions – Unique to Goalkeepers" |
+| 201.1 | Identical, heading included — the junior-ejection reading holds |
+| Corpus quotations from the IIHF book | **49 of 49 present verbatim** |
 
-Until then, `content/foundation/uk_rules.md` states the gap where a reader can
-see it.
+No claim in the corpus rested on a superseded revision. The gap `uk_rules.md`
+disclosed for two rounds is closed.
 
----
+**One extraction trap, recorded because it nearly produced six false findings.**
+The Belgian PDF subsets its fonts differently, so `pdftotext` renders the `fi`
+and `fl` ligatures as the CJK codepoints for 725 characters. Raw, that makes
+"official" read as "of[..]cial" and "five (5)" as "[..]ve (5)" — and a diff
+against v1.0 then shows spurious differences in exactly the passages containing
+those letters. The extraction here is repaired. **Any re-extraction must repeat
+that substitution.**
+
+**Still not obtained:** the IIHF Situation Handbook at v1.1 (only the v1 file is
+here), the EIHL Casebook, and any EIH or SIHA Rule Bulletin — the In-House Rules
+say bulletins are issued from time to time, and none has been read.
 
 ## Extraction
 
@@ -79,7 +83,9 @@ interleave and rule numbers detach from their text.
 Re-extract one file:
 
 ```sh
-pdftotext -layout sources/2025-26_iihf_rulebook_19052025-v1.pdf sources/iihf_rules.txt
+pdftotext -layout sources/iihf_rules_v1.1.pdf sources/iihf_rules.txt
+# then repair the ligatures — see the edition note above
+python3 -c "p='sources/iihf_rules.txt'; t=open(p).read(); open(p,'w').write(t.replace(chr(26176)+chr(26928),'fi').replace(chr(26176)+chr(27668),'fl'))"
 ```
 
 **A 403 is not an absence.** USA Hockey's PDFs need a browser user-agent plus a

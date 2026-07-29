@@ -424,7 +424,7 @@ verified by sweeping for the claim and for `22.3` in the same file.
 
 - **IIHF Rule Book v1.1**, which is what Britain actually adopts. Every
   verification here reads **v1.0**, including the confirmation that the rule is
-  numbered 27.7. If v1.1 renumbered it, this round propagated a wrong number to
+  numbered 27.7. **CLOSED in round 23: v1.1 numbers it 27.7 too, and 27.8 is still "Infractions – Unique to Goalkeepers". The propagation was correct.** If v1.1 renumbered it, this round propagated a wrong number to
   sixteen documents very carefully.
 - **Whether "assume it binds" is right at all.** If EIH's suspension is in fact
   still live, the corpus now tells British goalies to stay inside a trapezoid

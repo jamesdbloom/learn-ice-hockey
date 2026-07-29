@@ -357,7 +357,7 @@ Logged deliberately rather than silently dropped:
 - **Edition mismatch, undisclosed.** The In-House Rules adopt IIHF Rule Book
   **v1.1 (July 2025)**; every IIHF claim in this corpus is verified against
   **v1.0 (May 2025)**, which is what is on disk. Two agents raised this
-  independently. v1.1 has not been obtained. **Every IIHF quotation in the
+  independently. v1.1 has not been obtained. **CLOSED in round 23 (30 July 2026): v1.1 was obtained and compared — 472 rule numbers identical in both, and all 49 corpus quotations from the IIHF book present verbatim. Nothing here rested on a superseded revision.** **Every IIHF quotation in the
   corpus rests on a revision England did not adopt** — this is the largest
   known hole and should be closed before the next round.
 - **The fighting amendment is a subtraction, not an addition.** IIHF Table 6
