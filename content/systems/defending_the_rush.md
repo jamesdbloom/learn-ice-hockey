@@ -1,7 +1,7 @@
 # Defending the Rush
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
-> differ in a way that changes how you play, it is flagged inline.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Defender](../positions/defender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Goaltender](../positions/goaltender.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Skating](../technique/skating.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
@@ -297,6 +297,8 @@ Action: Steer them to a bad angle, force them wide, and keep forcing
 Position: Stick in the lane, on the ice, out front — passing options are arriving behind the play
 Never: Lunge — it is a single bet on their next move, and if you are wrong they have the whole net
 Action: Ride them into the boards, your second defender, until their options collapse to zero
+Rule: IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards — pin the puck, not the player
+Never: Ride an opponent into the boards in any non-check adult or youth league — the instruction above is for checking leagues only
 Priority: Position first, contact second — a body check is a bonus, not a plan
 ```
 
@@ -305,7 +307,7 @@ You against the carrier. This is gap control applied, and it is the situation ev
 - **Steer them to a bad angle.** Your target is not a hit and not a turnover — it is a shot from a place your goalie is comfortable with. Force them wide and keep forcing.
 - **Stick in the lane, on the ice, out front.** Even in a 1-on-1 there are passing options arriving behind the play.
 - **Do not lunge.** A lunge is a single bet on their next move. If you are wrong, you are out of the play entirely and they have the whole net. Contain, keep your feet, and let them run out of ice.
-- **Use the boards as a second defender.** Ride them into the wall and their options collapse to zero — no cutback, no shooting angle, no pass across.
+- **Use the boards as a second defender.** Ride them into the wall and their options collapse to zero — no cutback, no shooting angle, no pass across. **In women's hockey this instruction does not apply, and that includes every level in Britain.** IIHF Rule 101.1: two or more players competing for possession are *"not allowed to use the boards to make contact with an opponent to eliminate her from the play, push her into the boards, or pin her along the boards"* — a minor, or a major plus an automatic game misconduct, and in British women's hockey below adult a major carries a further automatic ejection. **Pin the puck, not the player** ([Body Contact and Battles](../technique/body_contact_and_battles.md)). The same applies in any non-check adult or youth league.
 - **A body check is a bonus, not a plan.** Missing a hit on a rush is far more costly than not attempting one. Position first, contact second. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 ### 1-on-2

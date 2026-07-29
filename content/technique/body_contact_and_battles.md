@@ -77,6 +77,8 @@ Never: Assume Britain mirrors USA Hockey's 12U or Hockey Canada's U13 — nothin
 Action: Get the contact status of your division in writing from your league or club before your first shift
 Rule: British junior categories are U19/U16/U14/U12/U10 by birth year and unisex, "not classified as 'Mens' within the UK" (In-House Rules, Rule 200)
 Rule: In women's hockey under EIH, Adult runs from the 14th birthday and Under 16 from the 10th (In-House Rules, Rule 100.1)
+Rule: In British women's hockey below Adult, any major penalty carries an automatic game misconduct and ejection (In-House Rules, Rule 101, applying IIHF Rule 201.1)
+Key: Read junior hockey the same way at every age, U19 to U10 — In-House Rule 201 scopes the IIHF junior rules to all junior groups without naming 201.1, so treat a major as ending the game
 ```
 
 Everything in the table above is North American, and a British reader has no way to map it onto their own game. Here is what maps and what does not.
@@ -93,7 +95,7 @@ Everything in the table above is North American, and a British reader has no way
 
 **The age bandings themselves are different, so the North American numbers do not even translate.** British junior categories are set by **birth year**, not by the North American banding used elsewhere in this document: **U19, U16, U14, U12 and U10** (In-House Rules, Rule 200). The In-House Rules add a note that matters for anyone reading a USA Hockey "boys'/men's check classification" row and looking for its British equivalent: *"Junior age categories are unisex and are not classified as 'Mens' within the UK."* There is no British "boys' checking division" to map onto. In women's hockey, **Adult runs from the player's 14th birthday** and Under 16 from the 10th to the 16th (Rule 100.1).
 
-**One consequence you can rely on:** below adult, the penalties are heavier than the IIHF baseline. In British junior hockey at every age group, and in women's hockey below Adult, **any foul that draws a major penalty also draws an automatic game misconduct and ejection** (In-House Rules, Rules 101 and 201, applying IIHF Rule 201.1). A major for charging, boarding or checking from behind ends a junior's game outright.
+**One consequence to plan around:** below adult, the penalties are heavier than the IIHF baseline. In British **women's** hockey below Adult, **any foul that draws a major penalty also draws an automatic game misconduct and ejection** — In-House Rule 101 states that cross-reference to IIHF Rule 201.1 explicitly. For **junior** hockey, In-House Rule 201 scopes the IIHF junior playing rules to *"all junior age groups"* without naming 201.1, so read the same consequence across U19 to U10 as this corpus's interpretation rather than the rule's own words. Either way, treat a major for charging, boarding or checking from behind as ending the game, and confirm with your league.
 
 ### Women's hockey — the nuance that is usually got wrong
 
@@ -338,6 +340,7 @@ Two things follow. **For a player:** if you cannot yet angle a puck carrier off 
 ### What a legal check is, precisely
 
 ```facts
+Rule: Not legal where checking is barred — USA Hockey 604(a) bans it at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below and in female hockey; IIHF women's play permits only the restricted form of Rule 101.1; Britain publishes no checking age, so ask your league
 Goal: To gain possession of the puck — NOT to punish or intimidate an opponent
 Targets: An opponent in control of the puck, hit from the front, diagonally from the front, or straight from the side
 Technique: Trunk only — hips and shoulders. Hands, forearm, stick and elbow are all illegal
@@ -363,6 +366,7 @@ That last point is the one that separates a coached player from an amateur. **Th
 ### Technique
 
 ```facts
+Rule: Not legal where checking is barred — USA Hockey 604(a) bans it at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below and in female hockey; IIHF women's play permits only the restricted form of Rule 101.1; Britain publishes no checking age, so ask your league
 Technique: Play the body, not the head — the point of contact is the chest or upper body, square
 Never: Extend the body upward or outward to reach — NHL Rule 48.1 counts that as evidence head contact was avoidable
 Technique: Elbows down, hands down — an extended elbow is elbowing (NHL Rule 45.1) whether or not it injures
@@ -390,6 +394,7 @@ Never: Hit a player who is turned toward the boards
 ### The four that cause the injuries
 
 ```facts
+Rule: Not legal where checking is barred — USA Hockey 604(a) bans it at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below and in female hockey; IIHF women's play permits only the restricted form of Rule 101.1; Britain publishes no checking age, so ask your league
 Never: Check from behind — a major with an automatic game misconduct under NHL Rule 43 and IIHF Rule 43; USA Hockey Rule 608 can reach a match penalty
 Key: The onus is always on the checker — "he turned at the last second" is no defence unless the turn was deliberate
 Never: Make contact in the head, face or neck area, regardless of size differential (USA Hockey Rule 620; NHL Rule 48.1)
@@ -406,13 +411,13 @@ These are not ordinary penalties. Treat them as things you simply do not do.
 
 **Checking to the head.** NHL Rule 48.1 prohibits a hit where the head "was the main point of contact and such contact to the head was avoidable." USA Hockey Rule 620 goes further: any contact to the head, face or neck with any part of the body, equipment or stick, with the onus on the checker. The **Standard of Play and Rule Emphasis – Body Checking** (HEAD CONTACT) spells out how far that onus runs: "The onus is on the player delivering the check, regardless as to size differential, to not make contact in the head/neck area of the opponent."
 
-**Charging.** Building speed into a check to punish rather than to win the puck, or a running or jumping approach. **The written threshold differs by book and the difference is one stride:** USA Hockey penalises *more than* two strides of acceleration, Hockey Canada penalises *two or more*, and the NHL sets no number at all. Under Hockey Canada, two strides is already charging.
+**Charging.** Building speed into a check to punish rather than to win the puck, or a running or jumping approach. **The written threshold differs by book and the difference is one stride:** USA Hockey penalises *more than* two strides of acceleration, Hockey Canada penalises *two or more*, the **IIHF** — and so Britain — sets no number either, defining charging as a player who *"builds up speed by taking multiple strides"* (Rule 42.1), and the NHL sets no number at all. Under Hockey Canada, two strides is already charging.
 
 **Boarding.** NHL Rule 41.1: checking or pushing "a defenseless opponent in such a manner that causes the opponent to hit or impact the boards violently or dangerously." Note the specific case the rule calls out: "Any unnecessary contact with a player playing the puck on an obvious 'icing' or 'off-side' play which results in that player hitting or impacting the boards is 'boarding'." A player skating hard to touch up an icing is not looking for you.
 
 **And one more that is easy to commit without realising:** USA Hockey states that "when two or more players are physically engaged for control of the puck along the boards, they are considered to be vulnerable or defenseless," and any body check delivered to a player already engaged with another skater "is considered dangerous, careless or reckless (unacceptable) and must be penalized accordingly." **Do not arrive as the third man and hit someone already in a battle.** Take the puck instead.
 
-**The IIHF book gets to the same place by a different route, and a British reader should know which one binds them.** It has no board-battle clause, but it defines a **Vulnerable Position** in its glossary: *"A skater is considered to be in a vulnerable position when they are no longer in control or possession of the puck and they are either not aware of an impending hit or they are not prepared for the hit. A bodycheck to an opponent who is vulnerable is automatically considered reckless even if that bodycheck would be considered legal to a non-vulnerable opponent."* A player wrestling for a loose puck with someone else has neither possession nor any preparation for a third arrival, so that hit is reckless under the IIHF book too — arrived at through the state of the player rather than the fact of the battle. **Reckless matters, because recklessness is the trigger for the major-and-game-misconduct tier** in IIHF Rules 42.4, 43.3 and 48 — and in British junior hockey and women's hockey below Adult, any major brings a game misconduct anyway.
+**The IIHF book gets to the same place by a different route, and a British reader should know which one binds them.** It has no board-battle clause, but it defines a **Vulnerable Position** in its glossary: *"A skater is considered to be in a vulnerable position when they are no longer in control or possession of the puck and they are either not aware of an impending hit or they are not prepared for the hit. A bodycheck to an opponent who is vulnerable is automatically considered reckless even if that bodycheck would be considered legal to a non-vulnerable opponent."* A player wrestling for a loose puck with someone else has neither possession nor any preparation for a third arrival, so that hit is reckless under the IIHF book too — arrived at through the state of the player rather than the fact of the battle. **Reckless matters, because recklessness is the trigger for the major-and-game-misconduct tier** in IIHF Rules 42.4, 43.3 and 48 — and in British women's hockey below Adult any major brings a game misconduct anyway, with junior hockey reading the same way on In-House Rule 201's scoping of the IIHF junior rules.
 
 ---
 
@@ -987,11 +992,12 @@ Action: Know your league's standard — watch how the first five minutes are bei
 Rule: Fighting in the NHL is a five-minute major (Rule 46.14), with an instigator minor (46.11) or an aggressor major plus game misconduct (46.2)
 Rule: The third man into an altercation faces a game misconduct at the referee's discretion (NHL Rule 46.16)
 Rule: USA Hockey counts an attempted punch, contact or not, as fighting — a major plus a game misconduct (Rule 615)
-Rule: A player who does not retaliate after being struck shall not be penalised for fighting (USA Hockey Rule 615(a))
+Rule: A player who does not retaliate after being struck shall not be penalised for fighting under USA Hockey Rule 615(a) — but the IIHF book carries no such protection, and retaliating to a punch takes at least a minor for roughing (IIHF Rule 46)
 Never: Drop your stick or remove your gloves in an altercation you were not part of — a minor under USA Hockey
 Rule: Under IIHF Rule 46, an instigator takes 2+5+game misconduct and the third player in a game misconduct (46.3, 46.7)
-Rule: In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a five-minute major (In-House Rules, Section 6, amending IIHF Rule 46)
-Rule: In NIHL, NIHL1 and NIHL2, a fighting major in the last five minutes of regulation or in overtime also carries an automatic game misconduct (In-House Rules, Section 6, on IIHF Rule 46)
+Rule: In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a five-minute major — and in NIHL, NIHL1 and NIHL2 a fighting major in the last five minutes of regulation or in overtime also carries an automatic game misconduct (In-House Rules, Section 6)
+Rule: In British women's hockey below Adult, any major is an automatic game misconduct — a fighting major ends your game (In-House Rules, Rule 101)
+Key: Junior hockey at every age reads the same way, on In-House Rule 201's scoping of the IIHF junior rules — treat a fighting major as ending your game
 Key: Rec and beer leagues are commonly harsher again — read your own league's sheet, the only version that binds you
 Action: If a scrum starts, hands down, gloves on — skate away and let the officials sort it out
 ```
@@ -1002,7 +1008,7 @@ This document is about legal contact, and fighting is not it. But it belongs her
 - **USA Hockey (Rule 615) is far stricter, and the threshold is much lower.** Its Note defines fighting as *"a punch, **or an attempted punch**, thrown by any player in the direction of an opponent, **regardless as to whether contact is made**."* You do not have to connect. And 615(a) assesses *"a major plus a game misconduct penalty… to any player who engages in fighting"* — so under USA Hockey a thrown punch is not five minutes, it is **an ejection**, plus a further minor if you instigated it, plus the progressive suspensions that follow a game misconduct. There is also a minor for any player who *"drops their stick and/or removes their glove(s) during an altercation and is not a participant in the original altercation"* — i.e. for the third man arriving hot.
 - **615(a) also protects you for doing nothing:** *"a player who does not retaliate after being struck shall not be assessed a penalty for fighting under this rule."* That clause is worth knowing by heart, because it means the disciplined response is also the one the rulebook rewards.
 - **IIHF (Rule 46) — the British base.** The book opens the rule by saying that *"'Fighting' is not part of international ice hockey's DNA."* An **instigator** takes *"a minor penalty (Instigator / Initiator) plus a major penalty ('Fighting') and an automatic game misconduct penalty (2'+5'+GMP)"* (46.3); an **aggressor** the same 2'+5'+GMP (46.4); the **third player in** a game misconduct at the referee's discretion, which also catches *"subsequent Players who elect to intervene"* (46.7). A player who *"retaliates to being punched will be assessed at least a minor penalty ('Roughing') or a major penalty ('Fighting')"* — note the difference from USA Hockey, which protects a non-retaliating player explicitly and does not.
-- **England Ice Hockey and the SIHA amend it.** In **NIHL (all leagues), SNL and BUIHA Varsity**, *"fighting shall be penalised with a 5-minute Major Penalty."* And in **NIHL, NIHL1 and NIHL2** there is an additional provision: *"Any fighting major assessed in the last 5 minutes of regulation time (including overtime) will also carry an automatic Game Misconduct."* Two further British consequences follow from elsewhere in the In-House Rules: in **junior hockey at every age group** and in **women's hockey below Adult**, any major penalty already brings an automatic game misconduct and ejection — so there, a fighting major *is* an ejection. See [UK and England Rules](../foundation/uk_rules.md).
+- **England Ice Hockey and the SIHA amend it.** In **NIHL (all leagues), SNL and BUIHA Varsity**, *"fighting shall be penalised with a 5-minute Major Penalty."* And in **NIHL, NIHL1 and NIHL2** there is an additional provision: *"Any fighting major assessed in the last 5 minutes of regulation time (including overtime) will also carry an automatic Game Misconduct."* A further British consequence follows from elsewhere in the In-House Rules: in **women's hockey below Adult**, any major penalty already brings an automatic game misconduct and ejection (Rule 101, which states that cross-reference to IIHF Rule 201.1 explicitly) — so there, a fighting major *is* an ejection. **Read junior hockey the same way at every age group**, on In-House Rule 201's scoping of the IIHF junior playing rules to *"all junior age groups"* — though note that Rule 201 does not name 201.1, so that reading is this corpus's rather than the rule's own words. See [UK and England Rules](../foundation/uk_rules.md).
 - **Rec and beer leagues are commonly harsher again** — many eject and suspend for any fight regardless of who started it. *(That is a general observation about how such leagues are run rather than a sourced survey; there is no league-wide census of rec-league fighting policy. Read your own league's sheet, which is the only version that binds you.)*
 
 **The practical version:** in every book that governs amateur hockey, throwing a punch — or even winding up to — ends your game. If a scrum starts, your hands stay down and your gloves stay on. Skate away and let the officials sort it out; that is not passivity, it is the only outcome that leaves you on the ice.

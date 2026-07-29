@@ -1,7 +1,7 @@
 # Passing and Receiving
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
-> differ in a way that changes how you play, it is flagged inline.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Puck Handling](puck_handling.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Risk Management](../hockey-iq/risk_management.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Breakouts](../systems/breakouts.md) · [UK and England Rules](../foundation/uk_rules.md)
 

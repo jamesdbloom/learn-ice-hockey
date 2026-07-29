@@ -1,9 +1,9 @@
 # Practice and Development
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. Practice itself is not
 > governed by rule — nothing in this document changes between rule sets. What *does* change
-> is how much ice you get, and that is the constraint this document is really about.
+> is how much ice you get, and that is the constraint this document is really about. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Skating](../technique/skating.md) · [Puck Handling](../technique/puck_handling.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Shooting](../technique/shooting.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Risk Management](../hockey-iq/risk_management.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Time and Space](../hockey-iq/time_and_space.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [How to Watch Hockey](how_to_watch_hockey.md) · [Mental Game](mental_game.md) · [UK and England Rules](../foundation/uk_rules.md)
 

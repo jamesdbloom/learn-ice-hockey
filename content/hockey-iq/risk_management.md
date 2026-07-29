@@ -1,7 +1,7 @@
 # Risk Management and Decision-Making
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
-> differ in a way that changes how you play, it is flagged inline.
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Game Management](../systems/game_management.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Mental Game](../off-the-ice/mental_game.md) · [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Breakouts](../systems/breakouts.md) · [Zone Entries](../systems/zone_entries.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [UK and England Rules](../foundation/uk_rules.md)
 

@@ -70,8 +70,18 @@ QUALIFIED = {"Rule", "Convention"}
 
 FACT_RE = re.compile(r"^([A-Z][A-Za-z ]*?):\s+(.+)$")
 # A Rule: fact must point at something — a numbered rule, or a named rulebook.
+# A `Rule:` fact has to point at the book it came from. The last four
+# alternatives are the rule sets by name; the first three are citation shapes
+# ("Rule 27.7", "R404", "76.6").
+#
+# England Ice Hockey was added when the corpus gained its fifth rule set. Until
+# then an EIH-only fact could not cite anything the checker recognised, so it
+# had to name a second book it was not actually quoting — which is the opposite
+# of what this check exists to enforce. `Rules 9.12` (plural, as the In-House
+# Rules style themselves) also failed `\bRule\s+\d`, so the plural is allowed.
 CITES_RE = re.compile(
-    r"\bRule\s+\d|\bR\d{3}\b|\b\d{2,3}\.\d|\bNHL\b|\bIIHF\b|USA Hockey|Hockey Canada",
+    r"\bRules?\s+\d|\bR\d{3}\b|\b\d{2,3}\.\d|\bNHL\b|\bIIHF\b"
+    r"|USA Hockey|Hockey Canada|England Ice Hockey|In-House Rules?|\bEIH\b",
 )
 
 
