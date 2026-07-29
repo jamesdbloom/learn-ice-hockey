@@ -233,3 +233,21 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "google_site_verification" {
+  description = <<-EOT
+    Google Search Console verification token, without the "google-site-verification="
+    prefix — Search Console shows it as a TXT record value like
+    "google-site-verification=AbC123...". Paste only the token part; the prefix
+    is added below.
+
+    DNS verification is preferred over the HTML meta tag: it verifies the whole
+    domain rather than one URL, it survives every redeploy, and it does not
+    require reaching the site at all — which matters when a firewall sits
+    between you and it.
+
+    Leave null to create no record.
+  EOT
+  type        = string
+  default     = null
+}

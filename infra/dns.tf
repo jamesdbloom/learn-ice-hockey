@@ -109,3 +109,25 @@ resource "aws_route53_record" "aaaa" {
     evaluate_target_health = false
   }
 }
+
+# ---------------------------------------------------------------------------
+# Google Search Console domain verification.
+#
+# Created only when var.google_site_verification is set, so a plan on a fresh
+# checkout is unaffected. TXT rather than the HTML meta tag because it verifies
+# the apex and every subdomain at once, and because it keeps the token out of
+# the page source.
+#
+# If other TXT records are ever needed at the apex — SPF, DMARC — they must be
+# merged into this one resource. Route 53 permits exactly one TXT record set per
+# name, and a second resource for the same name silently fights this one.
+# ---------------------------------------------------------------------------
+resource "aws_route53_record" "google_site_verification" {
+  count = var.google_site_verification == null ? 0 : 1
+
+  zone_id = local.zone_id
+  name    = var.domain_name
+  type    = "TXT"
+  ttl     = 3600
+  records = ["google-site-verification=${var.google_site_verification}"]
+}
