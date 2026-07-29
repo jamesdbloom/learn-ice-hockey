@@ -312,6 +312,7 @@ Goal: Force a turnover or a bad outlet pass, and keep the opposing defence under
 Key: F1/F2/F3 are roles, not people — if a winger beats you to the puck they are F1 and you take the support role, immediately
 Convention: The 2-1-2 with F3 on the weak side is one system among several, not a law — the stacked variant shades F3 to the puck side and concedes the far-side breakout
 Rule: Under NHL and IIHF rules the opposing goalie may play the puck behind the goal line only inside the trapezoid — most rec, beer-league and youth associations have none
+Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" in England and Wales — so plan as though their goalie may come for a dumped puck
 Action: Aim your dump-ins away from the trapezoid, so a defenceman has to retrieve the puck with you arriving on them
 ```
 
@@ -330,7 +331,7 @@ In a 2-1-2:
 
 The defensemen hold the blue line at the points. Remember that these are **roles, not people** (see "A Note on Language") — if a winger beats you to the puck they are F1 and you take the support role, immediately. Communicate clearly so the line moves as a unit and no one is left guessing.
 
-**The trapezoid works in your favour here.** Under NHL and IIHF rules the opposing goalie may only play the puck behind their goal line inside the marked trapezoid, so they cannot come out to the corner and calmly move a dumped puck — a defenceman has to, with you arriving on them. That is exactly why dump-and-chase works, so aim your dump-ins away from the trapezoid. **Check whether your league has one**: most rec, beer-league and youth associations do not, and against a goalie who can play the corner the whole dump-and-chase is worth much less. Rule detail in [Rules Primer](../foundation/rules_primer.md).
+**The trapezoid works in your favour here.** Under NHL and IIHF rules the opposing goalie may only play the puck behind their goal line inside the marked trapezoid, so they cannot come out to the corner and calmly move a dumped puck — a defenceman has to, with you arriving on them. That is exactly why dump-and-chase works, so aim your dump-ins away from the trapezoid. **Check whether your league has one**: most rec, beer-league and youth associations do not, and against a goalie who can play the corner the whole dump-and-chase is worth much less. Rule detail in [Rules Primer](../foundation/rules_primer.md). **🇬🇧 In England and Wales, treat this as unsettled.** The IIHF book carries the rule (Rule 27.7, not the NHL's 27.8), but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* and the 2025-26 In-House Rules do not mention it — though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way, so the published documents do not settle it. For you as the attacking team the safe assumption runs the other way: plan as though their goalie **may** retrieve the puck, ask your league, and look behind the net to see whether the lines are painted at all. Treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
 
 ---
 

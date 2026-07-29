@@ -6,7 +6,7 @@
 
 ## Overview
 
-If you play in Britain, **your rule book is the IIHF's.** Every level of the game here runs on it: the Elite Ice Hockey League, the National Ice Hockey League, the recreational and junior game in England and Scotland, university hockey, and the GB national teams.
+If you play in Britain, **your rule book is the IIHF's.** Every level of the game here runs on it: the National Ice Hockey League, the recreational and junior game in England and Scotland, university hockey, and the GB national teams — and the Elite League too, on this corpus's reading, though the League runs its own Casebook that nobody here has read.
 
 That single fact does most of the work. Wherever the rest of this corpus says *"under IIHF rules…"*, it is describing your game. Wherever it flags a USA Hockey or Hockey Canada divergence, that flag is not yours — it is there for North American readers.
 
@@ -93,7 +93,9 @@ The IIHF book has a goalkeeper's restricted area (Rule 1.8 for the geometry, 27.
 
 > **22.3.** *"Goalkeepers' Restricted Area is not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule."*
 
-That is the governing body suspending an IIHF rule domestically, and it explains why so many British rinks have no trapezoid painted on them.
+That is the governing body suspending an IIHF rule domestically — **and only in its own jurisdiction.** England Ice Hockey is the NGB *"in England and Wales"* (*Rules & Regulations* 1.1), so 22.3 does not reach **Scotland (SIHA)** or **BUIHA university hockey**. Their instrument is the In-House Rules, which are silent on the restricted area — and whose Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book."* So for a Scottish or university player IIHF 27.7 reads as live. **The Elite League is a separate question this corpus cannot answer**: EIHL clubs play in England, and the League runs its own Casebook that nobody here has read. The suspension's stated reason — giving rinks time to repaint — is also why so many British rinks have no trapezoid painted on them; treat an unmarked sheet as a hint rather than a ruling, because 27.7 turns on *"the position of the puck"*, not on the markings.
+
+**Play as though it binds, wherever you are.** For a goaltender that costs nothing and the alternative is two minutes. For an attacking team the safe assumption runs the other way — plan as though *their* goalie may come for a dumped puck.
 
 **⚠️ Treat this as unsettled.** The non-enforcement is in the **2024-2025** edition of the *Rules & Regulations*. The **2025-26** In-House Rules — the current playing-rule amendments — do not mention the restricted area at all, so the published documents do not establish whether the suspension still stands. Ask your league. It changes where your goaltender may retrieve a rim, which is a decision they make several times a game.
 
@@ -160,7 +162,7 @@ A team manager may sit on the bench but does not count toward the requirement. O
 
 ## Key Takeaways
 
-1. **If you play in Britain, your rule book is the IIHF's** — at every level, from recreational to the Elite League to the GB national side.
+1. **If you play in Britain, your rule book is the IIHF's** — at every level, from recreational to the GB national side — and, on this corpus's reading, the Elite League, whose own Casebook is unread here.
 2. Wherever this corpus flags an **IIHF** difference, that is your game. Wherever it flags **USA Hockey** or **Hockey Canada**, it is not.
 3. On top of the IIHF book sit the **In-House Rules** (England, Scotland, universities) or the **EIHL Casebook** (Elite League). They override the IIHF book domestically.
 4. **A neck laceration protector is mandatory for all players**, with no warning and an immediate 10-minute misconduct.

@@ -94,7 +94,8 @@ Read: Rim to beat a forechecker sealing you against the boards; reverse to beat 
 Never: Carry through the slot under pressure — a turnover in the highest-danger area is a direct scoring chance against
 Rule: Your goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii))
 Rule: Take the trapezoid's dimensions from Rule 1.8, never from Rule 27.8 — 27.8's wording is stale, left over from before the trapezoid was widened in 2014-15
-Key: The NHL, KHL and IIHF play a trapezoid; most rec, beer-league and youth associations do not — know which you are in
+Key: The NHL, KHL and IIHF play a trapezoid; most rec, beer-league and youth associations outside Britain do not — know which you are in
+Rule: The IIHF number is 27.7, not 27.8, and in England and Wales the status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" while the In-House Rules are silent, so assume it binds and ask your league
 Action: Plan your retrieval route before the puck arrives, and aim rims where a teammate can meet them, not into the corner
 ```
 
@@ -118,6 +119,7 @@ Action: Plan your retrieval route before the puck arrives, and aim rims where a 
 > - **Your goalie cannot get a rim that dies in the corner.** You have to, under forecheck pressure. Plan your retrieval route before the puck arrives, not after — that decision is the difference between a breakout and a battle you lose facing your own end boards.
 > - **A rim aimed straight into the corner is a gift to the forecheck.** Aim rims to arrive where a teammate can meet them, or keep them tight enough that they carry all the way around.
 > - **Your goalie can still help you, just not out there.** They may stop a puck directly behind the net and leave it dead for you, or play it inside the trapezoid. A rim that stays close to the net is therefore retrievable with no race at all. Agree which of those you want — the call is **"leave it"**, and it has to come while you're still coming back, not as you arrive. See [Goaltender](goaltender.md) and [On-Ice Communication](../foundation/on_ice_communication.md).
+> - **🇬🇧 If you play in Britain, find out before you plan any of this.** The IIHF book has the rule and numbers it **27.7**, not the NHL's 27.8 — but England Ice Hockey's own *Rules & Regulations* **22.3** say the Goalkeepers' Restricted Area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"*, and the 2025-26 In-House Rules do not mention it at all. That edition of the *Rules & Regulations* is 2024-25, so the published documents do not settle whether the suspension still stands. **Play as though it binds, and ask your league.** **Look behind the net to see whether the lines are painted at all** — 22.3's own stated reason for the suspension is giving rinks time to repaint, so an unmarked sheet is a strong hint. It is a hint and not a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
 > - **If you play without a trapezoid, rebuild the habit.** Your goalie becomes a genuine third puck-handler behind the net, and the retrievals you have been sprinting to are no longer yours. Find out before your first shift.
 
 ---
@@ -596,7 +598,7 @@ The universal rule: **stay on the defensive side of the puck**. Anything that pu
 - **Diving or sliding on a 2-on-1** before the pass is released — you take yourself out of the play and open both options.
 - **Carrying the puck through your own slot.** Go behind the net instead.
 - **Pinching with no read.** An offensive-zone pinch with forwards behind you is fine; a neutral-zone pinch that misses is a 2-on-1 against your partner.
-- **Rimming into the corner and assuming the goalie will get it.** Under NHL and IIHF rules they legally cannot.
+- **Rimming into the corner and assuming the goalie will get it.** Under NHL and IIHF rules they legally cannot — though in England and Wales the restricted area's status is unsettled. Play as though it binds — an unpainted sheet is a hint, not a ruling, because the rule turns on where the puck is, not on the markings.
 - **D-to-D through the slot.** Go behind the net.
 - **Blocking a shot from a screening position**, deflecting a puck your goalie never saw.
 - **Activating with no forward covering for you**, leaving nobody above the puck.
@@ -611,7 +613,7 @@ The universal rule: **stay on the defensive side of the puck**. Anything that pu
 3. On a 2-on-1, take the pass and let your goalie have the shot — a convention, not a law, and it stops applying if the shooter is walking into the slot completely unpressured with no realistic pass available.
 4. Never carry through your own slot. Behind the net is your safe pivot.
 5. Rim to beat a sealing forechecker, reverse to beat an over-committed one.
-6. In the NHL, the KHL and IIHF play, your goalie can only play the puck behind the goal line inside the trapezoid — so retrieval is on you. Most rec, beer-league and youth associations have no trapezoid, and there your goalie is a third puck-handler back there. Find out before your first shift.
+6. In the NHL, the KHL and IIHF play, your goalie can only play the puck behind the goal line inside the trapezoid — so retrieval is on you. Most rec, beer-league and youth associations elsewhere have no trapezoid, and there your goalie is a third puck-handler back there. **In England and Wales the status is unsettled** — the IIHF book has it at Rule 27.7, England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced. Play as though it binds and find out before your first shift; unpainted lines are a hint, not a ruling.
 7. Only one defenceman pinches at a time — the other is the safety. That is a near-universal coaching convention rather than a rule, and coaches do call exceptions (a full-ice press, a delayed penalty, 6-on-5).
 8. Know whether your team plays zone or man-on-man in the defensive zone. Most breakdowns are two players on different assumptions.
 

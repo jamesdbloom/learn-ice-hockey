@@ -445,6 +445,7 @@ Read: Use it when a neutral zone reset is not enough — their forecheck has re-
 Risk: A turnover below your own goal line is a scoring chance — the low regroup is a possession play, not a panic play
 Never: Use it when you are panicking — off the glass and out is the correct answer instead
 Rule: Under NHL, KHL and IIHF rules your goalie may not play the puck behind the goal line outside the trapezoid (NHL Rule 1.8; penalty 27.8 / 63.2(viii)) — most rec and youth leagues have none
+Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8 — and in England and Wales its status is unsettled, because England Ice Hockey's Rules & Regulations 22.3 say the restricted area is "not currently enforced"; keep your goalie inside it and ask your league
 ```
 
 A deeper version: the puck goes all the way back below your own blue line, sometimes behind your own net, and your team restarts as if from a breakout.
@@ -453,7 +454,7 @@ A deeper version: the puck goes all the way back below your own blue line, somet
 
 **Be aware of the trade.** Taking the puck below your own goal line invites their forecheck to come with you, and a turnover down there is a scoring chance. The low regroup is a possession play, not a panic play. If you are panicking, **off the glass and out** is the correct answer instead.
 
-> **Trapezoid note:** if you play under NHL, KHL or IIHF rules, your goaltender cannot handle the puck behind the goal line outside the trapezoid — the markings are specified in **NHL Rule 1.8** and the two-minute delay-of-game minor in **Rules 27.8 and 63.2(viii)** — which limits how much help you get on a low regroup that gets rimmed into the corner. Most rec, beer-league and youth associations do not use the trapezoid, in which case your goalie is a genuine extra option on a low regroup. Know which you are playing under.
+> **Trapezoid note:** if you play under NHL, KHL or IIHF rules, your goaltender cannot handle the puck behind the goal line outside the trapezoid — the markings are specified in **NHL Rule 1.8** and the two-minute delay-of-game minor in **Rules 27.8 and 63.2(viii)** — which limits how much help you get on a low regroup that gets rimmed into the corner. Most rec, beer-league and youth associations do not use the trapezoid, in which case your goalie is a genuine extra option on a low regroup. Know which you are playing under. **🇬🇧 In England and Wales, treat this as unsettled.** The IIHF book carries the rule (Rule 27.7, not the NHL's 27.8), but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* and the 2025-26 In-House Rules do not mention it — though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. Assume it binds, ask your league, and look behind the net to see whether the lines are painted at all. Treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
 
 ### Timing the forwards' swing
 
