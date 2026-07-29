@@ -53,6 +53,7 @@ const OUT = join(DIST, 'downloads');
 // by the service worker, and never walked by the link checker.
 const PRINT = join(SITE, '.print');
 const SITE_URL = 'https://learn-ice-hockey.com';
+const AUTHOR = 'James Bloom';
 
 // Fixed so archives are reproducible. Not "now".
 const MTIME = new Date('2026-01-01T00:00:00Z');
@@ -209,7 +210,7 @@ function main() {
     const header =
       `<!-- ${meta.docs?.[id]?.title ?? id}\n` +
       `     From the Learn Ice Hockey corpus — ${SITE_URL}/${id}/\n` +
-      `     CC BY-NC 4.0. Not affiliated with the NHL, IIHF, USA Hockey or Hockey Canada. -->\n\n`;
+      `     © ${AUTHOR}. CC BY-NC 4.0. Not affiliated with the NHL, IIHF, USA Hockey or Hockey Canada. -->\n\n`;
     const name = `${id.replace(/\//g, '__')}.md`;
     writeFileSync(join(OUT, 'markdown', name), header + body);
     manifest.markdown.push({ id, file: `markdown/${name}`, bytes: Buffer.byteLength(header + body) });
@@ -230,6 +231,7 @@ function main() {
       identifier: `urn:learn-ice-hockey:layer:${layer.id}`,
       modified: MODIFIED,
       mtime: MTIME,
+      author: AUTHOR,
       chapters,
     });
     const file = `${layer.id}.epub`;
@@ -251,6 +253,7 @@ function main() {
       identifier: 'urn:learn-ice-hockey:complete',
       modified: MODIFIED,
       mtime: MTIME,
+      author: AUTHOR,
       chapters,
     });
     writeFileSync(join(OUT, 'learn-ice-hockey.epub'), buf);

@@ -47,6 +47,7 @@ th { background:#f1f1ef; }
 
 hr { border:0; border-top:1px solid var(--rule); margin:2em 0; }
 .sources { font-size:.85em; color: var(--muted); }
+.byline { color: var(--muted); font-style: italic; margin-top:-.6em; }
 `.trim();
 
 function containerXml() {
@@ -58,7 +59,7 @@ function containerXml() {
 </container>`;
 }
 
-function packageOpf({ title, identifier, chapters, modified, subtitle }) {
+function packageOpf({ title, identifier, chapters, modified, subtitle, author }) {
   const items = chapters
     .map((c, i) => `    <item id="c${i}" href="${c.file}" media-type="application/xhtml+xml"/>`)
     .join('\n');
@@ -69,9 +70,11 @@ function packageOpf({ title, identifier, chapters, modified, subtitle }) {
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="pub-id">${esc(identifier)}</dc:identifier>
     <dc:title>${esc(title)}</dc:title>
+    <dc:creator id="author">${esc(author)}</dc:creator>
+    <meta refines="#author" property="role" scheme="marc:relators">aut</meta>
     ${subtitle ? `<dc:description>${esc(subtitle)}</dc:description>` : ''}
     <dc:language>en-GB</dc:language>
-    <dc:rights>CC BY-NC 4.0. Not affiliated with the NHL, IIHF, USA Hockey or Hockey Canada.</dc:rights>
+    <dc:rights>© ${esc(author)}. Licensed CC BY-NC 4.0 — https://creativecommons.org/licenses/by-nc/4.0/ — attribution required. Not affiliated with the NHL, IIHF, USA Hockey or Hockey Canada.</dc:rights>
     <meta property="dcterms:modified">${modified}</meta>
   </metadata>
   <manifest>
@@ -86,7 +89,7 @@ ${spine}
 </package>`;
 }
 
-function navXhtml(title, chapters) {
+function navXhtml(title, chapters, author) {
   const lis = chapters
     .map((c) => `      <li><a href="${c.file}">${esc(c.title)}</a></li>`)
     .join('\n');
@@ -96,6 +99,7 @@ function navXhtml(title, chapters) {
 <link rel="stylesheet" type="text/css" href="style.css"/></head>
 <body>
   <h1>${esc(title)}</h1>
+  <p class="byline">${esc(author)}</p>
   <nav epub:type="toc" id="toc">
     <h2>Contents</h2>
     <ol>
@@ -119,7 +123,8 @@ ${bodyXhtml}
 
 /**
  * @param {{title:string, identifier:string, subtitle?:string, modified:string,
- *          mtime:Date, chapters:{file:string,title:string,body:string}[]}} spec
+ *          author:string, mtime:Date,
+ *          chapters:{file:string,title:string,body:string}[]}} spec
  * @returns {Buffer}
  */
 export function buildEpub(spec) {
@@ -128,7 +133,7 @@ export function buildEpub(spec) {
   zip.add('mimetype', 'application/epub+zip', { store: true });
   zip.add('META-INF/container.xml', containerXml());
   zip.add('OEBPS/style.css', CSS);
-  zip.add('OEBPS/nav.xhtml', navXhtml(spec.title, spec.chapters));
+  zip.add('OEBPS/nav.xhtml', navXhtml(spec.title, spec.chapters, spec.author));
   zip.add('OEBPS/content.opf', packageOpf(spec));
   for (const c of spec.chapters) {
     zip.add(`OEBPS/${c.file}`, chapterXhtml(c.title, c.body));

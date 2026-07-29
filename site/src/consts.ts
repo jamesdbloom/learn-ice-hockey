@@ -21,6 +21,16 @@ export const AUDIO_ENABLED = false;
 export const AUDIO_BASE = '/audio';
 
 /**
+ * Who wrote it.
+ *
+ * Not decoration. The content is CC BY-NC 4.0 (D4), and the BY is attribution —
+ * a downstream reuser has to know who to credit, so the name belongs in the
+ * page footer, the document metadata and the EPUB package alike.
+ */
+export const SITE_AUTHOR = 'James Bloom';
+export const SITE_AUTHOR_URL = 'https://github.com/jamesdbloom';
+
+/**
  * Shown in the footer of every page. Required by the legal position set out in
  * §8 of the build specification.
  */

@@ -1,6 +1,8 @@
 ---
-import { NON_AFFILIATION } from '../consts';
+import { NON_AFFILIATION, SITE_AUTHOR, SITE_AUTHOR_URL } from '../consts';
 import { DOC_COUNT } from '../data/nav';
+
+const year = new Date().getFullYear();
 
 interface Props {
   /**
@@ -20,6 +22,11 @@ const { bare = false } = Astro.props;
     <p>
       {DOC_COUNT} documents. Every one ends with Common Mistakes, Key Takeaways and a dated
       Sources section, and flags anything that could not be independently verified.
+    </p>
+    <p class="site-footer__byline">
+      Researched and written by{' '}
+      <a href={SITE_AUTHOR_URL} rel="author">{SITE_AUTHOR}</a>. © {year},
+      licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">CC BY-NC 4.0</a>.
     </p>
     <p class="site-footer__links">
       <a href="/downloads/">Downloads</a> · <a href="/search/">Search</a> ·{' '}
