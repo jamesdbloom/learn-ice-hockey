@@ -104,6 +104,27 @@ wrong costs a second narration run. See the sequencing note in §4.
 
 ## 4. Phase plan
 
+> **Where this stands, 29 July 2026.** The checkboxes below are original and
+> were never ticked; this table is the live status. Phases are not sequential
+> any more — 5 is parked and 6 is reachable without it.
+>
+> | Phase | State | Evidence |
+> |---|---|---|
+> | 0 · Close the review | ✅ **Done, and overshot** | Targeted round 13; reached **round 22**. Records in `project/reviews/` |
+> | 1 · Repository | ✅ Done | Public at `jamesdbloom/learn-ice-hockey`; 36 documents in 7 sections; licences; agents and hooks in `.claude/` |
+> | 2 · Infrastructure | ✅ Done | S3 + CloudFront, Terraform, GitHub OIDC — no long-lived keys |
+> | 3 · Website | ✅ Done | Live at **learn-ice-hockey.com**, 39 pages, Pagefind search, CI deploys on push to `main` |
+> | 4 · Speech transform | ✅ Done | `md_to_speech.py`, all 36 documents, 83 self-test assertions, **0 unrecognised constructs** after round 22 |
+> | 4b · Section kinds | ⏸ **Suspended** | Gated Phase 5 only; 0 documents tagged; D13 still open |
+> | 5 · Narration | ⏸ **Parked on quality** | Pilot ran, output rejected. §7.2 |
+> | 6 · Podcasts | 🟡 **Partly — 5 episodes exist** | Generated pre-repo from an older prompt. The `notebooklm-episode` skill now exists but **has never been run** |
+> | 7 · Downloads and RSS | ❌ Not started | `site/public/` holds only `favicon.svg` and `robots.txt` |
+> | 8 · Offline PWA | ❌ Not started | No manifest, no service worker |
+>
+> **What is actually left:** 6 (finish properly), 7, 8 — plus 4b and 5 if
+> narration is revisited. Everything blocking a reader from *reading* the corpus
+> is done; what remains is packaging it for people who want it in other forms.
+
 ### Phase 0 — Close the review *(in progress)*
 
 - [ ] Round 13 completes: external source layer verified
@@ -149,7 +170,12 @@ wrong costs a second narration run. See the sequencing note in §4.
 
 **Exit gate:** speech text for three representative documents (one rules-heavy, one systems, one research-heavy) reads correctly aloud.
 
-### Phase 4b — Section kinds *(new; gates Phase 5)*
+### Phase 4b — Section kinds *(gated Phase 5; suspended with it, 29 July 2026)*
+
+> **Not started — zero documents carry a kind marker.** It gated Phase 5 and
+> Phase 5 is parked, so this is suspended rather than outstanding. D13 (marker
+> syntax) is still an open decision. If narration resumes, do this first: the
+> whole argument below still holds.
 
 Tag every section with what kind of content it holds, per §11.
 
@@ -175,7 +201,17 @@ measured rather than guessed.
 > The same argument applies to Phase 6. Regenerating podcast episodes is manual
 > (NotebookLM has no API), so the episode inputs want to be right the first time.
 
-### Phase 5 — Narration
+### Phase 5 — Narration ⏸ *parked 29 July 2026, on quality*
+
+A pilot narrated `center.md` in full through Polly neural and the output was
+judged not good enough to ship. The pipeline works; the voice is the problem.
+See the status note in §7.2 for the evidence, the corrected costs, and what
+would unpark it. **Nothing here is committed and no audio exists in S3.**
+
+Note this also **suspends Phase 4b**, which existed only to gate Phase 5 — the
+argument for tagging first was that narrating first makes the practical cut
+cost a second full pass. With no narration, that pressure is gone. If narration
+resumes, 4b becomes a blocker again immediately.
 
 - [ ] Polly pipeline per §7.2
 - [ ] Generate, upload to S3, wire players
@@ -333,6 +369,49 @@ Markdown fed directly to TTS sounds terrible. `scripts/md_to_speech.py` must pro
 This is genuinely fiddly and worth doing properly, because it is reusable for every future document.
 
 ### 7.2 Narration pipeline
+
+> **⚠️ Status note, 29 July 2026 — D7's long-form voice does not exist in this
+> region, and narration is parked on quality.**
+>
+> **There is no long-form voice in `eu-west-2`.** `aws polly describe-voices`
+> returns none, in any language. The en-GB voices are **Emma** and **Arthur**
+> (neural), and **Brian** and **Amy** (neural *and* generative). D7 chose an
+> engine that cannot be used here without moving region.
+>
+> That makes the real cost decision much narrower than the one recorded
+> elsewhere. Against 2,318,459 billed characters:
+>
+> | Engine | Rate | Full corpus |
+> |---|---|---|
+> | Standard | $4/M | $9.27 |
+> | **Neural** | $16/M | **$37.10** |
+> | **Generative** | $30/M | **$69.55** |
+> | Long-form | $100/M | **unavailable in `eu-west-2`** |
+>
+> `scripts/md_to_speech.py --report` still prints a long-form estimate of
+> ~$231 and should be corrected — it is a wrong number that a reader would
+> make a decision on.
+>
+> **A pilot was run and the output was judged not good enough.**
+> `content/positions/center.md` was narrated in full through Polly neural
+> (Brian, en-GB) — 20 chunks, 42,691 billed characters, 50m 27s, $0.68 — plus a
+> neural-versus-generative comparison on one chunk. Total spend $0.81. The
+> transform behaved: both engines accepted the corpus's SSML unmodified, which
+> was the real technical risk, since generative voices support only a subset of
+> SSML. **The blocker is voice quality, not the pipeline.**
+>
+> So Phase 5 is **parked, not abandoned**, and nothing about it is committed.
+> What would unpark it:
+>
+> - **Generative at length.** Only one 3½-minute chunk was heard on generative;
+>   a full document is $1.28 and is the obvious next test if narration is
+>   revisited.
+> - **A different region.** Long-form is available elsewhere; whether that
+>   justifies splitting the stack from `eu-west-2` is a real question and this
+>   note does not answer it.
+> - **A non-Polly engine.** Not evaluated at all.
+>
+> The transform work stands on its own regardless — see §7.1 and round 22.
 
 - Amazon Polly, long-form voice (D7). British English (`en-GB`) — the corpus is written in British English
 - Polly's synthesis limit requires **chunking by section**, then concatenating with `ffmpeg`
