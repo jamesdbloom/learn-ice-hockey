@@ -2,7 +2,6 @@
   "env": {
     "CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION": "1000"
   },
-
   "permissions": {
     "allow": [
       "WebSearch",
@@ -23,7 +22,6 @@
       "Bash(npm run build:*)",
       "Bash(npm run preview:*)",
       "Bash(npm run check:*)",
-
       "mcp__claude-in-chrome__tabs_context_mcp",
       "mcp__claude-in-chrome__tabs_create_mcp",
       "mcp__claude-in-chrome__tabs_close_mcp",
@@ -34,13 +32,12 @@
       "mcp__claude-in-chrome__read_console_messages",
       "mcp__claude-in-chrome__read_network_requests"
     ],
-
     "ask": [
       "Bash(git push:*)",
       "Bash(gh pr create:*)",
-      "Bash(gh release:*)"
+      "Bash(gh release:*)",
+      "Bash(terraform apply:*)"
     ],
-
     "deny": [
       "Read(./infra/terraform.tfvars)",
       "Read(./infra/backend.hcl)",
@@ -51,7 +48,6 @@
       "Read(./**/tfplan)",
       "Read(./**/.env)",
       "Read(./**/.env.*)",
-      "Bash(terraform apply:*)",
       "Bash(terraform destroy:*)",
       "Bash(terraform import:*)",
       "Bash(aws s3 rm:*)",
@@ -60,7 +56,6 @@
       "Bash(aws iam:*)"
     ]
   },
-
   "hooks": {
     "PreToolUse": [
       {
