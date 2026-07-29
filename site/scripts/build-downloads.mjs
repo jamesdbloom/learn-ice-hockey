@@ -37,7 +37,7 @@
  * archives. Without that, every build would upload every EPUB and invalidate it.
  */
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'node-html-parser';
@@ -48,6 +48,10 @@ const SITE = join(HERE, '..');
 const ROOT = join(SITE, '..');
 const DIST = join(SITE, 'dist');
 const OUT = join(DIST, 'downloads');
+// Print bundles are a build intermediate for headless Chrome, not a published
+// artefact. Kept outside dist/ so they are never synced to S3, never precached
+// by the service worker, and never walked by the link checker.
+const PRINT = join(SITE, '.print');
 const SITE_URL = 'https://learn-ice-hockey.com';
 
 // Fixed so archives are reproducible. Not "now".
@@ -139,6 +143,37 @@ function chapterFor(id, inBundle) {
   return { file: chapterFileOf(id), title, body: toXhtml(article.toString()) };
 }
 
+/**
+ * A single self-contained HTML file per bundle, for headless Chrome to print.
+ *
+ * Inlines the site's stylesheet rather than linking it, because Chrome prints
+ * from a `file://` URL and a root-relative `/_astro/...` href resolves to the
+ * filesystem root and silently yields an unstyled PDF.
+ */
+function printBundle(title, chapters, css) {
+  const body = chapters
+    .map((c) => `<section class="print-doc">\n${c.body}\n</section>`)
+    .join('\n<hr class="print-sep"/>\n');
+  return `<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<title>${title.replace(/[<&]/g, (m) => (m === '<' ? '&lt;' : '&amp;'))}</title>
+<style>${css}</style>
+<style>
+  /* file:// printing only — the site shell is absent here, so re-establish the
+     measure the print rules assume. */
+  body { max-width: none; margin: 0; padding: 0; font-size: 10.5pt; }
+  .print-sep { break-after: page; page-break-after: always; border: 0; }
+  .print-doc > article { max-width: none; }
+</style>
+</head>
+<body>
+${body}
+</body>
+</html>`;
+}
+
 function humanSize(bytes) {
   if (bytes < 1024) return `${bytes} B`;
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
@@ -151,6 +186,14 @@ function main() {
     process.exit(2);
   }
   mkdirSync(join(OUT, 'markdown'), { recursive: true });
+  mkdirSync(PRINT, { recursive: true });
+
+  // The hashed stylesheet, inlined into the print bundles below.
+  const cssFile = (existsSync(join(DIST, '_astro'))
+    ? readdirSync(join(DIST, '_astro')).filter((f) => f.endsWith('.css')).sort()
+    : [])[0];
+  const css = cssFile ? readFileSync(join(DIST, '_astro', cssFile), 'utf8') : '';
+  if (!css) console.warn('build-downloads: no stylesheet found — print bundles will be unstyled');
 
   const allIds = structure.layers.flatMap((l) => l.docs);
   const manifest = { generated: MODIFIED, markdown: [], epub: [] };
@@ -191,6 +234,8 @@ function main() {
     });
     const file = `${layer.id}.epub`;
     writeFileSync(join(OUT, file), buf);
+    writeFileSync(join(PRINT, `${layer.id}.html`),
+                  printBundle(`Learn Ice Hockey — ${layer.title}`, chapters, css));
     manifest.epub.push({ id: layer.id, title: layer.title, file, bytes: buf.length,
                          size: humanSize(buf.length), docs: layer.docs.length });
     built++;
@@ -209,6 +254,8 @@ function main() {
       chapters,
     });
     writeFileSync(join(OUT, 'learn-ice-hockey.epub'), buf);
+    writeFileSync(join(PRINT, 'learn-ice-hockey.html'),
+                  printBundle('Learn Ice Hockey — the complete corpus', chapters, css));
     manifest.epub.unshift({ id: 'complete', title: 'The complete corpus',
       file: 'learn-ice-hockey.epub', bytes: buf.length, size: humanSize(buf.length),
       docs: chapters.length });

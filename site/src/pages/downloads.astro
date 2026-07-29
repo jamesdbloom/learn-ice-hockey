@@ -24,11 +24,6 @@ const epubs = [
     <article>
       <h1>Downloads</h1>
 
-      <p>
-        Everything here is regenerated on every deployment, so a download is never
-        older than the site. All of it is CC BY-NC 4.0.
-      </p>
-
       <h2>EPUB — for reading offline</h2>
       <p>
         The best format for reading on a phone: it reflows to your screen and font
@@ -41,6 +36,24 @@ const epubs = [
         {epubs.map((e) => (
           <li>
             <a href={`/downloads/${e.file}`} download>{e.title}</a>
+            {e.note && <span class="download-note"> — {e.note}</span>}
+          </li>
+        ))}
+      </ul>
+
+      <h2>PDF — for printing</h2>
+      <p>
+        Fixed layout, printed from the same stylesheet your browser uses for
+        Cmd-P. Good for paper and for reading on a large screen; poor on a phone,
+        where the EPUB above is the better answer. The complete corpus runs to
+        over twelve hundred pages, so the per-section files are usually what you
+        want.
+      </p>
+
+      <ul class="download-list">
+        {epubs.map((e) => (
+          <li>
+            <a href={`/downloads/${e.file.replace('.epub', '.pdf')}`} download>{e.title}</a>
             {e.note && <span class="download-note"> — {e.note}</span>}
           </li>
         ))}
@@ -60,10 +73,9 @@ const epubs = [
 
       <h2>What is not here yet</h2>
       <p>
-        <strong>PDF</strong> is planned and not built. <strong>Audio</strong> —
-        narration, chaptered audiobooks and a podcast feed — is specified but
-        parked; the pipeline works and the voice quality was not good enough to
-        ship. Neither is abandoned.
+        <strong>Audio</strong> — narration, chaptered audiobooks and a podcast
+        feed — is specified but parked: the pipeline works and the voice quality
+        was not good enough to ship. It is not abandoned.
       </p>
 
       <hr />

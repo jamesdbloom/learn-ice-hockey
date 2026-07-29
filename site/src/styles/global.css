@@ -1334,3 +1334,77 @@ a.chip:hover {
     margin-bottom: 0;
   }
 }
+
+/* ==========================================================================
+   Print
+
+   Serves two readers: someone pressing Cmd-P, and scripts/build-pdf.mjs, which
+   drives headless Chrome over the same pages. Both get the same result, which
+   is the point — a PDF that diverges from what the browser prints is a second
+   thing to maintain.
+
+   Wide tables are the known hard part (build spec §10.3). They shrink and wrap
+   here rather than clipping: a rule-set comparison that loses its right-hand
+   column loses the reason it exists.
+   ========================================================================== */
+@media print {
+  @page {
+    margin: 18mm 16mm;
+  }
+
+  /* Chrome's default header/footer are switched off by the --no-header flag;
+     these are the on-page furniture that only makes sense on the web. */
+  .skip-link,
+  .site-header,
+  .sidebar,
+  .toc,
+  .site-footer__links,
+  .theme-toggle,
+  .prev-next,
+  .audio-player {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 10.5pt;
+  }
+
+  .shell,
+  .shell--bare,
+  .shell--with-toc,
+  .main {
+    display: block !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    grid-template-columns: none !important;
+  }
+
+  /* Keep a heading with the text it introduces, and never split a facts block
+     or a rule callout across a page — they are read as single units. */
+  h1, h2, h3, h4 { break-after: avoid-page; page-break-after: avoid; }
+  h1 { break-before: page; page-break-before: always; }
+  h1:first-of-type { break-before: auto; page-break-before: auto; }
+  .facts, pre, blockquote, table, figure { break-inside: avoid; page-break-inside: avoid; }
+
+  table { font-size: 8.5pt; width: 100%; }
+  th, td { word-wrap: break-word; }
+
+  /* A URL the reader cannot click is worth printing — but only if it leaves the
+     corpus. The download build rewrites internal cross-links to absolute
+     learn-ice-hockey.com URLs, so a bare [href^="http"] rule prints the address
+     of every "Related" chip and every in-text reference. The first PDF had a
+     full URL after all nine chips on page one. Exclude our own host. */
+  a[href^="http"]:not([href*="learn-ice-hockey.com"])::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    word-break: break-all;
+  }
+  a { text-decoration: none; color: #000; }
+
+  details { display: block; }
+  details > summary { display: none; }
+}

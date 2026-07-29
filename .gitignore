@@ -54,3 +54,4 @@ infra/domain-registration.json
 # rebuild this directory. See scripts/fetch_sources.sh.
 sources/*
 !sources/README.md
+site/.print/
