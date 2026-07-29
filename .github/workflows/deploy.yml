@@ -231,12 +231,17 @@ jobs:
           PATHS=()
           while IFS= read -r line; do
             if [ -n "$line" ]; then PATHS+=("$line"); fi
-          done < <(grep -E '\.html$' /tmp/changed-paths.txt || true)
+          done < <(grep -E '\.html$|^/version\.json$' /tmp/changed-paths.txt || true)
 
           if [ ${#PATHS[@]} -eq 0 ]; then
             echo "No HTML changed — no invalidation needed." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
+
+          # /version.json exists to answer "what is live right now?", so it is
+          # the one pass-2 file that should not spend five minutes stale. It
+          # changes on every deploy, which is why it is invalidated explicitly
+          # rather than being left to its TTL like the sitemap or robots.txt.
 
           # A reader asking for /faceoffs/ is rewritten to /faceoffs/index.html
           # by the CloudFront function before the cache is consulted, so the

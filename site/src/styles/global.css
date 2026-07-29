@@ -15,7 +15,12 @@
   --bg-inset: #e9e9e5;
   --text: #1b1c1e;
   --text-muted: #5b5f66;
-  --text-faint: #7a7f87;
+  /*
+    Was #7a7f87, which is 3.89:1 on --bg — under the 4.5:1 WCAG AA floor for
+    body text, and it is what the footer is set in on every page. #686d75 is
+    5.03:1 and still reads as clearly secondary against --text-muted's 7.3:1.
+  */
+  --text-faint: #686d75;
   --border: #dedddc;
   --border-strong: #c3c2c0;
 
@@ -436,6 +441,13 @@ pre {
   overflow-wrap: break-word;
 }
 
+/*
+  Every text-bearing child fills the column, so the page has one right edge
+  rather than two. This list used to cap them all at 70ch while tables ran the
+  full width, which is what left the blank strip down the right of every
+  paragraph. Kept as a selector list rather than deleted because it is the
+  place to reintroduce a measure if one is ever wanted again.
+*/
 .prose > p,
 .prose > ul,
 .prose > ol,
@@ -448,7 +460,7 @@ pre {
 .prose > blockquote,
 .prose > .verification-notes,
 .prose > .sources {
-  max-width: var(--measure);
+  max-width: 100%;
 }
 
 .toc {
@@ -563,7 +575,6 @@ pre {
   margin: 0 0 1.5rem;
   color: var(--text-muted);
   font-size: 1.0625rem;
-  max-width: var(--measure);
 }
 
 .doc-header {
@@ -572,7 +583,6 @@ pre {
   background: var(--bg-raised);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  max-width: var(--measure);
   font-size: 0.9375rem;
 }
 
@@ -758,16 +768,63 @@ a.chip:hover {
 
 /* --------------------------------------------------------------- tables -- */
 
-/* Wide comparison tables scroll inside their own region, never the page. */
+/*
+  Wide comparison tables scroll inside their own region, never the page.
+
+  The two shadows are load-bearing, not decoration. The five-way rule-set
+  comparison in rules_primer.md is 842px of table in a 790px column at every
+  viewport this site supports — six columns cannot satisfy the `min-width`
+  floor below and fit. macOS ships overlay scrollbars, so `offsetHeight -
+  clientHeight` is 0 and *nothing* indicated there was more table: the England
+  column read "Typical rec / beer le" and stopped at the border, on a desktop,
+  in both themes.
+
+  The technique is two background layers pinned to the scroll container with
+  `background-attachment: local` (the "cover") and `scroll` (the "shadow").
+  The cover sits over the shadow and slides away as you scroll, revealing the
+  gradient only on the side that has content off-screen. No JS, no scroll
+  listener, and it degrades to nothing if gradients are unsupported.
+
+  The ARIA half was already right — role="region", tabindex="0" and an
+  aria-label mean keyboard and screen-reader users were told all along. This
+  is the sighted-mouse-user half.
+*/
 .table-scroll {
   overflow-x: auto;
   max-width: 100%;
   margin: 1.5rem 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background:
+    linear-gradient(to right, var(--bg-raised) 30%, transparent) left center,
+    linear-gradient(to left, var(--bg-raised) 30%, transparent) right center,
+    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 22%), transparent) left center,
+    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 22%), transparent) right center;
+  background-repeat: no-repeat;
+  background-size: 3rem 100%, 3rem 100%, 0.9rem 100%, 0.9rem 100%;
+  background-attachment: local, local, scroll, scroll;
+  background-color: var(--bg-raised);
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
+}
+
+/* The shadow needs more punch on a dark surface to read at all. */
+:root[data-theme='dark'] .table-scroll {
+  background-image:
+    linear-gradient(to right, var(--bg-raised) 30%, transparent),
+    linear-gradient(to left, var(--bg-raised) 30%, transparent),
+    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 55%), transparent),
+    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 55%), transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .table-scroll {
+    background-image:
+      linear-gradient(to right, var(--bg-raised) 30%, transparent),
+      linear-gradient(to left, var(--bg-raised) 30%, transparent),
+      radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 55%), transparent),
+      radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 55%), transparent);
+  }
 }
 
 /*

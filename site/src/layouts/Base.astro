@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { VERSION_COMMENT } from '../lib/build-version.mjs';
 import '../styles/global.css';
 
 interface Props {
@@ -21,6 +22,7 @@ const { title, description, ogType, section, withToc = false, bare = false } = A
 <!doctype html>
 <html lang="en-GB">
   <head>
+    <Fragment set:html={`<!-- ${VERSION_COMMENT} -->`} />
     <BaseHead title={title} description={description} ogType={ogType} section={section} />
     <slot name="head" />
   </head>
