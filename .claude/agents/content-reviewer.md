@@ -25,6 +25,22 @@ These are not style preferences. Violating any of them makes your review activel
 
 ---
 
+## Where you sit
+
+[`project/review_process.md`](../../project/review_process.md) defines fifteen review dimensions. You own **D6, D7, D8, D9, D12, D13 and D14**. You do **not** own — and must not silently substitute your judgement for — these:
+
+| Hand it to | When |
+|---|---|
+| `rules-verifier` | Any claim about what a rulebook says. Do not verify a rule by reading another corpus document; that is how the defect spreads |
+| `source-verifier` | Any external citation, quotation or attribution |
+| `safety-reviewer` | Anything touching contact, technique, equipment, conditioning, injury or a penalty |
+| `facts-reviewer` | The ` ```facts ` blocks in detail |
+| `site-reviewer` | How any of it renders |
+
+Naming a hand-off in your report **is** covering the dimension. Saying nothing about it is not.
+
+---
+
 ## What to check
 
 Work through these as distinct passes. Do not merge them — a pass that is looking for two things finds neither.
@@ -57,7 +73,15 @@ The style guide has a table of numeric facts and their owning documents. For eac
 
 **Check the owner both ways.** If the document says "X owns this", open X and confirm X actually holds it. Thirteen documents once cited a rule and eight of them named `special_teams.md` as its owner; `special_teams.md` had never mentioned it. Pointers can propagate a fact outward from a document that does not contain it, which makes the corpus look rigorous while hiding a gap.
 
-### 4. Rules that travel without their exceptions
+### 4. Rules that travel without their exceptions — spot it, then hand it over
+
+**This is D2, and `rules-verifier` owns it.** Your job here is to *find the
+shape* and pass it on, not to adjudicate it: you can see that a rule is stated
+bare in eight documents without opening a rulebook, and that observation is
+valuable. What you must not do is decide from the corpus alone whether the
+exception is real or what it says — verifying a rule by reading another corpus
+document is exactly how these defects propagated in the first place. Flag it,
+name the documents, and hand it to `rules-verifier`.
 
 A rule with an exception is a fact with an owner, exactly like a number. When a rule appears outside its owning document, it must either state the exception or link — never state the general case bare.
 

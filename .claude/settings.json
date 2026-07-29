@@ -2,10 +2,73 @@
   "env": {
     "CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION": "1000"
   },
+
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch"
+      "WebFetch",
+      "Bash(python3 scripts/check_links.py:*)",
+      "Bash(python3 scripts/check_facts.py:*)",
+      "Bash(python3 scripts/check_external_links.py:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git ls-files:*)",
+      "Bash(npm ci:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run preview:*)",
+      "Bash(npm run check:*)",
+
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__tabs_create_mcp",
+      "mcp__claude-in-chrome__tabs_close_mcp",
+      "mcp__claude-in-chrome__read_page",
+      "mcp__claude-in-chrome__get_page_text",
+      "mcp__claude-in-chrome__find",
+      "mcp__claude-in-chrome__resize_window",
+      "mcp__claude-in-chrome__read_console_messages",
+      "mcp__claude-in-chrome__read_network_requests"
+    ],
+
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh release:*)"
+    ],
+
+    "deny": [
+      "Read(./infra/terraform.tfvars)",
+      "Read(./infra/backend.hcl)",
+      "Read(./infra/domain-registration.json)",
+      "Read(./infra/bootstrap/terraform.tfvars)",
+      "Read(./**/*.tfstate)",
+      "Read(./**/*.tfstate.*)",
+      "Read(./**/tfplan)",
+      "Read(./**/.env)",
+      "Read(./**/.env.*)",
+      "Bash(terraform apply:*)",
+      "Bash(terraform destroy:*)",
+      "Bash(terraform import:*)",
+      "Bash(aws s3 rm:*)",
+      "Bash(aws s3 sync:*)",
+      "Bash(aws cloudfront:*)",
+      "Bash(aws iam:*)"
+    ]
+  },
+
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/git-guard.sh",
+            "timeout": 60
+          }
+        ]
+      }
     ]
   }
 }
