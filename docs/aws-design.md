@@ -15,9 +15,12 @@ Four things determined nearly every choice.
 1. **A static site, and genuinely static.** No server, no database, no
    sessions, no personalisation. Whatever the answer is, it should not include
    anything that runs continuously.
-2. **A shared AWS account.** Account `REDACTED-ACCOUNT-ID` also hosts MockServer, an
-   unrelated production project. Isolation has to be engineered.
-3. **A public repository.** Nothing account-identifying may be committed.
+2. **A shared AWS account.** The account also hosts MockServer, an unrelated
+   production project. Isolation has to be engineered.
+3. **A public repository.** Nothing account-identifying may be committed —
+   no account id, no state bucket name, no role ARN. These live in
+   `~/.config/ice-hockey/env` and reach Terraform as `TF_VAR_*`. See
+   [`operations.md`](operations.md).
 4. **A personal project's budget.** Cheap at rest matters more than fast at
    scale.
 

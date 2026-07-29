@@ -16,6 +16,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Runs first and alone: this repository is public, and the account id reached
+  # a pushed commit once already because the only thing forbidding it was a
+  # sentence of prose in docs/aws-design.md. Standard library, a few seconds.
+  secrets:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - uses: actions/setup-python@v5.3.0
+        with:
+          python-version: '3.12'
+
+      # No ICE_HOCKEY_AWS_ACCOUNT_ID is exported here, deliberately: putting
+      # the account id into a repository secret so CI can grep for it would
+      # reintroduce the value this job exists to keep out. CI matches shapes;
+      # a local run with the env file sourced additionally matches the literal.
+      - name: Scan tracked files for credentials and account identifiers
+        run: python3 scripts/check_secrets.py
+
   links:
     name: Internal links
     runs-on: ubuntu-latest

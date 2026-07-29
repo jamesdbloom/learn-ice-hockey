@@ -28,6 +28,30 @@ mean to work on this project.
 > wins**. Keeping both is safe only while they agree. For a single source of
 > truth, delete `terraform.tfvars` and `backend.hcl`.
 
+### Keeping it out of the repository
+
+The repository is public, so no account id, state bucket name or role ARN may
+be committed. `scripts/check_secrets.py` enforces that on every push and pull
+request, scanning tracked files for account-id and credential shapes.
+
+```sh
+python3 scripts/check_secrets.py
+```
+
+Run it with the env file **sourced** and it does more: it additionally matches
+the real account id literally, catching a spelling the shape rules would miss.
+CI cannot do this — supplying the id as a repository secret so CI could grep
+for it would reintroduce the value the check exists to keep out — so the local
+run is the stricter one.
+
+The scanner never prints what it matched, only `file:line` and a length. CI
+logs on a public repository are public, and a scanner that echoes the secret to
+prove it found the secret has published it twice.
+
+This was written after the account id reached a pushed commit in `docs/`, three
+lines below a sentence in `aws-design.md` forbidding exactly that. Prose stating
+a policy is not enforcement.
+
 ---
 
 ## Restoring on a new laptop
@@ -167,6 +191,43 @@ full account:
 - A job declaring `environment:` gets `:environment:<name>` in place of
   `:ref:refs/heads/<branch>`.
 
+### What commit is actually live?
+
+Ask the site. Every build stamps the commit it came from into two places, both
+written from `site/src/lib/build-version.mjs`:
+
+```sh
+curl -s https://learn-ice-hockey.com/version.json
+```
+```json
+{ "commit": "239f70d…", "short": "239f70d", "ref": "main",
+  "commitDate": "…", "builtAt": "…", "runId": "1234567890" }
+```
+
+and an HTML comment in the `<head>` of all 39 pages, for when only a browser is
+to hand:
+
+```sh
+curl -s https://learn-ice-hockey.com/ | grep -o '<!-- build:[^>]*-->'
+```
+
+Compare against local:
+
+```sh
+git rev-parse HEAD
+git log --oneline "$(curl -s https://learn-ice-hockey.com/version.json \
+  | python3 -c 'import json,sys; print(json.load(sys.stdin)["commit"])')"..HEAD
+```
+Anything listed is written but not live.
+
+`runId` links straight to the Actions run that produced the build. `dirty: true`
+appears only on local builds with an unclean tree — in CI the field is absent,
+so a `dirty` flag on production means something was uploaded by hand.
+
+This exists because a *successful deploy of an old commit* is externally
+indistinguishable from an up-to-date one, and on 28 July four commits sat
+unpushed while the live site looked healthy.
+
 ### Deploy is green but nothing deployed
 
 Check the job list, not just the conclusion. The `Build and deploy` job **skips
@@ -193,7 +254,10 @@ terraform init -reconfigure -backend-config="bucket=$ICE_HOCKEY_TF_STATE_BUCKET"
 ### Checking you are in the right account
 
 ```sh
-aws sts get-caller-identity --profile ice-hockey     # expect REDACTED-ACCOUNT-ID
+# Account should equal $ICE_HOCKEY_AWS_ACCOUNT_ID from ~/.config/ice-hockey/env
+aws sts get-caller-identity --profile ice-hockey --query Account --output text
+[ "$(aws sts get-caller-identity --profile ice-hockey --query Account --output text)" \
+  = "$ICE_HOCKEY_AWS_ACCOUNT_ID" ] && echo "right account" || echo "WRONG ACCOUNT"
 cd infra && terraform output isolation_summary
 ```
 

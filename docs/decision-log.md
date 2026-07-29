@@ -19,8 +19,9 @@ were completed, and Phase 4's speech transform was already done.
 
 ### Domain and account
 
-`learn-ice-hockey.com`, registered through Route 53 in account
-`REDACTED-ACCOUNT-ID` — the same account as the `mockserver-website` profile, per D8.
+`learn-ice-hockey.com`, registered through Route 53 in the same account as the
+`mockserver-website` profile, per D8. The account id is deliberately not
+recorded here — see `$ICE_HOCKEY_AWS_ACCOUNT_ID` in `~/.config/ice-hockey/env`.
 
 The registration had already created a hosted zone, which turned out to matter
 enormously. See the next entry.
@@ -340,6 +341,72 @@ trap, which is worse: it is the environment where you iterate.
 
 ---
 
+## The account id these docs were written to protect
+
+`docs/aws-design.md` opened with four constraints, the third of which read:
+
+> **A public repository.** Nothing account-identifying may be committed.
+
+Three lines above it, the second constraint named the AWS account id. So did
+`docs/README.md`, `docs/operations.md` and this file. All four went out in
+`6d72700` and sat on a public repository for four days.
+
+The account id had been kept out of `backend.tf` deliberately, supplied through
+a gitignored `backend.hcl` instead — and then written into the prose describing
+that decision. **The care went into the code and not into the documentation
+about the code.**
+
+**Decision:** remove it from all four, and reference
+`$ICE_HOCKEY_AWS_ACCOUNT_ID` from `~/.config/ice-hockey/env` instead.
+`operations.md` no longer prints the expected account for comparison; it
+compares `sts get-caller-identity` against the environment variable, which is
+more useful anyway because it cannot go stale.
+
+**Decision:** add `scripts/check_secrets.py`, running as the first CI job.
+A sentence of prose forbidding something is not enforcement, and this is the
+proof. Two constraints shaped it:
+
+- *It must not contain the account id.* A scanner carrying the secret in order
+  to search for it is the leak it exists to prevent. It matches the shape —
+  twelve digits not part of a longer run — and additionally matches the literal
+  value only when `$ICE_HOCKEY_AWS_ACCOUNT_ID` is exported, which happens
+  locally and deliberately never in CI.
+- *It must not print what it found.* CI logs on a public repository are public.
+  An early version showed the first and last two characters, which gives away a
+  third of a twelve-digit id; it now reports `file:line` and a length.
+
+It was tested by replaying the original leak — `git show 6d72700:docs/README.md`
+into the tree — and confirming it fails. A secret scanner that has never caught
+anything is indistinguishable from one that does not work.
+
+**Not decided: the git history.** The value is still reachable in `6d72700` on
+a public remote, and removing it needs a rewrite and a force push. See open
+threads.
+
+## A deployed page should say what it is
+
+Four commits sat unpushed on 28 July while the live site looked entirely
+healthy. Nothing about a running site distinguishes *deployed and current* from
+*deployed, successfully, four commits ago* — the CloudFront response is
+identical either way, and the last three Actions runs were all green.
+
+**Decision:** every build stamps its commit into the page.
+`site/src/lib/build-version.mjs` resolves it once per build from `GITHUB_SHA`,
+falling back to `git rev-parse`, and never throws — a missing stamp must not
+fail a build. It surfaces twice: an HTML comment in the `<head>` of all 39
+pages, and `/version.json` for scripting.
+
+Two details worth keeping:
+
+- `/version.json` is the one file in the five-minute cache pass that is also
+  explicitly invalidated. Its entire purpose is to answer "what is live *now*",
+  which a five-minute stale window undermines.
+- `dirty` is emitted only for local builds with an unclean tree, and omitted
+  in CI rather than being reported as `false`. `dirty: true` on production
+  therefore means a hand-built upload, which is a thing worth being able to see.
+
+---
+
 ## Open threads
 
 Things decided provisionally, or not yet decided, that a future session should
@@ -353,6 +420,7 @@ pick up.
 | **`style-src 'unsafe-inline'`** | Required while Astro inlines critical CSS. Tighten if that ever stops |
 | **NotebookLM terms** | §8 of the build spec. Must be settled before a public podcast feed, not before narration |
 | **iOS offline storage behaviour** | §10.4. Documented from general knowledge and **likely stale**; verify on real hardware before promising offline audio |
+| **The account id in git history** | Removed from the working tree and guarded by `scripts/check_secrets.py`, but still reachable in `6d72700` on a public remote. Scrubbing it needs `git filter-repo` and a force push — which rewrites every commit hash after it and breaks any existing clone. Not a credential, so not urgent; it is a reconnaissance aid, and AWS treats it as sensitive rather than secret. **Decide deliberately: rewrite, or accept and move on** |
 | **Stale root README** | ~~Still claims `.github/workflows/` and the speech tooling are "not yet written"~~ — corrected |
 | **Fact-layer-only review round** | Not run. The one control on the key-facts layer that needs a reader rather than a checker, and the one the style guide's own history says matters most |
 | **`##` preambles carry unblocked teaching** | Found independently by six agents. A `##` with subsections may now carry a block where its own body holds material no subsection covers, but the run used the stricter earlier rule — so `puck_support_and_spacing.md` (3 sections), `passing_and_receiving.md` (2), `forechecking_systems.md` (3), `puck_handling.md`, `zone_entries.md` §5, `switching_positions.md`, `defensive_zone_coverage.md` and `positions/goaltender.md`'s save list all have teaching with no facts block. A targeted sweep would recover it |
