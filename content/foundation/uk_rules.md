@@ -27,7 +27,7 @@ The In-House Rules say so in terms: England Ice Hockey, the Scottish Ice Hockey 
 
 ## Who governs what
 
-**England Ice Hockey (EIH)** governs the game in England. It was called the English Ice Hockey Association, and you will still see "EIHA" everywhere — on club sites, in league names, in older documents. Same body.
+**England Ice Hockey (EIH)** governs the game in **England and Wales** — its own *Rules & Regulations* say so at 1.1, 3.1 and 17.1. It was called the English Ice Hockey Association, and you will still see "EIHA" everywhere — on club sites, in league names, in older documents. Same body.
 
 **The Scottish Ice Hockey Association (SIHA)** governs Scotland, and shares the same In-House Rules document with EIH.
 
@@ -74,6 +74,16 @@ This matters more than it sounds. [Time and Space](../hockey-iq/time_and_space.m
 - The gap between chin and chin strap **must not exceed 2.5 cm** — about one finger. First offence sends you to the bench to adjust; second is a 10-minute misconduct.
 - A full cage must have the chin cup fitted and in contact; loose or dangling cages and straps are not permitted.
 
+### The trapezoid may not be enforced
+
+The IIHF book has a goalkeeper's restricted area (Rule 1.8 for the geometry, 27.7 for the penalty), so on the face of it British hockey has a trapezoid. England Ice Hockey's own *Rules & Regulations* say otherwise:
+
+> **22.3.** *"Goalkeepers' Restricted Area is not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule."*
+
+That is the governing body suspending an IIHF rule domestically, and it explains why so many British rinks have no trapezoid painted on them.
+
+**⚠️ Treat this as unsettled.** The non-enforcement is in the **2024-2025** edition of the *Rules & Regulations*. The **2025-26** In-House Rules — the current playing-rule amendments — do not mention the restricted area at all, so the published documents do not establish whether the suspension still stands. Ask your league. It changes where your goaltender may retrieve a rim, which is a decision they make several times a game.
+
 ### Fighting
 
 In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a **five-minute major**. In NIHL, NIHL1 and NIHL2, a fighting major in the **last five minutes of regulation or in overtime also carries an automatic game misconduct**.
@@ -112,7 +122,7 @@ Benches must carry a **Level 2 or higher non-playing coach aged 18+**, plus one 
 
 - **The EIHL Casebook.** The Elite League publishes its own casebook recording where its interpretation differs from the IIHF book. This corpus has not read it, and nothing here should be taken as describing EIHL interpretation.
 - **Competition regulations.** Each league sets its own regulations on rosters, imports, fixtures and discipline, separately from the playing rules. The In-House Rules themselves note that EIH and SIHA *"may also issue Rule Bulletins from time to time."*
-- **Wales and Northern Ireland.** England Ice Hockey's own materials describe it as the governing body for England; the In-House Rules name England, Scotland and BUIHA. This document does not establish what governs the game in Wales or Northern Ireland, and does not guess.
+- **Northern Ireland.** England Ice Hockey's *Rules & Regulations* describe it as the governing body for **England and Wales** (Rules 1.1, 3.1, 17.1), so Welsh readers are covered by everything here. This document does not establish what governs the game in Northern Ireland, and does not guess.
 
 ## Common Mistakes
 

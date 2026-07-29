@@ -1,6 +1,6 @@
 # Body Contact and Battles
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey, Hockey Canada or typical rec-league **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey, Hockey Canada or typical rec-league
 > rules differ in a way that changes how you play, it is flagged inline. This document contains more
 > of those flags than any other in this guide, because **whether body checking is legal at all
 > depends entirely on which league you are in.** **Playing in Britain? The IIHF flags are yours** —

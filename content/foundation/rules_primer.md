@@ -1,6 +1,6 @@
 # Rules Primer
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](uk_rules.md).
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
 > IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](uk_rules.md), and read **"If you play in Britain"** in the Overview
