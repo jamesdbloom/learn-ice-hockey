@@ -68,7 +68,7 @@ The classic "big ice" is the 30 m (98.4 ft) version — **13.4 ft wider than an 
 
 This is the single most important thing on this page for a British reader, and it is the reason you cannot take either table above as a description of your rink.
 
-England Ice Hockey and the SIHA amend IIHF Rule 1 directly. Under the heading *"Rink size and eligibility"*, the In-House Rules state: *"Rinks with a non-standard playing surface (below 56 m × 26 m) are authorised by the NGB for all levels of hockey"* — with three named rinks permitted only up to U16: **Sutton** in England, and **Coatbridge** and **Limekilns Road** in Scotland. The rule applies to all EIH and SIHA fixtures.
+The IHUK In-House Rules amend IIHF Rule 1 directly. Under the heading *"Rink size and eligibility"*, the In-House Rules state: *"Rinks with a non-standard playing surface (below 56 m × 26 m) are authorised by the NGB for all levels of hockey"* — with three named rinks permitted only up to U16: **Sutton** in England, and **Coatbridge** and **Limekilns Road** in Scotland. The rule applies to all EIH and SIHA fixtures.
 
 Read the numbers carefully, because they are not a relaxation of Rule 1.2 — they sit **outside** it:
 

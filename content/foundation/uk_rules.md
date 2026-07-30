@@ -23,10 +23,28 @@ The In-House Rules say so in terms: England Ice Hockey, the Scottish Ice Hockey 
 
 **Note the version number — this corpus now reads that edition.** Every IIHF rule quoted anywhere in these documents is verified against the IIHF Official Rule Book 2025/26 **Version 1.1, July 2025**, the edition the In-House Rules adopt. It was checked against the superseded v1.0 line by line on 30 July 2026: **all 472 rule numbers are identical in both**, none was renumbered, and all 49 passages this corpus quotes from the IIHF book appear verbatim in v1.1. So nothing here rests on a superseded revision. (The IIHF's own site serves only v1.0 at its published link and its rulebook index is behind a bot challenge; the v1.1 copy read here came from the Royal Belgian Ice Hockey Federation's mirror, and its version line and rule set were verified on receipt.)
 
-> **⚠️ Nobody is named as issuing them, and this document does not guess.** The
+> **⚠️ They are an Ice Hockey UK document, and no body is named as *issuing*
+> them.** Those are two separate facts and the corpus states both.
+>
+> **Whose document it is.** The cover carries exactly one image in eighteen
+> pages — the **Ice Hockey UK** logo — and the text names IHUK twice, once
+> calling them *"the standard **IHUK** in-house rules"*, which is the document
+> naming itself. The file England Ice Hockey publishes is called
+> `IHUK-In-House-Rules-25-26-R1.pdf`. So call them the **IHUK In-House Rules**.
+>
+> **Why that took three attempts to establish.** The Introduction names England
+> Ice Hockey, the SIHA and the BUIHA — and what they do there is **adopt the IIHF
+> Rule Book**, which is a different document. Earlier versions of these documents
+> read that sentence as an issuance claim and credited the In-House Rules to
+> those three, or to two of them, or to England Ice Hockey alone. The owner was a
+> fourth body nobody had looked for, and one that merged with two of the three on
+> 30 June 2026.
+>
+> **What still is not stated.** The
 > In-House Rules carry no "issued by", no publisher, no author and no copyright
-> line anywhere in their eighteen pages — the cover says only *"IN-HOUSE RULES,
-> 2025-26 SEASON, Revision 1"*. All three associations appear in the opening
+> line anywhere in their eighteen pages, and the cover's *text* says only
+> *"IN-HOUSE RULES, 2025-26 SEASON, Revision 1"* — the logo above it is the only
+> thing identifying an organisation. All three associations appear in the opening
 > sentence as **adopting the IIHF book**, and the only place any body is linked
 > to the verb *issue* is a separate sentence about **Rule Bulletins**: *"The EIH
 > and SIHA may also issue Rule Bulletins from time to time."* Amendments to the

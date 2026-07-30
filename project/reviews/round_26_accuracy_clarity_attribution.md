@@ -5,10 +5,10 @@
 | | |
 |---|---|
 | Reviewers | `safety-reviewer` · `facts-reviewer` · `content-reviewer` · `rules-verifier` · `source-verifier` |
-| Criticals found | 3 |
+| Criticals found | 3, plus 8 attribution findings |
 | Criticals fixed | 3 |
 | Majors found | ~25 |
-| Majors fixed | 3 (the attribution sweep, IIHF 19.3, and the eligibility gate) |
+| Majors fixed | 3, plus 6 of the 8 attribution findings |
 | Majors deferred | the rest, itemised below |
 | Corpus commit at start | `b1251c1` |
 
@@ -116,6 +116,83 @@ a statement about the brief, not the corpus.
 
 ---
 
+## The attribution sweep, and the answer that was on the cover
+
+`source-verifier` was given round 25's own open question — *"an issuer present
+solely as a cover logo or in PDF metadata would not appear"* — and closed it.
+
+**The In-House Rules are an Ice Hockey UK document.** The PDF carries exactly one
+image in eighteen pages, on page 1: the IHUK logo. No England Ice Hockey, SIHA or
+BUIHA logo appears anywhere. The text names IHUK twice, once calling them *"the
+standard **IHUK** in-house rules"* — the document naming itself. The file England
+Ice Hockey publishes is `IHUK-In-House-Rules-25-26-R1.pdf`, and the corpus's own
+Sources entries already said "IHUK". I verified the self-reference and the single
+cover image independently before acting.
+
+So the owner was **a fourth body nobody had looked for** — and one that merged
+with two of the three on 30 June 2026. The three associations in the Introduction
+are adopting the *IIHF book*; that sentence was never about this document.
+
+Round 25's disclosure was not false and has not been reversed. Its literal claims
+still hold: no "issued by", no publisher, no copyright line, and the only body
+linked to the verb *issue* is EIH/SIHA in the Rule Bulletins sentence. It has been
+**extended** with what the cover shows, and now states two separate facts — whose
+document it is, and that no body is named as issuing it.
+
+**The same defect was alive in six more places under different verbs.** *Amend*,
+*authorise*, *remove* and *set* — which no grep for "issued by" reaches — in
+three mutually incompatible forms: two bodies, three bodies, and one body. Three
+of the six were contradicted by the text they quoted **in the same sentence**,
+including two that credited England Ice Hockey with a provision whose own words
+name the **Scottish** National League. All six now use the agentless or IHUK form,
+which the corpus already used correctly elsewhere in the same files. **Fixed.**
+
+**And "the NGB" had been expanded to England Ice Hockey.** The In-House Rules say
+non-standard rinks are *"authorised by the NGB"* and never expand the
+abbreviation. Two sites guessed England Ice Hockey — but two of the three excepted
+rinks are Scottish, and the corpus elsewhere insists EIH is the NGB *"in England
+and Wales"* only, which is the basis for its whole treatment of the trapezoid.
+Both sites now quote and stop. **Fixed.**
+
+### Two manufactured quotations, both fixed
+
+**A sentence credited to Seth Appert is the article's own narration.** *"To take
+away an opponent's good ice and force them to bad ice"* sits in a standalone
+paragraph with no quotation marks and no speaker; the paragraphs either side
+*are* Appert and carry `said Appert`, and the corpus quotes those two correctly.
+The habit is sound — this one sentence crossed the line. The role was also
+programme-wide where the source says U.S. National Under-18 Team. Both corrected.
+
+**IHUK's merger statement was a splice.** The corpus quoted *"the first Olympic
+sport in Britain to fully unify governance across all home nations"*, which is
+absent from the page in that form — in rendered text and in raw HTML. It is two
+different strings joined: the headline says *"unify governing bodies"*, the body
+says *"consolidate its governance and development"*. Meaning faithful, quotation
+marks manufactured. Both verbatim strings now used instead.
+
+### Deferred from the sweep
+
+*"Remains the standard framework"* on Nideffer's attention model is unsourced —
+both cited pages are restaters carrying inline citations, and NSCA's own
+evaluation is *"an important concept"*. The Sport NZ document is also written for
+**match officials**, not players, and every example in it is officiating.
+
+An ASHL sentence is attributed to the rulebook PDF and is on the website instead;
+both URLs are already cited, so this is naming the right artefact.
+
+The Brady Robinson mechanism in `goaltender.md` is now **paywalled** — the role
+and the situation verify, the causal clause is behind a $49.99/yr membership.
+Report as unreachable, not absent, and soften *"well-documented"*.
+
+And a governance question larger than a citation: **`uk_rules.md` still describes
+EIH, SIHA and IHUK as three live bodies**, while `getting_started.md` reports the
+merger as effective 30 June 2026. Two documents, two current states of British
+governance. Every EIH attribution in the corpus rests on a *Rules & Regulations*
+issued by a body that no longer exists in that form, and nobody has established
+whether a post-merger replacement exists.
+
+---
+
 ## Deferred, with reasons
 
 Roughly twenty-two majors and minors are **not** fixed here. They are recorded
@@ -169,7 +246,7 @@ safe instruction inverts when read alone.
 | D1 | Rules accuracy | **Yes** | `rules-verifier`, ~70 claims against eight books |
 | D2 | Rules travelling without exceptions | **Yes** | `rules-verifier` F1, `facts-reviewer` |
 | D3 | Rule-set divergence | **Yes** | `rules-verifier` |
-| D4 | Citation integrity | **Partly** | `source-verifier` — still running at the time of writing |
+| D4 | Citation integrity | **Yes** | `source-verifier`, 22 URLs refetched, baseline updated |
 | D5 | Provenance | **Yes** | the attribution sweep |
 | D6 | Negative existence | **Yes** | `rules-verifier` verified three; `content-reviewer` upheld twelve |
 | D7 | The cardinal rule | **Yes** | `content-reviewer`, `facts-reviewer` |
