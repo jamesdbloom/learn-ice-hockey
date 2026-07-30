@@ -68,7 +68,7 @@ Never: Guess — if you are guessing, you are the reason the seam is covered
 
 > **Read this first.** Which formation your team plays is a **coaching choice**, not a rule of hockey. So is who stands where inside it. Every shape below wins against some kills and loses to others, and every one of them requires personnel it suits. **Find out which formation your team runs, and which spot is yours, before your first power play shift.** If you are guessing, you are the reason the seam is covered.
 
-#### 1-3-1 — the modern default
+#### 1-3-1 — widely described as the modern default
 
 ```facts
 Position: One at the point, two on the half-walls, a bumper in the middle of the slot, one at the net front — one point player, not two
@@ -85,7 +85,7 @@ Risk: With only one player back, a lost puck at the blue line is an immediate od
 
 **The shape:** **one** player at the point (the blue line), **three** across the middle of the zone — two on the **half-walls** (the boards roughly level with the faceoff dot, between the corner and the point) with a **bumper** between them in the middle of the slot — and **one** at the net front.
 
-That is one point player, not two. Most NHL first units run the 1-3-1 with **four forwards and a single defenceman**, and that defenceman is the point.
+That is one point player, not two. First units are widely **described as** running the 1-3-1 with **four forwards and a single defenceman**, and where they do, that defenceman is the point — but treat the personnel as coaching-material consensus rather than a measured prevalence. **No published count of NHL power-play deployments exists.** The *shape* is definitional; how many forwards a coach puts in it is a choice.
 
 **The jobs:**
 
@@ -916,7 +916,7 @@ These are errors the body above does not cover — the ones that survive knowing
 
 1. **A man advantage is a 2-on-1 waiting to be created.** Five against four is nothing until the kill has two things to cover and one body to do it with. Create them anywhere; cash them in near the net, because danger is a function of location.
 2. **Puck movement, not shooting, creates it.** A kill can cover any single option; it cannot cover three options in two seconds.
-3. **The 1-3-1 has exactly one player at the point** — one point, two half-walls, one bumper, one net front — and most first units run four forwards and a single defenceman. The bumper is most often the centre, but that is a team choice, not a rule.
+3. **The 1-3-1 has exactly one player at the point** — one point, two half-walls, one bumper, one net front — and first units are commonly *described as* running four forwards and a single defenceman, which is coaching consensus and not a measured prevalence. The bumper is most often the centre, but that too is a team choice, not a rule.
 4. **Most power plays die at the blue line, not in the zone.** Drill entries — drop, swing, carry, controlled dump and the regroup — and be willing to reset rather than force one.
 5. **A pass that crosses the middle of the ice before a shot is the most dangerous play in hockey**, because a goalie moving laterally cannot be set. Before you shoot from a half-wall, check the far side.
 6. **A penalty kill is a decision about which shot you are willing to concede**, then two minutes of discipline making sure it is the only one. A box concedes the middle; a diamond concedes the outside and the backdoor; a wedge+1 concedes the perimeter.

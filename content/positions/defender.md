@@ -469,7 +469,7 @@ The center takes the faceoff. Your specific position depends on the zone of the 
 Key: 1-3-1 — one defenceman only, playing the single point as the quarterback; if you are the second defenceman you are on the second unit, not on the ice
 Action: As the quarterback, move the puck quickly, walk the line laterally to open shooting lanes, and use the threat of your shot to pull the box out of shape
 Key: Umbrella — you are one of two defencemen high, so you have a point partner and can play give-and-go across the top
-Key: 2-3 — both defencemen at the points; the older structure, still the most common at rec level
+Key: 2-3 — both defencemen at the points; the older structure, and still extremely common in rec, beer-league and youth hockey
 Key: Overload — you are usually the lone weak-side outlet, the release valve when the strong side gets sealed
 Priority: Keeping the puck in the zone is your first job — re-entries against a set penalty kill are the hardest thing in hockey
 Action: Shoot for tips and rebounds rather than trying to beat the goalie clean through four bodies
@@ -477,7 +477,7 @@ Action: Shoot for tips and rebounds rather than trying to beat the goalie clean 
 
 **The formations are set out in [Special Teams](../systems/special_teams.md).** The question they answer for you is a blunt one — *whether you are on the ice at all, and whether you have a partner up there.*
 
-- **1-3-1 (the modern default):** only **one** defenceman, playing the single point as the "quarterback". If that's you, you are the distributor: move the puck quickly, walk the line laterally to open shooting lanes, and use the threat of your shot to pull the box out of shape. If you're the second defenceman, you're on the second unit, not on the ice.
+- **1-3-1 (widely described as the modern default):** only **one** defenceman, playing the single point as the "quarterback". If that's you, you are the distributor: move the puck quickly, walk the line laterally to open shooting lanes, and use the threat of your shot to pull the box out of shape. If you're the second defenceman, you're on the second unit, not on the ice.
 - **Umbrella:** you are one of two defencemen high, so you *do* have a point partner and can play give-and-go across the top.
 - **2-3:** both defencemen at the points — the older structure, still the most common at rec level, and where you are most likely to have a partner.
 - **Overload:** you are usually the lone weak-side outlet, and your job is to be the release valve when the strong side gets sealed.
@@ -489,9 +489,9 @@ Whichever you're in: your first job is **keeping the puck in the zone**. A power
 ```facts
 Key: A kill is four skaters, normally two forwards and two defencemen — you and your partner are the bottom two in every shape
 Key: Box — you and your partner low, owning the net front and the two low corners; this is the standard
-Key: Diamond — one of you takes the low point at the net front, the other becomes one of the two middle players; run against a 1-3-1, because a box leaves the bumper unmarked
+Key: Diamond — one of you takes the low point at the net front, the other becomes one of the two middle players; run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked
 Key: Wedge+1 — you are almost always in the triangle, not the chaser
-Action: Stay tight, box out the net front, block shots, and clear the puck on every opportunity
+Action: Hold the box — two of you just off the crease edges — box out the net front, block shots, and clear on every opportunity; Special Teams owns the shape and how it slides
 Rule: You may ice the puck freely while shorthanded — but NHL Rule 81.6 withdraws it from a team short by a major with nobody on the penalty bench
 Rule: USA Hockey grants the shorthanded icing exemption only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1))
 Never: Get pulled out of position chasing the puck around the perimeter — the power play wants you to chase, because that is what opens the seam
@@ -500,7 +500,7 @@ Never: Get pulled out of position chasing the puck around the perimeter — the 
 A kill is four skaters, normally two forwards and two defencemen. **The shapes are described in [Special Teams](../systems/special_teams.md);** in all of them you and your partner form the **bottom two**:
 
 - **Box** — you and your partner low, owning the net front and the two low corners. This is the standard.
-- **Diamond** — one of you takes the low point of the diamond at the net front, the other becomes one of the two middle players. Run against a 1-3-1, because a box leaves the bumper unmarked.
+- **Diamond** — one of you takes the low point of the diamond at the net front, the other becomes one of the two middle players. Run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked.
 - **Wedge+1** — you are almost always in the triangle, not the chaser.
 
 In all of them: stay tight, box out the net front, block shots, and clear the puck on every opportunity — under-pressure clears are perfectly fine and you may ice the puck freely while shorthanded — **with two carve-outs worth knowing before you rely on it**: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a *major* that has left nobody on the penalty bench to come out, and USA Hockey restricts it by classification, so below Youth 15-Only / Girls 16U / High School / Adult a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) owns this rule. Don't get pulled out of position chasing the puck around the perimeter; let it come to you. The power play *wants* you to chase, because that's what opens the seam.

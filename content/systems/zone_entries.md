@@ -420,6 +420,8 @@ Rule of thumb: **you should see the trailer before you drop it.** If you are dro
 
 ## 7. Dump-ins: five types and the read that calls for each
 
+> **Strong side and weak side.** The **strong side** is the half of the ice the puck is on; the **weak side** is the other half. Both flip the instant the puck crosses the middle, so they describe where the puck is, not fixed positions.
+
 Putting the puck in without possession is not one play. It is at least five, and choosing the wrong one is most of why dump-ins get a bad name. The unifying rule is the same in all cases: **the puck goes to a place your teammate is already going.** A dump-in without a chaser is a change of possession you chose.
 
 ### 1. The hard rim

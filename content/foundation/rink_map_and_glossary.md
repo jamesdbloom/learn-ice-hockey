@@ -629,7 +629,7 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 
 **Point** — the area just inside the blue line where defencemen set up in the offensive zone. *Not the same as* the **half-wall**. "Covering the point" means denying that space to the opposing defenceman.
 
-**Power play (PP)** — playing with a man advantage while the opponent serves a penalty. Common structures: **1-3-1** (exactly **one** player at the point, two half-walls, a **bumper** between them, one net front — most first units use four forwards and one defenceman), **umbrella** (three high), and **overload** (four to one side).
+**Power play (PP)** — playing with a man advantage while the opponent serves a penalty. Common structures: **1-3-1** (exactly **one** player at the point, two half-walls, a **bumper** between them, one net front; first units are commonly described as using four forwards and one defenceman, which is consensus rather than measured), **umbrella** (three high), and **overload** (four to one side).
 
 **Quarterback** — the player who runs a power play from the top, usually the single point defenceman in a **1-3-1**. Their job is distribution and walking the line, not just shooting.
 

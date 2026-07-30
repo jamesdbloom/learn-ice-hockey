@@ -239,7 +239,7 @@ Action: Cut off the passing options and force the puck carrier wide toward the b
 Convention: Lane-blocking belongs to a containment structure — a 1-2-2, a 1-2-2 trap or a 1-3-1 — and is not a law of hockey
 Options: Under an aggressive press the instruction reverses: forwards hunt the puck and the weak-side winger does leave the lane
 Action: Find out which your team plays and what the call is for switching — most run two or three depending on the score and the shift
-Risk: Leave your lane under containment and you open a seam the single defenceman behind the wall cannot cover
+Risk: Leave your lane under containment and you open a seam the single defenceman behind their three-man line cannot cover
 Goal: Prevent a clean entry — force a difficult pass, force them wide, or force a dump-in
 ```
 
@@ -251,7 +251,7 @@ Goal: Prevent a clean entry — force a difficult pass, force them wide, or forc
 
 **Goal:** Prevent a clean entry into your defensive zone. Force the opponent to make a difficult pass, go wide, or dump the puck in.
 
-**Key considerations:** Under a containment structure, blocking lanes is more effective than chasing: if you leave your lane to pressure the puck, you create a gap that the opponent will exploit, and the single defenceman behind the wall cannot cover two lanes. Stay disciplined. Under a press that trade is reversed deliberately — you accept the gap in exchange for winning the puck back sooner — so the discipline there is to pressure *together* rather than one player freelancing.
+**Key considerations:** Under a containment structure, blocking lanes is more effective than chasing: if you leave your lane to pressure the puck, you create a gap that the opponent will exploit, and the single defenceman behind their three-man line cannot cover two lanes. Stay disciplined. Under a press that trade is reversed deliberately — you accept the gap in exchange for winning the puck back sooner — so the discipline there is to pressure *together* rather than one player freelancing.
 
 ---
 

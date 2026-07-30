@@ -409,7 +409,7 @@ Never: Carry straight into the opposing defence or dump into traffic — control
 
 **The formations themselves — 1-3-1, umbrella, overload, spread, 2-3 — are set out in [Special Teams](../systems/special_teams.md).** What matters here is where they put you.
 
-In the **1-3-1**, the modern default, the centre most often plays the **bumper**: the middle of the three across the slot, sitting in the soft spot between the single point man and the net-front player. Your job is to be a passing target for both half-walls, take quick shots from the slot, screen the goalie, and tip point shots. The bumper is the hardest player for a penalty kill to cover, because a **box** has nobody assigned to the middle — which is exactly why a kill switches to a **diamond** against you.
+In the **1-3-1**, widely described as the modern default, the centre most often plays the **bumper**: the middle of the three across the slot, sitting in the soft spot between the single point man and the net-front player. Your job is to be a passing target for both half-walls, take quick shots from the slot, screen the goalie, and tip point shots. The bumper is the hardest player for a penalty kill to cover, because a **box** has nobody assigned to the middle — which is exactly why a kill switches to a **diamond** against you.
 
 In an **umbrella** or an **overload** you will usually be low or on the strong-side wall instead. There is no bumper in a true umbrella, so don't go looking for the spot you're used to.
 
@@ -420,7 +420,7 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 ```facts
 Position: In a box you are one of the two high players, each responsible for one point — there is no single "top" to drift into
 Position: In a diamond you are usually the single apex, pressuring the point; in wedge+1 you are frequently the puck-chasing "+1"
-Action: Stay disciplined, block shooting lanes and clear the puck whenever you get it
+Action: Take the high forward spot at the mid-to-high slot, block shooting lanes and clear whenever you get it; Special Teams owns the shape
 Never: Get pulled out of position chasing the puck around the perimeter
 Rule: A shorthanded team may send the puck down the ice without being called for icing — USA Hockey Rule 624(b)(1) grants that only from Youth 15-Only, Girls 16U, High School and Adult up
 Rule: NHL Rule 81.6 withdraws that exemption from a team shorthanded by a major that has left nobody on the penalty bench
