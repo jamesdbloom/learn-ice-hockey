@@ -462,7 +462,7 @@ pick up.
 
 | Thread | State |
 |---|---|
-| **Section kinds before narration** | D13/D14. Polly bills per character and the corpus is 2,072,460 of them — tagging after narrating means paying twice or shipping no practical cut. Phase 4b exists to force the order |
+| **Section kinds before narration** | D13/D14. Polly bills per character and the corpus is 2,796,473 of them — tagging after narrating means paying twice or shipping no practical cut. Phase 4b exists to force the order. **Both are parked**: Phase 5 on voice quality after the pilot, and 4b with it |
 | **The unused `production` environment** | Still exists on GitHub with no protection rules, now referenced by nothing. Harmless; delete it or give it a branch policy and use it properly |
 | **`terraform.tfvars` and the env file both exist** | They agree today. Two sources of truth, and tfvars wins silently. Recommend deleting the tfvars file |
 | **`style-src 'unsafe-inline'`** | Required while Astro inlines critical CSS. Tighten if that ever stops |

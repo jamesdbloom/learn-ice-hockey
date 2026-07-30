@@ -106,7 +106,7 @@ and rewrites `*.md` cross-links to site URLs preserving anchors.
 ## Audio pipeline (not yet run)
 
 **What exists:** `scripts/md_to_speech.py` has run over all 35 documents,
-producing **1,036 SSML chunks** totalling **2,072,460 characters**, with a
+producing **1,305 SSML chunks** totalling **2,796,473 characters**, with a
 per-document manifest and an index at `scripts/speech/index.json`.
 
 **What does not exist:** any audio. Nothing has been narrated. The site's
@@ -130,7 +130,7 @@ preferences, and they are worth preserving:
 
 ### The number that shapes Phase 5 onward
 
-2,072,460 characters is roughly **37.7 hours** of narration, about **1.1 GB** at
+2,796,473 characters is roughly **55 hours** of narration, about **1.6 GB** at
 64 kbps mono. That figure drives the offline and download design in
 [§10 of the build specification](../project/site_build_specification.md), and it
 is why "download everything" cannot be a default.

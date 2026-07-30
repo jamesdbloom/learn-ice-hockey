@@ -2007,8 +2007,22 @@ def print_report(reports: Sequence[DocReport]) -> None:
     print(f"  tables as prose      {sum(r.tables_as_prose for r in reports)}")
     print(f"  tables as pointer    {sum(len(r.tables_as_pointer) for r in reports)}")
     print(f"  unrecognised (total) {sum(residue.values())}")
-    est = sum(r.billed_chars for r in reports) / 1_000_000 * 100
-    print(f"  Polly long-form estimate at $100/M chars: ${est:,.2f}")
+    # Cost, for the engines that actually exist in the region this stack runs
+    # in. The previous line quoted long-form at $100/M — but `aws polly
+    # describe-voices` returns no long-form voice in eu-west-2, in any
+    # language, so that figure priced an engine nobody here can use and was
+    # the largest number on the screen. Rates confirmed against the Polly
+    # pricing page during the Phase 5 pilot; see the status note in
+    # project/site_build_specification.md §7.2.
+    chars = sum(r.billed_chars for r in reports)
+    print("  estimated Polly cost, en-GB voices available in eu-west-2:")
+    for engine, rate, voices in (
+        ("standard",   4, "Emma, Arthur, Brian, Amy"),
+        ("neural",    16, "Emma, Arthur, Brian, Amy"),
+        ("generative", 30, "Brian, Amy"),
+    ):
+        print(f"    {engine:<11} ${rate:>3}/M  ${chars / 1_000_000 * rate:>8,.2f}   ({voices})")
+    print("    long-form   $100/M  unavailable in eu-west-2 — would require another region")
 
 
 # ==========================================================================

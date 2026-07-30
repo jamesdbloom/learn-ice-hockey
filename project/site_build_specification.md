@@ -58,7 +58,7 @@ wrong costs a second narration run. See the sequencing note in §4.
 | D12 | Text download | PDF / EPUB / both / markdown too | **EPUB first, PDF second, markdown always.** EPUB reflows on a phone; PDF is for printing. Markdown is free — it is the source |
 | D13 | Section-kind marker | HTML comment / heading suffix / front matter | **HTML comment** (`<!-- kind: evidence -->`). Invisible to every renderer that does not understand it, one regex for the speech transform. See §11.2 for the objection to it |
 | D14 | Practical-cut narration | Full only / full + practical cut | **Both, decided before Phase 5.** The cut is nearly free at narration time and expensive afterwards — Polly is billed per character, so retrofitting means paying for the corpus twice |
-| D15 | Offline audio default | Cache all / per-document opt-in / stream only | **Per-document opt-in.** The full narration is ~1.1 GB (§10.1). No reasonable app downloads that without being asked |
+| D15 | Offline audio default | Cache all / per-document opt-in / stream only | **Per-document opt-in.** The full narration is ~1.6 GB (§10.1). No reasonable app downloads that without being asked |
 
 ---
 
@@ -193,7 +193,7 @@ Tag every section with what kind of content it holds, per §11.
 measured rather than guessed.
 
 > **⚠️ Do this before Phase 5, not after.** Polly bills per character, and the
-> corpus is 2,072,460 characters. Narrating first and tagging later leaves two
+> corpus is 2,796,473 characters. Narrating first and tagging later leaves two
 > options, both bad: pay to narrate the corpus a second time to get the
 > practical cut, or do not offer one. Tagging first makes the second cut a
 > filter over text you were going to send anyway.
@@ -305,7 +305,7 @@ Two workflows:
 | CloudFront (personal traffic) | $0–1 |
 | Route 53 hosted zone | $0.50 |
 | Domain | ~$1 (annualised) |
-| **Total** | **~$2/month**, plus one-off Polly **~$207** (measured: 2,072,460 billed characters, ~46 h of audio) |
+| **Total** | **~$2/month**, plus one-off Polly **~$45 at neural** (measured: 2,796,473 billed characters, ~55 h of audio) |
 
 ---
 
@@ -379,18 +379,28 @@ This is genuinely fiddly and worth doing properly, because it is reusable for ev
 > engine that cannot be used here without moving region.
 >
 > That makes the real cost decision much narrower than the one recorded
-> elsewhere. Against 2,318,459 billed characters:
+> elsewhere. Against **2,796,473** billed characters:
 >
 > | Engine | Rate | Full corpus |
 > |---|---|---|
-> | Standard | $4/M | $9.27 |
-> | **Neural** | $16/M | **$37.10** |
-> | **Generative** | $30/M | **$69.55** |
+> | Standard | $4/M | $11.19 |
+> | **Neural** | $16/M | **$44.74** |
+> | **Generative** | $30/M | **$83.89** |
 > | Long-form | $100/M | **unavailable in `eu-west-2`** |
 >
-> `scripts/md_to_speech.py --report` still prints a long-form estimate of
-> ~$231 and should be corrected — it is a wrong number that a reader would
-> make a decision on.
+> **The character count rose from 2,318,459 on 30 July 2026**, when the
+> transform began reading the ` ```facts ` blocks aloud instead of announcing
+> them as diagrams — 764 blocks, 4,423 fact lines, 424 of which carry a
+> penalty, an injury or a prohibition. That is +468,240 characters, about 20%,
+> and it is the right trade: the alternative is paying to narrate a corpus with
+> its safety layer removed. See the decision log. Every figure above moves with
+> it, and the pilot's own $0.68 for `center.md` is now an underestimate for the
+> same document.
+>
+> `scripts/md_to_speech.py --report` **now prints the three engines that exist
+> in this region**, with generative's narrower voice list, and says plainly
+> that long-form is unavailable. It previously quoted a long-form estimate —
+> the largest number on the screen, for an engine nobody here can use.
 >
 > **A pilot was run and the output was judged not good enough.**
 > `content/positions/center.md` was narrated in full through Polly neural
@@ -484,8 +494,8 @@ Phase 4 transform rather than an estimate of it:
 | | |
 |---|---|
 | Documents | 35 |
-| Billed characters | 2,072,460 |
-| **Estimated narration** | **~37.7 hours** |
+| Billed characters | 2,796,473 |
+| **Estimated narration** | **~55 hours** |
 | At 64 kbps mono | ~1,087 MB |
 | At 48 kbps mono | ~815 MB |
 | At 32 kbps mono | ~544 MB |
@@ -612,7 +622,7 @@ Which leads to the important design point, and it is D15:
 - **Precache the text.** The whole corpus as HTML plus the Pagefind index is
   small, and this is the high-value, low-risk half. A reader with the text
   offline has the thing they came for.
-- **Never precache audio.** ~1.1 GB. Offer per-document and per-layer "make
+- **Never precache audio.** ~1.6 GB. Offer per-document and per-layer "make
   available offline" controls with a visible storage readout, and let the
   reader choose.
 - **For whole-corpus audio offline, point at a podcast app.** It already does
@@ -709,7 +719,7 @@ The point of the tags is what they let every downstream consumer do:
   same argument.
 - **Honest per-page reading times**, split — "22 min, of which 7 min evidence".
 - **A practical narration cut** (D14). This is where it pays most: the full
-  narration is ~37.7 hours, and a cut that drops evidence and craft
+  narration is ~55 hours, and a cut that drops evidence and craft
   justification is a materially different product for someone listening in a
   car. **The fraction is currently unknown and Phase 4b must measure it.**
 - **Search filters.** The Pagefind build currently reports `Indexed 0 filters`.

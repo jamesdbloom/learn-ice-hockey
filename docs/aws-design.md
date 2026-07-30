@@ -226,7 +226,7 @@ rounds to very little. The pieces that are *not* usage-based:
   a typo'd `domain_name` with `create_route53_zone = true` is not free: it
   creates a real zone that bills.
 - **S3 storage** — trivial today at ~2 MB of site. **This changes with audio:**
-  ~1.1 GB of narration is still small, but whole-corpus download bundles are
+  ~1.6 GB of narration is still small, but whole-corpus download bundles are
   transfer-heavy rather than storage-heavy, and that is a genuine cost line to
   model before Phase 7 ships.
 - **CloudFront** — `PriceClass_100` (Europe and North America), the cheapest.

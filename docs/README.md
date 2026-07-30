@@ -51,11 +51,11 @@ lesson once — see the four near-identical copies of the icing rule described i
 | Phases complete | 0–4 of the build specification |
 | Outstanding | Phase 4b (section kinds) · 5 (narration) · 6 (podcasts) · 7 (downloads) · 8 (offline app) |
 
-**Known gap:** no audio exists yet. The speech *transform* has run — 1,036 SSML
-chunks, 2,072,460 characters — but nothing has been narrated, so the site's
+**Known gap:** no audio exists yet. The speech *transform* has run — 1,305 SSML
+chunks, 2,796,473 characters — but nothing has been narrated, so the site's
 audio player is behind the `AUDIO_ENABLED` flag in `site/src/consts.ts` and is
 off. See [`architecture.md`](architecture.md#audio-pipeline-not-yet-run).
 
-**Known constraint:** the corpus narrates to roughly **37.7 hours**, about
-**1.1 GB** at 64 kbps. That single number drives most of the offline and
+**Known constraint:** the corpus narrates to roughly **55 hours**, about
+**1.6 GB** at 64 kbps. That single number drives most of the offline and
 download design in §10 of the build specification.
