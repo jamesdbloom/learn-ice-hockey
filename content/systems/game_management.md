@@ -594,7 +594,7 @@ Rule: IIHF preliminary overtime is five minutes of 3-on-3, but teams do not chan
 Rule: IIHF playoff overtime is ten minutes of 3-on-3, not the NHL's twenty-minute 5-on-5 periods (IIHF Rule 84.5)
 Rule: The IIHF shootout is five shooters a side with a coin toss for order, not three with home-team choice (IIHF Rule 84.4)
 Rule: IIHF 84.2 is one sentence permitting the pull; the NHL's forfeited point and its bar on returning on the fly have no IIHF counterpart
-Rule: England Ice Hockey plays overtime only in NIHL fixtures, and in SNL fixtures whose competition regulations provide for it (In-House Rules, Rule 84)
+Rule: Under the In-House Rules overtime is played only in NIHL fixtures, and in SNL fixtures whose competition regulations provide for it (Rule 84)
 Rule: NIHL league and group-stage playoff overtime is five minutes of 3-on-3 with no change of ends, then game-winning shots with three shooters a side (In-House Rules, Appendix 1, on IIHF Rule 84)
 Rule: Playoff Final Weekend is different — semi-finals go to 20 minutes of 5-on-5 then shots, and the Final to successive 20-minute 5-on-5 sudden-death periods with no shots at all (In-House Rules, Appendix 1)
 Read: Under IIHF rules your bench is the near bench, so waiting for an exhausted defender is much less reliable

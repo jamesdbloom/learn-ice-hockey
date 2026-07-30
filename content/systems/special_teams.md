@@ -369,7 +369,7 @@ Goal: The goal usually comes from a one-timer at the far post or the second-wave
 Rule: A team never plays fewer than three skaters — a third penalty's clock waits and a substitute keeps them at three (NHL Rule 26.1)
 Rule: A goal against a shorthanded team terminates only the minor with the least time remaining, so a 5-on-3 becomes a 5-on-4 (NHL Rule 16.2)
 Rule: A goal releases only a minor or bench minor (NHL and IIHF Rule 16.2), so a major is served in full however many you score
-Rule: Under England Ice Hockey a fighting major in NIHL, NIHL1 or NIHL2 in the last five minutes of regulation or in overtime also carries an automatic game misconduct (In-House Rules, Section 6, sitting on top of the IIHF book)
+Rule: Under the In-House Rules a fighting major in NIHL, NIHL1 or NIHL2 in the last five minutes of regulation or in overtime also carries an automatic game misconduct (Section 6, sitting on top of the IIHF book)
 ```
 
 A two-man advantage is a different game, not a better power play. It should almost always produce a goal, and when it does not it is nearly always because the unit played it like a 5-on-4.
@@ -393,7 +393,7 @@ A two-man advantage is a different game, not a better power play. It should almo
 - **A team never plays with fewer than three skaters.** If a third player is penalised while two are already serving, the third penalty's clock does not start until one of the first two expires (a **delayed penalty in the Rule 26 sense**), and the team may put a substitute on the ice to stay at three (NHL Rule 26.1). So a 5-on-2 does not exist.
 - **A goal only releases one penalty.** When you score against a shorthanded team, the minor penalty **with the least time remaining** terminates (Rule 16.2). A 5-on-3 therefore becomes a 5-on-4, not a 5-on-5 — and if you were about to get another chance, take it immediately while the kill is reorganising.
 - **This does not apply to major penalties**, which are served in full regardless of goals, and **does not apply to penalty-shot goals** (Rule 16.2). IIHF 16.2 and 26.1 are the NHL's rules in the same words on all of this, including the three-skater floor and the delayed clock, so a British reader can take this whole subsection as written.
-- **One British addition on majors.** Under the England Ice Hockey / SIHA In-House Rules, fighting in NIHL (all leagues), the SNL and BUIHA Varsity is *"penalised with a 5-minute Major Penalty"* — and in **NIHL, NIHL1 and NIHL2**, *"any fighting major assessed in the last 5 minutes of regulation time (including overtime) will also carry an automatic Game Misconduct."* That does not change the kill itself: under **IIHF Rule 20.3** a substitute goes to the box immediately and serves the five minutes, so you are killing a full major either way. What it changes is your bench for the rest of the night, at exactly the point in a game when you can least afford to lose a body. See [UK and England Rules](../foundation/uk_rules.md).
+- **One British addition on majors.** Under the In-House Rules, fighting in NIHL (all leagues), the SNL and BUIHA Varsity is *"penalised with a 5-minute Major Penalty"* — and in **NIHL, NIHL1 and NIHL2**, *"any fighting major assessed in the last 5 minutes of regulation time (including overtime) will also carry an automatic Game Misconduct."* That does not change the kill itself: under **IIHF Rule 20.3** a substitute goes to the box immediately and serves the five minutes, so you are killing a full major either way. What it changes is your bench for the rest of the night, at exactly the point in a game when you can least afford to lose a body. See [UK and England Rules](../foundation/uk_rules.md).
 
 ---
 
@@ -630,7 +630,7 @@ Under **NHL Rule 81.1**, icing applies only to a team "equal or superior in nume
 >
 > **What the IIHF book does not have is either carve-out.** IIHF 81.6 runs to two paragraphs and stops; the NHL's third paragraph — *"When a team is 'short-handed' by reason of a major penalty, and they have neglected to ensure there is a player on the penalty bench… Icing will be called"* — **has no IIHF counterpart anywhere in Rule 81.** The duty itself survives: **IIHF Rule 20.3** still requires that when a player takes a major and is removed or injured, *"the offending team must place a substitute in the penalty box immediately."* What does not survive is the sanction. Fail it under IIHF and you have broken 20.3; you have not lost your right to ice the puck. Carve-out 2 is a USA Hockey classification limit and reaches nothing outside USA Hockey.
 >
-> **So for every level of British hockey the kill's single biggest structural advantage comes with no conditions attached** — and the England Ice Hockey / SIHA In-House Rules do not amend Rule 81 at all, so nothing local claws it back. See [UK and England Rules](../foundation/uk_rules.md).
+> **So for every level of British hockey the kill's single biggest structural advantage comes with no conditions attached** — and the In-House Rules do not amend Rule 81 at all, so nothing local claws it back. See [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Rec and youth note:** under USA Hockey the exemption exists only from **Youth 15-Only, Girls 16U, High School and Adult** upward (Rule 624(b)(1)), so across most of North American youth hockey a shorthanded team is called for icing like anyone else. Many youth and rec leagues also use **no-touch (automatic) icing**. Check your league's rules before building your kill around it.
 
@@ -736,7 +736,7 @@ Never: Change on the fly with the puck loose — change by holding possession, o
 Rule: A penalty in overtime makes it 4-on-3, not 3-on-2 — the non-offending team adds a skater (NHL Rule 84.3, matched by IIHF 84.3)
 Rule: A goalie pulled for an extra attacker in regular-season overtime must wait for a stoppage to return and cannot change on the fly (NHL Rule 84.2); IIHF 84.2 sets no such restriction
 Rule: IIHF overtime is 3-on-3 throughout — five minutes in preliminary games and ten in playoff and bronze medal games, with no 5-on-5 playoff format (IIHF Rules 84.1, 84.5)
-Rule: England Ice Hockey plays overtime only in NIHL, and in SNL where its regulations provide; NIHL National is five minutes of 3-on-3 then three shooters a side (In-House Rules, Rule 84)
+Rule: Under the In-House Rules overtime is played only in NIHL, and in SNL where its regulations provide; NIHL National is five minutes of 3-on-3 then three shooters a side (Rule 84)
 ```
 
 NHL regular-season overtime is **five minutes of 3-on-3, sudden death**, followed by a shootout if nobody scores (Rule 84.1, 84.4). **Playoff overtime is full 20-minute periods at 5-on-5** — the 3-on-3 format does not apply (Rule 84.5).

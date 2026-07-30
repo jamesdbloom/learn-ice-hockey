@@ -671,6 +671,9 @@ Read: Pinch when the winger is flat-footed or facing the glass, when a forward c
 Never: Pinch when your forwards are already below you, when the opponent has turned up ice with speed, when protecting a narrow lead late, or when your partner has not seen you go
 Technique: Stick in the passing lane before your feet commit; angle the winger into the boards, never toward the middle; close with short explosive steps
 Priority: Take the player or take the puck — achieve neither and you have created an odd-man rush against your own team
+Rule: A player facing the glass is defenceless — NHL Rule 41.1 puts the onus on you to avoid or minimise contact, and driving into their back is a major with no minor option (NHL and IIHF Rule 43.2)
+Rule: Body checking is banned at USA Hockey 12U and below, in all girls'/women's and all non-check adult classifications (Rule 604(a)), and at Hockey Canada U13 and below and throughout female hockey (Rule 7.3)
+Rule: Neither the IIHF Rule Book nor the In-House Rules state an age at which body checking becomes legal — ask your league (UK and England Rules owns this)
 Rule: NHL Rule 56.2(iii) is a minor on any player who deliberately checks an opponent not in possession of the puck — once the puck is gone, so is your check
 Action: If the pinch fails, retreat toward the slot, not along the boards — following the puck down the wall abandons the middle
 Convention: How aggressively defencemen pinch is a coaching choice — some green-light both, some only the strong side, some forbid going below the circles; ask
@@ -693,6 +696,26 @@ The decision criteria, which are consistent across coaching sources:
 - Your partner has not seen you go.
 
 **Technique:** stick in the passing lane *before* your feet commit; angle the winger into the boards, never toward the middle; use the boards to box them out; close with short explosive steps. The governing principle is **"take the player or take the puck"** — if you achieve neither, you have created an odd-man rush against your own team.
+
+> **⚠️ "Take the player" has a second limit, and it is the more important one.**
+> A winger *facing the glass* is a defenceless player. That posture appears in
+> the read above because it tells you they cannot escape with the puck — it is
+> not permission to hit them. NHL Rule 41.1 puts the onus on you: *"The onus is
+> on the player applying the check to ensure his opponent is not in a defenseless
+> position and if so, he must avoid or minimize contact."* Driving into their
+> back is checking from behind, which under NHL 43.2 and IIHF 43.2 has **no minor
+> option at all** — it is a major with an automatic game misconduct, and Hockey
+> Canada's rule names this exact scenario, a player digging a puck out along the
+> boards, driven head-first into them. Seal the wall, take the puck, or angle
+> them off it. [Body Contact and Battles](../technique/body_contact_and_battles.md)
+> §5 and §6 own this and outrank anything in this section.
+>
+> **And check that you may hit at all.** Body checking is prohibited under USA
+> Hockey Rule 604(a) at 12U and below, in every girls'/women's classification and
+> in every non-check adult classification, and under Hockey Canada at U13 and
+> below and throughout female hockey. Most adult rec leagues do not permit it
+> either, and Britain publishes no age — so ask your league. Where checking is
+> not permitted, everything here is angling, body position and playing the puck.
 
 > **"Take the player" has a legal limit.** You may finish a check on the player who *has* the puck, and you may use your body to seal them against the wall while contesting a puck you can both reach. You may **not** hit a player who has already moved the puck: NHL Rule 56.2(iii) makes it a minor *"on any player who deliberately checks an opponent, including the goalkeeper, who is not in possession of the puck."* On a pinch this happens constantly — the winger chips it past you and you arrive a beat late. Once the puck is gone, so is your check. Play the puck instead.
 
@@ -839,6 +862,7 @@ The general principle is worth stating plainly: **having a defined assignment fo
 - **Tipping with a high stick.** A puck contacting your stick above the height of the crossbar is not a goal (Rule 80.3). Keep the blade on the ice — which is where most tippable pucks are anyway.
 - **Two defencemen leaving the blue line at once.** Or one leaving and no forward filling in. This is the mechanism behind most odd-man rushes against attacking teams.
 - **Pinching without arriving on contact.** "Take the player or take the puck." Half-hearted pinches create 3-on-2s going the other way.
+- **Pinching to hit a winger who is facing the glass.** They cannot see you and cannot protect themselves, and the onus is on you to avoid or minimise the contact. Take the puck.
 - **Retreating along the boards after a failed pinch.** Cut to the slot instead. Following the puck down the wall abandons the middle of the ice.
 - **Quitting after the shot.** The two seconds after a shot are the most dangerous moment of your entire possession. Most teams spend them watching.
 - **Having exactly one way to attack.** Rush-only teams are shut down by any structured defence; cycle-only teams never threaten before the defence is set.
