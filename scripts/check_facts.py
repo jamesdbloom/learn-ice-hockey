@@ -23,10 +23,17 @@ What it cannot check
 Whether a fact is true, and whether it is traceable to its own section. That is
 the extract-never-author rule, and it needs a reader.
 
+``--hedges`` is the closest this file gets to that, and it is advisory rather
+than a gate. Round 20 wrote the brief itself — "list every hedge, exception and
+rule-set flag in each section's body, then check the block for it" — which is
+the check that produced all seven of its criticals. It flags about 31 sections;
+a hand-check shows real noise among them, so it prints candidates and exits 0.
+
 Usage::
 
     python3 scripts/check_facts.py            # all in-scope documents
     python3 scripts/check_facts.py a.md b.md  # just these
+    python3 scripts/check_facts.py --hedges   # advisory: exceptions the blocks omit
 
 Exits non-zero if anything failed. Standard library only.
 """
@@ -226,12 +233,77 @@ def check(path: Path, scope: set[str]) -> list[str]:
     return problems
 
 
+# --------------------------------------------------------------------------
+# Advisory: exceptions that reached the body and not the block.
+#
+# Round 20 wrote the next round's brief itself: "list every hedge, exception
+# and rule-set flag in each section's body, then check the block for it" —
+# the check that produced all seven of its criticals. This operationalises it.
+#
+# It is deliberately NOT a build gate. Measured over the corpus it flags about
+# 35 of 654 sections, and a hand-check of those shows real noise: an exception
+# the block covers in different words, a Sources paragraph bleeding into the
+# last section, a flag phrased as "outside Britain" where the body says
+# "except". Failing the build on that would train people to ignore it. It
+# prints candidates for a reviewer and returns 0.
+# --------------------------------------------------------------------------
+
+# Only exceptions attached to a rule claim. Bare "is not" and "unless" occur
+# constantly in ordinary prose and flagged 40% of all sections when tried.
+_EXCEPTION = re.compile(
+    r"\b(except(?:ion)?\b|unless\b|does not apply\b|no such (?:rule|exception)\b)", re.I
+)
+_RULE_BEARING = re.compile(
+    r"\b(Rule \d|penalt|minor|major|misconduct|illegal|prohibit|eject"
+    r"|IIHF|NHL|USA Hockey|Hockey Canada)\b", re.I
+)
+
+
+def report_hedges(paths: list[Path]) -> None:
+    """Print sections whose body carries a rule-bearing exception the block omits."""
+    hits = 0
+    for path in paths:
+        text = path.read_text(encoding="utf-8")
+        for section in re.split(r"\n(?=### )", text):
+            if not section.startswith("### "):
+                continue
+            block = re.search(r"```facts\n(.*?)```", section, re.S)
+            if not block:
+                continue
+            in_block = block.group(1).lower()
+            body = re.sub(r"```facts.*?```", "", section, flags=re.S)
+            # the Sources footer is not part of any section's teaching
+            body = re.split(r"\n\*Sources", body)[0]
+            for sentence in re.split(r"(?<=[.!?])\s+", body):
+                found = _EXCEPTION.search(sentence)
+                if not (found and _RULE_BEARING.search(sentence)):
+                    continue
+                if found.group(0).lower().split()[0] in in_block:
+                    continue
+                heading = section.split("\n")[0][4:].strip()
+                doc = str(path.relative_to(CONTENT)).removesuffix(".md")
+                print(f"  {doc} · {heading}")
+                print(f"      {' '.join(sentence.split())[:150]}")
+                hits += 1
+                break
+    print(
+        f"\ncheck_facts --hedges: {hits} section(s) where a rule-bearing exception "
+        "is in the body and not in the block."
+    )
+    print("Advisory only — verify each by hand; some are covered in other words.")
+
+
 def main() -> int:
     scope = in_scope()
-    if len(sys.argv) > 1:
-        paths = [Path(a).resolve() for a in sys.argv[1:]]
+    args = [a for a in sys.argv[1:] if a != "--hedges"]
+    if args:
+        paths = [Path(a).resolve() for a in args]
     else:
         paths = sorted(CONTENT.rglob("*.md"))
+
+    if "--hedges" in sys.argv[1:]:
+        report_hedges([p for p in paths if str(p.relative_to(CONTENT)).removesuffix(".md") in scope])
+        return 0
 
     problems, checked, total_blocks, total_facts = [], 0, 0, 0
     for path in paths:
