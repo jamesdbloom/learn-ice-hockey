@@ -64,6 +64,23 @@ The In-House Rules say so in terms: England Ice Hockey, the Scottish Ice Hockey 
 
 ## Who governs what
 
+> **⚠️ This section describes the bodies as the documents on disk describe them,
+> and those documents predate a merger.** On **30 June 2026** England Ice Hockey,
+> Scottish Ice Hockey and Ice Hockey UK merged into a single body covering all
+> four home nations — see
+> [Getting Started](../getting-started/getting_started.md), which owns the merger
+> and its dates. The *Rules & Regulations* quoted throughout this section are the
+> **2024-25 edition**, issued before it, and no post-merger replacement could be
+> found on either governing body's site as of 30 July 2026.
+>
+> **What that does and does not change.** The provisions still describe the rules
+> British hockey is played under — nobody has published anything replacing them,
+> and the In-House Rules for 2025-26 are current. What is now uncertain is
+> **which body will be named** in the next edition, and whether the
+> England-and-Wales scoping that this document leans on — for the trapezoid
+> suspension especially — survives a single UK-wide governing body. Treat every
+> body name below as the name at the time of writing.
+
 **England Ice Hockey (EIH)** governs the game in **England and Wales** — its own *Rules & Regulations* say so at 1.1, 3.1 and 17.1. It was called the English Ice Hockey Association, and you will still see "EIHA" everywhere — on club sites, in league names, in older documents. Same body.
 
 **The Scottish Ice Hockey Association (SIHA)** governs Scotland, and shares the same In-House Rules document with EIH.
