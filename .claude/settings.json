@@ -30,7 +30,11 @@
       "mcp__claude-in-chrome__find",
       "mcp__claude-in-chrome__resize_window",
       "mcp__claude-in-chrome__read_console_messages",
-      "mcp__claude-in-chrome__read_network_requests"
+      "mcp__claude-in-chrome__read_network_requests",
+      "Bash(aws cloudfront get-:*)",
+      "Bash(aws cloudfront list-:*)",
+      "Bash(aws sts get-caller-identity:*)",
+      "Bash(aws polly describe-voices:*)"
     ],
     "ask": [
       "Bash(git push:*)",
@@ -52,8 +56,11 @@
       "Bash(terraform import:*)",
       "Bash(aws s3 rm:*)",
       "Bash(aws s3 sync:*)",
-      "Bash(aws cloudfront:*)",
-      "Bash(aws iam:*)"
+      "Bash(aws iam:*)",
+      "Bash(aws cloudfront create-invalidation:*)",
+      "Bash(aws cloudfront delete-:*)",
+      "Bash(aws cloudfront update-:*)",
+      "Bash(aws cloudfront create-distribution:*)"
     ]
   },
   "hooks": {
