@@ -163,7 +163,7 @@ Under either system, two things hold: if the puck escapes up the wall toward the
 Position: At the goalmouth, between any opposing forward and your goalie
 Key: You guard the goalmouth, the centre covers the high slot — two layers of coverage in front of the net
 Never: Get drawn to the puck — your partner and the centre are handling it
-Technique: Body position first, stick second — a stick lift beats a cross-check at everything, including staying on the ice
+Technique: Body position first, stick second — a stick lift beats a cross-check at everything, including staying on the ice, taken below their bottom hand
 Convention: "Position beats strength" is a tendency, not a law — plan the shift around tying up their stick, not out-leveraging somebody much bigger
 Rule: NHL Rule 59.1 has no blade-on-ice element — under NHL, IIHF or Hockey Canada rules a two-handed shaft shove is a cross-check whatever your blade is doing
 Read: Puck in the strong-side corner and the centre gone to the battle — the weak-side winger collapses to the high slot
@@ -181,7 +181,7 @@ Risk: Both defenders drawn to the puck leaves the net front empty — the bigges
 
 Read that section before you next play this role. Three things in it that a defenceman in particular gets wrong:
 
-- **The order really is body position first and stick second.** A stick lift beats a cross-check at everything, including staying on the ice.
+- **The order really is body position first and stick second.** A stick lift beats a cross-check at everything, including staying on the ice — **taken below their bottom hand**; at or near the hands it is hooking under the IIHF and USA Hockey books ([Body Contact and Battles](../technique/body_contact_and_battles.md)).
 - **"Position beats strength" is a tendency, not a law** — the owning document says so explicitly, and against a large enough strength gap it fails. Do not plan a shift around out-leveraging somebody much bigger; plan it around tying up their stick.
 - **Blade on the ice does not make it legal.** NHL Rule 59.1 has no blade-on-ice element in it at all; that phrasing is a USA Hockey officiating cue, not a definition of the offence. Under NHL, IIHF or Hockey Canada rules a two-handed shaft shove is a cross-check whatever your blade is doing.
 

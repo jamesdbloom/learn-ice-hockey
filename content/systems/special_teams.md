@@ -15,7 +15,7 @@
 
 This document is about **what to actually do** in those situations: the shapes, the plays inside the shapes, how to get into the zone and how to stop someone getting in, and the rules that quietly govern all of it.
 
-**A note on notation.** "5-on-4" means five skaters against four, goalies not counted. So a standard power play is 5-on-4, a two-man advantage is 5-on-3, coincidental penalties give 4-on-4, and regular-season overtime is 3-on-3. When a team pulls its goalie during a power play you get 6-on-4.
+**A note on notation.** "5-on-4" means five skaters against four, goalies not counted. So a standard power play is 5-on-4, a two-man advantage is 5-on-3, and regular-season overtime is 3-on-3. Coincidental penalties give 4-on-4 under NHL rules. They do not under the IIHF book, where they bring immediate substitution and the teams stay five a side — see below. When a team pulls its goalie during a power play you get 6-on-4.
 
 ---
 
@@ -717,7 +717,7 @@ Action: Change on possession in the offensive zone or after a clear; a change wi
 Action: Support the puck with short options and quick movement — do not spread out, exactly as at 5-on-5
 ```
 
-Coincidental penalties (below) put both teams at four skaters. Two fewer bodies on the same sheet changes the game more than the numbers suggest: each player has **a quarter more ice**, and the extra room is mostly in the middle, so skill and skating matter more and structure matters less.
+Coincidental penalties (below) put both teams at four skaters **under NHL rules**; under the IIHF book they bring immediate substitution and the teams stay five a side, so a British 4-on-4 comes from a minor against a major instead. Two fewer bodies on the same sheet changes the game more than the numbers suggest: each player has **a quarter more ice**, and the extra room is mostly in the middle, so skill and skating matter more and structure matters less.
 
 - **You have one fewer support layer defensively.** With only two forwards back, the backchecking centre's middle-lane job (see [Center](../positions/center.md)) becomes everyone's problem, and a 2-on-1 arrives faster and with more room.
 - **Defencemen should activate less, not more.** The open ice tempts you into the rush; the punishment for being caught is an immediate odd-man rush the other way.
@@ -776,13 +776,14 @@ NHL regular-season overtime is **five minutes of 3-on-3, sudden death**, followe
 
 ```facts
 Rule: One minor to each team at the same stoppage, with nothing else on the clocks, is served without substitution and both teams play 4-on-4 (NHL Rule 19.1)
+Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by other routes (a minor against a major at the same stoppage), just not by this one
 Rule: If at least one team was already shorthanded, substitution is immediate and the on-ice strength does not change (NHL Rule 19.1)
 Rule: Coincidental minors make neither team shorthanded, so a goal scored during 4-on-4 releases nobody from the box (NHL Rule 16.2)
 Rule: Where several penalties are assessed at once, equal majors cancel first, then equal minors, and any remaining differential is served normally (NHL Rule 19.5)
 Convention: Rec and minor-hockey leagues frequently differ — several substitute immediately so both teams stay at five; check your league
 ```
 
-Under **NHL Rule 19.1**, when one minor is assessed to a player from each team at the same stoppage, **with nothing else on the penalty clocks**, the penalties are served **without substitution** and both teams play **4-on-4** for two minutes.
+Under **NHL Rule 19.1**, when one minor is assessed to a player from each team at the same stoppage, **with nothing else on the penalty clocks**, the penalties are served **without substitution** and both teams play **4-on-4** for two minutes. 🇬🇧 **The *coincidental-minors* 4-on-4 is NHL-only.** IIHF Rule 19.1 requires *"immediate substitution"* for an equal number of minors, and the casebook confirms *"the teams are playing 5 – 5."* Britain still reaches 4-on-4 by other routes at the same stoppage — a minor to one team against a major to the other does it (IIHF Appendix IV, Table 15, examples 18-20 and 32) — so the tactical material below still applies. It is only this trigger that differs.
 
 - **If at least one team was already shorthanded**, the rule works differently: immediate substitution is made for the matching penalties, so the on-ice strength does not change, and those players wait for the **first stoppage after their time expires** to come out.
 - **Coincidental minors do not make either team "shorthanded"** (Rule 16.2). This matters: a goal scored during 4-on-4 does **not** release anybody from the box.

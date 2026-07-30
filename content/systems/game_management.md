@@ -753,7 +753,7 @@ Convention: Two forwards and two defencemen is the common personnel choice, but 
 Priority: The defensive priority is the far-side rush; losing a puck at the offensive blue line is a 2-on-1 with nobody to help
 ```
 
-Under **Rule 19.1**, when **one minor is assessed to a player on each team at the same stoppage** and there are no other penalties on the clock, they are served **without substitution** and both teams play **four skaters against four for the duration**.
+Under **Rule 19.1**, when **one minor is assessed to a player on each team at the same stoppage** and there are no other penalties on the clock, they are served **without substitution** and both teams play **four skaters against four for the duration**. 🇬🇧 **The *coincidental-minors* 4-on-4 is NHL-only.** IIHF Rule 19.1 requires *"immediate substitution"* for an equal number of minors, and the casebook confirms *"the teams are playing 5 – 5."* Britain still reaches 4-on-4 by other routes at the same stoppage — a minor to one team against a major to the other does it (IIHF Appendix IV, Table 15, examples 18-20 and 32) — so the tactical material below still applies. It is only this trigger that differs.
 
 4-on-4 is a higher-scoring game state than 5-on-5 — in 2007-08 a goal was scored every **12.1 minutes** at 4-on-4 versus **13.7 minutes** at 5-on-5. Both are **combined** rates: the time until *either* team scores, not until one particular team does. How to play it:
 
@@ -767,6 +767,7 @@ Under **Rule 19.1**, when **one minor is assessed to a player on each team at th
 ```facts
 Rule: Coincidental minors of equal duration cancel; any difference in time is served normally (NHL Rule 19)
 Rule: A second pair of coincidental minors while already 4-on-4 leaves strength unchanged, because the first pair is still on the clock (NHL Rule 19.1)
+Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by other routes (a minor against a major at the same stoppage), just not by this one
 Rule: Penalised players in coincidental situations cannot leave the box until the first stoppage after their penalty expires (NHL Rule 19)
 Never: Retaliate — you convert your opponent's mistake into no advantage at all
 ```

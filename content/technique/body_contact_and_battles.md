@@ -214,27 +214,28 @@ Never: Poke from too far away — if your blade cannot reach the puck without lu
 ### The stick lift
 
 ```facts
-Technique: Blade under their shaft low, right above their bottom hand — lift crisply up, not sideways
+Technique: Blade under their shaft low, below their bottom hand and a hand's width clear of the glove — lift crisply up, not sideways
 Action: Step through as their blade comes off the ice and take the puck
 Read: Lift late — as they are about to shoot, receive or move the puck, not while they are just carrying it
 Position: Works from behind and beside an opponent, at the net front, in a board battle and on a backcheck
 Rule: Stick-to-stick contact alone is not to be penalised as hooking (NHL Rule 55.1)
+Rule: IIHF 55.1 adds a sentence the NHL has not — a stick against, or near, the opponent's hands is hooking — and USA Hockey Rule 623 reaches a stick on the hand or arm, so lift below their bottom hand in both of those books
 Never: Lift the stick of a player who does not have the puck — that is interference
-Never: Lift under the hands, or yank the stick down or across — slashing, roughing, or holding the stick
+Never: Catch their glove or forearm on the way up, or yank the stick down or across — slashing, roughing, or holding the stick
 ```
 
-**What it is:** You place your blade under the shaft of their stick, near the bottom hand, and lift their blade off the ice — then take the puck out from underneath it.
+**What it is:** You place your blade under the shaft of their stick, **below the bottom hand and with a clear gap above it**, and lift their blade off the ice — then take the puck out from underneath it.
 
 **Why it is the highest-value defensive skill most amateurs never learn:**
 
-- It takes the puck **without a penalty risk** in the way a poke check (tripping) or a body check (a dozen possible penalties) does. It is stick-on-stick, which Rule 55.1 explicitly protects.
+- It takes the puck with **far less** penalty risk than a poke check (tripping) or a body check (a dozen possible penalties). 🇬🇧 **Not none — and under the IIHF book the risk is higher, not lower:** IIHF Rule 55.1 carries a sentence the NHL's does not — *"If the stick goes against the opponent's hands / or near the opponent's hands, it shall be penalized as 'hooking'"* — and it sits **before** the stick-to-stick carve-out, qualifying it. So in Britain a lift taken at or near the hands is hooking however clean the stick-on-stick contact was. Lift under the shaft, below their bottom hand. Stick-on-stick there is what NHL Rule 55.1 protects — the protection is the NHL's, and it is narrower in the other books.
 - It works from **behind and beside** an opponent, where you cannot legally do anything else. You cannot restrain a player from behind — NHL Rule 56.1 says a player behind an opponent "may not use his stick, body or free hand in order to restrain his opponent" — but lifting the stick of a player *who has the puck* is playing the puck, not restraining a player.
 - It is the correct tool at the **net front**, in a **board battle**, and on a **backcheck** — the three places where amateurs instead reach, hook, or cross-check and go to the box.
 - It leaves you **balanced**. You never leave your feet or lean past your centre of gravity, so if it fails you are still in the play.
 
-**How to do it:** Get your blade under their shaft *low*, right above their bottom hand where the leverage is. Lift crisply — up, not sideways. As their blade comes off the ice, step through and take the puck with your other hand still on your stick. Do it late: lift as they are about to shoot, receive, or move the puck, not while they are just carrying it.
+**How to do it:** Get your blade under their shaft *low*, **below their bottom hand and a hand's width clear of the glove** — that is also where the leverage is, because the fulcrum is their top hand and a contact point further down the shaft has the longer lever arm. Lift crisply — up, not sideways. As their blade comes off the ice, step through and take the puck with your other hand still on your stick. Do it late: lift as they are about to shoot, receive, or move the puck, not while they are just carrying it.
 
-**Where it becomes a penalty:** Lifting a stick when the player does **not** have the puck is interference. Lifting under the hands and catching a glove is slashing or roughing. Yanking the stick down or across is holding the stick.
+**Where it becomes a penalty:** Lifting a stick when the player does **not** have the puck is interference. Lifting at or near their hands is hooking under the IIHF and USA Hockey books, and catching a glove on the way up is slashing or roughing in any of them. Yanking the stick down or across is holding the stick.
 
 ### The sweep check
 
@@ -736,7 +737,7 @@ Rule: Screening from outside the crease without contact is legal, but positionin
 
 ```facts
 Priority: Body position first — inside shoulder ahead of theirs, hips between them and the puck, box out
-Action: Tie sticks, don't cross-check — a stick lift or a light press removes the tip and the rebound and costs you nothing
+Action: Tie sticks, don't cross-check — a stick lift or a light press removes the tip and the rebound at far lower risk, taken below their bottom hand
 Technique: Work under their arms — shoulder beneath their armpit, legs driving, walking them out sideways
 Convention: Leverage over strength — the lower player usually wins, though not always and not against a large enough strength gap
 Read: Eyes on the puck, body on the player — you cannot beat them to a rebound you did not see leave the stick
@@ -747,7 +748,7 @@ The order of operations, and the order matters:
 
 **1. Body position first.** Inside shoulder ahead of theirs, hips between them and the puck, box out — the same idea as boxing out for a rebound in basketball. If you are established inside, they have to come through you and the rules let you stand your ground.
 
-**2. Stick ties, not cross-checks.** Corbett: "I'm more of a guy to take away sticks... You have to be able to, one, control sticks more than anything, and then wait for that shot to come and get physical." A stick lift or a light press on their blade removes the tip and the rebound and costs you nothing. This is the single most valuable skill in this area.
+**2. Stick ties, not cross-checks.** Corbett: "I'm more of a guy to take away sticks... You have to be able to, one, control sticks more than anything, and then wait for that shot to come and get physical." A stick lift or a light press on their blade removes the tip and the rebound at far lower risk than a cross-check — **taken below their bottom hand**; at or near the hands it is hooking under the IIHF and USA Hockey books. This is the single most valuable skill in this area.
 
 **3. Work under their arms.** To move someone, get *under* them — your shoulder beneath their armpit, your legs driving, walking them out sideways. Pushing from above only pushes yourself backwards.
 
@@ -764,7 +765,7 @@ Rule: Cross-checking is using the shaft of the stick between the two hands to fo
 Never: Believe a blade on the ice makes a shaft shove legal — that wording is USA Hockey Rule 609 only, not NHL, IIHF or Hockey Canada
 Rule: USA Hockey's enforcement standard gives the net-front shaft-and-arms shove to create space as its first example (Rule 609)
 Key: The call data makes cross-checking seventh at the net front and no likelier there than league-wide — the emphasis is real, the frequency ordinary
-Action: Control the stick instead of the body — a stick lift or a tie-up achieves what a cross-check is trying to achieve, legally
+Action: Control the stick instead of the body — a stick lift or a tie-up achieves what a cross-check is trying to achieve, and is legal taken below their bottom hand
 Read: Establish position early and quietly; engage physically when the shot comes, not before
 ```
 
@@ -790,7 +791,7 @@ The rule itself is narrow and easy to break by accident. NHL Rule 59.1: *"The ac
 
 > **A common and costly misconception.** You will hear that keeping your blade on the ice means it cannot be a cross-check. That is **not** the NHL rule, nor the IIHF rule (Rule 59) nor Hockey Canada's — under all three, a two-handed shaft shove is a cross-check whatever your blade is doing. The blade-on-ice phrasing comes from **USA Hockey Rule 609 and its Standard of Play emphasis material**, where it is an officiating cue for one association, not a definition of the offence. If you play under NHL, IIHF or Hockey Canada rules and you shove with the shaft, you are exposed regardless of your blade.
 
-The real defence is not a stick position, it's a different action: **control the stick instead of the body.** A stick lift or a tie-up achieves what a cross-check is trying to achieve and is entirely legal.
+The real defence is not a stick position, it's a different action: **control the stick instead of the body.** A stick lift or a tie-up achieves what a cross-check is trying to achieve, and is legal **when the lift is taken below their bottom hand** — at or near the hands it is hooking under the IIHF and USA Hockey books.
 
 Corbett's warning about timing is worth repeating: "if you get physical before the puck is on its way, you're going to get a penalty." Establish position early and quietly; engage physically when the shot comes, not before.
 
@@ -952,6 +953,7 @@ Rule: Slashing is a forceful chop on the body, on their stick, or near their han
 Rule: Holding is using the free hand to hold, pull, tug or grab — you may fend off, but not hold their stick or body (NHL Rule 56.1)
 Rule: Cross-checking has no blade-on-ice element outside USA Hockey Rule 609 — it is absent from NHL and IIHF Rule 59.1
 Rule: High-sticking tests contact above the shoulders, provided the shoulders are at waist level or higher (NHL Rule 60.1, rewritten 2025-26)
+Rule: Only the NHL has the waist-level floor — IIHF 60.1, USA Hockey 621 and Hockey Canada 9.5 all test a stick carried above the opponent's shoulders with no such proviso, so elsewhere a crouching opponent is protected
 Rule: Tripping requires no fall under any book — NHL Rule 57.1 and USA Hockey Rule 639 both reach the act itself
 Rule: Charging thresholds differ — IIHF "multiple strides" (Rule 42.1), USA Hockey more than two, Hockey Canada two or more, the NHL no stated number
 ```
@@ -967,6 +969,8 @@ Rule: Charging thresholds differ — IIHF "multiple strides" (Rule 42.1), USA Ho
 | **High-sticking** | A stick that **contacts an opponent above the shoulders, provided their shoulders are at waist level or higher** (NHL Rule 60.1, rewritten for 2025-26 — the test is now *contact*, not how you carry the stick, and a player bent below waist height is not protected). Accidental contact on a normal windup or follow-through is permitted; a wild swing at a bouncing puck is not. |
 | **Tripping** | Using a stick, knee, foot, arm, hand or elbow to cause an opponent to fall or lose their footing. **No fall is required under any book** — NHL 57.1 and USA Hockey 639 both reach the act, and USA Hockey's wording is *"lose balance **or** fall"*. No penalty if you clearly played the puck first. **This is the most-called penalty in the NHL** — 16.6% of all calls in the 400-game sample used in §9. |
 | **Charging** | Distance travelled and speed built up into a check, or jumping into an opponent. Written thresholds differ: **IIHF Rule 42.1 "multiple strides"** (the British test), USA Hockey *more than* two strides, Hockey Canada *two or more*, NHL no stated number (judged on "distance traveled"). |
+
+⚠️ **The waist floor is in the NHL book and nowhere else, and it runs through **60.1 and 60.3**.** IIHF 60.1 tests a stick *carried* above the opponent's shoulders with no waist proviso; USA Hockey 621 and Hockey Canada 9.5 have none either. NHL **60.3** carries a second waist floor on the blood double-minor that IIHF 60.3 lacks. **60.2 alone is word-for-word identical in the NHL and IIHF books**, so 60.2 is not the ground. Outside the NHL a crouching opponent **is** protected. Both carve-outs above are in the IIHF text unchanged.
 
 ### The habits that keep you out of the box
 
@@ -1028,7 +1032,7 @@ A team that plays hard, wins battles and takes no penalties is far more physical
 - **Angling at the player instead of at the ice.** If you skate at the body, a good carrier changes the puck to their far side and goes around you. Skate at the space.
 - **Angling flat across the ice.** Without momentum back toward your own net, one pass leaves you facing the wrong way.
 - **Committing your feet on a poke check.** A missed poke with your weight forward means you are out of the play.
-- **Never learning the stick lift.** The highest-value, lowest-risk defensive skill in the game, and most amateurs have simply never been shown it.
+- **Never learning the stick lift.** The highest-value defensive skill in the game, and lower-risk than a poke or a check when the lift is taken below the bottom hand, and most amateurs have simply never been shown it.
 - **Cross-checking at the net front to create space.** An enforcement emphasis officials are specifically told to watch for — but not, as the folklore has it, the most-called penalty there. In 400 tracked games it ranks **seventh** in the net-front box at 5.7% of calls, essentially its league-wide rate (see §9). The stick fouls that really concentrate there are hooking and slashing. Tie the stick instead. And don't rely on the "blade on the ice" folklore — that isn't in the NHL, IIHF or Hockey Canada definition.
 - **Standing up in a board battle.** The lower player usually wins — not always, and a big enough strength gap still wins, but your base is the part you control and standing tall throws it away.
 - **Forgetting your feet exist.** In a real battle your stick is tied up and your skates are free. Kick the puck out.
@@ -1047,14 +1051,14 @@ A team that plays hard, wins battles and takes no penalties is far more physical
 
 1. **Find out whether your league permits body checking before you play a shift.** Body checking is banned in USA Hockey's 12U-and-below, all girls'/women's classifications and all non-check adult divisions; in Hockey Canada's U13-and-below and all female hockey; and in most adult rec leagues. Body *contact* is legal everywhere. **In Britain you cannot look this up** — your book is the IIHF's, amended by the In-House Rules, and **neither states a body-checking age.** Do not assume Britain copies the North American lines; ask your league, and note that British junior categories are U19/U16/U14/U12/U10 by birth year and unisex. Women's hockey in Britain runs **IIHF Rule 101.1**, where a restricted form of bodychecking is permitted and Adult begins at the 14th birthday. See [UK and England Rules](../foundation/uk_rules.md).
 2. **Angling is the most valuable skill in this document and it is legal in every league.** Steer opponents with your route, not your body: take away the middle, keep your momentum heading back toward your own net, close under control, and arrive stick-on-puck.
-3. **Stick on the puck or stick on their stick is legal; stick on their hands or body is a penalty — and the stick lift is the best application of it.** That one sentence covers hooking, slashing and cross-checking (with the caveat that a violent chop at their stick is still slashing). The stick lift wins pucks from behind, beside and in front of an opponent, carries almost no penalty risk, never takes you out of the play, and almost no amateur has been taught it.
+3. **Stick on the puck or stick on their stick is legal; stick on their hands or body is a penalty — and the stick lift is the best application of it.** That one sentence covers hooking, slashing and cross-checking (with the caveat that a violent chop at their stick is still slashing). The stick lift wins pucks from behind, beside and in front of an opponent, never takes you out of the play, and almost no amateur has been taught it. It carries far less penalty risk than a poke check or a body check — **but not none**: under the IIHF and USA Hockey books a stick at or near the opponent's hands is hooking, so lift below their bottom hand.
 4. **You are entitled to the ice you are standing on.** You can block a path, stand your ground, box out and lengthen an opponent's route to the puck — as long as you do not use your stick to make yourself wider or your free hand to hold.
 5. **A legal check is trunk on trunk, above their knees and below their shoulders, on a player who has the puck, to win the puck.** That much is common to every rulebook. The extra clause worth adopting is **USA Hockey's**, and it is a written enforcement standard rather than a law of hockey everywhere: *"proper body checking technique starts with stick on puck, therefore the stick blade of the player delivering the check must be below the knees"* (Standard of Play — Body Checking). The **NHL and IIHF rulebooks contain no such requirement** — the IIHF glossary defines the legal check in almost the same words as USA Hockey but stops at "trunk of the body… above the knees and at or below the shoulders" — but treat it as your checklist anyway: a stick that is down means hands, elbows and shoulder all arrive where they should. Same story on the wind-up — **two strides** is USA Hockey's and Hockey Canada's written number, **IIHF Rule 42.1 says "multiple strides" without counting them**, NHL Rule 42.1 judges charging on "distance traveled" with no figure attached, and USA Hockey's own coaching manual cuts it to **one stride for an open-ice check**.
 6. **Both sides of the collision have a non-negotiable rule.** Giving it: never hit a player from behind, near the head, or turned toward the boards — checking from behind has no minor-penalty option in the NHL or IIHF, it is a major with an automatic game misconduct, and the onus is always on you. Taking it: keep your head up, chin off your chest, and never turn your back to the wall.
 7. **If a player may have hurt their neck, nobody moves and somebody phones — and this is the most important paragraph in the document.** Do not help them up. Call for immediate medical help, observe the ABCs, reassure them, keep them warm, and instruct and immobilise them so they do not move — head and neck especially. Leave the helmet on. Assume a possible spinal injury in every head injury: neck pain or tenderness is itself an ambulance. Full response in [If it happens anyway](#if-it-happens-anyway--a-suspected-neck-injury-on-the-ice).
 8. **Go into the boards on an angle, skates parallel, and take it on your forearm and hip** — not the point of your shoulder. If you are already facing the wall and cannot turn, get your gloves and stick up and spread out on the glass; that is damage limitation, not the position you were aiming for.
 9. **Board and corner battles are usually won by the lower player, not the stronger one, and by the second man staying out of the pile.** Wide base, bent knees, body between opponent and puck, wall on the far side; use your skates to kick the puck free when your stick is tied up. In the corner, first man engages and stops the puck, second man reads where it squirts. Whose corner it is in your own end is a coaching choice — under low zone collapse it is the strong-side D and centre, under man-on-man a winger comes down. Find out which you play.
-10. **At the net front, control sticks before you get physical.** A stick lift achieves what a cross-check does, without the two minutes. Note that keeping your blade on the ice does **not** make a shaft shove legal outside USA Hockey — that's a widespread myth.
+10. **At the net front, control sticks before you get physical.** A stick lift achieves what a cross-check does, and taken below their bottom hand it costs far less — but at or near the hands it is hooking under the IIHF and USA Hockey books, and the net front is where the bottom hand is easiest to catch. Note that keeping your blade on the ice does **not** make a shaft shove legal outside USA Hockey — that's a widespread myth.
 11. **Block shots close, on your feet, hands tucked, head out of the lane — and don't block on a 2-on-1 or from in front of your own goalie's eyes.** Most amateur penalties, meanwhile, are late, frustrated or lazy rather than dirty: if you lost position, the only legal way to get it back is with your feet. Skate more, reach less.
 
 ---
