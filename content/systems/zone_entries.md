@@ -708,7 +708,7 @@ See [Neutral Zone Systems](neutral_zone_systems.md).
 Read: They close hard and early, well before their own line
 Action: Chip past them — an aggressive gap is a defender with committed momentum, and this is the best possible situation for it
 Action: Get the puck off your stick early; make the play a stride before they arrive
-Action: Use the space behind them — send someone into it and hit them
+Action: Use the space behind them — send someone into it and hit them with the puck
 Technique: Change of pace beats a move — hard deceleration then re-acceleration ruins a defender who is closing hard
 ```
 
@@ -716,7 +716,7 @@ They close hard and early, well before their own line.
 
 - **This is the best possible situation for the chip past.** An aggressive gap is a defender with committed momentum.
 - **Get the puck off your stick early.** Do not skate into a closing defender; make the play a stride before they arrive.
-- **Use the space behind them.** Aggressive gap means there is ice behind them by definition. Send someone into it and hit them.
+- **Use the space behind them.** Aggressive gap means there is ice behind them by definition. Send someone into it and hit them with the puck.
 - **Change of pace beats a move.** A hard deceleration then re-acceleration ruins a defender who is closing hard, because their speed is now a liability.
 
 ### On the power play

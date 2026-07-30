@@ -69,7 +69,7 @@ Every faceoff in the game happens at one of **nine spots** (NHL Rule 76.2). Ther
 Rule: Every faceoff happens at one of nine marked spots, and nowhere else (Rule 76.2)
 Position: Wingers stand at the hash marks, and those marks are a hard boundary
 Rule: The centre's restraining lines define where your feet may go (Rule 1.9)
-Rule: The four neutral-zone dots have no circles and no hash marks — everyone stands "uniformly back" (Rule 76.7)
+Rule: The four neutral-zone dots have no circles and no hash marks — all players other than the centres stand "uniformly back" (NHL and IIHF Rule 76.7)
 Key: Encroachment is called loosely in the neutral zone and tightly in the end zones
 ```
 

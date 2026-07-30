@@ -616,7 +616,7 @@ So the decision behind your net on every dumped puck is a real one, and it has t
 
 **This is the most valuable thing you do that is not a save.** Read this section twice.
 
-You see everything. You are stationary, and you are facing the play while your defenceman is not. Your defenceman retrieving a puck in your corner is facing the end boards with a forechecker arriving from behind them — the exact view you have and they do not. If that information doesn't travel from you to them, they guess, and a guess in the defensive zone is a turnover in the highest-danger area on the ice.
+You see everything. You are stationary, and you are facing the play while your defenceman is not — and it is not only a turnover you are preventing. A player facing the end boards with a forechecker arriving behind them is the situation the checking-from-behind rules exist for, which is what makes your call the most valuable thing said on a hockey rink. Your defenceman retrieving a puck in your corner is facing the end boards with a forechecker arriving from behind them — the exact view you have and they do not. If that information doesn't travel from you to them, they guess, and a guess in the defensive zone is a turnover in the highest-danger area on the ice.
 
 **A call converts a blind decision into an informed one, and it costs you nothing.** The information was already sitting in your eyes, useless.
 

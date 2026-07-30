@@ -400,6 +400,8 @@ One caveat, and it matters. Not all fear should be overridden. Fear that says "t
 
 ### Coming back from injury
 
+**This section assumes you have been medically cleared to play.** If you have not, that is the first step and it is not yours to make — see [Conditioning and Recovery](conditioning_and_recovery.md).
+
 The physical timeline and the psychological timeline are not the same, and the psychological one is longer. It is entirely normal to be cleared to play and still be protecting the injury three weeks later. Two things help: staged return through the same graded progression above rather than straight into a game, and knowing that the first genuine contact on the healed area is the moment that resolves most of it. Note also the IOC consensus statement's finding that mental health symptoms and physical health are not separable — **symptoms increase injury risk and delay recovery** — so a lingering fear is not merely uncomfortable, it is a physical risk factor.
 
 ---
