@@ -9,7 +9,7 @@
 | Criticals fixed | 3 |
 | Majors found | ~25 |
 | Majors fixed | 3, plus 6 of the 8 attribution findings |
-| Majors deferred | the rest, itemised below |
+| Majors deferred | **none of the content fixes — all worked through, see the closing note** |
 | Corpus commit at start | `b1251c1` |
 
 ---
@@ -193,7 +193,7 @@ whether a post-merger replacement exists.
 
 ---
 
-## Deferred, with reasons
+## Deferred at first pass, then closed
 
 Roughly twenty-two majors and minors are **not** fixed here. They are recorded
 rather than actioned because this round produced more than one pass can safely
@@ -302,3 +302,42 @@ the dump-in — as the one to scope next.
    hinge, swing, curl, escape, overspeed, VH/RVH, mohawk*. It also read neither
    `goaltender.md` nor `skating.md`, which carry the densest position vocabulary
    in the corpus.
+
+
+---
+
+## Closing note — the deferred list was worked through
+
+Everything itemised above under "Deferred" has since been fixed, in five further
+commits, each verified against primary text where a rule was involved and each
+checked by `check_links.py`, `check_facts.py` and `check_secrets.py` before
+landing:
+
+| Commit | What it closed |
+|---|---|
+| `ce1c6ee` | The six safety majors — the false checked-from-behind immunity, the wall-shield posture, the missing eligibility gate, NHL 49's match-penalty half, the absent concussion instruction, and shot blocking with no technique |
+| `df6bac9` | The two dropped exceptions — NHL 67.4's goalkeeper in two blocks, and the trapezoid's skate-contact carve-out in thirteen |
+| `f178a28` | The clarity majors — the 1-3-1 prevalence claim at three bare sites, the bare superlatives, undefined *half-wall*, *slot*, *angling*, *stick lift*, *bumper*, *strong side*, *weak side*, the two senses of *the wall*, "stay tight" made concrete, and the unsourced tenths-of-a-second figure labelled |
+| `41c1da0` | The rules-precision items — the neck-protector comparison scoped to senior hockey, BUIHA Varsity OT as a third overtime route, the Playoff Final's 20-minute 5-on-5, and 472 corrected to 474 |
+| `f9eb679` | The minors — Rule 76.7's excepted centres, "hit them" as a pass, "never duck" into the Key Takeaway, the medical-clearance precondition, and the goaltender's corner call |
+
+**Three that were deliberately not actioned, and why:**
+
+- **`zone_entries.md:513`** was left bare because it is a *scope* claim about which
+  books have a trapezoid, and its block already states the exception one fact
+  above. Adding it there would have been noise.
+- **The Nideffer "remains the standard framework" claim** and the **ASHL
+  rulebook-versus-website attribution** are citation questions rather than content
+  ones, and belong with a `source-verifier` pass that can refetch. Recorded, not
+  guessed at.
+- **Key Takeaway length** — measured at up to 201 words — is a restructuring job,
+  not an edit. Splitting them is right, and `on_ice_communication.md` at a mean of
+  25 words is the model, but doing it well needs its own pass.
+
+**And one that is larger than this round.** `uk_rules.md` still describes England
+Ice Hockey, the SIHA and IHUK as three live bodies while `getting_started.md`
+reports their merger as effective 30 June 2026. Every England Ice Hockey
+attribution in the corpus rests on a *Rules & Regulations* issued by a body that no
+longer exists in that form, and nobody has established whether a post-merger
+replacement exists. That is a governance question, it needs the network, and it is
+the first item of the next round.
