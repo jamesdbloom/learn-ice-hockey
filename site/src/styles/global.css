@@ -188,6 +188,27 @@ pre {
   border-radius: var(--radius);
 }
 
+/* The inline-code rule above must not reach a fenced block.
+   Astro's highlighter emits <pre><code><span class="line">…, and an inline
+   background plus padding on that <code> paints a light box behind every line
+   fragment. On the ASCII rink map in rink_map_and_glossary.md that produced
+   horizontal bars straight through the drawing and made it unreadable.
+   The block's own background and colour come from the highlighter. */
+pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* ASCII diagrams are drawn on a character grid: they need every column to line
+   up and must never wrap. The block scrolls instead. */
+pre code .line {
+  display: block;
+  white-space: pre;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

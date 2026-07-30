@@ -183,37 +183,148 @@ export function rinkSvg(opts = {}) {
 }
 
 /**
- * Draw a play on the ice: players at named positions, arrows between them.
+ * Drill notation — the convention coaching material shares.
  *
- * A diagram source names positions in the corpus's own vocabulary — `half-wall:right`,
- * `behind-net` — never pixels and never feet. That is what makes it writable by hand,
- * reviewable as text, and impossible to drift from the coordinate table.
+ * A caveat worth keeping: this is the **common coaching convention**, not a formally
+ * published international standard. USA Hockey, Hockey Canada and IIHF coaching
+ * material all use something very close to it, and it varies at the edges. Nothing
+ * here has been verified against a governing body's published symbol key, so the
+ * legend below is the definition for this corpus and diagrams are checked against
+ * the legend rather than against anyone's memory.
+ *
+ *   skate      solid line, arrowhead
+ *   carry      solid line with cross-ticks — skating with the puck
+ *   pass       dashed line, arrowhead
+ *   shot       solid line ending in a bar
+ *   backward   line with open loops
+ *   stop       short bar across the end of the route
+ *   screen     a bar in front of a player
+ *
+ * Own team is a filled circle, opposition an X — distinguishable without colour,
+ * because the site renders in light and dark and some readers cannot separate hues.
+ */
+
+const NOTATION = {
+  skate:    { dash: null,      end: 'arrow' },
+  carry:    { dash: null,      end: 'arrow', ticks: true },
+  pass:     { dash: '2.4 1.8', end: 'arrow' },
+  shot:     { dash: null,      end: 'bar'   },
+  backward: { dash: '0.1 2.6', end: 'arrow', round: true },
+};
+
+/** Cross-ticks along a route, marking "with the puck". */
+function ticks(f, t, n = 3) {
+  const out = [];
+  const dx = t.x - f.x, dy = t.y - f.y;
+  const len = Math.hypot(dx, dy) || 1;
+  const nx = -dy / len, ny = dx / len;
+  for (let i = 1; i <= n; i++) {
+    const k = i / (n + 1);
+    const cx = f.x + dx * k, cy = f.y + dy * k;
+    out.push(
+      `<line x1="${(cx + nx * 1.1).toFixed(2)}" y1="${py(cy + ny * 1.1).toFixed(2)}" ` +
+      `x2="${(cx - nx * 1.1).toFixed(2)}" y2="${py(cy - ny * 1.1).toFixed(2)}" ` +
+      `stroke="${PALETTE.boards}" stroke-width="0.45"/>`
+    );
+  }
+  return out.join('');
+}
+
+/**
+ * Draw a play: players at named positions, routes between them in drill notation.
+ *
+ * A diagram source names positions in the corpus's own vocabulary —
+ * `half-wall:right`, `behind-net` — never pixels and never feet. That is what makes
+ * it writable by hand, reviewable as text, and unable to drift from the table.
  */
 export function playSvg(spec, opts = {}) {
-  const base = rinkSvg({ half: opts.half ?? true, width: opts.width ?? 800 });
+  const base = rinkSvg({ half: opts.half ?? true, width: opts.width ?? 820, legend: opts.legend });
   const P = PALETTE;
 
-  const marker =
-    `<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">` +
-    `<path d="M 0 0 L 10 5 L 0 10 z" fill="${P.boards}"/></marker></defs>`;
+  const defs =
+    `<defs>` +
+    `<marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">` +
+    `<path d="M 0 0 L 10 5 L 0 10 z" fill="${P.boards}"/></marker>` +
+    `</defs>`;
 
-  const arrows = (spec.arrows ?? []).map((a) => {
-    const f = resolve(a.from), t = resolve(a.to);
-    const dash = a.kind === 'pass' ? ' stroke-dasharray="2 1.5"' : '';
-    // Bow the line so two arrows between the same points stay legible.
-    const mx = (f.x + t.x) / 2 + (a.bow ?? 0), my = (f.y + t.y) / 2 + (a.bow ?? 0);
-    return `<path d="M ${f.x} ${-f.y} Q ${mx} ${-my} ${t.x} ${-t.y}" fill="none" ` +
-           `stroke="${P.boards}" stroke-width="0.7"${dash} marker-end="url(#ah)"/>`;
+  const routes = (spec.routes ?? []).map((r) => {
+    const f = resolve(r.from), t = resolve(r.to);
+    const n = NOTATION[r.kind] ?? NOTATION.skate;
+    const bow = r.bow ?? 0;
+    // Perpendicular offset for the control point, so a bowed route curves sensibly.
+    const dx = t.x - f.x, dy = t.y - f.y, len = Math.hypot(dx, dy) || 1;
+    const mx = (f.x + t.x) / 2 + (-dy / len) * bow;
+    const my = (f.y + t.y) / 2 + (dx / len) * bow;
+    const d = `M ${f.x} ${py(f.y)} Q ${mx} ${py(my)} ${t.x} ${py(t.y)}`;
+    const line =
+      `<path d="${d}" fill="none" stroke="${P.boards}" stroke-width="0.7"` +
+      (n.dash ? ` stroke-dasharray="${n.dash}"` : '') +
+      (n.round ? ' stroke-linecap="round"' : '') +
+      (n.end === 'arrow' ? ' marker-end="url(#ah)"' : '') +
+      `/>`;
+    // A shot ends in a bar across the route rather than an arrowhead.
+    const barEnd = n.end === 'bar'
+      ? `<line x1="${t.x + (-dy / len) * 2}" y1="${py(t.y + (dx / len) * 2)}" ` +
+        `x2="${t.x - (-dy / len) * 2}" y2="${py(t.y - (dx / len) * 2)}" ` +
+        `stroke="${P.boards}" stroke-width="0.8"/>`
+      : '';
+    return line + barEnd + (n.ticks ? ticks(f, t) : '');
   }).join('\n    ');
 
   const players = (spec.players ?? []).map((pl) => {
     const p = resolve(pl.at);
-    const fill = pl.team === 'away' ? P.away : P.home;
-    return `<circle cx="${p.x}" cy="${-p.y}" r="3" fill="${fill}"/>` +
-           `<text x="${p.x}" y="${-p.y + 1.1}" font-size="3" font-weight="700" ` +
-           `text-anchor="middle" fill="#fff">${pl.id}</text>` +
-           (pl.label ? `<text x="${p.x}" y="${-p.y - 4.5}" font-size="2.6" text-anchor="middle" fill="${P.label}">${pl.label}</text>` : '');
+    const opp = pl.team === 'opp';
+    const glyph = opp
+      ? `<g stroke="${P.away}" stroke-width="0.9" stroke-linecap="round">` +
+        `<line x1="${p.x - 2.1}" y1="${py(p.y) - 2.1}" x2="${p.x + 2.1}" y2="${py(p.y) + 2.1}"/>` +
+        `<line x1="${p.x - 2.1}" y1="${py(p.y) + 2.1}" x2="${p.x + 2.1}" y2="${py(p.y) - 2.1}"/></g>` +
+        `<text x="${p.x}" y="${py(p.y) - 3.4}" font-size="2.7" font-weight="700" text-anchor="middle" fill="${P.away}">${pl.id}</text>`
+      : `<circle cx="${p.x}" cy="${py(p.y)}" r="2.9" fill="${P.home}"/>` +
+        `<text x="${p.x}" y="${py(p.y) + 1.05}" font-size="3" font-weight="700" text-anchor="middle" fill="#fff">${pl.id}</text>`;
+    const label = pl.label
+      ? `<text x="${p.x}" y="${py(p.y) + (pl.below ? 6.6 : -4.6)}" font-size="2.5" text-anchor="middle" fill="${P.label}">${pl.label}</text>`
+      : '';
+    return glyph + label;
   }).join('\n    ');
 
-  return base.replace('</svg>', `  ${marker}\n    ${arrows}\n    ${players}\n</svg>`);
+  const puck = spec.puck
+    ? (() => { const p = resolve(spec.puck); return `<circle cx="${p.x}" cy="${py(p.y)}" r="1.1" fill="${PALETTE.puck}"/>`; })()
+    : '';
+
+  return base.replace('</svg>', `  ${defs}\n    ${routes}\n    ${players}\n    ${puck}\n</svg>`);
+}
+
+/** The legend, drawn beneath the ice so a diagram is self-describing. */
+export function legendSvg(width = 820) {
+  const rows = [
+    ['skate', 'Skating'], ['carry', 'Skating with the puck'], ['pass', 'Pass'],
+    ['shot', 'Shot'], ['backward', 'Skating backward'],
+  ];
+  const w = 200, h = 26;
+  const items = rows.map((r, i) => {
+    const [kind, text] = r;
+    const n = NOTATION[kind];
+    const x = 6 + (i % 3) * w, y = 14 + Math.floor(i / 3) * h;
+    const line =
+      `<path d="M ${x} ${y} L ${x + 46} ${y}" fill="none" stroke="${PALETTE.boards}" stroke-width="2"` +
+      (n.dash ? ` stroke-dasharray="${n.dash.split(' ').map(v=>v*2.2).join(' ')}"` : '') +
+      (n.end === 'arrow' ? ' marker-end="url(#ahL)"' : '') + '/>';
+    const bar = n.end === 'bar' ? `<line x1="${x+46}" y1="${y-5}" x2="${x+46}" y2="${y+5}" stroke="${PALETTE.boards}" stroke-width="2.4"/>` : '';
+    const tick = n.ticks ? [16,26,36].map(o=>`<line x1="${x+o}" y1="${y-3.5}" x2="${x+o}" y2="${y+3.5}" stroke="${PALETTE.boards}" stroke-width="1.6"/>`).join('') : '';
+    return line + bar + tick + `<text x="${x + 54}" y="${y + 4}" font-size="12" fill="#1b1c1e">${text}</text>`;
+  }).join('\n    ');
+  const glyphs =
+    `<circle cx="${6 + 2*w + 8}" cy="40" r="7" fill="${PALETTE.home}"/>` +
+    `<text x="${6 + 2*w + 8}" y="44" font-size="8" font-weight="700" text-anchor="middle" fill="#fff">C</text>` +
+    `<text x="${6 + 2*w + 22}" y="44" font-size="12" fill="#1b1c1e">Own team</text>` +
+    `<g stroke="${PALETTE.away}" stroke-width="2.4" stroke-linecap="round">` +
+    `<line x1="${6+2*w+96}" y1="34" x2="${6+2*w+108}" y2="46"/><line x1="${6+2*w+96}" y1="46" x2="${6+2*w+108}" y2="34"/></g>` +
+    `<text x="${6 + 2*w + 116}" y="44" font-size="12" fill="#1b1c1e">Opposition</text>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="60" viewBox="0 0 ${width} 60"
+     font-family="-apple-system, Helvetica Neue, Arial, sans-serif">
+    <defs><marker id="ahL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="${PALETTE.boards}"/></marker></defs>
+    ${items}
+    ${glyphs}
+</svg>`;
 }
