@@ -407,6 +407,54 @@ Two details worth keeping:
 
 ---
 
+## The facts layer was never narrated
+
+Found by `commit-gate` during round 22, verified directly, and it invalidated a
+line of reasoning three review rounds had been building on.
+
+`scripts/md_to_speech.py` had no handling for `facts` at all — the string did
+not appear in the file. Every fenced block was parsed as code and replaced with
+*"A diagram appears here in the written version. It is drawn in text and cannot
+be read aloud."* Generating the corpus produced **766 of those placeholders
+against 764 facts blocks**, and no fact text in the SSML at all.
+
+Two things were wrong with that.
+
+**The listener was told something false.** The blocks are not diagrams. They are
+prose, and they could be read aloud trivially.
+
+**And it inverted the layer's purpose.** The facts layer exists to carry the
+most load-bearing sentences in the corpus — 4,423 fact lines, of which **424
+mention a penalty, an injury, an ejection or a prohibition**. Rounds 20, 21 and
+22 all reasoned explicitly about "what a listener hears from this block with no
+surrounding context", and used that reasoning to justify *putting* safety
+caveats into facts blocks — the checking-legality rules in
+`body_contact_and_battles.md` §5 among them. Every one of those arguments was
+wrong in the same direction: the layer being optimised for the listener was the
+only layer the listener never received.
+
+**Decision:** render `facts` fences as speech. A short lead-in, then one
+paragraph per fact with the label spoken as its own clause — *"Never. Lunge…"*,
+*"Rule. The restricted area is I-I-H-F Rule twenty-seven point seven…"*. The
+labels are imperatives by design, which is what lets them read naturally
+without rewriting a single fact. Values go through the same `to_speech`
+pipeline as body prose, so the numeral, abbreviation and symbol handling is
+inherited rather than duplicated.
+
+Genuine diagrams keep the placeholder. After the change the corpus reports
+**764 facts-block conversions and 2 dropped code blocks**, and those two are the
+ASCII rink diagrams, which is correct.
+
+**The cost is real and belongs in the Phase 5 decision.** Billed characters go
+from **2,328,233 to 2,796,473 — plus 468,240, about 20%.** Polly bills per
+character, so narration gets proportionally more expensive. That is the right
+trade: the alternative is paying to narrate a corpus with its safety layer
+removed. But it should be priced deliberately rather than discovered on an
+invoice, and it is another reason Phase 4b (section kinds) has to land before
+anything is sent to Polly.
+
+---
+
 ## Open threads
 
 Things decided provisionally, or not yet decided, that a future session should

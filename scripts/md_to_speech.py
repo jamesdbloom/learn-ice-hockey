@@ -1454,6 +1454,54 @@ def render_list(block: Block, report: DocReport) -> list[Token]:
     return out
 
 
+def render_facts(block: Block, report: DocReport) -> list[Token]:
+    """Read a ```facts block aloud.
+
+    Until this existed, every fenced block — including all 764 facts blocks —
+    was announced as "A diagram appears here… it cannot be read aloud." Two
+    things were wrong with that. The blocks are not diagrams, they are prose;
+    and they are the layer the corpus puts its most load-bearing sentences in,
+    including 424 fact lines that carry a penalty, an injury or a prohibition.
+    So the one layer three review rounds reasoned about as "what a listener
+    hears with no surrounding context" was the only layer the listener never
+    heard at all.
+
+    Rendering: a short lead-in, then one <p> per fact, the label spoken as its
+    own clause. "Never: lunge" reads naturally as "Never. Lunge." — the labels
+    were chosen as imperatives, which is what makes this work without
+    rewriting them.
+    """
+    rows: list[tuple[str, str]] = []
+    for line in block.lines[1:-1]:          # strip the opening and closing fence
+        if not line.strip():
+            continue
+        match = re.match(r"^([A-Z][A-Za-z ]*?):\s+(.+)$", line.strip())
+        if match:
+            rows.append((match.group(1), match.group(2)))
+        else:
+            # A continuation or a malformed line: read it, do not drop it.
+            rows.append(("", line.strip()))
+    if not rows:
+        return []
+
+    out: list[Token] = [Token(SSML, "<p>")]
+    out.extend(done("The key facts for this section. "))
+    out.append(Token(SSML, "</p>"))
+    for label, value in rows:
+        tokens = to_speech(value, report.converted)
+        report.residue.extend(find_residue(tokens))
+        if not plain(tokens).strip():
+            continue
+        out.append(Token(SSML, f'<break time="{BREAK_LIST_ITEM}"/>'))
+        out.append(Token(SSML, "<p>"))
+        if label:
+            out.extend(done(label + ". "))
+        out.extend(_retokenise_trimmed(tokens))
+        out.append(Token(SSML, "</p>"))
+    report.converted["facts-block"] += 1
+    return out
+
+
 def _list_items(lines: Sequence[str]) -> list[str]:
     """Flatten a (possibly nested) list into one string per item."""
     items: list[str] = []
@@ -1652,6 +1700,13 @@ def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list
             continue
 
         if block.kind == "code":
+            # A ```facts block is prose, not a diagram — read it. Everything
+            # else fenced (rink diagrams, ASCII tables) genuinely cannot be
+            # spoken and keeps the placeholder below.
+            if block.lines and block.lines[0].strip().lower().startswith("```facts"):
+                current.tokens.extend(render_facts(block, report))
+                current.tokens.append(Token(SSML, f'<break time="{BREAK_PARAGRAPH}"/>'))
+                continue
             report.dropped["code-block"] += 1
             current.tokens.extend(
                 [Token(SSML, "<p>")]
