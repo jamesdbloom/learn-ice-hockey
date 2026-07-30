@@ -109,7 +109,8 @@ Rule: Shooting the puck directly out of play from your defending zone is a two-m
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Rule: After your own icing your line cannot change and your team cannot take a timeout under NHL and IIHF rules (81.4, 87.1) — USA Hockey blocks neither
 Read: "Ice it" is normal on the kill and expensive at even strength — the shorthanded exemption is removed by Rule 81.6 and restricted by classification under USA Hockey Rule 624(b)(1)
-Rule: A puck dumped wide has to be retrieved by a defenceman, because the goalie may only play it behind the goal line inside the trapezoid under NHL and IIHF rules — though in England and Wales that is unsettled, so plan as though their goalie may come for it
+Rule: A puck dumped wide has to be retrieved by a defenceman — under NHL and IIHF rules the goalie may only play it behind the goal line inside the trapezoid (sole exception: skate contact with the crease)
+Rule: In England and Wales that status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say the restricted area is not currently enforced, so plan as though their goalie may come for it
 Convention: "Eat it" carries two unverified meanings — say "eat the puck" for the board battle and something else for the clock
 ```
 
@@ -321,7 +322,7 @@ Action: Give the retriever "time" or "man on" first, and add the count with "one
 Options: "Up" sends it up the strong side, "over" switches it behind the net, "leave it" parks it behind the net for a teammate wheeling through
 Convention: Prefer "leave it" to "set" — two syllables are easier to tell from "up" and "over" at speed in a noisy rink
 Key: A goalie shouting "shot" means they have the shooter and you take the pass — stay in the passing lane, it is not a warning that a shot is coming
-Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid — markings Rule 1.8, two-minute delay of game under Rules 27.8 and 63.2(viii)
+Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid — markings Rule 1.8, two-minute delay of game under Rules 27.8 and 63.2(viii) — the sole exception is a goalie keeping skate contact with the crease
 Read: Most rec, beer-league and youth associations use no trapezoid, and there your goalie becomes a genuine third puck-handler behind the net
 Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8, and in England and Wales its status is unsettled — England Ice Hockey's Rules & Regulations 22.3 (2024-25) say it is "not currently enforced" and the 2025-26 In-House Rules do not mention it
 Read: Until your league says otherwise, call it as though it binds — your goalie may not play a puck behind the goal line outside the trapezoid, so "leave it" is only on where the puck is

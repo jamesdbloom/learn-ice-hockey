@@ -498,12 +498,12 @@ A tip or deflection changes the puck's direction a few feet in front of you, and
 ### The trapezoid — the rule that defines what you can do
 
 ```facts
-Rule: You may not play the puck behind the goal line outside the trapezoid — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
+Rule: You may not play the puck behind the goal line outside the trapezoid — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii)) — the sole exception is a goalie keeping skate contact with the crease
 Rule: The IIHF rule is the same but is numbered 27.7, not 27.8 (IIHF Rules 27.7 and 63.2(VIII)); in England and Wales its status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced", so assume it binds and ask your league
 Rule: The determining factor is the position of the puck, not of your body (NHL Rule 27.8; IIHF Rule 27.7)
 Rule: The one exception is keeping skate contact with your crease — none for a teammate nearby, for pressure, or for the puck coming to you (NHL Rule 27.8; IIHF Rule 27.7)
 Key: It applies in the NHL, the KHL and IIHF play; most rec, beer-league and youth associations outside Britain do not use it
-Rule: USA Hockey has no trapezoid but restricts where you may freeze the puck, on the same two minutes — and Rule 614(c) has four triggers, not one
+Rule: USA Hockey has no trapezoid but restricts where you may freeze the puck, on the same two minutes — and Rule 614(c) has four triggers, not one — the sole exception is a goalie keeping skate contact with the crease
 Rule: Freezing with the puck behind the goal line and your body entirely outside the crease is a minor wherever you are (USA Hockey Rule 614(c)(1))
 Rule: So is freezing outside the "goalkeeper's privileged" area, which reaches back from the faceoff-dot line but excludes the corners (USA Hockey Rule 614(c)(3))
 Rule: In front of the goal line there is no restriction, beyond not participating in the play past the centre red line (NHL Rule 27.7; IIHF Rule 27.6)

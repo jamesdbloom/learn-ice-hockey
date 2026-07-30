@@ -622,10 +622,10 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 ```facts
 Options: The quick rim, the direct exit, the reverse, or off the glass and out
 Key: Every opposing forechecker is stationary at the whistle, so a hard rim or a direct exit is past them before they move
-Rule: Under NHL, KHL and IIHF rules your goalie may only play the puck behind the goal line inside the trapezoid (Rule 1.8; penalty 27.8 / 63.2(viii))
+Rule: Under NHL, KHL and IIHF rules your goalie may only play the puck behind the goal line inside the trapezoid (Rule 1.8; penalty 27.8 / 63.2(viii)) — the sole exception is a goalie keeping skate contact with the crease
 Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" in England and Wales — either way, keep your goalie inside it
 Read: Play it as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
-Rule: USA Hockey has no trapezoid, but Rule 614(c) bars the goalie covering the puck in the corners
+Rule: USA Hockey has no trapezoid, but Rule 614(c) bars the goalie covering the puck in the corners — the sole exception is a goalie keeping skate contact with the crease
 Never: Rim it halfway — hard enough to reach your winger, or tight enough for the goalie to stop it behind the net
 Read: Use the reverse against a team that overloads the boards side
 Action: Call off the glass and out when you are tired, pinned, or a man down

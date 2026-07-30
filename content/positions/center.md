@@ -311,7 +311,7 @@ Technique: Drive straight at the carrier and take a deliberate angle, pushing th
 Goal: Force a turnover or a bad outlet pass, and keep the opposing defence under constant pressure
 Key: F1/F2/F3 are roles, not people — if a winger beats you to the puck they are F1 and you take the support role, immediately
 Convention: The 2-1-2 with F3 on the weak side is one system among several, not a law — the stacked variant shades F3 to the puck side and concedes the far-side breakout
-Rule: Under NHL and IIHF rules the opposing goalie may play the puck behind the goal line only inside the trapezoid — most rec, beer-league and youth associations have none
+Rule: Under NHL and IIHF rules the opposing goalie may play the puck behind the goal line only inside the trapezoid — most rec, beer-league and youth associations have none — the sole exception is a goalie keeping skate contact with the crease
 Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" in England and Wales — so plan as though their goalie may come for a dumped puck
 Action: Aim your dump-ins away from the trapezoid, so a defenceman has to retrieve the puck with you arriving on them
 ```

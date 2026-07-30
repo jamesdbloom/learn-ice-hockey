@@ -485,7 +485,7 @@ Priority: When a fourth attacker arrives low, somebody gives up their area and i
 ```facts
 Priority: Body first, puck second — tie up the most dangerous stick before you look for the puck
 Never: Lunge at the puck through your goalie — you will knock the puck loose or knock them off their post
-Rule: Your stick is legal, your glove and your chest are not — covering the puck inside your own crease is a penalty shot (NHL Rule 67.4)
+Rule: A defending player other than the goalie who covers the puck inside their own crease gives up a penalty shot — your stick is legal, your glove and chest are not (NHL Rule 67.4)
 Rule: You may hand-pass in your own zone (NHL Rule 79.2), and the test is where the puck is, not where the skates are
 Never: Hand-pass it out to a breaking winger — it is illegal the moment the puck itself has left the zone
 Technique: Stay on your feet as long as possible — a defender on the ice is out of the play for two seconds, which is the whole scramble
@@ -552,7 +552,7 @@ Rule: Off the glass and out is legal; putting the puck directly out of play from
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Risk: Ice it at even strength and the puck comes straight back — your tired line cannot change and cannot take a timeout
 Rule: Shorthanded you may ice the puck freely (NHL Rule 81.6), but two carve-outs apply under USA Hockey and the NHL — check your league; Special Teams owns both
-Rule: Your goalie may only play the puck behind the goal line inside the trapezoid (NHL Rule 27.8) — most rec, beer-league and youth associations don't use it, so find out
+Rule: Your goalie may only play the puck behind the goal line inside the trapezoid (NHL Rule 27.8) — most rec, beer-league and youth associations don't use it, so find out — the sole exception is a goalie keeping skate contact with the crease
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8 — and in England and Wales its status is unsettled, because England Ice Hockey's Rules & Regulations 22.3 say the restricted area is "not currently enforced"; keep your goalie inside it and ask your league
 Never: Cheat up the ice — the puck should leave the zone before your third forward does
 ```

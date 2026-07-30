@@ -822,7 +822,7 @@ After a TV time-out, an injury delay, a video review or an intermission, everybo
 Key: The test is whether the thing you are preventing is more likely to become a goal than the power play you give up
 Options: Stopping an odd-man rush in the last minutes of a close game, or preventing a certain goal
 Rule: Fouling a breakaway from behind gives up a penalty shot, not a power play (NHL Rule 57.3)
-Rule: Covering the puck in your own crease is a penalty shot (NHL Rule 67.4) — still better than the goal it prevented
+Rule: A skater — not the goalkeeper — covering the puck in their own crease is a penalty shot (NHL Rule 67.4) — still better than the goal it prevented
 Never: Foul anything once your own goalie is pulled — those trades become awarded goals (NHL Rules 25.1, 57.4, 67.5)
 Never: Take one for retaliation, for sending a message, after the whistle, or at any point in the first period
 ```

@@ -92,8 +92,8 @@ Technique: Shield the puck with your body — don't panic
 Options: Rim to your partner or the far-side winger, reverse it, or hold it tight behind the net until a teammate gets open
 Read: Rim to beat a forechecker sealing you against the boards; reverse to beat one who has over-committed and skated past you
 Never: Carry through the slot under pressure — a turnover in the highest-danger area is a direct scoring chance against
-Rule: Your goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii))
-Rule: Take the trapezoid's dimensions from Rule 1.8, never from Rule 27.8 — 27.8's wording is stale, left over from before the trapezoid was widened in 2014-15
+Rule: Your goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii)) — the sole exception is a goalie keeping skate contact with the crease
+Rule: Take the trapezoid's dimensions from Rule 1.8, never from Rule 27.8 — 27.8's wording is stale, left over from before the trapezoid was widened in 2014-15 — the sole exception is a goalie keeping skate contact with the crease
 Key: The NHL, KHL and IIHF play a trapezoid; most rec, beer-league and youth associations outside Britain do not — know which you are in
 Rule: The IIHF number is 27.7, not 27.8, and in England and Wales the status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" while the In-House Rules are silent, so assume it binds and ask your league
 Action: Plan your retrieval route before the puck arrives, and aim rims where a teammate can meet them, not into the corner

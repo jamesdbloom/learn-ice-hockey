@@ -873,7 +873,7 @@ Faceoffs matter disproportionately when the numbers are uneven: **with a man adv
 ```facts
 Action: On the kill, tell your goalie what you are conceding — a kill that never says this makes its goalie guess
 Action: On the kill, agree the retrieval before it starts; they can stop a rim behind the net and leave it stationary for you
-Rule: Under NHL, KHL and IIHF rules your goalie may only play the puck behind the goal line inside the trapezoid; most rec and youth leagues have none
+Rule: Under NHL, KHL and IIHF rules your goalie may only play the puck behind the goal line inside the trapezoid; most rec and youth leagues have none — the sole exception is a goalie keeping skate contact with the crease
 Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" in England and Wales — either way, keep your goalie inside it
 Read: Play it as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
 Action: On the power play, use them as a reset on a regroup and as your safety on a failed entry

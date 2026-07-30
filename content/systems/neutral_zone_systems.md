@@ -444,7 +444,7 @@ Action: Take the puck all the way back below your own blue line, sometimes behin
 Read: Use it when a neutral zone reset is not enough — their forecheck has re-formed across the middle, or your forwards need time to sort themselves out
 Risk: A turnover below your own goal line is a scoring chance — the low regroup is a possession play, not a panic play
 Never: Use it when you are panicking — off the glass and out is the correct answer instead
-Rule: Under NHL, KHL and IIHF rules your goalie may not play the puck behind the goal line outside the trapezoid (NHL Rule 1.8; penalty 27.8 / 63.2(viii)) — most rec and youth leagues have none
+Rule: Under NHL, KHL and IIHF rules your goalie may not play the puck behind the goal line outside the trapezoid (NHL Rule 1.8; penalty 27.8 / 63.2(viii)) — most rec and youth leagues have none — the sole exception is a goalie keeping skate contact with the crease
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8 — and in England and Wales its status is unsettled, because England Ice Hockey's Rules & Regulations 22.3 say the restricted area is "not currently enforced"; keep your goalie inside it and ask your league
 ```
 

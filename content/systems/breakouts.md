@@ -813,7 +813,7 @@ The standard goalie vocabulary — your team may vary it, and should agree it in
 ## 10. The Trapezoid and Retrieval
 
 ```facts
-Rule: The goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game, and "the determining factor shall be the position of the puck" (NHL Rules 27.8 and 63.2(viii))
+Rule: The goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game, and "the determining factor shall be the position of the puck" (NHL Rules 27.8 and 63.2(viii)) (sole exception: skate contact with the crease)
 Rule: Exactly one exception, the NOTE to 63.2(viii) — no minor is assessed "when a goalkeeper plays the puck while maintaining skate contact with his goal crease"; there is no teammate-based exception
 Never: Take the geometry from Rule 27.8 — its six-foot figure is stale, describing the pre-2014 trapezoid; Rule 1.8 describes the lines actually painted
 Rule: Applies in the NHL, the KHL and under the IIHF book (IIHF Rule 27.7); in England and Wales the status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced", so assume it binds and ask your league
