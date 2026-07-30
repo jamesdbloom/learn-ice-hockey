@@ -1,0 +1,94 @@
+{
+  "$comment": [
+    "The rink as coordinates, and the corpus's position vocabulary expressed against it.",
+    "",
+    "OWNERSHIP. Every dimension here is owned by content/foundation/rink_map_and_glossary.md.",
+    "This file does not get to disagree with it: scripts/check_geometry.py reads the numbers",
+    "out of that document and fails if they diverge. If a dimension is wrong, fix the owner",
+    "first and this file second — never the other way round.",
+    "",
+    "COORDINATES. Origin at centre ice. x runs along the length, -100 to +100 (200 ft).",
+    "y runs across the width, -42.5 to +42.5 (85 ft). Positive x is the attacking end when a",
+    "diagram is drawn left-to-right; positive y is the side the diagram calls 'right'.",
+    "Units are feet throughout, because that is the unit the owning document leads with.",
+    "",
+    "WHY NAMED POSITIONS. A diagram source should read like the corpus, not like a drawing",
+    "program: 'half-wall-right', not '[69, 36]'. The named table is also the single place the",
+    "corpus's spatial vocabulary is defined, which is what stops 'the wall' meaning two things.",
+    "Anything relational rather than positional — 'quiet ice', 'the house', 'behind the wall'",
+    "in its defensive-line sense — is deliberately absent. Those are not points on a rink."
+  ],
+
+  "units": "ft",
+  "source": "content/foundation/rink_map_and_glossary.md",
+  "book": "NHL Official Rules 2025-2026",
+
+  "sheet": {
+    "length": 200,
+    "width": 85,
+    "corner_radius": 28
+  },
+
+  "lines": {
+    "goal_line_from_end_boards": 11,
+    "blue_line_to_goal_line": 64,
+    "neutral_zone_length": 50,
+    "goal_line_x": 89,
+    "blue_line_x": 25,
+    "centre_line_x": 0
+  },
+
+  "faceoff": {
+    "end_zone_dot_from_goal_line": 20,
+    "end_zone_dot_x": 69,
+    "dot_separation": 44,
+    "dot_y": 22,
+    "neutral_dot_from_blue_line": 5,
+    "neutral_dot_x": 30,
+    "circle_radius": 15,
+    "hash_length": 2,
+    "hash_separation": 5.583
+  },
+
+  "goal": {
+    "width": 6,
+    "height": 4,
+    "post_y": 3,
+    "crease_width": 8,
+    "crease_depth": 6,
+    "crease_arc_radius": 6
+  },
+
+  "trapezoid": {
+    "$comment": "Rule 1.8 figures. NEVER take these from Rule 27.8, which is stale pre-2014 wording — the owning document spends four paragraphs on why.",
+    "from_post_at_goal_line": 8,
+    "from_post_at_end_boards": 11,
+    "width_at_goal_line": 22,
+    "width_at_end_boards": 28,
+    "rule": "NHL 1.8"
+  },
+
+  "positions": {
+    "$comment": "Named positions in the corpus's own vocabulary. Sides are given as -1/+1 multipliers on y, and ends as -1/+1 on x, so one entry serves both halves of the ice.",
+
+    "centre-ice":        { "x": 0,   "y": 0,    "note": "the centre dot" },
+    "centre-point":      { "x": 25,  "y": 0,    "note": "the blue line, middle" },
+    "point":             { "x": 25,  "y": 20,   "sided": true, "note": "at the blue line" },
+    "half-wall":         { "x": 69,  "y": 36,   "sided": true, "note": "the boards level with the faceoff dot" },
+    "faceoff-dot":       { "x": 69,  "y": 22,   "sided": true, "note": "end-zone dot" },
+    "neutral-dot":       { "x": 30,  "y": 22,   "sided": true },
+    "high-slot":         { "x": 69,  "y": 0,    "note": "dots to the top of the circles" },
+    "slot":              { "x": 76,  "y": 0,    "note": "between the circles, in front of the net" },
+    "goalmouth":         { "x": 85,  "y": 0,    "note": "immediate net front" },
+    "net-front":         { "x": 84,  "y": 0 },
+    "bumper":            { "x": 71,  "y": 0,    "note": "the middle player of a 1-3-1 — a role, not a fixed spot" },
+    "crease":            { "x": 86,  "y": 0 },
+    "behind-net":        { "x": 94,  "y": 0 },
+    "corner":            { "x": 82,  "y": 34,   "sided": true },
+    "goal-line":         { "x": 89,  "y": 0 },
+    "blue-line":         { "x": 25,  "y": 0 },
+    "top-of-circle":     { "x": 54,  "y": 22,   "sided": true },
+    "boards":            { "x": 69,  "y": 42.5, "sided": true },
+    "neutral-zone-mid":  { "x": 12,  "y": 0 }
+  }
+}

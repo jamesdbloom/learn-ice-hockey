@@ -862,6 +862,33 @@ Errors the body above does not cover — the ones that survive knowing the syste
 - **Quoting Rule 27.8's six feet for the trapezoid.** The painted lines are Rule 1.8's — eight feet from each post at the goal line. Rule 27.8's six feet is not an error in arithmetic; it is an accurate description of the *pre-2014* trapezoid that was never updated.
 - **Five players running five different plays.** Not a skill failure. A communication failure, and the root cause of most of the above.
 
+## Check yourself
+
+*Answer before you read on. Producing an answer and getting it wrong is worth more
+than recognising a right one, which is what the Key Takeaways below give you.
+Every answer is in this document — the section is named beside it.*
+
+1. Your partner has the puck behind your own net and you are on the far side.
+   Where do you go, and what is the one route you never take to get there?
+   *(§D-to-D)*
+
+2. You are shorthanded and under pressure in your own end. You fire it the length
+   of the ice. What happens — and what would have to be true for the answer to
+   change? *(§Overview, the icing facts)*
+
+3. Name three of the nine breakout options. For one of them, say what you are
+   reading that makes it the right choice rather than the others. *(§the nine
+   options)*
+
+4. Someone shouts "over". What are the two things they might mean, and how do you
+   tell which? *(§Over)*
+
+5. You are the winger on the wall waiting for an outlet and the forechecker is
+   arriving behind you. What have you already had to decide? *(§Wheel, and
+   [Body Contact and Battles](../technique/body_contact_and_battles.md) §6)*
+
+---
+
 ## Key Takeaways
 
 1. **A controlled exit is worth roughly four times what a dump-out is.** Tracked NHL data puts controlled exits at about 89% follow-on entries versus about 20% for unrecovered dump-outs. Default to possession; clear on a read, not on reflex.
