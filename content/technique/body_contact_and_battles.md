@@ -568,6 +568,20 @@ Do not remove the helmet, and do not roll or lift the player, unless you are tra
 
 **Do not wait for these symptoms to appear before applying the rule.** The concussion tool that belongs on your phone, CRT6, says to *"assume a possible spinal cord injury in all cases of head injury"* — neck pain or tenderness is itself a red flag that means an ambulance. The full red-flag list, and what to do in the hours afterwards, is in [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md). Head injury and neck injury are the same call at the rink: nobody moves, somebody phones.
 
+
+### And the case where they get up
+
+A player who takes a hit to the head and stands up is the far commoner case, and
+the rule is the same in every league: **a suspected concussion means off the ice,
+no return that day, and a medical professional before they play again.** You do
+not have to have been knocked out, and loss of consciousness is not typical of a
+concussion. Do not let the player decide.
+
+The ten red flags that mean an ambulance, the symptoms short of that, and what has
+to happen in the hours afterwards are in
+[Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md),
+which owns all of it.
+
 ---
 
 ## 7. Board Battles
@@ -619,6 +633,7 @@ So: put the puck between your skates and the wall, put your body on the outside 
 ```facts
 Key: In a real battle your stick is tied up and your hands are busy — your feet are free
 Rule: You may kick the puck in all zones; you just cannot score with a distinct kicking motion (NHL Rule 49.2)
+Rule: Kick the puck, never a player — NHL 49.3 makes kicking or attempting to kick an opponent a match penalty *whether or not an injury occurs*, and USA Hockey 627(a) makes even a skate push-off a major plus a game misconduct
 Action: Kick it out with the inside of your skate — back to a supporting teammate, along the wall, or out to your own stick
 Action: Trap it — skates wide with the puck under you means nobody else can have it either
 Technique: Practise this deliberately — almost no amateur does, and it wins pucks every game
@@ -633,6 +648,8 @@ In a real board battle your stick is usually tied up, your hands are busy, and t
 - **Trap it.** Standing over the puck with your skates wide, with the puck under you, means nobody else can have it either.
 
 Practise this deliberately. Almost no amateur does, and it wins pucks every single game.
+
+**⚠️ One line you cannot cross, and it is in the same rule.** NHL Rule 49.1 defines kicking as using the skate *"to propel the puck **or to contact an opponent**"*, and 49.3 makes kicking or attempting to kick a player a **match penalty** — ejection — *"whether or not an injury occurs"*. USA Hockey goes further: Rule 627(a) makes even a non-kicking **push-off with the skate** a major plus a game misconduct. So keep the motion small, keep it at the puck, and if you cannot see the puck, do not swing your blade at where you think it is.
 
 ### When to just pin it
 
@@ -1043,6 +1060,7 @@ A team that plays hard, wins battles and takes no penalties is far more physical
 - **Winding up from across the ice to deliver a check.** Both **USA Hockey** and **Hockey Canada** put a stride count in writing, and **they are not the same count** — USA Hockey (Standard of Play — Body Checking, and Rule 607) penalises taking *"more than two strides"*, while Hockey Canada (Rule 7.4) defines charging as building up speed by taking *"two or more strides"*. So the two strides that are your ceiling under USA Hockey are already the offence under Hockey Canada. **IIHF Rule 42.1 — the British test** — names the same act without a count, penalising a player who *"builds up speed by taking multiple strides immediately prior to making contact."* The NHL's Rule 42.1 sets no number at all and judges charging on "distance traveled" instead. Anything more than a couple of strides of build-up is charging in any book. And for an **open-ice** check USA Hockey's own coaching manual is tighter still — one stride, or you do not have the gap.
 - **Checking a player who is already in a battle with a teammate.** **USA Hockey defines them as defenceless** in so many words — *"when two or more players are physically engaged for control of the puck along the boards, they are considered to be vulnerable or defenseless"* — and says the check "must be penalized". **The IIHF book has no board-battle clause but reaches the same hit by another route:** its glossary makes a player who has neither possession nor preparation for the hit *"vulnerable"*, and *"a bodycheck to an opponent who is vulnerable is automatically considered reckless even if that bodycheck would be considered legal to a non-vulnerable opponent"* — and reckless is the trigger for the major-and-game-misconduct tier. So under the British book it is not a free hit either. Only the **NHL** rulebook leaves it purely to boarding or roughing at the referee's judgement.
 - **Retaliating after the whistle.** You cannot count on the officials having seen the first one, and USA Hockey rewards *not* retaliating explicitly (Rule 615(a)). Take the hit and skate away.
+- **Sending a player back out after a head knock because they were not knocked out.** Loss of consciousness is not required for a concussion and is not typical of one. Suspected concussion means off the ice and no return that day.
 - **Helping up a player who may have hurt their neck.** The most common and most damaging mistake made after a spinal impact. Do not move them and do not let them move: call for medical help, check airway and breathing, reassure them, keep them warm and immobile — head and neck especially — and leave the helmet on. See [the on-ice spinal-injury response above](#if-it-happens-anyway--a-suspected-neck-injury-on-the-ice), which is the most important section in this document.
 
 ---
@@ -1055,7 +1073,7 @@ A team that plays hard, wins battles and takes no penalties is far more physical
 4. **You are entitled to the ice you are standing on.** You can block a path, stand your ground, box out and lengthen an opponent's route to the puck — as long as you do not use your stick to make yourself wider or your free hand to hold.
 5. **A legal check is trunk on trunk, above their knees and below their shoulders, on a player who has the puck, to win the puck.** That much is common to every rulebook. The extra clause worth adopting is **USA Hockey's**, and it is a written enforcement standard rather than a law of hockey everywhere: *"proper body checking technique starts with stick on puck, therefore the stick blade of the player delivering the check must be below the knees"* (Standard of Play — Body Checking). The **NHL and IIHF rulebooks contain no such requirement** — the IIHF glossary defines the legal check in almost the same words as USA Hockey but stops at "trunk of the body… above the knees and at or below the shoulders" — but treat it as your checklist anyway: a stick that is down means hands, elbows and shoulder all arrive where they should. Same story on the wind-up — **two strides** is USA Hockey's and Hockey Canada's written number, **IIHF Rule 42.1 says "multiple strides" without counting them**, NHL Rule 42.1 judges charging on "distance traveled" with no figure attached, and USA Hockey's own coaching manual cuts it to **one stride for an open-ice check**.
 6. **Both sides of the collision have a non-negotiable rule.** Giving it: never hit a player from behind, near the head, or turned toward the boards — checking from behind has no minor-penalty option in the NHL or IIHF, it is a major with an automatic game misconduct, and the onus is always on you. Taking it: keep your head up, chin off your chest, and never turn your back to the wall.
-7. **If a player may have hurt their neck, nobody moves and somebody phones — and this is the most important paragraph in the document.** Do not help them up. Call for immediate medical help, observe the ABCs, reassure them, keep them warm, and instruct and immobilise them so they do not move — head and neck especially. Leave the helmet on. Assume a possible spinal injury in every head injury: neck pain or tenderness is itself an ambulance. Full response in [If it happens anyway](#if-it-happens-anyway--a-suspected-neck-injury-on-the-ice).
+7. **If a player may have hurt their head or neck, nobody moves and somebody phones — and this is the most important paragraph in the document.** Do not help them up. Call for immediate medical help, observe the ABCs, reassure them, keep them warm, and instruct and immobilise them so they do not move — head and neck especially. Leave the helmet on. Assume a possible spinal injury in every head injury: neck pain or tenderness is itself an ambulance. Full response in [If it happens anyway](#if-it-happens-anyway--a-suspected-neck-injury-on-the-ice). **And the commoner case — they get up.** A suspected concussion means off the ice and no return that day, whether or not they were knocked out; do not let the player decide.
 8. **Go into the boards on an angle, skates parallel, and take it on your forearm and hip** — not the point of your shoulder. If you are already facing the wall and cannot turn, get your gloves and stick up and spread out on the glass; that is damage limitation, not the position you were aiming for.
 9. **Board and corner battles are usually won by the lower player, not the stronger one, and by the second man staying out of the pile.** Wide base, bent knees, body between opponent and puck, wall on the far side; use your skates to kick the puck free when your stick is tied up. In the corner, first man engages and stops the puck, second man reads where it squirts. Whose corner it is in your own end is a coaching choice — under low zone collapse it is the strong-side D and centre, under man-on-man a winger comes down. Find out which you play.
 10. **At the net front, control sticks before you get physical.** A stick lift achieves what a cross-check does, and taken below their bottom hand it costs far less — but at or near the hands it is hooking under the IIHF and USA Hockey books, and the net front is where the bottom hand is easiest to catch. Note that keeping your blade on the ice does **not** make a shaft shove legal outside USA Hockey — that's a widespread myth.
