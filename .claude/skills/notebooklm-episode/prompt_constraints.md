@@ -31,10 +31,10 @@ or confidence, **these win**.
    differences inline. Most listeners are **not** under NHL rules: North
    American rec and youth players are under USA Hockey, and British listeners
    are under the IIHF book, plus — **in England Ice Hockey, SIHA and BUIHA
-   competition** — the **In-House Rules, issued by England Ice Hockey and the
-   Scottish Ice Hockey Association and adopted by the British Universities Ice
-   Hockey Association**. One document, and by its own words it applies "in
-   England and Scotland". Do not name England Ice Hockey alone; a Scottish or
+   competition** — the **In-House Rules**, which England Ice Hockey, the
+   Scottish Ice Hockey Association and the British Universities Ice Hockey
+   Association all apply — the document names no issuing body, so do not invent
+   one. By its own words it applies "in England and Scotland". Do not name England Ice Hockey alone; a Scottish or
    university listener is not under an English governing body.
 
    In the Elite League the **EIHL Casebook** sits on top instead — and **you

@@ -15,13 +15,30 @@ What Britain adds on top is a short layer of local amendment:
 | You play in | Your rules are |
 |---|---|
 | EIHL (Elite League) | IIHF Rule Book, plus the **EIHL Casebook** where the League's interpretation differs |
-| NIHL, and the English and Scottish recreational and junior game | IIHF Rule Book, plus the **In-House Rules** issued by England Ice Hockey and the SIHA |
+| NIHL, and the English and Scottish recreational and junior game | IIHF Rule Book, plus the **In-House Rules**, applied in England Ice Hockey and SIHA competition |
 | BUIHA (university) | IIHF Rule Book, plus the same In-House Rules |
 | GB national teams | IIHF Rule Book, unamended |
 
 The In-House Rules say so in terms: England Ice Hockey, the Scottish Ice Hockey Association and the British Universities Ice Hockey Association *"adopt the IIHF Official Rule Book 2025–2026 (Version 1.1, published July 2025) as the foundation for the rules of the game to be applied in England and Scotland."*
 
 **Note the version number — this corpus now reads that edition.** Every IIHF rule quoted anywhere in these documents is verified against the IIHF Official Rule Book 2025/26 **Version 1.1, July 2025**, the edition the In-House Rules adopt. It was checked against the superseded v1.0 line by line on 30 July 2026: **all 472 rule numbers are identical in both**, none was renumbered, and all 49 passages this corpus quotes from the IIHF book appear verbatim in v1.1. So nothing here rests on a superseded revision. (The IIHF's own site serves only v1.0 at its published link and its rulebook index is behind a bot challenge; the v1.1 copy read here came from the Royal Belgian Ice Hockey Federation's mirror, and its version line and rule set were verified on receipt.)
+
+> **⚠️ Nobody is named as issuing them, and this document does not guess.** The
+> In-House Rules carry no "issued by", no publisher, no author and no copyright
+> line anywhere in their eighteen pages — the cover says only *"IN-HOUSE RULES,
+> 2025-26 SEASON, Revision 1"*. All three associations appear in the opening
+> sentence as **adopting the IIHF book**, and the only place any body is linked
+> to the verb *issue* is a separate sentence about **Rule Bulletins**: *"The EIH
+> and SIHA may also issue Rule Bulletins from time to time."* Amendments to the
+> document itself are described in the passive, with no agent.
+>
+> So this guide says the three associations **apply** them, which is what the
+> text supports, and does not say who issues them, which it does not. Earlier
+> versions of these documents said "issued jointly by" all three, and the style
+> guide said it too; both were inferences dressed as fact. Note the sister
+> document does name itself — England Ice Hockey's *Rules & Regulations* opens
+> *"EIH has produced this document"* — so the silence here reads as deliberate
+> rather than accidental. **Verified against the primary text, 29 July 2026.**
 
 > **⚠️ The In-House Rules are not a rule book.** They are amendments, and they say it themselves: *"This document is to be read alongside the IIHF Rule Book and is not intended to serve as a standalone rule book."* You need both. They are also the **overriding** interpretation — where they differ from the IIHF book, they win domestically.
 

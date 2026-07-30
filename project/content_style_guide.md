@@ -55,8 +55,10 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 **Every level of hockey in Britain runs on the IIHF Rule Book.** The Elite
 League, the NIHL, the English and Scottish recreational and junior game,
 university hockey and the GB national teams. On top of it sit local amendments:
-the **In-House Rules** issued jointly by England Ice Hockey, the SIHA and the
-BUIHA, or the **EIHL Casebook** in the Elite League.
+the **In-House Rules**, which England Ice Hockey, the SIHA and the BUIHA all
+apply, or the **EIHL Casebook** in the Elite League. (The In-House Rules name no
+issuing body anywhere in them — see [`uk_rules.md`](../content/foundation/uk_rules.md),
+which owns this and records the evidence. Do not write "issued by".)
 
 The In-House Rules state it directly — England Ice Hockey, the SIHA and the
 BUIHA *"adopt the IIHF Official Rule Book 2025–2026 (Version 1.1, published July

@@ -174,9 +174,10 @@ criticals and **every one was an omission** — and a checklist that only asks
 - [ ] Does any rule appear without the exception its source attaches to it?
 - [ ] Is a rule-set difference stated as universal, or is the book named?
       (Most listeners are under USA Hockey. British listeners are under the IIHF
-      book plus, in EIH/SIHA/BUIHA competition, the In-House Rules **issued by
-      England Ice Hockey and the SIHA and adopted by the BUIHA** — never
-      "England Ice Hockey" alone. The
+      book plus, in EIH/SIHA/BUIHA competition, the In-House Rules, **applied by
+      England Ice Hockey, the SIHA and the BUIHA alike** — never "England Ice
+      Hockey" alone, and never "issued by" anyone, because the document names no
+      issuing body. The
       EIHL Casebook applies in the Elite League and **its contents must not be
       described**; GB teams run the IIHF book unamended; Northern Ireland is
       deliberately not covered.
