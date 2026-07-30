@@ -767,7 +767,8 @@ Under **Rule 19.1**, when **one minor is assessed to a player on each team at th
 ```facts
 Rule: Coincidental minors of equal duration cancel; any difference in time is served normally (NHL Rule 19)
 Rule: A second pair of coincidental minors while already 4-on-4 leaves strength unchanged, because the first pair is still on the clock (NHL Rule 19.1)
-Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by other routes (a minor against a major at the same stoppage), just not by this one
+Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by a minor against a major at the same stoppage (Appendix IV, Table 15), just not by this one
+Rule: But not late — IIHF 19.3 makes that same pairing 5-on-4 in the last five minutes of regulation and at any time in overtime, the differential served as a major
 Rule: Penalised players in coincidental situations cannot leave the box until the first stoppage after their penalty expires (NHL Rule 19)
 Never: Retaliate — you convert your opponent's mistake into no advantage at all
 ```

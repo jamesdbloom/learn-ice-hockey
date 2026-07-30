@@ -776,7 +776,8 @@ NHL regular-season overtime is **five minutes of 3-on-3, sudden death**, followe
 
 ```facts
 Rule: One minor to each team at the same stoppage, with nothing else on the clocks, is served without substitution and both teams play 4-on-4 (NHL Rule 19.1)
-Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by other routes (a minor against a major at the same stoppage), just not by this one
+Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by a minor against a major at the same stoppage (Appendix IV, Table 15), just not by this one
+Rule: But not late — IIHF 19.3 makes that same pairing 5-on-4 in the last five minutes of regulation and at any time in overtime, the differential served as a major
 Rule: If at least one team was already shorthanded, substitution is immediate and the on-ice strength does not change (NHL Rule 19.1)
 Rule: Coincidental minors make neither team shorthanded, so a goal scored during 4-on-4 releases nobody from the box (NHL Rule 16.2)
 Rule: Where several penalties are assessed at once, equal majors cancel first, then equal minors, and any remaining differential is served normally (NHL Rule 19.5)
