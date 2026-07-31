@@ -72,3 +72,10 @@ site/public/diagrams/
 # derive from the coordinate table the corpus owns. Kept out of the history rather
 # than deleted, because it is not this project's file to delete.
 /Icehockeylayout.svg
+
+# Local-only working notes. Anything named *.local.md is a scratch plan, analysis or
+# report that is deliberately not part of the published record — it is thinking, not
+# a corpus artefact, and the review process does not gate it. Keep it out of history
+# so nobody has to decide later whether a half-formed plan is something the project
+# committed to.
+*.local.md
