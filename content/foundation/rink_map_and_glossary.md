@@ -9,11 +9,15 @@
 
 ## Overview
 
-This is the map and the dictionary for everything else here. Every other document assumes you know where the half-wall is, what "weak-side" means, and why F1 is a job rather than a person — and every other document links here rather than re-explaining it.
+Hockey's vocabulary is spatial: almost every instruction you will ever be given on the ice is a location plus a reason. Learn the locations and the instructions start to make sense on their own.
 
-Read it once end to end. After that, use it as a lookup. If a term appears anywhere in these documents and you are not certain what it means, it is defined here.
+**The hard part is that most of those location words are relative, not absolute.** "High", "low", "strong-side" and "defensive zone" all change meaning depending on which team you are on and where the puck is at that moment. The same patch of ice is high to one player and low to another; the end you are defending swaps every period; and the strong side — wherever the puck happens to be — flips several times in a minute, which is why defence partners have to keep talking. Mistaking a relative word for a fixed place on the map is how a player ends up in the wrong half of the rink while doing exactly what they were told, and it is the single biggest source of beginner confusion.
 
-Two things are worth saying up front. First, **hockey's vocabulary is spatial** — almost every instruction you will ever be given is a location plus a reason. Learn the locations and the instructions start to make sense on their own. Second, **most location words are relative, not absolute.** "High", "low", "strong-side" and "defensive zone" all change meaning depending on which team you are on and where the puck is right now. That relativity is the single biggest source of beginner confusion, and it is dealt with explicitly below.
+**Job titles behave the same way.** F1, F2 and F3 are roles defined by the order players arrive, not names for particular people — whoever gets there first is F1, and it will be somebody else the next time down the ice.
+
+**Do not assume the rink you are standing in matches the diagrams.** The dimensions below come from rulebooks, and rulebooks describe rinks built to them; most recreational, community and older sheets were not. In EIH and SIHA fixtures the smaller sheet is the governing body's own position rather than a local quirk — the In-House Rules authorise rinks below 56 m × 26 m for all levels of hockey there, naming three that are permitted only up to U16. A sheet under that threshold is shorter than the only length the international (IIHF) rulebook gives, 60 m, and narrower than its 26 m minimum width. Distances shift with the building: how far a pass has to travel, how much room there is behind the goal, whether a long pass down the ice is available at all. The first time you play somewhere unfamiliar, look rather than assume.
+
+The rest is a dictionary. Read it once end to end, then keep it to hand and look things up — if a term appears anywhere in these documents and you are not sure of it, it is defined here.
 
 ---
 
@@ -34,7 +38,7 @@ Every NHL rink is the same size, and it is the size most North American rinks ar
 | Glass above boards | 8 ft at the ends, ≥6 ft along the sides | 2.44 m / 1.83 m |
 | Goal opening | 6 ft wide × 4 ft high (Rule 2.1), 40 in deep (rink diagram, not Rule 2.1) | 1.83 m × 1.22 m |
 
-*(NHL Official Rules 2025-2026, Rules 1.2, 1.3, 1.5, 2.1 and the official rink diagram.)*
+*(NHL Official Rules 2025-2026, Rules 1.2, 1.3, 1.5, 2.1 and the official rink diagram. The **50 ft neutral zone is a derivation, not a figure the rule text states**: the 200 ft sheet of Rule 1.2 less two 11 ft end strips and two 64 ft goal-line-to-blue-line distances, both from Rule 1.5.)*
 
 ### IIHF / international ("Olympic ice") — and the British base
 
@@ -96,7 +100,7 @@ If you move from an 85 ft sheet to a 98 ft sheet, five things change in ways you
 - **The half-wall is further from the slot.** A pass from the wall to the middle takes longer to arrive, which gives defenders time to close. Offensive-zone play tends to be more perimeter-based and more patient.
 - **Angling an attacker to the boards stops being a kill shot.** On narrow ice, the wall is your second defender. On wide ice, an attacker forced outside still has room to keep skating, so gap control and stick position matter more than steering.
 - **Backchecking distance goes up.** Cross-ice recovery is longer, so weak-side coverage is harder and late attackers arrive more freely.
-- **The neutral zone stays almost the same length.** NHL 50 ft versus IIHF 15.0 m (49.2 ft) — effectively identical. What changes is width, not length, so neutral-zone traps that rely on squeezing the width of the ice get much harder to run.
+- **The neutral zone stays almost the same length.** NHL 50 ft (a derivation from Rules 1.2 and 1.5, not a stated figure) versus IIHF 15.0 m (49.2 ft), which Appendix VI states directly as ¼ of the rink's length — effectively identical. What changes is width, not length, so neutral-zone traps that rely on squeezing the width of the ice get much harder to run.
 
 The reverse also holds: coming from wide ice to narrow ice, you have far less time on the wall, and simple quick plays beat clever slow ones.
 
@@ -113,7 +117,7 @@ Most recreational, beer-league, youth and older community rinks are **not** buil
 
 **Practical instruction:** on the first shift at an unfamiliar rink, deliberately check three things — how far it is from the goal line to the end boards, whether the trapezoid is painted, and how the puck comes off the corner boards on a rim. Those three answers change your breakout.
 
-**If you play in Britain, assume nothing from the diagrams here until you have looked** — and note that in Britain this is not a rec-rink caveat, it is the governing body's own position. British hockey runs the IIHF rulebook at every level (see [UK and England Rules](uk_rules.md)), Rule 1.2 sanctions any sheet from 26 m to 30 m wide, and England Ice Hockey then authorises rinks *below* 56 m × 26 m for all levels on top of that. So "we play IIHF rules" tells you which penalties get called and tells you nothing at all about the ice — and unlike a North American beer-league rink, a British sub-standard sheet is running the full IIHF rule book on it — with one exception whose status is genuinely unsettled, the trapezoid (see below). The England Ice Hockey amendment above has the wording and the three named rinks; the three checks above take one shift and are worth more than any published figure.
+**If you play in Britain, assume nothing from the diagrams here until you have looked** — and note that in EIH and SIHA hockey this is not a rec-rink caveat, it is the governing body's own position. British hockey runs the IIHF rulebook at every level (see [UK and England Rules](uk_rules.md)), Rule 1.2 sanctions any sheet from 26 m to 30 m wide, and in EIH and SIHA fixtures the In-House Rules then authorise rinks *below* 56 m × 26 m for all levels on top of that. So "we play IIHF rules" tells you which penalties get called and tells you nothing at all about the ice — and unlike a North American beer-league rink, a British sub-standard sheet is running the full IIHF rule book on it — with one exception whose status is genuinely unsettled, the trapezoid (see below). The In-House amendment above has the wording and the three named rinks; the three checks above take one shift and are worth more than any published figure.
 
 ---
 
@@ -231,7 +235,7 @@ The trapezoid is the marked area behind each net inside which the goaltender is 
 
 > **IIHF — the operative geometry for a British player.** Rule 1.8: *"Behind each goal, a trapezoidal area is marked on the ice surface, called the 'Goalkeeper Designated Area'. The two 5cm-wide red lines mark the restricted area between the goal line and the boards behind the goal. The outside dimension of the marking along the goal line is 6.80m and along the boards is 8.60m."* Against the NHL's 22 ft (6.71 m) and 28 ft (8.53 m) that is four inches and three inches — trivially different. The area is *deeper*, though, simply because the IIHF goal line is 4.0 m from the boards rather than 11 ft. **Note the one place the IIHF book is tidier than the NHL's:** IIHF Rule 27.7, which sets the penalty, restates the *current* 6.80 m / 8.60 m dimensions, so unlike NHL Rule 27.8 it does not leave a superseded figure sitting in the penalty rule. It also carries the same sole exception in terms — *"The minor penalty will not be assessed when a goalkeeper plays the puck while maintaining skate contact with their goal crease."* For a player under IIHF rules, the shape is the shape you already know.
 
-**One thing this document cannot tell you.** The In-House Rules authorise British rinks below 56 m × 26 m without saying how the markings are laid out on a sheet that short — and the trapezoid's depth is set by the 4.0 m goal line, which a shortened rink may not have room for. **Nothing in the IIHF book or the In-House Rules establishes what a sub-standard British rink's trapezoid actually measures**, so this is one more thing to look at rather than assume. **And in England and Wales it may not be a live rule at all — though nothing in the In-House Rules suspends it for SIHA or BUIHA hockey.** England Ice Hockey's own *Rules & Regulations* (2024-2025), Rule 22.3, reads: *"Goalkeepers' Restricted Area is not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule."* That is the governing body suspending the IIHF rule domestically, and it explains the missing paint — a rink that has never marked a trapezoid is not in breach.
+**One thing this document cannot tell you.** The In-House Rules authorise rinks below 56 m × 26 m in EIH and SIHA fixtures without saying how the markings are laid out on a sheet that short — and the trapezoid's depth is set by the 4.0 m goal line, which a shortened rink may not have room for. **Nothing in the IIHF book or the In-House Rules establishes what a sub-standard British rink's trapezoid actually measures**, so this is one more thing to look at rather than assume. **And in England and Wales it may not be a live rule at all — though nothing in the In-House Rules suspends it for SIHA or BUIHA hockey.** England Ice Hockey's own *Rules & Regulations* (2024-2025), Rule 22.3, reads: *"Goalkeepers' Restricted Area is not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule."* That is the governing body suspending the IIHF rule domestically, and it explains the missing paint — a rink that has never marked a trapezoid is not in breach.
 
 **Treat the status as unsettled rather than resolved either way.** The non-enforcement is stated in the 2024-2025 edition of the *Rules & Regulations*; the 2025-26 In-House Rules, which are the current playing-rule amendments, do not mention the restricted area at all. So it is not clear from the published documents whether the suspension still stands. Ask your league before assuming either that your goaltender is free behind the net or that they are not. [UK and England Rules](uk_rules.md) records the same uncertainty.
 
@@ -389,9 +393,9 @@ The slot is layered, and the layers have different jobs:
 
 **Why it matters:** the bench side is where you change safely. The far side is where lines get caught. If you are stranded on the far side and tired, stay in position and finish the shift — a bad change is worse than a long shift.
 
-### The trapezoid
+### The trapezoid, as an area of the end zone
 
-**Where:** behind the net, between the goal line and the end boards. See above for dimensions.
+**Where:** behind the net, between the goal line and the end boards. The markings, the dimensions, the penalty and its unsettled status in England and Wales are all in [§3, The trapezoid (goalkeeper's restricted area)](#the-trapezoid-goalkeepers-restricted-area); this entry is only its place on the map.
 
 **Why it matters:** it defines which corners your goaltender can help you in — under NHL and IIHF rules, none of them. Aim your dump-ins outside it.
 
@@ -643,6 +647,52 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 - **Assuming your rink is standard.** Check the distance behind the net and whether the trapezoid is painted before your first shift at a new rink.
 - **Quoting the wrong trapezoid width.** The current painted dimension is 22 ft at the goal line; the "18 ft / 6 ft from the post" number is pre-2014.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You are a defenceman told to cover the point, and you drift down to the
+   half-wall instead. How far apart are those two spots on an NHL sheet, how does
+   that number come out of the rink's dimensions, and what have you abandoned?
+   *(§The half-wall, and §Common Mistakes)*
+
+2. It is the second period and somebody shouts "get it deep." Why is "defensive
+   zone" not a fixed end of the building, and which two words settle it with no
+   ambiguity at all? *(§4. The three zones)*
+
+3. Your goaltender asks whether they may go into the corner for a rimmed puck
+   because a defenceman is coming to help. What is the sole exception the rule
+   carries — and if you play in England or Wales, what has to be checked before
+   the question can be answered at all? *(§3, The trapezoid (goalkeeper's
+   restricted area) — not the §5 entry of the same name, which is only the map)*
+
+4. Your league tells you it "plays IIHF rules." What does that tell you about the
+   size of the sheet you will be standing on, and what should a British player's
+   working assumption be instead? *(§1. Rink dimensions, and §The England Ice
+   Hockey amendment)*
+
+5. Your centre is usually first in on the forecheck, but tonight a winger beats
+   them to the puck. Who is F1, and what happens to a team that treats F1 as the
+   centre's job? *(§F1 / F2 / F3 — roles, not people)*
+
+6. In the house default coverage, which layer in front of the net does the
+   weak-side defenceman own and not leave? What does it cost when they step up to
+   the layer above it? *(§The goalmouth, and §Common Mistakes)*
+
+7. First shift at an unfamiliar rink. Name the three things to check deliberately,
+   and say what all three of them together change. *(§Rec rinks are not standard)*
+
+8. Why does a left-shot defenceman normally play left defence? Name two things
+   that come to your backhand instead if you play your off side. *(§Left-shot,
+   right-shot, and why a defenceman's handedness picks their side)*
+
+---
+
 ## Key Takeaways
 
 1. **Zone names are relative to your team, not the building** — and they swap ends every period. "Our end / their end" is never ambiguous.
@@ -651,8 +701,8 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 4. **The slot has layers.** High slot (dots to top of the circles), low slot (dots to the goalmouth), goalmouth (at the crease). Different jobs, different owners.
 5. **The point is at the blue line; the half-wall is level with the dot.** Never use them interchangeably.
 6. **F1 / F2 / F3 are roles defined by order of arrival, not people.** Whoever gets there first is F1.
-7. **The trapezoid is 22 ft along the goal line widening to 28 ft at the boards** (IIHF: 6.80 m to 8.60 m), applies in the NHL, KHL and IIHF, and does not exist in most *North American* rec leagues. **In England and Wales it is the IIHF rule but England Ice Hockey's Rule 22.3 says it is "not currently enforced"** — and the current In-House Rules are silent, so check locally rather than assuming — and until you know, keep your own goalie inside it and plan as though theirs may come out. Its one exception is a goalie keeping skate contact with the crease.
-8. **The neutral zone is the same length on any full-size rink** (NHL 50 ft; IIHF 15.0 m, defined as ¼ of the rink's length). What changes between NHL and big international ice is the width, which is why wide ice punishes forechecks and rewards skating. On a short sheet — which British rinks are authorised to be, though nobody has published a count — the neutral zone shrinks with the building.
+7. **The trapezoid runs 22 ft along the goal line, widening to 28 ft at the boards** (NHL Rule 1.8, never 27.8; IIHF 6.80 m to 8.60 m). It applies in the NHL, KHL and IIHF, and not in most *North American* rec leagues. **In England and Wales its status is unsettled** — England Ice Hockey's Rule 22.3 says it is *"not currently enforced"* and the current In-House Rules are silent, so check locally. Until you know, keep your own goalie inside it and plan as though theirs may come out. Its one exception is a goalie keeping skate contact with the crease.
+8. **The neutral zone is the same length on any full-size rink** (NHL 50 ft; IIHF 15.0 m). Note which of those two the books actually state: the IIHF figure is the rule book's own, from the Appendix VI "Rink Lines" drawing, which marks the neutral zone *"¼ L = 1500"* against a stated *"Length (L) = 6000"* in centimetres. **The NHL's 50 ft is nowhere stated as a figure in the rule text** — it is a derivation from the 200 ft sheet of Rule 1.2 and Rule 1.5's 11 ft goal line and 64 ft blue line (200 − 2 × 75). What changes on big international ice is the width, which is why wide ice punishes forechecks and rewards skating. On a short sheet — which EIH and SIHA fixtures are authorised to be played on, though no census of British rinks has been published — the neutral zone shrinks with the building.
 9. **At least one player is always above the puck.** Which body it is changes; that there is one does not.
 10. **Be inside, force them outside.** The whole defensive game compresses into that.
 

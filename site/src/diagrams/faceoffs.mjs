@@ -65,27 +65,45 @@ const STICK = 4.2;
 const GATE = 5.69;   // half the 5 ft 7 in gate, plus the glyph radius, so the
                        // drawn body clears the hash marks rather than straddling them.
 
-// 15 ft circle radius plus 1 ft, which puts the glyph's centre in the middle of
-// the 2 ft band the hash marks mark out (y = 37 to 39 on the boards side) with
-// both skates outside the circle.
-const HASH = 16.97;   // was 16, which put both wingers 1.5 ft INSIDE the
-                       // 15 ft circle once the 2.9 ft glyph radius and the
-                       // dx offset were accounted for. Rule 76.7 makes a skate
-                       // inside the circle a violation, and 76.4 the price is
-                       // your centre ejected from the draw. Derived, not chosen:
-                       // sqrt(17.9^2 - GATE^2), where 17.9 = circle 15 + glyph 2.9.
+// Far enough off the dot line that the whole glyph clears the circle: at this y
+// and GATE's x the glyph's CENTRE is exactly 17.9 ft from the dot, so its rim is
+// tangent to the 15 ft circle and no part of the body is inside it. That puts the
+// centre at y = 22 + 16.97 = 38.97 on the boards side — the outer edge of the 2 ft
+// band the hash marks mark out (y 37 to 39), not its middle, and 3.53 ft off the
+// dasher at 42.5.
+const HASH = 16.97;   // was 16 — "the circle's 15 ft plus a foot" — which put both
+                       // wingers 1.5 ft INSIDE the 15 ft circle once the 2.9 ft
+                       // glyph radius and the dx offset were accounted for. Rule
+                       // 76.7 makes a skate inside the circle a violation, and
+                       // under 76.4 the price is your centre ejected from the
+                       // draw. Derived, not chosen: sqrt(17.9^2 - GATE^2), where
+                       // 17.9 = circle 15 + glyph 2.9. The prose above described
+                       // the superseded 16 for as long as it stood next to 16.97.
 
 // The defending five — the team whose own net is at the right of the picture, so
 // they stand on the goal-line side of the hash-mark gate.
 const D_CENTRE   = { at: DOT, dx: STICK };                    // (73.2, 22)
-const D_BOARDS_W = { at: DOT, dx: GATE, dy: HASH };           // (72.5, 38)
-const D_INSIDE_W = { at: DOT, dx: GATE, dy: -HASH };          // (72.5, 6)
+// These two trailing coordinates read (72.5, 38) and (72.5, 6) for as long as GATE
+// and HASH have been 5.69 and 16.97 — they are the values of the constants BEFORE
+// both were re-derived against the glyph radius, so they understated how far
+// outside the hash-mark gate and the circle these two wingers actually stand.
+const D_BOARDS_W = { at: DOT, dx: GATE, dy: HASH };           // (74.69, 38.97)
+const D_INSIDE_W = { at: DOT, dx: GATE, dy: -HASH };          // (74.69, 5.03)
 // "Behind and outside the boards-side winger, near the hash marks, ready to
 // retrieve anything pulled back to the wall or to get behind the net." Behind is
-// toward his own goal line (+x); outside is toward the boards (+y), but the
-// boards are at 42.5 and a defender triangle is 7.2 ft across, so the room to go
-// outside is spent almost immediately — the position earns "outside" by being
-// beyond the winger's shoulder rather than by another two feet of y.
+// toward his own goal line (+x), and he is: 5.31 ft nearer it than the winger.
+//
+// OUTSIDE IS NOT DRAWN, AND CANNOT BE AT THIS SCALE. Outside is toward the boards
+// (+y), the winger's centre is already at y 38.97, and an own-team glyph is a
+// CIRCLE of radius 2.9 (shape carries team, not position — this player is a
+// defenceman but he is ours, so he is not a triangle; the note that used to stand
+// here reasoned from a 7.2 ft triangle and got the glyph wrong as well as the
+// number). The circle's ink reaches the dasher at y 39.2, so there is a quarter of
+// a foot of room outboard of the winger and nothing can be drawn in it. At y 37
+// this defenceman is in fact 1.97 ft INSIDE his winger. The caption still says
+// "behind and outside" because that is faceoffs.md's own instruction about real
+// ice; the picture delivers the "behind" and cannot deliver the "outside", and the
+// `describe` below therefore states only what is drawn.
 const D_WALL_D   = { at: DOT, dx: 11, dy: 15 };               // (80, 37)
 // "In the slot in front of the goalie, responsible for the net front and for
 // blocking a point shot." A foot and a half net-ward of the named slot position,
@@ -99,8 +117,9 @@ const D_GOALIE   = 'crease';                                  // (86, 0)
 // the header. Everything else about them is different, which is the point of
 // drawing both.
 const A_CENTRE   = { at: DOT, dx: -STICK };                   // (64.8, 22)
-const A_BOARDS_W = { at: DOT, dx: -GATE, dy: HASH };          // (65.5, 38)
-const A_INSIDE_W = { at: DOT, dx: -GATE, dy: -HASH };         // (65.5, 6)
+// Same stale pair mirrored: these read (65.5, 38) and (65.5, 6).
+const A_BOARDS_W = { at: DOT, dx: -GATE, dy: HASH };          // (63.31, 38.97)
+const A_INSIDE_W = { at: DOT, dx: -GATE, dy: -HASH };         // (63.31, 5.03)
 
 // The faceoff circle as a polygon, so the one thing in these pictures that is a
 // RULE rather than a coaching choice can be shaded. 15 ft is the circle radius
@@ -122,8 +141,12 @@ const dzoneAlignment = {
     'A defensive-zone draw in your own end, frozen at the instant before the puck is dropped, ' +
     'drawn at the right-hand circle. The centre is in the dot; the boards-side winger stands at ' +
     'the outer pair of hash marks and the inside winger at the inner pair, facing the slot; the ' +
-    'boards-side defenceman is behind and outside his winger, near the wall; the second ' +
+    'boards-side defenceman is behind his winger, near the wall; the second ' +
     'defenceman is in the slot in front of the goaltender. ' +
+    'On the ice that defenceman stands outside his winger as well as behind him, nearer the ' +
+    'boards — but the winger drawn here is already within a foot of them, so there is no room ' +
+    'outboard of him for a second player and “outside” is not attempted here. Read the picture ' +
+    'for the depth and take the width from the text. ' +
     'Where those four skaters stand is a coaching choice and not a rule — the alignment drawn is ' +
     'the one that goes with a low zone collapse behind a 2-1-2 ' +
     'forecheck, and every team’s alignment differs, so find out what yours runs before your ' +
@@ -138,8 +161,8 @@ const dzoneAlignment = {
     'takers may put a skate inside. Five own players: the centre in the dot on the goal-line ' +
     'side of it; the boards-side winger level with the dot at the outer hash marks, close to the ' +
     'wall; the inside winger level with the dot at the inner hash marks, about five feet off the ' +
-    'middle of the ice; the boards-side defenceman ten feet nearer the goal line than his winger ' +
-    'and outside him; the second defenceman in the slot in front of the goaltender, who is in ' +
+    'middle of the ice; the boards-side defenceman about five feet nearer the goal line than his ' +
+    'winger, close to the same wall; the second defenceman in the slot in front of the goaltender, who is in ' +
     'the crease. One opposition player is drawn, the opposing centre, on the blue-line side of ' +
     'the dot. The rest of the opposing five are drawn in the offensive-zone diagram instead. ' +
     'No routes: this is a still shape at the moment before the drop.',
@@ -190,12 +213,14 @@ const dzoneCleanLoss = {
   describe:
     'The same defensive-zone draw as the previous diagram, your own net at the right. Two ' +
     'opposition defencemen have been added at the points, on the blue line either side of the ' +
-    'middle, and the opposing centre is in the dot. Two routes, both forward skating and both ' +
-    'beginning on the drop rather than one after the other: the boards-side winger leaves the ' +
-    'outer hash marks and skates up the ice to the near point, finishing short of the opposing ' +
-    'defenceman there; the inside winger leaves the inner hash marks and skates diagonally ' +
-    'across to the far point on the other side of the ice. The centre, the slot defenceman and ' +
-    'the boards-side defenceman are drawn where the draw left them.',
+    'middle, and the opposing centre is in the dot. Two routes, both beginning on the drop ' +
+    'rather than one after the other: the boards-side winger leaves the outer hash marks and ' +
+    'goes straight up the ice to the near point; the inside winger leaves the inner hash marks ' +
+    'and goes diagonally across to the far point on the other side of the ice. Each route runs ' +
+    'at the defenceman it is going to and stops a few feet short of him, ending in a short bar ' +
+    'across the line rather than an arrowhead — the checking-pressure mark, because the winger ' +
+    'is arriving to take that man rather than skating past him. The centre, the slot defenceman ' +
+    'and the boards-side defenceman are drawn where the draw left them.',
 
   players: [
     { id: 'C', pos: 'F', at: D_CENTRE },
@@ -216,14 +241,61 @@ const dzoneCleanLoss = {
   // Not numbered. Numbering would say one release follows the other, and the
   // section's whole instruction is that both happen on the drop, simultaneously,
   // before anyone knows where the puck is.
-  // Each finishes short of the point man, and offset to the outside of him —
-  // both because a route must not end on another player's glyph, and because
-  // the first attempt put the arrowhead on top of the painted neutral-zone dot
-  // five feet outside the blue line, so the picture had an arrow apparently
-  // aimed at a faceoff spot in the middle of a play.
+  //
+  // THE ROUTES GO TO THE POINTS, BECAUSE THAT IS THE SECTION'S OWN SENTENCE.
+  // faceoffs.md:545 leads the clean loss with "**Both wingers go straight to the
+  // points.**", and 519 repeats it in the quick-reference; 530 calls the
+  // boards-side winger "the first man to the opposing point on a loss". So the
+  // destination is not a drawing choice, and a route that finishes anywhere else
+  // is teaching something the document does not say.
+  //
+  // WHAT THE ARRIVAL TEST ACTUALLY IMPLIES HERE. safety-reviewer's round-27
+  // conventions — derived from the renderer's constants, not rules of hockey:
+  //   (a) the extended terminal tangent must clear the opponent's anchor by more
+  //       than 2.9 ft, the player-glyph radius, or the drawn ray goes through him;
+  //   (b) a tip finishing within 9 ft of an opponent — 2.9 glyph + 3.15 arrowhead
+  //       + 2.9 glyph — may not carry an arrowhead at all.
+  // On THIS play the two are jointly unsatisfiable by any arrow-headed route, and
+  // that is the whole finding rather than a tuning problem. The aim point IS the
+  // defenceman, so an on-bearing tip has a miss of ~0 and fails (a) at every
+  // distance; the only way to pass (a) is to bend the route off the man, and the
+  // only way to pass (b) is to stop far enough short that the arrowhead is no
+  // longer near him. Both bought compliance by drawing the wrong play. At the
+  // ±9 version the tips sat 11.40 ft out at (32, ±29) — 11.4 ft from the point
+  // men, 39° off bearing, short of the blue line and 9 ft outside their man
+  // toward the boards. The picture passed the test and lost the lesson.
+  //
+  // `pressure` is the answer the key already has: a plain line ending in one bar,
+  // "Checking pressure", which is the symbol for arriving and taking the man. It
+  // satisfies (b) by construction — there is no arrowhead to place — and it lets
+  // the route run true to the point man and stop short of him, which is what (a)
+  // is protecting. The previous note rejected `pressure` by citing this diagram's
+  // own `describe` ("forward skating"), which is circular: the describe is ours,
+  // and it is updated below to say what is now drawn. The document's own
+  // vocabulary supports it too — faceoffs.md:584 has the wingers "pressure the
+  // puck" on a clean loss.
+  //
+  // Geometry, so the next agent can check rather than trust. Each route runs on
+  // the true bearing from its winger to its point man and stops 5.5 ft short of
+  // the anchor, expressed as an offset FROM `point` so it holds wherever the blue
+  // line moves to:
+  //   boards-side  (74.69, 38.97) -> (30.14, 21.96), bearing to (25, 20)
+  //   inside       (74.69,  5.03) -> (29.91, -17.53), bearing to (25, -20)
+  // The opposition triangle has its apex at cy + 3.6 and its base at cy - 1.8,
+  // half-width 3.118, stroke 0.8, so a straight edge carries 0.4 ft of ink. At
+  // 5.5 ft out on that bearing the line's end — and both ends of the 4 ft bar
+  // drawn square across it, `bar()` being +/-2 ft — clear the nearer edge of that
+  // triangle's ink by between 2.91 and 3.55 ft, the tightest being the outboard
+  // end of the boards-side bar. The line stops visibly AT the man without
+  // touching him, which is the whole reading of a checking-pressure mark.
+  //
+  // This is NOT the loose-puck false positive that clears the tie-up diagram
+  // below. There, both routes aim at a puck lying on the dot and the two centres
+  // merely happen to be near it. Here the aim point IS the defenceman — which is
+  // exactly why the notation, and not the geometry, had to give.
   routes: [
-    { from: D_BOARDS_W, to: { at: 'point:right', dx: 7, dy: 5 },  kind: 'skate' },
-    { from: D_INSIDE_W, to: { at: 'point:left',  dx: 7, dy: -5 }, kind: 'skate' },
+    { from: D_BOARDS_W, to: { at: 'point:right', dx: 5.14, dy: 1.96 },  kind: 'pressure' },
+    { from: D_INSIDE_W, to: { at: 'point:left',  dx: 4.91, dy: 2.47 },  kind: 'pressure' },
   ],
 };
 
@@ -264,7 +336,11 @@ const dzoneTieUp = {
   ],
 
   // Both stop short of the dot but stay aimed at it — extend either line and it
-  // arrives at (69, 22), the loose puck. They have to stop short: a route ending
+  // passes within 1.53 ft of (69, 22) from the inside winger and 0.62 ft from the
+  // defenceman, which at a glyph radius of 2.9 ft is still an arrow pointing at the
+  // loose puck. This read "and it arrives at (69, 22)" exactly, and did, from the
+  // inside winger's superseded (72.5, 6); he moved 2.19 ft outboard when GATE was
+  // re-derived and the aim went with him. They have to stop short: a route ending
   // on the dot terminates between the two centres' glyphs and reads as a
   // collision with them, which is not what "attack the loose puck" means.
   routes: [
@@ -352,7 +428,7 @@ const neutralZoneAlignment = {
     { id: 'C', pos: 'F', at: { at: 'centre-ice', dx: -STICK } },
     // "Both wingers wide, level with or just behind the dot, in their lanes."
     // Wide is 30 ft off the middle, which is outside the 15 ft centre circle and
-    // still 12 ft off the boards; a stride behind is 2 ft.
+    // still 12.5 ft off the boards at y ±42.5; a stride behind is 2 ft.
     { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: 30 },  label: 'wide, in his lane' },
     { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: -30 }, label: 'wide, in his lane' },
     // "Both defencemen back toward your own blue line, one either side of the

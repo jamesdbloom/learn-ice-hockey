@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { READING_ORDER } from '../data/nav';
+import { LAYERS, READING_ORDER } from '../data/nav';
 
 const first = READING_ORDER[0];
 ---
@@ -17,5 +17,29 @@ const first = READING_ORDER[0];
       <a class="button button--ghost" href="/search/">Search</a>
       <a class="button button--ghost" href={first.href}>{first.title}</a>
     </div>
+
+    {/*
+      Every other page on the site carries a <nav>: document pages get the full
+      contents sidebar, the home page is itself the index. This page had neither
+      — three buttons and nothing else — so a reader who arrived on a dead link
+      had no way to see what the corpus contains without guessing at the two
+      that pointed inward. The sections list is the same one the sidebar and the
+      home page use, and it links to the same anchors.
+    */}
+    <nav class="notfound-nav" aria-label="Corpus sections">
+      <p class="notfound-nav__heading">Or start from a section</p>
+      <ul class="nav-list">
+        {
+          LAYERS.map((layer) => (
+            <li>
+              <a href={`/#${layer.id}`}>
+                <span class="notfound-nav__title">{layer.title}</span>
+                <span class="notfound-nav__tagline">{layer.tagline}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
   </main>
 </Base>

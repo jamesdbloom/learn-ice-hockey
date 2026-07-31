@@ -10,7 +10,11 @@
 export default [{
   id: 'notation-key',
   kind: 'legend',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  // The document this key is embedded in and must agree with. It was
+  // rink_map_and_glossary.md, which is the owner of the *coordinates* and contains
+  // the string "notation" zero times — following the field sent a reviewer to a
+  // document that says nothing about any of these symbols.
+  owner: 'content/reading-diagrams/reading_ice_hockey_diagrams.md',
   width: 900,
   caption:
     'The drill notation used by every diagram here. Lines: a plain arrow is ' +

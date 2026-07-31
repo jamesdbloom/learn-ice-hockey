@@ -13,14 +13,24 @@ const { navHref = '/' } = Astro.props;
 <header class="site-header">
   <a class="site-header__brand" href="/">
     <span class="puck" aria-hidden="true"></span>
-    <span>{SITE_SHORT_TITLE}</span>
+    {/*
+      The wordmark carries its own class because it, not the link, has to own
+      the truncation — see .site-header__name in global.css.
+    */}
+    <span class="site-header__name">{SITE_SHORT_TITLE}</span>
   </a>
   <span class="site-header__spacer"></span>
   <div class="site-header__actions">
     <a class="icon-button" href={navHref}>Contents</a>
     <a class="icon-button" href="/search/" rel="search">
       <span aria-hidden="true">⌕</span>
-      <span>Search</span>
+      {/*
+        Below 31rem this label is hidden visually but kept for assistive
+        technology, so the button still announces as "Search" while giving the
+        wordmark beside it room to be read. The ⌕ glyph is aria-hidden, so
+        without the label the link would announce as nothing at all.
+      */}
+      <span class="icon-button__label">Search</span>
     </a>
     <ThemeToggle />
   </div>

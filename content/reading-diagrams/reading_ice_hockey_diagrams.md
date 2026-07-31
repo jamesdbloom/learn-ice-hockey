@@ -11,14 +11,16 @@
 
 ## Overview
 
-Many of the documents here carry rink diagrams — a picture of the ice with players
-and arrows on it. They use a notation borrowed from published coaching material, and
-five minutes here will make every diagram in the rest of the guide readable at a
-glance. You do not need to memorise it; come back when a symbol is unfamiliar.
+In a rink diagram a **circle is your own team, a triangle is the opposition, and an X
+is a pylon** — a practice cone, never a player. Shape carries the team rather than the
+position, which is the first thing to know if you meet another key elsewhere. And where
+a caption says a detail is a coaching choice, believe the caption rather than the
+picture: a diagram is the most absolute-looking thing on a page, and it shows one
+moment of one system among several. You do not need to memorise the rest; come back
+when a symbol is unfamiliar.
 
-
-These diagrams use a drill notation drawn from **two published symbol keys**. The
-two disagree in places, so it is worth two minutes to know which is which.
+The notation is drawn from **two published symbol keys**. The two disagree in
+places, so it is worth two minutes to know which is which.
 
 ![](diagram:notation-key)
 

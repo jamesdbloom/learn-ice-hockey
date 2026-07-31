@@ -7,11 +7,17 @@
 
 ## Overview
 
-You will hold the puck for well under a minute in a hockey game. Everything else you do — every stride, every read, every decision about where to be and who to watch — happens without it. This document is about that overwhelming majority of the game.
+You spend almost all of your ice time without the puck, and what you do in that time decides what the few seconds with it are worth. NHL tracking data — which the league itself calls unofficial — puts a forward at about forty seconds of possession in every twenty minutes of five-on-five play, in bursts of about 1.3 seconds each.
 
-It is organised around **four off-puck states**, because "off-puck play" is not one skill. What you should be doing when your team has the puck is almost the opposite of what you should be doing when the other team has it, and both are different again from the two chaotic states in between — a loose puck nobody owns, and a transition where possession has just changed and neither team has settled. Most amateur players have a vague plan for one of these four states and no plan at all for the other three.
+**Off-puck play is not one skill, it is four.** What you do while your team has the puck is close to the opposite of what you do while the other team has it, and both differ again from the two scrappy states in between — a loose puck nobody owns, and the moment possession has just changed. Most players have a plan for one of the four.
 
-The good news, and the reason this document is worth your time: off-puck play is the cheapest improvement available to you. It needs no new skill. It needs a decision about where to go and the willingness to go there.
+**Being unmarked is not the same as being available.** Three things make you passable to: your stick flat on the ice, a straight line between you and the player with the puck, and nobody's stick in that line. Fix the line before you complain about the pass — then go when the passer's head comes up rather than when the space appears, because getting open a second early is the same as never getting open. And come back *toward* the puck instead of skating away and hoping.
+
+**Racing an opponent to a loose puck along the wall is where hockey's catastrophic injuries happen.** Get there with your skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest, and never turn your back to the wall or duck.
+
+**When the other team has the puck, whether you may use your body at all is a question about your league.** Stick on the puck first, body on the player second — and body checking is banned outright in younger age groups and in all girls' and women's play under both USA Hockey (Rule 604(a)) and Hockey Canada (Rule 7.3), while most adult recreational leagues do not permit it either. **In Britain neither book states an age** — ask your league. Find out which you are in before you play a shift.
+
+None of it requires a skill you do not already have.
 
 ---
 
@@ -160,6 +166,7 @@ Action: Steer them where your help is; angling a carrier into the middle while y
 Technique: Arrive under control — close the last few feet with short strides, stick out front, in a position to change direction
 Priority: Stick on the puck, body on the man, in that order — take the body only where your league permits checking, and only when it does not cost you the lane behind you
 Rule: Check whether you may hit at all — body checking is banned under USA Hockey 604(a) at 12U and below, in all girls'/women's and all non-check adult classifications, and under Hockey Canada 7.3 at U13 and below and throughout female hockey
+Rule: In Britain neither the IIHF Rule Book nor the In-House Rules state a body-checking age — ask your league, and note that women's hockey there runs the restricted form of IIHF Rule 101.1
 Action: Talk, because you are the trigger — "I've got the carrier" tells your support where to stand, and silence makes four people guess
 Convention: Who goes is a coaching choice — under the 2-1-2 and low zone collapse used throughout the nearest player pressures; under a 1-2-2 only one forward pressures at all, and under a trap almost nobody pressures deep
 ```
@@ -169,7 +176,7 @@ Roughly a fifth of the time it is you: **F1 on the forecheck, the first defender
 - **Angle, do not chase.** Approach on a curve that closes one side of the ice, so the only route left is the one your support is covering. Skating straight at somebody gives them both sides and gives you nothing.
 - **Steer them where your help is.** Your pressure and the second layer are one play, not two. Angling a carrier into the middle while your support sits on the wall is worse than not pressuring at all.
 - **Arrive under control.** Full speed with your feet stopped is how you get beaten with one movement. Close the last few feet with short strides, stick out front, in a position to change direction.
-- **Stick on the puck, body on the man — in that order.** Take the body only when it does not cost you the lane behind you. A missed hit is a five-second absence. **And check whether you may hit at all:** body checking is banned under USA Hockey 604(a) at 12U and below, in all girls'/women's and all non-check adult classifications, and under Hockey Canada 7.3 at U13 and below and throughout female hockey. Where it is not permitted, this bullet is angling, stick checks and body position — all legal everywhere. See [Body Contact and Battles](../technique/body_contact_and_battles.md) §1.
+- **Stick on the puck, body on the man — in that order.** Take the body only when it does not cost you the lane behind you. A missed hit is a five-second absence. **And check whether you may hit at all:** body checking is banned under USA Hockey 604(a) at 12U and below, in all girls'/women's and all non-check adult classifications, and under Hockey Canada 7.3 at U13 and below and throughout female hockey. **In Britain neither book states an age at all** — the IIHF Rule Book sets no checking age and the In-House Rules add none, so ask your league and get the answer in writing; British women's hockey runs the restricted form of IIHF Rule 101.1 instead. Where it is not permitted, this bullet is angling, stick checks and body position — all legal everywhere. See [Body Contact and Battles](../technique/body_contact_and_battles.md) §1.
 - **Talk, because you are the trigger.** "I've got the carrier" tells your support where to stand. Silence makes four people guess.
 - **Who goes is a coaching choice.** Under the house default used throughout — a **2-1-2 forecheck** in their end and a **low zone collapse** in yours — the nearest player pressures and the second supports. Under a **1-2-2** only one forward pressures at all and the others hold the middle; under a trap, almost nobody pressures deep. Find out which you play. See [Forechecking Systems](../systems/forechecking_systems.md) and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
 
@@ -273,7 +280,7 @@ Key: Deciding who goes is the off-puck question this document answers; how you a
 Priority: Winning the puck never justifies arriving in any orientation other than the safe one
 Technique: Get your skates parallel to the boards before contact, and take it on your forearm and hip, not the point of your shoulder
 Technique: Head up, chin off your chest
-Never: Turn your back to the wall, and never duck
+Never: Turn your back to the wall, or duck
 Key: Squaring your chest to the boards is the fallback for when you cannot turn in time, not the target
 ```
 
@@ -288,6 +295,8 @@ Priority: The front of your own net first — if nobody is there, go there, beca
 Priority: Then take away the shooter's stick, not the puck — lift it or seal the blade
 Priority: Then get it out of the danger area — anywhere is better than the slot, and this is the one moment an unglamorous clear is unambiguously correct
 Rule: Not directly out of play, though — from your own zone that is a two-minute delay-of-game minor (NHL Rule 63.2(iii)); off the glass and along it is fine
+Rule: Over the glass behind the players' bench is penalised — the carve-outs are boards with no glass above them, a puck shot into the bench, and one out directly off a faceoff (NHL Rule 63.2(iii))
+Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Priority: Then, and only then, look for the outlet — the exit pass before the danger is gone is how a scramble becomes a goal against
 Action: The mirror image applies in their end — net front first, sticks free, and shoot from anywhere before you try to be clever
 ```
@@ -296,7 +305,7 @@ Sometimes there is no structure left — a scramble in front of your net, three 
 
 1. **The front of your own net.** If nobody is there, go there. Nothing else matters as much.
 2. **Take away the shooter's stick, not the puck.** Lift it or seal the blade. You do not need to win the puck to prevent the shot.
-3. **Get it out of the danger area** — anywhere is better than the slot. This is the one moment where an unglamorous clear is unambiguously correct.
+3. **Get it out of the danger area** — anywhere is better than the slot. This is the one moment where an unglamorous clear is unambiguously correct. **Not directly out of play, though.** Under **NHL Rule 63.2(iii)** a minor is assessed on any player who *"shoots or bats (using his hand or his stick) the puck directly (non-deflected) out of the playing surface from his defending zone, except where there is no glass"* — hand or stick, so it does not reach a puck sent out with a skate — and the rule adds that *"when the puck is shot over the glass 'behind' the players' bench, the penalty will be assessed"* — so the three carve-outs are a stretch of boards with no glass mounted above it, a puck shot **into** the bench, and one that leaves the rink directly off a faceoff. **USA Hockey has no equivalent minor:** Rule 610(c) penalises only a *deliberate* shoot-out, and Rule 631(d) makes an accidental one a last-play faceoff. Off the glass and along it is fine everywhere.
 4. **Then, and only then, look for the outlet.** Trying to make the exit pass before the danger is gone is how a scramble becomes a goal against.
 
 The mirror image applies in their end: net front first, sticks free, and shoot from anywhere before you try to be clever. See [Risk Management](risk_management.md) for the general principle.
@@ -734,7 +743,7 @@ The bench is where off-puck improvement actually happens, because you have thirt
 1. **Which of the four states was I in when the shift went wrong?**
 2. **Was I ever unmarked but unavailable?** (No lane, no stick down, wrong angle.)
 3. **Did I finish every route I started?**
-4. **On the loose pucks, did I arrive with body position or just with speed?**
+4. **On the loose pucks, did I arrive with body position or just with speed — and did I arrive the safe way round, skates parallel to the wall, head up, never with my back to it?**
 5. **When we lost it, how long did it take me to turn?**
 6. **Did I duplicate a teammate's pressure instead of layering behind them?**
 
@@ -760,20 +769,64 @@ Pick one question and use it for a whole game. Six questions asked vaguely chang
 - **Backchecking to a place instead of to a man.** Sprinting to the top of the circles and stopping, having covered no one, spends the energy and buys nothing.
 - **Assuming the answer to "who goes?" is universal.** Under a 2-1-2 two forwards pursue; under a 1-2-2 one does. Not knowing which your team plays is the actual problem.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. Name the four off-puck states. Which two do most players have no plan for, and
+   why does that make them where the most improvement is available? *(§The four
+   off-puck states)*
+
+2. You are F1 arriving on a carrier in the corner. The order is "stick on the
+   puck, body on the man" — but before you use the second half of that, what must
+   you have checked, and what does the bullet reduce to where the answer is no?
+   *(§State 2 — If you are the one pressuring)*
+
+3. You are alone in space with your stick up, waving, and the pass never comes.
+   Give the three things being *available* actually requires, and say which of
+   them is the most common failure. *(§Unmarked is not the same as available)*
+
+4. A puck is loose on the wall in your own end and you are racing a forechecker
+   to it. What outranks winning that race, and what four things does it require
+   of your body? *(§State 3 — Then how you arrive)*
+
+5. Scramble in front of your own net, three players down, no structure left. Work
+   the priority list in order. Where does the outlet pass come — and what rule
+   constrains how you get the puck out? *(§State 3 — What to prioritise when
+   structure has broken down)*
+
+6. Your team has just lost the puck in the neutral zone and you are a winger.
+   Where do you go, why is "everyone sprint to the middle" specifically wrong,
+   and what would change the answer? *(§State 4 — What to do off the puck in
+   transition)*
+
+7. You want to use a teammate's body to shake your check. What does the rulebook
+   let you do, what does it call a pick, and why does this document refuse to
+   call any of it a "screen"? *(§Screens and picks — what is actually legal)*
+
+8. You are standing in the goaltender's sightline, both feet outside the crease,
+   and you never touch anybody. Can the goal still be disallowed? *(§Screen the
+   goalie)*
+
 ---
 
 ## Key Takeaways
 
-1. **You have the puck for about 3-4% of your ice time.** NHL tracking data puts forwards at roughly 40 seconds and defencemen at 49 seconds per 20 minutes of **5-on-5** ice time (which is not the same as even strength — the study reports 5-on-5 only). Everything else you do on the ice is off-puck.
-2. **The average possession lasts about 1.3 seconds — and about 1 second in the offensive zone.** You do not get long enough with the puck to fix a bad position. Your off-puck work decides what those seconds are worth.
-3. **There are four off-puck states, not one.** Your team has it; they have it; it is loose; it just changed hands. Each has a different job, and most players only have a plan for one of them.
-4. **Unmarked is not available.** Being available needs three things: your stick flat on the ice, a straight passing angle, and no defender's stick in the lane. Fix the lane before you complain about the pass.
-5. **Break on the passer's look, not on the open space.** Getting open a second early is the same as never getting open. Hold, hold, hold, then go when their head comes up.
-6. **Come back toward the puck.** Skating away and hoping is the amateur default; arriving toward the carrier with speed is shorter, faster and much harder to defend.
-7. **Occupying a defender is real work with no reward attached.** A genuine net drive, a legal route that makes a defender navigate traffic, a screen on the goalie from outside the crease, a live weak-side decoy and honest width create more goals than they get credit for — and they only function if you commit fully.
-8. **On defence, layer behind pressure rather than duplicating it.** Two players on one puck usually means somebody is free, and the free man scores. **Whether you are allowed to hold that layer is a system question, not a law:** under the low zone collapse assumed throughout you sink and cover the area behind the pressurer, but under man-to-man you follow your check even if that pulls you out of the layer, and most teams deliberately double-team a puck *below their own goal line*, where the net and the boards contain a turnover. Ask your coach which coverage you play and where doubling is allowed.
-9. **Win loose pucks with body position, not just speed — and with the safety orientation before either.** Arriving first, square to the boards, with your exit undecided, loses the puck to the second man. Turn your hips, get low and wide, and know where it is going before you get there. **The override that outranks all of it:** a puck race to the wall is where the catastrophic injuries happen, so get your **skates parallel to the boards**, take it on your **forearm and hip**, head up and chin off your chest, and **never turn your back to the wall or duck**. See [Body Contact and Battles](../technique/body_contact_and_battles.md), §6.
-10. **Off-puck effort is the most visible thing about you and the cheapest thing to improve.** Backcheck to the middle, finish your route, take the second stride. None of it requires a skill you do not already have.
+1. **You have the puck for about 3-4% of your ice time** — forwards near 40 seconds, defencemen 49, per 20 minutes, in possessions averaging 1.3 seconds. **That is NHL tracking data the league itself calls unofficial, and it is 5-on-5 only, which is not the same as even strength.** You never get long enough with the puck to fix bad position.
+2. **Off-puck play is four states, not one:** your team has it, they have it, it is loose, it has just changed hands. Each has a different job. A teaching frame rather than a partition — the last two overlap.
+3. **Find out whether you may use your body at all before you play a shift.** Body checking is banned under USA Hockey Rule 604(a) at 12U and below and in all girls'/women's and non-check adult classifications, and under Hockey Canada Rule 7.3 at U13 and below and throughout female hockey. **In Britain neither book states an age — ask your league**, and note that British women's hockey runs the restricted form of IIHF Rule 101.1. Where it is not permitted, defending off the puck is angling, stick checks and body position.
+4. **Unmarked is not available.** Three things at once: a stick flat on the ice as a target, a straight angle from the puck to your blade, and nothing lying in that lane — a defender's stick across it is the commonest failure. Fix the lane, then say something.
+5. **Break on the passer's look, not the open space.** A second early is the same as never getting open — go when their head comes up.
+6. **Come back toward the puck.** Skating away is the amateur default; arriving toward the carrier with speed is shorter, faster and harder to defend.
+7. **Occupying a defender is unrewarded work, and it only functions if you commit fully.** A genuine net drive, a legal route through traffic, a screen from outside the crease without initiating contact, a live weak-side decoy, honest width.
+8. **On defence, layer behind pressure rather than duplicating it** — two players on one puck usually means somebody is free, and **whether you may hold that layer at all is a system question, not a law**, so ask your coach which coverage you play. [Puck Support and Spacing](puck_support_and_spacing.md) owns the layering geometry and the deliberate double-team that is its exception.
+9. **Win loose pucks with body position and a decided exit, not just speed — and safety outranks all of it.** A puck race to the wall is where the catastrophic injuries happen, so get your **skates parallel to the boards**, take it on your **forearm and hip**, head up and chin off your chest, and **never turn your back to the wall or duck**. See [Body Contact and Battles](../technique/body_contact_and_battles.md), §6.
+10. **Off-puck effort is the cheapest thing to improve.** Backcheck to the middle, finish your route, take the second stride — none of it needs a skill you do not already have.
 
 ---
 
@@ -797,6 +850,6 @@ Pick one question and use it for a whole game. Six questions asked vaguely chang
 
 *Possession and tracking data: [Iaboni, Negulescu, Pitassi, Lodhi & Brecht — "Individual Puck Possessions Part I: Frequency, Duration, and Distance Travelled", LINHAC 2025 (PDF)](https://cs.uwaterloo.ca/~brecht/papers/linhac-2025-part-1.pdf) · [Linköping University Electronic Press — article record](https://ecp.ep.liu.se/index.php/linhac/article/view/1208) · [NHL EDGE — official player and puck tracking](https://www.nhl.com/nhl-edge/) · [NHL shift-chart API (shiftcharts endpoint)](https://api.nhle.com/stats/rest/en/shiftcharts) · [Hockey Reference — 2024-25 NHL skater statistics](https://www.hockey-reference.com/leagues/NHL_2025_skaters.html)*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 56, Interference*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 56 (Interference, incl. 56.1 on picks), Rule 63.2(iii) (Delaying the Game — puck out of play from the defending zone, its three carve-outs, and the penalty for a puck over the glass behind the players' bench), Rules 69.1 and 69.3 (Interference on the Goalkeeper) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 604(a) (body checking by classification), Rule 610(c) (delay of game, which reaches only a **deliberate** shoot-out of the playing area) and Rule 631(d) (an accidental one is a last-play face-off in the zone the puck was shot from, not a penalty) · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — Rule 7.3 (body checking, which the book restricts by *division*: U13 and below, and female hockey) · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — Rule 27.7 (goalkeeper restricted area) and Rule 101.1 (Illegal Hit in Women's Hockey — the restricted form of body contact, not the IIHF's general checking rule)*
 
 *Coaching and development: [USA Hockey — Small-Area Games](https://www.usahockey.com/smallareagames) · [USA Hockey — "Teaching Concepts Through Small-Area Games" manual (PDF)](https://cdn1.sportngin.com/attachments/document/0084/2519/Teaching_Concepts_Through_Small-Area_Games_FINAL.pdf) · [USA Hockey — Training and practice materials](https://www.usahockey.com/trainingmaterials)*

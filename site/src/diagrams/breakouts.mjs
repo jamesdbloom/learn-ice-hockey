@@ -49,7 +49,12 @@ const RETRIEVAL = { at: 'corner:right:far', dx: -4, dy: -2 };   // (-86, 32)
 // goal line ... at or just below the dot line, not above it" (Language section).
 // half-wall is x -69, level with the dot; dx -6 is six feet below the dot line,
 // inside the band and nowhere near above it.
-const WALL_SPOT = { at: 'half-wall:right:far', dx: -6 };        // (-75, 33)
+//
+// HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 (site/src/data/rink.json).
+// The trailing comment read (-75, 33) — stale from when half-wall.y was 33, which
+// put this winger 9.5 ft off the boards and inside the faceoff circle, i.e. not on
+// the wall at all. The glyph moved when the table did; only the note did not.
+const WALL_SPOT = { at: 'half-wall:right:far', dx: -6 };        // (-75, 38.5)
 
 // The centre's low support spot: "inside the faceoff dots and below the hash marks
 // — the strong-side circle, not the wall" (section 5). Seven feet below the hash
@@ -113,10 +118,16 @@ const fiveRoles = {
 // 2 — Up. The direct pass to the strong-side winger on the wall.
 // ---------------------------------------------------------------------------
 
-// Deeper than the shared RETRIEVAL point, because the pass has to be long enough
-// to read as a pass: at the shared point D1 and the winger are eight feet apart.
+// Deeper than the shared RETRIEVAL point, so the pass reads as a pass rather than a
+// handoff: from RETRIEVAL the winger is 14.5 ft away, from here 17.2 ft. ASSUMES
+// half-wall.y = 38.5 (site/src/data/rink.json) — the winger is UP_W1, on the wall.
+// This said "at the shared point D1 and the winger are eight feet apart", which is
+// not a figure this file has ever resolved to: at half-wall.y 33 it was 13.0 ft and
+// at 38.5 it is 14.5. Eight feet made the deepening sound necessary; 14.5 to 17.2 is
+// what it actually buys, and that is a legibility nudge, not a rescue.
 const UP_D1 = { at: 'corner:right:far', dx: -6, dy: -4 };       // (-88, 30)
-const UP_W1 = { at: 'half-wall:right:far', dx: -4 };            // (-73, 33)
+// HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 (site/src/data/rink.json).
+const UP_W1 = { at: 'half-wall:right:far', dx: -4 };            // (-73, 38.5)
 
 const up = {
   id: 'breakout-up',
@@ -175,7 +186,7 @@ const up = {
 // ---------------------------------------------------------------------------
 
 // The carry's exit, on the weak-side wall just below the hash marks. The bow of
-// -34 is chosen so the curve's own midpoint lands at x -94.4 — behind the net's
+// -34 is chosen so the curve's own midpoint lands at x -94.5 — behind the net's
 // back rail at -92.33, which is what "cut TIGHT to the net, the net itself is your
 // screen" means — while keeping the route out of the crease and, where it crosses
 // the goal-mouth band at all, behind the goal frame rather than through it.
@@ -183,8 +194,16 @@ const up = {
 // The first version exited at (-76, -28) and its terminal tangent came out at 40
 // degrees below the axis, so the arrowhead finished aimed at the bottom corner
 // rather than up ice: a wheel that ends pointing back into your own end is not a
-// wheel. Exiting further up the wall flattens the finish to 30 degrees.
-const WHEEL_EXIT = { at: 'half-wall:left:far', dx: -1, dy: 3 };      // (-70, -30)
+// wheel. Exiting further up the wall flattens the finish to 32 degrees.
+//
+// HE FINISHES ON THE WALL, SO dy 3 is INWARD off it — on a ':left' anchor a positive
+// dy pulls toward the middle. ASSUMES half-wall.y = 38.5 (site/src/data/rink.json).
+// The trailing comment read (-70, -30) and the tangent was recorded as 30 degrees;
+// both were computed when half-wall.y was 33. Re-resolved at 38.5 the exit is 5.5 ft
+// further out and the finish is 32.2 degrees, not 28.8 — still far flatter than the
+// 40-degree version this bow exists to replace, so the argument holds, but neither
+// figure was the one the code produces.
+const WHEEL_EXIT = { at: 'half-wall:left:far', dx: -1, dy: 3 };      // (-70, -35.5)
 
 const wheel = {
   id: 'breakout-wheel',
@@ -238,7 +257,14 @@ const wheel = {
 // 4 — Reverse. Back against the flow, off the boards, into vacated space.
 // ---------------------------------------------------------------------------
 
-const REV_D1 = { at: 'half-wall:right:far', dx: -4, dy: 1 };    // (-73, 34)
+// D1 pinned on the strong-side wall with the puck — "you were working up the right
+// wall". HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 and the boards at
+// y +-42.5 (site/src/data/rink.json). This carried dy: 1, under a trailing comment
+// reading (-73, 34) that was stale from when half-wall.y was 33 — the glyph was
+// really at 39.5. There the own-team circle's nominal edge (r 2.9) reached 42.4 and
+// cleared the dasher by a tenth of a foot, but the 0.75 stroke's 0.375 halo put
+// 0.28 ft of ink over the boards. The circle's ink ceiling is 39.2, not 39.6.
+const REV_D1 = { at: 'half-wall:right:far', dx: -4 };           // (-73, 38.5)
 // Where the reverse and the arriving partner converge — both below the goal line,
 // which is where the section says the puck is going ("a space you cannot see,
 // below your own goal line"). Kept nine feet apart so two arrowheads meeting in
@@ -282,8 +308,15 @@ const reverse = {
     { id: 'D1', pos: 'D', at: REV_D1, label: 'has the puck' },
     { id: 'D2', pos: 'D', at: D2_LOW, label: 'arriving' },
     // "a forechecker chasing your hip" who has then "over-committed and skated
-    // past you" — so he is up-ice of D1 on the same wall, still going.
-    { id: 'F1', pos: 'F', team: 'opp', at: { at: 'half-wall:right:far', dx: 7, dy: 2 },
+    // past you" — so he is up-ice of D1 on the same wall, still going. dx 7 leaves
+    // him 11 ft up-ice of D1, the "about ten feet" the description states.
+    //
+    // HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 and the boards at
+    // y +-42.5 (site/src/data/rink.json). The opposition triangle is asymmetric —
+    // apex at cy +3.6 — so the ceiling on the +y wall is 38.9. This carried dy: 2,
+    // putting the apex at 44.1: 1.6 ft of forechecker through the dasher. At dy 0
+    // he sits on the same wall line as D1, which is what "the same boards" means.
+    { id: 'F1', pos: 'F', team: 'opp', at: { at: 'half-wall:right:far', dx: 7 },
       label: 'gone past' },
   ],
 
@@ -294,8 +327,10 @@ const reverse = {
   routes: [
     // 1 — D2 comes around the back of his own net. Bowed to x -94.5 at the
     //     midpoint so the route runs behind the goal frame, never across the goal
-    //     mouth: where it crosses |y| < 3 it is at x -94.3, behind the net's back
-    //     rail at -92.33.
+    //     mouth: where it crosses |y| < 3 it runs from x -93.8 to -94.5, so its
+    //     shallowest point there is still a foot and a half behind the net's back
+    //     rail at -92.33. The single figure -94.3 that stood here was inside that
+    //     range but was not either end of it.
     { from: D2_LOW, to: REV_D2_TO, kind: 'skate', bow: 15 },
     // 2 — the reverse, drawn as the pass it is: back down the wall behind him,
     //     into the corner. The published key has no symbol for a puck banked off
@@ -306,16 +341,21 @@ const reverse = {
     { from: REV_D1, to: REV_PUCK_TO, kind: 'pass', bow: -6 },
   ],
 
-  puck: { at: 'half-wall:right:far', dx: -6, dy: -3 },
+  // The puck at D1's stick, and its dy has to track REV_D1's. At 4.5 ft from his
+  // centre the disc's inner edge sits a tenth of a foot off the glyph's stroke,
+  // which is what "at his stick" looks like; left at dy -3 when D1 came in off the
+  // boards from 39.5 to 38.5, the disc would have been drawn inside him.
+  puck: { at: 'half-wall:right:far', dx: -6, dy: -4 },
 };
 
 // ---------------------------------------------------------------------------
 // 5 — Rim. Around the boards, onward, to a teammate further along.
 // ---------------------------------------------------------------------------
 
-// The rim's target: a spot ON the left boards low, four feet off the dasher —
-// "aim it to arrive where a teammate can meet it, not simply around". The winger
-// is drawn just up-ice of it, stepping to meet it, rather than standing on it.
+// The rim's target: a spot ON the left boards low, four and a half feet off the
+// dasher (y -38 against boards at -42.5) — "aim it to arrive where a teammate can
+// meet it, not simply around". The winger is drawn just up-ice of it, stepping to
+// meet it, rather than standing on it.
 const RIM_TO = { at: 'boards:left:far', dx: -8, dy: 4.5 };      // (-77, -38)
 
 const rim = {
@@ -344,7 +384,7 @@ const rim = {
     'right corner with an opposition forward between him and the ice, sealing him against the ' +
     'boards. A single dashed route leaves D1, runs down and around the end boards about two and a ' +
     'half feet off the dasher behind the net, and comes out low on the left boards, finishing on the ' +
-    'wall four feet off the dasher. The winger W2 stands a few feet up-ice of where it finishes, ' +
+    'wall four and a half feet off the dasher. The winger W2 stands a few feet up-ice of where it finishes, ' +
     'stepping in to meet it. The goaltender is in the crease.',
 
   players: [
@@ -357,7 +397,15 @@ const rim = {
       label: 'seals the wall' },
     // "Under a rim-heavy structure, you are the rim's target and you're staying
     // low on your own wall to collect it."
-    { id: 'W2', pos: 'F', at: { at: 'half-wall:left:far', dx: -1, dy: -3 }, label: 'the target' },
+    //
+    // HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 and the boards at
+    // y +-42.5 (site/src/data/rink.json). resolve() applies the side sign to the
+    // named position and loc() then adds dy raw, so on a ':left' anchor it is a
+    // NEGATIVE dy that pushes outward. This carried dy: -3 — centre at -41.5, and
+    // the own-team circle (r 2.9) reaching -44.4, so 1.9 ft of winger was drawn
+    // through the lower dasher. The own circle's ceiling is 39.6 nominal and 39.2
+    // once the 0.75 stroke's 0.375 halo counts; at dy 0 the ink stops at -41.8.
+    { id: 'W2', pos: 'F', at: { at: 'half-wall:left:far', dx: -1 }, label: 'the target' },
   ],
 
   routes: [
@@ -473,7 +521,8 @@ const stretch = {
     'of the far blue line because that is what keeps him onside — one skate in contact with the line ' +
     'or behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 in ' +
     'the same words, and a trailing skate in the air still counts because the plane is unbroken, ' +
-    'though under USA Hockey Rule 630(a) an airborne skate is offside. Only the two players the ' +
+    'though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is ' +
+    'offside — two books of the four. Only the two players the ' +
     'option names are drawn for the breaking-out team. And the honest risk: a completed stretch is ' +
     'close to a breakaway, an intercepted one is a full-speed rush the other way with your winger ' +
     'sixty to eighty feet behind the puck, the pass drawn here is over a hundred feet on an NHL ' +
@@ -496,10 +545,22 @@ const stretch = {
     // "the opposition has committed all three forwards deep on the forecheck and
     // their defencemen have stepped up". Three deep, two on the line: that is the
     // shape the read is made against, and the shape is the read.
-    // dy +3 pushes this forechecker off the pass line: at half-wall level the pass
-    // cleared his glyph by two feet, which reads as an interception rather than as
-    // a pass that beat him.
-    { id: 'F1', pos: 'F', team: 'opp', at: { at: 'half-wall:right:far', dx: -6, dy: 3 },
+    //
+    // HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 and the boards at
+    // y +-42.5 (site/src/data/rink.json — read the $comment there before changing
+    // either). The opposition triangle is asymmetric: apex at cy +3.6, base at
+    // cy -1.8, so on the +y wall the ceiling is 38.9 and ANY positive dy here draws
+    // a body through the dasher. This carried dy: 3 — centre at 41.5, apex at 45.1,
+    // 2.6 ft of forechecker through the boards with 0.6 ft of it outside the viewBox
+    // altogether, which is what was truncating the label. The dy was justified as
+    // pushing him off the pass line, and that justification was computed when
+    // half-wall.y was 33. At 38.5 the pass crosses this x at y 26.6 and misses the
+    // glyph's base by ten feet, so there is nothing left to push away from.
+    //
+    // dx -4, not -6, because this end of the wall is round: the apex must also stay
+    // inside the corner arc, radius 28 about (-72, 14.5). At dx -6 the apex clears
+    // that arc by 0.24 ft; at dx -4, by 0.38 — the margin the straight wall gives.
+    { id: 'F1', pos: 'F', team: 'opp', at: { at: 'half-wall:right:far', dx: -4 },
       label: 'all three deep' },
     { id: 'F2', pos: 'F', team: 'opp', at: { at: 'corner:left:far', dx: -2, dy: 4 } },
     { id: 'F3', pos: 'F', team: 'opp', at: { at: 'high-slot::far', dy: 8 } },
@@ -524,12 +585,46 @@ const stretch = {
 
 // The two ends of the trip. The section: "You start high, up on the opposing point
 // man ... you leave the point and drop to the wall between the hash marks and the
-// goal line ... Those two spots are about 40 feet apart." Drawn, they are 41.4 ft
-// apart, which is the section's own figure arrived at rather than rounded toward:
-// the blue line is 64 ft from the goal line and the dot line 20 ft, so a trip from
-// just inside the line to just below the dot line is a shade over forty.
-const WINGER_HIGH = { at: 'point:right:far', dx: -8, dy: 6 };   // (-33, 26)
-const WINGER_LOW  = { at: 'half-wall:right:far', dx: -5, dy: -1 }; // (-74, 32)
+// goal line ... Those two spots are **44 to 64 feet apart** — the point is at the
+// blue line, 64 ft out from the goal line, and the outlet band runs from level with
+// the faceoff dot, 20 ft out from the goal line, down to the goal line itself."
+//
+// DRAWN, THEY ARE NOW 47.8 FT APART — 48.3 along the bowed route — which is inside
+// the section's range instead of under its floor. ASSUMES half-wall.y = 38.5
+// (site/src/data/rink.json).
+//
+// WINGER_HIGH used to be dx -8, dy 6, which put it 56 ft out from the goal line
+// rather than the blue line's 64 and left the pair 42.6 ft apart as the crow flies
+// and 43.1 along the route — under the floor of 44 on every measure, while the
+// caption AND the `describe` both quoted the section's 44-to-64 at the reader, and
+// the `describe` is read aloud by the speech pipeline. The 8 ft was there to keep
+// the glyph off the opposition defenceman standing at 'point:right:far', and the
+// shortfall was reported rather than closed because closing it meant moving a
+// glyph.
+//
+// It is closed by moving the winger UP-ICE rather than sideways, which is what the
+// section describes anyway: "you start high, up on the opposing point man". At
+// dx -2 he is two feet inside the blue line, 62 ft out from the goal line, and the
+// clearance that dy was buying is bought by dy 9 instead — 9.22 ft from the
+// opposition defenceman's anchor, against 10.00 before, so the collision the old
+// placement avoided is still avoided. WINGER_LOW is unchanged at 15 ft out, inside
+// the outlet band. The route's bow is unchanged and its curve peaks at y 37.73,
+// nowhere near the dasher.
+//
+// The alternative was to correct the `describe` to the drawn 42.6 and leave the
+// picture short. Rejected: the caption states 44-to-64 as a fact about the two
+// spots on a real sheet, so a `describe` reading "about forty-three feet" in the
+// same breath contradicts it to a listener who has only the audio — and the
+// picture would still be teaching a shorter trip than the section it illustrates.
+//
+// What stood here before that was "Drawn, they are 41.4 ft apart, which is the
+// section's own figure arrived at rather than rounded toward" against a section
+// quoted as saying "about 40 feet". Both halves were dead. 41.4 is the figure this
+// pair resolved to when half-wall.y was 33, and the section has since replaced
+// "about 40" with the 44-to-64 range the caption already carries.
+const WINGER_HIGH = { at: 'point:right:far', dx: -2, dy: 9 };   // (-27, 29)
+// ASSUMES half-wall.y = 38.5 (site/src/data/rink.json).
+const WINGER_LOW  = { at: 'half-wall:right:far', dx: -5, dy: -1 }; // (-74, 37.5)
 
 const wingerWall = {
   id: 'breakout-winger-wall',
@@ -555,7 +650,8 @@ const wingerWall = {
     'The full sheet, the defending zone at the left. The winger W1 is high in his own zone, just ' +
     'inside the blue line and level with an opposition defenceman standing on that line. A skating ' +
     'route curves from W1 out toward the right boards and then down them, finishing on the wall ' +
-    'just below the hash-mark line, 44 to 64 feet from where it began on an NHL sheet. The defenceman D1 is deep ' +
+    'just below the hash-mark line, some forty-eight feet from where it began — inside the 44 to 64 ' +
+    'feet those two spots are apart on an NHL sheet. The defenceman D1 is deep ' +
     'in the right corner with the puck, which his team has just won. The goaltender is in the ' +
     'crease. No pass is drawn: this diagram is the trip, not the exit.',
 

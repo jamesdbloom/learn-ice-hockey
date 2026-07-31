@@ -8,13 +8,17 @@
 
 ## Overview
 
-Skating is the only skill in hockey that you use on every single second of every shift. Everything else — passing, shooting, checking, reading the play — is performed *while* skating, and is limited by how well you skate. This document covers the physical technique: how to stand, how to push, how to turn, how to stop, and how to get faster. It is the "how to get there" that the rest of this guide assumes you already have.
+Skating is the only skill you use every second you are on the ice; everything else is performed while skating and is limited by how well you do it. What makes a skater fast is technique rather than what they were born with, so it responds to deliberate practice at any age.
 
-It is also the highest-leverage thing you can work on, for three reasons worth stating once: every other skill is performed *while* skating and is limited by it; every tactical system in this guide — [Forechecking Systems](../systems/forechecking_systems.md), [Defensive Zone Coverage](../systems/defensive_zone_coverage.md), [Breakouts](../systems/breakouts.md), [Time and Space](../hockey-iq/time_and_space.md) — describes places you have to *reach* before the play turns; and skating is technique before it is athleticism, so it responds to deliberate practice at any age. What separates fast skaters is usually knee bend, edge control and recovery speed, not what they were born with.
+**Bend your knees until they cover or pass your toes.** Standing too tall is the single most common fault in hockey skating, and it costs four things at once: power, because a straight leg has nothing left to extend; balance; reaction time, because from a straight leg you must bend before you can push; and grip, because you cannot tilt a blade onto its edge without bending the knee and ankle.
 
-If you only read one section, read [The Basic Stance](#the-basic-stance). Almost every skating fault in adult and youth hockey traces back to standing too tall.
+**Push out to the side and slightly back, never straight back.** A blade pushed straight backwards just slides and gives you nothing; Laura Stamm's power-skating material calls that *"one of the most common errors in hockey skating"*, and it persists because it is what walking feels like. Finish the push off the front of the blade — coaching material puts that last flick of the toe at roughly a third of the push's total power.
 
-**If you cannot yet skate at all, this document is one step too early.** Learn to skate first or alongside — public sessions and a learn-to-skate course, not a hockey practice; [Getting Started](../getting-started/getting_started.md) covers how to find both, and why programmes tell you to do it in that order.
+**Then get the foot back under your hips fast — speed is not just a bigger push, it is a quicker return.** (The measurement behind that is a 1975 thesis on fourteen players of mixed levels, correlational: the fast group returned the skate to the ice in 0.37 seconds against the slow group's 0.48.) And races are decided by the first three steps rather than by top speed — nearly every one you contest is over within about three strides, and starting is its own technique: short, quick steps off the front of the blades, torso well forward.
+
+**One instruction outranks all of it.** Go into the wall around the rink on an angle, never straight at it — *"skating into the boards at an angle means better puck control and less risk of injury"* (USA Hockey) — head up, chin off your chest. That is the part you control, several strides out, in the route you choose; what to do once contact is unavoidable belongs to [Body Contact and Battles](body_contact_and_battles.md), and nothing here replaces it.
+
+**If you cannot yet skate at all, this is one step too early** — [public sessions and a learn-to-skate course](../getting-started/getting_started.md) first, not a hockey practice.
 
 ---
 
@@ -828,20 +832,62 @@ The realistic framing for an adult player: **you will not become fast this month
 - **Never having learned to fall or get up.** You will do both far more often than you will do a mohawk, and only one of them can hurt you. **And getting the chin backwards.** Tuck your chin falling *backwards to the ice* — it keeps your skull off the surface. Do **not** tuck it going *forwards into the boards*: that is the "Heads Up, Don't Duck" case, where a tucked chin straightens the cervical spine to take an axial load.
 - **Practising only your strong side**, because it's more fun to do things you're good at.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You have been given three cues: knees bent to about 90 degrees, "shoulders,
+   knees and toes in a straight line", and "sit on an invisible stool". Why can
+   you not act on all three at once, and which one belongs to backward skating?
+   *(§Knee bend — the one that matters)*
+
+2. Why does pushing straight back give you nothing? Say what direction the push
+   actually goes, and what share of its power coaching sources put on the part
+   most players leave out entirely. *(§The push)*
+
+3. A crossover has two pushes. Name both, say which one most players have switched
+   off, and describe the drill that makes you feel it. *(§Crossovers — the
+   mechanics)*
+
+4. A defenceman either leaves a huge gap and gets walked into the zone, or pivots
+   early and is beaten by the first change of direction. Why does this document
+   call both of those skating failures rather than decision failures? *(§Why it's
+   a defenceman's skill specifically)*
+
+5. Which way should a defenceman pivot by default, and what is the reasoning — in
+   terms of the failure, not the aesthetics? Give the two caveats that stop it
+   being a law. *(§Which way to pivot — a coaching default, not a law)*
+
+6. Going into the boards, exactly one part of it is a skating decision. What is
+   it, when do you make it, and which document owns everything after that point?
+   *(§Arriving at the boards)*
+
+7. You are falling backwards onto the ice; separately, you are heading forwards
+   into the boards. What do you do with your chin in each case, and what single
+   principle underneath both explains why they differ? *(§Falling and getting up)*
+
+8. You can only stop properly one way. Name two specific things that costs you
+   during a game, and the fix. *(§The point most players never fix)*
+
+---
+
 ## Key Takeaways
 
-1. **Bend your knees.** Knees over the toes, chest up, weight on the balls of your feet, head up, hands in front. Standing tall is the fault behind most other faults. The one deliberate exception is hard acceleration, where the torso does lean forward.
-2. **Hockey is played on edges, not flat blades.** Inside edges make power; outside edges give control — and for most players the outside edges are the biggest single weakness, because they are the ones you never land on by accident.
-3. **Push out to the side and back, never straight back**, and finish with the toe. Coaching sources put the toe flick alone at roughly a third of the push's power.
-4. **Recover the foot under your hips, and recover it fast.** Coaching research says fast skaters return the recovery skate to the ice more quickly than slow ones — speed is not just a bigger push.
-5. **Starting is a different technique from striding** — short, quick, toe-driven steps on the inside edges, torso leaning about 45 degrees forward. The first three steps win most races in hockey.
-6. **A crossover has two pushes.** If you're just stepping one foot over the other, you're using half of it.
-7. **Backward crossovers are the defenceman's skill.** You cannot hold a gap you're not fast enough to hold, and you cannot pivot late unless your backward skating is good enough to survive holding it.
-8. **Pivot late, open the hips before the shoulders, and — as a default — pivot toward the boards** so that being beaten costs you the wall rather than the slot.
-9. **Learn to stop both ways.** Every player has a weak side; the ones who don't fix it spend the whole game taking longer routes to avoid it.
-10. **Train the weak side deliberately and persistently** — two laps weak for every one strong is the common prescription, a coaching rule of thumb rather than a measured optimum. Get someone to film you, and expect months for the basics and years for the rest; those timeframes come from one coaching provider's guidance, not from measurement.
-11. **Head up, don't duck, and never arrive at the boards perpendicular or head-first.** Go in on an angle; if contact is coming, get your **skates parallel to the wall** and take it on your **forearm and hip** — not the point of your shoulder, and never your back. A chin tucked to the chest straightens the cervical spine and is the posture behind almost every catastrophic neck injury in hockey; it can happen at walking speed. This is the most important thing on this list. See [Arriving at the boards](#arriving-at-the-boards--head-up-skates-parallel-take-it-along-your-side) and [Body Contact and Battles](body_contact_and_battles.md).
-12. **Learn to fall and learn to get up.** You will do both far more often than anything else here, and falling is the only item on this list that can hurt you. Tuck your chin falling *backwards to the ice*; do **not** tuck it going *forwards into the boards*.
+1. **Head up, chin off your chest, and never arrive at the boards perpendicular or head-first.** Go in on an angle; if contact is coming, get your **skates parallel to the wall** and take it on your **forearm and hip** — not the point of your shoulder, and never your back. **Going forwards into the boards, never duck** — a chin tucked to the chest straightens the cervical spine, which is the posture behind almost every catastrophic neck injury in hockey, and it can happen at walking speed. **That is the boards case. Falling *backwards to the ice* is the opposite case and takes the opposite chin — takeaway 10 has it.** This outranks everything else on this list. See [Arriving at the boards](#arriving-at-the-boards--head-up-skates-parallel-take-it-along-your-side) and [Body Contact and Battles](body_contact_and_battles.md), which owns the full three-case rule.
+2. **Bend your knees until they cover your toes** — chest up, weight on the balls of your feet, head and hands up. Standing tall is the fault behind most other faults; hard acceleration, where the torso does lean forward, is the one deliberate exception.
+3. **Hockey is played on edges, not flat blades.** Inside edges make power, outside edges give control — and your outside edges are almost certainly your biggest single skating weakness.
+4. **Push out to the side and slightly back, never straight back**, and finish with the toe — coaching sources put the toe flick alone at roughly a third of the push's power.
+5. **Recover the foot under your hips, and recover it fast** — speed is not just a bigger push. The measurement behind that is a 1975 thesis on fourteen players of mixed levels, correlational: 0.37 seconds to return the skate against the slow group's 0.48.
+6. **Starting is a different technique from striding** — short, quick, toe-driven steps on the inside edges, torso leaning about 45 degrees forward. Almost every race you contest is decided within about three strides.
+7. **A crossover has two pushes.** If you are just stepping one foot over the other, half the propulsion is switched off — the under-push of the inside leg is the half that is missing.
+8. **Backward skating is the defenceman's skill: you cannot hold a gap you are not fast enough to hold.** Pivot late, open the hips before the shoulders, and — as a coaching default, not a law — pivot toward the boards, so that being beaten costs you the wall rather than the slot. Ask your coach which they want, and drill both directions.
+9. **Learn to stop both ways, and train the weak side deliberately.** Two laps weak for every one strong is the common prescription — a coaching rule of thumb, not a measured optimum. Have someone film you, because you cannot see yourself skate; expect months for the basics and years for the rest, on one coaching provider's guidance rather than on measurement.
+10. **Learn to fall and learn to get up.** Take two or three seconds to check you are not injured before you rise, and stay down if you are hurt. Go to the side onto hip and thigh, never onto a locked arm. **The chin has two opposite cases, so take the right one.** Tuck your chin falling *backwards to the ice* — it keeps your skull off the surface. Do **not** tuck it going *forwards into the boards*: that is the "Heads Up, Don't Duck" case of takeaway 1, where a tucked chin straightens the cervical spine to take an axial load. **Falling flat: chin in. Hitting a wall: head up.**
 
 ---
 

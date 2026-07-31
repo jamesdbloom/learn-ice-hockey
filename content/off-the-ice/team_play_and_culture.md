@@ -7,9 +7,17 @@
 
 ## Overview
 
-Every other document here is about what you do with a puck. This one is about being someone a team wants on the ice with them — and about the conventions nobody explains to a new player, because everybody else learned them by osmosis and has forgotten they were ever learned at all.
+The fastest way to be accepted by a hockey team is reliability, not skill. Being where you said you would be is what lets a teammate pass without looking up first.
 
-**A warning about what kind of document this is.** The rules sections here are verified against the NHL, IIHF and USA Hockey rulebooks and cited by rule number. Almost everything else is *convention* — practice that is widespread, unwritten, unenforceable, and genuinely different between countries, levels and even individual rinks. Where something is convention rather than rule, it is labelled as convention. Do not repeat any of the convention material to a referee as though it were in a book. It isn't.
+**Trust on a team is a prediction problem rather than a feeling.** A predictable teammate beats a brilliant unpredictable one, and the understanding between players who suit each other comes from repetition rather than friendship. Adapt to your linemates; they will not adapt to you.
+
+**The bench is a working position.** Know exactly who you are replacing, be at the bench door before you need to be, and say your change out loud — too many players on the ice is a communication failure rather than a rules one. Under NHL Rule 74.1 the player coming off must be within five feet of the bench and out of the play before the substitute steps on, and after your own team is called for icing you may not change at all, subject to three exceptions (**NHL Rule 82.1**; **IIHF Rule 81.4** imposes the same bar, and adds a fourth exception for a broken skate). **USA Hockey imposes no substitution bar after an icing at all**, so if you play under that book the tired five can leave.
+
+**Arguing has essentially never reversed a call, and it is itself a penalty.** Simply disputing a ruling is a minor penalty under NHL Rule 39.2(i), and leaving the bench to argue is another under 39.2(iv). In the NHL only the captain may raise a rule interpretation with a referee, and only when invited to — **that invitation clause is NHL-specific**: the IIHF book, which Britain plays under, restricts who may speak but requires no invitation, and USA Hockey attaches the privilege to one of up to three designated players, rather than to the captain-when-on-the-ice.
+
+**When someone is down and not getting up, stop playing and wave for the bench and the officials — and if it is a head or neck injury, do not move them.** Keep them still and wait for whoever is trained.
+
+**Almost everything else a team expects of you is convention rather than rule** — unwritten, unenforceable, and different between countries, levels and rinks. Keep giving a struggling teammate the puck, never show frustration at one on the ice, and copy the most respected players on your own team. Do not quote any of it to a referee as though it were in a book.
 
 ---
 
@@ -90,11 +98,15 @@ What that means for you, in order:
 
 **When not to change** is more important than how. Never change when the opposition has the puck in your zone, when you are the last defender back, or after your own team has iced the puck. On an icing, **NHL Rule 82.1 forbids the offending team from making any substitution before the ensuing faceoff** — the tired five stay out for a defensive-zone draw. The same rule applies to a team in violation of Rule 63.8 (delaying the game).
 
-**Rule 82.1 does allow three exceptions**, and they are worth knowing because players assume the ban is absolute:
+**Which book you are under decides whether this is your problem.** **IIHF Rule 81.4** carries the same bar in almost the same words — *"A team that is in violation of this rule shall not be permitted to make any Player substitutions prior to the ensuing 'face-off'"* — so it holds in British league hockey, which plays the IIHF book. **USA Hockey imposes no substitution bar after an icing at all**: Rule 624 (Icing the Puck) contains no substitution clause, and Rule 204(a) permits a change at any stoppage with no icing carve-out. Under USA Hockey the tired five can leave.
+
+**NHL Rule 82.1 does allow three exceptions**, and they are worth knowing because players assume the ban is absolute:
 
 1. **To replace a goaltender who had been substituted for an extra attacker** — so a team that iced it with the net empty can put its goalie back.
 2. **To replace an injured player.**
 3. **When a penalty has been assessed that affects the on-ice strength of either team.**
+
+**IIHF Rule 81.4 lists a fourth that the NHL rule does not have** — *"a Player with a broken skate"*. If you play under the IIHF book, a snapped blade gets that player off; under the NHL book it does not.
 
 The rule also fixes the timing precisely: **"the determination of players on ice will be made when the puck leaves the offending player's stick."** Whoever was out there at that instant is who stays out. That's covered in depth in [Game Management](../systems/game_management.md).
 
@@ -411,7 +423,7 @@ Either way, a goalie who is the obvious leader of a team ends up leading without
 
 ### Most leadership has no letter
 
-This is the important part. On any team, the letters go to at most four people, and the behaviour that determines a team's culture is distributed across everyone. In practice, the people who most shape a room are:
+This is the important part. On any team, the letters go to at most three people — one captain and up to two alternates, or no captain and up to three alternates (NHL Rule 6.1) — and the behaviour that determines a team's culture is distributed across everyone. In practice, the people who most shape a room are:
 
 - **The player who is always the first one dressed and the last one off the ice.** Nobody announces this. Everybody notices it.
 - **The player who talks on the ice.** The organising principle in [On-Ice Communication](../foundation/on_ice_communication.md) is that the player who can see it makes the call — which means the loudest useful voice on your team may well be your least experienced player, and that is correct.
@@ -523,7 +535,7 @@ Coaches are usually bad at giving unsolicited individual feedback, not because t
 - **Sitting on the boards.** It's a minor penalty after one team warning (NHL Rule 75.2(iv)) and it's dangerous.
 - **Helping a downed player up.** The instinct is to reach for them. With a head or neck injury it is the most damaging thing you can do — **do not move them**, kneel beside them, keep them still, and wait for whoever is trained.
 - **Arguing a call.** It has essentially never worked, and NHL Rule 39.2(i) makes disputing a ruling a minor penalty in itself — no swearing required.
-- **A non-captain talking to the referee.** Under NHL Rule 6.1 the privilege belongs to the captain, only when invited, and complaining about a penalty is explicitly not covered at all. Note that the "only when invited" wording is NHL-specific and has no IIHF equivalent.
+- **A non-captain talking to the referee.** Under NHL Rule 6.1 the privilege belongs to the captain, only when invited, and complaining about a penalty is explicitly not covered at all. Note that the "only when invited" wording is NHL-specific and has no IIHF equivalent — IIHF Rule 6.1 restricts *who* may talk but requires no invitation. **USA Hockey is different again:** Rule 202(a) gives the privilege to **one** of up to three designated players — a captain and up to two alternates — rather than to the captain-when-on-the-ice, so find out which of your three has it before you are the one who speaks.
 - **Coming off the bench to protest.** Automatic minor under Rules 6.1 and 39.2(iv), every time.
 - **Expecting linemates to adapt to you.** You can change what you give them tomorrow; you cannot change their game mid-season.
 - **Visible frustration at a teammate.** It tells the opposition where to attack, demoralises the bench, and takes you out of the play for two seconds — which is how long a goal takes.
@@ -534,27 +546,69 @@ Coaches are usually bad at giving unsolicited individual feedback, not because t
 - **Being new and having opinions.** Listen for three weeks. Then have them.
 - **Treating any of the conventions in this document as rules.** They differ by country, level and rink, and none of them are enforceable.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You are next over the boards. Rule 74.1 puts two conditions on the player
+   coming off, not one. What are they — and what should you say out loud before
+   you go? *(§The mechanics of a change on the fly)*
+
+2. Your team has just iced the puck and your line is exhausted. Can you change?
+   Name the three exceptions under the NHL book, the fourth the IIHF adds, and say
+   at what exact instant the on-ice five is determined. Which book lets your line
+   off regardless? *(§The mechanics of a change on the fly)*
+
+3. You think the referee got one wrong. Who on your team may raise it, under what
+   condition, and what happens to you if what you raise turns out to be a
+   complaint about a penalty rather than an interpretation? *(§Talking to
+   Officials)*
+
+4. That last answer was the NHL's. How do the IIHF and USA Hockey differ on who
+   may talk to the referee — and on whether a goaltender may be captain at all?
+   *(§Talking to Officials, §Captains and Leadership Without a Letter)*
+
+5. An opponent goes down and stays down while your team is attacking on a
+   two-on-one. Does play stop? What if you were cycling harmlessly in the corner
+   instead — and what must you not do if it is a head or neck injury? *(§Helping
+   an injured player)*
+
+6. Your league is "non-check". Name three things that are still legal, and the
+   thing that is not. *(§Non-contact league etiquette)*
+
+7. A linemate keeps turning up somewhere you did not expect. Which way does the
+   adaptation run, and why does the document say a predictable teammate beats a
+   brilliant unpredictable one? *(§Being a Good Linemate)*
+
+8. You are seven goals up with ten minutes left. Is there a rule against scoring?
+   What is the convention — and what does the document say is worse than
+   continuing to try? *(§Not running up the score)*
+
 ---
 
 ## Key Takeaways
 
-1. **Trust is a prediction problem, not a feeling.** Hockey requires you to pass to where someone will be and to leave your assignment to cover theirs. Teams that can't predict each other stop covering, and that shows up on the scoreboard.
-2. **The bench is a working position.** Sit in line order, watch the play and your matchup, know exactly who you're replacing, and be at the door before you need to be.
-3. **The five-foot rule governs every change on the fly.** NHL Rule 74.1: the player leaving must be within five feet of the bench *and out of the play* before the substitute steps on. Announce your change out loud — too many men is a communication failure, not a rules failure. After your own icing you cannot change at all, subject to Rule 82.1's three exceptions (goalie back in for the extra attacker, injury, or a penalty that changes on-ice strength).
-4. **Adapt to your linemates; they will not adapt to you** — and **a predictable teammate beats a brilliant unpredictable one.** Consistency is what lets a defenceman release the puck without looking up, which is what stops the turnover.
-5. **Chemistry is complementary tendencies plus shared assumptions — not friendship.** It comes from repetition, which is why constant line juggling has a real cost.
-6. **Only the captain may raise a rule interpretation with an NHL referee, and only when invited** (NHL Rule 6.1). A complaint about a penalty is explicitly not a rule interpretation, and coming off the bench to argue is an automatic minor under Rule 39.2(iv). **The "when invited" clause is NHL-specific** — IIHF Rule 6.1 restricts *who* talks but does not require an invitation, and USA Hockey attaches the privilege to any one of the three designated players.
-7. **Simply disputing a ruling is a minor penalty** (NHL Rule 39.2(i)), and persistence escalates to a misconduct and then a game misconduct. Arguing has essentially never reversed a call.
-8. **When a teammate is struggling, keep giving them the puck**, and **never show frustration at a teammate on the ice.** Cutting someone out is the most damaging reaction available; visible frustration advertises your weak point to the opposition and costs you two seconds of backcheck. Deal with it after the game, about one specific play, once.
-9. **Most leadership on a team has no letter on the jersey.** Being first dressed, talking on the ice, welcoming new players and not sulking after a bad shift require no seniority and no permission — and the fastest way to be accepted on a new team is **reliability, not skill**.
-10. **When someone is down and not getting up, stop playing, wave for the bench and the officials — and if it is a head or neck injury, do not move them.** Kneel next to them, keep them still and calm, and wait for whoever is trained. Assume a possible spinal injury in any head injury. This is the one convention on the list where getting it wrong has permanent consequences — see [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Conditioning and Recovery](conditioning_and_recovery.md).
-11. **"Non-check" does not mean "no contact."** Angling, physical engagement and holding established position are legal (USA Hockey Rule 604); overt hip, shoulder or forearm action to separate a player from the puck is not. **And almost everything in this document except the cited rules is convention** — watch what the most respected players on your own team do, and copy that.
+1. **When someone is down and not getting up, stop playing, wave for the bench and the officials — and if it is a head or neck injury, do not move them.** Kneel next to them, keep them still, and wait for whoever is trained. Assume a possible spinal injury in any head injury. This is the one convention here where getting it wrong has permanent consequences — see [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Conditioning and Recovery](conditioning_and_recovery.md).
+2. **The five-foot rule governs every change on the fly.** NHL Rule 74.1: the player leaving must be within five feet of the bench *and out of the play* before the substitute steps on, and getting it wrong is a bench minor. Say your change out loud — almost every too-many-men penalty is a communication failure at the door rather than a rules misunderstanding.
+3. **After your own icing you cannot change at all under NHL Rule 82.1 or IIHF Rule 81.4** — subject to three exceptions (goalie back in for the extra attacker, injury, or a penalty that changes on-ice strength), to which the IIHF adds a broken skate. **USA Hockey imposes no such bar**: Rule 624 carries no substitution clause and Rule 204(a) no icing carve-out. The on-ice five is fixed at the instant the puck leaves the offending player's stick.
+4. **"Non-check" does not mean "no contact."** USA Hockey Rule 604(a) prohibits body checking in the 12-and-under classifications and below, all girls' and women's classifications, and all non-check adult classifications — but angling, physical engagement and collisions where you hold legally established position remain legal. What is prohibited is overt hip, shoulder, forearm or torso action to separate an opponent from the puck **with no effort to play it** (Rule 604 Note 1): a minor, a major plus game misconduct if it recklessly endangers, potentially a match penalty.
+5. **Simply disputing a ruling is a minor penalty** (NHL Rule 39.2(i)) — note that this is the plain act of disputing, with no requirement of rudeness — escalating to a misconduct (39.4(iii)) and then a game misconduct (39.5(i)). NHL officials cannot rescind a called penalty on a protest; the only reversal mechanism is video review, and in amateur hockey there is even less recourse.
+6. **Only the captain — or an alternate captain when the captain is not on the ice (NHL Rules 6.1 and 6.2) — may raise a rule interpretation, and in the NHL only when invited.** A complaint about a penalty is not an interpretation and draws a minor of its own, and coming off the bench to argue is an automatic minor under Rules 6.1 and 39.2(iv). **The invitation clause is NHL-specific** — IIHF Rule 6.1 restricts *who* may talk but requires no invitation, and under USA Hockey Rule 202(a) the privilege belongs to one designated player out of a captain and up to two alternates.
+7. **Adapt to your linemates; they will not adapt to you** — convention and craft, not rule. **A predictable teammate beats a brilliant unpredictable one**, because consistency is what lets a defenceman release the puck without looking up.
+8. **Trust is a prediction problem rather than a feeling, and chemistry is mostly not friendship** — it is complementary tendencies plus shared assumptions, built by repetition, which is why constant line juggling has a cost. Friendship helps the communication that builds those assumptions: a real but indirect contribution.
+9. **When a teammate is struggling, keep giving them the puck.** React to your own errors visibly at most, and to a teammate's never — cutting someone out is the most damaging reaction available. Never retaliate on the ice or short a teammate you are annoyed with. Deal with it after the game, about one specific play, once.
+10. **The bench is a working position, and most leadership on it has no letter on the jersey.** Where you sit is convention rather than rule, but know exactly who you are replacing and be at the door before you need to be. Being first dressed, talking on the ice, welcoming new players and not sulking need no permission — and the fastest way to be accepted is **reliability, not skill**.
 
 ---
 
 *Sources — retrieved 27 July 2026:*
 
-*Rules — captains, officials and conduct: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 3 Benches; Rule 6 Captain and Alternate Captains; Rule 8 Injured Players; Rule 10 Sticks; Rule 16 Minor Penalties; Rule 24 Penalty Shot; Rule 39 Abuse of Officials; Rule 40 Physical Abuse of Officials; Rule 69 Interference on the Goalkeeper; Rule 70 Leaving the Bench; Rule 71 Premature Substitution; Rule 74 Too Many Men on the Ice; Rule 75 Unsportsmanlike Conduct; Rule 82 Line Changes) · [IIHF Official Rule Book 2025/26](https://www.iihf.com/en/statichub/8674/rules) (Rule 6 Captain and Alternate Captains — verified against the rulebook text: **no "when invited" clause**; one captain and no more than two alternates; no goalkeeper as captain or alternate) · [USA Hockey Official Playing Rules 2025-29](https://www.usahockeyrulebook.com/) (Rule 202 Captain of Team — **"no goalkeepers shall be entitled to exercise the privileges of Captain"**; Rule 204(a) Playing Lineup and Substitution — **five seconds to each team**, not the NHL's 5/8 split; Rule 604 Body Checking; Competitive Contact definitions and Standard of Play)*
+*Rules — captains, officials and conduct: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 3 Benches; Rule 6 Captain and Alternate Captains; Rule 8 Injured Players; Rule 10 Sticks; Rule 16 Minor Penalties; Rule 24 Penalty Shot; Rule 39 Abuse of Officials; Rule 40 Physical Abuse of Officials; Rule 69 Interference on the Goalkeeper; Rule 70 Leaving the Bench; Rule 71 Premature Substitution; Rule 74 Too Many Men on the Ice; Rule 75 Unsportsmanlike Conduct; Rule 82 Line Changes) · [IIHF Official Rule Book 2025/26](https://www.iihf.com/en/statichub/8674/rules) (Rule 6 Captain and Alternate Captains — verified against the rulebook text: **no "when invited" clause**; one captain and no more than two alternates; no goalkeeper as captain or alternate; Rule 81.4 Line Change on Icing — the same substitution bar as NHL 82.1, with a fourth exception, *"a Player with a broken skate"*) · [USA Hockey Official Playing Rules 2025-29](https://www.usahockeyrulebook.com/) (Rule 202 Captain of Team — **"no goalkeepers shall be entitled to exercise the privileges of Captain"**; Rule 204(a) Playing Lineup and Substitution — **five seconds to each team**, not the NHL's 5/8 split, and **no icing carve-out**; Rule 624 Icing the Puck — checked and found to contain **no substitution clause at all**; Rule 604 Body Checking; Competitive Contact definitions and Standard of Play)*
 
 *Handshake line and officials' authority: [USA Hockey Official Rules and Casebook 2025-29](https://www.usahockeyrulebook.com/), Casebook — Officials, Situation 2 (rule reference 502(a))*
 

@@ -7,9 +7,15 @@
 
 ## Overview
 
-Every time you touch the puck you place a bet. You are trading a chance of gaining something against a chance of losing something, and the two are almost never equal in size. This document is about learning to see that trade clearly and fast enough to act on it.
+Every time you touch the puck you place a bet, and what you stand to lose depends more on where you are standing than on what you try.
 
-This is the thing coaches mean when they say a player "makes good decisions", and it is almost never taught explicitly. Players get told *what* the right play was after it went wrong. They rarely get told *how to work it out in advance*. That is what follows: the map, the rules, the checklists, and the reasons behind each — because a rule you understand transfers to situations nobody described to you, and a rule you memorised does not.
+**So change where you are standing before you decide.** The same pass is brilliant in the corner of their end and catastrophic in front of your own net, so one stride out of that ice improves every option on your list. Ranked by what a mistake costs: in front of your own net catastrophic, the rest of your own end high, the middle third of the ice high too because a turnover there hands them an attack where they outnumber you, their corners nearly free. And losing the puck while it travels toward your own net is worse than losing it going the other way, because the turnover and the counter-attack are then one event.
+
+**Understand the "never" list rather than memorising it.** There are nine, all set out below with the reason attached; five of them are no cross-ice pass in your own end, no blind backhand up the middle, never both defencemen to the same puck, never stickhandle in front of your own net, and never leave your feet to hit. **Two of the nine are named in a rulebook — one of them is in that five, and one is not.** Putting the puck **directly** over the glass from your own end is a minor penalty (NHL Rule 63.2) — *directly* is the word that decides most real cases, because the rule reaches a shot or bat that goes out "directly (non-deflected)", so a puck that clips a stick, a glove or a shoulder on its way out is not a penalty. And leaving your feet to check someone is written into the charging offence by name in **all four rulebooks**: NHL Rule 42.1 penalises a player who "skates, jumps into or charges an opponent in any manner", IIHF Rule 42.1 uses almost the same words and makes "jumps to check an opponent" the first branch of its definition, USA Hockey Rule 607 includes "leaving one's feet (jumping)", and Hockey Canada Rule 7.4 opens "Charging is when a player: i. Jumps to check an opponent." The other seven are conventions — and a convention you understand transfers to situations nobody described to you.
+
+**A minor penalty is roughly a one-in-five chance of a goal against** — 21.1% across the 2025-26 NHL regular season. Worth it to stop a certain goal, almost never worth it out of frustration. And chasing a puck carrier you cannot catch is worse than it looks: foul them from behind when they are clear with only the goaltender to beat, and the NHL rulebook gives them a penalty shot (Rule 57.3), not a two-minute penalty.
+
+**When you genuinely have nothing, take the hit and accept the faceoff that follows — and take the hit properly.** Skates parallel to the wall, contact on your forearm and hip, head up and chin off your chest, never with your back to the wall. Then do not compound it: the odds on the next play have nothing to do with the last one.
 
 ---
 
@@ -118,7 +124,7 @@ A turnover has a direction, and the direction changes the cost more than the loc
 
 **Read the reason, not the rule.** Every item below is a rule with a mechanism, and the mechanism is what lets you handle the case nobody warned you about.
 
-**Only one of the nine is an actual law of hockey: number 9, the puck over the glass.** The other eight are coaching conventions — near-universally taught, but conventions all the same, and each is flagged as such below. Several of them carry a *secondary* penalty risk, which is a different thing from being a rule, and that is noted where it applies.
+**Two of the nine are named in a rulebook: number 9, the puck over the glass (NHL Rule 63.2), and number 7, leaving your feet to hit — which all four rulebooks write into the charging offence by name (NHL 42.1, IIHF 42.1, USA Hockey 607, Hockey Canada 7.4).** The other seven are coaching conventions — near-universally taught, but conventions all the same, and each is flagged as such below. Several of them carry a *secondary* penalty risk, which is a different thing from being a rule, and that is noted where it applies.
 
 ### 1. Never pass D-to-D through the slot — go behind the net
 
@@ -234,9 +240,11 @@ Convention: Not a rule — about as close to unanimous as coaching advice gets, 
 Never: Leave your feet to make a check — you cannot change direction in the air
 Risk: A carrier who reads it makes you miss with one movement, and you are out of the play for four or five seconds
 Action: Skate, stay on your feet and keep your stick in the lane — take away the option rather than the puck
-Rule: NHL Rule 42.1 penalises a player who "skates, jumps into or charges" an opponent, and USA Hockey Rule 607 names "leaving one's feet (jumping)" — the leap is written into the offence
+Rule: All four books write the leap into the charging offence by name — NHL 42.1, IIHF 42.1, USA Hockey 607, Hockey Canada 7.4
+Rule: Hockey Canada Rule 7.4 Interpretation 1 defines the jump as the feet leaving the ice before contact — skates that come off after contact, during an otherwise legal check, are not charging
+Rule: IIHF Rule 48.1(IV) makes jumping to deliver a blow to the head or neck a separate offence — 48.2 sets the floor at a minor for any illegal check to the head or neck, and 48.3 is the ceiling, where the referee may assess a major and an automatic game misconduct for reckless endangerment
 Technique: Blocking a shot is a separate question, and the coached default is a standing block — close with your feet, not by lunging
-Key: The real cost is positional, not disciplinary — down is out of the play
+Key: The penalty risk is real and primary, and the positional cost sits on top of it — down is out of the play
 ```
 
 **Why not.** You cannot change direction in the air. A puck carrier who reads it makes you miss with one movement, and you are now on the ice behind the play, out of it entirely, for four or five seconds. The upside is small — best case you break up one play — and the downside is that you have removed yourself from the defensive structure at the precise moment it needed five players.
@@ -245,9 +253,10 @@ Key: The real cost is positional, not disciplinary — down is out of the play
 
 *Part coaching convention, part rule — and the two halves are worth separating.*
 
-- **⚠️ Leaving your feet to check someone *is* itself named as an offence, whatever you may have been told.** **NHL Rule 42.1 (Charging)** opens: *"A minor or major penalty shall be imposed on a player who **skates, jumps into** or charges an opponent in any manner."* Jumping is listed as its own penalisable action, alongside charging, before the rule goes on to define a charge by "distance traveled". **USA Hockey Rule 607** is explicit in the same direction: charging *"includes skating or **leaving one's feet (jumping)** into the opponent to deliver a check."* So the disciplinary risk of leaving your feet is not secondary — it is written into the rule by name. **Rule 44.1 (Clipping)** is about "throwing the body across or below the knees of an opponent"; it notes that an illegal low hit may be delivered by a player who "may or may not have both skates on the ice", which means that for *clipping* specifically, feet-off-the-ice is neither necessary nor sufficient. But that is a point about clipping, not a general licence: under 42.1 and USA Hockey 607 the leap is named. Treat the penalty risk of leaving your feet as **real and primary**, on top of the positional cost below.
+- **⚠️ Leaving your feet to check someone *is* itself named as an offence, whatever you may have been told.** **NHL Rule 42.1 (Charging)** opens: *"A minor or major penalty shall be imposed on a player who **skates, jumps into** or charges an opponent in any manner."* Jumping is listed as its own penalisable action, alongside charging, before the rule goes on to define a charge by "distance traveled". **USA Hockey Rule 607** is explicit in the same direction: charging *"includes skating or **leaving one's feet (jumping)** into the opponent to deliver a check."* **IIHF Rule 42.1** — the book British hockey plays under — is almost word-for-word with the NHL, *"A penalty shall be imposed on a Player who skates, **jumps into an opponent**, or charges an opponent in any manner"*, and then makes the jump the *first* branch of its definition: charging means a player who *"either **jumps to check an opponent**, builds up speed by taking multiple strides"*. **Hockey Canada Rule 7.4** opens the offence with it outright — *"Charging is when a player: i. **Jumps to check an opponent.**"* Hockey Canada then does what the other three books do not: it defines the leap, and the definition carries an exception. **Interpretation 1** to Rule 7.4 reads that *"a 'jumping' action will be defined as when a player's feet leave the ice **prior to** making body contact with their opponent"*, and that if a player's feet come off the ice *"**after** contact is made with their opponent, during an otherwise legal check, this will **NOT** be considered a Charging penalty because the player's skates were on the ice at the time of body contact."* **The offence is the takeoff, not the follow-through** — so the thing to get right is being on your skates at the moment you make contact, not staying pinned to the ice through the finish. That is Hockey Canada's own interpretation, and the other three books do not spell it out, so do not carry it into a game played under them as settled. Either way, the disciplinary risk of leaving your feet is not secondary — all four books write it into the rule by name. **Rule 44.1 (Clipping)** is about "throwing the body across or below the knees of an opponent"; it notes that an illegal low hit may be delivered by a player who "may or may not have both skates on the ice", which means that for *clipping* specifically, feet-off-the-ice is neither necessary nor sufficient. But that is a point about clipping, not a general licence: all four books name the leap in the charging offence — NHL 42.1, IIHF 42.1, USA Hockey 607 and Hockey Canada 7.4. Treat the penalty risk of leaving your feet as **real and primary**, on top of the positional cost below.
 - **Blocking a shot or a pass is a separate question, and it is coached technique — but the coached default is a *standing* block, not a slide.** [Body Contact and Battles → Shot Blocking](../technique/body_contact_and_battles.md) owns the method: get close, present your padded surfaces square to the puck, keep your feet on the ice, keep your head out of the lane, keep your hands tucked behind you, never turn your back or sideways, don't lead with your stick — and **"close with your feet, not by lunging. A lunge is a slide, and a slide that misses is a defender out of the play with no way to recover."** A dropped or sliding block is a specific choice for a specific moment, not the technique to learn first, and it is explicitly wrong on a 2-on-1 (where your job is the pass) and when you are screening your own goalie.
-- **The real cost is positional, not disciplinary.** Down is out of the play. That is the reason to stay up, and it applies just as much when there is no penalty in prospect.
+- **And even with no penalty in prospect, the positional cost alone is reason enough.** Down is out of the play. That reason to stay up applies on every leap, including the ones no referee punishes — it sits on top of the penalty risk above, not instead of it.
+- **⚠️ Leave your feet near an opponent's head and it stops being a charging question.** **IIHF Rule 48.1(IV)** makes it a separate offence in its own right — *"A Player who **jumps (leaves their skates)** to deliver a blow to the head or neck of an opponent"*. **The floor is a minor.** Under **Rule 48.2**, *"The Referee shall, at their discretion, assess a minor penalty to any Player who delivers an 'illegal check to the head or neck' of an opponent"* — that is the baseline for any illegal check to the head or neck. **Rule 48.3** is the ceiling above it: the referee may assess *"a major penalty and an automatic game misconduct penalty"* where the player *"recklessly endangers their opponent"*. That top end is a discretionary call on severity, not an automatic ejection for every jump — but a jump at the head the referee does not judge reckless is not therefore free. It is a minor at the baseline, and the major sits above it.
 
 ### 8. Never change with the puck in your defensive zone, or when the play is coming at you
 
@@ -270,6 +279,7 @@ Convention: No rule forbids changing at a bad moment — 74.1 governs only how t
 
 ```facts
 Rule: Shooting or batting the puck directly out of the playing surface from your defending zone is a minor, except where there is no glass (NHL Rule 63.2(iii))
+Rule: "Directly (non-deflected)" is the operative wording — a puck deflected off a stick, a glove or a body on its way out is not a penalty (NHL Rule 63.2(iii))
 Rule: What counts is where the puck was when you hit it, not where it crossed the glass (NHL Rule 63.2(iii))
 Rule: Over the glass behind the players' bench is penalised; into the bench itself is not (NHL Rule 63.2(iii))
 Rule: Directly off a faceoff, no penalty is assessed (NHL Rule 63.2(iii))
@@ -279,11 +289,14 @@ Action: Off the glass and out — hard, low and along the boards so it stays in;
 Action: Check your league — many recreational and youth associations do not enforce puck-over-glass at all
 ```
 
-**This is an actual rule, not a convention.** NHL **Rule 63.2(iii)** imposes a minor penalty on any player who "shoots or bats (using his hand or his stick) the puck directly (non-deflected) out of the playing surface from his defending zone, except where there is no glass." Three details that matter on the ice:
+**This is an actual rule, not a convention.** NHL **Rule 63.2(iii)** imposes a minor penalty on any player who "shoots or bats (using his hand or his stick) the puck directly (non-deflected) out of the playing surface from his defending zone, except where there is no glass." Four details that matter on the ice:
 
+- **"Directly (non-deflected)" is doing real work.** The rule reaches the puck you sent out, not the puck that got there. If it clips an opponent's stick, a glove, a shoulder or a teammate on the way and then goes out, no penalty — which is why a great many pucks that leave the rink are waved off, and why arguing about it from the bench is usually arguing about whether it touched something.
 - **The determining factor is where the puck was when you hit it,** not where it crossed the glass. Touch it inside your blue line and it goes out, and you are going to the box.
 - **Over the glass behind the players' bench is penalised.** Into the bench itself is not.
 - **Directly off a faceoff, no penalty is assessed.**
+
+**USA Hockey has no equivalent minor.** Rule 610(c) reaches only the player who "delays the game by **deliberately** shooting or batting the puck outside the playing area", and Rule 631(d) makes the accidental one a stoppage rather than a penalty: "if the puck is accidentally shot or deflected out of play … a last play face-off will occur in the zone where the puck was shot or the deflection occurred." Under that book the panicked clear over the glass costs you a defensive-zone draw, not two minutes.
 
 **Rec-league note:** in a rink with no glass along a stretch of boards, the rule does not apply there — and many recreational and youth associations do not enforce puck-over-glass at all. Check your league. Even where there is no penalty, NHL **Rule 85.1** puts the faceoff at the nearest spot *in the zone the puck was shot from*, so you have bought yourself a defensive-zone draw for nothing.
 
@@ -658,26 +671,71 @@ Bad decisions are the most coachable thing in hockey, because unlike a shot or a
 - **Not raising your risk level when trailing late.** Playing "responsibly" while losing 3-1 with four minutes left is not responsible. It is a slow-motion concession.
 - **Compounding.** One bad decision followed by a worse one to fix it. This costs more goals than the original mistakes ever did.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. The "never" list has nine items. How many of them are named in a rulebook?
+   Name them, say what the other seven are instead, and name the one word in the
+   puck-over-the-glass rule that decides whether the puck leaving the rink
+   actually costs you two minutes. *(§The "never" list — and why each one exists,
+   §7. Never leave your feet to make a check, and §9. Never shoot the puck over
+   the glass from your own zone)*
+
+2. You have retrieved the puck in your own corner and worked down the hierarchy
+   with nothing available. What is the last option, what does the document insist
+   about *how* you do it, and what must you never do to solve it? *(§Decision
+   hierarchies by zone — Defensive zone)*
+
+3. You get it off the glass and out under pressure. Where does it land on the
+   risk map, what did you actually move from and to, and what does that mean you
+   should do next? *(§The "almost always right" list, §The risk map)*
+
+4. Two turnovers in the same place: one while the puck was travelling toward your
+   own net, one while it was travelling away from it. Why is the first so much
+   worse? *(§Why north turnovers are so much worse than south turnovers)*
+
+5. You are a defenceman about to pinch at the offensive blue line. What are the
+   three questions you run in half a second, and how many of them have to come
+   back yes? *(§Anticipation versus gambling)*
+
+6. You chase a breakaway from behind and hook the attacker down. What have you
+   handed them — and how does the answer change if your own goalie has been
+   pulled? *(§The critical exception nobody accounts for)*
+
+7. You are losing 3-1 with four minutes left and you are "playing responsibly".
+   What should happen to your risk level, and what does the document call a
+   player who does not do it? *(§Risk and game state)*
+
+8. You have just given the puck away in the neutral zone. Name the four things
+   you do in the next four seconds — and name the thing that costs more goals
+   than the original mistake ever did. *(§Recovering from a bad decision)*
+
 ---
 
 ## Key Takeaways
 
-1. **Every play is a bet: the chance it works times what you gain, against the chance it fails times what you lose.** You already make this calculation dozens of times a shift. Making it conscious is the only way to make it better.
-2. **Risk is a property of location, not of the play — so change the location before you make the decision.** The same pass is brilliant in their corner and catastrophic in your slot, and one stride out of your own slot improves every option on your list.
-3. **Rank the ice by cost:** your own slot is catastrophic, your own zone is high, the middle of the neutral zone is high (it manufactures odd-man rushes), the offensive blue line is moderate, and the offensive corners are nearly free.
-4. **North turnovers are far worse than south turnovers.** Losing the puck while it travels toward your net makes the turnover and the counterattack the same event.
-5. **Understand the "never" list, do not memorise it** — no D-to-D through the slot, no blind backhand up the middle, no cross-ice pass in your own end, never both defencemen to the puck, never force it at their blue line with nobody back, never stickhandle in your own slot, never leave your feet to hit, never change with the puck in your own zone, and never put it over the glass from your own end. **Only that last one is an actual rule** (a minor under Rule 63.2); the other eight are coaching conventions.
-6. **When you have time, make the possession play; when you do not, get it out.** Tracked NHL data shows carry-outs and pass-outs lead to a subsequent entry nearly nine times in ten, dump-outs about one time in five — but the differentiator is *possession*, not method.
-7. **Anticipation is information; gambling is hope.** Before you jump a lane, pinch or activate, answer: do I have a read, who is behind me, and what does the scoreboard allow?
-8. **Hockey's mistakes are asymmetric** — a missed chance costs you a chance, a defensive-zone turnover costs you a goal. That is why simple is right in your end and creative is right in theirs.
-9. **A minor penalty is roughly a one-in-five chance of a goal against** (21.1% league-wide in the 2025-26 NHL regular season). Worth it to deny a certain goal; almost never worth it out of frustration — and fouling a breakaway from behind buys you a **penalty shot** against (Rule 57.3), not a minor, or an **awarded goal** if your own net is empty (Rules 25.1 and 57.4).
+1. **Every play is a bet** — the chance it works times what you gain, against the chance it fails times what you lose. Make the calculation conscious.
+2. **Risk is a property of location, not of the play.** The same pass is brilliant in their corner and catastrophic in your own slot, so change your location before you decide — one stride out improves every option.
+3. **Rank the ice by cost — coaching consensus, not measurement:** your own slot catastrophic, your own zone high, the middle of the neutral zone high (it manufactures odd-man rushes), the offensive blue line moderate, their corners nearly free.
+4. **North turnovers are far worse than south turnovers.** Losing the puck while it travels toward your own net makes the turnover and the counterattack one event.
+5. **Understand the "never" list, do not memorise it:** no D-to-D through your own slot, no blind backhand up the middle, no cross-ice pass in your own end, never both defencemen to one puck, never force it at their blue line with nobody back, never stickhandle in your own slot, never leave your feet to hit, never change with the puck in your own zone, never put it over the glass from your own end. **Two of the nine are named in a rulebook** — puck over the glass, a minor under NHL Rule 63.2 and only when the puck goes out *directly*, since a deflected one is not penalised; and leaving your feet to hit, which all four rulebooks write into the charging offence by name (NHL 42.1, IIHF 42.1, USA Hockey 607, Hockey Canada 7.4) — and Hockey Canada's interpretation of its own rule puts the offence at the takeoff, not the follow-through, since skates coming off *after* contact in an otherwise legal check is not charging under that book. The other seven are coaching conventions.
+6. **With time, make the possession play; without it, get the puck out.** Tracked NHL data has carry-outs and pass-outs leading to a subsequent entry nearly nine times in ten, dump-outs about one in five — but the differentiator is *possession*, not method.
+7. **Anticipation is acting on information; gambling is hope.** Before you jump a lane, pinch or activate, answer: do I have a read, who is behind me, what does the scoreboard allow?
+8. **Hockey's mistakes are asymmetric:** a missed chance costs you a chance; a defensive-zone turnover costs you a goal. So play simple in your end and creative in theirs.
+9. **A minor penalty is roughly a one-in-five chance of a goal against** — 21.1% league-wide across the 2025-26 NHL regular season. Worth it to deny a certain goal, almost never out of frustration. Fouling a breakaway from behind buys a **penalty shot** against (Rule 57.3), not a minor — or an **awarded goal** if your own net is empty (Rules 25.1 and 57.4).
 10. **Do not compound.** The next play's expected value has nothing to do with the last one. Turn, skate to the inside, talk, and finish the shift.
 
 ---
 
 *Sources — retrieved 27 July 2026:*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 1.5 (Lines — goal lines 11 ft from each end, blue lines 64 ft out from the goal lines), Rule 25 (Awarded Goals — 25.1 general awarded goal, 25.3 routing to Reference Table 10), Rule 42 (Charging), Rule 44 (Clipping), Rule 57 (Tripping — 57.3 penalty shot and its four criteria, 57.4 awarded goal), Rule 63 (Delaying the Game, incl. 63.2 and 63.8), Rule 67 (Handling Puck — 67.4 penalty shot for covering the puck in the crease, 67.5 awarded goal when the goalkeeper has been replaced by an extra attacker), Rule 74 (Too Many Men on the Ice), Rule 84 (Overtime), Rule 85 (Puck Out of Bounds), Reference Table 10 (Summary of Awarded Goals When Goalkeeper Has Been Removed for an Extra Attacker). Rule text quoted directly from the 2025-2026 edition.*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 1.5 (Lines — goal lines 11 ft from each end, blue lines 64 ft out from the goal lines), Rule 25 (Awarded Goals — 25.1 general awarded goal, 25.3 routing to Reference Table 10), Rule 42 (Charging), Rule 44 (Clipping), Rule 57 (Tripping — 57.3 penalty shot and its four criteria, 57.4 awarded goal), Rule 63 (Delaying the Game, incl. 63.2 and 63.8), Rule 67 (Handling Puck — 67.4 penalty shot for covering the puck in the crease, 67.5 awarded goal when the goalkeeper has been replaced by an extra attacker), Rule 74 (Too Many Men on the Ice), Rule 84 (Overtime), Rule 85 (Puck Out of Bounds), Reference Table 10 (Summary of Awarded Goals When Goalkeeper Has Been Removed for an Extra Attacker). Rule text quoted directly from the 2025-2026 edition · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — **the base rule set for every level of hockey in Britain.** Rule 42.1 (Charging — "skates, jumps into an opponent, or charges an opponent in any manner", and "jumps to check an opponent" as the first branch of the definition), Rule 48.1(IV) (a player who "jumps (leaves their skates) to deliver a blow to the head or neck of an opponent"), Rule 48.2 (minor for an illegal check to the head or neck) and Rule 48.3 (major and automatic game misconduct for reckless endangerment) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 607 (Charging — "leaving one's feet (jumping) into the opponent to deliver a check"), Rule 610(c) (delay of game, which reaches only a **deliberate** shoot-out of the playing area) and Rule 631(d) (an accidental one is a last-play face-off in the zone the puck was shot from, not a penalty) · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — Rule 7.4 (Charging — "Charging is when a player: i. Jumps to check an opponent") and its **Interpretation 1**, which defines the jump as the feet leaving the ice *prior to* contact and excludes skates that come off *after* contact during an otherwise legal check. Rule text quoted directly from each book.*
 
 *Statistics: [NHL official statistics API — team power-play and summary reports, 2025-26 regular season](https://api.nhle.com/stats/rest/en/team/powerplay?cayenneExp=seasonId=20252026%20and%20gameTypeId=2) (league totals aggregated across all 32 clubs: 1,595 power-play goals on 7,555 opportunities; 205 shorthanded goals against; 8,086 goals in 1,312 games). The 2024-25 comparison figure of **21.6%** is the same report for `seasonId=20242025` (1,537 power-play goals on 7,101 opportunities), likewise aggregated across all clubs · [NHL official statistics API — skater penalty-shot report](https://api.nhle.com/stats/rest/en/skater/penaltyShots?cayenneExp=seasonId=20252026%20and%20gameTypeId=2) — the penalty-shot conversion rate was **computed** by summing every skater's attempts and goals for each regular season from 2015-16 to 2025-26 (476 attempts, 137 goals, 28.8%); it is not a published figure. Season-by-season totals cross-check against [Hockey-Reference's per-season penalty-shot pages](https://www.hockey-reference.com/leagues/NHL_2025_penalty-shots.html) — one page per season, at `hockey-reference.com/leagues/NHL_<year>_penalty-shots.html` for `<year>` 2016 through 2026; all eleven were parsed for this cross-check, not just the one linked. They give the same **137 goals** over the same span from an independently compiled game-level list. *(Their attempt count is 475 against the API's 476 — a one-row difference between the two compilations, which does not move the conversion rate materially and is noted here rather than smoothed over.)*
 

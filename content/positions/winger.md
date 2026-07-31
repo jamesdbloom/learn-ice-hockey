@@ -7,16 +7,26 @@
 ## Overview
 
 ```facts
-Position: An attacking forward with responsibility on both sides of the puck
-Action: In attack, create width, pressure opponents in the corners and provide scoring chances
-Action: In defence, cover the opposing defenceman on your side and help your team exit the defensive zone
-Key: Your lane is your responsibility — stay in it, own it, and use it
-Key: There are two wingers per line, left and right, and the principles apply equally to both
+Position: Your lane is the outside third of the ice on your side, and holding it is a spacing job — three forwards in one lane can be covered by two defenders
+Position: "Stay high" in your own end means level with the opposing defenceman on your side, not halfway to the corner — and it expires the moment your team wins the puck
+Action: When your team wins the puck, come down the side boards to receive, between the faceoff dot and the goal line
+Convention: Under a low zone collapse — the most common defensive-zone system, a coaching choice rather than a rule — you do not go into the corner at all; under man-on-man you follow your man wherever he goes, corner included, so find out which your team plays
+Technique: Puck on the far side of your body from the checker, backside into them, feet wide and still moving — winning a loose puck against the side boards is your defining physical skill
+Never: Turn your back to the wall, or duck to avoid a check — no speed is slow enough to make either safe; with contact coming, skates parallel to the boards, forearm and hip into it, head up
+Action: Drag a trailing skate along the blue line while the rest of you gets ahead of it, rather than coasting to stay onside — arriving slowly costs your line more than a whistle would
+Rule: Keep the trail skate touching the blue line — a lifted trail skate is onside under NHL and IIHF rules and offside under both USA Hockey (Rule 630(a)) and Hockey Canada (Rule 6.11), the two books most North American rec and youth hockey uses
+Rule: Screening the goaltender from outside the crease without touching them is legal, but positioning alone can void the goal if it stops them moving freely or defending it (NHL Rule 69.1)
 ```
 
-You are an attacking forward with responsibility on both sides of the puck. In attack, you create width, pressure opponents in the corners, and provide scoring chances. In defence, you cover the opposing defenseman on your side and help your team exit the defensive zone. Your lane is your responsibility — stay in it, own it, and use it.
+Your lane is the outside third of the ice on your side, and holding it is a spacing job: three forwards in one lane can be covered by two defenders.
 
-There are two wingers per line: left wing and right wing. The principles below apply equally to both. Where specific side is mentioned, apply it to your own side.
+**"Stay high" in your own end means level with the opposing defenceman on your side — not halfway to the corner — and it expires the moment your team wins the puck.** Then you come down the side boards to receive, between the faceoff dot and the goal line. Staying high does two jobs at once: it denies that defenceman time to shoot, and it leaves you one short trip from where you need to be to take the pass. Under a low zone collapse — the most common defensive-zone system, a coaching choice rather than a rule — you do not go into the corner at all; under man-on-man you follow your man wherever he goes, corner included. Find out which your team plays before your first shift.
+
+**Winning a loose puck against the side boards is your defining physical skill.** Puck on the far side of your body from the checker, backside into them, feet wide and still moving, and know where the puck is going before you arrive. But when a checker is coming at speed, never turn your back to the wall and never duck: skates parallel to it, forearm and hip into it, head up.
+
+**One skate keeps you onside, so use it.** Drag a trailing skate along the blue line while the rest of you gets ahead of it, rather than coasting to stay legal — arriving slowly costs your line more than a whistle would. Keep that blade touching, though: a lifted trail skate is onside under NHL and IIHF rules and offside under both USA Hockey (Rule 630(a)) and Hockey Canada (Rule 6.11) — two books of the four, and the two most North American rec and youth hockey uses.
+
+**In front of the goal, screening the goaltender from outside the crease without touching them is legal and valuable** — but positioning alone can void the goal if it stops them moving freely or defending it (NHL Rule 69.1). Take their eyes, not their room.
 
 ---
 
@@ -80,7 +90,7 @@ Never: Hold the puck in your own zone longer than you need to — your first loo
 Position: Against the boards, with the puck on the far side of your body from the checker
 Technique: Backside into them, feet wide and low, feet still moving — a stationary player on the wall gets pinned
 Technique: Aim for skates parallel to the boards, forearm and hip to the wall, head up; facing the boards chest-first is the fallback
-Never: Turn your back to the wall or duck — and don't turn into pressure the instant you receive it
+Never: Turn your back to the wall, duck, or turn into pressure the instant you receive it
 Read: Rim to beat a checker sealing you against the boards; reverse to beat one who has over-committed and skated past you
 Rule: NHL Rule 56.1 permits your free hand to fend off an opponent or their stick — fingers closing on a jersey or a stick is a holding minor
 Action: Know your out before you get there, and don't force a pass through traffic in your own zone
@@ -210,7 +220,8 @@ Read: Chip past a defenceman who is stepping up; soft-dump when you'll win the r
 Technique: Angle your chase to take away their easier escape rather than skating straight at the puck
 Never: Land a flip past the goal line — behind their defence but short of the line, or you have iced it
 Never: Fight through neutral-zone pressure with the puck — a turnover here becomes an odd-man rush against
-Action: When in doubt, dump it in; it's a safe play
+Read: Dump when nobody is arriving with you, or when your support is late — a read, not the default when in doubt
+Key: NHL tracking at 5-on-5 put a carry-in at about twice the value of a dump-in, and the break-even is roughly one-third confidence in completing the carry — Zone Entries owns those figures
 ```
 
 **Where to be:** Along the boards in your lane.
@@ -221,7 +232,7 @@ Action: When in doubt, dump it in; it's a safe play
 
 - **Hard rim** — around the boards behind the net to the far corner. Beats a defence that collapses to the middle, and arrives where your F1 is heading. The most common dump.
 - **Soft area dump** — a gentle chip into a specific empty area, aimed to *stop* rather than carom. Used when you'll win the race; a hard dump just gives it to their defenceman.
-- **Chip past the defenceman** — flick it off the boards past a pinching or standing-up defender and skate onto it yourself. This is a *possession* play, not a surrender, and it's the best option against a defenceman who is stepping up.
+- **Chip past the defenceman** — flick it off the boards past a defender who is stepping up or standing up at the line, and skate onto it yourself. This is a *possession* play, not a surrender, and it's the best option against a defenceman who is stepping up.
 - **Cross-corner / north-south dump** — into the far corner away from where their D is retreating, forcing the longest possible retrieval skate.
 - **Flip / area dump over a trap** — lift the puck high so it travels *over* a congested neutral zone and lands in open space behind their defence. This is the answer when a trap has closed every route along the ice. Land it past the defence but **before the goal line**, or you have iced it.
 
@@ -229,7 +240,9 @@ Action: When in doubt, dump it in; it's a safe play
 
 **Goal:** Keep possession or dump the puck safely into the offensive zone.
 
-**Key considerations:** A turnover in the neutral zone is one of the most dangerous things that can happen — it leads to odd-man rushes (where the attackers outnumber the defenders coming back, e.g. 2-on-1 or 3-on-2 — a high-danger scoring chance) against your team. When in doubt, dump it in. It's a safe play.
+**Key considerations:** A turnover in the neutral zone is one of the most dangerous things that can happen — it leads to odd-man rushes (where the attackers outnumber the defenders coming back, e.g. 2-on-1 or 3-on-2 — a high-danger scoring chance) against your team. So do not try to stickhandle through two players at the line.
+
+**But that is not an argument for dumping it in by default.** The tracked evidence runs the other way: at 5-on-5 a carry-in was worth about twice a dump-in, a failed carry cost far less than it feels like it does, and the study's own conclusion was that players give the puck up at the blue line too easily. That was hand-tracked NHL play, not your league, and it says nothing about amateur hockey — so take the direction rather than the decimals. The dump is a **read**: put it in when nobody is arriving with you, or when your support is late and the alternative is forcing it into two defenders. [Zone Entries](../systems/zone_entries.md) owns the figures, including the roughly one-third confidence in a carry that is the break-even.
 
 ---
 
@@ -263,8 +276,8 @@ Goal: Prevent a clean entry — force a difficult pass, force them wide, or forc
 Position: In your lane, moving toward the offensive zone
 Action: Time your skating so you arrive at the blue line in stride, and be a moving target for the centre or defenceman
 Technique: Drag a trail skate along the line while your body, stick and momentum get ahead of it — and keep the blade touching
-Rule: A dragged, touching skate is onside under all three rule sets; a lifted trail skate is onside in the NHL and IIHF but offside under USA Hockey Rule 630(a)
-Rule: Tagging up is a five-man act — the arm stays up until every teammate has cleared (NHL Rule 83.3(i)); Rules Primer owns the rule in full
+Rule: A dragged, touching skate is onside under all four rule sets; a lifted trail skate is onside in the NHL and IIHF but offside under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11
+Rule: Tagging up is a five-man act — the arm stays up until every teammate has cleared (NHL Rule 83.3(i)); the NHL, IIHF and USA Hockey want them clearing at the same instant, Hockey Canada 6.11(b) does not; Rules Primer owns the rule in full
 Action: Tag, then look before you go — as the winger usually first to the line, you are the one who re-enters too early
 Never: Coast at the blue line to be safe — arriving late and slow costs your line more than a whistle would
 Read: On your off wing the lane is the same, but the puck sits on your inside hand — it helps entering the zone and costs you on a breakout pass up your own wall
@@ -276,9 +289,9 @@ Read: On your off wing the lane is the same, but the puck sits on your inside ha
 
 **Goal:** Be a moving target and create a passing option through the neutral zone.
 
-**Key considerations:** Timing matters, and the offside rule is far more generous than most players assume — you are offside only when **both** skates have completely crossed the blue line before the puck has, so a trailing skate on the line keeps you onside — and one held in the air over the neutral zone does too **under NHL and IIHF rules, but not under USA Hockey, whose Rule 630(a) requires skate *contact* with the neutral zone or the blue line**. A delayed offside is recoverable too — but **tagging up is a five-man act, not a solo one.** Rule 83.3(i) requires that *"all players* of the offending team clear the zone at the same instant (skate contact with the blue line)". Skate contact with the line is enough for you individually, so one foot on the line does your part; but the arm stays up and nobody is re-entered until the last teammate has also tagged. Tag, then **look** before you go — re-entering while a teammate is still deep is what gets the play whistled off, and as the winger who is usually first to the line you are the one who does it. **The rule in full, including tagging up and what turns a delayed offside into a whistle, is in [Rules Primer](../foundation/rules_primer.md) and [Zone Entries](../systems/zone_entries.md).**
+**Key considerations:** Timing matters, and the offside rule is far more generous than most players assume — you are offside only when **both** skates have completely crossed the blue line before the puck has, so a trailing skate on the line keeps you onside — and one held in the air over the neutral zone does too **under NHL and IIHF rules, but not under USA Hockey, whose Rule 630(a) requires skate *contact* with the neutral zone or the blue line, and not under Hockey Canada, whose Rule 6.11 counts *"only the player's skate(s) that are in physical contact with the ice surface"***. A delayed offside is recoverable too — but **tagging up is a five-man act, not a solo one.** NHL Rule 83.3(i) requires that *"all players* of the offending team clear the zone at the same instant (skate contact with the blue line)", and the IIHF and USA Hockey say the same; **Hockey Canada Rule 6.11(b) wants every attacker to make skate contact but does not require them to do it at the same instant**, so playing it as one act keeps you legal under all four. Skate contact with the line is enough for you individually, so one foot on the line does your part; but the arm stays up and nobody is re-entered until the last teammate has also tagged. Tag, then **look** before you go — re-entering while a teammate is still deep is what gets the play whistled off, and as the winger who is usually first to the line you are the one who does it. **The rule in full, including tagging up and what turns a delayed offside into a whistle, is in [Rules Primer](../foundation/rules_primer.md) and [Zone Entries](../systems/zone_entries.md).**
 
-**The winger-specific version is a technique, and it is worth drilling.** You are the player who attacks the blue line widest and fastest, so you are the one the rule rewards most: **drag a trail skate along the line while your body, stick and momentum get ahead of it.** Done properly you are a full stride into the zone, at speed, and still legal. **Keep the blade in contact with the ice or the paint.** A dragged, touching skate is onside under all three rule sets; a *lifted* trail skate is onside under the NHL and IIHF but **offside under USA Hockey Rule 630(a)**, which most North American rec and youth hockey uses. The alternative — coasting at the line to be safe — is the single most common way a winger arrives at an offensive-zone battle with no speed and loses it. Do not slow down to be safe. Arriving late and slow costs your line more than a whistle would.
+**The winger-specific version is a technique, and it is worth drilling.** You are the player who attacks the blue line widest and fastest, so you are the one the rule rewards most: **drag a trail skate along the line while your body, stick and momentum get ahead of it.** Done properly you are a full stride into the zone, at speed, and still legal. **Keep the blade in contact with the ice or the paint.** A dragged, touching skate is onside under all four rule sets; a *lifted* trail skate is onside under the NHL and IIHF but **offside under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11** — two books of the four, and the two most North American rec and youth hockey uses. The alternative — coasting at the line to be safe — is the single most common way a winger arrives at an offensive-zone battle with no speed and loses it. Do not slow down to be safe. Arriving late and slow costs your line more than a whistle would.
 
 **If you are playing your off wing** — a left shot on the right side, or the reverse — your lane is the same but the puck now sits on your inside hand, which helps you entering the zone and costs you on a breakout pass up your own wall; [Switching Positions → Playing your off wing](switching_positions.md) covers the trade and the fix.
 
@@ -316,6 +329,7 @@ Goal: Create a shot on net, or force the defence to react and open space for tea
 ```facts
 Position: In the corner or along the boards
 Technique: Use your body to protect the puck and fight to maintain possession
+Never: Turn your back to the wall, or duck to avoid a check — no speed is slow enough to make either safe; with contact coming, skates parallel to the boards, forearm and hip into it, head up
 Options: Pass back to the defenceman at the point, or hold possession until the centre can support you
 Read: Look up before passing to the point — the strong-side defender may have stepped down to support the cycle
 Never: Force the puck out of the corner through heavy traffic — a rushed pass turns over possession
@@ -324,7 +338,7 @@ Goal: Maintain possession in the offensive zone and keep the pressure going
 
 **Where to be:** In the corner or along the boards.
 
-**What to do:** Use your body to protect the puck. Fight to maintain possession. Look for a pass back to the defenseman at the point, or hold possession until the center can support you. Don't try to force the puck out of the corner through heavy traffic.
+**What to do:** Use your body to protect the puck. Fight to maintain possession — but the same override applies here as in your own end: with a checker arriving at speed, never turn your back to the wall and never duck. Skates parallel to the boards, forearm and hip into the contact, head up and chin off your chest. See [Body Contact and Battles](../technique/body_contact_and_battles.md), which owns it. Look for a pass back to the defenseman at the point, or hold possession until the center can support you. Don't try to force the puck out of the corner through heavy traffic.
 
 **Goal:** Maintain possession in the offensive zone and keep the pressure going.
 
@@ -536,20 +550,73 @@ Lanes, gap, and the numerical situations in full: [Defending the Rush](../system
 - **Standing still on the half-wall.** A stationary winger is trivially covered.
 - **Puck-watching on the backcheck** instead of picking up the trailing forward.
 - **Arriving at the net front too early** — get there as the shot is taken, not before.
+- **Turning your back to the wall when contact is coming.** It feels protective, and it is the behaviour most associated with catastrophic spinal injury in the sport. Skates parallel to the boards, forearm and hip into the contact, head up and chin off your chest. Squaring your chest to the wall is the fallback for when you cannot turn; your back is never an option. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns this.
 - **Blocking a shot from in front of your own goalie's eyes.** A puck deflected off a body your goalie could not see is one of the most common ways soft goals are conceded — either block from close and on your feet, square to the shooter, head out of the lane and hands tucked behind your shin pads, or get out of the lane and let them see it. [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the list of when *not* to block.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. The puck is in the strong-side corner and your centre has gone in to help the
+   defenceman. You are the weak-side winger. Where do you go, what does the
+   *other* winger do, and when do you leave again? **This has no single answer**
+   — say what it depends on, name the systems that answer it differently, and
+   give the one question you can ask your coach that settles it in a sentence.
+   *(§Defensive Zone — Pressuring an Opponent with the Puck)*
+
+2. "Stay high." High to where, exactly — and at what moment does that instruction
+   stop applying? Roughly how far do you then have to travel, and why is a winger
+   who never leaves the point as wrong as one who left too early? *(§A Note on
+   Language, and §Without the Puck — Ready to Break Out)*
+
+3. You have the puck on the wall in your own end and a forechecker is on you.
+   What are you reading that tells you to rim it rather than reverse it?
+   *(§Defensive Zone — Carrying the Puck — Under Pressure)*
+
+4. You are about to take contact on the wall. What orientation are you aiming
+   for, what is the *fallback* if you are already facing the boards, what are the
+   two things you never do — and what may your free hand legally do while you do
+   it? *(§Defensive Zone — Carrying the Puck — Under Pressure, and [Body Contact
+   and Battles](../technique/body_contact_and_battles.md), which owns the
+   technique)*
+
+5. Name three of the five kinds of dump-in. For one of them, say what you are
+   reading that makes it the right one — and say what matters more than the dump
+   itself. *(§Neutral Zone — Carrying the Puck — Under Pressure)*
+
+6. You are first to the offensive blue line, at speed, and the puck has not
+   crossed yet. What is the technique that keeps you legal, what has to stay true
+   of that skate, and under which rule book does it stop working? *(§Without the
+   Puck — Filling Your Lane on the Rush)*
+
+7. You are the net-front player and your defenceman is winding up. Where is the
+   line you do not cross, and what can cost your team the goal even though you
+   never touched the goalie? *(§Without the Puck — Getting Open and Crashing the
+   Net)*
+
+8. You dumped it in from behind the red line and you are chasing. What is the
+   linesperson actually deciding, why is the faceoff dot not the finish line, and
+   when should you ease up? *(§Icing)*
+
+---
 
 ## Key Takeaways
 
 1. Your lane is your responsibility. Width creates space for everyone else.
-2. In the defensive zone, staying high does two jobs at once — covers the point *and* positions you for the breakout. That is the low zone collapse job; under man-on-man you follow your check instead, corner and all.
-3. Know whether your team plays zone or man-on-man before your first shift. It changes almost everything above.
-4. One skate keeps you onside — you can be well ahead of the puck and still be legal, so use it. Keep that skate **touching**: an airborne trail skate is onside in the NHL and IIHF but offside under USA Hockey (Rule 630(a)). And a delayed offside is usually recoverable: clear the zone, tag up with a skate on the line, re-enter — but **every teammate who is in the zone** has to tag, at the same instant, before any of you may go back in (NHL Rule 83.3(i)). **Check your book before you rely on it:** under **USA Hockey Rule 630(d)** delayed offside exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below those levels there is no tagging up at all and the offside is whistled immediately.
+2. **"Stay high" in your own end means level with the opposing defenceman while they have the puck, and it expires the moment your team wins it** — then you come down the wall to the outlet. That is the low zone collapse job; under man-on-man you follow your check into the corner.
+3. Find out whether your team plays zone or man-on-man in the defensive zone before your first shift. It changes almost everything about your job.
+4. One skate on the line keeps you onside, so drag a trail skate rather than coasting — and keep the blade **touching**: an airborne trail skate is onside under NHL and IIHF rules but offside under **USA Hockey Rule 630(a) and Hockey Canada Rule 6.11**, which is two books of the four. Tagging up is a five-man act, and nobody re-enters until every teammate has cleared (NHL Rule 83.3(i)) — the NHL, IIHF and USA Hockey all want that clearing at the same instant, and Hockey Canada Rule 6.11(b) does not, so tag as one and you are legal everywhere. Under **USA Hockey Rule 630(d)** tag-up exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below those the whistle is immediate; Hockey Canada sets no such limit.
 5. On the forecheck, F1/F2/F3 are roles set by who arrives first — if that's you, you're F1. Read the angle F1 took and seal the escape route. Angles beat speed.
-6. Puck protection is your defining physical skill: puck on the far side of your body, wide base, feet moving, and know your out before you arrive.
-7. A dump-in is a choice between five different plays — hard rim, soft area dump, chip past a pinching defender, cross-corner, flip over a trap — and the chase angle matters more than the dump.
-8. **Screening the goalie from *outside* the crease, without contact, is normally legal.** Get in their eyes and keep your body out of the crease; and don't crowd them so tightly that your positioning alone impairs their ability to move or defend, because that voids the goal on its own (Rule 69.1).
-9. Crashing the net for rebounds is one of the most effective ways a winger scores — coaching consensus, not a ranked measurement; what *is* sourced is that the ice in front of the net converts several times better than the perimeter, and [Shooting](../technique/shooting.md) owns those figures. Time the arrival with the shot.
-10. Backcheck to the outside lanes and pick up the trailing forward — one of the most commonly missed jobs on the ice. ([Defending the Rush](../systems/defending_the_rush.md) gives that title to the middle-lane driver; both are coaching emphasis rather than a measured ranking, so read them as "these are the two people nobody picks up", not as a league table.)
+6. Puck protection is your defining physical skill: puck on the far side of your body, wide base, feet moving, and know your out before you arrive. **One situation overrides all of it.** With a checker arriving at speed near the boards, never turn your back to the wall and never duck: skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest ([Body Contact and Battles](../technique/body_contact_and_battles.md), which owns this).
+7. A dump-in is a read, not the safe default — put it in when nobody is arriving with you or your support is late. Tracked NHL evidence, owned by [Zone Entries](../systems/zone_entries.md), has NHL players giving the puck up at the blue line too easily. The chase angle matters more than the dump.
+8. **Screening the goalie from *outside* the crease, without contact, is normally legal** — but positioning alone voids the goal if it stops them moving freely or defending, so don't crowd them (NHL Rule 69.1).
+9. Crashing the net for rebounds is one of the most effective ways a winger scores — coaching consensus, not a ranked measurement, though the ice in front of the net does convert several times better than the perimeter ([Shooting](../technique/shooting.md) owns those figures). Time the arrival with the shot.
+10. Backcheck to the outside lanes and pick up the trailing forward. That is the standard assignment — a coaching choice, not a law; some teams give the middle to the first man back.
 
 ---
 
@@ -557,6 +624,6 @@ Lanes, gap, and the numerical situations in full: [Defending the Rush](../system
 
 *Position play: [How To Hockey – Winger Role](https://howtohockey.com/the-role-of-a-winger-in-hockey/) · [Hockey Monkey – Left & Right Wing](https://www.hockeymonkey.com/learn/hockey-left-right-wing) · [Ice Hockey Moms – Right Wing](https://icehockeymoms.com/how-to-play-right-wing-in-hockey/)*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 81 Icing, including the major-penalty carve-out in 81.6, Rule 83 Off-side, Rule 76 Face-offs) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), the classification restriction on the shorthanded icing exemption · [Offside — Wikipedia](https://en.wikipedia.org/wiki/Offside_(ice_hockey)) · [Icing — Wikipedia](https://en.wikipedia.org/wiki/Icing_(ice_hockey))*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 81 Icing, including the major-penalty carve-out in 81.6, Rule 83 Off-side, Rule 76 Face-offs) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), the classification restriction on the shorthanded icing exemption; Rule 630(a), the skate-contact test for off-side; Rule 630(d), delayed off-side and tag-up, its classification restriction and the "simultaneously… at the same instant" wording in 630(d)(2) · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — Rule 6.11 (off-side, counting "only the player's skate(s) that are in physical contact with the ice surface"), Interpretation 3 to Rule 6.11(a) (the airborne trail skate, ruled OFF-SIDE), and Rule 6.11(b) (tag-up — skate contact from every attacker, with no simultaneity requirement and no classification restriction) · [Offside — Wikipedia](https://en.wikipedia.org/wiki/Offside_(ice_hockey)) · [Icing — Wikipedia](https://en.wikipedia.org/wiki/Icing_(ice_hockey))*
 
 *Special teams: [Explained: 1-3-1 Power Play Formation — The Coaches Site](https://members.thecoachessite.com/article/explained-1-3-1-power-play-formation)*

@@ -43,7 +43,7 @@
 // The puck carrier is on the half-wall because that is the position this document
 // names when it needs one: "the puck is on the opposite half-wall (the boards area
 // roughly level with the faceoff dot)".
-const D1_PUCK = 'half-wall:right';                       // (69, 33)
+const D1_PUCK = 'half-wall:right';                       // (69, 38.5)
 // "Your man" in the low slot — the glossary's layer "from the dots down toward the
 // goalmouth, outside the crease". At (74,-10) he is outside the left faceoff
 // circle, so he reads as low slot rather than as a man in the circle.
@@ -94,10 +94,10 @@ const stickLaneBodyNet = {
   zones: [
     {
       points: [
-        { at: 'half-wall:right', dx: 2.45, dy: -3.75 }, // (71.45, 29.25)
+        { at: 'half-wall:right', dx: 2.45, dy: -3.75 }, // (71.45, 34.75)
         { at: 'slot', dx: 0, dy: -5.75 },               // (76, -5.75)
         { at: 'slot', dx: -4.95, dy: -6.3 },            // (71.05, -6.3)
-        { at: 'half-wall:right', dx: -1.55, dy: -4.2 }, // (67.45, 28.8)
+        { at: 'half-wall:right', dx: -1.55, dy: -4.2 }, // (67.45, 34.3)
       ],
       label: 'the lane',
     },
@@ -135,8 +135,11 @@ const stickLaneBodyNet = {
  * ------------------------------------------------------------------------- */
 
 const D2_PUCK = { at: 'corner:right', dx: 0, dy: 1 };        // (82, 35)
-// Thirteen feet below the boards-side support, because at nine the two circles read
-// as one stacked blob rather than as two players with two different jobs.
+// Eighteen and a half feet below the boards-side support (half-wall:right, y 38.5
+// — site/src/data/rink.json), because at nine the two circles read as one stacked
+// blob rather than as two players with two different jobs. This said thirteen,
+// which was the gap while half-wall.y was 33; the clearance argument survives the
+// correction, since the separation grew rather than shrank.
 const D2_GOER = { at: 'faceoff-dot:right', dx: 0, dy: -2 };  // (69, 20)
 // Finishes about five feet short of the puck. It does not finish on the puck and it
 // does not reach the boards: what happens in the last five feet is the other
@@ -213,7 +216,7 @@ const loosePuckWhoGoes = {
  * lanes. The caption carries the fix in the section's own words instead.
  * ------------------------------------------------------------------------- */
 
-const D3_CARRIER = 'half-wall:right';        // (69, 33)
+const D3_CARRIER = 'half-wall:right';        // (69, 38.5)
 const D3_RECEIVER = 'high-slot';             // (69, 0) — dots to the top of the circles
 // Exactly ten feet from the receiver — the section's own figure, "you are ten feet
 // from anyone, waving" — and six feet off the lane, near enough for a stick lying
@@ -252,10 +255,10 @@ const unmarkedNotAvailable = {
   zones: [
     {
       points: [
-        { at: 'half-wall:right', dx: 1.8, dy: -4 },   // (70.8, 29)
+        { at: 'half-wall:right', dx: 1.8, dy: -4 },   // (70.8, 34.5)
         { at: 'high-slot', dx: 2.4, dy: 3.5 },        // (71.4, 3.5)
         { at: 'high-slot', dx: -2.4, dy: 3.5 },       // (66.6, 3.5)
-        { at: 'half-wall:right', dx: -1.8, dy: -4 },  // (67.2, 29)
+        { at: 'half-wall:right', dx: -1.8, dy: -4 },  // (67.2, 34.5)
       ],
       // Deliberately unlabelled, unlike the same band in the first diagram. A zone
       // label is drawn at the polygon's centroid and is invisible to the label
@@ -338,8 +341,8 @@ const screenSightline = {
     {
       points: [
         { at: 'point:right', dx: 0.5, dy: 1.5 },   // (25.5, 21.5)
-        { at: 'crease', dx: -1, dy: 4.5 },         // (85, 5.5)
-        { at: 'crease', dx: -1, dy: -2.5 },        // (85, -1.5)
+        { at: 'crease', dx: -1, dy: 4.5 },         // (85, 4.5)
+        { at: 'crease', dx: -1, dy: -2.5 },        // (85, -2.5)
         { at: 'point:right', dx: -0.5, dy: -1.5 }, // (24.5, 18.5)
       ],
       label: 'the sightline',
@@ -385,10 +388,15 @@ const D5_CARRIER = { at: 'blue-line', dx: 5 };                    // (30, 0)
 // Eighteen feet, which is two wavelengths of the key's "skating with control of the
 // puck" wave. At sixteen it rendered as a squiggle rather than as a notation.
 const D5_CARRY_TO = { at: 'blue-line', dx: 23 };                  // (48, 0)
-const D5_WIDE_R = { at: 'neutral-dot:right', dx: -3, dy: 12 };    // (27, 34)
-const D5_WIDE_R_TO = { at: 'neutral-dot:right', dx: 9, dy: 12 };  // (39, 34)
-const D5_WIDE_L = { at: 'neutral-dot:left', dx: -3, dy: -12 };    // (27, -34)
-const D5_WIDE_L_TO = { at: 'neutral-dot:left', dx: 9, dy: -12 };  // (39, -34)
+// ASSUME neutral-dot.x = 20 (site/src/data/rink.json). These four carried (27, 34),
+// (39, 34), (27, -34), (39, -34), which were resolved when neutral-dot.x was 30 —
+// the value rink.json's own $comment records as wrong, because it disagreed with
+// the derived faceoff.neutral_dot_x and put anything anchored here 10 ft from the
+// dot the same picture drew. The glyphs moved with the table; the notes did not.
+const D5_WIDE_R = { at: 'neutral-dot:right', dx: -3, dy: 12 };    // (17, 34)
+const D5_WIDE_R_TO = { at: 'neutral-dot:right', dx: 9, dy: 12 };  // (29, 34)
+const D5_WIDE_L = { at: 'neutral-dot:left', dx: -3, dy: -12 };    // (17, -34)
+const D5_WIDE_L_TO = { at: 'neutral-dot:left', dx: 9, dy: -12 };  // (29, -34)
 
 const widthMakesTheMiddle = {
   id: 'width-makes-the-middle-lane',

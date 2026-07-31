@@ -15,11 +15,13 @@ Action: Ask your coach which forecheck your team runs, and which one you switch 
 Risk: Guessing which one you are in is how odd-man rushes happen
 ```
 
-**Forechecking** is the pressure your team applies in the *opponent's* defensive zone — your offensive zone — when they have the puck and you don't. It is the opposite of **backchecking**, which is racing back towards your own net to defend. Forechecking is the first thing your team does after it loses the puck in the attacking end, and it is the single biggest lever a coach has over how a game feels: an aggressive forecheck makes a game chaotic and fast, a passive one makes it slow and structured.
+**Forechecking** is the pressure your team applies at the other team's end of the rink while they have the puck and you do not — the opposite of racing back to defend your own net.
 
-There is no single correct forecheck. There is a family of named systems, each of which buys pressure at the price of risk. This document explains what each one is, what it gives you, what it costs you, and how to tell which one you are facing.
+**Pressure and risk are the same dial.** Every player you send deep to hunt the puck is one fewer between the puck and your own goalie. One chaser rarely costs you anything; two win a lot of pucks and sometimes leave you outnumbered coming back; three plus a defenceman win pucks constantly and, when they fail, leave an opponent alone on your goalie. There is no single correct setting, so **ask which forecheck your team runs and which one it switches to with a lead** — most have at least two, and guessing is how you end up outnumbered.
 
-**Ask your coach which forecheck your team runs, and which one you switch to with a lead.** Most teams have at least two. If nobody has told you, the answer is usually written into the drills you already do at practice — but guessing is how odd-man rushes happen.
+**Angling is the whole skill: skate at the space you want to deny, not at the puck.** Pick a side before you arrive and take it away, so the only route left is the one a teammate is already standing on. Which side that is, is a coaching choice — the common default takes away the middle and forces the play towards the side wall, and some coaches invert it deliberately — so find out which way your team angles before you play, not during the game. Arrive under control as well; the test is whether you could stop and pivot right now. And the aim is to eliminate options, not to land a hit: a hit removes two players from the play, yours as well as theirs, and in most adult recreational hockey body checking is not permitted at all, which makes angling the whole toolkit rather than a beginner's version of hitting.
+
+**When you shoot the puck into their end for a teammate to chase, understand what you have created.** A player facing the end wall with someone closing on their back is the exact situation the checking-from-behind and boarding rules exist for, and the onus is on you as the arriving player. Take the puck, take the ice, or steer them off it — never finish into the back of a player facing the wall.
 
 ---
 
@@ -523,7 +525,8 @@ These are two completely different situations and most players forecheck them id
 Key: You chose when the puck went in and you know where it is going — you arrive at full speed with a head start
 Action: Leave before the puck does — F1 should be accelerating as the dump is released, not after it
 Targets: Aim the dump at a person, not a zone — put it where their defenceman must retrieve it facing their own end boards
-Never: Finish into the back of a player facing the wall — take the puck, take the ice, or angle them off it; the onus is entirely on you as the arriving player
+Never: Finish into the back of a player facing the wall — take the puck, take the ice, or angle them off it; the onus is on you as the arriving player
+Rule: That onus is weighed, not absolute — NHL Rule 41.1 lets the referee consider whether the opponent made themself vulnerable and whether the check was avoidable, and a defender who turns their back deliberately draws no penalty at all (NHL and IIHF Rule 43.1)
 Convention: F1 takes the retrieval and F2 commits early to the passing lane rather than following F1 into the corner
 Options: Three kinds of dump — a hard rim, a soft chip behind the defenceman, and a cross-corner dump; your line should agree in advance
 ```
@@ -533,7 +536,9 @@ When you dump the puck in, **you chose when it went in and you know where it is 
 What that means for you:
 
 - **Leave before the puck does.** The forward who is going to be F1 should be accelerating as the dump is released, not after it. The whole advantage of a dump-in is the head start, and players routinely throw it away by watching the puck first.
-- **Aim the dump at a person, not at a zone.** Put it where their defenceman has to retrieve it facing their own end boards, with their back to you. **Then understand what you have just created.** A player facing the end boards with a forechecker closing on their back is the exact scenario the checking-from-behind and boarding rules exist for, and the onus is entirely on you as the arriving player. Take the puck, take the ice, or angle them off it — do not finish into their back, and do not drive a player who is facing the wall. The checker's obligations are in [Body Contact and Battles](../technique/body_contact_and_battles.md), §5.
+- **Aim the dump at a person, not at a zone.** Put it where their defenceman has to retrieve it facing their own end boards, with their back to you. **Then understand what you have just created.** A player facing the end boards with a forechecker closing on their back is the exact scenario the checking-from-behind and boarding rules exist for, and the onus is on you as the arriving player. Take the puck, take the ice, or angle them off it — do not finish into their back, and do not drive a player who is facing the wall. The checker's obligations are in [Body Contact and Battles](../technique/body_contact_and_battles.md), §5.
+
+  **That onus is real but it is not strict liability, and neither fact should change how you arrive.** NHL Rule 41.1 states the onus and then adds that "the circumstances of the check, including whether the opponent put himself in a vulnerable position immediately prior to or simultaneously with the check or whether the check was unavoidable can be considered," and that "this balance must be considered by the Referees." Going the other way, a defender who turns their back on purpose to draw the call gets nothing — NHL Rule 43.1 and IIHF Rule 43.1 both waive the penalty when the turn was intentional. You cannot forecheck on a prediction of how a referee will weigh that balance, and the injury is not undone by winning the argument. Arrive as though the onus were absolute.
 - **F1 takes the retrieval, F2 takes the outlet.** Because you know where the puck is going, F2 can commit early to the passing lane rather than following F1 into the corner.
 - **F3 and the D can be aggressive**, because your team is organised and coming forward as a unit.
 
@@ -576,13 +581,13 @@ This is the rule that makes the entire forechecking game viable, and most player
 
 **Where it applies:** the **NHL** (since 2005-06), the **KHL**, and **IIHF play** — the IIHF integrated the trapezoid into its unified rulebook for the 2021-22 season, explicitly to create more offensive play. **Most rec, beer-league and youth associations outside Britain do not use it.** Check your league's rink and look behind the net for painted lines — but treat an unmarked sheet as a hint rather than a ruling, because IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
 
-**🇬🇧 In England and Wales, that check is not optional — the status is genuinely unsettled there.** The IIHF book carries the rule, numbered **27.7** rather than the NHL's 27.8, and the 2025-26 In-House Rules do not amend it. But England Ice Hockey's own *Rules & Regulations* **22.3** say the Goalkeepers' Restricted Area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"* — and that edition is 2024-25, so the published documents do not settle whether the suspension still stands. **For a forechecking team the safe assumption is that their goalie may retrieve the puck**, which is the case in which dump-and-chase loses most of its value. Look behind the net for painted lines, and ask your league before you build a forecheck on it. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
+**🇬🇧 In England and Wales, that check is not optional — the status is genuinely unsettled there.** The IIHF book carries the rule, numbered **27.7** rather than the NHL's 27.8, and the 2025-26 In-House Rules do not amend it. But England Ice Hockey's own *Rules & Regulations* **22.3** say the Goalkeepers' Restricted Area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"* — and that edition is 2024-25, so the published documents do not settle whether the suspension still stands. **The evidence runs both ways, and the other side of it is worth stating**: the In-House Rules' own Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"* — so their silence on Rule 27 reads as leaving it live, which points against the suspension rather than for it. **For a forechecking team the safe assumption is that their goalie may retrieve the puck**, which is the case in which dump-and-chase loses most of its value. Look behind the net for painted lines, and ask your league before you build a forecheck on it. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
 
 ### Why this matters so much to a forechecker
 
 ```facts
 Risk: Without the trapezoid a puck-handling goaltender is a third defenceman — no pressure is permitted on them and dump-and-chase becomes nearly pointless
-Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" in England and Wales — so plan as though their goalie may come for a dumped puck
+Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" in England and Wales, but the In-House Rules Introduction enforces IIHF rules "unless otherwise stated" — so plan as though their goalie may come
 Key: With it, the corners belong to you: their defenceman has to go and get it, turning their back to a forechecker arriving at speed
 Goal: That exchange is the whole engine of modern forechecking
 ```
@@ -721,31 +726,74 @@ Full detail on the counters lives in [Breakouts](breakouts.md) and [Neutral Zone
 - **Chasing after you have been beaten.** When the puck goes D-to-D past you, your job is to take the high role, not to turn and sprint. Chasing burns your legs and leaves the middle of the ice empty.
 - **Both defencemen pinching when nobody called for it.** The commonest source of breakaways against at every level. There are situations where both *should* go — a full-ice press, a delayed penalty, 6-on-5 — but they are called from the bench, not decided individually. Look for your partner before you commit.
 - **F3 drifting low.** F3 is the insurance policy. When F3 gets bored and joins the cycle, a failed forecheck becomes a rush against.
-- **Forechecking a dump-in and a turnover the same way.** Off a dump-in you have a head start and can pressure hard. Off a turnover you are behind the play and should be recovering shape, not hunting. **What "hard" never means:** your own dump has put their defender's back to you against the end boards, so take the puck, take the ice, or angle them off it. Finishing into the back of a player facing the wall is a major with an automatic game misconduct under the NHL and IIHF books — there is no minor option — and the onus is entirely on you.
+- **Forechecking a dump-in and a turnover the same way.** Off a dump-in you have a head start and can pressure hard. Off a turnover you are behind the play and should be recovering shape, not hunting. **What "hard" never means:** your own dump has put their defender's back to you against the end boards, so take the puck, take the ice, or angle them off it. Finishing into the back of a player facing the wall is a major with an automatic game misconduct under the NHL and IIHF books — there is no minor option — and the onus is on you.
 - **Dumping the puck straight behind the net in a trapezoid league.** That is precisely the area their goalie is allowed to play. Aim for the corners. In England and Wales, check first whether you are in one — the restricted area's status is unsettled there.
 - **Not knowing which forecheck your team runs, or which one you switch to with a lead.** If F1 is angling the carrier to the boards and F2 is sealing the middle, both players are doing their job correctly and neither is doing anything useful.
 - **Running an aggressive forecheck you are not fit enough to sustain.** A 2-1-2 for the first ten minutes and nothing after that is worse than a 1-2-2 for sixty.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You went in first, so you were F1. The puck goes D-to-D across the ice behind
+   you. What are you now, where do you go, and what is the thing your legs will
+   want to do that you must not? *(§The roles rotate mid-shift)*
+
+2. Should F1 angle the carrier toward the boards or toward the middle? Both
+   answers are defensible — say what each buys, why F2 cannot be left guessing,
+   and when you need to have found out. *(§Approach angle, §The three jobs, in
+   general terms)*
+
+3. You are closing on a forechecking angle and you could line up a hit instead.
+   What is angling actually trying to achieve, why does a hit cost you even when
+   you land it, and why does none of this get less important in a league where
+   body checking is not allowed? *(§Why "eliminate options" beats "make a hit")*
+
+4. Your own dump-in has put their defenceman facing the end boards with his back
+   to you, and you are arriving at speed. Name what you may do. Then name the
+   one thing you must not, and say what it costs — the answer is not two
+   minutes. *(§Off a dump-in — you control the clock, §Common Mistakes)*
+
+5. A rim is coming around the wall toward you at the offensive blue line. What
+   is the test for whether you step down on it, how does that test change if
+   nobody is contesting the puck, and what has to be true of your partner and
+   your F3 before you go? *(§When to pinch, and when not to, §The weak-side
+   defenceman is the safety)*
+
+6. Why does dump-and-chase work at all? Say where you aim a dump and where you
+   never do — then say how the answer changes in a league with no trapezoid, and
+   what a British reader should assume. *(§The Trapezoid — Why Dump-and-Chase
+   Works At All)*
+
+7. In a 1-3-1 forecheck, the line of three cannot be three forwards — why not?
+   Then: who is **conventionally** in the middle of it, and what is that player's
+   job? *(§1-3-1 — the modern trap-adjacent forecheck)*
 
 ---
 
 ## Key Takeaways
 
-1. **F1, F2 and F3 are roles set by order of arrival — not positions and not people.** If you get there first, you are F1, whatever your position, and the labels rotate again the moment the puck moves.
-2. **A forecheck has two ways to win:** take the puck back deep in their zone, or force a rushed exit you intercept in the neutral zone. Passive systems are not lazy — they have chosen the second one.
-3. **Every extra forechecker increases pressure and increases the cost of failure.** Pressure and risk are the same dial, and the game state decides where it should be set.
-4. **Angling is the whole skill.** Take away one side on the approach, arrive under control, stick on the ice in the passing lane, and force the carrier into the one option your F2 is standing on. The goal is to eliminate options, not to make a hit.
-5. **F1 makes the play predictable; F2 finishes it.** Whether F1 also goes for the puck is system-dependent — hunting in a 2-1-2, steering in a 1-2-2 or 1-3-1 — and a stacked 2-1-2 deliberately sends both at the same corner. What stays constant is the division of labour: F2 is there to take the *next* play, so if F2 is simply chasing the puck F1 is already on, the forecheck has failed.
-6. **At 5-on-5, the default is that only one defenceman pinches.** That is a near-universal coaching choice rather than a law. The weak-side D is the safety and the reason a failed pinch is a 2-on-1 rather than a breakaway; when the strong-side D pinches, somebody — usually F3 — covers the point they left. The situational exceptions are called from the bench — a full-ice press, a delayed penalty, 6-on-5 — and a minority of teams run a different default outright, giving both defencemen a green light. Ask which yours is.
-7. **The trapezoid is why dump-and-chase works.** In the NHL, KHL and IIHF play the goalie may only play the puck behind the goal line inside it, so dump into the corners — never straight behind the net. Most rec leagues have no trapezoid, which changes the plan entirely. **🇬🇧 In England and Wales, treat this as unsettled.** The IIHF book carries the rule (Rule 27.7, not the NHL's 27.8), but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* and the 2025-26 In-House Rules do not mention it — though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. For you as the attacking team the safe assumption runs the other way: plan as though their goalie **may** retrieve the puck, ask your league, and look behind the net to see whether the lines are painted at all. Treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
-8. **Off a dump-in you are hunting; off a turnover you are recovering.** Leave before the puck does on a dump-in. After a turnover, the closest player pressures and everyone else finds a layer rather than chasing. And know what your own dump created: a player facing the end boards with you arriving behind them. Never finish into their back.
-9. **Read the forecheck you are facing in one second:** count the forwards below the circles, watch whether F1 attacks or steers, and watch whether their far-side D is pinching or retreating.
-10. **None of this is a law of hockey — find out which forecheck your team runs and which one it switches to with a lead.** Aggressive forechecks are beaten by moving the puck early; traps are beaten by chipping past the line and skating onto it. Never try to stickhandle through the middle of three players.
+1. **F1, F2 and F3 are roles set by order of arrival — not positions and not people.** Some coaches assign them by position to teach beginners, so treat that as the typical case rather than the rule. The labels rotate the moment the puck moves, and the old F1 does not turn and chase: they drop in as the new F3.
+2. **Angling is the whole skill: skate at the space you want to deny, not at the puck**, and arrive under control — the test is whether you could stop and pivot right now. **Which side you take away is a coaching choice**: the common default takes away the middle and forces the play towards the side wall, and some coaches invert it deliberately, so find out which way your team angles before your first shift. In most adult recreational hockey there is no body checking at all, which makes angling the entire toolkit rather than a beginner's version of hitting.
+3. **Pressure and risk are the same dial.** Every player you send below the top of the circles wins you more pucks and costs you more when it fails, and the game state decides where the dial should be set.
+4. **A forecheck has two ways to win:** take the puck back deep in their zone, or force a rushed exit you intercept in the neutral zone — the more common of the two. Passive systems are not lazy; they have chosen the second one.
+5. **F1 makes the play predictable; F2 takes the next play.** Whether F1 also hunts the puck is the single biggest difference between the systems — hunting in a 2-1-2 or a full-ice press, steering in a 1-2-2, 1-3-1 or 1-4 — so ask which your team wants. If F2 is chasing the puck F1 is already on, the forecheck has failed.
+6. **At 5-on-5 the default is that only one defenceman pinches at a time.** That is a very widely taught coaching choice rather than a law of hockey, and it is the assumption to play on if nobody has told you otherwise. The weak-side D is the safety, and the reason a failed pinch is a 2-on-1 rather than a breakaway. Ask who covers the point the pincher left: usually F3, sometimes the weak-side D sliding across to cover both points, and in some teams nobody, because the pinch only goes when F3 has called that they are high.
+7. **Where the trapezoid applies the goalie may play the puck behind the goal line only inside it** — the NHL (Rule 27.8), the KHL, and IIHF play (Rule 27.7) — so dump into the corners rather than straight behind the net. The sole exception is a goalie keeping skate contact with the crease. Most rec, beer-league and youth associations outside Britain use no trapezoid, which changes the plan entirely. **🇬🇧 In England and Wales treat the status as unsettled:** England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is "not currently enforced", but that edition is 2024-25 — and the In-House Rules do not amend Rule 27 while their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. As the attacking team, plan as though their goalie may retrieve the puck, and ask your league. Treat an unmarked sheet as a hint rather than a ruling — IIHF 27.7 turns on the position of the puck, not on the markings.
+8. **Off a dump-in you are hunting; off a turnover you are recovering.** Leave before the puck does on a dump-in; after a turnover the closest player pressures and everyone else finds a layer rather than chasing. And know what your own dump created: a player facing the end boards with you arriving behind them. Take the puck, take the ice, or steer them off it — never finish into the back of a player facing the wall. The onus is on you as the arriving player, and it is a major with an automatic game misconduct under the NHL and IIHF books, with no minor option.
+9. **Read the forecheck you are facing in one second:** count the forwards below the top of the circles — two or more means an aggressive system, one means containment — then watch whether F1 attacks or steers, and whether their far-side defenceman is pinching or retreating.
+10. **No forecheck is a law of hockey.** Find out which one your team runs and which one it switches to with a lead; most teams have at least two. Aggressive forechecks are beaten by moving the puck early, traps by chipping past the line and skating onto it. Never try to stickhandle through the middle of three players.
 
 ---
 
-*Sources — retrieved 27 July 2026:*
+*Sources — retrieved 27 July 2026, except the In-House Rules, retrieved 29 July 2026:*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 1.8 Goalkeeper's Restricted Area markings; Rule 27.8 and 63.2(viii) Restricted Area penalty; Rule 81 Icing; Rule 83 Off-side; Rule 87.1 Time-outs) · IIHF Official Rulebook 2025/26 — Rules 81.4 and 87.1, both matching the NHL on the consequences of an icing · [Scouting The Refs — Rule 27 Puts Goaltenders in Their Place](https://scoutingtherefs.com/2017/01/16841/rule-27-puts-goaltenders-place/) · [IIHF — New Rule Book for global game](https://www.iihf.com/en/events/2021/ww/news/26308/new_rule_book_for_global_game)*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 1.8 Goalkeeper's Restricted Area markings; Rule 27.8 and 63.2(viii) Restricted Area penalty; Rule 41.1 Boarding, for the onus on the checker and the "however" that qualifies it; Rule 43.1 Checking from Behind, for the deliberate-turn carve-out; Rule 81 Icing; Rule 83 Off-side; Rule 87.1 Time-outs) · IIHF Official Rulebook 2025/26 — Rules 81.4 and 87.1, both matching the NHL on the consequences of an icing, Rule 27.7 the Goalkeeper's Restricted Area, and Rule 43.1 Checking from Behind for its own deliberate-turn carve-out · [IHUK In-House Rules 2025-26, Revision 1 (published 27/10/25) (PDF)](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — the Introduction, for *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, and for the absence of any amendment to Rule 27 · [England Ice Hockey Rules & Regulations 2024-2025 (PDF)](https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf) — Rule 22.3, the suspension of the Goalkeepers' Restricted Area · [Scouting The Refs — Rule 27 Puts Goaltenders in Their Place](https://scoutingtherefs.com/2017/01/16841/rule-27-puts-goaltenders-place/) · [IIHF — New Rule Book for global game](https://www.iihf.com/en/events/2021/ww/news/26308/new_rule_book_for_global_game)*
 
 *Forechecking systems: [Ice Hockey Systems — 2-1-2 Forecheck (Strong Side Support)](https://www.icehockeysystems.com/hockey-systems/2-1-2-forecheck-strong-side-support) · [Ice Hockey Systems — NE 1-3-1 Forecheck](https://www.icehockeysystems.com/hockey-systems/ne-1-3-1-forecheck) · [Ice Hockey Systems — 1-2-2 Neutral Zone Forecheck](https://www.icehockeysystems.com/hockey-systems/1-2-2-neutral-zone-forecheck) · [Elite Hockey Canada — 1-2-2 Forecheck](https://www.elitehockeycanada.com/team-play/zone-play/offensive-zone-play/1-2-2-forecheck) · [Blue Seat Blogs — Complete Idiot's Guide to Hockey Systems, Pt. 1](https://blueseatblogs.com/2011/09/26/complete-idiots-guide-to-hockey-systems-pt-1/) · [Blue Seat Blogs — Overview of John Tortorella's System (The Suit, 21 February 2012)](https://blueseatblogs.com/2012/02/21/overview-of-john-tortorellas-system/) — the source for the "2-1-2 spread" attribution · [The Coaches Site — Explained: 2-1-2 Offensive Zone Forecheck](https://members.thecoachessite.com/article/ozfc-2-1-2) · [The Coaches Site — Explained: 1-2-2 Offensive Zone Forecheck](https://members.thecoachessite.com/article/ozfc-1-2-2) · [The Coaches Site — Explained: 1-1-3 Offensive Zone Forecheck](https://members.thecoachessite.com/article/ozfc-1-1-3) · [2-1-2 forecheck — Wikipedia](https://en.wikipedia.org/wiki/2-1-2_forecheck)*
 

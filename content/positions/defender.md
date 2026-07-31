@@ -7,14 +7,30 @@
 ## Overview
 
 ```facts
-Goal: Stop the opposing team from scoring
-Position: The last line of defence before the goalie
-Key: You cover the slot and the area in front of the crease — the most dangerous ice there is
-Priority: Always be aware of threats coming toward your net
-Mindset: Calm, simple, reliable decisions
+Action: Work as a pair — one of you plays the puck, the other guards the ice at the mouth of your own goal, and you swap those jobs whenever the puck crosses the middle
+Convention: One defenceman on the puck and one on the net front belongs to a low zone collapse — the most common defensive-zone system, a coaching choice rather than a rule; under man-on-man the front of the net belongs to whoever's man is standing there, so find out which your team plays
+Key: Gap control — how much room you leave an oncoming puck carrier — is the defining skill of playing defence, and it is a skating problem before it is a decision
+Action: Start skating backwards early, and take the middle away so the only route left runs toward the side boards
+Never: Turn to skate forwards while you can still stay backwards — once you turn you have given up your ability to react
+Never: Carry the puck or pass it across the ice in front of your own goal — go behind the net instead, where an interception means nothing
+Convention: Alone against two attackers, take the pass away and let your goalie have the shot — a convention rather than a law, which stops applying if the shooter is walking in unpressured with no realistic pass available
+Rule: Under NHL and IIHF rules your goalie may play the puck behind the goal line only inside the marked trapezoid, so a rim that dies in the corner is yours — the sole exception is a goalie playing the puck while keeping skate contact with the crease (NHL Rule 27.8; IIHF Rule 27.7, in the same words)
+Rule: USA Hockey has no trapezoid, and that reverses the play — the same corner rim is your goalie's to fetch, not yours; most rec, beer-league and youth leagues outside Britain have none either
+Rule: "No trapezoid" is not "no restricted area" — USA Hockey Rule 614(c) bars freezing the puck outside the "privileged area" (corners out), or behind the goal line with the body clear of the crease
+Rule: In England and Wales the status of the goalie's marked area behind the net is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced", so play as though it binds and ask your league
 ```
 
-Your primary job is to stop the opposing team from scoring. You are the last line of defence before the goalie and must always be aware of threats coming toward your net. You cover the most dangerous area of the ice — the slot (the area directly in front of the net between the two faceoff circles, where most goals are scored from) and the area in front of the crease (the painted area directly in front of the goalie where they operate). Your decisions need to be calm, simple, and reliable.
+Two defencemen work as a pair: one plays the puck, the other guards the ice at the mouth of your own goal, and you swap those jobs whenever the puck crosses the middle.
+
+**The commonest way that goes wrong is both of you being drawn to the puck**, leaving the front of your net unguarded — which coaches at every level name as one of the commonest causes of goals against, coaching consensus rather than a counted statistic. That division of labour belongs to a low zone collapse, the most common defensive-zone system and a coaching choice rather than a rule: under man-on-man the front of the net belongs to whoever's man is standing there. Find out which your team plays.
+
+**Gap control — how much room you leave an oncoming puck carrier — is the defining skill of the position, and it is a skating problem before it is a decision.** Start skating backwards early, because you cannot close that distance from a standstill. Take the middle away so the only route left runs toward the side boards. And stay skating backwards as long as you can — once you turn to skate forwards you have given up your ability to react.
+
+**Never carry the puck or pass it across the ice in front of your own goal.** Go behind the net instead, where an interception means nothing. And alone against two attackers, take the pass away and let your goalie have the shot — a convention rather than a law, which stops applying if the shooter is walking in unpressured with no realistic pass available.
+
+**Under NHL and IIHF rules your goalie may play the puck behind the goal line only inside the marked trapezoid**, so a puck that dies in the corner is yours — plan the route before it arrives. **The rule carries one exception in its own words:** the minor is not assessed *"when a goalkeeper plays the puck while maintaining skate contact with his goal crease"* (NHL Rule 27.8; IIHF Rule 27.7 says it in the same words). There is no exception for being under pressure and none for a teammate being nearby.
+
+**⚠️ USA Hockey has no trapezoid, and that reverses this instruction.** Most North American rec and youth hockey runs on the USA Hockey book, and there the same dead rim **is** your goalie's to fetch rather than yours — so a defenceman who sprints into that corner out of NHL habit is racing his own goalie for a puck under forecheck pressure. **But "no trapezoid" is not "no restricted area":** USA Hockey Rule 614(c) makes it a delay-of-game minor for a goalkeeper to fall on or gather the puck in **four** separate cases, and two of them bear on you. *"(3) The puck is outside the boundaries of the 'goalkeeper's privileged' area"* — an area reaching back from the faceoff-dot line to the end boards, which **excludes the corners**. And, stricter still, *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"* — which is **not limited by the privileged area at all**, so your goalie may not smother a puck behind your own net either, however central it is. **The practical upshot: under USA Hockey your goalie fetches the dead rim but must move it, not sit on it — so be an outlet, not a spectator.** **Check your book before you decide who chases a dead rim.** Most rec, beer-league and youth associations outside Britain have no trapezoid either, and in England and Wales the status is unsettled: England Ice Hockey's *Rules & Regulations* 22.3 say it is *"not currently enforced"*, so play as though it binds and ask your league. [Rules Primer](../foundation/rules_primer.md) owns both rules.
 
 ---
 
@@ -24,7 +40,7 @@ Your primary job is to stop the opposing team from scoring. You are the last lin
 Position: High means toward the blue line you're facing, low means toward the goal line
 Key: Strong-side plays the puck, weak-side holds the goalmouth — job titles, not descriptions
 Action: Swap the two roles every time the puck crosses the middle
-Key: The goalmouth is the weak-side defenceman's; the high slot is the centre's — two layers, two owners
+Convention: Under a low zone collapse the goalmouth is the weak-side defenceman's and the high slot is the centre's — two layers, two owners; that split is a coaching choice, and under man-on-man each layer belongs to whoever's man is standing in it, so ask which your team plays
 Key: A rim sends the puck onward with the flow; a reverse sends it back against it
 Never: Treat rim and reverse as interchangeable — they beat different kinds of pressure
 ```
@@ -34,7 +50,7 @@ Never: Treat rim and reverse as interchangeable — they beat different kinds of
 - **High / low.** High means toward the blue line you're facing, low means toward the goal line. Almost everything you are told about your own positioning is a height instruction, in both zones: hold the line, stay above the puck, and don't go below the circles in the offensive zone without a forward taking your place at the line first.
 - **Strong-side / weak-side.** Strong-side is the side the puck is on; weak-side is the other. For you these are not descriptions, they are **job titles** — the strong-side defenceman plays the puck, the weak-side defenceman holds the goalmouth, and the two of you swap every time the puck crosses the middle.
 - **The point.** The area just inside the blue line where you stand in the offensive zone, and where the opposition's defencemen stand in yours. It is where you live; "covering the point" is what your wingers do to the man in your spot at the other end.
-- **The goalmouth versus the high slot.** The **goalmouth** is the immediate net front and it is the weak-side defenceman's. The **high slot** — between the dots and the top of the circles — is the centre's. Two layers, two owners; confusing them is how net-front goals happen.
+- **The goalmouth versus the high slot.** The **goalmouth** is the immediate net front; the **high slot** is the layer above it, between the dots and the top of the circles. The names are terminology and they do not change. **Who owns each layer is not terminology but a coaching choice:** under a **low zone collapse** — the system assumed throughout this document — the goalmouth is the weak-side defenceman's and the high slot is the centre's, whereas under **man-on-man** each belongs to whoever's man is standing in it. Ask which your team plays. Either way, two layers with two owners; confusing them is how net-front goals happen.
 - **D-partner.** The other defenceman on your shift. Most of this document is really about the two of you as a unit.
 - **Rim versus reverse.** A **rim** sends the puck *onward* around the boards in the direction you're facing; a **reverse** sends it *back the way it came*, against the flow. They beat different kinds of pressure and they are not interchangeable — see below.
 
@@ -58,7 +74,9 @@ Options: Quick-up, up, wheel, D-to-D, reverse, rim, off the glass — run down t
 Read: Take the quick-up in the two or three seconds after your team wins the puck, before their forecheck exists — look up ice first, then down
 Goal: Transition the puck out of danger and start your team's breakout
 Never: Carry or pass D-to-D through the slot — skate behind the net to the other side instead
-Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor, "except where there is no glass" (NHL Rule 63.2(iii))
+Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii))
+Rule: The carve-outs are a stretch of boards with no glass mounted above it, a puck shot into the players' bench, and one out directly off a faceoff — but over the glass behind the bench is penalised, "the penalty will be assessed" (NHL Rule 63.2(iii) and its NOTE)
+Rule: The IIHF carries the same minor and the same carve-outs, "except where there is no protective glass" (IIHF Rule 63.2(III)) — so it binds a British player too
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 ```
 
@@ -76,7 +94,7 @@ Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate s
 - **D-to-D** — pass across to your partner to change the angle of attack (see below).
 - **Reverse** — send it back against the flow to a teammate arriving behind you. Beats an over-committed forechecker.
 - **Rim** — hard around the boards to the far winger. Safe, but concedes possession more often than the others.
-- **Off the glass and out** — no possession, but no goal against either. Always available and never wrong when you're in trouble. One caveat: the puck must stay *in play*. Shooting it **over** the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)), and it is a penalty amateur defencemen take constantly. **The rule carries its own exception — *"except where there is no glass"*** — which matters more at rec rinks than in the NHL: where the boards have no glass above them, as at many bench areas and in a lot of older facilities, the penalty does not apply. Know your rink, but do not build a habit on it. Off the glass and along it, fine; over it, and you've put your team down a man.
+- **Off the glass and out** — no possession, but no goal against either. Always available and never wrong when you're in trouble. One caveat: the puck must stay *in play*. Shooting it **over** the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)), and it is a penalty amateur defencemen take constantly. **The IIHF book says the same thing in the same words** — Rule 63.2(III) penalises a player who shoots the puck *"directly (non-deflected) out of the playing surface from their defending zone, except where there is no protective glass"* — so if you play in Britain this is your rule and not a North American footnote. **The rule carries three written carve-outs, and the players' bench is not the simple one it looks like.** First, it does not apply *"where there is no glass"* — that means a stretch of boards with no glass mounted above it, which is a rec-rink and older-facility situation, not a bench one. Second, its NOTE says *"when the puck is shot into the players' bench, the penalty will not apply."* Third, the same NOTE says *"when the puck goes out of the playing area directly off a face-off, no penalty shall be assessed."* **But the rule states in terms that *"when the puck is shot over the glass 'behind' the players' bench, the penalty will be assessed"*** — so the bench is the one area where you must not assume the glass rule has stopped applying. Into the bench, no penalty; over the glass behind it, two minutes. **The IIHF carries all three carve-outs and the bench rule too, in wording that is if anything wider** — its 63.2(III) says the penalty is assessed *"when the puck is shot over the protective glass surrounding the Players' bench"*, where the NHL says *"behind"*. Know your rink, but do not build a habit on it. Off the glass and along it, fine; over it, and you've put your team down a man.
 
 **D-to-D passing — and the one rule about it.** Moving the puck to your partner makes the forecheck reset and shift across, which is often all you need. But: **never pass D-to-D through the slot.** Go behind your own net so the puck travels below the goal line, where an interception means nothing. A D-to-D pass in front of the net that gets picked off is a point-blank chance against, and it is one of the most punished mistakes in hockey.
 
@@ -96,7 +114,8 @@ Read: Rim to beat a forechecker sealing you against the boards; reverse to beat 
 Never: Carry through the slot under pressure — a turnover in the highest-danger area is a direct scoring chance against
 Rule: Your goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii)) — the sole exception is a goalie keeping skate contact with the crease
 Rule: Take the trapezoid's dimensions from Rule 1.8, never from Rule 27.8 — 27.8's wording is stale, left over from before the trapezoid was widened in 2014-15 — the sole exception is a goalie keeping skate contact with the crease
-Key: The NHL, KHL and IIHF play a trapezoid; most rec, beer-league and youth associations outside Britain do not — know which you are in
+Key: NHL and IIHF play a trapezoid (KHL reportedly too — unverified); USA Hockey and most rec and youth leagues do not — without one the dead rim is your goalie's, not yours
+Rule: Without a trapezoid your goalie may still not freeze the puck in the corner — USA Hockey Rule 614(c) confines that to the "goalkeeper's privileged area", which excludes the corners
 Rule: The IIHF number is 27.7, not 27.8, and in England and Wales the status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" while the In-House Rules are silent, so assume it binds and ask your league
 Action: Plan your retrieval route before the puck arrives, and aim rims where a teammate can meet them, not into the corner
 ```
@@ -113,16 +132,16 @@ Action: Plan your retrieval route before the puck arrives, and aim rims where a 
 
 > **The trapezoid — this constrains everything you do behind your net.**
 >
-> Your goaltender may only play the puck behind the goal line **inside the marked trapezoid**; outside it, behind the line, it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii)). **The one exception — skate contact with the crease — and where the trapezoid does and does not apply are in [Rules Primer](../foundation/rules_primer.md)** — read it, because whether your league has one changes your job more than it changes anyone else's. Short version: the NHL, the KHL and IIHF international play have it; most rec, beer-league and youth associations do not.
+> Your goaltender may only play the puck behind the goal line **inside the marked trapezoid**; outside it, behind the line, it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii)). **The one exception — skate contact with the crease — and where the trapezoid does and does not apply are in [Rules Primer](../foundation/rules_primer.md)** — read it, because whether your league has one changes your job more than it changes anyone else's. Short version: the NHL and IIHF international play have it — both verified against the rulebook text, at NHL 1.8/27.8 and IIHF 27.7 — and the KHL is commonly said to as well, **though that one is unverified here: no KHL rulebook was available to check it against.** **USA Hockey and most rec, beer-league and youth associations do not** — and where there is no trapezoid the retrievals below stop being yours.
 >
-> **The dimensions come from Rule 1.8, never from Rule 27.8.** The painted lines begin **eight feet from each goal post** at the goal line and run back to **eleven feet from each post — a 28-foot span — at the end boards**. Rule 27.8 still reads "six feet from either goal post", wording left over from before the trapezoid was widened by two feet a side in **2014-15**. That is **stale, not self-contradictory** — six feet from each post gives eighteen feet at the goal line, diverging coherently to the same twenty-eight feet at the boards that both rules quote. It is the old, narrower trapezoid described accurately; it is simply not the one painted today. **Never take dimensions from 27.8.** In practice that two feet a side is exactly the band where a rim dies, so it is worth knowing which figure is real. Same treatment in [Breakouts](../systems/breakouts.md), [Forechecking Systems](../systems/forechecking_systems.md) and [Goaltender](goaltender.md).
+> **The dimensions come from Rule 1.8, never from Rule 27.8.** The painted lines begin **eight feet from each goal post** at the goal line and run back to **eleven feet from each post — a 28-foot span — at the end boards**. Rule 27.8 still reads "six feet from either goal post", wording left over from before the trapezoid was widened by two feet a side in **2014-15**. That is **stale, not self-contradictory** — six feet from each post gives eighteen feet at the goal line, diverging coherently to the same twenty-eight feet at the boards. Only **27.8** puts that figure in words — *"points twenty-eight feet (28') apart at the end boards"*; **1.8 never states a span at all**, giving the eleven feet from each post from which it follows. It is the old, narrower trapezoid described accurately; it is simply not the one painted today. **Never take dimensions from 27.8.** In practice that two feet a side is exactly the band where a rim dies, so it is worth knowing which figure is real. Same treatment in [Breakouts](../systems/breakouts.md), [Forechecking Systems](../systems/forechecking_systems.md) and [Goaltender](goaltender.md).
 >
 > What it means for you, on every retrieval:
 > - **Your goalie cannot get a rim that dies in the corner.** You have to, under forecheck pressure. Plan your retrieval route before the puck arrives, not after — that decision is the difference between a breakout and a battle you lose facing your own end boards.
 > - **A rim aimed straight into the corner is a gift to the forecheck.** Aim rims to arrive where a teammate can meet them, or keep them tight enough that they carry all the way around.
 > - **Your goalie can still help you, just not out there.** They may stop a puck directly behind the net and leave it dead for you, or play it inside the trapezoid. A rim that stays close to the net is therefore retrievable with no race at all. Agree which of those you want — the call is **"leave it"**, and it has to come while you're still coming back, not as you arrive. See [Goaltender](goaltender.md) and [On-Ice Communication](../foundation/on_ice_communication.md).
 > - **🇬🇧 If you play in Britain, find out before you plan any of this.** The IIHF book has the rule and numbers it **27.7**, not the NHL's 27.8 — but England Ice Hockey's own *Rules & Regulations* **22.3** say the Goalkeepers' Restricted Area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"*, and the 2025-26 In-House Rules do not mention it at all. That edition of the *Rules & Regulations* is 2024-25, so the published documents do not settle whether the suspension still stands. **Play as though it binds, and ask your league.** **Look behind the net to see whether the lines are painted at all** — 22.3's own stated reason for the suspension is giving rinks time to repaint, so an unmarked sheet is a strong hint. It is a hint and not a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
-> - **If you play without a trapezoid, rebuild the habit.** Your goalie becomes a genuine third puck-handler behind the net, and the retrievals you have been sprinting to are no longer yours. Find out before your first shift.
+> - **If you play without a trapezoid, rebuild the habit.** Your goalie becomes a genuine third puck-handler behind the net, and the retrievals you have been sprinting to are no longer yours. Find out before your first shift. **Under USA Hockey specifically, one thing does not change: they may play that corner puck but may not freeze it.** Rule 614(c) makes falling on or gathering the puck a minor in four separate cases. *"(3)"* is the one about the corners — outside the *"goalkeeper's privileged"* area, defined in the rule's own Note by *"connecting the end zone face-off spots with an imaginary line and imaginary lines from each face-off spot running perpendicular to the end boards"*, which excludes them. But *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"* is **not bounded by that area at all**, so a smothered puck behind your own net is a minor too. Expect the puck to come back to you moving, wherever behind the net it was retrieved, and be an option rather than a spectator.
 
 ---
 
@@ -163,7 +182,7 @@ Under either system, two things hold: if the puck escapes up the wall toward the
 
 ```facts
 Position: At the goalmouth, between any opposing forward and your goalie
-Key: You guard the goalmouth, the centre covers the high slot — two layers of coverage in front of the net
+Convention: Under a low zone collapse you guard the goalmouth and the centre covers the high slot — two layers of coverage in front of the net, and a coaching choice rather than a rule; under man-on-man each of you takes the man you are assigned
 Never: Get drawn to the puck — your partner and the centre are handling it
 Technique: Body position first, stick second — a stick lift beats a cross-check at everything, including staying on the ice, taken below their bottom hand
 Convention: "Position beats strength" is a tendency, not a law — plan the shift around tying up their stick, not out-leveraging somebody much bigger
@@ -605,24 +624,79 @@ The universal rule: **stay on the defensive side of the puck**. Anything that pu
 - **Diving or sliding on a 2-on-1** before the pass is released — you take yourself out of the play and open both options.
 - **Carrying the puck through your own slot.** Go behind the net instead.
 - **Pinching with no read.** An offensive-zone pinch with forwards behind you is fine; a neutral-zone pinch that misses is a 2-on-1 against your partner.
-- **Rimming into the corner and assuming the goalie will get it.** Under NHL and IIHF rules they legally cannot — though in England and Wales the restricted area's status is unsettled. Play as though it binds — an unpainted sheet is a hint, not a ruling, because the rule turns on where the puck is, not on the markings.
+- **Rimming into the corner and assuming the goalie will get it.** Under NHL and IIHF rules they legally cannot, unless they keep skate contact with the crease — though in England and Wales the restricted area's status is unsettled. Play as though it binds — an unpainted sheet is a hint, not a ruling, because the rule turns on where the puck is, not on the markings. **And the opposite mistake, if you have moved from the NHL book to the USA Hockey one: sprinting for a corner rim that is now your goalie's.** USA Hockey has no trapezoid, so they may fetch it — what Rule 614(c) stops them doing is *freezing* it, and not merely in the corners: 614(c)(1) bars smothering the puck anywhere behind the goal line with the body clear of the crease.
 - **D-to-D through the slot.** Go behind the net.
 - **Blocking a shot from a screening position**, deflecting a puck your goalie never saw.
 - **Activating with no forward covering for you**, leaving nobody above the puck.
 - **Standing tall while skating backwards.** Stay low or you get beaten wide.
 - **Flat clears up the middle** — the classic icing, and the classic interception.
+- **Putting the clear *over* the glass rather than off it.** From inside your own zone that is a two-minute delay-of-game minor under both the NHL and the IIHF (63.2(iii)/(III)), and it is the penalty amateur defencemen take most often — unless that stretch of boards has no glass mounted above it, which the rule says in its own words but is no basis for a habit. **And do not read the players' bench as a gap in the glass.** A puck shot *into* the bench is exempt under the rule's NOTE, but one put *over* the glass behind the bench is expressly penalised — "the penalty will be assessed". The bench is the trap, not the escape.
 - **Going below the circles in the offensive zone with nobody back-filling.** Below the circles you are a fourth forward and cannot recover — which is fine if a forward has already taken the blue line for you, and an odd-man rush against if not. The error is the missing back-fill, not the depth.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. A rim comes round and dies in the corner, outside the trapezoid. Whose puck is
+   it, why is it not your goalie's, what is the single exception the rule writes
+   into itself, and what should you have done differently when you aimed that
+   rim? Then answer the same question **for a league with no trapezoid** — who
+   fetches it, and what may your goalie still not do out there? *(§Overview and
+   §Defensive Zone — Carrying the Puck — Under Pressure, the trapezoid note)*
+
+2. You have just retrieved the puck behind your own net. Name three of your
+   breakout options — then say what that list is *not*, and which option most
+   defencemen never look for. *(§Defensive Zone — Carrying the Puck — Free
+   Space)*
+
+3. You are in trouble and you put the puck off the glass. When does that same
+   instinct become a two-minute penalty instead — what three carve-outs does the
+   rule carry in its own wording, and which of the two things you can do at the
+   players' bench is the one that costs you two minutes? *(§Defensive Zone —
+   Carrying the Puck — Free Space)*
+
+4. There is a forward parked at your goalmouth and you have to move him. What is
+   the order of operations, where on his stick may a stick lift be taken, and why
+   is "my blade was on the ice" no defence? *(§Without the Puck — Weak-Side
+   Coverage at the Goalmouth, and [Body Contact and
+   Battles](../technique/body_contact_and_battles.md), which owns the technique)*
+
+5. You are alone against two attackers. What do you take away, what do you
+   deliberately give up, and what is the one situation in which that stops being
+   the right answer? *(§Defending the Rush — quick reference)*
+
+6. Three attackers, you and your partner. **This one does not have a single
+   answer** — name the two systems, say what each of them concedes, and say what
+   is worse than either of them. *(§Defending the Rush — quick reference)*
+
+7. A point shot is coming and you decide to block it. Name the three things you
+   never do with your body, say why each one is dangerous, and name the position
+   you must never block from. *(§Blocking Shots, and [Body Contact and
+   Battles](../technique/body_contact_and_battles.md), which owns the technique)*
+
+8. How much longer is a defenceman's shift than a forward's, where does that
+   number come from, and what is wrong with the figures you usually hear quoted?
+   *(§Line Changes)*
+
+---
 
 ## Key Takeaways
 
-1. One defender on the puck, one at the goalmouth. That holds under low zone collapse, the coverage assumed here; under man-on-man you follow your check instead, and the net front belongs to whoever's man is standing there. Switch roles as the puck moves, and talk about it.
+1. One defender on the puck, one at the goalmouth — swap every time the puck crosses the middle, and talk about it. That is a low zone collapse; under man-on-man the net front belongs to whoever's man is standing there.
 2. Gap control is the job. Start your feet early, close the middle, force them outside, pivot late.
-3. On a 2-on-1, take the pass and let your goalie have the shot — a convention, not a law, and it stops applying if the shooter is walking into the slot completely unpressured with no realistic pass available.
-4. Never carry through your own slot. Behind the net is your safe pivot.
-5. Rim to beat a sealing forechecker, reverse to beat an over-committed one.
-6. In the NHL, the KHL and IIHF play, your goalie can only play the puck behind the goal line inside the trapezoid — so retrieval is on you. Most rec, beer-league and youth associations elsewhere have no trapezoid, and there your goalie is a third puck-handler back there. **In England and Wales the status is unsettled** — the IIHF book has it at Rule 27.7, England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced. Play as though it binds and find out before your first shift; unpainted lines are a hint, not a ruling.
-7. Only one defenceman pinches at a time — the other is the safety. That is a near-universal coaching convention rather than a rule, and coaches do call exceptions (a full-ice press, a delayed penalty, 6-on-5).
-8. Know whether your team plays zone or man-on-man in the defensive zone. Most breakdowns are two players on different assumptions.
+3. On a 2-on-1, take the pass away and let your goalie have the shot — a convention, not a law, and it stops applying if the shooter is walking in unpressured with no realistic pass.
+4. Never carry or pass D-to-D through your own slot. Go behind the net, where an interception means nothing.
+5. **Off the glass is a clear; over the glass is a penalty.** Shooting the puck directly out of play from inside your own defensive zone is a two-minute delay-of-game minor — NHL Rule 63.2(iii) and IIHF Rule 63.2(III), which is the version a British player is under — and it is one amateur defencemen take constantly. **The rule carries three carve-outs in its own wording** — *"except where there is no glass"* (a stretch of boards with none mounted above it, which matters at rec rinks), a puck shot **into** the players' bench, and a puck out **directly off a faceoff**. **Over the glass *behind* the bench is not one of them: "the penalty will be assessed".** Know your rink and do not build a habit on any of it. USA Hockey has no equivalent minor: Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff.
+6. Under NHL and IIHF rules — and, on a claim we could not verify against a KHL rulebook, the KHL — your goalie may play the puck behind the goal line only inside the trapezoid, so a rim that dies in the corner is yours — the one exception in the rule's own words being a goalkeeper who plays it *"while maintaining skate contact with"* the crease (NHL 27.8, IIHF 27.7). **USA Hockey and most rec, beer-league and youth associations have no trapezoid, and that reverses the play:** there your goalie is a third puck-handler and the dead rim is theirs. **It is still not a free-for-all** — USA Hockey Rule 614(c) bars them *freezing* the puck outside the "goalkeeper's privileged area", which excludes the corners, and 614(c)(1) bars it anywhere behind the goal line with the body clear of the crease. They fetch it; they cannot sit on it. Know which book you are in before you decide who chases.
+7. **In England and Wales the trapezoid's status is unsettled** — the IIHF book has it at Rule 27.7, and England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced. Play as though it binds and ask your league; unpainted lines are a hint, not a ruling.
+8. Only one defenceman pinches at a time; the other is the safety. A near-universal coaching convention rather than a rule, and coaches do call exceptions — a full-ice press, a delayed penalty, 6-on-5.
+9. **Blocking shots is a technique, not an act of courage.** Get close — ten feet is safer and more effective than thirty — present your shin pads square to the shooter with your stick down beside you, and stay on your feet if you can. If you go down, go down **toward** the shooter, not sideways, with your hands and head behind your body. Never turn sideways, never lift a leg, never lead with your stick, and **never block from a screening position or on a 2-on-1** — your goalie wants that shot and cannot save the one they never saw. **How much your team blocks at all is a coaching choice: ask your coach which they want, and ask your goalie.**
+10. Know whether your team plays zone or man-on-man in the defensive zone. Most breakdowns are two players on different assumptions.
 
 ---
 
@@ -630,7 +704,7 @@ The universal rule: **stay on the defensive side of the puck**. Anything that pu
 
 *Position play: [How To Hockey – Defence Roles](https://howtohockey.com/how-to-play-defense-roles-responsibilities/) · [Elite Hockey Canada – Defensemen Zone Play](https://www.elitehockeycanada.com/team-play/zone-play/role-and-responsibilities/defensemen-zone-play) · [Hockey Monkey – Defenseman](https://www.hockeymonkey.com/learn/hockey-defenseman)*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 81 Icing — including Rule 81.6, the short-handed exemption and its major-penalty/empty-penalty-bench carve-out; Rule 83 Off-side, Rule 1.8 Goalkeeper's Restricted Area — the painted dimensions, eight feet from each post at the goal line widening to eleven feet at the boards; Rules 27.8 and 63.2(viii) Restricted Area — the offence and the penalty only, since 27.8's own "six feet from either goal post" is stale pre-2014 wording) · [Rule 27 Puts Goaltenders in Their Place — Scouting The Refs](https://scoutingtherefs.com/2017/01/16841/rule-27-puts-goaltenders-place/) — quotes Rule 27.8 verbatim; the sole exception is skate contact with the crease · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), which prefixes the short-handed icing nullification with "(For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)" · [IIHF Official Rule Book 2025/26](https://www.iihf.com/en/statichub/6446/rules-and-regulations) — Rules 81.4 and 87.1, which impose the post-icing line-change and time-out bans exactly as the NHL does · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game) — IIHF adopted the goalkeeper restricted area for 2021-22*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 81 Icing — including Rule 81.6, the short-handed exemption and its major-penalty/empty-penalty-bench carve-out; Rule 83 Off-side, Rule 1.8 Goalkeeper's Restricted Area — the painted dimensions, eight feet from each post at the goal line widening to eleven feet at the boards; Rules 27.8 and 63.2(viii) Restricted Area — the offence and the penalty only, since 27.8's own "six feet from either goal post" is stale pre-2014 wording; 27.8 also carries the skate-contact exception in the same words the IIHF uses, "The minor penalty will not be assessed when a goalkeeper plays the puck while maintaining skate contact with his goal crease") · [Rule 27 Puts Goaltenders in Their Place — Scouting The Refs](https://scoutingtherefs.com/2017/01/16841/rule-27-puts-goaltenders-place/) — quotes Rule 27.8 verbatim; the sole exception is skate contact with the crease · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), which prefixes the short-handed icing nullification with "(For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)"; and Rule 614 Falling on Puck, whose 614(c) makes it a delay-of-game minor for a goalkeeper to fall on or gather the puck where "(3) The puck is outside the boundaries of the 'goalkeeper's privileged' area", that area defined in the rule's own Note by "connecting the end zone face-off spots with an imaginary line and imaginary lines from each face-off spot running perpendicular to the end boards". Nothing in the 2025-29 playing rules restricts where a goalkeeper may *play* the puck — there is no trapezoid · [IIHF Official Rule Book 2025/26](https://www.iihf.com/en/statichub/6446/rules-and-regulations) — Rules 81.4 and 87.1, which impose the post-icing line-change and time-out bans exactly as the NHL does · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game) — IIHF adopted the goalkeeper restricted area for 2021-22*
 
 *Special teams: [Explained: 1-3-1 Power Play Formation — The Coaches Site](https://members.thecoachessite.com/article/explained-1-3-1-power-play-formation)*
 

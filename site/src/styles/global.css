@@ -253,16 +253,37 @@ pre code .line {
   border-bottom: 1px solid var(--border);
 }
 
+/*
+  The wordmark truncates on the text, not on the link.
+
+  This element is a flex container, and `text-overflow: ellipsis` only ever acts
+  on inline content laid out inside the box it is set on. Setting it here did
+  nothing: the wordmark is a flex *item*, so it was clipped at the flex boundary
+  and no ellipsis was ever drawn. At 375px the header read "Learning to" and at
+  320px it read "Learn" — 58px of a 225px wordmark, cut mid-word with no mark to
+  say so, which reads as a rendering fault rather than as a truncation.
+
+  Two things are needed. `min-width: 0` on both the link and the wordmark, since
+  a flex item's automatic minimum size otherwise refuses to shrink below its
+  content; and the overflow/ellipsis pair on .site-header__name, where there is
+  inline text for it to act on.
+*/
 .site-header__brand {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
+  min-width: 0;
   font-weight: 650;
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.01em;
   white-space: nowrap;
+}
+
+.site-header__name {
+  min-width: 0;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -306,6 +327,59 @@ pre code .line {
 .icon-button:hover {
   color: var(--text);
   background: var(--bg-sunken);
+}
+
+/*
+  Narrow phones: the three header actions do not shrink, so every pixel they
+  take comes out of the wordmark beside them. At 320px they were claiming ~209px
+  of a 291px content box and leaving the site title 58px — enough for "Learn".
+
+  So below this width the actions give some of it back: tighter padding, and the
+  search button drops to its glyph with the word kept for assistive technology.
+  Nothing is removed from the header and no touch target shrinks below the
+  2.25rem minimum set on .icon-button. The wordmark still truncates at the
+  narrowest of these widths — it cannot fit — but it now truncates with a
+  visible ellipsis and enough characters in front of it to be recognisable.
+
+  The breakpoint is 31rem (496px) and not the 26rem (416px) it was, because
+  416px is exactly where the wordmark fits WITH the compact actions and not
+  where it fits without them. Ending the rule there restored the "Search" label
+  (+45px) at 417px and truncated the wordmark to 136 of its 206px — LESS visible
+  wordmark at 417px than at 375px, and it stayed that way until 496px, where the
+  full-width actions finally leave room again. Real phones sit inside that band
+  (430px, 448px), so the rule now runs to the width where the wordmark fits
+  without help. The cost is the "Search" word hidden on more phones; the
+  accessible name survives the clip, and a readable wordmark was the point.
+*/
+@media (max-width: 31rem) {
+  .site-header {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .site-header__brand {
+    gap: 0.4rem;
+  }
+
+  .site-header__actions {
+    gap: 0.25rem;
+  }
+
+  .site-header__actions .icon-button {
+    padding: 0 0.4rem;
+  }
+
+  .icon-button__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
 }
 
 /* ---------------------------------------------------------------- shell -- */
@@ -1299,6 +1373,39 @@ a.chip:hover {
 .notfound {
   padding: 4rem 0;
   max-width: 46rem;
+}
+
+/*
+  The 404 page's section list. Reuses .nav-list so a lost reader gets the same
+  affordance as the sidebar rather than a second navigation idiom, but is not
+  .sidebar — that class is sticky and column-scoped, and this page renders in
+  the single-column bare shell.
+*/
+.notfound-nav {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9375rem;
+}
+
+.notfound-nav__heading {
+  margin: 0 0 1rem;
+  font-weight: 650;
+}
+
+.notfound-nav .nav-list a {
+  padding: 0.5rem 0.7rem;
+}
+
+.notfound-nav__title {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.notfound-nav__tagline {
+  display: block;
+  color: var(--text-muted);
 }
 
 /* ---------------------------------------------------------------- key facts

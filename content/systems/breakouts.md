@@ -19,11 +19,15 @@ Convention: Almost everything here is a coaching choice, not a law of hockey —
 Action: Learn the framework here, then find out what your team actually calls and actually runs
 ```
 
-A **breakout** is your team's organised exit from your own defensive zone — the set of routes, passes and reads that turn defending into attacking. It is the most-run system in hockey: you do it several times a shift, every shift, all game. It is also the system that most often falls apart at amateur level, and almost never because someone lacked skill. It falls apart because five players were running five different plays.
+A **breakout** — your team's organised exit from your own end — is the most-run play in hockey, several times a shift, every shift. At amateur level it fails for want of agreement, not skill: five players running five different plays.
 
-This document covers what a breakout is, the five jobs inside it, the named options and when each is right, the two positional habits that cause most amateur failures (winger timing and centre height), and how the whole thing changes against different forechecks and in special situations.
+**Leaving with the puck is worth far more than flinging it clear.** An analysis of roughly 230,000 tracked NHL exits — Corey Sznajder's manual tracking, covering roughly half the games of 2016-17 and 2017-18 rather than both seasons complete — found carrying or passing the puck out led to an attack the other way about 89% of the time, against about 20% for a clear nobody recovered — though the study's own conclusion is that **possession is the explanation, not the method**, and a clear your own team collects performs about as well. So keep the puck by default, and clear it because you have read the situation — outnumbered with nobody to pass to, or a turnover in front of your own net as the alternative — rather than by reflex.
 
-**A note on what follows.** Breakouts are the purest example of the thing this guide keeps warning about: almost everything in here is a **coaching choice, not a law of hockey**. Different teams call the same play different names, and some call *different* plays the same name. Where that happens it is flagged. Learn the framework here, then find out what your team actually calls and actually runs.
+**Do not move the puck across the ice in front of your own goal** — not with a pass, not by skating it — **unless the read is unmistakable.** The route to the far side is behind your own net, where an interception means very little; the same pass in front of the net is a point-blank chance against. The one exception is the cross-ice "over" in section 3, the highest-risk play in this document: it needs a forecheck genuinely over-loaded to one side with the middle empty, and where the behind-the-net route exists you take that instead.
+
+**Under pressure on the side wall, where you send the puck depends on the chaser.** Sealed against the wall, send it onward around the curve of the rink to a teammate further round — hard and low, because a soft one dies in the corner and is a gift. Over-skated by someone who cannot stop, send it back the way you came into the space they have left, and whoever arrives there must call for it, because you are looking the other way.
+
+**Almost everything else is a coaching choice, not a law of hockey.** Where the wingers stand, and whether the centre stays back or leaves early, differ from team to team; teams call the same play different names, and some call different plays the same name. Learn the shapes, then ask which your team runs — starting with what they mean by "over", a word that names both one of the safest plays here and the riskiest.
 
 ---
 
@@ -40,7 +44,7 @@ Terms used throughout, defined once here:
 - **Outlet** — a teammate available to receive the first pass out of the zone.
 - **The point** — the position at the blue line, at the top of the offensive zone. When your opponents "have the point", that is where their defencemen are standing. Not to be confused with the **half-wall**, which is the boards level with the faceoff dot, far below it.
 - **The top of the circle** — the edge of a faceoff circle furthest from the goal line, roughly 35 feet out. A common landmark for where a shot becomes dangerous.
-- **The slot** — the ice directly in front of the net between the two faceoff circles, from the goalmouth out to the tops of the circles. The **high slot** is its upper half, dots to tops of circles; the **goalmouth** is the immediate net front. **The danger zone** (sometimes "the home-plate area") is the slot plus the ice between the faceoff dots down to the goal line — the area most goals come from, and the area you never move the puck through on a breakout.
+- **The slot** — the ice directly in front of the net between the two faceoff circles, from the goalmouth out to the tops of the circles. The **high slot** is its upper half, dots to tops of circles; the **goalmouth** is the immediate net front. **The danger zone** (sometimes "the home-plate area") is the slot plus the ice between the faceoff dots down to the goal line — the most dangerous ice on the rink, where a shot is worth several times the same shot from outside it ([Shooting](../technique/shooting.md) owns the values and their qualifications; [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the shape, which is an analytics convention rather than an official marking). It is the ice you do not move the puck through on a breakout.
 
 ---
 
@@ -64,11 +68,12 @@ There are only two categories of zone exit, and they are not the same thing:
 
 ```facts
 Key: An analysis of roughly 230,000 tracked NHL zone exits found controlled exits led to a subsequent zone entry about 89% of the time, unrecovered dump-outs about 20%
+Key: The tracking underneath it is Corey Sznajder's manual dataset — roughly half the games of 2016-17 and 2017-18, not two complete seasons
 Key: The study's own conclusion is that possession is the explanation, not the method — a dump-out your team recovers performs about as well as a controlled exit
 Goal: A clean breakout is what gives you a carried entry; a panicked clear is what gives you a dump-in against a set defence
 ```
 
-The tracking research is unusually one-sided on this. An analysis of roughly 230,000 tracked NHL zone exits from the 2016-17 and 2017-18 seasons, published on Hockey Graphs, found that **controlled exits (carry-outs and pass-outs) led to a subsequent zone entry about 89% of the time, while unrecovered dump-outs did so about 20% of the time** — controlled exits were close to four times more likely to produce the next attack. Crucially, the study's own conclusion is that *possession* is the explanation, not the method: a dump-out your team recovers performs about as well as a controlled exit. It is losing the puck that hurts, not the shape of the play.
+The tracking research is unusually one-sided on this. An analysis of roughly 230,000 tracked NHL zone exits, published on Hockey Graphs — the tracking underneath it is Corey Sznajder's manual dataset, **roughly half the games of the 2016-17 and 2017-18 seasons** rather than both seasons complete, and Hockey Graphs is the analysis rather than the tracker — found that **controlled exits (carry-outs and pass-outs) led to a subsequent zone entry about 89% of the time, while unrecovered dump-outs did so about 20% of the time** — controlled exits were close to four times more likely to produce the next attack. Crucially, the study's own conclusion is that *possession* is the explanation, not the method: a dump-out your team recovers performs about as well as a controlled exit. It is losing the puck that hurts, not the shape of the play.
 
 That connects to the other half of the transition chain. The reference work on zone *entries* is Eric Tulsky, Geoffrey Detweiler, Robert Spencer and Corey Sznajder, *Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance* (2013 MIT Sloan Sports Analytics Conference), which hand-tracked 330 NHL games from 2011-12. Their headline finding, in their own words: *"carrying the puck across the blue line generates more than twice as many shots, scoring chances, and goals as dumping the puck in."* At 5-on-5 their tracked rates were **0.53–0.62 shots per carry-in against 0.22–0.28 per dump-in** — and "shots" there means **unblocked shot attempts** (shots on goal plus misses), not shots on goal, so do not set those figures against a shots-on-goal rate. [Zone Entries](zone_entries.md) owns the numbers and that qualification. A clean breakout is what gives you a carried entry; a panicked clear is what gives you a dump-in against a set defence. Full treatment, including the break-even maths on when a dump is genuinely correct, in [Zone Entries](zone_entries.md).
 
@@ -111,7 +116,7 @@ Position: The defenceman who goes back for the puck — your job starts before y
 Action: Look over your inside shoulder on the way back, while you still have time to change your plan
 Technique: Arrive at an angle, not straight on — curl in so your first touch already has your body opening toward the ice
 Action: Take the puck to a decision point — behind the net or up the wall — rather than stopping on it
-Never: Through the slot — not with a pass, not with your feet
+Never: Through the slot — not with a pass, not with your feet; the cross-ice over in section 3 is the only exception, and it is the highest-risk play in this document
 Risk: A stationary defenceman is the easiest target in hockey, and at the puck with your back turned you are guessing
 ```
 
@@ -120,7 +125,7 @@ The defenceman who goes back for the puck. Your job starts before you touch it:
 - **Look over your inside shoulder on the way back.** You need to know where the forecheck is coming from while you still have time to change your plan. Once you're at the puck with your back turned, you're guessing. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md).
 - **Arrive at an angle, not straight on.** Approaching the puck square to the end boards leaves you facing the wall with a forechecker arriving in your back. Curl in so your first touch already has your body opening toward the ice.
 - **Take the puck to a decision point** — behind the net or up the wall — rather than stopping on it. A stationary defenceman is the easiest target in hockey.
-- **Never through the slot.** Not with a pass, not with your feet. See [Defender](../positions/defender.md).
+- **Never through the slot.** Not with a pass, not with your feet. See [Defender](../positions/defender.md). The single exception in this document is the cross-ice "over" in section 3, which is the highest-risk play here and needs a read most shifts never give you.
 
 ### 2. The support D (D2)
 
@@ -416,7 +421,7 @@ Rule: Hybrid icing turns on "which player would first touch the puck, not which 
 Rule: After your own icing your line cannot change (Rule 81.4) and cannot take a time-out (Rule 87.1: "No time-out shall be granted to the defensive team following an icing")
 Rule: IIHF 81.4 and 87.1 read identically, so both restrictions are yours in Britain; USA Hockey is the outlier — Rule 624 restricts no substitution and 636(f) attaches no icing condition to its time-out
 Rule: Shorthanded you may ice it freely (NHL Rule 81.6), subject to two carve-outs — a major with an empty penalty bench, and USA Hockey's classification limit — owned by Special Teams and Rules Primer; IIHF 81.6 carries neither
-Rule: Shooting or batting the puck directly out of play from your defending zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)) — its own exceptions are where there is no glass, into the players' bench, and directly off a faceoff
+Rule: Putting the puck directly out of play from your defending zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)); exceptions are boards with no glass above them, a puck into the players' bench, and one off a faceoff — but over the glass behind the bench is penalised
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Key: Staying in is fine, and a deflection out is fine
 Key: Glass clears rarely get intercepted and rarely ice, because they slow the puck and keep it wide — which is why the play is called "off the glass", not "over the glass"
@@ -501,7 +506,7 @@ Action: Check your shoulder before the puck arrives, so you already know whether
 Never: Receive the puck with your chest to the boards — facing the glass you have surrendered every option except a blind chip
 Technique: Open your hips to the ice and take a step or two off the boards, so you can skate, pass to the centre, pass back to your defenceman or attack the middle
 Technique: If the puck arrives hard on the boards, angle a skate to kill it off the wall onto your stick rather than reaching and missing
-Never: Shield with your back to the boards, and never duck — skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
+Never: Shield with your back to the boards, or duck — skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
 Convention: Whether you also call for it is a team preference — some prefer silence on the wall to avoid tipping the play; the stick is not optional
 ```
 
@@ -882,9 +887,12 @@ Errors the body above does not cover — the ones that survive knowing the syste
 
 ## Check yourself
 
-*Answer before you read on. Producing an answer and getting it wrong is worth more
-than recognising a right one, which is what the Key Takeaways below give you.
-Every answer is in this document — the section is named beside it.*
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
 
 1. Your partner has the puck behind your own net and you are on the far side.
    Where do you go, and what is the one route you never take to get there?
@@ -892,11 +900,11 @@ Every answer is in this document — the section is named beside it.*
 
 2. You are shorthanded and under pressure in your own end. You fire it the length
    of the ice. What happens — and what would have to be true for the answer to
-   change? *(§Overview, the icing facts)*
+   change? *(§When a clear is the right play, §Off the glass and out)*
 
 3. Name three of the nine breakout options. For one of them, say what you are
-   reading that makes it the right choice rather than the others. *(§the nine
-   options)*
+   reading that makes it the right choice rather than the others. *(§3. The
+   Named Breakout Options)*
 
 4. Someone shouts "over". What are the two things they might mean, and how do you
    tell which? *(§Over)*
@@ -909,17 +917,16 @@ Every answer is in this document — the section is named beside it.*
 
 ## Key Takeaways
 
-1. **A controlled exit is worth roughly four times what a dump-out is.** Tracked NHL data puts controlled exits at about 89% follow-on entries versus about 20% for unrecovered dump-outs. Default to possession; clear on a read, not on reflex.
-2. **Five roles exist on every breakout** — retriever D, support D, strong-side winger, weak-side winger, centre. Know which is yours before the puck is retrieved.
-3. **Never move the puck through your own slot** — not D-to-D, not carrying, not cross-ice unless the read is unmistakable. Behind the net is the safe route across.
-4. **Rim beats a forechecker sealing you on the wall; reverse beats one who has over-committed past you.** Reading which you're facing is the core defenceman skill.
-5. **Wingers, in the conventional swing breakout: you start high on the point and come down the wall as the exit begins — don't camp at either end.** Cover the opposing defenceman while they have the puck; drop to between the hash marks and the goal line as your team wins it. Time your arrival, be a little late rather than early, take a step off the boards, and receive with your body open to the ice. **This is a system, not a law** — a flat/spread structure holds you higher toward the blue line, and a stretch or flying-winger structure sends one winger up ice entirely. Ask which you play.
-6. **Centres, in that same swing structure: stay low, inside the dots and below the hash marks, and leave with speed.** The strong-side circle, not the wall — the wall is the winger's. A high centre removes the option the structure depends on. **The alternative is the centre fly**, and it is equally legitimate; what is never legitimate is flying while your wingers hold high, because then nobody supports the puck at all.
-   **Everything in points 5 and 6 is a coaching choice. Find out which breakout your team runs before you commit to a spot on the ice.**
-7. **Read the forecheck before you pick the play.** A 1-2-2 gives you time and takes the middle; a 2-1-2 takes your time and gives you space behind; a 1-3-1 kills every long pass and can be skated through.
-8. **The goalie has the best view on the ice.** "Time", "man on", "reverse", "up" — early and loud. Agree what each word means before the game, and above all agree which "over" you mean: cross-ice, or D-to-D behind the net.
-9. **Under a delayed penalty you cannot be scored on except by your own hand — so never clear it.** Pulling the goalie there is a coaching choice, not automatic, and in NHL regular-season overtime that goalie cannot come back on the fly (NHL Rule 84.2 — a restriction the IIHF book does not carry). At 6-on-5 with your net empty, icing still applies, so the long clear is gone — though a glass clear dying in the neutral zone still is not icing.
-10. **The trapezoid means a rim that dies in the corner is your problem, not your goalie's.** Rim hard all the way around, or tight enough to leave it behind the net. Never in between. Use Rule 1.8's geometry — eight feet from each post, widening to 28 feet apart at the boards — not Rule 27.8's stale six.
+1. **Do not move the puck through your own slot** — not with a pass, not with your feet — **unless the read is unmistakable.** Behind your own net is the route across: intercepted there it costs nothing, intercepted in front it is a point-blank chance against. The cross-ice "over" in section 3 is the one option that asks you to do it, and it is the highest-risk play here — the forecheck has to have genuinely over-loaded one side with the middle empty, and the behind-the-net route has to be unavailable.
+2. **Default to leaving with the puck, and clear because you have read the situation rather than by reflex.** In roughly 230,000 hand-tracked NHL zone exits — Corey Sznajder's manual dataset, roughly half the games of 2016-17 and 2017-18 rather than both seasons complete — published on Hockey Graphs, controlled exits led to a follow-on zone entry about 89% of the time against about 20% for dump-outs nobody recovered — though the study's own conclusion is that possession, not method, is the explanation: a dump-out your own team collects performs about as well.
+3. **Every swing breakout has five jobs** — retriever D, support D, strong-side winger, weak-side winger, centre — and knowing which is yours before the puck is retrieved is most of the battle. The five-role structure is itself a coaching choice.
+4. **Wingers, in the conventional swing breakout:** cover the opposing point while they still have the puck, then come down the wall to between the hash marks and the goal line as your team wins it. Time the arrival — better a little late than a little early — and receive with your body open to the ice. **This is a system, not a law:** a flat or spread structure holds you higher toward the blue line, and a stretch or flying-winger structure sends one winger up ice entirely. Ask which you play.
+5. **Centres, in that same swing structure:** stay low, inside the dots and below the hash marks, in the strong-side circle rather than on the wall, and leave with speed. **The centre fly is an equally legitimate alternative.** What never works is flying while your wingers hold high near the blue line, because then nobody is underneath the puck at all. Ask your coach which one you run.
+6. **Rim to beat a forechecker sealing you against the boards; reverse to beat one who has over-committed past you.** Both go hard and low, because a soft one dies in the corner and is a gift — and the teammate arriving behind you must call "reverse", because you are looking the other way.
+7. **Read the forecheck before you pick the play** — a 1-2-2 gives you time and takes the middle, a 2-1-2 takes your time and leaves space behind, a 1-3-1 kills the long pass.
+8. **Agree what your calls mean before the game, starting with "over".** A cross-ice over is the highest-risk play in a breakout; the D-to-D behind your own net — which most goalie vocabularies mean by the word — is one of the lowest.
+9. **Where the trapezoid applies — the NHL, the KHL and IIHF play (IIHF Rule 27.7) — your goalie may not go and get a rim that dies in the corner.** So rim hard all the way around to a winger, or tight enough behind the net for your goalie to stop it legally — never the medium rim dying outside the trapezoid. Most rec, beer-league and youth associations elsewhere use none, and in England and Wales England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is "not currently enforced" — so check whether the lines are painted, assume it binds, and ask your league. Where there is no trapezoid, your goalie is a third puck-handler.
+10. **With a delayed penalty signalled against the other team you cannot be scored on except by your own hand (NHL Rule 78.5(xi)) — so keep the puck rather than clearing it.** Pulling your goalie for the extra attacker there is a coaching choice, not automatic. In NHL regular-season overtime a pulled goalie may not return on the fly (Rule 84.2), a restriction the IIHF book does not carry — and under the In-House Rules most games in England and Scotland play no overtime at all.
 
 ---
 

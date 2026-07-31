@@ -7,9 +7,15 @@
 
 ## Overview
 
-Passing is the skill that makes every system on the ice actually work. A breakout, a forecheck, a power play — all of them are just diagrams until someone can put the puck on a moving teammate's blade and that teammate can control it in one touch.
+The puck moves faster than any skater can, and that single fact is the whole argument for moving it: move the puck, then move yourself.
 
-This document covers both halves. The passing half is well taught. The receiving half — giving a target, cushioning the puck, and taking the first touch into space rather than into your feet — is the half almost nobody practises, and it is the half that loses more pucks.
+**Pass to where your teammate is going, and to the side of them away from the checker.** Read their feet rather than their chest, choose the spot where their stick will be when the puck arrives, and pass to that spot — a pass slightly ahead can be skated onto, and a pass behind cannot. Their forehand is better than their backhand, but where those two preferences conflict, away from the checker wins: a backhand reception with time beats a forehand reception with a stick in your ribs.
+
+**Receiving is the half almost nobody practises, and the half that loses more pucks.** Give the passer something to aim at — your stick blade flat on the ice, out in front of you, held still — and then give with the puck rather than blocking it: loose grip, blade drawn back a few inches as it lands. A blocked pass rebounds a foot off your stick, and a foot is all a checker needs.
+
+**The first touch decides everything.** Take the puck into the position your next action needs, not the one it happens to arrive in — away from the pressure, forward if you are moving, beside your back foot if you are about to shoot. The test: after your first touch, could you pass or shoot immediately? If not, that touch was wasted, and every wasted touch is time donated to the defence.
+
+**In your own end the standard is certainty, not value.** No blind pass up the middle, no defence-to-defence pass across the ice in front of your own goal, no cross-ice pass — a mistake there is punished immediately. Those three are risk-management defaults rather than laws of hockey, and some breakouts deliberately build in a controlled defence-to-defence exchange behind the goal line, so treat them as always-on unless your coach has designed the exception.
 
 ---
 
@@ -565,7 +571,7 @@ Technique: Look off a defender — fix your eyes on one option, let them shift t
 Technique: Turn your shoulders and hips toward one side to pull the defender's weight that way
 Options: A genuine shoulder-check doubles as deception, and a short delay before the pass often beats a fake because there is nothing to read
 Read: A no-look is justified only when you have already seen a target unlikely to move, the defender is reading your eyes, and the pass is short
-Never: Use a no-look as a default, and never in your own end — every no-look bets that the ice has not changed
+Never: Use a no-look as a default, or at all in your own end — every no-look bets that the ice has not changed
 Key: Deception is a supplement, not a substitute — selling a look is worthless if the pass that follows is inaccurate
 ```
 
@@ -711,14 +717,59 @@ Structuring this into an actual improvement plan is covered in [Practice and Dev
 
 ---
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. A checker has you sealed against the boards. A moment later a different one has
+   skated straight past you. Two opposite plays — which is which, and what are you
+   reading to tell them apart? *(§Rim vs reverse — two opposite plays, keep them
+   straight)*
+
+2. Name the three passes you never make in your own zone. Then say what kind of
+   rule those three are — and what would have to be true before an exception was
+   anything other than a mistake. *(§The "never" list)*
+
+3. The pass arrives, you stop it dead, and the puck sits a foot off your blade.
+   What did your hands do wrong, and what does that foot cost you? *(§Cushion the
+   puck — give with it, do not block it)*
+
+4. You have taken your first touch in transition. What is the one test that tells
+   you whether it was a good one? *(§The First Touch Determines Everything)*
+
+5. A bank off the boards is low risk but only moderately reliable, and those are
+   two different things. What makes it safe — and why is the unpredictable bounce
+   the cost of the play rather than the reason it works? *(§Bank / board pass —
+   the boards as a teammate)*
+
+6. Your teammate is about to receive with a checker closing from their left, and
+   their forehand is on that same side. Where do you put the puck, and why does
+   that preference win the conflict? *(§Passing Mechanics That Matter)*
+
+7. You are carrying into the offensive zone with a trailer behind you. Two things
+   have to be true for a drop pass to work and both are usually missing — what are
+   they? And if you are not sure, what do you do? *(§Drop pass — and why it fails
+   so often)*
+
+8. A puck reaches you head-high. What may you do with your stick, what may you do
+   with your hand, and what has to happen immediately afterwards? *(§Angle the
+   blade to kill a bounce)*
+
+---
+
 ## Key Takeaways
 
 1. **The puck moves faster than any skater.** A team that moves the puck well beats a team of better individual skaters, because you can out-pass five opponents but you cannot out-skate them.
 2. **Sweep, do not slap. Cup the blade. Follow through low, pointed at the target.** Those three habits fix most inaccurate passing on their own.
-3. **Pass to where your teammate is going, and to the right side of them.** Read their feet and pick a catch-point ahead of them so they receive it in stride — then put it on their forehand where you can, and always away from the checker. When those two conflict, away from the checker wins.
-4. **Give a target.** Blade flat on the ice, out in front, held still. If you do not give the passer an aiming point, you do not get to complain about the pass.
+3. **Pass to where your teammate is going, and to the side of them away from the checker.** Read their feet and pick a catch-point ahead of them, so they receive it in stride. Their forehand where you can — but when forehand and away-from-the-checker conflict, away from the checker wins.
+4. **Give a target.** Blade flat on the ice, out in front of you, held still. That blade is the passer's aiming point, and a waving stick makes them guess.
 5. **Cushion the puck — give with it, do not block it.** Meet it out front, draw the blade back as it lands, loose grip. A blocked pass bounces a foot away, and a foot is all a checker needs.
-6. **The first touch determines everything.** A good one buys half a second, a bad one costs you the puck. Receive it into the position your next play needs — after your first touch, you should be able to pass or shoot immediately.
+6. **The first touch determines everything.** Receive the puck into the position your next play needs, not the one it arrives in — after your first touch, you should be able to pass or shoot immediately.
 7. **Rim goes onward around the boards; reverse goes back against the flow of pressure.** Choose by the checker's momentum: rim past a checker who has you pinned, reverse behind one who has skated past you.
 8. **One-touch passing beats coverage because it moves the puck faster than a defence can rotate** — but only if you chose your next target before the puck arrived.
 9. **A pass is a two-player action.** The receiver's timing and lane create the pass as much as the passer's decision does. When a team cannot complete passes, look at the players without the puck first.

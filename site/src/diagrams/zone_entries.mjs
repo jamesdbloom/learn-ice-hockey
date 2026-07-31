@@ -546,9 +546,15 @@ const crossCorner = {
 const FLIP_CARRIER = { at: 'blue-line::far', dx: 1, dy: 8 };   // (-24, 8)
 const FLIP_LANDS = { at: 'corner:right', dx: -10, dy: -2 };    // (72, 32)
 // Both runners are UNDER the flip's line, not on it. The first version put one
-// at (4, 24), which is four feet from the opposition player at (0, 28) and seven
+// at (4, 24), which is 7.2 ft from the opposition player at (0, 30) and 8.7 ft
 // from the flip itself — the glyphs touched and the dashed puck path was drawn
 // straight through our own forward.
+//
+// The figures here read "four feet from the opposition player at (0, 28) and
+// seven from the flip". The opposition forward is drawn at { centre-ice, dy: 30 },
+// so (0, 30); at 3.6 ft apex to 2.9 ft radius the glyphs still touch at 7.2 ft,
+// which is why the placement was rejected — but neither number was the one the
+// code produces, and the coordinate was wrong as well as the distance.
 const FLIP_RUNNER = { at: 'centre-ice', dx: 14, dy: 8 };       // (14, 8)
 const FLIP_SUPPORT = { at: 'centre-ice', dx: -4, dy: -16 };    // (-4, -16)
 const TRAP_FORECHECKER = { at: 'blue-line::far', dx: -15, dy: 6 };  // (-40, 6)

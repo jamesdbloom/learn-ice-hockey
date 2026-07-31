@@ -14,11 +14,15 @@ Key: The cycle, the low-to-high and the net-front battle are machinery for produ
 Risk: Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot
 ```
 
-This document is about what to do **once you already have the puck in the offensive zone** — the zone at the far end of the ice, where the other team's goal is. Getting there is covered in [Zone Entries](zone_entries.md); winning it back is covered in [Forechecking Systems](forechecking_systems.md).
+Once you already have the puck at the other team's end of the ice, **you are not trying to take a shot. You are trying to take a shot from a dangerous place, with the goalie out of position.** Almost every amateur team can get the puck down there; far fewer turn that into a shot from anywhere dangerous, and everything else is machinery for producing that one moment.
 
-Almost every amateur team can get the puck into the offensive zone. Far fewer can turn possession there into a *dangerous* shot. The gap between those two things is what this document is about: how five players move the puck, and move the goalie, so that when a shot finally happens it comes from somewhere the goalie cannot cover.
+**Look across the middle of the ice before you look up the wall.** A pass that crosses the line running down the centre of the rink from goal to goal, immediately before the shot, is the most valuable action in offensive hockey — the goalie cannot re-square, find the puck again and reset their stick in the time available — and volunteer-tracked NHL data on 5-on-5 shot attempts puts it far ahead of any other pass. Most players never make it because they scan in the wrong order: that gap opens briefly and closes permanently.
 
-The organising idea is simple and it runs through every section below: **you are not trying to take a shot. You are trying to take a shot from a dangerous place, with the goalie out of position.** Everything else — the cycle, the low-to-high, the net-front battle — is machinery for producing that one moment.
+**Moving the puck around the outside is a set-up, not an outcome.** If it does not end in a shot from the middle, a pass through the middle, a shot from the blue line with the goalie's view blocked, or a drive at the net, it did nothing. And that shot from the blue line is a good play with somebody blocking the goalie's view and two teammates hunting the rebound, and a giveaway without them — you win the race for a rebound by deciding to be there before the shot, not by reacting after it.
+
+**Standing in the goalie's sightline is normally legal, and worth doing constantly — from outside the painted crease, and without contact.** Inside the crease it is not: a sustained vision-obstructing position in there voids the goal on its own. Keep your feet out of the paint whichever book you play under — under NHL rules that keeps your goal, and under IIHF and USA Hockey rules it also keeps your possession.
+
+**Almost everything else here is a coaching choice** — who takes the front of the net, whether the defencemen join the attack, how the forwards rotate. Find out what yours plays before deciding somebody else is out of position.
 
 ---
 
@@ -95,7 +99,7 @@ The **royal road** is an imaginary line running down the centre of the ice, leng
 >
 > **What is missing is not the attribution but the data.** The shot-by-shot tracking, the classification rules and the counts have never been published; Clear Sight Analytics' public glossary carries none of it. Woodley's own 2014 article concedes the point: *"There is no database, at least not one available to the public, tracking every shot in the NHL with that kind of detail."* Two further cautions. The **24% is a residual**, not a measured quantity — nobody reports it directly. And the retellings do not reconcile: Boyle's seven green categories sum to 74%, not 76%, and he puts direct red-shot goals at 18% rather than 24%. The direction of the finding is coaching consensus and survives independent testing on public data (see below); the specific number cannot be checked. [Shooting](../technique/shooting.md) carries the same figure with the same label.
 >
-> **The effect itself, unlike the number, has been replicated on public data.** Alan Wells' analysis of Ryan Stimson's Passing Project — volunteer-tracked and publicly released, *"51,308 shots at 5v5"* counting all attempts rather than shots on goal — puts shooting percentage on attempts preceded by a royal road pass at **15.50%**, far above every other pass type tracked. More importantly, Alex Novet's public expected-goals model built on Corey Sznajder's tracking (~72,000 shots) tested whether the royal road effect is just shot location in disguise, and found it is not: *"there is a big jump in Shapley value when the pass is royal road."* So the mechanism is real and independently supported. It is Valiquette's particular percentages that are not checkable.
+> **The effect itself, unlike the number, has been replicated on public data.** Alan Wells' analysis of Ryan Stimson's Passing Project — volunteer-tracked and publicly released, *"51,308 shots at 5v5"* counting all attempts rather than shots on goal — puts shooting percentage on attempts preceded by a royal road pass at **15.50%**, far above every other pass type tracked. **That sample is 5-on-5, which is not the same as even strength** — 4-on-4 and 3-on-3 are even strength as well — and it excludes special teams entirely, so every Passing Project figure in this document is a 5-on-5 figure and nothing wider. More importantly, Alex Novet's public expected-goals model built on Corey Sznajder's tracking (~72,000 shots) tested whether the royal road effect is just shot location in disguise, and found it is not: *"there is a big jump in Shapley value when the pass is royal road."* So the mechanism is real and independently supported. It is Valiquette's particular percentages that are not checkable.
 
 > **⚠️ Published descriptions of where the line actually runs do not agree.** This document uses the **net-centre-to-net-centre** version above, because it is the more common description and gives the more conservative coaching instruction. But **both** of the sources closest to Valiquette's own figures describe something narrower and zone-limited: Blue Seat Blogs has it running only from the centre bar of the net to the top of the circles, and NHL.com describes *"a line that halves the offensive zone in two below the tops of the faceoff circles"*. On that reading the road stops at the top of the circles rather than spanning the rink — and it is **two-to-one against the popular version**, so the net-to-net geometry used here is kept for being the more conservative coaching instruction, not for being better supported. The framework is proprietary and the exact geometry has never been published, so the disagreement cannot be resolved from public sources. [Shooting](../technique/shooting.md) sets this out in full.
 
@@ -128,7 +132,7 @@ If the shot comes before they finish that sequence, they are not making a positi
 - Shots following a **royal road / cross-slot pass** finished at **15.50%** — the highest-value pass type measured, roughly double the next one (Alan Wells' analysis of **Ryan Stimson's** Passing Project data, [via NHL.com](https://www.nhl.com/kraken/news/analytics-with-alison-dangerous-passes-327627898); **volunteer-tracked, 51,308 shots at 5v5, counting all attempts rather than shots on goal** — see the sourcing note above, and carry that qualification wherever you quote the figure).
 - Royal road passes are the **most important pre-shot movement variable** in expected-goals modelling — shots are much more likely to score when preceded by a pass moving across the ice in front of the goalie ([Hockey Graphs](https://hockey-graphs.com/2019/08/15/expected-goals-model-with-pre-shot-movement-part-4-variable-importance/)).
 
-> **A note on numbers you will hear quoted.** The "33% versus 3%" figure does have a traceable origin, and it is not what most people who quote it think. It comes from Chris Boyle, writing for the OMHA, reporting Valiquette's study: *"Valiquette's study identifies a shot from above the face-off circles and no lateral movement will results in around a 3% chance to score. If the attacking forward is able to cross the Royal Road through the slot, his chances increase to 33%."* Read that carefully. Both numbers are shooting percentages, and the 3% baseline is **a distant shot from above the circles**, not the same shot taken without the crossing. It is not a clean crossed-versus-not-crossed comparison — shot distance is doing a great deal of the work, and quoting it as "cross the road and you triple your chances" overstates what was measured. Beyond that the underlying study is unpublished, and the **20–30%** range you will see in coaching material — which [Special Teams](special_teams.md) does not quote but flags for exactly this reason — has no published primary source behind it at all, so treat both as illustrative rather than exact. **The 15.50% figure above is the best-sourced number here and is the one to quote.** It is an all-situations measurement of one pass type in one tracking project; nobody has published a separate power-play-only conversion rate, so if you see a higher number attached to power-play seam passes, it is not a different measurement of the same thing — it is an unsourced one.
+> **A note on numbers you will hear quoted.** The "33% versus 3%" figure does have a traceable origin, and it is not what most people who quote it think. It comes from Chris Boyle, writing for the OMHA, reporting Valiquette's study: *"Valiquette's study identifies a shot from above the face-off circles and no lateral movement will results in around a 3% chance to score. If the attacking forward is able to cross the Royal Road through the slot, his chances increase to 33%."* Read that carefully. Both numbers are shooting percentages, and the 3% baseline is **a distant shot from above the circles**, not the same shot taken without the crossing. It is not a clean crossed-versus-not-crossed comparison — shot distance is doing a great deal of the work, and quoting it as "cross the road and you triple your chances" overstates what was measured. Beyond that the underlying study is unpublished, and the **20–30%** range you will see in coaching material — which [Special Teams](special_teams.md) does not quote but flags for exactly this reason — has no published primary source behind it at all, so treat both as illustrative rather than exact. **The 15.50% figure above is the best-sourced number here and is the one to quote.** It is a **5-on-5** measurement of one pass type in one tracking project — and 5-on-5 is narrower than even strength, because 4-on-4 and 3-on-3 are even strength too. It therefore says nothing at all about the power play, which is excluded from the sample. Nobody has published a power-play-only conversion rate for seam passes, so if you see a higher number attached to power-play seam passes, it is not this figure adjusted for the man advantage — it is an unsourced number.
 
 ### How to actually create one
 
@@ -546,7 +550,7 @@ The failure is having only one of these in mind. A player who arrives on the hal
 Technique: Cut back — skate a few feet toward the corner and cut back up the wall; the defender's momentum has to reverse, yours does not
 Technique: Delay and curl — turn away from pressure, protect the puck and curl toward the middle into open ice, coming out facing the ice
 Technique: Receive with your body between checker and puck, then spin off — turning into pressure immediately is how you get pinned
-Never: Put your back to the boards, and never duck — skates parallel to the wall, forearm and hip to the wall, head up; this outranks everything else here
+Never: Put your back to the boards, or duck — skates parallel to the wall, forearm and hip to the wall, head up; this outranks everything else here
 Options: Bump it to the level-support player and take an immediate return pass — it resets the defender's read entirely
 Action: Feet moving, always — a stationary player on the wall gets pinned; one with momentum can go three directions
 ```
@@ -771,7 +775,7 @@ Priority: Act on the direction — a shot after the goalie has had to move acros
 ```
 
 - The lane is blocked and you are firing into a shin pad from the point. A blocked point shot is worse than no shot: it usually goes the other way, and your team is spread out.
-- A **better shot is one pass away** — specifically, a pass across the royal road. **Do not put the two numbers side by side, though**, however tempting it is: the **15.50%** is a finishing rate on shots following a cross-slot pass, measured all-situations in the Passing Project, while the **3%** is a Clear Sight Analytics figure — whether you read it as Boyle's *distant shot from above the circles with no lateral movement* or as this document's point-shot-with-traffic rate in Section 1, it comes from the proprietary tracking that Sections 1 and 2 flag as attributed-but-uncheckable. They are different studies measuring different things, and Section 2 explains at length why treating them as a before-and-after pair overstates what was measured — on the Boyle reading, most of that gap is shot distance rather than the crossing. The direction is what you should act on: **a shot taken after the goalie has had to move across is worth materially more than the same-ish shot taken before**, so the half-second is usually worth it.
+- A **better shot is one pass away** — specifically, a pass across the royal road. **Do not put the two numbers side by side, though**, however tempting it is: the **15.50%** is a finishing rate on shots following a cross-slot pass, measured at 5-on-5 in the Passing Project, while the **3%** is a Clear Sight Analytics figure — whether you read it as Boyle's *distant shot from above the circles with no lateral movement* or as this document's point-shot-with-traffic rate in Section 1, it comes from the proprietary tracking that Sections 1 and 2 flag as attributed-but-uncheckable. They are different studies measuring different things, and Section 2 explains at length why treating them as a before-and-after pair overstates what was measured — on the Boyle reading, most of that gap is shot distance rather than the crossing. The direction is what you should act on: **a shot taken after the goalie has had to move across is worth materially more than the same-ish shot taken before**, so the half-second is usually worth it.
 - **Nobody is at the net front.** You are giving the puck to the goalie and starting their breakout.
 - You are on a **sharp angle with no traffic**. Goalies seal the post; there is nothing to hit and no rebound to chase.
 
@@ -884,20 +888,63 @@ The general principle is worth stating plainly: **having a defined assignment fo
 - **Having exactly one way to attack.** Rush-only teams are shut down by any structured defence; cycle-only teams never threaten before the defence is set.
 - **Not knowing your team's rules for defenceman activation.** Whether your defencemen pinch, and how deep they may go, is a coaching decision that varies enormously. Ask before your first shift.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. Why is a pass across the middle of the ice worth more than the shot you
+   already had? Answer it in terms of what the goalie has to do next — then say
+   what this document will and will not let you claim about the numbers behind
+   it. *(§The Royal Road, §Why it beats everything else)*
+
+2. The puck arrives on your stick on the half-wall. Name your four options. Then
+   say which way your eyes go first, which way most players look, and what that
+   costs them. *(§The four options from the half-wall, §How to actually create
+   one)*
+
+3. Your line cycles the puck four times, looks organised and busy, and never
+   shoots. Why is the defence perfectly happy? Name the four things a cycle has
+   to end in — and give the one condition that makes a point shot worth taking
+   rather than a giveaway with extra steps. *(§The failure: cycling for its own
+   sake, §Low-to-High)*
+
+4. You are the net-front player. Say where your feet go and where they must not,
+   what a screen is a line between, and what you must not do at the moment the
+   shot is released. Then say what changes if you are playing under USA Hockey
+   or IIHF rules. *(§Screening, §Goaltender interference — the actual standard)*
+
+5. You get a blade on a point shot and it goes in, and the goal is waved off.
+   What was the official measuring, and where should the blade have been?
+   *(§Tips and deflections)*
+
+6. You are pinching down the wall and the opposing winger is facing the glass
+   with the puck. What does that posture tell you, what does it emphatically not
+   give you permission to do, and what does getting it wrong cost — the answer is
+   not a minor. *(§The defenceman's pinch)*
+
+7. The shot is away. What are the next two seconds worth, what do most teams do
+   with them, and what are the three things the high forward owes the play?
+   *(§10. Regaining Possession After a Shot, §F3's job)*
+
 ---
 
 ## Key Takeaways
 
-1. **You are not trying to shoot — you are trying to shoot from a dangerous place with the goalie out of position, and location is worth more than anything else.** Distance from the net is the single biggest factor in whether a shot becomes a goal; shooting percentage from outside the home-plate area is under 5% (a decade of NHL data), and roughly 1% from the point with no traffic — that point-shot figure being **attributed but uncheckable** proprietary tracking, so treat it as illustrative, and take shot-location value from [Shooting](../technique/shooting.md), which owns it.
-2. **The royal road pass is the most valuable action in offensive hockey.** A pass crossing the centre line of the ice before a shot finished at 15.50% — far ahead of any other pass type — because the goalie cannot re-square, re-find the puck and reset their stick in the time available. **That figure carries its qualification wherever it goes:** it is volunteer-tracked Passing Project data, 51,308 shots at 5-on-5, counting all attempts rather than shots on goal, so it is **not** comparable with the shooting percentages in point 1.
-3. **Look across the middle before you look up the wall.** The seam is open briefly and closes permanently. Scanning in the wrong order is why most players never see it.
-4. **A cycle is a set-up, not an outcome, and low-to-high is only worth doing when the net front is occupied.** If the cycle doesn't end in a shot from the slot, a seam pass, a screened point shot or a net drive, it did nothing — and the same point shot is a good play with a screen and two rebound hunters, a giveaway without them.
-5. **Screening the goalie without contact, from outside the blue paint, is normally legal — and you should do it constantly.** Two limits: inside the paint, a significant vision-obstructing position voids the goal; and anywhere, positioning that impairs the goalie's ability to move freely or defend the goal can void it too, contact or not (Rule 69.1).
-6. **Behind the net is an attacking position, not a dead end.** You have the best view on the ice, nobody can come at you from directly behind because the net and the end boards are there — geometry, not a rule, and you can still be driven into the goal frame — and passes from below the goal line finished at 6.73% — second only to royal road passes, and measured the same way, in the same volunteer-tracked 5-on-5 Passing Project sample of all shot attempts.
-7. **The seconds immediately after a shot are the most likely time to score, and the defending team recovers about 60% of rebounds.** You win that race by deciding to be there before the shot, not by reacting after it.
-8. **Keep the shape: one player below the puck, one level with it, one above it, and two on the blue line.** That two-on-the-line rule is the house default in this document, and under it a forward fills in when a defenceman leaves — without being asked. Other teams run a five-man rotation with no fixed line job, or slide the weak-side defenceman across instead; find out which yours plays.
-9. **Build both attacks.** Rush offence lives on speed and numbers in the first three seconds; set offence lives on patience and rotation over thirty. Teams that only have one get shut down by anyone competent.
-10. **Almost everything in this document is a coaching choice, not a law.** Triangle rotation versus overload, whether defencemen pinch, who takes the net front — all vary by team. Find out what your team plays before you decide someone else is out of position.
+1. **You are not trying to shoot — you are trying to shoot from a dangerous place with the goalie out of position.** Distance matters most: shooting percentage from outside home plate is under 5% across a decade of NHL data. [Shooting](../technique/shooting.md) owns shot-location value.
+2. **The royal road pass is the most valuable action in offensive hockey** — crossing the centre line before a shot finished at 15.50%, because the goalie cannot re-square in time. That is volunteer-tracked Passing Project data, 51,308 shot attempts at 5-on-5 — which is not the same as even strength, and excludes the power play — so it is not comparable with shooting percentages, and it is not a power-play number.
+3. **Look across the middle before you look up the wall.** The seam opens briefly and closes permanently — most players scan in the wrong order and never see it.
+4. **A cycle is a set-up, not an outcome.** If it does not end in a shot from the slot, a seam pass, a screened point shot or a net drive, it did nothing — and a point shot needs a screen and two rebound hunters.
+5. **Screen from outside the blue paint, without contact — that is normally legal and worth doing constantly.** Inside the crease a sustained vision-obstructing position voids the goal (NHL Rule 69.3), and positioning that impairs the goalie can void it anywhere (69.1). Under USA Hockey Rule 625(b) and the IIHF book, standing in the crease can also cost you the zone.
+6. **Behind the net is an attacking position, not a dead end** — nobody can come at you from directly behind, though you can still be driven into the goal frame. Passes from below the goal line finished at 6.73% in that same volunteer-tracked 5-on-5 sample of all attempts.
+7. **The seconds right after a shot are the most likely time to score, and the defending team recovers roughly 60% of rebounds** (Alex Novet, via The Coaches Site). You win that race by deciding to be there before the shot.
+8. **Keep the shape: one player below the puck, one level with it, one above it, two on the blue line.** That two-on-the-line rule is a default, not a law — other teams rotate all five, or slide the weak-side defenceman across. Find out which yours plays.
+9. **Build both attacks.** Rush offence lives on speed and numbers in three seconds, set offence on patience over thirty. Teams with only one get shut down.
+10. **Almost everything here is a coaching choice, not a law** — triangle rotation versus overload, whether defencemen pinch, who takes the net front. Find out what your team plays before deciding someone else is out of position.
 
 ---
 

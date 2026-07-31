@@ -214,8 +214,11 @@ UNITS: tuple[tuple[str, str, str], ...] = (
 TIGHT_UNITS = ("km/h", "mph", "°F", "°C", "°", "cm", "mm", "km", "kg", "%")
 
 #: Units that make ``N x M`` a dimension ("eight by fifteen inches") rather
-#: than a multiplication ("eight times fifteen seconds").
-DIMENSION_UNITS = ("inches", "inch", "feet", "foot", "cm", "mm", "m", "metres", "yards")
+#: than a multiplication ("eight times fifteen seconds"). A unit here may sit
+#: on either side of the sign: '56 m × 26 m' is a rink, not a product.
+DIMENSION_UNITS = (
+    "inches", "inch", "feet", "foot", "ft", "cm", "mm", "m", "metres", "yards",
+)
 
 #: Vulgar fractions, read as words.
 FRACTIONS: tuple[tuple[str, str], ...] = (
@@ -294,7 +297,39 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
 
 #: Whole-token replacements, applied first. For things no general rule can
 #: get right. Ordered longest-first at build time.
+#:
+#: The solidus entries are here rather than in the content because the strings
+#: they fix sit inside verbatim quotations from the rulebooks, and the general
+#: ``/`` -> " or " row in SYMBOLS is right for 'NHL/IIHF' and wrong for every
+#: one of these:
+#:
+#: * ``and/or`` became "and or or". In the IIHF Rule 42.1 charging definition
+#:   and the USA Hockey spinal-impact symptom list, a listener could not tell
+#:   whether the limbs were conjunctive or disjunctive. "and or" is how the
+#:   construction is read aloud, and it keeps both readings open, which is
+#:   what the source means.
+#: * ``plus/minus`` became "plus or minus" — the same spoken string as ``±``,
+#:   which SYMBOLS renders " plus or minus ". how_to_watch_hockey.md defines
+#:   the statistic and uses the tolerance sense in the same paragraph.
+#: * ``NHL/NHLPA`` became "NHL or NHLPA". Learn to Play is one programme run
+#:   jointly by the two bodies, not a choice between them.
 LEXICON: tuple[tuple[str, str], ...] = (
+    ("NHL/NHLPA", "NHL and NHLPA"),
+    ("plus/minus", "plus minus"),
+    ("Plus/minus", "Plus minus"),
+    # Both spacings occur, and the spaced one is the IIHF Rule 42.1 charging
+    # definition — the most safety-critical instance of the six. The IIHF
+    # rulebook prints it with the spaces, so it is quoted that way.
+    ("and / or", "and or"),
+    ("And / or", "And or"),
+    ("and/or", "and or"),
+    ("And/or", "And or"),
+    # The same collision from the other side, and not one of the six: IIHF
+    # Rule 55.1 is quoted as "against the opponent's hands / or near the
+    # opponent's hands", where the solidus is already followed by the word.
+    # It was reaching the audio as "hands or or near". Must stay below the
+    # and/or rows, which claim their solidus first.
+    (" / or ", " or "),
     ("VO₂max", "V O two max"),
     ("VO₂", "V O two"),
     ("R²", "R squared"),
@@ -310,6 +345,19 @@ LEXICON: tuple[tuple[str, str], ...] = (
     ("vs.", "versus"),
     (" vs ", " versus "),
     ("&", " and "),
+)
+
+#: Bodies whose standards designations are read as a code and not as prose.
+#:
+#: 'CAN/BNQ 9415-370' was narrating as "CAN or BNQ nine thousand four hundred
+#: and fifteen-three hundred and seventy": the solidus took the SYMBOLS " or "
+#: and the number took the bare-number rule. The passage exists so a buyer can
+#: match the string printed on a neck protector's label, so the letters are
+#: spelled, the solidus is spoken, and the digits are read one at a time —
+#: which is what a code is for. SPELL_OUT alone cannot do this: it claims
+#: acronyms, and the damage here is to the solidus and the digits.
+STANDARDS_BODIES: tuple[str, ...] = (
+    "CAN/BNQ", "ISO/DIS", "ISO/IEC", "ISO", "BNQ", "CSA", "ASTM", "NOCSAE",
 )
 
 #: Acronyms Polly is likely to try to pronounce as a word. Emitted as
@@ -653,6 +701,59 @@ def _spell_out_word(word: str) -> list[Token]:
     ]
 
 
+def _standards_code(match: re.Match) -> list[Token]:
+    """'CAN/BNQ 9415-370' -> 'C A N slash B N Q nine four one five dash ...'.
+
+    Digit by digit, not as a quantity: 9415-370 is a label to be matched, and
+    'nine thousand four hundred and fifteen' is not what is printed on the
+    label. The separators are spoken for the same reason — a listener writing
+    the code down needs them.
+    """
+    out: list[Token] = []
+    for piece in re.findall(r"[A-Za-z]+|\d+|[/–-]", match.group(0)):
+        if piece == "/":
+            out.extend(done(" slash"))
+            continue
+        if piece in ("-", "–"):
+            out.extend(done(" dash"))
+            continue
+        if out:
+            out.extend(done(" "))
+        if piece.isdigit():
+            out.extend(done(" ".join(_ONES[int(digit)] for digit in piece)))
+        else:
+            out.extend(_spell_out_word(piece.upper()))
+    return out
+
+
+def _role_label_series(match: re.Match) -> str:
+    """'F1 / F2 / F3' -> 'F one, F two and F three'.
+
+    The solidus here separates three roles that exist at the same time, so the
+    SYMBOLS " or " made a false choice out of them: "F one or F two or F three
+    are roles defined by order of arrival" invites a listener to pick one.
+    """
+    labels = [
+        f"{label[0]} {_ONES[int(label[1])]}"
+        for label in re.findall(r"[FD][123]", match.group(0))
+    ]
+    return ", ".join(labels[:-1]) + " and " + labels[-1]
+
+
+def _usa_clause_citation(match: re.Match) -> str:
+    """'608(b)' with no 'Rule' in front -> 'six hundred and eight, clause b'.
+
+    USA Hockey clause numbers carry no point, so the bare-clause rule above -
+    which requires 'major.minor' - never saw them. The second citation in a
+    sentence is the one that loses the word 'Rule', so this reached the audio
+    as 'six hundred and eight(b)'.
+    """
+    return (
+        f"{int_to_words(int(match.group('major')))}, "
+        f"clause {_clause_words(match.group('c1'))}"
+    )
+
+
 def _number_with_fraction(match: re.Match) -> str:
     """'1½ sizes' -> 'one and a half sizes'."""
     whole = int_to_words(int(match.group(1)))
@@ -782,10 +883,26 @@ def _number_with_unit(match: re.Match) -> str:
 def _dimension(match: re.Match) -> str:
     """'8 x 15 inches' -> 'eight by fifteen inches'.
 
-    Consumes only the left operand and the sign; the right operand is left
-    RAW so the unit rules downstream can read '15 inches' properly.
+    Consumes the left operand, its unit if it carries one, and the sign; the
+    right operand is left RAW so the unit rules downstream can read '15
+    inches' properly.
+
+    The unit on the left is why this exists in this form. '56 m × 26 m' - the
+    most repeated British rink figure in the corpus - did not match a rule
+    that required the operand to touch the sign, so it fell through to the
+    SYMBOLS row and came out as "fifty-six metres times twenty-six metres",
+    which parses as an area. The same document reads '200 × 85 feet'
+    correctly, so 'by' is the established target.
     """
-    return f"{decimal_to_words(match.group('a'))} by "
+    words = decimal_to_words(match.group("a"))
+    unit = match.groupdict().get("aunit")
+    if unit:
+        words += (
+            _spoken_unit(unit, match.group("a"))
+            if unit in UNIT_LOOKUP
+            else " " + unit
+        )
+    return f"{words} by "
 
 
 def _multiplier(match: re.Match) -> str:
@@ -830,6 +947,16 @@ def _forward_label(match: re.Match) -> str:
     return f"{match.group(1)} {_ONES[int(match.group(2))]}"
 
 
+def _optional_plural(match: re.Match) -> str:
+    """'glove(s)' -> 'gloves'.
+
+    The written form offers the reader both numbers at once. Read aloud the
+    brackets are silent, so the listener got 'glove s' or 'glove'; the plural
+    is the form that keeps both readings true.
+    """
+    return _pluralise(match.group(1))
+
+
 def _spell_out(match: re.Match) -> list[Token]:
     return _spell_out_word(match.group(0))
 
@@ -864,8 +991,26 @@ _UNITS_TIGHT = _unit_alternation(TIGHT_UNITS)
 _FRACTION_ALT = "|".join(re.escape(ch) for ch, _ in FRACTIONS)
 _GREEK_ALT = "|".join(re.escape(ch) for ch, _ in GREEK)
 _APPROX = r"(?P<approx>[~≈∼]\s?)?"
+# Longest first, so 'metres' is not eaten by 'm' and 'ISO/DIS' not by 'ISO'.
+_DIMENSION_UNIT_ALT = "|".join(
+    re.escape(unit) for unit in sorted(DIMENSION_UNITS, key=len, reverse=True)
+)
+_STANDARDS_ALT = "|".join(
+    re.escape(body) for body in sorted(STANDARDS_BODIES, key=len, reverse=True)
+)
+#: The right-hand side of a dimension: a number or a range, then a unit.
+_DIMENSION_OPERAND = (
+    rf"\d+(?:\.\d+)?(?:\s?[–—-]\s?\d+(?:\.\d+)?)?\s?(?:{_DIMENSION_UNIT_ALT})\b"
+)
 
 NOTATION_RULES: tuple[Rule, ...] = (
+    Rule(
+        "standards-code",
+        re.compile(rf"\b(?:{_STANDARDS_ALT})\s?\d+(?:[-–/]\d+)*\b"),
+        _standards_code,
+        "CAN/BNQ 9415-370 -> 'C A N slash B N Q nine four one five dash "
+        "three seven zero'",
+    ),
     Rule(
         "rule-citation",
         re.compile(
@@ -885,6 +1030,15 @@ NOTATION_RULES: tuple[Rule, ...] = (
         ),
         _bare_clause,
         "'27.8 and 63.2(viii)' - second citation without the word Rule",
+    ),
+    Rule(
+        "usa-clause-citation",
+        re.compile(
+            r"(?<![\w.])(?P<major>\d{3})\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+        ),
+        _usa_clause_citation,
+        "'Rules 624(b) and 630(a)' - the second USA Hockey citation, which "
+        "carries no point and so was never a bare-clause citation",
     ),
     Rule(
         "situation",
@@ -1013,11 +1167,12 @@ NOTATION_RULES: tuple[Rule, ...] = (
     Rule(
         "dimension",
         re.compile(
-            rf"(?P<a>\d+(?:\.\d+)?)\s?×\s?"
-            rf"(?=\d+(?:\.\d+)?\s?(?:{'|'.join(DIMENSION_UNITS)})\b)"
+            rf"(?P<a>\d+(?:\.\d+)?)(?:\s?(?P<aunit>{_DIMENSION_UNIT_ALT})\b)?"
+            rf"\s?×\s?(?={_DIMENSION_OPERAND})"
         ),
         _dimension,
-        "8 x 15 inches -> 'eight by fifteen inches'",
+        "8 x 15 inches -> 'eight by fifteen inches'; 56 m x 26 m -> "
+        "'fifty-six metres by twenty-six metres'",
     ),
     Rule(
         "repetitions",
@@ -1092,10 +1247,23 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "16U -> 'sixteen U'",
     ),
     Rule(
+        "role-label-series",
+        re.compile(r"\b[FD][123](?:\s*/\s*[FD][123])+\b"),
+        _role_label_series,
+        "F1/F2/F3 -> 'F one, F two and F three' (simultaneous roles, not a "
+        "choice between them)",
+    ),
+    Rule(
         "forward-label",
         re.compile(r"\b([FD])([123])\b"),
         _forward_label,
         "F1 -> 'F one'",
+    ),
+    Rule(
+        "optional-plural",
+        re.compile(r"\b([A-Za-z]{2,})\(s\)"),
+        _optional_plural,
+        "glove(s) -> 'gloves'",
     ),
     Rule(
         "ordinal-suffix",
@@ -1250,12 +1418,21 @@ def find_residue(tokens: Sequence[Token]) -> list[str]:
     return findings
 
 
+#: Closers that can stand between a full stop and the end of a paragraph.
+SENTENCE_CLOSERS = "\"'’”)]"
+
+
 def finalise_sentence(text: str) -> str:
     """Give a fragment terminal punctuation so the voice lands on it.
 
     Only the right-hand end is trimmed. Leading whitespace is significant:
     this is applied to the last token of a paragraph, and that token usually
     begins mid-sentence, immediately after a token a rule produced.
+
+    A paragraph that ends on a quotation mark or a closing bracket usually
+    carries its full stop *inside* it — "... not a published count of calls.)"
+    — and only the last character was inspected, so a second stop was appended
+    and the voice landed on "calls.)." Look past the closers before deciding.
     """
     text = text.rstrip()
     if not text:
@@ -1264,6 +1441,9 @@ def finalise_sentence(text: str) -> str:
         return text
     if text[-1] in ",—-":
         return text[:-1].rstrip() + "."
+    core = text.rstrip(SENTENCE_CLOSERS)
+    if core and core[-1] in ".!?…":
+        return text
     return text + "."
 
 
@@ -2162,6 +2342,62 @@ def self_test() -> int:
          "the twenty twenty-five to twenty twenty-six rulebook"),
         ("NHL/IIHF", "NHL or IIHF"),
         ("an em-dash — here", "an em-dash — here"),
+        # The symbol-expansion defects found by reading the SSML emitted for
+        # all 37 documents on 30 July 2026. Every one of them produced plain
+        # letters, so find_residue could not see any of them.
+        #
+        # 1. 'and/or' took the SYMBOLS solidus and became "and or or".
+        ("multiple strides and/or travels an excessive distance",
+         "multiple strides and or travels an excessive distance"),
+        ("tingling in the arms and/or legs",
+         "tingling in the arms and or legs"),
+        ("contact and / or violently checks an opponent",
+         "contact and or violently checks an opponent"),
+        # ... and the disjunctive '/ or' in the IIHF hooking sentence, which
+        # was never broken, must stay as it is.
+        ("the opponent's hands / or near the opponent's hands",
+         "the opponent's hands or near the opponent's hands"),
+        # 2. a unit between the operand and the sign fell through to " times ".
+        ("56 m × 26 m", "fifty-six metres by twenty-six metres"),
+        ("60 m × 26–30 m", "sixty metres by twenty-six to thirty metres"),
+        ("196.9 ft × 85.3 ft",
+         "one hundred and ninety-six point nine feet by eighty-five point "
+         "three feet"),
+        ("1.83 m × 1.22 m",
+         "one point eight three metres by one point two two metres"),
+        ("61 × 26 m", "sixty-one by twenty-six metres"),
+        # ... without disturbing the repetitions it sits next to.
+        ("2 × 30–40 min", "two times thirty to forty minutes"),
+        # 3. standards codes are labels to be matched, not quantities. The
+        #    letters carry <say-as interpret-as="characters">, which plain()
+        #    strips - the markup itself is asserted separately below.
+        ("CAN/BNQ 9415-370",
+         "CAN slash BNQ nine four one five dash three seven zero"),
+        ("CAN/BNQ 0102-565/2023",
+         "CAN slash BNQ zero one zero two dash five six five slash "
+         "two zero two three"),
+        ("ISO/DIS 10256-5", "ISO slash DIS one zero two five six dash five"),
+        ("ISO 10256", "ISO one zero two five six"),
+        # 4. three simultaneous roles, not a choice between them.
+        ("F1 / F2 / F3 are roles defined by order of arrival",
+         "F one, F two and F three are roles defined by order of arrival"),
+        ("F1/F2/F3", "F one, F two and F three"),
+        ("F2/F3 forwards", "F two and F three forwards"),
+        ("F1/F2 are roles, not people", "F one and F two are roles, not people"),
+        # 5. the statistic and the tolerance operator must not sound alike.
+        ("Plus/minus.", "Plus minus."),
+        ("a player's plus/minus", "a player's plus minus"),
+        ("14.8 ± 0.45 years",
+         "fourteen point eight plus or minus nought point four five years"),
+        # Lower severity.
+        ("Rules 624(b) and 630(a)",
+         "Rules six hundred and twenty-four, clause b and six hundred and "
+         "thirty, clause a"),
+        ("608(b)", "six hundred and eight, clause b"),
+        ("drops their stick and removes their glove(s)",
+         "drops their stick and removes their gloves"),
+        ("the skate(s) of a player", "the skates of a player"),
+        ("NHL/NHLPA Learn to Play", "NHL and NHLPA Learn to Play"),
     )
     failures = 0
     for source, expected in cases:
@@ -2192,7 +2428,34 @@ def self_test() -> int:
         failures += 1
         print("FAIL ssml passthrough")
 
-    print(f"\n{len(cases) + 9 + 2} assertions, {failures} failures")
+    # A standards code spells its letters: assert the markup, which plain()
+    # cannot see. Without it the test above would pass on "CAN" being read as
+    # a word, which is the whole defect.
+    code = render(to_speech("CAN/BNQ 9415-370", Counter()))
+    if code != (
+        '<say-as interpret-as="characters">CAN</say-as> slash '
+        '<say-as interpret-as="characters">BNQ</say-as> '
+        "nine four one five dash three seven zero"
+    ):
+        failures += 1
+        print(f"FAIL standards-code markup: {code!r}")
+
+    # Terminal punctuation, including the stop that hides behind a closer.
+    closers: tuple[tuple[str, str], ...] = (
+        ("not a published count of calls.)", "not a published count of calls.)"),
+        ('he called it "a hit.”', 'he called it "a hit.”'),
+        ("(this one has no stop)", "(this one has no stop)."),
+        ("a plain fragment", "a plain fragment."),
+        ("a trailing comma,", "a trailing comma."),
+        ("already stopped.", "already stopped."),
+    )
+    for source, expected in closers:
+        if finalise_sentence(source) != expected:
+            failures += 1
+            print(f"FAIL finalise_sentence({source!r}) = "
+                  f"{finalise_sentence(source)!r}, expected {expected!r}")
+
+    print(f"\n{len(cases) + len(closers) + 9 + 3} assertions, {failures} failures")
     return 1 if failures else 0
 
 

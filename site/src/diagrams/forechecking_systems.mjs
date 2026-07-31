@@ -191,8 +191,10 @@ const forecheck212Stacked = {
     { id: 'D2', team: 'opp', pos: 'D', at: OPP_D2 },
     { id: 'W1', team: 'opp', pos: 'F', at: 'half-wall:right' },
     // Unlabelled, and not for want of trying. Their winger and their partner sit
-    // 10 ft apart down there, so every label slot the placer can reach is about as
-    // near one as the other — "the far-side option" came out 11.1 ft from the
+    // 13.8 ft apart down there (10.3 ft when half-wall.y was 33, which is where the
+    // "10 ft" this used to read came from), so every label slot the placer can
+    // reach is about as near one as the other — "the far-side option" came out
+    // 11.1 ft from the
     // defenceman and 11.5 ft from the winger it named. The conceded side is said
     // by the route running into it, by the emptiness of that half, and by the
     // caption, which is enough.
@@ -341,7 +343,8 @@ const forecheck122 = {
     //     bar. This route sat at d = 6.3 ft with an arrowhead, and its clearance
     //     was 0.83 ft against the half-wall value that was committed at the time —
     //     i.e. the ray went through the winger. It only cleared at all because an
-    //     unrelated, uncommitted change had moved the half-wall 7 ft. Safety must
+    //     unrelated, uncommitted change had moved the half-wall 5.5 ft (33 to 38.5,
+    //     site/src/data/rink.json; this said 7 ft). Safety must
     //     not depend on a coordinate edited for a cosmetic reason, so the endpoint
     //     is now expressed relative to the winger himself and capped.
     { from: F2_FOX, to: { at: 'half-wall:right', dx: -11, dy: -2 }, kind: 'pressure', bow: -2 },
@@ -437,7 +440,8 @@ const forecheck131 = {
     //     bar. This route sat at d = 6.3 ft with an arrowhead, and its clearance
     //     was 0.83 ft against the half-wall value that was committed at the time —
     //     i.e. the ray went through the winger. It only cleared at all because an
-    //     unrelated, uncommitted change had moved the half-wall 7 ft. Safety must
+    //     unrelated, uncommitted change had moved the half-wall 5.5 ft (33 to 38.5,
+    //     site/src/data/rink.json; this said 7 ft). Safety must
     //     not depend on a coordinate edited for a cosmetic reason, so the endpoint
     //     is now expressed relative to the winger himself and capped.
     { from: LINE3_WALL, to: { at: 'half-wall:right', dx: -11, dy: -3 }, kind: 'pressure', bow: -2 },

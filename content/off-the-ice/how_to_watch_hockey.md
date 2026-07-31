@@ -7,11 +7,17 @@
 
 ## Overview
 
-Watching hockey is the cheapest training you will ever do. It costs no ice time, no equipment and no gas in your legs, and it is the only way to see hundreds of solutions to problems you will face on Sunday night. But it only works if you watch differently from a spectator.
+Almost everything that decides a hockey game happens away from the puck, and the camera that follows the puck is training you to miss it.
 
-A spectator watches the puck. Everything that decides a hockey game happens away from it — the second forechecker choosing which escape route to seal, the weak-side winger deciding whether to cover the point or collapse, the defenceman's gap closing or not closing thirty feet before the puck arrives. If your eyes follow the puck, you will finish a three-hour broadcast having learned nothing you did not already know.
+**Give your eyes one job per period.** Watch a single player for a whole shift; or only the two defenders; or only the half of the ice the puck is not in; or the five seconds before each goal, rewound. Trying to watch everything is how you end up watching the puck again.
 
-This document teaches you how to watch a game and actually see the structure. It is also the guide to hockey statistics here, because reading a box score badly is its own way of not seeing the game.
+**The players furthest from the puck tell you what a team is doing.** If a defending forward follows the player he is marking into the corner, that team is marking players; if he stays up near the blue line instead, it is marking areas of ice. Count how many attackers chase the puck deep in the attacking end and you have identified their pressure system; count how many stand up near the blue line during a penalty and you have the power-play formation.
+
+**Watch live for shape and television for technique.** In the building, sit as high as you can, ideally high behind a goal — from up there the ice becomes a diagram. Television shows you hands and feet and hides four players.
+
+**Watch the blue line**, the most under-watched place in hockey: tracked public research found that **at 5-on-5** carrying the puck across it produced roughly twice the unblocked shot attempts and goals that shooting it in and chasing did.
+
+**Then the numbers, which are mostly misread.** Shot-attempt counts — Corsi, Fenwick — measure territory, not the quality of what happened. Expected goals prices quality, but is built only on attempts nobody blocked and has no standard definition, so two sites will disagree about the same game. For goaltenders, goals saved above expected beats save percentage, which beats goals-against average, because only the first accounts for how hard the shots were. Every figure needs seven things before you believe it: its denominator, its strength state — all situations or 5-on-5 only — its sample size, who was on the ice with the player, what the score was, whose model it came from, and whether it survives the eye test. Without those, a hockey statistic is a rumour with decimal places.
 
 ---
 
@@ -423,7 +429,7 @@ Three contexts change what a number means. Ignore them and you will misjudge pla
 
 **Zone starts.** The proportion of a player's shifts that begin with a faceoff in the offensive, defensive or neutral zone — usually reported as offensive zone start percentage. Coaches deliberately start skilled offensive players in the offensive zone and defensive specialists in their own end, so a player buried with defensive-zone starts will have worse possession numbers than an identical player who is not.
 
-Two important caveats. First, the effect is real but smaller than early analysis assumed, because **a large share of shifts do not start with a faceoff at all.** The arithmetic is easy to run and hard to argue with: five skaters on the ice for sixty minutes is 18,000 skater-seconds per team per game, which at a mean shift of 47 seconds is roughly **380 skater-shifts a side**. There are only about **56 draws in a game**. So even if a team changed all five skaters at every single faceoff — which no team does — at least a quarter of all shifts would still have begun in open play, and the true figure is well above that. *(The arithmetic uses two figures from other documents: [Faceoffs](../systems/faceoffs.md) for draws per game, [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) for mean shift length, which is measured 5-on-5. No published count of on-the-fly change frequency exists; the floor above is arithmetic, not a citation.)* Second, **the specific thing zone-start percentage measures is a third of the draws, not a majority of them.** [Faceoffs](../systems/faceoffs.md) owns the zone split and the computation behind it: end-zone draws are the large majority of all faceoffs, but *offensive-zone* draws — the thing "sheltered usage" actually refers to — are only about a third of the total. A coach loading a player with offensive-zone starts is therefore redistributing within that third, spread across a whole bench, which is why the effect on any one player's season numbers is modest.
+Two important caveats. First, the effect is real but smaller than early analysis assumed, because **a large share of shifts do not start with a faceoff at all.** The arithmetic is easy to run and hard to argue with: five skaters on the ice for sixty minutes is 18,000 skater-seconds per team per game, which at a mean shift of 47.7 seconds is roughly **375 skater-shifts a side**. There are only about **56 draws in a game**. So even if a team changed all five skaters at every single faceoff — which no team does — at least a quarter of all shifts would still have begun in open play, and the true figure is well above that. *(The arithmetic uses two figures from other documents: [Faceoffs](../systems/faceoffs.md) for draws per game, and [Conditioning and Recovery](conditioning_and_recovery.md), which owns shift length, for the mean. Carry that figure's qualifications with it: it is **computed from NHL data for this guide, not a published statistic**, it is NHL regular-season only, and it carries **no strength-state qualification** — it is all situations, not 5-on-5. No published count of on-the-fly change frequency exists either; the floor above is arithmetic, not a citation.)* Second, **the specific thing zone-start percentage measures is a third of the draws, not a majority of them.** [Faceoffs](../systems/faceoffs.md) owns the zone split and the computation behind it: end-zone draws are the large majority of all faceoffs, but *offensive-zone* draws — the thing "sheltered usage" actually refers to — are only about a third of the total. A coach loading a player with offensive-zone starts is therefore redistributing within that third, spread across a whole bench, which is why the effect on any one player's season numbers is modest.
 
 **Quality of competition (QoC) and quality of teammates (QoT).** Weighted averages of the opponents (or teammates) a player shares the ice with — as Evolving Hockey describes it, each metric is a weighted average of a player's teammates' or opponents' metric, weighted by the share of time spent with or against them.
 
@@ -526,18 +532,60 @@ If you only have half an hour, cut the professional hockey and keep the footage 
 - **Believing an unusually good stretch is a new level.** If shooting or save percentage jumped and possession numbers did not, check PDO before you draw a conclusion.
 - **Treating analytics as either gospel or garbage.** It is an evolving, contested field of imperfect measurements that are still much better than guessing.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You have one period and you want to know which defensive-zone coverage a team
+   plays. Which single player do you watch, and what are the three things they
+   might do? *(§Which defensive-zone coverage do they play? Watch the winger)*
+
+2. A goal goes in and everyone is watching the celebration. What should you be
+   watching instead, and what one question should you be answering? *(§The four
+   exercises, Exercise 4)*
+
+3. You can have a tenth-row seat or the top row. Which do you take when you are
+   there to learn, why — and where is the best seat of all? *(§Live is far better
+   for structure)*
+
+4. Somebody quotes a player's plus/minus as evidence they are defensively poor.
+   Give two reasons that is not what the number measures. *(§The basic statistics
+   — Plus/minus)*
+
+5. What does expected goals price that Corsi does not — and what does xG discard
+   that Corsi keeps? Why can two sites give different xG for the same game?
+   *(§Possession statistics: Corsi and Fenwick, §Expected goals (xG))*
+
+6. A team is winning while being outplayed on every possession and expected-goals
+   measure. Which single number do you check, what would it have to say, and why
+   is calling that number "luck" a simplification? *(§PDO — the luck detector)*
+
+7. You are reviewing your own footage and you want to skip to your touches.
+   Roughly what share of your ice time are they, on what basis is that share
+   measured — and what are the three questions to ask of each shift instead?
+   *(§The protocol for reviewing your own shifts)*
+
+8. Two goaltenders post identical save percentages. Which measure would tell you
+   which of them actually played better, and what does that measure not know?
+   *(§Goaltending: save percentage versus goals saved above expected)*
+
 ## Key Takeaways
 
-1. **Stop watching the puck.** Everything tactical happens away from it, and the broadcast camera is actively training you to miss it. Give your eyes a specific job instead.
-2. **One exercise per period.** Watch one player for a full shift, or the defencemen only, or the weak side, or the five seconds before each goal — never all four at once.
-3. **The winger tells you the coverage.** If the defending winger follows their man into the corner, it is man-to-man; if they stay high near the point, it is a zone or low zone collapse. Count the forwards going deep to identify the forecheck; count the players at the point to identify the power play.
-4. **Watch live for systems and TV for technique** — and when you are live to learn, sit as high as you can, ideally high behind a net. From up there the ice becomes a diagram.
-5. **The blue line is the most under-watched place in hockey.** Tracked public research found that carrying the puck into the zone produced roughly twice the unblocked shot attempts and goals of dumping it in.
-6. **Watch your whole shift, not your touches.** Your touches are seconds of it; where you were when your team lost the puck is the part that decides whether you get more ice time.
-7. **Time on ice is the most honest statistic in hockey**, because it is your coach's own opinion of you, written down every night.
-8. **Corsi and Fenwick measure territory, not quality; expected goals prices quality** — but xG is built on **unblocked** attempts only (blocks are worth zero), and it has no standard definition, so two sites will disagree about the same game.
-9. **For goaltenders, GSAx beats save percentage beats goals against average**, because it is the only one that accounts for how hard the shots actually were. And **PDO regresses to 100** — if a team is winning while being outplayed on every other measure, check it, but treat it as a flag rather than a verdict.
-10. **Every number needs its context** — denominator, strength state, sample size, teammates, score state, and whose model. Without those, a hockey statistic is a rumour with decimal places. **An hour a week spent deliberately beats five hours of spectating**, and it only counts if it ends with one specific thing you are going to try at practice.
+1. **Stop watching the puck, and give your eyes one job per period.** The broadcast is optimised to show you the puck, and the puck is the least informative object on the ice. Watch one player for a full shift, or the defencemen only, or the weak side, or the five seconds before each goal — one at a time, never all four.
+2. **The players furthest from the puck tell you what a team is doing — but every system is a coaching choice, not a rule of hockey.** A defending winger who follows their man into the corner is marking players; one who stays high *on the point* (not down at the faceoff dot, some 44 feet away) is marking areas; one who hands off when the man leaves their area is playing a hybrid. Read over five or six sequences and expect the answer to change with the score.
+3. **Count, to identify the rest.** How many forwards go deep gives you their likely forecheck; how many stand near the blue line once a power play is set up gives you the formation. F1, F2 and F3 are roles defined by order of arrival, not by position.
+4. **Watch live for systems and TV for technique.** When you are there to learn, sit as high as you can — high behind a net if the rink allows it, and the ice becomes a diagram. Take the tenth row when you are there for fun.
+5. **The blue line is the most under-watched place in hockey.** Tulsky and colleagues' public tracking work (MIT Sloan, 2013) found that **at 5-on-5** carrying the puck into the zone produced roughly twice the unblocked shot attempts and goals of dumping it in — [Zone Entries](../systems/zone_entries.md) owns the per-entry figures, the sample and the definition of "shots" used there.
+6. **Watch your whole shift, not your touches.** They are a far smaller slice than they feel — and what you do in the two seconds after your team loses the puck is what separates good players from everyone else.
+7. **Time on ice is arguably the most honest single number in hockey**, because it is the coach's own revealed opinion of the player. It is also the denominator you need: convert totals to per-60 rates before comparing anyone.
+8. **Corsi and Fenwick are a rough measure of territory, not quality; expected goals prices quality** — but xG has no standard definition, so two sites will disagree about the same game. MoneyPuck values blocked attempts at zero; other providers may treat blocks differently, so check the glossary.
+9. **For goaltenders, GSAx beats save percentage beats goals against average**, because only the first accounts for how hard the shots were — though it inherits every weakness of the underlying xG model and needs a large sample. **PDO regresses hard towards 100**, but calling it luck is a useful simplification rather than a truth: elite finishers and elite goaltenders genuinely sustain it. Treat it as a flag, not a verdict.
+10. **Every number needs its context** — denominator, strength state, sample size, teammates, score state, whose model, and whether it passes the eye test. Without those, a hockey statistic is a rumour with decimal places. **An hour a week spent deliberately beats five hours of ordinary spectating**, and it only counts if it ends with one specific thing you are going to try at practice.
 
 ---
 
@@ -560,7 +608,7 @@ If you only have half an hour, cut the professional hockey and keep the footage 
 - *The availability of tactical, overhead or all-22-style camera feeds varies by league, broadcaster and season, and none is guaranteed for any specific competition; treat Part 8 as a description of categories rather than a guarantee that any particular feed exists.*
 - *There is no source behind the specific claim that amateur players glide for around a third of a shift, or that most players underestimate their shift length by ten to twenty seconds. These are widely repeated coaching observations, not measured findings — they are included as things to check on your own video rather than as facts.*
 - *The claim that the low zone collapse is the most common defensive-zone system in amateur hockey is **coaching consensus, not a measured prevalence**. No survey has been published, and the text says so.*
-- *The shift-length range used here is the published one — **30–80 seconds** (measured by Lignell et al. 2018, Brocherie et al. 2018 and Bracko et al. 1998, and collected in Vigh-Larsen and Mohr's 2024 review — which states the band in its introduction as a summary of those three, not as its own measurement; quoted in* [Conditioning and Recovery](conditioning_and_recovery.md)*). The tighter "40–45 seconds" you will hear in broadcast and coaching talk is **not** from that literature, but it is not baseless either:* [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) *computes a mean of 47 seconds and a median of 45 from 8,325 shifts across 11 NHL games — a convenience sample and its author's own calculation rather than a published finding. So treat 30–80 s as the measured range and ~45 s as a plausible central tendency, not as a rival fact.*
+- *The shift-length range used here is the published one — **30–80 seconds** (measured by Lignell et al. 2018, Brocherie et al. 2018 and Bracko et al. 1998, and collected in Vigh-Larsen and Mohr's 2024 review — which states the band in its introduction as a summary of those three, not as its own measurement; quoted in* [Conditioning and Recovery](conditioning_and_recovery.md)*). The tighter "40–45 seconds" you will hear in broadcast and coaching talk is **not** from that literature, but it is not baseless either:* [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) *computes a mean of 47 seconds and a median of 45 from 8,325 shifts across 11 NHL games — a convenience sample and its own calculation rather than a published finding. The **47.7 s** used in the zone-start arithmetic above is a separate and wider calculation, from the NHL's full 2024-25 time-on-ice report restricted to skaters with 41 or more games;* [Conditioning and Recovery](conditioning_and_recovery.md) *owns it and sets out its method. Neither is published, neither is strength-qualified, and they agree to within a second. So treat 30–80 s as the measured range and ~45–48 s as a plausible central tendency, not as a rival fact.*
 - *The date plus/minus became an official NHL statistic is unresolved. The cited Wikipedia article says 1959-60; 1967-68 is widely given elsewhere; no primary NHL source settles it. The text flags the disagreement rather than picking a side.*
 - *The ratio of shot attempts to goals ("roughly eighteen times faster") is an approximation derived from league attempt and scoring rates, not a figure quoted from a source. The point it supports — that attempts stabilise into signal far sooner than goals do — does not depend on the exact multiplier.*
 - *Named analytics sites and coaching resources were current at the retrieval date only. Sites in this space change and close frequently.*

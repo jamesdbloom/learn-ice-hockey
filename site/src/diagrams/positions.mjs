@@ -177,10 +177,17 @@ const swingLow = {
     // therefore dropped beside the goaltender instead, where it read as his.
     { id: 'D',  pos: 'D', at: D_BEHIND },
     { id: 'C',  pos: 'F', at: C_LOW,    label: 'swings low' },
-    // "The boards are the strong-side winger's ice." Out at y=37 rather than 35:
-    // the end-zone circle reaches y=37, so a winger drawn at 35 renders inside the
-    // circle and reads as being in the centre's patch rather than on the wall.
-    { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dx: 4, dy: 4 }, label: 'the winger’s ice' },
+    // "The boards are the strong-side winger's ice", so he sits ON the half-wall.
+    // ASSUMES rink.json half-wall.y = 38.5, boards at y = 42.5, own-team glyph radius
+    // 2.9 — which puts the top of the circle at 41.4, with 1.1 ft of ice to spare.
+    // dy is 0 for the same reason as the route in diagram 4: the old dy: +4 carried a
+    // comment about clearing an end-zone circle that reaches y=37, written when
+    // half-wall.y was 33. At 38.5 the half-wall is already outside that circle, and
+    // the +4 was drawing this winger's centre at y = 42.5 — standing on the dasher,
+    // with 0.9 ft of him clipped clean off by the viewport. In a diagram whose whole
+    // contrast is that the boards are his ice and not the centre's, he was the one
+    // player you could not fully see.
+    { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dx: 4 }, label: 'the winger’s ice' },
   ],
 
   routes: [
@@ -242,16 +249,24 @@ const backcheckMiddleLane = {
     'attacker in that lane; the two defencemen retreating together in front of them, keeping the ' +
     'middle of the ice sealed; and the goaltender in the crease.',
 
+  // EVERY TRAILING COORDINATE ANCHORED TO `neutral-dot` IN THIS DIAGRAM WAS A
+  // FOSSIL. rink.json's neutral_dot_x was corrected from 30 to 20 — the dots are
+  // five feet OUTSIDE your own blue line, in the neutral zone, and the old value
+  // put all four of them inside the end zones — and the named position was
+  // corrected with it. The glyphs moved 10 ft up-ice when it did; these notes did
+  // not, so anything below citing an x in the thirties or forties is reading a rink
+  // that no longer exists. Read the $comment on `faceoff.neutral_dot_x` before
+  // trusting any of them again.
   players: [
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:right', dx: 4, dy: 4 },
-      label: 'puck carrier' },                                                  // (34, 26)
+      label: 'puck carrier' },                                                  // (24, 26)
     { id: 'F', team: 'opp', pos: 'F', at: DRIVER, label: 'the middle-lane driver' },
-    { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:left', dy: -2 } }, // (30, -24)
+    { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:left', dy: -2 } }, // (20, -24)
 
     // "Come back on the defensive side of your man — between them and your own net."
     { id: 'C',  pos: 'F', at: { at: 'high-slot', dx: -24, dy: -4 }, label: 'inside his man' },  // (45, -4)
-    { id: 'RW', pos: 'F', at: { at: 'neutral-dot:right', dx: 16, dy: 8 }, label: 'outside lane' },  // (46, 30)
-    { id: 'LW', pos: 'F', at: { at: 'neutral-dot:left', dx: 14, dy: -6 }, label: 'outside lane' }, // (44, -28)
+    { id: 'RW', pos: 'F', at: { at: 'neutral-dot:right', dx: 16, dy: 8 }, label: 'outside lane' },  // (36, 30)
+    { id: 'LW', pos: 'F', at: { at: 'neutral-dot:left', dx: 14, dy: -6 }, label: 'outside lane' }, // (34, -28)
     { id: 'D',  pos: 'D', at: { at: 'top-of-circle:right', dx: -2, dy: -12 } }, // (52, 10)
     { id: 'D',  pos: 'D', at: { at: 'top-of-circle:left', dy: 14 } },          // (54, -8)
     { id: 'G',  pos: 'G', at: { at: 'crease', dx: 1 } },
@@ -262,7 +277,7 @@ const backcheckMiddleLane = {
   // because "get to the inside" is a state, not a movement, and an arrow from the
   // driver that finished on the centre would read as a check rather than a lane.
   routes: [
-    { from: DRIVER, to: { at: 'neutral-zone-mid', dx: 29, dy: 4 }, kind: 'skate' },  // (41, 6)
+    { from: DRIVER, to: { at: 'neutral-zone-mid', dx: 29, dy: 4 }, kind: 'skate' },  // (41, 4)
   ],
 
   puck: { at: 'neutral-dot:right', dx: 2, dy: 2 },
@@ -276,12 +291,67 @@ const backcheckMiddleLane = {
 // The section is explicit that this job "is defined by a *move* rather than a
 // spot, so hold both ends of it", and it gives both ends: high and level with the
 // opposing defenceman while they have the puck, then down to between the hash
-// marks and the goal line as your team wins it, "about 40 feet below where you
-// started". The glyph is at the high end and the route is the trip, because the
-// section's failure mode is a winger who is already at the bottom of it.
+// marks and the goal line as your team wins it. The glyph is at the high end and
+// the route is the trip, because the section's failure mode is a winger who is
+// already at the bottom of it.
+//
+// THE MEASURE THAT MATTERS IS LONGITUDINAL, NOT EUCLIDEAN, and this comment used
+// to lead with the wrong one. winger.md:175 does not describe a separation between
+// two spots; it describes two DEPTHS and subtracts them — the outlet position "is
+// **44 to 64 feet below** where you started — the point is at the blue line, 64 ft
+// out from the goal line, and the outlet band runs from level with the faceoff
+// dot, 20 ft out, down to the goal line". Both of those figures are distances out
+// from the goal line, so the range is a difference of two such distances and
+// nothing else.
+//
+// DRAWN, THE TRIP IS 45 FT LONGITUDINALLY, which is the figure to check. ASSUMES,
+// all from site/src/data/rink.json: goal_line_x = 89, point.x = 25 (the blue line,
+// 64 ft out), half-wall = (69, 38.5). The glyph is at (27, 15), so 89 − 27 = 62 ft
+// out; the route ends at (72, 38.5), so 89 − 72 = 17 ft out; 62 − 17 = 45, inside
+// the 44-to-64 range with a foot to spare at the floor.
+//
+// The same trip is 50.77 ft as the crow flies and 51.24 along the bowed route.
+// Those two are recorded because the caption and the sibling comment in
+// breakouts.mjs read the range loosely as how far apart the two spots are, and it
+// is worth knowing the picture survives that reading too — but they are NOT the
+// test. They are the more forgiving measure, they can pass while the owner's fails
+// (see rejected alternative (a) below, which does exactly that), and a future agent
+// who moves W_HIGH and checks only the hypotenuse will ship a diagram that
+// contradicts its own section.
+//
+// W_HIGH used to be dx 8, i.e. (33, 20): 56 ft out from the goal line rather than
+// the point's 64, which left the trip 56 − 17 = 39 FT LONGITUDINALLY — five feet
+// under the floor the caption quotes at the reader, not the eight tenths the
+// Euclidean 43.17 makes it look. The 8 ft was there to keep the winger's circle
+// off the opposition defenceman's triangle, 8.94 ft away at (25, 24).
+//
+// It is closed the way the identical defect in breakouts.mjs `breakout-winger-wall`
+// was: by moving the glyph UP-ICE rather than sideways, which is what the section
+// describes anyway — "high on your side, roughly level with the opposing defenceman
+// you are covering". At dx 2 he is two feet inside the blue line, exactly as the
+// sibling's WINGER_HIGH is, and the clearance the old dx was buying is bought by
+// dy −5 instead: 9.22 ft from the defenceman's anchor against 8.94 before, which is
+// the sibling's figure too. The lateral component goes toward the slot rather than
+// the boards because this caption and `describe` both say the winger is "between
+// him and the slot" and "goal-side of the opposing defenceman" — dy −5 keeps both
+// true (2 ft goal-side, 9 ft inside him), where dy +5 would have reversed the
+// second. Nothing else moved: the route's endpoint, its bow and the caption's
+// low-zone-collapse hedge are all untouched.
+//
+// Two alternatives were rejected. (a) dx 5, dy −4 — (30, 16), 47.65 ft straight —
+// keeps the glyph further off the blue line but leaves only 42 ft of depth, so it
+// passes the separation reading of the range and fails the section's own. (b)
+// Correcting the caption and `describe` down to the drawn 43 ft: rejected because
+// the range is a fact about two spots on a real sheet, so a picture that cannot
+// deliver it is the thing that is wrong, and the `describe` is read aloud to a
+// listener who cannot see the drawing to weigh it against.
+//
+// Note that the quoted figure here read "about 40 feet below where you started",
+// which is a sentence winger.md no longer contains — it now gives the 44-to-64
+// range, and gives Rink Map and Glossary as the owner of both figures.
 // ---------------------------------------------------------------------------
 
-const W_HIGH = { at: 'point:right', dx: 8 };                 // (33, 20)
+const W_HIGH = { at: 'point:right', dx: 2, dy: -5 };          // (27, 15)
 
 const wingerHighThenWall = {
   id: 'winger-high-then-down-the-wall',
@@ -293,7 +363,19 @@ const wingerHighThenWall = {
     'A winger’s defensive-zone job, drawn at both ends of the one move that defines it. While the ' +
     'other team has the puck you are high on your side, roughly level with the opposing ' +
     'defenceman you are covering and between him and the slot — that is what "stay high" means, ' +
-    'not halfway to the corner. The moment your team wins the battle below you it expires, and ' +
+    'not halfway to the corner. ' +
+    // The hedge on the DEFENSIVE half of the picture. The caption used to hedge only
+    // the breakout half, which left the thing the diagram spends most of its ice on —
+    // a winger staying up out of the corner battle drawn beneath him — reading as a
+    // law of hockey. It is not: it is the low zone collapse job. Wording follows
+    // winger.md's own Convention line and the sibling captions on
+    // centre-low-zone-collapse, dz-collapse-corner and dz-walk-down-zone.
+    'Staying high out of the corner rather than going down into it is the low zone collapse job — ' +
+    'the most common defensive-zone system, and a coaching choice rather than a rule of hockey. ' +
+    'Under man-on-man you follow your man wherever he goes, corner included, and under a hybrid ' +
+    'you take him down only below the hash marks, so find out which one your team plays before ' +
+    'your first shift. ' +
+    'The moment your team wins the battle below you it expires, and ' +
     'you come down the wall to between the hash marks and the goal line, 44 to 64 feet, ' +
     'presenting yourself as an outlet with your stick on the ice and your feet already moving. ' +
     'Watch the battle rather than the puck and turn your feet before it is won — but do not leave ' +
@@ -318,26 +400,71 @@ const wingerHighThenWall = {
     // The corner battle is deliberately unlabelled. Two labels eight feet apart in
     // the corner left the placer no legal slot, and it dropped "the forecheck" forty
     // feet away at the bottom of the boards with a leader line nobody would trace.
-    { id: 'F', team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 4, dy: 2 } },
+    //
+    // THE CORNER CLUSTER — forechecker, defenceman and puck — is placed as one
+    // group. Moving any one of the three on its own breaks another, which is why
+    // the forechecker's overhang survived as long as it did. ASSUMES, all of it
+    // checkable against the files named:
+    //   boards      y = +/-42.5, x = +/-100      rink.json sheet 85 x 200
+    //   corner arc  radius 28, centres (+/-72, +/-14.5) = (100 - 28, 42.5 - 28)
+    //   opposition  equilateral triangle, centroid-to-vertex 3.6, stroke 0.8
+    //   own team    circle r 2.9, stroke 0.75, so 3.275 ft of ink from the centre
+    //   puck        r 1.1                                     (all from rink.mjs)
+    // MITER: the triangle's vertices are 60 degrees and SVG joins miter, so each
+    // vertex carries a tip (0.8 / 2) / sin 30 = 0.8 ft beyond itself. The apex is
+    // at centroid + 4.4 IN INK, not + 3.6. Under-counting exactly this is how the
+    // overhang below was justified once already.
+    //
+    // A glyph in the corner must clear the ARC, not the straight dasher. At the
+    // old dy: +2 = (86, 36) the straight boards were 2.1 ft away and the picture
+    // looked fine in the source, but the arc cut 1.44 ft inside the apex's ink and
+    // the tip crossed the black board line in the render. At dy: -2 he is still
+    // 4.47 ft from the corner anchor — the same distance, and still the deepest
+    // player on the ice — and the apex ink at (86, 36.4) clears the arc by 2.01 ft,
+    // 1.71 ft of it white after the boards' own 0.6 stroke.
+    { id: 'F', team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 4, dy: -2 } },
 
     { id: 'G',  pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'D',  pos: 'D', at: { at: 'corner:right', dx: -2, dy: -4 } },
+    // Comes down with him. Pulling the forechecker in and leaving the defenceman
+    // at the old (80, 30) puts the circle 0.79 ft INSIDE the triangle's lower ink —
+    // the two glyphs were only 1.42 ft apart to begin with. At (78, 28) they are
+    // 1.68 ft apart, and he is still the own player nearest the puck.
+    { id: 'D',  pos: 'D', at: { at: 'corner:right', dx: -4, dy: -6 } },
     { id: 'RW', pos: 'F', at: W_HIGH, label: 'high on your side' },
   ],
 
   // Bowed toward the boards so the trip hugs the wall, and stopped up-wall of the
-  // battle: the outlet spot is where you receive, not where you join a fight. The
-  // end is at y=37 rather than the half-wall's own y=33 because the end-zone circle
-  // reaches y=37 — a route stopping inside it reads as ending in mid-ice, not on
-  // the wall.
+  // battle: the outlet spot is where you receive, not where you join a fight.
+  //
+  // ASSUMES rink.json half-wall.y = 38.5, boards at y = 42.5. The route ends ON the
+  // half-wall's own y — dy is 0 — so the endpoint tracks that coordinate instead of
+  // being computed against a remembered one. It used to carry dy: +4, justified by a
+  // comment reading "the end is at y=37 rather than the half-wall's own y=33, because
+  // the end-zone circle reaches y=37". Both halves of that had expired: half-wall.y
+  // had moved to 38.5, which is already outside the circle, so the +4 no longer
+  // bought anything and instead put the endpoint at y = 42.5 — the dasher itself —
+  // with the arrowhead's outer wing 0.63 ft into the boards. At dy: 0 the drawn
+  // quadratic's maximum y IS the endpoint, 38.5, and the arrowhead's outer wing
+  // reaches 39.59, leaving 2.91 ft of ice. If half-wall.y ever moves again this
+  // comment is wrong and the picture is not: that is the intended failure mode.
   routes: [
-    { from: W_HIGH, to: { at: 'half-wall:right', dx: 3, dy: 4 }, kind: 'skate', bow: 6 },
+    { from: W_HIGH, to: { at: 'half-wall:right', dx: 3 }, kind: 'skate', bow: 6 },
   ],
 
-  // Equidistant from the two players contesting it: the section's instruction is to
-  // "watch the battle rather than the puck, and read who is going to come out of it
-  // with possession", which is a loose puck, not a possessed one.
-  puck: { at: 'corner:right', dx: 1, dy: -1 },
+  // Contested by both and owned by neither: the section's instruction is to "watch
+  // the battle rather than the puck, and read who is going to come out of it with
+  // possession", which is a loose puck, not a possessed one.
+  //
+  // Equal in the ICE A READER SEES, which is not equal centres. The circle carries
+  // 3.275 ft of ink from its centre while the triangle's base sits 2.2 ft below its
+  // centroid, so the old equal centres — 4.243 ft to each, from (83, 33) — drew the
+  // puck 0.13 ft inside the defenceman's circle and 0.30 ft inside the forechecker's
+  // base. It was inside both glyphs at once, and it read as the defenceman's puck.
+  // At (84, 27) the centres are 5.39 and 6.08 and the visible gaps are 1.70 and
+  // 1.71 ft. It crosses the painted faceoff circle by 0.29 ft, which is house
+  // normal — the defenceman's glyph crossed it by 1.87 ft in the version this
+  // replaces — and it is drawn last, so it stays legible.
+  puck: { at: 'corner:right', dx: 2, dy: -7 },
 };
 
 // ---------------------------------------------------------------------------
@@ -418,7 +545,9 @@ const wingerOffensiveZone = {
 // ---------------------------------------------------------------------------
 
 const D_LANE = { at: 'blue-line', dx: 15, dy: 1 };            // (40, 1)
-const CARRIER_6 = { at: 'neutral-dot:right', dx: 4, dy: -4 }; // (34, 18)
+// (34, 18) here, and (36, -16) on the second attacker below, were both computed
+// against rink.json's superseded neutral_dot_x of 30 — see the note in diagram 3.
+const CARRIER_6 = { at: 'neutral-dot:right', dx: 4, dy: -4 }; // (24, 18)
 
 const twoOnOne = {
   id: 'defender-two-on-one',
@@ -449,7 +578,7 @@ const twoOnOne = {
   players: [
     { id: 'F', team: 'opp', pos: 'F', at: CARRIER_6, label: 'puck carrier' },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:left', dx: 6, dy: 8 },
-      label: 'the pass you take away' },                                        // (36, -16)
+      label: 'the pass you take away' },                                        // (26, -14)
     { id: 'D', pos: 'D', at: D_LANE, label: 'in the passing lane' },
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
   ],
@@ -531,14 +660,29 @@ const threeDepths = {
   players: [
     { id: 'D', pos: 'D', at: { at: 'point:right', dx: 2 }, label: 'may step down' },
     { id: 'D', pos: 'D', at: { at: 'point:left', dx: 2 },  label: 'holds the line' },
-    { id: 'F', pos: 'F', at: { at: 'half-wall:right', dy: 2 }, label: 'the cycle' },
+    // ON the half-wall, which is what the describe calls him: "on the strong-side
+    // half-wall with the puck". He carried dy: +2 with nothing justifying it — a
+    // third instance of the stale offset that moved the winger and the pinned
+    // player in this round, written when rink.json's half-wall.y was 33 and
+    // 35 was still open ice. Against 38.5 it drew him at y = 40.5, and an
+    // own-team circle of radius 2.9 tops out there at 43.4 — 0.9 ft through the
+    // dasher, 1.28 ft counting the 0.75 stroke. Nothing was clipped, so no render
+    // looked broken; he was simply standing in the boards. ASSUMES half-wall.y =
+    // 38.5 and boards at 42.5: at dy 0 the circle reaches 41.4, or 41.78 of ink.
+    { id: 'F', pos: 'F', at: 'half-wall:right', label: 'the cycle' },
   ],
 
   routes: [
     { from: { at: 'point:right', dx: 2 }, to: { at: 'top-of-circle:right', dx: -1 }, kind: 'skate' },
   ],
 
-  puck: { at: 'half-wall:right', dx: -3, dy: -2 },
+  // Inside and up-ice of him, on the same bearing it always had — only pushed out
+  // far enough to clear. It was 5.0 ft from his centre while he stood in the
+  // boards; bringing him back to the half-wall would have left it 3.61 ft away,
+  // i.e. the 1.1 ft disc overlapping his 2.9 ft glyph, which is the "puck drawn
+  // under its own carrier" defect the layering diagram in puck_support_and_spacing
+  // already had to fix once. At (65, 36) it sits 4.72 ft out and clear.
+  puck: { at: 'half-wall:right', dx: -4, dy: -2.5 },
 };
 
 // ---------------------------------------------------------------------------

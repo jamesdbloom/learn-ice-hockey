@@ -43,10 +43,13 @@ const THEIR_G = { at: 'crease', dx: -1 };     // ( 85, 0)
 
 // The lateral lanes. y = +-33 is a wall lane — a body skating a wall lane in open
 // ice, about 9.5 ft off the dasher. It is NOT the coordinate table's `half-wall`,
-// which is the boards themselves at y = +-40; this comment used to claim the two
-// were the same figure, and they were, until half-wall was corrected. Nothing
+// which is hard against the boards at y = +-38.5; this comment used to claim the
+// two were the same figure, and they were, until half-wall was corrected. Nothing
 // below is anchored to half-wall, so the pictures did not move — but do not
-// "reconcile" the constant to 40 on the strength of the old comment. y = +-22 is
+// "reconcile" the constant to half-wall's value on the strength of the old
+// comment. (This said 40, which half-wall has never been: rink.json's own
+// $comment records that 40 was tried and rejected for clipping wall players by
+// half a foot, and 38.5 committed instead.) y = +-22 is
 // the neutral-zone dot lane, which the glossary says defencemen defending the
 // rush position between.
 const WALL = 33;

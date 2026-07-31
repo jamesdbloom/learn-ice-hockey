@@ -8,9 +8,19 @@
 
 ## Overview
 
-This document is about the part of hockey that happens between your ears: resetting after a mistake, playing when you are nervous, staying confident through a bad run, and being useful to your team on a night when nothing works. It is written for a player, not for a coach or a therapist, and every technique in it is something you can do on a Tuesday night beer-league bench.
+The mental side of hockey closes the gap between your worst performance and your best. It does not raise your best.
 
-It is deliberately conservative about what it claims. Sports psychology has real findings and it also has a large amount of confident-sounding folklore, and the two are hard to tell apart from the outside. Where the research supports something, this document says so and names the work. Where the evidence is thin or contested, it says that too. Where an idea is **coaching craft** — widely taught, sensible, untested — it is labelled as coaching craft and you should treat it as a suggestion rather than a finding.
+Your top speed and your shot barely move between Saturday and Sunday; your attention and your composure after a mistake move enormously. That is where the variance lives — and anyone selling mental training as a substitute for skill work is selling you something.
+
+**Build a reset and run it after every mistake:** a physical trigger, one long breath out, a cue word, then name the one thing you are going to do next. The last step is the point, because a plan displaces the replay. **The four-step sequence is coaching craft — no study has tested this exact ordering** — though each of its parts has support of its own.
+
+**Judge yourself on process rather than outcome, but keep an outcome goal on the list.** You cannot control whether the puck goes in; you can control your route, your feet and your first touch. The one study that tested outcome, performance and process goals against each other found the combinations won, not process alone.
+
+**Confidence comes above all from having actually done the thing**, which is why talking yourself into it — a real effect, but a moderate one — multiplies evidence rather than replacing it. So when you have not scored in a month, shoot more: shooting less shrinks the sample and removes the ugly goals that end droughts.
+
+**Nerves are your body preparing; anxiety is the worry about it.** How much of the first you want is individual rather than universal, so track your state across a run of games and find out what yours is. Reframing the feeling as readiness rather than as a warning has evidence behind it and costs nothing.
+
+**And if it has spread beyond the rink, it is not a hockey problem.** That warrants a qualified professional, and looking for one is not a failure of toughness. One signal is not something to weigh up at all: any thought of harming yourself or of suicide means getting help now, tonight. The numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
 
 ---
 
@@ -619,20 +629,63 @@ This document is about performance. It is not a substitute for care, and some of
 - **Treating flat stretches as failure.** Improvement is non-linear and plateaus are usually consolidation. Also: deliberate practice explains roughly 18% of the variance in sport performance, so hours alone were never the whole story.
 - **Managing a clinical problem with performance techniques.** If it has spread beyond the rink, breathing exercises are the wrong tool — and if there is any thought of harming yourself, none of this document is the right tool. See [§13, When to seek real help](#13-when-to-seek-real-help) for the signals and the crisis numbers.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You have just made a bad read and the shift is still going. Give the four
+   steps of the reset in order, say which one the other three exist to make
+   possible, and say what the document admits about the sequence itself.
+   *(§2, The reset itself)*
+
+2. Your instinct on the bench is to decide not to think about the turnover. Why
+   is that the wrong move, what is the alternative — and how strong is the
+   evidence for the alternative? *(§2, Do not try to suppress the thought)*
+
+3. You have not scored in eight games and you are being more careful with your
+   chances. Describe the loop you are in, say what to do instead, and say what
+   the evidence status of the loop itself is. *(§4, The hockey version: the
+   scoring slump)*
+
+4. Someone tells you the inverted-U means aiming for the middle. What does the
+   original work distinguish that the textbook curve drops — and what replaces
+   the universal curve? *(§5, What the inverted-U actually says)*
+
+5. Nerves and anxiety are not the same thing. Distinguish them, and say what you
+   do about each. *(§5, Nerves versus anxiety)*
+
+6. You have a fixed pre-game sequence. What is the single test for whether it is
+   a routine or a superstition, and what should you do with anything that fails
+   it? *(§6, Routine versus superstition)*
+
+7. Rank Bandura's four sources of confidence. Which is strongest by a distance,
+   and what asymmetry does the document flag in the third one? *(§4, Where it
+   actually comes from)*
+
+8. A player afraid of making mistakes plays carefully, tidily and safe. Why does
+   that produce *more* turnovers rather than fewer — and what is the prescription,
+   given that it is explicitly not "be brave"? *(§8, Why fear of mistakes is
+   self-defeating)*
+
 ---
 
 ## Key Takeaways
 
-1. **The mental game closes the gap between your worst performance and your best; it does not raise your best.** Your physical capacities barely move between Saturday and Sunday. Your attention and composure move enormously. That is where the variance lives.
-2. **Build a four-step shift reset and run it every time: physical trigger, one long exhale, a cue word, then name your next action.** The last step is the whole point. **The four-step sequence itself is coaching craft — no study has tested this exact ordering** — but each of its components has independent support, which is why it is worth running. Match the cue to the task — instructional for precise actions, motivational for effortful ones.
-3. **Ruminating on the bench costs you the next shift too.** Recover, watch, plan one thing. Analysis of the mistake is a post-game job, and doing it during the game costs you the information the bench is for.
-4. **Judge yourself on process, not outcome — but keep the outcome goal on the list.** You cannot control whether the puck goes in; you can control your gap, your route, your first touch and your feet. Pick three process goals for your role — and check which system your team plays before you write them, because the role changes with the system. The one study that tested outcome, performance and process goals against each other (Filby et al., 1999) found the **combinations** won, not process alone.
-5. **Confidence comes from mastery experiences above all — having actually done the thing.** Self-talk works, at a moderate effect size (ES = 0.48), but it is a multiplier on evidence rather than a substitute for it. In a slump, **shoot more**: shooting less shrinks the sample and removes the ugly goals that end droughts.
-6. **The textbook inverted-U is not what the research says.** Complex tasks show the curve; simple well-learned ones benefit more linearly from arousal. Your optimal state is individual — track it over eight games and find out what yours actually is.
-7. **Nerves are the body preparing; anxiety is the worry.** Manage the first, address the second. Reframing arousal as readiness rather than as failure has real evidence behind it and costs nothing.
-8. **Build a pre-game routine — the meta-analytic evidence for routines is genuinely positive** (SMC = 0.31 pre–post, g = 0.64 in experimental designs, for novices and elites alike). What nobody can tell you is which elements matter, so prune anything that would wreck you if it were unavailable.
-9. **Fear of making a mistake produces passive play, and passive play produces more mistakes.** Hesitation is the error hockey punishes hardest. Physical fears respond to graded exposure and to better technique — and better technique lowers the actual risk, so the fear drops for a good reason.
-10. **Your emotional state is not private, and neither is your goalie's.** Hold a neutral floor on the bench; give your goalie a fixed post-goal routine and a team that treats goals as unremarkable. And **if it has spread beyond the rink, it is not a hockey problem** — that warrants a qualified professional, and seeking one is not a failure of toughness. **One signal is not a threshold to weigh up at all: any thought of harming yourself or of suicide means get help now, tonight.** The full list of signals and the crisis numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
+1. **If it has spread beyond the rink, it is not a hockey problem** — that warrants a qualified professional, and seeking one is not a failure of toughness. **One signal is not a threshold to weigh up at all: any thought of harming yourself or of suicide means get help now, tonight.** The full list of signals and the crisis numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
+2. **Build a four-step shift reset and run it every time: physical trigger, one long exhale, a cue word, then name your next action.** The last step is the whole point. **The four-step sequence itself is coaching craft — no study has tested this exact ordering** — but each of its components has independent support. Instructional cues beat motivational ones only for fine motor tasks; for gross, effortful ones a motivational cue is at least as good.
+3. **Ruminating on the bench costs you the next shift too** — though that mechanism is a general cognitive-psychology theory rather than a measured finding, and none of it was tested on hockey players. Recover, watch, plan one thing; analysis of the mistake is a post-game job.
+4. **Judge yourself on process, not outcome — but keep the outcome goal on the list.** Pick three process goals for your role, and check which system your team plays before you write them, because the role changes with the system. The one study that tested outcome, performance and process goals against each other (Filby et al., 1999 — 40 participants on a soccer task, not hockey, over five weeks) found the **combinations** won, not process alone.
+5. **Confidence comes from mastery experiences above all — having actually done the thing.** Self-talk works at a moderate effect size (ES = 0.48) but multiplies evidence rather than replacing it. In a slump, **shoot more** — though that slumping players actually shoot less is coaching craft, not a measured finding, with no published study behind it.
+6. **Nerves are the body preparing; anxiety is the worry — manage the first, address the second.** The textbook inverted-U is not what the research says: only complex or unfamiliar tasks show the curve, simple well-learned ones tend to improve roughly linearly, and the causal mechanism has not been established. Your optimal state is individual, so track it over about eight games. Reframing arousal as readiness has evidence behind it, largely from academic-testing contexts rather than sport, so the transfer to a rink is an inference.
+7. **Build a pre-game routine — the meta-analytic evidence for routines is genuinely positive** (SMC = 0.31 pre–post; g = 0.64 in experimental designs under low pressure). Skill level was a **null moderator** — no difference was detected, which is not a demonstration that novices and elites benefit equally. Nobody can tell you which elements matter, so prune anything that would wreck you if it were unavailable.
+8. **Fear of making a mistake produces passive play, and passive play produces more mistakes.** Hesitation is the error hockey punishes hardest. Graded exposure has a strong clinical base in anxiety generally, but its application to hockey contact fear is coaching craft cited to no study here — and **not all fear should be overridden**: the goal is to stop it operating where you are actually safe. This assumes you have been medically cleared to play.
+9. **Your emotional state is not private, and neither is your goalie's.** Hold a neutral floor on the bench — the direction is well documented from a scoping review, the size unquantified. Give your goalie a fixed post-goal routine and a team that treats goals as unremarkable, noting that the goaltending material here is structured coaching craft with a plausible rationale rather than research findings.
+10. **The mental game closes the gap between your worst performance and your best; it does not raise your best** — a reasonable inference rather than a measured finding. Your physical capacities barely move between Saturday and Sunday; your attention and composure move enormously.
 
 ---
 

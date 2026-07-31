@@ -14,11 +14,17 @@
 
 ## Overview
 
-Hockey asks your body for something unusual: repeated near-maximal efforts of roughly half a minute to a minute and a half, separated by two to five minutes sitting on a bench, for sixty minutes of clock time. Training for that is not the same as training for general fitness, and it is not the same as training for a marathon or for a one-rep-max squat.
+Hockey asks your body for repeated near-maximal efforts of roughly thirty to eighty seconds, separated by two to five minutes sitting down, for sixty minutes of clock time.
 
-This document covers what the demand actually is, what to train and why, how to reduce your injury risk, how to warm up, fuel and recover, and — because most readers have a job — what the highest-value ninety minutes a week looks like.
+**Aerobic fitness matters here for rebuilding, not for endurance.** Restoring the chemical fuel your muscles burn in those bursts is an oxygen-dependent process, and it is what decides whether your twentieth shift resembles your first — so train a base and intervals shaped like shifts, alongside lower-body strength and power.
 
-**Two honest framings before we start.** First, sports science is a contested field, and hockey-specific sports science is a small one. Where the evidence is good, it is called good. Where it is weak, mixed or absent, it is called that, rather than dressing coaching craft up as fact. Second, **conditioning is not a substitute for skating technique.** A player with an inefficient stride burns far more energy to cover the same ice. Read [Skating](../technique/skating.md) alongside this.
+**Your groin is probably weak relative to the muscles that pull the leg the other way, and in professional ice hockey that was a measured risk factor:** players whose adductor strength was below 80% of their abductor strength were found to be seventeen times more likely to strain an adductor. **No single exercise is proven to prevent it.** The pooled evidence for the one most often prescribed, the Copenhagen adduction exercise, was rated very low certainty in a review that has since been retracted. Strengthen the area anyway; disbelieve anyone who calls a particular exercise protective in hockey.
+
+**Learn the concussion red flags, and treat any one of them as an ambulance call** — neck pain, seizure, repeated vomiting, a severe or worsening headache, loss of consciousness or a deteriorating one, among ten in all. Assume a possible spinal injury in any head injury and do not move them. Short of a red flag, a suspected concussion still means off the ice, no return that day, no driving, not left alone for the first few hours, and a medical professional before you play again. You do not have to be knocked out to have one.
+
+**The warm-up is the highest-evidence injury measure you control, and doing it every time beats designing it cleverly:** high adherence cut injury risk by about 64% in the hamstring-injury prevention research while low adherence gave essentially no benefit — though that literature is football and general team sport, not hockey. Ten to fifteen minutes, off the ice, every time.
+
+**Sleep is the highest-leverage recovery tool there is**, and be sceptical of anything sold as one: ice baths make you feel better and may blunt strength gains, and the evidence sits with sleep, fluid, carbohydrate and protein.
 
 ---
 
@@ -533,18 +539,63 @@ Supporting evidence is consistent in direction: early specialisation has been as
 - **Ice-bathing straight after a strength session**, where the goal is adaptation and cooling appears to blunt it.
 - **Staying out for 75 seconds.** Conditioning is what keeps your decision-making alive in the last ten seconds of a shift; the cheapest way to protect it is to change earlier.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. A teammate takes a knock, gets straight up, and tells you they are fine. They
+   were not knocked out. What happens next, and who decides? *(§Concussion — You
+   do not have to be knocked out; The absolute rule)*
+
+2. Name as many of the ten CRT6 red flags as you can. Two of them look exactly
+   like ordinary concussion symptoms — which two, and what is the difference that
+   turns one into an ambulance call? *(§Concussion — Red flags)*
+
+3. The game is over and you are the lift home for a player with a suspected
+   concussion. List what CRT6 says they must not do, and say which of those is
+   not conditional on how they say they feel. *(§The first hours afterwards)*
+
+4. Someone tells you the Copenhagen adduction exercise prevents groin injuries in
+   hockey players. What is actually established here, what is not, and what
+   happened to the review the strength numbers came from? *(§Groin and adductor
+   strain — the classic hockey injury)*
+
+5. A good distance runner is finished after two shifts. A gym-strong sprinter is
+   superb on shift one and a passenger in the third period. Explain both, and
+   name the system doing the work in each case. *(§Why the distance runner dies
+   after two shifts — and the sprinter dies in the third period)*
+
+6. You are gassed at sixty-five seconds of a shift. What fails first — and what
+   is the practical rule that follows from that? *(§Shift Length: Where
+   Conditioning Becomes Tactics)*
+
+7. You have ten minutes before you get dressed and you have never warmed up off
+   the ice. What is the highest-evidence thing you can do with them — and what
+   does the research say matters more than the design of the programme? *(§The
+   off-ice warm-up most amateurs skip entirely, §What actually reduces injury
+   risk in general)*
+
+8. You have just finished a heavy strength session and someone suggests an ice
+   bath. Good idea? Would your answer change after a tournament game, and why?
+   *(§An honest audit of popular recovery methods)*
+
 ## Key Takeaways
 
-1. **Hockey is anaerobic within a shift and aerobic across a game.** Shifts of roughly 30–80 seconds at near-maximal heart rate, with longer passive recovery. Anaerobic power sets how good your best shift is; aerobic fitness sets how similar your twentieth is to your first.
-2. **The reason aerobic fitness matters is rebuilding, not endurance.** Restoring phosphocreatine between shifts is an oxygen-dependent process. That is why a strong, unfit player fades and a fit, weak player never had a first shift worth fading from.
-3. **Train five things:** aerobic base, hockey-shaped intervals (30–45 seconds hard, 2–4 minutes easy), lower-body strength and power, core and rotational strength, and hip and groin mobility with strength through range.
-4. **Your groin is probably weak relative to your abductors, and that is a documented hockey risk factor** — a player with adductor strength below 80% of abductor strength was found to be 17 times more likely to strain an adductor. Strengthen it deliberately, but know that no single exercise is proven to prevent the injury, and that the pooled evidence on the Copenhagen exercise was rated **very low certainty** in a review that has since been **retracted** — leaving the strength claim currently unsupported for ice hockey specifically.
-5. **Learn all ten concussion red flags, and call an ambulance for any one of them:** neck pain or tenderness · seizure, fits or convulsion · loss of vision or double vision · **loss of consciousness** · increased confusion or deteriorating conscious state · weakness or numbness/tingling in more than one arm or leg · repeated vomiting · **severe or increasing headache** · increasingly restless, agitated or combative · **visible deformity of the skull**. A headache or confusion that is **getting worse** is a red flag, not an ordinary symptom. Assume a possible spinal injury in any head injury: do not move them. Short of a red flag, **suspected concussion still means off the ice, no return that day, no driving, not left alone for the first few hours, and a medical professional before you play again** — you do not need to lose consciousness to have one.
-6. **The warm-up is the highest-evidence injury measure you control**, and **compliance beats programme design**: high adherence cut injury risk by about **64%** in the hamstring-prevention research (RR 0.36) while low adherence gave essentially no benefit. Ten to fifteen minutes off-ice — raise, mobilise, activate, potentiate — then skate before you shoot.
-7. **Sleep is the single highest-leverage recovery tool**, and it is the main casualty of a 22:30 rec game. Plan around it, rehydrate and eat at the rink rather than at 01:00, and keep the post-game beer modest.
-8. **Be sceptical of recovery products.** Ice baths help you feel better and may blunt strength adaptation; compression is inconclusive; foam rolling mostly changes how sore you feel. Carbohydrate, fluid, protein and sleep are where the evidence is.
+1. **Learn all ten CRT6 concussion red flags, and call an ambulance for any one of them:** neck pain or tenderness · seizure or convulsion · loss of vision or double vision · loss of consciousness · increasing confusion or deteriorating conscious state · weakness or numbness in more than one arm or leg · repeated vomiting · severe or increasing headache · increasingly restless, agitated or combative · visible deformity of the skull. A headache or confusion that is **getting worse** is a red flag, not an ordinary symptom.
+2. **Assume a possible spinal injury in any head injury: do not move them, and do not remove the helmet.** Short of a red flag, a suspected concussion still means off the ice, no return that day, no driving, not left alone for the first few hours, and a medical professional before you play again. You do not have to be knocked out to have one.
+3. **The warm-up is the highest-evidence injury measure you control, and doing it every time beats designing it cleverly:** high adherence cut injury risk by about 64% in the hamstring-prevention research, low adherence essentially none — though that literature is football and general team sport, not hockey. Ten to fifteen minutes, off the ice, every time.
+4. **Your adductors are probably weak relative to your abductors, and in professional ice hockey players that was a measured risk factor** — below 80% of abductor strength, 17 times more likely to strain an adductor. Strengthen them deliberately, but no single exercise is proven to prevent it: the pooled Copenhagen evidence was rated **very low certainty** in a review that has since been **retracted**, leaving the strength claim unsupported for ice hockey specifically.
+5. **Hockey is anaerobic within a shift and aerobic across a game.** Rebuilding phosphocreatine between shifts is oxygen-dependent, so aerobic fitness decides whether your twentieth shift resembles your first.
+6. **Train five things:** aerobic base; intervals shaped like a shift (30–45 seconds hard, 2–4 minutes easy — reasoned from measured game demands, not a tested protocol); lower-body strength and power; core and rotational strength; hip and groin strength through range.
+7. **Sleep is the single highest-leverage recovery tool**, and it is the main casualty of a 22:30 rec game. Rehydrate and eat at the rink rather than at 01:00, and keep the post-game beer modest.
+8. **Be sceptical of recovery products.** Ice baths help you feel better and may blunt strength adaptation; compression is inconclusive. Sleep, fluid, carbohydrate and protein are where the evidence is.
 9. **In-season, maintain; off-season, build.** Two quality strength sessions a week maintains what you built. Doing nothing all summer throws it away.
-10. **Conditioning is a decision-making asset.** What fails at the end of a long shift is your judgement before your legs — so change before you need to, not when you need to. **For youth, the rule is variety, not specialisation:** no single-sport specialisation before about age 12, weekly training hours below the athlete's age in years, qualified coaches rather than adult programmes scaled down.
+10. **Conditioning is a decision-making asset:** your judgement fails before your legs, so change before you need to, not when you need to. **For youth, variety beats specialisation** — no single sport before about age 12, weekly training hours below the athlete's age in years; consensus guidance, not tested thresholds.
 
 ---
 

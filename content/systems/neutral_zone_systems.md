@@ -13,9 +13,17 @@ Risk: A turnover in the middle third does the most damage relative to the risk y
 Goal: Control it and you choose whether the night is a track meet of rushes or a grinding slog — lose it and your opponent chooses for you
 ```
 
-The **neutral zone** is the middle third of the ice, between the two blue lines. It is where possession changes hands most often, where odd-man rushes are manufactured, and where a turnover does the most damage relative to the risk you thought you were taking. This document covers how teams defend it, how teams attack through it, and how to read which is happening while you are carrying the puck toward it.
+The **neutral zone** is the middle third of the ice, between the two blue lines — fifty feet of it, and about three seconds for a strong skater.
 
-The core idea, and the thing to hold onto if you remember nothing else: **the team that controls the neutral zone decides what kind of game gets played.** Control it and you choose whether the night is a track meet of rushes or a grinding, dump-and-forecheck slog. Lose it and your opponent chooses for you.
+**Whoever controls that middle third decides what kind of game gets played:** a night of end-to-end rushes, or a grinding slog of pucks shot in and chased. Lose it and your opponent chooses for you. It is also where possession changes hands most often and where a turnover costs the most, because it catches players moving the wrong way at speed.
+
+**Every structure teams use there is a coaching choice, not a law.** Find out which one your team plays, and what the signal is to change it.
+
+**Then read the first opponent who comes at you.** Coming hard and straight means they are pressuring, and one early pass beats them before they arrive. Arcing across the ice rather than attacking you means they are steering you into teammates waiting in the middle — so do not go where they are steering you. That shape is beaten by moving the puck rather than carrying it, and if none of those passes is there, by shooting the puck deep into their end on purpose and chasing it.
+
+**Regroup rather than force your way in.** Turning back, passing to a defenceman and coming again keeps the puck, makes their structure reset, and lets your forwards arrive at the far blue line with speed instead of from a standstill. It is the most under-used tool in amateur hockey.
+
+**Challenging an attacker up at your blue line is a bet that you have help behind you; giving ground is the play when you do not.** Check over your shoulder before you commit, and say out loud which one you are doing. Staying close to the puck carrier is a five-man job anyway — your defencemen can only do it if the forwards got back.
 
 ---
 
@@ -49,7 +57,7 @@ Three lines govern what happens there, and you need all three in your head at on
 ```facts
 Risk: A turnover at centre ice is the most expensive kind — it is the one that becomes a 2-on-1
 Key: Odd-man rushes are manufactured in the middle third, not in the offensive zone
-Read: How a defending team manages its blue line shapes the opponent's offence more than the opponent's own entry strategy does
+Key: The repeatable, player-to-player part of shot differential shows up almost entirely in neutral zone play, not in shots per offensive-zone possession (NHL tracking, 2011-12)
 Goal: Win the neutral zone and you choose whether the game is rushes or a grind — neither is better, but the choice must be yours
 ```
 
@@ -61,7 +69,7 @@ Four reasons, and they compound.
 
 **3. Odd-man rushes are made here, not in the offensive zone.** A 2-on-1 is not a lucky bounce. It is a forward caught on the wrong side of the puck, a defenceman who stepped up and missed, or a winger who left the zone early. All three happen in the middle third.
 
-**4. The defending team, not the attacking team, sets the terms.** Public tracking work on NHL zone entries — Eric Tulsky and colleagues' paper presented at the 2013 MIT Sloan conference, which hand-tracked **330 games from the 2011-12 season**, and Corey Sznajder's later tracking (**2014-16**, reported second-hand and flagged as indicative in [Zone Entries](zone_entries.md)) — found that **controlled entries (carrying or passing the puck in) produce roughly twice the shot volume per entry of dump-ins**, and that how a defending team manages its blue line shapes the opponent's offence more than the opponent's own entry strategy does. In other words, the neutral zone structure you play is one of the biggest levers you have on how many chances the other team gets. (Figures vary between studies; treat "roughly double" as the honest number rather than any single decimal.)
+**4. It is where the skill part of shot differential comes from.** Public tracking work on NHL zone entries — Eric Tulsky and colleagues' paper presented at the 2013 MIT Sloan conference, which hand-tracked **330 games from the 2011-12 season**, and Corey Sznajder's later tracking (**2014-16**, reported second-hand and flagged as indicative in [Zone Entries](zone_entries.md)) — found that **carrying the puck in produces roughly twice the shot volume per entry of dumping it in**. **The same authors then drew a further conclusion from their own data, in their own discussion — it is their inference, not a later writer's gloss on them.** Measured across a season, shots per offensive-zone possession did not separate players reliably; the paper attributes that component to luck at the single-season level. Entry differential and the fraction of entries made with possession did separate them, *"clearly show[ing] reproducible differences from player to player"*. So, in the paper's words, the talent component of shot differential *"seems to come almost entirely from the neutral zone play."* In other words, the neutral zone structure you play is one of the biggest levers you have on how many chances get generated at either end. (Both data sets are NHL, the figures vary between studies, and "roughly double" is the honest number rather than any single decimal.)
 
 **The strategic consequence.** A team that wins the neutral zone gets to choose the game. Force the other side to dump the puck in every time and you have turned the game into a series of forechecking battles and defensive-zone retrievals — a grind. Move through the neutral zone with control and the game becomes rushes, odd-man looks and broken play. Neither is better in the abstract. **What matters is that it is your choice and not theirs.** See [Game Management](game_management.md) for when to want which.
 
@@ -615,7 +623,8 @@ Action: Move the puck faster than they can slide — two quick passes, D-to-D or
 Action: Use the boards deliberately — a rim or a chip off the wall to a forward arriving behind the pressure, especially against F2 stepping up
 Read: Stretch a forward behind the wall against a 1-3-1 or a trap, but not against a 1-4 — chip past a 1-4's flat line and race for it instead
 Never: Attempt the seam unless it is obviously there — the highest-risk answer, and the one amateurs try first and should try last
-Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth vastly more than a turnover at the blue line
+Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth more than a turnover at the blue line
+Key: That is a read on a trap specifically, not a general preference for dumping — the NHL tracking behind the one-third threshold concluded players give the puck up at the line too readily
 Mindset: Be patient — a trap gives you the puck and waits for you to do something stupid with it
 ```
 
@@ -629,7 +638,7 @@ This deserves its own section because it is the most common problem an amateur t
 
 **4. Skate it through the seam — but only when it is real.** A trap that has committed to a side has a seam behind the pressure. A skilled carrier who cuts back through the middle behind a stepped-up forechecker breaks the structure completely. This is the highest-reward and highest-risk answer, and it is the one amateur players attempt first and should attempt last. **If the seam is not obviously there, it is not there.**
 
-**5. Dump it and forecheck — on purpose.** The most under-used answer of all. If the entry is not on, **put the puck deep past the red line and go hunt it with three forwards.** You are choosing to play the game as a grind rather than as a rush, and against a trapping team that is often the right choice — a team that has committed five players to the neutral zone has, by definition, structured itself to defend rushes rather than forechecks. A controlled entry is worth roughly twice a dump-in, but **a dump-in is worth vastly more than a turnover at the blue line.** The published analytics work on this suggests a carry attempt is only the better decision when you are somewhere around a third confident of completing it — below that, dump it. Do not treat that as a precise number, but do treat the direction as correct: **amateur players over-attempt the carry by a wide margin.**
+**5. Dump it and forecheck — on purpose.** The most under-used answer of all. If the entry is not on, **put the puck deep past the red line and go hunt it with three forwards.** You are choosing to play the game as a grind rather than as a rush, and against a trapping team that is often the right choice — a team that has committed five players to the neutral zone has, by definition, structured itself to defend rushes rather than forechecks. A controlled entry is worth roughly twice a dump-in, but **a dump-in you chase is worth more than a turnover at the blue line.** The published analytics work on this suggests a carry attempt is only the better decision when you are somewhere around a third confident of completing it — below that, dump it. Do not treat that as a precise number, and note which way that work points: it watched NHL players, and it concluded they give the puck up at the line **too readily**, not too rarely. So the argument here is situational, not general. **Against a structure that has committed five players to the neutral zone, your chance of completing a carry is low by construction** — that is the whole design of the thing — and a dump you hunt with three forwards beats an entry forced into a set wall. That is a read on the picture in front of you, not a reason to dump by default.
 
 **6. Be patient, and make them come.** A trap is designed to punish impatience. It gives you the puck and waits for you to do something stupid with it. Holding the puck in your own end, regrouping twice, and making them either come and forecheck or stand and watch is a completely legitimate response — and if they stand and watch, you have a free 200 feet to build speed into. This is what the Flyers were demonstrating, crudely, in 2011.
 
@@ -709,7 +718,7 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 ## Common Mistakes
 
 - **Hanging at the red line waiting for a breakaway.** It is the most damaging single habit in amateur hockey. It removes your backpressure, which forces your defencemen to back off, which concedes controlled entries all night. One player doing this ruins the neutral zone for the other four.
-- **Forcing the entry every single time.** Skating into a set structure at the blue line and losing the puck there is the worst outcome available — worse than a dump-in, worse than a regroup, worse than icing it. If it is not open, do not go.
+- **Forcing the entry every single time.** Skating into a set structure at the blue line and losing the puck there is one of the worst outcomes available — worse than a dump-in you chase, and worse than a regroup. If it is not open, do not go.
 - **Never regrouping.** Treating a backwards pass as a failure. Professional teams regroup constantly; amateur teams almost never do — an observation from coaching material rather than a counted difference, but a very visible one.
 - **All three forwards in the same lane.** Chasing the puck as a group means one defender covers three attackers and the ice you needed is on the other side.
 - **Receiving a regroup pass standing still.** You must be moving when the puck arrives, or the reset achieved nothing.
@@ -720,20 +729,60 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 - **Assuming everyone is playing the same structure.** If half your unit is pressuring and half is trapping, you have created a seam through the middle of your own team. Confirm the plan on the bench, not during the shift.
 - **Confusing the neutral zone 1-3-1 with the power-play 1-3-1.** Different zone, different shape, different job. Same three digits.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You hang at the red line waiting for a breakaway pass. Explain what you have
+   just done to your own defencemen, and why the fix for "we keep getting entered
+   on with speed" is usually not the defence. *(§Gap control as a team concept)*
+
+2. There is a flat line of four opponents across the ice in front of you. Should
+   you stretch a forward behind it? The answer is not the same in every case —
+   say which structure makes the stretch pass right, which makes it illegal, and
+   what you do instead. *(§The stretch pass, §Beating a trap)*
+
+3. An attacker is coming at your own blue line. Stand up or back off? Each is a
+   bet on something — say what, name the one thing you check before you commit,
+   and say it out loud. *(§Denying the blue line: stand up or back off)*
+
+4. You take a pass in the neutral zone and there is no way forward. What is the
+   alternative to forcing it, what does holding the puck cost the other team —
+   and what is the one thing a forward must not do while waiting to receive the
+   reset? *(§Regroups, §Timing the forwards' swing)*
+
+5. Their first forechecker is arcing across the ice, showing you the boards and
+   not really closing. What are they playing, and what is the thing you must not
+   do about it? Now answer the same question for a forechecker coming straight
+   at you at speed. *(§Reading the neutral zone while you carry the puck)*
+
+6. A team is refusing to come and get the puck from you. Give three ways to beat
+   that — then name the answer amateur players attempt first, and say why it
+   should be attempted last. *(§Beating a trap)*
+
+7. The puck goes to the left wall and you are the right winger. Where do you go,
+   and what does "support" mean here that it does not mean elsewhere on the ice?
+   *(§Lane discipline: three lanes, three forwards)*
+
 ---
 
 ## Key Takeaways
 
-1. **The neutral zone is 50 feet and about three seconds, and it is where most possession changes happen.** A turnover there is the most expensive kind because it catches players moving the wrong way at speed.
+1. **Fifty feet and about three seconds — the neutral zone is where most possession changes hands**, and a turnover there catches players moving the wrong way at speed.
 2. **Controlling the neutral zone means choosing whether the game is rushes or a grind.** That choice is worth more than any individual play in it.
 3. **Every structure — 1-2-2, trap, 1-3-1, pressure, 1-4, left-wing lock — is a coaching choice, not a law.** Know which one your team plays and what the signal is to change it.
-4. **Read the opponent's F1.** Coming at you hard means pressure — beat them with one pass. Arcing across passively means a trap — do not go where they steer you.
-5. **Gap control is a five-man job.** Your defencemen can only hold a tight gap if your forwards got back. If you are getting entered on with speed all night, look at the forwards before you blame the D.
-6. **Standing up at the blue line is a bet that you have help. Backing off is the play when you do not.** Check over your shoulder before you commit, and say which one you are doing.
-7. **Regroup instead of forcing a bad entry.** You keep the puck, their structure has to reset, and your forwards arrive at the line with speed instead of standing still. This is the most under-used tool at amateur level.
+4. **Read the opponent's F1.** Coming hard means pressure — beat them with one pass. Arcing across means a trap — do not go where they steer you.
+5. **Gap control is a five-man job.** Your defencemen can only hold a tight gap if the forwards got back; the fix is rarely the defence.
+6. **Standing up at the blue line bets that you have help; backing off is the play when you do not.** Check over your shoulder, call it, and ask which your coach wants.
+7. **Regroup instead of forcing a bad entry.** You keep the puck, their structure resets, and your forwards arrive at the line with speed instead of standing still.
 8. **Three forwards, three lanes.** Support in the neutral zone means being available somewhere else, not being close to the puck.
-9. **A trap is beaten by moving the puck, not by carrying it.** Quick passes, the boards, a forward stretched behind the wall — and if none of those are there, dump it past the red line and forecheck on purpose.
-10. **Public NHL tracking work from around 2013 suggests a dump-in is worth roughly half a controlled entry in shots — and a turnover at the blue line is worth close to nothing.** The figures are more than a decade old and vary between studies, so use the direction, not the decimals. The threshold that work implies is about **one-third confidence**: if you think you can complete the carry more often than one time in three, carry it; below that, dump it. Amateur players over-attempt the carry, but "when in doubt, dump it" overshoots in the other direction.
+9. **A trap is beaten by moving the puck, not by carrying it.** Quick passes, the boards, a forward stretched behind the wall — or dump it past the red line and forecheck on purpose.
+10. **Public NHL tracking from around 2013 puts a dump-in at roughly half a carried-in entry in shots.** The same authors concluded from the same data that the reproducible, player-to-player part of shot differential sits almost entirely in neutral zone play rather than in shots per offensive-zone possession. It watched NHL players only, concluded they give the puck up at the line too readily, and is a decade old — take the direction, not the decimals. [Zone Entries](zone_entries.md) owns the figures.
 
 ---
 
@@ -742,6 +791,8 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 - The two-line pass rule's removal for the 2005-06 season, alongside the obstruction crackdown and the trapezoid, is well attested across sources, but it rests on secondary summaries rather than on the NHL rulebook text itself — the current online rulebook sets out the rules as they stand, not their history.
 - The **origin of the left-wing lock is settled once the two claims are read as complementary.** Wikipedia traces the invention to 1970s Czechoslovak hockey; The Coaches Site credits Barry Smith with adapting it for the NHL rink and bringing it to Detroit under Scotty Bowman in the mid-1990s. Those are different events twenty years apart, not rival attributions. Detroit's adoption from 1994-95 and their 1997 Cup are not in dispute.
 - The **zone entry figures** (a carry-in producing roughly twice the shots of a dump-in; the rough one-third confidence threshold for attempting a carry) come from **public hockey analytics work on NHL data from the 2011-12 season** — Tulsky, Detweiler, Spencer and Sznajder, *Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance*, presented at the **2013** MIT Sloan Sports Analytics Conference (330 hand-tracked games from **2011-12**) — plus Corey Sznajder's separate later tracking (**2014-16**, reported second-hand). Note the two dates the paper carries: **2013 is when it was presented, 2011-12 is when the data was collected.** [Zone Entries](zone_entries.md) carries the full table. They are more than a decade old, the exact values differ between studies, and they describe NHL play, not your league. Use the direction of the finding, not the decimals.
+- **The shot-differential finding is the paper's own, and it is quoted from the paper's own discussion**, not from any of the secondary write-ups listed below: *"Surprisingly, the talent component of shot differential seems to come almost entirely from the neutral zone play, as metrics like entry differential and fraction of entries with possession clearly show reproducible differences from player to player…"* The same discussion carries the conclusion it rests on — that the shots-per-possession component *"is heavily driven by luck at the single-season level"* — and the numbered conclusion *"the neutral zone play that sets a team up to enter the offensive zone with possession is a critical driver of success."* Located in the PDF text on 31 July 2026. It is an inference the authors drew from their own tracking, and it is about NHL players in one season.
+- **The direction of that paper's own strategic conclusion is easy to get backwards, so it is worth stating.** It observed **NHL players only** and makes no claim of any kind about amateur, junior or recreational behaviour. Its conclusion runs *toward* carrying: *"it is worth questioning whether teams are pressing hard enough to carry the puck in"*, and *"in general NHL teams probably could benefit from being more aggressive at the blue line."* Where this document recommends putting the puck deep against a trap, that is a coaching argument about one specific picture — five opponents committed to the neutral zone — and not a finding of the paper. The one-third threshold is also narrower than it sounds: the authors calculated it from **average** outcomes and said plainly that it is *"still not sufficient data to say conclusively that teams should be trying harder to carry the puck in at every opportunity"*, and the turnover and net-value figures underneath it were tracked in the Washington games within the sample rather than in all 330. [Zone Entries](zone_entries.md) carries both scopes in full.
 - Neutral zone faceoff **dot dimensions** come straight from **NHL Rule 1.9**: *"Two red spots two feet (2') in diameter shall be marked on the ice in the neutral zone five feet (5') from each blue line… The spots shall be forty-four feet (44') apart and each shall be a uniform distance from the adjacent boards."* The 85-foot sheet width gives the roughly twenty-and-a-half feet from the boards quoted in the text; the rulebook itself states only the uniform-distance requirement.
 - The specific faceoff alignments described are **generalisations from coaching resources**. There is no standard neutral zone faceoff alignment; ask your coach for yours.
 

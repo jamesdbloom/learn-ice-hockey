@@ -7,9 +7,15 @@
 
 ## Overview
 
-Puck handling is everything you do with the puck on your stick: **stickhandling** (moving the puck around on your blade — sometimes called dribbling), **carrying** (skating with it), and **puck protection** (keeping it when someone is trying to take it). It is the skill that buys you the extra half-second in which every other decision becomes possible.
+Puck handling — moving the puck on your stick, skating with it, and keeping it from an opponent — buys the half-second in which every other decision becomes possible.
 
-Most players train the flashy end of this — dekes and dangles — and neglect the two parts that actually decide games: playing with your **head up**, and being physically hard to separate from the puck. This document gives those two the weight they deserve.
+**Playing with your head up is the highest-value habit in the game, and a safety habit as much as a tactical one.** A player who stares at the puck is locked out of every tactical idea in hockey, however well they understand it, because understanding arrives through the eyes — and they get hit hard, because they cannot see the checker coming. Ordering your eyes up does not work: you will look up, lose the puck and look back down. Build the feel first: learn how the toe, the middle and the heel of your blade feel through the shaft, and handle the puck around your whole body, because feel comes from variety.
+
+**Puck protection wins more possessions than every deke you will ever learn.** Puck on the side of your body away from the pressure, feet wider than your shoulders, knees bent, backside and hip into the checker rather than your chest. **That is for a battle already under way, and it is overridden absolutely when a checker is arriving at speed near the wall: never turn your back to the boards, and never duck** — skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest. Both halves carry their own hazard. Turning your back makes the contact a hit from behind, and USA Hockey's warning on those is that *"even a light hit from behind could inflict a severe head or neck injury."* Ducking is the posture behind almost every catastrophic neck injury in the sport — a chin tucked to the chest straightens the cervical spine, and USA Hockey records that the resulting **injury** can occur at walking speed — the collision does not have to be fast to break your neck.
+
+**Protection buys a second, not a minute, so know your out before you get there.** Decide who you are passing to, or where you are sending the puck, while you are still skating to it. Shielding beautifully for three seconds while a second checker arrives is a slow-motion turnover.
+
+**Most one-on-ones are won by a change of speed and body position, not by hands** — and the most expensive habit in amateur hockey is trying a move when a pass was on. Look for the pass first, and only then the move.
 
 ---
 
@@ -251,22 +257,23 @@ Action: Turn away from pressure, rotating the puck behind your body rather than 
 Position: Use your skates as a wall — a puck in your feet is in one of the harder places on the ice to reach
 Technique: Trap the puck against the inside of your skate and pull it back out to your blade
 Action: Use your hips and backside as the barrier, not your stick — the stick should be busy handling
-Never: Believe the space between your feet is legally protected — no rulebook reserves it
+Never: Believe the space between your feet is legally protected — the NHL, IIHF, USA Hockey and Hockey Canada books do not reserve it
 Rule: A stick in your skates is tripping if it brings you down (NHL Rule 57.1), and hooking with no fall at all if it restrains you (Rules 55.1, 56.1)
 Rule: Under USA Hockey Rule 639 a loss of balance is enough, and its Standard of Play names the can-opener between the legs
 Rule: Kicking the puck is legal in all zones, but you cannot score with a distinct kicking motion (NHL Rule 49.2)
+Rule: Kick the puck, never a player — NHL 49.3 makes kicking or attempting to kick an opponent a match penalty *whether or not an injury occurs*, and USA Hockey 627(a) makes even a skate push-off a major plus a game misconduct
 Rule: A kicked puck that deflects in off a body is no goal; off your own stick it is a good goal (NHL Rule 49.2(ii), (iii))
 Rule: You may catch the puck out of the air but must immediately knock it down; closing your hand on it is a minor (NHL Rule 67.2)
 ```
 
-- **Use your skates as a wall.** Pucks that come loose into your feet are not lost — they are in one of the harder places on the ice for an opponent to reach. **This is a practical protection, not a legal one.** There is no rule anywhere that reserves the space between your feet — no rulebook mentions it. A checker may put their stick in there. What turns that into a penalty is the *effect*, and the threshold is lower than "he knocked me over":
+- **Use your skates as a wall.** Pucks that come loose into your feet are not lost — they are in one of the harder places on the ice for an opponent to reach. **This is a practical protection, not a legal one.** None of the four rulebooks this guide checks — NHL, IIHF, USA Hockey, Hockey Canada — reserves the space between your feet, and the phrase "between the skates" appears in none of them. A checker may put their stick in there. What turns that into a penalty is the *effect*, and the threshold is lower than "he knocked me over":
 
   - **Tripping**, if it brings you down — *NHL Official Rules 2025-2026, Rule 57.1: "A player shall not place the stick, knee, foot, arm, hand or elbow in such a manner that causes his opponent to trip or fall."*
   - **Hooking**, with no fall at all, if the stick is used to restrain you. Rule 55.1 defines hooking as *"using the stick in a manner that enables a player to restrain an opponent"*, and Rule 56.1 adds that a player without body position *"who uses his stick (either the blade or the shaft, including the butt-end of the shaft) to impede or prevent his opponent from moving freely on the ice shall be assessed a hooking penalty."* Stick in your skates, dragging you up, is that.
   - **⚠️ Under USA Hockey the bar is lower again, and this is the book most North American rec and youth players are under.** Rule 639 defines tripping as causing an opponent to *"lose balance or fall"* — losing balance is enough, no fall required — and USA Hockey's Standard of Play names this exact move: *"Placing the stick between the legs of the opponent (can opener/corkscrew) that causes a loss of balance **or impedes the progress** of the opponent."* Impeding progress alone is a minor. (USA Hockey 2025-29 Playing Rules, verified 27 July 2026.)
 
   What makes your feet safe is geometry and your own body — the checker has to reach past your skates, past your legs, and around whichever way you are turned, and doing that at speed usually costs them their balance or a penalty. Learn to trap a puck against the inside of your skate and pull it back out to your blade.
-- **Kick it to yourself.** Kicking the puck is legal in all zones under NHL rules (**Rule 49.2**); the restrictions are on scoring. You cannot score with a distinct kicking motion, and the same rule states that *"a goal cannot be scored by an attacking player who kicks a puck that deflects into the net off any player, goalkeeper or official."* **But read the clarifiers 49.2 attaches to that**, because they matter for exactly the skill described here — the test is **body versus stick**: *"(ii) A kicked puck that deflects off the **stick** of any player (excluding the goalkeeper's stick) shall be ruled a **good goal**,"* and *"(iii) A goal will be allowed when an attacking player kicks the puck and the puck deflects off his own stick and then into the net."* (A kicked puck that deflects off a **body**, including the goalie's, is no goal.) So kicking a puck from your feet up onto your blade, or forward into space, is a completely legal and very useful skill — and if it goes off your own blade and in, it counts. Practise it: pull the puck into your feet, kick it forward, catch it on the blade.
+- **Kick it to yourself.** Kicking the puck is legal in all zones under NHL rules (**Rule 49.2**). You cannot score with a distinct kicking motion, and the same rule states that *"a goal cannot be scored by an attacking player who kicks a puck that deflects into the net off any player, goalkeeper or official."* **But read the clarifiers 49.2 attaches to that**, because they matter for exactly the skill described here — the test is **body versus stick**: *"(ii) A kicked puck that deflects off the **stick** of any player (excluding the goalkeeper's stick) shall be ruled a **good goal**,"* and *"(iii) A goal will be allowed when an attacking player kicks the puck and the puck deflects off his own stick and then into the net."* (A kicked puck that deflects off a **body**, including the goalie's, is no goal.) So kicking a puck from your feet up onto your blade, or forward into space, is a completely legal and very useful skill — and if it goes off your own blade and in, it counts. Practise it: pull the puck into your feet, kick it forward, catch it on the blade.
 - **Use your hips and backside as the barrier**, not your stick. Your stick should be busy handling; your body should be doing the blocking.
 - **Do not use your hand.** The instinct when a puck pops up into your feet is to grab it, and that is a penalty. **Rule 67.2** permits you to *"catch the puck out of the air but [you] must immediately place it or knock it down to the ice."* You get a minor for "closing his hand on the puck" if you catch it and skate with it to avoid a check or gain territory, if you cover it on the ice to keep it from an opponent, or if you pick it up off the ice while play is in progress. Knock it straight down at your feet and play it with your skate or your blade. (Note this is a *penalty*, not merely a stoppage. Note also that knocking it down to a **teammate** is a hand pass, and the test is **where the puck is, not where the players are** — **Rule 79.2**: *"Play will not be stopped for any hand pass by players in their own defending zone. The location of the puck when contacted by either the player making the hand pass or the player receiving the hand pass shall determine the zone it is in."* See [Passing and Receiving](passing_and_receiving.md).)
 
@@ -347,7 +354,7 @@ Key: Your back and rear end are the strongest, widest surface you own, and canno
 Goal: Put shoulder, arm, hip and leg on the pressure side at once — three or four barriers instead of one
 Never: Turn to face pressure the instant you receive the puck — that is how players get pinned to the boards
 Action: Take the puck facing the wall or facing away, absorb the contact, then spin off
-Priority: Never turn your back to a checker arriving at speed near the boards — skates parallel to the wall, forearm and hip, head up
+Priority: Never turn your back to a checker arriving at speed near the boards, and never duck — skates parallel to the wall, forearm and hip, head up and chin off your chest
 ```
 
 Turn so your **backside and the outside of your hip** are into the pressure, not your chest. Reasons:
@@ -358,7 +365,7 @@ Turn so your **backside and the outside of your hip** are into the pressure, not
 
 Turning to face pressure the instant you receive the puck is how players get pinned to the boards. Take the puck facing the wall or facing away, absorb the contact, *then* spin off.
 
-> **Where this stops being puck protection and becomes a safety problem.** Everything above is about a checker who is already on you in a low-speed battle. It is **not** advice for a puck race to the wall with a checker arriving at speed. In that situation the rule from [Body Contact and Battles → Receiving a Hit Safely](body_contact_and_battles.md) overrides everything here: **never turn your back to the boards, and never duck.** Get your **skates parallel to the wall** and take the contact on your **forearm and hip**, head up and chin off your chest. Turning your back to an oncoming checker near the boards is the single behaviour most associated with catastrophic spinal injury in hockey — and it can happen at walking speed. Puck protection is never worth that trade.
+> **Where this stops being puck protection and becomes a safety problem.** Everything above is about a checker who is already on you in a low-speed battle. It is **not** advice for a puck race to the wall with a checker arriving at speed. In that situation the rule from [Body Contact and Battles → Receiving a Hit Safely](body_contact_and_battles.md) overrides everything here: **never turn your back to the boards, and never duck.** Get your **skates parallel to the wall** and take the contact on your **forearm and hip**, head up and chin off your chest. **The two prohibitions are there for two different injuries.** Turning your back converts the collision into a hit from behind, which you cannot see, brace for or ride out — and USA Hockey's instruction to the player delivering one is that *"even a light hit from behind could inflict a severe head or neck injury."* Ducking is the mechanism behind almost every catastrophic neck injury in hockey: a chin tucked to the chest straightens the cervical spine, and of a head-first collision with the boards or a goal post in that position USA Hockey says a player *"doesn't have to be going at full speed for this to happen — it can occur at walking speed."* Read that precisely: what occurs at walking speed is the **injury**, not merely the contact. The finding is not USA Hockey's own — it credits *"research done among a wide range of hockey players"* and prints the source beneath it, **Charles H. Tator and colleagues, *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41.** Puck protection is never worth either trade.
 
 ### The free hand and the arm bar — what is actually legal
 
@@ -405,7 +412,7 @@ Key: Both moves are edge-work moves before they are hand moves
 
 Protection is a way to buy time, not a place to live. Once you have absorbed the contact, get out.
 
-- **The spin-off / pivot.** With your back into the checker and your weight low, rotate away from them and take the puck with you. The push comes off the **outside edge of the outside skate** — "outside" here is defined relative to the *turn*, not to the checker or the boards: as in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
+- **The spin-off / pivot.** With your back into the checker and your weight low, rotate away from them and take the puck with you. The push comes off the **outside edge of the outside skate** — for **skates and edges**, "outside" is defined relative to the *turn* rather than to the checker or the boards ("outside **shoulder**", later in this document, is the different, boards-relative sense): as in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
 - **The tight turn.** Cut across the checker's path rather than away from it, so that your body stays between them and the puck through the whole turn.
 - **Time it against their commitment.** Spin the moment you feel them lean in. If you spin before they commit, they simply follow you.
 
@@ -415,7 +422,7 @@ Both moves are edge-work moves before they are hand moves. See [Skating](skating
 
 ```facts
 Position: Hip and forearm against the wall, so the checker can only come from one direction
-Never: Take it on your back at the wall — skates parallel, forearm and hip, head up and chin off your chest
+Never: Take it on your back at the wall, or duck to avoid a check — skates parallel, forearm and hip, head up and chin off your chest
 Never: Get square to the boards with your feet planted — that is how you get pinned and lose it to the second forechecker
 Action: Angle yourself so you always have an escape along the wall, and keep the feet moving so you can take it
 Options: The wall is an outlet too — a rim onward around the boards or a reverse back against the flow both win the battle
@@ -423,7 +430,7 @@ Options: The wall is an outlet too — a rim onward around the boards or a rever
 
 The boards are a free extra defender, on your side.
 
-- Put your **hip and forearm** against the wall and the checker can only come from one direction. You have halved the problem. **Never your back** — the override earlier in this section governs here too: skates parallel to the wall, forearm and hip, head up and chin off your chest ([Body Contact and Battles](body_contact_and_battles.md), which owns this).
+- Put your **hip and forearm** against the wall and the checker can only come from one direction. You have halved the problem. **Never your back, and never duck** — the override earlier in this section governs here too: skates parallel to the wall, forearm and hip, head up and chin off your chest ([Body Contact and Battles](body_contact_and_battles.md), which owns this).
 - **Do not get square to the boards and stop.** Facing directly into the wall with your feet planted is how you get pinned and lose the puck to the second forechecker.
 - Angle yourself so you always have an escape along the wall, and keep the feet moving so you can take it.
 - Remember the wall is also an outlet, not just a shield: a **rim** (a hard puck sent onward around the curve of the boards) or a **reverse** (a puck sent back against the direction the pressure is flowing) both count as winning the battle. See [Breakouts](../systems/breakouts.md).
@@ -602,7 +609,7 @@ More moves is not better. Every extra move is another moment the puck spends exp
 ```facts
 Never: Skate straight at their chest — they stay square, keep both lanes closed and stand you up
 Goal: Make them turn — the moment their hips turn, one lane exists that did not before
-Options: The outside shoulder opens the lane back underneath them, but it is where a well-coached defenceman wants you
+Options: The outside shoulder — the one nearer the boards — opens the lane back underneath them, but it is where a well-coached defenceman wants you
 Options: The inside shoulder forces them to defend the dangerous ice, but you are attacking into help
 Read: Outside when you have a speed advantage; inside when you do not, or when they have already shaded you wide
 Convention: Which shoulder is not settled coaching doctrine — ask your coach which they want from your position
@@ -743,7 +750,7 @@ Most pucks you receive in a real game are imperfect, and handling them well cont
 The three points that are specifically puck-*control* rather than receiving, and that are worth repeating on this side:
 
 - **A bad puck needs a cupped blade and a soft draw-back — bouncing, on edge or flat, the cup is the same.** It is the *open* blade that a puck ski-jumps over. What changes is the touch count: **let a bouncing or rolling puck settle before you do anything with it** — one extra beat to flatten it is faster than chasing your own deflection, and trying to pass or shoot a puck that is still on edge is the commonest error there is.
-- **A puck in your skates is an asset, not a loss.** Trap it against the inside of a skate blade and pull it out to your stick, or kick it forward — legal in all zones, with the limits only on scoring, as set out under [Stickhandling in Tight](#stickhandling-in-tight) above. Practise it off-ice: puck behind you, pull it into your feet, kick it forward, collect it in front. It is the single most useful recovery skill there is.
+- **A puck in your skates is an asset, not a loss.** Trap it against the inside of a skate blade and pull it out to your stick, or kick it forward — legal in all zones, with the limits on scoring, as set out under [Stickhandling in Tight](#stickhandling-in-tight) above. Practise it off-ice: puck behind you, pull it into your feet, kick it forward, collect it in front. It is the single most useful recovery skill there is.
 - **A backhand puck under pressure is often the *right* puck.** If the checker is on your forehand side, the backhand is the far side, and the far side is where the puck belongs. Cup the backhand as hard as you cup the forehand — an open backhand blade lets the puck roll straight up and over — and remember that backhand control is mostly the same top-hand wrist roll you already trained.
 
 ### What each position actually needs
@@ -852,7 +859,7 @@ Off-ice hands are not on-ice hands until you have used them under pressure. In e
 - **Side-to-side only.** A rhythm a defender can read, and no front-to-back range means no toe drag, no pull-in and no protection behind the body.
 - **Only handling in front of you.** You need the full arc around your body — the far side is where protection happens.
 - **Standing tall in a battle.** Narrow feet and a high centre of gravity is why players get knocked off pucks. Get wide, get low.
-- **Turning to face pressure on the wall.** In a low-speed battle, get your hips and backside between the checker and the puck, absorb it, then spin off — facing up into the checker gets you pinned. **But never turn your back to a checker arriving at speed near the boards:** skates parallel to the wall, forearm and hip, head up. That one is a safety rule, not a possession one — see [Body Contact and Battles](body_contact_and_battles.md).
+- **Turning to face pressure on the wall.** In a low-speed battle, get your hips and backside between the checker and the puck, absorb it, then spin off — facing up into the checker gets you pinned. **But never turn your back to a checker arriving at speed near the boards, and never duck:** skates parallel to the wall, forearm and hip, head up and chin off your chest. That one is a safety rule, not a possession one — see [Body Contact and Battles](body_contact_and_battles.md).
 - **Protecting with no plan.** Shielding beautifully for three seconds while a second checker arrives is a slow-motion turnover. Know your out before you get there.
 - **Grabbing with the free hand.** Fending off a stick is legal; holding, pulling or tugging is a minor. Keep the hand on your own shaft.
 - **Slowing down the instant you get the puck.** Carry it ahead and to the side and keep striding; the whole point of good hands is that they cost no speed.
@@ -863,8 +870,56 @@ Off-ice hands are not on-ice hands until you have used them under pressure. In e
 - **Dangling in your own end or through the middle.** Highest cost, lowest reward area on the ice.
 - **Neglecting the backhand.** Half the game, trained at a tenth of the rate — and under pressure it is usually the *correct* side, because it is the far side.
 - **Practising in long, rare sessions.** Fifteen minutes a day beats two hours a week — coaching consensus rather than a measured finding, but consistent everywhere.
-- **Believing the space between your feet is legally protected.** It is not — no rulebook reserves it. But do not swing the other way and assume a stick in there is legal until you fall: it is **tripping** if it brings you down (NHL Rule 57.1), **hooking** with no fall at all if it restrains or impedes you (Rules 55.1 and 56.1), and **under USA Hockey Rule 639 a loss of balance is enough** — its Standard of Play names the can-opener specifically, penalising a stick between the legs that causes "a loss of balance **or impedes the progress**" of the opponent. The protection you actually rely on is geometric, and it is real, but do not stand there waiting for a whistle.
+- **Believing the space between your feet is legally protected.** It is not — none of the NHL, IIHF, USA Hockey or Hockey Canada books reserves it. But do not swing the other way and assume a stick in there is legal until you fall: it is **tripping** if it brings you down (NHL Rule 57.1), **hooking** with no fall at all if it restrains or impedes you (Rules 55.1 and 56.1), and **under USA Hockey Rule 639 a loss of balance is enough** — its Standard of Play names the can-opener specifically, penalising a stick between the legs that causes "a loss of balance **or impedes the progress**" of the opponent. The protection you actually rely on is geometric, and it is real, but do not stand there waiting for a whistle.
 - **Treating "attack the outside shoulder" as a law.** It is one approach, and it is the one a well-coached defenceman is trying to steer you into. Choose the shoulder deliberately.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You decide to start playing with your head up, so you order your eyes off the
+   puck. What happens, and what does this document say you have to build first?
+   *(§How to develop it — feel, don't look)*
+
+2. A loose puck is sitting in your skates and a defender puts their stick in
+   there. Is that space legally yours? Say what actually turns the stick into a
+   penalty — and what the bar is if you are playing under USA Hockey.
+   *(§Your feet and body are part of your handling)*
+
+3. You are racing a checker to a puck on the wall and they are arriving at speed.
+   Everything under puck protection tells you to get your backside into the
+   pressure. Why does none of it apply here, and what do you do instead?
+   *(§Back into the checker, and [Body Contact and Battles](body_contact_and_battles.md)
+   §6)*
+
+4. A checker's stick is across your hands and you want it gone. What may your
+   free hand do to it, what may it not, and what is the habit that gets you the
+   same physical benefit with none of the officiating risk?
+   *(§The free hand and the arm bar — what is actually legal)*
+
+5. You are skating to a 50-50 puck on the wall with a checker closing. Name the
+   three things you should already have answered before your stick touches it —
+   and say why "shield it until something happens" is not one of them.
+   *(§Know your out before you get there)*
+
+6. You beat a defender by pushing the puck one side of them and skating the
+   other. Why is that cheap in the offensive zone and expensive in your own?
+   *(§The moves — the slip)*
+
+7. You are carrying wide on a 1-on-1. Which shoulder do you attack? **This one
+   has no single right answer** — say what each choice buys you, what would
+   decide it, and who you would have to ask to settle it.
+   *(§Attack a shoulder, not the chest — and know which shoulder you are
+   choosing)*
+
+8. A defender is in front of you and a teammate is open. What does this document
+   tell you to look for first, and give the three reasons it gives for that
+   order. *(§When a simple pass is available)*
 
 ---
 
@@ -872,9 +927,9 @@ Off-ice hands are not on-ice hands until you have used them under pressure. In e
 
 1. **Top hand does the work, bottom hand guides — loosely — and both stay away from your body.** The bottom hand is not idle, but it must not grip; a tight bottom hand is the number one cause of pucks bouncing off the blade. Hands pinned to the hip make puck protection structurally impossible, because there is no far side to move the puck to.
 2. **Hold it like a bird and cup the blade.** A loose grip and a blade angled over the puck fix the large majority of "the puck keeps bouncing off my stick" problems.
-3. **Head up is the highest-value habit in the game.** Develop it by feeling the puck — learn the toe, middle and heel by touch — not by forcing yourself to look up.
+3. **Head up is the highest-value habit in the game, and it is a safety habit as well as a tactical one** — a player staring at the puck gets hit hard, because they cannot see the checker coming. Develop it by feeling the puck — learn the toe, middle and heel by touch — not by forcing yourself to look up.
 4. **Handle around your whole body, front-to-back as well as side-to-side.** Side-to-side alone is a rhythm, and rhythms get read.
-5. **Puck on the far side, base wide and low, backside into the checker.** That is puck protection in one line, and it wins more possessions than every deke you will ever learn. **The one exception overrides it absolutely:** never turn your back to a checker arriving at speed near the boards — skates parallel to the wall, forearm and hip, head up ([Body Contact and Battles](body_contact_and_battles.md)).
+5. **Puck on the far side, base wide and low, backside into the checker.** That is puck protection in one line, and it wins more possessions than every deke you will ever learn. **One situation overrides all of it.** With a checker arriving at speed near the boards, never turn your back to the wall and never duck: skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest ([Body Contact and Battles](body_contact_and_battles.md), which owns this).
 6. **Know your out before you get there.** Protection buys a second, not a minute. Decide who you are passing to — or where you are rimming it — before your stick touches the puck.
 7. **The free hand may fend off, but not hold.** Fending off an opponent's stick is legal (NHL Rule 56.1); grabbing, pulling or tugging is a holding minor. Keep the hand on your own shaft.
 8. **Do not slow down when you get the puck.** Push it slightly ahead and to the side, take real strides, and let the puck and your body take separate routes when a stick is in the way.
@@ -891,8 +946,10 @@ Off-ice hands are not on-ice hands until you have used them under pressure. In e
 
 *Puck protection: [Better Hockey — How to Protect the Puck](https://www.betterhockey.com/blogs/stickhandling/how-to-protect-the-puck) · [How To Hockey — Deke of the Week 2: Protecting the Puck](https://howtohockey.com/deke-of-the-week-protecting-the-puck/) · [CoachChic — Techniques for Shielding the Puck](https://coachchic.com/techniques-for-shielding-the-puck/)*
 
+*Boards safety (the override in Puck Protection on the Wall — [Body Contact and Battles](body_contact_and_battles.md) owns the full three-case rule): [USA Hockey — Heads Up Hockey Program Guide (PDF)](https://cdn4.sportngin.com/attachments/document/0138/6193/HUH_Program_Guide_FINAL.pdf) — "How spinal injuries happen in hockey", for the cervical-flexion mechanism and *"A player doesn't have to be going at full speed for this to happen — it can occur at walking speed"*, which the guide attaches specifically to *"the head being slightly flexed (head down) while making head-on contact with the boards or goal post"*. **"This" in that sentence is the spinal injury, not the collision**, which is why §"Puck Protection on the Wall" renders it as the injury occurring at walking speed rather than the contact. **And the finding is a restatement, not USA Hockey's own research:** the page credits *"research done among a wide range of hockey players"* and prints the citation beneath it — **Charles H. Tator et al., *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41** — which has not been read in the original here, only the USA Hockey page that reproduces it. Also Session 5, "Giving A Check" — under its "Checking from behind" subheading, which is not the session's title — for *"Even a light hit from behind could inflict a severe head or neck injury"* · [USA Hockey — Introduction To Body Contact (PDF)](https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf) — §5 "Checking From Behind", carrying the same light-hit sentence. Both PDFs refetched and the quoted strings located in the extracted text on 31 July 2026. **Note the division of labour between the two quotes:** the walking-speed finding is about a head-down, head-first collision, and USA Hockey does not say it about turning your back; the hazard of the back turned is that it makes the contact a hit from behind, which is the sentence quoted for it.*
+
 *Beating a defender 1-on-1 (both sides of the matchup): [Hockey Player Tips — How to Play Defence One-on-One](https://hockeyplayertips.blogspot.com/2008/04/how-to-play-defence-one-onone.html) · [Ice Hockey Systems — One On One Breakdown (Forward)](https://www.icehockeysystems.com/hockey-drills/one-on-one-breakdown-forward)*
 
 *Dekes and deception: [How To Hockey — How to Deke in Hockey](https://howtohockey.com/how-to-deke-in-hockey/) · [How To Hockey — Deke of the Week 3: Fakes](https://howtohockey.com/deke-of-the-week-3-fakes/) · [How To Hockey — Deke of the Week 8: Toe Drag](https://howtohockey.com/deke-of-the-week-8-toe-drag/) · [Given & Go Hockey — What Is Deception in Hockey](https://givengohockey.com/blogs/blog-post/what-is-deception-in-hockey-how-to-add-fakes-and-deception-to-your-game) · [RinkHive — Deceptive Skating: Head Fakes, Body Language, Separation](https://training.rinkhive.com/2026/02/23/deceptive-skating-head-fakes-body-language-separation/) · [All Black Hockey Sticks — Beating Defensemen 1-on-1 with Deception](https://allblackhockeysticks.com/beating-defensemen-1-on-1-with-deception/)*
 
-*Flagged as unsettled or unverified in the text: which shoulder to attack on a 1-on-1 (the published material is stronger on the defensive side of the matchup than the attacking side); the "fifteen minutes a day" prescription (coaching consensus, not a measured comparison); and the claim that leverage beats strength in a board battle (true often enough to coach, but not a law). Note also a myth this document deliberately does not repeat: you will hear that a checker's stick "cannot legally get in" between your skates. **No rule in the NHL, IIHF, USA Hockey or Hockey Canada books reserves that space, and the phrase "between the skates" does not appear in the NHL book at all.** What the books *do* contain is penalties for what a stick in there is used to achieve: NHL Rule 57.1 (tripping), Rule 55.1 / 56.1 (hooking — restraint, no fall required), and USA Hockey Rule 639 plus its Standard of Play, which names the "can opener/corkscrew" between the legs explicitly and penalises it for a loss of balance **or** merely impeding progress. So the myth is a myth, but the corrected version is not "anything goes" — it is set out in [Stickhandling in Tight](#stickhandling-in-tight).*
+*Flagged as unsettled or unverified in the text: which shoulder to attack on a 1-on-1 (the published material is stronger on the defensive side of the matchup than the attacking side); the "fifteen minutes a day" prescription (coaching consensus, not a measured comparison); and the claim that leverage beats strength in a board battle (true often enough to coach, but not a law). Note also a myth this document deliberately does not repeat: you will hear that a checker's stick "cannot legally get in" between your skates. **No rule in the NHL, IIHF, USA Hockey or Hockey Canada books reserves that space: the phrase "between the skates" was searched for in all four and appears in none of them, and the nearest any of them comes to naming a stick between an opponent's legs is USA Hockey's Standard of Play, which *penalises* it.** What the books *do* contain is penalties for what a stick in there is used to achieve: NHL Rule 57.1 (tripping), Rule 55.1 / 56.1 (hooking — restraint, no fall required), and USA Hockey Rule 639 plus its Standard of Play, which names the "can opener/corkscrew" between the legs explicitly and penalises it for a loss of balance **or** merely impeding progress. So the myth is a myth, but the corrected version is not "anything goes" — it is set out in [Stickhandling in Tight](#stickhandling-in-tight).*

@@ -7,9 +7,15 @@
 
 ## Overview
 
-Shooting is two separate skills that get taught as one. The first is **mechanics** — how you move the puck from your stick to the net. The second is **shot selection** — deciding which shots are worth taking and where to put them. Most players spend all their practice time on the first and none on the second, then wonder why they take eight shots a game and score twice a season.
+Shooting is two skills taught as one: the mechanics of getting the puck from your stick to the net, and the shot selection that decides which are worth taking at all.
 
-This document covers both. The short version: a shot the goalie sees clearly, from distance, into a set body, is nearly worthless — NHL goaltenders stop the overwhelming majority of those. A shot from the middle of the ice, taken before the goalie is set, or one they have to move sideways to reach, is worth many times more. Everything below is in service of getting the second kind.
+**Where you shoot from is most of a shot's value.** One widely cited breakdown puts shots from the slot — the ice directly in front of the net, between the two faceoff circles — at roughly 10–15%, and shots from the perimeter — the outside of the zone, near the boards and the blue line — at 2–4%. That source names no dataset, so trust the gap rather than the decimals; the figures vary by model, the shape does not. So if a teammate is in the slot and you are not, pass; and if two strides toward the middle would turn your shot into a slot shot, take them.
+
+**Release speed beats shot speed.** A goaltender does not really react to the puck; they read your body, hands and blade and get set before it arrives. A shot that arrives after they are set and square is a routine save at nearly any velocity. So stop gathering the puck before you shoot, do not stop your feet, and shoot from where you already are.
+
+**Make the goalie move sideways, or take away their sight.** A shot taken immediately after a pass across the middle, or through a screen, is worth materially more than the same shot at a goalie who is set and square — act on that direction, but note that no study prices the gap, so any multiplier you hear put on it is folklore. Screening from outside the crease without contact is legal — but outside the paint is not a safe harbour: NHL Rule 69.1 disallows the goal where an attacker *"either by his positioning or by contact, impairs the goalkeeper's ability to move freely within his crease or defend his goal."* Take away their eyes, not their room.
+
+**A shot that hits a shin pad is worse than no shot at all.** You have given up the puck, not tested the goalie, and usually started a counter-attack. Look for the lane before you decide to shoot; if there is not one, take a step or two sideways until there is.
 
 ---
 
@@ -375,7 +381,7 @@ Action: Attack from behind the net and out the other side so the goalie must rot
 Position: Screen in the sightline, feet just outside the blue paint, stick on the ice for a tip
 Rule: Positioning alone can void the goal if it impairs the goalie moving or defending, wherever your skates are (NHL Rule 69.1)
 Action: Shoot off a rebound immediately — do not settle it and pick a corner
-Key: A shot the goalie must move for, or cannot see, is worth several times the same shot they are set for
+Key: A shot the goalie must move for, or cannot see, is worth materially more than the same shot they are set for — direction only, no study prices the gap
 ```
 
 - **Pass across the middle before shooting.** A cross-slot pass, a D-to-D pass at the point followed by a shot, a low-to-high play from the corner to the far point — anything that drags the goalie across.
@@ -385,7 +391,9 @@ Key: A shot the goalie must move for, or cannot see, is worth several times the 
 - **Shoot off a rebound immediately.** The goalie has just committed to one location and is recovering. Do not settle it and pick a corner; hit it.
 - **Vary the shot's origin** — the release-point section above is the individual-player version of the same idea.
 
-The general rule: **a shot the goalie has to move for, or cannot see, is worth several times a shot they are set and square for — from the same spot on the ice.** Two shots from the identical location can differ enormously in value. That is entirely under your team's control.
+The general rule, and act on its direction rather than on any size: **a shot the goalie has to move for, or cannot see, is worth materially more than a shot they are set and square for — from the same spot on the ice.** Two shots from the identical location can differ in value, and that difference is entirely under your team's control.
+
+**How much more is not measured, and nothing in this document prices it.** The slot-versus-perimeter figures above are a *location* comparison — a different claim, made from different data. The two numbers that look as though they would price movement and sight — Valiquette's 76% green share and the "97-plus percent save" on a clean set look — are both flagged in this document as attributed-but-uncheckable, and neither is a before-and-after measurement of the same shot with and without a screen. [Offensive Zone Play](../systems/offensive_zone_play.md) makes the point about the same temptation: the studies measure different things, and treating them as a before-and-after pair overstates what was measured. So make the goalie move and take away their sight, because every coach and every goalie agrees it works — but if you hear a multiplier put on it, that multiplier is not from a study.
 
 ---
 
@@ -680,7 +688,7 @@ Fifteen to twenty minutes a day of focused work beats two hours on a Sunday. See
 - **Hitting the puck directly on a slap shot.** You are supposed to hit the ice two to five centimetres behind it. Miss that and your slap shot is slower than your wrist shot.
 - **Stopping your feet before shooting.** The clearest tell in hockey. Every goalie and every defender reads it.
 - **Gathering the puck before every shot.** The settle-look-plant-shoot sequence gives away half a second, which is the entire margin you were working with.
-- **Aiming for corners by default.** Small targets, guarded by the fastest-moving parts of the goalie, and a miss produces nothing. Five-hole, low blocker and rebound-creation are worth more.
+- **Aiming for corners by default.** Small targets, guarded by the fastest-moving parts of the goalie, and a miss produces nothing. Low blocker and rebound-creation are worth more — and so is the five-hole, **but only while the goalie is moving, reaching or mid-drop.** Fired into a set butterfly it is largely closed, which is the entire point of the butterfly.
 - **Shooting into shin pads.** The most common wasted play in the game. Look for the lane first; change the angle if there isn't one.
 - **Full wind-ups from the point with traffic in the lane.** You have announced the shot and it is getting blocked. Low snap shot, through, every time.
 - **Shooting from above the circles because you have the puck.** The two elite shooters this document names — Kane and Laine — scored under 2% of their goals from there. **That is two named players in one analyst's article, drawn from Sportlogiq tracking that is not public**, not a league-wide rate. The direction is the point: you will score fewer.
@@ -692,17 +700,61 @@ Fifteen to twenty minutes a day of focused work beats two hours on a Sunday. See
 
 ---
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. Your bottom hand is at the midpoint of the shaft. Which shot are you about to
+   take — and given that the two grips overlap there, what is it that actually
+   decides? *(§The Snap Shot)*
+
+2. You finished low and the puck went high. Which of the two — where your blade
+   face was pointing at separation, or where your hands finished — is the physical
+   cause of the height, and what is the other one there for? *(§The Wrist Shot)*
+
+3. Coaching schools disagree about which leg you transfer your weight onto for a
+   snap shot. This one does not have a single right answer: what are the two
+   positions, what decides which you use in the moment, and what is the one thing
+   both schools agree on? *(§The Snap Shot, the weight-transfer blockquote)*
+
+4. Is the five-hole a big target or a nearly sealed one? Say what the answer
+   depends on, and name the moment you take it. *(§Accuracy and Shot Selection)*
+
+5. You are at the point with the puck and traffic in front of you. What do you
+   check before you decide to shoot, and name two things you can do when the
+   answer is no. *(§Shooting Through Traffic)*
+
+6. You are a right-handed shot playing left wing, and you are told to release off
+   your outside foot. Why does that leave you practising the habit you already
+   have, and what is the version of the instruction that transfers to either wing?
+   *(§Shooting Off the Rush)*
+
+7. Your skates are outside the blue paint and you never touch the goalie. Can the
+   goal still be disallowed? Give the test the rule actually applies.
+   *(§Tips and Deflections, and §How to create those shots)*
+
+8. You are outside the dots, the goalie is set and square, and there is nobody at
+   the net front. What is the one question to ask before you shoot, and what does
+   it tell you here? *(§When NOT to Shoot)*
+
+---
+
 ## Key Takeaways
 
 1. **Release speed beats shot speed.** A goalie stops what they are set for. Getting the puck away before they are ready is worth more than any amount of velocity.
 2. **The snap shot is your best shot in most situations** — nearly slap-shot power with nearly wrist-shot release. If you are inside the dots, it is probably the right choice.
-3. **Blade face angle at release sets the height; follow-through is how you control it.** Finish low for a low shot, finish high for a high one — that is the cue that puts the face where you need it. You do not aim with your eyes.
-4. **The slap shot is overused.** It is slow to load, easy to read, easy to block, and a missed one from the point hands over possession. Use a three-quarter version or a low snap shot instead.
-5. **Location is most of shot value.** One widely cited breakdown puts slot shots at roughly 10–15% and perimeter shots at 2–4%. The exact figures vary by data set; the gap does not. Getting to the middle is worth more than any technical improvement you can make.
-6. **Make the goalie move sideways, or take away their sight.** A shot after a pass across the middle, or through a screen, is worth several times the same shot from the same spot with a clear, set goalie. Screening is legal from **outside** the blue paint and without contact — but under Rule 69.1 your positioning alone can void the goal if it stops the goalie moving or defending, wherever your skates are. Take away their eyes, not their room.
-7. **Changing direction beats adding speed.** A tipped puck redirected six inches in front of the goalie beats a rocket they read from the blue line.
+3. **Blade face angle at release sets the height; follow-through is the cue that produces it.** Finish low for a low shot, finish high for a high one — you do not aim with your eyes. (A mechanical account, not a measured finding: no published study relates blade-face angle to launch angle.)
+4. **The slap shot is overused.** It is slow to load, easy to read, easy to block, and a missed one from the point hands over possession. Use a three-quarter version or a low snap shot instead — and check your own league's rules, because many rec and youth leagues ban slap shots locally even though the only governing-body ban is USA Hockey's, in Blind Hockey.
+5. **Location is most of shot value.** One widely cited breakdown puts slot shots at roughly 10–15% and perimeter shots at 2–4% — but **that source names no dataset**, so trust the gap rather than the decimals. Getting to the middle is worth more than any technical improvement you can make.
+6. **Make the goalie move sideways, or take away their sight.** A shot after a pass across the middle, or through a screen, is worth materially more than the same shot at a set, square goalie. **Act on the direction, not on a number** — no study prices that gap, and the figures that circulate for it are attributed to proprietary tracking nobody can check, so a multiplier put on it is folklore. **Outside the blue paint is not a safe harbour:** NHL Rule 69.1 disallows the goal where an attacker *"either by his positioning or by contact, impairs the goalkeeper's ability to move freely within his crease or defend his goal."* Take away their eyes, not their room.
+7. **On a penalty shot or a shootout attempt, the rules can take the goal off you.** Under NHL Rule 24 the puck *"must be kept in motion towards the opponent's goal line"* — no stopping, circling back or curling away to reset — and *"no goal can be scored on a rebound of any kind"*, the single exception being post or crossbar, then the goalkeeper, then directly in. A **spin-o-rama** — a completed 360° on the approach — *"shall not be permitted"*: the referee stops the shot and it is no goal. The lacrosse-style move **is** permitted while the puck stays below shoulder height and is not carried above the crossbar. **🇬🇧 And the shootout format is not the IIHF's five.** IIHF Rule 84.4(II) begins with *"five (5) different shooters"*, but that provision is scoped to IIHF Championship play; the In-House Rules set **three** for the EIH and SIHA competitions — *"Each team selects three (3) shooters"* for the NIHL, *"a best-of-three penalty shot shootout"* for the SNL — and the British competitions split on whether the same player may go again. [Game Management](../systems/game_management.md) owns that split.
 8. **Shoot to create, not just to finish.** With traffic at the net, a hard low shot at the pads has three good outcomes — goal, tip, rebound. A shot at a corner has one.
-9. **Shooting into shin pads is the most common wasted play in hockey.** Find the lane, or change the angle until there is one, or move the puck.
+9. **Shooting into shin pads is the most common wasted play in hockey.** Find the lane, change the angle until there is one, or move the puck.
 10. **Practise the backhand and practise the release.** Nobody does either, both are pure volume problems, and both directly beat goalies.
 
 ---

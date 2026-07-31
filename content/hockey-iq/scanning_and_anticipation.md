@@ -6,11 +6,19 @@
 
 ## Overview
 
-Every hockey conversation eventually arrives at the same word: *vision*. He sees the ice. She has hockey sense. They know where everybody is. It is said the way you would describe eye colour — as a thing you either got or didn't.
+Players who look like they see the whole ice have almost always simply already looked, at a moment when the puck was somewhere else and nobody was watching them.
 
-That is mostly wrong, and it is wrong in a useful way. Players who look like they see the whole ice have almost always simply **already looked**. They gathered the information a second or two before you noticed they needed it, at a moment when the puck was somewhere else and nobody was watching them. What you see as vision is the *output* of a habit you missed.
+**The looking happens before the puck arrives, not after.** The one to three seconds while a pass is travelling to you is the highest-value time in hockey, and most players spend it watching the puck approach. A look is a head turn over one shoulder and then the other, quick enough that you never lose a stride — a snapshot, not a stare — and the last one is always back at the puck.
 
-This document is about that habit: **scanning** (deliberately gathering information before you need it) and **anticipation** (using it to work out what happens next). Scanning is the more teachable of the two and it comes first, because anticipation with no information is just guessing in a confident voice.
+**This is measured, and the measurement is worth knowing.** Across 2,545 puck receptions by 88 professionals in Sweden's men's and women's top leagues, players looked around an average of 1.48 times in the five seconds before receiving, looked at least once in 61% of receptions, and their next action succeeded 78.8% of the time when they had looked against 70.1% when they had not.
+
+**Decide while the puck is still travelling.** Name your first option and your fallback before it reaches you, so its arrival triggers an action instead of starting a decision. That one habit is what makes players look fast.
+
+**Read the chest and hips, not the head, the hands or the stick.** The head and hands are the tools of deception; the centre of the body is the honest part.
+
+**Keep the puck as your anchor and spend your extra looks on people and space** — the pressure on you, your options, the danger you are responsible for. Though the evidence for the anchor is imported: it comes from eye-tracking five elite footballers watching a ball carrier, not from hockey.
+
+**Acting on information is anticipation; acting on hope is guessing.** The test is whether your position is still useful when you turn out to be wrong.
 
 ---
 
@@ -503,18 +511,59 @@ Risk: Reaction and peripheral-vision tools train the eyes, not the hockey
 - **Treating a scan count as the goal.** What is measured in hockey is the difference between scanning and not scanning — 78.8% against 70.1% action success. Whether *more* scanning beats *some* scanning has never been tested, and Berg's team say so themselves. Clear the bar first; then work on the quality of what you take in rather than the count.
 - **Guessing and calling it anticipation.** If your position is worthless when you are wrong, you guessed. Score the process, not the outcome — a gamble that happened to work is still a gamble.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. A coach tells you to scan every one to two seconds. What does the hockey study
+   that counted it find professionals doing — and what do its authors say plainly
+   that it cannot tell you? *(§What the research actually says, §When to scan)*
+
+2. Describe a scan physically. What makes one not count at all, and where do your
+   eyes finish? *(§The mechanics of a scan)*
+
+3. The puck is on its way to you on the half-wall. Name the two things you should
+   have settled in your head before it lands on your blade, and say why the
+   second one exists. *(§The pre-scan: deciding before the puck arrives)*
+
+4. You have taken your looks. In what order should you take the information in —
+   and which item on that list is the one you can afford to be wrong about?
+   *(§What to look for, in priority order)*
+
+5. You are defending a carrier one-on-one. Where do you put your eyes, what is
+   the evidence for putting them there, and what is the caveat the document
+   attaches to it? *(§Reading a puck carrier: watch the chest and hips)*
+
+6. You are being forechecked by a 2-1-2 with the puck behind your own net. Where
+   will the pressure arrive from, which outlet is likeliest to be intercepted,
+   and where is the escape? *(§Reading pressure)*
+
+7. You jump a passing lane and miss. What single test decides whether that was
+   anticipation or a guess — and name two situations where the document says it
+   is never worth it. *(§Anticipation versus guessing)*
+
+8. You are arriving second to a puck on the wall, off balance, on your backhand,
+   against a bigger player who is already established. What is the read, and what
+   do you do instead of trying to win it? *(§Reading the play's next state)*
+
 ## Key Takeaways
 
-1. **Vision is not a gift, it is a habit of looking early.** Players who seem to see everything have simply already looked, at moments when looking cost them nothing.
-2. **Scan before the puck comes to you.** That one-to-three-second window while the puck travels is the highest-value time in hockey, and most players spend it watching the puck approach.
-3. **A scan is a head turn, both shoulders, quick enough that you never lose a stride** — a snapshot rather than a stare — and the last look is always back at the puck.
-4. **Keep the puck as your anchor and spend your extra looks on people and space.** This is not "stop watching the puck" — though note the evidence for the anchor is imported: it comes from eye-tracking five elite **football** players watching a **ball** carrier, not from hockey. It is about what you add around the puck, in priority order: pressure on you, your outlet options, the danger you're responsible for, the space you could use.
-5. **Decide before the puck arrives.** Name your first option and your bail-out while the puck is travelling, so its arrival triggers an action instead of starting a decision. This one habit is what makes players look fast.
-6. **Read the chest and hips, not the head, hands or stick.** The head and hands are the tools of deception — the centre of the body is the honest part.
-7. **Read shape, not just bodies.** A forecheck's structure tells you where pressure will arrive before it arrives; a defenceman's gap and feet tell you what they have already committed to.
-8. **The most advanced read is where the puck will be next** — where a rim ends up, where a rebound kicks, and which battles you are going to lose so you can play for the loose puck instead.
+1. **Vision is not a gift, it is a habit of looking early.** Players who seem to see everything have already looked, at moments when looking cost them nothing.
+2. **Scan before the puck comes to you.** The one to three seconds while it travels is the highest-value window in hockey, and most players spend it watching the puck approach.
+3. **A scan is a head turn over both shoulders, without losing a stride** — a snapshot rather than a stare. The last look is always back at the puck.
+4. **Keep the puck as your anchor and spend your extra looks on people and space** — pressure on you, your outlet options, the danger you are responsible for, the space you could use. This is not "stop watching the puck", and the evidence for the anchor is imported: eye-tracking of five elite **football** players watching a **ball** carrier, not hockey.
+5. **Decide before the puck arrives.** Name your first option and your bail-out while it travels, so its arrival triggers an action instead of starting a decision.
+6. **Read the chest and hips, not the head, hands or stick** — the head and hands are the tools of deception. That is where to weight your attention, though, not a single cue you can read in isolation, and the evidence is rugby rather than hockey.
+7. **Read shape, not just bodies.** A forecheck's structure tells you where pressure will arrive; a defenceman's gap and feet tell you what they have already committed to.
+8. **The most advanced read is where the puck will be next** — where a rim ends up, where a rebound kicks, and which battles you will lose, so you can play the loose puck instead.
 9. **You cannot scan if you have to look at the puck.** Head-up puck control is the entry requirement for everything else here.
 10. **Anticipation is acting on information; guessing is acting on hope.** The test is whether your position is still useful when you are wrong.
+11. **What is measured in hockey is scanning versus not scanning — not how often.** Berg and colleagues (2025) hand-coded **2,545 puck receptions by 88 SHL and SDHL professionals**, who averaged **1.48 scans in the five seconds before receiving** and took at least one scan in only **61%** of those receptions. The action after reception succeeded **78.8%** of the time when the player had scanned, against **70.1%** when they had not — a difference of **8.7 percentage points (95% CI [5.3%, 12.1%])**. Going from no scan to one is measured; going from two to four is not, and the authors say so themselves: they *"cannot say whether a higher scanning frequency would be more beneficial compared to a lower one."*
 
 ---
 

@@ -11,11 +11,17 @@
 
 ## Overview
 
-**Special teams** means any situation where the two teams do not have the same number of skaters on the ice — most often a **power play** (you have the extra skater) and a **penalty kill** (you are the team a skater short). It also covers 4-on-4, 3-on-3 overtime, and the strange states in between. Special teams decide a large share of close games, because a two-minute minor penalty hands one team an advantage that even strength never offers.
+**Special teams** means any situation where the two teams do not have the same number of skaters on the ice. Most often that is a **power play**, where you have the extra skater, or a **penalty kill**, where you are a skater short — written "5-on-4", counting skaters only.
 
-This document is about **what to actually do** in those situations: the shapes, the plays inside the shapes, how to get into the zone and how to stop someone getting in, and the rules that quietly govern all of it.
+**The extra skater is worth nothing until it forces somebody to cover two players at once.** A power play where nobody moves is four against four with a spare man standing somewhere useless. Make those two-against-one moments wherever the kill allows, and cash them in near the net — a coaching judgement about danger by location rather than a rule, but the one every modern power play is built on.
 
-**A note on notation.** "5-on-4" means five skaters against four, goalies not counted. So a standard power play is 5-on-4, a two-man advantage is 5-on-3, and regular-season overtime is 3-on-3. Coincidental penalties give 4-on-4 under NHL rules. They do not under the IIHF book, where they bring immediate substitution and the teams stay five a side — see below. When a team pulls its goalie during a power play you get 6-on-4.
+**Passing is what creates them.** Four defenders can cover any single option and cannot cover three in two seconds — though that is a philosophy rather than a law, and shot-volume power plays do work. Most power plays die at the blue line rather than in the zone, so be willing to turn back and come again.
+
+**A penalty kill is a decision about which shot you are willing to concede, then two minutes of discipline making sure it is the only one.** The power play wants you to chase, and a killer who chases and misses has opened the dangerous pass himself.
+
+**A team a skater short may usually send the puck the length of the ice without it being called back for icing — check your own book first.** Under the IIHF book, which every level of British hockey is played under, that exemption is unconditional. The NHL withdraws it from a team shorthanded by a major penalty that has left nobody waiting on the penalty bench, and USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult upward. Shooting the puck directly out of play from your own end is a second penalty either way.
+
+**Blocking a shot is a technique, not an act of courage.** Be in the shooting lane before the shot rather than sliding into it, and **never block from a position where you are blocking your own goalie's view** — half-deflecting a shot they could not see is worse than letting it through. If you cannot get into the lane properly, get out of it.
 
 ---
 
@@ -314,7 +320,7 @@ Risk: A puck turned over at the offensive blue line with four teammates ahead of
 
 **The entry toolkit itself — carry, chip, dump, delay, the drive-and-drop, and the data on what each is worth — is in [Zone Entries](zone_entries.md), and everything there applies here.** What changes with the extra man is only this:
 
-1. **A clean, controlled entry is worth far more than a fast one.** Enter with possession and set up, and you have ninety seconds of pressure. Dump and lose the race and you have ten, then you do it all again. (The tracked data in [Zone Entries](zone_entries.md) still favours the carry-in on the power play — roughly two and a half times the shots of a dump-in — but by a **narrower** margin than at even strength, because the extra man also makes dump-in retrievals easier. Read the figures there; the advantage is real, it just is not larger than usual.)
+1. **A clean, controlled entry is worth far more than a fast one.** Enter with possession and set up, and you have ninety seconds of pressure. Dump and lose the race and you have ten, then you do it all again. (The tracked data still favours the carry-in on the power play — roughly two and a half times the shots of a dump-in — but by a **narrower** margin than at even strength, because the extra man also makes dump-in retrievals easier. **Note where that particular figure comes from:** the power-play numbers are **PWHPA / Sportlogiq tracking of women's professional hockey**, not the NHL zone-entry study behind the even-strength figures, and the source does not state which season it covers. [Zone Entries](zone_entries.md) owns them and carries the full qualification. The advantage is real; it just is not larger than usual.)
 2. **You do not get many attempts.** A failed entry — dump, lose the race, regroup, come again — burns a serious slice of a 120-second advantage. Two or three of those and the penalty is over. *(There is no measured figure for the cost of a failed entry; treat this as calibration, not data.)*
 3. **The drop pass is the signature power-play entry**, because it changes the carrier without changing the speed of the attack and makes the defending line commit to the wrong player. **Arik Parnass's** tracking for the Special Teams Project across six NHL teams in 2015-16 found drop-pass entries produced **0.84 shot attempts per entry versus 0.70** for other entries — but took **15.5 seconds to execute versus 12.6**, which cancels most of the gain. (*His three categories run drop 15.49 s, regular 12.56 s, stretch pass 10.37 s. 12.6 is the figure that pairs with the 0.70, because he removed stretch-pass results from the non-drop bucket; comparing the drop against the stretch's 10.4 s instead is not like for like.*) His conclusion is the sensible one, and it is about your own team rather than theirs: keep **both** a polished regular scheme and a drop scheme, and **go to the drop when your primary scheme is in a slump.** *(Decade-old, small-sample study — indicative, not settled.)* Every kill now expects it, and a drop stolen at the red line is a shorthanded breakaway.
 4. **The swing** — one or two players arcing back to gather speed and receive already moving forward — solves the entry's hardest problem: arriving at the line with speed and the puck at once. The single swing (one forward swings, one stays wide) is less predictable than the double.
@@ -615,6 +621,7 @@ Rule: The NHL withdraws that exemption from a team shorthanded by a major that h
 Rule: USA Hockey grants the nullification only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)); below those levels a shorthanded team can be called for icing
 Rule: Release the puck before your penalty expires and the icing does not apply, even if the penalty ends while it is travelling (NHL Rule 81.6)
 Rule: Shooting the puck directly out of the playing surface from your defending zone is a delay-of-game minor even while shorthanded (NHL Rule 63.2(iii))
+Rule: The "no glass" carve-out is about a stretch of boards with none mounted above it, not about the benches — over the glass behind the bench is penalised, into the bench is not (NHL Rule 63.2(iii) and its NOTE)
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Action: Where the exemption applies, fire it the length of the ice the moment you have it — no faceoff, no line-change restriction, and a chance to change
 Action: Aim clears hard and flat, into the corner away from their goalie's trapezoid, so the retrieval is awkward
@@ -639,7 +646,7 @@ Under **NHL Rule 81.1**, icing applies only to a team "equal or superior in nume
 - **You do not need to look for a teammate.** Getting the puck 200 feet away buys you a few seconds of clock and, crucially, a chance to change tired players. (*How many seconds depends entirely on how fast they retrieve and regroup; there is no measured figure to put on it.*)
 - **Aim to make the retrieval awkward** — into the corner away from their goalie's trapezoid, or hard around the boards — so they cannot set up a clean regroup.
 - **Beware the one thing that is still a penalty:** under **Rule 63.2(iii)**, shooting or batting the puck **directly (non-deflected) out of the playing surface from your defending zone** is a minor for delay of game — even while shorthanded. There is no penalty-kill exception. Off the glass and staying in is fine; a deflection out is fine; a clean flip over the glass is a second penalty and a 5-on-3 against you. Aim your clears **hard and flat**, not high. **Three written exceptions matter on a kill:**
-  - **"Except where there is no glass"** — the rule's own wording. Where the boards have no glass above them (the bench areas in some rinks, and many rec facilities), the penalty does not apply.
+  - **"Except where there is no glass"** — the rule's own wording. Where a stretch of boards has no glass mounted above it, as at many rec and older facilities, the penalty does not apply. **This is about rink construction, not about the benches** — see the next point, because the bench is the place this most often gets read backwards.
   - **Into the players' benches.** The rule's NOTE: "When the puck is shot into the players' bench, the penalty will not apply." But shooting it **over** the glass *behind* the benches **is** penalised.
   - **Directly off a faceoff.** The same NOTE: "When the puck goes out of the playing area directly off a face-off, no penalty shall be assessed." This is the one you will actually use — on a defensive-zone draw while shorthanded, a centre who wins the puck straight out of the rink has given up a faceoff, not a penalty.
 - Also under Rule 63.2(v), a skater other than the goalie who **deliberately falls on or gathers the puck into his body** takes a minor. Smothering the puck to beg for a whistle is not a legal kill tactic.
@@ -930,19 +937,61 @@ These are errors the body above does not cover — the ones that survive knowing
 - **Too many men on the ice during a special-teams change.** Units change together; count before you go. It is the only penalty in hockey that is purely an administrative failure.
 - **Arguing about the system on the bench instead of before the game.** Almost every special-teams breakdown is two players operating on different assumptions, and the fix is a thirty-second conversation in the room.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You are killing a penalty and you fire the puck the length of the ice. Is
+   that icing? Give the answer, then both carve-outs — then say **how many of the
+   two reach you if you play in Britain, and why**. Now answer the same question
+   with the extra man instead of a man short. *(§You may ice the puck freely —
+   where your rule set allows it, §Common Mistakes)*
+
+2. Four of you cannot cover five of them. So what is a penalty kill actually a
+   decision about — and what is the failure mode that turns every kill into a
+   goal? *(§The one idea behind every penalty kill)*
+
+3. Your kill is in a box and the power play is set up in a 1-3-1. Which of their
+   five is unmarked, and why is that by design rather than by mistake? Name the
+   shape that answers it, and say what that answer gives away instead. *(§Box —
+   the shape everyone learns first, §Diamond — a single apex)*
+
+4. You are on the half-wall, the unit is set, and the kill is square and
+   organised. Do you shoot? There is more than one defensible answer here — give
+   both, say what suits each, and say who decides. *(§Why puck movement, not
+   shooting, creates it)*
+
+5. Where do most amateur power plays actually die, and what should you do
+   instead of forcing it? Say what a failed attempt costs you out of two
+   minutes. *(§Power play zone entries)*
+
+6. You are killing, standing in front of your own goalie, and a point shot is
+   coming. Should you block it? Say what decides that, and what half-blocking a
+   shot from where you are standing does to your goalie. *(§Shot blocking)*
+
+7. You are the lone point player on a 1-3-1 power play and a clear beats you
+   cleanly at the line. What do you do — and why is "keep it in at all costs"
+   the wrong instruction for you specifically? *(§The defenceman's job holding
+   the line)*
+
 ---
 
 ## Key Takeaways
 
-1. **A man advantage is a 2-on-1 waiting to be created.** Five against four is nothing until the kill has two things to cover and one body to do it with. Create them anywhere; cash them in near the net, because danger is a function of location.
-2. **Puck movement, not shooting, creates it.** A kill can cover any single option; it cannot cover three options in two seconds.
-3. **The 1-3-1 has exactly one player at the point** — one point, two half-walls, one bumper, one net front — and first units are commonly *described as* running four forwards and a single defenceman, which is coaching consensus and not a measured prevalence. The bumper is most often the centre, but that too is a team choice, not a rule.
-4. **Most power plays die at the blue line, not in the zone.** Drill entries — drop, swing, carry, controlled dump and the regroup — and be willing to reset rather than force one.
-5. **A pass that crosses the middle of the ice before a shot is the most dangerous play in hockey**, because a goalie moving laterally cannot be set. Before you shoot from a half-wall, check the far side.
-6. **A penalty kill is a decision about which shot you are willing to concede**, then two minutes of discipline making sure it is the only one. A box concedes the middle; a diamond concedes the outside and the backdoor; a wedge+1 concedes the perimeter.
-7. **A box has two players high and no single top; a diamond has one apex.** Use the diamond against a 1-3-1, because a box leaves the bumper unmarked.
-8. **The best place to kill a penalty is before the puck enters your zone.** Three failed entries and the penalty is over.
-9. **You may ice the puck freely while shorthanded — but check your book first, and never ice it while on the power play.** Where it applies, the exemption (Rule 81.6) is the kill's biggest structural advantage. It has **two carve-outs, and neither of them is the IIHF's**: the NHL withdraws it from a team shorthanded by a *major* that has left nobody on the penalty bench, and **USA Hockey grants it only at Youth 15-Only and above, Girls 16U and above, High School and Adult** (Rule 624(b)(1)) — below those levels a shorthanded team cannot ice the puck at all, so a kill built on length-of-the-ice clears just feeds the power play defensive-zone draws. **IIHF Rule 81.6 carries the exemption in the same words and carries neither carve-out, so in UK hockey it is unconditional.** Over the glass from your own zone is a second penalty either way. And a power play that ices it hands the kill the choice of dot and forbids itself a line change.
+1. **A man advantage is a 2-on-1 waiting to be created, and passing is what creates it** — a kill can cover any single option, not three in two seconds. That is a philosophy rather than a law: shot-volume power plays work too.
+2. **Create the 2-on-1 anywhere, but cash it in near the net**, because danger is a function of location. That is a coaching judgement, not a rule.
+3. **Most power plays die at the blue line, not in the zone.** Drill your entries — drop, swing, carry, controlled dump, regroup — and be willing to reset rather than force one.
+4. **A penalty kill is a decision about which shot you are willing to concede**, then two minutes of discipline making sure it is the only one. A box concedes the middle, a diamond the outside and backdoor, a wedge+1 the perimeter.
+5. **A box has two players high and no single top; a diamond has one apex.** Use the diamond against a 1-3-1, because a box leaves the bumper unmarked.
+6. **The best place to kill a penalty is before the puck enters your zone.** Three failed entries and the penalty is over.
+7. **Blocking a shot is a technique, not an act of courage — and on a kill it is the thing you do most.** Be **in the shooting lane before the shot** rather than sliding into it: sliding gets you a puck off the ankle and a shooter who has already changed the angle. And **never block from a position where you are blocking your own goalie's view** — half-deflecting a shot they could not see is worse than letting it through cleanly. If you cannot get properly into the lane, get out of it. The technique itself is owned by [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Defender](../positions/defender.md).
+8. **A shorthanded team may usually ice the puck — check your own book first.** The IIHF's exemption is unconditional. The NHL withdraws it from a team shorthanded by a major with nobody on the penalty bench (Rule 81.6), and USA Hockey grants it only at Youth 15-Only, Girls 16U, High School and Adult (Rule 624(b)(1)) — below those levels there is no exemption at all.
+9. **Never ice the puck while on the power play**, which hands the kill the choice of dot and bars your own change. And shooting it directly out of play from your defending zone is a delay-of-game minor even while shorthanded, though not directly off a faceoff (NHL Rule 63.2(iii)).
 10. **Know your team's shape, and your job inside it, before the puck drops.** These are coaching choices, and almost every breakdown is two players assuming different systems.
 
 ---

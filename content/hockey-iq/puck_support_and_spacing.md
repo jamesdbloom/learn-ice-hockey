@@ -11,9 +11,15 @@
 
 ## Overview
 
-This is the document that sits between knowing your position and knowing your team's systems. **Puck support** means being in a place, at a time, where the player with the puck can actually give it to you. **Spacing** means the five of you arranging yourselves so that there is always more than one such place.
+A player with the puck and two places to put it beats a player with the puck and none, whatever the difference in skill between them. Being one of those two places, on purpose, is most of what a teammate is for.
 
-Everything else in this guide — breakouts, forechecks, zone entries, power plays — is a named pattern for producing good support. This document is the principle underneath all of them, which is why it transfers to the situations no system covers. If you learn one thing here, learn this: **a puck carrier with two options beats a puck carrier with none, regardless of how skilled either of them is.**
+**Two options only count as two if they are at different angles.** Two teammates in the same line from the puck are one option, because one defender's stick covers both. That is why the shape worth aiming for is a triangle: three players in a line can be cut by one stick and have to rebuild after every pass, while a triangle rotates and stays connected.
+
+**Support has a working range, and it is a rule of thumb rather than a standard.** Roughly two to three stick lengths is the usual default — shorter under pressure and in your own end, longer in open ice — but no governing body publishes support distances, and the real test is time rather than distance: would the pass beat the opponent closing on your teammate?
+
+**The way to help a teammate pinned in a battle is usually to move away from them.** They need somewhere to put the puck, not another body in the pile. Defending, it usually runs the other way — stay behind the first defender rather than joining them on the same puck. **"Usually" is carrying weight in both:** a deliberate double-team behind your own net is a common coaching instruction, and if your team marks specific opponents rather than areas of ice you may have to follow yours out of that position entirely. Ask which your team plays.
+
+**Arriving late with speed beats standing early in the right place** — let the player with the puck commit a defender, then go, and stay wide while you wait, because the middle of the ice only exists while somebody is holding the outside.
 
 ---
 
@@ -480,6 +486,8 @@ Being open and being available are different things, and confusing them is why p
 2. **A target.** Stick on the ice, blade flat, angled so the puck can be received. A raised stick is an invisible one. If your blade is not down, you are not a passing option no matter how much space you have.
 3. **A carrier who knows you exist.** Their head is often down. Use your voice — "here", "middle", "back". The [On-Ice Communication](../foundation/on_ice_communication.md) document is largely a list of ways to convert yourself from open into available.
 
+[Playing Without the Puck → Unmarked is not the same as available](playing_without_the_puck.md) is the fuller treatment of that first requirement, and splits the lane into the angle and the stick lying across it. What this section adds is the third item and what to do about it.
+
 ### It is the receiver's job, not the passer's
 
 ```facts
@@ -611,20 +619,62 @@ One question, asked constantly: **"Where are my two options?"**
 - **Finding a good spot once and then stopping.** The puck moved. Your spot was correct three seconds ago. Support is continuous, not a destination.
 - **Assuming your team's rotation rules.** Who is allowed below the puck in the offensive zone is a coaching choice and varies. Guessing is how you end up as the extra man deep with nobody home.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. Three teammates are strung in a line up the boards. What can a single defender
+   do to that shape, what one adjustment fixes it, and which property of the
+   fixed shape matters most in a real game? *(§Why a triangle and not a line)*
+
+2. Someone tells you to support from "two to three stick lengths". Where does
+   that number come from, what sourced figure sits tighter than it, and what is
+   the test you should be running instead of measuring? *(§Support distance)*
+
+3. Name the three support angles. Which one is non-negotiable and why — and where
+   is the one place the lateral option must not be taken? *(§Support angles:
+   behind, level and ahead)*
+
+4. Your teammate is pinned in a board battle. Every instinct says go and help.
+   What should you usually do instead, and what is the exception? *(§The
+   counterintuitive rule: to help a battle, move away from it)*
+
+5. You are the winger hugging the neutral-zone boards, far from the puck, feeling
+   useless. What are you actually doing — and what happens the moment you drift
+   inside to get involved? *(§Why wingers stay wide)*
+
+6. A teammate is already pressuring the carrier. What are your two options, what
+   is the arithmetic against the wrong one, and when is that "wrong" one actually
+   your team's instruction? *(§Support when defending — Layering, not
+   converging)*
+
+7. You arrive early at the right spot and stop. What have you just done to
+   yourself? Give the cue for doing it the other way round, and say where that
+   cue does not apply. *(§Timing over position, §Supporting late)*
+
+8. How many players does your team put in each neutral-zone lane? Say what the
+   usual default is, what the realistic alternative is, and what would decide
+   which one you are playing. *(§Neutral zone — three lanes)*
+
 ---
 
 ## Key Takeaways
 
-1. **A puck carrier with two options beats a puck carrier with none, regardless of skill.** That sentence is the whole document. Everything else is detail about how to be one of the two.
-2. **Two options are only two if they are at different angles.** Two teammates in the same lane are one option, because one defender covers both.
-3. **The triangle is the shape that survives the pass.** A line can be killed by one stick and has to be rebuilt after every pass; a triangle rotates and stays connected.
-4. **Support has a working range — roughly two to three stick lengths as a default, shorter under pressure and in your own end, longer in open ice.** The real test is time, not distance: would the pass beat the checker?
-5. **You need support behind, level with, and ahead of the puck at the same time, and somebody is always above it.** Behind is the outlet you always need, level changes the side, ahead gains ground. Which player takes the high job depends on your team's system — that there is one does not. Ask which layer is missing and go be it.
-6. **The way to help a teammate in a battle is usually to move away from them.** They need somewhere to put the puck, not another body in the pile. Defending, the same logic usually runs in reverse: layer behind the first defender rather than converging on the same puck, because two players on one carrier are both beaten by one pass. **"Usually" is doing work there** — a deliberate double-team below your own goal line is a common coaching instruction, and man-to-man coverage can require you to leave the layer entirely, so ask where and when your team doubles.
-7. **Wingers stay wide because the middle only exists if someone is holding the outside.** Drifting in to get closer to the play deletes the space that made the play possible. How far that stretches — and who is allowed below the puck — is a coaching choice, so ask what your team's rotation rules are.
+1. **A puck carrier with two options beats one with none, regardless of skill.** Being one of those two options, on purpose, is most of what a teammate is for.
+2. **Two options are only two if they are at different angles.** Two teammates in the same lane are one option, because one defender's stick covers both.
+3. **The triangle is the shape that survives a pass.** A line is cut by one stick and has to be rebuilt after every pass; a triangle rotates and stays connected.
+4. **Support has a working range, not a standard — no governing body publishes one.** Roughly two to three stick lengths by default, shorter under pressure and in your own end, longer in open ice. The real test is time: would the pass beat the checker?
+5. **You need support behind, level with and ahead of the puck at once.** Behind is the outlet, level changes the side, ahead gains ground. Which player takes the high job is a system choice; that somebody must is not. Ask which layer is missing and be it.
+6. **To help a teammate in a battle, usually move away from them** — they need somewhere to put the puck, not another body in the pile. Defending, it usually reverses: layer behind the first defender rather than converging, because two players on one carrier are both beaten by one pass. **"Usually" is doing work:** a deliberate double-team below your own goal line is a common coaching instruction, and man-to-man coverage can require you to leave the layer entirely. Ask your coach where and when your team doubles, and see [Playing Without the Puck](playing_without_the_puck.md) for how zone, man-to-man and hybrid coverage each change the job.
+7. **Wingers stay wide: the middle only exists while someone is holding the outside.** Drifting in deletes the space that made the play possible. How wide, and who may go below the puck, is a coaching choice — ask what your team's rotation rules are.
 8. **Arriving late with speed beats standing early in the right place.** "Puck first, feet second" — let the carrier commit a defender, then go.
-9. **Being unmarked is not being available.** You need a clear lane, a stick on the ice, and a carrier who knows you are there. That is the receiver's job, not the passer's.
-10. **Ask yourself "where are my two options?" every few seconds.** On the puck and off it. It is the single habit that turns positioning into support.
+9. **Unmarked is not available — and converting yourself from one to the other is the receiver's job, not the passer's.** Move to the passing angle rather than to the space, use your voice because the carrier's head is down, and keep adjusting as the puck moves. [Playing Without the Puck](playing_without_the_puck.md) owns what availability requires.
+10. **Ask yourself "where are my two options?" every few seconds,** on the puck and off it. It is the single habit that turns positioning into support.
 
 ---
 

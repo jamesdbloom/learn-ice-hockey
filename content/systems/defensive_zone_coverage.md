@@ -14,16 +14,23 @@ Risk: The same instruction — "get to the corner", "stay high" — can be corre
 Action: Work out which system your team plays, so you stop guessing
 ```
 
-Defensive zone coverage is the agreement your five skaters have about who protects what when the other team has the puck in your end. It is the single most system-dependent part of hockey: two good teams can play two completely different systems and both be right, and the same instruction ("get to the corner", "stay high") can be correct on one bench and a firing offence on the next.
+Defensive zone coverage is the agreement your five skaters have about who protects what while the other team has the puck in your end.
 
-This document is the reference the position documents point to. It explains the main systems, what each is good at, what each gives away, and — most usefully — how to work out which one *your* team plays, so you stop guessing.
+**It is the single most system-dependent part of hockey, so find out which one your team plays.** Two good teams can play completely different systems and both be right, and the same instruction — "get to the corner", "stay high" — can be correct on one bench and a firing offence on the next. One question gets you most of the way: when the puck is in our corner, does the winger stay up at the blue line or come down and help? That answer separates the two main families immediately.
+
+**The most dangerous chances come from a small area in front of your net** — roughly from the two posts out to the faceoff dots and up to the tops of the circles. A shot from inside it is worth several times the same shot from outside; [Shooting](../technique/shooting.md) owns those values and the qualifications that come with them, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the shape, which is an analytics convention rather than an official marking. Every system is a different way of keeping five bodies between that area and the puck while still being able to leave with it. So defend the middle before the outside: offered a choice between taking away a shot from distance and taking away a pass into that area, take the pass. That tells you which chance to concede, not where to stand.
+
+**Somebody must always have the doorstep of your net** — not the general area in front of it, but the edge of the painted crease, where the player who scores is standing. Which of the five it is changes with the system; that it is somebody never changes. The matching error is both defencemen going to the same puck without either knowing who has the doorstep.
+
+**Most defensive-zone breakdowns are not effort failures.** Almost always both players worked hard, on different assumptions about who had whom, and skated hard in opposite directions. *(No published tracking data breaks goals down by cause, so treat that as coaching consensus rather than a measured fact.)* So announce your intentions rather than your observations: "I'm going to the corner, you have the middle" resolves the ambiguity; "he's coming down your side" only describes it. And the moment you realise you do not know who is yours, go to the middle — every mistake made in front of your own net is smaller than the same one made outside it.
 
 ---
 
 ## The Problem Every System Solves
 
 ```facts
-Key: Almost all goals come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
+Key: The most dangerous chances come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
+Convention: The house is an analytics convention rather than an official marking — Shooting owns what a shot from inside it is worth, Rink Map and Glossary owns the shape
 Goal: Allocate five bodies so the house is never open, while still being able to take the puck off them and leave
 Priority: Choose which chances you are willing to give up — coverage is not about eliminating them
 Risk: Pack all five onto the goal line and nobody is available for the outlet — you win the puck and give it straight back
@@ -32,7 +39,9 @@ Key: Twenty point shots through no traffic and zero back-door tap-ins is a good 
 
 Five of you. Five of them. One net.
 
-But the ice is not equally dangerous. Almost all goals come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
+But the ice is not equally dangerous. The most dangerous chances come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
+
+Two things to be honest about, because the shape gets quoted more confidently than the evidence supports. **The boundaries are an analytics convention, not an official marking** — Natural Stat Trick, Evolving Hockey and MoneyPuck all draw them slightly differently, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the shape. And **how much of the scoring it accounts for depends on whose figure you take** — [Shooting](../technique/shooting.md) owns the values, and hedges every one of them. The figures that have actually been counted are more modest than the versions repeated in dressing rooms: **26.8%** of NHL goals were scored within two stick-lengths of the net and **51.6%** within twenty feet, computed from the NHL play-by-play feed over 400 games of 2024-25 ([Body Contact and Battles](../technique/body_contact_and_battles.md) owns both, and those are patches smaller than the house). What every source agrees on is the ratio rather than the share: a shot from inside this area is worth several times the same shot from outside it. That is enough to build a system on.
 
 ![](diagram:dz-the-house)
 
@@ -585,7 +594,7 @@ Winning the puck is only half the job. The handoff from coverage into a breakout
 
 **Rules that constrain the clear:**
 
-- **Off the glass and out is legal; over the glass is a penalty.** Under NHL Rule 63.2, shooting or batting the puck **directly out of the playing surface from your own defending zone**, with no deflection, is a two-minute minor for delay of game. Hitting the glass and staying in play is fine — the penalty is for putting it into the crowd. Note that this version, Rule 63.2(iii), applies only in your defending zone: there it does not matter whether you meant it. It is not quite strict liability, because the rule carries three carve-outs — it applies *"except where there is no glass"*, and the NOTE to it adds that *"when the puck is shot into the players' bench, the penalty will not apply"* and that *"when the puck goes out of the playing area directly off a face-off, no penalty shall be assessed."* Over the glass **behind** the bench is still a penalty. Clause **63.2(ii)** is wider — a player who **deliberately** shoots or bats the puck out of the playing area *"from anywhere on the ice surface"* takes the same minor. So from the neutral zone you are safe only if it was an accident.
+- **Off the glass and out is legal; over the glass is a penalty.** Under NHL Rule 63.2, shooting or batting the puck **directly out of the playing surface from your own defending zone**, with no deflection, is a two-minute minor for delay of game. Hitting the glass and staying in play is fine — the penalty is for putting it into the crowd. Note that this version, Rule 63.2(iii), applies only in your defending zone: there it does not matter whether you meant it. It is not quite strict liability, because the rule carries three carve-outs — it applies *"except where there is no glass"*, and the NOTE to it adds that *"when the puck is shot into the players' bench, the penalty will not apply"* and that *"when the puck goes out of the playing area directly off a face-off, no penalty shall be assessed."* Over the glass **behind** the bench is still a penalty. Clause **63.2(ii)** is wider — a player who **deliberately** shoots or bats the puck out of the playing area *"from anywhere on the ice surface"* takes the same minor. So from the neutral zone you are safe only if it was an accident. **USA Hockey has no equivalent to the defending-zone clause, so this is one to check before you decide how safe a high clear is.** Rule 610(c) penalises only a player who *"delays the game by deliberately shooting or batting the puck outside the playing area, including after a stoppage of play"*, and Rule 631(d) makes the accidental version a stoppage rather than a penalty: *"If the puck is accidentally shot or deflected out of play, or onto the goal netting, a last play face-off will occur in the zone where the puck was shot or the deflection occurred."* Under that book an unintended flip over the glass from your own end costs you a defensive-zone faceoff, not two minutes.
 - **Icing applies at even strength.** A hard flat clear from your own end that reaches their goal line untouched brings the puck straight back for a defensive-zone faceoff, and **your line cannot change** and cannot take a timeout. That's the real cost — you've cleared the puck and kept your tired players on the ice. Aim clears wide and high off the glass, or short enough to die in the neutral zone.
 - **Shorthanded, ice it freely — once you have checked that your league lets you.** A penalty-killing team may ice the puck with no whistle (Rule 81.6). Two carve-outs, both owned by [Special Teams](special_teams.md): USA Hockey gives the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), and the NHL withdraws it from a team shorthanded by a major that has left the penalty bench empty.
 - **Your goalie cannot go and get a puck in the corner.** Under NHL Rule 27.8 the goalkeeper may only play the puck behind the goal line inside the **trapezoid**, and the sole exception is maintaining skate contact with the crease. Retrieval outside it is on the defencemen. This applies in the NHL (since 2005-06), the KHL, and IIHF play (since the unified 2021-22 rulebook). **Most rec, beer-league and youth associations do not use the trapezoid** — if you play under those rules, your goalie is a genuine third puck-handler behind the net and your entire retrieval and clearing game changes. Find out. See [Goaltender](../positions/goaltender.md). **🇬🇧 In England and Wales, treat this as unsettled.** The IIHF book carries the rule (Rule 27.7, not the NHL's 27.8), but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* and the 2025-26 In-House Rules do not mention it — though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. Assume it binds, ask your league, and look behind the net to see whether the lines are painted at all. Treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
@@ -610,20 +619,63 @@ Winning the puck is only half the job. The handoff from coverage into a breakout
 - **Cheating up ice before the puck is out.** The clear becomes a turnover and you're a spectator on the rush back.
 - **Silent defending.** Coverage is a shared model. Unspoken, it isn't shared.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. The puck goes into your corner and you are the weak-side winger. Do you leave
+   the point? This has no single answer — say what it depends on, and give the
+   one question you can ask your coach that gets you most of the way. Then say
+   what that question does *not* settle. *(§How to Tell Which System Your Team
+   Plays, §The weak-side winger's collapse, §Hybrid)*
+
+2. Their defenceman does not shoot from the point — he skates down toward the
+   top of the circle. What do you do? There are three legitimate answers here;
+   name them and say which system each belongs to. *(§The walk-down from the
+   point)*
+
+3. "Never both defencemen on the puck." That is not quite what this document
+   says. State the version it actually gives, and say what stays true under
+   every system. *(§The Universal Principles)*
+
+4. An opposing forward is parked in your goalie's sightline, outside the crease,
+   not touching anyone. Is that legal? What may you do about it, and what is the
+   one thing you must not do from a screening position? *(§The point shot with a
+   screen, §The Universal Principles)*
+
+5. There is a loose puck in your own crease and bodies everywhere. What may you
+   use on it, what must you not do, and what does the wrong choice hand the
+   other team? *(§The net-front scramble)*
+
+6. A goal goes in from the slot and the bench says somebody did not work hard
+   enough. What does this document say almost always happened instead, and what
+   kind of call would have prevented it? *(§Most defensive-zone breakdowns are
+   not effort problems)*
+
+7. Structure is gone — three of you below the goal line, the puck loose, nobody
+   where the diagram says. What is the first thing you do, and what is the
+   default the instant you realise you do not know your assignment? *(§When the
+   System Breaks)*
+
 ---
 
 ## Key Takeaways
 
-1. Every defensive-zone system is a different answer to one question: how do five people protect the house and still be able to leave with the puck? Every answer concedes something on purpose.
-2. **Low zone collapse is the house default** here: strong-side D on the puck, weak-side D at the goalmouth, centre as low support, both wingers high on the points, weak-side winger sagging into the high slot when the centre goes low.
-3. Under low zone collapse, wingers do **not** go to the corner. Under man-on-man, they do. That one difference is the fastest way to identify which system a team is playing.
-4. The universal principles survive every system: middle before outside, stay on the defensive side, never both D on the puck without knowing who has taken the goalmouth, somebody always has the goalmouth, sticks flat in lanes, box out at the net. Note that only the *goalmouth* half of that pair is genuinely invariant — which player holds it changes with the system, and a few systems send both defencemen low on purpose. But "middle before outside" tells you which *chance* to concede, not where to stand — a man system honours it by staying glued to the man who would receive the seam pass, not by sagging into the slot.
-5. Low zone collapse's real weakness is not the point shot — it's the **walk-down** from the point. Hybrid coverage exists mainly to fix it.
-6. Man-on-man leaves nobody unmarked and dies to picks, mismatches, and any single lost battle.
-7. **Most defensive-zone goals are not effort failures.** They are two hard-working players operating on different assumptions about who has whom. Announce your intentions, not your observations.
-8. When structure is gone: bodies to the net front, sticks in lanes, find the most dangerous unmarked player, get it out any way you can. When in doubt, go to the middle.
-9. Winning the puck is half the job. Decide where it's going before it's yours, and get the puck out of the zone before your third forward leaves it.
-10. Off the glass and out is a good play. Over the glass from your own end is two minutes — **direct and non-deflected** is the test (Rule 63.2(iii)), with narrow exemptions for a puck that goes into the players' bench, one that comes directly off a faceoff, and rinks with no glass. Know the difference.
+1. **Find out which system your team plays before you need it.** One question gets you most of the way: when the puck is in our corner, does the winger stay high on the point or come down and help? That tells you the **family**, not the system — a hybrid marks man-on-man below the dots and looks identical to man coverage from the stands, and coaching material calls the hybrid the most common arrangement in professional hockey.
+2. **Low zone collapse is the house default assumed here:** strong-side D on the puck, weak-side D at the goalmouth, centre as low support, both wingers high on the points, and the weak-side winger sagging into the high slot when the centre goes low — climbing straight back up as the puck leaves the corner. Coaching material describes it as the system taught first in North American minor, junior and rec hockey, but nobody publishes a count of what teams actually run.
+3. **Under low zone collapse the wingers do not go to the corner; under man-on-man they follow their check down there.** That tells you the family rather than the exact system — a hybrid marks man-on-man below the dots too, so it will look like man coverage from the stands.
+4. **The principles that survive every system:** defend the middle before the outside, stay on the defensive side, somebody always has the goalmouth, sticks flat in passing lanes, box out at the net by lifting the stick rather than cross-checking the back, and talk early. Two riders: "middle before outside" tells you which chance to concede, not where to stand — a man system honours it by staying glued to the player who would receive the seam pass. And the rule about your partner is conditional rather than absolute: both defencemen go low only when the two of you know who has taken the goalmouth.
+5. **Low zone collapse's real weakness is not the point shot — it is the walk-down from the point.** Hybrid coverage, man-on-man below the dots and zone above, exists mainly to fix it; teams put that dividing line in different places, so learn your team's version. How you defend the walk-down is itself a coaching choice.
+6. **Man-on-man leaves nobody unmarked, and dies to picks, mismatches and any single lost battle.** As a pure system it is much less common than it was; what mostly survives is the hybrid.
+7. **Most defensive-zone breakdowns are not effort failures.** They are two hard-working players operating on different assumptions about who has whom. Announce your intentions, not your observations. (No published tracking data breaks goals down by cause, so treat that as coaching consensus rather than a measured fact.)
+8. **When structure is gone:** bodies to the net front, sticks in lanes, find the most dangerous unmarked player, say out loud who you have, get the puck out any way you can — then reset before you attack. When in doubt, go to the middle.
+9. **Winning the puck is half the job.** Decide where it is going before it is yours, and get it out of the zone before your third forward leaves. Under low zone collapse the pass goes to the winger coming down the wall to between the hash marks and the goal line, not to a winger still standing at the blue line.
+10. **Off the glass and out is a good play; over the glass from your own zone is two minutes.** Under NHL Rule 63.2(iii) the test is direct and non-deflected, with narrow carve-outs for a puck that goes into the players' bench, one that comes directly off a faceoff, and rinks with no glass — but over the glass *behind* the bench is still a penalty. **USA Hockey has no equivalent:** Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a faceoff at the last play location.
 
 ---
 
@@ -633,4 +685,4 @@ Winning the puck is only half the job. The handoff from coverage into a breakout
 
 *Modern application and analysis: [Sound Of Hockey – Dave Hakstol's Scheme and Philosophies: Defensive Zone Coverage](https://soundofhockey.com/2022/02/21/kraken-coach-dave-hakstols-scheme-and-philosophies-defensive-zone-coverage-part-3/) · [Hockey Tactics Newsletter – Man-on-Man vs. Zone Defense](https://jhanhky.substack.com/p/man-on-man-vs-zone-defense) · [RSF Performance – The Three Main D-Zone Coverages in Modern Hockey](https://rsfperformance.ca/2023/07/diving-into-the-three-main-d-zone-coverages-in-modern-hockey/) · [WBS Penguins – A Guide to Defensive Strategy in Ice Hockey](https://www.wbspenguins.com/blog/defensive-hockey-a-guide-to-team-strategy/) · [Athletes Untapped – Mastering Defensive Zone Coverage](https://athletesuntapped.com/blog/the-fortress-mastering-defensive-zone-coverage-in-ice-hockey/)*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 27.8 Goalkeeper's Restricted Area, Rule 63.2 Delay of Game, Rule 67.4 Handling Puck in the Crease, Rule 69 Interference on the Goalkeeper, Rule 79 Hand Pass, Rule 81 Icing including the major-penalty carve-out in 81.6) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), the classification restriction on the shorthanded icing exemption · [Scouting The Refs – Hand Pass Hysteria](https://scoutingtherefs.com/2025/12/50600/hand-pass-hysteria-whats-going-on-in-the-nhl/) · [Scouting The Refs – Puck Over Glass Penalty](https://scoutingtherefs.com/2020/09/29905/puck-over-glass-penalty-wreaks-havoc-in-playoff-ots/) · [Hockey Canada Rule Book – Rule 1.5 Goal Crease](http://rulebook.hockeycanada.ca/english/part-i-technical-rules/section-1/rule-1-5/) · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game)*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 27.8 Goalkeeper's Restricted Area, Rule 63.2 Delay of Game, Rule 67.4 Handling Puck in the Crease, Rule 69 Interference on the Goalkeeper, Rule 79 Hand Pass, Rule 81 Icing including the major-penalty carve-out in 81.6) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 610(a) (a minor for deliberately freezing the puck along the boards or goal frame), Rule 610(c) (a minor only for **deliberately** shooting or batting the puck outside the playing area), Rule 631(d) (an accidental one is a last-play faceoff in the zone it was shot from), and Rule 624(b)(1), the classification restriction on the shorthanded icing exemption · [Scouting The Refs – Hand Pass Hysteria](https://scoutingtherefs.com/2025/12/50600/hand-pass-hysteria-whats-going-on-in-the-nhl/) · [Scouting The Refs – Puck Over Glass Penalty](https://scoutingtherefs.com/2020/09/29905/puck-over-glass-penalty-wreaks-havoc-in-playoff-ots/) · [Hockey Canada Rule Book – Rule 1.5 Goal Crease](http://rulebook.hockeycanada.ca/english/part-i-technical-rules/section-1/rule-1-5/) · [IIHF – New Rule Book for global game](https://www.iihf.com/en/events/2021/wm/news/26308/new_rule_book_for_global_game)*

@@ -11,11 +11,15 @@
 
 ## Overview
 
-Everything else here tells you what your job is. This one tells you how that job changes depending on the score, the clock and who is on the ice with you. A 2-1 lead with four minutes left is a different sport from a 2-1 lead in the first period, and the player who knows the difference is worth more than the player who only knows their assignments.
+**Game management** is the layer above systems: how the score and the clock change the risk you take, the speed you play at and the decisions you make. A 2-1 lead with four minutes left is a different sport from a 2-1 lead in the first period. Everything here that is not explicitly a rule is a **coaching choice** — your team may want something different.
 
-**Game management** is the layer above systems: reading the situation and adjusting the *risk* you take, the *speed* you play at, and the *decisions* you make, without abandoning the structure your team plays. Almost none of it is written in the rulebook. Almost all of it is decided in the two seconds before you touch the puck.
+**Trailing teams shoot more and leading teams shoot less.** It is one of the best-established findings in hockey, it grows as the deficit and the clock grow, and it distorts every raw statistic you will ever look at.
 
-Two warnings before you start. First, everything in this document that is not explicitly a rule is a **coaching choice** — teams differ, and yours may want something different. Second, the biggest game-management errors in amateur hockey are not exotic. They are changing at the wrong moment, taking a lazy penalty, and sitting back on a lead an hour too early.
+**Protecting a lead is an active job — passive is not the same as safe.** Manage the puck rather than the clock: no passes across the middle of your own end, no long passes you are unsure of, and a short flip of the puck past a chaser and out beats forcing a play under pressure. Deny the middle, shorten your shifts, win the faceoffs in your own end.
+
+**The bad change is the most expensive routine mistake in hockey.** It concedes three things at once: a numbers disadvantage, a hole where the departing player's job was, and a teammate joining the play blind. So do not change while the puck is in your own end and your team does not have it, and do not change while you are the last player back. And once your own team has been called for icing — shooting the puck the length of the ice — you may not change under either the NHL or the IIHF book, subject to three narrow exceptions: putting back a goalkeeper who had been pulled for an extra attacker, replacing an injured player, and a penalty that changes on-ice strength (**NHL Rule 82.1**; **IIHF Rule 81.4** carries the same bar and adds a fourth exception for a player with a broken skate). USA Hockey imposes no such restriction.
+
+**When the referee's arm goes up for a delayed penalty, an extra attacker is free.** Play continues until the offending team gains control of the puck, and until then they cannot score — the sole exception being that you put it into your own net yourself (NHL Rule 78.5(xi)), so no blind passes across the front of your own goal. Many recreational leagues do not allow or practise pulling the goalie for this, and some officials stop play early, so agree it beforehand.
 
 ---
 
@@ -129,6 +133,7 @@ Never: Chase the extra body-check; if the player has already passed or shot it i
 Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
 Rule: Under hybrid icing the linesperson judges who would reach the puck first, not who reaches the dot first (NHL Rule 81.1)
 Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rule 82.1)
+Rule: Three narrow exceptions to that bar — a goalkeeper who had been pulled for an extra attacker, an injured player, or a penalty affecting on-ice strength (NHL Rule 82.1)
 Rule: The IIHF bar is Rule 81.4, and its exceptions run one longer — you may also replace "a Player with a broken skate", which the NHL does not allow
 Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
 Risk: A defensive-zone draw, your five most tired players, and no way to rest them
@@ -286,6 +291,15 @@ Under **NHL Rule 15.1**, when a player on the team *not* in control of the puck 
 
 The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delayed penalty the offending team cannot score **unless the non-offending team shoots the puck into their own net.** A deflection off an opponent doesn't count; your own defenceman ringing it off your own goalie does. So: no blind D-to-D passes across your own crease during a delayed call.
 
+> **⚠️ "Delayed penalty" names two different things, and only one of them means
+> pull the goalie.** What is described here is the signalled call under **Rule 15.1**
+> — the referee's arm is up and play continues. The phrase is also used for the
+> **delayed *clock*** under **Rule 26**: a third penalty assessed to a team already
+> serving two, whose time waits rather than putting them three men short. **Nobody
+> is about to be awarded anything and there is no free attacker.** Go on the
+> referee's raised arm, not on the words. [Special Teams](special_teams.md) owns the
+> distinction.
+
 **What to do when the arm goes up:**
 - **Goalie:** go, immediately, at the first sign. Every second is a free attacker.
 - **Bench:** the extra attacker jumps as the goalie arrives.
@@ -300,7 +314,7 @@ Never: Chase — play a tight box or diamond in the slot, block lanes and let th
 Position: Sticks in lanes, feet in the house; clear bodies and take sticks away at the net front
 Action: Treat every clear as a shot — get your head up and put it at the empty net when the lane is clean
 Rule: You can be iced against a pulled goalie; six players against six is equal strength, not below it (NHL Rules 81.1, 81.3, 84.1)
-Rule: After that icing they pick the dot (81.2), you cannot change (81.4) and you cannot take a time-out (87.1) — all three are NHL and IIHF only
+Rule: After that icing they pick the dot (81.2), you cannot change but for the narrow exceptions (81.4) and you cannot take a time-out at all (87.1) — all three are NHL and IIHF only
 Priority: Own-zone draws at 5-on-6 decide games — agree the plan before you line up
 Never: Take a penalty; a 6-on-4 against is close to a goal
 ```
@@ -310,7 +324,7 @@ Your job as the leading team defending an empty net:
 - **Do not chase.** Six attackers means someone is always open if you leave your area. Play a tight box or diamond in the slot, block lanes, and let them have the perimeter. (**Box** = two players high, two low. **Diamond** = a single apex — used when their structure has a player in the middle, the **bumper**, whom a box leaves unmarked.)
 - **Sticks in lanes, feet in the house.** Coaches will tell you most 6-on-5 goals come from tips, screens and rebounds rather than clean point shots. **Two thirds of that is checkable, and the strong form does not hold up.** The NHL's public play-by-play feed records a shot type for every goal and timestamps every event, so tips, deflections and rebounds can all be counted — screens cannot. Across games 2024020001–2024020400 of the 2024-25 regular season, **29.7% of goals scored with the extra attacker on were a tip, a deflection, or a shot inside three seconds of a previous shot on goal**, against **23.4%** at 5-on-5. That is a real elevation and it points where the coaches point, but it is a long way from "most" — and the 6-on-5 sample is only **74 goals**, so read the gap as a direction rather than a rate. What is separately sourced is that the ice in front of the net converts several times better than the perimeter ([Shooting](../technique/shooting.md)). Clear bodies and take away sticks at the net front.
 - **Every clear is a shot.** Do not just chip it out — get your head up and put it toward the empty net if the lane is clean. **A puck that goes in is a goal and there is no icing; a puck that misses and crosses the goal line is icing** (see the next point), so this is a shot to take when you can actually hit the net, not a blind heave. A blind clear that goes straight to their point man is the worst outcome of the three.
-- **⚠️ You *can* be iced against a pulled goalie, and it is one of the worst things you can do to yourself.** It is tempting to reason that Rule 81.6's first paragraph is general — *"If the puck was so shot by a player of a side below the numerical strength of the opposing team, play shall continue and the icing violation shall not be called"* — and that five skaters against six are therefore below numerical strength. **The rulebook does not support that reading, on three counts.** (1) Rule 81.1 glosses the term where it defines it: icing applies to a team *"equal or superior in numerical strength **(power-play)** to the opposing team"* — the parenthetical ties the concept to penalty situations, and every other paragraph of 81.6 is about a penalty expiring or a penalty bench. (2) Rule 84.1 does not measure numerical strength in skaters alone; it sets three-on-three overtime at *"a numerical strength of three (3) skaters **and one (1) goalkeeper**"* — the goalkeeper is counted *inside* the figure, so six players against six is equal strength. (3) Rule 81.3 settles it in terms: where a goalkeeper *"is legitimately out of the crease in an attempt to go to the players' bench to be substituted for an extra attacker and in no way makes an attempt to play the puck, the icing **should not be nullified** under this section."* The rulebook is expressly contemplating an icing being called while the other team pulls its goalie, and preserving the call. **So the whistle comes.** You get a defensive-zone draw, **the attacking team picks the dot** (Rule 81.2), you **cannot change** (Rule 81.4) and you **cannot take a timeout** (Rule 87.1) — five exhausted skaters, in their own end, against six, with no way out. Get it out with a purpose, or put it on net. See [Special Teams](special_teams.md) for the shorthanded exemption, which is a different situation.
+- **⚠️ You *can* be iced against a pulled goalie, and it is one of the worst things you can do to yourself.** It is tempting to reason that Rule 81.6's first paragraph is general — *"If the puck was so shot by a player of a side below the numerical strength of the opposing team, play shall continue and the icing violation shall not be called"* — and that five skaters against six are therefore below numerical strength. **The rulebook does not support that reading, on three counts.** (1) Rule 81.1 glosses the term where it defines it: icing applies to a team *"equal or superior in numerical strength **(power-play)** to the opposing team"* — the parenthetical ties the concept to penalty situations, and every other paragraph of 81.6 is about a penalty expiring or a penalty bench. (2) Rule 84.1 does not measure numerical strength in skaters alone; it sets three-on-three overtime at *"a numerical strength of three (3) skaters **and one (1) goalkeeper**"* — the goalkeeper is counted *inside* the figure, so six players against six is equal strength. (3) Rule 81.3 settles it in terms: where a goalkeeper *"is legitimately out of the crease in an attempt to go to the players' bench to be substituted for an extra attacker and in no way makes an attempt to play the puck, the icing **should not be nullified** under this section."* The rulebook is expressly contemplating an icing being called while the other team pulls its goalie, and preserving the call. **So the whistle comes.** You get a defensive-zone draw, **the attacking team picks the dot** (Rule 81.2), you **cannot change** but for the narrow exceptions above (Rule 81.4) and you **cannot take a timeout** at all (Rule 87.1) — five exhausted skaters, in their own end, against six, with no way out. Get it out with a purpose, or put it on net. See [Special Teams](special_teams.md) for the shorthanded exemption, which is a different situation.
 - **Faceoffs are everything.** Draws in your own end at 5-on-6 decide games. Have the plan agreed before you line up.
 - **Take no penalties.** A 6-on-4 against is close to a goal.
 
@@ -500,6 +514,7 @@ Never: Change when the puck is in your defensive zone and your team does not hav
 Never: Change while you are the last man back, until you are relieved — and say so out loud
 Never: Change while the opposition is on a rush; finish the defensive play first
 Rule: You cannot change after your own icing (NHL 82.1, IIHF 81.4), so do not start drifting toward the bench — USA Hockey Rule 624 imposes no such restriction
+Rule: The exceptions are a pulled goalkeeper going back in, an injured player, or a penalty affecting on-ice strength (NHL 82.1) — the IIHF adds a broken skate (81.4)
 Never: Change in the middle of a 6-on-5 possession — change with the puck or not at all
 Action: Change when your team has the puck heading north, has just dumped it in deep, or after a completed clear
 ```
@@ -511,7 +526,7 @@ This is the part that separates good game management from a good motor.
 - **The puck is in your defensive zone and not under your team's control.** Coaches name this as one of the biggest sources of goals against in amateur hockey — an observation rather than a measured ranking, because no published data classifies goals by the cause behind them. Changing while the opposition has the puck in your end means a player leaves, a player arrives late from the bench, and for two seconds you are 4-on-5 in the most dangerous area of the rink.
 - **You are the last man back**, until you are relieved. Say so out loud.
 - **The opposition is on a rush.** Finish the defensive play, then change.
-- **You've just iced the puck.** You can't (NHL Rule 82.1; IIHF Rule 81.4), so don't start drifting toward the bench.
+- **You've just iced the puck.** You can't (NHL Rule 82.1; IIHF Rule 81.4), so don't start drifting toward the bench — the only ways off are the narrow exceptions set out under The icing trap above: a pulled goalkeeper going back in, an injured player, a penalty that changes on-ice strength, and under the IIHF a broken skate.
 - **You're in the middle of a 6-on-5 possession.** Change with the puck or not at all.
 - **You'd be changing into an offensive-zone faceoff you're needed for**, if you're the faceoff man.
 
@@ -690,7 +705,8 @@ Whether "momentum" is a real measurable force is genuinely disputed. What is not
 
 ```facts
 Mindset: Take the next shift as simply as possible — win a puck, get it deep, take your man, change
-Never: "Finish your check" on a player who has already passed or shot; that is a late hit under USA Hockey's standard of play
+Never: "Finish your check" on a player who has already passed or shot; USA Hockey's standard of play calls that unacceptable at all levels
+Rule: USA Hockey 640(b) assesses the minor for a body check on a player no longer in control of the puck "except Adult Male Classifications" — but 640 Note 2 and 640(a) still reach it as roughing there, so it is a penalty in adult men's hockey too
 Mindset: Play the game in front of you — replaying the goal is a decision-making tax you cannot afford
 Action: Reset your risk to baseline; chasing the goal back immediately is how one-goal deficits become three-goal deficits
 Action: Say one short factual sentence — "reset, next shift". Silence after a goal against is corrosive
@@ -701,7 +717,7 @@ The minute after a goal against is treated by coaches everywhere as the most dan
 
 **What to do:**
 
-- **Take the next shift as simply as possible.** Win a puck, get it deep, take your man, change. Nothing clever. (Note the wording: **"finishing your check"** — hitting a player who has already passed or shot — is a late hit under USA Hockey's standard of play and is described there as unacceptable. Take the body of the player who *has* the puck, or take the ice they need. See [Body Contact and Battles](../technique/body_contact_and_battles.md).)
+- **Take the next shift as simply as possible.** Win a puck, get it deep, take your man, change. Nothing clever. (Note the wording: **"finishing your check"** — hitting a player who has already passed or shot — is a late hit, and USA Hockey's standard of play calls the concept *"an unacceptable action"* at all levels of play. **One carve-out matters, and it is likely to be yours:** the named minor in USA Hockey Rule 640(b) — *"A minor penalty shall be assessed (except Adult Male Classifications) to any player who delivers an avoidable body check to an opponent who is no longer in control of the puck"* — is not assessed in Adult Male classifications. That does not make the hit legal there. Rule 640 Note 2 says a roughing penalty *"should also be assessed to a player who ... delivers an avoidable body check to an opponent after the whistle or who is no longer in control of the puck"*, with no classification exception, and Rule 640(a) carries the roughing minor or double minor. So in adult men's hockey the rule number changes and the advice does not. Take the body of the player who *has* the puck, or take the ice they need. See [Body Contact and Battles](../technique/body_contact_and_battles.md).)
 - **Play the game in front of you.** Replaying the goal in your head is a decision-making tax you can't afford. See [Mental Game](../off-the-ice/mental_game.md).
 - **Reset your risk to baseline.** The instinct is to chase the goal back immediately. That's how one-goal deficits become three-goal deficits.
 - **Talk.** One short factual sentence — "reset, next shift" — from anyone. Silence after a goal against is corrosive.
@@ -903,26 +919,67 @@ Three practical habits:
 - **Treating the time-out as a momentum spell.** The evidence doesn't support it. Treat it as rest and instruction at a moment of your choosing — and don't end the game with it unused, which is what happens in about 70% of games.
 - **Assuming last change means anything in your league.** Many rec leagues don't run a formal change procedure at all. On the road at any level, your matchup tool is the change on the fly.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. One-goal lead, four minutes left, you are pinned in your own end and you fire
+   it the length of the ice to "get a whistle". List everything you have just
+   handed the other team — and say which rule set would let you get away with it.
+   *(§The icing trap)*
+
+2. You have been on for fifty seconds, your legs are gone, and the puck is loose
+   in your own zone with the other team pressing. Do you change? Give the answer
+   and the reason, then name the moments when you *do* go. *(§When NOT to change)*
+
+3. Your coach pulls the goalie with two and a half minutes left rather than one.
+   What does the evidence say about that timing, what is the real cost you are
+   accepting — and once your net is empty, what happens to the trade "take the
+   penalty to stop the breakaway"? *(§Pulling the Goalie, §When a penalty is
+   worth taking)*
+
+4. The referee's arm goes up for a delayed penalty. What is free about the next
+   few seconds, what is the one way you can still be scored on, and what exactly
+   triggers the whistle? *(§The delayed-penalty freebie)*
+
+5. You are defending against a pulled goalie and you shoot the puck the length
+   of the ice. Is that icing? Give the answer, then say why "five skaters against
+   six means we are below numerical strength" is the wrong reading — and what it
+   costs you if you get it wrong. *(§Defending against 6-on-5)*
+
+6. Three-on-three overtime, you have the puck in their zone and no good look.
+   What do you do, and why is a shot that misses the net a worse outcome than
+   not shooting at all? *(§Regular-season 3-on-3 (NHL))*
+
+7. Someone tells you most amateur penalties are frustration penalties. Which
+   half of that claim is actually measured and which is not — and does the
+   practical advice change either way? *(§Frustration penalties)*
+
 ---
 
 ## Key Takeaways
 
-1. **Trailing teams shoot more; leading teams shoot less.** It's the best-established score effect in hockey. It distorts every raw statistic you'll ever look at, and it's the reason score-adjusted numbers exist.
-2. **Protecting a lead is an active job.** Manage the puck, chip it out cleanly, take away the middle, shorten your shifts, win the defensive-zone draws. Passive is not the same as safe.
+1. **Trailing teams shoot more; leading teams shoot less.** It is the best-established score effect in hockey, and it distorts every raw statistic you will ever look at.
+2. **Protecting a lead is an active job.** Manage the puck, take away the middle, shorten your shifts, win the defensive-zone draws. Passive is not the same as safe.
 3. **Scale your risk to the clock and the deficit, not to your emotions.** Down three with ten minutes left, being aggressive early beats being aggressive late.
-4. **Get the extra attacker on the ice sooner than feels comfortable.** The 6-on-5 scores at power-play-like rates and draws penalties at nearly twice the normal rate against the defending team; every study for fifty years says coaches pull the goalie too late. On a delayed penalty the extra attacker is free — the offending team cannot score (Rule 78.5(xi)) unless you put it in your own net — so the goalie goes immediately.
-5. **Last change is real but it's only a stoppage tool.** At home you match at whistles; on the road you match on the fly. Rule 82.1's icing exception — *"except in cases following an icing, which does not result in the delay of the game"* — bars only the team that iced it, so the free matchup after the *other* side's icing is yours home or away.
-6. **Handedness on the blue line is about the first pass, not the shot.** On your on-hand side, the exit is on your forehand and your body shields the puck. The measured effect is real but modest — roughly one percentage point.
-7. **The bad change is the most expensive routine mistake in hockey — and icing with a lead is the worst version of it.** Never change when the other team has the puck in your zone, or when you're the last man back. And after your own icing you *cannot* change (Rule 82.1) or take a time-out (Rule 87.1): you have handed them a defensive-zone draw against your five most tired players.
-8. **3-on-3 overtime is a possession game, not a shooting gallery.** Regroup rather than force a shot; only change with the puck; wait for a tired defender rather than a great shot.
-9. **Take the penalty that prevents a certain goal; never take the one that answers a slash — and once your goalie is pulled, take neither.** With the net empty, fouling a breakaway from behind or covering the puck in your crease is an awarded goal, not a penalty shot (Rules 25.1, 57.4 and 67.5). As for why amateur penalties happen: that they are mostly **aggression-type infractions** is measured (62.4% of 850 Bantam penalties); that they are mostly **frustration-driven** is coaching experience, not data. The habits that prevent them — keep your feet moving, give up the last word, have a reset — are worth having either way.
-10. **After a goal against, play one deliberately simple shift.** Win a puck, get it deep, take your man, change — not "finish your check", which means hitting a player who has already given up the puck and is a late hit under USA Hockey's standard of play. Then play hockey again. And remember that everything in this document that is not explicitly a rule is a coaching choice — yours may want something different.
+4. **Get the extra attacker on sooner than feels comfortable.** Every study for fifty years says coaches pull too late; on 2007-08 NHL data the 6-on-5 scores at power-play-like rates and draws penalties at nearly twice the normal rate.
+5. **On a delayed penalty the extra attacker is free** — the offending team cannot score (NHL Rule 78.5(xi)) unless you put it into your own net, so the goalie goes at once and no blind passes cross your crease. Many rec leagues do not practise this; agree it beforehand.
+6. **Last change is a stoppage tool only** — at home you match at whistles, on the road on the fly. NHL Rule 82.1 freezes only the team that iced the puck, so the other side's icing still hands you a matchup. Many rec leagues run no formal change procedure at all.
+7. **The bad change is the most expensive routine mistake in hockey.** Never change when the other team has the puck in your zone, or when you are the last player back. After your own icing you cannot change — save to put back a goalkeeper who had been pulled for an extra attacker, to replace an injured player, or when a penalty has been assessed that affects on-ice strength (NHL Rule 82.1), to which the IIHF adds a player with a broken skate (Rule 81.4) — and you cannot take a time-out at all (NHL and IIHF Rule 87.1). USA Hockey imposes neither restriction.
+8. **3-on-3 overtime is a possession game, not a shooting gallery.** Regroup rather than force a shot, and change only with the puck. Under the IIHF book teams do not change ends, so waiting out a stranded defender is far less reliable — and in Britain most fixtures have no overtime at all.
+9. **Take the penalty that prevents a certain goal; never the one that answers a slash — and once your goalie is pulled, take neither.** With the net empty those fouls are awarded goals rather than penalty shots (NHL Rules 25.1, 57.4, 67.5).
+10. **After a goal against, play one deliberately simple shift** — win a puck, get it deep, take your man, change. Not "finish your check": hitting a player who has already given up the puck is a late hit, and USA Hockey's standard of play calls that unacceptable at all levels. The named minor in Rule 640(b) is assessed "except Adult Male Classifications" — but Rule 640 Note 2 and 640(a) still reach it as roughing, so in adult men's hockey it is a penalty under a different number, not a free hit. Everything here that is not explicitly a rule is a coaching choice.
 
 ---
 
 *Sources — retrieved 27 July 2026:*
 
-*Rules: [NHL Official Rules 2025-2026](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 15 Calling of Penalties, Rule 19 Coincidental Penalties, Rule 25 Awarded Goals — 25.1, Rule 57 Tripping — 57.3 penalty shot and 57.4 awarded goal, Rule 63 Delaying the Game, Rule 67 Handling Puck — 67.4 penalty shot and 67.5 awarded goal, Rule 74 Too Many Men on the Ice, Rule 78 Goals, Rule 81 Icing including the major-penalty carve-out in 81.6, Rule 82 Line Changes, Rule 84 Overtime, Rule 87 Time-outs; Reference Table 10, Summary of Awarded Goals) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), the classification restriction on the shorthanded icing exemption · [NHL Rulebook index — Scouting The Refs](https://scoutingtherefs.com/nhl-rules/) · [Icing (ice hockey) — Wikipedia](https://en.wikipedia.org/wiki/Icing_(ice_hockey)) · [What are NHL overtime rules? — ESPN](https://www.espn.com/nhl/story/_/id/39345002/what-nhl-rules) · [Getting to Know the NHL Rulebook: Coincidental Penalties — Winging It In Motown](https://www.wingingitinmotown.com/getting-to-know-the-nhl-rulebook-coincidental-penalties/)*
+*Rules: [NHL Official Rules 2025-2026](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) (Rule 15 Calling of Penalties, Rule 19 Coincidental Penalties, Rule 25 Awarded Goals — 25.1, Rule 57 Tripping — 57.3 penalty shot and 57.4 awarded goal, Rule 63 Delaying the Game, Rule 67 Handling Puck — 67.4 penalty shot and 67.5 awarded goal, Rule 74 Too Many Men on the Ice, Rule 78 Goals, Rule 81 Icing including the major-penalty carve-out in 81.6, Rule 82 Line Changes, Rule 84 Overtime, Rule 87 Time-outs; Reference Table 10, Summary of Awarded Goals) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1), the classification restriction on the shorthanded icing exemption; Rule 640 Unnecessary Roughness (Roughing), including Note 2, the roughing minor in 640(a), and the *"(except Adult Male Classifications)"* wording in 640(b); and the *Standard of Play and Rule Emphasis – Body Checking* section of the preface, source for *"The concept of 'finishing the check' is an unacceptable action"* · [NHL Rulebook index — Scouting The Refs](https://scoutingtherefs.com/nhl-rules/) · [Icing (ice hockey) — Wikipedia](https://en.wikipedia.org/wiki/Icing_(ice_hockey)) · [What are NHL overtime rules? — ESPN](https://www.espn.com/nhl/story/_/id/39345002/what-nhl-rules) · [Getting to Know the NHL Rulebook: Coincidental Penalties — Winging It In Motown](https://www.wingingitinmotown.com/getting-to-know-the-nhl-rulebook-coincidental-penalties/)*
 
 *Score effects and analytics: [Analytics (ice hockey) — Wikipedia](https://en.wikipedia.org/wiki/Analytics_(ice_hockey)) · [The Casual Critic's Complete Guide to Hockey Analytics — Defending Big D](https://www.defendingbigd.com/nhl-guide-to-hockey-analytics-advanced-stats-corsi-expected-goals-war/) · [Advanced Hockey Analytics: A Primer — Tech Hockey Guide](https://techhockeyguide.com/2022/10/17/advanced-hockey-analytics-a-primer/)*
 

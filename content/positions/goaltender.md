@@ -9,20 +9,29 @@
 ## Overview
 
 ```facts
-Key: You are the only player who sees everything, all the time — and that view is wasted unless you talk
-Position: The last line of defence; when you make the mistake, everybody in the building knows whose it was
-Mindset: Goaltending is coached as much a mental skill as a physical one — reading, tracking, deciding, recovering
-Key: The one thing that happens behind you is a puck below your goal line, which is why post integration gets its own section
-Action: If you are a skater, read Overview, Communicating with Your Defence, Goaltender Interference and What a Goalie Needs From Their Skaters
+Key: Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all
+Priority: Be out, be square, be set — in that order; out and square but still moving is worse than slightly shallow and completely set
+Key: Depth is the decision you make before every save, and it always trades the shooter in front of you against the pass behind
+Read: Come out at a lone shooter with no pass available; get back when the puck is in tight, or a pass across the front of the goal is on
+Convention: On a screened shot from distance the coaching schools genuinely disagree — one wants you deeper, for time to find the puck; the other calls going deep a common error and wants a close gap, so ask which your coach teaches
+Technique: Track the puck all the way into the pad, the glove, the chest — if you saw it hit you, you know where the rebound went, and when a pass is released move then, not when it arrives
+Key: You see everything and you are the only player not deciding while sprinting — a view wasted unless you say it, early, short, every time
+Mindset: You will let in bad goals — have a reset ritual, use it identically every time, and do the analysis tomorrow, not during the game
 ```
 
-You are the only player on the ice who can see everything, all the time. Every other player has a blind side; you effectively do not, because the play develops in front of you, you face it permanently, and you are the only one who isn't making decisions while sprinting. That view is the position's greatest asset and it is wasted unless you talk. (The one thing that *does* happen behind you is a puck below your goal line — wrap-arounds, jam plays and pucks behind the net — which is precisely why post integration exists and why it gets its own section.)
+Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all.
 
-You are also the last line of defence. When everyone else makes a mistake, there is another layer behind them. When you make one, the light goes on and the horn sounds and everybody in the building knows exactly whose mistake it was. That is the honest mental demand of the position, and it is why goaltending is coached as much as a mental skill as a physical one: at higher levels almost every goalie can execute the saves, and the separation is made in reading, tracking, decision-making and recovering from mistakes.
+**Be out, be square, be set — in that order.** That means: as far out of your net as the situation calls for, chest and hips pointed at the puck, centred on the line from the puck to the middle of the goal, and stationary as the shot leaves. Out and square but still moving is worse than slightly shallow and completely set.
 
-Two audiences are served here. If you are learning to play goal, this is your technical and tactical grounding. If you are a skater, read the **Overview**, **Communicating with Your Defence**, **Goaltender Interference** and **What a Goalie Needs From Their Skaters** sections at minimum — most of the goals your team concedes from the net front are caused by skaters who do not know what their goalie is trying to do. **If you are a skater thinking about moving into the net**, read [Switching Positions → Anyone → goaltender](switching_positions.md) first — it explains why this is a different sport sharing a rink, and how to try it properly.
+**Depth is the decision you make before every save, and it always trades the shooter in front of you against the pass behind.** Come out at a lone shooter with no pass available; get back when the puck is in tight, or a pass across the front of the goal is on. Against a shot from distance with a screen — a player standing in your view — the coaching schools genuinely disagree: one wants you deeper, for time to find the puck; the other calls going deep a common error and wants a close gap — so ask which your coach teaches.
 
-**And if you have not started playing yet, going in as a goalie is the cheapest route onto the ice there is.** Goalies are scarce at every level of amateur hockey, so places in adult learn-to-play programmes are routinely free or discounted, and clubs frequently own goal equipment and loan it rather than risk a goalie shortage. [Getting Started](../getting-started/getting_started.md) covers the routes in, and [Equipment](../off-the-ice/equipment.md) covers the kit.
+**Track the puck all the way into the pad, the glove, the chest.** Almost every soft goal starts with losing sight of it; if you saw it hit you, you know where the rebound went. When a pass is released, move then, not when it arrives.
+
+**Your voice is the most valuable thing you do that is not a save.** You see everything and you are the only player not deciding while sprinting — a view wasted unless you say it. "Time", "man on", "leave it", "screen", "back door" — early, short, every time, because a goalie who calls intermittently trains their defencemen to filter them out.
+
+**You will let in bad goals.** Have a reset ritual, use it identically every time, and do the analysis tomorrow, not during the game.
+
+If you have not started playing yet, this is the cheapest route onto the ice: goalies are scarce, so learn-to-play places are often free or discounted and clubs often loan gear.
 
 ---
 
@@ -886,7 +895,7 @@ What follows is only the part that changes what *you* do.
 
 ```facts
 Action: Clear the net front with technique — inside shoulder ahead of theirs, box out, and lift their stick
-Never: Screen your own goalie, and don't back into the crease when you are being pushed
+Never: Screen your own goalie, or back into the crease when you are being pushed
 Never: Block a shot from a screening position — get to the shooter and block from close, or get out of the lane entirely
 Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide or dive before the pass is released
 Action: Let your goalie play the puck when they call for it — "I've got it" means get to your breakout position
@@ -1012,18 +1021,68 @@ The counterweight is the part that actually keeps people in the position: **goal
 - **Calling "screen" once and giving up.** Say it every time, loudly, until it changes something.
 - **Carrying the last goal into the next shift.**
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. One shooter, no pass available, shot from distance. How far out do you go,
+   what are the three things that depth costs you — and if you cannot have all
+   three of out, square and set, which one do you give up? *(§Depth is the
+   fundamental decision, and §Playing the angle)*
+
+2. There is a body in front of you and a point shot coming. **Two parts of this
+   have no single right answer** — name both splits, say what each side is
+   trading against the other, and say what both schools agree you must not do.
+   *(§Fighting for a sightline, and §Playing bigger and deeper through traffic)*
+
+3. You go to the post in RVH. Which pad goes where, what is the load-bearing
+   detail most descriptions of it leave out, and what is the one thing about post
+   play that nobody defends? *(§Post integration: VH and RVH)*
+
+4. A shot is coming from the top of the circle and your instinct is to drop.
+   Give three concrete reasons that instinct fails, and say which goalies it
+   fails worst for. *(§The butterfly is a tool, not a religion)*
+
+5. Their winger dumps the puck in from just inside their own blue line and it is
+   coming round to you. You could drift two strides toward it, you could smother
+   it, or you could stand still. Say what each of those three costs or buys you —
+   and which rule book changes the answer. *(§Icing — you are the one who can
+   wave it off, and §Freezing the puck — and the rules that govern it)*
+
+6. That same rim is running round the boards outside the trapezoid and you think
+   about dropping to stop it with your pads. What happens, where on the ice would
+   the identical act have been completely legal, and what should you do instead?
+   *(§Stopping pucks for your defence, and §The trapezoid — the rule that defines
+   what you can do)*
+
+7. You shout "shot" at your defenceman. What does that call actually mean, what
+   does it not mean, and what do you do if your team already uses the word the
+   other way round? *(§The core calls)*
+
+8. An attacker is standing in your blue paint obstructing your view and the puck
+   goes in. What does the rule say — and what is different about that answer in
+   EIH or SIHA competition, and what does that change about *when* you say
+   something? *(§Goaltender Interference, From Your Side of It)*
+
+---
+
 ## Key Takeaways
 
 1. **Positioning, not reflexes.** Good goaltending looks boring. Be out, be square, be set — in that order.
-2. **Depth is the fundamental decision**, and it is always a trade of front door against back door. Deeper against passes; further out against a clean single shooter. **Depth against a screen is genuinely disputed** — the traditional teaching is deeper for sighting time, and a second school calls falling deep under pressure a common error and keeps a close gap instead. Ask your coach.
-3. **Angle before depth — but treat that as a coaching philosophy, not a law.** The mainstream teaching is that deep and off-angle is a goal while on-angle and slightly deep is a save. There is a well-documented school that reverses the priority in one specific case — stepping off the post to a short-side shot, where depth is what closes the gap you just opened. **This is a genuine difference between coaches, not a settled fact. Ask yours which they teach.**
+2. **Depth is the fundamental decision**, and it always trades the shooter in front against the pass behind: deeper against passes, further out against a lone shooter. **Depth against a screen is genuinely disputed between coaching schools — ask yours.**
+3. **Angle before depth — a coaching philosophy, not a law.** Deep and off-angle is a goal; on-angle and slightly deep is a save. One documented school reverses that when you step off the post to a short-side shot. **Ask your coach which they teach.**
 4. **Track the puck all the way into your body.** Almost every soft goal starts with losing sight of the puck.
 5. **The butterfly is a save selection, not a style, and not a religion.** Stay on your feet until going down is the answer.
 6. **Rebound control in priority order: prevent, cover or clear, direct safely, recover.** Direct everything to the corners and know where their forwards are before the shot.
-7. **Your voice is the most valuable defensive tool on the ice.** "Time," "man on," "over," "reverse," "leave it," "I've got it," "screen," "back door." Early, short, every time.
-8. **Under NHL and IIHF rules you may only play the puck behind the goal line inside the trapezoid** — one exception, skate contact with the crease. Most North American rec leagues have no trapezoid at all. **In England and Wales the status is unsettled**: the IIHF book is in force and the In-House Rules do not amend Rule 27, but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* (IIHF Rule 27.7 — note the number, not the NHL's 27.8). Play it as though it binds until your league tells you otherwise, and know which you're in.
-9. **A screen from *outside* the crease, without contact, is normally legal** — both qualifiers belong to the legality claim itself. The blue paint is yours; your sightline is not — Rule 69.1 only helps you where the attacker's positioning or contact actually stops you moving or defending. **And in EIH or SIHA competition nobody reviews it**, so whatever the referee saw live is the decision. Handling traffic is a skill, not an injustice.
-10. **On a 2-on-1 you want the shot and your defenceman takes the pass** — say it out loud, because it is a convention, not a law. And **you will let in bad goals**: have a reset ritual, use it every time, and do the analysis tomorrow.
+7. **Your voice is the most valuable defensive tool on the ice.** "Time," "man on," "leave it," "screen," "back door." Early, short, every time.
+8. **Under NHL and IIHF rules you may play the puck behind the goal line only inside the trapezoid** — the one exception is skate contact with the crease. Most North American rec leagues have none. **In England and Wales the status is unsettled**: England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* (the IIHF numbers it Rule 27.7, not the NHL's 27.8). Play it as though it binds.
+9. **A screen from *outside* the crease, without contact, is normally legal** — both qualifiers belong to the claim. Rule 69.1 helps you only where an attacker's positioning or contact actually stops you moving or defending. **And in EIH or SIHA competition nobody reviews it**, so the referee's live call stands.
+10. **On a 2-on-1 you want the shot and your defenceman takes the pass** — say it out loud, because it is a convention, not a law. **You will let in bad goals**: use a reset ritual every time, and do the analysis tomorrow.
 
 ---
 

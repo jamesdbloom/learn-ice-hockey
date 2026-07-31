@@ -7,9 +7,17 @@
 
 ## Overview
 
-Hockey has one currency, and it is time and space. Every tactic in this guide — every forecheck, every breakout, every gap, every fake — is either a way of getting more of it for yourself or a way of taking it off the other team. This document names that currency and teaches you how to move it around.
+Hockey has one currency, and it is time and space: the room you have when the puck reaches you, and the moment you have to use it. Every tactic in this guide is a way of getting more of it, or of taking it off the other team.
 
-If you read one hockey IQ document, read this one first. It is the frame that makes the rest of this guide make sense.
+**Skill is not what makes players good. Skill is what they spend; time and space are what they earn.** Two players with the same stick skills and the same shot: one produces, one doesn't. The difference is almost never the skill — the first receives the puck with a metre and a half of clean ice and a head already up. Judge yourself on the room you had, not on whether your move worked.
+
+**Time is not seconds on a clock. It is how far away the nearest dangerous opponent is, divided by how fast they are closing on you** — a way of thinking about it rather than a quantity anyone measures. You can have time with an opponent three feet away who has overrun you and is travelling the wrong way, and none with one twenty feet away closing hard. Read hips rather than distance: a player accelerates where the hips face.
+
+**Look before the puck arrives, not after.** Your time starts the instant the puck touches your stick, so a glance over your shoulder while the pass is still travelling is free — and it buys more than any move you will ever learn.
+
+**When the play ahead is not there, turn away from the closing defender rather than into them.** Make a tight turn with the puck on the outside of it, hold it a second or two, and let a teammate arrive. It is the least natural thing here and the most valuable — though never in your own end, where losing the puck is a goal against.
+
+And one question every time you come off the ice: did I have more time than I thought? The honest answer is almost always yes.
 
 ---
 
@@ -102,7 +110,7 @@ Position: The offensive zone and the offensive blue line area — including a zo
 Technique: A tight turn with the puck on your outside hip, body between puck and defender, feet still moving
 Goal: Synchronise the play — a forward one stride late becomes a second attacker if you give him a second and a half
 Read: Somebody has to take the depth role for the delay to work; then the defence must step or fall back, and either answer creates something
-Never: Delay in your own defensive zone, and never delay when you already have numbers
+Never: Delay in your own defensive zone, or when you already have numbers
 Mindset: Be willing to look, for a second, like you are going backwards
 ```
 
@@ -360,7 +368,7 @@ Position: The seams between two defenders, in any zone — space by ambiguity ra
 Action: With the puck, move it toward space; without the puck, move yourself toward where the space will be, usually the weak side
 Never: Plan to stickhandle in the slot — plan on arriving with no time, for one touch, a tip or a rebound
 Never: Treat the strong-side corner as a playmaking zone — win the battle, then move the puck out of it
-Never: Slow down in the middle of the neutral zone — cross it with speed or don't cross it with the puck
+Never: Slow down with the puck in the middle of the neutral zone — a carrier who slows there gets swarmed; it is ice to cross with speed or without the puck
 ```
 
 Learn this like a map, because it tells you where to go with the puck and where to go without it.
@@ -508,18 +516,62 @@ Track it for ten games and the habit takes. It is the fastest improvement availa
 - **Letting the stick go to sleep.** The blade in a passing lane is the cheapest thing you do all shift and the first thing you drop when tired.
 - **Forcing the middle against a team protecting a lead.** They are conceding the outside on purpose. Take what's given.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. Two players have identical hands, identical shot and identical top speed. One
+   produces and one does not. What is the difference between them, and what should
+   you therefore grade yourself on after a shift? *(§Overview, and §1)*
+
+2. One opponent is three feet away and another is twenty. Which of them do you
+   have time against, and what are the three things you should actually be looking
+   at rather than the distance? *(§2. What "time" actually means)*
+
+3. You carry into contested ice and the option ahead is not there. What is the
+   play, what has a teammate away from the puck got to do for it to work, and
+   where must you never make it? *(§Delay and curl-back)*
+
+4. You skate across to block a defender and spring a teammate. What is that worth
+   in penalty minutes, and what exactly is the test the rule applies — because
+   standing still in the same spot is protected. *(§Getting open, and §Common
+   Mistakes)*
+
+5. You go in hard on the forecheck and nobody goes with you. What have you done to
+   the space rather than to the opponent, and what is the one thing you have to
+   find out before your first shift? *(§Pressure with support)*
+
+6. You are beaten and must give something up. Which do you concede, and why is
+   that a strong general principle rather than an absolute? *(§Take away the
+   middle first)*
+
+7. You want to take the goalie's eyes away. What is legal from outside the crease,
+   and what is the one limit that can void the goal with no contact at all?
+   *(§6. How the rules create space)*
+
+8. You move from a wide sheet to a narrow one. What changes, what stays almost
+   exactly the same — and why does this section point the opposite way if you play
+   in Britain? *(§7. How space changes with the score, the clock and the rink)*
+
+---
+
 ## Key Takeaways
 
-1. **Time and space are the currency of hockey, and time is distance divided by closing speed, not seconds.** Skill is what you spend; time and space are what you earn. You can have time with an opponent three feet away who is moving the wrong way, and none with one twenty feet away who is closing hard. Read hips, not distance. (That formula is a way of thinking about it, not a quantity anyone measures.)
-2. **Deception and a change of speed create space before it exists on the ice.** Fake shots, look-offs and shoulder fakes work because defenders must react to what you show them — and only if you sometimes mean it. Separation comes from the *difference* between your velocity and theirs, not your top speed: glide, look, explode.
-3. **Buy your time before the puck arrives, and again after it does.** Scanning before you receive buys more than any move, because your clock starts when the puck touches your blade — arrive already decided. And once you have it under pressure, turning away and curling back to let support arrive is the most under-used skill in amateur hockey. You are not going backwards, you are synchronising.
+1. **Time and space are hockey's currency, and skill is what you spend.** Time is distance divided by closing speed, not seconds — a way of thinking about it, not a quantity anyone measures. Read hips, not distance.
+2. **Deception and a change of speed create space before it exists on the ice.** Fake shots and look-offs work because defenders must react to what you show them — and only if you sometimes mean it. Separation comes from the *difference* in velocity, not your top speed: glide, look, explode.
+3. **Buy your time before the puck arrives.** Scanning before you receive buys more than any move, because your clock starts when the puck touches your blade — arrive already decided. Under pressure, turning away from the closing defender and curling back to let support arrive is the most under-used skill in amateur hockey — **but never in your own end, where a lost puck is a goal against.**
 4. **Attack the seam between two defenders, not one defender.** Force a decision between two players rather than a reaction from one.
-5. **Behind the net and the boards are structures nobody can attack you through.** Use them as pivots — and facing the wall puts your back to the play, so head up, chin off your chest, and know what is arriving. Behind their net is the best surveying spot on the ice; behind your own, it's one look and move it.
+5. **Behind the net and the boards are structures nobody can attack you through — use them as pivots.** Facing the wall puts your back to the play: head up, chin off your chest, know what is arriving. Behind their net, survey; behind your own, one look and move it.
 6. **Take away the middle first and concede the outside.** In every zone, the middle is worth more because more options radiate out of it.
-7. **Deny the reception rather than the pass, with your stick rather than your body.** A blade in a lane before the pass prevents passes that are never attempted; a jab at the puck after the pass is a gamble. Arrive as the puck does — you don't have to guess right, and the receiver loses their scan.
-8. **Pressure without a second layer doesn't remove space, it relocates it** — behind you. Find out whether your team forechecks 2-1-2, 1-2-2 or something else, and go on the same trigger as everyone else. This guide assumes a 2-1-2 and a low zone collapse unless it says otherwise; yours may differ.
-9. **The rules and the rink are space-shaping tools.** Offside stops cherry-picking, icing stops endless clearing, the trapezoid stops the goalie being a third defenceman, the crease protects the goalie's body — but not their sightline, which is why a screen from *outside* the paint, without contact, is legal. Not *free*, though: under Rule 69.1 positioning alone can void the goal if it stops the goalie moving or defending. And width changes everything lateral — NHL 200×85 ft against a traditional international 60×30 m, though "Olympic ice" no longer means wide, since Beijing 2022 ran NHL-width sheets. In England and Wales the trapezoid is the one of those to check rather than assume — England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced, though the In-House Rules' Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*. Plan as though their goalie may come for a dumped puck.
-10. **After every shift, ask: "did I have more time than I thought?"** The answer is almost always yes. Acting on that one question will improve you faster than anything else on this list.
+7. **Deny the reception rather than the pass, with your stick rather than your body.** A blade in the lane prevents passes that are never attempted; a jab after the pass is a gamble. Arrive as the puck does.
+8. **Pressure without a second layer doesn't remove space, it relocates it behind you.** Find out whether your team forechecks 2-1-2, 1-2-2 or something else, and go on the same trigger as everyone else. This guide assumes a 2-1-2 and a low zone collapse.
+9. **The rules shape space.** Offside stops cherry-picking, icing stops endless clearing, the trapezoid stops the goalie being a third defenceman, and the crease protects the goalie's body but not their sightline — which is why a screen from *outside* the paint, without contact, is legal. Not *free*, though: under NHL Rule 69.1 positioning alone can void the goal if it stops the goalie moving or defending. **In England and Wales, check the trapezoid rather than assume it** — England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced, though the In-House Rules say all rules follow the IIHF book. Plan as though their goalie may come for a dumped puck.
+10. **After every shift, ask: "did I have more time than I thought?"** The answer is almost always yes. Acting on it will improve you faster than anything else here.
 
 ---
 

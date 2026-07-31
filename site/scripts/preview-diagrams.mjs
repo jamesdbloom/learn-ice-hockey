@@ -19,7 +19,7 @@ import { execFileSync } from 'node:child_process';
 import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-import { playSvg, rinkSvg } from './lib/rink.mjs';
+import { playSvg, rinkSvg, legendSvg } from './lib/rink.mjs';
 
 const FOOTER = null;
 
@@ -40,8 +40,14 @@ mkdirSync(outDir, { recursive: true });
 
 for (const d of specs) {
   const width = d.width ?? 900;
-  const svg = d.kind === 'rink'
-    ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER })
+  // The same three-way branch build-diagrams.mjs uses, and it must stay the same
+  // three. Without the `legend` arm the notation key — the one diagram that defines
+  // every symbol every other diagram uses — fell through to playSvg and previewed as
+  // an empty half-sheet, so a reviewer could tick "rendered and viewed" on a blank
+  // rink. A preview tool that silently draws nothing is worse than one that crashes.
+  const svg =
+    d.kind === 'legend' ? legendSvg(width)
+    : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER })
     : playSvg({ ...d, footer: FOOTER }, { half: d.half ?? true, width });
   const svgPath = join(outDir, `${d.id}.svg`);
   writeFileSync(svgPath, svg);

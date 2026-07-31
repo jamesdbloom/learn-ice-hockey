@@ -284,8 +284,12 @@ const threeOnTwoDefault = {
       to:   { at: 'top-of-circle:left:far', dx: -8, dy: 1 },  kind: 'backward' },
     // "Take a route that puts you inside them, between them and your net, even if
     // that route is slightly longer. Arrive at their inside hip, not their back
-    // pocket." The route passes 6.8 ft clear of the middle attacker on the inside
-    // and finishes 4 ft goal-side of them, 7.2 ft away — past them, not at them.
+    // pocket." The route passes 8.1 ft clear of the middle attacker (A2_3ON2, at
+    // (-29, 5)) on the inside and finishes 5 ft goal-side of them, 8.6 ft away —
+    // past them, not at them. These read 6.8, 4 and 7.2; none of the three
+    // resolves against the current endpoints, and no anchor in this diagram has
+    // moved, so they are fossils of an earlier dx/dy on this route rather than of
+    // a rink.json change. The argument is unharmed — every clearance grew.
     { from: C_3ON2, to: { at: 'blue-line::far', dx: -9, dy: -2 }, kind: 'skate', bow: 1.5 },
   ],
 
@@ -535,8 +539,11 @@ const trailer = {
     { from: A3_TRAIL, to: { at: 'high-slot::far', dx: 1, dy: 1 }, kind: 'skate', bow: 1 },
     // "Skate first, then look." A backchecker who sprinted from the turnover can
     // catch this player; one who is five metres behind cannot. The route finishes
-    // 54 degrees off the line to the trailer and 12 ft short of them — it must not
-    // read as skating into the man.
+    // 36 degrees off the line to the trailer and 14.1 ft short of them — it must
+    // not read as skating into the man. (Read 54 degrees and 12 ft. The distance
+    // grew and the angle narrowed, so this one is worth re-checking if the route
+    // is ever moved again: 36 degrees is the thinner of the two margins, and it is
+    // the one that decides whether the arrowhead reads as aimed at the player.)
     { from: F_TRAIL, to: { at: 'high-slot::far', dx: 21, dy: -6 }, kind: 'skate', bow: 2 },
   ],
 

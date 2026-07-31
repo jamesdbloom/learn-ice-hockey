@@ -20,20 +20,49 @@
 // same place in both diagrams except for the one player the prose moves:
 // "Now pull one of those three off the line, into the middle."
 //
-// The three teammates are collinear by construction: (83,34), (68,33), (53,32)
-// all sit on the same line, 15 ft apart, running up the strong-side boards —
-// the section's own example, "say all three strung up the boards".
+// THE THREE TEAMMATES ARE COLLINEAR BY CONSTRUCTION, and they have to be: this
+// diagram exists to draw the WRONG shape, and if the three are not actually in a
+// line there is nothing for the next diagram to be a contrast with. `onLine(n)`
+// steps n × 15 ft along a single bearing from the carrier, so the premise cannot
+// decay the way three hand-typed coordinate pairs did. They were (83,34),
+// (68,38.5) and (53,37.5) — 15.66 and 15.03 ft apart, but bent: the middle man sat
+// 2.73 ft off the line through the other two, and the defender who is supposed to
+// be standing IN that line sat 2.63 ft to the boards side of it. Nothing in the
+// source said so, because the comment here still described the coordinates the
+// three had had before rink.json's half-wall moved. The caption said "a straight
+// line" and the picture showed a shallow zigzag.
+//
+// 8 DEGREES OFF THE BOARDS, AND IT IS NOT A FREE CHOICE. The deepest man is in the
+// corner, where the dasher curves away on the 28 ft arc about (72, 14.5), so his
+// glyph has to sit about 5.6 ft off it; the highest is up the straight wall, where
+// an own-team circle's ink (2.9 radius plus half of the 0.75 stroke) reaches the
+// boards at y 39.2. Three points 15 ft apart spanning those two cannot run
+// parallel to the wall — at 8 degrees the top man is at y 38.18 with 1.05 ft of
+// ice left, and any flatter draws the deep man's circle through the corner boards.
+// Resolved: (83, 34), (68.15, 36.09), (53.29, 38.18), cross product 0.02.
+// ASSUMES rink.json half-wall.y = 38.5 and the boards at y ±42.5.
 // ---------------------------------------------------------------------------
 
-const CARRIER = { at: 'corner:right', dx: 1 };              // (83, 34) deep on the wall
-const WALL_HIGH = { at: 'half-wall:right', dx: -16, dy: -1 }; // (53, 32) furthest up the wall
-// The defender stands *in* the line, 7.5 ft from the carrier and 7.5 ft from the
-// nearer receiver. He has to be between the carrier and the near option to be
-// between the carrier and both — that is the whole geometry of the section's
-// "One defender standing in that line is between the carrier and *both*
-// receivers." Kept at 7.5 ft rather than the 5 ft a stick actually reaches
-// because two glyphs 5 ft apart overlap at every width this renders at.
-const DEFENDER = { at: 'half-wall:right', dx: 6.5, dy: 0.5 }; // (75.5, 33.5)
+const STEP = 15;                                   // ft between adjacent players
+const TILT = 8 * Math.PI / 180;                    // the line's bearing off the boards
+const onLine = (n) => ({
+  at: 'corner:right',
+  dx: +(1 - n * STEP * Math.cos(TILT)).toFixed(2),
+  dy: +(n * STEP * Math.sin(TILT)).toFixed(2),
+});
+
+const CARRIER = onLine(0);                                  // (83, 34) deep on the wall
+const WALL_MID = onLine(1);                                 // (68.15, 36.09) the near option
+const WALL_HIGH = onLine(2);                                // (53.29, 38.18) furthest up the wall
+// The defender stands *in* the line, at its midpoint between the carrier and the
+// near receiver — 7.50 ft from one and 7.49 from the other. He has to be between
+// the carrier and the near option to be between the carrier and both — that is the
+// whole geometry of the section's "One defender standing in that line is between
+// the carrier and *both* receivers." Kept at 7.5 ft rather than the 5 ft a stick
+// actually reaches because two glyphs 5 ft apart overlap at every width this
+// renders at. He was at (75.5, 39), which was neither on the line nor 7.5 ft from
+// the carrier — 9.01 ft from him, and 2.63 ft off the lane he is the whole point of.
+const DEFENDER = onLine(0.5);                               // (75.57, 35.04)
 
 const supportInALine = {
   id: 'support-in-a-line',
@@ -59,10 +88,13 @@ const supportInALine = {
 
   players: [
     { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier' },
-    { id: 'A',  pos: 'F', at: { at: 'half-wall:right', dx: -1 },  label: 'option one' },
+    { id: 'A',  pos: 'F', at: WALL_MID,                           label: 'option one' },
     { id: 'B',  pos: 'F', at: WALL_HIGH,                          label: 'option two' },
-    // Open glyph = opposition, per the corpus's convention on top of the key.
-    { id: 'X',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes' },
+    // Open TRIANGLE = opposition; the id is just a role letter. Not 'X': the rendered
+    // legend and reading_ice_hockey_diagrams.md both say in terms that an X is a
+    // pylon — a practice cone — and never a player, and X-meaning-opposition is one
+    // of the symbols this corpus rewrote its notation specifically to escape.
+    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes' },
   ],
 
   // Deliberately no routes. Drawing the two pass lanes would draw two dashed
@@ -116,7 +148,9 @@ const supportTriangle = {
     // player — the placer's own ownership rule then exiles it across the zone on
     // a leader line, which is worse than no label. The caption says he has not
     // moved and is still in the lane up the boards.
-    { id: 'X',  pos: 'F', team: 'opp', at: DEFENDER },
+    // Same player, same spot, same letter as the previous diagram — see the note
+    // there on why he is not an 'X'.
+    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER },
   ],
 
   // One pass, into the lane the defender is not in. Stopped 4 ft short of the
@@ -145,32 +179,52 @@ const supportTriangle = {
 // "8-to-10-foot-or-less pass"); the 10-to-15 default is coaching rule of thumb.
 //
 // Geometry: an annulus centred on the carrier at the half-wall, inner radius 8 ft
-// and outer 15 ft, swept from 160 degrees round through 270 to 380 — everything
-// except the wall side, because the boards are 9.5 ft away there and a shaded
-// polygon is not clipped by the renderer, so a full ring would be drawn over the
-// dasher. Every corner is an offset in feet from `half-wall:right`; the numbers
-// are r*cos(theta) and r*sin(theta) and nothing else. Nine points per arc: five
-// came out visibly polygonal, and a range drawn with corners reads as a shape
-// somebody chose.
+// and outer 15 ft, swept from 175 degrees round through 265 to 355 — everything
+// except the wall side. A shaded polygon is NOT clipped by the renderer, so where
+// the sweep stops is the only thing keeping the band off the dasher.
+//
+// ASSUMES rink.json half-wall = (69, 38.5) and the boards at y ±42.5 — READ THE
+// $comment ON half-wall BEFORE CHANGING EITHER. The sweep used to run 160 to 380,
+// under a comment reasoning that the wall side had to be dropped "because the
+// boards are 9.5 ft away" — 42.5 − 33, which was true only at the old half-wall.y
+// of 33. At 38.5 the boards are 4 ft away, and both ends of that sweep put the
+// outer arc at y 43.63: a foot and an eighth of shaded ice drawn straight over the
+// upper dasher, at both corners, in the one diagram whose whole subject is a
+// distance. Truncation was already the mechanism; it was just sized against a
+// rink that no longer existed.
+//
+// Recomputed, the two ends are bounded by different things and the sweep is tipped
+// 5 degrees to hold both. The 175 end runs out over the straight wall, so the
+// limit is y ≤ 42.5; the 355 end runs into the corner, where the dasher curves in
+// on the 28 ft arc about (72, 14.5) and bites sooner. At 175/355 the outer arc
+// clears the boards by 2.69 and 2.36 ft respectively, and no point of the band is
+// nearer than 2.36 ft to the ice edge. Straight down the wall into the corner —
+// bearing 0, which the old sweep included — is 1.17 ft from the dasher at r 15 and
+// is correctly outside the band.
+//
+// Every corner is an offset in feet from `half-wall:right`; the numbers are
+// r*cos(theta) and r*sin(theta) and nothing else. Nine points per arc: five came
+// out visibly polygonal, and a range drawn with corners reads as a shape somebody
+// chose.
 const BAND = [
-  { at: 'half-wall:right', dx: -7.52, dy: 2.74 },    // inner, 160 deg
-  { at: 'half-wall:right', dx: -7.93, dy: -1.04 },   // inner, 187.5
-  { at: 'half-wall:right', dx: -6.55, dy: -4.59 },   // inner, 215
+  { at: 'half-wall:right', dx: -7.97, dy: 0.7 },     // inner, 175 deg
+  { at: 'half-wall:right', dx: -7.63, dy: -2.41 },   // inner, 197.5
+  { at: 'half-wall:right', dx: -6.13, dy: -5.14 },   // inner, 220
   { at: 'half-wall:right', dx: -3.69, dy: -7.1 },    // inner, 242.5
-  { at: 'half-wall:right', dx: 0, dy: -8 },          // inner, 270
-  { at: 'half-wall:right', dx: 3.69, dy: -7.1 },     // inner, 297.5
-  { at: 'half-wall:right', dx: 6.55, dy: -4.59 },    // inner, 325
-  { at: 'half-wall:right', dx: 7.93, dy: -1.04 },    // inner, 352.5
-  { at: 'half-wall:right', dx: 7.52, dy: 2.74 },     // inner, 380
-  { at: 'half-wall:right', dx: 14.1, dy: 5.13 },     // outer, 380
-  { at: 'half-wall:right', dx: 14.87, dy: -1.96 },   // outer, 352.5
-  { at: 'half-wall:right', dx: 12.29, dy: -8.6 },    // outer, 325
-  { at: 'half-wall:right', dx: 6.93, dy: -13.31 },   // outer, 297.5
-  { at: 'half-wall:right', dx: 0, dy: -15 },         // outer, 270
+  { at: 'half-wall:right', dx: -0.7, dy: -7.97 },    // inner, 265
+  { at: 'half-wall:right', dx: 2.41, dy: -7.63 },    // inner, 287.5
+  { at: 'half-wall:right', dx: 5.14, dy: -6.13 },    // inner, 310
+  { at: 'half-wall:right', dx: 7.1, dy: -3.69 },     // inner, 332.5
+  { at: 'half-wall:right', dx: 7.97, dy: -0.7 },     // inner, 355
+  { at: 'half-wall:right', dx: 14.94, dy: -1.31 },   // outer, 355
+  { at: 'half-wall:right', dx: 13.31, dy: -6.93 },   // outer, 332.5
+  { at: 'half-wall:right', dx: 9.64, dy: -11.49 },   // outer, 310
+  { at: 'half-wall:right', dx: 4.51, dy: -14.31 },   // outer, 287.5
+  { at: 'half-wall:right', dx: -1.31, dy: -14.94 },  // outer, 265
   { at: 'half-wall:right', dx: -6.93, dy: -13.31 },  // outer, 242.5
-  { at: 'half-wall:right', dx: -12.29, dy: -8.6 },   // outer, 215
-  { at: 'half-wall:right', dx: -14.87, dy: -1.96 },  // outer, 187.5
-  { at: 'half-wall:right', dx: -14.1, dy: 5.13 },    // outer, 160
+  { at: 'half-wall:right', dx: -11.49, dy: -9.64 },  // outer, 220
+  { at: 'half-wall:right', dx: -14.31, dy: -4.51 },  // outer, 197.5
+  { at: 'half-wall:right', dx: -14.94, dy: 1.31 },   // outer, 175
 ];
 
 const supportDistance = {
@@ -199,7 +253,7 @@ const supportDistance = {
     'boards level with the faceoff dot. A shaded band of ice curves around them on the open-ice side, ' +
     'its inner edge eight feet away and its outer edge fifteen. One teammate stands inside the band, ' +
     'below and inside the carrier, with a short dashed passing route running to them. A second teammate ' +
-    'stands inside the inner edge, about six feet from the carrier, too close to be an option. No ' +
+    'stands inside the inner edge, about seven feet from the carrier, too close to be an option. No ' +
     'opposition players are drawn.',
 
   // No label on the band. The renderer writes a zone's label at its centroid, and
@@ -209,7 +263,39 @@ const supportDistance = {
   zones: [{ points: BAND }],
 
   players: [
-    { id: 'C', pos: 'F', at: 'half-wall:right',                        label: 'puck carrier' },
+    // THE CARRIER IS DELIBERATELY UNLABELLED, and it is the placer that decides
+    // that, not taste. He stands on the half-wall with the boards above him and
+    // both of the other two labelled players below him, so his label's Voronoi
+    // cell is the strip of ice between y 36.75 and the top of the ice — and a
+    // label box is 3.5 ft deep, so nothing fits in it. Every one of `placeLabels`'
+    // eighteen fixed offsets then fails: the six vertical ones are either inside
+    // his own glyph's reserve or off the ice, and every remaining one is nearer S
+    // or T than it is to him, which the placer's ownership rule rejects outright
+    // ("a label belongs to the nearest thing to it, whatever the leader line
+    // says"). The fallback sweep does NOT test the corner arc — only `inside()`
+    // does, and the fallback never calls it — so it exiled "puck carrier" to
+    // (87.41, -39.25): the OPPOSITE corner, 79.9 ft away, 1.2 ft outside the
+    // boards, on a dashed leader crossing both circles, the crease and the net.
+    // In the one diagram whose entire subject is distance.
+    //
+    // SHORTENING DOES NOT RESCUE IT, and the way it fails is worth recording
+    // because it fails quietly. 'carrier', at seven characters, still misses every
+    // fixed offset — ownership does not depend on a label's width — and still
+    // falls through to the sweep; the sweep merely finds a narrower cell, at
+    // (57.49, 38.75). That is on the ice and looks fine, and it is 11.51 ft from
+    // the carrier and 11.20 ft from S at (62, 28.5). It is nearer the wrong
+    // player. Measured, not reasoned: the sweep's ownership branch had no legal
+    // cell at all here, so it degraded to the best-ratio fallback, which is the
+    // branch the placer's own note says produces "puck carrier ... 7.4 ft from F1
+    // and 20.3 ft from the carrier it named". A label on the wrong man is worse
+    // than no label, not better than a long leader.
+    //
+    // So this is closed the way positions.mjs closes it — the glyph loses the
+    // label and the words move to prose that a listener gets anyway. The caption
+    // says "a carrier on the half-wall", the `describe` says "A puck carrier
+    // stands on the right-hand boards level with the faceoff dot", and the puck
+    // is drawn at his feet. Nothing is lost but the leader nobody would trace.
+    { id: 'C', pos: 'F', at: 'half-wall:right' },
     // Inside the band at 12.2 ft, on a different angle from the carrier's own
     // line up the wall.
     { id: 'S', pos: 'F', at: { at: 'half-wall:right', dx: -7, dy: -10 }, label: 'in range' },
@@ -261,7 +347,8 @@ const supportAngles = {
     'line it needs the receiver to time their entry rather than park in the zone, because both skates ' +
     'completely over the line before the puck completely crosses it is offside (NHL Rule 83) — ' +
     'and a raised trail skate is onside under NHL and IIHF rules but offside under USA Hockey ' +
-    'Rule 630(a), so check which book your league uses. ' +
+    'Rule 630(a) and Hockey Canada Rule 6.11 — two books of the four — so check which book your ' +
+    'league uses. ' +
     'A team needs all three at once, so the useful question when you skate to support is which of the ' +
     'three is currently missing.',
 
@@ -357,7 +444,16 @@ const defensiveZoneSupport = {
     // the coordinate table's half-wall is.
     { id: 'W1', pos: 'F', at: 'half-wall:right',                      label: 'up the wall' },
     { id: 'C',  pos: 'F', at: SWING,                                  label: 'the middle' },
-    { id: 'W2', pos: 'F', at: { at: 'half-wall:left', dx: -14, dy: -3 }, label: 'high and wide' },
+    // The weak-side counterpart of W1, and given W1's treatment: ON the half-wall,
+    // dy 0, so "wide" tracks the coordinate table instead of a remembered one. The
+    // "high" is the dx: -14, which is what puts him up-ice of the dots. He carried
+    // dy: -3, harmless when half-wall.y was 33 and fatal at 38.5 — it drew his
+    // centre at y = -41.5, so 1.9 ft of a 2.9 ft circle was through the dasher and
+    // the painted edge was clipped by the viewport at -44.5. The caption's point
+    // about this player is that "the weak-side winger stays higher and WIDER than
+    // everybody else, and that width is what stops the defence loading one side of
+    // the ice" — and he was the glyph drawn half-buried in the boards.
+    { id: 'W2', pos: 'F', at: { at: 'half-wall:left', dx: -14 }, label: 'high and wide' },
   ],
 
   routes: [
@@ -456,6 +552,13 @@ const neutralZoneLanes = {
 // The support player is drawn 16.5 ft from the battle, which is the section's own
 // "open ice about five metres away" and nothing rounder. The opponent beside them
 // is the checker the section says you bring with you if you go in.
+//
+// ASSUMES rink.json half-wall = (69, 38.5), boards at y = 42.5, own-team glyph
+// radius 2.9. Every offset below is anchored to the half-wall rather than to a
+// remembered y, and the two distances this diagram states in words — the pinned
+// player being ON the boards, and the support player being five metres away — are
+// derived from that anchor. If half-wall.y moves, this comment is wrong and the
+// picture is not: that is the intended failure mode.
 // ---------------------------------------------------------------------------
 
 const battleSupport = {
@@ -482,19 +585,49 @@ const battleSupport = {
     'between that support player and the net, marking them. No routes are drawn.',
 
   players: [
-    { id: 'T',  pos: 'F', at: { at: 'half-wall:right', dy: 5 },           label: 'pinned on the wall' },
-    { id: 'X1', pos: 'F', team: 'opp', at: { at: 'half-wall:right', dx: 2, dy: -0.5 } },
-    // 16.5 ft from the teammate on the wall — five metres.
-    { id: 'S',  pos: 'F', at: { at: 'faceoff-dot:right', dx: -4 },        label: 'open ice, stick down' },
-    { id: 'X2', pos: 'F', team: 'opp', at: { at: 'faceoff-dot:right', dx: 4, dy: -6 }, label: 'your checker' },
+    // ON the half-wall — dy is 0, so he tracks the coordinate rather than an offset
+    // from a remembered one. He carried dy: +5, which put him at y = 43.5: a foot
+    // beyond the dasher, with 1.90 ft of his glyph cut off by the viewport. The
+    // caption opens "your teammate is pinned on the boards with the puck", and he
+    // was the one player in the picture the reader could not see whole. At 38.5 the
+    // circle tops out at 41.4, or 41.78 counting the 0.75 stroke — 0.72 ft of ice
+    // to spare. Anything above 39.6 puts an own-team circle through the boards.
+    { id: 'T',  pos: 'F', at: 'half-wall:right',                          label: 'pinned on the wall' },
+    // The checker doing the pinning: inside him and half a body deeper, 5.85 ft
+    // centre to centre, the overlap at the shoulder being what reads as a pin. He
+    // moved down with the man he is pinning — the offset from T is unchanged, so
+    // the picture is the same picture, five feet lower.
+    //
+    // Not 'X1'. An X in this corpus is a pylon — a practice cone — and never a
+    // player: the rendered legend and reading_ice_hockey_diagrams.md both say so in
+    // terms. See the note on the first diagram in this file. Not 'F1'/'F2' either,
+    // which would be the obvious way to tell two opponents apart: this same module
+    // uses F1/F2/F3 for OWN-TEAM roles set by order of arrival in the neutral-zone
+    // and layering diagrams, and playing_without_the_puck.mjs refuses those letters
+    // for opposition on exactly that ground. Two glyphs sharing a role letter is
+    // already the corpus's convention — faceoffs.mjs draws two 'W's and two 'D's in
+    // one picture — because the letter names the kind of player, not the person.
+    { id: 'F',  pos: 'F', team: 'opp', at: { at: 'half-wall:right', dx: 2, dy: -5.5 } },
+    // 16.5 ft from the teammate on the wall — five metres (16.49 ft = 5.03 m).
+    // dy: +0.5 restores that: with T back on the half-wall the straight 4 ft offset
+    // measured 16.98, and the 16.5 in this comment was computed when half-wall.y
+    // was 33 — a stale number of exactly the kind that moved the winger in
+    // positions.mjs to the wrong place.
+    { id: 'S',  pos: 'F', at: { at: 'faceoff-dot:right', dx: -4, dy: 0.5 }, label: 'open ice, stick down' },
+    // Your checker, between you and the net. Same reasoning on the letter.
+    { id: 'F',  pos: 'F', team: 'opp', at: { at: 'faceoff-dot:right', dx: 4, dy: -6 }, label: 'your checker' },
   ],
 
   // No routes on purpose. The movement this section describes is a player NOT
   // going somewhere, and an arrow drawn into the pile — however it were labelled
   // — is the instruction a reader takes from a glance.
-  // On the far side of the pinned player from the checker — the side they are
-  // shielding it on. At dy 6 it was drawn on top of their own glyph.
-  puck: { at: 'half-wall:right', dx: -4, dy: 6 },
+  // On the far side of the pinned player from the checker — the boards side, which
+  // is the side they are shielding it on. It rode up with T's old dy: +5 and sat at
+  // (65, 44.5), two feet outside the dasher and half of it cut off by the viewport,
+  // so the puck the caption is about was in the crowd. At dy: +1.5 it is at (65, 40)
+  // — 1.5 ft of ice above it, 4.27 ft from T's centre, so it sits just off the rim of
+  // his glyph rather than under it, and squarely opposite the checker.
+  puck: { at: 'half-wall:right', dx: -4, dy: 1.5 },
 };
 
 // ---------------------------------------------------------------------------
@@ -507,10 +640,15 @@ const battleSupport = {
 //
 // The second player's spot is doing two jobs the section names: it is up the wall
 // from the first, which is where the carrier goes if the first player is beaten
-// on the side he is being angled toward, and it sits within about two and a half
-// feet of the passing lane to the opposition's up-wall option. The pass along
-// that lane is deliberately not drawn — the second player is standing in it, so
-// drawing it would run a route through a glyph.
+// on the side he is being angled toward, and it sits 6.2 ft off the passing lane
+// to the opposition's up-wall option — within a stick and a half of it, which is
+// what standing in a lane means at this scale. That figure read "about two and a
+// half feet" and was computed before rink.json's half-wall moved to 38.5; the
+// second player is anchored to the half-wall, so he moved with it and the number
+// did not. The pass along that lane is still deliberately not drawn: the section's
+// claim is that the layer covers it, not that it is open, and an arrow squeezing
+// between the second player's glyph and the winger he is covering asserts the
+// opposite of what the caption says.
 // ---------------------------------------------------------------------------
 
 const F1_AT = { at: 'faceoff-dot:right', dx: -5, dy: 4 };   // (64, 26)
@@ -540,15 +678,39 @@ const layerNotConverge = {
     'The attacking half of the rink, the opposition net at the right. An opposition defenceman has the ' +
     'puck in the right-hand corner. One own forward closes from up-ice and inside, with a checking ' +
     'pressure route that finishes short of the carrier and aimed at the ice inside them rather than at ' +
-    'the puck. A second own forward stands about eleven feet behind and to the boards side of the first, ' +
-    'up the wall, standing in the lane to the opposition winger who waits higher up the same boards. No ' +
-    'pass is drawn.',
+    'the puck. A second own forward stands about fifteen feet behind and to the boards side of the ' +
+    'first, up the wall and a stick’s reach off the lane to the opposition winger who waits higher up ' +
+    'the same boards. No pass is drawn.',
 
   players: [
     { id: 'D',  pos: 'D', team: 'opp', at: { at: 'corner:right', dx: -4 },              label: 'puck carrier' },
     { id: 'W',  pos: 'F', team: 'opp', at: { at: 'top-of-circle:right', dx: -10, dy: 8 }, label: 'the escape option' },
-    { id: 'F1', pos: 'F', at: F1_AT,                                                    label: 'first, pressures' },
-    { id: 'F2', pos: 'F', at: { at: 'half-wall:right', dx: -14, dy: -1 },               label: 'second, layers' },
+    // THE LABELS SAY THE JOB; THE IDS SAY THE ORDER. They read "first, pressures"
+    // and "second, layers", and the "first"/"second" was redundant twice over —
+    // the glyphs are already F1 and F2, and the caption already says "First and
+    // second here are the order they arrive in, not two particular players".
+    // Dropping it is not cosmetic. F2 stands up the wall at (55, 37.5) with the
+    // boards above him, W below-left and F1 below-right, so his label has to go
+    // down; at fourteen characters its box is 21.95 ft wide, which is wider than
+    // the gaps between those two glyphs' 7 ft reserves, and every one of the
+    // placer's eighteen offsets collided. The fallback sweep does not test the
+    // corner arc, so it exiled "second, layers" to (40.98, -39.25) — 78.0 ft away
+    // in the opposite corner, on a DASHED leader, in a corpus where a dashed line
+    // means a pass, and it was the only long line in the picture.
+    //
+    // The arithmetic, so the next label written here is checkable rather than
+    // guessed: `placeLabels` sizes a box at 0.56 x the 2.8 ft font per character
+    // by 3.5 ft deep, reserves 7 x 8 ft around every glyph, and collides on
+    // overlap of the two boxes. The slot that works is [0, -7.5] = (55, 30); it
+    // clears W's reserve at (44, 30) for any width, and clears F1's at (64, 26)
+    // only while the box is at most 11 ft wide — SEVEN CHARACTERS. 'layers' is
+    // six. Checked by rendering three widths rather than by arithmetic alone: six
+    // and seven characters both land at (55, 30), and eight falls out of the fixed
+    // offsets into the sweep and lands at (66.27, 38.75) — 11.3 ft away instead of
+    // 7.5, still its own anchor's but a leader twice as long across a busier part
+    // of the picture. So if this label ever grows a word, re-render it and look.
+    { id: 'F1', pos: 'F', at: F1_AT,                                                    label: 'pressures' },
+    { id: 'F2', pos: 'F', at: { at: 'half-wall:right', dx: -14, dy: -1 },               label: 'layers' },
   ],
 
   // Checking pressure, finishing at the ice inside the carrier — 23 degrees off

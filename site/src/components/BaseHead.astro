@@ -55,6 +55,32 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 <link rel="manifest" href="/manifest.webmanifest" />
 <meta name="theme-color" content="#0f5a8f" />
 <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+{/*
+  Both capability tags, deliberately.
+
+  A JSX comment rather than an HTML one so it stays out of the shipped markup:
+  it is long, it appears on all 42 pages, and it quotes two meta tags verbatim,
+  which makes a grep of dist/ report capability tags that are not really there.
+
+  Chrome logged the only console warning on any page of this site: the
+  apple-mobile-web-app-capable tag is deprecated, "Please include
+  <meta name=mobile-web-app-capable content=yes>". Note what it asks for — that
+  the standard tag be *included*, not that the Apple one be removed. So the
+  standard tag is added here and the Apple one stays.
+
+  Removing the Apple tag was considered and rejected on the evidence available.
+  What was checked when this was written: WebKit's "New WebKit Features in
+  Safari 15.4" post describes Web App Manifest improvements (manifest fetched
+  during page load, icons declared in the manifest now supported) but says
+  nothing about the manifest's `display` member, which is what would have to be
+  honoured for the manifest alone to launch standalone on iOS; and web.dev's web
+  app manifest page advises against the legacy meta elements without naming any
+  iOS version from which they stopped being needed. Neither source establishes
+  that iOS reads the standard tag. Not established, so not removed — dropping it
+  would silently downgrade older iPhones from a standalone home-screen app to a
+  Safari tab, and the warning does not ask for that.
+*/}
+<meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Ice Hockey" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

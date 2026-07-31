@@ -25,7 +25,7 @@
 // ---------------------------------------------------------------------------
 
 // The strong-side half-wall — "the boards area level with the faceoff dot,
-// between the corner and the point" (section 7). (69, 33)
+// between the corner and the point" (section 7). (69, 38.5)
 const HALF_WALL = 'half-wall:right';
 
 // The goaltender, a foot back of the crease node — so two feet out from the goal
@@ -171,10 +171,16 @@ const royalRoad = {
 // ---------------------------------------------------------------------------
 
 // Where the old carrier ends up after rotating up off the wall. Expressed as an
-// offset from the half-wall he came from — eight feet up-ice and five feet off
-// the boards — because that is what "rotates up" means relative to where he was,
-// and the vocabulary has no name for the spot.
-const ROTATED_UP = { at: 'half-wall:right', dx: -8, dy: -5 };   // (61, 28)
+// offset from the half-wall he came from — eight feet up-ice and five feet in off
+// the half-wall — because that is what "rotates up" means relative to where he
+// was, and the vocabulary has no name for the spot. ASSUMES half-wall.y = 38.5
+// (site/src/data/rink.json), which leaves him 9 ft off the dasher.
+//
+// This read "five feet off the boards", which was true only while half-wall.y was
+// 33 and the half-wall was itself 9.5 ft off the dasher; the offset has always
+// been measured from the half-wall, not from the boards, and the two stopped
+// being interchangeable when half-wall moved onto the wall.
+const ROTATED_UP = { at: 'half-wall:right', dx: -8, dy: -5 };   // (61, 33.5)
 
 // The high forward. Section 3: "higher in the zone, toward the top of the circles
 // or the point"; the non-negotiable is that at least one forward is in or
@@ -182,10 +188,16 @@ const ROTATED_UP = { at: 'half-wall:right', dx: -8, dy: -5 };   // (61, 28)
 const HIGH_F = { at: 'top-of-circle:right', dy: -14 };          // (54, 8)
 
 // The forward below the puck — "deeper toward the goal line than the puck
-// carrier". Set two feet deeper and three feet off the corner node, because at
-// the node itself the glyph rendered shoulder to shoulder with the half-wall
-// carrier and the frozen shape read as two players side by side on the wall
-// rather than one below the other. (84, 31)
+// carrier". Set two feet deeper and three feet off the corner node. (84, 31)
+//
+// The reason recorded here was that at the bare node the glyph "rendered shoulder
+// to shoulder with the half-wall carrier ... two players side by side on the wall
+// rather than one below the other", and that was a statement about half-wall.y =
+// 33: the corner node is y 34, so the two sat within a foot of each other and read
+// as level. At 38.5 the corner node is already 4.5 ft below the half-wall and 13.8
+// ft from it, so the shape reads as one below the other without this offset. The
+// dy: -3 is now buying depth separation it no longer has to buy. Left in place —
+// changing it moves a glyph — but do not re-derive it from the stale reason.
 const DEEP_CORNER = { at: 'corner:right', dx: 2, dy: -3 };
 
 const fiveManShape = {
@@ -369,8 +381,10 @@ const halfWallOptions = {
 // ---------------------------------------------------------------------------
 
 // Where the defenceman shoots from, after walking. Section 5: "walks the puck
-// toward the middle before shooting". Ten feet in along the blue line from the
-// point node, which is the section's "two or three strides toward the middle".
+// toward the middle before shooting". Fourteen feet in along the blue line from
+// the point node, which is the section's "two or three strides toward the middle".
+// (Said ten; the point node is y 20 and this is y 6. Not a rink.json fossil —
+// point.y is unchanged — but an internal dy edit that never reached the prose.)
 const WALKED_TO = { at: 'centre-point', dy: 6 };                // (25, 6)
 
 // The high-slot support. Section 5: "One forward supports in the high slot,

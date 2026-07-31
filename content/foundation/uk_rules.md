@@ -6,11 +6,19 @@
 
 ## Overview
 
-If you play in Britain, **your rule book is the IIHF's.** Every level of the game here runs on it: the National Ice Hockey League, the recreational and junior game in England and Scotland, university hockey, and the GB national teams — and the Elite League too, though that rests on the League's own public reporting rather than on its Casebook, which nobody here has read.
+If you play in Britain, **your rule book is the IIHF's.** Every level of the game here runs on it — the National Ice Hockey League, the recreational and junior game in England and Scotland, university hockey and the GB national teams, and the Elite League too, though that last rests on the League's own public reporting rather than on its Casebook, which has not been read. Almost all hockey writing in English is written to NHL rules and so describes somebody else's game: wherever it flags an **IIHF** difference, that flag is yours; wherever it flags **USA Hockey** or **Hockey Canada**, it is not.
 
-That single fact does most of the work. Wherever the other documents here say *"under IIHF rules…"*, they are describing your game. Wherever it flags a USA Hockey or Hockey Canada divergence, that flag is not yours — it is there for North American readers.
+Four things change what you do here, and the first is the sharpest difference between Britain and North America:
 
-What Britain adds on top is a short layer of local amendment:
+**A neck laceration protector is mandatory for every player, adults included** — *"mandatory for all players in all IIHF categories and SIHA competitions"*, covering *"as much of the neck as possible"*. Under the In-House Rules that England, Scotland and university hockey apply, failing to wear one is an immediate 10-minute misconduct with **no warning**, a second offence escalates to a game misconduct, and England Ice Hockey extends the requirement to *"all on ice activities"*, practices included. Assume no warning: the two British documents disagree on that point, nothing published resolves it, and the strict reading costs you nothing. USA Hockey exempts adults and Hockey Canada's rule reaches only minor and female hockey — neither exemption is yours.
+
+**No British rulebook tells you whether body checking is legal at your age**, and that is the most consequential gap here. Neither British source sets a checking age, and the North American age lines are not in force and do not transfer. The answer sits in your competition's regulations: ask your league before you hit anyone.
+
+**There is no on-ice video review in EIH or SIHA competition, and no Coach's Challenge either.** The referee's call is the call. Video is still used after the final whistle for supplementary discipline, which can reach incidents nobody penalised at the time.
+
+**Your rink may well be smaller than the rulebook's.** In EIH and SIHA fixtures the In-House Rules authorise sheets below 56 m × 26 m for all levels, naming three rinks permitted only up to U16 — and a sheet under that threshold is shorter than the only length the IIHF book recognises, 60 m, and narrower than its 26 m minimum width. No census of British rink dimensions has been published, so go and look at yours.
+
+On top of the IIHF book sits a short layer of local amendment:
 
 | You play in | Your rules are |
 |---|---|
@@ -122,7 +130,7 @@ Practically: the referee's call on the ice is the call. Where you read or hear a
 
 ### Rinks are often smaller than the book says
 
-IIHF Rule 1.2 specifies a sheet *"60m long and 26m to 30m wide"* — note that 30 m is the top of a range, not the standard. In England and Scotland, *"rinks with a non-standard playing surface (below 56 m × 26 m) are authorised by the NGB for all levels of hockey"*, with three named rinks permitted only up to U16 — Sutton in England, and Coatbridge and Limekilns Road in Scotland.
+IIHF Rule 1.2 specifies a sheet *"60m long and 26m to 30m wide"* — note that 30 m is the top of a range, not the standard. The In-House Rules provide that *"rinks with a non-standard playing surface (below 56 m × 26 m) are authorised by the NGB for all levels of hockey"*, with three named rinks permitted only up to U16 — Sutton in England, and Coatbridge and Limekilns Road in Scotland. The rule carries its own scope line: *"This rule applies to all EIH and SIHA fixtures."* So it does not reach BUIHA hockey or the Elite League, neither of which is covered by anything on file here.
 
 That threshold sits **outside IIHF Rule 1.2 altogether**: the book fixes the length at 60 m and makes 26 m its *minimum* width, so a rink below 56 m × 26 m is short of the book on both counts. [Rink Map and Glossary](rink_map_and_glossary.md) owns the dimensions and the markings.
 
@@ -133,7 +141,7 @@ This matters more than it sounds. [Time and Space](../hockey-iq/time_and_space.m
 - **Women's hockey only:** the In-House Rules place *"Players may wear a half visor only from the start of the season following their 18th birthday"* under **Rule 102 – Women's Hockey Specific Equipment Rules**. Read it as a **relaxation, not a restriction**: IIHF Rule 102.1 requires *"full-face protection (full-visor, or cage facial protection)"* for every player in the women's Senior category, and this permits a half visor instead once the player is past that birthday.
 - All players in **SIHA Recreational or SIHA University** hockey must wear at minimum a half visor, *"regardless of their date of birth."*
 - **University hockey in England is covered too, and by a separate clause.** Under *Rules Applying Specifically to BUIHA Games in England and Scotland*: *"all players in BUIHA games are required to wear a half visor as a minimum."* All recreational players in Scotland are under the same floor. So if you play BUIHA — which is English and Scottish university hockey — the half-visor minimum is yours, whichever of the two clauses you reach first.
-- **Face cages are mandatory in all junior hockey.** England Ice Hockey *Rules & Regulations* 24.5: *"Face cages for all junior hockey games are mandatory, and must be worn as per the manufacturers stipulations. Cages must be tight against the player's chin at all times."*
+- **Face cages are mandatory in junior hockey in England and Wales — and that is an England Ice Hockey rule, so it does not reach Scotland or university hockey.** England Ice Hockey *Rules & Regulations* 24.5: *"Face cages for all junior hockey games are mandatory, and must be worn as per the manufacturers stipulations. Cages must be tight against the player's chin at all times."* England Ice Hockey is the NGB *"in England and Wales"* (*Rules & Regulations* 1.1), so outside that jurisdiction the floor is the IIHF book's — and the IIHF book is looser. **Rule 202.2** requires every player in the men's junior **Under-18** category to wear *"a full-face protection (full-visor or cage), properly fixed to the helmet"*: a full-face **visor** satisfies it, and a cage is one of two permitted options rather than the only one. Above that, **Rule 202.1** puts the **Under-20** category on Rule 9.7, whose floor is lower again — *"as a minimum a visor"*. The In-House Rules do not close the gap: they impose no cage mandate at any age, and their only mention of cages is how one must be fitted by a player already wearing one. So: a cage throughout junior hockey in England and Wales, and full-face protection of **either** kind at Under-18 elsewhere in Britain.
 - The gap between chin and chin strap **must not exceed 2.5 cm** — about one finger. First offence sends you to the bench to adjust; second is a 10-minute misconduct.
 - A full cage must have the chin cup fitted and in contact; loose or dangling cages and straps are not permitted.
 
@@ -155,9 +163,18 @@ In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a **five-minute major*
 
 ### Overtime is not universal
 
-Overtime *"is only played in NIHL fixtures and in SNL fixtures where specifically provided for in competition regulations."* Many games simply end level.
+In-House **Rule 84** provides that overtime *"is only played in NIHL fixtures and in SNL fixtures where specifically provided for in competition regulations."* Many games simply end level.
 
-Where NIHL National League games do go to overtime: **five minutes of 3-on-3**, then a game-winning-shots competition with **three shooters per team** taking alternate shots, and if still level it continues one shot each as sudden victory. **The Playoff Final Weekend is different** — its semi-finals run **20 minutes of 5-on-5** before any shots competition. And unlike IIHF 84.4, which requires five *different* shooters, the British procedure permits the same player to take more than one attempt in some competitions — check yours.
+Where NIHL National League games do go to overtime: **five minutes of 3-on-3**, then a game-winning-shots competition with **three shooters per team** taking alternate shots, and if still level it continues one shot each as sudden victory. And unlike IIHF 84.4, which requires five *different* shooters, the British procedure says in terms that *"the same player may be used for multiple attempts."*
+
+**The Playoff Final Weekend carries two separate procedures, and they differ in kind — not in degree.** Appendix 1 sets them out as distinct provisions:
+
+- **Semi-finals.** *"If the score in the Semi Finals is level after regulation"*, the game goes to **20 minutes of 5-on-5** overtime, and *"if still tied, a Game Winning Shots (GWS) competition will take place"* — the same three-shooter procedure as above.
+- **The Final.** *"If the score in the Final is level after regulation, the game will proceed to successive 20:00 periods of 5-on-5 sudden-death overtime until a goal is scored ('golden goal')"* — and then, in terms: *"No Game Winning Shots will be used."*
+
+So a semi-final can end in a shootout and the Final cannot. Do not carry either across to the other: the Final is played out until somebody scores, however many periods that takes.
+
+**BUIHA has a designated exception, and it sits in tension with Rule 84's word "only".** Under *Rules Applying Specifically to BUIHA Games in England and Scotland*, Appendix 1 provides: *"Certain fixtures will be designated as VARSITY OT games on the schedule. These games will follow the NIHL rules for Overtime and Game Winning Shots."* Read literally, Rule 84 confines overtime to NIHL and SNL fixtures and so excludes BUIHA altogether. **That tension is in the In-House Rules themselves rather than introduced here**, and nothing published resolves it — but the Varsity OT clause is the more specific provision, written for a named case, so follow it where your fixture is marked **VARSITY OT** on the schedule. Where a BUIHA fixture is not so marked, Rule 84 is the general rule and there is no overtime.
 
 ### Age categories are British, and unisex
 
@@ -201,29 +218,77 @@ A team manager may sit on the bench but does not count toward the requirement. O
 ## Common Mistakes
 
 - **Reading the USA Hockey flags as though they were yours.** They are the commonest rule-set flags here, because the base text is written to NHL rules. In Britain, the IIHF flags are the ones that apply to you.
-- **Assuming neck protection is optional because you are an adult.** That is the North American position, and it is not the British one. It is a 10-minute misconduct, with no warning — and it applies at practice too, not just in games.
+- **Assuming neck protection is optional because you are an adult.** That is the North American position, and it is not the British one: IIHF Rule 9.12 mandates it at every British level, adults included. In EIH, SIHA and BUIHA competition it is a 10-minute misconduct with **no warning** — and it applies at practice too, not just in games.
 - **Expecting a review, or a Coach's Challenge.** There is no on-ice video review in EIH or SIHA competition, and no challenge either. Video can still be used for supplementary discipline after the game.
 - **Assuming a North American checking age applies to you.** Neither British book sets one. Ask your league; do not infer it from USA Hockey's 12U line.
 - **Playing English university hockey and reading past the half-visor minimum.** BUIHA has its own clause, separate from the SIHA one, and it binds every player in a BUIHA game.
 - **Thinking a major in junior hockey costs you five minutes.** In women's hockey below Adult it ends your game outright, and In-House Rule 201 reads as extending the same consequence across junior hockey U19 to U10 — plan for the ejection and confirm with your league.
 - **Assuming your rink is 60 × 30.** Sheets below 56 × 26 are authorised here for all levels, so measure rather than assume. (No published census of British rink dimensions exists, so no distribution is claimed here — only that the authorisation is broad.)
+- **Assuming the NIHL Playoff Final can go to a shootout.** The semi-finals can; the Final cannot. It plays successive 20-minute sudden-death periods to a golden goal, and Appendix 1 says in terms that no Game Winning Shots will be used.
+- **Assuming a cage is mandatory for juniors everywhere in Britain.** The cage rule is England Ice Hockey's, and EIH governs England and Wales. In Scotland and university hockey the IIHF book applies, and its Under-18 rule permits a full-face visor as well as a cage.
 - **Treating the In-House Rules as the rule book.** They are a diff. Without the IIHF book beside them they do not describe the game.
 - **Assuming "EIHA" is defunct because the website says England Ice Hockey.** Same organisation, renamed.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. Somebody hands you a hockey document written to NHL rules with divergences
+   flagged for the IIHF, USA Hockey and Hockey Canada. Which of those flags are
+   yours, and what sits on top of that base depending on which competition you
+   play in? *(§Overview)*
+
+2. You are an adult, and you have read that adults are exempt from neck
+   protection. Whose rule is that, what happens to you in an EIH or SIHA game
+   without one, and does the requirement stop at games? *(§Neck protection is
+   mandatory, for everyone, with no warning)*
+
+3. A goal goes in off a skate and your bench wants it looked at. What can the
+   officials do about that in EIH or SIHA competition — and what can still be
+   reviewed once the game is over? *(§There is no on-ice video review)*
+
+4. What is the single question about contact this document says it cannot answer
+   for you? Say why neither British source answers it, and where the answer
+   actually lives. *(§What this document does not cover)*
+
+5. Your goaltender asks whether the restricted area binds them. What do the two
+   British documents say, which parts of Britain does the suspension not reach,
+   and what should the goaltender — and the attacking team — do in the meantime?
+   *(§The trapezoid may not be enforced)*
+
+6. IIHF Rule 1.2 fixes one rink dimension and gives a range for the other. What
+   does the domestic authorisation permit on top of that, and why is it not a
+   relaxation of Rule 1.2 but a departure from it? *(§Rinks are often smaller than
+   the book says)*
+
+7. You are playing U14 and take a major for boarding. What should you plan for —
+   and why does this document call that an inference rather than the rule's own
+   words? *(§Age categories are British, and unisex)*
+
+8. Your league game is level at the final buzzer. What normally happens, and in
+   which competitions is that different? Name the **two** Playoff Final Weekend
+   procedures, say which of them cannot end in a shootout, and say how the British
+   shootout differs from the IIHF's. *(§Overtime is not universal)*
+
+---
+
 ## Key Takeaways
 
-1. **If you play in Britain, your rule book is the IIHF's** — at every level, from recreational to the GB national side — and, on the available evidence, the Elite League, whose own Casebook is unread here.
-2. Wherever these documents flag an **IIHF** difference, that is your game. Wherever they flag **USA Hockey** or **Hockey Canada**, it is not.
-3. On top of the IIHF book sit the **In-House Rules** (England, Scotland, universities) or the **EIHL Casebook** (Elite League). They override the IIHF book domestically.
-4. **A neck laceration protector is mandatory for all players**, with no warning and an immediate 10-minute misconduct.
-5. **There is no on-ice video review** in EIH or SIHA competition.
-6. **Your rink is probably smaller than the book's** — below 56 m × 26 m is authorised, which is short of the IIHF's fixed 60 m length and below its 26 m minimum width.
-7. **In women's hockey a half visor is permitted only from the season after your 18th birthday** — a relaxation of the IIHF's full-face requirement, not a rule for everyone. A half visor is the minimum in SIHA recreational and university hockey, in **all BUIHA games in England and Scotland**, and for all recreational players in Scotland. **Face cages are mandatory in all junior hockey.**
-8. **Play junior hockey as though any major penalty is an automatic ejection, at every age from U19 to U10.** In-House Rule 201 scopes the IIHF junior playing rules to all junior age groups without naming Rule 201.1, so the extension is an inference rather than the rule's own words — but it is the conservative one, and confirming it with your league costs nothing. In **women's** hockey below adult the cross-reference is explicit (Rule 101), so there it is not an inference.
-9. **Junior categories are British and unisex**, set by birth year, and are not classified as "Mens".
-10. **Overtime is not universal** — NIHL, SNL where its regulations provide for it, and BUIHA fixtures designated **Varsity OT** on the schedule, which follow the NIHL procedure. Where a shootout is held it is **three** shooters, not the IIHF's five, and the NIHL Playoff Final Weekend semi-finals use 20 minutes of 5-on-5 instead.
-11. **Body checking is the one thing this document cannot answer.** Neither the IIHF book nor the In-House Rules sets a British checking age — it lives in your competition's regulations. See [Body Contact and Battles](../technique/body_contact_and_battles.md) §1, and ask your league.
-12. Where your league's regulations disagree with anything here, **your league's regulations are right.** Check them.
+1. **If you play in Britain, your rule book is the IIHF's** — at every level, from recreational to the GB national side, and the Elite League too on the available evidence, its own Casebook being unread here. So wherever these documents flag an **IIHF** difference, that is your game; wherever they flag **USA Hockey** or **Hockey Canada**, it is not.
+2. On top of the IIHF book sit the **In-House Rules** (England, Scotland, universities) or the **EIHL Casebook** (Elite League). They override the IIHF book domestically.
+3. **A neck laceration protector is mandatory for all players at every British level** — the mandate is IIHF Rule 9.12, not a domestic amendment. What the In-House Rules change is the enforcement: in **EIH, SIHA and BUIHA** competition there is **no warning**, just an immediate 10-minute misconduct. Under the unamended IIHF book, which is what an Elite League casebook sits on top of, the referee warns first. Wear it either way.
+4. **There is no on-ice video review** in EIH or SIHA competition.
+5. **Your rink may well be smaller than the book's** — in EIH and SIHA fixtures, sheets below 56 m × 26 m are authorised for all levels, with three rinks named as U16-only exceptions. A sheet under that threshold is short of the IIHF's fixed 60 m length and narrower than its 26 m minimum width.
+6. **In women's hockey a half visor is permitted only from the season after the 18th birthday** — a relaxation of the IIHF's full-face requirement, not a rule for everyone. A half visor is the minimum in SIHA recreational and university hockey and in **all BUIHA games in England and Scotland**. **Face cages are mandatory throughout junior hockey in England and Wales** — England Ice Hockey *Rules & Regulations* 24.5 — but that is an EIH rule and EIH governs England and Wales only. In Scotland and university hockey the floor is the IIHF book's **Rule 202.2**, which requires *"full-face protection (full-visor or cage)"* at Under-18 and so permits a full-face visor in place of a cage.
+7. **Play junior hockey as though any major penalty is an automatic ejection, from U19 down to U10.** In-House Rule 201 scopes the IIHF junior playing rules to all junior age groups without naming Rule 201.1, so that extension is an inference rather than the rule's own words — but it is the conservative one, and confirming it with your league costs nothing. In **women's** hockey below adult the cross-reference is explicit (Rule 101), so there it is not an inference. Junior categories are British, unisex and set by birth year.
+8. **Overtime is not universal.** In-House Rule 84 confines it to NIHL fixtures and to SNL fixtures whose competition regulations provide for it — plus BUIHA fixtures designated **VARSITY OT** on the schedule, which follow the NIHL procedure under a more specific Appendix 1 clause that sits in tension with Rule 84's own word *"only"*. That tension is the source's, not this document's. Where a shootout is held it is **three** shooters, not the IIHF's five. **The Playoff Final Weekend runs two different procedures:** the **semi-finals** play 20 minutes of 5-on-5 and then a shootout; the **Final** plays successive 20-minute sudden-death periods to a golden goal, with **no shootout at all**.
+9. **Body checking is the one thing this document cannot answer.** Neither the IIHF book nor the In-House Rules sets a British checking age — it lives in your competition's regulations. See [Body Contact and Battles](../technique/body_contact_and_battles.md) §1, and ask your league.
+10. Where your league's regulations disagree with anything here, **your league's regulations are right.** Check them.
 
 ---
 

@@ -49,8 +49,8 @@ const NET_FRONT = { at: 'net-front', dx: -2, dy: 4 };       // (82, 4)
 // looking at the same unit from the other side.
 const PP_131_OPP = [
   { id: 'P', team: 'opp', pos: 'D', at: 'centre-point' },     // (25, 0)
-  { id: 'H', team: 'opp', pos: 'F', at: 'half-wall:right' },  // (69, 33)
-  { id: 'H', team: 'opp', pos: 'F', at: 'half-wall:left' },   // (69, -33)
+  { id: 'H', team: 'opp', pos: 'F', at: 'half-wall:right' },  // (69, 38.5)
+  { id: 'H', team: 'opp', pos: 'F', at: 'half-wall:left' },   // (69, -38.5)
   { id: 'B', team: 'opp', pos: 'F', at: 'bumper' },           // (71, 0)
   { id: 'N', team: 'opp', pos: 'F', at: NET_FRONT },          // (82, 4)
 ];

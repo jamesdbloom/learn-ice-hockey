@@ -74,15 +74,51 @@ const OUR_G = { at: 'crease', dx: 1 };                       // (87, 0)
 // §"The base shape — puck in the strong-side corner". Their three forwards are
 // down low ("which matches their three forwards down there") and their two
 // defencemen hold the points.
-const OPP_CARRIER  = { at: 'corner:right', dx: 3, dy: 2 };   // (85, 36) in the corner
-const OPP_PUCK     = { at: 'corner:right', dx: 0, dy: -2 };  // (82, 32) at his stick
+// A GLYPH IN THE CORNER MUST CLEAR THE ARC, NOT THE STRAIGHT DASHER — the same
+// rule positions.mjs states over its own corner cluster, which this module did
+// not follow. ASSUMES, all checkable against the files named:
+//   boards       y = +/-42.5, x = +/-100        rink.json sheet 200 x 85
+//   corner arc   radius 28, centres (+/-72, +/-14.5) = (100 - 28, 42.5 - 28)
+//   opposition   triangle, apex at cy + 3.6, base at cy - 1.8, half-width 3.118,
+//                stroke 0.8                                        (rink.mjs)
+// MITER: the apex is a 60-degree vertex and SVG joins miter, so it carries
+// (0.8 / 2) / sin 30 = 0.8 ft of ink BEYOND itself. The apex is at cy + 4.4 in
+// ink, not cy + 3.6. Under-counting exactly this is what put the old (85, 36)
+// through the boards: its apex ink reached (85, 40.40), which is 28.98 ft from
+// the arc centre against a 28 ft radius — 0.98 ft of a body drawn through the
+// dasher, in both of the frames that share this constant, and visible in both.
+//
+// At (84, 34) the apex ink is (84, 38.40), 26.74 ft from the arc centre: it
+// clears by 1.26 ft, 0.96 ft of that white after the boards' own 0.6 stroke.
+// He is still the deepest player on the ice and still in the corner.
+//
+// WHY NOT FURTHER IN. (82, 34) — the named `corner:right`, where the other five
+// diagrams in this file put their corner forward — clears by 2.09 ft, and was
+// rejected: it lands 7.81 ft from where frame one's route ends at C_IN_CORNER,
+// inside the 9 ft (2.9 glyph + 3.15 arrowhead + 2.9 glyph) within which an
+// arrowhead may not finish near an opponent. Moving the carrier to fix the
+// boards would have moved that arrowhead onto him. At (84, 34) the gap is
+// 9.43 ft and the route is untouched.
+const OPP_CARRIER  = { at: 'corner:right', dx: 2 };          // (84, 34) in the corner
+// At his stick, below the base of his triangle. Held between three things at
+// once, which is why it is not on a round number: 0.70 ft clear of the
+// triangle's base ink, 0.94 ft clear of D_ON_PUCK's circle and 1.22 ft clear of
+// C_IN_CORNER's. It rode down with the carrier — the old (82, 32) sat 2.2 ft
+// under his old base, and left where it was it would have been inside his new one.
+const OPP_PUCK     = { at: 'corner:right', dx: -0.5, dy: -4 };  // (81.5, 30) at his stick
 const OPP_NETFRONT = { at: 'slot', dy: -6 };                 // (76, -6) the doorstep threat
-const OPP_SUPPORT  = 'half-wall:right';                      // (69, 33) low support on the wall
+const OPP_SUPPORT  = 'half-wall:right';                      // (69, 38.5) low support on the wall
 
 // Our own five in that situation. The centre's destination is named once because
 // both frames refer to it: frame one as the end of his route, frame two as where
 // he is standing.
-const D_ON_PUCK    = { at: 'corner:right', dx: 3, dy: -8 };  // (85, 28) 8 ft off the carrier
+const D_ON_PUCK    = { at: 'corner:right', dx: 3, dy: -8 };  // (85, 26) 8.06 ft goal-side of the
+                                                             // carrier — which is what both frames'
+                                                             // `describe` has always said. It read
+                                                             // "10 ft" against the carrier's old
+                                                             // (85, 36); the glyph did not move when
+                                                             // the carrier came off the boards, and
+                                                             // the picture now matches the words.
 const D_GOALMOUTH  = { at: 'goalmouth', dx: -2, dy: -6 };    // (83, -6) between the net-front
                                                              //          forward and the net
 // (76, 29). Goal-side and inside of the carrier rather than out at the boards
@@ -195,7 +231,26 @@ const collapseCorner = {
     // defencemen and the centre — live below the top of the circles, which
     // matches their three forwards down there, while the two wingers hold the
     // points so the opposing defencemen never get a clean seam pass".
-    { id: 'F', team: 'opp', pos: 'F', at: OPP_CARRIER,  label: 'puck carrier' },
+    // THE CARRIER IS UNLABELLED IN BOTH FRAMES, and the placer decides that, not
+    // taste. He is in a corner with four labelled players and a second opposition
+    // forward around him, and `placeLabels` will not put a label anywhere that is
+    // nearer somebody else than to its own anchor. Every one of its eighteen
+    // offsets here is either inside a glyph's 7 x 8 ft reserve, off the ice, or
+    // outside the corner arc — and its fallback sweep does not test the arc at
+    // all, only `inside()` does, and the fallback never calls it. So it wrote
+    // "puck carrier" 33 ft away at (51.41, 38.75) on a leader that ran within
+    // 1.19 ft of the OTHER opposition forward, at (69, 38.5), and straight
+    // through his glyph. Both are triangles, so the shape gave the reader no cue
+    // they had landed on the wrong man.
+    //
+    // Shortening does not rescue it: 'carrier' lands 32.9 ft away, 'the puck'
+    // 32.1, and 'on it' — five characters — goes outside the boards at (91.92,
+    // 34.75). Tested, not assumed. So the words move to the prose, which is where
+    // a listener gets them anyway: both captions and both `describe`s open on the
+    // puck carrier deep in the strong-side corner, and the puck disc is drawn at
+    // his stick. This is how positions.mjs closed the identical defect in its own
+    // corner cluster.
+    { id: 'F', team: 'opp', pos: 'F', at: OPP_CARRIER },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_SUPPORT },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_NETFRONT },
     { id: 'D', team: 'opp', pos: 'D', at: 'point:right' },
@@ -264,7 +319,8 @@ const collapseHighSlot = {
     'defenceman at the weak-side point now has nobody near him. No routes are drawn.',
 
   players: [
-    { id: 'F', team: 'opp', pos: 'F', at: OPP_CARRIER,  label: 'puck carrier' },
+    // Unlabelled — see the note on the same glyph in the previous frame.
+    { id: 'F', team: 'opp', pos: 'F', at: OPP_CARRIER },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_SUPPORT },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_NETFRONT },
     { id: 'D', team: 'opp', pos: 'D', at: 'point:right' },

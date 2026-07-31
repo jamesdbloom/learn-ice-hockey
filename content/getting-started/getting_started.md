@@ -12,11 +12,100 @@
 
 ## Overview
 
-Every other document here tells you how to play. This one tells you how to *start* playing — how to find a session, what registration involves, which level you belong in, what happens in the first hour at the rink, and the etiquette nobody thinks to explain because everybody there already knows it.
+Hockey is administered locally, so the answer to almost every specific question you have is a person at your rink or your local association rather than anything you can look up.
 
-It is written for two readers at once: an adult who has decided to take up hockey, and a parent working out how to get a child onto the ice. The routes are different and both are covered.
+A national governing body sets the rules, the insurance and the safeguarding standards; the fee, the level names, the session times and the age cut-offs your club uses are decided locally and change every season.
 
-One warning up front, and it shapes the whole document. **Hockey is administered locally.** A national governing body sets the rules, the insurance and the safeguarding standards; almost everything you actually care about — the fee, the tier names, the session times, the age cut-offs your club uses — is decided by a local association or an individual rink and changes every season. So wherever a specific number would be invented, this document gives you a sourced example, says it is an example, and tells you which page or which person holds your answer. **"Here is how to find out" is the real answer to most of these questions.**
+**The way in is graded, and it starts before hockey.** Public skating or a learn-to-skate class first, then a one-off taster, then a beginners' block of several weeks, then a team or a league. That order is deliberate: the NHL/NHLPA Learn to Play programme says participants are *"strongly encouraged to complete a 'Learn to Skate' program at a local rink before signing up"*, and it applies just as well to adults.
+
+**Start a level below where your pride puts you.** Moving up part-way through a season is easy and welcomed; moving down is not. Skating is what sorts players into levels — not shooting.
+
+**Registering is not paperwork; it is insurance, safeguarding and eligibility.** The membership year is not twelve months from the day you pay and is not pro-rata — England Ice Hockey's words are that *"pro-rata discounts are not available"* — so ask which year you are buying into first. Cover can also depend on the game being a recognised one: *"EIH participants are only insured through EIH insurance when the game or tournament has been sanctioned by EIH."* Ask whether a league is sanctioned before you join.
+
+**If you are starting in Britain, two things differ from most of what you will read.** Your rule book is the IIHF's rather than the NHL's, at every level of the game here. And a neck laceration protector is mandatory for every player, adults included — in English, Scottish and university competition with no warning before the penalty, and in England covering *"all on ice activities"*, so practices count too. The USA Hockey adult exemption is not yours. [UK and England Rules](../foundation/uk_rules.md) has the rest.
+
+**Before you turn up to any session, ask what gear is required, what standard it is, and whether there is contact.** The words rinks use for these sessions are conventions rather than defined categories, and arriving at a full-contact session expecting a skills session is how people get hurt. Arrive a full hour before a genuine first one, and never shoot at a goaltender who is not ready.
+
+---
+
+## Four routes in, when you have an hour rather than a season
+
+Everything else in this document is about getting into a session. The other documents here are about what happens once you are in one, and there are a lot of them — enough that "start at the beginning and keep going" is no use to somebody with a game on Saturday.
+
+So: four routes, each written for one reader with one deadline. Each names **sections**, not documents, because a document is a fortnight and a section is a bus ride.
+
+Three things about using them:
+
+- **They are in priority order.** If you run out of time, stop where you are rather than skimming the rest. What keeps you legal and uninjured is at the top of every list.
+- **The one-line descriptions here are signposts, not summaries.** Where a route points at a rule, at equipment, or at anything to do with contact, the section it points to owns the qualifications and this one does not. Read it there.
+- **None of it replaces asking your club.** Section 10 below is still the answer to most specific questions.
+
+### Route 1 — Your first game is this week
+
+**For:** you can skate, you have never played a game, and your name is on a team sheet in a few days.
+**Roughly an hour**, in this order.
+
+1. **[Body Contact and Battles → 1. Which League Are You Actually In?](../technique/body_contact_and_battles.md#1-which-league-are-you-actually-in)** — first, before anything tactical. It settles whether body checking is permitted where you are playing, and it separates body contact from body checking, which are not the same question. If you play in Britain, [If you play in Britain](../technique/body_contact_and_battles.md#if-you-play-in-britain) inside it is the part addressed to you.
+2. **[Rink Map and Glossary → 4. The three zones](../foundation/rink_map_and_glossary.md#4-the-three-zones--and-the-thing-that-confuses-every-beginner)** — a few hundred words, and they unblock every other document.
+3. **[Rink Map and Glossary → 6. Directional and relational vocabulary](../foundation/rink_map_and_glossary.md#6-directional-and-relational-vocabulary)**, plus **[The six positions](../foundation/rink_map_and_glossary.md#the-six-positions)** and **[F1 / F2 / F3 — roles, not people](../foundation/rink_map_and_glossary.md#f1--f2--f3--roles-not-people)** — this is what the bench will be shouting at you. **Leave [the glossary](../foundation/rink_map_and_glossary.md#8-glossary) for now:** it is a lookup table to keep open on your phone, not something to read through.
+4. **[Rules Primer → 1. How a Game Is Structured](../foundation/rules_primer.md#1-how-a-game-is-structured)** — and inside it, [Changing on the fly](../foundation/rules_primer.md#changing-on-the-fly) and [Too many men on the ice](../foundation/rules_primer.md#too-many-men-on-the-ice) are the two a first-timer is most likely to get wrong. Overtime and timeouts can wait.
+5. **[Rules Primer → 2. Offside](../foundation/rules_primer.md#2-offside)** and **[3. Icing](../foundation/rules_primer.md#3-icing)** — the opening subsection of each is very short. Read those two now and the rest afterwards.
+6. **[Rules Primer → What actually gets called at rec level](../foundation/rules_primer.md#what-actually-gets-called-at-rec-level)** — a couple of hundred words, in place of the full penalty catalogue above it.
+7. **[Rules Primer → 9. Officials and Signals](../foundation/rules_primer.md#9-officials-and-signals)** — so you know what has been called without waiting to be told — and [Talking to officials](../foundation/rules_primer.md#talking-to-officials) inside it.
+8. **[Rules Primer → What to do as a player during a delayed penalty](../foundation/rules_primer.md#what-to-do-as-a-player-during-a-delayed-penalty)** — a raised arm and no whistle is the moment that most reliably bewilders a first-timer.
+9. **[Team Play and Culture → The Bench](../off-the-ice/team_play_and_culture.md#the-bench)** — where to sit, which door, when to go.
+10. **[Team Play and Culture → The Dressing Room](../off-the-ice/team_play_and_culture.md#the-dressing-room)** and **[Being New to a Team](../off-the-ice/team_play_and_culture.md#being-new-to-a-team)** — both short, and between them the part of a first game people are most anxious about.
+11. **[Team Play and Culture → Non-contact league etiquette](../off-the-ice/team_play_and_culture.md#non-contact-league-etiquette)** — what "non-check" does and does not permit. That is a separate question from item 1, and both have answers.
+
+**If you get to only three, make them 1, 4 and 9.**
+
+**If you have longer**, in this order: [On-Ice Communication → Who owns which call](../foundation/on_ice_communication.md#who-owns-which-call), then [Pressure warnings](../foundation/on_ice_communication.md#pressure-warnings) — reading [A note on variation](../foundation/on_ice_communication.md#a-note-on-variation--read-this-before-you-learn-the-list) first, because your team's words will not be exactly these; then [Equipment → Bag and Pre-Game Routine](../off-the-ice/equipment.md#bag-and-pre-game-routine); then sections [7](#7-your-first-practice-first-drop-in-first-anything) and [8](#8-the-minimum-equipment-to-start) of this document, if you have not already read them.
+
+### Route 2 — You have been put on a position you have never played
+
+**For:** anybody told on Tuesday that they are playing centre on Thursday, and the parent of a child who has just been moved.
+**Roughly 45 minutes**, plus your new position's own document when you have an evening.
+
+Start with three short sections of [Switching Positions](../positions/switching_positions.md), which is written for exactly this: [What transfers, whatever the switch](../positions/switching_positions.md#what-transfers-whatever-the-switch), [The habits that actively work against you](../positions/switching_positions.md#the-habits-that-actively-work-against-you) and [The honest timeline](../positions/switching_positions.md#the-honest-timeline). Then the section for your particular move — [Wing → centre](../positions/switching_positions.md#wing--centre), [Centre → wing](../positions/switching_positions.md#centre--wing), [Forward → defence](../positions/switching_positions.md#forward--defence), [Defence → forward](../positions/switching_positions.md#defence--forward), [Anyone → goaltender](../positions/switching_positions.md#anyone--goaltender) or [Playing your off wing](../positions/switching_positions.md#playing-your-off-wing). If you are the parent rather than the player, [If you are a parent](../positions/switching_positions.md#if-you-are-a-parent) is the one to read.
+
+Then two or three sections of the systems the new job leans on hardest — not the whole documents:
+
+- **Centre.** [Breakouts → 5. The Centre's Swing](../systems/breakouts.md#5-the-centres-swing) · [Faceoffs → The Procedure and the Rules](../systems/faceoffs.md#the-procedure-and-the-rules) and [Violations, Ejections and the Bench Minor](../systems/faceoffs.md#violations-ejections-and-the-bench-minor) · [Defending the Rush → Backchecking — Lanes and Assignments](../systems/defending_the_rush.md#backchecking--lanes-and-assignments), alongside [Center → Backchecking](../positions/center.md#backchecking--the-middle-lane-is-usually-yours), which is careful to say that the middle-lane assignment is a coaching choice rather than a law.
+- **Winger.** [Breakouts → 4. Winger Timing and Positioning on the Wall](../systems/breakouts.md#4-winger-timing-and-positioning-on-the-wall) · [Defensive Zone Coverage → The weak-side winger's collapse](../systems/defensive_zone_coverage.md#the-weak-side-wingers-collapse--the-moment-that-decides-the-system) · [Forechecking Systems → F1 / F2 / F3 — Roles, Not People](../systems/forechecking_systems.md#f1--f2--f3--roles-not-people).
+- **Defence.** [Defending the Rush → Gap Control — The Full Method](../systems/defending_the_rush.md#gap-control--the-full-method) · [Breakouts → 2. The Five Roles in Every Breakout](../systems/breakouts.md#2-the-five-roles-in-every-breakout) · and, because Switching Positions names it as [the one genuine technical barrier](../positions/switching_positions.md#the-technical-barrier-is-real-backward-skating-and-pivots) in this move, [Skating → Backward Skating](../technique/skating.md#backward-skating) and [Pivots and Transitions](../technique/skating.md#pivots-and-transitions).
+- **Goal.** [Equipment → Goalie Equipment — An Overview](../off-the-ice/equipment.md#goalie-equipment--an-overview) before anything else · then [Goaltender → How This Document Maps onto the Other Position Documents](../positions/goaltender.md#how-this-document-maps-onto-the-other-position-documents), which translates the skater documents' framing into this one · then [Rules Primer → 7. Goaltender-Specific Rules](../foundation/rules_primer.md#7-goaltender-specific-rules), [Goaltender → The trapezoid](../positions/goaltender.md#the-trapezoid--the-rule-that-defines-what-you-can-do) and [Icing — you are the one who can wave it off](../positions/goaltender.md#icing--you-are-the-one-who-can-wave-it-off).
+
+Whichever of the five you have been given, finish with [Defensive Zone Coverage → How to Tell Which System Your Team Plays](../systems/defensive_zone_coverage.md#how-to-tell-which-system-your-team-plays). It applies to all of them, and it is the question a player in a new position is least likely to think to ask.
+
+### Route 3 — You want to follow a game on television
+
+**For:** you do not play, or not yet, and you would like a broadcast to stop looking like chaos.
+**Roughly an hour**, and the order matters more here than anywhere else: the words first, then the method.
+
+**The words.** Four sections of [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) and no more: [4. The three zones](../foundation/rink_map_and_glossary.md#4-the-three-zones--and-the-thing-that-confuses-every-beginner), [5. Named areas of the ice](../foundation/rink_map_and_glossary.md#5-named-areas-of-the-ice), [6. Directional and relational vocabulary](../foundation/rink_map_and_glossary.md#6-directional-and-relational-vocabulary) and [7. Positions and shorthand](../foundation/rink_map_and_glossary.md#7-positions-and-shorthand). Commentary uses all of this constantly and defines none of it. Skip [1. Rink dimensions](../foundation/rink_map_and_glossary.md#1-rink-dimensions-and-why-they-matter), which matters when you are playing on an unfamiliar sheet rather than watching one, and [8. Glossary](../foundation/rink_map_and_glossary.md#8-glossary), which is a reference.
+
+**The method.** [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md), Parts 1 to 4 straight through: [Part 1 — Stop Watching the Puck](../off-the-ice/how_to_watch_hockey.md#part-1-the-core-instruction--stop-watching-the-puck), which explains what the broadcast camera is doing to you and gives four exercises to do about it; [Part 2: Seeing the Systems](../off-the-ice/how_to_watch_hockey.md#part-2-seeing-the-systems), which is four things you can literally count on screen; [Part 3: What to Watch at Each Part of the Game](../off-the-ice/how_to_watch_hockey.md#part-3-what-to-watch-at-each-part-of-the-game); and [Part 4: Live Versus Television](../off-the-ice/how_to_watch_hockey.md#part-4-live-versus-television). Then [Watching a winger](../off-the-ice/how_to_watch_hockey.md#watching-a-winger) and [Watching a defenceman](../off-the-ice/how_to_watch_hockey.md#watching-a-defenceman) from Part 6 — the two the camera is least likely to show you.
+
+**Skip [Part 5](../off-the-ice/how_to_watch_hockey.md#part-5-watching-your-own-team-and-yourself)**, which is about reviewing footage of yourself playing, **and most of [Part 7](../off-the-ice/how_to_watch_hockey.md#part-7-statistics-literacy)**, which is analytics rather than viewing. If a commentator quotes a number at you, [A checklist for reading any hockey statistic](../off-the-ice/how_to_watch_hockey.md#a-checklist-for-reading-any-hockey-statistic) is the part worth having.
+
+**If you want more depth,** take it in small pieces: [Forechecking Systems → F1 / F2 / F3 — Roles, Not People](../systems/forechecking_systems.md#f1--f2--f3--roles-not-people) · [Defensive Zone Coverage → Low Zone Collapse](../systems/defensive_zone_coverage.md#low-zone-collapse-zone-coverage--the-house-default), [Man-on-Man](../systems/defensive_zone_coverage.md#man-on-man) and the [Comparison Table](../systems/defensive_zone_coverage.md#comparison-table) · and [Neutral Zone Systems → 1-3-1 — the modern standard](../systems/neutral_zone_systems.md#1-3-1--the-modern-standard), which is the best account here of why a team can look like it is doing nothing on purpose.
+
+**And for the two things a broadcast raises and never explains** — why they are suddenly playing four a side, and why a player has just burst out of the penalty box onto a breakaway — [Special Teams → Coincidental penalties](../systems/special_teams.md#coincidental-penalties) and [Penalties expiring](../systems/special_teams.md#penalties-expiring). The rest of that document is written for players running the thing, and you can leave it.
+
+### Route 4 — You play in Britain
+
+**For:** anybody playing under England Ice Hockey, the SIHA, the BUIHA, Ice Hockey UK or the NIHL — which is every level of the game here.
+**Roughly an hour, and it is the route with the most riding on it**, because these documents are written to NHL rules with the differences flagged inline, and a British reader who does not find the amendments early reads the wrong book throughout.
+
+1. **[UK and England Rules](../foundation/uk_rules.md), all of it.** Its [Overview](../foundation/uk_rules.md#overview) settles which book you are under, and therefore which of the flags scattered through these documents are addressed to you and which are somebody else's. [The amendments that change what you do](../foundation/uk_rules.md#the-amendments-that-change-what-you-do) is the operative list — neck protection, video review, rink size, facial protection, the trapezoid, fighting, overtime, age categories and team sheets. And [What this document does not cover](../foundation/uk_rules.md#what-this-document-does-not-cover) is where it tells you what it cannot answer for you.
+2. **[Body Contact and Battles → If you play in Britain](../technique/body_contact_and_battles.md#if-you-play-in-britain)** — where the largest of those unanswered questions is treated properly, and where UK and England Rules sends you itself.
+3. **[Rules Primer → If you play in Britain, the IIHF column is yours](../foundation/rules_primer.md#if-you-play-in-britain-the-iihf-column-is-yours)**, then **[10. Rule Set Differences That Actually Matter](../foundation/rules_primer.md#10-rule-set-differences-that-actually-matter)** — read down the IIHF column; the USA Hockey and Hockey Canada ones are not yours.
+4. **[Rink Map and Glossary → The England Ice Hockey amendment](../foundation/rink_map_and_glossary.md#the-england-ice-hockey-amendment--british-rinks-are-outside-the-iihf-range)** and **[What the extra width actually changes](../foundation/rink_map_and_glossary.md#what-the-extra-width-actually-changes)** — before you take the distances and angles in any systems document literally.
+5. **[Equipment → Neck protection](../off-the-ice/equipment.md#neck-protection)** — UK and England Rules owns where and when you must wear one; this owns what the thing itself has to be.
+6. **[Faceoffs → The icing exception](../systems/faceoffs.md#the-icing-exception--a-genuinely-useful-nhl-loophole-and-the-british-default)** — its heading names the British default, and it is not the North American one.
+7. **[Game Management → Overtime elsewhere: IIHF, Britain and rec leagues](../systems/game_management.md#overtime-elsewhere-iihf-britain-and-rec-leagues)**.
+8. **Goaltenders and defencemen, additionally:** [UK and England Rules → The trapezoid may not be enforced](../foundation/uk_rules.md#the-trapezoid-may-not-be-enforced) alongside [Goaltender → The trapezoid](../positions/goaltender.md#the-trapezoid--the-rule-that-defines-what-you-can-do). Read the two together — between them they set out both what the rule says and what is not settled about it here.
+9. **And [If you are starting in Britain](#if-you-are-starting-in-britain), in section 1 of this document**, on who governs the game you are joining and what registration now involves, if you have not read it already.
 
 ---
 
@@ -67,7 +156,7 @@ So expect **three** layers, not two: **the IIHF rulebook for what is a penalty**
 
 **4. The rink you play on is probably not 200 by 85 feet.** Nearly every diagram, distance and angle in hockey coaching comes from the NHL sheet. The IIHF book does not specify one size — **Rule 1.2 permits any sheet 60 m long and between 26 m and 30 m wide**, which is a spread of over thirteen feet in width between two equally legal rinks. So "we play IIHF rules" tells you which penalties get called and tells you nothing whatever about the size of the ice, and neither the NHL diagram nor a single metric figure is safe to assume. On a wide sheet the corners are further from the net, the half-wall (the boards level with the faceoff dot) is further from the slot (the dangerous ice in front of the net), and angling — steering an attacker with your skating line rather than hitting them — into the boards stops being a kill shot. **[Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns rink geometry** and sets out both specifications side by side, what the extra width changes shift by shift, and what to check on your first skate at an unfamiliar rink. Read it before you take the spacing advice in the systems documents literally.
 
-And in England the floor is lower than the IIHF book's, not just different: the In-House Rules record that "the NGB" authorises rinks *below* the federation's minimum for domestic use, with named venues restricted to junior hockey. The provision and the exceptions belong to [UK and England Rules](../foundation/uk_rules.md). The practical instruction is the same one: **look at the sheet you are actually standing on.**
+And in EIH and SIHA fixtures the floor is lower than the IIHF book's, not just different: the In-House Rules record that "the NGB" authorises rinks *below 56 m × 26 m* — shorter than the 60 m the IIHF book fixes, and narrower than the 26 m that is its **minimum** width — with three named venues restricted to junior hockey. The provision, its scope and the exceptions belong to [UK and England Rules](../foundation/uk_rules.md). The practical instruction is the same one: **look at the sheet you are actually standing on.**
 
 ---
 
@@ -487,23 +576,63 @@ And one more, which is the highest-value question in this document: **"I'm compl
 - **Shooting at a goalie who is not looking at you.** The most dangerous common breach of drop-in etiquette, and completely avoidable.
 - **Not asking for help.** New players routinely spend a season guessing at things any teammate would have explained in thirty seconds.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You want to know what your season costs and which night you skate. Which of
+   the four layers between you and the ice holds that answer, and which layer will
+   definitely not have it? *(§1. How hockey is organised)*
+
+2. A friend describes how they registered in England last season. What changed on
+   30 June 2026, and what should you therefore ask your club before you pay
+   anything? *(§If you are starting in Britain)*
+
+3. Two different registration years for England are in circulation in this
+   document. Name both, say what is not available under either of them, and say
+   what you should do about the disagreement. *(§Registering with England Ice
+   Hockey)*
+
+4. You are going to an unfamiliar drop-in. What are the three questions to ask at
+   the desk, and why is the rink's own posted session description the authority
+   rather than any table? *(§4. Drop-in, stick-and-puck and shinny)*
+
+5. You are choosing between two adult divisions. Which variable actually sorts
+   you, which direction should you err in, and why is that asymmetric? *(§Working
+   out which tier you belong in)*
+
+6. Somebody has set up a midweek league at your rink. What is the one question to
+   ask before joining it in England, and what are the two separate consequences if
+   the answer is no? *(§Why it exists: insurance and safeguarding)*
+
+7. Which drop-in etiquette breach does this document call the most dangerous, and
+   what is the signal that tells you it is safe? *(§Getting on the ice, and
+   §Common Mistakes)*
+
+8. You are kitting out for a first English session. Which single item does this
+   document single out as the one North American material will teach you wrongly,
+   and which two other documents own the two halves of the answer? *(§What you
+   need to be allowed on the ice in England)*
+
 ---
 
 ## Key Takeaways
 
-1. **Hockey is administered locally — so the answer to almost every specific question is your association, your club or your rink.** National bodies define registration, insurance and rules; local bodies set fees, tiers, schedules and session rules, and change them yearly.
-2. **There is a graded route in, and it starts before hockey.** Public skating or a learn-to-skate class, then a taster (Try Hockey For Free, Esso Fun Days), then a learn-to-play block (NHL/NHLPA Learn to Play at 4–9, The First Shift at 6–10, an adult "hockey 101"), then a team or a league.
-3. **Drop-in, stick-and-puck and shinny are conventions, not defined categories.** Before you go, ask three things: what gear is required, what standard the session is, and whether there is contact.
-4. **Start a tier below where your ego puts you.** Moving up mid-season is easy and welcomed; moving down is not. Skating is the sorting variable, not shooting.
-5. **Registration is insurance, safeguarding and eligibility, not paperwork.** Hockey Canada's plan is $21.30 per participant per season for $20 million of liability cover; playing unsanctioned hockey can void a child's membership privileges for the rest of the season.
-6. **The membership year is not twelve months from when you pay, and it is not pro-rata.** USA Hockey runs 1 September to 31 August. England Ice Hockey's Rules & Regulations say registrations run **1 August to 31 July**, close on **31 January** except at U10, and that *"pro-rata discounts are not available"* — while the EIHA's Registration page describes the **recreational** section on a 1 October to 30 September insurance year. Ask which one applies to you before you pay — and if you are in Britain, ask twice, because England Ice Hockey and Scottish Ice Hockey memberships ended on 30 June 2026 and are being reissued by Ice Hockey UK.
-7. **If you play in Britain, your rulebook is the IIHF's and your rink is probably not NHL-sized.** Every level here runs the IIHF book with domestic amendments on top, so the IIHF divergences flagged throughout are yours, not somebody else's — and IIHF Rule 1.2 permits any sheet from 26 m to 30 m wide, a spread of thirteen feet, with England authorising rinks smaller still. [UK and England Rules](../foundation/uk_rules.md) owns the amendments; [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) has what the width changes.
-8. **In England a neck laceration protector is mandatory for every player, at every level, in all on-ice activity** — England Ice Hockey's own words. USA Hockey exempts adults and Hockey Canada's requirement is narrower; neither exemption is yours. There is no warning before the penalty. See [UK and England Rules](../foundation/uk_rules.md).
-9. **In England, insurance follows sanctioning.** *"EIH participants are only insured through EIH insurance when the game or tournament has been sanctioned by EIH"* — and playing in a competition EIH or the IIHF does not recognise carries suspension and financial penalties on top. Ask whether the league is sanctioned before you join it.
-10. **Get the time and money commitment in writing before you commit.** Hockey Canada's own estimate spans 3 hours a week for house league to 6–7 plus travel for Rep. Ask what the fee includes — that is USA Hockey's own instruction to parents.
-11. **Arrive early and dressed before the stated time** — 20 to 30 minutes before a practice, 45 to 60 before a game, and a full hour before a genuine first session.
-12. **The etiquette that matters most is other people's safety and other people's ice time:** never shoot at a goalie who is not set, keep shifts short, get out of the way at the end of a drill, and leave the ice promptly at the buzzer.
-13. **Expect months for the basics and years for the rest** — and expect the first three weeks to feel harder than they will ever feel again.
+1. **Hockey is administered locally, so the answer to almost every specific question is your club, your rink or your association.** National bodies set rules, insurance and registration; fees, tiers, schedules and session rules are local and change yearly.
+2. **There is a graded route in, and it starts before hockey.** Public skating or a learn-to-skate class, then a taster (Try Hockey For Free, Esso Fun Days), then a learn-to-play block (NHL/NHLPA Learn to Play at 4–9, The First Shift at 6–10, an adult "hockey 101"), then a team.
+3. **Start a tier below where your ego puts you.** Moving up mid-season is easy and welcomed; moving down is not. Skating is the sorting variable, not shooting. Expect months for the basics and years for the rest, and the first three weeks to feel harder than they ever will again.
+4. **Registration is insurance, safeguarding and eligibility, not paperwork.** Playing unsanctioned hockey can cost a child their Hockey Canada membership privileges for the rest of the season.
+5. **The membership year is not twelve months from when you pay, and it is not pro-rata.** USA Hockey runs 1 September to 31 August. England Ice Hockey's Rules & Regulations say registrations run **1 August to 31 July**, close on **31 January** except at U10, and that *"pro-rata discounts are not available"* — while the EIHA's Registration page describes the **recreational** section on a 1 October to 30 September insurance year. Ask which one applies to you before you pay — and if you are in Britain, ask twice, because England Ice Hockey and Scottish Ice Hockey memberships ended on 30 June 2026 and are being reissued by Ice Hockey UK.
+6. **If you play in Britain, your rulebook is the IIHF's and your rink is probably not NHL-sized.** Every level here runs the IIHF book with domestic amendments on top, so the IIHF divergences flagged throughout are yours, not somebody else's — and IIHF Rule 1.2 permits any sheet from 26 m to 30 m wide, with the In-House Rules authorising rinks smaller still in EIH and SIHA fixtures.
+7. **In Britain a neck laceration protector is mandatory for every player, at every level** — every British level plays the IIHF book, and IIHF Rule 9.12 requires one of all players in all categories. USA Hockey exempts adults and Hockey Canada's requirement is narrower; neither exemption is yours. In EIH, SIHA and BUIHA competition there is no warning before the penalty — the In-House Rules remove the warning the IIHF book gives first — and in England the requirement covers all on-ice activity, practices included. See [UK and England Rules](../foundation/uk_rules.md).
+8. **In England, insurance follows sanctioning.** *"EIH participants are only insured through EIH insurance when the game or tournament has been sanctioned by EIH"* — and playing in a competition EIH or the IIHF does not recognise carries suspension and financial penalties on top. Ask whether the league is sanctioned before you join it.
+9. **Get the time and money commitment in writing before you commit.** Hockey Canada's own estimate spans 3 hours a week for house league to 6–7 plus travel for Rep. Ask what the fee includes.
+10. **Before any session, ask what gear is required, what standard it is and whether there is contact** — drop-in, stick-and-puck and shinny are conventions, not defined categories. Arrive dressed 20 to 30 minutes before a practice, 45 to 60 before a game and a full hour before a genuine first session. Never shoot at a goalie who is not set, keep shifts short, get out of the way at the end of a drill, and leave the ice at the buzzer.
 
 ---
 

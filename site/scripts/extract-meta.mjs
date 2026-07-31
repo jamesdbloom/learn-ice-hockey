@@ -57,9 +57,23 @@ function toPlainText(md) {
     .trim();
 }
 
-/** Trim to a sentence or word boundary under `max` characters. */
+/**
+ * Trim to a sentence or word boundary, so that the returned string — including
+ * the ellipsis when one is added — is never longer than `max` characters.
+ *
+ * The ellipsis has to be budgeted for, not appended afterwards. The first
+ * version searched a window of `max + 1` characters, cut at the last space in
+ * it, and then added '…' to whatever it found. When that space fell at index
+ * `max` the cut was already `max` characters long and the ellipsis pushed the
+ * result to `max + 1`: foundation/uk_rules shipped a 186-character meta
+ * description against a declared limit of 185.
+ */
 function truncate(text, max = MAX_DESCRIPTION) {
   if (text.length <= max) return text;
+
+  // A sentence boundary ends the description cleanly and takes no ellipsis, so
+  // it may use the whole budget. '. ' is two characters, so the '.' itself can
+  // sit no later than index max - 1 and the cut is at most `max` long.
   const window = text.slice(0, max + 1);
   const sentenceEnd = Math.max(
     window.lastIndexOf('. '),
@@ -67,8 +81,14 @@ function truncate(text, max = MAX_DESCRIPTION) {
     window.lastIndexOf('! '),
   );
   if (sentenceEnd > max * 0.5) return window.slice(0, sentenceEnd + 1).trim();
-  const space = window.lastIndexOf(' ');
-  return `${window.slice(0, space > 0 ? space : max).trim()}…`;
+
+  // A word boundary does take an ellipsis, so it gets one character less to
+  // work with: search only the first `max - 1` characters, and fall back to a
+  // hard cut at the same length when there is no space to break on.
+  const budget = max - 1;
+  const clip = text.slice(0, budget);
+  const space = clip.lastIndexOf(' ');
+  return `${clip.slice(0, space > 0 ? space : budget).trim()}…`;
 }
 
 /** Group a markdown source into blank-line-separated blocks, ignoring tables. */

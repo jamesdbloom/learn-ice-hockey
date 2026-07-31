@@ -6,9 +6,15 @@
 
 ## Overview
 
-Every other document here tells you to communicate. This one tells you what to actually say. It is a list of the words hockey players shout at each other, who says each one, when, and — the part that gets skipped — what you are supposed to *do* when you hear it.
+The player with the puck is the least informed player on the ice, and everyone else can see what they cannot. An opponent closing from behind sits in the one place their eyes do not reach, so the information that would save them is already in somebody else's head, useless.
 
-The vocabulary below is the most widely understood version of hockey's shared language. It is not the only version, and the specific words matter far less than your team agreeing on them. A team that says "wheel" and a team that says "go" are equally well organised. A team where three players say "wheel", one says "go", and one says nothing is not.
+**Two words carry most of the value, and both are usually available and usually unsaid.** *"Man on"* means an opponent is closing and you cannot see them: stop trying to make a play, protect the puck with your body, and get rid of it. *"Time"* is its mirror — nobody is near you, so lift your head and make the good play instead of the safe one. A player who fears pressure that is not there throws the puck away just as reliably as one who never saw it coming.
+
+**"Man on" carries a safety rule that outranks everything else here.** It is shouted in exactly the situation where hockey's most serious injuries happen — a player who cannot see the hit coming, near the wall around the rink. **Never take that contact with your back to the wall.** Get your skates parallel to it and take the hit on your forearm and hip, head up, chin off your chest. Protecting the puck never justifies squaring your back to somebody arriving at speed.
+
+**Whoever can see it makes the call** — not the captain, not the most experienced player. Early, short and loud: a call before the puck arrives lets the receiver plan, the same call as it arrives just startles them, and a perfect call at conversational volume did not happen. Use names, because "Sam, man on" gets acted on and "man on" turns four heads. Answer every call you hear.
+
+**There is no official hockey vocabulary**, so agree yours as a team and drill it. Words vary by team, region, level and coach, and which ones you pick matters far less than everybody decoding them instantly — a call the receiver has to translate is worse than silence, because at least silence does not cost them a beat.
 
 ---
 
@@ -424,7 +430,7 @@ Priority: Start with "man on" and "time" and get those automatic before adding a
 Action: Make one player responsible for volume each drill, rotating the job so the quiet players cannot hide behind the loud ones
 Action: Name the calls that worked, out loud, afterwards — "that 'over' saved us a turnover"
 Action: Agree the vocabulary in the dressing room at the start of the season, not on the ice in game three
-Key: Write down one word per meaning — one word for two things is the classic failure, as with "behind you"
+Key: Write down one word per meaning — one call carrying two meanings is the classic failure, as with "behind you"
 Action: Keep the list to ten or fifteen calls, include the goalie in the conversation, and revisit it about a month in
 ```
 
@@ -441,7 +447,7 @@ Almost nobody talks naturally on the ice at first. The obstacle is not tactical,
 **How a team agrees a vocabulary:**
 
 - **Do it in the dressing room at the start of the season, not on the ice in game three.** Twenty minutes with a whiteboard is enough.
-- **Write down one word per meaning.** The commonest source of confusion is two words for one thing, or worse, one word for two things — "behind you" meaning both an opponent and a loose puck is the classic.
+- **Write down one word per meaning.** The commonest source of confusion is two calls for one thing, or worse, one call carrying two meanings — "behind you" meaning both an opponent and a loose puck is the classic.
 - **Keep the list short enough to remember.** Ten to fifteen calls covers almost everything. Anything longer will not survive a real game.
 - **Include the goalie in the conversation.** Their calls are the ones the defencemen have to act on instantly, and they are the ones most often left out of the discussion.
 - **Revisit it once, about a month in.** You will find two calls nobody uses and one situation nobody has a word for.
@@ -463,18 +469,62 @@ See [Team Play and Culture](../off-the-ice/team_play_and_culture.md) for the wid
 - **Using a private vocabulary.** Words your team has not agreed are noise.
 - **Talking to the referee instead of to your teammates.** Whatever you say to the official does not change the call and does take your attention off the play.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You shout "man on" to a teammate retrieving the puck near your own wall. One
+   thing in that entry outranks everything else in it — what is it, and what
+   exactly should their body be doing? *(§Pressure warnings)*
+
+2. Your goalie shouts "shot" as the opposition come at you two-on-one. What are
+   they telling you to do — and what are they not telling you? *(§The
+   goaltender's calls)*
+
+3. "Rim" and "reverse" are opposite plays chosen off the same read. What is the
+   read, and which kind of forechecker does each one beat? *(§Puck direction)*
+
+4. Someone shouts "ice it" while you are killing a penalty. What are you buying,
+   what might you be giving up, and what would you need to know about your rule
+   set before that call becomes a habit? *(§Puck direction)*
+
+5. A defenceman shouts "sag". Under which defensive-zone coverage does that call
+   mean nothing at all, under which does it apply only above the dots, and what
+   should you therefore have found out before the season started? *(§Danger and
+   coverage)*
+
+6. This document gives three priorities for *how* to make a call, each in the
+   form "X beats Y". Name all three, and say which one it calls the single most
+   common reason a call fails. *(§How to call well)*
+
+7. Four calls in this document are flagged as carrying two meanings at once —
+   and not one of them is a single word. Name three of the four and say what the
+   document suggests doing about each. Then name the two bench phrases it tells
+   you *not* to press into service for a new meaning, because both are already
+   taken. *(§Pressure warnings, §Puck direction, §Support and availability, §The
+   goaltender's calls, §Bench and line changes)*
+
+8. Who makes a call, and who does not? State the organising principle in one
+   line, then name two of the standing responsibilities that sit on top of it.
+   *(§Who owns which call)*
+
 ## Key Takeaways
 
-1. **The puck carrier is the least informed player on the ice.** Everyone else can see their blind side. A call transfers information that already exists and costs nothing.
-2. **"Man on" and "time" are the two highest-value words in hockey.** One prevents a turnover; the other prevents a panic. Both are usually available and usually unsaid.
+1. **The puck carrier is the least informed player on the ice.** Everyone else can see their blind side, and passing that on costs nothing.
+2. **"Man on" and "time" are the two highest-value words in hockey.** One prevents a turnover, the other a panic, and both are usually unsaid. **"Man on" carries a safety rule that outranks everything else it means:** never take that contact with your back to the wall — skates parallel to it, forearm and hip, head up, chin off your chest.
 3. **The player who can see it makes the call** — not the captain, not the most senior player. Whoever has the information.
-4. **Your goalie is your best communicator.** They face the whole play, they are stationary, and nothing is behind them. Their view is exactly the view your defencemen lack.
+4. **Your goalie is your best communicator.** They face the whole play, are stationary, and have nothing behind them — exactly the view your defencemen lack.
 5. **Early beats accurate, short beats specific, loud beats clever.** A perfect call at conversational volume did not happen.
 6. **Use names and numbers.** "Sam, man on" gets acted on. "Man on" gets four heads turning.
-7. **Agree the vocabulary as a team and never change it.** The specific words barely matter; a receiver who has to translate has already lost the half-second the call was worth.
+7. **Agree the vocabulary as a team: one word, one meaning, all season.** The specific words barely matter; a receiver who has to translate has already lost the half-second.
 8. **Answer every call.** An unacknowledged switch is two players hoping, and hoping is how the back door scores.
 9. **Non-verbal cues back up words, they don't replace them.** A stick blade on the ice is a target; a stick tap is anyone's, including your opponent's.
-10. **The loudest team usually looks like the more skilled team.** It is the cheapest improvement available to any team — no fitness, no skill work, no extra ice.
+10. **The loudest team usually looks like the more skilled team** — the cheapest improvement available, needing no fitness, no skill work and no extra ice.
 
 ---
 

@@ -13,11 +13,13 @@
 
 ## Overview
 
-Hockey gear does two separate jobs — it keeps you out of hospital, and it determines what your body is able to do on the ice. Most players get the first job roughly right and the second one badly wrong, usually by buying skates that are too big and a stick that is too stiff.
+Hockey gear does two separate jobs: it keeps you out of hospital, and it decides what your body is able to do on the ice. Most players get the first roughly right and the second badly wrong.
 
-This document covers the whole kit: what each piece is, how it should fit, what the rules actually require, and where the money is worth spending. The single most important sentence in it is this: **fit beats price at every position on the list.** As Pure Hockey's own fitting guide puts it, "a low-end skate that provides good heel lock will outperform a high-end skate that is a size too large."
+**Fit beats price at every position on the list**, and skates are where that bites hardest. Pure Hockey's fitting guide puts it plainly: *"a low-end skate that provides good heel lock will outperform a high-end skate that is a size too large."* Buying a size too big is the commonest and most damaging mistake in the sport, because turning is controlled by ankle angle, and slack between foot and boot gets taken up before the skate tilts at all. You feel unstable, so you never commit, and you conclude you have weak ankles. You have loose boots. Skates run roughly one to one and a half sizes below your street shoe size — CCM's own size chart publishes that offset, Bauer deliberately publishes none, and True publishes none either, so treat it as a starting point rather than a promise — with no more than half a size extra for a growing child.
 
-A note on prices. Every figure here comes from a North American retailer's own published guidance, retrieved 27 July 2026 — but they are not all current shelf prices. The **helmet tiers in particular come from a retailer article referencing older product generations**, so read those as relative, not as quotes. Prices vary enormously by region, by currency, by season and by how patient you are about buying last year's model. Treat them all as shape.
+**Equipment rules differ far more between leagues than playing rules do, so find out what yours requires before you spend anything.** Neck protection is the sharpest divergence. In Britain a neck laceration protector is mandatory for every player in every category, adults included; in English, Scottish and university competition there is **no warning** before an immediate 10-minute misconduct, with a game misconduct for a second offence, and in England the requirement covers *"all on ice activities"*, so it applies at practice too. USA Hockey Rule 304(g) exempts adults, and Hockey Canada Rule 3.6(c) reaches only players registered in minor and female hockey. A British adult who reads those two lines and leaves the neck guard at home will be sent off the ice for it.
+
+**Replace any helmet that has taken a serious impact, even one that looks perfect.** Bauer's own manual: *"If helmet is severely impacted, it should be replaced immediately."* Hockey Canada says the same of helmets that are cracked or have loose fittings or missing liner pieces. Foams work by crushing and crushed foam does not un-crush — which is also why a child should never be put in a second-hand helmet, bought, borrowed or handed down: you cannot see a compressed liner or a hairline crack, and you cannot know the impact history. And no helmet is concussion-proof — they are only partially effective against the rotational forces behind most concussions.
 
 ---
 
@@ -68,7 +70,7 @@ This is the section people skip and then get sent off the ice for. The three mai
 > - **A full cage must have the chin cup fitted and in contact with your chin**, inside the helmet's J-clips. Loose or dangling cages and straps are not permitted.
 > - **Shorts that are cut, torn or modified are not permitted**, and jerseys must not be tucked into them.
 >
-> **The USA Hockey and Hockey Canada lines below are not yours.** USA Hockey Rule 304(g) exempts adults from neck protection and Hockey Canada Rule 3.6(c) covers only minor and female hockey. A British adult reading those two lines and concluding that neck protection is optional for them would be **wrong, and would be sent off the ice for it without a warning.**
+> **The USA Hockey and Hockey Canada lines below are not yours.** USA Hockey Rule 304(g) exempts adults from neck protection and Hockey Canada Rule 3.6(c) covers only minor and female hockey. A British adult reading those two lines and concluding that neck protection is optional for them would be **wrong** — the mandate is IIHF Rule 9.12, it covers *"all Players in all categories"*, and every British level plays the IIHF book. What varies is the punishment: in **EIH, SIHA and BUIHA** competition they would be sent off the ice **without a warning**; under the unamended IIHF book — which is what the Elite League is understood to play, with its own casebook on top — the referee warns first and then assesses a minor. Neither is an exemption.
 >
 > *Source: [IHUK In-House Rules 2025-26 Rev 1](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf), Section 3 – Equipment (Rules 9.7, 9.8, 9.12, 12) and Section 11 (Rule 102), plus [England Ice Hockey Rules & Regulations](https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf) Rule 24.*
 
@@ -128,7 +130,7 @@ Lace properly while you check. Tighten firmly through the first two or three eye
 
 ### Sizing: skates are not shoes
 
-**Hockey skates run roughly 1 to 1½ sizes smaller than your street shoe size.** *(The retailer fitting guide this comes from states the rule generally and names no brands, so treat it as a starting point rather than as verified for any particular manufacturer — brands and even model lines differ, which is why you try them on.)* Do not be alarmed by the number on the box. Widths are commonly D (regular) and EE (wide), though Bauer and CCM have both moved to numbered fit systems (Fit 1 / Fit 2 / Fit 3, and tapered / regular / wide) that map onto the old letter widths.
+**Hockey skates run roughly 1 to 1½ sizes smaller than your street shoe size.** *(This is better sourced than most rules of thumb, but the manufacturers do not all agree, so it is a starting point rather than a promise. **CCM verifies it**: its own Skate Selector publishes a shoe-size conversion table with a 1.0-size offset through youth and junior and 1.5 through senior. **Bauer deliberately declines to publish one**, saying that finding a skate "isn't as simple as taking your shoe size and looking at a conversion chart." **True publishes no offset at all.** The retailer sizing guide most people meet the rule on gives eight brand-specific charts — four Bauer and four CCM, and none for True — so even there it is not one general number. Brands and model lines differ, which is why you try them on.)* Do not be alarmed by the number on the box. Widths are commonly D (regular) and EE (wide), though Bauer and CCM have both moved to numbered fit systems (Fit 1 / Fit 2 / Fit 3, and tapered / regular / wide) that map onto the old letter widths.
 
 For children, **half a size larger than that is acceptable for growth, and no more.** Pure Hockey's sizing guide is specific about what that looks like inside the boot: toes barely touching the toe cap with "no more than 1/4 inch of space in the heel," and "when sizing children, follow the same method while allowing 1/2 size extra for growing room."
 
@@ -606,7 +608,7 @@ Run this before you leave the house. Nothing on it is optional and every one of 
 
 **Torso and arms:** base layers · jock/jill · shoulder pads · elbow pads · gloves · jersey
 **Legs:** socks · shin guards · pants · sock tape
-**Head and neck:** helmet (with cage/visor attached) · mouthguard · **neck guard — in Britain, forgetting this one is an immediate 10-minute misconduct with no warning**
+**Head and neck:** helmet (with cage/visor attached) · mouthguard · **neck guard — mandatory at every British level (IIHF 9.12), and in EIH, SIHA and BUIHA competition forgetting it is an immediate 10-minute misconduct with no warning**
 **Feet:** skates · spare laces · skate guards/soakers
 **Sticks:** stick (plus a spare if you have one) · stick tape · wax
 **Other:** water bottle · towel · shower kit · rink pass/club card · any tape or straps you use
@@ -634,7 +636,7 @@ Then check three things before you step on: **chin strap fastened, shin guards u
 
 ## Common Mistakes
 
-- **Buying skates a size too big.** The most damaging equipment error in hockey. It costs you edge control, blames itself on "weak ankles," and destroys the boot from the inside. Buy 1 to 1½ sizes below your shoe size and check heel lock.
+- **Buying skates a size too big.** The most damaging equipment error in hockey. It costs you edge control, blames itself on "weak ankles," and destroys the boot from the inside. Start 1 to 1½ sizes below your shoe size — CCM publishes that offset, Bauer publishes none — and check heel lock.
 - **Buying skates that fit but never getting them baked or broken in properly**, then deciding the fit is wrong.
 - **Standing up, or flexing your foot, during a skate bake.** You have just moulded the boot to the wrong shape.
 - **Skating on whatever hollow the shop last gave you.** If you don't know your hollow, you can't tell whether your edges or your technique are the problem. Pick one, write it down, ask for it every time.
@@ -651,23 +653,67 @@ Then check three things before you step on: **chin strap fastened, shin guards u
 - **Leaving gear in the bag between sessions.** This is the single habit behind rot, rust, smell and skin problems.
 - **Storing skates in soakers while still wet.** The soaker's job is to absorb moisture, not to seal it in.
 - **Spending big on a stick and cheap on a helmet.** Consider what each one is protecting.
-- **Forgetting a mouthguard or neck guard** in a league that requires them, and being sent off the ice for it. **In Britain the neck guard is never the conditional case** — it is mandatory for every player at every level and age, and there is no warning before the 10-minute misconduct. Reading USA Hockey's adult exemption or Hockey Canada's minor-and-female scope as though it applied to you is the single most expensive misreading a British player can make of this document.
+- **Forgetting a mouthguard or neck guard** in a league that requires them, and being sent off the ice for it. **In Britain the neck guard is never the conditional case** — IIHF Rule 9.12 makes it mandatory for every player at every level and age, and in EIH, SIHA and BUIHA competition there is no warning before the 10-minute misconduct. Reading USA Hockey's adult exemption or Hockey Canada's minor-and-female scope as though it applied to you is the single most expensive misreading a British player can make of this document.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You are between two skate sizes and thinking of taking the larger one "for
+   growth". What does the slack actually do to an edge, and what is the entire
+   allowance a child is permitted? *(§Fit above everything, §Sizing, and §Buying a
+   size too big)*
+
+2. Your outside edges still feel unsafe after a season of drills. What should you
+   have checked before booking another power-skating session, and what do players
+   in that situation normally diagnose themselves with instead? *(§Buying a size
+   too big is the most common and most damaging mistake)*
+
+3. A teammate offers you their old helmet. It fits, the sticker is in date, and
+   there is no visible damage. Why is the answer still no — and what does that
+   date on the sticker actually measure? *(§New versus used, and §Common
+   Mistakes)*
+
+4. Name the three coverage gaps that cause the most injuries, and for each one say
+   what closes it. For the first, say where you have to be standing when you check
+   it. *(§The three coverage gaps that cause the most injuries)*
+
+5. You are buying a helmet. Name the certification system for each of the three
+   markets and the standard behind it — and say what the British test actually is,
+   given that no British book names a mark at all. *(§Certification)*
+
+6. You are an adult in Britain and you have read that adults are exempt from neck
+   protection. Whose rule is that, what is yours, and what is the enforcement
+   difference between the IIHF book and the In-House Rules? *(§If you play in
+   Britain, and §Neck protection)*
+
+7. Your stick snaps mid-shift. What must you do with it immediately, how may a
+   replacement legally reach you, and what is the equipment lesson for next time?
+   *(§Shaft finish and construction — the broken-stick note)*
+
+8. You calculated your flex from your body weight, bought that stick, and are
+   about to cut four inches off it. What have you just done to it, and what should
+   you have bought instead? *(§2. Flex, and §Common Mistakes)*
 
 ---
 
 ## Key Takeaways
 
-1. **Fit beats price everywhere in the bag.** A cheap skate with good heel lock outperforms an expensive skate a size too large, and a cheap helmet that fits protects better than an expensive one that doesn't.
-2. **Skates are the most important purchase by a wide margin.** Buy 1 to 1½ sizes below your shoe size, lock the heel, let your toes just brush the cap, and never buy up for growth beyond half a size for a child.
-3. **Badly fitting skates make it impossible to learn edges.** Ankle slack eats the first few degrees of every edge you try to set, so you never commit, and you conclude you have weak ankles. You have loose boots.
-4. **Learn your hollow and keep it.** Half an inch is the sensible default; deeper bites and shallower glides; heavier players generally go shallower. Sharpen every 20–30 hours, and check for a reflection along the edge under a bright light.
-5. **A stick is four numbers: length, flex, curve and lie.** Get them right and the brand barely matters. Chin in skates for length, half your body weight for flex — and remember that **cutting a stick makes it stiffer**.
-6. **Lie is the variable nobody checks and everybody should.** Turn your stick over: uneven wear at the toe or heel means the blade isn't sitting flat, and everything you do with the puck is being degraded by it.
-7. **Too-big pads protect less, not more.** The three gaps that hurt people are shin-guard-to-pants, a rotating elbow pad, and the exposed wrist between glove cuff and elbow pad.
-8. **Never put a child in a second-hand helmet — bought, borrowed or handed down — and never wear one past its certification expiry.** Foams work by crushing, and crushed foam doesn't recover. A sibling hand-me-down with an in-date sticker has exactly the same problem as a bought used one: you cannot see a compressed liner or a hairline crack, and you cannot know the impact history. Replace any helmet that has taken a serious impact.
-9. **Equipment rules differ far more between leagues than playing rules do** — neck guards, full facial protection, mouthguards, HECC certification and whether pants go over or under the jersey all change by rule set. Check yours before you buy.
-10. **🇬🇧 If you play in Britain, the neck guard is the one that does not vary.** A neck laceration protector is mandatory under IIHF Rule 9.12 for every player in every category, adults included — and in EIH, SIHA and BUIHA competition the In-House Rules give **no warning** before an immediate 10-minute misconduct, with a second offence escalating to a game misconduct. England Ice Hockey's *Rules & Regulations* 24.3 extend it to *"all on ice activities"*, so it applies at practice too. The USA Hockey adult exemption is not yours.
-11. **Empty the bag every single time you get home.** Hang it, run a fan, wipe your steel dry. This one habit prevents rot, rust, smell and most skin problems, and it costs you ninety seconds.
+1. **Never buy or wear a second-hand helmet — bought, borrowed or handed down.** Foams work by crushing, and crushed foam doesn't recover: you cannot see a compressed liner or a hairline crack, and you cannot know the impact history. **Replace any helmet that has taken a serious impact** — Bauer's own manual and Hockey Canada's certification bulletin both say so outright.
+2. **There is no concussion-proof helmet.** Helmets are extremely good at preventing skull fractures and lacerations, and only partially effective against the rotational forces behind most concussions. The risk never goes to zero.
+3. **Equipment rules differ far more between leagues than playing rules do** — neck guards, full facial protection, mouthguards, certification marks and whether pants go over or under the jersey all change by rule set. Expiry differs too: a HECC sticker expires and an expired one is no longer certified, **CSA certification carries no expiry at all**, and Britain specifies no mark. Check yours before you buy.
+4. **🇬🇧 In Britain the neck laceration protector is mandatory for every player in every category, adults included** — IIHF Rule 9.12, and every British level plays the IIHF book. England Ice Hockey's *Rules & Regulations* 24.3 extend it to *"all on ice activities"*, so it applies at practice too. Neither USA Hockey's adult exemption (Rule 304(g)) nor Hockey Canada's minor-and-female scope (Rule 3.6(c)) is yours.
+5. **What varies is the punishment, and none of it is an exemption.** In EIH, SIHA and BUIHA competition the In-House Rules give **no warning** before an immediate 10-minute misconduct, escalating to a game misconduct on a second offence — the conservative reading, because England Ice Hockey's own *Rules & Regulations* 24.6 sets out a warning scheme and nobody has published which governs. Under the unamended IIHF book, which the Elite League is understood to play, the referee warns first and then assesses a minor.
+6. **Too-big pads protect less, not more.** The three gaps that hurt people are shin-guard-to-pants — check that overlap in a skating stance, not standing in a shop — a rotating elbow pad, and the exposed wrist between glove cuff and elbow pad.
+7. **Fit beats price, and skates are where it bites hardest.** Pure Hockey's fitting guide: *"a low-end skate that provides good heel lock will outperform a high-end skate that is a size too large."* Lock the heel, let your toes just brush the cap, and allow a growing child no more than half a size. Skates run **roughly** one to one and a half sizes below your shoe size — a retailer's general rule and a starting point, manufacturer-verified for CCM, explicitly declined by Bauer, unknown for True. Get measured.
+8. **Badly fitting skates make edges very hard to learn.** Ankle slack is taken up before the boot tilts at all, so you never commit — players in oversized skates typically diagnose weak ankles when what they have is loose boots.
+9. **Your hollow and your stick numbers are preference, not rules of hockey.** Half an inch is the industry-standard default hollow — deeper bites, shallower glides, heavier players generally shallower — and every 20–30 hours is a common rule of thumb for sharpening. A stick is length, flex, curve and lie: chin in skates and half your body weight are starting points, cutting one makes it stiffer, and uneven wear at toe or heel means your lie is wrong.
+10. **Empty the bag every single time you get home.** Hang it, run a fan, wipe your steel dry, and keep chlorine bleach away from the gear. Clean, dry kit removes most of the opportunity for the skin infections that circulate in hockey.
 
 ---
 

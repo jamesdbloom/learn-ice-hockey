@@ -7,9 +7,19 @@
 
 ## Overview
 
-A **rush** is an attack that arrives in transition — the puck moving from one end toward the other while the defending team is still getting organised. This is the situation that produces the most dangerous scoring chances in hockey, because the defence is not set and the goalie is still moving. This document covers how to stop one: gap control, backchecking lanes and assignments, every numerical situation from 1-on-1 through 3-on-2 to breakaways and the late trailer, the choice between standing up at the blue line and backing off, the four ways teams manufacture odd-man rushes against themselves, the vocabulary you need to shout during one, and how to hand a stopped rush over to your defensive-zone structure.
+A **rush** is an attack that arrives before the defence is set, and it produces the most dangerous chances in hockey: the goalie is still moving and nobody has picked up an opponent yet.
 
-Almost everything here is a habit rather than a system. Get the habits right and you will defend rushes competently under any coach.
+**Stay between the puck and your own net — every attacker, all the time.**
+
+**You cannot close the distance to a puck carrier from a standstill**, so start skating backwards while they are still collecting the puck at their end. Space gives them speed, time to lift their head and choose, and a clean lane to shoot down. Two to three stick lengths in open ice, about one by your own blue line, shrinking the whole way in — a guide rather than a law. And watch their chest: the puck, stick, hands and head can all lie.
+
+**Two attackers and one of you: take away the pass, give up the shot** — your goalie can save a shot and cannot save a pass across the front of the net. Say it out loud, so you own the pass and the goalie owns the shooter, and do not commit to the lane until the pass is released. Most goalies want that; a few will ask you to pressure the puck, so ask yours.
+
+**Steering a carrier toward the side wall is standard; riding them into it is not permitted everywhere.** In women's hockey, including every level of it in Britain, IIHF Rule 101.1 forbids using the boards to make contact with, push or pin an opponent competing for the puck — as does any league without body checking. Pin the puck, not the player.
+
+**Chasing a lone attacker from behind, your stick goes on the puck and nothing else.** A hook, trip, hold or slash from behind that denies the chance is a penalty shot, not a two-minute penalty, in the NHL and IIHF books — and an awarded goal if your own net is empty. **Under USA Hockey, which most North American rec and youth players play, it is not automatic:** Rule 616(a) awards *"a penalty shot/optional minor penalty"*, so the referee may give a minor instead — and it counts a foul from **diagonally** behind, beyond your peripheral vision, as from behind.
+
+**Best of all, do not create the rush.** Most attacks where they outnumber you were manufactured by your own team: a defenceman stepping forward and missing the puck, a forward leaving early, a turnover in the middle, a line change with the puck loose, or both defencemen caught below the puck in the offensive zone.
 
 ---
 
@@ -37,7 +47,7 @@ The practical conclusion: **preventing a rush chance is worth far more than defe
 
 > **A note on numbers.** Rush and odd-man chances are widely treated by coaches and analysts as the highest-danger chances in hockey, and there is published tracking behind that. Sportlogiq data covering every NHL game from 2017-18 to 2020-21, presented at the Ottawa Hockey Analytics Conference and reported by [Alison Lukan for NHL.com](https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-chances-off-the-rush-328173944), puts a *"normal shot"* at an **8.15% likelihood of becoming a goal** — and says that *"the minute an opponent gets an extra skater on an attack, that likelihood almost triples."* The per-situation numbers sit in a Sportlogiq graphic rather than in the article's text, so the multiplier is quoted here in the words the source used and not as a precise figure.
 >
-> **The other half of the picture is how rare they are.** [Tulsky and colleagues](http://hockeyanalytics.com/Research_files/Using%20Zone%20Entry%20Data%20To%20Separate%20Offensive,%20Neutral,%20And%20Defensive%20Zone%20Performance.pdf) tracked which zone entries were odd-man rushes and found their overall impact *"negligible"* — they are *"relatively infrequent in today's NHL (representing less than 3% of all 5-on-5 zone entries)"* and the difference against an ordinary carry-in is *"significant but not overwhelming (0.78 shots versus 0.57)"*. Note that the two figures measure different things: 8.15% is per shot, 0.78 is shots per zone entry. Put together they say what coaches say — **a shot from an odd-man situation is worth roughly three ordinary ones** — while adding the part coaches skip, which is that you will face only a handful of them a game. Both halves matter here. The danger is why the habits below are worth drilling; the rarity is why *preventing* an odd-man rush beats defending one, and why the section on the four ways teams manufacture odd-man rushes against themselves is the most valuable part of this document.
+> **The other half of the picture is how rare they are.** [Tulsky and colleagues](http://hockeyanalytics.com/Research_files/Using%20Zone%20Entry%20Data%20To%20Separate%20Offensive,%20Neutral,%20And%20Defensive%20Zone%20Performance.pdf) tracked which zone entries were odd-man rushes and found their overall impact *"negligible"* — they are *"relatively infrequent in today's NHL (representing less than 3% of all 5-on-5 zone entries)"* and the difference against an ordinary carry-in is *"significant but not overwhelming (0.78 shots versus 0.57)"*. Note that the two figures measure different things: 8.15% is per shot, 0.78 is shots per zone entry. Put together they say what coaches say — **a shot from an odd-man situation is worth roughly three ordinary ones** — while adding the part coaches skip, which is that you will face only a handful of them a game. Both halves matter here. The danger is why the habits below are worth drilling; the rarity is why *preventing* an odd-man rush beats defending one, and why the section on the five ways teams manufacture odd-man rushes against themselves is the most valuable part of this document.
 
 ---
 
@@ -594,15 +604,15 @@ Key: Keep "step up" and "pinch" separate — stepping up is challenging in the n
 ## Odd-Man Rushes: How They Are Created
 
 ```facts
-Key: Almost every odd-man rush against you was manufactured by your own team, in one of four ways
+Key: Almost every odd-man rush against you was manufactured by your own team, in one of five ways
 Read: Pinch on a read — when you will clearly win the puck, when a forward can cover for you, and when score and time say the risk is worth it
 Never: Turn up ice hunting a breakaway pass before your team actually has possession — the test is whether you can still get back if you are wrong
 Never: Stickhandle through the middle under pressure, or force cross-ice passes in the neutral zone
 Action: Change lines when the puck is in the offensive zone or moving away from your end, not during a scramble
-Key: One defenceman is always above the puck — both below it in the offensive zone is the fifth, subtler cause
+Never: Both defencemen below the puck in the offensive zone — the fifth and subtlest cause; one defenceman is always above the puck
 ```
 
-The best rush defence is not creating the rush. Almost every odd-man rush against you was manufactured by your own team, in one of four ways.
+The best rush defence is not creating the rush. Almost every odd-man rush against you was manufactured by your own team, in one of five ways.
 
 **1. A pinch that misses.** A defenceman steps down at the offensive blue line to keep the puck in and does not get it. Now one D is behind the play. The fix is not "never pinch" — it is pinch on a read: pinch when you will clearly win the puck, when a forward can cover for you, and when the score and time say the risk is worth it.
 
@@ -612,7 +622,7 @@ The best rush defence is not creating the rush. Almost every odd-man rush agains
 
 **4. A bad line change.** Changing while the puck is loose, or while your team does not have clear possession, means five players in transition and two of them stepping onto the ice cold. Change when the puck is in the offensive zone or moving away from your end, and not during a scramble. Full five-man changes on the fly are routine at every level and are not the problem in themselves — the problem is *when* you go. A five-man change off a clean dump-in deep in their end is normal; the same change with the puck loose at your own blue line is how a 3-on-2 gets born. See [Game Management](game_management.md).
 
-A fifth, more subtle one: **both defencemen below the puck in the offensive zone.** The rule of thumb from [Defender](../positions/defender.md) — one defenceman is always above the puck — exists precisely to prevent this.
+**5. Both defencemen below the puck in the offensive zone.** The subtlest of the five, because nothing has visibly gone wrong until the puck turns over and there is nobody above it. The rule of thumb from [Defender](../positions/defender.md) — one defenceman is always above the puck — exists precisely to prevent this.
 
 ---
 
@@ -678,6 +688,7 @@ The habit to build: **a rush is not over when the shot is saved.** It is over wh
 
 - **Standing still at the blue line** waiting for the attacker, then trying to accelerate backwards as they arrive. You cannot close a gap from a standstill, and this is the root cause of most rush goals.
 - **Watching the puck instead of the chest.** Your feet follow your eyes, and the puck is the thing they are using to lie to you.
+- **Riding a carrier into the boards in a league that does not permit it.** Steering them there with your route and pinning them there with your body are two different acts, and the second is a minor, or a major plus an automatic game misconduct, in women's hockey — every level of it in Britain — and in any league without body checking (IIHF Rule 101.1).
 - **Sliding on a 2-on-1 before the pass is released.** You take yourself out of the play and open both options at once.
 - **Trying to block the shot on a 2-on-1.** You abandon the pass, and a half-block deflects a puck your goalie was tracking cleanly.
 - **The goalie and the defenceman both hedging on a 2-on-1** because they never agreed who has what. Neither option ends up covered.
@@ -692,18 +703,62 @@ The habit to build: **a rush is not over when the shot is saved.** It is over wh
 - **Pivoting early** and giving up your ability to react to a cutback.
 - **Both defencemen below the puck in the offensive zone**, which is how the odd-man rush got created in the first place.
 
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You are at your own blue line and you stand still to wait for the rush to
+   arrive. Name the three things the gap hands the attacker, and say why
+   accelerating backwards once they get there does not fix it. *(§Why a big gap
+   is the root of most rush goals, §Start your feet early)*
+
+2. The carrier drops a shoulder, moves the puck wide and turns their head. What
+   should your eyes be on instead, and what is it about that part of them that
+   cannot lie? *(§Read the chest and hips, not the puck, the hands or the head)*
+
+3. You have steered a 1-on-1 carrier to the wall and you are riding them into
+   the boards. In which leagues is that instruction withdrawn entirely, what
+   does the rule say you may pin instead, and what does breaking it cost?
+   *(§1-on-1)*
+
+4. Two attackers, one defenceman, and you are the defenceman. What do you take
+   away and what do you give up — and who is the other half of that agreement?
+   Then say the one situation in which the label "2-on-1" stops applying.
+   *(§2-on-1 — the headline situation)*
+
+5. An attacker is alone on your goalie and you are chasing from behind. What is
+   the only thing you may reach for, and what does reaching for anything else
+   cost you — with your goalie in net, and with your goalie pulled?
+   *(§Breakaways)*
+
+6. Your team defends a 3-on-2 and the puck carrier is in the middle lane. Who
+   takes them? There is more than one answer here — say what the two versions
+   are, what each one concedes, and what you would have to find out to know
+   which is yours. *(§3-on-2)*
+
+7. Almost every odd-man rush you face was manufactured by your own team. Name
+   three of the five ways, and for the pinch say what turns it from a mistake
+   into a legitimate read. *(§Odd-Man Rushes: How They Are Created)*
+
+---
+
 ## Key Takeaways
 
-1. **Stay on the defensive side of the puck.** Every attacker, all the time. Anything that puts an attacker between you and your net has already gone wrong.
-2. **Start your feet early and keep the gap shrinking.** You cannot close a gap from a standstill — be at speed before they arrive, and reset on every regroup. Two to three stick lengths through the neutral zone, a stick and a half at the red line, a stick length at your blue line, and never growing.
-3. **Read the chest and hips.** The puck, hands, stick and head are all deception tools. The torso cannot lie.
-4. **On a 2-on-1: take away the pass, give up the shot — and say the contract out loud.** You own the pass, the goalie owns the shooter, and neither of you covers both. Do not slide until the pass is released. The one exception: if the second attacker has been picked up and the shooter is walking in unpressured with no pass available, it is no longer a 2-on-1 — close on the puck.
-5. **The middle-lane driver is the most commonly missed player in hockey.** In the most common backcheck scheme the centre owns the middle, the wingers own the outsides, and nobody chases the carrier your D already has. That lane assignment is a coaching choice, not a law — some teams give the middle to the first man back whoever it is, others pick up man-on-man from the puck outward. Find out which yours runs.
-6. **Skate first, then look.** Two strides at the start of a backcheck are worth more than any read you make while standing still.
-7. **Step up or back off — never half.** Only step up when you are certain; when in doubt, back off with a tight gap.
-8. **The best rush defence is not creating the rush.** Pinches with no read, forwards cheating, neutral-zone turnovers and bad line changes cause almost all of them.
-9. **On a breakaway, stick on the puck only.** A hook or trip from behind that denies the chance is a penalty shot — and an awarded goal if your net is empty.
-10. **The rush is not over when the shot is saved.** It is over when everybody has a mark — and which mark is yours depends on your team's D-zone coverage, so know whether you play low zone collapse or man-on-man before the puck gets there.
+1. **Stay on the defensive side of every attacker, all the time.** Anything that puts an attacker between you and your own net has already gone wrong.
+2. **Start your feet early and keep the gap shrinking:** two to three stick lengths through the neutral zone in open ice, a stick and a half at the centre red line, one stick length at your own blue line, and never growing. **These are a guide, not a law** — they move with your backward speed and the attacker's skill.
+3. **Read the chest and hips.** The puck, stick, hands, head and eyes can all lie; the torso cannot. Fix your eyes on the numbers on the front of their jersey.
+4. **Riding a carrier into the wall is not permitted everywhere.** Steering them there with your route is a different act from putting them there with your body, and it stays legal even where checking is banned — Hockey Canada's interpretation of its own non-checking rule says so in terms, Interpretation 1 to Rule 7.3(a): a player *"may steer or direct an opposing player into the boards, without actually touching or body-checking them. This is acceptable."* Using the boards to make contact is a different act: IIHF Rule 101.1 says two or more players competing for possession are *"not allowed to use the boards to make contact with an opponent to eliminate her from the play, push her into the boards, or pin her along the boards"* — a minor, or a major plus an automatic game misconduct, in women's hockey at every level, **including every level of it in Britain**, and the same applies in any league without body checking. **Pin the puck, not the player.**
+5. **On a 2-on-1, take away the pass and give up the shot — and say the contract out loud.** You own the pass, the goalie owns the shooter, and you do not slide until the pass is released. **Most goalies want exactly that, but some will ask you to pressure the puck instead, so ask yours before the game.** If the shooter is walking in unpressured with no realistic pass available, it is no longer a 2-on-1 — close on the puck.
+6. **Chasing a lone attacker from behind, your stick goes on the puck and nothing else.** Under NHL Rule 57.3 a foul from behind that denies the chance is a penalty shot rather than a two-minute penalty — but if you play the puck first and trip them in doing so, it is only a minor, which is the whole reason the instruction is stick-on-puck. With your own net empty there is no "from behind" test at all: any foul that denies the goal is an awarded goal (NHL Rules 25.1 and 57.4), and stepping across from the front does it. The IIHF's Rule 24.8 mirrors 57.3; USA Hockey's Rule 616(a) is materially different and leaves the referee a minor penalty instead, so know which book you are under.
+7. **The middle-lane driver is the most commonly missed assignment in hockey**, and nobody chases a puck carrier your defenceman already has. Who owns the middle is a coaching choice, not a law — the centre in the most common scheme, the first man back in others, or man-on-man from the puck outward — but under every version somebody owns it and nobody assumes it is somebody else. Find out which yours runs.
+8. **Step up or back off — never half.** Step up only when you are confident you can win the puck, not hopeful; otherwise back off with a tight gap. **How aggressive "confident" should be is a coaching choice:** an aggressive neutral-zone press wants you challenging at the line, a passive trap wants you holding and steering the carrier wide. Ask which risk your coach wants to carry.
+9. **The best rush defence is not creating the rush.** Pinches with no read, forwards leaving early, neutral-zone turnovers, badly timed line changes, and both defencemen below the puck in the offensive zone cause almost all of them.
+10. **The rush is not over when the shot is saved — it is over when everybody has a mark.** Locate the net front first, because nobody was assigned to it during the rush. Which mark is yours depends on your team's defensive-zone coverage, so know whether you play low zone collapse or man-on-man before the puck gets there.
 
 ---
 

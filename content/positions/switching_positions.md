@@ -6,9 +6,19 @@
 
 ## Overview
 
-Almost every player who sticks with hockey gets moved at some point — wing to centre, forward to defence, onto the other side of the ice, occasionally into the net. The four position documents here each describe a job in full. **This document is about the journey between them:** what carries over unchanged, what has to be relearned from scratch, and — the part nobody warns you about — which of your existing good habits will actively work against you in the new job.
+Almost every player who sticks with hockey gets moved at some point — wing to centre, forward to defence, onto the other side of the ice, occasionally into the net.
 
-It does not re-explain the positions. Where you need to know what a centre does in the defensive zone, the link is to [Center](center.md), and that document is the authority.
+**More comes with you than you expect.** Skating, looking around before the puck arrives, protecting the puck with your body, reading whether a checker has sealed you off or over-committed, and the rules all transfer intact. What you lose is a map — the location reflexes for where to look first, where to drift, and who you pick up when the puck goes to a particular place. For a few weeks you will be thinking about things you used to do without thinking, and thinking is slow. It passes.
+
+**The first question in a new position is a system question, not a technique one.** Zone or man-on-man in your own end, which forecheck, which backcheck lane, which breakout. Every one is a coaching choice rather than a law of hockey, every one changes your new job materially, and a new player has an unlimited licence to ask.
+
+**Your old good habits are the problem.** A winger's lane discipline becomes a centre's passivity, holding position while a defenceman loses a battle alone; a defenceman's caution becomes a forward's reluctance to attack space before it closes. Because those habits are automatic they surface when you are under pressure and have no time to think, so name the one you are fighting out loud before the shift. Unlearning is slower than learning, and general effort is not the lever.
+
+**Forward to defence is limited by backward skating, not by attitude** — a technical rebuild rather than a set of new decisions: a defenceman who cannot travel backwards nearly as fast as an attacker travels forwards has skating failures scored against them as decision failures. Going into the net is a larger jump still, because goaltending is a different sport that shares a rink.
+
+**One thing here is not a preference.** Wherever a switch sends you to the wall — a new winger's 50-50 battle, an off-winger receiving a breakout pass on their backhand — never turn your back to the boards and never duck. Skates parallel to the wall, contact on your forearm and hip, head up and chin off your chest. **Those are two prohibitions against two different injuries** — a back turned makes the contact a hit from behind, and a chin tucked to the chest is what puts your head into the wall first — and neither is negotiable. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns it, and nothing in this document overrides it.
+
+None of the rest has been measured — there is no published evidence base for how players move between positions, so read it as what experienced coaches do rather than as anything tested.
 
 ---
 
@@ -95,7 +105,7 @@ Never: Drift into the middle because that is where the decisions are — it coll
 Position: In your own end, between the opposing defenceman on your side and the slot, denying the shot and the seam at once
 Convention: That point-coverage job is the low zone collapse version — under man-on-man you follow your check wherever they go, corner included
 Action: Leave the point the moment your team wins the puck and come down the wall to the outlet spot between the hash marks and the goal line
-Technique: On the wall, puck on the far side of your body from the checker, backside into them, feet wide — and know where it is going before you arrive
+Technique: On the wall, puck on the far side of your body from the checker, backside into them, feet wide — never your back to the wall and never duck, and know where it is going before you arrive
 Never: Direct traffic from the wall — the rotations are no longer yours to manage, and chasing them takes you out of your lane
 Key: You will touch the puck less — the share of ice time skaters actually hold it is owned by Playing Without the Puck
 ```
@@ -108,7 +118,7 @@ Usually experienced as a demotion. Usually isn't — coaches move centres to the
 - **The point-coverage job.** In your own end you now cover the opposing defenceman on your side: position yourself between them and the slot, denying the shot and the seam at once. **This is the low zone collapse job; under man-on-man you follow your check wherever they go, corner included.** It is also where this guide's most overloaded phrase lives. **"Stay high" means two different things about twenty feet apart** — covering the opposing point while the other team has the puck, and holding near the blue line in a flat or spread breakout. And the first sense **expires**: the moment your team wins the puck, you come down the wall to the outlet spot between the hash marks and the goal line. A winger who never leaves the point is as wrong as one who left it early. [Winger](winger.md) sets out both ends of that move.
 - **Much less puck time, and much more time deciding without it.** You had the puck more as a centre because the structure fed it to you. Across the whole game the difference is smaller than it feels: NHL skaters hold the puck for roughly **3.3% to 4.2% of their ice time at 5-on-5**, from a 2025 University of Waterloo study of 1,194 games — **5-on-5 only, normalised per 20 minutes of ice time**, and owned with all its qualifications by [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md). What changes for you is not the quantity so much as the shape: fewer touches, arriving in a narrower band of ice, more of them at speed on the wall.
 
-**First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger and it is not something a centre gets much practice at — puck on the far side of your body from the checker, backside into them, feet wide, and know where the puck is going before you arrive. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the technique.
+**First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger and it is not something a centre gets much practice at — puck on the far side of your body from the checker, backside into them, feet wide, and know where the puck is going before you arrive. **One thing overrides all of it:** with a checker arriving at speed, never turn your back to the wall and never duck — skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) owns the technique and that override.
 
 **What to stop worrying about:** organising everybody. You have spent your hockey life being the connective player, and the temptation is to keep directing traffic from the wall. Communication is still everyone's job — call what you can see — but the rotations are no longer yours to manage, and chasing them is how a winger ends up out of their lane.
 
@@ -245,21 +255,25 @@ Four things make this switch different in kind from the others.
 ## Playing your off wing
 
 ```facts
-Position: Off wing means the puck sits on the inside of your body, between you and the middle of the ice
-Goal: Enter the offensive zone with your stick toward the centre — more options for moving the puck and a better forehand angle from prime mid-ice
+Position: Off wing means the puck sits on the inside of your body, stick toward the middle of the ice — more options for moving it and a better forehand angle from prime mid-ice
 Convention: The off-wing half-wall is standard on the power play because it keeps the cross-seam one-timer live — Special Teams owns that
-Risk: A breakout pass up the wall now arrives on your backhand, which costs a beat and can weaken the exit
-Technique: Put your back to the boards to receive it
-Options: An open blade curve makes backhand receptions easier — Equipment covers the trade-off
-Key: Most professionals still play their strong side at even strength, on CARHA's account citing nhlspecialteams.com rather than tracking of its own
-Key: A defenceman's off side puts retrievals behind your own net and D-to-D passes on your backhand — Rink Map and Glossary covers the reasoning
+Risk: A breakout pass up the wall now arrives on your backhand, which costs a beat and can weaken the exit — an open blade curve makes those receptions easier, and Equipment covers the trade-off
+Technique: Receive it open to the ice — hips open, a step or two off the boards, so you keep the skate, the pass to the centre, the pass back and the middle; Breakouts owns that reception
+Never: Turn your back to the boards to receive it, or duck — two injuries: a hit from behind, and a head-first collision. Skates parallel to the wall, forearm and hip, head up and chin off your chest
+Convention: CARHA teaches a back-to-the-boards reception for that same puck and this document teaches Breakouts' instead — the two disagree, and only one of them never asks you to turn your back to the wall
+Key: On CARHA's account, citing nhlspecialteams.com not tracking of its own, most professionals play their strong side at even strength and stronger puck-handlers typically elect the off wing
+Key: A defenceman's off side puts retrievals behind your own net and D-to-D passes on your backhand — common and not a disaster, and Rink Map and Glossary covers the reasoning
 ```
 
 Your **off wing** means a left-shot playing right wing, or a right-shot playing left wing, so the puck sits on the inside of your body — between you and the middle of the ice — rather than toward the boards. It is not a demotion, it is not a promotion, and it is much more common than new players expect.
 
 **Why coaches do it.** Entering the offensive zone with your stick toward the centre of the ice opens more options for moving the puck, and gives a better angle for a forehand shot from a prime mid-ice location; a winger coming in on their strong side has the stick along the boards and needs more work and more time to get into a shooting position. On the power play the **off-wing half-wall is standard**, precisely because it puts the puck on your inside hand and makes the cross-seam one-timer live at all times — [Special Teams](../systems/special_teams.md) owns that. The CARHA Hockey material, **citing nhlspecialteams.com rather than any tracking of its own**, notes that at even strength the majority of professionals still play their strong side, and that it is typically players with stronger puck-handling who elect the off wing.
 
-**What actually gets harder, and the fix.** The cost is on the boards in your own end. A breakout pass up the wall that used to arrive on your forehand now arrives on your backhand, which costs a beat and can weaken the exit. The concrete adjustment, from the same source: **put your back to the boards to receive it.** Receiving on the backhand is a trainable skill and [Passing and Receiving](../technique/passing_and_receiving.md) covers it directly; it is also one of the arguments for an **open blade curve**, which makes backhand receptions easier ([Equipment](../off-the-ice/equipment.md)).
+**What actually gets harder, and the fix.** The cost is on the boards in your own end. A breakout pass up the wall that used to arrive on your forehand now arrives on your backhand, which costs a beat and can weaken the exit. **Receive it open to the ice.** [Breakouts](../systems/breakouts.md) owns that reception and teaches it for exactly this puck: **open your hips to the ice** as the puck arrives, so you can see the full rink and the puck at once, and **get a step or two off the boards** — that separation is what leaves you able to skate, pass to the centre, pass back to your defenceman *or* attack the middle. Flush against the wall you can do one of those. If the puck arrives hard on the boards, angle a skate to kill it off the wall onto your stick rather than reaching and missing. **Never receive it with your back to the boards, and never duck.** Skates parallel to the wall, take the contact on your **forearm and hip**, head up and chin off your chest. **The two prohibitions are there for two different injuries.** Turning your back converts the contact into a hit from behind, which you cannot see coming or brace for — and USA Hockey's warning to the player delivering one is that *"even a light hit from behind could inflict a severe head or neck injury."* Ducking is the posture behind almost every catastrophic neck injury in the sport: a chin tucked to the chest straightens the cervical spine, and of a head-first collision with the boards or a goal post in that position USA Hockey says a player *"doesn't have to be going at full speed for this to happen — it can occur at walking speed."* What occurs at walking speed is the **injury**, not merely the contact — and the finding is not USA Hockey's own: it credits *"research done among a wide range of hockey players"* and prints the citation beneath it, **Charles H. Tator and colleagues, *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41.** No reception is worth either trade, and there is no version of the situation in which either becomes safe. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) owns that.
+
+**The source for this section teaches a different reception, and this document does not follow it there.** The CARHA material's adjustment for the same backhand puck is to **put your back to the boards to receive it**. It is stated here rather than smoothed over, because the two descriptions genuinely disagree about how to meet that pass — but the one taught above is the [Breakouts](../systems/breakouts.md) version, for a reason that is not a claim about which reads the pass better: it never asks you to turn your back to the wall, which is the one orientation this guide rules out everywhere it comes up. The rest of CARHA's account of the off wing — the shooting angle, the backhand cost, the strong-side majority — is carried here in full.
+
+Receiving on the backhand is a trainable skill and [Passing and Receiving](../technique/passing_and_receiving.md) covers it directly; it is also one of the arguments for an **open blade curve**, which makes backhand receptions easier ([Equipment](../off-the-ice/equipment.md)).
 
 **For defencemen this trade is weighted differently.** Handedness normally determines a defenceman's side, because retrievals behind your own net and D-to-D passes come to your forehand on your natural side. Playing your off-side is common and not a disaster, but those two touches come to your backhand — [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers the reasoning and notes that analysis of NHL pairings has generally found natural-side pairs perform better.
 
@@ -388,20 +402,72 @@ Beyond that specific recommendation the published guidance runs out — see the 
 - **Abandoning the switch at the bottom of the dip.** Week three is where it feels worst and where most people quit, which is exactly the pattern [Practice and Development](../off-the-ice/practice_and_development.md) describes for any technique change.
 - **Trying goal casually.** It needs its own gear, its own coach and its own skating discipline — and under USA Hockey Rule 203(d) you may not even wear the equipment unless you are a designated or temporary goalkeeper.
 - **Carrying your old instinct into the new job's worst moment.** Under pressure, the automatic pattern is what surfaces. Name it before the shift.
+- **Taking a puck on the wall with your back to the boards** — the off-wing backhand reception or a 50-50 battle, it makes no difference, and it does not become safe because you looked first and saw nobody. Receive open to the ice instead: hips open, a step or two off the boards, every option still available ([Breakouts](../systems/breakouts.md) owns that reception). When contact is coming: skates parallel to the wall, forearm and hip to the boards, head up and chin off your chest — never your back to the wall, and never duck. **Those two are separate injuries**: turning your back makes the contact a hit from behind, which USA Hockey warns can be severe even when the hit is light; ducking is what puts your head into the boards first, and it is the **injury** from that head-down collision that USA Hockey says *"can occur at walking speed"* — a finding it attaches to the collision, not to the turn.
 - **Repeating "the centre covers the most ice" or any similar positional claim as though it were measured.** Most of what is said about positions is craft. Say so.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. What is the evidence status of almost everything in this document, what is the
+   single piece of governing-body guidance that does exist, and what are you
+   never to do with the rest of it? *(§How claims in this document are labelled)*
+
+2. You are told on Tuesday that you are playing a new position on Thursday. Name
+   four things that come with you unchanged, the one skating skill that does not,
+   and the thing you actually lose. *(§What transfers, whatever the switch, and
+   §What does not transfer: the map in your head)*
+
+3. "Stay high" is called this guide's most overloaded phrase. What are the two
+   things it can mean, roughly how far apart are they on the ice, and which of
+   the two expires — at what exact moment? *(§Centre → wing)*
+
+4. A forward converting to defence keeps getting walked into the zone, and also
+   keeps getting beaten by the first change of direction. What single thing is
+   causing both, why does it get written down as a different kind of failure, and
+   what do you work on first? *(§The technical barrier is real: backward skating
+   and pivots)*
+
+5. You are told to force them outside, and you are also told never to get beaten
+   wide. What is the difference between those two outcomes, and what is the
+   instinct to build instead of "never let anyone get to the outside"? *(§"Force
+   them outside" and "getting beaten wide" are not the same thing)*
+
+6. Your team's goalkeeper cannot continue and somebody offers you the pads. What
+   does the rule actually permit, and what are the two ways a team may legally
+   carry on? *(§Anyone → goaltender)*
+
+7. You are a left shot and you have been put on the right wing. What does that
+   buy you, what does it cost you and where on the ice does the cost land, and
+   how do you receive that pass — including what the source cited for this
+   section says instead, and why this document does not teach it? *(§Playing
+   your off wing)*
+
+8. Name the good habit that becomes passivity for a winger moving to centre, and
+   the good habit that becomes reluctance to attack for a defenceman moving to
+   forward. What is the fix the document offers — and why is trying harder not
+   it? *(§The habits that actively work against you)*
+
+---
 
 ## Key Takeaways
 
-1. **More transfers than you think.** Skating, scanning, puck protection, reading pressure and the rules all come with you. What you lose is a map — a set of location reflexes — and maps get rebuilt.
-2. **The first question in any new position is a system question, not a technique question.** Zone or man-on-man, which forecheck, which backcheck lane. Every one is a coaching choice and not a law of hockey. Ask your coach before your first shift.
-3. **Wing to centre is a coverage change first and a faceoff change second.** Your defensive-zone responsibility now moves with the puck, and the hardest new habit is swinging low so your defenceman has a middle-lane option.
-4. **Faceoffs are learnable, and there is a number behind that claim** — a 22-point spread among NHL centres taking 500-plus draws in 2025-26, computed from the NHL's official statistics and owned by [Faceoffs](../systems/faceoffs.md).
+1. **Almost none of this is measured** — there is no published evidence base for how players move between positions, so read it as coaching craft. **More transfers than you think:** skating, scanning, puck protection, reading pressure and the rules all come with you. What you lose is a map of location reflexes.
+2. **The first question in a new position is a system question, not a technique question.** Zone or man-on-man, which forecheck, which backcheck lane — every one is a coaching choice, not a law. Ask your coach before your first shift.
+3. **Wing to centre is a coverage change first and a faceoff change second.** Under a low zone collapse your responsibility moves with the puck, and the hardest new habit is swinging low — in the conventional swing breakout — so your defenceman has a middle-lane option.
+4. **Faceoffs are learnable, and there is a number behind that claim** — a 22-point spread among the 109 NHL centres who took 500-plus draws in 2025-26, computed from the NHL's official statistics and owned by [Faceoffs](../systems/faceoffs.md).
 5. **Centre to wing is not a demotion.** It is a lane-discipline job with a point-coverage assignment, and the trap is drifting into the middle because that is where the decisions used to be.
-6. **Forward to defence is limited by backward skating, not by attitude.** Gap control is a skating problem; a defenceman who cannot skate backwards fast enough has skating failures scored against them as decision failures.
-7. **"Force them outside" and "getting beaten wide" are different things.** Steering an attacker to the boards while you stay between them and the net is the job. Letting them past your outside shoulder is the failure.
+6. **Forward to defence is limited by backward skating, not by attitude.** Gap control is a skating problem, and a defenceman who cannot skate backwards fast enough has skating failures scored against them as decision failures.
+7. **"Force them outside" and "getting beaten wide" are different things.** Steering an attacker to the boards while you stay between them and the net is the job; letting them past your outside shoulder is the failure.
 8. **Defence to forward means attacking space rather than denying it** — and the reflex that has to go is waiting until the play is safe, because by then the space has closed.
-9. **Goaltending is a different sport sharing a rink.** Its own skating discipline, its own equipment (which under USA Hockey Rule 203(d) you may not simply borrow), and its own coaching from day one. Try it properly or not at all.
-10. **Your old good habits are the problem.** A winger's lane discipline becomes a centre's passivity; a defenceman's caution becomes a forward's reluctance to attack. Name the habit out loud before the shift — under pressure, the automatic pattern is what surfaces.
+9. **Goaltending is a different sport sharing a rink.** Its own skating discipline, its own equipment — which under USA Hockey Rule 203(d) you may not simply borrow — and its own coaching from day one.
+10. **Playing your off wing costs you on the boards in your own end.** A breakout pass up the wall now arrives on your backhand, and the reception taught here is [Breakouts](../systems/breakouts.md)': open your hips to the ice, take a step or two off the boards, and keep every option. **Never your back to the boards, and never duck** — skates parallel to the wall, forearm and hip to the boards, head up and chin off your chest ([Body Contact and Battles](../technique/body_contact_and_battles.md), which owns that). **Two prohibitions, two different injuries:** a turned back makes the contact a hit from behind, and *"even a light hit from behind could inflict a severe head or neck injury"*; a tucked chin straightens the cervical spine, and it is the **injury** from that head-first collision USA Hockey says *"can occur at walking speed."* The CARHA material teaches a back-to-the-boards reception for the same puck; it is on the page and attributed, and it is not the one taught.
+11. **Your old good habits are the problem.** A winger's lane discipline becomes a centre's passivity; a defenceman's caution becomes a forward's reluctance to attack. Name the habit out loud before the shift — under pressure, the automatic pattern is what surfaces.
 
 ---
 
@@ -409,7 +475,9 @@ Beyond that specific recommendation the published guidance runs out — see the 
 
 *Rules: [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 203(c) and 203(d), quoted verbatim, on substitute goalkeepers and the prohibition on any other rostered player wearing goalkeeper's equipment; Rule 630(a), which requires skate *contact* with the neutral zone or the blue line and so makes a raised trail skate offside where the NHL and IIHF do not · [USA Hockey Official Rules and Casebook 2025-29 (PDF)](https://cdn3.sportngin.com/attachments/document/4f1a-3442850/2025-29_USAH_Playing_Rules___Casebook.pdf) — Glossary definition of "Temporary Goalkeeper", quoted verbatim · [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 63.2 (delay of game, puck out of play from the defending zone), Rule 83 (Off-side) · [IHUK In-House Rules 2025-26, Revision 1 (published 27/10/25) (PDF)](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — Rule 9.12, the neck laceration protector mandatory for all players with no warning · [England Ice Hockey Rules & Regulations 2024-2025](https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf) — Rule 24.3, which extends that requirement to "all on ice activities"*
 
-*Off wing: [CrossIceHockey.com — Left or Right: Should You Play the Off Wing?](https://www.crossicehockey.com/play-off-wing/) — published with permission of CARHA Hockey; source for the forehand-versus-backhand breakout reception, the "back to the boards" receiving adjustment, the offensive-zone shooting-angle advantage, and the observation (attributed there to nhlspecialteams.com) that most professionals play their strong side at even strength*
+*Off wing: [CrossIceHockey.com — Left or Right: Should You Play the Off Wing?](https://www.crossicehockey.com/play-off-wing/) — published with permission of CARHA Hockey; source for the forehand-versus-backhand breakout reception, the offensive-zone shooting-angle advantage, and the observation (attributed there to nhlspecialteams.com) that most professionals play their strong side at even strength and that stronger puck-handlers typically elect the off wing. Its **"back to the boards" receiving adjustment is stated in the body but is not the reception this document teaches** — [Breakouts](../systems/breakouts.md) owns the one that is, and the disagreement is flagged inline rather than resolved silently*
+
+*Boards safety (the override on the off-wing reception and on a winger's wall battles — [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full three-case rule): [USA Hockey — Heads Up Hockey Program Guide (PDF)](https://cdn4.sportngin.com/attachments/document/0138/6193/HUH_Program_Guide_FINAL.pdf) — "How spinal injuries happen in hockey", for the cervical-flexion mechanism and *"A player doesn't have to be going at full speed for this to happen — it can occur at walking speed"*, which the guide attaches specifically to *"the head being slightly flexed (head down) while making head-on contact with the boards or goal post"*; and Session 5, "Giving A Check" — under its "Checking from behind" subheading, which is not the session's title — for *"Even a light hit from behind could inflict a severe head or neck injury"* · [USA Hockey — Introduction To Body Contact (PDF)](https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf) — §5 "Checking From Behind", carrying the same light-hit sentence. Both PDFs refetched and the quoted strings located in the extracted text on 31 July 2026; the walking-speed sentence appears in the Program Guide only. **Note the division of labour between the two quotes:** the walking-speed finding is about a head-down, head-first collision with the boards or a goal post, and USA Hockey does not say it about turning your back; the hazard of the back turned is that it makes the contact a hit from behind, which is the sentence quoted for it. **And note what "this" refers to** — "A player doesn't have to be going at full speed for *this* to happen" points back to the spinal injury in the preceding sentence, not to the collision, which is why the claim is rendered here as the injury occurring at walking speed. **The finding is a restatement.** USA Hockey credits *"research done among a wide range of hockey players"* and prints the citation beneath it: **Charles H. Tator et al., *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41.** That paper has not been read in the original here — only the USA Hockey page reproducing it.*
 
 *Development and skill acquisition: [USA Hockey American Development Model](https://www.admkids.com/) — the About, Parents, Coaches and Long-Term Athlete Development pages, read 27 July 2026; **none of them gives any guidance on switching positions**, which is why the topic is treated here as coaching craft · [USA Hockey Parent Handbook 2025-26 (PDF)](https://cdn4.sportngin.com/attachments/document/3b59-3498251/USAH_AmericanHockeyHandbook_2025-26.pdf) — the 8U recommendation of "no full-time goalies", quoted verbatim in* If you are a parent. *Registration, tiers and programme structure are owned by [Getting Started](../getting-started/getting_started.md), which cites this handbook at length; nothing from it is restated here beyond that one sentence*
 

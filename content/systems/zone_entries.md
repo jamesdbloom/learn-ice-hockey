@@ -9,9 +9,17 @@
 
 ## Overview
 
-A **zone entry** is the moment your team brings the puck across the opponent's blue line into the **attacking zone** (the third of the ice containing the goal you are shooting at). The line itself is only twelve inches wide — but the last twenty feet of ice in front of it is where most attacks die.
+A **zone entry** is the moment your team brings the puck across the opponent's blue line into the third of the ice containing the goal you are shooting at. The line is twelve inches wide; the last twenty feet in front of it is where most attacks die.
 
-This document is about getting in and staying in. It covers what the research says the entry is worth, the offside rule in enough detail that you can attack the line harder than someone who only half-knows it, the ways to carry the puck in, the ways to put it in without possession, how to decide between them, and how the other team stops you.
+**Carrying the puck in is worth about twice as much as shooting it in and chasing it** — 0.53 to 0.62 unblocked shot attempts per successful carry against 0.22 to 0.28 per dump-in, from 330 hand-tracked NHL games in 2011-12. Average in the failures and count every carry *attempt*, and it is roughly 0.48 against 0.24 — but that second comparison comes only from the Washington games inside that sample, not from all 330. The same two-to-one shape has since appeared in other trackers, eras and leagues. The numbers are more than a decade old and describe the NHL rather than your league, so take the direction, not the decimals.
+
+**A failed carry costs far less than it feels like it does** — about eight hundredths of a shot on net in those Washington games, cheaper than shooting the puck deep and changing lines, which was the worst-valued play of all. The break-even that implies is roughly one-third confidence: complete the carry more often than one time in three and carrying is the better bet. That is a probability argument and not a licence — one in three still means shooting it deep often, and the authors were explicit that their figures are averages rather than a verdict on the hard, well-defended plays where the decision actually bites. But the bar is far lower than the NHL players they tracked behaved as though it was, and their conclusion was that those players gave the puck up at the line too easily.
+
+**Attack the space between two defenders rather than at one of them** — one defender has an easy job, two sharing a gap have a problem. Get to the line last yourself and let your support arrive first.
+
+**If you get there alone, turn away from the line instead of forcing it.** Protect the puck, look back up the ice, and come again a second later with a teammate — among the most under-used skills in amateur hockey. **Curl in open ice, not against the wall.** Never take contact with your back to the boards; near the wall the orientation is skates parallel to it, forearm and hip into the contact, head up and chin off your chest.
+
+**And you stay onside for longer than most players believe.** You are onside as long as one skate has not completely crossed the line, judged at the instant the puck completely crosses it — and under NHL and IIHF rules that trailing skate may even be in the air, though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 it must be touching the line or the ice behind it. That is two books of the four.
 
 ---
 
@@ -23,7 +31,7 @@ The reference work is Eric Tulsky, Geoffrey Detweiler, Robert Spencer and Corey 
 
 Their headline result, in their own words: *"carrying the puck across the blue line generates more than twice as many shots, scoring chances, and goals as dumping the puck in."*
 
-The 5-on-5 numbers, per entry (each cell in their Table 1 is based on at least 3,000 entries):
+The 5-on-5 numbers, per entry, **from the full 330-game sample** (each cell in their Table 1 is based on at least 3,000 entries):
 
 | | Shots per entry | Goals per entry |
 |---|---|---|
@@ -36,7 +44,7 @@ The ranges are across the nine rows of their Table 1 — eight team data sets (P
 
 ### The part everyone gets wrong
 
-The standard objection is: *yes, but a failed carry-in is a turnover at the blue line, and a turnover at the blue line is a rush the other way.* Tulsky's group tested exactly that, tracking failed entry attempts in their Washington sample and following what happened on the **next** entry either team got. Their Table 3, in net expected shots:
+The standard objection is: *yes, but a failed carry-in is a turnover at the blue line, and a turnover at the blue line is a rush the other way.* Tulsky's group tested exactly that, tracking failed entry attempts in their Washington sample and following what happened on the **next** entry either team got. Their Table 3, in net expected shots — **and note the scope: every figure in it comes from the Washington games alone, not from all 330**, because those were the games in which failed attempts and dump-and-change plays were tracked at all:
 
 | Entry type | Shots for on this entry | Net value overall |
 |---|---|---|
@@ -46,11 +54,15 @@ The standard objection is: *yes, but a failed carry-in is a turnover at the blue
 | Dump-and-chase | 0.24 | **+0.12** |
 | Dump-and-change | 0.02 | **−0.10** |
 
-Read that failed-carry row carefully. A blown carry-in cost about **eight hundredths of a shot** on net. It is not free — but it is nowhere near the disaster the folklore says, and it was *cheaper* than dumping the puck in and changing lines. In their sample only **14% of carry attempts** ended in a turnover at all.
+Read that failed-carry row carefully. A blown carry-in cost about **eight hundredths of a shot** on net. It is not free — but it is nowhere near the disaster the folklore says, and it was *cheaper* than dumping the puck in and changing lines. In those games only **14% of carry attempts** ended in a turnover at all.
+
+**Read that 14% with the sentence the authors attached to it**, because it is the honest limit on this whole argument: *"this is still not sufficient data to say conclusively that teams should be trying harder to carry the puck in at every opportunity… only 14% of all carry-in attempts resulted in a turnover, but surely the turnover frequency would be higher in the marginal plays in question."* The 14% is the rate across every attempt they tracked, most of which were not close decisions. The attempts you are actually deliberating over — the ones into a defence that is set — turn over more often than that, and their tracking does not say how much more.
 
 Because the downside is small, the break-even point is low. Tulsky's group calculated that with equal teams you only need to be **34% confident** of completing the carry for attempting it to beat dumping it in. If your line is better than the one you are facing — they modelled a team expecting to shoot 9% while allowing 7% — that threshold falls to **26%**. If you are the weaker team it rises to **44%**, which is the honest, data-backed version of "just put it in deep and go to work."
 
-Their conclusion: *"It is likely that players give up the puck far too easily at the blue line."*
+All three of those thresholds come off one decision curve, and it is worth knowing what was assumed to draw it. The 34% holds only if a carry completed on a well-defended play would still be worth the **0.57 shots** an average successful carry-in produced — and the authors list exactly that, along with how likely such a carry is to succeed, as the **unknown parameters** in their calculation. It is a decision curve with two values they could not measure, not a measured threshold.
+
+Their conclusion, about the NHL players they watched: *"It is likely that players give up the puck far too easily at the blue line,"* and *"in general NHL teams probably could benefit from being more aggressive at the blue line."* The study observed no other level of hockey and makes no claim about one.
 
 ### Corroboration
 
@@ -60,14 +72,14 @@ The finding has held up across other data sets. Note that these are figures repo
 - **Thibaud Chatel**, 2022, reported **47%** of controlled entry attempts led to a shot against **18%** of dump-ins, excluding dump-and-change.
 - **PWHPA data (via Sportlogiq)** — from a July 2022 article describing "this last year's PWHPA Secret Dream Gap Tour", so **probably the 2021-22 season, though the source does not say so** — showed the same shape in women's professional hockey: carry-ins **0.73** shots per entry, pass-ins **0.54**, chip-ins **0.21**, dump-ins **0.14** at even strength.
 
-Different trackers, different leagues, different eras, same answer.
+Different trackers, different leagues, different eras, same answer — **for the comparison Table 1 makes: getting in with control against putting it in without.** What none of them reports is the separate value of a *failed* attempt, which is the row the attempt-inclusive 0.48 depends on. So the two-to-one shape is the part that has replicated; the 0.48 rests on Tulsky's Washington games and on nothing else quoted here.
 
 ### What this actually means for you
 
 - **Possession in is worth roughly double.** Not marginally better. Double.
 - **The cost of trying and failing is smaller than it feels**, because it feels dramatic when it goes wrong and invisible when it works.
-- **Dumping and changing is the worst play on the board** — it was the only entry type in the study with a worse net value than a failed carry. If you are tired, that is a reason to have changed twenty seconds ago, not a reason to fire the puck away.
-- **This is a probability argument, not a licence.** One-third confidence means you should also be putting it in deep a lot of the time. The point is that the bar is much lower than most players behave as if it is.
+- **Dumping and changing is the worst play on the board** — in the Washington games it was the only entry type with a worse net value than a failed carry. If you are tired, that is a reason to have changed twenty seconds ago, not a reason to fire the puck away.
+- **This is a probability argument, not a licence.** One-third confidence means you should also be putting it in deep a lot of the time. The point is that the bar is much lower than the NHL players in this tracking behaved as if it was. **They are the only players the study watched** — whether your own league gives the puck up too readily, or not readily enough, is not something these numbers measured.
 
 See [Risk Management](../hockey-iq/risk_management.md) for how this thinking generalises.
 
@@ -89,7 +101,7 @@ Rule: One skate in contact with the line, or on your own side of it, keeps you o
 Rule: The whole width of the painted blue line counts as "the line" — a skate touching any of it is onside (NHL Rule 1.5)
 Rule: Your own side of the line is a vertical plane — a skate lifted and held back over the neutral zone is onside (NHL Rule 83; IIHF Rule 83.1, in the same words)
 Rule: For 2025-26 a "skate" is the blade only, so an overhanging boot is irrelevant (NHL Rule 83) — the IIHF book carries no equivalent definition
-Rule: Under USA Hockey Rule 630(a) an airborne trail skate is offside — the blade must have contact
+Rule: Under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne trail skate is offside — the blade must have contact; that is two books of the four
 Rule: British hockey runs the IIHF book at every level, so the IIHF wording here is the rule you play under — see UK and England Rules
 ```
 
@@ -102,7 +114,7 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 
 **The first three clauses are the IIHF's own words, not a borrowing.** IIHF Rule 83.1 reads: *"A Player is 'off-side' when both skates are completely over the leading edge of the blue line involved in the play. A Player is on-side when either of their skates are in contact with the blue line, or on their 'own side' of the line, at the instant the puck completely crosses the leading edge of the blue line. On their 'own side' of the line shall be defined by a 'plane' of the blue line which shall extend from the leading edge of the blue line upwards. If a Player's skate has yet to 'break the plane' prior to the puck completely crossing the leading edge, they are deemed to be 'on-side'."* **If you play anywhere in Britain, that is your rule** — the In-House Rules make no amendment to Rule 83.
 
-> **⚠️ The third clause is NHL and IIHF, and USA Hockey reverses it.** Under **USA Hockey Rule 630(a)** a player is offside when they do *"not have skate contact with any part of the Neutral Zone or the blue line when the puck crosses the determining edge of the blue line"*, and the Note confirms that *"a player only needs to have skate contact with one skate with the blue line to be considered 'onside.'"* So an airborne trail skate is **onside under the NHL and the IIHF — and therefore in Britain — and offside under USA Hockey**, where most North American rec and youth hockey is played. This changes step 2 below. It is the single most important rule-set difference in this document.
+> **⚠️ The third clause is NHL and IIHF, and both North American books reverse it.** Under **USA Hockey Rule 630(a)** a player is offside when they do *"not have skate contact with any part of the Neutral Zone or the blue line when the puck crosses the determining edge of the blue line"*, and the Note confirms that *"a player only needs to have skate contact with one skate with the blue line to be considered 'onside.'"* **Hockey Canada Rule 6.11 runs the same way**: *"Only the player's skate(s) that are in physical contact with the ice surface will be used in determining an off-side"*, and its **Interpretation 3 to Rule 6.11(a)** settles the case in one line — *"A player has one skate above the blue-line (not touching the ice) and one skate over the blue-line at the instant the puck completely crosses the blue-line. OFF-SIDE."* So an airborne trail skate is **onside under the NHL and the IIHF — and therefore in Britain — and offside under USA Hockey and Hockey Canada**, which is where most North American rec and youth hockey is played. That is **two books of the four**. This changes step 2 below. It is the single most important rule-set difference in this document.
 
 ### The trail-skate drag
 
@@ -113,7 +125,7 @@ Technique: Stop pushing with the trail leg and let that blade glide so it stays 
 Action: Keep your body, hands and stick already in the zone — only the trail blade is holding you onside
 Action: The instant the puck completely crosses, put that blade down and push
 Key: The judgement is made at one instant — time your glide to it, don't glide for two seconds
-Rule: Lifting the trail skate is legal under the NHL and under the IIHF book, so it is legal in Britain (IIHF Rule 83.1) — USA Hockey Rule 630(a) requires skate contact, so keep the blade down there
+Rule: Lifting the trail skate is legal under the NHL and under the IIHF book, so it is legal in Britain (IIHF Rule 83.1) — USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 require skate contact, so keep the blade down there
 ```
 
 This is the single most useful piece of applied rules knowledge for a forward, and it comes straight out of the wording above.
@@ -123,7 +135,7 @@ You are the far-side winger. You are flying. The puck carrier is a stride behind
 Instead:
 
 1. Attack the line at full speed with your **inside foot leading**.
-2. As you reach it, **stop pushing with the trail leg** and let that blade glide so it stays touching the paint — or, **under NHL and IIHF rules**, lift it and hold it back over the neutral zone without breaking the plane. **In Britain that lift is legal**, because the IIHF book is the one in force at every level here (IIHF Rule 83.1). **Under USA Hockey the blade must stay in contact** (Rule 630(a)), so keep it on the paint.
+2. As you reach it, **stop pushing with the trail leg** and let that blade glide so it stays touching the paint — or, **under NHL and IIHF rules**, lift it and hold it back over the neutral zone without breaking the plane. **In Britain that lift is legal**, because the IIHF book is the one in force at every level here (IIHF Rule 83.1). **Under USA Hockey and Hockey Canada the blade must stay in contact** (Rule 630(a); Rule 6.11), so keep it on the paint.
 3. Keep your **body, hands and stick already in the zone**. Only the trail blade is holding you onside.
 4. The instant the puck completely crosses, **put that blade down and push**.
 
@@ -133,7 +145,7 @@ Three details that separate people who *sort of* know this from people who use i
 
 - The judgement is made at **one instant** — the moment the puck fully crosses. Before that instant nothing you do matters; after it, nothing you did matters. So the skill is timing your glide to that instant, not gliding for two seconds.
 - Because only the **blade** counts, you can be leaning most of your body over the line. Aggressive body position is free.
-- **Which rule book you are under changes step 2.** Gliding the blade along the paint is legal everywhere. *Lifting* the trail skate is legal under the **NHL and the IIHF** — and since British hockey runs the IIHF book at every level, it is legal here. **USA Hockey Rule 630(a)** requires *"skate contact with any part of the Neutral Zone or the blue line"*, so a raised trail skate is offside there. Most North American rec and youth hockey runs on USA Hockey rules; if that is you, keep the blade down.
+- **Which rule book you are under changes step 2.** Gliding the blade along the paint is legal everywhere. *Lifting* the trail skate is legal under the **NHL and the IIHF** — and since British hockey runs the IIHF book at every level, it is legal here. **USA Hockey Rule 630(a)** requires *"skate contact with any part of the Neutral Zone or the blue line"*, and **Hockey Canada Rule 6.11** counts *"only the player's skate(s) that are in physical contact with the ice surface"*, so a raised trail skate is offside under both. That is two books of the four, and they are the two most North American rec and youth hockey runs on; if that is you, keep the blade down.
 
 ### Delayed offside and tagging up — three consequences for the entry
 
@@ -141,16 +153,17 @@ Three details that separate people who *sort of* know this from people who use i
 Rule: On a delayed offside the linesman raises a non-whistle arm and play continues (NHL Rule 83.3; IIHF Rule 83.3 in the same terms)
 Rule: Under USA Hockey Rule 630(d) delayed offside and tag-up exist only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below that the whistle is immediate
 Rule: Tagging up needs actual skate contact with the line; the vertical plane does not apply — "'3D' judgement is not used in this situation" (IIHF Rule 83.3(I), the wording British hockey plays under; NHL 83.3(i) says "skate contact with the blue line" without the gloss)
-Action: Get everybody out at once — one straggler keeps the arm up, so shout it
+Rule: The NHL, IIHF and USA Hockey require every attacker to clear at the same instant (NHL 83.3(i); IIHF 83.3(I); USA Hockey 630(d)(2)) — Hockey Canada 6.11(b) requires skate contact from all of them but not simultaneity
+Action: Get everybody out at once — one straggler keeps the arm up under all four books, so shout it
 Never: Forecheck during a delayed offside — touching the puck, going for a loose puck, forcing the carrier deeper, or being about to hit him all stop play
 Action: Retreat to the line, tag up, come again
 ```
 
 A **delayed offside** is what happens when attackers precede the puck but the defending team can bring it out without interference: the linesman raises a non-whistle arm and play continues (Rule 83.3). **The IIHF's 83.3 is the same rule in the same order** — the arm comes down when *"All Players of the offending team clear the zone at the same instant (skate contact with the blue line, '3D' judgement is not used in this situation)"* or when *"the defending team passes or carries the puck into the neutral zone"* — so this whole subsection describes the British game as written. [Rules Primer](../foundation/rules_primer.md) has the full procedure — what nullifies the arm, what turns it into a whistle, and the IIHF wording on clearing. Three things change what you do at the line:
 
-- **⚠️ First, check that you have a delayed offside at all.** Under **USA Hockey Rule 630(d)** the delayed offside and the tag-up exist only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications **only**)"*. Below those levels there is no raised arm and no recovery — the whistle goes the moment you precede the puck in. Most North American minor hockey sits below that line, so for a lot of readers this whole subsection describes a rule they do not have, and the entry simply has to be right first time.
+- **⚠️ First, check that you have a delayed offside at all.** Under **USA Hockey Rule 630(d)** the delayed offside and the tag-up exist only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications **only**)"*. Below those levels there is no raised arm and no recovery — the whistle goes the moment you precede the puck in. Most North American minor hockey sits below that line, so for a lot of readers this whole subsection describes a rule they do not have, and the entry simply has to be right first time. **This restriction is USA Hockey's alone** — Hockey Canada's Rule 6.11(b) carries no classification limit, and neither the NHL's 83.3 nor the IIHF's does.
 - **Tagging up needs actual skate contact with the line.** The vertical plane above does *not* apply here — the IIHF text says so in terms, *"'3D' judgement is not used in this situation"* (Rule 83.3(I)). **That is the British rule book being explicit about it**, and it is the sharper wording of the two: NHL 83.3(i) says only *"(skate contact with the blue line)"* and leaves the rest to interpretation. Either way, the airborne trail skate that keeps you onside on the entry does **not** clear you on a delayed offside. Touch the paint.
-- **Everybody has to be out at once.** One straggler keeps the arm up. This is a communication job — see [On-Ice Communication](../foundation/on_ice_communication.md). Shout it.
+- **Everybody has to be out — and in three books of the four, at the same instant.** One straggler keeps the arm up everywhere. Where the books part is whether the clearing has to be *simultaneous*: the **NHL** requires that *"all players of the offending team clear the zone at the same instant (skate contact with the blue line)"* (Rule 83.3(i)), the **IIHF** says the same in the same words (Rule 83.3(I)), and **USA Hockey** is the most explicit of the three — *"all attacking players are simultaneously clear of the attacking zone by making skate contact with the blue line, at the same instant"* (Rule 630(d)(2)). **Hockey Canada does not impose it.** Rule 6.11(b) asks only that *"all attacking players clear the attacking zone by making skate contact with the blue-line, so that the attacking zone is completely clear of attacking players"* — skate contact from every attacker, yes; the same instant, no. Play it as though the instant matters and you are legal in all four. This is a communication job — see [On-Ice Communication](../foundation/on_ice_communication.md). Shout it.
 - **Forechecking during a delayed offside is not a grey area — it is a whistle.** Touching the puck, trying to gain possession of a loose puck, forcing the defending carrier deeper into his own zone, or being about to make contact with him all stop play. Retreat to the line, tag up, come again.
 
 ### The territorial asymmetry — why the safe play isn't
@@ -341,7 +354,7 @@ Action: Attack the line again with the puck on whoever has the best angle and th
 1. Approaching the line alone or outnumbered, **do not stop**. Stopping kills you.
 2. **Turn away from the pressure** and curl away from the line, back toward the neutral zone, protecting the puck with your body between defender and puck.
 
-   > **⚠️ One safety override, and it outranks the play.** Curl in open ice, not against the wall. **Never take contact with your back to the boards.** Near the wall the orientation to aim for is **skates parallel to the boards**, taking it on your **forearm and hip**, head up and chin off your chest; squaring your chest to the wall is the fallback for when you cannot turn, and your back is never an option. Turning your back to an oncoming checker near the boards is the behaviour most associated with catastrophic spinal injury in hockey, and it can happen at walking speed. Protecting the puck never justifies it. Full treatment in [Body Contact and Battles](../technique/body_contact_and_battles.md), which owns this.
+   > **⚠️ One safety override, and it outranks the play.** Curl in open ice, not against the wall. **Never take contact with your back to the boards.** Near the wall the orientation to aim for is **skates parallel to the boards**, taking it on your **forearm and hip**, head up and chin off your chest; squaring your chest to the wall is the fallback for when you cannot turn, and your back is never an option. Turning your back to an oncoming checker makes the contact a hit from behind, and USA Hockey's warning on those is flat: *"even a light hit from behind could inflict a severe head or neck injury."* Keeping your chin off your chest is the other half of it, and a separate injury — a tucked chin straightens the cervical spine, and of a head-first collision with the boards in that position USA Hockey says a player *"doesn't have to be going at full speed for this to happen — it can occur at walking speed."* What occurs at walking speed is the **injury**, not merely the contact — and the finding is not USA Hockey's own: it credits *"research done among a wide range of hockey players"* and prints the citation beneath it, **Charles H. Tator and colleagues, *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41.** Protecting the puck never justifies either. Full treatment in [Body Contact and Battles](../technique/body_contact_and_battles.md), which owns this.
 3. **Look back up ice** while you curl. Your eyes go to where support is coming from, not to the defender.
 4. **Slow the play** deliberately for one or two seconds, which is how long it takes your late support to arrive at speed.
 5. **Attack the line again** with the puck now in the hands of whoever has the best angle and the most speed — often not you.
@@ -354,7 +367,7 @@ You have converted a bad entry into a **fresh entry with support**. In the numbe
 
 ### Why people don't do it
 
-Because turning away from the offensive zone feels like retreating, and because a delay puts the puck on your stick for an extra second with a defender on your back, which feels dangerous. It is not. Losing the puck at the top of the circles on a forced entry is far worse than losing it in the neutral zone with everyone in front of you.
+Because turning away from the offensive zone feels like retreating, and because a delay puts the puck on your stick for an extra second with a defender on your back, which feels dangerous. It is not — **in open ice**, which is exactly why the override above tells you to curl there and not against the wall. Losing the puck at the top of the circles on a forced entry is far worse than losing it in the neutral zone with everyone in front of you.
 
 ### When *not* to delay
 
@@ -363,11 +376,13 @@ Read: Numbers now that will be gone in a second — take the odd-man rush instea
 Never: Delay with nobody behind you — a delay only works if support is genuinely coming
 Action: If your line is caught out and the bench is calling, get it in deep and change
 Never: Delay back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze them
+Never: Curl against the wall — if you cannot get off the boards, take the contact rather than turning away into them
 ```
 
 - When you have numbers now and they will be gone in a second — take the odd-man rush.
 - When you have nobody behind you at all. A delay only works if support is genuinely coming. If your line is caught out and the bench is calling, get it in deep and change.
 - When a delay would drag you back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze them.
+- **When you are tight to the wall with a checker closing.** This one limits *how* you curl rather than whether: curl into open ice, and if you cannot get off the boards, take the contact with your skates parallel to them — never turn away into the wall. §5 above owns this, and it outranks the play.
 
 ---
 
@@ -454,19 +469,19 @@ Fire the puck low and hard around the boards, following the curve of the corner,
 ```facts
 Action: Place the puck gently into a specific area, usually a corner, so it dies there rather than rebounding
 Read: A forechecker arriving in roughly two seconds, and a defence that has to turn and retrieve
-Goal: Give your chaser a stationary puck and a body to hit, and give the retriever no help from the puck's momentum
+Goal: Give your chaser a stationary puck and a body arriving on it, and give the retriever no help from the puck's momentum
 Never: Use it when your chaser is four seconds away — you have just given the puck to their defenceman with time
 ```
 
 Place the puck gently into a specific area — usually a corner — so that it dies there rather than rebounding.
 
 - **The read:** you have a forechecker arriving in roughly two seconds, and the defence has to turn and retrieve.
-- **Why:** the value is entirely in the race. A soft dump gives your chaser a stationary puck and a body to hit, and gives the retrieving defenceman no help from the puck's momentum.
+- **Why:** the value is entirely in the race. A soft dump gives your chaser a stationary puck and a body arriving on it, and gives the retrieving defenceman no help from the puck's momentum.
 - **When it's wrong:** when your chaser is four seconds away. Then you have just given the puck to their defenceman with time.
 
 ![](diagram:dump-soft-area)
 
-### 3. The chip past a pinching defenceman
+### 3. The chip past a defenceman stepping up
 
 ```facts
 Read: A defender committing hard and early, with space behind them on the wall
@@ -638,13 +653,13 @@ Read these against the defender's own scale, which [Defending the Rush](defendin
 ```facts
 Read: Two or more teammates at the line with you, at speed — carry, or pass in
 Read: One teammate arriving late — delay. One second of curl usually converts this into the case above
-Read: Nobody — dump to a place someone can get to, or delay if anyone at all is coming
+Read: Nobody — dump to a place someone can get to, or delay if anyone at all is coming, curling into open ice and never with your back to the boards
 Never: Dump and change unless genuinely nobody is coming — and recognise you have already lost this shift
 ```
 
 - **Two or more teammates at the line with you, at speed:** carry, or pass in. This is what all the timing work in Section 4 was for.
 - **One teammate, arriving late:** delay. One second of curl usually converts this into the case above.
-- **Nobody:** dump to a place someone can get to, or delay if anyone at all is coming. If genuinely nobody is coming, put it in deep and change — but recognise you have already lost this shift, because dump-and-change was the worst-valued play in the data.
+- **Nobody:** dump to a place someone can get to, or delay if anyone at all is coming. If genuinely nobody is coming, put it in deep and change — but recognise you have already lost this shift, because dump-and-change was the worst-valued play in the games where Tulsky's group tracked it.
 
 ### 3. Score and time
 
@@ -670,9 +685,10 @@ Read: The carry/dump threshold moves with team strength — Tulsky's group model
 Action: A skilled line against a weaker pair should be attempting carries at nearly any excuse (their 26% figure)
 Action: A fourth line against a top pair genuinely does have a higher bar (their 44% figure)
 Key: Both of those are still well below "only carry when it's certain"
+Key: All three thresholds are modelled from one team's tracked games and an assumed shooting percentage — use the shape, not the number
 ```
 
-Tulsky's group modelled this directly: the carry/dump threshold moves with team strength. A skilled line against a weaker pair should be attempting carries at nearly any excuse (their 26% figure). A fourth line against a top pair genuinely does have a higher bar (their 44% figure). **Both of those are still well below "only carry when it's certain."**
+Tulsky's group modelled this directly: the carry/dump threshold moves with team strength. A skilled line against a weaker pair should be attempting carries at nearly any excuse (their 26% figure). A fourth line against a top pair genuinely does have a higher bar (their 44% figure). **Both of those are still well below "only carry when it's certain."** All three thresholds come off the same decision curve, built from the Washington-game outcomes and from an assumed shooting percentage — 9% for and 7% against for the stronger team — so they are a shape to think with, not a dial to set.
 
 ### The one-sentence version
 
@@ -799,7 +815,7 @@ Key: It needs good reads, your forwards back, and a partner who slides with you 
 
 Meeting the entry at your own blue line rather than backing in.
 
-- **Upside:** it kills controlled entries outright. If they cannot cross with the puck, they cannot get the 0.5-shot entry.
+- **Upside:** it kills controlled entries outright. If they cannot cross with the puck, they cannot have the 0.53–0.62 shots a successful carry-in was worth.
 - **Downside:** if you are beaten, you are beaten badly — you are flat-footed at your own line with a forward behind you and only your goalie left. It also needs your forwards to be back, because standing up assumes support behind you.
 - **Needs:** good reads, and a partner who slides with you rather than staying deep.
 
@@ -829,7 +845,7 @@ Action: Ask, and then talk to your partner about it before the puck drops
 ```
 
 - **F1 pressure with the D holding the dots:** the first forward back pressures the carrier while the defencemen hold their depth. Requires the defencemen to talk and to step on the cross-ice pass.
-- **Squash-and-slide** (as described publicly of Bruce Cassidy's Boston Bruins around 2018-19): the defenceman — not the backchecker — forces the carrier outside, while the first forward back protects the slot. The two defencemen hold the same depth and slide across together like a foosball bar, "squashing" the play against the wall if it goes wide and pinching in if it goes inside. It buys time and space back at the cost of demanding a great deal from the forwards; one lazy backcheck and the weak side is wide open.
+- **Squash-and-slide** (as described publicly of Bruce Cassidy's Boston Bruins around 2018-19): the defenceman — not the backchecker — forces the carrier outside, while the first forward back protects the slot. The two defencemen hold the same depth and slide across together like a foosball bar, "squashing" the play against the wall if it goes wide and closing in on it if it goes inside. It buys time and space back at the cost of demanding a great deal from the forwards; one lazy backcheck and the weak side is wide open.
 
 **These are systems, not laws.** Which one your team plays changes your job completely — whether you step up, whether you hold the dots, whether the first forward back takes the puck or the slot. Ask, and then talk to your partner about it before the puck drops.
 
@@ -854,43 +870,87 @@ Everything in Section 2 works for you too:
 
 ## Common Mistakes
 
-- **Dumping the puck in because it feels responsible.** On Tulsky's *net value* column the average carry attempt was worth more than three times the average dump-and-chase (+0.42 against +0.12); on raw shots for it was double (0.48 against 0.24). Either way, failed carries cost far less than everyone assumes. Dumping is a tool, not a default.
-- **Dumping and changing.** In Tulsky's tracking this was the *only* entry type with a worse net value than a failed carry-in. If you need a change, change before you get the puck.
+- **Dumping the puck in because it feels responsible.** In the Washington games inside Tulsky's sample — the only ones where failed attempts were tracked — the average carry attempt was worth more than three times the average dump-and-chase on net value (+0.42 against +0.12), and double on raw shots for (0.48 against 0.24). Either way, failed carries cost far less than everyone assumes. Dumping is a tool, not a default.
+- **Dumping and changing.** In those same Washington games this was the *only* entry type with a worse net value than a failed carry-in. If you need a change, change before you get the puck.
 - **Dumping to nobody.** A dump-in with no chaser is not a dump-in, it is a pass to their defenceman. Look before you release.
 - **Arriving at the line early and having to stop.** Being fast to the line is worthless if you have to wait there. Be slower thirty feet out and faster at the line.
 - **The puck carrier arriving first.** Then there is no support, and one player against two defenders is a turnover with extra confidence.
-- **Never delaying.** The curl-back is free and almost nobody uses it. If you are alone at the line, turning away is not retreating; it is the difference between a wasted entry and a real one.
+- **Never delaying.** The curl-back is free and almost nobody uses it. If you are alone at the line, turning away is not retreating; it is the difference between a wasted entry and a real one. **Curl in open ice, though, not against the wall** — never take contact with your back to the boards, and near the wall turn only as far as skates parallel to it, taking the hit on your forearm and hip, head up and chin off your chest.
 - **Blind drop passes.** If you cannot see the trailer, do not drop it. A drop pass to an empty patch of neutral ice is the worst turnover in the game because everybody on your team is facing the wrong way.
 - **Skating straight at the puck on the forecheck.** Angle to take away the escape, not to shorten the distance.
 - **Dumping straight behind the net where the trapezoid applies.** You have just handed the goalie a legal touch and let him set the puck up for his defenceman. Use the corners.
-- **Coasting over the line on a delayed offside.** Tagging up needs **skate contact with the blue line**. Being in the air over it does not clear you, and one player not tagging keeps the whole team frozen. (And check your book: under USA Hockey Rule 630(d) there is no tag-up below Youth 15-Only, Girls 16U, High School and Adult — the whistle goes immediately.)
+- **Coasting over the line on a delayed offside.** Tagging up needs **skate contact with the blue line** in all four books. Being in the air over it does not clear you, and one player not tagging keeps the whole team frozen. Under the NHL, the IIHF and USA Hockey everybody has to clear *at the same instant*; Hockey Canada asks only that all of them clear, so tag as one and you are legal everywhere. (And check your book: under USA Hockey Rule 630(d) there is no tag-up at all below Youth 15-Only, Girls 16U, High School and Adult — the whistle goes immediately. Hockey Canada sets no such classification limit.)
 - **Forechecking during a delayed offside.** Touching the puck, going for a loose puck, forcing the carrier deeper, or being about to hit him all stop play immediately. Hold at the line.
 - **Attacking straight at a defender.** Attack the space between two of them and make somebody choose.
 - **Treating your team's entry rules as universal.** Lane discipline, who carries, whether you stand up at the line — these vary. Find out yours.
+
+## Check yourself
+
+*Answer each question before you go on — a real attempt, not a guess — then go
+and check, because the checking is the part that does the work. Producing an
+answer and getting it wrong is worth more than recognising a right one, but only
+when the right answer follows: the section named with each question, and the Key
+Takeaways after them, are where you get it. Where the answer lives in another
+document, that is named too.*
+
+1. You are approaching the line and the responsible-looking play is to put it in
+   deep. How confident do you actually have to be that the carry works before it
+   is the better bet? Say roughly what a failed carry costs — and name the one
+   entry the tracking found to be worse than a failed carry. *(§1. Why entries
+   decide games, §The part everyone gets wrong)*
+
+2. State the onside rule the right way round — not the offside one. Then
+   describe the trail-skate drag, and name the two rulebooks that take the
+   airborne version of it away from you.
+   *(§The four clauses the technique rests on, §The trail-skate drag)*
+
+3. You are in the zone with the linesman's arm up. What clears the delayed
+   offside, what does *not* clear it even though it keeps you onside on an entry,
+   and what are the four things you must not do while you wait? *(§Delayed
+   offside and tagging up — three consequences for the entry)*
+
+4. Under pressure at the line, which is cheaper — failing to carry, or failing to
+   dump? Answer in terms of where the faceoff ends up, and say why that points
+   the same way the shot data does. *(§The territorial asymmetry — why the safe
+   play isn't)*
+
+5. There is a defenceman in front of you. Should you skate at him? Say what you
+   should attack instead, and describe the exact moment you are trying to
+   manufacture. *(§Attack the space between two defenders, not one of them)*
+
+6. Name three of the five dump-ins and the read that calls for each. Then give
+   the one thing all five have in common, without which none of them is a play
+   at all. *(§7. Dump-ins: five types and the read that calls for each)*
+
+7. You cross with a teammate near the blue line and the defender tracking you
+   ends up tangled in them. Legal, or a penalty? Say what the test is and what
+   turns one into the other. *(§Using a teammate as a screen)*
 
 ---
 
 ## Key Takeaways
 
-1. **Carrying the puck in is worth about twice as much as dumping it in.** Comparing like with like — every carry *attempt*, successes and failures averaged together — Tulsky's tracking put it at 0.48 shots per entry against 0.24 for dump-and-chase, and that result has replicated across multiple trackers, leagues and eras.
-2. **A failed carry costs far less than you think.** In the tracked data it was worth about −0.08 net shots, cheaper than dumping and changing. You only need about one-third confidence for the carry to be the better bet — 26% if your line outmatches theirs, 44% if it does not.
-3. **You are onside as long as one skate has not completely crossed**, judged at the exact instant the puck completely crosses the line. Drag that trail skate and you can attack the line at full speed while everyone else is checking their feet. **Under NHL and IIHF rules the trail skate may even be in the air; under USA Hockey Rule 630(a) it must be touching**, so keep the blade down if that is your book. Tagging up on a delayed offside is stricter: it needs actual **skate contact with the blue line**, from every attacker in the zone, at the same instant — and under **USA Hockey Rule 630(d)** tagging up does not exist at all below Youth 15-Only, Girls 16U, High School and Adult, where the offside is whistled straight away. And a goal scored off the puck that caused the delayed offside is disallowed no matter how cleanly you tagged.
-4. **Attack the space between two defenders, not at one of them.** One defender has an easy job. Two defenders sharing a seam have a problem.
-5. **The puck carrier should be the last to the line and the support should be first** — and arriving with speed is not the same as arriving early.
-6. **The delay is the most under-used skill in amateur hockey.** Alone at the line, turn away, protect the puck, look up ice, and re-attack one second later with support.
-7. **A dump-in is a decision about where, not just whether.** Hard rim, soft area dump, chip past a pinching defender, cross-corner, flip over a trap — each answers a different read, and all of them require a chaser who is already going there.
-8. **The chip past a committing defenceman is a possession play, not a surrender.** Their momentum is what makes it work.
-9. **Where the trapezoid applies, dump to the corners.** Only the puck's position matters, and the goalie's only exception is keeping a skate in contact with the crease. Most **North American** rec and youth leagues have no trapezoid at all, which removes the whole point of the corner dump — but British recreational and junior hockey runs the IIHF book, where the status is unsettled rather than absent — in England and Wales England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced. For you as the attacking team, plan as though their goalie may come for it, and ask your league.
-10. **Chase the escape route, not the puck, and remember the entry is a two-sided coin.** Angle so the retriever's easiest option is the one you have already taken away; F1/F2/F3 are roles defined by arrival order, not positions. Defending the line, your gap should be whatever lets you match their next change of speed — and whether you stand up, receive the entry, or squash-and-slide is a system your coach chooses, not a law of the game.
+1. **Carrying the puck in is worth about twice as much as dumping it in** — 0.53–0.62 shots per entry against 0.22–0.28, across Tulsky's full 330-game NHL sample. That two-to-one shape has replicated across other trackers.
+2. **A failed carry costs far less than it feels** — about −0.08 net shots, cheaper than dumping and changing, with break-even near one-third confidence. Those come from Tulsky's Washington games alone and average every attempt, not the marginal ones.
+3. **You are onside while one skate has not completely crossed**, judged at the instant the puck completely crosses. Drag that trail skate and attack the line at full speed. **NHL and IIHF allow it airborne; USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 require contact — two books of the four.**
+4. **Tagging up on a delayed offside needs actual skate contact with the blue line, from every attacker — and in three books of the four, at the same instant.** The NHL (83.3(i)), the IIHF (83.3(I)) and USA Hockey (630(d)(2)) all require the clearing to be simultaneous; Hockey Canada (6.11(b)) requires every attacker to make skate contact but not to do it at once. Tag as one and you are legal in all four. Under USA Hockey Rule 630(d) there is no tag-up at all below Youth 15-Only, Girls 16U, High School and Adult — a restriction Hockey Canada does not impose.
+5. **Attack the space between two defenders, not at one of them.** One defender has an easy job; two sharing a seam have a problem.
+6. **The puck carrier should be the last to the line and the support first** — and arriving with speed is not the same as arriving early.
+7. **The delay is the most under-used skill in amateur hockey.** Alone at the line, turn away, protect the puck, and re-attack a second later with support. **One safety override outranks the play: curl in open ice, not against the wall.** Never take contact with your back to the boards — near the wall, skates parallel to it, forearm and hip, head up and chin off your chest ([Body Contact and Battles](../technique/body_contact_and_battles.md), which owns this).
+8. **Every dump-in is a decision about where.** Hard rim, soft area dump, chip past a committing defenceman, cross-corner, flip over a trap — each answers a different read, and each needs a chaser already going there.
+9. **Where the trapezoid applies — NHL, KHL and IIHF — dump to the corners, not straight behind the net.** Most North American rec and youth leagues have none. In England and Wales, England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced, so plan for their goalie to come out, and ask your league.
+10. **Angle to take away the retriever's easiest escape rather than to shorten the distance.** Whether you stand up at your own line, receive the entry, or squash-and-slide is a system your coach chooses, not a law.
 
 ---
 
 *Sources — retrieved 27 July 2026:*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 83 (Off-side), Rule 1.8 (goalkeeper's restricted area — the painted dimensions: eight feet from each post at the goal line, eleven feet at the boards, a 28-foot span), Rules 27.8 and 63.2(viii) (the restricted-area penalty — cited for the offence only; its six-foot figure is stale), Rules 1.5–1.7 (lines, division of ice, crease) · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — **the rule set British hockey plays under**, read directly for this document: Rule 83.1 (off-side — the both-skates test, the one-skate on-side test and the "plane" of the blue line, all word-for-word with NHL 83.1; **no** blade-only definition of "skate"), Rule 83.3 (delayed off-side and tag-up, including *"skate contact with the blue line, '3D' judgement is not used in this situation"*), Rule 83.4 (disallowed goal, word-for-word with the NHL including the own-goal exception), Rule 83.6 (face-off locations), Rule 27.7 (goalkeeper restricted area) · [IHUK In-House Rules 2025-26, Revision 1](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — Rules 37 and 38 (no on-ice video review and therefore no Coach's Challenge in EIH or SIHA competition, which removes IIHF Rule 83.5 in domestic play). Checked 29 July 2026: the In-House Rules make **no** amendment to IIHF Rule 83 (Off-side), Rule 81 (Icing) or Rule 27 · [Scouting The Refs — NHL Rule Book Updates for 2025-26](https://scoutingtherefs.com/2025/09/49364/nhl-rule-book-updates-for-2025-26/) · [England Ice Hockey Rules & Regulations 2024-2025](https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf) — Rule 22.3, the Goalkeepers' Restricted Area "not currently enforced"*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 83 (Off-side), Rule 1.8 (goalkeeper's restricted area — the painted dimensions: eight feet from each post at the goal line, eleven feet at the boards, a 28-foot span), Rules 27.8 and 63.2(viii) (the restricted-area penalty — cited for the offence only; its six-foot figure is stale), Rules 1.5–1.7 (lines, division of ice, crease) · [IIHF Official Rule Book 2025/26 (PDF)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) — **the rule set British hockey plays under**, read directly for this document: Rule 83.1 (off-side — the both-skates test, the one-skate on-side test and the "plane" of the blue line, all word-for-word with NHL 83.1; **no** blade-only definition of "skate"), Rule 83.3 (delayed off-side and tag-up, including *"skate contact with the blue line, '3D' judgement is not used in this situation"*), Rule 83.4 (disallowed goal, word-for-word with the NHL including the own-goal exception), Rule 83.6 (face-off locations), Rule 27.7 (goalkeeper restricted area) · [IHUK In-House Rules 2025-26, Revision 1](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) — Rules 37 and 38 (no on-ice video review and therefore no Coach's Challenge in EIH or SIHA competition, which removes IIHF Rule 83.5 in domestic play). Checked 29 July 2026: the In-House Rules make **no** amendment to IIHF Rule 83 (Off-side), Rule 81 (Icing) or Rule 27 · [Scouting The Refs — NHL Rule Book Updates for 2025-26](https://scoutingtherefs.com/2025/09/49364/nhl-rule-book-updates-for-2025-26/) · [England Ice Hockey Rules & Regulations 2024-2025](https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf) — Rule 22.3, the Goalkeepers' Restricted Area "not currently enforced" · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 630(a) (the skate-contact test for off-side, and its Note that one skate touching the line is enough) and Rule 630(d) (delayed off-side and tag-up, its classification restriction, and 630(d)(2) on clearing "simultaneously… at the same instant") · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — Rule 6.11 (off-side, and the sentence restricting the test to skates "in physical contact with the ice surface"), Interpretation 3 to Rule 6.11(a) (the airborne trail skate, ruled OFF-SIDE), and Rule 6.11(b) (delayed off-side and tag-up — skate contact from every attacker, with no simultaneity requirement and no classification restriction)*
 
 *Analytics: [Tulsky, Detweiler, Spencer & Sznajder, "Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance", MIT Sloan Sports Analytics Conference 2013 (PDF)](http://hockeyanalytics.com/Research_files/Using%20Zone%20Entry%20Data%20To%20Separate%20Offensive,%20Neutral,%20And%20Defensive%20Zone%20Performance.pdf) · [Notes From The Rafters — "Proving Tulsky Right: Zone Entries" (PWHPA / Sportlogiq data)](https://notesfromtherafters.substack.com/p/proving-tulsky-right-zone-entries) · [Hockey's Arsenal — "Enter the Offensive Zone With More Offence and Less Risk" (summarising Sznajder and Chatel tracking)](https://hockeysarsenal.substack.com/p/enter-the-offensive-zone-with-more) · [Sports Illustrated — "Fancystats quietly leading NHL teams to dump the dump-and-chase strategy" (2014)](https://www.si.com/nhl/2014/01/15/fancystats-quietly-leading-nhl-teams-to-dump-the-dump-and-chase-strategy)*
 
 *Coaching and tactics: [Ice Hockey Systems — Kyle MacLennan, "Winning the Entry: How NHL Power Plays Gain the Zone"](https://icehockeysystems.com/blog/coaching-tips/winning-entry-how-nhl-power-plays-gain-zone) · [Stanley Cup of Chowder — Shawn Ferris, "Defending the Blue Line" (squash-and-slide, receiving the entry)](https://www.stanleycupofchowder.com/2019/1/28/18197816/defending-the-blue-line-analytics-tactics-boston-bruins)*
 
-*Limitations worth knowing: the season the PWHPA / Sportlogiq figures cover is not stated in the source, which was published in July 2022 and refers only to "this last year's PWHPA Secret Dream Gap Tour" — 2021-22 is an inference, and is flagged as such in Section 1. The Sznajder (0.66 / 0.29) and Chatel (47% / 18%) figures are reported second-hand by Hockey's Arsenal; the underlying tracking data sets are not published, so treat them as indicative rather than exact. The NHL rulebook's own two descriptions of the trapezoid's goal-line dimension disagree (Rule 27.8 vs Rule 1.8), as noted in Section 7.*
+*Boards safety (the override on the delay — [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full treatment): [USA Hockey — Heads Up Hockey Program Guide (PDF)](https://cdn4.sportngin.com/attachments/document/0138/6193/HUH_Program_Guide_FINAL.pdf) — Session 5, "Giving A Check" — under its "Checking from behind" subheading, which is not the session's title — for *"Even a light hit from behind could inflict a severe head or neck injury"*; and "How spinal injuries happen in hockey" for *"it can occur at walking speed"*, which the guide attaches to *"the head being slightly flexed (head down) while making head-on contact with the boards or goal post"* and not to a player turning their back. **"This" in that sentence is the spinal injury, not the collision**, which is why the override renders it as the injury occurring at walking speed. **The finding is a restatement:** USA Hockey credits *"research done among a wide range of hockey players"* and prints the citation beneath it — **Charles H. Tator et al., *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41** — not read in the original here, only the USA Hockey page reproducing it · [USA Hockey — Introduction To Body Contact (PDF)](https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf) — §5 "Checking From Behind", carrying the same light-hit sentence. Both refetched and the quoted strings located in the extracted text on 31 July 2026.*
+
+*Limitations worth knowing: Tulsky's paper carries two different scopes and this document keeps them apart. The shots and goals per carried-in and dumped-in entry (Table 1: 0.53–0.62 against 0.22–0.28) are the full 330-game sample. Everything that involves a **failed** attempt, a dump-and-change or a net value across two entries (Table 3: 0.55, 0.48, 0.24, −0.08, +0.42, +0.12, the 14% turnover rate, and the 34/26/44% thresholds derived from them) comes from the **Washington games alone**, because those were the games in which unsuccessful attempts and dump-and-change plays were recorded — the paper labels that table "as measured in Capitals games". The paper's own strategic conclusion runs toward carrying more, not less, and concerns NHL players only: "in general NHL teams probably could benefit from being more aggressive at the blue line." The authors also state that their averages are "still not sufficient data to say conclusively that teams should be trying harder to carry the puck in at every opportunity". The season the PWHPA / Sportlogiq figures cover is not stated in the source, which was published in July 2022 and refers only to "this last year's PWHPA Secret Dream Gap Tour" — 2021-22 is an inference, and is flagged as such in Section 1. The Sznajder (0.66 / 0.29) and Chatel (47% / 18%) figures are reported second-hand by Hockey's Arsenal; the underlying tracking data sets are not published, so treat them as indicative rather than exact. The NHL rulebook's own two descriptions of the trapezoid's goal-line dimension disagree (Rule 27.8 vs Rule 1.8), as noted in Section 7.*
