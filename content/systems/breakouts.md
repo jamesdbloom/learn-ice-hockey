@@ -102,6 +102,8 @@ None of that makes clearing wrong. It makes clearing a **decision** rather than 
 
 Whatever play is called, five jobs exist. Knowing which one is yours *before* the puck is retrieved is most of the battle.
 
+![](diagram:breakout-five-roles)
+
 ### 1. The puck-retriever D (D1)
 
 ```facts
@@ -146,7 +148,7 @@ The partner. This is the least-understood job on the ice and the one that makes 
 Position: The winger on the same side as the puck — the primary outlet
 Position: You start high, up on the opposing point man, while the other team still has the puck
 Action: Come down the wall as the breakout starts, to the boards between the hash marks and the goal line on the puck side
-Key: Those two spots are about 40 feet apart and belong to two different moments — the trip between them, and its timing, is the job
+Key: Those two spots are 44 to 64 ft apart and belong to two different moments — the trip between them, and its timing, is the job
 Action: Present a target and time your movement into the pass
 Technique: Receive with your body open to the ice, not with your nose against the glass
 ```
@@ -154,7 +156,7 @@ Technique: Receive with your body open to the ice, not with your nose against th
 The winger on the same side as the puck — the primary outlet, and the most commonly botched job in hockey. Full detail in section 4.
 
 - **You start high, not low.** While the other team still has the puck you are up on the opposing point man, covering him — that is your defensive-zone job, and [Defensive Zone Coverage](defensive_zone_coverage.md) is the authority on it.
-- **You come down the wall as the breakout starts.** The moment your team wins the puck — or your defenceman gets to it with time — you leave the point and drop to the wall **between the hash marks and the goal line**, on the same side as the puck. Those two spots are about 40 feet apart and they belong to two different moments. The trip between them, and its timing, *is* the job; neither end of it is a place to live.
+- **You come down the wall as the breakout starts.** The moment your team wins the puck — or your defenceman gets to it with time — you leave the point and drop to the wall **between the hash marks and the goal line**, on the same side as the puck. Those two spots are **44 to 64 feet apart** — the point is at the blue line, 64 ft out from the goal line, and the outlet band runs from level with the faceoff dot, 20 ft out from the goal line, down to the goal line itself ([Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns both figures) — and they belong to two different moments. The trip between them, and its timing, *is* the job; neither end of it is a place to live.
 - **Present a target and time your movement into the pass.**
 - **Receive with your body open to the ice**, not with your nose against the glass.
 
@@ -225,6 +227,8 @@ The direct pass from the puck-carrying defenceman to the strong-side winger on t
 - **The risk:** The wall pass travels through the most heavily patrolled lane on the ice. Intercepted at the hash marks, it's a scoring chance from the top of the circle.
 - **How it's defeated:** Any forecheck with a designated wall-sealer beats it — the second forechecker in a 2-1-2 whose job is exactly this, or the strong-side half-wall player in a 1-2-2. Teams also beat it by having their weak-side defenceman step down on the winger the instant the pass leaves, so the winger has no time even after a good pass.
 
+![](diagram:breakout-up)
+
 ---
 
 ### Wheel
@@ -246,6 +250,8 @@ The defenceman carries the puck himself, skating behind the net and up the far s
 - **Execution:** Cut **tight** to the net — the net itself is your screen, and cutting wide gives the forechecker a straight line to intercept you. Come out of the turn with your head up and speed already built. Your partner, **already standing** at the net front, makes a cross-slot pursuit slower: the forechecker has to go around a player who is entitled to the ice he is on. That is legal. It does not make the pursuit *illegal*, and if your partner slides across into the forechecker's path to make it happen, that is an interference minor against your team (Rule 56.1).
 - **The risk:** You are carrying the puck through the middle-ish of your own zone with your back briefly to the play. If you're caught, you're caught below your own goal line with the puck.
 - **How it's defeated:** A second forechecker holding the far side — precisely what F2 does in a 2-1-2 — turns a wheel into a trap. A forechecker who takes the "back door" route around the net rather than chasing you also kills it. The counter to being caught mid-wheel is the reverse, below.
+
+![](diagram:breakout-wheel)
 
 ---
 
@@ -272,6 +278,8 @@ Sending the puck **back against the flow** of the forecheck, usually a hard back
 
 **Rim and reverse are different plays. Keep them straight:** a **rim** goes *onward* around the boards in the direction the puck was already travelling; a **reverse** goes *back* against it.
 
+![](diagram:breakout-reverse)
+
 ---
 
 ### D-to-D
@@ -294,6 +302,8 @@ The pass across to your partner, changing the side of the ice the attack comes f
 - **The risk:** Executed correctly, this is one of the lowest-risk plays in hockey. Executed through the slot, it is one of the highest. There is very little middle ground.
 - **How it's defeated:** A 2-1-2 with two forecheckers arriving on separate sides beats D-to-D because there's already someone on your partner. A 1-2-2 defeats it by having F1 take away the D-to-D lane as their *first* responsibility — that is often exactly what the containing forechecker is told to do — forcing the puck up the wall into the two waiting forwards.
 
+![](diagram:breakout-d-to-d)
+
 ---
 
 ### Rim
@@ -315,6 +325,8 @@ A hard shot along the boards that follows the curve of the rink around to a team
 - **Execution:** Two things decide whether a rim works. **Height and pace:** keep it low and flat enough to stay on the boards and hard enough to carry all the way around — a soft rim dies in the corner and is a gift. **Target:** aim it to arrive *where a teammate can meet it*, not simply "around". See the trapezoid section (10) — this changes rim targeting fundamentally.
 - **The risk:** A rim concedes possession more often than any other option except an outright clear, because the receiver is collecting a moving puck on the wall with a defenceman closing. It's a 50-50 dressed as a play.
 - **How it's defeated:** The rim is the most-anticipated play in hockey. Any forecheck can post a player at the far wall to intercept it, and most do — the weak-side defenceman stepping down to the far wall to kill rims is standard. Skilled teams beat rims without even moving: they read the pressure you're under and pre-position.
+
+![](diagram:breakout-rim)
 
 ---
 
@@ -391,6 +403,8 @@ A long pass from your defensive zone to a forward who has left early and is wait
 - **The risk profile — the honest version:** a completed stretch pass is close to a breakaway. An intercepted one is a full-speed rush the other way with your winger a full zone out of the play — call it **sixty to eighty feet behind the puck** — because they left before the exit was secure. This is genuinely a high-risk/high-reward play, and its expected value depends almost entirely on your league's ability to complete a pass of that length: the blue lines sit **64 feet** out from each goal line (Rule 1.5) and the rink is **200 feet** long (Rule 1.2 — Dimensions; note that 1.5 covers the lines and 1.6 only names the three zones), so from your own goal line to the far blue line is **114 feet**, and even a stretch to the centre red line is **89 feet**. Very few amateur players can put a flat, receivable pass through either. In most amateur hockey it is not a good default. **Those are NHL-sheet distances.** The IIHF book specifies a different sheet, and in England and Scotland the In-House Rules authorise rinks smaller again; [UK and England Rules](../foundation/uk_rules.md) has the amendment and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the dimensions. Pace the pass to the sheet you are standing on.
 - **How it's defeated:** A 1-3-1 exists to kill it — three players stretched across the neutral zone erase the lane. A conservative 1-2-2 with two forwards holding high does much the same. Teams also defeat it simply by having their defencemen back off rather than step up, which makes the receiving winger easy to cover.
 
+![](diagram:breakout-stretch-pass)
+
 ---
 
 ### Off the glass and out
@@ -457,6 +471,8 @@ Convention: Wall position is system-dependent — a flat/spread structure asks w
 The default landmark is **on the wall, between the hash marks and the goal line, on the strong side** — low enough that the pass from behind or beside the net is short and safe, high enough that you're moving up ice when you get it.
 
 **This is where you arrive, not where you have been standing.** Under the house-default low zone collapse you spend the defensive shift *high*, level with the opposing point man on your side, and you come down the wall to this spot as your team wins the puck — the one time in that system a winger leaves the point voluntarily. See [Defensive Zone Coverage](defensive_zone_coverage.md) and [Winger](../positions/winger.md). Read anything below about "where the strong-side winger stands" as *where the strong-side winger stands once the breakout has started*.
+
+![](diagram:breakout-winger-wall)
 
 Being *above* the hash marks **once the breakout is under way** is the more common error: it makes the pass longer, flatter and more interceptable, and it means the pass comes into your back. Being high *before* that, while they still have possession, is not an error at all — it is your coverage. The error is failing to make the trip, not starting from the top.
 
@@ -542,9 +558,11 @@ Your job on a breakout is a **low support loop**: you swing back down into your 
 - **Below the hash marks.** Above them you are level with the opposition's forwards and the passing lane closes; below them the lane is open and the pass is short. Short passes complete and long ones do not — a centre ten feet from the defenceman is a pass that always works, one forty feet away is a hope. Coming from below and beside, you also receive **facing up ice**; coming from above, the puck arrives into your back.
 - **Inside the dots, not out on the boards.** Drifting wide puts you in the **strong-side winger's** ice, where one opposing player covers you both, and it kills the middle-lane option the structure depends on. Your swing may arc toward the strong side — it should, that is how you gather speed — but it arcs into the *circle*. If you can touch the glass, you are in the wrong job.
 
+![](diagram:breakout-centre-swing)
+
 You are **the bail-out**: when the wall is sealed and the wheel is closed, the low centre is what keeps the breakout alive. Without you, your defenceman is down to a rim, a reverse to nobody, or a turnover.
 
-> **Note for readers of [Center](../positions/center.md):** the centre's breakout spot is the strong-side circle, **not** the strong-side boards — the boards are the winger's. **This file is the authority for breakout positioning.**
+> **Note for readers of [Center](../positions/center.md):** the centre's breakout spot is the strong-side circle, **not** the strong-side boards — the boards are the winger's. **Take breakout positioning from here.**
 
 ### How a high centre kills the breakout
 
@@ -580,7 +598,7 @@ The point of swinging low is not just to be a target — it's to **leave with sp
 
 The correct breakout is not chosen from a list of favourites; it's chosen by reading the shape in front of you. **What each of these forechecks actually is, and how it is coached, belongs to [Forechecking Systems](forechecking_systems.md) — one line each here, then straight to how you beat it.**
 
-> **A note on "most common".** Coaching material widely describes the **1-2-2** as the most-used forecheck in hockey ([forecheck systems guide](https://hoopsking.com/blogs/ice-hockey/hockey-forecheck-systems)), but **no league-wide count exists, so treat that as an impression, not a measured figure.** It does not conflict with the **2-1-2** being the **house default** throughout: that is a documentation convention — the 2-1-2 is the easiest to teach and the most common at youth and rec level, so it is the shape these documents assume when they need to assume one.
+> **A note on "most common".** Coaching material widely describes the **1-2-2** as the most-used forecheck in hockey ([forecheck systems guide](https://hoopsking.com/blogs/ice-hockey/hockey-forecheck-systems)), but **no league-wide count exists, so treat that as an impression, not a measured figure.** It does not conflict with the **2-1-2** being the **house default** throughout: that is a documentation convention — the 2-1-2 is the easiest to teach and the most common at youth and rec level, so it is the shape assumed here when one has to be assumed.
 
 ### Against a 1-2-2
 
@@ -826,7 +844,7 @@ This rule reshapes the entire retrieval game, and it is the reason rim targeting
 
 *(The two rules give different near dimensions, and 27.8 is simply the older one — it is stale, not self-contradictory. Rule 27.8, which defines the penalty, still reads "six feet from either goal post" — wording left over from before the trapezoid was widened by two feet each side in 2014. Rule 1.8 describes the lines actually painted on the ice, and its eleven-feet-from-post figure is what produces the 28-foot span both rules agree on. Trust Rule 1.8. Handled the same way in [Defender](../positions/defender.md) and [Forechecking Systems](forechecking_systems.md).)*
 
-**Where it applies:** the **NHL** (since 2005-06), the **KHL**, and **IIHF play** (since the unified 2021-22 rulebook). **That is not only international hockey** — **IIHF Rule 27.7** carries the same rule in the same terms (*"A goalkeeper shall not play the puck outside of the designated area behind the net… The determining factor shall be the position of the puck"*, with the same skate-contact-with-the-crease exception), and the IIHF book is the book British hockey runs on — the In-House Rules adopt it for EIH, SIHA and BUIHA fixtures, and the corpus reads the Elite League the same way, though its Casebook is unread here. The 2025-26 In-House Rules do not amend the IIHF book on this point. **In England and Wales, though, treat the status as unsettled rather than settled:** England Ice Hockey's own *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"* — that edition is 2024-25, and the current In-House Rules are silent on it, so the published documents do not resolve whether the suspension still stands. Assume it binds, and ask your league. Most rec, beer-league and youth associations elsewhere do **not** use it — and in Britain the practical question may be the rink rather than the rule, so check whether the lines are actually painted behind your net. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
+**Where it applies:** the **NHL** (since 2005-06), the **KHL**, and **IIHF play** (since the unified 2021-22 rulebook). **That is not only international hockey** — **IIHF Rule 27.7** carries the same rule in the same terms (*"A goalkeeper shall not play the puck outside of the designated area behind the net… The determining factor shall be the position of the puck"*, with the same skate-contact-with-the-crease exception), and the IIHF book is the book British hockey runs on — the In-House Rules adopt it for EIH, SIHA and BUIHA fixtures, and the Elite League is understood to run it the same way, though its Casebook is unread here. The 2025-26 In-House Rules do not amend the IIHF book on this point. **In England and Wales, though, treat the status as unsettled rather than settled:** England Ice Hockey's own *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"* — that edition is 2024-25, and the current In-House Rules are silent on it, so the published documents do not resolve whether the suspension still stands. Assume it binds, and ask your league. Most rec, beer-league and youth associations elsewhere do **not** use it — and in Britain the practical question may be the rink rather than the rule, so check whether the lines are actually painted behind your net. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
 
 ### What it does to your breakout
 

@@ -1429,3 +1429,58 @@ a.chip:hover {
   details { display: block; }
   details > summary { display: none; }
 }
+
+/* --------------------------------------------------------------- diagrams
+   A rink diagram is emitted as inline SVG with its intrinsic width in the
+   markup, so it must be told to scale or it overflows every phone. The caption
+   is not decoration: it is the teaching sentence, the accessible name, and the
+   text the speech transform reads, so it is styled to be read rather than
+   skimmed past. */
+figure.diagram {
+  margin: 2rem 0;
+}
+figure.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+figure.diagram figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted, #5b5f66);
+}
+
+@media print {
+  /* Diagrams are vector here, so they print at press resolution. Hold them to
+     the text column and keep the caption with the picture. */
+  figure.diagram { break-inside: avoid; page-break-inside: avoid; }
+  figure.diagram svg { max-width: 100%; }
+}
+
+/* A full-sheet diagram holds twice the ice in the same column, so everything in it
+   renders at half the size — about 5 px labels on a phone, which is unreadable. It
+   scrolls inside its own box instead of being shrunk to fit: the alternative is
+   drawing the players bigger than players are, and the geometry is the part of a
+   diagram this corpus actually asserts. The box never makes the page scroll. */
+figure.diagram--full .diagram-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+figure.diagram--full .diagram-scroll svg {
+  min-width: 640px;
+}
+/* Attribution when a diagram is quoted outside the document that owns it. A note,
+   not prose — it rendered at full body weight until this existed. */
+figure.diagram .diagram-source {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-muted, #5b5f66);
+}
+@media print {
+  /* Paper has no scrollbar; on the printed page the full width is available anyway. */
+  figure.diagram--full .diagram-scroll { overflow-x: visible; }
+  figure.diagram--full .diagram-scroll svg { min-width: 0; }
+}

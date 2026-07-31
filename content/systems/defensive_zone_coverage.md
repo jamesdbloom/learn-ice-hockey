@@ -34,6 +34,8 @@ Five of you. Five of them. One net.
 
 But the ice is not equally dangerous. Almost all goals come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
 
+![](diagram:dz-the-house)
+
 Some vocabulary, used consistently throughout this document and the rest of this guide (full definitions in [Rink Map and Glossary](../foundation/rink_map_and_glossary.md)):
 
 - **The slot** — the lane in front of the net between the two faceoff circles.
@@ -159,6 +161,10 @@ Read: If your weak-side winger has already followed the opposing defenceman down
 This is where low zone collapse succeeds or fails, so it is worth being exact.
 
 When the puck goes into the strong-side corner and **the centre goes down to help**, the high slot is momentarily empty. That is the most dangerous square metre on the ice and it cannot stay empty. So the **weak-side winger drops off their point into the high slot** to fill it. As soon as the puck comes out of the corner, that winger climbs straight back up to their point.
+
+![](diagram:dz-collapse-corner)
+
+![](diagram:dz-collapse-high-slot)
 
 Two things to get right:
 
@@ -301,6 +307,8 @@ Countered by: A good puck-moving team — one chaser cannot pressure them, so th
 
 Four players form a box around the slot — two low near the posts, two higher near the tops of the circles — and the fifth player, the "+1", is the only one who chases the puck. When the puck moves, the +1 role passes to whoever is now nearest, and the box rotates one position to fill the space they left.
 
+![](diagram:dz-box-plus-one)
+
 **Where it actually gets used:**
 
 - **As a teaching system.** It is the standard introductory defensive-zone structure for young players and beginner adults, because it is passive, forgiving of individual mistakes, and gives everyone a simple picture of where to stand. Coaching resources present it explicitly as the stepping stone to sagging zone or hybrid coverage later.
@@ -321,6 +329,8 @@ Countered by: One hard, accurate cross-ice pass — the overload leaves the whol
 
 The **collapsing box** is a state rather than a full system: the box shrinks toward the crease as the puck goes below the goal line or into the corner, so all five of you are inside the house, sticks in lanes, conceding the entire outside. It's what low zone collapse turns into under maximum pressure.
 
+![](diagram:dz-collapsing-box)
+
 Where it gets used:
 
 - **Protecting a lead late**, when a shot from the point costs you nothing and a seam pass costs you the game. See [Game Management](game_management.md).
@@ -329,6 +339,8 @@ Where it gets used:
 - **Against a team that generates nothing from its defencemen** but is dangerous below the circles.
 
 The **strong-side overload** is the opposite adjustment: instead of collapsing toward the net, all five players shift to the puck side, cutting the ice in half and squeezing the carrier for time and space. It is aggressive, generates turnovers, and dies to one hard accurate cross-ice pass — the whole weak side is unoccupied by design. Some teams use it as their base system; more use it as a situational squeeze when they need the puck back.
+
+![](diagram:dz-strong-side-overload)
 
 ---
 
@@ -479,6 +491,10 @@ Priority: When a fourth attacker arrives low, somebody gives up their area and i
 - **Under man-on-man:** you go with them, all the way, wherever they go. Simple, and the reason the walk-down doesn't trouble man teams.
 - **Under hybrid:** you release from zone and pick them up man-on-man as soon as they cross the dots. This is the cleanest answer of the three, and the main reason hybrids exist.
 - **Everyone else:** when a fourth attacker arrives low, you are outnumbered down there. Somebody has to give up their area and it must not be the goalmouth. Usually the centre absorbs the extra man and the weak-side winger takes over the high slot entirely.
+
+![](diagram:dz-walk-down-zone)
+
+![](diagram:dz-walk-down-man)
 
 ### The net-front scramble
 

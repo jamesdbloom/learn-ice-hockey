@@ -40,7 +40,8 @@
     "dot_separation": 44,
     "dot_y": 22,
     "neutral_dot_from_blue_line": 5,
-    "neutral_dot_x": 30,
+    "$neutral_dot_note": "OUTSIDE the blue line, i.e. in the NEUTRAL zone. The owner says '5 ft outside your own blue line'. This was 30 — five feet the wrong way, putting all four dots inside the end zones on every diagram the corpus draws. check_geometry asserted |blue_line_x +/- 5| and so never saw the sign.",
+    "neutral_dot_x": 20,
     "circle_radius": 15,
     "hash_length": 2,
     "hash_separation": 5.583
@@ -80,8 +81,9 @@
       "note": "at the blue line"
     },
     "half-wall": {
+      "$comment": "Was y=33 — 9.5 ft off the boards and INSIDE the faceoff circle, which reaches y=37 at this x. Four reviewers found players 'on the wall' standing in open ice, and two diagram authors had independently added per-diagram fudges rather than fixing it here. The owner says 'the boards roughly level with the faceoff dot', and this document's own schematic draws the half-wall hard against the side boards. 38.5 rather than 42.5 because a player standing against the wall does not have their centre ON the dasher: the opposition glyph is 3.6 ft from centre to apex, so anything above 38.9 draws a body hanging through the boards. 40 was tried first and clipped every wall player by half a foot.",
       "x": 69,
-      "y": 33,
+      "y": 38.5,
       "sided": true,
       "note": "the boards level with the faceoff dot"
     },
@@ -92,7 +94,8 @@
       "note": "end-zone dot"
     },
     "neutral-dot": {
-      "x": 30,
+      "$comment": "Must equal faceoff.neutral_dot_x. It did not: the derived value was corrected to 20 and this named position was left at 30, so any diagram anchored here placed players 10 ft from the dot the same picture drew. check_geometry now asserts the two agree.",
+      "x": 20,
       "y": 22,
       "sided": true
     },

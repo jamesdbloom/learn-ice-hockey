@@ -12,6 +12,48 @@ Write for someone who wants to *do* the thing, not just understand it. Every sec
 
 ---
 
+
+## The reader is not a collaborator
+
+**Content documents contain facts about ice hockey. They do not contain the story of
+how the corpus was built.** A reader came to learn a sport. Everything that is true
+about this project rather than about hockey is noise to them, and several kinds of it
+are worse than noise.
+
+Never put any of this in `content/`:
+
+- **Change history.** "This replaced an earlier diagram", "this was corrected",
+  "an earlier version said", "previously this document claimed". The reader did not
+  see the earlier version and cannot use the information.
+- **Review process.** Rounds, reviewers, adversarial passes, what a review found,
+  what a defect was. That belongs in `project/reviews/` and `project/review_history.md`.
+- **Build tooling.** Script names, checkers, generators, manifests. A reader does not
+  care that `check_geometry.py` asserts a coordinate; they care that the number is right.
+- **Internal editorial machinery.** Ownership notes addressed to other documents
+  ("this document owns rink dimensions", "note for other documents in this corpus"),
+  propagation instructions, style-guide references. Ownership is real and it matters —
+  it just belongs in this file and in the documents' own discipline, not on the page.
+- **The corpus narrating itself.** "This corpus uses…", "these documents have chosen…"
+  Say the thing. If a convention needs explaining to the reader, explain the convention,
+  not the fact that the corpus adopted it.
+
+### What this rule does NOT touch
+
+It is not a licence to tidy, and confusing the two would destroy the corpus's integrity
+story. **All of the following stay, and stripping them is a defect:**
+
+- **Honest disclosure about evidence.** "This could not be verified", "single-source",
+  "no study was found", "the two sources disagree", "retrieved 29 July 2026". These are
+  facts about how good the evidence is, and the reader needs them to weigh the claim.
+- **Provenance.** Which rulebook, which edition, which key a symbol comes from, who said
+  it. That is attribution, not process.
+- **Scope and applicability.** "If you play in Britain, your rule book is the IIHF's."
+  "This document is written to NHL rules." The reader needs to know what applies to them.
+- **Stated qualifications on a number.** The owner's hedge travels with the figure.
+
+The test: **would a reader who had never heard of this project want to know it?**
+"The IIHF and NHL books disagree here" — yes. "Round 27 found this and fixed it" — no.
+
 ## Rule set
 
 **Write to NHL rules.** Where IIHF, USA Hockey, or typical rec/beer-league rules differ *in a way that changes how you play*, flag it inline. Don't flag trivia.
@@ -39,7 +81,13 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 - **Power play formations:** the **1-3-1** has exactly **one** player at the point (one point, two half-walls, one bumper between them, one net front). The **umbrella** has three high. The **overload** loads four onto one side. There is no bumper in a true umbrella.
 
   **⚠️ Personnel is not geometry, and this list is for geometry only.** *"Most first units use four forwards and one defenceman"* was carried in this bullet and is **not a verified fact** — it is an unsourced prevalence claim about what teams choose, and its presence in this list is why five documents restated it bare. Formation *shape* is definitional and belongs here. How many forwards a coach puts in that shape is a coaching choice: label it as such wherever it appears, or source it.
-- **Penalty kill formations:** a **box** has **two** players high (both forwards) and two low (both defencemen) — it has no single "top". A **diamond** has a single apex, used against a 1-3-1 because a box leaves the bumper unmarked. **Wedge+1** is three killers in a tight triangle plus one puck-chaser.
+- **Penalty kill formations:** a **box** has **two** players high (both forwards) and two low (both defencemen) — it has no single "top". A **diamond** has a single apex, used against a 1-3-1 because a box leaves the bumper unmarked. **Wedge+1** is three killers in a tight triangle around the net plus a fourth outside it, the **"+1"**.
+
+  **⚠️ This entry used to end "plus one puck-chaser", and that phrase is what propagated.** It named the +1's *behaviour* rather than the shape — and named it wrongly. [`special_teams.md`](../content/systems/special_teams.md) owns this formation and has it that the +1 **pressures whoever has the puck** and does **not** follow it around the perimeter — when the puck moves, the nearest wedge player steps out as the new +1 and the previous one drops in; a +1 who chases is listed there as the **counter** to the system, in the same block. One of the several sources that document cites for the wedge — [The Coaches Site](https://members.thecoachessite.com/article/explained-wedge-penalty-kill-formation), rendered body re-read 31 July 2026 — never uses "chase" at all: it calls the fourth player the **sweeper** or the **push-down player**. "Puck-chaser" was a corpus coinage with no source behind it, and because it sat *here*, under a heading reading "do not contradict", it was restated in `rink_map_and_glossary.md`, `positions/goaltender.md`, `positions/defender.md` and `how_to_watch_hockey.md` before anyone checked it. **Same lesson as the bullet above: behaviour is not geometry, and this list is for geometry only.**
+
+  **⚠️ This entry also used to say the +1 works "straight outward from the net", and that is no longer what `special_teams.md` has** — it was corrected on 31 July 2026 and this line with it. That wording traces to [Sound Of Hockey](https://soundofhockey.com/2022/04/22/kraken-coach-dave-hakstols-scheme-and-philosophies-the-penalty-kill-part-8/), which has the +1 *"activates in a straight line from the goal toward the opposing player in possession of the puck"* — describing the **2021-22 Seattle Kraken specifically**, not the system. [Broad Street Hockey](https://www.broadstreethockey.com/post/philadelphia-flyers-nhl-penalty-kill-systems-analysis/) has the +1 roaming more freely, and [The Coaches Site](https://members.thecoachessite.com/article/explained-wedge-penalty-kill-formation) has him sweeping across the top of the zone. `special_teams.md` now carries all three as **a coaching choice, with an instruction to ask your coach**. One club's variant had been taught as the system in seven documents, in this entry, and in the site's `pk-wedge-plus-1` diagram caption. **Do not restate a route for the +1 here or anywhere else as though it were the formation.**
+
+  **Do not sweep the word "chaser" out of the corpus, though.** `defensive_zone_coverage.md`'s **box+1** is a different system with a different "+1" — a fifth skater at even strength who genuinely *is* "the only one who chases the puck", with the role passing to whoever is nearest. That document owns that usage and it is correct. So is "dump-and-chase", and so is `special_teams.md`'s own section on the discipline **not** to chase. The defect was one coinage naming one role, not the word.
 - **Faceoff ejections** are caused by moving before the drop, improper stick placement, or **encroachment by a teammate** — a winger creeping into the circle gets the *centre* thrown out. A second violation by the same team on the same draw is a bench minor. **Closing your hand on the puck is a minor penalty, not a faceoff violation.**
 
   **⚠️ Three USA Hockey divergences here, all of which change what a reader does.** (1) **613(a) reverses the stick-down order** — the *attacking* player places first at eight of nine spots, where NHL 76.4 has the *defending* player first; both books agree only at centre ice, where the visitor is first. This inverts the "advantage of going second" argument. (2) **613(d) makes a second violation an individual minor**, not a bench minor. (3) **USA Hockey grants no faceoff dot choice** (612(b), 624(a)) where NHL 76.2 / 81.2 and IIHF both do. Under IIHF, a violation is a **warning** rather than an ejection and a skate win **is** a violation.

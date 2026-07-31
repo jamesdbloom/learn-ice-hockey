@@ -191,6 +191,8 @@ Mindset: Good rush defence is choosing which thing to concede, not taking everyt
 
 So do not line up chest-to-chest with the carrier. Position yourself slightly to the **inside** — your **boardside shoulder** (the shoulder nearer the wall) roughly on the middle of their chest — so that your body sits between them and the middle of the ice, and the only route they can see is toward the boards. Getting this backwards and putting your *inside* shoulder on their chest slides your torso to the boards side and opens the middle, which is exactly the lane you are trying to take away.
 
+![](diagram:rush-gap-and-angle)
+
 - **The boards are your second defender.** A carrier pushed to the wall has no ice on one side, a shrinking angle to the net, and nowhere to cut back.
 - **Force them to the outside, then close the outside.** Steering wide and then giving them the wall lane is only half the job — once they are committed outside, ride them further outside and away from the net.
 - **You are giving them something on purpose.** Good rush defence is not taking everything away; it is choosing which thing to concede.
@@ -236,6 +238,8 @@ The standard assignment, and the one most teams use:
 - **The two wingers take the outside lanes**, each picking up the attacker on their side.
 
 **The middle-lane driver is the most dangerous and most commonly missed assignment in hockey.** They arrive into the slot unmarked, at speed, with a clean look. They are missed because they do not have the puck, and eyes go to the puck. If you are the centre coming back, that player is yours before anything else. See [Center](../positions/center.md) and [Winger](../positions/winger.md).
+
+![](diagram:rush-backcheck-lanes)
 
 > **This is a coaching choice, not a law.** Most teams assign lanes by position as above. Others assign by **first man back takes the middle**, regardless of who it is — common when the centre is the one caught deep, and common in rec hockey where lines are less structured. A third variant has the backcheckers pick up **man-on-man from the puck outward**, taking whoever is nearest. Find out which one your team uses. See [Neutral Zone Systems](neutral_zone_systems.md).
 >
@@ -361,6 +365,8 @@ So the arithmetic is not "which is the better chance for them" — it is "which 
 
 Talk about this with your goalie before the game, not during it. Most goalies want it exactly as described, but a few — especially at rec level, and especially against a weak shooter — will ask you to pressure the puck instead. See [Goaltender](../positions/goaltender.md).
 
+![](diagram:rush-2-on-1)
+
 **Your positioning, concretely:**
 
 1. **Sit in the passing lane**, roughly on the line between the two attackers, biased slightly toward the middle of the ice.
@@ -415,6 +421,10 @@ Three attackers, two defenders. Chaotic-looking, and the way you take the chaos 
 > The trade: the default keeps three defenders on three attackers if the backcheck arrives, but concedes the middle entirely if it does not. The alternative never concedes the middle, but the weak-side D is covering two people and the far attacker gets more room. **Ask your coach which one you are playing** — they fail in different directions, and two defencemen playing different versions of it on the same rush is worse than either.
 - **Retreat together.** Both defencemen back up at the same speed, holding a flat line across the ice with the middle sealed between you. A staggered retreat opens a diagonal seam straight to the slot.
 - **Do not back all the way to the goal line.** Retreating together does not mean collapsing into your own crease — that concedes the entire slot. Retreat under control and force the shot from outside.
+
+![](diagram:rush-3-on-2-default)
+
+![](diagram:rush-3-on-2-alternative)
 
 ### 3-on-1
 
@@ -502,6 +512,8 @@ Action: Defencemen, call them out — "trailer!" or "high!" is a genuinely game-
 The most under-defended player in hockey is the one who arrives second.
 
 The **trailer** (or **late man**) is the attacker following the rush a few metres behind — often a defenceman who has activated, often a forward who was slow out of the zone. They arrive into the high slot just as the first wave has pulled everybody low, and they arrive with a clean, unopposed look.
+
+![](diagram:rush-trailer)
 
 - **In the house-default structure — low zone collapse behind a 2-1-2 forecheck — they belong to the backchecking forwards**, not to the defencemen. Your defencemen are occupied with the first wave, and if they step up to the trailer the first wave gets the net. **This is an assignment, not a law:** some teams have the weak-side defenceman take the trailer and the third forward drop to the net front instead, which is tighter on the trailer and thinner in front. Ask which your team runs, because a trailer covered by nobody and a trailer covered by two are both goals.
 - **This is the specific reason "skate first, then look" matters.** A backchecker who is five metres behind cannot catch the trailer. One who sprinted from the turnover can.

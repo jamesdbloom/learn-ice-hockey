@@ -457,7 +457,7 @@ Answering those three before your stick touches the puck is what [scanning](../h
 
 ## Carrying at Speed
 
-*This document owns carrying with the puck; [Skating](skating.md) owns the stride itself. Read that one for what a good stride is, and this one for what the puck does to it.*
+*[Skating](skating.md) owns the stride itself. Read that one for what a good stride is, and this one for what the puck does to it.*
 
 ### Why so many players slow down the moment they get the puck
 

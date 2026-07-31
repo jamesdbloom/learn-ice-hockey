@@ -136,6 +136,8 @@ Action: Find out where your coach draws that line
 
 **What to do instead.** Take it behind the net. It is a longer route by maybe eight feet, it takes half a second longer, and a failure there produces a battle behind the goal line rather than a shot from twenty feet.
 
+![](diagram:breakout-d-to-d)
+
 *Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, where the interception would happen 50 feet out. Know where your coach draws the line.
 
 ### 2. Never make a blind backhand pass up the middle of your own zone
@@ -490,7 +492,7 @@ The players people call "smart" are almost never the ones who take the fewest ri
 
 ## Penalty risk as a decision
 
-A penalty is a decision like any other, and it has a price you can actually look up. **This document owns the arithmetic of that price** — what a minor costs, what a penalty shot is worth, and which fouls are not priced as minors at all. The game-state half of the topic — which score-and-clock situations make a penalty unforgivable, and what the published evidence actually says about why amateur players take them — belongs to [Game Management, "Discipline as Game Management"](../systems/game_management.md#discipline-as-game-management), and is not repeated here.
+A penalty is a decision like any other, and it has a price you can actually look up. **What follows is the arithmetic of that price** — what a minor costs, what a penalty shot is worth, and which fouls are not priced as minors at all. The game-state half of the topic — which score-and-clock situations make a penalty unforgivable, and what the published evidence actually says about why amateur players take them — belongs to [Game Management, "Discipline as Game Management"](../systems/game_management.md#discipline-as-game-management), and is not repeated here.
 
 **In the 2025-26 NHL regular season, teams scored 1,595 power-play goals on 7,555 opportunities — a league-wide conversion rate of 21.1%** (aggregated across all 32 clubs from the NHL's public team power-play report; see Sources). Teams on the power play also conceded 205 shorthanded goals, about 2.7% of opportunities. So the honest arithmetic:
 

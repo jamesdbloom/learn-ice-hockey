@@ -44,6 +44,8 @@ The IIHF rulebook does not specify one size. It specifies a range. Rule 1.2 read
 
 Note what that last sentence does: under the IIHF book a deviation is not simply a smaller rink, it is something that needs **approval**. Note too that the **length is fixed at 60 m** — only the width is a range.
 
+**And "60 × 30" is not the IIHF standard**, although it is often quoted as one: 30 m is the top of the range, not the specification. The Appendix VI dimension drawing is labelled *"Width = 2600 to 3000"*, and the book carries **two** rink-dimension infographics, one drawn at 60 × 30 and one at 60 × 26.
+
 | Feature | IIHF | In feet | Rule |
 |---|---|---|---|
 | Overall | 60 m × 26–30 m | ~196.9 ft × 85.3–98.4 ft | 1.2 |
@@ -56,7 +58,7 @@ Note what that last sentence does: under the IIHF book a deviation is not simply
 | Glass above boards | 2.4 m behind each goal (extending at least 4.0 m from the goal line), 1.8 m along the sides | 7.9 ft / 5.9 ft | 1.3 |
 | Players' bench | 10 m long × 1.50 m wide | ~32.8 ft × 4.9 ft | 3.1 |
 
-*(IIHF Official Rule Book 2025/26, Rules 1.2, 1.3, 1.5, 3.1 and the Appendix VI "Rink Lines" infographic, whose measurements are all in centimetres.)*
+*(IIHF Official Rule Book 2025/26, Rules 1.2, 1.3, 1.5, 3.1 and the Appendix VI "Rink Lines" infographic, whose measurements are all in centimetres. Every IIHF figure in this document was read in the rule book itself on 29 July 2026 — including the trapezoid at 6.80 m / 8.60 m (Rule 1.8, restated in 27.7), the 4.0 m goal line, the 18.5 m blue line, the 15.0 m neutral zone, the 3.0 m officials' crease and the 4.50 m faceoff circles.)*
 
 The classic "big ice" is the 30 m (98.4 ft) version — **13.4 ft wider than an NHL rink**. That is the sheet most European domestic leagues and most older Olympic tournaments used.
 
@@ -75,16 +77,16 @@ Read the numbers carefully, because they are not a relaxation of Rule 1.2 — th
 - IIHF Rule 1.2 fixes the **length at 60 m**. It offers no shorter option at all. A sheet under **56 m** is at least four metres — over thirteen feet — shorter than the only length the IIHF book recognises, and shorter than an NHL rink too (200 ft is 60.96 m).
 - **26 m is the IIHF minimum width.** "Below 56 m × 26 m" is therefore below the narrowest legal international sheet. Note that 26 m is 85.30 ft, so even the IIHF's *minimum* width is fractionally **wider** than a full NHL rink at 85 ft — a legal international sheet is never narrower than an NHL one. Where the IIHF sheet gives way is length: 60 m against the NHL's 200 ft (60.96 m). A British rink authorised below 56 m × 26 m is therefore short of the **IIHF** book on both dimensions, and short of the **NHL** on length — but not necessarily on width, because 85 ft is 25.91 m, so a sheet just under the British 26 m threshold can still be wider than an NHL rink. Note also that 56 m is a British threshold, not an IIHF one.
 
-So the practical position for a British player is blunt: **your working assumption should be that your rink is smaller than both the NHL standard and the IIHF standard, and that the geometry stated elsewhere in this corpus does not describe the building you are standing in.** Everything downstream of rink size — how long a rim takes to come round, how far the half-wall is from the slot, how much room there is behind the net, whether a stretch pass is even available — shifts with it.
+So the practical position for a British player is blunt: **your working assumption should be that your rink is smaller than both the NHL standard and the IIHF standard, and that neither set of dimensions above describes the building you are standing in.** Everything downstream of rink size — how long a rim takes to come round, how far the half-wall is from the slot, how much room there is behind the net, whether a stretch pass is even available — shifts with it.
 
 Two things about how far that goes:
 
-- **The two British sources word the authorisation differently, and it matters.** The In-House Rules read as blanket and standing — non-standard surfaces *"are authorised"* by the NGB *"for all levels of hockey"*, with three venues named as the **exception to** that authorisation rather than as examples of it. But England Ice Hockey's *Rules & Regulations* 22.2 says such rinks *"may be approved by EIH to be used for all levels of hockey"*, which is the language of approval on application, and names only Sutton. **The corpus does not resolve which governs.** The inference that sub-standard sheets are the ordinary case rather than the awkward one follows from the In-House wording and from a governing body not writing a rule in that shape for a handful of buildings — but it is an inference, and no published count of British rink dimensions exists to test it.
+- **The two British sources word the authorisation differently, and it matters.** The In-House Rules read as blanket and standing — non-standard surfaces *"are authorised"* by the NGB *"for all levels of hockey"*, with three venues named as the **exception to** that authorisation rather than as examples of it. But England Ice Hockey's *Rules & Regulations* 22.2 says such rinks *"may be approved by EIH to be used for all levels of hockey"*, which is the language of approval on application, and names only Sutton. **The published documents do not settle which of the two governs.** The inference that sub-standard sheets are the ordinary case rather than the awkward one follows from the In-House wording and from a governing body not writing a rule in that shape for a handful of buildings — but it is an inference, and no published count of British rink dimensions exists to test it.
 - **There is still no published census of British rink dimensions**, so nothing here tells you the distribution — how many rinks, or how far below. The rule tells you what to expect; it does not tell you what yours measures. That remains something to go and look at.
 
 The In-House Rules amend the benches in the same section: the home club or venue operator must provide players' benches and penalty boxes that, *"within the fixed constraints of the rink, conform as closely as reasonably practicable to IIHF dimensions and layout"*, and any unavoidable deviation must be *"communicated to both teams and the officials prior to warm-up"* (In-House Rules, Rule 3). The phrase *"the fixed constraints of the rink"* is the same admission from the other direction.
 
-[UK and England Rules](uk_rules.md) owns the full list of England Ice Hockey amendments; this document owns the geometry.
+[UK and England Rules](uk_rules.md) owns the full list of England Ice Hockey amendments; the geometry is here.
 
 ### What the extra width actually changes
 
@@ -117,40 +119,9 @@ Most recreational, beer-league, youth and older community rinks are **not** buil
 
 ## 2. The full-rink map
 
-Both diagrams in this document are **schematic, not to scale.** They are there to fix the relationships between markings in your head, not to be measured.
+Both maps in this document are **drawn to scale** from the dimensions in section 1, so the distances in them are real and you can measure relationships off them.
 
-```
-                         blue line          blue line
- goal line                      centre red line                     goal line
-     ^                       ^         ^        ^                       ^
-+----------------------------------------------------------------------------+
-|    :                       #         |        #                       :    |
-|    :                       #         |        #                       :    |
-|    :   .........           #         |        #           .........   :    |
-|    :  .         .          #         |        #          .         .  :    |
-|    : .     o     .       o #         |        # o       .     o     . :    |
-|    :  .         .          #         |        #          .         .  :    |
-|    :   .........           #     ....|....    #           .........   :    |
-| +-+:                       #    .    |    .   #                       :+-+ |
-| | |:                       #   .     x     .  #                       :| | |
-| +-+:                       #    .    |    .   #                       :+-+ |
-|    :   .........           #     ....|....    #           .........   :    |
-|    :  .         .          #         |        #          .         .  :    |
-|    : .     o     .       o #         |        # o       .     o     . :    |
-|    :  .         .          #         |        #          .         .  :    |
-|    :   .........           #         |        #           .........   :    |
-|    :                       #         |        #                       :    |
-|    :                       #         |        #                       :    |
-+----------------------------------------------------------------------------+
-
-|  <------ END ZONE ------>  | <-NEUTRAL ZONE-> |  <------ END ZONE ------>  |
-
-    :  goal line      #  blue line      |  centre red line
-    o  faceoff dot    x  centre ice dot  ....  faceoff circle
-   +-+
-   | |  goal (the net sits on the goal line, opening toward centre ice)
-   +-+
-```
+![](diagram:rink-map-full)
 
 Note how much of the rink is *behind* the goal line. That strip — 11 ft in the NHL, **4.0 m (13.1 ft) under IIHF Rule 1.5** — is live playing surface, and a large fraction of offensive-zone possession happens there.
 
@@ -248,9 +219,11 @@ The trapezoid is the marked area behind each net inside which the goaltender is 
 
 **Current NHL markings (Rule 1.8 and the official rink diagram):** the lines begin **7 ft outside each side of the goal crease — 8 ft from each goal post** — and run diagonally back to points **11 ft from each goal post** at the end boards. In plain numbers: **22 ft wide along the goal line, widening to 28 ft at the end boards**, and 11 ft deep.
 
+![](diagram:the-trapezoid)
+
 > **Two rules, two different numbers — flagged because you will see both quoted.** Neither is self-contradictory; 27.8 simply describes the older, narrower trapezoid. Rule 1.8 and the official rink diagram give 8 ft from each post (22 ft at the goal line). Rule **27.8**, the penalty rule, still reads "lines that begin six feet (6') from either goal post" — the pre-2014 dimension. The trapezoid was **widened by two feet on each side for the 2014-15 season** at the NHLPA's request, to give defencemen more retrieval help; Rule 27.8 appears not to have been updated to match. Treat **8 ft / 22 ft** as the painted reality and the diagram as authoritative.
 
-**The rule itself:** the goaltender may only play the puck behind the goal line inside this area. Playing it outside is a **two-minute minor for delay of game**. The position of the puck is the determining factor. **The sole exception is a goaltender playing the puck while maintaining skate contact with the goal crease** — there is no teammate-based exception. This document owns the geometry; the **penalty** (Rules 27.8 and 63.2(viii)) belongs to [Rules Primer](rules_primer.md), and what it means for the goalie who has to live inside it is in [Goaltender](../positions/goaltender.md).
+**The rule itself:** the goaltender may only play the puck behind the goal line inside this area. Playing it outside is a **two-minute minor for delay of game**. The position of the puck is the determining factor. **The sole exception is a goaltender playing the puck while maintaining skate contact with the goal crease** — there is no teammate-based exception. The geometry is above; the **penalty** (Rules 27.8 and 63.2(viii)) is in [Rules Primer](rules_primer.md), and what it means for the goalie who has to live inside it is in [Goaltender](../positions/goaltender.md).
 
 **Where it applies:** the NHL (since 2005-06), the KHL, and IIHF play (since the unified 2021-22 rulebook). **Most *North American* rec, beer-league and youth associations do not use it.** Find out which you are under, because it changes your defencemen's retrieval game completely.
 
@@ -300,41 +273,9 @@ Some documents and commentators use **"offensive zone"** where the rulebook says
 
 ## 5. Named areas of the ice
 
-This diagram is a close-up of **one end zone**, with the blue line at the top and the end boards at the bottom. Schematic, not to scale.
+This map is a close-up of **one end zone**, with the blue line at the left and the end boards at the right, drawn to scale.
 
-```
-+--------------------------------------------------------------------------+
-|##########################################################################|   <- blue line
-|             [A] point                               point [A]            |
-|                                                                          |
-|                                                                          |
-|                                                                          |
-|                                   [B]                                    |
-|                                                                          |
-|                                                                          |
-|            [C]                                          [C]              |
-|            .............                         .............           |
-|        .                   .                 .                   .       |
-|       .                     .     [E]       .                     .      |
-|      =         [F]           .=           =.         [F]           =     |
-|[D]  .            o            .           .            o            .[D] |
-|      =                       .=           =.                       =     |
-|       .                     .               .                     .      |
-|        .                   .      [G]        .                   .       |
-|            .............                         .............           |
-|  [H]                            .-------.                          [H]   |
-|                                 |       |   [I]                          |
-|:::::::::::::::::::::::::::::::::[  GOAL ]::::::::::::::::::::::::::::::::|   <- goal line
-|                           \      '-----'      /                          |
-|                          \        [J]          /                         |
-|                  [K]    \                       /                        |
-+--------------------------------------------------------------------------+   <- end boards
-
-  [A] the point        [B] the high slot / "high"   [C] top of the circle
-  [D] the half-wall    [E] the slot                 [F] the faceoff dot (o)
-  [G] the low slot     [H] the corner               [I] the crease / "the paint"
-  [J] behind the net   [K] the trapezoid            =  hash marks
-```
+![](diagram:rink-map-end-zone)
 
 ### The slot
 
@@ -342,13 +283,17 @@ This diagram is a close-up of **one end zone**, with the blue line at the top an
 
 **Why it matters:** more goals are scored from here than from everywhere else combined. It is the shortest route to the net and the widest angle on it. Everything in defensive-zone coverage is ultimately about who is standing in the slot, and everything in offensive-zone play is ultimately about getting a puck and a body there at the same time.
 
+![](diagram:the-slot)
+
 The slot is layered, and the layers have different jobs:
 
 ### The high slot
 
 **Where:** the upper part of the slot — from the level of the **faceoff dots** up to the **top of the circles**.
 
-**Why it matters:** this is the shooting layer. A player unmarked here gets a clean look with time to pick a corner, and a puck arriving here from the half-wall is a one-timer. In a low zone collapse (zone) defensive system — the house default across these documents — the high slot belongs to the centre, or to the weak-side winger collapsing down when the centre goes to help in the corner.
+**Why it matters:** this is the shooting layer. A player unmarked here gets a clean look with time to pick a corner, and a puck arriving here from the half-wall is a one-timer. In a low zone collapse (zone) defensive system — the default assumed here — the high slot belongs to the centre, or to the weak-side winger collapsing down when the centre goes to help in the corner.
+
+![](diagram:the-high-slot)
 
 ### The low slot
 
@@ -356,15 +301,19 @@ The slot is layered, and the layers have different jobs:
 
 **Why it matters:** tips, rebounds, and screen position. Shots from here go in at a far higher rate than shots from anywhere else, and defenders cannot let anyone stand unmarked in it. This is the ice a net-front player fights for.
 
+![](diagram:the-low-slot)
+
 ### The goalmouth
 
 **Where:** the immediate front of the net, at the edge of the crease — a much smaller area than the low slot.
 
 **Why it matters:** it is where tap-ins and jam plays happen. In the house default coverage, the **weak-side defenceman** owns it and does not leave it. Getting "goalmouth" and "slot" mixed up is one of the most common causes of a blown assignment: they are two different jobs, one layer apart.
 
+![](diagram:the-goalmouth)
+
 ### The "home plate" / high-danger area
 
-**Where:** not an official marking — a shape used by analysts and increasingly by coaches. It runs along the goal line between the two faceoff dots, straight up the dot lines to about the top of the circles, then angles in to the net. Drawn out, it looks like a baseball home plate pointing at the blue line.
+**Where:** not an official marking — a shape used by analysts and increasingly by coaches. It runs in along the **tops of the two faceoff circles**, straight down the dot lines to the **two faceoff dots** — 44 ft apart, so that part of it is 44 ft wide — and then angles in to the **two goalposts**, which are 6 ft apart on the goal line. Drawn out, it looks like a baseball home plate with its **point at the net**: square across the top, tapering to the width of the goal mouth. [Offensive Zone Play](../systems/offensive_zone_play.md) and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) describe the same shape and are built around it.
 
 **Why it matters:** it is the working definition of a "high-danger chance." The exact boundaries vary a little between analytics providers (Natural Stat Trick, Evolving Hockey, MoneyPuck all draw it slightly differently), so treat it as a concept rather than a measurement. The concept is simple and worth having: **shots from inside home plate are worth several times a shot from outside it.** Take shots from inside; work the puck inside rather than shooting from outside.
 
@@ -387,6 +336,8 @@ The slot is layered, and the layers have different jobs:
 **Why it matters:** it is the most important non-scoring area in the offensive zone. It is the natural distribution point — from here a player can see the point, the slot, the corner and the net-front, and every one of those passes is available. Wingers live here in offensive-zone possession; half-wall players are the two "wings" of a 1-3-1 power play.
 
 **"Half-wall" is not "the point."** The point is at the blue line; the half-wall is level with the dot, roughly 20 ft from the goal line. Conflating them is a common error and it produces a real mistake — a defenceman drifting down to the half-wall has abandoned the blue line.
+
+![](diagram:the-point-and-the-half-wall)
 
 ### The boards / the wall
 
@@ -465,6 +416,8 @@ Related: **"third forward high"** means the third forward stays in the upper par
 - **Weak-side** (also "**off-side**", "**back side**") = the opposite side.
 
 These flip the instant the puck crosses the middle of the ice, which is why defencemen have to talk constantly: one is always the strong-side defender (on the puck) and the other the weak-side defender (at the goalmouth), and they trade those jobs several times a shift.
+
+![](diagram:strong-side-and-weak-side)
 
 The **backdoor** is the weak-side net-front area — the most dangerous unmarked space in hockey, because a player arriving there is behind the goaltender's field of view.
 
@@ -623,7 +576,7 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 
 **The paint** — the light-blue **crease**. "Stay out of the paint."
 
-**Penalty kill (PK)** — playing shorthanded while serving a penalty. Standard shapes: **box** (two forwards high, two defencemen low — *no single top*), **diamond** (a single apex, used against a **1-3-1** because a box leaves the **bumper** unmarked), and **wedge+1** (three in a tight triangle plus one puck-chaser).
+**Penalty kill (PK)** — playing shorthanded while serving a penalty. Standard shapes: **box** (two forwards high, two defencemen low — *no single top*), **diamond** (a single apex, used against a **1-3-1** because a box leaves the **bumper** unmarked), and **wedge+1** (three in a tight triangle around the net, plus a fourth player — the **"+1"** — who pressures whoever has the puck rather than following it around the perimeter; when the puck moves, the nearest wedge player steps out as the new **"+1"** and the previous one drops into the triangle). **The route the +1 takes — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and the point — is a coaching choice that published descriptions differ on, so ask which one your team runs.** See [Special Teams](../systems/special_teams.md).
 
 **Pinch** — a defenceman stepping *down* from the **offensive** blue line into the zone to keep a puck in. *Not the same as* **step up**. Relatively safe, because your forwards are behind you to recover. **Under most systems only one defenceman pinches at a time**, the other holding the middle as the safety — but that is a near-universal coaching default, not part of the definition and not a rule: some teams give both defencemen a standing green light, and every team sends both on a delayed penalty, a full-ice press or 6-on-5. See [Forechecking Systems](../systems/forechecking_systems.md) and [Offensive Zone Play](../systems/offensive_zone_play.md).
 
@@ -681,7 +634,7 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 
 - **Assuming "defensive zone" is a fixed end of the building.** It follows your team, and it swaps every period. Say "our end" and "their end" if there is any doubt.
 - **Confusing the slot with the goalmouth.** They are two layers of coverage with two different owners. A defender who leaves the goalmouth to cover the slot has just left a tap-in unmarked.
-- **Confusing the point with the half-wall.** One is at the blue line, one is level with the dot, 40 ft apart. A defenceman drifting to the half-wall has abandoned the line.
+- **Confusing the point with the half-wall.** One is at the blue line, one is level with the dot — **44 ft apart**, because the blue line is 64 ft from the goal line and the end-zone dots are 20 ft from it. A defenceman drifting to the half-wall has abandoned the line.
 - **Confusing a rim with a reverse.** They beat opposite kinds of pressure. Using the wrong one hands the puck straight to the forechecker.
 - **Confusing a pinch with a step-up.** A pinch has your forwards behind you. A neutral-zone step-up has nothing behind you.
 - **Treating F1 as "the centre".** F1 is whoever arrives first. If two players both think they're F2, nobody pressures the puck.
@@ -720,5 +673,3 @@ One or two sentences each. Terms in **bold** inside a definition are defined els
 *Terminology and concepts: [Ice hockey rink — Wikipedia](https://en.wikipedia.org/wiki/Ice_hockey_rink) · [High-Danger Chances in Hockey Explained](https://puckcast.ai/high-danger-chances-hockey) · [Hockey Graphs – Quantifying the Importance of Handedness](https://hockey-graphs.com/2016/03/04/quantifying-the-importance-of-handedness/) · [Cross Ice Hockey – Should You Play the Off Wing?](https://www.crossicehockey.com/play-off-wing/)*
 
 *Unverified / flagged in the text: the exact boundaries of the "home plate" high-danger area are an analytics convention rather than a rule, and differ between providers. Two NHL rules give different trapezoid widths (Rule 1.8 and the rink diagram give 8 ft from each post; Rule 27.8 still reads 6 ft, describing the pre-2014 shape) — this document follows Rule 1.8 and the diagram. Rec-rink dimension ranges are general observation, not a sourced standard. **There is no published census of British rink dimensions**, so this document states what the In-House Rules authorise and does not claim a distribution; and **neither the IIHF book nor the In-House Rules establish how the markings are laid out on a British rink below 56 m × 26 m**, which is why the instruction there is to look.*
-
-> **⚠️ Note for other documents in this corpus.** This document owns rink geometry, and one figure travelling elsewhere is wrong. **IIHF Rule 1.2 specifies "60m long and 26m to 30m wide" — it does not specify a 60 m × 30 m sheet.** 30 m is the top of a range, not the standard; the Appendix VI dimension drawing is labelled "Width = 2600 to 3000" and the book carries *two* rink-dimension infographics, one at 60 × 30 and one at 60 × 26. Anywhere the corpus states the IIHF standard as "60 × 30", take the figure from this document instead. The rest of the corpus's IIHF geometry was re-checked against the book on 29 July 2026 and is accurate — including the trapezoid at 6.80 m / 8.60 m (Rule 1.8, restated in 27.7), the 4.0 m goal line, the 18.5 m blue line, the 15.0 m neutral zone, the 3.0 m officials' crease and the 4.50 m faceoff circles.

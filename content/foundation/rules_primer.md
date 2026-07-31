@@ -10,13 +10,13 @@
 
 ## Overview
 
-This is the canonical rules document here: where two documents disagree about a rule, this one wins, and most other documents link here rather than restating a rule at length.
+This is the rules reference. When you want the rule itself — the wording, the rule number, and what changes when you cross a rule book — rather than how to play around it, this is where it is set out at length.
 
-A handful of topics are deliberately owned elsewhere, because the document that teaches them can say more about them than a rules primer should. Each fact has exactly one owner, and the other documents link to it rather than duplicating it:
+A handful of topics are treated in more depth elsewhere, because the document that teaches them can say more about them than a rules primer should:
 
 - **[Faceoffs](../systems/faceoffs.md)** owns the faceoff procedure, the violations, the ejection rules and the NHL/IIHF/USA Hockey splits in full. This document keeps the table of where each draw goes, plus short statements of the two things no rules reference should omit — that an encroaching winger gets the *centre* ejected, and that the IIHF issues a team warning instead. Take the detail from Faceoffs.
-- **[Zone Entries](../systems/zone_entries.md)** owns the **trail-skate drag** as a technique. This document owns the offside rule itself, delayed offside, the disallowed goal and the rule-set differences.
-- **[Rink Map and Glossary](rink_map_and_glossary.md)** owns every rink dimension, including the goal crease and the **trapezoid geometry**. This document owns the trapezoid *penalty*.
+- **[Zone Entries](../systems/zone_entries.md)** owns the **trail-skate drag** as a technique. The offside rule itself, delayed offside, the disallowed goal and the rule-set differences are below.
+- **[Rink Map and Glossary](rink_map_and_glossary.md)** owns every rink dimension, including the goal crease and the **trapezoid geometry**. The trapezoid *penalty* is below.
 - **[Goaltender](../positions/goaltender.md)** owns how **freezing the puck** is actually enforced, because it carries the published Hockey Canada and USA Hockey interpretations.
 
 The aim is not to reproduce the rulebook — it is to tell you what each rule actually changes about your decisions on the ice. A rule you understand only as a definition will get you caught out; a rule you understand as a *constraint on where you can be and when* becomes a tool. Offside is why you drag a trail skate. Icing is why a tired line dumps the puck from their own blue line instead of their own goal line. The trapezoid is why your goalie stops behind the net instead of in the corner.
@@ -33,7 +33,7 @@ On top of that base sits one thin layer of local amendment: the **In-House Rules
 
 **What that changes about reading this document.** Wherever the text below says *"under IIHF rules"*, it is describing your game, not a footnote to somebody else's. Wherever it flags a **USA Hockey** or **Hockey Canada** divergence, that flag is not yours. The comparison table in [section 10](#10-rule-set-differences-that-actually-matter) carries a fifth column, **England Ice Hockey**, for exactly this reason — and where that column reads *"As IIHF"*, that is the answer and not an omission: it means England Ice Hockey does not amend the IIHF rule, so the IIHF cell beside it is your rule.
 
-**[UK and England Rules](uk_rules.md) owns the full list of England Ice Hockey amendments.** This document points at it rather than restating it. Read it before your first game — several of the amendments (neck protection, facial protection, rink size, junior age categories) change things this document does not cover.
+**[UK and England Rules](uk_rules.md) owns the full list of England Ice Hockey amendments.** Read it before your first game — several of the amendments (neck protection, facial protection, rink size, junior age categories) change things this document does not cover.
 
 ---
 
@@ -193,10 +193,14 @@ If the puck is **shot into the zone** creating a delayed offside and that same s
 
 This is worth learning, because it is a real territorial consequence (Rule 83.6):
 
-- Offside caused by an attacker **carrying** the puck over the line → faceoff at the **neutral-zone spot nearest that attacking zone**. You lose the zone but keep the neutral-zone draw.
-- Offside caused by a **shot or pass** into the zone → faceoff **back at the spot in the zone where that pass or shot originated**. If your defenceman fired it in from his own end, the draw goes all the way back there.
+- Offside where the puck **entered the zone in an attacker's possession** — the rule's own words are *"as a result of the attacking team carrying the puck over the attacking blue line"* → faceoff at the **neutral-zone spot nearest that attacking zone**. You lose the zone but keep the neutral-zone draw.
 
-So: a carried offside costs you a little; a pass-created offside can cost you 120 feet. That is a real argument for carrying the puck over the line under pressure rather than firing a hopeful pass into the zone.
+  **The carrier is not the offender.** A player with possession and control may cross the line ahead of the puck, as quoted above (Rule 83.1), so nobody is ever offside for carrying it in. The offence is a *teammate* who had already preceded the puck over the line. **What Rule 83.6 sorts on is how the puck entered the zone, not who took it in.**
+- Offside where the puck **entered on a shot or a pass** → faceoff at the *"face-off spot in the zone closest to the point of origin of the shot or pass (even if deflected off an attacking or defending player or an official)"*, which Rule 83.6's delayed-offside list adds is the one *"that gives the offending team the least amount of territorial advantage."* **That is a faceoff spot, not the patch of ice the pass left from** — if your defenceman fired it in from behind his own net, the draw goes to an **end-zone dot in your own end**, not to the goal line where he was standing.
+
+So: a carried offside costs you a little; a pass-created offside can cost you the length of the neutral zone and most of your own end on top of it. At the extreme the two draws are **89 ft apart up the ice** — from the neutral-zone spot 5 ft outside the attacking blue line, back to an end-zone dot 20 ft out from your own goal line. (Those two spot positions, and the 64 ft from blue line to goal line that sits between them, are owned by [Rink Map and Glossary](rink_map_and_glossary.md); the 89 ft is the distance between those two spots — 45 ft from centre ice out to the neutral-zone spot, plus the 44 ft from centre ice to an end-zone dot — and not a number from the rulebook. **Those are NHL-sheet distances**, and USA Hockey Rule 630(c) words the location differently again — "the nearest last play face-off location".) That is a real argument for carrying the puck over the line under pressure rather than firing a hopeful pass into the zone.
+
+![](diagram:offside-faceoff-location)
 
 ### Video review
 
@@ -225,6 +229,8 @@ If a team **equal or superior in numerical strength** to their opponent shoots, 
 To nullify a potential icing, your team must **"gain the line"**: the puck, **while on a player's stick — not a skate — must make contact with the centre red line** (Rule 81.1).
 
 This is the detail almost nobody knows. If you are carrying the puck through the neutral zone and you fire it down the ice, the question is not where *you* were, it is where *the puck on your stick* was. Carry it that extra half-stride so the puck touches the red line and you can dump it in freely. Kicking it forward over the line with your skate does **not** count.
+
+![](diagram:icing-gaining-the-line)
 
 ### Hybrid, no-touch and touch icing
 
@@ -499,7 +505,7 @@ Coincidental minors do not make either team shorthanded, so they do not expire o
 
 **A team below the numerical strength of its opponent may shoot the puck the length of the ice with no icing called** (Rule 81.6). This is the structural core of penalty killing. Every kill is built on the fact that clearing the puck costs you nothing but the time it takes them to bring it back.
 
-**It is not unconditional, and it is often stated bare when it should not be.** There are two exceptions, and this document owns the wording of both.
+**It is not unconditional, and it is often stated bare when it should not be.** There are two exceptions, and the wording of both is quoted in full below.
 
 **Exception 1 — the NHL's empty penalty bench (Rule 81.6).** Quoted in full: *"When a team is 'short-handed' by reason of a major penalty, and they have neglected to ensure there is a player on the penalty bench to exit upon the expiry of the penalty, they will continue to play short-handed but are not permitted to ice the puck. Icing will be called. They may substitute for this penalized player at the next stoppage of play."* (The underlying substitution requirement is Rule 20.3.) This is a bench administration failure rather than a playing decision, but on a five-minute major it is real: somebody must be sitting in the box ready to come out. Note also the timing test in the same rule — when a penalty is **about to expire**, icing is judged at the instant it expires, and a puck released before expiry is not icing.
 
@@ -550,7 +556,7 @@ This is the single most valuable rules fact for a forward. **Get in the goalie's
 
 ### The trapezoid (goalkeeper's restricted area)
 
-This section is the **penalty**. The geometry — the NHL figures, the depth, the IIHF metric equivalents and where the lines actually run — belongs to [Rink Map and Glossary](rink_map_and_glossary.md), which owns the rink's dimensions. Take them from there rather than from here.
+This section is the **penalty**. The geometry — the NHL figures, the depth, the IIHF metric equivalents and where the lines actually run — belongs to [Rink Map and Glossary](rink_map_and_glossary.md), which owns the rink's dimensions and gives them in full.
 
 **The goalie may not play the puck behind the goal line outside the marked trapezoid behind his net.** Violation is a **two-minute minor for delay of game** (Rules 27.8, 63.2(viii)). The determining factor is the **position of the puck**, not the position of the goalie.
 
@@ -570,7 +576,7 @@ Related, and often forgotten: a goalie who **participates in the play beyond the
 
 The goalie is allowed to cause a stoppage, but only in defined circumstances. Holding the puck with the hands for longer than three seconds unless actually being checked, throwing it forward toward the opponents' net, dropping it into his pads or onto the goal net, racing out of the crease to beat an attacker to a loose puck and then jumping on it, and piling snow or obstacles near the net are each a **minor** (Rules 63.2, 67.3) — and the last becomes an **awarded goal** if the net is empty (Rule 67.5). Coming out to cut down the angle, making the save and *then* covering the puck is legal.
 
-> **⚠️ One of these reads far stricter than it is enforced — take it from the owner.** Rule 63.2(vii) penalises a goalkeeper who, inside his own crease, deliberately falls on or gathers the puck into his body *"unless he is actually being checked by an opponent."* Read literally, that would make the routine freezes you see in every game illegal, and it is not how any game is officiated. **[Goaltender](../positions/goaltender.md) owns this one** and sets out how the written rule and the "unnecessary stoppage" standard of Rule 67.3(ii) interact in practice, together with the published **Hockey Canada** (Interpretation 3 to Rule 10.1(a)) and **USA Hockey** (Rule 610(b)) interpretations, both of which apply a pressure test the NHL does not publish. Do not act on the bare literal reading — and if your league's referees are strict about it, find out early.
+> **⚠️ One of these reads far stricter than it is enforced.** Rule 63.2(vii) penalises a goalkeeper who, inside his own crease, deliberately falls on or gathers the puck into his body *"unless he is actually being checked by an opponent."* Read literally, that would make the routine freezes you see in every game illegal, and it is not how any game is officiated. **[Goaltender](../positions/goaltender.md) owns this one** and sets out how the written rule and the "unnecessary stoppage" standard of Rule 67.3(ii) interact in practice, together with the published **Hockey Canada** (Interpretation 3 to Rule 10.1(a)) and **USA Hockey** (Rule 610(b)) interpretations, both of which apply a pressure test the NHL does not publish. Do not act on the bare literal reading — and if your league's referees are strict about it, find out early.
 
 There is one further consequence that is not a penalty at all but hurts more: if the **attacking team shoots the puck in from beyond the centre red line and the goalie freezes it**, the faceoff is in the **goalie's own end**, the **defending team may not change lines**, and they may **not take a timeout** (Rules 63.8, 87.1). The attacking team also **chooses which dot**. In other words, a soft freeze on a routine dump-in is punished exactly like an icing.
 
@@ -605,7 +611,7 @@ Faceoff location is a **penalty and reward system**, and reading it tells you wh
 | Penalty after a goal, or at the end/start of a period | Centre ice |
 | **Icing** | End zone of the offending team; the **attacking team chooses the dot** (Rule 81.2) |
 | **Offside — carried in** | Neutral-zone spot nearest that attacking zone |
-| **Offside — passed or shot in** | The spot in the zone **where the pass or shot originated** |
+| **Offside — passed or shot in** | The **faceoff spot in the zone closest to** where the pass or shot came from — a spot, not the patch of ice it left |
 | **Intentional offside** | End-zone spot in the **offending team's** defending zone |
 | Goalie freezes a shoot-in from beyond the red line | Goalie's own end zone; attacking team chooses the dot |
 | Defender accidentally dislodges the net | Defender's own end zone; attacking team chooses the dot |
@@ -689,7 +695,7 @@ See [Team Play and Culture](../off-the-ice/team_play_and_culture.md) and [Mental
 
 The differences below are the ones that change **what you should do on the ice**. Everything else is trivia.
 
-**Read the England Ice Hockey column against the IIHF one beside it.** England Ice Hockey, the SIHA and the BUIHA run the IIHF book and amend it in writing, so **"As IIHF" is a positive statement, not a blank**: it means the In-House Rules carry no amendment to that rule, and the IIHF cell to its left is therefore the rule you play under. Only the cells that say **Amended** are British departures, and each of those quotes the In-House Rules. The Elite League runs the IIHF book with its own casebook, which this corpus has not read — nothing in the England Ice Hockey column should be taken as describing EIHL interpretation.
+**Read the England Ice Hockey column against the IIHF one beside it.** England Ice Hockey, the SIHA and the BUIHA run the IIHF book and amend it in writing, so **"As IIHF" is a positive statement, not a blank**: it means the In-House Rules carry no amendment to that rule, and the IIHF cell to its left is therefore the rule you play under. Only the cells that say **Amended** are British departures, and each of those quotes the In-House Rules. The Elite League runs the IIHF book with its own casebook, which has not been read here — nothing in the England Ice Hockey column should be taken as describing EIHL interpretation.
 
 | | **NHL** | **IIHF** | **England Ice Hockey** | **USA Hockey** | **Typical rec / beer league** |
 |---|---|---|---|---|---|

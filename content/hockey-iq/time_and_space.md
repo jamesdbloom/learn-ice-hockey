@@ -252,7 +252,7 @@ The trade-off is symmetrical and there is no free option:
 - **A tight gap** removes the attacker's time — they cannot look up, they cannot pick a corner, they cannot make a skilled play. But it puts space *behind* you, which is exactly where a chip-and-chase or a give-and-go wants to go.
 - **A loose gap** protects the space behind you but hands the attacker a full head-up survey and a shot in stride.
 
-Coaching guidance commonly puts a good gap through the neutral zone at **roughly two to three stick lengths**, tightening to about a stick and a half at the red line and about **one stick length** by your own blue line. Treat that as a starting point, not a law — the right gap depends on your backwards speed relative to their forwards speed, and on whether they have support arriving. [Defending the Rush](../systems/defending_the_rush.md) owns these numbers; take them from there rather than from memory. One to one and a half stick lengths in the neutral zone is a *tight* gap, not the default — see [Neutral Zone Systems](../systems/neutral_zone_systems.md).
+Coaching guidance commonly puts a good gap through the neutral zone at **roughly two to three stick lengths**, tightening to about a stick and a half at the red line and about **one stick length** by your own blue line. Treat that as a starting point, not a law — the right gap depends on your backwards speed relative to their forwards speed, and on whether they have support arriving. [Defending the Rush](../systems/defending_the_rush.md) owns these numbers and gives them in full. One to one and a half stick lengths in the neutral zone is a *tight* gap, not the default — see [Neutral Zone Systems](../systems/neutral_zone_systems.md).
 
 The read is the same one from section 2: **watch the hips, not the puck.** Hips tell you where they are actually going. See [Defending the Rush](../systems/defending_the_rush.md) for the full treatment, including gaps on odd-man rushes.
 
@@ -380,6 +380,8 @@ Learn this like a map, because it tells you where to go with the puck and where 
 - **The middle of the neutral zone.** The most heavily patrolled ice on the sheet, because both teams' structures pass through it and every trap is designed to fill it. A carrier who slows down there gets swarmed. Cross it with speed or don't cross it with the puck.
 
 The practical translation: **with the puck, move it toward space** — behind the net, weak side, point, half-wall. **Without the puck, move yourself toward where the space will be**, which is usually the weak side, and where the puck will need you next. See [Puck Support and Spacing](puck_support_and_spacing.md).
+
+![](diagram:strong-side-and-weak-side)
 
 ---
 

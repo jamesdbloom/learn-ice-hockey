@@ -82,6 +82,8 @@ Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate s
 
 **Key considerations:** Don't carry through the slot either. If no pass is on, skate behind the net to the other side rather than going through the middle.
 
+![](diagram:defender-d-to-d-behind-the-net)
+
 ---
 
 ### Carrying the Puck — Under Pressure
@@ -148,7 +150,7 @@ The two defenders work as a pair. The **strong-side defender** (the one on the s
 
 **Whether the wingers help you in the corner depends on the system your team plays** — this is a coaching choice, not a law of hockey. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) for the alternatives. The two you'll meet most often:
 
-- **Low zone collapse (zone coverage)** — the default assumed throughout these documents. Wingers stay high covering the points, and the low battle belongs to the strong-side defenceman and the centre. Don't expect winger help in the corner.
+- **Low zone collapse (zone coverage)** — the default assumed throughout. Wingers stay high covering the points, and the low battle belongs to the strong-side defenceman and the centre. Don't expect winger help in the corner.
 - **Man-on-man** — wingers follow their assigned check wherever it goes, including into the corner. Here you *will* get help low, but the points may be left open when their man goes down.
 
 Under either system, two things hold: if the puck escapes up the wall toward the strong-side winger, that's their breakout opportunity and they should engage it — that's not a corner battle. And if an opposing player drops off the point into the low battle, the winger covering them is responsible for tracking them down.
@@ -361,6 +363,8 @@ Never: Go below the circles unless somebody has taken your job at the blue line 
 
 **Key considerations:** Picture three depths in the offensive zone: (1) just inside the blue line — the default position; (2) the top of the faceoff circle — the activated position, acceptable for supporting a cycle, and still recoverable; (3) **below the circles** — not always wrong, but **always a commitment**. At depth (3) you are a fourth forward, you cannot recover if it turns over, and someone must have taken your job at the blue line *before* you go, not after. The "step down" mentioned above is only to depth (2). Going to depth (3) is a separate, deliberate decision covered under *Activating* below. When in doubt, stay at the line. [Offensive Zone Play](../systems/offensive_zone_play.md) owns the offensive-zone structure and is the authority on these three depths.
 
+![](diagram:defender-three-depths)
+
 ---
 
 ### Carrying the Puck — Under Pressure
@@ -490,7 +494,8 @@ Whichever you're in: your first job is **keeping the puck in the zone**. A power
 Key: A kill is four skaters, normally two forwards and two defencemen — you and your partner are the bottom two in every shape
 Key: Box — you and your partner low, owning the net front and the two low corners; this is the standard
 Key: Diamond — one of you takes the low point at the net front, the other becomes one of the two middle players; run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked
-Key: Wedge+1 — you are almost always in the triangle, not the chaser
+Key: Wedge+1 — you are almost always in the triangle, not the "+1" who pressures whoever has the puck
+Action: In wedge+1 the handover can make you the +1 — when the puck moves, the nearest wedge player steps out and the previous +1 drops into the triangle
 Action: Hold the box — two of you just off the crease edges — box out the net front, block shots, and clear on every opportunity; Special Teams owns the shape and how it slides
 Rule: You may ice the puck freely while shorthanded — but NHL Rule 81.6 withdraws it from a team short by a major with nobody on the penalty bench
 Rule: USA Hockey grants the shorthanded icing exemption only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1))
@@ -501,7 +506,7 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 
 - **Box** — you and your partner low, owning the net front and the two low corners. This is the standard.
 - **Diamond** — one of you takes the low point of the diamond at the net front, the other becomes one of the two middle players. Run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked.
-- **Wedge+1** — you are almost always in the triangle, not the chaser.
+- **Wedge+1** — you are almost always in the triangle, not the "+1". The single player outside the triangle pressures whoever has the puck; when the puck moves he stops and the nearest wedge player — which can be you — steps out as the new +1 while he drops in. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route the +1 takes out — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and the point — is a coaching choice, and published descriptions differ; ask which one your team runs.**
 
 In all of them: stay tight, box out the net front, block shots, and clear the puck on every opportunity — under-pressure clears are perfectly fine and you may ice the puck freely while shorthanded — **with two carve-outs worth knowing before you rely on it**: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a *major* that has left nobody on the penalty bench to come out, and USA Hockey restricts it by classification, so below Youth 15-Only / Girls 16U / High School / Adult a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) owns this rule. Don't get pulled out of position chasing the puck around the perimeter; let it come to you. The power play *wants* you to chase, because that's what opens the seam.
 
@@ -589,6 +594,8 @@ Full detail in [Defending the Rush](../systems/defending_the_rush.md). The three
 
 The universal rule: **stay on the defensive side of the puck**. Anything that puts an attacker between you and your net has already gone wrong.
 
+![](diagram:defender-two-on-one)
+
 ---
 
 ## Common Mistakes
@@ -608,7 +615,7 @@ The universal rule: **stay on the defensive side of the puck**. Anything that pu
 
 ## Key Takeaways
 
-1. One defender on the puck, one at the goalmouth. That holds under low zone collapse, the coverage these documents assume; under man-on-man you follow your check instead, and the net front belongs to whoever's man is standing there. Switch roles as the puck moves, and talk about it.
+1. One defender on the puck, one at the goalmouth. That holds under low zone collapse, the coverage assumed here; under man-on-man you follow your check instead, and the net front belongs to whoever's man is standing there. Switch roles as the puck moves, and talk about it.
 2. Gap control is the job. Start your feet early, close the middle, force them outside, pivot late.
 3. On a 2-on-1, take the pass and let your goalie have the shot — a convention, not a law, and it stops applying if the shooter is walking into the slot completely unpressured with no realistic pass available.
 4. Never carry through your own slot. Behind the net is your safe pivot.

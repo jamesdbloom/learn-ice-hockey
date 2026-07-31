@@ -1,5 +1,5 @@
 {
-  "$comment": "Reading order and layer grouping for the corpus. Derived from the corpus README's own five-layer framing — NOT alphabetical. `docs` are content collection ids (path under content/, without .md). Every markdown file under content/ must appear exactly once here; scripts/extract-meta.mjs fails the build otherwise.",
+  "$comment": "Reading order and layer grouping for the corpus. Derived from the corpus README's own five-layer framing \u2014 NOT alphabetical. `docs` are content collection ids (path under content/, without .md). Every markdown file under content/ must appear exactly once here; scripts/extract-meta.mjs fails the build otherwise.",
   "layers": [
     {
       "id": "getting-started",
@@ -8,6 +8,15 @@
       "blurb": "The only document here that assumes you have never been on the ice: how to find a session, what registration involves, which tier you belong in, and what actually happens in your first hour at the rink.",
       "docs": [
         "getting-started/getting_started"
+      ]
+    },
+    {
+      "id": "reading-diagrams",
+      "title": "Reading the Diagrams",
+      "tagline": "How to read the pictures",
+      "blurb": "The rink diagrams in this guide use a notation borrowed from published coaching material. Five minutes here makes every diagram in the rest of the guide readable at a glance.",
+      "docs": [
+        "reading-diagrams/reading_ice_hockey_diagrams"
       ]
     },
     {
@@ -26,7 +35,7 @@
       "id": "positions",
       "title": "Positions",
       "tagline": "Where do I stand and what is my job?",
-      "blurb": "The four positions, plus the bridge between them. The three skater documents share one skeleton — by zone, then by situation within each zone. The goaltender document deliberately does not.",
+      "blurb": "The four positions, plus the bridge between them. The three skater documents share one skeleton \u2014 by zone, then by situation within each zone. The goaltender document deliberately does not.",
       "docs": [
         "positions/center",
         "positions/winger",
@@ -39,7 +48,7 @@
       "id": "systems",
       "title": "Systems and Situations",
       "tagline": "How five players act as one",
-      "blurb": "Team structure in every zone and every situation. Where a system determines your job, the system is named and an alternative is given — because most breakdowns are two players working from different assumptions.",
+      "blurb": "Team structure in every zone and every situation. Where a system determines your job, the system is named and an alternative is given \u2014 because most breakdowns are two players working from different assumptions.",
       "docs": [
         "systems/breakouts",
         "systems/zone_entries",

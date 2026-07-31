@@ -18,6 +18,7 @@
  *   6. Rewrites relative `*.md` cross-links to site URLs, preserving anchors.
  */
 
+import { readFileSync } from 'node:fs';
 import { visit } from 'unist-util-visit';
 
 const WARNING_RE = /^\s*(⚠|❗|🚫)/u;
@@ -112,11 +113,91 @@ function take(parentChildren, from, count) {
   return parentChildren.splice(from, count);
 }
 
+let diagrams = null;
+function diagramManifest() {
+  if (diagrams) return diagrams;
+  try {
+    diagrams = JSON.parse(
+      readFileSync(new URL('../data/diagrams.json', import.meta.url), 'utf8'));
+  } catch {
+    diagrams = {};
+  }
+  return diagrams;
+}
+
 export default function remarkCorpus(options = {}) {
   const knownIds = new Set(options.knownIds ?? []);
 
-  return function transformer(tree) {
+  return function transformer(tree, file) {
     const children = tree.children;
+
+    // ------------------------------------------------------------ diagrams
+    //
+    // Content writes `![](diagram:<id>)` and nothing else — no alt text. The
+    // caption is a teaching sentence carrying the section's hedges, and it is the
+    // only thing a listener or a screen-reader user receives, so it is a claim.
+    // A claim written in two files eventually disagrees with itself, so it lives
+    // once in the diagram's spec and is read from the manifest here.
+    //
+    // The SVG is inlined rather than linked. That keeps it themable and printable
+    // as vector, and it is also the only form the EPUB can take without image
+    // manifest entries. Its internal ids are content-hashed by the renderer, so
+    // several diagrams on one page do not collide.
+    //
+    // An unresolved id throws. A diagram that silently renders as nothing is the
+    // failure this corpus is least able to see: the page still looks finished.
+    visit(tree, 'image', (node, index, parent) => {
+      if (!node.url?.startsWith('diagram:') || !parent || index === undefined) return;
+      const id = node.url.slice('diagram:'.length);
+      const d = diagramManifest()[id];
+      if (!d) {
+        throw new Error(
+          `unknown diagram id "${id}". Run "node scripts/build-diagrams.mjs" — ` +
+          `and if it is still unknown, the reference is to a diagram that does not exist.`);
+      }
+      let svg = '';
+      try {
+        svg = readFileSync(new URL(`../../public${d.svg}`, import.meta.url), 'utf8');
+      } catch {
+        throw new Error(`diagram "${id}" is in the manifest but ${d.svg} is missing.`);
+      }
+      // A caption is written for the document that owns the diagram, and says
+      // things like "the section" and "this document" meaning that one. The first
+      // time a diagram was referenced from anywhere else, those phrases silently
+      // re-pointed at the host — and the figcaption is emitted verbatim, so a
+      // listener heard a claim about a method the host document never states.
+      // Rather than forbid cross-references (they are how a reader finds the
+      // diagram that already exists instead of one being drawn twice), say where
+      // the picture comes from whenever it is not at home.
+      const here = String(file?.data?.astro?.frontmatter?.__id ?? file?.path ?? '');
+      const away = d.owner && here && !here.includes(d.owner.replace(/^content\//, '').replace(/\.md$/, ''));
+      // The SVG goes in its own box so a wide diagram can scroll without dragging its
+      // caption out of view — the caption is the teaching sentence, and a reader who
+      // scrolls the picture must not lose it.
+      //
+      // The figcaption is aria-hidden because the SVG's <title> already carries the same
+      // words: without this a screen reader announces the caption twice, once as the
+      // image's name and once as the caption. The <desc> is deliberately kept — it is
+      // the only spatial description a non-sighted reader gets, and the obvious fix of
+      // hiding the whole SVG would throw it away.
+      const kids = [
+        wrapper('div', { className: ['diagram-scroll'] }, [{ type: 'html', value: svg }]),
+        wrapper('figcaption', { 'aria-hidden': 'true' }, [{ type: 'text', value: d.caption }]),
+      ];
+      if (away) {
+        kids.push(wrapper('p', { className: ['diagram-source'] },
+          [{ type: 'text', value: `Diagram from ${d.owner.replace(/^content\/[^/]+\//, '').replace(/\.md$/, '').replace(/_/g, ' ')}` }]));
+      }
+      // A full-sheet diagram is 204 rink-feet wide against a half sheet's 104, so at
+      // the same column width every mark in it renders at half the size — labels land
+      // around 5 px on a phone. Scaling the glyphs up to compensate would draw players
+      // bigger than players are, so instead the figure is marked and the stylesheet
+      // gives it a minimum width and lets it scroll inside its own box. The geometry
+      // is the thing this corpus asserts; legibility is the thing CSS can fix.
+      const cls = ['diagram'];
+      if (d.half === false) cls.push('diagram--full');
+      parent.children[index] = wrapper('figure', { className: cls }, kids);
+    });
 
     // ----------------------------------------------------------- key facts
     //

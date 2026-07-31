@@ -214,19 +214,21 @@ Two separate tools, and players routinely use only one.
 
 Doing both at once is a body-position problem: face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane. When they conflict — you cannot both seal the lane and stay net-side — **net-side wins in the defensive zone**, because a pass completed twenty feet from your net is survivable and a player alone at the goalmouth is not.
 
+![](diagram:stick-in-lane-body-net-side)
+
 ### Layer, do not duplicate
 
 ```facts
 Never: Go and pressure a carrier a teammate is already pressuring
 Position: Be the second layer instead — behind and slightly to the side of them, in the space they would be beaten into
-Key: Take the layering distances from Puck Support and Spacing rather than from memory
+Key: Puck Support and Spacing has the layering distances
 Convention: System-dependent — under the low zone collapse used throughout you sink toward the slot and cover areas; in man-to-man you may have to leave the layer to follow your check to the point; a hybrid is man low and zone high
 Action: Ask your coach which coverage you play, and what the trigger is for switching
 ```
 
 If a teammate is already pressuring the puck carrier, **do not go and pressure them too.** Position yourself as the **second layer** instead: behind and slightly to the side of them, in the space they would be beaten into.
 
-**[Puck Support and Spacing → Support when defending](puck_support_and_spacing.md) has the geometry** — the converge-versus-layer choice, how far behind and how far off to the side to sit, what to read while you sit there, and when a deliberate double-team is the exception. Take the distances from there rather than from memory.
+**[Puck Support and Spacing → Support when defending](puck_support_and_spacing.md) has the geometry** — the converge-versus-layer choice, how far behind and how far off to the side to sit, what to read while you sit there, and when a deliberate double-team is the exception. The distances are set out there.
 
 What belongs here is the part that is not geometry at all:
 
@@ -255,13 +257,15 @@ Under the house default used throughout — a **2-1-2 forecheck** in the offensi
 
 Under a **1-2-2**, only one forward goes and the other two hold the middle, so on the same loose puck **one player goes and the others do not**. Under a **1-3-1 neutral zone** structure the read is different again. In your own zone, under a low zone collapse, the loose puck in the corner is taken by whoever is closest with **one teammate immediately supporting on the boards side and one covering the net front** — never two.
 
+![](diagram:loose-puck-who-goes)
+
 Find out which of these your team plays. Then, the rule that survives every system:
 
 **One player goes hard. One player supports. Nobody else joins.** Two players arriving at the same loose puck from the same angle is a turnover waiting to happen, because both are committed and neither is available.
 
 If it is genuinely ambiguous, **call it** — "I got it," "yours," "help" — and the call resolves it. Hockey's off-puck problems are disproportionately communication problems.
 
-### Then how you arrive — owned elsewhere
+### Then how you arrive — covered elsewhere
 
 ```facts
 Key: Deciding who goes is the off-puck question this document answers; how you arrive belongs to Body Contact and Battles, §10
@@ -377,6 +381,8 @@ This distinction is the whole section, so it comes first.
 
 The practical consequence: **when you get open, immediately look at the passing lane, not at your defender.** If the lane is blocked, move — often only three or four feet, changing the angle enough that the line opens. A small adjustment that opens the lane is worth more than a big burst that does not.
 
+![](diagram:unmarked-but-unavailable)
+
 And say something. A short call gives the carrier the information their eyes may not have.
 
 ### Change of speed
@@ -489,6 +495,10 @@ Skating hard at the net without the puck does three things at once:
 
 The most common goal in hockey involves someone drawing a defender to the net and someone else shooting into the space they vacated. **The drive has to be genuine.** A half-hearted glide does not move anybody. If you are going, go as if you expect the puck.
 
+![](diagram:drive-the-net-before)
+
+![](diagram:drive-the-net-after)
+
 ### Screen the goalie
 
 ```facts
@@ -514,6 +524,8 @@ To screen properly:
 - **Keep both feet outside the crease.** Outside it, incidental contact is legal if you made a reasonable effort to avoid it; initiating contact is not, inside or out.
 - **Do not stand still and watch.** A screen is also a tip threat and a rebound threat. Keep your stick on the ice.
 - **Move late.** Getting out of the way at the last instant, so the goalie picks up the puck a fraction too late, is more disruptive than a static body.
+
+![](diagram:screen-the-goalie-sightline)
 
 More detail from the other side in [Goaltender](../positions/goaltender.md), and on the crease rules in [Offensive Zone Play](../systems/offensive_zone_play.md).
 
@@ -544,6 +556,8 @@ The rink is 85 feet wide. Defences want to defend a narrow rink, so they collaps
 - In the offensive zone, if you are the far winger, **holding your position near the boards** keeps a defender out there with you. Drifting into the middle to look busy lets the defence compress, and compressed defences are much harder to score against.
 - On a rush, a wide forward forces the defenceman to respect the outside lane, which widens the gap between them and their partner — and the gap between defencemen is where the middle drive goes.
 - In the neutral zone, a stretched forward high near the far blue line pins a defenceman deep and shortens the ice your breakout has to cover. See [Neutral Zone Systems](../systems/neutral_zone_systems.md).
+
+![](diagram:width-makes-the-middle-lane)
 
 > **System note:** how much width a team wants in the offensive zone is a coaching choice. Some coaches want the far winger high and wide to protect against the counter-attack; others want them crashing the back post on every shot. Both are defensible and they are not compatible. Ask.
 

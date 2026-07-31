@@ -214,7 +214,7 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 
 **Where the naming convention breaks.** That count only works while the shape actually sits inside the opponents' end. Three of the systems below — the passive 1-3-1, the 1-4, and the retreated version of the 1-2-2 — are usually played as **neutral-zone** structures, with the back layers at or near *your own* blue line. For those, the same digits are counted from the opponents' end outwards across the whole sheet, not from their goal line, and a "1-4" describes four skaters standing about 114 feet from the net they are supposedly forechecking. They appear here because coaches call them forechecks and because a team's offensive-zone forecheck collapses into them, but the shape they describe lives in the middle third. **[Neutral Zone Systems](neutral_zone_systems.md) is the authority on all of them.**
 
-> **Which document owns what.** **This document owns the offensive-zone version** of each system — the shape while the opponents still have the puck in their own end, and the jobs of the forwards hunting it. **[Neutral Zone Systems](neutral_zone_systems.md) owns the neutral-zone version** — the same names used for the wall your five players hold across the middle third, plus gap control, regroups and how to break a trap. Where a system exists in both places, each file covers its own half and points at the other rather than repeating it.
+> **The same names live in two places, so check which one you want.** Here they mean the **offensive-zone version** of each system — the shape while the opponents still have the puck in their own end, and the jobs of the forwards hunting it. In **[Neutral Zone Systems](neutral_zone_systems.md)** the same names mean the **neutral-zone version**: the wall your five players hold across the middle third, plus gap control, regroups and how to break a trap. Where a system exists in both places, each half is written up where it belongs.
 
 **The house default throughout is a 2-1-2 forecheck** (paired with a low zone collapse in the defensive zone). It is the default here because it is the easiest to teach and because the position documents here are written around it.
 
@@ -237,6 +237,8 @@ Countered by: A quick first pass before F2 arrives, a reverse into the space F1 
 
 **Shape:** Two forwards deep in the zone, one forward high (roughly the top of the circles), two defencemen at or just inside the **offensive** blue line — the opponents' line, the one you are pinching down from.
 
+![](diagram:forecheck-212)
+
 > **Two positions, two phases — both are correct.** The blue line the defencemen stand on changes as the sequence does, and this is the commonest source of confusion between this document and [Neutral Zone Systems](neutral_zone_systems.md). **While the forecheck is live and the puck is still in their end**, your defencemen are at the *offensive* blue line, holding it and pinching selectively — that is the shape described here. **Once the opponents get the puck out and the play turns into a neutral-zone sequence**, those same two defencemen have retreated and are holding a deliberately tight gap in the middle third, back toward *your own* blue line, with the strong-side D ready to step up. That second phase is [Neutral Zone Systems](neutral_zone_systems.md)' "Pressure" section and it owns it. Same two players, same system, roughly 100 feet apart, two different moments.
 
 **The jobs:**
@@ -255,6 +257,8 @@ Countered by: A quick first pass before F2 arrives, a reverse into the space F1 
 
 **Variants worth knowing:** the **strong-side (stacked) 2-1-2**, where F1 and F2 both come from the same side to overload one corner, and the **spread 2-1-2**, where they come from opposite sides to cover both. Edmonton's 1980s dynasty is the classic historical example of the aggressive 2-1-2 generally. *(The spread version is attributed to John Tortorella's New York Rangers teams, and that attribution does hold up in contemporaneous writing: Blue Seat Blogs' systems breakdown, published while he was coaching them, says the Rangers "generate most of their 5-on-5 offense from an aggressive 2-1-2 spread forecheck **and transitional offense, meaning offense generated from the rush**" — the second half matters, because it means the forecheck was never being claimed as the sole source of that offence — and explicitly contrasts it with the variant "where F1 and F2 approach from the same lane, rather than spread out" ([The Suit, 21 February 2012](https://blueseatblogs.com/2012/02/21/overview-of-john-tortorellas-system/)). **That is a fan-analytics site, not a coaching manual or a team source** — well attested, not official.)*
 
+![](diagram:forecheck-212-stacked)
+
 ---
 
 ### 1-2-2 — the containment default
@@ -270,6 +274,8 @@ Countered by: D-to-D to shift the wall then a quick-up to a winger coming undern
 ```
 
 **Shape:** One forward deep, two forwards across the middle of the zone, two defencemen high.
+
+![](diagram:forecheck-122)
 
 Widely described in coaching material as the most common *base* structure in hockey — see the caveat on "most common" above — and the natural choice when you want to be organised rather than chaotic.
 
@@ -300,7 +306,7 @@ Options: The 1-1-3 is the conservative cousin — the third forward drops in lin
 
 The same three numbers describe two different things, which confuses almost everyone the first time.
 
-- As an **offensive-zone forecheck** — the version this document owns — the numbers count outward from the opponents' goal line, and all three layers sit inside their end.
+- As an **offensive-zone forecheck** — the version set out here — the numbers count outward from the opponents' goal line, and all three layers sit inside their end.
 - As a **neutral-zone forecheck**, the same layers are held further back: one forward pressuring near their blue line, two forwards across the middle third, two defencemen at your own blue line.
 
 **A neutral-zone 1-2-2 is not automatically "the trap."** The trap is one particular setting of it — the layers dropped back further still and, more importantly, the *intent* changed from contesting the exit to funnelling the carrier into a kill zone at the red line. A team can play a neutral-zone 1-2-2 that genuinely contests the puck and is not trapping at all. [Neutral Zone Systems](neutral_zone_systems.md) draws that distinction properly and is the authority on both.
@@ -327,6 +333,8 @@ Countered by: Chipping past the flat line and beating it with speed, banking a p
 ```
 
 **Shape:** One forward pressuring, three players spread across the width of the ice in a line, one player behind them as the last man.
+
+![](diagram:forecheck-131)
 
 Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — famously so, because it produced games where the opposing team simply stood still with the puck rather than skate into it.
 
@@ -460,6 +468,8 @@ Never: Pinch when you are reaching, when you would turn your back to the play, w
 ```
 
 A **pinch** is stepping down from the blue line along the wall to kill a rim or a chipped clear before it escapes.
+
+![](diagram:forecheck-pinch)
 
 **Pinch when:**
 - **You can arrive on contact — and on an uncontested puck, clearly first.** The standard coaching test, used identically in [Offensive Zone Play](offensive_zone_play.md), is *"if you can't arrive on contact, don't go"*: you and the puck reach the wall at the same moment, so you can either play the puck or legally seal the opposing winger against the boards. You do not have to beat the puck there — you must not be *late*, because there is only a narrow window once the puck is gone: Rule 56.1 allows the player deemed in possession to be *"checked legally, provided the check is rendered immediately following his loss of possession"* — a beat later and you may not hit the player who no longer has it (Rule 56.2) and you have turned an even rush into an odd-man one. Where the bar is higher is a **pure race for a loose puck or a dying rim with nobody contesting it**: there you need to arrive clearly first, not "probably", because there is no man to seal and second place just means you have turned your back on the play.

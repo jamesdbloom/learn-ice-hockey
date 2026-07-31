@@ -77,7 +77,7 @@ See [Risk Management](../hockey-iq/risk_management.md) for how this thinking gen
 
 Most players know offside as a thing that gets whistled against them. Learn the exact wording and it becomes a thing you use.
 
-**[Rules Primer](../foundation/rules_primer.md) owns Rule 83** — the full statement, the delayed-offside procedure, the disallowed goal, the faceoff locations and the differences between the three rulebooks. This document owns one thing: the **trail-skate drag** as a technique. Four clauses are what make that technique work, so they are set out here; for anything beyond them, go to the primer.
+**[Rules Primer](../foundation/rules_primer.md) owns Rule 83** — the full statement, the delayed-offside procedure, the disallowed goal, the faceoff locations and the differences between the three rulebooks. What this document adds is one thing: the **trail-skate drag** as a technique. Four clauses are what make that technique work, so they are set out here; for anything beyond them, go to the primer.
 
 **If you play in Britain, read the IIHF flags below as your own.** Every level of the game here — the Elite League, the NIHL, the recreational and junior game, university hockey — runs the IIHF Rule Book, and its Rule 83 is the one that will be applied to you. One local amendment touches this rule and is worth knowing: because **on-ice video review is not available in EIH or SIHA competition**, a **Coach's Challenge is not permitted** either (In-House Rules, Rules 37 and 38, amending IIHF Rule 38 and therefore Rule 83.5). A missed offside on the ice is the end of the matter; nobody is going upstairs to wipe a goal off the board twenty seconds later. See [UK and England Rules](../foundation/uk_rules.md).
 
@@ -223,6 +223,8 @@ Take the puck down the boards outside the defenceman and get to the goal line or
 - **What you need:** a support player driving the net so that when you reach the goal line you have somewhere to put it, and a third player high for the back-door or point option.
 - **When it fails:** when you go wide with nobody behind you. Then you are alone below the goal line with three defenders between you and the net, which is not an attack, it is a slow dump-in with extra steps.
 
+![](diagram:entry-wide)
+
 ### The middle drive
 
 ```facts
@@ -306,6 +308,8 @@ Convention: On the power play coaches often want four across the line, two wide 
 
 The picture you want is **three attackers crossing the line within about a second of each other, in three different lanes** — one wide on each side, one in the middle.
 
+![](diagram:entry-three-lanes)
+
 How to get there:
 
 - **The middle lane player sets the clock.** They are on the shortest route, so they must be the one who adjusts, usually by slowing or curling.
@@ -341,6 +345,8 @@ Action: Attack the line again with the puck on whoever has the best angle and th
 3. **Look back up ice** while you curl. Your eyes go to where support is coming from, not to the defender.
 4. **Slow the play** deliberately for one or two seconds, which is how long it takes your late support to arrive at speed.
 5. **Attack the line again** with the puck now in the hands of whoever has the best angle and the most speed — often not you.
+
+![](diagram:entry-delay-curl)
 
 ### Why it works
 
@@ -441,6 +447,8 @@ Fire the puck low and hard around the boards, following the curve of the corner,
 - **Careful:** a rim is not a **reverse**. A reverse goes *back against the flow* of the play, behind you, and it is a different play with a different purpose. Be precise about which one you are calling for.
 - **Risk:** a rim that is too soft dies behind the net; a rim that is too hard comes off the far boards straight to the weak-side defenceman.
 
+![](diagram:dump-hard-rim)
+
 ### 2. The soft area dump
 
 ```facts
@@ -455,6 +463,8 @@ Place the puck gently into a specific area — usually a corner — so that it d
 - **The read:** you have a forechecker arriving in roughly two seconds, and the defence has to turn and retrieve.
 - **Why:** the value is entirely in the race. A soft dump gives your chaser a stationary puck and a body to hit, and gives the retrieving defenceman no help from the puck's momentum.
 - **When it's wrong:** when your chaser is four seconds away. Then you have just given the puck to their defenceman with time.
+
+![](diagram:dump-soft-area)
 
 ### 3. The chip past a pinching defenceman
 
@@ -476,6 +486,8 @@ The defenceman steps up to meet you at or before the line. You lift or push the 
 
 Note the terminology: a **pinch** is a defenceman stepping down from the *offensive* blue line. A defenceman challenging you in the neutral zone or at their own line is **stepping up**. Both are commonly called pinches in conversation; be precise when you are describing what happened.
 
+![](diagram:dump-chip-past)
+
 ### 4. The cross-corner (north-south) dump
 
 ```facts
@@ -490,6 +502,8 @@ From one side of the ice, shoot the puck hard **diagonally** across into the far
 - **The read:** the retrieving defenceman is on your side, or the strong-side corner is crowded.
 - **Why:** it moves the puck away from the defender best placed to get it and forces their weak-side defenceman into a long retrieval on their backhand, facing his own boards. That is the single most uncomfortable retrieval in hockey.
 - **What you need:** your far-side winger to have read it and be going there. Cross-corner dumps into nobody are pure giveaways.
+
+![](diagram:dump-cross-corner)
 
 ### 5. The flip / area dump over a trap
 
@@ -506,6 +520,8 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 - **The read:** the opposition are congesting the neutral zone — a **trap**, most commonly a **1-3-1** neutral zone structure with one forechecker, three players across the middle and one back — and there is no route along the ice.
 - **Why:** a flip does not have to get through the three-man wall; it goes over it. It also hangs long enough for your forwards to run underneath it.
 - **How:** open the blade, get under the puck, and aim to land it **past** the defence but **before** the goal line so it does not carry through for icing. Beware: if your team is not shorthanded and the puck crosses the goal line untouched from behind the centre red line, that is **icing**. See the [Rules Primer](../foundation/rules_primer.md) for the full icing rule, including hybrid icing.
+
+![](diagram:dump-flip-over-trap)
 
 ### How the trapezoid shapes where you aim
 
@@ -535,6 +551,8 @@ That gives you a simple aiming rule where the trapezoid applies. **Dump to the c
 If you must put it behind the net, put it there **hard** — the goalie can play it, but stopping a rocketing puck and distributing it cleanly is a much harder job than corralling a soft one.
 
 **Where the trapezoid applies:** the NHL (since 2005-06), the KHL, and IIHF play (IIHF Rule 27.7, with the area defined as 6.80 m along the goal line widening to 8.60 m at the boards). **In England and Wales, treat it as unsettled.** The IIHF book is the one in force and the 2025-26 In-House Rules do not amend Rule 27 — but England Ice Hockey's own *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"*, and that edition is 2024-25 while the current In-House Rules are silent on it. For you as the attacking team the safe assumption runs the other way: plan as though their goalie **may** retrieve the puck. Ask your league, and look behind the net to see whether the lines are painted at all. **Most rec, beer-league and youth associations outside Britain do not use it.** In those leagues a puck-handling goalie can go anywhere behind his goal line, which flips the advice: rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand.
+
+![](diagram:dump-and-the-trapezoid)
 
 *Flagged:* two NHL rules give different trapezoid dimensions at the goal-line end — Rule 27.8 says the lines *"begin six feet from either goal post"*, while Rule 1.8 describes the markings as seven feet outside each goal crease (eight feet from each goal post). Rule 1.8 matches the IIHF's 6.80 m figure, so 27.8's text appears to be stale. Nothing about how you play changes either way; the corners are outside it under any reading.
 

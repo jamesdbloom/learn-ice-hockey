@@ -3,8 +3,8 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
 > IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
-> [UK and England Rules](../foundation/uk_rules.md). This document owns the shorthanded-icing
-> exemption and its carve-outs for the whole guide, and **neither carve-out is IIHF's** — read
+> [UK and England Rules](../foundation/uk_rules.md). The shorthanded-icing exemption and its
+> two carve-outs are set out in full below, and **neither carve-out is IIHF's** — read
 > **"You may ice the puck freely"** below before you build a kill around it.
 >
 > **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Faceoffs](faceoffs.md) · [Zone Entries](zone_entries.md) · [Offensive Zone Play](offensive_zone_play.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Goaltender](../positions/goaltender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Game Management](game_management.md)
@@ -87,6 +87,8 @@ Risk: With only one player back, a lost puck at the blue line is an immediate od
 
 That is one point player, not two. First units are widely **described as** running the 1-3-1 with **four forwards and a single defenceman**, and where they do, that defenceman is the point — but treat the personnel as coaching-material consensus rather than a measured prevalence. **No published count of NHL power-play deployments exists.** The *shape* is definitional; how many forwards a coach puts in it is a choice.
 
+![](diagram:pp-131)
+
 **The jobs:**
 
 - **Point (the "quarterback").** Usually the lone defenceman. You are a distributor first and a shooter second. Walk the line laterally — moving three metres sideways changes the angle of every passing lane in the zone and forces the killers' heads to turn. Your shot exists mainly as a threat: the moment the kill stops respecting it, they stop stepping out to you, and the half-walls lose their space. Shoot for tips and rebounds, not to beat the goalie clean through four bodies.
@@ -118,6 +120,8 @@ Risk: It is far from the net, and goalies and killers are most comfortable when 
 
 **How far the flanks drop is the one real variation.** In the **classic** version the apex is a forward in the middle of the blue line with **both defencemen out on the flanks**, still close to the line — the arc is shallow. In the **modern** version the lone defenceman takes the apex and two forwards drop right down to the **tops of the faceoff circles**, where the one-timer lives — a much deeper arc. Both are umbrellas. What neither is, is three players strung out **level** across the blue line: with no depth between them every pass is short and lateral and the kill barely has to move.
 
+![](diagram:pp-umbrella)
+
 **There is no bumper in a true umbrella.** The middle of the slot is deliberately vacated so the high players have clean shooting lanes into it.
 
 **The jobs:** the three high move the puck side to side looking to get it to the middle for a shot with a lane; the two low screen, tip and collect rebounds. Everything is aimed at getting a puck through to the net with a body in front of the goalie.
@@ -142,6 +146,8 @@ Risk: It produces fewer shots than other shapes; cycling without ever pulling th
 **The shape:** **four players loaded onto one side of the ice** — typically a player below the goal line, one in the corner or low circle, one on the half-wall and one at the point on that side — with the fifth player weak side as a release valve and safety.
 
 **The jobs:** cycle the puck relentlessly in a small area, creating repeated 3-on-2s along the strong-side wall until a killer over-commits, then either attack the resulting seam or swing the puck cross-ice to the lone weak-side player for a shot with the goalie moving.
+
+![](diagram:pp-overload)
 
 **Strengths:** outnumbers the kill locally; generates chances from deception and short passes rather than long ones; excellent against a passive box that will not come out to the wall.
 
@@ -187,6 +193,8 @@ Read: Choose it with no puck-moving defenceman, when protecting a lead, or befor
 **The shape:** **two defencemen at the points** and **three forwards low** — one at the net front, one in each circle or corner. This was the default power play for decades and remains extremely common in rec, beer-league and youth hockey.
 
 **The jobs:** the points shoot and keep pucks in; the three forwards work the low area, screen, tip and hunt rebounds; the puck generally goes low-to-high and back.
+
+![](diagram:pp-2-3)
 
 **Strengths:** it is safe. Two defencemen at the line means very few shorthanded breaks and very good puck retrieval on missed shots. It is also the easiest shape to teach and the least dependent on individual skill — everyone knows where to stand.
 
@@ -293,7 +301,7 @@ The **walk-down** is the half-wall player skating the puck down toward the goal 
 ```facts
 Key: This is where most amateur power plays die — at the blue line, not in the zone
 Priority: A clean, controlled entry is worth far more than a fast one; enter with possession and you have ninety seconds of pressure
-Key: Zone Entries owns the entry toolkit and the tracked values — read the figures there rather than restating them
+Key: Zone Entries owns the entry toolkit and the tracked values — read the figures there
 Action: Use the drop pass — it changes the carrier without changing the speed of the attack and makes the defending line commit to the wrong player
 Action: Swing one or two players back to gather speed and receive already moving forward; the single swing is less predictable than the double
 Action: Dump to a spot, not a player, and rim away from the goalie's trapezoid so a defender retrieves under pressure
@@ -306,7 +314,7 @@ Risk: A puck turned over at the offensive blue line with four teammates ahead of
 
 **The entry toolkit itself — carry, chip, dump, delay, the drive-and-drop, and the data on what each is worth — is in [Zone Entries](zone_entries.md), and everything there applies here.** What changes with the extra man is only this:
 
-1. **A clean, controlled entry is worth far more than a fast one.** Enter with possession and set up, and you have ninety seconds of pressure. Dump and lose the race and you have ten, then you do it all again. (The tracked data in [Zone Entries](zone_entries.md) still favours the carry-in on the power play — roughly two and a half times the shots of a dump-in — but by a **narrower** margin than at even strength, because the extra man also makes dump-in retrievals easier. Read the figures there rather than restating them; the advantage is real, it just is not larger than usual.)
+1. **A clean, controlled entry is worth far more than a fast one.** Enter with possession and set up, and you have ninety seconds of pressure. Dump and lose the race and you have ten, then you do it all again. (The tracked data in [Zone Entries](zone_entries.md) still favours the carry-in on the power play — roughly two and a half times the shots of a dump-in — but by a **narrower** margin than at even strength, because the extra man also makes dump-in retrievals easier. Read the figures there; the advantage is real, it just is not larger than usual.)
 2. **You do not get many attempts.** A failed entry — dump, lose the race, regroup, come again — burns a serious slice of a 120-second advantage. Two or three of those and the penalty is over. *(There is no measured figure for the cost of a failed entry; treat this as calibration, not data.)*
 3. **The drop pass is the signature power-play entry**, because it changes the carrier without changing the speed of the attack and makes the defending line commit to the wrong player. **Arik Parnass's** tracking for the Special Teams Project across six NHL teams in 2015-16 found drop-pass entries produced **0.84 shot attempts per entry versus 0.70** for other entries — but took **15.5 seconds to execute versus 12.6**, which cancels most of the gain. (*His three categories run drop 15.49 s, regular 12.56 s, stretch pass 10.37 s. 12.6 is the figure that pairs with the 0.70, because he removed stretch-pass results from the non-drop bucket; comparing the drop against the stretch's 10.4 s instead is not like for like.*) His conclusion is the sensible one, and it is about your own team rather than theirs: keep **both** a polished regular scheme and a drop scheme, and **go to the drop when your primary scheme is in a slump.** *(Decade-old, small-sample study — indicative, not settled.)* Every kill now expects it, and a drop stolen at the red line is a shorthanded breakaway.
 4. **The swing** — one or two players arcing back to gather speed and receive already moving forward — solves the entry's hardest problem: arriving at the line with speed and the puck at once. The single swing (one forward swings, one stays wide) is less predictable than the double.
@@ -375,6 +383,8 @@ Rule: Under the In-House Rules a fighting major in NIHL, NIHL1 or NIHL2 in the l
 A two-man advantage is a different game, not a better power play. It should almost always produce a goal, and when it does not it is nearly always because the unit played it like a 5-on-4.
 
 **Why it is different:** three killers can defend a triangle. They will sit in a tight triangle around the slot — usually two low in front of the net and one high — concede everything outside it, and block shots. **Sustained pressure on the puck is not available to them**, because every killer who leaves the triangle opens a hole nobody can fill. That does not mean you will never be touched: a three-man kill will still jump a bobbled reception, close hard on anyone who walks into the slot, and throw a stick or a body at a shooter. What it means is that **nobody is coming to hunt you on the perimeter** — so you have time out there that does not exist at 5-on-4, and the only way to lose it is to hurry.
+
+![](diagram:pp-spread-5on3)
 
 **How to play it:**
 
@@ -448,6 +458,8 @@ Countered by: A 1-3-1 — nobody in a box is assigned to the middle of the slot,
 
 **A box has no single "top".** Two forwards, side by side, is the whole point. If you find yourself describing "the top of the box", you are describing a diamond.
 
+![](diagram:pk-box)
+
 **The jobs:**
 
 - **High forwards:** deny the point players time and space, stay in shooting lanes, and never both drift to the same side. Your inside shoulder should be turned so you can see your point man and the middle at once.
@@ -475,6 +487,8 @@ Risk: The single low player faces a net-front presence and a backdoor arriver at
 
 **Why it exists:** because a box leaves the bumper unmarked. The diamond's two middle players squeeze the middle of the slot from either side, so the 1-3-1's bumper can be accounted for. Coaches also use it against a three-high **umbrella**, where the apex can pressure the middle point man who would otherwise have a free shot.
 
+![](diagram:pk-diamond)
+
 **The jobs:**
 
 - **Apex** (often the centre, but this varies by team): pressure the point player, take away the middle shooting lane, and do not get walked around. You are the only player up there — if you overcommit, the point is uncovered.
@@ -489,21 +503,23 @@ Risk: The single low player faces a net-front presence and a backdoor arriver at
 
 ```facts
 Position: Three killers in a tight triangle around the net — two defencemen just off the crease edges, one forward at the mid-to-high slot
-Action: The wedge stays tight, protects the slot and goalmouth, blocks shots and rotates as a connected unit; it does not chase
-Action: The +1 applies straight-line pressure outward from the net — make every possession uncomfortable, do not try to win the puck
+Action: The wedge stays tight, protects the slot and goalmouth, blocks shots and does not chase — the players rotate through the shape, the shape holds its ground
+Action: The +1 pressures whoever has the puck, by whichever route your coach teaches — make every possession uncomfortable, do not try to win the puck, never end up trailing it round the outside
 Technique: When your pressure forces the puck to move, the nearest wedge player becomes the new +1 and you drop into the triangle
 Key: The exchange is the hard part — everyone must know who is out and who is in, every second
 Countered by: A +1 who chases without purpose; you are then killing with three players
 Risk: High cognitive load makes it a poor choice for a young or ad-hoc unit
-Convention: Coaching material describes it as popular at NHL level, but no league-wide count is published, so treat the prevalence claim as unverified
+Convention: Coaching material describes it as popular at NHL level, but no league-wide count is published, so treat prevalence as unverified; published descriptions also differ on the +1's route — straight out from the goal, sweeping across the top of the zone, or roaming — so ask your coach
 ```
 
-**The shape:** **three killers hold a tight triangle** around the net — two defencemen just off the crease edges, one forward at the mid-to-high slot — while the **fourth player, the "+1", chases the puck** around the perimeter.
+**The shape:** **three killers hold a tight triangle** around the net — two defencemen just off the crease edges, one forward at the mid-to-high slot — while the **fourth player, the "+1", pressures whoever has the puck**. **Exactly how he does that is where published descriptions part company, so ask your coach which one you are running:** some describe him activating in a straight line out from the goal towards the puck carrier; some have him sweeping laterally across the top of the zone, above the circles, to keep the power play on one side of the ice; some have him roaming more freely, challenging on the wall or at the point. What every description agrees on is the handover below — and that a +1 who simply follows the puck round the perimeter has broken the shape rather than run it. When the puck moves, he stops and the nearest wedge player steps out as the new +1; a +1 who chases is the counter to this system, not the system, and leaves you killing with three players.
+
+![](diagram:pk-wedge-plus-1)
 
 **The jobs:**
 
-- **The wedge (three players):** stay tight, protect the slot and the goalmouth, block shots, and rotate as a connected unit. You do not chase. Your shape barely moves.
-- **The +1:** apply straight-line pressure to whoever has the puck, working outward from the net. Your job is to make every possession uncomfortable, not to win the puck.
+- **The wedge (three players):** stay tight, protect the slot and the goalmouth, block shots, and rotate as a connected unit. You do not chase. The players rotate through the shape; the shape itself holds its ground.
+- **The +1:** pressure whoever has the puck, by whichever route your coach teaches — see above; the sources differ. Your job is to make every possession uncomfortable, not to win the puck, and never to end up trailing it round the outside.
 - **The exchange:** when your pressure forces the puck to move, the nearest wedge player becomes the new +1 and you drop into the triangle. This handover is the hard part and the reason the system needs practice — everyone must know who is out and who is in, every second.
 
 **Strengths:** it protects the highest-danger ice absolutely while still applying pressure, which is why it is **commonly used at NHL level** — [The Coaches Site](https://members.thecoachessite.com/article/explained-wedge-penalty-kill-formation) describes it as popular with most NHL clubs, though **no league-wide count of who runs what is published, so treat the prevalence claim as unverified.** It is very hard for a 1-3-1 to get a clean look at the middle. It creates turnovers and therefore shorthanded chances.
@@ -559,6 +575,10 @@ Convention: The 1-1-2 is commonly described as a current NHL default for neutral
 - **The 1-1-2** — F1 up on the puck, F2 layered behind on the *same* side forming a wall parallel to the boards, two defencemen abreast near the line. Aggressive without over-committing; it bleeds clock and forces contested entries. Coaching material commonly describes it as a current NHL default **for neutral-zone pressure**, which is a different decision from the in-zone shape above, not a competing one — and **that prevalence claim is not independently verified.** **Weakness:** quick direction changes and drop passes at the red line slide underneath F1 and F2 at once.
 - **The retreating box (2-2)** — two forwards abreast, two defencemen abreast, all four backing up together. Purely reactive, safe, easy, and vulnerable to drop passes and direction changes.
 - **Tandem pressure** — two forwards take turns attacking the carrier, one peeling off as the other arrives. Exhausting to play against and exhausting to play; if both get beaten at once the kill is a 2-on-2 with no support.
+
+![](diagram:pk-nz-1-3)
+
+![](diagram:pk-nz-1-1-2)
 
 #### Killing the entry — what all of this is for
 

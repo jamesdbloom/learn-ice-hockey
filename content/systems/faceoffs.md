@@ -521,6 +521,8 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 - **Boards-side defenceman** — behind and outside the boards-side winger, near the hash marks, ready to retrieve anything pulled back to the wall or to get behind the net.
 - **Slot defenceman** — in the slot in front of the goalie, responsible for the net front and for blocking a point shot.
 
+![](diagram:faceoff-dzone-alignment)
+
 **Common variation worth knowing:** many teams set their defencemen on their **"off" sides** for defensive-zone draws — the right-shot D on the left boards and vice versa — so that a puck pulled back to the wall arrives on their forehand and the breakout pass up the boards is a forehand pass. It costs you a little on defensive coverage and gains you a lot on the exit. Ask which your team does.
 
 **On a clean win:**
@@ -534,10 +536,14 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 - **Slot defenceman holds the net front and blocks the lane.** Do not chase the puck to the point; your winger has it.
 - **Boards-side defenceman takes the strong-side corner or half-wall** (the **half-wall** is the boards level with the faceoff dot — about 20 feet out from the goal line (Rule 1.9), so barely a third of the way to the blue line, which sits 64 feet out (Rule 1.5). It is *not* the same thing as the *point*, which is up at the blue line).
 
+![](diagram:faceoff-dzone-clean-loss)
+
 **On a tie-up (the most common outcome):**
 - **Everyone jumps.** A tied-up draw is a loose puck in a two-foot area with eight players around it, and it belongs to whoever moves first. This is the single most under-coached moment in hockey: half the players on the ice wait to see what happens.
 - The **inside winger** and the **boards-side defenceman** are usually the two closest bodies and should be the two who attack it.
 - **Call it.** "Loose!" from anyone with eyes on the puck. See [On-Ice Communication](../foundation/on_ice_communication.md).
+
+![](diagram:faceoff-dzone-tie-up)
 
 ### Offensive-zone draws
 
@@ -559,6 +565,8 @@ The one place in hockey where you get to run a genuine set play with a stationar
 - **Inside winger** — inside hash mark, the most common recipient of a quick pull-back for a shot from the circle, and the primary net-front driver if the draw is lost.
 - **Strong-side defenceman** — at the point on the draw side, **feet already set, stick already loaded**. This is the shooter.
 - **Weak-side defenceman** — at the far point, holding the line as the safety against a counterattack.
+
+![](diagram:faceoff-ozone-alignment)
 
 **On a clean win:** run the set play (see below). The important thing is that the shooter's feet are already planted — this is one of the very few shots in hockey where you don't have to receive, settle and set. That is worth more than a slightly better shooting angle.
 
@@ -583,6 +591,8 @@ The lowest-stakes draws, and the ones most worth taking a risk on.
 
 - **Centre** in the dot; **both wingers** wide, level with or just behind the dot, in their lanes.
 - **Both defencemen** back toward your own blue line, one either side of the middle, ready to defend a rush if the draw goes the wrong way.
+
+![](diagram:faceoff-neutral-zone)
 
 **On a win:** advance the puck immediately. Neutral-zone possession is worth having but it decays fast — **Daniel Weinberger**, writing at Hockey Graphs, found that neutral-zone faceoff wins mostly turn into **dump-ins**, and that possessions containing a dump-in produced 5.5 shots and 0.17 **expected goals** per 100 possessions versus 32 shots and 0.68 expected goals for those without one. (*Expected goals* is a model estimate of how many goals an average shooter would score from those shots, given where and how they were taken — it values chance quality, not just chance count.) **⚠️ Note the league before you carry these numbers anywhere.** Weinberger's data is **InStat tracking of the 2018-19 Swiss National League**, not the NHL — he says so in the article — so this is the one set of figures in this document that is not measured on the league the rest of it is written to. **The four figures are quoted exactly as the article gives them** — but note what a roughly six-fold gap implies: this is one author's tracked sample of possessions following neutral-zone faceoff wins in one league in one season, not a league-wide measurement, and part of the gap is selection rather than causation (a possession that never generated a controlled entry is *why* it ended in a dump-in). Treat the direction as solid and the multiple as approximate. A won neutral-zone draw that ends in a dump-in has produced very little. Look to carry or pass into the zone with control. See [Zone Entries](zone_entries.md).
 
@@ -789,6 +799,8 @@ Key: Defending against a pulled goalie, winning the draw effectively ends the ga
 - **Six skaters changes the alignment entirely.** The extra attacker usually goes to the net front or the high slot, and both defencemen are at the points. The centre is under maximum pressure to win it back cleanly, because there is no safe outlet and no recovery from a loss.
 - **Defending against a pulled goalie:** win the draw and the game is effectively over — you get an empty net at the other end. This is the single highest-leverage faceoff in hockey and it should get the most practice time of any of them, which in most organisations it does not.
 
+![](diagram:faceoff-goalie-pulled)
+
 ---
 
 ## How to Practise Faceoffs
@@ -861,6 +873,6 @@ See [Practice and Development](../off-the-ice/practice_and_development.md) for h
 
 *Technique and coaching: [How to Win Faceoffs in Hockey — How To Hockey](https://howtohockey.com/how-to-win-faceoffs-in-hockey-face-off-tips/) · [12 Pro Face-Off Tips — How To Hockey](https://howtohockey.com/12-pro-face-off-tips/) · [Advanced Faceoff Moves and Strategies — My Hockey Schools](https://myhockeyschools.com/articles/advanced-faceoff-moves-and-strategies-deception-and-reading-opponents) · [Flipped Handed Faceoffs — Hockey's Arsenal](https://hockeysarsenal.substack.com/p/flipped-handed-faceoffs) · [In a Quest for Face-off Ambidexterity — Shapshots Hockey](https://www.shapshotshockey.com/p/in-a-quest-for-face-off-ambidexterity) · [10 Offensive Zone Faceoff Plays — Ice Hockey Systems](https://www.icehockeysystems.com/blog/coaching-tips/10-offensive-zone-faceoff-plays) · [Faceoffs: Defensive Zone — Weiss Tech Hockey](https://weisstechhockey.com/faceoffs-defensive-zone/)*
 
-*Verification note — the IIHF and UK layer, 29 July 2026. **Every IIHF claim in this document has now been read in the IIHF Official Rule Book 2025/26 itself rather than carried forward**; a previous review round flagged all of them as unverified. All of them hold, including the two most load-bearing: that a face-off violation is a warning to the team rather than an ejection (IIHF Rules 76.4, 76.6, 76.7) and that winning the draw with the skates is itself a violation (IIHF Rule 76.3(VI)). Three things the earlier text did not record were found in the same pass and are now stated where they belong: the IIHF book has **no post-icing face-off-violation carve-out** of the kind NHL Rule 76.4 provides, because its first violation is always a warning; IIHF Rule 81.4 lists a **fourth** exception to the post-icing substitution ban (a player with a broken skate) that the NHL's list does not have; and IIHF Rule 81.6 grants the short-handed icing exemption **without** the NHL's major-penalty carve-out. **The IHUK In-House Rules 2025-26 Rev 1 were searched in full and amend nothing about face-offs** — the only occurrence of the phrase in that document is the team-sheet deadline ("no later than 20 minutes before the scheduled face-off"), which [UK and England Rules](../foundation/uk_rules.md) owns. Silence in the In-House Rules means the IIHF rule stands unamended, so everything above marked "IIHF" is the operative rule in England, Scotland and university hockey. Nothing here is attributed to the EIHL Casebook, which this corpus has not obtained.*
+*Verification note — the IIHF and UK layer, 29 July 2026. **Every IIHF claim in this document was read in the IIHF Official Rule Book 2025/26 itself**, not taken at second hand. All of them hold, including the two most load-bearing: that a face-off violation is a warning to the team rather than an ejection (IIHF Rules 76.4, 76.6, 76.7) and that winning the draw with the skates is itself a violation (IIHF Rule 76.3(VI)). Three further IIHF/NHL divergences came out of the same reading and are stated where they belong: the IIHF book has **no post-icing face-off-violation carve-out** of the kind NHL Rule 76.4 provides, because its first violation is always a warning; IIHF Rule 81.4 lists a **fourth** exception to the post-icing substitution ban (a player with a broken skate) that the NHL's list does not have; and IIHF Rule 81.6 grants the short-handed icing exemption **without** the NHL's major-penalty carve-out. **The IHUK In-House Rules 2025-26 Rev 1 were searched in full and amend nothing about face-offs** — the only occurrence of the phrase in that document is the team-sheet deadline ("no later than 20 minutes before the scheduled face-off"), which [UK and England Rules](../foundation/uk_rules.md) owns. Silence in the In-House Rules means the IIHF rule stands unamended, so everything above marked "IIHF" is the operative rule in England, Scotland and university hockey. Nothing here is attributed to the EIHL Casebook, which has not been obtained.*
 
 *Unverified / flagged in the text: the reference frame for the "right shot = right side" strong-side convention is not stated explicitly by the coaching sources that assert it. One source claimed a team went from 24th to 1st in faceoff percentage after adopting flipped-hand draws; NHL official data does not support that claim, so it is not repeated here.*

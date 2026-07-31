@@ -11,7 +11,7 @@
 
 ## Overview
 
-Every other document in this project tells you what your job is. This one tells you how that job changes depending on the score, the clock and who is on the ice with you. A 2-1 lead with four minutes left is a different sport from a 2-1 lead in the first period, and the player who knows the difference is worth more than the player who only knows their assignments.
+Everything else here tells you what your job is. This one tells you how that job changes depending on the score, the clock and who is on the ice with you. A 2-1 lead with four minutes left is a different sport from a 2-1 lead in the first period, and the player who knows the difference is worth more than the player who only knows their assignments.
 
 **Game management** is the layer above systems: reading the situation and adjusting the *risk* you take, the *speed* you play at, and the *decisions* you make, without abandoning the structure your team plays. Almost none of it is written in the rulebook. Almost all of it is decided in the two seconds before you touch the puck.
 
@@ -89,7 +89,7 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 
 **1. Manage the puck.** The single biggest lever. With a lead, the value of a possession is not "can I create a chance" but "can I make sure they don't get it back in a dangerous place." That means:
 
-- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) owns it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures rather than restating them here.
+- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) owns it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures.
 - No blind D-to-D passes across your own goalmouth.
 - No stretch passes you're not sure about. An interception at your own blue line is worse than a chip out.
 
@@ -103,7 +103,7 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 
 **5. Win the defensive-zone draws.** A defensive-zone faceoff loss with three minutes left and a one-goal lead is the most dangerous single event in the game — it hands the opposition immediate set-up possession in your end. Have your best faceoff man out there, have a clear plan for the loss as well as the win, and know your wall assignments. See [Faceoffs](faceoffs.md).
 
-**6. Keep forechecking — just choose the *right* forecheck.** This is a system choice, not a rule of hockey. The house default across these documents is a **2-1-2 forecheck** (two forwards pressuring in the offensive zone, one high, two defencemen at the line). Many teams switch with a lead to a **1-2-2** (one forechecker steers the puck to one side; two forwards hold the neutral-zone line) or a **1-1-3** (one chaser, one mid-ice support, three players across the neutral zone — commonly called a trap). Under a 1-2-2 or 1-1-3, your job as the first forward in is not to win the puck, it's to take away one side of the ice so your teammates can intercept the exit. **Find out which one your team goes to with a lead, and when.** Turning up as an aggressive F1 while the other four are trapping is how leads get thrown away.
+**6. Keep forechecking — just choose the *right* forecheck.** This is a system choice, not a rule of hockey. The default assumed here is a **2-1-2 forecheck** (two forwards pressuring in the offensive zone, one high, two defencemen at the line). Many teams switch with a lead to a **1-2-2** (one forechecker steers the puck to one side; two forwards hold the neutral-zone line) or a **1-1-3** (one chaser, one mid-ice support, three players across the neutral zone — commonly called a trap). Under a 1-2-2 or 1-1-3, your job as the first forward in is not to win the puck, it's to take away one side of the ice so your teammates can intercept the exit. **Find out which one your team goes to with a lead, and when.** Turning up as an aggressive F1 while the other four are trapping is how leads get thrown away.
 
 > **F1 / F2 / F3 are roles, not people.** They are defined by order of arrival at the puck, not by whether you are a centre or a winger.
 
@@ -868,7 +868,7 @@ Action: Have a reset — a breath at the faceoff dot, a tap of the pads, a look 
 Convention: That most amateur penalties are frustration-driven is coaching experience, not data — no published study codes penalty motive
 ```
 
-*This section carries the full treatment of what is and is not known about why amateur players take penalties. [Risk Management](../hockey-iq/risk_management.md#the-far-more-common-case) points here rather than restating it, and the claim should never travel without the qualification set out below.*
+*This section carries the full treatment of what is and is not known about why amateur players take penalties; [Risk Management](../hockey-iq/risk_management.md#the-far-more-common-case) sends you here for it. The claim below should never be quoted without the qualification attached to it.*
 
 The standard coaching observation is that **the great majority of penalties in amateur hockey are frustration penalties**: retaliation, slashing after losing a battle, cross-checking after a whistle, arguing with an official. There is published data on youth-hockey penalties, and it partly supports this and partly does not. It is worth separating the two, because the coaching advice below survives either way.
 

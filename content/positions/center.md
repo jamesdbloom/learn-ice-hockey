@@ -120,11 +120,13 @@ Action: When you leave the slot for the corner, the weak-side winger collapses t
 
 The wingers stay high covering the points (the areas near the blue line where the opposing defensemen normally stand), and the weak-side defender holds the net front. You are the flexible low support that links the corner battle and the slot.
 
-> **This describes a low zone collapse (zone) coverage system** — the most common, and the one assumed throughout these documents. It is a coaching choice, not a rule of hockey. Under **man-on-man**, every player tracks an assigned opponent and the wingers *do* follow their check into the corner; under a **hybrid**, it's man-on-man below the dots and zone above. Your job changes materially between them. Find out which one your team plays before your first shift — see [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
+> **This describes a low zone collapse (zone) coverage system** — the most common, and the one assumed throughout. It is a coaching choice, not a rule of hockey. Under **man-on-man**, every player tracks an assigned opponent and the wingers *do* follow their check into the corner; under a **hybrid**, it's man-on-man below the dots and zone above. Your job changes materially between them. Find out which one your team plays before your first shift — see [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
 
 **Goal:** Help the defenders clear the zone — either by winning the puck in the corner, or by denying the slot to opposing forwards.
 
 **Key considerations:** Your responsibility shifts with the puck. Watch the play and move with it. The wingers are not coming down to help in the corner unless they're following their own man — that role belongs to you. If you stay high in the slot when the puck is in the corner, the strong-side defender is alone against the puck carrier and is likely to lose the battle. When you leave the slot to help in the corner, the **weak-side winger** should collapse from the point to cover the high slot in your absence. Anyone with a clear view can call the rotation (you, the weak-side defender, or the winger themselves) — speak up early so the slot is never empty.
+
+![](diagram:centre-low-zone-collapse)
 
 **Exception — strong-side winger has walked down with their man:** If the opposing strong-side defenseman has come down off the point and the strong-side winger has followed them, you have extra help low. Read the situation: if your defender and the winger have the puck battle covered, hold the slot rather than committing all the way to the corner.
 
@@ -147,6 +149,8 @@ Key: If you are too high when your defenceman gets the puck, they have no safe o
 *This is the situation where your team is about to have the puck: your defencemen are winning it or have won it, and you are getting open to receive. It is not defensive coverage — that is the section above.*
 
 **Where to be:** Swinging low in the defensive zone — **inside the faceoff dots and below the hash marks**, which in practice means in your strong-side faceoff circle rather than out on the boards. The boards are the strong-side winger's ice; if you drift out there, one opposing player can cover the two of you and the defenceman loses the middle-lane option entirely. Move toward where the puck is going. Full detail in [Breakouts](../systems/breakouts.md), which is the authority for breakout positioning.
+
+![](diagram:centre-swing-low)
 
 > **Low support is a coaching choice, and the authority says so.** The five-role structure described here belongs to the **conventional swing breakout**, the version taught by most development programmes and assumed throughout this guide. The two alternatives you will actually meet: under a **centre fly** (also "centre high") you deliberately leave the zone early up the middle to stretch the ice, and the **weak-side winger drops in** to take the low support job instead; under a **flat or spread breakout** both wingers hold higher near the blue line and the exit is made with longer passes. **Find out which one your team plays** — the failure that produces most weekend breakdowns is a centre flying in a system where the wingers are holding high, leaving nobody underneath the puck at all. See [Breakouts](../systems/breakouts.md).
 
@@ -419,7 +423,9 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 
 ```facts
 Position: In a box you are one of the two high players, each responsible for one point — there is no single "top" to drift into
-Position: In a diamond you are usually the single apex, pressuring the point; in wedge+1 you are frequently the puck-chasing "+1"
+Position: In a diamond you are usually the single apex, pressuring the point; in wedge+1 you are frequently the "+1"
+Action: As the +1, pressure whoever has the puck; when the puck moves the nearest wedge player takes over as the new +1, so you never follow it round
+Options: Your route out as the +1 is a coaching choice — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and point; ask which one your team runs
 Action: Take the high forward spot at the mid-to-high slot, block shooting lanes and clear whenever you get it; Special Teams owns the shape
 Never: Get pulled out of position chasing the puck around the perimeter
 Rule: A shorthanded team may send the puck down the ice without being called for icing — USA Hockey Rule 624(b)(1) grants that only from Youth 15-Only, Girls 16U, High School and Adult up
@@ -431,7 +437,7 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 
 - **Box** — the standard. You are **one of the two high players**, alongside a winger, each responsible for one point. There is no single "top" of a box, so don't drift into the middle looking for one.
 - **Diamond** — used against a 1-3-1. Here there *is* a single apex and it is usually you: pressure the point while the middle two take the half-walls and someone accounts for the bumper.
-- **Wedge+1** — you are frequently the "+1", the single puck-chaser outside the triangle.
+- **Wedge+1** — you are frequently the "+1", the single player working outside the triangle. That job is **pressure, not pursuit**: get at whoever has the puck and make every possession uncomfortable. When the puck moves you stop, and the nearest wedge player steps out as the new +1 while you drop into the triangle. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route you take to the puck is your coach's choice, not a law** — published descriptions differ, some sending the +1 straight out from the goal towards the carrier, some sweeping him laterally across the top of the zone above the circles, some letting him roam to the wall and the point. Ask which one you are running.
 
 Whichever shape you're in: stay disciplined, don't get pulled out of position chasing the puck around the perimeter, block shooting lanes, and clear the puck whenever you get it — you may ice it freely while shorthanded, **but check your rule set before you build the kill on it.** USA Hockey grants the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)); below those levels a shorthanded team is called for icing like anyone else. NHL Rule 81.6 also withdraws it from a team shorthanded by a *major* that has left nobody on the penalty bench to come out. [Special Teams](../systems/special_teams.md) owns this rule. Know which shape you're running *before* the puck drops; a box and a diamond ask very different things of you.
 
@@ -470,6 +476,8 @@ Action: Once you're set, become the centre again — cover the high slot and sup
 ```
 
 When your team loses the puck going the other way, the centre normally has the single most important backcheck assignment in hockey: **the middle lane**.
+
+![](diagram:centre-backcheck-middle-lane)
 
 > **Which backchecker owns which lane is a coaching choice, not a law.** The positional version described here — centre in the middle, wingers outside — is the most common and is the default assumed throughout this guide. Other teams use **first man back takes the middle**, whoever that is, which is common when the centre is the one caught deep and common in rec hockey. Others pick up **man-on-man from the puck outward**. Find out which your team plays. [Defending the Rush](../systems/defending_the_rush.md) is the authority and sets out all three; under every one of them, somebody owns the middle and nobody assumes it is somebody else.
 

@@ -127,7 +127,7 @@ Risk: Chase into the corner and the opposing defenceman walks in free, with nobo
 
 > **Whether you stay high or go to the corner depends on your team's system.** This is a coaching choice, not a law of hockey — see [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
 >
-> - **Low zone collapse / zone coverage** — the system assumed throughout these documents, and the most common. You stay high on the point. The low battle belongs to the strong-side defenceman and the centre. **Do not go into the corner.**
+> - **Low zone collapse / zone coverage** — the system assumed throughout, and the most common. You stay high on the point. The low battle belongs to the strong-side defenceman and the centre. **Do not go into the corner.**
 > - **Man-on-man** — you follow your assigned check wherever they go, including into the corner. The points get covered by whoever's man is there.
 > - **Hybrid** — man-on-man below the dots, zone above. You take your man down only if they go below the hash marks.
 >
@@ -162,9 +162,11 @@ Goal: Be the first line of the breakout and get into the neutral zone with speed
 **Where to be:** This is the one job on the ice that is defined by a *move* rather than a spot, so hold both ends of it:
 
 - **While they still have the puck** — high on your side, roughly level with the opposing defenceman you are covering. Unchanged from the section above.
-- **As your team wins it** — down the wall on your side, to **between the hash marks and the goal line**. That is the outlet position, and it is about 40 feet below where you started. **In the conventional swing breakout**, that is — under a **flat/spread** structure you hold higher toward the blue line, and under a **stretch or flying-winger** structure one winger leaves up ice altogether. Find out which you're in (see the note under *Carrying the Puck — Free Space* above, and [Breakouts](../systems/breakouts.md)).
+- **As your team wins it** — down the wall on your side, to **between the hash marks and the goal line**. That is the outlet position, and it is **44 to 64 feet below** where you started — the point is at the blue line, 64 ft out from the goal line, and the outlet band runs from level with the faceoff dot, 20 ft out, down to the goal line ([Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns both figures). **In the conventional swing breakout**, that is — under a **flat/spread** structure you hold higher toward the blue line, and under a **stretch or flying-winger** structure one winger leaves up ice altogether. Find out which you're in (see the note under *Carrying the Puck — Free Space* above, and [Breakouts](../systems/breakouts.md)).
 
 Staying high is what makes that trip short and makes you the first outlet available; it is not where you receive the pass. A winger who never leaves the point is as wrong as one who left it early — the pass to a winger standing at the blue line is long, flat and intercepted, and it arrives in your back. Come down as the puck becomes yours.
+
+![](diagram:winger-high-then-down-the-wall)
 
 **What to do:** Watch the battle rather than the puck, and read who is going to come out of it with possession. The instant it is yours, start down the wall and present yourself as an outlet — stick on the ice, feet already moving, calling for it. Do not leave the point before your team actually has it; do turn your feet so that when they do, the first stride is already going.
 
@@ -382,6 +384,8 @@ Goal: Be a threat in your half of the zone, particularly from the side of the ne
 
 **What to do:** Get open for a pass. From the half-wall, be ready to shoot or feed the center in the slot. From your faceoff circle, be ready for a one-timer off a cross-ice pass. From the side of the net, look for rebounds and tip-ins. Crash the net the moment a shot is taken.
 
+![](diagram:winger-offensive-zone-patches)
+
 **The one-timer — the basics of actually hitting one.** Full detail in [Shooting](../technique/shooting.md).
 
 - **Set your feet before the pass arrives.** Open your stance toward the passer with your weight already on your back foot. Everything after this is just falling forward.
@@ -445,8 +449,12 @@ Move the puck quickly, look for one-timer setups, and crash the net for rebounds
 ### Penalty Kill (your team is short-handed)
 
 ```facts
-Position: In a box you are one of the two high players covering a point; in a diamond you take a middle spot on a half-wall; in a wedge+1 you are often the puck-chaser
+Position: In a box you are one of the two high players covering a point; in a diamond you take a middle spot on a half-wall; in a wedge+1 you are often the "+1"
+Action: As the +1, pressure whoever has the puck; when the puck moves the nearest wedge player takes over as the new +1, so you never follow it round
+Options: Your route out as the +1 is a coaching choice — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and point; ask which one your team runs
 Action: Stay tight, block shots, and force the opposing point into low-percentage shots
+Technique: If you block, block from close and on your feet — square to the shooter, head out of the shot lane, hands tucked behind your shin pads
+Never: Block from in front of your own goalie's eyes — Defender and Body Contact and Battles own the technique and the full list of when not to block
 Action: Clear the puck whenever you get it — you don't need to be fancy
 Rule: A shorthanded team may ice the puck freely under NHL and IIHF rules; USA Hockey Rule 624(b)(1) grants it only from Youth 15-Only, Girls 16U, High School and Adult up
 Rule: NHL Rule 81.6 removes the exemption from a team shorthanded by a major with nobody waiting on the penalty bench — Special Teams owns this
@@ -457,9 +465,9 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 
 - **Box** — the standard. You are **one of the two high players**, alongside your centre, each responsible for one point.
 - **Diamond** — the centre usually takes the apex and you take one of the two middle positions, covering a half-wall.
-- **Wedge+1** — you are often the "+1", the single puck-chaser outside the triangle.
+- **Wedge+1** — you are often the "+1", the single player working outside the triangle. That job is **pressure, not pursuit**: get at whoever has the puck and make every possession uncomfortable. When the puck moves you stop, and the nearest wedge player steps out as the new +1 while you drop into the triangle. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route you take to the puck is your coach's choice, not a law** — published descriptions differ, some sending the +1 straight out from the goal towards the carrier, some sweeping him laterally across the top of the zone above the circles, some letting him roam to the wall and the point. Ask which one you are running.
 
-Stay tight and force the opposing point into low-percentage shots. Block **on your feet, square to the shooter, head out of the lane and hands tucked behind your shin pads** — and not from in front of your own goalie's eyes; [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the list of when *not* to block. Clear the puck whenever you get it — you don't need to be fancy, and a shorthanded team may ice the puck freely — **under NHL and IIHF rules.** USA Hockey gives the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)), so in most youth hockey your clear can still be iced; and NHL Rule 81.6 takes it away from a team shorthanded by a *major* with nobody waiting on the penalty bench. [Special Teams](../systems/special_teams.md) owns it. Don't chase the puck around the perimeter and pull the shape apart; that's exactly what the power play is trying to make you do.
+Stay tight and force the opposing point into low-percentage shots. Block **from close, on your feet, square to the shooter, head out of the lane and hands tucked behind your shin pads** — and not from in front of your own goalie's eyes; [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the list of when *not* to block. Clear the puck whenever you get it — you don't need to be fancy, and a shorthanded team may ice the puck freely — **under NHL and IIHF rules.** USA Hockey gives the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)), so in most youth hockey your clear can still be iced; and NHL Rule 81.6 takes it away from a team shorthanded by a *major* with nobody waiting on the penalty bench. [Special Teams](../systems/special_teams.md) owns it. Don't chase the puck around the perimeter and pull the shape apart; that's exactly what the power play is trying to make you do.
 
 ### Icing
 
@@ -528,6 +536,7 @@ Lanes, gap, and the numerical situations in full: [Defending the Rush](../system
 - **Standing still on the half-wall.** A stationary winger is trivially covered.
 - **Puck-watching on the backcheck** instead of picking up the trailing forward.
 - **Arriving at the net front too early** — get there as the shot is taken, not before.
+- **Blocking a shot from in front of your own goalie's eyes.** A puck deflected off a body your goalie could not see is one of the most common ways soft goals are conceded — either block from close and on your feet, square to the shooter, head out of the lane and hands tucked behind your shin pads, or get out of the lane and let them see it. [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the list of when *not* to block.
 
 ## Key Takeaways
 

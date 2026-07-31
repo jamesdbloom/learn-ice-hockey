@@ -436,7 +436,7 @@ def plain(tokens: Iterable[Token]) -> str:
 # 4. Markdown inline stripping (phase A)
 # ==========================================================================
 
-RE_IMAGE = re.compile(r"!\[([^\]]*)\]\([^)]*\)")
+RE_IMAGE = re.compile(r"!\[([^\]]*)\]\(([^)]*)\)")
 RE_LINK = re.compile(r"\[([^\]]+)\]\(([^)]*)\)")
 RE_AUTOLINK = re.compile(r"<(https?://[^>\s]+)>")
 RE_BARE_URL = re.compile(r"https?://\S+")
@@ -451,13 +451,47 @@ RE_ITALIC_UNDER = re.compile(r"(?<![\w_])_([^_\n]+?)_(?![\w_])")
 RE_FOOTNOTE_REF = re.compile(r"\[\^[^\]]+\]")
 
 
+_DIAGRAMS: dict | None = None
+
+
+def _diagram_manifest() -> dict:
+    """Captions for `diagram:<id>` references, written by build-diagrams.mjs."""
+    global _DIAGRAMS
+    if _DIAGRAMS is None:
+        path = Path(__file__).resolve().parent.parent / "site" / "src" / "data" / "diagrams.json"
+        try:
+            _DIAGRAMS = json.loads(path.read_text(encoding="utf-8"))
+        except FileNotFoundError:
+            _DIAGRAMS = {}
+    return _DIAGRAMS
+
+
 def strip_inline_markdown(text: str, counter: Counter) -> str:
     """Markdown -> plain prose. Emphasis markers go, the words stay."""
     text = RE_FOOTNOTE_REF.sub("", text)
 
     def _image(match: re.Match) -> str:
+        """An image becomes the words that describe it, spoken inline.
+
+        A diagram reference carries no alt text on purpose — the caption lives in
+        the diagram's spec so there is only ever one copy of it — so resolve the
+        id against the manifest the site build writes. Failing to resolve is
+        fatal rather than silent: a listener would otherwise get a gap exactly
+        where the sighted reader gets the whole picture, and nothing in the audio
+        would show that anything had been lost.
+        """
         counter["md.image"] += 1
-        return match.group(1)
+        alt, url = match.group(1), match.group(2)
+        if url.startswith("diagram:"):
+            entry = _diagram_manifest().get(url[len("diagram:"):])
+            if entry is None:
+                raise SystemExit(
+                    f"md_to_speech: unknown diagram id {url[len('diagram:'):]!r}. "
+                    "Run: node site/scripts/build-diagrams.mjs"
+                )
+            counter["md.diagram"] += 1
+            return "Diagram. " + entry["caption"]
+        return alt
 
     def _link(match: re.Match) -> str:
         counter["md.link"] += 1
