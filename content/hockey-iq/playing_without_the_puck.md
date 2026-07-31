@@ -158,7 +158,8 @@ Goal: Take options away and force the carrier to decide early — winning the pu
 Action: Angle, do not chase — approach on a curve that closes one side of the ice, so the only route left is the one your support is covering
 Action: Steer them where your help is; angling a carrier into the middle while your support sits on the wall is worse than not pressuring at all
 Technique: Arrive under control — close the last few feet with short strides, stick out front, in a position to change direction
-Priority: Stick on the puck, body on the man, in that order — take the body only when it does not cost you the lane behind you
+Priority: Stick on the puck, body on the man, in that order — take the body only where your league permits checking, and only when it does not cost you the lane behind you
+Rule: Check whether you may hit at all — body checking is banned under USA Hockey 604(a) at 12U and below, in all girls'/women's and all non-check adult classifications, and under Hockey Canada 7.3 at U13 and below and throughout female hockey
 Action: Talk, because you are the trigger — "I've got the carrier" tells your support where to stand, and silence makes four people guess
 Convention: Who goes is a coaching choice — under the 2-1-2 and low zone collapse used throughout the nearest player pressures; under a 1-2-2 only one forward pressures at all, and under a trap almost nobody pressures deep
 ```

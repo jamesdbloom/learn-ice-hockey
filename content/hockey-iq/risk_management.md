@@ -329,7 +329,7 @@ Key: This is a hierarchy for a retriever with no time to read, not a ranking of 
 Action: Quick-up first — first look up ice, then down; the window closes before you finish checking the rest of the list
 Read: Reverse beats a forechecker who has over-run you; rim beats one who is sealing you against the wall
 Never: Take D-to-D through the slot — go behind the goal line
-Action: Nothing there? Take the hit, protect the puck against the boards and eat the faceoff
+Action: Nothing there? Take the hit — skates parallel to the wall, forearm and hip, head up, never your back — protect the puck and eat the faceoff
 Never: Solve it by putting the puck over the glass
 ```
 
@@ -342,7 +342,7 @@ This is the same order taught in [Defender](../positions/defender.md) — **Quic
 5. **Reverse.** *Has the forechecker over-committed and skated past me?* → Send it **back against the flow** into the space they just left, to a partner or centre arriving behind you. A **reverse** and a **rim** are opposite plays chosen by the same read: reverse beats a forechecker who has over-run you; rim beats one who is sealing you against the wall. Getting this read wrong is one of the most common defensive-zone turnovers there is.
 6. **Rim.** *Can I send it hard onward around the boards to my winger's side?* A **rim** goes onward around the boards, with the flow of play. A 50/50 puck on the wall is an acceptable outcome; it is a battle, not a chance.
 7. **Glass and out.** *Can I get it off the glass and out?* → Do it. No shame in this at all.
-8. **Nothing?** → Take the hit, protect the puck against the boards, and eat the faceoff. Or ice it — icing puts the draw in **your own** defensive zone and denies you a line change, which is bad, but a penalty and a power play is worse. **Never solve this by putting it over the glass.**
+8. **Nothing?** → Take the hit, protect the puck against the boards, and eat the faceoff — and **take the hit properly**: skates parallel to the wall, contact on your forearm and hip, head up and chin off your chest, and **never with your back to the boards**. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns receiving a hit safely. Or ice it — icing puts the draw in **your own** defensive zone and denies you a line change, which is bad, but a penalty and a power play is worse. **Never solve this by putting it over the glass.**
 
 ### Neutral zone — you are carrying through the middle third
 
@@ -653,7 +653,7 @@ Bad decisions are the most coachable thing in hockey, because unlike a shot or a
 - **Stickhandling out of trouble instead of relocating out of it.** One stride to the wall changes the risk of every option on your list. Do that before you decide, not instead of deciding.
 - **Chasing the puck carrier from behind after a turnover.** You will not catch them, and if you foul them from behind you have converted your turnover into a penalty shot under Rule 57.3.
 - **Both defencemen going to the same puck.** Almost always caused by nobody saying anything. It is a communication failure that presents as a positional one.
-- **Panicking the puck over the glass.** The most avoidable minor penalty in hockey. Aim lower, use the boards, or eat the hit.
+- **Panicking the puck over the glass.** The most avoidable minor penalty in hockey. Aim lower, use the boards, or eat the hit — skates parallel to the wall, forearm and hip, and never your back to the boards.
 - **Changing lines because you are tired rather than because the situation allows it.** Tiredness is not a green light. The play dictates the change, not your lungs.
 - **Not raising your risk level when trailing late.** Playing "responsibly" while losing 3-1 with four minutes left is not responsible. It is a slow-motion concession.
 - **Compounding.** One bad decision followed by a worse one to fix it. This costs more goals than the original mistakes ever did.
