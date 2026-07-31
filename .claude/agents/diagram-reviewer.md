@@ -83,6 +83,45 @@ The pass that needs judgement rather than grep:
 - **Do the arrows describe a play that can happen?** Check the ordering: a pass
   from a player who has not yet received the puck, a skate route through an
   opponent, two players occupying the same space.
+- **Routes that finish near an opponent — the arrival test.** Ruled by
+  `safety-reviewer` after two diagrams were graded Critical, and stated here so it
+  is applied rather than rediscovered. For a route owned by a skater finishing near
+  an opposing skater, let `d` = arrowhead tip to the opponent's anchor, `θ` = angle
+  between the **terminal tangent** (not the chord) and the bearing to that anchor,
+  and `miss = d·sin θ`.
+
+  1. **`miss` must exceed 2.9 ft** — the player-glyph radius. Below it the drawn ray
+     passes through the body.
+  2. **If `d` < 9 ft the route may not carry an arrowhead**; use `kind: 'pressure'`,
+     which ends in the key's bar. 9 ft = 2.9 glyph + 3.15 arrowhead + 2.9 glyph — the
+     distance at which the head visually reaches the opponent's edge. A bar says
+     *arrive and contain*; an arrowhead says *keep going through*.
+  3. Rule 1 is necessary, not sufficient. Rule 2 applies whatever `miss` is.
+  4. Where anything else in the same picture fixes the target's **facing** — a pass
+     arriving at them, a puck they are retrieving, the boards they face — the caption
+     must carry the arriving player's obligation and the level caveat.
+  5. **Every measurement must record which `rink.json` it assumes.** One diagram's
+     safety was found to depend on an uncommitted change to an unrelated coordinate:
+     reverting it would have made the picture illegal with no diff touching the spec.
+
+  These are **drawing conventions derived from the renderer's constants, not rules of
+  hockey.** The books partition the circle at the *target's shoulder line* — legal is
+  "from the front, diagonally from the front or straight from the side", the offence
+  is "directly from behind, **or diagonally from behind**" — and a glyph has no
+  facing. Do not present the numbers above as a rule. There is no defensible angular
+  threshold, and inventing one would be a fabrication.
+
+  A false positive to expect: two players converging on a **loose puck** (a faceoff
+  tie-up) trip rule 1 while being entirely safe, because the aim point is the puck
+  and nobody has their back turned. Judge the aim point, not the arithmetic.
+
+- **A still frame can depict arrival at a *place*, never at a *person*.** The two
+  facts that decide legality — the target's facing, and what the arriving player does
+  in the last two feet — are one undrawable and one movement over time. Draw to the
+  point of arrival and no further; let the caption carry the rest. This is the
+  treatment angling already gets, after two attempts that were invisible in the
+  source and passed every geometric check.
+
 - **Is anyone doing something illegal?** A route that finishes into the back of a
   player facing the boards is a checking-from-behind diagram. Hand anything of
   that shape to `safety-reviewer`.
@@ -92,18 +131,49 @@ The pass that needs judgement rather than grep:
 
 ### 3 · Notation
 
-The corpus uses the common coaching convention — solid line for a skate, dashed
-for a pass, and so on. Its legend is the definition; check the diagram against it
-rather than against your memory. Specifically:
+The notation is assembled from **two published symbol keys that disagree**, and
+neither is "the base" — saying so in either direction is false, and both directions
+have been asserted in this repository already. Five of the eight line symbols are
+common to both. `stop` takes the Hockey Eastern Ontario sheet's name for a glyph the
+IIHF key names differently. `pressure` exists only in the HEO sheet. `crossovers` is
+this corpus's own adaptation of the HEO glyph. **The player-glyph axis is IIHF
+§21.1's: shape carries TEAM.** Both URLs, both SHA-256s, the divergences and the
+departures are enumerated symbol by symbol in the header of
+`site/scripts/lib/rink.mjs`, and explained to the reader in "Reading the diagrams".
 
+**This is the pass that has already failed once.** The first notation in this
+project was written from memory, honestly labelled as unverified, and then used
+anyway. Three of its five symbols meant something else in the published key:
+cross-ticks meant *lateral crossovers*, not carrying the puck; a bar-ended line
+meant *checking pressure*, not a shot; and X meant *pylon*, not opposition. A
+forecheck diagram drawn in it showed a shot where it meant pressure and marked
+every opponent as a traffic cone. Nothing mechanical caught it and neither did the
+first review — it took the reader who commissioned the diagram.
+
+So:
+
+- **A symbol's meaning is only ever as good as its source.** If a diagram uses a
+  symbol, the key must define it. If the key does not, that is a finding, and the
+  fix is to find a key that does — not to pick something reasonable.
+- **Read the key's own wording.** It says "skating with control of the puck", not
+  "carry". Renaming a symbol is how a shared notation quietly becomes a private one.
 - One meaning per line style, across every diagram in the corpus. A dashed line
   that means "pass" in one diagram and "backward skating" in another is worse than
   no convention.
+- Two symbols in the key differ only by wavelength — backward skating is a tight
+  wave, skating with the puck a long one. Check they are still separable at the
+  size the diagram actually renders, not just in the source.
 - Player identifiers match the section's vocabulary. If the prose says F1, F2, F3
   are roles set by order of arrival, the diagram must not imply they are people.
 - Own team and opposition are visually distinguishable **without relying on colour
   alone** — the corpus renders in light and dark themes and some readers cannot
-  separate the two hues.
+  separate the two hues. **Shape carries TEAM**, per IIHF Level I §21.1: a circle is
+  the reader's own team, a triangle the opposition, and an X is a pylon and never a
+  player. `pos:` in a spec is inert except for `'pylon'` — it does not choose the
+  shape, and spec comments claiming it does are stale. This bullet previously
+  described the superseded shape-for-*position* axis, which is exactly the inversion
+  it exists to catch; a reviewer grading against it would have passed diagrams that
+  tell a reader to read our defencemen as forwards.
 
 ### 4 · Does it survive its context?
 
