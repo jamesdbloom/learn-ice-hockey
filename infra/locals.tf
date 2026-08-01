@@ -60,9 +60,18 @@ locals {
   # The Google origins below are split by purpose deliberately: gtag.js is
   # fetched from googletagmanager.com, the collect beacon goes to
   # google-analytics.com, and the no-JavaScript pixel fallback is an image.
+  #
+  # 'wasm-unsafe-eval' is for Pagefind, whose search index is a WebAssembly
+  # module. Without it the browser refuses WebAssembly.instantiate() and search
+  # dies the moment a reader clicks into the box — in production only, because
+  # this policy is a CloudFront response header and nothing sets it locally.
+  # It is NOT 'unsafe-eval': it permits WebAssembly compilation and nothing
+  # else, leaving eval() and new Function() blocked as before. Browsers that
+  # predate the token ignore it and lose search, which degrades to the list of
+  # every document already on the search page.
   content_security_policy = join("; ", [
     "default-src 'self'",
-    "script-src 'self' https://www.googletagmanager.com",
+    "script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com",
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com",
     "font-src 'self'",
