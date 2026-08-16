@@ -752,15 +752,16 @@ Convention: The standard convention is that your defenceman takes away the pass 
 Action: Play the puck carrier as if it were a one-on-none — square up, come out to your normal depth, make the save
 Key: The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can
 Action: Say it out loud — "I've got the pass" / "take the shooter" — it only works if you both know which half is yours
-Never: Let your defenceman slide or dive before the pass is released; that opens both options at once
-Action: Ask your defencemen and your coach what your team does — some take away the shooting lane instead
+Never: Let your defenceman slide or dive before the pass is released where your team plays the passing lane; that opens both options at once
+Options: Some teams instead coach a timed slide across the lane to kill the pass and force the shot — there the slide is the plan, so expect it and play the shooter the same way
+Action: Ask your defencemen and your coach what your team does — some take away the shooting lane instead, and what must not happen is the two of you holding different answers
 ```
 
 **The standard convention is that the defenceman takes away the pass and you take the shot.** Your defenceman positions in the passing lane with their stick flat on the ice, and you play the puck carrier as if it were a one-on-none: square up, come out to your normal depth, and make the save. The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can.
 
 The call for it is **"I've got the pass" / "take the shooter."** Say it out loud rather than assuming it — this only works if both of you know which half is yours.
 
-**Name it as a convention, because it is one.** Some coaches vary it: against a strong shooter with a weak trailer, or when a backchecker has picked up the second attacker, the defenceman may instead take away the shooting lane. Ask your defencemen and your coach what your team does. What must not happen is the defenceman sliding or diving before the pass is released — that opens both options at once. The full treatment of every numerical situation, from the skaters' side, is in [Defending the Rush](../systems/defending_the_rush.md).
+**Name it as a convention, because it is one.** Some coaches vary it: against a strong shooter with a weak trailer, or when a backchecker has picked up the second attacker, the defenceman may instead take away the shooting lane. **And some teams play the alternative system outright** — the defenceman times a slide flat across the passing lane to remove the pass and force the carrier to shoot. Where that is your team's method the slide is the plan, not an error, and it does not change your job: you still have the shooter, square and set. What must not happen is the defenceman sliding **when your team plays the passing lane**, because there it opens both options at once — and, more than either, the two of you arriving at the rush with different answers. Ask your defencemen and your coach what your team does, before the game rather than during it. The full treatment of every numerical situation, from the skaters' side, is in [Defending the Rush](../systems/defending_the_rush.md).
 
 ### 3-on-2s
 
@@ -897,7 +898,7 @@ What follows is only the part that changes what *you* do.
 Action: Clear the net front with technique — inside shoulder ahead of theirs, box out, and lift their stick
 Never: Screen your own goalie, or back into the crease when you are being pushed
 Never: Block a shot from a screening position — get to the shooter and block from close, or get out of the lane entirely
-Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide or dive before the pass is released
+Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide before the pass is released unless the timed slide is your team's system
 Action: Let your goalie play the puck when they call for it — "I've got it" means get to your breakout position
 Action: Tell your goalie what you want while you are still coming back for it, not as you arrive
 Action: Box out on rebounds — find a body, not the puck
@@ -909,7 +910,7 @@ Never: Blame the goalie out loud; answer their calls instead, because one word b
 - **Clear the net front, with technique.** Get your inside shoulder ahead of theirs, box out, and lift their stick. Position *usually* beats strength — [Body Contact and Battles](../technique/body_contact_and_battles.md) owns that claim and flags it as coaching consensus rather than a measured law, with a large enough strength gap winning anyway — and a stick lift takes away the tip and the rebound without giving up your own body position — while repeated cross-checks to the back put your team down a man. Full detail in [Body Contact and Battles](../technique/body_contact_and_battles.md).
 - **Do not screen your own goalie.** Standing in front of your own net with your back to the shooter, in your goalie's sightline, is one of the most common and least discussed causes of goals against. If you are the one blocking the view, move — and do not back into the crease when you're being pushed.
 - **Do not block a shot from a screening position.** Half-blocking a puck your goalie cannot see is *worse* than not blocking it, because you have just deflected an unseen puck. Get to the shooter and block from close, or get out of the lane entirely. There is no useful middle.
-- **On a 2-on-1, take the pass and give your goalie the shot** — and do not slide or dive before the pass is released. Say which half you are taking.
+- **On a 2-on-1, take the pass and give your goalie the shot** — and do not slide or dive before the pass is released, unless your team plays the timed slide as its method, in which case the slide is the plan. Say which half you are taking, and make sure your defenceman has the same answer you do.
 - **Let your goalie play the puck when they call for it.** "I've got it" means get to your breakout position, not to the puck. Two players arriving at the same puck behind your own net is how goals get scored on empty nets.
 - **Tell your goalie what you want before you need it.** If you want the puck stopped and left behind the net, say so while you are still coming back for it — a defenceman who calls "leave it" from the neutral zone gets a dead puck waiting for them; the same call as they arrive gets a collision.
 - **Box out on rebounds.** After the save, the goalie is on the ice recovering. The most dangerous player is the one arriving unmarked at the second puck. Find a body, not the puck.

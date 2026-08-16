@@ -13,7 +13,9 @@ A **rush** is an attack that arrives before the defence is set, and it produces 
 
 **You cannot close the distance to a puck carrier from a standstill**, so start skating backwards while they are still collecting the puck at their end. Space gives them speed, time to lift their head and choose, and a clean lane to shoot down. Two to three stick lengths in open ice, about one by your own blue line, shrinking the whole way in — a guide rather than a law. And watch their chest: the puck, stick, hands and head can all lie.
 
-**Two attackers and one of you: take away the pass, give up the shot** — your goalie can save a shot and cannot save a pass across the front of the net. Say it out loud, so you own the pass and the goalie owns the shooter, and do not commit to the lane until the pass is released. Most goalies want that; a few will ask you to pressure the puck, so ask yours.
+**Two attackers and one of you: take away the pass, give up the shot** — your goalie can save a shot and cannot save a pass across the front of the net. Say it out loud, so you own the pass and the goalie owns the shooter, and do not commit to the lane until the pass is released. **That is not the whole of hockey** — it is a coaching choice with more than one legitimate answer, and the named alternative is a timed slide across the lane to force the shot — so find out which one yours plays. Most goalies want the version above; a few will ask you to pressure the puck, so ask yours.
+
+**Backchecking is a team system with a name, not just effort.** Coaching material names four — defence early strike, wide-lane lock, midlane backcheck and hound the puck — and two of them are opposites on the question that matters most: whether the first forward back covers inside for the defence or chases the puck carrier. Ask which one you play, and ask what happens when the forward cannot catch the carrier.
 
 **Steering a carrier toward the side wall is standard; riding them into it is not permitted everywhere.** In women's hockey, including every level of it in Britain, IIHF Rule 101.1 forbids using the boards to make contact with, push or pin an opponent competing for the puck — as does any league without body checking. Pin the puck, not the player.
 
@@ -71,7 +73,7 @@ This one idea generates most of the specific advice below:
 
 - Gap control is just staying on the defensive side while *close*.
 - Backchecking on the inside of your man is just re-establishing the defensive side.
-- Not chasing the puck carrier is just refusing to give up the defensive side on someone else.
+- Not chasing the puck carrier — under the lane-and-man systems taught here — is just refusing to give up the defensive side on someone else.
 - "Don't get beat wide" and "don't get beat to the middle" are both the same instruction.
 
 When a rush goes wrong and you're not sure why, this is nearly always the answer: somebody lost the defensive side of somebody.
@@ -254,6 +256,8 @@ The standard assignment, and the one most teams use:
 > **This is a coaching choice, not a law.** Most teams assign lanes by position as above. Others assign by **first man back takes the middle**, regardless of who it is — common when the centre is the one caught deep, and common in rec hockey where lines are less structured. A third variant has the backcheckers pick up **man-on-man from the puck outward**, taking whoever is nearest. Find out which one your team uses. See [Neutral Zone Systems](neutral_zone_systems.md).
 >
 > Under every variant, two things hold: somebody owns the middle, and nobody assumes it is somebody else.
+>
+> **And there is a layer above this one.** The three assignments here all come from the same family — forwards taking lanes while the defence takes the puck. Two of the four named team systems set out later in this section do not work that way at all: under the **wide-lane lock** a defenceman slides to mid-ice and owns the middle, and under **hound the puck** the first forward is on the carrier and both defencemen hold inside. So "which lane is mine?" is the right question only once you know which system you are in. Read the two together.
 
 ### Come back on the defensive side of your man
 
@@ -284,18 +288,67 @@ The instinct on a turnover is to turn your head and watch what happens. That cos
 
 **Turn and sprint first. Look on the third or fourth stride.** The picture will still be there when you look up, and you will be five metres further into the play. Full-speed backchecking is a conditioning issue as much as a hockey one — see [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md).
 
-### Do not chase the puck carrier when your D has them
+### Do not decide mid-rush to chase the puck carrier when your D has them
 
 ```facts
-Never: Sprint in to help a defenceman who is already engaged with the carrier and playing a good gap
+Never: Decide mid-rush to sprint in and help a defenceman who is already engaged with the carrier and playing a good gap
 Risk: Two defenders on one attacker, and your actual assignment left unmarked
 Action: Skate past the puck battle to the unmarked man — your job is the player nobody has
 Mindset: Trusting your defenceman to win their own 1-on-1 is what turns a 3-on-2 into three 1-on-1s
+Options: Some teams run the opposite by design — the first forward back pressures the carrier and the defenceman holds inside instead
+Never: Turn that pressure into a hit from behind — where pressuring the carrier is your system it is your feet and your stick, and nothing else
+Key: Under either system somebody has the carrier and somebody has the unmarked man, and it is agreed before the rush rather than during it
 ```
 
 If a defenceman is already engaged with the carrier and playing a good gap, sprinting in to help them is worse than useless — it leaves your actual assignment unmarked and puts two defenders on one attacker.
 
 **Your job as a backchecker is the player nobody has.** Skate past the puck battle to the unmarked man. Trusting your defenceman to win their own 1-on-1 is a skill, and it is what turns a 3-on-2 into three 1-on-1s.
+
+> **This is a coaching choice, not a law — and the choice is about *who decides*.** The instruction above belongs to the family of systems where the backcheckers take lanes and men, and the defence takes the puck. **Other teams coach the reverse on purpose:** the first forward back **pressures the puck carrier** all the way in, and the defenceman adjusts to hold inside position and support rather than engaging. That is a legitimate system with its own logic — relentless pressure on the puck, and a defenceman who is never beaten wide because they never have to commit. **What it never means is finishing into the back of a player skating at their own end boards — see the subsection below.**
+>
+> What is wrong under *both* systems is **improvising**. The failure this section is really about is a forward deciding in the middle of a rush to abandon their man and double the puck, because that is the version nobody else on the ice is expecting. **Find out which your team plays, and if your team has no answer, that is the thing to raise** — teams that leave it to players to read in the moment get two players on the carrier, or none.
+
+### The four named backchecking systems
+
+```facts
+Key: Backchecking is a team system with named variants, not only effort — which one you play changes your job on every rush
+Options: Defence early strike — the defencemen tighten up early instead of sinking, and the wide one strikes across to take away the time the opposition expected on the way out
+Options: Wide-lane lock — the first forward back takes an outside lane, owns everything between the dots and the boards on that side, and stays deeper than their man
+Options: Midlane backcheck — the forwards all come back through the middle so the defencemen can play the outside, and the first one back covers inside for them
+Options: Hound the puck — the first forward back chases the carrier and keeps pressuring after a pass, while the defencemen hold inside and protect the space between the dots
+Convention: Midlane and hound the puck are opposites — one covers your defence, the other pressures the puck — and which one you run follows your coach's appetite rather than the situation in front of you
+Action: Ask which one your team plays, and ask what happens when the forward cannot catch the carrier — that hand-off is where the confusion lives
+```
+
+Everything above is about *your* job on a backcheck. This is the layer above it: the shape your whole team is running, which decides what your job actually is. **Coaching material names four, and they are genuinely different — not degrees of effort.** Whether these four are all of them, or which is commonest, is not something any published count establishes.
+
+**Defence early strike.** This one starts before the rush does, in your own end. Rather than sinking deep in defensive-zone coverage, the two defencemen **tighten up early** and may step up on the opposition forwards. When the other team breaks out, the wide defenceman **strikes across** the ice at the puck carrier, and as they go, the strong-side partner shifts inside to cover. The point is surprise: it takes away the time and space the opposition expected to have as they left their zone.
+
+**Wide-lane lock.** The first forward back immediately takes an **outside lane** and stays there. They may skate forwards or backwards, but must always be able to see both the puck and any opponent in that lane, and they own **anybody between the dots and the boards on their side**. One defenceman slides to mid-ice and takes that lane; the other takes the strong side where the carrier is. The ice ends up divided into three, each with an owner, and **three players are standing up the blue line** while the remaining two forwards trail the play and pressure it. If this is your system, your job as the locking forward is to deny the pass to your side and stay *deeper* than your man.
+
+**Midlane backcheck.** The opposite instinct: the high forward gets to **mid-ice** and comes back hard through the centre seam, and so does everybody else. All three forwards return through the middle, which frees the defencemen to play the outside. The first forward back **stays between the puck and the net** — so if a defenceman is beaten inside, there is already somebody there to cover it. It also squeezes the carrier: with no space inside, they are pushed wide. Come all the way to the low slot before moving out to support; the second and third forwards back look for late attackers and stop at the top of the circles.
+
+**Hound the puck.** Explicitly the opposite of the midlane backcheck. The first forward back **chases the puck carrier as hard as they can**, and keeps pressuring the puck even after a pass. The defencemen hold **inside position**, protecting the space between the dots. Coaches who like it tend to want pressure everywhere on the ice.
+
+**What each one costs you.** The lock and the midlane backcheck both put bodies between the puck and your net, and both are forgiving of a mistake by somebody else — the price is that you concede the puck carrier time. Hounding the puck denies that time and keeps the opposition under pressure the length of the neutral zone, and the inside defencemen kill the mid-ice pass — but it has a specific failure that the others do not: **when the forward cannot catch the carrier by the blue line, or cannot get to the pass in time, the forward and the defencemen can end up unsure who has whom.**
+
+That failure is the reason to ask the follow-up question. Teams that run it well carry a hand-off rule so nobody is guessing — one such rule is that **the forward hounds the puck as far as the red line, and if they are not level with the carrier by then, the defence takes over and the forward peels off to a lane or the wide attacker.** If your team pressures the puck and has never said where the hand-off happens, that is worth raising at practice rather than discovering at speed.
+
+#### What hounding never means
+
+```facts
+Never: Finish into the back of a carrier heading for their own end boards — take the puck, take the ice, or angle them off it, whichever book you are under
+Rule: There is no minor-penalty option for checking from behind — NHL Rule 43.2, "There is no provision for a minor penalty for checking from behind", and IIHF Rule 43.2, "serious and dangerous, therefore there is no option to award a minor penalty"
+Rule: The major and the automatic game misconduct that follow it are NHL Rules 43.3 and 43.5, and IIHF Rule 43.3
+Rule: Body checking is prohibited in USA Hockey's "12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications" (Rule 604(a))
+Rule: In women's hockey — every level of it in Britain — IIHF Rule 101.1 allows bodychecking "when there is a clear intention of playing the puck", lets a player hold ground, and makes "any move by a Player to step or glide into an opposing Player" at least a minor
+Never: Turn hounding into contact where you may not body-check at all — it is your feet, your stick and your angle, and nothing else
+```
+
+⚠️ **What hounding never means.** You are arriving at speed behind a player skating toward their own end boards, and that is the exact geometry the checking-from-behind rules exist for. **Take the puck, take the ice, or angle him off it — never finish into their back.** There is no cheap version of getting this wrong: the NHL's Rule 43.2 states that *"There is no provision for a minor penalty for checking from behind"*, and the IIHF's Rule 43.2 that the infraction is *"serious and dangerous, therefore there is no option to award a minor penalty"*. It is a major, with a game misconduct attached. The obligations of the arriving player are owned by [Body Contact and Battles](../technique/body_contact_and_battles.md), and they apply to a backchecker exactly as they apply to a forechecker — [Forechecking Systems](forechecking_systems.md) makes the same point about arriving on a defenceman facing his own wall.
+
+**And check whether you may body-check at all — under the book you actually play.** Under USA Hockey's Rule 604(a), body checking is prohibited in *"the 12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications"* — which covers a large share of the people reading this. Where that applies, hounding the puck is entirely a matter of your stick, your feet and your angle, and the instruction to chase hard is an instruction about **skating**, not about contact. **In women's hockey — which is every level of it in Britain — the governing text is IIHF Rule 101.1, not the USA Hockey one.** Read it whole, because both halves matter. It permits contact: *"In Women's Hockey 'bodychecking' is allowed when there is a clear intention of playing the puck or attempting to 'gain possession' of the puck…"* — the sentence goes on to except the situation the rest of the rule describes, which is the step-in below. It lets you hold your ground — *"No Player is required to move out of the way of an oncoming Player to avoid a collision."* And it closes the gap a hounding forward is most likely to fall into: *"Any move by a Player to step or glide into an opposing Player will be assessed at least a minor penalty (2') for an 'illegal hit'."* So hounding is legal skating, and contact made going for the puck is legal too; stepping into the carrier for its own sake is not.
+
 
 ---
 
@@ -346,17 +399,17 @@ The failure mode is both defenders converging on the carrier. That opens the ice
 ### 2-on-1 — the headline situation
 
 ```facts
-Convention: Take away the pass and give up the shot — your goalie can save the shot and cannot save the pass
+Convention: Take away the pass and give up the shot — your goalie can save the shot and cannot save the pass; the realistic alternative is a timed slide to take the pass away outright and force the shot, so find out which your team plays
 Read: A shooter walking into the slot unpressured with no realistic pass available is no longer a 2-on-1 — close on the puck
 Action: Say the contract out loud — you own the pass, the goalie owns the shooter, and neither of you covers both
 Position: Sit in the passing lane, roughly on the line between the two attackers, biased slightly toward the middle
 Technique: Stick flat on the ice on the passing side, blade extended into the lane, arm long — your stick takes the pass, not your body
 Action: Take away the far attacker's stick as you get close to the net, where the danger converts into a tap-in
-Never: Slide before the pass is released — you remove yourself from the play and open both options at once
+Never: Slide before the pass is released while you are playing the lane — you remove yourself from the play and open both options at once
 Never: Try to block the shot — you abandon the pass, and a half-block deflects a puck your goalie was tracking
 ```
 
-Two attackers, one defender. This is the situation every defenceman is judged on, and it has a single governing instruction:
+Two attackers, one defender. This is the situation every defenceman is judged on. **There is more than one legitimate way to play it**, and the one taught here is the one below; the alternative is set out at the end of this section, because which of the two you play is a decision for your team rather than for you in the middle of a rush.
 
 > ### **TAKE AWAY THE PASS. GIVE UP THE SHOT.**
 
@@ -383,10 +436,31 @@ Talk about this with your goalie before the game, not during it. Most goalies wa
 2. **Stick flat on the ice on the passing side**, blade extended into the lane, arm long. Your stick, not your body, is what takes the pass away — that way your feet stay free.
 3. **Match the retreat speed of the attack** and stay on the defensive side of both of them. Do not backpedal so fast that you end up behind your own goal line, and do not stall so the shooter walks in on top of your goalie.
 4. **Take away the far attacker's stick as you get close to the net.** Late in the rush, the danger converts from a pass into a tap-in — get your blade to their stick.
-5. **Do not slide. Not until the pass is released.** A slide is a one-time, irreversible commitment: if the pass has not gone, you have removed yourself from the play and both options are now open. If the pass *is* released and you can genuinely intercept it, sliding into the lane is correct.
+5. **Do not slide. Not until the pass is released.** A slide is a one-time, irreversible commitment: if the pass has not gone, you have removed yourself from the play and both options are now open. If the pass *is* released and you can genuinely intercept it, sliding into the lane is correct. **This instruction belongs to the method above** — playing the lane and living with the shot. It is not a universal prohibition on sliding, and the section below explains the system in which an early slide is the plan rather than the error.
 6. **Do not try to block the shot.** Blocking the shot means abandoning the pass, and worse, a half-block deflects a puck your goalie was tracking. See the shot-blocking section in [Defender](../positions/defender.md).
 
 **The one honest caveat:** if the shooter is walking into the slot completely unpressured with no realistic pass available — for example the second attacker has been picked up by a backchecker — the situation is no longer a 2-on-1 and you should close on the puck. Read what is actually in front of you rather than the label.
+
+#### The realistic alternative — the timed slide
+
+```facts
+Convention: Some teams play the opposite commitment — a timed slide across the passing lane to remove the pass outright and force the shot
+Key: What does not change is the contract — the goalie still owns the shooter and you still own the pass; what changes is how you take the pass away
+Risk: Go early or slide past the lane and you are on the ice and out of the play, and you cannot contest the rebound from there
+Never: Go down with your head in the shot lane — this system exists to force a shot, so a shot is what you are going down in front of
+Action: Ask the coach who asks you to slide exactly how they want you to go down — no method for going to the ice on a pass lane is set out here, and that part is what hurts you
+Rule: A body placed across an attacker's path that causes them to trip and fall is a minor under NHL Rule 57.2; under the IIHF book the referee may assess a major (57.3), or a major plus a game misconduct (57.4), for reckless endangerment
+Risk: A late or wild slide is the one that trips somebody — the penalty exposure is in the timing rather than in the act
+Action: Ask which of the two your team plays, and settle it with your goalie before the game rather than during it
+```
+
+Some coaches teach the opposite commitment: instead of holding the lane and living with the shot, the defender **times a slide across the passing lane** to remove the pass outright and force the carrier to shoot. **This is a different system, not a mistake.** Its trade is explicit — the pass is gone, but you are on the ice and out of the play if you go early or slide past the lane, and you cannot contest the rebound afterwards.
+
+Note what does *not* change between the two: **the goalie still owns the shooter, and you still own the pass.** What changes is how you take the pass away and what it costs you if you are wrong.
+
+**One thing holds whichever system endorses it: your head stays up and out of the shot lane.** Beyond that, **do not carry the going-to-the-ice method from [Defender](../positions/defender.md) into this.** That method is written for dropping in front of a *shot*, and a slide across a *passing* lane is a different action on a different axis. **What this guide will not do is tell you how to go down.** The coaching source this alternative comes from describes the slide as a flat one with the feet toward your own net, and names its three failure modes — going too early, sliding past the lane, and being unable to contest the rebound afterwards. That is a description of the play, not a technique for surviving it, and no method for going to the ice on a pass lane is set out here. **How you go down is the part that hurts you**, so ask the coach who is asking you to do it rather than working it out at speed. And a body on the ice across an attacker's path is a trip if they go over you. That is a minor under **NHL Rule 57.2** — *"A minor penalty shall be imposed on any player who shall place his stick or any portion of his body in such a manner that it shall cause his opponent to trip and fall"* — and the book British readers play under goes further: **IIHF Rule 57.3** allows a major at the referee's discretion where a player *"recklessly endangers the fouled Player"*, and **57.4** a major plus a game misconduct. A legal, well-timed slide is routine; a late or wild one is not a free mistake.
+
+**So ask, and ask early.** Which of the two your team plays is a coaching decision, and the worst outcome is not picking the less fashionable one — it is you and your goalie having different answers. Both of you hedging in different directions is how a 2-on-1 becomes a goal, and that is true whichever system you are in.
 
 ### 2-on-2
 
@@ -410,7 +484,8 @@ Two attackers, two defenders. Even numbers, and it should be routine — but it 
 
 ```facts
 Convention: The common default is "two wide, middle to the backchecker" — a defenceman on each outside attacker
-Never: Chase the puck carrier — a wide carrier belongs to the D in that lane, a middle carrier to the backchecker
+Never: Chase the puck carrier under the two-wide default — a wide carrier belongs to the D in that lane, a middle carrier to the backchecker
+Options: Under the strong-side system the strong-side D takes the carrier instead, so ask which of the two you play
 Options: The alternative is strong-side D on the puck as a 1-on-1, weak-side D splitting the middle and the far attacker
 Read: If your backchecker is genuinely not coming, squeeze the middle and concede the far wide man — but look before you assume it
 Action: Retreat together at the same speed, holding a flat line with the middle sealed between you
@@ -423,7 +498,7 @@ Three attackers, two defenders. Chaotic-looking, and the way you take the chaos 
 **The common default — "two wide, middle to the backchecker."** This is what most teams run, and what the rest of this section assumes unless you are told otherwise.
 
 - **Each defenceman takes an outside attacker.** One D on each wide lane.
-- **Nobody chases the puck carrier.** If the carrier is in the middle, they belong to the backchecker; if the carrier is wide, they belong to the defenceman in that lane and the other D holds the far attacker.
+- **Nobody chases the puck carrier — under this default.** If the carrier is in the middle, they belong to the backchecker; if the carrier is wide, they belong to the defenceman in that lane and the other D holds the far attacker. Under the strong-side alternative set out below, the strong-side defenceman does take the carrier wherever they are, which is exactly why you need to know which one you are playing.
 - **The middle belongs to the backchecking centre**, arriving from behind. This is exactly the middle-lane assignment above. If your backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle and concede the far wide man — but do not assume that until you have looked.
 
 > **The realistic alternative — "strong side takes the puck, weak side splits."** Some teams do not wait on the backchecker at all. The **strong-side defenceman takes the puck carrier** wherever they are, playing it as a 1-on-1; the **weak-side defenceman drops off and splits the middle and the far attacker**, sitting in the passing lane between them exactly as you would on a 2-on-1. Under this version the backchecker's job becomes the *third* attacker rather than the middle specifically.
@@ -689,11 +764,13 @@ The habit to build: **a rush is not over when the shot is saved.** It is over wh
 - **Standing still at the blue line** waiting for the attacker, then trying to accelerate backwards as they arrive. You cannot close a gap from a standstill, and this is the root cause of most rush goals.
 - **Watching the puck instead of the chest.** Your feet follow your eyes, and the puck is the thing they are using to lie to you.
 - **Riding a carrier into the boards in a league that does not permit it.** Steering them there with your route and pinning them there with your body are two different acts, and the second is a minor, or a major plus an automatic game misconduct, in women's hockey — every level of it in Britain — and in any league without body checking (IIHF Rule 101.1).
-- **Sliding on a 2-on-1 before the pass is released.** You take yourself out of the play and open both options at once.
+- **Sliding on a 2-on-1 before the pass is released, when your team plays the passing lane.** You take yourself out of the play and open both options at once. The mistake is doing it *inside a system that did not ask for it* — some teams coach a timed slide as the method itself, so find out which yours plays rather than deciding mid-rush. Where the slide is the method, your head still stays up and out of the shot lane — and how you go down is not settled teaching here, so ask the coach who is asking you to do it. Where the slide is the method, a late or wild one across an attacker's path is still a trip.
 - **Trying to block the shot on a 2-on-1.** You abandon the pass, and a half-block deflects a puck your goalie was tracking cleanly.
 - **The goalie and the defenceman both hedging on a 2-on-1** because they never agreed who has what. Neither option ends up covered.
 - **Both defenders drifting toward the puck on a 2-on-2**, leaving the far attacker with an open net.
-- **Chasing the puck carrier as a backchecker** when your defenceman already has them, leaving your actual assignment free.
+- **Deciding mid-rush to chase the puck carrier as a backchecker** when your defenceman already has them, leaving your actual assignment free. Some teams do coach exactly that pressure by design, with the defence adjusting to hold inside — the mistake is improvising it when nobody else on the ice is expecting it.
+- **Not knowing which backchecking system your team runs.** Defence early strike, wide-lane lock, midlane backcheck and hounding the puck are genuinely different jobs, and two of them — the midlane backcheck and hounding the puck — ask the opposite thing of the first forward back. Under two of them the middle belongs to a defenceman, not to you. Playing one while your defencemen play another is how the middle opens.
+- **Hounding a carrier into their own end boards and finishing into their back.** Chasing hard is a skating instruction. Checking from behind carries no minor option and is a major with an automatic game misconduct (NHL Rules 43.2–43.5, IIHF Rules 43.2–43.3) — and under USA Hockey Rule 604(a) a great many readers may not body-check at all.
 - **Losing the middle-lane driver.** They do not have the puck, so nobody looks at them, and they score.
 - **Looking before skating on a backcheck**, costing two strides you never recover.
 - **Backchecking behind your man's shoulder** instead of taking a route to their inside hip. You cannot defend anything from behind.
@@ -753,9 +830,9 @@ document, that is named too.*
 2. **Start your feet early and keep the gap shrinking:** two to three stick lengths through the neutral zone in open ice, a stick and a half at the centre red line, one stick length at your own blue line, and never growing. **These are a guide, not a law** — they move with your backward speed and the attacker's skill.
 3. **Read the chest and hips.** The puck, stick, hands, head and eyes can all lie; the torso cannot. Fix your eyes on the numbers on the front of their jersey.
 4. **Riding a carrier into the wall is not permitted everywhere.** Steering them there with your route is a different act from putting them there with your body, and it stays legal even where checking is banned — Hockey Canada's interpretation of its own non-checking rule says so in terms, Interpretation 1 to Rule 7.3(a): a player *"may steer or direct an opposing player into the boards, without actually touching or body-checking them. This is acceptable."* Using the boards to make contact is a different act: IIHF Rule 101.1 says two or more players competing for possession are *"not allowed to use the boards to make contact with an opponent to eliminate her from the play, push her into the boards, or pin her along the boards"* — a minor, or a major plus an automatic game misconduct, in women's hockey at every level, **including every level of it in Britain**, and the same applies in any league without body checking. **Pin the puck, not the player.**
-5. **On a 2-on-1, take away the pass and give up the shot — and say the contract out loud.** You own the pass, the goalie owns the shooter, and you do not slide until the pass is released. **Most goalies want exactly that, but some will ask you to pressure the puck instead, so ask yours before the game.** If the shooter is walking in unpressured with no realistic pass available, it is no longer a 2-on-1 — close on the puck.
+5. **On a 2-on-1, take away the pass and give up the shot — and say the contract out loud.** You own the pass, the goalie owns the shooter, and you do not slide until the pass is released. **That is not the whole of hockey — it is a coaching choice with more than one legitimate answer.** The named alternative is a timed slide across the lane to force the shot — head up and out of the shot lane, and ask your coach how they want you to go down, because that part is not settled here; a body on the ice across an attacker's path is still a trip (NHL Rule 57.2, and under the IIHF book a possible major under 57.3 or major plus game misconduct under 57.4). Which one you play is your team's decision. **Most goalies want the version above, but some will ask you to pressure the puck instead, so ask yours before the game.** If the shooter is walking in unpressured with no realistic pass available, it is no longer a 2-on-1 — close on the puck.
 6. **Chasing a lone attacker from behind, your stick goes on the puck and nothing else.** Under NHL Rule 57.3 a foul from behind that denies the chance is a penalty shot rather than a two-minute penalty — but if you play the puck first and trip them in doing so, it is only a minor, which is the whole reason the instruction is stick-on-puck. With your own net empty there is no "from behind" test at all: any foul that denies the goal is an awarded goal (NHL Rules 25.1 and 57.4), and stepping across from the front does it. The IIHF's Rule 24.8 mirrors 57.3; USA Hockey's Rule 616(a) is materially different and leaves the referee a minor penalty instead, so know which book you are under.
-7. **The middle-lane driver is the most commonly missed assignment in hockey**, and nobody chases a puck carrier your defenceman already has. Who owns the middle is a coaching choice, not a law — the centre in the most common scheme, the first man back in others, or man-on-man from the puck outward — but under every version somebody owns it and nobody assumes it is somebody else. Find out which yours runs.
+7. **The middle-lane driver is the most commonly missed assignment in hockey**, and under the lane-and-man systems taught here nobody chases a puck carrier your defenceman already has — though other teams coach the first forward back to pressure the carrier by design, with the defenceman holding inside, so ask which yours runs before improvising it. **What pressuring never means:** you arrive behind a player skating at their own end boards, so take the puck, take the ice, or angle them off it — never finish into their back, which carries no minor option and is a major with an automatic game misconduct (NHL Rules 43.2–43.5, IIHF Rules 43.2–43.3). And check whether you may body-check at all: USA Hockey Rule 604(a) prohibits it at 12 & under and below, in all Girls'/Women's and all non-check adult classifications. Who owns the middle is a coaching choice, not a law — the centre in the most common scheme, the first man back in others, man-on-man from the puck outward, or, under two of the four named team systems, a defenceman rather than a forward at all — but under every version somebody owns it and nobody assumes it is somebody else. Find out which yours runs.
 8. **Step up or back off — never half.** Step up only when you are confident you can win the puck, not hopeful; otherwise back off with a tight gap. **How aggressive "confident" should be is a coaching choice:** an aggressive neutral-zone press wants you challenging at the line, a passive trap wants you holding and steering the carrier wide. Ask which risk your coach wants to carry.
 9. **The best rush defence is not creating the rush.** Pinches with no read, forwards leaving early, neutral-zone turnovers, badly timed line changes, and both defencemen below the puck in the offensive zone cause almost all of them.
 10. **The rush is not over when the shot is saved — it is over when everybody has a mark.** Locate the net front first, because nobody was assigned to it during the rush. Which mark is yours depends on your team's defensive-zone coverage, so know whether you play low zone collapse or man-on-man before the puck gets there.
@@ -770,6 +847,8 @@ document, that is named too.*
 
 *Position play: [How To Hockey – Defence Roles and Responsibilities](https://howtohockey.com/how-to-play-defense-roles-responsibilities/)*
 
+*Alternatives named in this document: Mike Johnston and Ryan Walter,* Hockey Plays and Strategies, *2nd ed. (Champaign, IL: Human Kinetics, 2019) — a coaching manual, and therefore evidence of **convention** only; nothing in it is used here for a rule. It is the source for the **four named backchecking systems** — defence early strike, wide-lane lock, midlane backcheck and hound the puck — including their stated trade-offs and the red-line hand-off rule that keeps a hounding forward and the defence from guessing; and for the second legitimate way to defend a 2-on-1 — a slide across the passing lane, executed on timing — which this document calls the timed slide. These names, descriptions and the hand-off rule are taken from this book, which presents them as established coaching vocabulary rather than as its own coinage; "timed slide" is this document's label for the alternative it describes, not a term the book uses. On the 2-on-1 the authors state that coaches hold several theories and that no factual evidence tells us which is best — recorded here as one coaching source's account of an unsettled question, **not** as a verified claim that no such evidence exists, which has not been tested. The book states a number of percentages without sourcing any of them, and none is carried here.*
+
 *Rush danger: [AWA: The Danger of Scoring Chances off the Rush — Alison Lukan, NHL.com/kraken, 21 November 2021](https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-chances-off-the-rush-328173944) — Sportlogiq data covering all NHL games 2017-18 to 2020-21, presented at the Ottawa Hockey Analytics Conference; the 8.15% baseline and the "almost triples" wording are quoted verbatim, and the underlying per-situation table is a Sportlogiq graphic that is not machine-readable · [Tulsky, Detweiler, Spencer & Sznajder, "Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance", MIT Sloan Sports Analytics Conference 2013 (PDF)](http://hockeyanalytics.com/Research_files/Using%20Zone%20Entry%20Data%20To%20Separate%20Offensive,%20Neutral,%20And%20Defensive%20Zone%20Performance.pdf) — Section 6, odd-man rushes as under 3% of 5-on-5 entries and worth 0.78 shots against 0.57 for a standard carry-in*
 
-*Not used as sources: the Ice Hockey Systems, The Coaches Site, USA Hockey and Hockey Canada coaching pages, none of which are publicly accessible — they sit behind a 403 or a login as of 27 July 2026. The rules quoted in this document are taken from the primary rulebook texts themselves — *NHL Official Rules 2025-2026* (Rules 57.3, 57.4, 67.4, 67.5), the *IIHF Official Rule Book 2025/26* (Rule 24.8) and the *USA Hockey Official Rules of Ice Hockey 2025-29* (Rule 616) — not from a blog summarising them. The rush-danger figures quoted in the overview are sourced (NHL.com/Sportlogiq and the 2013 MIT Sloan zone-entry paper, both linked above), with one limit stated where they appear: Sportlogiq's per-situation table is published as a graphic, so the size of the odd-man multiplier is given in the source's own words — "almost triples" — rather than as a number.*
+*Not used as sources: the Ice Hockey Systems, The Coaches Site, USA Hockey and Hockey Canada coaching pages, none of which are publicly accessible — they sit behind a 403 or a login as of 27 July 2026. The rules quoted in this document are taken from the primary rulebook texts themselves — *NHL Official Rules 2025-2026* (Rules 43.2, 57.2, 57.3, 57.4, 67.4, 67.5), the *IIHF Official Rule Book 2025/26* (Rules 24.8, 43.2, 57.3, 57.4) and the *USA Hockey Official Rules of Ice Hockey 2025-29* (Rules 604(a), 616) — not from a blog summarising them. The rush-danger figures quoted in the overview are sourced (NHL.com/Sportlogiq and the 2013 MIT Sloan zone-entry paper, both linked above), with one limit stated where they appear: Sportlogiq's per-situation table is published as a graphic, so the size of the odd-man multiplier is given in the source's own words — "almost triples" — rather than as a number.*

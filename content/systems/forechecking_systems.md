@@ -222,6 +222,8 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 
 > **On "the most common forecheck".** You will see that phrase attached to both the 2-1-2 and the 1-2-2, including in this document, and there is **no published count of what teams actually run** — nobody tracks it. The honest version, and the one used from here on: the **2-1-2** is the one most commonly *taught first* in North American youth and rec hockey, which is why it is the default here; the **1-2-2** is the one most commonly described in coaching material as a team's base structure, largely because the same shape covers both the offensive zone and the neutral zone. Both statements are coaching-material consensus, **not verified data**, and they are not in conflict — they are about different things.
 
+**A system is not only a shape — it is a set of answers.** Each system below describes where five players stand. What decides whether it works is what each of them does once the breakout actually starts, and that breakout will be one of the named options [Breakouts](breakouts.md) sets out — **up, wheel, reverse, D-to-D, rim, over, quick-up, the stretch pass and off the glass**, which is the full list [Breakouts](breakouts.md) sets out, not a shorter one. A well-drilled forecheck has a worked-out response to each of them — who takes the puck, who jumps the outlet, who covers the far wall, who holds — and a badly drilled one produces five players improvising five different answers to the same play. [Breakouts](breakouts.md) sets those options out from the other side of the same moment, including how each is chosen to beat the forecheck you are running here; read the two together and you have both halves of it. **If you learn only the shape, you will be in position and still lose the puck.** The question worth asking your coach is not "what forecheck do we play?" but "what do we do when they wheel it?"
+
 ---
 
 ### 2-1-2 — the aggressive standard
@@ -515,9 +517,9 @@ When the strong-side defenceman does pinch, somebody has to fill the point they 
 
 ---
 
-## Off a Dump-In vs Off a Turnover
+## Off a Dump-In, a Turnover, or a Control Setup
 
-These are two completely different situations and most players forecheck them identically. They should not.
+These are three completely different situations and most players forecheck them identically. They should not. The first two are the common pair — you put the puck in, or you lost it. The third is the one nobody practises: the opposition already has the puck, stopped behind their own net, with everybody looking up.
 
 ### Off a dump-in — you control the clock
 
@@ -563,7 +565,32 @@ What that means for you:
 - **Do not pinch off a turnover** unless the puck is genuinely dying on the wall. You do not have the structure behind you that a dump-in gives you.
 - **Accept a lower ambition.** Off a turnover, the realistic win is Win 2 — slow them down and collect it in the neutral zone. Trying for Win 1 with three players out of position is how odd-man rushes are made.
 
-The distinction in one line: **off a dump-in you are hunting; off a turnover you are recovering.**
+### Off a control setup — when they already have it
+
+```facts
+Key: The third situation — they are stopped behind their own net with full control, off a line change or because they beat you to the puck
+Options: Deep trap — all five back off and meet them at the blue line, conceding the build-up and taking the speed away at the line
+Options: Swing with speed — go in and skate with the players swinging deep, so the speed never gets built in the first place
+Options: Quick flush — strike before they are organised, F1 forcing the carrier out one side and F2 arriving to double it
+Read: A team that has just stopped behind its own net has not yet settled who is swinging where — that hesitation is what the flush aims at
+Risk: Swinging with them concedes the long pass — the stretch forward is your defencemen's the whole way — and flushing commits two forecheckers before the puck is contested
+Never: Finish into the back of a defenceman facing their own end boards on a flush — take the puck, take the ice, or angle them off it
+Rule: There is no minor-penalty option for checking from behind — it is a major with an automatic game misconduct (NHL Rules 43.2–43.5, IIHF Rules 43.2–43.3)
+Rule: Body checking is prohibited in USA Hockey's "12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications" (Rule 604(a))
+Convention: Which of the three you run is a coaching choice that usually follows the appetite of the rest of your system, so ask rather than picking one mid-shift
+```
+
+Neither of the two situations above describes this one. Nobody dumped anything and nobody turned it over — their defenceman simply has the puck behind their own net, stopped, head up, with their forwards starting to move. It happens constantly off line changes and whenever they win a race you thought you had. **A forecheck that only knows how to hunt a dump-in has nothing to say here**, which is why the puck so often comes out untouched.
+
+**Deep trap.** Give it up. All five of you back off and meet the attack at the blue line, exactly as you would in a neutral-zone forecheck. F1 takes a shallow angle and steers the carrier to one side; the forward on that side stands up and denies the red line; the third forward either locks across or stays wide. You are conceding the whole build-up — they will get time, space and speed — and taking it all away in one place instead. The turnovers come at the line.
+
+**Swing with speed.** A team breaking out with control will usually **swing** one or two players behind the net or through the corner to build speed, with a forward stretching high. So go in and swing *with* them: F1 stays in to deter the pass while F2 and F3 skate with and lock onto whoever is swinging deep. If their defenceman keeps it and comes out from behind the net, F1 angles in and forces them to one side. Your defencemen have to account for the stretch forward the entire time, because the long pass is exactly what this concedes. It kills their speed at the price of opening ice elsewhere.
+
+**Quick flush.** The opposite instinct: attack them before they are organised. A team that has just stopped behind its own net has not yet settled who is going where, and that is the moment you are attacking. F1 forces the carrier out to one side — ideally onto their backhand — and once F1 has committed, F2 comes in on an angle and doubles it. **Both of you are arriving on a player facing their own end boards, so this is angling, not hitting:** take the puck, take the ice, or steer them off it, and never finish into their back. F3 and both defencemen drop off to take away the longer passes out. Of the three it commits the most players before the puck is contested — and it is the only one of them aimed at winning the puck outright rather than at meeting the attack later.
+
+**Which of the three is right is a coaching choice like every other one in this document**, and it tends to follow the appetite the rest of the system already shows — the coach who runs a 1-2-2 is the likelier one to trap it, the coach who runs a 2-1-2 the likelier one to flush it, though nothing published counts that. Ask which yours does, because all three start with F1 doing something different and F1 is whoever gets there first.
+
+The distinction in one line: **off a dump-in you are hunting; off a turnover you are recovering; off a control setup you are choosing.**
 
 ---
 
@@ -726,7 +753,7 @@ Full detail on the counters lives in [Breakouts](breakouts.md) and [Neutral Zone
 - **Chasing after you have been beaten.** When the puck goes D-to-D past you, your job is to take the high role, not to turn and sprint. Chasing burns your legs and leaves the middle of the ice empty.
 - **Both defencemen pinching when nobody called for it.** The commonest source of breakaways against at every level. There are situations where both *should* go — a full-ice press, a delayed penalty, 6-on-5 — but they are called from the bench, not decided individually. Look for your partner before you commit.
 - **F3 drifting low.** F3 is the insurance policy. When F3 gets bored and joins the cycle, a failed forecheck becomes a rush against.
-- **Forechecking a dump-in and a turnover the same way.** Off a dump-in you have a head start and can pressure hard. Off a turnover you are behind the play and should be recovering shape, not hunting. **What "hard" never means:** your own dump has put their defender's back to you against the end boards, so take the puck, take the ice, or angle them off it. Finishing into the back of a player facing the wall is a major with an automatic game misconduct under the NHL and IIHF books — there is no minor option — and the onus is on you.
+- **Forechecking a dump-in, a turnover and a control setup the same way.** Off a dump-in you have a head start and can pressure hard. Off a turnover you are behind the play and should be recovering shape, not hunting. And when they already have it, stopped behind their own net with their heads up, you are choosing between trapping it, swinging with their speed, and flushing them before they are organised — a forecheck that only knows how to hunt a dump-in has nothing to say there. **What "hard" never means:** whether you dumped it or they already had it, their defender's back is to you against the end boards, so take the puck, take the ice, or angle them off it. Finishing into the back of a player facing the wall is a major with an automatic game misconduct under the NHL and IIHF books — there is no minor option — and treat the onus as yours, whatever your book says about it.
 - **Dumping the puck straight behind the net in a trapezoid league.** That is precisely the area their goalie is allowed to play. Aim for the corners. In England and Wales, check first whether you are in one — the restricted area's status is unsettled there.
 - **Not knowing which forecheck your team runs, or which one you switch to with a lead.** If F1 is angling the carrier to the boards and F2 is sealing the middle, both players are doing their job correctly and neither is doing anything useful.
 - **Running an aggressive forecheck you are not fit enough to sustain.** A 2-1-2 for the first ten minutes and nothing after that is worse than a 1-2-2 for sixty.
@@ -785,7 +812,7 @@ document, that is named too.*
 5. **F1 makes the play predictable; F2 takes the next play.** Whether F1 also hunts the puck is the single biggest difference between the systems — hunting in a 2-1-2 or a full-ice press, steering in a 1-2-2, 1-3-1 or 1-4 — so ask which your team wants. If F2 is chasing the puck F1 is already on, the forecheck has failed.
 6. **At 5-on-5 the default is that only one defenceman pinches at a time.** That is a very widely taught coaching choice rather than a law of hockey, and it is the assumption to play on if nobody has told you otherwise. The weak-side D is the safety, and the reason a failed pinch is a 2-on-1 rather than a breakaway. Ask who covers the point the pincher left: usually F3, sometimes the weak-side D sliding across to cover both points, and in some teams nobody, because the pinch only goes when F3 has called that they are high.
 7. **Where the trapezoid applies the goalie may play the puck behind the goal line only inside it** — the NHL (Rule 27.8), the KHL, and IIHF play (Rule 27.7) — so dump into the corners rather than straight behind the net. The sole exception is a goalie keeping skate contact with the crease. Most rec, beer-league and youth associations outside Britain use no trapezoid, which changes the plan entirely. **🇬🇧 In England and Wales treat the status as unsettled:** England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is "not currently enforced", but that edition is 2024-25 — and the In-House Rules do not amend Rule 27 while their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. As the attacking team, plan as though their goalie may retrieve the puck, and ask your league. Treat an unmarked sheet as a hint rather than a ruling — IIHF 27.7 turns on the position of the puck, not on the markings.
-8. **Off a dump-in you are hunting; off a turnover you are recovering.** Leave before the puck does on a dump-in; after a turnover the closest player pressures and everyone else finds a layer rather than chasing. And know what your own dump created: a player facing the end boards with you arriving behind them. Take the puck, take the ice, or steer them off it — never finish into the back of a player facing the wall. The onus is on you as the arriving player, and it is a major with an automatic game misconduct under the NHL and IIHF books, with no minor option.
+8. **Off a dump-in you are hunting; off a turnover you are recovering; off a control setup you are choosing.** Leave before the puck does on a dump-in; after a turnover the closest player pressures and everyone else finds a layer rather than chasing. When they already have it behind their own net and nobody is pressuring them, your team picks one of three — back off into a deep trap, swing with the players building speed, or flush them before they are organised — and which one is a coaching choice, so ask. And know what you are arriving into, whether you dumped it or they already had it: a player facing the end boards with you closing on their back. Take the puck, take the ice, or steer them off it — never finish into the back of a player facing the wall. The onus is on you as the arriving player, and it is a major with an automatic game misconduct under the NHL and IIHF books, with no minor option.
 9. **Read the forecheck you are facing in one second:** count the forwards below the top of the circles — two or more means an aggressive system, one means containment — then watch whether F1 attacks or steers, and whether their far-side defenceman is pinching or retreating.
 10. **No forecheck is a law of hockey.** Find out which one your team runs and which one it switches to with a lead; most teams have at least two. Aggressive forechecks are beaten by moving the puck early, traps by chipping past the line and skating onto it. Never try to stickhandle through the middle of three players.
 
@@ -802,3 +829,5 @@ document, that is named too.*
 *Left-wing lock history: [The Coaches Site — How Barry Smith's Left Wing Lock Changed Hockey Forever](https://members.thecoachessite.com/article/how-barry-smith-s-left-wing-lock-changed-hockey-forever) · [Left wing lock — Wikipedia](https://en.wikipedia.org/wiki/Left_wing_lock)*
 
 *Beating a forecheck: [Pension Plan Puppets — 3 Ways to Beat the Ottawa Senators' 1-3-1 Forecheck](https://www.pensionplanpuppets.com/2017/11/2/16593106/toronto-maple-leafs-beat-ottawa-senators-1-3-1-forecheck) · [Ice Hockey Systems — Breaking the 1-2-2 and the Trap (Denis Savard)](https://www.icehockeysystems.com/savard-videos/breaking-1-2-2-and-trap)*
+
+*The control forecheck: Mike Johnston and Ryan Walter,* Hockey Plays and Strategies, *2nd ed. (Champaign, IL: Human Kinetics, 2019) — a coaching manual, so **convention only**; no rule in this document comes from it. It is the source for the third situation named above and for its three responses — the **deep trap**, **swinging with speed** and the **quick flush** — including the reads that separate them. One number in its account is deliberately left out: it puts a figure on how long a team needs to organise a control breakout, without sourcing it, so the point is made here as the observation it is rather than as a measurement.*

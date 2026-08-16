@@ -489,7 +489,10 @@ Convention: The centre takes the middle lane and the wingers the outside — the
 Read: Other teams give the middle to the first man back, or pick up man-on-man from the puck outward — find out which yours plays
 Action: Take the middle-lane driver — the forward arriving late and unmarked into the slot is usually more dangerous than the puck carrier
 Position: Come back on the defensive side of your man, between them and your own net — not chasing behind their shoulder
-Action: Skate first, then look, and don't chase the carrier — your defencemen have him, and swinging wide abandons the ice they are protecting
+Action: Skate first, then look, and don't decide mid-rush to chase the carrier — your defencemen have him, and swinging wide abandons the ice they are protecting
+Options: Some teams coach the first forward back to pressure the carrier, with the defence holding inside — where that is your system, pressuring is your feet and your stick, never a hit from behind
+Rule: There is no minor-penalty option for checking from behind — it is a major with an automatic game misconduct (NHL Rules 43.2–43.5, IIHF Rules 43.2–43.3)
+Rule: Body checking is prohibited in USA Hockey's "12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications" (Rule 604(a))
 Priority: Last forward back with your defence outnumbered — take away the pass, don't go for the hit
 Action: Once you're set, become the centre again — cover the high slot and support the corner
 ```
@@ -498,11 +501,11 @@ When your team loses the puck going the other way, the centre normally has the s
 
 ![](diagram:centre-backcheck-middle-lane)
 
-> **Which backchecker owns which lane is a coaching choice, not a law.** The positional version described here — centre in the middle, wingers outside — is the most common and is the default assumed throughout this guide. Other teams use **first man back takes the middle**, whoever that is, which is common when the centre is the one caught deep and common in rec hockey. Others pick up **man-on-man from the puck outward**. Find out which your team plays. [Defending the Rush](../systems/defending_the_rush.md) is the authority and sets out all three; under every one of them, somebody owns the middle and nobody assumes it is somebody else.
+> **Which backchecker owns which lane is a coaching choice, not a law.** The positional version described here — centre in the middle, wingers outside — is the most common and is the default assumed throughout this guide. Other teams use **first man back takes the middle**, whoever that is, which is common when the centre is the one caught deep and common in rec hockey. Others pick up **man-on-man from the puck outward**. Find out which your team plays. [Defending the Rush](../systems/defending_the_rush.md) is the authority and sets them out, along with the four named team backchecking systems that decide which assignment applies; under every one of them, somebody owns the middle and nobody assumes it is somebody else.
 
 - **Take the middle-lane driver.** The most dangerous attacker on a rush is usually not the puck carrier — it's the forward filling the middle of the ice behind them, arriving late and unmarked into the slot. Under the positional assignment that player is yours, the wingers have the outside lanes, and nobody else is going to pick this up. Under the other two variants you may end up on an outside man instead — but then somebody has called that they have the middle, and if nobody has, take it.
 - **Get to the inside.** Come back on the defensive side of your man — between them and your own net — not chasing behind their shoulder. If you're trailing them, you can't defend anything.
-- **Skate first, then look, and don't chase the carrier.** Your defencemen have the puck carrier; if you swing wide to help them, you have abandoned the exact area they are trying to protect.
+- **Skate first, then look, and don't chase the carrier.** Your defencemen have the puck carrier; if you swing wide to help them, you have abandoned the exact area they are trying to protect. **Unless your team has told you otherwise:** some coaches want the first forward back — usually you — to pressure the carrier while the defence holds inside instead. That is a system, not an instinct, and [Defending the Rush](../systems/defending_the_rush.md) sets out both. What is always wrong is deciding it yourself in the middle of a rush — and pressuring never means finishing into the back of a player skating at his own end boards. Check whether you may body-check at all: USA Hockey Rule 604(a) prohibits it at 12 & under and below, in all Girls'/Women's and all non-check adult classifications.
 - **Once you're set, become the centre again.** Transition into your normal defensive-zone role — cover the high slot, support the corner.
 
 If you are the last forward back and your defence is outnumbered, the priority is taking away the pass, not making a hit.
@@ -595,7 +598,7 @@ document, that is named too.*
 2. Under a low zone collapse — a coaching choice, not a rule — your defensive-zone job **moves with the puck**: corner support when it is low and strong-side, high slot otherwise. Under man-on-man you track one assigned opponent, so ask which your team plays.
 3. Swing low so your defenceman has a safe outlet — that is the conventional swing breakout. Under a centre fly you leave early and the weak-side winger drops in, so find out which your team plays.
 4. Own the middle of the ice in the neutral zone.
-5. On the backcheck the middle lane is yours under the standard positional assignment — the most common one, but a coaching choice, not a law. Some teams give the middle to the first man back, so make sure somebody has it.
+5. Some teams instead want the first forward back on the carrier — and pressuring is your feet and your stick, never a hit from behind. On the backcheck the middle lane is yours under the standard positional assignment — the most common one, but a coaching choice, not a law. Some teams give the middle to the first man back, so make sure somebody has it.
 6. Faceoffs are your defining skill — roughly 56 a game, computed from NHL official statistics and owned by [Faceoffs](../systems/faceoffs.md) — and most barely matter; the ones in your own end do.
 7. Under pressure anywhere, get the puck to the outside. Simple beats clever.
 
