@@ -14,13 +14,22 @@ resource "aws_cloudfront_origin_access_control" "site" {
 }
 
 # ---------------------------------------------------------------------------
-# Clean URLs
+# Clean URLs, and the www -> apex redirect
+#
+# One function, because CloudFront permits only one viewer-request function per
+# cache behaviour. The redirect runs first and returns before the rewrite.
+#
+# Note the scope: this is associated with the default cache behaviour only, so
+# www is redirected for every page but not for /_astro/* or /audio/*. That is
+# deliberate — those behaviours exist to serve immutable assets with no
+# function latency, and an asset URL is not something a search engine indexes
+# as a duplicate page.
 # ---------------------------------------------------------------------------
 
 resource "aws_cloudfront_function" "clean_urls" {
   name    = "${local.name_prefix}-clean-urls"
   runtime = "cloudfront-js-2.0"
-  comment = "Rewrite directory-style paths to index.html for ${var.project_name}"
+  comment = "301 www to apex, then rewrite directory paths to index.html for ${var.project_name}"
   publish = true
   code    = file("${path.module}/functions/clean_urls.js")
 }
