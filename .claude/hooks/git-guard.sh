@@ -218,9 +218,21 @@ Then check what you staged before committing:
     git diff --cached --name-only'
 fi
 
-SENSITIVE_RE='(^|/)(\.env(\..*)?|.*\.tfvars|.*\.tfstate(\..*)?|backend\.hcl|tfplan|.*\.tfplan|domain-registration\.json|id_rsa.*|.*\.pem|.*\.p12|credentials)$'
+# `tfplan` and `.*\.tfplan` were anchored to the end, so a plan saved as
+# `tfplan.www301` matched neither and the hook would have allowed `git add` on
+# it. A plan file carries resource attributes and account identifiers in the
+# clear, and this repository is public. Both now accept a suffix.
+SENSITIVE_RE='(^|/)(\.env(\..*)?|.*\.tfvars|.*\.tfstate(\..*)?|backend\.hcl|tfplan(\..*)?|.*\.tfplan(\..*)?|domain-registration\.json|id_rsa.*|.*\.pem|.*\.p12|credentials)$'
 
-if seg "^git[[:space:]]+add${A}[^[:space:]]*(\.env|\.tfvars|\.tfstate|backend\.hcl|tfplan|domain-registration\.json|id_rsa|\.pem)([[:space:]]|\$)"; then
+# Known over-block, accepted deliberately: the trailing `[^[:space:]]*` also
+# catches the tracked `*.example` templates — infra/backend.hcl.example,
+# terraform.tfvars.example, domain-registration.json.example. Adding a negative
+# case for `.example` cannot be written in ERE without lookahead, and every
+# workaround tried here fails open when a real secret is staged alongside an
+# example file. Over-blocking is an annoyance; under-blocking publishes a
+# credential from a public repository. If you hit it, stage the example file in
+# its own command.
+if seg "^git[[:space:]]+add${A}[^[:space:]]*(\.env|\.tfvars|\.tfstate|backend\.hcl|tfplan|domain-registration\.json|id_rsa|\.pem)[^[:space:]]*([[:space:]]|\$)"; then
   block 'That path holds a credential, Terraform state, or registrant PII.
 
 This repository is public. .gitignore covers these deliberately — see the

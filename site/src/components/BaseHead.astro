@@ -1,6 +1,6 @@
 ---
 import {
-  SITE_TITLE, SITE_SHORT_TITLE, SITE_DESCRIPTION, SITE_AUTHOR,
+  SITE_TITLE, SITE_SHORT_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, SITE_AUTHOR_URL,
   GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION,
 } from '../consts';
 
@@ -18,6 +18,76 @@ const { title, description, ogType = 'website', section } = Astro.props;
 const pageTitle = title ? `${title} — ${SITE_SHORT_TITLE}` : SITE_TITLE;
 const pageDescription = description ?? SITE_DESCRIPTION;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+const siteBase = (Astro.site ?? new URL('/', Astro.url)).href.replace(/\/$/, '');
+
+/*
+  Structured data. Search engines were finding this site's pages and indexing
+  them, but nothing on the page said what kind of thing a page *is* — so a
+  36-document teaching corpus was indistinguishable from a blog. Bing in
+  particular leans on explicit markup rather than inferring it.
+
+  Two graphs only, both derivable from props that already exist. Nothing is
+  invented: `headline` and `description` are the same strings already in the
+  title and meta description, `author` and `license` already appear as tags
+  above, and the breadcrumb trail is read off the URL path rather than from a
+  hand-kept list that could drift out of step with the routes.
+
+  No `datePublished`. The layout does not carry document dates, and a fabricated
+  one is worse than an absent one — Google treats a date it can see as a claim.
+*/
+/*
+  The trail is Home → document, with no intermediate section crumb.
+
+  There is no `/technique/` page. The sections are directories in the built
+  output and nothing else — the routes go straight from the index to the
+  document. An earlier version of this file walked the whole path and emitted
+  a crumb per segment, which told search engines that eight section pages
+  existed when every one of them returns the 404. `check-links.mjs` did not
+  catch it because it reads `<a href>` and not JSON-LD, and validating the
+  markup only established that it was well-formed, which is a different claim
+  from true. Only emit a crumb for a URL that is actually built.
+*/
+const crumbs = Astro.url.pathname.split('/').filter(Boolean);
+// The 404 page is built as `404.html` and served by CloudFront on error. There
+// is no `/404/` URL, so it gets Home and nothing else.
+const leaf = crumbs.length && crumbs[crumbs.length - 1] !== '404'
+  ? [{
+      name: title ?? crumbs[crumbs.length - 1].replace(/[-_]/g, ' '),
+      item: canonical,
+    }]
+  : [];
+const breadcrumb = [{ name: 'Home', item: `${siteBase}/` }, ...leaf].map((c, i) => ({
+  '@type': 'ListItem',
+  position: i + 1,
+  name: c.name,
+  item: c.item,
+}));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ogType === 'article' ? 'Article' : 'WebSite',
+      '@id': canonical,
+      url: canonical,
+      name: pageTitle,
+      headline: title ?? SITE_TITLE,
+      description: pageDescription,
+      inLanguage: 'en-GB',
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by-nc/4.0/',
+      author: { '@type': 'Person', name: SITE_AUTHOR, url: SITE_AUTHOR_URL },
+      publisher: { '@type': 'Person', name: SITE_AUTHOR, url: SITE_AUTHOR_URL },
+      ...(section ? { articleSection: section } : {}),
+      // Only on a document. On the home page the WebSite node *is* the site,
+      // and `isPartOf` pointing at its own @id asserts that it contains itself.
+      ...(canonical === `${siteBase}/`
+        ? {}
+        : { isPartOf: { '@type': 'WebSite', '@id': `${siteBase}/`, name: SITE_TITLE, url: `${siteBase}/` } }),
+    },
+    { '@type': 'BreadcrumbList', itemListElement: breadcrumb },
+  ],
+};
 ---
 
 <meta charset="utf-8" />
@@ -46,6 +116,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 <meta name="generator" content={Astro.generator} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="sitemap" href="/sitemap.xml" />
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
 <!--
   Installable web app (D9). iOS does not read most of the manifest, so the

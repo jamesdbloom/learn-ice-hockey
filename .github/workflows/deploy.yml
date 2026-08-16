@@ -129,9 +129,17 @@ jobs:
         working-directory: site
         run: npm ci
 
+      # PUBLIC_GA_ID is supplied here and nowhere else, so a local build, a
+      # preview, or a clone of this public repository emits no analytics script
+      # at all. It was previously hard-coded in `site/src/consts.ts`, which sent
+      # every developer's localhost traffic to the live property. A GA4
+      # measurement ID is public by design — it appears in the page source of
+      # every site that uses one — so it is a repository variable, not a secret.
       - name: Build
         working-directory: site
         run: npm run build
+        env:
+          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
 
       - name: Assume the deploy role
         uses: aws-actions/configure-aws-credentials@v4.0.2
@@ -275,3 +283,81 @@ jobs:
             # only the summary that broke.
             printf -- '- `%s`\n' "${PATHS[@]}"
           } >> "$GITHUB_STEP_SUMMARY"
+
+      # IndexNow — tell Bing, Yandex, Seznam and Naver what changed, rather
+      # than waiting to be crawled. Google does not participate and is
+      # unaffected either way.
+      #
+      # The key is public by design: it is served at
+      # https://learn-ice-hockey.com/<key>.txt and the receiving engine fetches
+      # it to prove the submitter controls the host. It lives in site/public/
+      # for that reason and is not a secret.
+      #
+      # This reuses the invalidation step's own list, so a deploy that changed
+      # no HTML submits nothing. Directory URLs are what a reader and a crawler
+      # actually request, so /x/index.html is submitted as /x/ — the
+      # index.html form would be a URL the sitemap never lists and the
+      # canonical never names.
+      #
+      # A failure here must not fail the deploy. The site is already live and
+      # correct at this point; a search engine's ingestion endpoint being down
+      # is not a deployment problem.
+      - name: Submit changed URLs to IndexNow
+        continue-on-error: true
+        env:
+          SITE_URL: https://learn-ice-hockey.com
+          INDEXNOW_KEY: c2abada330ada6f9b62c6d1d095d04f4
+        run: |
+          set -uo pipefail
+
+          if [ ! -f /tmp/changed-paths.txt ]; then
+            echo "No changed-paths file — nothing to submit."
+            exit 0
+          fi
+
+          URLS=()
+          while IFS= read -r u; do
+            [ -n "$u" ] && URLS+=("$u")
+          done < <(sed -n 's#^\(/.*\)index\.html$#\1#p' /tmp/changed-paths.txt | sed "s#^#${SITE_URL}#")
+
+          if [ ${#URLS[@]} -eq 0 ]; then
+            echo "No HTML changed — nothing to submit to IndexNow."
+            exit 0
+          fi
+
+          # The protocol caps a submission at 10,000 URLs. This corpus is 40
+          # pages, so the cap is a guard against a future mistake rather than a
+          # real limit.
+          if [ ${#URLS[@]} -gt 10000 ]; then
+            echo "::warning::${#URLS[@]} URLs exceeds the IndexNow limit — submitting the first 10,000."
+            URLS=("${URLS[@]:0:10000}")
+          fi
+
+          # Parameter expansion, not sed: `\?` is a GNU extension and is a
+          # literal '?' in a BSD sed, which silently left the scheme on the
+          # host and would have had every submission rejected.
+          HOST=${SITE_URL#https://}
+
+          BODY=$(jq -n \
+            --arg host "$HOST" \
+            --arg key "$INDEXNOW_KEY" \
+            --arg loc "${SITE_URL}/${INDEXNOW_KEY}.txt" \
+            --args '{host: $host, key: $key, keyLocation: $loc, urlList: $ARGS.positional}' \
+            "${URLS[@]}")
+
+          # --max-time because `continue-on-error` masks failures, not hangs:
+          # a stalled connection would hold the runner until the job timeout.
+          # curl's own -w already prints 000 on a connection failure, so there
+          # is no `|| echo 000` here — it would append a second one.
+          CODE=$(curl -sS --max-time 30 -o /tmp/indexnow-response.txt -w '%{http_code}' \
+            -X POST 'https://api.indexnow.org/IndexNow' \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data "$BODY")
+
+          # 200 accepted, 202 accepted-pending-key-validation. Anything else is
+          # reported and ignored.
+          if [ "$CODE" = "200" ] || [ "$CODE" = "202" ]; then
+            echo "IndexNow accepted ${#URLS[@]} URL(s) (HTTP $CODE)." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::warning::IndexNow returned HTTP $CODE — $(cat /tmp/indexnow-response.txt 2>/dev/null | head -c 300)"
+          fi

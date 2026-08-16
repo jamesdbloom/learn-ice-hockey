@@ -34,8 +34,10 @@ export const SITE_AUTHOR_URL = 'https://github.com/jamesdbloom';
  * Google Analytics 4 measurement ID, e.g. 'G-XXXXXXXXXX'.
  *
  * Empty disables analytics entirely and emits no third-party script, which is
- * the default and what every local build and preview gets. Set it to switch
- * measurement on.
+ * the default and what every local build and preview gets. It is populated
+ * only by `PUBLIC_GA_ID` in the deploy workflow, so measurement is on in
+ * production and nowhere else. Set that variable in the repository settings,
+ * not here — hard-coding it is what broke this before.
  *
  * Note for anyone reading `docs/philosophy.md` or `docs/aws-design.md`: both
  * described the site as carrying no analytics and no third-party scripts. That
@@ -46,7 +48,17 @@ export const SITE_AUTHOR_URL = 'https://github.com/jamesdbloom';
  * Not a secret: a GA4 measurement ID is public by design and appears in the
  * page source of every site that uses one.
  */
-export const GA_MEASUREMENT_ID = 'G-VTE9ZGWY15';
+/*
+  Read from the environment, empty unless one is supplied.
+
+  This was hard-coded to the live measurement ID, which made the paragraph
+  above false: analytics fired from *every* build, not just deployed ones. A
+  browser pass caught the request going out from `http://localhost:4321`, and
+  all 42 built pages carried it — so every local preview polluted the property,
+  and anyone cloning this public repository and running `npm run dev` sent hits
+  to it. The deploy workflow supplies `PUBLIC_GA_ID`; nothing else does.
+*/
+export const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_ID ?? '';
 
 /**
  * Google Search Console verification.

@@ -64,6 +64,16 @@ t BLOCK 'git commit -n -m "x"'
 t BLOCK 'git add infra/terraform.tfvars'
 t BLOCK 'git add .env'
 
+# A plan saved as `tfplan.www301` matched neither `tfplan` nor `*.tfplan` in
+# .gitignore, and the guard's own patterns were anchored the same way, so it sat
+# untracked and unignored in a public repository's working tree. The suite that
+# exists to catch exactly this carried no tfplan case at all — which is why it
+# escaped. These are those cases.
+t BLOCK 'git add infra/tfplan'
+t BLOCK 'git add infra/tfplan.www301'
+t BLOCK 'git add infra/my.tfplan'
+t BLOCK 'git add infra/my.tfplan.bak'
+
 echo
 echo "── blocked: blanket staging (both routes) ──"
 t BLOCK 'git add .'

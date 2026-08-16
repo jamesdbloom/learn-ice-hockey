@@ -17,9 +17,26 @@ dist/
 backend.hcl
 
 # Saved plans. A plan file carries resource attributes and account identifiers
-# in the clear, whatever the configuration does to keep them out of the repo
+# in the clear, whatever the configuration does to keep them out of the repo.
+# The globs are deliberately wide: these were `tfplan` and `*.tfplan`, and a
+# plan saved as `tfplan.www301` matched neither, so it sat untracked and
+# unignored in a public repository's working tree. `git-guard.sh` did not catch
+# it either — its pattern is anchored the same way — and `check_secrets.py`
+# only scans tracked files. One `git add infra/` would have published it.
 tfplan
 *.tfplan
+tfplan*
+*.tfplan*
+
+# Environment files. `CLAUDE.md`'s Security section has always asserted that
+# .gitignore covers these; it did not — there was no `.env` pattern here at all,
+# and `git check-ignore .env` returned nothing. `git-guard.sh` blocks
+# `git add .env`, so the second line held, but the first was simply absent.
+# Found by the commit gate, in the same commit that fixed the identical shape
+# for saved Terraform plans.
+.env
+.env.*
+!.env.example
 
 # Build artefacts
 site/public/audio/
@@ -79,3 +96,10 @@ site/public/diagrams/
 # so nobody has to decide later whether a half-formed plan is something the project
 # committed to.
 *.local.md
+
+# Diagram tooling and working assets under /drills. Untracked by intent: it is
+# in-progress work whose output has not been through the review process, and a
+# blanket `git add -A` would sweep it into a content commit under somebody else's
+# message. Ignoring it makes that mistake impossible rather than merely unlikely.
+# Remove this entry deliberately if and when the folder is ready to be committed.
+/drills/

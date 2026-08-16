@@ -179,14 +179,36 @@ the North American position the corpus states elsewhere:
 `nhl.com/info/rules` returns 404 and the hosted PDF often exceeds fetch limits, so **do not fetch the rulebook from that URL.** The primary sources, as previously extracted:
 
 ```
-/private/tmp/claude-503/-Users-uk45004860-Documents-personal-ice-hockey/0595129f-cbc3-4aa3-a9cd-312c832ff5c9/scratchpad/
-    nhl_rules.txt    NHL Official Rules 2025-2026  (25,394 lines — the authoritative source)
-    iihf_rules.txt   IIHF Official Rulebook 2025/26, Version 1.0, May 2025  (7,606 lines)
-    usah_rules.txt   USA Hockey Playing Rules       (7,593 lines)
-    usah_case.txt    USA Hockey Casebook           (18,376 lines)
-    hc.txt           Hockey Canada Playing Rules 2024-2026
-    hc2628.txt       Hockey Canada Playing Rules 2026-2028  (current edition — cite this one)
+sources/                 ← in the repository. Everything in it is gitignored for
+                           copyright except `README.md`, which is tracked. Rebuilt by
+                           `bash scripts/fetch_sources.sh`. `sources/README.md` is
+                           the authoritative inventory; this list is a summary of it.
+    nhl_rules.txt        NHL Official Rules 2025-2026            (21,959 lines)
+    iihf_rules.txt       IIHF Official Rule Book 2025/26 v1.1     (10,983 lines — the
+                           edition Britain adopts; v1.0 kept alongside for comparison)
+    iihf_situations.txt  IIHF Situation Handbook 2025/26 v1.1     (8,941 lines)
+    usah.txt             USA Hockey Official Playing Rules 2025-29 (8,200 lines)
+    hc.txt               Hockey Canada Playing Rules 2026-2028     (9,127 lines)
+    eiha_inhouse.txt     IHUK In-House Rules 2025-26, Revision 1     (631 lines)
+    eih_rr.txt           England Ice Hockey Rules & Regulations      (2,307 lines)
 ```
+
+**⚠️ The USA Hockey Casebook is *not* on disk, and never has been in this
+directory.** An earlier version of this list named a `usah_case.txt` of 18,376
+lines, in a session scratchpad that no longer exists; `fetch_sources.sh` does not
+retrieve it, and the situations the corpus cites from it — for Rules 605, 624
+and 630 — appear in no file in `sources/`. (`usah.txt` *does* carry five
+Situations, at lines 6602-6652, but they belong to the Blind Hockey One Pass
+rule in the Disabled Hockey section of the **Playing Rules**, not to the
+separate Casebook volume. The first draft of this paragraph said `sources/`
+held no USA Hockey Situation at all, which one `grep` falsifies — written
+into the very block correcting a governing document for being wrong.)
+
+Anything the corpus says about a USA Hockey casebook situation is
+therefore **unverifiable from this repository** and must carry that limit —
+`rules_primer.md` and `shooting.md` both do. If you fetch it, add it to
+`fetch_sources.sh` and the README table so the next agent inherits it rather
+than rediscovering this.
 
 Other extracted sources in the same directory, worth knowing about before you declare something unfindable: `tulsky.txt` (zone-entry study), `berg.txt` / `hockeyscan.txt` (Berg et al. 2025 on scanning), `ibc.txt` (Introduction To Body Contact), `huh.txt` (Heads Up Hockey), `bvhs.txt` (goaltending manual), `bnq.html`, `csa.pdf`.
 

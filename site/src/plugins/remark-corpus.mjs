@@ -19,7 +19,7 @@
  */
 
 import { readFileSync } from 'node:fs';
-import { visit } from 'unist-util-visit';
+import { SKIP, visit } from 'unist-util-visit';
 
 const WARNING_RE = /^\s*(⚠|❗|🚫)/u;
 const VERIFY_RE = /^\s*(verification note|note on|methodology note)/i;
@@ -288,13 +288,51 @@ export default function remarkCorpus(options = {}) {
       if (node.data?.hName) return; // already transformed above
       const text = toText(node.children[0] ?? node);
       let kind = 'note';
-      if (WARNING_RE.test(text)) kind = 'warning';
+      // Typed by *any* block inside it, not just the first. A callout whose
+      // opening line is a neutral note and whose second paragraph warns you
+      // about a penalty is a warning — reading only the first child gave the
+      // warning a neutral panel, which is the one case where the styling
+      // matters most.
+      const warns = (node.children ?? []).some((c) => WARNING_RE.test(toText(c)));
+      if (WARNING_RE.test(text) || warns) kind = 'warning';
       else if (VERIFY_RE.test(text)) kind = 'verify';
       node.data = {
         ...(node.data || {}),
         hName: 'aside',
         hProperties: { class: `callout callout-${kind}` },
       };
+    });
+
+    // ------------------------------------ warnings written as bare paragraphs
+    // A warning is load-bearing whichever syntax it arrives in. Some are
+    // written as blockquotes and were promoted above; others are written as
+    // plain paragraphs opening with ⚠️, because a blockquote does not reach
+    // the speech layer — `md_to_speech.py` drops the quoted form, so a
+    // penalty warning written as `> ⚠️ …` is never read aloud.
+    //
+    // The site used to style only the blockquote form. That split the corpus
+    // almost exactly in half — a browser pass found 31 warning glyphs inside
+    // styled callouts and 31 in unstyled `<p>`, across 16 documents — so the
+    // warning telling a reader that kicking is a match penalty rendered as
+    // ordinary prose directly above a routine facts block rendered as a
+    // coloured panel. Choosing the speech layer should not cost the visual one.
+    //
+    // This does not reach every warning glyph, and the remainder is bounded
+    // rather than outstanding: about twenty sit mid-sentence or inside a
+    // heading, where wrapping them would mean splitting the paragraph around
+    // them. Those are a content-shape question, not a plugin one. Every warning
+    // that *begins* a block is promoted — 61 of them at the last count, with
+    // none left unstyled.
+    // Recursive, not just top level: warnings also sit inside list items and
+    // inside sections built by the transforms above. Skip any paragraph that is
+    // already the child of a callout, or it would be wrapped twice.
+    visit(tree, 'paragraph', (node, index, parent) => {
+      if (!parent || index === null || node.data?.hName) return;
+      if (!WARNING_RE.test(toText(node))) return;
+      const parentClass = parent.data?.hProperties?.class ?? '';
+      if (typeof parentClass === 'string' && parentClass.includes('callout')) return;
+      parent.children[index] = wrapper('aside', { class: 'callout callout-warning' }, [node]);
+      return [SKIP, index + 1];
     });
 
     // ------------------------------------- explicit "Notes on verification"

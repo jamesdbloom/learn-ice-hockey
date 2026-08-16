@@ -140,8 +140,47 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.7;
-  /* The page itself must never scroll sideways, whatever the content does. */
+  /*
+    The page itself must never scroll sideways, whatever the content does.
+
+    This was `overflow-x: hidden`, which worked and cost more than it bought.
+    **Observed** in Chrome: every in-page anchor — all 151 corpus cross-links
+    and every "On this page" entry — updated the URL hash and moved the reader
+    nowhere, on documents up to 54,000px tall. Loading a document at a fragment
+    left `scrollY` at 0 with the target 17,934px below the viewport.
+
+    The **mechanism is not proven**. The usual account is that setting overflow
+    on one axis forces the other to compute as `auto` and promotes `body` to a
+    scroll container — but per CSS overflow propagation, `body`'s overflow is
+    propagated to the viewport while `html` is `visible`, so that account is
+    probably not what happened here. Do not trust the explanation; the
+    behaviour is what was measured, and swapping the declaration fixes it.
+
+    `clip` contains the same overflow without any scrolling mechanism at all.
+    Wide content is already handled where it belongs, by `.table-scroll` and
+    `pre` carrying their own `overflow-x: auto`.
+  */
+  max-width: 100%;
   overflow-x: hidden;
+}
+
+/*
+  The upgrade to `clip`, in a feature query rather than a second declaration.
+
+  Safari before 16 and iOS before 16 do not support `clip`, and they need to
+  keep `hidden` — the anchor bug is worse than nothing, but a page that scrolls
+  sideways on a phone is worse still, and phones are the surface this project
+  has never once managed to test.
+
+  Writing it as two declarations in one rule is the obvious way and does not
+  work: Lightning CSS deduplicates them at build time and keeps only the last,
+  so the fallback silently vanished from the minified bundle. Verified by
+  grepping `dist/_astro/*.css` after the build — do that again if you touch it.
+*/
+@supports (overflow-x: clip) {
+  body {
+    overflow-x: clip;
+  }
 }
 
 img,
