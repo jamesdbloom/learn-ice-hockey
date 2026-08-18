@@ -370,12 +370,12 @@ Turning to face pressure the instant you receive the puck is how players get pin
 ### The free hand and the arm bar — what is actually legal
 
 ```facts
-Rule: The free hand may fend off an opponent or their stick, but holding, pulling, tugging or grabbing is a holding minor (NHL Rule 56.1)
+Rule: The free hand may fend off an opponent or their stick, but holding, pulling, tugging or grabbing is a holding minor — NHL and IIHF Rule 56.1 only, USA Hockey writes no fend-off permission
 Rule: You may use your arm in a strength move to block, provided you have body position and are not holding with the hands (NHL Rule 54.2)
 Technique: Keep the free hand high on your own shaft and use the bar of forearm and shaft as your blocker
 Never: Hang onto an opponent's stick after fending it off
 Key: The infraction is holding, not interference — interference concerns a player who does not have the puck
-Rule: IIHF wording is substantively identical, and USA Hockey Rule 622 reaches the same place
+Rule: IIHF wording is substantively identical, but USA Hockey is not — Rule 622 names using a free hand to clutch, grab or hold the stick as holding and writes no fend-off permission at all
 ```
 
 This is widely misunderstood and worth getting exactly right, because it is the difference between a strong play and a penalty.
@@ -397,7 +397,7 @@ The safest habit — and the one recommended here — is to keep the free hand *
 
 > Note that the infraction here is **holding**, not interference — interference concerns checking or impeding a player who does *not* have the puck, which is not your situation when you are the puck carrier. Some coaches say "that's interference"; the correct word is holding.
 >
-> **The other rule sets agree, and the IIHF's definition is substantively identical to the NHL's** — same test, same permitted use, different house style (the IIHF text says "a Player… their", the NHL "a player… his"). IIHF Official Rulebook 2025/26: *"When a 'free hand' is used to hold, pull, tug, grab or physically restrain an opponent from moving 'freely', this must be penalized as 'holding'. The 'free hand' may be used by a Player to 'fend off' an opponent or their stick but may not be used to hold an opponent's stick or body."* USA Hockey reaches the same place through **Rule 622 – Holding an Opponent**, which defines holding as *"the action of a player wrapping their arms around an opponent or using a free hand to clutch, grab or hold the stick, jersey or body on the opponent… or using a free arm/hand to restrain or impede the opponent's progress"*, penalised as a minor. Verified against the primary rulebook texts on 27 July 2026.
+> **The IIHF's definition is substantively identical to the NHL's** — same test, same permitted use, different house style (the IIHF text says "a Player… their", the NHL "a player… his"). IIHF Official Rulebook 2025/26: *"When a 'free hand' is used to hold, pull, tug, grab or physically restrain an opponent from moving 'freely', this must be penalized as 'holding'. The 'free hand' may be used by a Player to 'fend off' an opponent or their stick but may not be used to hold an opponent's stick or body."* ⚠️ **USA Hockey reaches the same prohibition and does not write the same permission.** Its **Rule 622 – Holding an Opponent** defines holding as *"the action of a player wrapping their arms around an opponent or using a free hand to clutch, grab or hold the stick, jersey or body on the opponent… or using a free arm/hand to restrain or impede the opponent's progress"*, penalised as a minor — but **the fend-off permission is the NHL's and the IIHF's alone.** The phrase *"fend off"* appears nowhere in USA Hockey's rulebook, and Rule 622 names using a free hand to clutch, grab or hold the stick as holding outright, with no self-defence carve-out to set against it. So under that book the habit recommended above is not merely the safest option, it is the only protected one. Verified against the primary rulebook texts on 27 July 2026, and the USA Hockey position rechecked against Rule 622 and the whole of that book on 17 August 2026.
 
 ### Spinning off pressure
 
@@ -931,7 +931,7 @@ document, that is named too.*
 4. **Handle around your whole body, front-to-back as well as side-to-side.** Side-to-side alone is a rhythm, and rhythms get read.
 5. **Puck on the far side, base wide and low, backside into the checker.** That is puck protection in one line, and it wins more possessions than every deke you will ever learn. **One situation overrides all of it.** With a checker arriving at speed near the boards, never turn your back to the wall and never duck: skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest ([Body Contact and Battles](body_contact_and_battles.md), which owns this).
 6. **Know your out before you get there.** Protection buys a second, not a minute. Decide who you are passing to — or where you are rimming it — before your stick touches the puck.
-7. **The free hand may fend off, but not hold.** Fending off an opponent's stick is legal (NHL Rule 56.1); grabbing, pulling or tugging is a holding minor. Keep the hand on your own shaft.
+7. **The free hand may fend off, but not hold — and the fend-off half is written in two books of four.** Using the free hand to *"fend off"* an opponent or their stick is permitted by **NHL and IIHF Rule 56.1**; grabbing, pulling or tugging is a holding minor everywhere. **Neither USA Hockey nor Hockey Canada writes the fend-off permission** — the phrase appears in neither book. Hockey Canada does permit *blocking* an opponent's stick with the hands, arms or body (Rule 8.1), but not holding it; **USA Hockey writes no stick permission at all.** So keep the hand on your own shaft, which is the right habit anywhere and the only protected one there. (Do not confuse it with the *arm-block* permission for a strength move, which **is** written in Hockey Canada 8.1 as well as NHL and IIHF 54.2.)
 8. **Do not slow down when you get the puck.** Push it slightly ahead and to the side, take real strides, and let the puck and your body take separate routes when a stick is in the way.
 9. **A deke works on what you show, not what you do** — so commit fully, involve your head and shoulders, use one fake rather than four, and accelerate out of it.
 10. **Most 1-on-1s are won by change of speed and body position, not hands** — and the most common amateur error of all is dangling when a pass was on.

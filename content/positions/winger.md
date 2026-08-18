@@ -92,7 +92,7 @@ Technique: Backside into them, feet wide and low, feet still moving — a statio
 Technique: Aim for skates parallel to the boards, forearm and hip to the wall, head up; facing the boards chest-first is the fallback
 Never: Turn your back to the wall, duck, or turn into pressure the instant you receive it
 Read: Rim to beat a checker sealing you against the boards; reverse to beat one who has over-committed and skated past you
-Rule: NHL Rule 56.1 permits your free hand to fend off an opponent or their stick — fingers closing on a jersey or a stick is a holding minor
+Rule: NHL and IIHF Rule 56.1 permit your free hand to fend off an opponent or their stick — fingers closing on a jersey or a stick is a holding minor, and USA Hockey writes no fend-off permission at all
 Action: Know your out before you get there, and don't force a pass through traffic in your own zone
 Goal: Don't lose the puck in a dangerous position — get it to safety
 ```
@@ -109,7 +109,7 @@ Goal: Don't lose the puck in a dangerous position — get it to safety
 - **Get your backside into them and your feet wide.** A wide, low base is almost impossible to move. Standing tall and narrow is why players get knocked off pucks.
 - **Do not turn into pressure the instant you receive it** — take it, absorb the contact, then spin off. But note the ranking in the owning document: the orientation you are aiming for at the wall is **skates parallel to the boards, forearm and hip to the wall, head up**. Facing the boards chest-first is the *fallback* for when you are already facing the wall and cannot turn — and if you use it, get your stick and gloves up and spread on the glass, with no head contact at all. **Never your back to the wall, never duck.**
 - **Keep your feet moving.** A stationary player on the wall gets pinned; a player with momentum can escape along the boards or spin out toward the middle.
-- **Use your free hand to fend off.** This is explicitly legal: NHL Rule 56.1 permits the free hand to "fend off" an opponent or their stick, and Rule 54.2 permits using your arm in a strength move to block an opponent *provided you have body position*. What is penalised is using that hand to **hold, pull, tug or grab** — that's a holding minor — or to hold an opponent's stick. So: forearm and open hand to keep them off you, fine; fingers closing on a jersey or a stick, two minutes.
+- **Use your free hand to fend off — in the book you are most likely watching, not necessarily the one you play under.** NHL and IIHF Rule 56.1 permit the free hand to "fend off" an opponent or their stick; **USA Hockey writes no such permission**, and Hockey Canada 8.1 lets you *block* an opponent's stick but not hold it. Under the NHL and IIHF, and Rule 54.2 permits using your arm in a strength move to block an opponent *provided you have body position*. What is penalised is using that hand to **hold, pull, tug or grab** — that's a holding minor — or to hold an opponent's stick. So: forearm and open hand to keep them off you, fine; fingers closing on a jersey or a stick, two minutes.
 - **Know your out before you get there.** Decide where the puck is going while you're still skating to it, not after you're pinned.
 
 **Goal:** Don't lose the puck in a dangerous position. Get it to safety.
