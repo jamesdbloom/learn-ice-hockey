@@ -1010,6 +1010,61 @@ a.chip:hover {
   border-bottom: 0;
 }
 
+/*
+  Sticky row label, and a sticky header where the container can scroll for it.
+
+  DF37: the four-way rulebook comparisons are the widest tables in the corpus,
+  and on a phone a reader scrolled two columns right is looking at prescriptive
+  text with no idea which rule the row is about — and in the §10 table one of
+  those columns is "Typical rec / beer league", which the document's own notes
+  call a generalisation. Reading a generalisation as if it were the IIHF row is
+  a safety problem, not a cosmetic one.
+
+  The row label is the reliable half: `left: 0` sticks against the horizontal
+  scroll this wrapper already owns. It needs its own background, or the cells
+  it slides over show through, and a right-hand border so the join is legible.
+
+  The header half is constrained by the spec: `overflow-x: auto` makes the used
+  value of `overflow-y` auto too, so this wrapper is its own vertical scrollport
+  and `top: 0` sticks to the wrapper rather than the viewport. That is only
+  useful once the wrapper is height-capped, which is what `--table-max-h` does
+  for the tables tall enough to need it. Capping every table would be worse
+  than the problem, so the cap is opt-in per table via a modifier class.
+*/
+.table-scroll th:first-child,
+.table-scroll td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--bg-raised);
+  border-right: 1px solid var(--border);
+}
+
+.table-scroll thead th:first-child {
+  /* Above the body's sticky column, so the corner cell wins both ways. */
+  z-index: 3;
+  background: var(--bg-inset);
+}
+
+.table-scroll tbody tr:hover td:first-child {
+  background: var(--bg-sunken);
+}
+
+/*
+  Opt-in vertical cap. Only with this does a sticky header have anything to
+  stick to, because the wrapper becomes the scrollport in both axes.
+*/
+.table-scroll--tall {
+  max-height: var(--table-max-h, 80vh);
+  overflow-y: auto;
+}
+
+.table-scroll--tall thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .table-scroll tbody tr:hover {
   background: var(--bg-sunken);
 }
