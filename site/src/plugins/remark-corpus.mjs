@@ -20,6 +20,7 @@
 
 import { readFileSync } from 'node:fs';
 import { SKIP, visit } from 'unist-util-visit';
+import { fromMarkdown } from 'mdast-util-from-markdown';
 
 const WARNING_RE = /^\s*(⚠|❗|🚫)/u;
 const VERIFY_RE = /^\s*(verification note|note on|methodology note)/i;
@@ -222,11 +223,25 @@ export default function remarkCorpus(options = {}) {
             { type: 'text', value: m ? m[1] : '' },
           ]),
         );
-        rows.push(
-          inline('dd', { class: 'facts__value' }, [
-            { type: 'text', value: m ? m[2] : line.trim() },
-          ]),
-        );
+        // The value is parsed as inline markdown, not kept as a raw text node.
+        // Emitting it verbatim shipped literal asterisks to the reader in five
+        // places — one of them inside a match-penalty rule, where `*whether or
+        // not an injury occurs*` rendered as punctuation noise. The house style
+        // uses emphasis in facts values, so the fix belongs here and not in the
+        // content. Anything that fails to parse falls back to the raw text,
+        // because losing a fact is worse than showing an ugly one.
+        const raw = m ? m[2] : line.trim();
+        let valueChildren;
+        try {
+          const first = fromMarkdown(raw).children[0];
+          valueChildren =
+            first && first.type === 'paragraph' && first.children.length
+              ? first.children
+              : [{ type: 'text', value: raw }];
+        } catch {
+          valueChildren = [{ type: 'text', value: raw }];
+        }
+        rows.push(inline('dd', { class: 'facts__value' }, valueChildren));
       }
       if (!rows.length) return;
 

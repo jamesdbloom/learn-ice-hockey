@@ -1037,7 +1037,16 @@ a.chip:hover {
   left: 0;
   z-index: 1;
   background: var(--bg-raised);
-  border-right: 1px solid var(--border);
+  /*
+    Not `border-right`. This table sets `border-collapse: collapse`, so a cell
+    border belongs to the table's border grid rather than to the cell box, and
+    is therefore NOT painted with the sticky cell as it slides over the scrolled
+    columns. The background is a cell property and sticks; the border is not and
+    does not — so the join vanished at exactly the moment DF37 needs it, leaving
+    the pinned label butted against mid-word fragments of the scrolled column.
+    An inset shadow is a cell paint and survives sticky positioning.
+  */
+  box-shadow: inset -1px 0 0 var(--border);
 }
 
 .table-scroll thead th:first-child {

@@ -19,7 +19,7 @@
 #   * History is not rewritten and nothing is force-pushed. The working tree
 #     routinely holds unstaged review work, so `reset --hard` and `clean -fd`
 #     destroy evidence, not just edits.
-#   * A commit staging content/ passes check_links.py and check_facts.py.
+#   * A commit staging content/ passes check_links.py, check_facts.py and check_absolutes.py.
 #   * Commit messages do not credit Claude, Anthropic or an AI co-author.
 #   * Pushing asks first. main deploys to production.
 #
@@ -344,6 +344,20 @@ ${LINKS_OUT}
         FAILURES="${FAILURES}
 --- scripts/check_facts.py ---
 ${FACTS_OUT}
+"
+      fi
+    fi
+
+    # check_absolutes.py was written after twenty instances of one defect and was
+    # wired into nothing — not this hook, not CI. A checker nobody runs decays: its
+    # own docstring records that its instance count "had shipped stale twice", and
+    # its second rule shipped inert at the wrong indent and reported clean for a
+    # whole gate cycle. It runs here now, with the other two.
+    if [ -f "$REPO/scripts/check_absolutes.py" ]; then
+      if ! ABS_OUT="$(cd "$REPO" && python3 scripts/check_absolutes.py 2>&1)"; then
+        FAILURES="${FAILURES}
+--- scripts/check_absolutes.py ---
+${ABS_OUT}
 "
       fi
     fi

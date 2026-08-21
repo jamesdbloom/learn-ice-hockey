@@ -32,6 +32,9 @@ DOCS=(
   "usah|https://www.usahockey.com/|https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf"
   "eiha_inhouse|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf"
   "eih_rr|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf"
+  "iihf_coachdev_off_tactics|https://www.hockeyeasternontario.ca/|https://www.hockeyeasternontario.ca/media/n4pf15hp/iihf_coachdev_off_tactics.pdf"
+  "heo_intl_drill_symbols|https://www.hockeyeasternontario.ca/|https://www.hockeyeasternontario.ca/media/ns2jrj0c/dev1_international_drill_symbols.pdf"
+  "ibc|https://www.usahockey.com/|https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf"
 )
 
 command -v pdftotext >/dev/null 2>&1 || {

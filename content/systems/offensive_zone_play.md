@@ -83,7 +83,7 @@ The best chances do both at once: a pass across the slot to a player already in 
 
 ## 2. The Royal Road — The Most Valuable Action in Offensive Hockey
 
-### What it is
+### The Royal Road: What it is
 
 ```facts
 Key: The royal road is an imaginary line down the centre of the ice, lengthwise, from the middle of one net to the middle of the other
@@ -166,9 +166,10 @@ Knowing the concept is worthless without the habits that produce it. Four practi
 Convention: F1, F2 and F3 are roles defined by order of arrival — first, second and third to the puck — not by whether you are a centre or a winger
 Key: Where arrival order and depth in the zone do not coincide, arrival order is what decides the label
 Convention: "Hunt, help, high" is the forecheck shorthand — F1 hunts the puck, F2 helps F1, F3 stays high
-Position: One player below the puck — the outlet that lets it go backwards to safety, and the one who can attack the net from behind
-Position: One player level with the puck — close support a short pass away, in the inside lane rather than flat on the boards
-Position: One player above the puck — the shooting option on a low-to-high and the first line of defence if you lose it
+Position: One player below the puck, one level with it and one above — the outlet that lets the puck go back to safety and can attack the net from behind, the close support, and the shooting option
+Position: The level player is close support, usually a short pass away, in the inside lane rather than flat on the boards — that is the player who receives the bump
+Key: The player above the puck is the shooting option on a low-to-high and your first line of defence the moment you lose it
+Convention: Rotation rules are a coaching choice and change who may drop below the puck — ask which rotation your team runs before you decide someone is out of position
 Goal: Give the puck carrier at least two options at all times; players without the puck keep moving to provide them
 ```
 
@@ -259,7 +260,7 @@ Never: Confuse the bumper with the net-front player — two different jobs at tw
 
 ## 4. Cycling
 
-### What it is
+### Cycling: What it is
 
 ```facts
 Key: A cycle rotates the forwards around the low offensive zone — corner, half-wall, behind the net — protecting the puck from the defence
@@ -692,14 +693,14 @@ Never: Pinch when your forwards are already below you, when the opponent has tur
 Technique: Stick in the passing lane before your feet commit; angle the winger into the boards, never toward the middle; close with short explosive steps
 Priority: Take the player or take the puck — achieve neither and you have created an odd-man rush against your own team
 Rule: A player facing the glass is defenceless — NHL Rule 41.1 puts the onus on you to avoid or minimise contact, and driving into their back is a major with no minor option (NHL and IIHF Rule 43.2)
-Rule: Body checking is banned at USA Hockey 12U and below, in all girls'/women's and all non-check adult classifications (Rule 604(a)), and at Hockey Canada U13 and below and throughout female hockey (Rule 7.3)
+Rule: Body checking is banned at USA Hockey 12U and below, in all girls'/women's and all non-check adult classifications (Rule 604(a)), and at Hockey Canada U13 and below, throughout female hockey and in any Member-approved division (Rule 7.3)
 Rule: Neither the IIHF Rule Book nor the In-House Rules state an age at which body checking becomes legal — ask your league (UK and England Rules owns this)
-Rule: NHL Rule 56.2(iii) is a minor on any player who deliberately checks an opponent not in possession of the puck — once the puck is gone, so is your check
+Rule: Checking a player who no longer has the puck is a minor under NHL 56.2(iii), and not capped there — IIHF 56.5 reaches a major plus game misconduct with nobody hurt; USA Hockey 640(b) grants no window at all, and though that minor excepts Adult Male Classifications, 640 Note 2 reaches it there
 Action: If the pinch fails, retreat toward the slot, not along the boards — following the puck down the wall abandons the middle
 Convention: How aggressively defencemen pinch is a coaching choice — some green-light both, some only the strong side, some forbid going below the circles; ask
 ```
 
-A **pinch** is stepping down from the offensive blue line to keep the puck in the zone or to win a puck on the wall. **Do not confuse it with a step-up**, which is challenging an attacker in the neutral zone or at your own line — different play, different zone.
+A **pinch** is stepping down from the offensive blue line to keep the puck in the zone or to win a puck on the wall. **Do not confuse it with a step-up**, which is challenging an attacker in the neutral zone or at your own line — different play, different zone. ⚠️ **And before the criteria: under USA Hockey there is no late-hit window to judge.** Rule 640(b) says a player who has released a shot or pass *"are not eligible to be body checked"*, and the Declaration of Player Safety calls *"finishing the check"* an *"unacceptable action"*. **There the test is whether you could have avoided the contact, not how late you were** — so everything below is about whether to go at all, not about how late you may arrive.
 
 The decision criteria, which are consistent across coaching sources:
 
@@ -733,11 +734,11 @@ The decision criteria, which are consistent across coaching sources:
 > **And check that you may hit at all.** Body checking is prohibited under USA
 > Hockey Rule 604(a) at 12U and below, in every girls'/women's classification and
 > in every non-check adult classification, and under Hockey Canada at U13 and
-> below and throughout female hockey. Most adult rec leagues do not permit it
+> below, throughout female hockey and in any Member-approved division. Most adult rec leagues do not permit it
 > either, and Britain publishes no age — so ask your league. Where checking is
 > not permitted, everything here is angling, body position and playing the puck.
 
-> **"Take the player" has a legal limit.** You may finish a check on the player who *has* the puck, and you may use your body to seal them against the wall while contesting a puck you can both reach. You may **not** hit a player who has already moved the puck: NHL Rule 56.2(iii) makes it a minor *"on any player who deliberately checks an opponent, including the goalkeeper, who is not in possession of the puck."* On a pinch this happens constantly — the winger chips it past you and you arrive a beat late. Once the puck is gone, so is your check. Play the puck instead.
+> **"Take the player" has a legal limit.** You may finish a check on the player who *has* the puck, and you may use your body to seal them against the wall while contesting a puck you can both reach. You may **not** hit a player who has already moved the puck: NHL Rule 56.2(iii) makes it a minor *"on any player who deliberately checks an opponent, including the goalkeeper, who is not in possession of the puck."* ⚠️ **And a minor is not the ceiling.** IIHF 56.1 calls a late hit reckless endangerment of a player who no longer has the puck, and 56.5 reaches a major plus a game misconduct with nobody hurt; Hockey Canada 8.3(b) reaches that tier on *"the degree of violence of the impact"* with nobody hurt, and makes it mandatory where a late hit injures. What keeps a pinch legal is **immediacy**, not possession: NHL 56.1 permits a check *"rendered immediately following his loss of possession"*, and Hockey Canada 8.3 says immediate contact *"is best described as"* contact within an arm and stick length of the carrier at the instant the puck is released. **So the safe habit is to arrive while they still have it**, because you cannot judge a beat at speed. ⚠️ **And USA Hockey writes no window at all** — 640(b) says a player who has released a shot or pass *"are not eligible to be body checked"*, and the Declaration of Player Safety calls *"finishing the check"* an *"unacceptable action"*. There the test is whether you could have avoided it, not how late you were. **Treat that as the stricter standard, not a window the other books grant you** — the IIHF puts no measurable distance on it — proximity is a condition there, but a judged one; 56.1 sets a second condition instead, that you were still inside an *"objectively reasonable window of opportunity"* and, separately, *"in the immediate vicinity of the skater with the puck"*. On a pinch this happens constantly — the winger chips it past you and you arrive a beat late. Once the puck is gone, so is your check. Play the puck instead.
 
 **If the pinch fails:** retreat toward the **slot**, not along the boards. Skating back down the wall follows the puck and abandons the middle; cutting to the slot re-establishes your gap and delays the attack until support arrives.
 
@@ -881,8 +882,8 @@ The general principle is worth stating plainly: **having a defined assignment fo
 - **Standing in the blue paint to screen.** Legal screening happens *outside* the crease. Rule 69.3 will void a goal when an attacker establishes a significant vision-obstructing position inside the crease, even with no contact.
 - **Tipping with a high stick.** A puck contacting your stick above the height of the crossbar is not a goal (Rule 80.3). Keep the blade on the ice — which is where most tippable pucks are anyway.
 - **Two defencemen leaving the blue line at once.** Or one leaving and no forward filling in. This is the mechanism behind most odd-man rushes against attacking teams.
-- **Pinching without arriving on contact.** "Take the player or take the puck." Half-hearted pinches create 3-on-2s going the other way.
-- **Pinching to hit a winger who is facing the glass.** They cannot see you and cannot protect themselves, and the onus is on you to avoid or minimise the contact. Take the puck.
+- **Pinching without arriving on contact.** "Take the player or take the puck." Half-hearted pinches create 3-on-2s going the other way. And arriving a beat late is not capped at a minor: **under USA Hockey there is no window to be late inside of at all** — 640(b) says a player who has released a shot or pass *"are not eligible to be body checked"*, and the test is whether you could have avoided the contact, not how late you were. That named minor is written *"except Adult Male Classifications"* — but it is not a free hit there either: 640 Note 2 directs a roughing penalty for *"an avoidable body check to an opponent … who is no longer in control of the puck"* with no classification exception.
+- **Pinching to hit a winger who is facing the glass.** They cannot see you and cannot protect themselves, and the onus is on you to avoid or minimise the contact. Take the puck — **and no book lets this one cost you two minutes and nothing else**: driving into a defenceless player's back is checking from behind, and **under the NHL and the IIHF there is no minor option at all** — IIHF 43.2 says *"there is no option to award a minor penalty"* and 43.3 is a major plus an **automatic** game misconduct. Hockey Canada 7.5(a) and USA Hockey 608(a) do write a minor, but never a bare one: 7.5(a) is a minor **and** a game misconduct, 608(a) a minor **plus a misconduct**.
 - **Retreating along the boards after a failed pinch.** Cut to the slot instead. Following the puck down the wall abandons the middle of the ice.
 - **Quitting after the shot.** The two seconds after a shot are the most dangerous moment of your entire possession. Most teams spend them watching.
 - **Having exactly one way to attack.** Rush-only teams are shut down by any structured defence; cycle-only teams never threaten before the defence is set.
@@ -944,7 +945,7 @@ document, that is named too.*
 7. **The seconds right after a shot are the most likely time to score, and the defending team recovers roughly 60% of rebounds** (Alex Novet, via The Coaches Site). You win that race by deciding to be there before the shot.
 8. **Keep the shape: one player below the puck, one level with it, one above it, two on the blue line.** That two-on-the-line rule is a default, not a law — other teams rotate all five, or slide the weak-side defenceman across. Find out which yours plays.
 9. **Build both attacks.** Rush offence lives on speed and numbers in three seconds, set offence on patience over thirty. Teams with only one get shut down.
-10. **Almost everything here is a coaching choice, not a law** — triangle rotation versus overload, whether defencemen pinch, who takes the net front. Find out what your team plays before deciding someone else is out of position.
+10. **Almost everything here is a coaching choice, not a law** — triangle rotation versus overload, whether defencemen pinch, who takes the net front. Find out what your team plays before deciding someone else is out of position. **How aggressively you pinch is a choice; whether a late pinch is legal is not** — once the puck is gone, so is your check, and it is not capped at a minor: IIHF 56.5 reaches a major plus a game misconduct with nobody hurt. **And under USA Hockey there is no window to be late inside of** — 640(b) says a player who has released a shot or pass *"are not eligible to be body checked"*, so the question there is whether you could have avoided the contact, not how late you arrived. Its named minor reads *"except Adult Male Classifications"*, and 640 Note 2 catches it there as roughing regardless.
 
 ---
 

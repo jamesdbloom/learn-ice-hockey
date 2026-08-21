@@ -19,17 +19,11 @@ Key: You see everything and you are the only player not deciding while sprinting
 Mindset: You will let in bad goals — have a reset ritual, use it identically every time, and do the analysis tomorrow, not during the game
 ```
 
-Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all.
+Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all. That one idea is why the facts above are ordered as they are.
 
-**Be out, be square, be set — in that order.** That means: as far out of your net as the situation calls for, chest and hips pointed at the puck, centred on the line from the puck to the middle of the goal, and stationary as the shot leaves. Out and square but still moving is worse than slightly shallow and completely set.
+Three of them carry a reason the block has no room for. **"Out, square, set" is an order, not a list:** out and square but still moving is worse than slightly shallow and completely set. **Tracking the puck all the way in** pays twice — almost every soft goal starts with losing sight of it, and if you saw it hit you, you already know where the rebound went. **And your voice** is the most valuable thing you do that is not a save: you are the only player on the ice not deciding while sprinting, and that view is wasted unless you say it — early, short, and every time, because a goalie who calls intermittently trains their defencemen to filter them out.
 
-**Depth is the decision you make before every save, and it always trades the shooter in front of you against the pass behind.** Come out at a lone shooter with no pass available; get back when the puck is in tight, or a pass across the front of the goal is on. Against a shot from distance with a screen — a player standing in your view — the coaching schools genuinely disagree: one wants you deeper, for time to find the puck; the other calls going deep a common error and wants a close gap — so ask which your coach teaches.
-
-**Track the puck all the way into the pad, the glove, the chest.** Almost every soft goal starts with losing sight of it; if you saw it hit you, you know where the rebound went. When a pass is released, move then, not when it arrives.
-
-**Your voice is the most valuable thing you do that is not a save.** You see everything and you are the only player not deciding while sprinting — a view wasted unless you say it. "Time", "man on", "leave it", "screen", "back door" — early, short, every time, because a goalie who calls intermittently trains their defencemen to filter them out.
-
-**You will let in bad goals.** Have a reset ritual, use it identically every time, and do the analysis tomorrow, not during the game.
+⚠️ **One fact above is a live disagreement rather than a settled answer.** On a screened shot from distance the coaching schools split: one wants you deeper, for time to find the puck; the other calls going deep a common error and wants a close gap. Ask which your coach teaches before you pick one.
 
 If you have not started playing yet, this is the cheapest route onto the ice: goalies are scarce, so learn-to-play places are often free or discounted and clubs often loan gear.
 
@@ -315,7 +309,7 @@ RVH was developed in Sweden in 2010 by goaltending coaches Linda Blomquist and D
 
 Note the word: **selection**. You are not reacting randomly; you are choosing the save that fits the situation, and the choice is made before the shot arrives, from your read of where everyone is.
 
-- **Butterfly** — dropping to your knees with both pads extended sideways and the five-hole closed. It covers the great majority of the lower net, and most goals are scored low. It is the base save of modern goaltending for that reason.
+- **Butterfly** — dropping to your knees with both pads extended sideways and the five-hole closed. It covers the great majority of the lower net, and it is the base save of modern goaltending for that reason. *(The supporting claim usually given — that most goals are scored low — is repeated widely in coaching material, but no measured source is offered for it here, so treat it as consensus rather than a figure.)*
 - **Half butterfly** — one pad extends while the other stays underneath supporting your body. Mitch Korn calls it "probably the most used save" in hockey. It handles a low shot to one side while leaving you balanced and able to recover, and it can be executed while stationary, moving in any direction, or turning to stay square.
 - **Glove save** — catching cleanly with the trapper. The best possible outcome of any high shot, because it produces no rebound at all and stops play or gives you the puck.
 - **Blocker save** — deflecting with the rectangular pad on your stick hand. A blocker save always produces a rebound, so the technique is about *where* you send it: angle the blocker face so the puck goes to the corner, not back into the slot.
