@@ -720,6 +720,25 @@ before drawing a drill, not after.
 is the HEO sheet's convention and is wrong under §21.1: backward skating is loops, and the zigzag is a
 separate symbol for the backward crossover.
 
+### ⚠️ The legend glyphs are settled — do not re-derive them
+
+**Signed off by the owner on 21 August 2026**, from the rendered legend on
+`/reading-diagrams/reading_ice_hockey_diagrams/`, viewed in a browser. Every symbol on that
+page is correct as drawn: forward skating, passing, backward skating (arches), lateral
+crossovers, pivot, blocking/screening (a single arc), dropping the puck, skate-and-stickhandle,
+shooting, backward crossover (zigzag), stop, sudden stop, and **body check — a line ending in an
+S**, which took several attempts to get right.
+
+**Do not change, "correct" or re-review these glyphs.** The body check in particular has been
+drawn wrong more than once — as the mirror of the screen — and the current version is the one
+that was checked against the source page and against a human eye. If a future trace or key
+appears to disagree, **raise it and get a decision; do not edit the glyph.** The cost of being
+wrong here is not a wrong diagram, it is a wrong diagram that looks authoritative because the
+file's own history says the symbol was verified.
+
+This is a scope note, not a licence: it settles **the legend on that page**. Every *other*
+diagram is still checked against this section before it ships.
+
 ### The checks
 
 - **A symbol's meaning is only ever as good as its source.** If a diagram uses a symbol, the key must define

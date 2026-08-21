@@ -565,6 +565,14 @@ traps — the bow is *not* reversed and the carrier is *not* drawn as skating wi
   `shooting`. That independently reproduces `diagram-reviewer`'s enumeration of six, and confirms
   `support-triangle` is **not** a quoted placement despite both review records naming it as one.
   `--self-test` passes 116 assertions; a full dry run covers 37 documents and 1,582 chunks.
+> ### ✅ The notation legend is signed off — 21 August 2026
+>
+> The owner viewed the rendered legend on `/reading-diagrams/reading_ice_hockey_diagrams/` and
+> confirmed **every glyph on it is correct**, including the **body check (a line ending in an S)**,
+> which took several attempts. **That page's symbols are out of scope for further review or
+> change.** Recorded in the style guide's diagram section. If a later trace seems to disagree,
+> raise it — do not edit the glyph.
+
 > ### ⚠️ Majors 3 and 4 are blocked on coordination, not on effort — checked 21 August 2026
 >
 > **Do not fix these from a fresh session without talking to the diagram workstream first.**
