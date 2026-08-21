@@ -565,6 +565,31 @@ traps — the bow is *not* reversed and the carrier is *not* drawn as skating wi
   `shooting`. That independently reproduces `diagram-reviewer`'s enumeration of six, and confirms
   `support-triangle` is **not** a quoted placement despite both review records naming it as one.
   `--self-test` passes 116 assertions; a full dry run covers 37 documents and 1,582 chunks.
+> ### ⚠️ Majors 3 and 4 are blocked on coordination, not on effort — checked 21 August 2026
+>
+> **Do not fix these from a fresh session without talking to the diagram workstream first.**
+> Both live in files that workstream is actively rewriting, and one of them is rewriting the
+> exact lines Major 4 names:
+>
+> | File | Uncommitted |
+> |---|---|
+> | `site/scripts/lib/rink.mjs` | **+605 / −106** |
+> | `site/src/diagrams/positions.mjs` | +207 / −1 |
+> | `site/src/data/diagrams.json` | +45 / −12 |
+> | `faceoffs · notation · special_teams · playing_without_the_puck · puck_support_and_spacing · rules_primer` | +70 / −34 combined |
+> | `site/src/data/rink.json` | +1 / −1 |
+>
+> Its in-flight diff **already removes one inverted axis block** (the `TEAMS — this corpus
+> follows key (B) … SHAPE CARRIES TEAM` header) and is correcting glyph descriptions from a
+> 1200 dpi trace of the source page — including a `BODY CHECK` symbol the file had drawn as the
+> mirror of the screen for two revisions. So Major 4 is **partly fixed already**, by someone
+> else, mid-flight.
+>
+> Three inverted statements still stand in *their* working copy — `rink.mjs:841`, `:849`,
+> `:1417` — so the finding is real and not yet closed. But editing those lines now is the
+> `239f70d` race by definition, and the loser is whoever writes first. **Hand the finding over;
+> do not apply it.**
+
 - ⬜ **Major 3 — the puck is drawn inside the player glyph, and round-34's fix reached three
   diagrams out of sixty-two.** Threshold is 4.375 ft (circle ink 3.275 + puck 1.1). This diagram
   has **4.123** to A1 and **5.000** against a 5.100 triangle minimum at D. Worse than the three
