@@ -431,7 +431,29 @@ Three consequences:
 ## Writing rules
 
 - **Plain English.** No jargon without definition on first use in that document.
-- **Define every hockey term the first time it appears**, even if another document defines it. Documents must stand alone when read aloud. (Cross-link as well.)
+- **Define a term where it is used in a particular sense; point at the glossary for the rest.**
+  [`rink_map_and_glossary.md`](../content/foundation/rink_map_and_glossary.md) is the dictionary for
+  this corpus — 68 entries in its §8 glossary, linked from 20 documents — and general rink vocabulary is defined there
+  **once**. A document carries only the terms it uses in a sense of its own, and opens its language
+  section with a pointer so a reader meets the vocabulary page *before* they need it.
+
+  ⚠️ **This rule replaced a stricter one, and the reason for the strict version has not gone away.**
+  It read: *"Define every hockey term the first time it appears, even if another document defines it.
+  Documents must stand alone when read aloud."* That existed for the **podcast** — a listener cannot
+  follow a link, so a document that points instead of defining leaves them stuck.
+
+  **What changed is the measurement.** Eight documents carried an identically-titled "A Note on
+  Language" section totalling **3,863 words — about 26 minutes of spoken definitions** — and the
+  duplication was real but partial: 48 distinct terms of which 11 appeared in more than one section,
+  and even those mostly said different things per document. So the strict rule was buying
+  standalone-ness at the price of eight pages that *looked* like boilerplate, while the genuinely
+  shared vocabulary was already in the glossary anyway.
+
+  **The listener's cost is real and is not fully mitigated.** What reduces it: the pointer must
+  **name what the glossary covers** ("every line, zone and named area of the ice"), so a listener at
+  least knows what kind of thing is missing and where it lives; and any term a document leans on
+  heavily keeps its one-line gloss inline. What is *not* claimed is that a listener is as well served
+  as before. They are not, and that is the trade the owner made deliberately.
 - **Second person.** "You are the last line of defence," not "the defenceman is..."
 - **Concrete over abstract.** "Roughly a stick-and-a-half of space" beats "an appropriate gap."
 - **Say why, not just what.** Every instruction should carry its reason. The reason is what makes it transfer to situations you didn't describe.
@@ -587,6 +609,129 @@ So, three rules:
 **And keep the honest disclosures.** An audit of ~40 of them found 30-plus were entirely sound — no study on black tape hiding the puck, no league-wide census of forecheck usage, no measured time cost of an icing clear, "2-2-1" genuinely not a hockey forecheck name. Those are a strength. Do not strip them to make the corpus look more confident than it is.
 
 ---
+
+## Diagrams and their notation
+
+**A diagram is a claim.** It is read faster than prose, trusted more, and remembered longer, so a wrong
+picture teaches a wrong position to a reader who never questioned it. The notation below is **fixed**, and
+every diagram added or changed is checked against it before it ships.
+
+*This section exists because the notation has already failed twice. The first version was written from
+memory, labelled honestly as unverified, and then used anyway — three of its five symbols meant something
+else in the published key, and a forecheck diagram showed a shot where it meant pressure and marked every
+opponent as a traffic cone. The second failure was subtler and lasted longer: the corpus took its player
+axis from one published key and its line symbols from a different one that disagrees, and stated the hybrid
+as though it were a single source.*
+
+### Two published keys, and which one owns which half
+
+The corpus draws from **two** sheets, both on disk, and it is explicit about which owns what:
+
+| | Source | Owns |
+|---|---|---|
+| **(A)** | `sources/heo_intl_drill_symbols.pdf` — "International Drill Symbols", HEO NCCP Development 1 | **the player symbols** |
+| **(B)** | `sources/iihf_coachdev_off_tactics.pdf` §21.1 — IIHF Coach Development, Level I | **the line symbols** |
+
+⚠️ **Both are image-only.** `pdftotext` on (A) returns its title and nothing else, and (B)'s extraction
+loses every glyph while keeping their names. **Render the page and look at it.** That is precisely how three
+line symbols stayed wrong through every check ever run: each check confirmed the right symbol *names*.
+
+`reading_ice_hockey_diagrams.md` must go on telling the reader that the two keys differ, and where. That
+disclosure is correct and it stays.
+
+### Shape carries the POSITION. Fill carries the TEAM.
+
+| Glyph | Means | | Fill | Means |
+|---|---|---|---|---|
+| **Circle** | a **forward** | | **Open** | the reader's own team |
+| **Triangle** | a **defenceman** | | **Solid** | the opposition |
+| **`G`** | a goaltender — a bare letter, **no enclosing shape** | | | |
+| **`X`** | a pylon, never a player | | | |
+
+Read straight off key (A), whose rows are `● ○ Forward / Player` and `▲ △ Defender / Player`. The corpus
+assigns the pair — **open is yours** — which the key itself does not state, and that assignment is a
+documented departure.
+
+**The notation is monochrome on purpose.** Colour carries nothing, so the encoding survives greyscale print,
+photocopying and a reader who does not see red and green apart.
+
+**A player's shape does not change when play turns.** A winger is a circle backchecking as well as
+attacking. `pos` in a diagram spec **decides the shape**; a comment justifying a `pos: 'D'` as *"a triangle,
+because he's a D"* is **correct**.
+
+⚠️⚠️ **This section has been wrong once, in the opposite direction, and it is the specification — so it was
+the most expensive copy to get wrong.** It stated that shape carried the **team** on an offensive/defensive
+axis, and instructed authors not to blend in key (A) "which uses shape for *position*" — which is exactly
+what the corpus does and what its own cited source says. That axis is IIHF §21.1's, it is real, and §21.1
+carries the position in a **numeral inside the glyph** instead. The corpus does not use those numerals, so
+it cannot use that axis either. **Three separate documents carried the wrong version simultaneously — this
+one, `rink.mjs`'s header, and `.claude/agents/diagram-reviewer.md` — and the last would have made a reviewer
+enforce it.** Do not trust any prose description of this axis, including this one: key (A) is a single page,
+it is on disk, and it takes ten seconds to look at.
+
+### What goes inside the glyph — the deviation
+
+§21.1 numbers players 1–6 by position (1 goaltender, 2 right defence, … 6 left wing). **This corpus does not
+use that**, because it is not how coaches speak. Instead:
+
+| Inside | Means |
+|---|---|
+| **`G`** | goaltender / netminder |
+| **`F1` `F2` `F3`** | the three forwards |
+| **`D1` `D2`** | the two defence |
+| **`C`** | a **centre** — see the collision note below |
+| **`A1` `A2`** | attackers, where the section counts them |
+| **`W` `W1` `W2`** | wingers |
+| *(empty)* | a new player or position |
+
+**The label is the vocabulary the surrounding section uses**, which is the whole reason the numerals are
+not: the corpus's most emphatic passage says *"F1, F2 and F3 are roles set by order of arrival and not
+people"*, and a numeral would author the position assignment the prose refuses to make. Generic **`F`** and
+**`D`** are permitted where a diagram genuinely does not distinguish individuals.
+
+⚠️ **Bare numerals `1`–`6` must never label a player.** That is §21.1's position numbering — circled `1` is
+its goaltender — so a bare digit reads as a claim the corpus does not make. This rule was broken once, by a
+power-play diagram whose own caption said *"what is fixed is the spacing, not who plays which spot"*.
+
+⚠️ **Two known collisions with key (A), both the owner's open call.** A circled **`C`** is (A)'s **coach**
+and a circled **`A`** its **assistant**. The corpus uses `C` for a centre at 37 glyphs across `site/src/diagrams/*.mjs` (countable with `grep -rEo "id: *'C'"`) and reserves `A1`/`A2`
+for attackers; bare `A` is not used. These are live only if a drill diagram is ever added — no diagram in the
+corpus draws a coach or an assistant — and relabelling those centres would break the rule directly above. Decide
+before drawing a drill, not after.
+
+### Movement symbols come from the key, and two are commonly got wrong
+
+| Symbol | Glyph |
+|---|---|
+| Forward skating | plain line, arrowhead |
+| **Backward skating** | **a row of overlapping flattened arches standing on the line** — horizontal C-cuts, *not a wave, not a coil, and not C's opening sideways* |
+| **Backward crossover** | **a zigzag** |
+| Skate and stickhandle | a long, smooth **wave**, arrowhead |
+| Shoot | double line, arrowhead |
+| Pass | dashed line, arrowhead |
+| Stop | two short slashes |
+| Pivot | hooked arrow |
+| Sudden stop | line ending in a perpendicular bar |
+| Blocking (screening) | line ending in an open curve |
+| Body check | line ending in a hook |
+| Pylon | **`X`** — a cone, never a player |
+
+**A smooth wave is *skate-and-stickhandle*, not backward skating.** Distinguishing the two by *wavelength*
+is the HEO sheet's convention and is wrong under §21.1: backward skating is loops, and the zigzag is a
+separate symbol for the backward crossover.
+
+### The checks
+
+- **A symbol's meaning is only ever as good as its source.** If a diagram uses a symbol, the key must define
+  it. If the key does not, that is a finding — find a key that does, do not pick something reasonable.
+- **One meaning per line style, corpus-wide.** A dashed line that means *pass* in one diagram and *backward
+  skating* in another is worse than no convention.
+- **Read the key's own wording.** It says *"skate and stickhandle"*, not *"carry"*. Renaming a symbol is how
+  a shared notation quietly becomes a private one.
+- **Check the picture against the prose beside it.** A diagram that contradicts its own section is the most
+  common diagram defect, and neither `check_links.py` nor `check_facts.py` can see it.
+- **Every diagram is checked against this section before it ships**, and `diagram-reviewer` checks it on every
+  diagram round. Adding a diagram without that check is the failure this section exists to prevent.
 
 ## Sources
 
