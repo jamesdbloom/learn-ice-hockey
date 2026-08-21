@@ -502,6 +502,36 @@ RE_FOOTNOTE_REF = re.compile(r"\[\^[^\]]+\]")
 _DIAGRAMS: dict | None = None
 
 
+# The document currently being transformed, as a doc_id ("systems__defending_the_rush").
+# A diagram caption is written for the document that OWNS the diagram and says things like
+# "the section" meaning that one, so a caption quoted elsewhere needs its source announced.
+# The site does this (remark-corpus.mjs) and the reason recorded there is a defect found in
+# the LISTENER experience — yet the fix went to the site only, and this pipeline is the
+# listener. Threading the identity through to_speech would touch eleven call sites for one
+# consumer, so it is module-scoped and set by transform_document.
+_CURRENT_DOC: str | None = None
+
+
+def _diagram_is_away(entry: dict) -> bool:
+    """True when this diagram is quoted outside the document that owns it."""
+    owner = entry.get("owner")
+    if not owner or not _CURRENT_DOC:
+        return False
+    here = owner[len("content/"):] if owner.startswith("content/") else owner
+    if here.endswith(".md"):
+        here = here[:-3]
+    return here.replace("/", "__") != _CURRENT_DOC
+
+
+def _diagram_owner_phrase(entry: dict) -> str:
+    """The owning document's title as it is spoken: "defending the rush"."""
+    owner = entry.get("owner", "")
+    leaf = owner.rsplit("/", 1)[-1]
+    if leaf.endswith(".md"):
+        leaf = leaf[:-3]
+    return leaf.replace("_", " ")
+
+
 def _diagram_manifest() -> dict:
     """Captions for `diagram:<id>` references, written by build-diagrams.mjs."""
     global _DIAGRAMS
@@ -538,6 +568,12 @@ def strip_inline_markdown(text: str, counter: Counter) -> str:
                     "Run: node site/scripts/build-diagrams.mjs"
                 )
             counter["md.diagram"] += 1
+            if _diagram_is_away(entry):
+                # Before the caption, not after it as on the page: a listener cannot
+                # glance back, so the warning has to arrive before the claim it qualifies.
+                counter["md.diagram_away"] += 1
+                return (f"Diagram, from {_diagram_owner_phrase(entry)}. "
+                        + entry["caption"])
             return "Diagram. " + entry["caption"]
         return alt
 
@@ -1852,6 +1888,8 @@ def render_heading(block: Block, report: DocReport) -> list[Token]:
 # ==========================================================================
 
 def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list[Chunk], DocReport]:
+    global _CURRENT_DOC
+    _CURRENT_DOC = doc_id
     report = DocReport(doc_id=doc_id, source=source_label)
     blocks = parse_blocks(path.read_text(encoding="utf-8"))
 

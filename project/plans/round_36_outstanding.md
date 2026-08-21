@@ -546,16 +546,25 @@ traps — the bow is *not* reversed and the carrier is *not* drawn as skating wi
 
 **Open — none of these blocks this commit:**
 
-- ⬜ **Major 2 — the cross-document attribution exists on the site and not in the audio, in the
-  exact case it was written for.** `remark-corpus.mjs:187-190` appends *"Diagram from …"* whenever
+- ✅ **Major 2 — CLOSED.** *The cross-document attribution existed on the site and not in the audio,
+  in the exact case it was written for.* `remark-corpus.mjs:187-190` appends *"Diagram from …"* whenever
   `away` is true, and its own comment gives the reason: *"the figcaption is emitted verbatim, so a
   listener heard a claim about a method the host document never states."* But
   `scripts/md_to_speech.py:540` is `return "Diagram. " + entry["caption"]` — **no owner lookup, no
   attribution branch.** So the fix justified by a listener defect was applied only to the site. A
   listener hears the borrowed gap distances as part of the angling section with nothing marking
   them as borrowed. **This affects all six quoted diagrams, not just this one.** Mirror the `away`
-  branch into the speech pipeline, keyed on the same manifest `owner` field. **Highest-value
-  follow-up on this list.**
+  **Fixed.** `md_to_speech.py` now announces provenance for a quoted diagram — *"Diagram, from
+  defending the rush. …"* — **before** the caption rather than after it as on the page, because a
+  listener cannot glance back and the warning has to arrive before the claim it qualifies.
+  Threading the document identity through `to_speech` would have touched eleven call sites for one
+  consumer, so it is module-scoped and set by `transform_document`.
+
+  Verified across the whole corpus: **118 diagram references, 6 quoted away from their owner** —
+  `risk_management`, `time_and_space`, `body_contact_and_battles`, `passing_and_receiving` (×2) and
+  `shooting`. That independently reproduces `diagram-reviewer`'s enumeration of six, and confirms
+  `support-triangle` is **not** a quoted placement despite both review records naming it as one.
+  `--self-test` passes 116 assertions; a full dry run covers 37 documents and 1,582 chunks.
 - ⬜ **Major 3 — the puck is drawn inside the player glyph, and round-34's fix reached three
   diagrams out of sixty-two.** Threshold is 4.375 ft (circle ink 3.275 + puck 1.1). This diagram
   has **4.123** to A1 and **5.000** against a 5.100 triangle minimum at D. Worse than the three
