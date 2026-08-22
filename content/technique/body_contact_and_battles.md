@@ -622,7 +622,7 @@ concussion. Do not let the player decide.
 The ten red flags that mean an ambulance, the symptoms short of that, and what has
 to happen in the hours afterwards are in
 [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md),
-which owns all of it.
+which covers all of it.
 
 ---
 

@@ -29,8 +29,8 @@ work in §§1, 4.3, 8b and 8c.
 > *"most goals are scored low"* labelled in its owner, not deleted.
 >
 > **Still open below:** §3.5, §3.6 and part of §3.7; fourteen glossary majors; and all of §§5–7.
-> ⚠️ **§2's table is a record of what the gate blocked on, not a live list** — C3, C4, C5, C6, C8
-> and C10 and the governing-document race were all closed before this shipped. Every other ⬜ is
+> ⚠️ **§2's table is a record of what the gate blocked on, not a live list** — C3, C4, C6, C8
+> and C10 and the governing-document race were all closed before this shipped. **C5 was not**, *at the time this table was written* — no citation had been refetched, and round 36's record declared D5 partial. It was closed afterwards: round 37's `source-verifier` pass refetched 337 external URLs and marks D5 ✅. Every other ⬜ is
 > live.
 
 ---
@@ -44,7 +44,7 @@ work in §§1, 4.3, 8b and 8c.
 | **All eight never-verified rule numbers confirmed** | IIHF 24.8, USA Hockey 639(a) Note / 639(b) / 639(c), Hockey Canada 8.6(b), Hockey Canada 8.7, NHL 21.1, NHL 57.2 — each grepped from primary text with operative wording quoted. |
 | **The facts-count "discrepancy" is not a parser bug** | HEAD 4,582 · working tree 4,593 · index 4,596 — three states of the same 26 documents, with agents editing between. `round_33_wave_a_findings.md:2571`'s parenthetical *"correcting the record: 4,591 facts, not the 4,593 quoted earlier"* asserts a disagreement the evidence does not require. **Do not "correct" this again without saying which tree state was measured.** |
 
-### Content fixes applied (all unstaged, all in the working tree)
+### Content fixes applied (committed in round 36; see §3 for what shipped in round 37)
 
 Three safety criticals, one factual error in three places, and five glossary defects:
 
@@ -59,7 +59,11 @@ Three safety criticals, one factual error in three places, and five glossary def
 
 ---
 
-## 2. Blocking the commit — the gate's own list
+## 2. What the gate blocked on — a record, not a live list
+
+> ✅ **All of these were resolved before round 37 shipped.** Kept for the reasoning and the evidence.
+> C10 and C8 below are marked ⬜ as they stood at the time; §8b records that the site *was* seen and
+> §8c records the diagram review. **Do not read this section as gating anything.**
 
 The gate returned **BLOCK**. Four of its conditions were addressed by this session's agent
 runs; **write the results into the review record**, because the gate checks the record, not
@@ -74,7 +78,7 @@ the agents' existence.
 | **C8 — the shipping diagram has no review** | ⬜ **Open, and worse than "untracked".** `body_contact_and_battles.md:158` ships `![](diagram:rush-gap-and-angle)`. `round_35_readability.md:109` credits its review to §14 of `round_34_diagram_notation.md` — **but `rush-gap-and-angle` appears nowhere in that file.** §14 names only `winger-dz-rim`, `winger-dz-reverse` and `off-wing-open-to-the-ice`, and every defect it records is about those three. Coverage is *asserted, never demonstrated* — the style guide's own sharpest failure shape. A second inconsistency confirms it: `round_35:104` lists the four quoted placements as `rush-gap-and-angle`, `unmarked-but-unavailable`, `support-angles`, `support-triangle`, while `:211`'s deixis sweep cleared `support-triangle`, `support-angles` and **`breakout-d-to-d`** — not in that list — and omitted this one. **The two lists do not reconcile, so trust neither.** Staging the record would therefore NOT close C8 honestly. Options: review the diagram properly, or drop the diagram hunk. (`diagram-reviewer` dispatched 21 August 2026.) |
 | **C10 — nobody has seen a rendered page** | ⬜ **Open.** `round_33_wave_a_findings.md:2586` records that Chrome's safety categoriser refused every navigation. `site/src/plugins/remark-corpus.mjs` changes how **every facts value in the corpus renders** and adds five new `<em>` nodes with no CSS rule targeting emphasis inside a facts value — *"probably fine; unseen."* The gate independently confirmed the DOM is right (0 literal `*` in any `facts__value`; the diagram inlines; 6,980 internal links resolve). The **visual** half is unchecked. |
 | **C5 — no citation refetched** | ⬜ **Open.** `source-verifier` has swept 39 of 629 citations and did not run this round. Exposure is narrow — the diff is overwhelmingly rulebook rule numbers — but C5 is declared *open*, not out of scope, so it is unevaluated rather than passed. |
-| **Governing document race** | ⬜ **Open, needs a decision.** `project/content_style_guide.md` is modified and **unstaged** (+146/−1). It rewrites a writing rule and adds a whole new `## Diagrams and their notation` section — the spec governing the one diagram this commit ships. `round_33_wave_a_findings.md:2497` names this as the `239f70d` race by definition. **One must land before the other.** Recommendation: land the style guide and the round-34 record first, then the content commit against a settled spec. |
+| **Governing document race** | ✅ **Resolved.** The style guide landed first, in `1dff231`, and the content commit followed against a settled spec — which is what the recommendation below asked for. Kept for the reasoning. Previously: `project/content_style_guide.md` is modified and **unstaged** (+146/−1). It rewrites a writing rule and adds a whole new `## Diagrams and their notation` section — the spec governing the one diagram this commit ships. `round_33_wave_a_findings.md:2497` names this as the `239f70d` race by definition. **One must land before the other.** Recommendation: land the style guide and the round-34 record first, then the content commit against a settled spec. |
 
 **Also from the gate:** twelve content files are staged, not ten — `uk_rules.md` and `puck_handling.md`
 were omitted from an earlier brief and both make substantive rule claims. Re-derive the list
@@ -82,11 +86,19 @@ with `git diff --cached --name-only -- content/` rather than trusting any prose 
 
 ---
 
-## 3. Verified findings not yet fixed
+## 3. Verified findings — most now fixed in round 37
 
-These are all confirmed against primary text. **None is a deletion candidate** (non-negotiable 3).
+These were all confirmed against primary text when written. **None is a deletion candidate**
+(non-negotiable 3).
 
-### 3.1 Two safety criticals blocked on the same facts block being at `HARD_MAX`
+> ⚠️ **Everything in §3 has shipped. Nothing here is open work.** §§3.1, 3.5 and 3.6 landed in round
+> 37 and carry a ✅ in their headings; **§§3.2, 3.3, 3.4 and 3.7 landed in round 36 and carry no mark
+> at all** — do not read the absence of a tick as an open item. The bullets are kept because they
+> carry the evidence and the reasoning, not because the work remains. An earlier draft left this
+> section reading as live after its contents had landed, and then a correction told the reader to
+> trust marks that four subsections do not have; a commit gate caught both.
+
+### 3.1 ✅ Two safety criticals — CLOSED in round 36 (IIHF 24.8 carve-out, NHL 21.1)
 
 `defending_the_rush.md:532` holds **11 facts — the hard maximum**. Both fixes below need
 room, so the block must be **consolidated, not appended to**. `facts-reviewer` names the
@@ -157,7 +169,7 @@ Also dropped from that block: *"close enough to poke check, far enough that one 
 beat you"* (body `:145`) — the only sentence telling a reader **how to adapt**. The block is
 at 4 facts and has room for four more.
 
-### 3.5 Hockey Canada gaps
+### 3.5 ✅ Hockey Canada gaps — CLOSED in round 37
 
 - **`offensive_zone_play.md:688`** gives a four-book tier list with **three** books. The
   missing one is **Hockey Canada 8.3(b)**, which the body at `:740` says reaches the tier on
@@ -175,7 +187,7 @@ at 4 facts and has room for four more.
   Canada's tripping ladder stops at major plus game misconduct. The corpus never claims
   otherwise, so nothing is wrong, but it is the carve-out a reader would want.
 
-### 3.6 `uk_rules.md` has no body section for the thing it warns about
+### 3.6 ✅ `uk_rules.md` body section — WRITTEN in round 37
 
 The entire IIHF 20.4 / Table 6 / Table 7 adult first-major-ejection material lives **only**
 in a Common Mistakes bullet (`:226`) and a Key Takeaway (`:289`). The document has **zero
@@ -190,10 +202,13 @@ Related, same document:
   true (`iihf_rules.txt:3904-3908`), but read aloud alone it is a reassurance sentence about
   boarding with no counterweight in the same sentence, at the end of a ~250-word bullet. Move
   the 41.4 exposure into the same sentence.
-- **Table 7 is read as discretionary in four places** and that is almost certainly right —
-  but **IIHF 20.4's own words say *"the Reference Tables"*, plural, with no qualifier**, and
-  the corpus resolves the tension silently on the lenient side. House convention elsewhere
-  (the Rule 84 / Varsity OT treatment at `uk_rules.md:178`) is to disclose. One clause.
+- ✅ **Table 7 read as discretionary — CLOSED, and the original finding was itself wrong.** It
+  claimed 20.4 offers *"no qualifier"*. It does: 20.4's last line reads *"➔ For more information
+  refer to Appendix IV – Tables Overview – **Table 6**"*, singular (`iihf_rules.txt:2139`). Together
+  with Table 7's *"Referee's judgement"* heading and Table 5's *"without a game misconduct
+  possible"*, the discretionary reading has three textual grounds. `uk_rules.md` now discloses it
+  with the right premise — see MA14 in the round-37 record. **Manufacturing uncertainty is its own
+  defect.**
 
 ### 3.7 Read-aloud minors in staged facts blocks
 
@@ -210,7 +225,7 @@ Related, same document:
 
 ## 4. The glossary — `rink_map_and_glossary.md`
 
-Unstaged. Nine entries added this session; §8 now holds **67**.
+Nine entries were added in round 36 and more in round 37; §8 now holds **68** entries (`sed -n '<§8>,<Common Mistakes>p' … | grep -c '^\*\*[^*]*\*\*'`).
 
 ### 4.1 Open now
 
@@ -221,8 +236,8 @@ Unstaged. Nine entries added this session; §8 now holds **67**.
   (2-1-2, 1-2-2, 1-3-1, 1-4) and **those same numbers name neutral-zone forechecks**
   (`neutral_zone_systems.md:823` cites a "1-2-2 Neutral Zone Forecheck"), so nothing
   disambiguates. Found by the sweep in §4.2; not yet fixed.
-- ⬜ **A `content-reviewer` entry-by-entry pass is running** over all 67 entries. Action its
-  findings.
+- ✅ **The `content-reviewer` entry-by-entry pass completed** over all 67 entries as they then stood — the 68th, `1-3-1`, was created by that pass's own M2 finding. Its findings are listed in
+  §4.3; all but M4 are closed.
 - ⬜ **`"most goals are scored low"` is unsourced in its owner.** It exists in
   `goaltender.md:312` and nowhere else in the corpus, has no owner in the style guide's
   numeric-facts table, and carries no source. The glossary's `Butterfly` entry no longer
@@ -231,14 +246,14 @@ Unstaged. Nine entries added this session; §8 now holds **67**.
 - ⬜ **`Post` drops its owner's coaching-choice hedge** — `goaltender.md:300` (*"You can get
   stuck"*), `:304` (*"it is one school, not the only one… ask what yours is"*), `:1011`
   (*"What nobody defends is dropping to a post out of habit, without a read"*).
-- ⬜ **Four pre-existing ownership notes** violating non-negotiable 6, at `:93`, `:364`,
-  `:621`, `:737` — all of the *"[X] **owns** …"* shape. Not swept, because sweeping is its own
-  change needing its own review and this file is a known contention target. (Note `:314`'s
-  *"the weak-side defenceman owns it"* is correct hockey usage — **do not sweep the word.**)
-- ⬜ **§8's preamble promises *"Terms in **bold** inside a definition are defined elsewhere in
-  this list"*** and several **pre-existing** entries break it: **weak-side**, **1-3-1**,
-  **above the puck**, **crease**, **high slot**/**low slot**. Decide: fix the entries, or
-  amend the preamble to say "elsewhere in this document".
+- ✅ **Ownership notes — SWEPT corpus-wide (see §8d).** The four in this file plus 200-plus across
+  the corpus are now plain navigation; 48 genuine hockey uses were preserved (`grep -roh '\bowns\b' content/ | wc -l` — `grep -rc` counts lines, not matches, and produced three wrong figures before anyone noticed).
+  `rink_map_and_glossary.md:314`'s *"the weak-side defenceman owns it"* is correct hockey usage
+  and was deliberately kept — **do not sweep the word.**
+- ✅ **§8's preamble — AMENDED.** It now reads *"defined elsewhere in this document — in this list,
+  or in the sections above"*, which is true of the bolded terms that are defined in §§3–7 rather
+  than §8 (**weak-side**, **above the puck**, **crease**, **high slot**/**low slot**), and a
+  **1-3-1** entry was added because that one was genuinely missing everywhere.
 - ⬜ **Three entries sit out of alphabetical order** — `D-to-D`, `The paint`, `The trap`. This
   is the file's existing convention of filing under the substantive word, and the convention
   is **itself inconsistent** (`The paint` files under *pa*, `The trap` sits before `Trailer`,
@@ -252,7 +267,7 @@ Unstaged. Nine entries added this session; §8 now holds **67**.
 ### 4.2 The sweep that found the homonyms — reusable
 
 For each §8 headword, search every other file in `content/` for a definition-shaped statement
-(`**Term** — `, `**Term** = `, `Term means`, `Term is`). **38 of 67 headwords** carry at least
+(`**Term** — `, `**Term** = `, `Term means`, `Term is`). **39 of 68 headwords** carry at least
 one definition outside the glossary. Highest counts: Pinch (9), Goalmouth (8), Half-wall (7),
 Reverse (6), Screen (6), Forecheck (5), Rim (4), Wheel (4), then Backcheck, Breakout,
 Odd-man rush, Point, Step up (3 each).
@@ -262,13 +277,13 @@ and times out. The headword list is extractable from §8 with:
 `sed -n '<§8>,<Common Mistakes>p' … | grep -o '^\*\*[^*]*\*\*'`
 
 **This sweep found `traffic` and `shoulder check`, both of which had penalty consequences.**
-It has never been run against anything but the ten entries added this session and the 67
+It has never been run against anything but the ten entries added this session and the 68
 headwords above. It has **not** been run in the other direction — for terms the corpus uses
 that have **no** glossary entry at all.
 
 ### 4.3 The entry-by-entry pass — findings
 
-A `content-reviewer` pass over all 67 entries returned **2 criticals, 16 majors and ~15
+A `content-reviewer` pass over all 67 entries as they then stood — the 68th, `1-3-1`, was created by that pass's own M2 finding returned **2 criticals, 16 majors and ~15
 minors**. ⚠️ **That reviewer never opened a rulebook** — every rules claim it makes was
 checked against *other corpus documents*, which is exactly how these defects propagate. It
 names **C1, C2, M5, M8, M10** and one `special_teams.md` line as needing `rules-verifier`
@@ -288,111 +303,44 @@ before action.
   all** (scanned 624→625, zero hits), corroborating `rules_primer.md:295`. The style guide
   names this exact defect at line 402. Fixed.
 
-**Open — ranked as the reviewer ranked them:**
+**Findings from that pass — all closed in round 37.** Full detail is in
+[`../reviews/round_37_glossary_and_ownership.md`](../reviews/round_37_glossary_and_ownership.md);
+this list is the index.
 
-- ⬜ **M1 `Forecheck` — worse than first thought.** Beyond the neutral-zone sense,
-  `forechecking_systems.md:217` says *three of the glossary's own four named shapes* (the
-  passive 1-3-1, the 1-4, the retreated 1-2-2) are usually played as **neutral-zone**
-  structures — *"a '1-4' describes four skaters standing about 114 feet from the net they are
-  supposedly forechecking."* And **the glossary contradicts itself**: §5:388 writes
-  *"1-2-2 neutral-zone forecheck"*, a construction its own §8 definition excludes. `Backcheck`
-  restates the narrow definition and inherits the defect — fix both together.
-- ⬜ **M2 `1-3-1` is bolded six times in §8 and has no entry**, and the corpus has **three
-  unrelated 1-3-1s** (power-play formation, neutral-zone trap posture, offensive-zone
-  forecheck). `neutral_zone_systems.md:88` carries a `Never:` fact about precisely this
-  confusion. All six bolded uses are the power-play sense. **The single highest-value addition
-  to §8.**
-- ⬜ **M3 `D-to-D` states a coaching convention as a law, in three places** — §8:551, §7:492
-  (*"the rule about it is"* — the word the style guide reserves for rulebook text) and §5:376
-  (*"— always"*). `risk_management.md:135` labels it `Convention:` and says *"some teams allow
-  a D-to-D exchange high in the zone, above the tops of the circles"*; `passing_and_receiving.md:633`
-  agrees. Cardinal rule, in the most visible possible place.
-- ⬜ **M4 `Board battle` over-claims and drops a hedge its owner lists as unverified.**
-  Glossary: *"far more often than with strength"*. `puck_handling.md:345` says *"often"* plus
-  *"**Not always, and a large enough strength gap wins anyway**"*, and `:957` lists it in the
-  document's own unverified-claims footnote. Also `body_contact_and_battles.md:657`, `:1179`.
-  → `safety-reviewer`, since a smaller player acts on this.
-- ⬜ **M5 `Tip-in` carries neither rule ceiling** its owner calls *"two hard ceilings… which
-  almost no coaching article mentions"* — a tip contacting the stick **above the crossbar** is
-  no goal (NHL 80.3, `shooting.md:218`), plus 80.1 and a Hockey Canada junior/senior divergence
-  at `shooting.md:236`. → `rules-verifier`.
-- ⬜ **M6 `Dump-and-chase` states the trapezoid's effect bare** in the very document whose §3
-  establishes it applies in the NHL, KHL and IIHF only, that most North American rec and youth
-  leagues have none, and that its England/Wales status is *unsettled*. The §5 entry at :400
-  flags it correctly; the §8 entry does not.
-- ⬜ **M7 `House league` is contradicted by the governing-body text its own owner quotes.**
-  Glossary: *"you play within your own club rather than against other towns"*.
-  `getting_started.md:286` quotes Hockey Canada: *"away games are rarely hosted more than an
-  hour's drive away."* House league **has** away games. **Not a deletion case** — source and
-  scope it. → `source-verifier` for the quotation.
-- ⬜ **M8 `Faceoff` gives two of four answers on stick order**, in a document whose header
-  promises British readers their IIHF flags. `faceoffs.md` has four: NHL 76.4, **IIHF 76.4
-  agreeing word for word**, USA Hockey 613(a) reversing it, and **Hockey Canada 6.2(a)** —
-  visiting player first at *every* spot. Its Key Takeaway reads *"Three answers in four books."*
-  → `rules-verifier`.
-- ⬜ **M9 `Outlet` defines one of three live senses** — the pass — and not the one that is
-  *shouted at you*. `breakouts.md:44`, `on_ice_communication.md:174` and `puck_handling.md:457`
-  all use it for the **player**; `how_to_watch_hockey.md:156` for the **place** (*"outlet spot"*).
-- ⬜ **M10 "Off-side" carries four unrelated senses, two of them rule violations**, and
-  `Offside` disambiguates none: the zone-entry rule; the weak side (§6:420); unnatural
-  handedness side (§7:511, `shooting.md:155`); and *"lining up in an off-side position"* at a
-  faceoff (`faceoffs.md:257`, Rule 76.3(v)). The style guide gives "stay high" a boxed warning
-  for having *two* senses. → `rules-verifier` for 76.3(v).
-- ⬜ **M11 `Breakout` gives six of nine options and calls them "common"** — inventing a
-  prevalence rank the style guide's owner table (line 533) explicitly forbids
-  (*"do not invent one elsewhere"*). `forechecking_systems.md:229` names the full nine and says
-  *"not a shorter one"*.
-- ⬜ **M12 `Cycle` puts a player at the net front where the owner puts them behind the net**,
-  and treats low-to-high as a way to *run* a cycle where `offensive_zone_play.md:341` has it as
-  one of four things that *end* one.
-- ⬜ **M13 `Butterfly` is now hedged better than its owner** — see §4.1's *"most goals are
-  scored low"* item. The fix belongs in `goaltender.md:312`, not here.
-- ⬜ **M14 `Drop-in` / `Stick-and-puck` / `Shinny` state as definitions what the owner
-  explicitly disclaims.** `getting_started.md:252`: *"These three words describe **conventions,
-  not defined categories**… Treat the rink's own posted session description as the authority."*
-  `getting_started.md:263` calls turning up to the wrong session *"the most common beginner
-  mistake"*.
-- ⬜ **M15 This file's Sources annotation contradicts its own body.** Body §3:165 says the
-  two-line pass was abolished by a playing-rule change *"adopted alongside the new Collective
-  Bargaining Agreement rather than by it"*; the Sources line at :741 says *"abolished under the
-  2005 CBA"*. The correction reached two bodies and not this document's own Sources.
-  → `source-verifier`.
-- ⬜ **M16 `Activation` uses the word "legal"** for something no rulebook touches. `defender.md:435`
-  has it correctly as a `Never:`, not a `Rule:`. And it is not absolute — `risk_management.md:421`
-  and `game_management.md:181` both prescribe activating without cover when trailing late.
-  *Secondary, unresolved:* `risk_management.md:440` puts activation *below the top of the
-  circles*; `defender.md:379` and `offensive_zone_play.md:223` make the top of the circle itself
-  the activated position. **Two documents, two boundaries** — the glossary sits above the
-  disagreement without resolving it.
+- ✅ **M1 `Forecheck`** — the definition excluded the neutral-zone sense while naming four shapes,
+  three of which are usually played as neutral-zone structures. `Backcheck` inherited it. Both fixed.
+- ✅ **M2 `1-3-1`** — bolded six times as a cross-reference with no headword, over three unrelated
+  formations. Entry added naming all three.
+- ✅ **M3 `D-to-D`** — a coaching convention stated as law in §8, §7 and §5. Fixed in all three,
+  and the *carry* and the *pass* are now kept apart: the carry is never, only the alternative route
+  for the pass is team-dependent.
+- ⬜ **M4 `Board battle`** — still over-claims *"far more often than strength"* where its owner says
+  *"often"* and lists the claim in its own unverified-claims footnote. **Open.**
+- ✅ **M5 `Tip-in`** — carried neither rule ceiling; now carries NHL 80.3 and the fact that USA
+  Hockey's goal ceiling is the **shoulder**, not the crossbar.
+- ✅ **M6 `Dump-and-chase`** — the trapezoid's effect stated bare; now scoped.
+- ✅ **M7 `House league`** — contradicted the Hockey Canada text its own owner quotes. Rewritten.
+- ✅ **M8 `Faceoff`** — two of four books; now all four, with "three answers in four books".
+- ✅ **M9 `Outlet`** — one of three senses, and the owner's dagger disclosure restored.
+- ✅ **M10 "Off-side"** — four senses, two of them rule violations. Disambiguated in the entry and
+  in Common Mistakes.
+- ✅ **M11 `Breakout`** — six of nine options ranked as "common"; now all nine, unranked.
+- ✅ **M12 `Cycle`** — put a forward at the net front where the owner puts them behind the net.
+- ✅ **M13 `Butterfly`** — fixed in its owner, `goaltender.md:312`, by labelling the unsourced claim.
+- ✅ **M14 `Drop-in`** — stated as definitions what `getting_started.md:252` disclaims as
+  conventions; the hedge now reaches `Stick-and-puck` too.
+- ✅ **M15 Sources annotation** — contradicted its own document's body on the two-line pass. The
+  body was right; the annotation now says what the cited page says and notes it is uncited there.
+- ✅ **M16 `Activation`** — used "legal" for something no rulebook touches. Narrowed, and the
+  unsourced "teams relax it when trailing late" removed.
 
-**Minors worth doing in one pass:** `The trap` defines by shape where the owner defines by
-shape *plus intent*, and omits the answer the owner calls *"the most under-used of all"*;
-`Chip` misses the clearing sense (`game_management.md:100`); `Regroup` opens with *"abandoning
-a failed attack"* where the owner explicitly rejects that framing; `Screen` carries the act but
-not the call and has no link — and needs a reciprocal pointer to `Traffic`; `Shorthanded` gives
-no IIHF position, where `special_teams.md:619` says British hockey has the *simpler* rule;
-`Goalmouth` — the outlier is `goaltender.md:500`, not the glossary; `Home plate` never mentions
-the synonym **"the house"**; `Trailer` omits *"late man"*; `The paint` reads as a flat
-prohibition where §5:328 teaches living at its edge.
+**Minors from that pass** — `The trap`, `Chip`, `Regroup`, `Screen`, `Shorthanded`, `Home plate`,
+`Trailer`, `The paint` and the `goalmouth` outlier in `goaltender.md` — all closed.
 
-**Two structural decisions:**
+⬜ **Still open from it:** M4 above, and the **49 §8 entries the pass never examined**. That second
+one is the sharpest remaining scope in the glossary: the pass found 2 criticals and 16 majors *in
+the entries it looked at*.
 
-1. **The §8 bold promise is broken by 14 distinct terms**, most of which *are* defined in this
-   document, in §§3–7. **Amending the preamble is far less disruptive than fixing the entries,
-   and more truthful** — recommended wording: *"defined elsewhere in this document — in this
-   list, or in the sections above."* Then add the one genuinely missing everywhere: `1-3-1`.
-2. **Cross-links are systematically thin.** Only 21 of 67 entries carry any link, and nine of
-   those are the ten entries reviewed this session. Twenty entries state a rule or an owned
-   number with no link at all. One pass fixes it.
-
-**The four ownership notes have suggested rewrites** that lose nothing a reader wants — e.g.
-`:93` → *"The full list of England Ice Hockey amendments is in [UK and England Rules]; the
-geometry is here."* The reviewer also ran the owner check **both ways** on `:621` and confirmed
-`special_teams.md:615-641` does hold the rule, both carve-outs and the source. Separately it
-flags `special_teams.md:853` for stating *"icing does not apply to a shorthanded team"* bare,
-inside the owner document → `rules-verifier`.
-
----
 
 ## 5. The terminology plan — `team_tactics_terminology.md`
 
@@ -432,6 +380,139 @@ Still outstanding from it:
 
 ---
 
+## 6b. ⬜ A literal-asterisk check nothing in this repo performs
+
+Commit `f5f385f` fixed *"a quotation that was rendering two literal asterisks on the page"*, and
+round 37's gate found another one — a stray `*` in a `shooting.md` hunk that rendered verbatim on
+the web page, the markdown download, the EPUB and the PDF. `md_to_speech.py` strips it, so the
+speech pipeline hides the defect rather than catching it, and no checker looks for it.
+
+**The reproducible test is an odd asterisk count per paragraph**, after stripping fenced blocks and
+inline code:
+
+```python
+t = re.sub(r'```.*?```', '', text, flags=re.S)
+t = re.sub(r'`[^`\n]*`', '', t)
+odd = [p for p in t.split('\n\n') if (p.count('*') - p.count('\\*')) % 2 == 1]
+```
+
+Run over `content/` it found exactly two: `risk_management.md`'s Sources block, where a nested
+`*(…)*` closed the outer italic early and left the leading `*` rendering literally — **fixed in
+round 37** — and one in **`technique/passing_and_receiving.md`, still open**, which is in the
+held-back set and should be fixed when that workstream lands.
+
+⚠️ **But the odd-count test is necessary, not sufficient, and a checker built only on it would ship
+blind twice over.**
+
+1. **An even count can still render a literal asterisk.** `risk_management.md`'s Sources block had an
+   *even* count and rendered `*Statistics:` verbatim at HEAD, because a nested `*(…)*` closed the
+   outer span early and re-opened nothing. The reliable test is the rendered page: strip tags from
+   `dist` and look for `*` in the text.
+2. **It scopes to `content/`, and the defect is not confined there.** Diagram captions are **not**
+   markdown-rendered, so a `**…**` in a caption reaches the page as four literal asterisks.
+   ⚠️ **Tree state matters here and an earlier draft of this section omitted it:** the live example,
+   `site/src/diagrams/faceoffs.mjs:217`, exists **only in the working tree**. HEAD's `faceoffs.mjs`
+   has no `**` in any caption, and a tag-stripped grep of rendered `dist` finds zero asterisks on
+   `/systems/faceoffs/` in both HEAD and the round-37 commit. It belongs to the round-34 workstream.
+   The point stands for any checker written from this section — it must cover captions — but the
+   example is not yet a shipped defect.
+
+⬜ **Worth making this a checker anyway**, provided it greps the rendered `dist` rather than the
+markdown. It has now caught two defects across two rounds and is invisible to `check_links.py`,
+`check_facts.py` and the speech self-test alike.
+
+---
+
+## 6c. ⬜ `defending_the_rush.md` §Breakaways has more rulebook than a facts block can hold
+
+`facts-reviewer` reviewed this block for the first time in round 37 and found **one critical and
+five majors in eleven facts**. Four were fixed one-for-one. **Two need structure, not editing:**
+
+- ⬜ **The `HARD_MAX` merge should be undone.** Two `Rule:` facts were merged to free slots, and the
+  merge attached NHL 67.4's *"except a goalkeeper"* to the wrong noun — post-merge it modified *"a
+  skater"* (vacuous, since a skater is never a goalkeeper) and governed the whole predicate
+  including **67.5, which carries no such exemption** because the goalie has been replaced. The
+  attachment is fixed, but the two facts still want to be two facts. Unmerging takes the block to
+  **12** and `check_facts.py` rejects it.
+- ⬜ **A penalty-shot trigger in the body reaches no fact at all.** `:577` — *"**Throwing your stick
+  or any object** at the puck or the carrier in your defensive zone also produces a penalty shot"* —
+  which the body itself calls an end-of-rush desperation act, exactly this block's reader. It is
+  also the one rule claim in the section stated **with no rule number** (NHL Rule 53 governs it),
+  which is likely why it never became a fact: the facts layer requires a citation. **Give the body
+  its citation regardless.**
+
+**The remedy the reviewer proposes, and it is the right one:** split §Breakaways into `####`
+subsections — the body already divides cleanly into the penalty-shot test, the carve-outs by rule
+set, the empty-net and crease clauses, and the rule-set note — and give each its own block. Four
+rule sets' tripping tiers plus NHL 25.1/57.4 plus 67.4/67.5 is more rulebook than eleven facts can
+carry, and **the merge was the symptom rather than the problem.**
+
+⚠️ Two questions the reviewer flagged rather than answered, both for `rules-verifier`: whether USA
+Hockey **639(a)'s Note defeats a 616 penalty shot**, and whether **IIHF 24.8's "shall" caps 57.3**.
+The block now says the book does not settle the second; the first is hedged as *"may not reach 616
+at all"*. Neither should be stated flat until someone answers them.
+
+---
+
+## 6d. ⬜ The glossary does not read as a list — seen, not inferred
+
+`site-reviewer` finally saw the pages (round 37, Chrome connected) and answered the question nine
+audits could only measure. **The answer is no.**
+
+- The entry head and the bold *inside* an entry are **computationally identical** — both
+  `font-weight 650`, `17px`, same colour, same family, `display inline`. The reviewer diffed the
+  computed style objects: `identical: true`.
+- The only separator is `margin-bottom: 17.6px` — **the same gap used between ordinary body
+  paragraphs everywhere else on the site.**
+- At 375px, **`Icing` is 954px tall and `Traffic` 838px — both taller than the viewport.** A phone
+  reader can be scrolled entirely inside one entry, looking at four bold runs indistinguishable
+  from a head.
+- **The bold cross-references collide with real entry names.** Inside `Icing`: *"if the team is
+  **shorthanded** (conditionally — see **Shorthanded**, below)"*. `Shorthanded` is its own entry.
+  Someone scanning for it hits this first, and it looks exactly like what they are looking for.
+
+§8's own intro says *"Terms in bold inside a definition are defined elsewhere in this document"* —
+so bold carries **two meanings with one appearance**. The convention is written down and then made
+unusable by the CSS.
+
+**It costs more than scanning.** Pagefind cannot offer a sub-result for an individual entry, because
+entries are paragraphs with no ids and no heading level — so a search for `icing` can only deep-link
+to `#8-glossary`, the top of a 4,900-word list. Two documents already link there.
+
+⚠️ **The obvious fix is the wrong one.** A site-wide `.prose p > strong:first-child` would hit
+**2,270 paragraphs across 37 pages** — the house bold-lead-in sentence style — and repaint the
+corpus. Scoped options, cheapest first:
+
+1. **CSS only.** All 68 entries have the `<strong>` as a genuine first child and are siblings of the
+   `h2`. ⚠️ The id is `8-glossary`, which **starts with a digit**: CSS needs `#\38 -glossary` and
+   `document.querySelector('#8-glossary')` throws.
+2. **A wrapper class in `site/src/plugins/remark-corpus.mjs`** — tag paragraphs under the Glossary
+   heading, style `.glossary-entry > strong:first-child`. One plugin change, no selector gymnastics.
+3. **Real headings or ids.** Most work, and the only option that also fixes search deep-linking and
+   lets a term index address an entry. §8 grew 28.0% in round 37 with 20 entries getting longer, so
+   this is the one that stops it recurring.
+
+⬜ **M2, and it belongs to the diagram workstream, not here.** Of **113 `<svg>` across 40 pages,
+exactly two have `role="img"` with no `<title>`, `<desc>`, `aria-label` or `aria-labelledby`** — the
+full-rink map (§2) and the end-zone map (§5), the glossary's two primary reference maps. Every other
+diagram carries a title running to a paragraph. Both sit in a `<figure>` with a descriptive
+`<figcaption>`, so the information is not lost; the image is unnamed. Fix in `site/src/diagrams/`.
+
+### ⚠️ A trap for the next D15 pass — it cost this one most of an hour
+
+The reviewer spent three-quarters of its session **reviewing the wrong tree from the wrong server**,
+and every signal said things were fine: pages rendered, content matched, links worked.
+
+- **Port 4321 was a pre-existing `astro dev` server serving the working tree.** `npm run preview`
+  found it taken and silently bound **4322**.
+- **`site/dist/` on disk is not the staged build either** — its stamp read `dirty=true`.
+
+It caught this only by asking why `/_astro/Base.CvtjetxK.css` 404'd. Had that file happened to load,
+neither it nor any gate reading DOM and byte sizes would have noticed. **Pin the preview to an
+explicit port and assert the build stamp before trusting anything a D15 pass reports.**
+
+---
+
 ## 7. Evidence-base gaps nobody can close by grepping
 
 - ⬜ **`usah_case.txt` — the USA Hockey Casebook is not on disk and never has been.** The
@@ -439,17 +520,63 @@ Still outstanding from it:
   (*"a casebook situation could qualify the USA Hockey half"*). **That disclosure is correct
   and must not be stripped.** A casebook interpretation could change the answer on the
   head-down/ducking split without changing any file here.
-- ⬜ **No Hockey Canada PDF is on disk.** A stray `Rule 7.8` sidebar header sits at
-  `hc.txt:6400`, between Interpretation 3 and its own carve-out sentence — a PDF column
-  artifact. The attribution was resolved **by reasoning, not by seeing the page**. Fetching
-  the HC PDF would close it.
+- ✅ **The Hockey Canada PDF is fetchable, and `hc.txt` is now rebuildable.** The fetch script said
+  its rules were *"behind a portal rather than a stable public PDF URL"*; that is no longer true —
+  the CDN link returns 200 with a 30 MB PDF of the 2026-2028 book. Added to `DOCS`.
+- ⬜ **But Hockey Canada's on-disk text is the one extracted the wrong way, and that is the
+  documented cause of an artifact this corpus has already reasoned around.** `sources/hc.txt` is
+  byte-identical to plain `pdftotext` output (370,730 bytes); `-layout`, which every other source
+  uses and which the script's own comment says exists to stop columns interleaving and rule numbers
+  detaching, yields 449,195. **That is why a stray "Rule 7.8" header sits between Interpretation 3
+  and its own carve-out sentence at `hc.txt:6400`** — an artifact a reviewer resolved by reasoning
+  rather than by reading the page.
+
+  **The decision is a trade and it should be made deliberately.** Re-extracting with `-layout` is
+  better evidence for a book this corpus makes many claims against — but it **shifts every
+  `hc.txt:NNNN` citation** in `project/reviews/`, including a dozen written in round 37 alone. The
+  script currently skips `hc` because the file exists, so nothing changes by accident; a `--force`
+  run would change it silently. Recorded in `scripts/fetch_sources.sh` and `sources/README.md`.
 - ⬜ **The NHL text extraction shreds table columns.** `nhl_rules.txt:9727-9835` renders
   Table 5 as unattributable runs of descriptions, rule cells and checkmarks. The correct row
   count was only recoverable by refetching the PDF and running
   `pdftotext -layout -f 150 -l 150`. **Any future claim about an NHL reference table must come
   from the PDF, not the `.txt`.** This nearly cost a wrong count in three documents.
-- ⬜ **`source-verifier` has swept 39 of 629 citations.** Across ~340 body-verified citations
-  in this corpus, **every defect found was provenance**.
+- ✅ **`source-verifier` ran in round 37** — 337 external URLs across the 22 committed files
+  refetched, three findings fixed (a Sources list omitting a rule the body quotes; a citation
+  labelled *"dead"* that resolves and redirects to an affiliate tracker; an IIHF URL returning
+  **200** while rendering an error page). ⬜ **The other ~290 citations in the corpus remain
+  unswept**, and across ~340 body-verified citations here **every defect ever found was
+  provenance**.
+
+---
+
+## 8d. ✅ The "owns" convention — swept, 21 August 2026
+
+**Decision made by the owner: sweep all of them.** Done in the active voice — **216 editorial replacements across 33
+documents**, of which **105 are in this commit** and 111 follow with the held-back twelve, all to plain navigation (*"[Faceoffs] **covers** that figure and the computation behind
+it"*). The pattern existed 122 times in its linked form and more in two further shapes
+(`…, which owns …` and a bare `DocumentName owns …` inside facts blocks).
+
+⚠️ **Read the tree state before you act on any count here.** HEAD `ff2962e` carries **264** `owns`
+in `content/`; the round-37 commit carries **159**; the working tree with the whole sweep applied
+carries **48**. The 48 are the endpoint, not the current state — **111 editorial instances are still
+live in the twelve held-back documents**, and a pass that sees one there should sweep it, not keep
+it.
+
+**48 genuine hockey uses are the endpoint** — *"somebody owns the middle"*, *"the goalie
+owns the shooter"*, *"the weak-side defenceman owns the goalmouth"*, *"EIH owns its leagues
+outright"*, and `on_ice_communication.md`'s §"Who owns which call" heading. Once the held-back twelve land, an `owns` in `content/` will almost
+certainly be one of these and should stay. **Until then it probably should not** — see the tree-state
+warning above.
+
+⬜ **Two parts are still open.** (1) The sweep hit the **active voice only** — roughly twenty-six
+passive instances survive (*"the fixes are owned by Puck Handling"*, *"is owned by [Faceoffs]"*),
+several inside ` ```facts ` blocks, plus `switching_positions.md:90`'s *"carry that label if you
+repeat it"*, which is an instruction to another writer. (2) Twelve documents the sweep touched are
+**held back from the round-37 commit** because their working copies also carry the round-34
+workstream's heading renames and diagram references; their instances land when that workstream does.
+
+Recorded in [`../reviews/round_37_glossary_and_ownership.md`](../reviews/round_37_glossary_and_ownership.md).
 
 ---
 
@@ -544,7 +671,7 @@ traps — the bow is *not* reversed and the carrier is *not* drawn as skating wi
   transfer — but sat *after* the figure, so the caption was read first and never said the numbers
   do not travel. The disclaimer now precedes the figure and says so explicitly.
 
-**Open — none of these blocks this commit:**
+**Recorded below — the ✅ items are closed; only the ⬜ ones are open:**
 
 - ✅ **Major 2 — CLOSED.** *The cross-document attribution existed on the site and not in the audio,
   in the exact case it was written for.* `remark-corpus.mjs:187-190` appends *"Diagram from …"* whenever
@@ -553,7 +680,7 @@ traps — the bow is *not* reversed and the carrier is *not* drawn as skating wi
   `scripts/md_to_speech.py:540` is `return "Diagram. " + entry["caption"]` — **no owner lookup, no
   attribution branch.** So the fix justified by a listener defect was applied only to the site. A
   listener hears the borrowed gap distances as part of the angling section with nothing marking
-  them as borrowed. **This affects all six quoted diagrams, not just this one.** Mirror the `away`
+  them as borrowed. **This affects all six quoted diagrams, not just this one.** Mirror the `away` branch
   **Fixed.** `md_to_speech.py` now announces provenance for a quoted diagram — *"Diagram, from
   defending the rush. …"* — **before** the caption rather than after it as on the page, because a
   listener cannot glance back and the warning has to arrive before the claim it qualifies.
@@ -637,7 +764,62 @@ reviewed all seven; this one was never reviewed. It has been now.
 
 ---
 
-## 8. What none of this session's methods could have found
+## 9. ⬜ Opened by round 37's foundation-file wave (22 August 2026)
+
+Four reviewers ran on `uk_rules.md` and `rules_primer.md` at current content and produced 3
+criticals and ~14 majors, all fixed. These four were found and **deliberately not fixed**, with
+reasons — they are recorded as MA23–MA26 in
+[`round_37_glossary_and_ownership.md`](../reviews/round_37_glossary_and_ownership.md).
+
+**9a · `rules_primer.md`'s Key Takeaways are body sections that migrated into the summary.**
+Measured: KT5 **746 words**, KT10 675, KT4 486, KT3 318, against a spec of *"5–10 items, each one
+standalone and memorable"*. `uk_rules.md`'s equivalent was fixed this round — KT7 had reached 455
+words and is now four takeaways with the longest at 216. The primer's was left because most of that
+length predates the commit, and rewriting ten takeaways in a second heavily-edited file **in the
+same session** is exactly how CR10, CR13 and CR15 happened. **Do it as its own scoped change, with a
+reviewer on the result.**
+
+**9b · The two foundation documents state the same Table 6/7 material four times.**
+`uk_rules.md` §"A first major can end your game" plus `rules_primer.md` §4, §10 and Key Takeaway 4
+— four framings, four hedge placements, well over two thousand words. That is four places for the
+next correction to fail to reach, and this round it failed to reach three of them twice. **The
+editorial question — should `uk_rules.md` own it outright and the primer link? — is unresolved.**
+
+**9c · `rules_primer.md` §§7–9 and the last comparison-table rows have never been read.**
+`content-reviewer` declared out of scope: the goaltender, faceoff and officials sections, ~170 lines
+covering the crease, goaltender interference, screening, the trapezoid penalty, freezing the puck
+and the faceoff spots. `rules-verifier` left comparison-table rows 722, 723, 725, 726, 733 and every
+USA Hockey cell unverified. Findings in the sections that *were* read ran at roughly **one per fifty
+lines**.
+
+**9d · A mis-splice that reads smoothly would not have been caught.** CR15 — a fighting block
+inserted into the body-checking-legality paragraph — was found because the join lost a space. A
+block landing in the wrong paragraph that happens to read grammatically would have passed every pass
+run this round. **The check nobody ran is a paragraph-by-paragraph read of `git diff ff2962e` for
+both files.** A mechanical proxy was run afterwards (fused sentences, orphaned ⚠️ markers) and is
+clean, but it cannot see a smooth splice.
+
+### Method notes worth keeping
+
+- **These extractions wrap lines mid-phrase and hyphenate across breaks.**
+  `grep -c 'not covered by the playing rules'` returns **0** on all three IIHF files; the phrase is
+  at `:2182`, split as `is not\ncovered`. IIHF 46.9 carries `auto- matic`. **Flatten newlines and
+  de-hyphenate before any phrase search** — a negative multi-word grep here is not evidence of
+  absence, and it nearly produced a false "fabricated quotation" finding.
+- **`git checkout-index` does not materialise `node_modules`**, which is gitignored. A site build in
+  such a tree dies with `MODULE_NOT_FOUND` **while the shell still reports exit 0**. Symlink the
+  repo's `node_modules` into the export before building, and read the log rather than the status.
+- **A reviewer's quotation is evidence, not verification.** A reviewer supplied `2'+2'+5'+GMP` as
+  IIHF 46.4's sanction; the book assigns 46.4 the same `2'+5'+GMP` as 46.3. Re-derive before writing.
+- `sources/iihf_rules.txt` is byte-identical to `sources/iihf_rules_v1.1.txt`; `v1.0` differs.
+
+## 8. What none of ROUND 36's methods could have found
+
+> ⚠️ **This section is round 36's, and round 37 closed several of its gaps.** It is kept because the
+> reasoning is still the best guide to where defects hide — but **do not read it as current**.
+> Since it was written: `site-reviewer` **has** seen the pages (§6d), `source-verifier` **has**
+> refetched 337 URLs, and `facts-reviewer` **has** audited the `HARD_MAX` block (§6c).
+> `md_to_speech.py --self-test` passes 116 assertions, though nothing has been *heard*.
 
 Recorded because it is the next round's scope, per the house rule that this is the most
 valuable part of any report.
@@ -650,11 +832,11 @@ valuable part of any report.
 - **The homonym sweep finds an entry that says too much.** It is much weaker on an
   innocent-looking definition of something dangerous — a term nobody recognised as hazardous
   would pass without a grep.
-- **Nothing was heard.** `md_to_speech.py` was not run this session. Every read-aloud
+- **Nothing was heard** *(still true — `--self-test` passes 116 assertions, but no audio has been generated)*. `md_to_speech.py` was not run to produce speech. Every read-aloud
   judgement above is an inference from text. `rules_primer.md:332`'s Major bullet has grown
   again into two paragraphs of roughly 2,280 and 891 characters, and §26.5 records a previous
   growth of that same bullet splitting a speech chunk mid-sentence. **Unmeasured.**
-- **Nothing was seen.** No browser rendered any page.
+- **Nothing was seen** *(true of round 36; round 37 closed this — see §6d)*. No browser rendered any page.
 - **Grepping extracted text cannot see a rule the extraction dropped** — see §7.
 - **A correctly-quoted rule can still be taught unsafely**, and a legal, correctly-caveated
   technique can still be dangerous when executed badly at speed. No rulebook grep tests either.

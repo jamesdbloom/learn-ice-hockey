@@ -93,7 +93,7 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 
 **1. Manage the puck.** The single biggest lever. With a lead, the value of a possession is not "can I create a chance" but "can I make sure they don't get it back in a dangerous place." That means:
 
-- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) owns it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures.
+- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) covers it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures.
 - No blind D-to-D passes across your own goalmouth.
 - No stretch passes you're not sure about. An interception at your own blue line is worse than a chip out.
 
@@ -153,7 +153,7 @@ That combination — tired players, defensive-zone draw, no escape — is a goal
 Three details worth knowing:
 
 - **The exceptions to the no-change rule** are narrow: you may substitute to **replace a goalkeeper who had been pulled for an extra attacker**, to **replace an injured player**, or when a **penalty has been assessed that affects on-ice strength** (Rule 82.1). The on-ice personnel are determined **at the moment the puck leaves the offending player's stick**. **In the IIHF book — the British base rule set — the bar lives in Rule 81.4** and reads the same way, with the same three exceptions and the same "when the puck leaves the offending Player's stick" test, plus **one the NHL does not have: you may also substitute for *"a Player with a broken skate."*** (Note that IIHF 82.1 lists only the NHL's three; the broken-skate exception is in 81.4, which is the icing rule itself.)
-- **Icing is waved off if your team is shorthanded** — with two exceptions. Killing a penalty you may normally ice it freely, but under Rule 81.6 a team shorthanded *"by reason of a major penalty"* that has *"neglected to ensure there is a player on the penalty bench to exit upon the expiry of the penalty"* keeps playing a man short and *"are not permitted to ice the puck. Icing will be called."* And **USA Hockey restricts the exemption by classification**, to *"(For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)"* (Rule 624(b)(1)) — below those levels a shorthanded team cannot ice the puck at all, so a kill built on length-of-the-ice clears just feeds the power play defensive-zone draws. [Special Teams](special_teams.md) owns this rule.
+- **Icing is waved off if your team is shorthanded** — with two exceptions. Killing a penalty you may normally ice it freely, but under Rule 81.6 a team shorthanded *"by reason of a major penalty"* that has *"neglected to ensure there is a player on the penalty bench to exit upon the expiry of the penalty"* keeps playing a man short and *"are not permitted to ice the puck. Icing will be called."* And **USA Hockey restricts the exemption by classification**, to *"(For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)"* (Rule 624(b)(1)) — below those levels a shorthanded team cannot ice the puck at all, so a kill built on length-of-the-ice clears just feeds the power play defensive-zone draws. [Special Teams](special_teams.md) covers this rule.
 - **Rec and youth leagues vary.** Many still use no-touch (automatic) icing, and plenty do not enforce the no-change rule at all. Ask before the game; it changes how hard you should work to get the puck over the red line.
 
 ---
@@ -297,7 +297,7 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 > **delayed *clock*** under **Rule 26**: a third penalty assessed to a team already
 > serving two, whose time waits rather than putting them three men short. **Nobody
 > is about to be awarded anything and there is no free attacker.** Go on the
-> referee's raised arm, not on the words. [Special Teams](special_teams.md) owns the
+> referee's raised arm, not on the words. [Special Teams](special_teams.md) covers the
 > distinction.
 
 **What to do when the arm goes up:**
@@ -366,7 +366,7 @@ Coaches also use last change to:
 - **Shelter players.** Give a young forward or a weak defence pair starts in the offensive zone against the opponent's fourth line.
 - **Protect a lead.** Get the defensively trusted group out for every defensive-zone draw in the last five minutes.
 - **Chase a matchup.** Get your best offensive line out against their weakest pair.
-- **Manipulate the faceoff.** Last change can even cost you a draw — the Sound Of Hockey analysis cited below found that home teams won only **50.4% of 8,383 centre-ice faceoffs in 2023-24** — an externally published figure, not one of the faceoff computations made for this guide, which [Faceoffs](faceoffs.md) owns — partly because coaches sometimes send out a worse faceoff man in order to win the matchup instead.
+- **Manipulate the faceoff.** Last change can even cost you a draw — the Sound Of Hockey analysis cited below found that home teams won only **50.4% of 8,383 centre-ice faceoffs in 2023-24** — an externally published figure, not one of the faceoff computations made for this guide, which [Faceoffs](faceoffs.md) covers — partly because coaches sometimes send out a worse faceoff man in order to win the matchup instead.
 
 **The road team's counter is the change on the fly.** Last change applies only at stoppages. On the road, coaches dictate matchups by timing changes during play — getting a line off as the opponent's top line comes on — which is why change discipline matters more on the road than at home.
 
@@ -481,10 +481,10 @@ The retiring player must leave **at the bench**, not through any other exit, or 
 Convention: 35-45 seconds for most players, 30-35 when protecting a lead or stuck in your own end — coaching prescription, not measurement
 Read: The signal to change is a reduction in your ability to accelerate, not a stopwatch
 Key: Gliding to a spot you would have skated to ten seconds earlier means you are already too tired to be useful
-Action: Take the measured shift-length range and the physiology from Conditioning and Recovery, which owns them
+Action: Take the measured shift-length range and the physiology from Conditioning and Recovery, which covers them
 ```
 
-Shifts in fast, high-level hockey are typically **under a minute**, and the reason usually given is physiology: hockey is repeated maximal effort, and effort quality declines well before you feel exhausted. **[Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns both the physiology and the measured range** — take the figures from there rather than from here. A reasonable target for most players is **35–45 seconds**, shortened to **30–35 seconds** when protecting a lead or when the play is stuck in your own end; **those two bands are coaching prescription, not measurement** — the measured band is 30–80 seconds and the "well-managed" 30–45 s figure is itself coaching craft, as that document states.
+Shifts in fast, high-level hockey are typically **under a minute**, and the reason usually given is physiology: hockey is repeated maximal effort, and effort quality declines well before you feel exhausted. **[Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers both the physiology and the measured range** — take the figures from there rather than from here. A reasonable target for most players is **35–45 seconds**, shortened to **30–35 seconds** when protecting a lead or when the play is stuck in your own end; **those two bands are coaching prescription, not measurement** — the measured band is 30–80 seconds and the "well-managed" 30–45 s figure is itself coaching craft, as that document states.
 
 The signal to change is not a stopwatch, it's a **reduction in your ability to accelerate**. The moment you find yourself gliding to a spot you would have skated to ten seconds earlier, you are already too tired to be useful.
 
@@ -505,7 +505,7 @@ Fatigue does not just cost you a step. It costs you, in this order:
 3. **Support** — you stop arriving as the second man to the puck, so your teammate loses a battle they should have won.
 4. **Backchecking** — the last thing to go, and the most expensive.
 
-The practical consequence, as coaches put it: **a 90-second shift is not three times as valuable as a 30-second shift — it is worth less in total, and it costs your next shift too.** *(Nobody has measured the value of a shift as a function of its length, so read that as the shape of the argument rather than as a quantity. What is measured is the decline in repeated-sprint quality, which [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns.)*
+The practical consequence, as coaches put it: **a 90-second shift is not three times as valuable as a 30-second shift — it is worth less in total, and it costs your next shift too.** *(Nobody has measured the value of a shift as a function of its length, so read that as the shape of the argument rather than as a quantity. What is measured is the decline in repeated-sprint quality, which [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers.)*
 
 ### When NOT to change
 
@@ -991,7 +991,7 @@ document, that is named too.*
 
 *Line matching, home ice and time-outs: [Is there really a home-ice advantage in the NHL? — Sound Of Hockey](https://soundofhockey.com/2025/02/02/is-there-really-a-home-ice-advantage-in-the-nhl/) · [Quantifying the Value of an NHL Timeout using Survival Analysis — Hockey Graphs](https://hockey-graphs.com/2020/05/28/quantifying-the-value-of-an-nhl-timeout-using-survival-analysis-part-1/)*
 
-*Defence pairs and handedness: [Shot Location Data and Strategy I: Off-Hand Defencemen — puck++](https://puckplusplus.com/2014/11/11/shot-location-data-and-strategy-i-off-hand-defencemen/) · [Do defensemen play worse on their off-hand? — puck++](https://puckplusplus.com/2013/09/21/do-defensemen-play-worse-on-their-off-hand/) · [The Impact of Handedness on Defensemen — All Mighty Hockey Talk](https://allmightyhockeytalk.com/2024/07/24/the-impact-of-handedness-on-defensemen/) — **dead: the domain no longer resolves. Kept for the record; nothing in this document rests on it alone, and the two puck++ posts above carry the handedness material.***
+*Defence pairs and handedness: [Shot Location Data and Strategy I: Off-Hand Defencemen — puck++](https://puckplusplus.com/2014/11/11/shot-location-data-and-strategy-i-off-hand-defencemen/) · [Do defensemen play worse on their off-hand? — puck++](https://puckplusplus.com/2013/09/21/do-defensemen-play-worse-on-their-off-hand/) · [The Impact of Handedness on Defensemen — All Mighty Hockey Talk](https://allmightyhockeytalk.com/2024/07/24/the-impact-of-handedness-on-defensemen/) — **do not follow this one.** Re-checked 22 August 2026: the domain resolves, but the page now serves a redirect to an affiliate tracker rather than the article. Kept for the record; nothing here rests on it alone, and the two puck++ posts above carry the handedness material.*
 
 *Overtime strategy: [NHL Coaches' Room: Overtime success can be difference between making, missing playoffs — NHL.com](https://www.nhl.com/news/nhl-coaches-room-overtime-success-303255732) · [NHL: The Strategy in 3-on-3 Overtime Has Evolved — The Hockey Writers](https://thehockeywriters.com/nhl-overtime-3-on-3-strategy-has-evolved/) · [From chaos to control, NHLers reflect on evolution of 3-on-3 overtime — CBC Sports](https://www.cbc.ca/sports/hockey/nhl/nhl-notebook-3on3-zub-ducks-1.6693732)*
 
