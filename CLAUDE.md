@@ -143,7 +143,7 @@ report.
 
 **Nothing that changes `content/` is committed until it has been adversarially
 reviewed and the review is on record.** The full gate is
-[C1–C10](project/review_process.md#the-gate--every-condition-must-hold). Before
+[C1–C11](project/review_process.md#the-gate--every-condition-must-hold). Before
 any commit that touches a claim:
 
 - `check_links.py` and `check_facts.py` pass
@@ -206,6 +206,10 @@ infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.
 .claude/agents/     The reviewing agents.
 .claude/hooks/      git-guard.sh — the mechanical commit gate.
+
+*.local.md          Local working notes. Gitignored by pattern, so they never enter the
+                    record and no sweep can stage them. Use the suffix for anything you
+                    want to keep to hand but out of the corpus's history.
 ```
 
 ---

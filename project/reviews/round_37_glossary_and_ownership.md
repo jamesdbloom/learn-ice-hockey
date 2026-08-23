@@ -499,7 +499,7 @@ replacement URL could be verified, as candidate IIHF hubs sit behind a Cloudflar
 ### Major — found, not fixed
 
 **MA23 · `rules_primer.md`'s Key Takeaways are body sections that migrated into the summary.**
-Measured: KT5 **746 words**, KT10 675, KT4 486, KT3 318. The style guide's spec is *"5–10 items,
+Measured: KT5 **746 words**, KT4 486, KT3 318, KT7 278, KT6 275, KT9 232. ⚠️ **An earlier count in this record said KT10 was 675 words. It is 66.** The measurement had swallowed the italic Sources block, which follows the takeaways after a `---` rather than under a heading, so a naive "until the next `##`" slice ran to end of file. The style guide's spec is *"5–10 items,
 each one standalone and memorable — this feeds the podcast's 'if you only remember N things'
 segment."* A 746-word bullet is roughly five minutes of continuous speech in a segment whose premise
 is compression. `uk_rules.md`'s equivalent was fixed this round; the primer's was not, because most

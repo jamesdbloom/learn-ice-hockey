@@ -253,14 +253,60 @@ still stop.
 | **C8** | A **review record** exists under `project/reviews/`, naming the changed files, the reviewers run, the findings, the fixes, and **what the method could not have found** |
 | **C9** | `python3 scripts/check_secrets.py` passes, and no secret, credential, state file or PII is staged (see the guard below) |
 | **C10** | If the site's rendering changed, `npm run build` succeeds and `site-reviewer` has looked at the rendered page |
+| **C11** | Every reviewer pass satisfying C4–C6 read the file **at the content now staged**. If the file changed after a reviewer cleared it, that clearance is void |
 
 **The reviewer must not be the author.** A self-review satisfies none of C4–C6.
 Dispatch the reviewing agents; they run with fresh context, which is the entire
 reason they find anything.
 
+**C11 exists because C4–C6 were silently satisfiable by a stale pass.** Round 37
+ran `safety-reviewer`, wrote a new 66-line section afterwards, and shipped it
+behind that ✅. The pass had been real; it had simply never seen the text. The
+same shape then recurred four times inside the round's own repairs, and
+**eleven of its seventeen criticals were introduced by the fix for a previous
+one.** The rule that falls out of it:
+
+> **The last thing written is the thing nothing has read.**
+
+So C11 is not "was this file reviewed" but "was *this text* reviewed".
+
+**C11 terminates, or nothing ever ships.** Every fix is new text, so a literal reading
+demands a fresh pass after every repair, for ever. The rule that stops the regress, and it
+was learned by hitting it twice in one round:
+
+> A repair does **not** void the clearance when it is **confined to the finding**, **re-derived
+> from primary text**, and **recorded**. A repair that moves, merges, splits or renumbers text
+> — or that touches a claim the finding did not name — **does** void it, and needs a fresh
+> pass over the changed passages before the gate.
+
+The distinction is not stylistic. Round 38's criticals came from *restructuring* under the
+guise of repair: a Key Takeaway split rewrote a rule clause from memory, and a compression
+deleted a corrective instruction and an honest disclosure. Its clean repairs — a rule number
+added, a quotation restored to its full wording — introduced nothing.
+
+Two further consequences, both learned the expensive way:
+
+- **A structural edit is a rewrite.** Splitting a Key Takeaway rewrote a rule
+  clause from memory of what it had said and silently undid a correction that
+  had reached four other layers. Re-derive every claim a restructure touches,
+  or diff the moved text against what it replaced.
+- **A repair is not confined to the clause you are editing.** Correcting a
+  count left the enumeration after it untouched, so one sentence asserted two
+  different totals and listed a rule as a repetition of itself. Read to the end
+  of the sentence, then to the end of the paragraph.
+
+**A reviewer's quotation is evidence, not verification.** Reviewers cite rule
+text with line numbers and are usually right — and when one is wrong, its
+wording is the most credible thing in front of you. In round 37 a reviewer
+supplied `2'+2'+5'+GMP` as IIHF 46.4's sanction; the book assigns 46.4 the same
+`2'+5'+GMP` as 46.3. Copying it would have put a fabricated penalty on a
+fighting rule, sourced to a reviewer who had done the grep. **Re-derive from the
+book before any quoted string, number or tier enters `content/`** — including
+one a reviewer has just handed you, and including one you are only moving.
+
 ### When the gate does not apply
 
-C3–C8 govern **claims**. They do not govern a typo fix, a reworded heading, a
+C3–C8 and C11 govern **claims**. They do not govern a typo fix, a reworded heading, a
 build-script change, or a commit that touches no file under `content/`. Say
 which case you are in rather than assuming the reader will infer it — and note
 that a reworded heading breaks cross-links, so C1 always applies.
@@ -282,7 +328,7 @@ that a reworded heading breaks cross-links, so C1 always applies.
 - a commit message mentioning Claude, Anthropic, or an AI co-author
 - a commit touching `content/` while `check_links.py` or `check_facts.py` fails
 
-The hook cannot check C3–C8 — no script can tell whether a review happened.
+The hook cannot check C3–C8 or C11 — no script can tell whether a review happened, still less whether it read the text now staged.
 Those are yours.
 
 ### Commit messages

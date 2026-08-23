@@ -103,3 +103,6 @@ site/public/diagrams/
 # message. Ignoring it makes that mistake impossible rather than merely unlikely.
 # Remove this entry deliberately if and when the folder is ready to be committed.
 /drills/
+
+# Local-only working notes — never part of the corpus record
+*.local.md

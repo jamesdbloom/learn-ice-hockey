@@ -772,12 +772,25 @@ reasons — they are recorded as MA23–MA26 in
 [`round_37_glossary_and_ownership.md`](../reviews/round_37_glossary_and_ownership.md).
 
 **9a · `rules_primer.md`'s Key Takeaways are body sections that migrated into the summary.**
-Measured: KT5 **746 words**, KT10 675, KT4 486, KT3 318, against a spec of *"5–10 items, each one
-standalone and memorable"*. `uk_rules.md`'s equivalent was fixed this round — KT7 had reached 455
+Measured **before round 38's repairs**: KT5 **746 words**, KT4 486, KT3 318, KT7 278, KT6 275, KT9 232, against a spec of
+*"5–10 items, each one standalone and memorable"*. ⚠️ **KT10 was first measured at 675 words and is
+66** — the slice had swallowed the italic Sources block, which sits after a `---` rather than under a
+heading. **Bound a takeaway slice on the `---`, not on the next `##`.** `uk_rules.md`'s equivalent was fixed this round — KT7 had reached 455
 words and is now four takeaways with the longest at 216. The primer's was left because most of that
 length predates the commit, and rewriting ten takeaways in a second heavily-edited file **in the
-same session** is exactly how CR10, CR13 and CR15 happened. **Do it as its own scoped change, with a
-reviewer on the result.**
+same session** is exactly how CR10, CR13 and CR15 happened. **Done in round 38 — partly.** KT5's 746 words became two takeaways and KT4 was compressed. ⬜ **But
+it is not closed, and the repairs put the words back:** measured after the final edit, the range is
+**66–347**, and the two longest — **KT4 at 347** and **KT6 at 336** — are the two this round
+created. KT3 is 318 and KT9 314, KT9 having grown by the merge that kept the ten-item cap.
+⚠️ **This figure was wrong twice before being right.** It was first recorded as "66–318", then as
+"66–336 with KT6 longest" — each measured before the next wave of repairs added words, and each
+corrected by the gate. **The instruction is in this entry and I broke it three times: measure after
+the last edit, not before.** The compression is also self-defeating at this point: every repair
+this round has *added* words to the takeaways it was shortening, which is the argument for
+splitting rather than compressing. Round 38's own finding is that **every critical and major
+it sustained came from compressing rather than from splitting** — so the open question is whether
+the ten-item cap should yield to the one-proposition rule. That is a style-guide decision, and it
+has not been made.
 
 **9b · The two foundation documents state the same Table 6/7 material four times.**
 `uk_rules.md` §"A first major can end your game" plus `rules_primer.md` §4, §10 and Key Takeaway 4

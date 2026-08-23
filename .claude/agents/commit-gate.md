@@ -1,6 +1,6 @@
 ---
 name: commit-gate
-description: The last check before a commit. Audits the staged diff against the C1-C10 gate in project/review_process.md and returns CLEAR or BLOCK with reasons. Use immediately before any git commit that touches content/, and whenever asked whether a change is ready to commit. Reads the diff, runs the mechanical checkers, classifies every changed claim, and verifies a review record exists that actually covers those files. Reports a verdict; it does not fix, stage or commit.
+description: The last check before a commit. Audits the staged diff against the C1-C11 gate in project/review_process.md and returns CLEAR or BLOCK with reasons. Use immediately before any git commit that touches content/, and whenever asked whether a change is ready to commit. Reads the diff, runs the mechanical checkers, classifies every changed claim, and verifies a review record exists that actually covers those files. Reports a verdict; it does not fix, stage or commit.
 tools: Read, Grep, Glob, Bash
 ---
 
@@ -156,6 +156,36 @@ round covering different documents satisfies nothing.
 
 **And the reviewer must not be the author.** A self-review satisfies none of
 C4–C6. If the same agent wrote and checked the change, that is a BLOCK.
+
+**C11 — was the file reviewed at the content now staged?** Not "was it
+reviewed". A reviewer that cleared an earlier version of the text has cleared
+nothing that ships. Ask the author, for each file whose claims changed, whether
+any edit landed **after** the reviewer that covers it finished — and treat "I
+fixed the findings afterwards" as exactly that case, because the fixes are new
+unreviewed text. This is the most productive question in the gate: it is how
+round 37 found that eleven of its seventeen criticals had been introduced by
+the repair of a previous one.
+
+**C11 has a terminating rule — apply it, or you will block for ever.** A repair does
+**not** void a clearance when it is confined to the finding, re-derived from primary text,
+and recorded. A repair that moves, merges, splits or renumbers text, or that touches a claim
+the finding did not name, **does** void it. Ask which kind you are looking at; do not treat
+every post-review edit as fatal.
+
+Two shapes to probe for specifically, both of which produced criticals that
+every other condition passed:
+
+- **A structural edit that rewrote a claim from memory.** Splitting or merging
+  a Key Takeaway, moving a paragraph, renumbering a list — ask what claims the
+  moved text carried and whether they still match the book.
+- **A repair applied to half a sentence.** A corrected count with its old
+  enumeration still trailing it; a relabelled quote whose gloss still describes
+  the old label. Read to the end of the paragraph, not the end of the clause.
+
+**And never accept a quoted string from a reviewer's report as verified.**
+Reviewers cite rule text with line numbers and are usually right; when one is
+wrong its wording is the most credible thing in the room. Re-derive from
+`sources/` before any quotation, number or penalty tier is treated as checked.
 
 ---
 
