@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | Scope | `content/foundation/rules_primer.md`; `.gitignore`; `project/review_process.md`, `CLAUDE.md`, `.claude/agents/commit-gate.md`; the round-37 record and the plan |
-| Reviewers run | `safety-reviewer` · `rules-verifier` · `content-reviewer` in parallel, then `commit-gate` — which **blocked under the new C11** and found three further defects in text no reviewer had read |
+| Reviewers run | `safety-reviewer` · `rules-verifier` · `content-reviewer` in parallel, then `commit-gate` — which **blocked under the new C11** and found **six** further majors — five of them in text no reviewer had read, and of those, three living entirely in edits made after the last reviewer reported; the sixth was already in HEAD |
 | Criticals found / fixed | 4 / 4 | *(CR1–CR3, plus the inverted spinal-injury antecedent found by the fourth `safety-reviewer` pass — a defect I had reported fixed when the scripted replacement had returned `MISSED`)*
 | Majors found / fixed | 18 / 18 | *(a)–(o) = 15 lettered, plus the fourth wave's KT4 counterweight and the two repairs the gate found defective)*
 | Minors found / fixed | 12 / 12 | *(seven listed below, plus the fourth wave's five)*
@@ -100,17 +100,24 @@ gate found it in the build's own count, 1694 → 1693.
 ## A major the gate found that no reviewer was looking for
 
 Different in class from (j)–(n) above: this one was **already in HEAD**, not in text written after
-a reviewer reported. `git show 113e3fe` confirms it. Four review passes read this file at content
-and none saw it, because it is arithmetic inside a table cell rather than a claim in a sentence.
+a reviewer reported. `git show 113e3fe` confirms it. **Three full-file review passes read this file
+at content, and a fourth — `safety-reviewer` on the delta only — put its own 60.4/48.5 split inside
+this very table cell.** None of the four saw it, because it is arithmetic inside a table cell rather
+than a claim in a sentence.
 
 **(o) · A fourth site of an error a previous sweep had corrected at three.**
 `rules_primer.md:734` said *"Fighting's **five** rows carry it unconditionally too."* NHL Table 5
-carries **six** Rule 46 rows — the `Fighting` header row plus its five sub-rows (after original
-altercation; when aggressor; 2nd instigator in game; instigator in final five minutes or overtime;
-3rd instigator in season) — so 13 non-fighting + 6 = the **nineteen** the same commit asserts three
+carries **six** Rule 46 rows — `Fighting` itself, which has its own Rule 46 cell and its own
+"Major only" checkmark rather than being a group header, plus its five qualified sub-rows (after
+original altercation; when aggressor; 2nd instigator in game; instigator in final five minutes or
+overtime; 3rd instigator in season) — so 13 non-fighting + 6 = the **nineteen** the same commit asserts three
 lines away at `:855`, and that `uk_rules.md:410` already had right. The plan records a previous
 sweep that found this exact error at three sites and *"corrected to nineteen / six"*; **this was the
-fourth, and it was missed because the header row reads as a label rather than as a row.** Corrected
+fourth, and it was missed because the `Fighting` row reads as a label for the five beneath it rather
+than as a row in its own right.** *(The round-36 carried-findings record describes the same cell the
+same way — "its own row with its own Rule 46 cell and its own 'Major only' checkmark, not a group
+header." Same cell, same count of six. That record's filename is being changed by a concurrent sweep
+as this is written, so it is named here rather than linked.)* Corrected
 with the arithmetic now written out, so the next reader does not have to reconstruct it.
 
 ⚠️ **The gate blocked on this twice, for two different reasons, and neither was that the fix was
