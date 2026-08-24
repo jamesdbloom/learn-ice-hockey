@@ -46,7 +46,7 @@ nothing was lost; the work resumed against an unchanged HEAD.)*
 | D2 | Rules travelling without exceptions | ✅ | rules-verifier, facts-reviewer | Produced CR4 (IIHF 24.8's goalkeeper carve-out) and CR3 (NHL 21.1 reaching no layer but a Key Takeaway). |
 | D3 | Rule-set divergence | ✅ | rules-verifier, safety-reviewer | The round's densest dimension. CR1, CR2, CR5, CR6, CR7 are all divergence defects. |
 | D4 | Citation integrity | ✅ | rules-verifier, source-verifier | Rule numbers and wording verified from disk; **178 external URLs in the staged files refetched**. Three rotted (MA10). The four rulebook PDFs confirmed as the editions the corpus names. |
-| D5 | Provenance | ✅ | source-verifier | Every quotation located in rendered body; **0 not-located**. Produced MA11 and MA12. The ~450 citations in the 24 **unstaged** documents remain unswept — tracked in [`../plans/round_36_outstanding.md`](../plans/round_36_outstanding.md). |
+| D5 | Provenance | ✅ | source-verifier | Every quotation located in rendered body; **0 not-located**. Produced MA11 and MA12. The ~450 citations in the 24 **unstaged** documents remain unswept — tracked in [`round_36_carried_findings.md`](round_36_carried_findings.md). |
 | D6 | Negative existence claims | ✅ | rules-verifier | Several verified by exhaustive grep: `puck first` in `usah.txt` → 0; `match penalt` in `iihf_rules.txt` → 0; `fend off` in `usah.txt`/`hc.txt` → 0; `waist` in `iihf_rules.txt` → 1 hit, about pant padding. |
 | D7 | The cardinal rule | ✅ | content-reviewer | MA5 (`D-to-D` stated as law in three places) and MA9 (`Activation` using "legal"). `Attack triangle`, `Pinch`, `Odd-man rush`, `Penalty kill` all upheld. |
 | D8 | Numeric ownership | ✅ | facts-reviewer, rules-verifier | MA1 (NHL Table 5 row count) and MA2 (two hedges shed by the owner of the gap numbers). |
@@ -369,7 +369,7 @@ terms used for emphasis where §8's preamble reserves bold for cross-references;
 
 ### Deferred
 
-All tracked in [`../plans/round_36_outstanding.md`](../plans/round_36_outstanding.md), which
+All tracked in [`round_36_carried_findings.md`](round_36_carried_findings.md), which
 carries file:line and primary-source citations for each.
 
 - **The gate's remaining blocks** — C8, and the **governing-document race**. C5 and C10 were

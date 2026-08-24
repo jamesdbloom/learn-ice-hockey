@@ -197,7 +197,13 @@ whichever one wrote first.
 
 ```
 content/            The corpus. 36 documents in seven sections. The product.
-project/            Style guide, review process, review records, verification data.
+project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds remaining work
+                    plus the standing guidance for doing it — method notes, environment
+                    facts, gate conditions. **No completed items:** when work closes it
+                    moves out to a review record.
+project/reviews/    Review records, findings, measurements and evidence. Where work
+                    *done* is tracked, and where a plan item goes when it closes.
+project/            Style guide, review process, verification data.
                     Never fed to the podcast generator.
 scripts/            check_links.py, check_facts.py, check_secrets.py,
                     check_external_links.py, md_to_speech.py
@@ -207,9 +213,9 @@ docs/               Architecture, operations, decision log.
 .claude/agents/     The reviewing agents.
 .claude/hooks/      git-guard.sh — the mechanical commit gate.
 
-*.local.md          Local working notes. Gitignored by pattern, so they never enter the
-                    record and no sweep can stage them. Use the suffix for anything you
-                    want to keep to hand but out of the corpus's history.
+*.local.md          Scratch notes only. Gitignored by pattern, so they never enter the
+                    record and no sweep can stage them. **Not for plans or findings** —
+                    those belong in project/plans/ and project/reviews/, tracked.
 ```
 
 ---

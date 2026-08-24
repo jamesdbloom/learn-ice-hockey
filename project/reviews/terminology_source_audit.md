@@ -1,4 +1,10 @@
-# Plan — add team-tactics terminology to the glossary
+# Terminology source audit — team tactics
+
+> **Archive. Not a plan.** The term-by-term audit and its source evidence. **The work it defines
+> is in [`OPEN_ITEMS.md`](../plans/OPEN_ITEMS.md)**, which is where to look for what is outstanding.
+> ⚠️ **§3 is stale**: Outlet, Stretch pass, Walk the line, One-touch, Shoulder check, Net drive
+> and Attack triangle have since been added to the glossary. Re-derive before working from it.
+
 
 **Status: proposed, not started. No `content/` file has been touched.**
 

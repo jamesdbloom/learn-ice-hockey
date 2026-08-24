@@ -1,4 +1,12 @@
-# Plan — what is still open after the round-36 verification session
+# Carried findings — rounds 36 to 38
+
+> **Archive. Not a plan, and not a live list.** This is the measurement and evidence behind
+> findings carried through rounds 36–38: which clauses a merge dropped and why nothing forced
+> the trim, the reusable homonym sweep, the entry-by-entry glossary pass, the rendered-site and
+> diagram findings with their numbers. **Every open item it once tracked has been folded into the
+> live plan.** Nothing here is outstanding work; consult it for *why* a finding is known, not for
+> what to do next.
+
 
 Written 21 August 2026, after a machine crash killed a commit gate mid-audit and the
 work was resumed. Four reviewing agents and one gate ran. This file records **what was
@@ -62,7 +70,7 @@ Three safety criticals, one factual error in three places, and five glossary def
 ## 2. What the gate blocked on — a record, not a live list
 
 > ✅ **All of these were resolved before round 37 shipped.** Kept for the reasoning and the evidence.
-> C10 and C8 below are marked ⬜ as they stood at the time; §8b records that the site *was* seen and
+> C10 and C8 below are marked ✅ **because they were closed after this table was written**; their cell text is framed as it stood at the time; §8b records that the site *was* seen and
 > §8c records the diagram review. **Do not read this section as gating anything.**
 
 The gate returned **BLOCK**. Four of its conditions were addressed by this session's agent
@@ -75,9 +83,9 @@ the agents' existence.
 | **C3 — D10 on the two merged facts blocks** | ✅ `facts-reviewer` has now run on `defending_the_rush.md:135` and `offensive_zone_play.md:169`. Record it and its findings (§3 below). |
 | **C4 — rules claims in §§27–28** | ✅ `rules-verifier` has now run. All eight new rule numbers confirmed; one count error found and fixed. Record it. |
 | **C6 — the three unreviewed rewrites** | ✅ `safety-reviewer` has now seen `defending_the_rush.md` `:568`, `:578`, `:832`. Three criticals found, all fixed. Record it. |
-| **C8 — the shipping diagram has no review** | ⬜ **Open, and worse than "untracked".** `body_contact_and_battles.md:158` ships `![](diagram:rush-gap-and-angle)`. `round_35_readability.md:109` credits its review to §14 of `round_34_diagram_notation.md` — **but `rush-gap-and-angle` appears nowhere in that file.** §14 names only `winger-dz-rim`, `winger-dz-reverse` and `off-wing-open-to-the-ice`, and every defect it records is about those three. Coverage is *asserted, never demonstrated* — the style guide's own sharpest failure shape. A second inconsistency confirms it: `round_35:104` lists the four quoted placements as `rush-gap-and-angle`, `unmarked-but-unavailable`, `support-angles`, `support-triangle`, while `:211`'s deixis sweep cleared `support-triangle`, `support-angles` and **`breakout-d-to-d`** — not in that list — and omitted this one. **The two lists do not reconcile, so trust neither.** Staging the record would therefore NOT close C8 honestly. Options: review the diagram properly, or drop the diagram hunk. (`diagram-reviewer` dispatched 21 August 2026.) |
-| **C10 — nobody has seen a rendered page** | ⬜ **Open.** `round_33_wave_a_findings.md:2586` records that Chrome's safety categoriser refused every navigation. `site/src/plugins/remark-corpus.mjs` changes how **every facts value in the corpus renders** and adds five new `<em>` nodes with no CSS rule targeting emphasis inside a facts value — *"probably fine; unseen."* The gate independently confirmed the DOM is right (0 literal `*` in any `facts__value`; the diagram inlines; 6,980 internal links resolve). The **visual** half is unchecked. |
-| **C5 — no citation refetched** | ⬜ **Open.** `source-verifier` has swept 39 of 629 citations and did not run this round. Exposure is narrow — the diff is overwhelmingly rulebook rule numbers — but C5 is declared *open*, not out of scope, so it is unevaluated rather than passed. |
+| **C8 — the shipping diagram has no review** | ✅ **Closed in round 37.** `diagram-reviewer` rendered it at three widths and rendered the glyph key itself — verdict *"safe to ship, not clean"*, nothing critical. ⚠️ **The stale credit survives and should be corrected:** `body_contact_and_battles.md:158` ships `![](diagram:rush-gap-and-angle)`. `round_35_readability.md:109` credits its review to §14 of `round_34_diagram_notation.md` — **but `rush-gap-and-angle` appears nowhere in that file.** §14 names only `winger-dz-rim`, `winger-dz-reverse` and `off-wing-open-to-the-ice`, and every defect it records is about those three. Coverage is *asserted, never demonstrated* — the style guide's own sharpest failure shape. A second inconsistency confirms it: `round_35:104` lists the four quoted placements as `rush-gap-and-angle`, `unmarked-but-unavailable`, `support-angles`, `support-triangle`, while `:211`'s deixis sweep cleared `support-triangle`, `support-angles` and **`breakout-d-to-d`** — not in that list — and omitted this one. **The two lists do not reconcile, so trust neither** — that is still open, and is carried in the plan. *At the time of writing, the position was: "Staging the record would therefore NOT close C8 honestly. Options: review the diagram properly, or drop the diagram hunk."* `diagram-reviewer` was dispatched 21 August 2026 and did the review, which is what closed it. |
+| **C10 — nobody has seen a rendered page** | ✅ **Closed in round 37, and again in round 38.** The site has now been seen: `site-reviewer` drove real Chrome over the DevTools Protocol against a build of the *staged* tree. The extension itself still refuses every local address — 21 refusals across five sessions — so the CDP route is the one that works. `round_33_wave_a_findings.md:2586` records the original refusal. `site/src/plugins/remark-corpus.mjs` changes how **every facts value in the corpus renders** and adds five new `<em>` nodes with no CSS rule targeting emphasis inside a facts value — *"probably fine; unseen."* The gate independently confirmed the DOM is right (0 literal `*` in any `facts__value`; the diagram inlines; 6,980 internal links resolve). *At the time of writing the visual half was unchecked* — round 37 and round 38 both closed it with a browser. |
+| **C5 — no citation refetched** | ⚠️ **Superseded — this figure is round-36 era.** Round 37's `source-verifier` pass refetched **337 external URLs** across the 22 staged files, leaving roughly **290** of the 629 unswept. The live figure is in the plan; do not quote the 39. At the time of writing, `source-verifier` had swept 39 of 629 citations and did not run that round. Exposure is narrow — the diff is overwhelmingly rulebook rule numbers — but C5 is declared *open*, not out of scope, so it is unevaluated rather than passed. |
 | **Governing document race** | ✅ **Resolved.** The style guide landed first, in `1dff231`, and the content commit followed against a settled spec — which is what the recommendation below asked for. Kept for the reasoning. Previously: `project/content_style_guide.md` is modified and **unstaged** (+146/−1). It rewrites a writing rule and adds a whole new `## Diagrams and their notation` section — the spec governing the one diagram this commit ships. `round_33_wave_a_findings.md:2497` names this as the `239f70d` race by definition. **One must land before the other.** Recommendation: land the style guide and the round-34 record first, then the content commit against a settled spec. |
 
 **Also from the gate:** twelve content files are staged, not ten — `uk_rules.md` and `puck_handling.md`
@@ -342,7 +350,7 @@ one is the sharpest remaining scope in the glossary: the pass found 2 criticals 
 the entries it looked at*.
 
 
-## 5. The terminology plan — `team_tactics_terminology.md`
+## 5. The terminology plan — `terminology_source_audit.md`
 
 That plan is **stale in one place**: its §3 lists seven terms as having no glossary entry,
 but **Outlet, Stretch pass and Walk the line have since been added**. The other four
