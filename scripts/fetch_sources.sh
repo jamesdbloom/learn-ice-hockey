@@ -35,6 +35,7 @@ DOCS=(
   "iihf_coachdev_off_tactics|https://www.hockeyeasternontario.ca/|https://www.hockeyeasternontario.ca/media/n4pf15hp/iihf_coachdev_off_tactics.pdf"
   "heo_intl_drill_symbols|https://www.hockeyeasternontario.ca/|https://www.hockeyeasternontario.ca/media/ns2jrj0c/dev1_international_drill_symbols.pdf"
   "ibc|https://www.usahockey.com/|https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf"
+  "hc|https://www.hockeycanada.ca/|https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf"
 )
 
 command -v pdftotext >/dev/null 2>&1 || {
@@ -71,9 +72,22 @@ for entry in "${DOCS[@]}"; do
   fi
 done
 
-# Hockey Canada is not scripted: its playing rules are behind a portal rather
-# than a stable public PDF URL. Download manually and extract as hc.txt.
-[ -s "$DEST/hc.txt" ] || echo "  MANUAL   hc                 (Hockey Canada — see sources/README.md)"
+# Hockey Canada IS scripted now — the comment that used to sit here said its rules
+# were "behind a portal rather than a stable public PDF URL", and that stopped being
+# true. The CDN link above serves 200 with a 30 MB PDF of the 2026-2028 book.
+#
+# ⚠️ One thing to know before you regenerate it. The `hc.txt` this corpus has cited
+# since before that change was extracted with PLAIN pdftotext, not `-layout` — the
+# two are byte-comparable and the plain one is 370,730 bytes against -layout's
+# 449,195. (Both re-derived 2026-08-25 from a fresh download of the URL above: it
+# serves 200 with a 30,185,748-byte PDF, plain extraction is byte-identical to the
+# sources/hc.txt this corpus cites, and -layout gives the larger figure. The numbers
+# are measured, not carried.) So Hockey Canada is the one book whose on-disk text has the interleaved
+# columns the -layout flag exists to prevent, which is the documented cause of the
+# stray "Rule 7.8" header sitting between Interpretation 3 and its own carve-out
+# sentence. Re-extracting with -layout is better evidence and WILL shift every
+# hc.txt:NNNN line citation in project/reviews/. Decide deliberately; do not let it
+# happen as a side effect of a --force run.
 
 # The edition Britain actually adopts. See sources/README.md.
 [ -s "$DEST/iihf_rules_v1.1.txt" ] || cat <<'EOF'
