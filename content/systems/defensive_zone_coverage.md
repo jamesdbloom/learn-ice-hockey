@@ -14,11 +14,11 @@ Risk: The same instruction — "get to the corner", "stay high" — can be corre
 Action: Work out which system your team plays, so you stop guessing
 ```
 
-Defensive zone coverage is the agreement your five skaters have about who protects what while the other team has the puck in your end.
+Coverage is the agreement your five skaters have about who protects what while the other team has the puck in your end, and **it is the single most system-dependent part of hockey** — two good teams can play completely different systems and both be right, so the same instruction can be correct on one bench and a firing offence on the next. Find out which one your team plays.
 
-**It is the single most system-dependent part of hockey, so find out which one your team plays.** Two good teams can play completely different systems and both be right, and the same instruction — "get to the corner", "stay high" — can be correct on one bench and a firing offence on the next. One question gets you most of the way: when the puck is in our corner, does the winger stay up at the blue line or come down and help? That answer separates the two main families immediately.
+**One question gets you most of the way, and it is the fastest thing you can ask a new coach:** when the puck is in our corner, does the winger stay up at the blue line or come down and help? That answer separates the two main families immediately.
 
-**The most dangerous chances come from a small area in front of your net** — roughly from the two posts out to the faceoff dots and up to the tops of the circles. A shot from inside it is worth several times the same shot from outside; [Shooting](../technique/shooting.md) owns those values and the qualifications that come with them, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the shape, which is an analytics convention rather than an official marking. Every system is a different way of keeping five bodies between that area and the puck while still being able to leave with it. So defend the middle before the outside: offered a choice between taking away a shot from distance and taking away a pass into that area, take the pass. That tells you which chance to concede, not where to stand.
+**The most dangerous chances come from a small area in front of your net** — roughly from the two posts out to the faceoff dots and up to the tops of the circles. A shot from inside it is worth several times the same shot from outside; [Shooting](../technique/shooting.md) covers those values and the qualifications that come with them, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers the shape, which is an analytics convention rather than an official marking. Every system is a different way of keeping five bodies between that area and the puck while still being able to leave with it. So defend the middle before the outside: offered a choice between taking away a shot from distance and taking away a pass into that area, take the pass. That tells you which chance to concede, not where to stand.
 
 **Somebody must always have the doorstep of your net** — not the general area in front of it, but the edge of the painted crease, where the player who scores is standing. Which of the five it is changes with the system; that it is somebody never changes. The matching error is both defencemen going to the same puck without either knowing who has the doorstep.
 
@@ -30,7 +30,7 @@ Defensive zone coverage is the agreement your five skaters have about who protec
 
 ```facts
 Key: The most dangerous chances come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
-Convention: The house is an analytics convention rather than an official marking — Shooting owns what a shot from inside it is worth, Rink Map and Glossary owns the shape
+Convention: The house is an analytics convention rather than an official marking — Shooting covers what a shot from inside it is worth, Rink Map and Glossary covers the shape
 Goal: Allocate five bodies so the house is never open, while still being able to take the puck off them and leave
 Priority: Choose which chances you are willing to give up — coverage is not about eliminating them
 Risk: Pack all five onto the goal line and nobody is available for the outlet — you win the puck and give it straight back
@@ -41,7 +41,7 @@ Five of you. Five of them. One net.
 
 But the ice is not equally dangerous. The most dangerous chances come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
 
-Two things to be honest about, because the shape gets quoted more confidently than the evidence supports. **The boundaries are an analytics convention, not an official marking** — Natural Stat Trick, Evolving Hockey and MoneyPuck all draw them slightly differently, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the shape. And **how much of the scoring it accounts for depends on whose figure you take** — [Shooting](../technique/shooting.md) owns the values, and hedges every one of them. The figures that have actually been counted are more modest than the versions repeated in dressing rooms: **26.8%** of NHL goals were scored within two stick-lengths of the net and **51.6%** within twenty feet, computed from the NHL play-by-play feed over 400 games of 2024-25 ([Body Contact and Battles](../technique/body_contact_and_battles.md) owns both, and those are patches smaller than the house). What every source agrees on is the ratio rather than the share: a shot from inside this area is worth several times the same shot from outside it. That is enough to build a system on.
+Two things to be honest about, because the shape gets quoted more confidently than the evidence supports. **The boundaries are an analytics convention, not an official marking** — Natural Stat Trick, Evolving Hockey and MoneyPuck all draw them slightly differently, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers the shape. And **how much of the scoring it accounts for depends on whose figure you take** — [Shooting](../technique/shooting.md) covers the values, and hedges every one of them. The figures that have actually been counted are more modest than the versions repeated in dressing rooms: **26.8%** of NHL goals were scored within two stick-lengths of the net and **51.6%** within twenty feet, computed from the NHL play-by-play feed over 400 games of 2024-25 ([Body Contact and Battles](../technique/body_contact_and_battles.md) covers both, and those are patches smaller than the house). What every source agrees on is the ratio rather than the share: a shot from inside this area is worth several times the same shot from outside it. That is enough to build a system on.
 
 ![](diagram:dz-the-house)
 
@@ -117,7 +117,7 @@ The idea: you defend **space**, not people. Each of the five of you owns an area
 ### The base shape — puck in the strong-side corner
 
 ```facts
-Convention: Under low zone collapse, the strong-side defenceman is on the puck in the corner or behind the net — pressure and pin, or angle them away from the net
+Convention: Under low zone collapse, the strong-side defenceman is on the puck in the corner or behind the net — pressure and pin the puck, not the player, or angle them away from the net
 Convention: The weak-side defenceman owns the goalmouth and boxes out — do not get drawn to the puck
 Convention: The centre is the second body into the strong-side corner battle — two on one wins it
 Convention: The strong-side winger stays high on the strong-side point, between that defenceman and the net
@@ -134,7 +134,7 @@ Rule: Freezing the puck unpressured to buy a stoppage is a minor — NHL Rule 63
 | **Strong-side winger** | High, on the strong-side point | Between that defenceman and the net; block the lane and the shot |
 | **Weak-side winger** | High, on the weak-side point — collapsing into the high slot when the centre goes low | Cover the point *and* the middle, in that order of movement |
 
-**"Pin the puck, not the player."** [Body Contact and Battles](../technique/body_contact_and_battles.md) owns this distinction and it is a rule, not a nicety: **IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards.** Pinning the *puck* against the wall with your skate or body while an opponent is contesting it is legal everywhere and is how most board-battle whistles happen; pinning the *opponent* is not. **One qualifier, because "legal everywhere" is too strong on its own:** freezing the puck when nobody is actually pressuring you, purely to buy a stoppage, is itself a minor — **NHL Rule 63.2(i)**, *"On any player, including the goalkeeper, who holds, freezes or plays the puck with his stick, skates or body in such a manner as to deliberately cause a stoppage of play"*, and **USA Hockey Rule 610(a)** in even plainer terms: *"A minor penalty shall be assessed to any player or goalkeeper who deliberately freezes the puck along the boards or goal frame for the purpose of delaying the game."* Under pressure, pin it; unpressured, play it.
+**"Pin the puck, not the player."** [Body Contact and Battles](../technique/body_contact_and_battles.md) covers this distinction and it is a rule, not a nicety: **IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards.** Pinning the *puck* against the wall with your skate or body while an opponent is contesting it is legal everywhere and is how most board-battle whistles happen; pinning the *opponent* is not. **One qualifier, because "legal everywhere" is too strong on its own:** freezing the puck when nobody is actually pressuring you, purely to buy a stoppage, is itself a minor — **NHL Rule 63.2(i)**, *"On any player, including the goalkeeper, who holds, freezes or plays the puck with his stick, skates or body in such a manner as to deliberately cause a stoppage of play"*, and **USA Hockey Rule 610(a)** in even plainer terms: *"A minor penalty shall be assessed to any player or goalkeeper who deliberately freezes the puck along the boards or goal frame for the purpose of delaying the game."* Under pressure, pin it; unpressured, play it.
 
 Note that the two forwards' jobs are asymmetric. The strong-side winger holds their point; the weak-side winger is the flex player who covers two areas depending on what the centre is doing. That's not sloppiness — it's the defining feature of the system, and the reason it is sometimes called a *sagging* zone.
 
@@ -198,7 +198,7 @@ Position: Both wingers are already high — two outlets the moment you win the p
 - **It handles fatigue and mismatches.** When you're tired, or a fourth-line winger is on with their top centre, area coverage doesn't ask you to win a footrace.
 - **The wingers are already positioned to break out.** Two forwards high means two outlets the moment you win the puck.
 
-### What it concedes
+### Low Zone Collapse: What it concedes
 
 ```facts
 Key: The walk-down, not the point shot, is the system's actual weakness — every collapse team needs an explicit answer to it
@@ -249,7 +249,7 @@ Mindset: "He's yours" is the easiest instruction in hockey to understand, though
 - **It lets you match up.** Your best defensive forward can be put on their best player, all shift.
 - **Conceptually simple.** "He's yours" is the easiest instruction in hockey to understand — though not to execute.
 
-### What it concedes
+### Man-on-Man: What it concedes
 
 ```facts
 Countered by: Picks and screens — one legal collision and your man is gone with a two-stride head start
@@ -263,7 +263,7 @@ Risk: Poor breakout readiness — when you win the puck, your five are wherever 
 - **Picks and screens.** Attacking teams beat man coverage by running players into your defenders on purpose. One legal collision and your man is gone with a two-stride head start.
 - **Mismatches.** Your winger is now defending a mobile defenceman in a footrace. If they lose that individual battle, there is no help behind them, because everyone else is occupied.
 - **Total collapse from one error.** In zone coverage a beaten player leaves a hole; in man-on-man a beaten player leaves an attacker with the puck and nobody within twenty feet. Every breakdown is immediately a high-danger chance.
-- **It is exhausting.** You are skating a full shift — 30 to 80 seconds on the measured range, nearer 30–45 when it is well managed; [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns both figures — at your opponent's chosen pace, in your own zone.
+- **It is exhausting.** You are skating a full shift — 30 to 80 seconds on the measured range, nearer 30–45 when it is well managed; [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers both figures — at your opponent's chosen pace, in your own zone.
 - **It pulls you out of the house.** The classic failure is chasing a man into the corner who never had any intention of getting the puck, while their teammate walks into the slot you vacated. Good man-on-man teams have a rule about *not* following a check into harmless ice.
 - **Poor breakout readiness.** When you win the puck, your five players are wherever their five players decided to stand, which is rarely a breakout shape.
 
@@ -435,7 +435,7 @@ Action: Get out to the shot, don't sit under it — a winger at the hash marks b
 Action: As the puck goes high, the low players stop looking at it and start boxing out — the danger is the tip and the rebound
 ```
 
-**What it is:** the puck goes down to the corner or behind the net, drags your coverage low, and then gets passed back *up* to the point for a shot with your defenders' backs turned and traffic in front. Coaching material routinely calls it one of the most common ways modern teams score, and it exists precisely to punish low zone collapse. *(Shot-**location** data is public and plentiful — [Shooting](../technique/shooting.md) owns what it says. What does not exist publicly is a classification of goals by the **play that produced them**, which is what a ranking like this would need, so treat "one of the most common" as coaching consensus rather than a measured figure.)*
+**What it is:** the puck goes down to the corner or behind the net, drags your coverage low, and then gets passed back *up* to the point for a shot with your defenders' backs turned and traffic in front. Coaching material routinely calls it one of the most common ways modern teams score, and it exists precisely to punish low zone collapse. *(Shot-**location** data is public and plentiful — [Shooting](../technique/shooting.md) covers what it says. What does not exist publicly is a classification of goals by the **play that produced them**, which is what a ranking like this would need, so treat "one of the most common" as coaching consensus rather than a measured figure.)*
 
 **Defending it:**
 - **The strong-side winger's discipline is the whole answer.** They stay high, in the lane, between that defenceman and the net. If they got sucked low, the low-to-high is free.
@@ -516,7 +516,7 @@ Never: Hand-pass it out to a breaking winger — it is illegal the moment the pu
 Technique: Stay on your feet as long as possible — a defender on the ice is out of the play for two seconds, which is the whole scramble
 ```
 
-**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play. **The rebound half of that is countable, and it is substantial** — **11.4%** of NHL goals are scored within three seconds of a previous shot on goal by the same team, and **19.7%** within ten seconds; [Offensive Zone Play](offensive_zone_play.md) section 10 owns that figure and carries its source. Put it alongside shot-*location* data, which says the ice in front of the crease is the most dangerous on the rink ([Shooting](../technique/shooting.md) owns that), and the direction is well supported. What is still not published is a classification of goals by the **play that produced them**, so "more than any highlight play" stays a coaching comparison rather than a measured ranking.
+**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play. **The rebound half of that is countable, and it is substantial** — **11.4%** of NHL goals are scored within three seconds of a previous shot on goal by the same team, and **19.7%** within ten seconds; [Offensive Zone Play](offensive_zone_play.md) section 10 covers that figure and carries its source. Put it alongside shot-*location* data, which says the ice in front of the crease is the most dangerous on the rink ([Shooting](../technique/shooting.md) covers that), and the direction is well supported. What is still not published is a classification of goals by the **play that produced them**, so "more than any highlight play" stays a coaching comparison rather than a measured ranking.
 
 **Defending it:**
 - **Body first, puck second.** Tie up the most dangerous stick before you look for the puck. A player with a free stick at the goalmouth will score before you get there.
@@ -576,7 +576,7 @@ Convention: Under low zone collapse the pass goes to the winger coming down the 
 Rule: Off the glass and out is legal; putting the puck directly out of play from your own defending zone is a two-minute delay of game (NHL Rule 63.2(iii)), with three narrow carve-outs
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 Risk: Ice it at even strength and the puck comes straight back — your tired line cannot change and cannot take a timeout
-Rule: Shorthanded you may ice the puck freely (NHL Rule 81.6), but two carve-outs apply under USA Hockey and the NHL — check your league; Special Teams owns both
+Rule: Shorthanded you may ice the puck freely (NHL Rule 81.6), but two carve-outs apply under USA Hockey and the NHL — check your league; Special Teams covers both
 Rule: Your goalie may only play the puck behind the goal line inside the trapezoid (NHL Rule 27.8) — most rec, beer-league and youth associations don't use it, so find out — the sole exception is a goalie keeping skate contact with the crease
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8 — and in England and Wales its status is unsettled, because England Ice Hockey's Rules & Regulations 22.3 say the restricted area is "not currently enforced"; keep your goalie inside it and ask your league
 Never: Cheat up the ice — the puck should leave the zone before your third forward does

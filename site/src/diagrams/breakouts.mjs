@@ -444,7 +444,7 @@ const dToD = {
     'the whole forecheck to reset and shift. Drawn in your own defensive zone at the left of the ' +
     'picture, with the strong side flooded and the far side free, which is the read the option ' +
     'needs — its real value is that it costs the opposition time, because everything they had ' +
-    'covered comes uncovered while they travel. The absolute rule is the route, and it is the reason ' +
+    'covered comes uncovered while they travel. The route is the point of the picture, and it is the reason ' +
     'this diagram exists: go behind your own net, never through the shaded area. Intercepted below ' +
     'the goal line the pass means nothing, because there is no shot from there; the same pass in ' +
     'front of the net is a point-blank chance against, and it is one of the most punished mistakes ' +

@@ -144,7 +144,7 @@ Action: Find out where your coach draws that line
 
 ![](diagram:breakout-d-to-d)
 
-*Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, where the interception would happen 50 feet out. Know where your coach draws the line.
+*Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, far enough out that an interception is not a slot chance — [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) has that geometry. Know where your coach draws the line.
 
 ### 2. Never make a blind backhand pass up the middle of your own zone
 

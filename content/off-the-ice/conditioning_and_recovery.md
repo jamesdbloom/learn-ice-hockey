@@ -246,7 +246,7 @@ Any of these still means the player comes off and does not return that day. And 
 
 CRT6 is free. **Have it on your phone**, and know where the red-flag list is on it before you need it.
 
-### The absolute rule
+### Concussion: the absolute rule
 
 **If a concussion is suspected, the player comes off immediately and does not return to play that day. Not that shift, not that period, not that game.** "Suspected", not "confirmed" — you do not need certainty, and nobody at a rec-league rink is qualified to rule it out.
 
@@ -456,7 +456,7 @@ The practical rule that follows: **change before you need to, not when you need 
 
 You have a job, possibly children, and one or two skates a week. Here is the realistic version.
 
-### The principles
+### Training as an adult recreational player: the principles
 
 1. **Consistency beats intensity.** Three sessions a week for a year beats six sessions a week for six weeks followed by nothing. The adherence data in the injury-prevention section makes this a measured finding, not a platitude.
 2. **Your games are your interval training.** If you skate twice a week you are already getting hockey-shaped anaerobic work. You do not need to add much more.

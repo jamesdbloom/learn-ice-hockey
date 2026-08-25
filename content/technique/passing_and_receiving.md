@@ -25,12 +25,12 @@ Terms used throughout, defined here so the document stands alone:
 
 - **Tape-to-tape** — a pass that arrives flat on the receiver's stick blade, on the taped part, ready to be played immediately.
 - **Blade** — the flat part of your stick that touches the ice. Its **heel** is the end nearest the shaft; its **toe** is the far end.
-- **Cupping the blade** — tilting the top edge of the blade slightly forward over the puck, so the face is closed rather than open to the sky.
+- **Cupping** — tilting the top edge of the blade slightly forward over the puck, so the face is closed rather than open to the sky. [Puck Handling](puck_handling.md) covers the technique.
 - **The slot** — the dangerous scoring area in front of the net, between the two faceoff circles. The **high slot** is from the faceoff dots up to the top of the circles; the **goalmouth** is the immediate net front.
 - **Half-wall** — the boards area roughly level with the faceoff dot, between the corner and the point.
 - **The point** — the area just inside the offensive blue line where defencemen normally stand.
 - **Strong side** — the side of the ice the puck is on. **Weak side** — the other side.
-- **Checker** — the opponent currently pressuring you.
+- **Checker** — the opponent currently pressuring you. ⚠️ **Note the word runs both ways in hockey**: elsewhere in this guide, and in most coaching language, *"your check"* means the opponent **you** are responsible for covering. Both usages are common; take the direction from the sentence around it.
 - **Support** — a teammate positioning themselves to receive a pass from you.
 
 ---
@@ -76,7 +76,7 @@ Risk: Low, and the risk is lane selection rather than technique — a clear lane
 - **Sweep, do not slap.** The bottom hand pushes the puck along the ice in one continuous motion and the puck rolls **heel to toe**, leaving off the toe. The passing article this document leans on puts both halves of that plainly: *"Your bottom hand 'sweeps' the ice. Do not slap at the puck,"* and *"pass the puck from the middle or heel of the blade — the player and the stick blade are stronger — the passes are flat, crisp, and the puck can be spun flat from heel to toe."* **What that source is, once, so the later citations to it are read correctly:** a two-page "Coaches' Playbook" column by **John Hamre**, an assistant coach with the U.S. National Team Development Program, in the January 2002 issue of *American Hockey*, USA Hockey's own magazine. It is one named coach writing in a governing body's magazine — a good source for passing mechanics, which is all it is used for here, and **not** a USA Hockey playing rule or an official curriculum. Slapping at the puck is the single most common cause of an inaccurate pass, because contact becomes a single instant rather than a guided path.
 
 - **Transfer your weight** from the back leg through your hips toward your front foot as you release. Power comes from your body, not your arms.
-- **Follow through pointing the blade at the target**, finishing low — roughly knee height — with the blade still near the ice. **Follow-through is a *cue*, not the mechanism.** The puck leaves on the angle the blade face is pointing at separation; finishing at the target is how a human being reliably produces that angle, because nobody can meter a blade angle deliberately. [Shooting](shooting.md) owns that reconciliation and states it the same way — and it is the reason this document can also say, of a one-touch pass, that "the blade face at the moment of contact *is* the pass". Same physics, two different cues for it.
+- **Follow through pointing the blade at the target**, finishing low — roughly knee height — with the blade still near the ice. **Follow-through is a *cue*, not the mechanism.** The puck leaves on the angle the blade face is pointing at separation; finishing at the target is how a human being reliably produces that angle, because nobody can meter a blade angle deliberately. [Shooting](shooting.md) covers that reconciliation and states it the same way — and it is the reason this document can also say, of a one-touch pass, that "the blade face at the moment of contact *is* the pass". Same physics, two different cues for it.
 
 **When to use it.** As the default. Any time the lane is clear and the receiver can be reached along the ice, this is the pass. It is the easiest pass to receive, which is the point.
 
@@ -311,7 +311,7 @@ Beyond the pass types, five habits determine whether your passes arrive.
 
 **3. Weight transfer.** Power comes from moving your body weight from the back leg to the front leg through the pass. Arm-only passes float, and floaters get intercepted. This is the same power chain as a wrist shot — see [Shooting](shooting.md).
 
-**4. Follow through at the target.** Finish with the blade pointing where you want the puck, low to the ice. A pass that misses left or right was almost always sent that way by the blade face, and the follow-through is the cue that controls it — see the note under the flat pass above, and [Shooting](shooting.md), which owns the face-versus-follow-through account. *(That "almost every" is coaching observation, not a counted failure analysis.)*
+**4. Follow through at the target.** Finish with the blade pointing where you want the puck, low to the ice. A pass that misses left or right was almost always sent that way by the blade face, and the follow-through is the cue that controls it — see the note under the flat pass above, and [Shooting](shooting.md), which covers the face-versus-follow-through account. *(That "almost every" is coaching observation, not a counted failure analysis.)*
 
 **5. Pass to the correct side of the receiver.** This is the most commonly ignored mechanic in the list. Given a choice, put the puck:
 
@@ -554,6 +554,14 @@ What the receiver owes the passer:
 - **A target blade and a voice**, as above.
 - **A next option.** If your reception has no exit, you are not support, you are a trap.
 
+![](diagram:unmarked-but-unavailable)
+
+That picture is the first bullet drawn: the receiver has nobody within ten feet of him and is still not an option, because a stick lies flat across the only line between him and the puck. **Unmarked and available are different things**, and the passer is reading the second one.
+
+![](diagram:support-angles)
+
+And this one is the spatial half of the same idea — where support can stand relative to a carrier, and what each position offers. Note that none of them is simply *close*, and that the picture shows the *where* rather than the *when*: timing is the half no still frame holds.
+
 What the passer owes the receiver:
 
 - **A pass that can be received in stride** — see the lead-judging section above.
@@ -773,7 +781,7 @@ document, that is named too.*
 7. **Rim goes onward around the boards; reverse goes back against the flow of pressure.** Choose by the checker's momentum: rim past a checker who has you pinned, reverse behind one who has skated past you.
 8. **One-touch passing beats coverage because it moves the puck faster than a defence can rotate** — but only if you chose your next target before the puck arrived.
 9. **A pass is a two-player action.** The receiver's timing and lane create the pass as much as the passer's decision does. When a team cannot complete passes, look at the players without the puck first.
-10. **In your own zone the passing standard is certainty, not value.** No blind pass up the middle, no D-to-D through the slot, no cross-ice in your own end. Those three are risk-management defaults rather than laws of hockey — some breakouts deliberately build in a controlled D-to-D exchange behind the goal line — so treat them as always-on unless your coach has explicitly designed the exception.
+10. **In your own zone the passing standard is certainty, not value.** No blind pass up the middle, no D-to-D through the slot, no cross-ice in your own end. Those three are risk-management defaults rather than laws of hockey — some breakouts deliberately build in a controlled D-to-D exchange, behind the goal line or high in the zone above the tops of the circles — so treat them as always-on unless your coach has explicitly designed the exception.
 
 ---
 

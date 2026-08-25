@@ -395,6 +395,80 @@ over the dasher is unreadable"*). These four are placement failures: the placer 
 labels out of the boards band and did not. Fix the placement, or drop the halo only where a label
 overlaps the band.
 
+**⬜ "Walking an opponent out" is taught as universal and is not.** `body_contact_and_battles.md`
+teaches a four-step net-front sequence whose third step is *"shoulder beneath their armpit, legs
+driving, walking them out sideways"*, under that document's blanket scope claim that everything in
+it *"applies in every league, including yours… The single exception is the section on delivering a
+legal body check."* Boxing out and tying sticks are position-holding and legal everywhere. **Step 3
+is different in kind:** it displaces a stationary opponent who does not have the puck, by overt
+shoulder and torso action. USA Hockey's Declaration of Player Safety (`usah.txt:369-372`) permits
+players *"SIMPLY MAINTAINING legally established body position"* in front of the goal, and Rule 604
+Note 1 (`usah.txt:3541-3545`) makes *"overt hip, shoulder, forearm or torso action"* an illegal
+body check in Competitive Contact categories; IIHF 101.1 (`iihf_rules_v1.1.txt:7506`) gives a
+stationary player their ice. **Scope: most North American amateurs, all British women's and girls'
+hockey, Hockey Canada U13-and-below and female hockey.** Propagated to
+`defensive_zone_coverage.md:448` and `:458`. ⚠️ **Limit on the finding:** the USA Hockey Casebook is
+not on disk (Tier 4), and a Casebook situation on the net-front walk-out could qualify or overturn
+it. The fix is to split step 3 from the other three with a scope flag and to qualify §1's
+"every league" sentence the way §5 already is.
+
+**⬜ The `owns` → `covers` sweep is about 85% done, and both vocabularies are now live.** It
+replaced the active forms and left `owned by`: 14 survivors across eight files —
+`how_to_watch_hockey.md:598`, `mental_game.md:696`, `center.md:388` ×2 and `:596`,
+`defender.md:197` and `:547`, `defensive_zone_coverage.md:597`, `faceoffs.md:722`,
+`zone_entries.md:694`, `skating.md:721, 729, 731, 906`. The sharpest is `center.md:596` — a Key
+Takeaway, the layer the podcast extracts, saying *"owned by"* three lines from the same document's
+*"covers"*. Two consequences worth fixing together: `skating.md:729` explains the corpus's own
+cross-linking policy to the reader (*"belong to skating but are owned by other documents, so they
+are cross-linked rather than repeated here"*), which is the style-guide's internal-machinery
+prohibition verbatim; and `defender.md` has **four** references to *"the owning document"* (`:160`,
+`:202`, `:572`, `:607`) which, now that `owns` has been swept out of that file, is a term of art
+with no referent on the page — two of them do not name the document in the same sentence at all.
+⚠️ **Do not sweep the ordinary-English uses**: *"the weak-side defenceman owns the goalmouth"*,
+*"the goalie owns the shooter"* are hockey, not the project idiom.
+
+**⬜ A sweep that rewrites 78 ownership pointers is the moment to re-check what they point at.**
+`content-reviewer` verified 7 of the 78 targets both ways and said so. `review_history.md` §3.7 is
+why this matters: thirteen documents once pointed at `special_teams.md` for a rule it had never
+mentioned. The other 71 are unchecked.
+
+**⬜ Four verified rule-set divergences the corpus states as universal.** `rules-verifier` read all
+four books for these in round 41; **the numbers below are verified against primary text**, so this
+item needs writing, not researching. Each is in a ` ```facts ` line — the layer read aloud without
+context — and each is right for the NHL and wrong or incomplete for somebody.
+
+- **Faceoff encroachment ejects the centre — under the NHL and USA Hockey, not the IIHF.**
+  `center.md`'s block says *"their encroachment ejects you, not them"* with no book. NHL 76.6
+  (`nhl_rules.txt:8133-8136`) and USA Hockey 613(d) (`usah.txt:3953-3959`) both eject the centre;
+  **IIHF 76.6** (`iihf_rules_v1.0.txt:6277-6278`) gives only *"a warning for a face-off violation"*,
+  with the bench minor arriving at 76.7 on the second. It is a **three-way** split, not a binary,
+  and `center.md`'s own banner tells British readers the IIHF flags are theirs. The body has it
+  right; the block does not.
+- **The shorthanded-icing carve-outs are not universal.** `defensive_zone_coverage.md:577` says
+  *"two carve-outs apply under USA Hockey and the NHL"* and leaves a British reader to assume they
+  are among them. **IIHF 81.6 has no major-penalty carve-out at all** — the NHL's third paragraph
+  is simply absent (`iihf_rules_v1.0.txt:6709-6721`, confirmed unchanged in v1.1) — and **Hockey
+  Canada 6.7(b)** (`hc.txt:5055-5057`) grants the exemption with no classification limit and no
+  carve-out whatsoever. `faceoffs.md:923` already discloses the IIHF gap correctly and is the model.
+- **"Cannot take a timeout" after icing is NHL and IIHF only, and Hockey Canada contradicts it
+  outright.** NHL 87.1 (`nhl_rules.txt:9397-9400`) and IIHF 87.1 confirmed. **USA Hockey imposes
+  neither restriction** — established by reading Rules 204, 624 and 636(f) in full rather than by a
+  failed search. **Hockey Canada 6.7(d)(iii)** (`hc.txt:5117-5119`) *expressly permits* the time-out
+  after an icing and bars only the substitution during it, and its no-change regime applies only to
+  *"U18AAA, Junior, and at the option of the Member in Senior"* (`hc.txt:5089-5091`). Consequence is
+  a forgone rest, not an injury — low priority, high certainty.
+- **A quotation was silently repaired inside quotation marks.** `faceoffs.md:276` and `:294` quote
+  NHL 76.7 as *"When at least two face-off violations…"*. The book reads **"When a least two"**
+  (`nhl_rules.txt:8151`) — a typo in the NHL's own text. Substance is unaffected; the corpus's rule
+  is that a quotation is verbatim or marked.
+
+⚠️ **None of this is a deletion case.** Every divergence runs toward the corpus over-warning, so a
+reader who obeys the text is safe and merely surprised. Non-negotiable 3's test is not met.
+
+⚠️ **The USA Hockey Casebook is still not on disk**, so no official interpretation was checkable for
+any of the four. That bears hardest on the USA Hockey time-out negative, which rests on rule text
+alone.
+
 **⬜ MA26 — a mis-splice that reads smoothly would still pass everything.** Round 37's CR15
 was caught only because the join lost a space. A block landing in the wrong paragraph that
 happens to read grammatically survives every pass now run.

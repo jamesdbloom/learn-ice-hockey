@@ -12,7 +12,7 @@ Convention: One defenceman on the puck and one on the net front belongs to a low
 Key: Gap control — how much room you leave an oncoming puck carrier — is the defining skill of playing defence, and it is a skating problem before it is a decision
 Action: Start skating backwards early, and take the middle away so the only route left runs toward the side boards
 Never: Turn to skate forwards while you can still stay backwards — once you turn you have given up your ability to react
-Never: Carry the puck or pass it across the ice in front of your own goal — go behind the net instead, where an interception means nothing
+Never: Carry the puck or pass it across the ice in front of your own goal — go behind the net, or high above the circles if that is what your team plays
 Convention: Alone against two attackers, take the pass away and let your goalie have the shot — a convention rather than a law, which stops applying if the shooter is walking in unpressured with no realistic pass available
 Rule: Under NHL and IIHF rules your goalie may play the puck behind the goal line only inside the marked trapezoid, so a rim that dies in the corner is yours — the sole exception is a goalie playing the puck while keeping skate contact with the crease (NHL Rule 27.8; IIHF Rule 27.7, in the same words)
 Rule: USA Hockey has no trapezoid, and that reverses the play — the same corner rim is your goalie's to fetch, not yours; most rec, beer-league and youth leagues outside Britain have none either
@@ -20,17 +20,13 @@ Rule: "No trapezoid" is not "no restricted area" — USA Hockey Rule 614(c) bars
 Rule: In England and Wales the status of the goalie's marked area behind the net is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced", so play as though it binds and ask your league
 ```
 
-Two defencemen work as a pair: one plays the puck, the other guards the ice at the mouth of your own goal, and you swap those jobs whenever the puck crosses the middle.
+Two defencemen work as a pair, and the facts above are that pairing seen from four angles. What the block cannot carry is why each one bites.
 
-**The commonest way that goes wrong is both of you being drawn to the puck**, leaving the front of your net unguarded — which coaches at every level name as one of the commonest causes of goals against, coaching consensus rather than a counted statistic. That division of labour belongs to a low zone collapse, the most common defensive-zone system and a coaching choice rather than a rule: under man-on-man the front of the net belongs to whoever's man is standing there. Find out which your team plays.
-
-**Gap control — how much room you leave an oncoming puck carrier — is the defining skill of the position, and it is a skating problem before it is a decision.** Start skating backwards early, because you cannot close that distance from a standstill. Take the middle away so the only route left runs toward the side boards. And stay skating backwards as long as you can — once you turn to skate forwards you have given up your ability to react.
-
-**Never carry the puck or pass it across the ice in front of your own goal.** Go behind the net instead, where an interception means nothing. And alone against two attackers, take the pass away and let your goalie have the shot — a convention rather than a law, which stops applying if the shooter is walking in unpressured with no realistic pass available.
+**Both of you drawn to the puck** is the commonest way the pairing fails, and it leaves the front of your net unguarded — which coaches at every level name as one of the commonest causes of goals against, coaching consensus rather than a counted statistic. **Gap control is a skating problem before it is a decision:** you cannot close that distance from a standstill, which is why you start backwards early, and once you turn to skate forwards you have given up your ability to react. **Going behind your own net rather than across the front of it** is not caution but arithmetic — behind, an interception means nothing; across, it is a scoring chance. **And alone against two**, taking the pass away and leaving the goalie the shot is a convention rather than a law: it stops applying if the shooter is walking in unpressured with no realistic pass available.
 
 **Under NHL and IIHF rules your goalie may play the puck behind the goal line only inside the marked trapezoid**, so a puck that dies in the corner is yours — plan the route before it arrives. **The rule carries one exception in its own words:** the minor is not assessed *"when a goalkeeper plays the puck while maintaining skate contact with his goal crease"* (NHL Rule 27.8; IIHF Rule 27.7 says it in the same words). There is no exception for being under pressure and none for a teammate being nearby.
 
-**⚠️ USA Hockey has no trapezoid, and that reverses this instruction.** Most North American rec and youth hockey runs on the USA Hockey book, and there the same dead rim **is** your goalie's to fetch rather than yours — so a defenceman who sprints into that corner out of NHL habit is racing his own goalie for a puck under forecheck pressure. **But "no trapezoid" is not "no restricted area":** USA Hockey Rule 614(c) makes it a delay-of-game minor for a goalkeeper to fall on or gather the puck in **four** separate cases, and two of them bear on you. *"(3) The puck is outside the boundaries of the 'goalkeeper's privileged' area"* — an area reaching back from the faceoff-dot line to the end boards, which **excludes the corners**. And, stricter still, *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"* — which is **not limited by the privileged area at all**, so your goalie may not smother a puck behind your own net either, however central it is. **The practical upshot: under USA Hockey your goalie fetches the dead rim but must move it, not sit on it — so be an outlet, not a spectator.** **Check your book before you decide who chases a dead rim.** Most rec, beer-league and youth associations outside Britain have no trapezoid either, and in England and Wales the status is unsettled: England Ice Hockey's *Rules & Regulations* 22.3 say it is *"not currently enforced"*, so play as though it binds and ask your league. [Rules Primer](../foundation/rules_primer.md) owns both rules.
+**⚠️ USA Hockey has no trapezoid, and that reverses this instruction.** Most North American rec and youth hockey runs on the USA Hockey book, and there the same dead rim **is** your goalie's to fetch rather than yours — so a defenceman who sprints into that corner out of NHL habit is racing his own goalie for a puck under forecheck pressure. **But "no trapezoid" is not "no restricted area":** USA Hockey Rule 614(c) makes it a delay-of-game minor for a goalkeeper to fall on or gather the puck in **four** separate cases, and two of them bear on you. *"(3) The puck is outside the boundaries of the 'goalkeeper's privileged' area"* — an area reaching back from the faceoff-dot line to the end boards, which **excludes the corners**. And, stricter still, *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"* — which is **not limited by the privileged area at all**, so your goalie may not smother a puck behind your own net either, however central it is. **The practical upshot: under USA Hockey your goalie fetches the dead rim but must move it, not sit on it — so be an outlet, not a spectator.** **Check your book before you decide who chases a dead rim.** Most rec, beer-league and youth associations outside Britain have no trapezoid either, and in England and Wales the status is unsettled: England Ice Hockey's *Rules & Regulations* 22.3 say it is *"not currently enforced"*, so play as though it binds and ask your league. [Rules Primer](../foundation/rules_primer.md) covers both rules.
 
 ---
 
@@ -64,7 +60,7 @@ The most important zone for a defender. Your job is to protect the area in front
 
 ---
 
-### Carrying the Puck — Free Space
+### Defensive Zone: Carrying the Puck — Free Space
 
 ```facts
 Position: Behind your own net or along the boards
@@ -73,7 +69,7 @@ Targets: Winger on the boards, the centre coming low, or your defensive partner
 Options: Quick-up, up, wheel, D-to-D, reverse, rim, off the glass — run down them and take the first genuinely on, not a ranking of favourites
 Read: Take the quick-up in the two or three seconds after your team wins the puck, before their forecheck exists — look up ice first, then down
 Goal: Transition the puck out of danger and start your team's breakout
-Never: Carry or pass D-to-D through the slot — skate behind the net to the other side instead
+Never: Carry or pass D-to-D through your own slot — go behind the net. Only the alternative route varies: some teams allow the exchange above the tops of the circles, outside the slot
 Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii))
 Rule: The carve-outs are a stretch of boards with no glass mounted above it, a puck shot into the players' bench, and one out directly off a faceoff — but over the glass behind the bench is penalised, "the penalty will be assessed" (NHL Rule 63.2(iii) and its NOTE)
 Rule: The IIHF carries the same minor and the same carve-outs, "except where there is no protective glass" (IIHF Rule 63.2(III)) — so it binds a British player too
@@ -96,7 +92,7 @@ Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate s
 - **Rim** — hard around the boards to the far winger. Safe, but concedes possession more often than the others.
 - **Off the glass and out** — no possession, but no goal against either. Always available and never wrong when you're in trouble. One caveat: the puck must stay *in play*. Shooting it **over** the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii)), and it is a penalty amateur defencemen take constantly. **The IIHF book says the same thing in the same words** — Rule 63.2(III) penalises a player who shoots the puck *"directly (non-deflected) out of the playing surface from their defending zone, except where there is no protective glass"* — so if you play in Britain this is your rule and not a North American footnote. **The rule carries three written carve-outs, and the players' bench is not the simple one it looks like.** First, it does not apply *"where there is no glass"* — that means a stretch of boards with no glass mounted above it, which is a rec-rink and older-facility situation, not a bench one. Second, its NOTE says *"when the puck is shot into the players' bench, the penalty will not apply."* Third, the same NOTE says *"when the puck goes out of the playing area directly off a face-off, no penalty shall be assessed."* **But the rule states in terms that *"when the puck is shot over the glass 'behind' the players' bench, the penalty will be assessed"*** — so the bench is the one area where you must not assume the glass rule has stopped applying. Into the bench, no penalty; over the glass behind it, two minutes. **The IIHF carries all three carve-outs and the bench rule too, in wording that is if anything wider** — its 63.2(III) says the penalty is assessed *"when the puck is shot over the protective glass surrounding the Players' bench"*, where the NHL says *"behind"*. Know your rink, but do not build a habit on it. Off the glass and along it, fine; over it, and you've put your team down a man.
 
-**D-to-D passing — and the one rule about it.** Moving the puck to your partner makes the forecheck reset and shift across, which is often all you need. But: **never pass D-to-D through the slot.** Go behind your own net so the puck travels below the goal line, where an interception means nothing. A D-to-D pass in front of the net that gets picked off is a point-blank chance against, and it is one of the most punished mistakes in hockey.
+**D-to-D passing — and the one rule about it.** Moving the puck to your partner makes the forecheck reset and shift across, which is often all you need. But: **never pass D-to-D through the slot.** Go behind your own net so the puck travels below the goal line, where an interception means nothing. **Some teams instead exchange high in the zone, above the tops of the circles**, on the reasoning that an interception up there is not a slot chance — though it is still a loose puck at the top of your slot, which is not nothing. Those are two different routes, not a hard version and a soft one; ask your coach which yours uses. A D-to-D pass in front of the net that gets picked off is a point-blank chance against, and it is one of the most punished mistakes in hockey.
 
 **Key considerations:** Don't carry through the slot either. If no pass is on, skate behind the net to the other side rather than going through the middle.
 
@@ -104,7 +100,7 @@ Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate s
 
 ---
 
-### Carrying the Puck — Under Pressure
+### Defensive Zone: Carrying the Puck — Under Pressure
 
 ```facts
 Position: Along the boards or behind your own net, protecting yourself
@@ -145,7 +141,7 @@ Action: Plan your retrieval route before the puck arrives, and aim rims where a 
 
 ---
 
-### Pressuring an Opponent with the Puck
+### Defensive Zone: Pressuring an Opponent with the Puck
 
 ```facts
 Position: Wherever the puck is on your side — the corner and behind the net included
@@ -178,7 +174,7 @@ Under either system, two things hold: if the puck escapes up the wall toward the
 
 ---
 
-### Without the Puck — Weak-Side Coverage at the Goalmouth
+### Defensive Zone: Without the Puck — Weak-Side Coverage at the Goalmouth
 
 ```facts
 Position: At the goalmouth, between any opposing forward and your goalie
@@ -222,7 +218,7 @@ The transition zone. Your job is to prevent the opponent from entering your zone
 
 ---
 
-### Carrying the Puck — Free Space
+### Neutral Zone: Carrying the Puck — Free Space
 
 ```facts
 Position: Moving up through the middle of the ice or along the boards
@@ -243,7 +239,7 @@ Mindset: Simple and safe beats clever and risky in the neutral zone
 
 ---
 
-### Carrying the Puck — Under Pressure
+### Neutral Zone: Carrying the Puck — Under Pressure
 
 ```facts
 Position: Near the boards or just inside your own blue line
@@ -265,7 +261,7 @@ Mindset: When in doubt, go simple
 
 ---
 
-### Pressuring an Opponent with the Puck
+### Neutral Zone: Pressuring an Opponent with the Puck
 
 ```facts
 Position: Between the puck carrier and your net, facing the oncoming play, closing the distance as they come
@@ -289,7 +285,7 @@ Never: Step up in the neutral zone unless you are certain you can win the puck
 Key: Gap control is the defining skill of the position — your gap is the distance between you and the puck carrier
 Risk: Too big a gap gives them a free run at you with speed and options; too small and one move puts them past you
 Action: Start your feet before they reach you — you cannot close a gap from a standstill
-Technique: Tighten the gap as they cross the red line and again at your own blue line — Defending the Rush owns the distances
+Technique: Tighten the gap as they cross the red line and again at your own blue line — Defending the Rush covers the distances
 Read: Watch their chest and hips, not the puck, hands or head — the torso has to point where the body is actually going
 Action: Take away the middle and force them outside, where the wall becomes a second defender
 Technique: Stick in the passing lane, on the ice, out front — it takes away the pass without committing your body
@@ -335,7 +331,7 @@ A pinch is generally the safer of the two, because you have teammates behind you
 
 ---
 
-### Without the Puck — Holding the Line as the Safety Valve
+### Neutral Zone: Without the Puck — Holding the Line as the Safety Valve
 
 ```facts
 Position: At your own blue line, in the middle of the ice — one defender each side of the centre line, roughly between the two neutral-zone faceoff dots
@@ -362,7 +358,7 @@ You are the last line of defensive responsibility, so your role in the offensive
 
 ---
 
-### Carrying the Puck — Free Space
+### Offensive Zone: Carrying the Puck — Free Space
 
 ```facts
 Position: Both defenders normally just inside the blue line
@@ -380,13 +376,13 @@ Never: Go below the circles unless somebody has taken your job at the blue line 
 
 **Goal:** Create a shot on net or maintain offensive zone possession.
 
-**Key considerations:** Picture three depths in the offensive zone: (1) just inside the blue line — the default position; (2) the top of the faceoff circle — the activated position, acceptable for supporting a cycle, and still recoverable; (3) **below the circles** — not always wrong, but **always a commitment**. At depth (3) you are a fourth forward, you cannot recover if it turns over, and someone must have taken your job at the blue line *before* you go, not after. The "step down" mentioned above is only to depth (2). Going to depth (3) is a separate, deliberate decision covered under *Activating* below. When in doubt, stay at the line. [Offensive Zone Play](../systems/offensive_zone_play.md) owns the offensive-zone structure and is the authority on these three depths.
+**Key considerations:** Picture three depths in the offensive zone: (1) just inside the blue line — the default position; (2) the top of the faceoff circle — the activated position, acceptable for supporting a cycle, and still recoverable; (3) **below the circles** — not always wrong, but **always a commitment**. At depth (3) you are a fourth forward, you cannot recover if it turns over, and someone must have taken your job at the blue line *before* you go, not after. The "step down" mentioned above is only to depth (2). Going to depth (3) is a separate, deliberate decision covered under *Activating* below. When in doubt, stay at the line. [Offensive Zone Play](../systems/offensive_zone_play.md) covers the offensive-zone structure and is the authority on these three depths.
 
 ![](diagram:defender-three-depths)
 
 ---
 
-### Carrying the Puck — Under Pressure
+### Offensive Zone: Carrying the Puck — Under Pressure
 
 ```facts
 Position: At or near the blue line — if you had stepped down to support the cycle, retreat to the line now
@@ -408,7 +404,7 @@ Risk: Lose the line and get caught in the zone and the opponent exits cleanly �
 
 ---
 
-### Pressuring an Opponent with the Puck
+### Offensive Zone: Pressuring an Opponent with the Puck
 
 ```facts
 Position: Near the blue line, with the strong-side defender closer to the action
@@ -430,7 +426,7 @@ Risk: If you both step up and the play breaks the other way, the opponent has a 
 
 ---
 
-### Without the Puck — Supporting the Cycle from the Line
+### Offensive Zone: Without the Puck — Supporting the Cycle from the Line
 
 ```facts
 Position: Both defenders just inside the blue line, the strong-side one potentially stepped down to the top of the circle
@@ -456,7 +452,7 @@ Key: One defenceman is always above the puck — which of you it is can change, 
 **Activating — joining the attack as a fourth (or fifth) man.** The conservative positioning above is the default, not a prohibition. Modern defencemen create a lot of offence by jumping into the play, and the difference between a good activation and a bad one is entirely the read:
 
 - **Only activate when a forward can back-fill for you.** Someone has to be the safety valve above the puck. If all three forwards are below the circles and you jump, there is nobody home.
-- **Activate off the weak side — the common default, not the only route.** The undefended arriving player is the dangerous one, so coming down the weak side into the back door generally beats charging into a crowded strong-side battle. Teams that run a five-man rotation, or that use the defenceman as the strong-side wall support in a cycle, activate strong side on purpose. Ask which yours does; [Offensive Zone Play](../systems/offensive_zone_play.md) owns the choice.
+- **Activate off the weak side — the common default, not the only route.** The undefended arriving player is the dangerous one, so coming down the weak side into the back door generally beats charging into a crowded strong-side battle. Teams that run a five-man rotation, or that use the defenceman as the strong-side wall support in a cycle, activate strong side on purpose. Ask which yours does; [Offensive Zone Play](../systems/offensive_zone_play.md) covers the choice.
 - **Activate on possession, not on hope.** Jump when your team has clear control below the goal line, not while the puck is still 50-50 in a corner.
 - **Call it.** Shout so your partner knows to slide over and cover the middle, and your forwards know to rotate high.
 - **Late, not early.** Arriving as the second wave into the slot is what beats coverage. Arriving early just means you're another body to mark.
@@ -515,7 +511,7 @@ Key: Box — you and your partner low, owning the net front and the two low corn
 Key: Diamond — one of you takes the low point at the net front, the other becomes one of the two middle players; run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked
 Key: Wedge+1 — you are almost always in the triangle, not the "+1" who pressures whoever has the puck
 Action: In wedge+1 the handover can make you the +1 — when the puck moves, the nearest wedge player steps out and the previous +1 drops into the triangle
-Action: Hold the box — two of you just off the crease edges — box out the net front, block shots, and clear on every opportunity; Special Teams owns the shape and how it slides
+Action: Hold the box — two of you just off the crease edges — box out the net front, block shots, and clear on every opportunity; Special Teams covers the shape and how it slides
 Rule: You may ice the puck freely while shorthanded — but NHL Rule 81.6 withdraws it from a team short by a major with nobody on the penalty bench
 Rule: USA Hockey grants the shorthanded icing exemption only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1))
 Never: Get pulled out of position chasing the puck around the perimeter — the power play wants you to chase, because that is what opens the seam
@@ -527,7 +523,7 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 - **Diamond** — one of you takes the low point of the diamond at the net front, the other becomes one of the two middle players. Run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked.
 - **Wedge+1** — you are almost always in the triangle, not the "+1". The single player outside the triangle pressures whoever has the puck; when the puck moves he stops and the nearest wedge player — which can be you — steps out as the new +1 while he drops in. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route the +1 takes out — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and the point — is a coaching choice, and published descriptions differ; ask which one your team runs.**
 
-In all of them: stay tight, box out the net front, block shots, and clear the puck on every opportunity — under-pressure clears are perfectly fine and you may ice the puck freely while shorthanded — **with two carve-outs worth knowing before you rely on it**: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a *major* that has left nobody on the penalty bench to come out, and USA Hockey restricts it by classification, so below Youth 15-Only / Girls 16U / High School / Adult a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) owns this rule. Don't get pulled out of position chasing the puck around the perimeter; let it come to you. The power play *wants* you to chase, because that's what opens the seam.
+In all of them: stay tight, box out the net front, block shots, and clear the puck on every opportunity — under-pressure clears are perfectly fine and you may ice the puck freely while shorthanded — **with two carve-outs worth knowing before you rely on it**: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a *major* that has left nobody on the penalty bench to come out, and USA Hockey restricts it by classification, so below Youth 15-Only / Girls 16U / High School / Adult a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) covers this rule. Don't get pulled out of position chasing the puck around the perimeter; let it come to you. The power play *wants* you to chase, because that's what opens the seam.
 
 ### Icing
 
@@ -546,7 +542,7 @@ Key: When you are gassed, the glass is the answer — the punishment for a tired
 
 **Glass, not flat.** You ice it most often on a straight-line clear up the middle from your own end, and that same clear is the one most often intercepted at the blue line. Aim **wide and high off the glass** instead: a glass clear rarely ices, is very hard to pick off, and gets the puck out even when it doesn't get it out cleanly. A rim that carries all the way down the ice is what gets whistled. (Off the glass, yes — *over* it, no: see the delay-of-game caveat under your breakout options above.)
 
-**The cost lands on your pair.** After your own icing the draw is in your zone, and **under NHL and IIHF rules** you **cannot change** and your team cannot take a timeout. So the punishment for a tired clear is being kept out there tired, in the most dangerous zone on the ice, for a faceoff. When you are gassed, the glass is the answer. **⚠️ One book is softer:** IIHF Rules 81.4 and 87.1 impose both restrictions exactly as the NHL does — so if you play British or European league hockey, assume the full penalty — but **USA Hockey imposes neither**, because nothing in Rule 624 restricts substitution, Rule 204 lets you change at any stoppage, and Rule 636(f) puts no icing condition on time-outs. [Rules Primer](../foundation/rules_primer.md) owns this.
+**The cost lands on your pair.** After your own icing the draw is in your zone, and **under NHL and IIHF rules** you **cannot change** and your team cannot take a timeout. So the punishment for a tired clear is being kept out there tired, in the most dangerous zone on the ice, for a faceoff. When you are gassed, the glass is the answer. **⚠️ One book is softer:** IIHF Rules 81.4 and 87.1 impose both restrictions exactly as the NHL does — so if you play British or European league hockey, assume the full penalty — but **USA Hockey imposes neither**, because nothing in Rule 624 restricts substitution, Rule 204 lets you change at any stoppage, and Rule 636(f) puts no icing condition on time-outs. [Rules Primer](../foundation/rules_primer.md) covers this.
 
 **On the kill you may ice it freely — where your rule set allows it.** Where it applies this is the single biggest structural advantage a penalty kill has, so use it ruthlessly rather than trying to make a play you don't need to make. But it is not universal, and the two carve-outs are set out above and owned by [Special Teams](../systems/special_teams.md): USA Hockey grants the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), and NHL Rule 81.6 withdraws it from a team shorthanded by a *major* with an empty penalty bench.
 
@@ -579,14 +575,14 @@ Blocking shots is a defenceman's job, but it is a *technique*, not an act of cou
 
 ```facts
 Key: Your shift is legitimately a little longer than a forward's, because more of it is gliding, reading and skating backwards rather than sprinting
-Key: Don't read that as covering less ground — the measured direction is the other way round, and Center owns that finding
+Key: Don't read that as covering less ground — the measured direction is the other way round, and Center covers that finding
 Key: The gap is real and smaller than you think — about a second and a half a shift, computed for this document from the NHL's own time-on-ice report and not a published figure
 Key: The "40–50 seconds for a D against 35–45 for a forward" figures are coaching talk with no source behind them, and both halves sit below what the league actually does
 Action: Change your pair on its own clock, not with a forward line — let the forwards go and take your change on the next safe window
 Never: Change while you are the last man back — say it out loud: "last man"
 ```
 
-**Your shift is legitimately a little longer than a forward's**, because you spend more of it gliding, reading and skating backwards rather than at a full sprint. **Do not read that as covering less ground** — the measured direction is the other way round. Lignell and colleagues, tracking 36 NHL players through a game, found that *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**"*, while forwards performed *"**54% more** (p ≤ 0.05) high-intensity skating per minute"*. Less sprinting per minute, more skating in total. [Center](center.md) owns that finding. **The gap is real, and it is smaller than you think.** In the 2025-26 NHL regular season defencemen averaged **49.3 seconds per shift against 47.6 for forwards** — a difference of about a second and a half. That is computed from the NHL's own time-on-ice report (total ice time divided by total shifts, all situations, every skater who took a shift: 325 defencemen, 615 forwards); it is not a published figure, and the same calculation on 2024-25 gives 48.7 against 47.4. The specific "40–50 seconds for a D against 35–45 for a forward" figures you hear are coaching talk with no source behind them, and both halves of it sit below what the league actually does. ([How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) flags the related broadcast figure of "40–45 seconds" as not coming from the physiology literature — though it also notes that figure is *not* baseless, being close to the mean of 47 s computed here. It does not address positional bands at all; that comparison is this document's.) The measured *range* for an individual skater is **roughly 30 to 80 seconds** — measured by **Lignell et al. (2018), Brocherie et al. (2018) and Bracko et al. (1998)**, and collected in Vigh-Larsen and Mohr's 2024 physiology review, which reports the band rather than having measured it; [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns that figure. What the extra second or two buys you is one more rotation of the puck, not a ninety-second shift.
+**Your shift is legitimately a little longer than a forward's**, because you spend more of it gliding, reading and skating backwards rather than at a full sprint. **Do not read that as covering less ground** — the measured direction is the other way round. Lignell and colleagues, tracking 36 NHL players through a game, found that *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**"*, while forwards performed *"**54% more** (p ≤ 0.05) high-intensity skating per minute"*. Less sprinting per minute, more skating in total. [Center](center.md) covers that finding. **The gap is real, and it is smaller than you think.** In the 2025-26 NHL regular season defencemen averaged **49.3 seconds per shift against 47.6 for forwards** — a difference of about a second and a half. That is computed from the NHL's own time-on-ice report (total ice time divided by total shifts, all situations, every skater who took a shift: 325 defencemen, 615 forwards); it is not a published figure, and the same calculation on 2024-25 gives 48.7 against 47.4. The specific "40–50 seconds for a D against 35–45 for a forward" figures you hear are coaching talk with no source behind them, and both halves of it sit below what the league actually does. ([How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) flags the related broadcast figure of "40–45 seconds" as not coming from the physiology literature — though it also notes that figure is *not* baseless, being close to the mean of 47 s computed here. It does not address positional bands at all; that comparison is this document's.) The measured *range* for an individual skater is **roughly 30 to 80 seconds** — measured by **Lignell et al. (2018), Brocherie et al. (2018) and Bracko et al. (1998)**, and collected in Vigh-Larsen and Mohr's 2024 physiology review, which reports the band rather than having measured it; [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers that figure. What the extra second or two buys you is one more rotation of the puck, not a ninety-second shift.
 
 Two things are yours specifically. **Your pair changes on its own clock, not with a forward line** — five players stepping over the boards at the same moment is a rush against nobody, so let the forwards go and take your change on the next safe window. And **you are frequently the last man back**, in which case you do not change at all until somebody relieves you. Say it out loud: "last man."
 
@@ -608,7 +604,7 @@ Never: Let an attacker get between you and your net — stay on the defensive si
 Full detail in [Defending the Rush](../systems/defending_the_rush.md). The three situations you must have automatic:
 
 - **1-on-1:** Gap control (see the neutral zone section above). Force them outside, keep your stick in the passing lane, don't lunge. Your goal is to steer them to a bad shooting angle, not to make a highlight hit.
-- **2-on-1:** **Take away the pass, give up the shot.** Position yourself in the passing lane between the two attackers, stick flat on the ice on the passing side. The shot is your goalie's job — they can see it and are set for it. A cross-ice pass to an open forward is a chance they cannot save. Do not slide unless the pass is already released. **As with the 3-on-2 below, this is one of two legitimate systems rather than a law:** the realistic alternative is a **timed slide** flat across the passing lane to remove the pass outright and force the shot — the pass is gone, but you are out of the play if you go early and you cannot contest the rebound. **Ask your coach which one you are playing**, and make sure your goalie gives the same answer. **And do not carry the going-down method from Blocking Shots below into it** — that is written for dropping in front of a *shot*, and a slide across a *passing* lane is a different action on a different axis. Head up and out of the shot lane; how you go down is not settled teaching here, so ask the coach who is asking you to slide. [Defending the Rush](../systems/defending_the_rush.md) owns both systems. **The one honest caveat, from the owning document:** if the second attacker has been picked up by a backchecker and the shooter is walking into the slot completely unpressured with no realistic pass available, it is no longer a 2-on-1 — close on the puck. Read what is actually in front of you rather than the label.
+- **2-on-1:** **Take away the pass, give up the shot.** Position yourself in the passing lane between the two attackers, stick flat on the ice on the passing side. The shot is your goalie's job — they can see it and are set for it. A cross-ice pass to an open forward is a chance they cannot save. Do not slide unless the pass is already released. **As with the 3-on-2 below, this is one of two legitimate systems rather than a law:** the realistic alternative is a **timed slide** flat across the passing lane to remove the pass outright and force the shot — the pass is gone, but you are out of the play if you go early and you cannot contest the rebound. **Ask your coach which one you are playing**, and make sure your goalie gives the same answer. **And do not carry the going-down method from Blocking Shots below into it** — that is written for dropping in front of a *shot*, and a slide across a *passing* lane is a different action on a different axis. Head up and out of the shot lane; how you go down is not settled teaching here, so ask the coach who is asking you to slide. [Defending the Rush](../systems/defending_the_rush.md) covers both systems. **The one honest caveat, from the owning document:** if the second attacker has been picked up by a backchecker and the shooter is walking into the slot completely unpressured with no realistic pass available, it is no longer a 2-on-1 — close on the puck. Read what is actually in front of you rather than the label.
 - **3-on-2:** There are **two named systems here and you need to know which one your team plays** — this is a coaching choice, not a law. The common default is **"two wide, middle to the backchecker"**: each defenceman takes an outside attacker, nobody chases the puck carrier, and the middle attacker belongs to whoever is backchecking the middle lane — usually the centre, though *which* backchecker owns the middle is itself a coaching choice, with "first man back takes the middle" and man-on-man-from-the-puck-outward both in use (see [Center](center.md) and [Winger](winger.md)). The realistic alternative is **"strong side takes the puck, weak side splits"**: the strong-side defenceman plays the carrier as a 1-on-1 and the weak-side defenceman drops off to split the middle and the far attacker, sitting in the passing lane exactly as on a 2-on-1. The default concedes the middle entirely if the backcheck does not arrive; the alternative never concedes the middle but leaves the far attacker more room. **Ask your coach which one you are playing** — two defencemen running different versions on the same rush is worse than either. Under both: retreat together and keep the middle of the ice sealed as long as possible.
 
 The universal rule: **stay on the defensive side of the puck**. Anything that puts an attacker between you and your net has already gone wrong.
@@ -619,13 +615,13 @@ The universal rule: **stay on the defensive side of the puck**. Anything that pu
 
 ## Common Mistakes
 
-- **Both defencemen drawn to the puck**, leaving the goalmouth empty. Coaches at every level name this as one of the commonest causes of goals against — **coaching consensus, not a statistic**; no published tracking data breaks goals down by cause this way. [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) owns that claim and states it the same way.
+- **Both defencemen drawn to the puck**, leaving the goalmouth empty. Coaches at every level name this as one of the commonest causes of goals against — **coaching consensus, not a statistic**; no published tracking data breaks goals down by cause this way. [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) covers that claim and states it the same way.
 - **Standing still at the blue line** and letting an attacker skate into you with speed. Start your feet early.
 - **Diving or sliding on a 2-on-1** before the pass is released, where your team plays the passing lane — you take yourself out of the play and open both options. Some teams coach a timed slide as the method itself; the mistake is doing it inside a system that did not ask for it — and it is not the drop you use in front of a shot.
 - **Carrying the puck through your own slot.** Go behind the net instead.
 - **Pinching with no read.** An offensive-zone pinch with forwards behind you is fine; a neutral-zone pinch that misses is a 2-on-1 against your partner.
 - **Rimming into the corner and assuming the goalie will get it.** Under NHL and IIHF rules they legally cannot, unless they keep skate contact with the crease — though in England and Wales the restricted area's status is unsettled. Play as though it binds — an unpainted sheet is a hint, not a ruling, because the rule turns on where the puck is, not on the markings. **And the opposite mistake, if you have moved from the NHL book to the USA Hockey one: sprinting for a corner rim that is now your goalie's.** USA Hockey has no trapezoid, so they may fetch it — what Rule 614(c) stops them doing is *freezing* it, and not merely in the corners: 614(c)(1) bars smothering the puck anywhere behind the goal line with the body clear of the crease.
-- **D-to-D through the slot.** Go behind the net.
+- **D-to-D through the slot.** Never — go behind the net. Some teams also allow the exchange above the tops of the circles, which is a different route entirely, not a softer version of this one.
 - **Blocking a shot from a screening position**, deflecting a puck your goalie never saw.
 - **Activating with no forward covering for you**, leaving nobody above the puck.
 - **Standing tall while skating backwards.** Stay low or you get beaten wide.
@@ -647,24 +643,24 @@ document, that is named too.*
    into itself, and what should you have done differently when you aimed that
    rim? Then answer the same question **for a league with no trapezoid** — who
    fetches it, and what may your goalie still not do out there? *(§Overview and
-   §Defensive Zone — Carrying the Puck — Under Pressure, the trapezoid note)*
+   §Defensive Zone: Carrying the Puck — Under Pressure, the trapezoid note)*
 
 2. You have just retrieved the puck behind your own net. Name three of your
    breakout options — then say what that list is *not*, and which option most
-   defencemen never look for. *(§Defensive Zone — Carrying the Puck — Free
+   defencemen never look for. *(§Defensive Zone: Carrying the Puck — Free
    Space)*
 
 3. You are in trouble and you put the puck off the glass. When does that same
    instinct become a two-minute penalty instead — what three carve-outs does the
    rule carry in its own wording, and which of the two things you can do at the
-   players' bench is the one that costs you two minutes? *(§Defensive Zone —
+   players' bench is the one that costs you two minutes? *(§Defensive Zone:
    Carrying the Puck — Free Space)*
 
 4. There is a forward parked at your goalmouth and you have to move him. What is
    the order of operations, where on his stick may a stick lift be taken, and why
-   is "my blade was on the ice" no defence? *(§Without the Puck — Weak-Side
+   is "my blade was on the ice" no defence? *(§Defensive Zone: Without the Puck — Weak-Side
    Coverage at the Goalmouth, and [Body Contact and
-   Battles](../technique/body_contact_and_battles.md), which owns the technique)*
+   Battles](../technique/body_contact_and_battles.md), which covers the technique)*
 
 5. You are alone against two attackers. What do you take away, what do you
    deliberately give up, and what is the one situation in which that stops being
@@ -677,7 +673,7 @@ document, that is named too.*
 7. A point shot is coming and you decide to block it. Name the three things you
    never do with your body, say why each one is dangerous, and name the position
    you must never block from. *(§Blocking Shots, and [Body Contact and
-   Battles](../technique/body_contact_and_battles.md), which owns the technique)*
+   Battles](../technique/body_contact_and_battles.md), which covers the technique)*
 
 8. How much longer is a defenceman's shift than a forward's, where does that
    number come from, and what is wrong with the figures you usually hear quoted?
@@ -690,7 +686,7 @@ document, that is named too.*
 1. One defender on the puck, one at the goalmouth — swap every time the puck crosses the middle, and talk about it. That is a low zone collapse; under man-on-man the net front belongs to whoever's man is standing there.
 2. Gap control is the job. Start your feet early, close the middle, force them outside, pivot late.
 3. On a 2-on-1, take the pass away and let your goalie have the shot — a convention, not a law. **The named alternative is a timed slide across the lane to force the shot, so ask which your team plays and make sure your goalie says the same.** Head up and out of the shot lane either way — and it is not the going-down method in 9 below, which is written for blocking a shot. It stops applying altogether if the shooter is walking in unpressured with no realistic pass.
-4. Never carry or pass D-to-D through your own slot. Go behind the net, where an interception means nothing.
+4. Never carry or pass D-to-D through your own slot. Go behind the net, where an interception means nothing. Some teams also allow the exchange *above the tops of the circles*, outside the slot — [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) has that geometry — so find out where your coach draws that line.
 5. **Off the glass is a clear; over the glass is a penalty.** Shooting the puck directly out of play from inside your own defensive zone is a two-minute delay-of-game minor — NHL Rule 63.2(iii) and IIHF Rule 63.2(III), which is the version a British player is under — and it is one amateur defencemen take constantly. **The rule carries three carve-outs in its own wording** — *"except where there is no glass"* (a stretch of boards with none mounted above it, which matters at rec rinks), a puck shot **into** the players' bench, and a puck out **directly off a faceoff**. **Over the glass *behind* the bench is not one of them: "the penalty will be assessed".** Know your rink and do not build a habit on any of it. USA Hockey has no equivalent minor: Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff.
 6. Under NHL and IIHF rules — and, on a claim we could not verify against a KHL rulebook, the KHL — your goalie may play the puck behind the goal line only inside the trapezoid, so a rim that dies in the corner is yours — the one exception in the rule's own words being a goalkeeper who plays it *"while maintaining skate contact with"* the crease (NHL 27.8, IIHF 27.7). **USA Hockey and most rec, beer-league and youth associations have no trapezoid, and that reverses the play:** there your goalie is a third puck-handler and the dead rim is theirs. **It is still not a free-for-all** — USA Hockey Rule 614(c) bars them *freezing* the puck outside the "goalkeeper's privileged area", which excludes the corners, and 614(c)(1) bars it anywhere behind the goal line with the body clear of the crease. They fetch it; they cannot sit on it. Know which book you are in before you decide who chases.
 7. **In England and Wales the trapezoid's status is unsettled** — the IIHF book has it at Rule 27.7, and England Ice Hockey's *Rules & Regulations* 22.3 say it is not currently enforced. Play as though it binds and ask your league; unpainted lines are a hint, not a ruling.

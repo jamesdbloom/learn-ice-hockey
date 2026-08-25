@@ -17,20 +17,14 @@ Convention: "The centre skates the furthest" is coaching craft, never measured �
 Key: Measured, it reverses — Lignell 2018, 36 NHL players: defencemen skated 29% more in total than forwards and were 47% longer on the ice; forwards did 54% more high-intensity skating per minute
 ```
 
-You are the link between all five skaters: the centre's job spans all three zones and the full width of the rink, which no other position's does.
+You are the link between all five skaters, and the claim that survives measurement is about **territory, not mileage** — the centre's job spans all three zones and the full width of the rink, which no other position's does. The blockquote below is why that wording matters.
 
-**Get deep in your own end before the puck is won.** Come back toward your own goal line and in toward the middle — inside the faceoff circles, not out by the side boards, which is your winger's ice. Too high and your defenceman has no safe outlet, and comes under pressure immediately. That is the conventional swing breakout, one way of getting the puck out of your end; under a centre fly you leave early up the middle and the far-side winger takes the low job, so find out which your team plays.
-
-**In your own end your responsibility moves with the puck** — into the corner to help your defenceman when the puck goes down there, and back out to the ice between the faceoff circles when it does not; the ice at the mouth of your own goal is a defenceman's, not yours. When you leave for the corner the far-side winger drops in behind you, so call it early. That is a low zone collapse — a coaching choice, not a rule of hockey; under man-on-man you track one assigned opponent instead, so ask which your team plays.
-
-**Faceoffs are yours, and most of them barely matter.** Roughly 56 are taken in an average NHL game, and team faceoff win percentage explains only about 6% of the variation in a team's points percentage across eleven NHL seasons — both computed from NHL official statistics. Ten to fifteen a game matter enormously: in your own end, on special teams, in the last minute, and after an icing.
-
-**Coming back, the middle of the ice is yours.** The most dangerous attacker on a rush is usually not the puck carrier but the forward arriving late and unmarked behind them, and nobody else picks them up. Which player takes the middle is a coaching choice too — some teams give it to whoever is first back — so make sure somebody has it.
+Four of the facts above carry a reason the block itself has no room for. **Getting deep before the puck is won:** too high and your defenceman has no safe outlet, and comes under pressure immediately. **Leaving for the corner:** the far-side winger drops in behind you, so call it early — it is a swap, not an errand. **The middle on a backcheck:** the most dangerous attacker on a rush is usually not the puck carrier but the forward arriving late and unmarked behind them, and nobody else picks them up. **And the faceoffs you actually lose sleep over are few:** roughly 56 are taken in an average NHL game, and team faceoff win percentage explains only about 6% of the variation in a team's points percentage across eleven NHL seasons — both computed from NHL official statistics.
 
 > **⚠️ Say "more of the ice", not "more ice" — the familiar version of this claim is measured, and it is wrong.** "The centre covers more ice than any other position" is repeated everywhere in coaching talk. Two things are true about it:
 >
 > - **No study separates centres from wingers on skating distance at all.** The external-load literature splits players only into forwards and defence, so the centre-versus-winger half of the claim is **coaching craft** — plausible, widely believed, never measured.
-> - **The forwards-versus-defence half has been measured, and it goes the other way.** Lignell and colleagues tracked 36 NHL players through a game and found that *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**. However, F performed **54% more** (p ≤ 0.05) high-intensity skating per minute than defensemen."* The figures used elsewhere in this guide agree on the workload direction: defencemen average **24.0 shifts a game against 19.4 for forwards** (2024-25, skaters with 41+ games — [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns that computation) and slightly longer shifts, **49.3 s against 47.6 s** (2025-26, all skaters — [Defender](defender.md) owns that one). The two figures come from different seasons and different samples, so read them as two separate computations pointing the same way, not as one dataset.
+> - **The forwards-versus-defence half has been measured, and it goes the other way.** Lignell and colleagues tracked 36 NHL players through a game and found that *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**. However, F performed **54% more** (p ≤ 0.05) high-intensity skating per minute than defensemen."* The figures used elsewhere in this guide agree on the workload direction: defencemen average **24.0 shifts a game against 19.4 for forwards** (2024-25, skaters with 41+ games — [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers that computation) and slightly longer shifts, **49.3 s against 47.6 s** (2025-26, all skaters — [Defender](defender.md) covers that one). The two figures come from different seasons and different samples, so read them as two separate computations pointing the same way, not as one dataset.
 >
 > So what survives is a claim about **territory, not mileage**: the centre's job spans all three zones and the full width of the rink, which no other position's does. What does not survive is "the centre skates the furthest" — a defenceman almost certainly does.
 >
@@ -43,7 +37,7 @@ You are the link between all five skaters: the centre's job spans all three zone
 ```facts
 Key: High means toward the blue line you're facing, low means toward the goal line
 Action: "Swing low" means get below the hash marks, not merely below the puck
-Key: Strong-side is the puck's side — your defensive-zone job is the only one that switches sides every time the puck does
+Key: Strong-side is the puck's side — your defensive-zone job switches sides every time the puck does, as the defence pair's does; a winger's usually holds for a whole sequence
 Convention: Under a low zone collapse the high slot, between the dots and the top of the circles, is your patch and the goalmouth belongs to the weak-side defenceman — that split is a coaching choice, not a rule; under man-on-man you follow your assigned check wherever it goes, so ask which your team plays
 Never: Drift onto the half-wall — that is your wingers' ice, and it collapses your line's spacing
 Key: F1/F2/F3 are forecheck roles defined by order of arrival — not positions, and not people
@@ -52,8 +46,8 @@ Key: F1/F2/F3 are forecheck roles defined by order of arrival — not positions,
 **Every line, zone and named area of the ice is defined in [Rink Map and Glossary](../foundation/rink_map_and_glossary.md), which is the dictionary for this guide.** Read it once and everything below gets easier. Listed here are only the terms a centre uses in a particular sense, or leans on so heavily that they need saying again.
 
 - **High / low.** High means toward the blue line you're facing, low means toward the goal line. You will be told to "swing low" more than any other player: it means get **below the hash marks**, not merely below the puck.
-- **Strong-side / weak-side.** Strong-side is the side the puck is on; weak-side is the other. These matter more to you than to anyone else, because your defensive-zone job is the only one that switches sides every time the puck does.
-- **The slot, the high slot, the goalmouth.** The slot is the area between the two faceoff circles in front of the net. The **high slot** is its upper layer — between the dots and the top of the circles — and the **goalmouth** is the immediate net front. Those names are terminology and they do not change. **Who owns each layer is not terminology but a coaching choice:** under a **low zone collapse**, the system assumed throughout this document, the high slot is *your* patch in your own zone and the goalmouth belongs to the weak-side defenceman; under **man-on-man** you follow your assigned check wherever it goes and either layer may be anyone's. Ask which your team plays. Either way, keeping the two apart is most of defensive-zone centre play.
+- **Strong-side / weak-side.** Strong-side is the side the puck is on; weak-side is the other. These matter more to you than to a winger, whose side usually holds for a whole sequence; your defensive-zone job switches every time the puck does, as the defence pair's does — see [Defender](defender.md), which covers the pair's swap.
+- **The slot, the high slot, the goalmouth.** The slot is the area between the two faceoff circles in front of the net. The **high slot** is its upper layer — between the dots and the top of the circles — and the **goalmouth** is the immediate net front. Those names are terminology and they do not change. **Who owns each layer is not terminology but a coaching choice:** under a **low zone collapse**, the system assumed throughout this document, the high slot is *your* patch in your own zone and the goalmouth belongs to the weak-side defenceman — **though your patch passes to the weak-side winger collapsing down whenever you go to help in the corner**, which is a handoff to agree before it happens rather than during it; under **man-on-man** you follow your assigned check wherever it goes and either layer may be anyone's. Ask which your team plays. Either way, keeping the two apart is most of defensive-zone centre play.
 - **Half-wall.** The boards roughly level with the faceoff dot. This is *not* your ice — it is where your wingers live, and drifting onto it is the commonest way a centre collapses his own line's spacing.
 - **Forecheck.** Pressuring the opposition in their own end, trying to win the puck back rather than retreat. **F1 / F2 / F3** are **roles on a forecheck defined by order of arrival — not positions, and not people.** F1 is whoever reaches the puck first, F2 the second support, F3 the highest and the safety. F1 is *often* the centre and this document describes that common case, but if a winger gets there first then the winger is F1 and you are F2 — immediately, without swapping back. See [Forechecking Systems](../systems/forechecking_systems.md).
 
@@ -67,7 +61,7 @@ The center has the most demanding defensive role among the forwards. You support
 
 ---
 
-### Carrying the Puck — Free Space
+### Defensive Zone: Carrying the Puck — Free Space
 
 ```facts
 Position: Low in the defensive zone, below the hash marks, swinging toward the puck
@@ -87,7 +81,7 @@ Key: Your low positioning is what gives the defencemen a safe pass — if you do
 
 ---
 
-### Carrying the Puck — Under Pressure
+### Defensive Zone: Carrying the Puck — Under Pressure
 
 ```facts
 Position: Low in the defensive zone near the boards or behind the net
@@ -110,7 +104,7 @@ A **rim** and a **reverse** are different plays and worth keeping straight: a ri
 
 ---
 
-### Pressuring an Opponent with the Puck
+### Defensive Zone: Pressuring an Opponent with the Puck
 
 ```facts
 Position: Low in the zone, supporting the strong-side defender
@@ -144,7 +138,7 @@ The wingers stay high covering the points (the areas near the blue line where th
 
 ---
 
-### Without the Puck — Getting Open for the Breakout
+### Defensive Zone: Without the Puck — Getting Open for the Breakout
 
 ```facts
 Position: Swinging low — inside the faceoff dots and below the hash marks, in your strong-side faceoff circle
@@ -178,7 +172,7 @@ The transition zone is where the center connects defence and attack. You are the
 
 ---
 
-### Carrying the Puck — Free Space
+### Neutral Zone: Carrying the Puck — Free Space
 
 ```facts
 Position: Through the middle of the ice, leading or driving the rush
@@ -199,7 +193,7 @@ Never: Carry for its own sake — if a teammate is in a better position, move th
 
 ---
 
-### Carrying the Puck — Under Pressure
+### Neutral Zone: Carrying the Puck — Under Pressure
 
 ```facts
 Position: Through the middle, or shifting to the boards if the middle is congested
@@ -220,7 +214,7 @@ Goal: Maintain possession through the neutral zone or safely advance the puck
 
 ---
 
-### Pressuring an Opponent with the Puck
+### Neutral Zone: Pressuring an Opponent with the Puck
 
 ```facts
 Position: In the middle of the neutral zone — the closest forward initiates pressure, and that is usually you
@@ -244,7 +238,7 @@ Key: If you don't initiate pressure, the opponent gets a free run at your defenc
 
 ---
 
-### Without the Puck — Supporting the Rush Through the Middle
+### Neutral Zone: Without the Puck — Supporting the Rush Through the Middle
 
 ```facts
 Position: Through the centre of the neutral zone, level with or slightly behind the puck
@@ -275,7 +269,7 @@ The center operates in the most dangerous part of the offensive zone — the slo
 
 ---
 
-### Carrying the Puck — Free Space
+### Offensive Zone: Carrying the Puck — Free Space
 
 ```facts
 Position: In the slot — between the two faceoff circles, from the top of the circles down to the front of the net
@@ -296,7 +290,7 @@ Action: Keep moving and keep the puck moving
 
 ---
 
-### Carrying the Puck — Under Pressure
+### Offensive Zone: Carrying the Puck — Under Pressure
 
 ```facts
 Position: In the slot, behind the net, or along the boards near the circles
@@ -317,7 +311,7 @@ Key: Behind the net you can see the whole ice and decide without risking a direc
 
 ---
 
-### Pressuring an Opponent with the Puck
+### Offensive Zone: Pressuring an Opponent with the Puck
 
 ```facts
 Action: Be first in as F1 — forecheck through the middle at the opposing defenceman, or wherever the puck has gone
@@ -352,7 +346,7 @@ The defensemen hold the blue line at the points. Remember that these are **roles
 
 ---
 
-### Without the Puck — Getting Open in the Slot
+### Offensive Zone: Without the Puck — Getting Open in the Slot
 
 ```facts
 Position: In the slot between the two faceoff dots, just outside the crease — close enough to tip shots and pounce on rebounds
@@ -386,7 +380,8 @@ Read: Defensive zone — win it back to your defenders, ideally the boards-side 
 Read: Offensive zone — win it to a defender for a one-timer, or back to a winger in the circle for a quick chance
 Action: If you can't win it clean, tie up your opponent's stick so your wingers can pounce on the loose puck
 Action: Warn your wingers that their encroachment ejects you, not them — the single most avoidable way a centre loses a draw
-Never: Close your hand over the puck or smother it with your body — that is a minor penalty, not a faceoff violation
+Never: Close your hand over the puck or smother it with your body at a draw — it is a penalty, not a faceoff violation
+Rule: Under the NHL and IIHF that is a minor, and inside your own crease it escalates to a penalty shot
 Rule: At eight of the nine spots the defending centre places his blade down first (NHL Rule 76.4), and IIHF Rule 76.4 says it in the same words; USA Hockey Rule 613(a) reverses it and the attacking player goes first, while Hockey Canada Rule 6.2(a) puts the visiting player first at every spot
 Rule: After an icing the first faceoff violation by either team does not remove the centre — the linesperson warns that team instead (NHL Rule 76.4)
 ```
@@ -407,9 +402,9 @@ You are the primary faceoff taker. An average NHL game has **roughly 56 faceoffs
 
 So:
 
-- **Whether you place your stick first depends on whether you are defending, not on where you are.** At eight of the nine spots — both end zones and all four neutral-zone dots — **the defending centre puts his blade down first**, followed immediately by the attacking centre. Only at centre ice does the **visiting** player go first, regardless of anything else (NHL Rule 76.4). So you place first when you are defending that end, and second when you are attacking it. Knowing which you are stops you being rushed or being late. **⚠️ USA Hockey reverses it, and most North American amateurs play under USA Hockey.** Rule 613(a): *"The attacking player shall be the first to place their stick on the ice, except for a center ice face-off where the visiting team player shall be first to place their stick on the ice."* So the advantage of seeing the other blade first belongs to the **attacking** centre in the NHL and to the **defending** centre under USA Hockey. **The IIHF book — the one every level of British hockey is played under — reads with the NHL here**, word for word (IIHF Rule 76.4), so a British centre can use the paragraph above as written. **Hockey Canada is different again**: Rule 6.2(a) and its Interpretation 1 put the **visiting** player's stick down first at every spot, *"regardless of whether they are the attacking or defending team"* — so under that book the order tells you nothing about which end you are at. Three answers across the four books. Find out which you are in before you build a habit on it — [Faceoffs](../systems/faceoffs.md) owns this.
+- **Whether you place your stick first depends on whether you are defending, not on where you are.** At eight of the nine spots — both end zones and all four neutral-zone dots — **the defending centre puts his blade down first**, followed immediately by the attacking centre. Only at centre ice does the **visiting** player go first, regardless of anything else (NHL Rule 76.4). So you place first when you are defending that end, and second when you are attacking it. Knowing which you are stops you being rushed or being late. **⚠️ USA Hockey reverses it, and most North American amateurs play under USA Hockey.** Rule 613(a): *"The attacking player shall be the first to place their stick on the ice, except for a center ice face-off where the visiting team player shall be first to place their stick on the ice."* So the advantage of seeing the other blade first belongs to the **attacking** centre in the NHL and to the **defending** centre under USA Hockey. **The IIHF book — the one every level of British hockey is played under — reads with the NHL here**, word for word (IIHF Rule 76.4), so a British centre can use the paragraph above as written. **Hockey Canada is different again**: Rule 6.2(a) and its Interpretation 1 put the **visiting** player's stick down first at every spot, *"regardless of whether they are the attacking or defending team"* — so under that book the order tells you nothing about which end you are at. Three answers across the four books. Find out which you are in before you build a habit on it — [Faceoffs](../systems/faceoffs.md) covers this.
 - **Your wingers can get you thrown out and never know it.** If a linemate creeps inside the circle or over the hash marks before the drop, **you** are the one ejected. Tell them. This is the single most avoidable way a centre loses a draw.
-- **Tie up the stick, not the puck.** Closing a hand over the puck to conceal it, or smothering it with your body, is a **minor penalty** — a different offence from a faceoff violation, with a much worse consequence.
+- **Tie up the stick, not the puck.** Closing a hand over the puck to conceal it, or smothering it with your body, is a **minor penalty** — a different offence from a faceoff violation, with a much worse consequence. Inside your own crease it is worse again: NHL Rule 67.4 makes it a penalty shot. **USA Hockey draws the line elsewhere**, and in your favour: closing your hand and not dropping the puck stops play for a last-play faceoff rather than a penalty, and the minor there attaches to picking the puck up off the ice (Rule 618(a)).
 
 **When you get tossed:** a winger steps in. Agree in advance which winger takes it and what your team is trying to do on that draw — usually just a safe tie-up rather than anything clever.
 
@@ -422,7 +417,7 @@ Key: A box has nobody assigned to the middle, which is exactly why a kill switch
 Position: In an umbrella or an overload you will usually be low or on the strong-side wall — there is no bumper in a true umbrella
 Action: Drop back to receive the breakout pass and carry through the neutral zone, then transition into the bumper or slot
 Never: Skate straight into the opposing defence, or dump into traffic — enter with control instead, carrying into space or passing in
-Key: Passing in is an alternative to carrying in, not an upgrade on it — the tracked figures have the two about level on the power play and carrying ahead at even strength; Zone Entries owns them
+Key: Passing in is an alternative to carrying in, not an upgrade on it — the tracked figures have the two about level on the power play and carrying ahead at even strength; Zone Entries covers them
 ```
 
 **The formations themselves — 1-3-1, umbrella, overload, spread, 2-3 — are set out in [Special Teams](../systems/special_teams.md).** What matters here is where they put you.
@@ -433,7 +428,7 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 
 **On zone entries:** You often drop back to receive the breakout pass and become the puck carrier through the neutral zone (using drop passes or swing-entries with the wingers). Once in the offensive zone, you transition into the bumper or slot position. Avoid skating straight into the opposing defence, and avoid dumping the puck into traffic. Both hand the puck over; what you want is a **controlled entry** — carried into space, or passed in across the line.
 
-**Passing in is an alternative to carrying in, not an upgrade on it.** The tracked figures put pass-ins and carry-ins about level on the power play and carrying clearly ahead at even strength, so pass in because the passing lane is the one that is open, not because passing beats carrying. [Zone Entries](../systems/zone_entries.md) owns those figures, the league they were measured in and their limits.
+**Passing in is an alternative to carrying in, not an upgrade on it.** The tracked figures put pass-ins and carry-ins about level on the power play and carrying clearly ahead at even strength, so pass in because the passing lane is the one that is open, not because passing beats carrying. [Zone Entries](../systems/zone_entries.md) covers those figures, the league they were measured in and their limits.
 
 ### Penalty Kill (your team is short-handed)
 
@@ -442,7 +437,8 @@ Position: In a box you are one of the two high players, each responsible for one
 Position: In a diamond you are usually the single apex, pressuring the point; in wedge+1 you are frequently the "+1"
 Action: As the +1, pressure whoever has the puck; when the puck moves the nearest wedge player takes over as the new +1, so you never follow it round
 Options: Your route out as the +1 is a coaching choice — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and point; ask which one your team runs
-Action: Take the high forward spot at the mid-to-high slot, block shooting lanes and clear whenever you get it; Special Teams owns the shape
+Action: Take the high forward spot at the mid-to-high slot, block shooting lanes and clear whenever you get it; Special Teams covers the shape
+Rule: Blocking a shot is protected — drop to your knees and have the puck shot under you or lodged in your equipment and you are not penalised, though using your hands to make it unplayable is (NHL Rule 63.2(v) NOTE; the same carve-out in IIHF 63.2(V) and USA Hockey 614(a))
 Technique: If you take a shooting lane, be in it before the shot, close and on your feet, head out of the lane, hands tucked — never in front of your own goalie's eyes
 Never: Get pulled out of position chasing the puck around the perimeter
 Rule: A shorthanded team may send the puck down the ice without being called for icing — USA Hockey Rule 624(b)(1) grants that only from Youth 15-Only, Girls 16U, High School and Adult up
@@ -456,7 +452,9 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 - **Diamond** — used against a 1-3-1. Here there *is* a single apex and it is usually you: pressure the point while the middle two take the half-walls and someone accounts for the bumper.
 - **Wedge+1** — you are frequently the "+1", the single player working outside the triangle. That job is **pressure, not pursuit**: get at whoever has the puck and make every possession uncomfortable. When the puck moves you stop, and the nearest wedge player steps out as the new +1 while you drop into the triangle. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route you take to the puck is your coach's choice, not a law** — published descriptions differ, some sending the +1 straight out from the goal towards the carrier, some sweeping him laterally across the top of the zone above the circles, some letting him roam to the wall and the point. Ask which one you are running.
 
-Whichever shape you're in: stay disciplined, don't get pulled out of position chasing the puck around the perimeter, block shooting lanes, and clear the puck whenever you get it — you may ice it freely while shorthanded, **but check your rule set before you build the kill on it.** USA Hockey grants the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)); below those levels a shorthanded team is called for icing like anyone else. NHL Rule 81.6 also withdraws it from a team shorthanded by a *major* that has left nobody on the penalty bench to come out. [Special Teams](../systems/special_teams.md) owns this rule. Know which shape you're running *before* the puck drops; a box and a diamond ask very different things of you.
+Whichever shape you're in: stay disciplined, don't get pulled out of position chasing the puck around the perimeter, block shooting lanes, and clear the puck whenever you get it — you may ice it freely while shorthanded, **but check your rule set before you build the kill on it.** USA Hockey grants the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)); below those levels a shorthanded team is called for icing like anyone else. NHL Rule 81.6 also withdraws it from a team shorthanded by a *major* that has left nobody on the penalty bench to come out. [Special Teams](../systems/special_teams.md) covers this rule. Know which shape you're running *before* the puck drops; a box and a diamond ask very different things of you.
+
+**Blocking a shot is protected, and the limit is the part to remember.** All three books say the same: drop to your knees and have the puck shot under you, or lodged in your equipment, and you are not penalised — but **using your hands to make the puck unplayable is a minor** (NHL Rule 63.2(v) NOTE; IIHF 63.2(V); USA Hockey 614(a)). So a blocked shot that dies under you is fine; reaching for it to hold it there is not.
 
 **Taking a shooting lane away means a puck can hit you, so take it properly.** Be in the lane *before* the shot rather than sliding into it, block from close and on your feet, square to the shooter, head out of the lane and hands tucked behind your shin pads — and **never from in front of your own goalie's eyes**, where all you do is deflect a puck they never saw. **How much your team blocks at all is a coaching choice, not a law**: ask your coach which they want, and ask your goalie what they want. [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the full list of when *not* to block.
 
@@ -476,7 +474,7 @@ Key: When they ice it you get an offensive-zone draw against five players who ca
 
 **Your risk is the neutral-zone dump, not the defensive-zone clear.** Your defencemen make most of the clears; what a centre throws away is a dump from behind the centre red line that nobody is chasing. Two fixes, both cheap: carry the extra stride so the **puck is on your stick** as it touches the red line — that alone makes the dump legal, however far it goes — or make the dump soft enough and short enough that a winger would clearly reach the puck first — that, not who reaches the dot first, is what the linesperson is judging (Rule 81.1).
 
-**The penalty is aimed at you personally.** After your own icing the draw is in your defensive zone, and **under NHL and IIHF rules** your line **cannot change** and your team cannot take a timeout. So the consequence of a lazy dump is a tired centre taking a defensive-zone faceoff he badly needs to win. **⚠️ One book is lighter:** IIHF Rules 81.4 and 87.1 carry both restrictions in the NHL's own words, so British and European league hockey punishes you just as hard — but **USA Hockey imposes neither**, because Rule 624 restricts no substitution, Rule 204 permits a change at any stoppage, and Rule 636(f) sets no icing condition on time-outs, so a tired line gets off. [Rules Primer](../foundation/rules_primer.md) owns this. If your legs are gone, the puck goes off the glass and out, not down the ice.
+**The penalty is aimed at you personally.** After your own icing the draw is in your defensive zone, and **under NHL and IIHF rules** your line **cannot change** and your team cannot take a timeout. So the consequence of a lazy dump is a tired centre taking a defensive-zone faceoff he badly needs to win. **⚠️ One book is lighter:** IIHF Rules 81.4 and 87.1 carry both restrictions in the NHL's own words, so British and European league hockey punishes you just as hard — but **USA Hockey imposes neither**, because Rule 624 restricts no substitution, Rule 204 permits a change at any stoppage, and Rule 636(f) sets no icing condition on time-outs, so a tired line gets off. [Rules Primer](../foundation/rules_primer.md) covers this. If your legs are gone, the puck goes off the glass and out, not down the ice.
 
 **When the other team ices it, that's one of your best draws of the night** — they cannot change, so you are taking an offensive-zone draw against five players who are stuck out there and probably tired. Know it's coming and have a set play ready. Remember too that on any draw following an icing the **first** faceoff violation by either team does not eject a centre (Rule 76.4, above) — so expect their centre to use his free one, and use yours.
 
@@ -533,7 +531,7 @@ Shift length, the safe and unsafe windows to change, and why a bad change conced
 - **Coasting through the neutral zone to avoid going offside.** You can keep a trail skate on the line — arrive with speed instead. Keep it **touching**: a raised trail skate is onside in the NHL and IIHF but offside under USA Hockey (Rule 630(a)).
 - **Puck-watching on the backcheck** and losing the middle-lane driver.
 - **Getting thrown out of the faceoff dot** for something avoidable — including a winger's encroachment you failed to warn them about.
-- **Taking long shifts.** The centre is generally reckoned to skate the most of the three forwards and to fade first — coaching craft, not a measured comparison; see the Overview note. The measured range for a shift is **roughly 30 to 80 seconds** — measured by **Lignell et al. (2018), Brocherie et al. (2018) and Bracko et al. (1998)**, and collected in Vigh-Larsen and Mohr's 2024 physiology review, which states the band in its introduction as a summary of those three rather than as anything it measured itself. A well-managed shift is nearer **30–45 seconds**, which is coaching craft and not a measured band. [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns both figures. The top of that range is where the wheels come off, and as the centre you get there before your wingers do.
+- **Taking long shifts.** The centre is generally reckoned to skate the most of the three forwards and to fade first — coaching craft, not a measured comparison; see the Overview note. The measured range for a shift is **roughly 30 to 80 seconds** — measured by **Lignell et al. (2018), Brocherie et al. (2018) and Bracko et al. (1998)**, and collected in Vigh-Larsen and Mohr's 2024 physiology review, which states the band in its introduction as a summary of those three rather than as anything it measured itself. A well-managed shift is nearer **30–45 seconds**, which is coaching craft and not a measured band. [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers both figures. The top of that range is where the wheels come off, and as the centre you get there before your wingers do.
 - **Treating the slot as a place to stand.** A stationary centre in the slot is easy to cover.
 - **Blocking a shot from in front of your own goalie's eyes.** In a wedge you stand at the mid-to-high slot, on the line between the point and your own net. Block from close and on your feet, head out of the lane and hands tucked, or get out of the lane and let them see it. [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the list of when *not* to block.
 
@@ -556,13 +554,13 @@ document, that is named too.*
    instead of coming down, and who is allowed to call the rotation? Then name the
    system under which that rotation does not happen at all, and the two exceptions
    in this document that change what you do even inside a collapse.
-   *(§Defensive Zone — Pressuring an Opponent with the Puck)*
+   *(§Defensive Zone: Pressuring an Opponent with the Puck)*
 
 3. Your defenceman is about to retrieve the puck in your own end. Where should
    you be? **This one does not have a single answer** — name the two structures
    you might be in, say what decides which, and name the one combination that is
-   always wrong whichever system you play. *(§Without the Puck — Getting Open for
-   the Breakout)*
+   always wrong whichever system you play. *(§Defensive Zone: Without the Puck — Getting
+   Open for the Breakout)*
 
 4. You are taking a draw in your own end. Which centre places his blade on the
    ice first — and why is "the defending centre" the answer in only two of the
@@ -587,7 +585,7 @@ document, that is named too.*
 8. A point shot is coming while you are killing a penalty. What has to be true
    before you put yourself in the lane, and where must you never do it from?
    *(§Penalty Kill, and [Body Contact and
-   Battles](../technique/body_contact_and_battles.md), which owns the technique
+   Battles](../technique/body_contact_and_battles.md), which covers the technique
    and the list of when not to block)*
 
 ---

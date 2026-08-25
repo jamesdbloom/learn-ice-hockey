@@ -103,12 +103,14 @@ Stick on the ice, hands out in front where you can see them in your peripheral v
 Action: Go into the boards on an angle, never straight at them
 Goal: Better puck control and less risk of injury — a leg, side or arm absorbs most of the impact
 Key: This is the case you control completely, because it is decided several strides out in the route you pick
+Never: Duck or tuck your chin going into the boards — a chin tucked to the chest straightens the cervical spine, and that is the posture behind almost every catastrophic neck injury; it does not need speed
+Technique: If contact is coming, skates parallel to the wall, forearm and hip into it, head up
 Priority: Everything after the route is contact, not skating — read Body Contact and Battles in full
 ```
 
 There is one skating decision inside the most important safety rule in hockey, and this is it. **Go into the boards on an angle, never straight at them** — *"Skating into the boards at an angle means better puck control and less risk of injury… A leg or side or an arm will absorb most of the impact"* (USA Hockey, *Introduction To Body Contact*, "Angling In"). **This is the case you control completely, because it is decided several strides out**, in the route you pick long before anybody is near you — which is why it belongs in a skating document at all.
 
-Everything after that point is contact, not skating: what to do once a hit is unavoidable, why a chin tucked to the chest straightens the cervical spine and is the posture behind almost every catastrophic neck injury (it can happen at walking speed), the parallel-skates and forearm-and-hip orientation, the spread-the-load fallback, and being hit from behind. **[Body Contact and Battles → Receiving a Hit Safely](body_contact_and_battles.md) owns all of it** — read that section in full. It is the most important section in that document, and nothing here replaces it.
+Everything after that point is contact, not skating: what to do once a hit is unavoidable, why a chin tucked to the chest straightens the cervical spine and is the posture behind almost every catastrophic neck injury (it can happen at walking speed), the parallel-skates and forearm-and-hip orientation, the spread-the-load fallback, and being hit from behind. **[Body Contact and Battles → Receiving a Hit Safely](body_contact_and_battles.md) covers all of it** — read that section in full. It is the most important section in that document, and nothing here replaces it.
 
 ---
 
@@ -274,7 +276,7 @@ Hockey is not a sport of long straight sprints. The [Hockey Institute](https://h
 
 **Your top speed is rarely the deciding factor. Your first three steps almost always are.**
 
-### The technique
+### Acceleration and the first three strides: the technique
 
 ```facts
 Technique: Run the first few strides on the toes — the front two to three inches of the inside edges of both blades
@@ -319,7 +321,7 @@ Once you're moving, **get off your toes and onto the full blade** and lengthen i
 
 A **crossover** is how you generate speed while travelling on a curve. Instead of losing speed through a turn, you gain it.
 
-### The mechanics
+### Crossovers: the mechanics
 
 ```facts
 Key: A crossover has two pushes, and most players only do one
@@ -851,7 +853,7 @@ document, that is named too.*
    most players leave out entirely. *(§The push)*
 
 3. A crossover has two pushes. Name both, say which one most players have switched
-   off, and describe the drill that makes you feel it. *(§Crossovers — the
+   off, and describe the drill that makes you feel it. *(§Crossovers: the
    mechanics)*
 
 4. A defenceman either leaves a huge gap and gets walked into the zone, or pivots
@@ -864,7 +866,7 @@ document, that is named too.*
    being a law. *(§Which way to pivot — a coaching default, not a law)*
 
 6. Going into the boards, exactly one part of it is a skating decision. What is
-   it, when do you make it, and which document owns everything after that point?
+   it, when do you make it, and which document covers everything after that point?
    *(§Arriving at the boards)*
 
 7. You are falling backwards onto the ice; separately, you are heading forwards
@@ -878,7 +880,7 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Head up, chin off your chest, and never arrive at the boards perpendicular or head-first.** Go in on an angle; if contact is coming, get your **skates parallel to the wall** and take it on your **forearm and hip** — not the point of your shoulder, and never your back. **Going forwards into the boards, never duck** — a chin tucked to the chest straightens the cervical spine, which is the posture behind almost every catastrophic neck injury in hockey, and it can happen at walking speed. **That is the boards case. Falling *backwards to the ice* is the opposite case and takes the opposite chin — takeaway 10 has it.** This outranks everything else on this list. See [Arriving at the boards](#arriving-at-the-boards--head-up-skates-parallel-take-it-along-your-side) and [Body Contact and Battles](body_contact_and_battles.md), which owns the full three-case rule.
+1. **Head up, chin off your chest, and never arrive at the boards perpendicular or head-first.** Go in on an angle; if contact is coming, get your **skates parallel to the wall** and take it on your **forearm and hip** — not the point of your shoulder, and never your back. **Going forwards into the boards, never duck** — a chin tucked to the chest straightens the cervical spine, which is the posture behind almost every catastrophic neck injury in hockey, and it can happen at walking speed. **That is the boards case. Falling *backwards to the ice* is the opposite case and takes the opposite chin — takeaway 10 has it.** This outranks everything else on this list. See [Arriving at the boards](#arriving-at-the-boards--head-up-skates-parallel-take-it-along-your-side) and [Body Contact and Battles](body_contact_and_battles.md), which covers the full three-case rule.
 2. **Bend your knees until they cover your toes** — chest up, weight on the balls of your feet, head and hands up. Standing tall is the fault behind most other faults; hard acceleration, where the torso does lean forward, is the one deliberate exception.
 3. **Hockey is played on edges, not flat blades.** Inside edges make power, outside edges give control — and your outside edges are almost certainly your biggest single skating weakness.
 4. **Push out to the side and slightly back, never straight back**, and finish with the toe — coaching sources put the toe flick alone at roughly a third of the push's power.

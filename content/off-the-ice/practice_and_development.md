@@ -25,7 +25,7 @@ The 10,000-hour rule was never a research finding. It was the average hours a gr
 
 ## Deliberate Practice vs Repetition
 
-### The difference
+### Deliberate practice versus repetition: the difference
 
 You can do something a thousand times and improve once. **Repetition** is doing the thing again. **Deliberate practice** is doing the thing again *differently*, because you found out what was wrong with the last one.
 
@@ -198,7 +198,7 @@ Shooting matters — but it is fourth, and it is fourth for most players by a wi
 
 When you do practise it, practise the parts you actually use: shooting **off a pass**, shooting **in stride**, shooting **quickly** rather than hard, and changing the release point. Full technique in [Shooting](../technique/shooting.md).
 
-### The honest point
+### What to practise: the honest point
 
 **Most players practise shooting most because it is fun, and skating least because it is hard, boring and public.** Shooting gives instant, satisfying feedback: the puck goes in or it doesn't, and nobody watches you do it badly. Edge work is uncomfortable, makes your legs burn, and makes you look like a beginner in front of your teammates.
 
@@ -407,7 +407,7 @@ Video is the cheapest source of the thing deliberate practice most requires and 
 - **Film one period from a fixed high position** — a phone on a tripod in the stands beats a parent tracking the puck, because you need to see the ice, not the play.
 - **Watch it with one specific question**, and only one. "How many times did I shoulder-check before receiving?" "Where were my feet when I received the puck?" "Did I stop, or did I curl?" A general watch produces a general shrug.
 - **Count something.** A number gives you a baseline you can beat next month. Impressions don't.
-- **Watch your shifts *without* the puck.** Measured at **5-on-5**, that's about **96%** of your ice time — [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) owns that figure, states the 5-on-5 basis it is measured on, and sources it — and it's where most of your improvement is available.
+- **Watch your shifts *without* the puck.** Measured at **5-on-5**, that's about **96%** of your ice time — [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) covers that figure, states the 5-on-5 basis it is measured on, and sources it — and it's where most of your improvement is available.
 - **Expect it to be unpleasant.** Everyone looks slower on video than they feel. That gap is precisely the useful information.
 
 If you can't film yourself, watch elite players *positionally* rather than watching the puck — pick one player at your position and follow only them for a full shift. [How to Watch Hockey](how_to_watch_hockey.md) covers the method in detail.
