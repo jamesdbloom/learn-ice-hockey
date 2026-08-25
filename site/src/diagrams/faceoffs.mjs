@@ -283,13 +283,13 @@ const dzoneCleanLoss = {
   // destination is not a drawing choice, and a route that finishes anywhere else
   // is teaching something the document does not say.
   //
-  // WHAT THE ARRIVAL TEST ACTUALLY IMPLIES HERE. safety-reviewer's round-27
-  // conventions — derived from the renderer's constants, not rules of hockey:
-  //   (a) the extended terminal tangent must clear the opponent's anchor by more
-  //       than 2.9 ft, the player-glyph radius, or the drawn ray goes through him;
-  //   (b) a tip finishing within 9 ft of an opponent — 2.9 glyph + 3.15 arrowhead
-  //       + 2.9 glyph — may not carry an arrowhead at all.
-  // On THIS play the two are jointly unsatisfiable by any arrow-headed route, and
+  // WHAT THE ARRIVAL TEST ACTUALLY IMPLIES HERE. The test is THE ARRIVAL INVARIANT,
+  // stated normatively above `playSvg` in scripts/lib/rink.mjs and enforced by
+  // scripts/check-arrivals.mjs. Not restated here — this was one of four verbatim
+  // copies, and the copy here also stated a STRONGER form of (a) than the invariant
+  // supports: "fails (a) at every distance" drops the caveat that (a)'s reach is
+  // unbounded and therefore advisory, never a build failure.
+  // On THIS play the two forms are jointly unsatisfiable by any arrow-headed route, and
   // that is the whole finding rather than a tuning problem. The aim point IS the
   // defenceman, so an on-bearing tip has a miss of ~0 and fails (a) at every
   // distance; the only way to pass (a) is to bend the route off the man, and the

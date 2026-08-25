@@ -650,11 +650,16 @@ const NOTATION = {
   // candidate and is *wrong*, not merely imprecise: pressure and angling are legal
   // in every division, a body check is not, and eleven of the twelve uses are
   // penalty-kill or forecheck routes that a non-check reader also has to read.
-  // TERMINATING, and that is the load-bearing part. An arrowhead that finishes
-  // within 9 ft of an opponent reads as "skate through him" — this file states that
-  // rule itself, and forechecking_systems.mjs:432 repeats it: "A bar says arrive and
-  // contain; an arrowhead says keep going through." Retargeting this to forward
-  // skating pointed nine routes' arrowheads at a player, five of them within 2 ft.
+  // TERMINATING, and that is the load-bearing part: a bar says arrive and contain,
+  // an arrowhead says keep going through. The rule that follows from it is stated
+  // normatively at THE ARRIVAL INVARIANT below and enforced by
+  // `site/scripts/check-arrivals.mjs`; do not restate it, point at it.
+  // ⚠️ This comment used to say "this file states that rule itself". It did not. All
+  // four mentions of the invariant in this file were back-references to a rule no
+  // file stated, and nothing enforced it — `check_geometry.py` reads `rink.json` and
+  // never opens a spec. Retargeting this glyph to forward skating pointed nine
+  // routes' arrowheads at a player, five of them within 2 ft, which is how the gap
+  // was found rather than by anything catching it.
   // Two bars terminating a line is IIHF 21.1's SUDDEN STOP, which is a mark the key
   // actually contains and which means arrive-and-stop rather than continue-through.
   pressure:   { line: 'plain', end: 'bars2' },
@@ -915,6 +920,130 @@ function ticks(f, t, bow = 0) {
  * `half-wall:right`, `behind-net` — never pixels and never feet. That is what makes
  * it writable by hand, reviewable as text, and unable to drift from the table.
  */
+/**
+ * THE ARRIVAL INVARIANT — the one normative statement. Everything else points here.
+ * Enforced by `site/scripts/check-arrivals.mjs`, which imports these constants rather
+ * than restating them. If this rule needs to change, change it HERE and only here.
+ *
+ * A route that finishes on or near an opposing player is a claim about CONTACT, not about
+ * drawing. An arrowhead reads as continuing past the point the line ends at; the two-bar
+ * terminal reads as arriving and stopping there. So, for a route owned by a SKATER
+ * (`skate`, `carry`, `backxover` — the arrow-ended kinds; puck routes are out of scope,
+ * because a shot ending at the goalie is what a shot IS):
+ *
+ *   (a) TANGENT — advisory. The extended terminal tangent must clear an opposing
+ *       SKATER's anchor by more than ARRIVAL.glyph ft. Below that the drawn ray passes
+ *       through the body.
+ *   (b) ARROWHEAD — the hard rule; the build fails on it. If a route's tip finishes
+ *       within ARRIVAL.noArrow ft of an opposing SKATER who lies AHEAD of the tip, it
+ *       may not carry an arrowhead at all. End it in two bars, or stop it further short.
+ *
+ * Three scope conditions carry the correctness, and each was got wrong once:
+ *
+ *   AHEAD, not merely near. A backchecker's arrow pointing away from a trailing opponent
+ *   is near him and not at him. The bare-distance form flagged three such routes and was
+ *   wrong to — which is why the bare form is the wrong form.
+ *
+ *   SKATER, not goaltender, for the build failure. Every route that drives the net
+ *   finishes near the goaltender by construction, so failing the build there would forbid
+ *   drawing a net drive at all. He is reported as ADVISORY instead of dropped: he is the
+ *   one target every book protects unconditionally (USA Hockey Rule 607 Charging (d),
+ *   2025-29 — "A goalkeeper is NOT 'fair game' because they are outside the privileged area";
+ *   IIHF 42.1 CHARGING carries the same RULE in different words, not the same sentence).
+ *   Form (a) excludes
+ *   him outright, because a directional test cannot discriminate on a player who stands
+ *   where every offensive route already points.
+ *
+ *   ARROW-ENDED, not every route. A `pressure` route aimed at its target fails (a) by
+ *   construction — that is what pressure IS — and terminating in bars is exactly what
+ *   makes it safe, so applying either form to a bar-ended route would be unmeetable.
+ *
+ * ⚠️ WHAT THESE NUMBERS ARE NOT. They are drawing conventions derived from the renderer's
+ * own glyph sizes — NOT rules of hockey. 9 ft is 2.9 glyph + 3.15 arrowhead + 2.9 glyph,
+ * the distance at which the DRAWING collides, not the players. The books partition the
+ * circle at the target's shoulder line and a glyph has no facing, so no rulebook distance
+ * translates into this test. Never render one into a body-scale phrase for a reader;
+ * "within a stick's reach" was tried and was wrong.
+ *
+ * ⚠️ FORM (a) HAS NO BOUND ON REACH, and this is a known limit rather than an oversight.
+ * A tangent is a ray and a ray crosses the rink, so (a) will meet a distant anchor that no
+ * reader would ever follow the line to. The checker therefore reports how far beyond the
+ * tip each near-miss falls, and a bound is deliberately NOT invented: none of the three
+ * prior statements carried one, and a threshold chosen to separate the cases already known
+ * would be fitted to them, not derived. That is why (a) is advisory and (b) is not.
+ *
+ * ⚠️ WHOSE ROUTE IT IS DECIDES WHO THE OPPONENT IS. Routes carry no team field, so the
+ * checker infers the owner from the player a route starts on. Measured: all 80 arrow-ended
+ * routes begin EXACTLY on an anchor (0.00 ft), and the smallest next-nearest player is
+ * 5.66 ft away (`faceoff-dzone-tie-up`'s D route), comfortably outside the 2.9 ft tolerance,
+ * so no route can resolve the wrong way. 22 of those 80 are skated by the OPPOSITION (every
+ * rush carrier, every forecheck retrieval), and for those the players at risk are the
+ * READER'S OWN. A check without this notion measures a quarter of the corpus against the
+ * wrong team in both directions.
+ * ⚠️ That licence first read "the next-nearest player 8.9 ft away". 8.9 is the FOURTH
+ * smallest, not the smallest. The conclusion survives and the arithmetic did not — which is
+ * the failure forechecking_systems.mjs names in terms: "a guard whose arithmetic does not
+ * check out is worse than none: the next editor 'corrects' the drawing to match it."
+ *
+ * ⚠️ STATED THREE INCOMPATIBLE WAYS BEFORE THIS, and enforced by none of them: a bare
+ * distance here, a two-part scoped test in forechecking_systems.mjs, and a purely
+ * directional form in the reader-facing notation document. Two MORE verbatim copies were
+ * found afterwards, in faceoffs.mjs and defensive_zone_coverage.mjs — so the count was six,
+ * not four, and the faceoffs.mjs copy stated a stronger, unqualified form of (a). A third
+ * file, defending_the_rush.mjs, had promoted a measured ANGLE to an operative criterion,
+ * which this invariant disclaims outright. All now point here. `check_geometry.py` reads
+ * `rink.json` against the glossary and never opens a spec.
+ *
+ * What enforcement found, measured on the curve actually drawn:
+ *
+ *   ONE hard (b) failure — `centre-backcheck-middle-lane`. The opposition middle-lane
+ *   driver's arrowhead finished 8.94 ft from the reader's own centre, who lay in its forward
+ *   half-plane. The spec's own comment three lines above the route forbids exactly that. Its
+ *   tip is now 10.0 ft clear. (On that bearing the marks did not in fact collide — the
+ *   tangent ran 71 degrees off him. It was a real threshold violation, not a picture of a
+ *   check, and the spec now says so precisely.)
+ *
+ *   THREE goaltender advisories — `forecheck-212`, `nz-1-2-2-containment`, `entry-wide`,
+ *   arrowheads finishing 7.8-8.6 ft from a goaltender. Rendered and inspected: none reads as
+ *   a skater going through him. The first two finish BEHIND the goal line with the frame
+ *   between tip and goalie; the third crosses the top of the crease to the far post.
+ *
+ *   FOUR (a) advisories: `nz-1-2-2-trap` at 0.91 ft — the tightest tangent in the corpus —
+ *   and `faceoff-dzone-tie-up` ×2 at 2.32 and 2.68 ft. Plus `dz-walk-down-man` at 2.06 ft,
+ *   28 ft beyond the tip, which is what an unbounded ray does.
+ *
+ *   THREE backchecks correctly NOT flagged (`rush-3-on-2-default`, `rush-backcheck-lanes`
+ *   ×2), where the opponent trails the tip and the arrow points away from him.
+ *
+ * ⚠️ `faceoff-dzone-tie-up` IS NOT A DEFECT, and this record said it was. It read: "that
+ * spec's comment measures its terminal clearance to the PUCK and never to the opposing
+ * centre ... the author checked the constraint, against the wrong object." **The puck is the
+ * right object.** Both routes are two players converging on a loose puck at a draw: the W
+ * route passes 1.53 ft from the faceoff dot, the D route 0.61 ft, both stop 10 and 12.6 ft
+ * short of the opposing centre, and the reader's own centre stands between the arrowheads
+ * and him. It is the declared false-positive class. Telling the next editor that a correct
+ * diagram was authored carelessly is the exact accident this checker's header records itself
+ * nearly causing with `forecheck-212-stacked`.
+ *
+ * ⚠️ AND THE CHECK MEASURED THE WRONG LINE. Its first version took the terminal tangent as
+ * `to - from` — the CHORD. Routes are quadratic Beziers and the tangent at k=1 is
+ * `to - control`; 46 of the 80 are bowed, diverging by up to 59 degrees. The two clearances
+ * this record once singled out as the tightest in the corpus, 0.54 ft in `forecheck-212` and
+ * 0.83 ft in `nz-1-2-2-containment`, were artefacts: on the drawn curve they are 5.03 and
+ * 3.85 ft and clear the glyph. The genuinely tightest, `nz-1-2-2-trap`, was UNDER-reported at
+ * 2.02 against a true 0.91. No hard verdict changed, so this was never a safety emergency —
+ * it was an evidence emergency, because those numbers had become the invariant's case
+ * history. Third instrument error in three rounds; each was found by someone re-deriving the
+ * measurement rather than re-reading the output.
+ *
+ * ⚠️ A GAP NEITHER FORM COVERS. (a) excludes the goaltender outright and (b) only fires
+ * inside 9 ft, so an arrowhead stopping 9.5 ft short and pointing DEAD at a goaltender is
+ * reported by nothing at all. Nothing does that today — the nearest is
+ * `winger-offensive-zone-patches` at 10.05 ft with a 9.71 ft miss — but for the one target
+ * the books protect unconditionally, "reported by nothing" belongs on the record.
+ */
+export const ARRIVAL = { glyph: 2.9, noArrow: 9.0 };
+
 export function playSvg(spec, opts = {}) {
   const ns = uid(spec.id ?? spec.caption ?? JSON.stringify([spec.players, spec.routes]));
   // WHAT THIS DEPARTS FROM, AND WHY. The IIHF key puts a NUMERAL inside the glyph

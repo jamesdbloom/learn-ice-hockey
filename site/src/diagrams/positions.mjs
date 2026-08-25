@@ -219,7 +219,17 @@ const swingLow = {
 // 3-on-2 system that is a coaching choice.
 // ---------------------------------------------------------------------------
 
-const DRIVER = { at: 'neutral-zone-mid', dx: 14, dy: 2 };   // (26, 2)
+// ⚠️ WAS `dx: 14` → (26, 2), which put the driver 2 ft CLOSER to the defended goal
+// line than the puck carrier at (24, 26) — i.e. drawn AHEAD of the puck. The section
+// is about "the forward filling the middle of the ice BEHIND them, arriving late and
+// unmarked", and the reader-facing `describe` said "behind him" while the picture said
+// the opposite. His anchor also straddled the blue line (x 25) with the puck 3 ft
+// outside it, so the route read offside-adjacent — ambiguous rather than wrong, since a
+// glyph has no skates, but free to remove.
+// Now (16, 2): 8 ft behind the carrier and 9 ft outside the blue line. The START moved
+// because the start was free and the tip was not — the tip is fixed by the arrival
+// invariant's clearance to the centre at (45, -4), which stays at 10.0 ft.
+const DRIVER = { at: 'neutral-zone-mid', dx: 4, dy: 2 };   // (16, 2)
 
 const backcheckMiddleLane = {
   id: 'centre-backcheck-middle-lane',
@@ -244,9 +254,10 @@ const backcheckMiddleLane = {
 
   describe:
     'The defending half of the rink, your own net at the right, with three opposition forwards ' +
-    'attacking from the left. The puck carrier is wide on the right; a second forward drives the ' +
-    'middle of the ice behind him, with a short route showing his late arrival; a third is wide ' +
-    'on the left. Coming back: the centre in the middle lane, already goal-side of the middle ' +
+    'attacking from the left. The puck carrier is wide on the right; a second forward comes up the ' +
+    'middle of the ice behind him, with a route showing him crossing the blue line late, behind the ' +
+    'play; a third is wide on the left. Coming back: the centre in the middle lane, already ' +
+    'goal-side of the middle ' +
     'driver and between him and his own net; a winger in each outside lane, goal-side of the ' +
     'attacker in that lane; the two defencemen retreating together in front of them, keeping the ' +
     'middle of the ice sealed; and the goaltender in the crease.',
@@ -278,8 +289,41 @@ const backcheckMiddleLane = {
   // picks up; the centre is drawn already inside him rather than arrowed there,
   // because "get to the inside" is a state, not a movement, and an arrow from the
   // driver that finished on the centre would read as a check rather than a lane.
+  //
+  // ⚠️ AND THE ROUTE BROKE THAT RULE THREE LINES BELOW THE SENTENCE STATING IT. The
+  // tip was `dx: 29` → (41, 4), which is 8.94 ft from the centre's anchor at (45, -4)
+  // with the centre in the forward half-plane — inside the threshold at which the drawn
+  // marks may collide (see THE ARRIVAL INVARIANT in lib/rink.mjs), though on this
+  // bearing they did not: the terminal tangent ran 71 degrees off the line to him and
+  // missed him laterally by 8.5 ft. Rendered before and after, the two are
+  // indistinguishable. It was a real (b) violation and worth fixing; it was NOT "an
+  // arrow finishing on the centre", and saying so here would misstate the evidence in
+  // the file that is now the invariant's case history. The guard was
+  // written against the route the author chose NOT to draw and never applied to the
+  // one they did. Nothing caught it for as long as the invariant was prose in FIVE
+  // files — six copies, no two alike — and enforced in none. `check-arrivals.mjs` found
+  // it on its first run with route ownership modelled, because until then the driver's
+  // route was measured against his own teammates rather than against the centre.
+  // ⚠️ "Four" is the discredited count, and it stood in the sentence above until the gate
+  // caught it a third time. This warning FOLLOWS the sentence rather than interrupting it:
+  // rink.mjs:485 records what splicing one into the middle of a clause did last time.
+  //
+  // Pulled back to `dx: 27` → (39, 4), clearing the centre by 10.0 ft. Shortened
+  // rather than terminated in bars: bars mean arrive-and-stop, and the whole point of
+  // the middle-lane driver is that he is still coming.
+  // ⚠️ READ WHAT THE ARROW ACTUALLY SHOWS. It does not depict arrival into the SLOT and
+  // never did: it ends at x 39, with `high-slot` at 69 and `slot` at 76 — thirty-odd feet
+  // short — so the slot arrival is carried by the caption and by the centre's placement.
+  // What it does now depict, since DRIVER moved back to (16, 2), is arrival into the ZONE:
+  // the route runs 23.1 ft and crosses the blue line, which the old 15 ft stub starting
+  // inside the line could not do at any length.
+  // ⚠️ And the `describe` now SAYS so — "crossing the blue line late, behind the play".
+  // It previously read "a route showing him arriving late" while this comment defended it
+  // as being "true of the zone entry": a word the reader never heard. A comment asserting
+  // a reading the reader-facing text does not carry is the same self-justification this
+  // block exists to correct. The qualifier belongs in the text.
   routes: [
-    { from: DRIVER, to: { at: 'neutral-zone-mid', dx: 29, dy: 4 }, kind: 'skate' },  // (41, 4)
+    { from: DRIVER, to: { at: 'neutral-zone-mid', dx: 27, dy: 4 }, kind: 'skate' },  // (39, 4)
   ],
 
   puck: { at: 'neutral-dot:right', dx: 2, dy: 2 },

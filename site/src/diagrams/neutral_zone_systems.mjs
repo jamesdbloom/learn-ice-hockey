@@ -812,8 +812,14 @@ const backOffAtTheLine = {
 
   routes: [
     // "You skate backwards, keeping the attacker in front of you and matching
-    // their speed." The key's backward-skating symbol — a tight wave — and not
-    // forward skating, which would say the opposite of the whole section.
+    // their speed." §21.1's BACKWARD SKATING — the row of overlapping arches this
+    // corpus draws (`backward: { line: 'loops' }`, rink.mjs) — and not forward
+    // skating, which would say the opposite of the whole section.
+    // ⚠️ This said "a tight wave" until round 42. That is the Hockey Eastern Ontario
+    // glyph, and in THIS corpus a wave means `carry` — skate and stickhandle. A
+    // comment naming the wrong key's mark points the next editor at the symbol that
+    // says the opposite of the one drawn; rink.mjs:482 records that the two keys were
+    // once claimed to agree here and do not.
     // Retreating and drifting inward: he ends up in the middle he is protecting,
     // and the route finishes 180 degrees away from the carrier.
     // M4 (diagram-reviewer): the D covered 22 ft while the carrier covered 46 and finished

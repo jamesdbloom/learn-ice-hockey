@@ -327,18 +327,18 @@ const forecheck122 = {
     //     and quoted two figures neither of which reproduced against either
     //     coordinate set. A guard whose arithmetic does not check out is worse
     //     than none: the next editor "corrects" the drawing to match it.
-    //     SAFETY, ruled by safety-reviewer. A route owned by a skater that
-    //     finishes near an opposing skater must satisfy two things, and these are
-    //     drawing conventions derived from the renderer's own constants — not
-    //     rules of hockey, because the books partition the circle at the target's
-    //     shoulder line and a glyph has no facing:
-    //       (a) the extended terminal tangent must clear the opponent's anchor by
-    //           more than 2.9 ft, the player-glyph radius; below that the drawn
-    //           ray passes through the body;
-    //       (b) if the tip finishes within 9 ft of the opponent — 2.9 glyph +
-    //           3.15 arrowhead + 2.9 glyph — the route may not carry an arrowhead
-    //           at all. A bar says arrive and contain; an arrowhead says keep
-    //           going through.
+    //     SAFETY, ruled by safety-reviewer. This route is governed by THE ARRIVAL
+    //     INVARIANT — stated normatively above `playSvg` in scripts/lib/rink.mjs and
+    //     enforced by scripts/check-arrivals.mjs, which fails the build. It is
+    //     deliberately NOT restated here. SIX copies of it existed, no two alike and
+    //     none enforced: two verbatim in this file, a differently-scoped third in
+    //     rink.mjs, two more in faceoffs.mjs and defensive_zone_coverage.mjs, and a
+    //     reader-facing sixth in reading_ice_hockey_diagrams.md — plus an operative
+    //     ANGLE in defending_the_rush.mjs that the invariant disclaims. The first
+    //     consolidation pass found four of the six and would have claimed all of them,
+    //     which is how a route came to finish on a player in positions.mjs three
+    //     lines below a comment forbidding exactly that. The case history below is
+    //     what belongs in this file; the rule is not.
     //     Both of the corpus's previously accepted arrivals sit at d ~ 7 ft with a
     //     bar. This route sat at d = 6.3 ft with an arrowhead, and its clearance
     //     was 0.83 ft against the half-wall value that was committed at the time —
@@ -424,18 +424,18 @@ const forecheck131 = {
   routes: [
     // F2: "the puck-side player becomes an immediate second attacker". Finishes
     // outward towards the wall rather than in at the carrier.
-    //     SAFETY, ruled by safety-reviewer. A route owned by a skater that
-    //     finishes near an opposing skater must satisfy two things, and these are
-    //     drawing conventions derived from the renderer's own constants — not
-    //     rules of hockey, because the books partition the circle at the target's
-    //     shoulder line and a glyph has no facing:
-    //       (a) the extended terminal tangent must clear the opponent's anchor by
-    //           more than 2.9 ft, the player-glyph radius; below that the drawn
-    //           ray passes through the body;
-    //       (b) if the tip finishes within 9 ft of the opponent — 2.9 glyph +
-    //           3.15 arrowhead + 2.9 glyph — the route may not carry an arrowhead
-    //           at all. A bar says arrive and contain; an arrowhead says keep
-    //           going through.
+    //     SAFETY, ruled by safety-reviewer. This route is governed by THE ARRIVAL
+    //     INVARIANT — stated normatively above `playSvg` in scripts/lib/rink.mjs and
+    //     enforced by scripts/check-arrivals.mjs, which fails the build. It is
+    //     deliberately NOT restated here. SIX copies of it existed, no two alike and
+    //     none enforced: two verbatim in this file, a differently-scoped third in
+    //     rink.mjs, two more in faceoffs.mjs and defensive_zone_coverage.mjs, and a
+    //     reader-facing sixth in reading_ice_hockey_diagrams.md — plus an operative
+    //     ANGLE in defending_the_rush.mjs that the invariant disclaims. The first
+    //     consolidation pass found four of the six and would have claimed all of them,
+    //     which is how a route came to finish on a player in positions.mjs three
+    //     lines below a comment forbidding exactly that. The case history below is
+    //     what belongs in this file; the rule is not.
     //     Both of the corpus's previously accepted arrivals sit at d ~ 7 ft with a
     //     bar. This route sat at d = 6.3 ft with an arrowhead, and its clearance
     //     was 0.83 ft against the half-wall value that was committed at the time —

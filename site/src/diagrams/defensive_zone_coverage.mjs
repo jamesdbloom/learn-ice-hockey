@@ -95,10 +95,13 @@ const OUR_G = { at: 'crease', dx: 1 };                       // (87, 0)
 // WHY NOT FURTHER IN. (82, 34) — the named `corner:right`, where the other five
 // diagrams in this file put their corner forward — clears by 2.09 ft, and was
 // rejected: it lands 7.81 ft from where frame one's route ends at C_IN_CORNER,
-// inside the 9 ft (2.9 glyph + 3.15 arrowhead + 2.9 glyph) within which an
-// arrowhead may not finish near an opponent. Moving the carrier to fix the
-// boards would have moved that arrowhead onto him. At (84, 34) the gap is
-// 9.43 ft and the route is untouched.
+// inside the distance within which an arrowhead may not finish near an opposing
+// skater — THE ARRIVAL INVARIANT, stated above `playSvg` in scripts/lib/rink.mjs
+// and enforced by scripts/check-arrivals.mjs. The derivation of the figure used to
+// be spelled out here; it belongs in one place, and this is not it. Moving the
+// carrier to fix the boards would have moved that arrowhead onto him. At (84, 34)
+// the gap is 9.43 ft — five inches clear of the 9 ft gate, and the thinnest
+// non-goaltender margin in the corpus — and the route is untouched.
 const OPP_CARRIER  = { at: 'corner:right', dx: 2 };          // (84, 34) in the corner
 // At his stick, below the base of his triangle. Held between three things at
 // once, which is why it is not on a round number: 0.70 ft clear of the

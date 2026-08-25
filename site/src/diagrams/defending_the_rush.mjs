@@ -541,9 +541,15 @@ const trailer = {
     // catch this player; one who is five metres behind cannot. The route finishes
     // 36 degrees off the line to the trailer and 14.1 ft short of them — it must
     // not read as skating into the man. (Read 54 degrees and 12 ft. The distance
-    // grew and the angle narrowed, so this one is worth re-checking if the route
-    // is ever moved again: 36 degrees is the thinner of the two margins, and it is
-    // the one that decides whether the arrowhead reads as aimed at the player.)
+    // grew and the angle narrowed, so this one is worth re-checking if the route is
+    // ever moved again.)
+    // ⚠️ The angle is DESCRIPTIVE, not a threshold, and this comment used to make it
+    // operative — "36 degrees ... is the one that decides whether the arrowhead reads
+    // as aimed at the player." No angular criterion is defensible: THE ARRIVAL
+    // INVARIANT (scripts/lib/rink.mjs) is a distance-and-half-plane test precisely
+    // because the books partition the circle at the target's shoulder line and a glyph
+    // has no facing. What governs this route is that test, enforced by
+    // scripts/check-arrivals.mjs — not a number chosen here.
     { from: F_TRAIL, to: { at: 'high-slot::far', dx: 21, dy: -6 }, kind: 'skate', bow: 2 },
   ],
 
