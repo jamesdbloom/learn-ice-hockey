@@ -71,7 +71,7 @@ Read: Take the quick-up in the two or three seconds after your team wins the puc
 Goal: Transition the puck out of danger and start your team's breakout
 Never: Carry or pass D-to-D through your own slot — go behind the net. Only the alternative route varies: some teams allow the exchange above the tops of the circles, outside the slot
 Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor (NHL Rule 63.2(iii))
-Rule: The carve-outs are a stretch of boards with no glass mounted above it, a puck shot into the players' bench, and one out directly off a faceoff — but over the glass behind the bench is penalised, "the penalty will be assessed" (NHL Rule 63.2(iii) and its NOTE)
+Rule: That out-of-play minor has three carve-outs — boards with no glass mounted above them, a puck shot into the players' bench, and one out directly off a faceoff; over the glass behind the bench is still penalised, "the penalty will be assessed" (NHL Rule 63.2(iii) and its NOTE)
 Rule: The IIHF carries the same minor and the same carve-outs, "except where there is no protective glass" (IIHF Rule 63.2(III)) — so it binds a British player too
 Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
 ```
@@ -108,8 +108,8 @@ Technique: Shield the puck with your body — don't panic
 Options: Rim to your partner or the far-side winger, reverse it, or hold it tight behind the net until a teammate gets open
 Read: Rim to beat a forechecker sealing you against the boards; reverse to beat one who has over-committed and skated past you
 Never: Carry through the slot under pressure — a turnover in the highest-danger area is a direct scoring chance against
-Rule: Your goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii)) — the sole exception is a goalie keeping skate contact with the crease
-Rule: Take the trapezoid's dimensions from Rule 1.8, never from Rule 27.8 — 27.8's wording is stale, left over from before the trapezoid was widened in 2014-15 — the sole exception is a goalie keeping skate contact with the crease
+Rule: Under NHL and IIHF rules your goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game (NHL 27.8 and 63.2(viii); IIHF 27.7) — the sole exception is a goalie keeping skate contact with the crease
+Rule: The painted trapezoid begins eight feet outside each post at the goal line and reaches eleven feet outside each post at the end boards (NHL Rule 1.8) — Rink Map and Glossary has the full geometry
 Key: NHL and IIHF play a trapezoid (KHL reportedly too — unverified); USA Hockey and most rec and youth leagues do not — without one the dead rim is your goalie's, not yours
 Rule: Without a trapezoid your goalie may still not freeze the puck in the corner — USA Hockey Rule 614(c) confines that to the "goalkeeper's privileged area", which excludes the corners
 Rule: The IIHF number is 27.7, not 27.8, and in England and Wales the status is unsettled — England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" while the In-House Rules are silent, so assume it binds and ask your league
@@ -130,7 +130,7 @@ Action: Plan your retrieval route before the puck arrives, and aim rims where a 
 >
 > Your goaltender may only play the puck behind the goal line **inside the marked trapezoid**; outside it, behind the line, it is a two-minute minor for delay of game (Rules 27.8 and 63.2(viii)). **The one exception — skate contact with the crease — and where the trapezoid does and does not apply are in [Rules Primer](../foundation/rules_primer.md)** — read it, because whether your league has one changes your job more than it changes anyone else's. Short version: the NHL and IIHF international play have it — both verified against the rulebook text, at NHL 1.8/27.8 and IIHF 27.7 — and the KHL is commonly said to as well, **though that one is unverified here: no KHL rulebook was available to check it against.** **USA Hockey and most rec, beer-league and youth associations do not** — and where there is no trapezoid the retrievals below stop being yours.
 >
-> **The dimensions come from Rule 1.8, never from Rule 27.8.** The painted lines begin **eight feet from each goal post** at the goal line and run back to **eleven feet from each post — a 28-foot span — at the end boards**. Rule 27.8 still reads "six feet from either goal post", wording left over from before the trapezoid was widened by two feet a side in **2014-15**. That is **stale, not self-contradictory** — six feet from each post gives eighteen feet at the goal line, diverging coherently to the same twenty-eight feet at the boards. Only **27.8** puts that figure in words — *"points twenty-eight feet (28') apart at the end boards"*; **1.8 never states a span at all**, giving the eleven feet from each post from which it follows. It is the old, narrower trapezoid described accurately; it is simply not the one painted today. **Never take dimensions from 27.8.** In practice that two feet a side is exactly the band where a rim dies, so it is worth knowing which figure is real. Same treatment in [Breakouts](../systems/breakouts.md), [Forechecking Systems](../systems/forechecking_systems.md) and [Goaltender](goaltender.md).
+> **What is actually painted, and what you will find if you look the rule up.** The lines begin **eight feet from each goal post** at the goal line and run back to **eleven feet from each post — a 28-foot span — at the end boards**. Rule 27.8 still reads "six feet from either goal post", wording left over from before the trapezoid was widened by two feet a side in **2014-15**. That is **stale, not self-contradictory** — six feet from each post gives eighteen feet at the goal line, diverging coherently to the same twenty-eight feet at the boards. Only **27.8** puts that figure in words — *"points twenty-eight feet (28') apart at the end boards"*; **1.8 never states a span at all**, giving the eleven feet from each post from which it follows. It is the old, narrower trapezoid described accurately; it is simply not the one painted today — so **a reader who measures from 27.8's six feet is measuring a trapezoid that no longer exists.** In practice that two feet a side is exactly the band where a rim dies, so it is worth knowing which figure is real. Same treatment in [Breakouts](../systems/breakouts.md), [Forechecking Systems](../systems/forechecking_systems.md) and [Goaltender](goaltender.md).
 >
 > What it means for you, on every retrieval:
 > - **Your goalie cannot get a rim that dies in the corner.** You have to, under forecheck pressure. Plan your retrieval route before the puck arrives, not after — that decision is the difference between a breakout and a battle you lose facing your own end boards.
@@ -179,7 +179,7 @@ Under either system, two things hold: if the puck escapes up the wall toward the
 ```facts
 Position: At the goalmouth, between any opposing forward and your goalie
 Convention: Under a low zone collapse you guard the goalmouth and the centre covers the high slot — two layers of coverage in front of the net, and a coaching choice rather than a rule; under man-on-man each of you takes the man you are assigned
-Never: Get drawn to the puck — your partner and the centre are handling it
+Never: Get drawn to the puck before somebody has taken the goalmouth — your partner and the centre are handling it, and some aggressive systems do send you both low deliberately, so know which yours is
 Technique: Body position first, stick second — a stick lift beats a cross-check at everything, including staying on the ice, lifted up rather than sideways and taken below their bottom hand
 Convention: "Position beats strength" is a tendency, not a law — plan the shift around tying up their stick, not out-leveraging somebody much bigger
 Rule: NHL Rule 59.1 has no blade-on-ice element — under NHL, IIHF or Hockey Canada rules a two-handed shaft shove is a cross-check whatever your blade is doing
@@ -552,7 +552,7 @@ Key: When you are gassed, the glass is the answer — the punishment for a tired
 Key: Blocking shots is a technique, not an act of courage — done badly it hurts you and doesn't stop the puck
 Technique: Get close — blocking from ten feet is far safer and far more effective than blocking from thirty
 Technique: Present the biggest possible surface square to the shooter — shin pads facing the shot, stick down on the ice beside you
-Action: Stay on your feet if you can; if you go down, go down toward the shooter rather than sideways, with your hands and head behind your body
+Action: Stay on your feet if you can; if you go down, go down toward the shooter rather than sideways, with your hands and head behind your body — that is for a shot, not for a pass-lane slide on a 2-on-1
 Never: Turn sideways, lift a leg, or lead with your stick — all three expose the parts of you that armour does not cover
 Never: Block from a screen position — you deflect a puck your goalie never saw
 Read: On a 2-on-1, blocking the shot means abandoning the pass — your goalie wants the shot
@@ -564,7 +564,7 @@ Blocking shots is a defenceman's job, but it is a *technique*, not an act of cou
 - **Get close.** The further away you are, the more the shooter can see and adjust around you. Blocking from ten feet is far safer and far more effective than blocking from thirty.
 - **Take away the ice, don't dive at the puck.** Present the biggest possible surface square to the shooter — shin pads facing the shot, stick down on the ice beside you to seal the low gap.
 - **Stay on your feet if you can.** A standing block keeps you in the play; a dropped block takes you out of it for two seconds, which is a lifetime if you miss.
-- **If you go down, go down toward the shooter, not sideways**, and get your hands and head behind your body. The parts to protect are the ones armour does not cover — feet, hands and face. *(Which of them actually gets hurt most often is not established. No injury-surveillance study breaks shot-blocking injuries down by body part, and the clinical literature says why: the only published paper on the mechanism — a three-player case series of lower-leg and ankle fractures from puck impacts in professional players — calls puck impact "a frequent and **underreported** cause of injury" (Foot & Ankle Specialist, 2026). So treat the ranking as coaching craft; the instruction to shield those parts stands on its own.)*
+- **If you go down, go down toward the shooter, not sideways**, and get your hands and head behind your body. **That method is for blocking a *shot*, and it does not transfer** — do not carry it into a timed slide across a passing lane on a 2-on-1, which is a different action on a different axis (see §Defending the Rush above). The parts to protect are the ones armour does not cover — feet, hands and face. *(Which of them actually gets hurt most often is not established. No injury-surveillance study breaks shot-blocking injuries down by body part, and the clinical literature says why: the only published paper on the mechanism — a three-player case series of lower-leg and ankle fractures from puck impacts in professional players — calls puck impact "a frequent and **underreported** cause of injury" (Foot & Ankle Specialist, 2026). So treat the ranking as coaching craft; the instruction to shield those parts stands on its own.)*
 - **Never turn sideways, never lift a leg, and don't lead with your stick.** All three expose the parts of you that armour does not cover: turning sideways opens your unpadded flank and means you can no longer see the puck, a raised leg puts the gap between shin pad and pant into the shot lane, and a stick thrust out ahead of your body deflects pucks upward at your own face and your goalie. Present padded surfaces, keep both feet on the ice, keep the stick down beside you.
 - **Don't block from a screen position.** Half-blocking a shot your goalie can't see is worse than not blocking at all; you've deflected an unseen puck.
 - **Know when not to.** On a 2-on-1, blocking the shot means abandoning the pass. Your goalie wants the shot.
@@ -575,7 +575,7 @@ Blocking shots is a defenceman's job, but it is a *technique*, not an act of cou
 
 ```facts
 Key: Your shift is legitimately a little longer than a forward's, because more of it is gliding, reading and skating backwards rather than sprinting
-Key: Don't read that as covering less ground — the measured direction is the other way round, and Center covers that finding
+Key: A longer shift does not mean less ground covered — the measured direction is the other way round, and Center covers that finding
 Key: The gap is real and smaller than you think — about a second and a half a shift, computed for this document from the NHL's own time-on-ice report and not a published figure
 Key: The "40–50 seconds for a D against 35–45 for a forward" figures are coaching talk with no source behind them, and both halves sit below what the league actually does
 Action: Change your pair on its own clock, not with a forward line — let the forwards go and take your change on the next safe window
@@ -592,11 +592,11 @@ Shift length, the safe and unsafe windows to change, and why a bad change conced
 
 ```facts
 Action: 1-on-1 — force them outside, keep your stick in the passing lane, don't lunge; steer them to a bad shooting angle rather than making a highlight hit
-Convention: 2-on-1 — take away the pass and give up the shot, sitting in the passing lane between the two attackers with your stick flat on the passing side; a timed slide to force the shot is the realistic alternative, so ask which your team plays
-Never: Slide on a 2-on-1 before the pass is released where your team plays the passing lane, and never carry the shot-blocking drop into a timed slide — different action, different axis
+Convention: 2-on-1 — take away the pass and give up the shot, sitting in the passing lane between the two attackers with your stick flat on the passing side; a timed slide to force the shot is the realistic alternative — ask which your team plays, how they want you down, and make sure your goalie agrees
+Never: Slide before the pass is released on a 2-on-1 where your team plays the passing lane, or carry the shot-blocking drop into a timed slide — if you go down, go head up and out of the shot lane
 Read: If the second attacker has been picked up by a backchecker and the shooter is walking into the slot unpressured with no realistic pass, it is no longer a 2-on-1 — close on the puck
 Convention: 3-on-2 — "two wide, middle to the backchecker" is the common default; "strong side takes the puck, weak side splits" the alternative
-Action: Ask your coach which of the two you are playing — it is a coaching choice, not a law
+Action: Ask your coach which of the two 3-on-2 systems you are playing — it is a coaching choice, not a law
 Action: Under both 3-on-2 systems, retreat together and keep the middle of the ice sealed as long as possible
 Never: Let an attacker get between you and your net — stay on the defensive side of the puck
 ```

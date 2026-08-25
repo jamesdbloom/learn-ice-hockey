@@ -840,7 +840,7 @@ After a TV time-out, an injury delay, a video review or an intermission, everybo
 Key: The test is whether the thing you are preventing is more likely to become a goal than the power play you give up
 Options: Stopping an odd-man rush in the last minutes of a close game, or preventing a certain goal
 Rule: Fouling a breakaway from behind gives up a penalty shot, not a power play (NHL Rule 57.3)
-Rule: A skater — not the goalkeeper — covering the puck in their own crease is a penalty shot (NHL Rule 67.4) — still better than the goal it prevented
+Rule: A skater — not the goalkeeper — covering a puck that is itself in their own crease is a penalty shot (NHL Rule 67.4); the puck's location decides, not theirs (63.6) — still better than the goal it prevented
 Never: Foul anything once your own goalie is pulled — those trades become awarded goals (NHL Rules 25.1, 57.4, 67.5)
 Never: Take one for retaliation, for sending a message, after the whistle, or at any point in the first period
 ```
@@ -850,7 +850,7 @@ Rarely — but not never. The test is simple: **is the thing you are preventing 
 **The arithmetic behind that test is not repeated here.** What a minor actually costs you (the league power-play conversion rate), what a penalty shot is worth by comparison, and the full rulebook account of the fouls that are *not* priced as minors — the breakaway fouled from behind, and covering the puck in your own crease — all live in [Risk Management, "Penalty risk as a decision"](../hockey-iq/risk_management.md#penalty-risk-as-a-decision). Read the numbers and the rule conditions there. What belongs in *this* document is the part that changes with the score and the clock:
 
 - **Stopping an odd-man rush in the last minutes of a close game** — but *not* a clean breakaway, and this distinction matters enormously. Fouling a breakaway from behind gives up a **penalty shot**, not a power play (Rule 57.3), and over the last eleven NHL seasons penalty shots have converted at a *higher* rate than power plays — by less than the phrase "penalty shot" suggests, and not in every recent season, but higher. Chasing from behind and hauling someone down saves you little or nothing. The time to prevent the breakaway was four seconds earlier, with your gap — see [Defending the Rush](defending_the_rush.md).
-- **Preventing a certain goal.** If it is a goal or a penalty, take the penalty; and if the foul available to you is covering the puck in your own crease, a penalty shot (Rule 67.4) is still better than the goal it prevented.
+- **Preventing a certain goal.** If it is a goal or a penalty, take the penalty; and if the foul available to you is covering a puck that is itself in your own crease, a penalty shot (Rule 67.4) is still better than the goal it prevented. **It is the puck's position that decides, not yours** (Rule 63.6) — gather in a puck lying outside the paint while you stand in it and you have taken a minor, not conceded a shot.
 - **Sometimes: killing time you need killed.** A stoppage you badly need for a change or a rest can occasionally be worth two minutes — but this is a coach's decision, not yours.
 
 **⚠️ Once your own goalie is out, every one of those trades stops working.** This is the game state most of this document is about, so it matters here. With the net empty there is no shot for anyone to save, so the rulebook skips the penalty shot and simply gives them the goal:

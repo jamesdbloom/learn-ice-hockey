@@ -539,7 +539,7 @@ Rule: Make contact with the puck first and a tripping minor replaces the penalty
 Rule: Outside NHL Rule 57 a reckless trip is not capped at a minor — IIHF 57.3/57.4 reach a major and a major plus game misconduct, and whether 24.8's minor or 57.3's discretion governs a reckless puck-first trip the book does not say; USA Hockey 639(b)/(c), HC 8.6(b) on injury
 Rule: NHL Rule 57 has no tier above the minor, but 21.1 still reaches a match penalty for a player who deliberately injures an opponent "in any manner"
 Rule: Under the IIHF book "from behind" is not required of a goalkeeper — 24.8 criterion (II) excepts a foul from the front by the goalkeeper on a breakaway, so that foul still concedes a penalty shot; NHL 57.3 criterion (ii) has no such exception
-Rule: With your goalie pulled, ANY foul denying the chance is an awarded goal — neither clause carries a "from behind" test (NHL 25.1, 57.4). Falling on, holding, picking up or gathering the puck in your own crease is a penalty shot under 67.4, which excepts the goalkeeper; with the net empty, 67.5
+Rule: With your goalie pulled, ANY foul denying the chance is an awarded goal — neither clause carries a "from behind" test (NHL 25.1, 57.4). Covering a puck that is itself in your crease is a penalty shot under 67.4, goalkeeper excepted — the puck's position decides, not yours (63.6); net empty, 67.5
 Rule: Hockey Canada writes the puck-first carve-out into the slide sentence of 8.6 — but 8.6 expressly does not reach 8.7 Clipping (contact below the hips) or 8.8 Slew-Footing (sweeping the feet), and neither carries any carve-out: both reach a match penalty (8.7(c), 8.8(c))
 Never: Stand up and look at the official — play does not stop until the attacking team loses possession (NHL Rule 57.3)
 ```

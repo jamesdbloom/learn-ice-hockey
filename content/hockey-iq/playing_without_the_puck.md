@@ -292,7 +292,7 @@ Deciding *who* goes is the off-puck question, and it is the one this document an
 
 ```facts
 Priority: The front of your own net first — if nobody is there, go there, because nothing else matters as much
-Priority: Then take away the shooter's stick, not the puck — lift it or seal the blade
+Priority: Then take away the shooter's stick, not the puck — lift it below their bottom hand, or seal the blade
 Priority: Then get it out of the danger area — anywhere is better than the slot, and this is the one moment an unglamorous clear is unambiguously correct
 Rule: Not directly out of play, though — from your own zone that is a two-minute delay-of-game minor (NHL Rule 63.2(iii)); off the glass and along it is fine
 Rule: Over the glass behind the players' bench is penalised — the carve-outs are boards with no glass above them, a puck shot into the bench, and one out directly off a faceoff (NHL Rule 63.2(iii))
@@ -304,7 +304,7 @@ Action: The mirror image applies in their end — net front first, sticks free, 
 Sometimes there is no structure left — a scramble in front of your net, three players down, sticks everywhere. When you cannot work out the right play, work down this list in order:
 
 1. **The front of your own net.** If nobody is there, go there. Nothing else matters as much.
-2. **Take away the shooter's stick, not the puck.** Lift it or seal the blade. You do not need to win the puck to prevent the shot.
+2. **Take away the shooter's stick, not the puck.** Lift it — **up rather than sideways and below their bottom hand**, because at or near the hands it is hooking under the IIHF and USA Hockey books — or seal the blade. You do not need to win the puck to prevent the shot.
 3. **Get it out of the danger area** — anywhere is better than the slot. This is the one moment where an unglamorous clear is unambiguously correct. **Not directly out of play, though.** Under **NHL Rule 63.2(iii)** a minor is assessed on any player who *"shoots or bats (using his hand or his stick) the puck directly (non-deflected) out of the playing surface from his defending zone, except where there is no glass"* — hand or stick, so it does not reach a puck sent out with a skate — and the rule adds that *"when the puck is shot over the glass 'behind' the players' bench, the penalty will be assessed"* — so the three carve-outs are a stretch of boards with no glass mounted above it, a puck shot **into** the bench, and one that leaves the rink directly off a faceoff. **USA Hockey has no equivalent minor:** Rule 610(c) penalises only a *deliberate* shoot-out, and Rule 631(d) makes an accidental one a last-play faceoff. Off the glass and along it is fine everywhere.
 4. **Then, and only then, look for the outlet.** Trying to make the exit pass before the danger is gone is how a scramble becomes a goal against.
 

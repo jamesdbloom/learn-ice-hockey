@@ -205,6 +205,21 @@ blocks it.
 | ⬜ | Glossary, ~9 entries | `Forecheck` homonym; `Post` drops its owner's coaching-choice hedge; three entries out of alphabetical order; `one-touch`/`one-timer` collision; `Board battle`; backside coverage. | plan §4.1, §4.3 |
 | ⬜ | Glossary, voice | **Six of the ten new entries close with a cross-link and four do not**; `Butterfly` uses inline *"— see [X]"* where others use a sentence-final *"See [X]."*; some are third person and some switch to second. | plan §4.3 |
 | ⬜ | `"most goals are scored low"` | **Unsourced in its owner.** Label it or source it — do **not** delete it: a tidying pass already removed a *correct* fact from this corpus for looking unsupported. | plan §3 |
+| ⬜ | `conditioning_and_recovery.md:528` | Common Mistakes carries the Copenhagen adduction exercise's *very-low-certainty* hedge but **not the retraction** its own Key Takeaway 4 and body both carry. A dropped qualification in the layer read first. | round 43 |
+| ⬜ | `conditioning_and_recovery.md:524` | *"…in the study cited above"* — read aloud there is no "above", and the body's *"one study in fourteen semi-professional players"* hedge does not travel. | round 43 |
+| ⬜ | `conditioning_and_recovery.md:553` | `Check yourself` Q1 points at *"§Concussion — …The absolute rule"*; round 41 renamed that heading to `### Concussion: the absolute rule`. **The reference degraded rather than broke, so no link checker can see it.** | round 43 |
+| ⬜ | `defender.md:585` vs `conditioning_and_recovery.md:39` | **Two corpus computations of the same 2024-25 shift lengths that disagree** — 48.7/47.4 against 47.1/48.8 — and `defender.md` calls it *"the same calculation"*. Different populations, neither stated. Shift length is `conditioning_and_recovery.md`'s. | round 43 |
+| ⬜ | `how_to_watch_hockey.md:580` · `mental_game.md:629` · `faceoffs.md:849` · `practice_and_development.md:555` | Four owned numbers restated in a summary layer **without their owner's qualifications** — the 44 ft to the dot, the 18% of variance (no CI, no 82%-unexplained), the 6% faceoff correlation (drops its *computed-for-this-document* label), and a single-game possession measurement generalised to *"a full game"*. | round 43 |
+| ⬜ | `practice_and_development.md:608-620` | **Eleven Key Takeaways** against the style guide's 5–10. Every other document in scope is at 10 or fewer. | round 43 |
+| ⬜ | `skating.md:888` | *"Almost every race you contest is decided within about three strides"* — unsourced, in a section whose point is that a **neighbouring** three-strides claim is *"positively contradicted by the biomechanics literature"*. The two are genuinely different and this one is not wrong; it needs a *coaching observation* label. | round 43 |
+| ⬜ | `zone_entries.md:174` | NHL **83.4** stated truly, but without the half that favours the reader: 83.4's closing sentence gives an exception the document hands to the **defender** at `:908` and withholds from the attacker, who is told the puck cannot go in and given no cue to keep playing. **→ `rules-verifier` to adjudicate**, not an editorial call. | round 43 |
+| ⬜ | `center.md:116` | An `Action:` states the weak-side collapse unconditionally; the body carries **two named exceptions** (`:135`, `:137`) and the document's own `Check yourself` Q2 demands the reader name them. A centre leaves the slot expecting a collapse that cannot come. | round 43 |
+| ⬜ | `center.md` §Overview | **Four facts are not traceable to §Overview's own body** — the swing-breakout split, low-zone-collapse-vs-man, and "ten to fifteen" all live in sections further down. All true and correctly hedged, so per the style guide this is *a finding about the section*: the Overview body should name the alternatives it hedges against. | round 43 |
+| ⬜ | `faceoffs.md` | **"Ten to fifteen draws a game matter" is now in a `center.md` Key Takeaway and appears nowhere in its named owner**, with no source or label anywhere in the corpus. Either source it in `faceoffs.md` or label it coaching craft. | round 43 |
+| ⬜ | `center.md:356` | `Never: Take your body inside the blue paint` omits NHL **69.1**'s carve-out for an attacker *pushed* in by a defender. The body defers it to Rules Primer. Errs conservatively, but a reader shoved in and waved off will believe the corpus told them so. | round 43 |
+| ⬜ | `defender.md:268` vs `:271` | Two thresholds in one block for the same decision — *"confident"* against *"certain"*. Inherited from the body (`:276`, `:280`), so **fix the body first**. | round 43 |
+| ✅ | USA Hockey 614(b)/618(a) | Both read *"A **penalty shot/optional minor penalty**"* and the corpus stated the shot unconditionally. **Fixed:** `center.md` now cites Rule **406(a)**, under which the non-offending team *"may, prior to the penalty shot, elect that the minor … be assessed … in lieu of the penalty shot"*. ⚠️ **This entry first credited the election to a One Pass rule — which is a *Blind Hockey* rule** (`usah.txt:6559`, *"to give low-vision and completely blind players the best chance to track the puck"*), with the glossary gating on it sitting inside the Disabled Hockey chapter. Reading it as the general glossary would have hedged a correct claim on a condition that does not reach these readers. | round 43 |
+| ⬜ | Hockey Canada 10.2(a)(v) | The new *"the puck's location decides, not the player's"* is an **NHL/IIHF/USA Hockey** rule. Hockey Canada locates the penalty shot by where the **infraction** occurs. Stated with book scope in the facts lines; reads as a law of hockey in prose. | round 43 |
 
 ---
 
@@ -240,6 +255,29 @@ activate and disclose.
 
 ## Tier 3 — Tooling and verification gaps
 
+**⬜ An advisory baseline for `check-arrivals` — deliberately NOT built yet.** `diagram-reviewer`
+proposed an allowlist keyed by `diagram + owner + target + rule` so a **new** advisory is loud and
+an accepted one silent. It is the right idea and it was held back for a stated reason: **an
+allowlist entry is a written assertion that a human looked and accepted.** Writing seven of them
+before anyone had rendered `dz-walk-down-man` and `nz-1-2-2-trap` would have put the repository's
+own voice behind a review that had not happened — this corpus's signature failure. Both have since
+been rendered and judged safe, so the blocker is gone. **When it is built: the reason string must
+be mandatory (an entry without one is a hard failure, not a warning), and a changed target must
+count as a new entry rather than a matched one.**
+
+⚠️ **A tripwire worth knowing before anyone moves a route.** The thinnest non-goaltender margin
+*above* the 9 ft gate is `dz-collapse-corner` at **9.43 ft**, ahead-of-tip — five inches of
+clearance. Not a defect; the reason the build will suddenly fail if that route is nudged.
+
+**⬜ Nobody has diffed the summary layers against each other — corpus-wide.** Round 43 read
+each document's summary layer cold against **its own body** and found eight majors. Its
+closing sentence names what that cannot reach: a claim stated one way in `defender.md`'s
+takeaway and the opposite way in `center.md`'s, **where both match their own bodies**, is
+invisible to it. The KHL finding surfaced only because two documents happened to be open at
+once. **This is the highest-value move on the list and it is cheap** — the summary layers of
+all 36 documents are a few dozen sections, not 8,000 lines, and they are the layer the
+podcast extracts.
+
 Things no current check can see.
 
 **⬜ §6b — no literal-asterisk check exists, and this has now shipped twice.** Commit
@@ -248,36 +286,75 @@ markdown download, the EPUB and the PDF — and `md_to_speech.py` strips it, so 
 pipeline hides the defect rather than catching it.** Round 38 added a third instance
 (an unmatched `**` from a merge), caught by reading, not by a tool.
 
-**⬜ The diagram arrival invariant is stated three incompatible ways and enforced by nothing.**
-It is the rule that stops a route's arrowhead finishing on a player — *"an arrowhead says the
-skater keeps going through him"* — and it is a **safety** constraint, not a drawing one.
-`rink.mjs:582` states it as a bare 9 ft distance; `forechecking_systems.mjs:335` states a
-two-part scoped test (terminal tangent must clear the anchor by 2.9 ft **and** no arrowhead
-within 9 ft); `reading_ice_hockey_diagrams.md` gave the reader a third, purely directional
-form. `rink.mjs:583` claims *"this file states that rule itself"* — **it does not**; all four
-mentions are back-references to a rule never normatively stated anywhere. `check_geometry.py`
-reads only `rink.json` against the glossary and never opens a spec, so nothing enforces it.
+**✅ The diagram arrival invariant is stated once and enforced.** Round 42 —
+[`round_42_arrival_invariant.md`](../reviews/round_42_arrival_invariant.md).
 
-Measured across 112 specs and 173 routes with the renderer's own `loc()` and tangent maths:
-- **7 arrow-ended routes finish within 9 ft of an opponent.** Three are backchecks where the
-  opponent is *behind* the terminus, so the arrow points away — they fail the bare-distance
-  form and not its purpose, which is why the bare form is the wrong form.
-- **The ones that need fixing:** `faceoff-dzone-tie-up` ×2, whose own comment measures terminal
-  clearance *to the puck* and never to the opposing centre, leaving both arrows 2.32 and 2.68 ft
-  off that centre's anchor — inside the file's own 2.9 ft floor. That is exactly the miss an
-  unenforced invariant produces: the author checked the constraint against the wrong object.
-  And `forecheck-212`, `nz-1-2-2-containment` and `entry-wide`, where a skating arrowhead
-  finishes 7.8–8.6 ft from an opposing **goaltender** — the one target every book protects
-  unconditionally (USA Hockey 607(d), *"A goalkeeper is NOT 'fair game'"*; IIHF 42.1).
-- Five `pressure` routes fail form (a) and are fine: they terminate in bars, so form (b)
-  protects them. Form (a) as written is over-broad — a pressure route that clears its target
-  by 2.9 ft is no longer pressure on that target.
+It is now stated normatively in exactly one place, above `playSvg` in `rink.mjs`, and enforced
+by `site/scripts/check-arrivals.mjs`, wired into `npm run build` **before** `build:diagrams` —
+it reads the specs rather than the built artefact, so it fails before anything is regenerated
+on disk. **Six copies of the rule existed, not the four the first consolidation pass found**:
+two verbatim in `forechecking_systems.mjs`, a differently-scoped third in `rink.mjs`, two more
+in `faceoffs.mjs` and `defensive_zone_coverage.mjs`, and a reader-facing sixth in
+`reading_ice_hockey_diagrams.md` — plus an operative **angle** in `defending_the_rush.mjs` that
+the invariant disclaims outright. All now point at `rink.mjs`; the case histories stay where
+they are. **0 hard violations; 7 advisories, tabulated in the record.**
+
+**What the enforcement found that no prose statement had:** an opposition arrowhead
+finishing **8.94 ft from the reader's own centre** in `centre-backcheck-middle-lane` — three
+lines below that spec's own comment saying an arrow from the driver *"that finished on the
+centre would read as a check rather than a lane"*. The guard was written against the route
+the author chose not to draw and never applied to the one they did. Fixed to 10.0 ft of
+clearance; referred to `diagram-reviewer` to confirm the section's claim survives it.
+
+⚠️ **This entry's predecessor under-named its own measurement.** It recorded seven
+arrow-ended routes within 9 ft, of which three are backchecks — leaving four — and then
+named three. The fourth was never listed, and only the enforced check surfaced it. **Third
+consecutive round in which a record's arithmetic required a file its prose did not name.**
+
+⚠️ **And the checker's own first run was wrong in the way this project keeps being wrong.**
+It had no notion of *whose* route it was — routes carry no team field — so it treated
+`team: 'opp'` as "the opponent" for every route. **22 of the 80 arrow-ended routes are
+skated by the opposition**, and for those it measured against the owner's own teammates. It
+reported `forecheck-212-stacked` as a hard failure (an opposing carrier 8.25 ft from his own
+partner) and missed the real defect entirely. **One edit away from redrawing a correct
+diagram to satisfy a broken test.** Ownership is now inferred from the route's start point,
+and that inference was measured before being relied on. → the plan's standing rule, again:
+**a tool's limits must be stressed before its output is treated as evidence.**
+
+⚠️ **`reading_ice_hockey_diagrams.md:65` was listed above as one of the three incompatible
+statements and is not one.** *"A route that closes on an opponent ends in the two-bar mark,
+not an arrowhead"*, with no numbers, is the correct reader-facing projection of form (b) —
+and omitting the geometry is what the invariant requires, not a divergence from it. **Left
+unchanged**; rewriting a correct sentence because a planning note called it divergent is the
+tidying failure non-negotiable 3 exists to prevent.
+
+**⬜ But one real reader-facing mismatch follows from it.** That sentence carries **no
+goaltender carve-out**, while three shipped diagrams draw an arrowhead finishing 7.8–8.6 ft
+from a goaltender (`forecheck-212`, `nz-1-2-2-containment`, `entry-wide`) — advisory in the
+checker on the grounds that every net-drive route finishes near him by construction. **Either
+those three diagrams are wrong or that sentence is incomplete**, and the goaltender is the
+one target both books protect unconditionally (USA Hockey Rule 607 Charging (d), 2025-29;
+IIHF 42.1 CHARGING, both located on disk in round 42). This is a `content/` change and needs
+its own review round. `diagram-reviewer` was asked whether any of the three reads as a skater
+going through him.
+
+**⬜ `faceoff-dzone-tie-up` — the instructive advisory, still open.** Two terminal tangents
+pass 2.32 and 2.68 ft from the opposing centre's anchor, inside the file's own 2.9 ft floor,
+because that spec's comment measures its clearance **to the puck** and never to the centre.
+An unenforced invariant produces exactly that: the author checked the constraint, against
+the wrong object. Referred to `diagram-reviewer`; not changed without that verdict.
 
 ⚠️ **Two naming drifts survive outside this commit, plus one open count.**
 `breakouts.mjs:230` describes `carry` as *"skating with control of the puck"* — the Hockey
 Eastern Ontario name, where the legend row, the notation caption and
 `reading_ice_hockey_diagrams.md` all now use §21.1's *"skate and stickhandle"*. Not false, since
 both keys draw the mark identically, but it is the last place using the other key's vocabulary.
+⚠️ **Corrected in round 42: this one is inside `describe`, so it is READER-FACING** — alt text,
+EPUB, PDF and speech all carry `describe` — and the entry above sits under a heading calling these
+"naming drifts", which reads as comment-level. **It was deliberately not swept with the comment
+fix.** Changing it trades a plain-English gloss that a screen-reader listener understands for the
+key's jargon, and that is a judgement about accessibility, not about vocabulary consistency.
+Decide it deliberately; do not let a terminology sweep make the call by default.
 **✅ The shared-symbol count is settled and no longer contested.** `rink.mjs` said five line
 symbols are common to both keys and the document told the reader four. Both pages were rendered at
 300 dpi and compared: the drop pass is the same construction in both — wave, drop marker, straight
@@ -289,17 +366,21 @@ among the agreed marks would have obliged the document to disclose that — so t
 missing adaptation were **one defect**, and correcting the count alone would have made things
 worse. Both are now fixed, and the departure is disclosed to the reader.
 
-⚠️ **One stale glyph description survives outside this commit.**
-`neutral_zone_systems.mjs:815` calls the backward-skating symbol *"a tight wave"* — the Hockey
-Eastern Ontario glyph, not the row of overlapping arches the corpus now draws. The identical
-error in `special_teams.mjs`'s `pk-nz-1-3` **describe** was reader-facing (alt text, EPUB, PDF
-and speech all carry `describe`) and was caught at the gate; this one is a comment, so it
-misleads the next editor rather than a reader. Sweep it with the routes below.
+**✅ The stale glyph description is fixed** (round 42). `neutral_zone_systems.mjs:815` called
+the backward-skating symbol *"a tight wave"* — the Hockey Eastern Ontario glyph, not the row of
+overlapping arches the corpus draws (`backward: { line: 'loops' }`). Checked against `rink.mjs`
+rather than recalled: `rink.mjs:482` records that the two keys were once claimed to agree here
+and do not. It now names §21.1's BACKWARD SKATING and says what it used to say and why that
+misdirects. The identical error in `special_teams.mjs`'s `pk-nz-1-3` **describe** was
+reader-facing and was caught at the gate; this one was a comment, so it misled the next editor
+rather than a reader — and in this corpus a wave means `carry`, so it pointed at the mark that
+says the opposite of the one drawn.
 
-**The work:** state the invariant once, normatively, in the two-part scoped form; add a
-`check_diagram_arrivals` step that fails the build on (b) and warns on (a) for arrow-ended
-routes only; then fix the five routes above. ⚠️ The three-way restatement is the defect
-generator — fixing the routes without fixing the statement leaves the generator running.
+**✅ The work above is done** — see the closed entry at the top of this tier. It specified
+three things (state it once; add a build step failing on (b) and warning on (a); fix the
+routes) and all three are done. Its one wrong assumption is worth keeping: it said **five**
+routes needed repair. One of the five was a false positive of the check's own first version,
+and the route that actually failed was not on the list.
 
 **⬜ Johnston & Walter: "the one-bar mark is the only divergence" is probably false, and only
 the book can settle it.** `reading_ice_hockey_diagrams.md` says nothing else in the document comes
@@ -510,6 +591,123 @@ for the wording will not find it.
 
 ## Tier 4 — Evidence base
 
+**⬜ A handling-the-puck row for `rules_primer.md` §10, written as a spec so the next round does
+not compose it from memory.** The table has no row for it, and round 43 deliberately did **not**
+add one: it would be a new multi-book claim in the corpus's densest summary table, in a commit
+already four review rounds deep, with no reviewer on it — and §10's cells are exactly the shape
+that generated this round's divergences. The divergence is already served in the body at `:399`
+and in Common Mistakes at `:786`, so the table's silence is an omission rather than an error.
+
+**The spec, verified against `sources/` in round 43 — compose the row from this, not from a
+recollection of it:**
+
+- **NHL and IIHF 67.2** — closing the hand on the puck is a **minor**. Not a faceoff violation in
+  any book.
+- **NHL and IIHF 63.2(v)** — deliberately falling on or gathering the puck into the body is a
+  minor, with the NOTE's shot-blocker carve-out (*"if the puck is shot under him or becomes lodged
+  in his clothing or equipment"*) and its sting (*"any use of the hands to make the puck unplayable
+  should be penalized promptly"*).
+- **USA Hockey 618(a)** — a closed hand not immediately dropped is a **stoppage and last-play
+  faceoff**, not a penalty; the minor attaches to *picking the puck up off the ice*; **in the
+  crease** it is a penalty shot or optional minor, and an **awarded goal** on an empty net.
+- **USA Hockey 614(a)** — the body smother is still a minor there.
+- **Hockey Canada 10.2(a)(iii)** — the closed hand is a minor only where the player *"by doing so,
+  gains an advantage"*, expressly excluding an immediate drop.
+- **The crease determinant, NHL and IIHF 63.6** — the **puck's** location decides, not the
+  player's. **USA Hockey 614(b)** fixes the same moment (*"at the moment the infraction occurs"*)
+  and offers the non-offending team an **optional minor** in lieu under **406(a)**; **Hockey Canada
+  10.2(a)(v)** locates it by where the *infraction* occurs instead.
+
+⚠️ **Do not credit the USA Hockey election to a "One Pass rule"** — that is a **Blind Hockey** rule
+(`usah.txt:6559`) and the glossary gating on it sits in the Disabled Hockey chapter. Round 43
+recorded it wrongly once and caught it at the gate.
+
+**⬜ The facts-block count cap is deciding what readers are told, in 19 blocks.** Measured in
+round 43 across all 26 documents, 773 blocks, 4,605 facts: **19 blocks sit at the hard maximum of
+11 with zero headroom**, 17 more at 10, and **58 at the coaching cap of 8** — which can still take
+a `Rule:` but not another `Action:`, `Read:` or `Never:`. **Length is not the binding constraint
+anywhere**; the longest fact in the corpus is 298/300. It is the count.
+
+Twice in round 43 the cap chose the content: a rule exception could only be added by merging two
+`Read:` facts, and then only by deleting a `Never:`. **A cap must never evict a rulebook fact**,
+and the pressure runs that way.
+
+**The remedy is in the style guide already** — *"more than 8 and the section is probably two
+sections"*. `center.md` §Faceoffs is the worked example and the place to start: it carries three
+unrelated rules topics — handling the puck at a draw, encroachment and ejection, stick-placement
+order — on top of five coaching facts, and **its body is already in those halves** (the
+"Key principles by location" bullets, then the "So:" rules bullets). Split it into
+`### Faceoffs — winning the draw` and `### Faceoffs — the rules that decide who takes it`.
+⚠️ Until that is done, `center.md`'s two zone `Read:` facts are merged into one and the second
+half has lost its verb. That is a real loss and it is recorded as one.
+
+The at-max blocks, so the next round does not rediscover them: `center.md:316`, `:377`, `:437` ·
+`defender.md:9`, `:65`, `:105` · `on_ice_communication.md:109` · `puck_support_and_spacing.md:376` ·
+`goaltender.md:511`, `:919` · `breakouts.md:418` · `defending_the_rush.md:533` ·
+`forechecking_systems.md:465` · `offensive_zone_play.md:689` · `special_teams.md:617` ·
+`body_contact_and_battles.md:389`, `:421`, `:1012`, `:1060`.
+
+**⬜ No USA Hockey Casebook is on disk, and every USA Hockey verdict in this corpus rests on rule
+text alone.** `ls sources/ | grep -i case` is empty. USA Hockey's Casebook is the normal authority
+for its interpretations, and `rules_primer.md:397` already discloses the gap for one claim —
+*"its separate Casebook is not among the texts checked here"* — while the gap in fact applies to
+every USA Hockey claim in the corpus. Round 43's `rules-verifier` named fetching it **the single
+highest-value action for the next round**, and it was reached in that round for the crease and
+faceoff questions specifically, where rule text alone left four verdicts unsupported by any
+interpretation.
+
+⚠️ **Hockey Canada files interpretations by rule number, so grepping the offence name misses
+them.** Round 43 found HC Interpretation 5 to Rule 10.2(a)(v) — which rules on the exact
+puck-in-the-crease fact pattern the round propagated — and the stick-lift head-contact clauses at
+`hc.txt:7364` and `:7391`, both only by accident, from greps run for something else. **The
+reliable method is reading Hockey Canada Sections 7, 8 and 9 end to end**, and nobody has.
+
+**⬜ The stick lift is the corpus's most-recommended technique and its penalty exposure lives in
+one document.** `body_contact_and_battles.md` carries *"far less penalty risk … but not none"* in
+five layers; `defender.md` and `on_ice_communication.md` carry the below-the-bottom-hand
+condition. Round 43 shipped, and then caught, a flat *"it is not a penalty"* in
+`defensive_zone_coverage.md`. **Hockey Canada's own naming of the technique as a head-contact
+route — the double minor for accidental head contact causing injury, and the major plus game
+misconduct for a *"pitchfork action in lifting the stick"* — now appears in exactly one
+document**, `defensive_zone_coverage.md:616`, added by the same commit that recorded this item.
+It belongs in the technique's **owner**, `body_contact_and_battles.md`, and the placement
+condition belongs at every site that recommends the lift.
+⚠️ **This entry first said it appeared "nowhere in `content/`" and printed a grep to prove it.**
+The grep returned the line the same commit had just added. A stated verification that returns
+the opposite of its claim is non-negotiable 5 — caught at the gate, not by running the grep.
+
+**⬜ No KHL rulebook is on disk, and at least 30 reader-facing sites assert a KHL rule without
+one — 28 in `content/` and 2 in diagram captions.** `content/` mentions the **KHL on 31 lines
+across 17 documents**. **Three lines carry the honest
+disclosure, all in `defender.md`** — `:113`, `:131` (*"unverified here: no KHL rulebook was
+available to check it against"*) and `:691` (*"on a claim we could not verify against a KHL
+rulebook"*) — and the **other 28 state the KHL trapezoid flat, as verified fact**, in `on_ice_communication.md` ·
+`rink_map_and_glossary.md` · `rules_primer.md` · `playing_without_the_puck.md` ·
+`puck_support_and_spacing.md` · `time_and_space.md` · `how_to_watch_hockey.md` ·
+`goaltender.md` · `breakouts.md` · `defensive_zone_coverage.md` · `faceoffs.md` ·
+`forechecking_systems.md` · `neutral_zone_systems.md` · `offensive_zone_play.md` ·
+`special_teams.md` · `zone_entries.md`.
+
+⚠️ **AND `content/` IS NOT THE BOUNDARY.** Two more flat assertions live in diagram sources and
+reach readers as caption text — alt text, EPUB, PDF and speech all carry it, which is this plan's
+own round-42 finding three tiers above: `site/src/diagrams/rink_map_and_glossary.mjs:321`
+(*"the NHL, the KHL and IIHF play have it"*) and `site/src/diagrams/zone_entries.mjs:657`
+(*"it is the NHL, the KHL and the IIHF book"*), plus both as built captions in
+`site/src/data/diagrams.json`. **A round that fixes 28 sites and stops at `content/` ships two
+captions still asserting it.** The determinant was checked for the same gap and has none.
+
+⚠️ **Round 43's reviewer reported this as "dropped in two documents."** It is sixteen. And the
+first correction of it said two disclosure sites and 29 flat ones; the gate re-derived **three
+and 28**. The count is recorded here so the next round starts from the real number — under-naming
+a scope to the files someone happened to notice, and then miscounting the correction, are now
+the fourth and fifth instances across three rounds.
+
+**The repair is a source, not a sweep.** Propagating a hedge to 28 sites is the wrong fix;
+fetching a KHL rulebook resolves all 28 at once, and *a 403 is not an absence*. Do **not**
+sweep 28 reader-facing sites unreviewed across sixteen documents — that is exactly the
+corpus-wide sweep that produced commit `239f70d`. Non-negotiable 4 protects `defender.md`'s
+disclosure meanwhile; **nothing may be stripped to make the corpus look consistent.**
+
 Cannot be closed by working harder on what is here.
 
 - **⬜ `usah_case.txt` — the USA Hockey Casebook is not on disk and never has been.** The
@@ -646,6 +844,51 @@ deleting it, especially one git cannot give back.**
 ---
 
 ## Method notes that cost real time — read before starting
+
+### The checker set is chosen from memory, and `check_absolutes.py` is the one that gets forgotten
+
+`scripts/` holds **six** local checkers: `check_absolutes.py`, `check_facts.py`,
+`check_geometry.py`, `check_links.py`, `check_secrets.py`, plus
+`site/scripts/check-arrivals.mjs`. (`check_external_links.py` is a seventh and is a network pass.)
+
+Round 43 ran five of the six through six commit-gate passes and four reviewers, and
+**`check_absolutes.py` was never run** — it was caught only when `.claude/hooks/git-guard.sh`
+refused the commit. It found a real defect that everything else had cleared: a penalty tier capped
+without naming the book that caps it, introduced by a repair.
+
+**Run all six by name, from this list, not from recall.** CLAUDE.md's "Writing content" step names
+three; the hook enforces two on `content/` commits; the gate asks for what the author reports. None
+of those is the full set, and the gap between them is where this one lived.
+
+### Record the boundary in the same sentence as the number
+
+Round 43 ran two corpus-wide censuses twice, by deliberately different constructions, to find out
+whether measuring twice is worth it. The answer is sharper than "yes":
+
+| Figure | Second method | Result |
+|---|---|---|
+| Facts-block cap census | `check_facts.py`'s own parser, imported and driven directly, instead of a regex over ` ``` ` fences | **Exact agreement** — 773 blocks, 4,605 facts, 19 at max, 17 at 10, 58 at the coaching cap |
+| KHL census | enumerate from the **git index** not a filesystem glob, match case-insensitively, classify by reading each line, and **do not restrict to `content/`** | Exact agreement on every number — **and a scope defect the first could not see** |
+
+**Re-running the same question with a different tool confirmed the arithmetic and found nothing.
+Changing the question's boundary found the defect.** Arithmetic has not been the failure mode in
+this project; **scope has** — five times in round 43 alone: a record naming five of eleven files, a
+reviewer reporting two documents where there were sixteen, a case-sensitive grep that missed every
+sentence *beginning* "Lift the stick", a stick-lift fix that stopped at a section boundary inside
+a document it had already fixed, and a KHL census that stopped at `content/` while two diagram
+captions asserted the same thing.
+
+**So the rule is not "count everything twice". It is: when a census is recorded as a number the
+next round will act on, put the boundary in the same sentence as the number.** *"28 in `content/`"*
+is checkable and survives contact with a different method. *"28 reader-facing sites"* is not, and
+did not.
+
+⚠️ Two corollaries the same round demonstrated. **A tool reporting success is not evidence** — a
+patch in this round matched no string, printed success from a neighbouring edit, and left a
+corrected ⚠️ sitting above an uncorrected declaration for two further gate passes. And **a number
+at a line wrap is invisible to a naive grep**: `29 sites` split across a newline survived three
+sweeps for `29`.
+
 
 - **These extractions wrap lines mid-phrase and hyphenate across breaks.**
   `grep -c 'not covered by the playing rules'` returns **0** on all three IIHF files; the

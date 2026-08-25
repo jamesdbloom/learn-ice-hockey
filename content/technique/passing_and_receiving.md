@@ -707,7 +707,7 @@ Structuring this into an actual improvement plan is covered in [Practice and Dev
 ## Common Mistakes
 
 - **Slapping at the puck instead of sweeping it.** Contact becomes a single instant rather than a guided path, and accuracy collapses. If your passes go wide, this is the first thing to check.
-- **Opening the blade face, passing or receiving.** An uncupped blade flips the puck onto its edge when you pass, and lets it ski-jump straight over your stick when you receive. A rolling pass is barely better than no pass, because your teammate cannot play it in one touch. **Cup it both ways** — there is no case where an open face is the answer. See [Angle the blade to kill a bounce](#angle-the-blade-to-kill-a-bounce).
+- **Opening the blade face, passing or receiving.** An uncupped blade flips the puck onto its edge when you pass, and lets it ski-jump straight over your stick when you receive. A rolling pass is barely better than no pass, because your teammate cannot play it in one touch. **Cup it both ways on a flat pass.** The one deliberate open face in this document is the saucer's wedge — a lift you choose only when a flat pass is not available, not a passing-face error. Everywhere else an open blade is the fault. See [Angle the blade to kill a bounce](#angle-the-blade-to-kill-a-bounce).
 - **Passing with the arms and no weight transfer.** Produces a floater that a defender has time to read and intercept.
 - **Following through upward.** The blade should finish low and pointed at the target. Finishing high sends pucks over sticks and into shins.
 - **Aiming at a moving teammate's current position.** The pass arrives behind them and they must slow down or turn. You have completed a pass and killed a rush at the same time.

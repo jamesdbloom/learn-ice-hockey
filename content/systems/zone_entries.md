@@ -171,11 +171,11 @@ A **delayed offside** is what happens when attackers precede the puck but the de
 ```facts
 Rule: A botched carry-in draws only to the neutral-zone spot outside the blue line (NHL Rule 83.6; IIHF Rule 83.6(I) the same)
 Rule: A botched dump-in or stretch pass draws back at the spot the shot or pass came from, which can be your own end (NHL Rule 83.6; IIHF Rule 83.6(II) the same)
-Rule: A shot that creates a delayed offside and then goes in is a disallowed goal, whether or not you cleared the zone first (NHL Rule 83.4; IIHF Rule 83.4 word-for-word)
+Rule: A shot that creates a delayed offside and goes in is disallowed, whether or not you cleared the zone first — the one exception is the defending team putting it in themselves *"without action or contact by the offending team"*, so clear and tag up rather than chase (NHL and IIHF Rule 83.4)
 Key: Under pressure at the line, failing to carry costs you less than failing to dump
 ```
 
-A botched **carry-in** is punished lightly: the draw goes to the neutral-zone spot outside the blue line and you barely lose anything. A botched **dump-in or stretch pass** is punished back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). And a shot that creates a delayed offside and then goes in is a **disallowed goal** whether or not you cleared the zone first (Rule 83.4). Both rules are set out in full in [Rules Primer](../foundation/rules_primer.md). **Both read the same way in the IIHF book** — 83.6 gives the same four faceoff locations in the same order, and 83.4 is word-for-word with the NHL, including *"The fact that the attacking team may have 'cleared the zone' prior to the puck entering the goal has no bearing on this ruling."*
+A botched **carry-in** is punished lightly: the draw goes to the neutral-zone spot outside the blue line and you barely lose anything. A botched **dump-in or stretch pass** is punished back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). And a shot that creates a delayed offside and then goes in is a **disallowed goal** whether or not you cleared the zone first (Rule 83.4). **There is exactly one way a goal stands in that situation, and it is not yours to make happen:** 83.4 closes *"The only way an attacking team can score a goal on a delayed off-side situation is if the defending team shoots or puts the puck into their own net **without action or contact by the offending team**."* Read the condition before you read the opening — any touch, any attempt at a loose puck, any forcing of the carrier stops play under 83.3, so the way to leave that door open is to clear the zone and tag up, not to chase. Both rules are set out in full in [Rules Primer](../foundation/rules_primer.md). **Both read the same way in the IIHF book** — 83.6 gives the same four faceoff locations in the same order, and 83.4 is word-for-word with the NHL, including *"The fact that the attacking team may have 'cleared the zone' prior to the puck entering the goal has no bearing on this ruling."*
 
 The entry consequence is the one worth carrying: under pressure at the line, **failing to carry costs you less than failing to dump**. That asymmetry runs the same direction as the shot-rate evidence in section 1, and it is worth remembering the next time the safe play looks safe.
 
@@ -864,7 +864,7 @@ Key: It needs good reads, your forwards back, and a partner who slides with you 
 
 Meeting the entry at your own blue line rather than backing in.
 
-- **Upside:** it kills controlled entries outright. If they cannot cross with the puck, they cannot have the 0.53–0.62 shots a successful carry-in was worth.
+- **Upside:** it kills controlled entries outright. If they cannot cross with the puck, they cannot have the 0.53–0.62 unblocked shot attempts a successful carry-in was worth at 5-on-5.
 - **Downside:** if you are beaten, you are beaten badly — you are flat-footed at your own line with a forward behind you and only your goalie left. It also needs your forwards to be back, because standing up assumes support behind you.
 - **Needs:** good reads, and a partner who slides with you rather than staying deep.
 
@@ -980,7 +980,7 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Carrying the puck in is worth about twice as much as dumping it in** — 0.53–0.62 shots per entry against 0.22–0.28, across Tulsky's full 330-game NHL sample. That two-to-one shape has replicated across other trackers.
+1. **Carrying the puck in is worth about twice as much as dumping it in** — 0.53–0.62 unblocked shot attempts per entry against 0.22–0.28, at 5-on-5, across Tulsky's full 330-game NHL sample. Those are attempts including misses, not shots on goal. That two-to-one shape has replicated across other trackers.
 2. **A failed carry costs far less than it feels** — about −0.08 net shots, cheaper than dumping and changing, with break-even near one-third confidence. Those come from Tulsky's Washington games alone and average every attempt, not the marginal ones.
 3. **You are onside while one skate has not completely crossed**, judged at the instant the puck completely crosses. Drag that trail skate and attack the line at full speed. **NHL and IIHF allow it airborne; USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 require contact — two books of the four.**
 4. **Tagging up on a delayed offside needs actual skate contact with the blue line, from every attacker — and in three books of the four, at the same instant.** The NHL (83.3(i)), the IIHF (83.3(I)) and USA Hockey (630(d)(2)) all require the clearing to be simultaneous; Hockey Canada (6.11(b)) requires every attacker to make skate contact but not to do it at once. Tag as one and you are legal in all four. Under USA Hockey Rule 630(d) there is no tag-up at all below Youth 15-Only, Girls 16U, High School and Adult — a restriction Hockey Canada does not impose.

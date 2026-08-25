@@ -889,7 +889,7 @@ What follows is only the part that changes what *you* do.
 ## What a Goalie Needs From Their Skaters
 
 ```facts
-Action: Clear the net front with technique — inside shoulder ahead of theirs, box out, and lift their stick
+Action: Clear the net front with technique — inside shoulder ahead of theirs, box out, and lift their stick up rather than sideways and below their bottom hand
 Never: Screen your own goalie, or back into the crease when you are being pushed
 Never: Block a shot from a screening position — get to the shooter and block from close, or get out of the lane entirely
 Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide before the pass is released unless the timed slide is your team's system
@@ -901,7 +901,7 @@ Never: Blame the goalie out loud; answer their calls instead, because one word b
 
 **This section is written for the other five players.** Most net-front goals against are not goalie errors. They are skater habits that make the goalie's job impossible.
 
-- **Clear the net front, with technique.** Get your inside shoulder ahead of theirs, box out, and lift their stick. Position *usually* beats strength — [Body Contact and Battles](../technique/body_contact_and_battles.md) covers that claim and flags it as coaching consensus rather than a measured law, with a large enough strength gap winning anyway — and a stick lift takes away the tip and the rebound without giving up your own body position — while repeated cross-checks to the back put your team down a man. Full detail in [Body Contact and Battles](../technique/body_contact_and_battles.md).
+- **Clear the net front, with technique.** Get your inside shoulder ahead of theirs, box out, and lift their stick — **up rather than sideways, and below their bottom hand**, because at or near the hands it is hooking under the IIHF and USA Hockey books. Position *usually* beats strength — [Body Contact and Battles](../technique/body_contact_and_battles.md) covers that claim and flags it as coaching consensus rather than a measured law, with a large enough strength gap winning anyway — and a stick lift takes away the tip and the rebound without giving up your own body position — while repeated cross-checks to the back put your team down a man. Full detail in [Body Contact and Battles](../technique/body_contact_and_battles.md).
 - **Do not screen your own goalie.** Standing in front of your own net with your back to the shooter, in your goalie's sightline, is one of the most common and least discussed causes of goals against. If you are the one blocking the view, move — and do not back into the crease when you're being pushed.
 - **Do not block a shot from a screening position.** Half-blocking a puck your goalie cannot see is *worse* than not blocking it, because you have just deflected an unseen puck. Get to the shooter and block from close, or get out of the lane entirely. There is no useful middle.
 - **On a 2-on-1, take the pass and give your goalie the shot** — and do not slide or dive before the pass is released, unless your team plays the timed slide as its method, in which case the slide is the plan. Say which half you are taking, and make sure your defenceman has the same answer you do.
