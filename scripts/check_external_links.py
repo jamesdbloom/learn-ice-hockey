@@ -25,6 +25,17 @@ Things learned the hard way on this corpus, all of which are implemented here:
     301s to an unrelated commercial site — status 200, content worthless.
   * **Be polite.** Bounded concurrency, one request at a time per host with a
     minimum interval, timeouts, one retry on transient failure.
+  * **Never seed the baseline with a naive markdown-link regex.** One that stops at
+    the first closing parenthesis — the ``]( ... )`` shape with a ``[^)]+`` body —
+    truncates any URL containing a closing parenthesis, and Wikipedia is full of
+    them — `Corsi_(statistic)`, `Icing_(ice_hockey)`. Nine such rows sat in the
+    baseline recorded as hard 404s. They were not dead: the truncated form 404s and
+    the real one returns 200, so the file manufactured half of its own recorded link
+    rot, and `check_external_links` then dutifully reported them as known-dead
+    forever — which is precisely the "trains everyone to ignore the report" failure
+    this script exists to avoid. `check_links.py`'s INLINE_LINK_RE handles balanced
+    parentheses correctly and is the extractor to reuse. Repaired and refetched
+    2026-08-25.
 
 Exit code is non-zero only for **new breakage** — something that was alive at
 baseline and is not any more. Recoveries, already-known-dead links and metadata
