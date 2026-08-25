@@ -165,7 +165,7 @@ const ppUmbrella = {
     { id: 'G', team: 'opp', pos: 'G', at: G_AT },
     // "the lone defenceman takes the apex" — "in the middle at or just inside the
     // blue line". Three feet inside, so it reads as inside the zone.
-    { id: 'A', pos: 'D', at: { at: 'centre-point', dx: 3 },   label: 'apex — highest' },
+    { id: 'A1', pos: 'D', at: { at: 'centre-point', dx: 3 },   label: 'apex — highest' },
     // "two forwards drop right down to the tops of the faceoff circles". Lower
     // than the apex is what makes it an arc rather than a line.
     { id: 'F', pos: 'F', at: 'top-of-circle:right',           label: 'flank, lower' },
@@ -293,13 +293,18 @@ const ppSpread = {
 
     // Five attackers. "two low, one on each side of the net just outside the
     // posts" — the posts are at y plus or minus 3.
-    { id: '1', pos: 'F', at: { at: 'goal-line', dx: -1, dy: 8 },   label: 'outside the post' },
-    { id: '2', pos: 'F', at: { at: 'goal-line', dx: -1, dy: -8 } },
-    { id: '3', pos: 'D', at: 'top-of-circle:right',                label: 'high and wide' },
-    { id: '4', pos: 'D', at: 'top-of-circle:left' },
+    // Labelled A1..A5, NOT 1..5. A bare numeral in a circle is IIHF 21.1's POSITION
+    // numbering — circle-1 is the goaltender, circle-5 the centre — so an IIHF-trained
+    // reader took the attacker at the post for a goalie. It also contradicted this
+    // diagram's own caption ("what is fixed is the spacing, not who plays which spot"),
+    // and collided with the pass-order badges, which are numerals too.
+    { id: 'A1', pos: 'F', at: { at: 'goal-line', dx: -1, dy: 8 },   label: 'outside the post' },
+    { id: 'A2', pos: 'F', at: { at: 'goal-line', dx: -1, dy: -8 } },
+    { id: 'A3', pos: 'D', at: 'top-of-circle:right',                label: 'high and wide' },
+    { id: 'A4', pos: 'D', at: 'top-of-circle:left' },
     // "one in the middle of the slot" — the slot runs from the goalmouth out to
     // the tops of the circles, so its middle is four feet up-ice of `slot`.
-    { id: '5', pos: 'F', at: { at: 'slot', dx: -4 },               label: 'middle of slot' },
+    { id: 'A5', pos: 'F', at: { at: 'slot', dx: -4 },              label: 'middle of slot' },
   ],
 
   routes: [
@@ -450,7 +455,7 @@ const pkDiamond = {
     { id: 'G', pos: 'G', at: G_AT },
     // "one player high at the apex" — up between the tops of the circles and the
     // blue line, close enough to reach the point player and take the lane away.
-    { id: 'A', pos: 'F', at: { at: 'centre-point', dx: 20 }, label: 'the apex' },
+    { id: 'A1', pos: 'F', at: { at: 'centre-point', dx: 20 }, label: 'the apex' },
     // "two in the middle on either side" — each takes a half-wall, and both
     // collapse onto the bumper, so they sit between the two.
     { id: 'M', pos: 'F', at: { at: 'faceoff-dot:right', dx: -2, dy: -8 }, label: 'wall and bumper' },
@@ -460,9 +465,12 @@ const pkDiamond = {
     ...PP_131_OPP,
   ],
 
-  // "pressure the point player, take away the middle shooting lane". Checking
-  // pressure is the key's own end mark — one bar, no arrowhead. It finishes short
-  // of the point player and inside him, on the lane, not on his body.
+  // "pressure the point player, take away the middle shooting lane". `pressure` draws
+  // TWO bars and no arrowhead — §21.1's SUDDEN STOP mark, which this corpus also uses
+  // for a pressure route because the one-bar checking-pressure mark of the other key is
+  // not offered here. It is NOT "the key's own end mark" for pressure: no published key
+  // has a two-bar pressure glyph. It finishes short of the point player and inside him,
+  // on the lane, not on his body.
   routes: [
     { from: { at: 'centre-point', dx: 20 }, to: { at: 'centre-point', dx: 7, dy: 3 }, kind: 'pressure' },
   ],
@@ -578,7 +586,8 @@ const pkNz13 = {
     'players: F1 ahead of the carrier, giving token checking pressure back toward him and ' +
     'finishing short of him; and behind F1 a line of three across the ice — a forward in the ' +
     'middle and a defenceman near each side — each backing up toward our blue line, drawn with ' +
-    'the tight wave that means backward skating. Our goaltender is in the crease at the right. ' +
+    'the row of separate overlapping arches that means backward skating. Our goaltender is in ' +
+    'the crease at the right. ' +
     'The other four power-play attackers are not drawn.',
 
   players: [

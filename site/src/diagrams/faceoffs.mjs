@@ -94,13 +94,37 @@ const D_INSIDE_W = { at: DOT, dx: GATE, dy: -HASH };          // (74.69, 5.03)
 // toward his own goal line (+x), and he is: 5.31 ft nearer it than the winger.
 //
 // OUTSIDE IS NOT DRAWN, AND CANNOT BE AT THIS SCALE. Outside is toward the boards
-// (+y), the winger's centre is already at y 38.97, and an own-team glyph is a
-// CIRCLE of radius 2.9 (shape carries team, not position — this player is a
-// defenceman but he is ours, so he is not a triangle; the note that used to stand
-// here reasoned from a 7.2 ft triangle and got the glyph wrong as well as the
-// number). The circle's ink reaches the dasher at y 39.2, so there is a quarter of
-// a foot of room outboard of the winger and nothing can be drawn in it. At y 37
-// this defenceman is in fact 1.97 ft INSIDE his winger. The caption still says
+// (+y), and at y 37 this defenceman is already 1.97 ft INSIDE his winger; there is no
+// room outboard of the winger to put him in.
+//
+// The numbers, since two previous notes here got them wrong. `pos: 'D'` draws a
+// TRIANGLE whatever team he is on — shape carries the position — whose apex reaches
+// R = 3.6 ft above the centroid, plus 0.4 ft of stroke now that the path carries
+// `stroke-linejoin="round"`. So his ink reaches y 41.0. The boards at x = 80 are NOT
+// the dasher: the corner arc starts at x = 72 (r = 28, centred (72, 14.5)), so the
+// boards centreline here is 14.5 + sqrt(28² − 8²) = 41.33 and its inner ink edge is
+// 41.08. He clears by 0.08 ft — which is all the room there is.
+//
+// ⚠️ HIS WINGER DOES NOT CLEAR, and that one is still open. A forward's circle at
+// y 38.97 carries 2.9 + 0.375 = 3.275 ft of ink, reaching 42.245 against an inner edge
+// of 42.12 on the arc at x = 74.69: an overlap of 0.125 ft, in this diagram and in the
+// clean-loss and tie-up diagrams beside it. Rounding the join does not touch a circle,
+// and lowering HASH is not available — it is derived from Rule 76.7, and a smaller
+// value puts a skate inside the faceoff circle. `check_geometry.py` cannot see it,
+// because it checks the coordinate table and not glyph ink.
+//
+// ⚠️ TWO EARLIER NOTES HERE WERE WRONG, in opposite ways. The first read "an own-team
+// glyph is a CIRCLE of radius 2.9 (shape carries team, not position — this player is a
+// defenceman but he is ours, so he is not a triangle)": the superseded axis. The second
+// corrected the axis and then miscomputed, claiming the apex reached 40.518 and
+// "clears the boards by 1.98 ft" — 40.518 adds the base's *x* half-width (3.1176) to a
+// *y* coordinate, and 1.98 measured against the dasher rather than the corner arc. It
+// certified a collision as clearance. Re-derive from the rendered path, not from prose:
+// the SVG says `<path d="M 80 -40.60 …">` for this glyph — that is the apex VERTEX, at
+// 37 + 3.6. The 41.0 above is that vertex plus the 0.4 of stroke the round join carries;
+// the path data does not change when the join does.
+//
+// The caption still says
 // "behind and outside" because that is faceoffs.md's own instruction about real
 // ice; the picture delivers the "behind" and cannot deliver the "outside", and the
 // `describe` below therefore states only what is drawn.
@@ -108,8 +132,10 @@ const D_WALL_D   = { at: DOT, dx: 11, dy: 15 };               // (80, 37)
 // "In the slot in front of the goalie, responsible for the net front and for
 // blocking a point shot." A foot and a half net-ward of the named slot position,
 // which is the compromise those two jobs describe. Further net-ward than this and
-// the defender triangle and the goaltender's circle touch, and the picture stops
-// being able to say there are two players there.
+// the defender's triangle and the goaltender's `G` touch, and the picture stops
+// being able to say there are two players there. (The goaltender has no enclosing
+// shape at all — both published keys draw a bare letter — so what collides with the
+// triangle is the lettering, not a circle, as this note used to say.)
 const D_SLOT_D   = { at: 'slot', dx: 1.5 };                   // (77.5, 0)
 const D_GOALIE   = 'crease';                                  // (86, 0)
 
@@ -193,6 +219,9 @@ const dzoneAlignment = {
 const dzoneCleanLoss = {
   id: 'faceoff-dzone-clean-loss',
   owner: 'content/systems/faceoffs.md',
+  // Not the contested case: the draw has already gone the other way. "The same
+  // defensive-zone alignment on a clean loss", with "the centre picks up the man who
+  // beat him" — the puck is theirs, which is why the wingers are releasing at all.
   half: true,
   width: 900,
 
@@ -208,7 +237,12 @@ const dzoneCleanLoss = {
     'defender stays glued to a body — so ask which one your team plays. ' +
     'Nobody else moves yet: the centre picks up the man who beat him, the slot defenceman holds ' +
     'the net front and does not chase the puck to the point, and the boards-side defenceman ' +
-    'takes the strong-side corner or half-wall.',
+    'takes the strong-side corner or half-wall. Three of their players are drawn and all three ' +
+    'are solid: the centre who won the draw, and the two point men your wingers are racing to. ' +
+    'Your five skaters are the open glyphs, and your goaltender is the bare G in the crease — ' +
+    'a goaltender is drawn as a bare letter here, so he is the one glyph the ' +
+    'open-and-solid rule does not reach. Same alignment as the diagram beside this one, with ' +
+    'the draw lost.',
 
   describe:
     'The same defensive-zone draw as the previous diagram, your own net at the right. Two ' +
@@ -217,9 +251,9 @@ const dzoneCleanLoss = {
     'rather than one after the other: the boards-side winger leaves the outer hash marks and ' +
     'goes straight up the ice to the near point; the inside winger leaves the inner hash marks ' +
     'and goes diagonally across to the far point on the other side of the ice. Each route runs ' +
-    'at the defenceman it is going to and stops a few feet short of him, ending in a short bar ' +
-    'across the line rather than an arrowhead — the checking-pressure mark, because the winger ' +
-    'is arriving to take that man rather than skating past him. The centre, the slot defenceman ' +
+    'at the defenceman it is going to and stops a few feet short of him, ending in two short bars ' +
+    'across the line rather than an arrowhead, because the winger is arriving to take that man ' +
+    'rather than skating past him. The centre, the slot defenceman ' +
     'and the boards-side defenceman are drawn where the draw left them.',
 
   players: [
@@ -265,8 +299,17 @@ const dzoneCleanLoss = {
   // men, 39° off bearing, short of the blue line and 9 ft outside their man
   // toward the boards. The picture passed the test and lost the lesson.
   //
-  // `pressure` is the answer the key already has: a plain line ending in one bar,
-  // "Checking pressure", which is the symbol for arriving and taking the man. It
+  // `pressure` is the answer: a plain line ending in TWO bars, which is §21.1's
+  // SUDDEN STOP mark, used here to mean arriving and taking the man. Be exact about
+  // what that is and is not — no published key has a two-bar checking-pressure mark.
+  // The Hockey Eastern Ontario sheet's "Checking pressure" is ONE bar, §21.1 has no
+  // pressure symbol at all, and this corpus does not offer the one-bar terminal
+  // (`rink.mjs`, above `suddenstop`). So a pressure route and a sudden stop draw the
+  // same glyph here and are told apart by where the route finishes — the one place
+  // these diagrams knowingly draw one mark for two things, disclosed to the reader in
+  // reading_ice_hockey_diagrams.md. ⚠️ This note read "one bar" while `pressure` drew
+  // two; the repair corrected the count and left "Checking pressure" standing beside
+  // it, which asserted a glyph no key publishes. It
   // satisfies (b) by construction — there is no arrowhead to place — and it lets
   // the route run true to the point man and stop short of him, which is what (a)
   // is protecting. The previous note rejected `pressure` by citing this diagram's

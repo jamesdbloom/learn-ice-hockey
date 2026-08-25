@@ -264,7 +264,13 @@ const wheel = {
 // really at 39.5. There the own-team circle's nominal edge (r 2.9) reached 42.4 and
 // cleared the dasher by a tenth of a foot, but the 0.75 stroke's 0.375 halo put
 // 0.28 ft of ink over the boards. The circle's ink ceiling is 39.2, not 39.6.
-const REV_D1 = { at: 'half-wall:right:far', dx: -4 };           // (-73, 38.5)
+// dy -0.3 pulls him 0.3 ft off the wall so his TRIANGLE clears the boards: the apex
+// reaches 3.6 ft from the centroid plus 0.4 of round-joined stroke = 4.0, and the
+// boards' inner ink edge at x -73 is 42.23, so at 38.5 he was 0.27 ft through it.
+// He is the only triangle in the corpus sitting on this datum with no dy. Moving
+// rink.json's half-wall instead was tried and reverted: it falsified 54 comments in
+// ten modules to fix this one glyph. See the ⚠️ in rink.json's half-wall note.
+const REV_D1 = { at: 'half-wall:right:far', dx: -4, dy: -0.3 };  // (-73, 38.2)
 // Where the reverse and the arriving partner converge — both below the goal line,
 // which is where the section says the puck is going ("a space you cannot see,
 // below your own goal line"). Kept nine feet apart so two arrowheads meeting in

@@ -160,8 +160,8 @@ const loosePuckWhoGoes = {
     'coverage your team plays; what survives every system is that one player goes, one supports ' +
     'and nobody else joins, because two players arriving at the same loose puck from the same ' +
     'angle leaves both committed and neither available. The other two skaters are not drawn, ' +
-    'because where they stand is not fixed, and the shapes name positions only because the ' +
-    'notation has no other way to draw a player — these three jobs are assigned by who is ' +
+    'because where they stand is not fixed, and the LETTERS name positions only because the ' +
+    'notation has no other way to label a player — these three jobs are assigned by who is ' +
     'closest, not by position. How you arrive is deliberately not shown: the arrow stops five ' +
     'feet short, because a puck race to the wall is the most dangerous moment in hockey, and how ' +
     'you arrive into one — angling, contact and protecting yourself against the boards — is a ' +
@@ -237,7 +237,8 @@ const unmarkedNotAvailable = {
     'still not available. The ' +
     'shaded band is the only line the puck can travel from the carrier to your blade, and a ' +
     'defenceman standing well off to the side has laid his stick flat across it — that is the ' +
-    'most common failure of the three, and it is the whole difference between ' +
+    'most common of the three failures that leave an open player unavailable, and it is ' +
+    'the whole difference between ' +
     'unmarked and available. This notation has no stick symbol, so the defenceman is drawn where ' +
     'his body is and the reach into the lane is not drawn at all. The fix is to look ' +
     'at the passing lane rather than at your defender and to move, often only three or four ' +

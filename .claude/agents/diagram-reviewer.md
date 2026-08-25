@@ -131,15 +131,72 @@ The pass that needs judgement rather than grep:
 
 ### 3 · Notation
 
-The notation is assembled from **two published symbol keys that disagree**, and
-neither is "the base" — saying so in either direction is false, and both directions
-have been asserted in this repository already. Five of the eight line symbols are
-common to both. `stop` takes the Hockey Eastern Ontario sheet's name for a glyph the
-IIHF key names differently. `pressure` exists only in the HEO sheet. `crossovers` is
-this corpus's own adaptation of the HEO glyph. **The player-glyph axis is IIHF
-§21.1's: shape carries TEAM.** Both URLs, both SHA-256s, the divergences and the
-departures are enumerated symbol by symbol in the header of
-`site/scripts/lib/rink.mjs`, and explained to the reader in "Reading the diagrams".
+**The notation is assembled from two published keys that disagree**, and the split is
+deliberate: **player glyphs** come from the Hockey Eastern Ontario *"International Drill
+Symbols"* sheet, **line symbols** principally from IIHF *International Symbols* §21.1.
+Neither key is "the base", and saying so in either direction is false — both directions
+have been asserted in this repository already. The divergences and this corpus's own
+adaptations are enumerated symbol by symbol in the header of `site/scripts/lib/rink.mjs`,
+which is the authority; the full specification belongs in
+[`project/content_style_guide.md`](../../project/content_style_guide.md) under
+"Diagrams and their notation". Check every diagram against it. The short form:
+
+- **Shape carries the POSITION. Fill carries the TEAM.** A **circle** is a **forward**, a
+  **triangle** a **defenceman**, a **goaltender** is a bare letter `G` with no enclosing
+  shape, and `X` is a pylon. **Open** (no fill) is the reader's own team; **solid** is the
+  opposition. The corpus is monochrome: colour carries nothing.
+  The source is `sources/heo_intl_drill_symbols.pdf`, "International Drill Symbols", on disk
+  and sha256-verified, whose rows read `● ○ Forward / Player` and `▲ △ Defender / Player`.
+  **A player's shape therefore does not change when play turns** — a winger is a circle
+  backchecking as well as attacking.
+  ⚠️ **This bullet has been wrong twice, and the second time it instructed a reviewer to
+  enforce the inversion.** It once read "shape carries the team on an offensive/defensive
+  axis — a circle is the team in possession". That is IIHF 21.1's axis, which is real, and
+  which this corpus does **not** follow: 21.1 carries the position in a *numeral* inside the
+  glyph. A reviewer acting on the old text would flag every correct diagram in the corpus and
+  "fix" **511 shaped glyphs back into the inversion** — 328 circles and 183 triangles across
+  112 diagrams, counted from `DIAGRAMS`. (The corpus draws 615 player glyphs in all; the other
+  104 are goaltenders, which carry no shape to invert. An earlier draft of this line said 501,
+  which is neither figure.) **Do not take this bullet on trust either — the
+  HEO sheet is one page, it is on disk, and it is image-only, so render it and look.**
+- **Inside the glyph:** the label is the vocabulary the surrounding section uses — `G`,
+  `F1 F2 F3`, `D1 D2`, `W`, `C` for a centre, `A1`/`A2` for attackers. Generic `F` and `D`
+  are fine where the diagram does not distinguish individuals. **Bare numerals `1`–`6` must
+  never label a player** — that is 21.1's position numbering and it collides. A bare circled
+  `A` is 21.1's **assistant** and a circled `C` is its **coach**; the `C`-for-centre collision
+  is known, recorded and the owner's open call.
+- **Backward skating is a row of separate overlapping flattened arches; the backward
+  crossover is a zigzag; a smooth wave is skate-and-stickhandle, and a puck carrier's route
+  is that wave (`carry`), never a plain line.** Distinguishing backward skating from carrying
+  by *wavelength* is the Hockey Eastern Ontario sheet's convention and is **wrong** here.
+- **`X` is a pylon, never a player.**
+
+⚠️ **The player axis was briefly flipped to §21.1's and then reverted, so treat old comments
+as hostile.** For a period the corpus took its player axis from IIHF §21.1 — *shape carries
+the team, offensive against defensive, with the position in a numeral inside the glyph*. That
+reading of §21.1 is **correct as a reading of §21.1**; it was reverted because it produced the
+defect that exposed it, **a player's shape changing between diagrams** — a winger drawn as a
+circle in the breakout picture and a triangle in the forecheck picture — and because §21.1's
+numerals would reinstate exactly the inference that *"F1, F2 and F3 are roles, not people"*
+exists to kill.
+
+So, concretely, when you meet a comment in `rink.mjs` or a diagram module:
+
+| Comment says | Verdict |
+|---|---|
+| *"a triangle, because he's a D"* | **Correct.** Shape carries the position. |
+| *"`pos:` is inert except for `'pylon'`"* | **Stale.** `pos:` decides the shape. |
+| *"shape carries the team"* / *"circle = in possession"* | **Stale**, in either direction. |
+| *"filled is your own team"* | **Stale and inverted.** Open is yours, solid theirs. |
+
+Acting on any of the stale three flips a glyph's meaning. **Five such comments were found in
+`rink.mjs` after round 34 had recorded four and declared them all corrected**, so do not
+assume a sweep caught them. Both keys, both SHA-256s and the divergences are recorded in the
+header of `site/scripts/lib/rink.mjs`; the IIHF key is on disk at
+`sources/iihf_coachdev_off_tactics.txt` and the HEO sheet at
+`sources/heo_intl_drill_symbols.pdf`. **Both are image-only** — `pdftotext` on the HEO sheet
+returns its title and nothing else, and the IIHF `.txt` loses every glyph — so render the page
+and look. That is how three glyphs stayed wrong through every check ever run.
 
 **This is the pass that has already failed once.** The first notation in this
 project was written from memory, honestly labelled as unverified, and then used
@@ -155,25 +212,28 @@ So:
 - **A symbol's meaning is only ever as good as its source.** If a diagram uses a
   symbol, the key must define it. If the key does not, that is a finding, and the
   fix is to find a key that does — not to pick something reasonable.
-- **Read the key's own wording.** It says "skating with control of the puck", not
-  "carry". Renaming a symbol is how a shared notation quietly becomes a private one.
+- **Read the key's own wording.** §21.1 says "SKATE AND STICKHANDLE", not "carry" —
+  and the phrase "skating with control of the puck" is the *other* key's, so quoting it
+  as §21.1's is itself the hybrid error. Renaming a symbol is how a shared notation
+  quietly becomes a private one.
 - One meaning per line style, across every diagram in the corpus. A dashed line
   that means "pass" in one diagram and "backward skating" in another is worse than
   no convention.
-- Two symbols in the key differ only by wavelength — backward skating is a tight
-  wave, skating with the puck a long one. Check they are still separable at the
-  size the diagram actually renders, not just in the source.
+- **Backward skating, backward crossover and skate-and-stickhandle are three
+  different glyphs** — loops, a zigzag and a smooth wave respectively — not one glyph
+  at three wavelengths. Check each is unmistakable at the size the diagram actually
+  renders, not just in the source. If two of them are separable only by measuring,
+  that is a finding.
 - Player identifiers match the section's vocabulary. If the prose says F1, F2, F3
   are roles set by order of arrival, the diagram must not imply they are people.
-- Own team and opposition are visually distinguishable **without relying on colour
-  alone** — the corpus renders in light and dark themes and some readers cannot
-  separate the two hues. **Shape carries TEAM**, per IIHF Level I §21.1: a circle is
-  the reader's own team, a triangle the opposition, and an X is a pylon and never a
-  player. `pos:` in a spec is inert except for `'pylon'` — it does not choose the
-  shape, and spec comments claiming it does are stale. This bullet previously
-  described the superseded shape-for-*position* axis, which is exactly the inversion
-  it exists to catch; a reviewer grading against it would have passed diagrams that
-  tell a reader to read our defencemen as forwards.
+- The two teams are visually distinguishable **without relying on colour alone** — the
+  corpus renders in light and dark themes and some readers cannot separate the two hues.
+  **The team is carried by the FILL: open is the reader's own team, solid the opposition.**
+  Shape is not available for it, because shape is already carrying the position — see the
+  first bullet of this section, which is the governing statement. **`pos:` decides the
+  shape**: `'F'` draws a circle, `'D'` a triangle, `'G'` a bare letter and `'pylon'` an `X`.
+  A spec comment justifying a `pos: 'D'` as *"a triangle, because he's a D"* is **correct**,
+  and a comment saying `pos:` is inert except for `'pylon'` is **stale**.
 
 ### 4 · Does it survive its context?
 

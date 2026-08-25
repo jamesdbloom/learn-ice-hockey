@@ -62,14 +62,15 @@ full.
 
 ### Priority 1 residue
 
-**⬜ `pressure` draws a glyph the IIHF key does not define — this one is a defect, not a gap.**
-`pressure` is `{ line: 'plain', end: 'bar1' }`, a line ending in **one** perpendicular bar, used
-**13 times** across `site/src/diagrams/*.mjs`. **§21.1 has no checking-pressure symbol at all**, and
-one bar is not one of its marks: `rink.mjs:421–423` records that **two** bars is §21.1's
-**SUDDEN STOP**, and that one bar *"HAS NO SUCH SYMBOL — the glyph is the left half of (B)'s
-SUDDEN STOP."* So a reader trained on the key sees either nothing they recognise or **half a sudden
-stop**, on a line that means a player closing to pressure an opponent. Same class of misread as the
-backward-skating error that took four attempts to fix.
+**✅ `pressure` no longer draws a glyph the IIHF key does not define.** It was
+`{ line: 'plain', end: 'bar1' }` — one perpendicular bar, which **§21.1 does not define at all**;
+two bars is its SUDDEN STOP, and one bar is the left half of that mark, so a reader trained on the
+key saw half a sudden stop on a line meaning a player closing to pressure. It is now
+`{ line: 'plain', end: 'bars2' }` across all **12** uses, and the one-bar terminal is not offered
+anywhere. The cost is disclosed rather than hidden: a pressure route and a sudden stop now draw the
+**same mark**, told apart by where the route finishes, and `reading_ice_hockey_diagrams.md` says so
+to the reader. ⚠️ **The repair of the comments describing this was itself half-applied twice** —
+see [`round_40_notation_axis_residue.md`](../reviews/round_40_notation_axis_residue.md).
 
 ⚠️ **This entry was wrong when first written**, and said one bar *was* SUDDEN STOP. It was salvaged
 from a retired note and carried over without checking it against `rink.mjs`, which states the
@@ -94,7 +95,15 @@ attackers (11). But `pos: 'coach'` and `pos: 'assistant'` appear **zero times** 
 *drill* key. ⚠️ **Relabelling 36 centres would break a documented corpus convention to resolve a
 collision that cannot currently occur.** Decide deliberately.
 
-**⬜ The unimplemented-symbols list is wrong three ways, and fixing it is the first step.** It reads
+**✅ The unimplemented-symbols list is resolved.** `stopmark` (§21.1's `//` STOP) and `backxover`
+(its sawtooth BACKWARD CROSSOVER) are both implemented and both appear in the legend, so the two
+genuine omissions are closed. **`bodycheck` was deliberately removed from the legend**: it is
+implemented but **no diagram in the corpus uses it**, and advertising a body-check glyph without
+saying who may legally deliver one is a contact instruction with no scope — body checking is
+prohibited in USA Hockey 12U and below, all girls' and women's play and all non-check adult play
+(604(a)), and at Hockey Canada U13 and below and in female hockey (7.3). `blocking`, `pivot`,
+`droppuck`, `stopmark` and `backxover` are also implemented and unused; they keep their rows
+because none is a contact glyph. The superseded entry read:
 *"six IIHF symbols remain unimplemented — pivot, dropping the puck, sudden stop, blocking/screening,
 body check, the cluster of pucks. None is currently used."* Checked against §21.1 and `rink.mjs`:
 
@@ -238,6 +247,153 @@ Things no current check can see.
 markdown download, the EPUB and the PDF — and `md_to_speech.py` strips it, so **the speech
 pipeline hides the defect rather than catching it.** Round 38 added a third instance
 (an unmatched `**` from a merge), caught by reading, not by a tool.
+
+**⬜ The diagram arrival invariant is stated three incompatible ways and enforced by nothing.**
+It is the rule that stops a route's arrowhead finishing on a player — *"an arrowhead says the
+skater keeps going through him"* — and it is a **safety** constraint, not a drawing one.
+`rink.mjs:582` states it as a bare 9 ft distance; `forechecking_systems.mjs:335` states a
+two-part scoped test (terminal tangent must clear the anchor by 2.9 ft **and** no arrowhead
+within 9 ft); `reading_ice_hockey_diagrams.md` gave the reader a third, purely directional
+form. `rink.mjs:583` claims *"this file states that rule itself"* — **it does not**; all four
+mentions are back-references to a rule never normatively stated anywhere. `check_geometry.py`
+reads only `rink.json` against the glossary and never opens a spec, so nothing enforces it.
+
+Measured across 112 specs and 173 routes with the renderer's own `loc()` and tangent maths:
+- **7 arrow-ended routes finish within 9 ft of an opponent.** Three are backchecks where the
+  opponent is *behind* the terminus, so the arrow points away — they fail the bare-distance
+  form and not its purpose, which is why the bare form is the wrong form.
+- **The ones that need fixing:** `faceoff-dzone-tie-up` ×2, whose own comment measures terminal
+  clearance *to the puck* and never to the opposing centre, leaving both arrows 2.32 and 2.68 ft
+  off that centre's anchor — inside the file's own 2.9 ft floor. That is exactly the miss an
+  unenforced invariant produces: the author checked the constraint against the wrong object.
+  And `forecheck-212`, `nz-1-2-2-containment` and `entry-wide`, where a skating arrowhead
+  finishes 7.8–8.6 ft from an opposing **goaltender** — the one target every book protects
+  unconditionally (USA Hockey 607(d), *"A goalkeeper is NOT 'fair game'"*; IIHF 42.1).
+- Five `pressure` routes fail form (a) and are fine: they terminate in bars, so form (b)
+  protects them. Form (a) as written is over-broad — a pressure route that clears its target
+  by 2.9 ft is no longer pressure on that target.
+
+⚠️ **Two naming drifts survive outside this commit, plus one open count.**
+`breakouts.mjs:230` describes `carry` as *"skating with control of the puck"* — the Hockey
+Eastern Ontario name, where the legend row, the notation caption and
+`reading_ice_hockey_diagrams.md` all now use §21.1's *"skate and stickhandle"*. Not false, since
+both keys draw the mark identically, but it is the last place using the other key's vocabulary.
+**✅ The shared-symbol count is settled and no longer contested.** `rink.mjs` said five line
+symbols are common to both keys and the document told the reader four. Both pages were rendered at
+300 dpi and compared: the drop pass is the same construction in both — wave, drop marker, straight
+line, arrowhead — differing only in the wave's length. **Five is right.** The document now says
+five and names the drop pass. The reason it had said four is the seventh half-application: the
+corpus's own `droppuck` draws the marker and line **without** the leading wave, so it follows
+neither key, and that was missing from `rink.mjs`'s CORPUS ADAPTATIONS list. Listing the drop pass
+among the agreed marks would have obliged the document to disclose that — so the miscount and the
+missing adaptation were **one defect**, and correcting the count alone would have made things
+worse. Both are now fixed, and the departure is disclosed to the reader.
+
+⚠️ **One stale glyph description survives outside this commit.**
+`neutral_zone_systems.mjs:815` calls the backward-skating symbol *"a tight wave"* — the Hockey
+Eastern Ontario glyph, not the row of overlapping arches the corpus now draws. The identical
+error in `special_teams.mjs`'s `pk-nz-1-3` **describe** was reader-facing (alt text, EPUB, PDF
+and speech all carry `describe`) and was caught at the gate; this one is a comment, so it
+misleads the next editor rather than a reader. Sweep it with the routes below.
+
+**The work:** state the invariant once, normatively, in the two-part scoped form; add a
+`check_diagram_arrivals` step that fails the build on (b) and warns on (a) for arrow-ended
+routes only; then fix the five routes above. ⚠️ The three-way restatement is the defect
+generator — fixing the routes without fixing the statement leaves the generator running.
+
+**⬜ Johnston & Walter: "the one-bar mark is the only divergence" is probably false, and only
+the book can settle it.** `reading_ice_hockey_diagrams.md` says nothing else in the document comes
+from that book. But the project's own working record of a 166-page read of it says backward skating
+there is a **wave** — which is the HEO glyph, and which in *this* corpus means *skate and
+stickhandle* — and that the book uses no player shapes at all, only bare role letters. If that
+record is right, there are three divergences and the document claims one. **It cannot be checked
+from disk**: the copy is a DRM'd fixed-layout Kindle edition with no text layer, and Tier 4b's page
+capture is the route. Until then the safe wording is *"the only divergence among the four symbols
+listed here"*. → `source-verifier`, with the page images.
+
+**⬜ The claims in the notation document that carry no number and name no source have never been
+checked.** The cold read that found ten majors there checked counts, exclusivity claims and
+attributions, and said plainly that it did **not** check the document's own reasoning — sentences
+like *"a picket that does not say which way you are going is no use in a play diagram"* and *"the
+two marks have to be told apart by where the route finishes rather than by their shape"*. Those read
+as too obvious to source, which the style guide names as exactly the shape of a claim nobody has
+checked.
+
+**Why they survive, and how to attack them.** Every defect caught in round 40 was a claim that
+**names a source** — a count, an attribution, an exclusivity claim. Those have an external referent,
+so they can be checked, and sixteen of them were wrong. The unsourced reasoning has no referent, so
+nothing in the pipeline can reach it: *"a picket that does not say which way you are going is no use
+in a play diagram"*, *"a numeral would say F1 is the centre"*, *"an arrowhead reads as continuing
+past the point the line ends at"*. They survive not because they are hidden but because they read as
+**reasons for decisions already made** — and a reviewer checking a decision against a source never
+questions the reason attached to it.
+
+**The brief, therefore, is an inversion:** for each such sentence, ask what the diagrams would look
+like if the opposite were true, and whether anyone has ever tested it. Most will hold. The ones that
+do not will be conventions the corpus has been enforcing corpus-wide on the strength of a sentence
+with no source — which is the same shape as the one-bar glyph, and that one reached 13 diagrams.
+**Start with the arrowhead reason:** it is load-bearing for nine retargeted routes, and it is the
+justification behind the arrival invariant recorded above.
+
+⚠️ This entry is also a worked example of the thing it describes. It was first written summarising
+what the cold read said it had *not* checked, and the framing above — which is the useful half — was
+added only after it had been asserted, in a message to the gate, that it was already here. **The
+claim came before the work.** That is the same failure as the sixteen, in the project's own notes.
+
+**⬜ A defenceman's triangle cannot hold a two-character id at the corpus's text size, and the
+fix costs legibility.** A circle offers 4.59 ft of interior; a triangle offers **1.11 ft of
+half-width at the cap-top** against the 1.685 ft `D1` needs, so the sloping edges cut the letters —
+42 spec entries (`D1` 22, `D2` 17, `A1`/`A3`/`A4` 1 each), 44 rendered instances, because several
+diagrams appear on two pages. Round 40 made the text fit by dropping two-character triangle ids to
+`fs 2.15` at `dy 1.32`, derived rather than chosen. **The cost is not engineered away:** that renders
+`D1` at ~6.8 px on a 375 px phone against a forward's ~10 px, and the corpus already treats ~7.5 px
+as strained. The alternatives are the owner's: enlarge the triangle (which worsens the boards
+clearance the same round just fixed), or move to single-character ids (which breaks the `D1`/`D2`
+vocabulary the sections use). **Decide deliberately.**
+
+⚠️ Related and unfixed: **130 two-character ids sit on circles**, and the widest — `RW`, `LW`, `W2`
+— measure 4.94 ft against 4.59 ft of usable interior, so they touch their own stroke. Milder than
+the triangle case (touching, not cut) and left alone rather than shrinking 130 more glyphs, but it
+is the same constraint and it should be settled with the same decision.
+
+**⬜ The glyph halo erases faceoff hash marks and pinches the centre dot, in pictures that teach
+off both.** Round 40 gave every player glyph a ~0.6 ft white ring so that an open glyph crossing a
+solid one is not erased by it — the corpus is monochrome, so there is no hue to fall back on. It
+works, and the long rink lines survive it (worst case a faceoff circle 21% → 28% hidden, a blue line
+30% → 36%). **The wall was repaired** by repainting the boards above the halos and below the glyph
+bodies. Two losses were not repaired, because the remedy means re-emitting marks the rink layer
+owns, and that is an owner call:
+
+- **13 faceoff hash marks go from partly visible to fully hidden** — `faceoff-dzone-alignment`,
+  `-clean-loss`, `-tie-up`, `faceoff-goalie-pulled`, `faceoff-ozone-alignment`,
+  `breakout-centre-swing`, `breakout-five-roles`, `support-in-a-line`, and `breakout-rim` loses the
+  top of a mark that was fully visible before. `faceoff-dzone-alignment`'s caption teaches off them:
+  *"the boards-side winger stands at the outer pair of hash marks"*, and those are the marks now
+  gone. The other pair on the same circle survives, so the picture still shows hash marks.
+- **The red faceoff dot is pinched to a sliver in all five faceoff diagrams** — 2% → 55% hidden,
+  squeezed between the two centres' halos, in a picture whose caption says *"The centre is in the
+  dot"*. Three others (`dump-and-the-trapezoid`, `dump-soft-area`, `nz-regroup-d-to-d`) take a dot
+  from ~64% to ~97%, effectively erasing it.
+
+**The remedy is ordering, not geometry, and it costs nothing:** the boards, hash marks and faceoff
+dots are painted before the glyph layer, so re-emitting the other two after the halos and under the
+glyph bodies — exactly as the boards now are — recovers both at no cost to the separation. Reverting
+the halo instead is the wrong trade: it would restore three coordinate pairs' worth of overlap and
+leave the class open, since which glyph lands on top depends on spec ordering.
+
+**⬜ Label halos cut the boards in four diagrams, and the obvious fix trades one defect for
+another.** Player labels carry their own white halo (`paint-order="stroke" stroke-width="0.9"`) and
+are emitted after the glyph layer, so they paint over the repainted wall: `pp-1-3-1` 1.26 ft,
+`dz-support-structure` 1.34 ft, `breakout-up` 1.01 ft (five breaks over ~3.6 ft of corner arc),
+`breakout-wheel` 0.84 ft. **Pre-existing, not caused by the halo work** — but it is the same
+reader-visible defect the boards repaint was meant to close, and worst in dark theme where the page
+outside the rink and the boards ink are near-identical colours.
+
+⚠️ **Do not "fix" it by emitting `boardsOutline()` a third time after the labels** — that puts the
+wall line through the label text, which `rink.mjs` already warns about at the placer (*"text running
+over the dasher is unreadable"*). These four are placement failures: the placer is supposed to keep
+labels out of the boards band and did not. Fix the placement, or drop the halo only where a label
+overlaps the band.
 
 **⬜ MA26 — a mis-splice that reads smoothly would still pass everything.** Round 37's CR15
 was caught only because the join lost a space. A block landing in the wrong paragraph that

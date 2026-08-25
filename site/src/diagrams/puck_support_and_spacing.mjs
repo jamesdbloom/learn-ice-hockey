@@ -88,9 +88,12 @@ const supportInALine = {
 
   players: [
     { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier' },
-    { id: 'A',  pos: 'F', at: WALL_MID,                           label: 'option one' },
+    { id: 'A1',  pos: 'F', at: WALL_MID,                           label: 'option one' },
     { id: 'B',  pos: 'F', at: WALL_HIGH,                          label: 'option two' },
-    // Open TRIANGLE = opposition; the id is just a role letter. Not 'X': the rendered
+    // SOLID CIRCLE = an opposition forward: `pos: 'F'` gives the circle (shape is the
+    // position) and `team: 'opp'` gives the solid fill (fill is the team). The id is
+    // just a role letter. ⚠️ This read "Open TRIANGLE = opposition", which inverted
+    // both channels at once. Not 'X': the rendered
     // legend and reading_ice_hockey_diagrams.md both say in terms that an X is a
     // pylon — a practice cone — and never a player, and X-meaning-opposition is one
     // of the symbols this corpus rewrote its notation specifically to escape.
@@ -141,7 +144,7 @@ const supportTriangle = {
     // "Now pull one of those three off the line, into the middle." This is the
     // near option from the line diagram, moved; the far one stays put so the
     // reader can see which player changed.
-    { id: 'A',  pos: 'F', at: { at: 'faceoff-dot:right', dx: 2, dy: -5 }, label: 'into the middle' },
+    { id: 'A1',  pos: 'F', at: { at: 'faceoff-dot:right', dx: 2, dy: -5 }, label: 'into the middle' },
     { id: 'B',  pos: 'F', at: WALL_HIGH,                                label: 'still on the wall' },
     // Unlabelled on purpose. He is boxed in by the carrier, the route and the
     // boards, and every legal slot for a label of his ended up nearer another

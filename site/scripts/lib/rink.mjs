@@ -40,6 +40,32 @@ function uid(seed) {
 /** Rink y -> SVG y. The single point of contact between the two systems. */
 const py = (y) => -y;
 
+/**
+ * The boards outline again, with no fill, to be painted OVER the player halos.
+ *
+ * Each player glyph carries a ~0.6 ft white ring so that an open glyph crossing a solid
+ * one is not erased by it — the corpus is monochrome, so there is no hue to fall back
+ * on. That ring also punches through anything already painted beneath it, and the wall
+ * is the one line where that is not survivable: a rendered pass found nine glyphs across
+ * six diagrams cutting a white gap in an unbroken board line, which in dark theme reads
+ * as the ice leaking out through the wall. In `breakout-reverse` it also breached the
+ * invariant `rink.json` documents in its own `half-wall` note — the halo takes a
+ * defenceman's apex to 4.6 ft where the clearance was derived for 4.0.
+ * Re-painting the stroke above the halos and below the glyph bodies costs one element
+ * per diagram and restores the wall without weakening the separation.
+ * ⚠️ The hash marks and the faceoff dots take the same damage and are NOT repaired here
+ * — 13 hash marks go from partly visible to fully hidden, and the red centre dot is
+ * pinched to a sliver in every faceoff diagram, in pictures whose captions teach off
+ * both. The same remedy would fix them; it is recorded in OPEN_ITEMS as an owner call
+ * because it means re-emitting marks the rink layer owns.
+ */
+function boardsOutline() {
+  const S = RINK.sheet;
+  return `<rect x="${-S.length / 2}" y="${py(S.width / 2)}" width="${S.length}" ` +
+         `height="${S.width}" rx="${S.corner_radius}" fill="none" ` +
+         `stroke="${PALETTE.boards}" stroke-width="0.6"/>`;
+}
+
 const PALETTE = {
   ice: '#ffffff',
   boards: '#1b1c1e',
@@ -397,10 +423,25 @@ export function rinkSvg(opts = {}) {
  *       sha256 9b195d0325f74ccc2601b20ef009c77e44abd19c70dd09980babed21f5edbe01
  *       750,071 bytes, retrieved 2026-07-30.
  *
- * NEITHER KEY IS "THE BASE", and saying so in either direction is false. Five of
- * the eight line symbols are common to both. `stop` takes (A)'s name for a glyph
- * (B) names differently. `pressure` exists only in (A). `crossovers` is this
- * corpus's adaptation of (A)'s glyph. The player axis is (B)'s. An earlier version
+ * NEITHER KEY IS "THE BASE", and saying so in either direction is false.
+ * DO NOT SUMMARISE THE SPLIT AS A COUNT — the legend's row list is edited, and a
+ * count goes stale silently while a name does not. Read the rows in `legendSvg`.
+ * `stop` takes **(B)'s** name — its legend row reads "Sudden stop", which is §21.1's
+ * term — for a glyph **(A)** calls "Stopping"; the mark itself is the same in both,
+ * and only the name diverges. `pressure` is a symbol only (A) publishes, and this
+ * file no longer draws (A)'s one-bar version of it or gives it a legend row: a
+ * pressure route ends in the same two bars as a sudden stop and is told apart by
+ * where it finishes. `crossovers` is this corpus's adaptation of (A)'s glyph.
+ * ⚠️ THIS SENTENCE WAS TRUE AT THE COMMIT BEFORE THIS ONE AND IS THE FIFTH
+ * HALF-APPLIED REPAIR IN IT. It read "Five of the eight line symbols are common to
+ * both. `stop` takes (A)'s name for a glyph (B) names differently." The legend went
+ * from eight rows to twelve, backward skating was pulled out of the agreed set, and
+ * the `stop` row was relabelled from (A)'s "Stopping" to (B)'s "Sudden stop" — so the
+ * count was wrong twice over and the attribution was exactly REVERSED, in the file
+ * `.claude/agents/diagram-reviewer.md` calls "the authority". THE PLAYER AXIS IS (A)'s — shape is the
+ * position, per (A)'s `● ○ Forward / Player` and `▲ △ Defender / Player` rows.
+ * ⚠️ This sentence read "The player axis is (B)'s" while the file rendered (A)'s, and
+ * it is the SIXTH stale axis comment found here. An earlier version
  * of this header said (A) was what the file renders, and the reader-facing prose
  * said the base was (B); both were written honestly and both were wrong, which is
  * why the split is now enumerated symbol by symbol rather than summarised.
@@ -422,20 +463,66 @@ export function rinkSvg(opts = {}) {
  *   line + one bar       (A) "Checking pressure". (B) HAS NO SUCH SYMBOL — and
  *                        the glyph is the left half of (B)'s SUDDEN STOP.
  *                        (B) gives BLOCKING (SCREENING) = line ending in `(` and
- *                        BODY CHECK = line ending in `)`.
+ *                        BODY CHECK = line ending in an S — one lobe bulging
+ *                        forward, the next back, meeting on the line's end.
+ *                        ⚠️ This line said BODY CHECK was `)`, the mirror of the
+ *                        screen. It is not, and the file drew the mirror for two
+ *                        revisions on the strength of this sentence. Traced off
+ *                        page 32 at 1200 dpi: the screen is ONE arc, the check is
+ *                        TWO opposed ones. Guessing symmetry is how three of the
+ *                        four earlier attempts at this glyph went wrong.
  *   crossovers           (A) "Lateral crossovers", a bare picket of vertical bars.
  *                        (B) "BACKWARD CROSSOVER", a sawtooth zigzag.
  *
- * They agree on: forward skating, backward skating, pivot, skate-and-stickhandle
- * (= "skating with control of the puck"), shoot, pass, pylon = X, and the drop
- * pass. Those are the symbols this file leans on hardest, which is the only reason
- * the two keys can be combined at all without a reader meeting two contradictory
- * meanings for one glyph.
+ * THEY AGREE ON: forward skating; skate-and-stickhandle (which (A) calls "skating
+ * with control of the puck"); shoot; pass; pylon = X; and the drop pass. Those are
+ * the symbols this file leans on hardest, which is the only reason the two keys can
+ * be combined at all without a reader meeting two contradictory meanings for one
+ * glyph.
+ * ⚠️ NOT backward skating — (A) draws a tight wave, (B) a row of separate flattened
+ * arches, and this line used to claim they agreed. That claim and the reason this
+ * file now draws arches cannot both be true.
+ * ⚠️ A previous edit spliced that warning INTO the middle of the list above, which
+ * left `(= "skating with control of the puck")` dangling with no clause to attach to
+ * and made the list unreadable. The warning now follows the list instead of
+ * interrupting it.
+ * ⚠️ NOTE A DISCREPANCY, unresolved: counting line symbols only, this list makes FIVE
+ * shared — forward skating, skate-and-stickhandle, shoot, pass, drop pass — while
+ * `reading_ice_hockey_diagrams.md` tells the reader "Four line symbols", omitting the
+ * drop pass. One of the two is wrong and neither has been checked against a rendered
+ * page for this purpose. Do not "fix" either by copying the other.
  *
  * CORPUS ADAPTATIONS — things this file draws that NEITHER key sanctions. They
  * are conventions, not transcriptions, and must be labelled as such wherever the
  * notation is explained to a reader:
- *   - fill for team (filled own, open opposition). (A) has no opposition symbol.
+ *   - fill for team: **OPEN own, SOLID opposition**. (A) prints a solid and an open
+ *     variant of each player row without saying what the pair means, and has no
+ *     opposition symbol at all, so both the reading and its direction are this
+ *     corpus's. ⚠️ This line read "filled own, open opposition" — inverted, and the
+ *     SEVENTH stale axis comment in this file. The code is the authority:
+ *     `const fill = opp ? ink : '#fff'`, so the opposition takes the ink.
+ *   - THE PUCK ITSELF. A small solid dot, `r = 1.1`, drawn by most specs — count them
+ *     with the renderer's own guard (`DIAGRAMS.filter(d => d.puck).length`) rather than
+ *     trusting a number here, because a number here goes stale. NEITHER key
+ *     publishes a single-puck mark: (A) has only "Cluster of pucks", a scatter of dots,
+ *     and (B) has none at all. It is a third the diameter of a player glyph and the same
+ *     ink as the drop-puck marker, so it must stay small enough not to read as either.
+ *     ⚠️ This was absent from this list, from the legend and from every reader-facing
+ *     layer while the great majority of the diagrams drew it — the style guide's own test is "if a diagram uses
+ *     a symbol, the key must define it", and for the puck no key did and neither did we.
+ *   - `droppuck` drawn as a PLAIN line with the tick-and-dot and an arrowhead. BOTH
+ *     keys begin the mark with a WAVE — the carrier skating with the puck up to the
+ *     point of the drop, which is the part that says whose puck it was — and this file
+ *     draws the drop without the carry. (A)'s row is transcribed above as "wave, a
+ *     marker, then a straight line and arrowhead"; `droppuck` is `line: 'plain'`.
+ *     ⚠️ This entry was MISSING, and its absence is why `reading_ice_hockey_diagrams.md`
+ *     said four line symbols are shared rather than five: listing the drop pass among
+ *     the agreed marks would have obliged the document to add that this file does not
+ *     draw the agreed version. The missing adaptation and the miscount are one defect.
+ *   - `pressure` drawn as TWO bars. (A)'s checking-pressure mark is one bar and (B) has
+ *     no pressure symbol at all, so a pressure route here shares the sudden-stop mark
+ *     and is told apart by where it finishes. Disclosed to the reader in
+ *     "Reading the diagrams"; listed here because this is the list that governs.
  *   - `crossovers` drawn as bars ON a line WITH an arrowhead. (A)'s glyph is a
  *     free-standing picket with no line through it and no arrowhead. A picket
  *     with no direction is useless in a play diagram, so this file adds both —
@@ -457,7 +544,9 @@ export function rinkSvg(opts = {}) {
  *
  * The key, as published:
  *
- *   (line symbols as (A) draws them; five of the eight are identical in (B))
+ *   (the ten line symbols as (A) draws them. Which are identical in (B) is
+ *    enumerated under WHERE (A) AND (B) DIVERGE below — do not restate it as a
+ *    count here, because that is what went stale.)
  *
  *   Coach                              circled C
  *   Goaltender                         G
@@ -478,31 +567,115 @@ export function rinkSvg(opts = {}) {
  *   Drop pass                          wave, a marker, then a straight line and arrowhead
  *   Checking pressure                  straight line ending in one bar
  *
- * TEAMS — **this corpus follows key (B), IIHF 21.1: SHAPE CARRIES TEAM.** A circle
- * is the reader's own team and a triangle the opposition; `playSvg` emits nothing
- * else. Key (A) uses shape for *position* instead, and this header went on
- * specifying (A)'s axis after the code had moved to (B)'s — two contradictory
- * specifications of the notation in one file, with the wrong one at the top. That
- * is exactly how a reader ends up being told to read our defencemen as forwards.
+ * PLAYERS — **shape is the POSITION, fill is the TEAM.** Read literally off key (A),
+ * "International Drill Symbols", now on disk at `sources/heo_intl_drill_symbols.pdf`:
  *
- * Before you edit a spec: `pos` is now **inert** except for `'pylon'`. A player
- * marked `pos: 'D'` renders as a circle if they are on the reader's team and a
- * triangle if they are not. Comments in the diagram modules justifying a `pos: 'D'`
- * as "a triangle, because…" are stale, and acting on one flips that player's team.
+ *     ● ○   Forward / Player          ▲ △   Defender / Player
+ *     G     Goaltender (a bare letter, no enclosing shape)     X   Pylon
  *
- * Implemented below: skate, carry, pass, shot, backward, stop, pressure,
- * crossovers. Pivoting and drop pass are in the key and are **not** implemented;
- * add them from the key, not from memory.
+ * This corpus assigns the pair: **own team OPEN, opposition SOLID**, monochrome, so
+ * the encoding survives greyscale print, photocopying and colour blindness. The key
+ * itself shows both variants of each row and does not say which team is which.
+ *
+ * ⚠️ THIS BLOCK HAS NOW BEEN WRONG THREE TIMES, AND THE LAST TWO WERE THE SAME AXIS
+ * FLIPPED BACK AND FORTH. It once said shape carried own-team-versus-opposition
+ * (wrong). It was then changed to shape-carries-POSSESSION on a reading of IIHF 21.1
+ * — whose columns genuinely do read `TEAMS / OFFENSIVE / DEFENSIVE`, with the
+ * position carried by a NUMERAL, 1 goaltender through 6 left wing. **That reading of
+ * 21.1 is correct. It is also the only one of four published keys that works that
+ * way**, and it produced the defect that exposed it: a player's shape changed
+ * between diagrams, so a winger was a circle on the breakout and a triangle on the
+ * forecheck. Shape follows the player now, not the situation.
+ *
+ * **Do not take any third-hand description of this on trust, this one included.**
+ * Both keys are on disk and BOTH ARE IMAGE-ONLY — `pdftotext` on the HEO sheet
+ * returns its title and nothing else, and the IIHF .txt loses every glyph. Render
+ * the page. That is how three glyphs stayed wrong through every check ever run.
+ *
+ * Before you edit a spec: **`pos` DECIDES THE SHAPE.** `'F'` draws a circle, `'D'` a
+ * triangle, `'G'` a bare letter and `'pylon'` an X. A comment in a diagram module
+ * justifying a `pos: 'D'` as "a triangle, because he's a D" is CORRECT.
+ * ⚠️ This paragraph said the exact opposite — "`pos` is inert except for `'pylon'`;
+ * shape follows possession, never position" — for as long as the possession axis
+ * lasted, and it survived the reversal because it sits twenty lines below the block
+ * that describes the axis and reads as a separate instruction. An editor going
+ * top-to-bottom met the correct paragraph first and this one last.
+ *
+ * Implemented below: skate, carry, pass, shot, backward, backxover, stop, stopmark,
+ * suddenstop, pivot, droppuck, bodycheck, blocking, pressure, crossovers — the whole
+ * of (B)'s line key plus (A)'s lateral crossovers. Add anything further from the
+ * rendered page, not from memory and not from this comment.
  */
+
+// Stroke weight as a fraction of arch HEIGHT for the backward-skating glyph. Shared by
+// the legend and the diagrams, which render at different scales and so cannot share an
+// absolute stroke width — only a proportion. Page 32 measures 0.18; 0.26 is the lightest
+// that still renders at diagram scale on a full-rink picture.
+const ARCH_WEIGHT = 0.26;
 
 const NOTATION = {
   skate:      { line: 'plain', end: 'arrow' },
-  carry:      { line: 'wave',  end: 'arrow', lambda: 9.0, amp: 1.25 },
+  // lambda short enough that a route shows several humps: at 9.0 a legend-length
+  // sample showed one, and one hump does not read as a wave.
+  carry:      { line: 'wave',  end: 'arrow', lambda: 5.0, amp: 1.05 },
   pass:       { line: 'plain', end: 'arrow', dash: '2.4 1.8' },
   shot:       { line: 'double', end: 'arrow' },
-  backward:   { line: 'wave',  end: 'arrow', lambda: 2.6, amp: 1.0 },
+  // Backward skating is a run of separate C-CUTS in the key — see archPath. Not a
+  // wave (that is skate-and-stickhandle) and not a connected coil.
+  // No arrowhead: §21.1 draws both backward marks as a bare run of the pattern.
+  // ⚠️ `stroke` is derived, not chosen, and it exists for this glyph alone. Whether the
+  // overlapping arches stay open depends on stroke weight relative to arch HEIGHT:
+  //     page 32   14px / 77px = 0.18
+  //     legend    1.45 / 5.2  = 0.28   (the legend was already thinning its own stroke)
+  //     diagrams  0.70 / 1.0  = 0.70   <- 4x the page, so every arch closed into a ring
+  // Round 34 recorded "the stroke was too heavy for the arch radius, closing the
+  // overlaps into a blob" as FIXED. **It was fixed on the legend side only**, so the key
+  // showed open scallops while all eleven diagram routes drew a chain of near-closed
+  // rings — the legend and the diagrams disagreeing about one symbol, which is the
+  // defect this workstream exists to remove.
+  // The fix is ONE ratio used by both, because the legend and a diagram render at
+  // different scales and so cannot share an absolute width — only a proportion.
+  backward:   { line: 'loops', end: 'none', lambda: 1.75, amp: 1.0, stroke: 1.0 * ARCH_WEIGHT },
+  // The key's BACKWARD CROSSOVER: a zigzag, and a symbol this corpus never had.
+  backxover:  { line: 'zigzag', end: 'none', lambda: 2.6, amp: 1.15 },
   stop:       { line: 'plain', end: 'bars2' },
-  pressure:   { line: 'plain', end: 'bar1' },
+  // `pressure` was a bar-ended line taken from the Hockey Eastern Ontario handout,
+  // where it means "checking pressure". IIHF 21.1 has no pressure symbol — and a
+  // bar-ended line IS its SUDDEN STOP, so the old glyph read as a player stopping
+  // where the diagram meant a player closing. None of its twelve uses carries a
+  // label, so the glyph was the only signal and the misread was unguarded.
+  //
+  // It is now forward skating, which is what the player is actually doing; the
+  // destination and the caption carry the intent. The body-check hook was the other
+  // candidate and is *wrong*, not merely imprecise: pressure and angling are legal
+  // in every division, a body check is not, and eleven of the twelve uses are
+  // penalty-kill or forecheck routes that a non-check reader also has to read.
+  // TERMINATING, and that is the load-bearing part. An arrowhead that finishes
+  // within 9 ft of an opponent reads as "skate through him" — this file states that
+  // rule itself, and forechecking_systems.mjs:432 repeats it: "A bar says arrive and
+  // contain; an arrowhead says keep going through." Retargeting this to forward
+  // skating pointed nine routes' arrowheads at a player, five of them within 2 ft.
+  // Two bars terminating a line is IIHF 21.1's SUDDEN STOP, which is a mark the key
+  // actually contains and which means arrive-and-stop rather than continue-through.
+  pressure:   { line: 'plain', end: 'bars2' },
+  // The key's own symbols for the three things a bar-, hook- or curve-ended line
+  // means there. None is used by a diagram yet; they are here so that the next
+  // diagram that needs one takes it from the key rather than inventing it.
+  // §21.1's SUDDEN STOP is a line ending in TWO perpendicular bars — read off the
+  // rendered page at 1200 dpi, not off the extracted text, which loses every glyph.
+  // A ONE-bar terminal is the Hockey Eastern Ontario checking-pressure mark and is
+  // in no IIHF symbol, so it is not offered here at all.
+  suddenstop: { line: 'plain', end: 'bars2' },
+  bodycheck:  { line: 'plain', end: 'hook' },
+  blocking:   { line: 'plain', end: 'curve' },
+  // §21.1's STOP is a bare pair of slashes with NO line — a different mark from
+  // SUDDEN STOP, which is the line ending in two bars above. The corpus had only
+  // the second and called it "stopping", which is the Hockey Eastern Ontario name.
+  stopmark:   { line: 'none',  end: 'slashes' },
+  // PIVOT: a curve that turns back on itself, arrowhead reversed.
+  pivot:      { line: 'pivot', end: 'arrow' },
+  // DROPPING THE PUCK: a route with a tick partway along, then on to an arrowhead.
+  droppuck:   { line: 'plain', end: 'arrow', dropTick: true },
   crossovers: { line: 'plain', end: 'arrow', bars: true },
 };
 
@@ -528,7 +701,7 @@ function arrowHead(x, y, ux, uy, L = 3.15, W = 1.5) {
  * Amplitude tapers to nothing at each end, so the route starts cleanly on the
  * player and finishes straight enough for the arrowhead to point where it means to.
  */
-function wavePath(f, t, bow, lambda, amp) {
+function wavePath(f, t, bow, lambda, amp, flat) {
   const dx = t.x - f.x, dy = t.y - f.y, len = Math.hypot(dx, dy) || 1;
   const mx = (f.x + t.x) / 2 + (-dy / len) * bow;
   const my = (f.y + t.y) / 2 + (dx / len) * bow;
@@ -552,9 +725,142 @@ function wavePath(f, t, bow, lambda, amp) {
     const nx = -(b.y - a.y) / tl, ny = (b.x - a.x) / tl;
     // Zero for the last TAIL feet, not merely approaching zero: the arrowhead has
     // to sit on a straight run of line, or it meets the wave at an angle.
-    const TAIL = 2.6;
-    const taper = Math.max(0, Math.min(1, sl / 1.2, (total - sl - TAIL) / 1.5));
+    // Taper is a FRACTION of the route, not an absolute distance. Fixed distances
+    // ate almost all of a short route: on the legend's 10 ft sample the pattern
+    // survived only in the first third and the reader learned the wrong glyph from
+    // the one picture that defines it.
+    const TAIL = Math.min(2.6, total * 0.16);
+    // In flat mode the leading ramp is dropped (the key draws uniform amplitude) but a
+    // short trailing run is kept: without it the arrowhead lands on the last crest and
+    // reads as a malformed head rather than a head on a line.
+    const taper = flat
+      // Only a token straight run. The head now begins where the route ends, so it can
+      // no longer land on curvature — and on page 32 the head's base sits directly on
+      // the wave's descending limb with NO straight line between them (base x=926, last
+      // wave pixel x=925). An earlier revision pushed this to 30% chasing a complaint
+      // about the tip, which moved the glyph further from the key AND did not fix it.
+      ? Math.max(0, Math.min(1, (total - sl - total * 0.12) / (total * 0.08)))
+      : Math.max(0, Math.min(1, sl / (total * 0.10 + 0.3), (total - sl - TAIL) / (total * 0.10 + 0.4)));
     const off = amp * taper * Math.sin((sl / lambda) * 2 * Math.PI);
+    return `${(c.x + nx * off).toFixed(2)} ${py(c.y + ny * off).toFixed(2)}`;
+  });
+  return 'M ' + out.join(' L ');
+}
+
+/**
+ * A row of overlapping arches along the route — IIHF 21.1 "BACKWARD SKATING".
+ *
+ * NOT a wave, NOT a coil, and NOT a row of sideways C's. Read off the published page:
+ * the mark is a run of **semicircular arches standing on the line**, each starting
+ * before the last has finished, so they cross near the baseline and read as a chain.
+ *
+ * This glyph has now been wrong four times in this file — a tight wave (which is the
+ * key's SKATE AND STICKHANDLE, so an IIHF-trained reader took every backward route for
+ * a puck carrier), a prolate cycloid, sideways C-cuts, and sparse C-cuts. Each was
+ * closer than the last and none was the mark. **If you change it, compare it against
+ * `sources/iihf_coachdev_off_tactics.pdf` page 32 rendered at 600 dpi or better — the
+ * extracted .txt contains none of the glyphs, only their names.**
+ *
+ * Each arch is its own subpath so the run never becomes one continuous curve, and the
+ * pitch is deliberately shorter than the arch width so consecutive arches overlap.
+ */
+// Each arch sweeps PAST a semicircle, so its legs turn inward and dip below the line;
+// adjacent legs then cross low, near the baseline, which is what the key shows. True
+// semicircles overlapped by a quarter put the crossings high and made spikes between
+// the arches instead of scallops.
+// The key's humps are WIDER THAN TALL — a flattened arch, not a circular one. Drawn as
+// an elliptical half-arc: rx is the half-span, ry the height. Circular arcs at this size
+// came out either as spikes (semicircles overlapped a quarter) or as near-closed rings
+// (a 232-degree sweep). The ellipse gives steep legs that cross cleanly near the line.
+const ARCH_ASPECT = 1.30;    // rx / ry
+const ARCH_PITCH  = 0.70;    // pitch as a fraction of span; < 1 makes the legs cross
+
+function archPath(f, t, bow, lambda, amp, flat) {
+  const dx = t.x - f.x, dy = t.y - f.y, len = Math.hypot(dx, dy) || 1;
+  const mx = (f.x + t.x) / 2 + (-dy / len) * bow;
+  const my = (f.y + t.y) / 2 + (dx / len) * bow;
+  const at = (k) => ({
+    x: (1 - k) ** 2 * f.x + 2 * (1 - k) * k * mx + k * k * t.x,
+    y: (1 - k) ** 2 * f.y + 2 * (1 - k) * k * my + k * k * t.y,
+  });
+  const N = 320, pts = [];
+  let prev = at(0), acc = 0;
+  for (let i = 0; i <= N; i++) {
+    const c = at(i / N);
+    acc += Math.hypot(c.x - prev.x, c.y - prev.y);
+    prev = c;
+    pts.push({ c, s: acc });
+  }
+  const total = acc || 1;
+  const atS = (target) => {
+    for (let i = 1; i < pts.length; i++) if (pts[i].s >= target) return pts[i].c;
+    return pts[pts.length - 1].c;
+  };
+  const ry = amp, rx = amp * ARCH_ASPECT;
+  const width = rx * 2;                // span of one flattened arch
+  const pitch = width * ARCH_PITCH;    // overlap, so consecutive legs cross
+  const inset = flat ? 0 : Math.min(0.8, total * 0.05);
+  const usable = total - inset * 2;
+  const n = Math.max(2, Math.round((usable - width) / pitch) + 1);
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const s0 = inset + i * pitch;
+    const s1 = Math.min(total - inset, s0 + width);
+    const a = atS(s0), b = atS(s1);
+    // Feet a touch below the route, so adjacent legs cross under the line rather than
+    // meeting on it — that dip is what makes the run read as a chain and not as humps.
+    // ⚠️ This was gated on `flat`, so the LEGEND's arches dipped and the DIAGRAMS' sat
+    // on the line: the same symbol drawn two ways by one function. Ungated.
+    const dip = ry * 0.22;
+    // Consecutive humps face OPPOSITE ways: a backward skater cuts a C on one edge and
+    // then the other, and the key draws it that way — which is what makes the run
+    // interlock instead of repeating. Alternating the sweep flag flips the bulge.
+    // (Two comments here used to say the opposite — that every hump sits the same side
+    // on sweep flag 1, and that the large-arc flag is 1. The code alternates the sweep
+    // and emits a large-arc flag of 0. Page 32 alternates too: four arcs below the line
+    // and three above, offset by half a period.)
+    const sweep = i % 2 === 0 ? 1 : 0;
+    out.push(`M ${a.x.toFixed(2)} ${py(a.y - dip).toFixed(2)} ` +
+             `A ${rx.toFixed(2)} ${ry.toFixed(2)} 0 0 ${sweep} ${b.x.toFixed(2)} ${py(b.y - dip).toFixed(2)}`);
+  }
+  return out.join(' ');
+}
+
+/**
+ * A sharp zigzag along the route — IIHF 21.1 "BACKWARD CROSSOVER".
+ *
+ * A separate symbol in the key, and one this corpus never had: `crossovers` was an
+ * adaptation of the HEO handout's cross-tick glyph, which the key uses for something
+ * else. A triangle wave rather than a sine, so it cannot be mistaken at render size
+ * for either the smooth wave or the loops.
+ */
+function zigzagPath(f, t, bow, lambda, amp, flat) {
+  const dx = t.x - f.x, dy = t.y - f.y, len = Math.hypot(dx, dy) || 1;
+  const mx = (f.x + t.x) / 2 + (-dy / len) * bow;
+  const my = (f.y + t.y) / 2 + (dx / len) * bow;
+  const at = (k) => ({
+    x: (1 - k) ** 2 * f.x + 2 * (1 - k) * k * mx + k * k * t.x,
+    y: (1 - k) ** 2 * f.y + 2 * (1 - k) * k * my + k * k * t.y,
+  });
+  const N = Math.max(60, Math.round(len * 10));
+  const pts = [];
+  let prev = at(0), s = 0;
+  for (let i = 0; i <= N; i++) {
+    const c = at(i / N);
+    s += Math.hypot(c.x - prev.x, c.y - prev.y);
+    prev = c;
+    pts.push({ k: i / N, c, s });
+  }
+  const total = s || 1;
+  // triangle wave in [-1,1] with period lambda
+  const tri = (u) => { const x = ((u % 1) + 1) % 1; return x < 0.5 ? 4 * x - 1 : 3 - 4 * x; };
+  const out = pts.map(({ k, c, s: sl }) => {
+    const a = at(Math.max(0, k - 0.01)), b = at(Math.min(1, k + 0.01));
+    const tl = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+    const nx = -(b.y - a.y) / tl, ny = (b.x - a.x) / tl;
+    const TAIL = Math.min(1.2, total * 0.07);
+    const taper = flat ? 1 : Math.max(0, Math.min(1, sl / (total * 0.07 + 0.3), (total - sl - TAIL) / (total * 0.07 + 0.3)));
+    const off = amp * taper * tri(sl / lambda);
     return `${(c.x + nx * off).toFixed(2)} ${py(c.y + ny * off).toFixed(2)}`;
   });
   return 'M ' + out.join(' L ');
@@ -582,7 +888,11 @@ function ticks(f, t, bow = 0) {
     x: (1 - k) ** 2 * f.x + 2 * (1 - k) * k * mx + k * k * t.x,
     y: (1 - k) ** 2 * f.y + 2 * (1 - k) * k * my + k * k * t.y,
   });
-  const n = Math.max(2, Math.min(7, Math.round(len / 6)));
+  // Minimum FOUR bars, not two. At two this glyph is a line with two crossbars, which
+  // is exactly IIHF 21.1's SUDDEN STOP — and both of the corpus's crossover routes are
+  // short enough to hit the old minimum, so the only lateral-crossover pictures in the
+  // corpus were drawing a different key's symbol. A picket reads as a picket.
+  const n = Math.max(4, Math.min(8, Math.round(len / 4)));
   const out = [];
   for (let i = 1; i <= n; i++) {
     const k = i / (n + 1);
@@ -607,6 +917,69 @@ function ticks(f, t, bow = 0) {
  */
 export function playSvg(spec, opts = {}) {
   const ns = uid(spec.id ?? spec.caption ?? JSON.stringify([spec.players, spec.routes]));
+  // WHAT THIS DEPARTS FROM, AND WHY. The IIHF key puts a NUMERAL inside the glyph
+  // to name the position: 1 goaltender, 2 right defense, 3 left defense, 4 right
+  // wing, 5 centre, 6 left wing. This corpus cannot use them. Its most emphatic
+  // section states that F1, F2 and F3 are roles set by order of arrival and *not*
+  // people — "F1 is not 'the centre'" — and it spends fifty lines killing exactly
+  // the inference an IIHF numeral would reinstate. Writing 5 where the section says
+  // F1 would author a position assignment the prose refuses to make, which the
+  // corpus forbids outright. So the glyph carries the section's own label instead.
+  // That is a departure, it is deliberate, and it is documented for the reader in
+  // "Reading the diagrams" rather than left for them to trip over.
+  //
+  // SHAPE carries the POSITION. FILL carries the TEAM.
+  //
+  //   circle    a forward        open (no fill)   the reader's own team
+  //   triangle  a defenceman     solid            the opposition
+  //   G         goaltender, a bare letter with no enclosing shape
+  //   X         a pylon — never a player
+  //
+  // SOURCE: "International Drill Symbols", the Hockey Eastern Ontario NCCP
+  // Development 1 handout — `sources/heo_intl_drill_symbols.pdf`, on disk and
+  // sha256-verified. Its rows read literally `● ○  Forward / Player` and
+  // `▲ △  Defender / Player`, so shape is the position and the filled/open pair in
+  // each row is the team.
+  //
+  // ⚠️ THIS AXIS HAS NOW BEEN WRONG TWICE, IN OPPOSITE DIRECTIONS, AND THE SECOND
+  // TIME WAS MINE. It was briefly changed to shape-carries-POSSESSION on a reading
+  // of IIHF 21.1, whose columns really do read TEAMS / OFFENSIVE / DEFENSIVE with
+  // circles in one and triangles in the other and the POSITION carried by a numeral
+  // (1 goaltender … 6 left wing). That reading of 21.1 is correct — and 21.1 is the
+  // only one of four published keys that does it that way. It also produced the
+  // defect that exposed it: **a player's shape changed between diagrams**, so a
+  // winger was a circle in the breakout picture and a triangle in the forecheck
+  // picture. Shape now follows the player, not the situation.
+  //
+  // ⚠️ AND THE STALE COMMENTS OUTLIVE THE CODE. A comment block describing the
+  // possession axis stood immediately above this one — inside this same function —
+  // for five revisions after the renderer stopped using it, and it was the FIFTH such
+  // comment found in this file. Round 34 recorded four and said "all corrected"; it
+  // was wrong, and so was the sweep that followed it. A future editor acting on any
+  // of them flips every glyph in the corpus. If you find a sixth, delete it rather
+  // than adding a warning beside it — a warning is what let this one survive.
+  //
+  // The other keys, for the record: USA Hockey's 12U Practice Plan Manual legend
+  // defines NO player symbols at all; Weiss Tech Hockey draws both teams as circles
+  // and carries the team in the fill. Of the keys that encode position in shape,
+  // the one this corpus cites does it this way.
+  //
+  // `spec.attacking` no longer exists and nothing should reintroduce it: it was
+  // added only to choose circle vs triangle, and possession is carried by the puck
+  // glyph and the caption.
+  // TEXT SIZE COMPENSATION FOR FULL-SHEET DIAGRAMS.
+  // A full rink holds twice the ice in the same column, so at any width every
+  // dimension in it renders at half the size of a half-rink picture — 35 of the 109
+  // diagrams, measured at 4.5-5.5 px per foot against the 73 at 9.0. `global.css`
+  // already refuses to shrink the GEOMETRY to fit, and it is right to: a glyph's
+  // 2.9 ft radius is a real dimension, quoted by the arrival rule that decides
+  // whether a route may carry an arrowhead.
+  //
+  // **A label's font size asserts nothing about the ice.** So the type scales and
+  // the geometry does not. Player letters are deliberately NOT scaled — they sit
+  // inside a glyph and would overflow it.
+  const TXT = (spec.half ?? opts.half ?? true) ? 1 : 1.7;
+
   const base = rinkSvg({ half: opts.half ?? true, width: opts.width ?? 820, ns,
                          footer: opts.footer ?? spec.footer });
   const P = PALETTE;
@@ -631,12 +1004,19 @@ export function playSvg(spec, opts = {}) {
   // where its corners are. Drawn beneath everything else, and never with a stroke
   // heavy enough to be mistaken for a painted line on the ice — a reader must not
   // come away thinking the slot is marked out on a real rink. It is not.
+  // Zone labels are drawn at their polygon's centroid, independently of the label
+  // placer — so the placer never knew they were there. At 3.2 ft they rarely clashed;
+  // scaled up for full-sheet diagrams they collide, e.g. "owns the pass" landing on
+  // "the passing lane". Their boxes are collected here and reserved below.
+  const zoneReserve = [];
   const zones = (spec.zones ?? []).map((z) => {
     const pts = z.points.map(loc).map((q) => `${q.x.toFixed(2)},${py(q.y).toFixed(2)}`).join(' ');
     const label = z.label
       ? (() => {
           const c = z.points.map(loc).reduce((a, q) => ({ x: a.x + q.x / z.points.length, y: a.y + q.y / z.points.length }), { x: 0, y: 0 });
-          return `<text x="${c.x.toFixed(2)}" y="${py(c.y).toFixed(2)}" font-size="3.2" ` +
+          const zs = 3.2 * TXT;
+          zoneReserve.push({ x: c.x, y: c.y, w: z.label.length * zs * 0.56, h: zs * 1.4 });
+          return `<text x="${c.x.toFixed(2)}" y="${py(c.y).toFixed(2)}" font-size="${zs.toFixed(2)}" ` +
                  `text-anchor="middle" fill="${P.home}" font-weight="700" ` +
                  `paint-order="stroke" stroke="#fff" stroke-width="1.1">${esc(z.label)}</text>`;
         })()
@@ -670,7 +1050,10 @@ export function playSvg(spec, opts = {}) {
     }
 
     const q = `M ${f.x} ${py(f.y)} Q ${mx} ${py(my)} ${t.x} ${py(t.y)}`;
-    const d = n.line === 'wave' ? wavePath(f, t, bow, n.lambda, n.amp) : q;
+    const d = n.line === 'wave'   ? wavePath(f, t, bow, n.lambda, n.amp)
+            : n.line === 'loops'  ? archPath(f, t, bow, n.lambda, n.amp)
+            : n.line === 'zigzag' ? zigzagPath(f, t, bow, n.lambda, n.amp)
+            : q;
 
     // The terminal tangent, so end marks sit square across the route.
     const tanx = t.x - mx, tany = t.y - my, tanl = Math.hypot(tanx, tany) || 1;
@@ -701,24 +1084,81 @@ export function playSvg(spec, opts = {}) {
       // residual slope of the wave. The head came out visibly askew from the line
       // it terminates. Draw it by hand along the *base curve's* terminal tangent,
       // which is the direction the route actually finishes in.
-      const useMarker = n.end === 'arrow' && n.line !== 'wave';
+      const CURVED = n.line === 'wave' || n.line === 'loops' || n.line === 'zigzag';
+      const useMarker = n.end === 'arrow' && !CURVED;
       line =
-        `<path d="${d}" fill="none" stroke="${P.boards}" stroke-width="0.7"` +
+        `<path d="${d}" fill="none" stroke="${P.boards}" stroke-width="${n.stroke ?? 0.7}"` +
         (n.dash ? ` stroke-dasharray="${n.dash}"` : '') +
         (useMarker ? ` marker-end="url(#ah-${ns})"` : '') +
         `/>`;
-      if (n.end === 'arrow' && n.line === 'wave') line += arrowHead(t.x, t.y, ux, uy);
+      if (n.end === 'arrow' && CURVED) line += arrowHead(t.x, t.y, ux, uy);
     }
 
-    // Stopping ends in two short bars, checking pressure in one. Both are the
+    // Stopping and checking pressure BOTH end in two short bars here — the one-bar
+    // terminal is not offered, so the two are told apart by where the route finishes.
+    // (This read "checking pressure in one", describing a glyph `pressure` has not
+    // drawn since it became `end: 'bars2'`.) Both are the
     // key's own end marks; neither is an arrowhead.
+    // The mark scales to the route it terminates. A fixed 4 ft bar pair on a 4.7 ft
+    // route is nearly as wide as the route is long and renders as a blob — five of the
+    // twelve `pressure` routes are under 9 ft, and lengthening THEM is not an option:
+    // it would carry the arrival closer to an opponent, which is what the 9 ft rule
+    // above exists to prevent. So the glyph gives way, not the geometry. The floor
+    // keeps two bars distinguishable from one at the shortest route in the corpus.
+    const barHalf = Math.max(1.2, Math.min(2, len * 0.30));
     const bar = (back) =>
-      `<line x1="${(t.x - ux * back + px_ * 2).toFixed(2)}" y1="${py(t.y - uy * back + py_ * 2).toFixed(2)}" ` +
-      `x2="${(t.x - ux * back - px_ * 2).toFixed(2)}" y2="${py(t.y - uy * back - py_ * 2).toFixed(2)}" ` +
+      `<line x1="${(t.x - ux * back + px_ * barHalf).toFixed(2)}" y1="${py(t.y - uy * back + py_ * barHalf).toFixed(2)}" ` +
+      `x2="${(t.x - ux * back - px_ * barHalf).toFixed(2)}" y2="${py(t.y - uy * back - py_ * barHalf).toFixed(2)}" ` +
       `stroke="${P.boards}" stroke-width="0.8"/>`;
+    // The key ends a line three ways besides an arrowhead: a perpendicular bar
+    // (sudden stop), a hook (body check) and an open curve (blocking/screening).
+    // Route-local frame: `e` points along travel, `n` across it. Both marks are built
+    // in it so they read the same whichever way the route runs.
+    const frame = () => {
+      const ux2 = (t.x - f.x), uy2 = (t.y - f.y), L2 = Math.hypot(ux2, uy2) || 1;
+      const ex = ux2 / L2, ey = uy2 / L2;
+      // `at` returns an absolute "x y" already flipped for SVG, `a` along travel and
+      // `b` across it, so the two marks below can be written as pure geometry.
+      return (a, b) => `${(t.x + ex * a - ey * b).toFixed(2)} ${py(t.y + ey * a + ex * b).toFixed(2)}`;
+    };
+    // BODY CHECK — an S standing on the route's end, NOT a hook. Both lobes meet at the
+    // end point; the leading one bulges along travel and its tip flicks back, the
+    // trailing one mirrors it. Geometry taken from page 32 measured at 1200 dpi (see the
+    // legend's own note); a single hook was the fourth wrong guess at this mark.
+    const endHook = () => {
+      const P = frame(), a = 2.6, bulge = 2.3, tip = 0.8;
+      return `<path d="M ${P(-tip, -a)} C ${P(bulge, -a * 0.75)} ${P(bulge, -a * 0.2)} ${P(0, 0)} ` +
+             `C ${P(-bulge, a * 0.2)} ${P(-bulge, a * 0.75)} ${P(tip, a)}" ` +
+             `fill="none" stroke="${PALETTE.boards}" stroke-width="0.7"/>`;
+    };
+    // BLOCKING (SCREENING) — one arc, '(' : belly ON the route's end, both tips forward
+    // of it. This previously had the tips on the end and the belly forward, which draws
+    // the arc the other way round from both the key and this file's own legend.
+    const endCurve = () => {
+      const P = frame(), a = 2.6, fwd = 1.3;
+      return `<path d="M ${P(fwd, -a)} Q ${P(-fwd, 0)} ${P(fwd, a)}" ` +
+             `fill="none" stroke="${PALETTE.boards}" stroke-width="0.7"/>`;
+    };
+    // ⚠️ FAIL LOUDLY on a glyph the legend defines but this renderer cannot draw.
+    // `stopmark` (a bare `//`), `pivot` and `droppuck` are all in the legend and none is
+    // implemented here: `line: 'none'` and `line: 'pivot'` fall through to the plain
+    // quadratic, `end: 'slashes'` has no case below, and `dropTick` is honoured only
+    // inside legendSvg. So a diagram using any of them silently drew FORWARD SKATING —
+    // a line with an arrowhead, which in this notation means "keep going through".
+    // This file already throws at build time on a missing `attacking`, for the same
+    // reason: a wrong diagram that renders is worse than a build that stops.
+    if (n.line === 'none' || n.line === 'pivot' || n.end === 'slashes' || n.dropTick) {
+      throw new Error(
+        `diagram "${spec.id ?? '(unnamed)'}": route kind "${r.kind}" is defined in the legend ` +
+        `but not implemented in playSvg — it would draw as forward skating, which means ` +
+        `something else. Implement it from IIHF 21.1 page 32, or do not use it.`);
+    }
+
     const barEnd =
-      n.end === 'bars2' ? bar(0) + bar(1.4) :
-      n.end === 'bar1'  ? bar(0) : '';
+      n.end === 'bars2' ? bar(0) + bar(Math.max(0.9, Math.min(1.4, len * 0.22))) :
+      n.end === 'bar1'  ? bar(0) :
+      n.end === 'hook'  ? endHook() :
+      n.end === 'curve' ? endCurve() : '';
     // A numbered badge at the route's start. Four simultaneous arrows read as one
     // instant, and a reader cannot tell whether a pass beat a forechecker or the
     // forechecker beat the pass. Ordering the routes is the only way a still
@@ -741,84 +1181,141 @@ export function playSvg(spec, opts = {}) {
           // A rounded tag, not a ring. An open ring is what the key's opposition
           // forward looks like, and in greyscale the badges read as two more
           // opposing players standing in the slot.
-          return `<rect x="${(bx - 2.1).toFixed(2)}" y="${(py(by) - 1.9).toFixed(2)}" ` +
-            `width="4.2" height="3.8" rx="1" fill="#fff" stroke="${P.boards}" stroke-width="0.4"/>` +
-            `<text x="${bx.toFixed(2)}" y="${(py(by) + 0.85).toFixed(2)}" font-size="2.6" ` +
+          return `<rect x="${(bx - 2.1 * TXT).toFixed(2)}" y="${(py(by) - 1.9 * TXT).toFixed(2)}" ` +
+            `width="${(4.2 * TXT).toFixed(2)}" height="${(3.8 * TXT).toFixed(2)}" rx="1" fill="#fff" stroke="${P.boards}" stroke-width="0.4"/>` +
+            `<text x="${bx.toFixed(2)}" y="${(py(by) + 0.85 * TXT).toFixed(2)}" font-size="${(2.6 * TXT).toFixed(2)}" ` +
             `font-weight="700" text-anchor="middle" fill="${P.boards}">${i + 1}</text>`;
         })()
       : '';
     return line + barEnd + (n.bars ? ticks(f, t, bow) : '') + badge;
   }).join('\n    ');
 
-  // Player glyphs. Shape carries TEAM — see the block below and the file header., G a
-  // goaltender, X a **pylon** — which is why opposition players are no longer drawn
-  // as X. Fill carries the team (filled own, open opposition); that part is this
-  // corpus's convention on top of the key, since the key has no opposition symbol.
-  // Shape and fill together mean the picture never depends on hue.
-  // Player glyphs — IIHF 21.1 "International Symbols", section 21.1 of the IIHF
-  // Coach Development Program Level I manual.
-  //
-  // **Shape carries TEAM, not position.** That is the IIHF key's axis and it is the
-  // single largest divergence from the Hockey Eastern Ontario handout this project
-  // started from, which used shape for position. Getting this wrong means a reader
-  // trained on IIHF material reads every defenceman in the corpus as "the defending
-  // team" — an inversion, in diagrams whose whole subject is who is where.
-  //
-  //   circle    the reader's own team
-  //   triangle  the opposition
-  //   G         goaltender (the key gives G as a standalone symbol)
-  //   X         pylon — never a player. It means a cone, and nothing else.
-  //
-  // WHAT THIS DEPARTS FROM, AND WHY. The IIHF key puts a NUMERAL inside the glyph
-  // to name the position: 1 goaltender, 2 right defense, 3 left defense, 4 right
-  // wing, 5 centre, 6 left wing. This corpus cannot use them. Its most emphatic
-  // section states that F1, F2 and F3 are roles set by order of arrival and *not*
-  // people — "F1 is not 'the centre'" — and it spends fifty lines killing exactly
-  // the inference an IIHF numeral would reinstate. Writing 5 where the section says
-  // F1 would author a position assignment the prose refuses to make, which the
-  // corpus forbids outright. So the glyph carries the section's own label instead.
-  // That is a departure, it is deliberate, and it is documented for the reader in
-  // "Reading the diagrams" rather than left for them to trip over.
-  //
-  // The IIHF key maps offensive/defensive; this corpus maps own/opposition, because
-  // every diagram here is drawn from the reader's team's point of view and a reader
-  // learning to play needs to know which glyph is them. Same axis, stated frame.
-  const glyphs = (spec.players ?? []).map((pl) => {
+  const parts = (spec.players ?? []).map((pl) => {
     const p = loc(pl.at);
     const opp = pl.team === 'opp';
-    const col = opp ? P.away : P.home;
+    // MONOCHROME, and deliberately so. Own team = OPEN (no fill, dark outline, dark
+    // lettering); opposition = SOLID (dark fill, white lettering). That is the HEO
+    // sheet's own `● ○` / `▲ △` pairing, and it is the only encoding that survives
+    // greyscale print, photocopying and red-green colour blindness.
+    const ink = PALETTE.boards;
+    const fill = opp ? ink : '#fff';
+    // A WHITE HALO UNDER EVERY PLAYER OUTLINE. The corpus is monochrome, so an OPEN
+    // glyph crossing a SOLID one used to be erased by it — same ink, no hue to fall
+    // back on — and a reader lost a player. Three such pairs were found in the rendered
+    // corpus; the halo fixes the class rather than the three, because which glyph is on
+    // top depends on the order players happen to appear in a spec.
+    // It is emitted for EVERY glyph, not just open ones, for that reason.
+    // Cost, stated because it is real: ~0.6 ft of white ring outside each outline, which
+    // occludes a little more of the rink lines beneath than the glyph's own fill already
+    // did. `site-reviewer` should confirm the faceoff circles and goal lines still read.
+    const halo = (s) => s;
+    const text = opp ? '#fff' : ink;
     const r = 2.9;
-    let shape, dy = 1.05, fs = 3;
+    let shape, haloStr = '', dy = 1.05, fs = 3;
     if (pl.pos === 'pylon') {
-      shape = `<g stroke="${col}" stroke-width="0.9" stroke-linecap="round">` +
+      shape = `<g stroke="${ink}" stroke-width="0.9" stroke-linecap="round">` +
               `<line x1="${p.x - 2}" y1="${py(p.y) - 2}" x2="${p.x + 2}" y2="${py(p.y) + 2}"/>` +
               `<line x1="${p.x - 2}" y1="${py(p.y) + 2}" x2="${p.x + 2}" y2="${py(p.y) - 2}"/></g>`;
-    } else if (opp) {
+    } else if (pl.pos === 'G') {
+      // GOALTENDER: a bare letter, no enclosing shape. Both keys draw it that way —
+      // HEO "G  Goaltender", IIHF 21.1's standalone symbol block likewise — and any
+      // shape would collide: a circle says forward, a triangle says defender.
+      // No team variant, and none is needed: both keys offer a bare `G` — though §21.1
+      // also draws a goaltender as the numeral 1 inside a team glyph, the convention
+      // this corpus does not use — and which
+      // net a goaltender is standing in settles whose they are. Outlining the letter
+      // to encode the team was tried and blobbed at this size.
+      // NO EARLY RETURN. Fall through to the shared `return { halo, body }` like every
+      // other branch — see the ⚠️ on the join below for what an early return cost here.
+      // No halo: a bare letter has no outline to protect, and a white ring round it
+      // would read as a badge.
+      shape = `<text x="${p.x}" y="${(py(p.y) + 1.6).toFixed(2)}" font-size="4.6" ` +
+              `font-weight="700" text-anchor="middle" fill="${ink}">${esc(pl.id ?? 'G')}</text>`;
+      return { halo: '', body: shape };
+    } else if (pl.pos === 'D') {
+      // DEFENCE: triangle. SHAPE CARRIES POSITION — HEO "International Drill
+      // Symbols": `▲ △ Defender / Player`.
       const R = 3.6, hh = R * 1.5, half = R * 0.866;   // centroid on the position
-      shape = `<path d="M ${p.x} ${(py(p.y) - R).toFixed(2)} ` +
-              `L ${(p.x + half).toFixed(2)} ${(py(p.y) + hh - R).toFixed(2)} ` +
-              `L ${(p.x - half).toFixed(2)} ${(py(p.y) + hh - R).toFixed(2)} Z" ` +
-              `fill="#fff" stroke="${col}" stroke-width="0.8"/>`;
-      dy = 1.0; fs = 2.6;
+      const tri = `M ${p.x} ${(py(p.y) - R).toFixed(2)} ` +
+                  `L ${(p.x + half).toFixed(2)} ${(py(p.y) + hh - R).toFixed(2)} ` +
+                  `L ${(p.x - half).toFixed(2)} ${(py(p.y) + hh - R).toFixed(2)} Z`;
+      haloStr = halo(`<path d="${tri}" fill="none" stroke="#fff" stroke-width="2.0" ` +
+                     `stroke-linejoin="round"/>`);
+      shape = `<path d="${tri}" fill="${fill}" stroke="${ink}" stroke-width="0.8" ` +
+              `stroke-linejoin="round"/>`;
+      // TWO-CHARACTER IDS DO NOT FIT A TRIANGLE AT THE CIRCLE'S TEXT SIZE. A circle
+      // offers 4.59 ft of interior; a triangle offers 1.11 ft of half-width at the
+      // cap-top when fs = 2.6 and the baseline sits at 1.0, against the 1.685 ft that
+      // `D1` needs — so the sloping edges cut the letters. For how many glyphs, count
+      // them with the predicate two lines below rather than trusting a number here:
+      // `DIAGRAMS.flatMap(d => d.players ?? [])
+      //   .filter(p => p.pos === 'D' && String(p.id ?? '').length >= 2).length`.
+      // ⚠️ This sentence said "44 glyphs", which is the wrong denominator for a comment
+      // sitting beside a spec predicate. 44 is the number of RENDERED INSTANCES; the
+      // predicate matches 42 spec entries. The gap is exactly `breakout-d-to-d`, which
+      // carries `D1` and `D2` and is referenced from both `content/systems/breakouts.md`
+      // and `content/hockey-iq/risk_management.md`, so its two ids render twice: 42 + 2.
+      // Verify with `grep -c 'font-size="2.15"'` over `site/dist/**/index.html` (44) and
+      // over `site/public/diagrams/*.svg` (42) — the two numbers are both right and count
+      // different things. (Counting `![](diagram:…)` across `content/` gives 116 in a clean
+      // checkout and 118 in a working tree that has unstaged diagram references. Neither
+      // changes the 44: the extra duplicates carry no two-character triangle ids.) Two denominators, one number, minted two lines above a predicate
+      // that counts for itself. A count goes stale silently; a denominator goes unstated.
+      // Derived, not chosen: interior half-width at the cap-top is
+      // `half * (dy - 0.72*fs + R)/hh - (0.4 / sin 60°)`, and it must exceed half the
+      // text width, measured at 1.296 em for two bold characters.
+      // ⚠️ THE COST IS REAL AND IS NOT ENGINEERED AWAY: this renders `D1` at ~6.8 px on a
+      // 375 px phone against a forward's ~10 px. A triangle simply holds less than a
+      // circle, and the alternatives — enlarging the glyph, or single-character ids —
+      // are the owner's call, not the renderer's. Recorded in OPEN_ITEMS.
+      const twoChar = String(pl.id ?? '').length >= 2;
+      dy = twoChar ? 1.32 : 1.0;
+      fs = twoChar ? 2.15 : 2.6;
     } else {
-      shape = `<circle cx="${p.x}" cy="${py(p.y)}" r="${r}" fill="${col}" ` +
-              `stroke="${col}" stroke-width="0.75"/>`;
+      // FORWARD: circle. HEO: `● ○ Forward / Player`.
+      haloStr = halo(`<circle cx="${p.x}" cy="${py(p.y)}" r="${r}" fill="none" ` +
+                     `stroke="#fff" stroke-width="1.95"/>`);
+      shape = `<circle cx="${p.x}" cy="${py(p.y)}" r="${r}" fill="${fill}" ` +
+              `stroke="${ink}" stroke-width="0.75"/>`;
     }
+    // A pylon carries no label; without this guard it emitted an empty <text>.
     const id = pl.pos === 'pylon' ? '' :
       `<text x="${p.x}" y="${(py(p.y) + dy).toFixed(2)}" font-size="${fs}" ` +
-      `font-weight="700" text-anchor="middle" fill="${opp ? col : '#fff'}">${esc(pl.id ?? '')}</text>`;
-    return shape + id;
-  }).join('\n    ');
+      `font-weight="700" text-anchor="middle" fill="${text}">${esc(pl.id ?? '')}</text>`;
+    return { halo: haloStr, body: shape + id };
+  });
+  // HALOS FIRST, THEN THE WALL, THEN THE GLYPH BODIES. The halos have to be under every
+  // glyph body — otherwise one player's ring erases a neighbour's outline, which is the
+  // defect they exist to prevent — but they must not be left on top of the boards.
+  // ⚠️ EVERY BRANCH ABOVE MUST RETURN `{ halo, body }`. The goaltender branch once
+  // returned a bare string, and when this join started consuming `parts` TWICE — once
+  // for halos, once for bodies — `g.halo` and `g.body` were both `undefined` on that
+  // entry. `Array.join` renders undefined as the empty string, so all 104 goaltenders
+  // vanished from all 112 diagrams with no error and a clean exit 0, while 87 captions
+  // and `describe` texts went on naming a player who was not drawn — and `describe` is
+  // the accessible name, so a screen-reader user was told about a goaltender that a
+  // sighted reader could at least see was missing. Nothing mechanical caught it; a
+  // rendered pass did. Hence the assertion: this class must fail loudly.
+  for (const g of parts) {
+    if (!g || typeof g !== 'object' || !('halo' in g) || !('body' in g)) {
+      throw new Error(
+        `player glyph branch returned ${typeof g}, not { halo, body } — see the note above`);
+    }
+  }
+  const glyphs = parts.map((g) => g.halo).join('\n    ') + '\n    ' +
+                 boardsOutline() + '\n    ' +
+                 parts.map((g) => g.body).join('\n    ');
 
   // Player labels go through the same placer as the vocabulary overlay, seeded
   // with the glyphs themselves so a label never lands on a player.
   const labelled = (spec.players ?? []).filter((pl) => pl.label);
   const players = glyphs + '\n    ' + placeLabels(
     labelled.map((pl) => { const p = loc(pl.at); return { text: pl.label, x: p.x, y: p.y }; }),
-    { size: 2.8, half: opts.half ?? true,
+    { size: 2.8 * TXT, half: opts.half ?? true,
       reserve: [
         ...(spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }),
         ...routeReserve,
+        ...zoneReserve,
       ] }
   ).join('\n    ');
 
@@ -875,18 +1372,52 @@ export function legendSvg(width = 820, opts = {}) {
   // legend IS the definition, so an omission is not a gap, it is an undefined symbol.
   const rows = opts.rows ?? [
     ['skate', 'Forward skating'],
-    ['carry', 'Skating with control of the puck'],
+    ['carry', 'Skate and stickhandle'],
     ['pass', 'Passing'],
     ['shot', 'Shooting'],
     ['backward', 'Backward skating'],
+    ['backxover', 'Backward crossover'],
     ['crossovers', 'Lateral crossovers'],
-    ['stop', 'Stopping'],
-    ['pressure', 'Checking pressure'],
+    // Two bars terminating a line is §21.1's SUDDEN STOP, read off the rendered page
+    // at 1200 dpi. "Stopping" was the Hockey Eastern Ontario sheet's word for it, and
+    // §21.1's own STOP is a bare pair of slashes with no line, which this corpus does
+    // not draw. `pressure` renders the same mark deliberately: both mean the route
+    // ends here rather than continuing through, which is the distinction that matters.
+    ['stopmark', 'Stop'],
+    ['pivot', 'Pivot'],
+    ['stop', 'Sudden stop — the route ends here'],
+    ['blocking', 'Blocking (screening)'],
+    // NO `bodycheck` ROW, DELIBERATELY. `bodycheck` is implemented (it is in §21.1 and
+    // a reader may meet it on another key) but NO diagram in this corpus uses it, and a
+    // legend that advertises a body-check glyph without saying who may legally deliver
+    // one is a contact instruction with no scope attached. Body checking is prohibited
+    // in USA Hockey 12U and below, all girls' and women's play and all non-check adult
+    // play (Rule 604(a)), and at Hockey Canada U13 and below and in female hockey (7.3).
+    // The same argument keeps `pressure` out of the rows above. If a diagram ever draws
+    // one, the row comes back WITH the scope, and `body_contact_and_battles.md` owns it.
+    ['droppuck', 'Dropping the puck'],
   ];
+  // `pressure` is deliberately absent from the rows above: it draws the SAME mark as
+  // sudden stop — a line ending in two bars — so a second row claiming a distinct glyph
+  // would be a legend that lies. The two are told apart by where the route finishes,
+  // not by shape, and that is disclosed to the reader in reading_ice_hockey_diagrams.md.
+  // ⚠️ This comment said `pressure` "now draws as forward skating", which it has not
+  // since the arrowhead on a closing route was found to be a safety defect — nine of
+  // twelve routes finished within 9 ft of an opponent carrying a mark that means "keep
+  // going through him". It sat eight lines below the correct note above it, and the
+  // reader-facing document repeated it.
+  //
+  // `crossovers` stays and is the one symbol here taken from the Hockey Eastern Ontario
+  // sheet rather than IIHF 21.1, because the IIHF key has no lateral-crossover symbol at
+  // all — and a barred line collides with nothing in the key, so it cannot be misread as
+  // a different symbol. That is the test: a departure is acceptable when it collides with
+  // nothing, and a defect when the key already uses that mark for something else.
   const COL = 300, h = 26;
   const VB = 640;                    // fixed layout width; `width` scales the whole
   const ROWS = Math.ceil(rows.length / 2);
-  const H = ROWS * h + 34;
+  const H = ROWS * h + 84;   // +22 for the pylon's own line, +28 for the puck row below it.
+                             // gy = ROWS*h + 20, and the puck row sits at gy + 48 with its
+                             // label baseline at gy + 52, so anything less clips it.
 
   // Miniature of a route, drawn by the same code paths as the diagram so the legend
   // cannot drift from what it claims to define. A legend maintained separately from
@@ -894,26 +1425,68 @@ export function legendSvg(width = 820, opts = {}) {
   const sample = (kind, x, y) => {
     const n = NOTATION[kind];
     const L = 52, S = 5.2;           // length in px, and px-per-foot for the wave
+    // Arrowhead geometry lifted from the `ahL` marker the straight rows use, so every
+    // row in the key terminates at the same x. `markerUnits` defaults to strokeWidth,
+    // so markerWidth 4 on a 1.9 stroke is 7.6px, and refX 8 of 10 puts the TIP 1.5px
+    // BEYOND the path end. That offset is why the straight rows never showed line
+    // past the tip and the hand-drawn wave row — tip and line both at L — did.
+    const HEAD = 7.6, TIPX = L + 1.5, BASEX = TIPX - HEAD;
     const f = { x: 0, y: 0 }, t = { x: L / S, y: 0 };
     let g;
-    if (n.line === 'wave') {
+    if (n.line === 'wave' || n.line === 'loops' || n.line === 'zigzag') {
       // Same generator as the diagram, scaled to px — a legend drawn by different
       // code from the thing it defines is a second place for the notation to be
-      // wrong. wavePath emits feet with y already flipped, so only scaling is left.
-      const pts = wavePath(f, t, 0, n.lambda, n.amp)
-        .replace(/[ML]/g, ' ').trim().split(/\s+/).map(Number);
-      const path = [];
-      for (let i = 0; i < pts.length; i += 2) {
-        path.push(`${(pts[i] * S).toFixed(1)} ${(pts[i + 1] * S).toFixed(1)}`);
-      }
+      // wrong. The generators emit feet with y already flipped, so only scaling is left.
+      //
+      // The route stops at the arrowhead's BASE, not at the tip. Measured off page 32
+      // at 1200 dpi: SKATE AND STICKHANDLE runs x=178..1053, the head's base is at
+      // x=926 and its tip at x=1053, and the wave's last pixel is x=925 — so the head
+      // replaces the final eighth of the line rather than sitting on top of it. Drawing
+      // the wave to `L` as well left its round linecap protruding ~1px PAST the tip,
+      // which is what "the tip isn't at the end of the line" was describing. It was
+      // reported twice and both of my earlier fixes — lengthening the straight run,
+      // shrinking the head — changed the wrong number.
+      const tw = n.end === 'arrow' ? { x: BASEX / S, y: 0 } : t;
+      const gen = n.line === 'loops'  ? archPath(f, tw, 0, n.lambda, n.amp, true)
+                : n.line === 'zigzag' ? zigzagPath(f, tw, 0, n.lambda, n.amp, true)
+                :                       wavePath(f, tw, 0, n.lambda, n.amp, true);
+      // Scale with a transform rather than by rewriting coordinates: cCutPath
+      // emits arc commands, and the old flattener stripped M/L and multiplied
+      // every number, which turns an `A rx ry 0 1 0 x y` into nonsense.
+      const scaled = `<g transform="scale(${S})">` +
+        `<path d="${gen}" fill="none" stroke="${PALETTE.boards}" ` +
+        // Pre-scale units: this path is inside a scale(S) group, so the rendered stroke
+        // is this value times S. For the arches that is amp * ARCH_WEIGHT * S = 1.35px,
+        // which is where the hand-tuned 1.45 had landed — the ratio now derives it.
+        `stroke-width="${(n.line === 'loops' ? n.amp * ARCH_WEIGHT : 1.9 / S).toFixed(3)}" stroke-linecap="round"/></g>`;
+      // The arches overlap by design, so a stroke sized for a straight line closes
+      // the gaps at the crossings and the run reads as a blob. Thinner only here.
       // Head drawn by hand pointing along +x, for the same reason as in the
-      // diagram: a marker on a polyline orients off its last tiny segment.
-      g = `<path d="M ${path.join(' L ')}" fill="none" stroke="${PALETTE.boards}" stroke-width="1.9"/>` +
-          `<path d="M ${L} 0 L ${L - 10} -5 L ${L - 10} 5 Z" fill="${PALETTE.boards}"/>`;
+      // diagram: a marker on a polyline orients off its last tiny segment. Omitted
+      // where the key omits it — §21.1 draws both backward marks with no arrowhead.
+      // Same size as the straight rows' marker, and it starts where the line stops.
+      g = scaled + (n.end === 'arrow'
+        ? `<path d="M ${TIPX} 0 L ${BASEX} -3.8 L ${BASEX} 3.8 Z" fill="${PALETTE.boards}"/>` : '');
     } else if (n.line === 'double') {
       g = `<path d="M 0 -2.6 L ${L - 11} -2.6" fill="none" stroke="${PALETTE.boards}" stroke-width="1.6"/>` +
           `<path d="M 0 2.6 L ${L - 11} 2.6" fill="none" stroke="${PALETTE.boards}" stroke-width="1.6"/>` +
           `<path d="M ${L} 0 L ${L - 11} -7 L ${L - 11} 7 Z" fill="${PALETTE.boards}"/>`;
+    } else if (n.line === 'pivot') {
+      // PIVOT: a single hook that comes in low, turns, and leaves upward — one
+      // inflection, as the key draws it. An S-curve reads as two turns, which is a
+      // different move.
+      g = `<path d="M ${(L * 0.10).toFixed(1)} -2 C ${(L * 0.10).toFixed(1)} 11, ` +
+          `${(L * 0.40).toFixed(1)} 13, ${(L * 0.60).toFixed(1)} 1" ` +
+          `fill="none" stroke="${PALETTE.boards}" stroke-width="1.9" stroke-linecap="round"/>` +
+          `<path d="M ${(L * 0.60).toFixed(1)} 1 L ${(L * 0.72).toFixed(1)} -11" ` +
+          `fill="none" stroke="${PALETTE.boards}" stroke-width="1.9" stroke-linecap="round"/>` +
+          `<path d="M ${(L * 0.78).toFixed(1)} -17 L ${(L * 0.635).toFixed(1)} -10.5 ` +
+          `L ${(L * 0.745).toFixed(1)} -6.5 Z" fill="${PALETTE.boards}"/>`;
+    } else if (n.line === 'none') {
+      // STOP: two slashes, no line at all.
+      g = `<g stroke="${PALETTE.boards}" stroke-width="2.4" stroke-linecap="round">` +
+          `<line x1="${L * 0.34}" y1="7" x2="${L * 0.46}" y2="-7"/>` +
+          `<line x1="${L * 0.5}" y1="7" x2="${L * 0.62}" y2="-7"/></g>`;
     } else {
       g = `<path d="M 0 0 L ${L} 0" fill="none" stroke="${PALETTE.boards}" stroke-width="1.9"` +
           (n.dash ? ` stroke-dasharray="${n.dash.split(' ').map((v) => v * 2.2).join(' ')}"` : '') +
@@ -921,8 +1494,54 @@ export function legendSvg(width = 820, opts = {}) {
       if (n.end === 'bar1') g += `<line x1="${L}" y1="-6" x2="${L}" y2="6" stroke="${PALETTE.boards}" stroke-width="2.2"/>`;
       if (n.end === 'bars2') g += `<line x1="${L}" y1="-6" x2="${L}" y2="6" stroke="${PALETTE.boards}" stroke-width="2.2"/>` +
                                   `<line x1="${L - 5}" y1="-6" x2="${L - 5}" y2="6" stroke="${PALETTE.boards}" stroke-width="2.2"/>`;
+      // BODY CHECK and BLOCKING are NOT a mirror pair, and treating them as one was the
+      // last of four wrong guesses at the body check (smooth curve, chevron, brace,
+      // mirrored arc). Measured off page 32 at 1200 dpi, tracing each mark's centreline:
+      //
+      //   BLOCKING   one arc, '('. Belly at the line end, both tips ~41px right of it
+      //              over a 167px height — a single unbroken curve opening away.
+      //   BODY CHECK an S. Upper lobe bulges RIGHT and its tip flicks back LEFT of the
+      //              join; lower lobe bulges LEFT and its tip flicks RIGHT. The two
+      //              lobes meet exactly at the line's end, and the whole mark has
+      //              180-degree rotational symmetry about that point.
+      //
+      // So the check is a wave standing on the end of the route, not an arc. One arc is
+      // the screen; two opposed arcs are the check, and the difference is the whole
+      // distinction between shielding a goaltender's eyes and hitting somebody.
+      // On the page both marks are the same height (167px and 168px) and the same
+      // weight, so they are drawn that way here: half-height 8, stroke 2.1.
+      //
+      // ⚠️ ONE LABELLED EXAGGERATION, and it does NOT rest on a collision. The page's S
+      // bulges 21px peak-to-peak on a 13.5px stroke — about 1.5 stroke widths — because
+      // its mark is 12x as tall as it is thick. At the legend's scale the mark is only
+      // 7.6x as tall as it is thick, so a faithful 1.5-stroke bulge is a deviation
+      // NARROWER THAN THE PEN, and the mark reads as a slightly bowed bar. Nor can that
+      // be fixed by thinning the stroke: the bulge is defined as a multiple of it. So the
+      // lobes are opened to ~3 stroke widths — the minimum that still reads as two
+      // opposed curves — and the honest justification is LEGIBILITY, not collision.
+      //
+      // An earlier version of this note claimed the faithful mark "renders as a straight
+      // vertical bar, which is `suddenstop`". That was wrong: sudden stop is TWO bars,
+      // as the notation block above says correctly. A single near-vertical mark at a line
+      // end is the Hockey Eastern Ontario CHECKING-PRESSURE glyph, which is in neither
+      // key this corpus follows and which the corpus does not draw. By this file's own
+      // test — acceptable when it collides with nothing in the key — a faithful body
+      // check PASSES. The exaggeration is a legibility choice at this row height, and if
+      // the row box is ever made taller it should be reduced toward 1.5.
+      if (n.end === 'hook') g += `<path d="M ${L - 1.1} -8 C ${L + 4.3} -6 ${L + 4.3} -1.6 ${L} 0 ` +
+                                 `C ${L - 4.3} 1.6 ${L - 4.3} 6 ${L + 1.1} 8" ` +
+                                 `fill="none" stroke="${PALETTE.boards}" stroke-width="2.1" stroke-linecap="round"/>`;
+      // Tips 3.9 forward of a belly that lands exactly ON the line's end — the page has
+      // the tips 41px forward over a half-height of 83.5, and the belly on the line.
+      // The control point is placed so the quadratic's midpoint is L, not merely near it;
+      // it used to leave the belly 1.5px past the end, which reads as a detached mark.
+      if (n.end === 'curve') g += `<path d="M ${L + 3.9} -8 Q ${L - 3.9} 0 ${L + 3.9} 8" ` +
+                                  `fill="none" stroke="${PALETTE.boards}" stroke-width="2.1" stroke-linecap="round"/>`;
       if (n.bars) g += [12, 22, 32, 42].map((o) =>
         `<line x1="${o}" y1="-4" x2="${o}" y2="4" stroke="${PALETTE.boards}" stroke-width="1.6"/>`).join('');
+      if (n.dropTick) g += `<line x1="${L * 0.45}" y1="-5" x2="${L * 0.45}" y2="5" stroke="${PALETTE.boards}" stroke-width="2"/>` +
+                           `<circle cx="${L * 0.52}" cy="0" r="2" fill="${PALETTE.boards}"/>`;
+
     }
     return `<g transform="translate(${x} ${y})">${g}</g>`;
   };
@@ -933,32 +1552,63 @@ export function legendSvg(width = 820, opts = {}) {
       `<text x="${x + 62}" y="${y + 4}" font-size="12" fill="#1b1c1e">${text}</text>`;
   }).join('\n    ');
 
-  // Player glyphs. **Shape carries TEAM** — circle own, triangle opposition — which
-  // is IIHF 21.1's axis and what playSvg emits. This row previously read "Own team
-  // — forward, defender" against a filled circle and a filled triangle, i.e. the
-  // superseded shape-for-position axis. It was defining combinations the renderer
-  // cannot produce, and telling the reader to read our defencemen as forwards and
-  // their forwards as defencemen, in the one place they go to find out.
+  // Player glyphs. **Shape carries the POSITION** — circle a forward, triangle a
+  // defenceman — and **fill carries the TEAM**, open yours and solid theirs. Same
+  // axis as `playSvg` and as the file header, and it must stay that way: this legend
+  // is the one place a reader goes to find out, so a legend that disagrees with the
+  // renderer is worse than no legend.
+  //
+  // ⚠️ This comment described shape-carries-POSSESSION, with the fill inverted as well
+  // ("filled yours and open theirs"), while the rows below it rendered correctly. It
+  // was the last of the stale possession-axis comments in this file. The rows are
+  // right; nothing about them needs changing on the strength of a comment.
   //
   // The pylon is here because the prose promises "an X is a pylon and never a
   // player", and a promise about a symbol the key never shows is not a definition.
   const gy = ROWS * h + 20;
   const tri = (cx, cy, fill, stroke) =>
     `<path d="M ${cx} ${cy - 7} L ${cx + 6.5} ${cy + 4.5} L ${cx - 6.5} ${cy + 4.5} Z" fill="${fill}" stroke="${stroke}" stroke-width="1.5"/>`;
+  // Two facts, two channels: SHAPE is the POSITION, FILL is the TEAM. The legend has
+  // to vary ONE channel per row or a reader reads the pair as a single distinction —
+  // which is how the previous axis was misread. So the shape row holds the fill
+  // constant and the fill row holds the shape constant.
+  const INK = PALETTE.boards;
   const glyphs =
-    `<circle cx="14" cy="${gy}" r="6.5" fill="${PALETTE.home}" stroke="${PALETTE.home}" stroke-width="1.5"/>` +
-    `<text x="26" y="${gy + 4}" font-size="12" fill="#1b1c1e">Your own team</text>` +
-    tri(8 + COL - 20, gy, '#fff', PALETTE.away) +
-    `<text x="${8 + COL - 8}" y="${gy + 4}" font-size="12" fill="#1b1c1e">The opposition</text>` +
-    `<g stroke="#1b1c1e" stroke-width="2" stroke-linecap="round">` +
-    `<line x1="${8 + 2 * COL - 130}" y1="${gy - 5}" x2="${8 + 2 * COL - 120}" y2="${gy + 5}"/>` +
-    `<line x1="${8 + 2 * COL - 130}" y1="${gy + 5}" x2="${8 + 2 * COL - 120}" y2="${gy - 5}"/></g>` +
-    `<text x="${8 + 2 * COL - 112}" y="${gy + 4}" font-size="12" fill="#1b1c1e">A pylon — never a player</text>`;
+    // Shape row: both OPEN, so only the shape varies.
+    `<circle cx="14" cy="${gy}" r="6.5" fill="#fff" stroke="${INK}" stroke-width="1.5"/>` +
+    tri(34, gy, '#fff', INK) +
+    `<text x="46" y="${gy + 4}" font-size="12" fill="${INK}">Circle is a forward; triangle a defenceman</text>` +
+    // Fill row: both CIRCLES, so only the fill varies.
+    `<circle cx="${8 + COL + 6}" cy="${gy}" r="6.5" fill="#fff" stroke="${INK}" stroke-width="1.5"/>` +
+    `<circle cx="${8 + COL + 26}" cy="${gy}" r="6.5" fill="${INK}" stroke="${INK}" stroke-width="1.5"/>` +
+    `<text x="${8 + COL + 38}" y="${gy + 4}" font-size="12" fill="${INK}">Open is your team; solid is theirs</text>` +
+    // The pylon and the goaltender share the last line. The pylon sat alone before,
+    // because on one line with two player channels it overran the viewBox.
+    `<g stroke="${INK}" stroke-width="2" stroke-linecap="round">` +
+    `<line x1="14" y1="${gy + 22}" x2="24" y2="${gy + 32}"/>` +
+    `<line x1="14" y1="${gy + 32}" x2="24" y2="${gy + 22}"/></g>` +
+    `<text x="34" y="${gy + 31}" font-size="12" fill="${INK}">A pylon — never a player</text>` +
+    // GOALTENDER: a bare letter in both published keys, so the legend shows it bare.
+    `<text x="${8 + COL + 10}" y="${gy + 32}" font-size="15" font-weight="700" ` +
+    `text-anchor="middle" fill="${INK}">G</text>` +
+    `<text x="${8 + COL + 26}" y="${gy + 31}" font-size="12" fill="${INK}">A goaltender</text>` +
+    // THE PUCK. Neither key publishes a single-puck symbol, so this row is the corpus's
+    // own and is labelled as such in "Reading the diagrams". It is here because most of
+    // the diagrams draw a puck — `DIAGRAMS.filter(d => d.puck).length` for the current
+    // figure — and a key that omits a symbol its pictures use fails its own purpose.
+    // ⚠️ This read "97 diagrams", which was wrong (it is 92, and 97 came from grepping
+    // `puck:` including comments). It survived a sweep for the same number thirty lines
+    // above because the digits fell across a line break. Third instance of one count.
+    // r 2.5 against the legend player's 6.5 = 38%, which is the ratio the DIAGRAMS draw
+    // (puck 1.1 against player 2.9). It was 3.2, i.e. 49% — the legend is the one place a
+    // reader calibrates the size from, and the body says "about a third the width".
+    `<circle cx="14" cy="${gy + 48}" r="2.5" fill="${INK}"/>` +
+    `<text x="34" y="${gy + 52}" font-size="12" fill="${INK}">The puck — this guide's own mark</text>`;
 
   const height = Math.round((width * H) / VB);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${VB} ${H}"
      font-family="-apple-system, Helvetica Neue, Arial, sans-serif" role="img">
-    <title>Legend: the drill notation used by the diagrams in this corpus, after IIHF Coach Development Program Level I section 21.1</title>
+    <title>Legend: the drill notation used by the diagrams in this corpus. Line symbols after IIHF Coach Development Program Level I section 21.1; player glyphs after the Hockey Eastern Ontario "International Drill Symbols" sheet</title>
     <rect x="0" y="0" width="${VB}" height="${H}" fill="#ffffff"/>
     <defs><marker id="ahL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="${PALETTE.boards}"/></marker></defs>

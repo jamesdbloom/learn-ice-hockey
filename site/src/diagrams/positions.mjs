@@ -145,6 +145,8 @@ const D_BEHIND = { at: 'behind-net', dx: -2, dy: 12 };      // (92, 12)
 const swingLow = {
   id: 'centre-swing-low',
   owner: 'content/positions/center.md',
+  // Inert as drawn — no opposition player is on this diagram, so the renderer draws
+  // circles either way. Declared anyway so the frame is on record if one is added.
   half: true,
   width: 900,
   numbered: true,
@@ -356,6 +358,9 @@ const W_HIGH = { at: 'point:right', dx: 2, dy: -5 };          // (27, 15)
 const wingerHighThenWall = {
   id: 'winger-high-then-down-the-wall',
   owner: 'content/positions/winger.md',
+  // The drawn instant is the first half of the move, not the second: "While the other
+  // team has the puck you are high on your side". The wall trip is the route, and the
+  // caption says it only expires "the moment your team wins the battle below you".
   half: true,
   width: 900,
 
@@ -611,6 +616,8 @@ const twoOnOne = {
 const threeDepths = {
   id: 'defender-three-depths',
   owner: 'content/positions/defender.md',
+  // Inert as drawn — "the opposition are not drawn", so the renderer draws circles
+  // either way. Declared anyway so the frame is on record if an opponent is added.
   half: true,
   width: 900,
 
@@ -753,8 +760,245 @@ const dToD = {
   puck: { at: 'faceoff-dot:right', dx: 17, dy: -3 },
 };
 
+// ---------------------------------------------------------------------------
+// winger.md, "Defensive Zone: Carrying the Puck — Under Pressure".
+//
+// A PAIR, and they must be read as one. The section's teaching is not "here is a
+// rim" but the CHOICE between two plays that beat opposite mistakes: "A rim beats a
+// checker who is sealing you against the boards, because it goes past them. A
+// reverse beats a checker who has over-committed and skated past you, because it
+// goes back into the space they just left." One picture cannot hold two different
+// checker positions, so there are two, and each caption names the other.
+//
+// GEOMETRY, checkable against src/data/rink.json and rink.mjs:
+//   boards        y = 42.5            half-wall:right = (69, 38.5)
+//   own circle    r 2.9 + stroke 0.75/2 = 3.275 ft of ink from centre
+//   opposition    equilateral triangle, centroid-to-vertex 3.6, stroke 0.8, and the
+//                 60-degree vertices join MITER, so each tip carries a further
+//                 (0.8/2)/sin 30 = 0.8 ft -> 4.4 ft of ink from the centroid
+// So a winger ON the half-wall reaches y = 41.775 and clears the dasher by 0.725 ft,
+// which is what half-wall's y was tuned for. An OPPOSITION glyph cannot stand there:
+// 38.5 + 4.4 = 42.9 would draw a body through the boards. Both checkers below are
+// therefore placed inside him, which is also where the prose puts them.
+const wingerDzRim = {
+  id: 'winger-dz-rim',
+  owner: 'content/positions/winger.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'Beating a checker who has sealed you against the boards, in your own end. You have the puck ' +
+    'on the wall with your body between it and him, which is why the puck is drawn on the far ' +
+    'side of you from the pressure — though body-between-puck-and-checker is the start of the ' +
+    'technique and not the whole of it; the section beside this picture gives the rest. He is inside you, ' +
+    'containing rather than chasing, so the ice he is taking away is the middle. That is exactly ' +
+    'the checker a RIM beats: a hard shot along the boards that follows the curve of the rink ' +
+    'past him to a teammate further around, because it goes where he is not. It is a completely ' +
+    'valid play and not an admission of failure — it resets possession and buys your team time to ' +
+    'regroup, which is worth more than a pass forced through traffic in your own zone. ' +
+    'Decide where the puck is going while you are still skating to it, not once you are pinned. ' +
+    'The opposite mistake needs the opposite play: the reverse beats a checker who has skated ' +
+    'past you instead of sealing you. ' +
+    '⚠️ Whichever you are playing, never turn your back to the wall and never duck. Those '+
+    'are two different injuries — a hit from behind you cannot brace for, and a chin tucked to '+
+    'the chest, '+
+    'which does not need speed to do it. Skates parallel to the boards, forearm and hip into '+
+    'the contact, head up and chin off your chest.',
+
+  describe:
+    'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
+    'Your right winger stands three feet off the boards, level with the faceoff dot, ' +
+    'holding the puck on the ' +
+    'boards side of his body. An opposition forward is a little inside him and a little up-ice, ' +
+    'between him and the middle of the ice, sealing him to the wall. A second player of yours ' +
+    'waits on the same boards up at the blue line. A passing route runs from the winger along the ' +
+    'boards, bowed into the wall so it hugs it, past the checker and up to that teammate.',
+
+  players: [
+    { id: 'G',  pos: 'G', at: { at: 'crease', dx: -1 } },
+    // Inside him and slightly up-ice: "sealing you against the boards" is containment,
+    // so he takes the middle away rather than attacking the puck. At y = 29 his apex
+    // reaches 33.4 and the winger's ink stops at 35.225, so 1.825 ft of ice separates
+    // two players the prose has leaning on each other. Any closer and the glyphs merge.
+    { id: 'F',  team: 'opp', pos: 'F', at: { at: 'half-wall:right', dx: -3, dy: -9.5 },
+      label: 'seals you to the wall' },
+    { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dy: -3.1 } },
+    // The rim's destination, on the same wall at the blue line: dx -44 from (69, 38.5)
+    // puts him at x = 25, the blue line, at the half-wall's own y — so he clears the
+    // dasher by the identical 0.725 ft and the coordinate tracks half-wall if it moves.
+    { id: 'W2', pos: 'F', at: { at: 'half-wall:right', dx: -44 }, label: 'up the wall' },
+  ],
+
+  // Bowed into the boards so the rim hugs the wall rather than cutting the middle —
+  // a rim that leaves the wall is a pass, and a pass through your own zone is the
+  // thing the section tells you not to force.
+  routes: [
+    { from: { at: 'half-wall:right', dy: -2.5 }, to: { at: 'half-wall:right', dx: -38, dy: -2.5 }, kind: 'pass', bow: -6 },
+  ],
+
+  // On the boards side of the winger — "puck on the far side of your body from the
+  // checker", which is the one spatial fact this diagram exists to assert. 5.4 ft from
+  // his centre: the circle carries 3.275 ft of ink and the puck 1.1, leaving 1.025 ft
+  // of white. The move is split between the two so the puck stays off the wall — the
+  // winger to dy -3.1 and the puck to dy +2.3 — and the puck's outer ink reaches
+  // y = 41.6, 0.65 ft inside the boards.
+  // ⚠️ THIS WAS 4.5 FT, AND THE NOTE HERE CALLED THE RESULT "0.125 ft of white" AS
+  // THOUGH THAT SETTLED IT. It does not: 0.125 ft is 0.95 px at 1440 and **0.42 px on a
+  // 375 px phone**, so the two shapes rendered as one and the picture read as a lollipop
+  // rather than a player with the puck outside his body. The arithmetic was right and
+  // the conclusion was wrong, because nothing converted feet into pixels at the width a
+  // reader actually holds. Found by rendering the page, not by reading the spec.
+  puck: { at: 'half-wall:right', dy: 2.3 },
+};
+
+const wingerDzReverse = {
+  id: 'winger-dz-reverse',
+  owner: 'content/positions/winger.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'Beating a checker who has over-committed, in your own end — the other half of the same ' +
+    'decision. Here he has not sealed you: he has skated past you up the wall, carrying his ' +
+    'momentum with him. The ice he has just left is behind you, so the play that beats him is a ' +
+    'REVERSE — the puck sent back the way it came, against the direction the pressure is flowing, ' +
+    'to a teammate arriving behind you. Read which of the two you are facing before the puck ' +
+    'arrives, because the plays are opposites and the wrong one hands him the puck in the most ' +
+    'dangerous place on the ice. Note what has not changed: feet wide and moving, backside into ' +
+    'him, puck on the far side of your body. A stationary player on the wall gets pinned whichever ' +
+    'mistake the checker is making. Call for it — "reverse!" — because the teammate you are ' +
+    'sending it to is looking the wrong way. ' +
+    '⚠️ Whichever you are playing, never turn your back to the wall and never duck. Those '+
+    'are two different injuries — a hit from behind you cannot brace for, and a chin tucked to '+
+    'the chest, '+
+    'which does not need speed to do it. Skates parallel to the boards, forearm and hip into '+
+    'the contact, head up and chin off your chest.',
+
+  describe:
+    'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
+    'Your right winger stands three feet off the boards, level with the faceoff dot, ' +
+    'with the puck on the ' +
+    'boards side of his body. An opposition forward has skated past him and is now up-ice of him ' +
+    'and slightly inside, his momentum carrying him away from the puck. Your defenceman is ' +
+    'arriving behind the winger, deeper toward the corner. A passing route runs from the winger ' +
+    'back down the boards to that defenceman, in the opposite direction to the checker.',
+
+  players: [
+    { id: 'G',  pos: 'G', at: { at: 'crease', dx: -1 } },
+    // Past him and still going: 9 ft up-ice, so there is no glyph overlap in x at all
+    // (the winger's ink spans x 65.725 to 72.275; this centroid is at x = 60) and the
+    // picture reads as a player who has gone by rather than one standing beside him.
+    { id: 'F',  team: 'opp', pos: 'F', at: { at: 'half-wall:right', dx: -9, dy: -5.5 },
+      label: 'has skated past you' },
+    { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dy: -3.1 } },
+    // Arriving behind, from the corner side. At (80, 28) he is 12.6 ft from the winger,
+    // so the two circles are 6.05 ft apart in ink, and he is deeper than the puck —
+    // which is what "behind you" means when you are facing up the wall.
+    { id: 'D',  pos: 'D', at: { at: 'half-wall:right', dx: 13, dy: -13 }, label: 'arriving behind you' },
+  ],
+
+  routes: [
+    { from: { at: 'half-wall:right', dy: -2.5 }, to: { at: 'half-wall:right', dx: 8, dy: -8 }, kind: 'pass' },
+  ],
+
+  puck: { at: 'half-wall:right', dy: 2.3 },
+};
+
+// ---------------------------------------------------------------------------
+// switching_positions.md, "Playing your off wing" — the document's first diagram.
+//
+// The drawn claim is the section's own: "that separation is what leaves you able to
+// skate, pass to the centre, pass back to your defenceman or attack the middle.
+// Flush against the wall you can do one of those." Three routes leave one player
+// because they are three answers to ONE instant, not a sequence — so the diagram is
+// deliberately NOT `numbered`, which would assert an order the prose does not.
+//
+// ARRIVAL GEOMETRY. The forechecker is placed so that no route carrying an arrowhead
+// finishes near him. Re-derived against rink.json's `half-wall` y = 38.5: the winger is
+// at (69, 34.5), the carry route ends at (61, 22.5) and the forechecker stands at
+// (53, 38.5) — 17.9 ft apart, well outside the 9 ft inside which the notation block
+// forbids an arrowhead drawn at an opponent.
+// The separation does not depend on the datum: both the forechecker and the carry
+// terminus are anchored to `half-wall`, so it cancels — dx 8, dy 16, √320 = 17.889 —
+// and the invariant holds at any value this datum could take.
+// ⚠️ This note previously read "the skate option ends at (63, 28.5) and he stands at
+// (53, 36.5), which is 12.8 ft apart", and added that the forechecker "is at dy -2
+// ... an opposition triangle carries 4.4 ft of ink". None of it matches the spec: there
+// is no `dy` on the forechecker, he is a FORWARD and so a circle rather than a triangle,
+// and every coordinate was computed against a `half-wall` of 38.5 with a mitred join.
+// The conclusion held; none of the arithmetic under it did.
+// ⚠️ AND THEN THIS NOTE ITSELF WENT STALE, IN THE DIRECTION THAT DOES REAL DAMAGE. It
+// was rewritten against a `half-wall` of 38.2 — a change that was made and then
+// REVERTED, because moving that datum falsified 54 comments in ten modules to fix one
+// glyph. This note kept the 38.2 coordinates and, worse, called **38.5 "superseded"**
+// when 38.5 is the live value, restored deliberately and guarded by a ⚠️ in `rink.json`
+// that says DO NOT MOVE THIS TO FIX ONE GLYPH. A warning written to stop the next
+// editor re-deriving against the wrong number was pointing them at the wrong number.
+const offWingOpenToTheIce = {
+  id: 'off-wing-open-to-the-ice',
+  owner: 'content/positions/switching_positions.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'Receiving a breakout pass on your off wing, in your own end. Off wing means the puck sits on ' +
+    'the inside of your body rather than toward the boards, and the cost of it is exactly this ' +
+    'pass: up the wall, onto your backhand, with a forechecker arriving. The fix is drawn here — ' +
+    'take the puck OPEN TO THE ICE, hips turned out and a step or two off the boards. That ' +
+    'separation is the whole point, because it is what leaves the section\'s four answers available: ' +
+    'skate, pass to the centre, pass back to your defenceman, or attack the middle. Three of the ' +
+    'four are drawn here; the fourth is not, and the section ranks none of them above the ' +
+    'others. Flush against the wall you have one of them. ' +
+    'Note that the coaching source this section otherwise follows teaches the opposite ' +
+    'reception — taking the pass with your back to the boards — and this guide does not follow ' +
+    'it there. ' +
+    '⚠️ Two things this picture cannot show and you must not do: never turn your back to the ' +
+    'boards to receive it, and never duck. Those are two different injuries — a hit from behind ' +
+    'you cannot brace for, and a chin tucked to the chest, which does not need speed to do it. ' +
+    'Skates parallel to the wall, forearm and hip, head up and chin off your chest.',
+
+  describe:
+    'The defending half of the rink, your own net at the right. Your goaltender is in the crease ' +
+    'and your defenceman is in the right corner with the puck already moved. Your winger stands on ' +
+    'the right side a clear four feet off the boards rather than against them, level with the ' +
+    'faceoff dot, with the puck on the inside of his body. An opposition forechecker is up-ice ' +
+    'of him and hard against the boards, arriving. Three routes leave the winger at once, and ' +
+    'they are alternatives rather than a sequence: one route carrying the puck inside and up ' +
+    'the ice, one pass into the middle to the centre, and one pass back down to the defenceman ' +
+    'in the corner. They are three of the four options the section lists; the fourth is not drawn.',
+
+  players: [
+    { id: 'G',  pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'F',  team: 'opp', pos: 'F', at: { at: 'half-wall:right', dx: -16 },
+      label: 'arriving' },
+    // NO label on the winger. Boards above him, the forechecker inside, a route below
+    // and another behind: the placer has no legal slot within reach, and it exiled the
+    // label 30 ft down the ice on a leader line. The caption carries "off the wall,
+    // hips open" instead, and the OPTIONS are labelled where there is room for them —
+    // which is also the thing the section is actually teaching.
+    { id: 'W',  pos: 'F', at: { at: 'half-wall:right', dy: -4 } },
+    { id: 'C',  pos: 'F', at: { at: 'high-slot', dx: -6 }, label: 'to the centre' },
+    { id: 'D',  pos: 'D', at: { at: 'corner:right', dy: -6 }, label: 'back to your D' },
+  ],
+
+  routes: [
+    { from: { at: 'half-wall:right', dy: -4 }, to: { at: 'half-wall:right', dx: -8, dy: -16 }, kind: 'carry' },
+    { from: { at: 'half-wall:right', dy: -4 }, to: { at: 'high-slot', dx: -6, dy: 5 }, kind: 'pass' },
+    { from: { at: 'half-wall:right', dy: -4 }, to: { at: 'corner:right', dx: -5, dy: -5 }, kind: 'pass' },
+  ],
+
+  // On the stick, on the inside of his body — which is what "off wing" means and is
+  // the reason the pass is awkward in the first place.
+  // dx 1.5 keeps the puck inside the body — which is what "off wing" means and is the
+  // point of the picture — while clearing the pass-to-the-centre route by 2.56 ft. At
+  // dx 0 it sat 1.09 ft off that route, i.e. its ink touched the dashes and it rendered
+  // as a blob welded to one, which is the same failure the separation from the carrier
+  // was widened to fix. Distance measured to the segment, not to the route's endpoints.
+  puck: { at: 'half-wall:right', dx: 1.5, dy: -9.4 },
+};
+
 export default [
   lowZoneCollapse, swingLow, backcheckMiddleLane,
-  wingerHighThenWall, wingerOffensiveZone,
+  wingerHighThenWall, wingerOffensiveZone, wingerDzRim, wingerDzReverse, offWingOpenToTheIce,
   twoOnOne, threeDepths, dToD,
 ];

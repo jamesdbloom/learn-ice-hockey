@@ -86,6 +86,9 @@ const OFF_PASS_TO = { at: ATT_BLUE, dx: 8, dy: -10 };       // (33, -10)
 const offsideFaceoffLocation = {
   id: 'offside-faceoff-location',
   owner: 'content/foundation/rules_primer.md',
+  // Both entries are ours: "a teammate in the neutral zone carries it over the blue
+  // line" and "one of our defencemen deep in our own end passes it the length of the
+  // ice". The only opposition glyph is their goaltender, defending the zone we enter.
   half: false,
   width: 1100,
 
@@ -156,7 +159,7 @@ const offsideFaceoffLocation = {
     // Rule 83.1, quoted in this section: "Players of the attacking team must not
     // precede the puck into the attacking zone." Both skates well over the line —
     // this is the offside, and it is the same offside in both cases.
-    { id: 'A', pos: 'F', at: { at: ATT_BLUE, dx: 12, dy: 6 }, label: 'preceded the puck' },
+    { id: 'A1', pos: 'F', at: { at: ATT_BLUE, dx: 12, dy: 6 }, label: 'preceded the puck' },
     { id: 'C', pos: 'F', at: OFF_CARRIER, label: 'carries it in' },
     // Short label on purpose: the placer sizes a label by its character count, and
     // "fires it in from his own end" is wide enough to be dragged across the pass
@@ -216,6 +219,8 @@ const LEGAL_PUCK = { at: RED, dy: -28 };       // (0, -28) — touching the red 
 const icingGainingTheLine = {
   id: 'icing-gaining-the-line',
   owner: 'content/foundation/rules_primer.md',
+  // Inert as drawn — "no goaltenders, no opponents and no chase" — so the renderer
+  // draws circles either way. Declared anyway so the frame is on record.
   half: false,
   width: 1100,
 
