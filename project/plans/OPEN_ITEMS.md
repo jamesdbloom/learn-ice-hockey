@@ -27,31 +27,69 @@ large part of it. What is open is **structure** — whether a reader can find th
 recall it, and act on it. Outside feedback is always worth having and is never finished; it is not
 a blocker on any item here.
 
-**⬜ Substance at the top.** A reader landing on a page should get a real summary in the first
-screen and drop into detail as they need it. The corpus is currently the wrong way round.
-Prototype two Overviews and look at them before committing to 36.
+⚠️ **Half of this tier was already done, and the plan did not know.** Round 47 re-derived every
+item against the corpus instead of reading the tier. **Three of six were complete** — one of them
+the item this tier called *"the single largest unexploited gain in the project"* — and had been
+since **round 28, seventeen rounds earlier**. Work was queued behind finished work. The evidence is
+in [`round_47_tier_0_audit.md`](../reviews/round_47_tier_0_audit.md); the struck items are below so
+the record of what was claimed survives.
 
-**⬜ Retrieval practice was piloted and never rolled out.** `Check yourself` appears in **1
-document of 36**. It stopped because the diagram work started before it finished, not because it
-was rejected. The corpus already holds the questions — every document ends with Key Takeaways and
-Common Mistakes, both of which are assertions of exactly what a reader should be able to recall.
-Named here as **the single largest unexploited gain in the project**.
+**✅ Substance at the top — DONE.** The item read *"the corpus is currently the wrong way round.
+Prototype two Overviews and look at them before committing to 36."* **All 37 documents open with an
+`## Overview`**, median **415** words, shortest 313. Shipped in `c93b13f`, *"Put the summary at the
+top of every document, and fix what that exposed."*
 
-**⬜ The Key Takeaways are not takeaways — corpus-wide.** **48,673 words: 9% of the corpus is its
-own summary.** `equipment.md` 3,744 · `conditioning_and_recovery` 3,024 ·
-`body_contact_and_battles` 2,711 · `mental_game` 2,592 · `getting_started` 2,444. A reader who
-skips to the takeaways to save time reads a second document. **MA23 (Tier 2) is this same defect
-in one file** — round 38 fixed `rules_primer.md` and found that every critical it sustained came
-from compressing rather than splitting. **That finding should shape the corpus-wide pass, not be
-rediscovered by it.**
+**✅ Retrieval practice — DONE, and it was the tier's headline item.** It read *"`Check yourself`
+appears in **1 document of 36**… Named here as the single largest unexploited gain in the
+project."* It appears in **36 of 37 documents, carrying 278 numbered questions**. Round 28 built it
+out from the one-document pilot and its own record says so: *"`## Check yourself` retrieval layer
+was built out from a one-document pilot to 36."* The only document without one is
+`reading_ice_hockey_diagrams.md`, which arrived on 31 July, after the rollout — **that is the whole
+of what is left of this item**, and it is a one-document job, not a corpus-wide gain.
 
-**⬜ There is no entry path.** Thirty-six documents in a reading order, and no answer to *"I am
-playing on Saturday and I have an hour."* A curriculum, not a triage. Two or three named paths —
-*your first game*; *you have been put on defence and have never played there*; *you want to follow
-a game on television* — each naming four or five documents **and which sections of them**.
+**✅ Entry paths — DONE.** The item asked for *"two or three named paths — your first game; you have
+been put on defence and have never played there; you want to follow a game on television — each
+naming four or five documents and which sections of them."* `getting_started.md` carries **"Four
+routes in, when you have an hour rather than a season"**: Route 1 *Your first game is this week*,
+Route 2 *You have been put on a position you have never played*, Route 3 *You want to follow a game
+on television*, Route 4 *You play in Britain*. **All three requested, plus one.**
+
+---
+
+**⬜ The Key Takeaways are not takeaways — the one item in this tier that is genuinely open, and it
+is worse than the tier said.** Derived 26 August: **60,033 words, 9.5% of the corpus** — the tier
+said 48,673 and 9%, low by **23%**, the same shape as its own anchor figure being low by 18% until
+round 43.
+
+**But the count was never the defect, and reading the number that way is why the item has not
+moved.** The style guide asks for *"Numbered, 5–10 items. Each one standalone and memorable — this
+feeds the podcast's 'if you only remember N things' segment."* The corpus **complies on count** —
+33 of 37 are at ten or fewer. It fails on **length**:
+
+| document | Key Takeaways | items | words per "takeaway" |
+|---|---|---|---|
+| `body_contact_and_battles` | 4,007 | 10 | **400** |
+| `equipment` | 3,843 | 10 | **384** |
+| `rules_primer` | 3,103 | 10 | **310** |
+| `conditioning_and_recovery` | 2,950 | 10 | **295** |
+| `mental_game` | 2,686 | 10 | **268** |
+
+**A 400-word takeaway is not a takeaway, and it is certainly not "if you only remember ten
+things".** A reader who skips to the takeaways to save time reads a second document — which is the
+tier's original point, arrived at from the wrong measurement.
+
+Four documents also exceed the 5–10 cap: `practice_and_development`, `switching_positions`,
+`scanning_and_anticipation`, `neutral_zone_systems`, all at 11.
+
+⚠️ **Round 38's finding must shape this pass, not be rediscovered by it:** it fixed
+`rules_primer.md` and found that **every critical it sustained came from compressing rather than
+splitting**. The failure mode of shortening a takeaway is dropping the qualification that made it
+true — which is exactly what rounds 43–45 spent themselves on. **MA23 (Tier 2) is this same defect
+in one file.**
 
 **⬜ Gaps the entry paths exposed — content that does not exist.** Absences no review round finds,
-because a reviewer checks what is written.
+because a reviewer checks what is written. **Now actionable rather than blocked:** the four routes
+exist, so the gaps they point at can be enumerated by walking them.
 
 **⬜ Known open defects carried at corpus level.** Full-sheet diagrams render labels at ~7.5 px on
 a phone (improved from 4.4 by a scroll box; still strained — a typography decision, not a diagram
