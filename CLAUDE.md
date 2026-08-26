@@ -100,12 +100,27 @@ The short form:
 5. **Propagate.** Body → facts blocks → Common Mistakes → Key Takeaways → every
    other document that repeats it → the style guide if it records it. Every
    critical in round 10 was a correction that reached the body and stopped.
-6. Run the mechanical checks:
+6. Run the mechanical checks. **All of them, from this list, not from memory** — round 43
+   went through six gate passes with `check_absolutes.py` unrun, and the pre-commit hook
+   caught it, not the author:
    ```bash
    python3 scripts/check_links.py --quiet
    python3 scripts/check_facts.py
+   python3 scripts/check_absolutes.py
+   python3 scripts/check_geometry.py
    python3 scripts/check_secrets.py
+   python3 scripts/check_counts.py        # --update rewrites stale corpus figures
+   node site/scripts/check-arrivals.mjs   # from site/
    ```
+   `check_counts.py --update` is the last step before staging, **after** the final
+   `content/` edit — `project/` edits cannot move the figure, so it converges.
+
+   `scripts/check_rule_scope.py` is a **worklist, not a gate**: it reports every rule
+   number whose book scope differs between the summary-layer units citing it. It has no
+   `--strict` and never will — a site naming one book because it discusses one book is
+   correct, and a tool that ranked these and then offered to fix them is precisely how
+   round 44 manufactured a divergence that did not exist.
+
    They are the floor. None of them can check whether anything is true.
 
 ---
@@ -205,8 +220,9 @@ project/reviews/    Review records, findings, measurements and evidence. Where w
                     *done* is tracked, and where a plan item goes when it closes.
 project/            Style guide, review process, verification data.
                     Never fed to the podcast generator.
-scripts/            check_links.py, check_facts.py, check_secrets.py,
-                    check_external_links.py, md_to_speech.py
+scripts/            check_links.py, check_facts.py, check_absolutes.py, check_geometry.py,
+                    check_secrets.py, check_counts.py, check_external_links.py,
+                    check_rule_scope.py (a worklist, not a gate), md_to_speech.py
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.
