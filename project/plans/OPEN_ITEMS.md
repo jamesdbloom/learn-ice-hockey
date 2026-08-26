@@ -14,9 +14,9 @@ or a structural change too large to fold into a repair.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 632,107 words — 47.9 hours of
-reading at 220 wpm** (whitespace split over the raw markdown of every file in `content/`,
-measured 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
+These outrank everything below. The corpus is **37 documents and 632,592 words — 47.9 hours of
+reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
+26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
 the very file it cites supersedes two paragraphs above its own table: *"The corpus is 37
 documents and 619,227 words."* Tier 0's argument is that forty hours is six books and a beginner
@@ -212,8 +212,9 @@ blocks it.
 | ⬜ | Glossary, ~9 entries | `Forecheck` homonym; `Post` drops its owner's coaching-choice hedge; three entries out of alphabetical order; `one-touch`/`one-timer` collision; `Board battle`; backside coverage. | plan §4.1, §4.3 |
 | ⬜ | Glossary, voice | **Six of the ten new entries close with a cross-link and four do not**; `Butterfly` uses inline *"— see [X]"* where others use a sentence-final *"See [X]."*; some are third person and some switch to second. | plan §4.3 |
 | ⬜ | `"most goals are scored low"` | **Unsourced in its owner.** Label it or source it — do **not** delete it: a tidying pass already removed a *correct* fact from this corpus for looking unsupported. | plan §3 |
-| ⬜ | `rules_primer.md:167` and `:185` — **round 45's first item, verified** | The rules owner states flat, in **three** layers, that on a delayed offside *"all players of the offending team clear the zone **at the same instant**"* — `:167` and `:185` in the body and **`:846` in its Key Takeaways, the layer the podcast speaks**. Fix all three or fix two of three. `zone_entries.md:156`/`:166`/`:986` and `winger.md:279`/`:612` all say *"three books of the four"*, because **Hockey Canada does not require simultaneity**: 6.11(b)(ii) nullifies the offside when *"all attacking players clear the attacking zone by making skate contact with the blue-line, so that the attacking zone is completely clear"* (`hc.txt:5413`) — no "at the same instant", where NHL 83.3(i) and USA Hockey 630(d)(2) both have one. **A live cross-document divergence of round 44's exact class, in the rules owner, that round 44 did not find** — the gate found it only because it sat beside something that changed. | round 44 |
 | ⬜ | **Nine** documents cite Hockey Canada rules with **no HC rulebook in Sources** | `time_and_space.md` and `rink_map_and_glossary.md` quote Rule 6.11's preamble **verbatim**; `on_ice_communication.md`, `puck_support_and_spacing.md`, `how_to_watch_hockey.md`, `breakouts.md`, `switching_positions.md`, **`neutral_zone_systems.md`** cite 6.11; `forechecking_systems.md` cites 7.3, 6.11 and 8.3(b) with only coaching pages in Sources. ⚠️ **Round 44 created the gap in three of them** — `on_ice_communication.md`, `puck_support_and_spacing.md` and `how_to_watch_hockey.md` had no HC claim before it; the other six already cited the book. The claims are verified against `sources/hc.txt`; the citation is missing. **Not swept in round 44** — nine Sources blocks, nine formats, in a round where every sweep introduced a defect. The line already exists in `center.md` and can be copied. → `source-verifier`. | round 44 |
+| ⬜ | `rules_primer.md:738` — the rule-set comparison table's tagging-up row | It states USA Hockey's classification limit and carries **no Hockey Canada note**, while its sibling icing rows all carry inline *"Hockey Canada is split by category"* notes. **The absence of a Hockey Canada classification limit on tag-up is a real distinction the corpus states in four other places and not in the table** — and §10's cells are the shape that generated round 44's divergences. Found by `commit-gate` in round 45; pre-existing. | round 45 |
+| ⬜ | **Delayed-offside whistle triggers — a contact consequence, four sites, needs a safety pass** | `rules_primer.md:171-176` lists the triggers flat and `:180` calls *"merely chasing the defenceman deeper kills the play"* the most misunderstood part of the rule. **That is NHL and IIHF text.** NHL 83.3 and IIHF 83.3 have four triggers including *"about to make physical contact"*; USA Hockey 630(d) has two and no about-to-contact trigger; **Hockey Canada 6.11(b)(ii) has neither forcing-deeper nor about-to-contact.** The corpus relies on that trigger to teach that play is dead before the check lands — under two books of four it is not, and Hockey Canada's remedy is 6.11(d)(i), which expressly reaches a play *"against an opposing player"*. Repeated flat at `zone_entries.md:167`, `:174`, `time_and_space.md:404`, `:416`. **→ `safety-reviewer` and `rules-verifier`; not swept in round 45.** | round 45 |
 | ⬜ | `shooting.md` vs `offensive_zone_play.md:939` | **The named owner of shot-location value does not hold the figure that points at it.** The McCurdy/HockeyViz *"under 5% outside home plate"* lives only in `offensive_zone_play.md:60`; `shooting.md:760` gives 10–15% / 2–4% hedged as *"that source names no dataset"*. A reader following the pointer arrives at the **less** evidenced pair — and one site re-labels "home plate" as "perimeter", two different areas in the glossary. **Which is right cannot be told from the summary layer.** | round 44 |
 | ⬜ | Crease rule-set divergence, 16 sites | `offensive_zone_play.md:485`/`:943` carry USA Hockey 625(b) and the IIHF loitering provision; ~16 summary-layer sites across 12 documents give NHL 69.1/69.3 flat. `special_teams.md:907` groups the IIHF **with the NHL**; `offensive_zone_play.md:943` groups it **with USA Hockey**. **→ `rules-verifier` on 625(b) and IIHF 69.1's final sentence before any sweep.** | round 44 |
 | ⬜ | `risk_management.md:730` KT5 | The both-defencemen absolute survives inside a nine-item `never` list, where the hedge is deferred ~200 words. The other two sites in this document were fixed in round 44; **this one needs the list restructured, not a clause added.** | round 44 |
@@ -861,6 +862,32 @@ deleting it, especially one git cannot give back.**
 ---
 
 ## Method notes that cost real time — read before starting
+
+### A wording difference is not a rule difference until someone builds the play
+
+Round 45 found the corpus asserting, in five places across two documents, that the four books
+diverge on delayed-offside simultaneity — three saying *"at the same instant"* and Hockey Canada
+not. **The textual observation was right and the inference was wrong**, and the round's first act
+was to propagate it into three more sites, including a Key Takeaway.
+
+Hockey Canada states the same requirement as a **result** — 6.11(b)(ii), *"so that the attacking
+zone is completely clear of attacking players"* — where the others state it as an **instant**, and
+its Interpretation 11 resolves the result to *"the instant the zone is completely free"*. **Hockey Canada's own Interpretation 11 disposes of the
+simultaneity reading on its own facts**: A5 and A8 tag up into the neutral zone while A10 leaves
+the ice into the players' bench — three players, two routes — **ONSIDE**, with **no timing condition attached to the ruling at all**.
+The absence is the argument: the book did not need to say the exits coincided, and did not. And
+IIHF Situation 83.34 states the same test in the book that *does* use the phrase. No play is legal under one book and illegal under another.
+
+**The test to apply before recording a divergence: construct the play that separates the books.**
+If you cannot — if every fact pattern comes out the same — you have found two draftings of one
+rule, and writing it up as a divergence hands readers a permission that does not exist. Here it
+handed them one that Hockey Canada's Interpretation 10(i) rules out by consequence — the zone must
+be *"completely clear of all attacking players before the off-side is nullified"* — with an intentional-offside
+faceoff in their own end as the price.
+
+⚠️ This is the mirror of the note below. Round 44's worst defect was a sweep that **manufactured** a
+divergence by over-applying a correction; round 45's was a sweep that **propagated** one that never
+existed. Both passed every check the project has, because both were textually accurate.
 
 ### A caveat in one layer of one document is not propagated — it is anchored
 
