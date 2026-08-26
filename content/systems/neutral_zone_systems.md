@@ -31,7 +31,7 @@ The **neutral zone** is the middle third of the ice, between the two blue lines 
 
 ```facts
 Key: A strong skater crosses the neutral zone in about three seconds — that is the entire window for every decision in this document
-Rule: Offside needs both an attacker's skates completely over the line before the puck; an airborne trail skate stays onside under NHL and IIHF, but not under USA Hockey 630(a), which requires skate contact
+Rule: Offside needs both an attacker's skates completely over the line before the puck; an airborne trail skate stays onside under NHL and IIHF, but not under USA Hockey 630(a) or Hockey Canada 6.11 — two books of the four require contact
 Rule: The centre red line is still the icing line — the shorthanded exemption carries carve-outs (NHL 81.6, USA Hockey 624(b)(1)); see Special Teams, which covers it
 Rule: The two-line pass is gone — NHL Rule 83 (Off-side) has no two-line provision, and neither do the IIHF, USA Hockey or CARHA books (CARHA Rule 73(d))
 Never: Rebuild your attack around a local two-line pass rule unless somebody shows it to you in writing
@@ -42,7 +42,7 @@ Read: On a shorter sheet every structure here collapses faster — passive traps
 
 Three lines govern what happens there, and you need all three in your head at once:
 
-- **Your defensive blue line** — the line your opponents must not precede the puck across. **Offside** requires **both** of an attacker's skates to completely cross the line before the puck completely crosses it. One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone still counts as onside **under NHL and IIHF rules — but not under USA Hockey, whose Rule 630(a) requires skate *contact* with the neutral zone or the blue line**.
+- **Your defensive blue line** — the line your opponents must not precede the puck across. **Offside** requires **both** of an attacker's skates to completely cross the line before the puck completely crosses it. One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone still counts as onside **under NHL and IIHF rules — but not under USA Hockey, whose Rule 630(a) requires skate *contact* with the neutral zone or the blue line, or Hockey Canada, whose Rule 6.11 counts only skates *"in physical contact with the ice surface"* — two books of the four**.
 - **The centre red line** — no longer relevant to passing (see below), but still the **icing line**. If you shoot the puck from your own half of the ice and it crosses the opponent's goal line untouched, that is icing, unless you are shorthanded or one of the other wave-offs applies. The shorthanded one has two carve-outs — NHL Rule 81.6 (a team shorthanded by a *major* with nobody on the penalty bench) and USA Hockey Rule 624(b)(1), which grants the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult; see [Special Teams](special_teams.md), which covers the rule. This is why "get it past the red line first" is still shouted on every bench in the world.
 - **Their blue line** — where your entry either works or dies. Covered in full in [Zone Entries](zone_entries.md).
 
@@ -802,7 +802,7 @@ document, that is named too.*
 8. **Regroup instead of forcing a bad entry.** You keep the puck, their structure resets, and your forwards arrive at the line with speed instead of standing still.
 9. **Three forwards, three lanes.** Support in the neutral zone means being available somewhere else, not being close to the puck.
 10. **A trap is beaten by moving the puck, not by carrying it.** Quick passes, the boards, a forward stretched behind the wall — or dump it past the red line and forecheck on purpose.
-11. **Public NHL tracking from around 2013 puts a dump-in at roughly half a carried-in entry in shots.** The same authors concluded from the same data that the reproducible, player-to-player part of shot differential sits almost entirely in neutral zone play rather than in shots per offensive-zone possession. It watched NHL players only, concluded they give the puck up at the line too readily, and is a decade old — take the direction, not the decimals. [Zone Entries](zone_entries.md) covers the figures.
+11. **Public NHL tracking from around 2013 puts a dump-in at roughly half a carried-in entry in unblocked shot attempts, at 5-on-5.** The same authors concluded from the same data that the reproducible, player-to-player part of shot differential sits almost entirely in neutral zone play rather than in shots per offensive-zone possession. It watched NHL players only, concluded they give the puck up at the line too readily, and is a decade old — take the direction, not the decimals. [Zone Entries](zone_entries.md) covers the figures.
 
 ---
 

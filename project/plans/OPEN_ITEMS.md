@@ -14,7 +14,14 @@ or a structural change too large to fold into a repair.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **532,518 words — 40.3 hours of reading**, and its
+These outrank everything below. The corpus is **37 documents and 632,107 words — 47.9 hours of
+reading at 220 wpm** (whitespace split over the raw markdown of every file in `content/`,
+measured 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
+the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
+the very file it cites supersedes two paragraphs above its own table: *"The corpus is 37
+documents and 619,227 words."* Tier 0's argument is that forty hours is six books and a beginner
+will bounce off it — **and the true figure is nearly forty-eight hours**, so the stale number was
+understating the case for the work it introduces. Its
 accuracy is not the open question: the owner has played for three and a half years and has read a
 large part of it. What is open is **structure** — whether a reader can find the thing they need,
 recall it, and act on it. Outside feedback is always worth having and is never finished; it is not
@@ -205,6 +212,16 @@ blocks it.
 | ⬜ | Glossary, ~9 entries | `Forecheck` homonym; `Post` drops its owner's coaching-choice hedge; three entries out of alphabetical order; `one-touch`/`one-timer` collision; `Board battle`; backside coverage. | plan §4.1, §4.3 |
 | ⬜ | Glossary, voice | **Six of the ten new entries close with a cross-link and four do not**; `Butterfly` uses inline *"— see [X]"* where others use a sentence-final *"See [X]."*; some are third person and some switch to second. | plan §4.3 |
 | ⬜ | `"most goals are scored low"` | **Unsourced in its owner.** Label it or source it — do **not** delete it: a tidying pass already removed a *correct* fact from this corpus for looking unsupported. | plan §3 |
+| ⬜ | `rules_primer.md:167` and `:185` — **round 45's first item, verified** | The rules owner states flat, in **three** layers, that on a delayed offside *"all players of the offending team clear the zone **at the same instant**"* — `:167` and `:185` in the body and **`:846` in its Key Takeaways, the layer the podcast speaks**. Fix all three or fix two of three. `zone_entries.md:156`/`:166`/`:986` and `winger.md:279`/`:612` all say *"three books of the four"*, because **Hockey Canada does not require simultaneity**: 6.11(b)(ii) nullifies the offside when *"all attacking players clear the attacking zone by making skate contact with the blue-line, so that the attacking zone is completely clear"* (`hc.txt:5413`) — no "at the same instant", where NHL 83.3(i) and USA Hockey 630(d)(2) both have one. **A live cross-document divergence of round 44's exact class, in the rules owner, that round 44 did not find** — the gate found it only because it sat beside something that changed. | round 44 |
+| ⬜ | **Nine** documents cite Hockey Canada rules with **no HC rulebook in Sources** | `time_and_space.md` and `rink_map_and_glossary.md` quote Rule 6.11's preamble **verbatim**; `on_ice_communication.md`, `puck_support_and_spacing.md`, `how_to_watch_hockey.md`, `breakouts.md`, `switching_positions.md`, **`neutral_zone_systems.md`** cite 6.11; `forechecking_systems.md` cites 7.3, 6.11 and 8.3(b) with only coaching pages in Sources. ⚠️ **Round 44 created the gap in three of them** — `on_ice_communication.md`, `puck_support_and_spacing.md` and `how_to_watch_hockey.md` had no HC claim before it; the other six already cited the book. The claims are verified against `sources/hc.txt`; the citation is missing. **Not swept in round 44** — nine Sources blocks, nine formats, in a round where every sweep introduced a defect. The line already exists in `center.md` and can be copied. → `source-verifier`. | round 44 |
+| ⬜ | `shooting.md` vs `offensive_zone_play.md:939` | **The named owner of shot-location value does not hold the figure that points at it.** The McCurdy/HockeyViz *"under 5% outside home plate"* lives only in `offensive_zone_play.md:60`; `shooting.md:760` gives 10–15% / 2–4% hedged as *"that source names no dataset"*. A reader following the pointer arrives at the **less** evidenced pair — and one site re-labels "home plate" as "perimeter", two different areas in the glossary. **Which is right cannot be told from the summary layer.** | round 44 |
+| ⬜ | Crease rule-set divergence, 16 sites | `offensive_zone_play.md:485`/`:943` carry USA Hockey 625(b) and the IIHF loitering provision; ~16 summary-layer sites across 12 documents give NHL 69.1/69.3 flat. `special_teams.md:907` groups the IIHF **with the NHL**; `offensive_zone_play.md:943` groups it **with USA Hockey**. **→ `rules-verifier` on 625(b) and IIHF 69.1's final sentence before any sweep.** | round 44 |
+| ⬜ | `risk_management.md:730` KT5 | The both-defencemen absolute survives inside a nine-item `never` list, where the hedge is deferred ~200 words. The other two sites in this document were fixed in round 44; **this one needs the list restructured, not a clause added.** | round 44 |
+| ⬜ | `content_style_guide.md:496-510` | **The "full corpus" list enumerates 35 files**, omitting `uk_rules.md` and `reading_ice_hockey_diagrams.md`. It is the list a pipeline would glob, in the file that is the specification. | round 44 |
+| ⬜ | NHL encroachment cited three ways | `on_ice_communication.md:273` cites **76.2**, six summary lines cite **76.6**, two cite **76.4**. `special_teams.md:1001`'s own source list calls 76.2 *"Face-off Locations"*. → `rules-verifier`, grep `^76\.` in `sources/nhl_rules.txt`. | round 44 |
+| ⬜ | `faceoffs.md:849` | The Common Mistake drops the *"computed for this document"* label its own KT5 carries, and broadens "points percentage" to "team results". The style guide requires the label to travel. | round 44 |
+| ⬜ | "Stay high" — a fourth sense | `winger.md:610` defines it as *"level with the opposing defenceman while they have the puck, and it expires the moment your team wins it"*; `breakouts.md:702` uses the control-breakout sense, i.e. after your team has it. The body at `breakouts.md:205` flags both senses; **the facts line does not, and facts lines are read alone.** | round 44 |
+| ⬜ | Four documents at 11 Key Takeaways | `neutral_zone_systems.md`, `switching_positions.md`, `practice_and_development.md`, `scanning_and_anticipation.md`, against the style guide's 5–10. Round 43 recorded one of the four. | round 44 |
 | ⬜ | `conditioning_and_recovery.md:528` | Common Mistakes carries the Copenhagen adduction exercise's *very-low-certainty* hedge but **not the retraction** its own Key Takeaway 4 and body both carry. A dropped qualification in the layer read first. | round 43 |
 | ⬜ | `conditioning_and_recovery.md:524` | *"…in the study cited above"* — read aloud there is no "above", and the body's *"one study in fourteen semi-professional players"* hedge does not travel. | round 43 |
 | ⬜ | `conditioning_and_recovery.md:553` | `Check yourself` Q1 points at *"§Concussion — …The absolute rule"*; round 41 renamed that heading to `### Concussion: the absolute rule`. **The reference degraded rather than broke, so no link checker can see it.** | round 43 |
@@ -275,7 +292,7 @@ closing sentence names what that cannot reach: a claim stated one way in `defend
 takeaway and the opposite way in `center.md`'s, **where both match their own bodies**, is
 invisible to it. The KHL finding surfaced only because two documents happened to be open at
 once. **This is the highest-value move on the list and it is cheap** — the summary layers of
-all 36 documents are a few dozen sections, not 8,000 lines, and they are the layer the
+all 37 documents are 85,820 words across 74 sections — large, but a fraction of the corpus — and they are the layer the
 podcast extracts.
 
 Things no current check can see.
@@ -844,6 +861,51 @@ deleting it, especially one git cannot give back.**
 ---
 
 ## Method notes that cost real time — read before starting
+
+### A caveat in one layer of one document is not propagated — it is anchored
+
+Round 44 fixed the airborne-skate scope in `time_and_space.md` and thought it done. It was in
+**eighteen sites across ten documents**, and the repair had reached the body and the `Action:` line
+of one facts block while **skipping the `Rule:` line between them**. Round 43 had the same shape at
+a section boundary and then a document boundary; round 44 found it at a *line* boundary inside a
+single block.
+
+**The corpus already knew the right wording.** `center.md:249` said *"two books of the four"*
+before the round started, while `center.md:260` — the same document, one layer down — said
+otherwise. So the fix was never a question of research; it was a question of sweep.
+
+**Method that worked, and is cheap:** after fixing a claim, grep the corpus for the *rule number*
+rather than the phrasing (`630(a)` here), subtract the sites that already carry the correction, and
+read what is left. It found eleven more in one pass. Grepping the phrasing finds only the sites
+that phrase it the way you do — which is the paraphrase trap `content-reviewer` caught itself in
+this same round.
+
+⚠️ **And check your own edit for the half-fix.** At `rink_map_and_glossary.md:155` round 44 changed
+"three rule sets"→"four" in one clause and left the next clause naming one book, so the sentence
+counted four and listed three — one line below a site the same edit got right.
+
+### The corpus is 37 documents, and five live files said 36
+
+Round 43 measured the summary layer and found the boundary wrong in the file every agent reads
+first. **`content/` holds 37 documents in eight sections**; `CLAUDE.md` said *"36 documents in
+seven sections"* in two places, `docs/README.md` and `site_build_specification.md` said 36, and
+**this plan's own entry commissioning the next corpus-wide sweep said "all 36 documents"** — so
+that sweep would have started from the wrong boundary, one commit after the note above was written
+about exactly that.
+
+The 37th, `reading-diagrams/reading_ice_hockey_diagrams.md`, arrived on **31 July 2026** in commit
+`f2504ce`. The scope statements were never re-derived after it.
+
+⚠️ **Worse, Tier 0's anchor figure was superseded by the file it cites.**
+`corpus_structure_measurements.md` says *"The corpus is 37 documents and 619,227 words"* — and
+then, twelve lines below, prints a table reading *"36 documents / 532,518 words / 40.3 hours"*.
+Tier 0 quoted the table. Re-measured: **632,107 words, 47.9 hours at 220 wpm** (26 August, on the tree that shipped it). ⚠️ **This first read 630,873 / 47.8 h**, which was HEAD — the corpus before the repairs shipping alongside it. A dated figure in a method note is exactly what a later sweep quotes.
+Tier 0's whole argument is that forty hours is six books and a beginner bounces off it — **the real
+figure is nearly forty-eight**, so the stale number was understating the case for the work it
+introduces.
+
+**Historical review records keep their own counts and are correct as written** — round 21 through
+round 33 describe a corpus that genuinely was 36 documents. Only live statements were changed.
 
 ### The checker set is chosen from memory, and `check_absolutes.py` is the one that gets forgotten
 

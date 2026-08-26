@@ -169,7 +169,7 @@ So when the puck approaches the blue line, watch:
 - **Did they carry it in, dump it in, or turn it over?** Keep a mental tally for one period. You will be surprised how many entries fail entirely.
 - **Where is the defender's gap?** A defender standing on their own blue line as the carrier arrives has already lost; a defender who met them at centre with a stick-length gap has usually won.
 - **On a dump-in, how many attackers actually chase?** A dump with one chaser is a change of possession dressed up as a play.
-- **Offside** requires **both skates** to have completely crossed the blue line before the puck completely crosses it. One skate on or behind the line keeps you onside, and a skate lifted in the air over the neutral zone still counts as onside — **in the NHL and IIHF; under USA Hockey Rule 630(a) skate *contact* is required, so the lifted skate is offside.** Watch how attacking wingers deliberately drag a trailing skate.
+- **Offside** requires **both skates** to have completely crossed the blue line before the puck completely crosses it. One skate on or behind the line keeps you onside, and a skate lifted in the air over the neutral zone still counts as onside — **in the NHL and IIHF; under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 skate *contact* is required, so the lifted skate is offside in two books of the four.** Watch how attacking wingers deliberately drag a trailing skate.
 
 See [Zone Entries](../systems/zone_entries.md).
 

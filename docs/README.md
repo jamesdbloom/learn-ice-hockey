@@ -44,7 +44,7 @@ lesson once — see the four near-identical copies of the icing rule described i
 |---|---|
 | Live at | **https://learn-ice-hockey.com** (and `www.`) |
 | Repository | `github.com/jamesdbloom/learn-ice-hockey`, public |
-| Content | 36 documents, 21 adversarial review rounds |
+| Content | 37 documents; 44 numbered adversarial review rounds, with records on disk for rounds 20–44 |
 | Site | Astro, 38 pages, Pagefind search, ~6,100 internal links checked at build |
 | Hosting | S3 + CloudFront, `eu-west-2` (account id kept out of the repo) |
 | CI/CD | GitHub Actions, OIDC role assumption, no long-lived keys |

@@ -111,7 +111,7 @@ wrong costs a second narration run. See the sequencing note in §4.
 > | Phase | State | Evidence |
 > |---|---|---|
 > | 0 · Close the review | ✅ **Done, and overshot** | Targeted round 13; reached **round 22**. Records in `project/reviews/` |
-> | 1 · Repository | ✅ Done | Public at `jamesdbloom/learn-ice-hockey`; 36 documents in 7 sections; licences; agents and hooks in `.claude/` |
+> | 1 · Repository | ✅ Done | Public at `jamesdbloom/learn-ice-hockey`; 37 documents in 8 sections; licences; agents and hooks in `.claude/` |
 > | 2 · Infrastructure | ✅ Done | S3 + CloudFront, Terraform, GitHub OIDC — no long-lived keys |
 > | 3 · Website | ✅ Done | Live at **learn-ice-hockey.com**, 39 pages, Pagefind search, CI deploys on push to `main` |
 > | 4 · Speech transform | ✅ Done | `md_to_speech.py`, all 36 documents, 83 self-test assertions, **0 unrecognised constructs** after round 22 |

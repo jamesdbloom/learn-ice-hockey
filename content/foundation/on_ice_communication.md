@@ -152,7 +152,7 @@ Action: On "here", look to the voice even if you do not pass; you now know there
 Read: Judge "middle" by zone — the highest-value place to move the puck going forward, the most dangerous in your own end, where it has to be certain
 Risk: A cross-ice pass in your own zone is the highest-risk pass in hockey — weigh "far side", do not take it automatically
 Rule: A receiver already across with both skates is offside; one skate on or behind keeps them onside (NHL Rule 83.1)
-Rule: A skate in the air over the neutral zone counts as onside under NHL and IIHF rules, but not under USA Hockey, whose Rule 630(a) requires skate contact
+Rule: A skate in the air over the neutral zone counts as onside under NHL and IIHF rules, but not under USA Hockey 630(a) or Hockey Canada 6.11 — two books of the four require skate contact
 Convention: "All alone" means no support *and* outnumbered on the published definition, but some teams use it for the support half only — agree which yours means
 Never: Attack the defence alone when you hear it — slow down, protect the puck, or chip it in and wait for help
 ```
@@ -173,7 +173,7 @@ These tell the carrier that you exist and where you are. The carrier's head is o
 
 - **"Outlet"** †— *Said by the first breakout option, usually a winger on the wall or a centre swinging low.* I am your exit. **If you hear it:** move the puck and start the breakout.
 
-- **"Stretch"** — *Said by a forward who has beaten the opposition up the ice.* I am long, behind their forwards; put it up to me. (Documented as a spoken call: Sweden coach Sam Hallam lists *"Stretch!"* among the words his players shout on the ice, alongside "Over!", "Here!" and "Open!") **If you hear it:** the stretch pass is available. Check the blue line first — a stretch pass to a teammate who has already crossed with both skates is offside. One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside too **under NHL and IIHF rules — not under USA Hockey, where Rule 630(a) requires skate *contact***.
+- **"Stretch"** — *Said by a forward who has beaten the opposition up the ice.* I am long, behind their forwards; put it up to me. (Documented as a spoken call: Sweden coach Sam Hallam lists *"Stretch!"* among the words his players shout on the ice, alongside "Over!", "Here!" and "Open!") **If you hear it:** the stretch pass is available. Check the blue line first — a stretch pass to a teammate who has already crossed with both skates is offside. One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside too **under NHL and IIHF rules — not under USA Hockey or Hockey Canada, where Rule 630(a) and Rule 6.11 require skate *contact***.
 
 - **"Point"** — *Said by anyone who can see the defenceman is open.* The player at the blue line has space for a shot. **If you hear it:** get the puck up to the point, then get to the net front for the tip or rebound.
 
@@ -270,7 +270,7 @@ Rule 82.1 allows exactly **three** exceptions, and they are narrow: you may subs
 Action: The centre tells the other four skaters the play before lining up — an actual sentence, while the linesman is still skating in
 Priority: Keep the menu tiny — two or three plays everyone knows cold beat ten nobody remembers
 Action: Name a fallback for a scramble, usually "everyone takes their man", so a lost draw does not become a lost coverage
-Rule: A winger creeping inside the circle before the drop gets the *centre* thrown out of the dot, not the winger (NHL Rule 76.2)
+Rule: A winger creeping inside the circle before the drop gets the *centre* thrown out of the dot, not the winger (NHL Rule 76.6)
 Rule: A second violation by the same team on the same draw is a bench minor, so the replacement has to be clean (NHL Rule 76.7)
 Action: Agree in advance which winger steps in when the centre is tossed, and that they are looking for a safe tie-up rather than anything clever
 Convention: Use hand signals here — you can be seen but not heard, and the opposition can hear you — provided they were agreed in the dressing room

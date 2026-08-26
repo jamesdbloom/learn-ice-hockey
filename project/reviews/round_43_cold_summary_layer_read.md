@@ -640,7 +640,7 @@ act, in a corpus where hand and body are separate clauses in all four books.
   finding surfaced only because two documents happened to be open at once. A claim stated
   one way in `defender.md`'s takeaway and the opposite way in `center.md`'s, where **both
   match their own bodies**, is invisible to this pass. A **summary-versus-summary diff
-  across all 36 documents** is the next round's highest-value move, and it is cheap: the
+  across all 37 documents** is the next round's highest-value move, and it is cheap: the
   summary layers are a few dozen sections, not 8,000 lines.
 - **Only `Rule:` and `Convention:` were swept completely.** The other thirteen labels —
   `Never:`, `Action:`, `Read:`, `Risk:`, `Key:` — were read in full only in the ~18 sections

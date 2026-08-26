@@ -451,14 +451,14 @@ Position: At or just inside the offensive blue line, feet moving, on your toes
 Never: Stand still — stationary, you can neither reach a rim coming around nor retreat
 Technique: Small forward-and-back adjustments keep you able to do both
 Rule: You are offside only once both skates have completely crossed the blue line before the puck completely crosses it (NHL Rule 83) — one skate on or behind keeps you onside
-Rule: A skate raised over the neutral zone is still onside under NHL and IIHF rules; USA Hockey Rule 630(a) requires skate contact, so there it is offside
+Rule: A skate raised over the neutral zone is still onside under NHL and IIHF rules; USA Hockey 630(a) and Hockey Canada 6.11 both require skate contact, so in two books of the four it is offside
 ```
 
 Your default position as a defenceman on the forecheck is **at or just inside the offensive blue line**, feet moving, on your toes.
 
 Standing still is the mistake. If you are stationary when a rim comes around, you cannot get to it, and you cannot retreat either. Small forward-and-back adjustments keep you able to do both.
 
-Note the offside rule while you are up there: **both of your skates must completely cross the blue line before the puck completely crosses it** for you to be offside. One skate on or behind the line keeps you onside, and a skate in the air over the neutral zone still counts as onside — **under NHL and IIHF rules only; USA Hockey Rule 630(a) requires skate *contact*, so a raised skate is offside there.** This is why a defenceman can keep one heel touching the line and still reach a long way into the zone.
+Note the offside rule while you are up there: **both of your skates must completely cross the blue line before the puck completely crosses it** for you to be offside. One skate on or behind the line keeps you onside, and a skate in the air over the neutral zone still counts as onside — **under NHL and IIHF rules only; USA Hockey 630(a) and Hockey Canada 6.11 require skate *contact*, so a raised skate is offside there.** This is why a defenceman can keep one heel touching the line and still reach a long way into the zone.
 
 ### When to pinch, and when not to
 
@@ -581,7 +581,7 @@ Read: A team that has just stopped behind its own net has not yet settled who is
 Risk: Swinging with them concedes the long pass — the stretch forward is your defencemen's the whole way — and flushing commits two forecheckers before the puck is contested
 Never: Finish into the back of a defenceman facing their own end boards on a flush — take the puck, take the ice, or angle them off it
 Rule: There is no minor-penalty option for checking from behind — it is a major with an automatic game misconduct (NHL Rules 43.2–43.5, IIHF Rules 43.2–43.3)
-Rule: Body checking is prohibited in USA Hockey's "12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications" (Rule 604(a))
+Rule: USA Hockey 604(a) bans body checking at 12 & under and below, in all Girls'/Women's and non-check Adult classifications; Hockey Canada 7.3(a) bans INTENTIONAL checks, bumps, shoves and pushes at U13 and below, in female hockey and in any Member-approved division — incidental contact is not a penalty
 Convention: Which of the three you run is a coaching choice that usually follows the appetite of the rest of your system, so ask rather than picking one mid-shift
 ```
 
@@ -753,6 +753,7 @@ Full detail on the counters lives in [Breakouts](breakouts.md) and [Neutral Zone
 - **Treating F1/F2/F3 as fixed people.** Waiting for the centre to arrive so they can "be F1" hands the opposition two free seconds. Whoever is closest goes. Now.
 - **F2 following F1 into the same corner when the system did not ask for it.** Two players in one square metre are beaten by one turn, and in most shapes F2's job is the escape route, not the puck. The exception is deliberate and called from the bench: a **stacked 2-1-2** sends both at the same corner on purpose. Know which you are running before you decide someone is out of position.
 - **Arriving at full speed with no ability to stop.** You get one straight line and they get everything else. Sprint in, then get your feet under you for the last two strides.
+- **Learning to finish a check before finding out whether you may throw one.** Body checking is barred at USA Hockey 12 & under and below, in all Girls'/Women's and non-check Adult classifications (604(a)), and at Hockey Canada U13 and below, throughout female hockey and in any Member-approved division (7.3) — and both books let a local governing body go further. Where that is your classification, everything in the bullet below is a penalty, and the forecheck is your feet and your stick.
 - **Arriving a beat after the puck has gone, and thinking it costs two minutes.** NHL 56.1 lets you finish a check *"immediately following his loss of possession"* and 56.2 penalises anything later. The IIHF writes that window with a second condition on top — you must also still be inside an *"objectively reasonable window of opportunity"* (56.1) — **and do not carry any of it into a USA Hockey game.** Rule 640(b) says a player who has released a shot or pass *"are not eligible to be body checked"*, with no window at all, and the Declaration of Player Safety calls *"finishing the check"* an *"unacceptable action"*. That named minor is written *"except Adult Male Classifications"* — but it is not a free hit there either: 640 Note 2 directs a roughing penalty for *"an avoidable body check to an opponent … who is no longer in control of the puck"* with no classification exception. **There the test is whether you could have avoided it, not how late you were.** And the ceiling is not a minor: **IIHF 56.5 reaches a major plus a game misconduct with nobody hurt**, which is the British reader's book, and Hockey Canada 8.3(b) reaches the same tier on *"the degree of violence of the impact"* with nobody hurt, and makes it mandatory where a late hit injures. If you cannot arrive on contact, do not go.
 - **Forechecking to hit rather than to take away options.** A missed hit removes you from the play. A completed hit that doesn't win the puck removes you too. Angling removes only them.
 - **Skating at the puck instead of at the space you want to deny.** Chasing the puck is the beginner's version of forechecking and every defenceman in the league beats it.
@@ -808,6 +809,8 @@ document, that is named too.*
    job? *(§1-3-1 — the modern trap-adjacent forecheck)*
 
 ---
+
+⚠️ **Before any of these: find out whether you may body check at all.** It is barred at USA Hockey 12 & under and below, in all Girls'/Women's and non-check Adult classifications (604(a)), and at Hockey Canada U13 and below, throughout female hockey, and in any Member-approved division (7.3) — and both books let a local governing body go further. Where it is barred, the forechecking here is still yours; the contact is not.
 
 ## Key Takeaways
 

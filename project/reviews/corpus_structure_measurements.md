@@ -36,7 +36,7 @@ decision only the owner can make.
 | 4 / 4b | Entry paths | **NOT STARTED** — five new documents |
 | 5 | Reader test | **NOT DONE, and cannot be done here** |
 
-**The corpus is 37 documents and 619,227 words.** That number has not moved. Everything since
+**The corpus was 37 documents and 619,227 words when this was written.** ⚠️ **It has moved since** — see the table below, re-measured at round 44. The sentence originally read *"That number has not moved"*, and stood unchanged twelve lines above a table that falsified it. Everything since
 16 August has been correctness work, and two documents are *longer* than they were.
 
 ⚠️ **Twenty instances of one defect were found in this stretch**, across eight `safety-reviewer`
@@ -48,8 +48,8 @@ penalty-tier claim.**
 ## The measurement that reframes everything else
 
 ```
-36 documents          532,518 words          40.3 hours of reading at 220 wpm
-mean document         14,392 words           ~65 minutes each
+37 documents          632,107 words          47.9 hours of reading at 220 wpm
+mean document         17,083 words           ~78 minutes each
 ```
 
 **Forty hours is six full-length books.** That is the accuracy work of twenty-seven

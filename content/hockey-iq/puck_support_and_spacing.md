@@ -209,7 +209,7 @@ Position: Further up ice than the carrier
 Goal: Gain territory — this is the only one of the three angles that gains ground
 Risk: The most interceptable of the three, and if it fails you are behind the play and cannot recover
 Rule: Offside needs both skates completely over the line before the puck completely crosses it (NHL Rule 83)
-Rule: A raised trail skate is onside under NHL and IIHF rules, but USA Hockey Rule 630(a) requires skate contact
+Rule: A raised trail skate is onside under NHL and IIHF rules, but USA Hockey 630(a) and Hockey Canada 6.11 both require skate contact — two books of the four
 Action: Time your entry rather than parking in the zone
 ```
 
@@ -217,7 +217,7 @@ You are further up ice than the carrier.
 
 - **What it offers:** territory. This is the only one of the three that gains ground, and gaining ground is how you score.
 - **The cost:** it is the most interceptable, and if it fails you are behind the play and cannot recover.
-- **The offside constraint:** a pass to a teammate ahead of you into the offensive zone only works if they are onside. **Offside requires both skates to have completely crossed the blue line before the puck completely crosses it.** One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside **under NHL and IIHF rules — not under USA Hockey, where Rule 630(a) requires skate *contact***. So the ahead-of-the-puck option at the blue line is real but requires the receiver to time their entry, not just park in the zone.
+- **The offside constraint:** a pass to a teammate ahead of you into the offensive zone only works if they are onside. **Offside requires both skates to have completely crossed the blue line before the puck completely crosses it.** One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside **under NHL and IIHF rules — not under USA Hockey or Hockey Canada, where Rule 630(a) and Rule 6.11 require skate *contact***. So the ahead-of-the-puck option at the blue line is real but requires the receiver to time their entry, not just park in the zone.
 
 ### The principle: all three at once
 

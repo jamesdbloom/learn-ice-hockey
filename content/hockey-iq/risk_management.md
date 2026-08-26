@@ -186,7 +186,7 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 ### 4. Never both defencemen to the puck
 
 ```facts
-Never: Send both defencemen to the same puck — you commit 100% of your defensive-zone depth to a 50/50 battle
+Never: Send both defencemen to the same puck — you commit 100% of your defensive-zone depth to a 50/50 battle, and where an aggressive system does send both low, somebody is still home
 Risk: Lose it and there is literally no one between the puck and your goalie
 Action: One goes and takes the body or the puck; the partner covers the space it will squirt into, staying between puck and net
 Action: Talk about it out loud
@@ -283,7 +283,7 @@ Rule: "Directly (non-deflected)" is the operative wording — a puck deflected o
 Rule: What counts is where the puck was when you hit it, not where it crossed the glass (NHL Rule 63.2(iii))
 Rule: Over the glass behind the players' bench is penalised; into the bench itself is not (NHL Rule 63.2(iii))
 Rule: Directly off a faceoff, no penalty is assessed (NHL Rule 63.2(iii))
-Rule: USA Hockey has no equivalent — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
+Rule: USA Hockey 610(c) penalises only a deliberate shoot-out and 631(d) makes an accidental one a last-play faceoff; Hockey Canada 10.1(ii) is deliberate-only for skaters, but 10.1(v) reaches a goaltender who puts it directly out with their stick either way
 Rule: Even where no penalty applies, the faceoff goes to the nearest spot in the zone the puck was shot from (NHL Rule 85.1)
 Action: Off the glass and out — hard, low and along the boards so it stays in; if you are panicking, aim lower than feels right
 Action: Check your league — many recreational and youth associations do not enforce puck-over-glass at all
@@ -296,7 +296,7 @@ Action: Check your league — many recreational and youth associations do not en
 - **Over the glass behind the players' bench is penalised.** Into the bench itself is not.
 - **Directly off a faceoff, no penalty is assessed.**
 
-**USA Hockey has no equivalent minor.** Rule 610(c) reaches only the player who "delays the game by **deliberately** shooting or batting the puck outside the playing area", and Rule 631(d) makes the accidental one a stoppage rather than a penalty: "if the puck is accidentally shot or deflected out of play … a last play face-off will occur in the zone where the puck was shot or the deflection occurred." Under that book the panicked clear over the glass costs you a defensive-zone draw, not two minutes.
+**Neither North American book has the NHL's strict-liability version.** **Hockey Canada** splits it by who you are: Rule 10.1(ii) reaches only a skater who *"deliberately shoots, bats, or throws"* it out, from anywhere; **10.1(v) reaches a goaltender who shoots or bats it *"directly"* out *"with their stick"*, deliberate or not.** And **USA Hockey has no equivalent minor either.** Rule 610(c) reaches only the player who "delays the game by **deliberately** shooting or batting the puck outside the playing area", and Rule 631(d) makes the accidental one a stoppage rather than a penalty: "if the puck is accidentally shot or deflected out of play … a last play face-off will occur in the zone where the puck was shot or the deflection occurred." Under that book the panicked clear over the glass costs you a defensive-zone draw, not two minutes.
 
 **Rec-league note:** in a rink with no glass along a stretch of boards, the rule does not apply there — and many recreational and youth associations do not enforce puck-over-glass at all. Check your league. Even where there is no penalty, NHL **Rule 85.1** puts the faceoff at the nearest spot *in the zone the puck was shot from*, so you have bought yourself a defensive-zone draw for nothing.
 
@@ -668,8 +668,8 @@ Bad decisions are the most coachable thing in hockey, because unlike a shot or a
 - **Making the decision after receiving the puck.** By then your options have halved. The scan comes first; the hierarchy is just what you do with what the scan told you.
 - **Stickhandling out of trouble instead of relocating out of it.** One stride to the wall changes the risk of every option on your list. Do that before you decide, not instead of deciding.
 - **Chasing the puck carrier from behind after a turnover, where your team's system did not ask for it.** You will not catch them, and if you foul them from behind you have converted your turnover into a penalty shot under Rule 57.3. Where pressuring the carrier *is* the system, that penalty-shot exposure is exactly why it is your feet and your stick and never a hit from behind. ⚠️ **And do not price the foul at a minor unless you are under the NHL's Rule 57** — IIHF 57.3/57.4 and USA Hockey 639(b) reach a major plus a game misconduct for a reckless trip, USA Hockey's mandatorily — and Hockey Canada 8.6(b) reaches that same tier whenever the trip *injures*, reckless or not — and a slide called as clipping or slew-footing leaves 8.6 altogether for 8.7 or 8.8, which reach a match penalty.
-- **Both defencemen going to the same puck.** Almost always caused by nobody saying anything. It is a communication failure that presents as a positional one.
-- **Panicking the puck over the glass.** The most avoidable minor penalty in hockey. Aim lower, use the boards, or eat the hit — skates parallel to the wall, forearm and hip, and never your back to the boards.
+- **Both defencemen going to the same puck with neither knowing who has the goalmouth.** Almost always caused by nobody saying anything. Some aggressive systems send both low on a read — what never varies is that somebody is home. It is a communication failure that presents as a positional one.
+- **Panicking the puck over the glass.** The most avoidable minor penalty in hockey **under the NHL and IIHF, where a direct, non-deflected clear from your own zone is strict liability.** **USA Hockey has no equivalent:** Rule 610(c) reaches only a puck *"deliberately"* shot or batted out, and 631(d) makes an accidental one a last-play faceoff rather than a penalty. **Hockey Canada is a third answer:** Rule 10.1(ii) reaches only a puck a skater *"deliberately shoots, bats, or throws"* out, with no zone limit — but **10.1(v) has no deliberateness requirement for a goaltender** who shoots or bats it *"directly"* out *"with their stick"* — a deflection or a glove clearance is not that offence. Most North American amateurs are under one of those two books — so find out which you are in before you treat this as the risk it is on television. Aim lower, use the boards, or eat the hit — skates parallel to the wall, forearm and hip, head up and chin off your chest, and never your back to the boards.
 - **Changing lines because you are tired rather than because the situation allows it.** Tiredness is not a green light. The play dictates the change, not your lungs.
 - **Not raising your risk level when trailing late.** Playing "responsibly" while losing 3-1 with four minutes left is not responsible. It is a slow-motion concession.
 - **Compounding.** One bad decision followed by a worse one to fix it. This costs more goals than the original mistakes ever did.

@@ -1,6 +1,6 @@
 # Ice Hockey Documentation Project
 
-A corpus of 36 documents teaching people to play ice hockey, plus an Astro site
+A corpus of 37 documents teaching people to play ice hockey, plus an Astro site
 and a text-to-speech pipeline that publish it.
 
 ---
@@ -196,7 +196,7 @@ whichever one wrote first.
 ## Repository layout
 
 ```
-content/            The corpus. 36 documents in seven sections. The product.
+content/            The corpus. 37 documents in eight sections. The product.
 project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds remaining work
                     plus the standing guidance for doing it — method notes, environment
                     facts, gate conditions. **No completed items:** when work closes it
