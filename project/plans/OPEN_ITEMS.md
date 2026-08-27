@@ -14,7 +14,7 @@ or a structural change too large to fold into a repair.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 632,592 words — 47.9 hours of
+These outrank everything below. The corpus is **37 documents and 634,225 words — 48.0 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
@@ -56,20 +56,90 @@ on television*, Route 4 *You play in Britain*. **All three requested, plus one.*
 
 ---
 
-**⬜ Four documents have Key Takeaways that are essays. The other 33 are fine.**
+**⬜ Three documents have Key Takeaways that are essays. The other 34 are fine.**
 
-Derived 27 August, after correcting a parser fault described below: the Key Takeaways layer is
-**25,632 words, 4.1% of the corpus**, and its **median is 59 words per numbered takeaway** — which
-is a takeaway. The style guide asks for *"Numbered, 5–10 items. Each one standalone and memorable
-— this feeds the podcast's 'if you only remember N things' segment."* **33 of 37 documents meet
-that.** Four do not:
+Derived 27 August, after correcting the parser fault described below **twice**: the Key Takeaways
+layer was **25,188 words, 4.0% of the corpus** before this work and is **24,557 words, 3.9%**
+after the first document, with its **median unmoved at 59 words per numbered takeaway** — which
+is a takeaway. The median was never the problem and the rewrite did not chase it.
 
-| document | words | items | words per "takeaway" |
-|---|---|---|---|
-| `foundation/rules_primer` | 2,494 | 10 | **249** |
-| `technique/body_contact_and_battles` | 2,135 | 10 | **213** |
-| `reading-diagrams/reading_ice_hockey_diagrams` | 742 | 5 | **148** |
-| `systems/defending_the_rush` | 1,164 | 10 | **116** |
+⚠️ **And be honest about how far the first document actually moved: 214 → 150 words per item, not
+to the median.** The first draft reached **124**, and every subsequent correction *added* words —
+scope restored to a four-book generalisation, an exception named, an attribution split from the
+rule it had been welded to. **The compression that looked best was the one that was wrong.** Plan
+the remaining two documents for roughly a 30% reduction with claims intact, not for 59. The style guide asks for *"Numbered, 5–10 items. Each one
+standalone and memorable — this feeds the podcast's 'if you only remember N things' segment."*
+**34 of 37 documents meet that.** Three do not:
+
+| document | words | items | words per "takeaway" | status |
+|---|---|---|---|---|
+| `foundation/rules_primer` | 2,494 | 10 | **249** | ⬜ |
+| `technique/body_contact_and_battles` | 2,135 | 10 | **214** | ✅ rewritten to 1,504 / **150**, [round 49](../reviews/round_49_takeaways_that_were_essays.md) |
+| `systems/defending_the_rush` | 1,164 | 10 | **116** | ⬜ |
+
+The cliff is clean: 249, 214, 116, then **99** (`foundation/uk_rules`) and a smooth tail to the
+median. Nothing below 116 is a defect.
+
+⚠️ **Decide this before rewriting the next document.** Round 49's rewrite replaced content
+with intra-document pointers in six takeaways. `md_to_speech.py` keeps link text and drops the
+URL, so a listener hears a bare section title with no destination. The corpus already used the
+device — but in all three precedents (`skating.md`, `puck_handling.md`, `mental_game.md`) the
+pointer is **supplementary**: the item teaches the thing completely and *then* says where more
+is. Round 49 used it **substitutively** in three items, and [MA1](../reviews/round_49_takeaways_that_were_essays.md)
+is what happens when a substitutive pointer is aimed at the wrong heading — the content is
+simply gone, and `check_links.py` passes because the anchor resolves. **Prefer supplementary
+pointers. Where an item must shed content, check the target section actually contains it.**
+
+⚠️ **A review record drifts out of true while you edit it, and no checker reads prose.** Round 49's
+record contradicted the tree six times across two gate blocks — a stale fact count, an understated gate-run count, and a
+`Deferred` entry describing a three-way split that was tried and abandoned. The last one was found
+by the gate one audit before it would have been committed, and it would have mis-directed exactly
+the author the rule below sends to look. **Before staging a review record, re-derive every count in
+it from the file it certifies, and sweep the file for every superseded figure the round produced.**
+And **do not put a running total in a record that a gate audits** — a gate that blocks on the count
+increments the number the next audit checks, and the field can never converge.
+
+⚠️ **Before splitting or renaming a section, grep `project/reviews/` for its heading.** Round 49
+split `### The four that cause the injuries` and silently regressed round 33's **CR52** — a
+critical whose fix was a blockquote naming that section as the one place a non-checking or British
+reader could find the four fouls that bind every division. The obligation lived in a review record,
+not in the file, so nothing in the working tree showed it and three reviewers passed the split
+before a fourth caught it. **A section that was the subject of a past critical carries obligations
+invisible to anyone reading only the document.**
+
+⚠️ **Edit structurally, not by string replacement.** Round 49 made three separate insertions that
+landed in the wrong place in a 1,200-line file — one matched the *first* of two identical strings
+and put a four-book penalty ladder in the Overview, inside a quotation, breaking emphasis parity;
+one put a heading a paragraph too early, so eight facts summarised a neighbouring section; one put
+a paragraph before the text it referred back to. **No checker caught any of them** — `check_facts`,
+`check_links`, `check_absolutes` and a clean `npm run build` all passed on the worst of the three.
+Before any structural edit: print the section map. After: print it again and diff it. And assert
+emphasis parity across changed lines, because markdown will render a broken span silently.
+
+**Orphan citations already found in the two remaining documents** — claims their Key Takeaways
+make that their bodies never make, so trimming without moving them would delete them from the
+corpus. Each needs verifying against primary text and moving into the body *before* its takeaway
+is touched, exactly as `body_contact_and_battles.md`'s suspension block was:
+`rules_primer.md` — **NHL 59.2**. `defending_the_rush.md` — **Hockey Canada 8.8(b) and 8.8(e)**
+(the body reaches only 8.8(c)).
+
+⚠️ **`reading-diagrams/reading_ice_hockey_diagrams` was on this list and does not belong on it.**
+It was recorded at 742 words / 5 items / 148 per item. It is **298 words / 5 items / 60 per
+item** — the corpus median, and the shortest takeaway item in it is 15 words. The 444-word
+difference is its **Sources footer**, counted as takeaway text. This is the *same parser fault*
+the correction below describes, surviving the correction: the fix bounded the slice on the `---`
+rule before the footer, and this is **the one document of 37 that has no `---` there at all**, so
+the slice ran to end of file. A fault whose fix is itself unstressed is not fixed. Bound the slice
+on the footer's own opening (`*Sources`) as well as on `---` and `##`.
+
+**⬜ And fix the document, not just the parsers.** The site build corroborates this
+independently: `npm run build` emits `warn reading-diagrams/reading_ice_hockey_diagrams: no
+citation paragraphs found under Sources` — the Astro metadata extractor cannot parse that
+footer either, for the same missing `---`. **Three separate tools have now been defeated by
+one absent separator.** Adding the `---` makes the document structurally identical to the
+other 36 and removes the trap at source. It is a one-line structural change touching no claim,
+but it touches `content/`, so it needs its own review and its own commit — do not fold it into
+another change.
 
 ⚠️ **This item has been wrong in both directions and the second error was mine.** It read *"48,673
 words: 9% of the corpus is its own summary"* for seventeen rounds — a **volume** framing, which is
@@ -1045,9 +1115,22 @@ sweeps for `29`.
   Another flagged a quotation for a missing em-dash the book actually contains. Re-derive.
 - **A script that reports a miss has not made the change.** Two false completion claims in
   one session came from reading the summary rather than the report.
-- **Bound a Key Takeaways slice on the `---`, not on the next `##`.** The Sources block has no
-  heading, so "until the next `##`" runs to end of file — that put a 66-word takeaway at 675
-  and the wrong figure reached a review record.
+- **Bound a Key Takeaways slice on the `---` *and* on `*Sources`, not on the next `##`.** The
+  Sources block has no heading, so "until the next `##`" runs to end of file — that put a
+  66-word takeaway at 675 and the wrong figure reached a review record. **Bounding on the `---`
+  alone is still wrong**, because `reading_ice_hockey_diagrams.md` is the one document of 37 with
+  no `---` before its footer: the corrected parser read its 27-word takeaway as 471 words and put
+  a compliant document on a defect list. **Two successive fixes to this one boundary were each
+  shipped without being tested against the corpus they were about to measure.** Print the last
+  line of any slice before believing its length.
+- **A claim can live in the summary layer and nowhere else, and no checker looks for it.** The
+  whole suspension-and-supplementary-discipline claim in `body_contact_and_battles.md` — USA
+  Hockey 404(b) and 411, NHL 23.5 and 23.6, Hockey Canada 4.8(c), IIHF 28.1 — existed **only in
+  Key Takeaway 6**. The body never made it, so no rules review had ever reached it: reviewers
+  check the summary against the body, and this had no body to check against. It survived because
+  shortening a takeaway is the only operation that would have exposed it. **Before trimming any
+  summary item, grep each of its citations against the rest of its own document** — what appears
+  nowhere else is not surplus, it is the corpus's only copy.
 - **Enumerated lists in these extractions are not uniformly formatted.** NHL 23.6's Physical
   Infractions Category puts seven roman numerals on their own line and the eighth,
   `(viii) Kneeing`, on one line with its label — so a regex keyed to the first seven silently
