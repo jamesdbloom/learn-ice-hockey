@@ -56,36 +56,50 @@ on television*, Route 4 *You play in Britain*. **All three requested, plus one.*
 
 ---
 
-**⬜ The Key Takeaways are not takeaways — the one item in this tier that is genuinely open, and it
-is worse than the tier said.** Derived 26 August: **60,033 words, 9.5% of the corpus** — the tier
-said 48,673 and 9%, low by **23%**, the same shape as its own anchor figure being low by 18% until
-round 43.
+**⬜ Four documents have Key Takeaways that are essays. The other 33 are fine.**
 
-**But the count was never the defect, and reading the number that way is why the item has not
-moved.** The style guide asks for *"Numbered, 5–10 items. Each one standalone and memorable — this
-feeds the podcast's 'if you only remember N things' segment."* The corpus **complies on count** —
-33 of 37 are at ten or fewer. It fails on **length**:
+Derived 27 August, after correcting a parser fault described below: the Key Takeaways layer is
+**25,632 words, 4.1% of the corpus**, and its **median is 59 words per numbered takeaway** — which
+is a takeaway. The style guide asks for *"Numbered, 5–10 items. Each one standalone and memorable
+— this feeds the podcast's 'if you only remember N things' segment."* **33 of 37 documents meet
+that.** Four do not:
 
-| document | Key Takeaways | items | words per "takeaway" |
+| document | words | items | words per "takeaway" |
 |---|---|---|---|
-| `body_contact_and_battles` | 4,007 | 10 | **400** |
-| `equipment` | 3,843 | 10 | **384** |
-| `rules_primer` | 3,103 | 10 | **310** |
-| `conditioning_and_recovery` | 2,950 | 10 | **295** |
-| `mental_game` | 2,686 | 10 | **268** |
+| `foundation/rules_primer` | 2,494 | 10 | **249** |
+| `technique/body_contact_and_battles` | 2,135 | 10 | **213** |
+| `reading-diagrams/reading_ice_hockey_diagrams` | 742 | 5 | **148** |
+| `systems/defending_the_rush` | 1,164 | 10 | **116** |
 
-**A 400-word takeaway is not a takeaway, and it is certainly not "if you only remember ten
-things".** A reader who skips to the takeaways to save time reads a second document — which is the
-tier's original point, arrived at from the wrong measurement.
+⚠️ **This item has been wrong in both directions and the second error was mine.** It read *"48,673
+words: 9% of the corpus is its own summary"* for seventeen rounds — a **volume** framing, which is
+not actionable and is why it never moved. Round 47 restated it as 60,033 words and 9.5%, calling
+the old figure 23% low. **That was worse.** My extraction took everything between `## Key
+Takeaways` and the next `##`, and in **36 of 37 documents** the Sources block and disclosure
+footer sit inside that span with no heading to separate them — so **34,401 words of citations and
+provenance were counted as takeaways.** The true figure is 4.1%, not 9.5%, and the original 48,673
+was itself nearly double the truth.
 
-Four documents also exceed the 5–10 cap: `practice_and_development`, `switching_positions`,
-`scanning_and_anticipation`, `neutral_zone_systems`, all at 11.
+**4.1% of a corpus being its summary layer is reasonable. The volume was never the defect.** The
+defect is four documents whose individual takeaways are 100–250 words each, and it was invisible
+under every word-total framing this item has had.
 
-⚠️ **Round 38's finding must shape this pass, not be rediscovered by it:** it fixed
-`rules_primer.md` and found that **every critical it sustained came from compressing rather than
-splitting**. The failure mode of shortening a takeaway is dropping the qualification that made it
-true — which is exactly what rounds 43–45 spent themselves on. **MA23 (Tier 2) is this same defect
-in one file.**
+⚠️ **And the failure mode is the one this session spent itself on.** A number was derived, checked,
+committed and pushed, and it was wrong because the tool that produced it was never stressed. It was
+caught by reading the text behind it — a 1,954-word "takeaway" that turned out to be 200 words of
+takeaway and 1,750 of Sources footer — not by any checker. **A figure merely wrong rather than
+absurd would have shipped.** `scripts/check_counts.py` cannot see this class and says so.
+
+**The fix, and what makes it safe.** Round 38 fixed `rules_primer.md` and found that **every
+critical it sustained came from compressing rather than splitting** — shortening a takeaway drops
+the qualification that made it true. So do not compress. In `body_contact_and_battles.md`'s
+takeaway 1, the 204 words are a memorable assertion plus a rule dump — 604(c), 604(d), 604(e),
+Hockey Canada 7.3 — **and every one of those citations already exists in the body of the same
+document.** The takeaway can keep the assertion and point; nothing is deleted, non-negotiable 3 is
+untouched, and no detail has to move.
+
+**Four documents, one at a time, each reviewed before the next.** Not a corpus-wide pass — the
+corpus does not need one.
 
 **⬜ Gaps the entry paths exposed — content that does not exist.** Absences no review round finds,
 because a reviewer checks what is written. **Now actionable rather than blocked:** the four routes
@@ -331,7 +345,7 @@ closing sentence names what that cannot reach: a claim stated one way in `defend
 takeaway and the opposite way in `center.md`'s, **where both match their own bodies**, is
 invisible to it. The KHL finding surfaced only because two documents happened to be open at
 once. **This is the highest-value move on the list and it is cheap** — the summary layers of
-all 37 documents are 85,820 words across 74 sections — large, but a fraction of the corpus — and they are the layer the
+all 37 documents are **51,978 words across 74 sections** — large, but a fraction of the corpus — ⚠️ **round 44 recorded 85,820 here**, inflated by 34,403 words of Sources footers swept into the section span; see round 48 — and they are the layer the
 podcast extracts.
 
 Things no current check can see.

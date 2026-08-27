@@ -38,14 +38,23 @@ Britain*. **All three requested, plus one.**
 
 ## The one that is open, and the measurement that was hiding it
 
-**The Key Takeaways.** The tier said **48,673 words, 9%**. Derived: **60,033 words, 9.5%** — low by
-**23%**, the same shape as this tier's anchor figure being low by 18% until round 43.
+**The Key Takeaways.** The tier said **48,673 words, 9%**. This record originally said **60,033
+words, 9.5%**, and called the tier's figure 23% low.
 
-**But the count was never the defect.** The style guide asks for *"Numbered, 5–10 items. Each one
-standalone and memorable — this feeds the podcast's 'if you only remember N things' segment."* The
-corpus **complies on count**: 33 of 37 sit at ten or fewer. It fails on **length** —
-`body_contact_and_battles` averages **400 words per numbered takeaway**, `equipment` 384,
-`rules_primer` 310.
+⚠️ **Both numbers are wrong and the second one is mine.** Corrected 27 August: the layer is
+**25,632 words, 4.1% of the corpus**. My extraction took everything between `## Key Takeaways`
+and the next `##`, and in **36 of 37 documents** the Sources block and disclosure footer sit
+inside that span with no heading between — so **34,401 words of citations and provenance were
+counted as takeaways**. The tier's original 48,673 was itself nearly double the truth. See
+[`round_48_the_measurement_was_the_defect.md`](round_48_the_measurement_was_the_defect.md).
+
+**But the count was never the defect, and neither was the volume.** The style guide asks for
+*"Numbered, 5–10 items. Each one standalone and memorable."* The corpus **complies on count**
+and, at a corrected median of **59 words per takeaway**, largely complies on length too.
+**Four documents of 37 do not** — `rules_primer` at 249 words per item,
+`body_contact_and_battles` at 213, `reading_ice_hockey_diagrams` at 148,
+`defending_the_rush` at 116. (The 400/384/310 figures in the first version of this paragraph
+were inflated by the same parser fault.)
 
 **A 400-word takeaway is not a takeaway.** Stating the item as a word total let it read as a
 volume problem, which is not actionable; stating it as words-per-item makes the defect and its fix
