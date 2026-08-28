@@ -554,16 +554,15 @@ document, that is named too.*
 ## Key Takeaways
 
 1. **Vision is not a gift, it is a habit of looking early.** Players who seem to see everything have already looked, at moments when looking cost them nothing.
-2. **Scan before the puck comes to you.** The one to three seconds while it travels is the highest-value window in hockey, and most players spend it watching the puck approach.
+2. **Scan before the puck comes to you, and decide before it arrives.** The one to three seconds while it travels is the highest-value window in hockey, and most players spend it watching the puck approach. Use it instead to name your first option and your bail-out, so the puck's arrival triggers an action instead of starting a decision.
 3. **A scan is a head turn over both shoulders, without losing a stride** — a snapshot rather than a stare. The last look is always back at the puck.
 4. **Keep the puck as your anchor and spend your extra looks on people and space** — pressure on you, your outlet options, the danger you are responsible for, the space you could use. This is not "stop watching the puck", and the evidence for the anchor is imported: eye-tracking of five elite **football** players watching a **ball** carrier, not hockey.
-5. **Decide before the puck arrives.** Name your first option and your bail-out while it travels, so its arrival triggers an action instead of starting a decision.
-6. **Read the chest and hips, not the head, hands or stick** — the head and hands are the tools of deception. That is where to weight your attention, though, not a single cue you can read in isolation, and the evidence is rugby rather than hockey.
-7. **Read shape, not just bodies.** A forecheck's structure tells you where pressure will arrive; a defenceman's gap and feet tell you what they have already committed to.
-8. **The most advanced read is where the puck will be next** — where a rim ends up, where a rebound kicks, and which battles you will lose, so you can play the loose puck instead.
-9. **You cannot scan if you have to look at the puck.** Head-up puck control is the entry requirement for everything else here.
-10. **Anticipation is acting on information; guessing is acting on hope.** The test is whether your position is still useful when you are wrong.
-11. **What is measured in hockey is scanning versus not scanning — not how often.** Berg and colleagues (2025) hand-coded **2,545 puck receptions by 88 SHL and SDHL professionals**, who averaged **1.48 scans in the five seconds before receiving** and took at least one scan in only **61%** of those receptions. The action after reception succeeded **78.8%** of the time when the player had scanned, against **70.1%** when they had not — a difference of **8.7 percentage points (95% CI [5.3%, 12.1%])**. Going from no scan to one is measured; going from two to four is not, and the authors say so themselves: they *"cannot say whether a higher scanning frequency would be more beneficial compared to a lower one."*
+5. **Read the chest and hips, not the head, hands or stick** — the head and hands are the tools of deception. That is where to weight your attention, though, not a single cue you can read in isolation, and the evidence is rugby rather than hockey.
+6. **Read shape, not just bodies.** A forecheck's structure tells you where pressure will arrive; a defenceman's gap and feet tell you what they have already committed to.
+7. **The most advanced read is where the puck will be next** — where a rim ends up, where a rebound kicks, and which battles you will lose, so you can play the loose puck instead.
+8. **You cannot scan if you have to look at the puck.** Head-up puck control is the entry requirement for everything else here.
+9. **Anticipation is acting on information; guessing is acting on hope.** The test is whether your position is still useful when you are wrong.
+10. **What is measured in hockey is scanning versus not scanning — not how often.** Berg and colleagues (2025) hand-coded **2,545 puck receptions by 88 SHL and SDHL professionals**, who averaged **1.48 scans in the five seconds before receiving** and took at least one scan in only **61%** of those receptions. The action after reception succeeded **78.8%** of the time when the player had scanned, against **70.1%** when they had not — a difference of **8.7 percentage points (95% CI [5.3%, 12.1%])**. Going from no scan to one is measured; going from two to four is not, and the authors say so themselves: they *"cannot say whether a higher scanning frequency would be more beneficial compared to a lower one."*
 
 ---
 

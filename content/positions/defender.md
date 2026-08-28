@@ -268,7 +268,8 @@ Position: Between the puck carrier and your net, facing the oncoming play, closi
 Read: Step up at the blue line only if you are confident you can win the puck or force a turnover — otherwise back up under control and deny a clean entry
 Goal: Prevent a clean zone entry; force a dump-in or a turnover
 Risk: Step up and miss and you leave your partner alone in a 2-on-1
-Never: Step up in the neutral zone unless you are certain you can win the puck
+Never: Step up in the neutral zone unless you are confident you can win the puck — confidence, not hope
+Convention: How aggressive "confident" should be is a coaching choice — an aggressive neutral-zone press wants you challenging the line, a passive trap wants you holding
 ```
 
 **Where to be:** Between the puck carrier and your net, facing the oncoming play, closing the distance as they come.
@@ -277,7 +278,7 @@ Never: Step up in the neutral zone unless you are certain you can win the puck
 
 **Goal:** Prevent a clean zone entry. Force a dump-in or a turnover.
 
-**Key considerations:** Don't step up in the neutral zone unless you are certain you can win the puck. If you step up and miss, you leave your partner alone in a 2-on-1 (the most common form of odd-man rush — two attackers against one defender, with the defender forced to choose between covering the shot or the pass). When in doubt, maintain your position and back up under control.
+**Key considerations:** Don't step up in the neutral zone unless you are confident you can win the puck — confidence, not hope. If you step up and miss, you leave your partner alone in a 2-on-1 (the most common form of odd-man rush — two attackers against one defender, with the defender forced to choose between covering the shot or the pass). When in doubt, maintain your position and back up under control. **How aggressive "confident" should be is a coaching choice** — an aggressive neutral-zone press wants you challenging at the line, a passive trap wants you holding and steering the carrier wide. [Defending the Rush](../systems/defending_the_rush.md) sets out the trade-off in full; ask which risk your coach wants to carry.
 
 #### Gap control — the method
 

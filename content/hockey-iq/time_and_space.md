@@ -302,7 +302,7 @@ Practical detail: one hand on the stick to extend reach when you are closing spa
 Key: Lone pressure does not take space away, it moves it — behind you
 Action: Send pressure only with a second layer, positioned to take the puck if the first forces a rushed play and to cover the ice they left
 Convention: The house default here is a 2-1-2 forecheck and a low zone collapse — F1 pressures, F2 takes the first escape option, F3 holds the high middle
-Convention: F1/F2/F3 are roles defined by order of arrival, not by position — whoever gets there first is F1
+Key: F1/F2/F3 are roles defined by order of arrival, not by position — whoever gets there first is F1
 Options: A 1-2-2 holds two back and denies the neutral zone entirely; a 1-3-1 trap concedes more and denies harder
 Action: Find out what your team plays before your first shift, and go on the same trigger as everyone else
 Risk: If you go and your teammate doesn't, you have made a hole rather than closed one

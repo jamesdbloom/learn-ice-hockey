@@ -163,7 +163,7 @@ Knowing the concept is worthless without the habits that produce it. Four practi
 ### F1, F2, F3 are roles, not people
 
 ```facts
-Convention: F1, F2 and F3 are roles defined by order of arrival — first, second and third to the puck — not by whether you are a centre or a winger
+Key: F1, F2 and F3 are roles defined by order of arrival — first, second and third to the puck — not by whether you are a centre or a winger
 Key: Where arrival order and depth in the zone do not coincide, arrival order is what decides the label
 Convention: "Hunt, help, high" is the forecheck shorthand — F1 hunts the puck, F2 helps F1, F3 stays high
 Position: One player below the puck, one level with it and one above — the outlet that lets the puck go back to safety and can attack the net from behind, the close support, and the shooting option

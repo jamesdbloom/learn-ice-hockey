@@ -14,7 +14,7 @@
 
 A **faceoff**, or **draw**, is how play starts and restarts: an official drops the puck between the sticks of two opponents, and whoever wins it gives their team possession. There are roughly **56 in an average NHL game** — 56.6 per game in 2024-25 and 56.0 in 2025-26, computed from the NHL's official statistics — and they are the only moments where you know in advance where the puck will be and when.
 
-**Most of them matter far less than people think.** Across eleven NHL seasons, a team's faceoff win percentage explains only around 6% of the variation in the share of standings points it takes, and the relationship is unstable enough to have gone slightly negative in one of those seasons. That is a **team-level** figure, and it is the one people mean when they say faceoffs are overrated. So do not chase your faceoff percentage. Chase the ten or fifteen draws a game where the outcome actually changes something.
+**Most of them matter far less than people think.** Across eleven NHL seasons, a team's faceoff win percentage explains only around 6% of the variation in the share of standings points it takes, and the relationship is unstable enough to have gone slightly negative in one of those seasons. That is a **team-level** figure, and it is the one people mean when they say faceoffs are overrated. So do not chase your faceoff percentage. Chase the ten or fifteen draws a game where the outcome actually changes something — a coaching estimate of how many carry real consequence, not a counted figure.
 
 **The one loss that hurts immediately is a draw in your own end.** Lost cleanly, it puts a set opponent running a prepared play into the most dangerous ice on the rink while your five are stationary and facing the wrong way.
 
@@ -49,7 +49,7 @@ Priority: Prepare the situational draws, not the league-average one
 Risk: A defensive-zone draw lost cleanly puts a set opponent into the most dangerous ice while you are stationary
 Action: Fix the free failure modes — a winger creeping over a line is an information problem, not a skill one
 Key: A 22-point spread between the best and worst NHL centres means this is learnable, not luck
-Never: Chase your faceoff percentage — chase the ten or fifteen draws a game that change something
+Never: Chase your faceoff percentage — chase the ten or fifteen draws a game that change something; that count is a coaching estimate, not a measurement
 ```
 
 Because *average* is the wrong frame. The honest case for faceoffs is not "win more draws, win more games." It is four narrower claims, and all four survive the evidence.
@@ -59,7 +59,7 @@ Because *average* is the wrong frame. The honest case for faceoffs is not "win m
 - **The failure modes are free to fix.** Getting your centre ejected because a winger crept over a line is not a skill problem. It is an information problem, and it costs nothing to solve. See the violations section.
 - **It is the single most improvable skill in hockey.** Computed from the NHL's official skater statistics: 120 skaters took at least 500 draws in 2025-26, and 109 of them are listed as centres (the other eleven are wingers). Among those 109 centres the median win rate was **51.8%**, the tenth percentile 45.4%, the ninetieth 57.7%, and the range ran from **62.1% down to 39.7%** — a **22-point spread** on a repeatable, isolated, closed-skill action. That is enormous, and it tells you this is learnable, because nothing that wide is luck. (This is the figure [Switching Positions](../positions/switching_positions.md) leans on when it tells a winger moved to centre that the draw is worth working at.)
 
-**The practical version: don't chase your faceoff percentage. Chase the ten or fifteen draws a game where the outcome actually changes something, and stop giving away the free ones.**
+**The practical version: don't chase your faceoff percentage. Chase the ten or fifteen draws a game where the outcome actually changes something, and stop giving away the free ones.** *("Ten or fifteen" is a coaching estimate of how many draws carry real consequence, not a counted figure — nothing here counts them.)*
 
 ---
 
@@ -846,7 +846,7 @@ See [Practice and Development](../off-the-ice/practice_and_development.md) for h
 
 ## Common Mistakes
 
-- **Chasing your faceoff percentage instead of the important draws.** Raw faceoff percentage explains about 6% of the variation in team results. The defensive-zone draw on the penalty kill explains rather more.
+- **Chasing your faceoff percentage instead of the important draws.** **Computed for this document** from the NHL's official team statistics across the eleven seasons from 2015-16 to 2025-26, a team's faceoff win percentage explains only about 6% of the variation in its **points percentage** — the share of available standings points it takes — and the relationship is unstable, having gone negative in 2016-17. That is a **team-level** figure, not a skater-level one. The defensive-zone draw on the penalty kill explains rather more.
 - **Wingers creeping over the hash marks.** It ejects your **centre**, not you, and it happens on the draws where you can least afford it. **Under the IIHF book you play under in Britain it spends your team's one warning instead**, which puts the whole five one mistake from a bench minor. Both skates outside the line; touching the line is fine.
 - **Waiting to see what happens on a tie-up.** Most draws end in a scramble, and scrambles are won by whoever moves on the drop rather than after it.
 - **Watching your opponent instead of the linesperson's hand.** If you're reacting to them, you're second.

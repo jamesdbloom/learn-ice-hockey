@@ -169,7 +169,7 @@ Repeated forceful movement in deep hip flexion appears to reshape hockey hips. A
 
 ### Knee — MCL
 
-The **medial collateral ligament** (on the inside of the knee) is the classic hockey knee injury, typically from a blow to the outside of the knee or a leg trapped in a collision or against the boards. It was the **third most common injury among NHL goaltenders (n = 95)** in the 2025 study cited above.
+The **medial collateral ligament** (on the inside of the knee) is the classic hockey knee injury, typically from a blow to the outside of the knee or a leg trapped in a collision or against the boards. It was the **third most common injury (n = 95)** in Keshen and colleagues' 2025 *American Journal of Sports Medicine* study of musculoskeletal injuries in NHL goaltenders.
 
 **What reduces risk:** general lower-body and single-leg strength, balance and landing/deceleration mechanics — the ingredients of neuromuscular training programmes, which have decent evidence (below). Some knee injuries are simply collisions and are not preventable by training.
 
@@ -521,11 +521,11 @@ Supporting evidence is consistent in direction: early specialisation has been as
 
 - **Training only the aerobic system** — long runs and nothing else — and then being blown out by the first hard shift.
 - **Training only the anaerobic system** — all sprints, all lifting, no easy aerobic work — and then disappearing in the third period. This is the more common error among competitive amateurs.
-- **Judging your fitness by a lab number.** VO₂max showed no significant relationship with repeated on-ice effort performance in the study cited above; train the quality, not the test.
+- **Judging your fitness by a lab number.** VO₂max showed no significant relationship with repeated on-ice effort performance in Gabrys and colleagues' 2026 study of fourteen semi-professional players — one study, so do not over-read it either. Aerobic fitness really does drive between-shift recovery — but a single lab VO₂max number is a poor predictor of who plays well in the third period. Train the quality, not the test score.
 - **Skipping the off-ice warm-up entirely**, arriving fifteen minutes before puck drop, and taking your first hard stride cold. The highest-evidence injury-prevention measure available, ignored for want of ten minutes.
 - **Static stretching hard immediately before playing**, which has measured short-term decrements in strength and repeated-sprint performance and does not prevent injury.
 - **Ignoring the groin until it goes.** Low adductor strength relative to abductor strength is a documented hockey risk factor, and the stride trains the opposite muscles.
-- **Assuming any single exercise is a guarantee.** The Copenhagen adduction exercise appears to build strength — on very-low-certainty evidence — and the pooled estimate shows no significant reduction in groin injury prevalence on its own.
+- **Assuming any single exercise is a guarantee.** The Copenhagen adduction exercise appeared to build strength — but on evidence rated **very low certainty**, in a review that has since been **retracted**, which leaves the strength claim unsupported for ice hockey specifically — and its pooled estimate found no significant reduction in groin injury prevalence on its own.
 - **Self-treating persistent hip or groin pain** with more stretching, for months, instead of getting it assessed.
 - **Playing on after a head knock because you weren't knocked out.** Loss of consciousness is not required for a concussion and is not typical of one.
 - **Letting the player decide whether they're concussed.** Judgement is one of the things a concussion impairs.
@@ -549,12 +549,12 @@ Takeaways after them, are where you get it. Where the answer lives in another
 document, that is named too.*
 
 1. A teammate takes a knock, gets straight up, and tells you they are fine. They
-   were not knocked out. What happens next, and who decides? *(§Concussion — You
-   do not have to be knocked out; The absolute rule)*
+   were not knocked out. What happens next, and who decides? *(§You do not have
+   to be knocked out, §Concussion: the absolute rule)*
 
 2. Name as many of the ten CRT6 red flags as you can. Two of them look exactly
    like ordinary concussion symptoms — which two, and what is the difference that
-   turns one into an ambulance call? *(§Concussion — Red flags)*
+   turns one into an ambulance call? *(§Red flags — call an ambulance)*
 
 3. The game is over and you are the lift home for a player with a suspected
    concussion. List what CRT6 says they must not do, and say which of those is

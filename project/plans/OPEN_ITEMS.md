@@ -14,7 +14,7 @@ or a structural change too large to fold into a repair.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 634,225 words — 48.0 hours of
+These outrank everything below. The corpus is **37 documents and 639,670 words — 48.5 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
@@ -73,7 +73,7 @@ standalone and memorable — this feeds the podcast's 'if you only remember N th
 
 | document | words | items | words per "takeaway" | status |
 |---|---|---|---|---|
-| `foundation/rules_primer` | 2,494 | 10 | **249** | ⬜ |
+| `foundation/rules_primer` | 2,494 | 10 | **249** | ⚠️ **diagnosed — see below** |
 | `technique/body_contact_and_battles` | 2,135 | 10 | **214** | ✅ rewritten to 1,504 / **150**, [round 49](../reviews/round_49_takeaways_that_were_essays.md) |
 | `systems/defending_the_rush` | 1,164 | 10 | **116** | ⬜ |
 
@@ -107,6 +107,20 @@ not in the file, so nothing in the working tree showed it and three reviewers pa
 before a fourth caught it. **A section that was the subject of a past critical carries obligations
 invisible to anyone reading only the document.**
 
+⚠️ **Sweep the diff for cross-book quantifiers before staging. Mechanically, not by reading.**
+Eleven false four-book generalisations were manufactured across rounds 49–50, and **every one was
+caught by a reviewer or the gate, never by the author re-reading**. Two were manufactured *inside
+the repair for a previous one*, and one survived a fix applied to only one of the two documents
+carrying it. Care does not catch this; a grep does:
+
+```bash
+git diff HEAD -- content/ | grep '^+' | grep -v '^+++' | sed 's/^+//' \
+  | grep -inE "\b(all four|every book|every one of the four|in any book|no book|three of the four|two of the four|all three|the other three|each still)\b"
+```
+
+Then verify **each named cell individually** against `sources/`. A quantifier that is true of three
+books and false of the fourth reads as authoritative and is the corpus's most-repeated defect.
+
 ⚠️ **Edit structurally, not by string replacement.** Round 49 made three separate insertions that
 landed in the wrong place in a 1,200-line file — one matched the *first* of two identical strings
 and put a four-book penalty ladder in the Overview, inside a quotation, breaking emphasis parity;
@@ -115,6 +129,45 @@ a paragraph before the text it referred back to. **No checker caught any of them
 `check_links`, `check_absolutes` and a clean `npm run build` all passed on the worst of the three.
 Before any structural edit: print the section map. After: print it again and diff it. And assert
 emphasis parity across changed lines, because markdown will render a broken span silently.
+
+⚠️ **`rules_primer.md` is a different problem from the other two, and the item as written is
+mis-specified for it. Diagnosed 27 August, read-only, before any edit.**
+
+| measure | value |
+|---|---|
+| Key Takeaways | 2,494 words / 10 items / **249 per item** |
+| distinct rule citations in the takeaways | **50** (65 including repeats) |
+| items naming **all four** rulebooks | **7 of 10** |
+| items naming two or more books | **10 of 10** |
+| correlation, item length vs citation count | **r = 0.78** |
+| words per citation | **38** |
+
+**The length is the divergence.** Every item is a cross-book comparison, and item length tracks
+citation count almost linearly. There is no prose padding to remove: shortening an item means
+either dropping a book or dropping a citation, and **dropping a book from a four-book claim is
+precisely how seven false universals were manufactured in this corpus on 27 August**, each one
+contradicted by primary text and each caught by a reviewer rather than by the author.
+
+**So the fix is not compression, and the metric is wrong for this document.** The style guide's
+*"standalone and memorable — this feeds the podcast's 'if you only remember N things' segment"*
+assumes a teaching document. `rules_primer.md` is a **reference** document, and 249 words per item
+is what an honest four-book comparison costs. Its takeaways are not essays that drifted; they are
+the comparison the document exists to make.
+
+**What can honestly be done, from what worked on `defending_the_rush` item 6** (324 → 209 words,
+the only compression in that document that survived review): **stop summarising the comparison in
+the takeaway.** State the instruction and the hazard, say plainly that the books diverge and that
+the divergence matters, and send the reader to the body for the grid. Applied here that would move
+most of the 50 citations out of the summary layer — but note what that means for a *reference*
+document, whose readers arrive wanting exactly those numbers. **This is a decision for the owner,
+not an edit to make unilaterally**, and it belongs in Tier 2.
+
+**One genuine defect found and confirmed while diagnosing:** the orphan check (`grep -F`, fixed
+string) returns **exactly one** orphan across all 50 citations — **NHL 59.2**, cited in takeaway 8
+and appearing nowhere in the body. Verified against `sources/nhl_rules.txt`: *"59.2 Minor Penalty -
+A minor penalty, at the discretion of the Referee based on the severity of the contact, shall be
+imposed on a player who 'cross checks' an opponent."* That must be moved into the body regardless
+of what is decided about length. **The other 49 all trace.**
 
 **Orphan citations already found in the two remaining documents** — claims their Key Takeaways
 make that their bodies never make, so trimming without moving them would delete them from the
@@ -325,45 +378,115 @@ sections below.
 The fastest work in the list. Each has been verified, has an identified remedy, and nothing
 blocks it.
 
+**Legend:** ⬜ open · ✅ closed, with the round that closed it.
+**Rows marked ✅ are carried here only until the next plan sweep moves them out** — CLAUDE.md's
+rule is that this file holds remaining work and a closed item lives in its review record. They are
+kept for one round so the round-50 record and this table can be diffed against each other, which is
+how four stale rows were found in the first place.
+
+⚠️ **FOUR of the eight rows worked on 27 August had a wrong premise** — three already fixed in
+rounds 36/37 and never closed, and one (`zone_entries.md:174`) describing a gap that had been
+filled while the *real* gap, book scope, went unrecorded. **That is a 50% error rate in a table
+whose whole claim is "verified, with an identified remedy."** Before working any row here, verify
+the defect still exists in the file, and treat the row's description of *what* is wrong as a
+hypothesis rather than a finding. The cause is copying planning text forward from a round's
+*carried-findings* document instead of its *outcome*; **close the row in the commit that closes
+the finding, and link the record rather than restating it.**
+
+⚠️ **The three:** `offensive_zone_play.md:165` and
+`defending_the_rush.md:135` both describe pre-fix text; **round 36 fixed both and the rows were
+never closed**, so two agents were dispatched in August to repair things that were already
+repaired. The planning text was copied forward from `round_36_carried_findings.md` — the
+*pre-fix* document — rather than from the round's outcome. **When a round closes a finding, close
+the plan row in the same commit**, and prefer linking the review record to restating its text.
+
 | | Where | What | Source |
 |---|---|---|---|
-| ⬜ | `offensive_zone_play.md:165` | A merge dropped **three** clauses; one was restored, **two remain** — same defect, same remedy, and nothing forced the trim (each original line was ~125 characters). | plan §3.2 |
-| ⬜ | `offensive_zone_play.md:171` | A `Convention:` fact says a role assignment *"is a coaching choice"*; the section body says arrival order decides it. **The fact contradicts its own section.** | plan §3.3 |
-| ⬜ | `defending_the_rush.md:135` | A merge shed *"around"* and *"roughly"*, promoting a hedge to *"**one** stick length"* — reads as a measurement rather than an approximation. | plan §3.4 |
+| ✅ | ~~`offensive_zone_play.md:165`~~ **ALREADY FIXED IN ROUND 36 — this row was a stale carry-forward of the pre-fix planning text.** Verified 27 Aug: all clauses present in facts and body. | A merge dropped **three** clauses; one was restored, **two remain** — same defect, same remedy, and nothing forced the trim (each original line was ~125 characters). | plan §3.2 |
+| ✅ | `offensive_zone_play.md:171` **FIXED — round 50** — `Convention:` → `Key:`; the body states arrival order as a definition and hedges nothing, so the label had nothing to mark. | A `Convention:` fact says a role assignment *"is a coaching choice"*; the section body says arrival order decides it. **The fact contradicts its own section.** | plan §3.3 |
+| ✅ | ~~`defending_the_rush.md:135`~~ **ALREADY FIXED IN ROUND 36 — stale row.** Verified 27 Aug: `:135` reads *"Roughly two to three … around a stick and a half … roughly a stick length"*; the hedges survived. | A merge shed *"around"* and *"roughly"*, promoting a hedge to *"**one** stick length"* — reads as a measurement rather than an approximation. | plan §3.4 |
 | ⬜ | `body_contact_and_battles.md:420-421` | Read-aloud minors in facts blocks: *"All four"* resolves only from a heading a listener never hears; *"the restricted form"* of 101.1 is undefined in the block. | plan §3.7 |
-| ⬜ | Glossary, ~9 entries | `Forecheck` homonym; `Post` drops its owner's coaching-choice hedge; three entries out of alphabetical order; `one-touch`/`one-timer` collision; `Board battle`; backside coverage. | plan §4.1, §4.3 |
-| ⬜ | Glossary, voice | **Six of the ten new entries close with a cross-link and four do not**; `Butterfly` uses inline *"— see [X]"* where others use a sentence-final *"See [X]."*; some are third person and some switch to second. | plan §4.3 |
+| ✅ | Glossary, ~9 entries **MOSTLY FIXED — round 50** — `Post` now carries its owner's coaching-choice hedge, `Board battle` weakened to what its owner actually says (with its unverified label), two entries reordered byte-identically, `one-touch`/`one-timer` reciprocal added. ⚠️ **`Forecheck` homonym was already closed in round 37 — another stale row.** ⚠️ **`backside coverage` is MIS-TIERED**: `terminology_source_audit.md:91` records that the IIHF section defining it has never been located, so this is not a known fix — it needs a source fetched. Move it to Tier 4. | `Forecheck` homonym; `Post` drops its owner's coaching-choice hedge; three entries out of alphabetical order; `one-touch`/`one-timer` collision; `Board battle`; backside coverage. | plan §4.1, §4.3 |
+| ✅ | Glossary, voice **FIXED — round 50** — standardised on sentence-final `See [Doc](path).`, the existing majority form (25 of 32) and the only one that survives text-to-speech. `Butterfly`'s inline form was already fixed. Five older entries deliberately left: they use the link as the sentence *subject* to attribute a specific claim, and normalising would cost the attribution. | **Six of the ten new entries close with a cross-link and four do not**; `Butterfly` uses inline *"— see [X]"* where others use a sentence-final *"See [X]."*; some are third person and some switch to second. | plan §4.3 |
 | ⬜ | `"most goals are scored low"` | **Unsourced in its owner.** Label it or source it — do **not** delete it: a tidying pass already removed a *correct* fact from this corpus for looking unsupported. | plan §3 |
 | ⬜ | **Nine** documents cite Hockey Canada rules with **no HC rulebook in Sources** | `time_and_space.md` and `rink_map_and_glossary.md` quote Rule 6.11's preamble **verbatim**; `on_ice_communication.md`, `puck_support_and_spacing.md`, `how_to_watch_hockey.md`, `breakouts.md`, `switching_positions.md`, **`neutral_zone_systems.md`** cite 6.11; `forechecking_systems.md` cites 7.3, 6.11 and 8.3(b) with only coaching pages in Sources. ⚠️ **Round 44 created the gap in three of them** — `on_ice_communication.md`, `puck_support_and_spacing.md` and `how_to_watch_hockey.md` had no HC claim before it; the other six already cited the book. The claims are verified against `sources/hc.txt`; the citation is missing. **Not swept in round 44** — nine Sources blocks, nine formats, in a round where every sweep introduced a defect. The line already exists in `center.md` and can be copied. → `source-verifier`. | round 44 |
 | ⬜ | `rules_primer.md:738` — the rule-set comparison table's tagging-up row | It states USA Hockey's classification limit and carries **no Hockey Canada note**, while its sibling icing rows all carry inline *"Hockey Canada is split by category"* notes. **The absence of a Hockey Canada classification limit on tag-up is a real distinction the corpus states in four other places and not in the table** — and §10's cells are the shape that generated round 44's divergences. Found by `commit-gate` in round 45; pre-existing. | round 45 |
 | ⬜ | **Delayed-offside whistle triggers — a contact consequence, four sites, needs a safety pass** | `rules_primer.md:171-176` lists the triggers flat and `:180` calls *"merely chasing the defenceman deeper kills the play"* the most misunderstood part of the rule. **That is NHL and IIHF text.** NHL 83.3 and IIHF 83.3 have four triggers including *"about to make physical contact"*; USA Hockey 630(d) has two and no about-to-contact trigger; **Hockey Canada 6.11(b)(ii) has neither forcing-deeper nor about-to-contact.** The corpus relies on that trigger to teach that play is dead before the check lands — under two books of four it is not, and Hockey Canada's remedy is 6.11(d)(i), which expressly reaches a play *"against an opposing player"*. Repeated flat at `zone_entries.md:167`, `:174`, `time_and_space.md:404`, `:416`. **→ `safety-reviewer` and `rules-verifier`; not swept in round 45.** | round 45 |
 | ⬜ | `shooting.md` vs `offensive_zone_play.md:939` | **The named owner of shot-location value does not hold the figure that points at it.** The McCurdy/HockeyViz *"under 5% outside home plate"* lives only in `offensive_zone_play.md:60`; `shooting.md:760` gives 10–15% / 2–4% hedged as *"that source names no dataset"*. A reader following the pointer arrives at the **less** evidenced pair — and one site re-labels "home plate" as "perimeter", two different areas in the glossary. **Which is right cannot be told from the summary layer.** | round 44 |
 | ⬜ | Crease rule-set divergence, 16 sites | `offensive_zone_play.md:485`/`:943` carry USA Hockey 625(b) and the IIHF loitering provision; ~16 summary-layer sites across 12 documents give NHL 69.1/69.3 flat. `special_teams.md:907` groups the IIHF **with the NHL**; `offensive_zone_play.md:943` groups it **with USA Hockey**. **→ `rules-verifier` on 625(b) and IIHF 69.1's final sentence before any sweep.** | round 44 |
-| ⬜ | `risk_management.md:730` KT5 | The both-defencemen absolute survives inside a nine-item `never` list, where the hedge is deferred ~200 words. The other two sites in this document were fixed in round 44; **this one needs the list restructured, not a clause added.** | round 44 |
+| ✅ | `risk_management.md:730` KT5 **FIXED — round 50** — restructured rather than clause-patched: KT5 now classifies seven of the nine as coaching conventions and carries the both-defencemen hedge inline. A **fourth site the row did not name**, the Overview at `:14`, had the same deferral and was fixed too. | The both-defencemen absolute survives inside a nine-item `never` list, where the hedge is deferred ~200 words. The other two sites in this document were fixed in round 44; **this one needs the list restructured, not a clause added.** | round 44 |
 | ⬜ | `content_style_guide.md:496-510` | **The "full corpus" list enumerates 35 files**, omitting `uk_rules.md` and `reading_ice_hockey_diagrams.md`. It is the list a pipeline would glob, in the file that is the specification. | round 44 |
 | ⬜ | NHL encroachment cited three ways | `on_ice_communication.md:273` cites **76.2**, six summary lines cite **76.6**, two cite **76.4**. `special_teams.md:1001`'s own source list calls 76.2 *"Face-off Locations"*. → `rules-verifier`, grep `^76\.` in `sources/nhl_rules.txt`. | round 44 |
-| ⬜ | `faceoffs.md:849` | The Common Mistake drops the *"computed for this document"* label its own KT5 carries, and broadens "points percentage" to "team results". The style guide requires the label to travel. | round 44 |
+| ✅ | `faceoffs.md:849` **FIXED — round 50** — *computed for this document* label restored, *team results* narrowed back to *points percentage* | The Common Mistake drops the *"computed for this document"* label its own KT5 carries, and broadens "points percentage" to "team results". The style guide requires the label to travel. | round 44 |
 | ⬜ | "Stay high" — a fourth sense | `winger.md:610` defines it as *"level with the opposing defenceman while they have the puck, and it expires the moment your team wins it"*; `breakouts.md:702` uses the control-breakout sense, i.e. after your team has it. The body at `breakouts.md:205` flags both senses; **the facts line does not, and facts lines are read alone.** | round 44 |
-| ⬜ | Four documents at 11 Key Takeaways | `neutral_zone_systems.md`, `switching_positions.md`, `practice_and_development.md`, `scanning_and_anticipation.md`, against the style guide's 5–10. Round 43 recorded one of the four. | round 44 |
-| ⬜ | `conditioning_and_recovery.md:528` | Common Mistakes carries the Copenhagen adduction exercise's *very-low-certainty* hedge but **not the retraction** its own Key Takeaway 4 and body both carry. A dropped qualification in the layer read first. | round 43 |
-| ⬜ | `conditioning_and_recovery.md:524` | *"…in the study cited above"* — read aloud there is no "above", and the body's *"one study in fourteen semi-professional players"* hedge does not travel. | round 43 |
-| ⬜ | `conditioning_and_recovery.md:553` | `Check yourself` Q1 points at *"§Concussion — …The absolute rule"*; round 41 renamed that heading to `### Concussion: the absolute rule`. **The reference degraded rather than broke, so no link checker can see it.** | round 43 |
+| ✅ | Four documents at 11 Key Takeaways **FIXED — round 50** — all four merged (not compressed) to 10 | `neutral_zone_systems.md`, `switching_positions.md`, `practice_and_development.md`, `scanning_and_anticipation.md`, against the style guide's 5–10. Round 43 recorded one of the four. | round 44 |
+| ✅ | `conditioning_and_recovery.md:528` **FIXED — round 50** | Common Mistakes carries the Copenhagen adduction exercise's *very-low-certainty* hedge but **not the retraction** its own Key Takeaway 4 and body both carry. A dropped qualification in the layer read first. | round 43 |
+| ✅ | `conditioning_and_recovery.md:524` **FIXED — round 50** | *"…in the study cited above"* — read aloud there is no "above", and the body's *"one study in fourteen semi-professional players"* hedge does not travel. | round 43 |
+| ✅ | `conditioning_and_recovery.md:553` **FIXED — round 50** | `Check yourself` Q1 points at *"§Concussion — …The absolute rule"*; round 41 renamed that heading to `### Concussion: the absolute rule`. **The reference degraded rather than broke, so no link checker can see it.** | round 43 |
 | ⬜ | `defender.md:585` vs `conditioning_and_recovery.md:39` | **Two corpus computations of the same 2024-25 shift lengths that disagree** — 48.7/47.4 against 47.1/48.8 — and `defender.md` calls it *"the same calculation"*. Different populations, neither stated. Shift length is `conditioning_and_recovery.md`'s. | round 43 |
-| ⬜ | `how_to_watch_hockey.md:580` · `mental_game.md:629` · `faceoffs.md:849` · `practice_and_development.md:555` | Four owned numbers restated in a summary layer **without their owner's qualifications** — the 44 ft to the dot, the 18% of variance (no CI, no 82%-unexplained), the 6% faceoff correlation (drops its *computed-for-this-document* label), and a single-game possession measurement generalised to *"a full game"*. | round 43 |
-| ⬜ | `practice_and_development.md:608-620` | **Eleven Key Takeaways** against the style guide's 5–10. Every other document in scope is at 10 or fewer. | round 43 |
-| ⬜ | `skating.md:888` | *"Almost every race you contest is decided within about three strides"* — unsourced, in a section whose point is that a **neighbouring** three-strides claim is *"positively contradicted by the biomechanics literature"*. The two are genuinely different and this one is not wrong; it needs a *coaching observation* label. | round 43 |
-| ⬜ | `zone_entries.md:174` | NHL **83.4** stated truly, but without the half that favours the reader: 83.4's closing sentence gives an exception the document hands to the **defender** at `:908` and withholds from the attacker, who is told the puck cannot go in and given no cue to keep playing. **→ `rules-verifier` to adjudicate**, not an editorial call. | round 43 |
-| ⬜ | `center.md:116` | An `Action:` states the weak-side collapse unconditionally; the body carries **two named exceptions** (`:135`, `:137`) and the document's own `Check yourself` Q2 demands the reader name them. A centre leaves the slot expecting a collapse that cannot come. | round 43 |
-| ⬜ | `center.md` §Overview | **Four facts are not traceable to §Overview's own body** — the swing-breakout split, low-zone-collapse-vs-man, and "ten to fifteen" all live in sections further down. All true and correctly hedged, so per the style guide this is *a finding about the section*: the Overview body should name the alternatives it hedges against. | round 43 |
-| ⬜ | `faceoffs.md` | **"Ten to fifteen draws a game matter" is now in a `center.md` Key Takeaway and appears nowhere in its named owner**, with no source or label anywhere in the corpus. Either source it in `faceoffs.md` or label it coaching craft. | round 43 |
-| ⬜ | `center.md:356` | `Never: Take your body inside the blue paint` omits NHL **69.1**'s carve-out for an attacker *pushed* in by a defender. The body defers it to Rules Primer. Errs conservatively, but a reader shoved in and waved off will believe the corpus told them so. | round 43 |
-| ⬜ | `defender.md:268` vs `:271` | Two thresholds in one block for the same decision — *"confident"* against *"certain"*. Inherited from the body (`:276`, `:280`), so **fix the body first**. | round 43 |
+| ✅ | `how_to_watch_hockey.md:580` · `mental_game.md:629` · `faceoffs.md:849` · `practice_and_development.md:555` **FIXED — round 50** — all four now carry their owner's qualifications | Four owned numbers restated in a summary layer **without their owner's qualifications** — the 44 ft to the dot, the 18% of variance (no CI, no 82%-unexplained), the 6% faceoff correlation (drops its *computed-for-this-document* label), and a single-game possession measurement generalised to *"a full game"*. | round 43 |
+| ✅ | `practice_and_development.md:608-620` **FIXED — round 50** — merged with the item above | **Eleven Key Takeaways** against the style guide's 5–10. Every other document in scope is at 10 or fewer. | round 43 |
+| ✅ | `skating.md:888` **FIXED — round 50** — labelled unverified after an exhaustive search found no source; not deleted | *"Almost every race you contest is decided within about three strides"* — unsourced, in a section whose point is that a **neighbouring** three-strides claim is *"positively contradicted by the biomechanics literature"*. The two are genuinely different and this one is not wrong; it needs a *coaching observation* label. | round 43 |
+| ✅ | `zone_entries.md:174` **FIXED — round 50. The row's premise was wrong.** The 'missing half' (the own-goal exception) was already carried at `:174`, `:178` and `:919`. What was genuinely missing was **book scope**: 83.4 was attributed to NHL+IIHF with the other two books unaddressed. Verified: **USA Hockey Rule 630 has no disallowed-goal provision at all** (617(b)(2) and 617(c)(8) point opposite ways and the Playing Rules never resolve it), and **Hockey Canada 6.11(b) has the disallowed half but not the own-goal exception** — absent from the rule and all thirteen interpretations. Propagated to the owner, `rules_primer.md`. | NHL **83.4** stated truly, but without the half that favours the reader: 83.4's closing sentence gives an exception the document hands to the **defender** at `:908` and withholds from the attacker, who is told the puck cannot go in and given no cue to keep playing. **→ `rules-verifier` to adjudicate**, not an editorial call. | round 43 |
+| ✅ | `center.md:116` **FIXED — round 50** | An `Action:` states the weak-side collapse unconditionally; the body carries **two named exceptions** (`:135`, `:137`) and the document's own `Check yourself` Q2 demands the reader name them. A centre leaves the slot expecting a collapse that cannot come. | round 43 |
+| ✅ | `center.md` §Overview **FIXED — round 50** | **Four facts are not traceable to §Overview's own body** — the swing-breakout split, low-zone-collapse-vs-man, and "ten to fifteen" all live in sections further down. All true and correctly hedged, so per the style guide this is *a finding about the section*: the Overview body should name the alternatives it hedges against. | round 43 |
+| ✅ | `faceoffs.md` | ✅ **"Ten to fifteen draws a game" — FIXED, round 50. The row was wrong:** the figure *does* appear in its owner, `faceoffs.md:17`, `:52` and `:62`. The real defect was that it is **unsourced everywhere**. Labelled at the owner as a coaching estimate rather than a count, and `center.md` now points there instead of restating it bare, with no source or label anywhere in the corpus. Either source it in `faceoffs.md` or label it coaching craft. | round 43 |
+| ✅ | `center.md:356` **FIXED — round 50** — NHL 69.1 carve-out added with its reasonable-effort proviso | `Never: Take your body inside the blue paint` omits NHL **69.1**'s carve-out for an attacker *pushed* in by a defender. The body defers it to Rules Primer. Errs conservatively, but a reader shoved in and waved off will believe the corpus told them so. | round 43 |
+| ✅ | `defender.md:268` vs `:271` **FIXED — round 50** — resolved to *confident*, matching the owner | Two thresholds in one block for the same decision — *"confident"* against *"certain"*. Inherited from the body (`:276`, `:280`), so **fix the body first**. | round 43 |
 | ✅ | USA Hockey 614(b)/618(a) | Both read *"A **penalty shot/optional minor penalty**"* and the corpus stated the shot unconditionally. **Fixed:** `center.md` now cites Rule **406(a)**, under which the non-offending team *"may, prior to the penalty shot, elect that the minor … be assessed … in lieu of the penalty shot"*. ⚠️ **This entry first credited the election to a One Pass rule — which is a *Blind Hockey* rule** (`usah.txt:6559`, *"to give low-vision and completely blind players the best chance to track the puck"*), with the glossary gating on it sitting inside the Disabled Hockey chapter. Reading it as the general glossary would have hedged a correct claim on a condition that does not reach these readers. | round 43 |
 | ⬜ | Hockey Canada 10.2(a)(v) | The new *"the puck's location decides, not the player's"* is an **NHL/IIHF/USA Hockey** rule. Hockey Canada locates the penalty shot by where the **infraction** occurs. Stated with book scope in the facts lines; reads as a law of hockey in prose. | round 43 |
 
 ---
 
 ## Tier 2 — Needs a decision, not an edit
+
+**⬜ A cross-position matrix — zone × puck-situation. Owner-requested 27 August. Decide the
+FORMAT before writing a cell.**
+
+`mind_map.pdf` (repo root, 3 pages, image-only — no text layer, so `pdftotext` returns nothing;
+read it with a visual PDF reader) sets out **Defender, Center and Winger** — *not* goaltender — each
+as **Core Role** plus three zones, each zone split four ways: *carrying puck – free space*,
+*carrying puck – under pressure*, *pressuring opponent*, and *without puck*. Leaf labels are
+`Position:` `Action:` `Goal:` `Key:` `Risk:` `Technique:` `Priority:` `Options:` `Mindset:`.
+
+**Why it is worth doing.** It is a cut the corpus does not have. Position documents organise by
+position and systems documents by system; **nothing answers "winger, neutral zone, no puck — what
+do I do?" in one view**, which is the commonest question a player has on the bench. The label
+vocabulary also maps almost 1:1 onto the ` ```facts ` layer, so the matrix is **extractable from
+what already exists** rather than authored — which is this project's whole method.
+
+⚠️ **Why the obvious format is wrong, and this is the decision.** A table of *claims* would be a
+**seventh summary layer** — after Overview, body, facts, Common Mistakes, Check yourself and Key
+Takeaways — and the first one to **span documents**, breaking the one-owner rule that makes
+propagation tractable. Round 10's finding was that *every critical it sustained was a correction
+that reached the body and stopped*; this would add ~36 cells per position that every future
+correction must also reach.
+
+**And nearly every cell is a coaching choice the mind map labels as a rule:** *"Do not chase into
+corners, leave for wingers"*, *"Never have both defenders pinch at once"*, *"Pinch only if 100%
+certain"*, *"Avoid double covering with partner"*. Under man-on-man a defender **does** follow into
+the corner; "never both pinch" is a house default. That is
+[non-negotiable 7](../../CLAUDE.md) — the cardinal rule, and the corpus's most common failure — and
+a table actively pushes toward dropping the hedge, because cells must be short. **Separately, the
+mind map's `Rule:` means *guideline*; the corpus's `Rule:` means *rulebook rule with a citation*.**
+Importing that vocabulary would corrupt a convention 4,629 facts depend on.
+
+**Recommended resolution: build it as an INDEX, not a summary.** Every cell carries a short label
+**plus a link to the owning section**, and asserts nothing standalone. An index cannot drift,
+because it makes no claim to go stale. Where a cell would state a coaching choice, the cell reads
+*system-dependent* and links. That converts the idea from a seventh staleness surface into the
+navigational spine the corpus currently lacks, and it serves `getting_started.md`'s four entry
+routes, which presently have no destination of this kind.
+
+**Open questions for the owner:** (1) index or summary — the above recommends index; (2) where it
+lives — `positions/` needs a new document, or it extends `getting_started.md`; (3) the goaltender
+column, which the mind map does not supply and which does not fit *carrying puck – under pressure*
+at all; (4) whether it renders in the podcast, where a 12×3 table is noise — probably `speech: skip`.
+
+**Provenance:** `mind_map.pdf` is **unsourced** and must not be cited. It is a structure to borrow,
+not evidence; every cell's content is re-derived from the corpus and its own sources.
+
+
 
 These are open because someone has to choose, and the choice changes the shape of the work.
 
