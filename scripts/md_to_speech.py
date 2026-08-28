@@ -2059,17 +2059,23 @@ def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
     atoms: list[tuple[Token, bool]] = []  # (token, may-break-after)
     depth = 0
     for token in group[1:-1]:
+        # The flag answers "may the split happen *before* this token?", so it
+        # must be read before the token's own tag changes the depth. Reading it
+        # after marks a closing tag (depth 1 -> 0) breakable, and the split then
+        # orphans its opening tag in the previous paragraph - which is how a
+        # <say-as> came to be closed by </p>.
+        outer = depth == 0
         if token.kind == SSML:
             if re.fullmatch(r"<[a-z][^/>]*>", token.text):
                 depth += 1
             elif token.text.startswith("</"):
                 depth -= 1
-            atoms.append((token, depth == 0))
+            atoms.append((token, outer))
             continue
         pieces = RE_SENTENCE_END.split(token.text)
         for index, piece in enumerate(pieces):
             suffix = " " if index < len(pieces) - 1 else ""
-            atoms.append((Token(token.kind, piece + suffix), depth == 0))
+            atoms.append((Token(token.kind, piece + suffix), outer))
 
     groups: list[list[Token]] = []
     current: list[Token] = []
@@ -2465,6 +2471,39 @@ def self_test() -> int:
     if render([Token(SSML, "<break/>")]) != "<break/>":
         failures += 1
         print("FAIL ssml passthrough")
+
+    # Splitting an oversized paragraph must never cut between an element's
+    # opening tag and its closing tag. The whole corpus rendered to invalid
+    # SSML because it did: a <say-as> was left open and closed by </p>.
+    # The break flag has to be read *before* the token's tag changes the depth,
+    # or a closing tag looks like a safe boundary. Markup-heavy, so that the
+    # total-character limit bites before the billed one and the split lands on
+    # a tag rather than on a sentence end; the pad sweeps the boundary across
+    # every offset in a repeating unit.
+    split_failures = 0
+    split_seen = 0
+    for pad in range(0, 48):
+        unit: list[Token] = []
+        for _ in range(200):
+            unit.extend(_spell_out_word("IIHF"))
+            unit.append(Token(TEXT, " and "))
+        paragraph = (
+            [Token(SSML, "<p>"), Token(TEXT, " " * pad)] + unit + [Token(SSML, "</p>")]
+        )
+        parts = _split_paragraph(paragraph)
+        if len(parts) > 1:
+            split_seen += 1
+        for part in parts:
+            try:
+                ElementTree.fromstring("<speak>" + render(part) + "</speak>")
+            except ElementTree.ParseError:
+                split_failures += 1
+    if not split_seen:
+        failures += 1
+        print("FAIL split regression is vacuous: nothing split")
+    if split_failures:
+        failures += 1
+        print(f"FAIL split produced malformed SSML in {split_failures} case(s)")
 
     # A standards code spells its letters: assert the markup, which plain()
     # cannot see. Without it the test above would pass on "CAN" being read as

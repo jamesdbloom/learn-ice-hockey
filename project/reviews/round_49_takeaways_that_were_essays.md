@@ -584,10 +584,14 @@ exist as ids in the rendered HTML. **But `site-reviewer` was not run** — nothi
 browser, at any width, in either theme. D15 is *mechanically* clear and *visually* unchecked.
 
 **The build surfaced a defect in a different document.** It warns that
-`reading_ice_hockey_diagrams` has *"no citation paragraphs found under Sources"* — the Astro
-metadata extractor defeated by the same missing `---` that defeated two generations of the
-measurement parser. **Three tools, one absent separator.** Recorded in `OPEN_ITEMS.md` as its own
-item; deliberately not folded into this commit.
+`reading_ice_hockey_diagrams` has *"no citation paragraphs found under Sources"*. ⚠️ **This record
+attributed that to the same missing `---` that defeated two generations of the measurement parser —
+"three tools, one absent separator" — and that was wrong.** Round 51 added the separator and the
+warning did not clear: `site/scripts/extract-meta.mjs` caps a citation's category label at **70
+characters**, and this document's are 83, 88 and 95. Running that regex against the pre-fix and
+post-fix text yields zero matches either way. **Two symptoms shared a victim and I inferred a shared
+cause without testing it** — the same failure as the "renders plain" claim four sections above.
+Corrected here rather than left for the next round to find.
 
 **Grepping a rulebook proves what the book says, not what a referee calls.** Three of the
 divergences in CR1's matrix (Hockey Canada's "No Misconduct penalty may be assessed" clauses) are

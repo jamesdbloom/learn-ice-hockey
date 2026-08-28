@@ -195,7 +195,11 @@ is a coaching choice, believe the caption, not the picture.
 5. **Where a caption says a detail is a coaching choice, it is.** Ask which version
    your team runs rather than taking the picture as the answer.
 
+---
+
 *Sources — retrieved 30 July 2026:*
+
+*Rules: [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — **Rule 604(a)**, body checking prohibited *"in the 12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications"* · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — **Rule 7.3(a)**, a minor for a player who *"intentionally body-checks, bumps, shoves, or pushes any opposing player, in divisions of U13 and below, female hockey, and any other divisions approved by a Member of Hockey Canada"*. Both are cited in the note above, which sends a reader to Body Contact and Battles before acting on a route that finishes on a player.*
 
 *IIHF Coach Development Program, Level I (Tactical), §21.1 "International Symbols": [PDF](https://www.hockeyeasternontario.ca/media/n4pf15hp/iihf_coachdev_off_tactics.pdf) — most of the line symbols. sha256 `9b195d03…`, 750,071 bytes, 2002.*
 
