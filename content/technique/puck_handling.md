@@ -15,7 +15,7 @@ Puck handling — moving the puck on your stick, skating with it, and keeping it
 
 **Protection buys a second, not a minute, so know your out before you get there.** Decide who you are passing to, or where you are sending the puck, while you are still skating to it. Shielding beautifully for three seconds while a second checker arrives is a slow-motion turnover.
 
-**Most one-on-ones are won by a change of speed and body position, not by hands** — and the most expensive habit in amateur hockey is trying a move when a pass was on. Look for the pass first, and only then the move.
+**Most one-on-ones are won by a change of speed and body position, not by hands** — and the habit worth breaking first is trying a move when a pass was on. A pass moves the puck faster than any player can skate, it does not leave the puck sitting on your blade for a defender to poke at, and it moves the defence further than a deke does. Look for the pass first, and only then the move.
 
 ---
 
@@ -36,7 +36,7 @@ Technique: Off-ice, slide a cut-off bottle or tube over the shaft so the bottom 
 
 Your **top hand** is the hand nearest the butt-end of the stick (left hand for a left-handed shooter, right for a right-handed shooter). It is your control hand. It opens and closes the blade over the puck, it drives the puck side to side, and it does most of the actual stickhandling. Think of the stick as a lever: the top hand is the end you steer with.
 
-Your **bottom hand** is a guide and a stabiliser. When you shoot or pass it becomes the power hand; while you are stickhandling it does much less, and the shaft should slide fairly freely through a loose grip. **It is not doing nothing, though** — it steadies the blade, it sets the angle on a wide reach, and it is what you tighten on when you need to hold the puck against a stick. The fault to avoid is a bottom hand that *grips* and therefore fights the top hand, not a bottom hand that participates: see [Grip pressure](#grip-pressure--hold-it-like-a-bird) below, where a tight bottom hand is named as the single most common cause of pucks bouncing off the blade.
+Your **bottom hand** is a guide and a stabiliser. When you shoot or pass it becomes the power hand; while you are stickhandling it does much less, and the shaft should slide fairly freely through a loose grip. **It is not doing nothing, though** — it steadies the blade, it sets the angle on a wide reach, and it is what you tighten on when you need to hold the puck against a stick. The fault to avoid is a bottom hand that *grips* and therefore fights the top hand, not a bottom hand that participates: see [Grip pressure](#grip-pressure--hold-it-like-a-bird) below, where a tight bottom hand is named as the first thing to check when your hands have gone dead.
 
 **Test it off the ice:** slide a cut-off water bottle or a paper-towel tube over the shaft and hold *that* with your bottom hand instead of gripping the stick. The shaft slides freely, your bottom hand cannot cheat, and your top hand is forced to learn the job. Ten minutes of this teaches more than an hour of ordinary reps.
 
@@ -44,12 +44,14 @@ Your **bottom hand** is a guide and a stabiliser. When you shoot or pass it beco
 
 ```facts
 Technique: Hold it firmly enough that it cannot escape, softly enough that you do not crush it
-Never: White-knuckle the stick — it is the single most common cause of pucks bouncing off the blade
+Never: White-knuckle the stick — Better Hockey's coaching guide calls it the number-one thing that kills soft hands, and names the bottom hand as the first place to look
 Key: A squeezed hand cannot feel, and if you cannot feel the puck you cannot play with your head up
 Read: The bottom hand is nearly always the culprit
 ```
 
-Firmly enough that it cannot escape, softly enough that you do not crush it. A white-knuckle grip is the single most common cause of pucks bouncing off the blade. A squeezed hand cannot feel anything, and if you cannot feel the puck you cannot play with your head up. The bottom hand is nearly always the culprit.
+Firmly enough that it cannot escape, softly enough that you do not crush it. A squeezed hand cannot feel anything, and if you cannot feel the puck you cannot play with your head up. The bottom hand is nearly always the culprit: [Better Hockey](https://www.betterhockey.com/blogs/stickhandling/how-to-develop-soft-hands)'s head coach calls a white-knuckle grip, *"especially in the bottom hand"*, *"the number-one thing that kills soft hands"*, and says the bottom-hand grip is the first thing he fixes on a player whose hands have gone dead.
+
+**Be exact about what that ranks, because it is easy to stretch.** It ranks grip as the top killer of *feel*. It is not a count of why pucks bounce off blades — asked that question directly, the same guide leads with cushioning and blade angle: give with the puck as it arrives, and keep the blade angled over it. Those two are [Soft hands](#soft-hands) and [Cup the blade](#cup-the-blade) below. Neither claim is a measurement, and no source this document draws on counts either.
 
 ### Hands away from the body
 
@@ -263,7 +265,7 @@ Rule: Under USA Hockey Rule 639 a loss of balance is enough, and its Standard of
 Rule: Kicking the puck is legal in all zones, but you cannot score with a distinct kicking motion (NHL Rule 49.2)
 Rule: Kick the puck, never a player — NHL 49.3 makes kicking or attempting to kick an opponent a match penalty *whether or not an injury occurs*, and USA Hockey 627(a) makes even a skate push-off a major plus a game misconduct
 Rule: A kicked puck that deflects in off a body is no goal; off your own stick it is a good goal (NHL Rule 49.2(ii), (iii))
-Rule: You may catch the puck out of the air but must immediately knock it down; closing your hand on it is a minor (NHL Rule 67.2)
+Rule: You may catch the puck out of the air but must immediately knock it down; closing your hand on it is a minor (NHL and IIHF Rule 67.2), but a penalty shot when the puck you cover is inside your own crease (67.2(ii), 67.4, 63.6)
 ```
 
 - **Use your skates as a wall.** Pucks that come loose into your feet are not lost — they are in one of the harder places on the ice for an opponent to reach. **This is a practical protection, not a legal one.** None of the four rulebooks this guide checks — NHL, IIHF, USA Hockey, Hockey Canada — reserves the space between your feet, and the phrase "between the skates" appears in none of them. A checker may put their stick in there. What turns that into a penalty is the *effect*, and the threshold is lower than "he knocked me over":
@@ -275,7 +277,7 @@ Rule: You may catch the puck out of the air but must immediately knock it down; 
   What makes your feet safe is geometry and your own body — the checker has to reach past your skates, past your legs, and around whichever way you are turned, and doing that at speed usually costs them their balance or a penalty. Learn to trap a puck against the inside of your skate and pull it back out to your blade.
 - **Kick it to yourself.** Kicking the puck is legal in all zones under NHL rules (**Rule 49.2**). You cannot score with a distinct kicking motion, and the same rule states that *"a goal cannot be scored by an attacking player who kicks a puck that deflects into the net off any player, goalkeeper or official."* **But read the clarifiers 49.2 attaches to that**, because they matter for exactly the skill described here — the test is **body versus stick**: *"(ii) A kicked puck that deflects off the **stick** of any player (excluding the goalkeeper's stick) shall be ruled a **good goal**,"* and *"(iii) A goal will be allowed when an attacking player kicks the puck and the puck deflects off his own stick and then into the net."* (A kicked puck that deflects off a **body**, including the goalie's, is no goal.) So kicking a puck from your feet up onto your blade, or forward into space, is a completely legal and very useful skill — and if it goes off your own blade and in, it counts. Practise it: pull the puck into your feet, kick it forward, catch it on the blade.
 - **Use your hips and backside as the barrier**, not your stick. Your stick should be busy handling; your body should be doing the blocking.
-- **Do not use your hand.** The instinct when a puck pops up into your feet is to grab it, and that is a penalty. **Rule 67.2** permits you to *"catch the puck out of the air but [you] must immediately place it or knock it down to the ice."* You get a minor for "closing his hand on the puck" if you catch it and skate with it to avoid a check or gain territory, if you cover it on the ice to keep it from an opponent, or if you pick it up off the ice while play is in progress. Knock it straight down at your feet and play it with your skate or your blade. (Note this is a *penalty*, not merely a stoppage. Note also that knocking it down to a **teammate** is a hand pass, and the test is **where the puck is, not where the players are** — **Rule 79.2**: *"Play will not be stopped for any hand pass by players in their own defending zone. The location of the puck when contacted by either the player making the hand pass or the player receiving the hand pass shall determine the zone it is in."* See [Passing and Receiving](passing_and_receiving.md).)
+- **Do not use your hand.** The instinct when a puck pops up into your feet is to grab it, and that is a penalty. **Rule 67.2** permits you to *"catch the puck out of the air but [you] must immediately place it or knock it down to the ice."* You get a minor for "closing his hand on the puck" if you catch it and skate with it to avoid a check or gain territory, if you cover it on the ice to keep it from an opponent, or if you pick it up off the ice while play is in progress — **and the note printed under that middle clause makes it far worse in the one place you are most likely to do it**: *"When this is done in his team's goal crease area, a penalty shot shall be assessed (67.4) or a goal awarded (67.5)."* Rule 63.6 gives the test, and **it is the puck that has to be in the crease, not you**: *"If the puck is in the crease, penalty shot. If the puck is outside the crease and gathered into the body of a player (other than the goalkeeper) who is inside the crease, minor penalty."* Knock it straight down at your feet and play it with your skate or your blade. (Note this is a *penalty* **under the NHL and IIHF books**, not merely a stoppage — **under USA Hockey Rule 618(a) a closed hand outside the crease is** *"Play shall be stopped and a last play face-off shall occur"*, that book attaching its minor instead to picking the puck up off the ice, and a penalty shot or optional minor still waiting inside the crease under 618(a) and 614(b). Note also that knocking it down to a **teammate** is a hand pass, and the test is **where the puck is, not where the players are** — **Rule 79.2**: *"Play will not be stopped for any hand pass by players in their own defending zone. The location of the puck when contacted by either the player making the hand pass or the player receiving the hand pass shall determine the zone it is in."* See [Passing and Receiving](passing_and_receiving.md).)
 
 ### The toe drag
 
@@ -557,13 +559,13 @@ Options: Head and eyes — a sharp, committed head turn, or a look-off at an opt
 Options: Shoulders and hips — a weight shift or shoulder dip, the most convincing because they carry real weight
 Options: Stick and puck — blade angle and windup, faking a shot or a pass
 Options: Feet and edges — change of pace, stutter steps, a crossover started and abandoned
-Key: Change of pace is the most underused fake in the game
+Key: A change of pace fakes a defender's timing rather than their direction — the half of the job they are least drilled for
 ```
 
 - **Head and eyes.** A sharp, committed head turn. Look-offs — staring at a passing option you are not going to use.
 - **Shoulders and hips.** A weight shift or shoulder dip. These carry real physical weight, so they are the most convincing.
 - **Stick and puck.** Blade angle and windup — faking a shot or a pass.
-- **Feet and edges.** Change of pace, stutter steps, a crossover started and abandoned. Change of pace is the most underused fake in the game.
+- **Feet and edges.** Change of pace, stutter steps, a crossover started and abandoned. A change of pace fakes a defender's *timing* rather than their direction, which is the half of the job they are least drilled for — see [Change speed, not just direction](#change-speed-not-just-direction).
 
 ### The moves
 
@@ -680,7 +682,7 @@ Two practical consequences:
 
 ## When *Not* to Stickhandle
 
-Good hands are a tool for when there is no better option. Reaching for them when there *is* a better option is the most expensive habit in amateur hockey.
+Good hands are a tool for when there is no better option. Reaching for them when there *is* a better option is how you lose pucks you never had to risk.
 
 ### In your own defensive zone
 
@@ -705,13 +707,13 @@ The middle is where the most defenders are, where a lost puck goes straight to t
 ### When a simple pass is available
 
 ```facts
-Never: Dangle when a pass was on — the most common amateur error in the game
+Never: Dangle when a pass was on — the pass is faster than you can skate, cannot be poked off your blade, and moves the defence further
 Key: A pass moves the puck faster than any player can skate and does not expose it to a stick check
 Action: Look for the pass first, and only then consider the move
 Priority: A pass to a teammate in a worse position usually still beats a move against a defender in a good one
 ```
 
-**This is the most common amateur error in the game: dangling when a pass was on.** A pass moves the puck faster than any player can skate, it does not expose the puck to a stick check, and it moves the defence more than a deke does. If a teammate is open, the pass is almost always the better play — and a pass to a teammate in a worse position is still usually better than a move against a defender in a good one.
+**If you break one habit from this section, break this one: dangling when a pass was on.** A pass moves the puck faster than any player can skate, it does not leave the puck sitting on your blade for a defender to poke at, and it moves the defence more than a deke does. (Nothing this document draws on counts how often that choice gets made, so take it as a priority rather than as a statistic.) If a teammate is open, the pass is almost always the better play — and a pass to a teammate in a worse position is still usually better than a move against a defender in a good one.
 
 The habit to build: **look for the pass first, and only then consider the move.** Not the other way around.
 
@@ -781,14 +783,14 @@ Puck handling is the one hockey skill you can meaningfully improve without ice. 
 ### Kit
 
 ```facts
-Action: Get a smooth surface — a shooting pad or plastic tiles is the single most valuable purchase
+Action: Get a smooth surface first — a shooting pad or plastic tiles; without one the puck will not slide and none of the drills work
 Options: A synthetic off-ice puck is the best general-purpose choice, designed to slide on rough surfaces
 Options: A golf or tennis ball is free, bouncy, brutal, and builds fast hands
 Never: Train exclusively with a weighted puck or stick — you build a stroke that only works with weight
 Read: A stick feels long in shoes and a puck feels heavier off-ice, which is why off-ice pucks are slightly lighter
 ```
 
-Very little: **a smooth surface** (a shooting pad or plastic tiles — the single most valuable purchase), and **something to handle**. In rough order of realism: a real puck on a slick pad; a synthetic off-ice puck or biscuit, which is the best general-purpose choice because it is designed to slide on rough surfaces; a weighted stickhandling ball for driveways; or a golf or tennis ball, which is free, bouncy, brutal, and builds fast hands. A weighted puck or stick is optional for strength work — never train exclusively with it, or you build a stroke that only works with weight.
+Very little: **a smooth surface** (a shooting pad or plastic tiles) and **something to handle**. Get the surface first — without one a puck will not slide and none of the drills below work. That is an ordering *within off-ice handling kit*; for what to buy as a hockey player, and in what order, see [Equipment](../off-the-ice/equipment.md). In rough order of realism: a real puck on a slick pad; a synthetic off-ice puck or biscuit, which is the best general-purpose choice because it is designed to slide on rough surfaces; a weighted stickhandling ball for driveways; or a golf or tennis ball, which is free, bouncy, brutal, and builds fast hands. A weighted puck or stick is optional for strength work — never train exclusively with it, or you build a stroke that only works with weight.
 
 > **Off-ice adjustments.** On skates you are a couple of inches taller, so your stick feels long in shoes, and a standard puck feels heavier off-ice because of the friction — which is why purpose-made off-ice pucks are slightly lighter. See [Equipment](../off-the-ice/equipment.md).
 
@@ -855,7 +857,7 @@ Off-ice hands are not on-ice hands until you have used them under pressure. In e
 ## Common Mistakes
 
 - **Hip lock.** Top hand welded to the hip. It caps your reach, makes the puck live directly in front of the checker, and makes real puck protection physically impossible.
-- **Squeezing the stick.** A tight bottom hand is the number one cause of pucks bouncing off the blade, and a hand that squeezes cannot feel — which means you cannot play head up.
+- **Squeezing the stick.** A hand that squeezes cannot feel, which means you cannot play head up — and Better Hockey's coaching guide ranks a white-knuckle grip, especially in the bottom hand, as the number-one thing that kills soft hands. If your hands have gone dead, check the bottom hand first.
 - **An uncupped blade.** The puck rolls up and flips over. Cup it on the forehand *and* the backhand.
 - **Staring at the puck.** Locks you out of every tactical idea in hockey and gets you hit. Build feel first; the eyes follow.
 - **Side-to-side only.** A rhythm a defender can read, and no front-to-back range means no toe drag, no pull-in and no protection behind the body.
@@ -868,7 +870,7 @@ Off-ice hands are not on-ice hands until you have used them under pressure. In e
 - **Half-hearted fakes.** A fake that would not have fooled you will not fool them. Commit fully, or do not bother.
 - **Hand-only dekes.** Moving the puck without moving your head, shoulders or feet gives the defender no false information at all.
 - **Over-deking.** Three moves where one would do. Every extra move is another second the puck is exposed.
-- **Dangling when a pass was on.** The most common and most expensive error in amateur hockey. Look for the pass first.
+- **Dangling when a pass was on.** You take on a poke check, you slow the puck down, and you move the defence less than a pass would have — all of it for nothing. Look for the pass first.
 - **Dangling in your own end or through the middle.** Highest cost, lowest reward area on the ice.
 - **Neglecting the backhand.** Half the game, trained at a tenth of the rate — and under pressure it is usually the *correct* side, because it is the far side.
 - **Practising in long, rare sessions.** Fifteen minutes a day beats two hours a week — coaching consensus rather than a measured finding, but consistent everywhere.
@@ -927,7 +929,7 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Top hand does the work, bottom hand guides — loosely — and both stay away from your body.** The bottom hand is not idle, but it must not grip; a tight bottom hand is the number one cause of pucks bouncing off the blade. Hands pinned to the hip make puck protection structurally impossible, because there is no far side to move the puck to.
+1. **Top hand does the work, bottom hand guides — loosely — and both stay away from your body.** The bottom hand is not idle, but it must not grip: a squeezed hand cannot feel, and Better Hockey's coaching guide ranks a white-knuckle grip, especially in the bottom hand, as the number-one thing that kills soft hands. Hands pinned to the hip make puck protection structurally impossible, because there is no far side to move the puck to.
 2. **Hold it like a bird and cup the blade.** A loose grip and a blade angled over the puck fix the large majority of "the puck keeps bouncing off my stick" problems.
 3. **Head up is the highest-value habit in the game, and it is a safety habit as well as a tactical one** — a player staring at the puck gets hit hard, because they cannot see the checker coming. Develop it by feeling the puck — learn the toe, middle and heel by touch — not by forcing yourself to look up.
 4. **Handle around your whole body, front-to-back as well as side-to-side.** Side-to-side alone is a rhythm, and rhythms get read.
@@ -936,13 +938,13 @@ document, that is named too.*
 7. **The free hand may fend off, but not hold — and the fend-off half is written in two books of four.** Using the free hand to *"fend off"* an opponent or their stick is permitted by **NHL and IIHF Rule 56.1**; grabbing, pulling or tugging is a holding minor in all four books, and two of them stop there — NHL 54 and IIHF 54 write no tier above the minor at all, **though NHL 21.1 still reaches a match penalty for deliberately injuring an opponent *"in any manner"*. Treat the minor as the floor.** The other two do not: Hockey Canada 8.1(b) is a mandatory major plus game misconduct where it injures, and USA Hockey 622(b)/(c) reach a major and a match penalty, but only for the facemask. **Neither USA Hockey nor Hockey Canada writes the fend-off permission** — the phrase appears in neither book. Hockey Canada does permit *blocking* an opponent's stick with the hands, arms or body (Rule 8.1), but not holding it; **USA Hockey writes no stick permission at all.** So keep the hand on your own shaft, which is the right habit anywhere and the only protected one there. (Do not confuse it with the *arm-block* permission for a strength move, which **is** written in Hockey Canada 8.1 as well as NHL and IIHF 54.2.)
 8. **Do not slow down when you get the puck.** Push it slightly ahead and to the side, take real strides, and let the puck and your body take separate routes when a stick is in the way.
 9. **A deke works on what you show, not what you do** — so commit fully, involve your head and shoulders, use one fake rather than four, and accelerate out of it.
-10. **Most 1-on-1s are won by change of speed and body position, not hands** — and the most common amateur error of all is dangling when a pass was on.
+10. **Most 1-on-1s are won by change of speed and body position, not hands** — and when a pass is on, take the pass. It moves the puck faster than you can skate, and it does not leave the puck sitting on your blade for a defender to poke at.
 
 ---
 
 *Sources — retrieved 27 July 2026:*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 49.2 (Kicking – Goals), Rule 54.2 (Holding – arm in a strength move), Rule 56.1 (the "Free Hand" definition), Rule 57.1 (Tripping — cited for what it does **not** say about a stick in your skates), Rule 67.2 (Handling Puck — closing your hand on the puck), Rule 79.2 (Hand Pass – Defending Zone, and the puck-location test). All quoted wording checked against the rulebook text on 27 July 2026. · [Hockey Canada Playing Rules 2026-2028](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — checked for the "between the skates" myth, which appears in none of the four books; and for Rule 8.1, which permits blocking an opponent's stick with the hands, arms or body but not holding it, and permits the arm in a strength move on the same terms as NHL and IIHF 54.2. · [IIHF Official Rulebook 2025/26 (Version 1.1, July 2025)](https://www.iihf.com/en/statichub/8635/rulebook) — Rule 56 "Free Hand" definition, substantively identical to the NHL's though not textually identical · [USA Hockey 2025-29 Official Playing Rules](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 622 Holding an Opponent.*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 49.2 (Kicking – Goals), Rule 54.2 (Holding – arm in a strength move), Rule 56.1 (the "Free Hand" definition), Rule 57.1 (Tripping — cited for what it does **not** say about a stick in your skates), Rule 67.2 (Handling Puck — closing your hand on the puck, and the note to 67.2(ii) escalating it in the goal crease), Rule 67.4 (Penalty Shot), Rule 67.5 (Awarded Goal), Rule 63.6 (the puck-location test), Rule 79.2 (Hand Pass – Defending Zone, and the puck-location test). All quoted wording checked against the rulebook text on 27 July 2026, and the Rule 67.2(ii), 67.4, 67.5 and 63.6 wording again on 29 August 2026. · [Hockey Canada Playing Rules 2026-2028](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — checked for the "between the skates" myth, which appears in none of the four books; and for Rule 8.1, which permits blocking an opponent's stick with the hands, arms or body but not holding it, and permits the arm in a strength move on the same terms as NHL and IIHF 54.2. · [IIHF Official Rulebook 2025/26 (Version 1.1, July 2025)](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/3_the_iihf/2025-26_iihf_rulebook_22122025-v1.pdf) — Rule 56 "Free Hand" definition, substantively identical to the NHL's though not textually identical, and Rule 67.2(II), whose crease escalation is the NHL's in its own words: *"When this is done in their team's goal crease area, a 'Penalty Shot' shall be assessed Rule 67.4 – Penalty Shot, or Rule 67.5 – Goal Awarded"* · [USA Hockey 2025-29 Official Playing Rules](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 622 Holding an Opponent, and Rules 618(a) and 614(b), for the closed hand being *"Play shall be stopped and a last play face-off shall occur"* outside the crease and a penalty shot or optional minor inside it.*
 
 *Stickhandling technique and drills: [How To Hockey — Complete Guide to Stickhandling (Jeremy Rupke, PDF)](https://cdn.thepond.howtohockey.com/2024/01/CompleteGuideToStickhandling.pdf) · [How To Hockey — Stickhandling Tips Every Hockey Player Should Know](https://howtohockey.com/how-to-stickhandle/) · [Better Hockey — Hockey Stickhandling Tips](https://www.betterhockey.com/blogs/stickhandling/hockey-stickhandling-tips) · [Better Hockey — How to Develop Soft Hands](https://www.betterhockey.com/blogs/stickhandling/how-to-develop-soft-hands) · [Hockey's Arsenal — Puckhandling Technique: Top & Bottom Hands](https://hockeysarsenal.substack.com/p/puckhandling-technique-top-and-bottom-hands)*
 
@@ -954,4 +956,4 @@ document, that is named too.*
 
 *Dekes and deception: [How To Hockey — How to Deke in Hockey](https://howtohockey.com/how-to-deke-in-hockey/) · [How To Hockey — Deke of the Week 3: Fakes](https://howtohockey.com/deke-of-the-week-3-fakes/) · [How To Hockey — Deke of the Week 8: Toe Drag](https://howtohockey.com/deke-of-the-week-8-toe-drag/) · [Given & Go Hockey — What Is Deception in Hockey](https://givengohockey.com/blogs/blog-post/what-is-deception-in-hockey-how-to-add-fakes-and-deception-to-your-game) · [RinkHive — Deceptive Skating: Head Fakes, Body Language, Separation](https://training.rinkhive.com/2026/02/23/deceptive-skating-head-fakes-body-language-separation/) · [All Black Hockey Sticks — Beating Defensemen 1-on-1 with Deception](https://allblackhockeysticks.com/beating-defensemen-1-on-1-with-deception/)*
 
-*Flagged as unsettled or unverified in the text: which shoulder to attack on a 1-on-1 (the published material is stronger on the defensive side of the matchup than the attacking side); the "fifteen minutes a day" prescription (coaching consensus, not a measured comparison); and the claim that leverage beats strength in a board battle (true often enough to coach, but not a law). Note also a myth this document deliberately does not repeat: you will hear that a checker's stick "cannot legally get in" between your skates. **No rule in the NHL, IIHF, USA Hockey or Hockey Canada books reserves that space: the phrase "between the skates" was searched for in all four and appears in none of them, and the nearest any of them comes to naming a stick between an opponent's legs is USA Hockey's Standard of Play, which *penalises* it.** What the books *do* contain is penalties for what a stick in there is used to achieve: NHL Rule 57.1 (tripping), Rule 55.1 / 56.1 (hooking — restraint, no fall required), and USA Hockey Rule 639 plus its Standard of Play, which names the "can opener/corkscrew" between the legs explicitly and penalises it for a loss of balance **or** merely impeding progress. So the myth is a myth, but the corrected version is not "anything goes" — it is set out in [Stickhandling in Tight](#stickhandling-in-tight).*
+*Flagged as unsettled or unverified in the text: which shoulder to attack on a 1-on-1 (the published material is stronger on the defensive side of the matchup than the attacking side); the "fifteen minutes a day" prescription (coaching consensus, not a measured comparison); and the claim that leverage beats strength in a board battle (true often enough to coach, but not a law). **One ranking here has an owner and a scope, and both matter:** "the number-one thing that kills soft hands" is Better Hockey's own wording, from the soft-hands guide listed above, written under its head coach's byline and re-read on 28 August 2026. It ranks the top killer of **feel**. It is not a count of why pucks bounce off blades — asked that directly, the same guide leads with cushioning and blade angle. **Three things this document deliberately does not rank**, because nothing it draws on counts them: how often a player dekes when a pass was on, how often a change of pace goes unused, and where a shooting pad sits among a hockey player's purchases. Each is given as a priority with its reason attached instead. Note also a myth this document deliberately does not repeat: you will hear that a checker's stick "cannot legally get in" between your skates. **No rule in the NHL, IIHF, USA Hockey or Hockey Canada books reserves that space: the phrase "between the skates" was searched for in all four and appears in none of them, and the nearest any of them comes to naming a stick between an opponent's legs is USA Hockey's Standard of Play, which *penalises* it.** What the books *do* contain is penalties for what a stick in there is used to achieve: NHL Rule 57.1 (tripping), Rule 55.1 / 56.1 (hooking — restraint, no fall required), and USA Hockey Rule 639 plus its Standard of Play, which names the "can opener/corkscrew" between the legs explicitly and penalises it for a loss of balance **or** merely impeding progress. So the myth is a myth, but the corrected version is not "anything goes" — it is set out in [Stickhandling in Tight](#stickhandling-in-tight).*

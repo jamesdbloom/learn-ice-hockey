@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { unified } from '@astrojs/markdown-remark';
+import { unified, rehypeHeadingIds } from '@astrojs/markdown-remark';
 import { readFileSync } from 'node:fs';
 
 import remarkCorpus from './src/plugins/remark-corpus.mjs';
@@ -30,13 +30,20 @@ export default defineConfig({
 
   markdown: {
     // The remark/rehype processor rather than Astro 7's default, because the
-    // corpus transforms are written against mdast/hast. Astro's own
-    // rehypeHeadingIds runs first and assigns GitHub-compatible heading ids —
-    // which is exactly what the corpus's `file.md#anchor` links were written
-    // against, so those anchors keep working unchanged.
+    // corpus transforms are written against mdast/hast.
+    //
+    // `rehypeHeadingIds` is listed explicitly, and it has to come first.
+    // Astro appends its own copy *after* every user rehype plugin
+    // (createMarkdownProcessor in @astrojs/markdown-remark), so rehypeCorpus
+    // used to run against headings that had no `id` yet — its permalink step
+    // was gated on `node.properties.id` and therefore never fired once, on any
+    // page. Naming the plugin here assigns the ids before rehypeCorpus visits.
+    // Astro's appended copy then finds every id already set and leaves it
+    // alone, so the GitHub-compatible slugs the corpus's `file.md#anchor`
+    // links were written against are unchanged.
     processor: unified({
       remarkPlugins: [[remarkCorpus, { knownIds }]],
-      rehypePlugins: [rehypeCorpus],
+      rehypePlugins: [rehypeHeadingIds, rehypeCorpus],
       // The corpus already uses real em dashes and typographic quotes; leave
       // its punctuation alone.
       smartypants: false,

@@ -68,7 +68,7 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 - **Delayed offside** ends when the attacking team clears the zone (**tagging up**, after which they may re-enter), or when the defending team gains control and moves the puck out. It becomes a whistle if an attacker touches the puck or checks an opponent while the linesman's arm is up.
 - **Hybrid icing** — adopted by the NHL in 2013-14 and the IIHF in 2014. **⚠️ Do not write "the race is to the dot."** That is the common version and Rule 81.1 says in terms that it is wrong: *"For clarification, the determining factor is **which player would first touch the puck, not which player would first reach the end zone face-off dots**."* The dot is the **deadline for the decision**, not the finish line — the linesperson judges who would reach *the puck* first and must decide by the time someone reaches the dot. If it is too close to call at that moment, icing is called. This error was in five documents plus this guide before it was caught; it changes what a chaser does at speed, because a player who has lost the dot race may still be entitled to keep the puck alive. Some youth and rec leagues still use no-touch (automatic) icing; a few use touch icing.
 - **Icing is waved off** if: the opposing goalie plays it or leaves the crease and moves toward it (NHL — USA Hockey does *not* wave off for goalie movement); the puck goes in the net (it's a goal); it comes directly off a faceoff; the team is shorthanded; or a linesman judges an opposing skater could have played it. To nullify a potential icing a teammate must "gain the line" — the puck must contact the centre red line **on a stick**, not a skate.
-- **After your own icing:** play stops and there is a defensive-zone faceoff. The offending team **cannot change lines** and **cannot use a time-out** — under the **NHL** (81.4, 87.1) **and under the IIHF** (81.4, 87.1), whose wording on both is identical. **USA Hockey is the outlier**: Rule 624 carries no substitution restriction and Rule 636(f) no icing condition, so neither is blocked.
+- **After your own icing:** play stops and there is a defensive-zone faceoff. The offending team **cannot change lines** and **cannot use a time-out** — under the **NHL** (81.4, 87.1) **and under the IIHF** (81.4, 87.1). ⚠️ **Their wording is NOT identical on 81.4, and the difference reaches the reader:** IIHF 81.4 lists a **fourth** substitution exception the NHL lacks — *"a Player with a broken skate"* — so a British player may be substituted after his own icing for a broken skate and an NHL player may not. **87.1 does match.** *(This line asserted the two were identical until round 52, which added eight broken-skate mentions across the corpus while the guide still said the opposite — a governing document contradicting the corpus it governs.)* **USA Hockey is the outlier**: Rule 624 carries no substitution restriction and Rule 636(f) no icing condition, so neither is blocked.
 
   **⚠️ This bullet has now been wrong twice, in opposite directions, and both errors reached six documents.** It first stated the NHL position as universal. The correction then claimed IIHF 87.1 attaches no icing condition to time-outs — which is false; IIHF 87.1 reads *"No 'time-out' shall be granted to the defensive team following an icing…"*, the same sentence as the NHL. A British reader was told his own book punished icing more lightly than it does.
 
@@ -100,7 +100,9 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 
   **⚠️ And attach the appendix, because both books answer 69.1's own fact pattern the other way.** **NHL Reference Table 14** and **IIHF Appendix IV Table 16** publish the situations, and on the outside-the-crease screen they are unambiguous. **Situation 5E** — an attacker *"plants themself on the crease line or outside the goal crease, as to obstruct the goalkeeper's vision and impair their ability to defend their goal, and a goal is scored"* → **"Goal is allowed."** **5C** is the same answer for a screen in motion. Only 5B and 5D disallow, and **both put the attacker inside the crease**. So the operative text of 69.1(I) carries no crease line and the appendix supplies one. Cite the table alongside the rule — but say it is an **appendix interpretation, not operative rule text**, because a table cannot repeal a rule.
 
-  **⚠️ The same tables contradict 69.3 on the give-ground case, in both books.** NHL 69.3 says the attacker *"will receive a minor penalty"*; IIHF 69.3 writes *"the appropriate penalty"* and caps nothing. But **NHL Table 14 Situation 6D** and **IIHF Table 16 Situation 6D** — ⚠️ **cite the 6, because Table 14 has two D rows**: 5D is the screening case (*"plants himself within the goal crease"*) and 6D is the give-ground case, and the paragraph above points a reader at 5D — the identical fact pattern, *with a goal scored* — both read *"Goal is disallowed. **A minor penalty is not assessed (loss of goal only)**."* The severity divergence between the books bites at **6B** instead, where no goal is scored: the NHL specifies a minor, the IIHF leaves it to *"the appropriate penalty"*. **No source on disk settles which governs.** Report both; do not pick one. And note what a major there is *not*: **Rule 69 appears in none of the IIHF's Reference Tables** — not Table 5, not Table 6, not Table 7 — and **Rule 20.4 attaches the automatic ejection to a second major, a second misconduct in the same game, or a major for one of the infractions those tables list.** So no automatic game misconduct attaches to a Rule 69 major on its own. ⚠️ **Do not flatten that to "it is not an ejection"** — a game misconduct can still arrive by another route, and a bare denial is a cap on a penalty tier stated more confidently than the evidence supports. Note also that **Table 5 is headed *"Summary of major penalties (without a game misconduct possible)"***, so absence from **that** table proves nothing either way; it is absence from all three that does the work.
+  **⚠️ The same tables contradict 69.3 on the give-ground case, in both books.** NHL 69.3 says the attacker *"will receive a minor penalty"*; IIHF 69.3 writes *"the appropriate penalty"* and caps nothing. But **NHL Table 14 Situation 6D** and **IIHF Table 16 Situation 6D** — ⚠️ **cite the 6, because Table 14 has two D rows**: 5D is the screening case (*"plants himself within the goal crease"*) and 6D is the give-ground case, and the paragraph above points a reader at 5D — the identical fact pattern, *with a goal scored* — both read *"Goal is disallowed. **A minor penalty is not assessed (loss of goal only)**."* The severity divergence between the books bites at **every penalty-bearing row in Section 6 — 6B, 6E, 6F, 6G and 6H** — not at 6B alone. ⚠️ **And it is not a substantive split: it is a systematic editorial generalisation.** The IIHF replaced the NHL's *"minor penalty"* with *"the appropriate penalty"* across the whole table, and **kept "minor" at 7B**, which is the deliberate exception proving the rule. ⚠️ **NHL 6B is also not a mandatory minor** — its description column reads *"A possible penalty depends on the Referee's judgment as to the degree of contact and degree of resistance… and whether the goalkeeper was truly trying to establish a position."* **No source on disk settles which governs, and one that looked as though it might has now been read and cannot.** The **IIHF Situation Handbook** carries **six** worked situations under Rule 69 — not the *"No situation."* form it uses for Rule 43 — and Situations **69.1, 69.2 and 69.6** all pair a disallowed goal with **no penalty to the attacker**, which corroborates the appendix. **But its Foreword disqualifies it as a tiebreaker in terms:** *"in case of any contradictions, the valid IIHF Rulebook is always the basis."* And **Table 16 is Appendix IV of the Rulebook itself**, so the conflict is **rulebook-internal** and the one document that might have broken the tie has expressly ranked itself below the losing side. ⚠️ **Note also which book is the more internally consistent, because the obvious reading is backwards:** the **NHL's** conflict is flat — *"will receive a minor penalty"* against *"a minor penalty is not assessed"* — while the IIHF's *"the appropriate penalty"* can accommodate "none". **Report both; do not pick one.** And note what a major there is *not*: **Rule 69 appears in none of the IIHF's Reference Tables** — not Table 5, not Table 6, not Table 7 — and **Rule 20.4 attaches the automatic ejection to a second major, a second misconduct in the same game, or a major for one of the infractions those tables list.** So no automatic game misconduct attaches to a Rule 69 major on its own. ⚠️ **Do not flatten that to "it is not an ejection"** — a game misconduct can still arrive by another route, and a bare denial is a cap on a penalty tier stated more confidently than the evidence supports. Note also that **Table 5 is headed *"Summary of major penalties (without a game misconduct possible)"***, so absence from **that** table proves nothing either way; it is absence from all three that does the work.
+
+⚠️ **A verification limit on every Table 16 row cited here, established 28 August 2026.** **Appendix IV Table 16 interleaves its two columns in BOTH the plain and the `-layout` extraction** — the left column is spliced into the middle of the right column's sentence — so `"loss of goal only"` returns **zero** against `sources/iihf_rules.txt` raw *and* whitespace-normalised. ⚠️ **What actually fails is any phrase that CROSSES A LINE WRAP** — `"A minor penalty is not assessed (loss of"` returns one hit, `"loss of goal only"` returns zero. **Read Table 16 with a line range, not a phrase grep:** `sed -n '9960,10055p' sources/iihf_rules.txt`. **Every row cited here — 6B, 6D, 6E, 6F, 6G, 6H and 7B — was read that way, and each is legible in the `-layout` columns.** ⚠️ **6D matches the NHL's Table 14 row only in its OPERATIVE SENTENCE** (*"Goal is disallowed. A minor penalty is not assessed (loss of goal only)."*), **not in the announcement wording** — the NHL says *"interference with the goalkeeper"*, the IIHF *"Interference on the Goalkeeper"*. **Do not quote one book's announcement as the other's.** *(An earlier draft said these rows could not be verified by grep at all and sent the reader to a browser. `source-verifier` refuted it: they are on disk and legible. That error made the corpus look LESS evidenced than it is, which is its own kind of defect.)* See [`sources/README.md`](../sources/README.md).
 
 ### The UK rule set — IIHF is the base, everywhere
 
@@ -197,8 +199,20 @@ sources/                 ← in the repository. Everything in it is gitignored f
     eih_rr.txt           England Ice Hockey Rules & Regulations      (2,307 lines)
 ```
 
-**⚠️ The USA Hockey Casebook is *not* on disk, and never has been in this
-directory.** An earlier version of this list named a `usah_case.txt` of 18,376
+**✅ The USA Hockey Casebook IS now on disk — round 52, 28 August 2026.** 476pp,
+`sources/usah_casebook.txt`, fetched by `scripts/fetch_sources.sh` and listed in
+the README table, so the next agent inherits it. ⚠️ **The history below is kept
+because it is the provenance story and because the instruction it ends with is
+the one that finally got followed** — but read it as history, not as status.
+
+⚠️ **Two things to know before citing it.** Its own *"Rule Reference 630(d.3)"*
+in Situations 40 and 41 names a sub-clause that **does not exist** in the printed
+rule — the book's error, recorded rather than repaired. And it is **not** merely
+confirmatory: Rule 630 Situation 41 writes the NHL's delayed-offside own-goal
+exception **out**, settling a question three documents had called unresolved.
+
+**⚠️ [HISTORY — superseded] The USA Hockey Casebook is *not* on disk, and never
+has been in this directory.** An earlier version of this list named a `usah_case.txt` of 18,376
 lines, in a session scratchpad that no longer exists; `fetch_sources.sh` does not
 retrieve it, and the situations the corpus cites from it — for Rules 605, 624
 and 630 — appear in no file in `sources/`. (`usah.txt` *does* carry five
@@ -208,11 +222,33 @@ separate Casebook volume. The first draft of this paragraph said `sources/`
 held no USA Hockey Situation at all, which one `grep` falsifies — written
 into the very block correcting a governing document for being wrong.)
 
-Anything the corpus says about a USA Hockey casebook situation is
-therefore **unverifiable from this repository** and must carry that limit —
-`rules_primer.md` and `shooting.md` both do. If you fetch it, add it to
-`fetch_sources.sh` and the README table so the next agent inherits it rather
-than rediscovering this.
+~~Anything the corpus says about a USA Hockey casebook situation is therefore
+**unverifiable from this repository** and must carry that limit.~~ **[SUPERSEDED
+28 August 2026 — it is verifiable now.]** ⚠️ **Consequence to chase:** any
+document still carrying the old *"not held here and was not searched"* limit is
+now stating something untrue about this repository. Round 52 narrowed ten such
+disclosures; **`rules_primer.md` and `shooting.md` are named here as carrying it
+and must be re-checked.**
+
+*(The instruction that used to end this paragraph — "If you fetch it, add it to
+`fetch_sources.sh` and the README table so the next agent inherits it rather than
+rediscovering this" — is what was finally acted on, after `commit-gate` pointed
+out the corpus had begun citing a book that lived only in a session scratchpad.)*
+
+> ⚠️ **STOP — nine of the ten source files named in this section (the next paragraph names eight of them; two more follow below) are NOT on disk.** Verified 2026-08-28: of
+> `tulsky.txt`, `berg.txt`, `hockeyscan.txt`, `ibc.txt`, `huh.txt`, `bvhs.txt`, `bnq.html`, `csa.pdf`,
+> `goalie.pdf` and `pass.txt`, **only `ibc.txt` is present.** [`sources/README.md`](../sources/README.md) is the
+> authoritative inventory and is correct; this list is not.
+>
+> **Why this is worse than a stale path list.** The section below tells you to search the working directory
+> *before* declaring something unfindable. A writer following that instruction for a goaltending claim finds
+> nothing — **and may read the absence as confirmation that no source exists.** There is no goaltending
+> material in `sources/` at all, so that absence means only that the file is missing. It is evidence of
+> nothing about hockey.
+>
+> The descriptions are kept below because they are accurate about the documents themselves and would have to
+> be rediscovered if any is re-fetched. **They are a record of what these files are, not a claim that they are
+> here.** Found by the round-52 prevalence pass, which hit exactly this trap.
 
 Other extracted sources in the same directory, worth knowing about before you declare something unfindable: `tulsky.txt` (zone-entry study), `berg.txt` / `hockeyscan.txt` (Berg et al. 2025 on scanning), `ibc.txt` (Introduction To Body Contact), `huh.txt` (Heads Up Hockey), `bvhs.txt` (goaltending manual), `bnq.html`, `csa.pdf`.
 
@@ -222,6 +258,8 @@ Other extracted sources in the same directory, worth knowing about before you de
 - **`pass.txt` is narrower than "the USA Hockey playbook" suggests.** It is a single 92-line article — *Coaches' Playbook: Passing the Puck*, by John Hamre of the US National Team Development Program, in *American Hockey*, USA Hockey's own magazine. `passing_and_receiving.md` cites it correctly and it is a legitimate source for passing mechanics. But it is one article by one named coach, not a comprehensive governing-body playbook, and it contains **nothing** on goaltending, verbal calls, or systems. Do not reach for it outside passing technique.
 
 **⚠️ `goalie.pdf` is not a goaltending manual — but do not dismiss it either.** It is Beaudoin & Swartz, *Strategies for Pulling the Goalie in Hockey* — an MCMC simulation paper about when to pull the goalie, with nothing on technique. For goaltending technique use `bvhs.txt`. Check what a file actually contains before citing it from its name.
+
+⚠️ **`nhl_rules.txt` and `hc.txt` are plain `pdftotext`; `nhl_rules_layout.txt` and `hc_layout.txt` sit beside them.** Plain silently **joins hyphenated line breaks** (`face-off` → `faceoff`; 88 corrupted word-instances across the two books), so **a negative grep for a hyphenated term against the plain file is a FALSE ABSENCE**. `-layout` is the authority for **wording**; plain is the authority for **sentence contiguity** inside two-column tables and glossaries. **Check both before you believe any negative.** See [`sources/README.md`](../sources/README.md).
 
 **Verify every rules claim by grepping these files**, e.g.:
 

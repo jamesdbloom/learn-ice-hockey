@@ -480,9 +480,28 @@ pre code .line {
   font-size: 0.9375rem;
 }
 
-.sidebar__heading {
+.sidebar__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
   margin: 0 0 1rem;
+}
+
+.sidebar__heading {
+  margin: 0;
   font-weight: 650;
+}
+
+.sidebar__back {
+  font-size: 0.875rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.sidebar__back:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 60rem) {
@@ -497,7 +516,12 @@ pre code .line {
     border-top: 0;
   }
 
-  .sidebar__heading {
+  /*
+    The whole row goes, not just the heading: on a wide screen this nav is the
+    sticky left rail, the header's Contents button does not move the page, and
+    a "back to top" for a jump that never happened would be noise.
+  */
+  .sidebar__top {
     display: none;
   }
 }
@@ -653,6 +677,21 @@ pre code .line {
   color: var(--text-faint);
 }
 
+/* Depth 4 is in the list; see the note in TableOfContents.astro for why. */
+.toc li.depth-4 a {
+  padding-left: 2.3rem;
+  font-size: 0.9em;
+  color: var(--text-faint);
+}
+
+.toc-inline li.depth-3 {
+  margin-left: 0.9rem;
+}
+
+.toc-inline li.depth-4 {
+  margin-left: 1.8rem;
+}
+
 /* An inline TOC for narrow screens; collapsed, and works without JS. */
 .toc-inline {
   margin: 1.5rem 0;
@@ -674,9 +713,19 @@ pre code .line {
   font-size: 0.9375rem;
 }
 
+/*
+  Unnumbered, like the desktop rail. This list is an <ol> because the sections
+  are in document order, but decimal markers on a three-level list read as a
+  sequence rather than a hierarchy: with depth 4 in the list, special_teams
+  showed "3. The one idea behind every power play" followed by an indented
+  "4. Why puck movement, not shooting, creates it", which looks like a sibling
+  numbered 4 rather than that section's first subsection. The indent carries
+  the structure; the numbers only competed with it.
+*/
 .toc-inline ol {
+  list-style: none;
   margin: 0;
-  padding: 0 0.9rem 0.75rem 1.6rem;
+  padding: 0 0.9rem 0.75rem 1rem;
 }
 
 .toc-inline li {
@@ -788,12 +837,27 @@ a.chip:hover {
 
 /* ---------------------------------------------------------------- prose -- */
 
+/*
+  No `scroll-margin-top` here, deliberately.
+
+  The sticky header is cleared once, by `scroll-padding-top` on <html> above.
+  Setting it in both places does not pick the larger of the two — Chrome adds
+  them, and a heading targeted by a deep link landed 144px below the viewport
+  top instead of 72px, measured on
+  /foundation/on_ice_communication/#moving-a-screener--what-the-four-books-allow
+  at 1440x900. With `scroll-behavior: smooth` the arrival visibly overshot and
+  the first two lines of the section sat in dead space under a 56px header.
+
+  `scroll-padding-top` on the scroll container is the one that was kept because
+  it covers every target, not just headings — #main for the skip link, #site-nav
+  for the header's Contents button, and the .layer-section blocks on the home
+  page, none of which carry a scroll-margin of their own.
+*/
 .prose h2,
 .prose h3,
 .prose h4 {
   line-height: 1.25;
   letter-spacing: -0.01em;
-  scroll-margin-top: calc(var(--header-h) + 1rem);
 }
 
 .prose h2 {
@@ -808,10 +872,28 @@ a.chip:hover {
   font-size: 1.2rem;
 }
 
+/*
+  h4 has to outrank the paragraph it introduces, and it did the opposite.
+
+  It was 1.03rem (16.48px) in --text-muted against a 17px body paragraph in
+  --text, so a section heading was the least prominent text in view: on
+  /foundation/on_ice_communication/ the grey "Moving a screener — what the four
+  books allow" sat directly above a bold lead-in ("At or near the hands, every
+  book reaches the stick lift") that read as the real heading. That inverts the
+  structure for all 41 of the corpus's h4, 29 of them in special_teams.md where
+  they name the formations.
+
+  Both colours passed AA at the old size, so this is a hierarchy fault and not a
+  contrast one, and darkening alone would not have fixed it. The heading now
+  sits above body size, at full --text, with more space above it than below so
+  it binds to the section it opens: three cues, none of them colour alone.
+  1.1rem keeps it clearly under h3's 1.2rem.
+*/
 .prose h4 {
-  margin: 1.5rem 0 0.5rem;
-  font-size: 1.03rem;
-  color: var(--text-muted);
+  margin: 2rem 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .prose p,
@@ -833,6 +915,13 @@ a.chip:hover {
   font-weight: 650;
 }
 
+/*
+  The "#" lives here rather than in the markup. rehype-corpus emits the anchor
+  empty on purpose: Astro runs a second pass of rehypeHeadingIds after every
+  user rehype plugin, and that pass rebuilds each heading's text from its
+  descendant text nodes to feed the table of contents. A literal "#" inside the
+  heading would have shown up at the end of every contents entry on the site.
+*/
 .heading-anchor {
   margin-left: 0.4rem;
   color: var(--text-faint);
@@ -841,8 +930,13 @@ a.chip:hover {
   font-weight: 400;
 }
 
+.heading-anchor::after {
+  content: '#';
+}
+
 .prose h2:hover .heading-anchor,
 .prose h3:hover .heading-anchor,
+.prose h4:hover .heading-anchor,
 .heading-anchor:focus {
   opacity: 1;
 }
@@ -898,6 +992,29 @@ a.chip:hover {
 
 .callout-verify > p:first-child strong {
   color: var(--verify);
+}
+
+/*
+  A warning that arrives mid-sentence, in a list item or in a table cell is the
+  same load-bearing claim as one in a callout, and most of the corpus's are
+  written that way — a browser count found 148 of 252 warning glyphs rendering
+  with no more weight than the prose around them. They cannot be lifted into
+  blockquotes: one inside a list item would fragment the list, and one
+  qualifying the sentence before it would lose that sentence. So it is marked
+  where it stands, in the callout's own warning colours.
+
+  `box-decoration-break` is deliberately left at `slice`. These runs are often
+  two or three lines long, and cloning would redraw the left mark at the start of
+  every wrapped line — three bars for one warning, reading as three warnings.
+  The mark belongs where the warning begins.
+*/
+.warn-inline {
+  display: inline;
+  color: var(--warn);
+  background: var(--warn-bg);
+  border-left: 3px solid var(--warn-border);
+  border-radius: 0 2px 2px 0;
+  padding: 0.1em 0.3em 0.1em 0.4em;
 }
 
 /* --------------------------------------------------------------- tables -- */
@@ -1301,9 +1418,10 @@ a.chip:hover {
   color: var(--accent);
 }
 
+/* Offset from the sticky header comes from <html>'s scroll-padding-top; see
+   the note above .prose h2 for why it is not also set here. */
 .layer-section {
   margin: 3rem 0;
-  scroll-margin-top: calc(var(--header-h) + 1rem);
 }
 
 .layer-section__head {
@@ -1589,6 +1707,7 @@ a.chip:hover {
   .site-header,
   .sidebar,
   .toc,
+  .heading-anchor,
   .site-footer__links,
   .theme-toggle,
   .prev-next,

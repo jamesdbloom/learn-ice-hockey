@@ -23,6 +23,16 @@ import { SKIP, visit } from 'unist-util-visit';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 
 const WARNING_RE = /^\s*(⚠|❗|🚫)/u;
+// The same glyphs where they *end* a text run — `… is not yours. ⚠️ **…**` — which
+// is how most of the corpus's warnings are actually written. The variation
+// selector is part of ⚠️ and must be swallowed with it, or it is left behind
+// outside the wrapper and renders as a stray box.
+const WARNING_TAIL_RE = /(⚠|❗|🚫)\uFE0F?\s*$/u;
+// `**2. ⚠️ …**` — a warning in a hand-numbered list carries the ordinal inside
+// the bold run, so the glyph does not open it. It is still a warning, and the
+// one in rules_primer.md's faceoff-violation list went unmarked for exactly
+// that reason.
+const WARNING_LEAD_RE = /^\s*(\d+[.)]\s*)?(⚠|❗|🚫)/u;
 const VERIFY_RE = /^\s*(verification note|note on|methodology note)/i;
 const NOTE_START_RE =
   /^\s*\**\s*(verification note|unverified|could not be verified|rules verified|note on|methodology note|correction|•)/i;
@@ -332,12 +342,9 @@ export default function remarkCorpus(options = {}) {
     // ordinary prose directly above a routine facts block rendered as a
     // coloured panel. Choosing the speech layer should not cost the visual one.
     //
-    // This does not reach every warning glyph, and the remainder is bounded
-    // rather than outstanding: about twenty sit mid-sentence or inside a
-    // heading, where wrapping them would mean splitting the paragraph around
-    // them. Those are a content-shape question, not a plugin one. Every warning
-    // that *begins* a block is promoted — 61 of them at the last count, with
-    // none left unstyled.
+    // This pass reaches every warning that *begins* a block. The ones that do
+    // not are handled by the inline pass below, which is where the majority of
+    // them turned out to live.
     // Recursive, not just top level: warnings also sit inside list items and
     // inside sections built by the transforms above. Skip any paragraph that is
     // already the child of a callout, or it would be wrapped twice.
@@ -349,6 +356,81 @@ export default function remarkCorpus(options = {}) {
       parent.children[index] = wrapper('aside', { class: 'callout callout-warning' }, [node]);
       return [SKIP, index + 1];
     });
+
+    // ------------------------------------ warnings written mid-sentence
+    //
+    // The two passes above only reach a warning that *starts* a block. Counted in
+    // the built HTML, most do not. Two cache-free builds of the same content
+    // state, before and after this pass, found 259 warning glyphs rendered
+    // site-wide: 104 of them inside a callout and 155 with no more weight than
+    // the prose around them. The unstyled 155 were 81 in paragraphs, 65 in list
+    // items, 3 in table cells and 6 in diagram captions. That is a snapshot of
+    // one day's corpus, not a fixed figure — it moves whenever a document is
+    // written — but the proportion is the point and it is not close.
+    //
+    // They are written that way because they cannot easily be written any other
+    // way: a warning inside a list item cannot be lifted into a blockquote
+    // without fragmenting the list, and one qualifying the sentence before it
+    // would lose that sentence if it were moved.
+    //
+    // So the warning is marked where it stands rather than moved. That is a
+    // rendering change and nothing else — the count of warnings in content/ does
+    // not move, only their weight on the page. The alternative was a content
+    // edit across about thirty documents to satisfy the stylesheet, which is
+    // the wrong way round.
+    //
+    // Two shapes are wrapped, and the bold run goes inside the wrapper with the
+    // glyph, because the glyph alone is not the warning — the sentence is:
+    //
+    //   a. `**⚠️ …**`      — a strong run whose own text opens with the glyph.
+    //   b. `⚠️ **…**`      — a bare glyph immediately followed by a strong run.
+    //
+    // Anything already inside a warning-coloured container is left alone.
+    // `.callout-warning > p:first-child strong` already colours those, and
+    // wrapping them again would draw a second mark inside the first. A warning
+    // inside a *note* callout is not skipped: that panel is not warning-coloured,
+    // so the glyph in it is as unmarked as one in open prose.
+    //
+    // What this leaves: on the same build, 12 glyphs stay unmarked. Six are
+    // diagram captions, which come from the diagram manifest and not from this
+    // markdown at all; one is a table-of-contents entry, which should stay
+    // plain; and five are a bare glyph mid-paragraph with no bold run after it
+    // (`… not with you. ⚠️ Under **Hockey Canada Rule 6.11(b)(ii)** …`). Marking
+    // those would mean guessing where the warning ends, and a wrapper that
+    // guesses wrong emphasises the wrong sentence. They are a content-shape
+    // question: bolding the warning sentence in the document brings them in.
+    const markInlineWarnings = (node, suppressed) => {
+      const kids = node.children;
+      if (!Array.isArray(kids)) return;
+      const raw = node.data?.hProperties?.class ?? '';
+      const cls = Array.isArray(raw) ? raw.join(' ') : String(raw);
+      const inWarning = suppressed || /callout-warning|is-warning|warn-inline/.test(cls);
+
+      if (!inWarning) {
+        // Backwards, so a splice cannot disturb an index not yet visited.
+        for (let i = kids.length - 1; i >= 0; i -= 1) {
+          if (kids[i].type !== 'strong') continue;
+          const strong = kids[i];
+          if (WARNING_LEAD_RE.test(toText(strong))) {
+            kids[i] = inline('span', { class: 'warn-inline' }, [strong]);
+            continue;
+          }
+          const prev = i > 0 ? kids[i - 1] : null;
+          if (prev?.type !== 'text' || !WARNING_TAIL_RE.test(prev.value)) continue;
+          const at = prev.value.search(WARNING_TAIL_RE);
+          const head = prev.value.slice(0, at);
+          const glyph = prev.value.slice(at);
+          const marked = inline('span', { class: 'warn-inline' }, [
+            { type: 'text', value: glyph },
+            strong,
+          ]);
+          kids.splice(i - 1, 2, ...(head ? [{ type: 'text', value: head }, marked] : [marked]));
+        }
+      }
+
+      for (const child of node.children) markInlineWarnings(child, inWarning);
+    };
+    markInlineWarnings(tree, false);
 
     // ------------------------------------- explicit "Notes on verification"
     const notesHeading = children.findIndex(

@@ -330,6 +330,24 @@ LEXICON: tuple[tuple[str, str], ...] = (
     # It was reaching the audio as "hands or or near". Must stay below the
     # and/or rows, which claim their solidus first.
     (" / or ", " or "),
+    # The editorial [sic]. SYMBOLS drops '[' and ']' — correctly, because the
+    # usual bracket in this corpus is an insertion whose *words* are meant to be
+    # spoken ("[your] body"). That left the bare token 'sic', which the voice
+    # says as "sick" in the middle of a verbatim rulebook quotation.
+    #
+    # It is spoken rather than dropped. Dropping is what this file does to
+    # apparatus that carries no meaning for the listener — footnote references,
+    # daggers, bare URLs — and [sic] is the opposite of that: it is the whole
+    # signal that the oddity the listener just heard belongs to the source and
+    # not to the narrator. Deleting it would leave a rulebook quoted as saying
+    # something ungrammatical with nothing to say the fault was the rulebook's,
+    # which is the same silent-gap failure the diagram handling above exists to
+    # prevent. The corpus's only instance is NHL Rule 76.7, where the published
+    # PDF omits the word "at"; the sentence that follows it in the document
+    # explains the omission, so the marker only has to hold the listener for one
+    # clause. Commas, not brackets: brackets are silent, and the marker has to be
+    # audible as an aside or it reads as part of the quotation.
+    ("[sic]", ", as printed in the original,"),
     ("VO₂max", "V O two max"),
     ("VO₂", "V O two"),
     ("R²", "R squared"),
@@ -2442,6 +2460,18 @@ def self_test() -> int:
          "drops their stick and removes their gloves"),
         ("the skate(s) of a player", "the skates of a player"),
         ("NHL/NHLPA Learn to Play", "NHL and NHLPA Learn to Play"),
+        # 6. the editorial [sic]. The brackets were silent and the token was
+        #    not, so the corpus's one instance — inside a verbatim quotation of
+        #    NHL Rule 76.7, whose published text really does omit the word
+        #    "at" — reached the listener as the word "sick". Like the and/or
+        #    defects above it produced plain letters, so find_residue was blind
+        #    to it. The written [sic] is correct scholarship and stays.
+        ("When a [sic] least two face-off violations have been committed",
+         "When a, as printed in the original, least two face-off violations "
+         "have been committed"),
+        # The brackets must not survive on their own account either: a marker
+        # that expanded but left "[" behind would still be a defect.
+        ("the puck [sic] entered", "the puck, as printed in the original, entered"),
     )
     failures = 0
     for source, expected in cases:

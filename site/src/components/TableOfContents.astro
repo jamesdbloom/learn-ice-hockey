@@ -8,7 +8,24 @@ interface Props {
 }
 
 const { headings, variant = 'aside' } = Astro.props;
-const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+/*
+  Depths 2, 3 and 4.
+
+  Depth 4 is included because in this corpus it is never an aside. All 41 of
+  them name a discrete subject a reader goes looking for by name — the power
+  play formations (1-3-1, Umbrella, Overload, Spread/box, 2-3), the penalty
+  kill shapes (Box, Diamond, Wedge+1), individual plays (the seam pass, the
+  one-timer from the off-wing, the backdoor play), and several that carry a
+  safety line ("The crease is the one line you don't cross", "What hounding
+  never means", "Moving a screener — what the four books allow", which is a
+  four-rulebook penalty comparison). Filtering them out hid 29 of special
+  teams' 49 sections and the whole of that screener comparison, which the body
+  text links to by name.
+
+  If a document ever gains a genuine one-line depth-4 aside, exclude it there
+  rather than reinstating a blanket filter.
+*/
+const items = headings.filter((h) => h.depth >= 2 && h.depth <= 4);
 ---
 
 {

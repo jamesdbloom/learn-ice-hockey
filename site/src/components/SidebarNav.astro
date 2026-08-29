@@ -15,7 +15,20 @@ const { currentId } = Astro.props;
   full contents list underneath it, with no JavaScript involved either way.
 */}
 <nav class="sidebar" id="site-nav" aria-label="Corpus contents">
-  <p class="sidebar__heading">Contents</p>
+  {/*
+    The header's "Contents" button points at #site-nav. On a wide screen that
+    is the sticky left rail and the jump is invisible. Below 60rem the grid
+    collapses and this nav is the last thing on the page, so the same tap threw
+    the reader 98% of the way down a 65,000px document — measured on
+    on_ice_communication at 375x812 — and there was nothing on screen to get
+    back with. This row lands under the sticky header at the same moment the
+    nav does, so the way back arrives with the jump. Hidden on wide screens,
+    where there is no jump to undo.
+  */}
+  <div class="sidebar__top">
+    <p class="sidebar__heading">Contents</p>
+    <a class="sidebar__back" href="#main"><span aria-hidden="true">↑</span> Back to top</a>
+  </div>
   {
     LAYERS.map((layer) => (
       <div class="nav-layer">
