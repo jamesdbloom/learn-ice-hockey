@@ -32,8 +32,14 @@ const { currentId } = Astro.props;
   {
     LAYERS.map((layer) => (
       <div class="nav-layer">
+        {/*
+          The section hub, not the home page's anchor for it. Every page carries
+          this nav, so this is also what gives the eight hub pages an inbound
+          internal link from all 45 of the others — a page nothing links to is a
+          page a crawler has little reason to rank.
+        */}
         <p class="nav-layer__title">
-          <a href={`/#${layer.id}`}>{layer.title}</a>
+          <a href={`/${layer.id}/`}>{layer.title}</a>
         </p>
         <ul class="nav-list">
           {layer.docs.map((doc) => (

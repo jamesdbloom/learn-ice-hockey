@@ -34,8 +34,15 @@ const WARNING_TAIL_RE = /(⚠|❗|🚫)\uFE0F?\s*$/u;
 // that reason.
 const WARNING_LEAD_RE = /^\s*(\d+[.)]\s*)?(⚠|❗|🚫)/u;
 const VERIFY_RE = /^\s*(verification note|note on|methodology note)/i;
+// ⚠️ A trailer paragraph that is NOT matched here is filed as a *source*, which both
+// HIDES it inside the collapsed <details> and REORDERS it ahead of the visible notes.
+// That buried six documents' ⚠️ safety notes and left `faceoffs.md`'s visible note
+// pointing at an "edition note that follows it" which the reorder had moved above it,
+// inside the closed box. Leads must therefore be listed here BEFORE they are used in
+// content — and the optional warning glyph matters, because these paragraphs open
+// `⚠️ **Edition note — …`, where the glyph stops the bold run from starting the line.
 const NOTE_START_RE =
-  /^\s*\**\s*(verification note|unverified|could not be verified|rules verified|note on|methodology note|correction|•)/i;
+  /^\s*(?:[⚠❗🚫]\uFE0F?\s*)?\**\s*(verification note|unverified|could not be verified|rules verified|note on|notes on|methodology note|correction|in-house note|edition note|provenance|•)/iu;
 const SOURCES_RE = /^\s*Sources\s*[—–-]/;
 
 /** Flatten an mdast subtree to plain text. */
@@ -331,9 +338,18 @@ export default function remarkCorpus(options = {}) {
     // ------------------------------------ warnings written as bare paragraphs
     // A warning is load-bearing whichever syntax it arrives in. Some are
     // written as blockquotes and were promoted above; others are written as
-    // plain paragraphs opening with ⚠️, because a blockquote does not reach
-    // the speech layer — `md_to_speech.py` drops the quoted form, so a
-    // penalty warning written as `> ⚠️ …` is never read aloud.
+    // plain paragraphs opening with ⚠️.
+    //
+    // This comment used to justify that split by asserting that "a blockquote
+    // does not reach the speech layer — md_to_speech.py drops the quoted form,
+    // so a penalty warning written as `> ⚠️ …` is never read aloud."
+    // THAT IS FALSE against the current script, and was measured false on
+    // 2026-08-29: rendering body_contact_and_battles puts §5's blockquote
+    // restriction into 025.ssml verbatim ("This section applies only in leagues
+    // that permit body checking…"). `render_quote` converts blockquotes; only
+    // header blockquotes matching "rule set:" in their first 40 chars are
+    // dropped. A future author acting on the old claim would have restructured
+    // safety warnings to escape a speech-layer problem that does not exist.
     //
     // The site used to style only the blockquote form. That split the corpus
     // almost exactly in half — a browser pass found 31 warning glyphs inside

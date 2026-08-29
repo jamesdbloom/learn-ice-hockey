@@ -5,6 +5,7 @@ import SidebarNav from '../components/SidebarNav.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import PrevNext from '../components/PrevNext.astro';
 import AudioPlayer from '../components/AudioPlayer.astro';
+import CiteThis from '../components/CiteThis.astro';
 import { getDoc, getNeighbours } from '../data/nav';
 
 export async function getStaticPaths() {
@@ -32,7 +33,7 @@ const { prev, next } = getNeighbours(entry.id);
   <main class="main" id="main">
     <article data-pagefind-body>
       <p class="doc-eyebrow">
-        <a href={`/#${doc.layerId}`}>{doc.layerTitle}</a>
+        <a href={`/${doc.layerId}/`}>{doc.layerTitle}</a>
       </p>
       <h1 class="doc-title">{doc.title}</h1>
 
@@ -41,6 +42,8 @@ const { prev, next } = getNeighbours(entry.id);
       <div class="prose">
         <Content />
       </div>
+
+      <CiteThis title={doc.title} />
     </article>
 
     <AudioPlayer id={entry.id} title={doc.title} />

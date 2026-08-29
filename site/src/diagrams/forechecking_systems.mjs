@@ -559,10 +559,17 @@ const forecheckPinch = {
     //     together" rather than "the defenceman gets there first", which the
     //     section never promises. Neither arrowhead lands on a player.
     { from: D_STRONG, to: { at: 'boards:right', dx: -22, dy: -5 }, kind: 'skate', bow: 3 },
-    // 3 — "The common default is that F3 recovers towards the middle and replaces
-    //     them at the blue line — this is the single most commonly missed job on
-    //     the forecheck." Stops nine feet short of the defenceman's glyph, which
-    //     is still drawn at the point it is in the act of leaving.
+    // 3 — the rotation behind the pinch. "The common default is that F3 recovers
+    //     towards the middle and replaces them at the blue line" — that clause is
+    //     what this arrow draws, and it is the only part worth quoting here: the
+    //     rationale the section attaches to it has already been rewritten once (it
+    //     used to end "this is the single most commonly missed job on the
+    //     forecheck", a ranking the corpus no longer makes), while the clause the
+    //     arrow depends on did not change. A default and not a law — the caption
+    //     names the same two alternatives the section does, the weak-side D sliding
+    //     across and pinching only on F3's call.
+    //     Stops nine feet short of the defenceman's glyph, which is still drawn at
+    //     the point it is in the act of leaving.
     { from: F3_HIGH, to: { at: 'point:right', dx: 6, dy: -7 }, kind: 'skate', bow: -2 },
   ],
 

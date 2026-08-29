@@ -24,7 +24,14 @@ const first = READING_ORDER[0];
       — three buttons and nothing else — so a reader who arrived on a dead link
       had no way to see what the corpus contains without guessing at the two
       that pointed inward. The sections list is the same one the sidebar and the
-      home page use, and it links to the same anchors.
+      home page use.
+
+      It links to the section hub pages rather than to the home page's anchors.
+      This is the page a reader lands on after trimming a URL back a segment, and
+      trimming `/systems/faceoffs/` to `/systems/` used to arrive here; sending
+      them on to `/#systems` would have answered a request for the section with
+      the top of a different page. The hubs exist now, so the heading "start from
+      a section" can hand over an actual section.
     */}
     <nav class="notfound-nav" aria-label="Corpus sections">
       <p class="notfound-nav__heading">Or start from a section</p>
@@ -32,7 +39,7 @@ const first = READING_ORDER[0];
         {
           LAYERS.map((layer) => (
             <li>
-              <a href={`/#${layer.id}`}>
+              <a href={`/${layer.id}/`}>
                 <span class="notfound-nav__title">{layer.title}</span>
                 <span class="notfound-nav__tagline">{layer.tagline}</span>
               </a>

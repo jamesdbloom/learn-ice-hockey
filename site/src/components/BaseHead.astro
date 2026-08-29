@@ -3,6 +3,8 @@ import {
   SITE_TITLE, SITE_SHORT_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, SITE_AUTHOR_URL,
   GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION,
 } from '../consts';
+import { LAYERS } from '../data/nav';
+import ogManifest from '../data/og.json';
 
 interface Props {
   title?: string;
@@ -36,32 +38,63 @@ const siteBase = (Astro.site ?? new URL('/', Astro.url)).href.replace(/\/$/, '')
   one is worse than an absent one — Google treats a date it can see as a claim.
 */
 /*
-  The trail is Home → document, with no intermediate section crumb.
+  The trail is Home → Section → document.
 
-  There is no `/technique/` page. The sections are directories in the built
-  output and nothing else — the routes go straight from the index to the
-  document. An earlier version of this file walked the whole path and emitted
-  a crumb per segment, which told search engines that eight section pages
-  existed when every one of them returns the 404. `check-links.mjs` did not
-  catch it because it reads `<a href>` and not JSON-LD, and validating the
-  markup only established that it was well-formed, which is a different claim
-  from true. Only emit a crumb for a URL that is actually built.
+  The rule this file has always enforced is unchanged: only emit a crumb for a
+  URL that is actually built. What changed is which URLs are built. An earlier
+  version walked the whole path and emitted a crumb per segment, which told
+  search engines that eight section pages existed when every one of them
+  returned the 404; it was cut back to Home → document for that reason.
+  `src/pages/[layer]/index.astro` now builds all eight, so the middle crumb is
+  true and is emitted again — but it is emitted from the layer list rather than
+  from the path string, so a segment that is not a real section still gets no
+  crumb. `/search/` and `/downloads/` are one-segment pages that are not
+  sections, and they take the leaf branch as before.
+
+  `check-links.mjs` reads `<a href>` and not JSON-LD, so it cannot catch a
+  regression here. The guard is that `LAYERS` is the same list the routes are
+  generated from: a crumb can only be emitted for a section that exists,
+  because the crumb and the page come from one source.
 */
 const crumbs = Astro.url.pathname.split('/').filter(Boolean);
+const layerTitles = new Map(LAYERS.map((l) => [l.id, l.title]));
 // The 404 page is built as `404.html` and served by CloudFront on error. There
 // is no `/404/` URL, so it gets Home and nothing else.
-const leaf = crumbs.length && crumbs[crumbs.length - 1] !== '404'
-  ? [{
+const isError = !crumbs.length || crumbs[crumbs.length - 1] === '404';
+// A section crumb only when the first segment names a built section *and* the
+// page is not that section itself — a hub must not list itself twice.
+const sectionId = crumbs.length > 1 && layerTitles.has(crumbs[0]) ? crumbs[0] : null;
+const section_crumb = sectionId
+  ? [{ name: layerTitles.get(sectionId)!, item: `${siteBase}/${sectionId}/` }]
+  : [];
+const leaf = isError
+  ? []
+  : [{
       name: title ?? crumbs[crumbs.length - 1].replace(/[-_]/g, ' '),
       item: canonical,
-    }]
-  : [];
-const breadcrumb = [{ name: 'Home', item: `${siteBase}/` }, ...leaf].map((c, i) => ({
+    }];
+const breadcrumb = [
+  { name: 'Home', item: `${siteBase}/` },
+  ...section_crumb,
+  ...leaf,
+].map((c, i) => ({
   '@type': 'ListItem',
   position: i + 1,
   name: c.name,
   item: c.item,
 }));
+
+/*
+  Open Graph image. Rendered at 1200x630 by scripts/build-og.mjs and looked up
+  by pathname, so a page only claims a card that was actually written to disk —
+  if the manifest is empty (no Chrome at build time) nothing is emitted and the
+  share falls back to the text preview this site had before.
+
+  Absolute URLs, because Open Graph consumers do not resolve relative ones.
+*/
+const og = (ogManifest as Record<string, { image: string; width: number; height: number; alt: string }>)[
+  Astro.url.pathname
+];
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -103,9 +136,26 @@ const jsonLd = {
 <meta property="og:site_name" content={SITE_TITLE} />
 {section && <meta property="article:section" content={section} />}
 
-<meta name="twitter:card" content="summary" />
+{og && (
+  <>
+    <meta property="og:image" content={`${siteBase}${og.image}`} />
+    <meta property="og:image:width" content={String(og.width)} />
+    <meta property="og:image:height" content={String(og.height)} />
+    <meta property="og:image:alt" content={og.alt} />
+    <meta property="og:image:type" content="image/png" />
+  </>
+)}
+
+{/*
+  `summary_large_image` only where there is a large image to show. Declaring it
+  with no og:image is how a share renders as an empty box rather than falling
+  back to the small card.
+*/}
+<meta name="twitter:card" content={og ? 'summary_large_image' : 'summary'} />
 <meta name="twitter:title" content={title ?? SITE_TITLE} />
 <meta name="twitter:description" content={pageDescription} />
+{og && <meta name="twitter:image" content={`${siteBase}${og.image}`} />}
+{og && <meta name="twitter:image:alt" content={og.alt} />}
 
 <meta name="author" content={SITE_AUTHOR} />
 {GOOGLE_SITE_VERIFICATION && (
@@ -116,6 +166,7 @@ const jsonLd = {
 <meta name="generator" content={Astro.generator} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="sitemap" href="/sitemap.xml" />
+<link rel="alternate" type="application/rss+xml" title={SITE_TITLE} href="/rss.xml" />
 
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 

@@ -1,0 +1,134 @@
+---
+/*
+  "Cite this page" — the attribution block.
+
+  The content is CC BY-NC 4.0, and the BY is not decorative: anyone who reuses a
+  paragraph of this corpus is *required* to attribute it. The footer already
+  named the licence, which told a reuser that they owed attribution without
+  telling them what attribution looks like. Someone who wants to comply and has
+  to invent the wording will invent it differently every time, and some of them
+  will give up and not link at all.
+
+  So this gives them the string. Three forms, because the three audiences differ:
+  a plain-text line for a forum post or a slide, an HTML anchor for anyone with a
+  page of their own, and a BibTeX entry for anyone writing something longer.
+
+  Deliberately absent: an "accessed on" date. The layout carries no document
+  dates — BaseHead's structured data omits datePublished for the same reason —
+  and a date stamped at build time would say the page was read on the day it was
+  compiled, which is false for every reader after the first. Whoever is citing it
+  knows when they read it; the field is theirs to fill.
+
+  data-pagefind-ignore because this block sits inside the article, and the article
+  is the Pagefind body. Without it every one of the 37 documents would carry the
+  same three citation snippets in its search index, and a search for the author
+  name or the licence would return the entire corpus.
+
+  The copy buttons are created by script, not markup, so that a reader without
+  JavaScript is not shown a button that does nothing. The text itself is in the
+  page and selectable either way.
+*/
+import { SITE_AUTHOR, SITE_AUTHOR_URL, SITE_SHORT_TITLE } from '../consts';
+
+interface Props {
+  /** The page's own title, as it should appear in the citation. */
+  title: string;
+}
+
+const { title } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+const LICENCE = 'CC BY-NC 4.0';
+const LICENCE_URL = 'https://creativecommons.org/licenses/by-nc/4.0/';
+
+const plain = `${SITE_AUTHOR}, "${title}", ${SITE_SHORT_TITLE}. ${canonical} — licensed ${LICENCE}.`;
+
+const html =
+  `<a href="${canonical}">${title}</a> by ` +
+  `<a href="${SITE_AUTHOR_URL}">${SITE_AUTHOR}</a>, licensed under ` +
+  `<a href="${LICENCE_URL}">${LICENCE}</a>.`;
+
+/*
+  A stable citation key: the URL path with the separators flattened. Two pages
+  can never collide because two pages cannot share a path.
+*/
+const key = Astro.url.pathname.replace(/^\/|\/$/g, '').replace(/[^a-z0-9]+/gi, '-') || 'index';
+
+const bibtex = `@misc{${key},
+  author  = {${SITE_AUTHOR}},
+  title   = {${title}},
+  howpublished = {${SITE_SHORT_TITLE}},
+  url     = {${canonical}},
+  note    = {Licensed ${LICENCE}}
+}`;
+---
+
+<section class="cite" aria-labelledby="cite-heading" data-pagefind-ignore>
+  <h2 class="cite__heading" id="cite-heading">Cite this page</h2>
+  <p class="cite__intro">
+    This page is licensed <a href={LICENCE_URL} rel="license">{LICENCE}</a>. You may share and
+    adapt it for non-commercial purposes provided you give credit. Here is the credit line.
+  </p>
+
+  <div class="cite__block" data-cite-block>
+    <p class="cite__label" id={`cite-plain-${key}`}>Plain text</p>
+    <pre class="cite__snippet" data-cite-copy aria-labelledby={`cite-plain-${key}`}>{plain}</pre>
+  </div>
+
+  <div class="cite__block" data-cite-block>
+    <p class="cite__label" id={`cite-html-${key}`}>HTML</p>
+    <pre class="cite__snippet" data-cite-copy aria-labelledby={`cite-html-${key}`}>{html}</pre>
+  </div>
+
+  <div class="cite__block" data-cite-block>
+    <p class="cite__label" id={`cite-bibtex-${key}`}>BibTeX</p>
+    <pre class="cite__snippet" data-cite-copy aria-labelledby={`cite-bibtex-${key}`}>{bibtex}</pre>
+  </div>
+</section>
+
+{/*
+  A bundled Astro script, not an inline one. The production CSP is
+  script-src 'self' with no unsafe-inline (infra/locals.tf), so an inline
+  handler would need an exemption that weakens the policy for every page.
+*/}
+<script>
+  for (const block of document.querySelectorAll('[data-cite-block]')) {
+    const snippet = block.querySelector('[data-cite-copy]');
+    if (!snippet || !navigator.clipboard) continue;
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'cite__copy';
+    const label = block.querySelector('.cite__label');
+    // The accessible name says which of the three snippets this copies. Three
+    // buttons all named "Copy" is three identical rows to a screen-reader user.
+    button.setAttribute(
+      'aria-label',
+      `Copy the ${(label?.textContent ?? '').trim().toLowerCase()} citation`,
+    );
+    button.textContent = 'Copy';
+
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(snippet.textContent ?? '');
+        button.textContent = 'Copied';
+        button.classList.add('is-copied');
+      } catch {
+        // Clipboard permission can be refused. Say so rather than showing
+        // "Copied" over a clipboard that did not change.
+        button.textContent = 'Press ⌘C';
+        const range = document.createRange();
+        range.selectNodeContents(snippet);
+        const sel = window.getSelection();
+        sel?.removeAllRanges();
+        sel?.addRange(range);
+      }
+      setTimeout(() => {
+        button.textContent = 'Copy';
+        button.classList.remove('is-copied');
+      }, 2000);
+    });
+
+    label?.append(button);
+  }
+</script>

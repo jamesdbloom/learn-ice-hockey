@@ -211,8 +211,8 @@ const collapseCorner = {
     'and does not get drawn to it; both wingers are still high on the points; and the centre ' +
     'is leaving the high slot to go down as the second body into the corner battle, because ' +
     'two on one wins it. ' +
-    'That leaves the high slot — the most dangerous square metre on the ice — momentarily ' +
-    'empty, and the next diagram shows who fills it. ' +
+    'That leaves the high slot momentarily empty — the seam the puck comes back through — ' +
+    'and the next diagram shows who fills it. ' +
     'This is the first of two frames of a movement, not a shape to hold: under man-on-man or ' +
     'a hybrid these same five players would be reading bodies rather than areas, so ask your ' +
     'coach which system your team plays.',

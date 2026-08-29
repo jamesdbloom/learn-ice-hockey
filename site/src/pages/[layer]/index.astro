@@ -1,0 +1,102 @@
+---
+/*
+  Section hub pages: /technique/, /systems/, /positions/ and the five others.
+
+  These eight URLs are the directories the documents already live in, and until
+  now every one of them returned the 404. That cost three separate things:
+
+  1. A reader who trimmed a URL back a segment — which people do — got an error
+     page instead of the section they were trimming towards.
+  2. BaseHead could not emit an intermediate breadcrumb. Its own comment records
+     why: an earlier version walked the whole path and advertised eight section
+     pages that did not exist, so it was cut back to Home → document. With these
+     built, the trail can be Home → Section → document and be true.
+  3. There was no page for a section to rank as. The corpus is organised in
+     layers and nothing on the site said so except the home page's anchors.
+
+  Nothing here is written from scratch. The title, tagline and blurb come from
+  structure.json — the corpus's own five-layer framing — and each card's title
+  and description come from docs-meta.json, which extract-meta.mjs generates
+  from the documents themselves. This file authors no hockey claim; if a
+  description here is wrong, it is wrong in the document it was read from.
+*/
+import Base from '../../layouts/Base.astro';
+import SidebarNav from '../../components/SidebarNav.astro';
+import CiteThis from '../../components/CiteThis.astro';
+import { LAYERS } from '../../data/nav';
+
+export function getStaticPaths() {
+  return LAYERS.map((layer, i) => ({
+    params: { layer: layer.id },
+    props: {
+      layer,
+      prevLayer: LAYERS[i - 1],
+      nextLayer: LAYERS[i + 1],
+    },
+  }));
+}
+
+const { layer, prevLayer, nextLayer } = Astro.props;
+
+/*
+  The meta description is the layer's own blurb. Some blurbs run past the ~160
+  characters a search result shows, so it is trimmed on a word boundary rather
+  than mid-word — but only for the meta tag. The page itself shows all of it.
+*/
+const description =
+  layer.blurb.length <= 160
+    ? layer.blurb
+    : layer.blurb.slice(0, layer.blurb.lastIndexOf(' ', 157)) + '…';
+
+const count = layer.docs.length;
+---
+
+<Base title={layer.title} description={description} section={layer.title}>
+  <main class="main" id="main">
+    <article>
+      <p class="doc-eyebrow"><a href="/">All sections</a></p>
+      <h1 class="doc-title">{layer.title}</h1>
+
+      <p class="hub-tagline">{layer.tagline}</p>
+      <p class="hub-blurb">{layer.blurb}</p>
+
+      <h2 class="hub-heading">
+        {count === 1 ? 'The document in this section' : `The ${count} documents in this section`}
+      </h2>
+      <div class="card-grid">
+        {
+          layer.docs.map((doc) => (
+            <a class="card" href={doc.href}>
+              <span class="card__title">{doc.title}</span>
+              <span class="card__desc">{doc.description}</span>
+            </a>
+          ))
+        }
+      </div>
+
+      <CiteThis title={layer.title} />
+    </article>
+
+    {/*
+      Section-to-section movement, in the corpus's reading order rather than
+      alphabetically — the same order PrevNext uses between documents, so the
+      two navigations cannot disagree about which way is forward.
+    */}
+    <nav class="prevnext" aria-label="Sections">
+      {prevLayer && (
+        <a class="prev" href={`/${prevLayer.id}/`} rel="prev">
+          <span class="dir">Previous section</span>
+          <span>{prevLayer.title}</span>
+        </a>
+      )}
+      {nextLayer && (
+        <a class="next" href={`/${nextLayer.id}/`} rel="next">
+          <span class="dir">Next section</span>
+          <span>{nextLayer.title}</span>
+        </a>
+      )}
+    </nav>
+  </main>
+
+  <SidebarNav />
+</Base>

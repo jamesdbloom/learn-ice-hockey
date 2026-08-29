@@ -409,9 +409,12 @@ const backcheckLanes = {
     'takes the middle lane and the two wingers take the outside lanes, and each backchecker’s route bends ' +
     'inside their man rather than trailing their shoulder — you cannot defend anything from behind, and ' +
     'the aim is their inside hip, not their back pocket. ' +
+    // The ranking this sentence used to carry — "the most commonly missed assignment in hockey" — was a
+    // corpus-wide superlative with no source behind it, and a caption is the one place it reached a reader
+    // as a caption rather than as prose. The mechanism is the teachable part and it survives; the league
+    // table does not. Scope kept to the picture, which the picture can actually support.
     'The most dangerous player in the picture is the middle-lane driver, the attacker skating hard through ' +
-    'the middle without the puck: they are the most commonly missed assignment in hockey, and they are ' +
-    'missed because they do not have the puck and eyes go to the puck. ' +
+    'the middle without the puck: they are missed because they do not have the puck and eyes go to the puck. ' +
     'The lane assignment is a coaching choice and not a law — other teams give the middle to the first ' +
     'man back whoever it is, and others pick up man-on-man from the puck outward, so find out which yours ' +
     'runs; under every variant somebody is responsible for the middle and nobody assumes it is ' +

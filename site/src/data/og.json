@@ -1,0 +1,290 @@
+{
+  "/": {
+    "image": "/og/index.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Ice hockey — learning to play the game"
+  },
+  "/getting-started/": {
+    "image": "/og/getting-started.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Getting Started"
+  },
+  "/getting-started/getting_started/": {
+    "image": "/og/getting-started__getting_started.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Getting Started"
+  },
+  "/reading-diagrams/": {
+    "image": "/og/reading-diagrams.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Reading the Diagrams"
+  },
+  "/reading-diagrams/reading_ice_hockey_diagrams/": {
+    "image": "/og/reading-diagrams__reading_ice_hockey_diagrams.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Reading Ice Hockey Diagrams"
+  },
+  "/foundation/": {
+    "image": "/og/foundation.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Foundation"
+  },
+  "/foundation/rink_map_and_glossary/": {
+    "image": "/og/foundation__rink_map_and_glossary.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Rink Map and Glossary"
+  },
+  "/foundation/rules_primer/": {
+    "image": "/og/foundation__rules_primer.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Rules Primer"
+  },
+  "/foundation/uk_rules/": {
+    "image": "/og/foundation__uk_rules.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "UK and England Rules"
+  },
+  "/foundation/on_ice_communication/": {
+    "image": "/og/foundation__on_ice_communication.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "On-Ice Communication"
+  },
+  "/positions/": {
+    "image": "/og/positions.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Positions"
+  },
+  "/positions/center/": {
+    "image": "/og/positions__center.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Center"
+  },
+  "/positions/winger/": {
+    "image": "/og/positions__winger.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Winger"
+  },
+  "/positions/defender/": {
+    "image": "/og/positions__defender.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Defender"
+  },
+  "/positions/goaltender/": {
+    "image": "/og/positions__goaltender.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Goaltender"
+  },
+  "/positions/switching_positions/": {
+    "image": "/og/positions__switching_positions.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Switching Positions"
+  },
+  "/systems/": {
+    "image": "/og/systems.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Systems and Situations"
+  },
+  "/systems/breakouts/": {
+    "image": "/og/systems__breakouts.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Breakouts"
+  },
+  "/systems/zone_entries/": {
+    "image": "/og/systems__zone_entries.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Zone Entries"
+  },
+  "/systems/offensive_zone_play/": {
+    "image": "/og/systems__offensive_zone_play.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Offensive Zone Play"
+  },
+  "/systems/forechecking_systems/": {
+    "image": "/og/systems__forechecking_systems.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Forechecking Systems"
+  },
+  "/systems/neutral_zone_systems/": {
+    "image": "/og/systems__neutral_zone_systems.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Neutral Zone Systems"
+  },
+  "/systems/defensive_zone_coverage/": {
+    "image": "/og/systems__defensive_zone_coverage.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Defensive Zone Coverage"
+  },
+  "/systems/defending_the_rush/": {
+    "image": "/og/systems__defending_the_rush.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Defending the Rush"
+  },
+  "/systems/special_teams/": {
+    "image": "/og/systems__special_teams.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Special Teams"
+  },
+  "/systems/faceoffs/": {
+    "image": "/og/systems__faceoffs.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Faceoffs"
+  },
+  "/systems/game_management/": {
+    "image": "/og/systems__game_management.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Game Management"
+  },
+  "/technique/": {
+    "image": "/og/technique.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Technique"
+  },
+  "/technique/skating/": {
+    "image": "/og/technique__skating.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Skating"
+  },
+  "/technique/puck_handling/": {
+    "image": "/og/technique__puck_handling.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Puck Handling"
+  },
+  "/technique/passing_and_receiving/": {
+    "image": "/og/technique__passing_and_receiving.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Passing and Receiving"
+  },
+  "/technique/shooting/": {
+    "image": "/og/technique__shooting.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Shooting"
+  },
+  "/technique/body_contact_and_battles/": {
+    "image": "/og/technique__body_contact_and_battles.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Body Contact and Battles"
+  },
+  "/hockey-iq/": {
+    "image": "/og/hockey-iq.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Hockey IQ"
+  },
+  "/hockey-iq/puck_support_and_spacing/": {
+    "image": "/og/hockey-iq__puck_support_and_spacing.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Puck Support and Spacing"
+  },
+  "/hockey-iq/time_and_space/": {
+    "image": "/og/hockey-iq__time_and_space.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Time and Space"
+  },
+  "/hockey-iq/scanning_and_anticipation/": {
+    "image": "/og/hockey-iq__scanning_and_anticipation.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Scanning and Anticipation"
+  },
+  "/hockey-iq/risk_management/": {
+    "image": "/og/hockey-iq__risk_management.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Risk Management and Decision-Making"
+  },
+  "/hockey-iq/playing_without_the_puck/": {
+    "image": "/og/hockey-iq__playing_without_the_puck.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Playing Without the Puck"
+  },
+  "/off-the-ice/": {
+    "image": "/og/off-the-ice.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Off the Ice"
+  },
+  "/off-the-ice/equipment/": {
+    "image": "/og/off-the-ice__equipment.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Equipment"
+  },
+  "/off-the-ice/conditioning_and_recovery/": {
+    "image": "/og/off-the-ice__conditioning_and_recovery.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Conditioning and Recovery"
+  },
+  "/off-the-ice/practice_and_development/": {
+    "image": "/og/off-the-ice__practice_and_development.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Practice and Development"
+  },
+  "/off-the-ice/mental_game/": {
+    "image": "/og/off-the-ice__mental_game.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "The Mental Game"
+  },
+  "/off-the-ice/team_play_and_culture/": {
+    "image": "/og/off-the-ice__team_play_and_culture.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Team Play and Culture"
+  },
+  "/off-the-ice/how_to_watch_hockey/": {
+    "image": "/og/off-the-ice__how_to_watch_hockey.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "How to Watch Hockey"
+  },
+  "/search/": {
+    "image": "/og/search.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Search"
+  },
+  "/downloads/": {
+    "image": "/og/downloads.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Downloads"
+  }
+}

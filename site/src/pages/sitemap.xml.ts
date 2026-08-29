@@ -1,12 +1,21 @@
 import type { APIRoute } from 'astro';
-import { READING_ORDER } from '../data/nav';
+import { LAYERS, READING_ORDER } from '../data/nav';
 
 /** Hand-rolled so the site keeps exactly one production dependency. */
 export const GET: APIRoute = ({ site }) => {
   const origin = (site ?? new URL('http://localhost/')).origin;
   // /offline/ is deliberately absent — it is a service-worker fallback, not a
   // page anyone should reach from a search result.
-  const paths = ['/', '/search/', '/downloads/', ...READING_ORDER.map((d) => d.href)];
+  // The eight section hubs are listed before the documents they contain. They
+  // are real pages now (src/pages/[layer]/index.astro); while they were not, a
+  // sitemap naming them would have been advertising eight 404s to a crawler.
+  const paths = [
+    '/',
+    '/search/',
+    '/downloads/',
+    ...LAYERS.map((l) => `/${l.id}/`),
+    ...READING_ORDER.map((d) => d.href),
+  ];
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
