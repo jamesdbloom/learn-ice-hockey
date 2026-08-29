@@ -28,20 +28,51 @@ You own dimensions **D1, D2 and D3** of [`project/review_process.md`](../../proj
 
 The primary texts are extracted to plain text in the session scratchpad. Locate them first — the path is session-specific, so do not assume a remembered one:
 
-```bash
-find /tmp /private/tmp -name 'nhl_rules.txt' 2>/dev/null
-```
-
-Expect, in the same directory:
+**The books live in `sources/` in the repository.** They are gitignored, so they are on disk but
+never committed; `scripts/fetch_sources.sh` rebuilds them and `sources/README.md` is the record of
+what each one is. ⚠️ **Read `sources/README.md` before quoting anything** — it carries the
+extraction traps, and there are several that have manufactured false findings.
 
 | File | Source |
 |---|---|
-| `nhl_rules.txt` | NHL Official Rules 2025-2026 — the authoritative source, ~25,000 lines |
-| `iihf_rules.txt` | IIHF Official Rulebook 2025/26, Version 1.0, May 2025 |
-| `usah_rules.txt` | USA Hockey Playing Rules |
-| `usah_case.txt` | USA Hockey Casebook — official interpretations |
-| `hc2628.txt` | Hockey Canada Playing Rules 2026-2028 — **cite this edition** |
-| `hc.txt` | Hockey Canada Playing Rules 2024-2026 — superseded |
+| `nhl_rules.txt` | NHL Official Rules 2025-2026 — plain `pdftotext` |
+| `nhl_rules_layout.txt` | The same book, `-layout` extraction. **A second opinion when a table or a rule number looks detached** |
+| `iihf_rules_v1.1.txt` | IIHF Official Rulebook 2025/26 **v1.1 — cite this edition** |
+| `iihf_rules_v1.0.txt` | IIHF Official Rulebook 2025/26 v1.0, May 2025 — superseded, kept for comparison |
+| `iihf_rules.txt` | The repaired mirror extraction of v1.1. Prefer `iihf_rules_v1.1.txt` |
+| `iihf_situations_v1.1.txt` | IIHF Situation Handbook 2025/26 **v1.1, August 2025 — cite this edition** |
+| `iihf_situations.txt` | IIHF Situation Handbook 2025/26 **v1.0, June 2025** — superseded. ⚠️ **Four rulings differ from v1.1: Situations 10.7, 20.4, 46.1 and 63.19.** 63.19 reversed outright (*"No"* → *"Yes."*) |
+| `usah.txt` | USA Hockey Official Playing Rules 2025-29 |
+| `usah_casebook.txt` | USA Hockey Official Rules **and Casebook** 2025-29 — the separate 476pp volume |
+| `hc.txt` | Hockey Canada Playing Rules **2026-2028** — plain `pdftotext` |
+| `hc_layout.txt` | The same book, `-layout` extraction |
+| `eiha_inhouse.txt` | IHUK In-House Rules 2025-26 — the British amendments |
+| `eih_rr.txt` | England Ice Hockey Rules & Regulations 2024-2025 |
+| `ibc.txt` | USA Hockey *Introduction To Body Contact* |
+
+⚠️ **This table was wrong for an unknown number of rounds** — it named `usah_rules.txt`,
+`usah_case.txt`, `hc2628.txt` and an `iihf_rules.txt` at "v1.0, May 2025", **four of which do not
+exist**, and it labelled `hc.txt` as the superseded 2024-2026 edition when `hc.txt` **is** the
+current 2026-2028 book. A verifier that trusted it would have reported a book as missing, or
+quoted the live Hockey Canada rules while calling them superseded. **Found by a verifier that
+checked the table against `ls sources/` instead of trusting it.** Do the same: the file listing is
+the authority, this table is a convenience, and `sources/README.md` outranks both.
+
+### Two extraction traps that have produced false findings here
+
+- **Plain `pdftotext` silently joins hyphenated line breaks.** `nhl_rules.txt` and `hc.txt` are
+  plain extractions — *face-off* becomes *faceoff*, *Off-Ice Officials* becomes *OffIce Officials*.
+  A grep for the hyphenated form returns a false absence. Use the `_layout` twin, or flatten.
+- **Near a page boundary, "not present" is unproven until a flattened read has looked.** Build a
+  de-hyphenated, whitespace-flattened copy in the scratchpad before asserting any negative.
+
+**⚠️ A negative existence claim — "this book has no such rule" — is the most dangerous thing you
+can report here, and it must be attacked rather than confirmed.** Search by **concept** as well as
+by rule number; a tier or exception may live under a different heading. Check the **penalty summary
+and classification tables**, which routinely carry tiers the prose does not repeat. Search the
+**casebook volume** as well as the playing rules. Then say exactly what you searched — every rule
+number, every concept term, every volume — so the next reader can see the shape of the hole rather
+than trusting the conclusion.
 
 If they are not there, the working NHL PDF is:
 `https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf`

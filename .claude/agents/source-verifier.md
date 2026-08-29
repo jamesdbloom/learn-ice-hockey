@@ -69,8 +69,14 @@ A retry that stops at the status code will call the page live and invent a citat
 **Grep the retrieved body for the fact you are claiming.** A status code is not evidence. Two cheap tells: an unexpectedly round or identical byte count across different URLs on the same host, and the string `404` or "not found" in the `<title>`.
 
 ```bash
-grep -io '<title>[^<]*</title>' /tmp/page.html
+grep -io '<title>[^<]*</title>' "$SCRATCH/page-$(date +%s%N).html"
 ```
+
+⚠️ **Note the path.** This example used to read `/tmp/page.html`, **contradicting the scratchpad
+rule four paragraphs above it in this same file.** An agent copying the snippet — which is what
+snippets are for — defeated the rule by following the instructions. Found in an agent-definition
+audit; recorded because a self-refuting brief is the failure mode this repository keeps hitting,
+and it is invisible until someone reads the file end to end instead of grepping it.
 
 ### 3. Text in the HTML is not text on the page — strip comments
 

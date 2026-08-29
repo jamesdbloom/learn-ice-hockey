@@ -691,14 +691,30 @@ def _clause_words(clause: str) -> str:
     return clause  # a lettered clause: '(b)' -> 'clause b'
 
 
+def _section_reference(match: re.Match) -> str:
+    """'\u00a719.1.2' -> 'section nineteen point one point two'.
+
+    The two-level citation rules stop at 'major.minor', so a three-level
+    section reference rendered as 'section nineteen point one' and dropped
+    a '.2' into the audio unhandled. Anchored on the section sign because
+    the only other three-level numbers in the corpus are inside DOIs, which
+    must never be spoken as rule numbers.
+    """
+    levels = [int(n) for n in match.group("levels").split(".")]
+    return "section " + " point ".join(int_to_words(n) for n in levels)
+
+
 def _bare_clause(match: re.Match) -> str:
     """'27.8 and 63.2(viii)' - the second citation has no 'Rule' in front."""
     major = int_to_words(int(match.group("major")))
     minor = int_to_words(int(match.group("minor")))
     out = f"{major} point {minor}"
-    clause = match.group("c1")
-    if clause:
-        out += f", clause {_clause_words(clause)}"
+    for group in ("c1", "c2"):
+        clause = match.groupdict().get(group)
+        if not clause:
+            continue
+        label = "clause" if group == "c1" else "sub-clause"
+        out += f", {label} {_clause_words(clause)}"
     return out
 
 
@@ -802,10 +818,14 @@ def _usa_clause_citation(match: re.Match) -> str:
     sentence is the one that loses the word 'Rule', so this reached the audio
     as 'six hundred and eight(b)'.
     """
-    return (
-        f"{int_to_words(int(match.group('major')))}, "
-        f"clause {_clause_words(match.group('c1'))}"
-    )
+    out = f"{int_to_words(int(match.group('major')))}"
+    for group in ("c1", "c2"):
+        clause = match.groupdict().get(group)
+        if not clause:
+            continue
+        label = "clause" if group == "c1" else "sub-clause"
+        out += f", {label} {_clause_words(clause)}"
+    return out
 
 
 def _number_with_fraction(match: re.Match) -> str:
@@ -988,6 +1008,25 @@ def _paren_feet(match: re.Match) -> str:
     return f"({int_to_words(value)} " + ("foot" if value == 1 else "feet") + ")"
 
 
+def _paren_minutes(match: re.Match) -> str:
+    """`major (5')` -> `major (five minutes)`.
+
+    The IIHF prints penalty durations with a minute prime — `Major penalty (5')`,
+    `minor penalty (2')`, `a ten minute (10')`. That is the same glyph the NHL uses
+    for feet in `four feet (4')`, and `parenthesised-feet` below rendered every one
+    of them as a distance: a listener heard "a major (five feet)". Measured across
+    the corpus render before this rule existed: 21 instances, all penalty tiers.
+
+    The discriminator is the preceding word, and it is clean in both directions —
+    a dimension quotation always spells the unit out first (`four feet (4')`),
+    while a duration is preceded by penalty language. This rule must stay ORDERED
+    BEFORE `parenthesised-feet`, which is unconditional and would otherwise win.
+    """
+    value = int(match.group("n"))
+    unit = "minute" if value == 1 else "minutes"
+    return f"{match.group('lead')}({int_to_words(value)} {unit})"
+
+
 def _age_group_u_first(match: re.Match) -> str:
     return f"under {int_to_words(int(match.group(1)))}"
 
@@ -1070,17 +1109,25 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(
             r"\b(?P<word>Rules?)\s+(?P<major>\d{1,3})"
             r"(?:\.(?P<minor>\d{1,2}))?"
-            r"(?:\((?P<c1>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
-            r"(?:\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
+            r"(?:[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
+            r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
         ),
         _rule_citation,
         "Rule 63.2(viii) -> 'Rule sixty-three point two, clause eight'",
     ),
     Rule(
+        "section-reference",
+        re.compile(r"\u00a7[ ]?(?P<levels>\d{1,3}(?:\.\d{1,2}){2,3})(?![\d.])"),
+        _section_reference,
+        "\u00a719.1.2 -> 'section nineteen point one point two' - three-level "
+        "references orphaned their last level",
+    ),
+    Rule(
         "bare-clause-citation",
         re.compile(
             r"(?<![\w.])(?P<major>\d{1,3})\.(?P<minor>\d{1,2})"
-            r"\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+            r"[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+            r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
         ),
         _bare_clause,
         "'27.8 and 63.2(viii)' - second citation without the word Rule",
@@ -1088,7 +1135,8 @@ NOTATION_RULES: tuple[Rule, ...] = (
     Rule(
         "usa-clause-citation",
         re.compile(
-            r"(?<![\w.])(?P<major>\d{3})\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+            r"(?<![\w.])(?P<major>\d{3})[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+            r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
         ),
         _usa_clause_citation,
         "'Rules 624(b) and 630(a)' - the second USA Hockey citation, which "
@@ -1211,6 +1259,13 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(rf"({_FRACTION_ALT})\""),
         _vulgar_inch,
         '3/8" as a vulgar fraction glyph',
+    ),
+    Rule(
+        "parenthesised-minutes",
+        re.compile(r"(?P<lead>(?:penalt(?:y|ies)|minor|major|misconduct|minute)\s+)"
+                   r"\((?P<n>\d{1,3})'\)", re.IGNORECASE),
+        _paren_minutes,
+        "major (5') -> 'major (five minutes)' — the IIHF's minute prime, not feet",
     ),
     Rule(
         "parenthesised-feet",
@@ -1722,6 +1777,29 @@ def render_list(block: Block, report: DocReport) -> list[Token]:
     return out
 
 
+def _label_lead(label: str) -> str:
+    """How a facts label is spoken before its value.
+
+    Most labels are nouns — "Key.", "Rule.", "Action." — and a full stop after
+    them is right: the label names the row, then the row is read.
+
+    ``Never`` is not a noun. It is a negation that has to govern the clause
+    after it, and a full stop stops it governing. "Never: Hit a player who is
+    turned toward the boards" was rendering as "Never. Hit a player who is
+    turned toward the boards." — a terminated word, then a bare imperative
+    telling the listener to do the thing the corpus is prohibiting. 342 of the
+    495 ``Never:`` facts open with an imperative verb, so this was the majority
+    case, and it landed on checking from behind, on concussion self-assessment
+    and on how to fall.
+
+    An em dash keeps the pause and drops the full stop, so the negation still
+    reaches the verb.
+    """
+    if label.strip().lower() == "never":
+        return label + " \u2014 "
+    return label + ". "
+
+
 def render_facts(block: Block, report: DocReport) -> list[Token]:
     """Read a ```facts block aloud.
 
@@ -1735,9 +1813,17 @@ def render_facts(block: Block, report: DocReport) -> list[Token]:
     heard at all.
 
     Rendering: a short lead-in, then one <p> per fact, the label spoken as its
-    own clause. "Never: lunge" reads naturally as "Never. Lunge." — the labels
-    were chosen as imperatives, which is what makes this work without
-    rewriting them.
+    own clause.
+
+    An earlier version of this docstring claimed "Never: lunge" reads naturally
+    as "Never. Lunge." because the labels were chosen as imperatives. That was
+    exactly backwards, and it stood here certifying the defect while rounds 28
+    and 29 were recording it. The imperative form is what makes it FAIL: a full
+    stop terminates the negation, and what the listener then hears is a bare
+    instruction to do the prohibited thing. Measured in round 53: 342 of 495
+    ``Never:`` facts open with an imperative verb, and the rendering landed on
+    checking from behind, on concussion self-assessment and on how to fall.
+    ``_label_lead`` handles it; noun labels keep the full stop.
     """
     rows: list[tuple[str, str]] = []
     for line in block.lines[1:-1]:          # strip the opening and closing fence
@@ -1763,7 +1849,7 @@ def render_facts(block: Block, report: DocReport) -> list[Token]:
         out.append(Token(SSML, f'<break time="{BREAK_LIST_ITEM}"/>'))
         out.append(Token(SSML, "<p>"))
         if label:
-            out.extend(done(label + ". "))
+            out.extend(done(_label_lead(label)))
         out.extend(_retokenise_trimmed(tokens))
         out.append(Token(SSML, "</p>"))
     report.converted["facts-block"] += 1
@@ -2314,6 +2400,27 @@ def self_test() -> int:
          "Rule six hundred and twenty-four, clause b, sub-clause one"),
         ("Rule 27.8 and 63.2(viii)",
          "Rule twenty-seven point eight and sixty-three point two, clause eight"),
+        # Round 53: 146 roman clause markers reached the audio. The
+        # Rule-prefixed pattern carried two clause groups; the bare and USA
+        # Hockey patterns carried one, so the second clause was left as
+        # literal "(iii)" for a voice to read as letters.
+        ("10.2(a)(iii)",
+         "ten point two, clause a, sub-clause three"),
+        ("Rule 10.2(a)(iv)",
+         "Rule ten point two, clause a, sub-clause four"),
+        ("608(b)(iii)",
+         "six hundred and eight, clause b, sub-clause three"),
+        # ...and the same citation written with a space before the clause.
+        ("Rule 4.11 (a)(v)",
+         "Rule four point eleven, clause a, sub-clause five"),
+        ("Rule 9.2 (b)", "Rule nine point two, clause b"),
+        # A three-level section reference orphaned its last level.
+        ("\u00a719.1.2", "section nineteen point one point two"),
+        ("\u00a721.1", "section twenty-one point one"),
+        # Guards: these must NOT be read as rule numbers.
+        ("28.6 (road)", "twenty-eight point six (road)"),
+
+        ("Rule 4.11 (see below)", "Rule four point eleven (see below)"),
         ("a 5-on-3", "a five on three"),
         ("a 2-on-1 rush", "a two on one rush"),
         ("6-on-5", "six on five"),
@@ -2389,6 +2496,10 @@ def self_test() -> int:
         ("7/16\"", "seven sixteenths of an inch"),
         ("⅜\"", "three eighths of an inch"),
         ("two feet (2')", "two feet (two feet)"),
+        ("a major (5')", "a major (five minutes)"),
+        ("minor penalty (2')", "minor penalty (two minutes)"),
+        ("a ten minute (10')", "a ten minute (ten minutes)"),
+        ("Major penalty (5')", "Major penalty (five minutes)"),
         ("skating → angling", "skating, angling"),
         ("$20 million", "twenty million dollars"),
         ("$148", "one hundred and forty-eight dollars"),
@@ -2562,7 +2673,18 @@ def self_test() -> int:
             print(f"FAIL finalise_sentence({source!r}) = "
                   f"{finalise_sentence(source)!r}, expected {expected!r}")
 
-    print(f"\n{len(cases) + len(closers) + 9 + 3} assertions, {failures} failures")
+    # Round 53: "Never: X" rendered as "Never. X." — a terminated negation
+    # followed by a bare imperative, telling the listener to do the thing the
+    # fact prohibits. 342 of 495 such facts open with an imperative verb, and
+    # it landed on checking from behind and on concussion self-assessment.
+    label_cases = (("Never", "Never \u2014 "), ("Key", "Key. "), ("Rule", "Rule. "))
+    for label, expected in label_cases:
+        actual = _label_lead(label)
+        if actual != expected:
+            failures += 1
+            print(f"FAIL  _label_lead({label!r})\n  expected {expected!r}\n  actual   {actual!r}")
+
+    print(f"\n{len(cases) + len(closers) + 9 + 3 + len(label_cases)} assertions, {failures} failures")
     return 1 if failures else 0
 
 
