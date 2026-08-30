@@ -490,11 +490,36 @@ const pkWedge = {
   caption:
     'The wedge+1 penalty kill, also called triangle-and-one — four killers, shorthanded 4-on-5 — ' +
     'drawn against a five-man 1-3-1 with the puck on the half-wall. Three killers hold a tight ' +
-    'triangle around the net, two defencemen just off the crease edges — drawn wider apart than ' +
+    // W HERE IS *WEDGE*, AND IT IS THE ONLY DIAGRAM IN THE CORPUS WHERE IT IS NOT *WINGER*.
+    // Measured: `W` appears on 31 glyphs across 17 diagrams; 29 carry `pos: 'F'` and are
+    // wingers, and the two that carry `pos: 'D'` are both here. The shapes are individually
+    // right — shape carries position, and a defenceman IS a triangle — but a reader who
+    // learned the letter from any of the other sixteen pictures meets a W drawn as a triangle,
+    // which is the "a player's shape changed between diagrams" signal the style guide forbids.
+    // The gloss goes in the CAPTION and not into new ids: `content/systems/special_teams.md`'s
+    // wedge+1 section supplies no letter vocabulary at all — it says "the wedge", "wedge
+    // player", "two defencemen", "one forward" and "the +1" — so `WD`/`WF` would be a glyph
+    // this corpus invented for one figure, and two-character ids on a triangle render at
+    // font-size 2.15 (see the D branch's own note on what that costs on a phone).
+    // Plain text, no emphasis marks: a caption is the SVG <title>, the visible figcaption and
+    // the string `md_to_speech.py` voices, and none of the three is markdown. Asterisks here
+    // would be read out. This was the only caption in the corpus that had any, briefly.
+    'triangle around the net — all three are marked W for the wedge here rather than for a ' +
+    'winger — two defencemen just off the crease edges, drawn wider apart than ' +
     'they really stand, because at the true spacing their glyphs would sit on top of the ' +
     'net-front attacker they are boxing out — and one forward at the mid-to-high slot; they stay ' +
+    // ⚠️ "BLOCK SHOTS" WAS BARE HERE, and this caption is voiced: `md_to_speech.py` resolves
+    // `diagram:<id>` to the caption, so a listener got the instruction with none of the
+    // technique. The qualification is the owning section's own, from `#### Shot blocking` in
+    // `content/systems/special_teams.md` — "Blocking shots is a technique, not an act of
+    // courage", "in the lane before the shot, not sliding into it", "Never block from a
+    // screening position." Taken verbatim rather than paraphrased, so the caption and the
+    // section cannot drift.
     'tight, protect the slot and the goalmouth, block shots and rotate as a connected unit, and ' +
-    'they do not chase. The fourth, the +1, pressures whoever has the puck, and the drawn ' +
+    'they do not chase. Blocking shots is a technique, not an act of courage. Be in the lane ' +
+    'before the shot, not sliding into it, and never block from a screening position — ' +
+    'half-deflecting a shot your goaltender could not see is worse than letting it through ' +
+    'cleanly. The fourth, the +1, pressures whoever has the puck, and the drawn ' +
     'route is checking pressure rather than an attempt to win it: the job is to make every ' +
     'possession uncomfortable. The route drawn here — straight out from the goal at the ' +
     'carrier — is one of three published readings and a coaching choice rather than the ' +

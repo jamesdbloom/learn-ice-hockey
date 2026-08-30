@@ -96,7 +96,12 @@ function main() {
     const spec = { ...d, footer: FOOTER };
     const svg =
       d.kind === 'legend' ? legendSvg(width)
-      : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER })
+      // caption/describe are passed for the same reason playSvg carries them: the
+      // site hides the <figcaption> from assistive technology on the assumption the
+      // SVG's <title> repeats it. Omitting them here did not degrade the name, it
+      // removed it — the two rink maps rendered as unlabelled graphics.
+      : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER,
+                                      caption: d.caption, describe: d.describe })
       : playSvg(spec, { half: d.half ?? true, width });
 
     const svgPath = join(OUT_DIR, `${d.id}.svg`);

@@ -91,10 +91,10 @@ const containment122 = {
     'puck; F2 then steps up on the winger receiving on that wall, F3 holds the middle and weak side, and ' +
     'the weak-side defenceman stays home as the safety valve. The structure concedes the first pass by ' +
     'design, which is drawn here: F1 alone cannot generate real pressure, and a calm defence with time ' +
-    'will break out cleanly against it. Every neutral-zone structure is a coaching choice rather than ' +
-    'a law — find out which one your team plays and what the signal is to change it — and the ' +
-    'strong-side defenceman’s step-up on the wall, which is deliberately not drawn, is the most ' +
-    'dangerous decision in it.',
+    'will break out cleanly against it. The strong-side defenceman’s step-up on the wall, which ' +
+    'is deliberately not drawn, is the most dangerous decision in it. Every neutral-zone ' +
+    'structure is a coaching choice, not a law. Find out which one your team plays, and what ' +
+    'the signal is to change it.',
 
   describe:
     'The full sheet. Our own net is at the left, the opponents’ net at the right, and the opponents ' +

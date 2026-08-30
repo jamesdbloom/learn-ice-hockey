@@ -42,6 +42,47 @@ guide exists because something went wrong once, and the guide describes the
 failure alongside the rule — those descriptions are the best available
 predictor of what you are about to get wrong.
 
+### G1a · A plan row is a hypothesis about the past — verify it against HEAD first
+
+⚠️ **A row in [`plans/OPEN_ITEMS.md`](plans/OPEN_ITEMS.md) records what was true when it was
+written, not what is true now.** Rows are written by review rounds and moved out only when
+`commit-gate` clears them, **so a row routinely survives its own fix** — the commit that
+closes it lands hours before anyone updates the plan.
+
+**Round 53 dispatched an agent from a round-52 census row without checking whether the
+round-52 commit had already closed it. It had. Three of the four items were false:**
+
+| The row said | What was on disk |
+|---|---|
+| The Overview carries the unhedged wording; the facts block and takeaway carry the hedge | **Inverted.** The Overview and the takeaway were already hedged; **the facts block was the one site missed** — the layer a reader is told they may take *instead of* the prose |
+| A self-referential phrase sits at a named line | **Not present anywhere in the file.** Already replaced |
+| A grep of the whole file for hedge vocabulary returns zero | **False.** Two well-formed disclosures were sitting in it, one of them the best-formed in either file reviewed |
+
+The agent's verdict: *"The only fully live item in the brief was the one it described as
+already fixed."*
+
+**So, before dispatching from any row:**
+
+- **Run `git log -S '<the exact string the row quotes>' -- content/`.** One command, and it
+  would have caught all three. If the string entered or left the corpus after the row was
+  written, the row is stale.
+- **Grep for the string rather than trusting the line number.** Line numbers drift within
+  the hour when more than one agent is working.
+- **State in the brief that the row is a hypothesis**, and require the agent to refute it
+  before acting. **This is the instruction that has caught more wrong premises than any
+  single review has found corpus defects.** ⚠️ **Do not restate a total here — and do not quote one from the record either.** The owner
+  is each round's review record, which tabulates them **in the sections where they were found**;
+  name a section, never a figure. A bare number in this file sheds the record's own qualification
+  that the true figure is higher and uncounted, which is D8. ⚠️ **This line has now been wrong
+  twice in two different ways.** It and `CLAUDE.md` once carried *eleven* and *thirteen* for the
+  same round, contradicting each other and the record. Both were then replaced with pointers that
+  **quoted a figure** — and that figure went stale the moment the record was extended, so this file
+  spent a round citing a total its own owner no longer stated. **A pointer to a named section does
+  not go stale. A number copied out of its owner always can.**
+
+⚠️ **And when a row proves stale, retract the row, not just the item.** A row that has
+misdirected one agent will misdirect the next.
+
 ### G2 · Obtain the primary sources before you need them
 
 Rules claims are verified against **rulebook text on disk**, never from memory,

@@ -81,6 +81,108 @@ These override convenience, brevity, and any instruction to move faster.
 
 ---
 
+## How work is done here — always a loop, always parallel
+
+**Work this repository as a continuous loop, at the widest parallelism the file
+ownership allows.** Not because it is faster — because it is the only method that
+has reliably found defects here.
+
+**The loop:**
+
+1. **Take open rows from [`project/plans/OPEN_ITEMS.md`](project/plans/OPEN_ITEMS.md)**
+   and group them by the files they touch.
+2. **Dispatch one agent per disjoint file set, all in a single message**, so they run
+   concurrently. Name the files each agent owns **exclusively**, and tell it to report
+   rather than edit anything outside them.
+3. **As each returns, record what it found in the plan** — closed rows, new rows, and
+   retractions — then **immediately dispatch the next wave** onto the files it freed.
+4. **Never idle while agents run.** Do the central work only the coordinator can do:
+   plan and record writes, `sources/` and `scripts/` changes, corpus-wide censuses,
+   running the checkers and the renderer.
+5. **Keep looping until the plan is empty.** Expect it to *grow* — a round that closes
+   twenty rows and opens thirty has not failed, it has found thirty things.
+
+### The instruction that does the actual work
+
+⚠️ **Give every agent the plan row as a hypothesis and tell it to refute the brief
+before acting on it.** Require it to verify every quotation in the brief against the
+primary source rather than carrying it in.
+
+**In one round this instruction found more wrong premises than anything else did.**
+⚠️ **It previously read "faster than any review found defects in the corpus" — a comparison
+neither record supports, and the third figure in this file to be replaced by a pointer for
+exactly that reason.** ⚠️ **No total is given here on purpose**, and none should ever be
+written here. The owner is
+[the round's review record](project/reviews/round_53_the_briefs_were_the_defect.md), which
+tabulates what was measured under *"Measured: how wrong the briefs were"* and says plainly
+that the true total is higher and **has not been counted** — agents reported others in
+passing that nobody tallied. **Quoting a bare number from here sheds that qualification,
+which is [D8](project/review_process.md#the-dimensions--a-review-must-cover-all-of-these).**
+
+⚠️ **It has now happened three times in this file.** It once carried *thirteen* while
+`review_process.md` carried *eleven* for the same round, each stated flatly, each disagreeing
+with the other and with the record. Both were replaced with a pointer — **and that pointer
+then quoted a figure out of it**, and a figure copied out of its owner goes stale the moment
+the owner is extended. **The lesson is not "get the number
+right." It is that a number copied out of its owner goes stale silently, and a pointer to a
+named section does not.**
+
+What the record shows, in kind rather than in total: relayed site lists measured **33% to 75%
+short**, one **50% wrong** at an entry, and **a single brief carrying four distinct errors** —
+three of which would have made the corpus *worse* rather than merely left it unimproved.
+Some wrong premises were merely stale (see [G1a](project/review_process.md)); the rest were
+wrong. Two would have shipped half-rules. One had been promoted, by the dispatcher, into
+another agent's brief as its top priority — and was a measurement artefact.
+
+**The briefs are more defective than the corpus.** Plan accordingly.
+
+### What the coordinator does and does not do
+
+- **Does:** all shared-state writes — `project/plans/`, `project/reviews/`,
+  `check_counts.py --update`, staging, committing. **Subagents never touch these**, and
+  telling them so in the brief is what keeps concurrent work from clobbering.
+- **Does:** answer the questions agents declare they could not reach. They routinely
+  end with one specific thing they could not check — run the renderer, run the census,
+  compare the two files. **That handover is usually the highest-value work available.**
+- **Does not:** review its own writing, or let a repair self-certify. **A repair is new
+  text, and new text has not been reviewed.**
+
+### ⚠️ Stage only what will not be edited again
+
+**Stage a file only when its agent is finished AND will not be resumed — in practice, immediately
+before the gate, not on each completion notification.** ⚠️ **`SendMessage` to a finished agent does
+not ask it a question; it RESUMES it**, and it will keep editing files that are already in the index.
+That happened here and left the index holding a **half-done propagation** — one file with the full
+treatment, two with none of it.
+
+⚠️ **No checker can see this, and the hook cannot either.** `check_facts.py` and `check_links.py` read
+the **working tree**; `git-guard.sh` gates on those same checkers. **So a commit can pass every
+mechanical gate while shipping a staged state nobody verified.** The only defence is not creating the
+divergence. `git diff --name-only content/` — **empty means index matches tree.**
+
+⚠️ **And while agents are live the checkers race them, in both directions.** Twice in one round a
+checker reported a defect that did not exist — a `Rule:` fact "311 chars, over 300" and a broken
+anchor to a heading **whose target string was in neither the working tree nor the index** — because
+the file was being written as the checker read it. **Both cleared on a re-run with nothing changed.**
+
+**So: a checker FAILURE on a file showing `MM` is not yet a finding — re-run before acting, and never
+"repair" another agent's half-written line.** The inverse is the more dangerous half: **a checker PASS
+while agents are live proves nothing either**, because the tree it read is already gone. **The only
+run that counts is the one after every agent has finished and every file is staged.**
+
+### Parallelism has one hard rule
+
+**File ownership must be disjoint, and it must be stated.** Two agents in one file
+clobber silently. When a finding lands in a file another agent holds, **message that
+agent** rather than waiting or editing around it.
+
+⚠️ **And check for contradictions between agents afterwards.** Two agents wrote
+sentences into one block in this repository that were each individually correct and
+flatly contradictory read aloud. It was caught only because an agent **diffed the whole
+file at the end instead of trusting its own hunks.**
+
+---
+
 ## Writing content
 
 Full detail in [`review_process.md` Part 1](project/review_process.md#part-1--generating-content).
@@ -100,6 +202,17 @@ The short form:
 5. **Propagate.** Body → facts blocks → Common Mistakes → Key Takeaways → every
    other document that repeats it → the style guide if it records it. Every
    critical in round 10 was a correction that reached the body and stopped.
+
+   ⚠️ **Check propagation with a LAYER TEST, not a document grep. Body ✓ does not imply
+   block ✓.** A grep cleared four documents as carrying a required safety counterweight;
+   extracting their ` ```facts ` lines and testing each one separately found a fifth
+   document stating the hazard **naked in the extraction layer**, where it is voiced in its
+   own `<p>` with a 300 ms break either side. **The document-level grep could not see it,
+   because the body and the block both live in the same file.**
+
+   ⚠️ **A layer test finds candidates; only reading decides.** In the same run two lines
+   matched the pattern and were **not** defects — they stated a rule's *scope* rather than
+   its *tension*. **A sweep would have "fixed" them.**
 6. Run the mechanical checks. **All of them, from this list, not from memory** — round 43
    went through six gate passes with `check_absolutes.py` unrun, and the pre-commit hook
    caught it, not the author:

@@ -90,6 +90,15 @@ DOCS=(
   "huh|https://www.usahockey.com/|https://cdn4.sportngin.com/attachments/document/0138/6193/HUH_Program_Guide_FINAL.pdf"
   "ibc|https://www.usahockey.com/|https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf"
   "hc|https://www.hockeycanada.ca/|https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf"
+  # CARHA — the adult-recreational association's own book, PRINTED 2020, 99pp. Five documents
+  # cited it and it was in NO reproducible source: not here, not in sources/README.md, and its
+  # only record anywhere was a row in project/verification/link_baseline.tsv. A rules-verifier
+  # fetched it at the fourth gate pass and located seven corpus quotations verbatim, so the
+  # claims were never unverifiable — the BOOK was simply never registered.
+  # ⚠️ It governs CARHA-affiliated leagues only. It is not a general rec-hockey standard, and
+  # the corpus's disclosures that no book governs rec hockey as a whole are about APPLICABILITY
+  # and stay. Extracts cleanly with -layout; 1,008,517 bytes at time of verification.
+  "carha|https://carhahockey.ca/|https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf"
 )
 
 # Books extracted BOTH ways. The plain extraction keeps the canonical name

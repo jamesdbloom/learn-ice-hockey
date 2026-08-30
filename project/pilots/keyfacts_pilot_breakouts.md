@@ -267,7 +267,7 @@ Priority: Every choice in this document depends on one question — how much tim
 Action: Look before you have the puck, not after; you cannot buy that information back once you are facing the boards
 Technique: Count the forecheckers, not the pressure — one means options and probably time to wheel, two means the corners are gone, three deep means somebody up ice is free
 Technique: Watch their feet, not their sticks — a forechecker gliding is containing you, a forechecker striding is committing
-Key: Your goalie has the clearest view of everything behind your defenceman's back, and is the most under-used information source in amateur hockey
+Key: Your goalie has the clearest view of everything behind your defenceman's back — worth nothing unless the words are agreed and the calls come early
 Action: Calls must be early and loud — a call arriving as the forechecker does is worse than no call, because it makes the defenceman hesitate
 ```
 

@@ -904,15 +904,60 @@ def _season(match: re.Match) -> str:
     return f"{year_to_words(start)} to {year_to_words(end)}"
 
 
-def _clock(match: re.Match) -> str:
-    """2:00 -> 'two minutes'; 5:04 -> '...'; 1:01.4 -> fractional seconds."""
-    minutes = int(match.group(1))
-    seconds_text = match.group(2) + (match.group(3) or "")
-    out = f"{int_to_words(minutes)} minute" + ("s" if minutes != 1 else "")
+def _clock_words(minutes: str, seconds: str, fraction: str = "") -> str:
+    """The spoken form of one M:SS clock reading. Shared by `_clock` and the range."""
+    count = int(minutes)
+    seconds_text = seconds + (fraction or "")
+    out = f"{int_to_words(count)} minute" + ("s" if count != 1 else "")
     if float(seconds_text):
         words = decimal_to_words(seconds_text.lstrip("0") or "0")
         out += f" {words} second" + ("s" if seconds_text != "01" else "")
     return out
+
+
+def _clock_range(match: re.Match) -> str:
+    """`0:39-0:41` - a range between two clock times, not a pause between them.
+
+    The shift-length confidence intervals are written this way. The en dash fell
+    through to the symbol table, which promotes it to an em dash, so a listener
+    heard "zero minutes thirty-nine seconds - zero minutes forty-one seconds"
+    with a comma-length break where the word "to" belongs. Ordered before
+    `volume-pages` and `clock-time`, either of which would otherwise claim half
+    of it and leave the other half to the symbol table.
+    """
+    return (
+        f"{_clock_words(match.group(1), match.group(2))} to "
+        f"{_clock_words(match.group(3), match.group(4))}"
+    )
+
+
+def _volume_pages(match: re.Match) -> str:
+    """A journal citation's `volume:first-last`, which is NOT a clock time.
+
+    `Canadian Journal of Neurological Sciences 11:34-41` was claimed by the
+    clock rule and voiced as "eleven minutes thirty-four seconds - forty-one",
+    in the middle of the corpus's most consequential spinal-injury citation.
+    Longer page numbers escaped the clock rule but leaked a raw colon instead:
+    `Neurosurgery 34:590-597` came out as "thirty-four : five hundred and
+    ninety to ...".
+
+    The discriminator is the RANGE END, not the volume. A real clock range
+    writes both ends as M:SS - `0:39-0:41`, the shift-length confidence
+    intervals - so a range whose end carries no colon of its own is a page
+    range. The trailing lookahead is what protects those.
+
+    Deliberately NOT voiced as "volume ... pages ...". That reading is almost
+    certainly right, but it is a claim about the citation's structure rather
+    than something on the page, and this renderer's job is to say what is
+    written. Naming the parts is how a rendering starts asserting things.
+    """
+    volume, first, last = match.group(1), match.group(2), match.group(3)
+    return f"{int_to_words(int(volume))}, {int_to_words(int(first))} to {int_to_words(int(last))}"
+
+
+def _clock(match: re.Match) -> str:
+    """2:00 -> 'two minutes'; 5:04 -> '...'; 1:01.4 -> fractional seconds."""
+    return _clock_words(match.group(1), match.group(2), match.group(3) or "")
 
 
 def _confidence_interval(match: re.Match) -> str:
@@ -1058,6 +1103,35 @@ def _en_dash_range(match: re.Match) -> str:
     return f"{decimal_to_words(match.group(1))} to {decimal_to_words(match.group(2))}"
 
 
+def _is_range_token(token: str) -> bool:
+    """The two things a LETTER range is built from in this corpus: a single
+    letter, or a short roman numeral. Both sides have to qualify, which is what
+    keeps an ordinary compound out of the range branch."""
+    return len(token) == 1 or (
+        len(token) <= 4 and re.fullmatch(r"[ivxlcdm]+", token) is not None
+    )
+
+
+def _compound_en_dash(match: re.Match) -> str:
+    """A closed-up en dash between letters. Two different marks share the glyph.
+
+    `640(b-f)` and `pp. v-vi` are RANGES and read as "to". `east-west`,
+    `helmet-facemask`, `pre-post`, `head-neck` and `mindfulness-acceptance-
+    commitment` are COMPOUND JOINERS: one word, no pause.
+
+    Without this rule both fell through to the en-dash row of the symbol table,
+    which promotes a leftover en dash to an em dash - so a listener heard
+    "an east - west pass" with a comma-length break inside a single compound,
+    and heard a rule's subsection range as two unrelated letters. The chain is
+    matched whole rather than pairwise, or the second dash of a three-part
+    compound would be left behind for the symbol table to promote.
+    """
+    parts = match.group(0).split("\u2013")
+    if all(_is_range_token(part) for part in parts):
+        return " to ".join(parts)
+    return "-".join(parts)
+
+
 def _percent_after_word(match: re.Match) -> str:
     return f"{match.group(1)} percent"
 
@@ -1107,7 +1181,12 @@ NOTATION_RULES: tuple[Rule, ...] = (
     Rule(
         "rule-citation",
         re.compile(
-            r"\b(?P<word>Rules?)\s+(?P<major>\d{1,3})"
+            # (?!\d) or the 1-3 digit major eats the first three digits of a
+            # four-digit EDITION YEAR: "Rules 2026-27" was voiced as "Rules two
+            # hundred and two six - twenty-seven", 104 times across the corpus,
+            # on edition and provenance markers. `season-range` runs later and
+            # never got the chance. 2026/27 was hit too, not just 2026-27.
+            r"\b(?P<word>Rules?)\s+(?P<major>\d{1,3})(?!\d)"
             r"(?:\.(?P<minor>\d{1,2}))?"
             r"(?:[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
@@ -1221,6 +1300,18 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(r"\b((?:19|20)\d{2})-(\d{2}|\d{4})\b"),
         _season,
         "2005-06 -> 'two thousand and five to two thousand and six'",
+    ),
+    Rule(
+        "clock-range",
+        re.compile(r"(?<![\d:])(\d{1,3}):(\d{2})\u2013(\d{1,3}):(\d{2})(?![\d:])"),
+        _clock_range,
+        "0:39-0:41 reads as 'to', not as a pause",
+    ),
+    Rule(
+        "volume-pages",
+        re.compile(r"(?<![\d:])(\d{1,3}):(\d{1,4})\u2013(\d{1,4})(?![\d:])"),
+        _volume_pages,
+        "journal 11:34-41 is a page range, not eleven minutes thirty-four seconds",
     ),
     Rule(
         "clock-time",
@@ -1379,6 +1470,12 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(r"\b(\d{1,2})(?:st|nd|rd|th)\b"),
         _ordinal_suffix,
         "19th -> 'nineteenth'",
+    ),
+    Rule(
+        "compound-en-dash",
+        re.compile(r"(?<!\w)[A-Za-z]+(?:\u2013[A-Za-z]+)+(?!\w)"),
+        _compound_en_dash,
+        "east-west reads as one word; 640(b-f) reads as 'b to f'",
     ),
     Rule(
         "numeric-range",
@@ -1876,7 +1973,17 @@ def _list_items(lines: Sequence[str]) -> list[str]:
 
 
 def render_quote(block: Block, report: DocReport) -> list[Token]:
-    text = "\n".join(re.sub(r"^\s*>\s?", "", line) for line in block.lines)
+    # A markdown table SEPARATOR row carries no spoken content, and a table nested
+    # inside a blockquote never reaches `parse_table` (which drops these) - it falls
+    # through to prose, where the symbol table turns each `|` into a comma and a
+    # listener hears "dash dash dash, dash dash dash, dash dash dash". Measured in the
+    # rendered corpus before this line existed. Header and body rows are kept: they
+    # are the quotation's content, and a quoted table read as comma-separated cells is
+    # the least-bad reading available.
+    text = "\n".join(
+        re.sub(r"^\s*>\s?", "", line) for line in block.lines
+        if not re.fullmatch(r"\s*>?\s*\|[\s:|-]+\|\s*", line)
+    )
     paragraphs = [p for p in re.split(r"\n\s*\n", text) if p.strip()]
     out: list[Token] = []
     for paragraph in paragraphs:
@@ -2147,21 +2254,40 @@ def split_oversized(chunks: Sequence[Chunk]) -> list[Chunk]:
 
 
 RE_SENTENCE_END = re.compile(r"(?<=[.!?…])\s+")
+#: Does this piece END a sentence? Trailing quotes and brackets close after the stop.
+RE_SENTENCE_TAIL = re.compile(r"[.!?\u2026][\"'\u201d\u2019\)\]]*\s*$")
 
 
 def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
     """Break one oversized <p> into several, at sentence boundaries.
 
-    Only splits where no nested element is open, so the result is always
-    well-formed. A single sentence longer than the limit is left whole - it
-    is better to fail loudly at synthesis time than to cut mid-sentence.
+    Only splits where no nested element is open AND the previous atom ended a
+    sentence, so the result is always well-formed and never cut mid-clause.
+
+    ⚠️ The second condition was missing, and the promise above was false. The
+    rule-citation rewriter emits each verbalised citation as its OWN token, which
+    cuts the prose around it into separate tokens; `depth == 0` is a NESTING test
+    and cannot see that one token continues the previous one's sentence. So a
+    token opening mid-clause was a legal break point, and `RE_SENTENCE_END` —
+    applied WITHIN each token — structurally could not notice.
+
+    Measured before the fix: 40 chunk tails without terminal punctuation across
+    17 documents, 31 confirmed mid-sentence by the next chunk opening lowercase
+    or on a comma. One chunk ended `...though nine point five, clause a` and the
+    next opened `, the only clause that actually assesses one, requires contact`.
+    Any paragraph containing a rule citation was exposed, which is most of this
+    corpus's rule prose — and the hazard is a permission ending one chunk with
+    its limit opening the next.
     """
     if not (group and group[0].kind == SSML and group[0].text == "<p>"
             and group[-1].kind == SSML and group[-1].text == "</p>"):
         return [list(group)]
 
-    atoms: list[tuple[Token, bool]] = []  # (token, may-break-after)
+    atoms: list[tuple[Token, bool]] = []  # (token, may-break-before)
     depth = 0
+    # The start of a paragraph is a sentence boundary. An SSML tag neither ends
+    # a sentence nor continues one, so it leaves this flag alone.
+    prev_ended = True
     for token in group[1:-1]:
         # The flag answers "may the split happen *before* this token?", so it
         # must be read before the token's own tag changes the depth. Reading it
@@ -2174,27 +2300,59 @@ def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
                 depth += 1
             elif token.text.startswith("</"):
                 depth -= 1
-            atoms.append((token, outer))
+            atoms.append((token, outer and prev_ended))
             continue
         pieces = RE_SENTENCE_END.split(token.text)
         for index, piece in enumerate(pieces):
             suffix = " " if index < len(pieces) - 1 else ""
-            atoms.append((Token(token.kind, piece + suffix), outer))
+            atoms.append((Token(token.kind, piece + suffix), outer and prev_ended))
+            # Every piece but the last ends a sentence by construction - the
+            # split consumed its terminator. The last one ends a sentence only
+            # if it carries the punctuation itself.
+            prev_ended = (index < len(pieces) - 1
+                          or RE_SENTENCE_TAIL.search(piece) is not None)
 
-    groups: list[list[Token]] = []
-    current: list[Token] = []
-    for token, breakable in atoms:
-        candidate = current + [token]
-        if current and breakable and _exceeds_limits(
-            [Token(SSML, "<p>")] + candidate + [Token(SSML, "</p>")]
-        ):
+    def _assemble(pairs: Sequence[tuple[Token, bool]]) -> list[list[Token]]:
+        groups: list[list[Token]] = []
+        current: list[Token] = []
+        for token, breakable in pairs:
+            candidate = current + [token]
+            if current and breakable and _exceeds_limits(
+                [Token(SSML, "<p>")] + candidate + [Token(SSML, "</p>")]
+            ):
+                groups.append([Token(SSML, "<p>")] + current + [Token(SSML, "</p>")])
+                current = [token]
+            else:
+                current = candidate
+        if current:
             groups.append([Token(SSML, "<p>")] + current + [Token(SSML, "</p>")])
-            current = [token]
-        else:
-            current = candidate
-    if current:
-        groups.append([Token(SSML, "<p>")] + current + [Token(SSML, "</p>")])
+        return groups
+
+    groups = _assemble(atoms)
+    # FALLBACK. Prose always carries sentence boundaries, but a paragraph that
+    # carries none - a run-on, or a wall of markup - would otherwise come back
+    # as one oversized chunk and fail at synthesis. Retry on the nesting test
+    # alone, which is what this function did before the sentence test existed.
+    # Splitting mid-clause is bad; exceeding the API's limit is worse, and this
+    # branch is the only way the old behaviour can still be reached.
+    if len(groups) == 1 and _exceeds_limits(groups[0]):
+        groups = _assemble([(token, outer) for (token, outer) in _outer_only(atoms, group)])
     return groups
+
+
+def _outer_only(atoms, group):
+    """The same atoms, flagged by nesting depth alone - the pre-sentence-test rule."""
+    depth = 0
+    out = []
+    for token, _ in atoms:
+        outer = depth == 0
+        if token.kind == SSML:
+            if re.fullmatch(r"<[a-z][^/>]*>", token.text):
+                depth += 1
+            elif token.text.startswith("</"):
+                depth -= 1
+        out.append((token, outer))
+    return out
 
 
 def _part_name(section: str, part: int) -> str:
@@ -2430,6 +2588,37 @@ def self_test() -> int:
         ("78.8%", "seventy-eight point eight percent"),
         ("~45 s", "about forty-five seconds"),
         ("30–80 s", "thirty to eighty seconds"),
+        # A CLOSED-UP en dash is a different mark from the one above, and the
+        # two need opposite readings. Compounds are one word with no pause; a
+        # letter range reads as "to". Both used to fall through to the symbol
+        # table's en-dash row, which promotes them to an em dash - so this was
+        # heard as "an east - west pass", a break inside a single compound.
+        # An EDITION YEAR after the word "Rules" is not a rule number. The 1-3
+        # digit major ate its first three digits: "Rules two hundred and two six
+        # - twenty-seven", on 104 edition and provenance markers. The slash form
+        # was hit too, which the report that found this said it was not.
+        ("IHUK In-House Rules 2026-27",
+         "IHUK In-House Rules twenty twenty-six to twenty twenty-seven"),
+        ("Rules 2026/27", "Rules twenty twenty-six to twenty twenty-seven"),
+        ("Rule 630(a)", "Rule six hundred and thirty, clause a"),
+        ("Rule 101.1", "Rule one hundred and one point one"),
+        ("an east\u2013west pass", "an east-west pass"),
+        # A journal citation's volume:pages is NOT a clock. This one was voiced as
+        # "eleven minutes thirty-four seconds - forty-one" in the middle of the
+        # corpus's spinal-injury citation. The discriminator is the RANGE END:
+        # a real clock range writes both ends as M:SS.
+        ("Canadian Journal of Neurological Sciences 11\u003a34\u201341",
+         "Canadian Journal of Neurological Sciences eleven, thirty-four to forty-one"),
+        ("Neurosurgery 34\u003a590\u2013597",
+         "Neurosurgery thirty-four, five hundred and ninety to five hundred and ninety-seven"),
+        ("0\u003a39\u20130\u003a41",
+         "zero minutes thirty-nine seconds to zero minutes forty-one seconds"),
+        ("at 11\u003a34 of the second period",
+         "at eleven minutes thirty-four seconds of the second period"),
+        ("helmet\u2013facemask combinations", "helmet-facemask combinations"),
+        ("the mindfulness\u2013acceptance\u2013commitment approach",
+         "the mindfulness-acceptance-commitment approach"),
+        ("printed at pp. v\u2013vi", "printed at pp. v to vi"),
         ("r = +0.25", "r equals plus nought point two five"),
         ("β = 0.12", "beta equals nought point one two"),
         ("g = 0.70", "g equals nought point seven zero"),

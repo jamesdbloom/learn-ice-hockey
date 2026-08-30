@@ -1800,6 +1800,97 @@ figure.diagram--full .diagram-scroll {
 figure.diagram--full .diagram-scroll svg {
   min-width: 640px;
 }
+
+/*
+  THE BOX SCROLLED SILENTLY. At 375 px the container is 346 and the SVG is held at
+  640, so 54% of the picture was on screen and the other 46% was reachable only by
+  someone who guessed to drag it. There was no cue that anything was off-screen and
+  no way in from the keyboard at all. Thirty-eight figures across thirteen pages.
+
+  The ARIA half is in remark-corpus.mjs — `tabindex="0" role="region" aria-label`,
+  the same three attributes `.table-scroll` has carried since it was written, so a
+  keyboard user gets a tab stop and arrow keys, and a screen-reader user is told the
+  region scrolls. What is left for CSS is the sighted-mouse-user half: a cue.
+
+  ⚠️ AND THE CUE CANNOT BE `.table-scroll`'s. That trick paints gradients on the
+  container's own background and lets the content slide over them, which works
+  because table cells are transparent. A rink diagram is not: every SVG paints its
+  ice as an unconditional `<rect fill="#ffffff">` spanning ~98% of the viewBox, so
+  the container's background sits behind an opaque slab.
+
+  This was not reasoned about, it was rendered: `.table-scroll`'s four gradients were
+  injected verbatim onto `figure.diagram--full .diagram-scroll` at 375 px and the
+  screenshot was pixel-for-pixel the one without them. NOT a faint shadow — nothing at
+  all, because the ~6 px the slab leaves at each edge is white-on-white. This note
+  exists so the next person does not re-derive it by copying the sibling rule.
+
+  What is used instead is a scrollbar that is always drawn. macOS overlay scrollbars
+  fade out when idle, which is exactly when the reader needs to be told; giving the
+  track and thumb explicit colours opts this one box into a classic, persistent bar.
+  It is also the more honest cue: it says how much is off-screen and where you are in
+  it, which a fixed edge gradient cannot. `scrollbar-color` covers Firefox, the
+  `::-webkit-scrollbar` block covers Chrome and Safari, and a browser that supports
+  neither is left exactly where it is today rather than worse.
+*/
+figure.diagram--full .diagram-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-faint) var(--bg-raised);
+  padding-bottom: 0.35rem;
+}
+figure.diagram--full .diagram-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+figure.diagram--full .diagram-scroll::-webkit-scrollbar-track {
+  background: var(--bg-raised);
+  border-radius: 5px;
+}
+figure.diagram--full .diagram-scroll::-webkit-scrollbar-thumb {
+  background: var(--text-faint);
+  border: 2px solid var(--bg-raised);
+  border-radius: 5px;
+}
+/*
+  ⚠️ THE CAPTION IS TALLER THAN THE PICTURE ON A PHONE, AND THAT IS NOT TREATED AS A
+  DEFECT. Recorded here because it has been measured twice and will be measured again.
+
+  At 375 px a half-sheet diagram is 296 px tall and the median caption is ~1,070
+  characters, which sets to about 460 px; 103 of 110 captions are taller than their own
+  diagram and the longest, `forecheck-pinch` at 2,386 characters, is 1,059 px — 3.57x.
+  At 1440 the same caption is 454 px against a 678 px diagram, so the ratio is a
+  narrow-viewport effect.
+
+  It is not treated as a defect because the ratio is not the harm. It compares a
+  fixed-aspect picture against variable-length prose, so it flags any figure with a
+  paragraph-length caption — and this corpus writes paragraph-length captions on
+  purpose: the caption is the accessible name, the EPUB text and the sentence the
+  speech pass reads aloud, so it has to teach standing alone. There is no viewport at
+  which a 2,386-character caption is shorter than a 296 px picture. A "defect" present
+  in 94% of instances, each deliberately authored, is a characteristic.
+
+  TWO REPAIRS WERE CONSIDERED AND BOTH COST MORE THAN THE THING THEY FIX:
+
+  - Collapsing long captions behind a <details>. It hides the hedge and leaves the
+    claim: `forecheck-pinch`'s caption is where the reader is told body checking is
+    barred outright in many leagues, with the IIHF 101.1 wording. Putting the
+    qualification one tap further away than the instruction is the corpus's cardinal
+    failure with a stylesheet in front of it. It also puts print and EPUB at risk,
+    where a closed <details> is a lost caption.
+  - Shrinking the caption under the mobile breakpoint. Measured, 0.8rem/1.45 against
+    0.9rem/1.5 takes 1,059 px to about 910 — a 14% change that leaves the ratio at
+    3.07 — bought with less legible body-length prose on the device most of it is read
+    on. It does not fix it; it makes it slightly smaller and slightly worse to read.
+
+  A THIRD WAS BUILT AND LOOKED AT, WHICH IS WHY IT IS NAMED RATHER THAN ARGUED:
+  `position: sticky; top: var(--header-h)` on `.diagram-scroll` under 48rem, pinning
+  the picture while its caption scrolls past. It works — the reader can look at the
+  play while reading the sentence about it, which is the one real harm here (four
+  captions are taller than an 812 px viewport, so the picture leaves the screen). It
+  was not shipped: it slices a line of caption text under the picture's lower edge, it
+  occupies 36% of every phone viewport for the length of any long caption, and it
+  would introduce a novel interaction on 110 figures on nobody's judgement but the
+  author's. Screenshots are in the round's scratchpad. Left for a reviewer to call.
+*/
+
 /* Attribution when a diagram is quoted outside the document that owns it. A note,
    not prose — it rendered at full body weight until this existed. */
 figure.diagram .diagram-source {

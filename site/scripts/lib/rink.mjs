@@ -312,7 +312,7 @@ function placeLabels(entries, opts = {}) {
  *   labels — overlay the named-position vocabulary
  */
 export function rinkSvg(opts = {}) {
-  const { half = false, labels = false, width = 900, ns = 'r' } = opts;
+  const { half = false, labels = false, width = 900, ns = 'r', caption, describe } = opts;
   const { sheet: S, lines: L, faceoff: F } = RINK;
   // A diagram carries a one-line pointer to the notation, not a copy of it.
   //
@@ -383,9 +383,26 @@ export function rinkSvg(opts = {}) {
     `<clipPath id="ice-${ns}"><rect x="${-S.length / 2}" y="${py(S.width / 2)}" ` +
     `width="${S.length}" height="${S.width}" rx="${S.corner_radius}"/></clipPath>`;
 
+  // THE ACCESSIBLE NAME. Same contract as `playSvg`'s `a11y` branch below, and it
+  // exists for the same reason: `role="img"` with neither <title> nor <desc> tells a
+  // screen reader to announce an image and then gives it nothing to announce.
+  //
+  // ⚠️ IT IS NOT COSMETIC HERE, BECAUSE THE FIGCAPTION IS DELIBERATELY HIDDEN. The
+  // site emits `<figcaption aria-hidden="true">` on every diagram precisely because
+  // the <title> is expected to carry the same words, so a missing <title> does not
+  // degrade to the caption — it deletes it. The two bare rink maps shipped that way,
+  // and they are the corpus's *foundational vocabulary* pictures: a non-sighted
+  // reader met an unlabelled graphic and a caption hidden from them.
+  //
+  // `playSvg` injects its own pair after calling this, and never passes these, so
+  // there is no path on which a play diagram gets two titles.
+  const a11y =
+    (caption ? `<title>${esc(caption)}</title>` : '') +
+    (describe ? `<desc>${esc(describe)}</desc>` : '');
+
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" width="${width}" height="${height}"
      font-family="-apple-system, Helvetica Neue, Arial, sans-serif" role="img">
-    <defs>${clip}</defs>
+    ${a11y}<defs>${clip}</defs>
     ${boards}
     <g clip-path="url(#ice-${ns})">
     ${centreLine}
@@ -1044,6 +1061,60 @@ function ticks(f, t, bow = 0) {
  */
 export const ARRIVAL = { glyph: 2.9, noArrow: 9.0 };
 
+/**
+ * The two arrowhead marker sizes, and how much route each one eats.
+ *
+ * `markerUnits` defaults to `strokeWidth`, so a marker's drawn size is
+ * `markerWidth x stroke`, and `refX = 8.5` of a 0..10 viewBox puts the tip 85% of the
+ * way along it. The head therefore reaches back from the tip by
+ * `markerWidth * stroke * 0.85` feet — 2.68 ft at the full size on a 0.7 stroke.
+ * That number is not decoration: it is subtracted from every dashed route's visible
+ * run, and it is most of why two of them had no dash left to show.
+ */
+export const AH = { full: 4.5, short: 2.25, refFrac: 0.85 };
+const headLen = (mw, stroke) => mw * stroke * AH.refFrac;
+
+/**
+ * Is (x, y) under the OPAQUE footprint of a player glyph?
+ *
+ * Routes are painted before players, and every glyph body is opaque — an own player is
+ * `fill="#fff"`, an opponent `fill="#1b1c1e"` — over a white halo ring wider than the
+ * body's own outline. So a route that starts on a player's anchor spends its first few
+ * feet drawn and then buried. That is fine for a solid line and NOT fine for a dashed
+ * one: see `dashoffset` in the route builder below.
+ *
+ * ⚠️ THESE NUMBERS ARE READ OFF THE GLYPH BRANCHES IN THIS SAME FUNCTION and must move
+ * with them. They are NOT `ARRIVAL.glyph`: that is 2.9, the circle's radius, and the
+ * ink actually reaches 3.875 because the halo is a 1.95-wide stroke centred on r = 2.9.
+ * A brief that measured this defect used 2.9 + 0.6 = 3.5 — the 0.6 is the halo's visible
+ * ring OUTSIDE the body outline, not its outer edge — and so under-counted every route.
+ */
+const GLYPH_INK = {
+  forward: 2.9 + 1.95 / 2,        // circle r 2.9, halo stroke 1.95  -> 3.875
+  triangleR: 3.6,                 // circumradius; halo stroke 2.0   -> inflate by 1.0
+  triangleHalo: 1.0,
+};
+function glyphCovers(g, x, y) {
+  const dx = x - g.x, dy = y - g.y;
+  // A goaltender is a bare letter and a pylon two thin strokes: neither has a halo and
+  // neither fills. Treated as covering nothing, which is what they visibly do.
+  if (g.pos === 'G' || g.pos === 'pylon') return false;
+  if (g.pos !== 'D') return Math.hypot(dx, dy) <= GLYPH_INK.forward;
+  // The triangle exactly as the D branch draws it: apex toward +y, centroid on the
+  // anchor, inflated by the halo's half-stroke.
+  const R = GLYPH_INK.triangleR, hh = R * 1.5, half = R * 0.866;
+  const V = [[0, R], [half, -(hh - R)], [-half, -(hh - R)]];
+  let inside = true, near = Infinity;
+  for (let i = 0; i < 3; i++) {
+    const a = V[i], b = V[(i + 1) % 3];
+    if ((b[0] - a[0]) * (dy - a[1]) - (b[1] - a[1]) * (dx - a[0]) > 0) inside = false;
+    const ex = b[0] - a[0], ey = b[1] - a[1];
+    const k = Math.max(0, Math.min(1, ((dx - a[0]) * ex + (dy - a[1]) * ey) / (ex * ex + ey * ey)));
+    near = Math.min(near, Math.hypot(dx - (a[0] + ex * k), dy - (a[1] + ey * k)));
+  }
+  return inside || near <= GLYPH_INK.triangleHalo;
+}
+
 export function playSvg(spec, opts = {}) {
   const ns = uid(spec.id ?? spec.caption ?? JSON.stringify([spec.players, spec.routes]));
   // WHAT THIS DEPARTS FROM, AND WHY. The IIHF key puts a NUMERAL inside the glyph
@@ -1113,10 +1184,20 @@ export function playSvg(spec, opts = {}) {
                          footer: opts.footer ?? spec.footer });
   const P = PALETTE;
 
-  const defs =
-    `<defs>` +
-    `<marker id="ah-${ns}" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">` +
-    `<path d="M 0 0 L 10 5 L 0 10 z" fill="${P.boards}"/></marker>` +
+  // TWO ARROWHEADS, THE SECOND ONE HALF-SIZE. See SHORT-ROUTE ARROWHEAD in the route
+  // builder for when the small one is used and why the alternative was rejected.
+  // Both are the same triangle; only `markerWidth`/`markerHeight` differ, so there is
+  // one shape in this file and no second mark to keep in step with the key.
+  // Built AFTER the routes, because the second marker is emitted only if a route asked
+  // for it — two of 112 diagrams do. An unused <marker> in the other 110 is inlined into
+  // every page that carries them and is one more thing a reader has to account for.
+  let usesShortHead = false;
+  const arrowMarker = (id, w) =>
+    `<marker id="${id}" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="${w}" markerHeight="${w}" orient="auto-start-reverse">` +
+    `<path d="M 0 0 L 10 5 L 0 10 z" fill="${P.boards}"/></marker>`;
+  const defsOut = () =>
+    `<defs>` + arrowMarker(`ah-${ns}`, AH.full) +
+    (usesShortHead ? arrowMarker(`ah-short-${ns}`, AH.short) : '') +
     `</defs>`;
 
   // Sample points along each route, so labels can be kept off the lines as well as
@@ -1160,6 +1241,10 @@ export function playSvg(spec, opts = {}) {
            `stroke="${strk}" stroke-width="0.35" ` +
            `stroke-dasharray="1.6 1.2"/>` + label;
   }).join('\n    ');
+
+  // Resolved player anchors, for the dash-phase correction below. Same `loc` the
+  // glyphs themselves are drawn from, so the two cannot drift.
+  const occluders = (spec.players ?? []).map((pl) => ({ pos: pl.pos, ...loc(pl.at) }));
 
   const routes = (spec.routes ?? []).map((r, i) => {
     const f = loc(r.from), t = loc(r.to);
@@ -1215,10 +1300,122 @@ export function playSvg(spec, opts = {}) {
       // which is the direction the route actually finishes in.
       const CURVED = n.line === 'wave' || n.line === 'loops' || n.line === 'zigzag';
       const useMarker = n.end === 'arrow' && !CURVED;
+      // DASH PHASE IS MEASURED FROM THE PATH START, WHICH IS USUALLY BURIED.
+      //
+      // 51 of the corpus's 59 `pass` routes begin under a player's glyph — 42 of them
+      // exactly on the anchor — and that glyph is opaque out to 3.875 ft. The dash pattern
+      // still starts counting at the anchor, so up to a whole cycle of it is spent
+      // under the glyph and the reader gets whatever phase is left. On a short pass that
+      // is a single stub of line ENDING FLUSH AGAINST THE ARROWHEAD — `pp-overload`'s
+      // second pass showed 1.44 ft of it and `support-distance-range` 1.81 ft, both fused
+      // to the head so that what rendered read as one malformed arrow rather than as a
+      // dashed passing route. In `support-distance-range`, whose `describe` promises "a
+      // short dashed passing route", the arrowhead then points into the receiver's glyph
+      // with nothing behind it — which is a SKATER'S ARRIVAL, a different symbol.
+      //
+      // Offsetting the pattern so the first dash begins where the line emerges costs no
+      // geometry at all. ⚠️ AND THAT IS THE WHOLE POINT: the fix proposed for this defect
+      // was to TRIM the drawn route back to the glyph edge, splitting the quadratic with
+      // de Casteljau. That would have changed `len`, `mx`/`my`, `barHalf`, the `double`
+      // branch and the badge parameter for no gain — the trimmed ink is invisible either
+      // way, so the *only* thing trimming changes is the phase. It also credited itself
+      // with recovering the buried 3.875 ft as new visible line, which it cannot: the
+      // visible remainder is `arc − glyph − arrowhead` whether the ink is drawn or not.
+      //
+      // WHAT THIS DOES NOT FIX, stated because a phase correction looks like a cure: IT
+      // ADDS NO LENGTH. Visible line is `arc − glyph − arrowhead`, and where that is under
+      // one 2.4 ft dash the route draws a single unbroken segment flush against both the
+      // glyph and the head — which is the `skate` mark, a different symbol. Two routes are
+      // in that state and cannot be got out of it by any phase: `pp-overload` route 1
+      // (1.77 ft clear, its two players 13.76 ft apart) and `support-distance-range`
+      // route 0 (2.13 ft clear; C and S are 12.21 ft apart, which leaves 4.45 ft of ice
+      // between the two glyphs before the head takes 2.68 of it). Those are a geometry
+      // problem, not a rendering one — ⚠️ AND THE PARAGRAPH ABOVE STOPPED HERE, WHICH LEFT
+      // TWO DIAGRAMS DRAWING THE WRONG SYMBOL WITH A NOTE EXPLAINING WHY. See SHORT-ROUTE
+      // ARROWHEAD immediately below for what is done about it now.
+      // A finer dash pitch would reach them and is rejected: 2.4/1.8 is already 9/6.75 px
+      // on a 375 px phone, and halving it to rescue two routes costs legibility on 59.
+      const cycleOf = (dash) => dash.split(/[\s,]+/).reduce((a, b) => a + Number(b), 0);
+      const firstDash = n.dash ? Number(n.dash.split(/[\s,]+/)[0]) : 0;
+      const sw = n.stroke ?? 0.7;
+      let dashOff = 0, arcLen = 0, sOut = 0;
+      if (n.dash) {
+        const cycle = cycleOf(n.dash);
+        // Step ~0.025 ft even on the 127 ft `offside-faceoff-location` pass. At a fixed
+        // sample count the step grows with the route and the phase lands up to a third
+        // of a foot late on the long ones, which is visible at 9 px per foot.
+        //
+        // The walk now runs to the end rather than breaking at emergence, because the
+        // arc length is needed too and this is the only place it is measured. `len` is
+        // the CHORD; on a bowed route it is short of the arc by several feet, and using
+        // it here would have under-counted exactly the routes most at risk.
+        const N = Math.max(400, Math.round(len * 40));
+        let s = 0, prev = at(0), found = !occluders.some((g) => glyphCovers(g, f.x, f.y));
+        for (let j = 1; j <= N; j++) {
+          const c = at(j / N);
+          s += Math.hypot(c.x - prev.x, c.y - prev.y);
+          prev = c;
+          if (!found && !occluders.some((g) => glyphCovers(g, c.x, c.y))) {
+            found = true;
+            sOut = s;
+            dashOff = (cycle - (s % cycle)) % cycle;
+          }
+        }
+        arcLen = s;
+      }
+
+      // SHORT-ROUTE ARROWHEAD — a bounded exception, and the only one.
+      //
+      // Visible line is `arc − glyph − arrowhead`. Where that falls under ONE DASH the
+      // route draws a single unbroken segment fused to its head, which is not a degraded
+      // pass: it is `skate`, a different symbol that the same key publishes. On
+      // `support-distance-range` it reads as the support player skating at the carrier,
+      // which is the opposite of what that document teaches. Two routes are in that
+      // state — `pp-overload` route 1 (1.77 ft clear) and `support-distance-range`
+      // route 0 (2.13 ft) — and nothing about phase reaches them.
+      //
+      // The head is the thing that is shortened, NOT the dash pitch, and the choice was
+      // made by rendering both and looking at real device pixels rather than at a scaled
+      // vector:
+      //
+      //   compressed pitch   two dashes at ~2 px each. At a 6x vector zoom it looked
+      //                      convincing; magnified from the pixels a phone actually
+      //                      draws, it is two specks beside an arrowhead, and one of
+      //                      them fuses to the head's corner. It also contradicts the
+      //                      rule recorded at `ticks` — "a notation whose pitch varies
+      //                      with route length is not a notation" — which this file
+      //                      adopted deliberately and which still holds.
+      //   half-size head     recovers 1.34 ft and lands the two routes at 3.11 and
+      //                      3.47 ft: one full-pitch dash, a clear gap, then a small
+      //                      head. That is the SAME mark as `off-wing-open-to-the-ice`
+      //                      and `winger-dz-reverse` at 3.16 ft, which an independent
+      //                      blind reading took correctly as passes. The pitch is
+      //                      untouched, so no second dash notation enters the corpus.
+      //
+      // ⚠️ Scaling an END MARK with the route it terminates is already this file's
+      // practice — see the `bars2` branch, which does it for the same reason and says so.
+      // Scaling a repeating pattern's pitch is not. The distinction is the whole basis
+      // for choosing this one, so do not "simplify" the two into one rule.
+      //
+      // The failure modes are also asymmetric, which decides it if the visual does not:
+      // a solid line with an arrowhead IS another published symbol, so the status quo is
+      // WRONG; a dashed line with a small head is not any published symbol, so a head
+      // that under-reads is DEGRADED. Prefer degraded.
+      //
+      // ⚠️ IT IS A THRESHOLD, NOT A GUARANTEE. It fires below one dash and shortens by a
+      // fixed amount; a route with under ~1.1 ft clear would still draw solid, and there
+      // is no such route today. It is deliberately not a function of length — that would
+      // be the pitch objection again, wearing an arrowhead.
+      const shortHead =
+        !!n.dash && useMarker &&
+        arcLen - sOut - headLen(AH.full, sw) < firstDash &&
+        arcLen - sOut - headLen(AH.short, sw) >= firstDash;
+      if (shortHead) usesShortHead = true;
       line =
         `<path d="${d}" fill="none" stroke="${P.boards}" stroke-width="${n.stroke ?? 0.7}"` +
         (n.dash ? ` stroke-dasharray="${n.dash}"` : '') +
-        (useMarker ? ` marker-end="url(#ah-${ns})"` : '') +
+        (dashOff > 0.005 ? ` stroke-dashoffset="${dashOff.toFixed(2)}"` : '') +
+        (useMarker ? ` marker-end="url(#ah${shortHead ? '-short' : ''}-${ns})"` : '') +
         `/>`;
       if (n.end === 'arrow' && CURVED) line += arrowHead(t.x, t.y, ux, uy);
     }
@@ -1470,7 +1667,7 @@ export function playSvg(spec, opts = {}) {
 
   return base
     .replace('<defs>', `${a11y}<defs>`)
-    .replace('</svg>', `  ${defs}\n    ${zones}\n    ${routes}\n    ${players}\n    ${puck}\n</svg>`);
+    .replace('</svg>', `  ${defsOut()}\n    ${zones}\n    ${routes}\n    ${players}\n    ${puck}\n</svg>`);
 }
 
 const esc = (s) =>

@@ -269,7 +269,7 @@ const forecheck122 = {
     'more usual default is the 2-1-2 — so find out which your team runs. ' +
     'Whether the outlet beats F2 or F2 beats the outlet is the contest the system turns on, and the diagram ' +
     'does not settle it. ' +
-    'Note what F2 is drawn doing: arriving at the wall, not at the winger. Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Finishing into the back of a player who is facing away is a major and an automatic game misconduct under both the NHL and IIHF books, with no minor option available. And body checking is not allowed at all in many leagues: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification, and in non-check adult hockey.',
+    'Note what F2 is drawn doing: arriving at the wall, not at the winger. Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Finishing into the back of a player who is facing away is a major and an automatic game misconduct under both the NHL and IIHF books, with no minor option available. And in many leagues body checking is not allowed at all, so find out which book you are under before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. The same five opposition players as the ' +
@@ -385,7 +385,7 @@ const forecheck131 = {
     'It is one system among several and not a beginner one — it asks three players to read and skate ' +
     'laterally at the same time — and the far more common use of the same name is a passive neutral-zone ' +
     'shape that is not a forecheck in any literal sense. ' +
-    'Note what F2 is drawn doing: arriving at the wall, not at the winger. Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Finishing into the back of a player who is facing away is a major and an automatic game misconduct under both the NHL and IIHF books, with no minor option available. And body checking is not allowed at all in many leagues: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification, and in non-check adult hockey.',
+    'Note what F2 is drawn doing: arriving at the wall, not at the winger. Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Finishing into the back of a player who is facing away is a major and an automatic game misconduct under both the NHL and IIHF books, with no minor option available. And in many leagues body checking is not allowed at all, so find out which book you are under before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -492,6 +492,20 @@ const forecheckPinch = {
     '"if you can\'t arrive on contact, don\'t go", meaning you and the puck reach the wall at the same moment ' +
     '— and on the pure race drawn here, a dying rim with nobody to seal, the bar is higher still: you have to ' +
     'arrive clearly first, not probably first. ' +
+    // SAFETY SCOPE. The caption's go/no-go test is a CONTACT instruction, so it carries the same
+    // scope sentence as forecheck-122 and forecheck-131 above, verbatim and in one shared form.
+    // It sits here rather than at the end because a caption is voiced as one unit and the section
+    // itself puts the caveat BEFORE the test ("First, though: none of this applies if you may not
+    // body check at all"). Rule text checked against sources/ this session, not carried in:
+    // USAH 604(a) "Body checking is prohibited in the 12 & under youth age classifications and
+    // below, all Girls'/Women's age classifications and all non-check Adult classifications", plus
+    // "A local governing body may prohibit body checking in any classification"; HC 7.3 "This rule
+    // applies only in divisions of U13 and below, in female hockey, and any other divisions approved
+    // by a Member of Hockey Canada"; IIHF 101.1 bodychecking in women's hockey "allowed when there
+    // is a clear intention of playing the puck", and its boards limb barring use of the boards to
+    // eliminate an opponent "provided that 'possession of the puck' remains the sole object".
+    // The second sentence is the consequence, without which the reader has a rule and no play.
+    'And in many leagues body checking is not allowed at all, so find out which book you are under before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck. Where it is barred, a pinch is a play on the puck alone and the seal against the boards is not available to you; IIHF 101.1 adds that in women\'s hockey players competing for the puck may not use the boards to eliminate an opponent, even where possession is the sole object. ' +
     'The weak-side defenceman does not join in, and holding the middle is what makes a failed pinch a ' +
     'two-on-one rather than a breakaway — which is why their far winger is drawn already climbing towards ' +
     'the exit. ' +

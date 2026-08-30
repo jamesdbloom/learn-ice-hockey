@@ -255,7 +255,15 @@ const supportDistance = {
     'The attacking half of the rink, the net at the right. A puck carrier stands on the right-hand ' +
     'boards level with the faceoff dot. A shaded band of ice curves around them on the open-ice side, ' +
     'its inner edge eight feet away and its outer edge fifteen. One teammate stands inside the band, ' +
-    'below and inside the carrier, with a short dashed passing route running to them. A second teammate ' +
+    // "DASHED" WAS REMOVED HERE AND HAS BEEN PUT BACK, AND BOTH MOVES WERE RIGHT AT THE TIME.
+    // The route is 8.68 ft; the carrier's glyph buries its first 3.88 ft and the arrowhead took
+    // the last 2.68, leaving 2.12 ft — under one 2.4 ft dash, so nothing broken rendered at all
+    // and a listener was being told about an interruption no sighted reader could see. The
+    // renderer now draws a half-size arrowhead where a dashed route's visible run falls under
+    // one dash (see SHORT-ROUTE ARROWHEAD in `scripts/lib/rink.mjs`), which returns 1.34 ft and
+    // puts a full-pitch dash and a clear gap on the page. Checked at 375 px, magnified from the
+    // device pixels rather than from the vector. The word is true again, so it is back.
+    'below and inside the carrier, with a short dashed passing route drawn to them. A second teammate ' +
     'stands inside the inner edge, about seven feet from the carrier, too close to be an option. No ' +
     'opposition players are drawn.',
 
@@ -578,7 +586,42 @@ const battleSupport = {
     'with their stick down, so the puck has somewhere to go and they collect it with time. ' +
     'The exception is real, and it is two exceptions: go in to win the puck when it is a genuine ' +
     'fifty-fifty scramble that nobody has, and many teams do assign a second player to arrive at the ' +
-    'wall — so find out whether that is your job before you decide it is not.',
+    'wall — so find out whether that is your job before you decide it is not. ' +
+    // ⚠️ THIS IS THE ONE CAPTION IN THE CORPUS THAT SENDS A READER *INTO* A WALL BATTLE, and it
+    // was the one with no arrival posture on it. `winger-dz-rim`, `winger-dz-reverse` and
+    // `off-wing-open-to-the-ice` all carry the warning, so the form already existed and this was
+    // the outlier. Wording is the owning section's own — `content/hockey-iq/
+    // puck_support_and_spacing.md`: "going in does not change how you arrive", "skates parallel
+    // to the wall … forearm and hip, head up and chin off your chest — never your back to the
+    // boards, never duck". The caption is VOICED (`md_to_speech.py` resolves `diagram:<id>` to
+    // it) and is also the SVG title and the visible figcaption, which is why it cannot rely on
+    // the paragraph beside it: quoted anywhere else, the instruction to go in would travel
+    // without the posture.
+    //
+    // ⚠️ THE TAIL USED TO READ "no speed is slow enough to make turning your back, or ducking,
+    // safe" — ONE UNIVERSAL CLAIM COVERING TWO PROHIBITIONS, AND THE EVIDENCE ONLY REACHES ONE.
+    // USA Hockey's walking-speed finding is stated of "the head being slightly flexed (head
+    // down) while making head-on contact with the boards or goal post" (Heads Up Hockey Program
+    // Guide, `sources/huh.txt`), and the corpus's own Sources note in
+    // `content/technique/body_contact_and_battles.md` records that the guide does NOT attach it
+    // to a player turning their back. The strongest text on disk for the turned back is
+    // "Even a light hit from behind could inflict a severe head or neck injury"
+    // (`sources/ibc.txt`, §5 Checking From Behind) — a possibility claim, not a universal one,
+    // and addressed to the checker rather than to the player who turns.
+    //
+    // ⚠️ WHAT MAY NOT CHANGE IS THE PROHIBITION. Only the evidence attached to each limb moves.
+    // Read aloud, two clauses of unequal strength can be heard as the weaker one granting
+    // permission, so the absolute lands first and on its own — "Never turn your back to the
+    // wall and never duck" — and "neither prohibition is a rule for fast arrivals only" covers
+    // both before either quote is heard. A listener must not be able to reach
+    // "so a slow hit from behind is fine."
+    '⚠️ And if you do go in, how you arrive outranks winning the puck. Never turn your back to ' +
+    'the wall and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
+    'head up and chin off your chest. Loose-puck races and fifty-fifty pucks at the wall are ' +
+    'where checking-from-behind and boarding injuries happen, and neither prohibition is a rule ' +
+    'for fast arrivals only: USA Hockey warns that even a light hit from behind could inflict a ' +
+    'severe head or neck injury, and the head-down collision that ducking produces can break ' +
+    'your neck at walking speed.',
 
   describe:
     'The attacking half of the rink, the net at the right. An own-team forward is on the right-hand ' +
@@ -667,7 +710,7 @@ const layerNotConverge = {
     'pressures, and the second layers behind and to the side of them instead of converging on the same ' +
     'puck. First and second here are the order they arrive in, not two particular players. ' +
     'The layer is offset diagonally rather than directly behind, at a similar ' +
-    'two-to-three-stick-lengths range — close enough to take over the check, far enough that a single ' +
+    'two-to-three-stick-lengths range — close enough to take over the coverage, far enough that a single ' +
     'move does not beat both of you — and it covers two things at once: the space the carrier goes if ' +
     'the first player is beaten, and the passing lane out of the pressure. ' +
     'Converging instead puts two of you on one puck, both beaten by the same pass, and by definition ' +

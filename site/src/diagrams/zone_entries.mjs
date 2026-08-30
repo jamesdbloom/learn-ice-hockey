@@ -354,8 +354,8 @@ const softAreaDump = {
     'The soft area dump — the second of five distinct dump-ins, and the one ' +
     'whose value is entirely in the race, which is why the chaser is drawn already most of the ' +
     'way there. The puck is placed gently into a specific area, usually a corner, so that it ' +
-    'dies there rather than rebounding: that gives your chaser a stationary puck and a body to ' +
-    'hit, and gives the retrieving defenceman no help at all from the puck’s momentum. The ' +
+    'dies there rather than rebounding: that gives your chaser a stationary puck and a body ' +
+    'arriving on it, and gives the retrieving defenceman no help at all from the puck’s momentum. The ' +
     'read that calls for it is a forechecker arriving in roughly two seconds and a defence that ' +
     'has to turn and retrieve. Used when your chaser is four seconds away it is the opposite ' +
     'play — you have simply given the puck to their defenceman with time. Nothing about how the ' +
@@ -574,9 +574,22 @@ const flipOverTrap = {
     'under it, to travel over sticks and bodies and land in open space behind their defence. A ' +
     'flat diagram cannot show the height, and the height is the whole play: it goes over the ' +
     'three-man wall rather than through it, and hangs long enough for your forwards to run ' +
-    'underneath it. Land it past the defence but before the goal line — unless you are ' +
-    'shorthanded, a puck crossing the goal line untouched from behind the centre red line is ' +
-    'icing.',
+    // ⚠️ THE SHORTHANDED EXEMPTION IS NOT UNIVERSAL, and this caption stated it as though it
+    // were — while `icing-gaining-the-line` in `rules_primer.mjs` carried the full scope, so
+    // one voiced layer said it two ways. USA Hockey 624(b) nullifies icing where "(1) (For all
+    // Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)
+    // The offending team is short-handed" — `sources/usah.txt`, Rule 624 — so below those
+    // classifications a shorthanded team CAN be iced. NHL 81.6 grants it generally but withdraws
+    // it from a team "'short-handed' by reason of a major penalty, and they have neglected to
+    // ensure there is a player on the penalty bench to exit upon the expiry of the penalty …
+    // Icing will be called" (`sources/nhl_rules.txt`).
+    'underneath it. Land it past the defence but before the goal line. A puck crossing the goal ' +
+    'line untouched from behind the centre red line is icing, and whether being shorthanded ' +
+    'exempts you depends on the book you play under. USA Hockey grants that exemption only at ' +
+    'Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), so ' +
+    'below those levels a shorthanded team can be iced; the NHL grants it but withdraws it from ' +
+    'a team shorthanded by a major that has left nobody on the penalty bench (Rule 81.6). Find ' +
+    'out which rules your league runs.',
 
   describe:
     'The full sheet, own end at the left, attacking end at the right. An own forward with the ' +

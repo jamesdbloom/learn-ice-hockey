@@ -260,12 +260,35 @@ _RULE_BEARING = re.compile(
 
 
 def report_hedges(paths: list[Path]) -> None:
-    """Print sections whose body carries a rule-bearing exception the block omits."""
+    """Print sections whose body carries a rule-bearing exception the block omits.
+
+    ⚠️ ADVISORY, and it is neither a defect list nor a clearance. Five agents triaged
+    all of its hits across the corpus in one round: roughly a quarter were the
+    mis-attribution this function used to produce, many more were exceptions already
+    in the block worded differently, and it also MISSES defects it never flags. Read
+    every hit; a sweep over its output would damage the corpus, and its silence about
+    a section means nothing.
+
+    ⚠️ It used to split on `### ` alone. A section therefore ran to the next `### `,
+    swallowing every `## ` heading after it -- including the document's own
+    `## Common Mistakes`, `## Check yourself` and `## Key Takeaways` -- so a sentence
+    in any of those was reported against a `###` section that did not contain it. One
+    hit reached SIX sections away. Blocks that sit on a `## ` heading were never
+    inspected at all, in either direction.
+
+    Splitting on `#{2,3} ` fixes both halves: a `##` boundary now terminates the
+    preceding section, and a `##` section with a block of its own is examined.
+    """
     hits = 0
     for path in paths:
         text = path.read_text(encoding="utf-8")
-        for section in re.split(r"\n(?=### )", text):
-            if not section.startswith("### "):
+        for section in re.split(r"\n(?=#{2,3} )", text):
+            if not re.match(r"#{2,3} ", section):
+                continue
+            # The summary layers restate; they are not where an exception is dropped.
+            if re.sub(r"^#+ ", "", section.split("\n")[0]).strip().lower() in {
+                "common mistakes", "check yourself", "key takeaways", "sources",
+            }:
                 continue
             block = re.search(r"```facts\n(.*?)```", section, re.S)
             if not block:
@@ -280,7 +303,7 @@ def report_hedges(paths: list[Path]) -> None:
                     continue
                 if found.group(0).lower().split()[0] in in_block:
                     continue
-                heading = section.split("\n")[0][4:].strip()
+                heading = re.sub(r"^#+ ", "", section.split("\n")[0]).strip()
                 doc = str(path.relative_to(CONTENT)).removesuffix(".md")
                 print(f"  {doc} · {heading}")
                 print(f"      {' '.join(sentence.split())[:150]}")

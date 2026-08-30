@@ -166,8 +166,9 @@ const theHouse = {
     'faceoff dots and up to the top of the two faceoff circles. ' +
     'Almost all goals come from inside it, so the problem every system solves is how to ' +
     'allocate five bodies so that it is never open while still leaving somebody available ' +
-    'to receive an outlet pass — pack all five onto the goal line and you win the puck and ' +
-    'give it straight back. ' +
+    'to receive an outlet pass. A shape that packs all five players onto the goal line ' +
+    'protects the house beautifully and has nobody available to receive that pass, so you ' +
+    'win the puck and immediately give it back. ' +
     'Nothing here is painted on the ice: the circles, dots and crease that fix its corners ' +
     'are, and the shape is read off them. ' +
     'No system covers everything. Coverage is about choosing which chances outside the ' +
@@ -211,7 +212,13 @@ const collapseCorner = {
     'and does not get drawn to it; both wingers are still high on the points; and the centre ' +
     'is leaving the high slot to go down as the second body into the corner battle, because ' +
     'two on one wins it. ' +
-    'That leaves the high slot momentarily empty — the seam the puck comes back through — ' +
+    'Two on one is about outnumbering the battle, not about joining a pin. Pin the puck, not ' +
+    'the player: that is a rule and not a nicety, because IIHF women’s Rule 101.1 does not ' +
+    'allow players competing for possession of the puck to use the boards to make contact with ' +
+    'an opponent to eliminate her from the play, push her into the boards, or pin her along ' +
+    'the boards. ' +
+    'The centre going down leaves the high slot momentarily empty — the seam the puck comes ' +
+    'back through — ' +
     'and the next diagram shows who fills it. ' +
     'This is the first of two frames of a movement, not a shape to hold: under man-on-man or ' +
     'a hybrid these same five players would be reading bodies rather than areas, so ask your ' +

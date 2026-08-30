@@ -26,8 +26,6 @@ You own dimensions **D1, D2 and D3** of [`project/review_process.md`](../../proj
 
 ## Finding the rulebooks
 
-The primary texts are extracted to plain text in the session scratchpad. Locate them first — the path is session-specific, so do not assume a remembered one:
-
 **The books live in `sources/` in the repository.** They are gitignored, so they are on disk but
 never committed; `scripts/fetch_sources.sh` rebuilds them and `sources/README.md` is the record of
 what each one is. ⚠️ **Read `sources/README.md` before quoting anything** — it carries the
@@ -37,7 +35,9 @@ extraction traps, and there are several that have manufactured false findings.
 |---|---|
 | `nhl_rules.txt` | NHL Official Rules 2025-2026 — plain `pdftotext` |
 | `nhl_rules_layout.txt` | The same book, `-layout` extraction. **A second opinion when a table or a rule number looks detached** |
-| `iihf_rules_v1.1.txt` | IIHF Official Rulebook 2025/26 **v1.1 — cite this edition** |
+| `iihf_rules_2026-27.txt` | IIHF Official Rulebook **2026/27 v1.0** — the IIHF's current edition. ⚠️ **Rule 46 is rewritten and RENUMBERED in full, and Appendix IV merges three major-penalty tables into one, shifting everything from Rule 22 onward by −2.** Its **Appendix VII restates rule text under existing numbers for PILOT rules explicitly NOT in force** — anchor any rule-number search to line starts or you will read a pilot as the body rule |
+| `iihf_situations_2026-27.txt` | IIHF Situation Handbook **2026/27** |
+| `iihf_rules_v1.1.txt` | IIHF Official Rulebook 2025/26 **v1.1 — ⚠️ cite this edition for the BRITISH layer**, which adopts 2025/26. Which edition is current depends on whose competition the reader is in: say which, every time |
 | `iihf_rules_v1.0.txt` | IIHF Official Rulebook 2025/26 v1.0, May 2025 — superseded, kept for comparison |
 | `iihf_rules.txt` | The repaired mirror extraction of v1.1. Prefer `iihf_rules_v1.1.txt` |
 | `iihf_situations_v1.1.txt` | IIHF Situation Handbook 2025/26 **v1.1, August 2025 — cite this edition** |
@@ -46,11 +46,29 @@ extraction traps, and there are several that have manufactured false findings.
 | `usah_casebook.txt` | USA Hockey Official Rules **and Casebook** 2025-29 — the separate 476pp volume |
 | `hc.txt` | Hockey Canada Playing Rules **2026-2028** — plain `pdftotext` |
 | `hc_layout.txt` | The same book, `-layout` extraction |
-| `eiha_inhouse.txt` | IHUK In-House Rules 2025-26 — the British amendments |
+| `eiha_inhouse_2026-27.txt` | IHUK In-House Rules **2026-27 — THE CURRENT BRITISH DOCUMENT.** The only edition carrying the four-nation scope (*"England, Wales, Scotland and Northern Ireland"*) and the *"policies of IHUK"* construction clause |
+| `eiha_inhouse.txt` | IHUK In-House Rules 2025-26 — **superseded**, kept for comparison. Scoped to *"England and Scotland"* only |
 | `eih_rr.txt` | England Ice Hockey Rules & Regulations 2024-2025 |
 | `ibc.txt` | USA Hockey *Introduction To Body Contact* |
+| `carha.txt` | CARHA Hockey Official Rule Book, printed 2020. ⚠️ **Governs CARHA-affiliated leagues only — never a general rec-hockey standard** |
+| `huh.txt` | USA Hockey *Heads Up Hockey* Program Guide. ⚠️ **Extracted with PLAIN `pdftotext`, not `-layout`** — it is a multi-column brochure and `-layout` splices the columns mid-sentence |
+| `huh_layout.txt` | The same book, `-layout`. Use only to check a table; **the spinal-injury passage is unrecoverable in it** |
+| `iihf_coachdev_off_tactics.txt` | IIHF coach-development offensive tactics — **coaching material, not a rulebook. Never cite it as a rule** |
+| `heo_intl_drill_symbols.txt` | International drill symbols — **notation, not a rulebook.** ⚠️ **The PDF is image-only and this extraction is 30 bytes of nothing.** Read the PDF; do not grep the text file and conclude a symbol is absent |
 
-⚠️ **This table was wrong for an unknown number of rounds** — it named `usah_rules.txt`,
+⚠️ **This table has now been wrong TWICE, and the warning below did not prevent the second time.**
+At round 53 it named **14 books when 22 were on disk** — 36% of the source set invisible to the
+agent whose entire job is verifying rules against it. Absent were `eiha_inhouse_2026-27.txt`, **the
+current British document and the only edition carrying the four-nation scope**, both current IIHF
+books, `carha.txt`, and both `huh` extractions. **A verifier trusting it would have quoted the
+superseded England-and-Scotland edition and concluded the In-House Rules do not reach Wales or
+Northern Ireland.** Found by a verifier that reported its own instructions as a defect.
+
+**The lesson is not "keep the table updated."** A hand-maintained list of a growing source set
+decays silently, and nothing mechanical checks it. **Run `ls sources/*.txt` and diff it against this
+table before you trust either.**
+
+⚠️ **The first time: this table was wrong for an unknown number of rounds** — it named `usah_rules.txt`,
 `usah_case.txt`, `hc2628.txt` and an `iihf_rules.txt` at "v1.0, May 2025", **four of which do not
 exist**, and it labelled `hc.txt` as the superseded 2024-2026 edition when `hc.txt` **is** the
 current 2026-2028 book. A verifier that trusted it would have reported a book as missing, or
@@ -104,7 +122,9 @@ grep -n -A 40 "^81.1 Icing" nhl_rules.txt  # read the full body pass
    - **USA Hockey 613(a) reverses the faceoff stick-down order** — the attacking player places first at eight of nine spots, where NHL 76.4 has the defending player first.
    - **USA Hockey does have a goalkeeper's restricted area** (614(c), the "privileged area", governing freezing). Three documents once asserted it has none.
    - **Charging stride thresholds differ by one stride between books**, and the NHL sets no stride count at all — it judges on "distance traveled" (42.1). Never attribute a stride number to the NHL.
-5. **Check the casebook for interpretations.** `usah_case.txt` and Hockey Canada's interpretations often settle questions the rule text leaves open. If no official interpretation exists, say that — do not present a reading as a ruling.
+5. ⚠️ **Check the casebook — a negative existence claim verified in the Playing Rules alone is NOT verified.** USA Hockey publishes a separate 476-page volume, **`sources/usah_casebook.txt`** (*not* `usah_case.txt`, which does not exist and never has), and Hockey Canada's Interpretations sit between its lettered clauses. Both routinely carve out cases the rule text forecloses.
+   ⚠️ **This is not hypothetical and it has now failed three times on ONE rule.** The corpus said USA Hockey Rule 614(c)'s *"sole exception"* was skate contact with the crease — **it has no exception in its text at all.** The correction said *"no exception of any kind"* — **the Casebook publishes several.** The next correction said *"the one carve-out USA Hockey does publish"* — **Situations 5, 7, 8, 10, 12 and 13 all answer "No", and Situation 7 is the ONLY one that turns on crease contact at all** — 8, 10 and 12 have the goalkeeper fully outside it, and 5 is decided by the three-second rule instead. Each fix was written by someone who had read one book.
+   **So: read the casebook BEFORE writing any "no exception", "the only", "the one" or "writes no" sentence**, and when you do write one, say which book you searched. If no official interpretation exists, say that — do not present a reading as a ruling.
 6. **Check the edition.** The corpus baselines on *NHL Official Rules 2025-2026*, *IIHF Official Rulebook 2025/26*, *USA Hockey 2025-29*, *Hockey Canada 2026-2028*. Documents have drifted to 2023-24, 2024/25 and a 2026/27 IIHF book, which made text unverifiable and in one case carried a superseded high-sticking definition.
 
 ---

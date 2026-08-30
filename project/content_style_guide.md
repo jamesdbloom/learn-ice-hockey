@@ -68,7 +68,11 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 - **Delayed offside** ends when the attacking team clears the zone (**tagging up**, after which they may re-enter), or when the defending team gains control and moves the puck out. It becomes a whistle if an attacker touches the puck or checks an opponent while the linesman's arm is up.
 - **Hybrid icing** — adopted by the NHL in 2013-14 and the IIHF in 2014. **⚠️ Do not write "the race is to the dot."** That is the common version and Rule 81.1 says in terms that it is wrong: *"For clarification, the determining factor is **which player would first touch the puck, not which player would first reach the end zone face-off dots**."* The dot is the **deadline for the decision**, not the finish line — the linesperson judges who would reach *the puck* first and must decide by the time someone reaches the dot. If it is too close to call at that moment, icing is called. This error was in five documents plus this guide before it was caught; it changes what a chaser does at speed, because a player who has lost the dot race may still be entitled to keep the puck alive. Some youth and rec leagues still use no-touch (automatic) icing; a few use touch icing.
 - **Icing is waved off** if: the opposing goalie plays it or leaves the crease and moves toward it (NHL — USA Hockey does *not* wave off for goalie movement); the puck goes in the net (it's a goal); it comes directly off a faceoff; the team is shorthanded; or a linesman judges an opposing skater could have played it. To nullify a potential icing a teammate must "gain the line" — the puck must contact the centre red line **on a stick**, not a skate.
-- **After your own icing:** play stops and there is a defensive-zone faceoff. The offending team **cannot change lines** and **cannot use a time-out** — under the **NHL** (81.4, 87.1) **and under the IIHF** (81.4, 87.1). ⚠️ **Their wording is NOT identical on 81.4, and the difference reaches the reader:** IIHF 81.4 lists a **fourth** substitution exception the NHL lacks — *"a Player with a broken skate"* — so a British player may be substituted after his own icing for a broken skate and an NHL player may not. **87.1 does match.** *(This line asserted the two were identical until round 52, which added eight broken-skate mentions across the corpus while the guide still said the opposite — a governing document contradicting the corpus it governs.)* **USA Hockey is the outlier**: Rule 624 carries no substitution restriction and Rule 636(f) no icing condition, so neither is blocked.
+- **After your own icing:** play stops and there is a defensive-zone faceoff. The offending team **cannot change lines** and **cannot use a time-out** — under the **NHL** (81.4, 87.1) **and under the IIHF** (81.4, 87.1). ⚠️ **Their wording is NOT identical on 81.4, and the difference reaches the reader:** IIHF 81.4 lists a **fourth** substitution exception the NHL lacks — *"a Player with a broken skate"*. **87.1 does match.**
+
+  ⚠️ **And this bullet is now wrong a THIRD time, in a third direction — it states the fourth exception as settled, and the same IIHF book contradicts it.** The IIHF writes the post-icing substitution ban **twice**: **81.4** (icing-specific) lists four exceptions including the broken skate; **82.1** — triggered by *"➔ Rule 63.8 – Delaying the Game **or** ➔ Rule 81 – Icing"* — states the same ban and lists **only the NHL's three**. Both verified in the 2025/26 v1.1 and 2026/27 editions. **Neither rule says which governs.** So *"a British player may be substituted after his own icing for a broken skate"* is a conclusion the book does not license, and this guide was asserting it more confidently than the corpus it governs.
+
+  ⚠️ **The best evidence found so far points AWAY from a genuine contradiction, and it is not in the rulebook.** IIHF **Situation Handbook 81.8** answers a substitution question with a **joint citation — *"Rule 81.4 and Rule 82.1"*** — identical in v1.1 and 2026/27. The IIHF's own interpretive document treats the two as **one combined authority**, not as competing copies, which is what a *lex specialis* reading would predict. **It still does not say whether a broken skate is an exception**, so the honest position is that the two lists differ and the sport has not published which controls. **Write it that way; do not resolve it in either direction.** The EIHA/IHUK In-House books were searched for Rule 81/82 substitution material and contain **none**, so nothing amends the IIHF position for a British reader. *(This line asserted the two were identical until round 52, which added eight broken-skate mentions across the corpus while the guide still said the opposite — a governing document contradicting the corpus it governs.)* **USA Hockey is the outlier**: Rule 624 carries no substitution restriction and Rule 636(f) no icing condition, so neither is blocked.
 
   **⚠️ This bullet has now been wrong twice, in opposite directions, and both errors reached six documents.** It first stated the NHL position as universal. The correction then claimed IIHF 87.1 attaches no icing condition to time-outs — which is false; IIHF 87.1 reads *"No 'time-out' shall be granted to the defensive team following an icing…"*, the same sentence as the NHL. A British reader was told his own book punished icing more lightly than it does.
 
@@ -90,7 +94,7 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
   **Do not sweep the word "chaser" out of the corpus, though.** `defensive_zone_coverage.md`'s **box+1** is a different system with a different "+1" — a fifth skater at even strength who genuinely *is* "the only one who chases the puck", with the role passing to whoever is nearest. That document owns that usage and it is correct. So is "dump-and-chase", and so is `special_teams.md`'s own section on the discipline **not** to chase. The defect was one coinage naming one role, not the word.
 - **Faceoff ejections** are caused by moving before the drop, improper stick placement, or **encroachment by a teammate** — a winger creeping into the circle gets the *centre* thrown out. A second violation by the same team on the same draw is a bench minor. **Closing your hand on the puck is a minor penalty, not a faceoff violation.**
 
-  **⚠️ Three USA Hockey divergences here, all of which change what a reader does.** (1) **613(a) reverses the stick-down order** — the *attacking* player places first at eight of nine spots, where NHL 76.4 has the *defending* player first; both books agree only at centre ice, where the visitor is first. This inverts the "advantage of going second" argument. (2) **613(d) makes a second violation an individual minor**, not a bench minor. (3) **USA Hockey grants no faceoff dot choice** (612(b), 624(a)) where NHL 76.2 / 81.2 and IIHF both do. Under IIHF, a violation is a **warning** rather than an ejection and a skate win **is** a violation.
+  **⚠️ Three USA Hockey divergences here, all of which change what a reader does.** (1) **613(a) reverses the stick-down order** — the *attacking* player places first at eight of nine spots, where NHL 76.4 has the *defending* player first; both books agree only at centre ice, where the visitor is first. This inverts the "advantage of going second" argument. (2) **613(d) makes a second violation an individual minor**, not a bench minor. (3) **USA Hockey grants no faceoff dot choice** (612(b), 624(a)) where NHL 76.2 / 81.2 and IIHF both do. ⚠️ **Under IIHF this changed on a season boundary, and the guide said the old thing.** In the **2025/26** book a violation was a **warning** rather than an ejection; in the **2026/27** book (Rules 76.3, 76.4, 76.6, 76.7) the centre is **replaced or ejected**, with a post-icing carve-out the older book did not have — and IHUK wrote the same into its own In-House Rules for 2026-27. A skate win **is** a violation in both. **Always name the edition when writing an IIHF consequence**: this bullet was correct when written, went stale when the book moved, and was found by an agent reading the guide against the corpus it governs — not by any checker.
 - **Delayed offside and tag-up are classification-restricted under USA Hockey.** **Rule 630(d)** grants them only at Youth 15-Only and above, Girls 16U and above, High School and Adult. Below those levels the whistle is immediate — there is no tagging up. Note also that **tag-up requires only skate *contact* with the blue line** (NHL 83.3(i)), not both skates over it.
 - **USA Hockey does have a goalkeeper's restricted area — do not write that it has none.** Three documents asserted that. **Rule 614(c)** restricts *freezing the puck* to the **"goalkeeper's privileged area"**, corners excluded, on the same two-minute penalty. It is not the NHL trapezoid and it governs freezing rather than playing, but "no restricted area at all" is false.
 - **Charging stride thresholds differ by one stride between books.** USA Hockey says ***more than* two strides**; Hockey Canada **Rule 7.4** says ***two or more***; the NHL sets no stride count at all, judging charging on *"distance traveled"* (42.1). Do not conflate them, and do not attribute a stride number to the NHL. Note NHL 42.1 opens *"skates, **jumps into** or charges"*, so leaving your feet **is** itself part of the offence — USA Hockey 607 names *"leaving one's feet (jumping)"* directly.
@@ -146,7 +150,7 @@ the North American position the corpus states elsewhere:
 | Rink | Below **56 m × 26 m** authorised — under the IIHF minimum on both counts | NHL 200 × 85 ft; IIHF 60 m long by **26–30 m** wide (Rule 1.2) |
 | Half visor | **Women's hockey:** permitted only from the season after the 18th birthday — a relaxation of IIHF 102.1's full-face requirement, not a general rule | Differs by classification |
 | Overtime | Only NIHL, and SNL where its regulations provide | Standard |
-| Junior ages | U19/U16/U14/U12/U10 by birth year, **unisex** | USA Hockey / Hockey Canada bandings |
+| Junior ages | U19/U16/U14/U12/U10 by birth year, **unisex**. ⚠️ **The birth-year bands shift every season — U19 was 2007–2009 for 2025-26 and is 2008–2010 for 2026-27.** Never state a band without its season; `uk_rules.md` owns the table | USA Hockey / Hockey Canada bandings |
 
 ---
 
@@ -271,6 +275,140 @@ grep -ni "restricted area" iihf_rules.txt   # search by phrase
 
 Note the extraction contains each rule twice (the PDF has a table-of-contents pass and a body pass) — read the longer occurrence.
 
+**⚠️ An extraction is a rendering, not the document — and the paragraph above has just told you to
+grep one.** There are three ways the text on disk lies to a search, all measured across rounds 52
+and 53, and every one of them breaks **negative** claims rather than positive ones. That matters
+here more than anywhere: the corpus rests **417 book-scoped "this book writes no such provision" assertions**
+(inventoried round 52, 34 of 37 documents) on exactly this kind of search.
+
+1. **Plain `pdftotext` silently joins hyphenated line breaks.** `face-off` comes out `faceoff` —
+   **88 corrupted word-instances across `nhl_rules.txt` and `hc.txt`, zero survivals.** A negative
+   grep for a hyphenated term against a plain extraction is a **false absence**; and the same
+   artefact makes twelve corpus quotations that are verbatim correct against the book return zero
+   hits, which reads as fabrication.
+2. **`-layout` interleaves two-column tables**, so a left-column sentence stops being contiguous —
+   **eleven quotations are greppable in plain and not in `-layout`.** `-layout` is the authority
+   for **wording**; plain is the authority for **sentence contiguity**. Neither is "better".
+3. **Some tables interleave under both**, because the interleaving is in the PDF's own text
+   ordering rather than in the flag. The IIHF's **Appendix IV Table 16** splices the left column
+   into the middle of the right column's sentence, so `"loss of goal only"` returns **zero**
+   against `iihf_rules.txt` raw *and* whitespace-normalised, while
+   `"A minor penalty is not assessed (loss of"` returns **one**. **What fails is any phrase
+   crossing a line wrap.**
+4. **Page furniture is injected INTO the middle of a sentence.** Found 29 August 2026 in IIHF
+   Rule 10.4, and it is the nastiest of the four because it defeats every technique above.
+   The sentence reads, flattened: *"A goalkeeper may participate in the play using a skater's
+   stick until such time as they are legally* **`03`** *provided with a replacement goalkeeper's
+   stick.* **`SECTION · EQUIPMENT`** *For an infraction…"* — a page number and a running header
+   spliced mid-clause at a page break. ⚠️ **Plain grep fails, `-layout` grep fails, and a
+   `sed` line window fails too** — the paragraph sits across the break, so a window sized to the
+   rule misses it and the text *appears absent altogether*. A **whitespace-flattened read with a
+   wide window** recovers that one.
+
+   ⚠️ **But flattening is not a general rescue, and assuming it was is an error this guide made
+   for several hours.** In the USA Hockey Casebook's Standard of Play Situation 2 the running
+   header sits **inside the sentence**: *"…at any time provided* `Standard of Play` *they do not
+   impede their progress… and is* `CASEBOOK` *considered a good defensive play."* A flattened
+   search for `"A player may lift the opponent"` **hits**; a flattened search for
+   `"and is considered a good defensive play"` returns **nothing**. **Flattening removes line
+   breaks; it cannot remove words that were never a line break.** Where the splice is a header
+   rather than a wrap, **only reading the window recovers the sentence** — so a negative that has
+   survived flattening near a page boundary is still not a negative.
+
+   ⚠️ **The same form feeds desync Python from every shell tool.** `pdftotext` emits `\f` at page
+   boundaries (**228 in `iihf_rules_v1.1.txt`**), and Python's `splitlines()` treats `\f` as a line
+   terminator while `grep -n`, `sed`, `awk` and `split('\n')` do not. **Rule 81.4 is at line 6673 by
+   `sed` and 6810 by `splitlines()` — a 137-line offset, drifting to 227 by end of file.** A script
+   slicing a rule by line range therefore **reads a different rule and reports on it confidently**;
+   this cost an agent three silently-wrong diffs. **Use `split('\n')`, never `splitlines()`.** See
+   [`sources/README.md`](../sources/README.md).
+
+   ⚠️ **This one cost three readers in a row, in two different directions.** A `safety-reviewer`
+   re-extracted the book, saw the sentence stop at *"must receive their stick from"*, and reported
+   Rule 10.4 truncated — **but correctly refused to weaken the corpus claim on the strength of it**
+   and referred it out instead, which is the behaviour non-negotiable 3 exists to produce. The
+   dispatching agent then read the canonical file with too short a window, concluded the paragraph
+   was **missing entirely**, and was one step from recording that the corpus asserted a false
+   four-book equivalence. **The corpus's claim was correct the whole time and no edit was
+   warranted.** ⚠️ **Two readers reaching opposite wrong conclusions about intact text is the
+   signature of this mode.** Treat "the passage is not there" near a page boundary as unproven
+   until a flattened read has looked.
+
+### A truncated view manufactures findings, and it did so three times in one round
+
+⚠️ **This is a separate failure from the four extraction modes above, and it is more
+dangerous, because nothing is wrong with the file.** The book is intact, the extraction is
+faithful, and the *reader's window* is too small. What comes back is not garbled — it is
+**absent**, which reads as evidence.
+
+Three instances in round 53, in three different tools, by three different agents:
+
+| The view | What it returned | What was true |
+|---|---|---|
+| `grep \| cut -c1-240` on a Common Mistakes line | *"grabbing a face mask"* and nothing else → "the body does not support this" | The body carried USAH 622(b)/(c), 404(b), IIHF 75.2(II), HC 7.1 and *"assume you have no floor."* **No defect.** |
+| A search for `0.48` in a fetched abstract | zero hits → "the figure is not on the page" | The page writes **`.48`**. The figure is plainly there. |
+| `sed -n` windowed to a rule number | the paragraph absent → "the extraction is truncated / the corpus asserts a false equivalence" | The paragraph is intact across a page break. **The corpus was right.** |
+| `awk` from a rule heading to the next rule number, on IIHF 82.1 | no exception list → "82.1 does not state the ban; the contradiction the corpus reports is fabricated" | The ban and its three exceptions sit **several paragraphs down, past a `TABLE OF CONTENTS` and a running header spliced mid-rule**. **The contradiction is real.** |
+
+⚠️ **The fourth happened after this section was written, and was committed by the agent that wrote
+it.** Knowing the mode, having documented it, and having just told other agents to watch for it did
+**not** prevent reading a windowed rule and drafting a refutation off the absence. It was caught only
+by printing the whole rule block before sending — one step short of filing a verbatim-quoted
+refutation of a true finding, **which is the most credible kind of wrong.** ⚠️ **So the rule is not
+"be careful with windows." It is mechanical: near a page boundary, print the whole block. Do not
+size a window to the thing you are looking for** — the boundary you would need to know about is the
+one the window is hiding.
+
+Two of the first three were **caught by their own authors on a re-read**; the third was caught
+only because a second agent re-derived it. **None was caught by a checker, and none would
+have been** — every one of them produced a clean, confident, well-evidenced *negative*.
+
+**So:**
+
+- **Read the whole line before you believe a finding.** Never `cut` a line you are about to
+  draw a conclusion from. Widen and re-read instead — the cost is one command.
+- **Grep the distinctive words, never the normalised number.** `0.48` and `.48` are the same
+  figure and different strings; so are `10-15%` and `10–15%`, and `63.2(ii)` and `63.2 (ii)`.
+  A number that fails to match is **a prompt to read the sentence**, not a refutation.
+- **A window sized to the thing you are looking for cannot tell you the thing is missing** —
+  it can only tell you it is not *there*. Widen until you can see the boundaries.
+- ⚠️ **On a diff, `grep -E "^[+-]"` silently drops every changed list item.** Markdown bullets
+  begin `- `, so in a diff they render as `-- ` and `+- ` — and the common idiom
+  `grep -E "^[+-][^+-]"`, written to skip the `---`/`+++` headers, skips the bullets with them.
+  An agent using it concluded that two of six changed sites were uncommitted, caught it on a
+  re-run, and named it: *"the truncated-view mode, in a tool the style guide does not list."*
+  **Exclude the headers by name — `grep -vE "^(diff|index|---|\+\+\+|@@)"` — rather than by
+  shape.** The character that marks a diff line is also the character that marks a list item.
+- ⚠️ **Treat every negative you produce as provisional until you have looked a second way.**
+  The asymmetry is the point: a false positive gets refuted by the next reader, a false
+  negative gets **written into the corpus as a disclosure** and then protected by
+  non-negotiable 4.
+
+So, four operative rules:
+
+- **Flatten the book to one whitespace-normalised line before you believe any negative, and check
+  the sibling extraction** — `nhl_rules_layout.txt` and `hc_layout.txt` sit beside the plain files
+  for this reason. A negative that has survived neither is a claim about the rendering, not about
+  the book. ⚠️ **And surviving both is still not enough where the phrase could sit in a two-column
+  table** — that is the third case above, and neither flag helps there. ⚠️ **And a flattened read
+  needs a WIDE window near a page break**, because case four splices a page number and a running
+  header into the sentence itself: a match anchored on the words either side of the splice returns
+  nothing while the text is present and intact.
+- **Where an extraction interleaves, read a line range and reconstruct the row by eye** —
+  `sed -n '9960,10055p' sources/iihf_rules.txt` prints Table 16 in full. A human can read
+  interleaved columns; `grep` cannot.
+- **Never "correct" a corpus quotation on the strength of a zero-hit search.** An agent was
+  dispatched to do exactly that — the NHL's `face-off` against the extraction's `faceoff`, at five
+  content documents — and **refused, proving the extraction wrong rather than the corpus.** Making
+  those five edits would have written a fabrication into five documents. It found the artefact only
+  because one line was 77 characters where the rest of the paragraph wrapped at 60–71, and said so:
+  *"had it fallen mid-paragraph instead of at a wrap boundary, I would have confirmed it and
+  corrupted five files."*
+
+[`sources/README.md`](../sources/README.md) owns the measurements above, the per-file extraction
+flags and the `DUAL_EXTRACT` list, and is the authoritative inventory. Read it before you rest
+anything — positive or negative — on a search of `sources/`.
+
 Cite these as *NHL Official Rules 2025-2026, Rule N.N* and quote the actual wording where it matters. If a claim cannot be confirmed in these files, say so explicitly in the text rather than guessing.
 
 **⚠️ Use the working URL.** `https://www.nhl.com/info/rules` **does not resolve to the rulebook** — it redirects, and eleven documents in this corpus ended up citing it as a dead link. The PDF that actually serves (HTTP 200, verified 27 July 2026) is:
@@ -365,9 +503,40 @@ Never: Carry through the slot — skate behind the net to the other side instead
   restates its own heading. Where a section has no subsections and is itself the
   unit of teaching, `##` is right.
 - **3–6 coaching facts, 8 at most.** More than 8 and the section is probably two
-  sections. **`Rule:` facts do not count against that cap** — a cap must never
+  sections. **`Rule:` facts do not count against that 8-fact coaching cap — but they DO count against the 11-fact total below** — a cap must never
   evict a rulebook fact, so the cap governs how much *coaching* content a block
   holds. No block may exceed 11 facts in total.
+
+  ⚠️ **The 3-fact floor is not an absolute, and a corpus-wide count is what showed it.**
+  **51 blocks sit below three coaching facts and three have none at all** (measured across all
+  791 blocks, 29 August 2026): `body_contact_and_battles.md`'s *"What actually gets called"*
+  (11 of 11 `Rule:`), `zone_entries.md`'s *"The four clauses the technique rests on"* (7 of 7)
+  and `faceoffs.md`'s *"What gets your centre thrown out of the dot"* (7 of 7). Eleven of those
+  blocks were then read in full, and the reading found the floor **wrong as a blanket rule**:
+  some sections genuinely are rulebook exposition, and their coaching sibling is the section
+  next door. *"The four clauses the technique rests on"* states what makes the trail-skate drag
+  legal; *"The trail-skate drag"*, immediately below it, carries the `Technique:`, `Action:` and
+  `Key:` facts. *"What actually gets called"* runs the same way against *"The habits that keep
+  you out of the box"*. **A block on a section like that may be all `Rule:`, and padding it to
+  reach the floor would break [extract, never author](#extract-never-author) — which outranks
+  the floor.**
+
+  ⚠️ **That is not a blanket exemption, and this is the half that matters: three of the first
+  four blocks read under it had coaching sitting in the section's own prose that had never
+  reached the block.** The exemption is for a section with **no** imperatives, not for one whose
+  imperatives were squeezed out. So **list the imperatives in the section's body first**, then
+  decide:
+
+  - **None in the body** — the all-`Rule:` block is honest. Leave it, and do not invent a fact
+    to fill it.
+  - **Some in the body** — they belong in the block. That is extraction, not authoring.
+  - **Some in the body and the block already at 11** — **split the section, on the seam the body
+    already uses, not on rule-set lines.** A split by book leaves both halves all-`Rule:`:
+    round 52 split one that way and *"relieved the wrong thing"*, leaving 11 facts and a single
+    coaching fact behind it.
+
+  **The 11-fact hard cap is not the thing to relax.** Every block that reached it in that review
+  was a section doing two jobs, and the cap is what said so.
 - **No block on a section that is itself already an extraction layer.**
   `## Common Mistakes` and `## Key Takeaways` always; also any section that is a
   bulleted recap of the subsections above it, whatever it is called. A third
@@ -504,6 +673,448 @@ Three consequences:
 - **No fabricated statistics, records, or quotes.** If you can't source a number, don't use one.
 - **Flag anything you could not verify** explicitly in the text.
 
+## ⚠️ When the honest document is the outlier, a consistency sweep corrects the wrong one
+
+**Four times in one round, the document that carried the qualification was in the minority, and the
+others stated the claim bare.**
+
+| Claim | Honest | Bare |
+|---|---|---|
+| The KHL plays a trapezoid | **1 document, 5 sites** — *"unverified here: no KHL rulebook was available to check it against"* | **16 documents, 28 sites**, several of them `Rule:` facts |
+| *"One defenceman is always above the puck"* | 4 documents had *"somebody"* / *"at least one player"* | **the named owner** had *"one defenceman"* |
+
+⚠️ **A reviewer comparing documents for internal consistency would have "corrected" the honest one
+both times** — it is the odd one out, and it is longer. **Majority is not evidence.** The number of
+documents asserting something is a fact about propagation, never about truth: in this corpus a claim
+repeated sixteen times and checked zero times is the *expected* shape, because propagation is cheap
+and verification is not.
+
+**So when documents disagree about how confident to be, the question is never "which reading is more
+common." It is "which one has the source."** Resolve toward the evidence, and if the evidence is
+absent, resolve toward the disclosure — non-negotiable 4 protects it and non-negotiable 3 forbids
+deleting the claim it qualifies.
+
+**The other two, both found late and both in the same file:** its headline causal claim was stated
+**flat in eight places** while the same document hedged **twelve** comparable rankings — and a
+*borrower* carried the hedge; and its framing of the underlying error was corrected by a borrower
+that already said *"both going is not always the error."*
+
+### The census this suggests — and why the obvious implementation does not work
+
+The check is: **for every owned claim, does any borrower state it more carefully than the owner?**
+It is mechanical and cheap, and it would have caught all four before anyone was dispatched.
+
+⚠️ **The naive implementation was run and is not usable as a gate.** Every 6-word shingle appearing
+in ≥2 documents, classified by whether a hedge marker sits within ±320 characters: **21,733 shared
+phrases, 432 "hedged here, bare there"** — and most are **shared boilerplate**, not shared claims
+(*"USA Hockey Official Rules and Casebook"*, *"find out which one your team plays"*), where the
+"hedge" is an unrelated disclosure that happens to be nearby. **A phrase shared between documents is
+not a claim shared between documents, and shingles cannot tell them apart.**
+
+**It is still worth keeping as a worklist**, because real claims do surface in it — but it needs a
+**claim-extraction step**, not a phrase match. ⚠️ **And it must never be swept**: ranking these and
+then offering to fix them is exactly how round 44 manufactured a divergence that did not exist.
+
+⚠️ **And note which direction each defect ran, because they are opposites.** The KHL case is a
+**disclosure that failed to propagate**. The above-the-puck case is an **owner whose own form was
+wrong while its borrowers were right** — the ownership rule satisfied backwards, qualifications
+flowing *toward* the owner instead of from it. **Check the owner against its borrowers, not only the
+borrowers against the owner.**
+
+## What may go in a Sources trailer, and what may not
+
+The site renders the Sources block as `<details class="sources">` **with no `open` attribute**. A
+reader who never clicks the triangle never sees a word of it. **22 lines across 14 documents carry a
+⚠️ inside one.**
+
+> **A Sources trailer may warn you about how to read a source. It may not warn you about what
+> happens on the ice.**
+>
+> **Operational test.** Strip the citation apparatus and read what remains. If the residue is a
+> proposition of the form *"doing X is a penalty"*, *"X is permitted"*, or *"this applies only at
+> level Y"*, it is **body content** — put it in the body, in that section's facts block, and in
+> Common Mistakes if it changes a decision made under pressure. If the residue is *"this rule number
+> is ambiguous"*, *"this quotation belongs to document A not document B"*, *"only these rules were
+> read"*, or *"this edition superseded that one"*, it is **bibliographic** and belongs where it is.
+
+⚠️ **The decisive question is what a reader who never opens the triangle believes.**
+**Provenance notes fail safe** — not reading one leaves you with a correctly-stated rule of unknown
+vintage. **Scope notes and penalty notes fail unsafe** — not reading one leaves you confident about
+a rule that does not apply to you, or unaware of a penalty you are about to take. ⚠️ **Anything in
+the second class is a collapsed safety caveat and is a critical, not a formatting preference.**
+
+**Worst offenders found, ranked by hazard** — each read, not pattern-matched:
+
+1. **USA Hockey 640(b)'s *"(except Adult Male Classifications)"* scope, beside 602(a)'s match penalty
+   for *"recklessly endangers or attempts to injure"*** — in three documents. **A classification
+   restriction on a checking rule, and a match penalty, inside a bibliography.**
+2. **The four cumulative conditions for a legally finished check**, ending *"It is not acceptable to
+   skate one or two more strides after…"*, self-labelled *"a reading of its grammar, not something
+   the passage states."* The operative legality test for a hit — **plus its honest disclosure** — in
+   the trailer.
+3. ***"A hand closed on a puck that is in the crease is the penalty shot or optional minor"*** — in
+   **three** documents. Zero bibliographic residue.
+4. **USA Hockey 639(a)'s poke-check Note and the Casebook's limit on it** — determines whether a
+   stick between the legs is a trip. ⚠️ **A mixed case:** *"which lives in the Casebook rather than
+   the playing rules"* is legitimately bibliographic; **the substance it introduces is not.** Split
+   them rather than moving the whole line.
+5. **Rule 8.5's goaltender-interference carve-out**, under which a teammate's goal *"WILL BE
+   ALLOWED"* — the difference between a disallowed goal and an allowed one.
+
+⚠️ **Named explicitly so a fix pass does not overcorrect — these are correctly bibliographic and
+must stay:** the *"Rule 6.11(b) carries two separate i./ii. lists, so '6.11(b)(ii)' names two
+different rules"* citation-resolution note; *"Cite the 6: Table 14 has two D rows"*; the attribution
+corrections (*"that sentence is the Declaration's and the Glossary's, not the Standard of Play's"*);
+and every `Edition note` / `In-House note` / `Verification note`. **They fail safe.**
+
+**One collision this rule does not resolve, flagged rather than decided:** two of those correctly-
+bibliographic notes narrate the project's own history inside `content/` — *"This document said 'no
+window at all' under USA Hockey until August 2026"*. **That is non-negotiable 6 colliding with
+non-negotiable 4**, and the disclosure is real. Not a removal candidate without a decision.
+
+⚠️ **The census behind this is known-incomplete, and its blind spot is the same defect twice.** It
+caught only markers on lines whose paragraph *begins* with an enumerated trailer prefix. **A
+safety-relevant qualification written into a Sources paragraph WITHOUT a ⚠️ glyph is invisible to
+it** — and the callout-colour defect below proves authors were not consistent about typing one.
+
+## Callout colour is decided by a glyph, not by content
+
+`site/src/plugins/remark-corpus.mjs` types callouts on `WARNING_RE = /^\s*(⚠|❗|🚫)/u`. **The panel
+colour therefore records whether the author typed an emoji, not how dangerous the content is.**
+
+⚠️ **On `body_contact_and_battles.md`, the corpus's highest-hazard document, that produced an
+inverted hierarchy.** Enumerating every blockquote: **four penalty statements rendered green** —
+including *"everything below is a penalty, and it is not capped at a minor"* and *"blade on the ice
+does not mean it cannot be a cross-check. That is NOT the rule"* — **while the amber panels were the
+British age question and a caveat about a statistic.** A reader scanning for what will get them
+thrown out reads the amber panels.
+
+**The fix is per-blockquote and must not be swept: if every callout is amber, none is.** Informational
+and data blockquotes are correctly green and stay green.
+
+## ⚠️ In a `Never:` value, an em dash may introduce a REASON but never an INSTRUCTION
+
+**The single most dangerous sentence shape this corpus has found.** `md_to_speech.py` renders
+`Never:` as **"Never —"** — deliberately, so the negation reaches the verb. ⚠️ **That correct fix
+creates a trap: a second em dash in the same value is prosodically identical to the first**, so a
+listener who has just learned that *"Never —"* governs the clause after a dash carries it across the
+second one.
+
+**The instruction inverts.** Measured from the rendered SSML, not reasoned about:
+
+| Rendered | What a listener can hear |
+|---|---|
+| *"Never — Play on if you are hurt — **stay down and let play be stopped**."* | ⚠️ **never stay down and let play be stopped** — said of a hurt player |
+| *"Never — Take that contact with your back to the boards — **skates parallel to the wall, forearm and hip**."* | **never get your skates parallel** — i.e. take it head-first |
+| *"Never — Put a leg behind an opponent — **keep your leg in front of you**."* | **never keep your leg in front** — the slew-foot mechanism |
+
+**The rule:**
+
+> **In a `Never:`, `Priority:` or `Risk:` value, an em dash may introduce a REASON. It may not
+> introduce an INSTRUCTION. An instruction takes a full stop and the word *"instead"*.**
+
+**Both conventions already exist in the corpus** — 25 facts values carry an internal sentence break
+and 8 `Never:` values use *"instead"* — **so this invents nothing and costs about eight characters.**
+The repaired form:
+
+> `Never: Take a check with your back to the boards. Get your skates parallel to the wall instead and
+> take it on your forearm and hip, head up, chin off your chest`
+
+⚠️ **Two censuses, two definitions, and neither is "the" number.** A coordinator scan of the
+*Markdown* counted **45 values across 21 documents**. An agent's scan of the *rendered SSML*,
+requiring a lower-case verb after the dash, counted **59 across 22** before its repairs. **Its own
+verdict: *"Treat the two figures as two measurements with different definitions, not as a
+correction, and do not quote either without its method."*** ⚠️ **Quote the method or quote neither.** Most are
+penalty-critical rather than injury-critical — inverting *"— take the puck, take the ice, or angle
+them off it"* removes the legal alternative to a hit from behind — but the shape is the same
+everywhere. **Fix the injury-bearing ones on sight; the rest are a worklist, not a sweep.**
+
+⚠️ **AND NOT ONLY THE FACTS LAYER. The defect is in PROSE too.** A Common Mistakes bullet —
+**outside any facts fence** — rendered as ***"Never — go behind the net."*** Voiced standalone, that
+instructs the reader to do the thing the corpus most repeatedly says not to do. **Every sweep brief
+written before that discovery was scoped to ` ```facts ` and could not have found it.** The agent that
+did: *"I found it only by grepping the emitted SSML for `Never —`, which does not distinguish the
+layers."*
+
+⚠️ **So sweep the RENDERED DOCUMENT, not the Markdown, and not one layer of it.** Body prose, Common
+Mistakes, Key Takeaways and facts blocks alike.
+
+⚠️ **Repairs have now been needed under TEN labels** — `Never:`, `Action:`, `Priority:`, `Mindset:`,
+`Key:`, `Convention:`, `Risk:`, `Read:`, `Technique:`, `Position:` and `Rule:` — **and in unlabelled
+prose.** ⚠️ **Two inverted the corpus's own HEDGES** (*"not a measurement — treat any claim as an
+impression"*), so **the honest-disclosure layer is inside this defect's blast radius too.**
+
+⚠️ **And the find rate is the argument for reading rather than grepping.** Predicted 9, found **33**.
+Predicted 11, found **26**. ⚠️ **The agent that found 26: *"my first heuristic scan missed one on the
+verb 'aim', and my second missed nothing only because I read all 172 printed tails by eye."***
+
+⚠️ **Grep the SHAPE, not the label.** Two instances sat under `Technique:` with the negation **inside
+the value** (*"…and never your back to the boards — get your skates parallel…"*), which a `Never:`
+grep never reaches. **Two more were in Common Mistakes and Key Takeaways**, which no facts grep
+reaches at all.
+
+⚠️ **And one inverted a CROSS-REFERENCE.** *"Never — Move a player who has gone down… — that is the
+spinal-injury section above"* reads as ***"never see the spinal-injury section above"*** — a pointer
+away from the only spinal-injury treatment in the corpus, attached to the fact that tells you not to
+move a downed player. ⚠️ ***"Instead"* is nonsensical for a cross-reference**; the repair is to make
+the clause **declarative**, so there is no imperative left to invert.
+
+⚠️ **Two of the boards-posture instances additionally drop *"chin off your chest"***, which is the
+cervical-spine half and the component the walking-speed finding attaches to. **Check for a missing
+component whenever you repair one of these**, because the same compression produced both.
+
+**And note how it was found: by running the renderer and READING THE OUTPUT.** No checker sees it,
+no reading of the Markdown suggests it, and the author who wrote `_label_lead` could not have
+predicted it. **`md_to_speech.py --only <doc>` is a review instrument, not just a build step.**
+
+## ⚠️ The em dash is one of THREE shapes, and the other two have no dash at all
+
+The `Never:`-plus-em-dash inversion is the shape everyone finds first. Two more were
+measured after it, and each defeats the scanner built for the one before.
+
+**1 · Em-dash inversion.** `_label_lead` renders `Never:` as `"Never — "`, so a *second* em
+dash is prosodically identical; the negation carries across it and the instruction after it
+inverts.
+
+**2 · Post-dash imperative, NO NEGATION ANYWHERE.** A label, a context clause, a dash, and a
+bare imperative **naming the hazardous act**:
+
+```
+Risk: The middle is the most expensive place to lose the puck — turn and survey there …
+Rule: Blocking a shot is protected — drop to your knees and have the puck shot under you …
+```
+
+The second sat in a block whose **next fact** said *"close and on your feet"* — two
+consecutive standalone paragraphs contradicting each other, riskier one first. No
+negation-filtered scan can see either.
+
+**3 · Post-label imperative, NO DASH ANYWHERE.**
+
+```
+Rule: Play the puck first and trip him in the process and it is a minor, not a penalty shot
+Risk: Go early or slide past the lane and you are on the ice and out of the play
+```
+
+Voiced, the first is *"Rule. Play the puck first and trip him in the process…"* — **an
+instruction to trip an opponent.**
+
+⚠️ **`_label_lead` special-cases `Never`.** It renders `"Never — "`, not `"Never. "`, so
+**shape 3 does not fire on `Never:` facts at all** — the label's own dash governs what
+follows, which is the whole reason `Never:` works. It fires on every other label: `Risk:`,
+`Rule:`, `Action:`, `Read:`, `Technique:`, `Goal:`, `Priority:`, `Convention:`.
+
+**Two things must BOTH hold before repairing shapes 2 or 3**: the clause is an imperative,
+**and the act it names is the hazardous or wrong one.** A post-label imperative naming the
+*desirable* act is correct and common — `Risk: Win three straight draws to the same
+defenceman and the fourth will be jumped` was read and left on exactly that ground.
+
+**The repair is the DECLARATIVE**, traceable to a body sentence in the fact's own section. A
+declarative cannot be heard as an instruction at all, which is a stronger guarantee than a
+full stop. Where a rulebook is the source, its own frame is already declarative and is the
+right one to take.
+
+### And the finder that beats all three shapes is not a shape
+
+Extract every non-`Rule:` facts value carrying **hazard vocabulary, regardless of
+punctuation**, and read them. That found:
+
+```
+Technique: Face the wall with the puck below your body and your back to the ice
+```
+
+— an instruction to put your back to the play at the boards, with the counterweight present
+in the body and absent from the block. **No dash of any kind.** A vocabulary list is still a
+list, and its own users recorded the limit: *"a hazardous imperative phrased entirely in
+stick-and-puck words, or one about equipment, fatigue or concussion, would not have been
+caught."*
+
+---
+
+## ⚠️ How a grep lies about a source — every one of these produced a false absence
+
+A false absence is how a negative existence claim gets written. **Every entry below was
+observed here; none is hypothetical.**
+
+⚠️ **No count is given, and none should be added.** This heading read *"Four ways"* and this
+line read *"All four were observed"* while the list stood at **seven** — the list grew and the
+number did not, in the document that teaches numbers go stale away from their owner. **A count
+in a heading is a second copy of the list, and the copy is what rots.**
+
+1. **Hyphenation joins across line breaks.** Plain `pdftotext` output splits words at the
+   margin.
+2. **Form feeds.** Python `splitlines()` splits on them and `sed` does not, so the two
+   disagree about the same file by over a hundred lines. Use `split('\n')`.
+3. **A citation form that never appears contiguously.** `624(b)(1)` returns **zero** hits in
+   USA Hockey's text: the book prints `Rule 624` as a heading, `(b)` on its own indented line
+   seventeen lines later, and `(1)` under that. **The citation is a reconstruction of the
+   book's structure.** Verify the quoted *text*, not the citation string.
+4. **`grep -o` with a wide context window on a flattened single-line file returns ZERO for
+   text that is present.** Python `re.finditer` over the same file finds it immediately.
+5. **Hard-wrapped prose in `content/` itself.** A sentence as it reads spans two lines, so a
+   census run against the sentence finds nothing while a census run against half of it finds
+   every instance.
+6. **An appendix that interleaves two columns**, so a search string spans description-column
+   text. `loss of goal only` returns zero because the row reads `A minor penalty is not
+   assessed (loss of` … description text … `goal only)`. **This one produced a recorded finding
+   that was wrong** — the table was declared unverifiable by grep in any extraction, and it is
+   not.
+7. **Mid-line hyphenation with a following space**, from PDF justification: the IIHF book prints
+   *"the defending team may **coun- ter** and hold its position"*. ⚠️ **A de-hyphenation regex
+   matching only `-\n` does not repair this** — collapse `- ` as well. The NHL twin of the same
+   sentence has *"may counter"* intact, so a cross-book comparison hides it too.
+
+8. ⚠️ **The file you grepped may not contain the book.** `sources/heo_intl_drill_symbols.txt`
+   is **30 bytes** — the title and nothing else, because the PDF is a scan. A grep for a player
+   symbol in it returns zero, and the symbol is on the page. Worse, a book can be **registered
+   and absent**: `carha.txt` had a row in `sources/README.md` *and* in `scripts/fetch_sources.sh`
+   while no such file existed on disk. **Registration is not existence, and existence is not
+   content.** `wc -c` the extraction before you trust an absence in it.
+
+**Flatten and de-hyphenate before asserting any absence**, and attack a negative **by
+concept, not by phrase** — a confident phrase-census once missed the book with the strongest
+version of a rule because it worded the remedy differently.
+
+---
+
+## Rulebook evidence and injury evidence are different claims — never merge them
+
+A rulebook declining to grade an offence by force tells you **what gets penalised**. Injury
+literature tells you **what hurts**. They support different sentences and the corpus must not
+present one as the other.
+
+The case that established it: *"No speed is slow enough to make either safe"* was attached to
+**both** limbs of the boards prohibition. Measured —
+
+- **The ducking limb is confirmed at full strength.** *"A player doesn't have to be going at
+  full speed for this to happen — it can occur at walking speed"*, and the source ties it to
+  the ducking rule in the very next sentence.
+- **The turned-back limb is not.** The strongest text available is *"even a light hit from
+  behind **could inflict** a severe head or neck injury"* — a **possibility** claim, which
+  cannot carry a **universal** one. And both passages instruct the **checker**, not the
+  player who turns.
+
+⚠️ **The corrective direction is toward PRECISION, never toward weakening.** A reader who
+concludes *"so a slow hit from behind is fine"* is the failure that matters. Both
+prohibitions stay absolute; what changes is which evidence is attached to which. And note the
+listener risk in writing it: **two clauses of differing strength can be heard as the weaker
+one granting permission.**
+
+---
+
+## What is actually voiced alone — measured, not assumed
+
+**The corpus's central premise is that text is heard "standalone, with no surrounding context."**
+That is true of some layers and **not** of others, and until 29 August 2026 nobody had run the
+renderer to find out which. **Measured** by running `md_to_speech.py` over a real document and
+reading the SSML:
+
+| Layer | How it is voiced | Standalone? |
+|---|---|---|
+| A ` ```facts ` line | its **own `<p>`**, introduced by *"The key facts for this section."*, with a **300 ms break** either side | ⚠️ **YES** |
+| A section heading | its own `<p>` with a 450–1000 ms break | **YES** |
+| A **bold numbered principle** (`**3. Never both defencemen on the puck.**`) | **merged into its paragraph** — *"three. Never both defencemen on the puck… One defenceman engages, the other stays home."* | **NO** |
+| Body prose | one `<p>` per paragraph | per paragraph |
+
+⚠️ **So the "read aloud alone" argument is exactly right for facts lines and headings, and wrong for
+a bold numbered lead-in.** A listener hears a numbered principle **and its qualification in the same
+breath group**, so a principle stated flat and walked back in the next sentence is not the
+read-aloud hazard it looks like on the page.
+
+⚠️ **This was established as a coordinator handover, and it downgraded a finding.** A reviewer
+raised a flat principle heading as a **Major** on the stated premise that *"headings are what
+`md_to_speech.py` reads aloud as standalone units"* — and said plainly it had **not opened the
+script or run it**. Running it made the finding a **Minor**. **The repair was still right**, on two
+grounds the reviewer had not used: it makes the heading agree with its own facts block, and on the
+rendered site a bold lead-in is a **visual scanning target**, read by a skimmer with nothing around
+it even though a listener hears it in context.
+
+**Use this table before arguing severity from the audio.** *(A single linear track: one document
+renders to ~60 chunks with an `index.json` recording billed characters. There is no separate
+key-facts track — the facts blocks are inline, which is why their 300 ms isolation matters.)*
+
+## When the rulebook itself contains a typo
+
+Printed rulebooks contain errors. **Five are known, in four different books:**
+
+| Book | Rule | What it prints | Should read |
+|---|---|---|---|
+| NHL | **76.7** | *"When a least two face-off violations…"* | "at least" |
+| USA Hockey | **618(a)¶3** | *"prevents and obvious and imminent goal"* | "an obvious" |
+| IIHF | **76.7** | *"When two (2) "face-off" violations" have been committed…"* | a stray unmatched closing quote after *violations* |
+| Hockey Canada | **6.7(d)(iii)** | *"as per **Rule 6.18 – Time of Game**"* | **Rule 6.17** is Time of Game. **Rule 6.18 is Goaltender Safety**, tagged `NEW` in this edition — a cross-reference left behind by the renumbering |
+| USA Hockey Casebook | signal index | *"**610(h)** Continued improper line change during stoppages"* | **Rule 610 runs (a)–(g). There is no 610(h).** The provision is **610(g)** |
+
+The first three are the books', not extraction artefacts — each confirmed against two independent
+extractions, and the NHL's additionally against a 600-dpi render of the printed page.
+
+⚠️ **The Hockey Canada one is a different and more dangerous species: a WRONG POINTER, not a
+misspelling.** A misspelling is self-evident; a stale cross-reference **resolves successfully to the
+wrong rule.** A reader chasing 6.7(d)(iii) lands on *Goaltender Safety* and can only conclude that
+the corpus, which correctly cites **6.17(e)** for the 30-second time-out, has the number wrong.
+⚠️ **So the corpus is right and the book that appears to contradict it is the thing in error** —
+which is the exact reverse of the assumption a verification pass runs on. **Cite 6.17(e). Do not
+"correct" it to 6.18, and say why if the discrepancy is likely to be re-found.**
+
+⚠️ **This was found as a coordinator handover, not by a check.** An agent noticed the two numbers
+disagreed across documents it did not own, **declined to adjudicate because it had read 6.7(d) but
+not 6.17 or 6.18**, and flagged it as a lead rather than a finding. **That refusal is what made it
+resolvable** — a guess either way would have had a 50% chance of writing the book's own error into
+the corpus.
+
+⚠️ **Note that the NHL's and the IIHF's are the same rule number and a different error.** The two
+books' 76.7 say materially the same thing and are typo'd differently — so *"match the sibling
+book's wording"* is not available here, and a sweep that harmonised them would fabricate a
+quotation **in whichever direction it swept.** This was nearly done: an agent sent to apply the
+NHL 76.7 rule to a document discovered the citation was **IIHF** 76.7, and that carrying the NHL's
+wording across would have manufactured the error rather than repaired it.
+
+**Quoting such a sentence "correctly" is a fabricated quotation.** It is the one case where
+fixing the grammar is the defect.
+
+Three handlings, in order of preference:
+
+1. **Paraphrase, and cite the rule number.** Where the corpus needs the rule's *content* and not
+   its wording, do not quote the sentence at all. State the rule plainly, cite it, use no
+   quotation marks. Zero fabrication risk and nothing for a listener to trip over. This is the
+   default. `special_teams.md` does it for NHL 76.7.
+2. **Quote a different rule that says the same thing cleanly** — but then attribute the quotation
+   to *that rule alone*. Never cite the quoted words against the typo'd rule number as well.
+3. **Quote verbatim with `[sic]`**, where the exact wording is the point — the owning document, a
+   disputed passage, or a cross-book divergence. Place `[sic]` immediately after the erroneous
+   word, and follow the quotation with a plain sentence saying what the book meant. ⚠️ **Prime
+   the listener before the quotation opens** (*"quoted here exactly as printed, dropped word and
+   all"*): `md_to_speech.py` voices `[sic]` as *", as printed in the original,"*, so an
+   unannounced one lands mid-sentence on a listener who has no context.
+
+**What a sweep must never do:**
+
+- **Never "correct" a quotation on the strength of its grammar.** A rulebook quotation that reads
+  as a typo is presumed the book's until the printed page has been checked. Silently repairing it
+  manufactures a fabrication in a document whose whole claim is verbatim accuracy.
+- **Never remove or relocate a `[sic]`.** It is the marker that stops the next sweep, and
+  `md_to_speech.py` carries a regression test pinning the one instance in the corpus.
+- **Never attach a quotation to a second rule number because that rule "says the same thing."**
+  Substantively equivalent is not verbally identical, and a reader who greps the cited rule finds
+  different words.
+
+*The failure this prevents, and it is live:* the corpus quotes *"has prevented an obvious and
+imminent goal"* from **USA Hockey 614(b)**, which prints it correctly. Several documents cite
+**618(a)** against those same words. **618(a) is a different sentence and prints *"prevents and
+obvious and imminent goal"*.** A reader who checks 618(a) finds the quotation is not there —
+which reads as invention rather than as the book's error. ⚠️ **Note how this was found: an agent
+sent to reconcile three inconsistent typo treatments discovered the third was not a typo
+treatment at all.** The brief's load-bearing premise was wrong, and refuting it turned a
+style question into a misattribution defect.
+
+**A sixth, found at the fourth gate pass.** Hockey Canada Rule 6.9(c) prints
+***"In Minor of Female divisions"*** — *of* for *or*. A brief relayed it silently repaired as
+*"Minor **or** Female"*, and the agent that checked it against the book **paraphrased rather
+than quoting**, so the corpus neither reproduces the book's error nor silently corrects it, and
+recorded the slip as a citation-resolution note in its Sources block.
+
+⚠️ **That is the handling to copy.** Quoting it propagates a typo; fixing it inside quotation
+marks is a fabricated quotation. **Paraphrase, and say why in Sources.**
+
 ## Terminology precision
 
 This project teaches vocabulary, so be exact. Distinctions that are commonly conflated:
@@ -600,6 +1211,110 @@ This is worse than an ordinary gap, because the pointers make the corpus *look* 
 
 Verifying that an owner *contains* a fact is not the same as verifying it states it *well*. `special_teams.md` was patched to hold the shorthanded-icing rule — and then stated it in a form that reads backwards aloud: **"The kill cannot ice the puck."** True only if you supply "be called for"; false as a sentence. This corpus is fed to a podcast generator, so **every rule statement must survive being read aloud with no surrounding text.** Check both: does the owner hold it, and does the owner say it right?
 
+## ⚠️ Extract-never-author and verify-in-primary-text pull against each other
+
+**"A fact must trace to a sentence in its own section"** stops a fact being invented. **"Verify
+every rule claim in the primary text"** stops a rule being wrong. When the **body itself is
+wrong**, the first rule tells you to propagate the error and the second tells you not to.
+
+**This is not hypothetical.** A `goaltender.md` bullet asserted that on a goalkeeper freezing
+the puck outside the crease, *"the IIHF book says so in terms… **the NHL leaves that to be
+inferred**."* The NHL says it in terms — it is the second sentence of Rule 63.2(i): *"With
+regard to a goalkeeper, this rule applies outside of his goal crease area."*
+
+The agent's own account is the rule:
+
+> *"It surfaced only because I grepped the NHL book to verify a rule I was about to extract. **If
+> I had trusted the body, as extract-never-author tells me to, I would have propagated the error
+> INTO the block.** Extract-never-author and rules-verification pull against each other, and this
+> round the body lost."*
+
+**The resolution, in order:**
+
+1. **Verify the rule in primary text first.**
+2. **If the body is wrong, fix the body.**
+3. **Then extract.**
+
+**Extract-never-author governs what a fact may say that its section does not. It does not
+license extracting something false.** A body sentence is evidence of what the document
+believes, never evidence of what the rulebook says.
+
+⚠️ **And the corollary for reviewers: a clean traceability pass proves nothing about
+correctness.** It cannot detect a section that never contained the exception, or one that
+contained it wrongly. Both layers can agree and both be wrong.
+
+---
+
+## A repair is new text, and new text has not been reviewed
+
+**Across rounds 52 and 53 one defect shape was found again and again, by search method after
+search method — and nearly every instance had been created by the repair for the previous one.**
+The shape was a two-part rule stated in its true half. The sweeps kept seeding the next instance:
+three of the units at the last confirmed site had been written by the pass that closed the one
+before it, and one of them refuted itself inside a single sentence.
+
+⚠️ **No count is given here, and none should be written.** The owners are round 52's record and
+round 53's, and the plan holds a further candidate **deliberately open** rather than counted —
+so any total stated here is stale the moment that row moves. This sentence has carried a wrong
+figure twice, in the file that defines the rule against carrying one.
+
+A search can only run against text that already exists. The repair you are writing does not exist
+yet, which is why the two rules below are worth more than another search.
+
+### Re-read your own edits before you finish
+
+**Before you finish, re-read your own edits and ask whether any of them states one half of a
+two-part rule.** If one does, fix it before you ship it — and **say in your report that you caught
+it**, because a self-catch is evidence about the method and the next round needs it.
+
+**Agents caught themselves this way repeatedly across rounds 52 and 53**, every one of them while
+repairing an earlier instance. ⚠️ **No total is given here on purpose.** The owners are round 52's
+record and round 53's §*"Agents that caught themselves"*; a count copied out of them goes stale the
+moment either is extended, and this sentence carried a wrong one — *"ten"* — into the file that
+defines D8, in the round whose own plan row said to reconcile it first. One found **five** in its own draft before finishing, including a
+sentence that stated the goalie's limb of a rule and left the goaltender's own exposure out. Another
+found a defect at six sites in its own first draft. A third caught a paragraph lead that contradicted
+a clause it had just added below it.
+
+⚠️ **Do not over-claim this — the plan row that commissioned this section did, and `commit-gate`
+judged it unsupported.** It said the self-check *"out-performed every search"*, and the measurement
+does not support that — and neither does any figure, including the ones written here to correct
+it. ⚠️ **This paragraph has now carried three different totals for one measurement**, and
+`commit-gate` blocked the commit twice over them.
+
+**The reason no total is right is worth more than any of them.** The plan holds a further
+instance as a **deliberately open candidate**, not a counted one — so a confirmed total and a
+total-including-candidates differ by one, permanently, and every figure written here is wrong
+against one of them. **Read the owning records; do not restate a number from this file.**
+**The defensible claim is the better one.** A search is retrospective — it runs over text already
+written, already committed, already reviewed at least once. The self-check is **prospective**: it
+runs in the window between writing a sentence and shipping it, over text no search has seen yet.
+The mechanical checkers are prospective too — `check_absolutes.py` blocked two agents' own drafts
+mid-round in round 52 — but **none of them can see a missing half.** This is the only prospective
+check that reads for meaning, which is why it belongs in the specification and not in a brief.
+
+### "Match the existing correct treatment" is not a safe instruction
+
+A brief that tells you to match how another document states something is naming a **hypothesis**,
+not an authority. **Three passages nominated as the model to copy in rounds 52 and 53 carried the
+very defect they were nominated to cure** — `rules_primer.md`'s closed-hand-on-the-puck bullet,
+twice, at two separate gate passes, and `center.md`'s facts line. The sharpest of them stated USA
+Hockey's crease escalation while leaving the NHL and IIHF limb flat, so naming one book's
+escalation and no other's positively implied the other three do not escalate: **worse than a bare
+omission, in the file nominated as the cure for exactly that failure.**
+
+In all three cases the agent sent to copy the model read it, found the defect and fixed it instead
+of propagating it. **Each of them thought of that independently, and the instruction must not
+depend on that.** So, when you are told to match an existing treatment:
+
+- **Verify the model against `sources/` before you copy it.** A named model is checked the same way
+  a number is checked against its owner.
+- **If it holds, match it — and say what you checked.**
+- **If it is wrong, fix it and say so**, both that you did not copy it and what you changed.
+
+Copying an unverified model is how one defect becomes two identical ones with an argument from
+consistency standing behind them.
+
 ## A clean review round is a statement about the round, not the corpus
 
 Round 9 of this corpus's review returned **zero critical defects**. Round 10 then found **three criticals and about twenty majors** — including a rules claim readers would act on (that a stick in your skates is a penalty only if you actually fall, false in all four rulebooks) and two documents denying, in their own sources' names, what those sources say.
@@ -637,7 +1352,7 @@ Four review rounds missed it, for a structural reason worth internalising:
 
 > **A negative existence claim is unfalsifiable by ordinary review.** Checking that quoted claims match their sources can never catch a claim that no source exists. It has to be attacked directly.
 
-So, three rules:
+So, five rules:
 
 1. **Before writing "no study exists", "could not be verified", or "untraceable" — search properly, and check the working directory and your own Sources list first.** The pattern recurred: `equipment.md` disclaimed the helmet-replacement guidance as unsourced while the Hockey Canada certification bulletin that states it *was already hyperlinked in that same file's source list* (see the note at the foot of that document). If you are about to say something can't be sourced, read your own references before you write it.
 2. **A 403 is not an absence — but a 200 is not a presence.** USA Hockey, CSA, ISO and Nature all reject WebFetch and serve fine to `curl` with a browser user-agent, so several "could not be verified" notes were artefacts of tooling rather than missing evidence. Retry before you disclaim.
@@ -647,7 +1362,60 @@ So, three rules:
    **And check the text is actually *published*, not merely present in the HTML.** A quote attributed to a league's site — *"from co-ed to 50+, beginner to pro"* — existed only inside an **HTML comment**, in a commented-out block still advertising the **2019/20** season. It was in the source, so a naive grep found it; it was not on the page, so no reader would ever have seen it. Grepping raw HTML is not the same as reading the rendered page. Strip comments, or verify against what actually renders.
 
    **Watch for cherry-picked rows, too.** The same document quoted a programme as *"a four-session block, CAD $148.00"* — the shortest and cheapest of **ten** listings running 4–14 sessions and $148–$444, presented as the shape of the thing. A true quotation of one row is still a false picture of the page. Quote the range, or say which row you took.
-3. **Never delete a claim merely because it is unsourced — source it or label it.** A tidying pass has already removed a *correct* fact from this corpus (the BNQ 9415-370 withdrawal, which was true), because it looked unsupported. Deletion is not the safe default; it is a silent way to lose information. The same applies when consolidating duplicates: check that a passage really is duplicated before cutting it. One dedupe brief would have orphaned the Rule 67.4/67.5 crease-cover material, which lived in one document only and had simply been filed under the wrong heading.
+3. ⚠️ **A negative search cannot find adverse authority phrased in different words — and a
+   verification note built out of negative searches inherits that blindness.** Found 29 August 2026.
+   A document argued that an IIHF exception stands because **neither rule contains the word
+   *"only"***, and supported it with a verification note reporting four negative searches, each
+   honest. **The Situation Handbook does contain it, against that reading** — Situation 81.7: *"No.
+   **Only time** a line change is permitted is when a penalty is assessed which affects the on-ice
+   strength of either team."* ⚠️ **A grep for the exception's own name returns nothing there, because
+   81.7 contradicts the exception without naming it.**
+
+   **So: when you have searched for a claim's *subject* and found nothing, you have not yet looked
+   for anything that contradicts the claim's *reasoning*.** Search for the load-bearing word itself,
+   search the rule's siblings, and read the whole run rather than grepping it. **Two independent
+   readers reached 81.7 and only the second saw it as authority owed to the reader** — the first
+   judged it too loose to be worth reporting, which was right about the looseness and wrong about
+   the omission. **Looseness does not make adverse authority omissible; it makes it adverse
+   authority you characterise.**
+
+   The same shape applies to the corpus's own citation boundaries. ⚠️ **A rule's sub-section is not a
+   search boundary.** A safety pass found a bench-minor rule the corpus has never cited **only
+   because it printed all of Rule 82 rather than the sub-section it was asked about** — and said
+   plainly that windowing to the question as framed *"would have returned 'yes, it's only a warning'
+   — the exact false clearance this dimension exists to prevent."* **Read the siblings of every rule
+   you cite.**
+
+4. ⚠️ **A phrase census is not a concept census, and the difference produced a confident, honestly
+   obtained, wrong `0/0` in this project.** An agent searched all thirteen rulebook extractions —
+   de-hyphenated and whitespace-flattened first — for *"does not leave immediately"* and
+   *"possibility to stop"*, to test whether a crease-vacating stoppage existed outside the IIHF. It
+   reported **NHL 0/0, Hockey Canada 0/0, USA Hockey 0/0, USA Hockey Casebook 0/0**, and concluded
+   the provision was IIHF-only.
+
+   ⚠️ **USA Hockey has the STRONGER version and it is mandatory.** **Rule 625(b):** *"A face-off
+   **shall** be conducted at the nearest neutral zone faceoff spot any time an attacking player
+   stands, holds their stick, or skates through the goal crease…"* — a duty where the IIHF's is a
+   *"possibility"* — confirmed in Casebook Situations 7, 10 and 11 and in Appendix II's face-off
+   table. **The census could not see it because USA Hockey expresses the same remedy in entirely
+   different words.**
+
+   The second agent found it *"only because I searched by **concept** after the phrase census said
+   zero."* ⚠️ **The method was sound, the flattening was right, the counts were real — and the
+   conclusion was false.** That combination is what makes this class dangerous: **a negative built
+   from good phrase hygiene looks like a verified negative.**
+
+   **So: for any claim of the form "no other book has this", the phrase search is the first step and
+   never the last.** Search the concept — what the rule *does*, not how one book says it: the remedy
+   (*face-off*, *stoppage*, *goal disallowed*), the trigger (*crease*, *stands*, *leave*), and the
+   rule's siblings. Check the book's **summary tables and index**, which routinely carry a provision
+   the prose words differently. **And validate the search itself** — run it against the book you know
+   has the rule and confirm it hits, which is what proved the NHL and Hockey Canada negatives here.
+
+   **The closing line of the agent that found it is the rule:** ***"the negatives I did not think to
+   attack by concept are the ones still standing."***
+
+5. **Never delete a claim merely because it is unsourced — source it or label it.** A tidying pass has already removed a *correct* fact from this corpus (the BNQ 9415-370 withdrawal, which was true), because it looked unsupported. Deletion is not the safe default; it is a silent way to lose information. The same applies when consolidating duplicates: check that a passage really is duplicated before cutting it. One dedupe brief would have orphaned the Rule 67.4/67.5 crease-cover material, which lived in one document only and had simply been filed under the wrong heading.
 
    **The one case where deleting is right: a primary source contradicts the claim, and repeating it would be unsafe.** `time_and_space.md` carried a coaching cue that contact "goes through the hands". USA Hockey's rulebook names *"the use of the hands, forearm, stick or elbow in delivering a check"* as prohibited, three separate times. That is not a coaching disagreement to be presented as a split — it describes a penalty, and a reader acting on it gets hurt or ejected. Cut it, and say in the document's notes that it was cut and why. The test is whether a **source** contradicts it, never whether a source is merely absent.
 

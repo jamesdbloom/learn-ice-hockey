@@ -198,9 +198,53 @@ export default function remarkCorpus(options = {}) {
       // image's name and once as the caption. The <desc> is deliberately kept — it is
       // the only spatial description a non-sighted reader gets, and the obvious fix of
       // hiding the whole SVG would throw it away.
+      //
+      // ⚠️ WHEN THE BOX ACTUALLY SCROLLS IT IS A REGION, AND IT HAS TO BE REACHABLE.
+      // Only a full-sheet diagram overflows (`figure.diagram--full .diagram-scroll` is
+      // the one rule with `overflow-x: auto`), and at 375 px it shows 346 of the SVG's
+      // 640 — 54%. The rest was reachable only by dragging: no tab stop, no role, no
+      // name. `.table-scroll` has carried `tabindex="0" role="region" aria-label` since
+      // it was written, so this is that pattern, not a second one.
+      //
+      // The attributes are conditional rather than blanket, and that is deliberate: the
+      // other ~74 diagrams do not overflow, and giving every one of them a tab stop and
+      // a "scrollable horizontally" announcement would be 74 focus stops that scroll
+      // nothing — trading a real defect for a noisier one. The condition is the same
+      // `d.half === false` that adds the class below, so the two cannot drift.
+      // Split a caption at its first warning glyph. No glyph, no change — the common case
+      // is one text node exactly as before.
+      const captionNodes = (caption) => {
+        const at = caption.indexOf('\u26a0');
+        if (at < 0) return [{ type: 'text', value: caption }];
+        const before = caption.slice(0, at);
+        const warn = caption.slice(at).trim();
+        const nodes = [];
+        if (before.trim()) nodes.push({ type: 'text', value: before });
+        nodes.push(wrapper('span', { className: ['warn-inline'] }, [{ type: 'text', value: warn }]));
+        return nodes;
+      };
+      const scrolls = d.half === false;
       const kids = [
-        wrapper('div', { className: ['diagram-scroll'] }, [{ type: 'html', value: svg }]),
-        wrapper('figcaption', { 'aria-hidden': 'true' }, [{ type: 'text', value: d.caption }]),
+        wrapper('div', scrolls
+          ? { className: ['diagram-scroll'], tabindex: '0', role: 'region',
+              'aria-label': 'Diagram, scrollable horizontally' }
+          : { className: ['diagram-scroll'] },
+          [{ type: 'html', value: svg }]),
+        // ⚠️ A CAPTION CAN CARRY A SAFETY WARNING, AND THE CAPTION LAYER IS THE LIGHTEST
+        // TEXT ON THE PAGE. `figure.diagram figcaption` is 0.9rem in `--text-muted`, beside
+        // 17px `--text` body prose. A site review found a spinal-injury warning — "the
+        // head-down collision that ducking produces can break your neck at walking speed" —
+        // rendering as the faintest thing on its page, in four captions.
+        //
+        // The inline-warning pass above cannot reach these: captions come from
+        // `site/src/data/diagrams.json`, not from the markdown this plugin walks. So split
+        // the caption at the first ⚠️ and give the remainder the same `.warn-inline` run the
+        // prose pass uses, which lifts it out of `--text-muted` onto `--warn` with the amber
+        // ground and the left border. One mechanism, not a second one.
+        //
+        // Everything before the glyph stays muted caption prose — that half is describing the
+        // picture, and promoting it too would flatten the distinction this fixes.
+        wrapper('figcaption', { 'aria-hidden': 'true' }, captionNodes(d.caption)),
       ];
       if (away) {
         kids.push(wrapper('p', { className: ['diagram-source'] },
