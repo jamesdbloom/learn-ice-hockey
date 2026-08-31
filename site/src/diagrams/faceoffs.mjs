@@ -178,8 +178,13 @@ const dzoneAlignment = {
     'forecheck, and every team’s alignment differs, so find out what yours runs before your ' +
     'first shift. ' +
     'What is not a choice is the shaded circle: every player other than the two taking the draw ' +
-    'must keep both skates outside the circle and outside the hash marks, and skate contact ' +
-    'with the line is permitted while crossing it is not.',
+    'must keep both skates outside the circle and outside the hash marks. ' +
+    '⚠️ Whether touching the line is safe is not the same in every book, so do not carry one ' +
+    'book\u2019s answer into another league. Under the NHL and the IIHF, Rule 76.7, skate contact ' +
+    'with the line is permitted and it is crossing it that is illegal. Hockey Canada counts a ' +
+    'skate on the face-off circle as encroachment, and USA Hockey\u2019s Casebook requires all ' +
+    'sticks and all skates completely behind the hash marks — so under those two, keep off the ' +
+    'paint.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +

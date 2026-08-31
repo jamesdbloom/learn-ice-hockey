@@ -28,6 +28,57 @@ const WARNING_RE = /^\s*(⚠|❗|🚫)/u;
 // selector is part of ⚠️ and must be swallowed with it, or it is left behind
 // outside the wrapper and renders as a stray box.
 const WARNING_TAIL_RE = /(⚠|❗|🚫)\uFE0F?\s*$/u;
+// Shape (c): the glyph, a few words of ordinary text, then the strong run —
+// `⚠️ Under **USA Hockey Rule 630(d)** the only limb that reaches …`.
+// It is a rare shape — a handful of spans corpus-wide, not a class — and every
+// one of them previously rendered as plain black prose because of the
+// intervening word, some paragraphs away from an identical warning that got the
+// full treatment. Side by side the difference is unmistakable.
+// ⚠️ No count is written here on purpose. It moves whenever anyone writes a
+// warning, and a figure in a comment goes stale silently. Re-derive it instead:
+// every `.warn-inline` in dist/ whose text between the glyph and its first
+// `<strong>` is non-empty is a shape (c) match.
+// ⚠️ The comment here used to give a count, and used to offer as its second
+// example "this is this document's reading rather than something the book
+// states". That example is systems/forechecking_systems.md, and shape (c) does
+// not and cannot match it — its strong run PRECEDES the glyph, so there is no
+// strong run after the glyph to bound a wrapper. It was counted here and was
+// never covered here. See the rejected fourth shape below.
+//
+// ⚠️ AND THE SHAPE DOES NOT DECIDE WHERE THE WARNING IS. The wrapper ends at the
+// close of the strong run, so where the strong run is the CITATION rather than
+// the caution — `⚠️ Under **USA Hockey Rule 630(d)** the only limb that reaches
+// a forechecker at all …` — the colour lands on a rule number and the operative
+// instruction after it stays plain black. On a browser pass on 31 August 2026
+// that was all but one of the shape (c) spans in the corpus — the failure is the
+// NORM for this shape, not an outlier. It is arguably worse than leaving the
+// sentence unmarked, because it spends the emphasis on the part a reader does
+// not have to act on, in a corpus whose whole reason for colouring warnings is
+// that the instruction should not read as ordinary prose.
+// This plugin cannot fix it: which half of a sentence is the caution is a
+// question about the sentence, not about its markup. Three were repaired in
+// content by moving the bold off the citation and onto the caution and leaving
+// the citation in place unbolded (systems/breakouts.md ×2,
+// systems/game_management.md). At least one was outstanding when they were —
+// foundation/rules_primer.md, `⚠️ Under **Hockey Canada Rule 6.11(b)(ii)**` —
+// and whether it still is, this comment cannot tell you. Re-derive, and READ
+// each hit: a strong run that completes a claim rather than naming a rule is
+// correct as it stands and must not be swept.
+// ⚠️ So when writing a warning: put the bold on what the reader must DO, and
+// leave the rule number plain. Never drop the citation to make room.
+//
+// ⚠️ The comment below used to argue this case was unmarkable because "marking
+// those would mean guessing where the warning ends". That reasoning does not
+// survive contact with shape (b), which ALREADY ends its wrapper at the close of
+// the strong run. Extending to (c) guesses nothing new — it ends in the same
+// place. What it must not do is span a sentence boundary, hence the exclusion
+// of terminal punctuation and the length bound: a warning that has already
+// finished a sentence before reaching the bold run is a different sentence.
+// ⚠️ The exclusion is `\.\s` and not a bare `.` — RULE NUMBERS CONTAIN FULL
+// STOPS. A first version excluded any period and silently failed on
+// `⚠️ 76.7 carries the same escalation and **no such carve-out**`, which is
+// exactly the kind of sentence this shape exists to catch.
+const WARNING_NEAR_RE = /(⚠|❗|🚫)\uFE0F?\s*(?:(?!\.\s)[^!?;:—\n]){0,48}$/u;
 // `**2. ⚠️ …**` — a warning in a hand-numbered list carries the ordinal inside
 // the bold run, so the glyph does not open it. It is still a warning, and the
 // one in rules_primer.md's faceoff-violation list went unmarked for exactly
@@ -451,14 +502,66 @@ export default function remarkCorpus(options = {}) {
     // inside a *note* callout is not skipped: that panel is not warning-coloured,
     // so the glyph in it is as unmarked as one in open prose.
     //
-    // What this leaves: on the same build, 12 glyphs stay unmarked. Six are
-    // diagram captions, which come from the diagram manifest and not from this
-    // markdown at all; one is a table-of-contents entry, which should stay
-    // plain; and five are a bare glyph mid-paragraph with no bold run after it
-    // (`… not with you. ⚠️ Under **Hockey Canada Rule 6.11(b)(ii)** …`). Marking
-    // those would mean guessing where the warning ends, and a wrapper that
-    // guesses wrong emphasises the wrong sentence. They are a content-shape
-    // question: bolding the warning sentence in the document brings them in.
+    // ⚠️ THIS PARAGRAPH USED TO END THE MATTER AND WAS WRONG ON ITS OWN EXAMPLE.
+    // It said five glyphs stayed unmarked because they were "a bare glyph
+    // mid-paragraph with no bold run after it", and then gave as the example
+    // `… ⚠️ Under **Hockey Canada Rule 6.11(b)(ii)** …` — which HAS a bold run
+    // after it. Only the word `Under` intervenes. Shape (c) above covers that
+    // case and the rest of its kind.
+    //
+    // ⚠️ AND ITS REPLACEMENT WAS WRONG ON ITS OWN EXAMPLE TOO. It claimed six and
+    // said shape (c) "now covers them", counting among the six
+    // `**Read as four cumulative conditions rather than four alternatives** — ⚠️
+    // that is this document's reading …` in systems/forechecking_systems.md.
+    // Shape (c) never reached that one and could not: the strong run PRECEDES the
+    // glyph, so none of (a), (b) or (c) match, and it rendered at rgb(27,28,30)
+    // — plain body text — on a screen carrying two other ⚠️ in full amber. It was
+    // fixed in content instead, by bolding the caveat that FOLLOWS the glyph, so
+    // shape (b) fires. ⚠️ The lesson is not "get the number right". It is that a
+    // comment which counts its own coverage will be wrong the next time anyone
+    // writes a warning — twice now, in this file, in the same paragraph. Counts
+    // have been removed from it; the method for re-deriving them is above.
+    //
+    // ⚠️ A fourth shape — "glyph, then prose to the end of the sentence, with no
+    // strong run at all" — was considered and REJECTED. Two reasons, in order of
+    // weight. First, it has nothing to bound it: (a), (b) and (c) all end at the
+    // close of a strong run the author put there, and a fourth shape would have
+    // to GUESS the end, in a corpus whose sentences are full of rule numbers
+    // containing full stops (`6.11(b)(ii)`, `82.2(V)`) and of quoted rulebook
+    // text containing sentence punctuation. That is the objection the old comment
+    // raised against (c) and it was wrong there, because (c) ends where (b) ends;
+    // it is right here. Second, measured in dist/ on 31 August 2026 it would have
+    // bought almost nothing: after the content fix above, NO warning glyph
+    // remained unmarked in visible body prose anywhere on the site. Every one
+    // that was left sat in a facts-block value, an SVG <title>, or a sources
+    // trailer inside a collapsed <details> — see below. To re-check, walk the
+    // text nodes of <main> in dist/ and report every warning glyph with no
+    // `.warn-inline` or `.callout-warning` ancestor.
+    // ⚠️ And raising the amber count is not free. Every ⚠️ that still renders
+    // plain reads as LESS important once a reader has learnt that ⚠️ means amber.
+    // That is an argument for fixing the last few in content, one sentence at a
+    // time, and against a regex that fires corpus-wide on unbounded prose.
+    //
+    // What genuinely stays unmarked, and should: diagram captions, which come
+    // from the diagram manifest rather than this markdown and are handled
+    // separately; table-of-contents entries, where the heading itself carries the
+    // mark; and SVG <title> elements, which are accessible names with no visible
+    // rendering to colour.
+    //
+    // ⚠️ What stays unmarked and is a judgement call, not an oversight: a single-
+    // figure handful of the corpus's several thousand `dd.facts__value` values
+    // open with ⚠️ and get no treatment at all — measured identical in colour,
+    // background and weight to a non-warning
+    // sibling in the same panel, in both themes. The cause is the block-paragraph
+    // pass above, which returns early on `node.data?.hName`, and a facts `dd` is
+    // a paragraph carrying `hName: 'dd'`. Left alone deliberately: lifting that
+    // guard would not colour the `dd`, it would REPLACE it with an <aside> and
+    // destroy the <dl> for every one of them. Colouring them properly means a
+    // modifier class here plus a rule in global.css — a stylesheet change, not a
+    // plugin one — for a fraction of a percent of the values, inside a panel that
+    // already has its own border and label colour, where the emoji is itself a
+    // non-colour signal. To re-derive: count `dd.facts__value` in dist/ whose
+    // text starts with a warning glyph, against the total.
     const markInlineWarnings = (node, suppressed) => {
       const kids = node.children;
       if (!Array.isArray(kids)) return;
@@ -476,8 +579,14 @@ export default function remarkCorpus(options = {}) {
             continue;
           }
           const prev = i > 0 ? kids[i - 1] : null;
-          if (prev?.type !== 'text' || !WARNING_TAIL_RE.test(prev.value)) continue;
-          const at = prev.value.search(WARNING_TAIL_RE);
+          if (prev?.type !== 'text') continue;
+          // Shape (b) first — the glyph immediately before the strong run — then
+          // shape (c), which tolerates a few words between them.
+          const tail = WARNING_TAIL_RE.test(prev.value)
+            ? WARNING_TAIL_RE
+            : (WARNING_NEAR_RE.test(prev.value) ? WARNING_NEAR_RE : null);
+          if (!tail) continue;
+          const at = prev.value.search(tail);
           const head = prev.value.slice(0, at);
           const glyph = prev.value.slice(at);
           const marked = inline('span', { class: 'warn-inline' }, [

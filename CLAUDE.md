@@ -228,6 +228,17 @@ The short form:
    `check_counts.py --update` is the last step before staging, **after** the final
    `content/` edit — `project/` edits cannot move the figure, so it converges.
 
+   **Two worklists sit beside the gates. Neither has a `--strict` and neither should gain one.**
+
+   `scripts/check_pointers.py` reports **spoken sentences that point at a layer the listener
+   never hears** — the Sources trailer, a `## Notes on verification` section, or a table that
+   rendered as a pointer. It goes through the real renderer, because that is the only way to
+   know which layers survive it: **a grep over `content/` cannot answer this, since the pointer
+   and the thing it points at both live in the same file.** ⚠️ **Most hits are wording nits** —
+   the substance is usually voiced inline and only the pointer dangles — **and a pointer aimed
+   at the SITE is legitimate**, because this corpus renders to a web page too. **Read every hit.
+   Do not sweep this pattern.**
+
    `scripts/check_rule_scope.py` is a **worklist, not a gate**: it reports every rule
    number whose book scope differs between the summary-layer units citing it. It has no
    `--strict` and never will — a site naming one book because it discusses one book is
@@ -335,7 +346,8 @@ project/            Style guide, review process, verification data.
                     Never fed to the podcast generator.
 scripts/            check_links.py, check_facts.py, check_absolutes.py, check_geometry.py,
                     check_secrets.py, check_counts.py, check_external_links.py,
-                    check_rule_scope.py (a worklist, not a gate), md_to_speech.py
+                    check_rule_scope.py, check_pointers.py (worklists, not gates),
+                    md_to_speech.py
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.

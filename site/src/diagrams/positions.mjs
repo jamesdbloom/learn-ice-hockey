@@ -30,10 +30,33 @@
 // ---------------------------------------------------------------------------
 
 // The high slot, exactly as all three documents define it: "between the dots and
-// the top of the circles". All four corners are named positions, so the shaded
-// region cannot disagree with the coordinate table.
+// the top of the circles". All four corners are derived from named positions, so the
+// shaded region cannot disagree with the coordinate table.
+//
+// ⚠️ THE SIDES ARE INSET BY ONE CIRCLE RADIUS, and that is the whole definition.
+// The end-zone dots and the tops of the circles sit 22 ft off the middle, so a
+// polygon on those four bare anchors is a 15 x 44 ft rectangle LAID ACROSS both
+// faceoff circles — 660 sq ft, more than three times the region the corpus
+// defines, and it renders with the shading cutting through the painted circle
+// arcs. The owner is content/foundation/rink_map_and_glossary.md ("still between
+// the two circles"), whose own diagram `the-high-slot` draws 15 x 14 = 210 sq ft;
+// `drive-the-net-after` in playing_without_the_puck.mjs draws the identical
+// polygon, and the comment there records the disagreement as a finding about THIS
+// file. The circles' inner edges are 22 - 15 = 7 ft either side of the middle, so
+// reaching them from a sided anchor is one radius back — the same construction
+// rink_map_and_glossary.mjs uses, and the reason it is written as a subtraction
+// rather than as a bare 7 is that the anchors are sided and 7 is not.
+const CIRCLE_RADIUS = 15;
+// The same 7 ft said the other way round, for a corner anchored to a position that is
+// already on the middle line (the crease) rather than to a sided one. Both constants
+// and both spellings are rink_map_and_glossary.mjs's, deliberately, so the two files
+// can be read against each other line by line.
+const CIRCLE_EDGE = 7;
 const HIGH_SLOT = [
-  'top-of-circle:left', 'top-of-circle:right', 'faceoff-dot:right', 'faceoff-dot:left',
+  { at: 'top-of-circle:right', dy: -CIRCLE_RADIUS },
+  { at: 'faceoff-dot:right', dy: -CIRCLE_RADIUS },
+  { at: 'faceoff-dot:left', dy: CIRCLE_RADIUS },
+  { at: 'top-of-circle:left', dy: CIRCLE_RADIUS },
 ];
 
 // ---------------------------------------------------------------------------
@@ -762,36 +785,64 @@ const dToD = {
     'one of the most punished mistakes in hockey. The same holds if you are carrying rather than ' +
     'passing: if no pass is on, skate behind the net to the other side instead of going through ' +
     'the middle. Moving the puck to your partner is often all you need, because it makes the ' +
-    'forecheck reset and shift across.',
+    'forecheck reset and shift across. What varies between teams is the route rather than the ' +
+    'prohibition: some exchange high in the zone instead, above the tops of the circles, on the ' +
+    'reasoning that an interception up there is not a slot chance — two different routes and ' +
+    'not a hard version and a soft one, so ask your coach which yours uses.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two of your defencemen stand low ' +
     'in the zone, one on each side, level with the faceoff dots and toward the goal line, with ' +
     'the puck on the right-hand one. A passing route runs from him around behind his own net, ' +
     'staying below the goal line and passing behind the goal frame, to his partner on the far ' +
-    'side. The goaltender is in the crease and an opposition forward stands in the slot, in the ' +
-    'lane the pass is deliberately not taking. The slot is shaded.',
+    'side. The goaltender is in the crease and an opposition forward stands in front of the net in ' +
+    'the lane the pass is deliberately not taking. The slot is shaded: a narrow band down the middle ' +
+    'of the ice between the inner edges of the two faceoff circles, running from the top of the ' +
+    'circles to the front of the crease. It is not a marking on the ice.',
 
-  // The shaded slot stops at the front of the crease rather than running to the
-  // goal line. A zone's label is drawn at the mean of its points with no collision
-  // avoidance, and the full-depth version put "the slot" straight through the
-  // goaltender's glyph. The goalmouth is a separate layer with a separate owner in
-  // this document anyway.
+  // THE GLOSSARY'S SLOT, corner for corner. content/foundation/rink_map_and_glossary.md
+  // owns the word — "the area directly in front of the net, between the two faceoff
+  // circles, running from the top of the circles down to the goalmouth" — and its own
+  // diagram `the-slot` draws (54,±7) to (83,±7). This polygon is that one.
+  //
+  // ⚠️ It previously ran x 69→83 at y ±22: 616 sq ft containing most of both faceoff
+  // circles, which is neither the slot (it dropped the whole 54→69 half of it) nor the
+  // low slot (it added the ±7→±22 ice the owner assigns to the circles). That matters
+  // beyond tidiness, because the caption calls the shaded ice "the highest-danger ice
+  // there is" — defender.md's own words, "The slot is the highest-danger area" — and
+  // that sentence is not true of the inside of both faceoff circles. Either the label
+  // had to match the region or the region the label, and the owner decides which.
+  //
+  // The depth still stops at the FRONT OF THE CREASE rather than the goal line, which
+  // is the owner's line too ("outside the crease"): the crease is 6 ft deep off a goal
+  // line at x 89, so x 83, reached here from the crease anchor at 86. The goalmouth is
+  // a separate layer with a separate owner in this document anyway.
   zones: [
     { points: [
-        'faceoff-dot:right', { at: 'crease', dx: -3, dy: 22 },
-        { at: 'crease', dx: -3, dy: -22 }, 'faceoff-dot:left',
+        { at: 'top-of-circle:right', dy: -CIRCLE_RADIUS },
+        { at: 'crease', dx: -3, dy: CIRCLE_EDGE },
+        { at: 'crease', dx: -3, dy: -CIRCLE_EDGE },
+        { at: 'top-of-circle:left', dy: CIRCLE_RADIUS },
       ], label: 'the slot' },
   ],
 
   players: [
-    // Deeper in the crease than elsewhere in this file, because the zone label sits
-    // at the mean of the zone's points and a goaltender at the front of the crease
-    // was drawn across the end of the word "slot".
+    // Deeper in the crease than elsewhere in this file. That was originally forced by
+    // the old full-width zone, whose centroid sat at (76, 0) and put the word "slot"
+    // across a goaltender at the front of the crease; the corrected polygon's centroid
+    // is (68.5, 0), eighteen feet clear of him, so the placement is no longer load-
+    // bearing. It is left alone because moving a glyph that nothing requires to move is
+    // how a re-render acquires a new collision.
     { id: 'G', pos: 'G', at: { at: 'crease', dx: 1 } },
     { id: 'D', pos: 'D', at: D_STRONG, label: 'you, with the puck' },
     { id: 'D', pos: 'D', at: D_WEAK,   label: 'your partner' },
-    { id: 'F', team: 'opp', pos: 'F', at: { at: 'slot', dx: -2, dy: 9 } },   // (74, 9)
+    // In the low slot, inside the shaded band. At (74, 9) he stood 2 ft OUTSIDE the
+    // corrected region while the describe text said he "stands in the slot"; at (78, 4)
+    // his glyph overhung the band's top edge and its white halo ate the last letter of
+    // the zone label, which is drawn at the polygon's centroid and occupies rink y 0 to
+    // about +2.3. Below the label instead: r 2.9 at y -4 spans -6.9 to -1.1, so he is
+    // wholly inside a band that stops at -7 and wholly clear of the word.
+    { id: 'F', team: 'opp', pos: 'F', at: { at: 'slot', dx: 2, dy: -4 } },   // (78, -4)
   ],
 
   // Bowed hard enough to pass behind the goal frame (which reaches x = 92.3) and
@@ -907,8 +958,9 @@ const wingerDzReverse = {
     'momentum with him. The ice he has just left is behind you, so the play that beats him is a ' +
     'REVERSE — the puck sent back the way it came, against the direction the pressure is flowing, ' +
     'to a teammate arriving behind you. Read which of the two you are facing before the puck ' +
-    'arrives, because the plays are opposites and the wrong one hands him the puck in the most ' +
-    'dangerous place on the ice. Note what has not changed: feet wide and moving, backside into ' +
+    'arrives, because the plays are opposites and the wrong one hands him the puck in your own end ' +
+    'with your feet and your body already committed the wrong way to chase it. ' +
+    'Note what has not changed: feet wide and moving, backside into ' +
     'him, puck on the far side of your body. A stationary player on the wall gets pinned whichever ' +
     'mistake the checker is making. Call for it — "reverse!" — because the teammate you are ' +
     'sending it to is looking the wrong way. ' +

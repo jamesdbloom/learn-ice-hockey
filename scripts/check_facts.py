@@ -26,8 +26,9 @@ the extract-never-author rule, and it needs a reader.
 ``--hedges`` is the closest this file gets to that, and it is advisory rather
 than a gate. Round 20 wrote the brief itself — "list every hedge, exception and
 rule-set flag in each section's body, then check the block for it" — which is
-the check that produced all seven of its criticals. It flags about 31 sections;
-a hand-check shows real noise among them, so it prints candidates and exits 0.
+the check that produced all seven of its criticals. A hand-check of its hits
+shows real noise among them, so it prints candidates and exits 0. It prints its
+own count on the last line — run it rather than quoting a figure from here.
 
 Usage::
 
@@ -86,9 +87,21 @@ FACT_RE = re.compile(r"^([A-Z][A-Za-z ]*?):\s+(.+)$")
 # had to name a second book it was not actually quoting — which is the opposite
 # of what this check exists to enforce. `Rules 9.12` (plural, as the In-House
 # Rules style themselves) also failed `\bRule\s+\d`, so the plural is allowed.
+#: ⚠️ A governing body missing from this list cannot be cited by name. A `Rule:`
+#: value citing only "CARHA's Glossary" or "the IHUK In-House Rules" would be
+#: reported as uncited, and the obvious way to satisfy the checker is to weaken
+#: or delete the value -- which is the checker causing the defect it exists to
+#: prevent. England Ice Hockey was added after exactly that; CARHA, IHUK and
+#: SIHA are added here for the same reason, before it bit.
+#:
+#: ⚠️ At the time of adding, ZERO `Rule:` values failed this regex -- the four
+#: naming CARHA passed only because they happen to contain a `Rule NN` string.
+#: So this is a latent trap closed, not a live failure fixed, and the change
+#: cannot newly-pass anything that fails today.
 CITES_RE = re.compile(
     r"\bRules?\s+\d|\bR\d{3}\b|\b\d{2,3}\.\d|\bNHL\b|\bIIHF\b"
-    r"|USA Hockey|Hockey Canada|England Ice Hockey|In-House Rules?|\bEIH\b",
+    r"|USA Hockey|Hockey Canada|England Ice Hockey|In-House Rules?|\bEIH\b"
+    r"|\bCARHA\b|\bIHUK\b|\bSIHA\b",
 )
 
 
@@ -240,12 +253,16 @@ def check(path: Path, scope: set[str]) -> list[str]:
 # and rule-set flag in each section's body, then check the block for it" —
 # the check that produced all seven of its criticals. This operationalises it.
 #
-# It is deliberately NOT a build gate. Measured over the corpus it flags about
-# 35 of 654 sections, and a hand-check of those shows real noise: an exception
-# the block covers in different words, a Sources paragraph bleeding into the
-# last section, a flag phrased as "outside Britain" where the body says
-# "except". Failing the build on that would train people to ignore it. It
-# prints candidates for a reviewer and returns 0.
+# It is deliberately NOT a build gate. A hand-check of its hits shows real
+# noise among them: an exception the block covers in different words, a Sources
+# paragraph bleeding into the last section, a flag phrased as "outside Britain"
+# where the body says "except". Failing the build on that would train people to
+# ignore it. It prints candidates for a reviewer and returns 0.
+#
+# ⚠️ No hit count is stated here. Two were, disagreeing with each other — the
+# module docstring said 31 while this comment said "35 of 654" — and both had
+# gone stale as the corpus grew, in numerator and denominator. The tool owns
+# its own count and prints it on the last line. Run it.
 # --------------------------------------------------------------------------
 
 # Only exceptions attached to a rule claim. Bare "is not" and "unless" occur

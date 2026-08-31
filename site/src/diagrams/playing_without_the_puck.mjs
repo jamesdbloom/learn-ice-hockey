@@ -163,8 +163,16 @@ const loosePuckWhoGoes = {
     'because where they stand is not fixed, and the LETTERS name positions only because the ' +
     'notation has no other way to label a player — these three jobs are assigned by who is ' +
     'closest, not by position. How you arrive is deliberately not shown: the arrow stops five ' +
-    'feet short, because a puck race to the wall is the most dangerous moment in hockey, and how ' +
-    'you arrive into one — angling, contact and protecting yourself against the boards — is a ' +
+    'feet short, because of how a puck race to the wall can end. Two postures carry two ' +
+    'different dangers, and they are not the same warning. A chin dropped to the chest is ' +
+    'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
+    'contact with the boards or the goal post. A back turned to the boards is the ' +
+    'other: it makes the contact a hit from behind, which USA Hockey warns could inflict a ' +
+    'severe head or neck injury even when the hit is light. Neither warning depends on the ' +
+    'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
+    'skates parallel to it, take the contact on your forearm and hip, head up and chin off ' +
+    'your chest, and never turn your back to the wall or duck. How you arrive into one — ' +
+    'angling, contact and protecting yourself against the boards — is a ' +
     'whole subject of its own.',
 
   describe:
@@ -505,14 +513,24 @@ const D6_LATE_MID = { at: 'point:left', dx: 20, dy: 8 };     // (45, -12)
 const D6_LATE_TO = { at: 'high-slot', dx: -6, dy: -5 };      // (63, -5)
 
 // "the high slot (dots to the top of the circles)" — the section's own
-// parenthesis, and the glossary's definition, so the polygon is those four named
-// positions and nothing else.
 // parenthesis, and the glossary's own polygon in rink_map_and_glossary.mjs, which
 // owns the definition: the four named positions with the circle radius taken off
 // the sides, so the band is the ice BETWEEN the circles rather than a rectangle
-// laid across them. (positions.mjs shades the full 44-foot-wide rectangle instead.
-// The two disagree, the owner is the glossary, and that is a finding about
-// positions.mjs rather than something to copy here.)
+// laid across them.
+//
+// ⚠️ This comment used to end "(positions.mjs shades the full 44-foot-wide
+// rectangle instead. The two disagree, the owner is the glossary, and that is a
+// finding about positions.mjs rather than something to copy here.)" That finding
+// is CLOSED — positions.mjs now builds the same polygon and renders byte-identical
+// SVG to the glossary's own. It is recorded here rather than deleted because of
+// how it was closed: the finding sat in this file, correct and unactioned, while
+// positions.mjs was edited in the same round, and it was found by a reviewer
+// comparing polygons rather than by anything mechanical. check_geometry.py
+// validates named POINTS and check-arrivals.mjs never reads `zones` at all, so a
+// zone drawn 3.14x its definition passes every gate this project has.
+//
+// ⚠️ A finding written into a neighbouring file's comments is not a finding
+// actioned. If you record one here again, open a plan row for it too.
 const CIRCLE_RADIUS = 15;
 const HIGH_SLOT = {
   points: [

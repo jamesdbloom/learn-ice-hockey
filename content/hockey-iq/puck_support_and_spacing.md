@@ -118,7 +118,7 @@ Key: Supporting too close moves the problem, it does not solve it
 
 ```facts
 Risk: A long pass spends longer on the ice, giving every defender time to read it and get a stick in the lane
-Risk: It arrives faster, often bouncing, and you receive it with a defender already closing
+Risk: A long pass also arrives faster, often bouncing, and you receive it with a defender already closing
 Convention: Larry Bruyere puts possession play on the short pass — "the 8-to-10-foot-or-less pass"
 Key: Support does not end when the puck leaves — whoever passed to you now needs support from you
 ```
@@ -130,8 +130,8 @@ Key: Support does not end when the puck leaves — whoever passed to you now nee
 ### Practical distances
 
 ```facts
-Convention: A default of roughly two to three stick lengths, 10 to 15 feet — a starting point, not a rule of hockey
-Convention: 8 to 10 feet when the carrier is pressured, stretching to 15 when they have time
+Convention: Support distance defaults to roughly two to three stick lengths, 10 to 15 feet — a starting point, not a rule of hockey
+Convention: Support from 8 to 10 feet when the carrier is pressured, stretching to 15 when they have time
 Action: Shorten under heavy pressure, in your own zone, and below the offensive goal line
 Action: Lengthen in open ice and above the offensive dots; in the neutral zone go longer and mostly lateral
 Action: On wider international ice, check the rink first — distances scale, angles do not
@@ -176,7 +176,7 @@ Distance tells you how far. Angle tells you what kind of option you are. There a
 ```facts
 Position: Between the puck and your own net, or at least further back than the carrier
 Goal: Offer a guaranteed, low-risk reset into space the opposition has already vacated
-Key: This is the option that exists when the other two are covered
+Key: Support behind the puck is the option that exists when the level and ahead options are covered
 Risk: With nobody behind the puck, the only answer to good pressure is a dump-out — a turnover you chose
 Action: Whoever is lowest provides it — usually a defenceman or the centre in your own end
 Action: Call for it; the verbal cue in most teams' vocabulary is "back"
@@ -184,9 +184,9 @@ Action: Call for it; the verbal cue in most teams' vocabulary is "back"
 
 You are between the puck and your own net, or at least further back than the carrier.
 
-- **What it offers:** a guaranteed, low-risk reset. The pass goes backwards into space the opposition has already vacated, which means it is the least contested pass on the ice.
-- **Why it is non-negotiable:** it is the option that exists when the other two are covered. A team with no support behind the puck has no answer to good pressure except dumping it away, and dumping it away is a turnover you chose.
-- **Who provides it:** whoever is lowest. In your own end that is usually a defenceman or the centre; in the offensive zone it is often the player who just came off the wall.
+- **What support behind the puck offers:** a guaranteed, low-risk reset. The pass goes backwards into space the opposition has already vacated, which means it is the least contested pass on the ice.
+- **Why the outlet is non-negotiable:** it is the option that exists when the other two angles are covered. A team with no support behind the puck has no answer to good pressure except dumping it away, and dumping it away is a turnover you chose.
+- **Who provides the outlet:** whoever is lowest. In your own end that is usually a defenceman or the centre; in the offensive zone it is often the player who just came off the wall.
 
 The verbal cue for this in most teams' vocabulary is **"back"** — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
@@ -202,15 +202,15 @@ Action: In your own end, take the lateral option behind your own net, not throug
 
 You are roughly the same distance from your own net as the carrier, but across from them.
 
-- **What it offers:** a change of side. Most defensive pressure is organised strong-side — that is, concentrated on the half of the ice the puck is on. A lateral pass moves the puck to the half where their coverage is thinnest, and forces every defender to reset.
-- **The catch:** a lateral pass crosses in front of people. In the offensive and neutral zones that is a normal, high-value play. **In your own defensive zone a pass across the middle is the highest-risk pass in hockey**, because an interception there is a point-blank chance. The lateral option in your own end goes *behind your own net*, not through the slot.
+- **What the lateral option offers:** a change of side. Most defensive pressure is organised strong-side — that is, concentrated on the half of the ice the puck is on. A lateral pass moves the puck to the half where their coverage is thinnest, and forces every defender to reset.
+- **The catch on the lateral option:** a lateral pass crosses in front of people. In the offensive and neutral zones that is a normal, high-value play. **In your own defensive zone, never pass across the middle.** That pass crosses the slot, so an interception is not a turnover you can recover from — it is a point-blank chance, taken in front of your own net by an opponent already facing it. The lateral option in your own end goes *behind your own net*, not through the slot.
 
 ### Support ahead of the puck — the attacking option
 
 ```facts
 Position: Further up ice than the carrier
 Goal: Gain territory — this is the only one of the three angles that gains ground
-Risk: The most interceptable of the three, and if it fails you are behind the play and cannot recover
+Risk: The ahead-of-the-puck pass is the most interceptable of the three angles, and if it fails you are behind the play and cannot recover
 Rule: Offside needs both skates completely over the line before the puck completely crosses it (NHL Rule 83)
 Rule: A raised trail skate is onside under NHL and IIHF rules, but USA Hockey 630(a) and Hockey Canada 6.11 both require skate contact — two books of the four
 Action: Time your entry rather than parking in the zone
@@ -218,8 +218,8 @@ Action: Time your entry rather than parking in the zone
 
 You are further up ice than the carrier.
 
-- **What it offers:** territory. This is the only one of the three that gains ground, and gaining ground is how you score.
-- **The cost:** it is the most interceptable, and if it fails you are behind the play and cannot recover.
+- **What the ahead-of-the-puck pass offers:** territory. This is the only one of the three that gains ground, and gaining ground is how you score.
+- **The cost of the ahead pass:** it is the most interceptable, and if it fails you are behind the play and cannot recover.
 - **The offside constraint:** a pass to a teammate ahead of you into the offensive zone only works if they are onside. **Offside requires both skates to have completely crossed the blue line before the puck completely crosses it.** One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside **under NHL and IIHF rules — not under USA Hockey or Hockey Canada, where Rule 630(a) and Rule 6.11 require skate *contact***. So the ahead-of-the-puck option at the blue line is real but requires the receiver to time their entry, not just park in the zone.
 
 ### The principle: all three at once
@@ -386,10 +386,10 @@ Targets: The defence partner on the far side, reached behind the net — never t
 Position: The weak-side winger higher and wider than everyone, for the width that stops one side being loaded
 Priority: In your own end the safe outlet outranks the attacking option — support short, keep the angles safe
 Action: Use the goalie as support — best view on the ice, no puck to look at
-Rule: Firing it the length of the ice is icing: defensive-zone draw, no line change (NHL Rule 81.4) and no timeout (Rule 87.1 — Rule 81 contains no timeout provision)
-Rule: Both consequences are NHL and IIHF only — USA Hockey imposes neither, and grants the shorthanded exemption only from Youth 15-Only and above, below which a shorthanded team CANNOT ice the puck at all (NHL 81.4, 87.1; USA Hockey 624(b)(1)); Special Teams covers the carve-outs
+Rule: Firing it the length of the ice is icing: defensive-zone draw, no line change (NHL 81.4, which excepts only injury, a returning pulled goalie and a strength-changing penalty) and no timeout (87.1 — Rule 81 has no timeout provision); Special Teams covers the shorthanded exemption and its carve-outs
+Rule: The no-change and no-timeout consequences are NHL and IIHF only — USA Hockey imposes neither, and grants the shorthanded icing exemption only from Youth 15-Only, Girls 16U, High School and Adult upward, so below those a shorthanded team can be called for icing (NHL 81.4, 87.1; USA Hockey 624(b)(1))
 Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid, unless keeping skate contact with the crease (NHL Rule 1.8; 27.8, 63.2(viii); IIHF Rule 27.7) — the KHL reportedly too, but unverified here
-Key: Most rec, beer-league and youth associations have no trapezoid — there your goalie is a genuine fourth breakout option
+Key: USA Hockey and Hockey Canada have no trapezoid — under those books your goalie is a genuine fourth breakout option, though neither of them lets your goalie freeze the puck out there
 Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8. In England and Wales it is unsettled: England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced". It reads as live in Scotland, Northern Ireland and BUIHA hockey. Keep your goalie inside it and ask your league
 ```
 
@@ -399,15 +399,15 @@ Your defenceman retrieves the puck behind your net. Before they turn, they need 
 - **The centre**, swinging low through the middle and curling toward the same side — the middle option, and the one that turns a breakout into an attack.
 - **The defence partner** on the far side, reached *behind the net*, below the goal line. Never through the slot.
 
-Those three plus the carrier form a support structure with an outlet at three different angles. Add the weak-side winger, who is normally higher and wider than everyone else, and you have the width that stops the defence loading one side.
+The strong-side winger, the centre and the defence partner, plus the carrier, form a support structure with an outlet at three different angles. Add the weak-side winger, who is normally higher and wider than everyone else, and you have the width that stops the defence loading one side.
 
 ![](diagram:defensive-zone-support)
 
 **The defensive-zone-specific rule: your support must be short and your angles must be safe.** Everything else in this document says "create the attacking option". In your own end, the safe outlet outranks it. A tidy exit with possession is a win; a clever exit that fails is a goal against.
 
-**Why spacing is worth the effort here: the alternative is icing.** If nobody gives the retriever a short option, the only remaining play is to fire the puck the length of the ice — and under **NHL Rule 81** that stops play, brings the faceoff back into your own end, and forbids your line from changing (and your team from taking a timeout) before the draw. That is the price of a breakout with no support. The one general escape is that a shorthanded team may ice the puck without a whistle, **but do not treat that as unconditional** — NHL Rule 81.6 withdraws it from a team shorthanded by a *major* penalty that has left nobody on the penalty bench, and USA Hockey grants it only from Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), so below those levels a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) covers that rule and sets out both carve-outs.
+**Why spacing is worth the effort here: the alternative is icing.** If nobody gives the retriever a short option, the only remaining play is to fire the puck the length of the ice — and under **NHL Rule 81** that stops play, brings the faceoff back into your own end, and forbids your line from changing (and your team from taking a timeout) before the draw. That is the price of a breakout with no support. **The substitution bar has three exceptions in Rule 81.4's own words** — a substitution *"to replace a goalkeeper who had been substituted for an extra attacker, to replace an injured player, or when a penalty has been assessed which affects the on-ice strength of either team"* — so a hurt teammate does not have to stay out there, and a tired one does. The IIHF's 81.4 adds a fourth, *"a Player with a broken skate"*, which its own Rule 82.1 does not carry; do not plan a change around that one. The one general escape is that a shorthanded team may ice the puck without a whistle, **but do not treat that as unconditional** — NHL Rule 81.6 withdraws it from a team shorthanded by a *major* penalty that has left nobody on the penalty bench, and USA Hockey grants it only from Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), so below those levels a shorthanded team can be called for icing. [Special Teams](../systems/special_teams.md) covers that rule and sets out both carve-outs.
 
-**The goalie is part of your support.** They have the best view on the ice and no puck to look at. "Man on", "time", "reverse" — the calls in [On-Ice Communication](../foundation/on_ice_communication.md) are how the carrier finds out which of the three options is actually there. Note that under NHL and IIHF rules the goalie may only *play* the puck behind the goal line inside the trapezoid — the markings are set out in **NHL Rule 1.8** (and **IIHF Rule 1.8**), and playing the puck outside them is a two-minute delay-of-game minor under **Rules 27.8 and 63.2(viii)** (**IIHF Rule 27.7**). The sole exception is a goalie who plays the puck while **maintaining skate contact with the crease** — there is no teammate-based exception. The KHL is commonly said to have the same rule, though that one is unverified here: no KHL rulebook was available to check it against. Most rec, beer and youth leagues have no trapezoid, in which case your goalie can be a genuine fourth breakout option behind the net rather than only a voice.
+**The goalie is part of your support.** They have the best view on the ice and no puck to look at. "Man on", "time", "reverse" — the calls in [On-Ice Communication](../foundation/on_ice_communication.md) are how the carrier finds out which of the three options is actually there. Note that under NHL and IIHF rules the goalie may only *play* the puck behind the goal line inside the trapezoid — the markings are set out in **NHL Rule 1.8** (and **IIHF Rule 1.8**), and playing the puck outside them is a two-minute delay-of-game minor under **Rules 27.8 and 63.2(viii)** (**IIHF Rule 27.7**). The sole exception is a goalie who plays the puck while **maintaining skate contact with the crease** — there is no teammate-based exception. The KHL is commonly said to have the same rule, though that one is unverified here: no KHL rulebook was available to check it against. **Neither North American governing body's book has a trapezoid** — the *USA Hockey Playing Rules 2025-29* and the *Hockey Canada Playing Rules 2026-2028* mark no goalkeeper's restricted area anywhere, and neither limits *where* a goalkeeper may play the puck (USA Hockey Rule 610; Hockey Canada Rule 10.1) — so under those books your goalie can be a genuine fourth breakout option behind the net rather than only a voice. **Neither of them leaves the goalie unrestricted back there, though**, so do not plan on a puck being sat on until you arrive: USA Hockey Rule 614(c) bars a goalkeeper *freezing* the puck outside the *"goalkeeper's privileged"* area, which excludes the corners, and Hockey Canada's Interpretation 3 to Rule 10.1(a) is stricter still — once a goaltender leaves the crease *"they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. **No warning will be issued.**"* How much rec, beer-league and youth hockey runs on those two books is a question about leagues rather than about books, and this document has no count for it.
 
 **🇬🇧 How much of a support your goaltender can be behind the goal line depends on where in Britain you play.** In **England and Wales** it is unsettled: England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"*, while the In-House Rules say nothing about it either way. In **Scotland, Northern Ireland and BUIHA university hockey**, England Ice Hockey is not your governing body — it is the national body for *"England and Wales"* only — and the In-House Rules that do apply there leave IIHF Rule 27 unamended, so 27.7 reads as live. **Keep your goaltender inside the area wherever you play, and ask your league.** That costs a goaltender nothing, and the alternative is two minutes. [UK and England Rules](../foundation/uk_rules.md) has the detail.
 
@@ -438,7 +438,7 @@ Width here is doing the heavy lifting. A stretched neutral zone is one where the
 ```facts
 Position: Someone below the puck, someone level with it and someone above it, at all times
 Position: Below is behind or beside the net; level is the half-wall or slot; above is the point and often a third forward high
-Key: Support here is rotation, not position — the puck moves round the perimeter faster than anyone can skate
+Key: Offensive-zone support is rotation, not position — the puck moves round the perimeter faster than anyone can skate
 Action: When you leave one of those layers, someone fills it — the layer must stay occupied, not your spot
 Convention: Rotation rules are a coaching choice and change who may go below the puck — ask which your team plays
 ```
@@ -467,7 +467,7 @@ Standing in the right place is worth much less than arriving at the right place 
 Action: Delay deliberately, so you arrive with speed as the puck arrives
 Technique: "Puck first, feet second" — let the carrier commit a defender before you launch
 Goal: Cross the space at full speed while the defender is stationary with their head turned to the puck
-Key: A late arrival with speed is the hardest thing in hockey to defend
+Key: A late arrival with speed beats a set gap — by the time the defenceman reacts you are past the point where they could have set one
 Rule: The puck must cross the blue line before or as your second skate does (NHL Rule 83 offside)
 Never: Delay in your own zone — the carrier needs the outlet now, and a late arrival there is an absent one
 ```
@@ -476,7 +476,7 @@ The counterintuitive skill is **deliberately delaying so that you arrive with sp
 
 The cue used in neutral-zone coaching is **"puck first, feet second"** — let the carrier commit a defender before you launch. A half-second delay before you accelerate does three things: it stops you drifting offside at the blue line, it means the defender's head has already turned toward the puck when you go, and it means you cross the space at full speed while they are stationary.
 
-This is what people mean when they say a player "arrives late." It is not a criticism. **A late arrival with speed is the hardest thing in hockey to defend**, because by the time the defenceman reacts you are already past the point where they could have set a gap. The trailer on a rush, the defenceman jumping into the slot, the weak-side winger cutting to the back post — all the same mechanism.
+This is what people mean when they say a player "arrives late." It is not a criticism. **A late arrival with speed beats a set gap**, because by the time the defenceman reacts you are already past the point where they could have set one. The trailer on a rush, the defenceman jumping into the slot, the weak-side winger cutting to the back post — all the same mechanism.
 
 The offside constraint bites here and is worth being exact about: the puck must cross the blue line before, or at the same moment as, your second skate. Both skates over before the puck is offside. One skate on or behind the line and you are fine. Timing your route so the puck beats you across is the whole skill.
 
@@ -559,7 +559,7 @@ Three things make the layer an actual position rather than a vague instruction t
 
 ```facts
 Position: Offset diagonally from the first defender, not directly behind them
-Convention: A similar two-to-three-stick-lengths range — near enough to arrive in about a second
+Convention: The layering distance is the same two-to-three-stick-lengths range — near enough to arrive in about a second
 Risk: Too close and one move beats you both; too far and the carrier skates through the gap between you
 Convention: Whether you may hold the layer at all is system-dependent — ask how your team's coverage changes it
 ```
@@ -703,4 +703,4 @@ document, that is named too.*
 
 *Boards safety (how to arrive at a wall battle — [Body Contact and Battles §6, Receiving a Hit Safely](../technique/body_contact_and_battles.md) is the full treatment): [USA Hockey — Heads Up Hockey Program Guide (PDF)](https://cdn4.sportngin.com/attachments/document/0138/6193/HUH_Program_Guide_FINAL.pdf) — Session 5, "Giving A Check", under its "Checking from behind" subheading, which is not the session's title, for *"Even a light hit from behind could inflict a severe head or neck injury"*; and "How spinal injuries happen in hockey" for *"A player doesn't have to be going at full speed for this to happen — it can occur at walking speed"* · [USA Hockey — Introduction To Body Contact (PDF)](https://cdn4.sportngin.com/attachments/document/55c1-2114751/IntroductiontoBodyContact.pdf) — §5 "Checking From Behind", carrying the same light-hit sentence, and "Contact Confidence" A, "Checked Into The Boards", for the fallback when you are already facing the wall: *"distribute the force of the impact over as wide a surface as possible, including putting your stick and gloves on the glass to cushion the blow"*. Located in the extracted text on 30 August 2026. **Note the division of labour between the two quotes:** the walking-speed finding is stated of *"the head being slightly flexed (head down) while making head-on contact with the boards or goal post"*, and USA Hockey does not say it of a player who turns their back — the hazard of the turned back is that it makes the contact a hit from behind, which is the light-hit sentence. **Both prohibitions are absolute here; only the ducking one has a published statement about speed behind it.** The walking-speed finding is also a restatement rather than USA Hockey's own research: the page credits *"research done among a wide range of hockey players"* and cites **Charles H. Tator et al., *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41**, not read in the original here.*
 
-*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 1.2 (Dimensions), Rule 1.8 (Goalkeeper's Restricted Area markings), Rules 27.8 / 63.2(viii) (restricted-area penalty), Rule 81 (Icing, including the major-penalty carve-out in 81.6), Rule 83 (Off-side) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1) (the classification restriction on the shorthanded icing exemption), Rule 630(a) (offside requires skate contact) · IIHF Official Rule Book 2025/26 — Rule 1.2 (Dimensions) · [IHUK In-House Rules 2026-27, Revision 1, published 25 July 2026 (PDF)](https://englandicehockey.com/wp-content/uploads/2026/08/IHUK-In-House-Rules-2026-2027.pdf) — Section 1, Rule 1 "Rink size and eligibility": the below-56 m × 26 m authorisation and the Sutton and Coatbridge exceptions. The 2025-26 edition named a third rink, Limekilns Road in Scotland, and limited its scope to EIH and SIHA fixtures; the 2026-27 edition drops it and reads *"This rule applies to all fixtures"*. Its Introduction is also what fixes who the In-House Rules reach: *"IHUK and the British Universities Ice Hockey Association (BUIHA) adopt the latest IIHF Official Rule Book (Version 1.1, published July 2025) as the foundation for the rules of the game to be applied in England, Wales, Scotland and Northern Ireland (the Home Countries)"*, and neither the 2026-27 nor the 2025-26 edition mentions Rule 27 or the restricted area · England Ice Hockey *Rules & Regulations* 2024-2025 — Rule 1.1 (England Ice Hockey is the National Governing Body *"in England and Wales"*) and Rule 22.3 (the restricted area *"not currently enforced"*) · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — Rule 6.11 Off-side, whose preamble counts only "the player's skate(s) that are in physical contact with the ice surface", which is why a lifted trail skate is offside there as it is under USA Hockey 630(a).*
+*Rules: [NHL Official Rules 2025-2026 (PDF)](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) — Rule 1.2 (Dimensions), Rule 1.8 (Goalkeeper's Restricted Area markings), Rules 27.8 / 63.2(viii) (restricted-area penalty), Rule 81 (Icing, including the major-penalty carve-out in 81.6), Rule 83 (Off-side) · [USA Hockey Official Playing Rules 2025-29 (PDF)](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) — Rule 624(b)(1) (the classification restriction on the shorthanded icing exemption), Rule 630(a) (offside requires skate contact), **Rule 610 Delaying the Game** read in full for a limit on where a goaltender may play the puck, of which its clauses (a)–(g) have none — USA Hockey marks no trapezoid — and **Rule 614(c) Falling on Puck**, which does restrict the goaltender, its clause (3) making it a minor to freeze the puck outside the *"goalkeeper's privileged"* area and its clause (1) a minor anywhere *"behind the goal line and their body is entirely outside of the goal crease"* · IIHF Official Rule Book 2025/26 — Rule 1.2 (Dimensions) · [IHUK In-House Rules 2026-27, Revision 1, published 25 July 2026 (PDF)](https://englandicehockey.com/wp-content/uploads/2026/08/IHUK-In-House-Rules-2026-2027.pdf) — Section 1, Rule 1 "Rink size and eligibility": the below-56 m × 26 m authorisation and the Sutton and Coatbridge exceptions. The 2025-26 edition named a third rink, Limekilns Road in Scotland, and limited its scope to EIH and SIHA fixtures; the 2026-27 edition drops it and reads *"This rule applies to all fixtures"*. Its Introduction is also what fixes who the In-House Rules reach: *"IHUK and the British Universities Ice Hockey Association (BUIHA) adopt the latest IIHF Official Rule Book (Version 1.1, published July 2025) as the foundation for the rules of the game to be applied in England, Wales, Scotland and Northern Ireland (the Home Countries)"*, and neither the 2026-27 nor the 2025-26 edition mentions Rule 27 or the restricted area · England Ice Hockey *Rules & Regulations* 2024-2025 — Rule 1.1 (England Ice Hockey is the National Governing Body *"in England and Wales"*) and Rule 22.3 (the restricted area *"not currently enforced"*) · [Hockey Canada Playing Rules 2026-2028 (PDF)](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) — Rule 6.11 Off-side, whose preamble counts only "the player's skate(s) that are in physical contact with the ice surface", which is why a lifted trail skate is offside there as it is under USA Hockey 630(a); and **Rule 10.1 Delay of Game**, whose clauses (a)–(e) place no limit on *where* a goaltender may play the puck — Hockey Canada marks no trapezoid — read with **Interpretation 3 to Rule 10.1(a)**, clause v, which does restrict them: once a goaltender leaves the crease *"they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."**

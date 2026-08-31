@@ -77,7 +77,9 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
   **⚠️ This bullet has now been wrong twice, in opposite directions, and both errors reached six documents.** It first stated the NHL position as universal. The correction then claimed IIHF 87.1 attaches no icing condition to time-outs — which is false; IIHF 87.1 reads *"No 'time-out' shall be granted to the defensive team following an icing…"*, the same sentence as the NHL. A British reader was told his own book punished icing more lightly than it does.
 
   **The lesson is about this list, not about icing.** Entries here are headed "do not contradict", so writers propagate them without checking, and a wrong entry travels further and faster than a wrong sentence in any single document. **Treat this list as a source that needs auditing, not as ground truth** — quote the rulebook when you rely on an entry, and if the quotation is not in front of you, go and get it.
-- **The trapezoid** (goalkeeper's restricted area) applies in the **NHL (since 2005-06), the KHL, and IIHF play (since the unified 2021-22 rulebook)**. Most rec, beer-league and youth associations do **not** use it. The goalie may only play the puck behind the goal line inside it; violation is a two-minute delay-of-game minor. **The sole exception is the goalie maintaining skate contact with the crease** — there is no teammate-based exception.
+- **The trapezoid** (goalkeeper's restricted area) applies in the **NHL** and in **IIHF play** — both read directly in the rulebooks, at NHL Rules 1.8 and 27.8 and IIHF Rules 1.8 and 27.7. ⚠️ **The KHL is commonly said to have one too, and that is UNVERIFIED here: no KHL rulebook exists in any form in `sources/`** — the only support held is the IIHF's own 2021 announcement of its unified rulebook, calling the restricted area a *"trapezoid familiar to NHL and KHL"*, **which is a governing body's aside rather than a KHL rule.** ⚠️ **And neither adoption date is in any book on disk.** `2005` returns **zero** in both NHL extractions, flattened and de-hyphenated — every four-digit year in that book was enumerated — and `2021` returns zero in both IIHF editions. The NHL book *does* date rules when it wants to (9.6, 9.7, 28.6), and it **does not date this one**; the IIHF's 2021-22 date comes from the announcement, not the rulebook. **Carry the hedge and the limit whenever you carry the claim.** Most rec, beer-league and youth associations do **not** use it.
+
+  ⚠️ **This bullet is why the defect exists.** The table further down this file records *"The KHL plays a trapezoid"* spreading from **1 document and 5 sites to 16 documents and 28 sites**. Every site in `content/` that carries the claim now carries the hedge with it — ⚠️ **the invariant is what matters, and a bare count here would go stale the moment a document is edited, which is the failure this very file records elsewhere. Re-measure rather than quote: search `content/` flattened for `KHL` within a few hundred characters of `trapezoid`, and check each hit carries an unverified/no-KHL-rulebook hedge.** (Measured that way on 2026-08-31: every hit hedged, none bare. An earlier revision of this line asserted a flat total that could not be reproduced.) **And this bullet, four lines below the warning to treat this list as a source needing audit rather than ground truth, still stated it flat, with both dates asserted as fact.** The specification recorded the defect and committed it. **A writer working to spec reproduced it, and two spoken diagram captions are what that produced.** The goalie may only play the puck behind the goal line inside it; violation is a two-minute delay-of-game minor. **The sole exception is the goalie maintaining skate contact with the crease** — there is no teammate-based exception.
 
   **⚠️ Cite this correctly — the two rules give different dimensions and the corpus kept reproducing the stale one.** Use **Rule 1.8 for the dimensions** and **Rules 27.8 / 63.2(viii) for the penalty**. Rule 1.8 specifies the lines actually painted: seven feet outside each crease — **eight feet from each goal post** — widening to eleven feet from each post (**28 feet apart**) at the end boards. Rule 27.8 still reads "six feet from either goal post", which is wording left over from before the 2014-15 widening.
 
@@ -100,9 +102,30 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 - **Charging stride thresholds differ by one stride between books.** USA Hockey says ***more than* two strides**; Hockey Canada **Rule 7.4** says ***two or more***; the NHL sets no stride count at all, judging charging on *"distance traveled"* (42.1). Do not conflate them, and do not attribute a stride number to the NHL. Note NHL 42.1 opens *"skates, **jumps into** or charges"*, so leaving your feet **is** itself part of the offence — USA Hockey 607 names *"leaving one's feet (jumping)"* directly.
 - **Goaltender interference (Rule 69.1):** the rule's premise is that an attacker's position, *"whether inside or outside the crease, should not, by itself, determine whether a goal should be allowed or disallowed."* A goal is disallowed only if **(1)** an attacking player *"**either by his positioning or by contact**, impairs the goalkeeper's ability to move freely within his crease or defend his goal"*, or **(2)** the attacker initiates intentional or deliberate contact with the goalie, inside or outside the crease. Incidental contact **initiated outside the crease** is permitted *"provided the attacking player has made a reasonable effort to avoid such contact."*
 
+  ⚠️ **THAT QUOTATION IS 69.1's AND IS CORRECT. Do not "fix" it to say *"unnecessary"*.** Rule 69 carries **two** near-identical sentences one word apart, and an agent has already conflated them and reported this line as a defect:
+
+  | | wording | |
+  |---|---|---|
+  | **69.1** — contact initiated outside the crease | *"…a reasonable effort to avoid such **contact**."* | twice, plus 69.8 |
+  | **69.4** — the goalkeeper *"in the act of playing the puck outside his goal crease"* | *"…a reasonable effort to avoid such **unnecessary** contact."* | once |
+
+  **Rule 42.1 also carries the plain form.** Verified by locating each occurrence and reading the nearest preceding rule heading, in `nhl_rules_layout.txt`. ⚠️ **Check WHICH sentence a site is quoting before touching the word** — the corpus currently gets all ten of its occurrences right, and a sweep for either wording would break half of them.
+
   **⚠️ Do not write that screening is "entirely legal".** That overstatement propagated into 16 places across 12 documents before it was caught. Screening from **outside** the crease, without contact, is legal and valuable — but clause (1) means **positioning alone can void a goal** if it impairs the goalie's ability to move or defend, and Rule 69.3 separately disallows a goal where an attacker *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision and impair his ability to defend his goal."* Always attach the outside-the-crease qualifier to the legality claim itself.
 
-  **⚠️ And attach the appendix, because both books answer 69.1's own fact pattern the other way.** **NHL Reference Table 14** and **IIHF Appendix IV Table 16** publish the situations, and on the outside-the-crease screen they are unambiguous. **Situation 5E** — an attacker *"plants themself on the crease line or outside the goal crease, as to obstruct the goalkeeper's vision and impair their ability to defend their goal, and a goal is scored"* → **"Goal is allowed."** **5C** is the same answer for a screen in motion. Only 5B and 5D disallow, and **both put the attacker inside the crease**. So the operative text of 69.1(I) carries no crease line and the appendix supplies one. Cite the table alongside the rule — but say it is an **appendix interpretation, not operative rule text**, because a table cannot repeal a rule.
+  **⚠️ And attach the appendix, because both books answer 69.1's own fact pattern the other way.** **NHL Reference Table 14** and **IIHF Appendix IV Table 16** publish the situations, and on the outside-the-crease screen they are unambiguous. **Situation 5E** — an attacker who, in the NHL's wording, *"plants himself on the crease line or outside the goal crease, as to obstruct the goalkeeper's vision and impair his ability to defend his goal, and a goal is scored"* → **"Goal is allowed."** ⚠️ **The IIHF's row is the same situation in different pronouns** — *"plants themself… impair their ability to defend their goal"*. **This paragraph used to quote the IIHF's wording while attributing the row to both books**, which is the exact hazard the paragraph below it forbids, in the file that forbids it.
+
+  ⚠️ **And "5C is the same answer for a screen in motion" was MISLEADING and has been corrected — motion is not the distinguishing factor, LOCATION is.** Read the two rows together: **5B** is *"well inside the crease… The attacking player remains in motion"* → **goal DISALLOWED**; **5C** is *"outside the crease… remains in motion"* → **goal ALLOWED**. **Both are in motion.** A reader who carries *"in motion is fine"* from 5C to 5B gets the opposite of the rule. Only 5B and 5D disallow, and **both put the attacker inside the crease** — that is the whole distinction. So the operative text of 69.1(I) carries no crease line and the appendix supplies one. Cite the table alongside the rule — but say it is an **appendix interpretation, not operative rule text**, because a table cannot repeal a rule, and ⚠️ **neither book says anywhere that its tables are interpretation rather than rule**, so that framing is a reading of where they are printed and must be labelled as one.
+
+  ⚠️ **THE IIHF TABLE NUMBER IS NOT STABLE ACROSS EDITIONS, AND THE COLLISION RESOLVES.** Verified in both books on disk:
+
+  | | Rule 69 situations | what the OTHER number holds |
+  |---|---|---|
+  | **IIHF 2025/26 v1.1** — the British layer | **Table 16** | Table 14 is **Rule 16, Minor Penalties** |
+  | **IIHF 2026/27** | **Table 14** | Tables 15 and 16 are **Rule 84, Overtime** |
+  | **NHL 2025-2026** | **Table 14** | — |
+
+  **So a bare "IIHF Table 16" read against the 2026/27 book lands on Overtime, and a bare "Table 14" read against 2025/26 lands on minor penalties.** Both resolve to a real table about something else, which is the wrong-pointer species this guide records for Hockey Canada and USA Hockey — **now found in the IIHF's own tables, between two editions of the same book.** ⚠️ **Never cite an IIHF table number without its edition.** ⚠️ **The NHL never prints the string `5E` at all** — it prints the group heading and the row letter separately — and the IIHF prints `Situation 5 E`, **with a space**. A grep for `5E` finds neither.
 
   **⚠️ The same tables contradict 69.3 on the give-ground case, in both books.** NHL 69.3 says the attacker *"will receive a minor penalty"*; IIHF 69.3 writes *"the appropriate penalty"* and caps nothing. But **NHL Table 14 Situation 6D** and **IIHF Table 16 Situation 6D** — ⚠️ **cite the 6, because Table 14 has two D rows**: 5D is the screening case (*"plants himself within the goal crease"*) and 6D is the give-ground case, and the paragraph above points a reader at 5D — the identical fact pattern, *with a goal scored* — both read *"Goal is disallowed. **A minor penalty is not assessed (loss of goal only)**."* The severity divergence between the books bites at **every penalty-bearing row in Section 6 — 6B, 6E, 6F, 6G and 6H** — not at 6B alone. ⚠️ **And it is not a substantive split: it is a systematic editorial generalisation.** The IIHF replaced the NHL's *"minor penalty"* with *"the appropriate penalty"* across the whole table, and **kept "minor" at 7B**, which is the deliberate exception proving the rule. ⚠️ **NHL 6B is also not a mandatory minor** — its description column reads *"A possible penalty depends on the Referee's judgment as to the degree of contact and degree of resistance… and whether the goalkeeper was truly trying to establish a position."* **No source on disk settles which governs, and one that looked as though it might has now been read and cannot.** The **IIHF Situation Handbook** carries **six** worked situations under Rule 69 — not the *"No situation."* form it uses for Rule 43 — and Situations **69.1, 69.2 and 69.6** all pair a disallowed goal with **no penalty to the attacker**, which corroborates the appendix. **But its Foreword disqualifies it as a tiebreaker in terms:** *"in case of any contradictions, the valid IIHF Rulebook is always the basis."* And **Table 16 is Appendix IV of the Rulebook itself**, so the conflict is **rulebook-internal** and the one document that might have broken the tie has expressly ranked itself below the losing side. ⚠️ **Note also which book is the more internally consistent, because the obvious reading is backwards:** the **NHL's** conflict is flat — *"will receive a minor penalty"* against *"a minor penalty is not assessed"* — while the IIHF's *"the appropriate penalty"* can accommodate "none". **Report both; do not pick one.** And note what a major there is *not*: **Rule 69 appears in none of the IIHF's Reference Tables** — not Table 5, not Table 6, not Table 7 — and **Rule 20.4 attaches the automatic ejection to a second major, a second misconduct in the same game, or a major for one of the infractions those tables list.** So no automatic game misconduct attaches to a Rule 69 major on its own. ⚠️ **Do not flatten that to "it is not an ejection"** — a game misconduct can still arrive by another route, and a bare denial is a cap on a penalty tier stated more confidently than the evidence supports. Note also that **Table 5 is headed *"Summary of major penalties (without a game misconduct possible)"***, so absence from **that** table proves nothing either way; it is absence from all three that does the work.
 
@@ -239,10 +262,22 @@ and must be re-checked.**
 rediscovering this" — is what was finally acted on, after `commit-gate` pointed
 out the corpus had begun citing a book that lived only in a session scratchpad.)*
 
-> ⚠️ **STOP — nine of the ten source files named in this section (the next paragraph names eight of them; two more follow below) are NOT on disk.** Verified 2026-08-28: of
+> ⚠️ **STOP — eight of the ten source files named in this section (the next paragraph names eight of them; two more follow below) are NOT on disk.** Re-verified 2026-08-31: of
 > `tulsky.txt`, `berg.txt`, `hockeyscan.txt`, `ibc.txt`, `huh.txt`, `bvhs.txt`, `bnq.html`, `csa.pdf`,
-> `goalie.pdf` and `pass.txt`, **only `ibc.txt` is present.** [`sources/README.md`](../sources/README.md) is the
+> `goalie.pdf` and `pass.txt`, **`ibc.txt` and `huh.txt` are present** — the latter also as
+> `huh_layout.txt`. The other eight are absent. [`sources/README.md`](../sources/README.md) is the
 > authoritative inventory and is correct; this list is not.
+>
+> ⚠️ **This block was itself stale and said so about others.** It read *"only `ibc.txt` is present"*,
+> verified 2026-08-28, and `huh.txt` had been fetched since. **A reviewer following it would have
+> concluded the Heads Up Hockey material was uncheckable here** — and on 2026-08-31 an agent needed
+> exactly that file to establish that the corpus had a spinal-injury mechanism stated backwards. It
+> read the file anyway, because it checked disk rather than this list. **That is the only reason the
+> defect was found.**
+>
+> **So the rule this block teaches applies to the block.** A hand-maintained inventory of what is
+> absent goes stale in the one direction that causes harm: **it never notices an arrival.** Check
+> `ls sources/` and [`sources/README.md`](../sources/README.md), not this paragraph.
 >
 > **Why this is worse than a stale path list.** The section below tells you to search the working directory
 > *before* declaring something unfindable. A writer following that instruction for a goaltending claim finds
@@ -963,12 +998,74 @@ in a heading is a second copy of the list, and the copy is what rots.**
    matching only `-\n` does not repair this** — collapse `- ` as well. The NHL twin of the same
    sentence has *"may counter"* intact, so a cross-book comparison hides it too.
 
-8. ⚠️ **The file you grepped may not contain the book.** `sources/heo_intl_drill_symbols.txt`
+8. ⚠️ **A `.txt` that looks substantial and contains none of the document.** This is the one that
+   cost the most. **CRT6** — the concussion recognition tool the corpus quotes — is a two-page PDF
+   whose **content pages are images**. `pdftotext` yields **1,535 bytes**, which looks like a real
+   extraction; it is the **BMJ stamp and page furniture only**. `grep -ci "helmet"` on it returns
+   **0**, and so does every other content word.
+
+   **Two agents and a coordinator concluded from that zero that no source stated the instruction**,
+   and one nearly wrote *"no primary source located for this corpus states it"* into a safety
+   passage. **The instruction is in the document**, in the *"Remember"* box: *"Do not remove helmet
+   (if present) or other equipment."* It was found by rendering the pages with `pdftoppm` and
+   **reading them by eye**.
+
+   ⚠️ **Distinguish this from a 30-byte stub, which announces itself.** A 1,535-byte file does not.
+   ⚠️ **And it is NOT a scan** — CRT6 is an InDesign-produced PDF with a **real text layer**, which is
+   why `pdffonts` shows embedded fonts and looks reassuring. **The text layer simply holds none of
+   the document's words.** A repair that called it *"a scanned image with no extractable text
+   layer"* was wrong on both halves and had to be corrected — **the misdescription is the same shape
+   as the false negative it explains.**
+
+   **The test that works: the ratio of extracted bytes to page count.** A two-page document
+   yielding under ~2 KB is furniture. ⚠️ **And check BOTH extraction modes** — `pdftotext -layout`
+   gives 1,535 bytes here and plain `pdftotext` gives 505; **two different misleading answers from
+   one file, by the two commands this project routinely uses.** Then render it and read it.
+
+9. ⚠️ **A running head injected MID-SENTENCE — and it SURVIVES FLATTENING.** `pdftotext` drops
+   page furniture inline, so a holding in the USA Hockey Casebook reads *"an attacking player was
+   illegally **CASEBOOK** in the crease"* — the words `Playing Rules` and `CASEBOOK` spliced
+   between subject and verb. **A whole-sentence grep returns zero for text that is present**, and a
+   second holding in the same rule is split by a full furniture block.
+
+   ⚠️ **THE STANDARD REMEDY DOES NOT WORK ON THIS ONE, and that was discovered the hard way.**
+   Everywhere else this guide says to build a de-hyphenated, form-feed-stripped,
+   **whitespace-flattened** copy before asserting an absence. **Flattening cannot help here**, because
+   the injected running head is a **word, not whitespace**. Verified in `sources/usah.txt:1629`,
+   USA Hockey Rule 204(a):
+
+   ```
+   lineup on the ice or changing players, the Referee shall warn            Teams
+   the offending team.
+   ```
+
+   Flattened, that reads *"the Referee shall warn **Teams** the offending team."* Measured on the
+   flattened file: the true sentence returns **0** hits and the corrupted one returns **1**. **So a
+   verifier who did everything this guide tells them to do would still have reported a verbatim
+   corpus quotation as fabricated.**
+
+   **What actually survives it is reading a LINE RANGE.** Find the rule's heading, then
+   `sed -n 'START,ENDp'` and read. **Do not search a passage you have not located; locate it, then
+   read it.** The Casebook finding came from an agent that read all seventeen situations line by
+   line instead of searching them.
+
+10. ⚠️ **The file you grepped may not contain the book.** `sources/heo_intl_drill_symbols.txt`
    is **30 bytes** — the title and nothing else, because the PDF is a scan. A grep for a player
    symbol in it returns zero, and the symbol is on the page. Worse, a book can be **registered
    and absent**: `carha.txt` had a row in `sources/README.md` *and* in `scripts/fetch_sources.sh`
    while no such file existed on disk. **Registration is not existence, and existence is not
    content.** `wc -c` the extraction before you trust an absence in it.
+
+   ⚠️ **That `carha.txt` example is HISTORICAL — the file is now on disk, 206 KB, and it matters.**
+   Marked because the trap runs both ways and the second way bit on 2026-08-31: a census read this
+   paragraph and reported the style guide as still recording CARHA absent. It does not — this is the
+   only mention of the file in the guide, and it is past tense. **But the same census then found two
+   criticals that only `carha.txt` could settle**: `shooting.md` told readers *"the only
+   governing-body ban [on slap shots] is USA Hockey's, in Blind Hockey"* when **CARHA Rule 79(a)
+   bans it outright, minor escalating to major on injury** — a rule `rules_primer.md` already
+   quotes verbatim. **So a book can also be present, extracted, cited by one document, and
+   unconsulted by the document that most needed it.** Neither the README nor this guide can tell you
+   that; only opening the file can.
 
 **Flatten and de-hyphenate before asserting any absence**, and attack a negative **by
 concept, not by phrase** — a confident phrase-census once missed the book with the strongest
@@ -1001,6 +1098,65 @@ one granting permission.**
 
 ---
 
+## ⚠️ TWO LAYERS ARE NEVER VOICED AT ALL — measured, and it changes what "disclosed" means
+
+`scripts/md_to_speech.py:426` sets `DROP_SECTION_HEADINGS = ("notes on verification",)`, and the
+**Sources trailer is dropped as well.** Measured by rendering the whole corpus and searching the
+emitted SSML: `Rulebooks:`, `Rules (primary)`, `read on 29 August` and `link baseline` appear in
+**zero** spoken characters out of roughly five million. **All 37 documents carry a Sources trailer.
+None of it is voiced.** On the site it renders as a **closed `<details>`** as well.
+
+⚠️ **So a qualification parked in either layer is PAGE-ONLY BY CONSTRUCTION.** For a listener it does
+not exist; for a reader it is behind a disclosure triangle.
+
+**That is not a defect in itself** — a bibliography belongs there. **The defect is a substantive
+LIMIT ON A CLAIM that lives only there**: the body states something flatly, and the only thing
+qualifying it sits where nobody hears it.
+
+⚠️ **This changes how "we disclosed it" should be read.** One finding was described as *"adequate on
+the page and inadequate read aloud"*; measured, it is stronger — **the qualifier does not exist in
+audio at all.** Three sites in one document dated a rule change with the limit only in *Notes on
+verification*, and one was a **`Rule:`-labelled fact** carrying a citation that does not support the
+date.
+
+**When you write a limit, put it in a voiced layer.** Sources may repeat it. Sources may not be the
+only place it lives.
+
+---
+
+## ⚠️ Diagram captions are VOICED, and no grep over `content/` can see them
+
+**A caption is read aloud.** It lives in `site/src/diagrams/<document>.mjs`, not in the markdown —
+so **every corpus-wide census you run over `content/` sees a clean corpus whether the captions are
+clean or not.** Six such censuses ran in one round while this layer went unexamined.
+
+⚠️ **The characteristic caption defect is a qualification the PROSE keeps and the caption sheds.**
+Measured across all 112:
+
+- A rule-set claim stated **flat** in two captions while **all ten** prose sites carried the same
+  hedge verbatim — *"no KHL rulebook was available to check it against."* The captions were the only
+  sites that shed it.
+- **Two qualifications dropped in one sentence** — a strength-state scope and an *"among the"* hedge
+  — in the one document that carries that scope as its own facts line.
+- An unsourced superlative in a caption's **opening clause**, the first thing voiced.
+- A statistic stated bare that its owner scopes to a three-year five-on-five sample.
+
+⚠️ **And a caption can be wrong about the picture it captions.** One said two defencemen were
+*"about 100 feet apart"*; the rink's owner says blue line to blue line is **50 ft**, the diagram's
+coordinates are 50 units apart, and the picture draws **36**.
+
+**Three rules follow.**
+
+1. ⚠️ **When you repair a claim in prose, grep `site/src/diagrams/` for it too.** Three caption
+   defects in one round were found only because someone rendered audio for an unrelated reason, and
+   one played a retracted superlative **immediately before the corrected prose**.
+2. ⚠️ **If a caption agrees with its prose and both are wrong, the PROSE owns it.** Fixing the
+   caption alone manufactures caption/prose drift — the defect this rule exists to prevent.
+3. ⚠️ **`site/src/data/diagrams.json` is GENERATED and TRACKED.** `build-diagrams.mjs` writes it.
+   **Editing it does nothing: the next build silently reverts you, and `git diff` shows your change
+   right up until it vanishes.** That happened. **Edit the `.mjs`, rebuild, then confirm the change
+   survived into the JSON.**
+
 ## What is actually voiced alone — measured, not assumed
 
 **The corpus's central premise is that text is heard "standalone, with no surrounding context."**
@@ -1013,6 +1169,8 @@ reading the SSML:
 | A ` ```facts ` line | its **own `<p>`**, introduced by *"The key facts for this section."*, with a **300 ms break** either side | ⚠️ **YES** |
 | A section heading | its own `<p>` with a 450–1000 ms break | **YES** |
 | A **bold numbered principle** (`**3. Never both defencemen on the puck.**`) | **merged into its paragraph** — *"three. Never both defencemen on the puck… One defenceman engages, the other stays home."* | **NO** |
+| **A body LIST ITEM** — a `-` bullet or a numbered step | its **own `<p>`**, with a break between items, exactly like a facts line | ⚠️ **YES** |
+| A **blockquote** paragraph | its own `<p>` | **YES** |
 | Body prose | one `<p>` per paragraph | per paragraph |
 
 ⚠️ **So the "read aloud alone" argument is exactly right for facts lines and headings, and wrong for
@@ -1028,13 +1186,57 @@ grounds the reviewer had not used: it makes the heading agree with its own facts
 rendered site a bold lead-in is a **visual scanning target**, read by a skimmer with nothing around
 it even though a listener hears it in context.
 
+⚠️ **The list-item row is a late addition, and its absence cost real work.** `md_to_speech.py`
+emits one `<p>` per list item, so **a bullet is voiced as alone as a facts line is** — but the table
+did not say so, and two rounds of anaphor work were scoped to chunk openings on the strength of it.
+`goaltender.md`'s bullets *"It gives away the top of the net" / "It is worse the smaller you are" /
+"It removes save selection"* were repaired as chunk-openers **and were not chunk-opening** — they sat
+at lines 13/15/17 of one chunk with their antecedent in the same chunk. **They still needed the
+repair, because a list item is its own `<p>`.** The brief was wrong about why and right about what.
+
+⚠️ **POSITION IN A CHUNK IS IRRELEVANT for a facts value or a list item.** A chunk boundary is a
+function of character budget and moves on the next edit; the 300 ms break around a bullet does not.
+**Do not scope an audio review to chunk openings** — two independent agents, working different
+halves of the corpus, ended their reports declaring that same hole.
+
+⚠️ **And a pronoun list is the CEILING of an anaphor method, not the floor.** *"Two riders in the
+same rule are worth knowing"*, *"The same is true against you"*, *"The second exception…"*,
+*"Its Note 1 defines…"* are each as unmoored as a bare *"It"* and match no pronoun at all. **Read the
+unit and ask whether it identifies what it is about.** Conversely `Neither X nor Y` and `Both X and
+Y` are self-contained coordinations, and a sentence that **defines its own referent in the same
+breath** is fine — **four sweeps over the pronoun pattern this round would have damaged correct
+text.**
+
 **Use this table before arguing severity from the audio.** *(A single linear track: one document
 renders to ~60 chunks with an `index.json` recording billed characters. There is no separate
 key-facts track — the facts blocks are inline, which is why their 300 ms isolation matters.)*
 
+⚠️ **A CHUNK IS NOT A FILE, and the two greps that settle it are these.**
+`site/src/components/AudioPlayer.astro` sets `const src = ${AUDIO_BASE}/${id}.mp3` and plays it
+from a single `<audio>` element: **one file per document, no playlist, no per-chunk player.**
+`md_to_speech.py`'s docstring says chunking exists to fit **Polly's per-request limits**, with a
+manifest so the pipeline can **concatenate**. So a chunk boundary is a **seam inside one
+continuous file** — the listener hears the next value after the ordinary 300 ms break, like any
+other. **No argument may rest on a listener "never reaching the next file"; there is no next
+file.** (Nor can a section split move a boundary on purpose: only a `##` heading opens a chunk,
+never a `###` — everything else is size-driven packing.)
+
+⚠️ **This paragraph exists because the row above was not enough.** A tool,
+`scripts/check_chunk_tails.py`, was designed, built and dispatched against on the belief that a
+chunk-terminal value's qualification "opened the next file" — **after** the row above had been
+written from two independent agents' findings, and by the person who was working from it. The
+defects it surfaced were real; the reason given for them was not. **Wrong about why, right about
+what** — for the third time in this guide, which is why the fact is now stated as two file paths
+rather than as a principle.
+
 ## When the rulebook itself contains a typo
 
-Printed rulebooks contain errors. **Five are known, in four different books:**
+Printed rulebooks contain errors. **The rows below record the ones found so far, in four different
+books.** ⚠️ **No count is given, deliberately.** A count here went stale the same day it was written:
+it said *"five"*, a row was widened to cover a systematic offset spanning more than a dozen bad
+citations, a sixth row was added, and the figure was wrong twice within one session — **once by the
+same author who had just corrected it.** The table is its own count. **Read it, do not quote a
+number out of it.**
 
 | Book | Rule | What it prints | Should read |
 |---|---|---|---|
@@ -1042,7 +1244,8 @@ Printed rulebooks contain errors. **Five are known, in four different books:**
 | USA Hockey | **618(a)¶3** | *"prevents and obvious and imminent goal"* | "an obvious" |
 | IIHF | **76.7** | *"When two (2) "face-off" violations" have been committed…"* | a stray unmatched closing quote after *violations* |
 | Hockey Canada | **6.7(d)(iii)** | *"as per **Rule 6.18 – Time of Game**"* | **Rule 6.17** is Time of Game. **Rule 6.18 is Goaltender Safety**, tagged `NEW` in this edition — a cross-reference left behind by the renumbering |
-| USA Hockey Casebook | signal index | *"**610(h)** Continued improper line change during stoppages"* | **Rule 610 runs (a)–(g). There is no 610(h).** The provision is **610(g)** |
+| Hockey Canada | **the Interpretation under Rule 9.1** | *"…would not count towards a player's three stick infractions for the purpose of a Game Ejection penalty under **Rule 4.8 (a)** – Game Ejection & Game Misconduct Penalties"* | **4.8(a) is the GAME MISCONDUCT clause.** The three-stick-infraction Game Ejection is **4.8(b)(i)** |
+| USA Hockey | **the whole reference apparatus, both volumes** | *"**610(h)** Continued improper line change during stoppages"*, and the same shift throughout | **Rule 610 runs (a)–(g). There is no 610(h).** The provision is **610(g)** |
 
 The first three are the books', not extraction artefacts — each confirmed against two independent
 extractions, and the NHL's additionally against a 600-dpi render of the printed page.
@@ -1051,6 +1254,35 @@ extractions, and the NHL's additionally against a 600-dpi render of the printed 
 misspelling.** A misspelling is self-evident; a stale cross-reference **resolves successfully to the
 wrong rule.** A reader chasing 6.7(d)(iii) lands on *Goaltender Safety* and can only conclude that
 the corpus, which correctly cites **6.17(e)** for the 30-second time-out, has the number wrong.
+
+⚠️ **The USA Hockey one is the same species, and its scope was under-recorded here until it was
+re-measured.** This row previously read *"USA Hockey Casebook | signal index"*, which is wrong twice
+over: the shift is **not confined to the signal index**, and it is **not confined to the Casebook**.
+The Casebook cites `610(h)` at **ten separate Rule References**, uses `610(g)` to mean body-lettered
+`610(f)`, and **the Summary of Penalties in the Playing Rules volume itself** uses `610(e)` for body
+`610(d)`. From **(d) onward the reference layer is one letter ahead of the rule text, in both
+volumes** — verified by reading Rule 610 letter-by-letter in each. So this is not a typo in an index;
+it is a systematic offset, and a citation anywhere in that apparatus resolves to the wrong clause or
+to none.
+
+**Cite the body lettering.** Where a document quotes a Casebook situation, name the Casebook's own
+number as the Casebook's — *"printed there as 610(h)"* — rather than silently correcting it, so a
+reader holding the book can find the page.
+
+⚠️ **The second Hockey Canada row is the most dangerous shape in this table, and it is worth
+understanding why.** The citation *resolves* — 4.8(a) exists — and it carries **the whole rule's
+title**, *"Game Ejection & Game Misconduct Penalties"*, so it reads correct at a glance. But 4.8(a)
+is the **Game Misconduct** clause, and a reader who follows it concludes the Game Ejection **is** a
+Game Misconduct. **Rule 4.8's own Note 1 says it is not:** *"A Game Ejection is not equal to a Game
+Misconduct penalty and a player receiving a Game Ejection penalty does not trigger any automatic
+suspension."* So the wrong pointer does not merely waste a lookup — **it inverts whether the reader
+believes they are suspended for the next game.**
+
+⚠️ **Verified twice before this row was written**, and the first attempt was wrong: the same
+extraction carries *"Interpretation 1 Rule 4.8 (a)"* as a heading, which **is not an error** — that
+interpretation covers an officiating failure to remove a player and reaches Game Misconducts and
+Game Ejections alike, so it is correctly filed. **A table of other books' errors must not acquire one
+of its own**, and a report naming the wrong instance was one paste away from putting it here.
 ⚠️ **So the corpus is right and the book that appears to contradict it is the thing in error** —
 which is the exact reverse of the assumption a verification pass runs on. **Cite 6.17(e). Do not
 "correct" it to 6.18, and say why if the discrepancy is likely to be re-found.**
@@ -1167,6 +1399,27 @@ The full corpus:
 Link only to documents on this list. Assume every one of them exists.
 
 ---
+
+### ⚠️ Fold a limit into the same SENTENCE as its permission, not the next paragraph
+
+A repair that adds a rule's **limit** as a **new paragraph** after its permission can put an
+**audio file boundary** between them. The renderer chunks on sentence ends, so a paragraph break
+is a legal place to split; a listener then receives the permission as the last thing they hear
+and the limit opens a file they may never play.
+
+⚠️ **This happened while FIXING exactly this class.** `shooting.md` carried Rule 69.7's rebound
+permission without its push-in limit. The repair added the limit as a following paragraph — and
+the render put the permission at the end of one chunk and the limit at the top of the next.
+**The fix created the defect it was closing.**
+
+**The remedy is mechanical: put the limit in the same sentence.** The chunker cannot split inside
+a sentence, so permission and limit travel together whatever else moves around them.
+
+⚠️ **And no gate sees this.** `scripts/check_chunk_tails.py` scans the ` ```facts ` layer by
+default because that layer is voiced alone; **body prose needs `--prose`**, which is off by
+default because every chunk ends in prose somewhere and the output is a reading list rather than
+a finding list. **Run `--prose` after any repair that adds a paragraph to a rule passage**, and
+compare against the run before it — the number moving is the signal, not the number itself.
 
 ## Numeric facts and their owners
 
@@ -1524,7 +1777,7 @@ before drawing a drill, not after.
 | Pass | dashed line, arrowhead |
 | Stop | two short slashes |
 | Pivot | hooked arrow |
-| Sudden stop | line ending in a perpendicular bar |
+| Sudden stop | line ending in **two** perpendicular bars |
 | Blocking (screening) | line ending in an open curve |
 | Body check | line ending in a hook |
 | Pylon | **`X`** — a cone, never a player |
@@ -1539,8 +1792,27 @@ separate symbol for the backward crossover.
 `/reading-diagrams/reading_ice_hockey_diagrams/`, viewed in a browser. Every symbol on that
 page is correct as drawn: forward skating, passing, backward skating (arches), lateral
 crossovers, pivot, blocking/screening (a single arc), dropping the puck, skate-and-stickhandle,
-shooting, backward crossover (zigzag), stop, sudden stop, and **body check — a line ending in an
-S**, which took several attempts to get right.
+shooting, backward crossover (zigzag), stop and sudden stop.
+
+⚠️ **This sentence used to end *"and body check — a line ending in an S, which took several
+attempts to get right"*, and it was wrong twice over.** It contradicted this file's own symbol
+table thirteen lines above, which says **a hook** and agrees with the renderer
+(`site/scripts/lib/rink.mjs`: `bodycheck: { line: 'plain', end: 'hook' }`). And it listed the
+glyph among the symbols on that page when **the page does not draw one** — `notation.mjs`
+contains no body-check reference, and `rink.mjs` omits it from the legend **deliberately**, with
+its reason stated: *"a legend that advertises a body-check glyph without saying who may legally
+deliver one is a contact instruction with no scope attached."*
+
+⚠️ **The renderer is the better-sourced side of both disagreements and should be treated as
+authoritative on glyph shape.** Its comments record that the sudden-stop mark was *"read off the
+rendered page at 1200 dpi, not off the extracted text, which loses every glyph"*, and that **a
+ONE-bar terminal is the Hockey Eastern Ontario checking-pressure mark, in no IIHF symbol at
+all** — so the singular *"a perpendicular bar"* this table used to carry named **the other key's
+symbol**.
+
+⚠️ **The instruction below still stands and is not weakened by this correction: do not edit the
+GLYPH.** What was corrected here is this file's **description** of it — which is exactly the
+"raise it and get a decision" route the next paragraph prescribes.
 
 **Do not change, "correct" or re-review these glyphs.** The body check in particular has been
 drawn wrong more than once — as the mirror of the screen — and the current version is the one

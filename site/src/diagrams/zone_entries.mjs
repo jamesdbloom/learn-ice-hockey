@@ -140,7 +140,10 @@ const wideEntry = {
     'high for the back-door or point option. Going wide with nobody behind you is not an attack ' +
     'but a slow dump-in with extra steps, because you arrive alone below the goal line with the ' +
     'defence between you and the net. No contact is drawn: the defender is beaten by having to ' +
-    'turn, not by being hit.',
+    'turn, not by being hit. The net drive stops at the blue paint: live at the edge of it and ' +
+    'keep your body out of the crease — screening from outside it without contact is legal, ' +
+    'but positioning alone can void a goal if it stops the goalie moving freely or defending the ' +
+    'net (NHL Rule 69.1).',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +
@@ -182,6 +185,27 @@ const wideEntry = {
     { from: WIDE_CARRIER, to: { at: 'goal-line', dy: 29 }, kind: 'carry', bow: 6 },  // (89, 29)
     // Stops in front of the net and short of the crease. The renderer's rule and
     // the corpus's: a route may not run through the crease or across the goal mouth.
+    //
+    // MEASURED, against src/data/rink.json at commit b9ed6b7,
+    // sha256 d441c7942e1ed27c1a55c1d6261c1232fe1eadd97cf79f3c2e8d4aa871b06579 — the
+    // arithmetic below is only true of THAT table, and a nudge to `crease` or `slot`
+    // moves it with no diff touching this file. Tip (78, -5); the opposition
+    // goaltender's anchor (86 - 1, 0) = (85, 0). d = 8.60 ft, terminal tangent (the
+    // chord: this route has no bow) 60.9 degrees off the bearing to him, so the
+    // lateral miss is 7.52 ft, well outside the 2.9 ft glyph. But d is INSIDE
+    // ARRIVAL.noArrow = 9, so this is the closest skater arrowhead to a goaltender in
+    // the corpus, and it is the only one of the four in FRONT of the net: the two at
+    // 7.81 ft (`forecheck-212`, `nz-1-2-2-containment`) finish behind the goal line
+    // outside the near post with the frame interposed.
+    //
+    // check-arrivals downgrades a goaltender arrival to advisory BY DESIGN — every net
+    // drive finishes near him by construction, so failing on it would forbid drawing
+    // one — which means nothing mechanical will ever raise this. The remedy the corpus
+    // uses is a caption clause, and the caption now carries the same NHL 69.1 wording
+    // as `winger-offensive-zone-patches`, which was the only front-of-net drive that
+    // had it. Do not "fix" this by shortening the route instead: a drive that stops
+    // further out is a different play, and the caption is where the obligation belongs,
+    // because what happens in the last few feet is movement over time.
     { from: NET_DRIVER, to: { at: 'slot', dx: 2, dy: -5 }, kind: 'skate' },          // (78, -5)
   ],
 
@@ -207,8 +231,10 @@ const delayCurl = {
   width: 900,
 
   caption:
-    'The delay, or curl-back — the single most valuable and least used ' +
-    'skill at amateur level. Arriving at the line alone against two defenders, the carrier does ' +
+    'The delay, or curl-back — the play that runs hardest against instinct, because turning away ' +
+    'from the offensive zone feels like retreating, which is why so many entries at rec and youth ' +
+    'level are wasted forcing something instead. ' +
+    'Arriving at the line alone against two defenders, the carrier does ' +
     'not stop and does not force it: he turns away from the pressure, curls back toward the ' +
     'neutral zone with his body between the defender and the puck, looks back up ice rather ' +
     'than at the defender, and buys the one or two seconds his late support needs to arrive at ' +
@@ -486,7 +512,11 @@ const crossCorner = {
     'uncomfortable retrieval in hockey. It only works because the far-side ' +
     'winger has read it and is already going there; cross-corner dumps into nobody are pure ' +
     'giveaways. The same read can instead be answered by going straight north down your own ' +
-    'side, depending on where your speed is, and that alternative is not drawn.',
+    'side, depending on where your speed is, and that alternative is not drawn. ' +
+    'Nothing about how the chase finishes is drawn here; angling is movement over time and a ' +
+    'subject of its own. Read the sentence above again before you skate it, though: a defenceman ' +
+    'facing his own boards has his back to you, which is the picture the checking-from-behind ' +
+    'rules are written about. Arrive on the puck, never on his back.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -660,15 +690,18 @@ const trapezoidAim = {
 
   caption:
     'Where the trapezoid applies, it gives you a simple aiming rule: dump to the corners, not to ' +
-    'the goaltender. The marked lines behind the net are the only area in which he may play the ' +
-    'puck, what is judged is the position of the puck rather than his own position, and his one ' +
+    'the goaltender. Behind the goal line, the marked lines are the only area in which he may ' +
+    'play the puck, what is judged is the position of the puck rather than his own position, ' +
+    'and his one ' +
     'exception is playing it while keeping a skate in contact with his crease. So the corners ' +
     'are legally out of bounds for him and the ice directly behind the net is not: a puck that ' +
     'dies straight behind the net is one he can legally stop and set up for his defenceman, ' +
     'which is exactly the help you were trying to deny him, while a puck in the corner has to be ' +
     'retrieved by a skater with a forechecker arriving. If you must put it behind the net, put ' +
-    'it there hard. Where the trapezoid applies is not universal — it is the NHL, the KHL and ' +
-    'the IIHF book, most rec, beer-league and youth associations outside Britain do not use it, ' +
+    'it there hard. Where the trapezoid applies is not universal — it is the NHL and ' +
+    'the IIHF book, with the KHL commonly said to have one too though no KHL rulebook was ' +
+    'available to check that one; neither the USA Hockey book nor the Hockey Canada book marks ' +
+    'one at all, so a league running on either has none, ' +
     'and in England and Wales the status is genuinely unsettled — so look behind the net to see ' +
     'whether the lines are painted at all, ask your league, and plan as though their goalie may ' +
     'come for it. Where there is no trapezoid the advice flips: rim it hard and low so he cannot ' +

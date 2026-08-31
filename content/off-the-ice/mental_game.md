@@ -28,7 +28,7 @@ Your top speed and your shot barely move between Saturday and Sunday; your atten
 
 Three phrases are used consistently, and they mean specific things.
 
-- **"The research supports this."** There is published, peer-reviewed work — usually a meta-analysis or a well-replicated finding — behind the claim. The named study is in the Sources section.
+- **"The research supports this."** There is published, peer-reviewed work — usually a meta-analysis or a well-replicated finding — behind the claim, and the study is named at the point where the claim is made.
 - **"The evidence here is thin"** or **"contested."** The idea is popular, and it may well be true, but the studies are few, small, mostly done outside sport, or the field disagrees. Use it, but don't build your season on it.
 - **"This is coaching craft."** It is what experienced coaches and players do. Nobody has tested it properly. That is not a reason to ignore it — most of hockey is coaching craft — but it is a reason not to present it to a teammate as a scientific fact.
 
@@ -78,10 +78,10 @@ The technique below is coaching craft in its specific form — no study has test
 
 **Three: a cue word.** One or two words, said internally, that point at what you are about to do — not at what you just did, and not at how you should feel. "Next." "Feet." "Inside." "Wall." **The research supports self-talk in general:** the standard meta-analysis (Hatzigeorgiadis and colleagues, 2011, covering 32 studies and 62 effect sizes) found a positive moderate overall effect, ES = 0.48.
 
-Two of its moderator findings matter for how you use this, and the first is routinely misreported.
+Two of the 2011 self-talk meta-analysis's moderator findings matter for how you use a cue word, and the first is routinely misreported.
 
-- **It supports a *matching* hypothesis, not blanket instructional superiority.** The phrase is the paper's own: its figure on the point is captioned *"The matching hypothesis on the effectiveness of self-talk: Interaction between task demands and self-talk content."* The advantage it claims is narrow — instructional self-talk beat motivational self-talk **for tasks with relatively fine motor demands**, and it is claimed there and nowhere else. Its results table does report all four combinations, and on **gross** tasks the two run the other way: instructional d = 0.22 against motivational d = 0.33. That is a reason not to call an instructional cue the better choice for gross work, rather than proof that a motivational one wins. (Those four cell figures are **second-hand** — the paper is paywalled and was not read for this document; see Sources.) Self-talk interventions overall also worked better on fine tasks than gross ones. So match the cue to the job: **instructional for the precise things** — a shot placement, a faceoff hand position, a saucer pass through a lane — and **motivational for the gross, effortful things** — a hard forecheck, a puck battle, the last twenty seconds of a shift. "Get the stick on the ice" is an instructional cue attached to a gross-motor task, and the meta-analysis does not show it beating "come on, work."
-- **The effect was larger for novel tasks than for well-learned ones.** Neither kind of cue will do much for a skill you have already automated.
+- **Hatzigeorgiadis and colleagues' 2011 meta-analysis supports a *matching* hypothesis, not blanket instructional superiority.** The phrase is the paper's own: its figure on the point is captioned *"The matching hypothesis on the effectiveness of self-talk: Interaction between task demands and self-talk content."* The advantage it claims is narrow — instructional self-talk beat motivational self-talk **for tasks with relatively fine motor demands**, and it is claimed there and nowhere else. Its results table does report all four combinations, and on **gross** tasks the two run the other way: instructional d = 0.22 against motivational d = 0.33. That is a reason not to call an instructional cue the better choice for gross work, rather than proof that a motivational one wins. (Those four cell figures are **second-hand** — the paper is paywalled and was not read for this document; see Sources.) Self-talk interventions overall also worked better on fine tasks than gross ones. So match the cue to the job: **instructional for the precise things** — a shot placement, a faceoff hand position, a saucer pass through a lane — and **motivational for the gross, effortful things** — a hard forecheck, a puck battle, the last twenty seconds of a shift. "Get the stick on the ice" is an instructional cue attached to a gross-motor task, and the meta-analysis does not show it beating "come on, work."
+- **Self-talk's effect was larger for novel tasks than for well-learned ones.** Neither kind of cue will do much for a skill you have already automated.
 
 **Four: name your next action, not your last one.** Before your skates hit the ice again, you should be able to say what you are doing on this shift in one concrete sentence: "First forechecker, take the D's inside shoulder." "Get above the puck." "Hard on the wall, don't get beaten to the middle." This is the whole reset in one move; the previous three exist to make it possible.
 
@@ -95,8 +95,8 @@ The instinctive move — deciding *not* to think about the mistake — tends to 
 - **Sport performance: g = 0.37 (95% CI 0.00–0.79), with moderate evidence.** A small effect, and the authors put it no higher than "might be effective."
 - **Experiential acceptance: g = 0.36 (95% CI 0.00–0.92), with only anecdotal evidence.**
 
-Note the confidence intervals: **every one of them has a lower bound of 0.00.** The point estimates are the headline; the intervals say that on eleven trials none of these effects is separated from zero.
-- **Psychological flexibility: not supported.** The authors' own conclusion is that "Currently available trials, however, do not provide sufficient evidence supporting the MAC protocol's effectiveness in developing psychological flexibility, experiential acceptance, and promoting well-being among athletes."
+Note the confidence intervals on those three MAC findings: **every one of them has a lower bound of 0.00.** The point estimates are the headline; the intervals say that on eleven trials none of these effects is separated from zero.
+- **Psychological flexibility: not supported.** The 2023 meta-analysis's own conclusion is that "Currently available trials, however, do not provide sufficient evidence supporting the MAC protocol's effectiveness in developing psychological flexibility, experiential acceptance, and promoting well-being among athletes."
 
 So: the acceptance stance below is worth using, and it is better than suppression, but **file it under "the evidence here is thin" rather than "the research supports this."** A systematic review in the *British Journal of Sports Medicine* has separately examined mindfulness-based programmes for elite athlete mental health, which is a different question again.
 
@@ -118,7 +118,7 @@ You have three jobs on the bench and none of them is post-mortem.
 
 ### The distinction
 
-An **outcome goal** is about a result you do not fully control: score tonight, win, get a point, don't get scored on. A **process goal** is about an action you fully control: keep the gap through the neutral zone that [Defending the Rush](../systems/defending_the_rush.md) sets out — **two to three stick lengths**, tightening to a stick and a half at the red line — get your first touch away from pressure, shoot within half a second of receiving in the slot, finish every check.
+An **outcome goal** is about a result you do not fully control: score tonight, win, get a point, don't get scored on. A **process goal** is about an action you fully control: keep the gap through the neutral zone that [Defending the Rush](../systems/defending_the_rush.md) sets out — **two to three stick lengths**, tightening to a stick and a half at the red line, though that document calls its distances a guide rather than a law, moving with your backward speed and the attacker's skill — get your first touch away from pressure, shoot within half a second of receiving in the slot, angle every carrier off the middle. ⚠️ **Not "finish every check", which is the one goal of that shape you may not be allowed to keep:** body checking is not permitted at all in most adult recreational leagues, and which other classifications allow it differs by book — [Body Contact and Battles](../technique/body_contact_and_battles.md) §1 sets that out, including the restricted form the IIHF writes for women's hockey and the fact that no British source publishes an age at all. And even where you may check, *"finishing the check"* on a player who has already passed or shot is a late hit rather than a virtue. Angling, by contrast, is legal in every league. See [Game Management](../systems/game_management.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 You cannot control whether the puck goes in. Between the moment the puck leaves your blade and the moment it hits the goalie's chest, there is a screen you did not place, a deflection you did not cause, and a save that is somebody else's skill. You can control your route to the puck, your gap, your first touch, your shot selection and whether your feet are moving.
 
@@ -154,7 +154,7 @@ The pattern: point the cue at the puck, the ice, the target or the opponent, not
 
 Pick **three** process goals for the season, no more, and make them specific to your role.
 
-> **These examples are system-dependent, not rules of hockey.** They are written for the **house default used throughout this guide: a low zone collapse (zone) defensive-zone coverage with a 2-1-2 forecheck.** Under a **man-to-man** defensive-zone coverage the centre is not automatically the low forward — they follow their check, including up to the point — and the winger's job becomes "stay attached to my man" rather than "hold the high slot." Under a **1-2-2 forecheck** the winger's entry job is containment on the wall rather than arriving at the net front. **Ask your coach which system you play and rewrite these accordingly.**
+> **The process-goal examples below are system-dependent, not rules of hockey.** They are written for the **house default used throughout this guide: a low zone collapse (zone) defensive-zone coverage with a 2-1-2 forecheck.** Under a **man-to-man** defensive-zone coverage the centre is not automatically the low forward — they follow their check, including up to the point — and the winger's job becomes "stay attached to my man" rather than "hold the high slot." Under a **1-2-2 forecheck** the winger's entry job is containment on the wall rather than arriving at the net front. **Ask your coach which system you play and rewrite these accordingly.**
 
 - **Defenceman:** maintain gap through the neutral zone; first touch on retrievals goes to the wall, not the middle; get shots through from the point rather than looking for the perfect lane.
 - **Winger (low zone collapse / 2-1-2):** arrive at the net front on every entry; support the wall battle rather than waiting at the blue line; first pass out of your own zone is up the boards.
@@ -230,7 +230,7 @@ You will be told, confidently, that performance follows an inverted U against ar
 **What this means for you on a hockey bench.** Do not think "there is an optimal arousal level and I should be in the middle." Think instead:
 
 - **Your optimal state is individual, and it may not be calm.** This is the core of Yuri Hanin's **Individual Zones of Optimal Functioning (IZOF)** model, developed over roughly four decades of research, which replaces the universal curve with individually determined optimal emotion zones. Some players genuinely play best furious. Some play best serene. Find yours empirically — see below.
-- **It also depends on what you are about to do.** Simple, physical, automated tasks tolerate high arousal well. A hard forecheck, a shot block, a puck battle: crank it up. Fine, complex, novel tasks do not. A shootout attempt, a first-time power-play look you installed on Tuesday, a delicate saucer pass through a lane: you want to be lower.
+- **Your optimal arousal also depends on what you are about to do.** Simple, physical, automated tasks tolerate high arousal well. A hard forecheck, a shot block, a puck battle: crank it up. Fine, complex, novel tasks do not. A shootout attempt, a first-time power-play look you installed on Tuesday, a delicate saucer pass through a lane: you want to be lower.
 
 ### The catastrophe model — the version that best matches how hockey actually falls apart
 
@@ -308,7 +308,7 @@ Times are relative to puck drop. The specific numbers are coaching craft; adapt 
 **Twenty to thirty minutes out — off-ice warm-up**
 - Raise body temperature. Dynamic movement, not static stretching.
 - Hands: puck on a stick, passing off a wall, stickhandling.
-- This is where you deliberately set your arousal up or down per section 5.
+- The off-ice warm-up is where you deliberately set your arousal up or down — see [Nerves and arousal](#5-nerves-and-arousal) above.
 
 **On-ice warm-up**
 - Skate to actual game speed at least twice — a warm-up entirely at 60% teaches your body that tonight is a 60% night.
@@ -319,7 +319,7 @@ Times are relative to puck drop. The specific numbers are coaching craft; adapt 
 - **One** thought about the game, and make it a process cue. Not "we need this one." Something like "first pass up the wall" or "gap early."
 
 **Between periods**
-- Same principle, compressed: recover, one adjustment, one process cue.
+- Between periods, the same principle compressed: recover, one adjustment, one process cue.
 - Do not spend the intermission on the referee.
 
 ### Imagery, if you use it
@@ -512,7 +512,7 @@ Given that, here is what actually helps.
 
 Two rules are worth knowing precisely, because losing your temper is expensive in a literal sense.
 
-**NHL Rule 39 — Abuse of Officials** covers this in detail. A minor penalty is assessed for "any player who challenges or disputes the ruling of an official," for abusive language or gestures directed at any official, and — the one players routinely forget — for "any player or players who bang the boards with their sticks or other objects at any time, or who, in any manner show disrespect for an official's decision." Banging the glass in protest gets the same treatment, and persisting escalates to a misconduct.
+**NHL Rule 39 — Abuse of Officials** covers this in detail. A minor penalty is assessed for "any player who challenges or disputes the ruling of an official," for abusive language or gestures directed at any official, and — the one players routinely forget — for "any player or players who bang the boards with their sticks or other objects at any time, or who, in any manner show disrespect for an official's decision." That last clause carves out one case, and it is worth knowing before you hammer the boards for an injured teammate: where the banging is done to get the on-ice officials' attention for a legitimate reason such as a serious injury or illness, the same clause says *"discretion must be exercised by the Referees."* Banging the glass in protest gets the same treatment, and persisting escalates to a misconduct.
 
 **NHL Rule 75 — Unsportsmanlike Conduct** covers the same energy directed at anyone other than an official: a minor for obscene, profane or abusive language or gestures "directed at any person," and a minor for "any player who throws any object onto the ice from the players' or penalty bench."
 

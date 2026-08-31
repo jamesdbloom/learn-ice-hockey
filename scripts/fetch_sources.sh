@@ -59,6 +59,22 @@ DOCS=(
   "iihf_rules_2026-27|https://www.iihf.com/|https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/rule%20book/2026-27_iihf_rule_book.pdf"
   "iihf_situations_2026-27|https://www.iihf.com/|https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2026-27_iihf_situation_handbook.pdf"
   "nhl_rules|https://www.nhl.com/|https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf"
+  # ⚠️ THE SUPERSEDED 2024-2025 NHL EDITION. It is here as DATING EVIDENCE and
+  # nothing else. The corpus asserted that NHL Rule 60.1 and 60.3 were rewritten
+  # for 2025-26, sourced to a BLOG, which is non-negotiable 2. Two editions of
+  # primary text settle it: 2024-2025 reads "A 'high stick' is one which is
+  # CARRIED ABOVE the height of the opponent's shoulders", where 2025-2026 reads
+  # "one which CONTACTS an opponent above the shoulders, provided their shoulders
+  # are at waist level or higher". The whole waist floor is new in 2025-26.
+  # A bonus the corpus now teaches: IIHF 2025/26 v1.1's 60.1 is word for word the
+  # NHL's SUPERSEDED sentence, which is why the two books diverge.
+  # ⚠️ NEVER CITE THIS FILE FOR A CURRENT RULE. It is a superseded book; a rule
+  # quoted from it is wrong unless the point being made is precisely that it
+  # changed. And it does not date the change beyond "first edition carrying it" —
+  # the NHL book contains no rule-change summary and dates no rule, and no edition
+  # earlier than 2024-2025 has been consulted, so how long the older wording had
+  # stood is NOT established. Do not let that gap close itself by repetition.
+  "nhl_rules_2024-25|https://www.nhl.com/|https://media.d3.nhle.com/image/private/t_document/prd/yikcdsxofkmgsrhjl3di.pdf"
   "usah|https://www.usahockey.com/|https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf"
   # ⚠️ The separate Rules AND CASEBOOK, 476pp. Round 52 fetched it and the corpus now cites it —
   # Rule 630 Situation 41 (which writes the NHL's delayed-offside own-goal exception OUT), Rule 607
@@ -98,13 +114,39 @@ DOCS=(
   # ⚠️ It governs CARHA-affiliated leagues only. It is not a general rec-hockey standard, and
   # the corpus's disclosures that no book governs rec hockey as a whole are about APPLICABILITY
   # and stay. Extracts cleanly with -layout; 1,008,517 bytes at time of verification.
+  # CRT6 — the Concussion Recognition Tool the corpus quotes for the on-ice spinal-injury
+  # response. Echemendia RJ, et al., Br J Sports Med June 2023;57(11):692-694,
+  # doi 10.1136/bjsports-2023-107021. England Ice Hockey hosts it; BMJ itself 403s.
+  #
+  # ⚠️ THE EXTRACTED .txt IS USELESS AND LOOKS FINE. Its content pages are IMAGES.
+  # pdftotext yields ~1,535 bytes of BMJ stamp and page furniture, so a grep for any
+  # content word returns zero from a file that is not obviously empty. Two agents and a
+  # coordinator concluded from that zero that no source stated "leave the helmet on";
+  # the tool's own "Remember" box says "Do not remove helmet (if present) or other
+  # equipment." Render with pdftoppm and read the pages. See sources/README.md.
+  # The UK Concussion Guidelines for Non-Elite (Grassroots) Sport, November 2024 update.
+  # Quoted verbatim in content/foundation/uk_rules.md for the 999/111 split, the red-flag
+  # list and the suspected-neck-injury instruction. England Ice Hockey has formally adopted
+  # it. Real text layer, 27pp, ~2.7 KB/page - this one greps honestly.
+  #
+  # WARNING The SRA page carries <base href="https://sportandrecreation.org.uk/">, so its
+  # "../files/..." hrefs resolve to the SITE ROOT. Resolving them against the page path
+  # returns a 404 - the shape that manufactures a false dead-link report. The URL below is
+  # the resolved one. EIH links the older April 2023 edition; the sentences the corpus
+  # quotes are verbatim in both, so nothing turns on which a reader opens.
+  "ukcg|https://sportandrecreation.org.uk/|https://sportandrecreation.org.uk/files/uk-concussion-guidelines-for-grassroots-non-elite-sport---november-2024-update-061124084139.pdf"
+  "crt6|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2024/02/Concussion-tool-CRT6.pdf"
   "carha|https://carhahockey.ca/|https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf"
 )
 
 # Books extracted BOTH ways. The plain extraction keeps the canonical name
 # because every existing line citation was derived against it; the -layout
 # extraction lands alongside as <name>_layout.txt. See the note in the loop.
-DUAL_EXTRACT=(nhl_rules hc)
+# ⚠️ nhl_rules_2024-25 is here because it is only useful COMPARED to nhl_rules,
+# and nhl_rules.txt is the PLAIN extraction. Extracting the two editions by
+# different methods would make every diff between them an artefact of the method
+# rather than of the rewrite -- which is the one thing this file is held for.
+DUAL_EXTRACT=(nhl_rules nhl_rules_2024-25 hc)
 
 command -v pdftotext >/dev/null 2>&1 || {
   echo "pdftotext not found — install poppler (brew install poppler)" >&2

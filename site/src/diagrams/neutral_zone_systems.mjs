@@ -224,6 +224,27 @@ const trap122 = {
     // 1 — "The puck carrier is allowed to skate — the trap does not want the puck
     //     at the start — and is steered to a wall." Bowed toward the boards, which
     //     is the direction the funnel sends him.
+    //
+    //     ⚠️ THE TIGHTEST AIM IN THE CORPUS, AND IT IS LEGAL ON A 1.20 FT MARGIN.
+    //     Measured against src/data/rink.json at commit b9ed6b7, sha256
+    //     d441c7942e1ed27c1a55c1d6261c1232fe1eadd97cf79f3c2e8d4aa871b06579 — every
+    //     number here is true only of THAT table:
+    //       tip                  T_ARRIVAL = (12, 31)
+    //       F2                   T_F2 = (2, WALL) = (2, 33)
+    //       tip -> F2 anchor     d = 10.198 ft
+    //       terminal tangent     (-0.9942, 0.1077), from the control point the
+    //                            renderer builds at (29.434, 29.111) for bow -5 —
+    //                            NOT the chord, which is 20 degrees off it here
+    //       lateral miss         0.911 ft, 10.16 ft beyond the tip
+    //     0.911 ft is far inside the 2.9 ft glyph, so this arrow's extended tangent
+    //     passes through F2's body. It is legal solely because d exceeds
+    //     ARRIVAL.noArrow = 9.0, by 1.198 ft: rule (b) is a hard failure and rule (a)
+    //     is advisory. It reads correctly on the page because F2's own bar-ended route
+    //     comes the other way, so the two marks meet rather than one running through
+    //     the other — which is why it was inspected and kept rather than redrawn.
+    //     ⚠️ A 1.2 ft nudge to `centre-ice`, to WALL, or to either endpoint turns a
+    //     clean build into an illegal picture with NO DIFF TOUCHING A SPEC. If you
+    //     move any of them, re-run scripts/check-arrivals.mjs and re-read this block.
     { from: T_CARRIER, to: T_ARRIVAL, kind: 'carry', bow: -5 },
     // 2 — "they arrive at the red line into F2 stepping up". Checking pressure,
     //     finishing on the inside shoulder: F2 is taking the ice away, not running
@@ -249,6 +270,9 @@ const trap122 = {
 // section's own reading drill is literally "count the bodies across the middle".
 
 const NZ_WALL_X = { dx: -2 };                              // the three-man line, just inside the red line
+// How far the unit slides. Equal for all three, and set by legibility rather than by
+// the section, which gives no distance — see the note on the routes below.
+const SLIDE = 8.5;
 const D131 = { at: 'centre-ice', dx: -2, dy: 0 };          // (-2, 0)  — the middle man, the read-maker
 const F2_131 = { at: 'centre-ice', dx: -2, dy: WALL };     // (-2, 33)
 const F3_131 = { at: 'centre-ice', dx: -2, dy: -WALL };    // (-2, -33)
@@ -307,12 +331,32 @@ const wall131 = {
 
   routes: [
     // "they slide as a unit toward whichever side the puck is on" — three equal,
-    // parallel, short routes, because a unit that slides unevenly is not a unit.
+    // parallel routes, because a unit that slides unevenly is not a unit.
     // Drawn as plain forward skating: the key's "lateral crossovers" symbol would
     // assert a skating technique the section does not name.
-    { from: F2_131, to: { at: 'centre-ice', ...NZ_WALL_X, dy: WALL + 7 }, kind: 'skate' },
-    { from: D131, to: { at: 'centre-ice', ...NZ_WALL_X, dy: 7 }, kind: 'skate' },
-    { from: F3_131, to: { at: 'centre-ice', ...NZ_WALL_X, dy: -WALL + 7 }, kind: 'skate' },
+    //
+    // ⚠️ THE LENGTH IS A LEGIBILITY CONSTRAINT, NOT A TACTICAL ONE. At 7 ft these
+    // were the three shortest skater routes in the corpus — the next is 8.90 ft, and
+    // that one is on a HALF-rink sheet at nearly twice the pixels per foot. A route
+    // spends its first `glyph` feet under the player it starts on (3.6 for a triangle's
+    // apex, 3.275 for a circle's inked edge) and its last 2.68 under the arrowhead
+    // (markerWidth 4.5 x stroke 0.7 x refX 0.85), so 7 ft left 0.72 ft of visible
+    // shaft — about four device pixels at this sheet's 5.39 px/ft. Rendered, all three
+    // read as free-standing SOLID TRIANGLES, which is the opposition-defenceman glyph,
+    // and the middle one sat directly above an open triangle so the picture showed an
+    // opposing D standing on ours. In the one diagram whose caption opens "count the
+    // rows", three marks that can be counted as players is the whole failure.
+    //
+    // 8.5 ft leaves 2.2-2.6 ft of shaft and reads as an arrow. It is also the ceiling:
+    // F2 starts on the wall at y = WALL, so his tip lands at 41.5 against a dasher at
+    // 42.5, and the arrowhead reaches back to 38.35 — inside the boards, but only just.
+    // ⚠️ Do NOT reach for more by widening the diagram. `width` is nominal px on a
+    // viewBox in rink feet, so head and shaft scale together and the RATIO never moves;
+    // widening buys nothing a phone will see. And do not move WALL, which nz-1-2-2
+    // above shares.
+    { from: F2_131, to: { at: 'centre-ice', ...NZ_WALL_X, dy: WALL + SLIDE }, kind: 'skate' },
+    { from: D131, to: { at: 'centre-ice', ...NZ_WALL_X, dy: SLIDE }, kind: 'skate' },
+    { from: F3_131, to: { at: 'centre-ice', ...NZ_WALL_X, dy: -WALL + SLIDE }, kind: 'skate' },
   ],
 
   puck: { at: THEIR_BLUE, dx: 17, dy: 25 },
@@ -436,7 +480,8 @@ const pressure = {
     'the ice; the weak-side defenceman stays home as your only genuine safety. Where the two forecheckers ' +
     'stand inside the zone is the 2-1-2’s business rather than the neutral zone’s, so it is ' +
     'drawn only as two forwards deep. Note the phase: this is the moment the puck comes out, and while ' +
-    'the forecheck is still live those same two defencemen are 100 feet further up at the offensive blue ' +
+    'the forecheck is still live those same two defencemen are the length of the neutral zone further ' +
+    'up, at the offensive blue ' +
     'line. Beat the two forecheckers with one pass and F3 is alone against three with the defence ' +
     'stepping up, which is how a 3-on-2 becomes a 3-on-1 — this is the right choice when you are ' +
     'chasing a goal, not a default.',
@@ -696,7 +741,9 @@ const standUpAtTheLine = {
     'Standing up at your own blue line, which is at the left because our net is: the defenceman ' +
     'meets the attacker at it with his feet stopped, refuses to give ground and tries to turn the ' +
     'carry into a dump, a pass or a turnover — a carried entry is worth roughly twice a dumped ' +
-    'one, and it keeps the play sixty feet from his net rather than twenty. Drawn with it is what ' +
+    'one in shot terms, on hand-tracked NHL games now more than a decade old, so take the ' +
+    'direction rather than the decimals — and it keeps the play sixty feet from his net rather ' +
+    'than twenty. Drawn with it is what ' +
     'beats it, the chip-and-chase: the attacker puts the puck past the ' +
     'defenceman’s hip and runs round him, and stopped feet cannot win that race, because beaten ' +
     'standing up is beaten completely. The defenceman is drawn with no route at all and nothing ' +

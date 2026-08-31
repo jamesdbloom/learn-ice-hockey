@@ -88,7 +88,9 @@ const theSlot = {
   caption:
     'The slot is the ice directly in front of the net, between the two faceoff circles, ' +
     'running from the top of the circles down to the goalmouth — the shaded band here. ' +
-    'More goals are scored from it than from everywhere else combined, which is why ' +
+    'It is where most goals are scored from — over a three-year five-on-five sample, ' +
+    'close to half of all NHL goals came from the inner slot alone, on Sportlogiq tracking ' +
+    'that is not public and cannot be re-derived — which is why ' +
     'defensive-zone coverage comes down to who is standing in it and offensive-zone play ' +
     'comes down to getting a puck and a body there at the same time. ' +
     'Nothing on a rink marks the slot out: its edges are read off the faceoff circles and ' +
@@ -318,8 +320,13 @@ const theTrapezoid = {
     'Under the IIHF book — the British one — the shape is 6.80 m along the goal line and ' +
     '8.60 m at the boards, within a few inches of the NHL figures, but deeper, because the ' +
     'IIHF goal line is 4.0 m from the end boards rather than 11 ft. ' +
-    'Where it applies is the part to check rather than assume: the NHL, the KHL and IIHF play ' +
-    'have it, most North American rec, beer-league and youth associations do not, and in ' +
+    'Where it applies is the part to check rather than assume: the NHL and IIHF play have it, both ' +
+    'read directly in the rulebooks, and the KHL is commonly said to as well though no KHL rulebook ' +
+    'was available to check that one; neither the USA Hockey book nor the Hockey Canada ' +
+    'book marks one at all, so a league running on either has none — though neither leaves ' +
+    'the goalkeeper unrestricted back there: USA Hockey Rule 614(c) stops him freezing the ' +
+    'puck outside the privileged area, corners excluded, and Hockey Canada assesses a minor ' +
+    'with no warning for freezing it at all once he has left the crease. And in ' +
     'England and Wales England Ice Hockey’s own regulations say it is "not currently ' +
     'enforced" while the current In-House Rules are silent — so ask your league before ' +
     'assuming either way.',
@@ -381,9 +388,9 @@ const strongAndWeakSide = {
     'goalmouth. ' +
     'Nothing is painted to divide the ice this way: the boundary is the middle of the ice, ' +
     'not a marking, and this picture is one arrangement of the puck rather than a fixed map. ' +
-    'The weak-side net-front area has its own name, the backdoor, and it is the most ' +
-    'dangerous unmarked space in hockey, because a player arriving there is behind the ' +
-    'goaltender’s field of view.',
+    'The weak-side net-front area has its own name, the backdoor, and a player arriving ' +
+    'there is behind the goaltender’s field of view, which is what makes it dangerous. ' +
+    'How it ranks against every other unmarked position is not something anyone has counted.',
 
   describe:
     'The attacking half of the rink, the net at the right, tinted in two different shades ' +

@@ -65,9 +65,29 @@ RULES = [
         # and appears in infra/bootstrap/terraform.tfvars.example; it is
         # ignored by value rather than by filename, because a real id sitting
         # in an .example file would still be a real leak.
+        #
+        # ⚠️ A 12-digit run inside an http(s) URL is a CMS filename stamp, not a
+        # secret. The Sport and Recreation Alliance serves the UK concussion
+        # guidance as `…-november-2024-update-061124084139.pdf` — a `ddmmyyhhmmss`
+        # upload stamp. This fired twice before it was understood: two agents
+        # reported it as a failure on a DIFFERENT file while that file was being
+        # written, and a source-verifier avoided citing the PDF at all to dodge
+        # it, which cost the corpus its primary URL.
+        #
+        # ⚠️ Scoped to THAT HOST and that filename shape, not to "a URL".
+        # An earlier version ignored `https?://\S*[0-9]{12}` and argued it was
+        # safe because "the ignore requires `http` earlier on the same line,
+        # which no bare credential has." **That reasoning is wrong**, and a
+        # commit gate caught it: an account id in this repository would most
+        # naturally appear INSIDE a URL, so the broad form silently ignored
+        # `https://987654321098.dkr.ecr.eu-west-2.amazonaws.com/...` — an ECR
+        # registry, exactly the shape this repository would leak. Measured: the
+        # broad ignore was suppressing **two lines**, both this one PDF. A
+        # 12-digit run anywhere else, in a URL or not, is still a finding.
         ignore=(
             r"ICE_HOCKEY_AWS_ACCOUNT_ID|TF_VAR_|example|EXAMPLE"
             r"|123456789012|0{12}|1{12}"
+            r"|sportandrecreation\.org\.uk/\S*-[0-9]{12}\.pdf"
         ),
     ),
     Rule(

@@ -1046,9 +1046,12 @@ a.chip:hover {
   margin: 1.5rem 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  /* The fade colour is a variable so a table nested in a callout can fade from
+     the CALLOUT's tint instead of the page's. See `.callout .table-scroll`. */
+  --table-fade: var(--bg-raised);
   background:
-    linear-gradient(to right, var(--bg-raised) 30%, transparent) left center,
-    linear-gradient(to left, var(--bg-raised) 30%, transparent) right center,
+    linear-gradient(to right, var(--table-fade) 30%, transparent) left center,
+    linear-gradient(to left, var(--table-fade) 30%, transparent) right center,
     radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 22%), transparent) left center,
     radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 22%), transparent) right center;
   background-repeat: no-repeat;
@@ -1195,9 +1198,34 @@ a.chip:hover {
   background: var(--bg-sunken);
 }
 
-/* Tables nested inside a callout keep the callout's tint. */
+/* Tables nested inside a callout keep the callout's tint.
+
+   ⚠️ This used to read `background: transparent`, and that is the SHORTHAND —
+   so it reset `background-image` and wiped all four layers above, not just the
+   colour. The two linear-gradients ARE the horizontal-scroll cue, and the
+   comment on `.table-scroll` records in capitals why that cue exists: a table
+   "SCROLLED SILENTLY... nothing indicated there was more table", and a reader
+   got `"Typical rec / beer le"` and stopped.
+
+   Measured on a 375px viewport before this fix: the corpus's only blockquoted
+   table -- the net-front penalty-enrichment table -- had **46% of its width off
+   screen with zero cue layers**, while the two tables on the same page that are
+   NOT in a callout had four each. The one table that most needed the cue was
+   the only one without it, and the paragraph beneath it argues from the two
+   columns a phone reader could not see.
+
+   The fix keeps both intents: the cue survives, and it now fades from the
+   callout's own tint rather than the page's. */
 .callout .table-scroll {
-  background: transparent;
+  --table-fade: var(--bg-raised);
+}
+
+.callout-note .table-scroll {
+  --table-fade: var(--note-bg);
+}
+
+.callout-warning .table-scroll {
+  --table-fade: var(--warn-bg);
 }
 
 /* -------------------------------------------------------------- sources -- */

@@ -410,8 +410,11 @@ const lowToHigh = {
     'and the shot goes low through the screen (4). One forward is already at the net front to ' +
     'screen and tip and one in the high slot as the second option, forming a triangle with the ' +
     'point, while the weak-side defenceman reads for a rebound squirting to their side. ' +
-    'Low-to-high is a means and not an end: point shots are the lowest-percentage shots on the ' +
-    'ice, they are blocked more often than shots from anywhere else, and the play is only worth ' +
+    'Low-to-high is a means and not an end: at even strength a point shot is among the ' +
+    'lowest-percentage shots on the ice, and blocked more often than a shot from anywhere else — ' +
+    'but that caution is an even-strength one, and on the power play the same map puts roughly ' +
+    'the whole zone at or above it, so it is no argument against a point shot there. ' +
+    'The play is only worth ' +
     'doing when the net front is occupied — the identical shot with nobody in front is a ' +
     'giveaway with extra steps. Defenders other than the goaltender are not drawn, so the ' +
     'shot-blockers this play is trying to beat are not in the picture.',

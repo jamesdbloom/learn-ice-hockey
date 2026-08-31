@@ -352,8 +352,9 @@ const supportAngles = {
     'option that still exists when the other two are covered, so a team with nobody behind the puck has ' +
     'no answer to good pressure except dumping it away. ' +
     'Level changes the side of the ice, which is a normal, high-value play in the neutral and offensive ' +
-    'zones; in your own defensive zone the same pass across the middle is the highest-risk pass in ' +
-    'hockey, and the lateral option there goes behind your own net, not through the slot. ' +
+    'zones; in your own defensive zone the same pass across the middle crosses the slot, where an ' +
+    'interception is a point-blank chance, and the lateral option there goes behind your own net, ' +
+    'not through the slot. ' +
     'Ahead is the only one of the three that gains ground and the most interceptable, and at the blue ' +
     'line it needs the receiver to time their entry rather than park in the zone, because both skates ' +
     'completely over the line before the puck completely crosses it is offside (NHL Rule 83) — ' +

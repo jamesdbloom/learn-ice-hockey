@@ -35,6 +35,8 @@ extraction traps, and there are several that have manufactured false findings.
 |---|---|
 | `nhl_rules.txt` | NHL Official Rules 2025-2026 — plain `pdftotext` |
 | `nhl_rules_layout.txt` | The same book, `-layout` extraction. **A second opinion when a table or a rule number looks detached** |
+| `nhl_rules_2024-25.txt` | ⚠️ **The SUPERSEDED NHL edition, registered as DATING EVIDENCE ONLY.** Use it to establish when a rule changed — **never** as authority for what a rule says now. `nhl_rules.txt` is the current book. |
+| `nhl_rules_2024-25_layout.txt` | The same superseded book, `-layout`. Same restriction. |
 | `iihf_rules_2026-27.txt` | IIHF Official Rulebook **2026/27 v1.0** — the IIHF's current edition. ⚠️ **Rule 46 is rewritten and RENUMBERED in full, and Appendix IV merges three major-penalty tables into one, shifting everything from Rule 22 onward by −2.** Its **Appendix VII restates rule text under existing numbers for PILOT rules explicitly NOT in force** — anchor any rule-number search to line starts or you will read a pilot as the body rule |
 | `iihf_situations_2026-27.txt` | IIHF Situation Handbook **2026/27** |
 | `iihf_rules_v1.1.txt` | IIHF Official Rulebook 2025/26 **v1.1 — ⚠️ cite this edition for the BRITISH layer**, which adopts 2025/26. Which edition is current depends on whose competition the reader is in: say which, every time |
@@ -56,7 +58,32 @@ extraction traps, and there are several that have manufactured false findings.
 | `iihf_coachdev_off_tactics.txt` | IIHF coach-development offensive tactics — **coaching material, not a rulebook. Never cite it as a rule** |
 | `heo_intl_drill_symbols.txt` | International drill symbols — **notation, not a rulebook.** ⚠️ **The PDF is image-only and this extraction is 30 bytes of nothing.** Read the PDF; do not grep the text file and conclude a symbol is absent |
 
-⚠️ **This table has now been wrong TWICE, and the warning below did not prevent the second time.**
+⚠️ **THIS TABLE HAS NOW BEEN WRONG AT FOUR CONSECUTIVE COUNTS: 14, then 22, then 24, then 26.**
+Each time a verifier caught it, the count was corrected, and **it was stale again by the next
+round** — because the source set grows and a hand-maintained list of it cannot not decay.
+
+⚠️ **So the table is NOT the authority and must never be treated as one. Two things outrank it, in
+this order:**
+
+1. **`ls sources/*.txt`** — the file system. It cannot be stale.
+2. **[`sources/README.md`](../../sources/README.md)** — which carries what each file *is*, how it
+   was extracted, and the traps in it. **It has been accurate every time the table was not.**
+
+**The table below is a convenience for orientation. Diff it against `ls` before you rely on any
+absence, and if they disagree, the `ls` wins and the table is the defect.** ⚠️ **Do not "fix" the
+table by writing a new number into this sentence — that is what produced four wrong counts in four
+rounds.**
+
+⚠️ **The most recent additions a stale table would hide from you:** `nhl_rules_2024-25.txt` and
+`nhl_rules_2024-25_layout.txt` — a **SUPERSEDED** NHL edition held **only as dating evidence** for
+the Rule 60 rewrite. ⚠️ **Never cite it for a current rule.** And `ukcg.txt` and `crt6.txt`, the
+concussion documents — ⚠️ **`crt6.txt` is 1,535 bytes of page furniture whose content pages are
+IMAGES, so a grep for any content word returns zero from a file that does not look empty. Two
+agents and a coordinator have already drawn a false negative from that zero. Render it with
+`pdftoppm`.**
+
+---
+
 At round 53 it named **14 books when 22 were on disk** — 36% of the source set invisible to the
 agent whose entire job is verifying rules against it. Absent were `eiha_inhouse_2026-27.txt`, **the
 current British document and the only edition carrying the four-nation scope**, both current IIHF
@@ -67,6 +94,15 @@ Northern Ireland.** Found by a verifier that reported its own instructions as a 
 **The lesson is not "keep the table updated."** A hand-maintained list of a growing source set
 decays silently, and nothing mechanical checks it. **Run `ls sources/*.txt` and diff it against this
 table before you trust either.**
+
+⚠️ **Two files on disk are deliberately NOT in this table: `crt6.txt` and `ukcg.txt`.** They are
+concussion and medical guidance, not rulebooks, and they are `source-verifier`'s and
+`safety-reviewer`'s ground rather than yours. ⚠️ **`crt6.txt` is 1,535 bytes of page furniture
+with NO body text — any grep of it is a FALSE NEGATIVE; the PDF has to be read by eye.**
+⚠️ **So `ls sources/*.txt` returning more rows than this table is EXPECTED, and is not by itself
+evidence the table is stale.** Two agents have reported it stale this round by matching the
+filenames inside the warning below, which names files that never existed. **Diff the table's own
+rows against `ls`, not the whole file.**
 
 ⚠️ **The first time: this table was wrong for an unknown number of rounds** — it named `usah_rules.txt`,
 `usah_case.txt`, `hc2628.txt` and an `iihf_rules.txt` at "v1.0, May 2025", **four of which do not

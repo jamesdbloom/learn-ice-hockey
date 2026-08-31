@@ -51,6 +51,10 @@ VERSION = "1.0.0"
 # 3000 are billed (i.e. text, not SSML markup). We chunk well inside both.
 # --------------------------------------------------------------------------
 
+#: The service's hard limits. Exceeding either is a refused request, not a
+#: degraded one. MAX_* below are our own budget and sit deliberately inside.
+POLLY_BILLED_LIMIT = 3000
+POLLY_TOTAL_LIMIT = 6000
 MAX_BILLED_CHARS = 2800
 MAX_TOTAL_CHARS = 5600
 
@@ -211,7 +215,13 @@ UNITS: tuple[tuple[str, str, str], ...] = (
 
 #: Units that may follow a number with no space. The rest need whitespace,
 #: because 's' and 'm' would otherwise swallow '1970s' and '30s'.
-TIGHT_UNITS = ("km/h", "mph", "°F", "°C", "°", "cm", "mm", "km", "kg", "%")
+#: ⚠️ "m" sits LAST deliberately. `_unit_alternation` preserves this order, so
+#: cm/mm/km must precede it or "10mm" would match on the bare "m".
+#: It is here because the corpus quotes IIHF rule text verbatim, and the book
+#: writes both "1.8 m" and "2.4m". The spaced rule caught the first; the second
+#: voiced as "two point four m" -- a letter read out inside a rink dimension.
+#: Unfixable in content/, because the strings are verbatim quotations.
+TIGHT_UNITS = ("km/h", "mph", "°F", "°C", "°", "cm", "mm", "km", "kg", "%", "m")
 
 #: Units that make ``N x M`` a dimension ("eight by fifteen inches") rather
 #: than a multiplication ("eight times fifteen seconds"). A unit here may sit
@@ -262,6 +272,25 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
     ("→", ","),
     ("·", ","),
     ("†", ""),          # dagger footnote marker
+    # The drill-symbol glyphs carry MEANING in this corpus, not decoration. The
+    # reading-diagrams document teaches that shape is the position and fill is the
+    # team, and it does so by quoting the International Drill Symbols key's own two
+    # lines — "● ○ Forward / Player" and "▲ △ Defender / Player". Unhandled, a
+    # listener heard "Forward or Player" and "Defender or Player": the two words the
+    # passage is contrasting, with the contrast itself silent, in the one paragraph
+    # whose whole job is to explain what the shapes mean.
+    #
+    # Naming the shape is transliteration, not paraphrase — the same move as reading
+    # "27.8" aloud as "twenty-seven point eight". The glyph has no spoken form of its
+    # own, so the alternative is not a different rendering, it is nothing at all.
+    #
+    # ⚠️ Fill first, then shape, because that is the order the sentence needs: the
+    # key prints solid before open, and the document's next paragraph turns on which
+    # is which.
+    ("●", " filled circle "),
+    ("○", " open circle "),
+    ("▲", " filled triangle "),
+    ("△", " open triangle "),
     ("•", ""),          # stray bullet glyph
     ("…", "…"),    # ellipsis: Polly handles it, keep the pause
     ("−", " minus "),
@@ -269,6 +298,13 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
     ("₂", " two"),
     ("️", ""),          # variation selector (emoji presentation)
     ("⚠", ""),          # warning sign
+    # The IIHF's typographic cross-reference marker, which the corpus keeps
+    # inside verbatim quotations: "in violation of ➔ Rule 63.8 - Delaying the
+    # Game or ➔ Rule 81 - Icing". It is punctuation, not a word, and the
+    # quotation reads correctly without it. Dropped rather than voiced because
+    # there is no honest way to say it: "arrow" is noise, and "see" would be
+    # putting a word into a quotation the book does not contain.
+    ("➔", ""),
     # 🇬🇧 is a semantic marker in this corpus, not decoration: it flags the
     # British position — the IIHF book plus the In-House Rules issued jointly
     # by England Ice Hockey, the SIHA and the BUIHA. Dropping it silently, which
@@ -355,8 +391,9 @@ LEXICON: tuple[tuple[str, str], ...] = (
     ("FF%", "F F percent"),
     ("xGF%", "expected goals for percentage"),
     ("xG", "expected goals"),
-    ("D-to-D", "D to D"),
-    ("d-to-d", "D to D"),
+    # ⚠️ D-to-D is NOT here. LEXICON is plain str.replace with no word
+    # boundaries, and "forward-to-defence" contains "d-to-d" -- it was voicing
+    # as "forwarD to Defence". It lives in NOTATION_RULES, which can anchor.
     ("e.g.", "for example"),
     ("i.e.", "that is"),
     ("etc.", "and so on"),
@@ -679,7 +716,11 @@ def _rule_citation(match: re.Match) -> str:
             continue
         label = "clause" if group == "c1" else "sub-clause"
         out += f", {label} {_clause_words(clause)}"
-    return out
+    # ⚠️ THE THIRD CODE PATH. `_bare_clause` and `_usa_clause_citation` gained
+    # clause-tail handling first; this one -- the form WITH the word "Rule" --
+    # was missed, so `Rule 8.1(c)/(d)` still dropped its second clause while
+    # `8.1(c)/(d)` did not. Found by a self-test, not by reading.
+    return out + _clause_tail(match.groupdict().get("more"))
 
 
 def _clause_words(clause: str) -> str:
@@ -688,6 +729,11 @@ def _clause_words(clause: str) -> str:
         return int_to_words(ROMAN_TO_INT[lowered])
     if clause.isdigit():
         return int_to_words(int(clause))
+    # The USA Hockey Casebook's sub-clause form, "(d.3)". Spoken as the letter,
+    # then the number, so a listener can write it down and find the page.
+    sub = re.fullmatch(r"([a-z])\.(\d+)", clause.lower())
+    if sub:
+        return f"{sub.group(1)} point {int_to_words(int(sub.group(2)))}"
     return clause  # a lettered clause: '(b)' -> 'clause b'
 
 
@@ -704,6 +750,37 @@ def _section_reference(match: re.Match) -> str:
     return "section " + " point ".join(int_to_words(n) for n in levels)
 
 
+#: A tail of further clauses joined by commas -- "7.5(a), (e)" or "608(a), (b)".
+#: ⚠️ A COMMA-separated bracket is a second CLAUSE of the same rule; an ADJACENT
+#: bracket is a SUB-clause of the first. The two mean different things and are
+#: labelled differently below.
+#: ⚠️ Matches the BRACKETS only, so a joining "," or " and" is dropped rather
+#: than spoken -- "608(a), (b) and (c)" voices as three clauses in a list.
+RE_CLAUSE_TAIL = re.compile(
+    r"(?P<sep>[,/]|[ ]and)[ ]?\((?P<clause>[ivxIVX]{1,6}|[a-z]|\d{1,2})\)")
+
+
+def _clause_tail(more: str | None) -> str:
+    """Expand ', (e), (f)' -> ', clause e, clause f'.
+
+    ⚠️ Without this the trailing brackets were matched by NO citation rule, and
+    **brackets are silent in the renderer** -- so `7.5(a), (e)` voiced as
+    "seven point five, clause a, e" and the listener heard a dangling letter.
+    Found by an agent reading its own repair back as audio; no checker sees it,
+    because the markdown is correct and only the spoken form is wrong.
+    """
+    if not more:
+        return ""
+    out = ""
+    for m in RE_CLAUSE_TAIL.finditer(more):
+        # ⚠️ A SLASH means "or", not "and another one". `622(b)/(c)` is one rule
+        # offering two clauses; `608(a), (b) and (c)` is a list of three. Voicing
+        # a slash as a comma turns an alternative into an enumeration.
+        joiner = " or" if m.group("sep") == "/" else ","
+        out += f"{joiner} clause {_clause_words(m.group('clause'))}"
+    return out
+
+
 def _bare_clause(match: re.Match) -> str:
     """'27.8 and 63.2(viii)' - the second citation has no 'Rule' in front."""
     major = int_to_words(int(match.group("major")))
@@ -715,7 +792,7 @@ def _bare_clause(match: re.Match) -> str:
             continue
         label = "clause" if group == "c1" else "sub-clause"
         out += f", {label} {_clause_words(clause)}"
-    return out
+    return out + _clause_tail(match.groupdict().get("more"))
 
 
 def _situation(match: re.Match) -> str:
@@ -769,6 +846,42 @@ def _spell_out_word(word: str) -> list[Token]:
         Token(TEXT, word),
         Token(SSML, "</say-as>"),
     ]
+
+
+_DIGIT_WORD = {
+    "0": "zero", "1": "one", "2": "two", "3": "three", "4": "four",
+    "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine",
+}
+
+
+def _emergency_number(m: "re.Match[str]") -> str:
+    """An emergency telephone number, spoken as digits.
+
+    ⚠️ THIS IS A SAFETY DEFECT, NOT A TIDINESS ONE. The general number rule voiced
+    `999` as "nine hundred and ninety-nine" and `111` as "one hundred and eleven".
+    `mental_game.md` ships a mental-health crisis callout reading "999 in the UK and
+    Ireland, 112 across the EU, 911 in the US and Canada" — all three mangled, in the
+    one passage where a listener may be about to dial.
+
+    Found by an agent writing the British emergency section, which probed the renderer
+    rather than assuming: it confirmed `9-9-9` voices correctly and used that as a
+    workaround in its own text. The workaround is not the fix; this is.
+
+    ⚠️ SCOPE, STATED HONESTLY — the guard is narrower than "a dialling context".
+    Two shapes fire: a dialling verb before the number (`call`/`dial`/`calling`/`ring`),
+    which is tight; and the number followed by `in`/`across`/`from`/`now`/`immediately`,
+    which is NOT. That second branch would also fire on "112 in the study" or "a survey
+    of 999 across four clubs".
+
+    It is safe on the corpus as it stands — the pattern was run over all of `content/`
+    and every firing is a true positive — and the self-test pins the one live
+    counter-example, "pooling 112 effect sizes", which the first branch cannot reach and
+    the second does not match. But a future author writing a sample size of 111 or 112
+    followed by "in" WILL have it read as a phone number, and nothing will warn them.
+    Recorded as an open row rather than tightened blind, because a stricter pattern
+    risks losing the crisis callout, which is the case that actually matters.
+    """
+    return " ".join(_DIGIT_WORD[d] for d in (m.group("num") or m.group("num2")))
 
 
 def _standards_code(match: re.Match) -> list[Token]:
@@ -825,6 +938,7 @@ def _usa_clause_citation(match: re.Match) -> str:
             continue
         label = "clause" if group == "c1" else "sub-clause"
         out += f", {label} {_clause_words(clause)}"
+    out += _clause_tail(match.groupdict().get("more"))
     return out
 
 
@@ -978,13 +1092,55 @@ def _statistic(match: re.Match) -> str:
 
 
 def _range_with_unit(match: re.Match) -> str:
-    """'30-80 s' -> 'thirty to eighty seconds'; '95-114 deg' likewise."""
+    """'30-80 s' -> 'thirty to eighty seconds'; '95-114°' likewise.
+
+    Both units here are ABBREVIATIONS. A spelled-out unit ('30-35 seconds')
+    is not matched by this rule and belongs to `range-with-spelled-unit`.
+    """
     prefix = _approx_prefix(match.group("approx"))
     low = decimal_to_words(match.group("low"))
     high = decimal_to_words(match.group("high"))
     unit = match.group("unit")
     tail = _spoken_unit(unit, match.group("high")) if unit else ""
     return f"{prefix}{low} to {high}{tail}"
+
+
+def _range_with_spelled_unit(match: re.Match) -> str:
+    """'30-35 seconds' -> 'thirty to thirty-five seconds'.
+
+    ``_UNITS_ALT`` holds only abbreviations ('s', 'min', 'm', '%'), so a range
+    written with a SPELLED-OUT unit matched no range rule at all and fell
+    through to ``bare-number`` twice, emitting "thirty-thirty-five seconds".
+    The en-dash spelling was rescued by ``numeric-range``, which accepts only
+    '-'; the hyphen spelling was not. That is why this survived - the corpus
+    writes en dashes nearly everywhere, and all but two of the hyphen
+    instances are inside quotations that must not be edited to fix a renderer
+    bug. Two of the remaining sites are ``Action:`` and ``Convention:`` facts
+    values, which are voiced alone.
+
+    Widening ``numeric-range`` to accept a hyphen is the obvious fix and is
+    WRONG. '2025-26 edition' and its siblings appear over a hundred times in
+    this corpus and would have voiced as "two thousand and twenty-five to
+    twenty-six" - the citation backbone of every rulebook reference. The
+    '1-2-2' formations are held by the ``formation`` rule, but '50-50 puck',
+    '2-1' scores and season identifiers are not. Requiring a spelled-out unit
+    is precisely what keeps all of them out.
+    """
+    low, high = match.group("low"), match.group("high")
+    # Season identifiers are protected by RULE ORDER, not by this guard:
+    # `season-range` sits at index 17 and consumes '2025-26' long before this
+    # rule at index 32 can see it. Verified by sabotage - adding 'editions?'
+    # to `_SPELLED_UNITS` and disabling this branch still renders '2025-26
+    # edition' correctly, because the match never reaches here.
+    #
+    # So this branch is UNREACHABLE today and the self-test cannot cover it.
+    # It is kept as a second line of defence should the rule order ever change,
+    # and documented as unreachable so nobody reads it as the thing that works.
+    if len(low) == 4 and len(high) == 2:
+        return match.group(0)
+    prefix = _approx_prefix(match.group("approx"))
+    unit = match.group("unit")
+    return f"{prefix}{decimal_to_words(low)} to {decimal_to_words(high)} {unit}"
 
 
 def _number_with_unit(match: re.Match) -> str:
@@ -1046,6 +1202,70 @@ def _inch_fraction(match: re.Match) -> str:
 
 def _vulgar_inch(match: re.Match) -> str:
     return dict(FRACTIONS)[match.group(1)] + " of an inch"
+
+
+def _feet_inches(match: re.Match) -> str:
+    """'6\'4\"' -> 'six foot four inches'.
+
+    Both marks were surviving into the SSML raw: the corpus said a 6'4"
+    goaltender and the listener got "six'four"". Straight quote and apostrophe
+    are both in ALLOWED_RESIDUE -- legitimately, they are ordinary punctuation
+    -- so the residue check could never have reported this.
+    """
+    feet = int(match.group("ft"))
+    words = f"{int_to_words(feet)} foot"
+    inches = match.group("inch")
+    if inches is not None:
+        count = int(inches)
+        words += f" {int_to_words(count)} {'inch' if count == 1 else 'inches'}"
+    return words
+
+
+def _bare_inch(match: "re.Match[str]") -> list[Token]:
+    """'65\"' -> 'sixty-five inches', but only where the mark is an inch mark.
+
+    A straight quote after a digit is an inch mark or a closing quotation mark,
+    and this corpus contains both: 'And "60 x 30" is not the IIHF standard'
+    must not become 'thirty inches', and 'Read "2 plus 10" the way the penalty
+    box does' must not become 'ten inches'.
+
+    Discriminator: scan the straight quotes earlier in the line left to right,
+    tracking whether a quotation is open. A quote preceded by a space, a start,
+    or an opening bracket and followed by a non-space OPENS one; any other
+    quote closes an open quotation, or -- if none is open -- is an inch mark.
+
+    Counting quote parity instead does not work, and was tried: it has to
+    decide whether the quote after 19 in 'match up loudly: "I\'ve got 19", "you
+    take 7"' is an inch mark in order to count it, which is the question being
+    asked. It turned 7 into seven inches.
+
+    A decline returns RAW rather than a finished string, so the number stays
+    eligible for the bare-number rule that runs last. Returning it as text
+    would freeze '30' as a numeral.
+
+    Note: the rule counter counts matches considered, declines included. It is
+    not a count of conversions and must not be quoted as one.
+    """
+    prefix = match.string[: match.end() - 1]
+    open_quote = False
+    for index, char in enumerate(prefix):
+        if char != '"':
+            continue
+        before = prefix[index - 1] if index else " "
+        after = prefix[index + 1] if index + 1 < len(prefix) else " "
+        if not open_quote and before in " \t([*\u2014\u2013-" and after not in " \t":
+            open_quote = True
+        elif open_quote:
+            open_quote = False
+    if open_quote:
+        return raw(match.group(0))
+    count = int(match.group("n"))
+    words = int_to_words(count)
+    upper = match.group("n2")
+    if upper is not None:
+        count = int(upper)
+        words += f" to {int_to_words(count)}"
+    return done(f"{words} {'inch' if count == 1 else 'inches'}")
 
 
 def _paren_feet(match: re.Match) -> str:
@@ -1136,6 +1356,11 @@ def _percent_after_word(match: re.Match) -> str:
     return f"{match.group(1)} percent"
 
 
+def _identifier_digits(match: "re.Match[str]") -> str:
+    """A long uncommaed digit run is an identifier, so read it as digits."""
+    return " ".join(_DIGIT_WORD[ch] for ch in match.group("digits"))
+
+
 def _bare_number(match: re.Match) -> str:
     """Anything numeric a named rule did not claim. Runs last."""
     text = match.group(0)
@@ -1158,6 +1383,17 @@ _UNITS_TIGHT = _unit_alternation(TIGHT_UNITS)
 _FRACTION_ALT = "|".join(re.escape(ch) for ch, _ in FRACTIONS)
 _GREEK_ALT = "|".join(re.escape(ch) for ch, _ in GREEK)
 _APPROX = r"(?P<approx>[~≈∼]\s?)?"
+
+#: Units the corpus writes out in words rather than abbreviating. Deliberately
+#: SHORT and deliberately excludes 'season', 'year', 'month' and 'game': the
+#: whole safety of `range-with-spelled-unit` rests on this list never matching
+#: the tail of a season identifier ('2025-26 season') or a score ('2-1 game').
+#: Add a word here only after checking what it collides with in `content/`.
+_SPELLED_UNITS = (
+    r"seconds?|minutes?|hours?|days?|weeks?"
+    r"|degrees?|feet|foot|inches|inch|metres?|meters?|yards?"
+    r"|players?|reps?|sets?"
+)
 # Longest first, so 'metres' is not eaten by 'm' and 'ISO/DIS' not by 'ISO'.
 _DIMENSION_UNIT_ALT = "|".join(
     re.escape(unit) for unit in sorted(DIMENSION_UNITS, key=len, reverse=True)
@@ -1171,6 +1407,19 @@ _DIMENSION_OPERAND = (
 )
 
 NOTATION_RULES: tuple[Rule, ...] = (
+    Rule(
+        "emergency-number",
+        re.compile(
+            # A dialling context is required on one side or the other. Without it
+            # this rule would eat "112 effect sizes" in the same document.
+            r"(?:(?<=\bcall )|(?<=\bdial )|(?<=\bcalling )|(?<=\bring ))"
+            r"(?P<num>999|911|112|101|111)\b"
+            r"|(?P<pre>\b(?P<num2>999|911|112|111)\b)(?=[ ,]+(?:in|across|from|now|immediately)\b)"
+        ),
+        _emergency_number,
+        "'call 999' -> 'call nine nine nine'. The general number rule read it as "
+        "'nine hundred and ninety-nine', in a crisis callout.",
+    ),
     Rule(
         "standards-code",
         re.compile(rf"\b(?:{_STANDARDS_ALT})\s?\d+(?:[-–/]\d+)*\b"),
@@ -1190,6 +1439,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
             r"(?:\.(?P<minor>\d{1,2}))?"
             r"(?:[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
+            r"(?P<more>(?:(?:,|/|[ ]and)[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
         _rule_citation,
         "Rule 63.2(viii) -> 'Rule sixty-three point two, clause eight'",
@@ -1207,6 +1457,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
             r"(?<![\w.])(?P<major>\d{1,3})\.(?P<minor>\d{1,2})"
             r"[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
+            r"(?P<more>(?:(?:,|/|[ ]and)[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
         _bare_clause,
         "'27.8 and 63.2(viii)' - second citation without the word Rule",
@@ -1214,12 +1465,37 @@ NOTATION_RULES: tuple[Rule, ...] = (
     Rule(
         "usa-clause-citation",
         re.compile(
-            r"(?<![\w.])(?P<major>\d{3})[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+            # ⚠️ `[a-z]\.\d` is the USA Hockey CASEBOOK's own sub-clause form --
+            # "Rule Reference 630(d.3)". The corpus quotes it because the
+            # Casebook cites a clause the printed rule does not contain, which
+            # is the book's error and is recorded rather than repaired. Without
+            # this branch it voiced as "six hundred and thirty(d.3)", with the
+            # parenthetical reaching the listener as raw characters.
+            # ⚠️ `\d{2,3}`, not `\d{3}`. CARHA numbers its rules in TWO digits --
+            # 19, 49, 55, 65, 66, 79 -- so every bare CARHA clause citation fell
+            # through to `bare-number` and voiced with a literal bracket:
+            # "seventy-nine(a)". 33 such spans are live in `content/`, and CARHA
+            # became load-bearing in round 55 when it turned out to hold the rule
+            # that refuted a corpus negative about slap shots. Widening to two
+            # digits cannot swallow a season or a page number: both branches
+            # require an immediately following parenthesised clause letter.
+            r"(?<![\w.])(?P<major>\d{2,3})[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]\.\d|[a-z])\)"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
+            r"(?P<more>(?:(?:,|/|[ ]and)[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
         _usa_clause_citation,
         "'Rules 624(b) and 630(a)' - the second USA Hockey citation, which "
         "carries no point and so was never a bare-clause citation",
+    ),
+    Rule(
+        "d-to-d",
+        # The lookarounds reject a hyphen as well as a word character, so
+        # "forward-to-defence" is left alone. It used to voice as
+        # "forwarD to Defence", because this lived in LEXICON, which is plain
+        # string replacement and cannot see a word boundary.
+        re.compile(r"(?<![\w-])[Dd]-to-[Dd](?![\w-])"),
+        lambda match: "D to D",
+        "D-to-D -> 'D to D', but forward-to-defence is left alone",
     ),
     Rule(
         "situation",
@@ -1340,6 +1616,15 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "r = +0.25 -> 'r equals plus nought point two five'",
     ),
     Rule(
+        "feet-inches",
+        # The inch part is required, so the parenthesised-minutes notation
+        # "(5')" is left to its own rule.
+        re.compile(r"\b(?P<ft>\d{1,2})'(?P<inch>\d{1,2})\"?"),
+        _feet_inches,
+        "6'4\" -> 'six foot four inches'. Both marks were reaching the "
+        "listener raw, as \"six'four\"\".",
+    ),
+    Rule(
         "inch-fraction",
         re.compile(r"\b(\d{1,2})/(\d{1,2})\""),
         _inch_fraction,
@@ -1350,6 +1635,22 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(rf"({_FRACTION_ALT})\""),
         _vulgar_inch,
         '3/8" as a vulgar fraction glyph',
+    ),
+    Rule(
+        "bare-inch",
+        # Runs after both fraction rules, which own the digits in 7/16" and
+        # would otherwise lose them to this rule's 16".
+        # The range arm exists because a range whose unit is the inch mark lost
+        # its "to": 38-44" was voiced as "thirty-eight forty-four inches" while
+        # "38-44 inches" was already correct. The inch mark was a unit nowhere.
+        re.compile(
+            r"(?<![\w/.])(?P<n>\d{1,3})"
+            r"(?:\s?[\u2013\u2014-]\s?(?P<n2>\d{1,3}))?\""
+        ),
+        _bare_inch,
+        '65" -> "sixty-five inches"; 38-44" -> "thirty-eight to forty-four '
+        'inches". Not the closing quote in \'"60 x 30" is not the IIHF '
+        'standard\'.',
     ),
     Rule(
         "parenthesised-minutes",
@@ -1387,6 +1688,15 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "1.08x -> 'one point nought eight times'",
     ),
     Rule(
+        "range-with-spelled-unit",
+        re.compile(
+            rf"(?<![\w.]){_APPROX}(?P<low>\d+(?:\.\d+)?)\s?[–—-]\s?"
+            rf"(?P<high>\d+(?:\.\d+)?)\s(?P<unit>{_SPELLED_UNITS})(?![\w])"
+        ),
+        _range_with_spelled_unit,
+        "30-35 seconds -> 'thirty to thirty-five seconds'",
+    ),
+    Rule(
         "range-with-unit-spaced",
         re.compile(
             rf"{_APPROX}(?P<low>\d+(?:\.\d+)?)\s?[–—-]\s?"
@@ -1402,7 +1712,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
             rf"(?P<high>\d+(?:\.\d+)?)(?P<unit>{_UNITS_TIGHT})(?![\w])"
         ),
         _range_with_unit,
-        "95-114 deg -> 'ninety-five to one hundred and fourteen degrees'",
+        "95-114° -> 'ninety-five to one hundred and fourteen degrees'",
     ),
     Rule(
         "number-with-unit-spaced",
@@ -1515,6 +1825,22 @@ NOTATION_RULES: tuple[Rule, ...] = (
         ),
         _alphanumeric_code,
         "product and standard codes: CRT6 -> 'C R T six'; 420D -> '... D'",
+    ),
+    Rule(
+        "identifier-digits",
+        # An UNCOMMAED run of seven or more digits. Censused across content/
+        # before this was added: every such run is an identifier -- NHL game IDs,
+        # PMIDs, DOI fragments, archive timestamps, URL path segments, ddmmyyyy
+        # dates. NOT ONE is a quantity, because this corpus writes large
+        # quantities with thousands separators, which this pattern excludes.
+        #
+        # The game-ID range 2024020001-2024020400 was voicing as "two thousand
+        # and twenty-four MILLION twenty thousand and one to ...", in the
+        # paragraph that sources the net-front penalty analysis.
+        re.compile(r"(?<![\w.,])(?P<digits>\d{7,})(?![\w.,]*\d)"),
+        _identifier_digits,
+        "2024020001 -> 'two zero two four zero two zero zero zero one'. The "
+        "general number rule read a game ID as a quantity in the millions.",
     ),
     Rule(
         "bare-number",
@@ -1785,6 +2111,20 @@ class DocReport:
     tables_as_prose: int = 0
     tables_as_pointer: list[str] = field(default_factory=list)
     residue: list[str] = field(default_factory=list)
+    #: Verification paragraphs deleted from the audio, with their opening words.
+    #: ⚠️ A paragraph is dropped when its text STARTS with a marker, so
+    #: "Unverified: X" is silently deleted while "This is unverified, but X" is
+    #: voiced. Nothing used to warn an author which side of that line they were
+    #: on, and no checker sees it — a census found the corpus's integrity labels
+    #: vanishing from the audio precisely where they were written most directly.
+    dropped_verification: list[str] = field(default_factory=list)
+    #: Chunks still over the SERVICE's hard limits after every split was tried.
+    #: ⚠️ These produce NO AUDIO -- SynthesizeSpeech refuses the request. The
+    #: renderer used to emit them silently and exit 0.
+    oversized: list[tuple[str, int, int]] = field(default_factory=list)
+    #: Paragraphs rescued at a clause boundary because they carried no sentence
+    #: end. The audio exists; the listener hears a break placed mid-sentence.
+    clause_split: list[str] = field(default_factory=list)
     chunks: int = 0
     billed_chars: int = 0
 
@@ -1939,12 +2279,23 @@ def render_facts(block: Block, report: DocReport) -> list[Token]:
     out.extend(done("The key facts for this section. "))
     out.append(Token(SSML, "</p>"))
     for label, value in rows:
+        # ⚠️ The warning glyph maps to "" in SYMBOLS, so until this existed it
+        # was deleted from the facts layer and NOTHING replaced it -- while
+        # render_paragraph and render_list both said "Important." for the same
+        # glyph. Ten facts values carry it, and every one is a rule-set
+        # divergence or a penalty. The emphasis was being dropped in the layer
+        # the style guide calls the most load-bearing, and in the only layer
+        # that is voiced entirely alone.
+        important = "⚠" in value
         tokens = to_speech(value, report.converted)
         report.residue.extend(find_residue(tokens))
         if not plain(tokens).strip():
             continue
         out.append(Token(SSML, f'<break time="{BREAK_LIST_ITEM}"/>'))
         out.append(Token(SSML, "<p>"))
+        if important:
+            report.converted["callout.important"] += 1
+            out.extend(done("Important. "))
         if label:
             out.extend(done(_label_lead(label)))
         out.extend(_retokenise_trimmed(tokens))
@@ -1980,13 +2331,31 @@ def render_quote(block: Block, report: DocReport) -> list[Token]:
     # rendered corpus before this line existed. Header and body rows are kept: they
     # are the quotation's content, and a quoted table read as comma-separated cells is
     # the least-bad reading available.
-    text = "\n".join(
-        re.sub(r"^\s*>\s?", "", line) for line in block.lines
-        if not re.fullmatch(r"\s*>?\s*\|[\s:|-]+\|\s*", line)
-    )
+    text = "\n".join(re.sub(r"^\s*>\s?", "", line) for line in block.lines)
     paragraphs = [p for p in re.split(r"\n\s*\n", text) if p.strip()]
     out: list[Token] = []
     for paragraph in paragraphs:
+        lines = [line for line in paragraph.split("\n") if line.strip()]
+        # ⚠️ A table nested in a blockquote used to fall through to prose, where
+        # the symbol table turns every `|` into a comma. The corpus's ONLY
+        # blockquoted table is the net-front penalty-enrichment table that
+        # refutes the cross-checking folklore, and it was voiced as an
+        # unlabelled comma stream: the column heads once, then 21 numbers with
+        # nothing saying which column any of them was in.
+        #
+        # An earlier fix here stripped the SEPARATOR row, so the listener at
+        # least stopped hearing "dash dash dash" three times -- and a comment
+        # called the result "the least-bad reading available". It was not.
+        # render_table's prose mode re-announces the column head before every
+        # cell, and its pointer mode says plainly that the table is on the
+        # website. Both are better than unlabelled numbers, and routing here
+        # also puts blockquoted tables into the tables-as-prose and
+        # tables-as-pointer counters, which could not see them at all.
+        if len(lines) >= 2 and all(line.lstrip().startswith("|") for line in lines):
+            out.extend(render_table(
+                Block("table", lines, block.line_number), report
+            ))
+            continue
         heading = re.match(r"^\s*(#{1,6})\s+(.*)$", paragraph)
         if heading:
             # Headings do occur inside callout blockquotes.
@@ -2155,7 +2524,24 @@ def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list
             continue
 
         if skip_section_level:
-            report.dropped["section-body.notes-on-verification"] += 1
+            # ⚠️ The Sources trailer of two documents sits INSIDE their
+            # "## Notes on verification" section, so this branch's `continue`
+            # fired before the sources check below and `sources-section` never
+            # incremented for them. The report said 35 documents lost their
+            # trailer when the answer is 37 -- and the two it could not see are
+            # precisely the two where the trailer is buried, which is where an
+            # author would least expect to find it.
+            #
+            # Nothing about the OUTPUT changes: the section is dropped whole
+            # either way. Only the count was wrong, and a count an author uses
+            # to audit which documents lose a layer has to be right.
+            if block.kind in ("paragraph", "quote") and is_sources_paragraph(
+                re.sub(r"^\s*>\s?", "", "\n".join(block.lines), flags=re.M)
+            ):
+                report.dropped["sources-section"] += 1
+                report.dropped["sources-section.inside-notes-section"] += 1
+            else:
+                report.dropped["section-body.notes-on-verification"] += 1
             continue
 
         if block.kind == "hrule":
@@ -2193,6 +2579,9 @@ def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list
             label = is_verification_paragraph(classify_text)
             if label:
                 report.dropped[f"verification.{label}"] += 1
+                report.dropped_verification.append(
+                    " ".join(classify_text.split())[:110]
+                )
                 # A verification note may be followed by its own bullet list.
                 if index < total and blocks[index].kind == "list":
                     report.dropped[f"verification.{label}.list"] += 1
@@ -2223,7 +2612,16 @@ def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list
         report.dropped[f"unhandled.{block.kind}"] += 1
 
     chunks = [c for c in chunks if plain(c.tokens).strip()]
-    return split_oversized(chunks), report
+    # Snapshot the fallback log around the split so each rescued paragraph can
+    # be attributed to the document it came from. _split_paragraph is several
+    # calls down and has no report; tagging here is the cheapest honest way to
+    # answer "which file do I fix?", and a report that cannot answer that is a
+    # worklist nobody can action.
+    mark = len(_CLAUSE_SPLIT_FALLBACKS)
+    final = split_oversized(chunks)
+    report.clause_split = list(_CLAUSE_SPLIT_FALLBACKS[mark:])
+    report.oversized = oversized_after_split(final)
+    return final, report
 
 
 def split_oversized(chunks: Sequence[Chunk]) -> list[Chunk]:
@@ -2253,7 +2651,59 @@ def split_oversized(chunks: Sequence[Chunk]) -> list[Chunk]:
     return out
 
 
-RE_SENTENCE_END = re.compile(r"(?<=[.!?…])\s+")
+def oversized_after_split(chunks: Sequence[Chunk]) -> list[tuple[str, int, int]]:
+    """Chunks still over Polly's hard limits after every split was attempted.
+
+    ⚠️ ``_split_paragraph`` breaks only where the previous atom ENDED A
+    SENTENCE. A long semicolon or em-dash chain contains no such point, so the
+    splitter finds no legal break, returns the paragraph whole, and
+    ``split_oversized`` emits it anyway -- silently.
+
+    SynthesizeSpeech REFUSES a request over 3000 billed or 6000 total
+    characters, so such a chunk yields no audio at all. Nothing said so: the
+    renderer exited 0, the report looked clean, and the missing audio would
+    have surfaced only at synthesis time.
+
+    Measured when this was added: 28 chunks over the billed limit, the largest
+    3,496 characters, in 10 documents. ⚠️ **That diagnosis was then REFUTED** --
+    the cause was `_assemble` testing one token at a time, not missing
+    punctuation, and fixing it took this list to zero with no markdown change.
+    See `_assemble`.
+
+    ⚠️ **This list can still be non-empty, and there is one case nothing can
+    rescue.** Verified with a synthetic paragraph of 3,839 characters carrying a
+    single full stop: the clause-boundary fallback fires, is recorded, and
+    **cannot split it** -- `_outer_only` re-flags the same atoms by nesting
+    depth, so a paragraph that is one long token has no cut point at any tier.
+    It is reported here and produces no audio.
+
+    That is deliberate. A third tier splitting mid-word would guarantee audio at
+    the cost of mangling prose, and no paragraph in the corpus needs it: the
+    count is currently zero. **A loud failure an author fixes beats a quiet
+    mangling nobody hears.** If this list is ever non-empty, the repair is in the
+    markdown -- give the paragraph a sentence boundary.
+    """
+    over: list[tuple[str, int, int]] = []
+    for chunk in chunks:
+        billed = len(plain(chunk.tokens))
+        total = len(render(chunk.tokens)) + len("<speak>\n</speak>\n")
+        if billed > POLLY_BILLED_LIMIT or total > POLLY_TOTAL_LIMIT:
+            over.append((chunk.section, billed, total))
+    return over
+
+
+#: ⚠️ The closing-quote alternative is not decoration. Without it this pattern
+#: read `He said "keep the stick down." The next sentence follows.` as ONE
+#: sentence -- the full stop is followed by a quotation mark, not whitespace, so
+#: `(?<=[.!?…])\s+` matched nowhere in it. This corpus quotes rulebook text
+#: constantly, so a large share of its sentence ends were invisible as break
+#: points, and paragraphs built almost entirely of quotations had almost none.
+#: RE_SENTENCE_TAIL five lines below ALREADY accepted trailing closers, so the
+#: two regexes disagreed about what ends a sentence. Two fixed-width lookbehind
+#: branches keep the closer with the sentence it belongs to.
+RE_SENTENCE_END = re.compile(
+    r"(?:(?<=[.!?…])|(?<=[.!?…][\"'”’\)\]]))\s+"
+)
 #: Does this piece END a sentence? Trailing quotes and brackets close after the stop.
 RE_SENTENCE_TAIL = re.compile(r"[.!?\u2026][\"'\u201d\u2019\)\]]*\s*$")
 
@@ -2313,15 +2763,48 @@ def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
                           or RE_SENTENCE_TAIL.search(piece) is not None)
 
     def _assemble(pairs: Sequence[tuple[Token, bool]]) -> list[list[Token]]:
+        """Pack whole SENTENCES into groups that fit the budget.
+
+        ⚠️ This used to test ONE TOKEN at a time, and that is why the splitter
+        produced oversized groups from paragraphs that were full of sentence
+        boundaries. `current` crept past the budget *inside* a sentence, and the
+        cut could only fire at the next breakable atom -- by which point the
+        group it emitted was already over the limit. The mid-clause rescue then
+        fired on a paragraph that had 8 to 21 legal places to cut.
+
+        ⚠️ So the advice "restore the sentence boundaries" was WRONG for most of
+        the corpus, and an agent proved it by instrumenting this function:
+        adding full stops to a rescued paragraph moved the chunk lengths and
+        cleared nothing. **Any <p> over the budget was guaranteed a rescue
+        whatever its punctuation.**
+
+        Two details compounded it, both now handled by grouping first:
+        `RE_SENTENCE_END.split` leaves an empty final piece when a token ends
+        `". "`, so the breakable atom was frequently a ZERO-LENGTH token --
+        `current + ['']` can never trip a size test -- and that empty piece then
+        set `prev_ended = False`, marking the real next token unbreakable.
+
+        Grouping into sentence units first means the test asks the only question
+        that matters: does the NEXT WHOLE SENTENCE still fit?
+        """
+        units: list[list[Token]] = []
+        for token, breakable in pairs:
+            if breakable and units:
+                units.append([token])
+            elif units:
+                units[-1].append(token)
+            else:
+                units.append([token])
+
         groups: list[list[Token]] = []
         current: list[Token] = []
-        for token, breakable in pairs:
-            candidate = current + [token]
-            if current and breakable and _exceeds_limits(
+        for unit in units:
+            candidate = current + list(unit)
+            if current and _exceeds_limits(
                 [Token(SSML, "<p>")] + candidate + [Token(SSML, "</p>")]
             ):
                 groups.append([Token(SSML, "<p>")] + current + [Token(SSML, "</p>")])
-                current = [token]
+                current = list(unit)
             else:
                 current = candidate
         if current:
@@ -2331,16 +2814,43 @@ def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
     groups = _assemble(atoms)
     # FALLBACK. Prose always carries sentence boundaries, but a paragraph that
     # carries none - a run-on, or a wall of markup - would otherwise come back
-    # as one oversized chunk and fail at synthesis. Retry on the nesting test
+    # as an oversized chunk and fail at synthesis. Retry on the nesting test
     # alone, which is what this function did before the sentence test existed.
     # Splitting mid-clause is bad; exceeding the API's limit is worse, and this
     # branch is the only way the old behaviour can still be reached.
-    if len(groups) == 1 and _exceeds_limits(groups[0]):
-        groups = _assemble([(token, outer) for (token, outer) in _outer_only(atoms, group)])
+    #
+    # ⚠️ The trigger was `len(groups) == 1`, and that was too narrow to do its
+    # job. A paragraph that split into TWO groups, one of them still over the
+    # limit, never reached the fallback at all -- so it shipped oversized and
+    # Polly would refuse it. Measured when this was widened: 27 chunks across
+    # 8 documents, the largest 3,493 billed characters against a service limit
+    # of 3,000, every one of them producing no audio and nothing saying so.
+    #
+    # Only the offending group is retried. Re-splitting the whole paragraph
+    # would cut mid-clause in the parts that had split cleanly, and those parts
+    # are not the problem.
+    if any(_exceeds_limits(candidate) for candidate in groups):
+        rescued: list[list[Token]] = []
+        for candidate in groups:
+            if not _exceeds_limits(candidate):
+                rescued.append(candidate)
+                continue
+            _CLAUSE_SPLIT_FALLBACKS.append(plain(candidate).strip()[:90])
+            rescued.extend(
+                _assemble(_outer_only([(token, False) for token in candidate[1:-1]]))
+            )
+        groups = rescued
     return groups
 
 
-def _outer_only(atoms, group):
+#: Paragraphs the sentence-boundary splitter could not break, recorded so that
+#: rescuing them at a clause boundary does not HIDE them. The fallback keeps the
+#: audio working; this list keeps the source defect visible. The repair is
+#: punctuation in the markdown -- restore the sentence boundaries -- not code.
+_CLAUSE_SPLIT_FALLBACKS: list[str] = []
+
+
+def _outer_only(atoms):
     """The same atoms, flagged by nesting depth alone - the pre-sentence-test rule."""
     depth = 0
     out = []
@@ -2463,6 +2973,9 @@ def print_report(reports: Sequence[DocReport]) -> None:
     converted = Counter()
     residue = Counter()
     pointers: list[str] = []
+    verifications: list[tuple[str, str]] = []
+    oversized: list[tuple[str, str, int, int]] = []
+    clause_split: list[tuple[str, str]] = []
 
     print("=" * 78)
     print("PER-DOCUMENT")
@@ -2479,7 +2992,55 @@ def print_report(reports: Sequence[DocReport]) -> None:
         dropped.update(report.dropped)
         converted.update(report.converted)
         residue.update(report.residue)
+        verifications.extend(
+            (report.doc_id, t) for t in report.dropped_verification
+        )
         pointers.extend(f"{report.doc_id}: {p}" for p in report.tables_as_pointer)
+        oversized.extend(
+            (report.doc_id, name, billed, total)
+            for name, billed, total in report.oversized
+        )
+        clause_split.extend((report.doc_id, t) for t in report.clause_split)
+
+    if clause_split:
+        print()
+        print("=" * 78)
+        print("SPLIT MID-CLAUSE  -- no sentence boundary was available")
+        print("=" * 78)
+        print(
+            "  These paragraphs carry no sentence end the splitter could cut at,\n"
+            f"  and exceeded the service limit ({POLLY_BILLED_LIMIT} billed / "
+            f"{POLLY_TOTAL_LIMIT} total). They were\n"
+            "  rescued at a clause boundary so the audio exists at all -- but a\n"
+            "  listener hears a break placed mid-sentence.\n"
+            "  ⚠️ The repair is PUNCTUATION IN THE SOURCE: a long semicolon or\n"
+            "  em-dash chain becomes full stops. Fix it and this list empties.\n"
+        )
+        per_doc = Counter(doc_id for doc_id, _ in clause_split)
+        for doc_id, count in per_doc.most_common():
+            print(f"  {count:3d}  {doc_id}")
+        print()
+        for doc_id, opening in clause_split:
+            print(f"  {doc_id}: {opening}...")
+        print(f"\n  {len(clause_split)} paragraphs in {len(per_doc)} documents.")
+
+    if oversized:
+        print()
+        print("=" * 78)
+        print("OVER THE SERVICE LIMIT  -- these chunks would produce NO AUDIO")
+        print("=" * 78)
+        print(
+            f"  SynthesizeSpeech refuses over {POLLY_BILLED_LIMIT} billed or "
+            f"{POLLY_TOTAL_LIMIT} total characters.\n"
+            "  ⚠️ Reaching this list means even the clause-boundary fallback could\n"
+            "  not get the unit under the limit. Nothing downstream will warn you:\n"
+            "  the renderer exits 0 and the audio is simply absent.\n"
+        )
+        for doc_id, name, billed, total in sorted(
+            oversized, key=lambda row: -row[2]
+        ):
+            print(f"  {billed:6,d} billed  {total:6,d} total   {doc_id}/{name}")
+        print(f"\n  {len(oversized)} chunks.")
 
     print()
     print("=" * 78)
@@ -2505,6 +3066,20 @@ def print_report(reports: Sequence[DocReport]) -> None:
         print(f"  {line}")
     if not pointers:
         print("  (none)")
+
+    print()
+    print("=" * 78)
+    print("VERIFICATION PARAGRAPHS DELETED FROM THE AUDIO")
+    print("=" * 78)
+    print("  A paragraph is dropped when its text STARTS with a verification marker.")
+    print("  'Unverified: X' is deleted; 'This is unverified, but X' is spoken.")
+    print("  Nothing else warns an author which side of that line they are on.")
+    print()
+    if not verifications:
+        print("  (none)")
+    for doc_id, text in verifications:
+        print(f"  {doc_id}")
+        print(f"      {text}")
 
     print()
     print("=" * 78)
@@ -2558,6 +3133,28 @@ def self_test() -> int:
          "Rule six hundred and twenty-four, clause b, sub-clause one"),
         ("Rule 27.8 and 63.2(viii)",
          "Rule twenty-seven point eight and sixty-three point two, clause eight"),
+        # ⚠️ A COMMA- or "and"-separated bracket is a further CLAUSE of the same
+        # rule; an ADJACENT bracket is a SUB-clause. Before this, the trailing
+        # brackets matched no citation rule at all and brackets are SILENT, so
+        # "7.5(a), (e)" voiced as "...clause a, e" and the listener heard a
+        # dangling letter. Found by reading a repair back as audio.
+        ("Hockey Canada 7.5(a), (e)",
+         "Hockey Canada seven point five, clause a, clause e"),
+        ("USA Hockey 608(a), (b) and (c)",
+         "USA Hockey six hundred and eight, clause a, clause b, clause c"),
+        # The adjacent form must still read as a sub-clause, not a second clause.
+        ("Rule 7.5(a)(e)", "Rule seven point five, clause a, sub-clause e"),
+        # ⚠️ A SLASH is "or", not "and another". `622(b)/(c)` is one rule offering
+        # two clauses; voicing the slash as a comma turns an alternative into an
+        # enumeration. Before this it was not matched at all and the listener
+        # heard a literal "clause b, open paren c close paren" -- brackets are
+        # silent, so the second clause letter simply vanished.
+        ("USA Hockey 622(b)/(c)",
+         "USA Hockey six hundred and twenty-two, clause b or clause c"),
+        ("Rule 8.1(c)/(d)", "Rule eight point one, clause c or clause d"),
+        # ⚠️ And "and" before a RULE NUMBER must not be swallowed as a clause tail.
+        ("Rules 27.8 and 63.2(iii)",
+         "Rules twenty-seven point eight and sixty-three point two, clause three"),
         # Round 53: 146 roman clause markers reached the audio. The
         # Rule-prefixed pattern carried two clause groups; the bare and USA
         # Hockey patterns carried one, so the second clause was left as
@@ -2588,6 +3185,45 @@ def self_test() -> int:
         ("78.8%", "seventy-eight point eight percent"),
         ("~45 s", "about forty-five seconds"),
         ("30–80 s", "thirty to eighty seconds"),
+        # A bare clause citation on a TWO-digit rule number. CARHA numbers its
+        # rules in two digits, so every one of these voiced with a literal
+        # bracket -- "seventy-nine(a)" -- while the three-digit USA Hockey form
+        # beside it was correct. 33 spans were live in `content/` and nobody had
+        # heard them, because CARHA was the book nothing had cited until the
+        # round that found it holds a rule refuting a corpus negative.
+        ("79(a)", "seventy-nine, clause a"),
+        ("79(b)", "seventy-nine, clause b"),
+        ("under 49(a) and 55(a)", "under forty-nine, clause a and fifty-five, clause a"),
+        # ...and the three-digit and dotted forms must not regress.
+        ("604(a)", "six hundred and four, clause a"),
+        ("630(d.3)", "six hundred and thirty, clause d point three"),
+        ("63.2(viii)", "sixty-three point two, clause eight"),
+        # A range with a SPELLED-OUT unit. `_UNITS_ALT` holds abbreviations
+        # only, so these matched no range rule and fell through to
+        # `bare-number` twice: "30-35 seconds" was voiced "thirty-thirty-five
+        # seconds". The en-dash spelling was rescued by `numeric-range` and
+        # the hyphen spelling was not, which is why it survived - and all but
+        # two of the corpus's hyphen instances sit inside quotations that must
+        # not be edited to work around a renderer bug.
+        ("30-35 seconds", "thirty to thirty-five seconds"),
+        ("7-9 players", "seven to nine players"),
+        ("6-8 weeks", "six to eight weeks"),
+        ("130-155 degrees",
+         "one hundred and thirty to one hundred and fifty-five degrees"),
+        # ...and the four things that must NOT become ranges. Widening
+        # `numeric-range` to take a hyphen would have caught the cases above
+        # and wrecked every one of these; the season identifiers alone appear
+        # over a hundred times and are the corpus's citation backbone.
+        #
+        # ⚠️ The season row below is a CANARY, not a test of the guard in
+        # `_range_with_spelled_unit`. `season-range` consumes '2025-26' first,
+        # so this row passes even with that guard disabled - measured, not
+        # assumed. It still earns its place: it fails if the rule ORDER is
+        # ever changed, which is the thing actually protecting seasons.
+        ("the 2025-26 edition", "the twenty twenty-five to twenty twenty-six edition"),
+        ("a 50-50 puck", "a fifty-fifty puck"),
+        ("a 2-1 lead", "a two-one lead"),
+        ("a 1-2-2 forecheck", "a one two two forecheck"),
         # A CLOSED-UP en dash is a different mark from the one above, and the
         # two need opposite readings. Compounds are one word with no pause; a
         # letter range reads as "to". Both used to fall through to the symbol
@@ -2635,7 +3271,21 @@ def self_test() -> int:
          "nought point one seven"),
         ("F1 pressures, F2 supports, F3 holds",
          "F one pressures, F two supports, F three holds"),
+        # The USA Hockey Casebook's own sub-clause form. It reached the listener
+        # as "six hundred and thirty(d.3)" -- raw characters after a number.
+        ("Rule Reference 630(d.3)",
+         "Rule Reference six hundred and thirty, clause d point three"),
+        # ...and the ordinary lettered clause still reads as before.
+        ("Rules 624(b) and 630(a)",
+         "Rules six hundred and twenty-four, clause b and "
+         "six hundred and thirty, clause a"),
+        # The IIHF's typographic cross-reference marker, inside a quotation.
+        ("in violation of ➔ Rule 81 – Icing",
+         "in violation of Rule eighty-one — Icing"),
         ("a D-to-D pass", "a D to D pass"),
+        ("the d-to-d option", "the D to D option"),
+        # The word-boundary guard: this used to voice as "forwarD to Defence".
+        ("a forward-to-defence pass", "a forward-to-defence pass"),
         ("U13", "under thirteen"),
         ("16U", "sixteen U"),
         ("85 ft", "eighty-five feet"),
@@ -2646,6 +3296,22 @@ def self_test() -> int:
         # The three constructs that reached the SSML unhandled in the 29 July
         # 2026 narration pilot. Every one of them was silent — no error, just a
         # marker or a symbol the listener never heard.
+        # ⚠️ Emergency numbers. The general number rule voiced these as quantities,
+        # in a mental-health crisis callout — the one passage where a listener may be
+        # about to dial. The false-positive guard is the second pair: the same
+        # document says "pooling 112 effect sizes", which must stay a quantity.
+        ("call 999 now", "call nine nine nine now"),
+        ("999 in the UK and Ireland, 112 across the EU, 911 in the US",
+         "nine nine nine in the UK and Ireland, one one two across the EU, "
+         "nine one one in the US"),
+        ("pooling 112 effect sizes", "pooling one hundred and twelve effect sizes"),
+        ("dial 111 within 24 hours", "dial one one one within twenty-four hours"),
+        # The drill-symbol glyphs: silent before, and the passage that quotes them
+        # is the one teaching what they mean.
+        ("\u25cf \u25cb Forward / Player",
+         "filled circle open circle Forward or Player"),
+        ("\u25b2 \u25b3 Defender / Player",
+         "filled triangle open triangle Defender or Player"),
         ("🇬🇧 Neck laceration protection is mandatory",
          "For British readers, Neck laceration protection is mandatory"),
         ("⚠️ 🇬🇧 The IIHF says the opposite",
@@ -2684,6 +3350,43 @@ def self_test() -> int:
         ("CF%", "C F percent"),
         ("7/16\"", "seven sixteenths of an inch"),
         ("⅜\"", "three eighths of an inch"),
+        # Feet and inches. Both marks used to reach the listener raw: a 6'4"
+        # goaltender was voiced as "six'four"", and 65" simply lost its unit.
+        ("a 6'4\" goaltender", "a six foot four inches goaltender"),
+        ("players 6'6\" or taller", "players six foot six inches or taller"),
+        ("5'7\" apart", "five foot seven inches apart"),
+        ("(65\" by exception)", "(sixty-five inches by exception)"),
+        ("8\" youth to 15\" senior", "eight inches youth to fifteen inches senior"),
+        ("1\" above", "one inch above"),
+        # The IIHF book writes both "1.8 m" and "2.4m"; the corpus quotes it
+        # verbatim, so the unspaced form has to work too. It voiced as
+        # "two point four m" -- a letter read aloud inside a rink dimension.
+        ("end glass 2.4m from the goal line",
+         "end glass two point four metres from the goal line"),
+        # ...and the longer units must still win over the bare "m".
+        ("10mm of flex", "ten millimetres of flex"),
+        ("travelling 30km/h", "travelling thirty kilometres per hour"),
+        # A long uncommaed digit run is an identifier, never a quantity. The
+        # NHL game-ID range was voiced as "two thousand and twenty-four
+        # million twenty thousand and one".
+        ("games 2024020001 to 2024020400",
+         "games two zero two four zero two zero zero zero one to "
+         "two zero two four zero two zero four zero zero"),
+        ("PMID 28557852",
+         "PMID two eight five five seven eight five two"),
+        # ...but a comma-formatted quantity still reads as a quantity, which is
+        # what keeps the rule above safe.
+        ("1,250,000 people", "one million two hundred and fifty thousand people"),
+        # A range whose unit is the inch mark lost its "to", while the same
+        # range with the word "inches" was already correct.
+        ("youth 38\u201344\"", "youth thirty-eight to forty-four inches"),
+        # A straight quote after a digit is an inch mark OR a closing quotation
+        # mark, and this corpus has both. These four must NOT gain inches.
+        ('And "60 \u00d7 30" is', "And \"sixty times thirty\" is"),
+        ('Read "2 plus 10" the way', "Read \"two plus ten\" the way"),
+        ('"I\'ve got 19", "you take 7".',
+         '"I\'ve got nineteen", "you take seven".'),
+        ('a "63 inch" stick', 'a "sixty-three inch" stick'),
         ("two feet (2')", "two feet (two feet)"),
         ("a major (5')", "a major (five minutes)"),
         ("minor penalty (2')", "minor penalty (two minutes)"),
