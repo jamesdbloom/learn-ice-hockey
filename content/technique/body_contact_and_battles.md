@@ -1303,7 +1303,7 @@ Rule: Under IIHF Rule 46 an instigator takes 2+5+game misconduct and the third p
 Rule: In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a five-minute major — and in NIHL, NIHL1 and NIHL2 a fighting major in the last five minutes of regulation or in overtime also carries an automatic game misconduct (In-House Rules, Section 6)
 Rule: In British women's hockey at every age, adult included, any major brings an automatic game misconduct — a fighting major ends your game (In-House Rule 101's ejection bullet applies "in all cases" and states no age scope)
 Key: Junior hockey at every age reads the same way, on In-House Rule 201's scoping of the IIHF junior rules — an inference, since 201 does not name 201.1, so treat a fighting major as ending your game
-Key: Rec and beer leagues are commonly harsher again — read your own league's sheet, the only version that binds you
+Key: Rec and beer leagues are commonly harsher again — a general observation about how such leagues are run, not a sourced survey; read your own league's sheet, the only version that binds you
 Action: If a scrum starts, hands down, gloves on — skate away and let the officials sort it out
 ```
 
