@@ -679,7 +679,7 @@ Three consequences:
 - **Plain English.** No jargon without definition on first use in that document.
 - **Define a term where it is used in a particular sense; point at the glossary for the rest.**
   [`rink_map_and_glossary.md`](../content/foundation/rink_map_and_glossary.md) is the dictionary for
-  this corpus — 68 entries in its §8 glossary, linked from 20 documents — and general rink vocabulary is defined there
+  this corpus — its §8 glossary is linked from 20 documents — and general rink vocabulary is defined there
   **once**. A document carries only the terms it uses in a sense of its own, and opens its language
   section with a pointer so a reader meets the vocabulary page *before* they need it.
 
