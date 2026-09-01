@@ -2133,7 +2133,7 @@ it wants building.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 923,956 words — 70.0 hours of
+These outrank everything below. The corpus is **37 documents and 924,042 words — 70.0 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
