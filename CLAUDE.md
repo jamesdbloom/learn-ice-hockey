@@ -245,6 +245,26 @@ The short form:
    correct, and a tool that ranked these and then offered to fix them is precisely how
    round 44 manufactured a divergence that did not exist.
 
+   `scripts/check_zones.py` reports **shaded zone polygons that disagree about the region
+   they name.** It reads the BUILT SVGs in `site/public/diagrams/`, so it sees the final
+   resolved coordinates the reader gets — ⚠️ **which means it needs
+   `node site/scripts/build-diagrams.mjs` first (~6 min), and it says so and exits 0
+   rather than pretending a missing directory is a pass.** Also a worklist: a label can
+   legitimately differ where a region is mirrored at the other end, or reused for a
+   different area.
+
+   ⚠️ **It exists because a band labelled "the high slot" was drawn at 660 sq ft in two
+   diagrams — 3.14× the 210 sq ft its owner defines, cutting through both faceoff circles —
+   under captions reading "between the dots and the top of the circles", and PASSED EVERY
+   GATE.** `check_geometry.py` validates named *points*; `check-arrivals.mjs` reads routes
+   and never looks at `zones`. Three modules each define their own `HIGH_SLOT`. It was
+   found by a reviewer comparing two polygons by hand, and it had already been written down
+   in a comment in a neighbouring module, where it sat unactioned while the file it
+   described was edited in the same round.
+
+   ⚠️ **It compares diagrams to EACH OTHER, so a region drawn consistently wrong everywhere
+   is invisible to it.** Only `rink_map_and_glossary.md` settles what a region is.
+
    They are the floor. None of them can check whether anything is true.
 
 ---
@@ -346,7 +366,7 @@ project/            Style guide, review process, verification data.
                     Never fed to the podcast generator.
 scripts/            check_links.py, check_facts.py, check_absolutes.py, check_geometry.py,
                     check_secrets.py, check_counts.py, check_external_links.py,
-                    check_rule_scope.py, check_pointers.py (worklists, not gates),
+                    check_rule_scope.py, check_pointers.py, check_zones.py (worklists, not gates),
                     md_to_speech.py
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
