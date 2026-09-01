@@ -159,7 +159,7 @@ Risk: It produces fewer shots than other shapes; cycling without ever pulling th
 
 **Weaknesses:** demands deceptive, patient passers — if the kill reads the pattern, the passes are short and easy to intercept, and interceptions on the strong side lead straight to shorthanded breaks. It also produces fewer shots than other shapes; a unit that cycles without ever pulling the trigger achieves nothing but a tired power play.
 
-**Suits:** skilled, patient units, and teams whose best player is a below-the-goal-line playmaker. Note that at rec and youth level overload is often run out of a **2-3 base** (below), with both defencemen staying at the points.
+**Suits:** skilled, patient units, and teams whose best player is a below-the-goal-line playmaker. Note that at rec and youth level overload is often run out of a **2-3 base** (below), with both defencemen staying at the points. ⚠️ **That is an impression of how those levels play rather than a measured share** — nobody publishes a count of rec or youth power-play deployments, and this document has none, so treat it as unverified like the other prevalence claims here.
 
 #### Spread / box — pulling the kill apart
 
@@ -196,7 +196,7 @@ Risk: It ignores the middle of the slot entirely and generates lots of low-quali
 Read: Choose it with no puck-moving defenceman, when protecting a lead, or before a group can hold the blue line under pressure
 ```
 
-**The shape:** **two defencemen at the points** and **three forwards low** — one at the net front, one in each circle or corner. This was the default power play for decades and remains extremely common in rec, beer-league and youth hockey.
+**The shape:** **two defencemen at the points** and **three forwards low** — one at the net front, one in each circle or corner. This was the default power play for decades and remains common in rec, beer-league and youth hockey. ⚠️ **Both halves of that are impressions rather than measured shares, and this document has no count for either** — the same limit that applies to the prevalence claims elsewhere here.
 
 **The jobs:** the points shoot and keep pucks in; the three forwards work the low area, screen, tip and hunt rebounds; the puck generally goes low-to-high and back.
 

@@ -207,7 +207,9 @@ const ppOverload = {
     'second spot is either the corner or the low circle and it is drawn as the corner, the ' +
     'weak-side player’s exact position is not fixed at all and is drawn at the top of the far ' +
     'circle, and at rec and youth level the overload is often run out of a 2-3 ' +
-    'base with both defencemen staying at the points. ' +
+    'base with both defencemen staying at the points — an impression of how those levels play ' +
+    'rather than a measured share, with no count of rec or youth deployments published and none ' +
+    'here. ' +
     'It is excellent against a passive box that will not come out to the wall, but the passes ' +
     'are short and easy to intercept once the kill reads the pattern, and an interception on the ' +
     'strong side leads straight to a shorthanded break.',
@@ -330,7 +332,8 @@ const pp23 = {
     'goes low-to-high and back, which is what the two numbered routes show: a pass up to the ' +
     'point and a shot judged on whether it arrives low, hard and on net with a body in front of ' +
     'the goalie, not on whether it beats him clean. It was the default power play for decades ' +
-    'and remains extremely common in rec, beer-league and youth hockey; it is the safe shape, ' +
+    'and remains common in rec, beer-league and youth hockey — both of those are impressions ' +
+    'rather than measured shares, with no count published and none here. It is the safe shape, ' +
     'because two defencemen at the line means very few shorthanded breaks and good retrieval on ' +
     'missed shots, and it is the easiest to teach — but it is also the shape that attacks the two ' +
     'areas a box is built to defend and ignores the middle of the slot entirely, so against a ' +

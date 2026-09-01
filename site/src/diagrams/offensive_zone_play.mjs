@@ -482,8 +482,14 @@ const netFrontScreen = {
     "positioning alone impairs the goalie's ability to move freely or defend, and Rule 69.3 " +
     'voids it outright for a significant vision-obstructing position inside the crease, with no ' +
     'contact at all. USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter still — there a foot ' +
-    'in the paint can cost you the zone and not just the goal — and many rec leagues are ' +
-    "stricter again, so keep your feet out of the blue paint and read your own league's rule.",
+    'in the paint can cost you the zone and not just the goal. One rec book is stricter again: ' +
+    'the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from standing in ' +
+    'the goal crease unless the puck is in the goal crease area, disallows the goal if one does, ' +
+    'and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read that ' +
+    'as one rec book and not as the rec position — CARHA governs CARHA-affiliated leagues only. ' +
+    'Rec and beer leagues are often said to impose stricter house rules still, but how many do ' +
+    'is a question about leagues rather than about books, and this document has no count for ' +
+    "it. So keep your feet out of the blue paint and read your own league's rule.",
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +

@@ -61,6 +61,7 @@ fire on "not a minor point"; there is no live instance, but that is the false-po
 shape to watch. It is a floor, not a ceiling.
 """
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -140,6 +141,41 @@ def sentences(line: str):
     return re.split(r"(?<=[.!?])\s+", line)
 
 
+def caption_units():
+    """Diagram captions and describe blocks, as (label, lineno, text).
+
+    ⚠️ These are VOICED. `md_to_speech.py` loads `site/src/data/diagrams.json`
+    and emits `"Diagram. " + caption`, so a caption is a spoken unit exactly as a
+    facts value is -- and until this function existed, **an unscoped absolute
+    denial or a capped penalty tier written in a caption passed every gate in
+    this project**, because this checker read `content/**/*.md` and nothing else.
+    A reviewer found four captions stating a rule with no book named, in a layer
+    no gate could see.
+
+    ⚠️ The JSON is GENERATED and gitignored-adjacent: if it is missing or stale
+    this returns nothing, and `main` says so rather than counting a silent zero
+    as a pass. A checker that passes because it found nothing to check is the
+    trap this repository has hit with a 1,535-byte extraction that contained no
+    book.
+    """
+    path = ROOT / "site" / "src" / "data" / "diagrams.json"
+    if not path.is_file():
+        return None
+    try:
+        data = json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return None
+    units = []
+    for did, entry in sorted(data.items()):
+        if not isinstance(entry, dict):
+            continue
+        for field in ("caption", "describe"):
+            text = entry.get(field)
+            if isinstance(text, str) and text.strip():
+                units.append((f"site/src/data/diagrams.json[{did}].{field}", 1, text))
+    return units
+
+
 def main() -> int:
     findings = []
     caps = []
@@ -148,48 +184,62 @@ def main() -> int:
         print("check_absolutes: FATAL — no documents found under content/", file=sys.stderr)
         return 2
 
+    units = []
     for path in files:
+        rel = path.relative_to(ROOT)
         for lineno, line in enumerate(path.read_text().split("\n"), 1):
-            sents = sentences(line)
-            for idx, sent in enumerate(sents):
-                # Second rule, independent of the first: an unscoped CAP on a tier.
-                # ⚠️ THIS BLOCK WAS SHIPPED AT THE WRONG INDENT and was inert: it sat
-                # beside the sentence loop rather than inside it, so it saw only the
-                # LAST sentence of each line, via a leaked loop variable. The script
-                # reported clean while structurally unable to fire — the same failure
-                # this file exists to prevent, and the second time it has happened.
-                # It must also run BEFORE the `continue` below, or every sentence
-                # without a denial is skipped.
-                for cap in CAP.finditer(sent):
-                    # Scope on the clause immediately before the cap, not the whole
-                    # sentence. Instance eighteen's sentence DID name the NHL — for a
-                    # different clause, about penalty shots — so a whole-sentence
-                    # check cleared it. The book has to be attached to the cap.
-                    clause = re.split(r"[;,—]", sent[:cap.start()])[-1]
-                    if BOOK.search(clause):
-                        continue  # "the NHL caps it at a minor" — scoped, correct
-                    caps.append((path.relative_to(ROOT), lineno, sent.strip()))
+            units.append((rel, lineno, line))
 
-                deny = DENY.search(sent)
-                if not deny:
-                    continue
-                before = sent[max(0, deny.start() - WINDOW) : deny.end()]
-                after_all = sent[deny.end():]
-                scoped = bool(BOOK.search(before)) or bool(SCOPE_AFTER.search(after_all))
-                if scoped:
-                    continue  # the denial names the book(s) it applies to — correct
-                # The grant may land in the NEXT sentence rather than this one, so look there
-                # too. (This does NOT rescue instance one — nothing in its text grants the
-                # minor. See the docstring.)
-                after = after_all
-                if idx + 1 < len(sents):
-                    nxt = sents[idx + 1]
-                    if not BOOK.search(nxt[:WINDOW]) or GRANT.search(nxt):
-                        after += " " + nxt
-                if GRANT.search(after):
-                    findings.append((path.relative_to(ROOT), lineno, sent.strip()))
+    captions = caption_units()
+    if captions:
+        units.extend(captions)
 
-    print(f"check_absolutes: {len(files)} documents scanned")
+    for rel, lineno, line in units:
+        sents = sentences(line)
+        for idx, sent in enumerate(sents):
+            # Second rule, independent of the first: an unscoped CAP on a tier.
+            # ⚠️ THIS BLOCK WAS SHIPPED AT THE WRONG INDENT and was inert: it sat
+            # beside the sentence loop rather than inside it, so it saw only the
+            # LAST sentence of each line, via a leaked loop variable. The script
+            # reported clean while structurally unable to fire — the same failure
+            # this file exists to prevent, and the second time it has happened.
+            # It must also run BEFORE the `continue` below, or every sentence
+            # without a denial is skipped.
+            for cap in CAP.finditer(sent):
+                # Scope on the clause immediately before the cap, not the whole
+                # sentence. Instance eighteen's sentence DID name the NHL — for a
+                # different clause, about penalty shots — so a whole-sentence
+                # check cleared it. The book has to be attached to the cap.
+                clause = re.split(r"[;,—]", sent[:cap.start()])[-1]
+                if BOOK.search(clause):
+                    continue  # "the NHL caps it at a minor" — scoped, correct
+                caps.append((rel, lineno, sent.strip()))
+
+            deny = DENY.search(sent)
+            if not deny:
+                continue
+            before = sent[max(0, deny.start() - WINDOW) : deny.end()]
+            after_all = sent[deny.end():]
+            scoped = bool(BOOK.search(before)) or bool(SCOPE_AFTER.search(after_all))
+            if scoped:
+                continue  # the denial names the book(s) it applies to — correct
+            # The grant may land in the NEXT sentence rather than this one, so look there
+            # too. (This does NOT rescue instance one — nothing in its text grants the
+            # minor. See the docstring.)
+            after = after_all
+            if idx + 1 < len(sents):
+                nxt = sents[idx + 1]
+                if not BOOK.search(nxt[:WINDOW]) or GRANT.search(nxt):
+                    after += " " + nxt
+            if GRANT.search(after):
+                findings.append((rel, lineno, sent.strip()))
+
+    if captions is None:
+        print("check_absolutes: ⚠️  site/src/data/diagrams.json missing or unreadable — "
+              "NO captions scanned. Run `node site/scripts/build-diagrams.mjs`.")
+        print("check_absolutes: this run did NOT check the voiced caption layer.")
+    print(f"check_absolutes: {len(files)} documents + "
+          f"{len(captions or [])} diagram caption/describe units scanned")
     if caps:
         print(f"\n{len(caps)} unscoped cap(s) on a penalty tier:")
         for rel, lineno, sent in caps:
