@@ -134,3 +134,69 @@ distribution.**
 > **I read 1,555 lines and 1,280 sentences; I did not read a single document from start to finish.**"*
 
 **That is the row this round leaves behind, and it is the sixth time it has been written.**
+
+---
+
+## A disclosure that was true when written and is now false — and the successor story was wrong too
+
+`equipment.md` said of the Canadian neck-protector certification: *"That announcement has not come
+yet."* **It came on 2026-08-06**, and it does not say what the corpus expected.
+
+BNQ's live certification page now carries, twice in rendered text, **"NOTICE - Closure of program
+BNQ 9415-370 (July 31, 2027)"**, and the linked notice reads:
+
+> *"following the recent publication of the international standard ISO 10256-5, the BNQ conducted a
+> review of its Program and decided to discontinue it. Likewise, **the BNQ has decided not to
+> implement a new certification program based on the new ISO 10256-5 standard**."*
+> *"**No new applications for certification will be accepted.**"*
+
+⚠️ **This is not a stale date. It contradicts the SHAPE of the corpus's story.** The file presents
+CAN/BNQ 0102-565/2023 as the standard the programme moves *to*. **BNQ is leaving neck-protector
+certification altogether**, directing companies *"to other accredited certification bodies."*
+
+⚠️ **And the same file states that Hockey Canada Rule 3.6(c) makes a BNQ-certified throat protector
+MANDATORY** for minor and female hockey, goaltenders included. **A Canadian reader is being told to
+buy against a certification that stops being issued, by a body that has said it will not replace it.**
+
+**The class is new here and worth naming.** Every stale-source finding this project has recorded so
+far was a *link* that rotted or a *number* that moved. This is a **disclosure that was accurate,
+sourced, dated and honest — and was overtaken by an event.** The corpus did nothing wrong; the world
+moved. ⚠️ **Nothing in the process detects that.** `check_external_links.py` sees an HTTP 200; the
+quotation still appears verbatim on the page; the honest-disclosure protections of non-negotiable 4
+keep it in place. **A refetching pass is the only thing that finds it, and one had not been run for
+this claim since it was written.**
+
+## `pdftotext -layout` produces a FALSE ABSENCE on two-column prose
+
+⚠️ **My brief told the agent to use `-layout` for anything tabular. That is right for tables and
+wrong for two-column prose**, and the failure landed on a safeguarding claim.
+
+The USA Hockey handbook is set in two columns. `-layout` interleaves them line by line, so a
+whitespace-flattened grep for the SafeSport training scope returned **zero hits and looked exactly
+like an absence.** **Slicing the left 48 characters of each line found it verbatim.**
+
+**This is the extraction-trap family in a new costume**, and it is the one that matters most, because
+the artefact is indistinguishable from a true negative and the corpus's negative-existence claims are
+built on exactly this operation.
+
+## Disclosures re-verified — three upheld, and one now sharpenable
+
+- **The ASHL HTML-comment trap.** The commented-out block the corpus warned about **has since been
+  removed from the site**; the phrase now returns **zero hits in raw HTML** across four pages. The
+  disclosure is upheld **and can be sharpened** — the trap it warns of is no longer live.
+- **Two Hockey Canada soft-404s** still return HTTP 200 at **byte-identical 168,252** with the title
+  *"404 | Missing page for Hockey Canada"*, and the final URL now names the error path explicitly.
+- **Pagé's 130–155° range** is verbatim in the thesis **with its own inline citation to a 1971
+  kinesiology textbook** — which **independently confirms the corpus's provenance disclosure** that
+  Pagé borrowed rather than measured it.
+- ⚠️ **A restater trap checked and cleared:** the 0.37/0.48 recovery times sit beside a "Marino (1974)
+  found that…" sentence. **Recomputing the group means from the thesis's own appendix gives exactly
+  0.3700 (n=9) and 0.4800 (n=5).** They are Pagé's numbers, not Marino's.
+
+## The split citation that should stay split
+
+`shooting.md` and `offensive_zone_play.md` cite a percentage to one source and a sample size to
+another. **That is correct and must not be "tidied".** The figures **"51,308"** and **"5v5"** appear
+**nowhere** on the page carrying the percentages — they come from the original the corpus cites
+separately, which reads *"In total, the data set includes 51,308 shots at 5v5."* ⚠️ **The page with
+the percentages is itself a restater, and the corpus already names it as one.**
