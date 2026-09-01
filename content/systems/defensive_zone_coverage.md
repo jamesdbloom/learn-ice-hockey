@@ -131,7 +131,7 @@ Rule: Freezing the puck unpressured to buy a stoppage is a minor — NHL Rule 63
 
 | Player | Where | Job |
 |---|---|---|
-| **Strong-side defenceman** | On the puck — corner or behind the net | Pressure and pin the *puck*, or angle them away from the net (see the note below the table) |
+| **Strong-side defenceman** | On the puck — corner or behind the net | Pressure and pin the *puck*, or angle them away from the net (see the note that follows) |
 | **Weak-side defenceman** | Goalmouth | Own the doorstep. Box out. Do *not* get drawn to the puck |
 | **Centre** | Low support, strong side | Second body into the corner battle — two on one wins it |
 | **Strong-side winger** | High, on the strong-side point | Between that defenceman and the net; block the lane and the shot |
@@ -367,6 +367,12 @@ The **strong-side overload** is the opposite adjustment: instead of collapsing t
 | **Difficulty to learn** | Low | Low to understand, high to execute | Highest — everyone must agree where the line is | Lowest | Low |
 | **What it concedes** | Point shots, the walk-down, extended possession, and the seam between areas | Picks, mismatches, exhaustion, and total collapse if one player loses their man | Confusion at the man/zone boundary; demands constant communication | The entire perimeter; you rarely get the puck back | Everything outside the house, and any breakout speed |
 | **Breakout readiness when you win it** | Good — two wingers already high | Poor — you're standing wherever they put you | Good | Moderate | Poor — all five are below the circles |
+
+**The short version, for anyone who cannot see that table.** Three of its rows are not stated anywhere else in this document, so they are worth saying in words.
+
+- **How hard each is to learn.** Box+1 is the easiest and low zone collapse is close behind it; man-on-man is the easiest to *understand* and among the hardest to execute; the hybrid is the hardest of all, because everybody has to agree where the man/zone line sits and switch mode at the same instant.
+- **Who covers the points.** The collapse and the hybrid put a winger on each one, and man-on-man marks the opposing defencemen wherever they go. **Box+1 and the collapsing box do not cover the points properly at all** — in Box+1 the two high players sit at the tops of the circles, roughly 29 feet below the blue line, and close only once the puck is already there, so a defenceman walking down is picked up late if at all. In the collapsing box, point shots are the accepted cost.
+- **What shape you are in when you win the puck.** Good in the collapse and the hybrid, because both wingers are already high and are two immediate outlets. Moderate in Box+1. Poor in man-on-man, where your five are standing wherever their five chose to stand, and poor in the collapsing box, where all five of you are below the circles with a long way to skate.
 
 ---
 

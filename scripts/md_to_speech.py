@@ -1591,7 +1591,16 @@ NOTATION_RULES: tuple[Rule, ...] = (
     ),
     Rule(
         "clock-time",
-        re.compile(r"(?<![\d:])(\d{1,3}):(\d{2})(\.\d+)?(?![\d:])"),
+        # ⚠️ The lookbehind excludes a DOT as well as a digit and a colon, because
+        # a standards number ends in one: `CSA Z262.1:15` was voiced as "CSA Z two
+        # hundred and sixty-two.one MINUTE FIFTEEN SECONDS" -- the year suffix of
+        # a CSA standard read as a game clock, in the equipment document's
+        # certification section, where it is unintelligible. `alphanumeric-code`
+        # owns that form but runs later and never got the chance.
+        #
+        # A real clock time is never preceded by a dot: a sentence-final period is
+        # followed by a space, and "2:00" after "Fig." would be a citation anyway.
+        re.compile(r"(?<![\d:.])(\d{1,3}):(\d{2})(\.\d+)?(?![\d:])"),
         _clock,
         "2:00 -> 'two minutes'; 1:01.4 -> 'one minute one point four seconds'",
     ),
@@ -1819,12 +1828,24 @@ NOTATION_RULES: tuple[Rule, ...] = (
     ),
     Rule(
         "alphanumeric-code",
+        # ⚠️ The optional `:\d{1,4}` tail is the EDITION SUFFIX of a standards
+        # number -- `CSA Z262.1:15`. Without it the code was split: the letters
+        # and digits were voiced here and the `:15` was left for `clock-time`,
+        # which read it as a game clock ("...point one MINUTE FIFTEEN SECONDS").
+        # Guarding `clock-time` alone was not enough: the colon then reached the
+        # listener as a raw character, which is the defect this file exists to
+        # prevent. Swallowing the tail here lets `_alphanumeric_code`'s run-splitter
+        # drop the colon and speak the parts, which is how a person reads it.
+        #
+        # It cannot eat a real clock time: the letters and digits must be
+        # CONTIGUOUS, so "period 2:00" does not match -- the space breaks it.
         re.compile(
             r"\b(?:[A-Za-z]{1,6}\d+(?:\.\d+)?[A-Za-z]{0,4}"
-            r"|\d+(?:\.\d+)?[A-Za-z]{1,4})\b"
+            r"|\d+(?:\.\d+)?[A-Za-z]{1,4})(?::\d{1,4})?\b"
         ),
         _alphanumeric_code,
-        "product and standard codes: CRT6 -> 'C R T six'; 420D -> '... D'",
+        "product and standard codes: CRT6 -> 'C R T six'; CSA Z262.1:15 -> "
+        "'... Z two hundred and sixty-two point one fifteen'",
     ),
     Rule(
         "identifier-digits",
@@ -3185,6 +3206,18 @@ def self_test() -> int:
         ("78.8%", "seventy-eight point eight percent"),
         ("~45 s", "about forty-five seconds"),
         ("30–80 s", "thirty to eighty seconds"),
+        # A STANDARDS NUMBER, whose edition suffix is a colon-two-digits and
+        # was being read as a game clock: "CSA Z262.1:15" voiced as "...point
+        # one MINUTE FIFTEEN SECONDS", in the equipment document's certification
+        # section. Guarding `clock-time` alone left the colon reaching the
+        # listener raw, so `alphanumeric-code` now swallows the tail too.
+        ("CSA Z262.1:15",
+         "CSA Z two hundred and sixty-two point one fifteen"),
+        # ...and the clock forms it must never eat. The letters and digits have
+        # to be CONTIGUOUS, so a space is what protects these.
+        ("a 22:30 puck drop", "a twenty-two minutes thirty seconds puck drop"),
+        ("period 2:00", "period two minutes"),
+        ("1:01.4", "one minute one point four seconds"),
         # A bare clause citation on a TWO-digit rule number. CARHA numbers its
         # rules in two digits, so every one of these voiced with a literal
         # bracket -- "seventy-nine(a)" -- while the three-digit USA Hockey form
