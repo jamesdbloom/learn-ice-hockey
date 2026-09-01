@@ -30,7 +30,7 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 | `nhl_rules.txt` | NHL Official Rules 2025-2026 | [media.d3.nhle.com](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) |
 | `nhl_rules_2024-25.txt` | NHL Official Rules **2024-2025 — SUPERSEDED, held as dating evidence only.** Fetched 31 August 2026 from the same host as the current book (HTTP 200, 12.7 MB, running heads read `OFFICIAL RULES 2024-2025`). ⚠️ **Never cite it for a current rule.** It exists because the corpus dated the Rule 60 rewrite to a **blog**, which is non-negotiable 2; two editions of primary text now settle it. 2024-2025 Rule 60.1: *"A 'high stick' is one which is **carried above** the height of the opponent's shoulders"*; 2025-2026: *"one which **contacts** an opponent above the shoulders, **provided their shoulders are at waist level or higher**"*. 60.3 changed with it; 60.2 is identical in both. ⚠️ **It dates the first edition carrying the change and nothing more** — the NHL book has no rule-change summary and dates no rule, and no edition before 2024-2025 has been consulted, so how long the older wording stood is **not established**. | [media.d3.nhle.com](https://media.d3.nhle.com/image/private/t_document/prd/yikcdsxofkmgsrhjl3di.pdf) |
 | `usah.txt` | USA Hockey Official Playing Rules 2025-29. ✅ **Verified against the publisher PDF, 29 August 2026** — re-fetched and re-extracted with `pdftotext -layout`, and the result is **byte-identical, MD5 `04b8fae8b682136701fb573a14500af7`**. So this file *is* the `-layout` extraction, there is no second view to compare against, and **the hyphenation trap that affects `nhl_rules.txt` and `hc.txt` does not apply here.** Recorded because an agent named "a flattened re-extraction of the USA Hockey PDF" as the one check it could not run to close a negative existence claim — it has now been run, and it changes nothing. | [cdn2.sportngin.com](https://cdn2.sportngin.com/attachments/document/945a-3442848/2025-29_USAH_Playing_Rules.pdf) |
-| `usah_casebook.txt` | **USA Hockey Official Rules and Casebook 2025-29**, 476pp — the separate volume, fetched in round 52. ⚠️ **The corpus cites it** (Rule 630 Situation 41, Rule 607 Situation 2, Rule 203(a) Situation 6), and until `fetch_sources.sh` gained it, it existed only in a session scratchpad — a cited book no later round could rebuild. **Its own "Rule Reference 630(d.3)" in Situations 40/41 names a sub-clause that is not in the printed rule** — the book's error, recorded not repaired. | [cdn3.sportngin.com](https://cdn3.sportngin.com/attachments/document/4f1a-3442850/2025-29_USAH_Playing_Rules___Casebook.pdf) |
+| `usah_casebook.txt` | **USA Hockey Official Rules and Casebook 2025-29**, 476pp — the separate volume, fetched in round 52. ⚠️ **The corpus cites it** (Rule 630 Situation 41, Rule 607 Situation 2, Rule 203(a) Situation 6), and until `fetch_sources.sh` gained it, it existed only in a session scratchpad — a cited book no later round could rebuild. **Its own "Rule Reference 630(d.3)" in Situations 40/41 names a sub-clause that is not in the printed rule** — the book's error, recorded not repaired. **⚠️ A second, larger instance of the same species: USA Hockey's Rule 610 letters do not agree with themselves.** The printed rule runs **(a)–(g) with no (h)** — confirmed in TWO independent extractions of the same printed text (`usah.txt:3760-3821` and this volume at `:9329-9391`), which agree word for word, so it is not an extraction artefact. But USA Hockey's own summary tables and Casebook situations cite **one letter higher** from goal-displacement onward: body **(d)** goal displacement is cited as **610(e)** (`usah.txt:5199`, Casebook Situations 6 and 7); body **(f)** puck on the netting is cited as **610(g)** (`usah.txt:5210-5211`, Situation 8); body **(g)** the bench minor for the wrong number of players is cited as **610(h)** (`usah.txt:5200`, `:5246`, Situations 4, 9, 10, 11). ⚠️ **So a citation of 610(e) through 610(h) taken from a summary table or a Casebook situation will not match the rule text under that letter.** ⚠️ **The corpus already knows this and handles it, which I got wrong when first writing this entry:** `rules_primer.md` states in terms that the Summary of Penalties says *"610(h)"* while *"the printed Rule 610 runs (a) to (g) and there is no (h)"*, and tells the reader **610(g) "is the number to quote to an official"**; its Sources trailer records that both volumes' Summary uses *"610(e)"* for what the body prints as 610(d), and states that its own citations are **the body's lettering**. `faceoffs.md` records the same. **So the corpus uses the body's letters consistently and discloses the disagreement.** This entry exists so the next reader of the SOURCE meets it here too. **Recorded, not repaired — the disagreement is the book's.** | [cdn3.sportngin.com](https://cdn3.sportngin.com/attachments/document/4f1a-3442850/2025-29_USAH_Playing_Rules___Casebook.pdf) |
 | `hc.txt` | Hockey Canada Playing Rules 2026-2028. ⚠️ **Extracted with plain `pdftotext`, not `-layout`** — one of **two** files here that are, the other being `nhl_rules.txt` (verified round 52: `-layout` on the NHL PDF gives a different file, 906,921 bytes and 34,484 diff lines, and does **not** reproduce the MD5-proven extraction) — so its tables interleave and rule numbers can detach from their text. Re-extracting with `-layout` is better evidence and shifts every `hc.txt:NNNN` citation in `project/reviews/`; see the note in `scripts/fetch_sources.sh`. | [cdn.hockeycanada.ca](https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf) |
 | `eiha_inhouse_2026-27.txt` | ⚠️ **IHUK In-House Rules 2026-27, Revision 1, published 25 July 2026 — THE CURRENT BRITISH DOCUMENT.** Obtained 29 Aug 2026. ⚠️ **It contradicts itself on the IIHF edition**: its cover says *"the **Current** IIHF Rule Book"*, its Introduction says *"Version 1.1, published July 2025"* — **which is the 2025/26 book**. Do not cite it as adopting 2026/27. And it **adds a Rule 76 section that 2025-26 did not have**: *"With the exception of face-offs following icings, the linesperson shall **immediately replace the centre for all violations**."* plus *"**Either centre can now put their stick down first** for a face-off."* | [englandicehockey.com](https://englandicehockey.com/wp-content/uploads/2026/08/IHUK-In-House-Rules-2026-2027.pdf) |
 | `eiha_inhouse.txt` | IHUK In-House Rules 2025-26, Revision 1 (27/10/25) | [englandicehockey.com](https://englandicehockey.com/wp-content/uploads/2025/11/IHUK-In-House-Rules-25-26-R1.pdf) | Superseded; kept for comparison.
@@ -42,7 +42,7 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 | `eih_rr.txt` | England Ice Hockey Rules & Regulations 2024-2025 | [englandicehockey.com](https://englandicehockey.com/wp-content/uploads/2024/09/1.0-5.0-EIH-Rules-and-Regulations.pdf) |
 | `ukcg.txt` | **UK Concussion Guidelines for Non-Elite (Grassroots) Sport**, November 2024 update. Quoted in `uk_rules.md` for the 999/111 split, the red-flag list and the suspected-neck-injury instruction; **England Ice Hockey has formally adopted it.** **Real text layer, 27pp, ~2.7 KB/page — this one greps honestly**, which is why the disclosure that *helmet* appears **0** times in it is checkable. ⚠️ **Fetch gotcha:** the SRA page carries `<base href="https://sportandrecreation.org.uk/">`, so its `../files/…` hrefs resolve to the **site root** — resolving them against the page path returns a **404**, the shape that manufactures a false dead-link report. England Ice Hockey links the older **April 2023** edition; the sentences the corpus quotes are verbatim in **both**. | [sportandrecreation.org.uk](https://sportandrecreation.org.uk/campaigns-and-policy/concussion/concussion-guidelines-for-grassroots-sport) |
 | `crt6.pdf` | **Concussion Recognition Tool 6** — Echemendia RJ, et al., *Br J Sports Med* June 2023;57(11):692-694, doi 10.1136/bjsports-2023-107021. Hosted by England Ice Hockey; the primary is BMJ, which returns **403** to any fetch. ⚠️ **DO NOT GREP THE `.txt`. Its content pages are IMAGES — but it is NOT a scan:** it is an InDesign-produced PDF with a **real text layer** that holds none of the tool's words, so `pdffonts` looks reassuring. `pdftotext -layout` yields **1,535 bytes** and plain `pdftotext` **505** — both of them BMJ stamp and page furniture, **both containing zero content**; the two figures differ by extraction mode, not by version, and **neither is the document**. So the `.txt` looks like a real extraction and contains **none** of the tool — `grep -ci helmet` returns **0** while the tool's *"Remember"* box says *"Do not remove helmet (if present) or other equipment."* **Two agents and a coordinator drew a false negative from that zero.** Render with `pdftoppm` and read the pages. | [englandicehockey.com](https://englandicehockey.com/wp-content/uploads/2024/02/Concussion-tool-CRT6.pdf) |
-| `carha.txt` | ⚠️ **CARHA Hockey Official Rule Book, PRINTED 2020, 99pp — added at round 53's fourth gate pass, after five documents had cited it with the book in NO reproducible source.** Its only record was a row in `project/verification/link_baseline.tsv`. A `rules-verifier` fetched it and located **seven corpus quotations verbatim** — Rules 66(b), 73(d), 39(b), 65(a), **65(b)/(c)**, the red-line-off-side signal and Section Seven item 16 — so the claims were never unverifiable; the book was unregistered. **Governs CARHA-affiliated leagues only, and is never a general rec-hockey standard.** Extracts cleanly with `-layout`; 1,008,517 bytes, byte-identical to the link baseline. | [carhahockey.ca](https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf) |
+| `carha.txt` | ⚠️ **CARHA Hockey Official Rule Book, PRINTED 2020, 99pp — added at round 53's fourth gate pass, after five documents had cited it with the book in NO reproducible source.** Its only record was a row in `project/verification/link_baseline.tsv`. A `rules-verifier` fetched it and located **seven corpus quotations verbatim** — Rules 66(b), 73(d), 39(b), 65(a), **65(b)/(c)**, the red-line-off-side signal and Section Seven item 16 — so the claims were never unverifiable; the book was unregistered. **Governs CARHA-affiliated leagues only, and is never a general rec-hockey standard.** Extracts cleanly with `-layout`. ⚠️ **The 1,008,517 bytes byte-identical to the link baseline is the PDF's size, not the extraction's** — `carha.txt` is 206,667 bytes. The sentence used to place that figure where it read as the extraction size. | [carhahockey.ca](https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf) |
 | `heo_intl_drill_symbols.pdf` | **"International Drill Symbols"** — Hockey Eastern Ontario NCCP Development 1 clinic handout. The **player-symbol** authority for this corpus: `● ○ Forward / Player`, `▲ △ Defender / Player`. ⚠️ **Scanned. `pdftotext` yields the title and nothing else** — the key is image-only, so read the rendered page, never the `.txt`. | [hockeyeasternontario.ca](https://www.hockeyeasternontario.ca/media/ns2jrj0c/dev1_international_drill_symbols.pdf) |
 
 ---
@@ -89,6 +89,19 @@ the count depends entirely on the normalisation — a third method gives 153/110
 broken `fi`/`fl` ToUnicode map is what makes the ligature repair below
 necessary.
 
+⚠️ **AND THE FILE ON DISK AT `sources/iihf_rules_v1.1.pdf` IS THAT MIRROR, NOT THE
+PUBLISHER-ORIGINAL DESCRIBED ABOVE.** Verified 1 September 2026: it is **3,928,725
+bytes** and its XMP says `pdf:Producer='GPL Ghostscript 10.00.0'`, against the
+publisher file's **11,795,028 bytes** and `Adobe PDF Library 18.0`. **The filename
+implies otherwise and that is the hazard** — anyone re-running the `pdftotext`
+command below reproduces the Ghostscript text, ligature bug included, while
+believing they have re-extracted the publisher's own file. **This is a provenance
+and naming defect, not a content one:** the mirror is exonerated above on a
+sentence-set comparison leaving zero unmatched prose, and `iihf_rules_v1.1.txt`
+still carries its documented MD5 `b8bc551aef36ed127887e24d5a80d76e`. **The fix is
+to fetch the publisher file and re-extract, or to rename this one to say what it
+is. Neither has been done.**
+
 **Tested, not assumed** (28 August 2026 — the claim above used to be an
 assertion, and `commit-gate` was right to say so). The publisher-original was
 refetched, `-layout` extracted and compared against the on-disk text:
@@ -120,7 +133,8 @@ refetched, `-layout` extracted and compared against the on-disk text:
 
 | Check | Result |
 |---|---|
-| Rule numbers | **472 in each, identical sets** — nothing renumbered |
+| Rule numbers | ⚠️ **CORRECTED 1 Sep 2026 — this read "472 in each, identical sets" and is wrong on both counts.** **472 in v1.1, 470 in 2026/27.** Removed: **102.5, 102.6, 102.7, 202.7**. Added: **46.14, 46.15**. **The substantive half stands — nothing is RENUMBERED**, and no corpus citation dangles on a removed number (the corpus cites 102.1 only). |
+| ⚠️ Appendix IV table numbers | **THIS is where the −2 shift lives, and it starts at Table 9, not at any rule.** Old Tables 5/6/7 merged into one Table 5, so Table 9 and above shift by −2 — e.g. *"can be found in Table 13"* (v1.1) → *"Table 11"* (2026/27). Eleven rules' cross-references move in lockstep (16.2, 19.1, 19.4, 23.8, 24.8, 25.3, 27.8, 69.1, 69.3, 69.4, 84.3), which is the evidence it is systematic and not extraction noise. ⚠️ **A claim that "everything from Rule 22 shifts by −2" circulated in briefs this session and is FALSE** — it conflated table numbers with rule numbers. |
 | 27.7 / 27.8 | Restricted area still 27.7; 27.8 still "Infractions – Unique to Goalkeepers" |
 | 201.1 | Identical, heading included — the junior-ejection reading holds |
 | Corpus quotations from the IIHF book | **49 of 49 present verbatim** |
@@ -253,8 +267,28 @@ nothing on disk proved which edition British hockey is actually played under. **
    regime and the post-icing exception, in the British governing body's own words, whichever IIHF
    book sits underneath.**
 
-It also confirms the stick-order change independently: *"**Either centre can now put their stick
-down first** for a face-off"* — and the word *"now"* is IHUK flagging it as new.
+⚠️ **CORRECTED 1 September 2026 — the previous sentence here was WRONG, and the corpus was right.**
+It read *"It also confirms the stick-order change independently"*, listed among IIHF 2026/27 changes.
+**There is no IIHF rulebook stick-order change to confirm.** `iihf_rules_v1.1.txt:6239` and
+`iihf_rules_2026-27.txt:6337` carry the identical sentence — *"At the eight (8) face-off spots
+(excluding center ice face-off spot), the defending Player shall place their stick…"* — verified
+flattened, in both editions.
+
+**What IHUK actually did is write its own rule**: *"**Either centre can now put their stick down
+first** for a face-off"* (`eiha_inhouse_2026-27.txt:422-423`), and the word *"now"* is IHUK flagging
+its own change, not the IIHF's. **So it is a British departure, which is exactly what the corpus
+says.**
+
+⚠️ **The direction of this error is what makes it worth recording: a reader trusting this file would
+have reported `faceoffs.md`'s correct sentence as a defect.** A wrong entry in the source record does
+not merely fail to help — it manufactures work against text that is right, and this project has
+already spent a round on a divergence that did not exist.
+
+⚠️ **One partial qualification, running the other way.** The 2026/27 **Situation Handbook** did move
+at Situation 76.53: *"This rule gives the attacker an option to put their stick down second. However,
+if the attacker chooses to put their stick down first, the linesperson should allow this."* The v1.1
+handbook's 76.53 is entirely different material. **So the rulebook is unchanged, the interpretation
+layer softened partway, and IHUK went further still** — three layers, three positions.
 
 **So the hedge is no longer needed for the faceoff material** — not because the edition question
 was settled, but because IHUK answered the faceoff question directly and the edition stopped
@@ -420,6 +454,10 @@ official documents, not resolved in either direction.
 > found** — a verification against it would have reported the corpus's own quotation as absent. It was
 > caught only because the two files came out **byte-identical in size**, which they could not both be.
 > **Check the extraction reproduces the quotation before trusting an absence in it.**
+
+⚠️ **THE 2026/27 BOOK CHANGED OFFSIDE, AND IT CHANGES CONDUCT.** Rule 83.1 gains two sentences the 2025/26 edition does not have, both converging onto the NHL's text: *"For the purposes of this rule, a 'skate' is to be considered the blade of the skate only"* (`iihf_rules_2026-27.txt:6936-6937`), and the puck-carrier carve-out now requires possession and control ***with their stick*** (`:6945-6946`) where 2025/26 required only possession and control. **Whole-book flattened counts: "blade of the skate" 0 in v1.1, 1 in 2026/27; "prior to their skates crossing the leading edge" 1 in v1.1, 0 in 2026/27.**
+
+⚠️ **It reaches an IIHF-tournament reader now and a BRITISH reader only contingently** — `Rule 83` and the bare token `83` appear **0 times** in the IHUK In-House Rules, which adopt v1.1 by name and version, so the change arrives in Britain only if the In-House cover's *"Current IIHF Rule Book"* reading governs over its own Introduction. **That contradiction is unresolved and must not be resolved by preferring a half.**
 
 PDFs are converted with `pdftotext -layout`, which preserves the column
 structure the rulebooks use for penalty tables. Without `-layout` the tables

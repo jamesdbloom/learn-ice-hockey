@@ -722,11 +722,36 @@ const threeDepths = {
       ], label: 'activated' },
     // Below the circles: the circles' near edge to the goal line. Held to y = ±30
     // so the band stays inside the corner radius rather than running out over the
-    // dasher, which zones are not clipped against.
+    // dasher, which zones are not clipped against. (The arc is centred (72, 14.5)
+    // with r 28, so the boards are at y ±39.80 at x 84 and ±36.75 at x 89 — the
+    // ±38 the other two bands use is 1.25 ft OUTSIDE the dasher at the goal line.
+    // The narrower band is the constraint, not a different kind of region.)
+    //
+    // DELIBERATELY UNLABELLED, and this is the one band that cannot carry a label.
+    // A zone label is drawn at the average of the polygon's vertices, with no
+    // collision avoidance and no way to move it from a diagram module. This band is
+    // symmetric about y = 0 and spans x 84–89, so that average is (86.5, 0) — the
+    // middle of the goal crease. At 3.2 ft type "a commitment" is 21.5 ft wide, so
+    // it ran x 75.8 to 97.3: across the crease, across the goal frame (89 to 92.3)
+    // and out to 2.7 ft from the end boards. Recutting the polygon is the fix used
+    // for 'the slot' lower in this file, where the same average put the word "slot"
+    // across a goaltender — but that region is a wedge and could be recut. A
+    // symmetric depth band cannot be: breaking its symmetry to move the word would
+    // make the picture assert a depth is deeper on one side of the ice.
+    //
+    // Shortening does not help either. The band is 5 ft wide in x, so ANY label over
+    // five characters overhangs it; the other two bands overhang just as far and get
+    // away with it because there is nothing at x 28.5 or x 54 to overhang ONTO.
+    //
+    // The caption and the describe both name the three depths in the order they are
+    // drawn, and the describe says the third is empty — which is now literally true,
+    // so a listener and a reader get the same picture. If zones ever gain a label
+    // anchor in site/scripts/lib/rink.mjs, this label belongs back, out at about
+    // y +20 where there is open ice.
     { points: [
         { at: 'corner:right', dx: 2, dy: -4 }, { at: 'goal-line', dy: 30 },
         { at: 'goal-line', dy: -30 }, { at: 'corner:left', dx: 2, dy: 4 },
-      ], label: 'a commitment' },
+      ] },
   ],
 
   // Two feet inside the point, so the glyphs sit inside the "default" band instead

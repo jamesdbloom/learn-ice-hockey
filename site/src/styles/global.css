@@ -781,8 +781,20 @@ pre code .line {
   color: var(--text-muted);
 }
 
+/*
+  The lead bold of a header note is lifted out of the note's muted body colour.
+
+  ⚠️ `:not(.is-warning)`, because the warning variant is not muted — it sets
+  `color: var(--text)` on the whole paragraph, so there is nothing here for this
+  rule to lift, and the plugin wraps that paragraph in a `.callout-warning`.
+  Left unscoped it out-specified `.callout-warning strong` (0,2,1 against 0,1,1)
+  and painted the note's OPENING bold plain black while a later bold in the same
+  sentence went amber — the emphasis inverted in reading order. Measured on
+  /positions/goaltender/, /systems/faceoffs/ and
+  /off-the-ice/conditioning_and_recovery/, five notes in all, both themes.
+*/
 .doc-header-ruleset strong:first-child,
-.doc-header-note strong:first-child {
+.doc-header-note:not(.is-warning) strong:first-child {
   color: var(--text);
 }
 
@@ -796,6 +808,22 @@ pre code .line {
   border-left: 3px solid var(--warn-border);
   border-radius: 0 var(--radius) var(--radius) 0;
   color: var(--text);
+}
+
+/*
+  One warning, one band. A header note that opens with a warning glyph is also
+  picked up by the block-warning pass in remark-corpus.mjs and wrapped in an
+  `<aside class="callout callout-warning">`, so the amber background and the
+  amber left rule were drawn twice, one inside the other, with the inner band
+  offset from the outer by the aside's own padding. Seen on all five of the
+  corpus's warning header notes, in both themes. The aside keeps the band; the
+  paragraph inside it gives its own up.
+*/
+.callout-warning > .doc-header-note.is-warning {
+  padding: 0;
+  background: none;
+  border-left: 0;
+  border-radius: 0;
 }
 
 .doc-header-related {
@@ -972,7 +1000,35 @@ a.chip:hover {
   border-left-color: var(--warn-border);
 }
 
-.callout-warning > p:first-child strong {
+/*
+  Every bold run in a warning callout, not just the first paragraph's.
+
+  This selector used to be `.callout-warning > p:first-child strong`, and the
+  restriction had no meaning a reader could see. The inline marking pass in
+  site/src/plugins/remark-corpus.mjs skips this whole subtree on the stated
+  ground that it is "already inside a warning-coloured container" — so the CSS
+  is the only thing colouring anything in here, and it reached the lead
+  paragraph only. Measured in the live DOM before this change: 429 `strong`
+  elements across twelve documents rendered at plain body colour inside an
+  amber panel, and three of them on /systems/forechecking_systems/ alone were
+  ⚠️-led warnings sitting in list items — "That fourth one is not consistent
+  inside the IIHF book", "Both of those windows shut on the same thing" and
+  "A late change is not free the way a late ask is" — indistinguishable from
+  the ordinary emphasis beside them.
+
+  CSS cannot pick out "a bold run preceded by a warning glyph": text nodes are
+  not selectable and there is no previous-sibling combinator for them. So the
+  choice is between colouring every bold run in the panel and colouring none
+  after the first paragraph. Inside a panel that is *entirely* a warning, the
+  first is the honest one — the distinction the page makes is panel against
+  page, not bold against bold within the panel.
+
+  ⚠️ Do NOT reach for the other repair. Deleting a ⚠️ from the markdown to
+  dodge the inconsistency would silently change the audio: scripts/md_to_speech.py
+  tests `important = "⚠" in text` and prefixes the spoken unit with "Important."
+  The glyph is load-bearing in a layer this stylesheet cannot see.
+*/
+.callout-warning strong {
   color: var(--warn);
 }
 
@@ -992,6 +1048,41 @@ a.chip:hover {
 
 .callout-verify > p:first-child strong {
   color: var(--verify);
+}
+
+/*
+  A `.warn-inline` band keeps the warning's colour wherever it lands, including
+  inside another callout's first paragraph.
+
+  The specificity here is the whole point of the rule, not decoration.
+  `.callout-note > p:first-child strong` is a DESCENDANT selector scoring
+  (0,2,2); it reaches a `strong` the plugin has wrapped in a `.warn-inline`,
+  and `.warn-inline` on its own scores (0,1,0) and loses. Measured in the live
+  DOM before this rule existed, in both themes and at both viewports: seven
+  bands across three documents — off-the-ice/equipment ×3,
+  systems/offensive_zone_play ×3, systems/game_management ×1 — painted their
+  text in the NOTE's green, rgb(44,91,63) light and rgb(134,198,162) dark, on
+  the warning's pale amber band. Green text on an amber band, on exactly the
+  sentences the plugin marks because they change what a reader does.
+
+  It also contradicted the plugin's own stated reason for not skipping note
+  callouts — "that panel is not warning-coloured, so the glyph in it is as
+  unmarked as one in open prose". The marking pass was running correctly and
+  the stylesheet was undoing it.
+
+  Naming the containing callout puts this at (0,3,2), which settles it without
+  `!important`. The alternative — tightening the label rules to
+  `> p:first-child > strong` — was measured and REJECTED: eight note labels
+  across three documents are legitimately nested one level deeper (inside a
+  link, an `em` or a `code`) and would have lost their green.
+
+  `.callout-warning` is not listed because the plugin never emits a
+  `.warn-inline` inside one, and `.callout-warning strong` above already paints
+  it the same amber if that ever changes.
+*/
+:is(.callout-note, .callout-verify) > p:first-child .warn-inline,
+:is(.callout-note, .callout-verify) > p:first-child .warn-inline strong {
+  color: var(--warn);
 }
 
 /*
@@ -1180,18 +1271,118 @@ a.chip:hover {
 }
 
 /*
-  Opt-in vertical cap. Only with this does a sticky header have anything to
-  stick to, because the wrapper becomes the scrollport in both axes.
+  Vertical cap, and the sticky header it exists for.
+
+  ⚠️ THIS PAIR WAS DEAD FOR ITS WHOLE LIFE. `rehype-corpus.mjs` emitted
+  `className: ['table-scroll']` unconditionally and nothing anywhere added the
+  modifier, so in the built site the string `table-scroll--tall` occurred in
+  exactly one file — this stylesheet's own bundle — and on 0 of 47 table
+  wrappers. The comment above described a real defect, this fix was correct,
+  and it had never applied to a single table on the site. Measured on
+  /foundation/rules_primer/ §10 at 375×812: with the row scrolled to the far
+  right of its 513px of overflow, the header row was 8,550px above the viewport
+  and `thead th` computed to `position: static`, so a reader was looking at the
+  "Typical rec / beer league" column — the generalisation — with nothing on
+  screen naming it.
+
+  The plugin now adds the modifier to tables with five or more columns. The
+  reasoning for that cut is recorded there, beside the code that decides.
+
+  THE CAP. 80vh was a guess; this is measured. Two constraints, both taken off
+  the rendered page at 375×812:
+    - The box has to be worth having. §10's median body row is 470px tall
+      (seven of its 21 rows are taller than the entire phone viewport, the
+      largest 2,156px) and its header row is 38px — so any cap below ~508px,
+      63vh, shows the sticky header and less than one row of what it labels.
+    - The reader has to be able to get PAST the table. A nested scroller inside
+      a page scroller is a known touch hazard, and the escape gutter — the
+      strip of screen where a swipe still moves the page — is exactly
+      `viewport − cap`, wherever on the page the table happens to sit. A
+      quarter of the screen is the floor: 75vh.
+  70vh is inside that band: 568px of table and 244px of gutter at 375×812.
+
+  `svh` where it is supported rather than `vh`, because on a phone `vh` is the
+  LARGE viewport height. With the browser's own chrome shown it is bigger than
+  what is on screen, and the gutter the cap exists to guarantee is the first
+  thing that goes.
+
+  ⚠️ What this does NOT solve: §10 is 17,554px at 375, and capping it at 568px
+  leaves 16,986px — 30 screens — of scrolling inside the box. The sticky header
+  answers "which column am I in", which is the safety question. It does nothing
+  about the length, and no stylesheet can: a six-column table cannot be shown
+  whole on a 375px screen, so the alternative to scrolling it is restructuring
+  it, which is a content decision and not one to take here.
 */
 .table-scroll--tall {
-  max-height: var(--table-max-h, 80vh);
+  max-height: var(--table-max-h, 70vh);
   overflow-y: auto;
+}
+
+@supports (max-height: 70svh) {
+  .table-scroll--tall {
+    max-height: var(--table-max-h, 70svh);
+  }
 }
 
 .table-scroll--tall thead th {
   position: sticky;
   top: 0;
   z-index: 2;
+  /*
+    The same trap the row label hit, on the other axis: `border-collapse:
+    collapse` hands a cell's border to the table's border grid, which does not
+    travel with a sticky cell. Without this the pinned header butts straight
+    onto whatever has scrolled up under it, which on §10 is mid-paragraph prose.
+  */
+  box-shadow: inset 0 -1px 0 var(--border);
+}
+
+/*
+  The row label, stuck on the VERTICAL axis too.
+
+  ⚠️ `.table-scroll td:first-child` already sticks on the horizontal axis, and
+  that was assumed to be the whole job. It is not. §10 of `rules_primer` has
+  NINE rows taller than the wrapper's cap and EIGHT taller than a 375x812
+  viewport; the largest is 2,156px. The cell inherits `vertical-align: top`, so
+  scrolling ~40px into a 1,724px row puts the label above the scrollport while
+  the cell box stays pinned -- an empty 114px box, 30% of a phone screen, beside
+  prescriptive rule text, with no indication which rule the row is about. That
+  is the exact failure `--tall` was added to prevent. Measured in a browser at
+  scrollTop 6143, not reasoned about.
+
+  It cannot be fixed on the `td`: sticky moves a box within its containing
+  block, and this box already fills the row, so there is nowhere to move. The
+  span is emitted by `rehype-corpus.mjs` for `--tall` tables only, and this rule
+  is what makes it do anything.
+
+  `top` clears the sticky `thead`, which is itself at `top: 0`. The value is the
+  header's own height and is therefore approximate: a header that wraps to two
+  lines on a narrow viewport is taller than this, and the label then tucks
+  slightly under it rather than sitting clear. That is a far smaller failure
+  than the label vanishing, and measuring the header in JavaScript would buy a
+  few pixels for a runtime dependency this static site does not otherwise have.
+*/
+.table-scroll--tall td:first-child {
+  /* Without this the span has the whole row height to sit in and never moves. */
+  vertical-align: top;
+}
+
+.table-scroll--tall td:first-child > .row-label {
+  position: sticky;
+  top: var(--table-head-h, 2.75rem);
+  display: block;
+}
+
+.table-scroll--tall thead th:first-child {
+  /*
+    The corner cell is pinned on both axes, so it needs both edges drawn. This
+    has to restate the horizontal edge: the rule that sets it is
+    `.table-scroll th:first-child`, which outranks `.table-scroll--tall thead
+    th` and would otherwise replace both shadows with one.
+  */
+  box-shadow:
+    inset -1px 0 0 var(--border),
+    inset 0 -1px 0 var(--border);
 }
 
 .table-scroll tbody tr:hover {
@@ -1930,6 +2121,29 @@ figure.diagram .diagram-source {
 @media print {
   /* Paper has no scrollbar; on the printed page the full width is available anyway. */
   figure.diagram--full .diagram-scroll { overflow-x: visible; }
+
+  /* ⚠️ THE TALL-TABLE SCROLLER MUST NOT SURVIVE INTO PRINT, or the PDF silently
+     loses the table. `.table-scroll--tall` caps §10 at 70svh with `overflow-y:
+     auto` — on screen that is 568 px of a 17,554 px table with the other ~30
+     screens reachable by scrolling. Paper does not scroll. Without this reset
+     `build:pdf` would emit the first 568 px and DROP THE REST, with no error and
+     nothing in the page to show a reader that anything was missing.
+
+     Flagged by the agent that added `--tall`, in the same report that shipped it:
+     "Print and PDF, where a max-height scroller may clip the table to 568px and
+     silently drop 30 screens of content — worth checking build:pdf before this
+     ships." It had not been checked; the print block had no rule for the class.
+
+     The sticky header goes too: `position: sticky` against a scrollport that no
+     longer scrolls is at best inert and at worst paints the header over a row. */
+  .table-scroll--tall { max-height: none; overflow: visible; }
+  .table-scroll--tall thead th,
+  .table-scroll--tall thead th:first-child { position: static; box-shadow: none; }
+  /* The label is sticky too, and in print a sticky span resolves against the
+     page box rather than the scrollport -- without this every row label stacks
+     at the top of the printed page. Same omission as the one above, which is
+     why it is being written at the same time rather than found later. */
+  .table-scroll--tall td:first-child > .row-label { position: static; }
   figure.diagram--full .diagram-scroll svg { min-width: 0; }
 }
 

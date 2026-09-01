@@ -185,6 +185,22 @@ def main() -> int:
                     if "table" in label and not report.tables_as_pointer:
                         suppressed[label] += 1
                         break
+                    # ⚠️ THE SUPPRESSION IS DOCUMENT-LEVEL, NOT TABLE-LEVEL, and in a
+                    # document with a MIX it under-suppresses: the sentence may point
+                    # at a table the renderer read out in full while a DIFFERENT table
+                    # elsewhere is what made `tables_as_pointer` non-empty. That fired
+                    # on `body_contact_and_battles.md`, whose checking-eligibility
+                    # table is voiced row by row -- the hit was real as a sentence and
+                    # false as a pointer. Resolving it properly means finding the
+                    # NEAREST table in the direction the sentence names and asking
+                    # whether THAT one survived, which needs positions this report does
+                    # not carry. Until then, say so at the hit rather than leaving the
+                    # reader to rediscover it.
+                    if "table" in label and report.tables_as_prose:
+                        label = (f"{label} -- ⚠️ MIXED DOCUMENT: "
+                                 f"{report.tables_as_prose} table(s) read as prose, "
+                                 f"{len(report.tables_as_pointer)} dropped. This tool "
+                                 f"cannot tell which one the sentence means")
                     hits.append((label, sentence))
                     by_target[label] += 1
                     break
@@ -201,6 +217,13 @@ def main() -> int:
           f"in {sum(1 for _ in docs)} documents scanned.")
     for label, count in by_target.most_common():
         print(f"  {count:4}  {label}")
+    mixed = sum(c for lab, c in by_target.items() if "MIXED DOCUMENT" in lab)
+    if mixed:
+        print(f"  ⚠️  {mixed} of those are in MIXED documents, where this tool cannot")
+        print("      tell whether the table the sentence means was voiced or dropped.")
+        print("      One such hit was checked by hand and the table WAS voiced in full:")
+        print("      the sentence was still wrong, but about its own content, not about")
+        print("      being a pointer. Read the rendered SSML, not this label.")
     if suppressed:
         print(f"  ({sum(suppressed.values())} table reference(s) suppressed: their "
               "document's tables all read as prose, so the listener heard them.)")

@@ -812,7 +812,9 @@ const backOffAtTheLine = {
     'thing he is not conceding: you give up the blue line but never ' +
     'the middle or your body position, and the whole cost of the choice is in the picture too — ' +
     'they come in with speed and possession and you are now defending with your feet moving ' +
-    'backwards toward your own net, which is exactly the scenario the attacking team wanted. It ' +
+    'backwards toward your own net, which is exactly the scenario the attacking team wanted. The ' +
+    'band’s long edges are drawn on the faceoff-dot lines so that the shading has an edge; they are ' +
+    'not painted on the ice. It ' +
     'is the play when you have no backpressure, when the attacker has a clear speed advantage, on ' +
     'a two-on-one or worse, or when you are the last defender and a mistake is a breakaway — and ' +
     'whether your forwards got back is a read no still frame can carry. Neither frame is a stage ' +
@@ -827,24 +829,44 @@ const backOffAtTheLine = {
     'here he has a backward skating route retreating into our zone and drifting toward the middle ' +
     'of the ice as he goes. The carrier’s route curves away from him toward the near boards and ' +
     'deeper into the zone: he has been let in and steered outside. A shaded band down the centre ' +
-    'of the ice from the blue line back to the level of our faceoff dots is labelled "the middle" — ' +
+    'of the ice, its long edges on the faceoff-dot lines, running from the blue line back to the ' +
+    'level of our end-zone faceoff dots, is labelled "the middle" — ' +
     'the ice the defenceman is not conceding. No backchecker, no defence partner and none of the ' +
     'opposition’s other four skaters are drawn. The opposing goaltender is shown at the far end.',
 
   // "giving up the blue line but never giving up the middle or your body
-  // position". The middle lane is the section's own arithmetic from its lane
-  // discipline rules — the ice divided lengthways into three, so the middle third
-  // is 28 ft wide, +-14 from the centre. It runs from the blue line he has just
-  // conceded back to the level of our faceoff dots, so it reads as a lane rather
-  // than a box; the section gives the middle a width and no depth, and the caption
-  // and describe both say the band is a lane and not a marked area of ice.
+  // position". The band runs from the blue line he has just conceded back to the
+  // level of our end-zone faceoff dots, so it reads as a lane rather than a box:
+  // the section gives the middle a width and no depth.
+  //
+  // ⚠️ WIDTH. This was drawn 28 ft wide (±14) behind a comment claiming that was
+  // "the section's own arithmetic from its lane discipline rules — the ice divided
+  // lengthways into three". The section does no such arithmetic. §"Lane discipline:
+  // three lanes, three forwards" says only "Divide the ice lengthways into three
+  // lanes: left wall, middle, right wall" and states no width, here or anywhere
+  // else in the document. Equal thirds was this file's own inference, and the owner
+  // contradicts it: rink_map_and_glossary.md §"The neutral-zone dots" has them
+  // "44 ft apart" and says "they mark the standard lateral lanes for a neutral-zone
+  // setup" — which is this diagram's zone exactly. The lanes are 20.5 / 44 / 20.5,
+  // not 28 / 28 / 28, and three other diagrams already draw the middle on the dots:
+  // rush-backcheck-lanes and rush-gap-and-angle (defending_the_rush.mjs, whose
+  // section says "the middle lane between the faceoff dots" in terms) and
+  // neutral-zone-lanes (puck_support_and_spacing.mjs). check_zones.py saw only one
+  // of those three comparisons, because it groups by identical label text and the
+  // four carry three different labels — one of them none at all.
+  //
+  // ASSUMES rink.json faceoff.dot_y = 22 (hence dot_separation = 44) and
+  // neutral_dot_from_blue_line = 5. Every corner is anchored to a DOT rather than
+  // to a remembered 22, so the edges land on landmarks the reader can see — the
+  // near edge on the neutral-zone dots, the far edge on the end-zone dots — and if
+  // dot_y ever moves the band moves with it instead of quietly leaving them.
   zones: [
     {
       points: [
-        { at: OUR_BLUE, dy: 14 },
-        { at: 'faceoff-dot:right:far', dy: -8 },
-        { at: 'faceoff-dot:left:far', dy: 8 },
-        { at: OUR_BLUE, dy: -14 },
+        { at: 'neutral-dot:right:far', dx: -5 },   // (-25, 22)  our own blue line
+        'faceoff-dot:right:far',                   // (-69, 22)
+        'faceoff-dot:left:far',                    // (-69, -22)
+        { at: 'neutral-dot:left:far', dx: -5 },    // (-25, -22)
       ],
       label: 'the middle',
     },

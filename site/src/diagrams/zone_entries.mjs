@@ -233,8 +233,8 @@ const delayCurl = {
   caption:
     'The delay, or curl-back — the play that runs hardest against instinct, because turning away ' +
     'from the offensive zone feels like retreating. A wasted entry at rec and youth level is ' +
-    'characteristically a player alone at the line who forced something instead; what share of ' +
-    'wasted entries that accounts for is not something anyone counts, so read it as a coaching ' +
+    'characteristically a player alone at the line who forced something instead; this document ' +
+    'has no figure for what share of wasted entries that accounts for, so read it as a coaching ' +
     'observation rather than a measurement. ' +
     'Arriving at the line alone against two defenders, the carrier does ' +
     'not stop and does not force it: he turns away from the pressure, curls back toward the ' +

@@ -239,7 +239,7 @@ const threeOnTwoDefault = {
   width: 900,
 
   caption:
-    'A 3-on-2 defended the common default way — "two wide, middle to the backchecker" — with the ' +
+    'A 3-on-2 defended the way assumed here — "two wide, middle to the backchecker" — with the ' +
     'attack moving right to left toward the defended net at the left. Three attackers against two ' +
     'defencemen: each defenceman takes an outside attacker, and neither chases the puck carrier, who here ' +
     'is wide on the right and therefore belongs to the defenceman in that lane. The middle attacker ' +
@@ -248,7 +248,7 @@ const threeOnTwoDefault = {
     'retreating at the same speed with the middle sealed between them — a staggered retreat opens a ' +
     'diagonal seam straight to the slot — and that they stop above the circles rather than backing all ' +
     'the way to the goal line, which would concede the whole slot. ' +
-    'This is the version most teams run, and it is a coaching choice rather than a law: the realistic ' +
+    'This is the version this section assumes, and it is a coaching choice rather than a law: the realistic ' +
     'alternative is the next diagram, the two fail in different directions, and two defencemen playing ' +
     'different ones on the same rush is worse than either, so ask your coach which you play. ' +
     'If the backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle ' +

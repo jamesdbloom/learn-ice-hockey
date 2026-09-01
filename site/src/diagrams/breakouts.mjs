@@ -486,7 +486,23 @@ const dToD = {
     { id: 'G',  pos: 'G', at: GOALIE },
     // The labels name the players, not the ice — "the flooded side" hung on a
     // glyph reads as a description of the defenceman. The read lives in the caption.
-    { id: 'D1', pos: 'D', at: DD_D1, label: 'has the puck' },
+    // D1 CARRIES NO LABEL, for the same reason the rim diagram above gives: the
+    // placer had no legal slot for one and exiled it. 'has the puck' was drawn at
+    // (81.5, -29.2) — the FAR END ZONE, inside the attacking right faceoff circle —
+    // on a dashed leader line 176.7 ft long that ran the whole sheet and passed
+    // 1.47 ft from F1's centre, i.e. straight through an opposition forward's 2.9 ft
+    // glyph. The mechanism is the placer's last-resort branch: every one of its
+    // eighteen offsets round D1 (-85, 30) collides with F1 (-75, 28), F2 (-67, 38.5),
+    // the route or the boards, and its sweep then requires a slot nearer to D1 than
+    // to any other labelled anchor. F1 is 10 ft closer to every point on the far side
+    // of the rink than D1 is, so no such slot exists anywhere, and the ratio fallback
+    // that catches that case maximises other/mine — which tends to 1 as the distance
+    // grows, so it drives the label to the far corner of the sheet.
+    //
+    // Nothing is lost. The puck disc is drawn at D1's stick, which is the notation
+    // for having it, and the describe says "The defenceman D1 has the puck in the
+    // right corner" in words.
+    { id: 'D1', pos: 'D', at: DD_D1 },
     { id: 'D2', pos: 'D', at: DD_D2, label: 'open across' },
     { id: 'F1', pos: 'F', team: 'opp', at: { at: 'corner:right:far', dx: 7, dy: -6 },
       label: 'pressure' },
@@ -741,7 +757,18 @@ const centreSwing = {
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
     { id: 'D1', pos: 'D', at: RETRIEVAL },
-    { id: 'W1', pos: 'F', at: WALL_SPOT, label: 'not your ice' },
+    // 'the winger', not the 'not your ice' this carried. A label is hung on a glyph
+    // and drawn with a leader line to it, so it describes THAT PLAYER — the rule the
+    // D-to-D diagram above states in terms ("the labels name the players, not the
+    // ice"). W1 is your own winger, standing exactly where the caption says he
+    // belongs: the wall "is the strong-side winger's ice". Written on him, "not your
+    // ice" told the winger to leave the wall, which is the opposite instruction, and
+    // it collapses the breakout the rest of the picture is drawing.
+    //
+    // The read it was reaching for is the CENTRE's, and it stays in the caption
+    // ("not out on the wall, which is the strong-side winger's ice") and in the
+    // describe ("on the ice the centre must not drift into"). Both are voiced.
+    { id: 'W1', pos: 'F', at: WALL_SPOT, label: 'the winger' },
     { id: 'C',  pos: 'F', at: SWING_FROM, label: 'the centre' },
   ],
 

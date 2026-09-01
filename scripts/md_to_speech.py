@@ -349,7 +349,16 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
 #:   the statistic and uses the tolerance sense in the same paragraph.
 #: * ``NHL/NHLPA`` became "NHL or NHLPA". Learn to Play is one programme run
 #:   jointly by the two bodies, not a choice between them.
+#: * ``IHUK/EIH/SIH`` became "IHUK or EIH or SIH" -- not WRONG, but it is a
+#:   three-item list and English reads those "A, B or C". It is quoted from
+#:   IHUK In-House Rule 9.12 at 11 sites in four documents, one of them the
+#:   neck-laceration mandate, and the same book writes "References to EIH or
+#:   SIH" in its own prose, so the comma-then-or form is the book's own
+#:   register. ⚠️ Unlike the three rows above, nothing here was broken: this
+#:   is a fluency fix inside a verbatim quotation, and it is listed so that
+#:   the distinction between the two kinds of row stays visible.
 LEXICON: tuple[tuple[str, str], ...] = (
+    ("IHUK/EIH/SIH", "IHUK, EIH or SIH"),
     ("NHL/NHLPA", "NHL and NHLPA"),
     ("plus/minus", "plus minus"),
     ("Plus/minus", "Plus minus"),
@@ -425,6 +434,28 @@ SPELL_OUT: tuple[str, ...] = (
 #: Paragraph openings that mark a verification note. Matched case-insensitively
 #: against the *stripped* text of a paragraph, so the markdown emphasis form
 #: (``*``, ``**``, blockquote) does not matter.
+#: ⚠️ THIS LIST AND ``NOTE_START_RE`` IN ``site/src/plugins/remark-corpus.mjs``
+#: SHARE VOCABULARY AND DO OPPOSITE THINGS. **Do not unify them.**
+#:
+#: * A lead matched HERE means the paragraph is **DROPPED from the audio**.
+#: * A lead matched THERE means the paragraph is **PROMOTED out of the collapsed
+#:   ``<details class="sources">`` into a visible ``<aside>`` on the page.**
+#:
+#: So the same opening string makes a disclosure MORE visible to a reader and
+#: LESS audible to a listener. They are not two copies of one list that have
+#: drifted; they are two lists with opposite effects. Making one derive from the
+#: other would be a bug, not a tidy-up. As of 2026-09-01 this list holds 8 leads
+#: and that one holds 24; the difference is deliberate on both sides.
+#:
+#: ⚠️ THE LIVE CONSEQUENCE, and the reason this comment exists: ``skating.md``
+#: says in VOICED body prose, twice, *"See the verification note at the foot of
+#: this document."* A site fix made that note visible on the page. It is still a
+#: pointer to nothing **for a listener**, because this list deletes the paragraph
+#: it points at. ``scripts/check_pointers.py`` is the instrument for that shape,
+#: and it reports the hit today.
+#:
+#: Before adding a lead here, ask whether the paragraph should be INAUDIBLE.
+#: "It looks like a verification note" is not the test.
 VERIFICATION_MARKERS: tuple[tuple[str, str], ...] = (
     ("verification note", "verification-note"),
     ("a note on verification", "verification-note"),
@@ -701,6 +732,24 @@ def _approx_prefix(match_text: str) -> str:
 
 
 # -- individual replacers ---------------------------------------------------
+
+def _plural_rule_number(match: re.Match) -> str:
+    """`81.4s` -> 'eighty-one point fours'.
+
+    ⚠️ Found by reading a repair back as audio, not by any checker. A bare
+    decimal rule number ends at a word boundary, and `3` to `s` is not one --
+    so `81.4s` matched no citation rule at all. The general number rule then
+    took `81` and `4` separately and the SOLIDUS-less full stop survived
+    between them, reaching the listener as **"the two eighty-one.fours"**.
+
+    The corpus writes this whenever it compares one rule across two books,
+    which it does constantly, so the shape will recur. It sits above
+    `rule-citation` because that rule requires a preceding "Rule"/"Rules" and
+    this form never has one -- the plural is doing the work the word would.
+    """
+    return (f"{int_to_words(int(match.group('major')))} point "
+            f"{int_to_words(int(match.group('minor')))}s")
+
 
 def _rule_citation(match: re.Match) -> str:
     """Rule 63.2(viii) -> 'Rule sixty-three point two, clause eight'."""
@@ -1008,6 +1057,20 @@ def _formation(match: re.Match) -> str:
     return " ".join(_ONES[int(d)] for d in match.group(1, 2, 3))
 
 
+def _season_span(match: re.Match) -> str:
+    """`2007-08 to 2014-15` -> two seasons and one span marker, not three "to"s.
+
+    Naming each half a "season" is what makes the span audible: without it a
+    listener has four bare years in a row and no way to group them.
+    """
+    def one(first: str, second: str) -> str:
+        return _season(re.match(r"((?:19|20)\d{2})-(\d{2}|\d{4})",
+                                f"{first}-{second}"))
+    a = one(match.group("a1"), match.group("a2"))
+    b = one(match.group("b1"), match.group("b2"))
+    return f"the {a} season through to the {b} season"
+
+
 def _season(match: re.Match) -> str:
     """2005-06 / 2025-2026 / 2025-29 -> 'X to Y'."""
     start = int(match.group(1))
@@ -1202,6 +1265,25 @@ def _inch_fraction(match: re.Match) -> str:
 
 def _vulgar_inch(match: re.Match) -> str:
     return dict(FRACTIONS)[match.group(1)] + " of an inch"
+
+
+def _feet_inches_abbrev(match: re.Match) -> str:
+    """`4 ft 6 in` -> 'four feet six inches'.
+
+    ⚠️ `in` is DELIBERATELY absent from the unit table, and must stay absent:
+    it is one of the commonest words in English, so a general `in` -> `inches`
+    row would voice "3 in the slot" as "three inches the slot". The abbreviation
+    is only safely readable as a unit when a `ft` measurement immediately
+    precedes it, which is what this rule requires.
+
+    Before it, `ft` expanded and `in` did not: the crease sentence reached the
+    listener as **"run four feet six IN out"**. Found by an agent reading a
+    rendered paragraph aloud while verifying something else.
+    """
+    ft = int(match.group("ft"))
+    inch = int(match.group("inch"))
+    return (f"{int_to_words(ft)} {'foot' if ft == 1 else 'feet'} "
+            f"{int_to_words(inch)} {'inch' if inch == 1 else 'inches'}")
 
 
 def _feet_inches(match: re.Match) -> str:
@@ -1428,6 +1510,16 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "three seven zero'",
     ),
     Rule(
+        "plural-rule-number",
+        # ⚠️ Must run BEFORE `rule-citation` and before any general number rule.
+        # No `Rule` word: the corpus writes "the two 81.4s" precisely when it is
+        # comparing one rule across two books, and the plural replaces the noun.
+        re.compile(r"\b(?P<major>\d{1,3})\.(?P<minor>\d{1,2})s\b"),
+        _plural_rule_number,
+        "the two 81.4s -> 'the two eighty-one point fours'; without this the "
+        "full stop survived and it reached the listener as 'eighty-one.fours'",
+    ),
+    Rule(
         "rule-citation",
         re.compile(
             # (?!\d) or the 1-3 digit major eats the first three digits of a
@@ -1572,6 +1664,36 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "1-3-1 -> 'one three one' (a shape, not arithmetic)",
     ),
     Rule(
+        "season-span",
+        # ⚠️ TWO seasons joined by "to". `season-range` expands EACH of them to
+        # "<year> to <year>", so "2007-08 to 2014-15" reached the listener as
+        # "two thousand and seven TO two thousand and eight TO twenty fourteen
+        # TO twenty fifteen" -- four years and three "to"s, with nothing marking
+        # which pair is a season and which join is the span. Found by an agent
+        # reading a rendered value aloud; no checker sees it.
+        #
+        # Must run BEFORE `season-range`, which would otherwise claim each half.
+        # "through" is the span marker because "to" is already doing the
+        # within-season work and cannot also carry the between-season sense.
+        #
+        # ⚠️ SCOPE, deliberately narrow: hyphens and two-digit second halves
+        # only -- i.e. the season form this corpus writes. It does NOT cover
+        # `2007–2009 to 2008–2010` (EN DASHES, four-digit halves), which is
+        # `rules_primer.md`'s BIRTH-YEAR BAND for an age category, not a season.
+        # That one has the same chained-"to" artefact and one live site, and the
+        # fix there is to reword the sentence rather than to teach this rule a
+        # second shape it would then apply to every four-digit numeric range in
+        # the corpus. Recorded so the next reader does not widen the pattern
+        # and quietly turn spans of measurements into "seasons".
+        re.compile(
+            r"\b(?P<a1>(?:19|20)\d{2})-(?P<a2>\d{2}|\d{4})\s+to\s+"
+            r"(?P<b1>(?:19|20)\d{2})-(?P<b2>\d{2}|\d{4})\b"
+        ),
+        _season_span,
+        "2007-08 to 2014-15 -> 'the two thousand and seven to two thousand and "
+        "eight season through to the twenty fourteen to twenty fifteen season'",
+    ),
+    Rule(
         "season-range",
         re.compile(r"\b((?:19|20)\d{2})-(\d{2}|\d{4})\b"),
         _season,
@@ -1623,6 +1745,15 @@ NOTATION_RULES: tuple[Rule, ...] = (
         ),
         _statistic,
         "r = +0.25 -> 'r equals plus nought point two five'",
+    ),
+    Rule(
+        "feet-inches-abbrev",
+        # ⚠️ Must run BEFORE the generic unit rules, which expand `ft` and leave
+        # `in` untouched. Anchored on `ft` so the bare word `in` is never a unit.
+        re.compile(r"\b(?P<ft>\d{1,2})\s?ft\s(?P<inch>\d{1,2})\s?in\b"),
+        _feet_inches_abbrev,
+        "4 ft 6 in -> 'four feet six inches'; without it the listener got "
+        "'four feet six in', because `in` is not and must not be a unit",
     ),
     Rule(
         "feet-inches",
@@ -1872,12 +2003,75 @@ NOTATION_RULES: tuple[Rule, ...] = (
 )
 
 
+#: LEXICON entries that must not fire inside a quotation, and what they become
+#: there instead.
+#:
+#: ⚠️ WHY. LEXICON is a plain `str.replace` with no awareness of quotation
+#: marks, so `("etc.", "and so on")` rewrote the INSIDE of quoted rulebook text.
+#: A listener heard IIHF Rule 48.1 as "(for example shooting, making or
+#: receiving a pass, AND SO ON)" -- words the rulebook does not contain, inside
+#: quotation marks, in a corpus whose first non-negotiable is never to fabricate
+#: a quote. Measured across `content/`: 43 quoted spans in 16 documents contain
+#: one of these three.
+#:
+#: ⚠️ THE DISTINCTION THAT DECIDES THIS, because it is not "never expand an
+#: abbreviation". Any spoken rendering of "etc." is an expansion -- silence is
+#: not an option and the letters cannot be voiced. The question is whether the
+#: expansion is a PRONUNCIATION or a TRANSLATION:
+#:
+#:   * "e.g." -> "for example" and "i.e." -> "that is" are how these are READ
+#:     ALOUD in English. Nobody says "ee-jee". Reading them this way inside a
+#:     quotation is what a person reading the rulebook aloud would do, so they
+#:     are left alone.
+#:   * "etc." -> "and so on" is a PARAPHRASE. The pronunciation is "et cetera".
+#:     Inside a quotation the pronunciation is the honest choice; outside one,
+#:     "and so on" is friendlier and costs nothing.
+#:
+#: So only `etc.` is remapped, and it is remapped rather than skipped -- leaving
+#: the literal string would hand the TTS engine a token to guess at, which is
+#: how a defect gets traded for a different defect.
+QUOTED_LEXICON = {
+    "etc.": "et cetera",
+}
+
+
+def split_quoted(text: str) -> list[tuple[str, bool]]:
+    """Split on `"` into (segment, is_inside_quotation) pairs.
+
+    ⚠️ An UNBALANCED quote mark makes the trailing segment count as inside.
+    That is deliberate and it is the safe direction: the cost of a false
+    positive is `etc.` voiced "et cetera" in ordinary prose, which is merely
+    formal. The cost of a false negative is fabricated wording inside quotation
+    marks, which is non-negotiable 1.
+
+    Only the straight `"` is a delimiter. The corpus normalises to straight
+    quotes; a curly pair that slipped through fails safe by not opening a span.
+    """
+    return [(seg, i % 2 == 1) for i, seg in enumerate(text.split('"'))]
+
+
 def apply_lexicon(text: str, counter: Counter) -> str:
-    for source, target in LEXICON:
-        if source in text:
-            counter["lexicon." + source.strip()] += text.count(source)
-            text = text.replace(source, target)
-    return text
+    # Fast path: nothing quotation-sensitive present, so do not pay for the split.
+    if not any(k in text for k in QUOTED_LEXICON):
+        for source, target in LEXICON:
+            if source in text:
+                counter["lexicon." + source.strip()] += text.count(source)
+                text = text.replace(source, target)
+        return text
+
+    out = []
+    for segment, quoted in split_quoted(text):
+        for source, target in LEXICON:
+            if source not in segment:
+                continue
+            if quoted and source in QUOTED_LEXICON:
+                target = QUOTED_LEXICON[source]
+                counter["lexicon.quoted." + source.strip()] += segment.count(source)
+            else:
+                counter["lexicon." + source.strip()] += segment.count(source)
+            segment = segment.replace(source, target)
+        out.append(segment)
+    return '"'.join(out)
 
 
 def apply_symbols(tokens: list[Token], counter: Counter) -> list[Token]:
@@ -2722,11 +2916,62 @@ def oversized_after_split(chunks: Sequence[Chunk]) -> list[tuple[str, int, int]]
 #: RE_SENTENCE_TAIL five lines below ALREADY accepted trailing closers, so the
 #: two regexes disagreed about what ends a sentence. Two fixed-width lookbehind
 #: branches keep the closer with the sentence it belongs to.
+#: ⚠️ U+2026 IS NOT A SENTENCE TERMINATOR HERE, and treating it as one split a
+#: rulebook quotation in half across two spoken units.
+#:
+#: A Key Takeaway in `center.md` and `winger.md` quoted NHL 42.1 with an elision.
+#: `_split_paragraph` broke at it, and the listener heard:
+#:
+#:   unit A ...ends "a minor, major or a major and a game misconduct …"
+#:                  -- the ejection ladder, its crease condition amputated
+#:   unit B  opens "on a player who charges a goalkeeper while the goalkeeper is
+#:                  within his goal crease" -- an orphan clause with no subject
+#:
+#: ⚠️ NO CHECKER CAN SEE THIS. check_facts, check_absolutes and check_pointers
+#: all pass on it; the markdown is correct and only the rendered audio is wrong.
+#:
+#: MEASURED BEFORE CHANGING, because a renderer change needs evidence and not an
+#: intuition: U+2026 occurs 202 times in `content/`, **194 of them (96%) inside a
+#: quoted span**, and **ZERO at the end of a line**. It is an elision marker in
+#: this corpus and never a trailing-off. So it is removed from both patterns
+#: rather than special-cased -- a quotation-depth test would be the obvious fix
+#: and is the wrong one, because there is no legitimate case to preserve.
+#:
+#: The cost is one fewer break point in paragraphs that carry an elision, which
+#: can only make a chunk longer. That is a soft failure the Polly limit check
+#: already reports; splitting a rule in half is a hard one nothing reports.
+#:
+#: ⚠️ The closing-quote alternative below is not decoration. Without it this
+#: pattern read `He said "keep the stick down." The next sentence follows.` as
+#: ONE sentence -- the stop is followed by a quotation mark, not whitespace, so
+#: `(?<=[.!?])\s+` matched nowhere in it. This corpus quotes rulebook text
+#: constantly, so a large share of its sentence ends were invisible as break
+#: points. RE_SENTENCE_TAIL below must accept exactly the same terminators, or
+#: the two disagree about what ends a sentence -- which they once did.
+#: ⚠️ AND AN ABBREVIATION'S FULL STOP IS NOT A SENTENCE END EITHER. `defender.md`
+#: split mid-citation: one unit ended "measured by Lignell et al." and the next
+#: opened "(twenty eighteen), Brocherie et al. …" -- the same defect as the
+#: elision above, from the same cause, a non-terminal stop read as terminal.
+#: `content/` holds **112 `et al.`, 7 `ed.`, 4 `approx.`, 2 `pp.`** -- but only the ones
+#: FOLLOWED BY WHITESPACE can be break points, because this pattern matches `\s+` after
+#: the stop, and that is **80, 6, 4, 2**. ⚠️ Both numbers are true of different questions
+#: and an earlier version of this comment gave the second while reading as though it were
+#: the first. A count is not a measurement until it says what it counted.
+#:
+#: ⚠️ `No.` IS DELIBERATELY ABSENT, and it is the interesting one. It occurs 31
+#: times, but this corpus quotes Casebook answers -- *the Handbook answers "No."*
+#: -- where the stop IS terminal. Protecting it would merge a Casebook question
+#: and its answer into one spoken unit, trading this defect for a worse one.
+#: Ambiguous abbreviations are left alone on purpose.
 RE_SENTENCE_END = re.compile(
-    r"(?:(?<=[.!?…])|(?<=[.!?…][\"'”’\)\]]))\s+"
+    r"(?:(?<=[.!?])|(?<=[.!?][\"'”’\)\]]))"
+    r"(?<!et al\.)(?<!\bpp\.)(?<!\bed\.)(?<!\beds\.)(?<!approx\.)(?<!\bFig\.)(?<!\bvol\.)"
+    r"\s+"
 )
-#: Does this piece END a sentence? Trailing quotes and brackets close after the stop.
-RE_SENTENCE_TAIL = re.compile(r"[.!?\u2026][\"'\u201d\u2019\)\]]*\s*$")
+#: Does this piece END a sentence? Trailing quotes and brackets close after the
+#: stop. Kept in step with RE_SENTENCE_END above, U+2026 excluded for the same
+#: reason: a token ending in an elision is mid-quotation, not mid-sentence.
+RE_SENTENCE_TAIL = re.compile(r"[.!?][\"'\u201d\u2019\)\]]*\s*$")
 
 
 def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
@@ -3149,6 +3394,20 @@ def self_test() -> int:
     cases: tuple[tuple[str, str], ...] = (
         ("Rule 63.2(viii)", "Rule sixty-three point two, clause eight"),
         ("Rule 81.6", "Rule eighty-one point six"),
+        # ⚠️ Two seasons joined by "to": each half was expanded separately, so the
+        # listener got four years and three "to"s with no grouping.
+        ("2007-08 to 2014-15",
+         "the two thousand and seven to two thousand and eight season through to "
+         "the twenty fourteen to twenty fifteen season"),
+        # ... and a lone season must be untouched by the new rule.
+        ("the 2015-16 season", "the twenty fifteen to twenty sixteen season"),
+        # ⚠️ The PLURAL form carries no "Rule" word, so it matched no citation
+        # rule and the full stop reached the listener: "the two eighty-one.fours".
+        ("The two 81.4s are not identical",
+         "The two eighty-one point fours are not identical"),
+        ("Both of the 60.3s carry it", "Both of the sixty point threes carry it"),
+        # ... and the singular must be untouched by the new rule.
+        ("Rule 81.4 in both", "Rule eighty-one point four in both"),
         ("Rule 1.8", "Rule one point eight"),
         ("Rule 624(b)(1)",
          "Rule six hundred and twenty-four, clause b, sub-clause one"),
@@ -3386,6 +3645,15 @@ def self_test() -> int:
         # Feet and inches. Both marks used to reach the listener raw: a 6'4"
         # goaltender was voiced as "six'four"", and 65" simply lost its unit.
         ("a 6'4\" goaltender", "a six foot four inches goaltender"),
+        # ⚠️ The ABBREVIATED form: `ft` expanded and `in` did not, so the crease
+        # sentence was voiced "run four feet six in out".
+        ("run 4 ft 6 in out", "run four feet six inches out"),
+        ("the 4 ft 6 in is the length", "the four feet six inches is the length"),
+        # ... and the bare word `in` must NEVER become a unit. `in` is absent
+        # from the unit table on purpose and this guards that.
+        ("3 in the slot", "three in the slot"),
+        ("2 in a row", "two in a row"),
+        ("6 ft deep", "six feet deep"),
         ("players 6'6\" or taller", "players six foot six inches or taller"),
         ("5'7\" apart", "five foot seven inches apart"),
         ("(65\" by exception)", "(sixty-five inches by exception)"),
@@ -3451,6 +3719,14 @@ def self_test() -> int:
          "tingling in the arms and or legs"),
         ("contact and / or violently checks an opponent",
          "contact and or violently checks an opponent"),
+        # ... a three-item solidus list of governing bodies, quoted from IHUK
+        # In-House Rule 9.12. Never broken -- "IHUK or EIH or SIH" was merely
+        # not how the list is read aloud, and the book itself writes "EIH or
+        # SIH" with the comma form elsewhere.
+        ("mandatory for all players in all IIHF categories and IHUK/EIH/SIH "
+         "competitions",
+         "mandatory for all players in all IIHF categories and IHUK, EIH "
+         "or SIH competitions"),
         # ... and the disjunctive '/ or' in the IIHF hooking sentence, which
         # was never broken, must stay as it is.
         ("the opponent's hands / or near the opponent's hands",
@@ -3609,7 +3885,104 @@ def self_test() -> int:
             failures += 1
             print(f"FAIL  _label_lead({label!r})\n  expected {expected!r}\n  actual   {actual!r}")
 
-    print(f"\n{len(cases) + len(closers) + 9 + 3 + len(label_cases)} assertions, {failures} failures")
+    # Round 57: LEXICON is a plain str.replace and rewrote the INSIDE of quoted
+    # rulebook text. A listener heard IIHF 48.1 as "(for example shooting,
+    # making or receiving a pass, AND SO ON)" -- words the book does not
+    # contain, inside quotation marks. 43 quoted spans in 16 documents carry
+    # one of the three affected abbreviations.
+    #
+    # The rule being pinned: "etc." is a PARAPHRASE when it becomes "and so on"
+    # and a PRONUNCIATION when it becomes "et cetera", so inside a quotation it
+    # takes the pronunciation. "e.g." and "i.e." are already pronunciations --
+    # nobody reads them aloud as letters -- so they are unchanged either side.
+    lexicon_quote_cases: tuple[tuple[str, str], ...] = (
+        # Inside a quotation: the paraphrase must not fire.
+        ('the rule says "icing the puck, offsides, etc." and stops there',
+         'the rule says "icing the puck, offsides, et cetera" and stops there'),
+        # Outside any quotation: the friendlier paraphrase still fires.
+        ("shooting, passing, etc. are covered",
+         "shooting, passing, and so on are covered"),
+        # Both in one line: each side takes its own treatment.
+        ('outside etc. then "inside etc." after',
+         'outside and so on then "inside et cetera" after'),
+        # e.g./i.e. are pronunciations and are untouched by the quoting rule.
+        ('"a legitimate hockey play (e.g. shooting)"',
+         '"a legitimate hockey play (for example shooting)"'),
+        ('"the trapezoid (i.e. familiar to NHL fans)"',
+         '"the trapezoid (that is familiar to NHL fans)"'),
+        # ⚠️ An UNBALANCED quote makes the tail count as quoted. Deliberate:
+        # "et cetera" in prose is merely formal; fabricated wording inside
+        # quotation marks is non-negotiable 1.
+        ('he said "look at the etc. here',
+         'he said "look at the et cetera here'),
+        # No quotation-sensitive token: the fast path must behave identically.
+        ("plain e.g. text with no quotes",
+         "plain for example text with no quotes"),
+    )
+    # Round 57: U+2026 was a sentence terminator, so `_split_paragraph` could
+    # break INSIDE a rulebook quotation at an elision -- one spoken unit ending
+    # "a minor, major or a major and a game misconduct ..." and the next opening
+    # "on a player who charges a goalkeeper", an orphan clause with no subject.
+    # No checker sees it: the markdown is correct and only the audio is wrong.
+    ellipsis_cases: tuple[tuple[str, int], ...] = (
+        # An elision inside a quote is NOT a break point.
+        ('He said "a minor, major or a major and a game misconduct \u2026 '
+         'on a player who charges a goalkeeper" and stopped.', 1),
+        # A real full stop still is.
+        ("First sentence here. Second sentence here.", 2),
+        # A stop followed by a closing quote still is -- the case the closing-quote
+        # alternative exists for.
+        ('He said "keep the stick down." The next sentence follows.', 2),
+        # An elision AND a real stop: exactly one break, at the stop.
+        ('The rule reads "a major \u2026 and a game misconduct." Then prose follows.', 2),
+    )
+    for source, expected in ellipsis_cases:
+        actual = len(RE_SENTENCE_END.split(source))
+        if actual != expected:
+            failures += 1
+            print(f"FAIL  RE_SENTENCE_END split of {source!r}\n  expected {expected} piece(s), got {actual}")
+
+    # And the tail test must agree with it, or the two disagree about what ends
+    # a sentence -- which they once did, and that was a defect.
+    tail_cases: tuple[tuple[str, bool], ...] = (
+        ("a major and a game misconduct \u2026", False),
+        ('the crease"', False),
+        ("ends properly.", True),
+        ('ends inside a quote."', True),
+    )
+    for source, expected in tail_cases:
+        actual = bool(RE_SENTENCE_TAIL.search(source))
+        if actual != expected:
+            failures += 1
+            print(f"FAIL  RE_SENTENCE_TAIL({source!r}) = {actual}, expected {expected}")
+
+    # Round 57, same class as the ellipsis: an abbreviation's stop is not a
+    # sentence end. `defender.md` split mid-citation at "Lignell et al."
+    abbrev_cases: tuple[tuple[str, int], ...] = (
+        ("measured by Lignell et al. (2018), Brocherie et al. (2018) and others", 1),
+        ("see pp. 47 and 51 for the table", 1),
+        ("Smith, ed. The Rules of the Game, is the source", 1),
+        ("roughly approx. thirty seconds per shift", 1),
+        # ⚠️ `No.` is NOT protected: the corpus quotes Casebook answers where the
+        # stop IS terminal, and merging a question with its answer is worse.
+        ('The Handbook answers "No." The next situation follows.', 2),
+        # A real stop after an ordinary word still breaks.
+        ("First sentence here. Second sentence here.", 2),
+    )
+    for source, expected in abbrev_cases:
+        actual = len(RE_SENTENCE_END.split(source))
+        if actual != expected:
+            failures += 1
+            print(f"FAIL  RE_SENTENCE_END split of {source!r}\n  expected {expected}, got {actual}")
+
+    for source, expected in lexicon_quote_cases:
+        actual = apply_lexicon(source, Counter())
+        if actual != expected:
+            failures += 1
+            print(f"FAIL  apply_lexicon({source!r})\n  expected {expected!r}\n  actual   {actual!r}")
+
+    print(f"\n{len(cases) + len(closers) + 9 + 3 + len(label_cases) + len(lexicon_quote_cases) + len(ellipsis_cases) + len(tail_cases) + len(abbrev_cases)} "
+          f"assertions, {failures} failures")
     return 1 if failures else 0
 
 

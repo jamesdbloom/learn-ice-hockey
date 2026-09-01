@@ -202,7 +202,10 @@ function endZone(sx) {
  * @returns {string[]} SVG fragments, one per entry
  */
 function placeLabels(entries, opts = {}) {
-  const { size = 2.4, dot = 0, half = false, reserve = [] } = opts;
+  const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [] } = opts;
+  // A label further than this from its point gets a leader line drawn to it. Below
+  // it no leader is drawn, so nothing can be crossed and `avoid` does not apply.
+  const LEADER_MIN = 5.5;
   const CH = size * 0.56;   // approximate character width
   const LH = size * 1.25;   // line height
   const placed = [...reserve];  // {x, y, w, h} in rink feet — `reserve` blocks out
@@ -238,6 +241,44 @@ function placeLabels(entries, opts = {}) {
     [-9, -4], [9, -4], [-9, 4.5], [9, 4.5], [-13, 0], [13, 0],
     [0, -14.5], [0, 15], [-16, -8], [16, -8], [-16, 8], [16, 8],
   ];
+  // The furthest displacement this table is willing to produce — hypot(16, 8) = 17.89 ft.
+  // DERIVED FROM THE TABLE, not chosen: it is the placer's own declared idea of how far a
+  // label may sit from the thing it names, so it is the right ceiling for the degraded
+  // branch below. A census of the 399 leader lines the corpus drew before this change put
+  // it at the 90th percentile (p90 = 18.46 ft, median 9.20), so it caps the tail and not
+  // the body: 59 of the 79 labels that reach the sweep are unaffected by it, because they
+  // take the `best` branch, which this ceiling deliberately does NOT constrain.
+  const MAX_OFFSET = Math.max(...OFFSETS.map(([dx, dy]) => Math.hypot(dx, dy)));
+
+  // THE LEADER LINE WAS THE ONE PART OF A LABEL NOTHING CHECKED. Placement tested the
+  // label BOX against `reserve`, and the box alone: the dashed line joining box to anchor
+  // was drawn wherever the two ended up. Measured over all 112 built diagrams, two leaders
+  // came inside the 2.9 ft glyph radius of a player they did not belong to — the closest
+  // 2.12 ft from a forward's centre, a dashed line drawn through a body — in diagrams whose
+  // label boxes were both perfectly legal. `avoid` is the boxes the LINE may not
+  // cross; the caller passes the players, because a leader through a route is ordinary and
+  // a leader through a player is not.
+  const segBox = (x1, y1, x2, y2, b) => {
+    // Liang–Barsky against the box's slabs.
+    const dx = x2 - x1, dy = y2 - y1;
+    let t0 = 0, t1 = 1;
+    for (const [p, q] of [[-dx, x1 - (b.x - b.w / 2)], [dx, (b.x + b.w / 2) - x1],
+                          [-dy, y1 - (b.y - b.h / 2)], [dy, (b.y + b.h / 2) - y1]]) {
+      if (p === 0) { if (q < 0) return false; continue; }
+      const r = q / p;
+      if (p < 0) { if (r > t1) return false; if (r > t0) t0 = r; }
+      else { if (r < t0) return false; if (r < t1) t1 = r; }
+    }
+    return true;
+  };
+  const leaderClear = (cand, e) => {
+    if (Math.hypot(cand.x - e.x, cand.y - e.y) <= LEADER_MIN) return true;
+    return !avoid.some((b) =>
+      // The label's own player sits under the anchor end of every leader. Excluding it is
+      // not a fudge: the line starts there on purpose.
+      !(Math.abs(b.x - e.x) < 0.5 && Math.abs(b.y - e.y) < 0.5) &&
+      segBox(e.x, e.y, cand.x, cand.y, b));
+  };
 
   // A label belongs to the nearest thing to it, whatever the leader line says.
   // "puck carrier" was once placed 7.4 ft from F1 and 20.3 ft from the carrier it
@@ -252,47 +293,93 @@ function placeLabels(entries, opts = {}) {
   // Place the crowded centre-line entries first, so they get the near slots.
   const order = [...entries].sort((a, b) => Math.abs(a.y) - Math.abs(b.y) || a.x - b.x);
 
-  return order.map((e) => {
-    const w = e.text.length * CH, h = LH;
-    let put = null;
+  // One entry's placement, at a given strictness. `strict` requires the leader line to
+  // clear every box in `avoid`; the caller retries without it rather than losing a label,
+  // because a label that is not drawn is the failure mode this file has already paid for
+  // once — 104 goaltenders vanished from 112 diagrams with a clean exit 0.
+  const placeOne = (e, w, h, strict) => {
+    const ok = (cand) => inside(cand) && !collides(cand) && (!strict || leaderClear(cand, e));
     for (const [dx, dy] of OFFSETS) {
       const cand = { x: e.x + dx, y: e.y + dy, w, h };
-      if (inside(cand) && !collides(cand) && ownsIt(cand, e)) { put = cand; break; }
+      if (ok(cand) && ownsIt(cand, e)) return cand;
     }
-    // Fallback: none of the fixed offsets was free. Sweep the ice on a coarse grid
-    // and take the nearest free slot. The previous fallback was "18 ft below the
-    // point and hope", which on the forecheck diagram dropped F1's label straight
-    // onto an opposition player — a placer whose last resort ignores collisions
-    // has no last resort.
+    // Fallback: none of the fixed offsets was free. Sweep the ice on a coarse grid and
+    // take the nearest free slot that is unambiguously this entry's. The fallback before
+    // that was "18 ft below the point and hope", which on the forecheck diagram dropped
+    // F1's label straight onto an opposition player — a placer whose last resort ignores
+    // collisions has no last resort, so there is no such branch here now.
     //
-    // Ownership and the "keep the whole box on the ice" rule can be jointly
-    // unsatisfiable: a long label anchored to a player in the corner has its
-    // Voronoi cell out past the boards, so every legal box is nearer someone else.
-    // Degrade by ratio rather than by giving up — take the slot where the label is
-    // most decisively its own anchor's, even if it is not strictly nearest. The
-    // previous last resort ignored ownership entirely and wrote F1's label across
-    // an opposition winger.
-    if (!put) {
-      let best = null, bestD = Infinity, fall = null, fallR = -Infinity;
-      for (let gx = minX + w / 2; gx <= maxX - w / 2; gx += 2) {
-        for (let gy = -maxY + h / 2; gy <= maxY - h / 2; gy += 2) {
-          const cand = { x: gx, y: gy, w, h };
-          if (collides(cand)) continue;
-          const mine = Math.hypot(gx - e.x, gy - e.y) || 0.001;
-          const other = Math.min(...entries.filter((o) => o !== e)
-            .map((o) => Math.hypot(gx - o.x, gy - o.y)), Infinity);
-          if (other > mine) {
-            if (mine < bestD) { bestD = mine; best = cand; }
-          } else {
-            const ratio = other / mine;
-            if (ratio > fallR) { fallR = ratio; fall = cand; }
-          }
+    // Ownership and the "keep the whole box on the ice" rule can be jointly unsatisfiable:
+    // a long label anchored to a player in the corner has its Voronoi cell out past the
+    // boards, so every legal box is nearer someone else. That is what the degraded branch
+    // below is for — see the ⚠️ on it for how its objective used to be wrong.
+    //
+    // ⚠️ THE GRID SWEEP USED TO TEST ONLY THE STRAIGHT BOUNDS, so the rounded-corner rule
+    // twelve lines above applied to the fixed offsets and not to the fallback: 13 of the
+    // 79 labels that reach here were placed outside the dasher, which is the very defect
+    // `inside` was written to stop. `ok` applies it to both paths now.
+    let best = null, bestD = Infinity, nearD = Infinity;
+    const free = [];
+    for (let gx = minX + w / 2; gx <= maxX - w / 2; gx += 2) {
+      for (let gy = -maxY + h / 2; gy <= maxY - h / 2; gy += 2) {
+        const cand = { x: gx, y: gy, w, h };
+        if (!ok(cand)) continue;
+        const mine = Math.hypot(gx - e.x, gy - e.y) || 0.001;
+        const other = Math.min(...entries.filter((o) => o !== e)
+          .map((o) => Math.hypot(gx - o.x, gy - o.y)), Infinity);
+        if (other > mine) {
+          if (mine < bestD) { bestD = mine; best = cand; }
+        } else {
+          if (mine < nearD) nearD = mine;
+          free.push({ cand, mine, ratio: other / mine });
         }
       }
-      put = best ?? fall ?? { x: Math.min(Math.max(e.x, minX + w / 2), maxX - w / 2), y: e.y - 18, w, h };
+    }
+    if (best) return best;
+    // ⚠️ THE DEGRADED BRANCH EXILED LABELS TO THE FAR BOARDS, and did it by construction.
+    // It maximised `other / mine` over the whole sheet — and that ratio TENDS TO 1 AS
+    // DISTANCE GROWS, because two anchors 10 ft apart are equidistant-ish from a point 150
+    // ft away. So "most decisively its own anchor's" resolved to "as far away as possible":
+    // a label for a player at (-94, 8) was drawn at (82, -38), 182 ft away in the other end
+    // zone, on a leader line that crossed most of the rink. Three labels were placed ~19x
+    // the median leader length this way.
+    //
+    // The objective was wrong, not just unbounded. In the `best` branch above, distance is
+    // held down by a correctness guarantee — the label is nearer its own anchor than any
+    // other, so the leader is confirmation. Here ownership has ALREADY been conceded, so
+    // proximity is the only cue left tying label to player, and trading it away for a ratio
+    // asymptote trades away the last thing the reader has. Hence: never further than
+    // MAX_OFFSET, and never further than the nearest slot that exists at all.
+    const limit = Math.max(MAX_OFFSET, nearD);
+    let fall = null, fallR = -Infinity, fallD = Infinity;
+    for (const f of free) {
+      if (f.mine > limit) continue;
+      // Tie-break by distance. Two entries on the SAME point — `blue-line` and
+      // `centre-point` are both (25, 0) on the rink map — make the ratio exactly 1
+      // everywhere, so without this the winner was whichever cell the sweep reached first,
+      // i.e. the left edge of the ice. It put `centre-point` 10.7 ft from a point it could
+      // have sat 0.8 ft from.
+      if (f.ratio > fallR || (f.ratio === fallR && f.mine < fallD)) {
+        fallR = f.ratio; fallD = f.mine; fall = f.cand;
+      }
+    }
+    return fall;
+  };
+
+  return order.map((e) => {
+    const w = e.text.length * CH, h = LH;
+    // Strict first, then again without the leader-clearance rule. The old last resort was
+    // "18 ft below the point and hope", which ignored collisions entirely; there is no
+    // last resort that ignores collisions any more, because one is worse than none.
+    const put = placeOne(e, w, h, true) ?? placeOne(e, w, h, false);
+    if (!put) {
+      throw new Error(
+        `placeLabels: nowhere on the ice for "${e.text}" at (${e.x}, ${e.y}). ` +
+        'Loud on purpose: a label that silently does not render is the defect this file ' +
+        'has already shipped once.');
     }
     placed.push(put);
-    const moved = Math.hypot(put.x - e.x, put.y - e.y) > 5.5;
+    const moved = Math.hypot(put.x - e.x, put.y - e.y) > LEADER_MIN;
     const leader = moved
       ? `<line x1="${e.x}" y1="${py(e.y)}" x2="${put.x}" y2="${py(put.y) + (put.y > e.y ? -1.2 : 1.2)}" ` +
         `stroke="${PALETTE.label}" stroke-width="0.18" stroke-dasharray="0.8 0.8"/>`
@@ -1642,7 +1729,11 @@ export function playSvg(spec, opts = {}) {
         ...(spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }),
         ...routeReserve,
         ...zoneReserve,
-      ] }
+      ],
+      // The leader line may cross a route — routes are what a diagram is mostly made of —
+      // but not a player. Same 7x8 box the reserve above uses, so there is one statement
+      // in this file of how much room a glyph takes, not two that can drift.
+      avoid: (spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }) }
   ).join('\n    ');
 
   const puck = spec.puck

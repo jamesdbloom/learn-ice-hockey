@@ -92,8 +92,53 @@ const VERIFY_RE = /^\s*(verification note|note on|methodology note)/i;
 // inside the closed box. Leads must therefore be listed here BEFORE they are used in
 // content — and the optional warning glyph matters, because these paragraphs open
 // `⚠️ **Edition note — …`, where the glyph stops the bold run from starting the line.
+//
+// ⚠️ IT HAPPENED AGAIN, and the leads below from `not verified` to `scope of` are the
+// repair. Twenty-three trailer nodes across nineteen documents were filing as sources
+// on 1 September 2026 — every one of them a disclosure of what is NOT established.
+// The worst was technique/skating.md, whose body says "See the verification note at
+// the foot of this document" TWICE while that note sat inside a closed <details>
+// labelled "Sources". A reader hunting a verification note has no reason to open a box
+// labelled Sources, and a listener never reaches it at all.
+//
+// ⚠️ THE MISSES WERE ALL NEAR-MISSES OF LEADS ALREADY HERE, which is why "add the lead
+// when you write it" keeps failing: the list had `unverified` but not `not verified`
+// (skating.md, offensive_zone_play.md); `could not be verified` but not `could not
+// verify` (team_play_and_culture.md). The rest were whole families nobody had thought
+// of — `Limitations worth knowing:`, `Limits and caveats:`, `Caveats and known gaps:`,
+// `Not measured:`, `Not established:`, `Scope note on …`.
+//
+// ⚠️ WHAT MUST NOT BE ADDED. The corpus's source lines are `Topic label: [citation]…`,
+// and several topic labels read like disclosures — `Boards safety (the override on
+// every retrieval — …): USA Hockey — Heads Up Hockey Program Guide …` appears in seven
+// documents and is a CITATION with a descriptive label, not a buried safety note. A
+// census that reads only the first few words will call it a note; it is not. Promoting
+// a citation list into the visible notes block is a regression in the other direction.
+// The test is the paragraph's BODY: a note says what is or is not established, a source
+// says where something came from.
+//
+// ⚠️ AND DO NOT ADD `-` FOR BULLETS. `•` is here because technique/shooting.md writes
+// its continuation bullets as literal `• …` paragraphs. A markdown `- …` bullet parses
+// as a `list` node and is already carried by the continuation branch below, on the
+// strength of the lead-in above it. A `-` lead would promote any list that happened to
+// follow a source line.
+//
+// To re-derive: parse each content file, take the nodes after the `*Sources — …*`
+// paragraph, run this split, and READ every paragraph it files as a source.
+// ⚠️ THIS PATTERN AND `VERIFICATION_MARKERS` IN `scripts/md_to_speech.py` SHARE
+// VOCABULARY AND DO OPPOSITE THINGS. **Do not unify them.**
+//   * A lead matched HERE PROMOTES the paragraph out of the collapsed
+//     <details class="sources"> into a visible <aside> on the page.
+//   * A lead matched THERE DROPS the paragraph from the audio entirely.
+// The same opening string therefore makes a disclosure more visible to a reader
+// and less audible to a listener. They are not two copies of one list that have
+// drifted; they are two lists with opposite effects, and deriving one from the
+// other would be a bug. As of 2026-09-01: 24 leads here, 8 there.
+// ⚠️ Adding a lead here does NOT make a buried disclosure audible. `skating.md`
+// voices "See the verification note at the foot of this document" twice, and the
+// note is now visible on the page and still deleted from the podcast.
 const NOTE_START_RE =
-  /^\s*(?:[⚠❗🚫]\uFE0F?\s*)?\**\s*(verification note|unverified|could not be verified|rules verified|note on|notes on|methodology note|correction|in-house note|edition note|provenance|•)/iu;
+  /^\s*(?:[⚠❗🚫]\uFE0F?\s*)?\**\s*(verification note|unverified|not verified|could not be verified|could not verify|not established|not measured|not independently verif|not used as sources|unpublished|flagged as|limits|limitations|caveats|scope note|scope of|rules verified|note on|notes on|methodology note|correction|in-house note|edition note|provenance|•)/iu;
 const SOURCES_RE = /^\s*Sources\s*[—–-]/;
 
 /** Flatten an mdast subtree to plain text. */

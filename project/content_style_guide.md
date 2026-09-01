@@ -136,16 +136,37 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 **Every level of hockey in Britain runs on the IIHF Rule Book.** The Elite
 League, the NIHL, the English and Scottish recreational and junior game,
 university hockey and the GB national teams. On top of it sit local amendments:
-the **In-House Rules**, which England Ice Hockey, the SIHA and the BUIHA all
-apply, or the **EIHL Casebook** in the Elite League. (The In-House Rules name no
-issuing body anywhere in them — see [`uk_rules.md`](../content/foundation/uk_rules.md),
-which owns this and records the evidence. Do not write "issued by".)
+the **In-House Rules**, now issued by **Ice Hockey UK (IHUK)**, or the **EIHL
+Casebook** in the Elite League. See
+[`uk_rules.md`](../content/foundation/uk_rules.md), which **owns this** and
+records the evidence.
 
-The In-House Rules state it directly — England Ice Hockey, the SIHA and the
-BUIHA *"adopt the IIHF Official Rule Book 2025–2026 (Version 1.1, published July
-2025) as the foundation for the rules of the game to be applied in England and
-Scotland"* — and they are explicitly *"not intended to serve as a standalone
-rule book."*
+The current edition states it directly — IHUK and the BUIHA *"adopt the latest
+IIHF Official Rule Book (Version 1.1, published July 2025) as the foundation for
+the rules of the game to be applied in England, Wales, Scotland and Northern
+Ireland (the Home Countries)"* — and the document is explicitly *"not intended to
+serve as a standalone rule book"*, with *"all rules … enforced in line with the
+IIHF Rule Book"* unless it says otherwise.
+
+⚠️ **Two things this passage used to say were true of the previous edition and
+are false of the current one**, and they are recorded here rather than quietly
+overwritten, because both were load-bearing instructions to writers:
+
+- It quoted the scope as *"England and Scotland"*. **The 2026-27 edition reaches
+  four nations.** A writer following the old wording would have told a Welsh or
+  Northern Irish reader the British layer did not apply to them.
+- It said *"The In-House Rules name no issuing body anywhere in them … Do not
+  write 'issued by'."* **The 2026-27 edition names IHUK in its own right**, and
+  also provides that *"[r]eferences to EIH or SIH shall, where the context
+  requires, be construed as references to IHUK."* The prohibition is lifted for
+  the current edition, and remains correct about the previous one.
+
+⚠️ **This is the failure mode this guide warns about, committed by this guide**:
+a fact copied out of its owner, going stale silently when the owner was updated.
+`uk_rules.md` had carried the correction for days. **The lesson is not "check the
+British layer" — it is that a specification which restates its owner's facts
+acquires its owner's maintenance burden without its owner's attention.** Quote
+the operative wording where a writer needs it in hand, and point for the rest.
 
 **What this means when you write a rules claim.** A British reader's flag is the
 **IIHF** one. The corpus is written to NHL rules with IIHF, USA Hockey and
@@ -254,8 +275,21 @@ into the very block correcting a governing document for being wrong.)
 28 August 2026 — it is verifiable now.]** ⚠️ **Consequence to chase:** any
 document still carrying the old *"not held here and was not searched"* limit is
 now stating something untrue about this repository. Round 52 narrowed ten such
-disclosures; **`rules_primer.md` and `shooting.md` are named here as carrying it
-and must be re-checked.**
+disclosures; ~~**`rules_primer.md` and `shooting.md` are named here as carrying it
+and must be re-checked.**~~ **[CLOSED 1 September 2026.]** Both were re-checked:
+`grep -c 'not held here and was not searched'` returns **0 in each**. The
+extraction is on disk at **1,055,619 bytes**, `rules_primer.md` cites it heavily,
+and **four** of its quotations were located verbatim in the flattened text — Rule
+204 Situation 8, Rule 407 Situation 13, Rule 608 Situation 1, Rule 630 Situation
+41, one hit each. **The corpus is not overstating what it holds.**
+
+⚠️ **This item stayed open after the thing it asked for had already been done, and
+it named two files that had already been repaired.** That is the same failure as a
+stale plan row dispatched as a brief — and it is worse here, because this is the
+*specification*: an agent reading it would have gone looking for a string that does
+not exist, and a diligent one might have *added* the limit back to satisfy it.
+**When a "consequence to chase" is chased, close it in the same edit that chases
+it.**
 
 *(The instruction that used to end this paragraph — "If you fetch it, add it to
 `fetch_sources.sh` and the README table so the next agent inherits it rather than
@@ -289,7 +323,11 @@ out the corpus had begun citing a book that lived only in a session scratchpad.)
 > be rediscovered if any is re-fetched. **They are a record of what these files are, not a claim that they are
 > here.** Found by the round-52 prevalence pass, which hit exactly this trap.
 
-Other extracted sources in the same directory, worth knowing about before you declare something unfindable: `tulsky.txt` (zone-entry study), `berg.txt` / `hockeyscan.txt` (Berg et al. 2025 on scanning), `ibc.txt` (Introduction To Body Contact), `huh.txt` (Heads Up Hockey), `bvhs.txt` (goaltending manual), `bnq.html`, `csa.pdf`.
+⚠️ **THE LIST BELOW IS A RECORD OF WHAT THESE FILES ARE, NOT OF WHAT IS ON DISK — read the STOP above before using any of it.** Of these, **only `ibc.txt` and `huh.txt` are present.** The sentence that stood here read *"worth knowing about before you declare something unfindable"*, which is the opposite of true for six of the seven, and ⚠️ **it survived the very correction printed three paragraphs above it** — a fix that reached one paragraph and stopped, in the file that specifies against exactly that.
+
+⚠️ **It was found because an agent went looking for `berg.txt` on the strength of this sentence.** `berg.txt` and `hockeyscan.txt` are absent, `scripts/fetch_sources.sh` has no entry that would produce either, and the Berg paper had to be re-fetched from its DOI. **A brief pointing at evidence that does not exist is the corpus's own recurring failure, and this is the specification committing it.**
+
+The descriptions, as a record only: `tulsky.txt` (zone-entry study), `berg.txt` / `hockeyscan.txt` (Berg et al. 2025 on scanning — **the paper is open access at `doi.org/10.1080/02640414.2024.2433899` and was body-verified from there on 1 September 2026**), `ibc.txt` (Introduction To Body Contact, PRESENT), `huh.txt` (Heads Up Hockey, PRESENT), `bvhs.txt` (goaltending manual), `bnq.html`, `csa.pdf`.
 
 **⚠️ Two files in there are not what their names suggest. Check contents before citing from a filename.**
 
