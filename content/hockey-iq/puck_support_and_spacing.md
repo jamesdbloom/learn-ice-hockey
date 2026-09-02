@@ -561,7 +561,7 @@ Three things make the layer an actual position rather than a vague instruction t
 
 ```facts
 Position: Offset diagonally from the first defender, not directly behind them
-Convention: The layering distance is the same two-to-three-stick-lengths range — near enough to arrive in about a second
+Convention: The layering distance is the same two-to-three-stick-lengths range as support distance — near enough to arrive in about a second
 Risk: Too close and one move beats you both; too far and the carrier skates through the gap between you
 Convention: Whether you may hold the layer at all is system-dependent — ask how your team's coverage changes it
 ```

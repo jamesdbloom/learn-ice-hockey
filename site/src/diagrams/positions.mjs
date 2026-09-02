@@ -24,6 +24,11 @@
  * is labelled with the positional vocabulary its own document uses — C, LW, RW, D.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped: a sentence that appears twice is a sentence that can drift once, and
+// this one already had. See rule69_clauses.mjs for why all four still say it.
+import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.mjs';
+
 // ---------------------------------------------------------------------------
 // Shared anchors. Named once where more than one thing refers to them, so a
 // route and the player it starts on cannot drift apart.
@@ -573,7 +578,11 @@ const wingerOffensiveZone = {
     'a bias rather than a rule — a teammate with a clear look at an open side is always worth the ' +
     'extra pass. At the net front, work just outside the blue paint and keep your body out of ' +
     'the crease: screening from outside it without contact is legal, ' +
-    "but that is keyed to the crease: the sentence in NHL and IIHF Rule 69.1 that voids a goal for where you stood requires the attacker to have entered it, and 69.4, the rule for outside it, reaches contact only — because both books’ own reference tables allow the goal where an attacker plants himself outside the crease and obstructs the goalie’s vision (NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, at Situation 5E). What the disallowed rows have in common is the attacker being inside the crease, not whether he is moving, and that is the line 69.1 draws itself: its “only if” caps when a goal may be disallowed, while the sentence that actually disallows one requires the attacker to have entered the goal crease. So the tables are applying the rule rather than contradicting it — keep your feet out of the paint, and off the crease line at its edge, which the IIHF counts as part of the crease.",
+    'but that is keyed to the crease: under both the NHL and the IIHF every clause of Rule 69 ' +
+    'that voids a goal for where you stood names the goal crease, and 69.4, the rule for outside ' +
+    'it, reaches contact only. That is a reading of the rule’s structure rather than something ' +
+    'either book states in terms, and ' + REFEREE_JUDGEMENT +
+    ' So keep your feet out of the paint, and off ' + CREASE_LINE_IS_THE_CREASE + '.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +
@@ -911,7 +920,7 @@ const wingerDzRim = {
     'Beating a checker who has sealed you against the boards, in your own end. You have the puck ' +
     'on the wall with your body between it and him, which is why the puck is drawn on the far ' +
     'side of you from the pressure — though body-between-puck-and-checker is the start of the ' +
-    'technique and not the whole of it; the section beside this picture gives the rest. He is inside you, ' +
+    'technique and not the whole of it; the section sets out the rest. He is inside you, ' +
     'containing rather than chasing, so the ice he is taking away is the middle. That is exactly ' +
     'the checker a RIM beats: a hard shot along the boards that follows the curve of the rink ' +
     'past him to a teammate further around, because it goes where he is not. It is a completely ' +
@@ -1035,6 +1044,18 @@ const wingerDzReverse = {
 // because they are three answers to ONE instant, not a sequence — so the diagram is
 // deliberately NOT `numbered`, which would assert an order the prose does not.
 //
+// ⚠️ WHICH THREE OF THE FOUR — SETTLED AS UNSETTLEABLE, DO NOT REOPEN IT. The caption
+// and the `describe` used to say "three of the four options ... the fourth is not
+// drawn", which asserts a one-to-one mapping onto the section's list and then leaves
+// the reader to work out which one is missing. It cannot be worked out. The carry runs
+// dx -8, dy -16 from the winger: eight feet UP THE ICE and sixteen feet TOWARD THE
+// MIDDLE, so it answers to "skate" and to "attack the middle" equally, and
+// switching_positions.md §"Playing your off wing" distinguishes those two words
+// without defining either. Naming the undrawn fourth would therefore be authoring a
+// distinction the owner does not make — and narrowing the route to force the mapping
+// would be authoring geometry to fit a caption. Both captions now describe the three
+// routes that are drawn and claim no correspondence at all.
+//
 // ARRIVAL GEOMETRY. The forechecker is placed so that no route carrying an arrowhead
 // finishes near him. Re-derived against rink.json's `half-wall` y = 38.5: the winger is
 // at (69, 34.5), the carry route ends at (61, 22.5) and the forechecker stands at
@@ -1067,10 +1088,11 @@ const offWingOpenToTheIce = {
     'the inside of your body rather than toward the boards, and the cost of it is exactly this ' +
     'pass: up the wall, onto your backhand, with a forechecker arriving. The fix is drawn here — ' +
     'take the puck OPEN TO THE ICE, hips turned out and a step or two off the boards. That ' +
-    'separation is the whole point, because it is what leaves the section\'s four answers available: ' +
-    'skate, pass to the centre, pass back to your defenceman, or attack the middle. Three of the ' +
-    'four are drawn here; the fourth is not, and the section ranks none of them above the ' +
-    'others. Flush against the wall you have one of them. ' +
+    'separation is the whole point, because it is what leaves all four answers available: ' +
+    'skate, pass to the centre, pass back to your defenceman, or attack the middle. Three routes ' +
+    'leave him at once here — carrying the puck up and inside, the pass to the centre, and the ' +
+    'pass back to your defenceman — alternatives rather than a sequence, and none of the four is ' +
+    'ranked above the others. Flush against the wall you have one of them. ' +
     'Note that the coaching source this section otherwise follows teaches the opposite ' +
     'reception — taking the pass with your back to the boards — and this guide does not follow ' +
     'it there. ' +
@@ -1087,7 +1109,8 @@ const offWingOpenToTheIce = {
     'of him and hard against the boards, arriving. Three routes leave the winger at once, and ' +
     'they are alternatives rather than a sequence: one route carrying the puck inside and up ' +
     'the ice, one pass into the middle to the centre, and one pass back down to the defenceman ' +
-    'in the corner. They are three of the four options the section lists; the fourth is not drawn.',
+    'in the corner. The section lists four options and the picture draws three routes, without '
+    + 'mapping them one to one onto that list.',
 
   players: [
     { id: 'G',  pos: 'G', at: { at: 'crease', dx: -1 } },

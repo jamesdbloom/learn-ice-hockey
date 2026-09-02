@@ -554,7 +554,7 @@ know when not to — on a 2-on-1 blocking means abandoning the pass, and your go
 ```
 Key: Your shift is legitimately a little longer than a forward's, because more of it is gliding, reading and skating backwards rather than sprinting
 Key: Lignell et al. tracked 36 NHL players — defencemen covered 29% more skating in total and were on the ice 47% longer than forwards, while forwards did 54% more high-intensity skating per minute
-Key: Computed from the NHL's own time-on-ice report, 2025-26 defencemen averaged 49.3 seconds per shift against 47.6 for forwards — about a second and a half, and not a published figure
+Key: Computed from the NHL's own time-on-ice report, 2025-26 defencemen averaged 49.3 seconds per shift against 47.6 for forwards — a difference of 1.7 seconds, under two seconds a shift, and not a published figure
 Key: The measured range for an individual skater is roughly 30 to 80 seconds, owned by Conditioning and Recovery
 Action: Change your pair on its own clock, not with a forward line — let the forwards go and take the next safe window
 Never: Change while you are the last man back — say it out loud: "last man"

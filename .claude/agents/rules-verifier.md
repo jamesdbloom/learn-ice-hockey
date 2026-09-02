@@ -77,7 +77,9 @@ rounds.**
 ⚠️ **The most recent additions a stale table would hide from you:** `nhl_rules_2024-25.txt` and
 `nhl_rules_2024-25_layout.txt` — a **SUPERSEDED** NHL edition held **only as dating evidence** for
 the Rule 60 rewrite. ⚠️ **Never cite it for a current rule.** And `ukcg.txt` and `crt6.txt`, the
-concussion documents — ⚠️ **`crt6.txt` is 1,535 bytes of page furniture whose content pages are
+concussion documents, plus `page_1975.txt` — **Pagé (1975)**, the skating thesis, added
+2 September 2026 so that `skating.md`'s claims about what it does and does not contain are
+checkable without a 23 MB refetch — ⚠️ **`crt6.txt` is 1,535 bytes of page furniture whose content pages are
 IMAGES, so a grep for any content word returns zero from a file that does not look empty. Two
 agents and a coordinator have already drawn a false negative from that zero. Render it with
 `pdftoppm`.**
@@ -95,10 +97,35 @@ Northern Ireland.** Found by a verifier that reported its own instructions as a 
 decays silently, and nothing mechanical checks it. **Run `ls sources/*.txt` and diff it against this
 table before you trust either.**
 
-⚠️ **Two files on disk are deliberately NOT in this table: `crt6.txt` and `ukcg.txt`.** They are
-concussion and medical guidance, not rulebooks, and they are `source-verifier`'s and
-`safety-reviewer`'s ground rather than yours. ⚠️ **`crt6.txt` is 1,535 bytes of page furniture
-with NO body text — any grep of it is a FALSE NEGATIVE; the PDF has to be read by eye.**
+⚠️ **FOUR files on disk are deliberately NOT in this table, and NONE of them is a rulebook.**
+They are `source-verifier`'s and `safety-reviewer`'s ground, not yours. Do not cite any of them
+for a rule.
+
+| File | What it actually is | Why it is on disk |
+|---|---|---|
+| `crt6.txt` | **Concussion Recognition Tool 6** — medical guidance | Cited on return-to-play, the corpus's highest-consequence subject |
+| `ukcg.txt` | UK concussion guidance | Same |
+| `page_1975.txt` | **Pagé (1975), *Biomechanics of Forward Skating in Ice Hockey*** — a doctoral thesis | Added 2 September 2026: `skating.md` makes several claims about what it does and does not contain, and **nobody could check them without refetching 23 MB** |
+| `bvhs.txt` | **BVHS Goalie Coaches Tactics and Skill Development Resource Guide**, *Updated May 2026* — a **tactics** manual | Added 2 September 2026 because `goaltender.md` cites it throughout and two safety reviewers in a row declined to write about goalie hip and adductor loading with no source on disk |
+
+⚠️ **`bvhs.txt`'s title is its COVER title, not the *"2026-27"* its FILENAME suggests** — a source in
+this repo previously had its title taken from its filename and got it wrong. ⚠️ **And it does not
+settle the question it was fetched for: `adductor` and `injury` return ZERO in it, `groin` returns one.**
+
+**Two of the four ALSO extract badly, in two different ways — and they are not the same failure.**
+(`page_1975.txt` and `bvhs.txt` extract normally; the `adductor`/`groin` counts above were obtained
+by ordinary grep. These two cannot be.) **Both are additional to the two extraction traps below.**
+
+⚠️ **`crt6.txt` is 1,535 bytes of page furniture with NO body text — any grep of it is a FALSE
+NEGATIVE.** The PDF is image-only and `tesseract` is NOT installed on this machine, so the only
+method is `pdftoppm -r 200 -png` into the scratchpad and reading the pages **by eye**. It HAS been
+read: all ten Red Flags, all five "Remember" instructions and the licence line are confirmed
+verbatim, including *"Do not remove helmet (if present) or other equipment"* WITH NO EXCEPTION.
+
+⚠️ **`ukcg.txt` fails the OPPOSITE way: it extracts to 72 KB but sets its headings LETTER-SPACED**
+(`I F I N D O U B T,  S I T  T H E M  O U T`), so a flattened phrase search finds about **one
+occurrence in six** and returns a number that looks like a real count. Strip ALL whitespace and
+reconcile the two counts before quoting either.
 ⚠️ **So `ls sources/*.txt` returning more rows than this table is EXPECTED, and is not by itself
 evidence the table is stale.** Two agents have reported it stale this round by matching the
 filenames inside the warning below, which names files that never existed. **Diff the table's own

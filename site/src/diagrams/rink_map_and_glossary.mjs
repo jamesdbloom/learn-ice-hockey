@@ -288,7 +288,8 @@ const pointAndHalfWall = {
     'are drawn.',
 
   players: [
-    // "They are where defencemen live in the offensive zone" (§3, The blue lines) and
+    // "The blue lines are where defencemen live in the offensive zone" (§3, The
+    // blue lines) and
     // "the area just inside the blue line, toward each set of boards, where the
     // defencemen set up" (§5, The point). Two of them, per the section.
     { id: 'D', pos: 'D', at: 'point:right', label: 'the point' },

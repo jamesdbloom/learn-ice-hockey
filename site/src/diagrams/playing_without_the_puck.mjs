@@ -40,6 +40,15 @@
  * in its own diagrams would teach the inference the prose kills.
  * ------------------------------------------------------------------------- */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped: a sentence that appears twice is a sentence that can drift once, and
+// this one already had. See rule69_clauses.mjs for why all four still say it.
+import {
+  CREASE_LINE_IS_THE_CREASE,
+  DISALLOWED_ROWS_SHARE_THE_CREASE,
+  TABLES_ALLOW_OUTSIDE,
+} from './rule69_clauses.mjs';
+
 // The puck carrier is on the half-wall because that is the position this document
 // names when it needs one: "the puck is on the opposite half-wall (the boards area
 // roughly level with the faceoff dot)".
@@ -339,12 +348,10 @@ const screenSightline = {
     'IIHF’s own 69.1 carries the same positioning limb in its own words. Read whole, though, both ' +
     'books put the crease at the centre of it: 69.1’s “only if” caps when a goal may be disallowed, while ' +
     'the sentence that actually disallows one requires the attacker to have entered the goal crease, and both ' +
-    'books’ reference tables apply exactly that line, allowing ' +
-    'the goal where an attacker plants himself outside the crease and obstructs the goalie’s ' +
-    'vision (NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, ' +
-    'at Situation 5E); what the disallowed rows have in common is the attacker being inside the ' +
-    'crease, not whether he is moving. So keep both feet out of the paint, and off the crease line at its ' +
-    'edge, which the IIHF counts as part of the crease. Here ' +
+    'books’ reference tables apply exactly that line, ' +
+    TABLES_ALLOW_OUTSIDE + '; ' + DISALLOWED_ROWS_SHARE_THE_CREASE +
+    ' So keep both feet out of the paint, and off ' +
+    CREASE_LINE_IS_THE_CREASE + '. Here ' +
     '"screen" means the goaltender’s sightline and nothing else. ' +
     // SAFETY. Owner's own wording, content/hockey-iq/playing_without_the_puck.md:560 — "Never: Meet
     // a goal post head first, and never duck — head up, chin off your chest. A head-down,

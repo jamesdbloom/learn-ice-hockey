@@ -43,6 +43,11 @@
  *    ones are stale.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped: a sentence that appears twice is a sentence that can drift once, and
+// this one already had. See rule69_clauses.mjs for why all four still say it.
+import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.mjs';
+
 // ---------------------------------------------------------------------------
 // 1. Three lanes, and the carrier last to the line — section 4.
 // ---------------------------------------------------------------------------
@@ -140,9 +145,14 @@ const wideEntry = {
     'high for the back-door or point option. Going wide with nobody behind you is not an attack ' +
     'but a slow dump-in with extra steps, because you arrive alone below the goal line with the ' +
     'defence between you and the net. No contact is drawn: the defender is beaten by having to ' +
-    'turn, not by being hit. The net drive stops at the blue paint: live at the edge of it and ' +
-    'keep your body out of the crease — screening from outside it without contact is legal, ' +
-    "but that is keyed to the crease: the sentence in NHL and IIHF Rule 69.1 that voids a goal for where you stood requires the attacker to have entered it, and 69.4, the rule for outside it, reaches contact only — because both books’ own reference tables allow the goal where an attacker plants himself outside the crease and obstructs the goalie’s vision (NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, at Situation 5E). What the disallowed rows have in common is the attacker being inside the crease, not whether he is moving, and that is the line 69.1 draws itself: its “only if” caps when a goal may be disallowed, while the sentence that actually disallows one requires the attacker to have entered the goal crease. That reads the rule’s structure rather than anything either book states in terms, and both add that Rule 69 is enforced exclusively in accordance with the on-ice judgement of the Referee(s) — so keep your feet out of the paint, and off the crease line at its edge, which the IIHF, USA Hockey and Hockey Canada all count as part of the crease.",
+    'turn, not by being hit. The net drive stops at the blue paint: live at the edge of it, but ' +
+    'keep your feet out of the paint and off ' + CREASE_LINE_IS_THE_CREASE +
+    '. Screening from outside the ' +
+    'crease without contact is normally legal; what risks the goal is entering the paint, or ' +
+    'making contact with the goaltender — any contact once you are in the crease, and more ' +
+    'than incidental contact outside it. That is Rule 69 under both the NHL and the IIHF, and it ' +
+    'reads the rule’s structure rather than anything either book states in terms; ' +
+    REFEREE_JUDGEMENT,
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +
@@ -191,20 +201,46 @@ const wideEntry = {
     // moves it with no diff touching this file. Tip (78, -5); the opposition
     // goaltender's anchor (86 - 1, 0) = (85, 0). d = 8.60 ft, terminal tangent (the
     // chord: this route has no bow) 60.9 degrees off the bearing to him, so the
-    // lateral miss is 7.52 ft, well outside the 2.9 ft glyph. But d is INSIDE
-    // ARRIVAL.noArrow = 9, so this is the closest skater arrowhead to a goaltender in
-    // the corpus, and it is the only one of the four in FRONT of the net: the two at
-    // 7.81 ft (`forecheck-212`, `nz-1-2-2-containment`) finish behind the goal line
-    // outside the near post with the frame interposed.
+    // lateral miss is 7.52 ft, well outside the 2.9 ft glyph. d is INSIDE
+    // ARRIVAL.noArrow = 9.
+    //
+    // ⚠️ THIS USED TO READ "the closest skater arrowhead to a goaltender in the
+    // corpus", and then named two CLOSER ones two clauses later. It contradicted
+    // itself inside one sentence. What is true, and what carries the safety weight,
+    // is that it is the closest one IN FRONT OF the goaltender. Re-measured over
+    // every arrow-ended skater route in DIAGRAMS against the same table — goal line
+    // at x = 89, the goaltender's anchor at (85, 0):
+    //
+    //    7.81  forecheck-212                  tip (91, -5)   BEHIND the goal line
+    //    7.81  nz-1-2-2-containment           tip (91, -5)   BEHIND the goal line
+    //    8.60  entry-wide                     tip (78, -5)   IN FRONT — this route
+    //   10.05  winger-offensive-zone-patches  tip (86, -10)  beside the net
+    //
+    // The two at 7.81 finish behind the goal line outside the near post with the
+    // frame interposed. The fourth is OUTSIDE ARRIVAL.noArrow, so check-arrivals does
+    // not report it and a reader running the checker sees three, not four; it is
+    // listed here so the count in this block can be reconciled with the tool's.
     //
     // check-arrivals downgrades a goaltender arrival to advisory BY DESIGN — every net
     // drive finishes near him by construction, so failing on it would forbid drawing
-    // one — which means nothing mechanical will ever raise this. The remedy the corpus
-    // uses is a caption clause, and the caption now carries the same NHL 69.1 wording
-    // as `winger-offensive-zone-patches`, which was the only front-of-net drive that
-    // had it. Do not "fix" this by shortening the route instead: a drive that stops
-    // further out is a different play, and the caption is where the obligation belongs,
-    // because what happens in the last few feet is movement over time.
+    // one — which means nothing mechanical will ever raise this. THE ARRIVAL INVARIANT
+    // in scripts/lib/rink.mjs carries that carve-out in terms, under "SKATER, not
+    // goaltender, for the build failure", so the checker and the rule it enforces agree.
+    //
+    // ⚠️ THE READER-FACING STATEMENT OF THE SAME CONVENTION DOES NOT CARRY THE
+    // CARVE-OUT, and this route is the one place that bites. content/reading-diagrams/
+    // reading_ice_hockey_diagrams.md states it flat — "A route that closes on an
+    // opponent ends in the two-bar mark, not an arrowhead" — and mentions the
+    // goaltender nowhere in connection with it. Read strictly, that sentence forbids
+    // the arrowhead below, which the code correctly permits. THE CODE IS RIGHT AND THE
+    // PROSE IS SHORT. Do not "fix" the drawing to match the page.
+    //
+    // The remedy the corpus uses is a caption clause, and this caption takes its Rule
+    // 69 wording from rule69_clauses.mjs, shared with the three other diagrams that
+    // teach it, so a correction reaches all four. Do not "fix" this by shortening the
+    // route either: a drive that stops further out is a different play, and the caption
+    // is where the obligation belongs, because what happens in the last few feet is
+    // movement over time.
     { from: NET_DRIVER, to: { at: 'slot', dx: 2, dy: -5 }, kind: 'skate' },          // (78, -5)
   ],
 
@@ -230,7 +266,7 @@ const delayCurl = {
   width: 900,
 
   caption:
-    'The delay, or curl-back — the play that runs hardest against instinct, because turning away ' +
+    'The delay, or curl-back — the play that runs against instinct, because turning away ' +
     'from the offensive zone feels like retreating. A wasted entry at rec and youth level is ' +
     'characteristically a player alone at the line who forced something instead; this document ' +
     'has no figure for what share of wasted entries that accounts for, so read it as a coaching ' +

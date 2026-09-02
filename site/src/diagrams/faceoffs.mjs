@@ -171,8 +171,9 @@ const dzoneAlignment = {
     'defenceman is in the slot in front of the goaltender. ' +
     'On the ice that defenceman stands outside his winger as well as behind him, nearer the ' +
     'boards — but the winger drawn here is already within a foot of them, so there is no room ' +
-    'outboard of him for a second player and “outside” is not attempted here. Read the picture ' +
-    'for the depth and take the width from the text. ' +
+    'outboard of him for a second player and “outside” is not attempted here. So the depth is ' +
+    'drawn as it is played, while that outboard offset is stated in these words and not in the ' +
+    'picture. ' +
     'Where those four skaters stand is a coaching choice and not a rule — the alignment drawn is ' +
     'the one that goes with a low zone collapse behind a 2-1-2 ' +
     'forecheck, and every team’s alignment differs, so find out what yours runs before your ' +
@@ -533,7 +534,7 @@ const goaliePulled = {
     // "The extra attacker usually goes to the net front or the high slot." Net
     // front, offset off the middle so the glyph clears the goaltender's — a sixth
     // attacker standing on the goalie is not what "net front" means.
-    { id: 'F6', pos: 'F', at: { at: 'net-front', dx: -4, dy: 4.5 }, label: 'extra attacker' },
+    { id: 'F',  pos: 'F', at: { at: 'net-front', dx: -4, dy: 4.5 }, label: 'extra attacker' },
     // "Both defencemen are at the points."
     { id: 'D',  pos: 'D', at: 'point:right' },
     { id: 'D',  pos: 'D', at: 'point:left' },

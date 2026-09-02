@@ -139,7 +139,13 @@ another agent's brief as its top priority — and was a measurement artefact.
 ### What the coordinator does and does not do
 
 - **Does:** all shared-state writes — `project/plans/`, `project/reviews/`,
-  `check_counts.py --update`, staging, committing. **Subagents never touch these**, and
+  `check_counts.py --update`, staging, committing. ⚠️ **AND `scripts/` — A SHARED TOOL IS
+  SHARED STATE.** In round 59 the coordinator added a classifier to `check_disclosures.py`
+  mid-round, and an agent reported: *"it changed its own classification output between my first and
+  last run, with no edit of mine… **no finding in any report should rest on that tool's output
+  today.**"* It had read every hit itself, so nothing it concluded was wrong — **but it could not
+  have known that when it started.** ⚠️ **Change a tool between waves, not during one**, and if you
+  must, tell every live agent what changed. **Subagents never touch these**, and
   telling them so in the brief is what keeps concurrent work from clobbering.
 - **Does:** answer the questions agents declare they could not reach. They routinely
   end with one specific thing they could not check — run the renderer, run the census,
@@ -173,7 +179,22 @@ run that counts is the one after every agent has finished and every file is stag
 ### Parallelism has one hard rule
 
 **File ownership must be disjoint, and it must be stated.** Two agents in one file
-clobber silently. When a finding lands in a file another agent holds, **message that
+clobber silently. ⚠️ **AND STATING IT DOES NOT MAKE IT TRUE — the coordinator is the one
+who gets this wrong.** In round 59 four agents were sent to `site/src/diagrams/*.mjs` across one
+round, **each brief saying "You own EXCLUSIVELY."** They did not. The consequence was measured and
+reported by an agent against its own clean run: **its rebuild published six captions and one
+`describe` it had never read**, and its own `check_absolutes` *"224 units scanned, pass"* covered
+them. ⚠️ **Mechanically checked, reviewed by nobody — which is round 58's failure verbatim, and this
+time the coordinator caused it.**
+
+⚠️ **The build-race guard did not fire and was right not to.** It compares source mtimes at import
+against write, so it catches edits made *during* a build; those edits landed *before* the import.
+**It cannot tell "the tree I built" from "the tree I reviewed."** A guard against concurrent writes
+is not a guard against publishing someone else's finished work.
+
+**So: before writing "you own X exclusively", check who else holds X — and when an agent finishes in
+a shared area, re-check before the next one starts.** The claim in the brief is the coordinator's
+assertion, not a fact about the repository. When a finding lands in a file another agent holds, **message that
 agent** rather than waiting or editing around it.
 
 ⚠️ **And check for contradictions between agents afterwards.** Two agents wrote
@@ -230,12 +251,27 @@ The short form:
    scripts/astro.mjs build` exited **127** (`command not found: _load_nvm`) **while the wrapper
    reported 0**. Only the absolute binary works:
    `/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/node`.
+   ⚠️ **`npm` IS A SHIM TOO, and the two traps collide: trap (2)'s remedy is "run `npm run build`",
+   which re-triggers trap (1).** Measured in round 59, on the coordinator, while clearing a commit
+   gate that had blocked *because* no build had run: `npm run build` printed
+   `npm:1: command not found: _load_nvm`, the wrapper reported **exit 0**, and `dist/` was **five
+   hours stale and untouched**. ⚠️ **Nothing in the output says "did not build" — the false pass is
+   silent, and it is the SECOND time this shim has produced one.** Use
+   `/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/npm`, and **check BOTH — the exit code (which is
+   meaningful once you use the absolute binary) AND `ls -ld site/dist`.** ⚠️ **`ls` alone is NOT
+   sufficient and an earlier version of this passage wrongly said it was:** `npm run build` is an
+   **eleven-step chain** and step 1 is `clean:cache`, which deletes `dist`. **So a fresh `dist` mtime
+   proves only that the chain got past step 1** — a failure at `build:pdf` or `check:links` leaves a
+   fresh-mtime, incomplete `dist` and `ls -ld` reports success. A remedy written to close one silent
+   false pass opened another.
    **(2) Astro CACHES the markdown transform.** Even with the real binary, a caption edit did not
    appear: the check reported **5 promoted captions when 17 were in the source**. `npm run build`
    runs `clean:cache` first for exactly this reason. ⚠️ **A caption or content edit verified by an
    Astro build without `clean:cache` is UNVERIFIED** — clear `.astro`, `dist`,
    `node_modules/.astro` and `node_modules/.vite`, or run `npm run build` rather than the
-   underlying script.
+   underlying script — ⚠️ **but `npm` is itself a shim, so use the ABSOLUTE npm binary named in
+   trap (1) above. Following this sentence with a bare `npm` re-triggers trap (1), and that is
+   exactly how the coordinator produced a false pass in round 59.**
 
    ⚠️ **If any `site/src/diagrams/*.mjs` changed, `build-diagrams.mjs` must run BEFORE
    `check_absolutes.py`.** That checker reads captions from `site/src/data/diagrams.json`, the
@@ -277,6 +313,25 @@ The short form:
    to voice, dropped for one long cell), and `body_contact_and_battles.md:55` — the league-level
    body-checking table — sitting at **exactly 0 rows of headroom.** `--near` lists the ones an
    ordinary edit will break.
+
+   `scripts/check_disclosures.py` reports **the corpus's own absence-of-evidence claims** —
+   *"no study was found"*, *"nobody publishes a ranking"*, *"could not be traced"* — so they can
+   be **tested**. ⚠️ **Non-negotiable 4's *"never strip an honest disclosure"* had quietly been
+   read as *"never test one"*: before round 59 they had never been attacked SYSTEMATICALLY. Testing them then began, and
+   every one tested has been false** — ⚠️ **the count moved from three to eleven inside a single
+   round, so no total is written here. Its owner is the round-59 review record's *Figures in this
+   record* section. READ THAT, never this line.** The first three were: a figure whose source was in the document's own Sources
+   list; a string said to appear *"nowhere"* on a site, on one of the five pages the sentence
+   itself named; and a page said to 404 that returns 200 and always had, with the verification
+   baseline already warning so. ⚠️ **They share nothing but DIRECTION: all three made the corpus
+   look LESS supported than it is**, which is the opposite of the failure every other convention
+   here guards against, and exactly why no reviewer stopped on them. It renders each document
+   through `md_to_speech`, because **the layer decides the cost** — a substantial minority of hits (⚠️ **58 of 498 when written; 63 of 550 on 2 September 2026 — RUN THE TOOL, never quote this line**) are in the
+   ` ```facts ` layer, voiced alone with a 300 ms break either side. ⚠️ **Its first version looked
+   for a `## Sources` heading; the trailer in this corpus HAS no heading, so it reported every
+   trailer disclosure as reaching a listener when it does not.** Also a worklist: **a true
+   disclosure is the correct state and the commonest hit**, most held when attacked, and the
+   best-phrased one in the corpus scores as a hit precisely because it is scoped.
 
    `scripts/check_zones.py` reports **shaded zone polygons that disagree about the region
    they name.** It reads the BUILT SVGs in `site/public/diagrams/`, so it sees the final

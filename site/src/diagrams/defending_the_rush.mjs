@@ -66,6 +66,9 @@ const gapAndAngle = {
     'the middle of the ice, boardside shoulder to the middle of their chest — so the only route the ' +
     'carrier can see is toward the wall, and the shaded middle is the ice being taken away, because ' +
     'shots from the slot beat goalies and shots from below the faceoff dots on the wall mostly do not. ' +
+    'That band is drawn on the two faceoff-dot lines and cut off at the top of the circles and at ' +
+    'the crease so that the shading has an edge; the middle is a lane running the length of the ' +
+    'rink, and none of those four edges is painted on the ice. ' +
     'The gap drawn here is about a stick and a half, which is the target at the red line; it is ' +
     'roughly two to three stick lengths through the neutral zone and roughly a stick length at your own ' +
     'blue line, and notice that it is slightly tighter where the two routes end than where they start, ' +
@@ -85,10 +88,39 @@ const gapAndAngle = {
     'two faceoff dots, from the top of the circles down to the front of the crease, marks the middle of ' +
     'the ice the angle is denying. The goaltender is in the crease. Nothing in the picture shows contact.',
 
-  // "The middle of the ice is the dangerous ice." The rectangle is the glossary's
-  // own geometry — between the circles, from the top of the circles to the net
-  // front — not a shape invented for the picture, and it is drawn faintly because
-  // none of it is painted on a real rink.
+  // "The middle of the ice is the dangerous ice." (§"Angle to take the middle and
+  // force them outside".) Drawn faintly, because none of it is painted on a real rink.
+  //
+  // WIDTH is the only dimension anything owns, and it is 44 ft: edge to edge on the
+  // two faceoff-dot lines. This document's own §"Backchecking lanes" says "the middle
+  // lane between the faceoff dots" in terms, and rink_map_and_glossary.md §"The
+  // neutral-zone dots" has them "44 ft apart" and "they mark the standard lateral
+  // lanes". Three other diagrams draw it on the same lines.
+  //
+  // ⚠️ THE DEPTH IS THE PICTURE'S OWN, AND NOTHING OWNS IT. The glossary defines the
+  // middle at §"Wide and middle" as "the central lane" — a lane, with no depth stated
+  // anywhere — and this document has the three lanes "running the length of the rink".
+  // So the ends drawn here (top of the circles, front of the crease) exist only so the
+  // shading has an edge, and the caption now says so, which is the disclosure
+  // nz-back-off-at-the-line already carried for the same lane drawn 44 ft deep instead
+  // of 29. check_zones.py reports those two as one label at two areas. They are not in
+  // conflict; there is nothing defined for them to conflict about.
+  //
+  // ⚠️ THIS COMMENT PREVIOUSLY READ "The rectangle is the glossary's own geometry —
+  // between the circles, from the top of the circles to the net front — not a shape
+  // invented for the picture." Both halves are false, in the direction that does damage.
+  // "Between the circles" is the glossary's wording for THE SLOT — "the lane in front
+  // of the net between the two faceoff circles" — which is about 7 ft of half-width;
+  // this band is on the DOTS at 22 ft and cuts straight through both circles. And the
+  // glossary defines no such rectangle: the shape it does define with these edges is
+  // HOME PLATE (§"The 'home plate' / high-danger area"), which runs "along the tops of
+  // the two faceoff circles, straight down the dot lines to the two faceoff dots" and
+  // then TAPERS TO THE POSTS, where this runs square to the crease. So the depth is a
+  // shape adapted for the picture, and a comment denying that is precisely what let a
+  // band labelled "the high slot" stand at 3.14x its owner's area under a caption that
+  // read correctly. breakouts.mjs makes the opposite call in the same words and is
+  // right to: it refuses to smooth its danger zone into home plate, "which would be a
+  // claim the section does not make".
   zones: [
     {
       label: 'the middle',

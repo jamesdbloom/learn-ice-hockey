@@ -377,6 +377,105 @@ and 53, and every one of them breaks **negative** claims rather than positive on
 here more than anywhere: the corpus rests **417 book-scoped "this book writes no such provision" assertions**
 (inventoried round 52, 34 of 37 documents) on exactly this kind of search.
 
+### ⚠️ A disclosure can be false, and until round 59 nothing had attacked the class systematically
+
+⚠️ **An earlier version of this heading read *"and nothing in this project has ever checked"*. That is
+FALSE.** `project/reviews/TEMPLATE.md` has carried a standing *"Disclosures re-verified and upheld"*
+section for roughly thirty rounds, and **rounds 28, 29, 30, 31, 36, 37, 39 and 53 all exercise it** —
+round 39 re-attacks three named disclosures with nine search terms and records a false negative caught
+in the act. ⚠️ **The cost of the overstatement is not pride: an author told "nothing has ever checked"
+will not go and read round 39, which specifies its search terms and is a better model than this
+section.** What round 59 was first to do was attack the class **with a tool, across the whole corpus**.
+
+**Non-negotiable 4 forbids stripping an honest disclosure, and it is right to.** An audit of ~40 found
+30-plus entirely sound, and a tidying pass once removed a *correct* fact because it looked unsupported.
+
+⚠️ **But "do not strip it" has quietly been read as "do not test it", and round 59 found one that was
+false.** `skating.md` carried, as a model disclosure with a refetch record attached:
+
+> *"A second figure of roughly **90–110 degrees** is also given for the same point in the stride, and
+> **it could not be traced to a source — it is not on the page cited for it, and not in Pagé.**"*
+
+**NTC Hockey — listed in that document's own Sources — states it verbatim:** *"maintaining a flexed
+knee (**90-110 degrees is optimal**)"*. The same page carries the extension range the document uses
+elsewhere. ⚠️ **The refetch that produced the disclosure had checked a DIFFERENT page** — the byte
+count recorded in the trailer identifies it — **and the two figures were not even "the same point in
+the stride": one is the recovery phase, the other the instant before the push begins.**
+
+**This is the `equipment.md` helmet-bulletin failure in a new place: a disclaimer written over a
+source already in the file.**
+
+⚠️ **A false disclosure is worse than a bare claim, three ways.** It **understates** what the corpus
+can support, which is the opposite of the failure everything else here guards against. It **looks
+handled**, so no reviewer scanning for unsourced claims stops on it. And it is **protected by
+non-negotiable 4**, so the instinct on meeting it is to leave it alone.
+
+**So, and this changes nothing about non-negotiable 4:**
+
+> ⚠️ **A disclosure is a CLAIM — a claim that a search was run and came back empty — and it must be
+> attacked the way any negative existence claim is attacked.** Before believing *"could not be
+> traced"*, **check the document's own Sources list first**, then the working directory, then the
+> siblings. ⚠️ **MEASURED, ROUND 59: of the disclosures falsified that round,
+> FOUR had their falsifier IN THE SOURCES LIST OF THE FILE THAT DISCLAIMED THEM.** A helmet
+> certification bulletin; a 90–110° figure; and two in `skating.md` at once — *"the outside leg's
+> contribution backwards is unsourced"*, contradicted by **both** How To Hockey (*"a push from both
+> legs"*) and Glantz, who lists the outside leg **first** of three; and *"three further steps… not
+> part of that source's method"*, where **all three are in the source**.
+>
+> ⚠️ **The coordinator wrote this rule into this guide and then failed to apply it to its own premise
+> four times in one round** — briefing four agents that a claim was unsourced folklore when the IIHF's
+> coach-development manual has a section headed *Change of Pace* and an article **already cited by
+> name thirty lines above the passage** has a heading reading *"Changing Pace Is More Dangerous Than
+> Constant Speed"*.
+>
+> **So this is not advice about diligence. It is the single highest-yield check available, and it is
+> the one everybody skips because the disclosure looks like it has already done the work.** **Correcting a false disclosure is not stripping it: it is replacing an absence claim
+> with the source.**
+>
+> ⚠️ **And when a disclosure records a refetch, record WHICH page was fetched.** The one above was
+> identifiable only because a byte count in the trailer happened to name a different document.
+
+⚠️ **AND A "HELD" VERDICT MEANS ALMOST NOTHING. Write it that way.** From the agent that found the
+**eighth** false disclosure of round 59 — one that two earlier rounds of attack had cleared, and that
+the coordinator had twice relayed to other agents as *safe*:
+
+> *"I can prove a disclosure false by finding one source; **I can never prove one true.** Every
+> 'HELD' above means 'one engine and one blog index did not falsify it', and the false disclosures
+> this round were found by people who **kept looking after someone else had written HELD**."*
+
+Its own search had been reduced to **one engine plus one blog's WordPress index** — three of its four
+search engines blocked it within minutes — and **two of its three finds came from that single blog.**
+⚠️ **A "corpus of one blog" is what most HELD verdicts here actually rest on.**
+
+⚠️ **It also named the bias that decides which disclosures get tested.** It found its falsifier
+because *"4 forwards"* is a phrase someone would put in a headline. *"Absence claims whose subject has
+no headline-shaped phrase are systematically under-tested by this method."* Its clearest example was
+an amateur-hockey absence it had "cleared" **largely because no analytics site tracks amateur hockey
+at all — which is a reason to believe the absence, not evidence that anyone looked.**
+
+**So: record what you searched, not that it held.**
+
+⚠️ **AND WHEN THE CORPUS OSCILLATES ON ONE SENTENCE, THE OSCILLATION IS THE FINDING.** Measured,
+round 59, on the tight-gap figure in `neutral_zone_systems.md`:
+
+- **HEAD** said *"Coaching resources typically describe a tight gap as roughly one to one and a half
+  stick lengths"* — a prevalence claim.
+- **A round-59 pass** replaced it with *"no published source was found for the figure"* — an absence
+  claim, and **false**: two coaching pages the corpus cites and quotes verbatim in a sibling give
+  roughly that distance.
+- **A later round-59 pass** replaced that with a third form.
+
+The reviewer that wrote the third one said the thing worth keeping: ⚠️ ***"The corpus has oscillated
+on this exact sentence three times, which is a stronger signal about the claim than any of the three
+versions."***
+
+**A sentence three passes cannot agree on is not a wording problem. It is a claim nobody can source,
+being rewritten to sound sourceable.** When you find one, say so in the review record rather than
+supplying a fourth version — and check the sibling that holds the citations before you write
+anything, because in this case it held them all along. *"Not falsified by X, Y and Z"* is a fact about
+your search. *"HELD"* is a claim about the world, and no search available here can support one.
+
+
 ⚠️ **Round 58 attacked roughly fifteen of those 417 and FALSIFIED SIX.** Recorded here because the
 kinds matter more than the count:
 
@@ -926,6 +1025,37 @@ and data blockquotes are correctly green and stay green.
 
 ## ⚠️ In a `Never:` value, an em dash may introduce a REASON but never an INSTRUCTION
 
+⚠️ **AND A CLOSE COUSIN, MEASURED THREE TIMES IN ROUND 59: A TRUE SENTENCE WHOSE NEGATION-FIRST
+STRUCTURE A LISTENER RESOLVES THE WRONG WAY.** All three were caught by rendering and reading the
+value alone, and all three read correctly in the Markdown:
+
+- *"**Charging is not scoped to checking leagues**"* — a listener hears a **carve-out**. Rewritten to
+  the positive: *"Charging binds every division, checking league or not."* ⚠️ **An earlier version said
+  "eleven sites"; that figure was copied out of an in-flight plan row describing a DRAFT wording. The tree
+  shows 8 occurrences of the rewritten sentence. Run the grep, do not quote this bullet.**
+- *"**the NHL and IIHF write no minor at all** (43.2)"* — inverts into *"no penalty"*. Rewritten to
+  a positive form. ⚠️ **The wording shown in an earlier version of this bullet appears nowhere in
+  `content/` — it was reconstructed from memory.** What `defensive_zone_coverage.md:132` actually says is
+  *"The NHL and IIHF give a check from behind no minor tier at all, so their floor is a major with a game
+  misconduct (43.2)"*, and two other documents use two further wordings.
+- *"**Both skates must not completely cross** the far blue line before the puck does"* — parsed as
+  easily to *"neither may cross"* (over-cautious, wrong) as to *"not both may cross"* (correct).
+  **FIXED 2 September 2026**, at what was then `neutral_zone_systems.md:569` (a ` ```facts ` `Rule:`
+  value, voiced alone — the worst case this guide names) and `:582` in the body. It now carries the
+  rulebook's own positive sentence, plus the divergence that form invites: an airborne trail skate is
+  onside under NHL and IIHF 83.1 and **offside** under USA Hockey 630(a) and Hockey Canada 6.11.
+  ⚠️ **THIS BULLET HAS BEEN WRONG THREE TIMES RUNNING, and that is the lesson worth keeping.** Version 1
+  said the defect was fixed when it was live. Version 2 said it was live at `:576`/`:589` — **numbers
+  that were never right for either tree**, quoting the old wording at approximately the NEW line
+  numbers. Version 3 is this one, written only after re-running every grep it cites.
+  ⚠️ **So: NEVER write a content line number into this guide. Name the document and the section.**
+  A line number in a governing document is a claim about a file that other agents are editing, and it
+  is stale before the round closes.
+
+**The test is not whether the sentence is true. It is whether a listener with no surrounding context
+can resolve the negation only one way.** When they cannot, **state the positive** — say what binds,
+what the floor is, what keeps you onside.
+
 **The single most dangerous sentence shape this corpus has found.** `md_to_speech.py` renders
 `Never:` as **"Never —"** — deliberately, so the negation reaches the verb. ⚠️ **That correct fix
 creates a trap: a second em dash in the same value is prosodically identical to the first**, so a
@@ -998,6 +1128,26 @@ component whenever you repair one of these**, because the same compression produ
 **And note how it was found: by running the renderer and READING THE OUTPUT.** No checker sees it,
 no reading of the Markdown suggests it, and the author who wrote `_label_lead` could not have
 predicted it. **`md_to_speech.py --only <doc>` is a review instrument, not just a build step.**
+
+⚠️ **AND WHEN YOU RENDER IT, USE `md_to_speech.spoken_text(path)` OR `spoken_sentences(path)`. DO NOT
+ASSEMBLE SPOKEN TEXT BY HAND.** Five separate reviewers have now reported the same phantom defect — a
+spoken *"IIHF 's"*, with a space before the possessive — **and it does not exist.** It is produced by
+one of two mistakes:
+
+1. **Joining `token.text` instead of rendering.** `" ".join(t.text for t in chunk.tokens)` is **not**
+   the spoken text; it inserts separators the renderer never emits.
+2. **Stripping SSML tags with a SPACE replacement.** The real markup is `IIHF</say-as>'s`, no space,
+   so `re.sub(r"<[^>]+>", " ", ssml)` manufactures one.
+
+**Measured on `rules_primer.md`, 2 September 2026: `"IIHF 's"` occurs 0 times with an empty
+replacement and 79 times with a space.** All 79 are artefacts of the measurement.
+
+⚠️ **Every one of those five reviewers' briefs said, in bold, to strip with an empty replacement.
+Saying it a sixth time is not the fix — the helper is.** That is the transferable lesson: when a
+warning has failed five times, the warning is not the remedy. **Remove the trap.**
+
+⚠️ **And compare the SET of sentences, not the count.** Chunk repacking moves sentence boundaries, so
+a count can change when nothing was lost, and stay equal when one sentence was swapped for another.
 
 ## ⚠️ The em dash is one of THREE shapes, and the other two have no dash at all
 
@@ -1527,12 +1677,13 @@ compare against the run before it — the number moving is the signal, not the n
 | Fact | Owner | Canonical value |
 |---|---|---|
 | Rink dimensions, lines, creases, faceoff spots, hash marks, circle radii | `rink_map_and_glossary.md` | NHL 200 × 85 ft; crease 8 ft wide × 6 ft deep; end-zone dots 20 ft from the goal line; hash marks 2 ft long, 5'7" apart, four per circle |
-| Trapezoid geometry | `rink_map_and_glossary.md` | Rule **1.8**: 8 ft from each post at the goal line → 11 ft from each post (28 ft apart) at the boards. Never take dimensions from 27.8 |
-| Gap-control distances | `defending_the_rush.md` | 2–3 stick lengths in the neutral zone → a stick and a half at the red line → one stick length at your own blue line |
+| Trapezoid geometry | `rink_map_and_glossary.md` | **NHL Rule 1.8**: *"eight feet (8') from each goal post"* at the goal line → *"eleven feet (11') from the goal post"* at the boards. With a 6 ft goal that is **22 ft and 28 ft**. ⚠️ **Never take dimensions from 27.8** — its 6-ft-from-post wording is pre-2014 and gives an 18 ft base. **IIHF Rule 1.8** gives **6.80 m and 8.60 m** — 22 ft 4 in and 28 ft 3 in. ⚠️ **The two books agree to within four inches and three inches: there is NO width divergence, and asserting one is a content critical in the document that owns regions.** **Where they DO differ is DEPTH**, and only because the goal line sits differently: NHL 1.5 puts it *"Eleven feet (11') from each end of the rink"*, IIHF 1.5 *"4.0m"* — about 2 ft 1 in deeper. ⚠️ **Both books number this rule 1.8, which is luck, not safety — name the book.** |
+| Gap-control distances | `defending_the_rush.md` | 2–3 stick lengths in the neutral zone → a stick and a half at the red line → one stick length at your own blue line. ⚠️ **Only the FIRST rung is sourced.** CrossIceHockey states *"In the neutral zone, aim to stay about two to three stick lengths from your opponent"*; **"stick and a half" returns zero from every book in `sources/` — **verified, all extractions.** ⚠️ **But an earlier version of this row also said "from every cited page", and that is FALSE:** `defending_the_rush.md:922`, the owner's own Sources trailer, quotes HockeyShare verbatim — *"D1 tries to remain **1.5 stick lengths** away from the forward in the neutral zone and about 1 length in the defensive zone"* — refetched HTTP 200 on 2 September 2026. ⚠️ **The accurate scope is that the red-line and blue-line rungs are unsourced AS LINE-ANCHORED figures; HockeyShare gives 1.5 and 1 stick lengths attached to ZONES, and the owner explains at `:143` why that does not supply them.** ⚠️ **This row caught a far miss (an IIHF metric figure) and left a near one standing on a page in its own owner's trailer — rule 6 failing inside the guide that states it.** ⚠️ **BUT THAT IS A PHRASE CENSUS AND IT MISSED A METRIC ONE.** `iihf_coachdev_off_tactics.txt:1671` — IIHF Coach Development Level I, a §21 drill sheet — prints *"Defender shadows movement of attacker while **maintaining a gap of 2.5-3 m**."* A governing-body gap figure, **in metres, so `stick length` returns 0 from that file while `gap` returns 7**. ⚠️ **It is a shadow-SKATING drill rather than a rush read, and converting its metric spacing into stick lengths and calling it the source would be exactly the derived claim this guide warns against — so it was reported and NOT written in.** The lesson is the census's, not the ladder's: **a unit is enough to hide a source.** **Eight documents carry this ladder and all point here as owner**, so the provenance limit must travel with it — the existing *"a guide, not a law"* hedge is about **applicability, not provenance**, and does not do that job. ⚠️ **Do not write that coaching guidance *commonly* puts the last two rungs anywhere: that is a sourcing claim the owner cannot support.** |
 | "Tight gap" value (one to one and a half stick lengths) | `neutral_zone_systems.md` | Note this is **not** in `defending_the_rush.md`, which was being wrongly credited with it |
 | Positional workload | `positions/center.md` | A centre works more *of* the ice (three zones, full width) — **not** more distance. Lignell et al. 2018: defencemen cover **29% more** total skating and are on the ice **47% longer**; forwards do **54% more** high-intensity skating per minute. No study separates centres from wingers on distance |
-| Shift length | `conditioning_and_recovery.md` | 30–80 s measured (Vigh-Larsen & Mohr 2024); 30–45 s well-managed. A **47.7 s** central tendency is a corpus computation, not a published figure |
-| Shift length **by position** | `positions/defender.md` | **2025-26: 49.3 s for defencemen against 47.6 s for forwards** — about a second and a half. A corpus computation from the NHL's time-on-ice report: total ice time ÷ total shifts, all situations, **every skater who took a shift** (325 D, 615 F). **Not a published figure.** ⚠️ **Three computations of NHL shift length exist in this corpus and none is a correction of another** — restate one only with the population *and* the estimator it was made with. `defender.md` on 2024-25 gives **48.7 s D / 47.4 s F**; `conditioning_and_recovery.md` runs the same season and the same report with a **41-plus-games filter** and a different estimator (per-skater `timeOnIcePerShift`, averaged) and gets **48.8 s D / 47.1 s F** — the gaps run in **opposite directions by position**, which no single mechanism explains, so the documents assert no cause; and `playing_without_the_puck.md` gives **mean 47 s, median 45 s** from 8,325 shifts across an **11-game convenience sample** via the shift-chart API, a **different endpoint** from the other two. `how_to_watch_hockey.md` reconciles that third one |
+| Shift length | `conditioning_and_recovery.md` | 30–80 s measured (Vigh-Larsen & Mohr 2024); 30–45 s well-managed. A **47.8 s** central tendency is a corpus computation, not a published figure — the unweighted mean of the per-skater `timeOnIcePerShift` field across the 597 skaters with 41+ games in 2024-25 (47.7572), recomputed 2 September 2026 |
+| Shift length **by position** | `positions/defender.md` | **2025-26: 49.3 s for defencemen against 47.6 s for forwards — a difference of 1.7 s** (1.7 **on both rounding routes** — round then subtract, or subtract then round). ⚠️ **The unrounded operands are deliberately NOT printed here: they appeared in no content document, so this guide was their only home, which is the trapezoid failure repeating. They belong in the owner's verification note.** ⚠️ **AND RESTORE WHAT A PREVIOUS EDIT OF THIS ROW DELETED: three computations of NHL shift length exist in this corpus and NONE is a correction of another — restate one only with the POPULATION and the ESTIMATOR it was made with.** The fix for a stale figure is to update it, not to delete the paragraph around it. A corpus computation from the NHL's time-on-ice report — total ice time ÷ total shifts, all situations, **every skater who took a shift** (325 D, 615 F). **Not a published figure.** ⚠️ **NEVER write “about a second and a half.”** It was carried **here, in the owner, AND in `project/pilots/keyfacts_pilot_defender.md` simultaneously** — so this was not a copy going stale, it was **three sites agreeing on a value none of them had checked against the two numbers they each printed.** A reader who subtracts the two figures in the same clause gets 1.7 and was told 1.5. |
+| On-the-fly share of shifts (**57%**) | `how_to_watch_hockey.md` — ⚠️ **for the McCurdy figure ONLY. The `OZS%`/`OZF%` definitions below are owned by `systems/game_management.md`, which is the only document in the corpus containing those strings; this row previously propagated them outward from a document that does not hold them** | ⚠️ **NEW OWNER, entered the corpus in round 59 — this row exists because the number arrived with no owner and would have propagated without one.** Micah Blake McCurdy, *Shift Starts and Ends, Part 1*, HockeyViz, 27 August 2015: *"In 2014-2015 there were roughly a million shifts, of which **57% were started on-the-fly**."* ⚠️ **CARRY ALL FOUR QUALIFICATIONS: one analyst, one season (2014-15), self-published and not peer-reviewed, and the live page is GONE — it reads from an Internet Archive snapshot.** ⚠️ **And do not confuse the two figures: 57% is the share of SHIFTS; the 58% in the same post is the share of ICE TIME.** A general-reference summary states the 58% as a share of shifts and is wrong. It matters wherever the corpus says "zone starts": **most shifts do not begin with a faceoff at all.** ⚠️ **DO NOT conclude from that, as an earlier version of this row did, that "a zone-start percentage is not a share of shifts." IT DEPENDS ON THE SITE, and the two conventions coexist on ONE site under different names.** Evolving Hockey publishes both: `OZS% = OZS / (OZS + NZS + DZS + OTF)` — which counts **a change on the fly as a zone start** and IS a share of every shift — and `OZF% = OZF / (OZF + NZF + DZF)`, which is the draws-only form. ⚠️ **Only TWO published definitions have ever been obtained here; Natural Stat Trick — the one most amateur readers actually use — returns 403 to every user-agent tried, and MoneyPuck and Hockey-Reference have not been checked.** So the corpus must tell a reader to read the glossary of the site they are on, and must NOT state which convention is usual. ⚠️ **This rule was written while the corpus violated it** — `how_to_watch_hockey.md:431` printed *"The formula **usually given** divides offensive-zone starts by offensive plus defensive zone starts"*: a prevalence claim, on a **third** denominator matching neither published definition, sourced to the same general-reference article this row records as wrong about the 58%. **Corrected 2 September 2026**; the body now states no prevalence in either direction and sends the reader to the site's own glossary. **A guide rule that forbids a sentence the corpus prints is not yet a rule — close the consequence in the same edit that raises it.** |
 | Share of the game spent off the puck | `playing_without_the_puck.md` | Use that document's figure and its stated basis; do not round it differently elsewhere |
 | Zone-entry values | `zone_entries.md` | Tulsky et al., MIT Sloan 2013, data 2011-12: 0.53–0.62 **unblocked shot attempts** per carry-in vs 0.22–0.28 per dump-in, **at 5-on-5**, **across the full 330-game sample** — they are Fenwick events, shots on goal plus misses, and the owner's body says in terms *"do not compare 0.53–0.62 shots per carry-in against a shots-on-goal rate"*, so both qualifications travel with the number; net values +0.42 carry attempt vs +0.12 dump-and-chase **from the Washington sample only** — the two tables have different populations and the scope travels with the number |
 | Carry-vs-dump **behavioural direction** | `zone_entries.md` | Tulsky's authors concluded NHL players give the puck up at the blue line **too readily** — *"teams probably could benefit from being more aggressive."* The study observed **NHL players only** and makes no claim about amateurs. The paper also self-limits: the 14% turnover rate *"would be higher in the marginal plays in question."* Two documents once drew **opposite** behavioural conclusions from this one source, because the table above owned the numbers and nothing owned the direction |
@@ -1690,6 +1841,37 @@ It survived because it had **no owner** — no document was responsible for it, 
 
 Two transferable lessons. **A claim generated once and stamped into every document is a single unsourced claim with 36 copies, not 36 corroborations** — the repetition is what disguises it. And **a finding can be genuine while the sentence stating it is wrong**, because compression drops preconditions first; when you compress an effect, check whether what you removed was the thing that made it true.
 
+⚠️ **A SECOND INSTANCE OF THE SAME SHAPE — AND THE ACCOUNT OF IT THAT STOOD HERE WAS FALSE IN FOUR
+PARTICULARS. Read this as a worked example of the guide going stale against its own corpus.**
+
+*"A change of speed beats top speed"* appears in five documents. **What the earlier version of this
+block asserted, and what is actually true:**
+
+| It said | Measured against the tree |
+|---|---|
+| the heading reads *"why a change of speed beats top speed"* | **False.** `time_and_space.md:131` reads *"why **coaching material puts** a change of speed above top speed"* — already hedged |
+| *"carries no source for it"* | **False.** `:141` carries a `Convention:` naming the IIHF coach-development manual **and** Cutting Edge Ice Academy, and the body names both |
+| *"Nothing in `sources/` bears on it either way"* | **False.** `sources/iihf_coachdev_off_tactics.txt:152` is a heading reading **`Change of Pace`** |
+| *"NOT YET RESOLVED… label all five or none"* | **Four of the five are already labelled.** `puck_handling.md` is the one that is not; `skating.md` no longer carries the claim at all |
+| eleven cited line numbers | **Five were already stale**, pointing at blank lines and a code fence |
+
+⚠️ **It is in no owner table — that part was true and is still open.** `time_and_space.md` is the
+natural owner.
+
+⚠️ **The self-contradiction was inside this same file:** four hundred lines above, this guide records
+that the coordinator briefed four agents that this claim was unsourced folklore *"when the IIHF's
+coach-development manual has a section headed Change of Pace"* — and then this block said nothing in
+`sources/` bore on it. **Both were written in the same round.**
+
+**The lesson, which is the reason this block is kept rather than deleted:** a prescription written into
+this guide is acted on by agents who will not re-derive its premise. ⚠️ **This one prescribed a
+five-document sweep that would have "corrected" four documents that were already right** — and its own
+closing warning ("the next reviewer's instinct is to make the odd one match the other four") describes
+precisely the damage its own premise would have caused.
+
+⚠️ **So: never write a line number or a count into this guide without dating it, and never prescribe a
+sweep from a census you have not re-run. Name the section, not the line.**
+
 **Qualifications travel with values.** The table above governs *numbers*; it does not by itself govern the caveats attached to them, and that gap has already produced drift. If the owner says a figure is 5-on-5 only, or an author's own computation, or measured in a different sport, that qualification is part of the fact — carry it, or link to the owner rather than restating the number bare.
 
 ---
@@ -1702,7 +1884,7 @@ Four review rounds missed it, for a structural reason worth internalising:
 
 > **A negative existence claim is unfalsifiable by ordinary review.** Checking that quoted claims match their sources can never catch a claim that no source exists. It has to be attacked directly.
 
-So, five rules:
+So, seven rules:
 
 1. **Before writing "no study exists", "could not be verified", or "untraceable" — search properly, and check the working directory and your own Sources list first.** The pattern recurred: `equipment.md` disclaimed the helmet-replacement guidance as unsourced while the Hockey Canada certification bulletin that states it *was already hyperlinked in that same file's source list* (see the note at the foot of that document). If you are about to say something can't be sourced, read your own references before you write it.
 2. **A 403 is not an absence — but a 200 is not a presence.** USA Hockey, CSA, ISO and Nature all reject WebFetch and serve fine to `curl` with a browser user-agent, so several "could not be verified" notes were artefacts of tooling rather than missing evidence. Retry before you disclaim.
@@ -1712,7 +1894,37 @@ So, five rules:
    **And check the text is actually *published*, not merely present in the HTML.** A quote attributed to a league's site — *"from co-ed to 50+, beginner to pro"* — existed only inside an **HTML comment**, in a commented-out block still advertising the **2019/20** season. It was in the source, so a naive grep found it; it was not on the page, so no reader would ever have seen it. Grepping raw HTML is not the same as reading the rendered page. Strip comments, or verify against what actually renders.
 
    **Watch for cherry-picked rows, too.** The same document quoted a programme as *"a four-session block, CAD $148.00"* — the shortest and cheapest of **ten** listings running 4–14 sessions and $148–$444, presented as the shape of the thing. A true quotation of one row is still a false picture of the page. Quote the range, or say which row you took.
-3. ⚠️ **A negative search cannot find adverse authority phrased in different words — and a
+3. ⚠️ **EVERY NEGATIVE-EXISTENCE CENSUS NEEDS A POSITIVE CONTROL — a book you KNOW contains the
+   term.** Found 2 September 2026. An agent censused five rulebooks for the slap shot and got
+   **five confident zeros** from a regex that was silently broken under BRE. ⚠️ **The conclusion
+   happened to be right and the evidence was worthless.** Nothing was printed to stderr, the exit
+   status was clean, and only knowing that CARHA has six hits and USA Hockey two revealed it.
+
+   **This is a different failure from the `ugrep` complexity-limit zero already on record.** There
+   the tool refused; here the tool worked and the pattern did not. ⚠️ **A zero is only evidence
+   once you have shown the same query returns a non-zero where it must.**
+
+4. ⚠️ **WHERE A DOCUMENT'S TRAILER LISTS *WHICH* SITUATIONS WERE READ, THE GAPS IN THAT LIST ARE
+   THE HIGHEST-YIELD PLACE TO LOOK.** Found 2 September 2026, and it is the fourth iteration of
+   the *"no exception / the only / writes no"* failure. `defensive_zone_coverage.md` said in three
+   layers that a rule was written *"only by the NHL and the IIHF — neither Hockey Canada nor USA
+   Hockey prints that sentence, so do not carry the outside-puck minor into either book."*
+   **USA Hockey Casebook Rule 614 Situation 1 answers it directly**: a defender covers the puck
+   **outside** the crease and slides in — *"Should a penalty shot be awarded? **No. The Referee
+   must assess a minor penalty.** … The location of the puck at the instant it is covered or held
+   is the determining factor."*
+
+   ⚠️ **The document's own Sources trailer records reading Casebook 625 Situations 1–17, 614
+   Situation 8, 618 Situation 1 ⚠️ **(an earlier version of this sentence also named a "614 Situation 6". A census of every `614…` and `Situation…` string in that file finds 614 Situation 8, 614 Situation 2, 618 Situation 1 and the 625 series — **there is no Situation 6, and the citation was invented**)**. It never read 614 Situations 1–4.** The
+   trailer named the gap and nobody looked at it.
+
+   ⚠️ **And the method that found it was READING FOUR ADJACENT RULINGS, not searching for a
+   phrase.** The agent wrote it against its own tooling: a grep *"cannot find a claim that is
+   conceptually wrong while every word in it is present."* **That shape has beaten every
+   automated method tried here. Reading the rulings either side of the one you cite is the only
+   thing that has worked.**
+
+5. ⚠️ **A negative search cannot find adverse authority phrased in different words — and a
    verification note built out of negative searches inherits that blindness.** Found 29 August 2026.
    A document argued that an IIHF exception stands because **neither rule contains the word
    *"only"***, and supported it with a verification note reporting four negative searches, each
@@ -1736,7 +1948,7 @@ So, five rules:
    — the exact false clearance this dimension exists to prevent."* **Read the siblings of every rule
    you cite.**
 
-4. ⚠️ **A phrase census is not a concept census, and the difference produced a confident, honestly
+6. ⚠️ **A phrase census is not a concept census, and the difference produced a confident, honestly
    obtained, wrong `0/0` in this project.** An agent searched all thirteen rulebook extractions —
    de-hyphenated and whitespace-flattened first — for *"does not leave immediately"* and
    *"possibility to stop"*, to test whether a crease-vacating stoppage existed outside the IIHF. It
@@ -1765,7 +1977,7 @@ So, five rules:
    **The closing line of the agent that found it is the rule:** ***"the negatives I did not think to
    attack by concept are the ones still standing."***
 
-5. **Never delete a claim merely because it is unsourced — source it or label it.** A tidying pass has already removed a *correct* fact from this corpus (the BNQ 9415-370 withdrawal, which was true), because it looked unsupported. Deletion is not the safe default; it is a silent way to lose information. The same applies when consolidating duplicates: check that a passage really is duplicated before cutting it. One dedupe brief would have orphaned the Rule 67.4/67.5 crease-cover material, which lived in one document only and had simply been filed under the wrong heading.
+7. **Never delete a claim merely because it is unsourced — source it or label it.** A tidying pass has already removed a *correct* fact from this corpus (the BNQ 9415-370 withdrawal, which was true), because it looked unsupported. Deletion is not the safe default; it is a silent way to lose information. The same applies when consolidating duplicates: check that a passage really is duplicated before cutting it. One dedupe brief would have orphaned the Rule 67.4/67.5 crease-cover material, which lived in one document only and had simply been filed under the wrong heading.
 
    **The one case where deleting is right: a primary source contradicts the claim, and repeating it would be unsafe.** `time_and_space.md` carried a coaching cue that contact "goes through the hands". USA Hockey's rulebook names *"the use of the hands, forearm, stick or elbow in delivering a check"* as prohibited, three separate times. That is not a coaching disagreement to be presented as a split — it describes a penalty, and a reader acting on it gets hurt or ejected. Cut it, and say in the document's notes that it was cut and why. The test is whether a **source** contradicts it, never whether a source is merely absent.
 

@@ -576,8 +576,19 @@ export default function remarkCorpus(options = {}) {
     // text containing sentence punctuation. That is the objection the old comment
     // raised against (c) and it was wrong there, because (c) ends where (b) ends;
     // it is right here. Second, measured in dist/ on 31 August 2026 it would have
-    // bought almost nothing: after the content fix above, NO warning glyph
-    // remained unmarked in visible body prose anywhere on the site. Every one
+    // bought almost nothing: AS MEASURED ON 31 AUGUST 2026, no warning glyph
+    // remained unmarked in visible body prose anywhere on the site.
+    // ⚠️ THAT IS A DATED MEASUREMENT, NOT A STANDING INVARIANT, and an earlier
+    // version of this comment stated it as one. It went stale within two rounds:
+    // a browser census on 2 September 2026 found TWO unmarked glyphs in visible
+    // body prose — one of them three lines from a fully-marked one in the SAME
+    // list item, so a reader got the lesson and its counter-example in one
+    // paragraph. Both were CONTENT defects and both were repaired. ⚠️ NEITHER was
+    // fixable by widening WARNING_NEAR_RE: one gap contained an em dash, which the
+    // character class excludes, and the other was followed by an EMPHASIS node,
+    // which the loop below skips at any distance. ⚠️ IT WILL GO STALE AGAIN THE
+    // NEXT TIME ANYONE WRITES A WARNING — re-run the census, do not trust this
+    // sentence. Every one
     // that was left sat in a facts-block value, an SVG <title>, or a sources
     // trailer inside a collapsed <details> — see below. To re-check, walk the
     // text nodes of <main> in dist/ and report every warning glyph with no

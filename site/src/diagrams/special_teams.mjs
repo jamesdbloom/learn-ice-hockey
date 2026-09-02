@@ -384,7 +384,7 @@ const pkBox = {
 
   caption:
     'The box penalty kill — four killers, shorthanded 4-on-5 — drawn against the five-man 1-3-1 ' +
-    'power play it is worst against. A rectangle around the slot: two players high, both ' +
+    'power play that counters it. A rectangle around the slot: two players high, both ' +
     'forwards, one on each side and each responsible for one point, and two low, both ' +
     'defencemen, covering the low corners and the goalmouth — a box has no single top, and if ' +
     'you find yourself describing "the top of the box" you are describing a diamond. The picture ' +
@@ -393,7 +393,9 @@ const pkBox = {
     'middle of the rectangle. The box slides with the puck rather than rotating — all four shift ' +
     'together — which is movement a still frame cannot carry, so it is not drawn. Which shape ' +
     'you run is a coaching choice and the same four players can run the box, the diamond and the ' +
-    'wedge+1 in one game: the box is simply the one almost everyone is taught first.',
+    'wedge+1 in one game: the box is simply the one almost everyone is taught first — an ' +
+    'impression from coaching sources rather than a measured share, because no public count ' +
+    'of which shape teams run as their base exists.',
 
   describe:
     'Defending half of the rink, our net at the right and our goaltender in the crease. Four own ' +
@@ -483,7 +485,22 @@ const pkDiamond = {
 
 // "three killers hold a tight triangle around the net — two defencemen just off
 // the crease edges, one forward at the mid-to-high slot — while the fourth player,
-// the '+1', chases the puck around the perimeter."
+// the '+1', pressures whoever has the puck" (:523).
+//
+// ⚠️ THIS QUOTATION USED TO END "chases the puck around the perimeter", which is
+// not a paraphrase of the section — it is the behaviour the section names as the
+// FAILURE. :523: "a +1 who simply follows the puck round the perimeter has broken
+// the shape rather than run it", and "a +1 who chases is the counter to this
+// system, not the system, and leaves you killing with three players". A comment
+// that inverts its own section is worse than one that is merely out of date,
+// because this block is the first thing an editor reads and it would have licensed
+// redrawing the route around the outside.
+//
+// The caption and the route below were always right: the route is `kind:
+// 'pressure'`, drawn straight out from the goal at the carrier, and the caption
+// says so and hedges it — because :523 also says "Exactly how he does that is
+// where published descriptions part company, so ask your coach which one you are
+// running", and lists three. Do not "reconcile" the drawing to the old comment.
 const pkWedge = {
   id: 'pk-wedge-plus-1',
   owner: 'content/systems/special_teams.md',

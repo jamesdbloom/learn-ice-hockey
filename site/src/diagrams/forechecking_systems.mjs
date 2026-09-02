@@ -35,7 +35,30 @@ const forecheck212 = {
     'The picture shows F1 taking the weak side away; how a forechecker finishes an angle is ' +
     'movement over time that a still diagram cannot carry, and is its own section. ' +
     'Whether the first pass beats F2, or F2 beats the pass, is the contest the system turns on, ' +
-    'and the diagram does not settle it.',
+    'and the diagram does not settle it. ' +
+    // SAFETY SCOPE, ruled by safety-reviewer. WHY IT IS HERE AND WHY IT IS SHORT.
+    // The long body-checking block on forecheck-122 and forecheck-131 is NOT the general
+    // treatment: it is the reader-facing half of a round-27 remedy for two routes graded
+    // Critical, and it opens by naming the route it is about ("Note what F2 is drawn doing").
+    // So it tracked those two routes' history rather than the reader's exposure -- and the
+    // section with the MOST exposure is this one, the house default, whose F1 "goes hard at
+    // the puck carrier", and whose caption carried no rule-set scope flag of any kind.
+    // Pasting the 1,187-char block here would make the warning longer than the teaching on a
+    // 994-char caption voiced as one unbroken block, so it is not pasted. What is carried is
+    // the part this PICTURE creates: the carrier is drawn behind his own net and route 2 takes
+    // him out to the wall with his back turned. Rule 43.2 and the major tier are NOT repeated
+    // here because the section's own facts block, three sentences earlier in the audio, now
+    // carries them -- see forechecking_systems.md, the 2-1-2 block.
+    // GLYPH LAST, no exceptions: remark-corpus.mjs captionNodes() promotes from the first
+    // warning glyph to the END with no closing delimiter, so anywhere but last ambers the
+    // tactical prose after it. md_to_speech.py maps the glyph away, so this is site-only.
+    // Rule text checked against sources/ this session, not carried in:
+    // USAH 604(a) prohibits body checking "in the 12 & under youth age classifications and
+    // below, all Girls'/Women's age classifications and all non-check Adult classifications";
+    // HC 7.3 "applies only in divisions of U13 and below, in female hockey, and any other
+    // divisions approved by a Member of Hockey Canada" (the rule's own sentence opens "This
+    // rule applies only..."; the elided form is the one the owning section carries inline).
+    '\u26A0\uFE0F Going hard at the carrier does not mean going through him. The carrier drawn here is behind his own net and about to turn his back to the boards, so the onus is on you as the arriving player: take the puck, take the ice, or angle him off it, and never finish into his back. Find out first whether you may body check at all \u2014 USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey, and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +
@@ -173,7 +196,16 @@ const forecheck212Stacked = {
     'F1 into the same corner is the plan or one of the standing mistakes in forechecking — so find out before your ' +
     'first shift, not during it. ' +
     'F1 and F2 are drawn arriving nowhere, because how a forechecker finishes an angle is movement over time ' +
-    'that a still frame cannot carry.',
+    'that a still frame cannot carry. ' +
+    // SAFETY SCOPE, ruled by safety-reviewer. See the note on forecheck-212 above for why this
+    // is short and why it is here at all. ONE OBJECTION ANSWERED, because it is a good one: a
+    // diagram reviewer argued a counterweight about finishing a check is "a claim the picture
+    // does not make", since the only route in this diagram belongs to the OPPOSITION carrier.
+    // True of the routes, not of the caption. The caption itself instructs "F1 and F2 both come
+    // from the same side to overload one corner", against a carrier it names as being behind
+    // his own net -- so the caption is the thing making the claim, and the counterweight is
+    // attached to the caption's instruction rather than to a route. Glyph last, same reason.
+    '\u26A0\uFE0F Sending two forwards into one corner is not a licence to go through the man in it. The carrier drawn here is behind his own net and about to turn his back to the boards, so the onus is on the arriving player: take the puck, take the ice, or angle him off it, and never finish into his back. Find out first whether you may body check at all \u2014 USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey, and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -520,8 +552,13 @@ const forecheckPinch = {
     // "A local governing body may prohibit body checking in any classification"; HC 7.3 "This rule
     // applies only in divisions of U13 and below, in female hockey, and any other divisions approved
     // by a Member of Hockey Canada"; IIHF 101.1 bodychecking in women's hockey "allowed when there
-    // is a clear intention of playing the puck", and its boards limb barring use of the boards to
-    // eliminate an opponent "provided that 'possession of the puck' remains the sole object".
+    // is a clear intention of playing the puck", and its SEPARATE boards limb: where two or more
+    // players are competing for possession "they are not allowed to use the boards to make contact
+    // with an opponent to eliminate her from the play, push her into the boards, or pin her along
+    // the boards". ⚠ An earlier version of this comment attached the proviso "provided that
+    // 'possession of the puck' remains the sole object" to that boards limb. It does not belong to
+    // it -- it qualifies the PRECEDING sentence, the push-and-lean permission -- and the boards
+    // limb has its own trigger, which is competing for the puck. Re-read in sources/ this session.
     // The second sentence is the consequence, without which the reader has a rule and no play.
     '⚠️ And in many leagues body checking is not allowed at all, so find out which book you are under before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck. Where it is barred, a pinch is a play on the puck alone and the seal against the boards is not available to you; IIHF 101.1 adds that in women\'s hockey players competing for the puck may not use the boards to eliminate an opponent, even where possession is the sole object.',
 

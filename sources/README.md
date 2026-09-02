@@ -24,7 +24,7 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 | `iihf_rules.txt` | IIHF Official Rule Book 2025/26 **v1.1, July 2025** — the edition Britain adopts ⚠️ **The on-disk file is NOT yet from this URL.** It is the repaired rbihf.be mirror extraction (MD5 `b8bc551a…`); the publisher-original `-layout` extraction is a **different file** — 662,701 bytes against 663,692. **Running `fetch_sources.sh` replaces it and shifts every `iihf_rules.txt:NNNN` citation in `project/`.** Do that deliberately, not as a side effect of a `--force` run. | [blob.iihf.com, publisher-original](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/3_the_iihf/2025-26_iihf_rulebook_22122025-v1.pdf) (see below) |
 | `iihf_rules_v1.0.txt` | IIHF Official Rule Book 2025/26 v1.0, May 2025 — superseded, kept for comparison | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) |
 | `iihf_rules_2026-27.txt` | ⚠️ **IIHF Official Rulebook 2026/27, Version 1.0, June 2026 — THE CURRENT BOOK, and the corpus does not yet describe it.** Obtained 29 August 2026; clean `pdftotext -layout`, 0 mojibake. **The corpus's IIHF layer is 2025/26 across 13 documents.** Rules 76.6 and 76.7 have been checked and **changed substantively** (see the note below); **the rest of the book has not been read.** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/rule%20book/2026-27_iihf_rule_book.pdf) |
-| `iihf_situations_2026-27.txt` | IIHF Situation Handbook 2026/27, Version 1.0, June 2026. Obtained 29 August 2026; clean extraction, 0 mojibake. **Not yet read against the corpus at all.** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2026-27_iihf_situation_handbook.pdf) |
+| `iihf_situations_2026-27.txt` | IIHF Situation Handbook 2026/27, Version 1.0, June 2026. Obtained 29 August 2026; clean extraction, 0 mojibake. **⚠️ **NO LONGER TRUE — corrected 2 September 2026.** A full situation-by-situation diff against v1.1 has now been run (**638 situations in v1.1, 644 in 2026/27**; 637 common, **513 byte-identical**, 55 substantively different), and **five documents already quote this edition accurately** — `goaltender.md` (new Situation 10.26), `uk_rules.md` and `body_contact_and_battles.md` (new 60.13), `rules_primer.md` (the 81.20→81.21 and 82.6→82.7 renumberings, both already flagged in-text), and `faceoffs.md` (new 81.18, and the warn⇒eject change at **fifteen situations across five rules**, a count independently re-parsed and confirmed). ⚠️ **The staleness ran the OTHER way: this note said the edition was unread while the corpus was already citing it correctly.**** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2026-27_iihf_situation_handbook.pdf) |
 | `iihf_situations_v1.1.txt` | IIHF Situation Handbook 2025/26 **v1.1, August 2025 — the current edition OF THE 2025/26 BOOK (the 2026/27 Handbook is the row above), and the one the corpus cites.** Obtained 29 August 2026 from the URL below; self-declares *"Version 1.1, August 2025"* at lines 9 and 8941. Clean `pdftotext -layout` extraction: **0 mojibake, 0 ligatures**. | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2025_iihf_situationhandbook_17082025-v1_1.pdf) |
 | `iihf_situations.txt` | IIHF Situation Handbook 2025/26 **v1.0, June 2025 — superseded, kept for comparison.** ⚠️ **This file came from the URL beside it, which now serves v1.1.** The publisher replaced the document behind an unchanged link: the filename said `v1_1` in July 2026 and served v1.0; in August 2026 the same URL serves v1.1. See the edition note below — four rulings changed, and one reversed. | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2025_iihf_situationhandbook_17082025-v1_1.pdf) (now serves v1.1) |
 | `nhl_rules.txt` | NHL Official Rules 2025-2026 | [media.d3.nhle.com](https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf) |
@@ -134,7 +134,7 @@ refetched, `-layout` extracted and compared against the on-disk text:
 | Check | Result |
 |---|---|
 | Rule numbers | ⚠️ **CORRECTED 1 Sep 2026 — this read "472 in each, identical sets" and is wrong on both counts.** **472 in v1.1, 470 in 2026/27.** Removed: **102.5, 102.6, 102.7, 202.7**. Added: **46.14, 46.15**. **The substantive half stands — nothing is RENUMBERED**, and no corpus citation dangles on a removed number (the corpus cites 102.1 only). |
-| ⚠️ Appendix IV table numbers | **THIS is where the −2 shift lives, and it starts at Table 9, not at any rule.** Old Tables 5/6/7 merged into one Table 5, so Table 9 and above shift by −2 — e.g. *"can be found in Table 13"* (v1.1) → *"Table 11"* (2026/27). Eleven rules' cross-references move in lockstep (16.2, 19.1, 19.4, 23.8, 24.8, 25.3, 27.8, 69.1, 69.3, 69.4, 84.3), which is the evidence it is systematic and not extraction noise. ⚠️ **A claim that "everything from Rule 22 shifts by −2" circulated in briefs this session and is FALSE** — it conflated table numbers with rule numbers. ⚠️ **NAME THE GOALKEEPER-INTERFERENCE TABLE EXPLICITLY, because a verifier citing it by number lands on the wrong rule:** it is **Table 16 in 2025/26** (`iihf_rules_v1.1.txt:9799`) and **Table 14 in 2026/27** (`iihf_rules_2026-27.txt:9899`) — and in the 2026/27 book **Table 16 is Rule 84 Overtime** (`:10278`). **A bare "IIHF Table 16" against the current book resolves SUCCESSFULLY, to Overtime.** ⚠️ **And the NHL's Table 14 is a DIFFERENT table, unaffected by any of this — do not "correct" an NHL table number to match.** Verified independently by two agents in round 58; `rink_map_and_glossary.md` already states it correctly. |
+| ⚠️ Appendix IV table numbers | **THIS is where the −2 shift lives, and it starts at Table 9, not at any rule.** Old Tables 5/6/7 merged into one Table 5, so Table 9 and above shift by −2 — e.g. *"can be found in Table 13"* (v1.1) → *"Table 11"* (2026/27). Eleven rules' cross-references move in lockstep (16.2, 19.1, 19.4, 23.8, 24.8, 25.3, 27.8, 69.1, 69.3, 69.4, 84.3), which is the evidence it is systematic and not extraction noise. ⚠️ **A claim that "everything from Rule 22 shifts by −2" circulated in briefs this session and is FALSE** — it conflated table numbers with rule numbers. ⚠️ **NAME THE GOALKEEPER-INTERFERENCE TABLE EXPLICITLY, because a verifier citing it by number lands on the wrong rule:** it is **Table 16 in 2025/26** (`iihf_rules_v1.1.txt:9799`) and **Table 14 in 2026/27** (`iihf_rules_2026-27.txt:9899`) — and in the 2026/27 book **Table 16 is Rule 84 Overtime** (`:10278`) — ⚠️ **and WORSE: the appendix there runs …13 (Rule 19), **14 (Rule 69)**, **15 (Rule 84 Overtime, `:10210`)**, **16 (Rule 84 Overtime, `:10278`)**, so a bare "Table 16" resolves silently to ONE OF TWO Overtime tables.** **A bare "IIHF Table 16" against the current book resolves SUCCESSFULLY, to Overtime.** ⚠️ **And the NHL's Table 14 is a DIFFERENT table, unaffected by any of this — do not "correct" an NHL table number to match.** Verified independently by two agents in round 58; `rink_map_and_glossary.md` already states it correctly. |
 | 27.7 / 27.8 | Restricted area still 27.7; 27.8 still "Infractions – Unique to Goalkeepers" |
 | 201.1 | Identical, heading included — the junior-ejection reading holds |
 | Corpus quotations from the IIHF book | **49 of 49 present verbatim** |
@@ -389,6 +389,12 @@ official documents, not resolved in either direction.
 > ⚠️ **AND THERE IS A THIRD CASE, WHERE NEITHER FLAG HELPS — found 28 August 2026.** The IIHF's
 > **Appendix IV, Table 16** (goalkeeper interference) interleaves its two columns **in both
 > extractions**, because the interleaving is in the PDF's own text ordering rather than in the flag.
+> ⚠️ **SCOPED, 2 September 2026: this is a property of `iihf_rules.txt` — the Ghostscript mirror —
+> and NOT of `iihf_rules_v1.1.txt`.** In v1.1 the table extracts as clean side-by-side columns and
+> **every row is legible on a single physical line**. The `sed`-range advice still stands for both;
+> the *"cannot be grepped in any extraction"* framing does not apply to v1.1. Verified by reading
+> Appendix IV in full in both files.
+>
 > Situation 6D's answer comes out as:
 >
 >     Goal is disallowed. A minor penalty is not assessed (loss of
@@ -436,6 +442,21 @@ official documents, not resolved in either direction.
 > intact text** — one reporting the rule truncated, one reporting the paragraph missing entirely —
 > **while the corpus's claim about it was correct throughout.** Near a page boundary, treat
 > "not present" as unproven until a flattened read has looked.
+>
+> ⚠️ **A FIFTH SHAPE, and flattening is powerless against it BY CONSTRUCTION — found 2 September 2026
+> by an agent that had read every warning above.** Its flattened search for `five seconds`,
+> `5 seconds` and `five (5) seconds` returned **ZERO** for Hockey Canada's line-change windows. **The
+> text is present and intact** at `hc_layout.txt:3450` and `:3453`: the book writes the **hyphenated
+> adjective** *"a five-second period"*, and breaks one instance across lines as *"this five- /
+> second"*. Flattening rejoined the hyphen break and still found nothing, **because the phrase
+> searched for was never the phrase in the book.**
+>
+> ⚠️ **The four modes above are all about the text being MANGLED. This one is about the searcher
+> being WRONG** — a plural where the book writes a singular, a noun phrase where the book writes a
+> compound adjective, a spelled number where the book writes a digit. **No normalisation can fix a
+> query that does not correspond to any string in the source.** Caught only by reading Rule 6.1(d) in
+> full rather than trusting the count. **The defence is the same as for `"reasonable time to vacate"`:
+> read the rule, do not probe it.**
 >
 > ⚠️ **And mode four reproduces in `nhl_rules.txt`, the corpus's own baseline book — found 1
 > September 2026.** A **whole page banner** sits inside a sentence of NHL Rule 80.1: flattened, it
@@ -526,3 +547,333 @@ introduced them.
 
 *(`\f` is also why a `sed` window can appear to end a rule early — see the page-furniture cases in
 the style guide. Same cause, two different symptoms.)*
+
+---
+
+## ⚠️ Mode four is now FIVE instances in FOUR books — and one of them is Hockey Canada
+
+This file previously recorded **three instances in three books** of page furniture spliced
+*inside* a sentence. Two more were found in one round, both by agents verifying a quotation
+they had every reason to expect to find:
+
+- **Hockey Canada.** `"the instant the zone is completely free of attacking players"` returns
+  **ZERO** from a whitespace-flattened `hc.txt` *and* `hc_layout.txt`, because
+  `HOCKEYCANADA.CA HOCKEY CANADA PLAYING RULES 2026-2028 81 SECTION 6 — GAME FLOW` sits
+  **inside the parenthesis**, between `the instant the` and `zone is completely free`.
+  The corpus's quotation at `rules_primer.md:193` is verbatim and correct.
+- **IIHF, smaller and therefore worse.** Rule 51.1:
+  `"a minor altercation that is not worthy of a major penalty"` returns zero from a flattened
+  `iihf_rules_v1.1.txt` because a marginal **`06`** sits inside it — *"not worthy of `06` a
+  major penalty"*. A two-character splice does not look like page furniture in a diff.
+
+⚠️ **The lesson is not "search harder". It is that a confident zero from a book that DOES
+contain the sentence is the normal case here, in every book on disk, and a negative-existence
+claim built on one is worthless.** Read the window with `sed -n`; do not trust a phrase grep.
+
+## ⚠️ `iihf_rules_2026-27.txt` RENUMBERS RULE 46 — a citation that resolves to the wrong rule
+
+**2026/27's Rule 46.3 is ALTERCATION. v1.1's Rule 46.3 is INSTIGATOR / INITIATOR**, and v1.1
+defines altercation elsewhere at `:4105`.
+
+⚠️ **So "IIHF 46.3" cited against the wrong edition does not fail — it resolves SUCCESSFULLY,
+to a different rule.** Same shape as the Table 16 → Table 14 hazard already recorded above,
+and the same defence: **never write a bare IIHF rule or table number without its edition.**
+
+## ⚠️ The IIHF's own two books use "restricted area" in OPPOSITE senses — and one of them gets a goaltender penalised
+
+- **The Rulebook means the trapezoid, where playing the puck is PERMITTED.** Appendix IV's goalkeeper
+  penalties table — Table 11 in 2026/27, **Table 13 in v1.1** — has the row *"Playing puck **outside**
+  restricted area"*.
+- **The Situation Handbook means the corners, where it is FORBIDDEN.** Situation 27.7: the goalkeeper
+  *"blocks the pass using the leg pads which is clearly **inside** the restricted area… Since the
+  goalkeeper 'plays' the puck **in** the restricted area, the goalkeeper must be assessed a minor
+  penalty."*
+
+⚠️ **A goaltender who reads the Handbook's sense has the rule exactly backwards and takes two minutes.**
+The corpus uses the Rulebook sense throughout and is correct — this is a trap for the next person
+reading the books, not a defect in `content/`.
+
+**In the same situation the Handbook prints two wrong rule numbers**, and they are recorded rather than
+repaired: it asks *"Is this a penalty to the goalkeeper under **Rule 28.8**?"* and answers *"**Rule
+27.8**."* In the 2026/27 book the restricted-area rule is **27.7**; **27.8** is *"Infractions – Unique
+to Goalkeepers"* and **Rule 28** is Supplementary Discipline.
+
+## ⚠️ Mode four, sixth instance — inside IIHF Rule 1.8, the trapezoid definition itself
+
+`sed -n '690,693p' sources/iihf_rules_2026-27.txt` puts a marginal **`01`** between *"behind the goal.
+The two 5cm-wide red"* and *"lines mark the restricted area"*. So a phrase search spanning that break
+returns a confident zero **from the rule that defines the shape** — in the same file whose Rule 51.1
+already carries a marginal `06` mid-sentence.
+
+**This is now six instances in four books.** Read the window; do not trust the phrase.
+
+## ⚠️ A false FALSIFIER: `CE mark` matches "i-ce mark-ings"
+
+Attacking a disclosure that no British certification mark appears in any rulebook, an agent probed
+`CE mark` case-insensitively and got **three hits in the IIHF book**. All three were inside
+**"i-ce mark-ings"** — the hyphenated line-wrap of *ice markings*.
+
+⚠️ **Note the direction. Every other trap in this file produces a false ZERO, which makes a true
+quotation look absent. This one produces a false HIT, which makes a TRUE disclosure look refuted** —
+and the corpus's instinct on meeting a refuted disclosure is to rewrite it. **A hyphenation artefact
+that looks exactly like the evidence that would overturn a claim is more dangerous than one that
+merely hides a sentence.**
+
+**Short search terms are where this lives.** Anchor on word boundaries, and read every hit in its
+window before believing it.
+
+## ⚠️ Which extraction you choose decides whether a TRUE quotation looks false
+
+Two measured cases, in one file, in one session:
+
+- **Hockey Canada's Glossary quotation greps in `hc.txt` and NOT in `hc_layout.txt`.**
+- **USA Hockey Casebook 637 Situation 11 returns ZERO from either, flattened** — the running heads
+  sit inside the sentence: *"trying to keep the broken stick **Playing Rules** off the ice, the
+  Referee has no choice but to assess a misconduct **CASEBOOK** penalty."*
+
+Both quotations in `equipment.md` are **verbatim and correct**. ⚠️ **An agent checking either against
+the wrong extraction would have "found" a fabricated quotation and repaired a correct one.**
+
+**Search both extractions, and read the window. A zero from one is not a finding.**
+
+## ⚠️ IIHF RULE 46 IS ENTIRELY RE-SORTED BETWEEN THE TWO EDITIONS ON DISK
+
+Not one sub-number survived. **Every shared number from 46.1 to 46.13 names a different rule**, and
+2026/27 adds 46.14 and 46.15:
+
+| | 2025/26 v1.1 | 2026/27 |
+|---|---|---|
+| 46.1 | FIGHTING / FIGHTER – WILLINGNESS TO FIGHT | FIGHTING |
+| 46.2 | ALTERCATION | AGGRESSOR |
+| 46.3 | INSTIGATOR / INITIATOR | ALTERCATION |
+| 46.4 | AGGRESSOR | CLEARING THE AREA OF A FIGHT |
+| 46.5 | DANGEROUS PUNCHER – "SUCKER PUNCHER" | CONTINUING OR ATTEMPTING TO CONTINUE A FIGHT |
+| **46.6** | **DEFENDER – UNWILLING COMBATANT** | **HELMETS** |
+| 46.7 | THIRD PLAYER IN | FIGHTING OFF THE PLAYING SURFACE |
+| 46.8 | CLEARING THE AREA OF A FIGHT | FIGHTING OTHER THAN DURING THE PERIODS OF THE GAME |
+| 46.9 | FIGHTING OTHER THAN DURING THE PERIODS OF THE GAME | FIGHTING PRIOR TO THE DROP OF THE PUCK |
+| 46.10 | FIGHTING PRIOR TO THE DROP OF THE PUCK | INSTIGATOR |
+| 46.11 | FIGHTING OFF THE PLAYING SURFACE | JERSEYS |
+| **46.12** | **HELMETS** | MAJOR PENALTY AND GAME MISCONDUCT |
+| 46.13 | JERSEYS | DANGEROUS PUNCH – "SUCKER PUNCH" |
+| 46.14 | *(absent)* | THIRD PLAYER IN |
+| 46.15 | *(absent)* | DISCIPLINARY MEASURES |
+
+⚠️ **This is the only IIHF rule known to do this, and it has already produced a defect in `content/`**:
+`equipment.md` attributed the fight-helmet sentence to **46.6**, which is correct for 2026/27 and names
+*"DEFENDER – UNWILLING COMBATANT"* in the edition that document cites throughout — and which IHUK
+adopts **by name**. The citation did not fail. **It resolved successfully, to a different rule about
+a different thing.**
+
+**Also confirmed deleted in 2026/27: Rule 202.7** (*"PROCEDURE – NON-COMPLIANCE WITH PROTECTIVE
+EQUIPMENT"*), along with 102.7 — the pair IIHF 9.12 routes junior hockey to for a ten-minute
+misconduct in v1.1.
+
+⚠️ **Verified NOT renumbered, because a first pass wrongly said they were:** 27.6, 27.7, 56.1, 67.2,
+60.2, 9.5, 48.3, 73.2, 84.1 and 87.2 are **identical in both editions.** A heading-regex census
+reported them as edition-only and would have sent agents to 98 sites that are fine. ⚠️ **A census of
+this kind must be verified number by number against the book before anyone acts on it** — the
+false-positive rate here was roughly nine in ten.
+
+## ✅ CRT6 IS NOW VERIFIED — read visually from the PDF, because no extraction can reach it
+
+`sources/crt6.txt` is **1,535 bytes from a 6.3 MB PDF**, and `pdftotext -layout` reproduces the same
+1,535 bytes. `concussion` and `helmet` both return **zero**. The content pages are **images**. No OCR
+tool is installed on this machine — `tesseract`, `ocrmypdf`, `qpdf`, `mutool` and `gs` are all absent;
+only `pdfimages` exists.
+
+⚠️ **So for as long as the corpus has cited CRT6 — its single highest-consequence citation — nobody
+could check it, and at least three agents said so in their reports.**
+
+**It can be read visually.** The PDF renders as two pages and every claim the corpus makes about it is
+**confirmed verbatim**, checked 2 September 2026:
+
+- **The ten Red Flags**, and there are exactly ten: neck pain or tenderness · seizure, 'fits', or
+  convulsion · loss of vision or double vision · loss of consciousness · increased confusion or
+  deteriorating conscious state (becoming less responsive, drowsy) · weakness or numbness/tingling in
+  more than one arm or leg · repeated vomiting · severe or increasing headache · increasingly
+  restless, agitated or combative · visible deformity of the skull.
+- **The five "Remember" instructions**, and there are exactly five.
+- ⚠️ **The one that matters most: *"Do not remove helmet (if present) or other equipment."*
+  VERBATIM, AND IT CARRIES NO EXCEPTION.** The corpus insists on this and the corpus is right.
+- ⚠️ **And the corpus's finer point is right too.** The neighbouring instruction — *"Do not attempt to
+  move the athlete (other than required for airway support) unless trained to do so"* — **does** carry
+  two exceptions. **Both exceptions belong to the MOVING instruction. Neither reaches the helmet.**
+  That distinction is stated in `body_contact_and_battles.md` and is exact.
+- *"Assume a possible spinal cord injury in all cases of head injury."* Verbatim.
+- The free-to-copy licence line, verbatim, including that alteration and commercial sale are barred.
+
+**Material on page 2 the corpus may not carry** — an athlete with suspected concussion should **NOT**
+*"be left alone initially (at least for the first 3 hours)"*, *"be sent home by themselves"*, drink
+alcohol or take drugs not prescribed by their HCP, or *"drive a motor vehicle until cleared to do so
+by a healthcare professional"*. **Reported here, not written into `content/` by the coordinator.**
+
+⚠️ **THE TRANSFERABLE POINT: an image-only PDF is not unverifiable, it is unGREPPABLE.** Three
+reports in one round said CRT6 *"cannot be verified from disk"*. That was true of every text tool and
+false of the document. **When extraction returns page furniture and nothing else, read the pages.**
+
+## ⚠️ THREE FILES ON DISK ARE FAILED EXTRACTIONS, NOT ONE — measured by text-to-PDF ratio
+
+| file | PDF | extracted text | ratio |
+|---|---:|---:|---|
+| `iihf_rules_v1.1` | 3.9 MB | 664 KB | 16.9% |
+| `iihf_coachdev_off_tactics` | 750 KB | 82 KB | 11.0% |
+| `eiha_inhouse` | 374 KB | 31 KB | 8.3% |
+| `nhl_rules_2024-25` | 12.7 MB | 719 KB | 5.7% |
+| `ibc` | 2.4 MB | 77 KB | 3.2% |
+| ⚠️ **`ukcg`** | **14.5 MB** | **72 KB** | **0.50%** |
+| ⚠️ **`crt6`** | **6.3 MB** | **1.5 KB** | **0.024%** |
+| ⚠️ **`heo_intl_drill_symbols`** | **310 KB** | **30 bytes** | **0.010%** |
+| `bvhs` | 6.3 MB | 75 KB | 1.18% |
+
+**A ratio under about 0.5% means the document is images.** Run this check before trusting any negative
+drawn from a `sources/` file.
+
+## ⚠️ SEARCH-FAILURE MODE SIX: LETTER-SPACED TEXT — a phrase search finds a fraction of the truth
+
+`ukcg.txt` (UK Concussion Guidelines for Non-Elite Sport, cited by `uk_rules.md` and
+`conditioning_and_recovery.md`) sets its headings letter-spaced. The extraction reads:
+
+> `I F I N D O U B T,  S I T  T H E M  O U T`
+
+Measured: **`"if in doubt"` returns 5 hits whitespace-flattened and 29 with ALL whitespace stripped.**
+`"sit them out"`: **5 against 29.** ⚠️ **So a flattened search finds about one occurrence in six, and
+reports a number that looks like a real count.** The document's own strapline is among the ones it
+misses.
+
+⚠️ **This is worse than a plain zero**, which at least announces itself. **A partial count invites a
+"the source mentions it only twice" claim that is simply false.** Compare a whitespace-stripped,
+letters-only form as well, and reconcile the two counts before quoting either.
+
+## The `heo_intl_drill_symbols` PDF is the corpus's NOTATION AUTHORITY, and it extracts to 30 bytes
+
+The whole file is one page of glyphs against labels — read visually, 2 September 2026:
+
+| symbol | means |
+|---|---|
+| Ⓒ | Coach |
+| **G** | Goaltender |
+| ● ○ (filled / open circle) | **Forward / Player** |
+| ▲ △ (filled / open triangle) | **Defender / Player** |
+| **dashed** circle / triangle | **Player position at the END of the repetition** |
+| solid arrow | Forward skating |
+| wavy line | Backward skating |
+| hatched line | Lateral crossovers |
+| wavy with a hook | Pivoting |
+| wavy with an arrow | Skating with control of the puck |
+| dashed arrow | Passing |
+| double-line arrow | Shooting |
+| line ending in a double bar | Stopping |
+| wavy with a cross-tick | Drop pass |
+| **line ending in a T-bar** | **Checking pressure** |
+| **X** | **Pylon** |
+| a cluster of dots | Cluster of pucks |
+
+**This corroborates the corpus's core axis** — circle = forward, triangle = defender, `G` for the
+goaltender, dashed arrow = pass — which a census measured at **328 circles, 183 triangles, 104 bare
+`G`, 615 glyphs, 0 pylons**. ⚠️ **Two entries nobody has checked the corpus against: the standard's
+DASHED outline for *"player position at the end of the repetition"*, and its `X` for a pylon.** If the
+corpus uses a dashed outline for anything else, it collides with the standard.
+
+## Hockey Canada writes almost no suspensions into its playing rules — check before asserting one
+
+Measured 2 September 2026, with a positive control proving the extraction is sound (`Game Misconduct`
+**148** hits, `Match penalty` **75**, `Gross Misconduct` **38**, `Game Incident Report` **8**):
+
+⚠️ **The word `suspension` appears exactly TWICE in `hc_layout.txt`, and neither instance imposes
+one.** One is Rule 2.2(l) — *"No player under suspension may participate in the pre-game warm-up"* —
+which **presupposes** suspensions without creating them; the other is a fragment.
+
+Hockey Canada's Glossary defines a game misconduct as *"A non-timed penalty that does not result in
+the offending team playing shorthanded. The offending player will be removed from the game."* The
+consequence beyond the game runs through a **Game Incident Report** to *"the appropriate Member or
+league delegate"*.
+
+**So a Hockey Canada tariff is not in the rulebook and cannot be quoted from it.** Compare:
+
+| book | what a game misconduct costs beyond the game |
+|---|---|
+| **USA Hockey 404(b)** | **automatic** next-game suspension, in the playing rules; minimum two under 403(b) |
+| **CARHA 32(d)** | **automatic one game**, but only where the GM follows a **Major**, *"other than the Accidental High Stick Rule"* |
+| **IIHF 23.1 / 23.2** | balance of the game; further measures **discretionary** — the Proper Authorities have *"full power to impose"*, via Rule 28 and the **IIHF Disciplinary Code, not on disk** |
+| **Hockey Canada** | **not written** — a Game Incident Report to the Member or league delegate |
+
+⚠️ **Two of the four route the tariff to a document this repository does not hold.** A sentence saying
+what a game misconduct "costs" in all four books cannot be sourced from the four books.
+
+## ⚠️ A NEGATIVE CONTROL ON A NONSENSE URL — the technique that stopped a false falsification
+
+`edge.nhl.com/en/skater/passing` returns **HTTP 200, 84,123 bytes**, titled *"Skater Stat Leaders |
+NHL EDGE"*. Against a corpus disclosure saying NHL EDGE publishes no pass-speed data, that reads as a
+falsification.
+
+⚠️ **It is not, and the way that was established is the point.** The agent fetched
+**`edge.nhl.com/en/skater/BANANAFISHZZZ`** — a URL that cannot exist — and got **200 with the
+identical title**. So do `/en/glossary` and `/api/v1/skater/leaders`. The stat categories are
+client-rendered: `Skating Speed`, `Shot Speed`, `Zone Time` and `Pass` occur **0 times** in the
+served HTML.
+
+**Conclusion: a status code from `nhl.com` or `edge.nhl.com` carries no information about whether a
+page exists.** This is the same shape as the fifteen soft-404s already recorded above — **but at a
+different byte size, so the size heuristic that catches those would not catch this.**
+
+⚠️ **Make the negative control standard.** Before treating any 200 as evidence a page exists, fetch a
+sibling URL that cannot exist. If it also returns 200, the status code is worthless on that host and
+only the rendered body counts. **It costs one request and it is the only thing that separates "the
+page is there" from "the server always says yes."**
+
+## ⚠️ EACH BOOK HAS A HOUSE WORD, AND SEARCHING WITH THE WRONG ONE PRODUCES A CONFIDENT ZERO
+
+Measured, and it has now caused two false "this book is silent" reports in one round:
+
+| | `goalkeeper` | `goaltender` |
+|---|---:|---:|
+| NHL | many | many |
+| **Hockey Canada** | **4** | **349** |
+| USA Hockey | 262 | — |
+| USA Hockey Casebook | 725 | — |
+
+⚠️ **A Hockey Canada search for `goalkeeper` returns four hits from a book with 349 uses of the
+concept.** The coordinator reported Hockey Canada as carrying no goalkeeper-equipment prohibition on
+exactly that basis. **It carries one — Rule 2.2(g), and without the incapacity condition the NHL and
+USA Hockey attach.** CARHA carries it too, at 16(f), also unconditional.
+
+**Other measured house-word divergences:**
+
+- **CARHA writes `cross bar`, two words**, where every other book closes it. A `crossbar` census
+  returned zero **with a working NHL positive control of 16** and was still a false negative.
+- **The NHL writes `racial taunts or slurs`; the IIHF writes `racial slurs or taunts`.** A search for
+  `racial slur` returns **0** from a book that contains the concept. **A word-order difference is
+  enough.**
+- `hybrid` (icing) appears **0 times in the NHL book and 0 in the IIHF book**. It is **Hockey
+  Canada's** word (6.7(e), 10 hits) and **USA Hockey's** (1). A corpus sentence calling the NHL rule
+  "hybrid icing" is using a word the NHL does not.
+
+⚠️ **THE RULE THIS EARNS: a positive control must run on the book being searched, in that book's own
+words.** A control on a *different* book proves only that your regex compiles. **Find the book's own
+term for the thing first — search a phrase you know is in it, and read what it calls the noun.**
+
+## ⚠️ THE IIHF SPORT REGULATIONS CANNOT BE FETCHED FROM HERE — attempted 2 September 2026
+
+**IIHF Rule 5.6 explicitly defers to them**: *"For more information refer to **IIHF Sport
+Regulations**."* That is the document holding whatever consequence follows a warm-up incident being
+*"reported to the Proper Authorities"* — the limb that, for a British reader, **replaces the penalty
+the other books assess.**
+
+**What was tried and what came back:**
+
+| | result |
+|---|---|
+| `blob.iihf.com/.../iihf_sport_regulations_2025_26.pdf` | **404**, 215 bytes, `application/xml` |
+| `iihf.com/en/statichub/8305/rules-and-regulations` | **200, 47,528 bytes — a JavaScript shell.** One PDF link in the whole document, and it is not the Sport Regulations. No occurrence of the string *"Sport Regulation"* anywhere in the served HTML. |
+
+⚠️ **So the 200 is worthless here, exactly like `records.nhl.com` and `edge.nhl.com`.** A checker
+reading the status would call the hub reachable and conclude the document is available.
+
+**Consequence, stated rather than implied:** every sentence in this corpus about what follows an
+IIHF *"report to the Proper Authorities"* is bounded by a document nobody here has read. **The
+corpus says so; do not let a later pass quietly upgrade it.** Also unheld and unsearched: IIHF and
+Hockey Canada bylaws, league supplementary discipline, association concussion protocols, and the
+**BVHS goalie manual**, which is linked in `goaltender.md`'s own Sources and would close the last
+unread mechanical-risk surface in that file.
+

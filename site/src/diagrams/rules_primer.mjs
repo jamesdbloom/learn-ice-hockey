@@ -72,7 +72,7 @@ const OWN_DOT = 'faceoff-dot:left:far';       // (-69, -22) — a spot in our ow
 // neutral-zone spot below him, so the carry wave and the marker do not overlap.
 const OFF_CARRIER = { at: NZ_DOT, dx: -13, dy: 12 };        // (7, 34)
 const OFF_CARRY_TO = { at: ATT_BLUE, dx: 10, dy: 34 };      // (35, 34)
-// "If your defenceman fired it in from his own end." Placed outside the marked
+// "If your defenceman fired it in from behind his own net" (:236). Placed outside the marked
 // spot rather than on it — a player standing in the box that marks where the draw
 // goes reads as a player taking the draw.
 // M3 (diagram-reviewer): at (-77,-32) the passer stood 12.8 ft from the marked spot, so

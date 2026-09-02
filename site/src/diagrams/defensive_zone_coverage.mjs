@@ -164,7 +164,11 @@ const theHouse = {
     'The house, or home plate — the region every defensive-zone system ' +
     'exists to protect: bounded by the two goalposts, widening out to the two end-zone ' +
     'faceoff dots and up to the top of the two faceoff circles. ' +
-    'Almost all goals come from inside it, so the problem every system solves is how to ' +
+    'The most dangerous chances come from inside it — a shot from in there is worth several ' +
+    'times the same shot from outside, which is the part every source agrees on, while how ' +
+    'much of the scoring it accounts for depends on whose figure you take and the counted ' +
+    'ones are more modest than the versions repeated in dressing rooms. ' +
+    'So the problem every system solves is how to ' +
     'allocate five bodies so that it is never open while still leaving somebody available ' +
     'to receive an outlet pass. A shape that packs all five players onto the goal line ' +
     'protects the house beautifully and has nobody available to receive that pass, so you ' +
@@ -469,7 +473,14 @@ const walkDownMan = {
     // whoever is low and around the net" — here the corner and the net front.
     { id: 'D', pos: 'D', at: { at: 'corner:right', dy: -8 }, label: 'on the corner' },
     { id: 'D', pos: 'D', at: D_GOALMOUTH,                    label: 'on the net front' },
-    // "The centre takes the third forward, often the one supporting on the wall."
+    // "The centre takes the third forward, often the one supporting on the wall or
+    // in the slot" (:229 and :235, which read identically). BOTH locations, and the
+    // quote here used to stop at "on the wall." with a full stop the document does
+    // not have — a truncation that read as the section naming one place when it
+    // names two. The picture draws the wall because the opposition third forward is
+    // drawn on `half-wall:left`; that is ONE instance of the convention, not the
+    // convention. If that opponent ever moves to the slot, this centre moves with him
+    // and nothing here needs rewording.
     { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward' },
     { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with him' },
     { id: 'W', pos: 'F', at: W_WEAK_PT,                       label: 'on the other D' },
@@ -497,7 +508,7 @@ const walkDownMan = {
 // The box's corners are the section's own words — "two low near the posts, two
 // higher near the tops of the circles" — and the comparison table pins the high
 // pair's DEPTH exactly: "The two high box players sit at the tops of the circles,
-// roughly 29 feet below the point". The blue line is x = 25 and the top of the
+// roughly 29 feet below the blue line". The blue line is x = 25 and the top of the
 // circle x = 54, so x = 54 IS the section's 29 feet. Nothing is rounded into place.
 //
 // WHAT THE SECTION DOES NOT FIX is how wide the two high players stand, and the
@@ -522,7 +533,7 @@ const boxPlusOne = {
     'beginner adults, and one of several systems rather than how defensive hockey is ' +
     'generally played. ' +
     'Four players form a box around the slot, two low near the posts and two at the tops of ' +
-    'the circles about 29 feet below the point, and the fifth — the "+1" — is the only one ' +
+    'the circles about 29 feet below the blue line, and the fifth — the "+1" — is the only one ' +
     'who chases the puck. ' +
     'It is not a penalty-kill box: that is four players, two high and two low, and this is a ' +
     'five-man even-strength shape. Same word, different thing. ' +
@@ -563,7 +574,7 @@ const boxPlusOne = {
     // says where the low pair stand.
     { id: 'D',  pos: 'D', at: BOX_LOW_R },
     { id: 'D',  pos: 'D', at: BOX_LOW_L },
-    { id: 'F',  pos: 'F', at: BOX_HIGH_R, label: '29 ft below the point' },
+    { id: 'F',  pos: 'F', at: BOX_HIGH_R, label: '29 ft below the blue line' },
     { id: 'F',  pos: 'F', at: BOX_HIGH_L },
     // "the fifth player, the '+1', is the only one who chases the puck". Which of
     // the five it is changes with the puck — the section says the role "passes to

@@ -399,6 +399,13 @@ LEXICON: tuple[tuple[str, str], ...] = (
     ("CF%", "C F percent"),
     ("FF%", "F F percent"),
     ("xGF%", "expected goals for percentage"),
+    # ⚠️  xGoals MUST sit here, ABOVE the bare "xG". Substitution is an unbounded replace, so
+    # "xG" rewrites the "xG" inside "xGoals" and leaves "expected goalsoals" -- a NON-WORD.
+    # It was live twice in how_to_watch_hockey.md, ONE OF THEM INSIDE A DIRECT QUOTATION of
+    # MoneyPuck's glossary, and the self-test's 258 assertions did not reach it. Same defect
+    # class as "ten minutes forty-five secondspm". Ordering is exactly how xGF% above already
+    # survives -- this is that trick applied one token earlier.
+    ("xGoals", "expected goals"),
     ("xG", "expected goals"),
     # ⚠️ D-to-D is NOT here. LEXICON is plain str.replace with no word
     # boundaries, and "forward-to-defence" contains "d-to-d" -- it was voicing
@@ -764,7 +771,7 @@ def _rule_citation(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {label} {_clause_words(clause)}"
+        out += f", {label} {_clause_words(clause, match.string)}"
     # ⚠️ THE THIRD CODE PATH. `_bare_clause` and `_usa_clause_citation` gained
     # clause-tail handling first; this one -- the form WITH the word "Rule" --
     # was missed, so `Rule 8.1(c)/(d)` still dropped its second clause while
@@ -772,9 +779,31 @@ def _rule_citation(match: re.Match) -> str:
     return out + _clause_tail(match.groupdict().get("more"))
 
 
-def _clause_words(clause: str) -> str:
+#: ⚠️ `(i)` IS GENUINELY AMBIGUOUS AND BOTH READINGS ARE WRONG SOMEWHERE.
+#: In an NHL or IIHF sub-clause run it is roman ONE -- 39.2(i), 39.4(iii),
+#: 63.2(viii). In a Hockey Canada or USA Hockey run it is the LETTER i, sitting
+#: between (h) and (j) -- Hockey Canada 2.2(i) and 2.2(j) are the warm-up
+#: half-ice and warm-up-penalty clauses, cited side by side in `shooting.md`.
+#:
+#: Measured over `content/` on 2 September 2026: **30 occurrences sit in a roman
+#: run (an (ii)/(iii)/(iv)/(v) within 90 characters) and 4 in an alphabetic run
+#: (an (h) or (j) within 90 characters).** So roman is the right DEFAULT and the
+#: fix has to be narrow -- a blanket switch would break thirty citations to
+#: repair four.
+#:
+#: ⚠️ Found by a reviewer that noticed `2.2(i)` rendering as "clause one" while
+#: `2.2(j)` two words later rendered as "clause j". Nothing else could have seen
+#: it: both readings are well-formed English and the Markdown is correct.
+ALPHABETIC_CLAUSE_NEIGHBOUR = re.compile(r"\((?:h|j)\)")
+
+
+def _clause_words(clause: str, context: str = "") -> str:
     lowered = clause.lower()
     if lowered in ROMAN_TO_INT:
+        # ⚠️ Only `i` is ambiguous; `ii`, `iii`, `iv` and `v` have no alphabetic
+        # reading in a clause list, so they never take this branch.
+        if lowered == "i" and ALPHABETIC_CLAUSE_NEIGHBOUR.search(context):
+            return "i"
         return int_to_words(ROMAN_TO_INT[lowered])
     if clause.isdigit():
         return int_to_words(int(clause))
@@ -924,7 +953,7 @@ def _clause_tail(more: str | None) -> str:
             joiner = " to"
         else:
             joiner = ","
-        out += f"{joiner} clause {_clause_words(m.group('clause'))}"
+        out += f"{joiner} clause {_clause_words(m.group('clause'), m.string)}"
     return out
 
 
@@ -938,7 +967,7 @@ def _bare_clause(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {label} {_clause_words(clause)}"
+        out += f", {label} {_clause_words(clause, match.string)}"
     return out + _clause_tail(match.groupdict().get("more"))
 
 
@@ -1084,7 +1113,7 @@ def _usa_clause_citation(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {label} {_clause_words(clause)}"
+        out += f", {label} {_clause_words(clause, match.string)}"
     out += _clause_tail(match.groupdict().get("more"))
     return out
 
@@ -1228,6 +1257,26 @@ def _volume_pages(match: re.Match) -> str:
     """
     volume, first, last = match.group(1), match.group(2), match.group(3)
     return f"{int_to_words(int(volume))}, {int_to_words(int(first))} to {int_to_words(int(last))}"
+
+
+def _time_of_day(match: re.Match) -> str:
+    """'10:45pm' -> 'ten forty-five p m'. A TIME OF DAY, not a game clock.
+
+    ⚠️ Without this the `clock-time` rule reached it and produced
+    **"ten minutes forty-five secondspm"** -- a non-word -- in a ` ```facts `
+    value voiced alone with a 300 ms break either side. Guarding `clock-time`
+    alone was not enough: it left the colon behind as "ten:forty-five p m".
+    """
+    hour, minute, suffix = match.group(1), match.group(2), match.group(3)
+    spoken_hour = int_to_words(int(hour))
+    if minute == "00":
+        spoken_minute = " o'clock"
+    elif minute.startswith("0"):
+        spoken_minute = f" oh {int_to_words(int(minute))}"
+    else:
+        spoken_minute = f" {int_to_words(int(minute))}"
+    marker = " a m" if suffix.lower().startswith("a") else " p m"
+    return f"{spoken_hour}{spoken_minute}{marker}"
 
 
 def _clock(match: re.Match) -> str:
@@ -1920,6 +1969,17 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "journal 11:34-41 is a page range, not eleven minutes thirty-four seconds",
     ),
     Rule(
+        "time-of-day",
+        # ⚠️ MUST RUN BEFORE `clock-time`. Found 2 September 2026 by a reviewer
+        # that rendered the corpus and READ the output -- no checker renders, and
+        # the Markdown reads perfectly. `10:45pm` is currently the only wall-clock
+        # time in `content/`, so the exposure was two lines; the rule exists so
+        # the next one is not a non-word either.
+        re.compile(r"(?<![\d:.])(\d{1,2}):(\d{2})\s?([ap])\.?m\.?\b", re.IGNORECASE),
+        _time_of_day,
+        "10:45pm -> 'ten forty-five p m', not 'ten minutes forty-five secondspm'",
+    ),
+    Rule(
         "clock-time",
         # ⚠️ The lookbehind excludes a DOT as well as a digit and a colon, because
         # a standards number ends in one: `CSA Z262.1:15` was voiced as "CSA Z two
@@ -1930,7 +1990,20 @@ NOTATION_RULES: tuple[Rule, ...] = (
         #
         # A real clock time is never preceded by a dot: a sentence-final period is
         # followed by a space, and "2:00" after "Fig." would be a citation anyway.
-        re.compile(r"(?<![\d:.])(\d{1,3}):(\d{2})(\.\d+)?(?![\d:])"),
+        # ⚠️ AND NEVER FOLLOWED BY am/pm -- THAT IS A TIME OF DAY, NOT A CLOCK.
+        # Found 2 September 2026 by a reviewer that rendered the corpus and read
+        # the output. `forechecking_systems.md` says "the one everybody actually
+        # remembers at 10:45pm on a Tuesday", in the body AND in a ```facts value
+        # voiced alone with a 300 ms break either side. It came out as
+        # **"ten minutes forty-five secondspm"** -- a non-word, in the layer with
+        # no surrounding context to repair it.
+        #
+        # A corpus-wide search confirms `10:45pm` is the ONLY wall-clock time in
+        # `content/`, so those two lines were the entire exposure -- but the rule
+        # would have mangled the next one too, and nothing would have caught it:
+        # no checker renders, and the Markdown reads perfectly.
+        re.compile(r"(?<![\d:.])(\d{1,3}):(\d{2})(\.\d+)?(?![\d:])(?!\s?[ap]\.?m\.?\b)",
+                   re.IGNORECASE),
         _clock,
         "2:00 -> 'two minutes'; 1:01.4 -> 'one minute one point four seconds'",
     ),
@@ -3372,6 +3445,54 @@ def _exceeds_limits(tokens: Sequence[Token]) -> bool:
     return billed > MAX_BILLED_CHARS or total > MAX_TOTAL_CHARS
 
 
+def spoken_text(path: Path, doc_id: str | None = None, source_label: str | None = None) -> str:
+    """Return exactly what a listener hears, for a document on disk.
+
+    ⚠️  USE THIS. Do not assemble spoken text by hand.
+
+    Five separate reviewers have now reported the same phantom defect -- a spoken
+    ``"IIHF 's"`` with a space before the possessive -- and it does not exist. It is
+    produced by one of two mistakes, both of which this function removes:
+
+      1. Joining ``token.text`` instead of rendering. ``" ".join(t.text for t in
+         chunk.tokens)`` is NOT the spoken text; it inserts separators the renderer
+         never emits.
+      2. Stripping SSML tags with a SPACE replacement. The real markup is
+         ``IIHF</say-as>'s`` with no space, so ``re.sub(r"<[^>]+>", " ", ssml)``
+         manufactures one.
+
+    Measured on ``rules_primer.md`` on 2 September 2026: ``"IIHF 's"`` occurs **0**
+    times with an empty replacement and **79** times with a space. Every one of those
+    79 is an artefact of the measurement.
+
+    ⚠️  The brief for each of those five reviewers said, in bold, to strip with an
+    empty replacement. Saying it again is not the fix; this function is.
+    """
+    # ⚠️  ACCEPT A STRING. Every brief in round 59 told reviewers to call this as
+    # ``spoken_sentences('content/foo.md')``, and that raised
+    # ``AttributeError: 'str' object has no attribute 'stem'`` -- so the ONE helper
+    # written to stop reviewers hand-rolling a tag-strip refused the call the briefs
+    # prescribed. Agents worked around it silently and nobody reported it; it was
+    # found by the coordinator running its own brief's snippet verbatim.
+    path = Path(path)
+    doc_id = doc_id or path.stem
+    source_label = source_label or str(path)
+    chunks, _report = transform_document(path, doc_id, source_label)
+    return re.sub(r"<[^>]+>", "", " ".join(build_ssml(c) for c in chunks))
+
+
+def spoken_sentences(path: Path, doc_id: str | None = None,
+                     source_label: str | None = None) -> list[str]:
+    """The spoken text split into sentences -- for set-diffing an edit.
+
+    ⚠️  Compare the SET, not the count. Chunk repacking moves sentence boundaries, so
+    a count can change when nothing was lost, and a count can stay equal when a
+    sentence was swapped for a different one.
+    """
+    text = spoken_text(path, doc_id, source_label)
+    return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+
+
 def build_ssml(chunk: Chunk) -> str:
     body = render(chunk.tokens)
     body = re.sub(r"(</p>|/>)(?=<)", r"\1\n", body)
@@ -3600,6 +3721,13 @@ def print_report(reports: Sequence[DocReport]) -> None:
 
 def self_test() -> int:
     cases: tuple[tuple[str, str], ...] = (
+        # ⚠️ A LEXICON ENTRY THAT ATE A LONGER TOKEN. "xG" -> "expected goals" is an
+        # unbounded replace, so "xGoals" rendered as "expected goalsoals" -- a NON-WORD,
+        # live twice in how_to_watch_hockey.md, ONE OF THEM INSIDE A DIRECT QUOTATION of
+        # MoneyPuck's glossary. 258 assertions did not reach it; it was found by a
+        # reviewer rendering the corpus and reading it. The fix is ORDER, not a regex.
+        ("xGoals is the column", "expected goals is the column"),
+        ("an xG of 0.4", "an expected goals of nought point four"),
         ("Rule 63.2(viii)", "Rule sixty-three point two, clause eight"),
         ("Rule 81.6", "Rule eighty-one point six"),
         # ⚠️ Two seasons joined by "to": each half was expanded separately, so the
@@ -3738,6 +3866,22 @@ def self_test() -> int:
         # to be CONTIGUOUS, so a space is what protects these.
         ("a 22:30 puck drop", "a twenty-two minutes thirty seconds puck drop"),
         ("period 2:00", "period two minutes"),
+        # ⚠️ A TIME OF DAY IS NOT A GAME CLOCK. Before the `time-of-day` rule,
+        # `10:45pm` came out as "ten minutes forty-five secondspm" -- a non-word,
+        # in a ```facts value voiced ALONE. Guarding `clock-time` alone left
+        # "ten:forty-five p m". Found by rendering the corpus and reading it.
+        ("remembers at 10:45pm on a Tuesday",
+         "remembers at ten forty-five p m on a Tuesday"),
+        ("faceoff at 7:00 pm", "faceoff at seven o'clock p m"),
+        # ⚠️ `(i)` IS AMBIGUOUS. Roman ONE in an NHL/IIHF sub-clause run, the
+        # LETTER i in a Hockey Canada/USA Hockey run between (h) and (j).
+        # Measured: 30 roman occurrences against 4 alphabetic in `content/`, so
+        # roman is the default and the alphabetic case is detected from context.
+        ("Hockey Canada 2.2(i) and 2.2(j) apply",
+         "Hockey Canada two point two, clause i and two point two, clause j apply"),
+        ("NHL Rule 39.2(i) and 39.4(iii)",
+         "NHL Rule thirty-nine point two, clause one and thirty-nine point four, clause three"),
+        ("the 6:05am skate", "the six oh five a m skate"),
         ("1:01.4", "one minute one point four seconds"),
         # A bare clause citation on a TWO-digit rule number. CARHA numbers its
         # rules in two digits, so every one of these voiced with a literal

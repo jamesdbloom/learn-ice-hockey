@@ -277,6 +277,26 @@ def main() -> int:
             print("    -> caps a tier without saying whose book caps it.")
     if not findings and not caps:
         print("no unscoped absolute denials or caps of a penalty tier.")
+        # ⚠️ A CLEAN PROSE PASS IS NOT A PASS IF THE CAPTION LAYER WAS NOT READ.
+        # This branch used to `return 0` after printing "this run did NOT check the
+        # voiced caption layer" -- so a caller reading only the exit code got a false
+        # pass on a layer that had been skipped entirely. Found 2 September 2026 by an
+        # agent that read the output rather than the status, and reported it against
+        # its own clean run.
+        #
+        # The checker already refuses to certify stale captions rather than passing on
+        # superseded text; that refusal now reaches the exit code too. Captions are
+        # VOICED -- `md_to_speech.py` emits "Diagram. " + caption -- so an uncertified
+        # caption layer is an uncertified part of the audio, not a site-only gap.
+        #
+        # Rebuild with `node site/scripts/build-diagrams.mjs` (absolute node path; the
+        # nvm shim is a zsh FUNCTION and `node` exits 127 while a wrapper reports 0),
+        # then re-run. ⚠️ Only a run after EVERY agent has finished counts -- the
+        # manifest has been observed going stale between two runs three seconds apart.
+        if captions is None:
+            print("check_absolutes: ⚠️  EXIT 2 — prose is clean, the caption layer is "
+                  "UNCERTIFIED. This is not a pass.")
+            return 2
         return 0
     if not findings:
         return 1

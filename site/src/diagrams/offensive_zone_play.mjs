@@ -19,6 +19,16 @@
  *    captioned with which moment it is.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped: a sentence that appears twice is a sentence that can drift once, and
+// this one already had. See rule69_clauses.mjs for why all four still say it.
+import {
+  CREASE_LINE_IS_THE_CREASE,
+  DISALLOWED_ROWS_SHARE_THE_CREASE,
+  REFEREE_JUDGEMENT,
+  TABLES_ALLOW_OUTSIDE,
+} from './rule69_clauses.mjs';
+
 // ---------------------------------------------------------------------------
 // Shared anchors. Named once because several diagrams refer to the same spots,
 // and because a number that appears twice is a number that can drift once.
@@ -482,22 +492,20 @@ const netFrontScreen = {
     'every clause of Rule 69 that voids a goal for where you stood names it. 69.1’s disallowing ' +
     'sentence requires the attacker to have entered the crease, 69.3 voids the goal outright for a ' +
     'significant vision-obstructing position inside it with no contact at all, and 69.4, the rule ' +
-    'for outside it, reaches contact only. Both books’ own reference tables agree, allowing the ' +
-    'goal where an attacker plants himself outside the crease and obstructs the goalie’s vision ' +
-    '(NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, at ' +
-    'Situation 5E) — what the disallowed rows have in common is the attacker being inside the ' +
-    'crease, not whether he is moving. That reads the rule’s structure rather than anything either ' +
-    'book states in terms, and both add that Rule 69 is enforced exclusively in accordance with the ' +
-    'on-ice judgement of the Referee(s). USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
+    'for outside it, reaches contact only. Both books’ own reference tables agree, ' +
+    TABLES_ALLOW_OUTSIDE + ' — ' + DISALLOWED_ROWS_SHARE_THE_CREASE +
+    ' That reads the rule’s structure rather than anything either book states in terms, and ' +
+    REFEREE_JUDGEMENT +
+    ' USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
     'still — there a foot in the paint can cost you the zone and not just the goal. One rec book is ' +
     'stricter again: the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from ' +
     'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +
     'one does, and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read ' +
     'that as one rec book and not as the rec position — CARHA governs CARHA-affiliated leagues only, ' +
     'and rec and beer leagues are often said to be stricter still, though this document has no count ' +
-    'of how many are. So keep your feet out of the blue paint, and off the crease line at its edge, ' +
-    'which the IIHF, USA Hockey and Hockey Canada all count as part of the crease — and read your ' +
-    "own league's rule.",
+    'of how many are. So keep your feet out of the blue paint, and off ' +
+    CREASE_LINE_IS_THE_CREASE +
+    " — and read your own league's rule.",
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
