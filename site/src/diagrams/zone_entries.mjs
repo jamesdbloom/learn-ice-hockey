@@ -142,8 +142,7 @@ const wideEntry = {
     'defence between you and the net. No contact is drawn: the defender is beaten by having to ' +
     'turn, not by being hit. The net drive stops at the blue paint: live at the edge of it and ' +
     'keep your body out of the crease — screening from outside it without contact is legal, ' +
-    'but positioning alone can void a goal if it stops the goalie moving freely or defending the ' +
-    'net (NHL Rule 69.1).',
+    "but that is keyed to the crease: the sentence in NHL and IIHF Rule 69.1 that voids a goal for where you stood requires the attacker to have entered it, and 69.4, the rule for outside it, reaches contact only — because both books’ own reference tables allow the goal where an attacker plants himself outside the crease and obstructs the goalie’s vision (NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, at Situation 5E). What the disallowed rows have in common is the attacker being inside the crease, not whether he is moving, and that is the line 69.1 draws itself: its “only if” caps when a goal may be disallowed, while the sentence that actually disallows one requires the attacker to have entered the goal crease. That reads the rule’s structure rather than anything either book states in terms, and both add that Rule 69 is enforced exclusively in accordance with the on-ice judgement of the Referee(s) — so keep your feet out of the paint, and off the crease line at its edge, which the IIHF, USA Hockey and Hockey Canada all count as part of the crease.",
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +
@@ -240,11 +239,12 @@ const delayCurl = {
     'not stop and does not force it: he turns away from the pressure, curls back toward the ' +
     'neutral zone with his body between the defender and the puck, looks back up ice rather ' +
     'than at the defender, and buys the one or two seconds his late support needs to arrive at ' +
-    'speed. One safety point outranks the play and is why the curl is drawn out in open ice: ' +
-    'curl away from the wall, and never take contact with your back to the boards. A still ' +
+    'speed. A still ' +
     'picture can only show the turn and the teammate arriving — the re-attack that follows, ' +
     'with the puck going to whoever has the best angle and the most speed and often not to you, ' +
-    'is the next moment and is not drawn.',
+    'is the next moment and is not drawn. ' +
+    '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
+    'curl away from the wall, and never take contact with your back to the boards.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -510,13 +510,14 @@ const crossCorner = {
     'that calls for it is the retrieving defenceman being on your side, or the strong-side ' +
     'corner being crowded: the puck is shot hard diagonally across into the far corner, which ' +
     'moves it away from the defender best placed to get it and leaves their weak-side ' +
-    'defenceman a long retrieval on his backhand, facing his own boards — the single most ' +
-    'uncomfortable retrieval in hockey. It only works because the far-side ' +
+    'defenceman a long retrieval on his backhand, facing his own boards, with a forechecker ' +
+    'arriving behind him — awkward by design, though which retrievals are hardest is coaching ' +
+    'judgement rather than a counted ranking. It only works because the far-side ' +
     'winger has read it and is already going there; cross-corner dumps into nobody are pure ' +
     'giveaways. The same read can instead be answered by going straight north down your own ' +
     'side, depending on where your speed is, and that alternative is not drawn. ' +
     'Nothing about how the chase finishes is drawn here; angling is movement over time and a ' +
-    'subject of its own. Read the sentence above again before you skate it, though: a defenceman ' +
+    'subject of its own. ⚠️ Read the sentence above again before you skate it, though: a defenceman ' +
     'facing his own boards has his back to you, which is the picture the checking-from-behind ' +
     'rules are written about. Arrive on the puck, never on his back.',
 

@@ -130,10 +130,12 @@ Four things about British hockey are different enough from the North American pi
 
 | Body | What it governs |
 |---|---|
-| **England Ice Hockey (EIH)** | *"the National Governing Body (NGB) responsible for the governance, administration, development and promotion of the sport of ice hockey in **England and Wales**"*, overseeing *"grassroots (junior) ice hockey, women's ice hockey, senior ice hockey, para (sledge) ice hockey, SEND (Special Educational Needs and Disability) ice hockey, and recreational (community) ice hockey"* |
+| **England Ice Hockey (EIH)** | *"the National Governing Body (NGB) responsible for the governance, administration, development and promotion of the sport of ice hockey in **England and Wales**"* |
 | **Scottish Ice Hockey Association (SIHA, also written SIH)** | Scotland. EIH's own document names it as one of the stakeholders it works with |
-| **Ice Hockey UK (IHUK)** | The IIHF member body and the GB national teams. It also administers the paperwork that lets a player arrive from abroad: EIH states that international transfers *"are subject to IIHF International Transfer requirements which are administered by Ice Hockey UK"*, and that work visas are *"defined by Ice Hockey UK and HM Border Agency"* |
+| **Ice Hockey UK (IHUK)** | The IIHF member body and the GB national teams. It also administers the paperwork that lets a player arrive from abroad |
 | **British Universities Ice Hockey Association (BUIHA)** | University hockey. It adopts the IIHF Rule Book and the same In-House Rules alongside IHUK, and is the one body named beside IHUK in the current edition — it did not merge into it |
+
+**Two of those entries carry more detail in EIH's own words.** The sport EIH governs is *"grassroots (junior) ice hockey, women's ice hockey, senior ice hockey, para (sledge) ice hockey, SEND (Special Educational Needs and Disability) ice hockey, and recreational (community) ice hockey"*. And the paperwork for a player arriving from abroad splits two ways: international transfers *"are subject to IIHF International Transfer requirements which are administered by Ice Hockey UK"*, while work visas are *"defined by Ice Hockey UK and HM Border Agency"*.
 
 **"EIHA" and "England Ice Hockey" are the same organisation.** It was the English Ice Hockey Association; you will still see EIHA on club sites, in league names and on older paperwork. Nothing about it is defunct. Note also that **EIH names Wales explicitly** as part of its remit — its Rules & Regulations say "England and Wales" throughout — which is more than any of the playing-rules documents establish.
 
@@ -536,6 +538,8 @@ Registration structures, tier names, fees, session rules and age classifications
 | **The Home Countries and university hockey — the playing rules** | The **IIHF Official Rule Book**, plus the **In-House Rules**, adopted by IHUK and the BUIHA across England, Wales, Scotland and Northern Ireland. [UK and England Rules](../foundation/uk_rules.md) summarises what they change; your **section's Rules of Competition**, held by your club, covers everything else |
 | **England — finding a session at all** | **Your local rink first, your club second.** No governing-body document consulted here contains a session finder, a learn-to-skate scheme or a taster calendar for England. The rink sells the ice and knows who is on it |
 | **Anywhere else** | The IIHF's Member National Associations directory — 84 associations, each linked to its own national body |
+
+**Confirm eligibility with the association, not with a search result.** Hockey Canada says of its own association finder that the information *"is intended to provide a starting point… and is not necessarily conclusive of where a player is eligible to play"*.
 
 **A caution about links.** Governing-body sites reorganise constantly and dead or misleading links are common: `usahockey.com/playingrules` and `usahockey.com/registration` still returned 404 when re-checked on 1 September 2026, several Hockey Canada programme URLs return **HTTP 200 with a 404 page in the body**, and `thefirstshift.ca` has sent visitors to two different wrong destinations inside six weeks — an unrelated commercial site in July 2026, a domain registrar's parking page in September. **Navigate from the national body's home page rather than from a remembered URL**, and if a page looks wrong, it is.
 

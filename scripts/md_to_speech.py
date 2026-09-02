@@ -786,6 +786,93 @@ def _clause_words(clause: str) -> str:
     return clause  # a lettered clause: '(b)' -> 'clause b'
 
 
+def _bare_roman_marker(match: re.Match) -> str:
+    """A parenthesised roman numeral that no citation pattern claimed.
+
+    ⚠️ Round 58: 157 candidate sites, 19 documents. Rendering five whole
+    documents showed the marker surviving into the spoken text verbatim, so a
+    voice reads "(i)" and "(ii)" as the LETTER -- "eye", "eye eye". The worst
+    instance enumerates the four steps of the line-change procedure in
+    `how_to_watch_hockey.md`, and another enumerates the two acts that draw a
+    bench minor at Rule 76.7 in `faceoffs.md`.
+
+    ⚠️ The corpus uses parenthesised romans in TWO senses and the plan row
+    feared they needed different handling. Rendering settled it: they do not.
+    "preamble item (v)" wants "item five", and an enumerated step "(i) The
+    referee..." wants "One. The referee...". Both want a NUMBER, so one
+    conversion serves both -- but they need different patterns to find them,
+    because only the citation rules may claim a roman that follows a rule
+    number, and those run first.
+    """
+    roman = match.group("roman").lower()
+    value = ROMAN_TO_INT.get(roman)
+    if value is None:
+        # `[ivx]{1,6}` also matches non-numerals like "iiii" or "vv". Leave
+        # anything that is not a real roman numeral exactly as it was found.
+        return match.group(0)
+    words = int_to_words(value)
+    noun = match.groupdict().get("noun")
+    if noun:
+        return f"{noun} {words}"
+    # The conjunction form -- "points (vi) and (vii)" -- is a CONTINUATION of
+    # the noun phrase, not a new sentence. Adding a full stop here put a break
+    # in the middle of "points six and seven"; the self-test caught it.
+    return words
+
+
+def _url_path(match: re.Match) -> str:
+    """'usahockey.com/playingrules' -> '... slash playingrules'.
+
+    ⚠️ The general ``/`` -> " or " row in SYMBOLS is right for 'NHL/IIHF' and
+    WRONG for a URL: `usahockey.com/playingrules` was narrating as
+    **"usahockey.com OR playingrules"**, which names two things that do not
+    exist instead of one address a listener could write down. Five bare URLs
+    sit in voiced body prose (`getting_started.md` x3, and the NHL API path in
+    two documents); the rest are in Sources trailers, which are never voiced.
+
+    Found by an agent recovering a dropped table, in shipped prose.
+
+    Same principle as STANDARDS_BODIES above: where the solidus is part of a
+    string a reader must MATCH rather than parse, speak it.
+    """
+    return match.group(0).replace("/", " slash ")
+
+
+def _bare_iihf_clause(match: re.Match) -> str:
+    """A DETACHED uppercase clause marker: '(II)' -> 'clause two'.
+
+    ⚠️ This needs its OWN handler, not a branch inside `_bare_roman_marker`.
+    My first attempt discriminated on the match object and leaked the word
+    "clause" into the noun and enumeration senses, turning "points six and
+    seven" into "points six and clause seven" and an enumerated step into
+    "clause one any player...". The SELF-TEST caught all four; nothing reached
+    the corpus. Three senses, three handlers.
+
+    Unlike the other two, this one must SUPPLY the noun: there is no "item" or
+    "clause" in front of it in the prose, so a bare number would leave the
+    listener hearing a quantity where a clause reference was meant.
+    """
+    roman = match.group("roman").lower()
+    value = ROMAN_TO_INT.get(roman)
+    if value is None:
+        return match.group(0)
+    return f"clause {int_to_words(value)}"
+
+
+def _enumerated_roman(match: re.Match) -> str:
+    """An enumerated step marker: '(i) The referee...' -> 'One. The referee...'
+
+    Capitalised and closed with a full stop because this marker STARTS a step,
+    and the sentence that follows it is already capitalised. The other sense
+    (`clause-noun-roman`) must not do either -- it sits inside a sentence.
+    """
+    roman = match.group("roman").lower()
+    value = ROMAN_TO_INT.get(roman)
+    if value is None:
+        return match.group(0)
+    return int_to_words(value).capitalize() + "."
+
+
 def _section_reference(match: re.Match) -> str:
     """'\u00a719.1.2' -> 'section nineteen point one point two'.
 
@@ -806,7 +893,12 @@ def _section_reference(match: re.Match) -> str:
 #: ⚠️ Matches the BRACKETS only, so a joining "," or " and" is dropped rather
 #: than spoken -- "608(a), (b) and (c)" voices as three clauses in a list.
 RE_CLAUSE_TAIL = re.compile(
-    r"(?P<sep>[,/]|[ ]and)[ ]?\((?P<clause>[ivxIVX]{1,6}|[a-z]|\d{1,2})\)")
+    # ⚠️ The dash is a RANGE, and it is a third meaning after the comma's
+    # enumeration and the slash's alternative. `76.7(I)–(II)` is "clause one TO
+    # clause two". Before this it was matched by nothing: the citation rule took
+    # `(I)` and abandoned `–(II)`, and because brackets are silent the listener
+    # heard "clause one" and then a bare "two" with a dash between them.
+    r"(?P<sep>[,/]|[ ]and|[-\u2013\u2014])[ ]?\((?P<clause>[ivxIVX]{1,6}|[a-z]|\d{1,2})\)")
 
 
 def _clause_tail(more: str | None) -> str:
@@ -825,7 +917,13 @@ def _clause_tail(more: str | None) -> str:
         # ⚠️ A SLASH means "or", not "and another one". `622(b)/(c)` is one rule
         # offering two clauses; `608(a), (b) and (c)` is a list of three. Voicing
         # a slash as a comma turns an alternative into an enumeration.
-        joiner = " or" if m.group("sep") == "/" else ","
+        sep = m.group("sep")
+        if sep == "/":
+            joiner = " or"
+        elif sep in ("-", "\u2013", "\u2014"):
+            joiner = " to"
+        else:
+            joiner = ","
         out += f"{joiner} clause {_clause_words(m.group('clause'))}"
     return out
 
@@ -1531,7 +1629,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
             r"(?:\.(?P<minor>\d{1,2}))?"
             r"(?:[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
-            r"(?P<more>(?:(?:,|/|[ ]and)[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
+            r"(?P<more>(?:(?:,|/|[ ]and|[-–—])[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
         _rule_citation,
         "Rule 63.2(viii) -> 'Rule sixty-three point two, clause eight'",
@@ -1549,7 +1647,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
             r"(?<![\w.])(?P<major>\d{1,3})\.(?P<minor>\d{1,2})"
             r"[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
-            r"(?P<more>(?:(?:,|/|[ ]and)[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
+            r"(?P<more>(?:(?:,|/|[ ]and|[-–—])[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
         _bare_clause,
         "'27.8 and 63.2(viii)' - second citation without the word Rule",
@@ -1573,11 +1671,121 @@ NOTATION_RULES: tuple[Rule, ...] = (
             # require an immediately following parenthesised clause letter.
             r"(?<![\w.])(?P<major>\d{2,3})[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]\.\d|[a-z])\)"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
-            r"(?P<more>(?:(?:,|/|[ ]and)[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
+            r"(?P<more>(?:(?:,|/|[ ]and|[-–—])[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
         _usa_clause_citation,
         "'Rules 624(b) and 630(a)' - the second USA Hockey citation, which "
         "carries no point and so was never a bare-clause citation",
+    ),
+    Rule(
+        "url-path",
+        # ⚠️ Must run BEFORE the SYMBOLS pass turns every "/" into " or ".
+        # Requires a real TLD and at least one path segment, so it cannot claim
+        # "forward/defence" or "he/she" -- both of which SHOULD stay " or ".
+        re.compile(
+            r"\b[a-z0-9][a-z0-9.-]*\.(?:com|org|net|gov|edu|io|ca|uk|co\.uk)"
+            r"(?:/[A-Za-z0-9._~%+-]+)+/?"
+        ),
+        _url_path,
+        "'usahockey.com/playingrules' -> '...com slash playingrules'; the "
+        "general slash rule read it as 'usahockey.com OR playingrules'",
+    ),
+    Rule(
+        "clause-noun-roman",
+        # ⚠️ MUST RUN AFTER all three citation rules. A roman that follows a
+        # rule number belongs to `rule-citation`, `bare-clause-citation` or
+        # `usa-clause-citation`, which voice it as "sub-clause three". This
+        # rule only ever sees the ones they left behind.
+        # The corpus separates a clause from its rule number with prose --
+        # "Rule 11.1, preamble item (v)" -- so no citation pattern can reach
+        # it. The `and`/`or` lookbehinds catch the continuation form,
+        # "suspends only points (vi) and (vii)", whose second marker follows a
+        # conjunction rather than the noun.
+        re.compile(
+            r"(?:\b(?P<noun>items?|clauses?|points?|paragraphs?|subsections?"
+            r"|limbs?|sub-clauses?)[ ]+"
+            # ⚠️ A bare marker after a preposition or a dash. Found by rendering
+            # `faceoffs.md`: Rule 76.7's enumeration of the two acts that draw a
+            # bench minor reads "— (i) any player..." and "and at (ii) inside...".
+            # Neither has a capital after it, so `enumerated-roman`'s
+            # new-sentence guard could not claim them, and the listener heard
+            # "eye" and "eye eye" in a penalty enumeration.
+            r"|(?<=\bat[ ])|(?<=[\u2013\u2014][ ]))"
+            # ⚠️ Uppercase too: the IIHF books letter their clauses in CAPITALS
+            # (`63.2(III)`), so a DETACHED IIHF marker is uppercase. Censused
+            # before widening: 505 uppercase parenthesised romans in `content/`,
+            # every sampled one a clause marker, none a pronoun or a variable.
+            r"\((?P<roman>[ivxIVX]{1,6})\)"
+        ),
+        _bare_roman_marker,
+        "'preamble item (v)' -> 'preamble item five'; without it a voice read "
+        "the marker as the letter, 'eye' and 'eye eye'",
+    ),
+    # ⚠️ ORDER IS LOad-BEARING between these two. `enumerated-roman` is the
+    # NARROWER rule -- it requires a new sentence to follow -- and it must claim
+    # its markers BEFORE the general detached-clause rule below, or a step in an
+    # enumeration voices as "clause one The referee gives..." instead of "One.".
+    # The self-test caught exactly that when the general rule was widened to
+    # lowercase and silently overtook this one.
+    Rule(
+        "clause-continuation-roman",
+        # ⚠️ LOWERCASE ONLY, and that restriction is the whole point. This is the
+        # continuation of a noun phrase -- "suspends only points (vi) and (vii)"
+        # -- where the second marker inherits the first's noun and must NOT
+        # repeat it. Left open to uppercase, it split one quoted rulebook ladder
+        # two different ways in a single sentence: "clause one Minor penalty, or
+        # TWO Major penalty". Uppercase markers fall through to
+        # `bare-iihf-clause-roman`, which supplies "clause" consistently.
+        re.compile(r"(?:(?<=\band[ ])|(?<=\bor[ ]))\((?P<roman>[ivx]{1,6})\)"),
+        _bare_roman_marker,
+        "'points (vi) and (vii)' -> 'points six and seven' -- the second marker "
+        "inherits the first's noun",
+    ),
+    Rule(
+        "enumerated-roman",
+        # The enumeration sense: "(i) The referee gives the visiting team up to
+        # five seconds to change. (ii) The referee then raises their hand..."
+        # ⚠️ Three guards, because this is the looser of the two patterns.
+        # `(?<=\s)|^` rejects every citation remnant: `63.2(iii)` has a digit
+        # before the bracket and `10.2(a)(iii)` has a close-bracket, so neither
+        # can reach this rule even if it somehow ran first.
+        # `(?=[ ]+[A-Z])` requires a new sentence to follow, which is what an
+        # enumerated step looks like and what an incidental parenthetical does
+        # not.
+        # ⚠️ A SENTENCE boundary, not merely whitespace. A marker after a COLON
+        # is a quoted rulebook LADDER -- *"one of: (I) Minor penalty, or (II)
+        # Major penalty"* -- and turning its first rung into "One." FABRICATES A
+        # SENTENCE BREAK INSIDE A VERBATIM QUOTATION. Reported by an agent that
+        # watched this file change under it mid-run, and reproduced.
+        re.compile(r"(?:(?<=[.!?][ ])|(?<=\n)|^)\((?P<roman>[ivxIVX]{1,6})\)(?=[ ]+[A-Z])"),
+        _enumerated_roman,
+        "'(i) The referee gives...' -> 'One. The referee gives...'",
+    ),
+    Rule(
+        "bare-iihf-clause-roman",
+        # ⚠️ Runs after all three citation rules and after `clause-noun-roman`,
+        # so it only ever sees a marker DETACHED from its rule number.
+        # The IIHF books letter their clauses in CAPITALS, and the corpus refers
+        # back to them as bare shorthand through long arguments -- "whether it
+        # is applying (II) or reading (III) more widely than its own words",
+        # "a kick meant to block a pass is not (II)'s offence". Every one voiced
+        # as the LETTER: "eye eye", "eye eye eye".
+        # ⚠️ CENSUSED BEFORE WIDENING: 505 uppercase parenthesised romans across
+        # `content/`, every sampled one a clause marker -- none a pronoun, a
+        # variable or a multiplication. Lowercase is deliberately NOT included
+        # here: the lowercase residue is MENTIONS of markers ("the rule letters
+        # its own steps (i) to (viii)"), where converting would make the
+        # sentence say something false.
+        # The quote-mark lead-in catches a marker inside quoted rulebook text,
+        # such as an IIHF penalty ladder quoted verbatim.
+        # ⚠️ Lowercase too: the NHL letters its clauses in lowercase romans
+        # (`63.2(iii)`) exactly as the IIHF letters its in capitals, so a
+        # detached NHL marker is lowercase. Both books' detached markers were
+        # reaching the listener as letters.
+        re.compile(r"(?:(?<=\s)|(?<=[\"\u201c])|^)\((?P<roman>[IVXivx]{1,6})\)"),
+        _bare_iihf_clause,
+        "'applying (II) or reading (III)' -> 'applying clause two or reading "
+        "clause three'; the IIHF letters its clauses in capitals",
     ),
     Rule(
         "d-to-d",
@@ -3455,6 +3663,60 @@ def self_test() -> int:
         # Guards: these must NOT be read as rule numbers.
         ("28.6 (road)", "twenty-eight point six (road)"),
 
+        # ⚠️ Round 58: a bare parenthesised roman that NO citation pattern
+        # claimed reached the audio as the LETTER -- "eye", "eye eye".
+        ("Rule 11.1, preamble item (v)",
+         "Rule eleven point one, preamble item five"),
+        ("82.2(VIII) suspends only points (vi) and (vii)",
+         "eighty-two point two, clause eight suspends only points six and seven"),
+        ("(i) The referee gives the visiting team up to five seconds.",
+         "One. The referee gives the visiting team up to five seconds."),
+        # Guards: the citation rules must keep claiming their own clauses, and
+        # this rule must never reach a roman that belongs to a rule number.
+        ("Rule 63.2(iii)", "Rule sixty-three point two, clause three"),
+        ("10.2(a)(iii)", "ten point two, clause a, sub-clause three"),
+        ("608(b)(iii)", "six hundred and eight, clause b, sub-clause three"),
+        ("whether it is applying (II) or reading (III) more widely",
+         "whether it is applying clause two or reading clause three more widely"),
+        ("is not (II)'s offence", "is not clause two's offence"),
+        # Guard: an ATTACHED marker still belongs to the citation rules.
+        ("IIHF Rule 63.2(III)", "IIHF Rule sixty-three point two, clause three"),
+        # An IIHF penalty ladder, quoted verbatim, whose CAPITAL markers voiced
+        # as the letter: "eye Minor penalty ... eye eye Major penalty".
+        ("assessed one of: (I) Minor penalty (II) Major penalty",
+         "assessed one of: clause one Minor penalty clause two Major penalty"),
+        # ⚠️ A QUOTED RULEBOOK LADDER. Both rungs must read the SAME WAY, and
+        # neither may fabricate a sentence break inside the quotation.
+        ("assessed one of: (I) Minor penalty, or (II) Major penalty",
+         "assessed one of: clause one Minor penalty, or clause two Major penalty"),
+        ("usahockey.com/playingrules",
+         "usahockey.com slash playingrules"),
+        ("api-web.nhle.com/v1/gamecenter/",
+         "api-web.nhle.com slash v1 slash gamecenter slash"),
+        # Guards: a slash that is NOT a URL path still means "or".
+        ("the forward/defence pairing", "the forward or defence pairing"),
+        ("he/she may go", "he or she may go"),
+        ("the NHL's (iii) reaches a player who shoots",
+         "the NHL's clause three reaches a player who shoots"),
+        # Guard: not a roman numeral at all, so it is left exactly as found.
+        # ⚠️ A DASH between two clauses is a RANGE, not a list. Before this the
+        # citation rule took the first and abandoned the second, and brackets
+        # are silent, so the second clause vanished into a bare number.
+        ("Rule 76.7(I)\u2013(II)",
+         "Rule seventy-six point seven, clause one to clause two"),
+        ("Rule 49.2(i)-(iv)",
+         "Rule forty-nine point two, clause one to clause four"),
+        # ...while the comma and the slash keep their own distinct meanings.
+        ("Rule 7.5(a), (e)", "Rule seven point five, clause a, clause e"),
+        ("USA Hockey 622(b)/(c)",
+         "USA Hockey six hundred and twenty-two, clause b or clause c"),
+        # A bare marker after a preposition or a dash, where no capital follows
+        # and the new-sentence guard therefore cannot fire.
+        ("and at (ii) inside the hash marks",
+         "and at two inside the hash marks"),
+        ("encroachment \u2014 (i) any player other than the centre",
+         "encroachment \u2014 one any player other than the centre"),
+        ("the (vv) marker", "the (vv) marker"),
         ("Rule 4.11 (see below)", "Rule four point eleven (see below)"),
         ("a 5-on-3", "a five on three"),
         ("a 2-on-1 rush", "a two on one rush"),

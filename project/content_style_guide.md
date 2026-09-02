@@ -111,11 +111,34 @@ These were verified against sources on 27 July 2026. Several are commonly got wr
 
   **Rule 42.1 also carries the plain form.** Verified by locating each occurrence and reading the nearest preceding rule heading, in `nhl_rules_layout.txt`. ⚠️ **Check WHICH sentence a site is quoting before touching the word** — the corpus currently gets all ten of its occurrences right, and a sweep for either wording would break half of them.
 
-  **⚠️ Do not write that screening is "entirely legal".** That overstatement propagated into 16 places across 12 documents before it was caught. Screening from **outside** the crease, without contact, is legal and valuable — but clause (1) means **positioning alone can void a goal** if it impairs the goalie's ability to move or defend, and Rule 69.3 separately disallows a goal where an attacker *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision and impair his ability to defend his goal."* Always attach the outside-the-crease qualifier to the legality claim itself.
+  **⚠️ Do not write that screening is "entirely legal".** That overstatement propagated into 16 places across 12 documents before it was caught. Screening from **outside** the crease, without contact, is legal and valuable, and the qualifier is what makes the sentence true — **always attach the outside-the-crease, no-contact qualifier to the legality claim itself.** ⚠️ **Do not write the converse either: clause (1) is NOT a positioning ground reaching outside the crease.** It sits under *"Goals should be disallowed **only if**"* — a ceiling on when a goal *may* be disallowed, not a direction to disallow one — and every provision of Rule 69 that voids a goal for **where the attacker stood** names the crease. 69.1's disallowing sentence requires a player who *"enters the goal crease"*; **69.3 is the clause that takes a goal away on position with no contact at all**, where an attacker *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision and impair his ability to defend his goal"*; and **69.4, the rule for outside the crease, has no positioning limb.** ⚠️ **That is a reading of the rule's structure rather than something either book states in terms**, and both add that Rule 69 is *"enforced exclusively in accordance with the on-ice judgement of the Referee(s)."* ⚠️ **And this is the NHL's and the IIHF's reading only — never generalise it to four books.** USA Hockey 625(b) voids the goal on crease **position alone**, and Hockey Canada 8.5's Goal Crease Area paragraph does too, subject to a passivity carve-out. The tables, the crease line and the one surviving clash are set out below; do not restate them from memory.
 
-  **⚠️ And attach the appendix, because both books answer 69.1's own fact pattern the other way.** **NHL Reference Table 14** and **IIHF Appendix IV Table 16** publish the situations, and on the outside-the-crease screen they are unambiguous. **Situation 5E** — an attacker who, in the NHL's wording, *"plants himself on the crease line or outside the goal crease, as to obstruct the goalkeeper's vision and impair his ability to defend his goal, and a goal is scored"* → **"Goal is allowed."** ⚠️ **The IIHF's row is the same situation in different pronouns** — *"plants themself… impair their ability to defend their goal"*. **This paragraph used to quote the IIHF's wording while attributing the row to both books**, which is the exact hazard the paragraph below it forbids, in the file that forbids it.
+  *(An earlier version of this line instructed authors that "clause (1) means positioning alone can void a goal". A commit gate found it still armed ELEVEN LINES ABOVE the correction this same round added — the directive that put the reading into the corpus, left intact by the round that refuted it. It is the second claim inherited from this guide that the books did not support.)*
 
-  ⚠️ **And "5C is the same answer for a screen in motion" was MISLEADING and has been corrected — motion is not the distinguishing factor, LOCATION is.** Read the two rows together: **5B** is *"well inside the crease… The attacking player remains in motion"* → **goal DISALLOWED**; **5C** is *"outside the crease… remains in motion"* → **goal ALLOWED**. **Both are in motion.** A reader who carries *"in motion is fine"* from 5C to 5B gets the opposite of the rule. Only 5B and 5D disallow, and **both put the attacker inside the crease** — that is the whole distinction. So the operative text of 69.1(I) carries no crease line and the appendix supplies one. Cite the table alongside the rule — but say it is an **appendix interpretation, not operative rule text**, because a table cannot repeal a rule, and ⚠️ **neither book says anywhere that its tables are interpretation rather than rule**, so that framing is a reading of where they are printed and must be labelled as one.
+  **⚠️ And attach the appendix, because both books show where 69.1's crease line falls.** **NHL Reference Table 14** and **IIHF Appendix IV Table 16** publish the situations, and on the outside-the-crease screen they are unambiguous. **Situation 5E** — an attacker who, in the NHL's wording, *"plants himself on the crease line or outside the goal crease, as to obstruct the goalkeeper's vision and impair his ability to defend his goal, and a goal is scored"* → **"Goal is allowed."** ⚠️ **The IIHF's row is the same situation in different pronouns** — *"plants themself… impair their ability to defend their goal"*. **This paragraph used to quote the IIHF's wording while attributing the row to both books**, which is the exact hazard the paragraph below it forbids, in the file that forbids it.
+
+  ⚠️ **And "5C is the same answer for a screen in motion" was MISLEADING and has been corrected — motion is not the distinguishing factor, LOCATION is.** Read the two rows together: **5B** is *"well inside the crease… The attacking player remains in motion"* → **goal DISALLOWED**; **5C** is *"outside the crease… remains in motion"* → **goal ALLOWED**. **Both are in motion.** A reader who carries *"in motion is fine"* from 5C to 5B gets the opposite of the rule. Only 5B and 5D disallow, and **both put the attacker inside the crease** — that is the whole distinction. So **read 69.1 whole before citing (I) against the table.** Clause (I) is introduced by
+*"Goals should be disallowed **only if**"* — a **ceiling** on when a goal *may* be disallowed, not a
+direction to disallow one. **Satisfying a necessary condition does not entail the consequence.** The
+sentence that actually disallows is crease-keyed: *"If an attacking player **enters the goal crease**
+and, by his actions, impairs the goalkeeper's ability to defend his goal … the goal will be
+disallowed"* — and **69.3 is crease-keyed too** (*"establishes a significant position **within the
+goal crease**"*), while **69.4 reaches outside the crease only for CONTACT**, with no positioning limb
+at all. ⚠️ **No provision of Rule 69 voids a goal for positioning alone from outside the crease, so
+5C and 5E APPLY the rule rather than contradict it. Cite the table WITH the rule, and never tell a
+reader the two disagree.** The IIHF Situation Handbook's own Situation 69.1 — **identical in all three
+editions on disk** — puts the screener *"in the crease"* and cites *"Rule 69.1 and Rule 69.3"*
+together. ⚠️ **ONE NARROW CLASH SURVIVES AND IT IS THE CREASE LINE:** 5E allows the goal for a player
+*"on the crease line"*, while IIHF Rule 1 says *"[t]he marked line belongs to the Goal Crease."* Owner:
+[`rink_map_and_glossary.md`](../content/foundation/rink_map_and_glossary.md), which already states it
+more carefully than a first draft of this passage did.
+
+*(An earlier version of this passage said "the operative text of 69.1(I) carries no crease line and the
+appendix supplies one." That was **false** — the rationale paragraph carries one and 69.3 carries a
+second. A `diagram-reviewer` found it and declined to act on its own inference; the coordinator read
+69.1 in full and confirmed the text; a `rules-verifier` then supplied the "only if" mechanism, which is
+what makes the corrected reading hold. **The specification is not a primary source, and this is the
+second claim inherited from it that the books did not support.**)* Cite the table alongside the rule — but say it is an **appendix interpretation, not operative rule text**, because a table cannot repeal a rule, and ⚠️ **neither book says anywhere that its tables are interpretation rather than rule**, so that framing is a reading of where they are printed and must be labelled as one.
 
   ⚠️ **THE IIHF TABLE NUMBER IS NOT STABLE ACROSS EDITIONS, AND THE COLLISION RESOLVES.** Verified in both books on disk:
 
@@ -353,6 +376,42 @@ grep one.** There are three ways the text on disk lies to a search, all measured
 and 53, and every one of them breaks **negative** claims rather than positive ones. That matters
 here more than anywhere: the corpus rests **417 book-scoped "this book writes no such provision" assertions**
 (inventoried round 52, 34 of 37 documents) on exactly this kind of search.
+
+⚠️ **Round 58 attacked roughly fifteen of those 417 and FALSIFIED SIX.** Recorded here because the
+kinds matter more than the count:
+
+- **Three were falsified by text the SAME DOCUMENT already quoted elsewhere.** *"IIHF 48.1(III) is
+  the only such clause in the four books"* — the NHL's 48.1(i) has it, and that document quotes it
+  in §5 and states it as a `Never:` fact. *"USA Hockey writes the one permission any of the four
+  books writes"* — NHL 69.4 writes it, **quoted verbatim four lines earlier in the same file.**
+  ⚠️ **So the search that produced the negative did not include the document's own pages.**
+- **Two were falsified by a book that was in the comparison set but not in the search.** *"Nothing
+  like this in any of the other three books"* — the set is **four**, and USA Hockey bans the slap
+  shot in Blind Hockey. *"'Designated area' nowhere in Hockey Canada's playing rules"* — Rule
+  5.4(b), the Goal Judge's station.
+- **One was the dispatcher's, relayed to two agents before anyone checked it.**
+
+⚠️ **THE DIAGNOSTIC, and it is cheap: before writing a negative, list the books your search covered
+and compare that list to the books your sentence names.** Two of the six differed. A third differed
+from the document's own quotations.
+
+⚠️ **AND THE UPHELD ONES ARE NOT LESS IMPORTANT.** Seven survived, several after serious attack —
+the simultaneous-touch fact pattern survived **fourteen files, three normalisations, eleven concept
+regexes and every high-stick block on disk read end to end.** ⚠️ **This class must never be swept:
+deleting a correct negative is [non-negotiable 3], and the corpus's honest-disclosure layer is its
+integrity story.**
+
+⚠️ **SIX OF FIFTEEN IS NOT A BASE RATE.** The agent that found three of them said plainly it chose
+its sample *"because they looked wrong"*, so the ones it did not open are exactly the ones that look
+right — **which is the condition under which every superlative in this corpus has previously
+survived.** Treat 6/15 as evidence the class is worth attacking, not as an estimate of how much of
+it is broken.
+
+⚠️ **A SEVENTH SHAPE, and no census has ever looked for it: an absence claim inherited FROM THIS
+GUIDE rather than from a source.** Round 58 found two — this document's assertion that
+*"the operative text of 69.1(I) carries no crease line and the appendix supplies one"* (69.1's own
+rationale paragraph carries one), and its Rule 69 entry's required treatment being absent from every
+layer of the document that most needed it. **This guide is not a primary source.**
 
 1. **Plain `pdftotext` silently joins hyphenated line breaks.** `face-off` comes out `faceoff` —
    **88 corrupted word-instances across `nhl_rules.txt` and `hc.txt`, zero survivals.** A negative

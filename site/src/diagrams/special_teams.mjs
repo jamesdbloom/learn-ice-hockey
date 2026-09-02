@@ -534,7 +534,12 @@ const pkWedge = {
     'Coaching material describes this as popular at NHL level, but no league-wide count is ' +
     'published, so treat the prevalence claim as unverified; it is also a poor choice for a young ' +
     'or ad-hoc unit because of the cognitive load, and if the +1 chases without purpose you are ' +
-    'killing with three players.',
+    'killing with three players. ' +
+    // SAFETY. The caption instructs "Be in the lane before the shot" and dropped the two elements
+    // that make the block survivable. Owner's own wording, content/systems/special_teams.md:704
+    // and again verbatim in its Key Takeaway 7 (:1103) — "Block from close and on your feet, head
+    // out of the lane and hands tucked." LAST, for the promotion rule.
+    '⚠️ And block from close and on your feet, head out of the lane and hands tucked.',
 
   describe:
     'Defending half of the rink, our net at the right and our goaltender in the crease. Three own ' +

@@ -23,7 +23,7 @@
  * Usage:  node scripts/build-diagrams.mjs [--no-png]
  */
 
-import { writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -34,6 +34,41 @@ import { playSvg, rinkSvg, legendSvg } from './lib/rink.mjs';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = join(HERE, '..', 'public', 'diagrams');
 const MANIFEST = join(HERE, '..', 'src', 'data', 'diagrams.json');
+
+// ⚠️ RACE GUARD. The diagram modules are read at IMPORT time, above, and the
+// manifest is written ~6 minutes later. So a module edited DURING the build is
+// baked in at its pre-edit state, and its mtime ends up EARLIER than the
+// manifest's -- which means `check_absolutes.py`'s staleness check cannot see
+// it either. Only the build knows.
+//
+// This bit twice in round 58. Two agents each rebuilt while others were still
+// writing captions; one published 14 caption changes it had not authored, the
+// other three. Both reported it unprompted, which is the only reason it is
+// known. A third build ABORTED on a SyntaxError mid-write -- and aborting is
+// the SAFER outcome, because completing absorbs the race silently.
+const SRC_DIR = join(HERE, '..', 'src', 'diagrams');
+const mtimesAtImport = Object.fromEntries(
+  readdirSync(SRC_DIR).filter((f) => f.endsWith('.mjs'))
+    .map((f) => [f, statSync(join(SRC_DIR, f)).mtimeMs]),
+);
+
+function warnIfSourcesMovedDuringBuild() {
+  const moved = Object.entries(mtimesAtImport)
+    .filter(([f, m]) => {
+      try { return statSync(join(SRC_DIR, f)).mtimeMs !== m; } catch { return true; }
+    })
+    .map(([f]) => f);
+  if (!moved.length) return false;
+  console.error(
+    `\nbuild-diagrams: ⚠️  ${moved.length} SOURCE MODULE(S) CHANGED WHILE THIS BUILD RAN:\n` +
+    `    ${moved.join(', ')}\n` +
+    `    Their captions were read BEFORE those edits, so the manifest just written\n` +
+    `    does NOT contain them -- and their mtimes are now older than the manifest,\n` +
+    `    so check_absolutes.py's staleness guard will NOT catch it either.\n` +
+    `    ⚠️  REBUILD once nobody is writing to site/src/diagrams/.`,
+  );
+  return true;
+}
 // No per-diagram footer. It repeated on all 112 figures and, being SVG text
 // rather than a link, pointed at a section the reader could not click through to.
 // The notation is its own navigable section instead.
@@ -129,6 +164,9 @@ function main() {
   writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`build-diagrams: ${Object.keys(manifest).length} diagram(s)` +
               `${chrome ? ' with PNG fallbacks' : ' (SVG only)'} -> public/diagrams/`);
+  // Warn AFTER writing, not before: a partial public/diagrams/ is worse than a
+  // manifest that is one edit behind, and the operator needs both facts.
+  warnIfSourcesMovedDuringBuild();
 }
 
 main();

@@ -13,13 +13,13 @@
 
 ```facts
 Goal: Turn defending into attacking — the organised exit from your own defensive zone
-Key: The most-run system in hockey — several times a shift, every shift, all game
+Key: The breakout runs several times a shift, every shift, all game — coaching material calls it the most-run system in hockey, though no published count ranks plays by frequency
 Risk: It falls apart because five players ran five different plays, not because anyone lacked skill
 Convention: Almost everything here is a coaching choice, not a law of hockey — teams call the same play different names, and some call different plays the same name
 Action: Learn the framework here, then find out what your team actually calls and actually runs
 ```
 
-A **breakout** — your team's organised exit from your own end — is the most-run play in hockey, several times a shift, every shift. At amateur level it fails for want of agreement, not skill: five players running five different plays.
+A **breakout** — your team's organised exit from your own end — is run several times a shift, every shift, all game; coaching material calls it the most-run play in hockey, though no published count ranks plays by frequency. At amateur level it fails for want of agreement, not skill: five players running five different plays.
 
 **Leaving with the puck is worth far more than flinging it clear.** An analysis of roughly 230,000 tracked NHL exits — Corey Sznajder's manual tracking, covering roughly half the games of 2016-17 and 2017-18 rather than both seasons complete — found carrying or passing the puck out led to an attack the other way about 89% of the time, against about 20% for a clear nobody recovered — though the study's own conclusion is that **possession is the explanation, not the method**, and a clear your own team collects performs about as well. So keep the puck by default, and clear it because you have read the situation — outnumbered with nobody to pass to, or a turnover in front of your own net as the alternative — rather than by reflex.
 
@@ -118,14 +118,14 @@ Action: Look over your inside shoulder on the way back, while you still have tim
 Technique: Arrive at an angle, not straight on — curl in so your first touch already has your body opening toward the ice
 Action: Take the puck to a decision point — behind the net or up the wall — rather than stopping on it
 Never: Through the slot — not with a pass, not with your feet; the cross-ice over in section 3 is the only exception, and it is the highest-risk of the nine breakout options
-Risk: A stationary defenceman is the easiest target in hockey, and at the puck with your back turned you are guessing
+Risk: A stationary defenceman is the one who gets hit, and at the puck with your back turned you are guessing
 ```
 
 The defenceman who goes back for the puck. Your job starts before you touch it:
 
 - **Look over your inside shoulder on the way back.** You need to know where the forecheck is coming from while you still have time to change your plan. Once you're at the puck with your back turned, you're guessing. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md).
 - **Arrive at an angle, not straight on.** Approaching the puck square to the end boards leaves you facing the wall with a forechecker arriving in your back. Curl in so your first touch already has your body opening toward the ice.
-- **Take the puck to a decision point** — behind the net or up the wall — rather than stopping on it. A stationary defenceman is the easiest target in hockey.
+- **Take the puck to a decision point** — behind the net or up the wall — rather than stopping on it. A stationary defenceman is the one who gets hit.
 - **Never through the slot.** Not with a pass, not with your feet. See [Defender](../positions/defender.md). The single exception is the cross-ice "over" in section 3, the highest-risk of the nine breakout options, which needs a read most shifts never give you.
 
 ### 2. The support D (D2)
@@ -220,20 +220,20 @@ Two warnings on names before you start. First, teams disagree about these names 
 ### Up
 
 ```facts
-Action: Direct pass from the puck-carrying defenceman to the strong-side winger on the wall — the fastest exit in hockey
+Action: Direct pass from the puck-carrying defenceman to the strong-side winger on the wall — the fastest of the nine breakout options when the lane is open, though no count ranks them by speed
 Position: D1 below the goal line or on the wall, the winger on the boards between the hash marks and the goal line, the centre low in the middle as the bail-out
 Read: The forecheck has committed behind the net or to the middle, leaving the wall lane open — or F1 is arriving fast on the wrong side, so pass before F1 can influence the lane
 Technique: Pass firmly and to the winger's stick, not to the boards behind them; head up first, and aim where the winger will be, not where they were
-Risk: The wall pass travels through the most heavily patrolled lane on the ice — intercepted at the hash marks, it is a scoring chance from the top of the circle
+Risk: The wall pass travels the lane a forecheck posts its wall-sealer in — F2 in a 2-1-2 — so intercepted at the hash marks it is a scoring chance from the top of the circle
 Countered by: Any forecheck with a designated wall-sealer — F2 in a 2-1-2, the strong-side half-wall player in a 1-2-2 — or a weak-side defenceman stepping down on the winger the instant the pass leaves
 ```
 
-The direct pass from the puck-carrying defenceman to the strong-side winger on the wall. The fastest exit in hockey and, when it's there, the right one.
+The direct pass from the puck-carrying defenceman to the strong-side winger on the wall. The fastest of the nine breakout options when the lane is open — no count ranks breakout plays by speed — and, when it's there, the right one.
 
 - **Setup:** D1 has the puck below the goal line or on the wall. The strong-side winger is on the boards between the hash marks and the goal line. The centre is low in the middle as the bail-out.
 - **The read:** Take it when the forecheck has committed *behind* the net or to the middle, leaving the wall lane open. It is also the right call when F1 is arriving fast on the wrong side — pass before F1 can influence the lane. D2 typically makes this call, because D2 can see what D1 cannot.
 - **Execution:** Pass firmly and *to the winger's stick*, not to the boards behind them — a rim to a stationary winger is a different play and a worse one. Head up first: aim the pass where the winger will be, not where they were.
-- **The risk:** The wall pass travels through the most heavily patrolled lane on the ice. Intercepted at the hash marks, it's a scoring chance from the top of the circle.
+- **The risk:** The wall pass travels the lane a forecheck posts its wall-sealer in — F2 in a 2-1-2, the strong-side half-wall player in a 1-2-2. Intercepted at the hash marks, it's a scoring chance from the top of the circle.
 - **How it's defeated:** Any forecheck with a designated wall-sealer beats it — the second forechecker in a 2-1-2 whose job is exactly this, or the strong-side half-wall player in a 1-2-2. Teams also beat it by having their weak-side defenceman step down on the winger the instant the pass leaves, so the winger has no time even after a good pass.
 
 ![](diagram:breakout-up)
@@ -309,7 +309,7 @@ The pass across to your partner, changing the side of the ice the attack comes f
 
 - **Setup:** D1 has the puck low on one side; D2 is available low on the other.
 - **The read:** Use it when your side is flooded and the other is not. Its real value is that it costs the opposition time: a forecheck built to pressure one side has to travel across the ice, and everything they had covered comes uncovered while they do.
-- **Execution — and the rule that does not bend:** **Never through the slot.** Go behind your own net. ⚠️ **"Behind the net" is the default, not the only route** — some teams instead exchange high in the zone, above the tops of the circles, reasoning that an interception there is not a slot chance. That is a coaching convention and nothing in the rulebook touches it ([Risk Management](../hockey-iq/risk_management.md) labels it as one); ask which your team plays. **What does not vary is the slot itself.** A D-to-D pass below the goal line that gets intercepted means nothing — the puck is behind the net with no shot available. The same pass in front of the net that gets intercepted is a point-blank chance against, and it is one of the most punished mistakes in the game. Pass it quickly rather than skating it across; carrying the puck toward your partner just drags the pressure with you and hands them your problem.
+- **Execution — and the rule that does not bend:** **Never through the slot.** Go behind your own net. ⚠️ **"Behind the net" is the default, not the only route** — some teams instead exchange high in the zone, above the tops of the circles, reasoning that an interception there is not a slot chance. That is a coaching convention and nothing in the rulebook touches it ([Risk Management](../hockey-iq/risk_management.md) labels it as one); ask which your team plays. **What does not vary is the slot itself.** A D-to-D pass below the goal line that gets intercepted means nothing — the puck is behind the net with no shot available. The same pass in front of the net that gets intercepted is a point-blank chance against, and it is one of the most punished mistakes in the game — coaching emphasis, not a counted ranking. Pass it quickly rather than skating it across; carrying the puck toward your partner just drags the pressure with you and hands them your problem.
 - **The risk:** Executed correctly, this is one of the lowest-risk plays in hockey. Executed through the slot, it is one of the highest. There is very little middle ground.
 - **How it's defeated:** A 2-1-2 with two forecheckers arriving on separate sides beats D-to-D because there's already someone on your partner. A 1-2-2 defeats it by having F1 take away the D-to-D lane as their *first* responsibility — that is often exactly what the containing forechecker is told to do — forcing the puck up the wall into the two waiting forwards.
 
@@ -325,8 +325,8 @@ Position: D1 in the corner or behind the net under real pressure, with a winger 
 Read: A forechecker has sealed you against the boards and there is no passing lane through them; it is also the standard release valve when you simply have no time
 Technique: Height and pace — low and flat enough to stay on the boards, hard enough to carry all the way around; a soft rim dies in the corner and is a gift
 Technique: Aim it to arrive where a teammate can meet it, not simply "around"
-Risk: A rim concedes possession more often than any other option except an outright clear — a 50-50 dressed as a play
-Countered by: The most-anticipated play in hockey — any forecheck can post a player at the far wall, and skilled teams read the pressure you are under and pre-position without moving
+Risk: A rim concedes possession more often than any other option except an outright clear — a coaching judgement, not a tracked rate; a 50-50 dressed as a play
+Countered by: The play a defenceman sealed on the boards is most expected to make — coaching emphasis, not a counted ranking; any forecheck can post a player at the far wall, and good ones pre-position
 ```
 
 A hard shot along the boards that follows the curve of the rink around to a teammate further along — usually the far-side winger.
@@ -334,8 +334,8 @@ A hard shot along the boards that follows the curve of the rink around to a team
 - **Setup:** D1 has the puck in the corner or behind the net under real pressure. A winger is positioned around the boards to collect it.
 - **The read:** Rim when a forechecker has **sealed you against the boards** and there is no passing lane through them. It is also the standard release valve when you simply have no time.
 - **Execution:** Two things decide whether a rim works. **Height and pace:** keep it low and flat enough to stay on the boards and hard enough to carry all the way around — a soft rim dies in the corner and is a gift. **Target:** aim it to arrive *where a teammate can meet it*, not simply "around". See the trapezoid section (10) — this changes rim targeting fundamentally.
-- **The risk:** A rim concedes possession more often than any other option except an outright clear, because the receiver is collecting a moving puck on the wall with a defenceman closing. It's a 50-50 dressed as a play.
-- **How it's defeated:** The rim is the most-anticipated play in hockey. Any forecheck can post a player at the far wall to intercept it, and most do — the weak-side defenceman stepping down to the far wall to kill rims is standard. Skilled teams beat rims without even moving: they read the pressure you're under and pre-position.
+- **The risk:** A rim concedes possession more often than any other option except an outright clear, because the receiver is collecting a moving puck on the wall with a defenceman closing. **That ranking is a coaching judgement, not a tracked rate** — the exit tracking in section 1 measures controlled exits against clears, not one named breakout option against another. It's a 50-50 dressed as a play.
+- **How it's defeated:** The rim is the play a forecheck most expects from a defenceman sealed on the boards — coaching emphasis, not a counted ranking. Any forecheck can post a player at the far wall to intercept it, and most do — the weak-side defenceman stepping down to the far wall to kill rims is standard. Skilled teams beat rims without even moving: they read the pressure you're under and pre-position.
 
 ![](diagram:breakout-rim)
 
@@ -449,7 +449,7 @@ No possession, no goal against. Always available and never wrong when you're in 
 
 ## 4. Winger Timing and Positioning on the Wall
 
-This is the single most common amateur failure in hockey, and it is not a skill problem.
+This is one of the most common amateur failures in hockey — coaching emphasis rather than a counted ranking — and it is not a skill problem.
 
 ### The failure
 
@@ -550,7 +550,7 @@ Once you have it you have four things you can do: **skate** (feet moving up ice,
 
 ## 5. The Centre's Swing
 
-If the winger's job is the most botched, the centre's is the most misunderstood — and it does more damage when it goes wrong, because the centre being in the wrong place removes the *option* the whole structure relies on.
+If the winger's job is the most botched, the centre's is the most misunderstood of the three forward jobs — and it does more damage when it goes wrong, because the centre being in the wrong place removes the *option* the whole structure relies on.
 
 ### The swing, and where exactly it goes
 
@@ -688,7 +688,9 @@ Read: All-out pressure, all five opponents pushing up, usually late and chasing 
 Key: A press by definition leaves space behind it — one clean pass through the first layer and you are attacking an outnumbered defence
 Risk: A turnover under a press is an immediate high-danger chance
 Priority: First layer first — don't hunt the killer stretch pass; beat the first forechecker with a short, safe play, and the space behind will still be there two seconds later
-Options: Glass and out is completely defensible — take the icing if you have to, because an icing costs you a defensive-zone draw with no change and a press turnover costs you a goal
+Options: Glass and out is completely defensible — take the icing if you have to, because an icing costs you a defensive-zone draw and a press turnover costs you a goal
+Rule: After your own icing the NHL and IIHF bar the change (Rule 81.4) — but the bar lifts to replace an injured player, to put a pulled goalkeeper back, or when a penalty changes on-ice strength; never for a tired line
+Rule: The post-icing no-change bar is not universal: USA Hockey's Rule 624 attaches no substitution restriction to an icing at all, and Hockey Canada's 6.7(d) applies its 'no-change on icing' rule only in U18AAA, Junior, and in Senior at the Member's option
 ```
 
 **One line:** all-out pressure, all five opponents pushing up, usually late and chasing a goal.
@@ -697,7 +699,7 @@ Options: Glass and out is completely defensible — take the icing if you have t
 - **The reward is enormous.** A press by definition leaves space behind it. One clean pass through the first layer and you are attacking an outnumbered defence.
 - **The risk is equally enormous.** A turnover under a press is an immediate high-danger chance.
 - **First layer first.** Don't hunt the killer stretch pass. Beat the first forechecker with a short, safe play, and the space behind will still be there two seconds later.
-- **Glass and out is completely defensible.** Under a press, getting the puck the length of the ice away and forcing them to reset is a win. Take the icing if you have to — an icing costs you a defensive-zone draw with no change; a press turnover costs you a goal.
+- **Glass and out is completely defensible.** Under a press, getting the puck the length of the ice away and forcing them to reset is a win. Take the icing if you have to — a press turnover costs you a goal, and an icing costs you a defensive-zone draw and, **under the NHL and the IIHF, your line change** (Rule 81.4). ⚠️ **That bar is neither universal nor absolute.** USA Hockey's **Rule 624** attaches no substitution restriction to an icing at all, and Hockey Canada's **6.7(d)** applies its *"'no-change on icing' rule"* only *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"*. And where it does bind you, 81.4's own exceptions let you substitute *"to replace an injured player"*, to put back a goalkeeper who had been pulled for an extra attacker, or when a penalty has changed on-ice strength — so a hurt teammate comes off; a tired one does not. Section 3 sets the rule out in full.
 
 ### When they are already set — the control breakout
 
@@ -720,7 +722,7 @@ Three are named in coaching material, and there is no published count of which t
 
 - **Blue-to-blue stretch.** The puck-carrying defenceman waits behind the net for the centre to come back with speed; the centre swings through behind the net, the partner swings to the opposite corner, and the two wingers wait at the corners of the near and far blue lines. That gives the carrier four options — hand it to the centre to weave through, or move it to either winger, or back to the partner and up the far side.
 - **Strong-side slant.** The centre swings behind the net or into the far corner and the strong-side winger swings *with* them; as the pair move up ice, **one slants inside and one stays wide**. The far winger stations themselves in the middle of the far blue line ready to come back into the play, and the partner waits deep in the corner. The pass goes D-to-D first, and the second defenceman then chooses between the slanting centre through mid-ice, the wide winger, or the far winger off the boards. The two swinging players are the ones who break the trap, and they only do it with speed.
-- **Three high** — not the power-play umbrella of the same name, which [Special Teams](special_teams.md) covers. Here the carrier holds the puck behind the net for a beat while **all three forwards stay high in the neutral zone** and the partner supports wide into a corner. The carrier then steps out and picks: the centre curling through mid-ice, or a winger either moving or **posted up** — standing still along the boards at a line. **Posted up still means body open to the ice and head up, and never your back to the boards. Get your skates parallel to the wall instead, forearm and hip into contact if it comes, and chin off your chest**; a stationary receiver on the wall is the easiest target in hockey, and [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the override. If the centre takes it under pressure, they can chip it past and turn it into a footrace.
+- **Three high** — not the power-play umbrella of the same name, which [Special Teams](special_teams.md) covers. Here the carrier holds the puck behind the net for a beat while **all three forwards stay high in the neutral zone** and the partner supports wide into a corner. The carrier then steps out and picks: the centre curling through mid-ice, or a winger either moving or **posted up** — standing still along the boards at a line. **Posted up still means body open to the ice and head up, and never your back to the boards. Get your skates parallel to the wall instead, forearm and hip into contact if it comes, and chin off your chest**; a stationary receiver on the wall is the one who gets hit, and [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the override. If the centre takes it under pressure, they can chip it past and turn it into a footrace.
 
 **Expect to be taught one of them, not three.** Coaching material treats all three as workable and warns that a team trying to hold all three executes none of them well, so the usual advice is to pick one and drill it until nobody has to think. **Find out which one is yours, and learn where you are standing in it** — every one of these depends on four players being somewhere specific at the same moment.
 
@@ -729,7 +731,7 @@ Three are named in coaching material, and there is no published count of which t
 ## 7. Breakouts from a Defensive-Zone Faceoff
 
 ```facts
-Key: The moment after a defensive-zone draw is the most structured situation in hockey, and the single best opportunity for a genuine set play
+Key: The moment after a defensive-zone draw is the most structured situation in hockey and the best chance for a genuine set play — coaching emphasis, not a counted ranking
 Options: Off a won draw — the wheel off the faceoff, or its three variations: win-and-up, win-and-reverse, and the modified wheel
 Technique: Win-and-reverse works because the centre swings low behind the play after a draw rather than sprinting up ice
 Action: Decide the play before the puck drops — look at your winger, look at your partner, know what happens next
@@ -739,7 +741,7 @@ Never: Chase as a group — that is exactly how the goal gets scored
 Read: Once you win it back, treat it as a quick-up — they have just committed to offence and their structure is at its weakest
 ```
 
-The moment after a defensive-zone draw is the most structured situation in hockey: everyone's feet are set, everyone knows where everyone is, and nothing is moving yet. It is the single best opportunity for a genuine **set play** — and the point at which your team's lack of one is most obvious.
+The moment after a defensive-zone draw is the most structured situation in hockey (coaching emphasis, not a counted ranking): everyone's feet are set, everyone knows where everyone is, and nothing is moving yet. It is the single best opportunity for a genuine **set play** — and the point at which your team's lack of one is most obvious.
 
 **Alignment, draw technique and faceoff violations are in [Faceoffs](faceoffs.md).** What follows is only the breakout that comes out of the draw. (The common defensive-zone setup: centre on the dot, one defenceman on the boards side and one in the slot, wingers on the hash marks — though which winger stands where varies by team.)
 
@@ -768,7 +770,7 @@ Rule: A goal on a delayed call does not wash out everything the offender owes �
 Convention: Pulling the goalie here is a coaching choice, not an automatic consequence of the arm going up — plenty of rec, beer-league and youth teams do not, and often should not
 Rule: A goalie removed for an extra attacker in regular-season overtime must wait for the next stoppage and cannot change on the fly, or it is a bench minor for an ineligible player (NHL Rule 84.2)
 Rule: That restriction is NHL-only — IIHF Rule 84.2 is one sentence permitting the pull — and across England, Wales, Scotland and Northern Ireland overtime is played only in NIHL, and SNL where its regulations provide (In-House Rules, Rule 84); see UK and England Rules
-Never: Clear the puck — a clear surrenders control and ends the advantage for nothing, and it is the most common delayed-penalty error in amateur hockey
+Never: Clear the puck — a clear surrenders control and ends the advantage for nothing, and coaches name it the commonest delayed-penalty error in amateur hockey, though no count measures it
 Action: Take the safe possession play every time — D-to-D behind the net, back to the point, hold it in the corner — and buy time for the goalie to reach the bench
 Risk: The own-goal is the only way you can lose from here, so no blind passes back through your own crease with an empty net behind it
 ```
@@ -788,7 +790,7 @@ Risk: The own-goal is the only way you can lose from here, so no blind passes ba
 
 With the goalie off:
 
-- **Do not clear the puck.** Ever. A clear surrenders control and ends the advantage for nothing. This is the most common delayed-penalty error in amateur hockey.
+- **Do not clear the puck.** Ever. A clear surrenders control and ends the advantage for nothing. Coaching material names it the commonest delayed-penalty error in amateur hockey, though no count measures that.
 - **Take the safe possession play every time.** D-to-D behind the net, back to the point, hold it in the corner. The goal is to keep control until your sixth attacker is on the ice.
 - **Buy time for the change.** Playing the puck back and even out of the attacking zone to let the goalie reach the bench and the extra attacker join is standard and correct.
 - **Then attack.** Once you're set, you have a genuine 6-on-5 that cannot be punished. Get a shot on net; the worst outcome is a whistle and a power play.
@@ -846,14 +848,14 @@ Every choice in this document depends on one question: **how much time do I have
 
 ```facts
 Priority: Every choice depends on one question — how much time do I have?
-Action: Look before you have the puck, not after; the shoulder check on the way back to a retrieval is the single highest-value habit for a defenceman
+Action: Look before you have the puck, not after; the shoulder check on the way back to a retrieval is a defenceman's highest-value habit — coaching emphasis, not a counted ranking
 Read: Count the forecheckers, not the pressure — one means options and probably time to wheel, two means the corners are gone and you are playing wall/reverse/rim, three deep means somebody up ice is free
 Read: Watch their feet, not their sticks — a forechecker gliding is containing you, a forechecker striding is committing
 Read: Know which way they are steering you; if you can feel yourself being funnelled, go the other way while the option exists
 Key: Time is a two-second window, not a state — by the time you feel pressure the pass you wanted has usually already closed, so decide early
 ```
 
-- **Look before you have the puck, not after.** The check over your inside shoulder on the way back to a retrieval is the single highest-value habit for a defenceman. You cannot buy that information back once you're facing the boards.
+- **Look before you have the puck, not after.** The check over your inside shoulder on the way back to a retrieval is a defenceman's highest-value habit — coaching emphasis, not a counted ranking. You cannot buy that information back once you're facing the boards.
 - **Count the forecheckers, not the pressure.** One forechecker means you have options and probably time to wheel. Two means the corners are gone and you're playing wall/reverse/rim. Three deep means somebody up ice is free — and also that you may have nothing low.
 - **Watch their feet, not their sticks.** A forechecker gliding is containing you; a forechecker striding is committing. The first calls for a play up the wall or a carry; the second is what a reverse eats alive.
 - **Know which way they're steering you.** Most forechecks want you on one specific side. If you can feel yourself being funnelled, that's the read — go the other way while the option exists.

@@ -137,14 +137,15 @@ const up = {
 
   caption:
     'The “up” breakout — the direct pass from the puck-carrying defenceman to the strong-side ' +
-    'winger on the wall, the fastest exit in hockey and, when it is there, the right one. Drawn in ' +
+    'winger on the wall, the fastest of the nine breakout options when the lane is open — no count ' +
+    'ranks breakout plays by speed — and, when it is there, the right one. Drawn in ' +
     'your own defensive zone at the left of the picture, moving left to right. D1 has the puck ' +
     'below the goal line, the winger is on the boards between the hash marks and the goal line, and ' +
     'the centre is low in the middle as the bail-out; the read drawn here is the first forechecker ' +
     'committed behind the net, which leaves the wall lane open. Pass firmly and to the winger’s ' +
     'stick, not to the boards behind him. What a still picture cannot show is the risk: that pass ' +
-    'travels through the most heavily patrolled lane on the ice, and any forecheck with a designated ' +
-    'wall-sealer — the second forechecker in a 2-1-2, the strong-side half-wall player in a 1-2-2 — ' +
+    'travels the lane a forecheck posts its wall-sealer in, and any forecheck that has one — the ' +
+    'second forechecker in a 2-1-2, the strong-side half-wall player in a 1-2-2 — ' +
     'is standing in it, so intercepted at the hash marks it becomes a scoring chance from the top of ' +
     'the circle.',
 
@@ -380,9 +381,11 @@ const rim = {
     'works — height and pace, low and flat enough to stay on the boards and hard enough to carry all ' +
     'the way round, because a soft rim dies in the corner and is a gift; and target, aimed to arrive ' +
     'where a teammate can actually meet it rather than simply “around”. Be honest about what this ' +
-    'is: the rim is the most-anticipated play in hockey, any forecheck can post a player at the far ' +
+    'is: the rim is the play a forecheck most expects from a defenceman sealed on the boards — ' +
+    'coaching emphasis, not a counted ranking — any forecheck can post a player at the far ' +
     'wall and most do, and it concedes possession more often than any option except an outright ' +
-    'clear. The trapezoid rules where you play change where a rim should be aimed, and that is its ' +
+    'clear. That ranking, too, is a coaching judgement rather than a tracked rate. The trapezoid ' +
+    'rules where you play change where a rim should be aimed, and that is its ' +
     'own section.',
 
   describe:
@@ -448,8 +451,9 @@ const dToD = {
     'this diagram exists: go behind your own net, never through the shaded area. Intercepted below ' +
     'the goal line the pass means nothing, because there is no shot from there; the same pass in ' +
     'front of the net is a point-blank chance against, and it is one of the most punished mistakes ' +
-    'in the game. Pass it quickly rather than skating it across, because carrying the puck toward ' +
-    'your partner drags the pressure with you and hands him your problem.',
+    'in the game — coaching emphasis, not a counted ranking. Pass it quickly rather than skating it ' +
+    'across, because carrying the puck toward your partner drags the pressure with you and hands ' +
+    'him your problem.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
@@ -666,7 +670,14 @@ const wingerWall = {
     'slow down and re-accelerate — and arrive with the body open to the ice rather than the nose ' +
     'against the glass. Wall position is system-dependent: a flat or spread structure asks wingers ' +
     'to hold higher toward the blue line, and a stretch or flying-winger structure sends one winger ' +
-    'up ice entirely, so find out which one you are in.',
+    'up ice entirely, so find out which one you are in. ' +
+    // SAFETY. Not composed here: this is the owner's own wording, content/systems/breakouts.md:516
+    // — "Never: Shield with your back to the boards, or duck. Get your skates parallel to the
+    // boards instead, forearm and hip to the wall, head up and chin off your chest". The sibling
+    // off-wing-open-to-the-ice teaches the same reception and already carries it. LAST, because
+    // the renderer ambers from the first glyph to the end of the caption with no closing delimiter.
+    '⚠️ Never shield with your back to the boards, or duck. Get your skates parallel to the ' +
+    'boards instead, forearm and hip to the wall, head up and chin off your chest.',
 
   describe:
     'The full sheet, the defending zone at the left. The winger W1 is high in his own zone, just ' +

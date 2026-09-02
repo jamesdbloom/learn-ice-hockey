@@ -212,17 +212,18 @@ const collapseCorner = {
     'and does not get drawn to it; both wingers are still high on the points; and the centre ' +
     'is leaving the high slot to go down as the second body into the corner battle, because ' +
     'two on one wins it. ' +
-    'Two on one is about outnumbering the battle, not about joining a pin. Pin the puck, not ' +
-    'the player: that is a rule and not a nicety, because IIHF women’s Rule 101.1 does not ' +
-    'allow players competing for possession of the puck to use the boards to make contact with ' +
-    'an opponent to eliminate her from the play, push her into the boards, or pin her along ' +
-    'the boards. ' +
+    'Two on one is about outnumbering the battle, not about joining a pin. ' +
     'The centre going down leaves the high slot momentarily empty — the seam the puck comes ' +
     'back through — ' +
     'and the next diagram shows who fills it. ' +
     'This is the first of two frames of a movement, not a shape to hold: under man-on-man or ' +
     'a hybrid these same five players would be reading bodies rather than areas, so ask your ' +
-    'coach which system your team plays.',
+    'coach which system your team plays. ' +
+    '⚠️ Pin the puck, not ' +
+    'the player: that is a rule and not a nicety, because IIHF women’s Rule 101.1 does not ' +
+    'allow players competing for possession of the puck to use the boards to make contact with ' +
+    'an opponent to eliminate her from the play, push her into the boards, or pin her along ' +
+    'the boards.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +
@@ -435,7 +436,7 @@ const walkDownMan = {
   caption:
     'The same walk-down under man-on-man: the winger goes with him, all the way, wherever he ' +
     'goes, including into the corner — which is the sharpest practical difference from low ' +
-    'zone collapse and the fastest way to tell which system a team is playing. ' +
+    'zone collapse and one of the tells that separates them — though the first answer is to ask your coach. ' +
     'Everybody else is on a body too: both defencemen on the two most dangerous forwards low, ' +
     'the centre on the third, the other winger on the other defenceman. ' +
     'A hybrid produces very nearly this picture, and the difference is only the trigger — a ' +

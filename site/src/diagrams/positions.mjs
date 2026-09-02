@@ -571,9 +571,9 @@ const wingerOffensiveZone = {
     'the centre: the goalmouth and the high slot are two patches with two owners, and running ' +
     'them together is how two forwards end up standing on the same square metre. "Shoot first" is ' +
     'a bias rather than a rule — a teammate with a clear look at an open side is always worth the ' +
-    'extra pass. At the net front, live at the edge of the blue paint and keep your body out of ' +
-    'the crease: screening from outside it without contact is legal, but positioning alone can ' +
-    'void a goal if it stops the goalie moving freely or defending the net (NHL Rule 69.1).',
+    'extra pass. At the net front, work just outside the blue paint and keep your body out of ' +
+    'the crease: screening from outside it without contact is legal, ' +
+    "but that is keyed to the crease: the sentence in NHL and IIHF Rule 69.1 that voids a goal for where you stood requires the attacker to have entered it, and 69.4, the rule for outside it, reaches contact only — because both books’ own reference tables allow the goal where an attacker plants himself outside the crease and obstructs the goalie’s vision (NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, at Situation 5E). What the disallowed rows have in common is the attacker being inside the crease, not whether he is moving, and that is the line 69.1 draws itself: its “only if” caps when a goal may be disallowed, while the sentence that actually disallows one requires the attacker to have entered the goal crease. So the tables are applying the rule rather than contradicting it — keep your feet out of the paint, and off the crease line at its edge, which the IIHF counts as part of the crease.",
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +
@@ -807,7 +807,8 @@ const dToD = {
     'A defence-to-defence pass in your own end goes behind your own net, below the goal line, and ' +
     'never across the slot — the shaded area, and the highest-danger ice there is. A D-to-D pass ' +
     'in front of the net that gets intercepted there is a point-blank chance against, and it is ' +
-    'one of the most punished mistakes in hockey. The same holds if you are carrying rather than ' +
+    'one of the most punished mistakes in the game — coaching emphasis, not a counted ranking. ' +
+    'The same holds if you are carrying rather than ' +
     'passing: if no pass is on, skate behind the net to the other side instead of going through ' +
     'the middle. Moving the puck to your partner is often all you need, because it makes the ' +
     'forecheck reset and shift across. What varies between teams is the route rather than the ' +

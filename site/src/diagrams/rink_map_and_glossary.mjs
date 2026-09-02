@@ -227,9 +227,10 @@ const theGoalmouth = {
     'It is a different job from the slot, one layer apart: in the low zone collapse (zone) ' +
     'coverage assumed here as the default — a coaching choice, not a rule — the ' +
     'weak-side defenceman is responsible for the goalmouth and does not leave it, and getting the two mixed ' +
-    'up is one of the most common causes of a blown assignment. ' +
+    'up is one of the most common causes of a blown assignment — coaching observation rather than ' +
+    'a counted ranking. ' +
     'The crease itself is the goaltender’s space and the shading is not an invitation to ' +
-    'stand in it: the instruction is to live at the edge of the paint, not in it.',
+    'stand in it: the instruction is to work just outside the paint, not on its edge and not in it — three of the four books count the red line as crease.',
 
   describe:
     'The attacking half of the rink, the net at the right. A small shaded box sits directly ' +

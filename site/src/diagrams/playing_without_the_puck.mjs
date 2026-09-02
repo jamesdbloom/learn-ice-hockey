@@ -163,7 +163,9 @@ const loosePuckWhoGoes = {
     'because where they stand is not fixed, and the LETTERS name positions only because the ' +
     'notation has no other way to label a player — these three jobs are assigned by who is ' +
     'closest, not by position. How you arrive is deliberately not shown: the arrow stops five ' +
-    'feet short, because of how a puck race to the wall can end. Two postures carry two ' +
+    'feet short, because of how a puck race to the wall can end. How you arrive into one — ' +
+    'angling, contact and protecting yourself against the boards — is a ' +
+    'whole subject of its own. ⚠️ Two postures carry two ' +
     'different dangers, and they are not the same warning. A chin dropped to the chest is ' +
     'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
     'contact with the boards or the goal post. A back turned to the boards is the ' +
@@ -171,9 +173,7 @@ const loosePuckWhoGoes = {
     'severe head or neck injury even when the hit is light. Neither warning depends on the ' +
     'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
     'skates parallel to it, take the contact on your forearm and hip, head up and chin off ' +
-    'your chest, and never turn your back to the wall or duck. How you arrive into one — ' +
-    'angling, contact and protecting yourself against the boards — is a ' +
-    'whole subject of its own.',
+    'your chest, and never turn your back to the wall or duck.',
 
   describe:
     'Your own end zone, the net at the right, your goaltender in the crease. A loose puck sits ' +
@@ -244,8 +244,8 @@ const unmarkedNotAvailable = {
     'high slot: the nearest defender is a good ten feet away, and you are ' +
     'still not available. The ' +
     'shaded band is the only line the puck can travel from the carrier to your blade, and a ' +
-    'defenceman standing well off to the side has laid his stick flat across it — that is the ' +
-    'most common of the three failures that leave an open player unavailable, and it is ' +
+    'defenceman standing well off to the side has laid his stick flat across it — the one of the three ' +
+    'requirements that nothing about your own position tells you about, and it is ' +
     'the whole difference between ' +
     'unmarked and available. This notation has no stick symbol, so the defenceman is drawn where ' +
     'his body is and the reach into the lane is not drawn at all. The fix is to look ' +
@@ -332,11 +332,28 @@ const screenSightline = {
     'the instructions the picture cannot show are to keep your stick on the ice, because a screen ' +
     'is also a tip and rebound threat, and to move late. Nothing here establishes that the ' +
     'position drawn is legal, and staying out of the blue paint is ' +
-    'necessary and not sufficient: under NHL Rule 69.1 a goal is disallowed ' +
-    'where an attacking player, "either by his positioning or by contact", impairs the ' +
+    'necessary and not sufficient: NHL Rule 69.1 reaches an attacking player who, ' +
+    '"either by his positioning or by contact", impairs the ' +
     'goalkeeper’s ability to move freely within his crease or defend his goal — no contact ' +
-    'required — and Rule 69.3 for establishing a significant position within the crease. Here ' +
-    '"screen" means the goaltender’s sightline and nothing else.',
+    'required — and Rule 69.3 disallows a goal for establishing a significant position within the crease. The ' +
+    'IIHF’s own 69.1 carries the same positioning limb in its own words. Read whole, though, both ' +
+    'books put the crease at the centre of it: 69.1’s “only if” caps when a goal may be disallowed, while ' +
+    'the sentence that actually disallows one requires the attacker to have entered the goal crease, and both ' +
+    'books’ reference tables apply exactly that line, allowing ' +
+    'the goal where an attacker plants himself outside the crease and obstructs the goalie’s ' +
+    'vision (NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, ' +
+    'at Situation 5E); what the disallowed rows have in common is the attacker being inside the ' +
+    'crease, not whether he is moving. So keep both feet out of the paint, and off the crease line at its ' +
+    'edge, which the IIHF counts as part of the crease. Here ' +
+    '"screen" means the goaltender’s sightline and nothing else. ' +
+    // SAFETY. Owner's own wording, content/hockey-iq/playing_without_the_puck.md:560 — "Never: Meet
+    // a goal post head first, and never duck — head up, chin off your chest. A head-down,
+    // head-first hit on a goal post is the same injury as one on the boards, and can happen at
+    // walking speed". Key Takeaway 7 (:891) says "the screen is the one that can hurt you"; before
+    // this the caption was 1,754 characters of Rule 69 and none of the injury reached it. LAST.
+    '⚠️ Never meet a goal post head first, and never duck — head up, chin off your chest. A ' +
+    'head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
+    'happen at walking speed.',
 
   describe:
     'The attacking end zone, the opposition net at the right with its goaltender in the crease, ' +
@@ -561,7 +578,14 @@ const driveTheNetBefore = {
     'happens ' +
     'in the last few feet of a net drive is contact in front of a goaltender, which this picture ' +
     'does not teach. No puck is drawn at all, because the whole subject here is the player who ' +
-    'does not have it.',
+    'does not have it. ' +
+    // SAFETY. The scope disclaimer above ("this picture does not teach") is not a warning when it
+    // is read aloud, so the owner's own instruction follows it verbatim in substance:
+    // content/hockey-iq/playing_without_the_puck.md:507 — "Never: Arrive into the goal frame head
+    // first. Know where the posts are, and take a post or the boards with an arm or a leg instead.
+    // Head up, chin off your chest, and never duck". LAST, for the promotion rule.
+    '⚠️ Never arrive into the goal frame head first. Know where the posts are, and take a post ' +
+    'or the boards with an arm or a leg instead. Head up, chin off your chest, and never duck.',
 
   describe:
     'The attacking half of the rink, the opposition net and goaltender at the right. One of your ' +

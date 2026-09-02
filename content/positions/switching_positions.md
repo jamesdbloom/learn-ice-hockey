@@ -316,15 +316,17 @@ This is the section that distinguishes a position switch from simply learning a 
 
 | Switch | The habit that served you | What it becomes |
 |---|---|---|
-| **Wing → centre** | Lane discipline: hold your side, don't chase | **Passivity.** You stay on the wall or in the high slot when the puck is in the corner, and your strong-side defenceman is alone in a battle they will lose |
-| **Wing → centre** | "Stay high" on the opposing point | **Standing too high on the breakout.** Your defenceman has no middle-lane option and eats the forecheck |
-| **Centre → wing** | Go where the decision is | **Drifting into the middle.** You collapse your own line's spacing and let two defenders cover three forwards |
-| **Centre → wing** | Manage the rotations | **Talking instead of covering.** The opposing point man is unmarked while you organise |
-| **Forward → defence** | Attack the puck, win it back | **Chasing.** Both defencemen drawn to the puck, goalmouth empty. Coaches at every level name this as one of the commonest causes of goals against — coaching consensus, not a statistic; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) covers the claim and the caveat |
-| **Forward → defence** | Skate forwards at the problem | **Pivoting early**, and getting beaten by the first change of direction |
-| **Defence → forward** | Stay above the puck, never gamble | **Reluctance to attack.** You arrive late to space that has already closed, and your line plays 2-on-5 in the offensive zone |
-| **Defence → forward** | Contain, deny, wait for the mistake | **Not initiating the forecheck.** F1 is whoever gets there first, and if you hesitate nobody is F1 |
-| **Any → off wing** | Receive on your forehand | **Turning to find the forehand** on a wall pass, and losing the puck while you do |
+| **Wing to centre** | Lane discipline: hold your side, don't chase | **Passivity.** You stay on the wall or in the high slot when the puck is in the corner, and your strong-side defenceman is alone in a battle they will lose |
+| **Wing to centre** | "Stay high" on the opposing point | **Standing too high on the breakout.** Your defenceman has no middle-lane option and eats the forecheck |
+| **Centre to wing** | Go where the decision is | **Drifting into the middle.** You collapse your own line's spacing and let two defenders cover three forwards |
+| **Centre to wing** | Manage the rotations | **Talking instead of covering.** The opposing point man is unmarked while you organise |
+| **Forward to defence** | Attack the puck, win it back | **Chasing.** Both defencemen drawn to the puck, goalmouth empty |
+| **Forward to defence** | Skate forwards at the problem | **Pivoting early**, and getting beaten by the first change of direction |
+| **Defence to forward** | Stay above the puck, never gamble | **Reluctance to attack.** You arrive late to space that has already closed, and your line plays 2-on-5 in the offensive zone |
+| **Defence to forward** | Contain, deny, wait for the mistake | **Not initiating the forecheck.** F1 is whoever gets there first, and if you hesitate nobody is F1 |
+| **Any position to off wing** | Receive on your forehand | **Turning to find the forehand** on a wall pass, and losing the puck while you do |
+
+**On chasing specifically:** coaches at every level name both defencemen being drawn to the puck, leaving the goalmouth empty, as one of the commonest causes of goals against. That is coaching consensus rather than a statistic, and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) covers both the claim and the caveat.
 
 The general fix is the same in every row: **name the habit out loud before the shift.** "I am going to feel wrong going into that corner and I am going in anyway." Unlearning is slower than learning — [Practice and Development](../off-the-ice/practice_and_development.md) treats this seriously under *The unlearning problem* — and the only reliable lever an individual player has is deliberate attention on the specific reflex, not general effort.
 

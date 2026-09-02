@@ -165,6 +165,34 @@ def caption_units():
         data = json.loads(path.read_text())
     except (json.JSONDecodeError, OSError):
         return None
+
+    # ⚠️ STALENESS, which the docstring above CLAIMED and the code did not do.
+    # Round 58 rewrote ten-plus captions in `site/src/diagrams/*.mjs` and every
+    # clean run of this checker covered the OLD text, because the JSON is a
+    # build product and nobody had rebuilt. **A caption edit without a rebuild
+    # was unchecked by construction, and nothing said so.**
+    #
+    # This is the "passes because it found nothing to check" trap the docstring
+    # already names, in its second form: it found something, and the something
+    # was out of date.
+    sources = sorted((ROOT / "site" / "src" / "diagrams").glob("*.mjs"))
+    newer = [s for s in sources if s.stat().st_mtime > path.stat().st_mtime]
+    if newer:
+        names = ", ".join(s.name for s in newer[:4])
+        more = f" and {len(newer) - 4} more" if len(newer) > 4 else ""
+        print(
+            f"check_absolutes: ⚠️  CAPTIONS NOT CHECKED — {len(newer)} diagram "
+            f"source(s) are newer than the built diagrams.json ({names}{more}).\n"
+            "    Captions are read from the BUILD PRODUCT, so the text below is\n"
+            "    stale. Run `node site/scripts/build-diagrams.mjs` (absolute node\n"
+            "    path; ~6 min) and re-run this checker.",
+            file=sys.stderr,
+        )
+    return None if newer else _caption_units_from(data)
+
+
+def _caption_units_from(data):
+    """Split out so the staleness guard above can refuse to return stale units."""
     units = []
     for did, entry in sorted(data.items()):
         if not isinstance(entry, dict):
@@ -235,8 +263,9 @@ def main() -> int:
                 findings.append((rel, lineno, sent.strip()))
 
     if captions is None:
-        print("check_absolutes: ⚠️  site/src/data/diagrams.json missing or unreadable — "
-              "NO captions scanned. Run `node site/scripts/build-diagrams.mjs`.")
+        print("check_absolutes: ⚠️  NO captions scanned — diagrams.json is missing, "
+              "unreadable, or STALE against site/src/diagrams/*.mjs. "
+              "Run `node site/scripts/build-diagrams.mjs`.")
         print("check_absolutes: this run did NOT check the voiced caption layer.")
     print(f"check_absolutes: {len(files)} documents + "
           f"{len(captions or [])} diagram caption/describe units scanned")

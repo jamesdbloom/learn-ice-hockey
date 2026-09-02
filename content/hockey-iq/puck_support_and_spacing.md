@@ -149,6 +149,8 @@ There is no governing body that publishes a support distance, and coaches differ
 
 ![](diagram:support-distance-range)
 
+One of those adjustments needs its arithmetic stated, because "international ice is wider" is only half true. **IIHF Rule 1.2** sanctions a sheet 60 m long and **26 m to 30 m wide**. At the wide end — 30 m, about 98 feet — you have roughly thirteen feet more width than an NHL rink, and the same tactical shape occupies more ground. At the narrow end — 26 m, about 85.3 feet — it is essentially NHL width and nothing changes. So the wider-ice adjustment in the last row below applies only at the wide end of that range.
+
 Then adjust:
 
 | Situation | Adjust support distance | Why |
@@ -159,7 +161,7 @@ Then adjust:
 | **Neutral zone** | **Longer, and mostly lateral** | You want width to stretch their line across the ice, and you have room to receive. |
 | **Offensive zone, below the goal line** | **Shorter** | Everything below the dots happens in tight quarters at speed. |
 | **Offensive zone, above the dots** | **Longer** | Point players are deliberately far from the puck; that is what makes them uncovered. |
-| **Wider international ice** | **Slightly longer — but check the rink first** | IIHF Rule 1.2 sanctions a sheet 60 m long and **26 m to 30 m wide**. At the wide end (30 m ≈ 98 ft) you have about thirteen feet more width than an NHL rink and the same tactical shape occupies more ground. At the narrow end (26 m ≈ 85.3 ft) it is essentially NHL width and nothing changes. "International ice is wider" is only true of the wide end of the range. Distances scale; angles do not. |
+| **Wider international ice** | **Slightly longer — but check the rink first** | Only at the wide end of the IIHF's 26-to-30-metre range (Rule 1.2); at the narrow end it is essentially NHL width. Distances scale; angles do not. |
 
 **🇬🇧 If you play in Britain, this points the wrong way.** The 2026-27 In-House Rules authorise rinks *"with a non-standard playing surface (below 56 m × 26 m)"* for all levels of hockey, **except** Sutton in England and Coatbridge in Scotland, which are permitted up to U16 only — an authorisation that is short of IIHF Rule 1.2 on **both** dimensions — so the likely correction here is smaller and shorter, not wider. Measure your rink; [UK and England Rules](../foundation/uk_rules.md) has the detail.
 

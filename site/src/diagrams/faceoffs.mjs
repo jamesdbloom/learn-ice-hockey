@@ -354,10 +354,12 @@ const dzoneTieUp = {
   width: 900,
 
   caption:
-    'The same defensive-zone draw on a tie-up, which is the most likely of the three outcomes. ' +
+    'The same defensive-zone draw on a tie-up, which is the most likely of the three outcomes — ' +
+    'a coaching estimate rather than a counted figure. ' +
     'A tied-up draw is a loose puck in a two-foot area with eight players around it, and it ' +
     'belongs to whoever moves first — this is the single most under-coached moment in hockey, ' +
-    'because half the players on the ice wait to see what happens. ' +
+    'coaching observation rather than a counted ranking, and it shows: players wait to see ' +
+    'what happens instead of moving on the drop. ' +
     'Everyone jumps; the two arrows are the inside winger and the boards-side defenceman, who in ' +
     'this alignment are usually the two closest bodies and so should be the two who attack it. ' +
     'Which two are nearest depends on the alignment your team actually runs, and the one drawn ' +

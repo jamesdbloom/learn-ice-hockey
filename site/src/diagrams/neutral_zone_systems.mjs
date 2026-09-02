@@ -476,8 +476,8 @@ const pressure = {
     'defencemen hold a deliberately tight gap back toward your own blue line, both prepared to step up. ' +
     'F3 holds the middle, level with or slightly ahead of the puck, and does not drift to a wall, because ' +
     'the pass that hurts you comes up the middle; the strong-side defenceman steps up hard on a pass to ' +
-    'the wall, which is the aggressive gap that makes the whole thing work and the riskiest decision on ' +
-    'the ice; the weak-side defenceman stays home as your only genuine safety. Where the two forecheckers ' +
+    'the wall, which is the aggressive gap that makes the whole thing work and the decision with the least ' +
+    'cover behind it; the weak-side defenceman stays home as your only genuine safety. Where the two forecheckers ' +
     'stand inside the zone is the 2-1-2’s business rather than the neutral zone’s, so it is ' +
     'drawn only as two forwards deep. Note the phase: this is the moment the puck comes out, and while ' +
     'the forecheck is still live those same two defencemen are the length of the neutral zone further ' +

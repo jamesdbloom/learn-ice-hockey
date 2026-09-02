@@ -330,7 +330,7 @@ const halfWallOptions = {
     'not a sequence — only one of them happens, and nothing in the picture says which comes ' +
     'first. Which one is on is a read: the low pass is the safe continuation that feeds the ' +
     'cycle, the high pass is the shot generator when the defence has collapsed low and left the ' +
-    'point unpressured, the seam is the highest value and the shortest window, and taking it ' +
+    'point unpressured, the seam is the highest value, the highest risk and the shortest window, and taking it ' +
     'yourself is best when your check is flat-footed or has turned their hips. The failure is ' +
     'arriving on the wall with only one of these in mind, because you will then ' +
     'play it whether or not the slot was open. Defenders other than the goaltender are not ' +
@@ -478,18 +478,26 @@ const netFrontScreen = {
     'get wrong: it is eight feet wide at the goal line and six feet deep, so the six feet is the ' +
     'depth and not the half-width, and "three feet out from the goal line" is inside the paint ' +
     'rather than clear of it. A screen from outside the crease without contact is normally legal ' +
-    'under NHL rules and you should do it constantly — but Rule 69.1 can still void a goal where ' +
-    "positioning alone impairs the goalie's ability to move freely or defend, and Rule 69.3 " +
-    'voids it outright for a significant vision-obstructing position inside the crease, with no ' +
-    'contact at all. USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter still — there a foot ' +
-    'in the paint can cost you the zone and not just the goal. One rec book is stricter again: ' +
-    'the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from standing in ' +
-    'the goal crease unless the puck is in the goal crease area, disallows the goal if one does, ' +
-    'and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read that ' +
-    'as one rec book and not as the rec position — CARHA governs CARHA-affiliated leagues only. ' +
-    'Rec and beer leagues are often said to impose stricter house rules still, but how many do ' +
-    'is a question about leagues rather than about books, and this document has no count for ' +
-    "it. So keep your feet out of the blue paint and read your own league's rule.",
+    'under NHL and IIHF rules and you should do it constantly — but it is keyed to the crease: ' +
+    'every clause of Rule 69 that voids a goal for where you stood names it. 69.1’s disallowing ' +
+    'sentence requires the attacker to have entered the crease, 69.3 voids the goal outright for a ' +
+    'significant vision-obstructing position inside it with no contact at all, and 69.4, the rule ' +
+    'for outside it, reaches contact only. Both books’ own reference tables agree, allowing the ' +
+    'goal where an attacker plants himself outside the crease and obstructs the goalie’s vision ' +
+    '(NHL Table 14, and IIHF 2025/26 Appendix IV Table 16, renumbered Table 14 in 2026/27, at ' +
+    'Situation 5E) — what the disallowed rows have in common is the attacker being inside the ' +
+    'crease, not whether he is moving. That reads the rule’s structure rather than anything either ' +
+    'book states in terms, and both add that Rule 69 is enforced exclusively in accordance with the ' +
+    'on-ice judgement of the Referee(s). USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
+    'still — there a foot in the paint can cost you the zone and not just the goal. One rec book is ' +
+    'stricter again: the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from ' +
+    'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +
+    'one does, and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read ' +
+    'that as one rec book and not as the rec position — CARHA governs CARHA-affiliated leagues only, ' +
+    'and rec and beer leagues are often said to be stricter still, though this document has no count ' +
+    'of how many are. So keep your feet out of the blue paint, and off the crease line at its edge, ' +
+    'which the IIHF, USA Hockey and Hockey Canada all count as part of the crease — and read your ' +
+    "own league's rule.",
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
@@ -559,7 +567,7 @@ const behindTheNet = {
     'options are deliberately not drawn: the wrap-around and the bank off the ' +
     "back of the goalie's pads both live in the goal mouth, which this notation will not draw a " +
     'route through, and the walkout — coming out into the slot yourself with the puck — takes ' +
-    'the same ice as the pass, so drawn together the two arrows could not be told apart. Nobody ' +
+    'the same ice as the pass, so drawn together the two arrows could not be told apart. ⚠️ Nobody ' +
     'can come at you from directly behind here, but that is geometry and not immunity: checking ' +
     'from behind is a penalty anywhere on the playing surface and players do get driven into the ' +
     'goal frame, so keep your head up and know who is arriving.',

@@ -134,7 +134,7 @@ refetched, `-layout` extracted and compared against the on-disk text:
 | Check | Result |
 |---|---|
 | Rule numbers | ⚠️ **CORRECTED 1 Sep 2026 — this read "472 in each, identical sets" and is wrong on both counts.** **472 in v1.1, 470 in 2026/27.** Removed: **102.5, 102.6, 102.7, 202.7**. Added: **46.14, 46.15**. **The substantive half stands — nothing is RENUMBERED**, and no corpus citation dangles on a removed number (the corpus cites 102.1 only). |
-| ⚠️ Appendix IV table numbers | **THIS is where the −2 shift lives, and it starts at Table 9, not at any rule.** Old Tables 5/6/7 merged into one Table 5, so Table 9 and above shift by −2 — e.g. *"can be found in Table 13"* (v1.1) → *"Table 11"* (2026/27). Eleven rules' cross-references move in lockstep (16.2, 19.1, 19.4, 23.8, 24.8, 25.3, 27.8, 69.1, 69.3, 69.4, 84.3), which is the evidence it is systematic and not extraction noise. ⚠️ **A claim that "everything from Rule 22 shifts by −2" circulated in briefs this session and is FALSE** — it conflated table numbers with rule numbers. |
+| ⚠️ Appendix IV table numbers | **THIS is where the −2 shift lives, and it starts at Table 9, not at any rule.** Old Tables 5/6/7 merged into one Table 5, so Table 9 and above shift by −2 — e.g. *"can be found in Table 13"* (v1.1) → *"Table 11"* (2026/27). Eleven rules' cross-references move in lockstep (16.2, 19.1, 19.4, 23.8, 24.8, 25.3, 27.8, 69.1, 69.3, 69.4, 84.3), which is the evidence it is systematic and not extraction noise. ⚠️ **A claim that "everything from Rule 22 shifts by −2" circulated in briefs this session and is FALSE** — it conflated table numbers with rule numbers. ⚠️ **NAME THE GOALKEEPER-INTERFERENCE TABLE EXPLICITLY, because a verifier citing it by number lands on the wrong rule:** it is **Table 16 in 2025/26** (`iihf_rules_v1.1.txt:9799`) and **Table 14 in 2026/27** (`iihf_rules_2026-27.txt:9899`) — and in the 2026/27 book **Table 16 is Rule 84 Overtime** (`:10278`). **A bare "IIHF Table 16" against the current book resolves SUCCESSFULLY, to Overtime.** ⚠️ **And the NHL's Table 14 is a DIFFERENT table, unaffected by any of this — do not "correct" an NHL table number to match.** Verified independently by two agents in round 58; `rink_map_and_glossary.md` already states it correctly. |
 | 27.7 / 27.8 | Restricted area still 27.7; 27.8 still "Infractions – Unique to Goalkeepers" |
 | 201.1 | Identical, heading included — the junior-ejection reading holds |
 | Corpus quotations from the IIHF book | **49 of 49 present verbatim** |
@@ -436,6 +436,17 @@ official documents, not resolved in either direction.
 > intact text** — one reporting the rule truncated, one reporting the paragraph missing entirely —
 > **while the corpus's claim about it was correct throughout.** Near a page boundary, treat
 > "not present" as unproven until a flattened read has looked.
+>
+> ⚠️ **And mode four reproduces in `nhl_rules.txt`, the corpus's own baseline book — found 1
+> September 2026.** A **whole page banner** sits inside a sentence of NHL Rule 80.1: flattened, it
+> reads *"…comes into the possession and control of a player from"* **`NATIONAL HOCKEY LEAGUE
+> Previous Page 121 Table of Contents OFFICIAL RULES 2025-2026 Next Page SECTION 10 – GAME FLOW`**
+> *"the offending team…"*. So the corpus's NHL 80.1 quotation returns **zero** from a flattened
+> `nhl_rules.txt` — and **the quotation is verbatim and correct.** ⚠️ **The three recorded
+> instances are now in three different books (IIHF, USA Hockey Casebook, NHL), so this is not a
+> quirk of one extraction — assume it in all of them.** The splice here is a full banner rather
+> than a page number, which makes the gap wide enough that a reader skimming a flattened window
+> can still miss the join. **Read the window.**
 
 > ⚠️ **One book on this disk INVERTS the `-layout` rule, and it was nearly cited from the wrong
 > extraction.** `huh.pdf` is a multi-column **brochure**, not a rulebook. `-layout` preserves the

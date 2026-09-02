@@ -225,6 +225,25 @@ The short form:
    python3 scripts/check_counts.py        # --update rewrites stale corpus figures
    node site/scripts/check-arrivals.mjs   # from site/
    ```
+   ⚠️ **TWO BUILD TRAPS THAT EACH PRODUCE A FALSE PASS, both measured in round 58.**
+   **(1) The nvm shim is a zsh FUNCTION, so prefixing `PATH` does not defeat it** — `node
+   scripts/astro.mjs build` exited **127** (`command not found: _load_nvm`) **while the wrapper
+   reported 0**. Only the absolute binary works:
+   `/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/node`.
+   **(2) Astro CACHES the markdown transform.** Even with the real binary, a caption edit did not
+   appear: the check reported **5 promoted captions when 17 were in the source**. `npm run build`
+   runs `clean:cache` first for exactly this reason. ⚠️ **A caption or content edit verified by an
+   Astro build without `clean:cache` is UNVERIFIED** — clear `.astro`, `dist`,
+   `node_modules/.astro` and `node_modules/.vite`, or run `npm run build` rather than the
+   underlying script.
+
+   ⚠️ **If any `site/src/diagrams/*.mjs` changed, `build-diagrams.mjs` must run BEFORE
+   `check_absolutes.py`.** That checker reads captions from `site/src/data/diagrams.json`, the
+   **build product** — so a caption edit without a rebuild is unchecked by construction. It now
+   detects the staleness and **refuses to certify the caption layer** rather than passing on old
+   text, but it cannot rebuild for you. ⚠️ **Round 58 rewrote ten-plus captions and every clean
+   `check_absolutes` run covered the superseded text.**
+
    `check_counts.py --update` is the last step before staging, **after** the final
    `content/` edit — `project/` edits cannot move the figure, so it converges.
 
@@ -244,6 +263,20 @@ The short form:
    `--strict` and never will — a site naming one book because it discusses one book is
    correct, and a tool that ranked these and then offered to fix them is precisely how
    round 44 manufactured a divergence that did not exist.
+
+   `scripts/check_tables.py` reports **tables the speech renderer DROPS instead of reading
+   aloud** — over `TABLE_MAX_COLUMNS`, `TABLE_MAX_ROWS` or `TABLE_MAX_CELL_CHARS`.
+   ⚠️ **It exists because a round-58 repair pushed one cell to 215 chars and silently cost a
+   listener an entire nine-row table, while `check_facts`, `check_links` and `check_absolutes`
+   all passed.** ⚠️ **`check_pointers.py` does NOT cover this** — that tool fires only when a
+   spoken *sentence* points at the table, so a table that degrades with nothing referring to it
+   was invisible to every check. Also a worklist: **a dropped table is often correct**, because a
+   wide comparison table cannot be read aloud and the corpus deliberately voices the substance
+   inline instead — and this tool cannot tell you whether it does. **Measured at introduction: 20
+   dropped against 26 read aloud, 11 of them over on CELL LENGTH ALONE** (narrow and short enough
+   to voice, dropped for one long cell), and `body_contact_and_battles.md:55` — the league-level
+   body-checking table — sitting at **exactly 0 rows of headroom.** `--near` lists the ones an
+   ordinary edit will break.
 
    `scripts/check_zones.py` reports **shaded zone polygons that disagree about the region
    they name.** It reads the BUILT SVGs in `site/public/diagrams/`, so it sees the final
@@ -366,7 +399,8 @@ project/            Style guide, review process, verification data.
                     Never fed to the podcast generator.
 scripts/            check_links.py, check_facts.py, check_absolutes.py, check_geometry.py,
                     check_secrets.py, check_counts.py, check_external_links.py,
-                    check_rule_scope.py, check_pointers.py, check_zones.py (worklists, not gates),
+                    check_rule_scope.py, check_pointers.py, check_zones.py, check_tables.py
+                    (worklists, not gates),
                     md_to_speech.py
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.

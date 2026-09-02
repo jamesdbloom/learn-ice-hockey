@@ -234,8 +234,12 @@ const angleClosesWide = {
     'the boards, and the goaltender has come back to the near post. Two things put them ' +
     'there. The angle closes on its own as the puck moves toward the boards, so depth ' +
     'buys nothing from out here and only leaves you unable to get back; and finishing a ' +
-    'lateral movement a foot short of the post rather than at it is how the short-side ' +
-    'goal, the cheapest goal in hockey, gets scored. This is one end of the shallow arc ' +
+    'lateral movement a foot short of the post rather than at it leaves a gap between ' +
+    'your pad and the post for a shooter to pick — the low short-side goal, which goalie ' +
+    'coaches call the cheapest goal in hockey, though that ranking is coaching emphasis ' +
+    'rather than a counted statistic. Closing it does not close the whole short side: ' +
+    'with your body low against the post the space over your shoulder is a separate ' +
+    'exposure, and shooters at higher levels look for it. This is one end of the shallow arc ' +
     'a goaltender works along — out at the middle, curving back toward the posts as the ' +
     'puck goes wide — and the arc itself is movement the still picture cannot carry.',
 

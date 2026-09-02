@@ -10,7 +10,7 @@
 
 Skating is the only skill you use every second you are on the ice; everything else is performed while skating and is limited by how well you do it. What makes a skater fast is technique rather than what they were born with, so it responds to deliberate practice at any age.
 
-**Bend your knees until they cover or pass your toes.** Standing too tall is the single most common fault in hockey skating, and it costs four things at once: power, because a straight leg has nothing left to extend; balance; reaction time, because from a straight leg you must bend before you can push; and grip, because you cannot tilt a blade onto its edge without bending the knee and ankle.
+**Bend your knees until they cover or pass your toes.** Standing too tall is very widely named as the most common fault in hockey skating — **treat that ranking as a coaching observation rather than a measured finding, because nobody has counted skating faults by frequency** — and it costs four things at once: power, because a straight leg has nothing left to extend; balance; reaction time, because from a straight leg you must bend before you can push; and grip, because you cannot tilt a blade onto its edge without bending the knee and ankle.
 
 **Push out to the side and slightly back, never straight back.** A blade pushed straight backwards just slides and gives you nothing; Laura Stamm's power-skating material calls that *"one of the most common errors in hockey skating"*, and it persists because it is what walking feels like. Finish the push off the front of the blade — coaching material puts that last flick of the toe at roughly a third of the push's total power.
 
@@ -47,7 +47,7 @@ Two cautions about the cues you will hear for this, because both are widely repe
   **Careful with the reference point here, because the next bullet says "chest over the toes" and that sounds like the opposite.** It is not. *Behind the knee* and *over the toes* are measured against two different landmarks: the **knee** is out past the toe, so your shoulders can be behind the **knee** and still be out above the **toes** at the same time. The order front to back is toe, then knee out in front of it, with your chest somewhere between the two. What you are ruling out is the third position — shoulders back **behind the toes**, which is sitting back on your heels.
 - **"Sitting on an invisible stool with your backside almost parallel to the ice" belongs to backward skating, not to the forward stride.** That is Robby Glantz's cue and he gives it for the backward stance (see [Backward Skating](#backward-skating) below), where you genuinely do sit that low. Carried into the forward stride it produces the *sitting back* fault: weight onto the heels, hips behind the feet, no ability to extend. Forwards skating: chest over the toes, backside back but not down on a chair.
 
-**Standing too tall is the single most common fault in hockey skating**, and it costs you four separate things. **Power** — your push comes from extending a bent leg, and a straight leg has nothing left to extend, so you are shuffling rather than striding. **Balance** — a low centre of gravity is harder to knock over, which is why players get bumped off pucks by opponents who are not stronger than them. **Reaction time** — from a deep bend you can push in any direction immediately; from a straight leg you must bend first, and that extra beat is a goal. **Edge angle** — you cannot tilt a blade onto a steep edge without bending the knee and ankle, so tall skaters are stuck on flat blades.
+**Standing too tall is very widely named as the most common fault in hockey skating**, and it costs you four separate things. **Treat the ranking itself as a coaching observation rather than a measured finding** — nobody has counted skating faults by frequency, and the one fault a named source ranks is a different one: Laura Stamm's material calls pushing straight back *"one of the most common errors in hockey skating"*, which is a weaker claim than this one and about another fault. What is not in doubt is the mechanism, and it is what follows. **Power** — your push comes from extending a bent leg, and a straight leg has nothing left to extend, so you are shuffling rather than striding. **Balance** — a low centre of gravity is harder to knock over, which is why players get bumped off pucks by opponents who are not stronger than them. **Reaction time** — from a deep bend you can push in any direction immediately; from a straight leg you must bend first, and that extra beat is a goal. **Edge angle** — you cannot tilt a blade onto a steep edge without bending the knee and ankle, so tall skaters are stuck on flat blades.
 
 A useful self-check: if your thighs don't burn after a hard shift, you probably weren't low enough.
 
@@ -383,7 +383,7 @@ The cost of a weak side in games is concrete and specific:
 
 ## Backward Skating
 
-Skating backwards well is the defining physical skill of a defenceman, and the single clearest divide between defencemen who can hold a tight gap and those who cannot. See [Defender](../positions/defender.md) and [Defending the Rush](../systems/defending_the_rush.md) for what you do with it tactically; this is how you do it physically.
+Skating backwards well is the defining physical skill of a defenceman, and the clearest divide between defencemen who can hold a tight gap and those who cannot. **That ranking is coaching craft rather than measurement** — no study ranks the skills that separate them — but the mechanism below is not in dispute. See [Defender](../positions/defender.md) and [Defending the Rush](../systems/defending_the_rush.md) for what you do with it tactically; this is how you do it physically.
 
 ### Why it's a defenceman's skill specifically
 
@@ -645,14 +645,14 @@ The beginner's stop: point both toes slightly inward, press on both inside edges
 ### The point most players never fix
 
 ```facts
-Read: Most players can only stop properly one way, and it costs them constantly
+Read: If you can only stop properly one way it costs you constantly — how common that is has never been counted, so test your own weak side rather than assume
 Risk: You unconsciously take longer routes to avoid the weak side, and turn instead of stopping, which carries you further from the puck
 Risk: You arrive at battles decelerating instead of set, and lose the stop-and-start-back-the-other-way exchange
 Action: In any stop-and-start drill, alternate sides deliberately rather than always stopping the comfortable way
 Action: In your own skating, stop at every blue line and goal line, half of them on the weak side
 ```
 
-**Most players can only stop properly one way, and it costs them constantly.** If your other side is a wobbly snowplough you will, unconsciously, take longer routes to avoid stopping that way, turn instead of stopping (which carries you further from the puck), arrive at battles decelerating instead of set, and lose the stop-and-start-back-the-other-way exchange — one of the most common races in the game.
+**A great many players can only stop properly one way, and it costs them constantly — how many has never been counted, so test your own weak side rather than assume you are the exception.** If your other side is a wobbly snowplough you will, unconsciously, take longer routes to avoid stopping that way, turn instead of stopping (which carries you further from the puck), arrive at battles decelerating instead of set, and lose the stop-and-start-back-the-other-way exchange — one of the most common races in the game.
 
 **Fix:** in any stop-and-start drill, alternate sides deliberately rather than always stopping the comfortable way, and in your own skating stop at every blue line and goal line, half of them on the weak side.
 
@@ -827,7 +827,7 @@ The realistic framing for an adult player: **you will not become fast this month
 - **Recovering the foot in front of the body** instead of under your hips. A brake on every stride.
 - **Running on your toes past the first few steps.** Correct for a start, exhausting and slow for everything after it.
 - **Arms swinging across the chest.** Wrong under every school of skating instruction.
-- **Living on your inside edges.** Outside edges are where turning, deception, escapes and puck protection come from, and most players never train them.
+- **Living on your inside edges.** Outside edges are where turning, deception, escapes and puck protection come from, and they are the ones that go untrained, because inside edges are what you land on naturally when you are upright and nervous. **How many players that is true of has never been counted — treat it as a coaching observation, not a measured finding**, and test your own outside edges rather than assume.
 - **A crossover with no under-push.** Half the propulsion, switched off.
 - **Only being able to stop one way** — and quietly reorganising your entire game to avoid the other way.
 - **Leaning too far forward when skating backwards.** The mirror of standing tall; it puts weight on the toe of the blade and kills speed and control.
