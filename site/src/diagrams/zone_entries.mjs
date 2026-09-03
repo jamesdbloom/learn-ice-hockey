@@ -280,7 +280,51 @@ const delayCurl = {
     'with the puck going to whoever has the best angle and the most speed and often not to you, ' +
     'is the next moment and is not drawn. ' +
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
-    'curl away from the wall, and never take contact with your back to the boards.',
+    'curl away from the wall, and never take contact with your back to the boards. ' +
+    // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
+    // in its own <p> with a 700 ms break either side -- verified this session by rendering
+    // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never take contact with
+    // your back to the boards" leaves a reader tight to the wall a prohibition and no permitted
+    // alternative, and the move that satisfies "curl away from the wall" plus "never your back"
+    // is the one the section names as the error: turning away INTO the boards. The section
+    // carries the counterweight in four other layers and this was the layer without it --
+    // zone_entries.md:453 (the §5 override blockquote), :443-444 and :475-476 (both facts
+    // blocks), :993 (Common Mistakes) and :1059 (Key Takeaways).
+    //
+    // ⚠️ THE TWO LIMBS ARE STATED SEPARATELY AND MUST STAY THAT WAY. A turned back is
+    // dangerous because it makes the contact a hit from behind; a tucked chin is dangerous
+    // because it straightens the cervical spine. They are different injuries with different
+    // sources, and content/technique/puck_handling.md:1000 and
+    // content/technique/body_contact_and_battles.md:1561 forbid joining them in terms -- "USA
+    // Hockey does not say it about turning your back". The walking-speed finding belongs to the
+    // head-down collision only and is deliberately NOT carried here.
+    //
+    // Wording taken word for word from the owner rather than compressed:
+    //   "Turning your back to an oncoming checker makes the contact a hit from behind"
+    //     -- zone_entries.md:453, and body_contact_and_battles.md:692.
+    //   "A chin tucked to the chest straightens the cervical spine"
+    //     -- body_contact_and_battles.md:682, verbatim.
+    //   "if you cannot get off the boards take the contact rather than turning away into them"
+    //     -- zone_entries.md:475, verbatim.
+    //   "skates parallel to the wall, forearm and hip into it, head up and chin off your chest"
+    //     -- zone_entries.md:476, verbatim.
+    //   "never duck" -- body_contact_and_battles.md:714, "Never your back to the wall, never duck."
+    //
+    // NO BODY-CHECKING LEVEL CAVEAT HERE, on purpose. This is how to RECEIVE contact, and
+    // body_contact_and_battles.md:649 is explicit that its receiving section is to be read
+    // "whatever league you play in -- unexpected contact happens in non-check hockey too".
+    // Scoping it to checking leagues would tell a non-check reader the posture is not theirs.
+    //
+    // Glyph placement: the addition sits AFTER the existing warning glyph and at the END of the
+    // caption, so it stays inside the block remark-corpus.mjs promotes and no tactical prose
+    // follows it. Caption measured after this edit: still far short of md_to_speech's
+    // MAX_BILLED_CHARS of 2,800, so it is voiced as one unbroken chunk and neither absolute
+    // can be separated from the other by a split.
+    'Two separate postures injure a neck at the boards and they are not the same warning: ' +
+    'turning your back to an oncoming checker makes the contact a hit from behind, and a chin ' +
+    'tucked to the chest straightens the cervical spine. So if you cannot get off the boards, ' +
+    'take the contact rather than turning away into them — skates parallel to the wall, ' +
+    'forearm and hip into it, head up and chin off your chest, and never duck.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +

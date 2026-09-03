@@ -58,7 +58,19 @@ Under NHL rules the goaltender may only play the puck behind the goal line **ins
 - This is precisely why dump-and-chase works, which is the flip side of the same coin for forwards.
 - It is the single biggest constraint on defensive-zone retrieval in the modern game.
 
-Note the trapezoid is NHL-specific — the IIHF removed it in 2014, and most rec leagues don't use it. Which brings us to:
+Note the trapezoid is NHL-specific — the IIHF removed it in 2014, and most rec leagues don't use it.
+
+> ⚠️ **CORRECTED 3 September 2026, left standing above because this is a dated review record and the
+> claim as made is part of the defect record. BOTH HALVES OF THAT SENTENCE ARE WRONG.**
+> **The IIHF did not remove the trapezoid: it is live at IIHF Rules 1.8 and 27.7**, read directly in
+> the rulebook, and `positions/goaltender.md` and `foundation/on_ice_communication.md` both carry it.
+> ⚠️ **And *"most rec leagues don't use it"* is an unsourced prevalence claim of exactly the kind this
+> project forbids** — the same form was retracted from `content_style_guide.md` on the same day, after
+> an agent declined an instruction to copy it into `content/` and cited the owner against it:
+> `goaltender.md:1368` says how much rec, beer-league and youth hockey that adds up to is *"a question
+> about leagues rather than about books, which this document has no count for."*
+> **The safe claim is about MARKINGS — *"many rec rinks have no trapezoid at all"* — not about what
+> proportion of associations do what.** Which brings us to:
 
 #### A5. No rule set is ever declared
 

@@ -149,7 +149,7 @@ In practice, the women's-game standard is very close to the standard for **legal
 ```facts
 Key: Almost everything here applies in every league — angling, stick checks, body position, receiving a hit safely, battles, shot blocking
 Priority: Two things need a full-checking league — Section 5, delivering a legal body check, and step 3 of the net-front box-out in Section 9, driving an opponent off their spot
-Rule: Women's hockey is not a full-checking league — IIHF Rule 101.1 allows bodychecking only with a clear intention of playing the puck, and makes any move to step or glide into an opponent an illegal hit
+Rule: Women's hockey is not a full-checking league — IIHF Rule 101.1 allows bodychecking with a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out, and makes any move to step or glide into an opponent an illegal hit
 Rule: A third thing is scoped, to the women's game — the pin along the boards in Sections 7 and 8, which IIHF Rule 101.1 bars; there you may pin the puck, not the player
 Never: Treat anything here as a licence to hit, push or shove an opponent in a league that does not allow it
 Key: Holding a position you have established is written as legal in three of the four books — moving an opponent off theirs is not
@@ -404,7 +404,7 @@ Two things follow. **For a player:** if you cannot yet angle a puck carrier off 
 
 ```facts
 Rule: Not legal where checking is barred — USA Hockey 604(a) at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved
-Rule: IIHF women's play permits bodychecking only with clear intention of playing or gaining possession of the puck; any move to step or glide into an opponent is at least a minor for an illegal hit (Rule 101.1). Britain publishes no body-checking age at all. Ask your league
+Rule: IIHF women's play permits bodychecking only with clear intention of playing or gaining possession of the puck, subject to the exception it sets out; any move to step or glide into an opponent is at least a minor (Rule 101.1). Britain publishes no body-checking age. Ask your league
 Rule: A body check is not legal in a CARHA-affiliated adult league either — that book has no checking division, 49(a) makes one a minor or a major anywhere on the ice and a major where it injures, and Rule 30(a) rules that major off the ice for the rest of the game
 Goal: To gain possession of the puck — NOT to punish or intimidate an opponent
 Targets: An opponent in control of the puck, hit from the front, diagonally from the front, or straight from the side
@@ -448,7 +448,7 @@ That last point is the one that separates a coached player from an amateur. **Th
 
 ```facts
 Rule: Not legal where checking is barred — USA Hockey 604(a) at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved
-Rule: IIHF women's play permits bodychecking only with clear intention of playing or gaining possession of the puck; any move to step or glide into an opponent is at least a minor for an illegal hit (Rule 101.1). Britain publishes no body-checking age at all. Ask your league
+Rule: IIHF women's play permits bodychecking only with clear intention of playing or gaining possession of the puck, subject to the exception it sets out; any move to step or glide into an opponent is at least a minor (Rule 101.1). Britain publishes no body-checking age. Ask your league
 Rule: A body check is not legal in a CARHA-affiliated adult league either — that book has no checking division, 49(a) makes one a minor or a major anywhere on the ice and a major where it injures, and Rule 30(a) rules that major off the ice for the rest of the game
 Technique: Play the body, not the head — the point of contact is the chest or upper body, square
 Never: Extend the body upward or outward to reach — NHL Rule 48.1 counts that as evidence head contact was avoidable
@@ -478,7 +478,7 @@ Never: Hit a player who is turned toward the boards
 
 ```facts
 Rule: Not legal where checking is barred — USA Hockey 604(a) at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved
-Rule: IIHF women's play permits bodychecking only with clear intention of playing or gaining possession of the puck; any move to step or glide into an opponent is at least a minor for an illegal hit (Rule 101.1). Britain publishes no body-checking age at all. Ask your league
+Rule: IIHF women's play permits bodychecking only with clear intention of playing or gaining possession of the puck, subject to the exception it sets out; any move to step or glide into an opponent is at least a minor (Rule 101.1). Britain publishes no body-checking age. Ask your league
 Action: Where you may check at all, check the puck carrier and check them now — the moment they have passed or shot, the check is late
 Rule: The NHL allows a check "rendered immediately following his loss of possession" — immediately, not a beat later; USA Hockey's Standard of Play penalises the same act under ROUGHING and calls it "finishing" the check
 Rule: The IIHF writes the NHL's condition and adds a second on top of it — the check must also fall inside an "objectively reasonable window of opportunity" (IIHF 56.1), so a British reader's window is the narrower of the two

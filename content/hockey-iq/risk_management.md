@@ -105,6 +105,10 @@ Every area of the ice can be graded by one question: **if I lose the puck here, 
 
 > **Honest caveat: that ordering is coaching consensus, not measurement.** The five grades are reasoned from the shot-danger evidence above and from how long a turnover takes to become a shot on your net. No study ranking turnovers by where on the ice they happen was found for this document — read that as "none found here", not as proof that none exists. Take the order of the rows rather than the labels on them.
 
+Laid over the ice, those five rows are one picture — and the thing a table cannot show is that **the grade does not simply fall with distance from your own net.** The middle of the neutral zone is shaded exactly as heavily as your own end, even though it begins where your own end stops and runs the whole length of the neutral zone further from your goal.
+
+![](diagram:the-risk-map)
+
 ### Why north turnovers are so much worse than south turnovers
 
 ```facts
@@ -497,6 +501,12 @@ Action: Two yeses and a green light from the scoreboard question, go; otherwise 
 Even a well-read risk is a bad risk if nobody is covering the space you left. **Before you jump a lane, pinch or activate, the question is not only "am I right?" but "what happens if I am right and I still miss it?"**
 
 A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck, because the centre becomes the third defender and the worst case is a 2-on-2. The same pinch with your centre below the goal line is a bad pinch even if you win the puck, because you were one bad bounce from a 2-on-1 and you did not know it.
+
+Those are the same picture twice, differing only in where the centre is. What the pinching defenceman can see of the puck and the man on the wall is identical in both:
+
+![](diagram:pinch-centre-high)
+
+![](diagram:pinch-centre-below-the-goal-line)
 
 **So the full test, in three questions you can run in half a second:**
 

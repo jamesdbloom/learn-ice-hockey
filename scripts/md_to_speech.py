@@ -269,6 +269,19 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
     ("∼", " about "),
     ("×", " times "),
     ("§", "section "),
+    # ⚠️ WHY THIS ROW EXISTS, AND WHY IT TOOK SO LONG TO FIND. The corpus contains
+    # exactly one email address, in getting_started.md's routing table -- and that
+    # table was being DROPPED from the audio for cell length, so the renderer had
+    # never once been asked to say an "@". Repairing the table (round 61) put the
+    # address in front of the renderer for the first time; it reached the SSML raw
+    # and find_residue reported COMMERCIAL AT. A listener would have heard
+    # "info-englandicehockey.com", or whatever the engine guessed.
+    #
+    # ⚠️ The general lesson is worth more than the row: a defect in the SPEECH layer
+    # was invisible because a DIFFERENT defect was keeping the text out of the speech
+    # layer. Eleven dropped tables remain, and each is a region of the corpus this
+    # renderer has never been asked to read.
+    ("@", " at "),
     ("→", ","),
     ("·", ","),
     ("†", ""),          # dagger footnote marker

@@ -402,6 +402,285 @@ missing inline label, never to delete the trailer sentence** (non-negotiable 4).
 7. ⚠️ **A repair pushed `rink_map_and_glossary.md`'s §7 positions table to 25 characters of headroom.**
    Still read aloud. **One more edit to that cell drops a six-row table.**
 
+### ✅ CLOSED 3 September 2026 — `md_to_speech` HAD NO RULE FOR `@`
+
+**Found 3 September 2026 by the agent restoring `getting_started.md`'s routing table — and it was found
+ONLY because that repair made the corpus's ONLY email address audible for the first time.**
+
+⚠️ **`@` is in no symbol table in `md_to_speech.py`** — verified independently by the coordinator, not taken
+from the report. It reached the SSML **raw**, and `find_residue` reported `COMMERCIAL AT`. **A listener
+would have heard "info-englandicehockey.com", or whatever the engine guessed.**
+
+**The agent did the right thing twice:** it did not patch `scripts/` (coordinator-owned), and it rephrased
+losslessly to *"the `info` mailbox at `englandicehockey.com`"*, which reads correctly aloud and clears the
+residue.
+
+✅ **DONE — `("@", " at ")` added to `SYMBOLS`, between waves with no agents live**, with the reason written
+into the table beside the row. **Verified by probe, not assumed:** *"Write to editor at example.com for
+details."* — no raw `@` survives, `find_residue` clean, and **`--self-test` still 260 assertions / 0
+failures.**
+**Any future email address hits this silently**, and the only reason this one did not ship is that a table
+had been dropped from the audio and nobody had noticed either fault.
+
+⚠️ **The general lesson, worth more than the fix: a defect in the SPEECH layer was invisible because a
+DIFFERENT defect was hiding the text from the speech layer. Repairing one exposed the other.** There are
+**11 dropped tables left**, and each is a region of the corpus the renderer has never been asked to read.
+
+### ⚠️⚠️ OPEN — SIX BROWSER MAJORS, 3 September 2026. THE HALO DEFECT IS BACK, ON THE BLUE LINE AGAIN
+
+**Found by driving real headless Chrome over CDP after the extension was blocked. Screenshots in the
+session scratchpad. ⚠️ Round 60 deferred a single halo notch; there are now instances on THREE pages.**
+
+**M1 — LABEL HALOS ERASE RINK MARKINGS.** `stroke="#fff" paint-order="stroke"` chews rectangular notches
+out of the ice:
+- `the-risk-map` — **the CENTRE RED LINE cut clean through** at *"the middle"*, both arcs of the centre
+  faceoff circle, **the goal line and the top of the crease** at *"their end"*
+- `the-call-and-who-can-see-it` — **the goal line, twice**, at both *"calls it"* labels
+- `rink-map-end-zone` — ⚠️ **the BLUE LINE, twice**, the goal line, **and both edges of the crease**
+
+⚠️ **Two of the three are NEW IN ROUND 61. `rink-map-end-zone` is inherited. Confirmed independently by
+`commit-gate` off the SVGs: 26 labels in `rink-map-end-zone.svg` carry `stroke="#fff" stroke-width="0.9"` at
+`paint-order="stroke"` over lines drawn at 0.18–0.35; `point:R`/`point:L` sit at EXACTLY x=25, the blue
+line; `the-risk-map`'s "the middle" at EXACTLY x=0, the centre red line; `the-call`'s two "calls it" labels
+straddle x=89, the goal line.**
+
+⚠️ **DEFERRED — AND THE REASON I FIRST GAVE WAS WRONG.** I argued *"a rendering defect, not a false claim."*
+**`commit-gate` refuted it: a picture that erases the blue line it is teaching IS a false statement about
+the ice.** ⚠️ **The correct reason to defer is that IT IS NOT FIXABLE IN THE STAGED SET.**
+`site/scripts/lib/rink.mjs:1318` places a zone label at its polygon's **vertex mean** with a hard-coded 1.1
+halo — *"the middle"* is on the red line **because the neutral-zone polygon is centred there**, and no
+module can move it without reshaping the region. **Fixing it touches an UNSTAGED shared library and
+regenerates all 270 diagrams into a commit nobody has reviewed at that state — a worse outcome than one
+more deferral.**
+
+⚠️ **But the count went from ONE PAGE to THREE, and this row exists so the next round does not read that as
+unchanged.**
+
+**M2 — ⚠️ THE BEGINNER'S PAGE LABELS THE ICE WITH INTERNAL IDENTIFIERS.** `getting_started`'s one figure
+reads `boards:R`, `half-wall:R`, `top-of-circle:R`, `faceoff-dot:L`, `neutral-dot:R`, `centre-point`,
+`high-slot`, `net-front`, `behind-net`, **`bumper`**. ⚠️ **The page's own prose says *"take the vocabulary
+from it"*, and the caption teaches *"the tops of the circles"* while the picture says `top-of-circle:R`.**
+⚠️ **`:L`/`:R` appears NOWHERE in the caption — a beginner cannot know if it means picture-right,
+goalie-right or right wing — and `bumper` is a 1-3-1 POWER-PLAY ROLE shown to someone on their first page.**
+**Named dots also collide into unresolvable blobs.** ⚠️ **INHERITED from `rink_map_and_glossary.md`, but
+round 61 is what put it in front of beginners.** **Owner's call.**
+⚠️ **`commit-gate`'s distinction, worth keeping verbatim: *"The ink is inherited; the instruction is
+yours."*** `boards:R` and `top-of-circle:R` are in the **built beginner page** — and the sentence pointing
+at them, *"Take the vocabulary from it rather than the distances,"* **was written this round.**
+
+**M3 — THE `.warn-inline` BAND OVER-CAPTURES, DILUTING THE SAFETY COLOUR.** It runs from the ⚠️ to
+**end-of-block**, not end-of-warning: **1,416 chars in amber** on `practice-small-area-in-one-zone`, ending
+on *"do not go quoting research you do not have"*; **669** on `practice-the-line-and-one-rep`.
+⚠️ **In body prose the ⚠️ usually ends the paragraph, so this NEVER SHOWED — the new CAPTIONS put ⚠️
+mid-block for the first time.** **Cause: the marking pass in `site/src/plugins/remark-corpus.mjs`.**
+⚠️ **Hand to `safety-reviewer` as a DILUTION question, not a styling one — this is how a reader learns to
+skim amber.**
+
+**M4 — the scroll cue is an overlay bar, not the persistent one the stylesheet claims** (`global.css:2046`
+states the intent in terms). `offsetHeight === clientHeight === 285`, so no layout space is reserved.
+⚠️ **The agent flagged this as its LEAST certain finding: headless Chrome's scrollbar behaviour need not
+match headed, and macOS "Show scroll bars: Always" would change it. NEEDS A HEADED BROWSER.**
+
+**M5 — `.table-scroll` announces scrollable when it is not.** All five tables on `getting_started` carry
+`tabindex="0" role="region" aria-label="Table, scrollable horizontally"` with `overflow = 0`; **two never
+overflow at ANY of eleven widths.** ⚠️ **Five dead tab stops and five false announcements.** **Confirms the
+standing row from the DESKTOP side.** The new `.diagram-scroll` is smarter (only `--full` figures) but is
+**still unconditional with respect to width.**
+
+**M6 — ⚠️ TWO DESKTOP WIDTHS WHERE A FULL-SHEET DIAGRAM SCROLLS**, found by the 20 px sweep of the band this
+plan said had never been checked:
+```
+1244 toc absent  box 876/876      1248 toc appears  box 600/640  SCROLLS 40px
+1287             box 639/640  1px  1288            box 640/640  clean
+```
+**Again at ~920–1007 px (48 px at 960).** **Cause: `min-width: 640px` at `global.css:2019` against a column
+that drops 260 px when the ToC appears.** ⚠️ **1280×800 is one of the commonest laptop sizes there is.**
+**Fix: `min-width: min(640px, 100%)`.**
+
+**Minors worth keeping:** the PAIRS are **never co-visible** — the drill pair needs **1,656 px** of
+viewport, the pinch pair **1,743 px**, so at no tested width do both frames show at once (⚠️ **the captions
+carry the comparison in words, so the teaching survives and the visual comparison does not**) · at 375 px
+the risk map's two ends are never co-visible, losing the darkest-vs-lightest pairing, **though the two
+EQUAL reds are co-visible at rest** · `you, with the puck` **moves from above to below** between two frames
+whose caption says *"Nobody has moved"* · the borrowed-diagram attribution is built from the **file path**,
+so one-word titles read as fragments and it is **not a link** · ⚠️ **`global.css:2077` names
+`forecheck-pinch` at 2,386 chars as the longest caption; `the-call-and-who-can-see-it` is now 3,744 —
+57% longer — and renders 1,923 px tall at 320 px.**
+
+### ⚠️ OPEN — IIHF 101.1 IS VOICED NARROWER THAN THE BOOK, IN AT LEAST TWO MODULES
+
+**Found by `commit-gate`, 3 September 2026. Not a one-line fix — a propagation question.**
+
+**Captions say:** *"allowing bodychecking in women's hockey only where there is a clear intention of playing
+the puck."*
+**IIHF 101.1 reads:** *"…a clear intention of playing the puck **or attempting to 'gain possession' of the
+puck**."*
+
+⚠️ **The elision ERRS SAFE — it makes the permission narrower than the book, so no reader is endangered.**
+**But it is a rule stated short in a VOICED layer**, and `forechecking_systems.mjs` carries the same
+elision, **so fixing one caption would leave the corpus disagreeing with itself.**
+
+**Census every site that states 101.1's test — captions, `describe`s and body — and decide once whether the
+possession limb travels.** ⚠️ **Caption length is the real constraint: the `on_ice_communication` caption
+already runs 3,737 chars against a 2,800 chunk limit and splits.**
+
+### OPEN — the retracted trapezoid-prevalence form still lives in `project/pilots/`
+
+**Found by `commit-gate`, 3 September 2026, after the flat prevalence claim was retracted from
+`content_style_guide.md`.** Still carrying *"most rec, beer-league and youth associations have none"*:
+
+```
+project/pilots/keyfacts_pilot_defender.md:647
+project/pilots/keyfacts_pilot_breakouts.md:293
+```
+
+⚠️ **`project/reviews/round_22_british_trapezoid.md:54` also carries it and MUST NOT BE CHANGED** — it is a
+dated review record, and the claim as made is part of the defect record. **Annotate a record; never rewrite
+one.** ⚠️ **`project/content_review_and_roadmap.md:61` was corrected IN PLACE on 3 September for the same
+reason** — it is also a dated record, so the wrong sentence stands with a correction beneath it. **It was
+wrong twice over: it also said the IIHF "removed" the trapezoid in 2014, when it is live at IIHF 1.8 and
+27.7.**
+
+**The pilots are the open question: decide whether they are live guidance (fix) or dated artefacts
+(annotate).** ⚠️ **Do not sweep the directory — the two kinds sit side by side in it.**
+
+### ⚠️ OPEN — NEW CENSUS: every module's SELF-DESCRIPTION against its own built SVG
+
+⚠️ **Named by `content-reviewer` on 3 September 2026 after THREE of its six majors turned out to be modules
+asserting something FALSE ABOUT THEMSELVES:**
+
+- *"SIX PLAYERS IN BOTH, so the comparison is of arrangements and not of group sizes"* — **one frame drew seven.**
+- *"a single passive defender added **and nothing else changed**"* — **the routes were also removed.**
+- **two frames of one pair disagreeing about whose goaltender it is**, in a pair billed as *"exactly one thing changed"*.
+
+**And a fourth, found by `commit-gate` in the REPAIR text:** *"four strengths of the same red"* — **three.**
+
+⚠️ **NOTHING IN THE REPOSITORY CHECKS THIS.** `check_absolutes` scanned all **270** caption and `describe`
+units this round and reported clean **throughout**, because it is not looking for it.
+
+**Wanted: extract every self-describing assertion in `site/src/diagrams/*.mjs` — *"N players"*, *"the same X
+in both"*, *"labelled Y"*, *"no Z is drawn"*, *"N strengths"* — and test each against the BUILT SVG.**
+⚠️ **All four instances above were found by counting glyphs or fills in the shipped file. ~127 diagrams have
+never been tested that way.**
+
+### ⚠️ OPEN — D15: THE RENDERED PAGE HAS NOT BEEN SEEN SINCE 15 DIAGRAMS AND 8 MORE WERE ADDED
+
+**Two consecutive rounds have shipped with D15 open.** Round 60: the Chrome extension was unavailable
+(6 attempts, 3 origins). Round 61: not attempted. ⚠️ **Between them, 23 new diagrams, six new modules, a
+restructured table, a dropped embed and the corpus's first ordinal-tint convention have reached the page,
+and nobody has looked at it.**
+
+**Substitute evidence exists and is real** — `build-diagrams.mjs` rasterises through headless Chrome, so the
+PNGs *are* Chrome's rendering, **and that is how the greyscale inversion was caught.** ⚠️ **But it cannot
+see: the viewport × theme matrix, the theme toggle, focus order, 320 px reflow, the 1000–1500 px band, the
+`--full` scroll cue on a 1100-wide risk map at 375 px, or a label colliding with surrounding PROSE.**
+
+### OPEN — `check_zones` says "home plate" and "the house" are 100% THE SAME ICE
+
+**Reported by `check_zones.py` on the post-repair build, 3 September 2026. PRE-EXISTING — neither diagram
+is new, and neither is one of round 61's eight.**
+
+```
+'home plate'  vs  'the house'   (100% the same ice, by area)
+    1160.0 sq ft  dz-the-house      1160.0 sq ft  oz-home-plate
+```
+
+⚠️ **Identical area, identical shape, two names.** The tool's own note says two names for one region is
+**often correct** — *"a general term beside a specific one, or one book's name beside another's"* — and the
+likeliest reading is that this corpus names the same polygon by which end you are at: **`the house` when
+defending it, `home plate` when attacking it.**
+
+⚠️ **But NOTHING SAYS SO ANYWHERE, and only `rink_map_and_glossary.md` can settle it.** If they are
+synonyms, the glossary should say they are; if they are not, one of the two diagrams is mislabelled.
+**Read the owner before touching either.**
+
+**Also standing and declared, not defects:** `the house` mirrored end-to-end, and `the middle` at four
+instances (the risk map is the fourth, declared in its module — the glossary defines the middle as a
+*direction*, so the ends legitimately differ).
+
+### ⚠️ OPEN — NOTHING CHECKS A ZONE LABEL'S WIDTH AGAINST THE POLYGON IT NAMES
+
+**Found 3 September 2026 while repairing `the-risk-map`.** ⚠️ **`your own slot` reserved 39.7 ft of label
+against a 29 ft polygon and PRINTED ACROSS THE CREASE.** **`check_zones.py` cannot see it** — it compares
+polygons to each other — **and the label placer never sees zone labels at all**, because
+`lib/rink.mjs` draws them on a separate path.
+
+⚠️ **AND ZONE-LABEL POSITION IS COUPLED TO VERTEX DENSITY:** the label goes at the polygon's **vertex
+mean**, not its area centroid, **so refining an arc silently moves the label.** Measured: stepping
+`boardArc` at 1 ft instead of 4 moved `their end` from x 84.11 to 85.43.
+
+**Wanted: a check that a zone label's rendered ink fits inside the polygon it names.**
+
+### OPEN — the 4 ft `boardArc` is still live in `rink_map_and_glossary.mjs`, with no visible symptom
+
+**`:71`, used by the zones at `:452` and `:463`.** ⚠️ **The fill stops up to 1.02 ft short of the boards in
+each corner. Those zones carry `stroke:'none'`, so nothing shows** — the identical defect that rendered as
+a white wedge cutting the corner once a dashed stroke was put on it in `risk_management.mjs`.
+**Invisible today; visible the moment anyone adds a stroke.**
+
+### ⚠️ OPEN — `forechecking_systems.md` NEVER TELLS THE READER HOW TO TAKE CONTACT AT THE BOARDS
+
+**Found 3 September 2026 by the agent censusing the ducking limb, which then REFUSED to fix it.**
+
+⚠️ **The document's whole subject is arriving at pucks in corners.** `forecheck-pinch`'s caption tells the
+reader *"if you can't arrive on contact, don't go"* — **a reader arriving at the wall at speed on a
+contested puck** — and its 673-character safety block is **entirely about DELIVERING contact.** No
+receiving posture anywhere.
+
+⚠️ **Grepped for all five owner phrasings across `content/systems/forechecking_systems.md`: ZERO HITS.**
+
+⚠️ **DO NOT FIX THIS IN THE CAPTION.** The agent declined for the right reason: *"Adding one to the caption
+would put a claim in the extraction layer that its owning section does not make, and would be an agent
+inventing corpus policy in a build source."* **The comparison that makes it stark: `dump-cross-corner`
+carries a checking-from-behind limb because `zone_entries.md` GAVE it one.**
+
+**This needs the SECTION reviewed against `body_contact_and_battles.md` §6, not a caption edit.**
+
+### ⚠️ OPEN — THREE MORE DROPPED TABLES IN `risk_management.md`, one of them the document's core table
+
+**Reported 3 September 2026 by the agent drawing that document's diagrams — a finding outside its brief.**
+
+⚠️ **`risk_management.md:98` — THE RISK-MAP TABLE ITSELF — is DROPPED from speech for cell length alone
+(348 chars against 200). A listener has NEVER heard the document's central table**; only its ` ```facts `
+block. ⚠️ **The new `the-risk-map` caption is now the FIRST place the full gradient reaches a listener as
+prose** — which is a good outcome, and **not a substitute for the table.**
+
+Also dropped in the same file: **`:38` (4 columns against a 3-column limit)** and **`:453` (cell 453
+chars)**. ⚠️ **All three PRE-DATE this work.**
+
+⚠️ **Apply the `getting_started.md` remedy, not a trim:** every long cell here is long because it carries
+qualifications, and **trimming trades a listenability defect for an accuracy one.** Make the table carry
+the routing and move the qualifications into voiced prose beneath it. **That repair took corpus totals from
+13 dropped / 33 voiced to 11 / 35 without losing a single hedge.**
+
+### OPEN — `getting_started.md:533` is now 2 rows from being dropped again
+
+**The routing table is voiced again, at 12 rows of a 14-row limit.** ⚠️ **A thirteenth destination row —
+the most natural edit anyone would make to it — drops the whole table from the audio a second time**, and
+the 12 rows *are* the routing, so the headroom cannot be recovered by rewriting.
+
+### ⚠️ OPEN — THE RINK-WIDTH COMPARISON DIAGRAM DOES NOT EXIST, and the renderer cannot draw it
+
+**Found 3 September 2026 by the agent sent to `getting_started.md`, while correctly declining to draw
+anything itself.**
+
+⚠️ **`getting_started.md` §1.4 tells a beginner *"the rink you play on is probably not 200 by 85 feet."*
+The teaching need there is a WIDTH COMPARISON — NHL 85 ft against IIHF 26–30 m — and no such diagram
+exists anywhere in the corpus.**
+
+⚠️ **It cannot currently be drawn: `site/src/data/rink.json` FIXES the sheet at 200×85 with
+`"book": "NHL Official Rules 2025-2026"`.** **Drawing a narrower sheet needs renderer geometry that does
+not exist**, which is why this is a plan row and not a task.
+
+**Owner: `foundation/rink_map_and_glossary.md`**, which owns rink dimensions and already carries the two
+sections such a diagram would serve. ⚠️ **It is NOT `getting_started.md`'s to own** — that document
+correctly borrows.
+
+⚠️ **This is the first identified case where the RENDERER, not the subject matter, is what blocks a
+diagram.** The existing "undrawable" cases (`skating.md`, `puck_handling.md`) are undrawable because rink
+primitives cannot show a wrist or weight over a blade. **This one is drawable in principle and blocked by a
+fixed constant** — a different class, and a fixable one.
+
 ### OPEN — two gaps named by the repair agents, both fetchable or filable
 
 1. ⚠️ **The IIHF Disciplinary Code is not in `sources/`.** IIHF 23.3–23.6 **defer to it entirely**, so the
@@ -4183,7 +4462,7 @@ it wants building.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,126,101 words — 85.3 hours of
+These outrank everything below. The corpus is **37 documents and 1,127,482 words — 85.4 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure

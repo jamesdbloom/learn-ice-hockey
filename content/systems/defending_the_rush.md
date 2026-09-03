@@ -350,7 +350,7 @@ Rule: USA Hockey 604(a) bans body checking at 12 & under and below, in all Girls
 Rule: Hockey Canada does not cap its body-checking ban at a minor where Rule 7.3 applies — U13 and below, female hockey, and any Member-approved division. Rule 7.3(b) lets the referee assess a major plus a game misconduct on the degree of violence, and makes both mandatory if the check injures
 Rule: The Hockey Canada body-checking ladder does not stop at the major — where Rule 7.3 applies (U13 and below, female hockey, and any division a Member of Hockey Canada approves), 7.3(e) makes the Game Misconduct automatic on any body-checking major
 Rule: Where Hockey Canada bars body-checking — U13 and below, female hockey, and any Member-approved division — 7.3(c) assesses a Match penalty to a player who "deliberately attempts to or deliberately injures an opponent by body-checking"
-Rule: In women's hockey — every level of it in Britain — IIHF Rule 101.1 allows bodychecking "when there is a clear intention of playing the puck", subject to the exception the rule itself then sets out, lets a player hold ground, and makes any move to "step or glide into" an opponent at least a minor
+Rule: In women's hockey — every level of it in Britain — IIHF Rule 101.1 allows bodychecking with clear intention of playing or gaining possession of the puck, subject to the exception it sets out, lets a player hold ground, and makes any move to "step or glide into" an opponent at least a minor
 Never: Turn hounding into contact where you may not body-check at all — it is your feet, your stick and your angle, and nothing else
 ```
 

@@ -8,7 +8,7 @@
 > by national associations, local associations and individual rinks rather than by a rulebook.
 > Where something varies, it says so and tells you how to find your own answer.
 >
-> **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
+> **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
 ## Overview
 
@@ -158,6 +158,12 @@ So expect **three** layers, not two: **the IIHF rulebook for what is a penalty**
 
 **4. The rink you play on is probably not 200 by 85 feet.** Nearly every diagram, distance and angle in hockey coaching comes from the NHL sheet. The IIHF book does not specify one size — **Rule 1.2 permits any sheet 60 m long and between 26 m and 30 m wide**, which is a spread of over thirteen feet in width between two equally legal rinks. So "we play IIHF rules" tells you which penalties get called and tells you nothing whatever about the size of the ice, and neither the NHL diagram nor a single metric figure is safe to assume. On a wide sheet the corners are further from the net, the half-wall (the boards level with the faceoff dot) is further from the slot (the dangerous ice in front of the net), and angling — steering an attacker with your skating line rather than hitting them — into the boards stops being a kill shot. **[Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers rink geometry** and sets out both specifications side by side, what the extra width changes shift by shift, and what to check on your first skate at an unfamiliar rink. Read it before you take the spacing advice in the systems documents literally.
 
+**Here is one end zone of that NHL sheet, where the corners, the half-wall and the slot just named actually are. Take the vocabulary from it rather than the distances.** The distances are the NHL's, and this section is the reason not to assume they are yours. The names travel further than the dimensions do, but they are convention rather than rulebook: many of the areas they label are not painted on the ice at all, coaches draw their edges differently, and your club's version will differ in the details. The trapezoid behind the net is one of those — painted on some rinks and not others. [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) has the whole sheet and the rest of the names.
+
+![](diagram:rink-map-end-zone)
+
+Where a diagram draws players rather than places, [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) is the key: a circle is a forward, a triangle a defenceman, a bare **G** the goaltender, and the unfilled shapes are the team the picture is drawn for.
+
 And under the In-House Rules the floor is lower than the IIHF book's, not just different: they record that "the NGB" authorises rinks *below 56 m × 26 m* — shorter than the 60 m the IIHF book fixes, and narrower than the 26 m that is its **minimum** width — in *"all fixtures"* and at all levels, with a short list of named venues restricted to junior hockey. The provision, its scope and the exceptions belong to [UK and England Rules](../foundation/uk_rules.md). The practical instruction is the same one: **look at the sheet you are actually standing on.**
 
 ---
@@ -253,11 +259,11 @@ After a learn-to-play block, the next step is registering with a local associati
 
 These three words describe **conventions, not defined categories**, and rinks use them inconsistently. The distinctions below are the common ones. **Treat the rink's own posted session description as the authority, not the general distinctions set out here** — and if it does not say, ring and ask, because turning up to a full-contact drop-in expecting a skills session is how people get hurt.
 
-| Session type | Usually means | Usually has | Usually does not have |
-|---|---|---|---|
-| **Stick-and-puck** | Open ice for individual practice | Full gear or at least helmet and gloves; many pucks; people shooting, stickhandling and skating on their own | Teams, a game, a goalie, referees |
-| **Drop-in** | Pick-up game — you pay, you are given a jersey colour, you play | Full gear, goalies (sometimes), rolling shifts, a scoreboard nobody watches | Referees, standings, any obligation beyond the session |
-| **Shinny** | Informal pick-up hockey, indoor or outdoor. In much of Canada it is the standard municipal-rink term for pick-up | Varies enormously — some are no-contact, no-lift-the-puck, no-goalie sessions for all ages | Anything reliable enough to assume |
+| Session type | Usually has | Usually does not have |
+|---|---|---|
+| **Stick-and-puck** — usually open ice for individual practice | Full gear or at least helmet and gloves; many pucks; people shooting, stickhandling and skating on their own | Teams, a game, a goalie, referees |
+| **Drop-in** — usually a pick-up game: you pay, you are given a jersey colour, you play | Full gear, goalies (sometimes), rolling shifts, a scoreboard nobody watches | Referees, standings, any obligation beyond the session |
+| **Shinny** — usually informal pick-up hockey, indoor or outdoor; in much of Canada it is the standard municipal-rink term for pick-up | Varies enormously — some are no-contact, no-lift-the-puck, no-goalie sessions for all ages | Anything reliable enough to assume |
 
 **The three questions that actually matter, and you ask them at the desk:**
 
@@ -530,16 +536,23 @@ Registration structures, tier names, fees, session rules and age classifications
 | **United States — one-off taster** | `tryhockeyforfree.com` — event map, national dates, loaner-gear information |
 | **United States — learn-to-play** | `learntoplay.nhl.com` (locations listed on each NHL club's page) and `learntoskateusa.com` |
 | **United States — registering** | `membership.usahockey.com` |
-| **Canada — finding your association and registering** | `register.hockeycanada.ca/register` — Hockey Canada's own association finder. Note its disclaimer: the information *"is intended to provide a starting point… and is not necessarily conclusive of where a player is eligible to play"* |
+| **Canada — finding your association and registering** | `register.hockeycanada.ca/register` — Hockey Canada's own association finder |
 | **Canada — the questions parents ask** | Hockey Canada's parent FAQ, which is the source for most of section 6 above |
 | **Canada — adult** | Hockey Canada's Adult Recreational Hockey page and the ASHL |
-| **England, Scotland, Wales, Northern Ireland — who to register with** | **Ice Hockey UK** — the single governing body for all four home nations since 30 June 2026. The EIHA's club finder and Registration page still describe the English process, but membership itself moved to IHUK; ring the club and ask which body you are registering with this season |
-| **England and Wales — the governance document** | **England Ice Hockey** (`englandicehockey.com`), whose *Rules & Regulations* is the source for section 6's English material: registration types, the registration year, insurance, sanctioning and club affiliation. EIH's own contact address in that document is `info@englandicehockey.com`, IceSheffield, Coleridge Road, Sheffield S9 5DA |
-| **The Home Countries and university hockey — the playing rules** | The **IIHF Official Rule Book**, plus the **In-House Rules**, adopted by IHUK and the BUIHA across England, Wales, Scotland and Northern Ireland. [UK and England Rules](../foundation/uk_rules.md) summarises what they change; your **section's Rules of Competition**, held by your club, covers everything else |
-| **England — finding a session at all** | **Your local rink first, your club second.** No governing-body document consulted here contains a session finder, a learn-to-skate scheme or a taster calendar for England. The rink sells the ice and knows who is on it |
+| **England, Scotland, Wales, Northern Ireland — who to register with** | **Ice Hockey UK**, the single governing body for all four home nations since 30 June 2026 |
+| **England and Wales — the governance document** | **England Ice Hockey** (`englandicehockey.com`), whose *Rules & Regulations* is the source for section 6's English material |
+| **The Home Countries and university hockey — the playing rules** | The **IIHF Official Rule Book**, plus the **In-House Rules** adopted by IHUK and the BUIHA |
+| **England — finding a session at all** | **Your local rink first, your club second** |
 | **Anywhere else** | The IIHF's Member National Associations directory — 84 associations, each linked to its own national body |
 
 **Confirm eligibility with the association, not with a search result.** Hockey Canada says of its own association finder that the information *"is intended to provide a starting point… and is not necessarily conclusive of where a player is eligible to play"*.
+
+**Some of those starting points carry a qualification that matters more than the address itself:**
+
+- **Ice Hockey UK became the single governing body for all four home nations on 30 June 2026.** The EIHA's club finder and Registration page still describe the English process, but membership itself moved to IHUK. Ring the club and ask which body you are registering with this season.
+- **England Ice Hockey's *Rules & Regulations* is the source for section 6's English material** — registration types, the registration year, insurance, sanctioning and club affiliation. EIH's own contact details in that document are `info@englandicehockey.com` and the postal address IceSheffield, Coleridge Road, Sheffield S9 5DA.
+- **The In-House Rules are adopted by IHUK and the BUIHA across England, Wales, Scotland and Northern Ireland**, on top of the IIHF Official Rule Book. [UK and England Rules](../foundation/uk_rules.md) summarises what they change; your **section's Rules of Competition**, held by your club, covers everything else.
+- **No governing-body document consulted here contains a session finder, a learn-to-skate scheme or a taster calendar for England.** That is why the rink comes before the club: the rink sells the ice and knows who is on it.
 
 **A caution about links.** Governing-body sites reorganise constantly and dead or misleading links are common: `usahockey.com/playingrules` and `usahockey.com/registration` still returned 404 when re-checked on 1 September 2026, several Hockey Canada programme URLs return **HTTP 200 with a 404 page in the body**, and `thefirstshift.ca` has sent visitors to two different wrong destinations inside six weeks — an unrelated commercial site in July 2026, a domain registrar's parking page in September. **Navigate from the national body's home page rather than from a remembered URL**, and if a page looks wrong, it is.
 

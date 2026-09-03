@@ -33,11 +33,14 @@ import gamemanagement from './game_management.mjs';
 import goaltender from './goaltender.mjs';
 import neutralzonesystems from './neutral_zone_systems.mjs';
 import offensivezoneplay from './offensive_zone_play.mjs';
+import onicecommunication from './on_ice_communication.mjs';
 import passingandreceiving from './passing_and_receiving.mjs';
 import playingwithoutthepuck from './playing_without_the_puck.mjs';
 import positions from './positions.mjs';
+import practiceanddevelopment from './practice_and_development.mjs';
 import pucksupportandspacing from './puck_support_and_spacing.mjs';
 import rinkmapandglossary from './rink_map_and_glossary.mjs';
+import riskmanagement from './risk_management.mjs';
 import scanningandanticipation from './scanning_and_anticipation.mjs';
 import shooting from './shooting.mjs';
 import specialteams from './special_teams.mjs';
@@ -57,11 +60,14 @@ export const DIAGRAMS = [
   ...goaltender,
   ...neutralzonesystems,
   ...offensivezoneplay,
+  ...onicecommunication,
   ...passingandreceiving,
   ...playingwithoutthepuck,
   ...positions,
+  ...practiceanddevelopment,
   ...pucksupportandspacing,
   ...rinkmapandglossary,
+  ...riskmanagement,
   ...scanningandanticipation,
   ...shooting,
   ...specialteams,

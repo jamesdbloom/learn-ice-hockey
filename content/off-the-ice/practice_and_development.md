@@ -312,6 +312,12 @@ The volume argument is stark. USA Hockey ran a puck-possession study at the 2002
 
 If a full game gives the best players in the world one minute with the puck, a full-ice drill where you queue for ninety seconds to take one rep gives you almost nothing. Shrink the space and cut the numbers, and puck contacts per player go up several-fold — a coaching estimate rather than a counted one; no comparison of touches per player between a small-area game and a full-ice drill was found for this document.
 
+The mechanism is easier to see than to describe. Below are the same six **skaters** arranged two ways — first queueing for a single puck across the whole sheet, then all six of them in the game at once inside one zone, with a goaltender in the net they are playing on.
+
+![](diagram:practice-the-line-and-one-rep)
+
+![](diagram:practice-small-area-in-one-zone)
+
 ### What they train that drills cannot
 
 A drill removes the opponent, or makes the opponent's behaviour known in advance. That is exactly the information you need to learn to read. In representative-learning-design terms, a drill without a live defender has removed the informational constraint that the skill exists to solve.
@@ -392,6 +398,12 @@ Skill is a *capability*. Hockey is a series of *selections* between capabilities
 ### Why standard drills don't train it
 
 Most drills have exactly one correct answer, known in advance. You skate the pattern, you make the pass to the spot the coach is standing, you shoot. The read has been removed to make the skill practisable — which is legitimate, but it means the drill trains execution only. Practise nothing but drills and you build a player with good hands and no idea when to use them.
+
+The whole difference is one player. Here is the same rep drawn twice: first with nobody defending, then with a single passive defender added — and with the pass route gone, because taking it away is what his arrival does. Nobody has moved between the two frames.
+
+![](diagram:drill-execution-no-opponent)
+
+![](diagram:drill-decision-one-defender)
 
 ### How to train reads
 
@@ -624,10 +636,11 @@ document, that is named too.*
 5. **Receiving is the more neglected half of passing, and the more valuable one — a coaching observation rather than a measured finding, since nobody has counted how players split their reps.** Ten minutes against a wall buys hundreds of receptions with instant feedback — but a wall returns a flat, predictable, forehand pass, so vary your angle and distance and take half of them on your backhand.
 6. **Head up or don't bother.** Thousands of head-down stickhandling reps make the head-down pattern the automatic one, and automatic patterns are what surface under pressure. You will then need months to undo it, and your handling will get worse while you do.
 7. **Small-area games are the highest-value use of ice.** Even in the 2002 Olympic men's gold-medal game, players averaged about a minute of puck possession each; shrinking the space multiplies touches. That they build decision-making is highly plausible, near-universally believed by coaches, and **under-tested** — use them, but don't cite research you don't have.
-8. **Train decisions, not just skills.** A skill executed at the wrong moment is worthless, often worse than worthless. A passive defender allowed to take away just one option is enough to turn an execution drill into a decision drill.
-9. **Measure process, not outcome, and test cold.** Count shoulder-checks and completed first passes, not points — in a short amateur season the noise swamps the signal. Retest a week or more later with no warm-up on that skill, and pick only one or two measures at a time.
-10. **Testing yourself is how you learn what you read, not just how you check it — but only if you then find out the answer.** Producing an answer beats recognising one: across 159 effect sizes the advantage of testing over re-reading is **g = 0.50 (95% confidence interval [0.42, 0.58])**, and it is roughly twice as large for cued recall — a prompt you have to answer — as for recognition, picking the right answer out of a set. Get it wrong with no correction, though, and the measured benefit collapses to **g = 0.03 [−0.21, 0.27]** — indistinguishable from nothing. **All of this was measured on verbal material with university undergraduates; nobody has shown it applies to a motor skill**, so use it on the theory and not on your shot.
-11. **Nobody in a drill is more exposed than your goalie.** Don't shoot at their head in the warm-up and don't fire pucks at them from ten feet, because **only two books stop play for the hit itself** — IIHF Rule 9.6's is a *"may"* that depends on the referee believing they are *"dazed"* and is cancelled by an immediate scoring chance, Hockey Canada Rule 6.18(a)'s *"shall"* reaches only *"categories of U13 and below"*, and the NHL, USA Hockey's **stand-up** rules and CARHA write no mask-specific stoppage (USA Hockey's only counterpart is a Sled Hockey rule). ⚠️ **Every book stops play for an injured goalkeeper** — NHL and IIHF 8.1, USA Hockey 206(a), Hockey Canada 2.4(b), CARHA 20(d) — **but each waits on a referee judging them hurt, and a cage is what stops that happening.** Aim at the pads and the glove, and shoot from where the drill puts you.
+8. **Half of a team practice is time spent standing in a line — a coaching estimate rather than a measured share — and that time is either wasted or used.** Watch the rep in front of you and name what you would do differently; keep your feet moving, because standing still for long stretches in cold air is how people pull something on the next hard rep. ⚠️ **And keep your head up while you queue.** A practice has loose pucks flying, and a line standing still against the boards is exactly where they arrive.
+9. **Train decisions, not just skills.** A skill executed at the wrong moment is worthless, often worse than worthless. A passive defender allowed to take away just one option is enough to turn an execution drill into a decision drill.
+10. **Measure process, not outcome, and test cold.** Count shoulder-checks and completed first passes, not points — in a short amateur season the noise swamps the signal. Retest a week or more later with no warm-up on that skill, and pick only one or two measures at a time.
+11. **Testing yourself is how you learn what you read, not just how you check it — but only if you then find out the answer.** Producing an answer beats recognising one: across 159 effect sizes the advantage of testing over re-reading is **g = 0.50 (95% confidence interval [0.42, 0.58])**, and it is roughly twice as large for cued recall — a prompt you have to answer — as for recognition, picking the right answer out of a set. Get it wrong with no correction, though, and the measured benefit collapses to **g = 0.03 [−0.21, 0.27]** — indistinguishable from nothing. **All of this was measured on verbal material with university undergraduates; nobody has shown it applies to a motor skill**, so use it on the theory and not on your shot.
+12. **Nobody in a drill is more exposed than your goalie.** Don't shoot at their head in the warm-up and don't fire pucks at them from ten feet, because **only two books stop play for the hit itself** — IIHF Rule 9.6's is a *"may"* that depends on the referee believing they are *"dazed"* and is cancelled by an immediate scoring chance, Hockey Canada Rule 6.18(a)'s *"shall"* reaches only *"categories of U13 and below"*, and the NHL, USA Hockey's **stand-up** rules and CARHA write no mask-specific stoppage (USA Hockey's only counterpart is a Sled Hockey rule). ⚠️ **Every book stops play for an injured goalkeeper** — NHL and IIHF 8.1, USA Hockey 206(a), Hockey Canada 2.4(b), CARHA 20(d) — **but each waits on a referee judging them hurt, and a cage is what stops that happening.** Aim at the pads and the glove, and shoot from where the drill puts you.
 
 ---
 

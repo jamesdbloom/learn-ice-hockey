@@ -95,7 +95,7 @@ tint with a thin dashed edge, usually with its name written inside it — *the s
 symbol of any kind: the Hockey Eastern Ontario sheet's seventeen rows are players,
 lines and a cluster of pucks, and the IIHF key's list runs from *forward skating* to
 *body check* with no region mark in it. So this one is a house convention rather than
-a borrowed symbol, and three things are worth knowing about it.
+a borrowed symbol, and four things are worth knowing about it.
 
 First, **the tint is not paint on the ice unless the caption says it is.** The slot,
 the house and the high slot are names for regions rather than markings, and
@@ -118,6 +118,24 @@ need to see that is neither on the ice nor a route — the royal road, or the sh
 lane a defenceman had a second ago before an opponent stepped into it. Nothing travels
 along it and nobody skates it; it is there so you can see what someone else is set up
 for.
+
+Fourth, **where one region is tinted more heavily than another in the same picture,
+the strength of the tint is a ranking rather than a second symbol.** The map of what a
+mistake costs in [Risk Management](../hockey-iq/risk_management.md) grades ice by how
+expensive a turnover there is. It marks five regions: four in red and one in blue,
+and the four reds carry only **three** strengths, because two of them are deliberately
+identical. ⚠️ **That equality is the picture's teaching rather than an oversight** — the
+middle of the neutral zone is shaded exactly as heavily as your own end, because a mistake
+in the two costs about the same — **so do not expect four distinguishable reds and do not
+try to rank them by eye.**
+Nothing new is being said with colour — red is still the hazard tint and blue still the
+ice you want — but the *depth* of the red is carrying an order, and neither published
+key has anything of the sort. ⚠️ **Read that order out of the caption, not off the
+page.** A light wash is a poor ranking device: the tints are close together by design,
+greyscale and photocopying compress them further, and where a red region has to be
+compared against a blue one the order inverts outright, because a light blue prints
+darker than the faintest red. So a graded picture names its regions in order in words,
+and the words are the part to trust.
 
 **Shape is the position.** The *International Drill Symbols* sheet gives it in two
 lines — *"● ○ Forward / Player"* and *"▲ △ Defender / Player"* — so a **circle is a
@@ -215,6 +233,10 @@ is a coaching choice, believe the caption, not the picture.
   rest are names for areas, not paint; go and look at a rink and there is no line
   marking any of them out. The trapezoid is the one shaded region in these diagrams that really is
   painted, and its caption says so.
+- **Ranking regions by how dark they look.** Where a picture grades ice by tint, the
+  order is in the caption. Comparing the washes by eye fails in greyscale, on a
+  photocopy and on e-ink, and it fails in colour too the moment a red region has to be
+  set against a blue one.
 - **Expecting a diagram to show a whole play.** One frame shows one moment. Where a
   movement only makes sense over time you will find two diagrams, and the captions
   say whether they are a sequence or two answers to the same instant.
@@ -242,6 +264,9 @@ is a coaching choice, believe the caption, not the picture.
    published key has either one, so both are this guide's own. The tint never says
    whether the region is somewhere to go or somewhere to keep out of — the caption
    does, and it is the caption that carries the warning where one is tinted red.
+   **Where a picture tints regions at different strengths, that is a ranking** — and
+   the ranking is in the caption's words, because the shades themselves do not
+   survive greyscale, a photocopy or a comparison across the red and blue tints.
 5. **A small numbered tag on a route says what happened first.** It counts routes in
    order, never players, and it never sits inside a player's shape.
 6. **The letters inside a glyph are roles, not positions.** F1 is whoever arrives
