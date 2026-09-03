@@ -26,8 +26,11 @@ a player. So shape tells you what a player is and fill tells you whose side they
 on: a winger is a circle whether they are attacking or backchecking, because the
 shape follows the player rather than the moment. **That is one published key's
 convention, and the other cited below uses the same two shapes for the two teams
-instead** — which is the first thing to know if you meet a diagram from somewhere else. Nothing here depends on colour,
-which is why it still works printed, photocopied or in either theme. And where
+instead** — which is the first thing to know if you meet a diagram from somewhere else. Colour carries nothing in the player glyphs
+or the line symbols, which is why they still work printed, photocopied or in either
+theme. The shaded regions described further down are the single exception — a region
+drawn as a hazard is tinted red rather than blue, a difference greyscale loses, so
+their captions say in words which one they mean. And where
 a caption says a detail is a coaching choice, believe the caption rather than the
 picture: a diagram is the most absolute-looking thing on a page, and it shows one
 moment of one system among several. You do not need to memorise the rest; come back
@@ -85,6 +88,37 @@ it as a row of separate overlapping arches, flatter than they are wide. These di
   diagrams draw the marker and the straight line without the leading wave, so the mark
   shows the drop and not the carry that set it up. It is this guide's own version.
 
+**Shaded regions and faint dashed lines are this guide's own, and neither published
+key has anything like them.** Many diagrams here wash an area of the ice in a light
+tint with a thin dashed edge, usually with its name written inside it — *the slot*,
+*the house*, *home plate*, *the box*, *the passing lane*. Neither key defines an area
+symbol of any kind: the Hockey Eastern Ontario sheet's seventeen rows are players,
+lines and a cluster of pucks, and the IIHF key's list runs from *forward skating* to
+*body check* with no region mark in it. So this one is a house convention rather than
+a borrowed symbol, and three things are worth knowing about it.
+
+First, **the tint is not paint on the ice unless the caption says it is.** The slot,
+the house and the high slot are names for regions rather than markings, and
+[Rink Map and Glossary](../foundation/rink_map_and_glossary.md) is where their edges
+are defined. The edge is drawn thin and broken on purpose so that it cannot be taken
+for a line on the rink. The trapezoid is the exception — that one really is painted,
+and its caption says so.
+
+Second, **the shading does not tell you whether the region is somewhere to go or
+somewhere to stay out of.** The caption does, and the diagrams here use it both ways:
+a shaded box marks the ice a centre is heading for in one picture and the ice a pass
+must never cross in another. Where the region is a hazard it is tinted red rather than
+blue, and that is the one thing in this notation carried by colour alone — at a light
+wash the two tints are nearly identical in greyscale or a photocopy, so the caption is
+what you should be reading.
+
+Third, **drawn between two points with no tint at all, the same mark is a line rather
+than a region:** faint, dashed, with a short name beside it. It marks something you
+need to see that is neither on the ice nor a route — the royal road, or the shooting
+lane a defenceman had a second ago before an opponent stepped into it. Nothing travels
+along it and nobody skates it; it is there so you can see what someone else is set up
+for.
+
 **Shape is the position.** The *International Drill Symbols* sheet gives it in two
 lines — *"● ○ Forward / Player"* and *"▲ △ Defender / Player"* — so a **circle is a
 forward and a triangle is a defenceman**, and that stays true of a player from one
@@ -105,7 +139,7 @@ opposition. The key prints a solid and an open version of each player row withou
 saying what the difference means — *"● ○ Forward / Player"* could as easily be read as
 solid-is-a-forward and open-is-any-player — so reading that pair as the two teams is
 this guide's doing rather than the key's. So both facts are in every picture: the shape tells you what a player is, the fill tells
-you whose side they are on. Neither depends on colour, so nothing is lost in
+you whose side they are on. Neither depends on colour, so neither is lost in
 greyscale, in a photocopy, or to a reader who does not see red and green apart.
 
 **Which side has the puck is not carried by the shapes at all** — the puck is drawn, and
@@ -131,10 +165,12 @@ rather than beside a player.
    open-is-any-player — and it has no opposition symbol of any kind. Here **open is yours
    and solid is theirs**.
 
-**And one thing that is not a departure:** the whole notation is monochrome, and none of
-the keys consulted separates the teams by colour either. That is agreement, not invention.
-It is done so that a printed page, a photocopy and a reader who does not see red and green
-apart all get the same information as the screen.
+**And one thing that is almost not a departure:** the player glyphs and the line symbols
+are monochrome, and none of the keys consulted separates the teams by colour either. That
+is agreement, not invention. It is done so that a printed page, a photocopy and a reader
+who does not see red and green apart all get the same information as the screen — which
+holds for every symbol here except the red tint on a hazard region, where the caption has
+to carry the warning instead.
 
 ⚠️ **Do not call this notation "international" to anyone.** *Both* keys above carry that
 word in their titles — *International Drill Symbols* and *International Symbols* — and what
@@ -145,6 +181,13 @@ define it at all. Neither meaning is wrong inside the system it belongs to; they
 not the same system. None of this has been
 checked against how any particular club or coach actually draws things; if your
 coach's whiteboard disagrees, their whiteboard wins.
+
+**Numbered tags say what happened first, and they count routes rather than players.**
+A still picture cannot say whether the pass beat the forechecker or the forechecker beat
+the pass, so where the order matters each route carries a small numbered tag a short way
+along it. The numbers run in the order the things happen. They are never a player's
+name and never sit inside a player's shape, which is where the letters go — and like the
+shading, the tag is this guide's own and appears in neither key.
 
 **What a diagram is and is not.** A diagram shows one moment. A movement that only
 makes sense over time needs two diagrams, so where you see a pair, read them as a
@@ -168,6 +211,10 @@ is a coaching choice, believe the caption, not the picture.
 - **Assuming your coach uses these symbols.** Nothing here has been checked against
   how any particular club draws things. If your coach's whiteboard disagrees, their
   whiteboard wins.
+- **Taking a shaded region for a marking on the ice.** The slot, the house and the
+  rest are names for areas, not paint; go and look at a rink and there is no line
+  marking any of them out. The trapezoid is the one shaded region in these diagrams that really is
+  painted, and its caption says so.
 - **Expecting a diagram to show a whole play.** One frame shows one moment. Where a
   movement only makes sense over time you will find two diagrams, and the captions
   say whether they are a sequence or two answers to the same instant.
@@ -190,9 +237,16 @@ is a coaching choice, believe the caption, not the picture.
    arrow, a pass. Double line, a shot. A line ending in two short bars is a route that stops where it ends
    — the mark used where a player closes on an opponent, and the one to read as *arrive
    under control* rather than carry on through.** Those cover most of what you will meet.
-4. **The letters inside a glyph are roles, not positions.** F1 is whoever arrives
+4. **A tinted area with a dashed edge is a named region of ice, and the same mark
+   between two points with no tint is a line that is not on the ice.** Neither
+   published key has either one, so both are this guide's own. The tint never says
+   whether the region is somewhere to go or somewhere to keep out of — the caption
+   does, and it is the caption that carries the warning where one is tinted red.
+5. **A small numbered tag on a route says what happened first.** It counts routes in
+   order, never players, and it never sits inside a player's shape.
+6. **The letters inside a glyph are roles, not positions.** F1 is whoever arrives
    first, not the centre.
-5. **Where a caption says a detail is a coaching choice, it is.** Ask which version
+7. **Where a caption says a detail is a coaching choice, it is.** Ask which version
    your team runs rather than taking the picture as the answer.
 
 ---
@@ -207,4 +261,4 @@ is a coaching choice, believe the caption, not the picture.
 
 *"International Drill Symbols", Hockey Eastern Ontario NCCP Development 1 clinic handout: [PDF](https://www.hockeyeasternontario.ca/media/ns2jrj0c/dev1_international_drill_symbols.pdf) — the source of the player glyphs, and of "lateral crossovers", which the IIHF key does not define. sha256 `d0cfeca1…`, 309,926 bytes.*
 
-*Verification note — the two keys, 30 July 2026. (A third source is cited for one symbol only: Johnston & Walter's coaching manual, "Key to Diagrams" — a book rather than a web page, cited without a page number, and not re-checkable against any file held here.) Both were fetched with a browser user-agent and read in full. The Hockey Eastern Ontario sheet carries no author, date or credit on the page; the file's own metadata gives Brian Gillam, 21 May 2015, and the key printed on it is a pasted, uncredited, cropped scan whose origin is not recoverable. That matters more than it looks, because the player glyphs — the shape and fill axis this whole guide turns on — come from that sheet and not from the IIHF key, which has player symbols of its own and assigns them differently. The reasons for following the sheet are given above and are about the notation, not about the sheet's pedigree, which is poor. The IIHF key supplies most of the line symbols. Where the two disagree — the name of the two-barred glyph, the crossovers symbol, and above all whether shape carries team or position — the divergence is stated in the body above rather than resolved silently. Neither key has been checked against how any club or coach actually draws things, and no such survey is known to exist.*
+*Verification note — the two keys, 30 July 2026. (A third source is cited for one symbol only: Johnston & Walter's coaching manual, "Key to Diagrams" — a book rather than a web page, cited without a page number, and not re-checkable against any file held here.) Both were fetched with a browser user-agent and read in full. The Hockey Eastern Ontario sheet carries no author, date or credit on the page; the file's own metadata gives Brian Gillam, 21 May 2015, and the key printed on it is a pasted, uncredited, cropped scan whose origin is not recoverable. That matters more than it looks, because the player glyphs — the shape and fill axis this whole guide turns on — come from that sheet and not from the IIHF key, which has player symbols of its own and assigns them differently. The reasons for following the sheet are given above and are about the notation, not about the sheet's pedigree, which is poor. The IIHF key supplies most of the line symbols. Where the two disagree — the name of the two-barred glyph, the crossovers symbol, and above all whether shape carries team or position — the divergence is stated in the body above rather than resolved silently. Neither key has been checked against how any club or coach actually draws things, and no such survey is known to exist. The claim above that neither key publishes a shaded-region or area symbol rests on reading both symbol lists end to end: the Hockey Eastern Ontario sheet is a single page rendered at 200 dpi and read row by row — seventeen rows, from "Coach" to "Cluster of pucks" — and the IIHF list was read from the extracted text of §21.1, which loses every glyph but keeps every row's name, so a region row would still have shown up as a name. The numbered route tags are likewise in neither list.*

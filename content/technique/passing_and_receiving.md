@@ -164,6 +164,8 @@ Risk: Low risk, moderate reliability — the puck never enters the lane the chec
 
 **When to use it.** When a defender's stick or body sits in the direct lane but the boards run behind them — most often to beat a forechecker along the wall, to move the puck around the back of the net, or to get the puck past a defender pinching down the wall at your offensive blue line.
 
+![](diagram:bank-pass-angle)
+
 **Risk.** Low risk, moderate reliability — and those are two different things, so keep them apart.
 
 - **Why it is safe:** the puck never travels through the lane the checker is defending. It goes behind them, off a wall they cannot cover, so there is nothing for a stick or a skate to intercept. That, and only that, is the safety argument.
@@ -193,6 +195,12 @@ These two are constantly conflated. They go in **opposite directions** and they 
 
 **How to choose.** Look at the checker's momentum, not their position. If they are still coming and have you pinned, rim it. If they have already gone by you and their feet are pointed the wrong way, reverse it.
 
+⚠️ **The two pictures below are borrowed from [Winger](../positions/winger.md), and their captions speak from that document rather than from this one.** Both are drawn for a winger pinned on the wall in his own defensive zone, and both captions say "in your own end". This section does not confine either play to that zone — the *Typical use* row above places the rim at a defensive-zone exit and the reverse at any wall or behind-the-net battle. What carries across from the pictures is the read, and only the read: which way the puck goes relative to the checker's momentum. The wall-contact warning both captions carry is not scenery — it applies to any battle on the boards, and [Body Contact and Battles](body_contact_and_battles.md) owns it.
+
+![](diagram:winger-dz-rim)
+
+![](diagram:winger-dz-reverse)
+
 **Risk on the rim.** A rim that a teammate is not expecting is a turnover to their opposite number, and a soft rim dies in the corner. Rims also need a called intention — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
 **Risk on the reverse.** A reverse into a teammate who is not there is a turnover you cannot chase — the puck goes one way and your momentum the other — and a reverse is usually made deep in your own end, where a loose puck becomes a chance against you. Reverses are a *support-dependent* play: never reverse on hope. Cross-reference [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
@@ -212,6 +220,8 @@ Risk: Only a good play if your teammate has a genuine speed or angle advantage; 
 **When to use it.** When no teammate is currently open but one is about to be — the classic case is chipping a puck past a defender who is standing you up at the blue line, into the space behind them where your winger is already skating. Also the safe option in the neutral zone when a direct pass would have to thread traffic.
 
 **Risk.** Low, and this is the point: an area pass cannot be intercepted in the way a direct pass can, because it is not aimed at a body. It becomes a **race** rather than a turnover. The risk is only that you lose that race — so it is only a good play if your teammate has a genuine speed or angle advantage. An area pass into a defender's feet with nobody chasing it is just giving the puck away politely.
+
+![](diagram:area-pass-into-space)
 
 ### Drop pass — and why it fails so often
 
@@ -293,6 +303,8 @@ Key: When in doubt, lead them slightly — a pass ahead can be skated onto, a pa
 - **Faster receiver, longer lead; harder pass, shorter lead.** The two variables trade against each other. A slow floater to a sprinting winger needs a large lead; a snap pass to the same winger needs much less.
 - **Lead them toward the play they want to make**, not just into empty ice. A winger driving the net wants the puck slightly ahead and to their forehand; a defenceman stepping into a shot wants it slightly ahead and *toward* their shooting side.
 - **When in doubt, lead them slightly.** A pass marginally ahead can be skated onto. A pass behind cannot be skated backwards onto.
+
+![](diagram:lead-the-receiver)
 
 ---
 

@@ -84,10 +84,27 @@ RULES = [
         # registry, exactly the shape this repository would leak. Measured: the
         # broad ignore was suppressing **two lines**, both this one PDF. A
         # 12-digit run anywhere else, in a URL or not, is still a finding.
+        #
+        # ⚠️ SECOND CMS STAMP, same class, added 2 September 2026. The Coaches
+        # Site serves article images as `…/articleImages/v_230623142533_v4808/…`
+        # — a `yymmddhhmmss` upload stamp inside a `v_<12>_v<n>` path segment.
+        # It fired on `project/verification/link_baseline.tsv` when a
+        # source-verifier recorded the image it had fetched and READ to settle a
+        # misattribution: the chart that proves a corpus figure is a restater's
+        # arithmetic and not the cited author's. Without that row the evidence
+        # for the correction is not on the record.
+        #
+        # ⚠️ Scoped to THAT HOST and THAT PATH SHAPE, for the reason the note
+        # above gives: the broad `https?://\S*[0-9]{12}` form was tried, was
+        # wrong, and was caught by a commit gate because an ECR registry URL is
+        # exactly how an account id would leak from this repository. Two hosts
+        # now have narrow ignores; a third should get its own line, not a
+        # widening of these.
         ignore=(
             r"ICE_HOCKEY_AWS_ACCOUNT_ID|TF_VAR_|example|EXAMPLE"
             r"|123456789012|0{12}|1{12}"
             r"|sportandrecreation\.org\.uk/\S*-[0-9]{12}\.pdf"
+            r"|thecoachessite\.com/articleImages/v_[0-9]{12}_v[0-9]"
         ),
     ),
     Rule(

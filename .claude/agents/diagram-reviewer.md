@@ -163,7 +163,11 @@ which is the authority; the full specification belongs in
   `F1 F2 F3`, `D1 D2`, `W`, `C` for a centre, `A1`/`A2` for attackers. Generic `F` and `D`
   are fine where the diagram does not distinguish individuals. **Bare numerals `1`–`6` must
   never label a player** — that is 21.1's position numbering and it collides. A bare circled
-  `A` is 21.1's **assistant** and a circled `C` is its **coach**; the `C`-for-centre collision
+  `C` is the published sheet's **coach**; ⚠️ **there is NO assistant symbol on it — an earlier
+  version of this line claimed a circled `A` was one.** ⚠️ **That earlier version also said the
+  sheet has TWELVE rows. It has SEVENTEEN** — three agents rendered `sources/heo_intl_drill_symbols.pdf`
+  (sha256 `d0cfeca1…`) independently and counted, first row `Ⓒ Coach`, last `Cluster of pucks`.
+  **Render it and count rather than trusting either figure.** The `C`-for-centre collision
   is known, recorded and the owner's open call.
 - **Backward skating is a row of separate overlapping flattened arches; the backward
   crossover is a zigzag; a smooth wave is skate-and-stickhandle, and a puck carrier's route

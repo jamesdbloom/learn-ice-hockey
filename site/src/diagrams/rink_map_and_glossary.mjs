@@ -141,8 +141,9 @@ const theHighSlot = {
     'pick a corner, and a puck arriving from the half-wall is a one-timer. ' +
     'Who covers it is a coaching choice rather than a rule — in the low zone collapse (zone) ' +
     'system assumed here as the default it belongs to the centre, or to the ' +
-    'weak-side winger collapsing down when the centre goes to help in the corner, so find ' +
-    'out which system your team plays. ' +
+    'weak-side winger collapsing down when the centre goes to help in the corner, while ' +
+    'under man-on-man nobody holds the area at all and you go with your check wherever they ' +
+    'go — so find out which system your team plays. ' +
     'Like the rest of the slot it is not painted on the ice; the circles and dots that bound ' +
     'it are.',
 
@@ -181,9 +182,12 @@ const theLowSlot = {
   caption:
     'The low slot is the lower layer of the slot — from the faceoff dots down toward the ' +
     'goalmouth, between the circles and outside the crease. ' +
-    'This is where tips, rebounds and screen position happen, and shots from here go in at a ' +
-    'far higher rate than shots from anywhere else, which is why defenders cannot let anyone ' +
-    'stand unmarked in it and why a net-front player fights for it. ' +
+    'This is where tips, rebounds and screen position happen, which is why defenders cannot ' +
+    'let anyone stand unmarked in it and why a net-front player fights for it. ' +
+    'The scoring evidence points here more heavily than anywhere else on the ice — but what ' +
+    'has been counted is a share of goals rather than a conversion rate for this layer on ' +
+    'its own, so treat “highest-percentage ice” as the shape those figures agree on rather ' +
+    'than as a measured ranking of this layer against every other one. ' +
     'It is not a marking: the shading stops at the front edge of the crease and at the inner ' +
     'edges of the two faceoff circles, and those are the painted things a player actually ' +
     'reads it off.',
@@ -224,11 +228,17 @@ const theGoalmouth = {
     'shaded box here, which sits over the light blue paint and is a great deal smaller than ' +
     'the low slot above it. ' +
     'It is where tap-ins and jam plays happen. ' +
-    'It is a different job from the slot, one layer apart: in the low zone collapse (zone) ' +
-    'coverage assumed here as the default — a coaching choice, not a rule — the ' +
-    'weak-side defenceman is responsible for the goalmouth and does not leave it, and getting the two mixed ' +
-    'up is one of the most common causes of a blown assignment — coaching observation rather than ' +
-    'a counted ranking. ' +
+    'It is a different job from the slot, one layer apart, and getting the two mixed up is one ' +
+    'of the most common causes of a blown assignment — coaching observation rather than a ' +
+    'counted ranking. ' +
+    'Who owns it is a coaching choice rather than a law: in the low zone collapse (zone) ' +
+    'coverage assumed here as the default the weak-side defenceman is responsible for it and ' +
+    'does not leave it, under man-on-man it belongs to whoever’s check went there, and under ' +
+    'a hybrid — man-on-man below the dots, zone above — to whichever of the low three is ' +
+    'matched to the net-front forward. A collapsing ' +
+    'box is a state rather than a system — what a low zone collapse turns into under maximum ' +
+    'pressure — and in it both defencemen are inside together, plus whoever else is in there. ' +
+    'So find out which system your team plays. ' +
     'The crease itself is the goaltender’s space and the shading is not an invitation to ' +
     'stand in it: the instruction is to work just outside the paint, not on its edge and not in it — three of the four books count the red line as crease.',
 
@@ -324,14 +334,35 @@ const theTrapezoid = {
     'IIHF goal line is 4.0 m from the end boards rather than 11 ft. ' +
     'Where it applies is the part to check rather than assume: the NHL and IIHF play have it, both ' +
     'read directly in the rulebooks, and the KHL is commonly said to as well though no KHL rulebook ' +
-    'was available to check that one; neither the USA Hockey book nor the Hockey Canada ' +
+    'was available to check that one. ' +
+    'Neither the USA Hockey book nor the Hockey Canada ' +
     'book marks one at all, so a league running on either has none — though neither leaves ' +
     'the goalkeeper unrestricted back there: USA Hockey Rule 614(c) stops him freezing the ' +
     'puck outside the privileged area, corners excluded, and Hockey Canada assesses a minor ' +
-    'with no warning for freezing it at all once he has left the crease. And in ' +
+    'with no warning for freezing it at all once he has left the crease. ' +
+    'And in ' +
     'England and Wales England Ice Hockey’s own regulations say it is "not currently ' +
     'enforced" while the current In-House Rules are silent — so ask your league before ' +
-    'assuming either way.',
+    'assuming either way. ' +
+    // The suspension's LIMIT, and it has to travel with the suspension. §3 spends a
+    // warning block on the inference a listener draws without it, and Common Mistakes
+    // carries an entry for that inference alone — but both are hundreds of spoken
+    // sentences away, and the sentence immediately before this one has just taught the
+    // opposite pattern for USA Hockey and Hockey Canada ("no trapezoid, still not free
+    // to freeze"), so England arriving with no such rider reads as the deliberate
+    // exception. IIHF Rule 63.2(I), read in sources/iihf_rules_2026-27.txt:5228-5230:
+    // "On any Player, including the goalkeeper, who holds, 'freezes' or plays the puck
+    // ... in such a manner as to deliberately cause a stoppage of play. Regarding to a
+    // goalkeeper, this rule applies outside of their goal crease area". Two minutes by
+    // Rule 16.1 (:1972-1973). The carve-out is 63.2(VI)'s Note (:5257-5259): "If a
+    // goalkeeper comes out of their goal crease to 'cut down the angle' on a shot and
+    // after making the save covers the puck, this shall be legal." It travels too, or
+    // the caption produces a goaltender who will not cover a rebound.
+    'Read that suspension narrowly if it applies to you: it frees where a goalkeeper may ' +
+    'play the puck behind the net, never where they may freeze it — freezing the puck to ' +
+    'cause a stoppage is a separate two-minute minor anywhere outside the goal crease ' +
+    'under IIHF Rule 63.2(I), and coming out to cut down the angle, saving, and then ' +
+    'covering it stays legal.',
 
   describe:
     'The attacking half of the rink, the net at the right. The area behind the goal line is ' +

@@ -3490,7 +3490,17 @@ def spoken_sentences(path: Path, doc_id: str | None = None,
     sentence was swapped for a different one.
     """
     text = spoken_text(path, doc_id, source_label)
-    return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    # ⚠️  SPLIT AFTER TRAILING CLOSERS TOO. The bare `(?<=[.!?])\s+` did not split a
+    # sentence ending `.)` or `.)*` -- the character before the whitespace is `)`, not a
+    # terminator -- so the NEXT heading was returned glued to the tail of the previous
+    # sentence. ⚠️  THAT PRODUCED A FALSE FINDING IN TWO INDEPENDENT REVIEWS: 32 headings
+    # corpus-wide, including `faceoffs.md`'s "Key Takeaways" and `zone_entries.md`'s
+    # "Common Mistakes", were reported as reaching a listener with no audible section
+    # break. ⚠️  THE AUDIO WAS ALWAYS CORRECT -- the SSML puts each heading in its own
+    # <p> behind a 1000 ms break -- and it was the HELPER that was wrong. This function
+    # exists to stop reviewers hand-rolling their own text extraction; a helper that
+    # manufactures defects is worse than none, which is why the comment is this long.
+    return [s.strip() for s in re.split(r"(?<=[.!?])[)\]\"'*”’]*\s+", text) if s.strip()]
 
 
 def build_ssml(chunk: Chunk) -> str:

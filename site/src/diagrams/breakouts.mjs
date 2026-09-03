@@ -155,8 +155,8 @@ const up = {
     'and the goal line. The centre C is low in the middle, inside the right circle. The defenceman ' +
     'D2 is on the far side of the net near the goal line. One opposition forward is behind the net, ' +
     'the forecheck having committed there. A single dashed route runs from D1 up the wall to the ' +
-    'winger’s stick. The winger’s own next move is deliberately not drawn: whether he ' +
-    'skates first or looks up ice first is a coaching choice, and not one with a settled answer.',
+    'winger’s stick. The winger’s own next move is deliberately not drawn; the section ' +
+    'covers the reception itself separately.',
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
@@ -221,9 +221,12 @@ const wheel = {
     'your screen and cutting wide gives the forechecker a straight line to you. D2 is drawn already ' +
     'standing at the net front and with no route at all, and that is the whole point: a player is ' +
     'entitled to the ice he is standing on and may lengthen an opponent’s path, but stick in ' +
-    'tight and vertical, hands to yourself, no bump as he goes past — sliding across into the ' +
-    'forechecker’s path is an interference minor against your team under NHL Rule 56.1. The ' +
-    'far-side winger and the centre are the outlets, and a second forechecker holding the far side, ' +
+    'tight and vertical, hands to yourself, no bump as he goes past. Sliding across into his path ' +
+    'is interference: a minor, two minutes, at the exact moment your partner had beaten the ' +
+    'forecheck. And two minutes is the floor, not the ceiling. All four books can go higher on a ' +
+    'violent one, up to a major and an ejection, and not one of them waits for the forechecker to be ' +
+    'hurt first. What differs is the bar each book sets, and section 2 sets out all four. ' +
+    'The far-side winger and the centre are the outlets, and a second forechecker holding the far side, ' +
     'which is exactly what F2 does in a 2-1-2, turns all of this into a trap.',
 
   describe:
@@ -331,6 +334,8 @@ const reverse = {
   // BEFORE the puck is banked. A reverse into empty ice is the section's own
   // stated failure, and a still frame that drew them simultaneously would not say
   // which came first.
+  numbered: true,
+
   routes: [
     // 1 — D2 comes around the back of his own net. Bowed to x -94.5 at the
     //     midpoint so the route runs behind the goal frame, never across the goal
@@ -458,30 +463,53 @@ const dToD = {
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
     'corner; the defenceman D2 is low in the left corner. Two opposition forwards are on the right ' +
-    'side, one deep and one on the wall — the flooded side. A shaded region covers the danger zone: ' +
-    'the ice between the faceoff dots from the goal line up to the hash marks, plus the narrower ' +
-    'slot from there out to the tops of the circles. The single dashed pass runs from D1 down and ' +
+    'side, one deep and one on the wall — the flooded side. A shaded region covers the house, the ' +
+    'home-plate-shaped area analysts count as the dangerous ice: square across the top along the ' +
+    'tops of the two faceoff circles, straight down the dot lines to the two faceoff dots, then ' +
+    'angling in to the two goalposts on the goal line. The single dashed pass runs from D1 down and ' +
     'around behind the goal, staying between four and six feet behind the net the whole way, and up ' +
     'to D2. It never enters the shaded region. The goaltender is in the crease.',
 
-  // The section defines the danger zone in words that are already geometry: "the
-  // slot plus the ice between the faceoff dots down to the goal line". Drawn as
-  // exactly that union — a rectangle from the goal line to the dot line between
-  // the dots, and a narrower band from there to the tops of the circles — rather
-  // than as the smoothed "home plate" shape, which would be a claim the section
-  // does not make.
+  // The house, or home plate, exactly as the OWNER defines it —
+  // content/foundation/rink_map_and_glossary.md, section 'The "home plate" /
+  // high-danger area (also "the house")': square across the top along the tops
+  // of the two faceoff circles, straight down the dot lines to the two faceoff
+  // dots 44 ft apart, then angling in to the two goalposts, 6 ft apart on the
+  // goal line. The posts are at y = +-3 (rink.json goal.post_y), so the two low
+  // corners are the posts themselves rather than anything invented. These are
+  // the same six points as defensive_zone_coverage.mjs's HOUSE, mirrored to the
+  // far end, and the two modules must not be allowed to drift apart.
+  //
+  // ⚠️ WHAT THIS REPLACED, BECAUSE THE SHAPE WAS NEARLY THE OWNER'S INVERSE.
+  // It was drawn from breakouts.md:47's own words — "the slot plus the ice
+  // between the faceoff dots down to the goal line" — which put the WIDE part
+  // at the goal line and the NARROW part at the tops of the circles: 44 ft wide
+  // on the goal line narrowing to 14 ft, where the owner is 44 ft wide at the
+  // top tapering to 6 ft post to post. 1090 sq ft against the owner's 1160, but
+  // a symmetric difference of 830 — the two agreed over barely a third of their
+  // own area. check_zones.py compares zones BY NAME and could not see it,
+  // because this one was labelled differently. The section was corrected first.
+  //
+  // `danger: true` because this region means "never move the puck through
+  // here". In the target blue it read as "stand here", which is the one
+  // notation collision site/scripts/lib/rink.mjs warns about by name — and
+  // breakout-centre-swing, in this same module, shades a TARGET in that blue.
+  //
+  // THE LABEL IS SHORT ON PURPOSE. Zone labels are drawn at the mean of their
+  // vertices with no collision avoidance. Here that is (-70.67, 0) at font-size
+  // 5.44, and the goaltender's bare "G" sits at (-87, 0). "the danger zone", 15
+  // characters, spanned x -93 to -48 and ran straight through him.
   zones: [
     {
-      label: 'the danger zone',
+      label: 'the house',
+      danger: true,
       points: [
-        { at: 'goal-line::far', dy: 22 },
-        'faceoff-dot:right:far',
-        { at: 'high-slot::far', dy: 7 },
-        { at: 'top-of-circle:right:far', dy: -15 },
-        { at: 'top-of-circle:left:far', dy: 15 },
-        { at: 'high-slot::far', dy: -7 },
-        'faceoff-dot:left:far',
-        { at: 'goal-line::far', dy: -22 },
+        { at: 'goal-line::far', dy: 3 },      // (-89,  3)  right goalpost
+        'faceoff-dot:right:far',              // (-69, 22)
+        'top-of-circle:right:far',            // (-54, 22)
+        'top-of-circle:left:far',             // (-54, -22)
+        'faceoff-dot:left:far',               // (-69, -22)
+        { at: 'goal-line::far', dy: -3 },     // (-89, -3)  left goalpost
       ],
     },
   ],
@@ -546,10 +574,11 @@ const stretch = {
     'what leaves both a lane and a winger behind the coverage. The winger is drawn on his own side ' +
     'of the far blue line because that is what keeps him onside — one skate in contact with the line ' +
     'or behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 in ' +
-    'the same words, and a trailing skate in the air still counts because the plane is unbroken, ' +
+    'materially identical words differing only in pronoun, and a trailing skate in the air still ' +
+    'counts because the plane is unbroken, ' +
     'though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is ' +
-    'offside — two books of the four. Only the two players the ' +
-    'option names are drawn for the breaking-out team. And the honest risk: a completed stretch is ' +
+    'offside — two books of the four. Apart from the goaltender, only ' +
+    'the two skaters the option names are drawn for the breaking-out team. And the honest risk: a completed stretch is ' +
     'close to a breakaway, an intercepted one is a full-speed rush the other way with your winger ' +
     'sixty to eighty feet behind the puck, the pass drawn here is over a hundred feet on an NHL ' +
     'sheet, and in most amateur hockey it is not a good default.',
@@ -560,8 +589,9 @@ const stretch = {
     'wall above him, one low on the left, one in the middle. Two opposition defencemen stand on the ' +
     'blue line of that zone, stepped up. The winger W2 is a long way up ice at the right, just on ' +
     'his own side of the far blue line, alone. A single long dashed pass runs from D1 diagonally ' +
-    'across and up the sheet to him, passing under the near forechecker, outside the danger zone, ' +
-    'and between the two stepped-up defencemen. No other own player is drawn.',
+    'across and up the sheet to him, passing under the near forechecker, outside the faceoff dots, ' +
+    'and between the two stepped-up defencemen. The goaltender is in the crease; no other own ' +
+    'player is drawn.',
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
@@ -596,9 +626,19 @@ const stretch = {
 
   routes: [
     // Flat and straight: "lead the receiver so they collect it in stride". It
-    // crosses the hash-mark line at y 24.6 — outside the dots, so outside the
-    // danger zone — and crosses the blue line at y 2.8, between the two stepped-up
-    // defencemen rather than through either of them.
+    // crosses the dot line — the hash-mark line — at y 24.6, outside the dots,
+    // and crosses the blue line at y 2.8, between the two stepped-up defencemen
+    // rather than through either of them.
+    //
+    // ⚠️ IT DOES CLIP THE HOUSE, AND THIS COMMENT USED TO SAY IT DID NOT.
+    // "Outside the dots at the dot line" was taken to mean outside the dangerous
+    // ice, which held only against the inverted region this module used to draw
+    // for breakout-d-to-d. Against the owner's house — 44 ft wide the whole way
+    // from the dot line up to the tops of the circles — this line crosses y = 22
+    // at x = -63.7 and stays inside until it leaves the zone at x = -54, about
+    // 10 ft of its length. That is the top corner of home plate, high in the
+    // zone, and it is not what "never through the slot" is about, so the route
+    // is unchanged and the `describe` no longer claims otherwise.
     { from: STRETCH_D1, to: { at: 'point:left', dx: -10, dy: 3 }, kind: 'pass' },
   ],
 
@@ -609,24 +649,43 @@ const stretch = {
 // 8 — The strong-side winger's trip down the wall.
 // ---------------------------------------------------------------------------
 
-// The two ends of the trip. The section: "You start high, up on the opposing point
-// man ... you leave the point and drop to the wall between the hash marks and the
-// goal line ... Those two spots are **44 to 64 feet apart** — the point is at the
-// blue line, 64 ft out from the goal line, and the outlet band runs from level with
-// the faceoff dot, 20 ft out from the goal line, down to the goal line itself."
+// The two ends of the trip. The section, content/systems/breakouts.md:168: "You
+// start high, up on the opposing point man ... you leave the point and drop to the
+// wall between the hash marks and the goal line ... Those two spots are **a little
+// under 44 to 64 feet apart** — the blue line is 64 ft out from the goal line and
+// **the point sits just inside it rather than on it**, while the outlet band runs
+// from level with the faceoff dot, 20 ft out from the goal line, down to the goal
+// line itself."
 //
-// DRAWN, THEY ARE NOW 47.8 FT APART — 48.3 along the bowed route — which is inside
-// the section's range instead of under its floor. ASSUMES half-wall.y = 38.5
-// (site/src/data/rink.json).
+// ⚠️ THAT QUOTATION HAS BEEN RE-TAKEN. It used to read "Those two spots are **44 to
+// 64 feet apart** — the point is at the blue line, 64 ft out from the goal line" —
+// a sentence breakouts.md no longer contains, because
+// content/foundation/rink_map_and_glossary.md makes the point the AREA JUST INSIDE
+// the blue line rather than the line (:356, :372, :621, and the derivation at :683).
+// So the FLOOR of the range moved from a flat 44 down to "a little under 44". That
+// RELAXES this picture, it cannot invalidate it: everything drawn here already
+// cleared 44.
+//
+// DRAWN, THEY ARE 47.8 FT APART as the crow flies — 48.3 along the bowed route, and
+// 47 ft longitudinally (62 ft out from the goal line down to 15) — inside the
+// section's range on every measure. ASSUMES, all from site/src/data/rink.json AS
+// COMMITTED TODAY: half-wall.y = 38.5, goal_line_x = 89, point.x = 25 — a SCHEMATIC
+// anchor sitting on the blue line 64 ft out, while the point itself is the area just
+// inside it; rink.json's `point` $comment sets out why the coordinate stays on the
+// line. ⚠️ Every figure here dies if point.x moves.
 //
 // WINGER_HIGH used to be dx -8, dy 6, which put it 56 ft out from the goal line
-// rather than the blue line's 64 and left the pair 42.6 ft apart as the crow flies
-// and 43.1 along the route — under the floor of 44 on every measure, while the
-// caption AND the `describe` both quoted the section's 44-to-64 at the reader, and
-// the `describe` is read aloud by the speech pipeline. The 8 ft was there to keep
-// the glyph off the opposition defenceman standing at 'point:right:far', and the
-// shortfall was reported rather than closed because closing it meant moving a
-// glyph.
+// rather than the anchor's 64 and left the pair 42.6 ft apart as the crow flies,
+// 43.1 along the route and 41 longitudinally — under the floor on the longitudinal
+// measure by three feet, and at or under it on the other two once the floor is read
+// as "a little under 44" rather than a flat 44 — while the caption AND the
+// `describe` both quoted the section's range at the reader. (The caption is the
+// layer a listener gets: md_to_speech.py resolves `diagram:<id>` to the CAPTION and
+// nothing else. The `describe` becomes the SVG's `<desc>`, so it reaches a screen
+// reader instead. An earlier version of this comment said the `describe` was read
+// aloud by the speech pipeline; it is not.) The 8 ft was there to keep the glyph off
+// the opposition defenceman standing at 'point:right:far', and the shortfall was
+// reported rather than closed because closing it meant moving a glyph.
 //
 // It is closed by moving the winger UP-ICE rather than sideways, which is what the
 // section describes anyway: "you start high, up on the opposing point man". At
@@ -638,16 +697,17 @@ const stretch = {
 // nowhere near the dasher.
 //
 // The alternative was to correct the `describe` to the drawn 42.6 and leave the
-// picture short. Rejected: the caption states 44-to-64 as a fact about the two
-// spots on a real sheet, so a `describe` reading "about forty-three feet" in the
-// same breath contradicts it to a listener who has only the audio — and the
-// picture would still be teaching a shorter trip than the section it illustrates.
+// picture short. Rejected: the caption states the range as a fact about the two
+// spots on a real sheet, so a `describe` reading "about forty-three feet" would
+// contradict the caption in the same figure — the two are read together by a screen
+// reader — and the picture would still be teaching a shorter trip than the section
+// it illustrates.
 //
 // What stood here before that was "Drawn, they are 41.4 ft apart, which is the
 // section's own figure arrived at rather than rounded toward" against a section
 // quoted as saying "about 40 feet". Both halves were dead. 41.4 is the figure this
 // pair resolved to when half-wall.y was 33, and the section has since replaced
-// "about 40" with the 44-to-64 range the caption already carries.
+// "about 40" with the "a little under 44" to 64 range the caption already carries.
 const WINGER_HIGH = { at: 'point:right:far', dx: -2, dy: 9 };   // (-27, 29)
 // ASSUMES half-wall.y = 38.5 (site/src/data/rink.json).
 const WINGER_LOW  = { at: 'half-wall:right:far', dx: -5, dy: -1 }; // (-74, 37.5)
@@ -663,8 +723,8 @@ const wingerWall = {
     'at the instant your team wins the puck. He starts high, level with the opposing point man — ' +
     'that is his defensive-zone coverage under the house-default low zone collapse, and being there ' +
     'is not an error — and comes down the wall to the boards between the hash marks and the goal ' +
-    'line, at or just below the dot line, never above it. Those two spots are 44 to 64 feet ' +
-    'apart and they belong to two different moments: the trip between them, and its timing, is the ' +
+    'line, at or just below the dot line, never above it. Those two spots are a little under ' +
+    '44 to 64 feet apart and they belong to two different moments: the trip between them, and its timing, is the ' +
     'job, and neither end of it is a place to live. Time the arrival rather than camping, because it ' +
     'is better to be a little late than a little early — it is easy to speed up and very hard to ' +
     'slow down and re-accelerate — and arrive with the body open to the ice rather than the nose ' +
@@ -683,8 +743,9 @@ const wingerWall = {
     'The full sheet, the defending zone at the left. The winger W1 is high in his own zone, just ' +
     'inside the blue line and level with an opposition defenceman standing on that line. A skating ' +
     'route curves from W1 out toward the right boards and then down them, finishing on the wall ' +
-    'just below the hash-mark line, some forty-eight feet from where it began — inside the 44 to 64 ' +
-    'feet those two spots are apart on an NHL sheet. The defenceman D1 is deep ' +
+    'just below the hash-mark line, some forty-eight feet from where it began — inside the range ' +
+    'those two spots are apart on an NHL sheet, a little under forty-four to sixty-four feet. ' +
+    'The defenceman D1 is deep ' +
     'in the right corner with the puck, which his team has just won. The goaltender is in the ' +
     'crease. No pass is drawn: this diagram is the trip, not the exit.',
 

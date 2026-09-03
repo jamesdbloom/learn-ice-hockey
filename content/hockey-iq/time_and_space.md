@@ -64,6 +64,8 @@ Work through the two cases that catch players out.
 
 **You can have time with an opponent three feet away.** A forechecker who has over-skated you and is now travelling *away* from you at speed has a closing velocity of roughly zero, or even negative. They are three feet from your body and several strides from being able to do anything about you, because before they can reach you they have to stop, turn and rebuild speed — three or four tenths of a second minimum, usually more — a coaching estimate, not a measured figure, and no study was found that puts a number on it. This is exactly the moment a **reverse** works: you send the puck back against the flow into the space the forechecker has just vacated. (A *reverse* goes back against the direction of play; a *rim* goes onward around the boards with it. They are different plays.) The player who feels the opponent nearby and panics throws the puck away. The player who reads the closing speed calmly makes a play.
 
+![](diagram:breakout-reverse)
+
 **You can have no time with an opponent twenty feet away.** A defenceman skating backwards at you with a tight gap, on balance, with their stick already in your lane, is twenty feet off and closing at maybe fifteen feet per second of relative velocity. You have a bit over a second, and part of that second is already spoken for by the puck being on your backhand. Meanwhile the "twenty feet" made you feel safe. It wasn't.
 
 **So read closing speed, not distance.** Concretely, look at three things when you scan:
@@ -101,6 +103,8 @@ Space is created in the defender's mind before it exists on the ice. A defender 
 The [Cutting Edge Ice Academy](https://www.edgeiceacademy.com/article/how-deception-creates-space-without-speed) coaching material — the name in its own footer, though its domain reads `edgeiceacademy.com` — describes what a deceived defender actually does: they pivot their hips, reach with the stick, or shift weight in response to a cue that was false. Every one of those is a positional loss you can spend.
 
 **One warning.** Deception costs you a beat. If you have no time — two closing forecheckers, back to the boards — fake nothing and make the simple play. Fakes are a luxury good, purchased with time you already have.
+
+![](diagram:show-one-shoulder-open-the-other)
 
 ### Delay and curl-back — turning away from pressure
 
@@ -196,6 +200,8 @@ Same idea across the whole sheet:
 - On a zone entry, put the puck into the space behind the defender rather than at the defender. See [Zone Entries](../systems/zone_entries.md).
 - On a pass, hit the space your teammate is skating into rather than their current blade. A pass to a stationary stick freezes them; a pass into space keeps them moving and moving players are hard to defend.
 - In the offensive zone, move to the empty ice rather than to the puck. Four players converging on one puck is how you turn a five-on-five into a five-on-two against yourselves.
+
+![](diagram:attack-the-seam)
 
 ### Scanning before you receive
 
@@ -321,6 +327,8 @@ Sending one player to pressure the puck, with nobody behind them, does not take 
 
 Pressure only takes space away when there is a **second layer** — a teammate positioned to take the puck if the first pressure forces a rushed play, and to cover the ice the first player left.
 
+![](diagram:layer-not-converge)
+
 This is a system question, so name your system. **The house default throughout is a 2-1-2 forecheck and a low zone collapse (zone) defensive-zone coverage.** In a 2-1-2, F1 pressures, F2 takes the first escape option, F3 holds the high middle as the safety valve — and **F1/F2/F3 are roles defined by order of arrival, not by position; whoever gets there first is F1.** A 1-2-2 puts one forechecker in and holds two back, which concedes possession behind their net but denies the neutral zone entirely. A 1-3-1 neutral-zone trap concedes even more and denies even harder.
 
 The point is not which is right. The point is that **if you go and your teammate doesn't, you have made a hole rather than closed one** — so find out what your team plays before your first shift, and go on the same trigger as everyone else. See [Forechecking Systems](../systems/forechecking_systems.md) and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
@@ -365,6 +373,8 @@ Two ideas make this work:
 - **A receiver forced to catch a puck while being closed on loses their scan.** They will have to look at the puck. That is a whole second of blindness you created without touching anybody.
 
 This is what "taking away time" concretely means. You are not preventing the play; you are making it arrive with no room attached to it.
+
+![](diagram:deny-the-reception)
 
 ---
 

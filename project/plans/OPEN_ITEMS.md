@@ -1,6 +1,6 @@
 # What is open — consolidated
 
-**As at 24 August 2026, after round 39.** This file is the single live list. The
+**As at 2 September 2026, after round 59 (committed `84671fb`).** ⚠️ **An earlier header said *"as at 24 August 2026, after round 39"* — twenty rounds stale, in the file that warns its own rows go stale faster than they are closed.** This file is the single live list. The
 round-by-round detail stays in [`round_36_carried_findings.md`](../reviews/round_36_carried_findings.md) and the
 [review records](../reviews/round_39_ducking_division_scope.md); this is the index into them, grouped by the kind of work each
 item actually needs.
@@ -8,6 +8,1140 @@ item actually needs.
 Nothing here is a defect known to be shipping wrong that could simply be corrected. Each item
 is open because it needs a decision, a source that is not on disk, a tool that does not exist,
 or a structural change too large to fold into a repair.
+
+---
+
+## ▶▶ ROUND 60 — THE OWNER HAS RESET THE PRIORITY: READABILITY AND UNDERSTANDABILITY COME FIRST
+
+⚠️ **This supersedes the tier order below for the purposes of what to work on next.** The tiers still
+describe severity; they no longer describe sequence. The owner's instruction, 2 September 2026:
+
+> *"I want the items around readability and understandability to be the most important thing we work
+> on next"* … *"I want to make sure as well we are including lots of diagrams as **that helps
+> readability more than anything else**."*
+
+### 1. DIAGRAMS — the owner's single highest-value lever
+
+> *"One diagram is worth 1000 words."* — the owner
+
+**Measured 2 September 2026, then RE-MEASURED and corrected by a diagram survey.** ⚠️ **My first
+table was wrong in four ways and my method was half-wrong: `^\s*```diagram` matches ZERO occurrences
+corpus-wide — there is no fenced diagram form. The only embed is `![](diagram:slug)`.**
+
+| Section | Docs | Embeds | **Owns** | With none |
+|---|---|---|---|---|
+| `systems/` | 10 | **70** | 70 | **1** |
+| `hockey-iq/` | 5 | 17 | 15 | 1 |
+| `positions/` | 5 | 15 | 15 | 0 |
+| `foundation/` | 4 | 11 | 11 | 2 |
+| `technique/` | 5 | **4** | **0** | 2 |
+| `reading-diagrams/` | 1 | 1 | 1 | 0 |
+| `getting-started/` | 1 | 0 | 0 | 1 |
+| `off-the-ice/` | 6 | **0** | 0 | 6 |
+| **TOTAL** | **37** | **118** | **112** | **13** |
+
+**RE-MEASURED 2 September 2026, mid-round-60, and the table above is superseded.** ⚠️ **The two
+measures below are DIFFERENT and the table above conflated them.** *Embeds* counts `![](diagram:slug)`
+in a document; *owns* counts diagrams whose `owner` field names it. **A document can embed four
+pictures and own none** — `technique/passing_and_receiving.md` does exactly that.
+
+| Section | Docs | Embeds | **Owns** | No embed at all | **Owns none** |
+|---|---|---|---|---|---|
+| `systems/` | 10 | 71 | 71 | 0 | 0 |
+| `hockey-iq/` | 5 | 17 | 15 | 1 | **3** |
+| `positions/` | 5 | 15 | 15 | 0 | 0 |
+| `foundation/` | 4 | 11 | 11 | 2 | 2 |
+| `technique/` | 5 | 7 | **1** | 2 | **4** |
+| `reading-diagrams/` | 1 | 1 | 1 | 0 | 0 |
+| `getting-started/` | 1 | 0 | 0 | 1 | 1 |
+| `off-the-ice/` | 6 | **1** | **0** | 5 | **6** |
+| **TOTAL** | **37** | **123** | **114** | **11** | **16** |
+
+**RE-MEASURED AGAIN 3 September 2026, after round 60's fifteen new diagrams. Both tables above are
+superseded; this is the live state.**
+
+| Section | Docs | Embeds | **Owns** | No embed at all | **Owns none** |
+|---|---|---|---|---|---|
+| `systems/` | 10 | 71 | 71 | 0 | 0 |
+| `hockey-iq/` | 5 | **26** | **22** | 0 | **1** |
+| `positions/` | 5 | 15 | 15 | 0 | 0 |
+| `technique/` | 5 | **13** | **7** | 2 | **2** |
+| `foundation/` | 4 | 11 | 11 | 2 | 2 |
+| `off-the-ice/` | 6 | **11** | 0 | **5** | 6 |
+| `reading-diagrams/` | 1 | 1 | 1 | 0 | 0 |
+| `getting-started/` | 1 | 0 | 0 | 1 | 1 |
+| **TOTAL** | **37** | **148** | **127** | **10** | **12** |
+
+**Round 60's movement: embeds 123 → 148, owned 114 → 127, owns-none 16 → 12, no-picture 11 → 10.**
+⚠️ **`technique/` went from owning ONE to owning SEVEN**, and `off-the-ice/` from one borrowed embed to
+eleven — all in `how_to_watch_hockey.md`, **deliberately borrowed rather than owned**, because Part 2 is a
+recognition guide to shapes the corpus already draws and a second copy would be a second thing to keep true.
+
+**THE TWELVE THAT OWN NONE, triaged — this is the next wave's target list:**
+
+| Document | Embeds | Verdict |
+|---|---|---|
+| `hockey-iq/risk_management.md` | 1 | ⚠️ **BEST REMAINING CANDIDATE.** Its whole subject is *where on the ice* a mistake costs what — a risk gradient the rink primitives draw directly |
+| `off-the-ice/practice_and_development.md` | 0 | **Strong candidate — drills are rink shapes**, and it currently asks the reader to picture them in prose |
+| `foundation/on_ice_communication.md` | 0 | **Candidate:** support position and the calls that go with it are positional, so drawable |
+| `getting-started/getting_started.md` | 0 | **Candidate:** the first document a beginner reads owns no picture at all |
+| `foundation/uk_rules.md` | 0 | **Possible:** rink-dimension divergence is geometric, but `rink_map_and_glossary.md` owns the rink and duplication is the risk |
+| `technique/skating.md`, `technique/puck_handling.md` | 0 | ⚠️ **NOT WORK — established, with reasons, below.** Body mechanics the rink primitives cannot draw, and **a body-mechanics diagram would be checkable by nobody**, where every existing diagram is checkable because `rink.json` fixes the geometry |
+| `off-the-ice/how_to_watch_hockey.md` | 11 | **Correct as it stands** — borrowing is the right call, see above |
+| `off-the-ice/equipment.md`, `conditioning_and_recovery.md`, `mental_game.md`, `team_play_and_culture.md` | 0 | **Not rink-drawable.** Do not manufacture a picture to close a count |
+
+⚠️ **The count is not the goal. Four of the twelve should stay at zero and two more are settled as
+undrawable** — so the real remaining surface is **four documents**, not twelve.
+
+⚠️ **PREVIOUS HEADLINE, NOW SUPERSEDED: "16, not 13".** Sixteen documents owned no picture; **eleven had no picture
+on the page at all**, borrowed or otherwise. The five in between are the documents that look served and
+are not: `risk_management.md`, `time_and_space.md`, `how_to_watch_hockey.md`, `shooting.md` (one
+borrowed each) and `passing_and_receiving.md` (**four borrowed, none its own**).
+
+### OPEN — `check_pointers` run 3 September 2026: 3 hits in 37 documents, ONE of them real
+
+**Ran after round 60's content edits. The layer is in good shape — but read all three, do not sweep.**
+
+1. ⚠️ **REAL, and the only one worth fixing.** `rules_primer.md` — *"…near-identical wording, but not
+   identical: **see the note below**."* **A listener cannot see a note below.** The note is voiced content,
+   so the substance survives; what dangles is the deictic. **Fix by naming what the note SAYS rather than
+   where it sits.** ⚠️ **NOT DONE — the file was under live `safety-reviewer` review when this was found,
+   and editing it would have made that report stale. Do it in the next wave.**
+2. **LEGITIMATE, leave alone.** `playing_without_the_puck.md` — *"Both computations are set out in full in
+   **the written** Notes on verification section."* ⚠️ **The word "written" is doing exactly the job this
+   class needs**: it tells the listener the detail is in the written version rather than pretending they
+   can reach it. **This is the well-formed shape of a site-aimed pointer, and it should be the model for
+   fixing hit 1.**
+3. **Reported as ambiguous by the tool itself.** `rules_primer.md` — the sentence about amendments *"not in
+   this table at all"*, in a **MIXED document** (1 table voiced, 3 dropped) where the tool cannot tell
+   which table the sentence means. ⚠️ **Read the rendered SSML before touching it** — and note the sentence
+   says what is NOT in the table, which may be sound regardless of whether the table is voiced.
+
+### OPEN — a caption can be CORRECT AND UNLISTENABLE, and nothing checks for it
+
+⚠️ **Measured this round on a repaired caption that every rule check passed.** Its final spoken unit ran
+**138 words**; the rules clause alone ran **84 words**, carrying **five rule numbers across three books**
+and **two different escalation logics**, voiced alone with a 300 ms break either side to someone with no
+picture and no text.
+
+**The verifier's judgement, which is the finding:** *"The old caption's failure was that a listener heard
+the wrong price. This one's is that a listener hears no price at all. **That is a different failure, not
+a smaller one.**"* What a listener retains is the last thing said — here, a list of five fouls with no
+verdict attached, arriving after the number that mattered had gone.
+
+⚠️ **No tool in `scripts/` measures this, and the verifier said plainly that it reached the finding by
+counting words and reading the caption aloud in its head** — *"not a check anyone can automate and not
+one any of the eleven scripts performs."*
+
+**The remedy that worked, and it generalises:** ⚠️ **rule numbers belong in the ` ```facts ` block and the
+body, where a reader can stop and re-read. A caption is heard ONCE.** Carry the tiers in **words**, one
+book per spoken unit, **floor first**; where a route is genuinely three steps long, point at the section
+— `check_pointers.py` treats a pointer at the site as legitimate.
+
+**Whether to build a spoken-length worklist for the caption layer is open.** ⚠️ **If one is built it must
+be a WORKLIST, not a gate, and must never gain a `--strict`** — a long caption is often correct, because
+a picture with six players genuinely needs six sentences to describe, and no tool can tell a dense
+caption from an overloaded one.
+
+### OPEN — a caption whose BODY says "this document" cannot safely be borrowed
+
+⚠️ **The renderer announces a borrowed caption's owner — `"Diagram, from forechecking systems. …"` — but
+that only fixes ATTRIBUTION. It does not fix a caption whose own text says *"this document"*.**
+
+Found while an agent was choosing reuse candidates. It **rejected `entry-delay-curl`** for a section that
+otherwise wanted it, because its caption reads *"this document has no figure for what share of wasted
+entries that accounts for"* — and *"this document"* means **`zone_entries.md`**, not the document a
+listener is currently in. **Borrowed into another file, the caption makes a claim about the wrong
+document's evidence base.**
+
+**The agent screened its two accepted reuses for the same wording and reported doing so.** ⚠️ **That
+screen is not written down anywhere, no tool performs it, and the reuse pattern is the corpus's cheapest
+readability win** — 9 borrows exist and the `technique/` and `off-the-ice/` gaps will be closed largely
+by borrowing.
+
+**Two candidate remedies, both cheap, neither chosen:**
+1. **A worklist** over every caption and `describe` for document-relative phrasing — *"this document"*,
+   *"this guide"*, *"the section"*, *"above"*, *"below"*, *"the next diagram"*. ⚠️ **Note the last three
+   are a DIFFERENT hazard already measured this round: two captions carry ordering dependencies
+   (*"against the same puck carrier as the 2-1-2 above"*, *"the next diagram shows theirs"*) that resolve
+   **only** because the embedding document happens to place the pair adjacently and in that order.
+   **Nothing mechanical checks it, and it is invisible in the source.**
+2. **A convention:** a caption states its own evidence limits in terms of the claim, never in terms of
+   *"this document"* — the same rule the corpus already applies to prose under non-negotiable 6.
+
+⚠️ **Do not sweep either pattern.** A caption saying *"the section covers the reception separately"* is
+legitimate where it is not borrowed, and an ordering reference is legitimate in the document that owns
+both diagrams.
+
+### ⚠️ STANDING GUIDANCE — AGENTS MUST NAMESPACE SCRATCHPAD FILES
+
+**Measured twice in one round, by two agents that each lost work.** The session scratchpad is **shared
+between concurrent agents**, and the obvious filenames collide.
+
+> *"I wrote `scratchpad/render.mjs`; a later run of it rendered another agent's diagrams at widths of
+> 11500/8927/9514 — **another agent's script under my filename. Mine may equally have destroyed
+> theirs.**"*
+
+A second agent independently reported: *"my first scratch render script was **silently overwritten by
+another agent** at the shared session scratchpad path and rendered a different agent's diagrams under my
+command."*
+
+⚠️ **Neither agent was told it had been clobbered. Both noticed only because the OUTPUT was wrong** — one
+saw impossible widths, the other saw diagrams it had not written. **A clobbered script that happens to
+produce plausible output would not have been caught at all**, and a diagram agent's whole verification
+rests on looking at what it rendered.
+
+**The instruction, for every brief from here:** ⚠️ **write scratch files to a private subdirectory named
+for your task (`scratchpad/<task>/`), never to the scratchpad root.** CLAUDE.md already says *"scratchpad,
+not `/tmp`"* for secrecy reasons; **this adds that the scratchpad root is itself contended.**
+
+### OPEN — READY TO EXECUTE: a truncated quotation that answers the corpus's own open question
+
+⚠️ **`getting_started.md:212` quotes USA Hockey's Try Hockey For Free FAQ and stops mid-sentence.**
+
+The full sentence, **confirmed live on 2 September 2026**:
+> *"Most host locations will have loaner equipment, **however, you are welcome to bring your own if you
+> have it**."*
+
+⚠️ **The corpus quotes the first clause only — and then, at `:489`, tells the reader to *"ask the
+programme whether you may bring your own helmet."*** **USA Hockey has already answered that, in the
+affirmative, on the page the document itself cites.**
+
+**Two one-line changes:** extend the quotation at `:212`, and upgrade `:489` from *"ask"* to what the
+source states. ⚠️ **Do NOT weaken the used-helmet rule** — it stands, deliberately and correctly, and
+`equipment.md` now records in full why no exception was written.
+
+⚠️ **And note what makes this worth doing rather than tidy:** it is the only published fact that lets a
+parent at a taster session comply with BOTH corpus instructions. Without it, the reader either ignores
+the helmet rule or their child does not skate — **and the corpus offered no third option while one
+existed, in its own source list.**
+
+⚠️ **One hinge to confirm first, named by the agent that wrote the split:** whether NHL/NHLPA Learn to
+Play and The First Shift equipment really is **new and kept by the child**. Both sites are JS-rendered and
+returned nothing to `curl`; the characterisation was taken from `getting_started.md`'s existing sourcing
+**and is now load-bearing for the whole passage in `equipment.md`.** ⚠️ **If it is wrong, the exemption
+given to programme-supplied kit is unearned.** **Confirm it in a real browser.**
+
+### OPEN — two RENDERER defects seen in Chrome-rendered pixels, both with the cause located
+
+⚠️ **Both are in `site/scripts/lib/rink.mjs` — SHARED library code — so they must change BETWEEN waves,
+and a fix needs a rebuild plus re-verification of every diagram it touches.**
+
+**1. The puck is drawn inside a player glyph, over the identifying letter.** Seen in
+`winger-offensive-zone-patches`: glyph `r=2.9`, puck `r=1.1`, centres **2.24 ft** apart — **80% of the puck
+disc inside the glyph**. ⚠️ **Two notations degrade at once: an OPEN circle (our team) reads as partly
+filled (opposition), and the letter is eaten.**
+⚠️ **Cause, `rink.mjs:1739-1741`: the puck is drawn LAST, unconditionally, with NO avoidance — while the
+label placer THREE LINES ABOVE builds an explicit `avoid` list of `{w:7,h:8}` boxes from those same
+players.** **The remedy already exists in the file; the puck was simply never given it.**
+⚠️ **Corpus-wide: an agent measured ~20 diagrams with puck-on-glyph overlap, up to −2.25 ft.** **Five were
+fixed in one module this round by moving pucks; the convention question was never settled.** **Fixing the
+renderer settles it once instead of twenty times.**
+
+**2. Zone labels overflow their zone and ERASE rink markings.** ⚠️ **`rink.mjs:1311-1318` places the label
+at the polygon centroid with a FIXED `stroke-width="1.1"` white halo while `font-size` scales per
+diagram.** **Corpus-wide: 509 haloed labels, halo-to-type ratio 18.9% → 37.5%.**
+**Four instances seen in Chrome-rendered pixels:** *"the high slot"* rendered **23.3 ft wide inside a 15 ft
+zone**, erasing that zone's own dashed borders · a halo **severing the blue line** in a clean notch in
+`angling-your-route` — ⚠️ **NOT pre-existing: this diagram is NEW IN THE ROUND-60 COMMIT
+(`body_contact_and_battles.mjs:190`, embedded at `body_contact_and_battles.md:200`, absent from
+`HEAD:diagrams.json`), so that commit SHIPS a picture erasing a segment of the blue line.** ⚠️ **`commit-gate`
+asked for this distinction explicitly, because filing a self-introduced instance under generic renderer
+behaviour makes the next round rank it LOWER than it deserves.** **It was judged a rendering blemish rather
+than a false claim, which is why it did not block — but the other three instances are pre-existing and this
+one is not, and that is the difference between inheriting a defect and adding one** · a halo painting out a segment of the **goal
+crease** · a doubled ghost on `strong-side-and-weak-side`.
+⚠️ **Erasing the boundary of the very region a label names is information loss about that region's
+extent.** **The fix is half-written already: the renderer computes the label's width at `:1315` for
+`zoneReserve` and then DISCARDS it** — compare it against the polygon extent, and scale the halo with
+`font-size`.
+
+**3. Smaller, same file:** the `danger: true` flag switches fill and stroke at `:1325-1326` but
+`:1317` hard-codes the label `fill="${P.home}"`, ⚠️ **so the corpus's first red zone carries a blue
+label** — the one notation collision that flag was added to prevent, reintroduced at the label. **The
+region still reads unmistakably red, so no reader is misled.**
+
+**4. Not renderer, but same review:** `analytics.js` and `audio-player.js` **ship and are loaded by zero
+pages** — `analytics.js` is a GA4 bootstrap that no-ops without a meta tag **absent from every page** —
+⚠️ **yet both are in the service worker's PRECACHE array, so every install downloads two dead files.**
+**And the table scroll wrappers' ARIA label and `tabindex="0"` are unconditional, though the VISUAL
+affordance is correct** (`background-attachment` shows the fade only when scrollable).
+
+### OPEN — two censuses named precisely by the agents that could not run them
+
+1. ⚠️ **THE CHUNK-BOUNDARY CENSUS, on the other 35 documents.** ⚠️ **Both majors in the final wave and both
+   criticals before them were boundary defects** — a permission ending one audio file with its limit
+   opening the next. **`transform_document`, not `spoken_sentences`: the defect is invisible to a grep, to
+   a diff, and to every checker.** Run on **two** files it examined **237 boundaries**, found two defects
+   and left one candidate. **The method:** compare each chunk TAIL against the following HEAD, in **both**
+   directions — permission→limit **and** prohibition→exception.
+   ⚠️ **`MAX_BILLED_CHARS` is 2800, so any edit can move a boundary that was previously safe** — and three
+   chunks in `body_contact_and_battles.md` sit at 2747, 2745 and 2762.
+   **The model of a boundary built deliberately**, for whoever runs this: *"CRT6 writes that one flat, and
+   **unlike its instruction about moving the player it carries no exception**"* — **it says inside the tail
+   that this one has no exception.**
+
+2. ⚠️ **`grep -rln "604(a)" content/` AGAINST `grep -rln "Blind Hockey" content/`.** The USA Hockey
+   Blind Hockey ban has **no age limb and reaches adults**, so any document citing 604(a)'s age list as
+   though it were exhaustive is incomplete. ⚠️ **It now appears in six documents; nobody has checked
+   whether any of them omits it from a LAYER, and nobody has run the inverse.** **This class existed
+   because propagation reached two dependents and skipped the owner — and nothing guarantees that happened
+   only once.**
+
+### OPEN — three items an agent named as the highest-value things it did not do
+
+1. ⚠️ **`body_contact_and_battles.md:731` — *"Meet it, don't wait for it"* — should probably carry
+   `sources/huh.txt`'s *"Skate through the check… keep their legs moving and concentrate on skating right
+   through the impact."*** **Same round-59 direction** (the corpus looking less supported than it is),
+   **same file, same source the agent had open.** It left it because it was outside both its jobs and
+   called it *"the highest-value thing I did not do."*
+2. **The corpus was never censused for the trail-skate drag.** Two documents were repaired
+   (`zone_entries.md`, `winger.md`); **the agent explicitly did not check whether any other document
+   teaches the drag or a blue-line attack without the head counterweight.**
+3. **`winger.md`'s other three aggressive-body-position sites** — net front, half-wall, board battles —
+   were checked only for whether they *mention* "head up", not for whether the cue is **proportionate to
+   the hazard**.
+
+⚠️ **And a corpus-wide pattern flagged rather than fixed:** a Common Mistakes bullet like *"Dragging the
+trail skate with your head down."* is **voiced as an isolated unit**, and read alone with no list context
+it can be heard as an **instruction**. ⚠️ **The corrective lands in the NEXT spoken unit in every case, and
+the form is used throughout the corpus** — so changing one document's bullets without the others would
+manufacture a divergence. **This needs an owner for all of them at once, or it needs leaving alone
+deliberately.**
+
+### OPEN — ⚠️ EIGHTEEN RULEBOOK-ABSENCE CLAIMS, never tested, all of them phrase censuses
+
+**Censused 2 September 2026** by extending the trailer-assertion regex to *"X appears nowhere in book Y"*:
+**21 hits across 15 documents. Three are self-descriptive and TRUE. The other EIGHTEEN assert that a
+string is absent from a RULEBOOK.**
+
+Examples: *"the phrase 'temporary goalkeeper' appears nowhere in the IIHF Rule Book"* · *"the word
+'crossbar' appears nowhere in that book's high-stick rule"* · *"'Z262' appears nowhere on that list"*.
+Across `rules_primer`, `goaltender`, `faceoffs`, `center`, `equipment`, `passing_and_receiving`,
+`special_teams`, `uk_rules`, `offensive_zone_play`, `time_and_space`, `body_contact_and_battles`,
+`rink_map_and_glossary`, `switching_positions`.
+
+⚠️ **EVERY ONE IS A PHRASE CENSUS, and this project has already measured a phrase census producing a
+"confident, honestly obtained, WRONG 0/0" — because a book expressed the same remedy in different words.**
+
+**This is `rules-verifier`'s and it needs, per this round's measured method:**
+- ⚠️ **Search the CONCEPT, not the phrase.**
+- ⚠️ **Run a positive control in the book's own house word, on more than one phrasing** — Hockey Canada
+  writes `goaltender` 369 times and `goalkeeper` 4; `extra attacker` returns **0** in `usah.txt`.
+- ⚠️ **Print ~900-char BLOCKS.** Extractions splice running headers mid-sentence at page breaks: a
+  full-sentence grep for IIHF 48.1's head-up entitlement returns **zero in all three editions**, and
+  `"cut down the angle"` returns **zero** in `nhl_rules.txt`. **Three agents nearly filed false absences
+  on this, and one filed three of its own** (apostrophe form, a hyphenated line break, and guessing
+  *"the first to place his stick"* for a book that writes *"shall place his stick … first"*).
+- ⚠️ **Check the disabled-hockey sections** — that instruction has produced findings in four rounds
+  running, and **Blind Hockey REVERSES the goalkeeper-freezing rule outright.**
+
+⚠️ **This is the largest untested block of negative claims in the corpus.**
+
+### OPEN — 21 trailer assertions that something is "labelled as such in the text"
+
+⚠️ **NEW DEFECT CLASS, found 2 September 2026, and it is SELF-CONCEALING.** A Sources trailer said three
+things were *"coaching craft… **and are labelled as such in the text**."* Two were. ⚠️ **The third was
+labelled NOWHERE**, and because the trailer is **not voiced**, a listener met that section's quantified
+claims bare while the only hedge sat in a layer they never hear, **describing itself as inline**.
+
+⚠️ **A reviewer who reads the trailer sees a hedge and moves on. That is why nobody has ever checked one.**
+
+**Censused corpus-wide — 21 sites:** `getting_started.md:644,:646` · `risk_management.md:130,:833` ·
+`scanning_and_anticipation.md:587,:593` · `conditioning_and_recovery.md:206,:514,:649` ·
+`equipment.md:812` · `how_to_watch_hockey.md:646` · `mental_game.md:726` ·
+`practice_and_development.md:656` *(the false one, repaired)* · `team_play_and_culture.md:689` ·
+`goaltender.md:1394` · `switching_positions.md:40,:503` · `breakouts.md:1018` · `zone_entries.md:1073` ·
+`puck_handling.md:1006` · `skating.md:931`
+
+⚠️ **Test each ITEM separately, not each sentence** — several name three or four things, and the known
+false instance was false for **one of three**. ⚠️ **And check whether the labelling layer is VOICED**: a
+hedge that exists only in a trailer does not reach a listener at all.
+
+⚠️ **The regex used will have missed paraphrases** — *"the caveat travels with it"*, *"scoped where it is
+used"*, *"the qualification is attached"*. **Extend it.**
+
+⚠️ **A TRUE verdict is the expected result and several of these trailers are the corpus's best work** —
+`zone_entries.md:1073` keeping two Tulsky scopes apart and `switching_positions.md:40` naming six searched
+governing books were both praised in review this round. ⚠️ **The repair for an over-claim is to ADD the
+missing inline label, never to delete the trailer sentence** (non-negotiable 4).
+
+### OPEN — carried out of round 60, each named by the agent that could not reach it
+
+1. ⚠️ **`forechecking_systems.md` has not been read for the count-claim over-reach.**
+   `defensive_zone_coverage.md:294` was repaired from *"nobody publishes a count … **in this zone or any
+   other**"* to a zone-scoped claim — **and the repaired line explicitly claims parity with
+   `forechecking_systems.md`'s treatment of "the most common forecheck".** Nobody has checked whether that
+   file carries the same over-reach. `breakouts.md` has already scoped itself (`:1018`).
+2. **`source-verifier`: does the Weinberger Hockey Graphs pass-clustering article name six KHL clubs by
+   measured cluster preference?** The article **was fetched 2 September 2026** — HTTP 200, 150,331 bytes —
+   and that fetch verifies **all twelve numbers of the Up/Rim table and nothing about six clubs**.
+   ⚠️ **The repair was deliberately written not to depend on the answer** (it attributes rather than
+   asserts), so this is a confirmation, not a blocker. If refuted, the correction lands in `breakouts.md`.
+3. ⚠️ **THE GLOSSARY-VERSUS-OWNERS PASS — the best-specified work left in this corpus.**
+   `rink_map_and_glossary.md`'s ~130 entries each compress a sibling document into one or two sentences,
+   **every one of them voiced**, and **~120 were never read against their owners.** The agent that read
+   the file named the mechanism — ***"compression drops preconditions first"*** — and it is exactly how
+   this round's collapsing-box defect got in. **Highest-risk entries, named:** `Icing`, `Tag up`,
+   `Privileged area`, `Limb`, `Net drive`, `Tip-in`, `Screen`, `The paint`, `Shorthanded` — each several
+   hundred words of compressed rulebook from a **different** owner.
+4. **The disclosure census: 349 lines across 36 of 37 documents, ~30 tested (9%).**
+   ⚠️ **102 carry a sibling `.md` link on the same line — the highest-yield subset, ~25% tested.**
+   ⚠️ **And the regex used has roughly HALF the recall of `check_disclosures.py`** (9 hits against the
+   tool's 17 in one file), so the eight it misses per file are unexamined by anyone.
+   ⚠️ **Every falsification so far came from a corpus sibling or the owner table — none from `sources/`,
+   none from the network.** The claims about coaching practice, player behaviour and the sports-science
+   literature are **the majority and are untested by construction**, and they are standing *"not because
+   they held, but because nothing on this disk can move them."*
+5. **The notation key is linked from ONE document** of the ~18 that carry diagrams. A reader meeting a
+   triangle has nowhere to go. ⚠️ **A ~17-file routing change — a COORDINATOR job between waves, and
+   commit `239f70d` exists to repair a header sweep that raced the agents.**
+6. **`body_contact_and_battles.md`'s league-level eligibility table is at ZERO rows of headroom**, so USA
+   Hockey's **Blind Hockey** and **youth Sled Hockey** checking bans cannot be added as rows without
+   silently dropping the whole table from the audio. **Needs a different treatment, not a row.**
+7. ⚠️ **A repair pushed `rink_map_and_glossary.md`'s §7 positions table to 25 characters of headroom.**
+   Still read aloud. **One more edit to that cell drops a six-row table.**
+
+### OPEN — two gaps named by the repair agents, both fetchable or filable
+
+1. ⚠️ **The IIHF Disciplinary Code is not in `sources/`.** IIHF 23.3–23.6 **defer to it entirely**, so the
+   corpus currently **cannot say what an ejection actually costs an IIHF-rules player** — which is the
+   BRITISH reader. The document states that as a disclosure rather than inferring a number. **Fetchable.**
+2. **A cross-reference defect in Hockey Canada's own book**, found while repairing `zone_entries.md`:
+   **8.5(b) Note 1 points at *"Rule 7.4(b)(Interpretation 2)"* for the definition of charging.** ⚠️ **The
+   interpretation attached to 7.4(b) is numbered 3; number 2 is attached to 7.4(a) and defines a BLINDSIDE
+   HIT.** Recorded in the `zone_entries` Sources trailer. ⚠️ **It probably belongs in `sources/README.md`
+   beside the USA Hockey 610-lettering entry — a book-level trap, not a document-level one.**
+3. **`404(b)`'s *"always"* rests on the playing-rules text alone.** The agent did **not** read the USA
+   Hockey Casebook's Rule 404 or 607 situations. ⚠️ **This repo has been caught three times by a Casebook
+   carve-out on Rule 614(c) — the same shape.**
+
+### ⚠️ OPEN — NEW TOOL: every bare rule number, against all four books
+
+**Named by the agent that found the class, 3 September 2026. Nothing mechanical does this today.**
+
+⚠️ **The hazard is SILENT SUCCESS, not failure.** A bare *"Rule 21.1"* checked against the IIHF book does
+not 404 — it **resolves, to a different rule**, and in the measured case to one that **reads as if it fits
+the sentence** (IIHF 21.1 is a penalty-tier rule about endangering opponents; NHL 21.1 is *Match Penalty*).
+**NHL 8.3 and IIHF 8.3 are both "Blood".** `sources/README.md` already records the same shape for IIHF 46.3
+and Table 16.
+
+**What the tool must do that a grep cannot:**
+1. **Work in the AUDIO layer, through `md_to_speech`.** ⚠️ **The worst instance found so far was a bare
+   `8.3` OPENING a chunk, with "Hockey Canada" stranded at the end of the PREVIOUS chunk.** A page-level
+   check cannot see this, because on the page the book name is one sentence away. **A chunk boundary is
+   unrecoverable by context.**
+2. **For each bare number, report WHICH BOOKS it resolves in and to what heading** — the finding is not
+   "unscoped", it is "resolves to something else that looks plausible".
+3. ⚠️ **Worklist, not a gate, and no `--strict`.** A number inside a passage that names its book once and
+   discusses only that book is correct; flagging those is how round 44 manufactured a divergence.
+
+**Known-unchecked, in one document alone:** `breakouts.md` `56.4`, `56.5`, `640(g)`, `84.2`.
+⚠️ **`check_rule_scope.py` does NOT cover this** — it compares summary-layer units to each other, never a
+rule number to a book.
+
+### OPEN — does anything else claim only 205(c) makes a goalkeeper wait?
+
+**`breakouts.md:1002` said so and it was false — two of Rule 205's three limbs do.** The repairing agent
+**did not own** the likelier homes for a goalie-for-goalie substitution rule. ⚠️ **Check `goaltender.md`
+and `game_management.md`** for the same claim or an implication of it. **Do not sweep** — the
+delayed-penalty *goalie-for-skater* pull is caught by **neither** waiting limb, so a document discussing
+that is correct to say nothing about waiting.
+
+### OPEN — tool work, to be done BETWEEN waves, never during one
+
+⚠️ **A shared tool is shared state.** In round 59 a classifier was added to `check_disclosures.py`
+mid-round and an agent reported *"it changed its own classification output between my first and last
+run, with no edit of mine."* **Everything below waits for an empty wave.**
+
+1. ⚠️ **`check_absolutes.py` cannot see a penalty tier that STOPS EARLY.** It found nothing in a caption
+   pricing an illegal net-front block as *"an interference minor … under NHL Rule 56.1"* with no
+   floor/ceiling qualification, because the sentence **used no absolute language — it simply ended.**
+   **A true minor followed by a full stop is indistinguishable from a complete statement.** Whether this
+   is fixable without enormous false positives is genuinely open; **do not add a `--strict`.**
+2. ⚠️ **`check_zones.py` compares zones BY NAME**, so two polygons that disagree about the name as well
+   as the shape are invisible — measured this round at **≈830 sq ft of symmetric difference on regions of
+   ~1,100 sq ft**, i.e. near-inverses, passing every check. **The name disagreement, which looks like the
+   lesser defect, is what hides the geometric one.**
+3. ⚠️ **`md_to_speech.py` SPLITS A SENTENCE AT A `?` INSIDE A MID-SENTENCE QUOTATION, stranding the
+   remainder with no subject.** Measured at `center.md:641`, which rendered as two spoken units — *"So
+   'may I check at all?'"* and *"has a different answer in each book, and a hit thrown to punish rather
+   than to play the puck can end your game under one of them."* ⚠️ **The listener has just been told
+   they may not be allowed to body-check at all, and the sentence that qualifies it arrives with no
+   subject.** Same split at `:461` and `:482`, both USA Hockey Casebook quotations.
+   **The content was worked around in place** — the surrounding sentences were restructured so each
+   quoted question terminates one, **with no quoted text altered.** ⚠️ **The RENDERER is still wrong,
+   and every other quoted question in the corpus is still splitting.** A census has not been run.
+   ⚠️ **Note the related shape at `center.md:414`, deliberately left alone:** a two-sentence verbatim
+   Hockey Canada quotation splits so a listener hears a unit **beginning mid-quotation**. The agent
+   declined to restructure a verbatim rules quotation on a prosody judgement, **which is the right
+   call** — it is more evidence the fix belongs in the renderer, not in the prose.
+
+3. ⚠️ **NO CHECKER VALIDATES `![](diagram:slug)` REFERENCES — settled by reading the source, because two
+   agents claimed opposite things.** `check_links.py` contains **no occurrence of the string `diagram`**;
+   it verifies internal links and anchors only. The **only** thing that catches an unresolved slug is
+   `site/src/plugins/remark-corpus.mjs:268`, which **throws at build** — deliberately, with the comment
+   *"An unresolved id throws. A diagram that silently renders as nothing is the [worse failure]."*
+   **That design is right**, but it means the feedback arrives after a ~6-minute build rather than in a
+   one-second check, and an agent that runs `check_links.py --quiet`, sees exit 0, and reports its
+   references verified **is wrong and cannot know it.** One did today.
+   **A ~20-line checker would close it:** import `IDS` from the registry, walk `content/**/*.md` for
+   `!\[\]\(diagram:([a-z0-9-]+)\)`, report any id not in `IDS`. Run by hand as the coordinator this
+   round: **145 references, 124 distinct, 3 unresolved** — all three from a module whose agent was still
+   writing it — **and 0 registered-but-never-embedded**, so the registry has no dead entries.
+   ⚠️ **NOT written during this wave: `scripts/` is shared state and a tool must change between waves,
+   never during one.**
+
+4. ⚠️ **`md_to_speech.py` expands `xG` INSIDE A HEADING, producing *"Expected goals (expected goals)"*.**
+   Measured at `how_to_watch_hockey.md:451` (spoken unit 684) and `:603` (unit 900) — the heading
+   `### Expected goals (xG)` and a `## Check yourself` pointer to it. ⚠️ **The heading is renameable — no
+   inbound anchor to `#expected-goals-xg` exists anywhere in `content/` or `site/src` — BUT `xG` is
+   introduced to the reader ONLY by that heading**, so dropping it leaves the abbreviation undefined at
+   its first prose use. **The clean fix is the expansion table in `md_to_speech.py`, which must change
+   between waves.**
+
+5. ⚠️ **`md_to_speech.py` — EIGHT SENTENCE-SPLITTING AND EXPANSION BEHAVIOURS, all measured in round 60,
+   all invisible in the Markdown, all found by agents rendering their OWN new text.** Consolidated here
+   because several share one fix:
+   - **A ` ```facts ` value splits at every full stop.** A qualifier added as a new sentence becomes its
+     own spoken unit **with no antecedent**. ⚠️ **This is the single most productive rule of the round** —
+     six agents applied it, and it is why the corpus-wide census found only **one** pre-existing severed
+     hedge. **Remedy is editorial (join with an em dash or semicolon), not a code change.**
+   - ⚠️ **`...` (three full stops) SPLITS a sentence; `…` (U+2026) does NOT.**
+   - ⚠️ **A CURLY apostrophe defeats unit expansion: `(2')` becomes "two minutes", `(2’)` does not.**
+   - ⚠️ **`⚠️` binds to the HEAD OF ITS PARAGRAPH, not its position — a mid-paragraph marker emphasises the WRONG sentence.**
+   - ⚠️ **A PARENTHESIS is broken across the split** — opening bracket voiced in, closing bracket lost.
+   ⚠️ **THREE of the eight are invisible CHARACTER-LEVEL substitutions a reviewer cannot see in a diff.** A quoted rule rendered as
+     three fragments, one beginning mid-quotation.
+   - ⚠️ **A full stop INSIDE a quotation orphans the remainder** — *"…them. This is acceptable"* produced
+     a standalone spoken sentence beginning *"This is acceptable"*.
+   - **A `?` inside a mid-sentence quotation strands a subjectless remainder** (measured at three sites in
+     `center.md`; worked around in the prose, **renderer still wrong, census never run**).
+   - **`14U` renders as *"fourteen U"*; `xG` expands inside a heading to *"Expected goals (expected
+     goals)"*.**
+   ⚠️ **The generalisable rule for authors, which needs no code change: ANY repair that adds a QUOTATION
+   must be rendered before it ships, because the quotation's own punctuation is what breaks it.**
+
+6. **`md_to_speech.py` misquotes `U13` and `and/or` INSIDE quotation marks** — 147 occurrences across 21
+   documents. Carried from an earlier round, still open.
+7. ⚠️ **`check_disclosures.py` MISSES THE "no X is stated" PHRASING ENTIRELY — a third measured defect,
+   found 2 September 2026 by an agent whose OWN new disclosure the tool failed to flag.** It wrote a
+   scoped negative — *"no league, season or sample size is stated anywhere"* — **into the voiced ` ```facts `
+   layer of `offensive_zone_play.md`**, and the tool reports lines 60, 61, 92, 98 and 135 of that same file
+   while **not** reporting 488 or 495. ⚠️ **So the classifiers catch "no study exists" and "nobody
+   publishes" and miss "no X is stated", which is the form the round's own best-scoped disclosures use** —
+   the narrower shape adopted deliberately this round *because* it cannot be falsified the way five others
+   were. ⚠️ **The tool is blindest to exactly the phrasing the corpus is moving toward.**
+
+8. **`check_disclosures.py`, two further measured defects, documented and unfixed:** `is_voiced` accepts any
+   7-word run, so **68 of 81 Sources-trailer lines are wrongly reported as voiced**; and `RULEBOOK`
+   matches a bare league name, filtering **77 real absence claims** out of `--unchecked`.
+
+### OPEN — the odd-man-rush causation claim is bare in ~10 more documents, and it MUST NOT be swept
+
+**Repaired this round**, each now hedged and pointing at an owner: `winger.md:224`/`:245`,
+`defender.md:299`/`:309`, `offensive_zone_play.md:278`/`:285`, `center.md` (4 sites).
+
+⚠️ **The claim states that a turnover in the middle *leads directly to* an odd-man rush.** The
+evidence against stating it as measurement is in `neutral_zone_systems.md:837`: both public trackers
+re-read **29 August 2026**, and *"**Neither classifies a goal by the defensive breakdown that allowed
+it**… Nor does anything located for this document count where on the sheet possession changes hands."*
+
+**Reported bare, read but NOT adjudicated** — `conditioning_and_recovery.md:447`,
+`how_to_watch_hockey.md:203`, `shooting.md:718`/`:730`, `playing_without_the_puck.md:705`,
+`puck_support_and_spacing.md:352`/`:358`, `puck_handling.md:774`/`:780`,
+`forechecking_systems.md:17`/`:620`, `defensive_zone_coverage.md:687`, `breakouts.md:670`/`:682`,
+`special_teams.md:87`/`:109`/`:778`/`:786`, `game_management.md:99`,
+`neutral_zone_systems.md:238`/`:761`, `defending_the_rush.md:738`.
+
+⚠️ **DO NOT SWEEP THIS LIST. A substantial number are SITUATIONAL ARITHMETIC** — *"a missed step-up is
+an odd-man rush behind you"* — **not frequency or ranking claims, and the hedge would make them
+wrong.** The agent that compiled the list said plainly it had not classified them. **Each site needs
+reading.** ⚠️ **`game_management.md:99` is the trap in the list: it states the causation bare and then
+pivots to a *danger* claim that IS sourced — so the sourced half may be masking the unsourced half.**
+
+**Two files hedge in the body and not in the block** (`body ✓ / block ✗`, the layer test's own shape):
+`playing_without_the_puck.md:705` and `forechecking_systems.md:17`, whose `:761`/`:769` hedge correctly.
+
+⚠️ **No document owns this claim in the numeric-facts table.** Four hedge it, `neutral_zone_systems.md`
+holds the evidence, and `defending_the_rush.md` is the *de facto* owner of how odd-man rushes are made
+— **recorded nowhere.** Repairs this round point at `defending_the_rush.md` on the strength of its own
+text. **That is a live pointer without a registered owner — the exact shape that produced the
+`special_teams.md` 624(b)(1) defect**, and it should be settled in the style guide's owner table before
+the list above is worked.
+
+### The `technique/` gap is TWO gaps, and only one of them is work
+
+**Section headings read in full for the three undrawn `technique/` documents, 2 September 2026.** The
+gap divides cleanly, and the division is the answer to the owner's open question about whether to build
+**body-mechanics diagram primitives**:
+
+| Document | What its sections are about | Rink-drawable? |
+|---|---|---|
+| `skating.md` (931 lines) | knee bend, chest up, weight over the balls of the feet, hands in front, what an edge is, the push, the recovery, the glide, arms, stride faults, C-cuts, stance | ⚠️ **Almost none.** `### Strong side and weak side` is spatial — **and `rink_map_and_glossary.md` already owns that picture.** |
+| `puck_handling.md` (1006 lines) | top hand does the work, grip pressure, hands away from the body, soft hands, cup the blade, wrists not arms, wide and tight dribbles | ⚠️ **Mostly not.** A handful are — `### Puck on the far side`, `### Using the boards`, `### Back into the checker`, `### Know your out before you get there`. |
+| `passing_and_receiving.md` (836 lines) | flat, saucer, snap, backhand, bank/board, **rim vs reverse**, area pass, drop, stretch, judging the lead | ✅ **Substantially yes** — a taxonomy of **puck trajectories between players**, which is exactly what the existing primitives draw. **In hand this round.** |
+
+⚠️ **So "technique owns one diagram" is not one deficiency.** `passing_and_receiving.md` was undrawn
+because nobody had drawn it. **`skating.md` and `puck_handling.md` are undrawn because a rink diagram
+cannot show a wrist, a grip or where weight sits over a blade** — and the primitives in this repository
+draw a sheet of ice with player glyphs on it.
+
+**What this means for the decision, stated as evidence rather than a recommendation:** the body-mechanics
+primitives would buy **two documents, roughly 1,900 lines**, and would be an entirely new drawing
+vocabulary — a body, a stick, a blade angle, a weight vector — with **no rulebook or rink geometry to
+check them against.** ⚠️ **Every existing diagram is checkable because `rink.json` fixes the geometry
+and `check_geometry.py` asserts it. A body-mechanics diagram would be checkable by nobody**, in a corpus
+whose first principle is that accuracy is the product. **That is the real cost, and it is not the
+drawing effort.**
+
+**A cheaper option exists and should be priced first:** photographs or video stills are how coaching
+material actually teaches these, and the corpus currently has no image pipeline at all.
+
+### ⚠️ A STRUCTURAL LIMIT FOUND WHILE MEASURING: a borrowed diagram cannot be re-captioned
+
+⚠️ **CORRECTED 2 September 2026, measured on the real render — an earlier version of this passage, and
+every brief drawn from it, said the renderer emits `"Diagram. "` + the caption. IT DOES NOT.** It emits:
+
+> `Diagram, from forechecking systems. A two one two forecheck at the moment…`
+
+**It names the owning document ALOUD.** ⚠️ **That materially changes the decision below: a listener
+hearing a borrowed caption is ALREADY told whose section it belongs to**, so borrowing costs less than
+this section originally claimed, and a prose disclosure is needed only where the caption's *content* is
+foreign — not to supply provenance. **Option 2's value drops accordingly.**
+
+**`caption` still belongs to the diagram, not to the embed site**, and the markdown `![](diagram:slug)`
+has no way to override it. So a document that
+borrows a picture also borrows the other section's teaching, hedges and figures, **voiced to its own
+listener**.
+
+**This is not hypothetical — the corpus already apologises for it in prose.**
+`content/technique/body_contact_and_battles.md:171`:
+
+> *"⚠️ **The picture below is borrowed from Defending the Rush, and the distances in its caption belong
+> there rather than here.**"*
+
+**A document apologising, in its own body, for the only picture it has.** ⚠️ **And that apology is the
+CORRECT behaviour under the current design** — it is honest disclosure, protected by non-negotiable 4,
+and stripping it would be the tidying pass non-negotiable 3 forbids.
+
+**The measurement makes this load-bearing rather than cosmetic:** of the 123 embeds, **9 are borrowed**,
+and the five documents that "look served and are not" are served *entirely* by borrowed captions —
+`passing_and_receiving.md` has **four borrowed pictures and no caption of its own**.
+
+**The decision the owner has to make, stated as options rather than a recommendation:**
+
+1. **Leave it.** Borrowing stays cheap; every borrower carries a prose disclosure like `:171`. **Cost:
+   the listener hears another section's figures with no signal that they have moved documents.**
+2. **Add a per-embed caption override** — e.g. `![](diagram:slug "local caption")`. **Cost: two captions
+   per picture to keep true, and `check_absolutes.py` currently scans the built caption layer only, so
+   the override would ship unchecked by construction until the checker is taught about it.**
+3. **Author a local diagram instead of borrowing.** Correct, and the most expensive.
+
+⚠️ **Do not resolve this by sweeping the borrows out.** ⚠️ **This paragraph first said "two of the
+nine", which my own measurement contradicts — it was arithmetic, not a count, and it is exactly the
+failure this file exists to stop.** Measured: the nine borrows sit in **six** documents, and in **five**
+of them — `risk_management.md`, `time_and_space.md`, `how_to_watch_hockey.md`, `shooting.md` and
+`passing_and_receiving.md` — **the borrowed picture is the ONLY picture the document has.** That is
+**eight of the nine borrows**; the ninth is in `body_contact_and_battles.md`, which now owns one of its
+own. **Removing a borrow would leave five documents with no picture at all**, which the readability
+priority says is worse than a mis-scoped caption.
+
+⚠️ **`off-the-ice/` is the section nobody has looked at: six documents, ONE borrowed embed between
+them, zero owned.** It is not in the "technique is the gap" framing above because that framing was
+drawn from a table that undercounted it.
+
+**CLOSED, re-measured from the REGISTRY (not the stale build product) once every module landed:**
+
+| Section | Docs | Embeds | **Owns** | No embed | Owns none |
+|---|---|---|---|---|---|
+| `foundation/` | 4 | 11 | **11** | 2 | 2 |
+| `getting-started/` | 1 | 0 | **0** | 1 | 1 |
+| `hockey-iq/` | 5 | 26 | **22** | 0 | 1 |
+| `off-the-ice/` | 6 | 11 | **0** | 5 | 6 |
+| `positions/` | 5 | 15 | **15** | 0 | 0 |
+| `reading-diagrams/` | 1 | 1 | **1** | 0 | 0 |
+| `systems/` | 10 | 71 | **71** | 0 | 0 |
+| `technique/` | 5 | 13 | **7** | 2 | 2 |
+| **TOTAL** | **37** | **148** | **127** | **10** | **12** |
+
+⚠️ **114 → 127 diagrams this round. `technique/` went from owning ZERO to owning SIX**, across `shooting`
+(3), `passing_and_receiving` (3) and `body_contact_and_battles` (1, authored earlier this round);
+`hockey-iq` gained 7 across `scanning_and_anticipation` and `time_and_space`; `off-the-ice/`'s
+`how_to_watch_hockey.md` went from 1 borrowed embed to 11, **ten of them reuses of shapes the corpus
+already owned** — its Part 2 is a recognition guide to those exact shapes, so they cost nothing to
+maintain.
+
+**Registry verified: 127 diagrams, 127 unique ids, 148 content references, 0 unresolved, 0 registered-
+but-never-embedded.** ⚠️ **These are a MEASUREMENT, not a target, and `check_counts.py` does not track
+them — re-measure, never quote this table.**
+
+⚠️ **THE FINDING THAT REFRAMES THE WHOLE ITEM: `technique/` OWNS ZERO of the 112 diagrams.** All four
+of its embeds are **borrowed** — two from `hockey-iq/`, one from `defending_the_rush.md`, one from
+`offensive_zone_play.md`. **It is not "thin at 0.8 per document". No diagram has ever been authored
+for it.** `body_contact_and_battles.md:171` says so above its only picture: *"⚠️ **The picture below is
+borrowed from Defending the Rush, and the distances in its caption belong there rather than here.**"*
+**A document apologising for the only picture it has.**
+
+⚠️ **My own corrections, recorded rather than silently fixed:** systems is **70 not 71**; systems
+**does** have a document with zero — **`game_management.md`, which describes a six-player formation in
+prose and then says *"The principles matter more than the diagram"***; **13** documents have none, not
+12; and my table omitted `getting-started/` and `reading-diagrams/` entirely, so it accounted for 35
+of 37 documents.
+
+**The real gap now is `technique/`: 4 diagrams across skating, shooting, passing and receiving, puck
+handling and body contact — the most physically visual material in the corpus, at ONE-NINTH the
+density of `systems/`.**
+
+⚠️ **The open question that must be answered before authoring, not after:** this corpus's diagram
+system draws **rink geometry** — positions, routes, zones, arrows. **A stick-blade angle, a weight
+transfer, an edge or a hand position may not be drawable in it at all.** If `technique/` needs *body*
+diagrams rather than *rink* diagrams, that is a much larger decision and **the owner makes it**. Survey
+in flight.
+
+**Constraints that hold regardless:**
+- The owner on Overview diagrams: *"high-level only — full-ice concepts, or one to two per zone, and
+  no more. **A single diagram carrying everything is worse, not clearer.**"*
+- ⚠️ **A diagram is a claim about where players stand.** `check_zones.py` exists because a band
+  labelled *"the high slot"* was drawn at **3.14× the area its owner defines**, in two diagrams, under
+  captions that matched the owner's words, and **passed every gate**. Any diagram of a named region
+  needs `rink_map_and_glossary.md` to settle that region first.
+- ⚠️ **Do not propose diagrams for their own sake.** `off-the-ice/` has zero and several of its six
+  documents may legitimately need none. **A weak diagram is worse than no diagram.**
+
+### 1b. ✅ RETRACTED — "32 swallowed headings" was a defect in the REVIEW HELPER, not in the audio
+
+⚠️ **A terminology census reported that 32 section headings — including `faceoffs.md`'s **Key
+Takeaways** and `zone_entries.md`'s **Common Mistakes** — were emitted inside the previous spoken
+sentence, so a listener got no audible section break. I "verified" it independently and wrote it into
+this plan as a live audio defect.**
+
+⚠️ **BOTH OF US WERE WRONG, AND WE WERE WRONG THE SAME WAY: we both measured with
+`md_to_speech.spoken_sentences`, and the bug was in that helper.**
+
+**The audio was always correct.** Read straight out of the SSML:
+
+```
+<speak>
+<break time="1000ms"/>
+<p>Key Takeaways.</p>
+<break time="450ms"/>
+```
+
+**Every heading sits in its own `<p>` behind a 1000 ms break.** Confirmed on both named cases.
+
+**The real defect:** `spoken_sentences` split on `(?<=[.!?])\s+`. A sentence ending `.)` or `.)*` has
+`)` before the whitespace, not a terminator — **so no split happened and the next heading came back
+glued to the tail of the previous sentence.** Fixed to consume trailing closers; **32 hits → 0**, self-test
+260 assertions clean.
+
+⚠️⚠️ **THE LESSON, AND IT IS ABOUT THIS REPOSITORY'S TOOLING RATHER THAN ITS CORPUS.**
+`spoken_sentences` was written **last round** to stop reviewers hand-rolling their own tag-strips —
+after a hand-rolled one produced *"IIHF 's"* 79 times. **Within one round it had manufactured a
+false finding in two independent reviews and got it into the plan.**
+
+> **A shared helper that produces false positives is worse than no helper, because its output is
+> trusted.** Every reviewer used it exactly as instructed and every one of them was misled.
+> ⚠️ **And a coordinator "verifying" a finding with the same tool that produced it is not a second
+> opinion.** The check that settled this was reading the raw SSML — the layer the helper abstracts.
+
+### 1c. ⚠️ A DEICTIC CAN BE CARRYING A SCOPE — the finding that makes this class dangerous
+
+**Found while repairing dangling facts values, and it changes how the whole class must be worked.**
+
+`defender.md:213` read *"**That push** is a minor at least…"*. Its antecedent, the previous value, was
+*"Walking a screener off their spot is a push and **needs a full-checking league**."*
+
+⚠️ **Substituting the noun phrase alone — the obvious repair — produces *"Walking a screener off their
+spot is a minor at least"*, which is FALSE in a checking league.** The deictic was **silently carrying
+the scope flag**. Restoring it inline came to **327 characters against a 300 cap**, so the value was
+**split into two rather than trimmed** (non-negotiable 2). Block went 9 → 10, inside the 11 max.
+
+> ⚠️ **Before replacing any pointer word, check what the antecedent carries BESIDES the noun.**
+> **If a hedge, a scope flag or a rule-set limit is riding on it, SPLIT rather than shorten.**
+
+⚠️ **And the method's own blind spot, named by the agent that ran it:** the hunt is a regex over
+pointer words. **A value that depends on its neighbour with NO pointer word — one that simply assumes
+a system, a book or a league class named next door — is invisible to it.** `defender.md:213` is the
+proof: the scope was riding on the word *"That"*, **and had the value read *"A push is a minor at
+least"* it would not have been flagged and the flattening would have been worse.**
+
+**Nine values repaired across `center.md`, `defender.md`, `goaltender.md`; one more confirmed and
+routed at `offensive_zone_play.md:13`.** ⚠️ **The repairs are new text carrying a penalty ladder and
+have not been through `rules-verifier` or `safety-reviewer`.**
+
+**A judgement left open, deliberately:** `center.md:739` and `:737` narrate the corpus's own tooling
+(*"a running header and a page number are spliced into the middle of it… in `nhl_rules_layout.txt`"*).
+Non-negotiable 6 bars self-narration — **but the trailer is NOT SPOKEN (confirmed by rendering), and
+the note is one a future `source-verifier` depends on, so stripping it risks non-negotiable 4.**
+**Left standing.**
+
+---
+
+### 1d. ⚠️ A BROKEN DIAGRAM REFERENCE PASSES EVERY GATE — found by breaking one
+
+**Measured 2 September 2026.** A new diagram module was authored and its id embedded in
+`content/systems/game_management.md`. Until the module was registered and the build re-run, the
+reference `![](diagram:six-on-five-shape)` resolved to nothing.
+
+| Check | Result on the broken tree |
+|---|---|
+| `check_links.py --quiet` | ⚠️ **PASS** — `grep -c diagram scripts/check_links.py` returns **0**. It does not look at diagram ids at all |
+| `check_facts.py` | PASS |
+| `check_geometry.py` | PASS |
+| `check_absolutes.py` | exit 2 — but for a *different* reason (stale `diagrams.json`), which would mask this |
+| `md_to_speech.py` | ⚠️ **The ONLY thing that caught it** — exits 1, *"unknown diagram id"* |
+
+⚠️ **So a content document can ship pointing at a diagram that does not exist, and the link checker —
+the tool whose entire job is that a reference resolves — is blind to it.** A reader gets a missing
+image; a listener gets nothing where a *"Diagram."* should be.
+
+**Two contributing facts worth recording separately:**
+- ⚠️ **`site/src/diagrams/index.mjs` is a shared registry that every new module must be wired into**,
+  and it is exactly the file two concurrent diagram agents would clobber. **The agent correctly
+  refused to touch it and handed it back.** Coordinator work, and it must be done for every new module.
+- ⚠️ **`md_to_speech` reads `site/src/data/diagrams.json` — the BUILD PRODUCT — not `index.mjs`.**
+  Registering the module is not enough; **`node site/scripts/build-diagrams.mjs` must run** before the
+  reference resolves. Two steps, and the first one silently looks sufficient.
+
+**Fix candidate:** teach `check_links.py` to extract every `diagram:` id from `content/` and check it
+against `diagrams.json`. ⚠️ **A gate change, so between waves, not during one.**
+
+---
+
+### 1e. ⚠️ MY BRIEFS ON TERMINOLOGY WERE WRONG IN BOTH DIRECTIONS — the tally, so far, of round 60
+
+**Recorded because the pattern is now measurable rather than anecdotal.**
+
+| Brief claim | What the agent measured |
+|---|---|
+| *"the point"* stated as the blue line at **4 sites** | **6 sites**, two of them ` ```facts ` values — **50% short** |
+| `neutral_zone_systems.md` uses "wall" in the boards sense, **2 facts values** | **18 facts values contain it — 13 boards, 5 formation.** Two of them **ADJACENT, opposite senses, voiced alone** |
+| `forechecking_systems.md:228`'s absolute has **one** counterexample (`2-3`) | **Two** — `### 1-4 — the full retreat` at `:377` is nearer and was missed |
+| `time_and_space.md:245` misuses *"traffic"* | ⚠️ **REFUTED. The owner PRESCRIBES it** — `rink_map_and_glossary.md:661`: *"Use **traffic** or **route** for that, never 'screen'."* **My suggested repair would have called a corpus-prescribed term "loose" and contradicted the owner's own instruction.** No edit made |
+| A `Key:` value sits **three facts** from its antecedent | **REFUTED — it is ADJACENT**, and the block mirrors the body. Moving it would have separated it from its true antecedent |
+| A replacement value is **197 chars** | **206 against a 200 cap** — it would have failed the gate |
+| The Hockey Canada icing scope is in **none** of three files | **It was already in two** |
+
+⚠️ **Seven refutations in one round, on one theme, and they run BOTH ways: four undercounts and three
+claims that were simply false.** The undercounts matter because an agent given a list works the list;
+the false ones matter because **two of them would have made the corpus worse.**
+
+> ⚠️ **The rule that follows: a terminology brief must give the SHAPE and the METHOD, name a few sites
+> as examples, and say plainly that the list is expected to be incomplete AND possibly wrong.**
+> Every correction above came from an agent that **re-derived the census** instead of working the list.
+
+**And the one method that keeps paying:** ⚠️ **check that each document USES a term the way it DEFINES
+it.** It has now caught defects running **both** ways in one round — `neutral_zone_systems.md` defined
+"wall" correctly-ish and used it two ways; `special_teams.md` and `offensive_zone_play.md` defined "the
+point" **wrongly** while their bodies used it **correctly**. **Neither direction is findable by a
+definition census alone**, and nobody has run this check for `slot`, `high`, `low`, `strong side` or
+`seam`.
+
+---
+
+### 1f. ⚠️ "CHECK THE DISABLED-HOCKEY SECTIONS" HAS NOW PAID FOUR TIMES IN TWO ROUNDS
+
+**Round 59:** USA Hockey **does** write a facemask-hit stoppage — in **Sled Hockey**. The corpus said
+no book did. That was the round's headline critical.
+
+**Round 60, three more, all in `breakouts.md` §8:**
+
+1. ⚠️ **USA Hockey Blind Hockey CONTRADICTS an "NHL-only" claim** (`usah.txt:6666-6680`): a
+   goalie-for-skater swap during play is barred, and a goalkeeper who skates off during play brings a
+   stoppage **and a minor for delay of game**. It also handles the delayed penalty the **opposite**
+   way — *"the non-offending team may add an extra skater WHILE THEIR GOALKEEPER REMAINS ON THE ICE."*
+   **The document had told that reader pulling the goalie was "a coaching choice."**
+2. ⚠️ **Special Hockey A Level expressly contemplates the pull** (*"unless the goalkeeper is pulled for
+   an extra attacker"*) while its **B and C levels are silent** — ⚠️ **silence, NOT prohibition. The
+   agent declined to write the silence in as a restriction** (non-negotiable 2). **So the corpus now
+   says nothing to a B-level Special Hockey coach, and that is the honest state.**
+3. **Sled Hockey writes its own substitution paragraph and it is PERMISSIVE** — *"Players may be
+   changed at any time during play"* — naming no goalkeeper, so 205(a) runs unchanged. ⚠️ **A positive
+   control, not a silence.**
+
+⚠️ **The sweep was a FULL READ of all six disciplines, `usah.txt:6296–8010`, not a phrase search — and
+the agent says plainly that no phrase search would have found the Special Hockey clause.**
+
+⚠️ **A structural fact nobody had recorded: USA Hockey is the only rulebook that writes disabled-discipline
+rules INTO THE MAIN VOLUME.** If the IIHF or Hockey Canada publish para or sledge variants as **separate
+documents**, nothing on disk covers them, and every *"the other three books"* claim in this corpus is
+unscoped as to them.
+
+⚠️ **And one premise failure found only by luck:** the whole 6-on-5 section assumes a delayed penalty
+produces a power play. **In Special Hockey it does not** — *"Penalties will result in a penalty shot…
+At no time will any team serving a penalty have less than five skaters on the ice."* **No heading
+advertises that, and the agent says it caught this while reading for a different reason.**
+
+**A trade recorded rather than hidden:** the facts block was at HARD_MAX 11, so the agent **merged two
+`Key:` values into one** to free a slot for a cited `Rule:`. ⚠️ **Its own words: *"a reader who needed
+that as a standalone beat has been quietly downgraded so that a Blind Hockey reader could be
+upgraded, and I made that trade on judgement alone."* No checker can evaluate that.**
+
+---
+
+### 1g. ✅ "THE POINT" — CLOSED corpus-wide, at 14 sites, and the shape is worth keeping
+
+**The claim:** *"the point"* is the **area just inside the blue line, not the line itself** — the owner
+`rink_map_and_glossary.md` says so three times, `:372` being a precision note written for exactly this.
+
+**Where it was wrong:** 6 sites in 4 documents · 3 inside the OWNER (including its Common Mistakes and
+Key Takeaway 5) · 5 more in 4 further documents. ⚠️ **And the source was `project/content_style_guide.md`'s
+own conflation table, which read `Point (blue line)` — so a writer working to spec reproduced it.**
+
+⚠️ **Every one of my three briefs on this term was short.** Four sites → six. Two → three. Four → seven.
+**The agents found the extra sites by re-deriving the census, never by working the list.**
+
+**Three defects no phrase census would have reached:**
+
+1. ⚠️ **Two arithmetic derivations were CORRECT and MISLABELLED.** *"44 to 64 feet"* is a
+   **blue-line**-to-outlet-band distance presented as a **point**-to-outlet-band distance. **The fix is
+   not a phrase swap — it is the owner's own honest-derivation form**, keeping the arithmetic and
+   naming what it measures. Both operands are owned values, so nothing needed sourcing.
+2. ⚠️ **`faceoffs.md:716` was worse than a wrong definition: the renderer split a nested parenthetical
+   so a listener received, ALONE,** *"It is not the same thing as the point, which is up at the blue
+   line**)**."* — **false, and with a stray closing paren read into it.** Fixed by rewriting the bullet
+   out of its nested parentheses. **Only rendering finds this.**
+3. **`how_to_watch_hockey.md` contradicted itself twenty lines wide** — `:116` said *at* the blue line,
+   `:136` said *just inside* — **and its Key Takeaway 2 carried the un-hedged figure**, which is the
+   layer the podcast extracts.
+
+**Correctly NOT swept, in both directions:** counts and assignments (*"two on the blue line"*, *"both
+wingers go to the points"*) are not definitions; and `winger.md:177`'s NHL-only distances were left
+without an IIHF flag because ⚠️ **the IIHF blue line is ~3 ft nearer and three feet does not change what
+a winger does** — the style guide's *"don't flag trivia"* rule, applied and recorded as a judgement.
+
+⚠️ **THE OPEN HALF, stated by the agent that closed the prose half:** *"I proved the corpus now DEFINES
+the point consistently. I did not prove it DRAWS it consistently."* Four diagrams place point markers
+and **none of their coordinates was compared to the owner.** ⚠️ **`check_zones.py` compares polygons to
+each other, so a marker drawn on the line in all four would pass every check that exists.**
+
+---
+
+### 1h. ⚠️⚠️ THE BUILD-RACE GUARD HAS A HOLE, AND IT WAS MEASURED — a safety caption was silently superseded
+
+**Measured 2 September 2026, by the coordinator, on a safety-critical caption.**
+
+A `safety-reviewer` added a limit sentence to the `the-trapezoid` caption **while `build-diagrams.mjs`
+was running**. The build had already imported that module. Sequence:
+
+| | |
+|---|---|
+| 14:26:42 | build starts, imports `rink_map_and_glossary.mjs` |
+| ~14:30 | agent writes the new caption to that file |
+| 14:32:06 | build writes `diagrams.json` |
+
+⚠️ **`find site/src/diagrams -name '*.mjs' -newer site/src/data/diagrams.json` returns NOTHING** — every
+source looks older than the build product, because the product was written **last**. **So the staleness
+detector reports fresh, `check_absolutes.py` certifies the caption layer, and the certified text is the
+SUPERSEDED one.**
+
+**Caught only by diffing the built product against the source directly:**
+
+```
+the-trapezoid   source:Y  built:n     ← the safety sentence
+the-low-slot    source:Y  built:Y
+the-goalmouth   source:Y  built:Y
+the-high-slot   source:Y  built:Y
+```
+
+⚠️ **Three captions from an earlier agent made it in; the fourth, written mid-build, did not — and
+nothing mechanical distinguished them.** The lost sentence was the one telling a British goaltender that
+England Ice Hockey's Rule 22.3 suspension *"frees where a goalkeeper may play the puck behind the net,
+never where they may freeze it"* — **a two-minute minor.**
+
+**CLAUDE.md already records that the guard *"cannot tell 'the tree I built' from 'the tree I
+reviewed'"*. This is the sharper form: it cannot tell a fresh product from one that overwrote a
+newer source.**
+
+> ⚠️ **The only reliable test is CONTENT, not mtime: diff a sample of built captions against their
+> `.mjs` source after every build.** An mtime comparison is defeated by the ordinary case of an edit
+> arriving between import and write.
+
+**Candidate fix:** have `build-diagrams.mjs` record the **hash** of each source module it imported, and
+have `check_absolutes.py` compare hashes rather than mtimes. ⚠️ **A gate change — between waves.**
+
+---
+
+### 1i. ⚠️ THE SELECTION BIAS IN EVERY DISCLOSURE REVIEW THIS PROJECT HAS RUN
+
+**Named by the agent that ran one, about its own method, and it generalises to all of them:**
+
+> *"Every disclosure I chose to attack was one I could test against a file already in `sources/`. That
+> selects FOR claims about rulebooks and selects AGAINST claims about coaching practice, player
+> behaviour and published research — which is exactly where the uncounted comparatives live.
+> **The negatives I did not attack are the ones about the things this repository holds no source for,
+> and they are still standing.**"*
+
+⚠️ **This explains a pattern the record already shows and had not accounted for: disclosure passes keep
+returning "upheld" on rulebook negatives and rarely touch the others.** It is not that the others hold —
+**it is that they are unfalsifiable with what is on disk, so nobody picks them.**
+
+**The check that would break the bias: attack a disclosure chosen at random from the ones NO file in
+`sources/` can settle**, and accept that the answer may be "still unknown". Nobody has done this.
+
+---
+
+### 1j. OPEN — five findings reported and NOT fixed, in `risk_management.md` / `game_management.md`
+
+| # | Finding |
+|---|---|
+| **M1** | ⚠️ **A Sources trailer UNDERSTATES its own search: `risk_management.md:824` says *"all fourteen situations under Rule 601"*; the body at `:325` says twenty-four. **The count IS 24** (`usah_casebook.txt:10731-11144`, read). ⚠️ **The sentence carries a negative existence claim, so a stated 14-of-24 makes an EXHAUSTIVE search look partial** — the under-confident direction again. One word. |
+| **M4** | `:653`/`:660` assert a penalty **MOTIVE** majority (*"nobody decided to take them"*) while `:657` — four lines away, same block, both voiced alone — says *"no published study codes penalty motive."* ⚠️ **The authority it defers to says the measured proxy includes the opposite:** *"a clean, PREMEDITATED cross-check… and a revenge slash… both land in it."* Gilbert & Trudel codes **type**, not decision. **Partly supported — label, never cut.** |
+| **M5** | `:111` ranks **direction** above **location** for turnover cost, where `:88` says the location grading is *"not a measured ranking"*. **A comparison between an unmeasured quantity and an unquantified one.** The mechanism is good reasoning and stays. |
+| **M6** | `game_management.md:991` turns the Casebook's *"**Oftentimes**, officials will only assess penalties after several warnings"* into *"the part the casebook says officials **most often** skip"* — a majority the book does not claim — **and drops the book's own condemnation** (*"This approach discredits the officials"*), which the body carries at `:1011`. ⚠️ **Voiced alone it tells a player retaliation is usually a wash.** |
+| **M7** | `risk_management.md:817` (Key Takeaway 9) holds a rule-set divergence — **USA Hockey 616(a)'s *"penalty shot/optional minor penalty"* and its *diagonally from behind* reach — that appears NOWHERE ELSE in the document.** The body section that owns it is built entirely on NHL 57.3; nine `Rule:` facts omit it. ⚠️ **The summary layer holds something the body does not — "extract, never author", inverted.** Quotation verified verbatim at `usah.txt:4105`. |
+
+**Plus minors:** a *"so much worse"* heading; *"the best-established"* where the body says *"one of"*; *"Every serious study says"* over four cited sources; two shift-length figures with no owner; and two goalie-pull rates (26% ±4 and 15%) four lines apart with no statement they measure different things.
+
+---
+
+### 1k. ⚠️ OPEN — scroll wrappers announce themselves as scrollable when they are not
+
+**Measured in a real browser, round 60.** `.table-scroll` and `.diagram-scroll` carry
+`tabindex="0" role="region" aria-label="…scrollable horizontally"` **statically at build time** — but
+whether a box actually overflows is a **width-dependent layout fact the build cannot know.**
+
+| | actually scrolls | announced scrollable, but fits |
+|---|---|---|
+| Tables @ 1440 | **1** | **18** |
+| Tables @ 375 | 31 | **16** |
+| Diagrams @ 1440 | 0 | **14** |
+| Diagrams @ 375 | 14 | **0** |
+
+⚠️ **A desktop screen-reader user is told nearly every table scrolls horizontally when none does, and a
+keyboard user tabs into regions with nowhere to go.**
+
+✅ **Never the dangerous inverse — nothing that scrolls lacks a tab stop — and diagrams are EXACTLY
+RIGHT at phone width, where it matters most.**
+
+**Cause:** build-time markup in the remark plugin. **Candidate fix:** a small `ResizeObserver` toggling
+`tabindex`/`role`/`aria-label` on `scrollWidth > clientWidth`. ⚠️ **That is a NEW CLIENT SCRIPT on a
+site whose production CSP is `script-src 'self'` — so it needs the site's own review, not a drive-by.**
+
+**Also open, carried from the same pass:** no ToC scroll-spy (54 links, none ever marked active — the
+sidebar's `aria-current="page"` does work); `analytics.js` and `audio-player.js` shipped but referenced
+by **zero** pages; four non-document pages lack a `<nav>` landmark; and SVG `<title>` accessible names
+run to **2,837 characters**, at the mercy of AT truncation.
+
+---
+
+### 2. DUPLICATION — four named items, and one standing caution
+
+- **The Overview triple-repeat — CENSUSED 2 September 2026, and the shape is much narrower than
+  stated.** The owner: *"much more summarised, maybe only the facts."*
+  ⚠️ **It exists in NINE documents, not 37.** 28 of 37 Overviews have **no facts block at all**, so
+  the triple is not structurally possible there.
+  ⚠️ **"Cut to only the facts" is FORBIDDEN outright in 11 documents** — `content_style_guide.md:708`
+  scopes facts blocks to the 26 teaching documents, excluding Getting Started, the glossary, the rules
+  primer and all six off-ice documents. Their Overviews total **5,798 words** and there is **no legal
+  target to cut them to**.
+  ⚠️ **Only ~24% of the prose under a block restates that block. The other 76% is reason-giving the
+  block cannot carry** — the redundancy is concentrated in the first sentence or two of each Overview.
+  **The honest size of the win is ~600 of 4,748 words, about 13%.**
+  ⚠️ **`defender.md`'s Overview block is at 11 of 11 — the hard cap — so "only the facts" is
+  arithmetically impossible there.** The style guide's answer to a block at 11 is a **section split**,
+  not a layer cut.
+  **Blockers measured, every one over even the 300-char cap and several ineligible for `Rule:` at all:**
+  the *Heads Up Hockey* cervical-spine counterweight including *"it can occur at walking speed"* (664
+  chars, in a document with no block); the only place the corpus ties a **call** to the **injury it can
+  cause** (337); shorthanded icing differing **three ways across three books** in one sentence (450);
+  the post-icing *"treat it as unsettled"* flag (776); the trapezoid reversal plus Hockey Canada
+  Interpretation 3 clause v against clause ii with *"Hockey Canada nowhere says which governs"* (792 +
+  791 + 606); IIHF 101.1 in women's hockey **including every level of it in Britain** (554); the
+  scanning study's sample description without which the figure is folklore (383); and the 230,000-exit
+  study's own reversal — *"possession is the explanation, not the method"* (537).
+  ⚠️⚠️ **THE FINDING THE OWNER SHOULD SEE FIRST: the Overview is NOT the layer doing most of the
+  repeating. 231 of 606 Overview sentences match a KEY TAKEAWAY at ≥0.5 — more than match any other
+  layer, and more than match the Overview's own block.** `defensive_zone_coverage.md:761` is a **single
+  numbered takeaway running over 1,400 words with eight rule citations inside it.** **Key Takeaways is
+  an extraction layer by definition and carries no unique material, whereas the Overview demonstrably
+  does — so it is the larger AND safer target.**
+  ✅ **Two concrete fixes routed:** six sentences in which the corpus **narrates its own layer
+  structure** (*"the facts above"*, *"the blockquote below"*) — non-negotiable 6, and **dead air aloud
+  because a listener has no block and no above**; and `center.md:12`, a `Rule:`-layer value reading
+  *"in that system"* whose antecedent is in the **NEXT fact** — **voiced alone with a 300 ms break
+  either side, it is a forward reference to a sentence the listener has not heard.**
+- **"A Note on Language" — CENSUSED 2 September 2026, and ⚠️ THE FRAMING IS INVERTED.**
+  ⚠️ **"One page, not eight" points the wrong way. The defect is that 29 documents which use this
+  vocabulary HEAVILY carry none of it.** Ten shared terms censused across all 37: `offensive_zone_play`
+  uses **10 of 10 and defines none**; `risk_management`, `scanning_and_anticipation`,
+  `switching_positions` and `neutral_zone_systems` use 9 and define none. ⚠️ **Deleting seven copies
+  takes the corpus from 8 covered / 29 uncovered to 0 covered / 37 uncovered.**
+  ⚠️ **And the eight that carry it are not the eight that need it** — four of the eight sit BELOW the
+  top usage band.
+  **Measured: 22,203 chars (not 21,755), 1,432–3,832 each (not 1,140–3,504). 255 spoken units, 3,881
+  words.** ⚠️ **NO contradiction was found on any shared numeric or geometric definition** — the four
+  slot, five high-slot, six point and six half-wall definitions differ only in completeness.
+  ⚠️ **So the plan's premise that consolidation "would silently pick a winner on ten live divergences"
+  is REFUTED for this section — and its headline example was wrong: `shooting.md:26` matches the owner
+  word for word in substance.**
+  **Proposed instead — three layers, not one page:** (1) canonical home in `rink_map_and_glossary.md`,
+  which already holds **28 of the 46** terms; (2) a genuinely local block per document — the ~15 goalie
+  terms used nowhere else, `winger`'s *"your lane"* and *"stay high"*, `shooting`'s release and flex;
+  (3) **a SPOKEN local stub in each of the 37**, because a pointer is not a mitigation.
+  ⚠️ **A pointer-only merge is measurably not acceptable:** `passing_and_receiving.md` has **ZERO links
+  to the glossary in the entire file**, and `defender.md:56` / `winger.md:51` already prove the failure
+  — they say rim and reverse *"are not interchangeable — **see below**"*, and **only
+  `forechecking_systems.md` says which pressure each beats.** *"See below"* in a spoken stream is a
+  promise the listener cannot cash.
+  **⚠️ SIX honest disclosures live in ONE copy each and a merge would destroy them**, and
+  `check_disclosures.py` returned **zero hits inside all eight note ranges** — it detects
+  absence-of-evidence claims and is **structurally blind to scope and ambiguity disclosures**, which is
+  what this section is made of. The strongest is `passing_and_receiving.md:33`: *"**checker** runs both
+  ways"* — live in **seven** documents (47 occurrences in `breakouts`, 36 here, 34 in `forechecking`)
+  and flagged in exactly **one**.
+  **⚠️ THREE BLOCKERS THAT MUST BE SETTLED BEFORE ANY MERGE:** `breakouts.md:43` puts **F1/F2/F3 on the
+  wrong team** (routed); `breakouts.md:47` coins **"the danger zone"** for the scoring area while the
+  corpus quotes USA Hockey Casebook 608 using it for **a checking-from-behind hazard band** (routed);
+  and **"seal"** is defined contact-free in `forechecking_systems.md`'s glossary and then used **four
+  times in the facts layer to mean physical pinning**, one of them a Rule 101.1 prohibition — **for
+  `safety-reviewer` and `rules-verifier`.**
+- **Ten live divergences** a consolidation would otherwise pick a winner on **silently**. ⚠️ **These
+  are defects NOW, not tidying:** *"the slot"* is currently two different shapes.
+- **Repeated labels inside one facts block** — multiple `Rule:` values read fine; multiple `Position:`
+  values confuse.
+
+⚠️⚠️ **THE STANDING CAUTION ON ALL OF SECTION 2, and it is not optional:** *"Do not simply delete the
+summary prose — the summary layer is a SAFETY MECHANISM, and this corpus has already lost a correct
+fact to a tidying pass."* **Duplication is not automatically waste**, and a repeat that reads as
+redundant on the page may be **the only intelligible form aloud**, because a ` ```facts ` value is
+voiced alone with a 300 ms break either side while prose is voiced continuously.
+
+### 3. ✅ ORIENTATION — CLOSED. The premise was false, and the class is empty.
+
+**The owner's example:** *"in **Carrying the Puck — Under Pressure** under **Defensive Zone**, it is not
+clear we are talking about Under Pressure in the Defensive Zone unless you scroll up."* The plan then
+recorded it as *"measured and worse than described — that heading appears THREE times in
+`winger.md`."*
+
+⚠️ **It appears zero times in the BARE form the complaint describes.** The three headings read
+`### Defensive Zone: Carrying the Puck — Under Pressure`, `### Neutral Zone: …` and
+`### Offensive Zone: …` — **each already prefixed with its zone, which is exactly what the owner asked
+for.** All twelve of `winger.md`'s zone sub-headings carry their zone —
+`:59, :82, :123, :160, :197, :216, :251, :275, :310, :331, :354, :390` — **and have done since commit
+`b9ed6b7`.** `grep -rn '^#\{2,4\} Carrying the Puck' content/` returns nothing corpus-wide. **Verified
+by the coordinator as well as by the agent. The fix shipped before the row was written.**
+
+⚠️ **And the whole class is empty.** Duplicate headings within a file were censused across all 37
+documents **three ways** — exact heading lines, level-stripped text, and **rendered-speech strings**,
+which is the test that matters and had never been run. **Zero hits.**
+
+**The harder half — headings that are unique but unplaceable aloud — was measured at 54, and its
+safety-bearing subset is ALSO empty.** ⚠️ **The reason is a structural property of this corpus that
+nobody had written down: the ` ```facts ` block immediately after a deictic heading RE-NAMES THE
+SUBJECT, so orientation is restored within one spoken unit.** *"The high-slot rotation."* is followed
+by *"Under low zone collapse, puck in the strong-side corner…"* — system **and** location. **29 of the
+54 have no block, and every safety- or penalty-touching one of those is rescued by its first body
+sentence.** Only `puck_support_and_spacing.md:52` fails both tests, and it is not safety-bearing.
+
+**Residue, worth a wording pass and nothing more:** `zone_entries.md` §5 and §6 carry near-identical
+child headings ~50 lines apart (*"How to do it"* / *"How it works"*, *"Why it works"* / *"Why it fails
+so often"*) — the shape the item was chasing, minus the exact string collision a duplicate census
+would see. **Both are rescued by their first facts value.**
+
+⚠️ **The lesson for the plan, not for the corpus: this row survived because nobody re-ran the grep it
+was built on. The corpus was already correct and an agent was dispatched to fix it.**
 
 ---
 
@@ -257,7 +1391,7 @@ deleted (precision ~40%, recall 1-in-7 — it finds text DELETED, not text MOVED
 | **`rules_primer.md` — the last citation-emphasis site** | `⚠️ Under **Hockey Canada Rule 6.11(b)(ii)**` bolds the **citation** rather than the caution, so the page gives amber to a rule number. ⚠️ **My brief listed this one as fine** (*'the strong run completes a claim'*) **and it is the identical defect** — 4 of 5, not 3 of 5. Three were repaired; this is the one left. The shipped pattern: **amber band runs glyph → citation → caution, citation in regular weight INSIDE the band, caution in bold.** |
 | ⚠️ **`astro preview` binds IPv6 ONLY** | `curl 127.0.0.1:4322` fails; `localhost:4322` works. Cost two reviewers time. Environment fact, recorded so the third does not rediscover it. |
 | **`defender-three-depths` shades a depth band across the crease and the goal frame** | The third band, labelled *'a commitment'*, runs **through the goal crease and the goal frame**, and its centroid label is drawn over the net. ⚠️ **The band's meaning is a DEPTH, so drawing it across the crease asserts that 'below the circles' includes the goaltender's paint.** It is also ±30 where the other two bands are ±38. Found by a reviewer that **declined to fix a second thing silently in a diagram nobody had briefed** — the right call, and the reason this is a row rather than a repair. |
-| ⚠️ **67 of 112 diagrams have been RENDERED but never LOOKED AT** | Coordinate, tangent, curve, zone and collision data are clean for all 112 — **that is not a substitute for looking.** Named so the gap is not silent: **all 9 `breakouts`, 5 of 6 `defending_the_rush`, 7 of 8 `defensive_zone_coverage`, all 4 `goaltender`, all 10 `special_teams`, both `rules_primer`**, plus 22 in the three modules just repaired. ⚠️ **And every render so far has been light theme at ~1100 px.** The `nz-1-3-1` arrowhead legibility and three faceoff glyph-touch findings **will be worst at 375–390 px and in dark theme, and neither has been measured there.** Named by two reviewers as the single highest-value remaining diagram work. |
+| ⚠️ **67 of 127 diagrams have been RENDERED but never LOOKED AT** ⚠️ **(denominator corrected from 112 by `commit-gate`, 3 September 2026 — it understated the backlog. The NUMERATOR was NOT re-measured: the fifteen diagrams added in round 60 were authored and reviewed, so 67 is carried forward unchanged and is a FLOOR, not a fresh count.)** | Coordinate, tangent, curve, zone and collision data are clean for all 127 — **that is not a substitute for looking.** Named so the gap is not silent: **all 9 `breakouts`, 5 of 6 `defending_the_rush`, 7 of 8 `defensive_zone_coverage`, all 4 `goaltender`, all 10 `special_teams`, both `rules_primer`**, plus 22 in the three modules just repaired. ⚠️ **And every render so far has been light theme at ~1100 px.** The `nz-1-3-1` arrowhead legibility and three faceoff glyph-touch findings **will be worst at 375–390 px and in dark theme, and neither has been measured there.** Named by two reviewers as the single highest-value remaining diagram work. |
 | **A `zone` polygon drawn 3.14× its definition passes EVERY gate this project has** | `check_geometry.py` validates named **points** — its only slot assertion is that the slot's x exceeds the top of the circle. `check-arrivals.mjs` **never reads `zones` at all.** ⚠️ **So the high-slot defect was invisible to every mechanical check, and was found only by a reviewer comparing two polygons in a table.** No checker covers zone polygons against their owner document's definition. **That checker does not exist and would be cheap.** |
 | ⚠️ **RENDERER — a quoted parenthetical STUTTERS when it restates the words before it** | Rulebooks write *'two (2) Players'*, *'six feet (6')'*, *'within five feet (5')'*. The corpus quotes them verbatim and correctly; the renderer expands the bracket, so a listener hears **'the two (two) Players'**, **'six feet (six feet)'**, **'five feet (five feet)'**. Reported independently by two agents. **~60 candidate sites; the `(2)` form alone is at five, four of them in one rule's quotation.** ⚠️ **The fix is NOT a pattern match.** `four feet (44')`, `eight feet (28')` and `five feet (85')` look identical to a regex and are the TAILS of *'twenty-four feet (44')'*-shaped phrases where the numbers genuinely differ — a naive rule would delete real information. It must **parse the spelled number and compare VALUES.** ⚠️ **And it must PRESERVE the informative case**: *'a major penalty (5')'* voices as *'five minutes'*, which is right and load-bearing. Text is correct throughout; this is audio only. |
 | ⚠️ **`special_teams.md` §'You may ice the puck freely' is doing TWO jobs and the cap is saying so** | At **11/11 with 8 `Rule:` values**. CARHA **Rule 55(a)** confines the puck-out-of-play minor to *'any goalkeeper who shoots or bats the puck out of the playing surface'* — **a CARHA skater's clear over the glass is not penalised at all**, which is a genuine four-book divergence the section cannot hold. ⚠️ An agent **declined to add it to the body alone**, because that creates the body-✓/block-✗ asymmetry this project treats as a defect class. **The section covers the icing exemption AND the puck-out-of-play minor; it needs splitting on that seam, which is an owner's decision, not an agent edit.** |
@@ -1012,7 +2146,7 @@ Worth building; nothing like it exists.
   different areas still sort by size.** That is the actual high-slot shape (660 vs 210, concentric)
   and it *is* caught — but by the ratio, which this round showed can be coincidental in the other
   direction. Centre separation is now reported; the ranking is not.
-- **OPEN — only 27 of the shaded regions across 112 diagrams carry a `<text>` label**, and
+- **OPEN — only 27 of the shaded regions across 127 diagrams carry a `<text>` label** ⚠️ **(denominator corrected 3 September 2026; the 27 was not re-counted against round 60's fifteen new diagrams)**, and
   `check_zones.py` can see no others. How many unlabelled shaded regions exist is unmeasured.
 
 
@@ -1032,7 +2166,7 @@ Worth building; nothing like it exists.
   still rank only by area. That is the actual high-slot shape (660 vs 210, concentric), and it *is*
   caught — but by the ratio, which this round has just shown can be coincidental in the other
   direction. Worth a row, not urgent.
-- **OPEN — 27 labelled zones across 112 diagrams is a small denominator.** Most shaded regions carry
+- **OPEN — 27 labelled zones across 127 diagrams is a smaller denominator still.** Most shaded regions carry
   no `<text>` label and are invisible to this tool entirely. Unquantified: how many.
 
 | ⚠️ **A SECOND DEFECT IN THE SAME PARAGRAPH, FOUND BY READING ALOUD — invisible to every search anyone designed** | *"…**Rule 625(a)(8)** is still a minor for […]. **The same clause** also stops play before it gets that far, with a neutral-zone face-off…"* ⚠️ **The neutral-zone face-off is 625(b) ¶1, not 625(a)(8). *"The same clause"* lands immediately after a sentence about (a)(8) and reads as pointing at it — and MORE SHARPLY IN THE AUDIO, where the renderer voices *"Rule six hundred and twenty-five, clause a, sub-clause eight…"* and then *"The same clause…"*** ✅ **Repaired to name ¶1 explicitly.** ⚠️ **The agent's own account: *"This was not in the brief. It was invisible to a grep sweep and only surfaced on the required aloud read."*** |
@@ -3049,7 +4183,7 @@ it wants building.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,098,634 words — 83.2 hours of
+These outrank everything below. The corpus is **37 documents and 1,126,101 words — 85.3 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure

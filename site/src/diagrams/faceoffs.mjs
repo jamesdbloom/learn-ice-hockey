@@ -184,8 +184,8 @@ const dzoneAlignment = {
     'book\u2019s answer into another league. Under the NHL and the IIHF, Rule 76.7, skate contact ' +
     'with the line is permitted and it is crossing it that is illegal. Hockey Canada counts a ' +
     'skate on the face-off circle as encroachment, and USA Hockey\u2019s Casebook requires all ' +
-    'sticks and all skates completely behind the hash marks — so under those two, keep off the ' +
-    'paint.',
+    'sticks and all skates completely behind the hash marks. Keep your skates and your stick ' +
+    'behind your own hash mark and you are legal in all four books.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +
@@ -252,8 +252,8 @@ const dzoneCleanLoss = {
 
   describe:
     'The same defensive-zone draw as the previous diagram, your own net at the right. Two ' +
-    'opposition defencemen have been added at the points, on the blue line either side of the ' +
-    'middle, and the opposing centre is in the dot. Two routes, both beginning on the drop ' +
+    'opposition defencemen have been added at the points, just inside the blue line either side ' +
+    'of the middle, and the opposing centre is in the dot. Two routes, both beginning on the drop ' +
     'rather than one after the other: the boards-side winger leaves the outer hash marks and ' +
     'goes straight up the ice to the near point; the inside winger leaves the inner hash marks ' +
     'and goes diagonally across to the far point on the other side of the ice. Each route runs ' +
@@ -283,11 +283,14 @@ const dzoneCleanLoss = {
   // before anyone knows where the puck is.
   //
   // THE ROUTES GO TO THE POINTS, BECAUSE THAT IS THE SECTION'S OWN SENTENCE.
-  // faceoffs.md:545 leads the clean loss with "**Both wingers go straight to the
-  // points.**", and 519 repeats it in the quick-reference; 530 calls the
-  // boards-side winger "the first man to the opposing point on a loss". So the
-  // destination is not a drawing choice, and a route that finishes anywhere else
-  // is teaching something the document does not say.
+  // "Defensive-zone draws" leads its clean-loss list with "**Both wingers go
+  // straight to the points.**"; the ```facts``` block above it repeats it as "On a
+  // clean loss, both wingers go to the points on the drop"; and "The standard
+  // setup" calls the boards-side winger "the first man to the opposing point on a
+  // loss". So the destination is not a drawing choice, and a route that finishes
+  // anywhere else is teaching something the document does not say.
+  // (Quoted rather than cited by line: four line numbers stood here and all four
+  // had gone stale, pointing into unrelated paragraphs.)
   //
   // WHAT THE ARRIVAL TEST ACTUALLY IMPLIES HERE. The test is THE ARRIVAL INVARIANT,
   // stated normatively above `playSvg` in scripts/lib/rink.mjs and enforced by
@@ -321,8 +324,8 @@ const dzoneCleanLoss = {
   // is protecting. The previous note rejected `pressure` by citing this diagram's
   // own `describe` ("forward skating"), which is circular: the describe is ours,
   // and it is updated below to say what is now drawn. The document's own
-  // vocabulary supports it too — faceoffs.md:584 has the wingers "pressure the
-  // puck" on a clean loss.
+  // vocabulary supports it too — "Offensive-zone draws" has the wingers "pressure
+  // the puck rather than retreating" on a clean loss.
   //
   // Geometry, so the next agent can check rather than trust. Each route runs on
   // the true bearing from its winger to its point man and stops 5.5 ft short of
@@ -408,15 +411,16 @@ const ozoneAlignment = {
 
   caption:
     'An offensive-zone draw, frozen before the drop, at the right-hand circle. Both defencemen ' +
-    'are up at the points: the strong-side one on the draw side with his feet already set and ' +
-    'his stick already loaded, because he is the shooter, and the weak-side one at the far point ' +
+    'are up at the points — the area just inside the blue line, not the line itself. The ' +
+    'strong-side one is on the draw side with his feet already set and his stick already ' +
+    'loaded, because he is the shooter; the weak-side one is at the far point, ' +
     'holding the line as the safety against a counterattack. The boards-side winger is at the ' +
     'outer hash marks ready to attack the wall or spin off it, the inside winger at the inner ' +
     'ones, and the centre is trying to win it back rather than forward. ' +
     'Set the shape beside the defensive-zone draw and the difference is the whole point: there, ' +
-    'one defenceman stands in the slot in front of his own goaltender, and here both are on the ' +
-    'blue line, because on a clean loss the priority flips instantly to not conceding a ' +
-    'counterattack. ' +
+    'one defenceman stands in the slot in front of his own goaltender, and here both are up at ' +
+    'the points, the weak-side one as the safety, because on a clean loss in the attacking end ' +
+    'the priority flips instantly to not conceding a counterattack. ' +
     'This is the common default, not a rule; every team’s alignment differs, so ask what yours runs.',
 
   describe:
@@ -424,7 +428,8 @@ const ozoneAlignment = {
     'end-zone circle. Five own players: the centre in the dot on the blue-line side of it; the ' +
     'boards-side winger level with the dot at the outer hash marks, close to the wall; the ' +
     'inside winger level with the dot at the inner hash marks; the strong-side defenceman at the ' +
-    'point on the draw side of the blue line; the weak-side defenceman at the far point. Two ' +
+    'point on the draw side, just inside the blue line; the weak-side defenceman at the far ' +
+    'point. Two ' +
     'opposition players are drawn, the opposing centre in the dot and the goaltender in the ' +
     'crease; the rest of the defending five are drawn in the defensive-zone diagram instead. ' +
     'No routes: this is a still shape at the moment before the drop.',
@@ -460,14 +465,17 @@ const neutralZoneAlignment = {
     'That depth is the shape’s whole argument: these are the lowest-stakes draws and the ones ' +
     'most worth taking a risk on, because a lost one costs you almost nothing so long as your ' +
     'defencemen are already gapped up to meet the rush. ' +
-    'On a win, advance the puck immediately and look to carry or pass it in with control — a won ' +
-    'neutral-zone draw that ends in a dump-in has produced very little. ' +
+    'On a win, advance the puck immediately and look to carry or pass it in with control: a won ' +
+    'neutral-zone draw that ends in a dump-in has produced very little. That comes from one ' +
+    'author’s tracking of the 2018-19 Swiss National League rather than the NHL, so treat it as ' +
+    'a direction and not as a measurement. ' +
     'The alignment is a coaching default rather than a rule, and every team’s differs.',
 
   describe:
     'The full sheet, your own net at the left, attacking to the right. The draw is at the centre ' +
     'dot. Five own players: the centre in the dot on his own side of it; the two wingers wide in ' +
-    'their lanes, one near each side board, level with or a stride behind the dot; the two ' +
+    'their lanes, one either side of the middle and well outside the centre circle, level with ' +
+    'or a stride behind the dot; the two ' +
     'defencemen well back, just in front of their own blue line, one either side of the middle ' +
     'of the ice. The own goaltender is in the crease at the left. One opposition player is ' +
     'drawn, the opposing centre, on the far side of the dot. No routes: this is a still shape at ' +
@@ -513,19 +521,20 @@ const goaliePulled = {
     'defencemen are at the points. ' +
     'The centre is under maximum pressure to win it back cleanly, because there is no safe ' +
     'outlet and no recovery from a loss; the empty ice behind the two defencemen is what a lost ' +
-    'draw plays into. A goaltender may not take part in a faceoff in any case. ' +
-    'Where the extra attacker and the two defencemen go is settled; where the wingers go is not, ' +
-    'so the two of them are shown on the hash marks as at any offensive-zone draw — a default, ' +
-    'not a fixed position.',
+    'draw plays into. A goaltender may not take part in a faceoff in any case: the NHL and IIHF ' +
+    'books both say so in the same words, at Rule 76.1. ' +
+    'The alignment is a default rather than a rule. The net front is drawn here only because one ' +
+    'of the extra attacker\u2019s two places had to be, and the wingers are on the hash marks as at ' +
+    'any offensive-zone draw, so ask what your team runs with six skaters out.',
 
   describe:
     'The full sheet, attacking to the right, the draw at the right-hand end-zone circle in the ' +
     'attacking zone. Your own net, at the left, has no goaltender in it. Six own skaters: the ' +
     'centre in the dot on the blue-line side; the boards-side winger at the outer hash marks; the ' +
     'inside winger at the inner hash marks; the extra attacker at the net front, just outside the ' +
-    'crease and off to the draw side; and both defencemen at the points on the attacking blue ' +
-    'line. Two opposition players are drawn, the opposing centre in the dot and their goaltender ' +
-    'in the crease. No routes: this is a still shape at the moment before the drop.',
+    'crease and off to the draw side; and both defencemen at the points, just inside the ' +
+    'attacking blue line. Two opposition players are drawn, the opposing centre in the dot and ' +
+    'their goaltender in the crease. No routes: this is a still shape at the moment before the drop.',
 
   players: [
     { id: 'C',  pos: 'F', at: A_CENTRE },

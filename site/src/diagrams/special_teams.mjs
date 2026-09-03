@@ -21,10 +21,22 @@
  *
  * PERSONNEL IS NOT SHAPE. The published key gives shape to position: circle is a
  * forward, triangle a defender. That makes every glyph a personnel claim, and the
- * section is emphatic that "who stands where inside it" is a coaching choice, and
- * that the 1-3-1's four-forwards-one-defenceman personnel is "coaching-material
- * consensus rather than a measured prevalence". There is no neutral glyph, so the
- * personnel drawn is disclosed in the caption of every diagram that has to pick.
+ * section is emphatic that "who stands where inside it" is a coaching choice
+ * (special_teams.md:75). There is no neutral glyph, so the personnel drawn is
+ * disclosed in the caption of every diagram that has to pick.
+ *
+ * ⚠️ AND BE CAREFUL WHICH HALF IS THE COUNTED ONE, BECAUSE THIS BLOCK HAD IT
+ * BACKWARDS AND SO DID pp-131's CAPTION. Both said the 1-3-1's
+ * four-forwards-one-defenceman personnel was "coaching-material consensus rather
+ * than a measured prevalence". That string is not in special_teams.md, and the
+ * section says the opposite at :94 — "The shape is definitional; how many forwards
+ * a coach puts in it is a choice, and that choice, unlike the shape, has been
+ * measured." The PERSONNEL is the counted half (Cane, roughly 56% of league-wide
+ * 5-on-4 ice time, 2016-17, explicitly not a first-unit figure). The UNCOUNTED half
+ * is how many teams run this SHAPE rather than an umbrella or an overload. The
+ * phrase itself is real but belongs to the shape, which is how
+ * how_to_watch_hockey.md:158 uses it — and that document embeds this caption, so
+ * the two contradicted each other sixteen spoken units apart.
  *
  * LABELS ARE SHORT ON PURPOSE. The placer sizes a label at roughly 1.6 rink feet
  * per character, so "the bumper — uncovered by design" is a fifty-foot box: it
@@ -42,7 +54,35 @@ const G_AT = { at: 'crease', dx: 1 };                       // (87, 0)
 
 // The net-front player: "the edge of the blue paint, not inside it", offset to
 // the strong side so the glyph clears the goaltender's.
-const NET_FRONT = { at: 'net-front', dx: -2, dy: 4 };       // (82, 4)
+//
+// ⚠️ THIS WAS dx -2, i.e. (82, 4), AND THAT COMMENT WAS FALSE AS DRAWN. Measured
+// off the BUILT SVG (site/public/diagrams/pp-131.svg), whose crease path is
+// "M 89 -4 L 84.5 -4 A 6 6 0 0 0 84.5 4 L 89 4 Z" — side lines 4.5 ft in from the
+// goal line at half-width 4, closed by a 6 ft arc struck from (88.972, 0). The
+// nearest crease boundary to (82, 4) is 2.038 ft away, so a 2.9 ft glyph body put
+// **0.86 ft of body and 1.24 ft of outlined body inside the blue paint**, and the
+// bite it took out of the paint was plainly visible in the render. Six diagrams in
+// this file drew it, and both the caption ("on the edge of the blue paint") and the
+// `describe` ("just outside the crease") said the opposite of the picture — while
+// the corpus is emphatic that a net-front player keeps his feet out of the crease
+// (special_teams.md and offensive_zone_play.md both key Rule 69 to it).
+//
+// At dx -4, i.e. (80, 4), the nearest boundary is 3.823 ft away: **0.92 ft of body
+// daylight**, 0.55 ft of outlined-body daylight, and the white halo (a 1.95 stroke
+// centred on r 2.9, so 3.875 ft of ink) overlaps by 0.05 ft — half a pixel at the
+// 9 px/ft this file renders at, and invisible. It is also the offset faceoffs.mjs
+// already uses for its extra attacker.
+//
+// ASSUMES, and dies if any of them moves: site/src/data/rink.json AS COMMITTED
+// TODAY — net-front = (84, 0), goal_line_x = 89, crease_width 8, crease_depth 6,
+// crease_arc_radius 6 — and rink.mjs's `straight = 4.5` and glyph radius 2.9.
+//
+// ⚠️ THE SAME (82, 4) OFFSET IS DEFINED IN game_management.mjs (six-on-five-shape)
+// AND A 0.38 ft VERSION AT (81, 3) IN offensive_zone_play.mjs (oz-net-front-screen).
+// Neither is this file's to edit and neither has moved. Until they do, three files
+// disagree about where the net front is, and game_management.mjs's comment saying
+// it uses "the same offset as the power-play diagrams" is no longer true.
+const NET_FRONT = { at: 'net-front', dx: -4, dy: 4 };       // (80, 4)
 
 // The 1-3-1 as the opposition power play, for the three penalty-kill diagrams.
 // Same five spots as `pp-131` below, so a reader who has seen that diagram is
@@ -52,14 +92,33 @@ const PP_131_OPP = [
   { id: 'H', team: 'opp', pos: 'F', at: 'half-wall:right' },  // (69, 38.5)
   { id: 'H', team: 'opp', pos: 'F', at: 'half-wall:left' },   // (69, -38.5)
   { id: 'B', team: 'opp', pos: 'F', at: 'bumper' },           // (71, 0)
-  { id: 'N', team: 'opp', pos: 'F', at: NET_FRONT },          // (82, 4)
+  { id: 'N', team: 'opp', pos: 'F', at: NET_FRONT },          // (80, 4)
 ];
 
 /* ------------------------------------------------------------------ POWER PLAY */
 
-// "one player at the point (the blue line), three across the middle of the zone —
-// two on the half-walls ... with a bumper between them in the middle of the slot —
-// and one at the net front." Frozen shape: 1 at x=25, 3 at x=69-71, 1 at x=82.
+// "one player at the point (the area just inside the blue line), three across the
+// middle of the zone — two on the half-walls ... with a bumper between them in the
+// middle of the slot — and one at the net front." Frozen shape: 1 at x=25, 3 at
+// x=69-71, 1 at x=80.
+//
+// ⚠️ THAT QUOTATION HAS BEEN RE-TAKEN. It used to read "one player at the point
+// (the blue line)" — text special_teams.md:92 no longer contains, because
+// content/foundation/rink_map_and_glossary.md owns the term and denies it three
+// times (:356, :372, :621): the point is the AREA JUST INSIDE the blue line, not
+// the line. The glyph still stands ON the line, at rink.json's `point` anchor,
+// and that is deliberate — see the note on `point` in rink.json. Only the words
+// changed.
+//
+// FOUR `describe` STRINGS IN THIS FILE CARRIED THE SAME RETRACTED DEFINITION — "at
+// the point on the blue line", in pp-131, pp-overload, pp-2-3 and pk-box — and each
+// now says "just inside the blue line". They were literally true OF THE DRAWING,
+// because the anchor is on the line; they were false of the term, and a `describe`
+// is what a screen-reader user is given instead of the picture. The wording follows
+// positions.mjs, which took the same decision for the same reason: the offset is
+// smaller than the glyph carrying it, so no drawing can express it and the words are
+// the only layer that can. (`describe` is NOT voiced — md_to_speech.py resolves
+// `diagram:<id>` to the CAPTION alone — it becomes the SVG's `<desc>`.)
 const pp131 = {
   id: 'pp-131',
   owner: 'content/systems/special_teams.md',
@@ -78,12 +137,16 @@ const pp131 = {
     'not a rule of hockey — the umbrella, the overload, the spread and the 2-3 are all real ' +
     'alternatives, and the bumper is most often the centre but that is team-dependent. ' +
     'It is drawn with a defenceman at the point because first units are widely described as ' +
-    'running four forwards and one defenceman, but treat that personnel as coaching consensus ' +
-    'rather than a measured prevalence: the shape is definitional, the personnel is a choice.',
+    'running four forwards and one defenceman — and unlike the shape, that personnel has been ' +
+    'counted. Matt Cane measured four-forward units at roughly 56% of 5-on-4 ice time across ' +
+    'the league in 2016-17, which is a share of ice time rather than a count of teams and is not ' +
+    'a first-unit figure. What is uncounted is the shape: no published count of how many teams ' +
+    'run a 1-3-1 rather than an umbrella or an overload was found.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
-    'the crease. Five own players: one at the point in the middle of the blue line, two on the ' +
+    'the crease. Five own players: one at the point, in the middle and just inside the blue line, ' +
+    'two on the ' +
     'half-walls level with the faceoff dots, one bumper in the middle of the slot between them, ' +
     'and one at the net front just outside the crease. The puck is on the right half-wall. Four ' +
     'dashed passing options run from that player: back to the point, inside to the bumper, down ' +
@@ -92,8 +155,10 @@ const pp131 = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: G_AT },
-    // "one player at the point (the blue line)" — the middle of the line, because
-    // the job is walking it laterally in both directions.
+    // "one player at the point (the area just inside the blue line)" — anchored in
+    // the middle of the line, because the job is walking it laterally in both
+    // directions. The anchor is schematic: the point is the area inside the line,
+    // and rink.json's `point` $comment records why the coordinate stays on it.
     { id: 'P', pos: 'D', at: 'centre-point',      label: 'the point' },
     { id: 'H', pos: 'F', at: 'half-wall:right',   label: 'half-wall' },
     { id: 'H', pos: 'F', at: 'half-wall:left',    label: 'half-wall' },
@@ -113,10 +178,15 @@ const pp131 = {
     { from: 'half-wall:right', to: { at: 'centre-point', dx: 3, dy: 6 }, kind: 'pass' },
     { from: 'half-wall:right', to: { at: 'bumper', dx: -1, dy: 6 }, kind: 'pass' },
     // Stops short of the net-front player, but aimed at him: extended, this route
-    // reaches (82, 3) and he is at (82, 4). An earlier endpoint stopped the same
+    // reaches (80, 3.85) and he is at (80, 4). An earlier endpoint stopped the same
     // distance short while pointing nine feet under him, which in the picture read
     // as a pass to nobody.
-    { from: 'half-wall:right', to: { at: 'net-front', dx: -3, dy: 6 }, kind: 'pass' },
+    // ⚠️ Re-aimed with NET_FRONT. It used to end at (81, 6) aiming at (82, 4); once
+    // the receiver moved to (80, 4) that endpoint sat a foot BEYOND him and the
+    // arrow pointed past him into the crease. The tip is now 3.16 ft from his
+    // centre — clear of the 2.9 ft body, under the halo, which is how a pass to a
+    // receiver should land.
+    { from: 'half-wall:right', to: { at: 'net-front', dx: -5, dy: 7 }, kind: 'pass' },
     // The seam. Bowed away from the net so it passes wide of the bumper's glyph
     // rather than through it — straight, it runs within two feet of him.
     { from: 'half-wall:right', to: { at: 'half-wall:left', dy: 5 }, kind: 'pass', bow: -10 },
@@ -217,7 +287,8 @@ const ppOverload = {
   describe:
     'Attacking half of the rink, the opposition net at the right. Four own players stacked on the ' +
     'right side: one below the goal line beside the net, one in the right corner, one on the ' +
-    'right half-wall and one at the right point on the blue line. A fifth own player stands alone ' +
+    'right half-wall and one at the right point, just inside the blue line. A fifth own player ' +
+    'stands alone ' +
     'on the far left at the top of the left faceoff circle. Three numbered passes: one, from ' +
     'below the goal line out to the corner; two, up the wall to the half-wall; three, cross-ice ' +
     'to the weak-side player. No penalty killers are drawn.',
@@ -343,7 +414,8 @@ const pp23 = {
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Five own players: two ' +
-    'defencemen at the left and right points on the blue line, and three forwards low — one in ' +
+    'defencemen at the left and right points, just inside the blue line, and three forwards low — ' +
+    'one in ' +
     'the right faceoff circle, one in the left faceoff circle and one at the net front outside ' +
     'the crease. The middle of the slot is empty. Two numbered routes: one, a pass from the right ' +
     'circle up to the right point; two, a shot from the point to the low side of the net front. ' +
@@ -401,7 +473,8 @@ const pkBox = {
     'Defending half of the rink, our net at the right and our goaltender in the crease. Four own ' +
     'players in a rectangle around the slot: two forwards high, level with the tops of the ' +
     'circles and inside them, and two defencemen low, either side of the net front. Five ' +
-    'opposition players in a 1-3-1: one at the point on the blue line, two on the half-walls, one ' +
+    'opposition players in a 1-3-1: one at the point just inside the blue line, two on the ' +
+    'half-walls, one ' +
     'bumper in the middle of the slot inside the rectangle with no killer near him, and one at ' +
     'the net front. The puck is on the opposition’s right half-wall. No routes are drawn.',
 

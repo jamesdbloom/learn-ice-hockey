@@ -25,8 +25,8 @@ These terms recur throughout. They are also defined in [Rink Map and Glossary](.
 
 - **The slot** — the area directly in front of the net, **between the two faceoff circles**, running from the goalmouth out to the tops of the circles. The most dangerous ice on the rink, and the region the 10–15% figure above is scoped to. ([Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers the shape.)
 - **The high slot** — the upper part of that area, from the faceoff dots out to the top of the circles.
-- **The goalmouth** — the immediate net front, right at the edge of the crease. Not the same as the slot; it is the innermost sliver of it.
-- **The point** — the area near the offensive blue line where defencemen normally stand.
+- **The goalmouth** — the immediate net front, right at the edge of the crease. Not the same as the slot, and not a part of it: it is the layer below, at the crease. They are two different coverage jobs one layer apart, and a defender who leaves the goalmouth to cover the slot has left a tap-in unmarked.
+- **The point** — the area just inside the offensive blue line where defencemen normally stand. It is an area, not the line itself.
 - **The half-wall** — the boards roughly level with the faceoff dot, between the corner and the point.
 - **Five-hole** — the gap between a goaltender's leg pads. Note that the gap between a goalie's stick arm and their body is a *different* target with its own name, the **six-hole**; see [Goaltender](../positions/goaltender.md) for the goalie's own vocabulary.
 - **Release** — the moment the puck leaves your blade, and by extension how long your shooting motion takes from first movement to that moment.
@@ -398,6 +398,8 @@ A shot that hits a shin pad is worse than no shot at all. **You have given up po
 
 **A note for defencemen at the point:** the goal of a point shot is almost never to score directly. Point shots produce around **1–3 goals per 100 shots** ([Hockey's Arsenal](https://hockeysarsenal.substack.com/p/shot-quantity-or-shot-quality) — a range read off a shot-location map, not a computed rate; see [Where Shots Are Worth Taking](#where-shots-are-worth-taking)). ⚠️ **Two qualifications travel with that figure and both change what it means for you.** The map counts a shot as a goal, a save or a miss, so **misses are in the denominator and this is not a shooting percentage** — it is lower than one. And it is the **even-strength** map: on the power-play version of the same map the 5% contour reaches roughly the blue line, so **none of this is an argument against a power-play point shot.** The goal is to produce a tip, a rebound, or a scramble in the slot — all of which require the puck to actually arrive there. That is why "get it through" beats "shoot it hard" every time.
 
+![](diagram:shooting-lane-and-the-step)
+
 ---
 
 ## Where Shots Are Worth Taking
@@ -544,6 +546,8 @@ The underlying instruction is the one that transfers: **release off the foot you
 
 **Know what the second wave is doing.** If you have a trailer coming late into the high slot, delaying a beat and passing back to them is often a better chance than your own shot from the wing — because it converts a perimeter shot into a slot shot. See [Zone Entries](../systems/zone_entries.md) for how rush attacks are structured, and [Defending the Rush](../systems/defending_the_rush.md) for the other side of it.
 
+![](diagram:shooting-rush-wide-and-the-trailer)
+
 ---
 
 ## Breakaways and Shootouts — the Shooter's Side
@@ -582,6 +586,8 @@ Read: A deke needs room; you cannot pull the puck across your body once you are 
 - **A deke needs room to happen in.** You cannot pull the puck across your body and get it back if you are already past the post.
 
 **A change of pace beats raw pace.** Come in hard to the blue line, then ease off through the top of the circles and accelerate again as you make your move. The deceleration pulls the goalie out of their retreat rhythm; the re-acceleration arrives before they have re-set. That single pattern is worth more than any hand skill. **That last ranking is coaching craft rather than a measured finding, and it reaches beyond the sources behind it.** The two coaching sources that teach the change of pace — the IIHF's coach-development manual and Edge Ice Academy — describe beating a *defender* one-on-one, and neither measures it; no source held for this document measures a change of pace against a goaltender, or against hand skill. See [Time and Space](../hockey-iq/time_and_space.md).
+
+![](diagram:shooting-breakaway-approach)
 
 ### Deception — take their eyes off the puck
 

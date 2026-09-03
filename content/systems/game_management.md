@@ -175,7 +175,7 @@ Action: Move the puck north faster and arrive in numbers through the neutral zon
 Options: Aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie — roughly that order of safety
 Read: Trailing, you pinch on anything close; leading, you pinch only when you are certain
 Risk: A pinch that misses is a 2-on-1 the other way, and a fourth attacker deep is a genuine odd-man risk
-Never: Leave nobody as the last man back — if a defenceman goes, a forward replaces them high
+Never: Leave the last-man-back spot empty — if a defenceman goes, a forward replaces them high
 Action: Say that swap out loud
 ```
 
@@ -265,7 +265,7 @@ Convention: Umbrella, overload or your normal power-play look at 6-on-5 is a tea
 
 The extra attacker is almost always a forward, and the sixth skater usually comes on for the goalie at a stoppage with an offensive-zone faceoff, or on the fly once you have possession in their end.
 
-The most common shape takes a standard power-play look and adds a second body high: **two players at the blue line (the points), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**. The principles matter more than the diagram:
+The most common shape takes a standard power-play look and adds a second body high: **two players at the points (the area just inside the blue line, not the line itself), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**. The principles matter more than the diagram:
 
 - **Get set up.** A 6-on-5 that has to enter the zone repeatedly is wasting its advantage. Win possession, gain the line, and get organised.
 - **Puck to the net with a screen.** The extra man is most valuable as a body in front and a second-chance collector, not as a sixth passer.
@@ -275,6 +275,8 @@ The most common shape takes a standard power-play look and adds a second body hi
 - **⚠️ And remember what is behind you at the other end.** Your net is empty, so a foul the situation would normally justify back there stops being worth taking: with the goalie removed for an extra attacker, the NHL's **Reference Table 10** lists seven infractions that produce an **awarded goal** rather than a power play or a penalty shot, among them delaying the game (Rule 63), handling the puck (67) and tripping *"(fouling from behind – including hooking, holding, slashing, etc.)"* (57). Covering a loose puck in your own crease is the sharpest of them — an awarded goal under **NHL and IIHF 67.5** and **Hockey Canada 10.2(a)(vi)** on the bare fact of the substitution, and under **USA Hockey 614(b)** wherever the act *"has prevented an obvious and imminent goal"*. If a loose puck is in your crease, knock it straight down where you stand: that is free in all four books. See [When a penalty is worth taking](#when-a-penalty-is-worth-taking) and [Catching a loose puck in your own crease](#catching-a-loose-puck-in-your-own-crease).
 
 > **The shape you use at 6-on-5 is a system choice.** Some teams run an **umbrella** (three players high) there, some **overload** four players onto one side, some just add a net-front body to their normal power-play look. Learn yours in practice, because there is no time to work it out in the game. See [Special Teams](special_teams.md).
+
+![](diagram:six-on-five-shape)
 
 ### The 6-on-4
 
@@ -321,7 +323,7 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 ### Defending against 6-on-5
 
 ```facts
-Never: Chase. Play a tight box or diamond in the slot instead, block lanes and let them have the perimeter
+Never: Chase. Hold a tight shape in the slot instead, block lanes and let them have the perimeter — a box is two high and two low, a diamond a single apex against a player in the middle
 Position: Sticks in lanes, feet in the house; clear bodies and take sticks away at the net front
 Action: Treat every clear as a shot — get your head up and put it at the empty net when the lane is clean
 Rule: You can be iced against a pulled goalie; six players against six is equal strength, not below it (NHL Rules 81.1, 81.3, 84.1)
@@ -912,7 +914,7 @@ Priority: For a puck in the air there is usually no trade to price at all; knock
 Never: Foul anything once your own goalie is pulled — every trade that was worth taking with a goalie in the net stops being worth taking without one
 Rule: The empty-net awarded goal — NHL 25.1 and 57.4 for the breakaway; for the crease one NHL and IIHF 67.5 and Hockey Canada 10.2(a)(vi) on the bare fact of the substitution, USA Hockey 614(b) alone conditioning it on preventing "an obvious and imminent goal"
 Never: Take one for retaliation, for sending a message, after the whistle, or at any point in the first period
-Rule: This arithmetic prices a penalty as a power play, which the after-the-whistle ones are not always — USA Hockey writes a puck put out during a stoppage as a minor (610(c)) and a misconduct (601(c)(10)) without saying which governs, and a game misconduct in protest of a call (601(d)(7))
+Rule: Trading a foul for a power play assumes the penalty is one, which the after-the-whistle ones are not always — USA Hockey writes a puck put out during a stoppage as a minor (610(c)) and a misconduct (601(c)(10)) without saying which governs, and a game misconduct in protest of a call (601(d)(7))
 ```
 
 Rarely — but not never. The test is simple: **is the thing you are preventing more likely to become a goal than the power play you are giving up?**
@@ -986,12 +988,13 @@ Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastroph
 ```facts
 Action: Keep your feet moving — when your feet stop your stick starts reaching, and a stick used as a substitute for skating is what hooking and tripping calls are made of
 Action: Give up the last word — USA Hockey's casebook has both players given a minor for a push and a push back, so answering costs you a minor whatever else happens
-Risk: The extra minor against whoever started it is the part the casebook says officials most often skip, so retaliating can leave you at a straight wash
+Risk: The extra minor against whoever started it is the part the casebook says officials often skip, so retaliating can leave you at a straight wash
+Key: The casebook condemns that practice rather than endorsing it — it says the approach discredits the officials and creates more problems later in the game
 Action: Have a reset — a breath at the faceoff dot, a tap of the pads, a look at the clock
 Convention: That most amateur penalties are frustration-driven is coaching experience, not data — no published study in amateur hockey codes penalty motive against the preceding play
 ```
 
-*This section carries the full treatment of what is and is not known about why amateur players take penalties; [Risk Management](../hockey-iq/risk_management.md#the-far-more-common-case) sends you here for it. The claim below should never be quoted without the qualification attached to it.*
+*This section carries the full treatment of what is and is not known about why amateur players take penalties; [Risk Management](../hockey-iq/risk_management.md#the-penalties-that-are-not-trades-at-all) sends you here for it. The claim below should never be quoted without the qualification attached to it.*
 
 The standard coaching observation is that **the great majority of penalties in amateur hockey are frustration penalties**: retaliation, slashing after losing a battle, cross-checking after a whistle, arguing with an official. There is published data on youth-hockey penalties, and it partly supports this and partly does not. It is worth separating the two, because the coaching advice below survives either way.
 
@@ -1006,7 +1009,7 @@ There is also a nice piece of counter-evidence against the intuition that frustr
 Three practical habits:
 
 1. **Keep your feet moving.** When your feet stop, your stick starts reaching — and a stick used as a substitute for skating is what hooking and tripping calls are made of. Treat discipline as partly a conditioning and effort problem in disguise.
-2. **Give up the last word.** After a whistle, be the one who skates away — and do not assume the officials have seen who started it. USA Hockey's casebook takes exactly this case, a player pushed after a whistle who pushes back: *"In this instance, both players should be assessed minor penalties for roughing"* (USA Hockey Casebook, Standard of Play, Situation 25). So answering costs you a minor whatever else happens. The differential you would be relying on is the *extra* minor the book directs against whoever started it — *"the aggressor should be identified and assessed an additional minor penalty in order to hold them accountable for starting the situation"* (Casebook, Rule 640, Situation 2) — and that is the part the same passage says officials most often skip, describing officials who *"only assess penalties after several warnings or after a player retaliates, in which case they go back and assess one minor penalty to each player"*. The book is criticising that practice, not endorsing it, but criticising it is not the same as it not happening: a minor apiece cancels the advantage you had just earned.
+2. **Give up the last word.** After a whistle, be the one who skates away — and do not assume the officials have seen who started it. USA Hockey's casebook takes exactly this case, a player pushed after a whistle who pushes back: *"In this instance, both players should be assessed minor penalties for roughing"* (USA Hockey Casebook, Standard of Play, Situation 25). So answering costs you a minor whatever else happens. The differential you would be relying on is the *extra* minor the book directs against whoever started it — *"the aggressor should be identified and assessed an additional minor penalty in order to hold them accountable for starting the situation"* (Casebook, Rule 640, Situation 2) — and that is the part the same passage says officials *often* skip, describing officials who *"[o]ftentimes … will only assess penalties after several warnings or after a player retaliates, in which case they go back and assess one minor penalty to each player"*. **The book condemns that practice in terms** — *"[t]his approach discredits the officials and will only create more problems later in the game"* — so do not read it as a description of how the game is normally called. But criticising a practice is not the same as it not happening: a minor apiece cancels the advantage you had just earned.
 3. **Have a reset.** Something small and physical — a breath at the faceoff dot, a tap of the pads, a look at the clock. See [Mental Game](../off-the-ice/mental_game.md).
 
 ---

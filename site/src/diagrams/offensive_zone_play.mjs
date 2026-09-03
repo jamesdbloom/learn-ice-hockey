@@ -45,12 +45,35 @@ const HALF_WALL = 'half-wall:right';
 // overlapping circles. (87, 0)
 const GOALIE = { at: 'crease', dx: 1 };
 
-// The net-front screening spot: section 6 states it in feet — "at the edge of the
-// blue paint, inside the faceoff dots — roughly six to eight feet out from the
-// goal line". Eight feet out, and nudged to the puck side because the same
-// section says you stand between the goalie's EYES and the puck, not between the
-// goalie and the net. (81, 4)
-const NET_FRONT = { at: 'goal-line', dx: -8, dy: 4 };
+// The net-front screening spot for `oz-low-to-high`. Section 6 states it in feet
+// — "at the edge of the blue paint, inside the faceoff dots — roughly six to
+// eight feet out from the goal line ... Live just beyond the arc"
+// (offensive_zone_play.md:437). Eight feet out, which is the outer end of that
+// range and is what this diagram's `describe` says.
+//
+// ⚠️ THE dy WAS 4 AND THAT DREW INK IN THE BLUE PAINT. Measured off the BUILT SVG
+// (site/public/diagrams/oz-low-to-high.svg), whose crease path is
+// "M 89 -4 L 84.5 -4 A 6 6 0 0 0 84.5 4 L 89 4 Z" — side lines 4.5 ft in from the
+// goal line at half-width 4, closed by a 6 ft arc struck from (88.972, 0). The
+// nearest crease boundary to (81, 4) is 2.919 ft away, so the 2.9 ft glyph body
+// cleared it by 0.019 ft — a quarter of an inch — while the 0.75 outline sat
+// 0.36 ft INSIDE the paint and the 1.95 halo, 1.0 ft inside, rubbed out the top
+// third of the crease arc's red line. That is the marking this document's own
+// section 6 tells the reader to study, and F2 read as standing on it.
+//
+// dy 6 rather than a bigger dx, because the DEPTH is the number the document
+// commits to and the lateral position is not: :437 bounds it only by "at the edge
+// of the blue paint, inside the faceoff dots" (the dots are at y 22). At (81, 6)
+// the nearest boundary is 3.977 ft: 1.08 ft of body daylight, 0.70 ft of outlined
+// body, and 0.10 ft of halo daylight, so the arc is drawn intact. The glyph's
+// inner edge falls at y 3.1, level with the post, so the drawn body still spans
+// the ice from the post outward.
+//
+// ASSUMES, and dies if any of them moves: site/src/data/rink.json AS ON DISK IN
+// THIS WORKING TREE — goal-line = (89, 0), goal.crease_width 8, crease_depth 6,
+// crease_arc_radius 6 — and rink.mjs's glyph radius 2.9 with its 0.75 outline and
+// 1.95 halo strokes. (81, 6)
+const NET_FRONT = { at: 'goal-line', dx: -8, dy: 6 };
 
 // ---------------------------------------------------------------------------
 // 1 — The home-plate scoring area (section 1)
@@ -119,7 +142,7 @@ const royalRoad = {
   caption:
     'The royal road — an imaginary line down the centre of the ice, lengthwise, from the middle ' +
     'of one net to the middle of the other — and a pass crossing it in the offensive zone, which ' +
-    'is the most valuable action in offensive hockey. Crossing it forces the ' +
+    'is the highest-value pass type measured, roughly double the next one. Crossing it forces the ' +
     'goaltender to push laterally, re-establish depth and angle, re-find the puck visually and ' +
     'reset their stick; a shot arriving before they finish that sequence is a desperation save ' +
     'rather than a positioning save. Passes across it finished at 15.50% — volunteer-tracked ' +
@@ -436,7 +459,8 @@ const lowToHigh = {
     'on the inside edge of the strong-side faceoff circle. Three: the defenceman carries the ' +
     'puck ten feet along the blue line toward the middle of the ice. Four: from there a shot, ' +
     'drawn as a double line, runs down the ice and finishes short of the net, passing to the ' +
-    'weak side of a forward who is standing at the net front eight feet out from the goal line. ' +
+    'weak side of a forward who is standing at the net front, eight feet out from the goal line ' +
+    'and just outside the strong-side post. ' +
     'A second forward stands in the high slot on the strong side. The weak-side defenceman ' +
     'stays on the blue line. The goaltender is in the crease; no other defenders are drawn.',
 
@@ -462,7 +486,12 @@ const lowToHigh = {
     { from: 'point:right', to: WALKED_TO, kind: 'carry' },
     // 4 — the shot. Stops thirteen feet short of the goal line, so it neither
     //     enters the crease nor runs into the goaltender's or the screener's
-    //     glyph; extended, its line arrives two feet inside the far post.
+    //     glyph: its head at (76, -0.5) is 8.2 ft from the screener's centre at
+    //     (81, 6) and 11.0 ft from the goaltender's at (87, 0). Extended, its line
+    //     crosses the goal line at y -2.16 — 0.84 ft inside the far post.
+    //     ⚠️ THIS COMMENT SAID "two feet inside the far post". It was never two:
+    //     the line runs (25, 6) to (76, -0.5), so at x 89 it is at y -2.16 against
+    //     a post at y -3. Recomputed, not adjusted — the route is unchanged.
     { from: WALKED_TO, to: { at: 'net-front', dx: -8, dy: -0.5 }, kind: 'shot' },
   ],
 
@@ -484,7 +513,11 @@ const netFrontScreen = {
     'roughly six to eight feet out from the goal line and inside the faceoff dots, standing on ' +
     "the line between the goaltender's eyes and the puck rather than the line between the " +
     'goaltender and the net — so when the point man walks the line, the screener slides with him ' +
-    'or the screen stops being a screen. Note the crease as it is drawn, because this is easy to ' +
+    'or the screen stops being a screen. Take the six-to-eight feet from these words and not off ' +
+    'the picture: the marker for the screener is drawn nine and a half feet out instead, because a ' +
+    'player marker on these diagrams is nearly six feet across, far wider than a player, and at ' +
+    'eight feet out on that sight line it would cover the very crease line the ' +
+    'diagram is about. Note the crease as it is drawn, because this is easy to ' +
     'get wrong: it is eight feet wide at the goal line and six feet deep, so the six feet is the ' +
     'depth and not the half-width, and "three feet out from the goal line" is inside the paint ' +
     'rather than clear of it. A screen from outside the crease without contact is normally legal ' +
@@ -510,7 +543,7 @@ const netFrontScreen = {
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
     'strong-side point, wide, eight feet toward the boards of the point itself. A forward stands ' +
-    'at the net front, eight feet out from the goal line and just clear of the shaded goal ' +
+    'at the net front, nine and a half feet out from the goal line and clear of the shaded goal ' +
     'crease, offset to the puck side of the middle of the net so that he sits on the straight ' +
     "line between the goaltender's position and the puck rather than in front of the net. The " +
     'goaltender is in the crease. A shot, drawn as a double line, runs from the point and ' +
@@ -524,17 +557,69 @@ const netFrontScreen = {
     // them. At the point node itself the two lines are barely two feet apart at
     // the screener and the picture asserted nothing. (25, 28)
     { id: 'D', pos: 'D', at: { at: 'point:right', dy: 8 }, label: 'the shooter' },
-    // Eight feet out from the goal line, and on the straight line from the
-    // goaltender at (87, 0) to the puck at (25, 28) — which passes through
-    // (81, 2.7). Note that it is off the middle of the net, which is the point.
-    { id: 'F', pos: 'F', at: { at: 'goal-line', dx: -8, dy: 3 }, label: 'edge of the paint' },
+    // On the straight line from the goaltender at (87, 0) to the puck at
+    // (29, 24) — which passes through (79.5, 3.10), so this sits 0.1 ft off it.
+    // Being ON that line is the whole teaching of section 6, and the offset from
+    // the middle of the net is the point.
+    //
+    // ⚠️ THIS WAS dx -8, i.e. (81, 3), AND IT DREW THE SCREENER'S BODY IN THE
+    // PAINT. Measured off the BUILT SVG (site/public/diagrams/oz-net-front-screen.svg),
+    // crease path "M 89 -4 L 84.5 -4 A 6 6 0 0 0 84.5 4 L 89 4 Z", arc struck
+    // from (88.972, 0) at r 6: the nearest boundary to (81, 3) is 2.518 ft, so
+    // 0.38 ft of the 2.9 ft body and 0.76 ft of the outlined body were inside it,
+    // and the halo erased about a third of the crease arc's red line. In the
+    // diagram whose caption says "Note the crease as it is drawn".
+    //
+    // ⚠️ AND THE DOCUMENT'S FIGURE AND THIS PICTURE CANNOT BOTH BE HONOURED —
+    // stated rather than quietly split. offensive_zone_play.md:437 says "roughly
+    // six to eight feet out from the goal line". The goaltender-to-puck line is
+    // shallow near the net by construction — it is why the shooter above is drawn
+    // wide, and the comment on him says the two lines are barely two feet apart at
+    // the point node itself. ⚠️ That is THIS FILE's observation, not a sentence in
+    // offensive_zone_play.md; the document says only that you stand between the
+    // goaltender's eyes and the puck. So at
+    // 8 ft out — x 81 — the line from (87, 0) to the puck at (29, 24) passes
+    // through y 2.48, where the nearest crease boundary is 2.349 ft and 0.55 ft of
+    // the 2.9 ft body is inside the paint. Widening the point man does not rescue
+    // it. His triangle reaches 4.06 ft to the boards side of its centroid (r 3.6
+    // circumradius plus the round-joined 0.8 stroke), so against an inner boards
+    // ink edge of about 42.25 the centroid cannot pass y 38, which puts the puck
+    // at (29, 34) — and the line then reaches only y 3.52 at x 81, where 0.19 ft
+    // of body is STILL inside. There is no position at six to eight feet out, on
+    // the eyes-to-puck line, that a glyph of this size clears the crease from.
+    // Moving the goaltender does not help either: deeper flattens the line
+    // further, and a goaltender ON the goal line reaches only y 3.2.
+    //
+    // So the DEPTH gives way and the LINE is kept, because the line is what this
+    // diagram exists to show and the depth is stated in words in the caption
+    // anyway. At (79.5, 3) — nine and a half feet out — the nearest boundary is
+    // 3.936 ft: 1.04 ft of body daylight, 0.66 ft of outlined body, 0.06 ft of
+    // halo daylight, so the arc renders whole. ⚠️ THE CAPTION AND `describe` BOTH
+    // SAY SO IN TERMS; do not "tidy" that disclosure away, and do not restate the
+    // drawn depth as the coaching figure.
+    //
+    // ASSUMES, and dies if any of them moves: site/src/data/rink.json AS ON DISK
+    // IN THIS WORKING TREE — goal-line = (89, 0), crease = (86, 0), point = (25,
+    // 20), goal.crease_width 8, crease_depth 6, crease_arc_radius 6 — and
+    // rink.mjs's glyph radius 2.9 with its 0.75 outline and 1.95 halo strokes.
+    // (79.5, 3)
+    { id: 'F', pos: 'F', at: { at: 'goal-line', dx: -9.5, dy: 3 }, label: 'edge of the paint' },
     { id: 'G', team: 'opp', pos: 'G', at: GOALIE },
   ],
 
   routes: [
     // Stops six feet short of the screener. Extended, the line arrives inside the
     // far post — which is what a shot through a screen is for.
-    { from: { at: 'point:right', dy: 8 }, to: { at: 'goal-line', dx: -14, dy: 4 }, kind: 'shot' },
+    //
+    // ⚠️ RE-AIMED WHEN THE SCREENER MOVED. It ended at (75, 4) aiming at a screener
+    // at (81, 3); with the screener at (79.5, 3) that head sat 4.6 ft off him and
+    // the six feet the comment claims had gone. (73.5, 4.75) is on the same line
+    // out of the point to within 0.03 ft — the exact point is (73.5, 4.72) — so
+    // the extension is unchanged to within 0.04 ft at the goal line: it passes
+    // 1.02 ft from the screener's centre, well inside his 2.9 ft body, and crosses
+    // the goal line at y -2.68 against y -2.72 before, either way inside the far
+    // post at y -3. The head is now 6.25 ft from the screener.
+    { from: { at: 'point:right', dy: 8 }, to: { at: 'goal-line', dx: -15.5, dy: 4.75 }, kind: 'shot' },
   ],
 
   puck: { at: 'point:right', dx: 4, dy: 4 },

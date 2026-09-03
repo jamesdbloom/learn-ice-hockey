@@ -139,8 +139,19 @@ const stickLaneBodyNet = {
  * No opposition player is drawn. The section places none in this sentence, and the
  * one thing that could sensibly be added — a second player racing the same puck to
  * the same wall — is the exact picture this corpus must not draw casually: the
- * document calls a puck race to the wall "the single most dangerous moment in
- * hockey" and hands the whole of how-you-arrive to Body Contact and Battles §6/§10.
+ * document hands the whole of how-you-arrive to Body Contact and Battles §6/§10.
+ *
+ * ⚠️  THIS COMMENT USED TO QUOTE THE DOCUMENT AS CALLING A PUCK RACE TO THE WALL
+ * "the single most dangerous moment in hockey". IT DOES NOT, AND A GREP FOR THAT
+ * STRING ACROSS content/ RETURNS ZERO. The claim was retracted; the owner now says
+ * the opposite at playing_without_the_puck.md:291 -- it ranks the HABIT, not the
+ * moment, and "nothing in the safety material held for this corpus ranks game
+ * situations by danger". Corrected 2 September 2026, found by a retraction census.
+ *
+ * The REASONING above survives the retraction and is why this note stays: a second
+ * player racing the same puck to the same wall is a picture that fixes the target's
+ * facing, and this corpus does not draw that casually. It does not need a
+ * superlative to justify it, and the superlative was the part that was wrong.
  * ------------------------------------------------------------------------- */
 
 const D2_PUCK = { at: 'corner:right', dx: 0, dy: 1 };        // (82, 35)

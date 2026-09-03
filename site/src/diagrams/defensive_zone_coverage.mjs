@@ -76,20 +76,27 @@ const OUR_G = { at: 'crease', dx: 1 };                       // (87, 0)
 // defencemen hold the points.
 // A GLYPH IN THE CORNER MUST CLEAR THE ARC, NOT THE STRAIGHT DASHER — the same
 // rule positions.mjs states over its own corner cluster, which this module did
-// not follow. ASSUMES, all checkable against the files named:
+// not follow. ASSUMES `site/src/data/rink.json` at sha256-12 f789ee35b8d9, and
+// the glyph branches of site/scripts/lib/rink.mjs:
 //   boards       y = +/-42.5, x = +/-100        rink.json sheet 200 x 85
-//   corner arc   radius 28, centres (+/-72, +/-14.5) = (100 - 28, 42.5 - 28)
-//   opposition   triangle, apex at cy + 3.6, base at cy - 1.8, half-width 3.118,
-//                stroke 0.8                                        (rink.mjs)
-// MITER: the apex is a 60-degree vertex and SVG joins miter, so it carries
-// (0.8 / 2) / sin 30 = 0.8 ft of ink BEYOND itself. The apex is at cy + 4.4 in
-// ink, not cy + 3.6. Under-counting exactly this is what put the old (85, 36)
-// through the boards: its apex ink reached (85, 40.40), which is 28.98 ft from
-// the arc centre against a 28 ft radius — 0.98 ft of a body drawn through the
-// dasher, in both of the frames that share this constant, and visible in both.
+//   corner arc   radius 28, centres (+/-72, +/-14.5) = (100 - 28, 42.5 - 28),
+//                drawn with a 0.6 stroke, so its INNER ink edge is r = 27.7
+//   OPP_CARRIER  pos 'F' -> a CIRCLE. r 2.9, stroke 0.75 -> 3.275 of ink;
+//                the white halo is a 1.95 stroke centred on r 2.9 -> 3.875.
+// ⚠️ THIS COMMENT PREVIOUSLY DERIVED THIS CLEARANCE FOR A TRIANGLE — "opposition
+// triangle, apex at cy + 3.6" — and then added 0.8 ft of MITER at the apex. Both
+// halves are wrong. Shape carries the POSITION here, not the team (see the header
+// of rink.mjs): OPP_CARRIER is `pos: 'F'`, so he is a circle and has no apex. And
+// the triangle branch joins ROUND, not miter, so even a real triangle would carry
+// 0.4 ft of ink beyond a vertex rather than 0.8 — rink.json's own `point` note
+// says so. The two errors happened to land near the right number, which is why
+// nothing caught them; the CONCLUSION below still holds, on different arithmetic.
 //
-// At (84, 34) the apex ink is (84, 38.40), 26.74 ft from the arc centre: it
-// clears by 1.26 ft, 0.96 ft of that white after the boards' own 0.6 stroke.
+// At (84, 34) the circle centre is 22.90 ft from the arc centre. Ink reaches
+// 26.17 and the halo 26.77, against an inner boards ink edge of 27.7: 1.53 ft of
+// white to the ink, 0.93 ft to the halo. The old (85, 36) was 25.12 out, so its
+// ink reached 28.40 and its halo 29.00 — 0.70 ft of a body, and 1.30 ft of white
+// ring, drawn THROUGH the dasher, in both frames that share this constant.
 // He is still the deepest player on the ice and still in the corner.
 //
 // WHY NOT FURTHER IN. (82, 34) — the named `corner:right`, where the other five
@@ -103,12 +110,32 @@ const OUR_G = { at: 'crease', dx: 1 };                       // (87, 0)
 // the gap is 9.43 ft — five inches clear of the 9 ft gate, and the thinnest
 // non-goaltender margin in the corpus — and the route is untouched.
 const OPP_CARRIER  = { at: 'corner:right', dx: 2 };          // (84, 34) in the corner
-// At his stick, below the base of his triangle. Held between three things at
-// once, which is why it is not on a round number: 0.70 ft clear of the
-// triangle's base ink, 0.94 ft clear of D_ON_PUCK's circle and 1.22 ft clear of
-// C_IN_CORNER's. It rode down with the carrier — the old (82, 32) sat 2.2 ft
-// under his old base, and left where it was it would have been inside his new one.
-const OPP_PUCK     = { at: 'corner:right', dx: -0.5, dy: -4 };  // (81.5, 30) at his stick
+// At his stick, up the wall from him, on the side away from the two of ours
+// closing on him. THE PUCK MARK IS THIS GUIDE'S OWN ADAPTATION — neither published
+// key has a single-puck symbol (rink.mjs records that) — so it is the one mark
+// that has to be unmistakable, and a 1.1 ft disc touching a 3.275 ft filled circle
+// is not a puck, it is a lobe on a glyph. THE RULE USED HERE, derived from the
+// renderer's constants rather than chosen: a puck must clear a glyph's INK by at
+// least 0.75 ft of white, i.e. >= 5.125 ft from a forward's centre (3.275 + 1.1 +
+// 0.75) and >= 2.25 ft from the nearest point of a triangle's path (0.4 + 1.1 +
+// 0.75). Sitting ON the white halo is fine and is in fact the best case: black on
+// white reads at any size.
+// ⚠️ (81.5, 30) FAILED THAT AND WAS RECORDED AS PASSING. The comment here claimed
+// "0.70 ft clear of the triangle's base ink, 0.94 ft clear of D_ON_PUCK's circle" —
+// both glyphs named as the other shape, and both figures wrong. Measured: it sat
+// 4.717 ft from the carrier, which is 0.34 ft of white against a 3.275 ft circle,
+// and it overlapped his halo. It was the tightest margin in the picture and the
+// comment warned a future editor off moving it on the strength of a figure twice
+// the truth.
+// (79, 36.5) was tried and RENDERED WRONG for a reason the arithmetic could not
+// show: it sits within a foot of the straight line between the carrier and
+// OPP_SUPPORT on the half-wall, so it read as a loose puck BETWEEN two opponents
+// rather than as one of them having it. (80.5, 38) is board-side of that line by
+// 3.5 ft, which is where a puck in a corner battle actually is, with the carrier
+// between it and the ice. Measures: 0.945 ft of white to OPP_CARRIER's ink,
+// 11.51 ft to OPP_SUPPORT, 10.06 ft to C_IN_CORNER, and 1.61 ft inside the
+// boards' inner ink edge.
+const OPP_PUCK     = { at: 'corner:right', dx: -1.5, dy: 4 };   // (80.5, 38) at his stick
 const OPP_NETFRONT = { at: 'slot', dy: -6 };                 // (76, -6) the doorstep threat
 const OPP_SUPPORT  = 'half-wall:right';                      // (69, 38.5) low support on the wall
 
@@ -141,7 +168,16 @@ const W_WEAK_PT    = { at: 'point:left', dx: 8 };            // (33, -20)
 // point *is* the section's 35 feet. Nothing here rounds or restates it.
 const WD_FROM      = 'point:right';                          // (25, 20) with the puck
 const WD_TO        = 'top-of-circle:right';                  // (54, 22) = 35 ft out
-const WD_PUCK      = { at: 'point:right', dx: 3, dy: -2 };   // (28, 18)
+// ⚠️ WAS (28, 18), WHICH IS 0.23 FT FROM THE BASE-RIGHT VERTEX OF THE CARRIER'S
+// OWN TRIANGLE — the disc was drawn essentially ON the corner of the glyph and
+// rendered as a bulge on it, in BOTH walk-down frames. Nothing mechanical looks at
+// the puck: check-arrivals reads routes, check_geometry reads named positions.
+// (28, 24.5) is 3.05 ft from the nearest point of that triangle's path, so 1.55 ft
+// of white after the 0.4 ink and the 1.1 disc, and 11.6 ft from WD_WINGER. It sits
+// above the carry rather than below it because the corridor below — between the
+// triangle and WD_WINGER at (33, 14) — is only about 3.2 ft wide and cannot hold
+// a puck with any margin at all.
+const WD_PUCK      = { at: 'point:right', dx: 3, dy: 4.5 };  // (28, 24.5)
 // Our strong-side winger starts goal-side of the man he is watching: the line
 // from (25, 20) to the net passes y = 17.5 at x = 33, so (33, 14) is inside it —
 // "between that defenceman and the net" (§base shape table).
@@ -184,7 +220,8 @@ const theHouse = {
     'region is drawn on the ice: its two narrow corners are the two goalposts on the goal ' +
     'line, it widens out to the two end-zone faceoff dots, and its far edge runs straight ' +
     'across between the tops of the two faceoff circles. The result is the shape of a ' +
-    'baseball home plate lying on its side, pointing at the net. No players are drawn.',
+    'baseball home plate lying on its side, pointing at the net. No skaters are drawn; ' +
+    'our goaltender is in the crease, which is how you know which net this is.',
 
   zones: [{ points: HOUSE, label: 'the house' }],
 
@@ -208,37 +245,61 @@ const collapseCorner = {
   half: true,
   width: 900,
 
+  // ⚠️ THE SAFETY UNIT IN THE MIDDLE OF THIS CAPTION IS NOT TRIMMABLE PROSE.
+  // This frame draws the second body arriving into a corner, and it fixes the
+  // target's facing: the puck disc is at his stick against the boards. §"The base
+  // shape" attaches TWO warnings to that picture and this caption used to carry
+  // only the second of them — the pin. The first is the one that ejects you:
+  // ":Never: Send the second body into a back — the player digging along your
+  // boards cannot see you"; and ":The second body is the one that arrives late and
+  // unseen, so it is the one this warning is for."
+  // WHY IT IS WORDED THE WAY IT IS. A caption is HEARD ONCE, so the floor comes
+  // first, the tiers are in words rather than numbers, and only one book is priced
+  // in a spoken unit — the four-book comparison and the rule numbers live in the
+  // body and the ```facts blocks, where a reader can stop and re-read. Verified in
+  // primary text: NHL 43.2 "There is no provision for a minor penalty for checking
+  // from behind" with 43.3 the major and 43.5 the mandatory game misconduct; IIHF
+  // 43.2 "there is no option to award a minor penalty" with 43.3 major plus an
+  // automatic game misconduct. "At two minutes alone" rather than "ejects you in
+  // every book" is deliberate and load-bearing: USA Hockey 608(a) writes "a minor
+  // plus a misconduct penalty", and a USA Hockey misconduct is ten minutes (404(a)),
+  // NOT an ejection. It is still never bare in any of the four.
+  // ⚠️ THIS CAPTION IS THE MODULE'S LONGEST AND THIS EDIT MADE IT LONGER (220 →
+  // 240 words). Room was bought by cutting the five-job enumeration of the base
+  // shape, which the picture's own labels carry, the section's table at "The base
+  // shape" carries, and its facts block carries — three tellings before the reader
+  // reaches the picture. What was NOT cut to buy room is either warning.
   caption:
-    'Low zone collapse — the house default assumed here, and one of ' +
-    'several a team might play — at the instant the puck goes into the strong-side corner. ' +
-    'The strong-side defenceman is on the puck; the weak-side defenceman is responsible for the ' +
-    'goalmouth ' +
-    'and does not get drawn to it; both wingers are still high on the points; and the centre ' +
-    'is leaving the high slot to go down as the second body into the corner battle, because ' +
-    'two on one wins it. ' +
-    'Two on one is about outnumbering the battle, not about joining a pin. ' +
-    'The centre going down leaves the high slot momentarily empty — the seam the puck comes ' +
-    'back through — ' +
-    'and the next diagram shows who fills it. ' +
-    'This is the first of two frames of a movement, not a shape to hold: under man-on-man or ' +
-    'a hybrid these same five players would be reading bodies rather than areas, so ask your ' +
-    'coach which system your team plays. ' +
-    '⚠️ Pin the puck, not ' +
-    'the player: that is a rule and not a nicety, because IIHF women’s Rule 101.1 does not ' +
-    'allow players competing for possession of the puck to use the boards to make contact with ' +
-    'an opponent to eliminate her from the play, push her into the boards, or pin her along ' +
-    'the boards.',
+    'Low zone collapse — the house default assumed here, one of several a team might play — ' +
+    'at the instant the puck goes into the strong-side corner. ' +
+    'Both wingers are still high on the points, and the centre is leaving the high slot to go ' +
+    'down as the second body into the corner battle, because two on one wins it. ' +
+    '⚠️ The second body is the one that arrives late and unseen, and this carrier has the puck ' +
+    'at his stick against the boards, with his back to the ice. ' +
+    'Arrive on the puck, or on the ice he wants, or angle him off it — never into his back. ' +
+    'No book prices a check from behind at two minutes alone: under the NHL and the IIHF there ' +
+    'is no minor for it at all, so the floor is a major and an ejection. ' +
+    '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
+    'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
+    'illegal hit. ' +
+    'The centre’s trip down empties the high slot — the seam the puck comes back through — ' +
+    'and this is frame one of two, not a shape to hold. ' +
+    'Under man-on-man or a hybrid these five would be reading bodies, not areas — ask your ' +
+    'coach which your team plays. ' +
+    'All four books are set out earlier in this document.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +
     'strong-side corner at the top of the picture. Five opposition players: the puck carrier ' +
-    'deep in the strong-side corner, a forward supporting on the strong-side half-wall, a ' +
+    'deep in the strong-side corner with the puck drawn at his stick against the boards, so he ' +
+    'is facing the wall with his back to the ice, a forward supporting on the strong-side half-wall, a ' +
     'forward at the net front on the weak side of the crease, and their two defencemen at ' +
     'the two points. Six of our own: the strong-side defenceman on the puck about eight feet ' +
     'goal-side of the carrier, the weak-side defenceman on the doorstep between the net-front ' +
     'forward and the goal, the goaltender in the crease, both wingers high and just goal-side ' +
     'of the opposing defencemen at the points, and the centre in the high slot. One route: ' +
-    'the centre skating from the high slot out to the corner to make it two on one.',
+    'the centre skating from the high slot out to the corner to make it two on one, finishing ' +
+    'inside the carrier and short of him rather than behind him.',
 
   players: [
     // Opposition. Three forwards low and two defencemen at the points, which is
@@ -310,7 +371,9 @@ const collapseHighSlot = {
   caption:
     'The same low zone collapse a beat later — the weak-side winger’s collapse, which is ' +
     'where this system succeeds or fails. ' +
-    'The centre is now the second body in the corner battle and the weak-side winger has ' +
+    'The centre is now the second body in the corner battle — arriving inside the carrier and ' +
+    'not behind him, because that carrier is facing the boards and cannot see him coming — ' +
+    'and the weak-side winger has ' +
     'dropped off his point into the high slot to fill it; the strong-side winger holds his ' +
     'point, because if both wingers sag the point-to-point pass across the top gives their ' +
     'defenceman a free walk-in. ' +
@@ -327,8 +390,10 @@ const collapseHighSlot = {
     'previous diagram one beat later. The opposition are unchanged: the puck carrier deep in ' +
     'the strong-side corner, a forward on the strong-side half-wall, a forward at the net ' +
     'front, and two defencemen at the points. Two of our own players have moved. The centre ' +
-    'is now in the strong-side corner alongside the strong-side defenceman, making it two on ' +
-    'one against the carrier, and the weak-side winger has come down from the weak-side point ' +
+    'has arrived on the inside edge of the strong-side corner, about nine feet from the carrier ' +
+    'and about the same from the strong-side defenceman, so the carrier now has one of ours ' +
+    'below him and one inside him — that is the two on one. The weak-side winger has come ' +
+    'down from the weak-side point ' +
     'into the high slot in the middle of the ice. The strong-side winger is still high at his ' +
     'own point, and the weak-side defenceman is still on the doorstep. The opposition ' +
     'defenceman at the weak-side point now has nobody near him. No routes are drawn.',
@@ -454,8 +519,9 @@ const walkDownMan = {
     'The attacking half of the rink, the defended net at the right, and the same walk-down as ' +
     'the previous diagram. The opposition defenceman carries the puck from the strong-side ' +
     'point down to the top of the strong-side faceoff circle. This time our strong-side ' +
-    'winger tracks him the whole way, his route running parallel and a few feet goal-side of ' +
-    'the carry and finishing level with it. Our other four are each within a few feet of an ' +
+    'winger tracks him the whole way, his route running a few feet goal-side of the carry and ' +
+    'finishing just past it, so he ends between his man and the net. Our other four are each ' +
+    'within a few feet of an ' +
     'opponent rather than in an area: one defenceman on the forward in the strong-side ' +
     'corner, the other on the forward at the net front, the centre on the forward on the ' +
     'weak-side half-wall, and the weak-side winger on the opposition defenceman at the far ' +
@@ -519,8 +585,25 @@ const walkDownMan = {
 // position and not a claim, so the caption says the width is not fixed.
 const BOX_HIGH_R = { at: 'top-of-circle:right', dy: -9 };    // (54, 13)
 const BOX_HIGH_L = { at: 'top-of-circle:left',  dy: 9 };     // (54, -13)
-const BOX_LOW_R = { at: 'goalmouth', dx: -3, dy: 7 };        // (82, 7)  near the post
-const BOX_LOW_L = { at: 'goalmouth', dx: -3, dy: -7 };       // (82, -7)
+// ⚠️ THE LOW PAIR IS SET BY THE COLLAPSING BOX, NOT BY THIS DIAGRAM. It is shared,
+// because the collapsing box IS this box collapsed, and `dz-collapsing-box` draws
+// the house around these two and captions them "all five inside the house". At the
+// old (82, +/-7) the ANCHOR was 1.92 ft inside the house's goalpost-to-dot edge and
+// the drawn TRIANGLE was not: its apex vertex fell 0.69 ft OUTSIDE that edge, so
+// 1.09 ft of black ink and 2.09 ft of white halo were drawn past the boundary, on
+// both, and the halo cut a gap in the dashed line at exactly the place the caption
+// invites the reader to check. The module comment said "Every one of our five is
+// inside the polygon"; that was true of the five anchors and false of the ink.
+// The edge from the goalpost (89, 3) to the dot (69, 22) is 19x + 20y = 1751, and
+// the support point of this triangle in that edge's normal is the apex, 2.61 ft out
+// perpendicular. So a triangle centre clears with ink at 19x + 20y <= 1668 and with
+// halo at <= 1651.4. (80, 6) gives 1640: 1.01 ft of ink clearance and 0.41 ft of
+// halo clearance. Its base-right vertex (83.118, 4.2) also stays 1.60 ft clear of
+// the crease arc, which the goalmouth datum's own $comment in rink.json warns about.
+// Cost, stated: 9.49 ft from the post rather than 8.06, and a box 12 ft wide at the
+// bottom rather than 14. The section says only "near the posts" and fixes no width.
+const BOX_LOW_R = { at: 'goalmouth', dx: -5, dy: 6 };        // (80, 6)  near the post
+const BOX_LOW_L = { at: 'goalmouth', dx: -5, dy: -6 };       // (80, -6)
 
 const boxPlusOne = {
   id: 'dz-box-plus-one',
@@ -529,9 +612,11 @@ const boxPlusOne = {
   width: 900,
 
   caption:
-    'Box+1 — the standard introductory defensive-zone structure for young players and ' +
-    'beginner adults, and one of several systems rather than how defensive hockey is ' +
-    'generally played. ' +
+    'Box+1, one of several defensive-zone systems rather than how defensive hockey is ' +
+    'generally played — coaching material describes it as the standard introductory ' +
+    'structure for young players and beginner adults, and nobody publishes a count of ' +
+    'what teams actually run, so take that as coaching consensus rather than a measured ' +
+    'fact. ' +
     'Four players form a box around the slot, two low near the posts and two at the tops of ' +
     'the circles about 29 feet below the blue line, and the fifth — the "+1" — is the only one ' +
     'who chases the puck. ' +
@@ -582,7 +667,15 @@ const boxPlusOne = {
     { id: '+1', pos: 'F', at: { at: 'corner:right', dy: -8 }, label: 'the only one chasing' },
   ],
 
-  puck: { at: 'corner:right', dx: -2, dy: -3 },
+  // ⚠️ WAS (80, 31): 3.606 ft from the carrier's centre against 3.275 ft of ink,
+  // so the disc overlapped the FILLED circle and read as a lobe on the glyph.
+  // (76.5, 35) was tried and COLLIDED WITH THE "puck carrier" LABEL, which
+  // `placeLabels` had already put in that space — it does not know about the puck,
+  // and the rendered text read "puck carrie" with the disc where the r should be.
+  // (78, 30) is 5.657 ft from both the carrier and the chaser at (82, 26) — 1.28 ft
+  // of white to each — clear of every label, and outside the box, which is the
+  // whole point of the +1.
+  puck: { at: 'corner:right', dx: -4, dy: -4 },
 };
 
 // ---------------------------------------------------------------------------
@@ -590,7 +683,10 @@ const boxPlusOne = {
 // ---------------------------------------------------------------------------
 // The house is redrawn here on purpose: "all five of you are inside the house"
 // is a claim about a region, and a reader cannot check it against a region that
-// is not on the picture. Every one of our five is inside the polygon.
+// is not on the picture. ⚠️ SO THE TEST IS INK, NOT ANCHORS. Every one of our five
+// is inside the polygon *as drawn* — outline and white halo both — and the working
+// is on BOX_LOW_R and on the two flank forwards below. The anchors were inside all
+// along; two of the glyphs were not, and this comment used to certify the anchors.
 
 const collapsingBox = {
   id: 'dz-collapsing-box',
@@ -613,11 +709,13 @@ const collapsingBox = {
   describe:
     'The attacking half of the rink, the defended net at the right, with the shaded house ' +
     'region drawn on the ice. All five of our players stand inside it: two defencemen low, ' +
-    'one either side of the crease near the posts, and three forwards above them, one in the ' +
-    'high slot and one either side of the low slot. Our goaltender is in the crease. The ' +
-    'opposition have the puck carrier behind the net, a forward in the strong-side corner, a ' +
-    'forward on the weak-side half-wall, and both defencemen at the points, all four of them ' +
-    'outside the shaded region with nobody within twenty feet. No routes are drawn.',
+    'one either side of the crease and about nine feet off the posts, and three forwards ' +
+    'above them, one in the high slot and one either side of the slot. Our goaltender is in ' +
+    'the crease. The opposition have the puck carrier behind the net, a forward in the ' +
+    'strong-side corner, a forward on the weak-side half-wall, and both defencemen at the ' +
+    'points — all five of them outside the shaded region. Only the carrier behind the net is ' +
+    'near anybody, about fourteen feet from our low defenceman; the other four have nobody ' +
+    'within twenty feet. No routes are drawn.',
 
   // The house is drawn but NOT labelled here. A zone label is written at the
   // polygon's centroid with no collision avoidance, and the centroid of the house
@@ -637,8 +735,14 @@ const collapsingBox = {
     { id: 'G', pos: 'G', at: OUR_G },
     { id: 'D', pos: 'D', at: BOX_LOW_R },
     { id: 'D', pos: 'D', at: BOX_LOW_L },
-    { id: 'F', pos: 'F', at: { at: 'slot', dx: -3, dy: 9 } },
-    { id: 'F', pos: 'F', at: { at: 'slot', dx: -3, dy: -9 } },
+    // (74, +/-10), not (76, +/-9). A circle's halo reaches 3.875, so the forward
+    // constraint against the same edge is 19x + 20y <= 1644.1; (76, 9) gave 1624
+    // and passed on its own. It failed against the LOW PAIR once they came inside
+    // the house: at (80, 6) the triangle's path runs 3.16 ft from (76, 9), and two
+    // glyphs need 3.675 ft of it before their ink touches. (74, 10) gives 5.39 —
+    // 1.72 ft of white — and 1606 against the edge, so 1.38 ft of halo clearance.
+    { id: 'F', pos: 'F', at: { at: 'slot', dx: -2, dy: 10 } },
+    { id: 'F', pos: 'F', at: { at: 'slot', dx: -2, dy: -10 } },
     { id: 'F', pos: 'F', at: 'high-slot', label: 'all five inside the house' },
   ],
 
@@ -670,9 +774,10 @@ const overload = {
     'It dies to one hard, accurate cross-ice pass, drawn here as the dashed route, because ' +
     'the whole weak side is unoccupied by design — the attacker at the far post has nobody ' +
     'near him. ' +
-    'Some teams use this as their base system and more use it as a situational squeeze when ' +
-    'they need the puck back, so it is a coaching choice like every other defensive-zone ' +
-    'system: find out whether yours plays it, and when.',
+    'Some teams use this as their base system and others as a situational squeeze when they ' +
+    'need the puck back; nobody publishes a count of what teams actually run, so neither of ' +
+    'those two uses is offered here as the commoner one. It is a coaching choice like every ' +
+    'other defensive-zone system: find out whether yours plays it, and when.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. The opposition puck ' +
@@ -694,7 +799,17 @@ const overload = {
     { id: 'D', team: 'opp', pos: 'D', at: 'point:left' },
 
     { id: 'G', pos: 'G', at: OUR_G },
-    { id: 'D', pos: 'D', at: { at: 'half-wall:right', dx: 8, dy: -5 } },
+    // ⚠️ WAS (77, 33.5), WHICH IS INSIDE THE OPPOSITION FORWARD AT `corner:right`.
+    // The nearest point of this triangle's path came 2.78 ft from that circle's
+    // centre; the circle's ink alone is 3.275, so about 0.9 ft of two bodies were
+    // drawn through each other and the halo took it to 2.1. A picture may not show
+    // a defender standing inside an opponent, whatever the caption says.
+    // (76, 30.5) is 5.16 ft from that forward's glyph — 1.49 ft of white — and
+    // 8.27 ft goal-side and inside of the carrier on the half-wall, which is the
+    // "squeezing the carrier from below" the `describe` names: between him and the
+    // net, not out on the wall beside his support. It also keeps 2.08 ft off the
+    // cross-ice pass line, which the old position had 3.36 ft of.
+    { id: 'D', pos: 'D', at: { at: 'half-wall:right', dx: 7, dy: -8 } },
     { id: 'D', pos: 'D', at: { at: 'goalmouth', dx: -3, dy: 7 } },
     { id: 'C', pos: 'F', at: { at: 'faceoff-dot:right', dx: -4, dy: 2 } },
     { id: 'W', pos: 'F', at: { at: 'top-of-circle:right', dx: 2, dy: 8 } },
@@ -706,11 +821,15 @@ const overload = {
     // Crosses y = 0 at about x = 76 — in front of the slot, not through the
     // crease or across the goal mouth — and stops about six feet short of the
     // far-post attacker rather than on his glyph.
-    { from: { at: 'half-wall:right', dx: 1, dy: -4 }, to: { at: 'slot', dx: 1, dy: -6 },
+    { from: { at: 'half-wall:right', dx: 1, dy: -5.5 }, to: { at: 'slot', dx: 1, dy: -6 },
       kind: 'pass' },
   ],
 
-  puck: { at: 'half-wall:right', dx: 1, dy: -4 },
+  // ⚠️ WAS (70, 34.5), 4.12 ft from the carrier's centre — 0.25 ft INSIDE his ink,
+  // so the disc rendered as a bump welded to the bottom of his circle. The pass
+  // starts on the puck and moves with it. (70, 33) is 5.59 ft out: 1.215 ft of
+  // white to his ink, and 3.77 ft to the nearest point of our own D's triangle.
+  puck: { at: 'half-wall:right', dx: 1, dy: -5.5 },
 };
 
 export default [

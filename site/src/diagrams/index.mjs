@@ -23,37 +23,49 @@
 
 import notation from './notation.mjs';
 import rulesprimer from './rules_primer.mjs';
+import bodycontactandbattles from './body_contact_and_battles.mjs';
 import breakouts from './breakouts.mjs';
 import defendingtherush from './defending_the_rush.mjs';
 import defensivezonecoverage from './defensive_zone_coverage.mjs';
 import faceoffs from './faceoffs.mjs';
 import forecheckingsystems from './forechecking_systems.mjs';
+import gamemanagement from './game_management.mjs';
 import goaltender from './goaltender.mjs';
 import neutralzonesystems from './neutral_zone_systems.mjs';
 import offensivezoneplay from './offensive_zone_play.mjs';
+import passingandreceiving from './passing_and_receiving.mjs';
 import playingwithoutthepuck from './playing_without_the_puck.mjs';
 import positions from './positions.mjs';
 import pucksupportandspacing from './puck_support_and_spacing.mjs';
 import rinkmapandglossary from './rink_map_and_glossary.mjs';
+import scanningandanticipation from './scanning_and_anticipation.mjs';
+import shooting from './shooting.mjs';
 import specialteams from './special_teams.mjs';
+import timeandspace from './time_and_space.mjs';
 import zoneentries from './zone_entries.mjs';
 
 export const DIAGRAMS = [
   ...notation,
   ...rulesprimer,
+  ...bodycontactandbattles,
   ...breakouts,
   ...defendingtherush,
   ...defensivezonecoverage,
   ...faceoffs,
   ...forecheckingsystems,
+  ...gamemanagement,
   ...goaltender,
   ...neutralzonesystems,
   ...offensivezoneplay,
+  ...passingandreceiving,
   ...playingwithoutthepuck,
   ...positions,
   ...pucksupportandspacing,
   ...rinkmapandglossary,
+  ...scanningandanticipation,
+  ...shooting,
   ...specialteams,
+  ...timeandspace,
   ...zoneentries,
 ];
 
