@@ -427,11 +427,13 @@ What the free hand and the arm bar may legally do is widely misunderstood and wo
 
 **What that means for you, in one line: the free hand may fend off an opponent or their stick, and may never hold either.** The legal moves and the penalised versions of them, side by side:
 
-| Legal | Penalty |
-|---|---|
-| Free hand up on your **own** shaft, using the stick and forearm as a bar | Grabbing, tugging or pulling the opponent or their stick — **holding**, a two-minute minor |
-| A stiff arm across as a **block**, when you have body position — **NHL and IIHF 54.2 and Hockey Canada 8.1 only; not USA Hockey** | Hooking your arm around them, or clamping onto their stick |
-| Momentarily **fending off** an opponent's stick with the free hand — **NHL and IIHF 56.1, and Hockey Canada 8.1, which permits blocking a stick with the hands; USA Hockey's Casebook permission covers the opponent, not their stick** | Hanging onto the stick after fending it off |
+| The move | Legal | Penalty |
+|---|---|---|
+| **The free hand on your own stick** | Free hand up on your **own** shaft, using the stick and forearm as a bar | Grabbing, tugging or pulling the opponent or their stick — **holding**, a two-minute minor |
+| **The stiff arm as a block** | A stiff arm across as a **block**, when you have body position — **NHL and IIHF 54.2 and Hockey Canada 8.1 only; not USA Hockey** | Hooking your arm around them, or clamping onto their stick |
+| **Fending off their stick** | Momentarily fending it off with the free hand — **NHL and IIHF 56.1, and Hockey Canada 8.1**, which permits blocking a stick with the hands | Hanging onto the stick after fending it off |
+
+⚠️ **Fending off an opponent's stick is permitted by the NHL, the IIHF and Hockey Canada, and USA Hockey's version of that permission is narrower.** USA Hockey writes no fend-off permission in Rule 622 at all — its permission is in the separate *Casebook*, on conditions, and it covers **the opponent, not their stick**: Rule 622 still names a free hand used to clutch, grab or hold an opponent's stick as holding. The conditions are set out in full below.
 
 The safest habit — and the one recommended here — is to keep the free hand **on your own stick**, high on the shaft, and use the resulting bar of forearm and shaft as your blocker. You get the same physical benefit with none of the officiating risk, and you keep two hands available to move the puck the instant the pressure releases.
 

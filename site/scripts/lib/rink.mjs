@@ -53,11 +53,18 @@ const py = (y) => -y;
  * defenceman's apex to 4.6 ft where the clearance was derived for 4.0.
  * Re-painting the stroke above the halos and below the glyph bodies costs one element
  * per diagram and restores the wall without weakening the separation.
- * ⚠️ The hash marks and the faceoff dots take the same damage and are NOT repaired here
- * — 13 hash marks go from partly visible to fully hidden, and the red centre dot is
- * pinched to a sliver in every faceoff diagram, in pictures whose captions teach off
- * both. The same remedy would fix them; it is recorded in OPEN_ITEMS as an owner call
- * because it means re-emitting marks the rink layer owns.
+ * ⚠️ The hash marks and the faceoff dots take the same damage from the GLYPH halos and
+ * are NOT repaired here — 13 hash marks go from partly visible to fully hidden, and the
+ * red centre dot is pinched to a sliver in every faceoff diagram, in pictures whose
+ * captions teach off both. The same remedy would fix them; it is recorded in OPEN_ITEMS
+ * as an owner call because it means re-emitting marks the rink layer owns.
+ *
+ * ⚠️ THAT LIST IS THIS ELEMENT'S SCOPE, NOT THE SCOPE OF THE DAMAGE. A second and much
+ * larger source of the same erasure was the halo behind the TEXT LABELS, and its
+ * casualties were not hash marks and dots but a goal line, a goal-crease outline, two
+ * faceoff circles and a shaded region's own dashed boundary. See `LABEL_HALO` below for
+ * the measurements, the fix, and — importantly — why this over-paint could never have
+ * been extended to cover it.
  */
 function boardsOutline() {
   const S = RINK.sheet;
@@ -78,6 +85,55 @@ const PALETTE = {
   away: '#c8102e',
   puck: '#1b1c1e',
 };
+
+/**
+ * The white halo behind a text label, as a FRACTION OF THAT LABEL'S FONT SIZE.
+ *
+ * Labels land on painted lines constantly — a count over the placer's own output found
+ * 79 of the 140 diagrams with at least one label overlapping the 1 ft blue or centre-red
+ * line — and grey text read straight over a blue band is not readable. So the text is
+ * stroked white beneath its fill (`paint-order="stroke"`).
+ *
+ * ⚠️ THE HALO MUST STAY NARROWER THAN THE GAPS BETWEEN THE LETTERS. Past that width the
+ * per-letter outlines merge into each other and the halo stops being an outline: it
+ * becomes a solid white rectangle the size of the whole word, and that rectangle erases
+ * every rink marking running behind it. This was a flat 0.9 ft — a 0.45 ft ring outward,
+ * against faceoff circles, goal lines and crease lines stroked at 0.3–0.35 — so it did
+ * not thin those lines, it removed them. A browser pass re-rendering each SVG with
+ * `stroke-width="0"` on the labels restored every missing line, which is what proved the
+ * cause rather than inferring it.
+ *
+ * What it was costing, at 1400 px: `net-front-walk-out-direction` lost a stretch of goal
+ * line, the top of a faceoff circle and its hash marks; `icing-gaining-the-line` had the
+ * centre-ice circle severed at the top AND the bottom, in the one diagram whose whole
+ * subject is where the puck crosses a line; and `the-privileged-area` — a picture of a
+ * region BOUNDED BY the goal line and the crease — cut the goal line, the crease outline,
+ * and the dashed boundary of the region it exists to draw.
+ *
+ * ⚠️ The over-paint trick that saves the boards (`boardsOutline`, above) CANNOT be
+ * extended to fix this, and the tempting one-line version of the fix is therefore wrong.
+ * That element is emitted inside the glyph layer — above the player halos, below the
+ * glyph bodies — but labels are placed AFTER the entire glyph layer, so an over-paint
+ * that reached them would have to be painted on top of the text. Repainting a goal line
+ * across a label is not a repair; it is the same defect facing the other way.
+ *
+ * A fraction rather than a constant because half-sheet diagrams draw labels at 2.8 ft and
+ * full-sheet ones at 1.7x that: a flat width that hugs the letters at one scale floods
+ * them at the other, which is how a single number came to be wrong everywhere. At 0.12
+ * the ring is ~0.17 ft outward on a half-sheet label — comfortably inside the letter gaps
+ * — and in a rendered check every line named above ran unbroken behind its text while the
+ * labels stayed legible, including the ones sitting on the 1 ft blue line.
+ *
+ * ⚠️ Do not raise this to "make the labels pop". The halo's job is to separate a letter
+ * from what is immediately behind it, not to clear a box for the word. The sweep that set
+ * this value rendered one half-sheet label — "holds the line", sitting on the blue line in
+ * `forecheck-212` — at 0, 0.28, 0.35, 0.45, 0.6 and 0.9 ft, and counted the scanlines of
+ * that 75 px stretch of blue line on which any blue survived: 75, 74, 74, 73, 70, 64. The
+ * damage is not linear in the width, it accelerates once the outlines start touching —
+ * and at the value this file shipped with, an 11 px hole. Nothing mechanical checks any
+ * of that, and every one of those six pictures looks deliberate.
+ */
+const LABEL_HALO = 0.12;
 
 /** Resolve a named position, optionally mirrored. `half-wall:right`, `corner:left:far`. */
 export function resolve(name) {
@@ -388,7 +444,8 @@ function placeLabels(entries, opts = {}) {
     return (
       marker + leader +
       `<text x="${put.x.toFixed(2)}" y="${py(put.y).toFixed(2)}" font-size="${size}" text-anchor="middle" ` +
-      `fill="${PALETTE.label}" paint-order="stroke" stroke="#fff" stroke-width="0.9">${e.text}</text>`
+      `fill="${PALETTE.label}" paint-order="stroke" stroke="#fff" ` +
+      `stroke-width="${(size * LABEL_HALO).toFixed(2)}">${e.text}</text>`
     );
   });
 }
@@ -1315,7 +1372,8 @@ export function playSvg(spec, opts = {}) {
           zoneReserve.push({ x: c.x, y: c.y, w: z.label.length * zs * 0.56, h: zs * 1.4 });
           return `<text x="${c.x.toFixed(2)}" y="${py(c.y).toFixed(2)}" font-size="${zs.toFixed(2)}" ` +
                  `text-anchor="middle" fill="${P.home}" font-weight="700" ` +
-                 `paint-order="stroke" stroke="#fff" stroke-width="1.1">${esc(z.label)}</text>`;
+                 `paint-order="stroke" stroke="#fff" ` +
+                 `stroke-width="${(zs * LABEL_HALO).toFixed(2)}">${esc(z.label)}</text>`;
         })()
       : '';
     // `danger: true` paints the region as a warning rather than a target. One fill

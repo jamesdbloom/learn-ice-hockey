@@ -35,12 +35,12 @@ Public tracking work has actually put numbers on the upside of different puck de
 
 **Expected goals (xG)** is a model estimate of how likely a given shot is to become a goal, based mostly on where it was taken from and under what circumstances. An xG of 0.10 means "shots like this go in about one time in ten."
 
-| Play | Leads to a shot attempt | Average xG of those sequences | Value of the play |
-|---|---|---|---|
-| Successful **high-danger pass** (a pass into the middle of the offensive zone) | 87% | 0.129 | ≈ **0.112 xG** |
-| Successful **controlled zone entry** (carrying or passing the puck over their blue line) | 60% | 0.067 | ≈ **0.040 xG** |
-| Successful **carry-out** of your own zone | 37% | 0.064 | ≈ **0.024 xG** |
-| **Failed dump-out** of your own zone | 4% | 0.076 | ≈ **0.003 xG** |
+| Play | Value of the play | How that value is built |
+|---|---|---|
+| Successful **high-danger pass** (a pass into the middle of the offensive zone) | ≈ **0.112 xG** | Leads to a shot attempt 87% of the time, and those sequences average 0.129 xG |
+| Successful **controlled zone entry** (carrying or passing the puck over their blue line) | ≈ **0.040 xG** | Leads to a shot attempt 60% of the time, and those sequences average 0.067 xG |
+| Successful **carry-out** of your own zone | ≈ **0.024 xG** | Leads to a shot attempt 37% of the time, and those sequences average 0.064 xG |
+| **Failed dump-out** of your own zone | ≈ **0.003 xG** | Leads to a shot attempt 4% of the time, and those sequences average 0.076 xG |
 
 Three things to take from that table:
 
@@ -97,11 +97,16 @@ Every area of the ice can be graded by one question: **if I lose the puck here, 
 
 | Where you are | Risk of a turnover | Why |
 |---|---|---|
-| **Your own slot** | **Catastrophic** | A turnover here is not a chance against, it is very nearly a goal against. The opponent gets the puck where the counted scoring concentrates more heavily than anywhere else on the ice — the vocabulary section above says what has actually been measured — with your goalie unset and your defenders facing the wrong way. Zero seconds of recovery time. |
-| **Your own zone generally** | **High** | Everyone on your team is already home, which helps, but the puck is 30–50 feet from your net and one pass from the slot. The margin for error is a stick length. |
-| **Middle of the neutral zone** | **High** | Counter-intuitive, and the reason it surprises people: a turnover at centre ice catches two or three of your players skating the wrong way at full speed. **Coaching material puts the making of odd-man rushes here — consensus rather than a tracked figure.** Your own zone is dangerous but organised; centre ice is dangerous *and* disorganised. |
-| **The offensive blue line** | **Moderate** | A turnover here does not threaten your net immediately, but it starts a rush the other way against a defence that has been supporting the attack. Cost scales with how many of your players are ahead of the puck. |
-| **The offensive corners and below their goal line** | **Low** | You are 150-plus feet from your own net with all five teammates between the puck and danger. The opponent needs a clean breakout, a neutral-zone crossing and an entry before they threaten anything. **This is where you should be at your most creative.** |
+| **In your own slot** | **Catastrophic** | Not a chance against — very nearly a goal against. They get the puck where the counted scoring concentrates most heavily, goalie unset, defenders facing the wrong way. No recovery time. |
+| **In your own zone generally** | **High** | Everyone on your team is already home, which helps, but the puck is 30–50 feet from your net and one pass from the slot. The margin for error is a stick length. |
+| **In the middle of the neutral zone** | **High** | Counter-intuitive: a turnover here catches two or three of your players going the wrong way at speed. Your own zone is dangerous but organised; this is dangerous *and* disorganised. |
+| **At the offensive blue line** | **Moderate** | A turnover here does not threaten your net at once, but starts a rush against a defence that was supporting the attack. Cost scales with how many players are ahead of the puck. |
+| **In their corners and below their goal line** | **Low** | You are 150-plus feet from your net, all five teammates between puck and danger. They need a breakout, a neutral-zone crossing and an entry to threaten. **Be at your most creative.** |
+
+**Two of those rows carry a qualification the row itself is too short to hold.**
+
+- **The slot row rests on a measurement, and the vocabulary section above is where its limits are set out.** What has actually been counted there is a *share of goals* rather than a conversion rate for that ice — one of the two figures on Sportlogiq tracking of three seasons at five-on-five that is not public and cannot be re-derived, the other computed from the NHL play-by-play feed. Nothing cited in this document ranks the slot's conversion rate against every other area of the ice.
+- **The centre-ice row rests on coaching material, not on a count.** Coaching material puts the making of odd-man rushes here, which is consensus rather than a tracked figure; nothing published classifies odd-man rushes by the play that created them.
 
 > **Honest caveat: that ordering is coaching consensus, not measurement.** The five grades are reasoned from the shot-danger evidence above and from how long a turnover takes to become a shot on your net. No study ranking turnovers by where on the ice they happen was found for this document — read that as "none found here", not as proof that none exists. Take the order of the rows rather than the labels on them.
 
@@ -452,16 +457,23 @@ The correct risk level is not a fixed personality trait. **It moves with the sco
 
 | Situation | Adjust risk | What actually changes |
 |---|---|---|
-| **Leading by one, third period** | **Down** | The value of a goal for is now lower than the cost of a goal against, because a goal against gives them the game back and a goal for only extends a lead you already have. Take options 4–6 in the defensive-zone hierarchy earlier than usual. |
+| **Leading by one, third period** | **Down** | A goal against gives them the game back; a goal for only extends a lead you already have. Reach for options 4–6 in the defensive-zone hierarchy earlier than usual. |
 | **Leading by three** | **Down hard** | Nothing you can do with a creative play is worth what a comeback would cost. Manage the puck, forecheck, get changes. |
-| **Trailing late** | **Up** | The arithmetic inverts. A goal against when you are down two costs you almost nothing; a goal for is worth everything. Pinch, activate, force the entry, take the low-percentage pass. **A player who does not raise their risk when trailing is not being safe, they are being unhelpful.** |
+| **Trailing late** | **Up** | The arithmetic inverts. A goal against when you are down two costs you almost nothing; a goal for is worth everything. Pinch, activate, force the entry, take the low-percentage pass. |
 | **Tied, early** | **Neutral** | Play the hierarchies straight. |
-| **Shorthanded** | **Down, with one exception** | You are outnumbered, so a turnover in your own end is worse than usual. Clear it and clear it hard. The exception: a genuine 2-on-1 the other way while shorthanded is one of the highest-value plays in hockey, and a shorthanded goal is worth chasing when you actually read one — see the anticipation-vs-gambling test below. |
-| **On the power play** | **Up in their zone, down at the blue line** | You can afford creativity inside the offensive zone. You cannot afford a turnover at the offensive blue line, because a shorthanded rush against four attackers is the worst-value event on a power play. |
-| **Overtime (NHL regular season)** | **Situation-dependent, high stakes** | NHL regular-season overtime under **Rule 84.1** is five minutes of **3-on-3**, sudden death. With that much space, *every* turnover is an odd-man rush and there is no next shift to fix it. The convention is to be patient, regroup rather than force an entry, and only attack with numbers. **Playoff overtime (Rule 84.5) is different** — full 20-minute periods at 5-on-5, sudden death, so it is regulation hockey with the cost of a mistake set to maximum. |
+| **Shorthanded** | **Down, with one exception** | You are outnumbered, so a turnover in your own end is worse than usual. Clear it and clear it hard. The exception is a genuine 2-on-1 the other way. |
+| **On the power play** | **Up in their zone, down at the blue line** | You can afford creativity inside their zone. You cannot afford a turnover at the offensive blue line: a shorthanded rush against four attackers is the worst-value event on a power play. |
+| **Overtime (NHL regular season)** | **Situation-dependent, high stakes** | Five minutes of **3-on-3**, sudden death (**NHL Rule 84.1**). Every turnover in that much space is an odd-man rush, and there is no next shift to fix it. |
 | **Last minute of a period** | **Down** | See the "almost always right" list. Give them nothing to walk off with. |
 | **Empty net, you are trailing** | **Up to the maximum** | There is no such thing as too risky. The only bad decision is a slow one. |
-| **Empty net, you are leading** | **Down to the minimum, but shoot it** | Under **NHL Rules 25.1 and 57.4**, and **IIHF Rule 25.3**, if you have possession in the neutral or attacking zone with no defender between you and the empty net and you are fouled, the goal is simply *awarded* — not a penalty shot. ⚠️ **USA Hockey 616(b) and Hockey Canada 4.12(a) keep the from-behind test there**, so under those two books a skater fouling you from the front is not an awarded goal. Take the shot. |
+| **Empty net, you are leading** | **Down to the minimum, but shoot it** | Take the shot rather than hunting for a better play. **A foul on you here can be an awarded goal rather than a penalty shot, and which one depends on your rulebook.** See below. |
+
+**Four of those rows carry more than a row can hold.**
+
+- **Trailing late.** A player who does not raise their risk when trailing is not being safe, they are being unhelpful.
+- **Shorthanded.** A genuine 2-on-1 the other way while shorthanded is one of the highest-value plays in hockey, and a shorthanded goal is worth chasing when you have actually *read* it — which is the anticipation-versus-gambling test in the next section, not a licence to leave early.
+- **Overtime.** In the 3-on-3 the convention is to be patient, regroup rather than force an entry, and attack only with numbers — a convention rather than anything in the book. And **playoff overtime is a different game**, written at **NHL Rule 84.5**: full 20-minute periods at 5-on-5, sudden death. That is regulation hockey with the cost of a mistake set to maximum.
+- **Empty net, you are leading.** Under **NHL Rules 25.1 and 57.4**, and **IIHF Rule 25.3**, if you have possession in the neutral or attacking zone with no defender between you and the empty net and you are fouled, the goal is simply *awarded* — not a penalty shot. ⚠️ **USA Hockey 616(b) and Hockey Canada 4.12(a) keep the from-behind test there**, so under those two books a skater fouling you from the front is not an awarded goal.
 
 ---
 

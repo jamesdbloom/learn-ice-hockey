@@ -507,7 +507,380 @@ so one-word titles read as fragments and it is **not a link** · ⚠️ **`globa
 `forecheck-pinch` at 2,386 chars as the longest caption; `the-call-and-who-can-see-it` is now 3,744 —
 57% longer — and renders 1,923 px tall at 320 px.**
 
-### ⚠️ OPEN — IIHF 101.1 IS VOICED NARROWER THAN THE BOOK, IN AT LEAST TWO MODULES
+### ⚠️⚠️ OPEN — THE 11-VALUE CAP HAS NOW BLOCKED A SAFETY PROPAGATION TWICE IN TWO ROUNDS
+
+**This is a structural finding about the checkers, not about any document.**
+
+`check_facts.py:71` sets `HARD_MAX = 11` values per ` ```facts ` block. ⚠️ **The cap exists so a spoken
+value is understandable heard alone. The SIDE EFFECT is that safety content cannot be added to a full
+block, and a full block is exactly where a dense, hazardous section ends up.**
+
+**Instance 1 — the IIHF 101.1 half-rule.** ⚠️ ***"Three of the four blocks are at `HARD_MAX = 11`, so
+'split rather than trim' was STRUCTURALLY UNAVAILABLE… the caps leave no room, so an editor trims, and the
+limb is what gets trimmed."*** **The repair had to pay for both limbs by removing fabricated quotation
+marks.**
+
+**Instance 2 — `forechecking_systems.md`.** ⚠️ **`forecheck-pinch`'s caption sends the reader down the wall
+at speed and carries NO receiving posture. The document's *"When to pinch"* block at `:496-508` is at
+11/11, so the limb cannot be added — and A CAPTION MAY NOT SAY MORE THAN ITS OWNING SECTION, so the caption
+is blocked too.** ⚠️ **A second block, `:572-584` *Off a dump-in*, is ALSO at 11/11.**
+
+**Two agents independently refused to work around it, and both were right:**
+- adding a body limb with no room in the block **manufactures the exact defect they were sent to fix**
+- adding it to the caption alone **puts a claim in the extraction layer its owning section does not make** —
+  *"an agent inventing corpus policy in a build source"*
+
+### ⚠️ OPEN — IIHF 101.1 VOICED WITHOUT ITS WOMEN'S-HOCKEY SCOPE, in the facts layer
+
+**Found by `commit-gate` on the second pass, 3 September 2026. Not blocking — the error runs in the SAFE
+direction — but it is in the layer that is voiced alone.**
+
+**`corner-escape-routes`'s caption reads *"IIHF Rule 101.1 allows two players to push and lean only while
+possession of the puck remains the sole object of both of them"* — with NO women's-hockey scope.** ⚠️ **The
+rule is headed *"ILLEGAL HIT IN WOMEN'S HOCKEY"* and opens *"In Women's Hockey…"*.**
+
+⚠️ **The caption matches its owner exactly, so the caption is not the defect — the OWNER is.**
+**`body_contact_and_battles.md:122` has the same shape in the ` ```facts ` layer, WHERE IT IS VOICED ALONE
+WITH A 300 MS BREAK EITHER SIDE AND THE SECTION HEADING THAT SCOPES IT IS NOT AUDIBLE.**
+
+**Same shape at `defender.md:697`, `center.md:646`, `center.md:716`, `playing_without_the_puck.md:181`.**
+**All pre-existing except the caption.** ⚠️ **This is the third distinct IIHF 101.1 scoping class this
+session — after the ten-site false prohibition and the possession-limb elision. Census the rule's SCOPE the
+way the limbs were censused.**
+
+### OPEN — two small figure imprecisions in `describe` text
+
+- **`angle-into-the-corner`'s describe says the puck is *"hard against the boards."* It is 2.19 ft off.**
+  **Defensible at plan-view scale** — ⚠️ **noted only because every other figure in these describes now
+  survives re-derivation, so this is the last one that does not.**
+- **`forechecking_systems.md` says the IIHF boards limb sits *"two sentences after the purpose test."*
+  It is three sentences and a two-item penalty list after.** **Pre-existing, carried through the split.**
+
+### OPEN — `your own half` is shaded at 81% of the region it names
+
+**`icing-gaining-the-line`, pre-existing.** Its own `describe` says *"**The whole of their own half**, from
+the centre red line back to the end boards, is lightly shaded."*
+
+⚠️ **Measured on the render: shaded half-height / board half-height = 0.824.** **The zone uses `dy: ±34`
+against boards at ±42.5 and stops at `goal-line::far, dx: -7` rather than the boards — missing an 8.5 ft
+strip along each side board and ~4 ft along the end boards. ~6,630 sq ft drawn against ~8,160 actual.**
+
+⚠️ **Why it matters beyond the arithmetic: the unshaded strip IS THE WALL, which is exactly where a
+dump-in comes from — and the red dashed trapezoid IS drawn out in that strip, so the picture implies the
+trapezoid lies OUTSIDE your own half.**
+
+**The inset was deliberate, for the rounded corners** — ⚠️ **but the boards are only rounded at the 28 ft
+corners, and an 8.5 ft inset down the full length is not needed to stay inside the dasher.** **Follow the
+board outline, or inset only at the corners.**
+
+### OPEN — full-sheet diagrams scroll inside their box at 960, 1248 and 1280 px
+
+**Confirmed at exactly the predicted widths, both themes, both pages:**
+
+| viewport | column | svg | overflow |
+|---|---|---|---|
+| 960 | 592 | 640 | **48 px** |
+| 1248 | 600 | 640 | **40 px** |
+| 1280 | 632 | 640 | **8 px** |
+
+**Cause: `global.css:2019` — `min-width: 640px` against a content column under 640 px between ~900 and
+~1290 px viewport.** ⚠️ **1280×800 is a very common laptop, and at 960 about 7.5% of the sheet width is
+hidden until the reader scrolls inside the box.**
+
+✅ **NONE of the five new diagrams is full-sheet, so all five render whole at every width.** **The page body
+never scrolls horizontally at any width — that invariant holds.** **Fix: `min-width: min(640px, 100%)`.**
+
+### OPEN — ten dead tab stops, and the equipment split made the desktop case worse
+
+⚠️ **`tabindex="0" role="region" aria-label="Table, scrollable horizontally"` is BAKED INTO THE STATIC HTML
+unconditionally — no JS anywhere in `dist/*.js` adjusts it.** **At 1440: 3 of 4 dead on `rules_primer`,
+3 of 3 on `body_contact_and_battles`, 4 of 4 on `equipment`.**
+
+⚠️ **Answering the question directly: the kit-table split made it WORSE ON DESKTOP** — three containers
+where there was one, so three dead stops instead of one — **and BETTER AT MOBILE**, where each 3-column
+table now overflows by only 37–39 px instead of one wide table. **At 320 px, 0 of 3 are dead.**
+
+### OPEN — `analytics.js` ships in `dist/` and is precached by the service worker
+
+**A Google Analytics 4 bootstrap.** ⚠️ **No HTML page references it, and it self-disables without a
+`meta[name="ga-measurement-id"]` which no page carries — so it never fires, and the browser pass measured
+ZERO off-origin requests.** **But it is in the deploy artefact and in `sw.js`'s precache list, which sits
+oddly against "this site sends nothing to third parties".** **Decide whether it should ship.**
+
+### ⚠️⚠️ METHOD — A CAPTION'S RAW LENGTH IS NOT ITS BILLED LENGTH, and every figure quoted this session was raw
+
+**Found 3 September 2026 by the agent repairing `net-front-walk-out-direction`, against my own brief.**
+
+⚠️ **The renderer EXPANDS rule numbers into words before billing: `604(c)` → *"six hundred and four, clause
+c"*, `101.1` → *"one hundred and one point one"*, plus a `"Diagram. "` prefix.**
+
+| | raw JS | **billed** |
+|---|---|---|
+| `net-front-walk-out-direction` | 2,660 | **2,751** |
+
+⚠️ **I briefed *"2,660 against 2,800 — 140 of headroom."* The real headroom was 49.** ⚠️ **The unmodified fix
+would have left EIGHT characters.** **A rules-dense caption can carry 90+ chars of hidden expansion, and
+nothing warns you.**
+
+**Corpus scan, so the exposure is known rather than feared:** **six captions are already OVER 2,800 raw and
+therefore ALREADY SPLIT** — `the-privileged-area` 4,471 · `the-call-and-who-can-see-it` 3,832 ·
+`icing-the-race-and-the-dot` 3,615 · `the-risk-map` 3,179 · `forecheck-pinch` 2,998 · `oz-net-front-screen`
+2,837. ⚠️ **Exactly ONE sits in the 2,600–2,800 band where billed expansion can cross the cap silently, and
+it is the one just repaired. The exposure is contained.**
+
+### ✅ ALL SIX SPLIT CAPTIONS CHECKED — every boundary is safe
+
+**Nothing measures where a caption is cut. Checked by hand:**
+
+| caption | unit 1 ends on | verdict |
+|---|---|---|
+| `the-call-and-who-can-see-it` | the **prohibition** — *"never take that contact with your back to the boards, and never duck"* | ✓ |
+| `icing-the-race-and-the-dot` | a **restraint** — *"do not run yourself into the end boards for nothing"* | ✓ |
+| `the-privileged-area` | a description of what the region **is** | ✓ |
+| `the-risk-map` | a legibility caveat | ✓ |
+| `oz-net-front-screen` | a **disclosure** — *"this document has no count of how many are"* | ✓ |
+| `forecheck-pinch` | verified by its repairing agent — the receiving posture is **voiced alone** | ✓ |
+
+⚠️ **No permission ends a chunk with its limit opening the next.** **But this is luck, not design: nothing
+checks a caption's split points, and the six longest captions in the corpus were all written by authors who
+did not know they would be cut.** **Wanted: report a caption's BILLED length and its split boundaries.**
+
+### ⚠️ OPEN — USA HOCKEY 625(a)(4) DESCRIBES A PINCHING DEFENCEMAN, AND NO DOCUMENT NAMES IT
+
+**Found 3 September 2026 by `rules-verifier` while verifying a section split. Safety-relevant.**
+
+**`usah.txt:4469-4471`, Rule 625(a)(4)** — a minor for:
+
+> *"A defending player who **changes their skating lane or foot speed** in an effort to play the body of an
+> opponent who is **no longer in control of the puck**."*
+
+⚠️ **That is a pinching defenceman, described.** **`forechecking_systems.md` covers 640(b) and the Casebook
+Standard-of-Play situation and never reaches it; `body_contact_and_battles.md` names 625 only to say it
+*"caps interference at a minor."*** ⚠️ **A USA Hockey reader is exposed to a rule neither document names.**
+
+**It does NOT contradict the corpus's *"USA Hockey writes no window"* claim — 625(a)(4) is a LANE/SPEED test,
+not a window — so that disclosure stands.**
+
+⚠️ **Its missing half, and they must land together:** **Casebook Situation 10's SECOND paragraph**
+(`usah_casebook.txt:18521-18526`) makes contact legal where the defender *"maintains their normal skating
+lane and reasonable foot speed"*, with its own limit — stopping or changing lane *"to cut off the opponent"*
+is interference. **The corpus is currently STRICTER than the book, so the direction is safe.**
+
+### OPEN — the OWNER states IIHF 56.5 with one condition; its borrower states both
+
+**`body_contact_and_battles.md:1323` gives one of 56.5's two conditions. `forechecking_systems.md:536` gives
+both** — *"on two conditions, both of them the referee's judgement."* ⚠️ **The owner of a rule should not be
+the weaker statement.** **Overstates reachability of the major-plus-game-misconduct, so the direction is
+safe.**
+
+### ⚠️ METHOD — `md_to_speech --only` LEAVES SIBLING RENDERS STALE, and nearly produced a false finding
+
+⚠️ **An agent's first render this round showed a pinch section carrying PRE-REPAIR text and a bare
+permission. It was a 1 SEPTEMBER RENDER left in the scratchpad**: `--only` regenerates just the matched
+document and **silently leaves every sibling stale.** **The fresh render was clean.**
+
+⚠️ ***"A `--only` render into a reused output directory is not evidence about any other document."***
+**Add it to the standing method notes. (Usefully, the stale copy preserved the pre-repair text and
+independently confirmed the ten-site half-rule repair had landed.)**
+
+### ⚠️⚠️ OPEN — "BACK TO THE BOARDS" MAY NAME THE WRONG GEOMETRY, 103 TIMES
+
+**Raised by `safety-reviewer` 3 September 2026, which flagged its own uncertainty honestly — and the census
+says the uncertainty was warranted.**
+
+**The argument:** *"with your back to the boards"* means your back is **against the wall** — you are facing
+the checker, and you can see it and brace. ⚠️ **That is not a hit from behind.** **The posture the mechanism
+actually describes is your back turned TO THE CHECKER, chest to the wall** — and the owner's own heading
+says so: `body_contact_and_battles.md:678`, *"**Do not turn your back to an oncoming checker near the
+boards**"*, with Hockey Canada's quoted scenarios being a player who *"turns and, as a result, creates
+contact with the back"* and one *"driven **head-first** into the boards."*
+
+⚠️ **The consequence if the reading is right: a reader who complies LITERALLY with "never your back to the
+boards" can satisfy it by turning CHEST TO THE WALL — the exact posture the section exists to prevent.**
+
+**⚠️ BUT THE CENSUS SAYS IT IS THE HOUSE IDIOM, NOT A SLIP:**
+
+| phrase | uses |
+|---|---|
+| `back to the boards` | **70** |
+| `back to the wall` | 33 |
+| `back to the play` | 18 |
+| `back to an oncoming` | 6 |
+| `back to a checker` | 1 |
+
+⚠️ **103 against 25.** **The reviewer said so itself: *"if the corpus has settled on 'back to the boards' as
+house idiom for 'back to the play', then six sites are idiomatic rather than wrong and my finding collapses
+to a style point."*** **The style guide does not settle it and nobody has ruled.**
+
+⚠️ **DO NOT SWEEP.** **Every instance pairs the phrase with the corrective instruction in the same sentence
+(*"skates parallel, forearm and hip"*), which is why this is not a critical.** **It needs ONE ruling applied
+everywhere — and if the ruling is "change it", the safe form already exists in the corpus at
+`body_contact_and_battles.md:753` and `:761`: *"back to the play."***
+
+### ⚠️ SETTLED — the walking-speed finding attaches to the INJURY, not the collision
+
+**`safety-reviewer`'s ruling, and the reasoning is evidence rather than grammar:**
+
+⚠️ **The source sentence NEGATES A SPEED REQUIREMENT — *"A player doesn't have to be going at full speed for
+this to happen"*. A collision at walking speed needs no such disclaimer; it is definitionally possible and
+the sentence would be VACUOUS.** **The only proposition that needs the disclaimer is the injury.**
+**And it is the paragraph's payload — the line that defeats the reader's own risk model, *"I was only going
+slowly."*** ⚠️ **Read as "the collision can happen at walking speed" it carries NO WARNING AT ALL.**
+
+**Nine sites already say INJURY in terms.** ⚠️ **Two say COLLISION and one of them is the OWNER,
+`body_contact_and_battles.md:1070`.** **Bring the owner to the injury framing.**
+
+**And the caption convention is settled with it:** ⚠️ **a layer that states the ducking prohibition AND
+GIVES ITS MECHANISM must also carry the walking-speed qualifier** — because a bare *"a tucked chin
+straightens the cervical spine"* reads as a HIGH-SPEED hazard and leaves the reader their strongest excuse.
+**A layer that states the prohibition bare need not, and should not.** **`forecheck-pinch` states the
+mechanism and stops: short by one clause.**
+
+### ⚠️ OPEN — PRONOUNS: 452 he/him/his against 318 they/them/their across 90+ diagram specs
+
+**Censused 3 September 2026 over all built specs, while repairing one caption's pronouns.**
+
+⚠️ **This is a corpus-wide convention question, not a local defect, and it was raised BY the agent that
+had just been told to fix one instance.** **`net-front-walk-out-direction` is now they/them — defensible,
+because it matches its own owning section and carries three women's-hockey rules — but that makes it the
+OUTLIER among its siblings**, and ⚠️ **`corner-escape-routes` (13 hits) has the identical argument and was
+deliberately left alone.**
+
+**Needs one decision applied everywhere, not two files fixed and eighty-eight left.**
+
+### ⚠️ OPEN — `body_contact_and_battles.md` §9's facts block is at `HARD_MAX` and blocked a propagation
+
+**11 facts — 4 `Rule:`, 7 coaching.** ⚠️ **The coaching-choice `Convention:` line could NOT be added without
+evicting something, so the net-front propagation stops at body + caption.** **§8's parallel treatment has
+one only because *"Whose corner is it?"* is its own sub-block.**
+
+⚠️ **FOURTH instance of the 11-cap blocking work this session.** **The style guide's remedy — split on the
+seam the body already uses — applies, and §9 may have one. Nobody has looked.**
+
+### ⚠️ COORDINATOR TO RULE — two captions carrying the same posture DISAGREE on the walking-speed sentence
+
+**`forechecking_systems.mjs:594` deliberately OMITS it**, its comment saying *"a caption that quoted one
+without its qualification is exactly how a half-rule ships."*
+**`icing-the-race-and-the-dot` INCLUDES it, with the qualification stated inline**, on the ground that this
+caption's whole subject is a race into the end boards.
+
+⚠️ **Both are defensible and they cannot both be the convention.** **The repairing agent flagged it as a
+judgement rather than a verification and asked `safety-reviewer` to settle it. It has not been settled.**
+
+### ⚠️ A SEVENTH FALSE-ZERO CLASS — quotation marks INSIDE the phrase
+
+**`grep "obvious icing"` returns ZERO from the NHL, IIHF and Hockey Canada books.** ⚠️ **The claim is
+nonetheless true in all three: every book writes it as obvious **"icing"** — with the quotation marks
+INSIDE the phrase.**
+
+⚠️ **`sources/README.md` records six false-zero classes (line breaks, hyphenation, curly apostrophes,
+running headers, ToC-vs-body, flattening artefacts). This is a SEVENTH and a different mechanism.**
+**Add it: a phrase that contains its own quotation marks defeats an exact-phrase grep, and the negative
+looks clean.**
+
+### ⚠️ OPEN — USA Hockey may MARK the privileged area on its own rink plate, and nobody can check
+
+**The Glossary defines the privileged area a THIRD time** (`usah.txt:6104-6107`) — not twice, as counted —
+**and ends *"(see rink diagram)"***. ⚠️ **So USA Hockey may print the region on its rink plate.** **The
+plate is a FIGURE and the corpus reads text extractions, so this is unverifiable from disk.** **Recorded in
+the module's source comment as unchecked. Needs the PDF opened as an image.**
+
+### OPEN — `rules_primer.md:679` says CARHA bars freezing "on the same shape USA Hockey does"
+
+⚠️ **It does not, quite: CARHA 58(b)'s trigger is goal-line-plus-crease, which is USA Hockey **614(c)(1)
+only** — CARHA has no privileged-area trigger.** **Defensible if *"shape"* means the crease/goal-line
+construction — but it sits NINE LINES ABOVE a diagram that shades the privileged area, and a listener
+could fuse them.** **Reported by the agent, deliberately not changed.**
+
+### ⚠️ OPEN — an NHL-vs-Hockey-Canada REVERSAL on coincidental penalties, recorded nowhere
+
+**Found 3 September 2026 while repairing the goaltender-penalty bullet. Verified from primary text.**
+
+**NHL 27.1** (`nhl_rules_layout.txt:2779-2792`) carries two limbs USA Hockey and Hockey Canada do not:
+*"A penalized player may not serve a goalkeeper's penalty"*, and on coincidental penalties the designated
+player *"may be any player as designated by the Coach"* — ⚠️ **the on-ice requirement is LIFTED.**
+
+⚠️ **Hockey Canada runs the OPPOSITE WAY.** 4.13(a) Note 1 (`hc.txt:3653-3654`): *"Where the goaltender is
+assessed a coincidental penalty, **a player from the ice is still required to serve the penalty**."*
+
+**Searched whitespace-flattened, straight and curly apostrophe: ZERO in `usah.txt`, `usah_casebook.txt`,
+`hc.txt`, `hc_layout.txt`; one each in `nhl_rules_layout.txt` and `iihf_rules_v1.1.txt`.**
+**`goaltender.md:666` attributes the first limb to NHL/IIHF only, so it is not wrong — but the reversal is
+unrecorded anywhere in the corpus.**
+
+### ⚠️ OPEN — `on_ice_communication.md:386-398` cannot take the who-serves limb
+
+**11 values of 11, and its four `Rule:` lines measure 289 / 294 / 300 / 284 against a 300 cap** — ⚠️ **one is
+at EXACTLY the cap.** **No room for a twelfth value, no line with headroom to absorb it.**
+
+⚠️ **The agent's judgement, and I agree: this is an OMISSION in the extraction layer, not a false statement
+in it** — the block never carried the discharge framing, which was the bullet's alone. **Reported rather
+than forced in, and no hedge trimmed to make room.** **Third instance of the cap this session.**
+
+### ⚠️ OPEN — `risk_management.md:458` is now 15 chars from silence, and the edited cell IS the longest
+
+**Restoring the *"on a power play"* scope took the row from 22 chars of headroom to 15, and that cell is the
+table's longest at 185/200.** ⚠️ **One more edit to it drops a TWELVE-ROW table out of the audio entirely —
+the exact round-58 failure.** **The restoration was right; the next person editing that row needs to know.**
+
+### ⚠️ OPEN — an unlabelled superlative in a document that labels five others
+
+**`risk_management.md:465` — *"the worst-value event on a power play"* — is a coaching judgement with no
+measurement behind it, in a document that discloses exactly that habit FIVE times elsewhere** (`:88`,
+`:111`, `:168`, `:675`, `:834` — *"coaching consensus, not measurement"*). ⚠️ **It carries no such label
+here.** **The repairing agent deliberately did not add one — its brief was to restore the scope, and
+non-negotiable 3 forbids deletion — so this is a live `content-reviewer` row.**
+
+### ⚠️ OPEN — `rinkSvg` PAINTS THE NHL TRAPEZOID ON EVERY END OF EVERY DIAGRAM
+
+**Found 3 September 2026 by rendering, not by reading, while drawing `the-privileged-area`.**
+
+⚠️ **A diagram teaching a USA HOCKEY rule is drawn on a sheet carrying NHL trapezoid markings** — a direct
+conflict between the picture's furniture and its own caption. **The agent used it rather than fighting it:
+the caption names the dashed lines, says whose they are, and sets the two shapes against each other.**
+⚠️ **`lib/rink.mjs` is a shared tool and it correctly did not touch it.**
+
+**The general form: the rink furniture asserts ONE BOOK'S markings under every caption, whatever book the
+caption is about.** **Most diagrams are book-agnostic so it never showed. A rules diagram is not.**
+**Wanted: either a per-diagram furniture option, or a standing caption convention for rules diagrams.**
+
+### OPEN — NHL/IIHF 81.1 carry an icing limb `rules_primer.md` omits
+
+**NHL and IIHF 81.1 both cover a puck that *"travels around the boards and/or back towards the end zone
+face-off dots"* — the linesperson decides *"within a similar distance"*. Hockey Canada writes the same at
+6.7(e)(iii).** ⚠️ **The document's four-step hybrid-icing mechanism does not have it.** **Verified from
+primary text by the agent that found it; not repaired, because it is a body-prose addition to a
+safety-adjacent rules section and wants authoring plus review, not a verifier's insertion.**
+
+### ⚠️ RETRACTED — THE SPECIFICATION ALREADY ANSWERS THIS, AND I DID NOT READ IT
+
+⚠️ **I filed *"is 11 the right number, or should `Rule:` values be exempt?"* as an open structural question.
+IT IS NOT OPEN. `project/content_style_guide.md` prescribes the remedy, and warns against the wrong
+version of it, in the section on key-facts blocks:**
+
+> *"**Some in the body and the block already at 11** — **split the section, on the seam the body already
+> uses, not on rule-set lines.** A split by book leaves both halves all-`Rule:`: round 52 split one that
+> way and **"relieved the wrong thing"**, leaving 11 facts and a single coaching fact behind it. **The
+> 11-fact hard cap is not** [the thing to change]."*
+
+⚠️ **So the cap is not the defect. Not reading the specification was.** ⚠️ **And the guide anticipated the
+precise error my brief proposed — I suggested splitting off the late-hit window, which is a split BY BOOK,
+the version round 52 got wrong.**
+
+**The agent refused my seam and found the document's own.** The bullet carried **three** bodies of law
+(may you check at all · IIHF 101.1's second limb · the late-hit window), and the boundary was already
+written into the prose: ⚠️ ***"First, though: none of this applies if you may not body check at all."***
+**A section boundary buried inside a bullet.** **Result: `When to pinch` 11 → 5, a new sibling at 9, the
+anchor unchanged, and the caption unblocked.**
+
+**The standing lesson, which IS worth keeping:** ⚠️ **a block at 11/11 is a signal that a section is doing
+two jobs, not a signal that the cap is wrong.** **Check the body for the seam before touching the tool.**
+
+⚠️ **`:572-584` (Off a dump-in) is also at 11/11 and was examined: NO limb is owed** — its `Never:` and five
+`Rule:` values already carry the checking-from-behind law, and the uncovered case is F1's own posture,
+where F1 is the aware, in-control, arriving player. **Prospective, not live.**
+
+### ✅ CLOSED 3 September 2026 — IIHF 101.1's possession limb now travels everywhere
 
 **Found by `commit-gate`, 3 September 2026. Not a one-line fix — a propagation question.**
 
@@ -520,7 +893,16 @@ puck**."*
 **But it is a rule stated short in a VOICED layer**, and `forechecking_systems.mjs` carries the same
 elision, **so fixing one caption would leave the corpus disagreeing with itself.**
 
-**Census every site that states 101.1's test — captions, `describe`s and body — and decide once whether the
+⚠️ **CLOSED — `commit-gate` found this row stale and staged as OPEN, and was right: *"committing a
+closed row marked OPEN is precisely how the next brief comes out wrong."*** **Every site now carries
+both limbs** — `forecheck-122`, `forecheck-131`, `forecheck-pinch` and `the-call-and-who-can-see-it` in
+`diagrams.json` all read *"playing the puck **or an attempt to gain possession of it**"*, and a corpus
+census of all 51 content and caption sites found **51 of 51** carrying both limbs and the exception.
+
+⚠️ **What remains open is a DIFFERENT class and has its own row: 101.1 stated without its
+WOMEN'S-HOCKEY SCOPE.**
+
+**Superseded original: census every site that states 101.1's test — captions, `describe`s and body — and decide once whether the
 possession limb travels.** ⚠️ **Caption length is the real constraint: the `on_ice_communication` caption
 already runs 3,737 chars against a 2,800 chunk limit and splits.**
 
@@ -4462,7 +4844,7 @@ it wants building.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,127,482 words — 85.4 hours of
+These outrank everything below. The corpus is **37 documents and 1,131,353 words — 85.7 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure

@@ -573,7 +573,41 @@ const forecheckPinch = {
     // it -- it qualifies the PRECEDING sentence, the push-and-lean permission -- and the boards
     // limb has its own trigger, which is competing for the puck. Re-read in sources/ this session.
     // The second sentence is the consequence, without which the reader has a rule and no play.
-    '⚠️ And in many leagues body checking is not allowed at all, so find out which book you are under before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out. Where it is barred, a pinch is a play on the puck alone and the seal against the boards is not available to you; IIHF 101.1 adds that in women\'s hockey players competing for the puck may not use the boards to eliminate an opponent, even where possession is the sole object.',
+    '⚠️ And in many leagues body checking is not allowed at all, so find out which book you are under before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out. Where it is barred, a pinch is a play on the puck alone and the seal against the boards is not available to you; IIHF 101.1 adds that in women\'s hockey players competing for the puck may not use the boards to eliminate an opponent, even where possession is the sole object. ' +
+    // RECEIVING POSTURE. Added because this caption's go/no-go test sends the reader down the
+    // wall at speed and everything above it was about DELIVERING contact: the section had no
+    // receiving posture at all, and the picture's whole subject is a defenceman arriving at the
+    // boards with an opponent and a puck arriving at the same moment. It sits INSIDE the amber
+    // band, at the end of it, so the glyph-to-end promotion still covers safety and nothing else.
+    // ⚠ SCOPE, and it is the half that gets got wrong: this is scoped as its owner scopes it,
+    // content/technique/body_contact_and_battles.md §6 -- "whatever league you play in", because
+    // unexpected contact happens in non-check hockey too. It is NOT scoped to checking leagues,
+    // even though the sentence before it is about where checking is barred.
+    // ⚠ TWO MECHANISMS, KEPT SEPARATE. A turned back makes the contact a HIT FROM BEHIND; a
+    // dropped chin STRAIGHTENS THE CERVICAL SPINE. They are different injuries with different
+    // sources, and three owner documents forbid joining the walking-speed evidence to the turned
+    // back -- USA Hockey's walking-speed sentence is about a HEAD-DOWN, head-first collision and
+    // it writes nothing of the kind about a turn. That separation is unchanged.
+    // ⚠ WHAT CHANGED: THE WALKING-SPEED QUALIFIER IS NOW CARRIED, AND THE ARGUMENT FOR LEAVING
+    // IT OUT WAS WRONG. This comment used to end "a caption that quoted one without its
+    // qualification is exactly how a half-rule ships", and on that argument left the caption
+    // stating the ducking prohibition AND naming its mechanism with nothing attached. Stated
+    // bare, "a chin tucked to the chest straightens the cervical spine" reads as a HIGH-SPEED
+    // hazard and hands the reader their strongest excuse -- "I was only going slowly" -- which
+    // is the one thing USA Hockey's sentence exists to defeat: "A player doesn't have to be
+    // going at full speed for this to happen -- it can occur at walking speed"
+    // (sources/huh.txt:228-229, read this session). The qualification fits in one subordinate
+    // clause, which rules_primer.mjs's icing-the-race-and-the-dot already demonstrates. The
+    // convention, stated so the next editor does not have to re-derive it: a layer that states
+    // the prohibition AND gives its mechanism carries the qualifier; a layer that states the
+    // prohibition BARE does not, and should not.
+    // ⚠ AND IT ATTACHES TO THE INJURY, NOT THE COLLISION. A collision at walking speed is
+    // definitionally possible and needs no disclaimer; only the injury does, which is why USA
+    // Hockey's sentence NEGATES A SPEED REQUIREMENT rather than asserting a speed.
+    // The light-hit quotation is still NOT carried here: it belongs to the turned back, and it
+    // is in the section and in body_contact_and_battles.md §6, where the scoping around it can
+    // be stated in full.
+    'And whatever your book says about contact, one thing holds in every league, checking or not: never take contact on the wall with your back to the boards, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest. Those are two prohibitions against two different injuries — a turned back makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey says can occur at walking speed.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, with the puck in the strong-side corner. ' +

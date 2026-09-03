@@ -27,6 +27,8 @@ Hockey gear does two separate jobs: it keeps you out of hospital, and it decides
 
 Here is everything a skater needs, roughly in the order you put it on, with what each piece does and where it sits on the price/benefit curve.
 
+**From the skin out, up to the skates:**
+
 | Item | What it does | Price/benefit curve |
 |---|---|---|
 | **Base layers** | Wicks sweat away from skin; reduces chafing and gear stink | Cheap, high value. Any decent synthetic or merino kit works |
@@ -35,6 +37,11 @@ Here is everything a skater needs, roughly in the order you put it on, with what
 | **Socks** | Hold shin guards in place, carry team colours | Trivial cost |
 | **Pants ("breezers")** | Protect hips, thighs, tailbone, kidneys and lower spine | Mid gains. Coverage and fit dominate |
 | **Skates** | Everything | **Steepest curve in the bag.** See below |
+
+**Then everything from the waist up:**
+
+| Item | What it does | Price/benefit curve |
+|---|---|---|
 | **Shoulder pads** | Shoulders, chest, back, sternum, biceps | Depends heavily on whether your league allows body checking |
 | **Elbow pads** | Elbow joint, lower tricep, upper forearm | Cheap, but fit is critical — see the rotation problem below |
 | **Neck guard** | Reduces the risk of a skate- or stick-blade laceration to the throat | Cheap, and mandatory in many rule sets — **mandatory for every player of every age across the Home Countries** |
@@ -43,6 +50,11 @@ Here is everything a skater needs, roughly in the order you put it on, with what
 | **Helmet** | Skull and brain | **Never the place to save money.** See below |
 | **Cage / visor / full shield** | Face, eyes, teeth | Mandatory at most levels; cheap relative to what it protects |
 | **Mouthguard** | Teeth and jaw | Cheap. Custom-fitted from a dentist is better than boil-and-bite |
+
+**And what you carry rather than wear:**
+
+| Item | What it does | Price/benefit curve |
+|---|---|---|
 | **Stick** | Every puck touch you will ever make | Long, steep curve — but only after the specification is right |
 | **Tape and wax** | Blade protection, puck feel, grip | Pennies. Disproportionately important |
 | **Bag** | Carries and ventilates everything | Buy the size you need, not the biggest |
