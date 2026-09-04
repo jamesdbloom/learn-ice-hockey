@@ -630,6 +630,31 @@ const C_UP_WALL = { at: 'half-wall:right', dx: -10, dy: 0.5 };   // (59, 39)
 // replaces. Five endpoint/bow pairs were built and compared as pictures before this one.
 const C_BEHIND = { at: 'behind-net', dy: -10 };                  // (94, -10)
 
+// ⚠️ THE PIN CITATIONS WERE CORRECTLY SCOPED AND THAT LEFT A HOLE. IIHF 101.1 is Section 11,
+// "Women's Hockey", and USA Hockey 604 is headed "(Competitive Contact Categories)" and scoped by
+// 604(a) to 12U and below, all Girls'/Women's classifications and all non-check Adult play. So
+// after the scoping, "what you pin is the puck and not the player" carried NO citation for the
+// reader in a body-checking league — the one reader most likely to pin somebody.
+//
+// The rule that reaches that reader is USA Hockey Rule 622, `sources/usah.txt:4343-4356`, whose
+// Note reads: "Holding is the action of a player wrapping their arms around an opponent or using a
+// free hand to clutch, grab or hold the stick, jersey or body on the opponent. This includes
+// wrapping one or both arms around the opponent along the boards in a manner that pins them
+// against the boards and prevents them from playing the puck or skating…"; 622(a) makes it a minor.
+// Its heading carries no category parenthetical, which is the contrast the caption draws, and the
+// Casebook's three Rule 622 situations (`sources/usah_casebook.txt:14131-14181`) carve out nothing
+// about the boards. `content/positions/winger.md:363` already said this in terms; the caption did
+// not use it.
+//
+// ⚠️ NOT CLAIMED FOR EVERY BOOK, and deliberately. Hockey Canada 8.1 (`sources/hc_layout.txt:5324`)
+// reaches the same act by a different route — "holds an opponent in any manner" — but it also
+// permits "an arm in a strength move, by blocking their opponent, provided they have body position
+// and are not using their hands in a holding manner", and its Interpretation 3 to Rule 7.5(a)
+// (`hc_layout.txt:4889`) states that "Pinning a player to the boards at low speed and with minimal
+// impact is permitted, even if contact is initiated from behind". That is a checking-from-behind
+// interpretation rather than a holding one, but a caption that said "every book" would be wrong
+// about the one most British and Canadian readers meet second.
+
 const cornerEscapeRoutes = {
   id: 'corner-escape-routes',
   owner: 'content/technique/body_contact_and_battles.md',
@@ -657,9 +682,14 @@ const cornerEscapeRoutes = {
     'here is a licence to hit: the bars mean arrive and contain, the carrier has the puck at his ' +
     'stick against the boards, and whether an arrival like that may end in contact at all depends ' +
     'on your age group, your league and the book they play under. What you pin is the puck and not ' +
-    'the player — IIHF Rule 101.1 allows two players to push and lean only while possession of the ' +
-    'puck remains the sole object of both of them, and USA Hockey Rule 604 Note 1 counts forcing an ' +
-    'opponent off the puck with no effort to legally play it as an illegal body check. Never finish ' +
+    'the player — in women’s hockey IIHF Rule 101.1 allows two players to push and lean only while ' +
+    'possession of the puck remains the sole object of both of them, and where checking is barred USA ' +
+    'Hockey Rule 604 Note 1 counts forcing an opponent off the puck with no effort to legally play it ' +
+    'as an illegal body check. And if you play under body-checking rules, so that neither of those ' +
+    'two is the book you are under, the act is still reached: USA Hockey Rule 622 is headed simply ' +
+    '“Holding an Opponent”, without Rule 604’s category qualifier, and its note names wrapping one or ' +
+    'both arms around an opponent along the boards in a manner that pins them and prevents them from ' +
+    'playing the puck or skating. That is a minor penalty. Never finish ' +
     'into the back of a player who is facing the boards.',
 
   describe:

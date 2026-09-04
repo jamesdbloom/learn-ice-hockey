@@ -44,6 +44,7 @@ import riskmanagement from './risk_management.mjs';
 import scanningandanticipation from './scanning_and_anticipation.mjs';
 import shooting from './shooting.mjs';
 import specialteams from './special_teams.mjs';
+import switchingpositions from './switching_positions.mjs';
 import timeandspace from './time_and_space.mjs';
 import zoneentries from './zone_entries.mjs';
 
@@ -71,6 +72,7 @@ export const DIAGRAMS = [
   ...scanningandanticipation,
   ...shooting,
   ...specialteams,
+  ...switchingpositions,
   ...timeandspace,
   ...zoneentries,
 ];

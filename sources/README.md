@@ -423,6 +423,30 @@ official documents, not resolved in either direction.
 > obtainable here" and sent the reader to a browser. That was wrong, and it made the corpus look less
 > evidenced than it is. A `sed` range answers it.)*
 >
+> ### ⚠️ THE LINE-WRAP FALSE NEGATIVE IS NOT CONFINED TO TABLE 16, OR TO THIS BOOK
+>
+> **Measured 4 September 2026.** A commit gate searched **both** IIHF editions for
+> `grabbing hold of a face mask` — ordinary rule prose, **Rule 75.2(II)**, nowhere near a table —
+> got **zero**, and came within one step of blocking a commit on it. **The phrase is there, wrapped
+> between `face` and `mask`.** The same trap is on record for `fend off` in the USA Hockey Casebook
+> (~`:18431`), which is a **third** book and a **third** context.
+>
+> ⚠️ **So this is a property of the extractions generally, not a quirk of one table.** Three books,
+> three unrelated locations, three near-misses — and in each case the phrase searched for was a
+> perfectly ordinary one that a reviewer had every reason to expect.
+>
+> ⚠️ **AND THE DIRECTION IS ALWAYS THE SAME: it manufactures ABSENCE.** A wrap never invents a hit; it
+> only hides one. So every false negative of this class makes a rule look missing from a book that
+> writes it — which, in a corpus that tells readers which rules their own book contains, is the
+> dangerous direction. **On this occasion it would have shipped a clause telling British readers their
+> book is silent on facemask-grabbing, in a section ending "Never touch a facemask."**
+>
+> **THE RULE: never report a phrase absent from an extraction on the strength of a phrase search.**
+> Collapse whitespace first — `re.sub(r'\s+', ' ', text)` — **and** search a short distinctive
+> fragment rather than the full phrase (`face mask` and `strength move`, not the sentence around
+> them). **Run a positive control on the same file every time**, because a zero from a broken pattern
+> and a zero from a genuine absence are indistinguishable in the output.
+>
 > **The general rule, now stated three ways because this file has been wrong about it twice:** the
 > flag is not the whole story. Plain joins hyphens; `-layout` interleaves most two-column tables;
 > and some tables interleave under both. **An extraction is a rendering, not the document.**

@@ -811,7 +811,7 @@ Key: Icing removes the long clear, not the glass clear — a glass clear is deli
 Action: Aim the glass clear to land in the neutral zone with a teammate skating onto it
 Priority: Possession over speed — an empty net behind you means any turnover is a goal against, so the controlled exit is now the only correct exit
 Action: Use the sixth attacker as a low outlet giving you a short, certain pass, not standing in front of their net
-Goal: Enter with control — after the effort of a 6-on-5 exit, a dump-in against a five-man box gives you nothing
+Goal: Enter with control — after the effort of a 6-on-5 exit, a dump-in against five defenders collapsed in front of their own net gives you nothing
 ```
 
 Late in a game, chasing a goal, goalie on the bench. This is a completely different problem to the delayed penalty, because now a mistake ends the game.
@@ -820,7 +820,7 @@ Late in a game, chasing a goal, goalie on the bench. This is a completely differ
 - **What icing removes is the long clear, not the glass clear.** A hard, high, length-of-ice dump is off the table. But **off the glass and out is still available**, exactly as described in section 3 — a glass clear is deliberately slow and wide, so it dies in the neutral zone and never reaches the far goal line, which is precisely why it rarely ices. The distinction is worth keeping straight: what you cannot afford at 6-on-5 is *distance*, not *the play*. Aim it to land in the neutral zone with a teammate skating onto it.
 - **Prioritise possession over speed.** You must not turn it over — an empty net behind you means any turnover is a goal against. The controlled exit is now the *only* correct exit.
 - **Use the extra body as a low outlet.** The sixth attacker is most useful giving you a short, certain pass, not standing in front of their net. Numbers below the puck are what let you exit cleanly against a team that has nothing to lose by pressing.
-- **Enter with control.** After the effort of a 6-on-5 exit, a dump-in against a five-man box gives you nothing. See [Zone Entries](zone_entries.md) and [Game Management](game_management.md).
+- **Enter with control.** After the effort of a 6-on-5 exit, a dump-in against five defenders collapsed in front of their own net gives you nothing. ⚠️ **If you hear that shape called a box, be clear which box is meant:** it is the five-skater *collapsing box* — all five inside the house, conceding the outside — set out in [Defensive Zone Coverage](defensive_zone_coverage.md#the-collapsing-box-and-the-strong-side-overload), **not** the four-player penalty-kill box in [Special Teams](special_teams.md). Same word, different shapes. See [Zone Entries](zone_entries.md) and [Game Management](game_management.md).
 
 ### Breaking out on a delayed offside
 

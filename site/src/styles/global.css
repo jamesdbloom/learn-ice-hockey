@@ -2021,6 +2021,70 @@ figure.diagram--full .diagram-scroll svg {
 }
 
 /*
+  ⚠️ BUT ABOVE 60rem THE FLOOR IS THE COLUMN, NOT 640px — otherwise the box scrolls on
+  a laptop, where nothing is gained by it.
+
+  The 640 floor above is written for the phone, where the column is genuinely tiny and
+  scrolling is the honest trade. On the desktop grid the column dips under 640 twice, and
+  both times it is the furniture either side of the text doing it rather than the screen
+  being small.
+
+  ⚠️ THESE NUMBERS ARE DERIVED FROM THE TOKENS AT THE TOP OF THIS FILE (`--sidebar-w` 280,
+  `--toc-w` 240, 2.5rem gaps, 1.5rem shell padding) — NOT measured in a browser by whoever
+  wrote this rule. An earlier draft of this comment said "measured in a browser", and no
+  browser had been opened. They reproduce a browser pass taken in an earlier round against
+  the pre-change stylesheet, which is corroboration and not verification of the rule below.
+  The falsifiers, so the next reader can settle it in one pass: any overflow remaining at
+  960 / 1248 / 1280; the svg not 640 wide at 375; or a `--full` figure inside a container
+  narrower than the column (0 of 44 at the time of writing):
+
+      viewport   column   over 640
+      768        739      —          block-ish; no sidebar cost yet
+      960        592      48 px      sidebar appears at 60rem and takes 320 px
+      1008       640      —          column has grown back past the floor
+      1247       879      —
+      1248       600      40 px      the TOC appears at 78rem and takes 280 px more
+      1280       632      8 px       ⚠️ one of the commonest laptop widths there is
+      1288       640      —
+      1440       792      —
+
+  So the harm is two narrow bands, 960–1007 and 1248–1287 — NOT the continuous
+  900–1290 span it looks like from spot measurements. At 960 about 7.5% of the sheet
+  was hidden until the reader thought to drag inside the box.
+
+  The fix is to let the sheet fit the column once the column is a desktop column. It is
+  `min()` rather than plain removal because the intent is a floor of 640 that the column
+  overrides, not "no floor above 60rem" — and because `figure.diagram svg` could stop
+  being `width: 100%` one day, at which point the difference stops being academic.
+
+  ⚠️ WHY THIS IS SAFE, AND THE ONE THING THAT WOULD MAKE IT UNSAFE. Above 60rem the
+  column bottoms out at 592 (at exactly 960), so the worst shrink this can ever apply is
+  592/640 = 7.5%: the common player label, 3 units in a 204-unit viewBox, goes 9.4 px →
+  8.7 px, and the smallest annotation, 2.15 units, goes 6.8 px → 6.2 px. Compare the case
+  the floor was written for: at 375 px the same label renders 5.1 px. A 7.5% shrink and a
+  46% shrink are not the same trade, which is the whole reason this is a media query and
+  not `min-width: min(640px, 100%)` applied unconditionally — ⚠️ THAT WOULD HAVE FIXED THE
+  LAPTOP BY REINTRODUCING THE PHONE DEFECT VERBATIM, because a percentage min-width can
+  never exceed the container, so the floor would be gone at every width below 640.
+
+  What makes it unsafe: a full-sheet figure inside something narrower than the column —
+  a callout, a grid cell — at a desktop width. There are none today: measured in a real
+  headless Chrome over CDP across all 49 built routes at 375 and 1440, 0 of 45
+  `diagram--full` figures sits inside a container narrower than the column. If one is
+  ever added, it will shrink to that container rather than scroll, and this rule is
+  where to look.
+  ⚠️ THE COUNT WAS WRITTEN AS 44 AND IS 45. The falsifier was phrased "0 of 44", so a
+  reader re-running it against 45 figures would have found a mismatch and had no way to
+  tell whether a figure had been ADDED or the original count was simply wrong. A hand
+  count stated as a measurement is the defect; the browser pass is what settled it.
+*/
+@media (min-width: 60rem) {
+  figure.diagram--full .diagram-scroll svg {
+    min-width: min(640px, 100%);
+  }
+}
+
+/*
   THE BOX SCROLLED SILENTLY. At 375 px the container is 346 and the SVG is held at
   640, so 54% of the picture was on screen and the other 46% was reachable only by
   someone who guessed to drag it. There was no cue that anything was off-screen and
