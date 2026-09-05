@@ -134,6 +134,21 @@ const PALETTE = {
  * of that, and every one of those six pictures looks deliberate.
  */
 const LABEL_HALO = 0.12;
+// Glyph-box metrics as a fraction of font-size, for stopping a leader line before
+// the words rather than inside them. Approximations for the sans stack above; they
+// only have to be close enough that the line ends in white space.
+const CAP_H = 0.72;      // baseline to cap height
+const DESC_H = 0.21;     // baseline to descender
+const LEADER_GAP = 0.4;  // clear air between the line's end and the glyph box
+// ⚠️ The advance width used to CLIP A LEADER is deliberately NOT the one used to
+// RESERVE SPACE for a label. `CH` below is size * 0.56, and a browser pass measured
+// the real distribution over 118 labels: min 0.384, median 0.446, p75 0.473, max
+// 0.562. So 0.56 is the distribution's MAXIMUM -- correct for collision reservation,
+// where over-reserving only costs layout, and wrong for clipping, where the whole
+// error lands along the leader's axis and stops it short of the words. Measured
+// consequence of using 0.56 for both: 40 leaders stopped over a unit short, one
+// showing 0.20 units of line across a 1.79-unit gap.
+const CLIP_ADV = 0.473;  // p75 of the measured distribution, not the max
 
 /** Resolve a named position, optionally mirrored. `half-wall:right`, `corner:left:far`. */
 export function resolve(name) {
@@ -436,8 +451,61 @@ function placeLabels(entries, opts = {}) {
     }
     placed.push(put);
     const moved = Math.hypot(put.x - e.x, put.y - e.y) > LEADER_MIN;
-    const leader = moved
-      ? `<line x1="${e.x}" y1="${py(e.y)}" x2="${put.x}" y2="${py(put.y) + (put.y > e.y ? -1.2 : 1.2)}" ` +
+    // ⚠️ A LEADER MUST STOP SHORT OF THE WORDS, NOT RUN INTO THEM.
+    //
+    // This previously ended the line at `py(put.y) + (put.y > e.y ? -1.2 : 1.2)`.
+    // SVG text is anchored at its BASELINE, not its centre, and `py` inverts the
+    // axis — so that fixed offset pushed the endpoint PAST the baseline, away from
+    // the anchor, which is the opposite of stopping before the text. The endpoint
+    // was also always `put.x`, the text's horizontal CENTRE, so a leader arriving
+    // from the side crossed half the glyphs by construction.
+    //
+    // ⚠️ Measured over the 534 leaders in the built corpus before this change:
+    // 386 EXITED the far side of their own label, 142 ended among the glyphs, and
+    // SIX were clean. The owner reported it from a rendered page, naming three
+    // labels on `centre-low-zone-collapse`; it was 99% of the corpus.
+    //
+    // A fixed vertical offset cannot be right for a leader arriving diagonally, so
+    // the segment is clipped to the label's glyph box and ends where it enters.
+    const clipT = (ax, ay, bx, by, X0, X1, Y0, Y1) => {
+      const dx = bx - ax, dy = by - ay;
+      let t0 = 0, t1 = 1;
+      const P = [-dx, dx, -dy, dy], Q = [ax - X0, X1 - ax, ay - Y0, Y1 - ay];
+      for (let i = 0; i < 4; i += 1) {
+        if (P[i] === 0) { if (Q[i] < 0) return null; }
+        else {
+          const r = Q[i] / P[i];
+          if (P[i] < 0) { if (r > t1) return null; if (r > t0) t0 = r; }
+          else { if (r < t0) return null; if (r < t1) t1 = r; }
+        }
+      }
+      return t0;
+    };
+    const ax = e.x, ay = py(e.y), bx = put.x, by = py(put.y);
+    // ⚠️ THE LEADER STILL STARTS AT THE TOKEN'S CENTRE, AND THAT IS DELIBERATE.
+    // A browser pass proposed starting it at the token EDGE, because 341 of 534 leaders
+    // cross their own position letter on the way out. I implemented that and MEASURED it:
+    // it costs every leader the glyph's ink radius, 3.875 units, and most leaders are
+    // 3-8 units long. The owner's three went from 5.08 to 1.21; `takes the strong side`
+    // went from 4.40 to 0.52; two leaders disappeared under the minimum-length guard.
+    // ⚠️ It made the VERIFIED-GOOD case worse to fix a cosmetic fault at the other end.
+    // Reverted. The right fix is to emit leaders BEFORE the glyphs so the token occludes
+    // them, which costs no length -- but that means splitting this function's output, and
+    // it is filed rather than done here.
+    // The label half-width uses CLIP_ADV, not CH -- see the note at CLIP_ADV above.
+    const cw = e.text.length * size * CLIP_ADV;
+    const tEnter = clipT(ax, ay, bx, by,
+      put.x - cw / 2 - LEADER_GAP, put.x + cw / 2 + LEADER_GAP,
+      by - size * CAP_H - LEADER_GAP, by + size * DESC_H + LEADER_GAP);
+    // tEnter === null: the line never reaches the box, so it already stops short.
+    // tEnter <= 0: the anchor is inside the label's own box — draw nothing rather
+    // than a zero-length or backwards line.
+    const ex = tEnter === null ? bx : ax + (bx - ax) * tEnter;
+    const ey = tEnter === null ? by : ay + (by - ay) * tEnter;
+    const drawLeader = moved && (tEnter === null || tEnter > 0)
+      && Math.hypot(ex - ax, ey - ay) > 0.5;
+    const leader = drawLeader
+      ? `<line x1="${ax.toFixed(2)}" y1="${ay.toFixed(2)}" x2="${ex.toFixed(2)}" y2="${ey.toFixed(2)}" ` +
         `stroke="${PALETTE.label}" stroke-width="0.18" stroke-dasharray="0.8 0.8"/>`
       : '';
     const marker = dot ? `<circle cx="${e.x}" cy="${py(e.y)}" r="${dot}" fill="${PALETTE.label}"/>` : '';
@@ -455,6 +523,54 @@ function placeLabels(entries, opts = {}) {
  *   half   — attacking half only, centre line to end boards
  *   labels — overlay the named-position vocabulary
  */
+/**
+ * THE ACCESSIBLE NAME, kept SHORT — and why that is a correctness question, not a style one.
+ *
+ * ⚠️ A browser renders an SVG's <title> as a HOVER TOOLTIP. Until 4 September 2026 this
+ * corpus put the WHOLE CAPTION there: measured across all 167 built diagrams, the median
+ * tooltip was 1,280 characters and the worst was 4,471. Hovering any diagram dumped a wall
+ * of text over the page. The owner reported it as a readability defect and was right.
+ *
+ * ⚠️ BUT THE OBVIOUS FIX IS A TRAP, AND THE COMMENT BELOW `a11y` RECORDS WHY. The site emits
+ * `<figcaption aria-hidden="true">`, so <title> is the ONLY route by which a screen-reader
+ * user receives the caption. Merely truncating <title> would have deleted the teaching for
+ * exactly the readers the caption was lengthened for.
+ *
+ * So the caption MOVES rather than shrinks: <title> becomes a short name, and <desc> — which
+ * no browser shows on hover — carries the drawn description AND the caption. A screen reader
+ * announces the name, then the full description. Nothing is lost; it is in the right slot.
+ *
+ * `title` on a spec overrides. Absent one, the caption's first sentence is used, which is the
+ * author's own words rather than a generated summary: measured at 41-121 chars, median 110.
+ */
+export function shortTitle(spec) {
+  if (spec && typeof spec.title === 'string' && spec.title.trim()) return spec.title.trim();
+  const cap = String((spec && spec.caption) || '').replace(/\s+/g, ' ').trim();
+  if (!cap) return '';
+  const m = cap.match(/^(.{10,120}?[.!?])(?:\s|$)/);
+  if (m) return m[1];
+  if (cap.length <= 120) return cap;
+  // ⚠️ NEVER TRUNCATE. The first version of this sliced to 117 and appended an ellipsis,
+  // and `diagram-reviewer` measured the result: 97 of 167 titles ended in "…" and
+  // SEVENTEEN OF THEM CUT A HEDGE MID-SENTENCE. The worst announced a rule, named two other
+  // rulebooks, and stopped immediately before "the draw is not established here, so do not
+  // assume it is the same place." An accessible NAME that ends mid-qualification is worse
+  // than a blunt one: it is announced first and unconditionally, and it asserts the half it
+  // kept. So where no short first sentence exists we fall back to the ID, which is a name by
+  // construction and cannot cut anything in half. Set an explicit `title` to do better.
+  return String((spec && spec.id) || '')
+    .replace(/-/g, ' ')
+    .replace(/^./, (c) => c.toUpperCase());
+}
+
+/** <desc> text: what is drawn, then the caption. Never rendered as a tooltip. */
+export function longDesc(spec) {
+  const d = String((spec && spec.describe) || '').trim();
+  const c = String((spec && spec.caption) || '').trim();
+  if (d && c) return `${d} ${c}`;
+  return d || c;
+}
+
 export function rinkSvg(opts = {}) {
   const { half = false, labels = false, width = 900, ns = 'r', caption, describe } = opts;
   const { sheet: S, lines: L, faceoff: F } = RINK;
@@ -540,9 +656,11 @@ export function rinkSvg(opts = {}) {
   //
   // `playSvg` injects its own pair after calling this, and never passes these, so
   // there is no path on which a play diagram gets two titles.
+  const _t = shortTitle({ title: opts.title, id: opts.id, caption, describe });
+  const _d = longDesc({ caption, describe });
   const a11y =
-    (caption ? `<title>${esc(caption)}</title>` : '') +
-    (describe ? `<desc>${esc(describe)}</desc>` : '');
+    (_t ? `<title>${esc(_t)}</title>` : '') +
+    (_d ? `<desc>${esc(_d)}</desc>` : '');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" width="${width}" height="${height}"
      font-family="-apple-system, Helvetica Neue, Arial, sans-serif" role="img">
@@ -1810,9 +1928,11 @@ export function playSvg(spec, opts = {}) {
   // Emitted as <title> (the accessible name) plus <desc> (the long description).
   // role="img" without either is worse than no role at all: it tells a screen
   // reader to announce an image and then gives it nothing to announce.
+  const _t = shortTitle(spec);
+  const _d = longDesc(spec);
   const a11y =
-    (spec.caption ? `<title>${esc(spec.caption)}</title>` : '') +
-    (spec.describe ? `<desc>${esc(spec.describe)}</desc>` : '');
+    (_t ? `<title>${esc(_t)}</title>` : '') +
+    (_d ? `<desc>${esc(_d)}</desc>` : '');
 
   return base
     .replace('<defs>', `${a11y}<defs>`)
@@ -2080,10 +2200,25 @@ export function legendSvg(width = 820, opts = {}) {
     `<circle cx="14" cy="${gy + 48}" r="2.5" fill="${INK}"/>` +
     `<text x="34" y="${gy + 52}" font-size="12" fill="${INK}">The puck — this guide's own mark</text>`;
 
+  // ⚠️ The provenance below was the ONLY text in the hard-coded <title> this replaces.
+  // It is a source attribution and must not be dropped (non-negotiable 4), and `longDesc`
+  // returns describe+caption, neither of which carries the section number. So it is appended
+  // to the <desc> rather than deleted with the title it used to live in.
+  const LEGEND_SOURCES =
+    'Line symbols after IIHF Coach Development Program Level I section 21.1; player glyphs after ' +
+    'the Hockey Eastern Ontario "International Drill Symbols" sheet.';
+  // ⚠️ legendSvg was the THIRD emit site and round 64 patched only two. Its caller's own comment
+  // records the lesson for `rink`: "Omitting them here did not degrade the name, it removed it".
+  // The same omission left `notation-key` as the one built SVG in the corpus with no <desc> at all,
+  // while the site hid its 1,573-char figcaption from assistive technology as a duplicate.
+  const _t = shortTitle({ title: opts.title, id: opts.id || 'notation-key',
+                          caption: opts.caption, describe: opts.describe })
+             || 'The notation key';
+  const _d = [longDesc(opts), LEGEND_SOURCES].filter(Boolean).join(' ');
   const height = Math.round((width * H) / VB);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${VB} ${H}"
      font-family="-apple-system, Helvetica Neue, Arial, sans-serif" role="img">
-    <title>Legend: the drill notation used by the diagrams in this corpus. Line symbols after IIHF Coach Development Program Level I section 21.1; player glyphs after the Hockey Eastern Ontario "International Drill Symbols" sheet</title>
+    ${_t ? `<title>${esc(_t)}</title>` : ''}${_d ? `<desc>${esc(_d)}</desc>` : ''}
     <rect x="0" y="0" width="${VB}" height="${H}" fill="#ffffff"/>
     <defs><marker id="ahL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="${PALETTE.boards}"/></marker></defs>

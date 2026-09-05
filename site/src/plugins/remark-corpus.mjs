@@ -289,11 +289,21 @@ export default function remarkCorpus(options = {}) {
       // caption out of view — the caption is the teaching sentence, and a reader who
       // scrolls the picture must not lose it.
       //
-      // The figcaption is aria-hidden because the SVG's <title> already carries the same
-      // words: without this a screen reader announces the caption twice, once as the
-      // image's name and once as the caption. The <desc> is deliberately kept — it is
-      // the only spatial description a non-sighted reader gets, and the obvious fix of
-      // hiding the whole SVG would throw it away.
+      // The figcaption is aria-hidden because the SVG's <desc> carries the same words:
+      // without this a screen reader announces the caption twice, once in the image's
+      // description and once as the caption.
+      //
+      // ⚠️ UPDATED 4 September 2026, AND THE OLD WORDING WAS LEFT LIVE FOR A WHILE. This
+      // said "<title> already carries the same words", which WAS true until the caption
+      // moved out of <title>. A browser renders <title> as a HOVER TOOLTIP, and the corpus
+      // was shipping a median 1,280-character one (worst 4,471) on all 167 diagrams, which
+      // the owner reported as a readability defect. <title> is now a SHORT NAME and <desc>
+      // carries `describe` + `caption`.
+      //
+      // ⚠️ THE DE-DUPLICATION ARGUMENT SURVIVES THE CHANGE AND THE JUSTIFICATION DID NOT.
+      // Anyone removing this aria-hidden must check <desc>, not <title> — reading the old
+      // comment and checking <title> would have found short text there and concluded the
+      // caption was no longer duplicated, which is how the wrong thing gets deleted.
       //
       // ⚠️ WHEN THE BOX ACTUALLY SCROLLS IT IS A REGION, AND IT HAS TO BE REACHABLE.
       // Only a full-sheet diagram overflows (`figure.diagram--full .diagram-scroll` is

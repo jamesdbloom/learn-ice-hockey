@@ -75,6 +75,104 @@ function boardArc(sy) {
   return pts;
 }
 
+/**
+ * The same corner arc at the OTHER end of the sheet, for full-sheet diagrams.
+ *
+ * A separate function rather than a parameter on `boardArc`, because that one is
+ * anchored in `strong-side-and-weak-side` and this file's rule is that a datum
+ * restated elsewhere is not a knob to turn. The mirror is one line: `goal-line::far`
+ * resolves to x = -89, so reaching the mirrored point -x needs dx = -(x - 89).
+ *
+ * Note the empty side slot in `goal-line::far`. `goal-line:far` is silently wrong —
+ * `far` lands in the *side* slot and the near end comes back — which is the failure
+ * `resolve()` in site/scripts/lib/rink.mjs raises by name.
+ *
+ * @param {number} sy  +1 for the side the diagram calls "right", -1 for the other
+ */
+function boardArcFar(sy) {
+  const R = 28, CX = 72, CY = 42.5 - 28;      // 14.5
+  const pts = [];
+  for (let x = CX; x <= 100.0001; x += 4) {
+    const dy = Math.sqrt(Math.max(0, R * R - (x - CX) ** 2));
+    pts.push({ at: 'goal-line::far', dx: -(+(x - 89).toFixed(3)), dy: +(sy * (CY + dy)).toFixed(3) });
+  }
+  return pts;
+}
+
+/**
+ * The blue-line edge of a zone, sampled down its length.
+ *
+ * ⚠️ THIS IS A LABEL-PLACEMENT FIX AND IT IS SAID OUT LOUD, because it looks like
+ * padding and is not. A zone's label is drawn at the **mean of its listed vertices**,
+ * not at the area centroid, and nothing in the renderer moves it or moves anything
+ * out of its way. A zone whose far boundary is a 16-point arc and whose near boundary
+ * is two corners has its vertex mean dragged into the arc: for the attacking zone that
+ * put the mean at x 79.2, and "attacking zone" — 14 characters, 3.05 ft each on a
+ * full sheet by the renderer's own estimate — then ran from x 57.9 to **x 100.5**,
+ * off the end boards and out of the frame.
+ *
+ * Sampling the straight edge at a comparable resolution to the curved one is the
+ * honest fix: every point returned is genuinely ON the polygon's boundary, so the
+ * SHAPE IS UNCHANGED, and the vertex mean lands near the area centroid instead of at
+ * whichever edge happened to be described in most detail. Eleven points brings the
+ * attacking zone's mean to x 61.2, and the label spans 39.8 to 82.5 — inside the
+ * region it names, which is the test risk_management.mjs states for a zone label.
+ *
+ * The alternative was a dozen bare collinear vertices with no reason attached, which
+ * is how a future reader "tidies" one away and silently moves a label off the page.
+ *
+ * @param {number} sx  +1 for the near blue line (x 25), -1 for the far one (x -25)
+ * @param {number} n   points, inclusive of both corners
+ */
+function blueLineEdge(sx, n = 11) {
+  const pts = [];
+  for (let i = 0; i < n; i++) {
+    pts.push({ at: sx > 0 ? 'blue-line' : 'blue-line::far',
+               dy: +(-42.5 + (85 * i) / (n - 1)).toFixed(3) });
+  }
+  return pts;
+}
+
+/**
+ * The goal crease outline, traced as the document constructs it.
+ *
+ * §3, The goal crease: "a 2-inch red line runs **1 ft outside each goal post**,
+ * extending **4 ft 6 in** straight out at right angles to the goal line, and the two
+ * straight sides are joined by a **6 ft radius arc** struck from the centre of the
+ * goal line. So it is **8 ft wide at the goal line and 6 ft deep at its deepest
+ * point**."
+ *
+ * So: posts at y = ±3 (a 6 ft goal opening, §1), plus 1 ft, gives the 8 ft width;
+ * the arc is r 6 about (89, 0), giving the deepest point at x 83 — which is the same
+ * x this file's CREASE_FRONT_DX already reaches, so the crease drawn here and the
+ * crease the slot diagrams stop at cannot disagree.
+ *
+ * ⚠️ THE STRAIGHT SIDE COMES OUT AT 4.473 ft HERE, NOT 4.5, and that is the rulebook's
+ * own arithmetic rather than an error to correct. A 6 ft arc struck from the centre of
+ * the goal line crosses y = ±4 at x = 89 − 6·cos(asin(4/6)) = 84.527. The two figures
+ * Rule 1.7 gives — a 4 ft 6 in straight and a 6 ft arc meeting at 8 ft wide — are
+ * about 0.03 ft, or a third of an inch, from being simultaneously exact. This traces
+ * the arc, because the arc is what fixes the 8 ft width and the 6 ft depth the
+ * document leads with. site/scripts/lib/rink.mjs draws the painted crease the other
+ * way round (4.5 ft straight, then an SVG arc), which lands its deepest point at
+ * x 82.97: the two differ by 0.03 ft, a quarter of a pixel at this scale.
+ */
+function creaseOutline() {
+  const R = 6, CX = 89, HALF = 4;             // crease_arc_radius, goal_line_x, half of 8 ft
+  const t0 = Math.asin(HALF / R);             // where the arc crosses y = +4
+  const pts = [{ at: 'goal-line', dy: HALF }];
+  const STEPS = 16;
+  for (let i = 0; i <= STEPS; i++) {
+    // Sweep from the +4 crossing, through the deepest point, to the −4 crossing.
+    const th = (Math.PI - t0) + ((2 * t0) / STEPS) * i;
+    pts.push({ at: 'goal-line',
+               dx: +(R * Math.cos(th)).toFixed(3),
+               dy: +(R * Math.sin(th)).toFixed(3) });
+  }
+  pts.push({ at: 'goal-line', dy: -HALF });
+  return pts;
+}
+
 // ---------------------------------------------------------------------------
 // 1 · The slot
 // ---------------------------------------------------------------------------
@@ -477,6 +575,343 @@ const strongAndWeakSide = {
   puck: { at: 'faceoff-dot:right', dy: -8 },
 };
 
+// ---------------------------------------------------------------------------
+// 8 · The goal crease
+//
+// ⚠️ THE MOST CONSEQUENTIAL PIECE OF GEOMETRY THIS DOCUMENT OWNS, and until now the
+// only one of its named regions with no picture at all. Many documents defer here for
+// where the crease is; §3 is 1,600-plus words on it.
+//
+// FOUR THINGS THIS DIAGRAM DELIBERATELY DOES NOT DO.
+//
+// (1) NO PLAYER IS DRAWN. The crease is 8 ft wide. A forward's glyph is 2.9 ft of
+//     radius plus half of a 0.75 stroke, so 6.55 ft of ink across — more than three
+//     quarters of the region's width. Any skater placed near the edge encodes a
+//     distinction finer than the mark that carries it, and the one the section turns
+//     on ("work just outside the paint, not on its edge and not in it") is finer
+//     still. A picture cannot say that, so the caption says it in words instead, and
+//     says that the picture cannot.
+// (2) NO GOALTENDER either, which is a change of mind worth recording: a `G` at
+//     (87, 0) would orient the reader and is what dz-the-house does. It is left out
+//     for consistency with the four region diagrams above it in this file, none of
+//     which draws anybody — these are geography, and a lone glyph in the paint in a
+//     diagram whose whole subject is who may stand in the paint invites the wrong
+//     reading.
+// (3) NO ZONE LABEL. The label is drawn at the vertex mean with no collision
+//     avoidance, and the shortest honest name — "crease", six characters — reserves
+//     10.75 ft against a region 8 ft wide, so it would name low-slot ice the polygon
+//     does not cover. Same call and same reason as the unlabelled bands in
+//     scanning_and_anticipation.mjs and playing_without_the_puck.mjs. The region is
+//     named in the caption and in `describe`.
+// (4) NO OUTLINE. site/scripts/lib/rink.mjs already draws the real crease in red on
+//     every diagram, and this is genuinely painted ice. A second, dashed, blue border
+//     on top of the paint competes with it and invites a reader to take the wrong pair
+//     of lines for the marking — exactly the reasoning theTrapezoid records above.
+// ---------------------------------------------------------------------------
+
+const theGoalCrease = {
+  id: 'the-goal-crease',
+  owner: 'content/foundation/rink_map_and_glossary.md',
+  title: 'The goal crease',
+  half: true,
+  width: 900,
+
+  caption:
+    'The goal crease — the blue paint — shaded here. ' +
+    'Under NHL Rule 1.7 a two-inch red line runs one foot outside each goal post, ' +
+    'extends four feet six inches straight out at right angles to the goal line, and the ' +
+    'two straight sides are joined by a six-foot radius arc struck from the centre of the ' +
+    'goal line: eight feet wide at the goal line, six feet deep at its deepest point. ' +
+    'Under the IIHF book — the British one — it is essentially the same shape at metric ' +
+    'sizes, 2.45 m wide at the goal line. ' +
+    'Why it matters to you: the crease is the boundary of goaltender interference. ' +
+    'Two things this picture cannot show you. ' +
+    'The crease is a volume rather than a patch of ice — the NHL extends it four feet ' +
+    'vertically, to the height of the top of the goal frame, while IIHF Rule 1.7 says the ' +
+    'goal crease area extends vertically until the top of the crossbar rather than to a ' +
+    'fixed four feet — and a flat map of the ice draws only its floor. ' +
+    'And the region is eight feet across on a map of a hundred-foot half-rink, which is ' +
+    'too small a thing for any diagram at this scale to show you the difference between ' +
+    'standing at the edge of the paint and standing on its red line. ' +
+    'That difference is the one that costs you a goal: the red boundary line counts as ' +
+    'crease under the IIHF, USA Hockey and Hockey Canada, and no rule of the NHL’s says ' +
+    'either way. The single place the line’s status appears in the NHL book at all is a ' +
+    'reference table — Table 14, fifth group, headed "screening situations" — and it goes ' +
+    'the other way: an attacker who plants himself "on the crease line or outside the goal ' +
+    'crease" so as to obstruct the goalkeeper’s vision has the goal allowed. One row of an ' +
+    'appendix table, against three books that answer it the other way, is thin ground to ' +
+    'stand on with a goal at stake. So take the instruction rather than the picture — ' +
+    'keep your skates off the red line, not merely out of the blue paint.',
+
+  describe:
+    'The attacking half of the rink, the net at the right. The goal crease is shaded: it ' +
+    'is eight feet wide where it meets the goal line, a short straight side runs out from ' +
+    'each end of that width, and the two are joined by an arc that reaches six feet out ' +
+    'from the goal line at its deepest point, so the shape bulges into the zone rather ' +
+    'than back toward the end boards. The goal stands on the goal line behind it, and is ' +
+    'narrower than the crease. No players are drawn.',
+
+  zones: [
+    {
+      points: creaseOutline(),
+      // See note (3) above: no label, and note (4): no outline over the real paint.
+      stroke: 'none',
+      fill: 'rgba(15,90,143,0.26)',
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 9 · Home plate / the house
+//
+// ⚠️ THE OWNER DID NOT DRAW ITS OWN REFERENCE SHAPE. Three other modules draw this
+// region — offensive_zone_play.mjs (`oz-home-plate`), defensive_zone_coverage.mjs
+// (`dz-the-house`) and breakouts.mjs — and the document that DEFINES it did not. Every
+// one of those three was checked against §5 and against each other before this was
+// written, and all three agree with the section corner for corner; the polygon below is
+// that same shape, so nothing is being introduced, only anchored where it belongs.
+//
+// The corners are §5's sentence read straight off: "It runs in along the tops of the
+// two faceoff circles, straight down the dot lines to the two faceoff dots — 44 ft
+// apart — and then angles in to the two goalposts, which are 6 ft apart on the goal
+// line." The posts are the only two corners the position vocabulary has no name for,
+// so they are the goal-line node plus goal.post_y (3 ft), never a bare coordinate.
+// ---------------------------------------------------------------------------
+
+const homePlate = {
+  id: 'home-plate-the-house',
+  owner: 'content/foundation/rink_map_and_glossary.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'Home plate — the high-danger area, also called the house — is the shape drawn here. ' +
+    'It runs in along the tops of the two faceoff circles, straight down the dot lines to ' +
+    'the two faceoff dots, which are forty-four feet apart, so that part of it is ' +
+    'forty-four feet wide, and then angles in to the two goalposts, six feet apart on the ' +
+    'goal line. Drawn out it looks like a baseball home plate with its point at the net: ' +
+    'square across the top, tapering to the width of the goal mouth. ' +
+    'It is not an official marking and nothing on a rink paints it. It is a shape used by ' +
+    'analysts and increasingly by coaches, and the things it is read off — the circles, ' +
+    'the dots and the posts — are the ones that really are painted. ' +
+    'The exact boundaries vary a little between analytics providers: Natural Stat Trick, ' +
+    'Evolving Hockey and MoneyPuck all draw it slightly differently, so treat it as a ' +
+    'concept rather than a measurement. ' +
+    'The concept is simple and worth having. It is the working definition of a ' +
+    'high-danger chance, and shots from inside it are worth several times a shot from ' +
+    'outside it. ' +
+    'That turns into two instructions on the ice: take your shots from inside it, and ' +
+    'work the puck inside rather than shooting from outside.',
+
+  describe:
+    'The attacking half of the rink, the net at the right. A shaded six-sided region is ' +
+    'drawn on the ice: its up-ice edge runs straight across between the tops of the two ' +
+    'faceoff circles, its two long sides run down-ice from the top of each circle to that ' +
+    "circle's faceoff dot, and from each dot an angled edge runs in to the nearer " +
+    'goalpost, so the shape narrows to the width of the goal at the goal line. No players ' +
+    'are drawn.',
+
+  zones: [
+    {
+      points: [
+        { at: 'goal-line', dy: 3 },      // (89,  3)  right goalpost
+        'faceoff-dot:right',             // (69,  22)
+        'top-of-circle:right',           // (54,  22)
+        'top-of-circle:left',            // (54, -22)
+        'faceoff-dot:left',              // (69, -22)
+        { at: 'goal-line', dy: -3 },     // (89,  -3) left goalpost
+      ],
+      // Vertex mean (70.67, 0); "home plate", ten characters, reserves 17.9 ft and
+      // spans x 61.7 to 79.6 — inside the region it names.
+      label: 'home plate',
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 10 · Above and below the dots
+//
+// §5, The dots: "the four end-zone faceoff spots. Used loosely to mean the depth-line
+// they define across the zone", and "'above the dots' and 'below the dots' is how
+// coaches split the zone in half."
+//
+// The end-zone dots are at x 69 (§3: twenty feet out from the goal line), so the
+// depth-line is x = 69 and the two regions are the zone either side of it: the blue
+// line at x 25 to the end boards at x 100.
+//
+// ⚠️ "IN HALF" IS THE SECTION'S WORD AND THE TWO PARTS ARE NOT EQUAL. Above the dots
+// is 44 ft of the zone's 75 and below is 31 — visible in the picture the moment it is
+// drawn, which is why the caption says "the upper part and the lower part" rather than
+// letting a listener hear a claim the drawing contradicts. Reported to the coordinator
+// rather than edited: §5 is not this file's to change.
+//
+// The upper region needs no arc — the corner arc starts at x 72, so at x 69 and below
+// the side boards are still straight.
+// ---------------------------------------------------------------------------
+
+const aboveAndBelowTheDots = {
+  id: 'above-and-below-the-dots',
+  owner: 'content/foundation/rink_map_and_glossary.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'The dots are the four end-zone faceoff spots, twenty feet out from the goal line. ' +
+    'Used loosely, the two at this end define a depth-line straight across the zone, and ' +
+    'that line is how coaches split the zone in half: above the dots is everything from ' +
+    'it out to the blue line, below the dots everything from it in to the end boards. ' +
+    'Note what the picture shows about that word "half" — the upper part is the longer ' +
+    'of the two, so read it as the upper part and the lower part rather than as equal ' +
+    'areas. ' +
+    'This split is worth more than it looks, because it is the one relational term in ' +
+    'this vocabulary with an exact anchor. High and low are comparatives with no ' +
+    'boundary anywhere on the ice; the dots are painted, so once you know which end is ' +
+    'meant, above and below them name a fixed line rather than a feeling. ' +
+    'It divides jobs as well as ice. In a hybrid defensive system, for example, coverage ' +
+    'is man-on-man below the dots and zone above them — one coaching choice among ' +
+    'several, so find out which system your team plays. ' +
+    'The line itself is not painted. Only the two dots at its ends are, and the boundary ' +
+    'is read across between them — which is also how coaches use the hash marks, where ' +
+    '"below the hash marks" for the low half of the zone is the same idea one step ' +
+    'finer, and coaching observation rather than a counted one.',
+
+  describe:
+    'The attacking half of the rink, the net at the right, tinted in two shades either ' +
+    'side of an unmarked line drawn across the zone through the two faceoff dots. The ' +
+    'part from that line out to the blue line is labelled "above the dots"; the part from ' +
+    'it in to the end boards, containing the net, the crease and the ice behind the net, ' +
+    'is labelled "below the dots". No line is painted between them and no players are ' +
+    'drawn.',
+
+  zones: [
+    {
+      // (25, ±42.5) to (69, ±42.5). Vertex mean (47, 0); "above the dots", fourteen
+      // characters, reserves 25.1 ft and spans x 34.4 to 59.6 — inside the region.
+      points: [
+        { at: 'blue-line', dy: 42.5 },
+        { at: 'faceoff-dot:right', dy: 20.5 },     // (69, 42.5) — the side boards
+        { at: 'faceoff-dot:left', dy: -20.5 },     // (69, -42.5)
+        { at: 'blue-line', dy: -42.5 },
+      ],
+      label: 'above the dots',
+      fill: 'rgba(91,95,102,0.09)',
+      stroke: 'none',
+    },
+    {
+      // x 69 to the end boards, following the corner arc so the shading reaches the
+      // wall rather than cutting across it. Vertex mean (84.1, 0); "below the dots"
+      // spans x 71.6 to 96.6 — inside the region, crossing the goal line and the net,
+      // which carry no glyphs in this diagram.
+      points: [
+        { at: 'faceoff-dot:right', dy: 20.5 },     // (69, 42.5)
+        ...boardArc(1),
+        ...boardArc(-1).reverse(),
+        { at: 'faceoff-dot:left', dy: -20.5 },     // (69, -42.5)
+      ],
+      label: 'below the dots',
+      fill: 'rgba(15,90,143,0.13)',
+      stroke: 'none',
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 11 · The three zones
+//
+// §4 has no diagram and is the section the document itself calls "the thing that
+// confuses every beginner". It is a `##` rather than a `###`, so it is outside the
+// subsection census this file's other additions came from; it is here because the
+// confusion it names is spatial and a picture is the natural place to fix it.
+//
+// ⚠️ THE ONE THING A PICTURE OF THIS CAN GET WRONG is drawing the labels as though
+// they belonged to the ice. They belong to the team: "the same physical piece of ice
+// is *your* defensive zone and *their* offensive zone, simultaneously", and the ends
+// swap every period. Positive x is the attacking end by the corpus's own convention
+// (src/data/rink.json), so the picture has to make a choice — and the caption has to
+// say that it is the picture's choice.
+// ---------------------------------------------------------------------------
+
+const theThreeZones = {
+  id: 'the-three-zones',
+  owner: 'content/foundation/rink_map_and_glossary.md',
+  title: 'The three zones',
+  half: false,
+  width: 1100,
+
+  caption:
+    'The whole sheet, with the two blue lines dividing it into the three zones the ' +
+    'rulebook names. The defending zone is the one containing the goal your team is ' +
+    'defending, running from your own blue line to the end boards behind your own net. ' +
+    'The neutral zone is the centre ice area between the two blue lines. The attacking ' +
+    'zone is the one containing the goal you are attacking, from the opponent’s blue ' +
+    'line to the end boards behind their net. ' +
+    'The attacking end is drawn at the right here, and that is this picture’s choice ' +
+    'rather than a fact about the building. ' +
+    'Which is the part that confuses everyone: the zones are named relative to your team, ' +
+    'not to the ice. The same physical piece of ice is your defensive zone and their ' +
+    'offensive zone at the same moment, and because teams change ends after each period, ' +
+    'the end you defended in the first is the end you attack in the second. The label ' +
+    'follows the team, not the paint. So when a teammate says "get it deep", you have to ' +
+    'know whose zone they mean — and if you are in any doubt, say "our end" or "their ' +
+    'end" instead, which cannot be misheard. ' +
+    'One thing the shading cannot show: a zone includes its blue line. For offside the ' +
+    'puck is not in the attacking zone until it has completely crossed the line, and a ' +
+    'player standing on the line is not yet in the zone. The line is wide enough for that ' +
+    'to be a real distinction rather than a hair: NHL Rule 1.5 paints the blue lines twelve ' +
+    'inches across, the IIHF book thirty centimetres. Reading the width as existing for the ' +
+    'offside rule is this document’s inference, though — the rules that set the width do ' +
+    'not say why it is that wide.',
+
+  describe:
+    'The whole two-hundred by eighty-five foot rink seen from above, tinted in three ' +
+    'bands across its length. The band from the left-hand end boards to the near blue ' +
+    'line is labelled "defending zone"; the band between the two blue lines, containing ' +
+    'the centre red line and the centre faceoff circle, is labelled "neutral zone"; the ' +
+    'band from the far blue line to the right-hand end boards is labelled "attacking ' +
+    'zone". Each band runs the full width of the ice and follows the rounded corners to ' +
+    'the boards. No players are drawn.',
+
+  zones: [
+    {
+      // The far end: the blue-line edge at x -25, then round the corner arc to the end
+      // boards at x -100. Vertex mean (-61.2, 0); "defending zone", fourteen characters
+      // at 3.05 ft each on a full sheet, spans x -82.5 to -39.8 — inside the region.
+      points: [
+        ...blueLineEdge(-1),
+        ...boardArcFar(1),
+        ...boardArcFar(-1).reverse(),
+      ],
+      label: 'defending zone',
+      fill: 'rgba(91,95,102,0.09)',
+      stroke: 'none',
+    },
+    {
+      // Blue line to blue line, 50 ft (§1, a derivation from Rules 1.2 and 1.5 rather
+      // than a stated figure — the caption claims no number for it). Vertex mean
+      // (0, 0); "neutral zone", twelve characters, spans x -18.3 to 18.3.
+      points: [
+        { at: 'blue-line', dy: 42.5 },
+        { at: 'blue-line::far', dy: 42.5 },
+        { at: 'blue-line::far', dy: -42.5 },
+        { at: 'blue-line', dy: -42.5 },
+      ],
+      label: 'neutral zone',
+      fill: 'rgba(15,90,143,0.07)',
+      stroke: 'none',
+    },
+    {
+      // The near end, mirrored. Vertex mean (61.2, 0).
+      points: [
+        ...blueLineEdge(1),
+        ...boardArc(1),
+        ...boardArc(-1).reverse(),
+      ],
+      label: 'attacking zone',
+      fill: 'rgba(15,90,143,0.13)',
+      stroke: 'none',
+    },
+  ],
+};
 
 // ---------------------------------------------------------------------------
 // The two maps that replace this document's ASCII schematics.
@@ -543,6 +978,10 @@ export default [
   pointAndHalfWall,
   theTrapezoid,
   strongAndWeakSide,
+  theGoalCrease,
+  homePlate,
+  aboveAndBelowTheDots,
+  theThreeZones,
   ...MAPS,
 ];
 

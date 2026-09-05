@@ -414,6 +414,9 @@ When you cannot absorb, you must aim. The target is **the corners** — wide and
 - **Never direct into the slot.** The area directly in front of you is where the other team's best players are standing.
 - **Know where they are before the shot.** This is the mental half of rebound control, and it is the half that actually decides it. You must look off the puck *before* the shot is released and register who is where. Be specific about it: not "there's a guy open," but "there's a left shot open at the back post." That detail tells you both which save to select and where the rebound must not go.
 
+
+![](diagram:goalie-rebound-corners-not-slot)
+
 ### Freezing the puck — and the rules that govern it
 
 ```facts
@@ -538,6 +541,9 @@ A tip or deflection changes the puck's direction a few feet in front of you, and
 - **Expect the puck to change direction and stay balanced.** Your best chance on a tipped puck is being in the right place with a wide body and a still head, not a heroic reaction.
 - **Get the net-front player moved.** This is your defenceman's job, and it is the thing to shout about. See the skaters' section below.
 
+
+![](diagram:goalie-tip-from-the-point)
+
 ---
 
 ## Playing the Puck
@@ -592,6 +598,9 @@ Action: Find out which rules you are under before your first shift, and take the
 
 *🇬🇧 **The IIHF book does not have this defect, so if you play in Britain you can stop worrying about it.** IIHF Rule 1.8 gives the marking as "6.80m" along the goal line and "8.60m" at the boards, and IIHF Rule 27.7 — the penalty rule — repeats exactly those figures rather than leaving a superseded one behind. The shape is the shape you already know: 6.80 m is 22 ft 4 in against the NHL's 22 ft, and 8.60 m is 28 ft 3 in against the NHL's 28 ft. What genuinely differs is the **depth**, because the IIHF goal line sits 4.0 m from the end boards where the NHL's sits 11 ft — so an IIHF trapezoid is about two feet deeper. See [Rules Primer](../foundation/rules_primer.md) for the penalty rules, and [Defender](defender.md) for the retrieval consequences.*
 
+
+![](diagram:the-trapezoid)
+
 ### Stopping pucks for your defence
 
 ```facts
@@ -612,6 +621,9 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
   **⚠️ Under the IIHF book it is not a reading at all — it is answered, and answered against you.** The IIHF Situation Handbook 2025/26 puts exactly this case, at Situation 27.7: a goalkeeper retreating through the corner *"drops down on the knees and blocks the pass using the leg pads which is clearly inside the restricted area."* The answer: *"Since the goalkeeper 'plays' the puck in the restricted area, the goalkeeper must be assessed a minor penalty for delay of game."* No stick, no possession, no attempt to make a play with it — a pad in the way of a pass is playing the puck. **That is the operative interpretation in Britain**, so the conservative reading this document takes is not caution there, it is the rule. Two things the Handbook also settles, both in your favour, and in the same words in the 2025/26 (v1.1) and 2026/27 editions. **A puck you stop on the goal line is not behind it**, so stopping it there is not the offence — Situation 27.6 reasons that *"the puck must be over the goal line to be considered to be in the restricted area."* ⚠️ **Read "restricted area" carefully in that sentence, because the IIHF's two publications use the phrase in opposite senses.** The **Handbook** means the ice behind the goal line that you are barred from; the **Rulebook** means the trapezoid itself — Rule 1.8 is headed *"Goalkeeper's Restricted Area"* and describes the marked trapezoidal area, and the goalkeeper-penalties table lists the offence as *"Playing puck outside restricted area"*. The corpus and the rest of this section use the Rulebook's sense. And **a puck that comes off the glass and hits you while you are retreating is no penalty**, because *"the goalkeeper must play the puck to be penalized"* (Situation 27.9). Out there, get out of the way and let your defenceman have it.
 - **Know your team's convention.** Whether your goalie plays the puck at all is a coaching choice. Some teams want the goalie handling everything they legally can; others want the goalie to touch nothing and stay in the net. Both are defensible. Ask, and then be consistent.
 
+
+![](diagram:goalie-rim-stop-or-clear)
+
 ### The safe outlets
 
 ```facts
@@ -630,6 +642,9 @@ When you do move the puck, rank your options by risk:
 3. **A rim around the boards to the far winger.** Concedes possession but relieves pressure. Aim it to arrive where a teammate can meet it.
 4. **Off the glass and out.** Rarely wrong when you are in trouble, and goalies are allowed to be boring — but ***along*** the glass, never over it. A puck you shoot directly out of the rink from your own end is a two-minute minor **under NHL and IIHF rules** — USA Hockey's clause reaches only a *deliberate* clear, so an accidental one is no penalty there — and the next section is about the rules that make it one, in all four books.
 5. **A pass up the middle.** Almost never. A goalie's turnover in the middle of the ice is a shot on an empty net, and you are the one standing in it.
+
+
+![](diagram:goalie-safe-outlets)
 
 ### Putting the puck out of play — the minor that is yours too, and the tier above it after a whistle
 
@@ -682,10 +697,13 @@ Mindset: A goalie who handles the puck well is an asset; one who believes they h
 
 The best puck-handling decision a goalie makes is usually to leave the puck alone.
 
-- **Don't leave your net for a 50-50 puck.** If you lose the race, the net is empty and you are behind the play. The rulebook even anticipates this: racing out and jumping on a loose puck instead of playing it is a minor (NHL and IIHF Rule 63.2(vi)). ⚠️ **That is not a reason to hesitate over a puck you have already stopped.** The NHL and IIHF books both attach a Note to that same clause saying so in terms — coming out to cut down the angle, making the save and *then* covering the puck is legal — and Hockey Canada's Interpretation 3 to Rule 10.1(a) says the same thing in its own words. What the clause penalises is racing an attacker to a loose puck and smothering it instead of playing it.
+- **Don't leave your net for a 50-50 puck.** If you lose the race, the net is empty and you are behind the play. The rulebook even anticipates this: racing out and jumping on a loose puck instead of playing it is a minor (NHL and IIHF Rule 63.2(vi)). ⚠️ **That is not a reason to hesitate over a puck you have already stopped.** The NHL and IIHF books both attach a Note to that same clause saying so in terms — coming out to cut down the angle, making the save and *then* covering the puck is legal — and Hockey Canada's Interpretation 3 to Rule 10.1(a) permits it at clause ii, *"after stopping the shot, cover the puck"*. ⚠️ **Do not read Hockey Canada as settled, though**: clause v of the same Interpretation says that *"[w]hen a goaltender leaves their crease, they will not be allowed to freeze the puck"*, and **Hockey Canada nowhere says which of ii and v governs a cover made after a save outside the crease**, so treating ii as the exception is a reading and not a ruling. What the clause penalises is racing an attacker to a loose puck and smothering it instead of playing it.
 - **Don't handle it because you can.** Every touch is a chance to make a turnover you are out of position to save, because playing the puck takes you out of your net.
 - **If you commit, commit.** The worst outcome is starting to play the puck, changing your mind, and leaving both you and your defenceman out of position. Call **"I've got it"** and mean it.
 - **Watch the clock and the pressure, not your ego.** A goalie who handles the puck well is a real asset. A goalie who *believes* they handle the puck well is a liability.
+
+
+![](diagram:goalie-fifty-fifty-puck)
 
 ### Icing — you are the one who can wave it off
 
@@ -716,6 +734,9 @@ So the decision behind your net on every dumped puck is a real one, and it has t
 - **And you can cause an icing yourself.** Rule 81.1 stops play when *"any player of a team, equal or superior in numerical strength (power-play) to the opposing team"* shoots, bats or deflects *"the puck from his own half of the ice beyond the goal line of the opposing team"* — the same *"any player"* that Rule 5.1 defines as covering goalkeepers, and the same sentence in the IIHF book. **Rule 81.5's list of what is *not* icing does not rescue you.** It has three goalkeeper clauses and all three are about somebody else: a touch by the **opposing** goalkeeper, a goalkeeper dislodging the puck from the back of their own net, and the *"any player (other than the goalkeeper) of the opposing team"* who could have played it. None of them exempts the goalkeeper who shot it. This is a much rarer play than the delay-of-game minor above — it takes a hard rim or a stretch attempt from the trapezoid that carries the length of the ice untouched — but the cost is exactly the one you spend the rest of this section trying to impose on them: under NHL and IIHF Rule 81.4 it is **your** five who are stuck on the ice for the draw.
 
 **Under USA Hockey rules none of the movement part applies:** Rule 624(b) does not wave off icing for a goalie moving toward or feigning at the puck. Only an actual touch does. Find out which rule set you are under, because the same two strides mean opposite things.
+
+
+![](diagram:icing-the-race-and-the-dot)
 
 ---
 
@@ -765,6 +786,15 @@ These are the standard vocabulary. Words vary by team — agree yours in the roo
 - **"Back door"** — there is an unmarked opponent at the far post. The nearest player takes them, right now. That is a tap-in from the slot, the most dangerous ice on the rink — [Shooting](../technique/shooting.md) owns the shot-location values behind that and the limits on them. How it ranks against every other unmarked position is not something anyone has counted; what makes the call necessary is that the person who can see it is almost never the person who can cover it.
 - **"Shot"** — **not a warning that a shot is coming. It means you have the shooter, so your defenceman should take away the pass.** This is documented word for word in published goaltending material: *"When the puck is at the point, or when the opposing team has a two-on-one, it can be difficult for your defense to know what you want them to do. If you'd prefer that they take away the pass or guard the open man, call for 'shot!'... If you want the shot, call for it!"* ([Sportmentary — Ice Hockey Goalie: Communication Tips](https://sportmentary.com/ice-hockey/ice-hockey-basics/ice-hockey-goalie-communication-tips/)). Use it in that sense, because "a shot is coming" tells a skater nothing they can act on while "I have the shooter" tells them exactly where to put their stick. If your team already uses "shot" as a warning, pick a different word for the warning — the two meanings are incompatible and a defenceman has half a second to decode it. [On-Ice Communication](../foundation/on_ice_communication.md) covers the same split from the defenceman's side.
 
+
+![](diagram:the-call-and-who-can-see-it)
+
+![](diagram:breakout-d-to-d)
+
+![](diagram:breakout-reverse)
+
+![](diagram:breakout-rim)
+
 ### How to call well
 
 ```facts
@@ -811,6 +841,9 @@ One attacker, you, and a lot of time to think — which is the actual difficulty
 - **What to watch is a genuine coaching split.** One school says **watch the puck, not the body** — everything above the puck is theatre, and a body fake exists only to move you. The other says the puck is exactly what the shooter controls and fakes with, so read the part of them that cannot lie: the BVHS goalie manual's breakaway checklist step 3 is *"Read the play: Watch the shooter's chest and hips, not their stick or eyes. Hold your ground and wait for them to make the first move."* Note that the two schools agree on what they are *against* — the stick, the eyes and the shoulders — and disagree only on whether the puck or the torso is the honest signal. **Ask your goalie coach which they teach, and be consistent about it**, because switching mid-play is how you end up reading neither.
 - **Take away what they are showing you.** If they have the puck out in front and are winding up, respect the shot and stay big. If they're pulling it to their forehand with their head up, respect the deke and stay patient.
 - **The poke check is available but expensive.** It works when the puck gets too far in front of them. If you miss, you have neither reach nor balance.
+
+
+![](diagram:goalie-breakaway-retreat)
 
 > **⚠️ Do not knock your own mask off to kill the play. Do it against a breakaway and under two of the four books it is not a penalty at all — it is a goal.** Deliberately removing your helmet or face mask *"to secure a stoppage of play"* is a **minor for delay of game** under **NHL Rule 9.6** and **IIHF Rule 9.6**, which write that limb in the same words, and under **USA Hockey Rule 304(e)**, which extends it to skaters as well: *"A minor penalty for delay of game shall be assessed to a goalkeeper or skater who causes a stoppage of play by deliberately removing their helmet/facemask during play"* — and under **Hockey Canada Rule 3.6(d)**, which routes it the same way: *"If the goaltender deliberately removes their protective equipment to gain a stoppage of play, they will be penalized under Rule 10.1 (a) – Delay of Game."* **All four books write that floor. It is above it that they stop agreeing.**
 > 
@@ -863,6 +896,9 @@ The call for it is **"I've got the pass" / "take the shooter."** Say it out loud
 
 **Name it as a convention, because it is one.** Some coaches vary it: against a strong shooter with a weak trailer, or when a backchecker has picked up the second attacker, the defenceman may instead take away the shooting lane. **And some teams play the alternative system outright** — the defenceman times a slide flat across the passing lane to remove the pass and force the carrier to shoot. Where that is your team's method the slide is the plan, not an error, and it does not change your job: you still have the shooter, square and set. What must not happen is the defenceman sliding **when your team plays the passing lane**, because there it opens both options at once — and, more than either, the two of you arriving at the rush with different answers. Ask your defencemen and your coach what your team does, before the game rather than during it. The full treatment of every numerical situation, from the skaters' side, is in [Defending the Rush](../systems/defending_the_rush.md).
 
+
+![](diagram:rush-2-on-1)
+
 ### 3-on-2s
 
 ```facts
@@ -874,6 +910,11 @@ Action: Find out which 3-on-2 version your team plays, because the two fail in d
 ```
 
 The common default is each defenceman taking an outside attacker and neither chasing the carrier, with the middle attacker left to whoever is backchecking that lane — usually the centre, though some teams instead have the strong-side defenceman take the puck carrier and the weak-side defenceman split the middle and far man. Both are coaching choices and they fail in different directions, so find out which one your team plays ([Defending the Rush](../systems/defending_the_rush.md) sets out both). From your side, the read is the same as a 2-on-1 but with a wider back door: don't over-challenge, stay a little deeper, and prioritise the ability to move laterally over the last foot of angle. Talk — "odd man" tells everyone to stop thinking about the puck and start counting. (An **odd-man rush** is any attack where the attackers outnumber the defenders who got back: a 2-on-1, a 3-on-2, a breakaway.)
+
+
+![](diagram:rush-3-on-2-default)
+
+![](diagram:rush-3-on-2-alternative)
 
 ### Shootouts
 
@@ -1119,6 +1160,9 @@ Never: Blame the goalie out loud; answer their calls instead, because one word b
   - ⚠️ **Only two books stop play for the hit itself — everywhere else a referee has to judge the goalie hurt first.** Every book *does* write a stoppage for an injured goalkeeper (**NHL and IIHF Rule 8.1**, **USA Hockey Rule 206(a)**, **Hockey Canada Rule 2.4(b)**, **CARHA Rule 20(d)**), so "no rule covers them" would be wrong. The catch is the trigger: all of those ask an official to read an injury off a player, which is what a goalie behind a cage supplies least of. Only **IIHF Rule 9.6** and **Hockey Canada Rule 6.18(a)** key a stoppage to the puck hitting the mask, and both are narrower than they sound — the IIHF's is a *"may"* that turns on the referee believing the goalkeeper is *"dazed"* and is cancelled by an immediate scoring chance; Hockey Canada's *"shall"* reaches only *"categories of U13 and below"*. **The NHL, USA Hockey's stand-up rules and CARHA write no mask-specific counterpart at all** — USA Hockey's only version of it is a Sled Hockey rule, and CARHA's Rule 24(f) stops play when a goalkeeper *loses* their helmet rather than when one takes the shot and keeps it on. So a shot you take at their head in a drill is one no official is obliged to notice. The full picture, and what a goalie should do about it, is under *If you take one off the mask*.
   - ⚠️ **And the warm-up is inside the rules, not outside them.** All four books confine each team to its own half of the ice: **NHL and IIHF Rule 86.6** — *"each team shall confine its activity to its own end of the rink"*, both cross-referencing their own fighting rule at that point — **USA Hockey Rule 636(c)**, which gives each team its warm-up *"on their half of the rink"*, and **Hockey Canada Rule 2.2(i)** — the letter, in a list running (a) to (l), not a Roman numeral — under which *"players will be restricted to their own half of the ice"*. So shooting at the **opposition's** goalie in warm-up breaks a rule in all four, which shooting at your own does not. ⚠️ **What happens next splits two-and-two, and the half that matters to a British reader is not the penalty half.** **USA Hockey Rule 502(b)** says *"[p]enalties may also be assessed during the warm-up period"*, and **Hockey Canada Rule 2.2(j)** that the referee *"will penalize any player who commits a violation of the rules during the pre-game warm-up"*, with the penalty *"served at the start of the game"*. 🇬🇧 **The NHL and the IIHF report it rather than penalising it** — NHL 86.6 has a violation *"reported to the Commissioner"*, IIHF 86.6 *"reported to the Proper Authorities"*, both under **Rule 86.6**, which is the operative one. ⚠️ **IIHF Rule 5.6 is often reached for here and will not carry it:** its *"No penalties are to be assessed but a report of the incident must be submitted to the Proper Authorities"* — word for word in the 2025/26 (v1.1) and 2026/27 editions — follows three provisions about protective equipment, players not on the roster sheet and warming up at a stoppage, 5.6 does not confine the teams to their own halves at all, and the same book penalises fighting before the drop of the puck at Rule 46.10. **Neither rule is a licence** — reporting routes the incident past the referee to the people who decide whether you play next week.
 - **Never blame the goalie out loud.** They already know. The only thing your comment changes is their next twenty minutes.
+
+
+![](diagram:net-front-walk-out-direction)
 
 ---
 

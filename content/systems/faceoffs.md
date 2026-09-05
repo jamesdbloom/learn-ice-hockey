@@ -142,7 +142,7 @@ Three things follow from that table, and they are worth holding onto:
 Action: Work out where the next draw will be and start skating there before the whistle finishes
 Rule: Centre ice takes period starts, draws after a goal, and an erroneous icing call (Rules 76.2, 81.2)
 Rule: After an icing or a penalty the draw is in the offending team's end (NHL and IIHF Rules 81.2, 76.2); the other team's choice of dot is NHL and IIHF only, USA Hockey 612(b) and 624(a) giving none
-Rule: Hockey Canada 6.4(b) gives that choice in Junior and Senior divisions only, and you lose it unless you tell the referee your dot "prior to the start of the line change procedure"
+Rule: Hockey Canada 6.4(b) gives the choice of end-zone dot to the attacking (non-offending) team, in Junior and Senior divisions only and only after an icing or a time penalty, and that team loses it unless it tells the referee its dot "prior to the start of the line change procedure"
 Rule: A stoppage between the end-zone dots and the end boards draws at the spot on the side it happened, "unless otherwise expressly provided by these rules" (NHL and IIHF Rule 76.2) — USA Hockey 612(b) takes the nearest spot, but only where it calls for a last play face-off
 Rule: A stoppage the attacking team caused in its attacking zone is a different draw under USA Hockey — 612(c) sends it to the nearest neutral-zone spot, and 612(g) moves any draw back toward the goal of the team that caused the stoppage
 Rule: Offside on a carry-in draws at the neutral-zone dot outside that blue line (Rule 83.6)
@@ -153,6 +153,9 @@ Never: Fire the puck over the line — carrying it over and being whistled costs
 ```
 
 This is the part worth actually learning, because knowing where the next draw will be lets you start skating there before the whistle finishes.
+
+
+![](diagram:faceoff-where-the-draw-goes)
 
 **To centre ice:**
 - The start of every period, and after every goal.
@@ -182,7 +185,7 @@ This is the part worth actually learning, because knowing where the next draw wi
 
 **Read the two conditions on that, because it is narrower than it sounds and the narrower version is the one that decides where you stand.** A **last play face-off** is USA Hockey's own term, and 612(b) defines it twice over: it happens *"in any instance where a stoppage of play occurs as a result of the actions of both teams or if play is stopped for any reason other than what is specified in the rules"*, and it is *"defined as the nearest face-off spot in the zone where the puck was last played."* So the nearest-spot answer applies to a stoppage that is nobody's fault in particular, or both teams' — not to every stoppage low in the zone. **A stoppage the *attacking* team caused in the attacking zone is a different draw entirely**: Rule 612(c) sends that one *"to the nearest neutral zone face-off spot, unless otherwise covered in these playing rules."* And Rule 612(g) overrides on top of all of it — *"[a] team causing a stoppage of play shall not gain a territorial advantage with the ensuing face-off. In this instance, the ensuing face-off shall be at the nearest face-off spot closer to their own goal."*
 
-**Hockey Canada does give you the choice, and then rations it twice over.** Rule 6.4(b) grants it *"[i]n Junior and Senior divisions"* only, after an icing or a time penalty — and it is not automatic: *"[t]he attacking team must indicate their desired face-off location to the Referee prior to the start of the line change procedure. If they fail to do so, then the face-off will take place at the location prescribed by Rule 6.3 – Face-off Location."* **So under that book, name your dot early or lose it.**
+**Hockey Canada does give a choice of dot — but not to you, if you were the one who caused the stoppage — and then rations it twice over.** Rule 6.4(b) grants it *"[i]n Junior and Senior divisions"* only, after an icing or a time penalty — and it is not automatic: *"[t]he attacking team must indicate their desired face-off location to the Referee prior to the start of the line change procedure. If they fail to do so, then the face-off will take place at the location prescribed by Rule 6.3 – Face-off Location."* **So under that book the choice belongs to the *attacking* team — the side that did not ice the puck or take the penalty — and even they lose it unless they name the dot early.**
 
 **And the post-whistle scrum catches more attacking players in both of those books than it does in the NHL's — though the NHL's rule is wider than it is usually quoted.** Rule 76.2 spends one sentence on the **attacking** team's point men and anyone coming off its bench, and then adds a second that most summaries drop: *"Should any of the non-offending players enter into the attacking zone beyond the outer edge of the end zone face-off circle during an altercation, gathering or 'scrum,' the ensuing face-off shall take place in the neutral zone near the blue line of the defending team."* The IIHF prints the same sentence at its own 76.2, in near-identical wording — *"Should any of the non-offending Players enter the attacking zone…"* **What the other two books add is that on the attacking side it is not just the point men and the bench.** **USA Hockey Rule 612(d) catches any attacking player**: the draw moves to the nearest neutral-zone spot *"if any attacking player enters the end zone further than the outer edge of the face-off circles nearest the blue line"*. **Hockey Canada Rule 6.3(d)(vi) is the same**, moving it out when *"any player of the attacking team enters into the end-zone beyond the top of the face-off circles after play has stopped."* So joining the shoving match as an attacking forward costs you the draw under USA Hockey and Hockey Canada where it might not under the NHL's book or the IIHF's — the reverse of the direction people expect.
 
@@ -671,6 +674,8 @@ A centre's shot handedness determines which circle they're better in, and every 
 
 ---
 
+![](diagram:faceoff-strong-side-dot)
+
 ## Full Five-Player Alignments
 
 > **This entire section describes coaching choices, not rules of hockey.** Every team's faceoff alignment is different, and the differences are large. What follows is the most common default at each location, with realistic alternatives named. **Find out what your team runs before your first shift** — and specifically, find out what the *call* is for each draw. A faceoff alignment that half the line is guessing at is worse than no alignment.
@@ -802,7 +807,13 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 
 **The D one-timer.** The centre pulls the puck straight back to the strong-side defenceman, who shoots first-time. The whole point is that the shooter's feet are set and traffic is already in place before the puck moves. Its weakness is that it is the play every penalty kill and every defensive alignment expects — the inside winger's shooting lane needs to be cleared by someone, usually the net-front player stepping across.
 
+
+![](diagram:faceoff-ozone-d-one-timer)
+
 **The winger walk-out.** The centre pulls the puck to the inside winger in the circle, who takes a stride toward the middle and shoots or feeds the slot. Better than the D one-timer against a team that immediately pressures the point, because you're attacking the space they vacated.
+
+
+![](diagram:faceoff-ozone-winger-walkout)
 
 **The tip play.** The pull goes to the point, but the intended outcome is a deflection rather than a clean shot — someone screens, someone tips. Lower expected value per shot, higher rebound and chaos value, and it works when the goalie can see everything else you do. This is also the safest play, because a point shot into traffic rarely turns into a counterattack.
 

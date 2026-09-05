@@ -106,6 +106,9 @@ Priority: Getting the puck out of danger beats making a great play
 
 A **rim** and a **reverse** are different plays and worth keeping straight: a rim sends the puck *onward* around the boards in the direction you're facing; a reverse sends it *back the way it came*, against the flow of the forecheck, usually to your defence partner or a defenceman arriving behind you. A reverse beats pressure that has over-committed; a rim beats pressure that is sealing you in.
 
+
+![](diagram:centre-out-of-the-middle)
+
 **Goal:** Relieve pressure and safely move the puck toward an exit.
 
 **Key considerations:** The middle of the ice in your defensive zone is the worst place to lose the puck — **coaching consensus reasoned from shot danger and recovery time, not a measured ranking**, and no study ranking turnovers by where on the ice they happen was found for this document — read that as "none found here", not as proof that none exists. [Risk Management](../hockey-iq/risk_management.md) grades every area of the ice by what a turnover there costs you, and owns that grading. If you are under pressure in the middle, move to the boards or behind the net first, then distribute.
@@ -217,6 +220,9 @@ Goal: Maintain possession through the neutral zone or safely advance the puck
 
 **What to do:** If pressured in the middle of the neutral zone, move the puck to a winger or chip it off the boards. Don't try to carry through heavy traffic in the middle: coaching material puts the making of **odd-man rushes** — attacks where the attackers outnumber the defenders coming back, like a 2-on-1 or a 3-on-2, and a high-danger scoring chance — in the middle third of the ice. **That is coaching consensus rather than a tracked figure**: no public data classifies an odd-man rush by the play that created it. Quick decision-making is more valuable than individual skill here.
 
+
+![](diagram:centre-nz-get-it-to-the-outside)
+
 **Goal:** Maintain possession through the neutral zone or safely advance the puck.
 
 **Key considerations:** The middle third is where coaching material puts the making of odd-man rushes against your team — **consensus rather than a counted ranking**, because nothing published classifies an odd-man rush by the play that created it. [Neutral Zone Systems](../systems/neutral_zone_systems.md) and [Risk Management](../hockey-iq/risk_management.md) both carry that limit. Keep it simple under pressure. Get the puck to the outside.
@@ -271,6 +277,9 @@ Rule: Tag-up is a five-man act — the offside is nullified only when every play
 
 The centre-specific version: **you set the line's pace into the zone.** You are attacking through the middle, the widest and most-watched lane, so it is tempting to slow down and be safe. Instead, time your stride so the puck crosses first and arrive at full speed. If you coast, both wingers arrive with you, and a line that enters slowly is exactly the one a defence stands up at the blue line. ⚠️ **Do all of it with your head up.** Arriving at speed through the middle, and counting your linemates out to tag up, both invite you to drop your eyes in the one lane where open-ice contact happens — and you cannot brace for a hit you cannot see. [Body Contact and Battles](../technique/body_contact_and_battles.md#keep-your-head-up-always-this-one-rule-prevents-most-of-it) owns that rule, the reason for it, and the one book that protects you *less* when your head is down, which is the British reader's.
 
+
+![](diagram:centre-nz-arrive-behind-the-puck)
+
 ---
 
 ## Offensive Zone
@@ -293,6 +302,9 @@ Action: Keep moving and keep the puck moving
 **Where to be:** In the slot — the high-danger area between the two faceoff circles, stretching from the top of the circles down to the front of the net.
 
 **What to do:** Look to shoot from the slot. On the coaching-consensus conversion ranges [Shooting](../technique/shooting.md) owns — roughly 10–15% from the slot against 2–4% from the perimeter, **on a source that names no dataset**, so trust the gap rather than the decimals — a slot shot is worth roughly three to seven times a perimeter one. If defenders close in, distribute to a winger on the half-wall (the boards area roughly level with the faceoff dot — between the corner and the point) or in the circle, or to a defenseman at the point for a shot. Keep moving and keep the puck moving.
+
+
+![](diagram:centre-oz-slot-options)
 
 **Goal:** Create a shot on net, either directly or by finding a teammate in a better position.
 

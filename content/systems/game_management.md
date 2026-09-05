@@ -100,6 +100,11 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 - No blind D-to-D passes across your own goalmouth.
 - No stretch passes you're not sure about. An interception at your own blue line is worse than a chip out.
 
+
+![](diagram:the-risk-map)
+
+![](diagram:breakout-d-to-d)
+
 **2. Chip out, don't force out.** A **chip** — a short, deliberate flip or wall-play that puts the puck past a forechecker and out of the zone — beats an attempted breakout pass under pressure. You will lose possession, but you'll lose it 150 feet from your net, with your team facing the right way. Getting the puck out and getting a change is worth more than a coin-flip at a controlled exit. *(The "40%" break-even you will see quoted for this is arithmetic with nothing behind it — no published work sets a threshold for this decision the way Tulsky's does for zone entries. Use the direction, not a number.)*
 
 > **Careful — this is where a good idea becomes a penalty.** Under **NHL Rule 63.2(iii)** a player who shoots or bats the puck **directly (non-deflected) out of the playing surface from his own defending zone** takes a two-minute minor for delay of game. There is no "I was under pressure" exception, but there are three written carve-outs: the clause applies *"except where there is no glass"*, and its NOTE adds that *"when the puck is shot into the players' bench, the penalty will not apply"* and that *"when the puck goes out of the playing area directly off a face-off, no penalty shall be assessed."* Over the glass **behind** the bench is still a penalty. Keep the puck down and off the glass-line, or make sure it deflects. (Most rec leagues either don't call this or apply it inconsistently — but never assume.)
@@ -108,13 +113,24 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 
 **3. Take away the middle.** Concede the outside; deny the slot and the middle lane through the neutral zone. Practically: your stick lives in the passing lane, you defend with your feet rather than lunging, and you never chase a puck carrier to the wall and leave the middle open behind you.
 
+
+![](diagram:stick-in-lane-body-net-side)
+
 **4. Short shifts.** 30–35 seconds instead of 50. Fresh legs defend; tired legs reach. A team that changes cleanly every 35 seconds late in a game is much harder to score on than a team of tired heroes.
 
 **5. Win the defensive-zone draws.** Coaches treat a defensive-zone faceoff loss with three minutes left and a one-goal lead as the most dangerous single event in the game — coaching emphasis, not a counted one — because it hands the opposition immediate set-up possession in your end. Have your best faceoff man out there, have a clear plan for the loss as well as the win, and know your wall assignments. See [Faceoffs](faceoffs.md).
 
+
+![](diagram:faceoff-dzone-alignment)
+
+![](diagram:faceoff-dzone-clean-loss)
+
 **6. Keep forechecking — just choose the *right* forecheck.** This is a system choice, not a rule of hockey. The default assumed here is a **2-1-2 forecheck** (two forwards pressuring in the offensive zone, one high, two defencemen at the line). Many teams switch with a lead to a **1-2-2** (one forechecker steers the puck to one side; two forwards hold the neutral-zone line) or a **1-1-3** (one chaser, one mid-ice support, three players across the neutral zone — commonly called a trap). Under a 1-2-2 or 1-1-3, your job as the first forward in is not to win the puck, it's to take away one side of the ice so your teammates can intercept the exit. **Find out which one your team goes to with a lead, and when.** Turning up as an aggressive F1 while the other four are trapping is how leads get thrown away.
 
 > **F1 / F2 / F3 are roles, not people.** They are defined by order of arrival at the puck, not by whether you are a centre or a winger.
+
+
+![](diagram:forecheck-212)
 
 ### What doesn't work
 
@@ -191,6 +207,13 @@ What to add, in roughly this order of safety:
 
 **The non-negotiable in all of this: someone is always the last man back.** If a defenceman goes, a forward replaces them high. That swap has to be spoken out loud. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
+
+![](diagram:pinch-centre-high)
+
+![](diagram:pinch-centre-below-the-goal-line)
+
+![](diagram:forecheck-pinch)
+
 ### When to start taking risks
 
 ```facts
@@ -265,6 +288,9 @@ Convention: Umbrella, overload or your normal power-play look at 6-on-5 is a tea
 
 The extra attacker is almost always a forward, and the sixth skater usually comes on for the goalie at a stoppage with an offensive-zone faceoff, or on the fly once you have possession in their end.
 
+
+![](diagram:faceoff-goalie-pulled)
+
 The most common shape takes a standard power-play look and adds a second body high: **two players at the points (the area just inside the blue line, not the line itself), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**. The principles matter more than the diagram:
 
 - **Get set up.** A 6-on-5 that has to enter the zone repeatedly is wasting its advantage. Win possession, gain the line, and get organised.
@@ -305,6 +331,9 @@ This is the one time you get an extra attacker for free, and amateur teams waste
 Under **NHL Rule 15.1**, when a player on the team *not* in control of the puck commits a penalty, the referee **raises an arm and delays the call**; play continues until **the team to be penalized gains control of the puck**. So the moment the arm goes up, your goalie can skate to the bench and you play 6-on-5 with **no empty-net risk** — because the offending team cannot score.
 
 The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delayed penalty the offending team cannot score **unless the non-offending team shoots the puck into their own net.** A deflection off an opponent doesn't count; your own defenceman ringing it off your own goalie does. So: no blind D-to-D passes across your own crease during a delayed call.
+
+
+![](diagram:delayed-penalty-your-own-net)
 
 > **⚠️ "Delayed penalty" names two different things, and only one of them means
 > pull the goalie.** What is described here is the signalled call under **Rule 15.1**
@@ -618,6 +647,9 @@ The format arrived in 2015-16 to reduce shootouts and worked — the share of **
 - **Only change with possession.** You never surrender the puck to get fresh legs.
 - **The goal usually comes from a tired opponent.** The winning play is often not a great shot — it's isolating a defender who has been stuck out for 90 seconds and can't get off.
 - **Use your goalie as an outlet.** With the extra space, a pass back to the goalie is a legitimate reset. See [Goaltender](../positions/goaltender.md).
+
+
+![](diagram:ot-3-on-3-regroup)
 
 **Penalties in 3-on-3 (Rule 84.3)** are unusual and worth knowing:
 - A penalty makes it **4-on-3**, not 3-on-2 — the non-offending team *adds* a skater.

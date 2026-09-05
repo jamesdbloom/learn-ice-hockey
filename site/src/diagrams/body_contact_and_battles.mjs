@@ -916,4 +916,431 @@ const angleIntoTheCorner = {
   puck: W_PUCK,
 };
 
-export default [anglingYourRoute, netFrontWalkOut, cornerEscapeRoutes, angleIntoTheCorner];
+// ---------------------------------------------------------------------------
+// The inside lane, and the route it lengthens
+// ---------------------------------------------------------------------------
+//
+// §10 "Loose Puck Races and 50-50 Pucks", "Arrive with body position, not just with
+// speed". The section's own sentences, which this picture draws and nothing more:
+//
+//   "Winning the race is not the same as winning the puck. The player who arrives half
+//    a step behind but *on the inside*, between the opponent and the puck, usually ends
+//    up with it."
+//
+//   "A skater can use their body position while maintaining their skating lane, to force
+//    an opponent to take a less direct route to the puck, so long as they do not use a
+//    hand or arm to hold or block the opponent." (USA Hockey, quoted in §10.)
+//
+//   "**So: skate the inside lane. Make them go the long way round. Do not use your
+//    hands.**"
+//
+//   "approach on an arc, not straight at the puck, so that you get there already turned"
+//
+// ⚠️ WHY THIS SECTION AND NOT §4 OR §7, WHICH TEACH THE SAME THING. Three subsections of
+// this document say one idea: §4 "What that gives you" (NHL 56.1's "lengthen an
+// opponent's path to the puck"), §7 "Arrive first — and arrive with position, not just
+// speed", and this one. §10 is the only one of the three that writes the geometry as a
+// LANE and a ROUTE — "skate the inside lane", "a less direct route to the puck", "approach
+// on an arc" — and a lane and a route are the two things this notation can draw. §4's own
+// vocabulary is a shoulder, a hip and a stance, and §7's is an arrival. One picture, and
+// it belongs where the words are geometric. If a marker is ever wanted in §4 or §7 it
+// should reference this id rather than a second drawing being made.
+//
+// ⚠️ AND IT IS DELIBERATELY NOT DRAWN AT THE BOARDS, though most 50-50 pucks are. §10's
+// wall case is a separate subsection with its own hazards ("Protecting yourself on the
+// boards"), and this document already owns a wall picture — `angle-into-the-corner`,
+// referenced from §6 — whose whole subject is how a race that finishes at the wall has to
+// be taken. Drawing this one in the corner too would put two routes into the same corner
+// teaching two different things, and would drag a boards-safety instruction into a caption
+// whose picture shows no boards contact. So the loose puck here sits in open ice, twelve
+// feet off the dasher, and the caption says which case is drawn.
+//
+// ⚠️ THE FAINT DASHED LINE IS NOT A ROUTE AND NOT A MARKING ON THE ICE. It is the straight
+// line from the opponent to the puck — the route he would take if nobody were in it — and
+// it is drawn as an unfilled two-point zone, which is the device `shooting-lane-and-the-step`
+// uses for the same job and discloses in its own caption in the same terms ("that line is
+// not a marking on the ice and nothing travels along it"). It is there so the reader can see
+// what the body position takes away. Without it the picture is two players skating, and the
+// claim in the caption would have nothing under it.
+//
+// ⚠️ THE OPPONENT CARRIES NO ROUTE, AND THE OBVIOUS DESIGN DID. The first version gave him
+// a bowed route swinging outside the arrival and finishing short of the puck on the far
+// side. It fails twice. Two arrowheads then finish within about seven feet of each other
+// pointing different ways, which is the arrowheads-landing-on-each-other defect this corpus
+// has already paid for; and it authors a choice that is his, not the reader's — he might
+// take the long way, or check up, or leave it. What the section claims is that the direct
+// route is gone, and the dashed line plus a body standing on it is exactly that claim and
+// no more. `angle-into-the-corner` gives its checker no route for the same reason.
+//
+// ⚠️ NO CONTACT IS DRAWN AND NONE IS IMPLIED. The two players never meet: the arrival is
+// 24.8 ft from the opponent at the curve's closest approach to him, and he lies behind the
+// tip rather than ahead of it, so neither limb of THE ARRIVAL INVARIANT in lib/rink.mjs is
+// engaged. That is not incidental. §10's entitlement is an entitlement to OCCUPY ICE, and
+// the same paragraph draws the line at the hands: the free hand may fend off and may not
+// hold, pull, tug or grab. A picture that showed the two bodies meeting would be drawing
+// the half the section spends its rules on.
+
+// The loose puck: a rebound or a puck flipped out, sitting in open ice inside the faceoff
+// circle. `faceoff-dot:right` is (69, 22), so this is (77, 26) — 12 ft up-ice of the goal
+// line and 16.5 ft off the side boards, which at this x run straight at y = 42.5. Nothing
+// here is a puck against a wall.
+const IL_PUCK = { at: 'faceoff-dot:right', dx: 8, dy: 4 };        // (77, 26)
+
+// The opponent, wide and up-ice, on the outside. `top-of-circle:right` is (54, 22).
+const IL_OPP = { at: 'top-of-circle:right', dx: -20, dy: 12 };    // (34, 34)
+
+// You, level with him up the ice and inside him — nearer the middle, which is what puts
+// you in a position to get across his line rather than to trail him down it.
+const IL_YOU = { at: 'top-of-circle:right', dx: -18, dy: -10 };   // (36, 12)
+
+// WHERE YOU ARRIVE: on his line, seven feet short of the puck.
+//
+// Arithmetic, so the next editor can refute it rather than trust it. Every figure below is
+// re-derivable from the four anchors and the bow, and none should be carried forward if any
+// of them moves.
+//
+// IT IS ON HIS LINE, AND THAT IS THE WHOLE CLAIM. The dashed line runs (34, 34) -> (77, 26),
+// i.e. y = 34 - (8/43)(x - 34). At x = 70 that is 34 - 6.698 = 27.302, and the arrival is
+// drawn at (70, 27.3) — 0.002 ft off it. It sits 7.12 ft from the puck, outside the 3.275 ft
+// of ink a forward's circle carries plus the puck disc's own 1.1, so no mark eats another.
+//
+// ⚠️ THE FIRST VERSION OF THIS PICTURE WAS GEOMETRICALLY IMPOSSIBLE AND EVERY DISTANCE IN IT
+// CHECKED OUT. It had you at (30, 10) and him at (42, 36), and the arithmetic beside it was
+// right about the arc, the clearances and the crossing. It was still false: he was 29.1 ft
+// from the arrival point along his own line and your route to the same point was 47 ft, so
+// the picture asserted that you win a lane you cannot reach first. NO CHECKER LOOKS AT THIS —
+// `check-arrivals` measures clearances and never a race — and no clearance was wrong. The
+// layout now carries the comparison explicitly:
+//   HIS DISTANCE TO THE ARRIVAL, along the line he is drawn on: hypot(36, -6.7) = 36.62 ft.
+//   YOURS, integrated along the DRAWN CURVE rather than taken off the chord: 38.40 ft, which
+//   lies between the chord's 37.28 and the control polygon's 40.57 as a quadratic's length
+//   must. ⚠️ Do not use the chord here: it under-reports by 1.1 ft, which is most of the
+//   difference this comparison is about.
+//   So you travel 1.78 ft further to the same patch of ice, which is the section's own
+//   "arrives half a step behind but on the inside" and not a claim that you get there first.
+//
+// THE ARC, which is the second thing the section asks for and the one a still picture can
+// show. The route is a quadratic Bezier with `bow: -8`: the chord (36,12) -> (70,27.3) has
+// length 37.29 and unit (0.9118, 0.4103), the perpendicular is (-0.4103, 0.9118), so the
+// control point is the chord midpoint (53, 19.65) plus (-0.4103, 0.9118) x (-8) =
+// (56.28, 12.36).
+//   THE DEPARTURE is control - from = (20.28, 0.36), 1.0 degree — he sets off straight up the
+//   ice, inside him, rather than angling out at the puck.
+//   THE ARRIVAL TANGENT is to - control = (13.72, 14.94), 47.5 degrees — running up-ice and
+//   ACROSS his lane. The 46-degree swing between the two is the arc: "approach on an arc, not
+//   straight at the puck". Drawn straight from the same start he would arrive on the chord's
+//   own 24.2 degrees.
+//   ⚠️ WHAT THE ARC DOES NOT DRAW, and the caption says so: the turn. §10's instruction is to
+//   "turn your hips so your backside is between the opponent and the puck", and a glyph in
+//   this notation HAS NO FACING. A tangent is the direction of travel and says nothing about
+//   which way a body is pointed. Claiming the picture shows an arrival "already turned" would
+//   be a caption outclaiming its picture.
+//   ⚠️ AND THE BOW-TO-CHORD RATIO IS THE THING TO WATCH, NOT THE BOW. `angle-into-the-corner`
+//   records a bow of 18 on a 46 ft chord rendering as a loop over the top of a faceoff circle,
+//   because a quadratic's bow rotates BOTH ends. This is 8 on 37.29, a ratio of 0.215 against
+//   that failure's 0.39 and against the 0.26 that worked there. Rendered and looked at, at
+//   900 px and at 360 px.
+//   IT NEVER CROSSES HIS LINE. x(k) = 36 + 40.57k - 6.57k² is monotone and y(k) = 12 + 0.71k +
+//   14.59k² rises throughout. Sampled against the dashed line: at k = 0.5 the curve is at
+//   y 16.00 against the line's 30.16; at k = 0.9, 24.46 against 27.83; at k = 0.98, 26.71
+//   against 27.40. The curve runs BELOW the line the whole way and meets it only at the tip.
+//   So the picture says he got across the line at the end of the race, not that he cut in
+//   front of him early.
+//   HOW FAR THE TWO PLAYERS STAY APART: the curve's closest approach to the opponent's anchor
+//   at (34, 34) is 22.1 ft, at the start. Nothing here is drawn near anybody.
+const IL_ARRIVE = { at: 'faceoff-dot:right', dx: 1, dy: 5.3 };    // (70, 27.3)
+
+const insideLaneLongerRoute = {
+  id: 'inside-lane-longer-route',
+  owner: 'content/technique/body_contact_and_battles.md',
+  half: true,
+  width: 900,
+  title: 'The inside lane',
+
+  caption:
+    'A loose puck neither team has, drawn in open ice in your own end with the net you are ' +
+    'defending at the right — a rebound or a puck flipped out rather than one against a wall, ' +
+    'because a race that finishes at the boards is a different case and the section treats it ' +
+    'separately. Winning the race is not the same as winning the puck. The faint dashed line is ' +
+    'the straight route the opposition forward would take to that puck; it is not a marking on ' +
+    'the ice and nothing travels along it, and it is drawn only so you can see what your body ' +
+    'position takes away. Your own route is the one thing here that is a skill: it leaves you ' +
+    'inside him and arrives on that line, between him and the puck, so the direct way there is ' +
+    'gone. What is left for him is a less direct route — USA Hockey’s own phrase — and that is ' +
+    'deliberately not drawn, because which way he goes round is his choice and not yours. ' +
+    'Watch the shape of your own route as much as its destination. It bends, because the ' +
+    'instruction is to approach on an arc rather than straight at the puck, and the arc is what ' +
+    'gets you there already turned rather than square; the turn itself is not drawn, because a ' +
+    'marker on these diagrams has no facing at all. On this drawing you travel about two feet ' +
+    'further to that patch of ice than he would along his straight line, which is the drawing’s ' +
+    'geometry rather than a fact about hockey and is there so the picture does not quietly ' +
+    'claim you win the race outright. Arriving half a step behind but on the inside usually ' +
+    'wins the puck, and arriving first with your body in the wrong place is worse than arriving ' +
+    'second with it in the right one. The rules are explicit that this is legal, and the two ' +
+    'books quoted on it write it differently: USA Hockey has a skater entitled to the ice they ' +
+    'occupy so long as they maintain their skating speed and body position between an opponent ' +
+    'and the loose puck, and entitled separately to stand their ground; the NHL attaches no ' +
+    'speed condition at all, allowing a player the ice he is standing on and not requiring him ' +
+    'to move to let an opponent proceed. So do not read the skating-speed wording as meaning ' +
+    'that stopping forfeits your ice. ⚠️ What is not legal is doing any of it with your hands. ' +
+    'Your stick, arm, hand and skates may not obstruct an opponent’s route to the puck; the ' +
+    'free hand may fend off an opponent or their stick and may never hold, pull, tug or grab, ' +
+    'which is NHL and IIHF Rule 56.1, while USA Hockey writes that permission in its Casebook ' +
+    'and conditions it, and Hockey Canada Rule 8.1 permits blocking a stick rather than holding ' +
+    'one. Nothing here shows the two players meeting, and the rest of the arrival is not ' +
+    'something a diagram can draw: hips turned so your backside is between the opponent and the ' +
+    'puck, low and wide with your feet outside your shoulders, and your feet still moving.',
+
+  describe:
+    'The defensive half of the rink, the net being defended at the right and our goaltender in ' +
+    'its crease. Two skaters. A loose puck is drawn on its own in open ice on the side at the top ' +
+    'of the picture, inside the faceoff circle, about twelve feet up-ice of the goal line and well ' +
+    'clear of the side boards. An opposition forward stands up-ice of it and wide, out toward the ' +
+    'boards. A faint dashed line runs from him straight to the puck. One of our forwards stands ' +
+    'level with him up the ice and well inside him, nearer the middle of the rink. A single curved ' +
+    'forward-skating route leaves our forward: it sets off up the ice, arcs outward as it goes, ' +
+    'and finishes with an arrowhead sitting on the dashed line about seven feet short of the puck, ' +
+    'pointing across the ice rather than at the puck. No route is drawn for the opposition ' +
+    'forward. The two players are never close to one another, and nothing in the picture shows ' +
+    'contact between them.',
+
+  // THE ROUTE HE WOULD HAVE TAKEN. A two-point unfilled zone, which the renderer draws as a
+  // faint dashed line rather than a shaded region — the device `shooting-lane-and-the-step`
+  // uses for its "old lane". Both ends are named positions plus offsets, so neither can drift.
+  zones: [
+    { points: [IL_OPP, IL_PUCK], label: 'the direct route', fill: 'none' },
+  ],
+
+  players: [
+    // OURS, so OPEN; a forward, so a CIRCLE. Shape is the position and fill is the team.
+    //
+    // ⚠️ THE POSITION IS THE SECTION'S ONE SILENCE, so it is recorded rather than left to
+    // look inevitable. §10 says "skater" throughout and names no position anywhere in the
+    // subsection — a loose puck is contested by whoever is nearest, which is the whole point
+    // of `loose-puck-who-goes` in playing_without_the_puck.mjs. But this notation has no
+    // position-neutral glyph, and the commonest player in a 50-50 race is a forward. So both
+    // skaters are circles and the caption says "you" and "the opposition forward" rather
+    // than naming a job.
+    { id: 'F', pos: 'F', at: IL_YOU, label: 'inside him' },
+
+    { id: 'A1', team: 'opp', pos: 'F', at: IL_OPP, label: 'outside you' },
+
+    { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
+  ],
+
+  // NOT NUMBERED. One route cannot carry an order, and a badge on a single route would
+  // imply a second one exists somewhere — which here would be the opponent's, and the
+  // reason he has none is written out above.
+  routes: [
+    // `skate` rather than `carry`: he does not have the puck, and the wave is the
+    // skate-and-stickhandle mark for a player who does. The arrowhead is correct and is not
+    // an arrival on anybody — the only opposing skater lies 29 ft BEHIND the tip, so limb
+    // (b) of the arrival invariant is not engaged and limb (a) has nothing ahead to clear.
+    // The arrowhead rather than two bars because §10 asks in terms for the feet to keep
+    // moving: "a stationary player on the wall gets pinned while one with momentum can
+    // escape along the boards or spin out to the middle".
+    { from: IL_YOU, to: IL_ARRIVE, kind: 'skate', bow: -8 },
+  ],
+
+  puck: IL_PUCK,
+};
+
+// ---------------------------------------------------------------------------
+// Where a shot is blocked from
+// ---------------------------------------------------------------------------
+//
+// §11 "Shot Blocking", "Shot Blocking: Technique", first instruction:
+//
+//   "**Get close.** The closer you are to the shooter, the more net you take away and the
+//    less time the puck has to accelerate or change direction. Blocking from ten feet away
+//    is far safer and more effective than blocking from three feet in front of your own
+//    goalie, where a deflection is a goal."
+//
+// ⚠️ WHY THIS ONE INSTRUCTION AND NOT THE OTHER SIX. The rest of §11's technique list is
+// shin guards front-on, a thigh, a hip, a body square to the puck, a head out of the lane,
+// hands behind the body with the backs of the gloves out, a leg that must not lift and a
+// stick that must not lead. Every one of those is a POSTURE, and a glyph in this notation
+// has no facing, no limbs and no vertical axis — the same reason skating.md and
+// puck_handling.md correctly own no diagram at all. "Get close" is the exception because it
+// is a DISTANCE ALONG A LINE, and a distance along a line is a thing a rink diagram is for.
+// The caption says so, so that a reader does not take a drawn position for a complete
+// instruction: the picture is where you stand and none of how you stand.
+//
+// ⚠️ THE BAD POSITION IS NOT DRAWN BESIDE THE GOOD ONE, and it cannot be. The obvious design
+// puts two blockers on the same line — one ten feet from the shooter, one three feet in front
+// of the goaltender — so the reader sees the comparison the section makes. That would draw TWO
+// PLAYERS. This notation has no way to say "the same player at a different distance", and two
+// glyphs on one lane is a picture of a team with two men in the shot lane, which is a different
+// and worse instruction. The contrast is carried in words, which is the same trade
+// `angle-into-the-corner` records for the perpendicular arrival it refuses to draw.
+//
+// ⚠️ NO SHOT IS DRAWN EITHER, and the section is the reason. §11's own last read is "Stay on
+// your feet until the puck is actually released — committing early is what a shot fake is
+// designed to draw." A `shot` route in this picture would fix the moment at "released" and
+// quietly delete that instruction from the frame it matters in. So what is drawn is the LANE
+// the shot would take, faint and dashed, and the body standing in it.
+//
+// ⚠️ THE TEN FEET IS THE SECTION'S AND THE FOURTEEN IS THE DRAWING'S, and the caption says
+// which is which. A forward's circle reaches 3.275 ft of ink and a defenceman's triangle 4.0,
+// so two glyphs closer than 7.275 ft eat each other and the white halo punches a hole in
+// whichever was drawn first. At the section's ten feet the two markers all but touch and the
+// picture reads as a collision rather than a block. `oz-net-front-screen` makes the identical
+// disclosure about its six-to-eight feet, in terms, and it is the honest move: draw it legibly
+// and tell the reader to take the number from the words.
+
+// The shooter: an opposition defenceman at the point. `point:right` is (25, 20), the
+// blue-line end of the point area — rink.json's own note is emphatic that the point is the
+// area just inside the blue line and not the line itself, and the caption does not claim
+// otherwise because nothing here turns on it.
+//
+// ⚠️ A DEFENCEMAN, AND §11 DOES NOT SAY THAT. The section is about blocking any shot and
+// names no shooter at all; a point shot is drawn because it is the shot an amateur is most
+// often asked to block and because it is the one with room in it to show a distance. The
+// glyph is a triangle because at the point the shooter usually is a D, and the caption says
+// the instruction is about any shot rather than about this one.
+const SB_SHOOTER = 'point:right';                                // (25, 20)
+
+// The puck, off his blade toward the middle. 6.71 ft from his anchor, against 4.0 ft of ink
+// for a triangle plus the puck disc's own 1.1 — a 1.61 ft gap. An earlier placement at
+// 3.16 ft drew the disc inside the glyph, and one at 5.59 ft left only half a foot.
+//
+// ⚠️ AND `puck:` WAS MISSING FROM THE SPEC ALTOGETHER IN THE FIRST BUILD. This constant was
+// defined, used to anchor the lane, and never handed to the renderer — so the picture drew a
+// shot lane leaving a defenceman who had no puck, in a diagram whose whole subject is where
+// that puck is going. Every coordinate in the file was right and nothing mechanical could
+// see it. Found by rendering the SVG and looking at it.
+const SB_PUCK = { at: 'point:right', dx: 6, dy: -3 };            // (31, 17)
+
+// THE SHOT LANE: the straight line from that puck to the middle of the goal line, stopped
+// short so it does not run through our own goaltender.
+//
+// Arithmetic. (31, 17) -> (89, 0) has slope -17/58 = -0.29310.
+//   THE FAR END is drawn at (76, 3.81): 17 - 0.29310 x 45 = 3.810, so the point is on the
+//   line, it is 13 ft short of the goal line, and it is 9.77 ft from the goaltender's mark at
+//   (85, 0). Extended, it arrives at the middle of the goal line. A tip at the goal line
+//   itself was drawn first and ran the dashes straight through the G.
+//   ⚠️ THIS IS A LINE, NOT A REGION, and it is deliberately not shaded. A tinted wedge from
+//   the puck to the two posts would be the clearest possible statement of "the more net you
+//   take away" — and it would be false of this picture, because a player marker here is
+//   nearly six feet across and would engulf the whole wedge near its apex, drawing a claim
+//   that one body removes the entire shooting angle. §11 promises nothing of the kind: it is
+//   explicit that blocking is "genuinely useful and genuinely dangerous". A line says where
+//   the puck is going and claims nothing about how much of it a body covers.
+const SB_LANE_END = { at: 'goal-line', dx: -13, dy: 3.81 };      // (76, 3.81)
+
+// The blocker, on the lane and up at the shooter's end of it.
+//   ON THE LANE: at x = 38.5 the line is at y = 17 - 0.29310 x 7.5 = 14.802, and this is
+//   drawn at 14.8.
+//   HOW CLOSE, AND TO WHAT: hypot(13.5, 5.2) = 14.47 ft from the shooter's anchor, and
+//   hypot(46.5, 14.8) = 48.80 ft from the goaltender. The distances are the picture. He is at
+//   the shooter's end of a 60 ft lane and nowhere near the end where a deflection is a goal.
+//   He sits 7.82 ft from the puck, against 3.275 of circle ink plus the disc's 1.1.
+const SB_BLOCKER = { at: 'point:right', dx: 13.5, dy: -5.2 };    // (38.5, 14.8)
+
+const shotBlockGetClose = {
+  id: 'shot-block-get-close',
+  owner: 'content/technique/body_contact_and_battles.md',
+  half: true,
+  width: 900,
+  title: 'Blocking close to the shooter',
+
+  caption:
+    'Where a blocked shot should be blocked from, drawn in your own end with the net you are ' +
+    'defending at the right and your own goaltender in its crease. An opposition defenceman has ' +
+    'the puck at the point; the faint dashed line is the straight path from that puck to the ' +
+    'middle of your goal, which is not a marking on the ice and has nothing travelling along ' +
+    'it — it stops short of your goaltender rather than through him, and it is drawn so you can ' +
+    'see the one thing this picture is about, which is where along it you stand. Get close. The ' +
+    'closer you are to the shooter, the more net you take away and the less time the puck has to ' +
+    'accelerate or change direction, and blocking from ten feet away is far safer and more ' +
+    'effective than blocking from three feet in front of your own goalie, where a deflection is a ' +
+    'goal. Take the ten feet from those words and not off the picture: the marker is drawn about ' +
+    'fourteen feet out instead, because a player marker on these diagrams is nearly six feet ' +
+    'across, far wider than a player, and at ten feet the two markers would touch and read as a ' +
+    'collision. A point shot is drawn because it is the shot with room in it to show a distance, ' +
+    'and the instruction is about any shot. The blocker is drawn as a forward because this ' +
+    'notation has no position-neutral shape and the section names none; read it as one body in ' +
+    'the lane and not as an assignment. ⚠️ Blocking shots is genuinely useful and genuinely ' +
+    'dangerous, and both of those matter. Nothing in the picture is the technique, and the ' +
+    'technique is the half that hurts you, and it is equipment being asked to do its actual ' +
+    'job — shin guards that cover shin and ankle, gloves not worn through in the palm. ' +
+    'Shin guards front-on, thigh and hip, body square to ' +
+    'the puck, head up and out of the shot lane, feet on the ice, hands behind your body with ' +
+    'the backs of the gloves out — tucked in behind your shin pads is the form for a block taken ' +
+    'on the ice and not one taken standing. Never turn your back, never turn sideways and never ' +
+    'lift a leg, because all three expose what armour does not cover and turning away means you ' +
+    'cannot see the puck. Do not lead with your stick: a puck deflected off an outstretched ' +
+    'blade goes upward, often into your own face. Close with your feet rather than lunging, and ' +
+    'stay on your feet until the puck is actually released, because committing early is what a ' +
+    'shot fake is designed to draw. And there are places not to do this at all. Not on a ' +
+    'two-on-one, where your job as the lone defender is the pass and the goalie has the ' +
+    'shooter — though what that forbids is going to the ice at the shot, and some teams do coach ' +
+    'a timed slide at the pass as their two-on-one method, which is a different act on a ' +
+    // ⚠️ The slide was presented as a coach-sanctioned method with NO penalty exposure, in
+    // the one voiced unit that teaches shot blocking end to end. USA Hockey's Casebook
+    // exempts the drop-to-knees SHOT block and nothing else; a slide across a PASSING lane
+    // is not exempted, and 639(b) is mandatory with no injury trigger.
+    'different axis. It is not a free mistake either: under USA Hockey a slide that puts an ' +
+    'opponent on the ice is tripping "regardless of who gains possession of the puck", and the ' +
+    // ⚠️ The exemption was stated one condition short here, in the fact and in the body. The
+    // Casebook's is narrower than "a knee-drop shot block": the momentum limb is part of it.
+    // Dropping it widened a penalty exemption -- the direction that makes a hazard look LESS
+    // penalised, which is the direction no reviewer stops on.
+    'only exception the Casebook names is narrower than a shot block — it is dropping to your ' +
+    'knees to block a shot "and their momentum carries them into the player shooting the puck, ' +
+    'causing them to fall" (Rule 639, Situation 4). Rule 639(b) then makes "a major penalty plus a game misconduct penalty" ' +
+    // ⚠️ "with nobody hurt" can be HEARD as a condition on the penalty rather than as a
+    // statement that injury is not required. The body and the facts line say it the long way.
+    'mandatory for one a referee judges to recklessly endanger an opponent, and nobody has to ' +
+    'be hurt for it to be called. ' +
+    'So ask your coach how they want it done. And not from a position where you ' +
+    'are screening your own goaltender: either commit fully and take the shot or get out of the ' +
+    'lane and let them see it, and the one thing you cannot do is stand half in the way with ' +
+    'your eyes closed. How much your team blocks at all is a coaching choice rather than a law ' +
+    'of hockey — some systems ask defenders to block aggressively and collapse in front of the ' +
+    'goalie, others to take the lane away on their feet and let the goalie see everything, and ' +
+    'neither is right in the abstract — so find out which yours plays, and ask your goalie what ' +
+    'they want.',
+
+  describe:
+    'The defensive half of the rink, the net being defended at the right and our goaltender in ' +
+    'its crease. Three players and no routes. An opposition defenceman stands at the strong-side ' +
+    'point on the side drawn at the top of the picture, with the puck just off the blade toward ' +
+    'the middle of the ice. A faint dashed line runs from that puck down the ice toward the ' +
+    'middle of the goal, stopping about thirteen feet short of the goal line and well clear of ' +
+    'the goaltender; extended, it would reach the middle of the goal line. One of our forwards ' +
+    'stands squarely on that line about fourteen feet from the shooter, so he is at the ' +
+    'shooter’s end of it and roughly fifty feet from his own goaltender. No shot is drawn, no ' +
+    'route is drawn, and no second blocker is drawn anywhere on the line.',
+
+  // THE LANE. A two-point unfilled zone, so the renderer draws a faint dashed line rather
+  // than a shaded region. Both ends are named positions plus offsets.
+  zones: [
+    { points: [SB_PUCK, SB_LANE_END], label: 'the shot lane', fill: 'none' },
+  ],
+
+  players: [
+    { id: 'D', team: 'opp', pos: 'D', at: SB_SHOOTER, label: 'the shooter' },
+
+    // OURS, so OPEN; a forward, so a CIRCLE. `shooting-lane-and-the-step` draws the mirror
+    // image of this player — an opponent standing in a shooter's lane — as a forward and
+    // discloses the same silence in the same words: "read it as one body in the lane and not
+    // as an assignment". §11 names no position for a shot blocker anywhere, and the one place
+    // it does name a job it is the lone defenceman on a two-on-one, which is the case it tells
+    // you NOT to block in.
+    { id: 'F', pos: 'F', at: SB_BLOCKER, label: 'close to the shooter' },
+
+    { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
+  ],
+
+  puck: SB_PUCK,
+};
+
+export default [
+  anglingYourRoute,
+  netFrontWalkOut,
+  cornerEscapeRoutes,
+  angleIntoTheCorner,
+  insideLaneLongerRoute,
+  shotBlockGetClose,
+];

@@ -159,6 +159,7 @@ const CIRCLE = Array.from({ length: 24 }, (_, i) => {
 
 const dzoneAlignment = {
   id: 'faceoff-dzone-alignment',
+  title: 'Defensive-zone draw alignment',
   owner: 'content/systems/faceoffs.md',
   half: true,
   width: 900,
@@ -224,6 +225,7 @@ const dzoneAlignment = {
 
 const dzoneCleanLoss = {
   id: 'faceoff-dzone-clean-loss',
+  title: 'Defensive-zone draw, lost clean',
   owner: 'content/systems/faceoffs.md',
   // Not the contested case: the draw has already gone the other way. "The same
   // defensive-zone alignment on a clean loss", with "the centre picks up the man who
@@ -353,6 +355,7 @@ const dzoneCleanLoss = {
 
 const dzoneTieUp = {
   id: 'faceoff-dzone-tie-up',
+  title: 'Defensive-zone draw, tied up',
   owner: 'content/systems/faceoffs.md',
   half: true,
   width: 900,
@@ -405,6 +408,7 @@ const dzoneTieUp = {
 
 const ozoneAlignment = {
   id: 'faceoff-ozone-alignment',
+  title: 'Offensive-zone draw alignment',
   owner: 'content/systems/faceoffs.md',
   half: true,
   width: 900,
@@ -451,6 +455,7 @@ const ozoneAlignment = {
 
 const neutralZoneAlignment = {
   id: 'faceoff-neutral-zone',
+  title: 'Neutral-zone draw alignment',
   owner: 'content/systems/faceoffs.md',
   // Full sheet: the shape only makes sense if you can see how far back the
   // defencemen are, and their reference point is the far blue line.
@@ -506,6 +511,7 @@ const neutralZoneAlignment = {
 
 const goaliePulled = {
   id: 'faceoff-goalie-pulled',
+  title: 'Draw with the goalie pulled',
   owner: 'content/systems/faceoffs.md',
   // Full sheet, unlike the other end-zone diagrams. The whole subject of this one
   // is a goaltender who is not there, and on the attacking half alone his absence
@@ -552,6 +558,431 @@ const goaliePulled = {
   ],
 };
 
+// ---------------------------------------------------------------------------
+// WHERE THE DRAW GOES — "What sends the draw to which spot".
+//
+// THE RENDERER HAS NO POINT-MARKER PRIMITIVE, and this section is entirely about
+// points. The only two ways to mark a spot are a player glyph, which claims a
+// player who is not there, and a `zones` entry, whose label is written at the
+// polygon's VERTEX MEAN. The corpus already settled this: `offside-faceoff-location`
+// in rules_primer.mjs marks two draw spots with small boxes, and records why that
+// is honest — "a marked box is not a painted line: the faceoff spots are already
+// drawn on the ice by the renderer, and these boxes only say which one the rule
+// sends you to." Same construction here, and for the same reason.
+//
+// EVERY BOX IS DELIBERATELY ASYMMETRIC ABOUT ITS DOT. The label lands at the
+// vertex mean with no collision handling, so a box centred on its spot writes its
+// own label over the spot it is pointing at. Each box below puts its dot a couple
+// of feet inside one edge, which pushes the mean — and therefore the text — clear.
+//
+// NO SKATERS AND NO PUCK. The four boxes are four DIFFERENT stoppages, not one
+// play. A puck would anchor the picture to whichever one it sat nearest, and a
+// skater would say a particular player was heading for a particular spot. The
+// section's own instruction — start skating to the spot before the whistle
+// finishes — is carried by the caption instead, because the picture cannot say it
+// four times at once.
+//
+// TWO GOALTENDERS WERE TRIED HERE AND REMOVED, and the reason is worth recording
+// because it is a property of the notation rather than of this diagram. A full
+// sheet with four boxes on it is perfectly symmetrical, so the reader cannot tell
+// "your own end" from "the end you are attacking" — and three of the four labels
+// need that. A goaltender looked like the fix. It is not: the glyph is a bare
+// letter with NO TEAM VARIANT, and `rink.mjs` says why in terms — "which net a
+// goaltender is standing in settles whose they are." In this picture nothing
+// settles which net is whose, so two identical Gs answer the question with the
+// question. Orientation is therefore the caption's job here, as it is in every
+// full-sheet diagram in the corpus.
+// ---------------------------------------------------------------------------
+
+// Our own end is at the LEFT of a full sheet (negative x), the end we attack at
+// the right. ':far' mirrors x; 'faceoff-dot' is sided in y, so the middle token is
+// the side and the last is the end.
+const OUR_DOT   = 'faceoff-dot:right:far';   // (-69, 22)
+const THEIR_DOT = 'faceoff-dot:left';        // (69, -22)
+const NZ_DOT    = 'neutral-dot:right';       // (20, 22) — outside THEIR blue line
+
+const whereTheDrawGoes = {
+  id: 'faceoff-where-the-draw-goes',
+  owner: 'content/systems/faceoffs.md',
+  title: 'Where the draw goes',
+  half: false,
+  width: 1100,
+
+  caption:
+    'Four common stoppages and the faceoff spot each one sends the draw to, drawn on one sheet — ' +
+    'these are four separate situations, not one play, and knowing which spot is coming is what ' +
+    'lets you start skating there before the whistle has finished. Your own end is at the left, ' +
+    'the end you are attacking at the right. ' +
+    'Marked at centre ice: the start of every period, and every draw after a goal. ' +
+    'Marked in your own end: an icing you caused, or a penalty you took. One box is drawn round ' +
+    'one of the two spots there because the rule names the END rather than the dot — under the ' +
+    'NHL and the IIHF the attacking team chooses which of the two, and they will pick the side ' +
+    'their centre is strong on, while USA Hockey gives no choice of dot at all and Hockey Canada ' +
+    // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
+    // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
+    // "attacking (non-offending) team" (hc.txt:4857), so in the situation DRAWN it belongs
+    // to the reader's OPPONENTS -- and so does the duty to declare it. The identical
+    // inversion was found and fixed in `faceoff-strong-side-dot` and in three layers of
+    // faceoffs.md IN THIS SAME ROUND, and left standing here. The clause immediately above
+    // already said "the attacking team chooses" for the NHL and IIHF, so the caption also
+    // contradicted itself.
+    'gives it in Junior and Senior divisions only, and gives it to the attacking team — ' +
+    'your opponents, in the situation drawn here — who lose it unless they tell the ' +
+    'referee before the ' +
+    'line change procedure starts. ' +
+    'Marked outside the blue line you were attacking: an offside where the puck was carried over. ' +
+    'A puck SHOT or PASSED over the line offside goes back to the zone the puck came from ' +
+    'instead, which can be your own end — which is why carrying it over and being whistled costs ' +
+    'you far less than firing it over. ' +
+    'Marked in the end you are attacking: a goalie freeze, or any other stoppage between the ' +
+    'end-zone dots and the end boards, which under the NHL and the IIHF draws at the spot on the ' +
+    'side it happened — drawn here on the lower side. Goalies know that, and choose their side. ' +
+    'USA Hockey answers that one differently, taking the nearest spot only where its own ' +
+    'last-play face-off applies, and sending a stoppage the attacking team caused in the ' +
+    'attacking zone out to the neutral zone instead. ' +
+    'These four are the common ones and not the whole rule, and the boxes are markers rather ' +
+    'than anything painted on the ice — the nine faceoff spots themselves are painted, and are ' +
+    'the only places a draw may be taken.',
+
+  describe:
+    'The full sheet, your own net at the left and the net you are attacking at the right. No ' +
+    'players and no puck are drawn. Four spots are marked with boxes and labelled. One is the ' +
+    'centre dot, labelled "after a goal". One is the upper end-zone faceoff spot in your own end, ' +
+    'labelled "icing or penalty". One is the upper neutral-zone dot just outside the blue line ' +
+    'you were attacking, labelled "carried offside". One is the lower end-zone faceoff spot in ' +
+    'the end you are attacking, labelled "goalie freeze". Each label sits a few feet to one side ' +
+    'of the spot it marks rather than on top of it.',
+
+  zones: [
+    // CENTRE ICE. Box 18 x 18, with the dot 1 ft inside its top edge, so the mean —
+    // and the label — falls 8 ft below the dot and inside the centre circle.
+    {
+      points: [
+        { at: 'centre-ice', dx: -9, dy: -17 },
+        { at: 'centre-ice', dx: 9, dy: -17 },
+        { at: 'centre-ice', dx: 9, dy: 1 },
+        { at: 'centre-ice', dx: -9, dy: 1 },
+      ],
+      label: 'after a goal',
+    },
+    // YOUR OWN END. The rule names the end, not the dot, so one of the two is boxed
+    // as a concrete instance and the caption carries who picks. Label pushed 7 ft
+    // toward the middle of the ice, where it crosses only the faceoff circle and
+    // not the net.
+    {
+      points: [
+        { at: OUR_DOT, dx: -9, dy: 2 },
+        { at: OUR_DOT, dx: 9, dy: 2 },
+        { at: OUR_DOT, dx: 9, dy: -16 },
+        { at: OUR_DOT, dx: -9, dy: -16 },
+      ],
+      label: 'icing or penalty',
+    },
+    // OUTSIDE THE BLUE LINE YOU WERE ATTACKING. `neutral-dot` sits 5 ft outside the
+    // blue line, in the neutral zone, which is where Rule 83.6 puts a carried-in
+    // offside. Label 7 ft toward the middle again.
+    {
+      points: [
+        { at: NZ_DOT, dx: -6, dy: 2 },
+        { at: NZ_DOT, dx: 6, dy: 2 },
+        { at: NZ_DOT, dx: 6, dy: -16 },
+        { at: NZ_DOT, dx: -6, dy: -16 },
+      ],
+      label: 'carried offside',
+    },
+    // THE END YOU ARE ATTACKING, lower side. Mirrored: the dot sits 2 ft inside the
+    // BOTTOM edge so the label is pushed up toward the middle rather than into the
+    // boards.
+    {
+      points: [
+        { at: THEIR_DOT, dx: -9, dy: -2 },
+        { at: THEIR_DOT, dx: 9, dy: -2 },
+        { at: THEIR_DOT, dx: 9, dy: 16 },
+        { at: THEIR_DOT, dx: -9, dy: 16 },
+      ],
+      label: 'goalie freeze',
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// STRONG SIDE — "Handedness and which side you're strong on".
+//
+// THE SAME CENTRE IS DRAWN TWICE, once at each circle in his own end, and that is
+// the whole construction. A backward pull on the backhand goes to a fixed side of
+// the PLAYER, and he faces his opponents' end at both circles — so the identical
+// motion carries the puck to the boards at one circle and into the middle at the
+// other. Both routes below therefore have the SAME displacement, (5.8, 11) ft from
+// the centre's own position, and if one is ever changed the other must change with
+// it or the picture stops making its point.
+//
+// HANDEDNESS IS NOT NAMED, deliberately. The section states the coaching mapping —
+// right shot on the right side — and then flags that its sources "do not spell out
+// the reference frame", offering instead a self-test that depends on nobody's
+// convention: your strong side is the circle where your natural backward pull sends
+// the puck toward the boards. That self-test is what is drawn, so the picture does
+// not need the mapping and does not assert it.
+//
+// The pull is drawn with the key's PASSING symbol — a dashed line and an arrowhead
+// — which is this corpus's mark for a puck travelling without a stick on it. It is
+// not a shot and it is not a player skating.
+// ---------------------------------------------------------------------------
+
+// The same displacement from each dot: back toward his own goal line and to the
+// same side of his body. 4 ft of "back" and 16 ft of "across".
+//
+// ⚠️ THESE WERE 5.8 AND 11, AND THE PICTURE DID NOT DELIVER EITHER CLAIM. At that
+// size both arrows finished INSIDE their own faceoff circle — 14.9 ft from the dot
+// against the circle's 15 — so the one labelled "pulls to the boards" stopped 8 ft
+// short of the boards and the one labelled "pulls to the middle" never left its
+// circle. Found by rendering it and looking; the arithmetic had been checked and
+// was correct about the thing it checked, which was that the two displacements were
+// equal. At 4 and 16 both tips are 18 ft from their dot, so both are outside the
+// circle: the upper finishes 4 ft off the dasher, and the lower in the slot in
+// front of the net and 10.6 ft clear of the goaltender.
+const PULL_DX = 4;
+const PULL_DY = 16;
+
+const STRONG_C = { at: DOT, dx: STICK };                          // (73.2, 22)
+const WEAK_C   = { at: 'faceoff-dot:left', dx: STICK };           // (73.2, -22)
+
+const strongSideDot = {
+  id: 'faceoff-strong-side-dot',
+  owner: 'content/systems/faceoffs.md',
+  title: 'Your strong-side circle',
+  half: true,
+  width: 900,
+
+  caption:
+    'Which of the two circles in your own end is your strong side, and why it is worth knowing ' +
+    'before an icing or a penalty puts a choice of dot on the table. The same centre is drawn twice, once at each ' +
+    'circle, making the same motion both times: a backward pull on the backhand, which goes to a ' +
+    'fixed side of your own body and therefore to the same side of the ice at both circles. At ' +
+    'one circle that carries the puck toward the boards, which is the safest place it can go and ' +
+    'the most powerful pull available to you. At the other the identical motion carries it toward ' +
+    'the middle, and a defensive-zone draw won into the slot is barely better than a loss — so on ' +
+    'your weak side the board-side pull has to be made on the forehand instead, which is slower ' +
+    'and weaker for most players. ' +
+    'That is the self-test, and it is the reliable one: your strong side is the circle where your ' +
+    'natural backward pull sends the puck toward the boards, and ten draws in each circle will ' +
+    'tell you within a minute. Coaching sources state it as a handedness rule instead — a ' +
+    'right-shot centre on the right side, a left-shot on the left — but they do not spell out the ' +
+    'reference frame they mean, so no handedness is drawn here and none should be read into it. ' +
+    'This is why a coach sends a particular centre out for a particular dot, and it is what makes ' +
+    'the rules that let a team pick its dot worth more than they look. The NHL and the IIHF give ' +
+    'that choice to the team that did not cause the stoppage — the attacking team after an icing, ' +
+    'and the team awarded a power play to start a penalty — while USA Hockey gives no choice of ' +
+    'dot at all. Hockey Canada rations it three ways: Rule 6.4(b) grants the choice only for an ' +
+    'end-zone draw "following the calling of an icing or a time penalty", only in Junior and ' +
+    'Senior divisions, and only to the attacking non-offending team — which loses it unless it ' +
+    'tells the referee the dot it wants before the line change procedure starts.',
+
+  describe:
+    'The defending half of the rink, your own net and goaltender at the right, both end-zone ' +
+    'circles visible. The same centre is drawn at both dots, each time on the goal-line side of ' +
+    'the spot with an opposing centre facing him on the far side of it. From each of the two own ' +
+    'centres a dashed line with an arrowhead runs back and across at the same angle, showing the ' +
+    'puck pulled backwards. From the upper circle it finishes out toward the side boards; from ' +
+    'the lower circle the identical line finishes in open ice toward the middle, in front of the ' +
+    'net. No other skaters are drawn.',
+
+  players: [
+    { id: 'C', pos: 'F', at: STRONG_C, label: 'pulls to the boards' },
+    { id: 'C', pos: 'F', at: WEAK_C,   label: 'pulls to the middle' },
+    { id: 'C', pos: 'F', team: 'opp', at: { at: DOT, dx: -STICK } },
+    { id: 'C', pos: 'F', team: 'opp', at: { at: 'faceoff-dot:left', dx: -STICK } },
+    { id: 'G', pos: 'G', at: D_GOALIE },
+  ],
+
+  // Not numbered: neither pull comes before the other. They are one motion drawn at
+  // two places.
+  //
+  // The upper route finishes at (77.2, 38), which at that x is 4 ft short of the
+  // dasher — unmistakably outboard, and 18 ft from its dot, so outside the 15 ft
+  // circle. The lower finishes at the identical offset from its own dot, (77.2, -6),
+  // which is in the slot in front of the net: 10.6 ft from the goaltender's glyph,
+  // which is close enough to read as "toward the net" and far enough not to read as
+  // a pass to him.
+  routes: [
+    { from: STRONG_C, to: { at: DOT, dx: STICK + PULL_DX, dy: PULL_DY }, kind: 'pass' },
+    { from: WEAK_C,   to: { at: 'faceoff-dot:left', dx: STICK + PULL_DX, dy: PULL_DY }, kind: 'pass' },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// TWO OFFENSIVE-ZONE SET PLAYS — "Set Plays / Offensive-zone plays".
+//
+// Drawn as a PAIR, because the section defines the second by what it fixes in the
+// first: the winger walk-out is "better than the D one-timer against a team that
+// immediately pressures the point, because you're attacking the space they
+// vacated". One picture cannot hold two different point-pressure states.
+//
+// THE INSIDE WINGER IS NOT DRAWN ON THE HASH MARKS IN THE ONE-TIMER, and this is
+// the one thing in the pair that had to be decided rather than measured. Drawn at
+// his alignment position, (63.31, 5.03), he sits about 2 ft from the line a
+// strong-side point shot takes to the net — that is not a drawing artefact, it is
+// the geometry of the play, and it is the section's own stated weakness of it:
+// "the inside winger's shooting lane needs to be cleared by someone." A picture
+// cannot show a lane being cleared and a shot going down it at the same instant.
+// So these are plays drawn a beat AFTER the drop — the alignment before the drop is
+// `faceoff-ozone-alignment` beside them — the winger is drawn already out of the
+// lane, and the caption says so rather than the picture pretending to.
+//
+// WHO clears it is deliberately not drawn. The section says "usually the net-front
+// player stepping across", and the default five-player alignment it describes has
+// nobody at the net front. Drawing a step-across would have authored the answer.
+//
+// NEITHER PLAY IS NUMBERED. Both were, and the badges are set a fixed distance
+// along each route from its start, so on the one-timer the shot's badge landed
+// beside the pull-back's arrowhead at the same defenceman — two numbers 4 ft apart,
+// on different routes, at the busiest point in the picture. The notation already
+// carries the order: you cannot shoot the puck before it reaches you.
+// ---------------------------------------------------------------------------
+
+const OT_WINGER = { at: DOT, dx: -3, dy: -28 };        // (66, -6) — already clear of
+                                                        // the shooting lane
+const OT_SHOOTER = 'point:right';                       // (25, 20)
+
+const ozoneDOneTimer = {
+  id: 'faceoff-ozone-d-one-timer',
+  owner: 'content/systems/faceoffs.md',
+  title: 'The D one-timer',
+  half: true,
+  width: 900,
+
+  caption:
+    'The D one-timer off an offensive-zone draw, a beat after the puck is dropped: the centre ' +
+    'pulls it straight back to the strong-side defenceman at the point, who shoots first time. ' +
+    'The whole point of it is that the shooter’s feet are already set and the traffic is ' +
+    'already in place before the puck moves — he does not have to receive, settle and set, and ' +
+    'that is worth more than a slightly better shooting angle. ' +
+    'Its weakness is the other half of it: this is the play every penalty kill and every ' +
+    'defensive alignment expects, and the shot’s line to the net runs straight through the ' +
+    'inner hash marks, where the inside winger stands for the draw — so somebody has to clear ' +
+    'that lane for it. He is drawn here already out of it, a beat after the drop rather than at ' +
+    'the alignment beside this; who does the clearing is not drawn at all, because the section ' +
+    'names the net-front player and this five-player alignment has nobody at the net front. ' +
+    'Everything here is a coaching choice and not a rule of hockey — the alignment it runs from ' +
+    'is a common default, teams differ enormously, and the section it comes from names three ' +
+    'other plays off the same draw. Find out what your team runs, and what the call is, before ' +
+    'your first shift: a set play half the line is guessing at is worse than no play at all.',
+
+  describe:
+    'The attacking half of the rink, the opposition net and goaltender at the right, the draw at ' +
+    'the right-hand end-zone circle. Five own players: the centre in the dot on the blue-line ' +
+    'side; the boards-side winger at the outer hash marks; the inside winger below the dot line ' +
+    'and off to one side of the middle, clear of the shooting lane; and both defencemen at the ' +
+    'points just inside the blue line. The opposing centre is on the far side of the dot, and ' +
+    'their goaltender is in the crease. Two routes. A dashed line runs from the centre in the ' +
+    'dot back up the ice to the strong-side defenceman at the near point, stopping short of him. ' +
+    'A double line — a shot — runs from that defenceman down to the front of the net, passing ' +
+    'about eleven feet clear of the inside winger. No route is drawn for any other player.',
+
+  players: [
+    { id: 'C', pos: 'F', at: A_CENTRE },
+    { id: 'W', pos: 'F', at: A_BOARDS_W },
+    { id: 'W', pos: 'F', at: OT_WINGER, label: 'clear of the lane' },
+    { id: 'D', pos: 'D', at: OT_SHOOTER,   label: 'feet already set' },
+    { id: 'D', pos: 'D', at: 'point:left', label: 'the safety' },
+    { id: 'C', pos: 'F', team: 'opp', at: D_CENTRE },
+    { id: 'G', pos: 'G', team: 'opp', at: D_GOALIE },
+  ],
+
+  // THE PULL-BACK stops 5 ft short of the defenceman's anchor rather than on it, so
+  // the arrowhead sits beside his triangle and not inside it.
+  //
+  // THE SHOT runs (25, 20) to (77, 1). Its line passes 10.6 ft from the winger's
+  // anchor at (66, -6) — 7 ft of clear ice outside his drawn ink — which is how the
+  // picture says the lane is open. It finishes 9 ft from the goaltender's glyph: a
+  // shot ending at the goaltender is what a shot is, and THE ARRIVAL INVARIANT in
+  // scripts/lib/rink.mjs excludes puck routes from both of its forms for exactly
+  // that reason — but at (79, 1) the drawn arrowhead TOUCHED the letter, which is a
+  // different complaint from the invariant's and only visible in a render.
+  routes: [
+    { from: A_CENTRE,   to: { at: OT_SHOOTER, dx: 5, dy: 0.25 }, kind: 'pass' },
+    { from: OT_SHOOTER, to: { at: 'net-front', dx: -7, dy: 1 }, kind: 'shot' },
+  ],
+};
+
+const ozoneWingerWalkout = {
+  id: 'faceoff-ozone-winger-walkout',
+  owner: 'content/systems/faceoffs.md',
+  title: 'The winger walk-out',
+  half: true,
+  width: 900,
+
+  caption:
+    'The winger walk-out off the same offensive-zone draw, and the answer to the same problem ' +
+    'from the other end: instead of going back to the point, the centre pulls the puck to the ' +
+    'inside winger standing in the circle, who takes a stride toward the middle of the ice and ' +
+    'then either shoots or feeds the slot. Which of those two he does is not drawn, because the ' +
+    'section gives both and the walk-out itself is the play; the picture stops where the choice ' +
+    'begins. It is the better play against a team that pressures the ' +
+    'point the instant the puck is dropped, because the ice you are attacking is the ice they ' +
+    'have just vacated — which also means it is the worse play against a team that does not. ' +
+    'Both defencemen stay at the points, one of them as the safety against a counterattack, ' +
+    'because on a clean loss in the attacking end the priority flips instantly to not conceding ' +
+    'one. ' +
+    'Which of the two plays is on is a call, not a read to be made individually — and every part ' +
+    'of this is a coaching choice rather than a rule of hockey. Teams differ enormously, most run ' +
+    'two or three plays per zone rather than six, and a play nobody heard is not a play. Ask what ' +
+    'yours are.',
+
+  describe:
+    'The attacking half of the rink, the opposition net and goaltender at the right, the draw at ' +
+    'the right-hand end-zone circle, and the same five own players as the offensive-zone ' +
+    'alignment: the centre in the dot on the blue-line side, the boards-side winger at the outer ' +
+    'hash marks, the inside winger at the inner hash marks, and both defencemen at the points. ' +
+    'The opposing centre is on the far side of the dot, and their goaltender is in the crease. ' +
+    'Two numbered routes. First, a dashed line runs from the centre in the dot down to the ' +
+    'inside winger, stopping about six feet short of him. Second, a plain line with an ' +
+    'arrowhead takes that winger about nine feet toward the middle of the ice, finishing level ' +
+    'with the middle. Neither defenceman has a route: they hold the points, and nothing is drawn ' +
+    'going to the net.',
+
+  numbered: true,
+
+  players: [
+    { id: 'C', pos: 'F', at: A_CENTRE },
+    { id: 'W', pos: 'F', at: A_BOARDS_W },
+    { id: 'W', pos: 'F', at: A_INSIDE_W, label: 'walks out' },
+    { id: 'D', pos: 'D', at: 'point:right' },
+    { id: 'D', pos: 'D', at: 'point:left', label: 'the safety' },
+    { id: 'C', pos: 'F', team: 'opp', at: D_CENTRE },
+    { id: 'G', pos: 'G', team: 'opp', at: D_GOALIE },
+  ],
+
+  // THE PULL-BACK stops 6 ft short of the winger's anchor, and both ends of that
+  // number were set by looking at a render rather than by arithmetic.
+  //
+  // At 5 ft the arrowhead was drawn TOUCHING the top of his circle: the head is
+  // 3.15 ft long and the glyph 2.9 ft in radius, so five feet of clearance from an
+  // anchor is not five feet of clearance from what is drawn.
+  //
+  // At 8 ft it cleared, and then failed the other way: only 3.4 ft of line survived
+  // the glyph and the head, which draws as ONE dash and a head. That is above
+  // `playSvg`'s short-head threshold — which fires below a single dash — so nothing
+  // warned, but a dashed route reduced to one dash is a `pass` doing an impression
+  // of a `skate`, and `skate` is a symbol the same key publishes. It would have read
+  // as the centre skating down to his winger. At 6 ft, 5.4 ft of line survives: two
+  // dashes, and the head is still 2.7 ft clear of the winger's ink.
+  //
+  // THE WALK-OUT finishes at (69, -2), which is the high-slot line: 9 ft, or about a
+  // stride and a half. A true single stride was tried at 7 ft and read as a stub. It
+  // starts on the winger's own glyph rather than where the pull-back ends, because
+  // `check-arrivals.mjs` infers whose route a route is from the player it starts on
+  // and a route beginning in empty ice has no owner to infer.
+  //
+  // Only two routes, so the two numbered badges are 13 ft apart. A third — the shot
+  // or the feed — was drawn and removed: the section gives both finishes, so drawing
+  // one authors the choice, and the two badges landed within a few feet of each
+  // other at the winger.
+  routes: [
+    { from: A_CENTRE,   to: { at: DOT, dx: -5.4, dy: -11 }, kind: 'pass' },
+    { from: A_INSIDE_W, to: { at: 'high-slot', dy: -2 }, kind: 'skate' },
+  ],
+};
+
 export default [
   dzoneAlignment,
   dzoneCleanLoss,
@@ -559,4 +990,8 @@ export default [
   ozoneAlignment,
   neutralZoneAlignment,
   goaliePulled,
+  whereTheDrawGoes,
+  strongSideDot,
+  ozoneDOneTimer,
+  ozoneWingerWalkout,
 ];

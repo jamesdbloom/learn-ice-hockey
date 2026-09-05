@@ -71,6 +71,9 @@ Never: Hold the puck in your own zone longer than you need to — your first loo
 
 > **Wall position is system-dependent, and the authority says so.** The hash-mark spot belongs to the **conventional swing breakout** — the structure assumed throughout this document. Teams running a **flat/spread** structure ask wingers to hold higher toward the blue line; teams running an aggressive **stretch or flying-winger** structure send one winger up ice entirely. **Find out which one you're in** — the failure mode of a winger standing at the hash marks in a stretch system is exactly as bad as the reverse. See [Breakouts](../systems/breakouts.md).
 
+
+![](diagram:winger-wall-depth-by-system)
+
 **What to do:** You are one of the primary outlets when your team starts a breakout (the controlled exit from your defensive zone). The defenseman may pass to you, the center, or their D-partner depending on who is open. If you receive the puck, immediately look to move — either carry it out along the boards, or pass to the center if they are in a better position to exit.
 
 **Goal:** Exit the defensive zone cleanly and transition to offence.
@@ -149,6 +152,9 @@ Risk: Chase into the corner and the opposing defenceman walks in free, with nobo
 
 **Key considerations:** It is tempting to chase the puck into the corner when you see your team battling there. In a collapse system, resist it. If you go to the corner, the opposing defenseman is free to walk in for a shot, and your team has no one positioned for the breakout. Staying high is your job, not just your option.
 
+
+![](diagram:winger-leaves-the-point)
+
 **Exception — when your man walks down:** If the opposing defenseman you are covering moves down off the point to join the puck battle, follow them down a few feet to stay tight on them. Don't chase all the way into the corner. But stay connected and call out the switch so the center or defender knows you've moved with your man.
 
 **Exception — when the puck comes up the wall to you (strong-side winger):** If a corner battle squirts the puck up the strong-side boards toward you, engage it. That's not a corner battle — it's your breakout opportunity. Grab the puck, get your feet moving, and start the exit.
@@ -211,6 +217,9 @@ Never: Drift into the centre of the ice — that's the centre's lane, and stayin
 
 **Key considerations:** Don't drift to the center of the ice — that's the center's lane. Staying wide keeps the ice open and creates proper spacing for your line.
 
+
+![](diagram:neutral-zone-lanes)
+
 ---
 
 ### Neutral Zone: Carrying the Puck — Under Pressure
@@ -237,6 +246,17 @@ Key: NHL tracking at 5-on-5 put a carry-in at about twice the value of a dump-in
 - **Chip past the defenceman** — flick it off the boards past a defender who is stepping up or standing up at the line, and skate onto it yourself. This is a *possession* play, not a surrender, and it's the best option against a defenceman who is stepping up.
 - **Cross-corner / north-south dump** — into the far corner away from where their D is retreating, forcing the longest possible retrieval skate.
 - **Flip / area dump over a trap** — lift the puck high so it travels *over* a congested neutral zone and lands in open space behind their defence. This is the answer when a trap has closed every route along the ice. Land it past the defence but **before the goal line**, or you have iced it.
+
+
+![](diagram:dump-hard-rim)
+
+![](diagram:dump-soft-area)
+
+![](diagram:dump-chip-past)
+
+![](diagram:dump-cross-corner)
+
+![](diagram:dump-flip-over-trap)
 
 **Chasing it properly matters more than the dump itself.** Don't skate straight at the puck — that lets the retriever pick either side. Angle your route to take away their easier escape (usually the strong-side wall) so they're forced to the side your support is arriving on. A dump-in with nobody chasing on an angle is just giving the puck away politely.
 
@@ -265,6 +285,13 @@ Goal: Prevent a clean entry — force a difficult pass, force them wide, or forc
 **What to do:** When the opposing team is moving the puck through the neutral zone, stay in your lane and cut off the passing options. Force the puck carrier wide toward the boards. In a containment structure, don't leave your lane to chase. Block the lane instead and let the pressure develop naturally.
 
 > **Which of those two things you do is your team's neutral-zone system, not a law of hockey.** The lane-blocking job described here belongs to a **containment structure** — a **1-2-2**, a **1-2-2 trap** or a **1-3-1** — where the whole design is to deny the middle and wait for a mistake, and where one forward leaving the wall to chase opens the seam instantly. The realistic alternative is an **aggressive neutral-zone press**, the middle-third shape behind a 2-1-2 forecheck: there the instruction reverses, forwards hunt the puck, and the weak-side winger *does* leave the lane to pressure, because the point is to take the puck back rather than wait for it. **Find out which one your team plays — and what the call is for switching**, because most teams run two or three depending on the score and the shift. [Neutral Zone Systems](../systems/neutral_zone_systems.md) is the authority and sets out all of them.
+
+
+![](diagram:nz-1-2-2-containment)
+
+![](diagram:nz-1-3-1)
+
+![](diagram:nz-pressure)
 
 **Goal:** Prevent a clean entry into your defensive zone. Force the opponent to make a difficult pass, go wide, or dump the puck in.
 
@@ -297,6 +324,9 @@ Read: On your off wing the lane is the same, but the puck sits on your inside ha
 **Key considerations:** Timing matters, and the offside rule is far more generous than most players assume — you are offside only when **both** skates have completely crossed the blue line before the puck has, so a trailing skate on the line keeps you onside — and one held in the air over the neutral zone does too **under NHL and IIHF rules, but not under USA Hockey, whose Rule 630(a) requires skate *contact* with the neutral zone or the blue line, and not under Hockey Canada, whose Rule 6.11 counts *"only the player's skate(s) that are in physical contact with the ice surface"***. A delayed offside is recoverable too — but **tagging up is a five-man act, not a solo one.** NHL Rule 83.3(i) requires that *"all players* of the offending team clear the zone at the same instant (skate contact with the blue line)", and the IIHF and USA Hockey say the same; **Hockey Canada Rule 6.11(b)(ii) (the tag-up clause) words it as a result — the zone *"completely clear of attacking players"* — rather than as an instant, and comes to the same thing**, so playing it as one act keeps you legal wherever you have a tag-up at all. ⚠️ **And check that you do, because one of the four books rations it by age:** under **USA Hockey Rule 630(d)** the delayed off-side and the tag-up exist only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications only)"* — below those the whistle is immediate and there is nothing to tag up to. The NHL, the IIHF and Hockey Canada set no such floor. Skate contact with the line is enough for you individually, so one foot on the line does your part; but the arm stays up and nobody is re-entered until the last teammate has also tagged. Tag, then **look** before you go — re-entering while a teammate is still deep is what gets the play whistled off, and as the winger who is usually first to the line you are the one who does it. **The rule in full, including tagging up and what turns a delayed offside into a whistle, is in [Rules Primer](../foundation/rules_primer.md) and [Zone Entries](../systems/zone_entries.md).**
 
 **The winger-specific version is a technique, and it is worth drilling.** You are the player who attacks the blue line widest and fastest, so you are the one the rule rewards most: **drag a trail skate along the line while your body, stick and momentum get ahead of it.** Done properly you are a full stride into the zone, at speed, and still legal. **One thing in the trail-skate drag is not free, and it is your head.** The offside rule does not care where your body is, and it says nothing about what is in front of it: you arrive at top speed with your body, hands and stick already across the line, and that is the ice a defenceman standing up at their own blue line is defending. **A head up is the condition of the technique, not an extra** — [Body Contact and Battles](../technique/body_contact_and_battles.md) owns that rule and writes it without exceptions, because you cannot brace for a hit you cannot see and a body that is surprised does not absorb contact. **Keep the blade in contact with the ice or the paint.** A dragged, touching skate is onside under all four rule sets; a *lifted* trail skate is onside under the NHL and IIHF but **offside under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11** — two books of the four. **How much North American rec and youth hockey runs on USA Hockey's book or Hockey Canada's is a question about leagues rather than about books, and this document has no count for it, so find out which book your league runs.** The alternative — coasting at the line to be safe — is the single most common way a winger arrives at an offensive-zone battle with no speed and loses it. Do not slow down to be safe. Arriving late and slow costs your line more than a whistle would.
+
+
+![](diagram:winger-arriving-at-the-line)
 
 **If you are playing your off wing** — a left shot on the right side, or the reverse — your lane is the same but the puck now sits on your inside hand, which helps you entering the zone and costs you on a breakout pass up your own wall; [Switching Positions → Playing your off wing](switching_positions.md) covers the trade and the fix.
 
@@ -350,6 +380,9 @@ Goal: Maintain possession in the offensive zone and keep the pressure going
 
 **Key considerations:** The corners are a battle area. Protecting the puck and waiting for support is better than a rushed pass that turns over possession. Your defenseman is usually an option at the point — but the strong-side defender may have stepped down (moved from the blue line toward the top of the faceoff circle) to support the cycle, so look up before passing blindly to the point.
 
+
+![](diagram:winger-corner-and-the-empty-point)
+
 ---
 
 ### Offensive Zone: Pressuring an Opponent with the Puck
@@ -385,6 +418,11 @@ Your role depends on which side of the ice the puck is on, and on who got there 
 **Goal:** Force a turnover or a bad outlet pass by trapping the puck carrier with no escape route.
 
 **Key considerations:** Effective forechecking is about angles, not just speed. Read where F1 has pushed the puck and seal the next-most-likely escape. Stay in your F2 or F3 role and trust your teammates to be in theirs — if everyone chases the puck, the opponent will pass around you.
+
+
+![](diagram:forecheck-212)
+
+![](diagram:forecheck-212-stacked)
 
 ---
 
@@ -483,6 +521,11 @@ Rule: Step in for an ejected centre and you are a "Player taking the face-off" �
 
 The centre takes the draw; you line up at the hash marks — one winger on the **inside** hash (facing the slot), one on the **outside** hash (facing the boards). The usual default is that the winger whose natural side matches the faceoff location takes the outside hash, but assignments vary by team and situation, so ask. **The nine locations, the full five-player alignments and the set plays off each are in [Faceoffs](../systems/faceoffs.md).** Your job in every one of them is the same: read the result of the draw and react instantly — pounce on a loose puck, support the centre, or get to your defensive position.
 
+
+![](diagram:faceoff-dzone-alignment)
+
+![](diagram:faceoff-ozone-alignment)
+
 **Start with two things about faceoffs that are specifically your responsibility:**
 
 - **Don't encroach.** If you creep inside the faceoff circle or over your hash marks before the puck drops, **your centre gets thrown out of the dot** — you don't. Your team then takes the draw with its second-best option, and a second violation on the same draw is a bench minor — **under USA Hockey Rule 613(d) it is a minor on the individual instead**. ⚠️ **The IIHF used to be the one book that ejected nobody, and it no longer is.** Its **2025/26** edition made your winger's encroachment a warning to the team, with the centre staying for the re-drop; its **2026/27** edition, published June 2026, replaced that sentence with the NHL's — *"the offending team's player taking the face-off shall be ejected from the face-off circle"* (IIHF 2026/27 Rule 76.6). ⚠️ **And in Britain you do not need to know which IIHF edition your league runs, because IHUK has written the answer into its own rules**: the **IHUK In-House Rules 2026-27** amend Rule 76 to say that *"with the exception of face-offs following icings, the linesperson shall immediately replace the centre for all violations."* **So plan on losing your centre for it** — on every draw except the one after an icing. A **second** violation by the same team on the same draw is a **bench minor** for delay of game under both IIHF editions (Rule 76.7), and the In-House Rules do not amend that, so it was never free either way. ⚠️ **And in two of the four books your stick counts as well as your skates.** The **NHL** and the **IIHF** expressly permit the blade: *"A player's stick may be inside the area between the hash marks provided there is no physical contact with his opponent or his opponent's stick"* (NHL Rule 76.7(ii); IIHF Rule 76.7(II) is materially identical, differing in pronoun — it writes *"their opponent or their opponent's stick"* where the NHL writes *"his"* — and is unchanged between its 2025/26 and 2026/27 editions). **USA Hockey answers the same question the other way, and it is the Casebook that answers it** — asked *"[m]ay a player have their stick between the hash marks that are meant to separate them from their opponent during a face-off?"*, Situation 8 to Rule 613 replies *"No… Both players must be completely behind their respective hash marks. This includes all sticks and all skates."* **Hockey Canada puts it in the rule itself**: 6.2(a) requires that *"[a]ll other players on the ice must position themselves and their sticks on side."* So under those two books a blade reaching over the line ejects your centre exactly as a skate would, and under the other two it does not — find out which is yours. *(Only IIHF Rules 76.3, 76.4, 76.6 and 76.7 have been read in the 2026/27 edition for this document, and the In-House Rules govern England, Wales, Scotland and Northern Ireland and say nothing about the Elite League; [Faceoffs](../systems/faceoffs.md) carries the full comparison and the scope of both readings.)* Hold your position — and, in two of the four books, your blade — until the puck hits the ice.
@@ -520,6 +563,9 @@ One thing worth asking rather than assuming: **the bumper is *usually* the centr
 
 Move the puck quickly, look for one-timer setups, and crash the net for rebounds. Quick puck movement is what beats a penalty kill; a kill can cover any single option, but not three in two seconds.
 
+
+![](diagram:pp-131)
+
 ### Penalty Kill (your team is short-handed)
 
 ```facts
@@ -543,6 +589,11 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 
 Stay tight and force the opposing point into low-percentage shots. Block **from close, on your feet, square to the shooter, head out of the lane and hands behind your body with the backs of the gloves out** — and not from in front of your own goalie's eyes. ⚠️ **Tucked in behind your shin pads is the going-down form, not a standing one:** on your feet you cannot get your hands there without folding forward, and that puts your head down into the low shot lane. If you do go down, [Defender](defender.md) has that technique; it and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the rest of it, and the list of when *not* to block. Clear the puck whenever you get it — you don't need to be fancy, and a shorthanded team may ice the puck freely — **under NHL and IIHF rules.** USA Hockey gives the exemption only *"For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only"* (Rule 624(b)(1)), so outside those classifications your clear can still be iced; and NHL Rule 81.6 takes it away from a team shorthanded by a *major* with nobody waiting on the penalty bench. [Special Teams](../systems/special_teams.md) covers it. Don't chase the puck around the perimeter and pull the shape apart; that's exactly what the power play is trying to make you do.
 
+
+![](diagram:pk-box)
+
+![](diagram:pk-diamond)
+
 ### Icing
 
 ```facts
@@ -562,6 +613,9 @@ Key: The rule in full — hybrid icing, the wave-off list and "gaining the line"
 **The rule itself — hybrid icing, the full wave-off list, "gaining the line", and how USA Hockey and rec leagues differ — is in [Rules Primer](../foundation/rules_primer.md).** Icing touches a winger from both ends, which is why it is worth your attention more than most players'.
 
 **You take more dump-ins than anyone, and dumping from behind the red line is the classic accidental icing.** Two fixes: carry the extra stride so the **puck is on your stick** as it touches the centre red line, which makes the dump legal however far it travels; or make the dump soft enough that you win the race yourself. ⚠️ **That second one needs a race to exist, and two of the four books do not run one** — USA Hockey never, and Hockey Canada outside three categories, both set out below. The first fix, and a dump that stops short of the goal line, work in all four.
+
+
+![](diagram:icing-gaining-the-line)
 
 **You are also the one chasing, and under hybrid icing that makes you the reason it gets waved off.** Be precise about what the race actually is, because the common version is wrong. The dot is a **decision deadline, not a finish line**. Rule 81.1: icing *"is completed upon the determination as to which player **(attacking or defending) would first touch the puck**"*, and that call *"will be made by no later than the instant the first player reaches the end zone face-off dots **with the player's skate being the determining factor**."* (That closing clause matters: it is what fixes the deadline to a skate crossing the dot line.) So the linesperson is judging who would get to **the puck** first, and simply has to decide by the time someone reaches the dot. Beating the defender to the dot does not by itself wave anything off — being clearly on course to reach the puck first does. Sprint the first half of that race, because that is where it is decided. If you are clearly beaten to the dot, ease up: you gain nothing and the end boards are unforgiving. ⚠️ **And check that your book runs a race at all.** Hybrid icing is the NHL's and the IIHF's. **USA Hockey runs none** — its Rule 624 Note completes the icing *"the instant the puck has completely crossed the goal line"*, and the only place that book writes "hybrid icing" is its Sled Hockey section. **Hockey Canada applies hybrid icing *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"* only** (Rule 6.7(e)), and in every other category under that book — the rest of minor and female hockey included — icing is automatic under Rule 6.7(a) the moment the puck crosses the goal line, so there is nothing to chase and nothing to wave off by beating a defender to it. [Rules Primer](../foundation/rules_primer.md) owns the four-book comparison, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) the definition.
 
@@ -601,6 +655,11 @@ When your team loses the puck in the offensive or neutral zone, your job as a wi
 - **Watch your assignment, not the puck**, and arrive at your covering position before the puck does. Once you're set, transition into your normal defensive-zone role: cover the point, be ready to break out.
 
 Lanes, gap, and the numerical situations in full: [Defending the Rush](../systems/defending_the_rush.md).
+
+
+![](diagram:rush-backcheck-lanes)
+
+![](diagram:rush-trailer)
 
 ---
 

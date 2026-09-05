@@ -306,6 +306,9 @@ Rule: Knocking the puck down to a teammate is a hand pass, allowed only inside y
 
 ⚠️ **And the crease is a volume, not a patch of ice — which is the half of this that catches players out, because the whole section is about a puck in the air.** All four books build the vertical extent into the crease itself. **NHL Rule 1.7**: the crease area *"shall include all the space outlined by the crease lines and extending vertically four feet (4') to the level of the top of the goal frame."* **IIHF Rule 1.7**: it *"extends vertically until the top of the crossbar."* **Hockey Canada 1.5(c)**: it *"will extend vertically to the level of the top of the goal frame"* — and that is the rule Hockey Canada's own penalty-shot clause sends you to, 10.2(a)(v) citing *"Rule 1.5 (c) – Goal Crease"* by name. **USA Hockey prints it as a Note attached to 618(a) itself**, directly beneath the penalty-shot paragraph: *"For the purpose of this rule, the goal crease shall extend from the ice to the top of the crossbar of the goal frame."* So a puck you pluck out of the air over your own crease, below the crossbar, is a puck **in** the crease, and holding on to it there is the penalty shot. [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns the crease's construction and the small difference in how the books word its height.
 
+
+![](diagram:the-puck-decides-not-you)
+
 **The crease's vertical ceiling is real, though, and it is the crossbar.** The IIHF's Situation Handbook works both sides of that line. At **Situation 67.6** a defending player is standing in his own crease with his goalkeeper pulled, and *"grabs the puck out of mid-air (around the height of the waist) and drops the puck outside the crease"* — the answer is *"an Awarded Goal to Team B"*, because the puck was in the crease at the moment he caught it and putting it down somewhere else afterwards changes nothing. **Situations 63.15 and 67.4** make a puck taken knee high in the crease a penalty shot. But at **Situation 63.27** the same player catches the puck *"(above the crossbar)"* and the answer is *"No. Since the puck was above the crossbar when caught and thrown, it was not considered to be in the crease. Therefore, only a minor penalty is warranted."* ⚠️ **Take those as worked applications and not as rule text** — the Handbook's own Foreword ranks it below the book: *"in case of any contradictions, the valid IIHF Rulebook is always the basis."* ⚠️ **And do not carry them straight into a USA Hockey game**, because that book's Casebook answers the standing-in-the-crease catch at **614 Situation 3** with *"[e]ither a penalty shot or awarded goal"* — and then adds the escape this whole section is built on: *"if the puck is caught and dropped to the ice immediately, no penalty shall be assessed as no stoppage of play has been caused."* ⚠️ **Read Situation 3 with its own facts attached, because they are what put the awarded goal in the answer.** It opens *"The goalkeeper has been removed and another player substituted"*, and its ruling spells out the pairing: *"A penalty shot is awarded unless the action of the player prevented an obvious and imminent goal – in which case the goal is awarded."* With your goalkeeper on the ice, the awarded goal is off the table and what is left is 614(b)'s penalty shot or optional minor. The escape sentence, though, is general: it reasons from the **first** sentence of **618(a)**, under which a hand closed on the puck and *"immediately"* dropped causes no stoppage at all — and that sentence carries no crease condition, so the catch-and-drop is available wherever you are standing.
 
 ⚠️ **Three things qualify the penalty shot for holding the puck in your own crease, and all three matter.** First, **every one of the four books exempts the goalkeeper by name.** This is a rule about what a skater may not do in front of their own net; a goaltender covering the puck in their own crease is doing their job. Second, if your own goalkeeper has been pulled for an extra attacker, the same infraction is an **awarded goal** rather than a penalty shot — NHL and IIHF **67.5**, Hockey Canada **10.2(a)(vi)** — though USA Hockey attaches a condition its partners do not, awarding the goal under **618(a)** and **614(b)** only where the action *"has prevented an obvious and imminent goal"* (614(b)'s wording). Third, USA Hockey's award is *"a penalty shot/optional minor penalty"*, and **Rule 406(a)** puts that election with the other team: *"the non-offending team may, prior to the penalty shot, elect that the minor or bench minor penalty be assessed to the offending player or team in lieu of the penalty shot."* You do not get to choose the cheaper one.
@@ -361,6 +364,9 @@ The foundation. The puck lives on the **side of your body away from the pressure
 - The stick should be on the far side of the puck too, so that a poke has to go through the puck *and* your blade.
 
 This is why hands-away-from-the-body matters so much. A far-side puck is only available to a player whose hands can operate wide.
+
+
+![](diagram:puck-on-the-far-side)
 
 ### Wide, low base
 
@@ -772,6 +778,9 @@ You can beat one player. You cannot beat two, and pretending otherwise is how a 
 - pass to the teammate their arrival has left open,
 - chip the puck into space behind them,
 - or protect it, take the contact, and wait for support.
+
+
+![](diagram:you-cannot-beat-two)
 
 ### When you are the last player back
 

@@ -2652,9 +2652,55 @@ def is_sources_paragraph(text: str) -> bool:
 
 # -- block renderers --------------------------------------------------------
 
+def _diagram_caption_is_important(text: str) -> bool:
+    """True when a paragraph is a diagram reference whose CAPTION carries a ⚠️.
+
+    ⚠️ A diagram's raw paragraph is only `![](diagram:some-id)` and never contains the
+    glyph, so testing the markdown misses every caption warning. And by the time
+    `to_speech` returns, the SYMBOLS table has already deleted the glyph, so testing the
+    OUTPUT misses them too — the marker exists only in the manifest, between those two
+    points. This resolves the id and looks there.
+    """
+    for _alt, url in RE_IMAGE.findall(text):
+        if not url.startswith("diagram:"):
+            continue
+        entry = _diagram_manifest().get(url[len("diagram:"):])
+        if entry and "⚠" in (entry.get("caption") or ""):
+            return True
+    return False
+
+
 def render_paragraph(text: str, report: DocReport) -> list[Token]:
-    important = "⚠" in text
     tokens = to_speech(text, report.converted)
+    # ⚠️ THE FLAG IS COMPUTED FROM THE MANIFEST, NOT FROM THE TEXT IN FRONT OF YOU.
+    #
+    # ⚠️ AN EARLIER VERSION OF THIS HEADER SAID "computed on the SPOKEN OUTPUT, NOT on the
+    # raw markdown, and that order is the whole point." THAT WAS FALSE OF THE CODE BENEATH
+    # IT: both disjuncts below read `text`, the raw markdown. Moving `to_speech` above this
+    # point changed nothing. The fix is `_diagram_caption_is_important`, which resolves the
+    # id against the manifest — the rest of this comment described that correctly while the
+    # header described a mechanism that does not exist. `commit-gate` caught it in the same
+    # diff as a repair to a stale comment in `remark-corpus.mjs`, whose whole lesson is that
+    # reading an out-of-date comment is how the wrong thing gets deleted.
+    #
+    # Why the manifest and not the text: for body prose `"⚠" in text` is right. For a
+    # DIAGRAM it is not, because the raw paragraph is only
+    # `![](diagram:some-id)` and contains no ⚠️ at all. The caption is substituted inside
+    # `to_speech`, and the SYMBOLS table then deletes the glyph — so a caption's warning
+    # marker was dropped with nothing in the output to say anything had been lost.
+    #
+    # Measured 4 September 2026 by `safety-reviewer`, by rendering rather than reading:
+    # 44 of 176 captions carry a ⚠️ and every one of them lost it. The body paragraph
+    # beside them came out as "Important. Protect what is not padded…" while the caption's
+    # "⚠️ Blocking shots is genuinely useful and genuinely dangerous" came out as bare
+    # prose, mid-sentence, in a 624-word run.
+    #
+    # ⚠️ AND THE SITE DOES NOT LOSE IT: `remark-corpus.mjs` splits a caption at its first
+    # ⚠️ and gives the remainder an amber `.warn-inline` run, added because captions were
+    # "rendering as the faintest thing on its page". So the sighted reader got the
+    # escalation and the listener got nothing — a divergence between the two layers that
+    # nothing in either layer could see.
+    important = "⚠" in text or _diagram_caption_is_important(text)
     report.residue.extend(find_residue(tokens))
     spoken = plain(tokens).strip()
     if not spoken:

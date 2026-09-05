@@ -130,7 +130,7 @@ function main() {
     const width = d.width ?? 900;
     const spec = { ...d, footer: FOOTER };
     const svg =
-      d.kind === 'legend' ? legendSvg(width)
+      d.kind === 'legend' ? legendSvg(width, spec)
       // caption/describe are passed for the same reason playSvg carries them: the
       // site hides the <figcaption> from assistive technology on the assumption the
       // SVG's <title> repeats it. Omitting them here did not degrade the name, it
@@ -150,6 +150,11 @@ function main() {
       owner: d.owner,
       caption: d.caption,
       describe: d.describe ?? null,
+      // ⚠️ `title` is the ACCESSIBLE NAME and it was absent from this manifest, so nothing
+      // downstream could audit it — `check_absolutes.py` reads captions from here and could
+      // not see names at all. `site-reviewer` hit that gap and drew a wrong intermediate
+      // conclusion from it before measuring the sources directly.
+      title: d.title ?? null,
       // The legend is authored in px against a 640 viewBox rather than in rink feet,
       // so it renders SMALLER as the column narrows while every other diagram renders
       // larger. It is the key that decodes all the others, so it must never be the

@@ -63,6 +63,7 @@ const LAST_MAN = { at: 'blue-line', dx: -7 };          // (18, 0)
 
 const threeLanes = {
   id: 'entry-three-lanes',
+  title: 'Three lanes at the line',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -132,6 +133,7 @@ const NET_DRIVER = { at: 'high-slot', dx: -10, dy: 4 };    // (59, 4)
 
 const wideEntry = {
   id: 'entry-wide',
+  title: 'The wide entry',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -261,6 +263,7 @@ const DELAY_SUPPORT = { at: 'blue-line', dx: -23, dy: 18 };  // (2, 18)
 
 const delayCurl = {
   id: 'entry-delay-curl',
+  title: 'The delay and curl-back',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -386,6 +389,7 @@ const RIM_ARRIVES = { at: 'corner:left', dx: 4, dy: 2 };      // (86, -32)
 
 const hardRim = {
   id: 'dump-hard-rim',
+  title: 'The hard rim',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -454,6 +458,7 @@ const SOFT_CHASER = { at: 'blue-line', dx: 14, dy: -34 };    // (39, -34)
 
 const softAreaDump = {
   id: 'dump-soft-area',
+  title: 'The soft area dump',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -518,6 +523,7 @@ const CHIP_LANDS = { at: 'blue-line', dx: 29, dy: 36 };      // (54, 36)
 
 const chipPast = {
   id: 'dump-chip-past',
+  title: 'The chip past a defenceman',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -581,6 +587,7 @@ const WEAK_SIDE_D = { at: 'faceoff-dot:left', dx: 2, dy: 14 };  // (71, -8)
 
 const crossCorner = {
   id: 'dump-cross-corner',
+  title: 'The cross-corner dump',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -674,6 +681,7 @@ const TRAP_FORECHECKER = { at: 'blue-line::far', dx: -15, dy: 6 };  // (-40, 6)
 
 const flipOverTrap = {
   id: 'dump-flip-over-trap',
+  title: 'The flip over a trap',
   owner: 'content/systems/zone_entries.md',
   half: false,
   width: 900,
@@ -767,6 +775,7 @@ const TRAP_CHASER = { at: 'blue-line', dx: 8, dy: 34 };     // (33, 34)
 
 const trapezoidAim = {
   id: 'dump-and-the-trapezoid',
+  title: 'Dumping and the trapezoid',
   owner: 'content/systems/zone_entries.md',
   half: true,
   width: 900,
@@ -832,6 +841,232 @@ const trapezoidAim = {
   puck: { at: 'blue-line', dx: 3, dy: 24 },   // (28, 24)
 };
 
+// ---------------------------------------------------------------------------
+// 10. Attack the outside shoulder — section 3.
+//
+// THE MIRROR OF THIS PLAY IS ALREADY DRAWN ELSEWHERE, and drawn deliberately as
+// the other half: `show-one-shoulder-open-the-other` in time_and_space.mjs runs
+// the carrier at the defenceman's INSIDE shoulder to open the boards, and its own
+// caption records that "the mirror is not drawn and works the same way: skate at
+// the outside shoulder, the defenceman widens, and the middle opens instead."
+// This is that mirror, and it is this section's play rather than that one's: the
+// outside shoulder is the one nearest the boards on your side, and what opens is
+// the inside lane.
+//
+// WHY THE DEFENCEMAN GETS A ROUTE AND THE CARRIER'S SECOND MOVE DOES NOT.
+// The section's sequence is three beats — aim at the outside shoulder, the hips
+// open outward, THEN cut back inside. A still frame can hold two of them. Drawing
+// the cut-back as a second route means running a line from the end of the first
+// one across the defenceman's body: measured, a route from the carry's tip to the
+// inside lane passes 2.4 ft from his anchor, i.e. straight through him. So the
+// third beat is the SHADED LANE — what opens — and the caption says what to do
+// with it, which is also where the section's two other continuations live (slip
+// it between his feet, or hit the middle driver), neither of which is drawn.
+//
+// AND HE MAY NOT BITE. The section's own counter is a defender who "refuses to
+// open and stays square", in which case the outside lane is there for real. The
+// picture is one instance of a defenceman who moved; the caption carries the other.
+// ---------------------------------------------------------------------------
+
+const SHOULDER_CARRIER = { at: 'blue-line', dx: -20, dy: 30 };   // (5, 30)
+const SHOULDER_D       = { at: 'blue-line', dx: 7, dy: 18 };     // (32, 18)
+
+const outsideShoulder = {
+  id: 'entry-outside-shoulder',
+  owner: 'content/systems/zone_entries.md',
+  title: 'Attacking the outside shoulder',
+  half: true,
+  width: 900,
+
+  caption:
+    'Attacking a defenceman’s outside shoulder — the one nearest the boards on your side — on ' +
+    'the way to the attacking line, with the zone you are entering at the right. His job is to ' +
+    'stay between you and the middle of the ice, and his weakest moment is the pivot: the ' +
+    'instant he turns from backwards to forwards, or opens his hips to one side. So you threaten ' +
+    'the lane he is least worried about and most awkward to defend, because covering it means ' +
+    'opening his hips toward the boards — and the moment they open outward, the inside lane is ' +
+    'the one that is available. That lane is shaded here; it is a name for a piece of ice at one ' +
+    'instant and nothing marks it on the rink. What you do with it is a choice the picture does ' +
+    'not make for you: cut back into the middle, slip the puck between his feet, or hit a ' +
+    'teammate driving the middle. ' +
+    'Two honest limits. He may refuse to open and stay square, and then nothing here happens — ' +
+    'but the outside lane is yours for real, so take it and get to the goal line. And the ' +
+    'carrier’s line stops well short of him on purpose: you are not trying to beat him, you are ' +
+    'trying to make him commit, and no contact is drawn or intended. Pace and eyes up are the ' +
+    'conditions of it. A defender who has committed to one lane cannot defend the other.',
+
+  describe:
+    'The attacking half of the rink, the opposition net at the right, the attack moving left to ' +
+    'right. One own player, an open circle, carries the puck up the upper side of the ice from ' +
+    'near the centre line. One opposition defenceman, a solid triangle, is between him and the ' +
+    'blue line and about ten feet nearer the middle of the ice than he is. The carrier’s ' +
+    'skate-and-stickhandle route runs at that defenceman’s outer shoulder, the side nearer the ' +
+    'boards, and stops about twelve feet short of him. A short plain route runs from the ' +
+    'defenceman outward toward the boards, showing his hips opening that way. A shaded band ' +
+    'labelled "the inside lane" fills the ice on the middle side of him, running from the blue ' +
+    'line toward the tops of the faceoff circles. The opposition goaltender is in his crease.',
+
+  zones: [
+    {
+      // THE INSIDE LANE. Its boards-side edge is drawn level with the defenceman's
+      // inside shoulder — he is at (32, 18) and a triangle's circumradius is 3.6 ft,
+      // so y = 14 is one glyph off his anchor toward the middle. Its far edge is at
+      // the tops of the circles only so the shading has an edge: nothing gives this
+      // lane a depth, and the caption says so. Same treatment, and the same
+      // disclosure, as the shaded middles in `rush-gap-and-angle`, `attack-the-seam`
+      // and `show-one-shoulder-open-the-other`.
+      //
+      // NOT labelled "the middle" and not drawn on the faceoff-dot lines, on
+      // purpose. Those four diagrams all draw a band called "the middle" between the
+      // dot lines, and `check_zones.py` groups by identical label text — a fifth
+      // polygon under that name, at a different width, would report as a
+      // disagreement about a region the corpus has settled. This is a different
+      // thing: the ice inside ONE defenceman at one instant, which is why it is
+      // named for him rather than for the rink.
+      points: [
+        { at: 'blue-line', dy: 14 },              // (25, 14)
+        { at: 'top-of-circle:right', dy: -8 },    // (54, 14)
+        { at: 'top-of-circle:left', dy: 18 },     // (54, -4)
+        { at: 'blue-line', dy: -4 },              // (25, -4)
+      ],
+      label: 'the inside lane',
+    },
+  ],
+
+  players: [
+    { id: 'F', pos: 'F', at: SHOULDER_CARRIER, label: 'aims at the outside shoulder' },
+    { id: 'D', pos: 'D', team: 'opp', at: SHOULDER_D, label: 'hips open outward' },
+    { id: 'G', pos: 'G', team: 'opp', at: { at: 'crease', dx: -1 } },
+  ],
+
+  // Not numbered. The two are cause and effect within one beat, not a sequence a
+  // reader should time.
+  //
+  // THE CARRY. It runs on the true bearing from the carrier to a point 4 ft outboard
+  // of the defenceman's anchor — his outside shoulder — and stops 12 ft short of it,
+  // finishing at (20.5, 25.4). Against THE ARRIVAL INVARIANT in scripts/lib/rink.mjs:
+  // the tip is 13.7 ft from the defenceman, comfortably outside the 9 ft at which
+  // form (b) forbids an arrowhead, and the extended tangent misses his anchor by
+  // 3.9 ft, outside the 2.9 ft of form (a). Aiming at a shoulder means missing the
+  // centre by about a shoulder, so that margin is inherent to the play and not a
+  // number to tune.
+  //
+  // ⚠️ THE CARRIER STARTS AT (5, 30), NOT (10, 28), AND THE REASON IS THE GLYPH AND
+  // NOT THE HOCKEY. At the shorter start the route was 10.8 ft and rendered as a
+  // single hump with the arrowhead almost on it — `entry-three-lanes` above records
+  // the same failure at 14 ft and calls it "a wiggle". A `carry` is a LONG, SMOOTH
+  // WAVE in the key; one hump is not that mark. At 16 ft it draws as a wave. (2, 30)
+  // was tried first and put the glyph's ink within a foot of the frame's left edge.
+  // The bearing and the 12 ft stand-off are unchanged, so every clearance above is
+  // too — that is the point of expressing the stop-short as a distance along the
+  // bearing rather than as a fixed coordinate.
+  //
+  // THE DEFENCEMAN'S ROUTE is 9.4 ft, outward and slightly up-ice: the hips opening
+  // toward the boards. It is short because it is a weight shift and a pivot, not a
+  // journey. Its arrowhead points away from the carrier, who lies behind the tip.
+  routes: [
+    { from: SHOULDER_CARRIER, to: { at: 'blue-line', dx: -4.5, dy: 25.4 }, kind: 'carry' },
+    { from: SHOULDER_D, to: { at: 'blue-line', dx: 12, dy: 26 }, kind: 'skate' },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 11. The middle drive — section 3.
+//
+// THE ROLES ARE THE OTHER WAY ROUND FROM `attack-the-seam`, which is why this is a
+// second picture and not a copy of one. There the CARRIER drives the ice between
+// two defencemen. Here the carrier is wide and a teammate WITHOUT the puck runs
+// that route, which is the section's whole point: "the middle driver usually does
+// not get the puck, and that is not the point."
+//
+// NO SHADED SEAM. `attack-the-seam` labels a band "the seam", and `check_zones.py`
+// groups zone polygons by identical label — a second band under that name, drawn
+// against two differently-placed defencemen, would report as a disagreement about a
+// region rather than as the second instance it is. The two defencemen are drawn
+// level rather than staggered here for the same reason: this diagram is not making
+// a claim about how they retreat, it is making one about what the driver does to
+// them.
+//
+// NOTHING IS DRAWN FINISHING AT THE NET. The drive stops more than twenty feet
+// short of the goalmouth, which is the same limit `drive-the-net-before` states and
+// for the same reason: what happens in the last few feet of a net drive is contact
+// in front of a goaltender, and no diagram in this corpus teaches that.
+// ---------------------------------------------------------------------------
+
+const MD_CARRIER = { at: 'blue-line', dx: -3, dy: 30 };    // (22, 30)
+const MD_DRIVER  = { at: 'blue-line', dx: -9, dy: 2 };     // (16, 2)
+const MD_D_HIGH  = { at: 'blue-line', dx: 11, dy: 12 };    // (36, 12)
+const MD_D_LOW   = { at: 'blue-line', dx: 11, dy: -12 };   // (36, -12)
+
+const middleDrive = {
+  id: 'entry-middle-drive',
+  owner: 'content/systems/zone_entries.md',
+  title: 'The middle drive',
+  half: true,
+  width: 900,
+
+  caption:
+    'A middle drive on the way into the zone, with the net being attacked at the right: a ' +
+    'teammate without the puck skating hard through the middle of the ice, through the seam ' +
+    'between the two defencemen, at the net — while the carrier comes in wide with the puck. ' +
+    'The driver usually does not get it, and that is not the point. The point is that a ' +
+    'defenceman who ignores a player skating at his net will get scored on, so he cannot ignore ' +
+    'him — which means he cannot step up on the carrier either. One player, running one route, ' +
+    'at speed, buys the carrier several extra feet of space, and those feet are the reason for ' +
+    'the whole run. ' +
+    'It only works if it is committed. A half-hearted middle drive is a player standing in the ' +
+    'slot, which frees the defence rather than freezing it — and a still picture cannot show ' +
+    'effort, so read that arrow as full speed rather than as a path. Two things are not drawn ' +
+    'and are not optional. Your head is up: this is the one route where two defencemen can both ' +
+    'stand you up in open ice, and looking down at the puck as you arrive is what turns that ' +
+    'into an injury. And the drive stops well short of the goalmouth here, because what happens ' +
+    'in the last few feet of a net drive is contact in front of a goaltender, which this picture ' +
+    'does not teach. Where the two defencemen are drawn is one instance and not a system: how a ' +
+    'defence meets a rush is a coaching choice.',
+
+  describe:
+    'The attacking half of the rink, the opposition net and goaltender at the right, the attack ' +
+    'moving left to right. Two opposition defencemen are drawn as solid triangles just inside ' +
+    'their own blue line, level with each other and about twelve feet either side of the middle ' +
+    'of the ice. Two own players are drawn as open circles. One carries the puck wide on the ' +
+    'upper side, just short of the blue line, with a skate-and-stickhandle route continuing ' +
+    'down the wall into the zone. The other, without the puck, is in the middle of the ice behind ' +
+    'the line, with a long plain route running between the two defencemen and on toward the net, ' +
+    'finishing more than twenty feet short of the goalmouth. No puck is drawn on the driver and ' +
+    'nothing in the picture shows contact.',
+
+  players: [
+    { id: 'D', team: 'opp', pos: 'D', at: MD_D_HIGH },
+    { id: 'D', team: 'opp', pos: 'D', at: MD_D_LOW },
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'F', pos: 'F', at: MD_CARRIER, label: 'carrier, wide' },
+    { id: 'F', pos: 'F', at: MD_DRIVER,  label: 'no puck, full speed' },
+  ],
+
+  // Not numbered: the drive and the carry happen together, and numbering them would
+  // say one waits for the other.
+  //
+  // THE DRIVE runs from (16, 2) to (62, -3) — 46 ft, between the two defencemen. It
+  // passes 12.1 ft from the upper one's anchor and 11.7 ft from the lower one's, so
+  // it goes through the gap rather than through a body, and both of them lie BEHIND
+  // its tip, which is what THE ARRIVAL INVARIANT in scripts/lib/rink.mjs scopes its
+  // arrowhead rule to. The tip is 24 ft from the goaltender and 23 ft from the
+  // goalmouth.
+  //
+  // THE CARRY is 20 ft: long enough to draw as the key's LONG, SMOOTH WAVE rather
+  // than as one hump with an arrowhead on it, which is what 12 ft rendered as and
+  // what `entry-three-lanes` above calls "a wiggle". It is not longer than that
+  // because the section fixes the driver's line and says nothing about where the
+  // carrier goes beyond "wide"; a route running to the goal line would author the
+  // wide entry this section does not describe here, and `entry-wide` above already
+  // owns that play. Its tip lies well up-ice of the upper defenceman, who is behind
+  // it and therefore outside the arrowhead rule's scope.
+  routes: [
+    { from: MD_DRIVER,  to: { at: 'blue-line', dx: 37, dy: -3 }, kind: 'skate' },
+    { from: MD_CARRIER, to: { at: 'blue-line', dx: 17, dy: 33 }, kind: 'carry' },
+  ],
+};
+
 export default [
   threeLanes,
   wideEntry,
@@ -842,4 +1077,6 @@ export default [
   crossCorner,
   flipOverTrap,
   trapezoidAim,
+  outsideShoulder,
+  middleDrive,
 ];

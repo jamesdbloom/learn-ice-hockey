@@ -21,7 +21,18 @@ the work.**
 | `##` teaching sections | 392 | 92 | **23%** |
 | ⚠️ `###` subsections | **1,115** | **130** | ⚠️ **12%** |
 
-**985 subsections have no diagram.** ⚠️ **Measuring per DOCUMENT — which is what an earlier round did — hides
+**985 subsections have no diagram.**
+
+⚠️ **THIS TABLE IS A SNAPSHOT TAKEN 4 SEPTEMBER 2026, MID-ROUND, AND IT IS NOT THE SAME CENSUS AS THE ONE IN THE ROUND-64 RECORD.** I edited this row to 115/10% to match the record and **broke it against its own per-document table below**, which sums to 1,115 / 130 / 985 and is internally consistent in all 36 rows. `commit-gate` caught it. **Restored.**
+
+⚠️ **The two censuses use different definitions and neither is wrong.** The round-64 record measures `###` only, marker attributed to the nearest preceding `###`, reset at each `##`, fenced content excluded — **1,120 subsections, 119 drawn at `HEAD`, 166 after the round.** This table's definition is not stated, which is exactly the defect the record calls its fourth figure defect. **Do not reconcile them by overwriting one with the other.** Re-derive this table under a stated definition, or delete it and point at the record.
+
+⚠️⚠️ **THE FIRST RUN OF THIS CENSUS HAD A BUG AND A DIAGRAM AGENT CAUGHT IT.** It treated only `###` as a
+section boundary, so **the last subsection before every `##` heading swallowed Common Mistakes, Check
+yourself and Key Takeaways.** **`winger.md`'s *"Backchecking"* was reported at 7,579 words; it is 429.**
+**The totals under THIS table's definition were self-consistent; the "biggest undrawn" column was inflated wherever a subsection sat last before a
+`##`, which is once per major section in every document.** ⚠️ **A word count is a boundary question, and I
+picked the wrong boundary — the same class as every probe error recorded further down this file.** ⚠️ **Measuring per DOCUMENT — which is what an earlier round did — hides
 this completely: a document with four diagrams looks served while nineteen of its twenty subsections have
 none.**
 
@@ -30,11 +41,28 @@ Under Pressure"* (402 words) and *"Neutral Zone: Pressuring an Opponent with the
 diagram. **Sixteen of `center.md`'s nineteen subsections carry none, including a 3,445-word one
 (*"Offensive Zone: Without the Puck — Getting Open in the Slot"*) and a 1,959-word one.**
 
-**Worst-served, subsections missing / total:**
-`puck_handling` 47/47 · `skating` 45/45 · `equipment` 43/43 · `mental_game` 42/42 ·
-`conditioning_and_recovery` 42/42 · `team_play_and_culture` 39/39 · `body_contact_and_battles` 47/51 ·
-`rules_primer` 46/50 · `practice_and_development` 45/47 · `goaltender` 43/46 · `game_management` 40/42 ·
-`getting_started` 39/40 · `zone_entries` 37/46 · `offensive_zone_play` 34/41
+**Worst-served, subsections missing / total, with the CORRECTED biggest genuinely-undrawn subsection:**
+
+| document | miss/total | biggest undrawn |
+|---|---|---|
+| `body_contact_and_battles` | 47/51 | What actually gets called (4,685w) |
+| `puck_handling` | 47/47 | If the puck pops up, do not grab it (2,589w) — **now drawn** |
+| `rules_primer` | 46/50 | Body fouls (10,508w) |
+| `practice_and_development` | 45/47 | One popular idea that does hold up (1,062w) |
+| `skating` | 45/45 | Knee bend — the one that matters (801w) |
+| `goaltender` | 43/46 | ⚠️ **The trapezoid — the rule that defines what you can do (4,511w)** |
+| `equipment` | 43/43 | Certification (2,296w) |
+| `mental_game` | 42/42 | Working on physical fear: graded exposure (838w) |
+| `conditioning_and_recovery` | 42/42 | Groin and adductor strain (1,026w) |
+| `game_management` | 40/42 | ⚠️ **Catching a loose puck in your own crease (2,419w)** |
+| `getting_started` | 39/40 | Why it exists: insurance and safeguarding (862w) |
+| `team_play_and_culture` | 39/39 | ⚠️ **The mechanics of a change on the fly (1,880w)** |
+| `zone_entries` | 37/46 | The four clauses the technique rests on (1,267w) |
+| `rink_map_and_glossary` | 35/42 | ⚠️ **The goal crease ("the blue paint") (1,680w)** |
+| `offensive_zone_play` | 34/41 | ⚠️ **Tips and deflections (3,396w)** |
+| `faceoffs` | 33/37 | What sends the draw to which spot (2,382w) |
+
+⚠️ **The five marked ⚠️ are the strongest next targets — each is large, spatial, and has no picture.**
 
 ⚠️ **THE STANDING "NOT WORK" RULING ON `skating.md` AND `puck_handling.md` IS NOW IN TENSION WITH THIS
 INSTRUCTION.** It said a body-mechanics diagram *"would be checkable by nobody"*. **That reasoning stands for
@@ -52,6 +80,7 @@ directory exclusively and did not.**
 #### THE COMPLETE PER-PAGE CENSUS — every document, measured 4 September 2026
 
 **The owner named one page and said it was typical. It is: 985 of 1,115 subsections carry no diagram — 88%.**
+⚠️ **Snapshot of 4 September 2026, before this round's 47 new placements. Definition unstated — see the note above.**
 ⚠️ **SEVEN DOCUMENTS HAVE ZERO ACROSS EVERY SUBSECTION:** `puck_handling` (47), `skating` (45),
 `equipment` (43), `mental_game` (42), `conditioning_and_recovery` (42), `team_play_and_culture` (39),
 `uk_rules` (16).
@@ -5498,7 +5527,7 @@ it wants building.
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,148,093 words — 87.0 hours of
+These outrank everything below. The corpus is **37 documents and 1,148,554 words — 87.0 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
@@ -9829,3 +9858,797 @@ all** while its fact now supplies one — **a traceability gap the fact papers o
 ⚠️ **A sweep for this class must NOT key on the literal string `U13 and below`.** The corpus varies its
 wording — **25 uses of `12U and below` against 22 of `12 & under and below`** — and a document phrasing the
 scope as *"the Canadian non-check divisions"* matches neither.
+
+### ⚠️ FINDINGS FROM THE FIRST DIAGRAM WAVE — four that are not about diagrams
+
+**1 · ✅ THE ROUND-58 HIGH-SLOT DEFECT IS CLOSED, AND VERIFIED PROPERLY.** A band labelled *"the high slot"*
+was once drawn at **660 sq ft against the 210 sq ft its owner defines** — 3.14× — in two diagrams, cutting
+through both faceoff circles, under captions that read correctly. **`HIGH_SLOT` now resolves IDENTICALLY in
+`positions.mjs`, `playing_without_the_puck.mjs` and `scanning_and_anticipation.mjs` and matches
+`the-high-slot`** — machine-compared through `loc()`, not read from comments. **The house/home-plate polygon
+is identical across four modules too.**
+
+**2 · ⚠️ `the-goalmouth` SHADES A RECTANGLE WHERE ITS OWN `describe` CLAIMS THE CREASE FOOTPRINT.** It draws
+x 83→89, |y| ≤ 4 = **48 sq ft**; the crease is **44.1 sq ft with an ARC front**, so the box's corners sit
+outside the paint by up to about a foot while the `describe` says *"the width of the goal crease and running
+from the goal line out to the front edge of the crease… drawn over the light blue crease."*
+⚠️ **Nobody could see this before because NO DIAGRAM DREW THE CREASE'S TRUE OUTLINE. `the-goal-crease` now
+does, in the same document, a few figures away.** **Reviewed text — `diagram-reviewer` to choose between
+`points: creaseOutline()` and softening the `describe`. NOT changed by the agent that found it.**
+
+**3 · ⚠️ CONTENT DEFECT: `rink_map_and_glossary.md` §5 says the dot line splits the end zone *"in half"*.**
+**Drawn, it does not: above the dots is 44 ft and 3,740 sq ft; below is 31 ft and 2,274 sq ft — 62% / 38%.**
+**The new caption says *"the upper part and the lower part rather than equal areas"* so picture and caption
+agree — but the section's own word is now visibly loose.** **Content fix, not a diagram fix.**
+
+**4 · ⚠️ TWO RENDERER GAPS, and the first is the largest single blocker on the geometry owner.**
+- **`rinkSvg` cannot draw a sheet other than `rink.json`'s.** ⚠️ **That makes ALL FIVE of §1 undrawable —
+  the entire "dimension comparisons between rulebooks" category.** NHL 200×85 against IIHF 60 m × 26–30 m is
+  exactly the picture a British reader needs and the renderer cannot produce it. **Highest-value renderer
+  change available.**
+- **A play spec has no POINT-MARKER primitive.** The only ways to label a spot are a player glyph (which
+  claims a player) or a zone label (drawn at a polygon's vertex mean). **`rinkSvg`'s `labels: true` overlay
+  does exactly this job but only on `kind: 'rink'` specs, which cannot carry zones or players.** **This is
+  what blocks §3's nine faceoff spots.**
+
+**5 · ⚠️ ZONE LABELS ARE PLACED AT THE VERTEX MEAN, NOT THE AREA CENTROID.** **A polygon whose curved edge is
+sampled at high resolution has its label dragged into the curve — on the attacking-zone polygon that put
+*"attacking zone"* at x 57.9–100.5, half a foot OFF THE END OF THE RINK.** **Worked around in the new module
+by sampling the straight edge at comparable resolution; the real fix is in `rink.mjs`.** ⚠️ **Anyone drawing
+another arc-bounded full-sheet zone will hit this.**
+
+**6 · Observation on `rink.json`:** the `high-slot` anchor is **(69, 0)** — the faceoff-dot depth, which is
+the **LOW EDGE** of the band it names (the high slot runs x 54→69). Its `note` does not warn that the
+coordinate is an edge rather than the middle. **Same shape as the documented `point` anchor caveat.**
+
+### ⚠️ WAVE-TWO FINDINGS — including a notation gap and a check that is exempting routes BY ACCIDENT
+
+**1 · ⚠️ MY BRIEF'S PREMISE WAS FALSE AGAIN.** I told an agent the trapezoid *"has no picture anywhere in the
+corpus"* and made it the top target. **It has THREE** — `the-trapezoid` (`rink_map_and_glossary.mjs`),
+`dump-and-the-trapezoid` (`zone_entries.mjs`), `the-privileged-area` (`rules_primer.mjs`) — **and
+`rink.mjs`'s `endZone()` paints its two red lines on EVERY diagram at every end, so the shape is already on
+all 167 pictures.** ⚠️ **`on_ice_communication.mjs:36` even records that `the-trapezoid` was CONSIDERED AND
+DECLINED for reuse.** **The agent searched before drawing, as instructed, and drew the DECISION the shape
+produces for a goaltender instead — which nothing owned.**
+
+**2 · ⚠️ A DIRECTED REBOUND HAS NO GLYPH — a real gap in the notation.** It is neither a pass nor a shot, and
+neither published key has a mark meaning *"the puck leaves the goaltender in a chosen direction."*
+**Reusing the dashed pass line would give one line style two meanings corpus-wide, which the style guide
+forbids in terms.** **The agent named the corners in words instead and shaded only the region the rebound
+must NOT go to.** ⚠️ **It also declined to shade "the corners": *"wide and low toward the boards, below the
+goal line if you can"* is a DESCRIPTION, not a polygon, and no document owns a shape called "the corner" —
+shading one would have been that file inventing a region.** **Correct call. → Decide whether the notation
+should gain a rebound mark.**
+
+**3 · ⚠️ `check-arrivals` IS EXEMPTING TWO ROUTES BY ACCIDENT, NOT BY DESIGN.**
+**`shooting-breakaway-approach` (owner `shooting.md`) reports *"route starts 14.0 ft from the nearest player
+— owner cannot be determined, not checked."*** **Two routes are therefore unchecked because the tool cannot
+attribute them, which is a different thing from being out of scope.**
+⚠️ **AND IT IS THE SAME PLAY AS THE NEW `goalie-breakaway-retreat`, FROM THE OTHER SIDE** — `goaltender.md`
+and `shooting.md` cross-reference each other explicitly. **→ `diagram-reviewer` must read the two captions
+TOGETHER: this is exactly the "two agents wrote sentences each correct and flatly contradictory read aloud"
+hazard CLAUDE.md records.**
+
+**4 · A measurement error corrected in `goaltender.mjs`'s own header.** It said *"the glyph that marks the
+goaltender is itself 5.8 ft across."* ⚠️ **That is the FORWARD's circle (r 2.9, 7.75 ft of ink with its
+halo). The `pos === 'G'` branch emits a BARE `<text>` at font-size 4.6 — no halo, no fill, roughly 3 ft —
+and `glyphCovers` treats it as covering NOTHING.** **The header's conclusion survives; its figure was wrong.**
+
+**5 · A caption defect the agent caught in its own draft.** It first wrote *"blocks a pass **inside the
+restricted area**"*. ⚠️ **`goaltender.md:612` warns that the IIHF's two publications use that phrase in
+OPPOSITE SENSES — the Handbook means the ice you are barred from, the Rule Book means the trapezoid itself
+(Rule 1.8 is headed *"Goalkeeper's Restricted Area"*).** **A listener would have heard the rule INVERTED.**
+**Rewritten, with a ⚠️ comment telling the next editor not to reintroduce the phrase.**
+
+### ✅ TWELVE SUBSECTIONS SERVABLE BY EXISTING DIAGRAMS — coverage at zero drawing cost
+
+**`goaltender.md` alone: 3 drawn + 6 new + 12 reusable = 21 of 46, up from 3.** The twelve:
+the trapezoid → `the-trapezoid` · the running-you tier → `the-privileged-area` · sightline →
+`screen-the-goalie-sightline` · 2-on-1s → `rush-2-on-1`, `defender-two-on-one` · 3-on-2s →
+`rush-3-on-2-default` **and** `rush-3-on-2-alternative` (the section names both variants and both exist) ·
+penalty kill → `pk-box`, `pk-diamond`, `pk-wedge-plus-1` · 6-on-5 → `six-on-five-shape`,
+`six-on-five-one-point-stays`, `five-on-six-clear-three-outcomes`, `faceoff-goalie-pulled` · icing →
+`icing-gaining-the-line`, `icing-the-race-and-the-dot` · the core calls → the five breakout routes plus
+`the-call-and-who-can-see-it` · what a goalie needs → `net-front-walk-out-direction`, `oz-net-front-screen`.
+
+⚠️ **NOT YET APPLIED, DELIBERATELY. The agent's own caveat: *"a caption written for the attacking side can
+be wrong when hung under a goaltending section."*** **This is a registry match by subject, not a reading.**
+**→ `diagram-reviewer` reads each caption against its NEW host section before any marker goes in. An
+earlier agent found the same opportunity — eleven in `winger.md` — so this is a corpus-wide method, and it
+is the cheapest coverage available anywhere in the plan.**
+
+### ⚠️ RENDERER BUGS AND GAPS FOUND BY AGENTS THAT ACTUALLY RENDERED
+
+**1 · ⚠️ `playSvg` IGNORES `spec.half` — a silent, exit-0 wrong render.**
+`rinkSvg({ half: opts.half ?? true, … })` — only `TXT` reads `spec.half`. **Call `playSvg(spec, {width})`
+without `half` and a FULL-SHEET spec renders CROPPED TO A HALF SHEET WITH FULL-SHEET TYPE, silently.**
+✅ **Nothing shipped is wrong: `build-diagrams.mjs:140` and `preview-diagrams.mjs:51` both pass it
+correctly.** ⚠️ **But every new verification harness gets it wrong by default, and it cost an agent a whole
+render pass.** **→ Make `playSvg` read `spec.half` itself.**
+
+**2 · `droppuck` THROWS.** `playSvg` raises deliberately on `line:'none' | 'pivot'`, `end:'slashes'` and
+`dropTick`, **so drop passes are undrawable without a shared-renderer change.** Independently recorded in
+`passing_and_receiving.mjs`. **`zone_entries.md` §6 is blocked on it.**
+
+**3 · The goaltender glyph has NO TEAM VARIANT**, so it cannot orient a symmetrical full-sheet diagram. An
+agent drew two `G`s to say which end was theirs, **saw they were identical, and removed them.**
+
+**4 · No POINT-MARKER primitive — confirmed independently by two agents.** The only ways to mark a spot are
+a player glyph (claims a player) or a `zones` label at the polygon's VERTEX MEAN. ⚠️ **A `fill:'none',
+stroke:'none'` zone would give a label with no visible polygon — a true invisible point marker. An agent
+found this and DELIBERATELY DID NOT USE IT: *"an invisible construct is worse than the disclosed box."*
+Correct call.** The settled answer is a small labelled box, as `offside-faceoff-location` uses.
+
+**5 · `faceoffs.mjs`'s own boards-overlap note UNDERSTATES ITS SCOPE.** The header attributes the
+`*_BOARDS_W` glyph/dasher overlap to three diagrams. **`A_BOARDS_W` has the same |y|, so
+`faceoff-ozone-alignment`, `faceoff-goalie-pulled` and both new set plays carry it too** — visible at 900 px
+and obvious at 360.
+
+### ⚠️ WHAT RENDERING CATCHES THAT ARITHMETIC CANNOT — now measured across three agents
+
+**Agents that rendered found defects no checker and no calculation could see. Agents that did not, did not.**
+
+- ⚠️ **A GEOMETRICALLY IMPOSSIBLE DIAGRAM whose every distance checked out.** The opponent was **29.1 ft**
+  from the arrival point along his own line while the drawn route to the same point was **~47 ft** — the
+  picture asserted you win a lane you cannot reach. **`check-arrivals` measures clearances and never a
+  RACE.** Relaid to 36.62 against 38.40 ft, which is the section's own *"half a step behind"*.
+- **A `pressure` route's two-bar terminal drawn ACROSS a dashed pass**, so both render as one lattice — and
+  **the caption instructs the reader to read that mark.** ⚠️ **The spec's own note said the two do not meet:
+  it had measured the intersection of two INFINITE LINES, not the distance from the mark to the route.
+  Fifth recorded instance of a clearance measured on the wrong thing.**
+- **Two pull arrows finishing INSIDE their own faceoff circle**, so the one labelled *"pulls to the boards"*
+  stopped 8 ft short of the boards. ⚠️ **The arithmetic that had been checked was correct about the thing it
+  checked — that the two displacements were equal.**
+- **A `pass` rendering as one dash and a head — an impression of a `skate`, a symbol the same key
+  publishes.** Above `playSvg`'s short-head threshold, so nothing warned.
+- **A shot arrowhead touching the goaltender's letter**; **numbered badges landing 4 ft apart**; **a diagram
+  with no `puck:` field at all**, in a diagram whose whole subject is where the puck goes.
+- **A leader line terminating on the PUCK rather than the player it labels.**
+
+**→ "RENDER AND LOOK, INCLUDING AT ~360 px" IS NOW MANDATORY IN EVERY DIAGRAM BRIEF.** ⚠️ **And note the
+pattern in three of the above: the author HAD done arithmetic, and the arithmetic was CORRECT ABOUT THE
+WRONG QUANTITY.**
+
+### `title` coverage — 167 of 175 diagrams still have none
+
+**An agent added a short `title` to the 15 pre-existing diagrams in its two files.** **The fallback (caption's
+first sentence, else the id) is now safe — it never truncates — but an explicit 2–6 word `title` is better
+than either.** **→ Add one to every spec; it is the browser hover tooltip and the accessible name.**
+
+### ⚠️ COORDINATOR ERROR — a marker script that inserted INSIDE a fenced ` ```facts ` block
+
+**4 September 2026. Two of 31 diagram markers landed inside a facts block**, at
+`zone_entries.md:287` and `faceoffs.md:657`. **`check_facts.py` caught both** —
+*"unparseable fact '![](diagram:entry-middle-drive)'"*.
+
+⚠️ **The cause: my placement script searched for an anchor sentence and inserted after the matching line,
+WITHOUT CHECKING WHETHER THAT LINE WAS INSIDE A FENCE.** **The agents' anchors were correct — several
+sections state the same sentence in the prose AND in the facts block, and my search took whichever came
+first.**
+
+**→ A marker insertion must track fence state.** ⚠️ **And a diagram marker inside a ` ```facts ` block is not
+a cosmetic error: the block is the EXTRACTION LAYER, voiced alone with a 300 ms break either side, and an
+unparseable line there is a fact the listener does not get.**
+
+**Audit run after the fix: 0 markers inside a fenced block across all 31 placements.**
+
+### ⚠️ AND A LABEL DEFECT THAT IS NOT FIXABLE IN A SPEC — the leader-line question, finally characterised
+
+**An agent measured what earlier rounds had guessed at.** ⚠️ **`placeLabels` reserves a 7×8 ft box around
+EVERY player — including the label's own — so no offset inside `LEADER_MIN` (5.5 ft) is ever free.**
+**Measured across three unrelated modules: `positions` 31/31, `breakouts` 31/31, `special_teams` 41/41
+labelled players get a leader.**
+
+⚠️ **So the corpus-wide leader-line question is NOT "some labels are badly placed" — it is that EVERY
+labelled player gets a leader by construction, and shortening a label does not help.** **The fix is in
+`placeLabels`, not in any spec.** **An agent reported it rather than working around it, which is right.**
+
+**Related, and only a render shows it: REMOVING A ROUTE MOVED A LABEL.** Dropping one route in
+`delayed-penalty-your-own-net` dropped the `you` label from (76, 34.5) to (85, 19), where its leader ran
+**straight through the puck**. ⚠️ **The label placer is a global solver: any edit anywhere in a spec can
+move any label in it.**
+
+### ⚠️ OPEN — `goalie-rim-stop-or-clear` is 493 words, well past any caption in the corpus
+
+**After the F2/F3 rules repairs it carries: the trapezoid geometry, the IIHF Situation Handbook pad-block
+ruling, the NHL reading-hedge, the skate-contact exception, the four-book scope, the British suspension WITH
+its "assume it binds" disclosure, and BOTH no-trapezoid freeze rules.**
+
+**Previous corpus maximum: 361 (`the-trapezoid`). Median ~245.** Other new lengths: `the-goal-crease` 368 ·
+`goalie-safe-outlets` 355 · `goalie-fifty-fifty-puck` 324 · `faceoff-strong-side-dot` 319 ·
+`the-three-zones` 308.
+
+⚠️ **The repairing agent did NOT cut a hedge to make room** — instructed not to, and it tightened its own
+scaffolding twice instead. **It flagged this as a judgement outside its scope, correctly.**
+**→ Decide whether it splits into a second diagram.** ⚠️ **A caption is VOICED ALONE with no picture: the
+open question is not whether 493 words is long on the page but whether it is LISTENABLE, and no tool in this
+repository measures that.**
+
+### ⚠️ AND A DEFECT CLASS NOBODY HAS SWEPT — a document contradicting its own Key Takeaways
+
+**`goaltender.md:700` stated flatly that Hockey Canada matches the NHL on covering a puck outside the
+crease. Its own caveat 7 at `:1418` says treating clause ii as the exception is *"a reading and not a
+ruling"*.** **The caption faithfully reproduced the section; the section was wrong.**
+
+⚠️ **The repairing agent then found the SAME unhedged claim in a SECOND caption
+(`goalie-fifty-fifty-puck`) and fixed it without being asked** — *"a caption is voiced alone, so leaving it
+would have shipped the defect in the layer that hurts most."*
+
+⚠️ **NOBODY HAS SWEPT THE CORPUS FOR THE SAME SHAPE.** **→ Census: every place a document states a
+four-book convergence flatly while its own Notes-on-verification or Key Takeaways record it as a reading.**
+**This is the inverse of the fabricated-divergence sweep already filed, and the two together are one round.**
+
+### ⚠️ CORRECTION — a caveat this corpus does NOT record
+
+**My brief asserted `goaltender.md:1418` caveat 11 records the Hockey Canada clear-clause ambiguity.**
+⚠️ **It does not, and neither does anything else in that document.** Caveat 7 covers NHL/IIHF 63.2(iii),
+USAH 610(c), USAH 601(c)(10)/601(d)(7) and HC 10.1(d)/11.1 — **and never mentions HC 10.1(v)**, the
+goaltender-specific clear clause with no deliberateness element and no zone limit. **Caveat 11 is about
+charging.** **So the caption addition made for F6 is NEW to the corpus, not a propagation of an existing
+disclosure — and the DOCUMENT still lacks it.**
+
+### ⚠️ SPLIT `goalie-rim-stop-or-clear` AT THE PLAY/FREEZE SEAM — recommended, with a load-bearing condition
+
+**493 words, past any caption in the corpus (previous max 361, median 245).** ⚠️ **The recommendation is NOT
+on length grounds. It is that THE PICTURE STOPS WORKING HALFWAY THROUGH.**
+
+**Everything up to the four-book scope and the England suspension is answered by the polygon on screen — the
+trapezoid. Everything after *"And no trapezoid still does not free you to freeze the puck out here"* is
+answered by regions the diagram DOES NOT DRAW:** Hockey Canada keys its freeze to the **crease**, USA Hockey
+keys 614(c) to the **privileged area** — and the caption is forced to describe that second region in words
+(*"imaginary lines joining the two end-zone faceoff spots and running back from each of them to the end
+boards"*).
+
+⚠️ **A CAPTION VERBALLY DESCRIBING A REGION THE PICTURE DOES NOT DRAW IS THE STRONGEST SIGNAL IN THIS CORPUS
+THAT A SECOND PICTURE IS OWED.**
+
+**The seam is the distinction the owner already draws in terms at `goaltender.md:573`:** *"A suspended
+restricted area frees where you may **play** the puck. It never frees where you may **freeze** it"* — and
+the IIHF prints the two as separate rows in Appendix IV Table 13.
+
+| | contents | ≈words |
+|---|---|---|
+| **A — keeps the id** | trapezoid shading, the rim route, kill-it-and-leave-it, the IIHF Situation Handbook pad-block ruling, the NHL reading-hedge, the skate-contact exception, four-book scope, the England suspension with its *"assume it binds"* disclosure | **315** |
+| **B — new diagram** | where you may FREEZE it when there is no trapezoid: shades **two** regions — the crease (HC's line) and USA Hockey's privileged area — with **the corner this rim comes through deliberately UNSHADED**, which is the whole point of 614(c)(3) | — |
+
+⚠️⚠️ **THE LOAD-BEARING CONDITION, and the split is unsafe without it: the freeze material is currently a
+COUNTERWEIGHT to the England paragraph.** **Split them and a listener can hear *"not currently enforced in
+England and Wales"* and never hear *"and that still does not free you to freeze the puck."*** **A MUST KEEP
+A ONE-CLAUSE COUNTERWEIGHT after the freeze material moves, or the split makes the corpus LESS safe.**
+
+**B must reuse `the-privileged-area`'s vertices from `rink_map_and_glossary.mjs`** the way A reuses
+`the-trapezoid`'s, **or `check_zones.py` will correctly report a divergence.** It also needs a new
+`describe`, an `index.mjs` entry and an owner section in `goaltender.md`.
+
+**Next candidate if a length policy is set: `goalie-safe-outlets`, 439 words** — its seam is visible too,
+from *"And going off the glass and out"*, a four-book delay-of-game note no part of the picture carries.
+**Then `faceoff-strong-side-dot` at 376.**
+
+### ⚠️ AND A CORRECTION TO MY OWN FILED ROW
+
+**I filed that the HC 10.1(v) clear-clause claim was *"NEW to the corpus, not a propagation"*.** ⚠️ **FALSE.**
+**`risk_management.md:336` carries HC 10.1(v) at length, quotes the clause, quotes the chapeau AS THE
+COUNTERWEIGHT, and already lands where the repair landed:** *"Nothing in the rulebook settles which reading
+wins, so if you keep goal under Hockey Canada, do not count on an accidental one being free."*
+**`rules_primer.md:443`, `:908`, `:1049` also cite it, and `goaltender.md:441` independently quotes the
+chapeau.**
+
+⚠️ **So the caption was NOT ahead of its owner in CITATION — it was ahead of it in CONCLUSION.** **The corpus
+says *unsettled*; the caption said *arguably exposed*.** **That is a sharper statement of the defect than
+mine, and it means the fix was to IMPORT THE OWNER'S RESOLUTION rather than invent one — which is what the
+repair did.**
+
+### legendSvg is a third SVG emit site and round 64 patched only two
+
+⚠️ **`site/scripts/lib/rink.mjs:1891` `legendSvg` emits a hard-coded 218-char `<title>` and NO `<desc>`.**
+Round 64 routed `playSvg` (line ~591) and `rinkSvg` (line ~1863) through `shortTitle`/`longDesc`. **It did
+not know a third emit path existed.**
+
+**Measured across the 176 built SVGs: exactly one lacks `<desc>` — `notation-key`.** So the blast radius is
+one diagram. ⚠️ **But it is the diagram that explains the notation for the other 175**, and its 1,573-char
+caption sits in an `aria-hidden="true"` figcaption, so **that caption currently reaches no screen reader at
+all.**
+
+⚠️ **Both callers — `build-diagrams.mjs:133` and `preview-diagrams.mjs:49` — call `legendSvg(width)` and
+never pass the spec**, so `caption` and `describe` cannot reach the function even though `notation.mjs`
+defines both. Signature already accepts `opts` and it is ignored.
+
+⚠️ **The hard-coded title carries PROVENANCE that must not be lost in the repair** — *"Line symbols after
+IIHF Coach Development Program Level I section 21.1; player glyphs after the Hockey Eastern Ontario
+'International Drill Symbols' sheet"*. That is non-negotiable 4. **It has to move into the `<desc>`, not be
+deleted**, and `longDesc` as written returns `describe + caption`, which contains neither citation.
+
+**Deferred deliberately:** `rink.mjs` is a shared tool and `site-reviewer` was live and reading it.
+Round 59's lesson — change a tool between waves, not during one.
+
+- [ ] Pass the spec from both callers; route `legendSvg` through `shortTitle`/`longDesc`; append the two
+      source attributions to the `<desc>`. Rebuild diagrams, then re-run `check_absolutes.py`.
+- [ ] `site/src/plugins/remark-corpus.mjs`'s comment justifying `aria-hidden` asserts *"`<desc>` carries the
+      same words"* — **false for `notation-key` until the above lands.** Fix the comment or the code, not
+      just one.
+
+## Tier 0 — the next wave (readability and diagrams, the owner's stated priority)
+
+### T0-1 ⚠️ 79 diagrams announce a filename as their accessible name
+
+**Measured by importing `shortTitle` and `DIAGRAMS` directly — not relayed:** of 176 specs, **41 have an
+authored `title:`, 56 derive a name from the caption's first sentence, and 79 fall back to the
+de-slugged id.** A screen reader announces `Nz 1 3 1`, `Pk wedge plus 1`, `Oz royal road`,
+`Rush 3 on 2 alternative`. **`Nz` is not a word in this corpus's vocabulary.**
+
+⚠️ **The obvious fix — raising the 120-char cap in `rink.mjs` — IS DECLINED AND THE REASON MUST SURVIVE
+INTO THE BRIEF.** The fallbacks' first sentences have a **median length of 164 characters**. Cap 160
+recovers 36 of 79 at a 134-char median; cap 200 recovers 52 at 143. **Any of those puts a multi-line
+tooltip back on hover, which is the exact defect round 64 existed to remove.** The owner asked for
+*"very short alt texts"*. **Do not raise the cap.**
+
+⚠️ **AND DO NOT TRUNCATE.** `rink.mjs:488-494` records why: the first attempt sliced at 117 and appended
+an ellipsis, and **97 of 167 titles ended in "…", seventeen cutting a hedge mid-sentence** — one stopped
+immediately before *"the draw is not established here, so do not assume it is the same place."*
+
+- [ ] Author a short `title:` for each of the 79. **A name, not a summary** — two to six words, the words
+      the surrounding prose already uses. Parallelise by diagram module; ownership is disjoint by file.
+- [ ] ⚠️ **This is NEW TEXT and it is the accessible name, announced first and unconditionally.** It
+      cannot self-certify — `diagram-reviewer` reads them against the sections they sit in.
+
+### T0-2 Diagram gaps, ranked
+
+`scratchpad/diagram_gaps.json` — **1,152 diagram-less sections ≥150 words**, ranked by spatial-term
+density, with file and line. **The top 120 span 27 documents**, led by `offensive_zone_play` (12),
+`breakouts` (11), `center` (8), `puck_support_and_spacing` (8).
+
+⚠️ **A density rank is a candidate list, not a verdict** — it cannot tell a section that needs a picture
+from one that names a lot of places. **Read the section before drawing.**
+
+### T0-3 ⚠️ "A Note on Language" — CONSOLIDATE onto the glossary page (owner's decision)
+
+**8 blocks, 4,010 words**, each sitting 2–5% into its document, between the Overview and the first
+teaching section.
+
+⚠️ **THE OWNER ASKED FOR THIS TWICE AND MY FIRST ANSWER WAS "PLACEMENT, NOT CONSOLIDATION". THAT
+ANSWER WAS WRONG ON THE DECIDING FACT.** I argued the blocks were not duplicates because each carries a
+position-specific gloss — which is true — **but I never checked whether the SHARED half already lived
+somewhere.** It does. **`rink_map_and_glossary.md` already defines 17 of the 21 repeated terms**, and it
+is already the single page the owner is asking for.
+
+**Measured, term by term, against the owner:**
+
+| in the owner already | NOT in the owner |
+|---|---|
+| the point · half-wall · high slot · low slot · goalmouth · strong-side · weak-side · F1 · D-partner · rim · reverse · five-hole · breakout · forecheck · the slot · the house · home plate | **cupping** (0 occurrences) · **angling** · **dump-in** · **man-on-man** (present but USED, never DEFINED) |
+
+**So the duplication is real** — `the point` defined 6×, `half-wall` 6×, `high slot` 5×, `goalmouth` 5× —
+**and 17 of those repeats have a canonical home already.**
+
+**The design:**
+
+- [ ] Add glossary entries to `rink_map_and_glossary.md` for the four terms it lacks: **cupping,
+      angling, dump-in, man-on-man.** Verified by direct grep, not by regex negative.
+- [ ] Shrink each of the 8 blocks to **only the position-specific gloss plus a pointer to the
+      glossary.**
+
+⚠️ **WHAT MUST NOT BE LOST, and it is the whole reason this is not a delete-and-link sweep:** the
+per-document gloss says *opposite things to different readers and both are correct.* The half-wall is
+*"**not** your ice — it is where your wingers live"* to a centre and *"**your home base** in the
+offensive zone and on the power play"* to a winger. **Deleting a block wholesale destroys that. Keep
+the second half; drop the shared definition that the glossary now owns.**
+
+⚠️ **AND THE LISTENER CANNOT FOLLOW A POINTER.** This corpus is read aloud. A block reduced to *"see the
+glossary"* leaves an audio listener with nothing. **Keep a compressed inline gloss — a few words, not
+the full definition — so the sentence still stands alone when voiced.** `check_pointers.py` exists for
+exactly this failure and must be run after.
+
+⚠️ **A near-miss to carry into the brief:** I reported a `breakouts`/`shooting` contradiction over
+whether the goalmouth is inside the slot, then refuted it — *"from the top of the circles down to the
+goalmouth"* and *"from the goalmouth out to the tops"* are **the same span described in opposite
+directions.** Round 44's failure shape. **When two blocks look like they disagree, the owner decides,
+not the pair.**
+
+### T0-4 `<desc>` may not be announced without an explicit association
+
+**INFERRED FROM MARKUP, NOT MEASURED** — no screen reader was run, and the reviewer flagged it as
+inference. The SVGs use `role="img"` with bare `<title>`/`<desc>`, no ids, no `aria-labelledby` or
+`aria-describedby`. Announcement of a bare `<desc>` is uneven across screen-reader/browser pairs.
+
+⚠️ **The whole `aria-hidden` figcaption decision rests on `<desc>` being heard.** If it is not, the
+captions are hidden from assistive technology for nothing. **Test before changing anything.**
+
+### T0-5 Two smaller ones
+
+- [ ] `site/dist/analytics.js` ships a **Google Analytics 4 bootstrap**. Inert — **0 of 50 pages** carry
+      `meta[name="ga-measurement-id"]` and no page references it — so no request is made. `dist/` is not
+      committed. Flagged because the standing assumption is that this site sends nothing to third
+      parties, and a dormant loader is one meta tag from being live. **Decide: remove or document.**
+- [ ] ⚠️ **A `python3 -m http.server 4321` serving `site/dist` was left running by `site-reviewer`.**
+      Kill it when the visual pass is done.
+
+### T0-6 Visual verification — DONE for round 64; here is what it left open
+
+⚠️ **THIS ROW PREVIOUSLY READ "UNMET, NOT WAIVED" AND SAID CHROME WAS BLOCKED FOR THE WHOLE OF ROUND 64.
+THAT WAS TRUE WHEN WRITTEN AND FALSE WHEN STAGED.** A second browser pass ran and **measured all four
+viewport × theme cells**. ⚠️ **`commit-gate` caught it here, in the plan, and called this the
+worst-placed of three contradictory statements — because the plan is where the next round's briefs come
+from, and round 65 would have been dispatched to redo a pass that was already done.**
+
+**What the second pass established** (real Chrome 152 over CDP; the MCP extension never connected
+because two Chrome browsers are attached to the account and none is selected):
+
+- The owner's three leader labels stop in clean white space, gap 0.40 each.
+- `CAP_H = 0.72` and `DESC_H = 0.21` **match the real font** (measured ascender 0.716, descender ~0.19).
+- Zero console errors on every page in every cell; no body-level horizontal scroll at 375;
+  `.warn-inline` contrast **5.71** light / **8.29** dark; all 5,533 anchored links resolve.
+
+**What it did NOT reach, and this is the actual open work:**
+
+- [ ] ⚠️ **The theme TOGGLE is untested.** The pass emulated `prefers-color-scheme`; `data-theme` was
+      `null` in every run. **Click behaviour, `localStorage` persistence across a navigation, and
+      no-flash first paint are three separate things and none was tested.**
+- [ ] ⚠️ **Halo gaps were found in LIGHT THEME ONLY and never re-checked in dark** — and `rink.mjs`
+      warns that dark theme is precisely what exposes a halo gap in a board line.
+- [ ] **The page-level sweep spanned a rebuild and was not repeated.** Cleared for round 64 by
+      reasoning — the only later change was one prose clause — **which would not hold for a diff
+      touching `site/src/styles/` or `site/src/components/`.**
+- [ ] Native hover tooltips (OS-drawn, not capturable headlessly), keyboard focus rings and tab order,
+      any browser but Chrome 152, any real device, **any screen reader.**
+- [ ] ⚠️ **Nobody has heard a screen reader announce a `<desc>`.** The entire `<title>`/`<desc>` move
+      rests on it being announced, and that is still INFERRED from markup.
+
+### T0-7 Two pointer hits (worklist, both read)
+
+`check_pointers.py`, 37 documents scanned, **2 hits — both read, neither swept.**
+
+- [ ] `playing_without_the_puck.md` — *"Both computations are set out in full in the written Notes on
+      verification section."* ⚠️ **The renderer DROPS that section**, so a listener is sent to a place
+      they cannot reach. **Genuine.** Voice the computations inline, or drop the pointer — do not
+      simply delete the sentence, which is where the substance is announced.
+- [ ] `rules_primer.md` — *"The amendments that will catch you out first are not in this table at
+      all…"* ⚠️ **MIXED DOCUMENT: 3 tables read as prose, 1 dropped, and the tool cannot tell which
+      one the sentence means.** Read the rendered SSML before touching it. **May well be correct.**
+
+**Deliberately not fixed in round 64:** both are content edits, and that round is at its third gate
+with a reviewed diff. Adding unreviewed prose to a cleared diff is how a repair self-certifies.
+
+### T0-8 ⚠️ Per-document diagram coverage — the owner asked, and the answer is bad
+
+**Measured over sections of ≥150 words, excluding Sources / Key Takeaways / Common Mistakes /
+A Note on Language / Glossary.** `mk` = diagram markers placed in the document.
+
+⚠️ **FIVE DOCUMENTS HAVE NO DIAGRAM AT ALL:**
+
+| document | words | sections | diagrams |
+|---|---|---|---|
+| `off-the-ice/equipment.md` | 32,282 | 39 | **0** |
+| `foundation/uk_rules.md` | 21,436 | 20 | **0** |
+| `off-the-ice/team_play_and_culture.md` | 20,525 | 27 | **0** |
+| `off-the-ice/conditioning_and_recovery.md` | 18,298 | 29 | **0** |
+| `off-the-ice/mental_game.md` | 17,986 | 41 | **0** |
+
+**And the next worst, by share of sections carrying one:**
+
+| document | mk | covered / sections | |
+|---|---|---|---|
+| `getting-started/getting_started.md` | 1 | 1 / 37 | **2%** |
+| `technique/skating.md` | 1 | 1 / 37 | **2%** |
+| `off-the-ice/practice_and_development.md` | 4 | 1 / 23 | **4%** |
+| `technique/puck_handling.md` | 3 | 2 / 42 | **4%** |
+| ⚠️ `hockey-iq/risk_management.md` | 4 | 3 / 34 | **8%** — *named by the owner* |
+| `foundation/rules_primer.md` | 4 | 4 / 45 | **8%** |
+| `systems/forechecking_systems.md` | 5 | 4 / 33 | **12%** |
+
+**Corpus median ≈ 17%. Only `positions/winger.md` (80%) is properly covered; it is the model.**
+
+⚠️ **Not every zero is a defect, and the brief must say which is which.** `equipment.md` needs a blade
+cross-section for hollow, a shaft-angle picture for lie and a body map of coverage gaps — **this
+pipeline draws a rink and players on it and can draw none of those.** That is a TOOLING gap, recorded
+in round 64. `mental_game.md` and `team_play_and_culture.md` are largely non-spatial.
+
+**But `risk_management`, `skating`, `puck_handling`, `getting_started` and `rules_primer` are spatial
+and should be drawn.** `risk_management`'s own high-density gaps include *"Offensive zone — you have
+the puck below or at the top of the circles"* and *"Never shoot the puck over the glass — from your own
+zone"*, both of which are pictures.
+
+- [ ] Draw against `scratchpad/diagram_gaps.json`, worst-covered documents first.
+- [ ] ⚠️ **`defender.md` and `how_to_watch_hockey.md` have HIGH-DENSITY GAPS AND NO DIAGRAM MODULE AT
+      ALL** — `site/src/diagrams/defender.mjs` and `how_to_watch_hockey.mjs` do not exist. A new module
+      needs an import and a spread in `index.mjs`, **which is the coordinator's file.** Agents must
+      report the need, not edit it.
+
+### T0-9 ⚠️⚠️ EVERY leader line runs into or through the label it points at
+
+**Reported by the owner from a rendered page** (`/positions/center/`), naming three labels on
+`centre-low-zone-collapse`: *"the label for low support and the label for goalmouth is not at the end
+of the dotted line, nor is stays high."* **They were right, and it is not three labels.**
+
+**Measured over the 176 built SVGs with `scripts/check_leaders.py`:**
+
+| | |
+|---|---|
+| leader lines | **534** across 161 diagrams |
+| **EXIT the far side** of their label | **386** |
+| **end INSIDE the glyphs** | **142** |
+| **stop cleanly before the label** | **6** |
+
+⚠️ **99% of the leader lines in this corpus are drawn wrong.**
+
+**Cause — one expression**, `site/scripts/lib/rink.mjs`, in `placeLabels`:
+
+```js
+y2="${py(put.y) + (put.y > e.y ? -1.2 : 1.2)}"
+```
+
+`py = (y) => -y`, so SVG y runs downward. **SVG text is anchored at its BASELINE, not its centre**, and
+the fixed ±1.2 pushes the endpoint 1.2 units PAST the baseline *away from the anchor* — the opposite of
+stopping short of the text. The endpoint is also always `put.x`, the text's horizontal **centre**, so a
+leader approaching from the side crosses half the glyphs by construction.
+
+**Ground truth, measured on the diagram the owner photographed** (font-size 2.8, so the glyph box runs
+from baseline − 2.02 to baseline + 0.59):
+
+| label | arrives | endpoint | |
+|---|---|---|---|
+| `low support` | from ABOVE | **0.61 BELOW the box** | passes through the whole word |
+| `goalmouth` | from ABOVE | **0.61 BELOW the box** | passes through the whole word |
+| `stays high` | from ABOVE | **0.61 BELOW the box** | passes through the whole word |
+| `puck carrier` | from BELOW | inside the box | stops among the glyphs |
+| `collapses` | from BELOW | inside the box | stops among the glyphs |
+
+**The fix:** clip the leader to the label's glyph box and end it a small gap short of the near edge,
+along the line — not at a fixed vertical offset from the baseline, which cannot be right for a leader
+arriving diagonally.
+
+- [ ] ⚠️ **`rink.mjs` is a SHARED TOOL — coordinator only, and changed BETWEEN waves, never during
+      one.** Every diagram is re-rendered by it.
+- [ ] Requires a full `build-diagrams.mjs` run (~6 min) and a re-run of `check_leaders.py` to confirm
+      the counts invert.
+- [ ] ⚠️ **`placeLabels` is a GLOBAL SOLVER** — it reserves a box around every label and player, so
+      changing leader geometry may move placements. **Re-run `check-arrivals.mjs` and `check_zones.py`
+      after, and diff a sample of built SVGs rather than trusting the counts.**
+
+⚠️ **`scripts/check_leaders.py` is new and NOT YET A GATE, and should not become one:** glyph widths
+are **estimated** from a metric constant, not measured from the font, so a label a line legitimately
+approaches edge-on can read as a narrow hit. **The 6 "clean" leaders are as unproven as the 528.**
+
+### T1 — two `Rule:` lines state the HC crease tension without the limb that it is unresolved
+
+Raised by `commit-gate` as non-blocking on round 64. **Pre-existing, not staged, not worsened by that
+round.** ⚠️ **The gate's wording was "state clause ii flatly as a permission" — I read both lines in
+full and that is slightly too strong.** Both DO present a tension:
+
+- `content/positions/defender.md:135` — quotes clause v (*"will not be allowed to freeze the puck…
+  a Minor penalty. No warning will be issued"*), then *"but clause ii of the same Interpretation
+  permits covering after a save"*.
+- `content/systems/forechecking_systems.md:722` — sets HC 10.2 against clause ii, *"lets them come
+  out 'to cut down the angle and catch the shot or, after stopping the shot, cover the puck'"*.
+
+**What they lack is the third limb the other five sites carry:** that Hockey Canada **never says which
+clause governs**. `goaltender.md:559` states it — *"Convention: Hockey Canada never says whether clause
+v … "* — and `breakouts.md:907`, `special_teams.md:949` and `neutral_zone_systems.md:503` carry the
+*"a reading, not a ruling"* form.
+
+⚠️ **Why it matters in this layer specifically:** both are ` ```facts ` lines, **voiced alone with a
+300 ms break either side.** A listener hearing `forechecking_systems.md:722` on its own is told a
+governing body permits something, with nothing telling them the permission is contested.
+
+- [ ] Add the unresolved limb to both. ⚠️ **Check the character budget first** — `Rule:` is a QUALIFIED
+      label, cap 300, and both lines are already long. `check_facts.py` measures the value with the
+      label stripped.
+- [ ] ⚠️ **Do not "resolve" the tension.** The corpus's position is that the book does not, and that
+      position is verified — clauses ii and v sit adjacent with no ordering statement.
+
+### T0-10 ⚠️ The "Important." marker fires up to 159 seconds before the warning it announces
+
+Found by `safety-reviewer` during round 64's D11 pass. **Measured, not inferred.**
+
+Round 64 fixed the renderer so that 61 placed warning captions announce `"Important."` in audio — they
+had been losing the ⚠️ silently. **But the marker is emitted as a prefix to the whole `<p>`
+(`scripts/md_to_speech.py:2711`), and each caption renders as ONE paragraph.** Words spoken before the
+⚠️ actually falls:
+
+| caption | words before the ⚠️ | ≈ |
+|---|---|---|
+| `winger-leaves-the-point` | 134 / 328 | 52 s |
+| `winger-arriving-at-the-line` | 150 / 303 | 58 s |
+| `shot-block-get-close` | 267 / 624 | 103 s |
+| `puck-on-the-far-side` | 299 / 394 | 115 s |
+| `you-cannot-beat-two` | 316 / 394 | 122 s |
+| `the-puck-decides-not-you` | 362 / 389 | 139 s |
+| `inside-lane-longer-route` | 414 / 539 | **159 s** |
+
+⚠️ **And the ⚠️ glyph itself maps to the empty string in the SYMBOLS table (`md_to_speech.py:313`), so
+at the moment the warning actually arrives, NOTHING marks it.**
+
+⚠️ **Worst case `the-puck-decides-not-you`:** the marker fires, then 362 words of drawing conventions,
+and what the ⚠️ flags is the **last sentence**. The actual hazard — the penalty shot — is stated ~200
+words earlier and is **unflagged**.
+
+**Why this is not cosmetic:** a marker that fires on a hundred seconds of unrelated material trains a
+listener to discount it, **and the warnings it will next fire on are real**. It is non-negotiable 2's
+inverse — not a false statement, but a true one placed where it stops working.
+
+- [ ] Emit the prefix **at the ⚠️** rather than at the head of the paragraph, **or** split a caption at
+      its first ⚠️ into two `<p>`s. ⚠️ **`remark-corpus.mjs` already does exactly this for the site**
+      (its `.warn-inline` split), so fixing it this way makes the two layers agree rather than
+      inventing a third behaviour.
+- [ ] ⚠️ **`scripts/md_to_speech.py` is a SHARED TOOL — coordinator only, changed between waves.**
+- [ ] Re-measure the table above afterwards. **It is the evidence, and it goes stale the moment a
+      caption is edited.**
+
+### T0-11 Layers `safety-reviewer` could not reach, in its own words
+
+**Its "what this method could not have found" is the next round's scope. Do not re-derive it — read it.**
+
+- [ ] ⚠️ **The `describe` fields were NOT audited on any of the 32.** `puck-on-the-far-side`'s ends
+      *"no stick, head or body facing is drawn"* and **carries no boards override at all.**
+      ⚠️ **CORRECTED SCOPE:** an earlier version of this row said the speech renderer emits `describe`.
+      **It does not** — `scripts/md_to_speech.py:683` emits `"Diagram. " + entry["caption"]` and nothing
+      else. So this is a **site and screen-reader exposure only**, not an audio one: it reaches the SVG
+      `<desc>`, which is what assistive technology reads now that the figcaption is `aria-hidden`.
+      **Smaller than the row claimed, and still unaudited.**
+- [ ] **23 new non-⚠️ captions were keyword-scanned, only five read in full.** The scan keys on
+      `contact`, `board`, `check` — ⚠️ **a caption that puts a player somewhere dangerous using none of
+      those words passed it**, which is the failure mode a previous reviewer in this lineage warned of.
+- [ ] **Owner agreement unchecked for the systems captions** — `zone_entries.md`, `faceoffs.md`,
+      `game_management.md`, `goaltender.md` were not opened, so `entry-*`, `goalie-*` and `faceoff-*`
+      had their internal safety checked but **not their agreement with the document they must match.**
+
+### T1 — `check_zones`: 'the middle' drawn at very different sizes (PRE-EXISTING, not round 64)
+
+`check_zones.py` reports `'the middle'` at **2200 sq ft** and **2295.4 sq ft** in `the-risk-map`, and
+flags `'the house'` vs `'the middle'` as **83% the same ice by area**.
+
+⚠️ **`commit-gate` raised this as involving "this round's new diagrams". Measured against
+`git show HEAD:site/src/data/diagrams.json`: `the-risk-map`, `rush-gap-and-angle`,
+`show-one-shoulder-open-the-other` and `nz-back-off-at-the-line` are ALL PRE-EXISTING at HEAD**, and no
+`risk_management` diagram module is in the staged diff. **So this is pre-existing worklist material,
+not a round-64 regression.** Recorded because the correction matters: a pre-existing defect misfiled as
+a regression sends the next round hunting a cause that does not exist.
+
+- [ ] Read the polygons. ⚠️ **Only `rink_map_and_glossary.md` settles what a region is**, and
+      `check_zones` compares diagrams to each other — **a region drawn consistently wrong everywhere is
+      invisible to it.**
+- [ ] ⚠️ **A shaded band labelled "the high slot" was once drawn at 3.14× its owner's definition and
+      passed every gate.** Do not assume a large area is a rounding matter.
+
+### T1 — ⚠️ A LINE IN THIS REPOSITORY IS NOT READ UNTIL IT IS READ WHOLE
+
+**Two independent readers made this error in round 64, one of them a gate.**
+
+- I split a ` ```facts ` line in `body_contact_and_battles.md` by matching a **prefix** I had displayed
+  through `cut -c1-170`. The tail was welded onto the end of the new `Rule:` line and **shipped into
+  the audio layer** as a penalty-tier sentence ending in an orphaned clause. `check_facts` passed: it
+  measures length and prefix, not grammar.
+- `commit-gate` then blocked on a claim that `skating.md`'s body lacked the boarding counterweight,
+  having read `:553` truncated and concluded it "is about rink width". **The counterweight is the final
+  clause of that ~1,400-character line.**
+
+**This corpus writes one paragraph per line, unwrapped.** `grep` output, `sed -n 'Np'`, `cut` and
+`head` all truncate silently in a terminal.
+
+- [ ] When editing a line, match on an anchor **and re-read the whole line afterwards** — or edit by
+      line index rather than by string prefix.
+- [ ] ⚠️ **`check_facts.py` cannot see a mangled sentence.** Consider a worklist that flags a facts
+      value whose text ends without terminal punctuation, or that contains a second sentence fragment.
+      **Not a gate** — many values legitimately end on a quotation or a rule number.
+
+### T0-12 Leader stop-short — FIXED, and the proposed fix was measured and rejected
+
+The browser pass found that round 64's leader repair left **40 of 534 leaders stopping over a unit
+short** on horizontal runs, worst case `nz-regroup-d-to-d` / `wide — outside lane` showing **0.20 units
+of visible line across a 1.79-unit gap**. **A regression the repair caused.**
+
+**Cause, and the fix applied:** `CH = size * 0.56` was used both to RESERVE space for a label and to
+CLIP the leader against it. The browser pass measured the real advance-width distribution over 118
+labels: **min 0.384, median 0.446, p75 0.473, max 0.562.** ⚠️ **0.56 is the distribution's MAXIMUM.**
+That is correct for collision reservation, where over-reserving costs only layout — and wrong for
+clipping, where the whole error lands along the leader's axis. **The two are now decoupled:
+`CLIP_ADV = 0.473` (p75) for the clip; `CH` unchanged at 0.56 for placement, so no label moves.**
+
+**Measured on the two named diagrams before rebuild:** `wide — outside lane` **3.10 → 7.03**; the
+owner's three vertical leaders **5.08 / 5.08 / 7.01 — byte-identical**, i.e. the verified-good case is
+untouched.
+
+### ⚠️ The other half of the proposal was implemented, MEASURED, and REVERTED
+
+The pass also recommended starting the leader at the **token's edge** rather than its centre, since 341
+of 534 cross their own position letter on the way out. **I implemented it using the glyph's own ink
+radius (`GLYPH_INK.forward`, 3.875) — not the 7×8 reserve box, whose width was the trap I had already
+recorded. It was still wrong.**
+
+**It costs every leader 3.875 units, and most leaders are 3–8 units long:**
+
+| label | before | with token-edge start |
+|---|---|---|
+| `low support` | 5.08 | **1.20** |
+| `stays high` | 5.08 | **1.21** |
+| `goalmouth` | 5.08 | **1.21** |
+| `takes the strong side` | 4.40 | **0.52** |
+| leaders drawn at all in `nz-regroup-d-to-d` | 7 | **5** — two fell under the minimum-length guard |
+
+⚠️ **It made the case the owner reported and a browser pass verified WORSE, in order to fix a cosmetic
+fault at the other end.** Reverted, with the measurement in the code so nobody re-proposes it blind.
+
+- [ ] ⚠️ **The right fix for the token overlap is to emit leaders BEFORE the glyphs**, so the token
+      occludes the line instead of the line painting over the letter. **Costs no length.** It means
+      splitting `placeLabels`' output into two streams (leaders, then labels), because the LABELS must
+      stay on top or the glyphs will hide them. Not attempted mid-round.
+- [ ] ⚠️ **`scripts/check_leaders.py` still cannot see this direction** — it measures overrun only. The
+      docstring says so. **It reported `534 clean` throughout the entire period the 40 short leaders
+      existed.**
+
+### T0-13 Two more from the browser pass
+
+- [ ] **58 leaders show under two dash-periods outside their token; 44 under one.** Minimum drawn
+      length is 3.10 against a token radius of 2.90. Same root cause as T0-12.
+- [ ] ⚠️ **`--window-size=375,812` DOES NOT GIVE A 375px PAGE.** Chrome enforces a 500px minimum window
+      width, so "mobile" screenshots are a 500px layout cropped to 375 and **look like catastrophic
+      horizontal overflow.** The reviewer nearly filed it as a critical. **Use
+      `Emulation.setDeviceMetricsOverride`.** Recorded so the next browser pass does not re-find it.
+- [ ] **The theme TOGGLE is untested** — click behaviour, `localStorage` persistence across a
+      navigation, and no-flash first paint are three separate things and none was tested. The pass
+      emulated `prefers-color-scheme`; `data-theme` was `null` in every run.
+
+### T0-14 ⚠️ The rules-bearing caption population was never computed, and a defect hid in the gap
+
+Round 64's record claimed `rules-verifier` covered *"all 13 rules-bearing captions"* among its 32 new
+ones. ⚠️ **`commit-gate`'s own keyword scan returns 16.** The three outside that set were reviewed by
+nobody — **and one of them, `faceoff-where-the-draw-goes`, carried the exact Hockey Canada party
+inversion the round had found, written up and fixed in two other places.** It shipped to the built page
+and to audio before the gate caught it.
+
+⚠️ **AND 16 IS ITSELF A FLOOR, NOT A POPULATION.** The gate says so plainly: *"a caption that states a
+rule in ordinary words, with no rule number, no book name and no penalty vocabulary, would not have
+been in the 16 I looked at."* **A keyword scan cannot enumerate rules-bearing text**, and both the
+record's 13 and the gate's 16 were produced that way.
+
+- [ ] Enumerate rules-bearing captions by **reading all 176**, not by keyword. ⚠️ **144 are
+      pre-existing and have never been read against the rulebooks at all.**
+- [ ] ⚠️ **Never again state "all N rules-bearing captions were covered" without saying how N was
+      derived.** A coverage claim is only as good as the population it was computed over.
+
+### T0-15 One advance-width constant cannot serve the distribution
+
+**Measured in a browser over all 534 rendered labels: advance/char min 0.340, median 0.450, p75 0.476,
+max 0.577.** `CLIP_ADV = 0.473` is the p75, and **150 of 534 labels are wider per character than it.**
+
+⚠️ **The residual defect has flipped direction and that is the useful part.** It is no longer wide
+strings overrunning; it is **narrow** strings under-reaching. Worst case
+`goalie-rim-stop-or-clear` / `kill it and leave it` — **3.30 units of dead air**, because that string
+measures **0.397 advance/char** (almost all `i`, `l`, `t` and spaces) so a 0.473 box overhangs its real
+ink by ~2.4 units a side.
+
+- [ ] **Stop estimating.** Emit per-string widths from real font metrics at build time, or ship a
+      per-character advance table for the sans stack, and clip against that. ⚠️ **`scripts/check_leaders.py`
+      must consume the same measured widths, or it will disagree with the renderer systematically —
+      which has already happened once this round and produced 28 phantom findings.**
+- [ ] Cosmetic only. **90% of leaders sit exactly at the designed `LEADER_GAP` and nothing is drawn
+      under 1.0 units.** Do not treat this as urgent.
+
+### T0-16 ⚠️ The leader-to-label pairing method I never found
+
+Every script I wrote to attribute a leader to its label used **nearest text box to the endpoint**, and
+every one of them misattributed to player glyph letters (`D1`, `W1`, `G`, `+1`), returning nonsense
+gaps of 15–35 units. **I filed a failed enumeration because of it.**
+
+⚠️ **The correct method is exact and trivial: a leader's label is its `nextElementSibling`.** The
+emitter writes `marker + leader + text` in that order, so the pairing is exact by construction.
+**Measured: 790 leader instances across 48 pages, ZERO failed to pair, and a glyph `<text>` is never a
+leader's next sibling.**
+
+- [ ] Rewrite `scripts/check_leaders.py` to pair by sibling order rather than proximity. **It would
+      remove the tool's single largest limitation**, which its own docstring currently records as
+      unavoidable.
+
+### T0-17 The native tooltip is still unwitnessed, and the extension is still blocked
+
+⚠️ **The MCP extension's `navigate` is refused even after the owner re-authenticated Chrome** —
+*"Could not verify this site's safety category"*, five attempts across host forms and depths.
+`tabs_context_mcp`, `tabs_create_mcp`, `resize_window` and `tabs_close_mcp` all work. **Only `navigate`
+is blocked**, so the extension is alive but cannot drive a page.
+
+⚠️ **A `<title>` tooltip is drawn outside the page compositor, so `Page.captureScreenshot` cannot see
+it, headless or headed.** The entire round-64 change is therefore **verified structurally and never
+observed**: `<title>` is the first element child of every `<svg>`, no ancestor `title` attribute
+shadows it, median 25 chars and max 121.
+
+- [ ] Someone with a real window should hover one diagram and confirm the box is small. **It is one
+      look, and it is the only unverified claim in the change.**

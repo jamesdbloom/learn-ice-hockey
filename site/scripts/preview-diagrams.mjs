@@ -46,7 +46,7 @@ for (const d of specs) {
   // an empty half-sheet, so a reviewer could tick "rendered and viewed" on a blank
   // rink. A preview tool that silently draws nothing is worse than one that crashes.
   const svg =
-    d.kind === 'legend' ? legendSvg(width)
+    d.kind === 'legend' ? legendSvg(width, d)
     : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER })
     : playSvg({ ...d, footer: FOOTER }, { half: d.half ?? true, width });
   const svgPath = join(outDir, `${d.id}.svg`);

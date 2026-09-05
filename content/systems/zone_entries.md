@@ -245,6 +245,9 @@ The moment their hips open outward, the **inside lane is available** — that is
 
 The principle underneath: **you are not trying to beat them, you are trying to make them commit.** A defender who has committed to one lane cannot defend the other.
 
+
+![](diagram:entry-outside-shoulder)
+
 ### Attack the space between two defenders, not one of them
 
 ```facts
@@ -294,6 +297,8 @@ A **middle drive** is a teammate without the puck skating hard through the middl
 The middle driver usually does not get the puck. That is not the point. The point is that a defenceman who ignores a player skating at their net will get scored on, so they cannot ignore them — which means they cannot step up on the puck carrier either. One player, running one route, at speed, buys the carrier several extra feet of space.
 
 Middle drives only work if they are **committed**. A half-hearted middle drive is a player standing in the slot, which frees the defence rather than freezing it.
+
+![](diagram:entry-middle-drive)
 
 ### Using a teammate as a screen
 

@@ -112,6 +112,7 @@ const BELOW_GOAL_LINE = { at: 'behind-net', dx: -2, dy: -8 };    // (92, -8)
 
 const sixOnFive = {
   id: 'six-on-five-shape',
+  title: 'Six-on-five shape',
   owner: 'content/systems/game_management.md',
   half: true,
   width: 900,
@@ -242,6 +243,7 @@ const PINCH_ARRIVAL = { at: 'point:right', dx: 14, dy: 18 };    // (39, 38)
 
 const sixOnFivePinch = {
   id: 'six-on-five-one-point-stays',
+  title: 'One point stays home',
   owner: 'content/systems/game_management.md',
   half: true,
   width: 900,
@@ -427,6 +429,7 @@ const WIDE_PAST_THE_GOAL_LINE = { at: 'goal-line', dx: 5, dy: 24 };  // (94, 24)
 
 const clearAtFiveOnSix = {
   id: 'five-on-six-clear-three-outcomes',
+  title: 'Clearing at five on six',
   owner: 'content/systems/game_management.md',
   half: false,
   width: 900,
@@ -553,4 +556,398 @@ const clearAtFiveOnSix = {
   puck: { at: 'faceoff-dot:right:far', dx: -1, dy: 5.5 },          // (-70, 27.5)
 };
 
-export default [sixOnFive, sixOnFivePinch, clearAtFiveOnSix];
+// ---------------------------------------------------------------------------
+// 4. The delayed penalty — game_management.md, "The delayed-penalty freebie".
+// ---------------------------------------------------------------------------
+//
+// WHAT THE SECTION SAYS, AND ONLY THAT.
+//   Rule:    "when a player on the team *not* in control of the puck commits a
+//            penalty, the referee raises an arm and delays the call; play continues
+//            until the team to be penalized gains control of the puck" (NHL 15.1),
+//            and "during a delayed penalty the offending team cannot score unless
+//            the non-offending team shoots the puck into their own net" (NHL
+//            78.5(xi)). Those two rule numbers are the ONLY ones the section gives
+//            for this situation, and the caption gives no others. THE SECTION
+//            NAMES NO IIHF, USA HOCKEY OR HOCKEY CANADA COUNTERPART HERE — do not
+//            add one to a caption, because no sweep over content/ can see a caption
+//            and a later correction to one of those books would never reach it.
+//   Instruction: "So: no blind D-to-D passes across your own crease during a
+//            delayed call." That is a claim about WHERE a pass goes, which is what
+//            a picture is for, and it is the only spatial sentence in the section.
+//
+// ⚠️⚠️ THE FORBIDDEN PASS WAS DRAWN, AND IT WAS DRAWN IDENTICALLY TO THE SAFE ONE.
+// Two dashed routes with arrowheads left the same defenceman for the same partner:
+// one bowed behind the net, one straight through the crease and across the mouth of
+// the empty goal. NOTHING IN THE NOTATION DISTINGUISHED THEM, and a picture is
+// absorbed before its caption — so a reader who took the picture and not the words
+// away took away a pair of equivalent options, one of which is the only pass on the
+// ice that can score for the other team.
+//
+// ⚠️ THE STRAIGHT ROUTE IS NOW NOT DRAWN, and that is the corpus's own answer rather
+// than a new one. `breakout-d-to-d` (breakouts.mjs) is THE SAME PASS at the far end
+// and draws ONE route, the safe one; `winger-corner-and-the-empty-point` states the
+// principle outright — "NO ROUTE IS DRAWN TO THE EMPTY POINT. An arrow into empty
+// ice reads as an instruction, and the instruction here is the opposite one"; and
+// the corpus's failure diagrams (`lane-jump-guess`, `faceoff-dzone-clean-loss`,
+// `unmarked-but-unavailable`) draw a failure ALONE precisely so the notation is
+// never asked to carry a prohibition it has no symbol for. The caption carries the
+// prohibition in words, and says that no route is drawn across the crease and why.
+//
+// ⚠️ THE OTHER TWO OPTIONS WERE WEIGHED AND REJECTED, AND THE REASONS ARE WORTH
+// KEEPING. (1) Splitting this into two diagrams, failure and fix, needs a second id,
+// and an id no `content/` file references is built and shown to nobody — and
+// game_management.md is not this file's to edit. (2) Shading the goal mouth `danger`
+// red is a real device in this notation and `breakout-d-to-d` uses it on the house
+// for exactly this prohibition — but adding it HERE would make these two pictures of
+// the same pass nearly identical, and the one thing that tells them apart is an
+// empty crease that MAJ-5 has just established does not read at phone width. A cue
+// that only works when you can already see the difference is not a cue.
+//   Hedged:  "Many recreational leagues do not allow or practise pulling the goalie
+//            for this, and some officials stop play early, so agree it beforehand."
+//            The caption carries it, because the caption is all a listener gets.
+//
+// WHY THE NET IS DRAWN EMPTY. The section's instruction to the goaltender is "go,
+// immediately, at the first sign", so by the time anyone is making a D-to-D in his
+// own end the crease is empty. That is also what makes this a different picture
+// from `breakout-d-to-d` (breakouts.md), which draws the same pass with a
+// goaltender in the net and shades the house: there the cost is a point-blank
+// chance against, here it is the one goal the rules still allow them.
+//
+// ⚠️ WHAT IS DELIBERATELY NOT CLAIMED. The section's mechanism sentence is "your own
+// defenceman ringing it off your own goalie does" — which needs a goaltender who is
+// NOT in this picture. So the caption states the rule (you must shoot it into your
+// own net yourself) and the instruction (no blind D-to-D across your own crease) and
+// does NOT assert how a puck on the drawn line ends up in the goal. Neither does
+// `describe`. Drawing the across-route finishing INSIDE the net was considered and
+// rejected: `pass` notation means a player deliberately putting the puck on a
+// stick, and a dashed arrow into your own goal reads as a defenceman shooting at
+// it on purpose, which is not what the section warns about.
+//
+// NOT DRAWN: your other four skaters. Six of you are on the ice — the goaltender is
+// at the bench and the extra attacker is on — and the section says where none of
+// them stands. The caption says so rather than letting the absence read as a claim.
+//
+// ⚠️ A KNOWN AMBIGUITY, ACCEPTED WITH ITS EYES OPEN AND THEN FOUND TO BE WORSE THAN
+// ACCEPTED. The other three diagrams in this module put the OPPOSITION net at the
+// right of a half sheet; this one puts YOURS there, and the only pictorial cue was a
+// goaltender who is not drawn. That is `five-on-six-clear-three-outcomes`'s problem
+// — "both ends carry the same pale crease tint" — and its fix, a label on the own
+// goaltender, is unavailable here because the whole subject is that he is gone. A
+// FULL sheet would settle it by showing their guarded net at the other end, and was
+// rejected on legibility: the entire teaching is 60 ft of D-to-D geometry and the
+// crease detail it turns on, and a full sheet renders at 51% of a half sheet's scale.
+//
+// ⚠️ "RENDERED AND LOOKED AT at 900 px: the empty crease reads" IS WHAT THIS NOTE USED
+// TO SAY, AND 900 px WAS THE WRONG WIDTH TO LOOK AT. At 360 px — a phone, which is
+// where most of this corpus is read — the crease is a pale smear, the two triangles
+// are unresolvable, the puck is invisible, and there is NO CUE AT ALL that the net is
+// empty. A reviewer rendered `five-on-six-clear-three-outcomes` beside it as a control
+// and got the identical failure. A cue that only survives at desktop width is not a
+// cue; it is a thing the author could see because he knew it was there.
+//
+// SO THE CREASE IS NOW LABELLED, and the label is the whole of the fix. It is carried
+// by a `zones` entry with BOTH `fill: 'none'` AND `stroke: 'none'` — an entry that
+// draws no region at all and exists only so that its text lands where zone labels land,
+// at the mean of its own points. Half of that is already the file convention
+// (`fill: 'none'` in body_contact_and_battles.mjs and shooting.mjs, `stroke: 'none'` in
+// goaltender.mjs and rink_map_and_glossary.mjs); using both together is new, and it is
+// deliberate. ⚠️ A TINTED REGION WAS THE ALTERNATIVE AND IS WRONG HERE: the crease is
+// REAL PAINT that `rinkSvg` already fills, and a house tint laid over a real marking is
+// the one confusion `reading_ice_hockey_diagrams.md` works hardest to prevent. The
+// polygon traces the crease exactly, so `check_zones.py` — which compares zones by name
+// — has a correct shape to compare if this label is ever used again.
+//
+// ⚠️ AND `D1`/`D2` BECAME `D`/`D`. A two-character id inside a triangle renders at
+// font-size 2.15 against a single character's 2.6 — about 6.8 px on a 375 px phone,
+// which rink.mjs records as a known cost — and here the two are already told apart by
+// their labels, 'you' and 'partner', which is the section's own vocabulary for them.
+// The section never calls them D1 and D2.
+
+// The defenceman with the puck, low in the right corner. `corner:right` is
+// (82, 34); this is the near-end mirror of `breakout-d-to-d`'s D1, deliberately,
+// so the two pictures of the same pass cannot disagree about where it starts.
+const DP_D1 = { at: 'corner:right', dx: 3, dy: -4 };      // (85, 30)
+const DP_D2 = { at: 'corner:left',  dx: 3, dy: 4 };       // (85, -30)
+
+// The opposition forward. ONE of them, and he is the reason the pass is hurried:
+// the whistle comes when THEY gain control, so he is drawn between the carrier and
+// the middle of the ice rather than anywhere near the goalmouth. Keeping him out
+// of the crease lane matters — a solid glyph in front of the net would make the
+// across-route read as an interception risk, which is a different teaching from
+// the one the section gives.
+// hypot(85-76, 30-27) = 9.49 ft from D1: clear of the 7.275 ft two glyphs need
+// before their ink touches (a triangle's 4.0 plus a forward's 3.275).
+const DP_THEM = { at: 'corner:right', dx: -6, dy: -7 };   // (76, 27)
+
+// Behind the net, and the depth is the teaching. Mirrored from `breakout-d-to-d`,
+// whose bow of -18 at the far end is +18 here: the curve's middle third runs
+// x 93.6 -> 95.0 -> 94.3, i.e. four to six feet past the goal line at x 89 and
+// clear of the net's back rail at 92.33 throughout. Where the route is inside the
+// crease's y-band at all (|y| <= 4, around k = 0.5) it is at x = 95, so it never
+// enters the paint. Max x on the curve is 95, five feet off the end boards.
+const DP_BEHIND = { at: 'corner:left', dx: 5, dy: 10 };   // (87, -24)
+
+// ⚠️ `DP_ACROSS` USED TO LIVE HERE — the same pass made straight, x constant at 85
+// the whole way, four feet in front of the goal line and inside the crease for
+// |y| <= 4. That is literally "across your own crease". It is gone, and the reason
+// is at the head of this block: drawn in the same dashed-with-an-arrowhead notation
+// as the safe route, it offered the reader two equivalent-looking options, one of
+// which is the only pass on the ice that can score for the other team. The
+// coordinate is recorded here rather than deleted, so that nobody re-derives it
+// thinking it was merely mislaid.
+
+const delayedPenalty = {
+  id: 'delayed-penalty-your-own-net',
+  title: 'Delayed penalty, your own net',
+  owner: 'content/systems/game_management.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'A delayed penalty, drawn in your own defending end — so the net in this picture is yours, ' +
+    'and it is empty, because your goaltender has already gone to the bench for a sixth attacker ' +
+    'at the first sign of the referee’s arm, which is what he should do. ' +
+    'The empty net behind you costs nothing here, and that is the whole point ' +
+    'of the situation: play runs on until the team to be penalised gains control of the puck ' +
+    'under NHL Rule 15.1, and until they do they cannot score — with one exception, and that ' +
+    'exception is the subject of this picture. Under NHL Rule 78.5(xi) they can only score if your own team ' +
+    'shoots the puck into your own net. So the one pass in this whole sequence that can beat you ' +
+    'is a blind defenceman-to-defenceman pass straight down the ice, across the front of your own ' +
+    'goal and through your own crease — and that pass is deliberately not drawn here. There is no ' +
+    'symbol in this notation for a route you must not take, and an arrow drawn across your own ' +
+    'goal mouth reads as an instruction rather than as a warning. The single route that is drawn ' +
+    'is the same pass made the safe way, out and around behind your own net, well clear of the ' +
+    'goal. The instruction is simply not to make the other one: no blind D-to-D passes across your ' +
+    'own crease during a delayed call. Only the opponent nearest the puck is drawn, ' +
+    'because the whistle comes when they gain control and keeping it away from them is the entire ' +
+    'job; your other four skaters are not drawn at all, because the section does not say where ' +
+    'they stand. And check before the game rather than in it: many recreational leagues do not ' +
+    'allow or practise pulling the goalie on a delayed call, and some officials stop play early.',
+
+  describe:
+    'Your own defending end, your net at the right. The goal crease is empty — no goaltender is ' +
+    'drawn in it, and the crease itself carries the words "no goalie" across it. One of your ' +
+    'defencemen has the puck low in the right-hand corner; your other ' +
+    'defenceman is across in the left-hand corner. A single opposition forward is in the right ' +
+    'corner as well, inside the puck carrier and toward the middle of the ice. One dashed passing ' +
+    'route leaves the puck carrier and runs to his partner. It curves out and around the ' +
+    'back of the goal, running four to six feet past the goal line for the whole of its middle ' +
+    'third and never entering the crease. No route is drawn across the front of the goal, ' +
+    'deliberately: the pass this section warns against is described in words and not drawn. The ' +
+    'route is not numbered. No other players are drawn, and no region is shaded.',
+
+  // ⚠️ NOT A SHADED REGION. `fill: 'none'` and `stroke: 'none'` together draw nothing
+  // at all; the entry exists so its label lands at the mean of its points, which is
+  // (86, 0) — the middle of the crease. See the ⚠️ block above this spec for why the
+  // empty net needed labelling and why tinting the crease was the wrong way to do it.
+  zones: [
+    {
+      label: 'no goalie',
+      fill: 'none',
+      stroke: 'none',
+      points: [
+        { at: 'goal-line', dy: 4 },      // (89,  4)
+        { at: 'crease', dx: -1.5, dy: 4 },   // (84.5,  4)
+        { at: 'crease', dx: -3 },        // (83,  0)   the arc's deepest point
+        { at: 'crease', dx: -1.5, dy: -4 },  // (84.5, -4)
+        { at: 'goal-line', dy: -4 },     // (89, -4)
+      ],
+    },
+  ],
+
+  players: [
+    // No goaltender glyph. His absence is the situation, and it is stated in the
+    // caption, in `describe` and now on the crease itself, so that it cannot read
+    // as an omission.
+    { id: 'D', pos: 'D', at: DP_D1, label: 'you' },
+    { id: 'D', pos: 'D', at: DP_D2, label: 'partner' },
+    // Unlabelled: a solid circle already says opposition forward, and any label
+    // worth reading at x = 76 would be drawn across the corner boards.
+    { id: 'F',  pos: 'F', team: 'opp', at: DP_THEM },
+  ],
+
+  // NOT `numbered`. There is one route, and a badge on a single route reads as the
+  // first step of a sequence whose other steps are missing.
+  routes: [
+    { from: DP_D1, to: DP_BEHIND, kind: 'pass', bow: 18 },
+  ],
+
+  // ⚠️ THE PUCK WAS AT (85, 24.5), 5.5 ft BELOW HIS ANCHOR, AND REMOVING THE STRAIGHT
+  // ROUTE PUT THE LABEL'S LEADER THROUGH IT. `placeLabels` seeds itself with the
+  // routes, so while the forbidden pass ran down x = 85 its own reserve samples blocked
+  // every offset below this glyph and 'you' was placed out at (76, 34.5), measured off
+  // the rendered SVG. With that route gone the (0, -11) slot is free, 'you' lands at
+  // (85, 19), and the dashed leader runs (85, 30) -> (85, 17.8) — straight through the
+  // puck disc at (85, 24.5), whose span is 23.4 to 25.6. A leader drawn through the puck
+  // makes the label read as a name for the puck rather than for the player. The same
+  // failure was reported in center.mjs in the same round; there the fix was also to move
+  // the puck, because the leader cannot be moved.
+  //
+  // ⚠️ A FIX FOR ONE DEFECT MOVED THE FURNITURE AND CAUSED ANOTHER, and it did so in a
+  // layer no arithmetic in this spec looks at. Removing a ROUTE changed where a LABEL
+  // went. That is only visible in a render.
+  //
+  // (85, 36.5) is on the boards side of him instead — 6.5 ft from his anchor, so
+  // 0.8 ft of clear ice past the triangle's apex ink (circumradius 3.6 plus the 1.0
+  // of its 2.0 halo) and the disc's own 1.1; 4.6 ft off the side boards; 1.04 ft
+  // inside the corner arc; and 13.08 ft from the opponent, which is further from the
+  // pressure than it was rather than nearer. The leader now runs through open ice.
+  puck: { at: 'corner:right', dx: 3, dy: 2.5 },            // (85, 36.5)
+};
+
+// ---------------------------------------------------------------------------
+// 5. The 3-on-3 regroup — game_management.md, "Regular-season 3-on-3 (NHL)".
+// ---------------------------------------------------------------------------
+//
+// WHY THIS EXISTS. Nothing in the corpus draws three-on-three at all, and the
+// section's central claim is spatial: "With no good option in the offensive zone,
+// you carry or pass the puck **back out through the neutral zone**, reset, and come
+// again ... The whole ice is your working space; camping in the offensive zone
+// doesn't work." A route that leaves their zone and finishes on your own side of
+// centre ice is what that sentence looks like.
+//
+// AND WHY IT IS NOT `nz-regroup-d-to-d`. That diagram (neutral_zone_systems.md)
+// draws a five-on-five D-to-D regroup and teaches the pass across. This one is
+// about the COUNT: three a side on two hundred feet, where the section's reason
+// for declining the shot is that "giving up the puck means facing a 3-on-2 the
+// other way immediately". Borrowed, a reader counting glyphs would get the wrong
+// strength, and a borrowed caption cannot be edited to warn them.
+//
+// ⚠️ PERSONNEL IS NOT THE FORMAT. Rule 84.1 gives each side "three skaters and one
+// goalkeeper" and says nothing whatever about who those three are; the section does
+// not either. The published key has no neutral glyph — a circle is a forward and a
+// triangle a defenceman — so every one of the six skaters here is a personnel claim
+// the section declines to make. Two forwards and a defenceman a side is drawn
+// because something had to be, and the caption says in terms that it is a team's
+// choice rather than part of the format.
+//
+// FULL SHEET, AND IT HAS TO BE. "The whole ice is your working space" cannot be
+// drawn on half of it, and the route's whole content is that it starts inside their
+// blue line and finishes past centre ice.
+//
+// NOT DRAWN: any second route. The section's other principles — possession over
+// shooting, changing only with possession, the goal coming off a defender who
+// cannot get off — are about tempo and about the bench, and the bench is not on
+// this rink at all. They are carried in the caption instead.
+
+const OT_CARRIER = { at: 'point:right',  dx: 12, dy: 2 };    // (37, 22)
+// Their zone at the right, so x = 37 is twelve feet inside their blue line.
+
+// The retreat. Bow is NEGATIVE on purpose: a positive bow drives the control point
+// toward (+x, -y) and swept the curve down onto the checker's side of the ice. At
+// bow -8 the control point is (7.25, 12.78) and the route's closest approach to any
+// opponent is its own start, 9.22 ft.
+//
+// ⚠️ THE TIP WAS (-8, -6) AND THE RENDER MOVED IT. That point is 10 ft from the
+// centre dot, i.e. INSIDE the 15 ft centre circle, and the arrowhead was drawn
+// across the circle's line and beside the dot — a mark that reads as part of the
+// rink rather than as the end of a route. (-14, -10) was tried next and was 17.2 ft
+// out, which puts the TIP outside the circle and leaves the 3.15 ft arrowhead
+// sitting on its painted line. (-20, -12) is 23.3 ft from the dot, so the whole
+// arrowhead is clear of it, and it is still in the neutral zone — five feet short
+// of your own blue line at -25.
+const OT_REGROUP_TO = { at: 'centre-ice', dx: -20, dy: -12 };  // (-20, -12)
+
+// The two supports, spread rather than stacked — "the whole ice is your working
+// space". Neither carries a route: the section describes where the reset happens,
+// not what they skate.
+//
+// OT_BACK was (-26, 16), which is one foot inside the blue line at -25, and the
+// triangle rendered sitting on the painted line. Five feet deeper clears it.
+const OT_WIDE = { at: 'neutral-dot:left', dx: -4, dy: -10 }; // (16, -32)
+const OT_BACK = { at: 'centre-ice', dx: -30, dy: 16 };       // (-30, 16)
+
+// Their three, and ALL THREE ARE BETWEEN THE CARRIER AND THEIR OWN NET. That is the
+// arrangement the section's sentence needs — "with no good option in the offensive
+// zone" — and the first version of this spec got it backwards, putting two of them
+// back at their own blue line, up-ice of the puck, where they were defending
+// nothing. It also ran the retreat route 6.49 ft past the checker's glyph, so the
+// picture read as carrying THROUGH him rather than turning away from him. With the
+// checker inside the carrier, the route's closest approach to any opponent is its
+// own start: hypot(44-37, 16-22) = 9.22 ft, 2.7 ft of daylight past the two
+// circles' 6.55 ft of ink.
+const OT_CHECK = { at: 'point:right',        dx: 19, dy: -4 };  // (44, 16)
+const OT_MID   = { at: 'top-of-circle:right', dx: -2, dy: -22 };// (52, 0)
+const OT_LOW   = { at: 'top-of-circle:left',  dx: 1,  dy: 4 };  // (55, -18)
+
+const overtimeRegroup = {
+  id: 'ot-3-on-3-regroup',
+  title: 'The three-on-three regroup',
+  owner: 'content/systems/game_management.md',
+  half: false,
+  width: 1100,
+
+  caption:
+    'Three-on-three overtime, and the skill the format is really about. You are inside their blue ' +
+    'line with no high-quality look, so rather than force a shot you turn and take the puck back ' +
+    'out through the neutral zone — the long wave running from their end to your own side of ' +
+    'centre ice — to reset and come again. Overtime at three a side is a possession game: if you ' +
+    'do not have a high-quality look you do not shoot, because giving the puck up means facing a ' +
+    '3-on-2 the other way immediately, and a missed net in 3-on-3 is often a goal against. ' +
+    'Retreating thirty or forty seconds without forcing anything is normal and correct, and the ' +
+    'whole ice is your working space — camping in their zone does not work. Change only with ' +
+    'possession; you never surrender the puck to get fresh legs. And the winning goal is often ' +
+    'not a great shot at all but a defender who has been stuck out and cannot get off, isolated. ' +
+    'All six skaters are drawn, which is what three a side actually looks like on two hundred ' +
+    'feet, and both goaltenders are in their creases. Two things this picture is not: Rule 84.1 ' +
+    'gives each side three skaters and one goalkeeper and says nothing about who they are, so the ' +
+    'two forwards and one defenceman a side drawn here are a team’s choice and not the format; ' +
+    'and all of the play above is the account coaches and players give of how this format is now ' +
+    'played, rather than a rule of hockey. This is NHL regular-season overtime, and the format ' +
+    'you actually play may not be it — in many British fixtures there is no overtime at all.',
+
+  describe:
+    'The full sheet. Your own net is at the left with your goaltender in the crease; the ' +
+    'opposition net is at the right with their goaltender in theirs. Three own skaters and three ' +
+    'opposition skaters are drawn and no more, which is the whole strength of both teams here. ' +
+    'Your puck carrier, a forward, is about twelve feet inside the opposition blue line on the ' +
+    'upper side of the ice, with the puck drawn just below him on the up-ice side, away from the ' +
+    'checker. All ' +
+    'three opposition skaters are between him and their own net: a forward inside him and a ' +
+    'little deeper, a defenceman in the middle of the ice halfway to the tops of the circles, and ' +
+    'a second forward on the far side at the top of the far faceoff circle. Your two supports ' +
+    'are spread rather than stacked: a forward wide and low in the neutral zone on the far side, ' +
+    'and a defenceman back inside your own blue line. One route is drawn, the long smooth wave ' +
+    'with an arrowhead that means skate and stickhandle: it leaves the ' +
+    'carrier, curves back out of the offensive zone and across the neutral zone, and finishes ' +
+    'past centre ice on your own side and outside the centre circle, pointing back toward your ' +
+    'own end. Nobody else has a route.',
+
+  players: [
+    { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 } },   // (-85, 0)
+    { id: 'G', pos: 'G', team: 'opp', at: { at: 'crease', dx: -1 } },  // (85, 0)
+
+    { id: 'F', pos: 'F', at: OT_CARRIER, label: 'you' },
+    // Unlabelled. The section gives these two no role names, only the instruction
+    // that the whole ice is available, and a label is four words on a picture with
+    // no room to hedge a claim the prose declines to make.
+    { id: 'F', pos: 'F', at: OT_WIDE },
+    { id: 'D', pos: 'D', at: OT_BACK },
+
+    { id: 'F', pos: 'F', team: 'opp', at: OT_CHECK },
+    { id: 'F', pos: 'F', team: 'opp', at: OT_LOW },
+    { id: 'D', pos: 'D', team: 'opp', at: OT_MID },
+  ],
+
+  // `carry` — the key's "skate and stickhandle", a long smooth wave with an
+  // arrowhead. NOT `skate`: he has the puck, which is the whole reason he is
+  // allowed to decline the shot and go back for it.
+  //
+  // THE ARRIVAL INVARIANT is satisfied trivially rather than by luck: the tip is
+  // at (-8, -6) and its terminal tangent runs down and back toward your own end,
+  // while every opposition skater is at x > 25. None of them lies ahead of the tip,
+  // and the nearest is 35 ft away.
+  routes: [
+    { from: OT_CARRIER, to: OT_REGROUP_TO, kind: 'carry', bow: -8 },
+  ],
+
+  // ⚠️ 4.5 ft BELOW him, and it was 4.5 ft above him until the render was looked at.
+  // On the boards side the disc sat directly under the automatically placed `you`
+  // label, whose leader line then terminated on the PUCK rather than on the player —
+  // a label naming the wrong object. Below him the slot above the glyph is clear.
+  // The disc is 7.16 ft from the checker's anchor, so its near edge is 2.79 ft clear
+  // of that glyph's 3.275 ft of ink, and 4.5 ft off the route's own spine.
+  puck: { at: 'point:right', dx: 12, dy: -2.5 },              // (37, 17.5)
+};
+
+export default [sixOnFive, sixOnFivePinch, clearAtFiveOnSix, delayedPenalty, overtimeRegroup];

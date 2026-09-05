@@ -168,6 +168,9 @@ The centre red line is **no longer a passing restriction** in the NHL. The two-l
 
 In the NHL the crease is built as follows (Rule 1.7): a 2-inch red line runs **1 ft outside each goal post**, extending **4 ft 6 in** straight out at right angles to the goal line, and the two straight sides are joined by a **6 ft radius arc** struck from the centre of the goal line. So it is **8 ft wide at the goal line and 6 ft deep at its deepest point**. The enclosed area is painted light blue and — importantly — the crease is a **volume**, not a patch of ice: it extends **4 ft vertically**, to the height of the top of the goal frame.
 
+
+![](diagram:the-goal-crease)
+
 There are also two small **5-inch marks** on the inside of the crease lines, 4 ft out from the goal line. Those are the goaltender's reference marks, not player restraining lines.
 
 > **IIHF (Rules 1.5 and 1.7 — the British book):** the crease is essentially the same shape at metric sizes — 2.45 m wide at the goal line, marked in 5 cm red line, and *"the marked line belongs to the Goal Crease."* One real difference: Rule 1.7 says the Goal Crease Area *"includes all of the space outlined by the crease lines and extends vertically until the top of the crossbar"* — the top of the frame, rather than the NHL's fixed 4 ft.
@@ -274,6 +277,9 @@ The two blue lines divide the ice into three zones. The NHL rulebook names them 
 - **Neutral zone** — the centre ice area between the two blue lines. Neither defending nor attacking.
 - **Attacking zone** — the zone containing the goal you are attacking, from the opponent's blue line to the end boards behind their net.
 
+
+![](diagram:the-three-zones)
+
 **Here is the part that confuses everyone: the zones are named relative to your team, not to the building.** The same physical piece of ice is *your* defensive zone and *their* offensive zone, simultaneously. Nothing about the ice changes; the label depends on who is speaking.
 
 Two consequences you must internalise:
@@ -335,6 +341,9 @@ The slot is layered, and the layers have different jobs:
 
 **Why it matters:** it is the working definition of a "high-danger chance." The exact boundaries vary a little between analytics providers (Natural Stat Trick, Evolving Hockey, MoneyPuck all draw it slightly differently), so treat it as a concept rather than a measurement. The concept is simple and worth having: **shots from inside home plate are worth several times a shot from outside it.** Take shots from inside; work the puck inside rather than shooting from outside.
 
+
+![](diagram:home-plate-the-house)
+
 ### The crease / "the paint"
 
 **Where:** the light-blue area in front of the net, 8 ft wide and 6 ft deep, extending 4 ft upward.
@@ -382,6 +391,9 @@ The slot is layered, and the layers have different jobs:
 **Where:** the four end-zone faceoff spots. Used loosely to mean the depth-line they define across the zone.
 
 **Why it matters:** "**above the dots**" and "**below the dots**" is how coaches split the zone in half. In a hybrid defensive system, for example, coverage is man-on-man **below the dots** and zone **above** them.
+
+
+![](diagram:above-and-below-the-dots)
 
 ### Behind the net
 

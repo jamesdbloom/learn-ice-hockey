@@ -21,7 +21,9 @@
  * bare number.
  */
 
+import center from './center.mjs';
 import notation from './notation.mjs';
+import puckhandling from './puck_handling.mjs';
 import rulesprimer from './rules_primer.mjs';
 import bodycontactandbattles from './body_contact_and_battles.mjs';
 import breakouts from './breakouts.mjs';
@@ -43,13 +45,17 @@ import rinkmapandglossary from './rink_map_and_glossary.mjs';
 import riskmanagement from './risk_management.mjs';
 import scanningandanticipation from './scanning_and_anticipation.mjs';
 import shooting from './shooting.mjs';
+import skating from './skating.mjs';
 import specialteams from './special_teams.mjs';
 import switchingpositions from './switching_positions.mjs';
 import timeandspace from './time_and_space.mjs';
+import winger from './winger.mjs';
 import zoneentries from './zone_entries.mjs';
 
 export const DIAGRAMS = [
+  ...center,
   ...notation,
+  ...puckhandling,
   ...rulesprimer,
   ...bodycontactandbattles,
   ...breakouts,
@@ -71,9 +77,11 @@ export const DIAGRAMS = [
   ...riskmanagement,
   ...scanningandanticipation,
   ...shooting,
+  ...skating,
   ...specialteams,
   ...switchingpositions,
   ...timeandspace,
+  ...winger,
   ...zoneentries,
 ];
 

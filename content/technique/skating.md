@@ -538,6 +538,7 @@ The reverse transition — you're retreating, the puck turns over, and you need 
 ```facts
 Convention: Defencemen pivot toward the boards rather than the middle — the standard coaching instruction, not a law
 Goal: If you are beaten during the pivot, be beaten toward the wall, where the boards are a second defender and the angle is poor — how much the boards help depends on how wide your rink is
+Never: Read "the boards are a second defender" as a licence to ride an opponent into them — all four books have a boarding rule that reaches that, and they do not grade it the same way
 Options: Some coaches want a pivot to the middle on specific reads — when pivoting away would blind you to the puck, or when you have inside help
 Read: The correct pivot direction is decided by where the attacker is, not by which way you happen to be good at
 Action: Ask your coach which pivot direction they want, and drill both
@@ -545,6 +546,9 @@ Key: Pivot late — once you've turned to skate forwards, you have given up your
 ```
 
 **The standard coaching instruction for defencemen is to pivot toward the boards, not toward the middle of the ice.** The reasoning is about failure mode, not aesthetics: if the pivot goes wrong or the attacker beats you during it, you want to be beaten **toward the wall** — where the boards act as a second defender and the shooting angle is poor — rather than beaten **into the slot**, which is a scoring chance. The **slot** is the ice directly in front of the net between the two faceoff circles, running from the top of the circles down to the goalmouth.
+
+
+![](diagram:skating-pivot-toward-the-boards)
 
 **How much the wall is worth here depends on the sheet you are on.** The IIHF book sets a width *range* — 26 m to 30 m, roughly 85 ft to 98 ft — where the NHL sets a single 85 ft, so an IIHF sheet runs from an NHL width to about thirteen feet wider. ⚠️ **Do not read a width range as an international peculiarity, and do not hear "wide ice" as a foreign thing.** USA Hockey Rule 102(a) and Hockey Canada Rule 1.2(a) each set a range too, and both of them reach 100 ft — wider than any legal IIHF sheet. Note the difference in force, though: those two books word the size as a *recommendation*, where the IIHF states its range as the official size and requires approval for a deviation. The practical version is that the width you play on is a fact about the building you are standing in, not about whose flag is on the rule book. On a wide rink an attacker forced outside still has room to keep skating, which is why [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) says that on wide ice gap control and stick position matter more than steering. ⚠️ **That is not a licence to assume your own rink is wide** — the same document tells a British reader to assume theirs is *smaller* than both standards until measured, and it owns those dimensions. What does not change with width is the direction of the choice: the slot is where goals come from, so being beaten toward the wall is the better failure on any sheet. ⚠️ **And being beaten toward the wall is not an invitation to ride them into it** — driving an opponent into the boards is a separate act, all four books have a boarding rule that reaches it, and they do not grade it the same way: [Rules Primer → Body fouls](../foundation/rules_primer.md#body-fouls) sets out the tiers book by book.
 
