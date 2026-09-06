@@ -6,9 +6,38 @@ Every document in this project follows this guide. Read it before writing or rev
 
 ## Audience and purpose
 
-People **learning to play ice hockey effectively** — both newcomers and experienced players wanting to deepen their game. Documents are also fed into an AI podcast generator, so language must be precise, self-contained and readable aloud.
+People **learning to play ice hockey effectively.** ⚠️ **The target is a player in their FIRST TEN YEARS of playing** — the owner's instruction, in the owner's words: *"this should be helping newer players and not very experienced players, the main target of the site is players in their first 10 years of playing."* Documents are also fed into an AI podcast generator, so language must be precise, self-contained and readable aloud.
 
 Write for someone who wants to *do* the thing, not just understand it. Every section should leave the reader knowing what to actually do on the ice.
+
+⚠️ **This line previously read *"both newcomers and experienced players wanting to deepen their game"*, and that half-sentence is the licence under which the corpus acquired the rules depth described below.** A spec that names everybody names nobody, and every marginal paragraph could be justified by the reader who wanted to go deeper. **It is now narrowed on purpose, and the narrowing is the point.**
+
+### ⚠️ The ratio: how to PLAY, not what the rule SAYS
+
+The owner's instruction, again in the owner's words: *"the ratio of how to play vs the rule details
+should be changed so that the majority of the content is on how to play and what to do not the
+rules"*, and the rules *"should be summarised much more then they are… the main focus should be on
+game play not the minute detail of rules or long discussions on rules."*
+
+So, as a standing rule for every document:
+
+- **A rule earns its space by changing what the reader DOES.** Offside changes where you skate;
+  the four-book divergence in the *wording* of offside usually does not. Keep the first, compress
+  the second to its consequence.
+- **Prefer one sentence of consequence to a paragraph of citation.** *"Enter after the puck"* is
+  worth more to a second-year player than the clause that says so — the citation belongs in the
+  facts block or the Sources trailer, which is what both layers are for.
+- **Where four books agree, say so once and name one.** The corpus currently sets out all four in
+  places where they do not differ. That is provenance theatre, and it costs the reader the thing
+  they came for.
+- ⚠️ **This is NOT a licence to delete a rules claim, and it collides head-on with
+  non-negotiables 1–4 if read carelessly.** Compressing is not deleting. **A safety-bearing rule,
+  a genuine cross-book divergence, and an honest disclosure all stay** — the reader who gets
+  penalised, ejected or hurt is the reader this whole corpus exists to protect, and a first-year
+  player is *more* exposed to that than a veteran, not less. ⚠️ **Where a rule's detail is what
+  keeps a reader safe, the detail IS gameplay.** Cut the discussion, never the warning.
+- **The test is the listener.** A ` ```facts ` line is voiced alone. Ask whether what they hear
+  tells them what to do.
 
 ---
 

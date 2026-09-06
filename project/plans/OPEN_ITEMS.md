@@ -139,7 +139,41 @@ rather than forcing one.**
 owned that directory exclusively and did not — the consequence was a rebuild publishing six captions and a
 `describe` that nobody had read, under a clean `check_absolutes`.**
 
-### 2 · "A NOTE ON LANGUAGE" — EIGHT DOCUMENTS REDEFINE THE SAME TERMS
+### 2 · "A NOTE ON LANGUAGE" — ⚠️ NINE DOCUMENTS, AND THE MEASUREMENT REFUTES THIS ITEM'S OWN PREMISE
+
+**Measured 6 September 2026 against HEAD** (read via `git show`, not the working tree, because five
+agents were live in `content/`). ⚠️ **Both of this item's original claims were wrong:**
+
+- **It is NINE documents, not eight** — the row missed `positions/goaltender.md`,
+  `systems/neutral_zone_systems.md`, `technique/passing_and_receiving.md` and
+  `technique/shooting.md`, and named `center`/`defender`/`winger`/`breakouts`/`forechecking` only.
+  **25,316 characters of language note in total.**
+- ⚠️ **The terms it named as the problem are NOT the ones that repeat most.** It said *strong-side /
+  weak-side* and *high / low*. Those are 4× and 3×. **The four most-repeated terms are all 6×, and
+  all four are pure rink geography: `point`, `high slot`, `half-wall`, `goalmouth`.**
+
+| term | documents defining it |
+|---|---|
+| `point`, `high slot`, `half-wall`, `goalmouth` | **6 each** |
+| `strong side`, `weak side`, `rim`, `reverse` | 4 each |
+| `slot`, `high / low`, `forecheck` | 3 each |
+
+⚠️ **That changes the decision the item asks for.** The heaviest repetition is not tactical
+vocabulary that a document might reasonably re-establish for itself — **it is location names, and
+`rink_map_and_glossary.md` is their stated owner.** A document that redefines *goalmouth* is not
+standing alone, it is re-deriving a definition that already has an owner, and the corpus's numeric
+owner convention exists for exactly this. **Six independent definitions of `high slot` is also six
+places for them to DRIFT** — and drift in that exact term is already an open finding on this plan,
+where prose, `offensive_zone_play.md` and the built diagram give three different depths.
+
+⚠️ **The extraction over-fires and must not be swept.** It keys on bolded runs, so `and`, `under a`
+and `note on the headings below` scored as "terms". **Read every one before acting.** And the
+item's own standing warning holds unchanged: **DO NOT SOLVE THIS BY DELETING** — *"every document
+here stands alone"* is deliberate and right for a reader arriving mid-corpus.
+
+**The shape of the answer this measurement suggests** (still a decision, not yet a task): keep each
+document's *own* tactical terms, and replace the re-derived **location** definitions with a
+one-line pointer to the owner — which is what the corpus already does for numeric facts.
 
 **Eight documents carry the section. All eight are WORDED differently — but the SUBSTANCE repeats:
 strong-side / weak-side and high / low are defined from scratch in `center.md`, `defender.md`, `winger.md`,
@@ -5559,7 +5593,9 @@ the main target of the site is players in their first 10 years of playing."*
 `mental_game` 5.6%, `conditioning_and_recovery` 6.7%, `practice_and_development` 7.9%. **So the target
 shape is achievable in this house style; it is not forced by the subject.**
 
-### A1 — Set the audience in the style guide first
+### ✅ A1 CLOSED 6 September 2026 — audience narrowed and the ratio rule written
+
+`project/content_style_guide.md` §*Audience and purpose*. ⚠️ **The old line was the licence:** it read *"both newcomers and experienced players wanting to deepen their game"* — **a spec that names everybody names nobody**, and every marginal rules paragraph could be justified by the reader who wanted to go deeper. Now: *"a player in their FIRST TEN YEARS"*, quoting the owner. A new sub-section *The ratio: how to PLAY, not what the rule SAYS* sets the working test — **a rule earns its space by changing what the reader DOES** — and carries the counterweight explicitly, because this item collides head-on with non-negotiables 1–4 if read carelessly: ⚠️ **compressing is not deleting; where a rule's detail is what keeps a reader safe, THE DETAIL IS GAMEPLAY.** A first-year player is *more* exposed to being penalised, ejected or hurt than a veteran, not less. **Cut the discussion, never the warning.** A2's condensation pass must be read against that sub-section, not against this row.
 
 - [ ] ⚠️ **Write the audience into `project/content_style_guide.md` BEFORE any condensing.** *"Players in
       their first ten years"* is a test that can be applied to a sentence: **does a player in year three
@@ -5696,6 +5732,79 @@ the corpus for it and no established notation.**
       probably get none** — the owner's steer is *"diagrams of the ice rink not other diagrams"*, and a
       document with no spatial content has no map.
 
+### ⚠️⚠️ R5 QUANTIFIED 6 September 2026 — CAPTIONS ARE 7.5% OF EVERYTHING SPOKEN, AND ONE PAGE IS 28%
+
+Measured per **marker**, not per diagram, because a borrowed caption is voiced once in every
+document that hosts it — 286 markers against 187 distinct captions, 0 unresolved ids.
+
+| | |
+|---|---|
+| caption words spoken | **80,382** |
+| body words (trailer excluded) | 988,281 |
+| **captions as a share of spoken text** | **7.5%** |
+| caption listening time at 150 wpm | **≈ 8.9 hours** |
+| median caption | **1,303 chars ≈ 100 seconds** |
+| longest (`the-privileged-area`) | **4,471 chars ≈ 5.7 minutes for ONE caption** |
+
+**Worst by share:** `how_to_watch_hockey` **27.7%** (24 markers), `winger` **24.4%** (27),
+`rink_map_and_glossary` 13.8%, `game_management` 13.7%, `forechecking_systems` 11.9%.
+
+⚠️ **A caption is not a label here — the median one is a minute and a half of speech**, and it is
+voiced as a single `"Diagram. …"` unit. **In `how_to_watch_hockey` more than a quarter of what a
+listener hears is caption.**
+
+⚠️ **This lands directly on D1, D2 and D3 and changes all three.** D1 moves 286 of these to the
+*head* of their sections, so the listener now meets 100 seconds of caption **before** the prose
+instead of after. **Adding diagrams adds this cost linearly** — D2 and D3 together would add ~60
+more markers, and D3's are page-summaries, the hardest kind to keep short.
+
+⚠️ **Do NOT turn this into a sweep.** I refuted my own first hypothesis while measuring it: I
+expected the Overview precedent `notation-key` to be a bloated outlier and it is **rank 60 of 187
+at 1.2× median** — the long captions are long because they carry rules qualifications and safety
+counterweights that non-negotiables 3 and 4 protect. **The finding is that the MEDIAN is too long,
+not that the maximum is.** Any reduction is a per-caption reading job, and a caption that shrinks
+by dropping a qualification has made the corpus worse, not shorter.
+
+**Open question this cannot answer:** whether 7.5% is actually too much. It is a real number and a
+large one; it is not by itself a defect. **What makes it one is the median, and the 28% document.**
+
+### ⚠️ D3 — OVERVIEW DIAGRAMS: censused 6 September 2026, and the scope is 31, not 37
+
+The owner: *"ideally we'd also have diagrams in the overview section should a diagramatic summary
+of the page."*
+
+**Measured across all 37 documents — every `## Overview` section, checked for a marker inside it:**
+
+| | count |
+|---|---|
+| Overview sections with a diagram | **1** (`reading-diagrams/reading_ice_hockey_diagrams.md`) |
+| Overview sections with none | **36** |
+| documents with **zero** diagrams anywhere | **5** |
+
+⚠️ **The one that already has it is the design precedent, and it was not built for this item** —
+that document teaches the notation, so its Overview diagram is the legend. **Read it before
+designing anything**: the question of what a whole-page summary looks like has been answered once
+in this corpus already.
+
+**Scope is 31 documents, not 37, and the cut is the owner's own:** *"we may not need diagrams for
+off-the-ice/equipment as I want to focus on diagrams of the ice rink not other diagrams."* The five
+zero-diagram documents are exactly the non-rink ones — `off-the-ice/equipment.md`,
+`off-the-ice/conditioning_and_recovery.md`, `off-the-ice/mental_game.md`,
+`off-the-ice/team_play_and_culture.md` and `foundation/uk_rules.md`. ⚠️ **Four are correctly out of
+scope. `uk_rules.md` is the one to decide deliberately rather than by pattern** — it is a rules
+document, not an off-ice one, and some of what it covers (rink dimensions, the UK sheet) *is*
+spatial. **Do not let it fall out of scope merely because it sits in the same row of a table.**
+
+⚠️ **Design ONE and have it reviewed before drawing thirty.** A whole-page summary is a genuinely
+new diagram *kind* — every existing diagram teaches one situation, and this one has to teach a
+document. **The failure mode is a diagram that shows everything and therefore teaches nothing**,
+and thirty of those is thirty times the caption load `R5` already flags as a measured readability
+cost. The design question to settle first: **is the Overview diagram a map of the page's REGIONS,
+or a single representative SITUATION?** Those produce different pictures and only one of them scales.
+
+⚠️ **And its caption is VOICED and lands first.** A page-summary caption is heard before any of the
+page. That is the hardest caption in the corpus to write, and it has to be written 31 times.
+
 ## ⚠️ TIER 0-R — READABILITY. THE OWNER'S STANDING TOP PRIORITY.
 
 **The owner asked for readability to be analysed and made the highest priority in this plan. This is
@@ -5707,6 +5816,29 @@ and it matters as much as the others, because a round spent de-duplicating this 
 wasted.
 
 ---
+
+### ⚠️⚠️ R0/R1 MEASURED CONSEQUENCE — THE ELEVEN SPLITS CHANGED THE AUDIO BY EXACTLY NOTHING
+
+Found by `commit-gate` on round 66, unprompted, by rendering HEAD and the index through the real
+`md_to_speech` and diffing. Round 66 split eleven oversized bullets. Five documents came back
+**TEXT IDENTICAL, and identical in UNIT COUNT** — `rules_primer` 229→229, `goaltender` 179→179,
+`body_contact_and_battles` 193→193, `defender` 85→85, `how_to_watch_hockey` 58→58. A
+`--word-diff --ignore-all-space` over `content/` confirmed **not one word changed**.
+
+⚠️ **So the entire gain is SITE-ONLY, and the R tier's premise needs restating before it spends
+another round.** A markdown bullet split does not change what a listener hears, because the
+renderer's unit boundary is not the bullet — it is the sentence group. **The reader on the web page
+benefits; the listener gets nothing.** That is not a reason to stop — the site is half the product,
+and the owner's complaint was about a *page* — but it means:
+
+- **R0/R1 must be costed as a site-readability item, not a listening item.** Any claim that
+  splitting helps the podcast is now refuted by measurement.
+- ⚠️ **The listening-side readability defect, if there is one, has NOT been found yet**, because
+  the tool everyone reached for cannot see it. `R5` (caption load) and the 300 ms `facts` framing
+  are the only measured listening-side costs on this plan.
+- **The identical-unit-count check is the right regression test for every future split**, and it
+  cost one render. Use it: a split that changes unit counts has changed the audio and needs
+  hearing, and a split that does not has changed only the page.
 
 ### R0 ⚠️⚠️ THE OVERSIZED READING UNIT IS THE BULLET, AND NEITHER R1 NOR R3 COULD SEE IT
 
