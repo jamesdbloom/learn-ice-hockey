@@ -263,8 +263,8 @@ At the four neutral-zone dots the rule still says "defending player," which mean
 
 ```facts
 Position: Square to your opponent's end of the rink, roughly one stick length apart (Rule 76.4)
-Rule: Feet either side of the restraining lines — touching the lines is fine (Rule 76.4)
-Rule: Your skate toe must not cross the restraining lines perpendicular to the side boards (Rule 76.4)
+Rule: Feet either side of the restraining lines that run parallel to the side boards — touching the lines is fine (NHL and IIHF Rule 76.7(iv), which defines this; 76.4 does not)
+Rule: The toe of your skate blade must not cross the restraining lines perpendicular to the side boards (NHL and IIHF Rule 76.7(iv))
 Rule: At least the toe of your stick blade must be in the white of the spot — NHL and IIHF Rule 76.7(iv) and Hockey Canada 6.2(a) — but not in Britain, where the whole blade goes down
 Rule: Under NHL and IIHF Rule 76.7(iv) the blade must remain in the white until the puck is dropped; lifting it early is a faceoff violation
 Rule: ⚠️ In Britain the toe is not enough — put "the whole of their stick blades (not toe or heel) in the white portion of the face-off circle" (IHUK In-House Rules 2026-27, Section 10, Rule 76); falling short is a violation and the linesperson replaces your centre

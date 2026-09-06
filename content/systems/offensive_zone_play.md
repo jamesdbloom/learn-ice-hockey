@@ -143,6 +143,7 @@ Technique: Pass to where the shooter is going, not where they are — a pass int
 Options: Carry it across yourself — the half-wall into the high slot, or curling out from behind the net into the slot, both cross the line
 Options: Use the player behind the net — a pass out from below the goal line crosses the road almost by definition
 Read: Expect the seam to be defended, and expect it to open only briefly
+Never: Drive off the half-wall or curl out from behind the net with your head down — you cannot brace for a hit you have not seen, and coming out past the post you can be driven into the goal frame
 ```
 
 Knowing the concept is worthless without the habits that produce it. Four practical ones:
@@ -151,6 +152,8 @@ Knowing the concept is worthless without the habits that produce it. Four practi
 - **Pass to where the shooter is going, not where they are.** A seam pass into a player's feet takes an extra touch, and the extra touch is exactly the time the goalie needed.
 - **Carry it across yourself.** A puck carrier who cuts through the middle drags the goalie laterally the same way a pass does. Driving from the half-wall into the high slot, or curling out from behind the net into the slot, both cross the line.
 - **Use the player behind the net.** A pass out from below the goal line to the slot crosses the royal road almost by definition, and the goalie has to turn their head to track it. See section 8.
+
+![](diagram:oz-cross-the-road-yourself)
 
 **The corresponding defensive truth:** taking away the middle of the ice is the whole point of most defensive-zone systems. Expect the seam to be defended, and expect it to open only briefly. See [Defensive Zone Coverage](defensive_zone_coverage.md).
 
@@ -257,6 +260,8 @@ Never: Confuse the bumper with the net-front player — two different jobs at tw
 - **Five-man rotation ("position-less" or high cycle).** Defencemen rotate into forward spots and forwards cover the line as a matter of routine rather than emergency. This is how modern NHL teams with skating defencemen play. It requires everyone to be comfortable at the blue line.
 - **1-3-1 spread.** One at the point, two on the half-walls, one **bumper** in the middle of the ice between them, one net front. Common on the power play (see [Special Teams](special_teams.md)) and occasionally used at even strength. **The bumper is not the net-front player** — they are two different jobs at two different depths.
 
+![](diagram:pp-131)
+
 ---
 
 ## 4. Cycling
@@ -296,6 +301,7 @@ Risk: Picking the wrong one of those two is a leading cycle turnover — nobody 
 Technique: Bump pass — fire the puck hard at a spot on the wall, not at your teammate, and call it; a bump nobody expects is a turnover
 Technique: Pivot / cutback — cut back up the wall you came down; a defender committed toward the corner cannot turn as fast as you
 Options: Scissor / switch — carrier and support skate at each other and cross, support passing on the outside; the carrier may drop it or keep it
+Never: Turn your back to the boards when that contact comes, and never duck — skates parallel to the wall, forearm and hip to it, not the point of your shoulder, head up and chin off your chest
 ```
 
 **Low-to-low (the true cycle).** The puck carrier on the half-wall or in the corner passes the puck **backwards and down** to a teammate arriving behind them, then rotates up into the space their teammate just left. Two variants matter and they are not the same play:
@@ -304,6 +310,10 @@ Options: Scissor / switch — carrier and support skate at each other and cross,
 - **Reverse** — the puck goes *back against the flow*, into the space a checker has just skated out of. Beats pressure that has over-committed and gone past you.
 
 Picking the wrong one is a leading cycle turnover — **nobody has counted cycle turnovers by cause, so take that as coaching craft rather than a measurement**; what is not in doubt is that the two reads point in opposite directions and one of them is wrong every time. The rule of thumb: **if the checker is still in front of you, rim it; if they have skated past you, reverse it.**
+
+![](diagram:oz-cycle-rim)
+
+![](diagram:oz-cycle-reverse)
 
 **The bump pass off the wall.** Rather than passing to a teammate directly, you fire the puck hard into the boards so it caroms to a spot. It is unblockable by a stick in the passing lane and it does not care about a defender standing between you. Aim at a *spot on the wall*, not at your teammate, and call it — a bump nobody expects is a turnover.
 

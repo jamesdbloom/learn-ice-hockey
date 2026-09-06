@@ -700,12 +700,326 @@ const behindTheNet = {
   puck: { at: 'behind-net', dx: -2, dy: 7 },
 };
 
+// ---------------------------------------------------------------------------
+// 9 — Crossing the royal road with your feet (section 2, "How to actually
+//     create one")
+//
+// The section's four habits are a scan order, a lead pass, a carry and a play
+// from below the goal line. Three of the four are drawn elsewhere: the seam pass
+// is `oz-royal-road`, the pass out from behind the net is `oz-behind-the-net`,
+// and the scan order is a sequence of LOOKS, which this notation has no mark for
+// — a numbered route means somebody skated or passed, not that somebody looked.
+//
+// What is left undrawn anywhere in the corpus is the CARRY: "A puck carrier who
+// cuts through the middle drags the goalie laterally the same way a pass does.
+// Driving from the half-wall into the high slot, or curling out from behind the
+// net into the slot, both cross the line." Two routes, one per sentence.
+//
+// ⚠️ NO PUCK IS DRAWN, and that is the whole reason this frame can hold both.
+// They are alternatives starting from two different places, so a puck would have
+// to be on one stick or the other and the frame would assert a choice the section
+// does not make. The `carry` mark — the key's skate-and-stickhandle wave — already
+// says the mover has the puck, so nothing is lost. `oz-home-plate` also draws no
+// puck.
+//
+// ⚠️ NOT A DUPLICATE OF `oz-half-wall-options`' fourth route, and the difference is
+// the only thing either picture is about: that one finishes at (75, 14), on the
+// STRONG side, and its caption calls it "taking it yourself off the wall to the
+// inside". This one finishes across the centre line. Crossing is the claim.
+// ---------------------------------------------------------------------------
+
+// The drive off the wall finishes on the weak side of the high slot — "the high
+// slot runs from the dots up to the tops of the circles" (section 1), so x 54-69,
+// and y -6 is across the road. (63, -6)
+const DRIVE_TO = { at: 'high-slot', dx: -6, dy: -6 };
+
+// The curl finishes in the slot — "the area straight out in front of the net,
+// between the two faceoff circles" — on the weak side of centre. The slot node is
+// (76, 0), which is ON the road, so it is offset across it. (76, -4)
+const CURL_TO = { at: 'slot', dy: -4 };
+
+const crossTheRoadYourself = {
+  id: 'oz-cross-the-road-yourself',
+  owner: 'content/systems/offensive_zone_play.md',
+  half: true,
+  width: 900,
+  title: 'Crossing the road yourself',
+
+  caption:
+    'Crossing the royal road with your feet rather than with a pass. The road is the imaginary ' +
+    'line down the centre of the ice, lengthwise, from the middle of one net to the middle of the ' +
+    'other, and the two wavy routes are the two carries the section names: driving off the ' +
+    'strong-side half-wall into the high slot, and curling out from behind the net into the slot. ' +
+    'Both finish on the far side of the line, and a carrier who cuts through the middle drags the ' +
+    'goaltender laterally the same way a pass does — they have to push across, re-establish depth ' +
+    'and angle, re-find the puck and reset their stick. Be careful how far you carry that: the ' +
+    'measured figure this document quotes, the 15.50%, is a finishing rate on shots following a ' +
+    'cross-slot pass in volunteer-tracked 5-on-5 data, and it is a measurement of passes. This ' +
+    'document attaches no figure to carrying it across yourself, and neither does this picture — ' +
+    'the mechanism is the argument, not a number. No puck is drawn, because ' +
+    'these are two alternatives from two different places and only one of them is happening. And ' +
+    'the line itself comes with a caveat this document states in full: published descriptions of ' +
+    'where the royal road runs do not agree, and the net-to-net version drawn here is kept for ' +
+    'being the more conservative instruction rather than the better supported one — the two ' +
+    'sources closest to the original figures describe a shorter road that stops at the tops of ' +
+    'the faceoff circles. Defenders other than the goaltender are not drawn, so nothing here ' +
+    'shows how briefly the middle is actually open. ' +
+    // ⚠️ Placed AFTER the caption's last complete sentence, not inside one.
+    // My first attempt spliced it between "stops at the tops of" and "the faceoff circles" --
+    // severing an honest disclosure mid-sentence AND burying the safety line, unmarked, 250
+    // words into the unit. It shipped to the manifest, the page twice and the spoken layer.
+    // ⚠️ I wrote an "outcome assertion" for that edit and it only checked the string was
+    // PRESENT, not that it was in the right PLACE. Presence is not correctness.
+    '⚠️ And both of these carries take you through the middle: head up, chin off your chest — ' +
+    'you cannot brace for a hit you have not seen, and coming out past the post you can be ' +
+    // ⚠️ Was "the walkout past the post IS WHERE players get driven into the goal frame" — a
+    // frequency claim the owning section does not make. §8 says "you CAN STILL BE driven"
+    // (:677 and :1069). `facts-reviewer` caught it in the facts line, I fixed it THERE and
+    // left the identical sentence here — a repair that stopped at the clause the finding
+    // named instead of at the claim. The "Presence is not correctness" note four lines above
+    // is about this same caption.
+    'driven into the goal frame.',
+
+  describe:
+    'The attacking half of the rink, the net at the right. A dashed line runs down the middle of ' +
+    'the ice from the centre of the goal line out through centre ice, labelled "the royal road". ' +
+    'Two own forwards and no puck. One stands on the strong-side half-wall, level with the ' +
+    'faceoff dot; a wavy route ending in an arrowhead — the notation for skating with the puck — ' +
+    'leaves him, bows toward the net and finishes on the weak side of the high slot, having ' +
+    'crossed the dashed line. The second forward stands behind the goal line, ten feet to the ' +
+    'strong side of the middle of the net; a second wavy route leaves him, swings out past the ' +
+    'side of the net well clear of the crease, and finishes in the slot on the weak side of the ' +
+    'dashed line. The goaltender is in the crease. No defenders are drawn.',
+
+  zones: [
+    // Drawn exactly as `oz-royal-road` draws it, and for the same reason: a
+    // two-point "region" is a line, and the road is not a marking on the ice, so
+    // it must not be drawn as a route. Goal line to centre ice is the attacking
+    // HALF of the line the caption describes.
+    {
+      points: ['goal-line', 'centre-ice'],
+      label: 'the royal road',
+      fill: 'none',
+    },
+  ],
+
+  players: [
+    { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
+    { id: 'F1', pos: 'F', at: HALF_WALL, label: 'drives inside' },
+    { id: 'F2', pos: 'F', at: BEHIND,    label: 'curls out' },
+  ],
+
+  routes: [
+    // The drive off the wall. `carry` — he has the puck — with a small bow toward
+    // the net so it reads as a drive bending inside rather than a straight line
+    // ruled across the zone.
+    //
+    // ARRIVAL. Arrow-ended and owned by a skater, so the invariant applies. Tip
+    // (63, -6); the only opposing player is the goaltender at (87, 0), 24.7 ft
+    // away — far outside ARRIVAL.noArrow (9.0), so form (b) cannot fire, and
+    // form (a) excludes goaltenders outright.
+    { from: HALF_WALL, to: DRIVE_TO, kind: 'carry', bow: 6 },
+    // The curl out of the corner. The bow is not decoration: the STRAIGHT line
+    // from (94, 10) to (76, -4) passes through (84.5, 2.61), which is 5.18 ft
+    // from the crease arc's centre (88.972, 0) with |y| < 4 — i.e. INSIDE the
+    // blue paint, and a route drawn through the crease is a route no goaltender
+    // would allow. With `bow: -10` the control point is (78.86, 10.89) and the
+    // curve clears it everywhere: 9.63 ft from the arc centre at a quarter of the
+    // way along, 9.89 ft at the halfway point and 11.05 ft at three quarters, and
+    // its MINIMUM over the whole curve is 9.58 ft at about three tenths of the way
+    // along — against the arc's 6 ft radius. It also gives the shape the section
+    // describes: out past the side of the net at about ten feet wide, then in
+    // across the line.
+    //
+    // ASSUMES site/src/data/rink.json as on disk: goal-line (89, 0), crease_depth
+    // 6, crease_arc_radius 6, crease_width 8.
+    //
+    // ARRIVAL. Tip (76, -4); the goaltender at (87, 0) is 11.7 ft away, outside
+    // ARRIVAL.noArrow.
+    { from: BEHIND, to: CURL_TO, kind: 'carry', bow: -10 },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 10 and 11 — Rim and reverse in the cycle (section 4, "The mechanics")
+//
+// A PAIR, and it has to be one. The section's read is "if the checker is still in
+// front of you, rim it; if they have skated past you, reverse it", and the thing
+// that decides it is WHERE THE CHECKER IS. One frame can show one checker. So the
+// two diagrams are the same corner, the same carrier on the same spot, the same
+// puck, and the checker moved — which makes the difference between them the whole
+// content of the read.
+//
+// ⚠️ THE CORPUS ALREADY HAS FOUR RIM/REVERSE DIAGRAMS AND THESE ARE NOT BORROWS OF
+// THEM. `breakout-rim`, `breakout-reverse`, `winger-dz-rim` and `winger-dz-reverse`
+// are all drawn in the DEFENDING zone — `winger-dz-rim`'s own `describe` opens "The
+// defending half of the rink, your own net at the right." Borrowing one into this
+// document would flip the end of the ice in the middle of a document whose every
+// other diagram attacks to the right, and no caption would say so. The play is
+// also a different play: there the rim is how you get the puck OUT, here it is how
+// you keep it IN.
+//
+// The low-to-low pass itself is NOT redrawn here. `oz-five-man-shape` already draws
+// it — the pass from the half-wall down to the corner, and the carrier rotating up
+// into the space — and a second picture of it would be a duplicate.
+// ---------------------------------------------------------------------------
+
+// The carrier, deep on the strong-side wall in the corner. DEEP_CORNER is reused
+// rather than re-derived: it is the spot this module already calls "below the
+// puck", and putting the carrier on a named anchor keeps the two frames identical
+// except for the one thing that changes. (84, 31)
+const CYCLE_CARRIER = DEEP_CORNER;
+
+// The puck, on the boards side of the carrier — the far side of his body from the
+// pressure in both frames, which is the corpus's own teaching for a wall battle.
+// (85.8, 33.4), which is 4.6 ft off the dasher: the corner arc is struck from
+// (72, 14.5) at radius 28, and this point is 23.4 ft from that centre.
+const CYCLE_PUCK = { at: 'corner:right', dx: 3.8, dy: -0.6 };
+
+const cycleRim = {
+  id: 'oz-cycle-rim',
+  owner: 'content/systems/offensive_zone_play.md',
+  half: true,
+  width: 900,
+  title: 'The rim in the cycle',
+
+  caption:
+    'The rim, in an offensive-zone cycle. The carrier is deep on the strong-side wall and the ' +
+    'checker is inside him, between him and the middle of the ice, sealing him against the boards ' +
+    'and still in front of him — and that is the read: a rim beats pressure that has you pinned. ' +
+    'The puck goes onward around the boards, following the curve of the rink, past the checker ' +
+    'and out to a teammate arriving behind the net — onward, in the direction the play was ' +
+    'already going, which is the whole difference between a rim and a reverse. The passer does ' +
+    'not then stand still: a cycle rotates, and no route is drawn for him here because this frame ' +
+    'is the read rather than the rotation. The companion ' +
+    'diagram is the same corner with the checker in the other place, and the two plays point in ' +
+    'opposite directions, so one of them is wrong every time. Picking the wrong one is described ' +
+    'as a leading cycle turnover — take that as coaching craft rather than a measurement, ' +
+    'because nobody has counted cycle turnovers by cause. ⚠️ And whichever one is on, this is a ' +
+    'wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, ' +
+    'forearm and hip into the contact, head up and chin off your chest. Only the checker and the ' +
+    'goaltender are drawn on the other team.',
+
+  describe:
+    'The attacking half of the rink, the net at the right. Own players are drawn open, the ' +
+    'opposition solid. An own forward has the puck deep in the strong-side corner, with the puck ' +
+    'on the boards side of his body. An opposition forward stands about eight feet inside him and ' +
+    'two feet nearer the goal line, between him and the middle of the ice. A dashed pass route ' +
+    'leaves the carrier and bows out toward the boards, running around the curve of the corner ' +
+    'about five feet off the dasher, past the outside of the checker, and finishing short of a ' +
+    'second own forward who stands behind the goal line to the strong side of the net. The ' +
+    'goaltender is in the crease. No other opposition players are drawn, and no route is drawn ' +
+    'for the passer.',
+
+  players: [
+    { id: 'F1', pos: 'F', at: CYCLE_CARRIER,               label: 'the carrier' },
+    // Inside him and two feet nearer the goal line. At (86, 23) he is 8.25 ft from
+    // the carrier — the glyph body is 2.9 ft in radius, so two markers need more
+    // than 5.8 ft between their centres or they touch.
+    { id: 'F',  team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 4, dy: -11 }, label: 'sealing you in' },
+    // The teammate the rim is aimed at: behind the goal line, to the strong side.
+    // (94, 6) is 4.4 ft off the end boards, 9.2 ft from the goaltender, and 7.83 ft
+    // from the crease arc's centre against its 6 ft radius, so it is clear of the
+    // paint.
+    { id: 'F2', pos: 'F', at: { at: 'behind-net', dy: 6 }, label: 'behind the net' },
+    { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
+  ],
+
+  routes: [
+    // The rim. A `pass`, not a `carry` — the puck travels and the passer does not.
+    //
+    // GEOMETRY, because "follows the curve of the rink" is the claim. Chord
+    // (84, 31) -> (94.5, 13), length 20.84; the renderer's control point is the
+    // chord midpoint offset perpendicular by `bow`, which at bow 7 puts it at
+    // (95.30, 25.53). The corner arc is struck from (72, 14.5) at radius 28, so:
+    // the chord's midpoint would run 9.2 ft off the dasher, the control point sits
+    // 2.2 ft off it, and the drawn curve passes 5.7 ft off it at the halfway point.
+    // That is a rim hugging the boards rather than a pass cut across the corner.
+    //
+    // PAST THE CHECKER, measured: the curve passes 5.89, 5.50 and 5.68 ft from the
+    // checker's centre at one fifth, three tenths and two fifths of the way along,
+    // and its closest approach over the whole curve is 5.49 ft — so it clears his
+    // 2.9 ft glyph by 2.59 ft at the tightest, on the boards side of him. Going
+    // where he is not is what a rim is.
+    //
+    // The head stops at (94.5, 13), 7.0 ft short of the receiver's marker and 5.45
+    // ft off the end boards. Puck routes are outside the arrival invariant, which
+    // only reaches routes that draw a player moving.
+    { from: CYCLE_CARRIER, to: { at: 'behind-net', dx: 0.5, dy: 13 }, kind: 'pass', bow: 7 },
+  ],
+
+  puck: CYCLE_PUCK,
+};
+
+const cycleReverse = {
+  id: 'oz-cycle-reverse',
+  owner: 'content/systems/offensive_zone_play.md',
+  half: true,
+  width: 900,
+  title: 'The reverse in the cycle',
+
+  caption:
+    'The reverse — the same corner as the previous diagram, the same carrier on the same spot, ' +
+    'the same puck, and one thing changed: the checker has skated past him, carrying his ' +
+    'momentum on toward the end boards. That is the other half of the read. The ice he has just ' +
+    'left is back up the wall, so the puck goes back against the flow, into that space, to a ' +
+    'teammate arriving on the half-wall behind the play. A still picture cannot draw momentum, ' +
+    'so read the checker as a player already past the carrier and unable to stop. Call for it ' +
+    'out loud, because the puck is going somewhere the carrier is not looking. Get this the wrong ' +
+    'way round — reverse into a checker who is actually sealing you, or rim past one who has ' +
+    'already gone by — and you have handed over the puck in the offensive zone with your ' +
+    'forwards below it. That ranking of the wrong read as a leading cycle turnover is coaching ' +
+    'craft rather than a measurement: nobody has counted cycle turnovers by cause. ⚠️ And ' +
+    'whichever one is on, this is a wall battle: never turn your back to the boards and never ' +
+    'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
+    'your chest. Only the checker and the goaltender are drawn on the other team.',
+
+  describe:
+    'The attacking half of the rink, the net at the right, the same corner as the previous ' +
+    'diagram. Own players are drawn open, the opposition solid. An own forward has the puck deep ' +
+    'in the strong-side corner, in the same place as before and with the puck on the far side of ' +
+    'his body from the pressure. The opposition forward is now past him, about five feet nearer ' +
+    'the goal line and five feet inside, level with the goal line. A dashed pass route leaves the ' +
+    'carrier and runs back up the wall, away from the checker, finishing about six feet short of ' +
+    'a second own forward standing on the strong-side half-wall. The goaltender is in the crease. ' +
+    'No other opposition players are drawn, and no route is drawn for the passer.',
+
+  players: [
+    { id: 'F1', pos: 'F', at: CYCLE_CARRIER, label: 'the carrier' },
+    // Past him: (89, 26) is 7.07 ft from the carrier, deeper and inside, on the
+    // goal line. He came from up the wall, which is where the space now is.
+    { id: 'F',  team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 7, dy: -8 }, label: 'gone past you' },
+    // The teammate arriving into the vacated space, on the half-wall — the spot
+    // this module names once and reuses. 16.8 ft from the carrier.
+    { id: 'F2', pos: 'F', at: HALF_WALL, label: 'arriving behind you' },
+    { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
+  ],
+
+  routes: [
+    // The reverse. Straight, and deliberately: a reverse on the wall is in practice
+    // a hard backhand banked off the boards, and this notation has no mark for a
+    // banked puck, so it is drawn as the pass it is rather than given a bow that
+    // would assert a curve nobody put on it. `breakout-reverse` says the same and
+    // draws it the same way.
+    //
+    // (84, 31) -> (74.5, 35.8) is 10.6 ft long and finishes 6.13 ft short of the
+    // receiver's marker at (69, 38.5). It runs away from the checker at (89, 26),
+    // which is the point of it.
+    { from: CYCLE_CARRIER, to: { at: 'half-wall:right', dx: 5.5, dy: -2.7 }, kind: 'pass' },
+  ],
+
+  puck: CYCLE_PUCK,
+};
+
 export default [
   homePlate,
   royalRoad,
+  crossTheRoadYourself,
   fiveManShape,
   afterRotation,
   halfWallOptions,
+  cycleRim,
+  cycleReverse,
   lowToHigh,
   netFrontScreen,
   behindTheNet,

@@ -186,7 +186,16 @@ const dzoneAlignment = {
     'with the line is permitted and it is crossing it that is illegal. Hockey Canada counts a ' +
     'skate on the face-off circle as encroachment, and USA Hockey\u2019s Casebook requires all ' +
     'sticks and all skates completely behind the hash marks. Keep your skates and your stick ' +
-    'behind your own hash mark and you are legal in all four books.',
+    'behind your own hash mark, and your hands and body off the opponent beside you, and you are ' +
+    // ⚠️ This said "...and you are legal in all four books." as a SUFFICIENCY claim, which
+    // NHL and IIHF 76.7(iii) do not support: "Any physical contact with an opponent prior to
+    // the puck being dropped" is a violation in its own right, and the remedy falls on your
+    // CENTRE, who is thrown out of the dot. The corpus already knew this at winger.md:672 and
+    // faceoffs.md:361 -- so the caption contradicted the corpus in the voiced layer, inside
+    // winger.md itself, where both are read aloud.
+    'legal in all four books — and under the NHL and IIHF any physical contact with an opponent ' +
+    'before the drop is a ' +
+    'violation in its own right (NHL and IIHF 76.7(iii)).',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +

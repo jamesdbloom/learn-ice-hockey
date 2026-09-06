@@ -129,7 +129,14 @@ const pp131 = {
     'The 1-3-1 power play: five attackers on a 5-on-4, with the four penalty killers not drawn ' +
     'so the shape reads on its own. One player at the point, three across the middle — two on ' +
     'the half-walls with a bumper between them in the middle of the slot — and one at the net ' +
-    'front on the edge of the blue paint. The dashed lines are the four options a half-wall ' +
+    // ⚠️ "on the edge of the blue paint" places the reader ON the crease line. Under IIHF
+    // Rule 1.7 "the marked line belongs to the Goal Crease", so the net-front player this
+    // positions is INSIDE it; under USA Hockey a goal is disallowed outright with an attacking
+    // player in the crease. This caption is borrowed into center.md, whose own Technique line
+    // at :380 says "off the red crease line, not on it" -- two voiced units of one document
+    // contradicting each other. The `describe` field already said "just outside the crease".
+    'front just outside the blue paint — off the crease line, not on it, because under the ' +
+    'IIHF book the marked line belongs to the crease. The dashed lines are the four options a half-wall ' +
     'player has at once, the point, the bumper, the net front and the far half-wall through the ' +
     'seam, drawn as alternatives and not as a sequence; the solid line is the point walking the ' +
     'line laterally, which changes the angle of every passing lane in the zone. ' +

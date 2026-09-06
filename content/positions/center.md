@@ -193,11 +193,14 @@ Read: If a winger is open, pass and let them enter in stride; if you have space,
 Goal: Lead or direct a controlled transition through the neutral zone and into the offensive zone
 Key: The centre of the ice is the best place to decide from — you can see both wingers and both defencemen
 Never: Carry for its own sake. If a teammate is in a better position, move the puck instead
+Never: Carry through the middle with your head down — you cannot brace for a hit you cannot see, and Body Contact and Battles owns the head-up rule and the one book that protects you less
 ```
 
 **Where to be:** Through the middle of the ice, leading or driving the rush.
 
 **What to do:** Carry with pace through the center of the ice. Read the play — if a winger is open, pass and let them enter in stride. If you have space, carry through yourself. Distribute to the best option and keep the play moving at speed.
+
+![](diagram:centre-nz-deciding-from-the-middle)
 
 **Goal:** Lead or direct a controlled transition through the neutral zone and into the offensive zone.
 
@@ -326,6 +329,8 @@ Key: Behind the net you can see the whole ice and decide without risking a direc
 **Where to be:** In the slot, behind the net, or along the boards near the circles.
 
 **What to do:** Use your body to protect the puck. Look for a quick outlet to a winger on the half-wall or the defenseman at the point. If you go behind the net, use it as a pivot point — come out the other side or find a late-arriving teammate.
+
+![](diagram:oz-behind-the-net)
 
 **Goal:** Maintain possession under pressure and keep the offensive play alive.
 
@@ -515,6 +520,8 @@ Key: Passing in is an alternative to carrying in, not an upgrade on it — the t
 **The formations themselves — 1-3-1, umbrella, overload, spread, 2-3 — are set out in [Special Teams](../systems/special_teams.md).** What matters here is where they put you.
 
 In the **1-3-1**, widely described as the modern default, the centre most often plays the **bumper**: the middle of the three across the slot, sitting in the soft spot between the single point man and the net-front player. Your job is to be a passing target for both half-walls, take quick shots from the slot, screen the goalie, and tip point shots. The bumper is the hardest player for a penalty kill to cover, because a **box** has nobody assigned to the middle — which is exactly why a kill switches to a **diamond** against you.
+
+![](diagram:pp-131)
 
 In an **umbrella** or an **overload** you will usually be low or on the strong-side wall instead. There is no bumper in a true umbrella, so don't go looking for the spot you're used to.
 

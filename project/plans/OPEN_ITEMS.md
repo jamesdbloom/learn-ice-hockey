@@ -5524,6 +5524,178 @@ it wants building.
 
 ---
 
+## ⚠️⚠️ TIER 0-A — AUDIENCE AND THE RULES/GAMEPLAY RATIO. AN EDITORIAL REDIRECTION.
+
+**The owner's direction, in their words:** *"people care about the rules but the main focus should be on
+game play not the minute detail of rules or long discussions on rules… the ratio of how to play vs the
+rule details should be changed so that the majority of the content is on how to play and what to do not
+the rules. The key distinction is this should be helping newer players and not very experienced players,
+the main target of the site is players in their first 10 years of playing."*
+
+⚠️ **THIS CHANGES WHO THE CORPUS IS FOR, AND THEREFORE WHAT BELONGS IN IT. It is not a trimming pass.**
+
+### Measured, before any editing
+
+| | |
+|---|---|
+| ⚠️ **rules-bearing prose** (sentences naming a book, rule number, penalty or official) | **387,277 of 829,481 words — 46.7%** |
+| characters rendering inside a coloured panel | **891,015 — 13.1% of the corpus** |
+| ⚠️ amber/warning callouts | **337, averaging 1,767 characters each** (~290 words per panel) |
+| green/note callouts | 111, averaging 1,024 characters |
+| inline warning runs | 1,365, 179,650 characters |
+
+**And it is concentrated where it least belongs — the how-to-play documents:**
+
+| rules-bearing | document | |
+|---|---|---|
+| **79.9%** | `rules_primer.md` | expected; it IS the rules document |
+| **68.8%** | `body_contact_and_battles.md` | |
+| **61.0%** | `goaltender.md` | |
+| **57.4%** | `faceoffs.md` | |
+| ⚠️ **53.6%** | `center.md` | **a position document, more than half rules** |
+| ⚠️ **47.9%** | `defender.md` | **a position document** |
+| **5.5%** | `skating.md` | ⚠️ **the shape the corpus should be — pure how-to-play** |
+
+`mental_game` 5.6%, `conditioning_and_recovery` 6.7%, `practice_and_development` 7.9%. **So the target
+shape is achievable in this house style; it is not forced by the subject.**
+
+### A1 — Set the audience in the style guide first
+
+- [ ] ⚠️ **Write the audience into `project/content_style_guide.md` BEFORE any condensing.** *"Players in
+      their first ten years"* is a test that can be applied to a sentence: **does a player in year three
+      need this to play better on Saturday?** Without it in the guide, every condensing decision is a
+      matter of taste and the next round will re-litigate it.
+- [ ] Say what the rules are FOR in this corpus: **so a reader is not surprised, penalised or hurt** —
+      not so they can adjudicate. **A player needs to know a hit from behind is a major and never to
+      turn their back; they do not need the three-book divergence on the wording of the exception.**
+
+### A2 — Condense the rules content: 632 blocks, 248,061 words, with the target list built
+
+**Measured, each list item counted as its own unit** (see the trap below): **632 blocks of 180+ words
+that are 60%+ rules-bearing, outside `rules_primer.md` and `uk_rules.md` — 248,061 words.**
+
+Target list: `scratchpad/a2_rule_blocks.json`, with file, line, word count and rules percentage.
+
+**Worst documents:** `goaltender` 72, `body_contact_and_battles` 72, `shooting` 37, `faceoffs` 33,
+`offensive_zone_play` 31, `special_teams` 29, `game_management` 28, `defensive_zone_coverage` 27.
+
+**Worst single blocks:** `goaltender.md:1128` (1,738 words, 85%), `playing_without_the_puck.md:313`
+(1,678, 83%), `defensive_zone_coverage.md:106` (1,548, 88%), `body_contact_and_battles.md:1334`
+(1,351, **96%**).
+
+⚠️ **MEASUREMENT TRAP, and I hit it before catching it.** My first run reported **563 blocks and
+266,259 words** because the grouper **merged whole numbered lists into one block** — `shooting.md:269`
+came back as a single 3,125-word unit that is actually four Key Takeaways items plus four following
+bullets. ⚠️ **That is the FOURTH measurement in this plan wrong for the same reason: a unit boundary I
+assumed rather than checked** (child headings into parents, the Sources trailer into sections, a tight
+list into one paragraph, and now list items into one block). **State the unit, or the number is
+fiction.**
+
+- [ ] `rules_primer.md` is the right home for depth — material cut elsewhere **points there, it does
+      not vanish**.
+- [ ] Condense the **337 amber callouts** (~290 words each) and the **111 green ones**. ⚠️ **An amber
+      panel is how this corpus marks a hazard. Shortening one is a SAFETY edit**, and every one must
+      keep its counterweight in the same voiced unit.
+
+### A2b — ⚠️ Test the ratio hypothesis on ONE document before dispatching a wave
+
+**632 blocks is too many to condense without knowing what a condensed block should look like.**
+
+- [ ] **Pick one document — `goaltender.md` (72 blocks, 61% rules-bearing) is the strongest candidate**
+      — and condense it end to end. **Then measure: did rules-bearing prose fall? Did the disclosure
+      count fall faster? Did any rule get narrower?**
+- [ ] ⚠️ **That last question is the one that matters, and this round already answered it once in
+      miniature: compressing three facts lines to fit a character cap shed two Hockey Canada limbs,
+      including the words *"bumps, shoves, or pushes"* from a definition of what a player may do with
+      their body.** **The condensing operation IS that operation, at scale.**
+
+### ⚠️ A3 — THE THREE WAYS THIS GOES WRONG, AND THEY ARE NON-NEGOTIABLES
+
+**This tier is the most dangerous work in the plan, because the instruction is "remove" and three
+standing rules say "do not".**
+
+1. ⚠️ **Non-negotiable 3: never delete a claim merely because it is unsourced.** *"A tidying pass already
+   removed a CORRECT fact from this corpus because it looked unsupported."* **Condensing is a tidying
+   pass. Deletion is right only where a primary source contradicts the claim.**
+2. ⚠️ **Non-negotiable 4: never strip an honest disclosure.** The *"could not be verified"*, *"the two
+   books disagree"*, *"a reading and not a ruling"* labels **are the corpus's integrity story**, and an
+   audit of ~40 found 30-plus entirely sound. **A shorter passage that has quietly become more confident
+   is a defect, not a summary.**
+3. ⚠️ **A rule stated shorter can become a rule stated WRONG.** This round shed two Hockey Canada limbs —
+   the *"any Member-approved division"* scope and the words *"bumps, shoves, or pushes"* — **purely by
+   compressing three lines to fit a character cap.** That is exactly this tier's operation, done in
+   miniature, and it produced a rule narrower than the book.
+
+- [ ] ⚠️ **Every condensed rule passage goes to `rules-verifier` AND `safety-reviewer`.** Not a sample —
+      each one. **The failure mode is invisible to every mechanical check in this repository.**
+- [ ] ⚠️ **Measure the ratio again afterwards.** If rules-bearing prose falls but the disclosure count
+      falls faster, the pass has removed the wrong thing.
+
+## ⚠️⚠️ TIER 0-D — DIAGRAM COVERAGE AND PLACEMENT. THE OWNER'S HIGHEST PRIORITY.
+
+**The owner named four undrawn sections on `/positions/defender/` and one whose diagram sits after the
+text, and asked for: most sections to carry a diagram, especially every section in `positions/`;
+diagrams at the START of a section; and an Overview diagram that summarises the page.**
+
+⚠️ **Measured, and it is worse than reported. The placement problem is not "some sections" — it is
+effectively ALL of them.**
+
+| corpus-wide, sections of 60+ words | |
+|---|---|
+| sections | **1,358** |
+| carrying a diagram | **219 — 16%** |
+| ⚠️ **diagram at the START** | **1** |
+| ⚠️ **diagram AFTER the prose** | **218** |
+| words of prose before the diagram | median **340**, p75 **543**, **max 4,499** |
+| ⚠️ **Overview sections carrying a diagram** | **1 of 37** |
+
+**`positions/` specifically — the owner's priority — with ZERO at the start in every document:**
+
+| document | sections drawn | at start | worst case |
+|---|---|---|---|
+| `winger` | 16/21 | **0** | 1,070 words before its diagram |
+| `goaltender` | 15/54 | **0** | ⚠️ **4,499** — `The trapezoid` |
+| `center` | 10/24 | **0** | 771 |
+| `defender` | 10/27 | **0** | ⚠️ **2,257** — `Carrying the Puck — Free Space`, the section the owner named |
+| `switching_positions` | 4/20 | **0** | 3,073 |
+
+### D1 — Move existing diagrams to the head of their section
+
+**218 markers to move, and this is the cheapest large readability win available: it moves lines, adds
+nothing, and verifies mechanically.**
+
+- [ ] ⚠️ **NOT A SWEEP, for one specific reason.** A caption is VOICED. Moving a marker moves several
+      hundred words of spoken caption from after the prose to before it, **so the listener now meets the
+      caption cold, with no prose to set it up.** Some captions open with *"Drawn here…"* or refer to
+      something the prose just said. **Read the caption's first sentence before moving its marker.**
+- [ ] ⚠️ **A marker must keep a blank line before AND after.** 29 markers written without one became
+      setext H2 underlines and put 8,621 characters of raw SVG into three tables of contents.
+
+### D2 — Draw the missing sections, `positions/` first
+
+**146 sections in `positions/`; 55 carry a diagram.** The owner named four in `defender.md`:
+`Defensive Zone: Carrying the Puck — Under Pressure`, `Defensive Zone: Pressuring an Opponent with the
+Puck`, `Net-front technique — how to actually move someone`, and `Overview`.
+
+- [ ] ⚠️ **`goaltender.md` is the largest gap — 15 of 54.** But check before drawing: a goaltender
+      section may be about body position rather than ice position, which this pipeline cannot draw.
+- [ ] **Reuse first.** 93 of 276 placements are already borrows. ⚠️ **Check orientation** — 73 diagrams
+      put the opposition net at the right and 28 put the DEFENDED net there.
+
+### D3 — An Overview diagram per document, summarising the page
+
+**1 of 37 Overview sections carries a diagram.**
+
+⚠️ **This is a NEW KIND of diagram and the hardest thing in this tier.** A summary of a whole document
+is not a play — it is a map of where the document's material sits on the ice. **There is no precedent in
+the corpus for it and no established notation.**
+
+- [ ] **Design one first, for one document, and review it before drawing 36 more.** ⚠️ **The failure
+      mode is a diagram that shows everything and teaches nothing.**
+- [ ] ⚠️ **`equipment`, `mental_game`, `conditioning_and_recovery` and `team_play_and_culture` should
+      probably get none** — the owner's steer is *"diagrams of the ice rink not other diagrams"*, and a
+      document with no spatial content has no map.
+
 ## ⚠️ TIER 0-R — READABILITY. THE OWNER'S STANDING TOP PRIORITY.
 
 **The owner asked for readability to be analysed and made the highest priority in this plan. This is
@@ -5535,6 +5707,57 @@ and it matters as much as the others, because a round spent de-duplicating this 
 wasted.
 
 ---
+
+### R0 ⚠️⚠️ THE OVERSIZED READING UNIT IS THE BULLET, AND NEITHER R1 NOR R3 COULD SEE IT
+
+**Found by the agent dispatched to subdivide `switching_positions.md`, against its own brief.** It
+refused the section I sent it to and explained why: **1,950 of that section's 3,195 words are inside a
+SINGLE BULLET** — one `-` item plus four indented continuation paragraphs. A heading at column 0
+terminates a markdown list, so subdividing there would orphan the continuations from their parent and
+split the remaining bullets into a second list. **That is restructuring prose, not naming structure.**
+
+**It then found the same shape everywhere it measured in that document:**
+
+| section | words | in ONE bullet |
+|---|---|---|
+| `"Force them outside"…` | 3,195 | **1,950** |
+| `What else is genuinely new` | 1,596 | 916 |
+| `Anyone → goaltender` | 1,942 | 1,001 (two bullets) |
+| `Common Mistakes` | 1,650 | 752 |
+| `Key Takeaways` | 1,418 | 633 |
+
+**Censused corpus-wide — a bullet plus its indented continuations, as one unit, body only:**
+
+⚠️ **244 bullets of 1,400+ characters. The largest is 15,845** — roughly 2,600 words in a single list
+item.
+
+| chars | site |
+|---|---|
+| **15,845** | `systems/offensive_zone_play.md:467` |
+| 13,729 | `foundation/rules_primer.md:449` |
+| 12,699 | `foundation/rules_primer.md:410` |
+| 11,473 | `positions/switching_positions.md:193` |
+| 11,129 | `foundation/rules_primer.md:432` |
+
+**Worst documents:** `rules_primer` 46, `goaltender` 30, `body_contact_and_battles` 22.
+
+⚠️ **THIS IS WHY R1 AND R3 BOTH MEASURED THE WRONG THING.** R1 counted **lines**; a bullet's
+continuations are separate lines, so a 15,845-character bullet appears as several ordinary paragraphs.
+R3 counted **sections**; a bullet lives inside one, so the section looks like the problem when the
+bullet is. **Two metrics, two dispatches, and neither could see the largest reading unit in the corpus.**
+
+- [ ] ⚠️ **This is NOT a splitting task.** Both R3 agents independently reached the same conclusion: a
+      heading cannot reach inside a list, and breaking the bullet apart is a prose restructure needing
+      `rules-verifier` and `safety-reviewer` — several of the biggest are four-book rule comparisons.
+- [ ] **Decide the shape first.** Options: promote the bullet's body to a `####` subsection (which the
+      style guide prescribes for a facts block at `HARD_MAX`, *"split the section on the seam the body
+      already uses"*); or accept that a rule enumeration is legitimately long. ⚠️ **Do not sweep.**
+- [ ] ⚠️ **One concrete payoff already identified.** In `switching_positions.md`, promoting the
+      contact-legality material out of bullet 1 into its own `####` would take **six of the eleven facts
+      at `:179`–`:184` with it** — relieving a block that is at `HARD_MAX` with four lines at 296–298 of
+      300 characters, on the seam the body already uses. **That is a filed problem this would solve.**
+
+### R1 Long paragraphs — real, but a smaller unit than R0
 
 ### R1 ⚠️ Long paragraphs — the largest measurable readability defect
 
@@ -5591,29 +5814,54 @@ conceptual, not textual: the eight `A Note on Language` blocks (**4,010 words**,
 **consolidation onto the glossary page, NOT deletion**, because each block's second half is a
 position-specific gloss that exists nowhere else.
 
-### R3 Navigability — words per subsection, which is the reader's unit of attention
+### R3 ⚠️ NAVIGABILITY — MY METRIC WAS WRONG IN EVERY FIGURE, AND AN AGENT REFUTED IT
 
-**Corpus: 1,149,408 words, 87 hours at 220 wpm, median document 27,730 words (126 minutes).**
+⚠️ **THIS ROW PREVIOUSLY CLAIMED `on_ice_communication.md` was "3,348 words per subsection, 3.3× the
+corpus norm and the worst in the corpus". It is 962 by my own old method and 777 after five headings
+were added — and it was 9th of 36, not 1st.** The agent dispatched on it re-derived every figure and
+found all of them wrong.
 
-⚠️ **Document SIZE is not the defect — the biggest documents are among the best subdivided.**
-`rules_primer.md` is 92,714 words but has 51 subsections, so it reads in ~1,817-word units.
-**The defect is the ratio**, and the outliers are not the big documents:
+**Two bugs in the census, both confirmed by re-measurement:**
 
-| words per subsection | words | subsections | document |
-|---|---|---|---|
-| **3,348** | 23,440 | **7** | `on_ice_communication.md` |
-| **3,023** | 24,185 | **8** | `switching_positions.md` |
-| **2,346** | 42,233 | 18 | `shooting.md` |
-| **2,343** | 39,844 | 17 | `special_teams.md` |
-| 1,851 | 35,170 | 19 | `defensive_zone_coverage.md` |
+⚠️ **(1) I counted a child heading's words into its parent.** A `##` section containing a `####` child
+was credited with the child's prose. **So the largest section I put in the brief — `Danger and coverage`
+at "3,193 words" — is 819. Its child already held 2,391. The section I sent an agent to subdivide was
+already subdivided.**
 
-**Median across documents over 8,000 words: 1,018 words per subsection.** So the top four are **2.3× to
-3.3× the corpus norm.**
+⚠️ **(2) My Sources-trailer filter was incomplete IN THE SAME DIRECTION AS THE BUG IT WAS WRITTEN TO
+FIX.** `T0-26` records the trailer corrupting three measurements and gives the exclusion
+`s.startswith("*") and s.count("](http") > 2`. **That filter misses the trailer's non-bullet opener and
+any entry carrying two or fewer links.** In `on_ice_communication.md` it hid **~1,277 words** inside a
+"Key Takeaways" figure whose real size is **328**. ⚠️ **Fourth time. The fix for a measurement bug had
+the same bug.**
 
-- [ ] Add `###` subdivisions to `on_ice_communication.md` and `switching_positions.md` first — they are
-      mid-sized documents, so this is cheap, and they are the worst by a wide margin.
-- [ ] ⚠️ **Subdividing changes the anchor set.** `check_links.py` gates on anchors and there are 5,534
-      internal fragment links. **Run it after every split.**
+**Re-measured — leaf sections only, a child's words belonging to the child, trailer properly excluded:**
+
+| words per leaf | words | leaves | biggest leaf | document |
+|---|---|---|---|---|
+| ⚠️ **1,291** | 83,973 | 65 | **10,664** | **`rules_primer.md`** |
+| 885 | 20,362 | 23 | 3,128 | `uk_rules.md` |
+| 828 | 30,656 | 37 | 4,458 | `shooting.md` |
+| 782 | 53,968 | 69 | 6,912 | `body_contact_and_battles.md` |
+| 750 | 49,502 | 66 | 3,970 | `goaltender.md` |
+
+**Corpus median: 483** across 36 documents over 8,000 words — not the 1,018 I claimed.
+`on_ice_communication` **9th**, `switching_positions` **8th**. Both mid-pack.
+
+⚠️ **THE ACTUAL WORST IS `rules_primer.md`, THE DOCUMENT MY OWN BRIEF HELD UP AS THE COUNTER-EXAMPLE OF
+GOOD STRUCTURE** — *"the biggest documents are among the best subdivided"*. **That sentence was produced
+by the same bug it was meant to illustrate.**
+
+- [x] `on_ice_communication.md` — **5 headings added anyway**, because each names a subject change that
+      is genuinely there and costs nothing. **The agent's judgement was sound even though my premise was
+      not**, and all five open their own SSML chunk, so they are real reset points for a listener.
+- [ ] ⚠️ **Before any further R3 work, decide whether this metric measures anything.** The agent's
+      closing point stands: *"`rules_primer.md` being worst on this metric while cited as the exemplar
+      suggests the metric may not be measuring what either of us assumed."* **A better measure is
+      probably the BIGGEST LEAF, not the mean** — 104 leaf sections corpus-wide exceed 2,000 words, the
+      largest being 10,664.
+- [ ] ⚠️ **Never quote a words-per-section figure without stating whether children are counted into
+      parents.** That single ambiguity produced a 3.9× error.
 
 ### R4 Diagram coverage — the owner's original ask, restated with the corrected census
 
@@ -5701,7 +5949,7 @@ not checked.**
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,149,751 words — 87.1 hours of
+These outrank everything below. The corpus is **37 documents and 1,150,063 words — 87.1 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
@@ -11355,3 +11603,366 @@ Sites: `faceoffs` ×5, `game_management` ×2, `winger`, `center`, `time_and_spac
 - [ ] Decide whether the facts panel's own treatment is sufficient marking. ⚠️ **`remark-corpus.mjs`
       promotes at the first ⚠️ in prose and in captions; extending it to facts values would change 11
       rendered units and needs the same "is the run trailing?" check that made the caption fix safe.**
+
+### T0-31 ⚠️⚠️ THE SOURCES TRAILER HAS NOW CORRUPTED FIVE MEASUREMENTS, INCLUDING THE FIX FOR ITSELF
+
+`T0-26` filed this after three occurrences and prescribed:
+
+```python
+if s.startswith("*") and s.count("](http") > 2: continue
+```
+
+⚠️ **That filter is wrong, and two agents found it wrong independently in the same round.**
+
+- The trailer's **opener is not a bullet** (`*Sources —`), and individual entries start `- *` or carry
+  **two or fewer** links. In `on_ice_communication.md` it missed **~1,277 words**; in
+  `switching_positions.md` it caught **1 of 7 trailer lines** and left **1,371 words** counted into Key
+  Takeaways, making a 1,418-word section read as 2,796 — **97% too high**.
+- Three rows in an R1 brief (`how_to_watch_hockey.md:699`, `winger.md:764`, `skating.md:941`) were
+  trailer entries dispatched as paragraphs. **`skating.md:941` at 11,247 characters was the largest
+  candidate in that agent's list and is a pure provenance note.**
+
+⚠️ **THE CORRECT TEST IS POSITION, NOT CONTENT** — the trailer is everything after the document's **last
+`---`**. Verified against all three rows: position catches all three; the content filter catches none.
+
+```python
+last = max((i for i, l in enumerate(lines) if l.strip() == "---"), default=len(lines))
+body = lines[:last]        # the trailer is lines[last:]
+```
+
+- [ ] ⚠️ **Replace the `T0-26` recipe everywhere it has been copied.** A content-based filter for a
+      positional thing has now failed five times, and the fifth failure was inside the fix for the first
+      four.
+
+### T0-32 The paragraph census cannot see hard-wrapped paragraphs
+
+Found by an R1 agent against its own brief. **The premise *"this corpus writes one unwrapped paragraph
+per line"* is false for part of it** — `rules_primer.md`'s Key Takeaways mixes both conventions, items
+4–6 hard-wrapped at ~100 characters while 7–11 are single long lines.
+
+**So `r1_long_paragraphs.json`, being a per-line measure, is blind to every hard-wrapped paragraph.**
+Counted corpus-wide: **7 block-level units join to ≥1,600 characters while no source line reaches
+1,600**, so none appears in the 515 — including `body_contact_and_battles.md:583` at **3,839 characters
+across 42 wrapped lines.**
+
+⚠️ **The agent's first attempt at this measurement returned 199 and it was an artefact** — the grouper
+treated a tight list of short bullets as one paragraph. **The real figure is 7. Do not quote 199.**
+
+- [ ] Group by blank-line-delimited block, not by line, in any future paragraph census.
+
+### T0-33 The arrow in six headings voices as a comma
+
+**Incidental finding from the `switching_positions.md` heading pass.** `## Anyone → goaltender` renders
+in speech as *"Anyone, goaltender."*; `## Wing → centre` as *"Wing, centre."*
+
+⚠️ **Direction survives only as word order.** A listener is not told which way the switch goes, in a
+document whose entire structure is switches in named directions.
+
+⚠️ **FIVE were pre-existing and THIS ROUND ADDED A SIXTH.** `### Goaltender → skater` in
+`switching_positions.md` is new, and `commit-gate` caught the record filing the whole set as
+pre-existing. **Direction is load-bearing at exactly that heading** — the section is about going back
+the other way and it follows `Anyone → goaltender`. **A round that files a defect should not be
+quietly adding an instance of it.**
+
+- [ ] Decide deliberately: teach `md_to_speech.py` to voice `→` as *"to"*, or rename the headings.
+      ⚠️ **A renderer change is the cheaper fix and reaches every future heading**, but it changes six
+      documents' audio at once and should be measured before and after.
+
+### T0-34 ⚠️⚠️ I INVERTED THE GEOMETRY IN A BRIEF, AND THE INVERSION FLIPPED THE SAFETY DIRECTION
+
+**I told two agents that *"below the hash marks is the low half of the zone — the larger, shallower
+region CONTAINING below-the-circles."* That is backwards, and an agent caught it and re-derived it from
+the coordinates.**
+
+**Verified independently against `site/src/data/rink.json`:**
+
+| landmark | x | distance from goal line |
+|---|---|---|
+| goal line | 89 | 0 |
+| end-zone dot / hash marks | 69 | **20 ft** |
+| top of the circle | 54 | **35 ft** |
+
+⚠️ **So *below the hash marks* (within 20 ft) is a SUBSET of *below the circles* (within 35 ft) — the
+DEEPER, SMALLER region, 15 ft closer to the net.**
+
+**What that changes.** `offensive_zone_play.md:226` says a defenceman is *"effectively a fourth
+forward"* **below the hash marks**, while seven other sites say **below the circles**. So the owner's
+trigger fires **15 ft DEEPER** than everywhere else — **it is the MORE PERMISSIVE site, not the more
+conservative one**, and it leaves a 15-ft band in which a defenceman is below the circles, which every
+other site calls a fourth forward, with the owner not saying so. **The corpus's own stated cost of that
+is "an odd-man rush against."**
+
+⚠️ **I had told the agents the opposite.** Had one acted on my framing it would have made the corpus
+**more** permissive on an odd-man-rush hazard, in a document six others defer to.
+
+**The agent's other corrections to my framing, all verified:**
+
+- **`:218` is NOT the divergent site.** It faithfully extracts `:226`, **which itself contains both
+  halves** — heading *"Below the circles — too deep"*, body *"if you go below the hash marks…"*. **The
+  facts line is doing its job; the defect is inside `:226`.** I had blamed the extraction.
+- **Seven sites agree on the circles**, including the region owner and — decisively — **the already-built
+  `defender-three-depths` diagram**, whose caption reads *"Below the circles… down there you are a fourth
+  forward."* ⚠️ **The corpus's picture of this already exists and it is at the circles.**
+- **Likely intent:** `:226`'s parenthetical *"(the short lines at the sides of the faceoff circles)"*
+  explains the hash marks **in terms of the circles**, reading as a gloss on the heading rather than a
+  second, deeper landmark.
+
+- [ ] ⚠️ **Fix `:226`, not `:218`.** Strike the hash-marks clause so the body matches its own heading,
+      then re-extract the fact. **This is a permissiveness change on a hazard: `content-reviewer` AND
+      `safety-reviewer`, not a coordinator edit.**
+- [ ] ⚠️ **BONUS DEFECT, different document:** `defensive_zone_coverage.md:297` says the two landmarks
+      *"vary by a few feet"*. **They are 15 ft apart** — an order of magnitude understated, in the
+      sentence telling a reader to learn their team's version.
+- [ ] ⚠️ **And the standing caveat the agent named:** every site agrees with every other, **which is
+      exactly the condition under which a consistently-wrong landmark is invisible** — the blind spot
+      `check_zones.py` documents for polygons. **Nothing in the corpus sources this landmark to a
+      coaching authority at all.**
+
+### T0-35 ⚠️⚠️ THREE DIFFERENT DEPTHS FOR ONE CONCEPT — 35 ft, 20 ft AND 5 ft — AND THE THIRD IS THE PICTURE
+
+**`rules-verifier` corrected my framing of this a second time, and then found something neither I nor
+any previous agent had seen.**
+
+**⚠️ My "one document against seven" was wrong. It is TWO COHERENT FORMULATIONS, 3 sites against 4:**
+
+| formulation | sites |
+|---|---|
+| **two-stage** — circles = commitment, hash marks = fourth forward | `offensive_zone_play.md:220` (facts), `:228` (body), **`how_to_watch_hockey.md:397`** |
+| **one-stage** — circles = fourth forward | `rink_map_and_glossary.md:391`, `defender.md:466`, `defender.md:741`, the built `defender-three-depths` caption |
+
+⚠️ **So `offensive_zone_play.md` is NOT misstating a landmark — it is grading two depths, and
+`how_to_watch_hockey.md` grades them the same way.** The real defect is the **band between 35 ft and
+20 ft from the goal line**, where four sites tell a defenceman *"you are a fourth forward, you cannot
+recover"* and three tell them *"committed, but not yet."* **Both cannot be the teaching**, and the
+corpus costs that band at *"an odd-man rush against"*.
+
+### ⚠️ AND THE DIAGRAM DRAWS A THIRD DEPTH, 30 FT FROM ITS OWN CAPTION
+
+`site/src/diagrams/positions.mjs:827` draws the third band from `corner +2` to `goal-line`.
+**Verified against `rink.json`: corner x=82, goal line x=89 — so the band spans x 84→89, i.e. from
+5 ft off the goal line.** The module's own comment says so: *"the circles' **near** edge to the goal
+line"* — the circle's **deepest** point (69+15=84), not its top (69−15=54).
+
+| what | where "below the circles" starts |
+|---|---|
+| `defender.md` and the caption's words | **35 ft** from the goal line |
+| `offensive_zone_play.md` | **20 ft** |
+| ⚠️ **the drawing itself** | **5 ft** |
+
+⚠️ **There is a 27 ft ungraded gap in the picture between band 2 and band 3 — precisely the region the
+documents disagree about.** And **nothing mechanical can see it**: `check_zones.py` compares diagrams to
+each other, and this band is deliberately unlabelled, so it has no name to disagree about.
+
+- [ ] ⚠️ **The owner must pick one formulation** — `defender.md:466` names `offensive_zone_play.md` as
+      *"the authority on these three depths"*, so the pick is theirs. **Then the diagram must be
+      redrawn to match**, because it currently agrees with neither.
+- [ ] ⚠️ **`content-reviewer` and `safety-reviewer`, not a coordinator edit.** It is a permissiveness
+      change on a hazard.
+
+### T0-36 No rulebook defines either landmark — but the BOOKS THEMSELVES conflate them, at 15 ft
+
+**The negative was attacked four ways and holds:** all 28 `sources/*.txt` searched as flattened,
+de-hyphenated copies on six phrase families, casebooks and situation handbooks included.
+**`below the circles` returns ZERO hits in every book on disk.** `below the hash marks` returns **four**,
+none a definition — one is a **cone placement in a USA Hockey drill**.
+
+⚠️ **But the books use these landmarks operatively for a DIFFERENT rule — attacker-too-deep faceoff
+relocation — and disagree with each other by 15 ft:**
+
+| book | rule | the line |
+|---|---|---|
+| NHL 76.2, IIHF 76.2 | *"beyond the outer edge of the end zone face-off circle"* | circle's edge |
+| Hockey Canada 6.3(c)(iii), CARHA (j) | *"beyond the top of the end-zone circles"* | **35 ft** |
+| ⚠️ **IIHF Situation Handbook 76.34** | *"entered the scrum **below the hash marks**"* — **interpreting the rule whose own text says "outer edge of the circle"** | **20 ft** |
+
+⚠️ **The exact conflation this corpus is worried about exists INSIDE the official books, in an
+interpretation of the rule it interprets.** That is the strongest available evidence the two landmarks
+are not interchangeable — **and that even officials treat them as if they were.**
+
+- [ ] Record this in `rink_map_and_glossary.md`. **It is a better answer than picking a landmark: it
+      tells a reader why their coach and their referee may mean different things.**
+- [ ] ⚠️ **Do not cite NHL 1.10(i)'s "top of the circles" as positional — it is about ICE CLEANING.**
+
+### T0-37 `faceoffs.md:266-267` cite the wrong rule, and `:265` beside them is right
+
+**Confirmed from primary text: the foot-position wording is NHL 76.7(iv), and the word "restraining"
+does not occur anywhere in 76.4.**
+
+⚠️ **The misreading is the book's fault and the agent showed exactly where it comes from:** 76.7(iv)
+opens *"…properly position himself behind the restraining lines **or place his stick on the ice (as
+outlined in Rule 76.4)**"* — and **only the stick clause has a counterpart in 76.4.** The foot clause
+has none.
+
+⚠️ **`:265` in the same block IS correctly 76.4, so a sweep would break it.** And these are ` ```facts `
+lines voiced alone: **the listener hears "Rule 76.4" with nothing around it to repair it.**
+
+- [ ] Fix `:266` and `:267` to **76.7(iv)**. The same document already does this correctly three lines
+      later at `:270`, `:271`, and its body at `:277` names both.
+- [ ] ⚠️ **`safety-reviewer`:** improper centre positioning is a face-off violation; a second on the same
+      draw is a **bench minor**, and under IIHF 2026/27 and the IHUK rules the centre is replaced on the
+      first. **A reader who cannot find the rule cannot argue the call.**
+
+### T1 `defensive_zone_coverage.md:297` — half right, and the wrong half is 15 ft
+
+*"the line varies by a few feet"*. **Correct for dots↔hash marks** (NHL 1.9 puts the pair 5'7" apart
+straddling the dot line). ⚠️ **Wrong by an order of magnitude for dots↔top of circles: 15 ft.**
+
+**Not a deletion candidate** — the advice *"learn your team's version"* is sound, and the facts line at
+`:286` carries no distance claim and is fine. **Only the seven words are false**, and the document's own
+risk line argues the size of the gap is the point.
+
+### T1 `rink_map_and_glossary.md:222` — an IIHF figure that could not be confirmed
+
+The blockquote gives IIHF end-zone spots as *"6.0 m from the goal line and 7.0 m either side of
+centre"*. ⚠️ **IIHF Rule 1.9's prose gives no end-zone spot location at all** — unlike NHL 1.9 and
+HC 1.8(b) it stops at the circle radius and says *"refer to Appendix VI – Infographics"*.
+
+**Not contradicted, not confirmed.** Appendix VI extracts as scattered infographic digits.
+
+- [ ] ⚠️ **The check that would close it is rendering Appendix VI with `pdftoppm` and reading it by
+      eye** — and it is a standing example of the limit: **a landmark defined only in a DIAGRAM is
+      invisible to every text search this repository runs.**
+
+### T0-D4 ⚠️⚠️ AT 375 px, FULL-SHEET DIAGRAMS HIDE THE PLAYERS THEIR CAPTIONS ARE ABOUT
+
+**Measured by `site-reviewer` on the built site, both themes.** This bears directly on the owner's
+diagram priority: adding diagrams does not help if the reader cannot see them.
+
+| | |
+|---|---|
+| `scrollWidth / clientWidth` at 375 px | **640 / 346 = 54.1% visible** |
+| `centre-nz-deciding-from-the-middle` | RW **16 px past the right edge**, LW 4 px past — **both off-screen** |
+| `centre-nz-get-it-to-the-outside` | RW **29 px past**, LW 4 px past — **both off-screen** |
+
+⚠️ **Unscrolled, a phone reader sees the centre, two defencemen and their own goaltender, with three
+arrows running off the edge. The caption's central claim is *"from the middle lane a winger is a pass
+away on each side"* — and neither winger is on the page.** Scrolled right, the wingers appear and **the
+carrier, the puck and both defencemen are gone.**
+
+⚠️ **There is no scroll position at which the carrier and both wingers are visible together.**
+
+**Cause:** `site/src/styles/global.css:2068` — `figure.diagram--full .diagram-scroll svg { min-width:
+640px }`. **Pre-existing, and documented at `:2136`** (*"THE BOX SCROLLED SILENTLY… 54% of the picture
+was on screen"*). **What is new is that two diagrams whose teaching point lives in the off-screen 46%
+are about to ship into it.**
+
+- [ ] ⚠️ **Decide: a lower `min-width` for full-sheet figures, or a cropped phone variant.** This is a
+      design decision for the owner, not a coordinator edit — and it affects every full-sheet diagram,
+      not just these two.
+- [ ] ⚠️ **The scrollbar cue at `:2159` could NOT be verified.** The reviewer measured
+      `offsetHeight − clientHeight = 0`, hypothesised that `scrollbar-color` suppresses the
+      `::-webkit-scrollbar` block, **tested it and refuted its own hypothesis.** Headless Chrome on
+      macOS uses overlay scrollbars unconditionally, so **this environment cannot distinguish "the cue
+      fails" from "headless suppresses it."** Needs a headed browser or Chrome on Linux/Windows.
+
+### T0-D5 The rim/reverse pair teaches by the smallest visible difference, and never appears on one screen
+
+**The pair is internally sound** — the rim route clears the checker's disc by **2.59 ft**, and in the
+reverse frame the checker sits **1.30 ft** from where the rim route would have run, so the pair is
+consistent about why the wrong read is a turnover. **That survived rendering.**
+
+⚠️ **But the checker moves 4.24 ft between the two frames and the disc drawn for him is 5.8 ft across —
+superimpose the frames and the two discs OVERLAP.** Everything else the reader notices is large: the
+route reverses, and F2 relocates 41 ft. **So the two pictures are obviously different plays, and the
+thing the section teaches — that the checker's position is the read — is the SMALLEST visible
+difference, carried by the labels rather than the geometry.**
+
+⚠️ **And they are never on screen together.** Each figure is **970 px tall on a 900 px viewport**.
+**The reader gets a flip-book, not a comparison.**
+
+- [ ] Consider one frame with both checker positions shown, or a side-by-side at desktop width.
+      ⚠️ **Neither is a small change**, and the pair is correct as drawn — this is about whether the
+      comparison the section asks for is possible on a page.
+- [ ] ⚠️ **A judgement offered, not asserted:** in the reverse frame the checker is still **5 ft closer
+      to the middle than the carrier**, i.e. still holding inside position — *"a reader who reads
+      position rather than labels sees a checker who still has him sealed."*
+
+### T0-38 ⚠️ Two facts blocks are at capacity, and one absorbed a safety point by merging two facts into one
+
+**`facts-reviewer`, measured:**
+
+| block | coaching facts | cap | total | room |
+|---|---|---|---|---|
+| `offensive_zone_play.md:296` §4 | **8** | 8 | 8 | ⚠️ **none** |
+| `faceoffs.md:264` | 1 | 8 | **10 of 11** | ⚠️ **1 slot** |
+
+⚠️ **This is load-bearing, not bookkeeping.** The correct treatment of §4's wall-contact fact is a
+`Never:` (back / duck) **and** a `Technique:` (skates parallel, forearm and hip, not the shoulder tip) —
+which is exactly how `body_contact_and_battles.md:754` does it. **A ninth coaching fact fails the
+checker, so both had to be merged into one line — and that merge is what produced the *"or duck"*
+ambiguity the reviewer graded Critical.**
+
+- [x] ⚠️ **RESOLVED AGAINST `facts-reviewer`, by `commit-gate`, with evidence.** A merged prohibition +
+      technique is **house style, not a defect**: the corpus does it in at least a dozen `Never:` lines,
+      including `on_ice_communication.md:81`, `passing_and_receiving.md:479`,
+      `scanning_and_anticipation.md:136`, `puck_support_and_spacing.md:307` and `breakouts.md:518`.
+      *"`facts-reviewer` is right that two lines are cleaner; it is wrong that one is a defect."*
+      ⚠️ **The block capacity is still worth recording — but it is not what caused the ambiguity.
+      Careless wording caused that.**
+- [ ] **`faceoffs.md:264` has exactly one slot**, and two findings want it (below). **Whichever is
+      added, the other must be folded into an existing line rather than appended.**
+
+### T0-39 Two rule-set flags missing from the faceoff positioning block
+
+Found by `facts-reviewer` by listing the body's hedges one at a time — **not by any checker.**
+`check_facts --hedges` returns 14 advisory sections in these three files and **none of them is this
+block.**
+
+- **`:268` states the toe standard for three books and Britain — and omits USA Hockey**, the book most
+  North American readers are under. ⚠️ **The body already says it** at `:281`: *"USA Hockey Rule 613(a)
+  **does not quantify it**, and writes it for end-zone draws only."* Confirmed against `usah.txt`: 613(a)
+  asks only that both blades be *"in contact with the nearest white area of the face-off spot and clear
+  of the center red area."*
+- **`:272` gives one encroachment test where the body gives two.** ⚠️ **Hockey Canada tests where your
+  SKATE is, not where your body is** — its glossary defines encroachment as *"a skate inside the
+  face-off circle, on the face-off circle, or in the area between the hash marks."* The block flags
+  Britain and (with the above) USA Hockey, and leaves that one silent.
+
+- [ ] ⚠️ **Not both** — the block has one slot. Add the USA Hockey limb; **fold the Hockey Canada skate
+      test into `:272` itself** rather than appending.
+
+### T0-40 "The middle third is where open-ice contact happens" is unsourced in four places
+
+`facts-reviewer` found it at `center.md:196`, `:266`, `:281` and `:663` — **and could source it in none
+of them.** ⚠️ **`commit-gate` then found a FIFTH site, `center.md:734` in Key Takeaways:** *"take that
+middle with your head up — it is the lane where open-ice contact happens."* ⚠️ **A phrase-grep finds
+two; a CLAIM-READ finds four**, because `:281` and `:734` state it in the same words without the exact
+string. **The row would have under-covered when someone worked it — and it survived for exactly the
+reason `T0-41` names: it did not look like a defect, it looked like the document being consistent.** ⚠️ **Its nearest sourced neighbour carries a hedge it has never carried:**
+`neutral_zone_systems.md:60` — *"Coaching material puts the making of odd-man rushes in the middle
+third — **consensus rather than a tracked figure**."*
+
+⚠️ **And `body_contact_and_battles.md:1605` states in terms that *"neither this guide nor Introduction
+To Body Contact was found to rank moments in a game by danger."*** So the corpus disclaims exactly the
+kind of claim this sentence makes, in a document the sentence's own document defers to.
+
+⚠️ **CORRECTED: it is THREE sites, not four.** ⚠️ **The fourth was added BY THIS ROUND, in the same diff
+that files the claim as unsourced** — `commit-gate` counted it: HEAD carries the phrase twice in
+`center.md`, the index carried it three times. **Non-negotiable 3 protects an EXISTING unsourced claim
+from deletion; it does not license writing a new one.** The clause has been dropped from the added
+line — its head-up half is sourced and is the part that matters — so the corpus is back to the three
+pre-existing sites, which stay.
+
+- [ ] `source-verifier` or `safety-reviewer`. ⚠️ **Do not delete it** — non-negotiable 3. **Source it or
+      hedge it to match `neutral_zone_systems.md:60`.**
+
+### T0-41 ⚠️ This round filed two defects and then added an instance of EACH — and noticed only one
+
+**`commit-gate`'s observation, and it is the sharpest thing said about this round.**
+
+The record has a section headed *"A defect this round FILED and then ADDED an instance of"* — written for
+the `→` heading, where `T0-33` describes the pattern and the round added a sixth instance.
+
+⚠️ **It happened TWICE.** `T0-40` files *"the middle third is where open-ice contact happens"* as
+unsourced, and the same diff added a fourth instance of it, unhedged, in a facts block voiced alone.
+**The record noted the first and not the second.**
+
+**Both are now fixed.** But the class is what matters:
+
+- [ ] ⚠️ **Before filing a defect, grep the staged diff for it.** A round that identifies a pattern is
+      the round most likely to reproduce it — the agent adding the `→` heading matched the five existing
+      ones *deliberately, as consistency*, and the agent writing the safety line reached for the
+      corpus's own familiar phrasing. **In both cases the defect was invisible because it looked like
+      the house style.**
+- [ ] ⚠️ **A record section titled "a defect we added" is not a general absolution.** It covered one
+      instance and read as though it covered the class.

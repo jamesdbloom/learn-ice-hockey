@@ -162,6 +162,8 @@ A **12-inch red line** across the middle of the ice, marked with a distinctive p
 - To nullify a potential icing, a teammate must "**gain the line**" — the puck must contact the centre red line **on a stick**, not a skate.
 - The centre red line is the conventional reference for gap control: close to about **a stick-and-a-half** by the red line. **That is a guide, not a law** — it moves with your own backward speed and the attacker's skill — **and it is coaching convention rather than a measured figure:** coaching pages do print a stick and a half, but attached to the neutral zone rather than to the red line, so no published source was found for it as a line-anchored figure. See [Defending the Rush](../systems/defending_the_rush.md) for the full set of distances and what is and is not sourced in them.
 
+![](diagram:icing-gaining-the-line)
+
 The centre red line is **no longer a passing restriction** in the NHL. The two-line pass rule was abolished by a playing-rule change for the 2005-06 season, adopted alongside the new Collective Bargaining Agreement rather than by it (a CBA is a labour agreement and does not set playing rules), so the centre line is no longer used to determine an offside pass — which is why the **stretch pass** exists as a weapon at all.
 
 ### The goal crease ("the blue paint")
@@ -225,9 +227,11 @@ The **hash marks** are the short lines outside each end-zone faceoff circle. In 
 
 They exist to keep players apart on a draw. **Encroachment into the area between the hash marks before the puck is dropped is a faceoff violation** — Rule 76.7(ii) lists it verbatim: *"Encroachment by any player into the area between the hash marks on the outer edges of the face-off circle prior to the puck being dropped."* And — this is the part that catches people out — a winger who creeps over the hash marks gets **the centre** thrown out of the dot, not themselves.
 
+![](diagram:faceoff-dzone-alignment)
+
 They are also the depth reference coaches lean on most in the defensive zone — coaching observation rather than a counted one: "**below the hash marks**" means the low half of the zone; "**above the hash marks**" means the high half.
 
-There is a second, smaller set of markings you may not have noticed: an L-shaped pair of lines 1 ft outside each faceoff spot, 4 ft long and 18 in apart, with a 2 ft 10 in foot at the end. Those are the **restraining lines** for the two centres' skates on a draw, and standing wrong on them is itself a faceoff violation.
+There is a second, smaller set of markings you may not have noticed: an L-shaped pair of lines 1 ft outside each faceoff spot, 4 ft long and 18 in apart, with a 2 ft 10 in foot at the end (Rule 1.9). Those are where the two centres' skates go on a draw, and standing wrong on them is itself a faceoff violation: Rule 76.7(iv) requires a centre to place *"his feet on either side of the restraining lines that are parallel to the side boards"*, with the toe of the blade **of his skates** not crossing *"the restraining lines that are perpendicular to the side boards"*. ⚠️ **But "restraining lines" is not a name for these marks alone, so ask which lines are meant when you hear it.** The NHL book uses the same phrase for the hash marks: Rule 76.6 requires every other skater at an end-zone draw to stand on *"their own side of the restraining lines marked on the outer edge of the face-off circles"*, and the book's own index reads *"Hash marks (restraining lines)"*. The full faceoff procedure is in [Faceoffs](../systems/faceoffs.md).
 
 > **IIHF (Rule 1.9):** hash marks are 5 cm wide, 60 cm long and 1.70 m apart, at the outer edge of both sides of each circle and parallel to the goal line. The centres' restraining lines start 30 cm out from the spot and are 1.20 m long, 45 cm apart, with a 90 cm foot.
 
@@ -516,6 +520,8 @@ Note that **"defender", "defenceman", "defenseman" and "D" all mean the same pos
 - **F3** = the third forward. Stays higher as the safety valve and covers the counter.
 
 If the centre is usually F1 on a forecheck but a winger gets there first, **the winger is F1 and the centre takes the support role.** Nobody swaps positions; they swap jobs. Teams that treat F1 as "the centre's job" end up with two players chasing and nobody high.
+
+![](diagram:forecheck-roles-rotate)
 
 **The "third forward high"** names that same F3 job from the other direction: the shorthand for keeping F3 — the third forward to arrive — above the puck. Which body it is changes shift to shift, and how high F3 sits is a coaching choice — see [Forechecking Systems](../systems/forechecking_systems.md), which sets out where the third forward stands under each forecheck.
 

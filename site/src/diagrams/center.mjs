@@ -28,11 +28,27 @@
  *   - Defensive Zone: Carrying the Puck — Free Space is already drawn. It is a stated
  *     co-owner of `centre-swing-low` (positions.mjs), whose second route is that
  *     section's "carry up the middle if the lane is clearly open" verbatim.
+ *     ⚠️ NO MARKER IS PLACED IN THAT SECTION AND THAT IS DELIBERATE. `centre-swing-low`'s
+ *     marker sits eighty lines further down, under "Without the Puck — Getting Open for
+ *     the Breakout", which is the section it was written for. Placing a SECOND marker for
+ *     the same id in the same document would voice the same caption twice in one listen —
+ *     md_to_speech emits "Diagram. " plus the whole caption at every marker — for a
+ *     picture the listener has already been given. The co-ownership is real; a second
+ *     copy of the audio is not what it buys.
  *   - Defensive Zone: Pressuring an Opponent with the Puck is `centre-low-zone-collapse`.
  *   - Rim and reverse are `winger-dz-rim` and `winger-dz-reverse` (winger.md), drawn as a
  *     pair from the wall. Diagram 1 below therefore names both plays and draws NEITHER —
  *     what it draws is the move the centre's own section puts first and no picture in the
  *     corpus makes, which is getting OUT of the middle before playing the puck at all.
+ *   - Neutral Zone: Carrying the Puck — Free Space IS drawn, as spec 5 below. It was the
+ *     one high-density section in this document with neither a diagram of its own nor a
+ *     stated borrow, and the claim it turns on — "the centre of the ice is the best place
+ *     to make decisions from — you can see both wingers and both defencemen" — is a
+ *     spatial claim about the carrier's own position that no other diagram in the corpus
+ *     makes. `neutral-zone-lanes` (puck_support_and_spacing.md) draws the three lanes with
+ *     the carrier WIDE; `entry-three-lanes` (zone_entries.md) and
+ *     `centre-nz-arrive-behind-the-puck` (spec 3 here) both draw the middle lane WITHOUT
+ *     the puck. None of the three puts the puck in the middle lane.
  *   - Neutral Zone: Pressuring an Opponent with the Puck is `nz-1-2-2-containment`
  *     (neutral_zone_systems.md), which draws the same containment job — the lone forward
  *     taking the middle away and showing the carrier one side — under its owner.
@@ -45,10 +61,19 @@
  *   - Offensive Zone: Carrying the Puck — Under Pressure is `oz-behind-the-net`
  *     (offensive_zone_play.md), whose own caption records that the wrap-around is
  *     deliberately not drawn there. That is its owner's call and not this file's to
- *     reverse.
+ *     reverse. The section's own "use the back of the net as a pivot point — come out the
+ *     other side" is the WALKOUT, which that caption says in words and does not draw,
+ *     also for its owner's stated reason: the walkout takes the same ice as the pass out
+ *     to the slot, so drawn together the two arrows could not be told apart. center.md
+ *     now carries the marker, so the borrow is placed rather than merely available.
  *   - Power Play and Penalty Kill are `pp-131`, `pp-umbrella`, `pp-overload`, `pk-box`,
  *     `pk-diamond` and `pk-wedge-plus-1` (special_teams.md). `pp-131`'s caption already
- *     says the bumper is most often the centre and that this is team-dependent.
+ *     says the bumper is most often the centre and that this is team-dependent, and its
+ *     `describe` places the bumper "in the middle of the slot between them" — which is
+ *     the one thing the Power Play section is FOR ("What matters here is where they put
+ *     you"). center.md now carries that marker too. `pk-box` and `pk-diamond` are NOT
+ *     borrowed into it: the centre's power-play section names the box only to say what it
+ *     leaves uncovered, and the two kill shapes belong to the section about killing.
  *   - Icing is `icing-gaining-the-line` and `icing-the-race-and-the-dot` (rules_primer.md).
  *   - Faceoff alignment is `faceoff-dzone-alignment` and its four siblings (faceoffs.md),
  *     which center.md names as the authority for the five-player alignments.
@@ -59,15 +84,22 @@
  * is emphatic that they are roles set by order of arrival rather than people. Every glyph
  * is labelled with the positional vocabulary center.md itself uses — C, RW, LW, D, G.
  *
- * ORIENTATION. The four half-sheet specs put your own or the attacked net at the RIGHT,
- * which is the frame every center.md diagram in positions.mjs already uses. The one
- * full-sheet spec follows neutral_zone_systems.mjs instead: your own net at the far left,
+ * ORIENTATION. The three half-sheet specs put your own or the attacked net at the RIGHT,
+ * which is the frame every center.md diagram in positions.mjs already uses. The two
+ * full-sheet specs follow neutral_zone_systems.mjs instead: your own net at the far left,
  * the end you attack at +x. Both conventions are stated in each caption in words, because
  * a listener hearing the caption aloud has no picture to take the orientation from.
+ * (This paragraph read "four half-sheet specs" and "the one full-sheet spec" until spec 5
+ * was added, which made it wrong on both counts. A count written into a header is a count
+ * that goes stale the next time the file is extended.)
  *
  * +y is called "right" by the coordinate table, which is a name for the top of the
  * drawing and not a skater's right hand. Nothing below claims anyone's handedness. The
- * puck is put on the +y side throughout so that "strong side" means one thing.
+ * puck is put on the +y side in specs 1 to 4 so that "strong side" means one thing.
+ * ⚠️ SPEC 5 IS THE EXCEPTION AND IT IS NOT AN OVERSIGHT: its puck is on the centre line at
+ * y 0, because the whole claim that section makes is that from the middle there is no
+ * strong side yet — a winger is a pass away on each hand. Putting that puck to one side
+ * would draw the sentence it exists to refute.
  */
 
 // ---------------------------------------------------------------------------
@@ -334,7 +366,9 @@ const neutralZoneOutside = {
   // of ink and the disc's own 1.1 — and 3.38 ft from the leader, which is 2.28 ft of white
   // once the disc and the leader's 0.18 stroke are counted. It is also the side away from
   // the pressure, which is where the section wants it.
-  puck: { at: 'centre-ice', dx: -7.5, dy: -3 },                                  // (-7.5, -3)
+  // ⚠️ Same defect: the puck sat 6.10 ft behind and across the carrier. Both outlets run +x,
+  // so the puck now leads along the travel axis at the house distance.
+  puck: { at: 'centre-ice', dx: -0.7, dy: 2.6 },                                 // 3.4 ft ahead
 };
 
 // ---------------------------------------------------------------------------
@@ -520,7 +554,138 @@ const slotOptions = {
 };
 
 // ---------------------------------------------------------------------------
-// 5 · A loose puck in your own crease — it is the puck's position that decides
+// 5 · Deciding from the middle of the neutral zone
+//     owner: content/positions/center.md
+//            — "Neutral Zone: Carrying the Puck — Free Space"
+//
+// FULL SHEET AND THE SAME ORIENTATION AS SPEC 2, deliberately: these two are the
+// free-space and under-pressure halves of one pair, which is how center.md is built, and
+// a pair whose two frames are drawn at different scales or facing different ways cannot
+// be compared. Own net at the far left, the end you attack at +x.
+//
+// ⚠️ THE RISK THIS SPEC RUNS IS DUPLICATION OF ITS OWN SIBLING, and it is worth naming
+// rather than hoping. Spec 2 also puts a centre in the middle of the neutral zone with a
+// winger wide on each side. What separates them is the whole content of both sections:
+// there the middle is closed and BOTH drawn routes leave it, here the middle is open and
+// the first route drawn goes STRAIGHT UP IT. If a later edit ever removes the carry from
+// this spec, the two become one picture and this one should go rather than be repaired.
+//
+// NO OPPOSITION SKATER IS DRAWN. That is the section's own frame — it is the free-space
+// case — and `centre-swing-low` and spec 4 set the same precedent. The consequence is
+// stated in the caption, because a picture with nobody in it is otherwise read as a claim
+// about how much time you have.
+//
+// THE TWO DEFENCEMEN ARE DRAWN AND NO ROUTE GOES TO THEM. The section's claim is about
+// what the carrier can SEE — "you can see both wingers and both defencemen" — so they
+// have to be in the picture; but it gives no instruction to pass back to either, and a
+// fourth arrow would author a play the section does not.
+//
+// THE CARRY STOPS 11 FT SHORT OF THE ATTACKING BLUE LINE (tip x 14, line x 25). Crossing
+// it is a zone entry, which is a different play owned by zone_entries.md and carries an
+// offside question this section never raises — the same trap spec 2 records having fallen
+// into with its chip.
+//
+// NO LABEL IS SET ON ANY GLYPH. `placeLabels` exiles a long label and draws a dashed
+// leader to it, and spec 2 records that leader terminating on the puck and making the
+// label read as pointing at the wrong mark. That failure is only visible in a render.
+// Every instruction this diagram carries is in the caption, which is the layer the
+// listener gets in any case.
+//
+// GEOMETRY, resolved rather than assumed. C (-14, 0); RW (16, 32) and LW (12, -32), both
+// 10.5 ft off the dasher and both well inside the neutral zone in x; the defence pair at
+// (-32, 14) and (-36, -14), inside their own blue line at x -25. Bearings off the carrier
+// are 0.0, 46.8 and -50.9 degrees, so no two routes read as one line. The closest any
+// route passes to any player other than its own target is 22.80 ft. Both passes finish
+// exactly 6.00 ft short of their receiver, the separation the position modules use so a
+// pass reads as arriving at a player rather than through him.
+//
+// ⚠️ C WAS AT (-8, 0) AND THE CARRY WAS 20 FT LONG. Rendered at full-sheet scale that put
+// the whole picture inside the centre-ice circle and the carry read as a stub rather than
+// as a route through the middle third — the thing the section is about. Pulling the
+// carrier back to (-14, 0) makes the carry 28 ft without moving its tip past x 14, and
+// puts the two wingers plainly AHEAD of him, which is what "leading or driving the rush"
+// means. Checked in a render rather than reasoned about; the arithmetic above says
+// nothing at all about how a full sheet reads at 5.5 px per foot.
+// ---------------------------------------------------------------------------
+
+const C_NZ_FREE = { at: 'centre-ice', dx: -14, dy: 0 };         // (-14, 0)
+const RW_FREE = { at: 'centre-ice', dx: 16, dy: 32 };           // (16, 32)
+const LW_FREE = { at: 'centre-ice', dx: 12, dy: -32 };          // (12, -32)
+
+const decidingFromTheMiddle = {
+  id: 'centre-nz-deciding-from-the-middle',
+  title: 'Deciding from the middle',
+  owner: 'content/positions/center.md',
+  half: false,
+  width: 1100,
+
+  caption:
+    'The middle of the neutral zone with the centre carrying in free space, your own net ' +
+    'at the far left and the end you are attacking at the right. No opponent is drawn at ' +
+    'all, which is the case this describes rather than a claim about how much time you ' +
+    'really have. What the picture is for is the ice the carrier is standing on, not any ' +
+    'one of the three routes off him: from the middle lane a winger is a pass away on each ' +
+    'side and both of your own defencemen are behind you and in view, and that is why the ' +
+    'centre of the ice is the best place to decide from. Three things are on at once and ' +
+    'only one of them happens — carry through yourself if the space in front of you is ' +
+    'real, or give it to whichever winger is open and let him enter in stride. Do not ' +
+    'carry for its own sake: if a teammate is in a better position, move the puck. No ' +
+    'route is drawn back to either defenceman, because seeing them is what the section ' +
+    'claims and a pass back is not. The carry finishes short of the attacking blue line ' +
+    'because putting the puck across it is a different play with an offside question ' +
+    'attached, and nothing here says who ends up carrying it in. And do all of it with ' +
+    'your head up — a carrier looking down through the middle of the ice cannot brace for ' +
+    'contact he has not seen.',
+
+  describe:
+    'The full sheet, your own net at the left, attacking to the right. Your centre has the ' +
+    'puck in the middle lane of the neutral zone, a little short of centre ice. Two of ' +
+    'your own forwards are wide and ahead of him, one in each wall lane. Your two ' +
+    'defencemen are behind him, inside your own blue line, one either side of the middle. ' +
+    'Both goaltenders are in their creases. No opposition skaters are drawn — this is the ' +
+    'free-space case. Three routes, all starting on the centre and all alternatives rather ' +
+    'than a sequence: the centre carrying the puck straight up the middle, finishing well ' +
+    'short of the attacking blue line, and a pass out to each wide forward, each ending ' +
+    'short of the player it is aimed at. No route is drawn back to either defenceman.',
+
+  players: [
+    { id: 'G',  pos: 'G', at: { at: 'crease::far', dx: 1 } },                    // (-85, 0)
+    { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },           // (85, 0)
+
+    { id: 'C',  pos: 'F', at: C_NZ_FREE },                                       // (-14, 0)
+    { id: 'RW', pos: 'F', at: RW_FREE },                                         // (16, 32)
+    { id: 'LW', pos: 'F', at: LW_FREE },                                         // (12, -32)
+
+    // Triangles, because they are defencemen. Anchored off the far blue line so the
+    // comment and the coordinate cannot drift apart: `blue-line::far` resolves to x -25.
+    { id: 'D',  pos: 'D', at: { at: 'blue-line::far', dx: -7, dy: 14 } },        // (-32, 14)
+    { id: 'D',  pos: 'D', at: { at: 'blue-line::far', dx: -11, dy: -14 } },      // (-36, -14)
+  ],
+
+  routes: [
+    // The carry, straight up the middle: 28 ft, finishing at x 14, eleven feet short of
+    // the attacking blue line at x 25. Bow 0, so the terminal tangent is the chord.
+    { from: C_NZ_FREE, to: { at: 'centre-ice', dx: 14, dy: 0 }, kind: 'carry' },
+    // The two outlets, each stopped 6.00 ft short of its receiver. Tips derived from the
+    // resolved anchors: direction (0.6839, 0.7295) to RW gives (11.90, 27.62), and
+    // (0.6306, -0.7761) to LW gives (8.22, -27.34).
+    { from: C_NZ_FREE, to: { at: 'centre-ice', dx: 11.9, dy: 27.62 }, kind: 'pass' },
+    { from: C_NZ_FREE, to: { at: 'centre-ice', dx: 8.22, dy: -27.34 }, kind: 'pass' },
+  ],
+
+  // Behind him and clear of everything: 6.5 ft back along the -x axis, which is the
+  // 262-degree rear gap between the two passes and the widest clear arc in the picture.
+  // 6.5 leaves 1.53 ft of white past his 3.875 ft of ink and the disc's own 1.1.
+  // ⚠️ The puck was at dx -20.5 — 6.50 ft BEHIND the carrier, on his trailing side, when every
+  // route in this diagram runs +x. `site-reviewer` measured the house convention across eight
+  // figures on the same three pages: 2.83–4.00 ft, and LEADING. At twice that distance and on
+  // the wrong side it read as a loose puck the centre is skating after — while the caption
+  // turns on him carrying it.
+  puck: { at: 'centre-ice', dx: -10.5, dy: 0 },                                  // 3.5 ft ahead
+};
+
+// ---------------------------------------------------------------------------
+// 6 · A loose puck in your own crease — it is the puck's position that decides
 //     owner: content/positions/center.md
 //            — "Handling the puck — catching it is free, holding it is not"
 //
@@ -617,7 +782,7 @@ const creaseThePuckDecides = {
   puck: { at: 'goal-line', dx: -3, dy: -2 },
 };
 
-// ⚠️ `creaseThePuckDecides` IS NOT IN THIS LIST ON PURPOSE. See the block above spec 5:
+// ⚠️ `creaseThePuckDecides` IS NOT IN THIS LIST ON PURPOSE. See the block above spec 6:
 // `puck_handling.mjs` draws the same picture under a different owner, its version carries
 // two things this one cannot, and shipping both would put one claim under two owners.
 // Adding it here is a one-line change and requires removing the other copy first.
@@ -626,4 +791,5 @@ export default [
   neutralZoneOutside,
   arriveBehindThePuck,
   slotOptions,
+  decidingFromTheMiddle,
 ];
