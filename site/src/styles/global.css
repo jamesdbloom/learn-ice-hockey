@@ -1108,6 +1108,55 @@ a.chip:hover {
   padding: 0.1em 0.3em 0.1em 0.4em;
 }
 
+/*
+  A caption's warning run is a BLOCK, because it is always a trailing run and it
+  is routinely paragraph-length.
+
+  `.warn-inline` was written for the PROSE pass, where it wraps a mid-sentence
+  strong run and must stay inline. `remark-corpus.mjs` then reused it for diagram
+  captions, splitting the caption at its first glyph and promoting the remainder —
+  "one mechanism, not a second one", which was right about the colour and wrong
+  about the box.
+
+  Measured in the live DOM by `site-reviewer`, both themes, both viewports, over
+  49 caption warning runs on 11 pages: `display: inline` with the default
+  `box-decoration-break: slice` paints the amber ground PER LINE BOX, so the right
+  edge is ragged, there is unpainted page between lines, and the 3px left border is
+  drawn once at the first line box rather than down the run. At 375px the median
+  run is 16 line boxes and the worst is 62. 94% span more than five lines.
+
+  The worst case: `forcing-them-outside` on positions/switching_positions is 2,981
+  amber characters, 1,338px tall on an 812px viewport, inside a 2,143px figure whose
+  drawing is 296px — the picture is 14% of its own figure.
+
+  Scoped to `figcaption` deliberately. In a caption the run is always glyph-to-end,
+  so a block is correct. In prose it is not, and promoting it there would break the
+  sentence it sits inside.
+*/
+figcaption .warn-inline {
+  display: block;
+  /*
+    `margin-bottom` matches `margin-top` because the block now has a hard bottom
+    edge where the inline run used to fade out mid-line. Measured by `site-reviewer`
+    on the shipped build: the amber edge sat 5.6px above the "Diagram from …" source
+    line against 12px above the panel — asymmetric, and only on figures carrying a
+    borrowed-diagram source line, which is 3 of 4 on positions/defender.
+
+    ⚠️ The MARGINS match; the VISUAL GAPS do not, and the first version of this
+    comment claimed they did. Re-measured after the change: 11.97px above against
+    9.36px below — the asymmetry falls from 6.38px to 2.61px rather than to zero.
+    Two structural reasons, neither a defect: `figcaption` has `padding-bottom: 0`,
+    so this margin COLLAPSES against `.diagram-source`'s 5.6px `margin-top` and the
+    larger wins rather than the two summing; and the gap above additionally contains
+    the previous line box's half-leading, which no margin can match. Where a figure
+    has no source line the rule is inert — panel-bottom to figure-bottom stays 0.
+  */
+  margin-top: 0.65em;
+  margin-bottom: 0.65em;
+  padding: 0.5em 0.7em 0.5em 0.75em;
+  border-radius: 0 3px 3px 0;
+}
+
 /* --------------------------------------------------------------- tables -- */
 
 /*

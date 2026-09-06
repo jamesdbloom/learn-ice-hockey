@@ -262,6 +262,8 @@ Stay disciplined and hold your position. **This rotation belongs to a low zone c
 
 **Exception, still inside the collapse — weak-side winger is already low:** If the weak-side opposing defenseman has come down off the point and the weak-side winger is following their man, the high slot rotation isn't available. In that case, the responsibility falls to you and your partner to be more vigilant about anyone arriving in the slot — call out anything you see entering the high-danger area.
 
+![](diagram:dz-collapse-high-slot)
+
 ---
 
 ## Neutral Zone
@@ -368,6 +370,8 @@ Technique: Stick in the passing lane, on the ice, out front — it takes the pas
 - **Stick in the passing lane, on the ice, out front.** An active stick on the ice takes away the pass without committing your body.
 - **Pivot late.** Once you turn to skate forwards you've given up your ability to react. Hold your backward skating as long as you can.
 
+![](diagram:rush-gap-and-angle)
+
 #### Backward skating, and which way to pivot
 
 ```facts
@@ -406,12 +410,16 @@ A pinch is generally the safer of the two, because you have teammates behind you
 
 ⚠️ **And charging binds every division, checking league or not.** USA Hockey **607** and Hockey Canada **7.4** carry no division clause, where the body-checking rules that restrict themselves say so in terms — USA Hockey **604(a)**, Hockey Canada **7.3**. So in a league where you may not check at all, a step-up finished as a hit breaks two rules rather than one — which penalty a referee assesses is their call, and neither book says. **Whether you may check in the first place is settled in [Body Contact and Battles](../technique/body_contact_and_battles.md), and it covers most of the people reading this.** [Defending the Rush → Standing up (stepping up)](../systems/defending_the_rush.md#standing-up-stepping-up) carries this rule in full and is where a step-up is owned.
 
+![](diagram:defender-step-up)
+
+![](diagram:pinch-centre-high)
+
 ---
 
 ### Neutral Zone: Without the Puck — Holding the Line as the Safety Valve
 
 ```facts
-Position: At your own blue line, in the middle of the ice — one defender each side of the centre line, roughly between the two neutral-zone faceoff dots
+Position: At your own blue line, in the middle of the ice — one defender each side of the middle, roughly between the two neutral-zone faceoff dots
 Action: Stay in position and watch the play develop
 Action: Be a safety valve if your forwards need to pass back
 Technique: Keep your stick active to intercept any passes in your lane
@@ -419,13 +427,15 @@ Goal: Be ready to either support the attack or pivot to defence instantly
 Never: Drift too far forward into the neutral zone — if your team turns the puck over you must be in position to protect against the rush
 ```
 
-**Where to be:** At your own blue line, in the middle of the ice — one defender on each side of the center line, roughly between the two neutral-zone faceoff dots. Together you form the last line before your zone.
+**Where to be:** At your own blue line, in the middle of the ice — one defender on each side of the middle, roughly between the two neutral-zone faceoff dots. Together you form the last line before your zone.
 
 **What to do:** Stay in position. Watch the play develop. Be a safety valve if your forwards need to pass back. Keep your stick active to intercept any passes in your lane.
 
 **Goal:** Be ready to either support the attack or pivot to defence instantly.
 
 **Key considerations:** Don't drift too far forward into the neutral zone. If your team turns the puck over, you need to be in position to protect against the rush.
+
+![](diagram:defender-holding-the-line)
 
 ---
 
@@ -559,6 +569,8 @@ The center takes the faceoff. Your specific position depends on the zone of the 
 - **Offensive zone faceoff:** One defender at the strong-side point, ready to shoot on a clean win — a set play off a clean draw is one of the few chances in hockey where you get to shoot with your feet already set and traffic already in place. The other holds the weak-side point.
 - **Neutral zone faceoff:** Both defenders back at your blue line, ready to defend a rush if the opposing center wins it forward.
 
+![](diagram:faceoff-dzone-alignment)
+
 ### Power Play (your team has the man advantage)
 
 ```facts
@@ -602,6 +614,8 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 - **Wedge+1** — you are almost always in the triangle, not the "+1". The single player outside the triangle pressures whoever has the puck; when the puck moves he stops and the nearest wedge player — which can be you — steps out as the new +1 while he drops in. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route the +1 takes out — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and the point — is a coaching choice, and published descriptions differ; ask which one your team runs.**
 
 In all of them: stay tight, box out the net front, block shots, and clear the puck on every opportunity — under-pressure clears are perfectly fine and you may ice the puck freely while shorthanded — **with two carve-outs worth knowing before you rely on it**: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a *major* that has left nobody on the penalty bench to come out, and USA Hockey restricts it by classification, so below Youth 15-Only / Girls 16U / High School / Adult a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) covers this rule. Don't get pulled out of position chasing the puck around the perimeter; let it come to you. The power play *wants* you to chase, because that's what opens the seam.
+
+![](diagram:pk-box)
 
 ### Icing
 
@@ -654,6 +668,8 @@ Blocking shots is a defenceman's job, but it is a *technique*, not an act of cou
 ⚠️ **One precondition sits underneath all of it, and it is about your kit rather than your technique.** Blocking puts your shins, feet and hands in the puck's path deliberately, so the owning document attaches a check on the equipment doing the absorbing: **shin guards that actually cover the shin *and* the ankle, and gloves not worn through in the palm.** That is where the only published clinical paper on the mechanism lands too — the lower-leg and ankle fractures in the case series cited below. [Equipment](../off-the-ice/equipment.md) covers fit.
 
 **How much your team blocks at all is a coaching choice, and the owning document says so** — some systems want defenders collapsing and blocking aggressively in front of the goalie, others want the lane taken away on your feet with the goalie left seeing everything. Neither is right in the abstract. **Ask your coach which, and ask your goalie what they want**, before you decide that a teammate who stayed up was being soft. See [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Goaltender](goaltender.md).
+
+![](diagram:shot-block-get-close)
 
 ### Line Changes
 

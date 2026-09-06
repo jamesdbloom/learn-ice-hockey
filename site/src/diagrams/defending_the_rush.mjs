@@ -73,8 +73,15 @@ const gapAndAngle = {
     'roughly two to three stick lengths through the neutral zone and roughly a stick length at your own ' +
     'blue line, and notice that it is slightly tighter where the two routes end than where they start, ' +
     'because a gap that grows as they approach is a goal waiting to happen. ' +
+    // ⚠️ The PROVENANCE limit travels with the ladder, not just the applicability hedge.
+    // The style guide's owner row is explicit that "a guide, not a law" is about
+    // applicability and does NOT carry provenance. This caption is borrowed into
+    // defender.md and how_to_watch_hockey.md, BOTH of which state the provenance limit in
+    // prose -- so the picture was contradicting the paragraph that introduced it.
     'Those distances are a guide and not a law — they vary with your own backward speed and the ' +
-    'attacker’s skill. What no still picture can show is the thing that matters most: that ' +
+    'attacker’s skill, and only the neutral-zone rung is traceable to a published coaching ' +
+    'source: the red-line and blue-line rungs are coaching convention rather than measurement. ' +
+    'What no still picture can show is the thing that matters most: that ' +
     'the defender was already at full backward speed before this instant, because a gap cannot be closed ' +
     'from a standstill.',
 

@@ -641,7 +641,12 @@ const pinchCentreHigh = {
     'are his partner and his centre — against the carrier and the one forward climbing with him.',
 
   players: [
-    { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: 1 } },        // (87, 0)
+    // ⚠️ LABELLED as the OPPOSITION net. This diagram is borrowed into defender.md two
+    // lines below `defender-step-up`, a near-identical half sheet showing the reader's OWN
+    // end. The goaltender glyph carries no team by design (rink.mjs:1812; the HEO sheet
+    // prints a bare G), so without a label the two pictures are visually the same end
+    // twice -- in a subsection whose whole point is which blue line each play happens at.
+    { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: 1 }, label: 'their net' },        // (87, 0)
     // A forward: the player carrying a puck up his own wall out of his own end is
     // a skater the section does not name, and a wall carrier on a breakout is a
     // winger far more often than a defenceman. The caption does not teach off it.
@@ -716,4 +721,228 @@ const pinchCentreDeep = {
   puck: PUCK,
 };
 
-export default [theRiskMap, pinchCentreHigh, pinchCentreDeep];
+/* ------------------------------------------------------------------ *
+ * 4 - The cross-ice pass in your own end   (section "3. Never make a
+ *     cross-ice pass in your own defensive zone")
+ * ------------------------------------------------------------------ */
+
+// WHY THIS ONE EXISTS WHEN THE CORPUS ALREADY DRAWS "NOT THROUGH THE SLOT" TWICE.
+// `breakout-d-to-d` (referenced from this document at §1) and
+// `defender-d-to-d-behind-the-net` both draw a DEFENCE-TO-DEFENCE pass and both make
+// the same point about the ice in front of your own net. This is a different play,
+// and the corpus says so itself: breakouts.md's "Over / cross-ice" section opens with
+// a naming warning because "over" means two plays with opposite risk profiles —
+// Sense A, the pass across the width of the ice to the far winger, "the highest-risk
+// of the nine breakout options"; Sense B, the D-to-D behind your own net, "one of the
+// lowest-risk plays in hockey". Nothing in the corpus draws Sense A from the passing
+// team's side. That the corpus needed a naming warning at all is the argument for a
+// picture of the lane.
+//
+// ⚠️ IT MUST NOT CONTRADICT ITS OWNER, AND THE OWNER IS NOT THIS DOCUMENT. breakouts.md
+// owns the cross-ice over and treats it as a legitimate option with a read attached:
+// "Only when the forecheck has genuinely over-loaded one side and the middle is empty."
+// risk_management.md's §3 is the improvised pass under pressure and flags itself as a
+// convention ("some teams accept it above the tops of the circles, almost nobody below
+// them"). So the middle of this picture is NOT empty — a forechecker stands beside the
+// lane — and the caption says in terms that the designed play is a different case. Draw
+// the empty middle and the two documents would be teaching opposite things.
+//
+// THE SHADED REGION IS THE SLOT, NOT THE HOUSE, and that is a deliberate departure from
+// the two D-to-D diagrams above, which both shade the house. Three reasons: this
+// document's own `the-risk-map` shades exactly this polygon and grades it Catastrophic,
+// so the two pictures in one document agree; the section's own convention line is keyed
+// to it — "above the tops of the circles, where an interception is not a slot chance";
+// and the polygon is the glossary's, mirrored, so nothing is invented here. Points are
+// the same four `the-risk-map` uses, with the dx signs flipped for the near end.
+//
+// ⚠️ UNLABELLED, AND FOR THE ARITHMETIC RATHER THAN BY OVERSIGHT. A zone label is drawn
+// at the polygon's VERTEX MEAN with no collision avoidance — here (68.5, 0) — and on a
+// half sheet the renderer's own estimate is 3.2 * 0.56 = 1.79 ft per character, so "your
+// slot" reserves 16.1 ft, x 60.4 to 76.6, on the line y = 0. The pass crosses y = 0 at
+// x = 77.0 and clips the box between x 76.5 and 77.5. Routes are drawn AFTER zones
+// (rink.mjs appends zones, then routes, then players), so the dashes would print over
+// the last letter of a label that exists to be read. ⚠️ The consequence, the same one
+// `the-risk-map`'s own-zone polygon carries: an unlabelled zone is INVISIBLE to
+// scripts/check_zones.py, which pairs a polygon with the <text> that follows it. The
+// mitigation is that the four points are copied from one place and written out below.
+//
+// ASSUMES rink.json as on disk in this working tree: top-of-circle (54, +/-22),
+// goal-line (89, 0), crease front 6 ft out at x 83, corner (82, +/-34), half-wall
+// (69, +/-38.5), faceoff-dot (69, +/-22), high-slot (69, 0), crease (86, 0), 28 ft
+// corner radius centred (72, 14.5) - and rink.mjs's glyph ink: forward circle 2.9 + 0.375
+// halo = 3.275, defenceman triangle 3.6 + 0.4 = 4.0, puck 1.1.
+
+// The defenceman with the puck, sealed in the strong-side corner. A TRIANGLE because the
+// section names the position itself in its own remedy — "go D-to-D behind the goal line
+// and then north" — and because breakouts.md's setup for this exact play is "D1 has the
+// puck, usually a little higher than the goal line". 6.78 ft off the board arc.
+const XI_D1 = { at: 'corner:right', dx: 2, dy: -2 };            // (84, 32)
+
+// The far-side outlet. A CIRCLE, because breakouts.md has this player as "the far-side
+// winger or the weak-side defenceman" and the winger is the commoner of the two; nothing
+// in the section turns on which, and the caption says so rather than leaving a glyph to
+// make the claim silently. dy +1.5 on a ':left' anchor pushes INWARD, so his 3.275 ft of
+// ink stops at 40.28 against an inner boards edge of 42.25 at x 69 (straight boards - the
+// corner arc does not start until |x| > 72).
+const XI_W2 = { at: 'half-wall:left', dy: 1.5 };                // (69, -37)
+
+// Where the pass finishes: 6.02 ft short of the receiver's anchor, the separation the
+// position modules use so a pass reads as arriving at a player rather than through him.
+// Direction (84, 32) -> (69, -37) is (-0.2131, -0.9770); 6 ft back along it from the
+// anchor is (70.28, -31.14), which off `half-wall:left` is dx 1.2, dy 7.4.
+const XI_TO = { at: 'half-wall:left', dx: 1.2, dy: 7.4 };       // (70.2, -31.1)
+
+// Their forechecker on the strong side, inside the carrier and below him - the seal that
+// is the reason a cross-ice pass gets considered at all. 11.70 ft off D1, against 4.0 of
+// triangle ink plus 3.275 of circle, and 10.73 ft off the board arc. `seals the wall` is
+// breakouts.mjs's own label for the same job, deliberately: one label, one meaning,
+// across two documents.
+//
+// ⚠️ (87, 22) FIRST, AND THE PASS LEFT THROUGH HIM. The pass line passed 5.07 ft from
+// that anchor only 9 ft along its own run - 1.80 ft past his glyph ink - so the dashes
+// grazed the forechecker the picture says the pass gets AROUND. Nothing would have
+// reported it: check-arrivals scopes itself to routes that draw a player moving, so a
+// `pass` is never measured against a glyph at all. A foot deeper and a foot wider puts
+// the line 6.26 ft off him, 2.98 ft clear.
+const XI_F1 = { at: 'corner:right', dx: 6, dy: -13 };           // (88, 21)
+
+// Their second forward, in the middle of the zone. THE WHOLE POINT OF HIM IS THE STICK
+// THIS NOTATION CANNOT DRAW. He is 7.24 ft off the pass line - 3.96 ft of clearance past
+// his glyph ink - so the picture shows a body beside the lane and the caption says the
+// reach into it is not drawn, which is the treatment `unmarked-but-unavailable` and
+// `stick-in-lane-body-net-side` both use for the same limitation.
+//
+// ⚠️ THIS WAS (72, 11) FROM (73, 10) AFTER MEASURING RATHER THAN EYEBALLING. At (73, 10)
+// the perpendicular distance to the pass line is 5.30 ft, leaving 2.03 ft past the glyph;
+// a foot further out it is 7.24 and 3.96. Neither would have failed anything - no checker
+// measures a `pass` route against a glyph, because check-arrivals scopes itself to routes
+// that draw a PLAYER moving - so this is a drawing decision nothing would have caught.
+const XI_F2 = { at: 'high-slot', dx: 3, dy: 11 };               // (72, 11)
+
+// Their third forward, already sliding across with the puck's likely destination. He is
+// the section's "one more cost people miss": the pass can be completed and still hand the
+// receiver a worse situation than the one it left.
+//
+// ⚠️ A `pressure` ROUTE, NOT A `skate`, AND THE REASON IS THE ARRIVAL INVARIANT. Every
+// arrow-ended route aimed at a man on the wall fails one of its two forms by
+// construction: a tip 12 ft short of the receiver still has a terminal tangent passing
+// 0.26 ft from his anchor, because "heading for the man on the boards" IS a line pointing
+// at him. Three endpoints were measured and all three came back inside ARRIVAL.glyph.
+// `pressure` ends in two bars - "the route ends here", the legend's own wording for the
+// same mark - which is the safe form by construction and, more to the point, the honest
+// one: this section teaches no contact at all. Same reasoning as the pinch pair above.
+//
+// ⚠️ (56, -16) FIRST, AND IT PUT HIM INSIDE THE PAINT. That anchor is 14.3 ft from the
+// lower faceoff circle's centre against a 15 ft radius, so the painted circle ran through
+// his glyph and the `describe` calling him "just up-ice of the lower faceoff circle" was
+// describing ice he was standing in. (54, -14) is 17.0 ft out, clear of the line.
+const XI_F3 = { at: 'top-of-circle:left', dy: 8 };              // (54, -14)
+const XI_F3_TO = { at: 'faceoff-dot:left', dx: -6, dy: -7 };    // (63, -29)
+
+// 5.41 ft off the carrier's anchor - clear of 4.0 ft of triangle ink plus 1.1 of puck -
+// and on the middle side of him, which is the side the pass leaves on.
+const XI_PUCK = { at: 'corner:right', dx: -2.5, dy: -5 };       // (79.5, 29)
+
+const crossIceOwnEnd = {
+  id: 'cross-ice-in-your-own-end',
+  title: 'Cross-ice in your own end',
+  owner: OWNER,
+  half: true,
+  width: 900,
+
+  caption:
+    'Your own defensive zone, your own net at the right: the cross-ice pass this section tells ' +
+    'you not to make, and the traffic standing in it. A defenceman has the puck in the ' +
+    'strong-side corner with a forechecker sealing him there, and the only outlet he can see ' +
+    'is on the far wall — so the pass goes east–west, across the width of the ice, below the ' +
+    'tops of the faceoff circles. The shaded band is your own slot, the ice in front of your own ' +
+    'net between the faceoff circles, and the pass crosses it in front of your own goaltender. ' +
+    'Three costs, and the third is the one people miss. It crosses every forechecking stick on ' +
+    'the ice: the forward drawn in the middle is standing beside that lane, and this notation ' +
+    'has no stick symbol, so his reach into it is not drawn at all. It spends longer in the air ' +
+    'than any other pass available to you, which is the most time anyone gets to read it — and ' +
+    'if it is picked off there, it is picked off by someone whose momentum already carries him ' +
+    'toward your net. And even when it works it usually arrives with the forecheck: their third ' +
+    'forward is already sliding across, so the receiver takes the puck facing the boards with a ' +
+    'checker arriving, which can be a worse situation than the one the pass was meant to solve. ' +
+    'What to do instead is move the puck north, or move it behind the net; and if the only ' +
+    'outlet really is on the far side, go defence-to-defence behind your own goal line first and ' +
+    'then north, because two low-risk passes beat one high-risk one. Five honest limits. ' +
+    'No rule forbids the pass itself: this is a coaching convention rather than a law of hockey, ' +
+    'and the convention has a line in it — some teams accept a cross-ice pass above the tops of ' +
+    'the circles, where an ' +
+    'interception is not a slot chance, and almost nobody accepts one below them, which is where ' +
+    'this one is drawn. It is also not the same play as the designed cross-ice option in a ' +
+    'structured breakout, which is taken only when the forecheck has genuinely overloaded one ' +
+    'side and the middle is empty; the middle here is not empty, and that is the whole ' +
+    'difference. The far-side outlet is drawn as a forward because that player is usually the ' +
+    'far winger, though a structured breakout may put the weak-side defenceman there instead, ' +
+    'and nothing here turns on which. And their two defencemen are not drawn, so do not count ' +
+    'bodies off this picture. ⚠️ And no contact is drawn: the arriving forward’s route ends ' +
+    'in two bars, meaning the route ends there rather than carrying on through a player, and ' +
+    'what an arrival like that may end in depends on whether your league allows body checking at ' +
+    'all. If you are the one collecting a puck on that wall, take the contact with your skates ' +
+    'parallel to the boards, forearm and hip into it, head up and chin off your chest, and never ' +
+    'with your back to the wall.',
+
+  describe:
+    'The defending half of the rink, your own net at the right. Three own players are drawn as ' +
+    'open glyphs: a defenceman in the upper corner about five feet up-ice of the goal line with ' +
+    'the puck at his stick; a forward low on the opposite boards, level with the far faceoff ' +
+    'dot; and the goaltender in the crease. Three opposition players are solid glyphs: a forward ' +
+    'inside and below the puck carrier, sealing him toward the corner; a second forward in the ' +
+    'middle of the zone, a few feet above the passing lane and about seven feet off it; and a ' +
+    'third forward on the lower, weak side, level with the tops of the faceoff circles and just ' +
+    'clear of the lower one, with a route running down toward the lower boards that ends in two ' +
+    'short bars across the line, about ten feet short of the forward waiting there. A shaded ' +
+    'band runs down the middle of the zone ' +
+    'from the tops of the two faceoff circles to the front edge of the goal crease, its sides on ' +
+    'the inner edges of the two circles. One dashed pass leaves the defenceman in the corner, ' +
+    'runs straight across the width of the ice through that shaded band in front of the net — it is the play this section tells you not to make, and ' +
+    'finishes about six feet short of the forward on the far boards.',
+
+  zones: [
+    {
+      // YOUR OWN SLOT. The glossary's polygon, and character-for-character the same four
+      // points `the-risk-map` uses above with the dx signs flipped for the near end:
+      // tops of the circles to the front edge of the crease, sides on the circles' inner
+      // edges 15 ft in from the dot lines, i.e. y +/-7. `the-slot` in
+      // rink_map_and_glossary.mjs is the original and this document's own vocabulary
+      // section agrees — "the area in front of the net between the faceoff circles".
+      //
+      // Dashed stroke KEPT, unlike the defensive-zone polygon in `the-risk-map`, which
+      // carries stroke: 'none' because its boundary is painted. This one's boundary is
+      // not on the ice at all, so an edge is the only thing that gives it a shape.
+      points: [
+        { at: 'top-of-circle:right', dy: -15 },   // (54, 7)
+        { at: 'goal-line', dx: -6, dy: 7 },       // (83, 7)
+        { at: 'goal-line', dx: -6, dy: -7 },      // (83, -7)
+        { at: 'top-of-circle:left', dy: 15 },     // (54, -7)
+      ],
+      danger: true,
+    },
+  ],
+
+  players: [
+    { id: 'G',  pos: 'G', at: { at: 'crease', dx: 1 } },                    // (87, 0)
+    // NO LABEL ON D1, for `breakout-d-to-d`'s reason: the corner already holds the
+    // forechecker, the puck disc and the route's own reserved space, and the puck disc
+    // at his stick is the notation for having it.
+    { id: 'D1', pos: 'D', at: XI_D1 },
+    { id: 'W2', pos: 'F', at: XI_W2, label: 'the far outlet' },
+    { id: 'F1', team: 'opp', pos: 'F', at: XI_F1, label: 'seals the wall' },
+    { id: 'F2', team: 'opp', pos: 'F', at: XI_F2, label: 'in the middle' },
+    { id: 'F3', team: 'opp', pos: 'F', at: XI_F3, label: 'slides across' },
+  ],
+
+  // NOT `numbered`. The pass and the slide are one instant, not two steps: the whole
+  // claim is that the man who beats you to the receiver left before the pass did.
+  routes: [
+    { from: XI_D1, to: XI_TO, kind: 'pass' },
+    { from: XI_F3, to: XI_F3_TO, kind: 'pressure' },
+  ],
+
+  puck: XI_PUCK,
+};
+
+export default [theRiskMap, pinchCentreHigh, pinchCentreDeep, crossIceOwnEnd];

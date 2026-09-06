@@ -70,8 +70,13 @@ const threeLanes = {
 
   caption:
     'Three attackers arriving at the attacking blue line in three lanes — one wide on each ' +
+    // ⚠️ "the paint" here means the BLUE LINE's twelve inches, a sense zone_entries.md
+    // defines at :131. But this caption is BORROWED into how_to_watch_hockey.md, which
+    // defines nothing -- and the glossary at rink_map_and_glossary.md:629 says the paint is
+    // the CREASE. 10 of 12 captions use the crease sense. Voiced alone, a listener was told
+    // two wingers arriving at speed stand in the goal crease, sixty-four feet away.
     'side, one through the middle — drawn at the instant the two wide players are already on ' +
-    'the paint at speed and the puck is still a stride short of it. That order is the whole ' +
+    'the blue line at speed and the puck is still a stride short of it. That order is the whole ' +
     'point: if the carrier arrives first the supports are behind the play and the defence can ' +
     'collapse on one player, so the carrier wants to reach the line half a stride to a full ' +
     'stride behind the wingers, and arriving with speed is not the same as arriving early. ' +

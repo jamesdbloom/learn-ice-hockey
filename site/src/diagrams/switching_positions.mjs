@@ -382,11 +382,25 @@ const forcingThemOutside = {
     'body-check, bump, push or shove. Bumping is a lower bar than riding him along the wall. ' +
     '⚠️ And where checking is allowed the ride still has a limit, which the carrier seeing ' +
     'you coming does not lift. ' +
+    // ⚠️ 604(b) IS CARRIED WITH 604(a) AND STAYS IN THE SAME SENTENCE AS IT. USAH
+    // 604(b) (sources/usah.txt:3577), read this session: "Any time a team from a
+    // Competitive Contact category (see sub-section (a) above) plays a team from a
+    // Body Checking category, body checking shall be prohibited under this rule."
+    // 604's Note 2 (:3546) names the two categories and (a) closes "These levels
+    // would be considered the Competitive Contact Category of play" (:3558), which
+    // is what makes "any time a checking team plays a non-checking one" the whole of
+    // (b) rather than a narrowing. It is carried because (a) alone is an enumeration
+    // of DIVISIONS: a player in a checking division finds himself in none of the
+    // listed bars and concludes he may check, when (b) can bar it for the FIXTURE --
+    // a mixed-entry tournament, a girls' team on a boys' schedule. It sits INSIDE
+    // the same sentence as (a) because _split_paragraph breaks only at sentence
+    // ends, so a pair split across two sentences can be voiced as two units.
     'Riding him into the wall with your body is a different act. USA Hockey’s rule 604(a) ' +
     'prohibits body checking at twelve and under and below, in all girls’ and women’s ' +
     'classifications and in all non-check adult classifications — the minor is 604(c), and ' +
-    'that list is a floor rather than a ceiling, because a local governing body may prohibit ' +
-    'checking in any classification. Hockey Canada’s 7.3(a) bars it at under-thirteen and ' +
+    'that list is a floor rather than a ceiling: a local governing body may prohibit checking ' +
+    'in any classification, and 604(b) bars it outright any time a checking team plays a ' +
+    'non-checking one, whatever your own division allows. Hockey Canada’s 7.3(a) bars it at under-thirteen and ' +
     'below, in female hockey, and in any other division a Member of Hockey Canada approves, ' +
     'and its own definition of a body check reaches a player who leaves their skating lane to ' +
     'make contact, or who extends an arm, shoulder or hip after angling an opponent. In ' +

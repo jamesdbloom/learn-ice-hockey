@@ -51,6 +51,7 @@ import switchingpositions from './switching_positions.mjs';
 import timeandspace from './time_and_space.mjs';
 import winger from './winger.mjs';
 import zoneentries from './zone_entries.mjs';
+import defender from './defender.mjs';
 
 export const DIAGRAMS = [
   ...center,
@@ -71,6 +72,7 @@ export const DIAGRAMS = [
   ...passingandreceiving,
   ...playingwithoutthepuck,
   ...positions,
+  ...defender,
   ...practiceanddevelopment,
   ...pucksupportandspacing,
   ...rinkmapandglossary,

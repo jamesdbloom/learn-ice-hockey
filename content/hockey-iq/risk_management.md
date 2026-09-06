@@ -193,6 +193,8 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 
 **What to do instead.** Move the puck north or move it behind the net. If the only outlet is genuinely on the far side, go D-to-D behind the goal line first and *then* north — two low-risk passes beat one high-risk one.
 
+![](diagram:cross-ice-in-your-own-end)
+
 *Coaching convention.* Nothing in the rulebook touches this. Some teams will accept a cross-ice pass above the tops of the circles, where an interception is not a slot chance; almost nobody accepts one below them.
 
 ### 4. Never both defencemen to the puck
@@ -415,6 +417,8 @@ Options: Nothing there? Chip the puck past their defenceman into space and race,
 5. **None of the above?** → Chip the puck past their defenceman into space and race, or dump to the far corner and forecheck.
 6. **Never at any point in this list:** turn back into the middle of the ice at your own blue line, or make an east–west pass across centre ice. Both are named across coaching material as prime manufacturers of 2-on-1s against — *coaching consensus, not a counted comparison; no public data ranks odd-man rushes by the play that created them.* [Defending the Rush](../systems/defending_the_rush.md) lists neutral-zone turnovers as one of five ways an odd-man rush gets manufactured.
 
+![](diagram:centre-nz-get-it-to-the-outside)
+
 ### Offensive zone — you have the puck below or at the tops of the circles
 
 ```facts
@@ -435,6 +439,8 @@ Never: Force it through their blue line on the way out — losing the puck in th
 4. **Am I under pressure with support below me?** → Take it behind the net or to the corner and cycle. You keep the puck, you keep them in their end, and you keep tiring them out.
 5. **Is the point open with a clear lane and a screen set?** → Back to the point. But "open" means a lane to the *net*, not just a lane to the *defenceman*.
 6. **Nothing at all?** → Chip it back deep and re-forecheck. **Do not force it through their blue line on the way out.** Losing the puck in their corner is free; losing it at their blue line with your defence pinched is a rush against.
+
+![](diagram:oz-half-wall-options)
 
 ---
 

@@ -546,6 +546,8 @@ If the non-offending team, with their net empty, **puts the puck into their own 
 - **Six attackers changes the shape, not the principles.** Most teams simply add a fourth high forward and play a 2-1-2 or an umbrella. See [Special Teams](../systems/special_teams.md) and [Offensive Zone Play](../systems/offensive_zone_play.md).
 - **If you are the team about to be penalised:** touch the puck as fast as possible to end it. Diving on it, deflecting it out, batting it — anything that gets you control. A hand pass in your defending zone is legal (Rule 79.2) and it counts.
 
+![](diagram:delayed-penalty-your-own-net)
+
 **USA Hockey note:** if a team **ices the puck during a delayed penalty against their opponents**, the ensuing faceoff is at a **neutral-zone spot nearest the icing team's defending zone**, not in their end (Rule 624(a) note). The NHL rulebook contains no equivalent provision, largely because in the NHL play would already be whistled the moment the offending team gained control.
 
 ---
@@ -607,6 +609,8 @@ For the position itself, see [Goaltender](../positions/goaltender.md). This sect
 
 The **goal crease** is the light-blue area in front of the net — **8 feet wide at the goal line, 6 feet deep** at its deepest point — and it is a **volume, not an area**: it extends **vertically four feet**, to the height of the top of the goal frame (NHL Rule 1.7). Those figures come from [Rink Map and Glossary](rink_map_and_glossary.md), which covers the rink's geometry and gives the full Rule 1.7 construction, the goaltender's reference marks and the IIHF equivalents.
 
+![](diagram:the-goal-crease)
+
 ### Goaltender interference
 
 The governing principle (Rule 69.1) is stated explicitly and is not what most players think it is:
@@ -658,11 +662,15 @@ Goals are disallowed only if **(1)** an attacking player, **by his positioning o
 
 This is the single most valuable rules fact for a forward. **Get in the goalie's eyes; keep your skates out of the blue paint.** See [Offensive Zone Play](../systems/offensive_zone_play.md) and [Winger](../positions/winger.md).
 
+![](diagram:screen-the-goalie-sightline)
+
 ### The trapezoid (goalkeeper's restricted area)
 
 This section is the **penalty**. The geometry — the NHL figures, the depth, the IIHF metric equivalents and where the lines actually run — belongs to [Rink Map and Glossary](rink_map_and_glossary.md), which covers the rink's dimensions and gives them in full.
 
 **The goalie may not play the puck behind the goal line outside the marked trapezoid behind his net.** Violation is a **two-minute minor for delay of game** (**NHL Rules 27.8 and 63.2(viii)**; the IIHF numbers the same rule **27.7**). The determining factor is the **position of the puck**, not the position of the goalie — and both books say so in those words.
+
+![](diagram:the-trapezoid)
 
 **The rule text writes exactly one exception, and it is not the one people think:** the minor is **not** assessed when the goalie plays the puck **while maintaining skate contact with his goal crease**. There is no teammate-based exception and no "he was only touching it" exception. ⚠️ **That is the count in NHL 27.8 and IIHF 27.7 themselves. The IIHF's own *Situation Handbook* then adds two boundary rulings you would not get from the rule**, and both go the goalie's way: **Situation 27.6** has a goalkeeper whose skates are both inside the restricted area stop the puck on his stick **on the goal line**, and answers that *"[t]he goal line is not considered to be in the restricted area and therefore no penalty is assessed"* — *"the puck must be over the goal line to be considered to be in the restricted area"*; and **Situation 27.9** has a puck come off the glass and hit a retreating goalkeeper inadvertently, answering *"No penalty. Rule states that the goalkeeper must play the puck to be penalized."* **Situation 27.11** confirms the skate-contact exception in play. All three are in the same words in the 2025/26 (v1.0 and v1.1) and 2026/27 Handbooks, and the Handbook ranks itself below the rule book. **No NHL equivalent is quoted here, because the NHL's own situation handbook is not publicly obtainable and none of it has been read** — so read those three as the IIHF's answers only.
 
@@ -748,6 +756,8 @@ Faceoff location is a **penalty and reward system**, and reading it tells you wh
 | Two violations at once | The spot giving the offending team **least territorial advantage** |
 
 One further location rule changes behaviour after the whistle, and it can cost you the zone you have just earned: **if a point man or a player off the bench from the attacking team enters the zone past the outer edge of the end-zone faceoff circle during a scrum, the draw is moved out to the neutral zone** (Rule 76.2). If your team has just earned a defensive-zone draw in the other end, **do not go join the scrum** — you will give the zone back.
+
+![](diagram:faceoff-where-the-draw-goes)
 
 ### The two things you must not leave without
 

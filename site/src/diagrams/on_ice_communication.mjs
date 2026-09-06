@@ -121,6 +121,19 @@
  *         written off it and shipped the same half-rule. A truncated quotation in a
  *         provenance comment is how a half-rule reaches a listener.
  *         `forecheck-pinch` in forechecking_systems.mjs carries the same three.
+ *         ⚠️ AND 604(b) IS NOW CARRIED WITH 604(a), IN THE SAME SENTENCE.
+ *         604(b) (sources/usah.txt:3577), read this session: "Any time a team from a
+ *         Competitive Contact category (see sub-section (a) above) plays a team from a
+ *         Body Checking category, body checking shall be prohibited under this rule."
+ *         604's Note 2 (:3546) names the two categories and (a) closes "These levels
+ *         would be considered the Competitive Contact Category of play" (:3558), which
+ *         is what makes "any time a checking team plays a non-checking one" the whole of
+ *         (b) rather than a narrowing. It is carried because (a) alone is an enumeration
+ *         of DIVISIONS: a player in a checking division finds himself in none of the
+ *         listed bars and concludes he may check, when (b) can bar it for the FIXTURE --
+ *         a mixed-entry tournament, a girls' team on a boys' schedule. It sits INSIDE
+ *         the same sentence as (a) because _split_paragraph breaks only at sentence
+ *         ends, so a pair split across two sentences can be voiced as two units.
  *   The checker's-obligation clause the section states at :95 — "the checker carries
  *   the legal obligation here, not you" — is carried too, and deliberately NOT left
  *   as reassurance: a penalty is assessed after the injury has happened.
@@ -277,9 +290,11 @@ const whoCanSeeIt = {
     'and never a chin dropped to look for the puck. Protecting the puck never justifies squaring ' +
     'your back to an oncoming checker. The checker carries the legal obligation here, not you — but that is ' +
     'not something to lean on, because the penalty arrives after the injury does, and because in ' +
-    'many leagues body checking is not allowed at all. Find out which book you are under before ' +
+    'many leagues body checking is not allowed at all. Find out which book you are under, and ' +
+    'whether you may body check in this game rather than merely in your division, before ' +
     'you plan on taking contact or making it: USA Hockey Rule 604(a) prohibits body checking at 12 ' +
     '& under and below, in every girls’ and women’s classification and in non-check adult hockey; ' +
+    '604(b) bars it outright any time a checking team plays a non-checking one; ' +
     'Hockey Canada Rule 7.3 applies at U13 and below, throughout female hockey and in any other ' +
     // ⚠️ BOTH LIMBS AND THE EXCEPTION, BECAUSE "ONLY" MAKES A TRUNCATION A FALSE
     // PROHIBITION. This shipped as "only where there is a clear intention of playing the

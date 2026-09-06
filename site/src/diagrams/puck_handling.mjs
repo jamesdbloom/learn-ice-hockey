@@ -23,14 +23,23 @@
  * caption that claimed one would be outclaiming its picture.
  *
  * What IS drawable is where the puck is relative to a body, where a second opponent is
- * relative to a teammate, and where a puck lies relative to a painted marking. That is
- * three diagrams, and they are below.
+ * relative to a teammate, where a puck lies relative to a painted marking, and — added
+ * later, and the only full-sheet picture in this file — how much of your own ice is
+ * behind the puck with nobody of yours standing in it. That is four diagrams, and they
+ * are below.
  *
- * ⚠️ ALL THREE HAVE NOW BEEN RENDERED AND LOOKED AT — at 900 px and at 360 px, as PNGs off
- * to one side of the repository — AND THAT IS NOT THE SAME AS HAVING BEEN BUILT.
+ * ⚠️ THE FIRST THREE HAVE BEEN RENDERED AND LOOKED AT — at 900 px and at 360 px, as PNGs
+ * off to one side of the repository — AND THAT IS NOT THE SAME AS HAVING BEEN BUILT.
  * `build-diagrams.mjs` has still not been run for them, so `site/src/data/diagrams.json`
  * does not contain them and `check_absolutes.py`, which reads captions out of that build
  * product, has still never seen these captions. BUILD BEFORE SHIPPING.
+ *
+ * ⚠️ THE FOURTH, `the-last-player-back`, HAS NOT BEEN RENDERED AT ALL. Every clearance
+ * quoted in its block was computed, and the paragraph immediately below is the reason a
+ * computed clearance is not a verified picture. Its zone label was omitted rather than
+ * placed, on arithmetic about where the renderer writes a zone label (at the polygon's
+ * MEAN, with no collision handling) — and rules_primer.mjs records TWO cases where exactly
+ * that arithmetic was believed and the render disagreed. LOOK AT IT BEFORE SHIPPING IT.
  *
  * ⚠️ AND THE RENDER IS WHY THE ARITHMETIC BELOW IS NOT ENOUGH. Every clearance quoted here
  * was computed on the drawn quadratic rather than on the chord, and every label box was
@@ -87,19 +96,50 @@
  *     (risk_management.mjs) grades the ice by what a turnover there costs, which is the
  *     whole of both sections' argument.
  *
- * ------------------------------------------------------------------------------------
- * ORIENTATION, and it is not the same in all three, so each caption says which
- * ------------------------------------------------------------------------------------
- * All three are `half: true`. Two are drawn in the ATTACKING end (the net at the right is
- * the opposition's) and one in YOUR OWN (the net at the right is yours). That split is
- * forced by the subjects — a puck in your own crease cannot be drawn at the other end —
- * and every caption and every `describe` opens by saying whose net is on the right.
+ *   "### When a simple pass is available" — THE HIGHEST-DENSITY UNDRAWN SECTION IN THIS
+ *     DOCUMENT, AND IT IS NOT DRAWABLE. Its three arguments for the pass are that it
+ *     "moves the puck faster than any player can skate", that it "does not leave the puck
+ *     sitting on your blade for a defender to poke at", and that it "moves the defence more
+ *     than a deke does". The first is a SPEED claim and a plan view has no time axis; the
+ *     second is a STICK claim and this notation has no stick symbol; the third needs the
+ *     defence drawn twice, before and after, which is a time claim again. What is left —
+ *     a carrier, a defender, an open teammate and a dashed pass — is `you-cannot-beat-two`
+ *     THIRTEEN LINES BELOW IT IN THE SAME DOCUMENT, whose caption already says "the pass to
+ *     the teammate the second defender's arrival has left open". A second copy would be a
+ *     near-duplicate on the same screen. The section is also a PRIORITY rule ("look for the
+ *     pass first, and only then consider the move"), which is a decision order rather than a
+ *     place on the ice.
  *
- * NO SHADED ZONES ANYWHERE IN THIS FILE, on purpose. The one region these sections name
- * is the goal crease, and THE CREASE IS ACTUAL PAINT: `rinkSvg` already draws it, filled,
- * on every diagram. A `zones` polygon over it would put a house tint on a real marking,
- * which is the one confusion `reading_ice_hockey_diagrams.md` works hardest to prevent.
- * Nothing here adds a row for `check_zones.py` to compare, and that is the intended state.
+ *   "### What each position actually needs" — three bullets, one per position, each ending
+ *     in a pointer to that position's own document, all three of which carry diagrams.
+ *     A single picture of "what a defenceman needs" would be authoring a composite the
+ *     section does not make.
+ *
+ * ------------------------------------------------------------------------------------
+ * ORIENTATION, and it is not the same in all four, so each caption says which
+ * ------------------------------------------------------------------------------------
+ * Three are `half: true`: two drawn in the ATTACKING end (the net at the right is the
+ * opposition's) and one in YOUR OWN (the net at the right is yours). That split is forced
+ * by the subjects — a puck in your own crease cannot be drawn at the other end.
+ * `the-last-player-back` is the exception and is `half: false`, because its claim is a
+ * DISTANCE — how much ice lies between the puck and your own net — and cropping to one half
+ * would cut off the end the whole argument is about. On that one your own net is at the
+ * LEFT, following the corpus's full-sheet habit (`the-risk-map`, `offside-faceoff-location`).
+ * Every caption and every `describe` opens by saying which net is where.
+ *
+ * ⚠️ THIS FILE HAD NO SHADED ZONES AND NOW HAS EXACTLY ONE. The paragraph here used to read
+ * "NO SHADED ZONES ANYWHERE IN THIS FILE, on purpose", and its reasoning is still right
+ * about the first three: the one region those sections name is the goal crease, and THE
+ * CREASE IS ACTUAL PAINT — `rinkSvg` already draws it, filled, on every diagram, so a
+ * `zones` polygon over it would put a house tint on a real marking, which is the confusion
+ * `reading_ice_hockey_diagrams.md` works hardest to prevent. `the-last-player-back` shades
+ * something that is NOT a marking and is not a named region of the ice either: it is the ice
+ * behind one particular puck at one particular instant, which moves with the puck. It is
+ * drawn `danger: true` — the red warning fill, not the blue "stand here" fill — for the
+ * reason `rink.mjs` gives beside those two colours, and it carries NO LABEL, so it names no
+ * region and adds no row for `check_zones.py` to compare against another diagram's. That
+ * checker compares polygons that claim the same NAME; an unnamed one is out of its scope by
+ * construction, which is a limit on the checking rather than a virtue of the drawing.
  *
  * NO RULE NUMBERS IN ANY CAPTION, on purpose. switching_positions.mjs records what
  * happens otherwise: a caption carried "616(b)" and a four-book penalty comparison that
@@ -728,4 +768,263 @@ const youCannotBeatTwo = {
   puck: TWO_PUCK,
 };
 
-export default [puckOnTheFarSide, wherethePuckIs, youCannotBeatTwo];
+/* ===================================================================================
+ * 4 · The last player back
+ *
+ * Section: "### When you are the last player back" — "If losing the puck means an
+ * odd-man rush against you, the move is off. Always." Plus the named coaching choice
+ * under it: "how much individual puck carrying a team wants varies enormously… The
+ * default assumption here is a possession-oriented breakout with a 2-1-2 forecheck,
+ * but the honest answer is that this is your coach's call. Ask."
+ *
+ * WHY IT EARNS A PICTURE WHERE THE REST OF "When *Not* to Stickhandle" DOES NOT. The
+ * section's test is a COUNT — how many of your players stand between the puck and your
+ * own net — and a count of bodies in a region is the one thing a plan view says natively
+ * and prose says clumsily. The other three sections in that part of the document are a
+ * cost claim about ice ("In your own defensive zone", "Through the middle of the ice",
+ * both already drawn by `the-risk-map`), a priority rule ("When a simple pass is
+ * available" — see the header for why that one cannot be drawn at all), and a list of
+ * options already drawn by `you-cannot-beat-two`.
+ *
+ * ⚠️ THE MOVE ITSELF IS NOT DRAWN, AND THAT IS THE HARDEST DECISION IN THIS SPEC. The
+ * obvious picture is the carrier attempting the deke — the key has a symbol for it, the
+ * smooth wave, "skating with control of the puck". It is not used, for the reason
+ * game_management.mjs states in terms about a pass across your own crease: "There is no
+ * symbol in this notation for a route you must not take, and an arrow drawn across your
+ * own goal mouth reads as an instruction rather than as a warning." A wave route on the
+ * carrier here would read as the section's advice rather than as its prohibition. So the
+ * carrier has no route at all — the same choice `puck-on-the-far-side` makes at the top of
+ * this file, and for the same reason: this is a statement about one instant.
+ *
+ * ⚠️ WHAT SEPARATES IT FROM `pinch-centre-below-the-goal-line`, WHICH MAKES A VERY SIMILAR
+ * ARGUMENT AND WAS CHECKED BEFORE THIS WAS DRAWN. That diagram (risk_management.mjs) is
+ * `half: true`, drawn in the ATTACKING end, and its subject is a defenceman WITHOUT the
+ * puck deciding whether to leave the point; what it counts is his partner and his centre,
+ * and it never shows his own net. This one is the full sheet, its subject is a carrier WITH
+ * the puck deciding whether to try a move, and what it counts is the ice between that puck
+ * and his own goal. Different end, different subject, different count. Borrowing the id
+ * instead was considered and rejected: a listener under a section about attempting a deke
+ * would hear a caption that says "pinch" a dozen times and never mentions the puck being on
+ * your stick.
+ *
+ * ------------------------------------------------------------------------------------
+ * COORDINATES. Full sheet: x runs -100 (your end) to +100 (theirs), y ±42.5.
+ * ------------------------------------------------------------------------------------ */
+
+// YOU, with the puck, in the middle of the neutral zone on your own side of the red line.
+// (-8, 12) is 17 ft up-ice of your own blue line at x = -25 and 8 ft short of centre ice.
+//
+// A TRIANGLE, and the caption discloses the choice rather than hiding it. The section says
+// only "you"; its own coaching-choice blockquote opens on "defencemen skating the puck out
+// of the zone whenever the lane is there", and the commonest last player back is a
+// defenceman. A forward can be, and the caption says so, because the shape asserts more
+// than the section does.
+//
+// The nearest markings are the neutral-zone dots at (±20, ±22), and the nearest of those,
+// (-20, 22), is 15.6 ft away. Neutral-zone dots carry no circle.
+//
+// ⚠️ HE IS 14.4 ft FROM CENTRE ICE, SO THE CENTRE FACEOFF CIRCLE'S 15 ft ARC PASSES THROUGH
+// HIS GLYPH, AND THAT WAS CHECKED RATHER THAN ASSUMED TO BE A DEFECT. Every other diagram
+// in this file computes its clearance to END-ZONE circles, where the paint is dense, and it
+// would be easy to carry that habit over as a rule. It is not one: a census of every player
+// anchor in `DIAGRAMS` puts TWENTY skaters inside the centre circle already, `nz-1-3-1`'s
+// defenceman at 2.0 ft from the dot and both of `faceoff-neutral-zone`'s centres at 4.2, with
+// fifteen more sitting on the arc. The glyph halo whites the arc out behind the body, which
+// is what it is for. So this is normal for a neutral-zone picture and no coordinate was bent
+// to avoid it — bending them would have pushed the two opponents 30-40 ft apart, which would
+// have cost the thing the picture has to say.
+const LAST_YOU = { at: 'centre-ice', dx: -8, dy: 12 };            // (-8, 12)
+
+// THE TWO OPPONENTS, both up-ice of the puck, so that winning it turns them straight back
+// toward your end. Forwards, because the section says nothing about who applies the
+// pressure and a triangle would assert that a defenceman is the one closing.
+//
+// 17.89 ft from you centre to centre. A triangle's ink reaches 4.6 ft (circumradius 3.6
+// plus the 1.0 halo) and a circle's 3.875, so 10.01 ft of clear ice — deliberately much
+// looser than `puck-on-the-far-side`'s 1.74. That picture is about a puck under pressure
+// already applied; this one is about a decision taken a beat BEFORE the pressure arrives,
+// which is the only moment at which the decision is still available.
+const LAST_O1 = { at: 'centre-ice', dx: 8, dy: 4 };               // (8, 4)
+// The second, wide of him toward the far side. 16.12 ft from the first (8.37 ft of clear
+// ice between two circles' ink), so the two read as two players rather than as a pair.
+// ⚠️ TWO OF THEM AND NOT ONE, ON PURPOSE: one opponent against no defenders is a
+// breakaway, which is a different thing with a different name. The section's word is
+// "odd-man rush" and two is the smallest number that draws one.
+const LAST_O2 = { at: 'centre-ice', dx: 6, dy: -12 };             // (6, -12)
+
+// THE PUCK, on the side of you away from the pressure — the rule the first diagram in this
+// file exists to teach, applied here rather than restated. The pressure runs you -> first
+// opponent = (16, -8), unit (0.894, -0.447); the puck sits 6.04 ft back along the reverse
+// of it at (-13.4, 14.7).
+// 6.04 ft from your centre against a floor of 5.1 (the triangle's 4.0 ft of ink plus the
+// disc's own 1.1 ft radius), so 0.94 ft of clear ice. ⚠️ MEASURED AGAINST THE INK AND NOT
+// AGAINST THE TRIANGLE — a puck placed off the 3.6 circumradius would be drawn inside the
+// white halo, which is the trap recorded on FS_PUCK above.
+const LAST_PUCK = { at: 'centre-ice', dx: -13.4, dy: 14.7 };      // (-13.4, 14.7)
+
+// WHERE THE PRESSURE ROUTE STOPS: 8 ft short of you, ending in two bars.
+// The route runs (8, 4) -> (-0.84, 8.42), 9.89 ft long. At that length `bars2` draws its
+// bar at half-length clamp(len * 0.30, 1.2, 2) = 2.0 ft across the terminal tangent, so
+// every drawn point of the near bar is at least 8.25 ft from your anchor — 4.25 ft of clear
+// ice past the triangle's ink — and at least 14.18 ft from the puck. Nothing else in the
+// picture is within 15 ft of it, so the collision `you-cannot-beat-two` had to be laid out
+// around cannot arise here.
+// A bar-ended route sits outside both limbs of the arrival invariant by design (see THE
+// ARRIVAL INVARIANT in site/scripts/lib/rink.mjs); an arrowhead here would have been a
+// claim about contact.
+const LAST_O1_TO = { at: 'centre-ice', dx: -0.84, dy: 8.42 };     // (-0.84, 8.42)
+
+// TWO TEAMMATES, drawn deep in the attacking end so that "ahead of the puck" is something
+// the reader can see rather than something the caption asserts.
+// (34, 26) is 35.2 ft from the near end-zone dot and (40, -20) is 29.1 ft from the far one,
+// both well outside the 15 ft circles; they are 46.4 ft apart.
+// ⚠️ TWO AND NOT FOUR. Drawing all four would fix the positions of a whole unit, which the
+// section does not do — its blockquote is explicitly about how much the arrangement varies
+// by coach. Two is enough to show which side of the puck they are on, which is the only
+// thing that matters here. The caption says the other two are not drawn and why.
+const LAST_MATE_1 = { at: 'centre-ice', dx: 34, dy: 26 };         // (34, 26)
+const LAST_MATE_2 = { at: 'centre-ice', dx: 40, dy: -20 };        // (40, -20)
+
+/*
+ * THE SHADED REGION — the only `zones` polygon in this file, and the picture's subject.
+ *
+ * It runs from x = -16, four feet behind the nearest ink of your own glyph and one and a
+ * half feet behind the puck's own edge, back to your end boards. The six-point shape is
+ * `icing-gaining-the-line`'s (rules_primer.mjs): the boards are a rounded rectangle and a
+ * square corner would sit outside the dasher. It stops at |y| = 34 rather than at the
+ * boards, which is that diagram's figure too — so the shading covers most of the width and
+ * not all of it, and `describe` says "most" rather than "all".
+ *
+ * ⚠️ NO LABEL, AND THE REASON IS ARITHMETIC THAT HAS NOT BEEN CHECKED AGAINST A RENDER.
+ * The renderer writes a zone's label at the polygon's MEAN with no collision handling. This
+ * polygon's mean is (-68, 0). At `half: false` the zone type size is 3.2 * 1.7 = 5.44 ft and
+ * the placer bills 0.56 of that per character, so 3.05 ft a character: an eleven-character
+ * label spans 33.5 ft and reaches x = -84.8, and the goaltender's bold `G` sits at x = -85.
+ * Every honest name for this region is longer than eleven characters, because the region is
+ * NOT empty — the goaltender is inside it — so a label saying "nobody back" would be false
+ * and one saying so properly would be written through his letter.
+ * ⚠️ TREAT THAT PARAGRAPH AS A PREDICTION AND NOT AS A MEASUREMENT. rules_primer.mjs records
+ * the same arithmetic being done and the render disagreeing, twice: a comment that reasoned
+ * a mean would fall "below the dot rather than on it" and was wrong by two feet, and a
+ * label predicted to sit clear that punched a white bite out of the red dot the rule turned
+ * on. The naming therefore lives in the caption and in `describe`, both of which say what
+ * the shading is and that the goaltender is standing in it.
+ *
+ * `danger: true` rather than the default blue. site/scripts/lib/rink.mjs says why the two
+ * fills exist: blue means "stand here" and red means a warning, and "one fill meant 'stand
+ * here' in one diagram and 'never move the puck through here' in another… a notation with
+ * two opposite meanings is worse than none." This region is not somewhere to go; it is the
+ * ice a turnover hands over, which is `the-risk-map`'s sense of red exactly.
+ */
+const LAST_BEHIND = [
+  { at: 'centre-ice', dx: -16, dy: 34 },
+  { at: 'centre-ice', dx: -16, dy: -34 },
+  { at: 'goal-line::far', dy: -34 },
+  { at: 'goal-line::far', dx: -7, dy: -20 },
+  { at: 'goal-line::far', dx: -7, dy: 20 },
+  { at: 'goal-line::far', dy: 34 },
+];
+
+const theLastPlayerBack = {
+  id: 'the-last-player-back',
+  title: 'The last player back',
+  owner: OWNER,
+  half: false,
+  width: 1100,
+
+  caption:
+    'You are the last player back, drawn on the whole sheet with your own net at the left and the ' +
+    'end you are attacking at the right. You have the puck in the neutral zone, two of their ' +
+    'forwards are up on you — the nearer one is closing, and his route ends in two short bars rather ' +
+    'than an ' +
+    'arrowhead, which in this notation means he arrives and contains rather than carrying on ' +
+    'through you — and the shaded ice behind you holds none of your skaters at all. The only player ' +
+    'in it is your goaltender. That is the whole picture: lose the puck here and the two of them go ' +
+    'the other way through all of that ice with nobody but him in front of them. So the instruction ' +
+    'is a conditional rather than a ban on carrying — if losing the puck means an odd-man rush ' +
+    'against you, the move is off, always — and the question to ask is not whether you can beat the ' +
+    'man in front of you but what is behind you if you do not. The puck is drawn on the side of you ' +
+    'away from the pressure, which is where it belongs whatever you decide to do next. ' +
+    'Three things the drawing cannot do. It cannot show the rush that follows, because a plan view ' +
+    'has no time in it: the shading is what is behind you now, not a prediction. Two of your ' +
+    'teammates are drawn far up the ice to show what being ahead of the puck looks like, and the ' +
+    'other two are not drawn at all, because where they stand varies and is not the point — what ' +
+    'makes this the situation is only that none of the four is behind you. And you are drawn as a ' +
+    'defenceman because a shape had to be chosen and this notation has no neutral one; a forward ' +
+    'can be the last player back just as easily. ' +
+    '⚠️ How much individual puck carrying a team wants is a coaching choice and not a law of ' +
+    'hockey, and it varies enormously. Some coaches want defencemen skating the puck out of the ' +
+    'zone whenever the lane is there; others want the first available pass, every time, with no ' +
+    'exceptions. Some want wingers attacking one-on-one on the wall, others want everything chipped ' +
+    'behind the defence for a forecheck. What is assumed here is a possession-oriented breakout ' +
+    'with a two-one-two forecheck, and the honest answer is that this is your coach\'s call. Ask. ' +
+    '⚠️ And if the decision you take turns into a battle and that battle reaches the boards, this ' +
+    'document\'s override outranks every word of it: never turn your back to the wall and never ' +
+    'duck, and neither prohibition is a rule for fast checkers only. Get your skates parallel to ' +
+    'the wall and take the contact on your forearm and hip, head up and chin off your chest.',
+
+  describe:
+    'The whole sheet. Your own net is at the left with your goaltender in his crease, and the net ' +
+    'you are attacking is at the right with their goaltender in his. One of your own defencemen, an ' +
+    'open triangle, has the puck in the neutral zone a little to your own side of the centre red ' +
+    'line and toward the top of the picture; the puck is a small solid dot about six feet from him, ' +
+    'on the opposite side of him from the pressure. Two opposition forwards, solid circles, stand ' +
+    'up-ice of him toward the middle of the sheet, about sixteen feet apart from each other. The ' +
+    'nearer of the two has a plain route running toward him that stops about eight feet short and ' +
+    'ends in two short bars rather than an arrowhead. Two of your own forwards, open circles, stand ' +
+    'well up the ice inside the attacking zone. Everything behind the defenceman — from a line a few ' +
+    'feet behind him back to your own end boards, across most of the width of the ice — is shaded ' +
+    'red with a dashed edge and carries no label; the only player standing inside it is your own ' +
+    'goaltender. The remaining skaters on both teams are not drawn, because the section does not ' +
+    'fix where they stand. No other routes are drawn, and the carrier has none of his own.',
+
+  zones: [
+    { points: LAST_BEHIND, danger: true },
+  ],
+
+  players: [
+    { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 } },            // (-85, 0)
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },   // (85, 0)
+    // ⚠️ LABELS COST NEARLY THREE TIMES WHAT THEY DO IN THE REST OF THIS FILE.
+    // `placeLabels` bills 0.56 of the type size a character, and at `half: false` that size
+    // is 2.8 * 1.7 = 4.76 ft rather than the half-sheet 2.8 — so 2.67 ft a character against
+    // 1.57. Everything below is sized against that.
+    //
+    // ⚠️ THE GOALTENDER DELIBERATELY CARRIES NO LABEL, and this is the one that would have
+    // been most worth having: with the zone unlabelled, "the only one back" on him is the
+    // sentence the picture is making. It cannot be written. At 17 characters it is 45.4 ft
+    // wide, and the placer centres a label on its player's x, which is -85 — so the box
+    // would run from about -108 to -62 and be clipped by the left edge of the frame at -100.
+    // `the-privileged-area` in rules_primer.mjs records exactly that happening and being
+    // seen only in a render. Even 'the only one' (12 characters, 32 ft) reaches -101. So the
+    // claim goes in the caption, which says it twice.
+    { id: 'D', pos: 'D', at: LAST_YOU, label: 'you' },
+    { id: 'F', team: 'opp', pos: 'F', at: LAST_O1, label: 'pressure' },
+    // No label on the second: his position carries him, and two labelled opponents in the
+    // middle of an otherwise empty neutral zone read as a system rather than as two players
+    // arriving. `describe` names him.
+    { id: 'F', team: 'opp', pos: 'F', at: LAST_O2 },
+    // Generic `F`, per the style guide's "where a diagram genuinely does not distinguish
+    // individuals". `F1`/`F2` would number three forwards this section never sets up, and
+    // `A1`/`A2` is reserved for attackers the section counts — it counts nobody.
+    //
+    // ⚠️ 'ahead of the puck' IS 17 CHARACTERS AND SO 45.4 ft WIDE — the widest label in this
+    // file by a long way, and it is kept because it is the label that does the teaching.
+    // Centred on x = 34 it spans about x 11 to 57, comfortably inside the frame. It may
+    // clip the near end-zone circle: at the (0, -8) slot its right-hand corner sits about
+    // 12.9 ft from the dot at (69, 22) against a 15 ft radius. That is survivable — the
+    // label halo breaks the arc behind the text rather than the arc running through the
+    // letters, which was rendered and confirmed for `the-puck-decides-not-you` above — but
+    // it is a prediction about a slot the placer has not been watched choosing. LOOK AT IT.
+    { id: 'F', pos: 'F', at: LAST_MATE_1, label: 'ahead of the puck' },
+    { id: 'F', pos: 'F', at: LAST_MATE_2 },
+  ],
+
+  routes: [
+    { from: LAST_O1, to: LAST_O1_TO, kind: 'pressure' },
+  ],
+
+  puck: LAST_PUCK,
+};
+
+export default [puckOnTheFarSide, wherethePuckIs, youCannotBeatTwo, theLastPlayerBack];

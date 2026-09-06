@@ -149,6 +149,12 @@ The first of those tells is drawn in [Neutral Zone Systems](../systems/neutral_z
 
 An honest note: the pure 1-3-1 neutral-zone trap is far less common now than its reputation suggests, and most modern teams use trap *elements* — a 1-2-2 with a heavy middle-lane emphasis — rather than a full trap. Watch for the behaviour rather than trying to match a diagram. See [Neutral Zone Systems](../systems/neutral_zone_systems.md).
 
+Two more pictures make that instruction concrete rather than contradicting it. Both are a 1-2-2 — the same five players, the same name — and what separates them is depth and intent. In the first, the two middle forwards are up near the opposing blue line. In the second, they have dropped back to the centre red line, and the structure has given up on stopping the attack — the carrier is allowed to skate, and steered to a wall. That much you can read from a seat. What neither picture can show you is the part that actually decides which one you are watching — whether that lone forechecker is closing or gliding — so set the two shapes against each other, then go back to watching the players.
+
+![](diagram:nz-1-2-2-containment)
+
+![](diagram:nz-1-2-2-trap)
+
 ### What is their power-play formation? Count the players at the point.
 
 The **point** is the area just inside the blue line. The **half-wall** is the boards roughly level with the faceoff dot. The **bumper** is the player in the middle of the ice between the half-walls, roughly in the high slot.
@@ -159,11 +165,13 @@ Count the players standing near the blue line once the power play is set up:
 - **Three high** — an **umbrella**: one in the middle at the point and two on the flanks *below* him, forming an arc rather than a flat line, with two low. How far the flanks drop varies — barely, in the classic version with both defencemen out wide; all the way to the tops of the circles in the modern one. A true umbrella has **no bumper**; that middle high player is at the top of the umbrella, not in the slot. See [Special Teams](../systems/special_teams.md).
 - **Four players loaded onto one side of the ice** — an **overload**, working the puck along one wall.
 
-The first two of those are drawn in [Special Teams](../systems/special_teams.md), with the four penalty killers left out of both so that the shape reads on its own.
+All three of those are drawn in [Special Teams](../systems/special_teams.md), with the four penalty killers left out of each so that the shape reads on its own.
 
 ![](diagram:pp-131)
 
 ![](diagram:pp-umbrella)
+
+![](diagram:pp-overload)
 
 For the penalty kill, count how the four killers are shaped:
 
@@ -171,11 +179,13 @@ For the penalty kill, count how the four killers are shaped:
 - **A single player at the top, two in the middle, one low** — a **diamond**. Teams switch to a diamond against a 1-3-1 specifically because a box leaves the bumper unmarked in the middle of the ice.
 - **Three killers in a tight triangle near the net plus one who pressures whoever has the puck** — a **wedge+1**. Watch for the handover rather than the chase: when the puck moves the pressuring player stops and the nearest triangle player steps out in his place. One killer following the puck all the way around the perimeter is not the shape working — it is the shape broken. Expect the fourth player to look different from team to team: some send him straight out from the net at the puck, some sweep him across the top of the zone to keep the power play on one side, some let him roam out to the wall and the point.
 
-The box and the diamond are drawn in [Special Teams](../systems/special_teams.md), both against the same 1-3-1, so that the two can be set side by side. The fill has swapped since the two pictures above: here the four killers are the unfilled team and the power play is the filled one.
+All three are drawn in [Special Teams](../systems/special_teams.md), each against the same 1-3-1, so that they can be set side by side. The fill has swapped since the pictures above: here the four killers are the unfilled team and the power play is the filled one. **The third caption is written for the four killers, not for you in the stands** — the shot-blocking technique in it belongs to [Special Teams](../systems/special_teams.md) rather than here. From a seat you are reading the triangle, the fourth player, and whether the handover happens when the puck moves.
 
 ![](diagram:pk-box)
 
 ![](diagram:pk-diamond)
+
+![](diagram:pk-wedge-plus-1)
 
 See [Special Teams](../systems/special_teams.md).
 
@@ -196,6 +206,10 @@ The five jobs are drawn as a shape in [Breakouts](../systems/breakouts.md), froz
 - **Is the weak-side winger heading up ice early?** That is a **stretch** — trading support for speed.
 - **Does the second defenceman offer a D-to-D pass?** Watch whether they present a target on the far side or stay glued to the net.
 
+That first landmark is the routinely misread one, and the reason is that the right answer moves with the structure. [Winger](../positions/winger.md) draws the same player three times on the same wall — deep between the hash marks and the goal line, higher up toward his own blue line, and gone up ice altogether — one for each of three breakout structures, with only one of the three on the ice at any moment. Use it as a list of the places a winger can legitimately be, not as a target he is missing.
+
+![](diagram:winger-wall-depth-by-system)
+
 Then watch what the retriever chooses: a **rim** (a hard puck sent *onward* around the boards), a **reverse** (a puck sent *back* against the flow), a D-to-D, a direct pass to the wall, or a skate-out. Ask which forechecker made that choice necessary. See [Breakouts](../systems/breakouts.md).
 
 ### Entries at the blue line — the most under-watched thirty feet in hockey
@@ -209,6 +223,12 @@ So when the puck approaches the blue line, watch:
 - **On a dump-in, how many attackers actually chase?** A dump with one chaser is a change of possession dressed up as a play.
 - **Offside** requires **both skates** to have completely crossed the blue line before the puck completely crosses it. One skate on or behind the line keeps you onside, and a skate lifted in the air over the neutral zone still counts as onside — **in the NHL and IIHF; under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 skate *contact* is required, so the lifted skate is offside in two books of the four.** Watch how attacking wingers deliberately drag a trailing skate.
 
+Two pictures, one for each side of the line. The first is the attack arriving — three lanes, the two wide players already on the blue line, the carrier a stride behind them, and the wide players onside because a skate is still on the line — which is the stronger reason of the two, since a skate on or behind the line keeps you onside whatever the puck does. The second is the defender's gap, drawn at the centre red line, which is where the second bullet above says it is usually won. **The two are drawn from opposite benches:** in the first the unfilled team is the one attacking the line, in the second it is the one defending it.
+
+![](diagram:entry-three-lanes)
+
+![](diagram:rush-gap-and-angle)
+
 See [Zone Entries](../systems/zone_entries.md).
 
 ### Faceoff alignments — read them before the drop
@@ -218,6 +238,12 @@ There are around **56 faceoffs in an average NHL game** — [Faceoffs](../system
 - **The wingers' body angle tells you the plan.** A winger squared to the boards is expecting the puck there. A winger cheating towards the middle is expecting a tie-up and a scrum.
 - **At an offensive-zone draw, work out which defenceman is the shooter.** In the common default alignment both defencemen stand at **the point** — the area just inside the blue line — and the one on the *draw side* is the shooter, with feet already set and stick already loaded before the puck drops, while the far-side one holds the line as the safety against a counterattack. Offensive-zone alignments differ from team to team, so take that as an opening read and then watch where the puck is actually pulled on a clean win. See [Faceoffs](../systems/faceoffs.md).
 - **In the defensive zone, watch which winger is on the boards side.** That is the player who has to beat the opposing defenceman to a puck that gets back to the point.
+
+Both of those alignments are drawn in [Faceoffs](../systems/faceoffs.md), each at the right-hand circle and each frozen before the drop, and in both the unfilled five are the team the picture is drawn for. Take them as the common default and then check them against what this team actually does — the captions say so themselves. The defensive-zone one also shades the circle that the players not taking the draw have to keep clear of — and its caption sets out how the four rule books differ on whether touching the line counts, which is worth knowing before you decide from a seat that you have seen an encroachment.
+
+![](diagram:faceoff-ozone-alignment)
+
+![](diagram:faceoff-dzone-alignment)
 
 One rules detail worth knowing while you watch: faceoff ejections are caused by moving before the drop, improper stick placement, or **encroachment by a teammate** — a winger creeping into the circle gets the *centre* thrown out of the draw. A second violation by the same team on the same draw is a bench minor in the NHL — an individual minor under USA Hockey Rule 613(d). **The IIHF answer to the first violation changed with the 2026/27 edition.** The **IIHF Official Rule Book 2026/27**, published June 2026, has the offending team's draw-taker *"ejected from the face-off circle"* (IIHF 2026/27 Rule 76.6) — the NHL's answer. The **2025/26** edition it replaced ejected nobody: it gave the offending team a warning instead. Under either edition a **second** violation by the same team on the same draw is a **bench minor** for delay of game (IIHF Rule 76.7), so it was never free. Closing your hand on the puck is a minor penalty rather than a faceoff violation **under the NHL and IIHF books** (Rule 67.2) — and a **penalty shot** rather than a minor when the puck is inside the offending team's own goal crease, or an awarded goal if that team's net is empty (Rules 67.2(ii), 67.4, 67.5, 63.6). **Under USA Hockey Rule 618(a) it is not a penalty at all outside the crease** — *"Play shall be stopped and a last play face-off shall occur"* — though that book reaches a penalty shot or optional minor inside it (618(a), 614(b)). See [Faceoffs](../systems/faceoffs.md).
 
@@ -247,6 +273,10 @@ The half-second after a shot is the highest-value moment in the game and the one
 - **Which team reacts to the rebound first?** Rebound goals go to whoever moved before the puck landed.
 - **What does the weak-side defenceman do?** Under the house-default low zone collapse the backdoor is theirs; under man-on-man it belongs to whoever's check went there — **the person changes with the system and the requirement does not.** So watch whether the far post is covered rather than whether that particular player is covering it, and note that the discipline to *not* go to the puck is a learned skill. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md), which sets the two systems side by side.
 - **On a save, does the goaltender freeze, direct it to the corner, or leave it in the slot?** Directing rebounds is a deliberate skill, not luck. See [Goaltender](../positions/goaltender.md).
+
+That last question has a geography, and [Goaltender](../positions/goaltender.md) draws it: the shaded area is the one a rebound must not land in, with an attacker already standing in it waiting. **That caption is written for the goaltender rather than for you** — from a seat you are watching only where the puck ends up and who moved first.
+
+![](diagram:goalie-rebound-corners-not-slot)
 
 ---
 
@@ -337,6 +367,10 @@ Watch for:
 - **Faceoff technique**, and then what they do in the second after the draw — the follow-up is a bigger part of a centre's faceoff value than the draw itself.
 - **The backcheck.** A centre is usually the first forward back. Watch which lane they take — but do not grade it, because **which backchecker owns which lane is a coaching choice, not a law.** Under the standard positional assignment, which is the default assumed throughout this guide, the centre takes the middle lane and the wingers take the outside ones; other teams give the middle to whoever is first back, and others pick up man-on-man from the puck outward. So a centre coming back along the boards may be doing exactly their job. What is invariant under every version is that somebody owns the middle — so watch whether anybody does. See [Center](../positions/center.md) and [Defending the Rush](../systems/defending_the_rush.md), which sets out the named team backchecking systems that decide which assignment applies.
 
+The three lanes are drawn in [Defending the Rush](../systems/defending_the_rush.md), with the middle one shaded and all three backcheckers drawn. The most dangerous player in it is not the puck carrier — it is the attacker driving the middle lane without the puck, who gets missed precisely because the puck is somewhere else. He is the clearest case in the game of what the camera will not be showing you.
+
+![](diagram:rush-backcheck-lanes)
+
 See [Center](../positions/center.md).
 
 ### Watching a winger
@@ -363,6 +397,10 @@ Watch for:
 - **How deep they go in the offensive zone.** Depth is the clearest read there is on how committed a defenceman is, and there are three depths that matter. Just inside the blue line — **the point** — is the default: at once the low-to-high outlet, the shooting threat that stops the defence collapsing, and the safety net against a counterattack. Down at the **top of the circle**, meaning the edge of the faceoff circle nearest the blue line, is the activated position, taken to shoot from a better angle, to walk the line toward the middle or to receive in the high slot — and still recoverable. Below the circles is always a commitment, and below the hash marks a defenceman is effectively a fourth forward who cannot get back. So watch whether a forward has taken the blue line for that defenceman *before* they go down there rather than after. **How deep a team lets its defencemen go is a coaching choice** — some give both a standing green light, some the strong-side defenceman only, some forbid going below the top of the circles — so read what this team allows rather than grading it against what you would do. See [Offensive Zone Play](../systems/offensive_zone_play.md), which sets out the three depths and who covers the vacated line.
 - **Net-front play.** Body position, stick on the opponent's stick, eyes on the puck rather than the player.
 
+The three depths are drawn in [Defender](../positions/defender.md), with the band below the circles left empty on purpose. Read it as the three places to check rather than as a ranking of them: which of the three this team allows is the coaching choice, and working out where their line falls is the thing you are watching for.
+
+![](diagram:defender-three-depths)
+
 See [Defender](../positions/defender.md).
 
 ### Watching a goaltender
@@ -375,6 +413,10 @@ Watch for:
 - **Movement type.** Shuffles for small adjustments, T-pushes for larger ones, and whether they are set and stopped when the shot is released. A goalie moving at the moment of release is beaten far more often than a goalie who is set.
 - **Rebound control.** Do pucks come back into the slot, or get directed to the corners or frozen?
 - **Puck-handling behind the net.** In the NHL and IIHF play, the **trapezoid** (goalkeeper's restricted area, NHL Rule 27.8; IIHF Rule 27.7) limits where a goalie may play the puck behind the goal line; the only exception is a goalie who maintains skate contact with the crease. The KHL is commonly said to have it too, though that one is unverified here: no KHL rulebook was available to check it against. **Neither North American governing body's book has one.** The words *"trapezoid"*, *"restricted area"* and *"designated area"* appear nowhere in USA Hockey's playing rules or its Casebook, and Hockey Canada's playing rules print *"designated area"* once only, for the spot Rule 5.4(b) stations a Goal Judge in. How much rec, beer-league and youth hockey that adds up to is a question about leagues rather than about books, and this document has no count for it. Under either of those books a puck-handling goalie has far more freedom than the one you are watching on TV — **though no trapezoid is not no restriction.** USA Hockey **Rule 614(c)** makes it a delay-of-game minor for a goalkeeper who falls on or gathers the puck and causes a stoppage where *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"* **or where *"(3) The puck is outside the boundaries of the 'goalkeeper's privileged' area"*** — that book's own restricted area, which its Note to 614(c) draws by *"connecting the end zone face-off spots with an imaginary line and imaginary lines from each face-off spot running perpendicular to the end boards"*, so the corners sit outside it. Hockey Canada's **Interpretation 3 to Rule 10.1(a)**, at its fifth item, is blunter: *"When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."* So under those books their goalie may go and fetch the puck out there but may not sit on it. **🇬🇧 In England and Wales, treat this as unsettled.** The IIHF book carries the rule (Rule 27.7, not the NHL's 27.8), but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* — that is the 2024-25 edition — and **neither the 2025-26 nor the 2026-27 In-House Rules mention it at all**, both editions having been searched for it, though their Introduction says *"Unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. Assume it binds, ask your league, and look behind the net to see whether the lines are painted at all. Treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
+
+The shape itself is drawn in [Rink Map and Glossary](../foundation/rink_map_and_glossary.md), whose caption carries the NHL and IIHF dimensions and the same book-by-book scope as the paragraph above — so read the picture as the NHL and IIHF one, and then look behind the net in front of you.
+
+![](diagram:the-trapezoid)
 
 See [Goaltender](../positions/goaltender.md).
 

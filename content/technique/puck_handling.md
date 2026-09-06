@@ -795,6 +795,8 @@ If losing the puck means an odd-man rush against you, the move is off. Always.
 
 > **A coaching choice, named:** how much individual puck carrying a team wants varies enormously. Some coaches want defencemen to skate the puck out of the zone whenever the lane is there; others want the first available pass, every time, with no exceptions. Some want wingers to attack 1-on-1 on the wall; others want everything chipped behind the defence for a forecheck. The default assumption here is a possession-oriented breakout with a **2-1-2 forecheck**, but the honest answer is that this is your coach's call. Ask.
 
+![](diagram:the-last-player-back)
+
 ---
 
 ## Handling Bad Pucks and Playing Your Position
