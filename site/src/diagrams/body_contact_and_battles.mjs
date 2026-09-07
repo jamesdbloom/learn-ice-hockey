@@ -760,7 +760,7 @@ const cornerEscapeRoutes = {
 // Arriving at the wall on an angle
 // ---------------------------------------------------------------------------
 //
-// §6 "Receiving a Hit Safely", Case 1 — the first and best of USA Hockey's three ranked
+// §6 "Receiving a Hit Safely", Case 1 — the first and best of THIS DOCUMENT'S three
 // cases, quoted there in the manual's own words:
 //
 //   "**Case 1 — best of all: arrive on an angle, not perpendicular.** *"Skating into the
@@ -860,7 +860,8 @@ const angleIntoTheCorner = {
     'the only thing drawn is that line. It bends: it sets off pointed at the corner and finishes ' +
     'running along the boards rather than at them, meeting the wall about twenty-two degrees off ' +
     'parallel where the same journey drawn as a straight line would meet it at about fifty. ' +
-    'That is the first and best of the three cases USA Hockey ranks for meeting a wall, and it is a ' +
+    'That is the first, and best, of three cases for meeting a wall — the cases themselves come from ' +
+    'USA Hockey\'s material, the ordering and the ranking do not — and it is a ' +
     'decision made several strides out rather than at the boards, which is why the route is drawn ' +
     'from so far away: skating into the corners at an angle greatly reduces the risk of hitting the ' +
     'boards helmet first, and a leg or a side or an arm absorbs most of the impact instead. Better ' +
@@ -876,7 +877,8 @@ const angleIntoTheCorner = {
     'back turned makes it a hit from behind, and USA Hockey addresses its warning about those to ' +
     'the player delivering one — even a light hit from behind could inflict a severe head or neck ' +
     'injury; and a chin tucked to the chest straightens the cervical ' +
-    'spine, which USA Hockey ties to almost all on-ice cervical spine injuries on head-on contact ' +
+    'spine, which USA Hockey — citing a six-patient case series that does not itself use that ' +
+    'quantifier — ties to almost all on-ice cervical spine injuries on head-on contact ' +
     'with the boards or a goal post and says can happen at walking speed. So, in every league, ' +
     'checking or not — because unexpected contact happens in non-check hockey too and the boards ' +
     'and the goal posts are just as hard there — get your skates parallel ' +

@@ -63,8 +63,23 @@ POINTERS: tuple[tuple[str, str], ...] = (
     (r"(?:sources?|references?) at the (?:foot|end|bottom)", "the Sources trailer"),
     (r"notes? on verification", "a dropped ## Notes on verification section"),
     (r"the verification note", "a dropped verification paragraph"),
-    (r"\bthe (?:table|column|row|chart) above\b", "a table that may be a pointer"),
-    (r"\bthe (?:table|column|row) below\b", "a table that may be a pointer"),
+    # ⚠️  THE MODIFIER SLOT IS NOT OPTIONAL DECORATION -- it is 11 of the 15 instances.
+    # These patterns were anchored to ADJACENT words ("the table below"), so any modifier
+    # between the article and the noun defeated them. Measured over content/ on 2026-09-07:
+    # bare form 4, modified form 11 -- "the comparison table below", "the broken-stick row
+    # above", "the stick-fouls list above", "the game-state table below", "the checking
+    # table above", "the harmonised list below", "the do-not-buy-used list above", "the
+    # technique list below/above", "the last row below". The tool saw 27% of its own
+    # construction. TWO of the misses pointed at the only two tables the renderer actually
+    # DROPS: defensive_zone_coverage.md:96 -> the 6-column table at :367, and
+    # rules_primer.md:876 ("the broken-stick row above") -> the 6-column, 23-row table at
+    # :846. A listener was sent to a row they had never heard.
+    # ⚠️  The SUPPRESSION rule was never the bug and is deliberately conservative (see
+    # below): it under-suppresses for a document with a mix. The failure was upstream, here.
+    (r"\bthe (?:[a-z][a-z-]* )?(?:table|column|row|chart|list) above\b",
+     "a table that may be a pointer"),
+    (r"\bthe (?:[a-z][a-z-]* )?(?:table|column|row|chart|list) below\b",
+     "a table that may be a pointer"),
     (r"\bnot th(?:is|e) table\b", "a table that may be a pointer"),
     (r"\bin th(?:is|e) table\b", "a table that may be a pointer"),
     (r"\bthe (?:face-?off |icing |offside )?rows? above\b", "a table row"),

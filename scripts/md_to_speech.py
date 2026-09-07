@@ -3534,10 +3534,38 @@ def spoken_text(path: Path, doc_id: str | None = None, source_label: str | None 
     # prescribed. Agents worked around it silently and nobody reported it; it was
     # found by the coordinator running its own brief's snippet verbatim.
     path = Path(path)
-    doc_id = doc_id or path.stem
+    # ⚠️  DERIVE doc_id THE WAY discover() DOES, NOT AS path.stem. The old default gave
+    # "zone_entries" where the manifest's owner resolves to "systems__zone_entries", so
+    # _diagram_is_away() compared two strings that could never match and returned True for
+    # EVERY diagram in EVERY document. Measured on content/systems/zone_entries.md, whose
+    # 16 diagrams are all its own: the default reported "Diagram, from" x16 and "Diagram."
+    # x0; the correct doc_id reports x0 and x16. A CLEAN INVERSION, across all 37 documents.
+    # It mattered because the style guide's caption rule turns on "whose voice is this
+    # caption in?" -- a test you apply to BORROWED captions. Through this helper a reviewer
+    # saw every caption flagged as borrowed and none flagged as native: the signal was
+    # destroyed in both directions, and the agent that found it nearly filed the artefact
+    # as a content defect in zone_entries.md before checking the script.
+    # ⚠️  THIS IS THE SECOND DEFECT IN THIS ONE FUNCTION, and the comment directly above
+    # records the first. The helper written to stop reviewers hand-rolling their own
+    # extraction has now manufactured findings twice.
+    doc_id = doc_id or _doc_id_for(path)
     source_label = source_label or str(path)
     chunks, _report = transform_document(path, doc_id, source_label)
     return re.sub(r"<[^>]+>", "", " ".join(build_ssml(c) for c in chunks))
+
+
+def _doc_id_for(path: Path) -> str:
+    """The manifest's doc_id for a content path -- 'systems/zone_entries.md' -> 'systems__zone_entries'.
+
+    Mirrors discover(): relative to the content root, suffix stripped, '/' -> '__'.
+    Falls back to the stem for a path outside content/, which is the old behaviour and is
+    correct there (nothing outside content/ owns a diagram).
+    """
+    path = Path(path)
+    parts = path.with_suffix("").parts
+    if "content" in parts:
+        return "__".join(parts[parts.index("content") + 1:])
+    return path.stem
 
 
 def spoken_sentences(path: Path, doc_id: str | None = None,

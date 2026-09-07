@@ -6415,6 +6415,236 @@ other headline result: **the repairs were more defective than the work.** The op
 **a census whose result surprises you is a census to re-derive before reporting**, and *"0 of 9"*
 or *"0 of 286"* is the shape that should trigger it.
 
+### ⚠️ AND THE CREASE SWEEP'S OWN NUMBERS WERE REFUTED BY THE AGENT SENT TO ACT ON THEM
+
+The sweep reported `goalie-front-door-back-door`'s `F2` as **0.16 ft inside** the crease on the body
+and **0.54 ft** on the halo. The repairing agent derived the crease from `rink.json` and `endZone()`
+independently and got: **body CLEAR by 0.14 ft** — the sweep had the sign backwards — and **halo
+0.834 ft inside**, not 0.54.
+
+⚠️ **The finding held; both numbers were wrong, one of them in direction.** So the chain runs:
+my clearance figures were wrong (body-only, ignoring the halo) → the sweep corrected those and got
+its own instance numbers wrong → the repairing agent corrected those. **Three measurement layers,
+each catching the one above, and the corpus was never the thing at fault.**
+
+**The fix moved the glyph rather than the caption** — `dy: -7` → `dy: -9`, giving **1.150 ft of
+clearance for the full 3.875 ft of ink**, and recomputed the pass endpoint to stop 3.1 ft clear of
+the receiver. ⚠️ **The caption needed no change: it claimed the player was "five feet out from the
+goal line and clear of the crease", and that is now literally true.**
+
+⚠️ **AND IT FOUND THE MODULE'S HEADER NOTE WAS STALE** — it described a crease-drawing bug
+(*"1 ft inward … apex 2.53 ft out"*) **already fixed in the committed renderer**. Corrected. **That is
+the second false module header found in two rounds**, and this one would have produced another wrong
+clearance calculation for whoever read it next.
+
+## ⚠️ THE CREASE SWEEP — 8 of 797 skater glyphs, and MY clearance figures were the wrong ones
+
+Run because a cut diagram falsified `rink.json`'s own claim that *"no skater in the corpus is
+actually drawn in the paint."* **198 specs, 183 with glyphs, 797 skater glyphs tested** through the
+renderer's own `loc()` and the exact paths `playSvg` draws, cross-checked against built SVGs.
+
+⚠️ **THE HEADLINE IS NOT THE COUNT — IT IS THAT THE CLEARANCE FIGURES IN CIRCULATION ARE WRONG, AND
+I PUT THEM THERE.** I briefed three agents that a triangle reaches **4.0 ft** and a circle **3.275**.
+**Those are body-stroke only.** Every glyph also carries a **white halo** — 2.0 wide on triangles,
+1.95 on circles — drawn as opaque visible ink, and `boardsOutline()`'s own comment already says so:
+*"the halo takes a defenceman's apex to 4.6 ft where the clearance was derived for 4.0."* **True
+reach: circle 3.875 uniform, triangle 4.6 at the apex.** ⚠️ **Every clearance computed against 4.0 or
+3.275 anywhere in this project is understated.**
+
+**Findings: 8 of 797.** Four `D_GOALMOUTH` uses (halo only, ~0.21 ft, across four diagrams); two at
+dy=−7 grazing at rounding level; `pp-backdoor`'s `BD` (halo, ~0.17 ft); and ⚠️ **`goalie-front-door-
+back-door`'s `F2` with its SOLID BODY ~0.16 ft in the paint — whose own caption claims that player is
+*"five feet out from the goal line and clear of the crease."*** The picture does not clear it.
+
+⚠️ **AND THE AGENT FOUND A BUG IN ITS OWN CODE MID-SWEEP** — it computed the triangle's outward
+normal backwards, silently deflating the halo and under-reporting **2 instead of 8**. A unit test
+against the file's own documented 4.6 figure caught it. **It said so.** That is the standard.
+
+## ⚠️ THE SOURCE PASS — one disclosure STRENGTHENED, one attribution wrong
+
+Ten borrowed captions now voice their owners' figures in documents that never voiced them. All
+citations refetched live, 7 September 2026, browser UA — **no 403 fired, every URL 200.**
+
+**`oz-royal-road` — verified, and the corpus's hedge is now attested rather than inferred.** The
+agent went one hop upstream to Wells' own article and found his published table gives **27.80%** on
+an explicit *"shot on goal — yes"* basis, against NHL.com's **15.50%**. ⚠️ **15.50/27.80 = 55.8% and
+6.73/12.41 = 54.2% — consistent on-goal shares, so NHL.com's figures can only be the all-attempts
+versions of Wells' own table.** The corpus's *"counting all attempts rather than shots on goal"*
+qualification was previously an inference joined from a different article; **it is now the only
+reading that reconciles the two.** Wells also defines the royal road narrowly and zone-limited — the
+corpus said its sources *"describe something narrower"* as an inference, and **the author who
+computed the figure attests it.**
+
+⚠️ **`nhlnumbers.com` is a REDIRECT-HIJACK** — 200, final URL `puckpedia.com`, a different
+registrable domain. Nothing in the corpus links there; recorded so nobody going upstream trusts it.
+
+**`angle-into-the-corner` — both geometry figures re-derived and CONFIRMED** (21.99° and 49.47°
+against *"about twenty-two"* and *"about fifty"*), from `rink.json` anchors and the renderer's own
+control-point formula rather than from the comment block.
+
+⚠️ **PROVENANCE DEFECT: *"the three cases USA Hockey ranks"* is the CORPUS's structure, not USA
+Hockey's.** Both source lists were read in full. *Contact Confidence* is lettered A/B/C — three
+**situations, not ranked**, one of which is open ice, not a wall case. *"Angling In"* is item 1 of a
+**separate** three-item teaching list. **The corpus's Case 1/2/3 is a synthesis across both lists,
+reordered, with the open-ice case dropped and a preventive skating decision inserted at the top.**
+⚠️ **It is a GOOD synthesis and every quotation inside it is verbatim — the pedagogy is right.** What
+is wrong is crediting the *ranking* to USA Hockey. And it now travels: the caption is borrowed into
+`skating.md`, where no prose corrects it.
+
+**Minor, same class:** *"almost all on-ice cervical spine injuries"* is USA Hockey **restating
+Tator** — the Program Guide prints the citation inline. The owner handles this exemplarily; the
+caption does not, and `skating.md` has no prose that does.
+
+### ⚠️⚠️ THE REPAIR WAVE ITSELF NEEDED A SAFETY REVIEW — it introduced one critical and missed another
+
+Four documents were repaired for the illegal-check disjunction. A `safety-reviewer` then read the
+repairs, and found the wave was **not** self-certifying:
+
+⚠️ **IT INTRODUCED A CRITICAL, AND THE CAUSE WAS MY BRIEF.** I asked for *"use the boards to box them
+out"* to be fixed; the fix became *"**seal them against the boards** rather than using the boards to
+eliminate or pin them."* **That draws a line between "seal" and "pin" that no rulebook draws and
+ordinary English does not** — so the sentence instructs the reader to do a thing and then not do it,
+and the half a listener keeps is the imperative. **IIHF 101.1's actual boundary is PLAYER-CONTACT vs
+BOARD-USE**: two players *"are reasonably allowed to push and lean into each other"*, and may not use
+the boards to *"eliminate her from the play, push her into the boards, or pin her along the boards."*
+⚠️ **The repair also dropped *"push her into the boards"*, the middle limb of the rule.** And the same
+phrase sat unrepaired at two more sites, one of which stated the prohibited act as an explicit
+**permission**, voiced alone, against a player the block describes as facing the glass.
+
+**The correct construction was already twelve lines away in the same document: *"Seal the wall"* —
+the object is THE WALL.** All three sites now read that way.
+
+⚠️ **IT MISSED ONE ENTIRELY.** `defensive_zone_coverage.md` still said *"everyone else **finds a
+body**"* and told net-front players to *"stop looking at the puck"* — contradicting its own Common
+Mistakes and its owner, which says *"a defender who turns to look at the player they are boxing out
+has stopped defending the dangerous thing."* Fixed to *"keep eyes on it and box out the man."*
+
+⚠️ **AND TWO CLAIMS IN A REPAIR WERE WRONG ON THE BOOKS.** A repair cited Hockey Canada's *"in the
+same direction"* as authority that a deliberate box-out is legal — **dropping the word "incidental",
+which is the word doing the work** — while HC's *opposite* category, *"deliberate contact… with
+opposite-directional force"*, fits a net-front box-out better. And *"needs a checking league"* states
+a **necessary condition as sufficient**: NHL and IIHF **56.1** entitle a player to *"the ice he is
+standing on"*, so displacing a stationary opponent is interference **in any league**. Both fixed, and
+the *"full-checking leagues only"* flag deliberately left intact.
+
+**Propagation checked corpus-wide afterwards, and it is clean:** the old disjunction phrasing has
+zero hits; every genuine Hockey Canada definition carries *"incidental"*; the seven other files
+containing *"same direction"* use it in ordinary prose about skating, not as a citation.
+
+⚠️ **The reviewer found both of its strongest findings by comparing a document TO ITSELF** — a caption
+against its prose, a facts line against its own Common Mistakes. Its closing limit is the one worth
+carrying: ***"I have no method for a document that is internally consistent and consistently
+wrong."***
+
+### ⚠️ OPEN — "SEAL" WITH A PLAYER AS ITS OBJECT: one site left, and it needs a rules ruling
+
+A repair replaced *"seal them against the boards"* with *"seal the wall, not the winger"* in three
+places in `offensive_zone_play.md`, because **IIHF 101.1 forbids using the boards to *"eliminate her
+from the play, push her into the boards, or pin her along the boards"*** while expressly permitting
+two players to *"push and lean into each other"*. **The object of the verb is the whole distinction.**
+
+A corpus sweep for the same pattern found **most uses are safe** — the reader as *recipient*
+(*"sealing you against the boards"*), or space as the object (*"seal the route"*, *"seal the post"*,
+*"seal them in"* meaning in the zone). **One is not:**
+
+> `systems/forechecking_systems.md:511` — *"Read: Pinch when you can arrive on contact… so you can
+> play the puck or, **where your book allows a seal at all, legally seal the winger**"*
+
+⚠️ **It is hedged inline and in the same voiced unit, which is the pattern every repair in this class
+has aimed for — so it is NOT the naked defect the others were.** ⚠️ **And I under-checked it before
+recording it: the SAME document carries the rule 22 lines later at `:533`** — *"Where you may not
+check, or in women's hockey where IIHF 101.1's boards limb applies, a pinch is a play on the puck
+alone — the seal against the boards is not available to you."* **The two are consistent, and `:511`'s
+conditional points at exactly what `:533` states.**
+
+**So the residual question is narrow:** whether *"a seal"* means body position (legal under IIHF
+101.1's *"push and lean into each other"*) or board-pinning (legal nowhere). Both facts lines are
+voiced alone, so a listener who hears `:511` and not `:533` gets the conditional but not the rule.
+**A rules question, not a wording one — for `rules-verifier`, and lower priority than I first wrote.**
+
+**Do not sweep this.** The other ~14 uses of *seal* are correct and a blanket change would cost real
+instructions — `rink_map_and_glossary.md`'s *"a two-man forecheck can seal them"* is about **corners**,
+and `puck_support_and_spacing.md:517` describes what is being done **to** the reader.
+
+## ⚠️⚠️ THE CONTACT-VERB SWEEP — the disjunction is in FOUR documents, not one
+
+Run after round 68 shipped, on the handover a `safety-reviewer` named and explicitly declined:
+*"Nobody has run the equivalent sweep for the other contact verbs."*
+
+⚠️ **THE VERB SWEEP FOUND NOTHING. THE SHAPE SWEEP FOUND EVERYTHING.** ~660 document hits for *pin*,
+*seal*, *box out*, *rub out*, *finish your check* produced no finding. A **second, independent pass
+over the DISJUNCTION SHAPE** — *body/player … or/not … puck* — found all of them. **The verb list was
+a guess; the shape was the defect.** Record that, because the next sweep of this class should start
+from the shape.
+
+| document | the line | why it is critical |
+|---|---|---|
+| `hockey-iq/risk_management.md` | *"takes the body or the puck"* | ✅ fixed in round 68 |
+| `systems/offensive_zone_play.md:803` | *"Priority: Take the player or take the puck"* | ⚠️ renders as the **LAST UNIT OF ITS CHUNK** — the flag at `:805` is in the **next file**. The largest gap the pipeline can create. |
+| `systems/offensive_zone_play.md:828` | *"The governing principle is 'take the player or take the puck'"* + *"use the boards to box them out"* | the disjunction at the **highest emphasis the corpus offers**, against a winger the same section describes as facing the glass. IIHF 101.1 forbids using the boards to eliminate, push into or pin an opponent |
+| `positions/goaltender.md:1137` | *"Box out on rebounds — **find a body, not the puck**"* | the disjunction **as an imperative**, in the most collision-dense square metre on the ice — ⚠️ **and `goaltender.md` carries the constraint NOWHERE**, while `defender.md` and `defensive_zone_coverage.md` both carry it inline |
+| `technique/body_contact_and_battles.md` `042.ssml` | six units incl. *"Hit through, not at"* and the open-ice check technique | ⚠️ **a whole audio chunk teaching how to deliver a body check with no eligibility flag in it** |
+
+⚠️ **AND IT CORRECTED THE CALIBRATION CASE I GAVE IT.** I said `:455` was the defect. It is not — it
+is the *last* unit of `041.ssml` with its three `Rule:` lines immediately before it. **The gap is the
+next chunk.** A brief was wrong again; the agent checked.
+
+### ⚠️ A DEFECT CLASS NO CHECKER WATCHES: THE CHUNK BOUNDARY
+
+`md_to_speech.py` packs units to a billed-character budget. **A safety flag one unit away survives; a
+safety flag one CHUNK away does not** — and the boundary moves whenever anything earlier in the file
+is edited. **So a flag placed *near* an instruction can drift out of position without anyone touching
+either line.** The only durable fix is folding the constraint **inline into the instruction itself**,
+which is what every repair in this class has now done.
+
+**Nothing watches this.** `check_absolutes` needs a book before a *cap*; there is no cap. A grep over
+markdown cannot see a chunk boundary at all.
+
+### The three-case discrimination that stopped a sweep becoming a cull
+
+Of 196 unflagged contact units in the facts layer, **the overwhelming majority are correct**: legal
+competitive contact expressly permitted by USA Hockey 604(c)'s Note — angling, gap-closing,
+*"maintaining established body position"* — or coverage vocabulary (*"take the man"* meaning cover
+him), or the reader as the **recipient**. ⚠️ **Flagging those would have cost real instructions.**
+`winger.md`'s *"backside into them"* was tested and cleared under IIHF 101.1, which permits two
+players in pursuit to *"push and lean into each other provided that 'possession of the puck' remains
+the sole object."*
+
+### ⚠️ ONE DIVERGENCE NOBODY ASKED ABOUT, AND IT IS OPEN
+
+⚠️ **RETRACTED IN PART, 2026-09-07, by `rules-verifier` against primary text. The premise below was
+a FALSE NEGATIVE EXISTENCE CLAIM — mine, in a brief.** It read *"has no counterpart to 604(c)'s
+legal-competitive-contact Note … none found in `hc.txt`."*
+
+**Hockey Canada DOES write the counterpart**, in Rule 7.3's own preamble two lines above 7.3(a)
+(`sources/hc_layout.txt:4718`, `sources/hc.txt:6007`): *"Body contact is incidental contact of two
+opposing players in pursuit of the puck on the ice in the same direction. If, in the opinion of the
+Referee, incidental contact has occurred, no penalty will be assessed."*
+
+**The DIRECTION survives; the claim of absence does not.** The two counterparts are not the same
+width, and that is the real finding:
+
+| | USA Hockey 604(c) Note | Hockey Canada 7.3 preamble |
+|---|---|---|
+| Character | *"simply **maintaining established body position**"* — deliberate, sustained | *"**incidental** contact"* — by definition not deliberate |
+| Geometry | physical engagement, angling, closing the gap | *"in the **same direction**"* |
+| Penalty limb | 604(c) writes *"body checks"* | 7.3(a) writes four verbs — *"body-checks, bumps, shoves, or pushes"* |
+
+So Hockey Canada is **narrower in permission and wider in penalty**, and its only interpretation
+permits steering *"without actually touching or body-checking them"* (Interpretation 1 to 7.3(a)).
+
+⚠️ **And the corpus already had this right.** `body_contact_and_battles.md:1483` quotes the preamble,
+quotes Interpretation 1, states that Hockey Canada is narrower, and carries the division scope inside
+the same sentence. `rules-verifier` examined every document said to rely on the American framing and
+found **none that would seriously mislead a Hockey Canada reader**, and declared `:1483` should not be
+touched. **The row is closed, not actioned.**
+
+⚠️ **Why this row is left standing rather than deleted:** it is the clearest example in the plan of
+the failure CLAUDE.md's *"the briefs are more defective than the corpus"* section exists to prevent —
+a negative existence claim, written into a brief from a grep that did not find what was there,
+which would have sent an agent to add a divergence the corpus does not have. `commit-gate` caught it
+because a **staged plan row and a staged review record disagreed inside one commit.**
+
 ## ⚠️⚠️ TIER 0-R ANSWERED BY READING, NOT MEASURING — and the defect is not verbosity
 
 Four documents read line by line (`goaltender.md`, `rules_primer.md`, `risk_management.md`,
@@ -6830,7 +7060,7 @@ not checked.**
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,140,193 words — 86.4 hours of
+These outrank everything below. The corpus is **37 documents and 1,140,808 words — 86.4 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
@@ -12856,3 +13086,607 @@ unsourced, and the same diff added a fourth instance of it, unhedged, in a facts
       the house style.**
 - [ ] ⚠️ **A record section titled "a defect we added" is not a general absolution.** It covered one
       instance and read as though it covered the class.
+
+### T0-P1 — the corpus is STRICTER than the books on pinning (found 2026-09-07, coordinator, UNVERIFIED)
+
+Hockey Canada Interpretation 3 to Rule 7.5(a) (`sources/hc.txt:6213`): *"Pinning a player to the
+boards at low speed and with minimal impact is permitted, even if contact is initiated from behind
+(except under Rule 7.3 – Body-checking, as applicable)."*
+
+`content/foundation/rules_primer.md:923` carries this correctly and in full.
+`content/technique/body_contact_and_battles.md` appears to contradict it:
+
+- `:978` — *"what you pin is the puck rather than the player. That restriction is what keeps the
+  contact legal in **every league**."*
+- `:966` — the facts line, **voiced ALONE with a 300 ms break either side**: *"pin the puck, not the
+  player"* as a bare imperative, **no league scope**.
+
+Hypothesis (mine, sent to `rules-verifier` for refutation): the restriction is a **safe harbour legal
+everywhere** (true, worth teaching) stated as a **requirement everywhere** (false). That is **NN7**.
+
+⚠️ **Note the DIRECTION.** This makes the corpus stricter than the rulebooks — the inverse of the
+failure every other convention here guards against, and the likely reason no reviewer stopped on it
+in 68 rounds. It is the same direction as the round-59 disclosure finding, where every tested
+absence-of-evidence claim made the corpus look *less* supported than it was.
+
+⚠️ **Do NOT "fix" this by deleting the restriction** — NN3 and NN4. Pinning the puck IS the safest
+counsel and is legal everywhere; only its status as a *legal requirement* is in question.
+⚠️ **Do NOT fix `:966` by splitting the facts line** — halves become separate voiced units 300 ms
+apart, which is the exact error made and corrected in the risk_management repair earlier today.
+
+### T0-P2 — "seal" has no rulebook standing; "pin" does (found 2026-09-07, coordinator)
+
+Measured: `grep -ril seal sources/` returns ONE file, `sources/bvhs.txt` — a goalie coaching guide,
+not a rulebook, and its 21 hits are post-seal goaltending, a different sense entirely.
+"Pin" IS rulebook vocabulary: IIHF 101.1's *"pin her along the boards"* (×4) and Hockey Canada's
+*"Pinning"* above.
+
+⚠️ **This may REFUTE a critical recorded this morning.** The offensive_zone_play repair was judged
+critical for drawing a seal/pin distinction "no rulebook draws". But the books do not define "seal"
+because it is not their word, and they DO reach "pin" — and the corpus already draws the distinction
+at `body_contact_and_battles.md:981`, scoped to women's hockey and grounded in 101.1 + USAH 604 Note 1.
+Under verification.
+
+### T0-P3 — `check_pointers.py` sees 4 of 15 of its own construction (found 2026-09-07, coordinator, MEASURED)
+
+The table-pointer patterns are anchored to adjacent words:
+`\bthe (?:table|column|row) below\b`. **Any modifier between the article and the noun defeats them.**
+
+Measured over `content/`:
+- bare form, which the tool catches: **4**
+- modified form, which it does not: **11** — *"the comparison table below"*, *"the broken-stick row
+  above"*, *"the stick-fouls list above"*, *"the game-state table below"*, *"the checking table above"*,
+  *"the harmonised list below"*, *"the do-not-buy-used list above"*, *"the technique list below/above"*,
+  *"the last row below"*
+
+**Two of the misses land on the two tables that are actually DROPPED** (`check_tables.py`: 2 dropped,
+46 read aloud):
+
+1. `content/systems/defensive_zone_coverage.md:96` — *"The comparison table below sets out who has the
+   net front in each"* → the 6-column table at `:367`, **dropped**. The listener is sent to a table
+   they never hear. ⚠️ Mitigation already present: the three systems ARE voiced inline at `:88`, `:96`,
+   `:99`, `:234`, `:245`–`:274`, so the cardinal rule is satisfied — only the pointer dangles.
+2. `content/foundation/rules_primer.md:876` — *"the broken-stick row above is written to the same
+   edition"* → the 6-column, 23-row table at `:846`, **dropped**. Substance is edition provenance;
+   spoken, it refers to a row the listener has never heard.
+   *(`:460`/`:861` "the stick-fouls list above" may be a third — not yet traced to its target.)*
+
+⚠️ **The tool's SUPPRESSION logic is sound and is not the bug** — it deliberately under-suppresses for
+a document with a mix of read-aloud and dropped tables (see its own comment at `scripts/check_pointers.py:189`).
+The failure is upstream, in the match.
+
+**Fix, in two parts, NOT to be done in one wave:**
+- **Tool** (coordinator only, BETWEEN waves — a shared tool is shared state): allow an optional
+  modifier, e.g. `\bthe (?:[a-z-]+ )?(?:table|column|row|chart|list) (?:above|below)\b`. ⚠️ Expect it to
+  raise the hit count and **most new hits will be legitimate** — a pointer at a table that IS read
+  aloud is fine, and a pointer aimed at the SITE is fine. It stays a worklist; it must never gain
+  `--strict`.
+- **Content**: reword the two confirmed danglers so the substance survives being heard. ⚠️ Do NOT
+  delete the pointer — it is correct for a web reader, and this corpus renders to a page as well as to
+  speech. The fix is to carry the fact inline AND keep the pointer.
+
+⚠️ **What this did not check:** whether the other 9 modified-form pointers aim at read-aloud tables
+(probably) or at the Sources trailer (would be a defect). Not traced.
+
+### T0-P4 ⚠️⚠️ SAFETY — the pinch section grants a seal and never mentions checking from behind (VERIFIED against primary text, 2026-09-07)
+
+`content/systems/forechecking_systems.md:511` (facts, **voiced alone**) and `:521` (body) tell a
+reader to *"legally seal the winger"* / *"legally seal the opposing winger against the boards."*
+Section `:528–550`.
+
+**Three exposures the word "legally" does not cover.** `:521`'s qualifier correctly excludes IIHF
+women's and non-checking classifications, and stops there.
+
+1. ⚠️ **USA Hockey names the pinch and penalises it at MINIMAL contact.** Casebook Rule 608
+   Situation 1(2) (`sources/usah_casebook.txt:11760-11764`), in the *minor-plus-misconduct* list:
+   *"A player makes **minimal body contact from behind** to an opponent who is in close proximity to
+   them, and board contact is made. This check should be called as a minor and a misconduct as the
+   result of this **'pinch' against the boards from behind**."* There is **no bare minor** — 608(a) is
+   *"a minor plus a misconduct penalty, or a major plus a game misconduct penalty"*, and forceful it
+   is major-plus-game-misconduct *"in every instance"*. **NHL 43.2 and IIHF 43.2 write no minor at all.**
+2. **The possession condition, which applies in EVERY division of both books.** NHL/IIHF 56.1
+   (`nhl_rules_layout.txt:5253-5258`, `iihf_rules_v1.1.txt:4679-4681`): *"A player who is **behind an
+   opponent, who does not have the puck, may not use his stick, body or free hand in order to restrain
+   his opponent**, but must skate in order to gain or reestablish his proper position."*
+   ⚠️ **The passage's own fact pattern defeats it** — it says you and the puck reach the wall at the
+   same moment, so the winger has not got the puck.
+3. **Arm-wrap holding.** USA Hockey 622 Note (`usah.txt:4343-4353`): wrapping arms around an opponent
+   along the boards *"in a manner that pins them against the boards"* is a holding minor.
+
+**And `:544` enumerates *"Three things decide it"* — body checking, the boards, how late.**
+**Checking from behind is not one of the three, and the pinch is the most from-behind play in the
+document.** The document covers CFB well at `:19`, `:186`, `:268`, `:286`, `:609-627` — **just not in
+the section that grants the seal.**
+
+### T0-P5 The corpus now contradicts itself on this play, and says so out loud
+
+`offensive_zone_play.md` was repaired to make the wall the object at `:817`, `:828`, `:867`.
+`forechecking_systems.md:511`/`:521` still makes the winger the object — and `:521` explicitly says
+the coaching test is *"used identically in Offensive Zone Play."* **Same play, same test, opposite
+grammatical objects, with a cross-reference pointing at the disagreement.**
+
+⚠️ **This divergence is CREATED by the commit that ships the offensive_zone_play repair.** Accepted
+deliberately: before it, both documents were wrong; after it, one is right. Shipping one correct
+document beats shipping two incorrect ones, and the forechecking repair is new text that has not been
+reviewed. **It is the first item of the next wave.**
+
+**Proposed wording is a HYPOTHESIS** (`rules-verifier`'s own label; `:511` has ~116 chars of headroom
+against the 300 cap, `:966` ~149):
+- `:511` → *"…so you can play the puck or seal the wall, not the winger; all four books let you
+  lengthen their path, none lets you pin a player who has not got the puck"*
+- `:544` → make it **four** things, adding checking from behind.
+
+### T0-P6 New extraction trap for `sources/README.md`
+
+BSD `sed` on this machine does not support `\+` inside a bracket expression, so
+`s/[[:space:]]\+/ /g` **silently does nothing** and leaves a file looking flattened when it is not.
+It produced a **false negative on USA Hockey 625(a)(4)** — a phrase that is present. Use `tr -s ' '`.
+⚠️ Same shape as the nvm shim: **the failure is silent and reports success.**
+
+### T0-P7 ⚠️⚠️ `spoken_text` MISLABELLED EVERY CAPTION IN THE CORPUS AS BORROWED — FIXED 2026-09-07
+
+`spoken_text(path)` defaulted `doc_id = path.stem` → `"zone_entries"`, while `_diagram_is_away()`
+resolves the manifest owner to `"systems__zone_entries"`. **The two strings could never match, so the
+helper returned "borrowed" for EVERY diagram in EVERY document.**
+
+Measured on `content/systems/zone_entries.md`, whose 16 diagrams are all its own:
+
+| call | "Diagram, from" | "Diagram." |
+|---|---|---|
+| `spoken_text(p)` — **as every brief prescribes** | 16 | 0 |
+| `spoken_text(p, doc_id="systems__zone_entries")` | 0 | 16 |
+
+**A clean inversion, across all 37 documents.** It mattered because the style guide's caption rule
+turns entirely on *"whose voice is this caption in, and is that this section's reader?"* — a test you
+apply to **borrowed** captions. Through this helper a reviewer saw every caption flagged and none
+clean: **the signal was destroyed in both directions.** The agent that found it nearly filed the
+artefact as a content defect in `zone_entries.md` before checking the script.
+
+⚠️ **SECOND DEFECT IN THIS ONE FUNCTION.** The comment block directly above the bug records the
+first — the same helper once raised `AttributeError` on the string argument every round-59 brief told
+reviewers to pass. **The helper written to stop reviewers hand-rolling their own extraction has now
+manufactured findings twice.**
+
+**FIXED:** added `_doc_id_for(path)`, mirroring `discover()`. Default now equals explicit `doc_id` on
+every document tested.
+
+### T0-P8 The borrowed-caption census nobody could run before — 119 captions, 22 documents
+
+With the instrument working, run corpus-wide for the first time:
+
+**119 borrowed captions against 198 native — 37.5% of all 317 voiced diagram units. 22 of 32
+documents carry at least one.**
+
+| borrowed | native | document |
+|---|---|---|
+| **24** | **0** | `off-the-ice/how_to_watch_hockey.md` |
+| 19 | 8 | `positions/winger.md` |
+| 10 | 10 | `positions/goaltender.md` |
+| 10 | 5 | `systems/game_management.md` |
+| 9 | 6 | `positions/defender.md` |
+| 8 | 8 | `positions/center.md` |
+
+⚠️ **`how_to_watch_hockey.md` is the finding: 24 borrowed, 0 native.** Every caption a listener hears
+in that document speaks in another document's voice, to another document's reader. It is also the
+document furthest from the corpus's teaching core — its reader is a spectator, not a player — so a
+caption written for a defenceman learning gap control is addressing the wrong person twice over.
+
+**This is a WORKLIST, not a defect list.** A borrowed caption is often exactly right — reuse is why
+the manifest has an `owner` field, and `check_absolutes` already scans the caption layer. What has
+never been possible is **asking the question per caption**, because the instrument said "borrowed"
+about everything. ⚠️ **Do not sweep. Read each one and ask whether its addressee is this section's
+reader.** Start with `how_to_watch_hockey.md`'s 24.
+
+⚠️ **Nobody has audited borrows in ANY document with a working instrument.** Every prior caption-voice
+review in this project ran through the broken default.
+
+### T0-P1 CORRECTED — my diagnosis named the wrong line (refuted 2026-09-07 by `facts-reviewer`)
+
+⚠️ **I filed `body_contact_and_battles.md:966` as the defect. It is not one.** `:966` is labelled
+`Action:` — read aloud it makes no legality claim at all, it is coaching, correctly labelled, and it
+should be left alone. **Ninth correction of my work this session.**
+
+**The actual defects are the two lines that attach RULEBOOK CITATIONS to the restriction, plus the body:**
+
+- **`:967` (graded critical) — a `Rule:` label on a women's-hockey-only proposition.** IIHF Rule 101
+  is headed *"WOMEN'S HOCKEY – SPECIFIC PLAYING RULES"* (`sources/iihf_rules.txt:7485`); the
+  *"sole object"* proviso sits inside that scope. In men's IIHF play a legal body check exists
+  precisely to separate an opponent from the puck.
+  **FIX (201/300):** `Rule: In women's hockey the puck has to stay the object of the contact in a corner — IIHF 101.1 allows two players to push and lean only while "possession of the puck" remains "the sole object" of both`
+- **`:968` — a Competitive-Contact-only definition stated as universal.** `sources/usah.txt:3540`
+  heads it *"Rule 604 Body Checking (Competitive Contact Categories)"*, and Note 1 is scoped by its own
+  words to *"the purpose of this rule"*. ⚠️ **The SAME DOCUMENT has it right at `:416`**, scoped
+  *"by 604(a) to the Competitive Contact classifications"*. **Two facts, one document, opposite scopes,
+  ~550 lines apart, and `check_facts` passes on both because it cannot read scope.**
+  **FIX (199/200 — ⚠️ ONE char of headroom):** `Never: Where checking is barred, make the puck the object and not the player — USA Hockey 604 Note 1 counts forcing an opponent off the puck with no effort to legally play it as an illegal body check`
+- **`:978` body — *"legal in every league"*.** Contradicted by Hockey Canada Interpretation 3 to 7.5(a).
+- **ADD a status line (block goes to 6 coaching / 8 total, inside caps 8 and 11), 220/300:**
+  `Convention: Pin the puck rather than the player is the safest version everywhere, and the law only in women's hockey — Hockey Canada permits a low-speed, minimal-impact pin of the player (Interpretation 3 to Rule 7.5(a))`
+
+**Three further findings in unstaged files, all verified, all TOO STRICT:**
+- `playing_without_the_puck.md:447` states a VOCABULARY point as a legality claim, contradicting three
+  `Rule:` facts 6–9 lines above it **in the same block** (`:438`, `:439`, `:444`). Fix 198/200.
+- `risk_management.md:673` drops *"using his leg or foot"* from slew-footing (`nhl_rules.txt:6041`) —
+  what remains describes an ordinary trip (NHL 57.2, a minor) and **prices it as a mandatory match
+  penalty.** Its sibling keeps the element at `body_contact_and_battles.md:1345`. Fix 188/200.
+- `defensive_zone_coverage.md:594` / `risk_management.md:643` (identical) contradict the line directly
+  above them; `defensive_zone_coverage.md:559` says batting a puck down is *"legal in your own end"*
+  when NHL 79.1 has no zone limit — it is the **pass** (79.2) that is zone-limited. Fix 190/200.
+
+### T0-P9 ⚠️ THE SEVERITY LADDER CANNOT EXPRESS "TOO STRICT", AND THAT IS STRUCTURAL
+
+`facts-reviewer`'s closing argument, recorded because it explains **why every finding above survived
+68 rounds**:
+
+> The critical test is *"would get a reader penalised or hurt."* **An over-strict fact cannot meet it.**
+> So this class is graded down **by construction**, will always be graded down, and every reviewer using
+> this scale will keep finding it less important than it is.
+
+⚠️ **`:978` survived because a reviewer reading *"pin the puck, not the player"* sees safe advice and
+moves on.** It is still a false claim about four rulebooks, in the most-consumed layer of the corpus.
+
+**Same direction as round 59's disclosure finding**, where every absence-of-evidence claim tested made
+the corpus look *less* supported than it was. **Two independent discoveries of one blind spot: nothing
+in this project's method attacks the over-strict direction.** Worth a row in `review_process.md`'s
+dimensions table rather than a severity argument each round.
+
+⚠️ **And the reviewer named the limit of its own method:** it caught §8 only because §7 and §1 got it
+right. **A restriction stated too strictly in ALL its locations — no sibling to disagree with — would
+have passed.**
+
+### T0-R RETRACTED — M9 is not a defect, and its sub-claim is false
+
+`content-reviewer` measured all 36 sections opening into a list across 8 documents: **zero need a
+lead-in.** 16 are `## Common Mistakes`/`## Key Takeaways`, whose list form the style-guide template
+prescribes; 17 are heading → ` ```facts ` → list, where the listener hears the heading, then *"The key
+facts for this section"*, then 3–8 facts, so orientation exists; 1 is a glossary where the list IS the
+content; 1 is dropped by `md_to_speech.DROP_SECTION_HEADINGS`; 1 is bare and better bare.
+
+⚠️ **And the plan's specific sub-claim is FALSE.** It said one list opens with the literal token `1.`
+*"voiced as 'one.'"*. Rendered, `faceoffs.md` §*The sequence* emits **"First, … Second, … Third, …
+Fourth, … Fifth,"**. The ordinal expansion is correct. **Whatever produced that finding is not in
+these eight files.**
+
+### T0-R2 The rules-to-how-to ratio, measured three ways — `faceoffs.md` is the outlier
+
+Three independent measures, headings/tables/markers/Sources excluded. Calibrated against the plan's
+own earlier figures (`breakouts.md` 14% vs 16.7% here — the methods agree).
+
+| file | prose words in rule-citing units | sentences naming a book/rule | verbatim quotation |
+|---|---|---|---|
+| **`faceoffs.md`** | **81.4%** | **40.7%** | **12.7%** |
+| `center.md` | 71.6% | 30.0% | 12.2% |
+| `neutral_zone_systems.md` (best) | 32.5% | 8.5% | 3.4% |
+
+**`faceoffs.md` at 40.7% sits between `goaltender.md` (31%) and `rules_primer.md` (46%) — the third
+most rules-dominated document in the corpus, and it is a *systems* document.** Twenty-two of its
+sections are above 85%; seven above 96%.
+
+**The costly pattern is the four-book comparison written out four times where three books agree** —
+the style guide's own *"where four books agree, say so once and name one"*. ⚠️ **`faceoffs.md` links
+`rules_primer.md` only 4 times**, and `rules_primer.md` states it carries *"the same material as a
+single compact lookup table"*. **The handoff exists and is under-used.**
+
+⚠️ **NOT actionable without `rules-verifier` and `safety-reviewer`.** The reviewer opened no rulebook
+and said so: *"If two of them diverge in a way that changes what a reader does, compressing is a
+critical, not a fix."* **Do not remove the British answer, the ejection consequence, or the bench
+minor.**
+
+### T0-R3 `center.md` and `winger.md` are the `goaltender.md` split shape, unrecorded
+
+Same method as the plan's M1 figure for `goaltender.md` (35% → 88%):
+
+| document | split | before | after |
+|---|---|---|---|
+| `center.md` | L392 | 29.4% | **81.5%** |
+| `winger.md` | L400 | 31.1% | **70.9%** |
+
+Sharpest: `center.md`'s `### Offensive Zone: Without the Puck` is **277 words at 0% rule-citing**, and
+its own child `#### The crease is the one line you don't cross` is **3,126 words at 98.9%** — an 11:1
+ratio between a coaching section and the rules subsection hanging off it. `winger.md` repeats it.
+⚠️ **Remedy is the plan's own `goaltender.md` remedy — SPLIT, delete nothing.** The material is
+penalty-bearing.
+
+### T0-R4 Whole-sentence bolding — 147 candidates, and a sweep would be destructive
+
+147 non-lead bold runs of 20+ words that are complete sentences (338 at 12+ words). Worst:
+`defender.md` 23.5% of body words bold, with a **138-word** bolded quotation at `:373`.
+
+⚠️ **The finding is the CLASSIFICATION, not the count.** They fall in four classes and two must be
+left: **safety counterweights** (`zone_entries.md:206`, `defender.md:377`, `:239`, `breakouts.md:989`,
+`center.md:642`) and **honest disclosures** protected by NN4 (the KHL-trapezoid hedge at three sites,
+*"this document has no count for it"* at six). **Change only** bibliographic/cross-document narration
+(`defender.md:97`, `:695`, `:373`'s quotation — bold the operative clause, not all 138 words) and the
+**same sentence bolded twice, body and summary** (`center.md:436`+`:746`, `winger.md:488`+`:730` — un-bold
+the summary copy).
+
+### T0-R5 Two censuses that were WRONG, reported by their own author
+
+`content-reviewer` ran two measurements, caught both, discarded both:
+1. A bold classifier using `re.fullmatch(r'\*\*(.+)\*\*…')` with a **greedy** `.+` — so any line merely
+   *beginning and ending* with a bold span read as 100% bold. It reported `defender.md:373` as a
+   581-word fully-bolded line; it is **53.9%** bold. ⚠️ **Had it been reported, a repair agent would
+   have been sent to de-bold nine passages that are not defects.**
+2. A verbatim-quotation regex spanning newlines, matching from one stray quote mark to the next across
+   whole paragraphs: reported 36–78% of body words; the real range is **3.4–12.7%**.
+
+⚠️ **Both were caught by opening a file and reading the line the number was about. Neither would have
+been caught by re-running the script.** This is the seventh and eighth measurement artefacts recorded
+this session, and the first two an agent caught in its own work before reporting.
+
+### T0-P3 CLOSED (tool half) — `check_pointers.py` now sees its own construction
+
+Modifier slot added to both table-pointer patterns:
+`\bthe (?:[a-z][a-z-]* )?(?:table|column|row|chart|list) (?:above|below)\b`.
+
+**4 hits → 7.** All three confirmed danglers now caught: `defensive_zone_coverage.md:96`
+(*"The comparison table below"*), `rules_primer.md:876` (*"the broken-stick row above"* — it shares
+one very long sentence with the face-off-edition clause, so the tool's display truncates before the
+phrase; same hit), and `body_contact_and_battles.md` (*"the checking table above"*).
+
+Suppressions rose 3 → 11, all in documents whose tables all read as prose. **The suppression rule was
+never the bug** and is still deliberately conservative — it under-suppresses for a mixed document, and
+now labels those hits ⚠️ MIXED and says in terms that it cannot tell which table the sentence means.
+
+**Still a worklist. No `--strict`, ever.** 6 of the 7 are mixed-document hits it cannot resolve.
+
+⚠️ **CONTENT HALF STILL OPEN.** Two spoken sentences send a listener to a table the renderer drops:
+- `content/systems/defensive_zone_coverage.md:96` → the 6-column table at `:367`
+- `content/foundation/rules_primer.md:876` → the 6-column, 23-row table at `:846`
+
+⚠️ **Do NOT delete either pointer** — both are correct for a web reader, and this corpus renders to a
+page as well as to speech. Carry the fact inline AND keep the pointer. For `:96` the mitigation is
+already there (the three systems are voiced inline at `:88`, `:96`, `:99`, `:234`, `:245`–`:274`), so
+only the wording dangles. `:876`'s substance is edition provenance and does not survive being heard.
+
+### T0-P10 `breakouts.md:151` quotes the NHL's wording under a bare "Rule 56.1"
+
+It quotes the masculine proviso — *"provided his stick is not utilized… his free hand is not used…"* —
+attributed only to *"Rule 56.1"*, while the same bullet distinguishes NHL from IIHF explicitly for 56.5.
+**IIHF 56.1 is gender-neutral** (*"provided their stick is not utilized (to make themself 'bigger'…)"*),
+and `"provided his stick is not utilized"` returns **zero** in all three IIHF editions on disk.
+
+Pre-existing. It became worth a row because `offensive_zone_play.md:867` now points a reader at it.
+⚠️ **Same class as `content_style_guide.md:151`'s own recorded defect.** Fix is to name the NHL as the
+book quoted and note the IIHF's wording — **not** to delete either.
+
+⚠️ **Worth a corpus-wide sweep of ITS OWN, and nothing checks it:** every place the corpus quotes a
+masculine rulebook string and attributes it to the IIHF, or to "NHL and IIHF" jointly. The pronoun
+divergence makes this mechanically detectable — a quoted string containing `his`/`himself`/`he` credited
+to the IIHF is wrong by construction. **No checker does this today.**
+
+### T0-P11 `how_to_watch_hockey.md` — 24 borrowed captions from 12 documents, 0 native, and four address a player
+
+Now measurable for the first time (see T0-P7). Every diagram in the document is borrowed:
+`special_teams.md` ×6, `neutral_zone_systems.md` ×3, then `rink_map_and_glossary`, `forechecking_systems`,
+`defensive_zone_coverage`, `defending_the_rush`, `faceoffs` ×2 each, and `breakouts`, `winger`,
+`zone_entries`, `goaltender`, `defender` ×1.
+
+⚠️ **Four address the reader as a PLAYER, in a document whose reader is a spectator:**
+
+| diagram | caption says |
+|---|---|
+| `breakout-five-roles` | *"This is **your own** defensive zone"* |
+| `winger-wall-depth-by-system` | *"**your own** goal at the left and the way **you are attacking**"* |
+| `faceoff-dzone-alignment` | *"A defensive-zone draw in **your own end**"* |
+| `goalie-rebound-corners-not-slot` | *"an opposition forward is standing in the shaded slot waiting for what comes off **you**"* |
+
+**The last is the sharpest**: a document teaching someone how to *watch* hockey addresses its reader as
+the goaltender, and `md_to_speech` voices it as `"Diagram, from …"` plus the caption, alone.
+
+⚠️ **Not a licence to rewrite 24 captions.** Reuse is why the manifest has an `owner` field, and a
+borrowed caption is usually right. **The four above are the actionable set**; the other 20 need reading,
+not sweeping. ⚠️ And a caption edit propagates into **every** document hosting it — see T0-29 — so
+changing `goalie-rebound-corners-not-slot` changes `goaltender.md` too, where "you" is correct.
+**That is the whole difficulty: the same sentence is right in one host and wrong in the other.**
+
+### T0-P12 ⚠️ EIGHT SITES QUOTE THE NHL'S WORDING AND CREDIT IT TO THE IIHF — measured 2026-09-07
+
+**Baseline:** the IIHF book is gender-neutral. `iihf_rules.txt` and `iihf_rules_v1.1.txt` each carry
+`his`=**4**, `himself`=**0**, against `their`=**550**. So a quoted string containing *his/himself/he*
+attributed to the IIHF is **wrong by construction** — which makes this class mechanically detectable,
+and nothing checks it.
+
+**Method:** a masculine quotation whose immediately preceding attribution names the IIHF (alone or as
+*"NHL and IIHF"*), on a line that does **not** acknowledge the divergence. A crude first pass matched
+far more and was mostly false positives — ⚠️ **including exemplary handling**: `on_ice_communication.md:257`
+says outright *"IIHF Rule 61.1 is the NHL's sentence bar the pronoun (*"their stick"* for *"his stick"*)"*.
+**That is the correct pattern and must not be swept.** Tightened, **8 candidates**:
+
+| site | quoted string (masculine) | IIHF hits |
+|---|---|---|
+| `off-the-ice/team_play_and_culture.md:286`, `:646` | *"injured so that he cannot continue play or go to his bench"* | **0** |
+| `positions/goaltender.md:1432`, `technique/shooting.md:914` | same string | **0** |
+| `hockey-iq/risk_management.md:650` | *"picks the puck up off the ice with his hand while play is in progress"* | **0** |
+| `hockey-iq/risk_management.md:652` | *"catches it and skates with it… over his opponent"* | **0** |
+| `systems/faceoffs.md:470` | *"if he places his hand over the puck…"* | **0** |
+| `positions/goaltender.md:676` | *"A goalkeeper shall not be sent to the penalty bench…"* | **0** |
+
+⚠️ **IT IS NOT MERELY PRONOUNS.** For the four-times-repeated string the IIHF writes *"injured so that
+**they** cannot continue play or go to **their Players' bench**"* — **the noun phrase differs too**. So
+"the same sentence bar the pronoun" is itself an unsafe assumption, and a reader checking the quoted
+words against their own book will not find them.
+
+⚠️ **This is `content_style_guide.md:151`'s own recorded hazard**, which says a paragraph there *"used
+to quote the IIHF's wording while attributing the row to both books, which is the exact hazard the
+paragraph below it forbids, in the file that forbids it."* **Same class, opposite direction (NHL text
+credited to IIHF), eight live sites.**
+
+**NINTH SITE, found by `commit-gate` 2026-09-07 and DELIBERATELY NOT FIXED:**
+`content/positions/goaltender.md` attributes *"[m]oving laterally and without establishing body
+position, then making contact with the non-puck carrier is not permitted and will be penalized as
+interference"* to *"NHL and IIHF Rule 56.1"*. The string is **NHL-verbatim**; the IIHF prints internal
+quotation marks around *"body position"* and *"interference"*. Weaker than the eight above — typography,
+not pronouns, and the substance is identical.
+
+⚠️ **Why it was not fixed at the gate, and this is the reasoning that matters more than the item:**
+this file was staged, the gate was on its fourth pass, and *"fix it while you are in there"* is exactly
+the move that produced nine consecutive defective repairs to `offensive_zone_play.md:867` in this same
+session. Fixing one of nine instances of a class, at a gate, under time pressure, is arbitrary and is
+how the last four defects got in. **The class gets one pass, deliberately, with the sweep.**
+
+**Fix:** name the book actually quoted, then state the other's wording or note the divergence — the
+`on_ice_communication.md:257` pattern. ⚠️ **Never delete the quotation**, and never "neutralise" it by
+paraphrase: the operative wording is the point.
+
+**Worth a checker, and it would be cheap** — flag a `*"…"*` span containing `his|himself|he` whose
+nearest preceding attribution names the IIHF. ⚠️ **Worklist, not a gate**: the acknowledged-divergence
+pattern is correct and would score as a hit. ⚠️ **NOT written yet — `scripts/` is shared state and an
+agent is live.** Between waves only.
+
+### T0-P13 ⚠️ `offensive_zone_play.md` §10 still omits USA Hockey's checking-from-behind tiers and the "danger zone"
+
+Found by `safety-reviewer` alongside the 640(e) critical; **NOT fixed in this round** because it is a
+second, separable body of material and the facts block is at `HARD_MAX`.
+
+§10's facts `:804` and body `:830-841` give **NHL 43.2 / IIHF 43.2 only** — *"a major with no minor
+option"*. A US reader calibrates from that that checking from behind needs a heavy hit. **USA Hockey's
+Casebook penalises MINIMAL contact**, and names the play:
+
+- `usah.txt:3722` — 608(a): *"A minor plus a misconduct penalty, or a major plus a game misconduct
+  penalty, shall be assessed for checking from behind."*
+- `usah_casebook.txt:11760` — Situation 1(2): minimal body contact from behind with board contact
+  *"should be called as a minor and a misconduct as the result of this **'pinch' against the boards from
+  behind**."*
+- `usah_casebook.txt:11783` — ⚠️ **the most executable safety concept available for this play, and §10
+  has no equivalent**: *"On-Ice Officials must be sensitive to all checks from behind that occur within
+  the **'danger zone,' which is the area approximately ten feet out from the boards**. Players who are
+  checked from behind in this area and who then crash into the boards may be at high risk of receiving a
+  serious and possibly life altering injury."*
+
+⚠️ **`forechecking_systems.md:627` already carries ALL of it** — 608(a), the Casebook "pinch", the ten-foot
+danger zone, HC 7.5(a)/(d)/(e), NHL 43.3/43.5, IIHF 43.3 — **for the same play.** Two documents, one
+play, materially different rule coverage. **This is T0-P4's shape in a second document.**
+
+**Proposed facts lines are HYPOTHESES** (`safety-reviewer`'s, char counts verified):
+- 257/300: `Rule: Checking from behind — NHL and IIHF 43.2 write no minor at all, but USA Hockey 608(a) and Hockey Canada 7.5(a) do, each with a misconduct attached; USA Hockey's Casebook puts a minor plus misconduct on minimal contact in a "pinch" against the boards`
+- 131/200: `Warning: USA Hockey names the ten feet out from the boards the "danger zone" for checking from behind — a pinch happens inside it`
+
+⚠️ **BLOCKED ON CAPACITY.** §10's block holds **11 facts = `HARD_MAX`**. Adding either line requires
+removing one, which is a judgement about which safety point matters least — exactly the trade T0-38
+records for two other blocks. **Do not force it at a gate.** The honest options are to split the section
+so each half gets a block, or to accept the body-plus-summary placement and say so.
+
+### T0-P14 §10 does not check the other offences a pinch can become
+
+`safety-reviewer` declared it: it grepped only the offences §10 already names. **Not checked anywhere:**
+charging (NHL 42.1 *"skates, jumps into or charges"* — a pinching defenceman who leaves their feet),
+boarding (NHL 41 / USAH 603), kneeing, clipping, slew-footing. ⚠️ **A hazard whose rule number is not
+adjacent to one the corpus already cites is invisible to the method that found 640(e).**
+
+Also unchecked: whether the **England IH / EIHA In-House** rules modify 56.1, 608's equivalent, or the
+board-battle case — only the string *"free hand"* was grepped there. **The British reader's answer to
+this play is therefore unverified.**
+
+### T0-P15 ⚠️⚠️ `offensive_zone_play.md` §10 NEEDS A SECTION SPLIT — three reviewers, one diagnosis
+
+Six repairs to `:867` in one session each introduced a new defect (table in the round-68 record). All
+additions were reverted; only the grammatical-object fix ships. **The findings below are real, verified
+against primary text, and NOT fixed.** They need the split first.
+
+**The structural problem.** The subsection carries a diagram, an 11-fact block, two criteria lists, two
+long blockquotes and a 5,867-character paragraph under one `###`, and it is doing **two jobs**: *when to
+pinch* and *what your book allows on arrival*. ⚠️ **Its facts block is at 11 = `HARD_MAX`, so nothing
+below can be propagated into the voiced layer without it.** The seam already exists in the sibling —
+`forechecking_systems.md:528` is headed *"what your book allows when you get there"*.
+
+**Proposed:** `### When to pinch` (Read/Never/Technique facts) and `### Pinching legally` (Rule facts).
+Creates a second block and ~9 facts of headroom.
+
+#### Verified, unfixed findings — in rough severity order
+
+1. ⚠️ **CRITICAL (`content-reviewer`) — the restraint limb is omitted, and the section's own fact
+   pattern satisfies both its triggers.** `nhl_rules_layout.txt:5254`, the sentence IMMEDIATELY BEFORE
+   the one `:867` quotes: *"A player who is behind an opponent, who does not have the puck, may not use
+   his stick, body or free hand in order to restrain his opponent, but must skate in order to gain or
+   reestablish his proper position in order to make a check."* IIHF the same in the plural at
+   `iihf_rules_v1.1.txt:4679`. §10 says pinch when the winger is *"flat-footed or facing the glass"*
+   (behind them) and when *"you and the puck get there at the same time"* (they have not got the puck).
+   ⚠️ **The corpus holds it at `body_contact_and_battles.md:363` — the document `:840` names as owner —
+   and it never travelled.** `breakouts.md:151` omits it too.
+2. ⚠️ **CRITICAL (`safety-reviewer`) — charging appears in NO layer of §10**, while the section teaches
+   *"close with short explosive steps"* into a boards arrival. NHL 42.1, IIHF 42.1, USA Hockey 607 Note
+   + 607(a) (*"a minor plus a misconduct or a major plus a game misconduct"* — **no bare minor**).
+   ⚠️ **Scope it honestly:** the stride and distance limbs are purpose-qualified (*"sole purpose of
+   delivering such a hit"*, *"for the purpose of punishing"*), so a genuine puck pinch is less exposed —
+   **but the LEAVING-YOUR-FEET limb carries no purpose test in any of the three.** That is the one to
+   teach. It binds the non-check reader too (`body_contact_and_battles.md:500`).
+3. ⚠️ **CRITICAL (`safety-reviewer`) — *"arrive on contact"* is a term of art defined ONLY in the body
+   at `:817`.** In the facts layer and Common Mistakes it stands naked, and its default reading is
+   *"arrive delivering contact"*. `:800` then says *"Pinch when the winger is flat-footed or facing the
+   glass"* — heard cold, an instruction to go at a defenceless player. ⚠️ **The sibling proves it is a
+   defect and not a reading:** `forechecking_systems.md:511` carries the qualification in its facts
+   line; `:817` claims the test is *"used identically"*. It is not.
+4. **USA Hockey Casebook Standard of Play Situation 10 has FIVE conditions, not four.** The corpus says
+   four at `:812`, `:867` and `:1013`. Dropped: *"AND NOT TAKE ADVANTAGE OF A VULNERABLE OR DEFENSELESS
+   OPPONENT"* (`usah_casebook.txt:18512`) — which on a winger facing the glass is the usual case.
+5. **The facts block gives a USA Hockey / Hockey Canada reader NO checking-from-behind rule** — `:804`
+   names only NHL/IIHF 43.2. And the Casebook's minimal-contact threshold and **ten-foot "danger zone"**
+   are absent from the whole document (`usah_casebook.txt:11763`, `:11786`). See T0-P13.
+6. **The non-check reader is never told what a body check costs** — USA Hockey 604(c) minor, (d) major
+   plus game misconduct if reckless, (e) match. All four layers say "prohibited" and none prices it.
+7. **NN6, three voiced sentences addressed to an editor** — including *"get them the wrong way round and
+   you will withdraw a legal play"*. ⚠️ Two are in reverted text; ⚠️ **one, *"the other three books, set
+   out next"*, is PRE-EXISTING HEAD text and still ships.** Also `:840`'s *"§5 and §6 own this and
+   outrank anything in this section"*, and `:814`'s unsourced *"consistent across coaching sources"*.
+8. **A rule number cited with no book** — `:867`'s fifth "56.1" is the IIHF's (*"objectively reasonable
+   window of opportunity"* = 1 hit in IIHF, 0 in NHL) after a preceding *"NHL 56.1"*.
+9. **`:1013` is a 2,070-character single spoken paragraph and the FOURTH voiced copy** of the same
+   rules block (`:812`, `:867`, `:1013`, `:1077`, plus the trailer).
+10. **`:867` renders as THREE audio chunks.** Chunk 083 opens cold on *"the game misconduct waits on an
+    injury"* — a sentence about how little a late hit costs, as an opening line.
+11. **`:830` and `:867` are consecutive blockquotes both opening *"'Take the player' has a … limit"***,
+    and `:830`'s *"second limit"* has no first.
+12. **`defensive_zone_coverage.md:481` says holding position is written-legal in *three of the four
+    books*** with Hockey Canada silent; `:867` states it unconditionally. Same grant, two documents,
+    incompatible scope. **`rules-verifier` has not tested the Hockey Canada negative.**
+13. **`:867`'s pointer credits `breakouts.md` with 640(e), which it does not hold** — corpus-wide,
+    640(e) is at `rules_primer.md:443` only. (Reverted with the rest, but the pointer pattern recurs.)
+14. **`defensive_zone_coverage.md:481` calls the IIHF's grant *"that sentence in the plural"***. It is
+    singular *they*. Cosmetic.
+
+⚠️ **Sources trailer gaps:** it records neither 640(e), the Declaration of Player Safety, NHL 56.1's
+Body Position grants, nor Casebook Rule 640 Situation 6.
+
+### T0-P16 ⚠️ THE WALK-OFF COUNTERWEIGHT REACHES 3 OF 14 VOICED SITES — census 2026-09-07
+
+Measured by `commit-gate` rendering **all 38 documents** through `md_to_speech` and extracting the
+walk-off sentence from every voiced unit. **Not a document grep** — the layer test CLAUDE.md requires.
+
+**The claim.** Walking a screener or net-front player off an established spot needs a full-checking
+league — **and a checking league does not make it free.** NHL and IIHF **56.1** bar moving laterally
+into a player without established position (*"Moving laterally and without establishing body position,
+then making contact with the non-puck carrier is not permitted"*); USA Hockey **625(a)(4)** bars
+changing your lane or foot speed to play the body of an opponent no longer in control of the puck.
+
+| Carries the counterweight | Does NOT |
+|---|---|
+| `goaltender` chunk 132 (`:1137`) ✓ this commit | `on_ice_communication` 023 (`:244`), 027 |
+| `goaltender` chunk 136 (`:1147`) ✓ this commit | `defender` 023, 024, 073 |
+| `defensive_zone_coverage` 036 (`:461`) ✓ this commit | `defensive_zone_coverage` 037 (`:473`), 038, 072 |
+| | **`body_contact_and_battles` 013, 014, 100, 102, 185** |
+
+**3 of 14 corrected, across 6 documents.**
+
+⚠️ **OWNER FIRST.** `body_contact_and_battles.md` §9 holds **five** of the eleven uncorrected units and
+is the owner. **Correcting a leaf while the owner states the uncorrected form is propagation backwards** —
+which is why `on_ice_communication.md:244` was NOT fixed at the commit gate, though it is a genuine
+member and I proposed fixing it. `commit-gate` ruled against, and its census is why.
+
+⚠️ **THE UNCORRECTED UNITS ARE INCOMPLETE, NOT WRONG.** *"Needs a checking league"* and *"a checking
+league does not make it free"* are consistent. **This is materially unlike the `:452`/`:1137`
+contradiction this same commit fixed**, where two voiced units genuinely opposed each other. Do not
+grade these as that.
+
+⚠️ **The most conspicuous gap is inside this commit's own file:** `defensive_zone_coverage.md:473`
+(chunk 037, voiced alone) — *"Full-checking leagues only — walking them out with leverage under the
+arms; anywhere else, take the position and hold it"* — sits **eight lines below** the hunk, in the very
+section `:461` now points the listener to.
+
+**Needs `rules-verifier` and `safety-reviewer`, owner first.**
+⚠️ **The census tested for a counterweight STRING, not for whether each site's surrounding citations
+are right** — a member carrying the counterweight and misattributing 604(c) scored as clean.
+
+**Also pre-existing and now conspicuous:** `defensive_zone_coverage.md`'s Common Mistake at chunk 072 is
+headed *"Watching the puck at the net front"* and then advises *"Eyes on the puck, body on the man."*
+The heading argues against the advice. `:452` has just moved to agree with the advice.

@@ -149,7 +149,47 @@ const D_ON_PUCK    = { at: 'corner:right', dx: 3, dy: -8 };  // (85, 26) 8.06 ft
                                                              // (85, 36); the glyph did not move when
                                                              // the carrier came off the boards, and
                                                              // the picture now matches the words.
-const D_GOALMOUTH  = { at: 'goalmouth', dx: -2, dy: -6 };    // (83, -6) between the net-front
+// ⚠️ WAS (83, -6) [dx -2, dy -6]. `rink.json`'s own `goalmouth` $comment (dated
+// 2026-09-07) flagged this anchor as overlapping the crease by "roughly 0.94 ft of
+// halo" and clearing on the body by "0.04 ft of outlined-body daylight". BOTH
+// figures are wrong, re-derived here from `endZone()`'s actual path and the
+// triangle branch of `playSvg` (`GLYPH_INK`), and cross-checked against
+// `special_teams.mjs`'s own published `NET_FRONT` distances — (82,4) -> 2.038 ft
+// and (80,4) -> 3.823 ft, both reproduced to 4 decimals before trusting anything
+// else below. The crease's curved front is a circle of radius 6 centred at
+// (84.5 + sqrt(20), 0) = (88.9721, 0) — derived from the 4.5 ft straight wings and
+// the 6 ft arc radius, not eyeballed. At the OLD position, the nearest point of
+// the triangle's PATH (not just its apex — the true minimum lands 0.15 of the way
+// down the apex-to-base-right edge) sits 6.372 ft from that centre: the halo
+// (path + 1.0) reaches to within 0.628 ft of the crease boundary on the far side,
+// i.e. OVERLAPS it by 0.628 ft, and the solid body (path + 0.4) overlaps it too,
+// by 0.028 ft — not the 0.04 ft of daylight the old note claimed. Both figures
+// verified twice: once analytically (exact edge-distance formula) and once by
+// brute-force sampling the renderer's own `glyphCovers` test over the crease
+// region, and the two methods agree to three decimals.
+//
+// THE FIX IS NOT A SIMPLE dx SHIFT. Moving dx more negative (deeper into the
+// zone, the BACKDOOR/NET_FRONT precedent) clears the crease but moves the anchor
+// TOWARD `OPP_NETFRONT` at (76, -6) — and that pairing was ALREADY overlapping
+// before this fix, by 0.596 ft of halo, unrelated to the crease and undocumented
+// anywhere. dx -3 clears the crease (halo margin +0.374) but makes the
+// OPP_NETFRONT overlap worse (halo deficit -1.479). The two constraints pull in
+// opposite directions along x, so the fix moves along y instead: dy -8 (2 ft
+// further from the centre line than the original -6, same distance from the goal
+// line) clears BOTH — crease halo margin +0.418, OPP_NETFRONT halo margin +0.387,
+// both with over a foot of margin on the body-only measure. x is unchanged, so
+// distance from the goal line (6 ft) and the "between the net-front forward and
+// the goal" relationship in the low-zone-collapse `describe`s are unchanged; only
+// the lateral offset from the crease centreline grows, which is still squarely
+// "the goalmouth" / "net front" / "on the doorstep" as this const's four users
+// each caption it. Checked individually against all four: `dz-collapse-corner`
+// and `dz-collapse-high-slot`'s "doorstep between the net-front forward and the
+// goal" still holds (x unchanged, still between OPP_NETFRONT's x=76 and the goal
+// at x=89); `dz-walk-down-zone`'s "net front" and `dz-walk-down-man`'s "on the net
+// front" both still read as net-front coverage, not corner or point. No other
+// player or route in any of the four diagrams sits within 20 ft of this anchor —
+// OPP_NETFRONT is the only glyph closer than that in any of them.
+const D_GOALMOUTH  = { at: 'goalmouth', dx: -2, dy: -8 };    // (83, -8) between the net-front
                                                              //          forward and the net
 // (76, 29). Goal-side and inside of the carrier rather than out at the boards
 // beside him: the first render put the centre at (78, 33), which crowded the

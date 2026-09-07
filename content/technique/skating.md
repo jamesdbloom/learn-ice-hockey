@@ -107,7 +107,7 @@ Stick on the ice, hands out in front where you can see them in your peripheral v
 Action: Go into the boards on an angle, never straight at them
 Goal: Better puck control and less risk of injury — a leg, side or arm absorbs most of the impact
 Key: Arriving at the boards is the case you control completely, because it is decided several strides out in the route you pick
-Never: Duck or tuck your chin going into the boards — a tucked chin straightens the cervical spine, the posture USA Hockey's Heads Up Hockey guide ties to almost all on-ice cervical spine injuries
+Never: Duck or tuck your chin going into the boards — a tucked chin straightens the cervical spine, which USA Hockey ties to almost all on-ice cervical spine injuries, citing a six-patient case series
 Risk: The spinal injury from a head-down, head-first collision with the boards or a goal post can occur at walking speed — no speed is slow enough to make one safe
 Technique: If contact is coming, skates parallel to the wall, forearm and hip into it, head up and chin off your chest
 Priority: Everything after the route is contact, not skating. Read Body Contact and Battles in full

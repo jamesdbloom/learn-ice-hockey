@@ -41,16 +41,27 @@
  * below invites that reading, and none of them claims the picture shows coverage
  * growing with depth, because at this glyph size it does not.
  *
- * ONE THING THE RENDERER DRAWS SHORT, NOTED HERE SO THE NEXT READER DOES NOT THINK
- * IT IS A FAULT IN THESE SPECS. `endZone()` in site/scripts/lib/rink.mjs draws the
- * crease's straight side lines 1 ft *inward from the goal line* and closes them with
- * a 6 ft arc between those two endpoints, which puts the painted apex 2.53 ft out.
- * The crease the corpus owns is 6 ft deep — rink.json's `crease_depth`, and this
- * document's own "the arc is six feet from the middle of the goal line". So a
- * goaltender placed at the top of the crease, correctly, renders about two and a
- * half feet outside the paint. The positions below follow the owned geometry, not
- * the drawing; the drawing is a finding against rink.mjs, which is not this file's
- * to change. If it is fixed, nothing here needs to move.
+ * ⚠️ THE NOTE THAT USED TO STAND HERE IS STALE, AND IS CORRECTED RATHER THAN DELETED
+ * SO THE NEXT READER DOES NOT INHERIT ITS ERROR. It said `endZone()` in
+ * site/scripts/lib/rink.mjs drew the crease's straight side lines 1 ft *inward from
+ * the goal line*, closed with a 6 ft arc, putting the painted apex 2.53 ft out against
+ * the corpus's owned 6 ft depth. That was true once but is not true of the renderer as
+ * it stands: `endZone()`'s own comment now reads a 4.5 ft straight run — "Two agents
+ * drawing goaltender and screening diagrams found it independently" — which puts the
+ * painted apex at x = 82.9721 -- 6.028 ft from the goal line, NOT the 6 ft flat that an
+ * earlier version of this comment claimed. 4.5 ft of straight run plus a 6 ft arc struck
+ * from (88.9721, 0) does not land on rink.json's `crease_depth`; it overshoots it by
+ * 0.028 ft. That is the same magnitude this round treats as a defect elsewhere in this
+ * file, and line 179 below already had it right -- so this comment disagreed with its own
+ * module. A note written to stop the next reader inheriting a wrong renderer figure had
+ * become one. **A clearance computed against the OLD 2.53 ft figure understates how close a
+ * glyph sits to the real, rendered crease by 3.47 ft** — the direction that hides a
+ * defect rather than manufactures one, which is why this got fixed here rather than
+ * left as a harmless overstatement. The positions below were always written against
+ * the OWNED geometry (crease_width 8, crease_depth 6, crease_arc_radius 6, centred on
+ * the goal line) rather than off any drawing, so nothing below needed to move when the
+ * renderer bug did get fixed — but this comment describing the renderer did need to,
+ * and until this edit it had not.
  *
  * GEOMETRY THE CORPUS OWNS. The goal line, the posts and the crease belong to
  * content/foundation/rink_map_and_glossary.md via src/data/rink.json, and
@@ -150,16 +161,31 @@ const ON_LINE_STRONG_4 = { at: 'goal-line', dx: -2.26, dy: 3.3 };
 // The unmarked opponent on the far side of the net — the section's "space you have
 // opened up behind you, usually to the far side of the net", and the spoken call's
 // "unmarked opponent waiting at the far post". Set five feet off the goal line and
-// seven feet wide of its centre rather than literally on the post, for one reason
+// nine feet wide of its centre rather than literally on the post, for one reason
 // that is about the drawing and not about hockey: the pass to him has to stop short
 // of his glyph AND stop outside the crease, and with him tight to the post there is
 // no point on the ice that is both.
-const BACK_DOOR = { at: 'goal-line', dx: -5, dy: -7 };           // (84, -7)
-// Seven feet short of him along the passing line. (84,-7) minus (76,19) is (8,-26),
-// length 27.2, unit (0.294, -0.956); (84,-7) - 7 * that = (81.94, -0.31). The crease
-// arc reaches back only to x = 83.0 at that y, so the arrowhead stops clear of the
-// paint, and it stops 4.1 ft clear of the receiving glyph's edge.
-const PASS_END = { at: 'goal-line', dx: -7.06, dy: -0.31 };
+//
+// ⚠️ SEVEN FEET WIDE PUT HIS OWN INK IN THE CREASE, AND NOTHING ABOVE CAUGHT IT. A
+// forward is a circle, and the circle carries a halo — GLYPH_INK.forward in rink.mjs
+// is not the r=2.9 body but 2.9 + 1.95/2 = 3.875 ft of total opaque ink, uniform in
+// every direction. The crease this document owns is 8 ft wide, 6 ft deep, on a 6 ft
+// arc struck from (88.97, 0) — derived from rink.json's crease_width/crease_depth/
+// crease_arc_radius exactly as endZone() in rink.mjs now draws it (that renderer's
+// straight run is 4.5 ft, matching this geometry; an older "1 ft inward" bug is gone).
+// At seven feet wide, (84, -7), the nearest boundary point is the corner (84.5, -4),
+// 3.041 ft away — clear of the 2.9 ft body by 0.14 ft, but 0.834 ft short of clearing
+// the 3.875 ft of halo ink. The body was fine; the halo was in the paint, and a reader
+// sees the halo too. At nine feet wide the nearest boundary point is the same corner,
+// 5.025 ft away — 1.150 ft clear of the full 3.875 ft of ink.
+const BACK_DOOR = { at: 'goal-line', dx: -5, dy: -9 };           // (84, -9)
+// Seven feet short of him along the passing line. (84,-9) minus (76,19) is (8,-28),
+// length 29.12, unit (0.2747, -0.9615); (84,-9) - 7 * that = (82.08, -2.27). That x is
+// 0.89 ft on the open-ice side of the crease's own apex at x = 82.97 — the shape's
+// deepest point — so the arrowhead is outside the crease rather than merely short of
+// it, and it stops 3.1 ft clear of the receiving glyph's ink (7 ft along the line
+// minus the glyph's 3.875 ft halo reach).
+const PASS_END = { at: 'goal-line', dx: -6.92, dy: -2.27 };
 
 const frontDoorBackDoor = {
   id: 'goalie-front-door-back-door',
@@ -199,7 +225,7 @@ const frontDoorBackDoor = {
 
   // The pass the depth decision is about — "a pass available across the slot", the
   // section's own phrase. Dashed line, which is the published key's symbol for
-  // passing. It stops seven feet short of the receiver and eight feet short of the
+  // passing. It stops seven feet short of the receiver and 6.92 feet short of the
   // goal line, so it neither terminates on a glyph nor runs through the crease.
   routes: [
     { from: PUCK_STRONG_SIDE, to: PASS_END, kind: 'pass' },

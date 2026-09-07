@@ -449,7 +449,7 @@ Key: The puck goes low to drag your coverage down, then back up to the point for
 Never: Get sucked low as the strong-side winger. Stay high instead, in the lane, between that defenceman and the net
 Read: When the puck goes behind the net, expect the low-to-high next — close on your point as it disappears, not when it comes out
 Action: Get out to the shot, don't sit under it — a winger at the hash marks blocks nothing; one closing hard at the top of the circle does
-Action: As the puck goes high, the low players stop looking at it and start boxing out — the danger is the tip and the rebound
+Action: As the puck goes high, the low players keep eyes on it and box out the man — hold the position; walking them off it needs a checking league, and a checking league does not make it free
 ```
 
 **What it is:** the puck goes down to the corner or behind the net, drags your coverage low, and then gets passed back *up* to the point for a shot with your defenders' backs turned and traffic in front. Coaching material routinely calls it one of the most common ways modern teams score, and it exists precisely to punish low zone collapse. *(Shot-**location** data is public and plentiful — [Shooting](../technique/shooting.md) covers what it says. Goals are broken down by the **play that produced them** too, but in families far broader than a single set play: the public tracking splits five-on-five offence into rush against forecheck-and-cycle, and does not break out the low-to-high on its own. [Neutral Zone Systems](neutral_zone_systems.md) covers what that tracking counts. So treat "one of the most common" as coaching consensus rather than a measured figure.)*
@@ -458,7 +458,7 @@ Action: As the puck goes high, the low players stop looking at it and start boxi
 - **The strong-side winger's discipline is the whole answer.** They stay high, in the lane, between that defenceman and the net. If they got sucked low, the low-to-high is free.
 - **Recognise the trigger.** When the puck goes behind the net, expect the low-to-high next. Wingers should already be closing on their points as the puck disappears behind the goal line, not reacting when it comes out.
 - **Get out to the shot, don't sit under it.** Close the distance to the shooter. A winger standing at the hash marks isn't blocking anything; a winger closing hard at the top of the circle is.
-- **Everyone else finds a body.** The shot is only dangerous because of the tip and the rebound. As the puck goes high, the low players stop looking at the puck and start boxing out.
+- **Everyone else boxes out — eyes on the puck, body on the man.** The shot is only dangerous because of the tip and the rebound, and you cannot beat anyone to a rebound you did not see leave the stick. As the puck goes high, take the inside position on the body in front of you and hold it. **Taking and holding that position is not scoped to checking leagues; walking someone off a spot they have already established is** — exactly as in [Moving the screen](#moving-the-screen) below, which carries the citations for the no-checking-league half; even where checking is legal, NHL and IIHF 56.1 bar moving laterally into a player without established position, and USA Hockey 625(a)(4) bars changing your lane or foot speed to play the body of an opponent no longer in control of the puck.
 
 ### The point shot with a screen
 

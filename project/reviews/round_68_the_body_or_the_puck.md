@@ -100,7 +100,7 @@ are live and the rest are declared, not silent.
 | **D7** cardinal rule | ✅ every new and borrowed caption names its system, an alternative, and tells the reader to ask |
 | **D8** numeric ownership | ✅ `oz-royal-road`'s 15.50% carries its owner's qualification into `shooting.md`; same for `faceoff-neutral-zone` and `nz-stand-up` |
 | **D11** safety | ✅ `safety-reviewer`; found the critical above |
-| **D12** the voiced layer | ✅ both fixed layers rendered through `md_to_speech` and read as units |
+| **D12** the voiced layer | ✅ both fixed layers rendered through `md_to_speech` and read as units. ⚠️ **Re-run after the revert** — the first pass ticked this on a basis that was later reverted, and `commit-gate` caught that a chunk then ENDED on an unqualified *"Take the player or take the puck"* with the eligibility flag opening the next file. See *Propagation* below. |
 | **D4** rules | ⚠️ **partial** — the only rules claim added is the 604 flag, re-derived by the gate. No `rules-verifier` ran. |
 | **D13** provenance | ⚠️ **out of scope, declared** — this diff adds **no new citation or URL**. But see below: ten borrowed captions now voice their owners' figures in documents that never voiced them, and **nobody re-derived those for the move.** |
 | **D1, D2, D3, D5, D6, D10** | out of scope — no rules text, no sources, no structural or cross-document reorganisation beyond marker placement |
@@ -180,3 +180,367 @@ comment by the agent that drew them** and checked against nothing.
 **And a tooling gap:** `build-diagrams.mjs` never prunes a deleted diagram's output. The cut SVG
 survived a full rebuild and Astro had copied it into `dist/` — **a diagram cut for being wrong stays
 served.** Removed by hand; no `--prune` exists.
+
+---
+
+## Added after this record was first written — the goalmouth anchor, and a figure wrong in both directions
+
+The line above, *"`defensive_zone_coverage.mjs` — void, and the work was cut"*, was true when
+written and is now **superseded**. That file has since had a real repair, reviewed separately.
+
+**`D_GOALMOUTH`, shared by four diagrams, was overlapping the crease — and every figure previously
+recorded for it was wrong, including the one in this record.**
+
+Re-derived two independent ways that agree to three decimals — exact point-to-segment geometry, and
+brute-force sampling of `rink.mjs`'s own `glyphCovers` over the crease region:
+
+| Measure | Previously recorded | True, at the original `dy:-6` |
+|---|---|---|
+| Halo | 0.21 ft (a sweep), then 0.939 ft (a re-derivation) | **0.628 ft overlap** |
+| Body | *"0.04 ft of daylight"* (`rink.json`'s own note) | **0.028 ft OVERLAP — it never had daylight** |
+
+⚠️ **The mechanism is the same one that put a defenceman in the crease earlier this round: measuring
+to the wrong point.** The triangle's nearest point to the crease centre is **not its apex** — it is
+15% of the way down the apex-to-base edge. The apex measure gives 6.436 ft where the truth is 6.372.
+**Three separate figures were produced for this one clearance and all three were wrong**, in both
+directions and by both signs.
+
+**And the obvious fix would have made it worse.** The `BACKDOOR`/`NET_FRONT` precedent is to shift
+`dx`. Here that walks the glyph into `OPP_NETFRONT` at (76,−6) — which was **already overlapping by
+0.596 ft of halo at the original position, undocumented anywhere.** `dx:-3` clears the crease by
+0.374 ft and blows the netfront overlap out to 1.479 ft. The two constraints pull opposite ways along
+x, so the fix is in y: **`dy:-6` → `dy:-8`**, x unchanged, clearing crease halo by 0.418 ft and
+netfront halo by 0.387 ft. All four captions re-read individually; the glyph still reads as net-front
+coverage, not corner or point.
+
+`rink.json`'s `goalmouth` comment has been corrected to carry all of this, including that it was the
+note's own figure that was wrong.
+
+**Not done, and declared:** the rendered SVG has not been reviewed by eye for this anchor, and
+`placeLabels` has not been checked for a label collision at the new position — neither is visible to
+`check_geometry.py` or `check-arrivals.mjs`. The three other `goalmouth`-anchored constants in that
+file (`BOX_LOW_R/L`, two inline uses in `overload`) were **not** measured.
+
+## One finding in this record is under re-examination
+
+This record treats the `offensive_zone_play.md` "seal" repair as a **critical** on the ground that no
+rulebook draws a seal/pin distinction. That premise is now in doubt and is being verified:
+
+- `grep -ril seal sources/` returns **one** file, `sources/bvhs.txt` — a goalie coaching guide, not a
+  rulebook. "Seal" has no rulebook standing in either direction.
+- **"Pin" does:** IIHF 101.1's *"pin her along the boards"*, and Hockey Canada's *"Pinning"*.
+- Hockey Canada **Interpretation 3 to Rule 7.5(a)** expressly *permits* pinning: *"Pinning a player to
+  the boards at low speed and with minimal impact is permitted, even if contact is initiated from
+  behind (except under Rule 7.3 – Body-checking, as applicable)."*
+
+If that holds, the distinction is better founded than this record judged, and a **separate** defect
+exists in the opposite direction — `body_contact_and_battles.md:978` calls "pin the puck, not the
+player" what *"keeps the contact legal in every league"*, which Hockey Canada contradicts. Tracked as
+**T0-P1/T0-P2** in `OPEN_ITEMS.md`. **The repair itself stands either way** — making the wall the
+grammatical object is correct under every book. What is in question is the reason recorded for it.
+
+### RESOLVED, same day, by `rules-verifier` against primary text
+
+**The critical does not need retracting. Its RATIONALE does.** The books do not draw a seal/pin
+distinction — they cannot, having no word "seal". **They draw path vs body**, and all four write the
+affirmative permission with the opponent's PATH as the object, never the body:
+
+| Book | Wording |
+|---|---|
+| NHL 56.1 | *"entitled to use his body position to **lengthen an opponent's path to the puck**"* |
+| IIHF 56.1 | *"use their 'body position' to **lengthen an opponent's path to the puck**"* |
+| USA Hockey | *"**to force an opponent to take a less direct route to the puck**"* |
+| Hockey Canada Interp 1 to 7.3(a) | *"may **steer or direct** an opposing player into the boards, **without actually touching or body-checking them**"* |
+
+So the repair landed on the line the books DO draw, via a word they do not use. **It was correct for a
+better reason than was given.**
+
+**And the coordinator's Question-2 premise was REFUTED.** I briefed that Hockey Canada writes no
+legal-competitive-contact counterpart to USA Hockey 604. **It does** — Rule 7.3's own preamble, two
+lines above 7.3(a): *"Body contact is incidental contact of two opposing players in pursuit of the
+puck on the ice in the same direction. If, in the opinion of the Referee, incidental contact has
+occurred, no penalty will be assessed."* That was **a false negative existence claim in a brief** —
+the class CLAUDE.md names as unfalsifiable by ordinary review. **Eighth measurement failure by the
+coordinator this session.** The *direction* held: Hockey Canada is narrower in permission
+(*"incidental"*, *"same direction"*) and wider in penalty (four verbs — *"body-checks, bumps, shoves,
+or pushes"* — where 604(c) writes only *"body checks"*).
+
+⚠️ **`body_contact_and_battles.md:1483` already carries this divergence correctly and in full** and
+was declared not to be touched.
+
+---
+
+## What THIS commit ships, by file — added to satisfy C8 after `commit-gate` blocked on it
+
+⚠️ **This record was headed *"On commit `6d9562c`"* and its original per-file table describes that
+earlier commit.** `commit-gate` blocked because the record named **three of thirteen** staged files.
+The table below covers the commit made on `4e80e54`.
+
+| File | What changed | Cleared by |
+|---|---|---|
+| `content/systems/offensive_zone_play.md` | Three "seal" sites made to take **the wall** as object (`:817`, `:828`, `:867`); **and `:867`'s "with your position and stick" corrected — see below** | `rules-verifier`, then `commit-gate` on the stick limb |
+| `content/positions/goaltender.md` | ⚠️ **This row described superseded text and is corrected.** `:1137` does NOT scope the box-out to Competitive Contact — the shipped line says the box-out **needs no checking league**, and that walking a player off an established spot *"is a push — a checking league does not make it free."* `:1150` replaces a Hockey Canada misquote (*"incidental"* dropped) with NHL/IIHF 56.1, adds USA Hockey 625(a)(4), and gives 604(a)'s age list its own floor-not-ceiling continuation | `rules-verifier`, `safety-reviewer`; **the 625(a)(4) wording re-derived from `sources/usah.txt:4469` by `commit-gate`** |
+| `content/systems/defensive_zone_coverage.md` | `:452` (facts, voiced alone) now carries the counterweight *"and a checking league does not make it free"*, matching `goaltender.md:1137`. ⚠️ **The previous row credited this file with a sentence that is in `goaltender.md`, not here.** `:461`'s pointer said *"Moving the screen **above**"* for a section eight lines **below**, and claimed it *"carries the citations"* when it carries only the no-checking-league half; both corrected | `rules-verifier`; contradiction found by `commit-gate` **through the renderer**, not by grep |
+| `content/technique/body_contact_and_battles.md` | `:458`/`:461` inline eligibility flags; provenance corrected at `:708`, `:1544` and in the Sources trailer | `facts-reviewer`, `source-verifier` |
+| `content/technique/skating.md` | ⚠️ **Corrected:** the mechanism was ALREADY at HEAD. What this diff adds is the provenance — *"citing a six-patient case series"* — matching its owner at `body_contact_and_battles.md:704`, with *"almost all"* credited to USA Hockey rather than to the paper | `safety-reviewer`; provenance verified against `sources/huh.txt:225-233` by `commit-gate` |
+| `site/src/diagrams/defensive_zone_coverage.mjs` | `D_GOALMOUTH` `dy:-6` → `-8` — see the goalmouth section above | dedicated agent + `commit-gate` re-derivation |
+| `site/src/diagrams/goaltender.mjs` | `BACK_DOOR` `dy:-7` → `-9` (1.150 ft clearance); stale header note about a fixed renderer bug corrected | `diagram-reviewer` |
+| `site/src/diagrams/special_teams.mjs` | `BACKDOOR` `dx:-3` → `-4` | `diagram-reviewer` |
+| `site/src/diagrams/body_contact_and_battles.mjs` | Markers only | — |
+| `site/src/data/rink.json` | `goalmouth` `$comment` rewritten to record that **its own figure was wrong**; the false line *"no skater in the corpus is actually drawn in the paint"* removed | `commit-gate` re-derived every figure |
+| `site/src/data/diagrams.json` | Build product of the above | rebuilt, 11 steps, `check-links` line present |
+| `project/plans/OPEN_ITEMS.md` | T0-P1…T0-P6 opened; **the Hockey Canada 604-counterpart row retracted** | `commit-gate` (B3) |
+| `project/reviews/round_68…md` | This record | — |
+
+### A defect `commit-gate` found in this round's own repair
+
+⚠️ **`offensive_zone_play.md:867` was repaired into a second, smaller version of the defect it was
+repairing.** The new sentence read *"you may seal the wall — not the player's body — **with your
+position and stick**."* NHL and IIHF Rule 56.1 grant that entitlement expressly **withholding** the
+stick: *"provided his stick is not utilized (to make himself 'bigger' and therefore considerably
+lengthening the distance his opponent must travel to get where he is going)."*
+
+**The proviso was in the corpus the whole time** — `breakouts.md:151` carries it in full and draws
+the practical conclusion (*"a stick stuck out sideways across the slot is interference even though
+your feet never moved"*), and `body_contact_and_battles.md:341` and `:1160` quote it. `:867` now
+carries it and links to `breakouts.md`.
+
+⚠️ **Note the shape, because it is this round's third instance:** the repair was written from the
+half of the rule the review had quoted. `rules-verifier` quoted 56.1's **permission** limb and not its
+**proviso**, and the repair inherited exactly the sentence it was shown. **A verified quotation is not
+a verified rule.**
+
+### Declared not done
+
+- **No human or browser has seen these six diagrams rendered.** `commit-gate` closed the
+  label-collision half numerically — nearest foreign label ≥ 6.95 ft at all three moved glyphs — but
+  Chrome refused every navigation this session. ⚠️ **This round's own record documents a defenceman
+  drawn in the crease that was found by a person comparing coordinates and by no checker.**
+- Three `goalmouth`-anchored constants (`BOX_LOW_R/L`, two inline uses in `overload`) unmeasured.
+- Pre-existing facts-layer defects confirmed in two staged files (`body_contact_and_battles.md:967`,
+  `:968`; `defensive_zone_coverage.md:559`, `:594`) are **outside every staged hunk**, recorded as
+  T0-P1, and not fixed here.
+
+### The two shared tools in this commit — added after `commit-gate` blocked a second time on C8
+
+| File | What changed | Measured against | Cleared by |
+|---|---|---|---|
+| `scripts/md_to_speech.py` | `spoken_text`'s default `doc_id` was `path.stem`, which can never match `_diagram_is_away`'s `owner.replace("/", "__")`. Added `_doc_id_for(path)` mirroring `discover()`. | `zone_entries.md` (16 diagrams, all its own): default gave **16 borrowed / 0 native**, now **0 / 16**, identical to the explicit `doc_id`. | `commit-gate` re-ran it independently, confirmed `_doc_id_for` mirrors `discover()` at `:3608`, and confirmed the only other `.stem` is the new helper's own fallback |
+| `scripts/check_pointers.py` | Table-pointer patterns gained an optional modifier slot — they required *"the table below"* adjacent, so any modifier defeated them. | Hits **4 → 7**, catching all three sentences that point at a table the renderer drops. | `commit-gate` confirmed the regex can widen only by one lowercase word, that no `--strict` exists, and that over-match costs a read rather than a false gate |
+
+**Known limits, declared:** `_doc_id_for` uses the *first* `content` path segment, so an absolute path containing an earlier directory named `content` would mis-derive — noted by `commit-gate`, not fixed, not reachable from any current call site.
+
+### ⚠️ THE SAME FAILURE, FOUR TIMES IN ONE ROUND — this is the round's real finding
+
+Each repair in this round was written from **the half of the rule its reviewer had quoted**, and each
+inherited that reviewer's framing rather than the book's:
+
+1. The original defect: *"find a body, not the puck"*, written from a coaching formula.
+2. The `offensive_zone_play` repair: drew a seal/pin line **no book draws**, because the brief posed
+   the question in those words.
+3. The stick limb: *"with your position and stick"* — the reviewer had quoted 56.1's **permission**
+   and not its **proviso**, and the repair granted what the unquoted half withholds.
+4. ⚠️ **The repair of (3), written from the text `commit-gate` quoted in its own block.** The gate
+   supplied the **NHL's** wording; the sentence went out as *"NHL and IIHF Rule 56.1 grant…"*. **No
+   IIHF edition on disk prints those words** — all three are gender-neutral (*"provided **their** stick
+   is not utilized (to make **themself** 'bigger'…)"*), and `"provided his stick is not utilized"`
+   returns **zero** in every one.
+
+⚠️ **`content_style_guide.md:151` already records this exact class**, about a paragraph that *"used to
+quote the IIHF's wording while attributing the row to both books, which is the exact hazard the
+paragraph below it forbids, in the file that forbids it."* **Same divergence — pronouns — same
+direction, one round later.**
+
+**The generalisation: a verified quotation is not a verified rule, and a quotation verified in ONE
+book is not a quotation in TWO.** The gate that caught (3) caused (4) by quoting accurately and
+attributing loosely, and the record then reproduced the joint attribution in its own account of the
+defect. **Nothing mechanical can see this** — `check_facts` reads length and label, `check_absolutes`
+reads scope words, and neither compares a quoted string to the book it is credited to.
+
+**Left open, deliberately:** `breakouts.md:151` quotes the NHL's masculine proviso under a bare
+*"Rule 56.1"* while distinguishing NHL from IIHF explicitly for 56.5 in the same bullet. Pre-existing
+and outside this diff — but `:867` now points a reader at it, so `:867`'s pointer was worded to claim
+only that the proviso is set out in full, not that both books' wording is. Tracked as T0-P10.
+
+---
+
+## The independent safety review `commit-gate` demanded — and the critical it found
+
+`commit-gate` blocked twice and noted that **no independent reviewer had seen the repaired `:867`
+sentence**. `safety-reviewer` was dispatched on it. Findings, all verified against primary text on disk
+and then re-verified by the coordinator before acting:
+
+**GOOD NEWS FIRST: the IIHF claim I staged as unverified is TRUE.** All three limbs, identical across
+four IIHF editions (`iihf_rules.txt:4687`, `v1.0:4688`, `v1.1:4687`, `2026-27:4776`):
+*"provided their stick is not utilized (to make themself "bigger"…); their "free hand" is not used, and
+they do not take advantage of their "body position" to deliver an otherwise illegal check."*
+**Failure (4) did not recur.**
+
+### CRITICAL — USA Hockey protects the battle, and this document did not know
+
+⚠️ **The staged sentence granted a permission for the exact fact-pattern USA Hockey singles out as
+protected.** USA Hockey Rule 640(e) (`sources/usah.txt:5123`):
+
+> *"A minor penalty shall be assessed to any player who delivers a body check to an opponent who is
+> physically engaged for possession of the puck with one or more other players. **(Note)** When two or
+> more players are physically engaged for possession of the puck they are considered vulnerable or
+> defenseless and are **not eligible to be body checked**."*
+
+and its Declaration of Player Safety (`sources/usah.txt:332`): two or more players engaged along the
+boards *"are considered to be vulnerable or defenseless"*, and a check on one *"is considered dangerous,
+careless or reckless (unacceptable) and must be penalized accordingly."*
+
+⚠️ **640(e) carries NO adult-male exception**, where 640(b) — the only USA Hockey limb this section
+cited — does. So the document's entire USA Hockey passage missed the one rule that reaches adult men.
+**`"640(e)"` and `"physically engaged"` appeared ZERO times in `offensive_zone_play.md`. Seven other
+documents carry them.** The corpus knew this rule; this document did not.
+
+**Why no reviewer found it before:** the section heading is *"The defenceman's pinch"*, which gives
+nobody a reason to look for a rule about third-man arrivals. `safety-reviewer` found it only by reading
+Rule 640 sequentially and noticing (e) beside the (b) the corpus already cited — and said so: ⚠️ *"A
+hazard whose rule number is not adjacent to one the corpus already cites is invisible to this method."*
+
+### Three more defects, all in text written TODAY — the fifth, sixth and seventh iterations
+
+- ⚠️ **`"not the player's body"` was attributed to NHL 56.1, which does not say it.** The restriction
+  comes from IIHF 101.1 (women's) and USA Hockey's competitive-contact framing — both quoted nine lines
+  above at `:858`. **Fifth iteration, opposite direction to the fourth:** repair 3 gave IIHF wording to
+  the NHL; this gave an IIHF women's limb to NHL 56.1. **It survived because the quotation beside it
+  was correct.**
+- ⚠️ **`"at a net front it is usually the free hand that gets called"` was FOLKLORE I introduced into a
+  safety callout** — non-negotiable 2. No book, casebook or standard-of-play document on disk ranks the
+  three limbs. **And it pointed at the wrong penalty:** NHL 56.1's own *Free Hand* paragraph
+  (`nhl_rules.txt:6306`) directs free-hand restraint to be called as **holding**, and expressly permits
+  the free hand *"to 'fend off' an opponent or his stick"*. **Cut.**
+- **`"lane"` was doing two jobs 65 lines apart.** Facts `:802` says *"Stick in the passing lane before
+  your feet commit"*; the body said a stick across the lane is interference. Neither unit distinguished a
+  **puck** lane from an opponent's **path**. ⚠️ **A reader resolving that the wrong way withdraws the
+  legal stick and is left with only the body — in the play where contact is most dangerous.** Now stated
+  by what the stick is doing, not where it is.
+
+### And a shed qualification in the summary layer, 44 lines from its correct version
+
+`:1058` (*Check yourself*) asked what getting it wrong costs and answered *"the answer is not a minor."*
+**False under two of the four books** — USA Hockey 608(a) and Hockey Canada 7.5(a) both write one.
+`:1014` in the **same document** has it right: *"no book lets this one cost you two minutes and nothing
+else… do write a minor, but never a bare one."* ⚠️ **The false version is what is left when *"and nothing
+else"* is dropped** — the same shape as commit `89b989e`, *"Retract a penalty-floor generalisation four
+rulebooks contradict."* Corrected to *"never a bare minor, and under two of the four books not a minor
+at all."*
+
+### Propagation — ⚠️ THIS SECTION DESCRIBED WORK THAT WAS LATER REVERTED. Corrected.
+
+**It used to say** that `Priority:` read *"take the player, never one already in a battle for it (USA
+Hockey 640(e))"* at 196/200, that `:1013` was corrected with it, and that the layer test passed on
+FACTS `:803` · BODY `:867` · SUMMARY `:1013`. ⚠️ **None of that shipped.** The 640(e) material was
+reverted with the rest of the apparatus, and this section was not updated to say so. `commit-gate`
+caught it on the fourth pass and noted that `review_history.md` is reconstructed from these records —
+so as written it would have recorded a propagation that did not happen.
+
+⚠️ **And the revert OVERSHOT, which the same pass caught.** The 640(e) material genuinely did depend on
+the reverted body passage. **The eligibility scope did not**, and it went out with it: `:828` shipped
+*"where your league permits body checking"* while `:803` and `:1013` went back to HEAD's unconditional
+*"Take the player or take the puck."* **The body gained a scope its two summary layers lost, in one
+diff** — round 10's shape exactly.
+
+⚠️ **Measured through the real renderer, not reasoned about:** `077.ssml` **ended** on *"Priority. Take
+the player or take the puck…"*, with the eligibility flag opening the **next file**, `078.ssml`. A
+listener would have finished an audio chunk on an unqualified instruction to take a player's body.
+`OPEN_ITEMS.md:6583` rates that exact line **critical** — *"the largest gap the pipeline can create"* —
+and four of the five rows in its table ship fixed here. **The one its own record calls worst was the one
+the revert broke.**
+
+**What actually ships:** `:803`, `:828` and `:1013` all carry *"where your league permits body
+checking"*. `Priority:` is 153/200; the block stays at 11 = `HARD_MAX` with no line added.
+
+**Layer test, re-run on the staged tree: FACTS `:803` ✓ · BODY `:828` ✓ · SUMMARY `:1013` ✓.**
+
+### ⚠️ The process catch that mattered most
+
+`safety-reviewer` noticed that **the working tree and the index had diverged** on this file — `git diff`
+showed 1 line changed, `git diff --cached` showed 5. **The index still held the version carrying failure
+(4)**, the masculine NHL wording attributed to both books. **Committing at that moment would have shipped
+the defect that had just been retracted, and no checker could have seen it** — `check_facts` and
+`check_links` read the working tree; the hook gates on those same checkers. It was caught by a reviewer
+running `git diff` as a matter of habit, which is precisely the defence CLAUDE.md names and the only one
+there is.
+
+---
+
+## ⚠️⚠️ THE REPAIR APPARATUS WAS REVERTED AFTER NINE ITERATIONS. THIS IS THE ROUND'S FINDING.
+
+`offensive_zone_play.md:867` was rewritten **six times in one session**. Every rewrite fixed the
+defect named and introduced a new one:
+
+| # | The repair | The defect it introduced |
+|---|---|---|
+| 1 | *"find a body, not the puck"* → seal/pin | A seal/pin distinction **no rulebook draws** |
+| 2 | → *"seal the wall… with your position and stick"* | **Granted the stick**, which NHL/IIHF 56.1 withholds |
+| 3 | → quoted the proviso | Quoted the **NHL's masculine wording** and credited it to *"NHL and IIHF"* |
+| 4 | → split the attribution | Attributed *"not the player's body"* to **NHL 56.1, which does not say it**; invented *"usually the free hand that gets called"* — **folklore in a safety callout** |
+| 5 | → added USA Hockey 640(e) | Hung 56.1's proviso on **the wrong one of its grants** |
+| 6 | → *"56.1 writes TWO grants"* | **It writes THREE**, and **two** are conditional |
+
+Then three independent reviewers — `rules-verifier`, a fresh `safety-reviewer`, `content-reviewer` —
+found roughly fifteen more in the result, including: the **restraint limb** (*"A player who is behind
+an opponent, who does not have the puck, may not use his stick, body or free hand in order to restrain
+his opponent"*) omitted although the section's own fact pattern satisfies both its triggers; a pointer
+crediting `breakouts.md` with a rule it does not hold; a rule number cited with **no book named**; an
+uncited *"passing lane"* legality claim; and **three sentences addressed to an editor rather than a
+player** (NN6) — one of them *"get them the wrong way round and you will withdraw a legal play"*, which
+is what a referee does, not a player.
+
+### The decision
+
+⚠️ **Everything added to `:867` today was reverted.** What ships is the **minimal** change: the
+grammatical object of "seal", exactly as at `:817` and `:828`. `offensive_zone_play.md` is now
+**6 insertions / 6 deletions** against HEAD. ⚠️ **This line said 4/4 and was stale** — it was written before the C7 repair restored the eligibility scope to `:803` and `:1013`, and was not updated when that repair was recorded forty lines above. `commit-gate` caught the record contradicting itself inside one file, for the third time this round.
+
+⚠️ **Reverting to HEAD wholesale was NOT an option and was checked** — HEAD reads *"you may use your
+body to **seal them against the wall**"*, which is the defect the round exists to fix.
+
+**Why revert rather than patch again.** Nine iterations, nine new defects, and the last three were
+found only because three reviewers were run in parallel on one paragraph. **The additions were the
+defect source; the pre-existing late-hit treatment verified clean** — `rules-verifier` checked all 21
+quotations in it character-for-character and found none wrong. **Removing my additions removes six
+defects and restores no new ones**: the 640(e) omission it leaves behind is *pre-existing*, recorded,
+and older than this session.
+
+⚠️ **The structural diagnosis, which all three reviewers reached independently and which no patch can
+satisfy:** the subsection is doing two jobs — *when to pinch* and *what four books allow on arrival* —
+its facts block is at **11 = `HARD_MAX`** with no room for the missing rules, and `:867` is
+**5,867 characters of which roughly 700 tell a player what to do.** It needs splitting, and a section
+split is not a thing to do at a commit gate. Tracked as T0-P15.
+
+**What this cost and what it bought.** The round ships a smaller change than intended. It also
+produced the clearest evidence in this project's record that **a paragraph can be repaired past the
+point where repairing it is the right move**, and that the signal for that is not the size of the
+defect but the *rate at which repairs introduce new ones*.
+
+---
+
+## C11, answered for THIS commit, per file
+
+⚠️ The earlier *"C11 answer, per file"* section answers for commit `6d9562c` and ends *"All other files
+— confined, markers only."* **That is not true of this diff**, which changes five content claims.
+`commit-gate` blocked on the gap. Answered here.
+
+**The question C11 asks: is every changed claim traceable to a named finding, and who verified the
+wording that actually ships?**
+
+| File | Changed claim | Traces to | Who verified THE SHIPPED WORDING |
+|---|---|---|---|
+| `positions/goaltender.md` | `:1137` the box-out needs no checking league, but walking a player off an established spot is a push that a checking league does not license; `:1150` HC misquote replaced, 625(a)(4) added, 604(a) given its floor-not-ceiling continuation | The *"incidental"* misquote finding; the *"needs a checking league stated as sufficient"* finding | `rules-verifier` and `safety-reviewer` on the substance; ⚠️ **`commit-gate` re-derived 625(a)(4), NHL/IIHF 56.1's lateral limb and 604(a)'s continuation from `sources/` against the STAGED text on pass 5** |
+| `systems/defensive_zone_coverage.md` | `:452` counterweight added; `:461` pointer direction and citation scope corrected | ⚠️ **A contradiction this diff CREATED** — `:452` and `goaltender.md:1137` said opposite things about the same act, each voiced alone | `commit-gate` pass 5, **through the renderer**; the fix uses `goaltender.md:1137`'s already-verified formulation |
+| `systems/offensive_zone_play.md` | `:817`, `:828`, `:867` — grammatical object of "seal"; `:803`, `:1013` — eligibility scope; `:1058` — penalty floor | The seal critical; the round-10 propagation gap; the *"not a minor"* falsehood | `rules-verifier`, `safety-reviewer`, `content-reviewer` reviewed the **superseded** long version — ⚠️ **what ships is SHORTER than what they reviewed**, being HEAD's text plus one clause. `commit-gate` verified the shipped wording on passes 4 and 5, including the layer test through the renderer |
+| `technique/body_contact_and_battles.md` | `:458`/`:461` eligibility flags; provenance at `:708`, `:1544`, trailer | The inline-flag finding; the provenance finding | `facts-reviewer`, `source-verifier`; `commit-gate` verified both `sources/ibc.txt` orderings on pass 5 |
+| `technique/skating.md` | `:110` provenance — *"citing a six-patient case series"* | The unqualified-mechanism finding | `safety-reviewer`; `commit-gate` verified against `sources/huh.txt:225-233` on pass 5 |
+
+⚠️ **The honest weakness, stated rather than hidden:** for `offensive_zone_play.md` the three
+independent reviewers read a version that was then reverted. **Nobody but `commit-gate` has reviewed
+the wording that ships** — and what ships is HEAD's own sentence with one clause changed, which is why
+that is acceptable here and would not be for new prose.
+
+⚠️ **And `defensive_zone_coverage.md:452`'s contradiction was created by this diff and caught on the
+fifth pass** — by rendering both files and reading the two voiced units side by side. **No checker can
+see this**: `check_facts` validates each line alone, and the two lines live in different files.

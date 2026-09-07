@@ -469,13 +469,34 @@ const pp23 = {
 // The other two earn a diagram because each shows a defensive commitment opening
 // a specific gap that the prose describes but cannot make visible on its own.
 
-// Mirrors NET_FRONT's own dx across the centreline (dy -4 instead of +4), so it
-// inherits the same crease clearance the file's own comment on NET_FRONT already
-// works out — the crease is symmetric about y=0, so a mirrored offset clears it
-// by the same margin. This exact coordinate, (81, -4), is also pk-diamond's own
-// low-defenceman spot ("alone, low"), which already stands this close to an
-// opposition net-front attacker at NET_FRONT in that diagram without incident.
-const BACKDOOR = { at: 'net-front', dx: -3, dy: -4 };        // (81, -4)
+// ⚠️ THIS WAS dx -3, i.e. (81, -4), AND THE COMMENT ABOVE IT CLAIMED TO MIRROR
+// NET_FRONT'S OWN dx (-4) "across the centreline" — it did not; -3 ≠ -4, so the
+// mirror claim was false on its face. A corpus-wide crease sweep on 2026-09-07,
+// reading the built crease path exactly as the NET_FRONT note above does, found
+// the real gap: (81, -4) sits 2.9194 ft from the nearest crease boundary (the
+// front arc, not the straight side at |y|=4) — inside the 3.275 ft an own-team
+// circle's BODY AND ITS OWN OUTLINE STROKE already reach, by 0.356 ft, and inside
+// the 3.875 ft the halo reaches, by 0.956 ft. That is not sub-pixel: at this
+// file's 9 px/ft it is roughly 3.2 px of solid glyph outline and 8.6 px of halo,
+// both visibly inside the blue paint — unlike NET_FRONT's own 0.05 ft
+// (half-a-pixel) halo-only overlap, which is genuinely invisible and is not this.
+//
+// FIXED to dx -4, i.e. (80, -4) — actually the same offset as NET_FRONT, mirrored
+// in dy as the retracted comment intended. Because the crease is symmetric about
+// y = 0, this inherits NET_FRONT's own already-audited numbers exactly: 3.823 ft
+// to the nearest boundary, 0.923 ft of body daylight, 0.548 ft of outlined-body
+// daylight, and the same 0.05 ft (invisible) halo overlap NET_FRONT's own comment
+// above already accepts. Re-verified for THIS coordinate, not assumed from the
+// mirror claim a second time: nearest_dist(80, -4) = 3.8234 ft, matching
+// nearest_dist(80, 4) to four decimal places.
+//
+// pk-diamond's 'L' ("alone, low") independently sits at the OLD (81, -4) — same
+// coordinate, but a triangle (pos 'D'), not a circle, and triangle reach is
+// anisotropic: in the ~20-24° direction where this crease is nearest, its own
+// halo reaches only 2.8-ish ft off its apex figure, clearing the boundary by
+// ~0.11 ft. Checked as part of this fix; not moved, because it does not need to
+// be.
+const BACKDOOR = { at: 'net-front', dx: -4, dy: -4 };        // (80, -4)
 
 // "The backdoor is the weak-side post ... Whenever the kill's low defender
 // commits to the strong side or to the net-front player, it is a 2-on-1 with
@@ -536,7 +557,14 @@ const ppBackdoor = {
     // Stops 3.16 ft short of the receiver, the same clearance pp-131 uses for its
     // own net-front pass, for the same reason: a pass that lands exactly on a
     // glyph's centre reads as arriving on top of the player rather than at him.
-    { from: 'point:right', to: { at: 'net-front', dx: -6, dy: -3 }, kind: 'pass' },
+    // ⚠️ RE-AIMED WITH BACKDOOR. This endpoint used to be (78, -3), which was
+    // exactly (-3, +1) — magnitude sqrt(10) = 3.1623 ft — off the OLD (81, -4).
+    // Moving BACKDOOR to (80, -4) without touching this would have left the tip
+    // 2.236 ft from the receiver instead, inside his 2.9 ft body and no longer
+    // the distance the comment claims. Kept the same (-3, +1) offset and the same
+    // approach line, now anchored to the new centre: (77, -3), still 3.1623 ft
+    // from BD and still clear of his body, under his halo.
+    { from: 'point:right', to: { at: 'net-front', dx: -7, dy: -3 }, kind: 'pass' },
   ],
 
   puck: { at: 'point:right', dx: 2, dy: -3 },
