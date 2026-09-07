@@ -24,6 +24,8 @@ Players who look like they see the whole ice have almost always simply already l
 
 ## The central idea: vision is a habit, not a gift
 
+![](diagram:scan-before-a-wall-reception)
+
 ```facts
 Key: Players who look like they see the whole ice have almost always simply already looked
 Action: Look while the puck is being retrieved, again as the passer's head comes up, and once more just before it arrives
@@ -39,8 +41,6 @@ Consider two players receiving the same pass on the half-wall — the boards are
 **Player B** looked over their inside shoulder while the puck was still being retrieved behind the net, looked again as the passer's head came up, and took a last glance a heartbeat before the puck arrived. They knew about the forechecker before the puck was even passed. They received the puck already turning away from the pressure, and moved it to the support they had seen three seconds earlier.
 
 From the bench, Player B looks quicker, calmer and more skilled. Their hands are not better. **They took two or three brief looks, at moments when looking was free.** That is the entire difference, and copying it costs no fitness, no ice time and no talent — the whole input is remembering to turn your head.
-
-![](diagram:scan-before-a-wall-reception)
 
 The mechanism is worth stating plainly, because it tells you *when* the habit pays:
 
@@ -161,6 +161,8 @@ Ranked by value.
 
 ### What to look for, in priority order
 
+![](diagram:scan-the-danger-in-your-own-end)
+
 ```facts
 Key: Beginners scan for the puck and stop; experienced players keep the puck as their anchor and spend every extra look on people and space
 Priority: Scan in this order — pressure on you, then your outlet options, then the danger you are responsible for, then the space you could move into
@@ -190,8 +192,6 @@ Take the information in this order, because this is the order in which it can hu
 **3. The danger you are responsible for.** Everything above is about you. This is about the goal. In your own end, the question is: *if the puck goes to the net right now, who scores?* Usually that is a body at the net front — the immediate area in the goalmouth — or a player sneaking into the **high slot** (the area from the faceoff dots up to the top of the circles).
 
 This part is system-dependent, so name your system. **The house default throughout is a low zone collapse — a zone-based defensive-zone coverage in which the skaters sag toward the net and take whoever comes into their area.** Under a collapse, your eyes alternate between the puck and the most dangerous body near you, and "your man" is whoever is currently in your area. Under a **strict man-to-man** system, your assignment gets far more of your visual attention and the puck gets less. Under a **hybrid** — man-on-man low, zone up high — it changes depending on where you are standing. **Find out which one your team plays**, because it directly determines where your eyes belong. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
-
-![](diagram:scan-the-danger-in-your-own-end)
 
 **4. The space you could move into.** Last, not because it is unimportant, but because it is the thing you can afford to be wrong about. Where is the ice nobody is standing in? Where will it be in two seconds? This is what turns a competent player into a dangerous one, and it is covered properly in [Time and Space](time_and_space.md) and [Playing Without the Puck](playing_without_the_puck.md).
 
@@ -432,6 +432,10 @@ What it takes, briefly (the full treatment is in [Puck Handling](../technique/pu
 
 ## Anticipation versus guessing
 
+![](diagram:lane-jump-anticipation)
+
+![](diagram:lane-jump-guess)
+
 ```facts
 Key: Anticipation is acting on information; guessing is acting on hope
 Read: The test is not whether you were right. Ask whether your position would still be useful if you turn out to be wrong
@@ -450,10 +454,6 @@ The test that actually distinguishes them is not whether you were right. It is t
 > **Would my position still be useful if I turn out to be wrong?**
 
 An anticipating player moves somewhere that is defensible either way — they have shaded toward the likely pass while remaining between the puck and the net. A guessing player has committed to a position that is worthless unless the guess lands. That is the whole distinction, and it is teachable in one sentence.
-
-![](diagram:lane-jump-anticipation)
-
-![](diagram:lane-jump-guess)
 
 **When jumping a passing lane is the right play:**
 

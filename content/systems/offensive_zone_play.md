@@ -30,6 +30,8 @@ Once you already have the puck at the other team's end of the ice, **you are not
 
 ### The scoring area — "home plate"
 
+![](diagram:oz-home-plate)
+
 ```facts
 Position: Home plate runs from the tops of the two faceoff circles, in along the tops, down to the dots, then angles in to the goalposts
 Key: Shots inside home plate are counted as scoring chances; those from the inner part, close to the net and between the dots, as high-danger chances
@@ -39,8 +41,6 @@ Key: The faceoff circles and the goal crease are your on-ice ruler for everythin
 ```
 
 Analysts describe the dangerous part of the offensive zone as a **home-plate shaped area** (as in the baseball plate). It runs from the tops of the two faceoff circles, in along the tops of the circles, down to the faceoff dots, and then angles in to the two goalposts. Shots inside it are counted as **scoring chances**; shots from the inner part of it, close to the net and between the dots, are counted as **high-danger chances**.
-
-![](diagram:oz-home-plate)
 
 Some geography, in plain terms:
 
@@ -85,6 +85,8 @@ The best chances do both at once: a pass across the slot to a player already in 
 
 ### The Royal Road: What it is
 
+![](diagram:oz-royal-road)
+
 ```facts
 Key: The royal road is an imaginary line down the centre of the ice, lengthwise, from the middle of one net to the middle of the other
 Key: A royal road pass — also called a slot-line, cross-seam or cross-slot pass — crosses that line in the offensive zone immediately before a shot
@@ -104,8 +106,6 @@ The **royal road** is an imaginary line running down the centre of the ice, leng
 > **⚠️ Published descriptions of where the line actually runs do not agree.** This document uses the **net-centre-to-net-centre** version above, because it is the more common description and gives the more conservative coaching instruction. But **both** of the sources closest to Valiquette's own figures describe something narrower and zone-limited: Blue Seat Blogs has it running only from the centre bar of the net to the top of the circles, and NHL.com describes *"a line that halves the offensive zone in two below the tops of the faceoff circles"*. On that reading the road stops at the top of the circles rather than spanning the rink — and it is **two-to-one against the popular version**, so the net-to-net geometry used here is kept for being the more conservative coaching instruction, not for being better supported. The framework is proprietary and the exact geometry has never been published, so the disagreement cannot be resolved from public sources. [Shooting](../technique/shooting.md) sets this out in full.
 
 A **royal road pass** — also called a **slot-line pass**, **cross-seam pass** or **cross-slot pass** — is a pass that crosses that centre line in the offensive zone immediately before a shot. Note the *cross-*: a **seam** on its own is any gap between two defenders' coverage areas and the lane through it, which need not cross the centre of the ice at all.
-
-![](diagram:oz-royal-road)
 
 ### Why it beats everything else
 
@@ -136,6 +136,8 @@ If the shot comes before they finish that sequence, they are not making a positi
 
 ### How to actually create one
 
+![](diagram:oz-cross-the-road-yourself)
+
 ```facts
 Action: Look across before you look along — your first scan off the wall is the far side of the slot, the backdoor and the weak-side dot
 Never: Scan up the wall first — by the time you come back, the seam has opened and closed
@@ -152,8 +154,6 @@ Knowing the concept is worthless without the habits that produce it. Four practi
 - **Pass to where the shooter is going, not where they are.** A seam pass into a player's feet takes an extra touch, and the extra touch is exactly the time the goalie needed.
 - **Carry it across yourself.** A puck carrier who cuts through the middle drags the goalie laterally the same way a pass does. Driving from the half-wall into the high slot, or curling out from behind the net into the slot, both cross the line.
 - **Use the player behind the net.** A pass out from below the goal line to the slot crosses the royal road almost by definition, and the goalie has to turn their head to track it. See section 8.
-
-![](diagram:oz-cross-the-road-yourself)
 
 **The corresponding defensive truth:** taking away the middle of the ice is the whole point of most defensive-zone systems. Expect the seam to be defended, and expect it to open only briefly. See [Defensive Zone Coverage](defensive_zone_coverage.md).
 
@@ -190,6 +190,10 @@ That "below / level / above" arrangement is what forms the **attack triangle**, 
 
 ### Rotation: the triangle moves, the shape does not
 
+![](diagram:oz-five-man-shape)
+
+![](diagram:oz-rotation-one-pass-later)
+
 ```facts
 Key: The three forwards hold no fixed spots — as the puck moves, everyone rotates so the shape is preserved
 Read: Puck from the half-wall down to the corner → the corner player is now F1, the old carrier rotates up, the high player holds
@@ -203,10 +207,6 @@ The three forwards do not hold fixed spots. As the puck moves, everyone rotates 
 - Puck goes from the half-wall down to the corner → the corner player is now F1 (below/level), the old carrier rotates up, the high player holds.
 - Puck goes low-to-high to the point → the low forwards attack the net and the slot; the high forward screens or gets to the top of the circle.
 - Puck goes behind the net → the player who was net-front becomes the level support at the far post; the far-side forward slides into the slot.
-
-![](diagram:oz-five-man-shape)
-
-![](diagram:oz-rotation-one-pass-later)
 
 The one non-negotiable: **at least one forward is always in or attacking the home-plate area.** A triangle that is entirely on the perimeter is just three players passing the puck around the outside of a defence that is perfectly happy about it.
 
@@ -248,6 +248,8 @@ These are the house default's rules, not laws of hockey, and they are short and 
 
 ### Realistic alternatives
 
+![](diagram:pp-131)
+
 ```facts
 Options: Overload / strong-side load — four players on the puck side, one weak-side outlet; wins board battles, gives up the weak-side seam
 Options: Five-man rotation — defencemen rotate into forward spots and forwards cover the line as routine rather than emergency
@@ -259,8 +261,6 @@ Never: Confuse the bumper with the net-front player — two different jobs at tw
 - **Overload / strong-side load.** Four players are loaded onto the puck side, with only one weak-side outlet. Wins board battles and grinds teams down; gives up the weak-side seam and the quick change of point.
 - **Five-man rotation ("position-less" or high cycle).** Defencemen rotate into forward spots and forwards cover the line as a matter of routine rather than emergency. This is how modern NHL teams with skating defencemen play. It requires everyone to be comfortable at the blue line.
 - **1-3-1 spread.** One at the point, two on the half-walls, one **bumper** in the middle of the ice between them, one net front. Common on the power play (see [Special Teams](special_teams.md)) and occasionally used at even strength. **The bumper is not the net-front player** — they are two different jobs at two different depths.
-
-![](diagram:pp-131)
 
 ---
 
@@ -293,6 +293,10 @@ Goal: Buy time for your defencemen and late forwards to join and get set
 
 ### The mechanics
 
+![](diagram:oz-cycle-rim)
+
+![](diagram:oz-cycle-reverse)
+
 ```facts
 Technique: Low-to-low — pass backwards and down to a teammate arriving behind you, then rotate up into the space they just left
 Read: If the checker is still in front of you, rim it — onward around the boards, past the player sealing you to the wall
@@ -310,10 +314,6 @@ Never: Turn your back to the boards when that contact comes, and never duck — 
 - **Reverse** — the puck goes *back against the flow*, into the space a checker has just skated out of. Beats pressure that has over-committed and gone past you.
 
 Picking the wrong one is a leading cycle turnover — **nobody has counted cycle turnovers by cause, so take that as coaching craft rather than a measurement**; what is not in doubt is that the two reads point in opposite directions and one of them is wrong every time. The rule of thumb: **if the checker is still in front of you, rim it; if they have skated past you, reverse it.**
-
-![](diagram:oz-cycle-rim)
-
-![](diagram:oz-cycle-reverse)
 
 **The bump pass off the wall.** Rather than passing to a teammate directly, you fire the puck hard into the boards so it caroms to a spot. It is unblockable by a stick in the passing lane and it does not care about a defender standing between you. Aim at a *spot on the wall*, not at your teammate, and call it — a bump nobody expects is a turnover.
 
@@ -369,6 +369,8 @@ This is the defining amateur error in the offensive zone. A team gets the puck l
 
 ### The play
 
+![](diagram:oz-low-to-high)
+
 ```facts
 Action: Pass from a low position — corner, half-wall, behind the net — up to a defenceman at the point or the top of the circle, who shoots
 Read: Low-to-high is the standard way to generate a shot when the defence has collapsed low and taken away everything in tight
@@ -388,8 +390,6 @@ The sequence, with everyone's job named:
 3. **One forward gets to the net front** to screen and tip.
 4. **One forward supports in the high slot**, giving the defenceman a second option and forming a triangle with the point — meaning the puck can be moved again quickly instead of being fired into a shin pad.
 5. **The weak-side defenceman** reads for a rebound squirting to their side and is ready to jump on it.
-
-![](diagram:oz-low-to-high)
 
 A common addition is **D-to-D across the top** before the shot: the strong-side defenceman moves it to their partner, the goalie has to slide across, and the shot comes from the other side. On the net-centre-to-net-centre geometry this document uses, that is a royal road crossing at the top of the zone — less valuable than one in the slot, but far better than a static point shot. *(Under the narrower, zone-limited description of the road noted in Section 2, a lateral pass out at the blue line would not cross it at all. The coaching point survives either way: the goalie still has to slide, and a shot arriving before they are set is worth more than one arriving after.)*
 
@@ -427,6 +427,8 @@ The net front is the least glamorous piece of productive real estate in hockey, 
 
 ### Screening
 
+![](diagram:oz-net-front-screen)
+
 ```facts
 Position: At the edge of the blue paint, inside the faceoff dots — roughly six to eight feet out, living just beyond the arc
 Technique: Stand between the goalie's eyes and the puck, not between the goalie and the net. Slide with the point man as they walk the line
@@ -446,8 +448,6 @@ The mechanics of doing it well:
 - **Be still at the moment of release.** Plant and obstruct. Constant shuffling gives the goalie flashes of the puck through the gaps.
 - **Do not watch the shot.** Look at the puck through your legs or over your shoulder, then get your eyes back to the ice in front of you. Turning your body to follow the flight of the shot is how you both un-screen the goalie and miss the rebound.
 - **Position: at the edge of the blue paint, inside the faceoff dots — roughly six to eight feet out from the goal line.** Deep enough to obstruct the goalie's view and to reach rebounds, far enough out to stay clear of the crease. Note the geometry, because it is easy to get wrong: the crease is **8 feet wide at the goal line and 6 feet deep**, because the arc that closes it is struck with a **six-foot radius from the centre of the goal line** (Rule 1.7) — the six feet is the *depth*, not the half-width. So "three feet out from the goal line" is *inside* the paint, not clear of it. Live just beyond the arc.
-
-![](diagram:oz-net-front-screen)
 
 ### Tips and deflections
 
@@ -624,6 +624,8 @@ It is a good place to hold the puck because you have the boards protecting one s
 
 ### The four options from the half-wall
 
+![](diagram:oz-half-wall-options)
+
 ```facts
 Action: Know all four before the puck arrives, and know which one is on
 Options: Low — to the corner or behind the net; the safe continuation that feeds the cycle and resets the defence's problem
@@ -641,8 +643,6 @@ Know all four before the puck arrives, and know which is on:
 4. **Yourself — drive the net or cut to the middle.** Attack the inside off the wall. Best when your check is flat-footed, has turned their hips, or has over-committed to taking away a pass.
 
 The failure is having only one of these in mind. A player who arrives on the half-wall intending to pass to the point will do that regardless of whether the slot was open.
-
-![](diagram:oz-half-wall-options)
 
 ### Buying time
 
@@ -687,6 +687,8 @@ Key: Passes from below the goal line finished at 6.73%, second only to royal roa
 
 ### What to do from there
 
+![](diagram:oz-behind-the-net)
+
 ```facts
 Action: Pass out to the slot — the primary play, not the last resort; look for the high-slot forward or the backdoor player
 Options: The wrap-around — carry round the post and stuff it far side before the goalie seals; best as a threat, because sealing hard opens the slot pass
@@ -706,8 +708,6 @@ Read: In England and Wales the restricted area's status is unsettled (Rules & Re
 - **The walkout.** Come out from behind the net into the slot yourself, on your forehand, with the puck. You cross the royal road carrying the puck and you arrive in the most dangerous area on the ice.
 - **The bank off the goalie.** Legal, and occasionally free. From a tight angle behind the goal line you can bank the puck off the back of the goalie's pads into the net.
 - **Reverse or rim to restart the cycle.** If nothing is on, feed it back out to the corner you came from or rim it to the far corner and rotate. Possession retained is a perfectly good outcome.
-
-![](diagram:oz-behind-the-net)
 
 > **Rules note — the trapezoid does not apply to you.** The **goalkeeper's restricted area** (the trapezoid behind the net — geometry from NHL **Rule 1.8**, penalty from **Rules 27.8 / 63.2(viii)**; never take dimensions from 27.8, whose "six feet from either goal post" is stale pre-2014 wording) restricts only the **goaltender's** ability to play the puck behind the goal line. Skaters may go anywhere behind the net at any time. Also note that the trapezoid exists in NHL and IIHF play — and reportedly the KHL, though no KHL rulebook was available to check that one — but **not under USA Hockey, Hockey Canada or CARHA**. The words *trapezoid* and *restricted area* appear nowhere in any of those three books, nor in USA Hockey’s separate *Casebook*; *designated area* appears once, in Hockey Canada’s **Rule 5.4(b)** — *"Each Goal Judge will be stationed in the designated area behind each goal"* — which is about where the **Goal Judge** stands and has nothing to do with the goaltender. That changes the calculus of dumping the puck in, because under those books their goalie may retrieve it anywhere behind the net. How much rec, beer-league and youth hockey that adds up to is a question about leagues rather than about books, and this document has no count for it. **And no trapezoid is not no restriction on their goalie** — it frees them to fetch the puck out there, not to sit on it. USA Hockey **Rule 614(c)** makes it a delay-of-game minor for a goalkeeper to fall on or gather the puck causing a stoppage where *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"*, and Hockey Canada's **Interpretation 3 to Rule 10.1(a)**, clause v, reads *"When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."* ⚠️ **Both books also write a clause for the exact play you just made, and both run your way.** Hockey Canada's **clause iv** of the same Interpretation reaches a goaltender who comes out *"to beat an attacking player to the puck and simply jumps on the puck, causing a stoppage of play"*, with *"[n]o warning… in this instance"*. USA Hockey's *Casebook* answers the identical facts at **Rule 614(c), Situation 6** — a goalkeeper rushing a loose puck inside their own privileged area to beat a lone attacker to it — with **Yes**, a minor, because *"[t]he goalkeeper has an obligation to play the puck with their stick, just like any other player."* ⚠️ **Do not stretch that to a goaltender who came out to make a *save*.** A cover taken after stopping a shot is a different case in both books and the exceptions there run the other way; [Goaltender](../positions/goaltender.md) owns all of it. So dump it in expecting them to move it, and chase as though they cannot smother it. **🇬🇧 In England and Wales, treat this as unsettled.** The IIHF book carries the rule (Rule 27.7, not the NHL's 27.8), but England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"* and the IHUK In-House Rules do not mention it in either the 2025-26 edition or the current 2026-27 one — though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. For you as the attacking team the safe assumption runs the other way: plan as though their goalie **may** retrieve the puck, ask your league, and look behind the net to see whether the lines are painted at all. Treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
 

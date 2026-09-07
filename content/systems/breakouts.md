@@ -106,9 +106,9 @@ None of that makes clearing wrong. It makes clearing a **decision** rather than 
 
 ## 2. The Five Roles in Every Breakout
 
-Whatever play is called, five jobs exist. Knowing which one is yours *before* the puck is retrieved is most of the battle.
-
 ![](diagram:breakout-five-roles)
+
+Whatever play is called, five jobs exist. Knowing which one is yours *before* the puck is retrieved is most of the battle.
 
 ### 1. The puck-retriever D (D1)
 
@@ -219,6 +219,8 @@ Two warnings on names before you start. First, teams disagree about these names 
 
 ### Up
 
+![](diagram:breakout-up)
+
 ```facts
 Action: Direct pass from the puck-carrying defenceman to the strong-side winger on the wall — the fastest of the nine breakout options when the lane is open, though no count ranks them by speed
 Position: D1 below the goal line or on the wall, the winger on the boards between the hash marks and the goal line, the centre low in the middle as the bail-out
@@ -236,11 +238,11 @@ The direct pass from the puck-carrying defenceman to the strong-side winger on t
 - **The risk:** The wall pass travels the lane a forecheck posts its wall-sealer in — F2 in a 2-1-2, the strong-side half-wall player in a 1-2-2. Intercepted at the hash marks, it's a scoring chance from the top of the circle.
 - **How it's defeated:** Any forecheck with a designated wall-sealer beats it — the second forechecker in a 2-1-2 whose job is exactly this, or the strong-side half-wall player in a 1-2-2. Teams also beat it by having their weak-side defenceman step down on the winger the instant the pass leaves, so the winger has no time even after a good pass.
 
-![](diagram:breakout-up)
-
 ---
 
 ### Wheel
+
+![](diagram:breakout-wheel)
 
 ```facts
 Action: The defenceman carries the puck himself, skating behind the net and up the far side
@@ -263,11 +265,11 @@ The defenceman carries the puck himself, skating behind the net and up the far s
 - **The risk:** You are carrying the puck through the middle-ish of your own zone with your back briefly to the play. If you're caught, you're caught below your own goal line with the puck.
 - **How it's defeated:** A second forechecker holding the far side — precisely what F2 does in a 2-1-2 — turns a wheel into a trap. A forechecker who takes the "back door" route around the net rather than chasing you also kills it. The counter to being caught mid-wheel is the reverse, below.
 
-![](diagram:breakout-wheel)
-
 ---
 
 ### Reverse
+
+![](diagram:breakout-reverse)
 
 ```facts
 Action: Send the puck back against the flow of the forecheck, usually a hard backhand off the boards behind you
@@ -290,11 +292,11 @@ Sending the puck **back against the flow** of the forecheck, usually a hard back
 
 **Rim and reverse are different plays. Keep them straight:** a **rim** goes *onward* around the boards in the direction the puck was already travelling; a **reverse** goes *back* against it.
 
-![](diagram:breakout-reverse)
-
 ---
 
 ### D-to-D
+
+![](diagram:breakout-d-to-d)
 
 ```facts
 Action: Pass across to your partner, changing the side the attack comes from and forcing the entire forecheck to reset and shift
@@ -314,11 +316,11 @@ The pass across to your partner, changing the side of the ice the attack comes f
 - **The risk:** Executed correctly, this is one of the lowest-risk plays in hockey. Executed through the slot, it is one of the highest. There is very little middle ground.
 - **How it's defeated:** A 2-1-2 with two forecheckers arriving on separate sides beats D-to-D because there's already someone on your partner. A 1-2-2 defeats it by having F1 take away the D-to-D lane as their *first* responsibility — that is often exactly what the containing forechecker is told to do — forcing the puck up the wall into the two waiting forwards.
 
-![](diagram:breakout-d-to-d)
-
 ---
 
 ### Rim
+
+![](diagram:breakout-rim)
 
 ```facts
 Action: A hard shot along the boards that follows the curve of the rink around to a teammate further along — usually the far-side winger
@@ -338,8 +340,6 @@ A hard shot along the boards that follows the curve of the rink around to a team
 - **Execution:** Two things decide whether a rim works. **Height and pace:** keep it low and flat enough to stay on the boards and hard enough to carry all the way around — a soft rim dies in the corner and is a gift. **Target:** aim it to arrive *where a teammate can meet it*, not simply "around". See the trapezoid section (10) — this changes rim targeting fundamentally.
 - **The risk:** A rim concedes possession more often than any other option except an outright clear, because the receiver is collecting a moving puck on the wall with a defenceman closing. **That full ranking is a coaching judgement, not a tracked rate** — the exit tracking in section 1 measures controlled exits against clears, and nothing found here ranks all nine options against one another. **Two of them have been compared by name, though, and the data is KHL rather than NHL:** Daniel Weinberger's pass-clustering work on Hockey Graphs sets rims against direct "up" passes — 9,298 possessions against 12,180 — and reports, per 100 possessions, that rims led to possession in the neutral zone 38% of the time against 53% for ups, produced 13.1 shots against 17.4, and 0.54 expected goals against 0.68. His summary: *"Rims are a lot less efficient."* ⚠️ **Carry two limits with it.** It counts **successful passes only** — he says in terms that *"any analysis that only focuses on successful events is inherently flawed"* — so his explanation that *"rims are much more likely to result in a turnover"* is his reasoning rather than his measurement. **And one column runs the other way:** rims produced slightly *fewer* dump-outs per 100 possessions than ups, 14.4 against 15.6. It's a 50-50 dressed as a play.
 - **How it's defeated:** The rim is the play a forecheck most expects from a defenceman sealed on the boards — coaching emphasis, not a counted ranking. Any forecheck can post a player at the far wall to intercept it, and most do — the weak-side defenceman stepping down to the far wall to kill rims is standard. Skilled teams beat rims without even moving: they read the pressure you're under and pre-position.
-
-![](diagram:breakout-rim)
 
 ---
 
@@ -396,6 +396,8 @@ The immediate transition off a turnover, before the forecheck has any chance to 
 
 ### Stretch pass
 
+![](diagram:breakout-stretch-pass)
+
 ```facts
 Action: A long pass from your defensive zone to a forward who has left early and is waiting up ice
 Position: One forward — usually the weak-side winger — leaves the defensive zone early and stretches high; the retrieving defenceman looks up and hits them
@@ -416,8 +418,6 @@ A long pass from your defensive zone to a forward who has left early and is wait
 - **Execution:** Head up before you handle the puck, and lead the receiver so they collect it in stride. **Your winger must stay onside at the far blue line, and the rule is worth stating the right way round.** Rule 83.1: *"A player is on-side when either of his skates are in contact with the blue line, or on his own side of the line, at the instant the puck completely crosses the leading edge of the blue line."* So **one skate touching the line, or behind it, keeps your winger onside.** They are only **offside** if **both** skates are completely over the leading edge before the puck completely crosses it. Read plainly: the puck goes first, or at worst you and the puck arrive together — and a skate in the air over the neutral zone still counts as onside, because the plane has not been broken. **The IIHF's Rule 83.1 says this in materially identical words** — it writes *"either of **their** skates"* and *"their 'own side'"* where the NHL writes *"his"* — down to the "plane" of the blue line extending upwards and the skate that "has yet to break the plane" — so if you play anywhere in Britain, the airborne trail skate is legal in your book too. **Under USA Hockey 630(a) and Hockey Canada 6.11 it is not**, though they get there by different words: USA Hockey requires *contact* with the neutral zone or the blue line, and Hockey Canada counts only skates *"in physical contact with the ice surface"*. Either way an airborne skate is offside. **Neither the NHL nor the IIHF rulebook contains a centre-red-line ("two-line") pass restriction** — the long pass is legal, and it is absent from USA Hockey's and Hockey Canada's books too. That now includes the rec level: the **CARHA Hockey Official Rule Book**, the standalone book a large number of Canadian adult leagues play under, abolishes it in as many words at **Rule 73(d)** — *"For the purpose of 2-line passes, the red line will not be in play. It will still be in effect for icing."* ⚠️ **Flagged as unverified:** it is often said that a few older recreational-association rulebooks still run a two-line pass rule locally, but there is no published rulebook held here to confirm it. So do not rebuild your attack around one unless somebody shows it to you in writing. [Neutral Zone Systems](neutral_zone_systems.md) carries the same flag.
 - **The risk profile — the honest version:** a completed stretch pass is close to a breakaway. An intercepted one is a full-speed rush the other way with your winger a full zone out of the play — call it **sixty to eighty feet behind the puck** — because they left before the exit was secure. This is genuinely a high-risk/high-reward play, and its expected value depends almost entirely on your league's ability to complete a pass of that length: the blue lines sit **64 feet** out from each goal line (Rule 1.5) and the rink is **200 feet** long (Rule 1.2 — Dimensions; note that 1.5 covers the lines and 1.6 only names the three zones), so from your own goal line to the far blue line is **114 feet**, and even a stretch to the centre red line is **89 feet**. Very few amateur players can put a flat, receivable pass through either. In most amateur hockey it is not a good default. **Those are NHL-sheet distances.** The IIHF book specifies a different sheet, and the current In-House Rules authorise rinks smaller again *"for all levels of hockey"*, in *"all fixtures"*, right across the Home Countries — *"England, Wales, Scotland and Northern Ireland"*; [UK and England Rules](../foundation/uk_rules.md) has the amendment and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers the dimensions. Pace the pass to the sheet you are standing on.
 - **How it's defeated:** A 1-3-1 exists to kill it — three players stretched across the neutral zone erase the lane. A conservative 1-2-2 with two forwards holding high does much the same. Teams also defeat it simply by having their defencemen back off rather than step up, which makes the receiving winger easy to cover.
-
-![](diagram:breakout-stretch-pass)
 
 ---
 
@@ -473,6 +473,8 @@ You are not. You are **uncoverable but useless**, for three connected reasons:
 
 ### Where to stand
 
+![](diagram:breakout-winger-wall)
+
 ```facts
 Position: On the wall, between the hash marks and the goal line, on the strong side — low enough that the pass is short and safe, high enough that you are moving up ice when you get it
 Key: This is where you arrive, not where you have been standing
@@ -485,8 +487,6 @@ Convention: Wall position is system-dependent — a flat/spread structure asks w
 The default landmark is **on the wall, between the hash marks and the goal line, on the strong side** — low enough that the pass from behind or beside the net is short and safe, high enough that you're moving up ice when you get it.
 
 **This is where you arrive, not where you have been standing.** Under the house-default low zone collapse you spend the defensive shift *high*, level with the opposing point man on your side, and you come down the wall to this spot as your team wins the puck — the one time in that system a winger leaves the point voluntarily. See [Defensive Zone Coverage](defensive_zone_coverage.md) and [Winger](../positions/winger.md). Read anything below about "where the strong-side winger stands" as *where the strong-side winger stands once the breakout has started*.
-
-![](diagram:breakout-winger-wall)
 
 Being *above* the hash marks **once the breakout is under way** is the more common error: it makes the pass longer, flatter and more interceptable, and it means the pass comes into your back. Being high *before* that, while they still have possession, is not an error at all — it is your coverage. The error is failing to make the trip, not starting from the top.
 
@@ -556,6 +556,8 @@ If the winger's job is the most botched, the centre's is the most misunderstood 
 
 ### The swing, and where exactly it goes
 
+![](diagram:breakout-centre-swing)
+
 ```facts
 Goal: A low support loop — swing back down into your own zone, stay beneath the puck, and offer a short, safe, middle-lane pass
 Position: Inside the faceoff dots and below the hash marks — the strong-side circle, not the wall
@@ -571,8 +573,6 @@ Your job on a breakout is a **low support loop**: you swing back down into your 
 
 - **Below the hash marks.** Above them you are level with the opposition's forwards and the passing lane closes; below them the lane is open and the pass is short. Short passes complete and long ones do not — a centre ten feet from the defenceman is a pass that always works, one forty feet away is a hope. Coming from below and beside, you also receive **facing up ice**; coming from above, the puck arrives into your back.
 - **Inside the dots, not out on the boards.** Drifting wide puts you in the **strong-side winger's** ice, where one opposing player covers you both, and it kills the middle-lane option the structure depends on. Your swing may arc toward the strong side — it should, that is how you gather speed — but it arcs into the *circle*. If you can touch the glass, you are in the wrong job.
-
-![](diagram:breakout-centre-swing)
 
 You are **the bail-out**: when the wall is sealed and the wheel is closed, the low centre is what keeps the breakout alive. Without you, your defenceman is down to a rim, a reverse to nobody, or a turnover.
 

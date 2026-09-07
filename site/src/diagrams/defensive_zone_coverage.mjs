@@ -369,8 +369,14 @@ const collapseHighSlot = {
   width: 900,
 
   caption:
-    'The same low zone collapse a beat later — the weak-side winger’s collapse, which is ' +
-    'where this system succeeds or fails. ' +
+    // ⚠️ SELF-CONTAINED ON PURPOSE. This read 'The same low zone collapse a beat later',
+    // which resolves only in this diagram's OWNER document, where `dz-collapse-corner`
+    // sits immediately before it. It is BORROWED into content/positions/defender.md,
+    // which has no such predecessor, so 'the same ... a beat later' referred to nothing a
+    // listener there had heard. Found by a D1 agent; it was already broken before the
+    // markers moved. A borrowed caption must stand alone in every document that hosts it.
+    'A low zone collapse a beat after the corner battle begins — the weak-side winger’s ' +
+    'collapse, which is where this system succeeds or fails. ' +
     'The centre is now the second body in the corner battle — arriving inside the carrier and ' +
     'not behind him, because that carrier is facing the boards and cannot see him coming — ' +
     'and the weak-side winger has ' +

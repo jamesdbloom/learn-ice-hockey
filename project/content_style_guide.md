@@ -1414,6 +1414,58 @@ only place it lives.
 
 ---
 
+## ⚠️ A diagram goes at the head of the unit it teaches — and a BORROWED caption must stand alone
+
+Two rules, both written after the corpus was measured against them in September 2026.
+
+### Placement: the head of the teaching unit, not merely the head of the section
+
+The owner's instruction is *"diagrams should be at the start of sections"*, because a diagram that
+arrives after the prose it explains arrives too late. **Measured before the change: 0 of 286 markers
+sat at the head of their section, and 101 sat immediately before a `---` or the next heading.**
+
+⚠️ **But "immediately after the heading" is the wrong rule stated too literally.** In a section that
+covers several independent numbered tactics, it produces every picture at the top and every
+explanation below — mechanically compliant and worse to read. **The unit is the teaching point.**
+Put the diagram at the head of the smallest unit its caption is about: usually the section,
+sometimes a numbered item inside one.
+
+Three constraints that came out of doing it:
+
+- **Never insert a marker between items of a real ordered list.** It renumbers the list in the audio.
+- **Where two diagrams are a deliberate before/after or side-by-side pair, move BOTH to the head of
+  the unit they share** rather than splitting them into two child sections — splitting breaks
+  *"beside it"*.
+- ⚠️ **If a caption refers backward to prose that the move would strand below it, leave the marker
+  where it is and say so.** A wrong move is worse than no move.
+
+### A borrowed caption must stand alone in every document that hosts it
+
+**75 of 195 diagrams are hosted by more than one document.** A caption is quoted into documents that
+do not own it, so **editing a caption is a content change in every hosting document** — and a
+caption that describes its *neighbours* is true in one document and false in another.
+
+The worked example: `dz-collapse-high-slot` opened *"The same low zone collapse a beat later."* That
+resolves in its owner, where the "before" diagram precedes it. It is borrowed into
+`positions/defender.md`, **which has no such diagram** — so a listener there heard *"the same … a
+beat later"* about a picture they had never been shown.
+
+⚠️ **Nothing mechanical can catch this.** `check_links.py` resolves the marker, `check_facts.py`
+does not read captions, and **reading either document on its own sees a caption that looks fine** —
+the owner because the referent is there, the host because nobody re-reads a borrowed caption against
+its new neighbours.
+
+**So: relative-position words in a caption — *the same*, *a beat later*, *the previous diagram*,
+*beside it*, *shown above* — are safe only in a caption that is never borrowed.** Where a caption is
+borrowed, name the situation instead of pointing at a neighbour.
+
+⚠️ **Do not sweep this pattern.** A census found 95 captions containing such a phrase and **most are
+correct** — *"the same puck carrier"*, *"the same shift"* are self-contained. **A hit is a defect
+only when the referent is absent in one of the hosts.** That asymmetry is the whole test, and only
+reading finds it.
+
+---
+
 ## ⚠️ Diagram captions are VOICED, and no grep over `content/` can see them
 
 **A caption is read aloud.** It lives in `site/src/diagrams/<document>.mjs`, not in the markdown —

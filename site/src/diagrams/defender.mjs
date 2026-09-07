@@ -11,6 +11,13 @@
  * DOCUMENT: `grep -c '!\[\](diagram:' content/positions/defender.md` was 3 before this
  * round. `winger.mjs` carries the same warning for the same reason.
  *
+ * ⚠️ THIS FILE NOW HOLDS THREE NEW DIAGRAMS, NOT TWO — `defender-pair-overview` was added
+ * in a later round as the D3 pilot (see its own block below for the design argument). The
+ * paragraph immediately below this note was written for the original two and is left as
+ * written rather than reworded around the third, because it is a historical account of that
+ * round's reasoning and reads false if silently inflated. Do not add a fourth without either
+ * updating the count here or leaving the same kind of dated note.
+ *
  * WHY TWO NEW DIAGRAMS AND NOT TEN.
  * The document has 26 `###`/`####` teaching subsections under seven `##` sections
  * (`grep -c '^### \|^#### '` = 26) and is the longest positional document in the corpus
@@ -83,6 +90,95 @@
  *   A Note on Language       -> definitions. `the-goalmouth`, `the-high-slot`,
  *                               `strong-side-and-weak-side` are rink_map_and_glossary.md's
  *                               and the section already points there as the dictionary.
+ *
+ * ⚠️ A LATER ROUND ADDED FIVE MORE BORROWED MARKERS TO THE CONTENT FILE, NOT TO THIS
+ * MODULE — no new diagram spec lives here for them, so the count of NEW diagrams
+ * authored in this file stays THREE. A census had flagged three sections of
+ * defender.md as undiagrammed gaps: "Defensive Zone: Carrying the Puck — Under
+ * Pressure", "Defensive Zone: Pressuring an Opponent with the Puck" and "Net-front
+ * technique — how to actually move someone" (the largest undiagrammed section on the
+ * page). All three are now closed by borrows rather than by new artwork, and two of
+ * them REVERSE a decision recorded above:
+ *
+ *   Rim vs. reverse           -> `breakout-rim` AND `breakout-reverse`
+ *                               (breakouts.md, already reused in time_and_space.md
+ *                               and goaltender.md). "Defensive Zone: Carrying the
+ *                               Puck — Under Pressure"'s own Read line — "Rim to beat
+ *                               a forechecker sealing you against the boards; reverse
+ *                               to beat one who has over-committed and skated past
+ *                               you" — is close to a paraphrase of the two captions:
+ *                               `breakout-rim`'s is built on "a forechecker has
+ *                               sealed D1 against the boards", `breakout-reverse`'s
+ *                               on "the forechecker has over-committed and skated
+ *                               past him". Both, not one, because the section's own
+ *                               claim is that reading which of the two you are
+ *                               facing "is a core defenceman skill" — the same
+ *                               structure as the step-up/pinch pair above, which
+ *                               already earns two markers for the same reason.
+ *   The corner battle         -> `dz-collapse-corner` (defensive_zone_coverage.md).
+ *                               Frame one of the two-frame low-zone-collapse
+ *                               sequence this document already draws frame two of,
+ *                               at "The high-slot rotation" below — the strong-side
+ *                               D on the puck, the weak-side D at the goalmouth, the
+ *                               centre leaving the high slot as the second body, and
+ *                               both wingers still on their points, which is this
+ *                               section's own "wingers stay high ... the low battle
+ *                               belongs to the strong-side defenceman and the
+ *                               centre" almost word for word. Its caption already
+ *                               carries the man-on-man hedge this section states.
+ *   The trapezoid retrieval   -> `goalie-rim-stop-or-clear` (goaltender.md), NOT
+ *                               `the-trapezoid` (rink_map_and_glossary.md), which
+ *                               the note above left "for a reviewer to decide" and
+ *                               called a defensible borrow. Re-read both: `the-
+ *                               trapezoid` draws the shape alone, no players, which
+ *                               is right for a glossary entry but has nothing this
+ *                               subsection needs that the body does not already
+ *                               state. `goalie-rim-stop-or-clear` draws the DECISION
+ *                               instead — a rimmed puck crossing the goal line well
+ *                               outside the shaded area and only then entering it,
+ *                               with a defenceman labelled "your defenceman" coming
+ *                               back on the far side — which is this subsection's
+ *                               own claim, "your goalie cannot get a rim that dies
+ *                               in the corner. You have to." The reviewer's call
+ *                               went the other way from the hedge above.
+ *   Net-front technique       -> `net-front-walk-out-direction`
+ *                               (body_contact_and_battles.md, already reused in
+ *                               goaltender.md), REVERSING the refusal recorded
+ *                               above. That refusal is still correct about what it
+ *                               was about: the close body mechanics of a walk-out —
+ *                               shoulder under the armpit, leverage, the drive
+ *                               itself — are not something a top-down rink diagram
+ *                               can show, and the caption says so in its own words.
+ *                               But defender.md's H4 is not only the walk-out: its
+ *                               own ⚠️ paragraphs and its Common Mistakes and Key
+ *                               Takeaways entries carry a DIFFERENT and fully
+ *                               spatial claim — move the player toward the corner,
+ *                               never across the front of your own net, because
+ *                               that path has a goal post at one edge and your own
+ *                               goaltender at the other. That is exactly the one
+ *                               route this diagram draws, and its caption carries
+ *                               the same rule numbers defender.md's own prose does
+ *                               for the underlying push — USA Hockey Rule 604(c),
+ *                               Hockey Canada Rule 7.3(a), IIHF Rule 101.1 — plus
+ *                               the goal-post spinal-injury mechanism at walking
+ *                               speed; it does not itself number the majors and
+ *                               match penalties defender.md's prose adds on top
+ *                               (604(d)-(e), 7.3(b)-(c)), which stay this
+ *                               document's own. The earlier note
+ *                               was right about the technique and wrong to treat
+ *                               that as settling the whole section.
+ *
+ * NOT drawn, and not reconsidered: "A Note on Language", "Icing" and "Line Changes"
+ * — the reasons given above still hold; nothing in this round found either a rink
+ * picture that teaches beyond the prose or an existing diagram that fits. "Offensive
+ * Zone: Without the Puck — Supporting the Cycle from the Line" was checked against
+ * every candidate in offensive_zone_play.mjs and puck_support_and_spacing.mjs: none
+ * draws a DEFENCEMAN activating into the back door, every close candidate fixes both
+ * defencemen at the points as background rather than showing the read, and a new
+ * diagram would need its own caption carrying at least two coaching-choice hedges
+ * (weak-side-default vs. strong-side, five-man rotation vs. single-high) inside this
+ * corpus's 800-character new-caption budget — drawn, that risks shipping one hedge
+ * bare rather than both in full. Left undrawn rather than shipped thin.
  *
  * ⚠️ NEITHER DIAGRAM HERE SHADES A ZONE, on purpose. `check_zones.py` compares shaded
  * polygons across diagrams for regions that name the same thing, and every new polygon is
@@ -480,7 +576,130 @@ const holdingTheLine = {
   puck: { at: 'centre-ice', dx: -4.5, dy: 21.5 },                               // (-4.5, 21.5)
 };
 
+/* ==================================================================== *
+ * 3 · The pair — one on the puck, one on the net (the Overview pilot)
+ *     owner: defender.md — "## Overview"
+ *
+ * THIS IS THE D3 PILOT: the first Overview/page-summary diagram drawn
+ * anywhere in the corpus, commissioned to settle a design question before
+ * 31 more Overview sections get one. THE QUESTION WAS WHETHER A
+ * PAGE-SUMMARY DIAGRAM SHOULD MAP THE PAGE'S REGIONS (here: one drawn
+ * moment per zone — defensive, neutral, offensive) OR DRAW ONE
+ * REPRESENTATIVE SITUATION. The brief's own hypothesis was the map, on
+ * the reasoning that defender.md is organised by zone. That hypothesis
+ * is REJECTED here, for a reason the brief could not have weighed because
+ * it is about the caption, not the page:
+ *
+ * ⚠️ THE CAPTION BUDGET KILLS THE MAP. An Overview caption is the first
+ * thing a listener hears on the page and is capped at 700 characters, well
+ * under this corpus's own median (1,303). A three-zone map would need to
+ * state three different jobs (contesting the puck and covering the
+ * goalmouth in the defensive zone; gap control and backward skating in the
+ * neutral zone; picking a depth in the offensive zone) and each of those
+ * jobs carries ITS OWN coaching-choice hedge in the body this document
+ * ships — low zone collapse vs. man-on-man in the defensive zone,
+ * step-up/pinch aggression as a coached risk in the neutral zone, how far a
+ * defenceman may activate in the offensive zone. Cardinal-rule 7 forbids
+ * dropping any of those hedges, and three of them do not fit in 700
+ * characters beside three job descriptions — a caption that tried would
+ * either blow the budget or ship at least one bare-looking rule. A single
+ * situation carries exactly one hedge and stays legible; see the caption.
+ *
+ * AND THE OVERVIEW'S OWN TEXT IS NOT ORGANISED BY ZONE EITHER. Its four
+ * `facts` lines are the pair job, gap control, the never-cross-in-front
+ * rule and the 2-on-1 convention — four ideas pulled from across the whole
+ * document, not one per zone. The pair job (strong-side plays the puck,
+ * weak-side holds the goalmouth, swap on a puck crossing the middle) is
+ * the one that gets its own paragraph first, is the vocabulary
+ * ("strong-side"/"weak-side") every other section in the document reuses,
+ * and is the only one of the four that is genuinely zone-agnostic in the
+ * text itself (the Note on Language section restates it as a general
+ * convention, not a defensive-zone one). It is the single most
+ * page-defining idea, which is what an Overview diagram should draw.
+ *
+ * WHAT IS DRAWN, AND WHY THIS MOMENT. A low zone collapse snapshot: the
+ * opposition has the puck in the corner, the strong-side defenceman is on
+ * it, the weak-side defenceman holds the goalmouth. This is deliberately
+ * the SAME corner cluster `winger-high-then-down-the-wall` in positions.mjs
+ * already draws and has already had its clearances worked out for —
+ * opposition forward `{ at: 'corner:right', dx: 4, dy: -2 }`, own
+ * defenceman `{ at: 'corner:right', dx: -4, dy: -6 }`, puck
+ * `{ at: 'corner:right', dx: 2, dy: -7 }` — reused rather than
+ * re-derived, because the clearance arithmetic for a triangle and a
+ * circle at those exact anchors does not change between files. The
+ * weak-side defenceman at `{ at: 'goalmouth', dx: -2, dy: -7 }` is the
+ * same anchor `centre-low-zone-collapse` in positions.mjs uses for the
+ * identical role, labelled `goalmouth` for the identical reason (it is
+ * the one label that fits without straddling the crease or the net).
+ *
+ * NO ROUTE. The teaching point is the SPLIT and the SWAP, not a movement,
+ * and the swap itself cannot be drawn as one arrow without picking a
+ * direction the puck is not shown moving in. The caption states the swap
+ * in words; the picture is the static shape it produces at either end of
+ * it. `check-arrivals.mjs` has nothing to check here by construction.
+ *
+ * NO ZONE SHADED, for the reason the file header gives for the other two:
+ * every new shaded polygon is a new row in `check_zones.py`'s
+ * cross-diagram comparison, and this picture is about two players, not a
+ * region.
+ *
+ * ORIENTATION matches the other three defender.md diagrams already in
+ * this file and in positions.mjs: half sheet, defended net at the right.
+ * ==================================================================== */
+
+const PAIR_STRONG_D = { at: 'corner:right', dx: -4, dy: -6 };  // (78, 28)
+const PAIR_OPP_F = { at: 'corner:right', dx: 4, dy: -2 };      // (86, 32)
+
+const pairOverview = {
+  id: 'defender-pair-overview',
+  owner: OWNER,
+  half: true,
+  width: 900,
+  title: 'The defence pair',
+
+  caption:
+    // ⚠️ THREE DEFECTS FOUND BY REVIEW; THE FIXES ARE DELIBERATE.
+    // (1) 'contesting a loose puck', NOT 'the puck carrier'. These corner anchors are
+    //     reused from positions.mjs's winger-high-then-down-the-wall, where the puck at
+    //     (84,27) was placed EQUIDISTANT IN INK on purpose — 5.39 and 6.08 ft — to read
+    //     as a 50/50. Possession is carried by the puck here, so a caption asserting a
+    //     carrier contradicted the geometry it was drawn on.
+    // (2) The goalmouth is glossed in ITS OWNER'S words. It read 'the ice between any
+    //     opposing forward and your goaltender' — a region defined against a MOBILE
+    //     opponent, which is not a layer. rink_map_and_glossary.md owns the term and
+    //     warns that confusing goalmouth with slot is a common cause of a blown assignment.
+    // (3) NO trailing 'every zone below'. This caption is BORROWED into
+    //     switching_positions.md, which has no zone sections below its heading — the exact
+    //     defect this round repaired in dz-collapse-high-slot. A borrowed caption must
+    //     stand alone in every document that hosts it.
+    'Two defencemen working as a pair, shown in your own end, contesting a loose puck in ' +
+    'the corner. One of you plays the puck; the other holds the goalmouth — the ice at ' +
+    'the mouth of your own goal — and you swap those jobs the moment the puck crosses ' +
+    'the middle of the ice. That net-front assignment is a low zone collapse — the ' +
+    'coverage this document assumes, and a coaching choice rather than a rule: under ' +
+    'man-on-man the net front belongs to whoever\'s man is standing there, so find out ' +
+    'which your team plays.',
+
+  describe:
+    'The defending half of the rink, your own net at the right, your goaltender in his ' +
+    'crease. One opposition forward is deep in the right corner with a loose puck between them. Your ' +
+    'strong-side defenceman is beside him, contesting the puck. Your weak-side ' +
+    'defenceman is on the opposite side of the net from the corner, at the goalmouth, ' +
+    'labelled "goalmouth", between the net front and where an unmarked opponent would ' +
+    'stand. No route is drawn: the picture is the shape the pair forms, not a movement.',
+
+  players: [
+    { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },                       // (85, 0)
+    { id: 'F', team: 'opp', pos: 'F', at: PAIR_OPP_F },                        // (86, 32)
+    { id: 'D', pos: 'D', at: PAIR_STRONG_D },                                  // (78, 28)
+    { id: 'D', pos: 'D', at: { at: 'goalmouth', dx: -2, dy: -7 }, label: 'goalmouth' }, // (83, -7)
+  ],
+
+  puck: { at: 'corner:right', dx: 2, dy: -7 },                                 // (84, 27)
+};
+
 export default [
   stepUp,
   holdingTheLine,
+  pairOverview,
 ];

@@ -450,6 +450,185 @@ const pp23 = {
   puck: { at: 'faceoff-dot:right', dx: 2, dy: -3 },
 };
 
+/* ------------------------------------------------------- POWER-PLAY KEY PLAYS */
+//
+// Of the six plays under "The key power-play plays", four are not drawn here and
+// the reasons are not the same reason twice:
+//   - THE SEAM PASS is already the drawing: pp-131's dashed half-wall-to-half-wall
+//     route above is captioned "the seam", so a second diagram would repeat it.
+//   - THE ONE-TIMER is a shooting technique (weight, timing, body position) that
+//     Shooting owns, and its one spatial fact — the flank position it is shot
+//     from — is already in ppUmbrella's own caption: "where the one-timer lives".
+//   - THE ROYAL ROAD is drawn once, in offensive_zone_play.mjs (`oz-royal-road`).
+//     shooting.mjs says outright "drawable, and drawn ... Not repeated", and this
+//     section itself sends the reader to Offensive Zone Play for the figure.
+//   - THE POINT SHOT's one spatial idea — walking the line to change the shot's
+//     angle — is pp-131's own solid route. What is left of it is a shot-quality
+//     judgement (arrives low, hard, on net, with a body in front), not a position.
+//
+// The other two earn a diagram because each shows a defensive commitment opening
+// a specific gap that the prose describes but cannot make visible on its own.
+
+// Mirrors NET_FRONT's own dx across the centreline (dy -4 instead of +4), so it
+// inherits the same crease clearance the file's own comment on NET_FRONT already
+// works out — the crease is symmetric about y=0, so a mirrored offset clears it
+// by the same margin. This exact coordinate, (81, -4), is also pk-diamond's own
+// low-defenceman spot ("alone, low"), which already stands this close to an
+// opposition net-front attacker at NET_FRONT in that diagram without incident.
+const BACKDOOR = { at: 'net-front', dx: -3, dy: -4 };        // (81, -4)
+
+// "The backdoor is the weak-side post ... Whenever the kill's low defender
+// commits to the strong side or to the net-front player, it is a 2-on-1 with
+// nobody defending it." Drawn generically, off any one formation: a puck holder
+// up top, the net-front attacker who occupies the low defender, and the backdoor
+// arriver he has stopped covering.
+//
+// ONLY ONE OF THE TWO NAMED DELIVERIES IS DRAWN. "The pass comes low-to-high-to-
+// backdoor or straight across from below the goal line" — the second of those
+// runs straight through the goal frame at the true below-the-goal-line spacing,
+// which is exactly the route offensive_zone_play.mjs's own backdoor comment
+// declined to draw ("a route to the far post runs across the goal mouth, which
+// this notation will not draw through"). What is drawn is the high-to-backdoor
+// leg of the first delivery: a cross-ice pass from up top, stopping short of the
+// receiver on the same 3.16 ft clearance pp-131 uses for its own net-front pass.
+const ppBackdoor = {
+  id: 'pp-backdoor',
+  owner: 'content/systems/special_teams.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'The backdoor: the weak-side post, the far side of the net, away from the puck. Whenever ' +
+    'the kill\'s low defender commits to the strong side or to the net-front player, drawn here ' +
+    'occupying him, it is a 2-on-1 with nobody covering it. Arrive late: a player camped at the ' +
+    'back post all shift is marked; one arriving as the pass is released is not. The pass shown ' +
+    'is the high-to-backdoor leg of a low-to-high-to-backdoor delivery; a straight pass from ' +
+    'below the goal line is the other way it arrives, not drawn. Either way it crosses the royal ' +
+    'road, which is why it converts. This is a read available off any formation, not a shape of ' +
+    'its own.',
+
+  describe:
+    'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
+    'the crease. Three own players: one up top near the right point holding the puck, one at the ' +
+    'net front just outside the crease on the right, and one at the weak-side post outside the ' +
+    'crease on the left, arriving late. One opposition defenceman stands low on the right, close ' +
+    'to the net-front attacker rather than the one on the left. A dashed pass runs from the point ' +
+    'across the middle of the ice, stopping just short of the weak-side attacker. The other two ' +
+    'power-play attackers and the other three penalty killers are not drawn.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: G_AT },
+    // "commits to the strong side or to the net-front player" — drawn shading to
+    // the net-front attacker, the same offset pk-box's own strong-side low D uses.
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 }, label: 'strong side, low' },
+    { id: 'N', pos: 'F', at: NET_FRONT,          label: 'net front' },
+    { id: 'P', pos: 'F', at: 'point:right',      label: 'puck up top' },
+    // `BD` for backdoor, not a bare letter. Every other id in this file is
+    // mnemonic (P point, H half-wall, B bumper, N net front, S side, M middle,
+    // L low, W wedge) and `K` decoded to nothing — no unused single letter in
+    // this roster reads as "backdoor" without inventing one, so this follows
+    // the two-character precedent already set by `PP` (puck carrier) in
+    // pk-nz-1-3 and pk-nz-1-1-2 below rather than a single stray initial.
+    { id: 'BD', pos: 'F', at: BACKDOOR,          label: 'the backdoor' },
+  ],
+
+  routes: [
+    // Stops 3.16 ft short of the receiver, the same clearance pp-131 uses for its
+    // own net-front pass, for the same reason: a pass that lands exactly on a
+    // glyph's centre reads as arriving on top of the player rather than at him.
+    { from: 'point:right', to: { at: 'net-front', dx: -6, dy: -3 }, kind: 'pass' },
+  ],
+
+  puck: { at: 'point:right', dx: 2, dy: -3 },
+};
+
+// "The walk-down is the half-wall player skating the puck down toward the goal
+// line and inside rather than passing. It forces a decision: if the kill's low
+// defender steps out to you, the net front is free; if they stay, you have a
+// shot from the top of the circle with a moving goalie."
+//
+// THE SECOND BRANCH IS NOT DRAWN. The section's own words for it — a shot "from
+// the top of the circle" — name a spot the glossary defines as the *shallow* end
+// of the circle, nearer the blue line than the half-wall the carrier starts from
+// (rink_map_and_glossary.md:387-391; rink.json's `top-of-circle` is x 54 against
+// `half-wall`'s x 69). A walk-down toward the goal line moves the carrier deeper,
+// not shallower, so this diagram does not place a marker for that branch — it is
+// spoken in the caption in the section's own words, not drawn as a coordinate
+// this file cannot square with the glossary. Flagged in the round's report for a
+// content/rules read; not resolved here.
+//
+// ⚠️ THE FIRST BRANCH'S PASS IS NOT DRAWN EITHER, as of this round's diagram
+// review. It used to run from the carry's own end (74,8) to (79.5,7) — an
+// endpoint 3.04 ft from BOTH the net-front receiver at (80,4) and the opposition
+// D at (80,10), equidistant, and inside the D's own 3.6 ft triangle body before
+// even his stroke. That, plus the carry's arrowhead landing only 6.24 ft from the
+// same D and his "strong side, low" label all converging on one small patch of
+// ice, collapsed into an unreadable cluster. See the note on `routes` below.
+// Both branches are now spoken in the caption, not drawn.
+//
+// FIGURES BELOW ARE THE CURVE'S CLOSEST APPROACH, not a bare endpoint distance —
+// measured the same way `check-arrivals.mjs` measures it.
+const ppWalkDown = {
+  id: 'pp-walk-down',
+  owner: 'content/systems/special_teams.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'The walk-down: the half-wall player skates the puck down toward the goal line and inside ' +
+    'rather than passing, forcing a decision. If the low defender, drawn guarding low, steps out ' +
+    'to challenge, the net front is open for a pass across — a genuine 2-on-1, not drawn here. If ' +
+    'he holds his ground instead, the section says you still get a shot from the top of the ' +
+    'circle with a moving goaltender; that shot is not drawn either. Walk toward the dot, not the ' +
+    'corner — below the goal line and wide you are harmless. Keep your feet moving; the moment ' +
+    'they stop the kill resets. If it is denied, reset to the point and start again.',
+
+  describe:
+    'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
+    'the crease. One own player carries the puck from the right half-wall, drawn with the long ' +
+    'smooth wave that means skate and stickhandle, angling down and in toward the goal line and ' +
+    'stopping short of the slot. One own player stands at the net front just outside the crease. ' +
+    'One opposition defenceman guards low on the same side, between the carrier\'s route and the ' +
+    'net-front attacker. The pass that opens to the net front if the defenceman steps out to ' +
+    'challenge is not drawn. The other three power-play attackers and the other three penalty ' +
+    'killers are not drawn.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: G_AT },
+    // Same strong-side-low offset as pk-box and ppBackdoor above: the low
+    // defender who has to choose between the carrier and the net front.
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 }, label: 'strong side, low' },
+    { id: 'N', pos: 'F', at: NET_FRONT,          label: 'net front' },
+    { id: 'F', pos: 'F', at: 'half-wall:right',  label: 'the walk-down' },
+  ],
+
+  // ⚠️ THE PASS WAS DROPPED this round, having collapsed into an unreadable
+  // cluster with the carry's own arrowhead, the low D's triangle and his "strong
+  // side, low" label leader. It ran (74,8)->(79.5,7); that endpoint was 3.04 ft
+  // from BOTH the net-front receiver at (80,4) and the opposition D at (80,10) —
+  // equidistant, and inside the D's own 3.6 ft triangle body before even his
+  // stroke — so the drawing could not say who the pass was to. Re-deriving a
+  // legible pass through that gap was not possible without either widening the
+  // spacing between the receiver and the D (neither of which this diagram owns)
+  // or shortening the pass into meaninglessness, so it is spoken in the caption
+  // instead — the same treatment this diagram already gives the shot-from-the-
+  // circle branch above. The carry's own endpoint is also pushed further from
+  // the D for headroom: dy -14 (74,8) had a closest approach of 6.24 ft to him;
+  // dy -16 (74,6) is now 6.54 ft, both comfortably clear of his 4.0 ft of
+  // triangle ink but the wider gap is what the labeller needs.
+  routes: [
+    // Down toward the goal line and inside, angling toward the middle of the ice
+    // rather than straight at the low defender's guarding spot — he has to step
+    // OUT to reach this path, which is the read the caption states. (Aimed at
+    // him instead, this route's arrowhead finished 4.47 ft from an opposing
+    // skater and check-arrivals.mjs failed it outright: an arrowhead that close
+    // to an opponent, in the direction of travel, reads as skating through him.)
+    { from: 'half-wall:right', to: { at: 'faceoff-dot:right', dx: 5, dy: -16 }, kind: 'carry' },   // (74, 6)
+  ],
+
+  puck: { at: 'half-wall:right', dy: -4 },
+};
+
 /* --------------------------------------------------------------- PENALTY KILL */
 
 // "a rectangle around the slot. Two players high — both forwards, one on each side,
@@ -807,6 +986,7 @@ const pkNz112 = {
 
 export default [
   pp131, ppUmbrella, ppOverload, ppSpread, pp23,
+  ppBackdoor, ppWalkDown,
   pkBox, pkDiamond, pkWedge,
   pkNz13, pkNz112,
 ];

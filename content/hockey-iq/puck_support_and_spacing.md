@@ -63,6 +63,10 @@ Two options is the minimum because one is coverable. Different angles is the cru
 
 ### Why a triangle and not a line
 
+![](diagram:support-in-a-line)
+
+![](diagram:support-triangle)
+
 ```facts
 Never: String three teammates in a straight line — one stick blade in one lane kills two options at once
 Action: Pull one of the three off the line into the middle, so the lanes diverge
@@ -73,11 +77,7 @@ Mindset: The triangle is not a formation you set up; it is a shape you keep whil
 
 Put three teammates in a straight line — say all three strung up the boards — and look at what a defender can do. One defender standing in that line is between the carrier and *both* receivers. A single stick blade in a single lane kills two options at once. The line is the cheapest shape in hockey to defend.
 
-![](diagram:support-in-a-line)
-
 Now pull one of those three off the line, into the middle. The three players form a triangle, and three things become true at once:
-
-![](diagram:support-triangle)
 
 1. **No single defender can be in both lanes.** The lanes now diverge. Covering one means turning your body away from the other.
 2. **Every player has two teammates at different angles.** A triangle is the smallest shape where that is true of all three corners simultaneously — which means whichever corner ends up with the puck, the support requirement is already satisfied.
@@ -129,6 +129,8 @@ Key: Support does not end when the puck leaves — whoever passed to you now nee
 
 ### Practical distances
 
+![](diagram:support-distance-range)
+
 ```facts
 Convention: Support distance defaults to roughly two to three stick lengths, 10 to 15 feet — a starting point, not a rule of hockey
 Convention: Support from 8 to 10 feet when the carrier is pressured, stretching to 15 when they have time
@@ -146,8 +148,6 @@ There is no governing body that publishes a support distance, and coaches differ
 **"Stick lengths" measures two different things in hockey, and they are not interchangeable.** Support distance is **teammate to teammate** — how far you stand from the player with the puck. A **gap** is **defender to attacker** — how much room you leave the person you are defending, which [Defending the Rush](../systems/defending_the_rush.md) owns and states in the same unit. Never carry a figure from one to the other: they are measured between different pairs of people, and the situations that change them are not the same ones.
 
 **Note the tension with the one sourced number.** Bruyere's "8-to-10-foot-or-less pass" above is *tighter* than this default, and deliberately so: he is describing small-area, heavy-pressure possession play, which is the "shorter" end of the table below. Read the two together as a range rather than a contradiction — **8 to 10 feet when the carrier is pressured, stretching to 15 when they have time.** Where they conflict, the sourced figure is the more defensible one; the 10-to-15 default is coaching rule of thumb.
-
-![](diagram:support-distance-range)
 
 One of those adjustments needs its arithmetic stated, because "international ice is wider" is only half true. **IIHF Rule 1.2** sanctions a sheet 60 m long and **26 m to 30 m wide**. At the wide end — 30 m, about 98 feet — you have roughly thirteen feet more width than an NHL rink, and the same tactical shape occupies more ground. At the narrow end — 26 m, about 85.3 feet — it is essentially NHL width and nothing changes. So the wider-ice adjustment in the last row below applies only at the wide end of that range.
 
@@ -226,6 +226,8 @@ You are further up ice than the carrier.
 
 ### The principle: all three at once
 
+![](diagram:support-angles)
+
 ```facts
 Goal: Have all three angles available simultaneously — that is the actual content of "good spacing"
 Risk: All behind is safety with no attack; all ahead leaves no outlet; all level goes side to side and never up
@@ -233,8 +235,6 @@ Action: Ask which of the three angles is currently missing, then go and be that 
 ```
 
 **A team needs all three angles available simultaneously.** This is the actual content of "good spacing".
-
-![](diagram:support-angles)
 
 If all your support is behind the puck, you are safe and going nowhere — you will complete lots of passes in your own end and never attack. If all your support is ahead, you have no outlet and every possession ends in a turnover under pressure. If everything is level, you can go side to side and never up.
 
@@ -298,6 +298,8 @@ The moment that winger drifts inside to get closer to the play, their checker dr
 
 ### The counterintuitive rule: to help a battle, move away from it
 
+![](diagram:support-a-battle-from-outside)
+
 ```facts
 Never: Skate into a board battle your teammate already controls — you crowd the exits and bring your checker
 Action: Move to open ice about five metres away with your stick down, so the puck has somewhere to go
@@ -310,8 +312,6 @@ Never: Arrive at a wall battle with your back to the boards, and never duck. Get
 Your teammate is pinned on the boards in a two-player battle. Every instinct says go and help.
 
 **Usually, don't — at least not into the battle.** Consider what actually decides that battle. Your teammate needs to get the puck *out* of the pile. If you skate into the pile, you have added a body to a space where there is already no room, and brought your checker with you, so the exits are now more crowded than before. If instead you move to open ice five metres away with your stick down, the puck has somewhere to go — and the instant it squirts free, you have it with time.
-
-![](diagram:support-a-battle-from-outside)
 
 **The exception** — and it is a real one — is when the battle is a genuine loose-puck scramble your teammate cannot win alone, or when you are the designated second player in your team's board-battle system (many teams do assign a support player to arrive at the wall). See [Body Contact and Battles](../technique/body_contact_and_battles.md). The distinction: go in to *win the puck* when it is genuinely 50-50 and nobody has it; stay out and offer an exit when your teammate already has it and is trying to survive.
 
@@ -381,6 +381,8 @@ The principle is constant; the shape it takes is not.
 
 ### Defensive zone — the breakout triangle
 
+![](diagram:defensive-zone-support)
+
 ```facts
 Targets: The strong-side winger on the wall, roughly level with the faceoff dot — the short up option
 Targets: The centre, swinging low through the middle and curling toward the same side
@@ -403,8 +405,6 @@ Your defenceman retrieves the puck behind your net. Before they turn, they need 
 
 The strong-side winger, the centre and the defence partner, plus the carrier, form a support structure with an outlet at three different angles. Add the weak-side winger, who is normally higher and wider than everyone else, and you have the width that stops the defence loading one side.
 
-![](diagram:defensive-zone-support)
-
 **The defensive-zone-specific rule: your support must be short and your angles must be safe.** Everything else in this document says "create the attacking option". In your own end, the safe outlet outranks it. A tidy exit with possession is a win; a clever exit that fails is a goal against.
 
 **Why spacing is worth the effort here: the alternative is icing.** If nobody gives the retriever a short option, the only remaining play is to fire the puck the length of the ice — and under **NHL Rule 81** that stops play, brings the faceoff back into your own end, and forbids your line from changing (and your team from taking a timeout) before the draw. That is the price of a breakout with no support. **The substitution bar has three exceptions in Rule 81.4's own words** — a substitution *"to replace a goalkeeper who had been substituted for an extra attacker, to replace an injured player, or when a penalty has been assessed which affects the on-ice strength of either team"* — so a hurt teammate does not have to stay out there, and a tired one does. The IIHF's 81.4 adds a fourth, *"a Player with a broken skate"*, which its own Rule 82.1 does not carry; do not plan a change around that one. The one general escape is that a shorthanded team may ice the puck without a whistle, **but do not treat that as unconditional** — NHL Rule 81.6 withdraws it from a team shorthanded by a *major* penalty that has left nobody on the penalty bench, and USA Hockey grants it only from Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), so below those levels a shorthanded team can be called for icing. [Special Teams](../systems/special_teams.md) covers that rule and sets out both carve-outs.
@@ -414,6 +414,8 @@ The strong-side winger, the centre and the defence partner, plus the carrier, fo
 **🇬🇧 How much of a support your goaltender can be behind the goal line depends on where in Britain you play.** In **England and Wales** it is unsettled: England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"*, while the In-House Rules say nothing about it either way. In **Scotland, Northern Ireland and BUIHA university hockey**, England Ice Hockey is not your governing body — it is the national body for *"England and Wales"* only — and the In-House Rules that do apply there leave IIHF Rule 27 unamended, so 27.7 reads as live. **Keep your goaltender inside the area wherever you play, and ask your league.** That costs a goaltender nothing, and the alternative is two minutes. [UK and England Rules](../foundation/uk_rules.md) has the detail.
 
 ### Neutral zone — three lanes
+
+![](diagram:neutral-zone-lanes)
 
 ```facts
 Position: One player in each of the three lanes — strong-side boards, middle, weak-side boards
@@ -428,8 +430,6 @@ Goal: Stretch the ice with width, so their forwards and defence cannot squeeze t
 The neutral zone is organised by **lanes**: the strong-side boards lane, the middle lane, and the weak-side boards lane.
 
 **The usual default is one player per lane**, and it is a coaching choice rather than a law. Two players in the same lane can be covered by one defender — that is precisely the "same lane, same checker" failure, and it is why most teams spread one player across each lane. The realistic alternative is a **1-3-1 regroup**, which deliberately stacks the middle lane with a low centre and a high middle support in order to overload the seam and pull the opposing defence inward, accepting that one checker can see both. **Find out whether your team spreads or stacks in the neutral zone** — the two look identical for the first stride and then require opposite decisions.
-
-![](diagram:neutral-zone-lanes)
 
 The supporting principle here is **"different lane, different speed"**: you want a lateral option across the ice and a change of pace, so the defence cannot set a single gap that handles everyone. Curved routes into open ice beat straight lines, because a curve lets you receive the puck already facing forward.
 
@@ -527,6 +527,8 @@ The principle inverts cleanly, and the inversion is the part that most defensive
 
 ### Layering, not converging
 
+![](diagram:layer-not-converge)
+
 ```facts
 Never: Skate at the carrier your teammate is already pressuring — both of you are beaten by the same pass
 Position: Behind and to the side of your teammate, covering the space and the passing lane they cannot
@@ -544,8 +546,6 @@ Your teammate is pressuring the puck carrier. You are the second defender. There
 - **Layer** — position yourself behind and to the side of your teammate, covering the space and the passing lane they cannot. You are the answer to what happens *if* they get beaten, and you are also the reason the carrier cannot simply pass out of the pressure.
 
 Converging is not a small error, and it is worth being blunt about the arithmetic: **two players on one puck means the other three of you are covering four of them**, and it is the free man who scores.
-
-![](diagram:layer-not-converge)
 
 Three things make the layer an actual position rather than a vague instruction to hang back:
 

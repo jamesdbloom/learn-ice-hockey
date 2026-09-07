@@ -230,6 +230,8 @@ If the puck is **shot into the zone** creating a delayed offside and that same s
 
 ### Where the faceoff goes
 
+![](diagram:offside-faceoff-location)
+
 This is worth learning, because it is a real territorial consequence (Rule 83.6):
 
 - Offside where the puck **entered the zone in an attacker's possession** — the rule's own words are *"as a result of the attacking team carrying the puck over the attacking blue line"* → faceoff at the **neutral-zone spot nearest that attacking zone**. You lose the zone but keep the neutral-zone draw.
@@ -238,8 +240,6 @@ This is worth learning, because it is a real territorial consequence (Rule 83.6)
 - Offside where the puck **entered on a shot or a pass** → faceoff at the *"face-off spot in the zone closest to the point of origin of the shot or pass (even if deflected off an attacking or defending player or an official)"*, which Rule 83.6's delayed-offside list adds is the one *"that gives the offending team the least amount of territorial advantage."* **That is a faceoff spot, not the patch of ice the pass left from** — if your defenceman fired it in from behind his own net, the draw goes to an **end-zone dot in your own end**, not to the goal line where he was standing.
 
 So: a carried offside costs you a little; a pass-created offside can cost you the length of the neutral zone and most of your own end on top of it. At the extreme the two draws are **89 ft apart up the ice** — from the neutral-zone spot 5 ft outside the attacking blue line, back to an end-zone dot 20 ft out from your own goal line. (Those two spot positions, and the 64 ft from blue line to goal line that sits between them, are owned by [Rink Map and Glossary](rink_map_and_glossary.md); the 89 ft is the distance between those two spots, measured in opposite directions from centre ice: the neutral-zone spot sits 20 ft out (the blue line is 25 ft from centre, and Rule 1.9 puts the spot 5 ft outside it), and an end-zone dot sits 69 ft out (the goal line is 89 ft from centre, and Rule 1.9 puts the dot 20 ft in front of it). 20 plus 69. Those are the rulebook's dimensions added up, not a distance the rulebook states. **Those are NHL-sheet distances**, and USA Hockey Rule 630(c) words the location differently again — "the nearest last play face-off location".) That is a real argument for carrying the puck over the line under pressure rather than firing a hopeful pass into the zone.
-
-![](diagram:offside-faceoff-location)
 
 ⚠️ **One more thing decides where the draw goes, and it is not in the offside rule at all: which infraction gets called when two happen on the same play.** A defenceman fires the puck the length of the ice while a teammate is already over the far blue line, and that is a **delayed offside and a potential icing at once** — two calls that send the faceoff to opposite ends of the rink. **Three of the four books answer it, and all three lean the same way: the icing. None of them answers it in its playing rules** — the answers live in the case and interpretation layers, so they are rulings rather than rule text. **USA Hockey**'s *Casebook*, at Rule 630 Situation 33, rules that *"[t]he icing infraction takes precedence"* and that *"the face-off shall take place in the end zone of the offending team because the icing infraction was completed"* — printed under the heading for the classifications where tag-up applies, so it does not speak for the ones below them. Its Situation 21 gives the general principle, on a different collision: *"As a general rule, the more 'serious' infraction is penalized."* **Hockey Canada** states it in the book, at **Interpretation 8 to Rule 6.11(b)**: *"Where icing occurs with an attacking player in an off-side position, the infraction that is called is icing and the ensuing face-off will take place in the offending team's end zone"* — and its **Interpretation 10(iii)** adds a limb the others do not, for the case where the officials go the other way: *"If the play is stopped because of the off-side, the ensuing face-off would go to the face-off spot nearest to where the shot originated."*
 
@@ -273,15 +273,17 @@ If a team **equal or superior in numerical strength** to their opponent shoots, 
 
 ### "Gaining the line"
 
+![](diagram:icing-gaining-the-line)
+
 To nullify a potential icing, your team must **"gain the line"**: the puck, **while on a player's stick — not a skate — must make contact with the centre red line** (NHL Rule 81.1; IIHF Rule 81.1 carries the sentence word for word).
 
 This is the detail almost nobody knows. If you are carrying the puck through the neutral zone and you fire it down the ice, the question is not where *you* were, it is where *the puck on your stick* was. Carry it that extra half-stride so the puck touches the red line and you can dump it in freely. Under those two books, kicking it forward over the line with your skate does **not** count.
 
-![](diagram:icing-gaining-the-line)
-
 > **⚠️ "Gaining the line" is an NHL and IIHF phrase, and it is in neither of the other two books.** It appears nowhere in the USA Hockey Official Playing Rules 2025-29 or the Hockey Canada Playing Rules 2026-2028, and neither of those books draws the stick-versus-skate distinction anywhere in its icing rule. Both word the test instead as the **point of last contact with the puck**: USA Hockey Rule 624 (Note) says *"the point of last contact with the puck shall be used to determine whether a potential icing exists"*, and Hockey Canada's Interpretation 5 to Rule 6.7(c)(ii) says *"The key point is where the puck was last contacted, relative to the centre red line, prior to crossing the goal line."* The two also differ on the skate as an instrument: **Hockey Canada Rule 6.7 lists "kicking" among the actions that ice the puck**, while **USA Hockey Rule 624(a) lists only** *"shoots, bats with the hand or stick or deflects"*. So do not carry the NHL sentence into a USA Hockey or Hockey Canada game as though it were the rule there. **What is safe in all four books is the same act: get the puck itself past the red line, on your stick.** What differs is what happens if you use a skate instead, and only the NHL and IIHF answer that in terms.
 
 ### Hybrid, no-touch and touch icing
+
+![](diagram:icing-the-race-and-the-dot)
 
 There are three systems:
 
@@ -297,8 +299,6 @@ There are three systems:
 4. If the race is **too close to call** by that point, **icing is called**.
 
 Note the clarification the rulebook makes explicitly: the determining factor is **who would touch the puck first, not who reaches the dot first**. The dot is a deadline for the decision, not the finish line of the race.
-
-![](diagram:icing-the-race-and-the-dot)
 
 > **One IIHF difference.** IIHF Rule 81.1 tracks the NHL wording closely but adds a paragraph the NHL rule does not contain: *"If there is no 'race' for the puck, icing should not be called until a defending skater crosses its defending blue line and the puck crosses the goal line (not between the goal posts)."* In practice this means that under IIHF rules, an uncontested icing is not whistled until a defender has actually come back for it — so a lazily uncontested dump can stay live fractionally longer than it would in the NHL.
 
@@ -545,14 +545,14 @@ If the non-offending team, with their net empty, **puts the puck into their own 
 
 ### What to do as a player during a delayed penalty
 
+![](diagram:delayed-penalty-your-own-net)
+
 - **Look for your bench immediately.** The moment you see the referee's arm go up and you are not directly involved in the play, the extra attacker is coming and someone has to come off. If you are the closest player to the bench and not part of the immediate play, you are the one.
 - **Keep the puck.** The single rule of a delayed penalty is: **do not give the offending team control.** That means no risky cross-ice passes through the middle, no blind dumps that they will simply pick up.
 - **Do not force a shot from a bad angle** just to "use" the extra man. A shot that misses and rims around is exactly how the offending team gains control and ends your six-on-five for a two-minute five-on-four instead. A missed shot that they collect has cost you the better of the two options.
 - **Regroup if the zone is not open.** Take it back to your own end if you have to. You have the puck and they cannot force a whistle without taking it from you.
 - **Six attackers changes the shape, not the principles.** Most teams simply add a fourth high forward and play a 2-1-2 or an umbrella. See [Special Teams](../systems/special_teams.md) and [Offensive Zone Play](../systems/offensive_zone_play.md).
 - **If you are the team about to be penalised:** touch the puck as fast as possible to end it. Diving on it, deflecting it out, batting it — anything that gets you control. A hand pass in your defending zone is legal (Rule 79.2) and it counts.
-
-![](diagram:delayed-penalty-your-own-net)
 
 **USA Hockey note:** if a team **ices the puck during a delayed penalty against their opponents**, the ensuing faceoff is at a **neutral-zone spot nearest the icing team's defending zone**, not in their end (Rule 624(a) note). The NHL rulebook contains no equivalent provision, largely because in the NHL play would already be whistled the moment the offending team gained control.
 
@@ -613,9 +613,10 @@ For the position itself, see [Goaltender](../positions/goaltender.md). This sect
 
 ### The crease
 
+![](diagram:the-goal-crease)
+
 The **goal crease** is the light-blue area in front of the net — **8 feet wide at the goal line, 6 feet deep** at its deepest point — and it is a **volume, not an area**: it extends **vertically four feet**, to the height of the top of the goal frame (NHL Rule 1.7). Those figures come from [Rink Map and Glossary](rink_map_and_glossary.md), which covers the rink's geometry and gives the full Rule 1.7 construction, the goaltender's reference marks and the IIHF equivalents.
 
-![](diagram:the-goal-crease)
 
 ### Goaltender interference
 
@@ -658,6 +659,8 @@ Goals are disallowed only if **(1)** an attacking player, **by his positioning o
 
 ### Screening is legal outside the crease
 
+![](diagram:screen-the-goalie-sightline)
+
 **Standing in the goaltender's line of sight, without contact and without being in the crease, is normally legal.** ⚠️ **The paragraph of Rule 69.3 that reaches a screen asks for three things at once, and the test is conjunctive.** It disallows the goal, **with no contact at all**, where an attacker *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision and impair his ability to defend his goal"* — that is the NHL's wording; the IIHF prints *"impair their ability to defend their goal"* and puts quotation marks of its own around *"significant position"*. **Every part of that is load-bearing:** the position inside the paint, the obstructed vision **and** the impaired ability to defend, not any one of them on its own. Both books then define the position — the player's body, *"or a substantial portion thereof, is within the goal crease for more than an instantaneous period of time"* — the NHL printing *"his body"* and the IIHF *"their body"*. ⚠️ **That is the fourth paragraph of 69.3, and it is not the whole rule:** the first paragraph, set out above, costs you the goal for **any** contact with a goalkeeper in his crease, incidental or otherwise. So what makes a screen illegal is being in the crease **and** what your position does to the goalie once you are there — screening itself is not the offence.
 
 **But read clause (1) of Rule 69.1 whole before leaning on it in either direction.** It names an attacking player who *"either by his positioning or by contact, impairs the goalkeeper's ability to move freely within his crease or defend his goal"* — 🇬🇧 **and your book writes that clause in its own words**: the IIHF's 69.1 reads *"either by their positioning or by a 'relevant contact', impairs the goalkeeper's ability to move freely within their goal crease or defend their goal"*, and defines that term in the same rule as *"any contact that is made between or among a goalkeeper and attacking Player(s), whether by means of a stick or any part of the body."* The positioning limb is the same in both books. ⚠️ **What that clause is not is a direction to disallow the goal.** It is introduced by *"Goals should be disallowed **only if**"*, which states a **necessary** condition — a ceiling on when a goal may be taken off the board — and a necessary condition being met is not the same as the rule's own test for voiding a goal being met. **The sentence in 69.1 that actually disallows one is keyed to the crease, in both books** — in the NHL's words: *"If an attacking player **enters the goal crease** and, by his actions, impairs the goalkeeper's ability to defend his goal, and a goal is scored, the goal will be disallowed."* 🇬🇧 **The IIHF's says the same in its own pronouns:** *"If an attacking Player enters the goal crease and, by their actions, impairs the goalkeeper's ability to defend their goal, and a goal is scored, the goal will be disallowed."* **69.3's no-contact screen ground is keyed to the crease too** — a *"significant position within the goal crease"* — and **69.4, the rule for outside the crease, has no positioning limb at all**, only contact. ⚠️ **That is a reading of the rule's structure rather than something either book states in terms**, and both provide that Rule 69 *"will be enforced exclusively in accordance with the on-ice judgement of the Referee(s)"*. **So the honest statement is: a clean screen from outside the paint is legal, referees allow it constantly, and no clause of Rule 69 read here takes the goal away for where you stood unless you were in the crease — but enforcement is expressly the referee's judgement, so this is not something you will get to argue from the ice.**
@@ -668,15 +671,16 @@ Goals are disallowed only if **(1)** an attacking player, **by his positioning o
 
 This is the single most valuable rules fact for a forward. **Get in the goalie's eyes; keep your skates out of the blue paint.** See [Offensive Zone Play](../systems/offensive_zone_play.md) and [Winger](../positions/winger.md).
 
-![](diagram:screen-the-goalie-sightline)
 
 ### The trapezoid (goalkeeper's restricted area)
+
+![](diagram:the-trapezoid)
+
+![](diagram:the-privileged-area)
 
 This section is the **penalty**. The geometry — the NHL figures, the depth, the IIHF metric equivalents and where the lines actually run — belongs to [Rink Map and Glossary](rink_map_and_glossary.md), which covers the rink's dimensions and gives them in full.
 
 **The goalie may not play the puck behind the goal line outside the marked trapezoid behind his net.** Violation is a **two-minute minor for delay of game** (**NHL Rules 27.8 and 63.2(viii)**; the IIHF numbers the same rule **27.7**). The determining factor is the **position of the puck**, not the position of the goalie — and both books say so in those words.
-
-![](diagram:the-trapezoid)
 
 **The rule text writes exactly one exception, and it is not the one people think:** the minor is **not** assessed when the goalie plays the puck **while maintaining skate contact with his goal crease**. There is no teammate-based exception and no "he was only touching it" exception. ⚠️ **That is the count in NHL 27.8 and IIHF 27.7 themselves. The IIHF's own *Situation Handbook* then adds two boundary rulings you would not get from the rule**, and both go the goalie's way: **Situation 27.6** has a goalkeeper whose skates are both inside the restricted area stop the puck on his stick **on the goal line**, and answers that *"[t]he goal line is not considered to be in the restricted area and therefore no penalty is assessed"* — *"the puck must be over the goal line to be considered to be in the restricted area"*; and **Situation 27.9** has a puck come off the glass and hit a retreating goalkeeper inadvertently, answering *"No penalty. Rule states that the goalkeeper must play the puck to be penalized."* **Situation 27.11** confirms the skate-contact exception in play. All three are in the same words in the 2025/26 (v1.0 and v1.1) and 2026/27 Handbooks, and the Handbook ranks itself below the rule book. **No NHL equivalent is quoted here, because the NHL's own situation handbook is not publicly obtainable and none of it has been read** — so read those three as the IIHF's answers only.
 
@@ -701,8 +705,6 @@ Related, and often forgotten: a goalie who **participates in the play beyond the
 > **Play it the safe way round in both directions: if it is your goalie, assume the rule binds — keep him out of the corners. If it is theirs, assume he may come for the puck anyway, and do not build a dump-in on the trapezoid holding.** Ask your league, and look behind the net to see whether the lines are painted — a hint rather than a ruling, since 27.7 turns on where the puck is and not on the markings. [UK and England Rules](uk_rules.md) carries the full amendment list.
 
 **⚠️ But USA Hockey is not restriction-free behind the net — it restricts where the goalie may *freeze* the puck, and that one is the same two minutes.** **Rule 614(c)** assesses a minor for delay of game to a goalkeeper who falls on or gathers the puck and causes a stoppage when *"the puck is behind the goal line and their body is entirely outside of the goal crease"*, or when *"the puck is outside the boundaries of the 'goalkeeper's privileged' area."* The rule's own Note defines that area as *"an area outlined by connecting the end zone face-off spots with an imaginary line and imaginary lines from each face-off spot running perpendicular to the end boards"* — a rectangle from the faceoff-dot line back to the end boards. It is far more generous than a trapezoid and it does include the ice directly behind the net, but **it excludes the corners**. **The same area also protects the goalie — and that half is not two minutes.** **Rule 607(c)** assesses *"[a] minor plus a misconduct or a major plus a game misconduct penalty… to a player who body checks or charges a goalkeeper while the goalkeeper is within the goal crease or privileged area"* — **there is no bare minor anywhere in it**, and the book's own *Summary of Penalties* files 607(a,b,c) under the heading *"Minor plus Misconduct or Major plus Game Misconduct"* to the same effect. **607(e)** adds that *"[a] match penalty for reckless endangerment may also be assessed for charging."* **The *Casebook* at Rule 607, Situation 4 is where the referee chooses between the three**: the minor plus misconduct where an attacker going hard to the goal *"makes an honest attempt to avoid the goalkeeper once it is realized contact is unavoidable"*, and *"the major plus game misconduct, or match penalty option"* where he *"makes no attempt to avoid the goalkeeper and recklessly endangers the goalkeeper by accelerating through the contact, or by extending the arms or dropping the shoulder to deliver the hit."* **That same situation publishes the one case in which nothing is called**: where *"a defending player has forced the attacking player into their own goalkeeper, no penalty should be assessed provided the attacking player has clearly made every attempt to avoid the contact with the goalkeeper."* ⚠️ **And leaving the region does not make him fair game.** **607(d)**: *"A goalkeeper is NOT 'fair game' because they are outside the privileged area. A penalty for interference or charging should be called in every case where an opposing player makes unnecessary contact with a goalkeeper."* §6 above sets out how the *Casebook* keys that to whether the goalkeeper has the puck.
-
-![](diagram:the-privileged-area)
 
 **Practical consequence:** if you play without the trapezoid, your goalie is a third defenceman on every dump-in and your breakouts can be built around him retrieving pucks in the corners — **but under USA Hockey he must *play* those corner pucks, not smother them.** If you play with it, your defencemen must retrieve everything wide, and the goalie's job is to stop the puck behind the net and leave it. Confirm which before your first game — it changes your breakout. See [Breakouts](../systems/breakouts.md).
 
@@ -744,6 +746,8 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck. He 
 
 ### Why the draw is where it is
 
+![](diagram:faceoff-where-the-draw-goes)
+
 Faceoff location is a **penalty and reward system**, and reading it tells you who just did what. The principle is that the draw goes **into the zone of whoever caused the stoppage**, and the wronged team is often given the choice of which of the two dots. **Three of those choices are worth knowing because you can exercise them.** After a penalty, the draw is in the offending team's end and **the team going on the power play picks which dot** (**Rule 76.2**). After an icing, it is in the offending team's end and **the attacking team picks** (**Rule 81.2**). The same choice goes to the attacking team when a goalie freezes a shoot-in from beyond the red line, or when a defender knocks his own net off. **It is a real choice and somebody on your team should be making it deliberately** — [Faceoffs](../systems/faceoffs.md) covers how to use it. The full location list:
 
 | Situation | Where the draw goes |
@@ -765,7 +769,6 @@ Faceoff location is a **penalty and reward system**, and reading it tells you wh
 
 One further location rule changes behaviour after the whistle, and it can cost you the zone you have just earned: **if a point man or a player off the bench from the attacking team enters the zone past the outer edge of the end-zone faceoff circle during a scrum, the draw is moved out to the neutral zone** (Rule 76.2). If your team has just earned a defensive-zone draw in the other end, **do not go join the scrum** — you will give the zone back.
 
-![](diagram:faceoff-where-the-draw-goes)
 
 ### The two things you must not leave without
 

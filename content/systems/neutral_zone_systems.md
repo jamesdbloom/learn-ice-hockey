@@ -115,6 +115,8 @@ Two traps for the unwary:
 
 ### 1-2-2 — the classic containment structure
 
+![](diagram:nz-1-2-2-containment)
+
 ```facts
 Position: F1 pressures near their goal line or hash marks, F2 and F3 sit across the middle, both defencemen hold the back layer around your own blue line
 Goal: F1 takes the middle away and forces the carrier to one side — the turnover is a bonus, dictating the side is the job
@@ -125,8 +127,6 @@ Convention: Coaching material calls it the most widely played neutral zone struc
 ```
 
 **The shape.** One forward (F1) pressures near the opponent's goal line or hash marks. Two forwards (F2 and F3) sit across the middle of the neutral zone, usually near the opposing blue line or between it and the red line. Two defencemen hold the back layer, around your own blue line.
-
-![](diagram:nz-1-2-2-containment)
 
 **The roles.**
 - **F1** is not primarily trying to steal the puck. **F1's job is to take away the middle and force the puck carrier to one side of the ice.** F1 skates a curved route that shows the puck carrier the boards and takes away the D-to-D pass behind the net. Getting the turnover is a bonus; dictating the side is the job.
@@ -143,6 +143,8 @@ Convention: Coaching material calls it the most widely played neutral zone struc
 
 ### The 1-2-2 trap ("the neutral zone trap")
 
+![](diagram:nz-1-2-2-trap)
+
 ```facts
 Position: A 1-2-2 with the layers dropped back — F1 high and splitting the ice, F2 and F3 at or just inside the red line, the defence on your own blue line
 Goal: Do not stop the attack. Funnel it to a wall and kill it at the red line, with their forwards ahead of the puck and behind the play
@@ -152,8 +154,6 @@ Countered by: Quick puck movement, the boards, the stretch pass behind the wall,
 ```
 
 **What makes it a trap rather than a containment.** The trap is a 1-2-2 with the layers dropped back and the intent changed. Instead of F1 pressuring deep, F1 sits high in the opponent's zone or at their blue line, still splitting the ice in half, and **the entire structure retreats to defend the centre red line rather than the opponent's blue line.** F2 and F3 sit at or just inside the red line on the walls. The defence holds **your own** blue line.
-
-![](diagram:nz-1-2-2-trap)
 
 **Not every neutral-zone 1-2-2 is a trap**, and the distinction matters when you are reading one. A containing 1-2-2 still intends to contest the exit; a trap has given that up and is funnelling you somewhere instead. The tell is F2's depth and F1's speed: layers up near their blue line with F1 actually closing is containment, layers back at the red line with F1 gliding is a trap.
 
@@ -180,6 +180,8 @@ One further correction to the usual telling: the Devils were not even the first 
 
 ### 1-3-1 — the modern standard
 
+![](diagram:nz-1-3-1)
+
 ```facts
 Position: F1 pressures, three players stand spread in a line across the ice, one defenceman sits behind them as the last man
 Convention: Conventionally F2 and F3 on the walls with a defenceman in the middle — but never three forwards across, because F1 is already one of your three
@@ -191,8 +193,6 @@ Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase p
 ```
 
 **The shape.** One forward (F1) pressures. **Three players stand spread across the ice in a line** — conventionally **F2 and F3 on the walls with one defenceman in the middle**, and the middle man is the read-maker, because he is the one who decides which way the whole line slides. One defenceman sits behind them as the last man. (Some coaches put a forward in the middle and a defenceman on a wall; what does not happen is three forwards across, because F1 is already one of your three.)
-
-![](diagram:nz-1-3-1)
 
 **The roles.**
 - **F1** does what F1 always does: splits the ice, takes the middle away, forces a side. In the most passive versions F1 barely leaves the red line.
@@ -209,6 +209,8 @@ Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase p
 
 ### Pressure — the neutral zone under an aggressive forecheck
 
+![](diagram:nz-pressure)
+
 ```facts
 Position: Two forwards are gone hunting the puck in their end, leaving F3 as the only layer between the puck and your defence
 Action: F3 holds the middle, level with or slightly ahead of the puck, and does not drift to a wall — the pass that hurts you comes up the middle
@@ -222,8 +224,6 @@ Countered by: A crisp first pass past the two pressuring forwards, a reverse or 
 The aggressive option is not really a neutral-zone *structure* at all. It is what the middle third looks like when your team is running a **2-1-2 forecheck inside the opponent's end** and the neutral zone is simply the space behind it. **[Forechecking Systems](forechecking_systems.md) covers that system**; what belongs here is what the other three players do while it happens.
 
 **The shape from the neutral zone's point of view.** Two of your forwards are gone — they are in the opponents' end hunting the puck. That leaves **one forward holding the middle of the neutral zone as the only layer between the puck and your defence**, and two defencemen holding a deliberately tight gap, both prepared to step up.
-
-![](diagram:nz-pressure)
 
 > **Where the defencemen actually stand depends on the phase, and both answers are right.** **While the forecheck is still live and the puck is in their end**, your two defencemen are up at the **offensive** blue line, holding it and pinching selectively — that is the shape [Forechecking Systems](forechecking_systems.md) sets out in full. **The moment the opponents move the puck out and this becomes a neutral-zone sequence**, the same pair has retreated and is holding its tight gap back toward **your own** blue line, which is the shape described here. Same system, same two players, the length of the neutral zone apart, two different moments. If you read the two documents side by side, read the blue line each names.
 
@@ -240,6 +240,8 @@ The aggressive option is not really a neutral-zone *structure* at all. It is wha
 
 ### 1-4 — the full retreat
 
+![](diagram:nz-1-4)
+
 ```facts
 Position: One forechecker and four skaters in a flat line across your own blue line — the most conservative structure in hockey
 Read: Use it protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
@@ -251,8 +253,6 @@ Never: Play it as your default — some youth teams do and should not
 
 **The shape.** One forechecker, and **four skaters in a flat line across your own blue line**. It is the most conservative structure in hockey.
 
-![](diagram:nz-1-4)
-
 **When it is used.** Protecting a lead in the last minute or two. Killing time at the end of a shift when your unit is exhausted and stranded. Defending a 6-on-5 with the opposing goalie pulled. Some youth teams play it as a default and should not.
 
 **Strengths.** Almost nothing goes through it. Controlled entries against a disciplined 1-4 are close to impossible, and odd-man rushes are eliminated because everyone is already home.
@@ -262,6 +262,8 @@ Never: Play it as your default — some youth teams do and should not
 **How it is beaten.** Enter with a hard chip past the flat line and hunt it — because the whole line is flat, nobody is deeper than anybody else, so a puck put behind them is a genuine race. Failing that, gain the line, set up, and make them defend for two full minutes; a 1-4 has no counterpunch.
 
 ### The left-wing lock
+
+![](diagram:nz-left-wing-lock)
 
 ```facts
 Position: Two forwards forecheck aggressively in their end; the moment possession is lost the left wing drops into line with the two defencemen
@@ -275,8 +277,6 @@ Options: Many teams now lock whichever winger is highest in the zone instead, wh
 **The shape.** A hybrid of a forecheck and a neutral zone structure. Two forwards — conventionally the centre and the right wing — forecheck aggressively in the opponent's end, often deliberately steering the puck toward the opponent's right side. **The moment possession is lost, the left wing drops back into line with the two defencemen**, making a three-man defensive line, each responsible for roughly one third of the width of the ice.
 
 The effect is a 2-3: aggressive up front, three across the back. Structurally it lands somewhere between a 2-1-2 and a trap — you get real forechecking pressure without the odd-man risk that normally comes with it, because the third man back is already there.
-
-![](diagram:nz-left-wing-lock)
 
 **History.** Contrary to the common belief that Detroit invented it, the lock came out of European hockey — and the two stories you will hear are **complementary, not competing**. It was **invented in Czechoslovakia in the 1970s** as an answer to the dominant Soviet national side, and then **adapted for the narrower North American rink by Barry Smith**, an assistant to Scotty Bowman, who brought it to the Detroit Red Wings. Detroit played it heavily from 1994-95 and won the Presidents' Trophy with it, ran into Lemaire's trap in the 1995 Final, and did not win a Cup with the system until 1997. Invention in Europe and adaptation in Detroit are separate events about twenty years apart; neither claim displaces the other. [Forechecking Systems](forechecking_systems.md) carries the same account of the lock's history.
 
@@ -365,11 +365,11 @@ Gap control is normally taught as a defenceman's skill, and [Defending the Rush]
 
 ## Denying the blue line: stand up or back off
 
-At your own blue line you have two broad options, and they are genuinely a trade-off rather than one being correct.
-
 ![](diagram:nz-stand-up-at-the-line)
 
 ![](diagram:nz-back-off-at-the-line)
+
+At your own blue line you have two broad options, and they are genuinely a trade-off rather than one being correct.
 
 ### Standing up at the line
 
@@ -451,6 +451,8 @@ A forced entry into a set defensive structure has three likely outcomes: a turno
 
 ### The D-to-D regroup
 
+![](diagram:nz-regroup-d-to-d)
+
 ```facts
 Action: A forward who cannot advance turns and passes back to a defenceman skating backwards or opened up to receive
 Technique: Receive with your hips open up the ice, not facing your own net, so you can see the whole sheet
@@ -469,8 +471,6 @@ The standard form.
 5. The receiving defenceman hits whichever forward has the most speed and the most ice.
 
 **The one hard rule.** A D-to-D pass in the neutral zone should be flat and hard, and it should never be made blind across the middle with a forechecker between you. An intercepted neutral-zone D-to-D is an instant 2-on-1 with both your defencemen wrong-sided. If the lane is not clean, hold the puck or take it back yourself.
-
-![](diagram:nz-regroup-d-to-d)
 
 ### The hinge, and the skating hinge
 

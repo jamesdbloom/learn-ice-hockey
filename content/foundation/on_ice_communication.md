@@ -44,6 +44,8 @@ Convention: Some calls in this document are widely used but undocumented as spok
 
 ## Why verbal communication wins games
 
+![](diagram:the-call-and-who-can-see-it)
+
 ```facts
 Key: The puck carrier is the least informed player on the ice — the forechecker closing from behind is where they cannot look
 Action: Say what you can see; the information costs you nothing and is useless sitting in your eyes
@@ -60,8 +62,6 @@ The mechanism is simple and it is worth understanding, because it tells you when
 **A call converts a blind decision into an informed one.** A defenceman retrieving a puck in the corner has to choose between three plays. Without information they guess, and a guess in the defensive zone is how goals get scored. With one word from the goalie — "time" or "man on" — they are not guessing any more. The information cost you nothing. It was already sitting in someone else's eyes, useless.
 
 **And notice where the information usually sits.** Anyone with a view of the puck carrier's blind side can make the call, and on a defenceman retrieving in his own corner the two who reliably have one are the goaltender, who faces the whole play, and the defence partner across the net. Neither of them is the player who has to decide what to do with the puck. A voice is the only thing that joins the seeing to the deciding.
-
-![](diagram:the-call-and-who-can-see-it)
 
 **Half a second is the whole game.** A call given before the puck arrives lets the receiver plan; the same call given as the puck arrives just startles them. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) for the habit that lets you make calls early.
 
@@ -114,6 +114,8 @@ These are the highest-value calls in hockey and the ones most often missed. All 
 
 ### Puck direction
 
+![](diagram:defender-d-to-d-behind-the-net)
+
 ```facts
 Action: Only call a direction you can genuinely see, and be prepared to be the target
 Never: Send "over" or "D-to-D" through the front of your own net — an interception there is point-blank. Behind the goal line is the usual route, but ask your coach which one yours uses
@@ -131,8 +133,6 @@ Convention: "Eat it" carries two unverified meanings — say "eat the puck" for 
 These tell the carrier where to put the puck. Because they arrive as instructions, they carry an obligation: only make them when you can genuinely see the option, and be prepared to be the target.
 
 **Two of these calls carry a restriction, and it is worth knowing before you shout either one.** "Over" and "D-to-D" never go across the front of your own net, because an interception in the slot is a point-blank chance. **That prohibition is the fixed half; the route around it is a convention.** Most teams send the puck *behind* the net, below the goal line, and that is the route assumed throughout this document — some exchange high in the zone instead, above the tops of the circles, on the reasoning that an interception up there is not a slot chance. Ask your coach which yours uses. See [Defender](../positions/defender.md) for both.
-
-![](diagram:defender-d-to-d-behind-the-net)
 
 #### Moving it to a teammate
 
@@ -209,6 +209,8 @@ These tell the carrier that you exist and where you are. The carrier's head is o
 
 ### Danger and coverage
 
+![](diagram:scan-the-danger-in-your-own-end)
+
 ```facts
 Action: On "back door", the nearest player takes the unmarked opponent at the far post immediately
 Key: The player who can see the back door is almost never the one who can cover it — that is why the call exists
@@ -220,9 +222,7 @@ Action: On "screen", move out of the sightline yourself, or box the screener out
 
 These are defensive-zone calls. They are the ones teams stop making when they get tired, and the ones whose absence shows up directly on the scoresheet.
 
-**The first two calls name one piece of ice between them** — the goalmouth, with "back door" naming its weak side, the far post where an unmarked opponent is hardest to see from the puck. The picture below draws that, and the second place a goal arrives from while four players watch a puck battle in the corner: an opponent sneaking into the high slot. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) for the habit of checking both.
-
-![](diagram:scan-the-danger-in-your-own-end)
+**The first two calls name one piece of ice between them** — the goalmouth, with "back door" naming its weak side, the far post where an unmarked opponent is hardest to see from the puck. The picture above draws that, and the second place a goal arrives from while four players watch a puck battle in the corner: an opponent sneaking into the high slot. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) for the habit of checking both.
 
 - **"Back door"** — *Said by anyone, most often the goalie or the weak-side player.* There is an unmarked opponent at the far post. **If you hear it:** the nearest player takes them, immediately. **How it ranks against every other unmarked position is not something anyone has counted**; what makes the call necessary is that the person who can see it is almost never the person who can cover it.
 

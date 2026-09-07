@@ -114,6 +114,8 @@ Some coaches do assign them by position as a teaching shortcut for beginners, an
 
 ### The roles rotate mid-shift
 
+![](diagram:forecheck-roles-rotate)
+
 ```facts
 Read: When the opponents move the puck defenceman-to-defenceman, your F1 has just been beaten and is now behind the play
 Action: The forward closest to the new puck carrier becomes the new F1 and attacks; everyone else adjusts one slot
@@ -127,8 +129,6 @@ The labels change during a single possession. When the opponents move the puck d
 1. The forward closest to the new puck carrier becomes the new **F1** and attacks.
 2. The old F1 does **not** turn around and chase. They take the vacated support role — usually dropping in as the new **F3**, high in the zone.
 3. Everyone else adjusts one slot.
-
-![](diagram:forecheck-roles-rotate)
 
 This is why forechecking is exhausting when done badly and sustainable when done well. If you chase every puck you touch, you are doing three players' jobs and will be dead by the second shift. If you accept demotion to F3 when you get beaten, you get a rest built into the system.
 
@@ -256,6 +256,10 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 
 ### 2-1-2 — the aggressive standard
 
+![](diagram:forecheck-212)
+
+![](diagram:forecheck-212-stacked)
+
 ```facts
 Position: Two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
 Convention: F1 goes hard at the puck carrier, angling them to one side — usually towards the boards, but ask, because F2 reads off it
@@ -271,8 +275,6 @@ Countered by: A quick first pass before F2 arrives, a reverse into the space F1 
 ```
 
 **Shape:** Two forwards deep in the zone, one forward high (roughly the top of the circles), two defencemen at or just inside the **offensive** blue line — the opponents' line, the one you are pinching down from.
-
-![](diagram:forecheck-212)
 
 > **Two positions, two phases — both are correct.** The blue line the defencemen stand on changes as the sequence does, and this is the commonest source of confusion between this document and [Neutral Zone Systems](neutral_zone_systems.md). **While the forecheck is live and the puck is still in their end**, your defencemen are at the *offensive* blue line, holding it and pinching selectively — that is the shape described here. **Once the opponents get the puck out and the play turns into a neutral-zone sequence**, those same two defencemen have retreated and are holding a deliberately tight gap in the middle third, back toward *your own* blue line, with the strong-side D ready to step up. That second phase is the subject of [Neutral Zone Systems](neutral_zone_systems.md)' "Pressure" section, which sets it out in full. Same two players, same system, the length of the neutral zone apart, two different moments.
 
@@ -294,11 +296,11 @@ Countered by: A quick first pass before F2 arrives, a reverse into the space F1 
 
 **Variants worth knowing:** the **strong-side (stacked) 2-1-2**, where F1 and F2 both come from the same side to overload one corner, and the **spread 2-1-2**, where they come from opposite sides to cover both. Edmonton's 1980s dynasty is the classic historical example of the aggressive 2-1-2 generally. *(The spread version is attributed to John Tortorella's New York Rangers teams, and that attribution does hold up in contemporaneous writing: Blue Seat Blogs' systems breakdown, published while he was coaching them, says the Rangers "generate most of their 5-on-5 offense from an aggressive 2-1-2 spread forecheck **and transitional offense, meaning offense generated from the rush**" — the second half matters, because it means the forecheck was never being claimed as the sole source of that offence — and explicitly contrasts it with the variant "where F1 and F2 approach from the same lane, rather than spread out" ([The Suit, 21 February 2012](https://blueseatblogs.com/2012/02/21/overview-of-john-tortorellas-system/)). **That is a fan-analytics site, not a coaching manual or a team source** — well attested, not official.)*
 
-![](diagram:forecheck-212-stacked)
-
 ---
 
 ### 1-2-2 — the containment default
+
+![](diagram:forecheck-122)
 
 ```facts
 Position: One forward deep, two forwards across the middle of the zone, two defencemen high
@@ -311,8 +313,6 @@ Countered by: D-to-D to shift the wall then a quick-up to a winger coming undern
 ```
 
 **Shape:** One forward deep, two forwards across the middle of the zone, two defencemen high.
-
-![](diagram:forecheck-122)
 
 Widely described in coaching material as the most common *base* structure in hockey — see the caveat on "most common" above — and the natural choice when you want to be organised rather than chaotic.
 
@@ -358,6 +358,8 @@ The New Jersey Devils' 1990s and 2000s teams are the standard reference for buil
 
 ### 1-3-1 — the modern trap-adjacent forecheck
 
+![](diagram:forecheck-131)
+
 ```facts
 Position: One forward pressuring, three players spread in a line across the width of the ice, one player behind them as the last man
 Convention: The single forechecker does not chase. They steer, take away the middle and shepherd the breakout to one side
@@ -370,8 +372,6 @@ Countered by: Chipping past the flat line and beating it with speed, banking a p
 ```
 
 **Shape:** One forward pressuring, three players spread across the width of the ice in a line, one player behind them as the last man.
-
-![](diagram:forecheck-131)
 
 Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — famously so, because it produced games where the opposing team simply stood still with the puck rather than skate into it.
 
@@ -417,6 +417,8 @@ Countered by: A hard chip past the flat line and a race for it — not a stretch
 
 ### 2-3 and the left-wing lock
 
+![](diagram:forecheck-2-3-lock)
+
 ```facts
 Position: Two forwards forechecking aggressively, three players across the ice behind them
 Convention: In the left-wing lock the centre and right winger forecheck as F1 and F2, and the left winger drops back to the half-boards
@@ -430,8 +432,6 @@ Never: Read "forecheck hard" as a licence to finish into the back of a carrier w
 **Shape:** Two forwards forechecking aggressively, three players across the ice behind them.
 
 The **left-wing lock** is the famous version. The centre and right winger forecheck hard as F1 and F2. ⚠️ **"Hard" means the same thing here as it does in the 2-1-2, and carries the same two conditions**: their defenceman is retrieving with their back to you, so take the puck, take the ice, or angle them off it and never finish into their back — and find out first whether you may body check in this game, which USA Hockey 604(a) and (b) and Hockey Canada 7.3 bar across a long list of classifications and, under 604(b), for any fixture where a checking team plays a non-checking one. Both are set out in full under **2-1-2** above and **Off a dump-in** below. The **left winger "locks"** — instead of joining the attack, they drop back to the half-boards and, if the puck is not won, slide into line with the two defencemen to form a three-man wall across the ice. The left winger is effectively a third defenceman whenever the puck is going the other way.
-
-![](diagram:forecheck-2-3-lock)
 
 **What it's good at:** Genuinely aggressive forechecking with a genuinely solid back end. You get two-man pressure — nearly as good as a 2-1-2 — while never being outnumbered on the counter-attack, because there are always three players between the puck and your net.
 
@@ -447,6 +447,8 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 
 ### The full-ice press — maximum pressure
 
+![](diagram:forecheck-press)
+
 ```facts
 Position: Three forwards deep or nearly deep, both defencemen pinching at the offensive blue line, effectively no safety at all
 Convention: All three forwards hunt the puck and both defencemen pinch on anything, on the understanding that a puck past them is a breakaway
@@ -459,8 +461,6 @@ Countered by: One pass — you are betting they cannot make it in the time you a
 ```
 
 **Shape:** Three forwards deep or nearly deep, both defencemen at the offensive blue line and pinching aggressively, effectively no safety at all.
-
-![](diagram:forecheck-press)
 
 > **A note on the name.** The label "2-2-1" is sometimes used for this in casual discussion, and it is standard terminology in basketball — but it is not what coaching material standardly calls this in hockey. Coaching sources describe it as a **full-ice press**, an **all-out forecheck**, or simply "an aggressive 2-1-2 with both D pinching." Use one of those names with your team so everyone means the same thing.
 
@@ -501,6 +501,8 @@ Note the offside rule while you are up there: **both of your skates must complet
 
 ### When to pinch
 
+![](diagram:forecheck-pinch)
+
 ```facts
 Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go" — so you can play the puck or, where your book allows a seal at all, legally seal the winger
 Read: On a pure race for a loose puck or a dying rim with nobody to seal, you need to arrive clearly first, not "probably"
@@ -510,8 +512,6 @@ Never: Take contact on the wall with your back to the boards, and never duck —
 ```
 
 A **pinch** is stepping down from the blue line along the wall to kill a rim or a chipped clear before it escapes.
-
-![](diagram:forecheck-pinch)
 
 **Pinch when:**
 - **You can arrive on contact — and on an uncontested puck, clearly first.** The standard coaching test, used identically in [Offensive Zone Play](offensive_zone_play.md), is *"if you can't arrive on contact, don't go"*: you and the puck reach the wall at the same moment, so you can either play the puck or — in a book that still allows it, which is not the IIHF book in women's hockey and not a non-checking classification at all — legally seal the opposing winger against the boards. ⚠️ **Whether you may make contact at all, and whether you were late, are decided by your rulebook and not by this test.** In many leagues body checking is barred outright, and under the IIHF book — the British reader's — players competing for the puck in women's hockey may not use the boards to eliminate an opponent at all. **Where either applies, a pinch is a play on the puck alone and the seal just described is not available to you.** The section below, [what your book allows when you get there](#what-your-book-allows-when-you-get-there), sets out all four books and how late is too late. Where the bar is higher is a **pure race for a loose puck or a dying rim with nobody contesting it**: there you need to arrive clearly first, not "probably", because there is no man to seal and second place just means you have turned your back on the play.
@@ -720,6 +720,8 @@ With the trapezoid, **the corners belong to you**. Their defenceman has to go an
 
 ### How to aim your dump-ins to exploit it
 
+![](diagram:dump-and-the-trapezoid)
+
 ```facts
 Targets: Dump into the corners — the "soft" areas the goalie cannot legally touch
 Never: Dump straight down the middle behind the net — that is inside the trapezoid, exactly where the goalie is allowed to play it and will be waiting
@@ -736,8 +738,6 @@ Risk: A cover you think was illegal is still a stoppage — skate at a goalkeepe
 - **A rim that dies in the corner is unretrievable by their goalie.** A defenceman has to skate all the way over for it, under pressure, facing the boards. Against a trapezoid that makes it the most valuable dump available — coaching emphasis, not a counted ranking.
 - **Cross-corner dumps** force the retrieval to happen on the far side from where their defencemen are set up, which adds a second or two of travel — often the difference between them making a pass and you sealing them in.
 - **A dump straight down the middle behind the net is a gift.** The goalie stops it, sets it for their defenceman, and your forecheck has achieved nothing. If you must go there, at least make it hard enough to come off the end boards and out to a corner.
-
-![](diagram:dump-and-the-trapezoid)
 
 Watch the goalie's stick side as well: many goalies are far better at handling and setting the puck on their forehand, so dumping to their backhand side buys extra time even inside the trapezoid.
 

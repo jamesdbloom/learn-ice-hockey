@@ -162,19 +162,21 @@ Almost everything here applies in **every league, including yours** — angling,
 
 ## 2. Angling — Legal in Every League
 
+![](diagram:rush-gap-and-angle)
+
 **Angling is steering an opponent to where you want them by choosing your skating route, not by hitting them.** USA Hockey's glossary defines it as "a legal defensive skill used to direct/control the puck carrier to an area that closes the gap and creates an opening that is too small for the puck carrier."
 
 It is legal everywhere. Hockey Canada's own interpretation of its no-checking rule says it outright: "A player may steer or direct an opposing player into the boards, without actually touching or body-checking them. This is acceptable." You are allowed to close off the boards and force a puck carrier to slow down or turn back inside — as long as you do not bump, push or shove them to do it.
 
 This is how good defenders actually take the puck. Not by hitting people.
 
-⚠️ **The picture below is borrowed from [Defending the Rush](../systems/defending_the_rush.md), and the distances in its caption belong there rather than here.** They are gap-control targets for a defender retreating on a one-on-one. This section sets no distance of its own: what carries across is the geometry, and nothing numeric.
-
-![](diagram:rush-gap-and-angle)
+⚠️ **The picture above is borrowed from [Defending the Rush](../systems/defending_the_rush.md), and the distances in its caption belong there rather than here.** They are gap-control targets for a defender retreating on a one-on-one. This section sets no distance of its own: what carries across is the geometry, and nothing numeric.
 
 It is the same *principle* rather than the same skill — that defender is travelling backward on a rush, where the four things below are written for closing on a carrier in open ice. What carries across is the geometry: the defender's body is between the carrier and the middle, the shaded ice is what the route takes away, and the only lane left open is the wall. What it does not show — because no still picture can — is that the defender was already at speed before that instant. **A gap cannot be closed from a standstill** — which is the same reason an angle has to start before you need it.
 
 ### The four things you are managing
+
+![](diagram:angling-your-route)
 
 ```facts
 Action: Skate at the ice they want, not at the player. Take away their good ice and force them to bad ice
@@ -195,9 +197,7 @@ Goal: A gap too small for the puck carrier to cut inside
 
 **4. Stick on the ice, blade in the passing lane.** Appert again: "you want your stick on the ice in a sweeping manner and protecting good ice." Your stick covers the inside — the lane back to the middle — while your body covers the outside. At the moment of contact, "if your opponent still has the puck, you want your stick on the puck."
 
-The picture below draws the first two of these four: the route the defender skates, and the direction that route leaves them travelling. The other two — closing speed, and where the stick is — are not things a still picture can show.
-
-![](diagram:angling-your-route)
+The picture above draws the first two of these four: the route the defender skates, and the direction that route leaves them travelling. The other two — closing speed, and where the stick is — are not things a still picture can show.
 
 ### Where the angle ends
 
@@ -679,6 +679,8 @@ Learning to carry the puck without staring at it is a stickhandling problem, and
 
 ### Do not turn your back to an oncoming checker near the boards
 
+![](diagram:angle-into-the-corner)
+
 ```facts
 Never: Turn your back to a checker near the boards. It gives them your spine, puts your head first into the wall, and makes it a hit from behind — even a light one could inflict a severe head or neck injury
 Key: A chin tucked to the chest straightens the cervical spine; the head stops, the body keeps going, and vertebrae fracture
@@ -707,9 +709,7 @@ Hockey Canada's checking-from-behind rule lists the two scenarios its officials 
 
 **Case 1 — best of all: arrive on an angle, not perpendicular.** *"Skating into the boards at an angle means better puck control and less risk of injury… When players skate into the corners at an angle, the risk of hitting the boards with their helmets first is greatly reduced. A leg or side or an arm will absorb most of the impact"* (USA Hockey, *Introduction To Body Contact*, "Angling In"). Even better: **take the puck off the wall before you get there** — see "Get off the wall" below.
 
-The picture below draws Case 1 and only Case 1: the line, and where it is chosen. What happens once you arrive — skates parallel, forearm and hip, chin off your chest — is a posture rather than a position, and no rink diagram can show it.
-
-![](diagram:angle-into-the-corner)
+The picture above draws Case 1 and only Case 1: the line, and where it is chosen. What happens once you arrive — skates parallel, forearm and hip, chin off your chest — is a posture rather than a position, and no rink diagram can show it.
 
 **Case 2 — contact is coming and you can still choose how you meet the wall: skates parallel to the boards, and take it along your side.** The manual's teaching points for a player checked while skating parallel to the boards are *"press your forearm and upper thigh (hip area) against the boards"* and *"keep a low center of gravity with your feet apart and knees bent"*; the angling-in list adds *"lean into the impact"* and *"absorb the shock over the widest possible part of your body."* Your shoulder and hip turn toward the **checker**; your forearm and hip meet the **wall**.
 
@@ -984,6 +984,8 @@ The commonest amateur error in the corner is two teammates fighting the same opp
 
 ### You have less room and more escape routes to cover
 
+![](diagram:corner-escape-routes)
+
 ```facts
 Read: Boards on two sides help you seal, but give them the option to spin either way — up the wall or out behind the net
 Action: Angle the carrier so the escape they have is the one you want them to take — toward the wall and up, away from the net
@@ -992,9 +994,7 @@ Never: Leave them an escape back toward the slot
 
 The corner has boards on two sides, which helps you seal a player but also gives them the option to spin either way — up the wall or out behind the net. Angle the puck carrier so that the escape they have is the one you want them to take: **toward the wall and up, away from the net, never back toward the slot.**
 
-The two escapes the corner gives them are drawn below. The one you are taking away is not drawn, because your body is where it would be.
-
-![](diagram:corner-escape-routes)
+The two escapes the corner gives them are drawn above. The one you are taking away is not drawn, because your body is where it would be.
 
 ### Whose corner is it?
 
@@ -1025,6 +1025,8 @@ The area on top of the crease is the **densest scoring area on the ice** — and
 
 ### Attacking the net front
 
+![](diagram:screen-the-goalie-sightline)
+
 ```facts
 Mindset: You have to have a commitment to getting there before you can play there
 Position: In front of the goalie, not beside them — on the shot lane, taking away the goalie's eyes
@@ -1045,10 +1047,9 @@ Rule: Hockey Canada 8.5 is not flat — a teammate's goal from outside the creas
 - **⚠️ And that instruction is what makes this the hardest place on the ice to take contact.** Your eyes are deliberately on the puck, so a defender working under your arms to walk you sideways moves you from a body you are feeling rather than watching. **Two things follow.** Know where the near post is before you plant, because the path you get walked along has the goal frame at one edge and the goaltender at the other, and you will be travelling it sideways or backwards. And take the contact the way [Receiving a Hit Safely](#6-receiving-a-hit-safely) teaches it — **wide base, knees bent, weight low, knees and hips giving rather than a locked frame** — with your **head up and your chin off your chest**, because the flexed neck is what turns a collision with a post into a spinal injury, and USA Hockey puts the goal post in that mechanism alongside the boards. Its *Heads Up Hockey* principles put the instruction in one line: *"Hit the boards or goal posts with an arm, a leg, or anything but your head first"* (USA Hockey, *Introduction To Body Contact*). **That is not a checking-league point** — a legal box-out moves you along the same path.
 - **Screening is normally legal.** Standing outside the crease in the goalie's sightline without contact is not goaltender interference. What is illegal is impairing the goalie's ability to make a save **inside the crease**. ⚠️ **Rule 69.1's clause (1) is often quoted as though standing anywhere could cost you the goal, and read whole it does not say that** — it sits under *"Goals should be disallowed **only if**"*, which is a ceiling on when a goal may be taken off the board rather than a direction to take one off, and the sentence in 69.1 that actually disallows a goal reaches an attacker who *"enters the goal crease"*. 69.3's no-contact screen ground asks for a significant position *within* the crease, and 69.4, the rule for outside it, has no positioning limb at all. **That is a reading of the rule's structure rather than something either book states**, and both add that Rule 69 *"will be enforced exclusively in accordance with the on-ice judgement of the Referee(s)"*. ⚠️ **And it does not extend to the crease line, which the books answer in opposite directions** — see [Rink Map and Glossary](../foundation/rink_map_and_glossary.md). **⚠️ Rule 69 is the NHL's and the IIHF's. USA Hockey and Hockey Canada do not run its premise** — **neither reaches a screen set from outside the crease** either, so out there all four leave the clean screen alone. USA Hockey writes no goaltender-vision provision at all — not in its playing rules, whose one *"protective screen"* at Rule 625(a)(1) is a screen set on a checker, and not in its separate Casebook, whose seventeen Rule 625 situations run to stick and bench interference, the crease bar and a goalkeeper's abandoned stick, and write nothing about a screen or the goaltender's view — and Hockey Canada's two references to the goaltender's view both reach only a player standing **in** the crease. **Inside the crease the two part company.** USA Hockey Rule 625(b) is a position bar rather than an impairment test — no goal with an attacker in the crease **whoever scored**, with no impairment to judge, unless the puck preceded them in or the goalkeeper is out of the crease area. ⚠️ **But 625(b) carries one carve-out beyond those two, and it is the one that matters at the net front:** *"if the attacking player has been physically interfered with by the actions of a defending player that causes them to be in the goal crease, play shall not be stopped and any legal goal scored shall be allowed."* So a defender who shoves you into the paint does not thereby kill your team's goal. ⚠️ **That relief reaches your position only, not what you do next** — it excuses where you are, and nothing about playing the puck or contacting the goaltender once you are in there; [Shooting](shooting.md) carries the limit and the penalty that survives it. **Hockey Canada Rule 8.5 is not flat:** it allows a teammate's goal from outside the crease *"provided that the player who was in the goal crease does not attempt to play the puck, interfere with the play or obstruct the Goaltender's view or movements"*, and its Interpretation 3 to 8.5(a) disallows the goal where a player standing in the crease impedes *"the goaltender's vision or movements"* — a counterpart to NHL 69.3, not to 69.1. [Rules Primer](../foundation/rules_primer.md) carries the full comparison. See [Offensive Zone Play](../systems/offensive_zone_play.md).
 
-
-![](diagram:screen-the-goalie-sightline)
-
 ### Defending the net front
+
+![](diagram:net-front-walk-out-direction)
 
 ```facts
 Priority: Body position first — inside shoulder ahead of theirs, hips between them and the puck, box out
@@ -1074,9 +1075,7 @@ The order of operations, and the order matters:
 
 ⚠️ **Step 3 has a direction, and it is the safety half of it: walk them toward the corner, not across your own goalmouth.** Which league you are in decides whether you may move them at all; which way you move them decides what they hit, and that half is the one nobody teaches. A body moved across the front of your own net travels sideways or backwards through a space with a steel goal frame at one edge and your goaltender at the other, and it is the player being moved who meets the post. **USA Hockey puts the goal post in the spinal-injury mechanism alongside the boards** — with the chin tucked to the chest the cervical spine straightens, and *"when a player hits the boards or a goal post head on, the head stops suddenly, but the body's movement continues, compressing the spine"*, and the injury that follows *"can occur at walking speed"* (*Heads Up Hockey Program Guide*). [Receiving a Hit Safely](#6-receiving-a-hit-safely) is written for the player on the other end of this, and it is worth reading from both sides. **Taking them toward the corner is coaching caution drawn from that hazard rather than a rule anyone writes** — but the rulebooks do name the goal frame in the same breath as the boards, so the worst version of this is priced, and not at two minutes: driving a player from behind into the goal frame is a major plus a game misconduct under **USA Hockey 608(b)** where it *"causes them to go head first into the boards or goal frame"*, a **match penalty** under **Hockey Canada 7.5(c)** where they are *"unable to protect or defend themselves"*, and checking from behind under **IIHF Rule 43.1**, which reaches a hit *"from behind into the boards, the goal frame, or on open ice"* and writes no minor for it at all (43.2). Charging carries the goal frame in identical words in three books — *"A 'charge' may be the result of a check into the boards, into the goal frame or in open ice"* (NHL 42.1, IIHF 42.1, Hockey Canada 7.4). The tiers are in [Checking from behind](#checking-from-behind-and-what-the-onus-does-and-does-not-mean). ⚠️ **And drive from under the armpit without taking their skates off the ice.** A player whose edges are gone cannot brace and cannot choose what meets the post first. **No book here writes a penalty for that lift on its own:** the IIHF's *"[a] Player who extends their body upward or outward in order to reach their opponent"* is **Rule 48.1(III)**, a limb of the illegal-check-to-the-head rule that reaches you only *"when a Player checks an opponent"* and only where the head or neck is what gets contacted — and a box-out is not a check — while a whitespace-flattened whole-book search of USA Hockey's Playing Rules, USA Hockey's Casebook and Hockey Canada's Playing Rules returns no upward-or-outward extension clause in any of the three. **So the reason to keep them on their edges is the collision, not the tariff.**
 
-The picture below draws the direction and nothing else. The only route on it belongs to the player being moved, because theirs is the path that decides what gets hit; where the defender's shoulder is cannot be drawn at all. **And whose job the net front is in the first place is a coaching choice, not a law of hockey** — the picture draws a defenceman because that is the commonest case, but under the house-default low zone collapse it is specifically the *weak-side* defenceman's, and under **man-on-man** it belongs to whoever's check went there, which can as easily be a forward. Find out which your team plays; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) owns the comparison and sets out who has the net front under each.
-
-![](diagram:net-front-walk-out-direction)
+The picture above draws the direction and nothing else. The only route on it belongs to the player being moved, because theirs is the path that decides what gets hit; where the defender's shoulder is cannot be drawn at all. **And whose job the net front is in the first place is a coaching choice, not a law of hockey** — the picture draws a defenceman because that is the commonest case, but under the house-default low zone collapse it is specifically the *weak-side* defenceman's, and under **man-on-man** it belongs to whoever's check went there, which can as easily be a forward. Find out which your team plays; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) owns the comparison and sets out who has the net front under each.
 
 **4. Leverage over strength.** Same principle as the board battle, with the same caveat: the lower player usually wins, though not always and not against a large enough strength gap.
 
@@ -1141,6 +1140,8 @@ A **50-50 puck** is any puck that neither team possesses and both can reach — 
 
 ### Arrive with body position, not just with speed
 
+![](diagram:inside-lane-longer-route)
+
 ```facts
 Position: Skate the inside lane, between the opponent and the puck — half a step behind but inside usually wins it
 Rule: USA Hockey: a skater is entitled to the ice they occupy so long as they maintain their skating speed and body position between an opponent and the loose puck — and, separately, is entitled to stand their ground and not move if an opponent wishes to skate through (Standard of Play)
@@ -1163,9 +1164,6 @@ USA Hockey states the same limit in its body-checking guidance: "Two skaters who
 **So: skate the inside lane. Make them go the long way round. Do not use your hands.**
 
 The mechanics of the arrival itself, in the order they happen: **approach on an arc**, not straight at the puck, so that you get there already turned; **turn your hips** so your backside is between the opponent and the puck rather than arriving square; **get low and wide**, feet outside your shoulders; **keep your feet moving**, because a stationary player on the wall gets pinned while one with momentum can escape along the boards or spin out to the middle; and **fend with the free hand, never hold** — NHL and IIHF Rule 56.1 permit the free hand to "fend off" an opponent or their stick but not to hold, pull, tug or grab — USA Hockey writes its version in the Casebook instead, and conditions it on controlling the puck or reaching for it, on a position you legally established, and on never pushing off to create space (Standard of Play Situations 5, 6 and 7); Hockey Canada 8.1 permits blocking a stick but not holding it (§4 above).
-
-
-![](diagram:inside-lane-longer-route)
 
 ### First to arrive, last to commit
 
@@ -1224,6 +1222,8 @@ Blocking shots is genuinely useful and genuinely dangerous. Both facts matter.
 
 ### Shot Blocking: Technique
 
+![](diagram:shot-block-get-close)
+
 ```facts
 Position: Get close — the closer to the shooter, the more net you take away and the less the puck can accelerate or deviate
 Technique: Stay on your feet where you can — a standing block leaves you in the play
@@ -1245,9 +1245,6 @@ Never: Lunge. Close with your feet instead, because a slide that misses is a def
 **Do not lead with your stick.** A puck deflected off an outstretched blade goes upward, often into your own face. Take your stick out of the lane or keep it flat on the ice beside you.
 
 **Close with your feet, not by lunging.** A lunge is a slide, and a slide that misses is a defender out of the play with no way to recover.
-
-
-![](diagram:shot-block-get-close)
 
 ### When *not* to block
 
@@ -1414,7 +1411,7 @@ This document is about legal contact, and fighting is not it. But it belongs her
 - **IIHF (Rule 46) — the British base, and the one fighting rule here that has just been rewritten.** The book opens by saying that *"'Fighting' is not part of international ice hockey's DNA."* **The tiers are the same in the 2025/26 and 2026/27 editions; the numbers are not**, so quote a number with its edition or not at all. An **instigator** takes a minor plus a major for fighting plus an automatic game misconduct — 2'+5'+GMP — at **46.3** in 2025/26 and **46.10** in 2026/27; an **aggressor** the same, at **46.4** and **46.2**; the **third player in** a game misconduct at the referee's discretion, catching *"subsequent Players who elect to intervene"*, at **46.7** and **46.14**.
   - ⚠️ **The third-man exception narrowed, and that one is about you rather than about the fighters.** The 2025/26 book waives the game misconduct outright *"except when a game misconduct penalty is being imposed in the original altercation"* (46.7). The 2026/27 book waives it only *"if an aggressor penalty is being imposed in the original altercation"* **and** the referee judges the third man in *"is doing so with the purpose of intervening to stop the ongoing altercation with an 'unwilling combatant' and not to start a secondary altercation"* (46.14). **Under the current book, skating in to break it up is more exposed, not less.**
   - **Neither edition writes USA Hockey's flat protection for the player who does not retaliate.** What the 2025/26 book writes is the opposite case, at **46.6** — *"Defender – Unwilling Combatant"* — covering the player who *does* punch back: *"A Player who retaliates to being punched will be assessed at least a minor penalty ('Roughing') or a major penalty ('Fighting', without a game misconduct penalty), **if the criteria for 'fighting back' with a few punches is not fulfilled**."* Read that against the same rule's opening paragraph, which does shelter a player who *"'defends' themself with a 'few punches'"* as an unwilling combatant — so the minor waits for a retaliation that goes past a few punches rather than for the first one.
-  - **The 2026/27 book deletes 46.6 entirely** — 46.6 there is *Helmets* — and keeps only a note, repeated under 46.2, 46.8, 46.10 and 46.12, that a player who *"'defends' themselves against an aggressor or an instigator may be considered as an 'unwilling combatant' and the automatic game misconduct penalty may be waived at the discretion of the referee."* **Note what that waives and what it does not: the game misconduct, not the fighting major.** The sentence about retaliating to a punch is not in that book at all — so what a retaliation costs there falls back on **46.1**, which deems a fight to have occurred once a player *"punches or attempts to punch an opponent repeatedly"*, and **46.12**, a major plus an automatic game misconduct for any player who fights. **Neither edition makes punching back safe. The 2025/26 book prices it at a minor or a major; the 2026/27 book leaves the major and only lets a referee lift the ejection.**
+  - **The 2026/27 book deletes the *Defender – Unwilling Combatant* heading** — 46.6 is *Helmets* there — and keeps only a note, repeated under 46.2, 46.8, 46.10 and 46.12, that a player who *"'defends' themselves against an aggressor or an instigator may be considered as an 'unwilling combatant' and the automatic game misconduct penalty may be waived at the discretion of the referee."* **Note what that waives and what it does not: the game misconduct, not the fighting major.** The sentence about retaliating to a punch is not in that book at all — so what a retaliation costs there falls back on **46.1**, which deems a fight to have occurred once a player *"punches or attempts to punch an opponent repeatedly"*, and **46.12**, a major plus an automatic game misconduct for any player who fights. **Neither edition makes punching back safe. The 2025/26 book prices it at a minor or a major; the 2026/27 book leaves the major and only lets a referee lift the ejection.**
   - ⚠️ **Which edition binds a British player is not answerable from the British document.** The IHUK In-House Rules 2026-27 adopt *"the latest IIHF Official Rule Book (Version 1.1, published July 2025)"* — that is the **2025/26** book — while their own cover says *"the Current IIHF Rule Book"*. Until that is resolved, take the harsher reading of each point: do not count on a non-retaliation protection, and do not count on the third-man exception.
 - **The IHUK In-House Rules amend it.** In **NIHL (all leagues), SNL and BUIHA Varsity**, *"fighting shall be penalised with a 5-minute Major Penalty."* And in **NIHL, NIHL1 and NIHL2** there is an additional provision: *"Any fighting major assessed in the last 5 minutes of regulation time (including overtime) will also carry an automatic Game Misconduct."* A further British consequence follows from elsewhere in the In-House Rules, and it is not limited to the age groups: in **women's hockey at every age, adult included**, any major penalty already brings an automatic game misconduct and ejection — Rule 101 carries that as a bullet of its own, applying *"in all cases"* with no age scope stated — so there, a fighting major *is* an ejection. **Read junior hockey the same way at every age group**, on In-House Rule 201's scoping of the IIHF junior playing rules to *"all junior age groups"* — though note that Rule 201 does not name 201.1, so that reading is an inference rather than the rule's own words. See [UK and England Rules](../foundation/uk_rules.md).
 - **Rec and beer leagues are commonly harsher again** — many eject and suspend for any fight regardless of who started it. *(That is a general observation about how such leagues are run rather than a sourced survey; there is no league-wide census of rec-league fighting policy. Read your own league's sheet, which is the only version that binds you.)*

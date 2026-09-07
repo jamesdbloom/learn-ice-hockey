@@ -28,6 +28,8 @@ Coverage is the agreement your five skaters have about who protects what while t
 
 ## The Problem Every System Solves
 
+![](diagram:dz-the-house)
+
 ```facts
 Key: The most dangerous chances come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
 Convention: The house is an analytics convention rather than an official marking — Shooting covers what a shot from inside it is worth, Rink Map and Glossary covers the shape
@@ -42,8 +44,6 @@ Five of you. Five of them. One net.
 But the ice is not equally dangerous. The most dangerous chances come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
 
 Two things to be honest about, because the shape gets quoted more confidently than the evidence supports. **The boundaries are an analytics convention, not an official marking** — Natural Stat Trick, Evolving Hockey and MoneyPuck all draw them slightly differently, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers the shape. And **how much of the scoring it accounts for depends on whose figure you take** — [Shooting](../technique/shooting.md) covers the values, and hedges every one of them. The figures that have actually been counted are more modest than the versions repeated in dressing rooms: **26.8%** of NHL goals were scored within two stick-lengths of the net and **51.6%** within twenty feet, computed from the NHL play-by-play feed over 400 games of 2024-25, from the 2,498 goals in it that carry coordinates ([Body Contact and Battles](../technique/body_contact_and_battles.md) covers both, and those are patches smaller than the house). What every source agrees on is the ratio rather than the share: a shot from inside this area is worth several times the same shot from outside it. That is enough to build a system on.
-
-![](diagram:dz-the-house)
 
 Some vocabulary, used consistently throughout this document and the rest of this guide (full definitions in [Rink Map and Glossary](../foundation/rink_map_and_glossary.md)):
 
@@ -168,6 +168,10 @@ Coverage is a set of positions that swap as the puck travels, not a set of jobs 
 
 ### The weak-side winger's collapse — the moment that decides the system
 
+![](diagram:dz-collapse-corner)
+
+![](diagram:dz-collapse-high-slot)
+
 ```facts
 Convention: When the centre goes down to help in the corner, the weak-side winger drops off their point into the high slot to fill it
 Action: Climb straight back up to the point as soon as the puck comes out of the corner
@@ -179,10 +183,6 @@ Read: If your weak-side winger has already followed the opposing defenceman down
 This is where low zone collapse succeeds or fails, so it is worth being exact.
 
 When the puck goes into the strong-side corner and **the centre goes down to help**, the high slot is momentarily empty, and it cannot stay empty. **It is not the most dangerous ice on the rink** — that is the inner slot, nearer the crease. [Shooting](../technique/shooting.md) owns the split and has close to half of all NHL goals coming from the inner slot against just over a quarter from the **outer** slot, which is the band this document calls the high slot. **Its qualifications are part of it:** it is a **three-year, five-on-five** sample, so it says nothing about the power play, and it is computed from Sportlogiq tracking, which is not public, so nobody outside Sportlogiq can check it. What makes this the moment the system turns on is not the value of the square metre but the fact that it empties by design and the seam runs through it — the back-door pass crosses it and the low-to-high shot comes from it. So the **weak-side winger drops off their point into the high slot** to fill it. As soon as the puck comes out of the corner, that winger climbs straight back up to their point.
-
-![](diagram:dz-collapse-corner)
-
-![](diagram:dz-collapse-high-slot)
 
 Two things to get right:
 
@@ -315,6 +315,8 @@ There are inverted versions — some teams play man on the puck carrier anywhere
 
 ### Box+1
 
+![](diagram:dz-box-plus-one)
+
 ```facts
 Convention: Four players form a box around the slot — two low near the posts, two higher near the tops of the circles
 Convention: The "+1" is the only player who chases the puck; when the puck moves, the role passes to whoever is nearest and the box rotates one position to fill the space
@@ -324,8 +326,6 @@ Countered by: A good puck-moving team — one chaser cannot pressure them, so th
 ```
 
 Four players form a box around the slot — two low near the posts, two higher near the tops of the circles — and the fifth player, the "+1", is the only one who chases the puck. When the puck moves, the +1 role passes to whoever is now nearest, and the box rotates one position to fill the space they left.
-
-![](diagram:dz-box-plus-one)
 
 **Where it actually gets used:**
 
@@ -337,6 +337,10 @@ Four players form a box around the slot — two low near the posts, two higher n
 
 ### The collapsing box (and the strong-side overload)
 
+![](diagram:dz-collapsing-box)
+
+![](diagram:dz-strong-side-overload)
+
 ```facts
 Convention: The collapsing box is a state, not a full system — the box shrinks toward the crease as the puck goes below the goal line, all five inside the house with sticks in lanes
 Read: Use it protecting a lead late, defending 6-on-5 with their goalie pulled, when structure has already gone, or against a team dangerous below the circles but not from its defencemen
@@ -347,8 +351,6 @@ Countered by: One hard, accurate cross-ice pass — the overload leaves the whol
 
 The **collapsing box** is a state rather than a full system: the box shrinks toward the crease as the puck goes below the goal line or into the corner, so all five of you are inside the house, sticks in lanes, conceding the entire outside. It's what low zone collapse turns into under maximum pressure.
 
-![](diagram:dz-collapsing-box)
-
 Where it gets used:
 
 - **Protecting a lead late**, when a shot from the point costs you nothing and a seam pass costs you the game. See [Game Management](game_management.md).
@@ -357,8 +359,6 @@ Where it gets used:
 - **Against a team that generates nothing from its defencemen** but is dangerous below the circles.
 
 The **strong-side overload** is the opposite adjustment: instead of collapsing toward the net, all five players shift to the puck side, cutting the ice in half and squeezing the carrier for time and space. It is aggressive, generates turnovers, and dies to one hard accurate cross-ice pass — the whole weak side is unoccupied by design. Some teams use it as their base system; others use it as a situational squeeze when they need the puck back. **Nobody publishes a count of what teams actually run**, here any more than anywhere else in this zone, so neither of those two uses is offered as the commoner one.
-
-![](diagram:dz-strong-side-overload)
 
 ---
 
@@ -529,6 +529,10 @@ Action: Call the arrival, not the goal. "Back door!" the moment he appears, not 
 
 ### The walk-down from the point
 
+![](diagram:dz-walk-down-zone)
+
+![](diagram:dz-walk-down-man)
+
 ```facts
 Key: Instead of shooting, the opposing defenceman skates down toward the top of the circle — in a pure zone he crosses out of the winger's area and into nobody's
 Action: Find out your team's version before you need it — this one is a coaching choice, not a rule of hockey
@@ -545,10 +549,6 @@ Priority: When a fourth attacker arrives low, somebody gives up their area and i
 - **Under man-on-man:** you go with them, all the way, wherever they go. Simple, and the reason the walk-down doesn't trouble man teams.
 - **Under hybrid:** you release from zone and pick them up man-on-man as soon as they cross the dots. This is the cleanest answer of the three, and the main reason hybrids exist.
 - **Everyone else:** when a fourth attacker arrives low, you are outnumbered down there. Somebody has to give up their area and it must not be the goalmouth. Usually the centre absorbs the extra man and the weak-side winger takes over the high slot entirely.
-
-![](diagram:dz-walk-down-zone)
-
-![](diagram:dz-walk-down-man)
 
 ### The net-front scramble
 

@@ -47,6 +47,8 @@ This has three practical consequences.
 
 ## 2. What "time" actually means
 
+![](diagram:breakout-reverse)
+
 ```facts
 Key: Your time is the distance to the nearest threatening defender divided by their closing speed — a teaching model, not a measured quantity
 Read: Closing speed, not distance — twenty feet closing hard is less time than three feet travelling away
@@ -63,8 +65,6 @@ Beginners hear "you've got time" and picture seconds on a clock. That is the wro
 Work through the two cases that catch players out.
 
 **You can have time with an opponent three feet away.** A forechecker who has over-skated you and is now travelling *away* from you at speed has a closing velocity of roughly zero, or even negative. They are three feet from your body and several strides from being able to do anything about you, because before they can reach you they have to stop, turn and rebuild speed — three or four tenths of a second minimum, usually more — a coaching estimate, not a measured figure, and no study was found that puts a number on it. This is exactly the moment a **reverse** works: you send the puck back against the flow into the space the forechecker has just vacated. (A *reverse* goes back against the direction of play; a *rim* goes onward around the boards with it. They are different plays.) The player who feels the opponent nearby and panics throws the puck away. The player who reads the closing speed calmly makes a play.
-
-![](diagram:breakout-reverse)
 
 **You can have no time with an opponent twenty feet away.** A defenceman skating backwards at you with a tight gap, on balance, with their stick already in your lane, is twenty feet off and closing at maybe fifteen feet per second of relative velocity. You have a bit over a second, and part of that second is already spoken for by the puck being on your backhand. Meanwhile the "twenty feet" made you feel safe. It wasn't.
 
@@ -83,6 +83,8 @@ See [Scanning and Anticipation](scanning_and_anticipation.md) for the habit that
 Six of these seven tools require no skating speed and no hands. That is the point.
 
 ### Deception — defenders react to what you show them
+
+![](diagram:show-one-shoulder-open-the-other)
 
 ```facts
 Key: Space is created in the defender's mind before it exists on the ice — show them the wrong option
@@ -103,8 +105,6 @@ Space is created in the defender's mind before it exists on the ice. A defender 
 The [Cutting Edge Ice Academy](https://www.edgeiceacademy.com/article/how-deception-creates-space-without-speed) coaching material — the name in its own footer, though its domain reads `edgeiceacademy.com` — describes what a deceived defender actually does: they pivot their hips, reach with the stick, or shift weight in response to a cue that was false. Every one of those is a positional loss you can spend.
 
 **One warning.** Deception costs you a beat. If you have no time — two closing forecheckers, back to the boards — fake nothing and make the simple play. Fakes are a luxury good, purchased with time you already have.
-
-![](diagram:show-one-shoulder-open-the-other)
 
 ### Delay and curl-back — turning away from pressure
 
@@ -180,6 +180,8 @@ The trade-off is honest: the boards remove half your options too. Wall possessio
 
 ### Attacking into space, not at people
 
+![](diagram:attack-the-seam)
+
 ```facts
 Never: Skate directly at a defender — you hand them a stationary problem they can win by doing nothing
 Action: Attack the seam, the gap between two defenders that neither has clearly claimed
@@ -200,8 +202,6 @@ Same idea across the whole sheet:
 - On a zone entry, put the puck into the space behind the defender rather than at the defender. See [Zone Entries](../systems/zone_entries.md).
 - On a pass, hit the space your teammate is skating into rather than their current blade. A pass to a stationary stick freezes them; a pass into space keeps them moving and moving players are hard to defend.
 - In the offensive zone, move to the empty ice rather than to the puck. Four players converging on one puck is how you turn a five-on-five into a five-on-two against yourselves.
-
-![](diagram:attack-the-seam)
 
 ### Scanning before you receive
 
@@ -313,6 +313,8 @@ The principle, and it is RinkHive's: *"Your stick's primary job in the defensive
 
 ### Pressure with support — why lone pressure creates holes
 
+![](diagram:layer-not-converge)
+
 ```facts
 Key: Lone pressure does not take space away, it moves it — behind you
 Action: Send pressure only with a second layer, positioned to take the puck if the first forces a rushed play and to cover the ice they left
@@ -326,8 +328,6 @@ Risk: If you go and your teammate doesn't, you have made a hole rather than clos
 Sending one player to pressure the puck, with nobody behind them, does not take space away. **It moves it.** The pressuring player vacates the ice they came from, and if they are beaten, that ice is now a clean lane and your team is a man short behind the puck.
 
 Pressure only takes space away when there is a **second layer** — a teammate positioned to take the puck if the first pressure forces a rushed play, and to cover the ice the first player left.
-
-![](diagram:layer-not-converge)
 
 This is a system question, so name your system. **The house default throughout is a 2-1-2 forecheck and a low zone collapse (zone) defensive-zone coverage.** In a 2-1-2, F1 pressures, F2 takes the first escape option, F3 holds the high middle as the safety valve — and **F1/F2/F3 are roles defined by order of arrival, not by position; whoever gets there first is F1.** A 1-2-2 puts one forechecker in and holds two back, which concedes possession behind their net but denies the neutral zone entirely. A 1-3-1 neutral-zone trap concedes even more and denies even harder.
 
@@ -355,6 +355,8 @@ This is a strong general principle rather than an absolute — some coaches will
 
 ### Deny the reception, not the pass
 
+![](diagram:deny-the-reception)
+
 ```facts
 Never: Lunge at the passing lane — passes are fast and you are guessing
 Action: Arrive as the puck does, on a route that puts you on the receiver with your stick on their blade or in their receiving lane
@@ -374,11 +376,11 @@ Two ideas make this work:
 
 This is what "taking away time" concretely means. You are not preventing the play; you are making it arrive with no room attached to it.
 
-![](diagram:deny-the-reception)
-
 ---
 
 ## 5. Where time and space live — a map of the ice
+
+![](diagram:strong-side-and-weak-side)
 
 ```facts
 Position: Behind the net — no shot exists from there, so it is under-defended, and any defender who commits to one side gives you the other
@@ -408,8 +410,6 @@ Learn this like a map, because it tells you where to go with the puck and where 
 - **The middle of the neutral zone.** Heavily patrolled ice: both teams' structures pass through it, and every trap is designed to fill it. A carrier who slows down there gets swarmed. Cross it with speed or don't cross it with the puck.
 
 The practical translation: **with the puck, move it toward space** — behind the net, weak side, point, half-wall. **Without the puck, move yourself toward where the space will be**, which is usually the weak side, and where the puck will need you next. See [Puck Support and Spacing](puck_support_and_spacing.md).
-
-![](diagram:strong-side-and-weak-side)
 
 ---
 

@@ -53,11 +53,20 @@
  *     (neutral_zone_systems.md), which draws the same containment job — the lone forward
  *     taking the middle away and showing the carrier one side — under its owner.
  *   - Offensive Zone: Pressuring an Opponent with the Puck is `forecheck-212`
- *     (forechecking_systems.md), and center.md itself sends the reader there.
+ *     (forechecking_systems.md), and center.md itself sends the reader there in words. It now
+ *     also carries the marker: the picture's own "never finish into his back" warning is this
+ *     section's own closing line almost verbatim, and drawing it here means "May you check at
+ *     all" — cross-linked from this section by name — does not need a second copy of the same
+ *     geometry.
  *   - Offensive Zone: Without the Puck — Getting Open in the Slot, and its crease
  *     subsection, are `oz-net-front-screen` (offensive_zone_play.md),
  *     `screen-the-goalie-sightline` (playing_without_the_puck.md) and `the-goalmouth`
- *     (rink_map_and_glossary.md). The first of those already carries the Rule 69 clauses.
+ *     (rink_map_and_glossary.md). The first of those already carries the Rule 69 clauses,
+ *     and its marker is now placed under "The crease is the one line you don't cross" —
+ *     the H4 that carries this document's own four-book goaltender-interference
+ *     comparison, which is a large enough addition on its own that the other two ids are
+ *     deliberately left unplaced rather than tripling the caption load on one subsection.
+ *     The general "Getting Open in the Slot" H3 above it still carries no marker.
  *   - Offensive Zone: Carrying the Puck — Under Pressure is `oz-behind-the-net`
  *     (offensive_zone_play.md), whose own caption records that the wrap-around is
  *     deliberately not drawn there. That is its owner's call and not this file's to
@@ -72,13 +81,72 @@
  *     `describe` places the bumper "in the middle of the slot between them" — which is
  *     the one thing the Power Play section is FOR ("What matters here is where they put
  *     you"). center.md now carries that marker too. `pk-box` and `pk-diamond` are NOT
- *     borrowed into it: the centre's power-play section names the box only to say what it
- *     leaves uncovered, and the two kill shapes belong to the section about killing.
+ *     borrowed into the Power Play section: the centre's power-play section names the box
+ *     only to say what it leaves uncovered, and the two kill shapes belong to the section
+ *     about killing. ⚠️ `pk-diamond` is now placed there — under "Penalty Kill (your team
+ *     is short-handed)" — because its caption's "the only personnel that is even loosely
+ *     fixed is the apex — often the centre, but it varies by team" is this section's own
+ *     claim in the same words ("in a diamond you are usually the single apex"). `pk-box`
+ *     and `pk-wedge-plus-1` are left unplaced: the section gives all three shapes equal
+ *     weight in words, and a reader who wants the other two is one click away in Special
+ *     Teams, which draws all three.
  *   - Icing is `icing-gaining-the-line` and `icing-the-race-and-the-dot` (rules_primer.md).
+ *     Only the first is now placed, under "Icing": it is the section's own centre-specific
+ *     fix ("carry the extra stride so the puck is on your stick as it touches the red
+ *     line") almost word for word, where the second is the general end-zone race and would
+ *     be a second full caption on a fix this section treats as an equal alternative rather
+ *     than the primary one.
  *   - Faceoff alignment is `faceoff-dzone-alignment` and its four siblings (faceoffs.md),
  *     which center.md names as the authority for the five-player alignments.
+ *     `faceoff-dzone-alignment` is now placed, under "Faceoffs — a defining responsibility
+ *     of the center": its shape is this section's own defensive-zone read ("ideally to the
+ *     boards-side defender … for a quick rim out"), and it is the only genuinely spatial
+ *     claim in a 17,000-plus-character section that is otherwise a four-book rules
+ *     comparison. The other four alignment specs are left where they are.
  *   - Line Changes is not spatial: it is bench timing, shift length and four books'
  *     substitution rules. A rink cannot draw any of it.
+ *
+ * ⚠️ FOUR MORE GAPS A CENSUS FOUND AND THIS ROUND DID NOT FILL, ON PURPOSE — a census
+ * counts headings without a marker; it does not price a caption. Filling every counted gap
+ * in this corpus was measured to put captions at 25.5% of everything spoken, and this round
+ * held itself to six markers on eleven candidates for that reason.
+ *   - Overview is not one of the six, and not for want of a candidate id: it is that this
+ *     document's page-defining idea is already drawn. The D3 pilot's rule (see
+ *     defender.mjs) is one representative situation, not a map, and spec 5 below
+ *     (`centre-nz-deciding-from-the-middle`) already IS that situation — its own caption's
+ *     "the centre of the ice is the best place to decide from ... you can see both wingers
+ *     and both defencemen" is the Overview's own "you are the link between all five
+ *     skaters" restated as a drawn picture. A second marker for that id under Overview
+ *     would voice the same caption twice in one listen, which this file's own precedent
+ *     (spec 1's header note, on `centre-swing-low`) already rules out. Every other Overview
+ *     fact — the workload measurement, the three named systems — is either not spatial or
+ *     is a per-zone hedge the pilot's own reasoning rejects for exactly this document's
+ *     reason: three coaching-choice hedges will not fit inside one Overview caption budget.
+ *   - "May you check at all, and what a check from behind costs" is genuinely spatial —
+ *     the section's own closing line, "take the puck, take the ice, or angle him off it —
+ *     never finish into his back", is a picture waiting to be drawn — and it is not drawn
+ *     here because it already has been, eleven thousand characters earlier in the same
+ *     document. `forecheck-212`, placed above under "Offensive Zone: Pressuring an
+ *     Opponent with the Puck", carries the identical warning in its own caption ("take the
+ *     puck, take the ice, or angle him off it, and never finish into his back") over a
+ *     carrier drawn with his back to the boards. That section already cross-links this one
+ *     by name ("read [§May you check at all] below"), so a reader reaches the picture
+ *     before reaching the rule text it is warning about. A second copy here would be the
+ *     same defect spec 1's header warns against, just carried across sections instead of
+ *     within one.
+ *   - Neutral Zone: Pressuring an Opponent with the Puck has a real, unplaced candidate —
+ *     `nz-1-2-2-containment`, named above — and was cut on cost alone: at 2,776 characters
+ *     of prose it is the shortest of the eleven candidates, the section already states its
+ *     one spatial claim in one sentence ("the closest forward initiates pressure ... drive
+ *     at the puck carrier ... or cut off the centre lane"), and the six markers already
+ *     placed this round are the larger, harder-to-say-in-words gaps. Left for a future
+ *     round rather than judged undrawable.
+ *   - Blocking shots on the kill has a candidate too — `shot-block-get-close`
+ *     (body_contact_and_battles.md), already borrowed into defender.md for the identical
+ *     subsection under the identical heading — and was cut for the same reason as the
+ *     neutral-zone gap above: at 2,552 characters it is the smallest candidate in the
+ *     census, and this document's own Penalty Kill section, three headings above it, is the
+ *     shot-blocking section's parent and now carries `pk-diamond`. Left for a future round.
  *
  * F1/F2/F3 DO NOT APPEAR IN THIS FILE, for the reason positions.mjs states: the document
  * is emphatic that they are roles set by order of arrival rather than people. Every glyph
@@ -711,6 +779,12 @@ const decidingFromTheMiddle = {
 // It is left here rather than deleted because the decision is the owner's and reinstating
 // it is one line. If it is reinstated, the OTHER copy has to go, and `puck_handling.mjs`
 // is not this file's to edit.
+//
+// ⚠️ THE REFERENCE HAS NOW BEEN TAKEN UP. content/positions/center.md's "Handling the
+// puck" section carries `![](diagram:the-puck-decides-not-you)`, so the recommendation two
+// paragraphs up is acted on rather than merely recorded. This spec stays out of the export
+// array exactly as before, and stays here as the record of why a second copy was rejected —
+// if anyone is ever tempted to add it, the marker already placed is the reason not to.
 //
 // The one spatial fact in a section that is otherwise four books' rule text, and the one
 // the section says is hardest to assemble: "it is the puck that has to be in the crease,

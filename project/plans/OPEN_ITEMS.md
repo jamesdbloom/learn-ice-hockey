@@ -14,6 +14,205 @@ stretch spent seven gate cycles on boarding rules while this sat untouched. Rule
 must be cleared to ship — but they are not the priority, and chasing a blocker is not the same as choosing
 the work.**
 
+### OPEN — "top of the circle" contradicts the walk-down's own direction of travel
+
+Found by a diagram agent that **declined to draw the branch rather than invent an interpretation**,
+which is the right call and worth recording as such.
+
+`content/systems/special_teams.md`'s walk-down passage reads: *"if they stay, you have a shot from
+the top of the circle with a moving goalie."*
+
+⚠️ **But `rink_map_and_glossary.md:387-391` — the owner — defines the top of the circle as the
+SHALLOW end, nearer the blue line, x=54.** The half-wall the carrier starts from is x=69. **A
+carrier walking *down toward the goal line* moves DEEPER, from 69 toward 89 — away from x=54.** So
+the shot location named does not sit on the path the same sentence describes.
+
+**Either the phrase means something looser than its owner's definition, or the sentence names the
+wrong landmark.** Both are plausible and this is not resolvable by geometry alone — it needs
+`content-reviewer` or `rules-verifier` on that section. ⚠️ **Do not "fix" it by moving a coordinate**:
+the diagram asserts no coordinate for this branch, deliberately, so nothing is currently shipping
+wrong in the picture. **The defect, if it is one, is in the prose.**
+
+### ⚠️ CORRECTION TO MY OWN D2 PRICING — BORROWING IS FREE TO WRITE AND NOT FREE TO HEAR
+
+Two `positions/` agents, working independently and without contact, **both chose to borrow existing
+diagrams rather than author new ones** — five borrows into `defender.md`, six into `center.md`, and
+**zero new diagrams between them.** Their reasoning was the same and it is sound: the corpus's own
+preference is *"borrowing beats duplicating"*, the captions are already reviewed under their owning
+documents, and authoring a new rule-bearing caption for a safety-critical section inside an 800-char
+budget risks shipping a hedge bare.
+
+⚠️ **But my ceiling analysis priced new diagrams at the cost of writing them, and that was wrong.
+A borrowed caption is voiced in full in every document that hosts it.** Borrowing avoids the
+authoring cost, the geometry risk and the review cost. **It avoids none of the listening cost — and
+because legacy captions run to the old median, a borrow costs MORE per marker than a newly written
+one.**
+
+Measured on `defender.md`: five borrows totalling **9,080 characters — 1,707 words, about 11.4
+minutes of extra speech on one page.** Two of them (`net-front-walk-out-direction` 2,678,
+`goalie-rim-stop-or-clear` 2,670) are **more than double** the corpus median. The page moved from
+**10.9% to 15.3% caption.**
+
+**Corpus-wide, after today's diagram work:** 286 → **304 markers**, 80,382 → **84,616 caption
+words**, **7.5% → 8.0%** of spoken text, 8.9 → **9.4 hours**. ⚠️ **These figures were WRONG in an
+earlier draft (305 / 8.1% / 19) because the count used a bare `diagram:` grep that matched a prose
+sentence — `game_management.md:302`. Count markers with an ANCHORED `^!\[\](diagram:…)$` or not at
+all.** Still inside the 10% ceiling, but **18 markers consumed a sixth of the
+headroom** — where 18 newly written captions at today's 601–838
+would have consumed about half that.
+
+**So the rule for the rest of D2 is:** borrowing is still right for correctness and consistency, and
+it is **not** the cheap option for a listener. **Where a borrowed caption is far above the median,
+weigh the borrow against writing a short one** — and count borrows against the ceiling exactly like
+new diagrams, which the original entry did not say.
+
+### ⚠️ EVIDENCE THAT THE GAP CENSUS OVER-COUNTS: goaltender.md scored 41 gaps and yielded ZERO
+
+An agent was sent to draw the spatial gaps in `positions/goaltender.md` — **41 undiagrammed sections
+by census, the largest count in `positions/`**. It read all 1,434 lines and **drew nothing**, with a
+section-by-section justification. That is the correct answer and it is recorded here as evidence,
+not as a failure.
+
+**Why nothing qualified:** *the ready stance*, *squaring up*, *on your feet*, *on your knees* and
+**post integration (VH and RVH)** are all **body mechanics** — pad and torso orientation relative to
+the goaltender's own body. ⚠️ **This corpus draws a goaltender as a bare `G` glyph with no shape
+around it. A glyph cannot show a pad seal.** *Tracking the puck* is eye mechanics; *the butterfly is
+a tool, not a religion* is doctrine; *the load on your hips* is owned by
+`conditioning_and_recovery.md`; *6-on-5* and *penalty kill* are rules-dominated and their spatial
+content is already drawn by `goalie-playing-the-angle`, `goalie-front-door-back-door` and
+`special_teams.mjs`'s `pk-*` set.
+
+**The document already carries 10 goaltender-specific diagrams plus 10 borrowed**, covering depth,
+angle, the arc, safe outlets, the trapezoid rim, breakaway retreat, tip lanes, rebound direction,
+the fifty-fifty race and odd-man rushes — **every spatial axis the position has.**
+
+⚠️ **So "41 gaps" in the census meant "41 sections without a marker", NOT "41 diagrams owed."** The
+census counts headings; only reading decides. **Treat the 917 figure accordingly** — this is the
+first document where the filter has actually been applied, and it removed 100% of them.
+
+**The agent's own honest caveat, worth keeping:** a reviewer applying a looser bar could justify one
+diagram for *"Playing bigger and deeper through traffic"* or *"6-on-5 with your net empty"*. It
+judged caption-budget discipline and duplication-avoidance to outweigh that. **That is a judgment
+call, not a certainty**, and it is the right one to revisit only if the ceiling turns out to have
+room.
+
+### ⚠️⚠️ D2 HAS A CEILING, AND IT IS ~100 NEW DIAGRAMS — NOT 917
+
+**Priced 6 September 2026** from the measured caption load (286 markers, 80,382 spoken caption
+words, 86.4 hours, **7.5% of everything the corpus speaks**), at the observed 281 caption words per
+marker:
+
+| new diagrams | added speech | caption total | **captions as share of spoken text** |
+|---|---|---|---|
+| +100 | +3.1 h | 12.1 h | **9.9%** |
+| +300 | +9.4 h | 18.3 h | **14.3%** |
+| **+917** (every gap) | **+28.6 h** | **37.6 h** | ⚠️ **25.5%** |
+
+⚠️ **Filling every gap would make a quarter of everything a listener hears be diagram caption.**
+That is the exact pathology already flagged as a defect in `off-the-ice/how_to_watch_hockey.md`,
+which sits at **27.7%** and is the worst document in the corpus. **"Draw a diagram for every
+section" is self-defeating: it reproduces corpus-wide the very condition we have recorded as a
+readability failure in one document.**
+
+**So D2 is DONE when the high-value gaps are drawn, not when the gap list is empty.** The working
+ceiling is **about 100 new diagrams**, which holds captions under 10% of spoken text. Priority
+order, from the owner's own words (*"especially all sections in the positions part of the sight"*):
+
+1. **`positions/`** — 93 gaps, the owner's named priority, and the four sections they named by hand.
+2. The `systems/` gaps where the section is a named, spatial structure.
+3. `D3`'s ~31 Overview diagrams — **counted against the same ceiling**, since they are markers too.
+
+⚠️ **And the ceiling is a reason to keep captions SHORT, not a reason to draw badly.** Every new
+caption written this round has come in **under 900 characters against a median of 1,303** (the
+zone-entry five at 735–838, the `D3` pilot at 624). **If new diagrams are captioned at half the
+legacy median, ~100 of them cost about 1.6 hours rather than 3.1.** The budget is the lever, and it
+is already working.
+
+**What this does NOT license:** deleting a legacy caption to make room. The long ones are long
+because they carry qualifications and safety counterweights — see the R5 entry.
+
+### ✅ D5 CLOSED 6 September 2026 — the class is REAL but the population is ONE, not thirty-four
+
+**Triaged in full: all 34 borrowed hits read, every hosting document checked for each. All 34 benign;
+zero further fixes.** `dz-collapse-high-slot` remains the only known instance and is repaired.
+⚠️ **Three of the dispatcher's "known-real" flags were refuted** — `forecheck-roles-rotate`'s *"beside
+it"* points at a label inside its own picture, and every genuine pair (`rush-3-on-2-*`,
+`dz-walk-down-*`, `forecheck-212-stacked`, `forecheck-122`, `nz-1-2-2-trap`, `winger-dz-reverse`,
+`faceoff-dzone-clean-loss`) **resolves in every host because the D1 agents moved each pair together and
+in order.** The care taken during D1 is why this came back clean. **The style-guide rule stands** — it is
+cheap and the one instance shipped undetected through every gate — **but this is not a widespread defect,
+and the round record should not be quoted as if it were.** Still unreached: captions that refer to another
+diagram without a positional word, and the 61 single-host hits, which could be internally wrong.
+
+Original census follows.
+
+### D5 census — 6 September 2026
+
+**One confirmed defect, one class.** `dz-collapse-high-slot` opened *"The same low zone collapse a
+beat later"* — true in its owner `defensive_zone_coverage.md`, where `dz-collapse-corner` precedes
+it, and **meaningless in `positions/defender.md`, which borrows it and has no predecessor.** Found
+by a D1 agent, which correctly noted it **pre-dated the marker moves**. Repaired at source.
+
+**Census over all 187 captions and every hosting document:**
+
+| | |
+|---|---|
+| captions containing a relative-position phrase | **95** |
+| of those, **borrowed into more than one document** | **34** |
+| diagrams hosted by more than one document | 72 of 187 *(at census; **75 of 195** after this round)* |
+
+⚠️ **MOST OF THE 34 WILL BE FALSE AND THIS MUST NOT BE SWEPT.** *"the same"* usually means *"the
+same puck carrier"* or *"the same shift"* — self-contained and correct. **A hit is a defect only if
+the phrase points at another DIAGRAM or at PROSE that is absent in at least one host.** The
+asymmetry between owner and host **is** the defect. Known-real candidates: `forecheck-212-stacked`
+(*"the diagram above"*), `forecheck-122`, `dz-walk-down-zone` (*"the next diagram"*),
+`forecheck-roles-rotate` (*"beside it"*), and the `rush-3-on-2-default`/`-alternative` pair, both
+borrowed into `goaltender.md`.
+
+⚠️ **Nothing mechanical can find this class.** `check_links` resolves the marker; `check_facts` does
+not read captions; and **reading either document alone sees a caption that looks fine** — the owner
+because the referent is there, the host because nobody re-reads a borrowed caption against its new
+neighbours. It took an agent reading captions across documents.
+
+**The rule this establishes:** *a borrowed caption must stand alone in every document that hosts
+it*, so relative-position words are safe only in a caption that is never borrowed. **With 75 of 195
+borrowed, that is a house rule, not an edge case** — it belongs in the style guide once the triage
+confirms the size.
+
+### ⚠️ D2 CENSUS — recounted 6 September 2026 from HEAD, and MY FIRST COUNT WAS SHORT
+
+**1,404 teaching sections at H2–H4** (prose ≥200 chars; Sources, Common Mistakes, Key Takeaways,
+Check yourself and the language notes excluded). **223 have a diagram — 16%. 1,181 do not — 84%.**
+
+⚠️ **My first pass counted H2 and H3 only and reported 1,347/1,130. It missed 49 H4 gaps — and the
+owner's own example was one of them.** *"Net-front technique — how to actually move someone"* is an
+**H4 with 9,391 characters and no diagram**, on the page the owner was looking at. **A census that
+stops at H3 cannot see the sections the owner is complaining about.** Corrected figures above.
+
+**Applying the owner's carve-out** (*"I want to focus on diagrams of the ice rink not other
+diagrams"*; the six non-rink documents are `equipment`, `conditioning_and_recovery`, `mental_game`,
+`team_play_and_culture`, `practice_and_development`, `uk_rules`): **917 gaps in rink documents, 323
+of them ≥3,000 chars, and 93 in `positions/`** — the owner's named priority.
+
+**All four sections the owner named are confirmed present in the gap list**, on `defender.md`:
+*Overview* (8,780), *Defensive Zone: Carrying the Puck — Under Pressure* (3,285), *Defensive Zone:
+Pressuring an Opponent with the Puck* (3,670), *Net-front technique — how to actually move someone*
+(9,391, H4).
+
+⚠️⚠️ **DO NOT READ 917 AS A TARGET. The list over-counts and I have not filtered it.** Inside rink
+documents sit many sections a rink diagram cannot illustrate — `goaltender.md`'s *"If you take one
+off the mask"*, *"Protection, and the neck laceration protector"*, *"The load goaltending puts on
+your hips"*, *"If your stick breaks"*; `switching_positions.md`'s *"How claims in this document are
+labelled"*. **These are medical, equipment and meta sections, and a rink picture on them would be
+decoration** — which is the opposite of the owner's ask. **The filter is per-section reading and
+nobody has done it.** The honest state: 917 is the population to read, not the number to draw.
+
+⚠️ **And every diagram drawn adds ~100 seconds of spoken caption** — see the R5 quantification
+above. **Coverage and listening time trade against each other directly**, and the trade has not
+been priced.
+
+Worklist with per-section sizes: `scratchpad/d2_gaps_h4.json`.
+
 ### 1 · MOST SECTIONS HAVE NO DIAGRAM — measured, not estimated
 
 | level | total | with a diagram | share |
@@ -2659,7 +2858,7 @@ deleted (precision ~40%, recall 1-in-7 — it finds text DELETED, not text MOVED
 
 | Row | What is needed |
 |---|---|
-| ⚠️ **OPEN — HALF OF EVERY WIDE DIAGRAM IS OFF-SCREEN ON A PHONE WITH NO VISIBLE CUE** | Measured in a real browser at 375 px: the box is 347 px, the SVG is held at `min-width: 640px`, so **293 px is off-screen — the entire attacking half, including the `puck carrier` label**. `offsetHeight − clientHeight = 0`: the scrollbar reserves **no layout space** and is drawn neither at idle nor mid-scroll. ⚠️ **Not lost — the box IS keyboard-reachable (`tabindex="0"` + `role="region"` + label, verified on five pages) and the substance is duplicated in the caption prose. It is UNCUED.** |
+| ✅ **CLOSED 6 September 2026 — verified fixed in `global.css:2204-2220`, and this row was STALE.** An always-drawn scrollbar (`scrollbar-width`/`scrollbar-color` for Firefox, `::-webkit-scrollbar` for Chrome and Safari) replaces the missing cue; macOS overlay scrollbars fade out exactly when the reader needs telling, so the box is opted into a classic persistent bar. ⚠️ **The obvious fix was tried first and RENDERED IDENTICAL:** `.table-scroll`'s four edge gradients were injected verbatim at 375 px and the screenshot was pixel-for-pixel the one without them — every rink SVG paints its ice as an unconditional opaque `<rect>` over ~98% of the viewBox, so the gradient is white-on-white. That is written into the CSS comment so nobody re-derives it by copying the sibling rule. Original finding follows. | Measured in a real browser at 375 px: the box is 347 px, the SVG is held at `min-width: 640px`, so **293 px is off-screen — the entire attacking half, including the `puck carrier` label**. `offsetHeight − clientHeight = 0`: the scrollbar reserves **no layout space** and is drawn neither at idle nor mid-scroll. ⚠️ **Not lost — the box IS keyboard-reachable (`tabindex="0"` + `role="region"` + label, verified on five pages) and the substance is duplicated in the caption prose. It is UNCUED.** |
 | ⚠️ **AND THE OBVIOUS FIX IS ALREADY REFUTED IN THE FILE — do not re-derive it** | `site/src/styles/global.css:2040` records that `.table-scroll`'s four gradients **were injected verbatim onto `figure.diagram--full .diagram-scroll` at 375 px and the screenshot was pixel-for-pixel the one without them** — *"NOT a faint shadow — nothing at all, because the ~6 px the slab leaves at each edge is white-on-white."* ⚠️ **The site review proposed exactly that fix. The comment exists to stop precisely this, and it worked — but only because the coordinator read it.** |
 | **The ACTUAL cause, which is narrower and testable** | Two platform facts the CSS comment did not know: **(1)** on macOS Chrome with *"Show scroll bars: when scrolling"*, `scrollbar-color` **recolours** the overlay scrollbar without converting it to a classic persistent one; **(2)** ⚠️ **setting `scrollbar-color`/`scrollbar-width` makes Chrome IGNORE the `::-webkit-scrollbar` block entirely**, so the `height: 10px` at `:2059-2070` never applies. **So the two halves of the intended fix cancel each other out.** Candidate: scope `scrollbar-color` to Firefox via `@supports`, leaving the webkit block live in Chrome. ⚠️ **UNVERIFIED — it is a CSS change that must be seen in a browser at 375 px before it is believed, and this round has already shipped one cue that was reasoned about rather than rendered.** |
 | ⚠️ **OPEN — two ⚠️ glyphs render as plain prose, breaking a documented invariant** | Confirmed in-browser, both viewports, both themes. ⚠️ **In ONE list item in `shooting.md` there are two ⚠️ warnings three lines apart: one plain black body text, one amber-barred and bold.** `remark-corpus.mjs:578` states as measured fact that none remained. Causes: `shooting.md`'s glyph is followed by **58 characters** before its bold run where `WARNING_NEAR_RE` allows **48**; `faceoffs.md`'s is followed by a **quotation**, not a `strong`. **Content fix routed; the plugin must not be widened.** |
@@ -5593,6 +5792,62 @@ the main target of the site is players in their first 10 years of playing."*
 `mental_game` 5.6%, `conditioning_and_recovery` 6.7%, `practice_and_development` 7.9%. **So the target
 shape is achievable in this house style; it is not forced by the subject.**
 
+### ⚠️⚠️ A2 RESULT 6-7 September 2026 — 252,736 CUT, 62,063 KEPT, TWO DOCUMENTS REVERTED
+
+Four documents survived audit and repair. **Two were reverted**: `rules_primer.md` (124,235 chars,
+**25 findings, 1 critical**) and `faceoffs.md` (68,303 chars, **17 findings, 1 critical**). Both
+reverts preserved the diagram work — verified by word-level diff as **zero non-blank, non-diagram
+changes**.
+
+⚠️ **THE FINDING THAT SHOULD GOVERN THE NEXT ATTEMPT.** Both criticals were **the same defect from
+different agents**: a claim scoped to *some* books, silently widened to *all* of them. The primer
+turned Hockey Canada's late-hit **ceiling** into a **gauge** for four books; faceoffs turned *"under
+all three of those books"* into *"all four"*, sweeping the NHL and IIHF into a trapezoid permission
+those two books penalise.
+
+**That is not carelessness — it is what compression DOES to a four-book comparison**, which is the
+form the rules documents are mostly written in. **The four documents that survived are the ones
+whose density was provenance and discussion rather than cross-book comparison.**
+
+**So the rule for A2 from here is:** ⚠️ **A PASSAGE THAT COMPARES BOOKS CANNOT BE COMPRESSED BY
+REMOVING BOOKS.** Compress the discussion around a comparison, or leave the comparison alone. And
+work **one section at a time with the audit attached to each**, never a whole document in one pass.
+
+⚠️ **`goaltender.md` (103 rule-dense blocks) and `body_contact_and_battles.md` (99) were deliberately
+NOT sent to A2 and must not be** until the method above has produced one clean audit. They are the
+two most safety-bearing documents in the corpus.
+
+**Measured defect rates, for whoever plans the next round:** the audited condensation produced
+roughly **one finding per 3,400 characters cut**; and repairing findings produced **nine new defects
+from eighteen fixes**. ⚠️ **Both numbers say the same thing: at this scale, review is not the
+expensive part of the work — it is the work.**
+
+### ⚠️ A2 SIZED 6 September 2026 — 1,188 rule-dense blocks, 2.1 MILLION characters
+
+Measured from HEAD: prose blocks (fenced blocks and Sources trailers excluded) carrying **three or
+more rulebook references and over 400 characters**. **1,188 blocks, 2,105,138 characters.**
+
+| document | blocks |
+|---|---|
+| `foundation/rules_primer.md` | **188** |
+| `positions/goaltender.md` | 103 |
+| `technique/body_contact_and_battles.md` | 99 |
+| `systems/faceoffs.md` | 76 |
+| `systems/special_teams.md` | 44 |
+
+Heaviest single blocks: `rules_primer.md:410` — **56 references in 12,699 characters**;
+`body_contact_and_battles.md:1515` — 46 in 7,252; `rules_primer.md:449` — 44 in **13,729**.
+
+⚠️ **This is a WORKLIST, not a target, and the detector over-fires by design.** It counts book
+names, so a passage that legitimately compares four books scores high **precisely because it is
+doing the thing the corpus is for**. `rules_primer.md` is *supposed* to be dense — it is the rules
+document. **The audience rule is the test, not the count:** does the detail change what the reader
+DOES? ⚠️ **And `body_contact_and_battles.md` and `goaltender.md` are the two most safety-bearing
+documents in the corpus** — a high score there is the strongest possible reason to read carefully
+rather than to cut. **Cut the discussion, never the warning.**
+
+Worklist: `scratchpad/a2_fresh.json`.
+
 ### ✅ A1 CLOSED 6 September 2026 — audience narrowed and the ratio rule written
 
 `project/content_style_guide.md` §*Audience and purpose*. ⚠️ **The old line was the licence:** it read *"both newcomers and experienced players wanting to deepen their game"* — **a spec that names everybody names nobody**, and every marginal rules paragraph could be justified by the reader who wanted to go deeper. Now: *"a player in their FIRST TEN YEARS"*, quoting the owner. A new sub-section *The ratio: how to PLAY, not what the rule SAYS* sets the working test — **a rule earns its space by changing what the reader DOES** — and carries the counterweight explicitly, because this item collides head-on with non-negotiables 1–4 if read carelessly: ⚠️ **compressing is not deleting; where a rule's detail is what keeps a reader safe, THE DETAIL IS GAMEPLAY.** A first-year player is *more* exposed to being penalised, ejected or hurt than a veteran, not less. **Cut the discussion, never the warning.** A2's condensation pass must be read against that sub-section, not against this row.
@@ -5760,13 +6015,160 @@ more markers, and D3's are page-summaries, the hardest kind to keep short.
 
 ⚠️ **Do NOT turn this into a sweep.** I refuted my own first hypothesis while measuring it: I
 expected the Overview precedent `notation-key` to be a bloated outlier and it is **rank 60 of 187
-at 1.2× median** — the long captions are long because they carry rules qualifications and safety
+at 1.2× median *(pre-round denominator; 195 now, rank and ratio unchanged)*** — the long captions are long because they carry rules qualifications and safety
 counterweights that non-negotiables 3 and 4 protect. **The finding is that the MEDIAN is too long,
 not that the maximum is.** Any reduction is a per-caption reading job, and a caption that shrinks
 by dropping a qualification has made the corpus worse, not shorter.
 
 **Open question this cannot answer:** whether 7.5% is actually too much. It is a real number and a
 large one; it is not by itself a defect. **What makes it one is the median, and the 28% document.**
+
+### ✅ D2 VETTED for `systems/`, `technique/`, `hockey-iq/` — 4 DRAW, ~10 BORROW out of ~700 headings
+
+Three parallel forks read document by document rather than grepping headings, with one fork
+overrunning its scope and re-covering two areas independently — which gave an unplanned cross-check.
+Six verdicts clashed; each was adjudicated by reading primary text and the `.mjs` headers, not by
+trusting either fork.
+
+**The four DRAW candidates, ranked:**
+
+1. `defensive_zone_coverage.md` — **the back door / weak-side seam**, which the document's own prose
+   calls *"the chance every coverage system is most afraid of"*. Nothing in the corpus draws a
+   weak-side seam beating a collapse. Cheap: two attackers, one cross-ice pass, one seam route.
+2. `offensive_zone_play.md` §10 — **F3's job** after a shot. ⚠️ The prose carries three
+   coaching-choice variants; **draw only the default shape or it ships thin.**
+3. `risk_management.md` §4 — **never both defencemen to the puck** (*"no one — literally no one —
+   between the puck and your goalie"*). Four labelled elements.
+4. `defending_the_rush.md` — **3-on-1**. Marginal, and the fork said so: the prose may already be
+   self-explanatory.
+
+**Zero DRAW candidates in `technique/`** — consistent with `body_contact_and_battles.mjs`'s own
+header (*"MOST OF IT IS UNDRAWABLE… not an oversight"*) and with `puck_handling.md` and `skating.md`
+correctly owning zero diagrams, which is a documented decision rather than a gap.
+
+### ⚠️⚠️ AND A GENERALISATION OF THIS ROUND'S CRITICAL, FOUND WHILE VETTING
+
+**A system diagram is voiced as an instruction to the team RUNNING that system.** So borrowing
+`forecheck-212` or `oz-cycle-rim` into a section that teaches the **opposing** team — `breakouts.md`
+*"Against a 2-1-2"*, `defensive_zone_coverage.md` *"The cycle"* — **would misdirect the reader
+exactly as `goalie-rim-stop-or-clear` did in `defender.md`**, where a goaltender-voiced caption told
+a defenceman to get out of the way of a puck his own section tells him to fetch.
+
+⚠️ **Those borrows are topically perfect and were downgraded to SKIP for this reason alone.** This
+is the borrowed-caption rule sharpened: it is not enough that the caption stands alone — **it must
+address the reader of the hosting section, and a system diagram addresses the side running the
+system.** Belongs in the style guide beside the existing rule.
+
+**Also flagged, owned by nobody:** `special_teams.md`'s *"Power play zone entries"* and
+`zone_entries.md`'s *"On the power play"* are a mutual gap — each defers to the other.
+
+**Budget:** 4 DRAW + 10 BORROW ≈ 3,550 caption words ≈ **+0.33 points**, landing near **8.5%** with
+D3's two. Clear of the 10% ceiling, and that is the whole of Tier 0-D's remaining drawing work:
+**6 new diagrams and ~10 borrows, one wave.**
+
+### ⚠️⚠️ D3 RESOLVED — 2 DIAGRAMS, NOT 30. THE OVERVIEW GAP WAS MOSTLY ALREADY FILLED
+
+All 31 in-scope documents assessed against the precondition review added to the pilot: *an Overview
+diagram is only worth its cost where the page-defining situation is not already drawn in the same
+document.* Result: **2 DRAW, 0 BORROW, 29 SKIP.**
+
+**Twenty-nine documents already draw their own page-defining idea** — `risk_management.md` has
+`the-risk-map`, `breakouts.md` has `breakout-five-roles`, `defensive_zone_coverage.md` has
+`dz-the-house`, `puck_support_and_spacing.md` has `support-in-a-line`/`support-triangle`,
+`goaltender.md` has `goalie-playing-the-angle`. Adding an Overview marker to any of them would voice
+the same caption twice in one listen — the ground on which `center.mjs`'s own header had already
+declined one.
+
+**The two that survive:**
+
+| document | why | hedge its caption must carry |
+|---|---|---|
+| `systems/forechecking_systems.md` | **angling** — which its own *Note on Language* calls *"the foundation of everything below"* — is never drawn; the five-system set and the F1/F2/F3 rotations all draw shapes, not the skill under them | which side you angle to is a coaching default, not a rule |
+| `technique/skating.md` | the Overview's *"one instruction outranks all of it"* — approach the boards on an angle, several strides out — is undrawn; the file has **one marker in ~900 lines** | none: this is a stated safety rule, not a system, like `net-front-walk-out-direction` |
+
+⚠️ **Both verdicts were CONTESTED and the agent said so rather than presenting consensus.** Four
+independent passes split 2–2 on `forechecking_systems` and 4–1 toward SKIP on `skating`; both were
+broken toward DRAW on the documents' own explicit page-defining language. **A different adjudicator
+could keep either at SKIP.** Neither has had a `diagram-reviewer` pass, and the pilot itself shipped
+three caption defects found only after drawing.
+
+**Cost: 7.96% → ≈7.98% of spoken text** — about 1% of the remaining headroom to the 10% ceiling.
+
+### ⚠️ THE PATTERN, NOW THIRD-CONFIRMED: THE DIAGRAM GAP WAS A WIRING GAP
+
+| premise | inspected |
+|---|---|
+| `positions/` needs diagrams — 93 census gaps | **0 new**; 11 markers wired to existing diagrams |
+| `goaltender.md` needs 41 | **0** — body mechanics, doctrine, or already drawn |
+| every document needs an Overview — 31 | **2** |
+
+⚠️ **The census counts headings without a marker. It does not count sections that need a picture,
+and the difference is most of it.** The owner's complaint was real and correctly reported; what it
+was evidence of was **that this corpus does not point at the diagrams it has** — a cheaper and
+safer repair than drawing, and the one that has now been made three times.
+
+**Two side-findings, both D1 wiring rather than D3:** `skating.md` has an unwired borrow its own
+module header already vetted (`angle-into-the-corner`, for *Arriving at the boards*), and
+`rink_map_and_glossary.md`'s `rink-map-full` could move nearer its Overview at zero caption cost.
+
+### ⚠️ SUPERSEDED — D3 pricing, kept for its arithmetic only
+
+⚠️ **This block prices ~30 Overview diagrams and says to build and review the pilot before drawing
+them. BOTH are now overtaken by the section above: the pilot IS built and reviewed, and the audit
+returned 2 DRAW, not 30.** The per-caption arithmetic below is still sound and is why the two are
+affordable; the count is not. **Do not act on this block.**
+
+#### D3 affordability, as priced 6 September 2026
+
+After today's diagram work the corpus stands at **84,616 caption words against 978,020 body words,
+7.96% of spoken text, 9.4 hours.** ⚠️ **An earlier draft of this line said 84,187 / 945,141 / 8.2%.
+The body figure was measured BEFORE the two A2 reverts restored 190k characters to `rules_primer.md`
+and `faceoffs.md`, so it understated the denominator by 33,000 words and inflated the share.** Adding
+the remaining ~30 Overview diagrams:
+
+| at the pilot's 624 chars | at the 800-char brief cap | at the legacy 1,303 median |
+|---|---|---|
+| **8.2%** (9.8 h) | 8.3% (9.9 h) | 8.6% (10.2 h) |
+
+**All three fit under the 10% ceiling** — so D3 is go, and the caption budget is the reason. ⚠️ **At
+the legacy median it would consume roughly twice the headroom of the pilot's length for the same
+30 pictures**, which is the whole argument for the 800-char cap in one line.
+
+**Blocking condition, unchanged:** the pilot has never been rendered and no `diagram-reviewer` has
+seen it. **Build and review the pilot before drawing the other 30** — it is the first of its kind
+and there is no sibling to check it against.
+
+### ✅ D3 DESIGN SETTLED 6 September 2026 — and the coordinator's hypothesis was REFUTED
+
+The pilot (`defender-pair-overview`, in `site/src/diagrams/defender.mjs`) is drawn. **The dispatcher
+proposed a full-sheet MAP OF REGIONS — one drawn moment per zone — and the agent rejected it**,
+on two grounds that generalise to all 31:
+
+1. ⚠️ **The caption budget kills the map.** A three-zone map must state three distinct jobs, and
+   **each carries its OWN mandatory coaching-choice hedge** (low zone collapse vs man-on-man; the
+   step-up/pinch risk; how far to activate). The cardinal rule forbids dropping any of them, and
+   three jobs plus three hedges **cannot fit a caption budget** without shipping at least one
+   bare-looking law of hockey. **The hedge count, not the picture, is what makes a summary diagram
+   hard.**
+2. **The Overview's own prose is not organised by zone**, even though the document below it is. Its
+   facts lines are four ideas drawn from across the whole document.
+
+**So the design rule for the remaining 30 is: draw the ONE page-defining idea as a single
+representative situation, not a map of everything the page covers.** For `defender.md` that is the
+pair — strong side engages the puck, weak side holds the goalmouth, swap when the puck crosses the
+middle — which is also the idea that supplies the strong-side/weak-side vocabulary every other
+section reuses.
+
+**Caption: 624 characters**, against a corpus median of 1,303, carrying the full
+low-zone-collapse-vs-man-on-man hedge and naming the alternative. **It reuses geometry already
+clearance-verified in `positions.mjs` rather than re-deriving it**, and deliberately adds no shaded
+zone, so `check_zones.py` gains no new cross-diagram row for no teaching gain.
+
+⚠️ **Still open on the pilot:** the marker is NOT yet in `content/positions/defender.md` (that file
+was owned by a live D1 agent), it has never been RENDERED, and no `diagram-reviewer` or
+`content-reviewer` has seen it. **It is the first of its kind, so there is no sibling to check it
+against** — the design above is reasoned, not yet validated by a reviewer. **Do not draw the other
+30 until this one has been rendered and reviewed.**
 
 ### ⚠️ D3 — OVERVIEW DIAGRAMS: censused 6 September 2026, and the scope is 31, not 37
 
@@ -5816,6 +6218,53 @@ and it matters as much as the others, because a round spent de-duplicating this 
 wasted.
 
 ---
+
+### ✅ `check_pointers` run 6 September 2026 — 2 hits, BOTH deliberately not fixed
+
+`playing_without_the_puck.md:66` ends *"Both computations are set out in full in the written Notes
+on verification section"* — and the speech renderer drops that section, so a listener is pointed at
+something they never hear.
+
+**Left as is, deliberately.** The disclosure's substance is **already voiced inline in the three
+sentences immediately before it**: *"Neither of those is a published figure"*, both derivations
+named (Hockey Reference's skater table; the NHL shift-chart API across a small sample chosen for
+convenience), and *"not on the same footing as the peer-reviewed possession data above."* **Nothing
+a listener needs is behind the pointer.** And the pointer is correct for the web page, where the
+section renders — which the tool's own guidance calls legitimate.
+
+⚠️ **Deleting it would cost a web reader a real signpost to fix a listener's mild redundancy, and
+the sentence it points at is an honest disclosure** — precisely the shape non-negotiables 3 and 4
+protect. **This is the "read every hit, do not sweep" case, recorded so the next run does not
+re-open it as unaddressed.**
+
+The second hit, `rules_primer.md`, is a *"table that may be a pointer"* in a mixed document the tool
+says it cannot disambiguate — that file is currently held by an A2 agent, so it is deferred rather
+than judged.
+
+### ⚠️ R7 — THE LISTENING-SIDE READABILITY ITEM, and TWO TABLES SIT AT ZERO HEADROOM
+
+`check_tables.py`, run 6 September 2026: **2 dropped, 46 read aloud, 9 within one edit of being
+dropped.** A large improvement on the 20-against-26 measured when the tool was introduced.
+
+**The two dropped are both legitimately wide six-column comparisons** — `rules_primer.md:843`
+(NHL / IIHF / Home Countries / USA Hockey, 23 rows, one cell of 2,448 chars) and
+`defensive_zone_coverage.md:367` (the four coverage systems side by side). **These are the case the
+tool's own warning calls correct**: a wide comparison cannot be read aloud and the corpus voices the
+substance inline instead. ⚠️ **Nobody has verified that it actually does so for these two**, and
+the tool cannot. That check is the open work here, not "fix the tables."
+
+⚠️ **Two tables have ZERO rows of headroom — one added row and the listener silently loses the whole
+table:** `foundation/rules_primer.md:751` (*Situation | Where the draw goes*) and
+`technique/body_contact_and_battles.md:60` (*League / level | Body checking? | Source*) — **the
+league-level body-checking table, which is safety-bearing, and which a live agent edited today.**
+
+⚠️ **This is the first LISTENING-side readability item on this plan.** R0, R1 and R6 were all
+measured to be page-side only: bullet splits changed the audio by exactly nothing, and bold is not
+voiced. **R5 (caption load) and R7 are the two that a listener actually experiences** — and both
+came from tools, not from reading, because a document-level grep cannot see either.
+
+**Standing risk, not a task:** a zero-headroom table means any future repair that adds a row is a
+silent regression that every gate passes. `--near` lists them; run it after any table edit.
 
 ### ⚠️⚠️ R0/R1 MEASURED CONSEQUENCE — THE ELEVEN SPLITS CHANGED THE AUDIO BY EXACTLY NOTHING
 
@@ -6081,7 +6530,7 @@ not checked.**
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,150,063 words — 87.1 hours of
+These outrank everything below. The corpus is **37 documents and 1,140,139 words — 86.4 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure
@@ -12061,6 +12510,15 @@ middle with your head up — it is the lane where open-ice contact happens."* �
 two; a CLAIM-READ finds four**, because `:281` and `:734` state it in the same words without the exact
 string. **The row would have under-covered when someone worked it — and it survived for exactly the
 reason `T0-41` names: it did not look like a defect, it looked like the document being consistent.** ⚠️ **Its nearest sourced neighbour carries a hedge it has never carried:**
+
+⚠️ **INSTANCE FIVE, 6 September 2026 — and it is the coordinator's, inside the round that filed this row.**
+I recorded *"a repair is new text and has not been reviewed"*, wrote eighteen repairs, sent them for audit — and
+the audit found **nine defects the repairs created**, including a **non-negotiable 3 deletion**: fixing a stick-length
+error, I named three books correctly and **deleted the IIHF's figure, which HEAD carried and which is the book British
+readers play**, leaving a headline claim that is false for exactly them. ⚠️ **I had verified every book I NAMED against
+primary text. I never checked the one I dropped.** The audit's own closing line is the lesson: *"I verified that what
+remains is true, not that what was removed was safe to remove."* **Verifying what you wrote is not checking what you
+removed** — and a repair diff needs a deletion pass, not only an assertion pass.
 `neutral_zone_systems.md:60` — *"Coaching material puts the making of odd-man rushes in the middle
 third — **consensus rather than a tracked figure**."*
 

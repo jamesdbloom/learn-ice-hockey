@@ -1072,6 +1072,478 @@ const middleDrive = {
   ],
 };
 
+// ---------------------------------------------------------------------------
+// 12. The trail-skate drag — section 2.
+//
+// FIVE NEW DIAGRAMS FOLLOW, ADDED IN ONE PASS TO CLOSE A COVERAGE GAP: sections
+// 2, 3 (one subsection), 6, 10 and 11 had no rink diagram at all despite being
+// some of the most spatial material in the document. Chosen over other
+// candidates in those sections for a stated reason each — see the comment
+// above every diagram below. Section 1 (the Tulsky findings) is not drawn: it
+// is a shot-rate argument, not a spatial one, and a rink picture would not
+// teach it. Section 8's forechecking angle is not redrawn: this file's own
+// header above already records two failed attempts and the reason (angling is
+// movement over time). Section 9's gap-distance scale is not redrawn either:
+// [Defending the Rush] owns that scale in words, and this document says so.
+//
+// ⚠️ GEOMETRY NOTE FOR ALL FIVE: placements below are checked BY HAND against
+// site/src/data/rink.json and against the glyph radii recorded in that file's
+// $comment fields (forward circle r 2.9, defenceman triangle circumradius 3.6,
+// both plus stroke) — not against a live render, because this session was
+// told not to run build-diagrams.mjs (the coordinator owns builds and a
+// concurrent build races destructively). Every clearance noted below is an
+// estimate from the coordinate table, not a measured render. Confirm with
+// check_geometry.py, a rebuild and diagram-reviewer before treating any of
+// this as settled.
+//
+// THE PLAY: you are the far-side winger, a stride ahead of the puck carrier.
+// Your body, hands and stick are already across the blue line; only your
+// trailing skate is still legal ice. This diagram draws the universally-legal
+// version of that instant — the blade gliding ON the twelve-inch painted line,
+// which is onside in all four rulebooks — rather than the airborne version,
+// which is legal under only two of them and cannot be drawn as a single frozen
+// position without asserting a moment mid-air that a still picture cannot
+// honestly place. The caption carries the book split in words instead.
+//
+// RULE TEXT VERIFIED THIS SESSION, grepped fresh rather than carried from the
+// prose above (which was itself independently re-checked, not merely trusted):
+//   sources/nhl_rules.txt:8812-8821 — "A player is off-side when both skates
+//     are completely over the leading edge of the blue line... A player is
+//     on-side when either of his skates are in contact with the blue line, or
+//     on his own side of the line, at the instant the puck completely crosses
+//     the leading edge... For the purposes of this rule, a 'skate' is to be
+//     considered the blade of the skate only... If a player's skate has yet to
+//     break the 'plane' prior to the puck completely crossing the leading
+//     edge, he is deemed to be onside."
+//   sources/iihf_rules.txt:6824-6831 (2025/26 book) — the same both-skates and
+//     one-skate tests, word for word, and NO blade-only sentence in this
+//     edition.
+//   sources/iihf_rules_2026-27.txt:6930-6946 — the 2026/27 book, which DOES
+//     add "a 'skate' is to be considered the blade of the skate only."
+//   sources/nhl_rules.txt:791 — "twelve inches (12'') in width, and blue in
+//     color" for the zone-dividing lines, confirming the line a trailing skate
+//     may touch is a foot wide, not a mark.
+//   sources/usah.txt:4664-4666 — Rule 630(a): "A player is considered
+//     'offside' when the player does not have skate contact with any part of
+//     the Neutral Zone or the blue line when the puck crosses the determining
+//     edge of the blue line" — a contact test, not a plane test.
+//   sources/hc.txt:5375-5377, 5475-5478 — Rule 6.11's "Only the player's
+//     skate(s) that are in physical contact with the ice surface will be used
+//     in determining an off-side," and Interpretation 3 to 6.11(a) in terms:
+//     "A player has one skate above the blue-line (not touching the ice) and
+//     one skate over the blue-line at the instant the puck completely crosses
+//     the blue-line. OFF-SIDE."
+// So: NHL and IIHF both let the trailing skate leave the ice without breaking
+// the vertical plane; USA Hockey and Hockey Canada require actual contact.
+// Two books of four, confirmed independently rather than carried from the
+// prose above it.
+// ---------------------------------------------------------------------------
+
+const DRAG_WINGER = { at: 'blue-line', dy: 28 };          // (25, 28)
+const DRAG_CARRIER = { at: 'blue-line', dx: -7, dy: 20 }; // (18, 20)
+// Standing up at their own blue line — separated from the winger's lane by 16
+// ft of y so the "head up" point reads as a general hazard of the entering
+// zone rather than a claim that this specific defenceman is about to hit this
+// specific winger, which is not what the section says.
+const DRAG_D = { at: 'blue-line', dx: 3, dy: 12 };        // (28, 12)
+
+const trailSkateDrag = {
+  id: 'entry-trail-skate-drag',
+  owner: 'content/systems/zone_entries.md',
+  title: 'The trail-skate drag',
+  half: true,
+  width: 900,
+
+  caption:
+    'The trail-skate drag, drawn at the instant the puck is still a stride short of the line. ' +
+    "The far-side winger's body, hands and stick are already in the attacking zone; only the " +
+    'trailing blade is still on the paint, which keeps them onside everywhere, because a skate ' +
+    'touching any part of the twelve-inch blue line counts as contact with it. The instant the ' +
+    'puck completely crosses, the blade comes down and pushes through into the zone. Under the ' +
+    'NHL and the IIHF, that trailing skate could instead be lifted, held behind the plane of the ' +
+    'line without breaking it, and still be legal; under USA Hockey Rule 630(a) and Hockey ' +
+    'Canada Rule 6.11 an airborne skate is offside, so keep it on the ice under those two books. ' +
+    'The defenceman standing up at the line is exactly why the head stays up: the ' +
+    "winger's body crosses before the skate does.",
+
+  describe:
+    'The attacking half of the rink, opposition net at the right. An own forward — the far-side ' +
+    'winger — is on the blue line, body, stick and hands already inside the attacking zone, with ' +
+    'a short route continuing on into the zone at speed. A second own forward, the puck carrier, ' +
+    'is a stride behind, still short of the line, with the puck. An opposition defenceman stands ' +
+    'up at the blue line, well clear of the winger, and the opposition goaltender is in the crease.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'D', team: 'opp', pos: 'D', at: DRAG_D, label: 'standing up at the line' },
+    { id: 'F', pos: 'F', at: DRAG_WINGER, label: 'trail skate on the paint' },
+    { id: 'F', pos: 'F', at: DRAG_CARRIER, label: 'carrier, a stride behind' },
+  ],
+
+  // Not numbered: both routes happen in the same instant, not in sequence.
+  routes: [
+    // The push-through after the puck crosses. Ends well clear of DRAG_D
+    // (dy separation stays above 15 throughout), so this does not read as
+    // closing on him.
+    { from: DRAG_WINGER, to: { at: 'blue-line', dx: 10, dy: 32 }, kind: 'skate' },   // (35, 32)
+    // Stops short of the line by hand: 3 ft, "still a stride short of it".
+    { from: DRAG_CARRIER, to: { at: 'blue-line', dx: -3, dy: 22 }, kind: 'carry' },  // (22, 22)
+  ],
+
+  // ⚠️ WAS dx -8, dy 21, i.e. (17, 21) — 1.41 ft from DRAG_CARRIER's own centre
+  // (18, 20), an own-team forward: the puck landed inside his open ring and
+  // collided with his own label letter. Moved to (23, 20), 5.0 ft clear — ahead
+  // of him along the direction of his own carry rather than on top of him.
+  puck: { at: 'blue-line', dx: -2, dy: 20 },   // (23, 20)
+};
+
+// ---------------------------------------------------------------------------
+// 13. The drop pass — section 6.
+//
+// Section 6 had no diagram at all. A drop pass is inherently about a puck
+// left in empty ice and a body arriving on it from a different angle than the
+// one the defence is watching — exactly the kind of thing a still picture
+// teaches better than prose can.
+//
+// THE FROZEN INSTANT is just after the drop: the puck sits alone, the carrier
+// has already released it and is driving on as a decoy, and the trailer is
+// still arriving. Drawing the moment of release itself would put two players
+// on top of one puck; drawing it a beat later, as here, is the same
+// convention `entry-three-lanes` above uses ("drawn at the instant...").
+// ---------------------------------------------------------------------------
+
+const DROP_PUCK_AT = { at: 'blue-line', dx: -10, dy: 5 };   // (15, 5)
+const DROP_CARRIER = { at: 'blue-line', dx: -3, dy: 9 };    // (22, 9)
+const DROP_TRAILER = { at: 'blue-line', dx: -20, dy: -12 }; // (5, -12)
+
+const dropPass = {
+  id: 'entry-drop-pass',
+  owner: 'content/systems/zone_entries.md',
+  title: 'The drop pass',
+  half: true,
+  width: 900,
+
+  caption:
+    'A drop pass approaching the line, attacking net at the right. The carrier has already left ' +
+    'the puck rolling in the neutral zone, still short of the blue line, and drives on alone as ' +
+    'a decoy — taking a defenceman with him rather than coasting. A trailing teammate, arriving ' +
+    'from the far side with more speed than the defence has matched, skates onto the loose puck ' +
+    'to carry it in himself. The drop is to a space, not to a stick: the receiver has to be seen ' +
+    'and already moving before the puck is left. It answers one specific picture, a trailing ' +
+    'teammate with room and speed behind you, and is not a default read. Dropped blind, with no ' +
+    'trailer in sight, this is the worst turnover in hockey — a stationary puck left facing your ' +
+    'own net.',
+
+  describe:
+    'The attacking half of the rink, opposition net at the right. A puck sits alone in the ' +
+    'neutral zone, short of the blue line. An own forward who has just released it is already ' +
+    'past it, angling on toward the blue line and into the zone as though he still carries it. A ' +
+    'second own forward is well back and to the far side, with a long route arriving from behind ' +
+    'toward the loose puck, stopping just short of it. Two opposition defencemen are positioned ' +
+    'toward the side the first forward is driving into, and the goaltender is in the crease.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 8, dy: 10 } },   // (33, 10)
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 9, dy: -6 } },   // (34, -6)
+    { id: 'F', pos: 'F', at: DROP_CARRIER, label: 'drove on as the decoy' },
+    { id: 'F', pos: 'F', at: DROP_TRAILER, label: 'arriving, has not touched it yet' },
+  ],
+
+  routes: [
+    // ⚠️ WAS dy: 14, i.e. (39, 14) — a straight skate whose closest approach to the
+    // opposition D at (33, 10) was 2.14 ft (at t = 0.61 along the chord), well
+    // inside his 4.0 ft of triangle ink (3.6 circumradius plus half his 0.8
+    // round-joined stroke — read off the glyph branches in rink.mjs, and the same
+    // figure rink.json's `point` $comment derives). The line vanished under his
+    // glyph and the arrowhead re-emerged the far side: a decoy skating through a
+    // defenceman rather than past him — the only skate route in the corpus doing
+    // that, per this round's diagram review. Steepened to dy: 20: closest approach
+    // to (33, 10) is now 5.14 ft (t = 0.48), clear of the ink by more than a foot.
+    // The tip (39, 20) is 11.66 ft from him, outside ARRIVAL.noArrow, so
+    // check-arrivals.mjs's verdict is unchanged (still no finding on this route).
+    { from: DROP_CARRIER, to: { at: 'blue-line', dx: 14, dy: 20 }, kind: 'skate' },   // (39, 20)
+    // Stops about 5 ft short of the puck by hand (12,1) to (15,5) — arriving,
+    // not yet on it, matching the label.
+    { from: DROP_TRAILER, to: { at: 'blue-line', dx: -13, dy: 1 }, kind: 'skate' },   // (12, 1)
+  ],
+
+  puck: DROP_PUCK_AT,
+};
+
+// ---------------------------------------------------------------------------
+// 14. The high triangle — section 3, "Entering with numbers".
+//
+// Four named 2-on-2 / 3-on-2 patterns are listed in that subsection and none
+// is drawn. This is the one chosen, not all four: high triangle is the
+// cleanest single frame for the section's own point — "arriving with an
+// extra attacker is worth nothing unless it makes one defender responsible
+// for two of you" — because it can show the cue (a defender committing to the
+// wide driver) and the three roles at once without a route finishing on
+// anyone. Midlane drive and triple drive both resolve to a driver arriving at
+// the net, which this corpus does not draw for the reason `entry-middle-drive`
+// above already states; drive-and-delay is the same turn `entry-delay-curl`
+// already teaches, executed faster, per the body text's own cross-reference.
+// ---------------------------------------------------------------------------
+
+const TRI_CARRIER = { at: 'blue-line', dx: -5, dy: 32 };   // (20, 32)
+const TRI_WIDE = { at: 'blue-line', dx: -5, dy: -32 };     // (20, -32)
+const TRI_TRAILER = { at: 'blue-line', dx: -18, dy: 0 };   // (7, 0)
+// Current position, partway through the shift toward the wide driver already —
+// the route's own `from`, so check-arrivals can attribute the arrow to him
+// rather than skipping it as ownerless.
+const TRI_D_NEAR = { at: 'blue-line', dx: 10, dy: 12 };    // (35, 12)
+
+const highTriangle = {
+  id: 'entry-high-triangle',
+  owner: 'content/systems/zone_entries.md',
+  title: 'The high triangle',
+  half: true,
+  width: 900,
+
+  caption:
+    'The high triangle, one of several named ways to enter with an extra attacker — drawn here ' +
+    'with the puck carrier driving wide, a second attacker driving wide on the far side with no ' +
+    'puck, and the third trailing into the high slot. The read is whether a defenceman goes with ' +
+    'the wide driver: here the near one shifts to cover him, which is what opens the shot, the ' +
+    'pass across, or the drop behind for the trailer. A third attacker is worth nothing unless it ' +
+    'makes one defender responsible for two of you — that single movement is the cue, not a ' +
+    'route to memorise. Which named pattern your team actually runs — high triangle, midlane ' +
+    'drive, triple drive, drive and delay — is a coaching choice, and most teams drill one or two ' +
+    'rather than all of them, so ask rather than assume this is the one you will see.',
+
+  describe:
+    'The attacking half of the rink, opposition net at the right. Three own forwards approach ' +
+    'the blue line: the puck carrier drives wide on the near side, a second forward without the ' +
+    'puck drives wide on the far side, and a third trails through the middle toward the high ' +
+    'slot. Two opposition defencemen are inside the zone; the nearer one has a short route ' +
+    'sliding toward the side the puck carrier is driving into, and the farther one holds a ' +
+    'central position. The goaltender is in the crease.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'D', team: 'opp', pos: 'D', at: TRI_D_NEAR, label: 'goes with the wide driver' },
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 10, dy: -8 } },  // (35, -8)
+    { id: 'F', pos: 'F', at: TRI_CARRIER, label: 'drives wide, has the puck' },
+    { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck' },
+    { id: 'F', pos: 'F', at: TRI_TRAILER, label: 'trails to the high slot' },
+  ],
+
+  // Not numbered: three players arriving together, the same convention
+  // `entry-three-lanes` above states in terms.
+  routes: [
+    { from: TRI_CARRIER, to: { at: 'top-of-circle:right', dy: 10 }, kind: 'carry' },  // (54, 32)
+    { from: TRI_WIDE, to: { at: 'top-of-circle:left', dy: -10 }, kind: 'skate' },     // (54, -32)
+    { from: TRI_TRAILER, to: { at: 'high-slot', dx: -8 }, kind: 'skate' },            // (61, 0)
+    // The near defenceman's continued shift toward the wide driver — an 8 ft
+    // lateral slide, the same order of magnitude as `outsideShoulder`'s
+    // defenceman route above (9.4 ft) for the same reason: a weight shift,
+    // not a journey. Starts AT his own glyph (TRI_D_NEAR), not at a bare
+    // point, so check-arrivals can attribute it.
+    { from: TRI_D_NEAR, to: { at: 'blue-line', dx: 10, dy: 20 }, kind: 'skate' },     // (35,12)->(35,20)
+  ],
+
+  // ⚠️ WAS dx -6, dy 31, i.e. (19, 31) — 1.41 ft from TRI_CARRIER's own centre
+  // (20, 32), an own-team forward: the puck landed inside his open ring and
+  // collided with his own label letter. Moved to (20, 37), 5.0 ft clear — wide of
+  // him toward the boards rather than on top of him.
+  puck: { at: 'blue-line', dx: -5, dy: 37 },   // (20, 37)
+};
+
+// ---------------------------------------------------------------------------
+// 15. Against a standing-up defence — section 10.
+//
+// Section 10 had no diagram at all, and it is the section the coordinator's
+// brief named as the likely biggest gap: entering against a named defensive
+// STRUCTURE, which is exactly what a rink picture is for. Of its four
+// subsections (standing-up, 1-3-1, aggressive gap, power play), this one is
+// chosen: the 1-3-1 structure is already drawn in full at `dump-flip-over-trap`
+// above (one forechecker, three across, one back, and the flip going over
+// it), and re-drawing it here would be the padding the brief warns against,
+// not a second teaching point. Aggressive gap and the power play are both
+// closer to a technique (change of pace; four across the line) than to a
+// structure with a shape.
+//
+// TWO ANSWERS ARE DRAWN, NOT ALL FOUR THE SUBSECTION NAMES, chosen because
+// together they cover ground no other diagram in this file does: the chip
+// here is deliberately plain — no bowed swing-around — because
+// `dump-chip-past` above already owns the detailed mechanic of a chip past a
+// defenceman, and that defenceman is committing forward, not standing still.
+// Drawing the same S-curve against a stationary defenceman would look like
+// the same diagram twice for a different caption, which is exactly the
+// clobbering-by-duplication this corpus's own conventions warn against. The
+// late, unmarked fourth attacker is not drawn anywhere else in this file, so
+// it carries the diagram's real weight. Attacking the seam between the two
+// defencemen is not drawn here either: `attack-the-seam` (in a sibling
+// module) already owns that shaded-lane shape, per the header comment on
+// `entry-outside-shoulder` above, and `check_zones.py` groups shaded regions
+// by label, so a second lane under a similar description would read as a
+// disagreement rather than a second instance.
+// ---------------------------------------------------------------------------
+
+// ⚠️ MOVED from (27, 10). At that position — "close to the middle of the ice" per
+// the old `describe` below — he was never in the wide attacker's path: the chip
+// and the carrier's own route both passed more than 20 ft clear of him (measured
+// this round, diagram review), so the caption's "chips it past him" and the
+// describe's "curls around... to collect it" had no defenceman to be about.
+// Repositioned into the lane the wide attacker (STAND_CARRIER) is actually
+// skating, off toward the boards; his partner (STAND_D2, below) stays central.
+const STAND_D1 = { at: 'blue-line', dx: 3, dy: 23 };    // (28, 23)
+const STAND_D2 = { at: 'blue-line', dx: 2, dy: -10 };   // (27, -10)
+const STAND_CARRIER = { at: 'blue-line', dx: -6, dy: 28 };  // (19, 28)
+const STAND_LATE = { at: 'blue-line', dx: -20, dy: -25 };   // (5, -25)
+
+const vsStandingUp = {
+  id: 'entry-vs-standing-up',
+  owner: 'content/systems/zone_entries.md',
+  title: 'Against a standing-up defence',
+  half: true,
+  width: 900,
+
+  caption:
+    'A defence standing up at the blue line rather than backing in — one structure among ' +
+    'several you will meet, holding the line level to take away the middle and daring you to go ' +
+    'around it. Two answers at once: the wide attacker chips the puck past his stationary ' +
+    'defenceman, who has no backward momentum to recover, and skates around to collect it — the ' +
+    'ideal chip situation, because standing still leaves nothing to use against him — while a ' +
+    'fourth attacker arrives late and unmarked well behind the play, because standing up means ' +
+    'both defencemen are watching the puck rather than the ice behind it. Attacking the seam ' +
+    'between the two of them, or swinging the puck to the weak side, are the other two answers ' +
+    'to this same look and are not drawn here.',
+
+  describe:
+    'The attacking half of the rink, opposition net at the right. Two opposition defencemen ' +
+    'stand at the blue line without backing in: the near one is positioned in the wide ' +
+    "attacker's own lane, out toward the boards, and his partner holds centrally, denying the " +
+    'middle. An own forward with the puck is near the blue line on the near side; a dashed ' +
+    'route chips the puck past the near defenceman, staying wide toward the boards, and the ' +
+    "forward's own route curls in front of him and back out to the boards to collect it. A " +
+    'fourth own forward, well back in the neutral zone on the far side, has a long route ' +
+    'arriving unmarked near the top of the far faceoff circle. The goaltender is in the crease.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'D', team: 'opp', pos: 'D', at: STAND_D1, label: 'holds the line, no momentum' },
+    { id: 'D', team: 'opp', pos: 'D', at: STAND_D2, label: 'holds the line' },
+    { id: 'F', pos: 'F', at: STAND_CARRIER, label: 'chips it past him' },
+    { id: 'F', pos: 'F', at: STAND_LATE, label: 'late, unmarked' },
+  ],
+
+  routes: [
+    // ⚠️ MEASURED AND REDRAWN this round. The chip used to run (21,30)->(41,36) and
+    // the carrier's own route (19,28)->(35,30) — both more than 20 ft from STAND_D1
+    // at its old position (27,10), so neither the chip nor the "curls around... to
+    // collect it" of this diagram's own `describe` had a defenceman to pass or curl
+    // around; see the note on STAND_D1 above. He now sits in the wide attacker's own
+    // lane (28,23). The chip clears him by 8.67 ft (bow 3, closest approach at
+    // t = 0.12) — genuinely past him, not merely elsewhere in the picture — and the
+    // carrier's route bows inside him at 5.01 ft (bow -3, t = 0.32) before swinging
+    // back out to the boards to collect it, which is the curl the `describe` claims.
+    // Both clearances exceed his 4.0 ft of triangle ink (3.6 circumradius plus half
+    // his 0.8 round-joined stroke).
+    { from: { at: 'blue-line', dx: -3, dy: 30 }, to: { at: 'blue-line', dx: 25, dy: 35 },
+      kind: 'pass', bow: 3 },   // (22,30) -> (50,35)
+    { from: STAND_CARRIER, to: { at: 'blue-line', dx: 20, dy: 32 }, kind: 'skate', bow: -3 },  // (45, 32)
+    // The long arrival: 5 ft off the frame's left edge by hand, the same
+    // minimum `entry-outside-shoulder` above settles on and for the same
+    // reason (2 ft clipped the frame there).
+    { from: STAND_LATE, to: { at: 'top-of-circle:left', dy: -6 }, kind: 'skate' },    // (54, -28)
+  ],
+
+  puck: { at: 'blue-line', dx: -3, dy: 29 },   // (22, 29)
+};
+
+// ---------------------------------------------------------------------------
+// 16. Squash-and-slide — section 11, "More aggressive alternatives".
+//
+// Section 11 had no diagram at all. Squash-and-slide is chosen over the other
+// named defensive options in that subsection (F1 pressure with the D holding
+// the dots; standing up at the line, drawn from the other side already at
+// `entry-vs-standing-up` above; receiving the entry) because its own
+// mechanism — two defencemen holding one depth and sliding across together
+// "like a foosball bar" — is the one description in the whole document that
+// is close to meaningless without a picture. A reader can act on "hold your
+// depth, stand up, mark the dots" from words alone; "move like a foosball
+// bar" is a simile for a shape, and shapes are what this format is for.
+//
+// TEAM LABELS ARE THE OTHER WAY ROUND FROM EVERY DIAGRAM ABOVE, ON PURPOSE.
+// Sections 1-10 teach the reader as the attacker, so `own` attacks throughout
+// this file. Section 11 is explicitly "everything above, from the other
+// side" — the reader is defending here — so `own` is the defending pair and
+// `opp` is the puck carrier. `notation.mjs`'s own rule is shape-for-position,
+// fill-for-team, open-for-your-own-team: "your own team" means the reader's
+// team in whatever role the section has them playing, not "the attacker" by
+// default, so this is not a departure from the convention, only from this
+// file's own habit so far.
+// ---------------------------------------------------------------------------
+
+const SLIDE_CARRIER = { at: 'blue-line', dx: -8, dy: 25 };  // (17, 25)
+// All three own-team positions below are the CURRENT glyph position, and each
+// is its own route's `from` — the convention `delayCurl`'s DELAY_SUPPORT above
+// sets (glyph position and route start are the same object) — so
+// check-arrivals can attribute every arrow rather than skipping it as
+// ownerless. Each arrow then shows the direction of continued travel.
+const SLIDE_D_NEAR = { at: 'blue-line', dx: 8, dy: 12 };    // (33, 12)
+const SLIDE_D_FAR = { at: 'blue-line', dx: 8, dy: -22 };    // (33, -22)
+const SLIDE_F = { at: 'blue-line', dx: 30, dy: -8 };        // (55, -8)
+
+const squashAndSlide = {
+  id: 'defend-squash-and-slide',
+  owner: 'content/systems/zone_entries.md',
+  title: 'Squash-and-slide',
+  half: true,
+  width: 900,
+
+  caption:
+    'You are defending here: squash-and-slide, one of several named ways to receive an entry — described publicly of ' +
+    "Bruce Cassidy's Boston Bruins around 2018-19, not a universal system. The two defencemen " +
+    'hold the same depth and slide across together like a foosball bar: the puck is on the near ' +
+    'side here, so both slide toward it, the near one forcing the carrier outside while the far ' +
+    'one holds square rather than dropping off deep. The first forward back does not join that ' +
+    'pressure — his job is the slot, protecting the middle while the pair squashes the play to ' +
+    'the wall. It buys time and space at a cost: one player sliding late, or a lazy backcheck ' +
+    'leaving the slot, and the weak side is wide open. Standing up at the line, or receiving the ' +
+    'entry with the defencemen simply holding the dots, are the alternatives — find out which ' +
+    'your team actually runs.',
+
+  describe:
+    'The attacking half of the rink from the defending team’s point of view, their own net ' +
+    'and goaltender at the right. An opposition forward carries the puck in on the near side, ' +
+    'with a route continuing into the zone along that side. Two own defencemen, level with each ' +
+    'other well inside their own blue line, each have a short route sliding sideways toward the ' +
+    'puck side, the same distance and the same direction, so the pair moves as one unit. An own ' +
+    'forward arrives from behind into the middle of the ice, well short of the slot area in ' +
+    'front of the net, rather than joining the pressure on the puck carrier.',
+
+  players: [
+    { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'D', pos: 'D', at: SLIDE_D_NEAR, label: 'forces the carrier outside' },
+    { id: 'D', pos: 'D', at: SLIDE_D_FAR, label: 'slides the same distance' },
+    { id: 'F', pos: 'F', at: SLIDE_F, label: 'protects the slot, not the puck' },
+    { id: 'F', team: 'opp', pos: 'F', at: SLIDE_CARRIER, label: 'carries in on the near side' },
+  ],
+
+  routes: [
+    { from: SLIDE_CARRIER, to: { at: 'blue-line', dx: 10, dy: 30 }, kind: 'carry' },  // (35, 30)
+    // Both defencemen slide the same 7 ft, the same direction (+dy), so the
+    // two arrows read as parallel rather than as two unrelated movements —
+    // that parity is the entire point of the picture. Each starts at its own
+    // glyph (SLIDE_D_NEAR / SLIDE_D_FAR), not at a bare point.
+    { from: SLIDE_D_NEAR, to: { at: 'blue-line', dx: 8, dy: 19 }, kind: 'skate' },    // (33,12)->(33,19)
+    { from: SLIDE_D_FAR, to: { at: 'blue-line', dx: 8, dy: -15 }, kind: 'skate' },    // (33,-22)->(33,-15)
+    { from: SLIDE_F, to: { at: 'high-slot', dx: -3, dy: -3 }, kind: 'skate' },        // (55,-8)->(66,-3)
+  ],
+
+  // ⚠️ WAS dx -9, dy 26, i.e. (16, 26) — 1.41 ft from SLIDE_CARRIER's own centre
+  // (17, 25). SLIDE_CARRIER is the opposition carrier here, drawn SOLID in
+  // PALETTE ink (`#1b1c1e`) — the same hex as PALETTE.puck — so the puck sat
+  // inside his fill, invisible against it, and broke his white "F". Moved to
+  // (22, 27), 5.39 ft from his centre: clear of his 2.9 ft body and its 0.375 ft
+  // of stroke, past the corpus's median puck-to-nearest-glyph distance of
+  // 4.61 ft, and ahead of him along his own route rather than off to one side.
+  puck: { at: 'blue-line', dx: -3, dy: 27 },   // (22, 27)
+};
+
 export default [
   threeLanes,
   wideEntry,
@@ -1084,4 +1556,9 @@ export default [
   trapezoidAim,
   outsideShoulder,
   middleDrive,
+  trailSkateDrag,
+  dropPass,
+  highTriangle,
+  vsStandingUp,
+  squashAndSlide,
 ];

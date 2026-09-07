@@ -94,16 +94,17 @@ Priority: Win the defensive-zone draws, and have a plan for losing the draw as w
 Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 or 1-1-3 — is a system choice, so find out yours
 ```
 
-**1. Manage the puck.** The biggest lever you have while protecting a lead. With a lead, the value of a possession is not "can I create a chance" but "can I make sure they don't get it back in a dangerous place." That means:
-
-- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) covers it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures.
-- No blind D-to-D passes across your own goalmouth.
-- No stretch passes you're not sure about. An interception at your own blue line is worse than a chip out.
-
+**1. Manage the puck.**
 
 ![](diagram:the-risk-map)
 
 ![](diagram:breakout-d-to-d)
+
+The biggest lever you have while protecting a lead. With a lead, the value of a possession is not "can I create a chance" but "can I make sure they don't get it back in a dangerous place." That means:
+
+- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and there **is** published tracking behind that — [Defending the Rush](defending_the_rush.md) covers it and carries both halves: Sportlogiq data covering every NHL game from 2017-18 to 2020-21 puts an ordinary shot at an **8.15% chance of becoming a goal** and says that once an attacking team has an extra skater that likelihood *"almost triples"*, while Tulsky and colleagues found odd-man rushes are **under 3% of all 5-on-5 zone entries** and worth 0.78 shots per entry against 0.57 for an ordinary carry-in. What that document declines to give is a *precise per-situation* percentage, because the underlying numbers sit in a graphic rather than in the article's text. Go there for the figures.
+- No blind D-to-D passes across your own goalmouth.
+- No stretch passes you're not sure about. An interception at your own blue line is worse than a chip out.
 
 **2. Chip out, don't force out.** A **chip** — a short, deliberate flip or wall-play that puts the puck past a forechecker and out of the zone — beats an attempted breakout pass under pressure. You will lose possession, but you'll lose it 150 feet from your net, with your team facing the right way. Getting the puck out and getting a change is worth more than a coin-flip at a controlled exit. *(The "40%" break-even you will see quoted for this is arithmetic with nothing behind it — no published work sets a threshold for this decision the way Tulsky's does for zone entries. Use the direction, not a number.)*
 
@@ -111,26 +112,29 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 >
 > **🇬🇧 The IIHF writes the same provision, so this one is a British reader's rule and not a North American footnote — but not in the NHL's words, and where the two part the difference runs against you.** Its **Rule 63.2(III)** assesses the minor *"on any Player who shoots or bats (using their hand or stick) the puck directly (non-deflected) out of the playing surface from their defending zone, except where there is no protective glass"*, with the same determining factor and the same two Note carve-outs, and it is unchanged between the 2025/26 and 2026/27 editions. **Its bench clause is written a shade wider than the NHL's** — *"when the puck is shot over the protective glass **surrounding** the Players' bench, the penalty will be assessed"*, where the NHL says *"behind"* — so if anything a British player has slightly less room, not more. **The other two books do not write this limb at all:** USA Hockey **610(c)** reaches only a deliberate shoot-out, with **631(d)** sending an accidental one to a last-play faceoff, and **Hockey Canada 10.1(ii)** likewise reaches only a puck *"deliberately"* shot, batted or thrown out — but by *"a player"*, which its Glossary makes include a goaltender *"except where explicitly stated"*, and its **Rule 6.3(e)(i) Note 1** sends *"any player of either team"* to that limb. What names the goaltender alone is the direct, non-deliberate limb, **10.1(v)**. ⚠️ **And the bench is not a target.** The IIHF Situation Handbook — **Situation 63.24**, put in the same words in the 2025/26 (v1.1) and 2026/27 editions — puts a clear that goes **over** the glass and *lands* in the Players' Bench, and still calls the minor: *"the determining factor… is where the puck leaves the playing surface"*, judged on *"an imaginary plane that continues upwards to the roof from the top of the glass"*, with only a puck *"shot **directly** into the Players' Bench (where there is no glass)"* escaping. Its Foreword ranks it below the book — *"in case of any contradictions, the valid IIHF Rulebook is always the basis"*. [Risk Management](../hockey-iq/risk_management.md) carries all four in full.
 
-**3. Take away the middle.** Concede the outside; deny the slot and the middle lane through the neutral zone. Practically: your stick lives in the passing lane, you defend with your feet rather than lunging, and you never chase a puck carrier to the wall and leave the middle open behind you.
-
+**3. Take away the middle.**
 
 ![](diagram:stick-in-lane-body-net-side)
 
+Concede the outside; deny the slot and the middle lane through the neutral zone. Practically: your stick lives in the passing lane, you defend with your feet rather than lunging, and you never chase a puck carrier to the wall and leave the middle open behind you.
+
 **4. Short shifts.** 30–35 seconds instead of 50. Fresh legs defend; tired legs reach. A team that changes cleanly every 35 seconds late in a game is much harder to score on than a team of tired heroes.
 
-**5. Win the defensive-zone draws.** Coaches treat a defensive-zone faceoff loss with three minutes left and a one-goal lead as the most dangerous single event in the game — coaching emphasis, not a counted one — because it hands the opposition immediate set-up possession in your end. Have your best faceoff man out there, have a clear plan for the loss as well as the win, and know your wall assignments. See [Faceoffs](faceoffs.md).
-
+**5. Win the defensive-zone draws.**
 
 ![](diagram:faceoff-dzone-alignment)
 
 ![](diagram:faceoff-dzone-clean-loss)
 
-**6. Keep forechecking — just choose the *right* forecheck.** This is a system choice, not a rule of hockey. The default assumed here is a **2-1-2 forecheck** (two forwards pressuring in the offensive zone, one high, two defencemen at the line). Many teams switch with a lead to a **1-2-2** (one forechecker steers the puck to one side; two forwards hold the neutral-zone line) or a **1-1-3** (one chaser, one mid-ice support, three players across the neutral zone — commonly called a trap). Under a 1-2-2 or 1-1-3, your job as the first forward in is not to win the puck, it's to take away one side of the ice so your teammates can intercept the exit. **Find out which one your team goes to with a lead, and when.** Turning up as an aggressive F1 while the other four are trapping is how leads get thrown away.
+Coaches treat a defensive-zone faceoff loss with three minutes left and a one-goal lead as the most dangerous single event in the game — coaching emphasis, not a counted one — because it hands the opposition immediate set-up possession in your end. Have your best faceoff man out there, have a clear plan for the loss as well as the win, and know your wall assignments. See [Faceoffs](faceoffs.md).
 
-> **F1 / F2 / F3 are roles, not people.** They are defined by order of arrival at the puck, not by whether you are a centre or a winger.
-
+**6. Keep forechecking — just choose the *right* forecheck.**
 
 ![](diagram:forecheck-212)
+
+This is a system choice, not a rule of hockey. The default assumed here is a **2-1-2 forecheck** (two forwards pressuring in the offensive zone, one high, two defencemen at the line). Many teams switch with a lead to a **1-2-2** (one forechecker steers the puck to one side; two forwards hold the neutral-zone line) or a **1-1-3** (one chaser, one mid-ice support, three players across the neutral zone — commonly called a trap). Under a 1-2-2 or 1-1-3, your job as the first forward in is not to win the puck, it's to take away one side of the ice so your teammates can intercept the exit. **Find out which one your team goes to with a lead, and when.** Turning up as an aggressive F1 while the other four are trapping is how leads get thrown away.
+
+> **F1 / F2 / F3 are roles, not people.** They are defined by order of arrival at the puck, not by whether you are a centre or a winger.
 
 ### What doesn't work
 
@@ -186,6 +190,12 @@ Three details worth knowing:
 
 ### Pressing without giving up odd-man rushes
 
+![](diagram:pinch-centre-high)
+
+![](diagram:pinch-centre-below-the-goal-line)
+
+![](diagram:forecheck-pinch)
+
 ```facts
 Action: Move the puck north faster and arrive in numbers through the neutral zone before you park extra players deep
 Options: Aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie — roughly that order of safety
@@ -207,12 +217,6 @@ What to add, in roughly this order of safety:
 
 **The non-negotiable in all of this: someone is always the last man back.** If a defenceman goes, a forward replaces them high. That swap has to be spoken out loud. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
-
-![](diagram:pinch-centre-high)
-
-![](diagram:pinch-centre-below-the-goal-line)
-
-![](diagram:forecheck-pinch)
 
 ### When to start taking risks
 
@@ -274,6 +278,12 @@ The analytics consensus has moved much earlier than tradition, and it has been m
 
 ### The 6-on-5 structure
 
+![](diagram:faceoff-goalie-pulled)
+
+![](diagram:six-on-five-shape)
+
+![](diagram:six-on-five-one-point-stays)
+
 ```facts
 Position: Two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
 Action: Get set up — a 6-on-5 that has to enter the zone repeatedly is wasting its advantage
@@ -289,8 +299,6 @@ Convention: Umbrella, overload or your normal power-play look at 6-on-5 is a tea
 The extra attacker is almost always a forward, and the sixth skater usually comes on for the goalie at a stoppage with an offensive-zone faceoff, or on the fly once you have possession in their end.
 
 
-![](diagram:faceoff-goalie-pulled)
-
 The most common shape takes a standard power-play look and adds a second body high: **two players at the points (the area just inside the blue line, not the line itself), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**. The principles matter more than the diagram:
 
 - **Get set up.** A 6-on-5 that has to enter the zone repeatedly is wasting its advantage. Win possession, gain the line, and get organised.
@@ -302,10 +310,6 @@ The most common shape takes a standard power-play look and adds a second body hi
 
 > **The shape you use at 6-on-5 is a system choice.** Some teams run an **umbrella** (three players high) there, some **overload** four players onto one side, some just add a net-front body to their normal power-play look. Learn yours in practice, because there is no time to work it out in the game. See [Special Teams](special_teams.md).
 
-![](diagram:six-on-five-shape)
-
-![](diagram:six-on-five-one-point-stays)
-
 ### The 6-on-4
 
 If you are trailing *and* on a power play, pulling the goalie creates a 6-on-4. This is a much bigger edge than most coaches use. In 2007-08, teams that pulled the goalie on a power play to make it 6-on-4 **scored every 5.5 minutes and allowed an empty-net goal every 4.8 minutes** — nearly as likely to score as to concede, but you *need* the goal and they don't. The clearest single recommendation from the goalie-pull research is that **teams trailing should pull much earlier on a power play than at 5-on-5.**
@@ -315,6 +319,8 @@ If you are trailing *and* on a power play, pulling the goalie creates a 6-on-4. 
 **The caveat that makes this usable is time, not strength.** The same paper's scenarios with more clock left — down two with six minutes, down three with 12:22 — do not call for pulling while shorthanded. So the finding is **time-conditional**: late and down one, being shorthanded is not by itself a reason to keep the goalie in; earlier in a game it still is. This is a model of NHL scoring rates, not a rule, and no coach at rec level is running it — but if you are keeping the goalie in with under two minutes left because you are killing a penalty, the arithmetic does not support you.
 
 ### The delayed-penalty freebie
+
+![](diagram:delayed-penalty-your-own-net)
 
 ```facts
 Rule: On a delayed penalty the referee raises an arm and play continues until the team to be penalised gains control of the puck (NHL Rule 15.1)
@@ -333,8 +339,6 @@ Under **NHL Rule 15.1**, when a player on the team *not* in control of the puck 
 The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delayed penalty the offending team cannot score **unless the non-offending team shoots the puck into their own net.** A deflection off an opponent doesn't count; your own defenceman ringing it off your own goalie does. So: no blind D-to-D passes across your own crease during a delayed call.
 
 
-![](diagram:delayed-penalty-your-own-net)
-
 > **⚠️ "Delayed penalty" names two different things, and only one of them means
 > pull the goalie.** What is described here is the signalled call under **Rule 15.1**
 > — the referee's arm is up and play continues. The phrase is also used for the
@@ -352,6 +356,8 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 > **Rec-league note:** many recreational leagues do not allow, or do not practise, pulling the goalie on a delayed call, and some officials will stop play early. It also requires your goalie to be paying attention. Talk about it beforehand.
 
 ### Defending against 6-on-5
+
+![](diagram:five-on-six-clear-three-outcomes)
 
 ```facts
 Never: Chase — hold a tight shape in the slot, block lanes and let them have the perimeter
@@ -372,8 +378,6 @@ Your job as the leading team defending an empty net:
 - **⚠️ You *can* be iced against a pulled goalie, and it is one of the worst things you can do to yourself.** It is tempting to reason that Rule 81.6's first paragraph is general — *"If the puck was so shot by a player of a side below the numerical strength of the opposing team, play shall continue and the icing violation shall not be called"* — and that five skaters against six are therefore below numerical strength. **The rulebook does not support that reading, on three counts.** (1) Rule 81.1 glosses the term where it defines it: icing applies to a team *"equal or superior in numerical strength **(power-play)** to the opposing team"* — the parenthetical ties the concept to penalty situations, and every other paragraph of 81.6 is about a penalty expiring or a penalty bench. (2) Rule 84.1 does not measure numerical strength in skaters alone; it sets three-on-three overtime at *"a numerical strength of three (3) skaters **and one (1) goalkeeper**"* — the goalkeeper is counted *inside* the figure, so six players against six is equal strength. (3) Rule 81.3 settles it in terms: where a goalkeeper *"is legitimately out of the crease in an attempt to go to the players' bench to be substituted for an extra attacker and in no way makes an attempt to play the puck, the icing **should not be nullified** under this section."* The rulebook is expressly contemplating an icing being called while the other team pulls its goalie, and preserving the call. **So the whistle comes.** You get a defensive-zone draw, **the attacking team picks the dot** (Rule 81.2), you **cannot change** but for the narrow exceptions above (Rule 81.4) and you **cannot take a timeout** at all (Rule 87.1) — five exhausted skaters, in their own end, against six, with no way out. Get it out with a purpose, or put it on net. See [Special Teams](special_teams.md) for the shorthanded exemption, which is a different situation.
 - **Faceoffs are everything.** Draws in your own end at 5-on-6 decide games. Have the plan agreed before you line up.
 - **Take no penalties.** A 6-on-4 against is close to a goal.
-
-![](diagram:five-on-six-clear-three-outcomes)
 
 ---
 

@@ -6,6 +6,8 @@
 
 ## Overview
 
+![](diagram:defender-pair-overview)
+
 ```facts
 Action: Work as a pair — one of you plays the puck, the other guards the ice at the mouth of your own goal, and you swap those jobs whenever the puck crosses the middle
 Convention: One defenceman on the puck and one on the net front belongs to a low zone collapse — the coverage assumed throughout, a coaching choice rather than a rule; under man-on-man the front of the net belongs to whoever's man is standing there, so find out which your team plays
@@ -62,6 +64,8 @@ The most important zone for a defender. Your job is to protect the area in front
 
 ### Defensive Zone: Carrying the Puck — Free Space
 
+![](diagram:defender-d-to-d-behind-the-net)
+
 ```facts
 Position: Behind your own net or along the boards
 Action: Move the puck quickly and purposefully to a winger on the boards, the centre coming low or your defensive partner — don't hold it longer than you need to
@@ -96,11 +100,13 @@ Rule: USA Hockey has no equivalent out-of-play minor — Rule 610(c) penalises o
 
 **Key considerations:** Don't carry through the slot either. If no pass is on, skate behind the net to the other side rather than going through the middle.
 
-![](diagram:defender-d-to-d-behind-the-net)
-
 ---
 
 ### Defensive Zone: Carrying the Puck — Under Pressure
+
+![](diagram:breakout-rim)
+
+![](diagram:breakout-reverse)
 
 ```facts
 Position: Along the boards or behind your own net, protecting yourself
@@ -208,6 +214,8 @@ Action: When the puck crosses the middle you become the strong-side defender and
 
 #### Net-front technique — how to actually move someone
 
+![](diagram:net-front-walk-out-direction)
+
 ```facts
 Technique: Full-checking leagues only — walking them out with leverage under the arms; anywhere else, take the position, hold it and tie the stick
 Convention: "Position beats strength" is a tendency, not a law. Plan the shift around tying up their stick, not out-leveraging somebody much bigger
@@ -252,6 +260,8 @@ Two more things a defenceman gets wrong at the net front are both about the stic
 
 #### The high-slot rotation
 
+![](diagram:dz-collapse-high-slot)
+
 ```facts
 Read: Under low zone collapse, puck in the strong-side corner and the centre gone to the battle — the weak-side winger collapses to the high slot; under man-on-man they stay with their check
 Action: Find out which system you play; in a collapse, call for the weak-side winger's rotation, and if it doesn't come, hold the goalmouth anyway and call louder
@@ -261,8 +271,6 @@ Read: If their weak-side defenceman has come off the point and your weak-side wi
 Stay disciplined and hold your position. **This rotation belongs to a low zone collapse rather than to every system.** When the puck is in the strong-side corner and the center has gone to help in the battle, the weak-side winger should collapse from the point to cover the high slot (unless that winger is already following their own man down — see exception below). Anyone with a clear view should call for the rotation — you, the center moving away, or the winger themselves. If for any reason it doesn't happen, hold the goalmouth anyway and call louder — an unmarked tap-in at the goalmouth is more dangerous than a high-slot shot through traffic. **Under man-on-man that winger stays with their check and no rotation is coming**, so find out which your team plays before you wait for one.
 
 **Exception, still inside the collapse — weak-side winger is already low:** If the weak-side opposing defenseman has come down off the point and the weak-side winger is following their man, the high slot rotation isn't available. In that case, the responsibility falls to you and your partner to be more vigilant about anyone arriving in the slot — call out anything you see entering the high-danger area.
-
-![](diagram:dz-collapse-high-slot)
 
 ---
 
@@ -341,6 +349,8 @@ Rule: Charging binds every division, checking league or not — USA Hockey 607 a
 
 #### Gap control — the method
 
+![](diagram:rush-gap-and-angle)
+
 ```facts
 Key: Gap control is the defining skill of the position — your gap is the distance between you and the puck carrier
 Risk: Too big a gap gives them a free run at you with speed and options; too small and one move puts them past you
@@ -370,8 +380,6 @@ Technique: Stick in the passing lane, on the ice, out front — it takes the pas
 - **Stick in the passing lane, on the ice, out front.** An active stick on the ice takes away the pass without committing your body.
 - **Pivot late.** Once you turn to skate forwards you've given up your ability to react. Hold your backward skating as long as you can.
 
-![](diagram:rush-gap-and-angle)
-
 #### Backward skating, and which way to pivot
 
 ```facts
@@ -386,6 +394,10 @@ Key: If you have just been moved up from forward, backward skating is the barrie
 **Backward skating is the physical foundation of all of this**, and it is the skill that separates defencemen who can play a tight gap from those who can't — you cannot hold a gap you are not fast enough to hold. **Go and work through [Skating](../technique/skating.md); it is not optional reading for this position.** The two things it will tell you that change your gap immediately: generate speed with **C-cuts and backward crossovers** rather than pushing straight back, and **pivot to the boards side rather than the middle** — so that when you are beaten you are beaten toward the wall instead of into your own slot. Note that this is a **coaching default, not a law**: some coaches want a middle pivot on specific reads, such as when turning away would take your eyes off the puck, or when you have inside help and the greater danger is the attacker cutting behind you. Ask which your coach wants, and drill both directions — the correct pivot is decided by where the attacker is, not by which way you happen to be competent. See [Skating → Which way to pivot](../technique/skating.md#which-way-to-pivot--a-coaching-default-not-a-law). **If you have just been moved up from forward, this is the barrier** — [Switching Positions](switching_positions.md) is honest that the forward to defence switch is a technical rebuild rather than a set of new decisions, and takes correspondingly longer.
 
 #### "Step up" and "pinch" are two different plays
+
+![](diagram:defender-step-up)
+
+![](diagram:pinch-centre-high)
 
 ```facts
 Key: Stepping up happens in the neutral zone or at your own blue line — you move forward to challenge an oncoming attacker early rather than retreating
@@ -410,13 +422,11 @@ A pinch is generally the safer of the two, because you have teammates behind you
 
 ⚠️ **And charging binds every division, checking league or not.** USA Hockey **607** and Hockey Canada **7.4** carry no division clause, where the body-checking rules that restrict themselves say so in terms — USA Hockey **604(a)**, Hockey Canada **7.3**. So in a league where you may not check at all, a step-up finished as a hit breaks two rules rather than one — which penalty a referee assesses is their call, and neither book says. **Whether you may check in the first place is settled in [Body Contact and Battles](../technique/body_contact_and_battles.md), and it covers most of the people reading this.** [Defending the Rush → Standing up (stepping up)](../systems/defending_the_rush.md#standing-up-stepping-up) carries this rule in full and is where a step-up is owned.
 
-![](diagram:defender-step-up)
-
-![](diagram:pinch-centre-high)
-
 ---
 
 ### Neutral Zone: Without the Puck — Holding the Line as the Safety Valve
+
+![](diagram:defender-holding-the-line)
 
 ```facts
 Position: At your own blue line, in the middle of the ice — one defender each side of the middle, roughly between the two neutral-zone faceoff dots
@@ -435,8 +445,6 @@ Never: Drift too far forward into the neutral zone — if your team turns the pu
 
 **Key considerations:** Don't drift too far forward into the neutral zone. If your team turns the puck over, you need to be in position to protect against the rush.
 
-![](diagram:defender-holding-the-line)
-
 ---
 
 ## Offensive Zone
@@ -446,6 +454,8 @@ You are the last line of defensive responsibility, so your role in the offensive
 ---
 
 ### Offensive Zone: Carrying the Puck — Free Space
+
+![](diagram:defender-three-depths)
 
 ```facts
 Position: Both defenders normally just inside the blue line
@@ -464,8 +474,6 @@ Never: Go below the circles unless somebody has taken your job at the blue line 
 **Goal:** Create a shot on net or maintain offensive zone possession.
 
 **Key considerations:** Picture three depths in the offensive zone: (1) just inside the blue line — the default position; (2) the top of the faceoff circle — the activated position, acceptable for supporting a cycle, and still recoverable; (3) **below the circles** — not always wrong, but **always a commitment**. At depth (3) you are a fourth forward, you cannot recover if it turns over, and someone must have taken your job at the blue line *before* you go, not after. The "step down" mentioned above is only to depth (2). Going to depth (3) is a separate, deliberate decision covered under *Activating* below. When in doubt, stay at the line. [Offensive Zone Play](../systems/offensive_zone_play.md) covers the offensive-zone structure and is the authority on these three depths.
-
-![](diagram:defender-three-depths)
 
 ---
 
@@ -554,6 +562,8 @@ A quick reference for situations outside the zone-by-zone framework above.
 
 ### Faceoffs
 
+![](diagram:faceoff-dzone-alignment)
+
 ```facts
 Key: The centre takes the faceoff; your position depends on the zone of the faceoff and your team's setup
 Position: Defensive zone — one defender supports the boards-side winger near the hash marks, ready to chase pucks to the corner or get to the back of the net
@@ -568,8 +578,6 @@ The center takes the faceoff. Your specific position depends on the zone of the 
 - **Defensive zone faceoff:** One defender (the "boards-side defender") supports the winger at the outside hash mark (the boards-side winger) — positioned near the hash marks, ready to chase pucks to the corner or get to the back of the net. The other defender is in the slot, ready to block a point shot or cover the net front. Be ready to react instantly to a tie-up or a loose puck.
 - **Offensive zone faceoff:** One defender at the strong-side point, ready to shoot on a clean win — a set play off a clean draw is one of the few chances in hockey where you get to shoot with your feet already set and traffic already in place. The other holds the weak-side point.
 - **Neutral zone faceoff:** Both defenders back at your blue line, ready to defend a rush if the opposing center wins it forward.
-
-![](diagram:faceoff-dzone-alignment)
 
 ### Power Play (your team has the man advantage)
 
@@ -594,6 +602,8 @@ Whichever you're in: your first job is **keeping the puck in the zone**. A power
 
 ### Penalty Kill (your team is short-handed)
 
+![](diagram:pk-box)
+
 ```facts
 Key: A kill is four skaters, normally two forwards and two defencemen — you and your partner are the bottom two in every shape
 Key: Box — you and your partner low, owning the net front and the two low corners; it is the shape almost everyone is taught first, and no public count of what teams actually run exists
@@ -614,8 +624,6 @@ A kill is four skaters, normally two forwards and two defencemen. **The shapes a
 - **Wedge+1** — you are almost always in the triangle, not the "+1". The single player outside the triangle pressures whoever has the puck; when the puck moves he stops and the nearest wedge player — which can be you — steps out as the new +1 while he drops in. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route the +1 takes out — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and the point — is a coaching choice, and published descriptions differ; ask which one your team runs.**
 
 In all of them: stay tight, box out the net front, block shots, and clear the puck on every opportunity — under-pressure clears are perfectly fine and you may ice the puck freely while shorthanded — **with two carve-outs worth knowing before you rely on it**: NHL Rule 81.6 withdraws the exemption from a team shorthanded by a *major* that has left nobody on the penalty bench to come out, and USA Hockey restricts it by classification, so below Youth 15-Only / Girls 16U / High School / Adult a shorthanded team cannot ice the puck at all. [Special Teams](../systems/special_teams.md) covers this rule. Don't get pulled out of position chasing the puck around the perimeter; let it come to you. The power play *wants* you to chase, because that's what opens the seam.
-
-![](diagram:pk-box)
 
 ### Icing
 
@@ -643,6 +651,8 @@ Key: When you are gassed, the glass is the answer — the punishment for a tired
 
 ### Blocking Shots
 
+![](diagram:shot-block-get-close)
+
 ```facts
 Key: Blocking shots is a technique, not an act of courage — done badly it hurts you and doesn't stop the puck
 Technique: Get close — ten feet beats thirty, because you cover more net and the puck has less time to rise; that it is "safer" for you is coaching craft, not a measured finding
@@ -669,8 +679,6 @@ Blocking shots is a defenceman's job, but it is a *technique*, not an act of cou
 
 **How much your team blocks at all is a coaching choice, and the owning document says so** — some systems want defenders collapsing and blocking aggressively in front of the goalie, others want the lane taken away on your feet with the goalie left seeing everything. Neither is right in the abstract. **Ask your coach which, and ask your goalie what they want**, before you decide that a teammate who stayed up was being soft. See [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Goaltender](goaltender.md).
 
-![](diagram:shot-block-get-close)
-
 ### Line Changes
 
 ```facts
@@ -694,6 +702,8 @@ Shift length, the safe and unsafe windows to change, and why a bad change conced
 
 ### Defending the Rush — quick reference
 
+![](diagram:defender-two-on-one)
+
 ```facts
 Action: 1-on-1 — force them outside, stick in the passing lane, don't lunge; steer them to a bad shooting angle rather than making a highlight hit — the angle is yours everywhere, the contact is not
 Convention: 2-on-1 — take away the pass and give up the shot, sitting in the passing lane between the two attackers with your stick flat on the passing side; a timed slide to force the shot is the realistic alternative — ask which your team plays, how they want you down, and make sure your goalie agrees
@@ -715,8 +725,6 @@ Full detail in [Defending the Rush](../systems/defending_the_rush.md). The three
 - **3-on-2:** There are **two named systems here and you need to know which one your team plays** — this is a coaching choice, not a law. The common default is **"two wide, middle to the backchecker"**: each defenceman takes an outside attacker, nobody chases the puck carrier, and the middle attacker belongs to whoever is backchecking the middle lane — usually the centre, though *which* backchecker owns the middle is itself a coaching choice, with "first man back takes the middle" and man-on-man-from-the-puck-outward both in use (see [Center](center.md) and [Winger](winger.md)). The realistic alternative is **"strong side takes the puck, weak side splits"**: the strong-side defenceman plays the carrier as a 1-on-1 and the weak-side defenceman drops off to split the middle and the far attacker, sitting in the passing lane exactly as on a 2-on-1. The default concedes the middle entirely if the backcheck does not arrive; the alternative never concedes the middle but leaves the far attacker more room. **Ask your coach which one you are playing** — two defencemen running different versions on the same rush is worse than either. Under both: retreat together and keep the middle of the ice sealed as long as possible.
 
 The universal rule: **stay on the defensive side of the puck**. Anything that puts an attacker between you and your net has already gone wrong.
-
-![](diagram:defender-two-on-one)
 
 ---
 

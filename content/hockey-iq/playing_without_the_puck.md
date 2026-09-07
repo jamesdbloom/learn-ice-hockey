@@ -209,6 +209,8 @@ The technique is to keep your assignment in your **peripheral vision** while you
 
 ### Stick in the lane, body between man and net
 
+![](diagram:stick-in-lane-body-net-side)
+
 ```facts
 Technique: Blade on the ice, flat, in the passing lane between the puck and your man — a stick held six inches up removes nothing
 Position: Put your body between your man and your own net, not between your man and the puck
@@ -223,8 +225,6 @@ Two separate tools, and players routinely use only one.
 - **Your body takes away the shot and the net drive.** Position yourself between your man and your own net, not between your man and the puck.
 
 Doing both at once is a body-position problem: face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane. When they conflict — you cannot both seal the lane and stay net-side — **net-side wins in the defensive zone**, because a pass completed twenty feet from your net is survivable and a player alone at the goalmouth is not.
-
-![](diagram:stick-in-lane-body-net-side)
 
 ### Layer, do not duplicate
 
@@ -252,6 +252,8 @@ Nobody has it. It is on the boards, in a corner, sitting in the slot after a sav
 
 ### Who goes
 
+![](diagram:loose-puck-who-goes)
+
 ```facts
 Convention: Who goes is a coaching choice — under the 2-1-2 default the nearest two forwards go and the third reads; under a 1-2-2 one player goes and the other two hold the middle
 Key: F1, F2 and F3 are roles defined by order of arrival, not by position — whoever gets there first is F1
@@ -266,8 +268,6 @@ The honest answer is that this is a **coaching choice**, and the worst version i
 Under the house default used throughout — a **2-1-2 forecheck** in the offensive zone — the first forward in (F1) pressures the puck and the second (F2) supports them, so on a loose puck in their end **the nearest two forwards go and the third reads**. Remember that **F1, F2 and F3 are roles defined by order of arrival, not by position**: whoever gets there first is F1, whether they are a centre or a winger.
 
 Under a **1-2-2**, only one forward goes and the other two hold the middle, so on the same loose puck **one player goes and the others do not**. Under a **1-3-1 neutral zone** structure the read is different again. In your own zone, under a low zone collapse, the loose puck in the corner is taken by whoever is closest with **one teammate immediately supporting on the boards side and one covering the net front** — never two.
-
-![](diagram:loose-puck-who-goes)
 
 Find out which of these your team plays. Then, the rule that survives every system:
 
@@ -377,6 +377,8 @@ Now the detail on State 1's most obvious job.
 
 ### Unmarked is not the same as available
 
+![](diagram:unmarked-but-unavailable)
+
 ```facts
 Key: Unmarked means no defender is near you; available means the carrier can actually get you the puck — the second is the one that matters
 Technique: Stick on the ice, blade flat, in a position to receive — the blade is your target, so give the passer something to hit
@@ -395,8 +397,6 @@ This distinction is the whole section, so it comes first.
 3. **No defender's stick in that lane.** Nothing about your own position tells you whether this one is true. You are ten feet from anyone, waving, and there is a defenceman's stick lying flat across the only line between you and the puck. You are unmarked and unavailable.
 
 The practical consequence: **when you get open, immediately look at the passing lane, not at your defender.** If the lane is blocked, move — often only three or four feet, changing the angle enough that the line opens. A small adjustment that opens the lane is worth more than a big burst that does not.
-
-![](diagram:unmarked-but-unavailable)
 
 And say something. A short call gives the carrier the information their eyes may not have.
 
@@ -499,6 +499,10 @@ Some off-puck work exists purely to move a defender somewhere unhelpful. You wil
 
 ### Drive the net
 
+![](diagram:drive-the-net-before)
+
+![](diagram:drive-the-net-after)
+
 ```facts
 Action: Skate hard at the net without the puck — a half-hearted glide does not move anybody
 Goal: Pull a defender with you, because leaving a man driving the goalmouth is unacceptable to any defenceman
@@ -517,10 +521,6 @@ Skating hard at the net without the puck does three things at once:
 The point of the drive is that somebody else scores: you pull a defender to the net, and a teammate shoots into the space they vacated. No source held here counts goals by type, so take that as the mechanism rather than a ranking of which goal is commonest. **The drive has to be genuine.** A half-hearted glide does not move anybody. If you are going, go as if you expect the puck.
 
 **One thing the drive itself asks of you.** You are skating hard at a steel goal frame with a goaltender set in front of it and a defender coming with you, so **know where the posts are, and never arrive head first.** USA Hockey's *Heads Up Hockey Program Guide* lists *"avoiding goal posts while driving to the net"* among the answers it expects when it asks players what "heads up" means as safe hockey, and USA Hockey's *Introduction To Body Contact* puts it as an instruction: *"Hit the boards or goal posts with an arm, a leg, or anything but your head first."* Head up, chin off your chest, and **never duck** — the same guide traces almost all on-ice cervical spine injuries to a head *"slightly flexed (head down) while making head-on contact with the boards or goal post"*, and records that it *"can occur at walking speed"*, so a crowded, slow net drive is not a safe one. **That applies in every league, checking or not.**
-
-![](diagram:drive-the-net-before)
-
-![](diagram:drive-the-net-after)
 
 ### Screen the goalie
 
@@ -551,6 +551,8 @@ So: get out of the blue paint and the screen is legal. Rule 69.1 opens by saying
 
 #### To screen properly
 
+![](diagram:screen-the-goalie-sightline)
+
 ```facts
 Position: Stand where the goalie's eyes are, not where the puck is going. Occupy the sightline between the puck and the goalie
 Position: Keep both skates off the red crease line, not merely out of the blue paint — the IIHF, USA Hockey and Hockey Canada all count that line as part of the crease, and only the NHL leaves it unsaid
@@ -569,8 +571,6 @@ Risk: A screen stands you in the shot lane at close range, upright, with a defen
 - **Move late — and move where you can still see the puck.** Getting out of the way at the last instant, so the goalie picks up the puck a fraction too late, is more disruptive than a static body. Late is a timing instruction, not a reason to lose the shot: you cannot time an exit from a release you did not see.
 - **Know where the near post is before the shot.** You are holding a spot at the goalmouth with a steel goal frame at one edge of it and a set goaltender at the other, and a defender is working under your arms to walk you sideways off it. Your eyes are on the puck by design, so you are being moved by a body you are *feeling* rather than watching, and you can travel several feet without looking up once. **Take the shove braced** — wide base, knees bent, weight low, knees and hips giving rather than a locked frame — and keep your **head up and your chin off your chest. Never duck.** USA Hockey's *Heads Up Hockey* guide names the goal post beside the boards in the same sentence, tracing almost all on-ice cervical spine injuries to a head *"slightly flexed (head down) while making head-on contact with the boards or goal post"* and recording that it *"can occur at walking speed"*; its *Introduction To Body Contact* gives the instruction directly — *"Hit the boards or goal posts with an arm, a leg, or anything but your head first."* **None of this is scoped to checking leagues.** A legal box-out, a legal seal and an illegal shove put the same body in the same place. [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the net-front battle from both sides.
 - **You are standing in the shot lane, upright — that is the job, and it is worth naming.** A shot blocker is coached to get close, stay square, keep their hands behind their body with the backs of the gloves out and their head out of the lane; a screener does the reverse by design, standing tall in the lane with a defender on their back. [Body Contact and Battles](../technique/body_contact_and_battles.md) calls shot blocking *"genuinely useful and genuinely dangerous"*, and warns shot blockers that *"a puck deflected off an outstretched blade goes upward, often into your own face"* — **that deflection mechanism is coaching craft, not a measured or sourced finding, and no source held for this guide states it** — and a tip attempt puts a blade in that same lane, a few feet from the shooter. **That comparison is about where the blade is, not a measured claim that the two deflect alike.** Tipping is a real and valuable skill and none of this is a reason to stop; it is a reason to know when the puck is being released, and to have your head and face protection right rather than nearly right ([Equipment](../off-the-ice/equipment.md)). **No injury rate for screening or tipping appears in any source held for this guide, and none was found**, so take that as geometry rather than as a measured risk.
-
-![](diagram:screen-the-goalie-sightline)
 
 #### Whether you touch the goaltender
 
@@ -612,6 +612,8 @@ The difference is small and entirely about intent: **look like you are about to 
 
 ### Stretch the defence for width
 
+![](diagram:width-makes-the-middle-lane)
+
 ```facts
 Goal: Defences want to defend a narrow rink and collapse toward the middle — your width is what stops them
 Position: As the far winger in the offensive zone, hold your position near the boards; drifting into the middle to look busy lets the defence compress
@@ -625,8 +627,6 @@ The rink is 85 feet wide. Defences want to defend a narrow rink, so they collaps
 - In the offensive zone, if you are the far winger, **holding your position near the boards** keeps a defender out there with you. Drifting into the middle to look busy lets the defence compress, and compressed defences are much harder to score against.
 - On a rush, a wide forward forces the defenceman to respect the outside lane, which widens the gap between them and their partner — and the gap between defencemen is where the middle drive goes.
 - In the neutral zone, a stretched forward high near the far blue line pins a defenceman deep and shortens the ice your breakout has to cover. See [Neutral Zone Systems](../systems/neutral_zone_systems.md).
-
-![](diagram:width-makes-the-middle-lane)
 
 > **System note:** how much width a team wants in the offensive zone is a coaching choice. Some coaches want the far winger high and wide to protect against the counter-attack; others want them crashing the back post on every shot. Both are defensible and they are not compatible. Ask.
 

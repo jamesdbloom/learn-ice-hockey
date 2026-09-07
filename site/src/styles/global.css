@@ -2042,6 +2042,57 @@ figure.diagram svg {
   height: auto;
   max-width: 100%;
 }
+/*
+  ⚠️ A DIAGRAM AT THE HEAD OF ITS SECTION, which is where the owner asked for them:
+  "diagrams should be at the start of sections". 286 markers move under a heading, so
+  the heading-to-figure gap stops being an edge case and becomes the common case.
+
+  Two things had to be measured rather than assumed.
+
+  (1) `figure.diagram` carries `margin: 2rem 0`, and headings carry bottom margins of
+  0.85rem (h2), 0.6rem (h3) and 0.5rem (h4). Adjacent margins collapse to the LARGER,
+  so a figure under a heading sat 2rem below it — 2.4x to 4x the gap the first
+  PARAGRAPH of the same section gets. The diagram read as floating between the heading
+  and the text rather than belonging to the section under it.
+
+  (2) ⚠️ THE OBVIOUS SELECTOR `h3 + figure.diagram` MATCHES NOTHING, and would have
+  failed silently. The markdown `![](diagram:id)` renders as `<p></p><figure>` — the
+  component hoists the figure out of the paragraph and leaves the empty `<p>` behind.
+  Verified in built HTML (site/dist/positions/defender/index.html): every one of the 11
+  figures on that page is preceded by a literal `<p></p>`. So the empty paragraph has to
+  be removed from the flow AND stepped over in the selector. The bare `h* + figure` rules
+  are kept as well, so that if the renderer ever stops emitting the empty paragraph this
+  spacing does not silently revert.
+
+  Measured on the current build: 608 literal `<p></p>` — exactly TWICE the 304 diagram
+  markers, because each marker leaves one empty paragraph BEFORE the figure and one AFTER
+  it. Every one of the 608 is figure-adjacent: zero orphans, zero whitespace-only
+  `<p> </p>`, zero comment-only paragraphs, so `:empty` is unambiguous HERE. ⚠️ It is not
+  unambiguous BY CONSTRUCTION — an empty paragraph arriving from any other source would
+  vanish silently, so re-check that count if the renderer changes.
+
+  ⚠️ AND AN EARLIER VERSION OF THIS COMMENT OVERCLAIMED. It said the rule "also closes a
+  stray gap below every diagram". It does not: below the figure, `figure.diagram`'s own
+  2rem margin-bottom already dominates the empty paragraph's 1.1rem by collapsing, so
+  hiding it changes nothing there. The rule earns its place ABOVE the figure only, where
+  without it the empty paragraph's 1.1rem bottom margin collapses through and beats the
+  heading's 0.6rem. Refuted by a reviewer reading the cascade.
+
+  ⚠️ WHAT THESE VALUES ARE, precisely: `.prose p` has `margin: 0 0 1.1rem`, so a
+  paragraph's TOP margin is 0 and its gap under a heading IS the heading's bottom margin.
+  Setting the figure's margin-top to those same values makes a heading-leading diagram sit
+  EXACTLY where a first paragraph sits — not closer. Equal is the target; closer would be
+  wrong.
+*/
+.prose p:empty { display: none; }
+
+.prose h2 + p:empty + figure.diagram,
+.prose h2 + figure.diagram { margin-top: 0.85rem; }
+.prose h3 + p:empty + figure.diagram,
+.prose h3 + figure.diagram { margin-top: 0.6rem; }
+.prose h4 + p:empty + figure.diagram,
+.prose h4 + figure.diagram { margin-top: 0.5rem; }
+
 figure.diagram figcaption {
   margin-top: 0.6rem;
   font-size: 0.9rem;

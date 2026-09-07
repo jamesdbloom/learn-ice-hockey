@@ -446,7 +446,7 @@
   "dz-collapse-high-slot": {
     "id": "dz-collapse-high-slot",
     "owner": "content/systems/defensive_zone_coverage.md",
-    "caption": "The same low zone collapse a beat later — the weak-side winger’s collapse, which is where this system succeeds or fails. The centre is now the second body in the corner battle — arriving inside the carrier and not behind him, because that carrier is facing the boards and cannot see him coming — and the weak-side winger has dropped off his point into the high slot to fill it; the strong-side winger holds his point, because if both wingers sag the point-to-point pass across the top gives their defenceman a free walk-in. Anyone with a clear view calls it — the centre, the weak-side defenceman or the winger himself — and the winger climbs straight back up to his point as soon as the puck comes out of the corner. The weak-side point is briefly unmarked, and that is deliberate: this system concedes point shots on purpose. It is one system among several, and even within it the collapse is not available if that winger has already followed the opposing defenceman down off the point.",
+    "caption": "A low zone collapse a beat after the corner battle begins — the weak-side winger’s collapse, which is where this system succeeds or fails. The centre is now the second body in the corner battle — arriving inside the carrier and not behind him, because that carrier is facing the boards and cannot see him coming — and the weak-side winger has dropped off his point into the high slot to fill it; the strong-side winger holds his point, because if both wingers sag the point-to-point pass across the top gives their defenceman a free walk-in. Anyone with a clear view calls it — the centre, the weak-side defenceman or the winger himself — and the winger climbs straight back up to his point as soon as the puck comes out of the corner. The weak-side point is briefly unmarked, and that is deliberate: this system concedes point shots on purpose. It is one system among several, and even within it the collapse is not available if that winger has already followed the opposing defenceman down off the point.",
     "describe": "The attacking half of the rink, the defended net at the right, the same moment as the previous diagram one beat later. The opposition are unchanged: the puck carrier deep in the strong-side corner, a forward on the strong-side half-wall, a forward at the net front, and two defencemen at the points. Two of our own players have moved. The centre has arrived on the inside edge of the strong-side corner, about nine feet from the carrier and about the same from the strong-side defenceman, so the carrier now has one of ours below him and one inside him — that is the two on one. The weak-side winger has come down from the weak-side point into the high slot in the middle of the ice. The strong-side winger is still high at his own point, and the weak-side defenceman is still on the doorstep. The opposition defenceman at the weak-side point now has nobody near him. No routes are drawn.",
     "title": null,
     "half": true,
@@ -1439,6 +1439,18 @@
     "width": 900,
     "height": 393
   },
+  "defender-pair-overview": {
+    "id": "defender-pair-overview",
+    "owner": "content/positions/defender.md",
+    "caption": "Two defencemen working as a pair, shown in your own end, contesting a loose puck in the corner. One of you plays the puck; the other holds the goalmouth — the ice at the mouth of your own goal — and you swap those jobs the moment the puck crosses the middle of the ice. That net-front assignment is a low zone collapse — the coverage this document assumes, and a coaching choice rather than a rule: under man-on-man the net front belongs to whoever's man is standing there, so find out which your team plays.",
+    "describe": "The defending half of the rink, your own net at the right, your goaltender in his crease. One opposition forward is deep in the right corner with a loose puck between them. Your strong-side defenceman is beside him, contesting the puck. Your weak-side defenceman is on the opposite side of the net from the corner, at the goalmouth, labelled \"goalmouth\", between the net front and where an unmarked opponent would stand. No route is drawn: the picture is the shape the pair forms, not a movement.",
+    "title": "The defence pair",
+    "half": true,
+    "svg": "/diagrams/defender-pair-overview.svg",
+    "png": "/diagrams/defender-pair-overview.png",
+    "width": 900,
+    "height": 770
+  },
   "drill-execution-no-opponent": {
     "id": "drill-execution-no-opponent",
     "owner": "content/off-the-ice/practice_and_development.md",
@@ -1943,6 +1955,30 @@
     "width": 900,
     "height": 770
   },
+  "pp-backdoor": {
+    "id": "pp-backdoor",
+    "owner": "content/systems/special_teams.md",
+    "caption": "The backdoor: the weak-side post, the far side of the net, away from the puck. Whenever the kill's low defender commits to the strong side or to the net-front player, drawn here occupying him, it is a 2-on-1 with nobody covering it. Arrive late: a player camped at the back post all shift is marked; one arriving as the pass is released is not. The pass shown is the high-to-backdoor leg of a low-to-high-to-backdoor delivery; a straight pass from below the goal line is the other way it arrives, not drawn. Either way it crosses the royal road, which is why it converts. This is a read available off any formation, not a shape of its own.",
+    "describe": "Attacking half of the rink, the opposition net at the right, the opposition goaltender in the crease. Three own players: one up top near the right point holding the puck, one at the net front just outside the crease on the right, and one at the weak-side post outside the crease on the left, arriving late. One opposition defenceman stands low on the right, close to the net-front attacker rather than the one on the left. A dashed pass runs from the point across the middle of the ice, stopping just short of the weak-side attacker. The other two power-play attackers and the other three penalty killers are not drawn.",
+    "title": null,
+    "half": true,
+    "svg": "/diagrams/pp-backdoor.svg",
+    "png": "/diagrams/pp-backdoor.png",
+    "width": 900,
+    "height": 770
+  },
+  "pp-walk-down": {
+    "id": "pp-walk-down",
+    "owner": "content/systems/special_teams.md",
+    "caption": "The walk-down: the half-wall player skates the puck down toward the goal line and inside rather than passing, forcing a decision. If the low defender, drawn guarding low, steps out to challenge, the net front is open for a pass across — a genuine 2-on-1, not drawn here. If he holds his ground instead, the section says you still get a shot from the top of the circle with a moving goaltender; that shot is not drawn either. Walk toward the dot, not the corner — below the goal line and wide you are harmless. Keep your feet moving; the moment they stop the kill resets. If it is denied, reset to the point and start again.",
+    "describe": "Attacking half of the rink, the opposition net at the right, the opposition goaltender in the crease. One own player carries the puck from the right half-wall, drawn with the long smooth wave that means skate and stickhandle, angling down and in toward the goal line and stopping short of the slot. One own player stands at the net front just outside the crease. One opposition defenceman guards low on the same side, between the carrier's route and the net-front attacker. The pass that opens to the net front if the defenceman steps out to challenge is not drawn. The other three power-play attackers and the other three penalty killers are not drawn.",
+    "title": null,
+    "half": true,
+    "svg": "/diagrams/pp-walk-down.svg",
+    "png": "/diagrams/pp-walk-down.png",
+    "width": 900,
+    "height": 770
+  },
   "pk-box": {
     "id": "pk-box",
     "owner": "content/systems/special_teams.md",
@@ -2240,6 +2276,66 @@
     "half": true,
     "svg": "/diagrams/entry-middle-drive.svg",
     "png": "/diagrams/entry-middle-drive.png",
+    "width": 900,
+    "height": 770
+  },
+  "entry-trail-skate-drag": {
+    "id": "entry-trail-skate-drag",
+    "owner": "content/systems/zone_entries.md",
+    "caption": "The trail-skate drag, drawn at the instant the puck is still a stride short of the line. The far-side winger's body, hands and stick are already in the attacking zone; only the trailing blade is still on the paint, which keeps them onside everywhere, because a skate touching any part of the twelve-inch blue line counts as contact with it. The instant the puck completely crosses, the blade comes down and pushes through into the zone. Under the NHL and the IIHF, that trailing skate could instead be lifted, held behind the plane of the line without breaking it, and still be legal; under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is offside, so keep it on the ice under those two books. The defenceman standing up at the line is exactly why the head stays up: the winger's body crosses before the skate does.",
+    "describe": "The attacking half of the rink, opposition net at the right. An own forward — the far-side winger — is on the blue line, body, stick and hands already inside the attacking zone, with a short route continuing on into the zone at speed. A second own forward, the puck carrier, is a stride behind, still short of the line, with the puck. An opposition defenceman stands up at the blue line, well clear of the winger, and the opposition goaltender is in the crease.",
+    "title": "The trail-skate drag",
+    "half": true,
+    "svg": "/diagrams/entry-trail-skate-drag.svg",
+    "png": "/diagrams/entry-trail-skate-drag.png",
+    "width": 900,
+    "height": 770
+  },
+  "entry-drop-pass": {
+    "id": "entry-drop-pass",
+    "owner": "content/systems/zone_entries.md",
+    "caption": "A drop pass approaching the line, attacking net at the right. The carrier has already left the puck rolling in the neutral zone, still short of the blue line, and drives on alone as a decoy — taking a defenceman with him rather than coasting. A trailing teammate, arriving from the far side with more speed than the defence has matched, skates onto the loose puck to carry it in himself. The drop is to a space, not to a stick: the receiver has to be seen and already moving before the puck is left. It answers one specific picture, a trailing teammate with room and speed behind you, and is not a default read. Dropped blind, with no trailer in sight, this is the worst turnover in hockey — a stationary puck left facing your own net.",
+    "describe": "The attacking half of the rink, opposition net at the right. A puck sits alone in the neutral zone, short of the blue line. An own forward who has just released it is already past it, angling on toward the blue line and into the zone as though he still carries it. A second own forward is well back and to the far side, with a long route arriving from behind toward the loose puck, stopping just short of it. Two opposition defencemen are positioned toward the side the first forward is driving into, and the goaltender is in the crease.",
+    "title": "The drop pass",
+    "half": true,
+    "svg": "/diagrams/entry-drop-pass.svg",
+    "png": "/diagrams/entry-drop-pass.png",
+    "width": 900,
+    "height": 770
+  },
+  "entry-high-triangle": {
+    "id": "entry-high-triangle",
+    "owner": "content/systems/zone_entries.md",
+    "caption": "The high triangle, one of several named ways to enter with an extra attacker — drawn here with the puck carrier driving wide, a second attacker driving wide on the far side with no puck, and the third trailing into the high slot. The read is whether a defenceman goes with the wide driver: here the near one shifts to cover him, which is what opens the shot, the pass across, or the drop behind for the trailer. A third attacker is worth nothing unless it makes one defender responsible for two of you — that single movement is the cue, not a route to memorise. Which named pattern your team actually runs — high triangle, midlane drive, triple drive, drive and delay — is a coaching choice, and most teams drill one or two rather than all of them, so ask rather than assume this is the one you will see.",
+    "describe": "The attacking half of the rink, opposition net at the right. Three own forwards approach the blue line: the puck carrier drives wide on the near side, a second forward without the puck drives wide on the far side, and a third trails through the middle toward the high slot. Two opposition defencemen are inside the zone; the nearer one has a short route sliding toward the side the puck carrier is driving into, and the farther one holds a central position. The goaltender is in the crease.",
+    "title": "The high triangle",
+    "half": true,
+    "svg": "/diagrams/entry-high-triangle.svg",
+    "png": "/diagrams/entry-high-triangle.png",
+    "width": 900,
+    "height": 770
+  },
+  "entry-vs-standing-up": {
+    "id": "entry-vs-standing-up",
+    "owner": "content/systems/zone_entries.md",
+    "caption": "A defence standing up at the blue line rather than backing in — one structure among several you will meet, holding the line level to take away the middle and daring you to go around it. Two answers at once: the wide attacker chips the puck past his stationary defenceman, who has no backward momentum to recover, and skates around to collect it — the ideal chip situation, because standing still leaves nothing to use against him — while a fourth attacker arrives late and unmarked well behind the play, because standing up means both defencemen are watching the puck rather than the ice behind it. Attacking the seam between the two of them, or swinging the puck to the weak side, are the other two answers to this same look and are not drawn here.",
+    "describe": "The attacking half of the rink, opposition net at the right. Two opposition defencemen stand at the blue line without backing in: the near one is positioned in the wide attacker's own lane, out toward the boards, and his partner holds centrally, denying the middle. An own forward with the puck is near the blue line on the near side; a dashed route chips the puck past the near defenceman, staying wide toward the boards, and the forward's own route curls in front of him and back out to the boards to collect it. A fourth own forward, well back in the neutral zone on the far side, has a long route arriving unmarked near the top of the far faceoff circle. The goaltender is in the crease.",
+    "title": "Against a standing-up defence",
+    "half": true,
+    "svg": "/diagrams/entry-vs-standing-up.svg",
+    "png": "/diagrams/entry-vs-standing-up.png",
+    "width": 900,
+    "height": 770
+  },
+  "defend-squash-and-slide": {
+    "id": "defend-squash-and-slide",
+    "owner": "content/systems/zone_entries.md",
+    "caption": "You are defending here: squash-and-slide, one of several named ways to receive an entry — described publicly of Bruce Cassidy's Boston Bruins around 2018-19, not a universal system. The two defencemen hold the same depth and slide across together like a foosball bar: the puck is on the near side here, so both slide toward it, the near one forcing the carrier outside while the far one holds square rather than dropping off deep. The first forward back does not join that pressure — his job is the slot, protecting the middle while the pair squashes the play to the wall. It buys time and space at a cost: one player sliding late, or a lazy backcheck leaving the slot, and the weak side is wide open. Standing up at the line, or receiving the entry with the defencemen simply holding the dots, are the alternatives — find out which your team actually runs.",
+    "describe": "The attacking half of the rink from the defending team’s point of view, their own net and goaltender at the right. An opposition forward carries the puck in on the near side, with a route continuing into the zone along that side. Two own defencemen, level with each other well inside their own blue line, each have a short route sliding sideways toward the puck side, the same distance and the same direction, so the pair moves as one unit. An own forward arrives from behind into the middle of the ice, well short of the slot area in front of the net, rather than joining the pressure on the puck carrier.",
+    "title": "Squash-and-slide",
+    "half": true,
+    "svg": "/diagrams/defend-squash-and-slide.svg",
+    "png": "/diagrams/defend-squash-and-slide.png",
     "width": 900,
     "height": 770
   }

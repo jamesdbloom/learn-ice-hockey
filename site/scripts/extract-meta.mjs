@@ -145,12 +145,21 @@ function extract(id, source) {
   // putting "``facts Key: You are the engine of your line…" into the card
   // tiles, the meta description and the Open Graph tags.
   //
+  // The `![` exclusion is load-bearing for the same reason as the fence, and it
+  // was added the day the corpus started putting diagrams at the head of a
+  // section. A marker is not a heading, quote, table, rule or fence, so it was
+  // selected as the description paragraph, `toPlainText` reduced it to the empty
+  // string, and the build FAILED with "could not derive a description" — after
+  // `clean:cache` had already deleted `dist`. It hit one document first
+  // (positions/defender.md, the Overview-diagram pilot) and would hit every
+  // document as that pilot is rolled out to the other thirty.
   const paragraph = blocks(after.join('\n')).find(
     (b) =>
       !b.startsWith('#') &&
       !b.startsWith('>') &&
       !b.startsWith('|') &&
       !b.startsWith('---') &&
+      !b.startsWith('![') &&
       !b.startsWith('```'),
   );
   if (paragraph) description = truncate(toPlainText(paragraph));

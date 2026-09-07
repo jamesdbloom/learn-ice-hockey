@@ -375,6 +375,8 @@ Convention: "Aim for the corners" is one coaching school and this section follow
 
 ## Shooting Through Traffic
 
+![](diagram:shooting-lane-and-the-step)
+
 ```facts
 Action: Look for the lane before you shoot — no sight of the net or of net-front sticks means no lane
 Action: Change the angle — one or two lateral steps beats the angle their sticks were set for
@@ -398,11 +400,11 @@ A shot that hits a shin pad is worse than no shot at all. **You have given up po
 
 **A note for defencemen at the point:** the goal of a point shot is almost never to score directly. Point shots produce around **1–3 goals per 100 shots** ([Hockey's Arsenal](https://hockeysarsenal.substack.com/p/shot-quantity-or-shot-quality) — a range read off a shot-location map, not a computed rate; see [Where Shots Are Worth Taking](#where-shots-are-worth-taking)). ⚠️ **Two qualifications travel with that figure and both change what it means for you.** The map counts a shot as a goal, a save or a miss, so **misses are in the denominator and this is not a shooting percentage** — it is lower than one. And it is the **even-strength** map: on the power-play version of the same map the 5% contour reaches roughly the blue line, so **none of this is an argument against a power-play point shot.** The goal is to produce a tip, a rebound, or a scramble in the slot — all of which require the puck to actually arrive there. That is why "get it through" beats "shoot it hard" every time.
 
-![](diagram:shooting-lane-and-the-step)
-
 ---
 
 ## Where Shots Are Worth Taking
+
+![](diagram:oz-home-plate)
 
 This is the part that changes how many goals you score, and it has nothing to do with your hands.
 
@@ -413,8 +415,6 @@ Shot value depends overwhelmingly on location. The exact figures vary by model, 
 - Over a three-year five-on-five sample, **close to half of all NHL goals came from the inner slot**, and just over a quarter from the outer slot ([The Point](https://www.thepointhockey.com/shot-optimization-how-optimal-shooting-habits-can-improve-individual-goal-scoring-rates/)). "Inner slot" there means the area closest to the crease; "outer slot" the rest of the slot out to the top of the circles. **Qualification: this split is computed from Sportlogiq tracking, which is not public** — the same limit that applies to the Kane and Laine figures below, and it applies to this number too. The article's own wording is *"nearly half"* and *"just over a quarter"*; nobody outside Sportlogiq can check it.
 
 **What that means when you are standing on the ice with the puck:** a shot from the slot is worth several times a shot from the point. Not slightly more — several times. If you can turn a point shot into a slot shot by making one pass, make the pass. If you can turn a perimeter shot into a slot shot by taking two strides toward the middle, take the strides.
-
-![](diagram:oz-home-plate)
 
 The Point's shot-optimisation analysis, the source of the inner-slot split above, gave two real NHL examples of what bad shot selection costs, and it names them. **Patrick Kane** — *"Kane takes over 20 percent of his shots from 'the dead zone' above the circles and has scored less than 2 percent of his goals from there."* In the season before the article (2018-19) he attempted 79 shots from that area, of which *"three of these led to a scoring chance, two produced goals and 38 resulted in a loss of possession."* **Patrik Laine** managed *"a mere 2 goals on 232 shot attempts from above the circles over his career"* ([Mike Kelly, The Point, 26 September 2019](https://www.thepointhockey.com/shot-optimization-how-optimal-shooting-habits-can-improve-individual-goal-scoring-rates/), using Sportlogiq tracking of the previous three NHL seasons at 5-on-5). **The Sportlogiq tracking underneath is not public**, so the raw counts cannot be re-derived from anywhere else — the figures are quoted exactly as the article gives them, and the 2018-19 dating is inferred from the publication date rather than stated. The pattern is what matters: these are among the best shooters alive, and if they cannot score from above the circles, you cannot either.
 
@@ -520,6 +520,8 @@ Never: Play the puck or touch the goalie after a defender has shoved you into th
 
 ## Shooting Off the Rush
 
+![](diagram:shooting-rush-wide-and-the-trailer)
+
 ```facts
 Read: Release as the defender's stick is closing, not after — waiting for a "good spot" shoots into a blocked lane
 Action: Release off the foot you do not normally release off; check which foot that is on the wing you play
@@ -546,8 +548,6 @@ The underlying instruction is the one that transfers: **release off the foot you
 
 **Know what the second wave is doing.** If you have a trailer coming late into the high slot, delaying a beat and passing back to them is often a better chance than your own shot from the wing — because it converts a perimeter shot into a slot shot. See [Zone Entries](../systems/zone_entries.md) for how rush attacks are structured, and [Defending the Rush](../systems/defending_the_rush.md) for the other side of it.
 
-![](diagram:shooting-rush-wide-and-the-trailer)
-
 ---
 
 ## Breakaways and Shootouts — the Shooter's Side
@@ -571,6 +571,8 @@ If neither of you commits, you run out of ice and lose — so you cannot simply 
 
 ### Approach speed — slower than you think
 
+![](diagram:shooting-breakaway-approach)
+
 ```facts
 Action: Arrive at the top of the circles with less speed than you feel like carrying
 Risk: Full flight cuts you to one option and hands the goalie their easiest read
@@ -586,8 +588,6 @@ Read: A deke needs room; you cannot pull the puck across your body once you are 
 - **A deke needs room to happen in.** You cannot pull the puck across your body and get it back if you are already past the post.
 
 **A change of pace beats raw pace.** Come in hard to the blue line, then ease off through the top of the circles and accelerate again as you make your move. The deceleration pulls the goalie out of their retreat rhythm; the re-acceleration arrives before they have re-set. That single pattern is worth more than any hand skill. **That last ranking is coaching craft rather than a measured finding, and it reaches beyond the sources behind it.** The two coaching sources that teach the change of pace — the IIHF's coach-development manual and Edge Ice Academy — describe beating a *defender* one-on-one, and neither measures it; no source held for this document measures a change of pace against a goaltender, or against hand skill. See [Time and Space](../hockey-iq/time_and_space.md).
-
-![](diagram:shooting-breakaway-approach)
 
 ### Deception — take their eyes off the puck
 

@@ -91,6 +91,8 @@ Key: Your low positioning is what gives the defencemen a safe pass — if you do
 
 ### Defensive Zone: Carrying the Puck — Under Pressure
 
+![](diagram:centre-out-of-the-middle)
+
 ```facts
 Position: Low in the defensive zone near the boards or behind the net
 Never: Carry through traffic in your own zone — the middle of your own end is the most expensive place to lose it, on coaching consensus reasoned from shot danger and recovery time, not measurement
@@ -106,9 +108,6 @@ Priority: Getting the puck out of danger beats making a great play
 
 A **rim** and a **reverse** are different plays and worth keeping straight: a rim sends the puck *onward* around the boards in the direction you're facing; a reverse sends it *back the way it came*, against the flow of the forecheck, usually to your defence partner or a defenceman arriving behind you. A reverse beats pressure that has over-committed; a rim beats pressure that is sealing you in.
 
-
-![](diagram:centre-out-of-the-middle)
-
 **Goal:** Relieve pressure and safely move the puck toward an exit.
 
 **Key considerations:** The middle of the ice in your defensive zone is the worst place to lose the puck — **coaching consensus reasoned from shot danger and recovery time, not a measured ranking**, and no study ranking turnovers by where on the ice they happen was found for this document — read that as "none found here", not as proof that none exists. [Risk Management](../hockey-iq/risk_management.md) grades every area of the ice by what a turnover there costs you, and owns that grading. If you are under pressure in the middle, move to the boards or behind the net first, then distribute.
@@ -116,6 +115,8 @@ A **rim** and a **reverse** are different plays and worth keeping straight: a ri
 ---
 
 ### Defensive Zone: Pressuring an Opponent with the Puck
+
+![](diagram:centre-low-zone-collapse)
 
 ```facts
 Position: Low in the zone, supporting the strong-side defender
@@ -142,8 +143,6 @@ The wingers stay high covering the points (the areas near the blue line where th
 
 **Key considerations:** Your responsibility shifts with the puck. Watch the play and move with it. The wingers are not coming down to help in the corner unless they're following their own man — that role belongs to you. If you stay high in the slot when the puck is in the corner, the strong-side defender is alone against the puck carrier and is likely to lose the battle. When you leave the slot to help in the corner, the **weak-side winger** should collapse from the point to cover the high slot in your absence. Anyone with a clear view can call the rotation (you, the weak-side defender, or the winger themselves) — speak up early so the slot is never empty.
 
-![](diagram:centre-low-zone-collapse)
-
 **Exception — strong-side winger has walked down with their man:** If the opposing strong-side defenseman has come down off the point and the strong-side winger has followed them, you have extra help low. Read the situation: if your defender and the winger have the puck battle covered, hold the slot rather than committing all the way to the corner.
 
 **Exception — weak-side winger is already low:** If the weak-side opposing defenseman has come down off the point and the weak-side winger is following them, the high-slot collapse isn't available to you when you commit to the corner. Weigh whether the corner needs your help more than the slot needs coverage — and call clearly so the defenders know what to expect.
@@ -151,6 +150,8 @@ The wingers stay high covering the points (the areas near the blue line where th
 ---
 
 ### Defensive Zone: Without the Puck — Getting Open for the Breakout
+
+![](diagram:centre-swing-low)
 
 ```facts
 Position: Swinging low — inside the faceoff dots and below the hash marks, in your strong-side faceoff circle
@@ -165,8 +166,6 @@ Key: If you are too high when your defenceman gets the puck, they have no safe o
 *This is the situation where your team is about to have the puck: your defencemen are winning it or have won it, and you are getting open to receive. It is not defensive coverage — that is the section above.*
 
 **Where to be:** Swinging low in the defensive zone — **inside the faceoff dots and below the hash marks**, which in practice means in your strong-side faceoff circle rather than out on the boards. The boards are the strong-side winger's ice; if you drift out there, one opposing player can cover the two of you and the defenceman loses the middle-lane option entirely. Move toward where the puck is going. Full detail in [Breakouts](../systems/breakouts.md), which is the authority for breakout positioning.
-
-![](diagram:centre-swing-low)
 
 > **Low support is a coaching choice, and the authority says so.** The five-role structure described here belongs to the **conventional swing breakout**, the version taught by most development programmes and assumed throughout this guide. The two alternatives you will actually meet: under a **centre fly** (also "centre high") you deliberately leave the zone early up the middle to stretch the ice, and the **weak-side winger drops in** to take the low support job instead; under a **flat or spread breakout** both wingers hold higher near the blue line and the exit is made with longer passes. **Find out which one your team plays** — the failure that produces most weekend breakdowns is a centre flying in a system where the wingers are holding high, leaving nobody underneath the puck at all. See [Breakouts](../systems/breakouts.md).
 
@@ -186,6 +185,8 @@ The transition zone is where the center connects defence and attack. You are the
 
 ### Neutral Zone: Carrying the Puck — Free Space
 
+![](diagram:centre-nz-deciding-from-the-middle)
+
 ```facts
 Position: Through the middle of the ice, leading or driving the rush
 Action: Carry with pace through the centre of the ice and distribute to the best option
@@ -200,8 +201,6 @@ Never: Carry through the middle with your head down — you cannot brace for a h
 
 **What to do:** Carry with pace through the center of the ice. Read the play — if a winger is open, pass and let them enter in stride. If you have space, carry through yourself. Distribute to the best option and keep the play moving at speed.
 
-![](diagram:centre-nz-deciding-from-the-middle)
-
 **Goal:** Lead or direct a controlled transition through the neutral zone and into the offensive zone.
 
 **Key considerations:** The center of the ice is the best place to make decisions from — you can see both wingers and both defensemen. Use that view. Don't carry for its own sake; if a teammate is in a better position, move the puck.
@@ -209,6 +208,8 @@ Never: Carry through the middle with your head down — you cannot brace for a h
 ---
 
 ### Neutral Zone: Carrying the Puck — Under Pressure
+
+![](diagram:centre-nz-get-it-to-the-outside)
 
 ```facts
 Position: Through the middle, or shifting to the boards if the middle is congested
@@ -222,9 +223,6 @@ Goal: Maintain possession through the neutral zone or safely advance the puck
 **Where to be:** Through the middle, or shifting to the boards if the middle is congested.
 
 **What to do:** If pressured in the middle of the neutral zone, move the puck to a winger or chip it off the boards. Don't try to carry through heavy traffic in the middle: coaching material puts the making of **odd-man rushes** — attacks where the attackers outnumber the defenders coming back, like a 2-on-1 or a 3-on-2, and a high-danger scoring chance — in the middle third of the ice. **That is coaching consensus rather than a tracked figure**: no public data classifies an odd-man rush by the play that created it. Quick decision-making is more valuable than individual skill here.
-
-
-![](diagram:centre-nz-get-it-to-the-outside)
 
 **Goal:** Maintain possession through the neutral zone or safely advance the puck.
 
@@ -258,6 +256,8 @@ Key: If you don't initiate pressure, the opponent gets a free run at your defenc
 
 ### Neutral Zone: Without the Puck — Supporting the Rush Through the Middle
 
+![](diagram:centre-nz-arrive-behind-the-puck)
+
 ```facts
 Position: Through the centre of the neutral zone, level with or slightly behind the puck
 Action: Be a moving target — keep pace with the play and stay connected to both wingers
@@ -280,9 +280,6 @@ Rule: Tag-up is a five-man act — the offside is nullified only when every play
 
 The centre-specific version: **you set the line's pace into the zone.** You are attacking through the middle, the widest and most-watched lane, so it is tempting to slow down and be safe. Instead, time your stride so the puck crosses first and arrive at full speed. If you coast, both wingers arrive with you, and a line that enters slowly is exactly the one a defence stands up at the blue line. ⚠️ **Do all of it with your head up.** Arriving at speed through the middle, and counting your linemates out to tag up, both invite you to drop your eyes in the one lane where open-ice contact happens — and you cannot brace for a hit you cannot see. [Body Contact and Battles](../technique/body_contact_and_battles.md#keep-your-head-up-always-this-one-rule-prevents-most-of-it) owns that rule, the reason for it, and the one book that protects you *less* when your head is down, which is the British reader's.
 
-
-![](diagram:centre-nz-arrive-behind-the-puck)
-
 ---
 
 ## Offensive Zone
@@ -292,6 +289,8 @@ The center operates in the most dangerous part of the offensive zone — the slo
 ---
 
 ### Offensive Zone: Carrying the Puck — Free Space
+
+![](diagram:centre-oz-slot-options)
 
 ```facts
 Position: In the slot — between the two faceoff circles, from the top of the circles down to the front of the net
@@ -306,9 +305,6 @@ Action: Keep moving and keep the puck moving
 
 **What to do:** Look to shoot from the slot. On the coaching-consensus conversion ranges [Shooting](../technique/shooting.md) owns — roughly 10–15% from the slot against 2–4% from the perimeter, **on a source that names no dataset**, so trust the gap rather than the decimals — a slot shot is worth roughly three to seven times a perimeter one. If defenders close in, distribute to a winger on the half-wall (the boards area roughly level with the faceoff dot — between the corner and the point) or in the circle, or to a defenseman at the point for a shot. Keep moving and keep the puck moving.
 
-
-![](diagram:centre-oz-slot-options)
-
 **Goal:** Create a shot on net, either directly or by finding a teammate in a better position.
 
 **Key considerations:** The slot is where the most goals are scored — close to half of NHL goals from the inner slot and just over a quarter from the outer slot, on Sportlogiq tracking of three seasons at five-on-five that is not public and cannot be re-derived ([Shooting](../technique/shooting.md) owns the shot-location figures). If you have the puck there with space, shoot. Don't overthink it. If you're covered, quick passing creates the next opportunity.
@@ -316,6 +312,8 @@ Action: Keep moving and keep the puck moving
 ---
 
 ### Offensive Zone: Carrying the Puck — Under Pressure
+
+![](diagram:oz-behind-the-net)
 
 ```facts
 Position: In the slot, behind the net, or along the boards near the circles
@@ -330,8 +328,6 @@ Key: Behind the net you can see the whole ice and decide without risking a direc
 
 **What to do:** Use your body to protect the puck. Look for a quick outlet to a winger on the half-wall or the defenseman at the point. If you go behind the net, use it as a pivot point — come out the other side or find a late-arriving teammate.
 
-![](diagram:oz-behind-the-net)
-
 **Goal:** Maintain possession under pressure and keep the offensive play alive.
 
 **Key considerations:** Behind the net is a useful safe area. From there you can see the whole ice and make a decision without being at immediate risk of a direct shot or a dangerous turnover.
@@ -339,6 +335,8 @@ Key: Behind the net you can see the whole ice and decide without risking a direc
 ---
 
 ### Offensive Zone: Pressuring an Opponent with the Puck
+
+![](diagram:forecheck-212)
 
 ```facts
 Action: Be first in as F1 — forecheck through the middle at the opposing defenceman, or wherever the puck has gone
@@ -393,6 +391,8 @@ Key: Keep moving — a stationary centre in the slot is easy to cover
 
 #### The crease is the one line you don't cross
 
+![](diagram:oz-net-front-screen)
+
 ```facts
 Rule: Screening from outside the crease without contact is legal; the sentence in NHL and IIHF Rule 69.1 that voids a goal for positioning requires the attacker to have entered the crease, and both books' tables allow a screen set outside it (NHL Table 14; IIHF 2025/26 Table 16, Situation 5E)
 Rule: No book voids a goal for a clean screen set from outside the crease — NHL and IIHF Rule 69 keys every goal-voiding positioning clause to the crease, USA Hockey writes no goaltender-vision provision in either volume, and Hockey Canada's two goalie-view references reach only a player in the crease
@@ -443,6 +443,8 @@ The full rules are in [Rules Primer](../foundation/rules_primer.md) and [Offensi
 
 ### Faceoffs — a defining responsibility of the center
 
+![](diagram:faceoff-dzone-alignment)
+
 ```facts
 Priority: Ten or fifteen draws a game matter enormously — your own end, special teams, the last minute, and after an icing; the count is a coaching estimate, not a measurement
 Read: Own end — win it back to your defenders, ideally the boards-side one for a quick rim out; their end — to a defender for a one-timer, or back to a winger in the circle
@@ -484,6 +486,8 @@ So:
 
 ### Handling the puck — catching it is free, holding it is not
 
+![](diagram:the-puck-decides-not-you)
+
 ```facts
 Rule: Catching the puck out of the air is not penalised in any book — NHL and IIHF 67.2 ask only that you "immediately place it or knock it down to the ice", Hockey Canada 10.2(a)(iii) exempts an immediate drop, and USA Hockey's permission is casebook, not rule text (Situation 1 to Rule 618)
 Never: Hold a puck you have caught, carry it, or drop it somewhere better. Knock it straight down where you caught it instead
@@ -507,6 +511,8 @@ Rule: With your own net empty, a skater covering a puck itself in the crease con
 
 ### Power Play (your team has the man advantage)
 
+![](diagram:pp-131)
+
 ```facts
 Position: In the 1-3-1 you most often play the bumper — the middle of the three across the slot, between the point man and the net front
 Action: Be a passing target for both half-walls, take quick shots from the slot, screen the goalie and tip point shots
@@ -521,8 +527,6 @@ Key: Passing in is an alternative to carrying in, not an upgrade on it — the t
 
 In the **1-3-1**, widely described as the modern default, the centre most often plays the **bumper**: the middle of the three across the slot, sitting in the soft spot between the single point man and the net-front player. Your job is to be a passing target for both half-walls, take quick shots from the slot, screen the goalie, and tip point shots. The bumper is the hardest player for a penalty kill to cover, because a **box** has nobody assigned to the middle — which is exactly why a kill switches to a **diamond** against you.
 
-![](diagram:pp-131)
-
 In an **umbrella** or an **overload** you will usually be low or on the strong-side wall instead. There is no bumper in a true umbrella, so don't go looking for the spot you're used to.
 
 **On zone entries:** You often drop back to receive the breakout pass and become the puck carrier through the neutral zone (using drop passes or swing-entries with the wingers). Once in the offensive zone, you transition into the bumper or slot position. Avoid skating straight into the opposing defence, and avoid dumping the puck into traffic. Both hand the puck over; what you want is a **controlled entry** — carried into space, or passed in across the line.
@@ -530,6 +534,8 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 **Passing in is an alternative to carrying in, not an upgrade on it.** The tracked figures put pass-ins and carry-ins about level on the power play and carrying clearly ahead at even strength, so pass in because the passing lane is the one that is open, not because passing beats carrying. [Zone Entries](../systems/zone_entries.md) covers those figures, the league they were measured in and their limits.
 
 ### Penalty Kill (your team is short-handed)
+
+![](diagram:pk-diamond)
 
 ```facts
 Position: In a box you are one of the two high players, each responsible for one point — there is no single "top" to drift into
@@ -566,6 +572,8 @@ Convention: How much your team blocks at all is a coaching choice, not a law —
 
 ### Icing
 
+![](diagram:icing-gaining-the-line)
+
 ```facts
 Risk: Your icing risk is the neutral-zone dump nobody is chasing, not the defensive-zone clear
 Technique: Carry the extra stride so the puck is on your stick as it touches the red line — that alone makes the dump legal
@@ -591,6 +599,8 @@ One point on the matchup, because it is often misquoted: the bar falls only on t
 
 ### Backchecking — the middle lane is usually yours
 
+![](diagram:centre-backcheck-middle-lane)
+
 ```facts
 Convention: The centre takes the middle lane and the wingers the outside — the most common assignment and the default here, but a coaching choice, not a law
 Read: Not every team gives the centre the middle — some give it to the first man back, or pick up man-on-man from the puck outward; find out which yours plays
@@ -603,8 +613,6 @@ Action: Once you're set, become the centre again — cover the high slot and sup
 ```
 
 When your team loses the puck going the other way, the centre normally has the single most important backcheck assignment in hockey: **the middle lane**.
-
-![](diagram:centre-backcheck-middle-lane)
 
 > **Which backchecker owns which lane is a coaching choice, not a law.** The positional version described here — centre in the middle, wingers outside — is the most common and is the default assumed throughout this guide. Other teams use **first man back takes the middle**, whoever that is, which is common when the centre is the one caught deep and common in rec hockey. Others pick up **man-on-man from the puck outward**. Find out which your team plays. [Defending the Rush](../systems/defending_the_rush.md) is the authority and sets them out, along with the four named team backchecking systems that decide which assignment applies; under every one of them, somebody owns the middle and nobody assumes it is somebody else.
 

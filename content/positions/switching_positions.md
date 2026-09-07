@@ -71,6 +71,8 @@ What you actually lose is a set of location reflexes — where to look first, wh
 
 ## Wing → centre
 
+![](diagram:centre-swing-low)
+
 ```facts
 Position: Under a low zone collapse your defensive-zone responsibility moves with the puck — low to the corner when it is low and strong-side, back to the high slot when it is not
 Convention: Zone, man-on-man and hybrid are coaching choices, not laws. Ask your coach which one your team plays before your first shift
@@ -93,8 +95,6 @@ The most common switch in hockey, and the biggest step up in responsibility shor
 
 **First thing to work on:** the swing low. In the conventional swing breakout, the centre gets **inside the faceoff dots and below the hash marks** — the short lines painted outside each end-zone circle, roughly level with the dot, which coaches use as the depth reference for the low half of the zone — so the defenceman has a middle-lane option — and the commonest new-centre error is standing where a winger stands, out on the wall, where one opponent can cover two of you. **That is the conventional swing breakout specifically.** Under a **centre fly** you deliberately leave early up the middle and the weak-side winger drops in to take low support; under a **flat or spread breakout** the wingers hold higher and the exit is made with longer passes. Find out which you are in — [Breakouts](../systems/breakouts.md) is the authority and [Center](center.md) sets out the consequences of getting it wrong.
 
-![](diagram:centre-swing-low)
-
 **What to stop worrying about:** scoring. Your value as a new centre is almost entirely in being where you are supposed to be, taking the draw, and being available under the puck. The offence comes later and it comes from the middle of the ice, which you are now standing in.
 
 ### Helmet-to-helmet contact before the drop
@@ -113,6 +113,8 @@ Getting low is right — you react faster and you cannot be pushed off the dot �
 ---
 
 ## Centre → wing
+
+![](diagram:winger-high-then-down-the-wall)
 
 ```facts
 Position: Your lane is the outside third of the ice on your side, running the length of the rink
@@ -136,8 +138,6 @@ Usually experienced as a demotion. Usually isn't — coaches move centres to the
 - **A faceoff job you have never had: standing still on the hash marks.** You have spent your hockey life in the dot. Off it, you are one of the players who can lose a draw before it starts without touching the puck, and the cost lands on somebody else. **Hockey Canada writes the triggers most plainly:** where a player *"other than the player taking the face-off, moves off-side, makes physical contact with an opponent or encroaches on the face-off circle prior to the dropping of the puck, then the offending team's player taking the face-off will be ejected from the face-off"* (**Rule 6.2(a)**). ⚠️ **Three triggers, and the middle one crosses no line** — a glove or a shoulder on the winger opposite you is enough on its own. **The four books differ on the detail** — USA Hockey's clause for the player off the dot asks instead whether the player *"fails to maintain their proper position"* (**Rule 613(d)**), which is about where you are standing rather than what you touched, and its contact rule reaches *"any player facing-off"* (**Rule 613(e)**), meaning the two in the dot. [Winger](winger.md) sets all four out and is the authority; what is new here is only that the exposure is yours now and it was not before. Stand still, and keep your hands to yourself until the puck lands.
 
 That point-coverage job — high on your side while they have the puck, down the wall the moment you win it — is drawn in [Winger](winger.md).
-
-![](diagram:winger-high-then-down-the-wall)
 
 **First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger and it is not something a centre gets much practice at — puck on the far side of your body from the checker, backside into them, feet wide, and know where the puck is going before you arrive. **One thing overrides all of it:** never turn your back to the wall and never duck. That is not a rule for a checker arriving fast only — USA Hockey's warning on a hit from behind is that *"even a light hit from behind could inflict a severe head or neck injury"*, and the head-down collision that ducking produces can break your neck at walking speed. Skates parallel to the wall, take the contact on your forearm and hip, head up and chin off your chest; if you are already facing the wall and cannot turn, spread the load with your stick and gloves up on the glass. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers the technique and that override.
 
@@ -174,6 +174,10 @@ So the first thing a converting forward needs is not tactical. It is:
 
 ### "Force them outside" and "getting beaten wide" are not the same thing
 
+![](diagram:forcing-them-outside)
+
+![](diagram:getting-beaten-wide)
+
 ```facts
 Technique: Angle your body so the inside lane is shut and the only route runs toward the boards, where the wall becomes a second defender — the angle is yours everywhere; the contact is not
 Rule: Closing an angled gap is legal competitive contact (USA Hockey 604(c) Note). Riding a carrier into the wall is a body check, barred at 12U and below, all Girls'/Women's and non-check Adult classes (604(a)), and at U13 and below, female hockey and any Member-approved division (Hockey Canada 7.3(a))
@@ -202,15 +206,13 @@ New defencemen routinely hear both instructions and conclude the position contra
 - **Getting beaten wide** means the attacker gets past your outside shoulder with open ice behind you. You are no longer between them and the net, and there is nothing left. ⚠️ **And chasing him from behind, your stick goes on the puck and nothing else.** A hook, trip, hold or slash from behind that denies the scoring chance is a **penalty shot** rather than a two-minute penalty under the NHL and IIHF books, and an **awarded goal** if your own net is empty: **NHL Rule 25.1** awards the goal where an attacker with possession and control *"without a defending player between himself and the opposing goal … is prevented from scoring as a result of an infraction committed by the defending team"*, and carries no "from behind" test at all. ⚠️ **The other two books are narrower here rather than the same.** **USA Hockey 616(a)** awards *"a penalty shot/optional minor penalty"*, so the referee may give the minor instead — and its **616(b)** awards the empty-net goal only where *"an obvious and imminent goal has been prevented by the fouled from behind provisions"*, so that test survives with the net empty. **Hockey Canada 4.12(a)** routes its awarded goal through the breakaway criteria of **4.11(a)(i)**, which require that the puck carrier *"is tripped or fouled from behind, or fouled by the goaltender."* [Defending the Rush](../systems/defending_the_rush.md) sets out the four books' penalty-shot and awarded-goal conditions and their rule text. **The limits on contact are the ones above, in this section**, and they are what governs whether you may put a body on him at all.
 - **How much the wall does for you depends on the width of the sheet you are standing on.** [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns that limit and states it as a comparison between an 85 ft sheet and a 98 ft one: *"On narrow ice, the wall is your second defender. On wide ice, an attacker forced outside still has room to keep skating, so gap control and stick position matter more than steering."* ⚠️ **Do not read "IIHF" as "wide ice".** **IIHF Rule 1.2** gives a *range* — *"The official size of the rink shall be 60m long and 26m to 30m wide"* — and 26 m is 85.3 ft, fractionally **wider** than the 85 ft of a full NHL sheet under **NHL Rule 1.2** rather than a different kind of rink. So the IIHF book describes everything from NHL width to about thirteen feet more, not one wide sheet. 🇬🇧 **Assume the opposite of wide.** The **IHUK In-House Rules 2026-27, Rule 1** authorise rinks *"with a non-standard playing surface (below 56 m × 26 m)"* — short of IIHF Rule 1.2 on **both** dimensions — *"for all levels of hockey, except"* two named buildings, **Sutton in England and Coatbridge in Scotland, each *"permitted up to U16 only"***; and **England Ice Hockey's Rules & Regulations 22.2** says the same in its own words, approving rinks *"of a non-standard size (below 56m x 26m)"*. [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) puts the consequence bluntly: *"your working assumption should be that your rink is smaller than both the NHL standard and the IIHF standard."* **On a narrow sheet the wall does more of the work for you, not less.** Measure the building you actually play in.
 
-The two diagrams that follow are the same rush. The carrier stands on the same square foot of ice in both **and skates the same lane in both**; the only player who moves is the defenceman, eighteen feet up the ice. That is deliberate, because it is the point: **what separates the two is not where the carrier goes, it is where you are standing.** Being beaten wide does not mean the carrier ends up somewhere different from where you were sending him — it means there is nobody inside him when he decides where to go next.
-
-![](diagram:forcing-them-outside)
-
-![](diagram:getting-beaten-wide)
+The two diagrams above are the same rush. The carrier stands on the same square foot of ice in both **and skates the same lane in both**; the only player who moves is the defenceman, eighteen feet up the ice. That is deliberate, because it is the point: **what separates the two is not where the carrier goes, it is where you are standing.** Being beaten wide does not mean the carrier ends up somewhere different from where you were sending him — it means there is nobody inside him when he decides where to go next.
 
 The instinct to build is therefore *stay on the defensive side of the puck* — anything that puts an attacker between you and your net has already gone wrong — not *never let anyone get to the outside*. Gap distances themselves belong to [Defending the Rush](../systems/defending_the_rush.md), which covers them: 2–3 stick lengths in the neutral zone, closing to about a stick and a half at the red line and one stick length at your own blue line. That document calls them a guide rather than a law — they move with your backward speed and the attacker's skill — and only the neutral-zone figure comes from a published coaching source; no source was found for the red-line or blue-line ones.
 
 ### What else is genuinely new
+
+![](diagram:defender-pair-overview)
 
 ```facts
 Mindset: As a defenceman there is one layer behind you now, not two — that changes how you weigh risk, not how hard you compete
@@ -304,6 +306,8 @@ Four things make this switch different in kind from the others.
 
 ## Playing your off wing
 
+![](diagram:off-wing-open-to-the-ice)
+
 ```facts
 Position: Off wing means the puck sits on the inside of your body, stick toward the middle of the ice — more options for moving it and a better forehand angle from prime mid-ice
 Convention: The off-wing half-wall is standard on the power play because it keeps the cross-seam one-timer live — Special Teams covers that
@@ -320,8 +324,6 @@ Your **off wing** means a left-shot playing right wing, or a right-shot playing 
 **Why coaches do it.** Entering the offensive zone with your stick toward the centre of the ice opens more options for moving the puck, and gives a better angle for a forehand shot from a prime mid-ice location; a winger coming in on their strong side has the stick along the boards and needs more work and more time to get into a shooting position. On the power play the **off-wing half-wall is standard**, precisely because it puts the puck on your inside hand and makes the cross-seam one-timer live at all times — [Special Teams](../systems/special_teams.md) covers that. The CARHA Hockey material, **citing nhlspecialteams.com rather than any tracking of its own**, notes that at even strength the majority of professionals still play their strong side, and that it is typically players with stronger puck-handling who elect the off wing.
 
 **What actually gets harder, and the fix.** The cost is on the boards in your own end. A breakout pass up the wall that used to arrive on your forehand now arrives on your backhand, which costs a beat and can weaken the exit. **Receive it open to the ice.** [Breakouts](../systems/breakouts.md) covers that reception and teaches it for exactly this puck: **open your hips to the ice** as the puck arrives, so you can see the full rink and the puck at once, and **get a step or two off the boards** — that separation is what leaves you able to skate, pass to the centre, pass back to your defenceman *or* attack the middle. Flush against the wall you can do one of those. If the puck arrives hard on the boards, angle a skate to kill it off the wall onto your stick rather than reaching and missing. **Never receive it with your back to the boards, and never duck.** Skates parallel to the wall, take the contact on your **forearm and hip**, head up and chin off your chest. **The two prohibitions are there for two different injuries.** Turning your back converts the contact into a hit from behind, which you cannot see coming or brace for — and USA Hockey's warning to the player delivering one is that *"even a light hit from behind could inflict a severe head or neck injury."* Ducking is the posture USA Hockey's *Heads Up Hockey* materials tie to almost all on-ice cervical spine injuries in hockey: a chin tucked to the chest straightens the cervical spine, and of a head-first collision with the boards or a goal post in that position USA Hockey says a player *"doesn't have to be going at full speed for this to happen — it can occur at walking speed."* What occurs at walking speed is the **injury**, not merely the contact — and the finding is not USA Hockey's own: it credits *"research done among a wide range of hockey players"* and prints the citation beneath it, **Charles H. Tator and colleagues, *Spinal Injuries Due To Hockey*, Canadian Journal of Neurological Sciences 11:34–41.** No reception is worth either trade, and there is no version of the situation in which either is the right thing to do. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers that.
-
-![](diagram:off-wing-open-to-the-ice)
 
 **The source for this section teaches a different reception, and this document does not follow it there.** The CARHA material's adjustment for the same backhand puck is to **put your back to the boards to receive it**. It is stated here rather than smoothed over, because the two descriptions genuinely disagree about how to meet that pass — but the one taught above is the [Breakouts](../systems/breakouts.md) version, for a reason that is not a claim about which reads the pass better: it never asks you to turn your back to the wall, which is the one orientation this guide rules out everywhere it comes up. The rest of CARHA's account of the off wing — the shooting angle, the backhand cost, the strong-side majority — is carried here in full.
 

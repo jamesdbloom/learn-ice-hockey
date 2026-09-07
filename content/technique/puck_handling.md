@@ -349,6 +349,8 @@ The whole idea in one sentence: **put your body between the checker and the puck
 
 ### Puck on the far side
 
+![](diagram:puck-on-the-far-side)
+
 ```facts
 Position: Puck on the side of your body away from the pressure, with your torso as the wall between them
 Never: Let the puck sit on the pressure side — their stick has a shorter distance to travel than yours
@@ -364,9 +366,6 @@ The foundation. The puck lives on the **side of your body away from the pressure
 - The stick should be on the far side of the puck too, so that a poke has to go through the puck *and* your blade.
 
 This is why hands-away-from-the-body matters so much. A far-side puck is only available to a player whose hands can operate wide.
-
-
-![](diagram:puck-on-the-far-side)
 
 ### Wide, low base
 
@@ -784,6 +783,8 @@ You can beat one player. You cannot beat two, and pretending otherwise is how a 
 
 ### When you are the last player back
 
+![](diagram:the-last-player-back)
+
 ```facts
 Never: Try a move when losing the puck means an odd-man rush against you — always
 Convention: How much individual carrying a team wants varies enormously — some coaches want the first available pass, every time
@@ -794,8 +795,6 @@ Convention: The default assumed here is a possession-oriented breakout with a 2-
 If losing the puck means an odd-man rush against you, the move is off. Always.
 
 > **A coaching choice, named:** how much individual puck carrying a team wants varies enormously. Some coaches want defencemen to skate the puck out of the zone whenever the lane is there; others want the first available pass, every time, with no exceptions. Some want wingers to attack 1-on-1 on the wall; others want everything chipped behind the defence for a forecheck. The default assumption here is a possession-oriented breakout with a **2-1-2 forecheck**, but the honest answer is that this is your coach's call. Ask.
-
-![](diagram:the-last-player-back)
 
 ---
 

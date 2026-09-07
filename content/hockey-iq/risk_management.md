@@ -140,6 +140,8 @@ A turnover has a direction, and the direction changes the cost more than the loc
 
 ### 1. Never pass D-to-D through the slot. Go behind the net instead
 
+![](diagram:breakout-d-to-d)
+
 ```facts
 Never: Pass D-to-D through your own slot — an interception leaves the interceptor in the slot facing your goalie
 Action: Take the D-to-D pass behind the net instead — a longer route by maybe eight feet, and half a second slower
@@ -153,8 +155,6 @@ Action: Find out where your coach draws the line on a D-to-D exchange
 **Why not through.** A pass through your own slot travels across the highest-danger area on the ice, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
 
 **What to do instead.** Take it behind the net. It is a longer route by maybe eight feet, it takes half a second longer, and a failure there produces a battle behind the goal line rather than a shot from twenty feet.
-
-![](diagram:breakout-d-to-d)
 
 *Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, far enough out that an interception is not a slot chance — [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) has that geometry. Know where your coach draws the line.
 
@@ -178,6 +178,8 @@ A **blind pass** is one made without seeing the target — you throw it to where
 
 ### 3. Never make a cross-ice pass in your own defensive zone
 
+![](diagram:cross-ice-in-your-own-end)
+
 ```facts
 Never: Make a cross-ice pass in your own defensive zone — it crosses every forechecking stick and spends the longest of any pass in the air
 Risk: If it is picked off, it is picked off by someone whose momentum already carries them toward your net
@@ -192,8 +194,6 @@ Convention: Nothing in the rulebook touches the cross-ice pass in your own zone 
 There is one more cost people miss: even when it *works*, a cross-ice pass in your own end usually puts your teammate under immediate pressure facing the boards, because the forecheck slid across with the puck. You took a big risk to create a worse situation.
 
 **What to do instead.** Move the puck north or move it behind the net. If the only outlet is genuinely on the far side, go D-to-D behind the goal line first and *then* north — two low-risk passes beat one high-risk one.
-
-![](diagram:cross-ice-in-your-own-end)
 
 *Coaching convention.* Nothing in the rulebook touches this. Some teams will accept a cross-ice pass above the tops of the circles, where an interception is not a slot chance; almost nobody accepts one below them.
 
@@ -400,6 +400,8 @@ This is the same order taught in [Defender](../positions/defender.md) — **Quic
 
 ### Neutral zone — you are carrying through the middle third
 
+![](diagram:centre-nz-get-it-to-the-outside)
+
 ```facts
 Priority: Stretch pass behind their defence → winger with speed on the wall → middle lane with support → gain the line with control → chip or dump
 Read: Anyone behind their defence? That is the highest upside available here, and it travels away from your own net
@@ -417,9 +419,9 @@ Options: Nothing there? Chip the puck past their defenceman into space and race,
 5. **None of the above?** → Chip the puck past their defenceman into space and race, or dump to the far corner and forecheck.
 6. **Never at any point in this list:** turn back into the middle of the ice at your own blue line, or make an east–west pass across centre ice. Both are named across coaching material as prime manufacturers of 2-on-1s against — *coaching consensus, not a counted comparison; no public data ranks odd-man rushes by the play that created them.* [Defending the Rush](../systems/defending_the_rush.md) lists neutral-zone turnovers as one of five ways an odd-man rush gets manufactured.
 
-![](diagram:centre-nz-get-it-to-the-outside)
-
 ### Offensive zone — you have the puck below or at the tops of the circles
+
+![](diagram:oz-half-wall-options)
 
 ```facts
 Priority: Lane to the net with traffic → pass into the middle → puck to the net for a rebound → cycle → point with a screen → chip back deep
@@ -439,8 +441,6 @@ Never: Force it through their blue line on the way out — losing the puck in th
 4. **Am I under pressure with support below me?** → Take it behind the net or to the corner and cycle. You keep the puck, you keep them in their end, and you keep tiring them out.
 5. **Is the point open with a clear lane and a screen set?** → Back to the point. But "open" means a lane to the *net*, not just a lane to the *defenceman*.
 6. **Nothing at all?** → Chip it back deep and re-forecheck. **Do not force it through their blue line on the way out.** Losing the puck in their corner is free; losing it at their blue line with your defence pinched is a rush against.
-
-![](diagram:oz-half-wall-options)
 
 ---
 
@@ -508,6 +508,10 @@ You are anticipating if you can answer *why* before you move — the carrier's h
 
 ### The second test: who is behind you?
 
+![](diagram:pinch-centre-high)
+
+![](diagram:pinch-centre-below-the-goal-line)
+
 ```facts
 Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am right and I still miss it?"
 Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
@@ -520,11 +524,7 @@ Even a well-read risk is a bad risk if nobody is covering the space you left. **
 
 A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck, because the centre becomes the third defender and the worst case is a 2-on-2. The same pinch with your centre below the goal line is a bad pinch even if you win the puck, because you were one bad bounce from a 2-on-1 and you did not know it.
 
-Those are the same picture twice, differing only in where the centre is. What the pinching defenceman can see of the puck and the man on the wall is identical in both:
-
-![](diagram:pinch-centre-high)
-
-![](diagram:pinch-centre-below-the-goal-line)
+Those two pictures are the same picture twice, differing only in where the centre is; what the pinching defenceman can see of the puck and the man on the wall is identical in both.
 
 **So the full test, in three questions you can run in half a second:**
 
