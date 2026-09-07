@@ -24,8 +24,26 @@
  *   §1, D-to-D through the slot ....... `breakout-d-to-d`, already referenced at
  *                                       risk_management.md:148 before this file
  *                                       existed. Referenced, not redrawn.
- *   §4, both defencemen to the puck ... `defensive-zone-support`,
- *                                       `loose-puck-who-goes`. Referenced.
+ *   §4, both defencemen to the puck ... `never-both-defencemen-to-the-puck` below.
+ *                                       ⚠️ THIS LINE USED TO SAY "Referenced" AND
+ *                                       NAMED `defensive-zone-support` AND
+ *                                       `loose-puck-who-goes`. Neither was ever
+ *                                       wired up — grep for `diagram:` in
+ *                                       risk_management.md and neither id
+ *                                       appears — so the claim was false the
+ *                                       whole time it stood. Checked on the
+ *                                       merits too: `defensive-zone-support` is a
+ *                                       breakout-options picture, not a "who goes
+ *                                       to a loose puck" one, and
+ *                                       `loose-puck-who-goes` draws the CORRECT
+ *                                       structure (one goes, one supports, a
+ *                                       third holds the net front) rather than
+ *                                       the failure this section teaches — its
+ *                                       net front is occupied, where this
+ *                                       section's point is that it is empty. So a
+ *                                       new diagram is drawn instead of a
+ *                                       reference, and it draws the error, not
+ *                                       the fix.
  *   §"Decision hierarchies by zone" ... every option in the defensive-zone list has
  *                                       a picture in breakouts.mjs
  *                                       (`breakout-up`, `-wheel`, `-d-to-d`,
@@ -945,4 +963,114 @@ const crossIceOwnEnd = {
   puck: XI_PUCK,
 };
 
-export default [theRiskMap, pinchCentreHigh, pinchCentreDeep, crossIceOwnEnd];
+/* ------------------------------------------------------------------ *
+ * 5 - Both defencemen to the puck          (section "4. Never both
+ *     defencemen to the puck")
+ * ------------------------------------------------------------------ */
+
+// WHY THIS ONE AND NOT A REFERENCE. See the file header: neither
+// `defensive-zone-support` nor `loose-puck-who-goes` was ever wired into this
+// document, and on inspection neither draws the thing this section teaches.
+// `loose-puck-who-goes` draws the FIX (one goes, one supports, a third holds the
+// net front) — its net front carries a defenceman. This section's whole point is
+// the opposite state: a net front with NOBODY in it. A picture of the fix is not
+// a picture of the failure, so this is drawn fresh, and it draws the failure.
+//
+// THE SCENE: both of the reader's defencemen have gone to one puck battle in the
+// strong-side corner, against one opposition forward, and the ice in front of
+// the net — the slot — is shaded and left with no glyph in it at all. No route
+// is drawn: this is a frozen shape, the instant after the mistake is made,
+// exactly as `breakout-five-roles` (breakouts.mjs) and `defensive-zone-support`
+// itself are frozen shapes with no routes.
+//
+// GEOMETRY, all offsets from `corner:right` (82, 34). Own net at the right,
+// matching `cross-ice-in-your-own-end` above in this same file.
+const BOTH_D_OPP = { at: 'corner:right', dx: 2, dy: -2 };        // (84, 32)
+const BOTH_D1 = { at: 'corner:right', dx: -4, dy: -12 };         // (78, 22)
+const BOTH_D2 = { at: 'corner:right', dx: -6, dy: 2 };           // (76, 36)
+const BOTH_D_PUCK = { at: 'corner:right', dx: -3, dy: -4 };      // (79, 30)
+
+// CLEARANCES, against this file's own header figures: forward circle ink 3.275 ft,
+// defenceman triangle ink 4.0 ft.
+//   BOTH_D1 (78,22) to BOTH_D2 (76,36): dx 2, dy 14, dist 14.14 ft — clears the
+//     8.0 ft triangle-triangle floor by 6.14.
+//   BOTH_D1 (78,22) to BOTH_D_OPP (84,32): dx 6, dy 10, dist 11.66 ft — clears the
+//     7.275 ft triangle-circle floor by 4.39.
+//   BOTH_D2 (76,36) to BOTH_D_OPP (84,32): dx 8, dy 4, dist 8.94 ft — clears the
+//     7.275 ft floor by 1.67.
+//   BOARDS: at BOTH_D2's x = 76, the corner arc (centre (72, 14.5), R 28) puts the
+//     wall at y = 14.5 + sqrt(784 - 16) = 42.21; BOTH_D2 sits at y = 36, 6.21 ft
+//     off it, clear of the 4.0 ft triangle ink. BOTH_D_OPP at (84, 32) is the same
+//     spot `cross-ice-in-your-own-end`'s XI_D1 already uses, verified there at
+//     6.78 ft off the arc. BOTH_D1 at (78, 22) is 9.6 ft from the arc's centre,
+//     nowhere near the wall.
+//   No route is drawn, so none of the arrival invariant's clearances apply — this
+//   is glyph-to-glyph spacing for legibility only, not a checked quantity.
+const bothDToThePuck = {
+  id: 'never-both-defencemen-to-the-puck',
+  owner: OWNER,
+  half: true,
+  width: 900,
+
+  caption:
+    'Never both defencemen to the same puck — the formation itself, not what happens after. ' +
+    'Your own defensive zone, own net at the right. Both defencemen have gone to a puck battle ' +
+    'in the corner against an opposition forward, and the ice in front of your own net, shaded ' +
+    'here, is left completely empty. Win the battle and you gain nothing a single defenceman ' +
+    'would not have gained alone; lose it, and there is literally no one between the puck and ' +
+    'your goaltender. A coaching convention, not a law — and it has a real exception: under a ' +
+    'strong-side overload some coaches send both defencemen low and give the slot to a forward ' +
+    'instead, so somebody is still home. Find out what your team plays. No contact and no route ' +
+    'are drawn: this is a shape, not a play.',
+
+  describe:
+    'Your own defensive zone, the net at the right. An opposition forward, a solid circle, is ' +
+    'deep in the strong-side corner with a loose puck near him. Two open triangles — both ' +
+    'defencemen — are with him in the same corner: one about level with the faceoff-dot line and ' +
+    'a stride up-ice of it, closer to the middle of the ice; the other higher, on the boards ' +
+    'below the hash marks. All three are converged on one puck, drawn between them rather than ' +
+    'at any one stick. A shaded rectangle, labelled "your slot", runs down the middle of the zone ' +
+    'from the tops of the two faceoff circles to the front edge of the crease, and it is ' +
+    'completely empty — no player stands in it. The goaltender is alone in the crease. No routes ' +
+    'are drawn: this is a frozen shape, not a play in progress.',
+
+  // YOUR OWN SLOT, copied vertex for vertex from `cross-ice-in-your-own-end`'s zone
+  // above, which is itself the glossary's polygon: tops of the circles to the
+  // front of the crease, sides on the circles' inner edges (y +/-7). LABELLED here
+  // — unlike that diagram, this one has no route running near y = 0, so nothing
+  // crosses the label. "your slot" is 9 characters; at 1.79 ft/character on a
+  // half sheet that reserves 16.1 ft, centred at the polygon's own vertex mean
+  // (68.5, 0) and so spanning x 60.4 to 76.6 — inside the polygon's own 54-to-83
+  // run with room either side.
+  zones: [
+    {
+      points: [
+        { at: 'top-of-circle:right', dy: -15 },   // (54, 7)
+        { at: 'goal-line', dx: -6, dy: 7 },       // (83, 7)
+        { at: 'goal-line', dx: -6, dy: -7 },      // (83, -7)
+        { at: 'top-of-circle:left', dy: 15 },     // (54, -7)
+      ],
+      label: 'your slot',
+      danger: true,
+    },
+  ],
+
+  players: [
+    { id: 'G',  pos: 'G', at: { at: 'crease', dx: 1 } },                              // (87, 0)
+    { id: 'A1', team: 'opp', pos: 'F', at: BOTH_D_OPP, label: 'battles for it' },
+    { id: 'D',  pos: 'D', at: BOTH_D1, label: 'goes to the puck' },
+    { id: 'D',  pos: 'D', at: BOTH_D2, label: 'goes too' },
+  ],
+
+  // No routes at all, for the same reason `breakout-five-roles` and
+  // `defensive-zone-support` have none: this is the shape at one instant, not a
+  // play unfolding. A route here would have to show one or both defencemen
+  // ARRIVING at the puck, which is the moment already past in the picture this
+  // section needs — the picture is what the ice looks like once they are both
+  // already there.
+  routes: [],
+
+  puck: BOTH_D_PUCK,
+};
+
+export default [theRiskMap, pinchCentreHigh, pinchCentreDeep, crossIceOwnEnd, bothDToThePuck];

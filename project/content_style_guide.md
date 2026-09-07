@@ -1439,9 +1439,58 @@ Three constraints that came out of doing it:
 - ⚠️ **If a caption refers backward to prose that the move would strand below it, leave the marker
   where it is and say so.** A wrong move is worse than no move.
 
+### ⚠️ And it must address the READER OF THE HOSTING SECTION — the harder half of the rule
+
+Standing alone is necessary and not sufficient. **A caption is written in the second person to a
+particular reader, and borrowing moves the reader without moving the words.**
+
+The worked example, and it shipped: `goalie-rim-stop-or-clear` was borrowed into
+`positions/defender.md`'s trapezoid subsection. The picture is correct. **The caption speaks to a
+GOALTENDER throughout** — *"the area inside which **you** are allowed to play it"*, *"leave it for
+**your defenceman**"*, and, fatally, *"**get out of the way and let them have it.**"* The section it
+led says the opposite in terms: *"**Your goalie cannot get a rim that dies in the corner. You have
+to.**"* A defenceman heard *"get out of the way"* as the first sentence of the section telling him to
+go and fetch it.
+
+⚠️ **The renderer labels a borrowed caption *"Diagram, from goaltender"*. That is provenance, not a
+correction** — the pronoun still says "you", and the rule stated is not the reader's rule.
+
+**The generalisation, found later while vetting borrows and worth more than the instance:**
+
+> ⚠️ **A SYSTEM DIAGRAM IS VOICED AS AN INSTRUCTION TO THE TEAM RUNNING THAT SYSTEM.**
+
+So `forecheck-212` borrowed into `breakouts.md`'s *"Against a 2-1-2"*, or `oz-cycle-rim` into
+`defensive_zone_coverage.md`'s *"The cycle"*, misdirects exactly as the goaltender caption did —
+**and those borrows are topically perfect**, which is what makes the trap. They were declined on
+this ground alone.
+
+⚠️ **THE RULE CAUGHT ONE ON ITS FIRST APPLICATION, WHICH IS THE EVIDENCE IT IS WORTH HAVING.**
+`nz-1-3-1` was a vetted borrow for `zone_entries.md`'s *"Against a 1-3-1 neutral zone"* — a title
+that matches the diagram exactly. **The caption is voiced to the team RUNNING the 1-3-1** (*"F1 is
+already one of your three"*, *"if one of the three leaves his lane, a seam opens"*), and that
+section addresses the team **entering against** it (*"attack the outside of the wall"*, *"use a
+stretch player"*). Placed there it would have told a reader he owns an F1/F2/F3 in a formation he is
+not running. **Declined by the agent placing it, on this rule, before anyone reviewed it.**
+
+**So the test before placing any borrow is three questions, in order:**
+1. Does the caption stand alone, with no *"the same…"*, *"a beat later"*, *"the diagram above"*?
+2. **Whose voice is it in, and is that this section's reader?**
+3. If it teaches a system, is the hosting section teaching the side that RUNS it, or the side
+   playing against it?
+
+⚠️ **And a borrow is not free.** The caption is voiced in full in every hosting document, at the
+legacy median of 1,303 characters — about 100 seconds. Thirteen borrows into `positions/` moved
+`defender.md` from **10.9% to 15.3% caption**. Borrowing avoids the authoring cost, the geometry
+risk and the review cost; **it avoids none of the listening cost, and a legacy caption costs more
+per marker than a newly written one.**
+
+---
+
 ### A borrowed caption must stand alone in every document that hosts it
 
-**75 of 195 diagrams are hosted by more than one document.** A caption is quoted into documents that
+**82 of 198 diagrams are hosted by more than one document** *(re-derived against this commit; it was
+75 of 195 before it, and this commit's own borrowing is what moved it — a figure stated flatly in the
+section that caused it to change is exactly the shape that goes stale silently).* A caption is quoted into documents that
 do not own it, so **editing a caption is a content change in every hosting document** — and a
 caption that describes its *neighbours* is true in one document and false in another.
 

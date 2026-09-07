@@ -101,6 +101,8 @@ Stick on the ice, hands out in front where you can see them in your peripheral v
 
 ### Arriving at the boards — head up, skates parallel, take it along your side
 
+![](diagram:angle-into-the-corner)
+
 ```facts
 Action: Go into the boards on an angle, never straight at them
 Goal: Better puck control and less risk of injury — a leg, side or arm absorbs most of the impact

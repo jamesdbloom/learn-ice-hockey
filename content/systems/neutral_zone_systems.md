@@ -550,6 +550,8 @@ Read: The pass back is not clean — a regroup into pressure is just a turnover 
 
 ### Lane discipline: three lanes, three forwards
 
+![](diagram:neutral-zone-lanes)
+
 ```facts
 Position: Divide the ice lengthways into left wall, middle and right wall, and put one forward in each lane
 Goal: Three separated forwards are three separate passing options — defenders cannot cover three lanes with one flat line of skaters unless they spread thin
@@ -680,6 +682,8 @@ This deserves its own section because a trap inverts everything else here: it ha
 ---
 
 ## Neutral zone faceoffs
+
+![](diagram:faceoff-neutral-zone)
 
 ```facts
 Goal: Defending — stop a clean win back to their point, take the middle away first, and get the puck out so you can change

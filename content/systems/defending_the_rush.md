@@ -674,6 +674,10 @@ The **trailer** (or **late man**) is the attacker following the rush a few metre
 
 ## Standing Up at the Blue Line vs Backing Off
 
+![](diagram:nz-stand-up-at-the-line)
+
+![](diagram:nz-back-off-at-the-line)
+
 Two legitimate ways to defend the line, and this is a genuine trade-off rather than a right answer. It is also frequently a **coaching choice** — many teams specify which one they want, and it usually follows from their neutral-zone system. See [Neutral Zone Systems](neutral_zone_systems.md).
 
 ### Standing up (stepping up)

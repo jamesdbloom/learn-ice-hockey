@@ -430,6 +430,8 @@ A goaltender who sees the puck the whole way, from a set position, with their an
 
 ### The royal road
 
+![](diagram:oz-royal-road)
+
 Former NHL goaltender Steve Valiquette popularised a concept called the **royal road** — an imaginary line running down the middle of the ice, which a puck crossing forces the goalie to move laterally across. Shots taken immediately after the puck has crossed it, by a pass or by a carrier skating over it, score at a far higher rate than shots that have not, because the goalie cannot be set and square.
 
 **Published descriptions of where exactly that line runs do not agree, and the weight of evidence is against the popular version.** Most secondary accounts, including [OMHA's](https://www.omha.net/news_article/show/486107-the-most-important-line-on-the-ice-you-ve-never-heard-of), describe it as running the length of the ice from the centre of one net to the centre of the other. The two sources closest to Valiquette himself describe something narrower and **zone-limited**:

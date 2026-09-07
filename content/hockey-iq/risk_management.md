@@ -199,10 +199,12 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 
 ### 4. Never both defencemen to the puck
 
+![](diagram:never-both-defencemen-to-the-puck)
+
 ```facts
 Never: Send both defencemen to the same puck — you commit 100% of your defensive-zone depth to a 50/50 battle; where a strong-side overload puts both low along the boards, a forward has the slot instead
 Risk: Both defencemen to the same puck with nobody left in front of your net, and losing it leaves literally no one between the puck and your goalie but forwards facing the wrong way
-Action: One goes and takes the body or the puck; the partner covers the space it will squirt into, staying between puck and net
+Action: One goes and takes the puck — or the body, only where your league permits checking; the partner covers the space it will squirt into, staying between puck and net
 Action: Say out loud which of you is going and which of you has the net
 Convention: A coaching convention with real exceptions — under a strong-side overload some coaches put both defencemen low along the boards and give the slot to a forward instead; that is one coaching account rather than anything counted, so treat it as a reason to ask what your team plays
 Key: Somebody must be home; what varies is who — find out what your team plays
@@ -210,7 +212,7 @@ Key: Somebody must be home; what varies is who — find out what your team plays
 
 **Why not.** If both of you attack the same puck, you have committed 100% of your defensive-zone depth to a 50/50 battle. Win it and you gain nothing you would not have gained with one of you. Lose it and there is no one — literally no one — between the puck and your goalie except forwards who are facing the wrong way.
 
-**What to do instead.** One goes, one supports. The one who goes takes the body or the puck; the partner reads the likely outcome and covers the space it will squirt into, staying between the puck and the net. Talk about it out loud — see [On-Ice Communication](../foundation/on_ice_communication.md).
+**What to do instead.** One goes, one supports. The one who goes takes the puck — **or the body, only where your league permits checking; where it is barred, take the ice they need and play the puck instead**, and see [Body Contact and Battles](../technique/body_contact_and_battles.md) for which of those you are under. The partner reads the likely outcome and covers the space it will squirt into, staying between the puck and the net. Talk about it out loud — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
 *Coaching convention, with real exceptions.* Under a **strong-side overload**, some coaches put **both** defencemen low along the boards and hand the middle to a forward instead, swapping the weak-side defenceman's job with the first forward's. *(That variant is one coaching account of the system rather than anything counted, and note what it gives the forward is the **slot** rather than the goalmouth — so it is a reason to ask, not a licence to assume.)* The principle survives either way: **somebody must be home.** What varies is who. The house default throughout is a **low zone collapse (zone) coverage**, in which the strong-side defenceman pressures and the weak-side defenceman holds the net front; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out who has the net front under each system. Find out what your team plays.
 
@@ -376,6 +378,8 @@ This is the most practical section here. Each list is a **priority order**: run 
 **The prerequisite.** None of this works if you start looking when the puck arrives. You need one or two shoulder checks *before* you receive it, so that by the time it is on your blade the list is already down to two options. That is what [Scanning and Anticipation](scanning_and_anticipation.md) is for. The hierarchy is the decision; the scan is the information.
 
 ### Defensive zone — you have just retrieved the puck, forecheck arriving
+
+![](diagram:breakout-up)
 
 ```facts
 Priority: Quick-up → Up → Wheel → D-to-D → Reverse → Rim → Glass, taking the first option genuinely available

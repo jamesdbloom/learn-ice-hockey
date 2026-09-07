@@ -159,7 +159,7 @@ by a D1 agent, which correctly noted it **pre-dated the marker moves**. Repaired
 |---|---|
 | captions containing a relative-position phrase | **95** |
 | of those, **borrowed into more than one document** | **34** |
-| diagrams hosted by more than one document | 72 of 187 *(at census; **75 of 195** after this round)* |
+| diagrams hosted by more than one document | 72 of 187 *(at census; **82 of 198** after the round-68 borrows)* |
 
 ⚠️ **MOST OF THE 34 WILL BE FALSE AND THIS MUST NOT BE SWEPT.** *"the same"* usually means *"the
 same puck carrier"* or *"the same shift"* — self-contained and correct. **A hit is a defect only if
@@ -175,7 +175,7 @@ because the referent is there, the host because nobody re-reads a borrowed capti
 neighbours. It took an agent reading captions across documents.
 
 **The rule this establishes:** *a borrowed caption must stand alone in every document that hosts
-it*, so relative-position words are safe only in a caption that is never borrowed. **With 75 of 195
+it*, so relative-position words are safe only in a caption that is never borrowed. **With 82 of 198
 borrowed, that is a house rule, not an edge case** — it belongs in the style guide once the triage
 confirms the size.
 
@@ -338,7 +338,59 @@ rather than forcing one.**
 owned that directory exclusively and did not — the consequence was a rebuild publishing six captions and a
 `describe` that nobody had read, under a clean `check_absolutes`.**
 
-### 2 · "A NOTE ON LANGUAGE" — ⚠️ NINE DOCUMENTS, AND THE MEASUREMENT REFUTES THIS ITEM'S OWN PREMISE
+### ✅ 2 · "A NOTE ON LANGUAGE" — DECIDED. No drift found; four terms to converge, the rest stay.
+
+Read in full, by hand, against `rink_map_and_glossary.md`. **⚠️ THE MOST IMPORTANT RESULT IS A
+NEGATIVE ONE: there is NO disagreement to reconcile.** All six copies of `high slot` give the
+identical span — *"faceoff dots up to the top of the circles"* — matching the glossary exactly.
+`point`, `half-wall` and `goalmouth` likewise. **The duplication is a drift RISK, not a live
+defect**, which downgrades this item's urgency and rules out any emergency edit.
+
+*(The corpus's known high-slot geometry defect lives in a different layer — built SVG coordinates —
+and is closed and machine-verified. It never touched these nine prose definitions.)*
+
+**REPLACE WITH ONE SHARED SENTENCE — 4 terms × 6 sites.** These are pure rink geography, identically
+worded already, and owned in one place. Six independently typed copies is drift risk with no
+compensating value: no document does anything different with *"the point is the area just inside the
+blue line"*. Converging them gives a future correction **one string to grep, not six paraphrases**:
+
+- *"The point is the area just inside the blue line where defencemen stand, exactly as defined in Rink Map and Glossary."*
+- *"The high slot is the upper part of the slot, from the faceoff dots up to the top of the circles, exactly as defined in Rink Map and Glossary."*
+- *"The half-wall — also called the half-boards — is the boards roughly level with the faceoff dot, between the corner and the point, exactly as defined in Rink Map and Glossary."*
+- *"The goalmouth is the immediate net front, not the same as the slot, exactly as defined in Rink Map and Glossary."*
+
+⚠️ **Each is SELF-CONTAINED for a listener** — the definition is spoken in full before the pointer,
+so nobody has to follow a link. **This is not a deletion pass; nothing a listener hears goes away.**
+
+**KEEP EVERYWHERE:** `strong-side/weak-side`, `high/low`, `rim/reverse`, `slot`, `forecheck`,
+`F1/F2/F3`, `the wall`. Each carries **document-specific elaboration that is the point of the
+entry** — a centre's strong side switches every puck touch, a defence pair's are job titles they
+swap, a winger usually holds one side a whole sequence. `forecheck` is correctly reframed per
+perspective: *your* pressure in their end (center) versus *the opposition's* in yours (breakouts).
+**Deduplicating these would strip exactly the position-specific content the note exists for.**
+
+⚠️ **AND THE DOCUMENT-SPECIFIC CAVEATS RIDING ALONGSIDE THE FOUR REPLACED TERMS STAY PUT** — e.g.
+`defender.md`'s *"who owns each layer is a coaching choice… under man-on-man each belongs to
+whoever's man is standing in it"*. That is non-negotiable 7 content and has nothing to do with where
+the boards are.
+
+### ⚠️ AND THIS ITEM'S OWN COUNTS WERE WRONG — my extractor, same class as the marker grep
+
+The table below said `strong side`/`weak side` were defined **4** times and `high`/`low` **3**.
+Hand recount: **7 and 5.** The cause is mechanical and worth knowing: three documents bold them
+**jointly** — `**Strong-side / weak-side.**`, `**High / low.**` — and the others bold them
+**separately** — `**Strong side**`, `**High**`. My bolded-span extractor scored the two families as
+different strings and silently dropped one. `rim`/`reverse` escaped only because those documents
+*also* re-bold the bare word inline.
+
+⚠️ **And one document was nearly missed entirely:** `neutral_zone_systems.md` writes *"A note on
+language"* in lowercase, so a case-sensitive grep does not see it.
+
+**Second measurement of mine to fail this round, both by counting a formatting artefact rather than
+the thing itself** — the other being `grep 'diagram:'` matching a prose sentence. Original census
+follows.
+
+### The original census, 6 September 2026
 
 **Measured 6 September 2026 against HEAD** (read via `git show`, not the working tree, because five
 agents were live in `content/`). ⚠️ **Both of this item's original claims were wrong:**
@@ -6023,6 +6075,47 @@ by dropping a qualification has made the corpus worse, not shorter.
 **Open question this cannot answer:** whether 7.5% is actually too much. It is a real number and a
 large one; it is not by itself a defect. **What makes it one is the median, and the 28% document.**
 
+### ✅ TIER 0-D DRAWING WAVE EXECUTED — 4 drawn, ~11 borrowed, 3 DECLINED with reasons
+
+Five agents on disjoint file sets. **Every one declined something, and every declension was argued.**
+
+**Drawn** — all under budget against a 1,303-char median: `dz-back-door-seam` (**852** after the review repair rewrote it; 658 as first drawn),
+`oz-post-shot-shape` (629), `forecheck-angling` (549), `never-both-defencemen-to-the-puck` (753).
+
+**Declined, and each is the more useful half of its agent's work:**
+
+- **`defending_the_rush.md` 3-on-1** — the prose *"never commits to a specific attacker formation"*,
+  so any picture would assert a position the corpus does not. Agreed with the vetting that ranked it
+  weakest of four.
+- **`skating.md` Overview** — the Overview and *"Arriving at the boards"* teach the **same
+  instruction from the same USA Hockey quote**. With `angle-into-the-corner` now wired into the
+  later subsection, a second diagram would duplicate the geometry and create a second caption to
+  keep in sync. **One diagram covering both mentions beats two.**
+- ⚠️ **`nz-1-3-1` into `zone_entries.md`** — see the style guide. Caught by the addressee rule **on
+  its first application**, against a section whose title matches the diagram exactly.
+
+### ⚠️ AND A MODULE HEADER WAS FALSE — the same class as a stale brief, one layer down
+
+`risk_management.mjs`'s header recorded §4 as already *"Referenced"* by `defensive-zone-support` and
+`loose-puck-who-goes`. **Neither id appears anywhere in `risk_management.md`** — zero hits. And on
+the merits the note was wrong twice over: `defensive-zone-support` is a breakout-options picture,
+and `loose-puck-who-goes` draws the **correct** structure with the net front occupied, where §4's
+entire point is that it is **empty**.
+
+⚠️ **These headers are what the vetting passes read to decide "already drawn elsewhere".** A false
+header does not just mislead an author — **it can produce a SKIP verdict for a section that has no
+picture at all.** The agent corrected it rather than leaving it. **Treat module headers as claims,
+not as records**, exactly like plan rows and briefs.
+
+⚠️ **RETRACTED — THIS PARAGRAPH WAS WRONG AND ITS ERROR SHIPPED FOR A WHILE.** It read: *"an agent
+dropped a goaltender glyph from `forecheck-angling`… Checked: none of the nine diagrams in that module
+has a `pos: 'G'` glyph. The omission is consistent, not an anomaly."* **Eight of the nine did, and
+after repair all nine do.** My census segmented the file on `id: '`, which matches 89 PLAYER ids, so
+every segment was a fragment. **A reviewer refuted it with one grep.** ⚠️ **Left in place rather than
+deleted, because this sits in the section a future author reads about this wave, and unretracted it
+would tell them dropping a goaltender is the house convention here — reproducing the exact defect the
+repair fixed.**
+
 ### ✅ D2 VETTED for `systems/`, `technique/`, `hockey-iq/` — 4 DRAW, ~10 BORROW out of ~700 headings
 
 Three parallel forks read document by document rather than grepping headings, with one fork
@@ -6206,6 +6299,213 @@ or a single representative SITUATION?** Those produce different pictures and onl
 
 ⚠️ **And its caption is VOICED and lands first.** A page-summary caption is heard before any of the
 page. That is the hardest caption in the corpus to write, and it has to be written 31 times.
+
+### ⚠️ TOOLING GAP FOUND BY CUTTING ONE — `build-diagrams.mjs` NEVER REMOVES AN ORPHANED SVG
+
+Deleting a diagram spec leaves its rendered `.svg` and `.png` in `site/public/diagrams/` **forever**.
+The build writes; it does not reconcile. Measured on the cut: after a full 11-step rebuild with the
+spec gone, `dz-back-door-seam.svg` was still present, **and Astro had copied it into `dist/`** — so
+it would have **deployed to production as an unreferenced file at a live URL.**
+
+Harmless here — nothing links it, the manifest is clean (0 hits), and `site/public/diagrams/` is
+gitignored so nothing entered the commit. **But the mechanism is not harmless:** a diagram cut for
+being *wrong* stays served, and the only reason anyone noticed is that this cut happened to be the
+last act before a build. Removed by hand this time.
+
+**Worth a `--prune` in `build-diagrams.mjs`**, or a check that every SVG in `public/diagrams/` has a
+spec. Neither exists.
+
+### ⚠️⚠️ `dz-back-door-seam` WAS CUT — six majors, and one falsified a claim in `rink.json`
+
+Drawn, reviewed, repaired, re-reviewed, **removed.** The second review is the strongest single piece
+of work this round and its recommendation was to cut, on the ground that *"a diagram is not a sourced
+claim; deleting one loses nothing but effort."* Accepted.
+
+**What it found, none of it visible to any checker:**
+
+- ⚠️ **The defenceman was drawn INSIDE THE CREASE** — the triangle path `M 86 0.90 L 89.12 6.30 L
+  82.88 6.30 Z`, about **3.1 of its 5.4 ft in the blue paint**, its ink also crossing the goal line.
+  ⚠️ **`rink.json`'s own `goalmouth` comment asserts *"no skater in the corpus is actually drawn in
+  the paint on them."* THAT SENTENCE WAS FALSE, and this glyph was the counterexample.** The `dy`
+  cleared the *anchor*; it never cleared the *ink*, because a triangle reaches 4.0 ft toward +y.
+- **The glyph was painted OVER the goaltender's letter**, slicing the bowl out of the `G`. The
+  repair's comment had reasoned about the G covering the D; the occlusion runs the other way, and
+  the G has no halo precisely because nothing was expected to overlap it.
+- **The attacker was not at the back post.** At (83,−12) he is **10.82 ft from the post, 5 ft outside
+  the slot, and 3.3 ft outside the house** — while the caption said *"drifts alone to the far post"*
+  and the defenceman was the one inside the high-danger area. **The picture had the two of them the
+  wrong way round relative to the danger.**
+- ⚠️ **The repair's grid-search claim was not reproducible.** Its comment said no valid D position
+  existed at the original anchor, *"verified by grid search… not by inspection."* Re-run: **42
+  positions exist** under the reading the section's words carry. The empty set came from a constraint
+  the repair **authored** — *"net-side = higher x"* — which the section never states.
+- **The caption's new clause was half authored.** *"This notation has no stick symbol"* is true and
+  precedented. *"That gap is why the pass stops short"* is **false and contradicts the module's own
+  header**, which says the pass is drawn failing on purpose because *"drawing the puck arriving would
+  be a picture of the exact goal this section exists to prevent."* The caption told a listener the
+  short arrow was a **drawing artefact**, retracting the one thing the picture asserted.
+- **The seam is drawn in the LOW slot; the section says it runs through the HIGH slot** — the route
+  crosses the centre line at x=77.7, some 8.7 ft goal-side of the dots. And the weak-side winger the
+  section names, **the one thing this notation could actually draw**, was absent.
+
+⚠️ **The decisive argument was not any single defect.** The section's four bullets are about eyes, a
+stick, a winger's sag and a voice call — **of which this notation can draw exactly one, and the
+diagram omitted that one.** It was `dz-strong-side-overload` with four players deleted, teaching
+what `stick-in-lane-body-net-side` already teaches better with the lane shaded as a band. **That is
+why the caption had to spend a fifth of itself explaining what the picture does not show.**
+
+**Left open for whoever takes the section:** whether the seam crosses at x≈78 (making the section's
+*"high slot"* wrong) or through the high slot (making a corner-to-far-post route wrong). **The
+reviewer explicitly declined to assume**, and it needs the section's owner and a source.
+
+### ⚠️ AND A CORPUS-WIDE SWEEP NOBODY HAS RUN
+
+`rink.json` claims every `goalmouth`/`net-front` use was hand-resolved and no skater sits in the
+paint. **This diagram falsified it, so that audit either predates this glyph or has a hole.** The
+check: for every `pos: 'D'` with |y| < 8 and 79 < x < 93, dilate the triangle by 0.4 and test against
+the crease region. **Not run.**
+
+### ⚠️ AND A FOURTH: I RELAYED PROPOSED COORDINATES WITHOUT RE-DERIVING THEM
+
+A diagram review proposed two specific fixes. I passed both into a repair brief as instructions.
+**The repairing agent verified them and refuted both — each would have made the diagram worse.**
+
+| relayed | measured | consequence |
+|---|---|---|
+| move the weak-side D to (80,−5) | **4.24 ft** from the attacker | inside this file's own 7.275 ft threshold (triangle 4.0 + circle 3.275) — **the triangle would have been drawn through the circle** |
+| aim the pass at (82.6,−1.3) | **4.59 ft** from the goaltender | **worse than the 7.28 ft defect it was sent to fix** — that chord passes almost through the crease front |
+
+The agent grid-searched and found **no** D position at the original attacker location satisfying
+clear-of-attacker, clear-of-goaltender and net-side at once, so it took the brief's own stated
+fallback and moved the **attacker** instead — then reused the sibling `dz-strong-side-overload`'s
+proven −6/+2 offset rather than inventing a number. Result: 8.08 ft glyph separation, **6.32 ft from
+the attacker and 14.14 ft from the goaltender**.
+
+⚠️ **A REVIEWER'S PROPOSED FIX IS A HYPOTHESIS, EXACTLY LIKE A PLAN ROW OR A BRIEF.** The review
+that produced these was the strongest of the round — it refuted two of my premises and found six
+real defects — **and its remedies were still wrong twice.** Finding a defect and computing its
+repair are different acts, and the second one has to be re-derived by whoever performs it.
+
+**Four failed measurements or proposals of mine this round, and every one caught by an agent
+re-deriving rather than accepting.** The corpus and the agents have been right; the coordination
+layer has been the unreliable part.
+
+### ⚠️ MY THIRD FAILED MEASUREMENT THIS ROUND — all three the same class
+
+I told a reviewer *"none of the nine diagrams in `forechecking_systems.mjs` carries a `pos: 'G'`,
+so the omission is consistent."* **Eight of the nine do.** The reviewer refuted it with one grep and
+turned the finding on its head: `forecheck-angling` is the **only** diagram in the module without a
+goaltender, and the spec's own comment said so correctly while my check said the opposite.
+
+**Why it failed:** my script segmented the file on `id: '` — which matches **89 PLAYER ids**, not
+the 9 diagram ids. Every "segment" was a fragment too small to contain the line I was looking for.
+
+**All three of my failed measurements this round have the same shape — I counted a proxy that
+looked right instead of the thing:**
+
+| claim | truth | the proxy |
+|---|---|---|
+| 305 markers | **304** | `grep 'diagram:'` matched prose — *"more than the diagram:"* |
+| strong-side ×4, high/low ×3 | **×7, ×5** | bolded-span extraction; three documents bold them jointly, five separately |
+| no sibling has a goaltender | **8 of 9 do** | segmented on `id: '`, which matches player ids |
+
+⚠️ **Every one was caught by someone re-deriving rather than accepting — and in each case the
+corpus was right and my measurement of it was wrong.** That is the same asymmetry as the round's
+other headline result: **the repairs were more defective than the work.** The operational rule:
+**a census whose result surprises you is a census to re-derive before reporting**, and *"0 of 9"*
+or *"0 of 286"* is the shape that should trigger it.
+
+## ⚠️⚠️ TIER 0-R ANSWERED BY READING, NOT MEASURING — and the defect is not verbosity
+
+Four documents read line by line (`goaltender.md`, `rules_primer.md`, `risk_management.md`,
+`breakouts.md`), 37 censused. **Every metric this round produced missed the actual problem.**
+
+### ⚠️ THE FINDING: the corpus's bulk is a FILTERING TASK DELEGATED TO THE READER
+
+| document | sentences naming a rulebook | naming **two or more** at once | of those, share that say **which is the reader's** |
+|---|---|---|---|
+| `rules_primer.md` | 859 (46%) | **404** (22%) | **6%** |
+| `goaltender.md` | 403 (31%) | 213 (17%) | **10%** |
+| `risk_management.md` | 134 (19%) | 57 | 4% |
+| `breakouts.md` | 107 (14%) | 51 | 4% |
+
+**Ninety per cent of the time a sentence sets two or more books against each other, the reader picks
+their own — unaided, in audio, where they cannot skim.** Each document says which book is theirs
+once, at the top, and then declines to say it again 404 times.
+
+⚠️ **No metric could see this.** Every sentence involved is short, correct, sourced and honest. It is
+visible only by asking of each one *"whose rule is this?"* — and finding the document knows and does
+not say. **Quantified: 94% of `rules_primer.md`'s body words and 75% of `goaltender.md`'s sit in a
+paragraph citing a rule number.**
+
+⚠️ **THE FIX IS SHAPE, NOT CUTS.** State the reader's rule first and in the positive; put the
+cross-book divergence in a labelled block beneath it. Non-negotiable 3 and the style guide's own
+warning both apply — **safety-bearing detail IS gameplay.**
+
+### ⚠️ AND IT EXPLAINS THE R0/R1 NULL RESULT MECHANICALLY
+
+`md_to_speech` splits oversized paragraphs at sentence boundaries within **`MAX_BILLED_CHARS =
+2800`**. **So the renderer's cap already dominates, and markdown-level segmentation CANNOT REACH THE
+LISTENER AT ALL.** That is why splitting eleven bullets returned identical text *and* identical unit
+counts. ⚠️ **No amount of resegmenting bullets will ever change the listening experience. The only
+levers are writing less per topic, and reordering.** This closes R0/R1 as a listening item
+permanently, with a mechanism rather than a measurement.
+
+### The ranked findings
+
+- **M1 — `goaltender.md` is two documents welded at line 547.** Lines 1–546: **35%** rule-citing,
+  13% bold, a genuinely good coaching manual a first-year goalie can act on. Lines 547–1417: **88%**
+  rule-citing, 136 ⚠️ glyphs. §*Goaltender Interference* alone is **9,817 words** — bigger than two
+  whole documents combined, ~65 minutes of audio, on one rule, inside a position document.
+  **Proposed: split into a `positions/goaltender_rules.md` sibling, nothing deleted.**
+- **M4 — the reader's answer arrives last.** 17 *"Practically:"* summary sentences; **14 sit in the
+  last 40% of their section.** `rules_primer.md:416`'s *"Stick on the puck, never stick on the
+  player"* — the entire teaching content of §Stick fouls for a first-year player — **arrives after
+  6,108 words.** Pure resequencing; loses nothing. **Cheapest high-value fix in the report.**
+- **M3 — the summary layer became a third full treatment.** `rules_primer.md`'s Common Mistakes is
+  **10,667 words**, longer than eight documents in the corpus; one Key Takeaway is **1,257 words**.
+  Only 13–19% of summary phrasing appears in its own body, so the reader meets each rule three times
+  in three wordings and must reconcile them. The spec says *"5–10 items, standalone and memorable"*.
+- **M9 — 15 sections open straight into a list**, so a listener hears a title then a rule with no
+  orientation. One opens with the literal token `1.`, voiced as *"one."* **One topic sentence each.**
+- **M2 — the style guide's Length clause is dead: 36 of 37 documents exceed it.** *"200–400 lines"*
+  against a median of 23,347 words. ⚠️ **Leaving a dead clause is worse than either fixing or
+  raising it — it is the clause an author would cite if challenged.**
+- **M7/M8 — tables.** `rules_primer.md:753` sits at **exactly 14 of 14 rows**; one more and the
+  audio loses it. `:846` is **35,290 characters in 6 columns**, correctly dropped from audio and
+  **also unreadable on the page** — *"not a table; a section laid out as a grid."*
+
+### Bold: the corpus figure hid the answer
+
+20.3% is uniform *between* documents and **not within them**: `goaltender.md` runs **13% in its
+coaching half and 20% in its rules half**. `rules_primer.md` carries **2,592 bold spans, one every
+32 words, 374 of them whole sentences.**
+
+⚠️ **Do not thin it and do not sweep it.** It works where it leads a bullet or defines a term on
+first use. It has stopped signalling where a document marks *"Neither USA Hockey nor Hockey Canada
+writes a trapezoid at all"* — which changes what you do — **with identical weight to a note about
+bibliographic vintage.** **The fix is to stop bolding WHOLE SENTENCES in rules prose (220 spans of
+16+ words in `goaltender.md`, 374 in `rules_primer.md`), leaving bullet leads, defined terms, safety
+counterweights and every *"coaching choice, not a rule"* mark alone.**
+
+### ✅ Two things upheld, and worth defending
+
+- **The boards-safety instruction has propagated completely** — *"skates parallel"* appears **87 times in
+  `content/` across 18 documents, 99 including diagram captions**. ⚠️ **An earlier draft said "109
+  sites… 103 of 112" — my FIFTH failed measurement this round, and it changed denominator mid-clause.
+  It shipped under a heading about the previous four.** The 18-document count and the propagation
+  finding both hold; the totals did not.
+  Correctly absent from `goaltender.md`, who does not take a boards hit. **The propagation
+  convention demonstrably works.**
+- **`breakouts.md` is the model.** Every option gets the same five-part shape — setup, read,
+  execution, risk, how it is defeated. 13% bold, one span every 51 words, longest Key Takeaway 149
+  words. **Measure the others against it.**
+
+### ⚠️ The next round's highest-value scope, in the reviewer's own words
+
+> *"Read one document end to end aloud, at speed, as a person who has never played, and write down
+> every point at which you would have stopped. No census can produce that number, and it is the only
+> one the owner actually asked about."*
 
 ## ⚠️ TIER 0-R — READABILITY. THE OWNER'S STANDING TOP PRIORITY.
 
@@ -6530,7 +6830,7 @@ not checked.**
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,140,139 words — 86.4 hours of
+These outrank everything below. The corpus is **37 documents and 1,140,193 words — 86.4 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure

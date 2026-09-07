@@ -3,6 +3,11 @@
  *
  * The section is the source of truth. Every player and every route below is one
  * its prose describes; where the prose hedges, the caption hedges.
+ *
+ * ⚠️ THIS FILE HOLDS ONE OVERVIEW DIAGRAM, `forecheck-angling`, ALONGSIDE THE EIGHT SHAPE
+ * DIAGRAMS. It is the exception to "every player and every route below is one its prose
+ * describes [a named system]" — see its own header comment, just above `forecheck212`
+ * below, for the design argument and why it was contested.
  */
 
 // The carrier's exit point, named once because three things refer to it: the end
@@ -13,6 +18,123 @@ const F2_AT = { at: 'top-of-circle:right', dx: 14, dy: -2 }; // (68, 20)
 // Clear of the goal frame (x 89-92.3, y +-3): the defender triangle is 6.2 ft
 // across, and at dy 2 it was drawn sitting on the net's back rail.
 const CARRIER = { at: 'behind-net', dy: 6 };               // (94, 6)
+
+// ===========================================================================
+// OVERVIEW — ANGLING. The only diagram in this file that is not a shape.
+//
+// AN AUDIT OF ALL 31 RINK DOCUMENTS FOUND ONLY TWO THAT JUSTIFY AN OVERVIEW DIAGRAM, and
+// this document is one of them, for a specific and quotable reason: its own "A Note on
+// Language" section calls angling "the foundation of everything below" — the strongest
+// explicit page-defining-idea marker the audit found anywhere — while every other diagram
+// in this file, including the five named systems and the F1/F2/F3 rotation set, draws a
+// SHAPE rather than the skill underneath it. ⚠️ THE VERDICT WAS CONTESTED: independent
+// review passes split 2-2 on whether this earns an Overview diagram at all, against five
+// sibling `positions/` documents in the same audit where every pass agreed the answer was
+// no. It is carried on the Note-on-Language evidence alone, and a future editor who
+// disagrees has as much standing to remove it as the argument that put it here.
+//
+// FOLLOWS THE OVERVIEW DESIGN RULE `defender-pair-overview` established (defender.mjs):
+// draw the ONE page-defining idea as a single representative SITUATION, not a map of the
+// page's regions. This document alone names at least three region-scale coaching choices
+// (which side F1 angles to, weak-side vs. strong-side F3, spread vs. stacked) — three
+// hedges will not fit one caption a listener hears cold, first, with no context. So this
+// draws the one moment the whole document depends on and nothing else: a forechecker
+// closing on a puck carrier retrieving it behind his own net.
+//
+// AN EXISTING ANGLING DIAGRAM WAS CHECKED AND REJECTED AS A BORROW.
+// body_contact_and_battles.mjs already owns `angling-your-route`, but it draws open-ice
+// angling against a rush carrier in the neutral zone, defined against a shaded middle
+// lane and owned by a document teaching a different moment entirely — not a forecheck
+// closing on a retrieval behind the net. Its carrier is never behind his own net and its
+// defender is never a forechecker, so borrowing it here would misdirect the reader to the
+// wrong picture rather than teach this document's own idea.
+//
+// NO F1/F2/F3. The section defining those labels ("F1 / F2 / F3 — Roles, Not People")
+// comes LATER in the document than the Overview, so a reader meeting this picture first
+// has not been told the roles exist. The two players are drawn as the generic
+// "forechecker" and "puck carrier" the Overview's own prose uses, not as roster letters —
+// unlike every system diagram below, which is free to use them because its section
+// already has.
+//
+// REUSES F1_AT AND CARRIER FROM forecheck-212 BELOW, DELIBERATELY, rather than inventing a
+// second pair of anchors for the same idea, and the route is forecheck-212's own route 1
+// — "F1 takes away the weak side" — copied verbatim, `bow: -2` included. That route
+// already stops well short of the carrier for a reason recorded in forecheck-212's own
+// comment: two earlier attempts to draw the finish of the angle were each wrong (one
+// pointed at the puck, one curved through the crease), and both passed every geometric
+// check that existed at the time. Reusing the survivor costs nothing new to get wrong.
+//
+// CLEARANCE, measured on the drawn quadratic and not merely at the endpoint — the
+// file-wide warning is that `check-arrivals.mjs` tests only the straight chord and the
+// terminal tangent, so a route that bows through a glyph mid-curve is invisible to it.
+// Sampled at k = 0..1 in steps of 0.0005 on this exact curve: closest approach to the
+// carrier's anchor (94, 6) is 11.40 ft, against the 4.0 ft triangle threshold
+// (site/scripts/lib/rink.mjs's GLYPH_INK.triangleR inflated by its stroke). The minimum
+// lands at k ~ 1, i.e. at the tip, so the route never passes closer to the carrier's
+// glyph mid-curve than it finishes — there is no hidden near-miss partway along.
+//
+// A GOALTENDER IS DRAWN (see the players comment below), unlike an earlier version of
+// this diagram, which dropped the glyph to suppress a check-arrivals advisory. That was
+// wrong: `check-arrivals.mjs` grades an opposing goaltender WARN, never FAIL — the rule
+// is deliberately built to tolerate exactly this near-miss on the one target every
+// rulebook protects unconditionally (see THE ARRIVAL INVARIANT in rink.mjs). This route's
+// tip sits 7.81 ft from the goaltender's usual crease anchor, inside `ARRIVAL.noArrow`
+// (9 ft), and forecheck-212 already carries the identical WARN on this identical route —
+// so this diagram repeats a reviewed advisory rather than introducing a new one. Eight of
+// this file's eight other diagrams ALL draw a goaltender for scene context and this one should
+// not be the exception.
+//
+// NO CONTACT DRAWN, on the brief's own instruction, and the geometry above is why this
+// picture carries none of the SAFETY SCOPE paragraphs on forecheck-212 and its siblings
+// below: those pictures put a carrier and an ARRIVING forechecker close enough together
+// that the ARRIVAL INVARIANT in rink.mjs (9 ft, for a hard arrowhead violation) is the
+// operative constraint. This route finishes more than 11 ft from the carrier, i.e. the
+// angle being SET, well before any arrival — a materially different moment from the one
+// those paragraphs exist to cover. The caption still says plainly that no contact is
+// drawn and states the document's own "eliminate options, not a hit" framing (both
+// already in the Overview's own body text, not a new claim), but carries no quotation
+// about where a hit lands or what tier it draws, because this picture does not depict one.
+// ===========================================================================
+
+const forecheckAngling = {
+  id: 'forecheck-angling',
+  owner: 'content/systems/forechecking_systems.md',
+  title: 'Angling the retrieval',
+  half: true,
+  width: 900,
+
+  caption:
+    'The skill everything below assumes: skate at the space you want to deny, not at the puck. ' +
+    'One forechecker curls in from the weak side on a puck carrier retrieving it behind his own ' +
+    'net, cutting off that side and forcing him back toward the strong-side wall — no contact is ' +
+    'drawn, because the aim is to eliminate options, not land a hit. Which side to take away is ' +
+    'a coaching choice, not a rule: the common default takes the middle and forces the retreat ' +
+    'to the wall, some coaches invert it, so find out which your team plays before your first shift.',
+
+  describe:
+    'Attacking half of the rink, the opposition net at the right. Three players: the goaltender ' +
+    'in the crease, their defenceman behind the net with the puck, and one forechecker below and ' +
+    'to the near side of him. A single route runs from the forechecker up and across, curving to ' +
+    'finish on the far side of the defenceman from the boards, well short of him, in open ice. No ' +
+    'route is drawn for the defenceman and no contact is shown.',
+
+  players: [
+    // A goaltender, as scene context — see the header comment above for why this glyph was
+    // restored and what it costs (one reviewed WARN, shared with forecheck-212 on this
+    // identical route, never a build failure).
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'D', team: 'opp', pos: 'D', at: CARRIER, label: 'retrieving the puck' },
+    { id: 'F', pos: 'F', at: F1_AT,                label: 'the forechecker' },
+  ],
+
+  routes: [
+    // Verbatim forecheck-212's route 1 — see the header comment above for the measured
+    // clearance (11.40 ft to the carrier, on the drawn curve).
+    { from: F1_AT, to: { at: 'behind-net', dx: -3, dy: -5 }, kind: 'skate', bow: -2 },
+  ],
+
+  puck: { at: 'behind-net', dx: -3.5, dy: 10 },
+};
 
 const forecheck212 = {
   numbered: true,
@@ -1074,6 +1196,7 @@ const forecheckPress = {
 
 // Document order, so the registry reads the way the page does.
 export default [
+  forecheckAngling,
   forecheckRolesRotate,
   forecheck212,
   forecheck212Stacked,

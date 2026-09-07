@@ -772,6 +772,8 @@ This is also the moment most amateur teams stop playing — the shot goes in, ev
 
 ### F3's job
 
+![](diagram:oz-post-shot-shape)
+
 ```facts
 Convention: With three forwards rotating and both defencemen holding the blue line — the default shape this section describes — F3 is the high forward; a coaching choice, not a law
 Position: Be the safety — at or near the top of the circle, so a rebound straight out is yours and a counter-attack has to go through you
@@ -790,6 +792,8 @@ In the house-default structure, **F3 is the high forward** and their responsibil
 The other two forwards go **to the net**: one to the front for the screen and tip, one hunting the strong-side rebound.
 
 ### The defenceman's pinch
+
+![](diagram:pinch-centre-high)
 
 ```facts
 Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go"; on an uncontested race for a loose puck or a rim, arrive clearly first

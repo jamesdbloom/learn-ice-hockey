@@ -32,6 +32,9 @@
  *     This section explicitly hands the reader to that document for everything after the
  *     route; the picture should come from there too. Drawing a second one would put the
  *     corpus's most important safety instruction in two places with two sets of words.
+ *     ⚠️ THIS BORROW WAS VETTED HERE AND LEFT UNWIRED FOR AT LEAST ONE ROUND — the
+ *     recommendation stood in this comment with no `diagram:` marker anywhere in
+ *     skating.md to act on it. Now referenced at skating.md:104.
  *
  *   "### Why it's a defenceman's skill specifically" (gap control)
  *     → `rush-gap-and-angle` (defending_the_rush.mjs), which draws the gap AND the inside

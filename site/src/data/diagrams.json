@@ -635,6 +635,18 @@
     "width": 900,
     "height": 770
   },
+  "forecheck-angling": {
+    "id": "forecheck-angling",
+    "owner": "content/systems/forechecking_systems.md",
+    "caption": "The skill everything below assumes: skate at the space you want to deny, not at the puck. One forechecker curls in from the weak side on a puck carrier retrieving it behind his own net, cutting off that side and forcing him back toward the strong-side wall — no contact is drawn, because the aim is to eliminate options, not land a hit. Which side to take away is a coaching choice, not a rule: the common default takes the middle and forces the retreat to the wall, some coaches invert it, so find out which your team plays before your first shift.",
+    "describe": "Attacking half of the rink, the opposition net at the right. Three players: the goaltender in the crease, their defenceman behind the net with the puck, and one forechecker below and to the near side of him. A single route runs from the forechecker up and across, curving to finish on the far side of the defenceman from the boards, well short of him, in open ice. No route is drawn for the defenceman and no contact is shown.",
+    "title": "Angling the retrieval",
+    "half": true,
+    "svg": "/diagrams/forecheck-angling.svg",
+    "png": "/diagrams/forecheck-angling.png",
+    "width": 900,
+    "height": 770
+  },
   "forecheck-roles-rotate": {
     "id": "forecheck-roles-rotate",
     "owner": "content/systems/forechecking_systems.md",
@@ -1148,6 +1160,18 @@
     "half": true,
     "svg": "/diagrams/oz-behind-the-net.svg",
     "png": "/diagrams/oz-behind-the-net.png",
+    "width": 900,
+    "height": 770
+  },
+  "oz-post-shot-shape": {
+    "id": "oz-post-shot-shape",
+    "owner": "content/systems/offensive_zone_play.md",
+    "caption": "The shape in the seconds right after a shot: F3 holds high, at or near the top of the circle, as the safety — a rebound straight out is his, and a counter-attack has to go through him. The other two forwards go to the net: one to the front for the screen and tip, one hunting the strong-side rebound. Both defencemen are still on the blue line, the house default and not a law: if the strong-side defenceman pinches, whether F3 covers the point, the highest player covers under a five-man rotation, or the weak-side defenceman slides across instead is a coaching choice this picture does not draw. Find out which your team plays.",
+    "describe": "The attacking half of the rink, the net at the right, in the moments right after a shot. Three own forwards. F3 is high, at the top of the strong-side circle and just inside the home-plate area, drawn as the safety. A second forward stands at the net front, at the edge of the blue paint, for the screen and tip. A third stands closer to the strong-side faceoff dot, also inside the home-plate area, hunting the rebound. Both defencemen remain on the blue line, one each side. The opposing goaltender is in the crease. No routes are drawn: this is the shape at a moment, not a sequence.",
+    "title": null,
+    "half": true,
+    "svg": "/diagrams/oz-post-shot-shape.svg",
+    "png": "/diagrams/oz-post-shot-shape.png",
     "width": 900,
     "height": 770
   },
@@ -1796,6 +1820,18 @@
     "half": true,
     "svg": "/diagrams/cross-ice-in-your-own-end.svg",
     "png": "/diagrams/cross-ice-in-your-own-end.png",
+    "width": 900,
+    "height": 770
+  },
+  "never-both-defencemen-to-the-puck": {
+    "id": "never-both-defencemen-to-the-puck",
+    "owner": "content/hockey-iq/risk_management.md",
+    "caption": "Never both defencemen to the same puck — the formation itself, not what happens after. Your own defensive zone, own net at the right. Both defencemen have gone to a puck battle in the corner against an opposition forward, and the ice in front of your own net, shaded here, is left completely empty. Win the battle and you gain nothing a single defenceman would not have gained alone; lose it, and there is literally no one between the puck and your goaltender. A coaching convention, not a law — and it has a real exception: under a strong-side overload some coaches send both defencemen low and give the slot to a forward instead, so somebody is still home. Find out what your team plays. No contact and no route are drawn: this is a shape, not a play.",
+    "describe": "Your own defensive zone, the net at the right. An opposition forward, a solid circle, is deep in the strong-side corner with a loose puck near him. Two open triangles — both defencemen — are with him in the same corner: one about level with the faceoff-dot line and a stride up-ice of it, closer to the middle of the ice; the other higher, on the boards below the hash marks. All three are converged on one puck, drawn between them rather than at any one stick. A shaded rectangle, labelled \"your slot\", runs down the middle of the zone from the tops of the two faceoff circles to the front edge of the crease, and it is completely empty — no player stands in it. The goaltender is alone in the crease. No routes are drawn: this is a frozen shape, not a play in progress.",
+    "title": null,
+    "half": true,
+    "svg": "/diagrams/never-both-defencemen-to-the-puck.svg",
+    "png": "/diagrams/never-both-defencemen-to-the-puck.png",
     "width": 900,
     "height": 770
   },

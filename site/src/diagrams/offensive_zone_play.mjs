@@ -1011,6 +1011,73 @@ const cycleReverse = {
   puck: CYCLE_PUCK,
 };
 
+// ---------------------------------------------------------------------------
+// 12 — The shape right after a shot: F3 high as the safety, the other two
+//      forwards crashing for the screen and the rebound (section 10)
+//
+// STATIC, ON PURPOSE. Section 10 gives F3 three jobs in order — "be the
+// safety", "cover the vacated point if a defenceman activates", "read the
+// rebound and jump" — and the SECOND of those has three named coaching-choice
+// variants for who covers the point if a defenceman pinches: the house
+// default (F3 takes the line), a five-man rotation (whichever player is
+// highest covers), or the weak-side defenceman sliding across instead.
+// Drawing any of that would mean either three frames or one frame hedged past
+// the point of use, and a picture is the most absolute-looking thing on a
+// page. So this diagram draws only the part that does not vary — the moment
+// BEFORE any of the three would even apply, both defencemen still on the
+// line — and the caption names the choice in words rather than drawing it.
+// ---------------------------------------------------------------------------
+
+// F3's safety spot. Section 10: "at or near the top of the circle". This is
+// the identical description section 3 gives the high forward in the base
+// shape — "higher in the zone, toward the top of the circles" — so it reuses
+// HIGH_F rather than re-deriving the same position under a second name.
+// (54, 8), on the back edge of the home-plate polygon (the edge from
+// (54, 22) to (54, -22)) and so already established, in this file's own
+// fiveManShape comment, as being inside it.
+
+// Hunting the strong-side rebound. (77, 13): 8.06 ft from NET_FRONT
+// (dx 4, dy 7, sqrt(65)) against the 6.55 ft two forward glyphs (each 2.9 ft
+// body plus half its 0.75 outline, 3.275 ft of ink) need to avoid touching —
+// 1.51 ft of daylight. Also inside the home-plate polygon: the angled edge
+// from faceoff-dot:right (69, 22) to the near post (89, 3) crosses y 14.4 at
+// this x, above this player's y 13.
+const STRONG_SIDE_REBOUND = { at: 'faceoff-dot:right', dx: 8, dy: -9 };  // (77, 13)
+
+const postShotShape = {
+  id: 'oz-post-shot-shape',
+  owner: 'content/systems/offensive_zone_play.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'The shape in the seconds right after a shot: F3 holds high, at or near the top of the ' +
+    'circle, as the safety — a rebound straight out is his, and a counter-attack has to go ' +
+    'through him. The other two forwards go to the net: one to the front for the screen and tip, ' +
+    'one hunting the strong-side rebound. Both defencemen are still on the blue line, the house ' +
+    'default and not a law: if the strong-side defenceman pinches, whether F3 covers the point, ' +
+    'the highest player covers under a five-man rotation, or the weak-side defenceman slides ' +
+    'across instead is a coaching choice this picture does not draw. Find out which your team plays.',
+
+  describe:
+    'The attacking half of the rink, the net at the right, in the moments right after a shot. ' +
+    'Three own forwards. F3 is high, at the top of the strong-side circle and just inside the ' +
+    'home-plate area, drawn as the safety. A second forward stands at the net front, at the edge ' +
+    'of the blue paint, for the screen and tip. A third stands closer to the strong-side faceoff ' +
+    'dot, also inside the home-plate area, hunting the rebound. Both defencemen remain on the ' +
+    'blue line, one each side. The opposing goaltender is in the crease. No routes are drawn: ' +
+    'this is the shape at a moment, not a sequence.',
+
+  players: [
+    { id: 'F3', pos: 'F', at: HIGH_F,               label: 'the safety' },
+    { id: 'F',  pos: 'F', at: NET_FRONT,            label: 'screen and tip' },
+    { id: 'F',  pos: 'F', at: STRONG_SIDE_REBOUND,  label: 'hunts the rebound' },
+    { id: 'D',  pos: 'D', at: 'point:right',        label: 'holds the line' },
+    { id: 'D',  pos: 'D', at: 'point:left',         label: 'holds the line' },
+    { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
+  ],
+};
+
 export default [
   homePlate,
   royalRoad,
@@ -1023,4 +1090,5 @@ export default [
   lowToHigh,
   netFrontScreen,
   behindTheNet,
+  postShotShape,
 ];

@@ -336,6 +336,8 @@ The same is true against you. Two seconds of your own disorganisation is where y
 
 ### What to do off the puck in transition
 
+![](diagram:rush-backcheck-lanes)
+
 ```facts
 Action: When you have just won it, turn and go immediately — start moving on the likelihood of possession, not the certainty of it
 Risk: Skating hard in the wrong direction is a survivable error; being late means the window is gone

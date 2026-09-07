@@ -7,6 +7,8 @@
 
 ## Overview
 
+![](diagram:forecheck-angling)
+
 ```facts
 Key: Forechecking is the pressure your team applies in the opponents' end when they have the puck and you don't — the opposite of backchecking
 Key: It is the first thing your team does after losing the puck in the attacking end, and the biggest lever a coach has over how a game feels
@@ -391,6 +393,8 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 ---
 
 ### 1-4 — the full retreat
+
+![](diagram:nz-1-4)
 
 ```facts
 Position: One forward applying token pressure, the other four flat across the ice at or near their own blue line
