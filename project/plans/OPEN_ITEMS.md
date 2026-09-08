@@ -42,9 +42,29 @@ where a platform genuinely requires it. **Do not transcode the whole library to 
 
 **3. ⚠️ M4B and chapters are the real prize for BookPlayer and Apple Books.** M4B is the audiobook
 container — same AAC audio, different extension — and it carries **chapter marks and resume position**.
-The corpus already has section headings, and `scripts/md_to_speech.py` already knows where they fall,
-**so chapter marks are derivable from work already done** rather than authored by hand. A 72-minute
-episode with no chapters is much worse to use than the same episode with them.
+A 72-minute episode with no chapters is much worse to use than the same episode with them.
+
+⚠️⚠️ **BUT THE ROUTE THIS ROW ORIGINALLY GAVE FOR GETTING THEM IS FALSE, AND IT WAS NEVER TESTED
+BEFORE IT WAS WRITTEN DOWN.** It read: *"the corpus already has section headings, and
+`scripts/md_to_speech.py` already knows where they fall, so chapter marks are derivable from work
+already done."* **Measured 9 September 2026 against `podcasts_web/manifest.json` and the corpus:**
+
+| document | episode | words | apparent wpm |
+|---|---|---|---|
+| Reading Ice Hockey Diagrams | 53.4 min | 4,198 | **79** |
+| Rules Primer | 67.9 min | 93,153 | **1,371** |
+| whole library | 37.2 h | 1,164,940 | 522 |
+
+Speech runs ~150 wpm. ⚠️ **Every one of the 37 episodes lands in a 48-72 minute band REGARDLESS of
+whether its document is 4,198 words or 93,153** — a 17x spread in apparent rate. **The duration is a
+property of the production, not of the text. No episode is a complete reading of its document, and
+there is no mapping from a heading to a timestamp.** `md_to_speech.py`'s section boundaries are
+positions in TEXT; chapters need positions in AUDIO, and nothing on disk relates the two.
+
+**Owner's decision, 9 September 2026: derive chapters FROM THE AUDIO** — transcribe each episode,
+place marks at real topic boundaries. ⚠️ **That is a new pipeline, not a reuse of existing work: no
+transcription tooling is installed** (no `whisper`, `whisper-cpp`, `faster_whisper`, `mlx_whisper` or
+`torch` — checked), and 37.2 hours must be transcribed and **every boundary reviewed before it ships**.
 
 **4. The site already has the patterns to reuse.** `site/src/pages/downloads.astro` has EPUB, PDF and
 Markdown sections with a `download-list` class and per-file notes; `scripts/build-downloads.mjs` writes
@@ -89,7 +109,7 @@ row, and this project's rule is that a requirement quoted from memory is a defec
 2. **Metadata per file**, derived from the corpus rather than typed: title = document title; album =
    section; track = reading-order position; artist/author, date, genre, description, and **cover art**.
    ⚠️ **Derive from `site/src/data/nav.ts` READING_ORDER so the audio and the site cannot drift.**
-3. **Chapters** from `md_to_speech.py`'s section boundaries.
+3. **Chapters** — ⚠️ **NOT from `md_to_speech.py`; see the refutation above.** From a transcript of the audio.
 4. **The downloads page section**, with durations and byte sizes.
 5. **The per-page link.** The owner asked for "a clear link at the top of each page, or a Spotify player,
    whichever is easiest for users and looks good." ⚠️ **A Spotify embed is a third-party script and an
@@ -98,6 +118,26 @@ row, and this project's rule is that a requirement quoted from memory is a defec
    that property; a Spotify embed gives it up. **That is an owner decision and must be put to them, not
    assumed.**
 6. **The feed**, then submission.
+
+### ⚠️ OWNER DECISIONS ALREADY MADE — do not re-litigate these
+
+**9 September 2026 — HOW THE AUDIO MAY BE DESCRIBED.** ⚠️ **NOT "read aloud", NOT "narration", NOT
+"narrated", and NOT "the audio edition".** The first three assert a verbatim reading and the
+measurement above refutes them. The fourth was the coordinator's first repair and the owner rejected
+it: *"the audio should also stand alone on its own as a separate standalone podcast, not be too
+strongly stated as just an audio version of the site."* ⚠️ **All four describe the episode by its
+RELATIONSHIP TO THE SITE rather than by its subject** — which is what a listener scrolling a podcast
+app actually needs. **The description is now the document's own description sentence from
+`docs-meta.json`** — corpus-derived, already reviewed, about hockey rather than about this project —
+**with the site as a trailing reference, which is the back-reference the owner does want.** All 37
+files re-tagged with `-c copy` (container rewrite, same AAC stream, 1.12 GB unchanged).
+⚠️ **`site/src/components/AudioPlayer.astro` still says `aria-label="Narration of ..."` and
+`site/src/pages/downloads.astro` still says "narration" — BOTH STILL WRONG, still to fix.**
+
+**9 September 2026 — the content is REVIEWED AND SIGNED OFF by the owner**, and the audio was
+manually created. ⚠️ **Do not re-open the accuracy of the episodes**; that is settled. ⚠️ **And note
+`project/site_build_specification.md` §7.3 is now STALE against what exists**: it says group by layer,
+never per-document, giving 8 episodes. There are **37, one per document.**
 
 ### ⚠️ OWNER DECISIONS ALREADY MADE, 8 September 2026 — do not re-litigate these
 
@@ -165,8 +205,10 @@ different clients" directly:
 ratio of user benefit to work on this whole row.**
 
 ⚠️ **A whole-corpus M4B with chapters is the BookPlayer/Apple Books answer AND the "list of episodes"
-answer at once** — 37 chapters in one file, resumable. Chapter marks are derivable from
-`scripts/md_to_speech.py`'s section boundaries, so they are not hand-authored.
+answer at once** — 37 chapters in one file, resumable. ⚠️ **Those 37 chapter marks ARE derivable
+without a transcript, because they are FILE boundaries and the manifest already carries every
+duration.** ⚠️ **Do not confuse them with WITHIN-episode chapters, which are not derivable at all —
+see the refutation above.** This row previously asserted the latter.
 
 ### Open questions FOR THE OWNER
 
@@ -314,6 +356,72 @@ project's minutes and goes. **The correction narrative belongs in `project/`, wh
 *"visible in the document"*. **A brief asking for visibility must name the FILE the visibility belongs
 in.**
 
+### OPEN — `forechecking_systems.md:526` enumerates one refusal where its own facts block now names two
+
+⚠️ **A divergence INSIDE one section, created by the repair that fixed the facts layer.** `:513` now
+says *"never with a skate"*; the body bullet eleven lines below at `:526` — **the one a reader meets at
+the pinch decision** — still reads *"What they grant you is body position; what they refuse is a hold"*
+and enumerates only 622 plus the 54.2/8.1 strength-move proviso. **It never names the skate.**
+
+**Errs safe** (incompleteness, not a false claim), which is why it was recorded rather than patched at
+the end of a session: it is ~150 characters of new safety prose inside a 2,226-character bullet, unseen
+by any `safety-reviewer`. **A repair is new text and new text has not been reviewed.**
+
+⚠️ **A reviewer might reasonably conclude the 2,226-character bullet is itself the defect and the limb
+belongs elsewhere. Do not assume "add the missing limb" is the fix.**
+
+**Do NOT sweep this pattern.** A corpus-wide layer test over 35 facts hits found two look-alikes that are
+**not** defects — `winger.md:393` and `puck_handling.md:476` quote the 622 Note arms-only but are written
+from the **pinned player's** perspective, so they state the holding rule's scope rather than an
+enumeration of what you may seal with; and `offensive_zone_play.md:833` carries no enumeration at all.
+**A sweep would have "fixed" all three.**
+
+### OPEN — three Majors in `defending_the_rush.md`, found after the commit and deliberately not patched
+
+Full evidence in the round-69 record. **Not repaired because each is new claim-or-safety prose written at
+session end, and a repair is new text that nobody has reviewed.**
+
+1. ⚠️ **`:97` — the round-10 class, committed by the round that was fixing it.** `:106` gained *"is
+   treated as"* and *"coaching emphasis, not a counted ranking"* in `49f1dc6`; **`:97` still voices the
+   bare superlative alone.** Mechanically safe fix (`Key:` cap 200, value 61 → 103, phrasing verbatim
+   from five other lines in the same file).
+2. ⚠️ **`:141-157` — the zone-versus-line clause left the SPOKEN layer**, surviving only in the unvoiced
+   trailer. It is what makes the red-line negative claim honest. ⚠️ **`how_to_watch_hockey.md:222`, a
+   dependant, still attributes that qualification to this owner** — and the style guide's own rule says an
+   owner must hold every qualification its dependants attribute to it.
+3. **Unsourced prevalence claims at `:724`, `:734`, `:16`, `:452` and KT5** — in a document that at
+   `:526` refuses exactly that class, *"its own included"*.
+
+**Adjudicated and NOT a defect:** the red-line negative claim itself. Both HockeyShare pages refetched —
+the blog is line-anchored (*"2 stick-lengths at the red line"*), the drill names **no line at all**
+(*"1.5 stick lengths… in the neutral zone"*). **A zone is not a line; anchoring is the discriminator. The
+eight documents carrying it are safe.**
+
+### OPEN — move the gap-control round narrative out of the style guide
+
+The row is **11,182 chars against a table median of 580** — 19× the median, 4× the next longest. The
+usable head (canonical value, five standing rules, the `bvhs.txt` landmine, the no-count instruction) is
+the first **1,978**; the remaining **9,204** is a review record, which `project/reviews/` owns.
+**Move it and leave a pointer** — and promote the one instruction buried at the end (*"a future author
+must not reinstate the grading in the body"*) to a numbered standing rule.
+
+### OPEN — the skate push-off in the other four books
+
+`forechecking_systems.md` and `offensive_zone_play.md` now say in five layers that **USA Hockey 627(a)**
+makes a non-kicking skate "push-off" a **major plus a game misconduct**, correctly scoped to USA Hockey.
+
+**Established (round 69, all five books, whitespace-flattened):** USA Hockey 627 Note 2 is the only place
+in the five that NAMES a non-kicking push-off. NHL 49.1, IIHF 49.1 and CARHA all define kicking as
+requiring *"a kicking motion"*; Hockey Canada has no such provision located.
+
+⚠️ **What is NOT established, and must not be assumed: whether those four reach the act through ROUGHING,
+ILLEGAL CHECK, TRIPPING or INTERFERENCE instead.** *"Their kicking rules do not reach it"* is true;
+*"they do not price it"* would be a fabrication. **A reader outside USA Hockey currently gets no answer,
+and giving them the wrong one is worse than the gap.**
+
+**Whoever closes this authors new cross-book prose about contact — the category that voided a clearance
+twice in round 69. It needs `rules-verifier` and `safety-reviewer` on the result.**
+
 ### OPEN — make the `Never:` em-dash inversion a MECHANICAL check
 
 ⚠️ **The style guide has named this shape since round 59 as *"the single most dangerous sentence shape
@@ -327,7 +435,17 @@ whether a counterweight exists, and it does — in the same value. ⚠️ **The 
 rendered prosody.**
 
 **Shape of the check:** in a `Never:`, `Priority:` or `Risk:` value, flag any clause after a second em
-dash that begins with a bare imperative verb.
+dash that is an INSTRUCTION.
+
+⚠️ **DO NOT DEFINE "INSTRUCTION" AS "BEGINS WITH AN IMPERATIVE VERB". That is what the round-69 census
+did, and it missed a CRITICAL** — `offensive_zone_play.md:308`, whose tail begins with the noun phrase
+*"skates parallel to the wall"* and which inverts *"head up and chin off your chest"*. It is the style
+guide's own printed worked example of the defect, and the census walked past it.
+
+⚠️ **A count produced by a heuristic is a property of the heuristic, not of the corpus.** The round-69
+census reported "nine" when it meant "nine that a verb-led regex could see". The style guide's own
+find-rate history — **predicted 9 / found 33**, **predicted 11 / found 26**, and an agent that missed one
+on the verb *"aim"* — says every such scan undercounts. **Flag negation-then-dash and READ every tail.**
 
 ⚠️ **A WORKLIST, NOT A GATE, and the reason is measured: of 579 such values carrying an em dash, the
 overwhelming majority introduce a REASON and are correct.** A crude imperative-verb regex also produced
@@ -525,7 +643,7 @@ room.
 ### ⚠️⚠️ D2 HAS A CEILING, AND IT IS ~100 NEW DIAGRAMS — NOT 917
 
 **Priced 6 September 2026** from the measured caption load (286 markers, 80,382 spoken caption
-words, 88.2 hours, **7.5% of everything the corpus speaks**), at the observed 281 caption words per
+words, 88.5 hours, **7.5% of everything the corpus speaks**), at the observed 281 caption words per
 marker:
 
 | new diagrams | added speech | caption total | **captions as share of spoken text** |
@@ -7486,7 +7604,7 @@ not checked.**
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,164,398 words — 88.2 hours of
+These outrank everything below. The corpus is **37 documents and 1,167,611 words — 88.5 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure

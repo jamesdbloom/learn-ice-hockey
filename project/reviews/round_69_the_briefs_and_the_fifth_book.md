@@ -2331,3 +2331,179 @@ entries rather than trusting the entries alone. It also cleared a suspected repe
 lettering failure: `625(a.1)` appears ten times in `content/` and zero times in `usah.txt` under that
 exact string, **but `a.N` is USA Hockey's own notation** for those enumerated clauses, as `625(a.7)`,
 `(a.8)`, `(a.9)` and `601(a.1)` in its Summary and Casebook show. **Correct as written.**
+
+---
+
+# ⚠️ THE CENSUS MISSED ONE, IN THE FILE THE COMMIT'S SUBJECT LINE IS ABOUT
+
+The review that cleared C6/C11 found a **critical** at `content/systems/offensive_zone_play.md:308`:
+
+```
+Never: Turn your back to the boards when that contact comes, and never duck — skates parallel to the
+wall, forearm and hip to it, not the point of your shoulder, head up and chin off your chest
+```
+
+Spoken: **never get your skates parallel to the wall, never put your forearm and hip to it, never keep
+your head up and your chin off your chest** — and, through the internal *"not"*, **DO take it on the
+point of your shoulder.** ⚠️ **The cervical-flexion mechanism, taught as the instruction.**
+
+⚠️ **`git show 49f1dc6 -- content/systems/offensive_zone_play.md | grep -c "skates parallel"` returns
+ZERO. The commit whose subject line is "Stop a facts line telling a listener never to keep their head up"
+did not touch it.**
+
+⚠️ **And this exact sentence is the style guide's own printed worked example of the defect, at `:1113`.**
+Three of its four siblings were already in the repaired form — including `offensive_zone_play.md:656`, in
+the same file.
+
+## Why the census missed it, and this is the transferable part
+
+**My census regex matched a bare imperative VERB after the second em dash** — `head`, `keep`, `take`,
+`stay`, `get`… **This clause begins with a NOUN PHRASE: *"skates parallel to the wall"*.** It is an
+instruction by grammar and by intent, and it matched nothing.
+
+⚠️ **So the nine the census found were never the population. They were the verb-led subset of it.** The
+reviewer that found this one found it by sweeping the **rendered SSML** for negation-then-dash and then
+**reading all 84 tails by eye** — not by pattern.
+
+**Two corrections to how this was reported:**
+
+1. **"Nine found" should always have read "nine found by a verb-led regex."** A count from a heuristic is
+   a property of the heuristic, not of the corpus.
+2. ⚠️ **The style guide already warned about this and I did not act on it** — it records an agent whose
+   *"first heuristic scan missed one on the verb 'aim'"*, and a find-rate history of **predicted 9 /
+   found 33** and **predicted 11 / found 26**. **Every recorded instance says the heuristic
+   undercounts.** I reported nine as though it were a total.
+
+## The Major underneath it: a limb priced at an EJECTION, in no summary layer
+
+`forechecking_systems.md:558` newly says *"if you have been taught to seal 'with your hip and your
+skates', neither half of that survives"*. **USA Hockey 627 Note 2 defines a skate "push-off" as
+non-kicking contact, and 627(a) makes it a MAJOR PLUS A GAME MISCONDUCT — with no classification limb, so
+it reaches checking leagues too.** 604 Note 1 makes *"overt hip, shoulder, forearm or torso action"* the
+**definition** of the illegal check wherever checking is barred.
+
+**It is in one body sentence and in no ` ```facts `, Common Mistakes or Key Takeaway of either file.**
+⚠️ **Worse than omission: those layers name *"your body"* and *"body position"* as the granted half, so
+to a reader arriving with the hip-and-skates cue they read as CONFIRMATION of the two limbs the body says
+fail.**
+
+**Not repaired by its finder, deliberately.** Routed to an author; the reviewer verifies after.
+
+## The skate push-off across all five books — answered, and NOT written into `content/`
+
+The repairing agent declared its highest-value unreachable item: the corpus now says *"USA Hockey prices
+one directly"* in five places **without anyone establishing what the other four books do.** Checked by
+the coordinator, whitespace-flattened, all five books on disk:
+
+| book | a NON-KICKING skate push-off |
+|---|---|
+| **USA Hockey 627** | ⚠️ **Named explicitly.** Note 2: *"A 'push-off' with the skate is defined as the action where a player uses their skate(s) in a **non-kicking motion** to make contact with the opponent."* **627(a): a major plus a game misconduct.** |
+| **NHL 49.1** | *"deliberately using his skate(s) **with a kicking motion**"* — **the kicking rule does not reach it** |
+| **IIHF 49.1** | *"using their skate(s) **with a kicking motion**"* — same |
+| **CARHA** | *"using their skate(s) **with a kicking motion** to contact an opponent, with no intent to play the puck"* — same |
+| **Hockey Canada** | **no skate push-off provision located** |
+
+⚠️ **So USA Hockey is the only one of the five that names the non-kicking push-off as such, and the
+corpus's scoping is CORRECT as written.**
+
+⚠️ **AND THE OBVIOUS INFERENCE IS THE ONE TO REFUSE: absence from a KICKING rule is not permission.** A
+skate driven into an opponent could still be roughing, an illegal check, tripping or interference under
+any of the other four, and **none of that was checked.** *"The other books do not price it"* would be a
+false claim; *"their kicking rules do not reach it"* is the true one and is narrower than a reader needs.
+
+**Deliberately NOT written into `content/`.** The shipped sentences are scoped to USA Hockey and are not
+wrong. Adding a four-book comparison would mean authoring new cross-book prose about contact — the exact
+category that has voided a clearance twice in this round — on the last pass before a push. **Recorded as
+an open row instead.**
+
+## ⚠️ "A finding stated as a pair of line numbers is one line number nobody verified"
+
+The verification pass confirmed the critical repaired and the major repaired **in nine of ten places**.
+The tenth is `forechecking_systems.md:512` — still arms-only, in the ` ```facts ` block of **§When to
+pinch**, the block a reader meets **at the decision**, two sections before `:539` which now carries the
+skate limb. ⚠️ **Read aloud it is an enumeration of what is refused, and an incomplete enumeration is
+heard as exhaustive** — and its twin `offensive_zone_play.md:809` already names both limbs, **so the two
+documents said different things about the same act.**
+
+**How it survived a repair wave aimed directly at it, in the reviewer's own words:**
+
+> *"I named it in my original finding as `:512` / `:807` and then let the coordinator's correction about
+> `:807` stand for both — I checked the file it named and not the one I had actually meant. **A finding
+> stated as a pair of line numbers is one line number nobody verified.**"*
+
+⚠️ **My correction was right about `:807` and it consumed the whole finding.** I told the repairing agent
+`:807` was a heading and that the real twin was in the other file; both of us then treated the pair as
+resolved, and `:512` — the half that was never in dispute — was repaired nowhere.
+
+**Standing rule: a finding naming N sites is N findings. Correcting one of them does not adjudicate the
+others, and a repair report must account for every site by number.**
+
+⚠️ **It was found only because the reviewer diffed the FULL RENDERED SPOKEN OUTPUT before and after
+(688→689 and 599→600 paragraphs) and saw a third *"Seal with body position, never with an arm"* with no
+skate limb, standing next to two that had one.** No checker sees this: `check_facts` passes on all three,
+and the layer test is satisfied because the limb exists *somewhere* in the document.
+
+### The same diff caught a regression the repair introduced
+
+`:539` and `:809` had become *"pinning them **from** playing the puck or skating"* — a fusion of USA
+Hockey 622 Note's two limbs (*"pins them against the boards"* and *"prevents them from playing the puck
+or skating"*). **The substance survives and it errs safe**, but the previous wording — *"pinning them so
+they cannot play the puck or skate"* — was grammatical, the same length class and the same limb.
+Restored.
+
+⚠️ **The reviewer named the method's own blind spot in the same breath: a rendered diff proves what
+CHANGED, not what SHOULD have — and is structurally blind to a defect present in both the before and the
+after, which is exactly the class the original critical belonged to.**
+
+## ⚠️ MY HEADLINE MEASUREMENT WAS AGAINST A TREE I HAD BEEN EDITING ALL SESSION
+
+The provenance review measured the restructure across every commit that touched the file. **I verified it
+myself before accepting it:**
+
+| §Target distances | `4e80e54` (parent) | `49f1dc6` (this commit) |
+|---|---|---|
+| section size | **3,103 chars** | **5,209** |
+| warning flags | **1** | **4** |
+
+⚠️ **I reported "5,488 → 2,499 characters of provenance" and "four `Important.` flags → zero". Against
+what was last committed the section GREW by 68% and its flags QUADRUPLED.**
+
+**Where 5,488 came from:** the working tree **mid-round**, after the gap-provenance repair had already
+added ~2,400 characters of provenance — **a repair this same session commissioned.** The restructure did
+reduce it from that intermediate state. ⚠️ **But no committed state ever held 5,488, so the reduction I
+reported is a fact about a tree that existed for two hours and about nothing else.**
+
+⚠️ **And I wrote it into `content_style_guide.md` — the specification — as a standing instruction to
+future authors, stated flatly.** Corrected there and here.
+
+**Standing rule: measure a change against `HEAD`, never against a working tree you have been editing all
+session.** A before/after taken from your own intermediate state measures your last edit, not your
+change. ⚠️ **The reordering itself is real and stays** — provenance now sits below the three rungs, which
+is the improvement; the numbers attached to it were not.
+
+## Three more Majors from the same review, recorded and NOT repaired
+
+**Recorded rather than patched at session end: each is new safety-or-claim prose, and a repair is new
+text that nobody has reviewed.**
+
+1. ⚠️ **`defending_the_rush.md:97` — a correction made IN THIS COMMIT reached the body and stopped at the
+   facts block.** `:106` gained *"is treated as"* and *"coaching emphasis, not a counted ranking"* in
+   `49f1dc6`; `:97` still voices the bare superlative *"Gap control is the highest-leverage habit in
+   defensive hockey"* alone, with a 300 ms break either side. **The round-10 class, committed by the
+   round that was fixing that class.** The same file hedges four comparable rankings, so it is an
+   omission rather than a convention.
+2. ⚠️ **`:141-157` — the clause that makes the red-line negative claim honest left the SPOKEN layer.**
+   The removed paragraph said the corroborating pages describe **zones, not lines**. It survives only in
+   the unvoiced Sources trailer. **A listener now hears that the corpus's red-line figure is contradicted
+   and never that another published page prescribes exactly it for the zone that line sits in** — the
+   round-59 direction, the corpus made to look less supported than it is. ⚠️ **And `how_to_watch_hockey.md:222`,
+   a DEPENDANT, still attributes that qualification to this owner.**
+3. **`:724`/`:734` and `:16`/`:452`/KT5 — unsourced prevalence claims** (*"the default for most defencemen
+   most of the time"*, *"most goalies want it"*) in a document that at `:526` says *"nobody has published
+   a count of what teams run on a rush… treat any 'most teams run X' claim — **its own included** — as an
+   impression."*
+
+**The load-bearing negative claim the gate flagged was ADJUDICATED and STANDS.** Both HockeyShare pages
+refetched: the blog is line-anchored and prints *"2 stick-lengths at the red line"*; drill 189345 prints
+*"1.5 stick lengths… in the neutral zone"* and **names no line at all.** A zone is not a line, and
+anchoring is the sentence's discriminator. **The eight documents carrying it are safe.**
