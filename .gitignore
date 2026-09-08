@@ -115,3 +115,7 @@ site/public/og/
 
 # Local-only working notes — never part of the corpus record
 *.local.md
+
+# Web-encoded podcast output — a build product of scripts/build_podcast_audio.py.
+# ~1.1 GB. The .m4a rule below already covers the audio; this covers the manifest too.
+podcasts_web/
