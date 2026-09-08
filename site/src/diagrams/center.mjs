@@ -477,9 +477,10 @@ const arriveBehindThePuck = {
     'give up speed in the middle to be certain of staying onside, and then the whole line ' +
     'arrives slowly, which is exactly the entry a defence stands up at the blue line. Nothing ' +
     'here says whether anybody is onside — a glyph has no skates, and that rule turns on where ' +
-    'a skate is. And do all of it with your head up: the middle third is where open-ice ' +
-    'contact happens, arriving at full speed through it is no reason to drop your eyes, and ' +
-    'you cannot brace for a hit you cannot see. Which of the three carries, and how strictly ' +
+    'a skate is. And do all of it with your head up: coaching material puts open-ice contact ' +
+    'in the middle third — consensus rather than a counted ranking — arriving at full speed ' +
+    'through it is no reason to drop your eyes, and you cannot brace for a hit you cannot ' +
+    'see. Which of the three carries, and how strictly ' +
     'the wide lanes are held, are coaching choices that vary a great deal.',
 
   describe:

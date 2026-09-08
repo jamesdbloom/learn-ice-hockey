@@ -188,7 +188,7 @@ Rule: A steered carrier is often half-turned when you arrive, and a check from b
 Rule: What the wall does for you depends on sheet width — wider ice leaves a carrier forced outside more room, so gap control matters more than steering — and do not assume yours is wide: IHUK In-House Rules 2026-27, Rule 1 authorise British rinks below the IIHF Rule 1.2 minimum, bar two capped at U16
 Position: Still between the attacker and the net — that is what makes it forcing outside rather than getting beaten wide
 Risk: Beaten wide means the attacker is past your outside shoulder with open ice behind you, and there is nothing left
-Never: Read "force them outside" as "never let anyone get to the outside" — stay on the defensive side of the puck instead, because anything that puts an attacker between you and your net has gone wrong
+Never: Read "force them outside" as "never let anyone get to the outside". Stay on the defensive side of the puck instead, because anything that puts an attacker between you and your net has gone wrong
 Key: Gap distances themselves belong to Defending the Rush, which covers them — take the numbers from there
 ```
 
@@ -208,7 +208,7 @@ New defencemen routinely hear both instructions and conclude the position contra
 
 The two diagrams above are the same rush. The carrier stands on the same square foot of ice in both **and skates the same lane in both**; the only player who moves is the defenceman, eighteen feet up the ice. That is deliberate, because it is the point: **what separates the two is not where the carrier goes, it is where you are standing.** Being beaten wide does not mean the carrier ends up somewhere different from where you were sending him — it means there is nobody inside him when he decides where to go next.
 
-The instinct to build is therefore *stay on the defensive side of the puck* — anything that puts an attacker between you and your net has already gone wrong — not *never let anyone get to the outside*. Gap distances themselves belong to [Defending the Rush](../systems/defending_the_rush.md), which covers them: 2–3 stick lengths in the neutral zone, closing to about a stick and a half at the red line and one stick length at your own blue line. That document calls them a guide rather than a law — they move with your backward speed and the attacker's skill — and only the neutral-zone figure comes from a published coaching source; no source was found for the red-line or blue-line ones.
+The instinct to build is therefore *stay on the defensive side of the puck* — anything that puts an attacker between you and your net has already gone wrong — not *never let anyone get to the outside*. Gap distances themselves belong to [Defending the Rush](../systems/defending_the_rush.md), which covers them: 2–3 stick lengths in the neutral zone, closing to about a stick and a half at the red line and one stick length at your own blue line. That document calls them a guide rather than a law — they move with your backward speed and the attacker's skill — and the published coaching pages disagree with each other and with that ladder: the only page found that anchors a distance to the centre red line prints two stick lengths there rather than a stick and a half.
 
 ### What else is genuinely new
 

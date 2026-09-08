@@ -360,7 +360,7 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 ![](diagram:five-on-six-clear-three-outcomes)
 
 ```facts
-Never: Chase — hold a tight shape in the slot, block lanes and let them have the perimeter
+Never: Chase. Hold a tight shape in the slot, block lanes and let them have the perimeter instead
 Convention: "Box" and "diamond" are borrowed penalty-kill names — there they are four players, a box two high and two low, a diamond a single apex; defending a 6-on-5 you have five skaters and this document does not settle where the fifth stands, so ask your coach
 Position: Sticks in lanes, feet in the house; clear bodies and take sticks away at the net front
 Action: Treat every clear as a shot — get your head up and put it at the empty net when the lane is clean

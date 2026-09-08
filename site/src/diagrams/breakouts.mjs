@@ -218,14 +218,32 @@ const wheel = {
     'right. It needs two things, speed and space — a step on the first forechecker, and no second ' +
     'forechecker waiting on the far side — and the second of those is an absence, so it is the ' +
     'empty far side of this picture rather than anything drawn in it. Cut tight, because the net is ' +
-    'your screen and cutting wide gives the forechecker a straight line to you. D2 is drawn already ' +
-    'standing at the net front and with no route at all, and that is the whole point: a player is ' +
-    'entitled to the ice he is standing on and may lengthen an opponent’s path, but stick in ' +
-    'tight and vertical, hands to yourself, no bump as he goes past. Sliding across into his path ' +
-    'is interference: a minor, two minutes, at the exact moment your partner had beaten the ' +
-    'forecheck. And two minutes is the floor, not the ceiling. All four books can go higher on a ' +
-    'violent one, up to a major and an ejection, and not one of them waits for the forechecker to be ' +
-    'hurt first. What differs is the bar each book sets, and section 2 sets out all four. ' +
+    'your screen and cutting wide gives the forechecker a straight line to you. ⚠️ D2 is drawn ' +
+    'already standing at the net front and with no route at all, and whether that is even legal is ' +
+    'the first thing to settle, because the books split on the act itself and not just on the ' +
+    'penalty for it. Under NHL and IIHF Rule 56.1 it is legal — the NHL writes “a player is ' +
+    'allowed the ice he is standing on (body position) and is not required to move in order to ' +
+    'let an opponent proceed”, and IIHF Rule 56.1 is that sentence bar the pronouns — and under ' +
+    'those two books, stick in tight and vertical, hands to yourself, no ' +
+    'bump as he goes past. ⚠️ Under USA Hockey it is a penalty: its 625(a.1) makes ' +
+    '“providing a protective screen and limiting the opportunity for an opposing player to apply ' +
+    'pressure to a teammate in possession or control of the puck” a minor, and on a wheel your ' +
+    'partner has the puck — so standing still does not save you, and if you play under that book ' +
+    'do not build a breakout around this. Hockey Canada Rule 8.3 and CARHA Rule 66(a) bar the team in ' +
+    'possession from running deliberate interference for the puck carrier, which reads as a bar on ' +
+    'moving rather than on standing. Sliding across into his path is interference under all four: a ' +
+    'minor, two minutes, at the exact moment your partner had beaten the forecheck. And two minutes ' +
+    'is the floor. The IIHF and Hockey Canada both reach a major and an ejection on a violent one ' +
+    'with nobody hurt; within Rule 56 the NHL reaches a major on the degree of violence but waits ' +
+    'for an injury before the game misconduct. ⚠️ Do not read that as the NHL being the lenient ' +
+    'book, because its ladder does not stop at Rule 56: NHL Rule 21.1 is a match penalty, out for ' +
+    'the balance of the game, “on any player who deliberately attempts to injure or who ' +
+    'deliberately injures an opponent in any manner”, and it needs no injury for the attempt. ' +
+    'USA Hockey escalates outside Rule 625 altogether: its 602(a) is a match penalty for a ' +
+    'player who “recklessly endangers or attempts to injure any opposing player”, tied to no ' +
+    'named foul. What differs between the four books is the bar, not whether an ejection is ' +
+    'available at all. ' +
+    'Section 2 sets out all four. ' +
     'The far-side winger and the centre are the outlets, and a second forechecker holding the far side, ' +
     'which is exactly what F2 does in a 2-1-2, turns all of this into a trap.',
 

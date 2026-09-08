@@ -409,6 +409,79 @@ const D_UNDER = { at: 'net-front', dx: -9, dy: -1.5 };           // (75, -1.5)
 // the 24.5 came from. Re-derive: hypot(82-75, 30+1.5) = 32.27, hypot(82-85, 30-0) = 30.15.
 const NF_A_TO = { at: 'corner:right', dy: -4 };                  // (82, 30)
 
+// ⚠️ THIS CAPTION IS VOICED INSIDE THREE DOCUMENTS — content/positions/defender.md,
+// content/positions/goaltender.md and the owner — so NOTHING IT LEANS ON MAY LIVE IN A HOST
+// DOCUMENT'S SURROUNDING PROSE. Four repairs below exist because it did lean, and each one
+// records the primary text it was re-derived from (every string re-grepped with whitespace
+// flattened and line-break hyphenation joined; the check that matters is the one that
+// FAILS on a string that is genuinely absent, so the control used was the IIHF's
+// 56.1 clause, which returns ZERO even flattened because the IIHF inserts quotation marks
+// mid-clause — "without \"establishing body position\"" — and one on the NHL's).
+//
+// ⚠️ (1) THE HAZARD DISCLAIMER USED TO END AT THE DISCLAIMER. "Taking them to the corner
+// instead is caution drawn from that hazard rather than a rule anyone writes." — full stop,
+// nothing after it. The corpus says that sentence in several places and the others attach a
+// counterweight inside the same sentence; this one did not, so a listener was told the
+// hazard is UNPRICED. It is priced, above a minor, in all four books, and
+// content/positions/goaltender.md carries neither 608(b) nor 7.5(c) ANYWHERE — for that
+// listener the caption was the only place it could ever be priced. Re-derived:
+// USA Hockey 608(b) "A major penalty plus game misconduct penalty shall be assessed to any
+// player who recklessly endangers an opponent, or causes them to go head first into the
+// boards or goal frame, as a result of checking from behind"; Hockey Canada 7.5(c) — note
+// the FIRST verb is "pushes", and a walk-out is a push — with its own vulnerability
+// condition quoted rather than dropped, because that condition is the scope; NHL 43.2
+// "There is no provision for a minor penalty for checking from behind" and IIHF 43.2
+// "there is no option to award a minor penalty", the same clause number in both.
+//
+// ⚠️ (2) THE COMPETITIVE CONTACT LIST IS NOT A LEAGUE-LEVEL TEST AND THE CAPTION READ AS IF
+// IT WERE. It gave USA Hockey 604(c)'s classifications, then granted the drive "in a
+// checking league" — so a Bantam player in a checking league, playing a Competitive Contact
+// team tonight, checks the list, correctly finds they are not on it, and drives. 604(b) is a
+// PER-GAME bar operating INSIDE a checking league: "Any time a team from a Competitive
+// Contact category (see sub-section (a) above) plays a team from a Body Checking category,
+// body checking shall be prohibited under this rule." And 604(a)'s second paragraph makes
+// the list a floor rather than a ceiling: "A local governing body may prohibit body checking
+// in any classification". The qualifier is worded to match the one content/positions/
+// defender.md already carries in its facts layer, INCLUDING the Blind Hockey limb the brief
+// that requested this repair had dropped from its quotation of that line: "Body checking is
+// prohibited during all Blind Hockey games. Body checking shall be penalized under the
+// guidelines within Rule 604" — no age qualifier on it at all. "Check the game, not the age
+// group" is the sibling's closing words and is reused verbatim rather than reworded — and
+// it is repeated in the DRIVE sentence rather than only in the exposition, because the drive
+// sentence is the imperative a listener acts on.
+//
+// ⚠️ (3) THE STICK TIE WAS UNBOUNDED, AND FOR MOST OF THIS CAPTION'S READERS IT IS THE ONLY
+// PHYSICAL THING THE CAPTION LEAVES THEM. Every 12U-and-below, girls'/women's and non-check
+// adult reader under USA Hockey, U13-and-below and all female under Hockey Canada, and
+// women's IIHF, is told to "stop at the position and the stick" — which was the whole
+// instruction. §9's own subsection is headed "The cross-check problem" and the caption did
+// not contain the word. Bounds re-derived: IIHF 55.1 makes it hooking on LOCATION ALONE —
+// "If the stick goes against the opponent's hands / or near the opponent's hands, it shall
+// be penalized as 'hooking'" — while USA Hockey 623 and Hockey Canada Interpretation 1 to
+// 8.2(a) require impedance as well, which is why the caption states the two tests
+// separately rather than saying "hooking in three books" and flattening them. The
+// Interpretation is the one that licenses the lift at all: it allows a lift "for the purpose
+// of making a play on the puck" and then requires hooking "if this action contacts the
+// opponent's hands and impedes their ability to pass, shoot, receive, or otherwise propel
+// the puck". Cross-checking is named in all four (NHL 59.1, IIHF 59.1, USA Hockey 609,
+// Hockey Canada 9.2) and reaches above a minor in all four (NHL 59.3-59.5, IIHF 59.3,
+// USA Hockey 609(b)/(c), Hockey Canada 9.2(b)/(c)) — checked, not assumed.
+// ⚠️ AND THE BOUND IS IN THE SENTENCE A LISTENER RETAINS. "stop at the position and the
+// stick" became "stop at the position and a stick lift taken below their bottom hand".
+// Putting the bound only in the exposition above would have left the retained sentence
+// exactly as unbounded as it was.
+//
+// ⚠️ (4) THE 56.1 ENTITLEMENT WAS QUOTED ONE CLAUSE SHORT OF ITS PROVISO. The caption
+// quoted the "Moving laterally" limb and concluded "contact made from a position you did
+// establish is outside it" — but the same paragraph conditions that entitlement three
+// sentences on: "A player is always entitled to use his body position to lengthen an
+// opponent's path to the puck, provided his stick is not utilized (…); his free hand is not
+// used and he does not take advantage of his body position to deliver an otherwise illegal
+// check." The parenthetical is elided in the caption and the elision is not marked inside a
+// quotation mark — the quoted fragments are contiguous strings on their own, which is why
+// they are quoted as two fragments rather than one with an ellipsis in it. IIHF 56.1 has the
+// same three conditions in gender-neutral wording, which is what the caption says rather
+// than claiming the texts are identical.
 const netFrontWalkOut = {
   id: 'net-front-walk-out-direction',
   owner: 'content/technique/body_contact_and_battles.md',
@@ -424,27 +497,67 @@ const netFrontWalkOut = {
     'choice rather than a law of hockey — under a low zone collapse it is the weak-side ' +
     'defenceman’s, under man-on-man it belongs to whoever’s check went there, which can as easily ' +
     'be a forward — so find out which your team plays. ' +
-    'Only one route is drawn, and it is the attacker’s, because they are the one being ' +
-    'moved and where they end up is what this is about: out toward the corner, away from the goal. ' +
-    'They are not choosing that line. This notation has no position-neutral shape and no mark for ' +
-    'a player being walked off a spot, so a defenceman is drawn and an ordinary skating arrow does ' +
-    'that work. ⚠️ Which league you are in decides ' +
+    'The one route drawn is the attacker’s: out toward the corner, away from the goal. ' +
+    'They are not choosing that line. The notation has no position-neutral shape and no mark for ' +
+    'a player being walked off a spot, so a defenceman is drawn and an ordinary skating arrow ' +
+    'does that work. ' +
+    '⚠️ Which league you are in decides ' +
     'whether you may move them at all, and which way you move them decides what they hit. Taking ' +
     'the inside position and tying up their stick are the parts no book scopes to a checking ' +
     'league — holding a position ' +
     'you legally established is written as legal in three of the four, with Hockey Canada silent ' +
-    'rather than against it. Driving a player off a spot they have established is a different act: ' +
+    'rather than against it. The stick tie has bounds of its own, and they are not optional: lift ' +
+    'their stick up rather than sweeping it sideways, take the lift below their bottom hand, and ' +
+    'keep your shaft out of their back. At or near the hands it is hooking — on location alone ' +
+    'under IIHF Rule 55.1, and on impeding the hands under USA Hockey Rule 623 and Hockey ' +
+    'Canada Interpretation 1 to Rule 8.2(a). ' +
+    'A shaft in the back is cross-checking, which every one of the four ' +
+    'books penalises and none of them caps at a minor. ' +
+    'Driving a player off a spot they have established is a different act: ' +
     'a push, and a minor under USA Hockey Rule 604(c) at 12U and below, in all ' +
     'girls’ and women’s classifications and in all non-check adult hockey, and under Hockey Canada ' +
     'Rule 7.3(a) at U13 and below, throughout female hockey and in any other division a Member has ' +
-    'approved — and neither book caps it at a minor. In women’s hockey IIHF Rule 101.1 makes it an ' +
-    'illegal hit. So unless your league permits full body checking, stop at the position and the ' +
-    'stick. And never walk anybody across the front of your own net: that path has a steel goal ' +
+    'approved — and neither book caps it at a minor. That list of classifications is a floor and ' +
+    'not the test: USA Hockey Rule 604(a) lets a local governing body prohibit body checking in ' +
+    'any classification, and Rule 604(b) bars it any time a Competitive Contact team plays a Body ' +
+    'Checking team — so a team from a checking league that meets a Competitive Contact team ' +
+    'tonight may not check tonight. USA Hockey’s Blind Hockey rules bar it at every age, in every ' +
+    'Blind Hockey game, and penalise it under Rule 604. Check the game, not the age group. ' +
+    'In women’s hockey IIHF Rule 101.1 makes it an ' +
+    'illegal hit. So unless body checking is legal in the game you are actually playing, stop at ' +
+    'the position and a stick lift taken below their bottom hand. ' +
+    'And never walk anybody across the front of your own net: that path has a steel goal ' +
     'frame at one edge and your own goaltender at the other, and it is the player being moved who ' +
     'meets the post, travelling sideways or backwards and unable to choose what lands first. Taking ' +
-    'them to the corner instead is caution drawn from that hazard rather than a rule anyone writes. ' +
-    'In a checking league, drive from under the arm without lifting their skates off the ice, ' +
-    'because a player whose edges are gone cannot brace at all. ' +
+    'them to the corner instead is caution drawn from that hazard rather than a rule anyone writes ' +
+    '— but the worst version of it is priced, and never at two minutes. USA Hockey Rule 608(b) is a ' +
+    'major plus a game misconduct where a check from behind “causes them to go head first into the ' +
+    'boards or goal frame”. Hockey Canada Rule 7.5(c) is a match penalty for a player who “pushes, ' +
+    'body-checks, cross-checks, or hits an opposing player in any manner from behind into the ' +
+    'boards or goal frame, in such a way that the player is unable to protect or defend ' +
+    'themselves” — the verb is pushes, so a walk-out is inside the language; what decides whether ' +
+    '7.5(c) reaches you is the limb beside it, from behind. And neither the NHL’s book nor the ' +
+    'IIHF’s offers a minor for checking from behind at all: at Rule 43.2 in both, the NHL reads ' +
+    '“there is no provision for a minor penalty for checking from behind” and the IIHF “there is no ' +
+    'option to award a minor penalty”. ' +
+    '⚠️ A checking league does not make the walk-out free either, and that is the part '  +
+    'people get wrong: the screener has no puck, so what reaches you is interference rather than '  +
+    'the checking rules. NHL and IIHF Rule 56.1 need both limbs together — moving laterally AND '  +
+    'without having established body position — so '  +
+    'contact made from a position you did establish is outside it, and driving from one you never '  +
+    'established is inside it whatever your classification. But the position you did establish is '  +
+    'not a blank cheque, and the same paragraph says so one clause later: you are entitled to use '  +
+    'body position to lengthen an opponent’s path to the puck only “provided his stick is not '  +
+    'utilized”, his “free hand is not used and he does not take advantage of his body position to '  +
+    'deliver an otherwise illegal check”. IIHF Rule 56.1 carries the same three conditions in '  +
+    'gender-neutral wording. USA Hockey Rule 625(a)(4) names this act too — a defender who '  +
+    'changes their skating lane or foot speed to play the body of an opponent who no '  +
+    'longer has the puck — '  +
+    'and Rule 625 announces no '  +
+    'Competitive Contact scope in its title the way Rule 604 does, so it reaches a checking league '  +
+    'too. Establish the position first. Then, if body checking is legal in the game you are '  +
+    'actually playing — the game, not the age group — drive from under the arm without '  +
+    'lifting their skates off the ice, because a player whose edges are gone cannot brace at all. ' +
     // ⚠️ THE RECEIVING POSTURE IS ITS OWN SENTENCE AND ITS OWN SCOPE, AND THAT IS THE WHOLE POINT
     // OF THIS BREAK. It used to be coordinated with "and" INSIDE the "In a checking league,"
     // clause above, so a reader in a non-check league -- USA Hockey 12U and below, all
@@ -1256,7 +1369,9 @@ const shotBlockGetClose = {
     'closer you are to the shooter, the more net you take away and the less time the puck has to ' +
     'accelerate or change direction, and blocking from ten feet away is far safer and more ' +
     'effective than blocking from three feet in front of your own goalie, where a deflection is a ' +
-    'goal. Take the ten feet from those words and not off the picture: the marker is drawn about ' +
+    'goal. ⚠️ Calling that safer, as against more effective, is coaching craft rather than a ' +
+    'measured finding — nothing cited here measures injury against blocking distance. ' +
+    'Take the ten feet from those words and not off the picture: the marker is drawn about ' +
     'fourteen feet out instead, because a player marker on these diagrams is nearly six feet ' +
     'across, far wider than a player, and at ten feet the two markers would touch and read as a ' +
     'collision. A point shot is drawn because it is the shot with room in it to show a distance, ' +
@@ -1272,7 +1387,9 @@ const shotBlockGetClose = {
     'on the ice and not one taken standing. Never turn your back, never turn sideways and never ' +
     'lift a leg, because all three expose what armour does not cover and turning away means you ' +
     'cannot see the puck. Do not lead with your stick: a puck deflected off an outstretched ' +
-    'blade goes upward, often into your own face. Close with your feet rather than lunging, and ' +
+    'blade goes upward, often into your own face — that mechanism is coaching craft on the ' +
+    'same footing, widely taught and measured by nothing cited here. ' +
+    'Close with your feet rather than lunging, and ' +
     'stay on your feet until the puck is actually released, because committing early is what a ' +
     'shot fake is designed to draw. And there are places not to do this at all. Not on a ' +
     'two-on-one, where your job as the lone defender is the pass and the goalie has the ' +

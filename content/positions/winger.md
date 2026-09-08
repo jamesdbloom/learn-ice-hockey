@@ -429,7 +429,7 @@ Technique: For a one-timer, open your stance toward the passer with your weight 
 Read: If the pass is bad, don't force the one-timer. Take the extra touch, because a miss ends up in the neutral zone going the other way
 Action: Crash the net the moment a shot is taken — time your arrival so you reach the side of the net just as it goes
 Technique: At the net front you are moved by a defender you feel rather than watch, so know where the near post is before the shot and take the shove braced — wide base, knees bent, hips giving
-Never: Meet a goal post head first, and never duck — head up, chin off your chest. A head-down, head-first hit on a goal post is the same injury as one on the boards, and can happen at walking speed
+Never: Meet a goal post head first, and never duck. Head up, chin off your chest instead. A head-down, head-first hit on a goal post is the same injury as one on the boards, and can happen at walking speed
 Goal: Be a threat in your half of the zone, particularly from the side of the net for rebounds
 ```
 
@@ -640,7 +640,7 @@ Never: Puck-watch. Watch your assignment instead, and arrive at your covering po
 Action: Once you are set, transition into your normal defensive-zone role: cover the point, be ready to break out
 ```
 
-When your team loses the puck in the offensive or neutral zone, your job as a winger is to sprint back to your defensive zone — often faster than the opposing forwards. Backchecking well is one of the most important defensive responsibilities of a winger, and one of the most commonly missed.
+When your team loses the puck in the offensive or neutral zone, your job as a winger is to sprint back to your defensive zone — often faster than the opposing forwards. Backchecking well is one of the most important defensive responsibilities of a winger, and one of the most commonly missed — **coaching emphasis rather than a counted ranking**.
 
 - **Take the outside lanes — under the standard assignment.** The most common backcheck scheme, and the one assumed throughout, gives the centre the middle lane and the two wingers the outside lanes. **That is a coaching choice, not a law.** Other teams use **first man back takes the middle**, whoever that is — so as a winger you can end up in the middle. Others pick up **man-on-man from the puck outward**. Find out which your team plays; [Defending the Rush](../systems/defending_the_rush.md) sets them out, along with the four named team backchecking systems that decide which assignment applies. Under every variant, somebody owns the middle and nobody assumes it is somebody else.
 - **Pick up the trailing forward.** Inside your lane, the man to find is the opposing F3 — the late-arriving forward. Stay between them and the puck. A trailer sneaking in unmarked while three defenders watch the carrier is named across coaching material as one of the cheapest goals a team gives up off a rush — **coaching consensus, not a tracked share**; nobody publishes a breakdown of rush goals by cause. [Defending the Rush](../systems/defending_the_rush.md) and [Neutral Zone Systems](../systems/neutral_zone_systems.md) state it the same way.

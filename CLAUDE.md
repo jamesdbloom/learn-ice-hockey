@@ -213,6 +213,20 @@ The short form:
 2. Get the primary sources on disk before you need them. **A 403 is not an
    absence** — USA Hockey's PDFs serve with a browser user-agent plus a
    `usahockey.com` referer; `iihf.com` challenges robots and serves browsers.
+
+   ⚠️ **AN EMPTY EXTRACTION IS NOT AN ABSENCE EITHER. READ A SOURCE'S ENTRY IN
+   [`sources/README.md`](sources/README.md) BEFORE CONCLUDING ANYTHING ABOUT WHAT THAT
+   SOURCE CONTAINS.** That file records which extractions are image-only, which carry a
+   real text layer holding **none** of the document, which have fetch gotchas, and the
+   text-to-PDF ratios that identify a failed extraction. `crt6.txt` is **1,535 bytes of
+   BMJ page furniture from a 6.3 MB PDF**, so `pdffonts` looks reassuring and
+   `grep -ci helmet` returns **0** — while the tool's own *"Remember"* box reads *"Do not
+   remove helmet (if present) or other equipment."* ⚠️ **An image-only PDF is not
+   unverifiable, it is unGREPPABLE: render it with `pdftoppm` and read the pages.**
+   One round filed **three** separate *"CRT6 cannot be verified"* reports and round 69
+   filed a fourth — **every time, the answer was already written down in that README.**
+   ⚠️ **The defect is ROUTING, NOT DILIGENCE: a brief that names a source and says
+   "grep it" produces an agent that greps it. So say this in the brief.**
 3. Attach evidence at the moment of writing: book, edition, rule number,
    operative wording. Numbers come from their
    [owner document](project/content_style_guide.md#numeric-facts-and-their-owners)
@@ -452,11 +466,19 @@ project/reviews/    Review records, findings, measurements and evidence. Where w
                     *done* is tracked, and where a plan item goes when it closes.
 project/            Style guide, review process, verification data.
                     Never fed to the podcast generator.
-scripts/            check_links.py, check_facts.py, check_absolutes.py, check_geometry.py,
-                    check_secrets.py, check_counts.py, check_external_links.py,
-                    check_rule_scope.py, check_pointers.py, check_zones.py, check_tables.py
-                    (worklists, not gates),
+scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
+                    check_geometry.py, check_secrets.py, check_counts.py.
+                    WORKLISTS, NOT GATES — none has a --strict and none should gain one:
+                    check_external_links.py, check_rule_scope.py, check_pointers.py,
+                    check_zones.py, check_tables.py, check_disclosures.py,
+                    check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
+                    check_plan_rows.py.
                     md_to_speech.py
+                    ⚠️ THIS LIST WAS FIVE TOOLS SHORT until round 69 — check_diagram_quotes,
+                    check_chunk_tails, check_leaders, check_plan_rows and check_disclosures
+                    all existed and none was named here. A tool nobody knows about does not
+                    get run. `ls scripts/*.py` is the authority; this list is a convenience
+                    and goes stale the moment someone adds a tool without editing it.
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.

@@ -47,11 +47,43 @@ const OWN_G = { at: 'crease::far', dx: 1 };            // (-85, 0)
 // a number for: "As they cross the centre red line: tighten to around a stick and
 // a half." Anchored to centre ice because that is what the instruction is about.
 const GAP_CARRIER = { at: 'centre-ice', dx: -6, dy: 26 };   // (-6, 26)
-// The defender: 8.9 ft away — a stick and a half, taking a stick at about 6 ft —
-// and 4 ft to the INSIDE of the carrier, because "your body sits between them and
-// the middle of the ice". Putting the defender on the boards side of the carrier
-// is the error the section names by hand, and it is the one this diagram exists
-// to make unmistakable.
+// The defender: 8 ft up-ice and 4 ft to the INSIDE of the carrier — hypot(8,4) =
+// 8.944 ft — because "your body sits between them and the middle of the ice".
+// Putting the defender on the boards side of the carrier is the error the section
+// names by hand, and it is the one this diagram exists to make unmistakable.
+//
+// ⚠️ THIS COMMENT USED TO READ "8.9 ft away — a stick and a half, taking a stick at
+// about 6 ft", AND IT WAS THE ROOT CAUSE OF A FALSE CLAUSE IN THE CAPTION. There is
+// no 6 ft stick. equipment.md §"What the Rules Actually Require" has the shaft cap as
+// FOUR different numbers — Hockey Canada 3.3(b) 1.60 m (63 in) with no exception,
+// NHL 10.1 63 in (65 for a player 6'6"+ by written approval), IIHF 10.1 1.63 m
+// (~64¼ in), USA Hockey 301(b) a flat 65 — so 65 in is the ceiling anywhere and 72 in
+// is legal nowhere. The comment invented a stick to make the arithmetic come out at
+// 1.5, the caption then asserted "the gap drawn here is about a stick and a half",
+// and the picture had been disproving its own caption ever since.
+//
+// WHAT 8.944 FT ACTUALLY IS, on every stick figure the corpus owns:
+//   63 in → 1.70 sticks | 64¼ in → 1.67 | 65 in → 1.65 | 1.5 m → 1.82
+// So: nearer one and three-quarters than one and a half on all four, which is what
+// the caption now says. That comparison flips only at a stick of 66 in (8.944 ft over
+// 1.625), which is longer than any book allows, so the caption's claim holds under
+// EVERY legal stick and does not need re-deriving if a figure moves inside the range.
+// It also holds across equipment.md's retail senior span of 56-63 in (1.70 to 1.92).
+// ⚠️ DO NOT "SIMPLIFY" IT TO "nearer two" — that is false on three of the four figures
+// (1.70 is 0.20 from 1.5 and only 0.30 from 2.0), and a brief asserting it is what sent
+// this repair here.
+//
+// ⚠️ THE TWO STICK FIGURES ARE NOT IN CONFLICT AND MUST NOT BE RECONCILED. The 63-65 in
+// range is a LEGAL MAXIMUM (equipment.md, four books); the ~1.5 m in
+// puck_support_and_spacing.md §"Practical distances" is what a senior stick actually
+// measures, offered there so a player can pace a distance without a tape. A cap and a
+// typical are different quantities. That is why the caption gives both rather than
+// picking one, and why 1.5 m being under the cap is not a contradiction to fix.
+//
+// ⚠️ FIXING THIS BY MOVING GAP_D IS NOT AVAILABLE TO A CAPTION EDIT. check_geometry.py
+// validates named positions and check-arrivals.mjs reads the routes off these two
+// anchors; the 7.28 ft closing gap at the route ends is derived from GAP_D too. The
+// coordinate is diagram-reviewer's call. The caption was the thing that was wrong.
 const GAP_D = { at: 'centre-ice', dx: -14, dy: 22 };        // (-14, 22)
 
 const gapAndAngle = {
@@ -69,18 +101,52 @@ const gapAndAngle = {
     'That band is drawn on the two faceoff-dot lines and cut off at the top of the circles and at ' +
     'the crease so that the shading has an edge; the middle is a lane running the length of the ' +
     'rink, and none of those four edges is painted on the ice. ' +
-    'The gap drawn here is about a stick and a half, which is the target at the red line; it is ' +
-    'roughly two to three stick lengths through the neutral zone and roughly a stick length at your own ' +
-    'blue line, and notice that it is slightly tighter where the two routes end than where they start, ' +
-    'because a gap that grows as they approach is a goal waiting to happen. ' +
+    'The gap drawn here is about nine feet, which is a little wider than the stick and a half this ' +
+    'section targets at the red line: the rulebooks cap a stick at 63 to 65 inches depending on which ' +
+    'one you play under, a senior stick in practice is about 1.5 metres, and on any of those figures ' +
+    'nine feet is nearer one and three-quarter stick lengths than one and a half. The full ladder runs ' +
+    'roughly two to three stick lengths through the neutral zone, around a stick and a half as they ' +
+    'cross the red line, and roughly a stick length at your own blue line, and notice that ' +
+    'the drawn gap is slightly tighter where the two routes end than where they start, because a gap ' +
+    'that grows as they approach is a goal waiting to happen. ' +
     // ⚠️ The PROVENANCE limit travels with the ladder, not just the applicability hedge.
     // The style guide's owner row is explicit that "a guide, not a law" is about
     // applicability and does NOT carry provenance. This caption is borrowed into
     // defender.md and how_to_watch_hockey.md, BOTH of which state the provenance limit in
     // prose -- so the picture was contradicting the paragraph that introduced it.
+    // ⚠️ THE SHORT FORM OF THAT LIMIT MISSTATES THE EVIDENCE, AND HAS DONE SO IN BOTH
+    // DIRECTIONS. "Coaching convention rather than measurement" read as though nobody prints
+    // these numbers. The replacement that shipped here was worse: it said the red-line and
+    // blue-line rungs were "unsourced as line-anchored figures", and that the only page
+    // printing them attached them to a zone. BOTH HALVES ARE FALSE, and the pages refuting
+    // them were already inside the owner's own citation set.
+    // ⚠️ TWO pages anchor a distance to a LINE, and they disagree with each other.
+    // HockeyShare's blog post (blog.hockeyshare.com/gap-control-basics/, bylined 3 May 2010)
+    // prints "2 stick-lengths at the red line, and 1 stick-length/body contact made at the
+    // defending blue line"; Weiss Tech Hockey (bylined 3 Mar 2015) prints a "tight gap (2
+    // stick lengths) by the time he/she is crossing the blue line". So the BLUE-LINE rung IS
+    // published and anchored to the line exactly -- with a second page printing twice it --
+    // while the RED-LINE rung is CONTRADICTED rather than unsourced.
+    // ⚠️ The zone-anchored "1.5 stick lengths ... in the neutral zone and about 1 length in
+    // the defensive zone" is a SEPARATE, user-submitted HockeyShare drill, not that blog
+    // post. Conflating HockeyShare's two contradictory pages is how the false version got
+    // built.
+    // ⚠️ SCOPE THE NEGATIVE TO THE RED LINE, as the owner does at §"Target distances": "the
+    // only page found that anchors a distance to the CENTRE RED LINE". The unscoped form,
+    // "the one page that anchors figures to lines", is false -- there are two.
+    // Do not compress this back. Understating the evidence makes the corpus look less
+    // supported than it is, the direction no reviewer stops on; overstating it is how a
+    // refuted negative existence claim reached a spoken caption in the first place.
+    // Owner: §"Target distances" and the Sources trailer of content/systems/defending_the_rush.md.
     'Those distances are a guide and not a law — they vary with your own backward speed and the ' +
-    'attacker’s skill, and only the neutral-zone rung is traceable to a published coaching ' +
-    'source: the red-line and blue-line rungs are coaching convention rather than measurement. ' +
+    'attacker’s skill, and the published coaching pages disagree with each other and with this ' +
+    'ladder. The neutral-zone figure is published by more than one page; the stick length at your ' +
+    'own blue line is published and anchored to that line exactly, though a second line-anchored ' +
+    'page prints two stick lengths there instead. The stick and a half at the red line is the one ' +
+    'to know about: the only page found that anchors a distance to the centre red line prints two ' +
+    'stick lengths there, not a stick and a half. One coaching book prints no distance at all, ' +
+    'holding that the blue line does not determine where gap control begins. So treat the ladder ' +
+    'as a shape to aim at rather than as three measured numbers. ' +
     'What no still picture can show is the thing that matters most: that ' +
     'the defender was already at full backward speed before this instant, because a gap cannot be closed ' +
     'from a standstill.',

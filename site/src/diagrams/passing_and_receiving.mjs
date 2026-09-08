@@ -60,10 +60,38 @@
  *                     clause of one sentence; a picture would restate a sentence and
  *                     add a second place a correction has to reach.
  *
+ * CAPTION LENGTH IS A COST, not a free place to restate the section. Every caption here
+ * is read aloud by `md_to_speech.py` as its own paragraph, immediately before the
+ * ` ```facts ` block of the same section — so anything the caption says that the facts
+ * block also says is heard twice in a row. A caption carries what the PICTURE holds and
+ * the prose cannot: orientation, who is who, what moves where, and the personnel
+ * disclosure below. It does not carry mechanics, when-to-use, or a second telling of
+ * the risk paragraph. Notation apologetics — why a mark is a circle, what the notation
+ * cannot draw — belong in `describe`.
+ *
+ * ⚠️ AND `describe` IS NOT SPOKEN, so "move it to `describe`" means "take it out of the
+ * audio product". `md_to_speech.py` resolves a `diagram:` reference to `entry["caption"]`
+ * and reads no other field. `describe` reaches exactly three places: `check_absolutes.py`
+ * (`for field in ("caption", "describe")`), `check_diagram_quotes.py` (which concatenates
+ * the two before matching), and the SVG `<desc>` that `build-diagrams.mjs` writes from
+ * `remark-corpus.mjs`. ⚠️ That list was checked by READING those files, not by grepping
+ * for the word: `check_geometry.py` and `check_zones.py` both contain "describe" as
+ * ordinary English in a message and a comment and touch no such field, and an earlier
+ * version of this paragraph named them as consumers on the strength of the grep alone.
+ *
+ * ⚠️ The podcast listener cannot see the picture either, and nothing warns you when a line
+ * has left the audio. For PURE apologetics that trade
+ * is right — a listener has no picture to apologise for — but route anything LOAD-BEARING
+ * there and it is simply gone. Two lines were moved on that basis and are no longer heard:
+ * the carrier's glyph (area pass) and the missing facing and forehand (lead). The substance
+ * behind the second stays spoken in the document itself, in the Overview and in the "Lead
+ * them toward the play they want to make" bullet.
+ *
  * PERSONNEL IS NOT SHAPE, and there is no neutral glyph — a circle is a forward and a
  * triangle a defenceman, so every glyph is a personnel claim whether the diagram
  * wants one or not. This document is about a skill, not about who is on the ice, so
- * each caption discloses what was drawn and says the section does not name it. Where
+ * each caption keeps a one-clause disclosure of what the section does and does not
+ * name. That clause is a scope flag, not decoration: do not cut it for length. Where
  * the prose DOES name a position it is followed literally: "your winger" is a circle,
  * and "a defender who is standing you up at the blue line" is a triangle, which is
  * key (A)'s own `▲ △ Defender / Player` row.
@@ -132,34 +160,28 @@ const areaPass = {
   width: 900,
 
   caption:
-    'An area pass at the attacking blue line, and the one thing about it a picture can show and a ' +
-    'sentence cannot: there is nobody at the target. A defender has stood the puck carrier up at the ' +
-    'line, so rather than pass to his winger the carrier chips the puck into the shaded patch of ice ' +
-    'behind that defender — a place, not a person. That is the whole idea. A pass aimed at a body can ' +
-    'be intercepted and a pass aimed at a patch of ice cannot, so the play becomes a race instead of a ' +
-    'turnover, which is also why it is only a good play if the winger has a genuine speed or angle ' +
-    'advantage: an area pass into a defender’s feet with nobody chasing it is giving the puck away ' +
-    'politely. Put it flat, with enough pace to get past the nearest defender’s stick but not so much ' +
-    'that it runs to the far boards ahead of your teammate. The winger is drawn still short of the blue ' +
-    'line on purpose, because a receiver whose skates both cross the leading edge of the blue line before ' +
-    'the puck does is off-side — the stretch-pass section works that rule through, including the two ' +
-    'books of the four that judge a lifted trail skate differently. On the personnel: the opponent is a ' +
-    'triangle because the section calls him a defender and the receiver a circle because it calls him a ' +
-    'winger, but the player with the puck is drawn as a forward only because this notation has no glyph ' +
-    'without a position in it, and the section does not say who he is.',
+    'An area pass at the attacking blue line, and the one thing about it a picture can show and a sentence ' +
+    'cannot: there is nobody at the target. A defender has stood the puck carrier up at the line, so rather than ' +
+    'pass to his winger the carrier chips the puck into the shaded patch of ice behind that defender — a place, ' +
+    'not a person. That makes the play a race rather than a turnover, so it is only a good play if the winger has ' +
+    'a genuine speed or angle advantage. The winger is drawn still short of the blue line on purpose, because a ' +
+    'receiver whose skates both cross the leading edge of the blue line before the puck does is off-side — the ' +
+    'stretch-pass section works that rule through, including the two books of the four that judge a lifted trail ' +
+    'skate differently. The section names the defender and the winger; it does not say who the puck carrier is.',
 
   describe:
-    'The attacking half of the rink, attacking to the right, with the blue line running down the picture ' +
-    'about a quarter of the way across and the opposition net at the far right, their goaltender in the ' +
-    'crease. Three skaters. Your puck carrier stands in the neutral zone, eleven feet outside the blue line and on ' +
-    'the right-hand side of the ice, with the puck beside him. An opposition defenceman, drawn as a ' +
-    'solid triangle, stands one foot inside the blue line and about six feet closer to the middle, ' +
-    'between the carrier and the ice beyond him. Your winger is wider still and further back, about ten ' +
-    'feet from the carrier; a plain skating arrow runs from him straight up the ice and stops four feet ' +
-    'short of the blue line. A shaded rectangle of ice, fourteen feet by twelve, sits inside the ' +
-    'attacking zone beginning eight feet beyond the defenceman. A dashed passing route leaves the ' +
-    'carrier, passes about seven feet clear of the defenceman, and its arrowhead finishes inside that ' +
-    'shaded patch. No player is drawn at the end of the pass.',
+    'The attacking half of the rink, attacking to the right, with the blue line running down the picture about a ' +
+    'quarter of the way across and the opposition net at the far right, their goaltender in the crease. Three ' +
+    'skaters. Your puck carrier stands in the neutral zone, eleven feet outside the blue line and on the ' +
+    'right-hand side of the ice, with the puck beside him. An opposition defenceman, drawn as a solid triangle, ' +
+    'stands one foot inside the blue line and about six feet closer to the middle, between the carrier and the ' +
+    'ice beyond him. Your winger is wider still and further back, about ten feet from the carrier; a plain ' +
+    'skating arrow runs from him straight up the ice and stops four feet short of the blue line. A shaded ' +
+    'rectangle of ice, fourteen feet by twelve, sits inside the attacking zone beginning eight feet beyond the ' +
+    'defenceman. A dashed passing route leaves the carrier, passes about seven feet clear of the defenceman, and ' +
+    'its arrowhead finishes inside that shaded patch. No player is drawn at the end of the pass. The carrier is ' +
+    'drawn as a circle only because this notation has no glyph without a position in it, and the section does not ' +
+    'say who he is.',
 
   zones: [
     // The patch of ice the pass is aimed at: 14 ft by 12, beginning 9 ft inside the
@@ -235,8 +257,9 @@ const areaPass = {
 // NO SECOND, WRONG PASS. "Aiming at a moving teammate's current position" is in the
 // section and in Common Mistakes, and it is tempting to draw both and mark one bad.
 // There is no glyph for a pass you should not make: a dashed line with an arrowhead
-// means "the puck goes here", and two of them would read as two options. The caption
-// carries the failure instead.
+// means "the puck goes here", and two of them would read as two options. The section's
+// own "Why it matters" paragraph, which sits immediately above this picture, carries
+// the failure instead, so the caption does not restate it.
 // ---------------------------------------------------------------------------
 
 // The passer, just inside the attacking blue line and above the middle. He is
@@ -263,35 +286,25 @@ const leadTheReceiver = {
   width: 900,
 
   caption:
-    'Passing into space rather than onto the tape. The receiver is moving, so the pass is not aimed at ' +
-    'him: it is aimed at the spot where his stick will be when the puck arrives, and the gap between the ' +
-    'end of his skating arrow and the end of the pass is the lead. Pick that catch-point and pass to it, ' +
-    'rather than trying to track a moving blade with your eyes, and read his feet rather than his chest, ' +
-    'because his skates tell you where he is actually going and how fast. The two variables trade against ' +
-    'each other — faster receiver, longer lead; harder pass, shorter lead — and when in doubt, lead him ' +
-    'slightly, because a pass marginally ahead can be skated onto and a pass behind cannot be skated ' +
-    'backwards onto. Aim where he is now and the puck arrives behind him, and he has to reach back, slow ' +
-    'down or turn, every one of which kills the speed that made the play dangerous. This is not the area ' +
-    'pass: that one aims at ice nobody owns yet and turns the play into a race, and this one aims at one ' +
-    'particular teammate’s stick a moment from now. Two things the picture cannot hold. It cannot show ' +
-    'which way either player is facing, and it cannot show which side is the receiver’s forehand — the ' +
-    'section wants the puck slightly ahead and on the forehand, and away from the checker where those two ' +
-    'conflict. No opponents are drawn but the goaltender, because the section describes a passer and a ' +
-    'receiver only, and both are drawn as forwards, which the section does not say. The lead is judged ' +
-    'the same way anywhere on the ice, although which passes are worth making is not: in your own end the ' +
-    'standard is certainty rather than value.',
+    'Passing into space rather than onto the tape. The receiver is moving, so the pass is not aimed at him: it is ' +
+    'aimed at the spot where his stick will be when the puck arrives, and the gap between the end of his skating ' +
+    'arrow and the end of the pass is the lead. This is not the area pass: that one aims at ice nobody owns yet ' +
+    'and turns the play into a race, and this one aims at one particular teammate’s stick a moment from now. No ' +
+    'opponents are drawn but the goaltender, because the section describes a passer and a receiver only, and it ' +
+    'does not say what either of them is. The lead is judged the same way anywhere on the ice, although which ' +
+    'passes are worth making is not: in your own end the standard is certainty rather than value.',
 
   describe:
     'The attacking half of the rink, attacking to the right, the opposition net at the right with their ' +
-    'goaltender in the crease. Two of your players and no other opponents. Your passer stands just inside ' +
-    'the attacking blue line, a little above the middle of the ice, with the puck beside him. Your ' +
-    'receiver stands eighteen feet away, also just inside the blue line but below the middle. A plain ' +
-    'skating arrow runs from the receiver about twelve feet up-ice, angled slightly towards the middle. A ' +
-    'dashed passing route runs from the passer diagonally up-ice and across, staying about fifteen feet ' +
-    'clear of the receiver, and its arrowhead finishes twelve feet beyond the end of the receiver’s arrow ' +
-    'and on the straight continuation of it, in the middle of the ice between the two faceoff circles. ' +
-    'The two arrowheads point in similar directions, about forty degrees apart, and no player is drawn ' +
-    'at either of them.',
+    'goaltender in the crease. Two of your players and no other opponents. Your passer stands just inside the ' +
+    'attacking blue line, a little above the middle of the ice, with the puck beside him. Your receiver stands ' +
+    'eighteen feet away, also just inside the blue line but below the middle. A plain skating arrow runs from the ' +
+    'receiver about twelve feet up-ice, angled slightly towards the middle. A dashed passing route runs from the ' +
+    'passer diagonally up-ice and across, staying about fifteen feet clear of the receiver, and its arrowhead ' +
+    'finishes twelve feet beyond the end of the receiver’s arrow and on the straight continuation of it, in the ' +
+    'middle of the ice between the two faceoff circles. The two arrowheads point in similar directions, about ' +
+    'forty degrees apart, and no player is drawn at either of them. Neither player’s facing is drawn, and the ' +
+    'notation cannot show which side of the receiver is his forehand.',
 
   players: [
     // The opposition goaltender, drawn for one reason: without him the attacking net
@@ -378,38 +391,27 @@ const bankPass = {
   width: 900,
 
   caption:
-    'A bank pass off the boards, drawn in your own end: your own net is at the right of this picture and ' +
-    'up-ice is to the left. A forechecker’s body sits in the direct lane between you and your teammate, ' +
-    'so the puck is not sent at the teammate at all. It is sent at a spot on the wall, chosen so that the ' +
-    'puck comes off the boards at roughly the mirror of the angle it went in at and arrives where he is: ' +
-    'play the angle, not the target. That is also the entire safety argument for the play, and it is ' +
-    'worth keeping apart from the reliability of it, because they are two different things. It is safe ' +
-    'because the puck never travels through the lane the checker is defending — it goes behind him, off a ' +
-    'wall he cannot cover, so there is nothing for a stick or a skate to intercept. It is only moderately ' +
-    'reliable because the bounce is not fully predictable and board liveliness genuinely varies from rink ' +
-    'to rink, which is why you test a bank in warm-up and why you call it: a puck your teammate is not ' +
-    'expecting is a turnover however well it beat the checker. Two things this picture cannot show, and ' +
-    'they are the two that decide whether the bounce is true — keep the puck flat and firm, and hit the ' +
-    'boards low, because contact near the bottom of the boards gives the truest bounce and higher up you ' +
-    'can catch the glass stanchion and lose the angle entirely. The checker is drawn where his body is; ' +
-    'this notation has no stick symbol, so his stick reaching into the lane is not drawn. He is a circle ' +
-    'because the section’s first example of this pass is beating a forechecker along the wall, and your ' +
-    'teammate is a circle for no reason the section gives — it names nobody, and the geometry is the same ' +
-    'whoever is in the lane and whoever is receiving.',
+    'A bank pass off the boards, drawn in your own end: your own net is at the right of this picture and up-ice ' +
+    'is to the left. A forechecker’s body sits in the direct lane between you and your teammate, so the puck is ' +
+    'not sent at the teammate at all. It is sent at a spot on the wall, chosen so that it comes off the boards at ' +
+    'roughly the mirror of the angle it went in at and arrives where he is: play the angle, not the target. It is ' +
+    'safe because the puck never travels through the lane the checker is defending, and only moderately reliable ' +
+    'because the bounce is not fully predictable — which is why you call it: a puck your teammate is not ' +
+    'expecting is a turnover however well it beat the checker. The section names a forechecker but not the ' +
+    'receiver; the geometry is the same whoever is in the lane and whoever is receiving.',
 
   describe:
-    'One end zone, drawn with your own net at the right of the picture and up-ice to the left, so the ' +
-    'play runs from right to left. Your goaltender is in the crease. You stand along the right-hand ' +
-    'boards, out towards the corner and about nine feet off the wall, with the puck between you and the ' +
-    'boards. An opposition forward, drawn as a solid circle, stands about thirteen feet up-ice of you and ' +
-    'towards the middle, exactly on the straight line between you and your teammate; his stick is not ' +
-    'drawn. Your teammate stands further up-ice again, roughly level with the top of the faceoff circle ' +
-    'and about twenty-two feet off the boards, thirty-eight feet from you. The puck’s route is two ' +
-    'straight dashed legs meeting at a point on the boards up-ice of you: the first runs from you out ' +
-    'into the wall and its arrowhead points at the wall itself, and the second leaves that point at the ' +
-    'mirror of the same angle, passes about ten feet outside the forechecker, and finishes four and a ' +
-    'half feet short of your teammate. The straight line from you to your teammate, the one the ' +
-    'forechecker is standing in, is not drawn.',
+    'One end zone, drawn with your own net at the right of the picture and up-ice to the left, so the play runs ' +
+    'from right to left. Your goaltender is in the crease. You stand along the right-hand boards, out towards the ' +
+    'corner and about nine feet off the wall, with the puck between you and the boards. An opposition forward, ' +
+    'drawn as a solid circle, stands about thirteen feet up-ice of you and towards the middle, exactly on the ' +
+    'straight line between you and your teammate; his stick is not drawn. Your teammate stands further up-ice ' +
+    'again, roughly level with the top of the faceoff circle and about twenty-two feet off the boards, ' +
+    'thirty-eight feet from you. The puck’s route is two straight dashed legs meeting at a point on the boards ' +
+    'up-ice of you: the first runs from you out into the wall and its arrowhead points at the wall itself, and ' +
+    'the second leaves that point at the mirror of the same angle, passes about ten feet outside the forechecker, ' +
+    'and finishes four and a half feet short of your teammate. The straight line from you to your teammate, the ' +
+    'one the forechecker is standing in, is not drawn.',
 
   players: [
     // Your own goaltender, for orientation: this is the one kind of picture in this
