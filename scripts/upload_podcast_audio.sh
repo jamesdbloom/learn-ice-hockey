@@ -51,7 +51,30 @@ for arg in "$@"; do
   esac
 done
 
-: "${S3_BUCKET:?set S3_BUCKET (the same repository variable the deploy workflow uses)}"
+# ⚠️ The bucket is NOT hardcoded, deliberately — this repository is public. It is the
+# same GitHub repository variable `.github/workflows/deploy.yml` reads, so the script
+# and the deploy can never disagree about where the site lives.
+#
+# An earlier version of this guard just named the variable, which told the operator
+# what was missing and not where to get it. Say where.
+if [ -z "${S3_BUCKET:-}" ]; then
+  cat >&2 <<'HELP'
+S3_BUCKET is not set.
+
+It is a GitHub repository variable, the same one .github/workflows/deploy.yml uses.
+Get it and re-run in one line:
+
+    S3_BUCKET="$(gh variable get S3_BUCKET)" ./scripts/upload_podcast_audio.sh
+
+or look it up first:
+
+    gh variable list
+
+⚠️ This script is a DRY RUN by default and moves no bytes. Add --go to publish,
+   and only after the owner has approved it — it uploads ~1.12 GB.
+HELP
+  exit 2
+fi
 
 [ -f "$MANIFEST" ] || { echo "missing $MANIFEST — run scripts/build_podcast_audio.py first" >&2; exit 2; }
 
