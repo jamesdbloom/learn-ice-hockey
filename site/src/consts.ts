@@ -6,9 +6,15 @@ export const SITE_DESCRIPTION =
   'A documentation corpus for learning ice hockey: where to be, how to execute, how to read the play, and how five players work as one unit.';
 
 /**
- * The audio edition.
+ * The podcast episodes.
  *
- * ⚠️ NOT "narration", and the word matters. Measured 9 September 2026: every
+ * ⚠️ NOT "the audio edition", and NOT "narration". Both words matter, and they
+ * fail for different reasons. "Audio edition" was REJECTED BY THE OWNER on
+ * 9 September 2026 — "the audio should also stand alone on its own as a separate
+ * standalone podcast, not be too strongly stated as just an audio version of the
+ * site" — because it describes the episode by its relationship to this site
+ * rather than by its subject. "Narration" is a different failure: it asserts a
+ * verbatim reading, and the durations refute it. Measured 9 September 2026: every
  * episode runs 48-72 minutes REGARDLESS of its document's length — Rules Primer
  * is 93,153 words in 67.9 min, Reading Ice Hockey Diagrams is 4,198 words in
  * 53.4 min, against a ~150 wpm speech rate. No episode is a verbatim reading of

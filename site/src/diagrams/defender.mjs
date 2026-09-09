@@ -676,7 +676,7 @@ const pairOverview = {
     'the corner. One of you plays the puck; the other holds the goalmouth — the ice at ' +
     'the mouth of your own goal — and you swap those jobs the moment the puck crosses ' +
     'the middle of the ice. That net-front assignment is a low zone collapse — the ' +
-    'coverage this document assumes, and a coaching choice rather than a rule: under ' +
+    'coverage assumed throughout this guide, and a coaching choice rather than a rule: under ' +
     'man-on-man the net front belongs to whoever\'s man is standing there, so find out ' +
     'which your team plays.',
 

@@ -10,11 +10,35 @@ defect that was repaired, and no checker in the list looks for it.
 
 ⚠️  A WORKLIST, NOT A GATE, and it must never gain a --strict. Measured at
     introduction on 9 September 2026: 2,894 boundaries scanned, 2 hits, and
-    BOTH were correct as written -- one is a reassurance ("No shame in this at
-    all.") that is not a prohibition at all, and one is an explanation that
-    tells the listener in terms that it is "half of a five-clause
-    Interpretation", so a listener who stops there knows more is coming.
+    BOTH were correct as written -- a verdict CHALLENGED and then UPHELD, which
+    is why the reasoning is written out below rather than left as "read the hit".
+
+    ⚠️  AN AGENT RE-FLAGGED THE risk_management.md 37->38 HIT as a boards-posture
+    instruction split across a boundary, on the ground that "a listener can get
+    the decision without the posture". READ THE CHUNKS, NOT THE BOUNDARY: chunk
+    37 ends the priority ladder ("Seventh, Glass and out... No shame in this at
+    all."), and chunk 38 opens with the EIGHTH option carrying its posture
+    INSIDE it -- "Take the hit, protect the puck against the boards, and eat the
+    faceoff -- and take the hit properly: skates parallel to the wall, contact on
+    your forearm and hip, head up and chin off your chest". Decision and posture
+    are in the SAME chunk. Not a defect.
+
+    ⚠️  AND THE SECOND HIT, breakouts.md 72->73, is an explanation that tells the
+    listener in terms that it is "half of a five-clause Interpretation", so a
+    listener who stops there knows more is coming. Also not a defect.
+
+    ⚠️  THE TRANSFERABLE PART: this tool reports a boundary, and a boundary is
+    not a defect. The question is never "does a safety pair straddle this line"
+    but "IS THE PAIR ACTUALLY SPLIT" -- and answering it means reading both
+    chunks whole, not the two sentences either side of the join.
     READ EVERY HIT.
+
+    ⚠️  THE PARAGRAPH ABOVE WAS ITSELF GARBLED BY THE EDIT THAT ADDED IT, and a
+    commit gate caught it: the insertion severed the original sentence and left a
+    clause about the two hits dangling off an unrelated one, describing the first
+    hit twice and leaving the second unattributed. That is the "repair applied to
+    half a sentence" shape review_process.md names -- committed into the docstring
+    of a tool whose whole subject is a sentence split in the wrong place.
 
 ⚠️  IT EXISTS BECAUSE OF A HANDOVER, NOT A DEFECT. Round 70 made ~60 repairs
     whose shape is exactly "prohibition. remedy." An agent named this as the

@@ -101,8 +101,8 @@ const gapAndAngle = {
     'That band is drawn on the two faceoff-dot lines and cut off at the top of the circles and at ' +
     'the crease so that the shading has an edge; the middle is a lane running the length of the ' +
     'rink, and none of those four edges is painted on the ice. ' +
-    'The gap drawn here is about nine feet, which is a little wider than the stick and a half this ' +
-    'section targets at the red line: the rulebooks cap a stick at 63 to 65 inches depending on which ' +
+    'The gap drawn here is about nine feet, which is a little wider than the stick and a half the ' +
+    'gap ladder targets at the red line: the rulebooks cap a stick at 63 to 65 inches depending on which ' +
     'one you play under, a senior stick in practice is about 1.5 metres, and on any of those figures ' +
     'nine feet is nearer one and three-quarter stick lengths than one and a half. The full ladder runs ' +
     'roughly two to three stick lengths through the neutral zone, around a stick and a half as they ' +
@@ -353,7 +353,7 @@ const threeOnTwoDefault = {
     'retreating at the same speed with the middle sealed between them — a staggered retreat opens a ' +
     'diagonal seam straight to the slot — and that they stop above the circles rather than backing all ' +
     'the way to the goal line, which would concede the whole slot. ' +
-    'This is the version this section assumes, and it is a coaching choice rather than a law: the realistic ' +
+    'This is the two-wide default, and it is a coaching choice rather than a law: the realistic ' +
     'alternative is the next diagram, the two fail in different directions, and two defencemen playing ' +
     'different ones on the same rush is worse than either, so ask your coach which you play. ' +
     'If the backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle ' +

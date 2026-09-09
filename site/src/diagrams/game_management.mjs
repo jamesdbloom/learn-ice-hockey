@@ -720,8 +720,9 @@ const delayedPenalty = {
     'goal. The instruction is simply not to make the other one: no blind D-to-D passes across your ' +
     'own crease during a delayed call. Only the opponent nearest the puck is drawn, ' +
     'because the whistle comes when they gain control and keeping it away from them is the entire ' +
-    'job; your other four skaters are not drawn at all, because the section does not say where ' +
-    'they stand. And check before the game rather than in it: many recreational leagues do not ' +
+    'job; your other four skaters are not drawn at all, because the shape you use with the extra ' +
+    'attacker is a system choice and this is a picture of keeping the puck rather than of a shape. ' +
+    'And check before the game rather than in it: many recreational leagues do not ' +
     'allow or practise pulling the goalie on a delayed call, and some officials stop play early.',
 
   describe:
@@ -733,7 +734,7 @@ const delayedPenalty = {
     'route leaves the puck carrier and runs to his partner. It curves out and around the ' +
     'back of the goal, running four to six feet past the goal line for the whole of its middle ' +
     'third and never entering the crease. No route is drawn across the front of the goal, ' +
-    'deliberately: the pass this section warns against is described in words and not drawn. The ' +
+    'deliberately: the blind pass across your own goal mouth is described in words and not drawn. The ' +
     'route is not numbered. No other players are drawn, and no region is shaded.',
 
   // ⚠️ NOT A SHADED REGION. `fill: 'none'` and `stroke: 'none'` together draw nothing

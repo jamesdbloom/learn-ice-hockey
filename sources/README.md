@@ -889,6 +889,29 @@ concept.** The coordinator reported Hockey Canada as carrying no goalkeeper-equi
 exactly that basis. **It carries one — Rule 2.2(g), and without the incapacity condition the NHL and
 USA Hockey attach.** CARHA carries it too, at 16(f), also unconditional.
 
+⚠️ **THE NHL BOOK CONTRADICTS ITSELF ABOUT ITS OWN SIGNAL NUMBERS, AND THE CORPUS FOLLOWS THE RIGHT
+HALF.** Measured 9 September 2026 in `nhl_rules_layout.txt`.
+
+- **The SIGNAL TABLE**, read as a line range (`sed -n '2909,3236p'`) rather than by pattern: row
+  **`29.18  Hooking  "A tugging motion with both arms as if pulling something from in front toward the
+  stomach."`**, with `29.17 Holding the stick` above it and `29.19 Icing` below.
+- **The BACK-OF-BOOK INDEX** at `:~10839` files the same signal as **`Hooking – signal … 29.17`**.
+
+**They disagree by one. `content/foundation/rules_primer.md` follows the TABLE and is correct.**
+
+⚠️ **BUT DO NOT RECORD THIS AS "the index is systematically off by one" — IT IS NOT ESTABLISHED, AND THE
+OBVIOUS METHOD FOR ESTABLISHING IT FAILS.** Pairing index headwords with their `- signal … 29.x`
+sub-entries programmatically returns **duplicate assignments** — Charging at both 29.4 and 29.5, Icing at
+both 29.18 and 29.19, Roughing at both 29.26 and 29.27 — because a `- signal` line belongs to the
+headword ABOVE it and consecutive headwords each carrying one defeat naive attribution. **Early entries
+(Butt-ending 29.2, Charging 29.3) match the table; several middle ones appear off by one.** That is
+suggestive and it is not a finding.
+
+**So: the hooking disagreement is VERIFIED and the pattern is NOT.** ⚠️ **What matters operationally is
+the direction of trust: the SIGNAL TABLE is the normative text and the index is a finding aid. Check a
+signal number against the table, never against the index — and if a future agent "corrects" a signal
+citation on the strength of the index, this is why it is wrong.**
+
 **Other measured house-word divergences:**
 
 - **CARHA writes `cross bar`, two words**, where every other book closes it. A `crossbar` census

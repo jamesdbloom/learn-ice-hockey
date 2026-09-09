@@ -392,7 +392,7 @@ const wherethePuckIs = {
   caption:
     'Your own net at the right, your goaltender in his crease, and a loose puck drawn inside the ' +
     'shaded blue paint beside him with you standing outside it. This is the picture worth ' +
-    'carrying out of this section, because the test is not where you are — it is where the puck is. ' +
+    'carrying away, because the test is not where you are — it is where the puck is. ' +
     'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
     // ⚠️ "all four" flattened USA Hockey, which alone gives the referee an alternative:
     // Rule 614(b) Falling on Puck, "A penalty shot/optional minor penalty shall be
@@ -402,7 +402,7 @@ const wherethePuckIs = {
     // QUOTATION was verified and the CITATION was not, which is the same defect as
     // carrying a figure out of its owner. The owner's
     // own facts block already carried the distinction; this caption had dropped it.
-    'shot in all four of the books this document checks — though USA Hockey Rule 614(b) reads ' +
+    'shot in all four books — though USA Hockey Rule 614(b) reads ' +
     '"a penalty shot/optional minor penalty shall be assessed", so that book alone lets the ' +
     'referee take the lesser option. All four exempt the goalkeeper, whose ' +
     'job that is. What decides it is the puck\'s location at the instant it is covered. So the two ' +
@@ -410,18 +410,18 @@ const wherethePuckIs = {
     'covers a puck that was outside it has given away a minor penalty, and a defender standing ' +
     'outside the crease, exactly as drawn here, who covers a puck that was inside it has given away ' +
     'the penalty shot. ' +
-    'Then the two things the picture cannot show, and the section is about both. The crease is a ' +
+    'Then the two things the picture cannot show, and the rule reaches both. The crease is a ' +
     'volume and not a patch of ice — all four books run it from the ice up to the top of the goal ' +
     'frame — so a puck you pluck out of the air over this paint, below the crossbar, is a puck in ' +
-    'the crease. A plan view has no height in it, and this whole section is about a puck in the ' +
-    'air, so the drawing has to put the puck on the ice and the words have to carry the rest. ' +
+    'the crease. A plan view has no height in it, and the case that catches players out is a puck ' +
+    'in the air, so the drawing has to put the puck on the ice and the words have to carry the rest. ' +
     'The instruction is the same wherever you are standing, which is why none of it needs working ' +
     'out in the moment: do not keep hold of it. Knock it straight down at your feet in one ' +
     'continuous motion and play it with your skate or your blade. ' +
     'Note what the shading is here, because it is the exception among these diagrams: the goal ' +
     'crease is genuinely painted on the ice, where the tinted regions elsewhere are only names for ' +
-    'areas. You are drawn as a defenceman because a shape had to be chosen and the section says ' +
-    'only "a skater". ' +
+    'areas. You are drawn as a defenceman because a shape had to be chosen and the rule reaches ' +
+    'any skater. ' +
     '⚠️ And your goaltender is on the ice in this picture, deliberately. With him pulled for an ' +
     'extra attacker the price is worse rather than the same.',
 

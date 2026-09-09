@@ -156,7 +156,7 @@ const forecheck212 = {
     'opposite sides rather than the stacked variant that sends both at the same corner — ' +
     'so find out which your team runs. ' +
     'The picture shows F1 taking the weak side away; how a forechecker finishes an angle is ' +
-    'movement over time that a still diagram cannot carry, and is its own section. ' +
+    'movement over time that a still diagram cannot carry, and is treated separately. ' +
     'Whether the first pass beats F2, or F2 beats the pass, is the contest the system turns on, ' +
     'and the diagram does not settle it. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. WHY IT IS HERE AND WHY IT IS SHORT.
@@ -885,7 +885,7 @@ const forecheckRolesRotate = {
     'Which body ends up in which role is settled by who is nearest the puck and by nothing else, so this ' +
     'is one instance and not a pattern to memorise — put the pass the other way and the same three moves ' +
     'belong to three different players. ' +
-    'The shape drawn around them is the 2-1-2 this document takes as its default, because three forwards ' +
+    'The shape drawn around them is the 2-1-2 this guide takes as its house default, because three forwards ' +
     'have to be standing somewhere and any arrangement of them names a system; the rotation itself is not ' +
     'a property of that system, because it is simply what F1, F2 and F3 mean. ' +
     'The two defencemen hold the offensive blue line and their jobs do not rotate. ' +

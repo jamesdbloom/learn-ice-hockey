@@ -198,7 +198,7 @@ const wallDepthBySystem = {
     'the right, at the moment your defenceman has the puck behind his net. ' +
     'Three wingers are drawn on the same boards and only one of them is on the ice at a ' +
     'time: they are the same player under three different breakout structures. ' +
-    'In the conventional swing breakout — the structure this document assumes throughout — ' +
+    'In the conventional swing breakout — the structure this guide assumes throughout — ' +
     'you come down to the boards between the hash marks and the goal line, roughly level ' +
     'with the faceoff dot or just below it, which is the deepest of the three. Under a flat ' +
     'or spread structure you hold higher up the same wall, toward your own blue line. Under ' +
@@ -212,7 +212,7 @@ const wallDepthBySystem = {
     'makes the trip short and makes you the first outlet available. The second is where you ' +
     'were standing a second earlier — high on your side, level with the opposing point man — ' +
     'because that belongs to your team’s defensive-zone system rather than to its breakout, ' +
-    'and it is a separate coaching choice. This document assumes a low zone collapse there.',
+    'and it is a separate coaching choice. This guide assumes a low zone collapse there.',
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left and the attacking end at ' +
@@ -458,8 +458,8 @@ const arrivingAtTheLine = {
     'And never turn your back to the wall and never duck. Those are two different injuries — ' +
     'a hit from behind you cannot brace for, and a chin tucked to the chest, which does not ' +
     'need speed to do it. Skates parallel to the boards, forearm and hip into the contact, ' +
-    'head up and chin off your chest. Body Contact and Battles ' +
-    'owns that instruction and writes it without exceptions. ' +
+    'head up and chin off your chest — and not on the point of your shoulder. Body Contact and ' +
+    'Battles owns that instruction and writes it without exceptions. ' +
     '⚠️ The trail skate itself is not drawn, and cannot be at this scale — it is smaller than ' +
     'any mark on this page. What it does is still worth knowing. You are offside only when ' +
     'both skates have completely crossed the line before the puck has, so a trailing skate ' +
@@ -589,8 +589,8 @@ const cornerAndTheEmptyPoint = {
     '⚠️ Never turn your back to the wall and never duck. Those are two different injuries — ' +
     'a hit from behind you cannot brace for, and a chin tucked to the chest, which does not ' +
     'need speed to do it. Skates parallel to the boards, forearm and hip into the contact, ' +
-    'head up and chin off your chest. Nothing in this picture is contact, and nothing in it ' +
-    'is a licence to hit.',
+    'head up and chin off your chest — and not on the point of your shoulder. Nothing in this ' +
+    'picture is contact, and nothing in it is a licence to hit.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Your right winger has ' +

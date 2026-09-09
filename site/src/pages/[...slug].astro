@@ -7,6 +7,7 @@ import PrevNext from '../components/PrevNext.astro';
 import AudioPlayer from '../components/AudioPlayer.astro';
 import CiteThis from '../components/CiteThis.astro';
 import { getDoc, getNeighbours } from '../data/nav';
+import { AUDIO_ENABLED } from '../consts';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
@@ -29,10 +30,17 @@ const { prev, next } = getNeighbours(entry.id);
   ogType="article"
   section={doc.layerTitle}
   withToc={true}
+  {/* ⚠️ AUDIO_ENABLED, not `true`. `hasPlayer` raises `--player-h`, which
+      `scroll-padding-top` adds — and AudioPlayer renders behind this same flag.
+      Hardcoding `true` here made the two disagree the moment audio is switched
+      off: every document page would keep the 128px padding with no player to
+      justify it, putting 56px of dead space above every deep-linked heading —
+      the exact over-correction global.css warns about. They must be one flag. */}
+  hasPlayer={AUDIO_ENABLED}
 >
   <main class="main" id="main">
     {/* ⚠️ BEFORE the article, not after it, and the reason is keyboard order.
-        The player is `position: sticky; bottom: 0` (global.css), so it is ON SCREEN
+        The player is `position: sticky; top: var(--header-h)` (global.css), so it is ON SCREEN
         from the first paint — but it used to sit after </article> in the DOM, which
         made it the 184th tab stop on breakouts and the 192nd on rules_primer, behind
         every inline link in the document. Measured in headless Chrome, not guessed.

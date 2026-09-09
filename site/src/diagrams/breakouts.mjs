@@ -155,8 +155,7 @@ const up = {
     'and the goal line. The centre C is low in the middle, inside the right circle. The defenceman ' +
     'D2 is on the far side of the net near the goal line. One opposition forward is behind the net, ' +
     'the forecheck having committed there. A single dashed route runs from D1 up the wall to the ' +
-    'winger’s stick. The winger’s own next move is deliberately not drawn; the section ' +
-    'covers the reception itself separately.',
+    'winger’s stick. The winger’s own next move is deliberately not drawn.',
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },

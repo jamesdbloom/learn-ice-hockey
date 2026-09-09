@@ -846,8 +846,8 @@ const reboundCornersNotSlot = {
     'six feet. When you cannot absorb the puck you have to aim it, and the target is the ' +
     'corners — wide and low toward the boards, below the goal line if you can, where nobody ' +
     'is standing and where the puck becomes a battle rather than a chance. Only the area to ' +
-    'avoid is marked here; the corners are named in words because this document describes ' +
-    'them rather than measuring them out. You aim by angling your surfaces: a pad or blocker ' +
+    'avoid is marked here; the corners are named in words rather than measured out. ' +
+    'You aim by angling your surfaces: a pad or blocker ' +
     'turned even slightly changes where the puck goes, so on a shot to your blocker side ' +
     'rotate the blocker so its face points at the corner rather than back up the ice. The ' +
     'half that actually decides it is mental and happens before the shot. Look off the puck ' +

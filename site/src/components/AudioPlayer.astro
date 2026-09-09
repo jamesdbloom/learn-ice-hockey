@@ -20,16 +20,27 @@ const storageKey = `audio-position:${id}`;
   it — it hands you the same iframe. This element keeps that property, and
   degrades to a plain download link with scripting off.
 
-  ⚠️ "Listen" and "Audio edition", never "Narration" — see the note in
+  ⚠️ "Listen", never "Narration", "narrated" or "read aloud" — see the note in
   src/consts.ts. The episodes are not verbatim readings and the durations prove
-  it, so a label promising narration would be a claim the audio cannot support.
+  it (a 17x apparent-wpm spread), so a label promising narration would be a claim
+  the audio cannot support.
+
+  ⚠️ AND NOT "the audio edition" EITHER. The owner rejected that wording on
+  9 September 2026: "the audio should also stand alone on its own as a separate
+  standalone podcast, not be too strongly stated as just an audio version of the
+  site." Both "narration" and "audio edition" describe the episode by its
+  RELATIONSHIP TO THE SITE rather than by its subject.
+  ⚠️ `scripts/build_podcast_audio.py:37` was corrected for this on the day, and
+  THIS COMPONENT WAS NOT — it kept shipping "Audio edition of {title}" in the
+  aria-label while telling the next editor to use it. The correction reached the
+  podcast metadata and stopped, which is this corpus's signature defect.
 */}
 {
   AUDIO_ENABLED && (
     <div class="audio-player" data-audio-player data-storage-key={storageKey}>
       <span class="audio-player__label">Listen</span>
-      <audio controls preload="none" src={src} aria-label={`Audio edition of ${title}`}>
-        <a href={src}>Download the audio edition of {title}</a>
+      <audio controls preload="none" src={src} aria-label={`Listen to ${title}`}>
+        <a href={src}>Download the {title} episode</a>
       </audio>
     </div>
   )

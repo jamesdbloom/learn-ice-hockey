@@ -326,7 +326,23 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
     # introduces the mandatory neck-laceration protector, so this is a safety
     # marker and not a flourish. (No count is given: it moves with the corpus,
     # and `--report` prints the live one.)
-    ("🇬🇧", " For British readers, "),
+    # ⚠️ A FULL STOP, NOT A COMMA. The marker's contract is that it PRECEDES a
+    # clause, so " For British readers, " produced "For British readers, The IIHF
+    # reaches the act by a different route." — a mid-sentence capital, every time.
+    #
+    # ⚠️ AN EARLIER VERSION OF THIS COMMENT SAID "every one of the 126 uses is
+    # followed by a capitalised sentence". THAT WAS FALSE, and a commit gate caught
+    # it by rendering the tree rather than trusting the claim. Measured: 126 uses,
+    # of which 123 precede a capitalised word and 3 precede ⚠️ (which itself renders
+    # as "Important."). ONE — rules_primer.md — used the marker MID-SENTENCE as a
+    # connective ("— 🇬🇧 and your book writes that clause…"), where the old comma was
+    # correct English and the full stop broke it. The CONTENT was fixed to honour the
+    # marker's contract, not the renderer weakened to tolerate a misuse.
+    # ⚠️ If a future author writes 🇬🇧 mid-clause again, this rule will break that
+    # sentence and no checker will see it.
+    # A full stop matches the house pattern this file already uses for ⚠ ("Important. ")
+    # and lets the sentence that follows start where it was written to start.
+    ("🇬🇧", " For British readers. "),
     ("=", " equals "),  # glossary definitions: 'Rim = a hard puck ...'
     ("+", " plus "),    # 'Wedge+', '11+'
     ("$", " dollars "),  # any currency a named rule missed
@@ -2792,6 +2808,41 @@ def _label_lead(label: str) -> str:
     return label + ". "
 
 
+#: The arrow, spoken. ``SYMBOLS`` maps "→" to a bare comma, which is right for
+#: nothing in the facts layer and actively wrong for most of it.
+#:
+#: ⚠️ MEASURED: 25 facts values carry an arrow, and they are TWO different
+#: notations that one global rule cannot serve.
+#:
+#:   ``Read:``     22 values, a CONDITIONAL. "F1 standing near the red line doing
+#:                 nothing → 1-3-1 or 1-4" became "…doing nothing, 1-3-1 or 1-4",
+#:                 which is heard as a LIST OF TWO THINGS and loses the inference
+#:                 entirely. These are the defect.
+#:   ``Priority:``  3 values, a RANKED CHAIN. "Quick-up → Up → Wheel → D-to-D".
+#:                 A comma survives here, because the value already ends "taking
+#:                 the first option genuinely available" — but "then" carries the
+#:                 ordering the arrow was drawn for.
+#:
+#: ⚠️ This is why the fix is LABEL-AWARE and lives here rather than in SYMBOLS:
+#: a single substitution good for the conditionals ("means") is wrong for the
+#: chains, and one good for the chains ("then") is wrong for the conditionals.
+#: ⚠️ Prose arrows keep the SYMBOLS comma, which is what they were written for.
+#: Measured: 237 arrows in content/, of which 41 sit inside ```facts blocks (across
+#: 25 values) and 196 are prose — mostly link text and tables. An earlier version of
+#: this note said "137", which reconciles with none of those three numbers.
+_ARROW_BY_LABEL: dict[str, str] = {
+    "Read": " means ",
+    "Priority": " then ",
+}
+
+
+def _spoken_arrow(label: str, value: str) -> str:
+    """Replace "→" with the word its LABEL means, before the generic pass."""
+    if "→" not in value:
+        return value
+    return value.replace("→", _ARROW_BY_LABEL.get(label, ", "))
+
+
 def render_facts(block: Block, report: DocReport) -> list[Token]:
     """Read a ```facts block aloud.
 
@@ -2842,7 +2893,7 @@ def render_facts(block: Block, report: DocReport) -> list[Token]:
         # the style guide calls the most load-bearing, and in the only layer
         # that is voiced entirely alone.
         important = "⚠" in value
-        tokens = to_speech(value, report.converted)
+        tokens = to_speech(_spoken_arrow(label, value), report.converted)
         report.residue.extend(find_residue(tokens))
         if not plain(tokens).strip():
             continue

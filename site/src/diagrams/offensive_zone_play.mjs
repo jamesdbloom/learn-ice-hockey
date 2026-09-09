@@ -535,8 +535,8 @@ const netFrontScreen = {
     'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +
     'one does, and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read ' +
     'that as one rec book and not as the rec position — CARHA governs CARHA-affiliated leagues only, ' +
-    'and rec and beer leagues are often said to be stricter still, though this document has no count ' +
-    'of how many are. So keep your feet out of the blue paint, and off ' +
+    'and rec and beer leagues are often said to be stricter still, which is an impression rather ' +
+    'than a count. So keep your feet out of the blue paint, and off ' +
     CREASE_LINE_IS_THE_CREASE +
     " — and read your own league's rule.",
 
@@ -897,7 +897,8 @@ const cycleRim = {
     'as a leading cycle turnover — take that as coaching craft rather than a measurement, ' +
     'because nobody has counted cycle turnovers by cause. ⚠️ And whichever one is on, this is a ' +
     'wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, ' +
-    'forearm and hip into the contact, head up and chin off your chest. Only the checker and the ' +
+    'forearm and hip into the contact, head up and chin off your chest — and not on the point of ' +
+    'your shoulder. Only the checker and the ' +
     'goaltender are drawn on the other team.',
 
   describe:
@@ -972,7 +973,8 @@ const cycleReverse = {
     'craft rather than a measurement: nobody has counted cycle turnovers by cause. ⚠️ And ' +
     'whichever one is on, this is a wall battle: never turn your back to the boards and never ' +
     'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
-    'your chest. Only the checker and the goaltender are drawn on the other team.',
+    'your chest — and not on the point of your shoulder. Only the checker and the goaltender are ' +
+    'drawn on the other team.',
 
   describe:
     'The attacking half of the rink, the net at the right, the same corner as the previous ' +

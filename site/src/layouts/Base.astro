@@ -14,13 +14,18 @@ interface Props {
   withToc?: boolean;
   /** Renders the plain single-column shell used by the home and search pages. */
   bare?: boolean;
+  /** ⚠️ True on pages that render the sticky AudioPlayer. It raises
+   *  `--player-h`, which `scroll-padding-top` adds — without it a deep link
+   *  lands its heading behind the player. Deliberately NOT inferred from
+   *  `withToc`: those two happen to coincide today and nothing enforces it. */
+  hasPlayer?: boolean;
 }
 
-const { title, description, ogType, section, withToc = false, bare = false } = Astro.props;
+const { title, description, ogType, section, withToc = false, bare = false, hasPlayer = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-GB" class={hasPlayer ? 'has-player' : undefined}>
   <head>
     <Fragment set:html={`<!-- ${VERSION_COMMENT} -->`} />
     <BaseHead title={title} description={description} ogType={ogType} section={section} />

@@ -87,48 +87,10 @@ const bibtex = `@misc{${key},
 </section>
 
 {/*
-  A bundled Astro script, not an inline one. The production CSP is
-  script-src 'self' with no unsafe-inline (infra/locals.tf), so an inline
-  handler would need an exemption that weakens the policy for every page.
+  ⚠️ A FILE, loaded with `is:inline src=`, NOT an Astro <script>. Astro inlines a
+  script this small, and the production CSP is script-src 'self' with no
+  unsafe-inline (infra/locals.tf), so the inline form was silently blocked on
+  every document page in production while working perfectly in local preview.
+  The reasoning is in public/cite-copy.js. Do not move it back inline.
 */}
-<script>
-  for (const block of document.querySelectorAll('[data-cite-block]')) {
-    const snippet = block.querySelector('[data-cite-copy]');
-    if (!snippet || !navigator.clipboard) continue;
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'cite__copy';
-    const label = block.querySelector('.cite__label');
-    // The accessible name says which of the three snippets this copies. Three
-    // buttons all named "Copy" is three identical rows to a screen-reader user.
-    button.setAttribute(
-      'aria-label',
-      `Copy the ${(label?.textContent ?? '').trim().toLowerCase()} citation`,
-    );
-    button.textContent = 'Copy';
-
-    button.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(snippet.textContent ?? '');
-        button.textContent = 'Copied';
-        button.classList.add('is-copied');
-      } catch {
-        // Clipboard permission can be refused. Say so rather than showing
-        // "Copied" over a clipboard that did not change.
-        button.textContent = 'Press ⌘C';
-        const range = document.createRange();
-        range.selectNodeContents(snippet);
-        const sel = window.getSelection();
-        sel?.removeAllRanges();
-        sel?.addRange(range);
-      }
-      setTimeout(() => {
-        button.textContent = 'Copy';
-        button.classList.remove('is-copied');
-      }, 2000);
-    });
-
-    label?.append(button);
-  }
-</script>
+<script is:inline src="/cite-copy.js" defer></script>

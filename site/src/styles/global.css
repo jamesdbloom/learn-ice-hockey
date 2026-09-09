@@ -44,6 +44,11 @@
   --sidebar-w: 17.5rem;
   --toc-w: 15rem;
   --header-h: 3.5rem;
+  /* Height of the sticky audio player, or 0 where there is none. ⚠️ It is NOT
+     decorative — `scroll-padding-top` below adds it, so a deep link clears the
+     player instead of landing behind it. Set to a real value by `.has-player`.
+     Measured: 0.6rem padding x2 + a 2.25rem <audio> + a 1px border = 3.5rem. */
+  --player-h: 0rem;
 
   --radius: 6px;
   --font-body: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
@@ -124,7 +129,26 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-h) + 1rem);
+  /* ⚠️ THE PLAYER IS PART OF THE TOP OBSTRUCTION, NOT JUST THE HEADER.
+     This was `calc(var(--header-h) + 1rem)` = 72px, which cleared the 56px
+     header alone. When the audio player became `position: sticky;
+     top: var(--header-h)` it put a SECOND fixed obstruction between 56px and
+     113px — so every deep link and every table-of-contents click landed its
+     heading COMPLETELY BEHIND the player. Measured in headless Chrome at both
+     1440x900 and 375x812: heading top 72, player bottom 113, and
+     `elementFromPoint` at the heading's own text returned `audio-player__label`.
+     5,572 anchored internal links are affected, 2,024 of them written into the
+     corpus as cross-links.
+     ⚠️ `--player-h` is 0 on pages with no player, so index and home pages keep
+     the original 72px and do not gain dead space. */
+  scroll-padding-top: calc(var(--header-h) + var(--player-h) + 1rem);
+}
+
+/* Set by Base.astro on pages that actually render the audio player. ⚠️ Do not
+   replace this with a global raise: the comment above the .prose rule records a
+   deep link landing 144px down being treated as a defect in its own right. */
+html.has-player {
+  --player-h: 3.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -868,7 +892,11 @@ a.chip:hover {
 /*
   No `scroll-margin-top` here, deliberately.
 
-  The sticky header is cleared once, by `scroll-padding-top` on <html> above.
+  The sticky header AND the sticky audio player are cleared once, together, by
+  `scroll-padding-top` on <html> above — it adds `--header-h` and `--player-h`.
+  ⚠️ An earlier version of this comment said "the sticky header is cleared once"
+  and that became false the moment the player gained `top: var(--header-h)`:
+  the padding still cleared 56px while the real obstruction ran to 113px.
   Setting it in both places does not pick the larger of the two — Chrome adds
   them, and a heading targeted by a deep link landed 144px below the viewport
   top instead of 72px, measured on
@@ -1590,18 +1618,38 @@ figcaption .warn-inline {
 
 /* ---------------------------------------------------------------- audio -- */
 
+/* ⚠️ STICKS TO THE TOP, NOT THE BOTTOM, AND THE REASON IS CAUSAL RATHER THAN
+   AESTHETIC. This was `bottom: 0` and it silently did not stick at all — measured
+   on the live site: getBoundingClientRect().top went 120 -> -280 -> -5382 as the
+   page scrolled, i.e. the bar scrolled away and never came back.
+
+   `bottom`-stickiness only holds a box whose flow position is BELOW the viewport
+   bottom. The component was moved AHEAD of <article> for keyboard order (WCAG
+   2.4.3 — it had been the 184th tab stop on a bar visible from first paint), so it
+   is now the first thing in the column and is scrolled past immediately. Verified
+   in a minimal case: the identical box placed last in an 8000px container pins;
+   placed first, it never does. ⚠️ THE ACCESSIBILITY FIX DEFEATED THE CSS, and
+   neither change was wrong on its own.
+
+   `top: var(--header-h)` is the house pattern already used by the sidebar and the
+   table of contents, and it works for an element early in the flow — which is
+   exactly where keyboard order wants this one. ⚠️ If anyone moves this component
+   back after </article>, this rule stops working and `bottom` becomes correct
+   again; the two decisions are coupled. */
 .audio-player {
   position: sticky;
-  bottom: 0;
+  top: var(--header-h);
   z-index: 25;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin: 2.5rem -0.9rem 0;
+  /* Was 2.5rem, which left ~120px of dead space between the site header and the
+     first line of the article, visible in all four viewport/theme cells. */
+  margin: 0 -0.9rem 1.5rem;
   padding: 0.6rem 0.9rem;
   background: color-mix(in srgb, var(--bg-raised) 94%, transparent);
   backdrop-filter: blur(8px);
-  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);   /* below the bar, since it now sits above the text */
 }
 
 @media (min-width: 60rem) {
@@ -1610,7 +1658,6 @@ figcaption .warn-inline {
     margin-right: 0;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    bottom: 0.75rem;
   }
 }
 

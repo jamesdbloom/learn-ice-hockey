@@ -1021,7 +1021,8 @@ const wingerDzRim = {
     'Beating a checker who has sealed you against the boards, in your own end. You have the puck ' +
     'on the wall with your body between it and him, which is why the puck is drawn on the far ' +
     'side of you from the pressure — though body-between-puck-and-checker is the start of the ' +
-    'technique and not the whole of it; the section sets out the rest. He is inside you, ' +
+    'technique and not the whole of it, so keep your feet wide and low and still moving: a ' +
+    'stationary player on the wall gets pinned. He is inside you, ' +
     'containing rather than chasing, so the ice he is taking away is the middle. That is exactly ' +
     'the checker a RIM beats: a hard shot along the boards that follows the curve of the rink ' +
     'past him to a teammate further around, because it goes where he is not. It is a completely ' +
@@ -1204,7 +1205,7 @@ const offWingOpenToTheIce = {
     'Note that the coaching source this section otherwise follows teaches the opposite ' +
     'reception — taking the pass with your back to the boards — and this guide does not follow ' +
     'it there. ' +
-    '⚠️ Two things this picture cannot show and you must not do: never turn your back to the ' +
+    '⚠️ Two things this picture cannot show, and both of them are prohibitions: never turn your back to the ' +
     'boards to receive it, and never duck. Those are two different injuries — a hit from behind ' +
     'you cannot brace for, and a chin tucked to the chest, which does not need speed to do it. ' +
     'Skates parallel to the wall, forearm and hip, head up and chin off your chest.',
