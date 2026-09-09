@@ -7,7 +7,36 @@ no `pip install`, no lockfile, nothing to rot.
 |---|---|---|
 | `check_links.py` | Internal link and heading-anchor integrity across `content/` | Every PR and push (`ci.yml`, `deploy.yml`) |
 | `check_external_links.py` | Refetches the external citations and reports changes against a baseline | Weekly (`link-check.yml`) |
-| `md_to_speech.py` | Markdown → SSML for narration (build spec §7.1) | Phase 4, by hand |
+| `md_to_speech.py` | Markdown → SSML for the audio layer (build spec §7.1) | By hand |
+| `build_podcast_audio.py` | Re-encodes the podcast masters for the web and tags them | By hand |
+| `build_podcast_cover.py` | Draws the 3000×3000 show cover ⚠️ **needs Pillow — see below** | By hand |
+| `upload_podcast_audio.sh` | Uploads the episodes to the bucket ⚠️ **outward-facing, dry-run by default** | By hand, with owner approval |
+
+**GATES** — these block a commit: `check_links.py` · `check_facts.py` ·
+`check_absolutes.py` · `check_geometry.py` · `check_secrets.py` · `check_counts.py`.
+
+**WORKLISTS, NOT GATES** — none has a `--strict` and none should gain one; read every
+hit: `check_external_links.py` · `check_rule_scope.py` · `check_pointers.py` ·
+`check_zones.py` · `check_tables.py` · `check_disclosures.py` ·
+`check_diagram_quotes.py` · `check_chunk_tails.py` · `check_chunk_splits.py` ·
+`check_leaders.py` · `check_plan_rows.py`.
+
+⚠️ **THIS TABLE LISTED THREE SCRIPTS OUT OF EIGHTEEN UNTIL 9 September 2026**, and the
+same defect had already been found and recorded one layer up: `CLAUDE.md`'s tool list was
+five short until round 69, under the note *"a tool nobody knows about does not get run."*
+**`ls scripts/*.py` is the authority. Every list of these files, including this one, goes
+stale the moment somebody adds a tool without editing it.**
+
+⚠️ **`CLAUDE.md`'s list does not yet name `check_chunk_splits.py`.** That file is the
+owner's and this is a proposal, not a change.
+
+## ⚠️ The standard-library rule, and its one exception
+
+Everything here is Python 3 standard library **except `build_podcast_cover.py`, which needs
+Pillow** to render type onto a raster cover. It is declared at the top of that file with the
+reasoning, it never runs in CI, no gate depends on it, and its output is gitignored — and
+`podcasts/cover.png` overrides it entirely, so the dependency can be avoided by supplying a
+cover by hand. ⚠️ **Do not add a second exception without saying so here.**
 
 ---
 

@@ -119,3 +119,16 @@ site/public/og/
 # Web-encoded podcast output — a build product of scripts/build_podcast_audio.py.
 # ~1.1 GB. The .m4a rule below already covers the audio; this covers the manifest too.
 podcasts_web/
+
+# The podcast MASTERS. 4.31 GB, and the originals nothing may modify.
+#
+# ⚠️ The *.m4a rule above covered the audio and NOTHING ELSE IN THIS DIRECTORY.
+# OPEN_ITEMS.md flagged that gap on 8 September 2026 — "a .wav, .opus or artwork
+# file dropped in there WOULD be committable" — and it was still open on
+# 9 September, when the cover-art work made it live: `podcasts/cover.png` is the
+# documented way for the owner to override the generated cover, and it would have
+# gone straight into a public repository's history.
+#
+# ⚠️ This IGNORES, it does not un-ignore. Never weaken these rules to make
+# something commit; force-add the one file if you genuinely mean to.
+podcasts/

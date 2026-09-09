@@ -166,6 +166,36 @@ function main() {
     };
   }
 
+  // ⚠️ THE `describe`/`caption` JOIN IS A SPOKEN SEAM, AND ONE UNSTATED HABIT KEEPS IT SAFE.
+  //
+  // `lib/rink.mjs` longDesc() emits `${describe} ${caption}` as the SVG's single <desc>,
+  // and remark-corpus.mjs marks the <figcaption> aria-hidden on the ground that <desc>
+  // carries the same words. So for a screen-reader user the <desc> IS the caption, and
+  // describe and caption are announced as ONE continuous utterance joined by one space.
+  //
+  // A round-70 sweep of all 198 pairs found ZERO defects at that seam — but for a reason
+  // nothing enforced: every `describe` happens to end in terminal punctuation, so the join
+  // produces a sentence boundary rather than a run-on. ⚠️ A `describe` edited to end without
+  // it would FUSE its last sentence to the caption's first, silently, and no gate would see
+  // it — which is how a negation ending a describe could invert an instruction opening a
+  // caption while both fields are individually correct.
+  //
+  // So the habit is now an invariant. This is a build-time assertion rather than a worklist
+  // because the failure is silent, the fix is one character, and there is no legitimate
+  // reason for a describe to end mid-sentence.
+  const unterminated = Object.values(manifest)
+    .filter((d) => d.describe && !/[.!?:;)"'\u201d\u2019]\s*$/.test(d.describe))
+    .map((d) => d.id);
+  if (unterminated.length) {
+    console.error(
+      `\nbuild-diagrams: ${unterminated.length} describe(s) do not end in terminal punctuation.\n` +
+      `  The <desc> emitted for screen readers is \`describe + " " + caption\`, so an\n` +
+      `  unterminated describe FUSES into the caption's first sentence as one utterance.\n` +
+      unterminated.map((id) => `      ${id}`).join('\n') + '\n');
+    process.exitCode = 1;
+    return;
+  }
+
   writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`build-diagrams: ${Object.keys(manifest).length} diagram(s)` +
               `${chrome ? ' with PNG fallbacks' : ' (SVG only)'} -> public/diagrams/`);

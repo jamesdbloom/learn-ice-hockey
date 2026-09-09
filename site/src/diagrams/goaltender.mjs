@@ -565,7 +565,13 @@ const rimStopOrClear = {
     'the trapezoid — the marked area behind the goal line inside which you are allowed to ' +
     'play it. Follow the rim: it crosses the goal line out near the boards, well outside ' +
     'that area, and only then comes into it. Inside, the most useful thing you can do is ' +
-    'often not a pass at all — kill it dead, leave it for your defenceman, and call "leave ' +
+    // ⚠️ FULL STOP, NOT AN EM DASH. This ran "…is often not a pass at all — kill it dead, leave
+    // it for your defenceman, and call 'leave it' early", and the em dash opened onto three
+    // imperatives with the negation still live: a listener can hear "not kill it dead, not leave
+    // it for your defenceman", which pushes a goaltender into playing a puck the sentence exists
+    // to tell them to kill. Same shape the style guide records for a second em dash after a
+    // "Never" label. Punctuation only.
+    'often not a pass at all. Kill it dead, leave it for your defenceman, and call "leave ' +
     'it" early, while they are still coming back rather than as they arrive. You have turned ' +
     'a race into a pickup. Out where it crossed the line, get out of the way and let them ' +
     'have it. Under the IIHF book that is not caution, it is the ' +
@@ -588,7 +594,13 @@ const rimStopOrClear = {
     'Canada book marks one at all, and England Ice Hockey’s own regulations say it is "not ' +
     'currently enforced" in England and Wales. That edition is 2024-25 and the current ' +
     'In-House Rules are silent on the point, so the published documents do not settle ' +
-    'whether the suspension still stands: assume it binds, ask your league, and look behind ' +
+    // ⚠️ FULL STOP, NOT A COLON. "…do not settle whether the suspension still stands: assume
+    // it binds, ask your league…" puts a MAIN-CLAUSE negation immediately before the colon and
+    // three bare imperatives after it, so a listener can hear "don't assume it binds, don't ask
+    // your league". Inverted, that tells a goaltender to assume the restriction does NOT bind
+    // and to play the puck where they may not — a delay-of-game minor. "Assume it binds" is the
+    // conservative half of an unsettled question and it must survive being read aloud.
+    'whether the suspension still stands. Assume it binds, ask your league, and look behind ' +
     'the net to see whether the lines are painted. ' +
     'And no trapezoid still does not free you to freeze the puck out here — but that is not ' +
     'one rule, because the two books with no trapezoid draw the freeze on different lines. ' +

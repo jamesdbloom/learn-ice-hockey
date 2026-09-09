@@ -364,13 +364,21 @@ const screenSightline = {
     ' So keep both feet out of the paint, and off ' +
     CREASE_LINE_IS_THE_CREASE + '. Here ' +
     '"screen" means the goaltender’s sightline and nothing else. ' +
-    // SAFETY. Owner's own wording, content/hockey-iq/playing_without_the_puck.md:560 — "Never: Meet
-    // a goal post head first, and never duck — head up, chin off your chest. A head-down,
+    // SAFETY. Owner's own wording, the "Never:" fact in
+    // content/hockey-iq/playing_without_the_puck.md § "Screening the goaltender" — "Never: Meet a
+    // goal post head first, and never duck. Head up, chin off your chest instead. A head-down,
     // head-first hit on a goal post is the same injury as one on the boards, and can happen at
-    // walking speed". Key Takeaway 7 (:891) says "the screen is the one that can hurt you"; before
-    // this the caption was 1,754 characters of Rule 69 and none of the injury reached it. LAST.
-    '⚠️ Never meet a goal post head first, and never duck — head up, chin off your chest. A ' +
-    'head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
+    // walking speed". Key Takeaway 7 says "the screen is the one that can hurt you"; before this
+    // the caption was 1,754 characters of Rule 69 and none of the injury reached it. LAST.
+    //
+    // ⚠️ THE FULL STOP AFTER "never duck" IS LOAD-BEARING AND MUST NOT BECOME AN EM DASH.
+    // md_to_speech voices this caption whole, and an em dash here is prosodically identical to
+    // the one the renderer puts after a "Never" label: the negation carries across it and a
+    // listener hears "never keep your head up, never keep your chin off your chest" — the
+    // cervical-flexion mechanism taught as the instruction. The owner was repaired to the full
+    // stop and this caption was not; it stood inverted in the spoken layer for a whole round.
+    '⚠️ Never meet a goal post head first, and never duck. Head up, chin off your chest instead. ' +
+    'A head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
     'happen at walking speed.',
 
   describe:

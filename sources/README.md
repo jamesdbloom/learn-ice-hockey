@@ -482,6 +482,33 @@ official documents, not resolved in either direction.
 > full rather than trusting the count. **The defence is the same as for `"reasonable time to vacate"`:
 > read the rule, do not probe it.**
 >
+> ⚠️ **A SIXTH SHAPE — THE REGEX DIALECT. The searcher's tool is wrong, not the searcher's guess.
+> Measured 9 September 2026.** `grep -i "cross ?bar" sources/usah.txt` returns **ZERO from a file
+> containing four occurrences**. `?` is **literal in BRE**, so that command searched for the string
+> `cross ?bar` — which is in no book. `grep -E` finds all four. ⚠️ **This produces a clean, confident,
+> honestly obtained zero with no symptom whatsoever**: no error, no warning, and the command *looks*
+> like a careful search that allowed for both spellings. **It is more dangerous than a mangled
+> extraction, because a mangled extraction usually leaves a trace when you widen the window and this
+> leaves none.** ⚠️ **Use `grep -E` for `?`, `+`, `|` and `()` — always.**
+>
+> ⚠️ **A SEVENTH SHAPE, AND IT IS THE ONLY ONE THAT RUNS IN THE DANGEROUS DIRECTION.** Every other
+> mode here makes a PRESENT string look ABSENT, so its failure mode is a false "cannot verify" — the
+> corpus stays as it is. **This one makes an ABSENT string look PRESENT, and its failure mode is a
+> verifier "refuting" a correct sentence and an author then rewriting it.** Measured 9 September 2026:
+> `content/technique/puck_handling.md` says *fend* appears nowhere in Hockey Canada. An **unanchored**
+> substring search returns **249 hits in `hc.txt`** — every one of them inside **defend**, **offend**,
+> **defenders**. Anchored, `\bfend\w*` returns **0** and the corpus is right. ⚠️ **ANCHOR EVERY
+> SHORT SEARCH TERM WITH `\b`, and read the hits before believing a refutation** — this is the
+> `CE mark` / `i-ce mark-ings` trap from elsewhere in this file, reproduced in the direction that
+> actually damages the corpus. **The instinct on meeting a "refuted" claim is to rewrite it. Check
+> the refutation first: a claim in this corpus is more likely right than the probe that attacks it.**
+>
+> ⚠️ **And a concrete line-wrap instance worth having by name.** `grep "Adult Male Classification"
+> sources/usah.txt` returns **ZERO**. The phrase wraps after *"Adult Male"*. Flattened, it occurs
+> **exactly once in the playing rules** (`usah.txt:5111`) and once in the Casebook, and both are
+> **Rule 640(b)** — which is the whole basis for saying 640(e) carries no classification limb. **A
+> raw grep would have made that finding unreachable.**
+>
 > ⚠️ **And mode four reproduces in `nhl_rules.txt`, the corpus's own baseline book — found 1
 > September 2026.** A **whole page banner** sits inside a sentence of NHL Rule 80.1: flattened, it
 > reads *"…comes into the possession and control of a player from"* **`NATIONAL HOCKEY LEAGUE
@@ -866,6 +893,20 @@ USA Hockey attach.** CARHA carries it too, at 16(f), also unconditional.
 
 - **CARHA writes `cross bar`, two words**, where every other book closes it. A `crossbar` census
   returned zero **with a working NHL positive control of 16** and was still a false negative.
+  ⚠️ **AND IT IS NOW CONFIRMED IN A SECOND BOOK, and that book splits itself — measured 9 September
+  2026.** **USA Hockey prints it OPEN at Rule 617(a)** (`usah.txt:4149`, the definition of a goal)
+  and **CLOSED at 504(b) (the Goal Judge's duty), 618's Note, and the Blind Hockey tie-breaking-shots
+  procedure.** So a one-word census of USA Hockey silently returns **three of four**, and the miss is
+  inside the rule that defines what a goal is. **A house-word divergence is not always between books.
+  It can be inside one.**
+  ⚠️ **THAT FOURTH SITE IS NOT THE PENALTY-SHOT RULE, AND AN EARLIER VERSION OF THIS VERY PARAGRAPH
+  SAID IT WAS.** `usah.txt:6726` sits inside the **Disabled Hockey** section's Blind Hockey
+  tie-breaking procedure. USA Hockey's actual penalty shot is **406(c)** (`usah.txt:2707-2708`) and
+  reads *"No goal can be scored on a rebound of any kind"* — no crossbar and no exception. The
+  post-or-crossbar rebound carve-out belongs to **NHL Rule 24.2**. ⚠️ **The corpus was corrected for
+  exactly this mislabel in the same round in which this file repeated it** — which is the sharpest
+  possible illustration of why the routing document is the worst place to be wrong: every agent reads
+  it first. **And it is the fifth round running in which "check the disabled-hockey sections" paid.**
 - **The NHL writes `racial taunts or slurs`; the IIHF writes `racial slurs or taunts`.** A search for
   `racial slur` returns **0** from a book that contains the concept. **A word-order difference is
   enough.**

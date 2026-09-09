@@ -506,7 +506,17 @@ const netFrontWalkOut = {
     'the inside position and tying up their stick are the parts no book scopes to a checking ' +
     'league — holding a position ' +
     'you legally established is written as legal in three of the four, with Hockey Canada silent ' +
-    'rather than against it. The stick tie has bounds of its own, and they are not optional: lift ' +
+    // ⚠️ FULL STOP, NOT A COLON — AND THIS IS THE HIGHEST-CONSEQUENCE ONE IN THIS DIRECTORY.
+    // "they are not optional" is a MAIN-CLAUSE negation one word before the colon, and the tail
+    // is three bare imperatives, so a listener can hear "don't take the lift below their bottom
+    // hand" and "don't keep your shaft out of their back". Inverted, those two teach the exact
+    // penalties the next two sentences of this caption name: a lift at or near the hands is
+    // hooking (IIHF 55.1 on location alone), and a shaft in the back is cross-checking, which
+    // all four books penalise and none caps at a minor. The negation is also a
+    // negative-of-a-negative — "not optional" means mandatory — so the listener is already
+    // being asked to resolve one polarity before the imperatives arrive. Punctuation only; the
+    // bounds, the rule numbers and the scope are untouched.
+    'rather than against it. The stick tie has bounds of its own, and they are not optional. Lift ' +
     'their stick up rather than sweeping it sideways, take the lift below their bottom hand, and ' +
     'keep your shaft out of their back. At or near the hands it is hooking — on location alone ' +
     'under IIHF Rule 55.1, and on impeding the hands under USA Hockey Rule 623 and Hockey ' +
@@ -799,10 +809,23 @@ const cornerEscapeRoutes = {
     'possession of the puck remains the sole object of both of them, and where checking is barred USA ' +
     'Hockey Rule 604 Note 1 counts forcing an opponent off the puck with no effort to legally play it ' +
     'as an illegal body check. And if you play under body-checking rules, so that neither of those ' +
-    'two is the book you are under, the act is still reached: USA Hockey Rule 622 is headed simply ' +
+    'two is the book you are under, the act is still reached. USA Hockey Rule 622 is headed simply ' +
     '“Holding an Opponent”, without Rule 604’s category qualifier, and its note names wrapping one or ' +
     'both arms around an opponent along the boards in a manner that pins them and prevents them from ' +
-    'playing the puck or skating. That is a minor penalty. Never finish ' +
+    'playing the puck or skating — a minor under 622(a). ' +
+    // ⚠️ SCOPE, ADDED: the sentence above answers a four-book question with a one-book rule, and
+    // without this clause a British reader is left thinking 622 binds them. The corpus already
+    // carries both halves — content/technique/puck_handling.md § "The boards are a free extra
+    // defender" says "Do not carry that sentence into another book as a quotation" and that only
+    // USA Hockey names the boards; § 12 of the owner names the four holding rules. Each general
+    // wording below was read in the books on disk: NHL 54.1 (nhl_rules_layout.txt:5199) and IIHF
+    // 54.1 (iihf_rules.txt:4595-4596) "restrains or impedes the progress of an opposing
+    // Player"; Hockey Canada 8.1(a) (hc_layout.txt:5333) "holds an opponent in any manner";
+    // USA Hockey 622 Note and 622(a) (usah.txt:4343-4356).
+    'That boards wording is USA Hockey’s alone and does not travel: the NHL and the IIHF reach a ' +
+    'pin through general words instead, holding as any action that restrains or impedes an ' +
+    'opponent (54.1 in both, and the IIHF book is the British reader’s), and Hockey Canada 8.1(a) ' +
+    'as holding an opponent “in any manner”. So play as though the call may not come. Never finish ' +
     'into the back of a player who is facing the boards.',
 
   describe:
@@ -995,7 +1018,14 @@ const angleIntoTheCorner = {
     'with the boards or a goal post and says can happen at walking speed. So, in every league, ' +
     'checking or not — because unexpected contact happens in non-check hockey too and the boards ' +
     'and the goal posts are just as hard there — get your skates parallel ' +
-    'to the wall, take it on your forearm and hip and never on the tip of your shoulder, knees bent, ' +
+    // ⚠️ TWO SENTENCES, NOT ONE COMMA LIST — the §6 form, at "Get your skates parallel to the
+    // wall and put your forearm and hip to it — not the point of your shoulder, and never your
+    // back. Head up, chin off your chest." Run as one list, the "not ... your shoulder" is still
+    // live when the list resumes after the comma, and a listener carries it across into the tail:
+    // "never ... knees bent, head up and chin off your chest" — the cervical-flexion mechanism
+    // taught as the instruction. The tail is a noun phrase, which is why no verb-led scan of this
+    // directory ever found it. The safety content is unchanged; only the sentence boundary moved.
+    'to the wall and take it on your forearm and hip, not the point of your shoulder. Knees bent, ' +
     'head up and chin off your chest.',
 
   describe:
@@ -1203,7 +1233,15 @@ const insideLaneLongerRoute = {
     'which is NHL and IIHF Rule 56.1, while USA Hockey writes that permission in its Casebook ' +
     'and conditions it, and Hockey Canada Rule 8.1 permits blocking a stick rather than holding ' +
     'one. Nothing here shows the two players meeting, and the rest of the arrival is not ' +
-    'something a diagram can draw: hips turned so your backside is between the opponent and the ' +
+    // ⚠️ FULL STOP, NOT A COLON. Adjudicated as the lower-risk end of the negation-inversion
+    // class and repaired anyway, because the fix is one character and the tail is the
+    // instruction. The negation is weakly bound — it predicates of the DIAGRAM ("is not
+    // something a diagram can draw"), not of the reader, and there is no verb in the tail for
+    // it to attach to. But the tail is prosodically identical to the one that WAS inverting in
+    // `angle-into-the-corner` — a bare noun-phrase list of postures — and this is a loose-puck
+    // race to the wall, where the corpus's worst injuries happen. Closing the sentence removes
+    // the parse without touching a word of the posture.
+    'something a diagram can draw. Hips turned so your backside is between the opponent and the ' +
     'puck, low and wide with your feet outside your shoulders, and your feet still moving.',
 
   describe:
@@ -1375,8 +1413,14 @@ const shotBlockGetClose = {
     'fourteen feet out instead, because a player marker on these diagrams is nearly six feet ' +
     'across, far wider than a player, and at ten feet the two markers would touch and read as a ' +
     'collision. A point shot is drawn because it is the shot with room in it to show a distance, ' +
-    'and the instruction is about any shot. The blocker is drawn as a forward because this ' +
-    'notation has no position-neutral shape and the section names none; read it as one body in ' +
+    'and the instruction is about any shot. ' +
+    // ⚠️ This said "and the section names none". True of §11 here, FALSE in the other host:
+    // content/positions/defender.md § Blocking Shots opens "Blocking shots is a defenceman's
+    // job". A caption is voiced in full in every document that hosts it, so a clause asserting
+    // something about "the section" is unsafe to borrow the moment a second host exists. The
+    // notation claim is host-neutral and stands on its own; the section claim is dropped.
+    'The blocker is drawn as a forward because this ' +
+    'notation has no position-neutral shape; read it as one body in ' +
     'the lane and not as an assignment. ⚠️ Blocking shots is genuinely useful and genuinely ' +
     'dangerous, and both of those matter. Nothing in the picture is the technique, and the ' +
     'technique is the half that hurts you, and it is equipment being asked to do its actual ' +
@@ -1413,7 +1457,15 @@ const shotBlockGetClose = {
     'mandatory for one a referee judges to recklessly endanger an opponent, and nobody has to ' +
     'be hurt for it to be called. ' +
     'So ask your coach how they want it done. And not from a position where you ' +
-    'are screening your own goaltender: either commit fully and take the shot or get out of the ' +
+    // ⚠️ FULL STOP, NOT A COLON. This ran as one sentence and the negation was still live when
+    // the colon opened onto a pair of imperatives — a listener can hear "not ... commit fully
+    // and take the shot, not ... get out of the lane", which leaves exactly the half-in-the-way
+    // posture the sentence's own last clause names as the one thing you cannot do. The owner
+    // already writes it as two sentences with a positive lead, at § 11 "When you are screening
+    // your own goalie": "Either commit fully and take the shot, or get out of the lane and let
+    // your goalie see it — the one thing you cannot do is stand half in the way with your eyes
+    // closed." Punctuation only; no safety content changed.
+    'are screening your own goaltender. Either commit fully and take the shot or get out of the ' +
     'lane and let them see it, and the one thing you cannot do is stand half in the way with ' +
     'your eyes closed. How much your team blocks at all is a coaching choice rather than a law ' +
     'of hockey — some systems ask defenders to block aggressively and collapse in front of the ' +

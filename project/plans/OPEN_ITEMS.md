@@ -218,6 +218,344 @@ see the refutation above.** This row previously asserted the latter.
 - **Is there a higher-quality master** than these `.m4a` files? It decides whether MP3 is safe to make.
 - **Do the 37 episodes match the 37 documents one-to-one**, and is the reading order the episode order?
 
+## ⚠️⚠️ ROUND 70 — WHAT IS OPEN AFTER IT. Full record: [`round_70`](../reviews/round_70_the_caption_layer_was_never_swept.md)
+
+### ⚠️⚠️⚠️ STANDING — "REFUTE THE BRIEF" IS AIMED AT AGENTS, AND THE DISPATCHER IS EXEMPT FROM NOTHING
+
+⚠️ **A citation copied out of an AGENT'S REPORT is exactly as unverified as a figure copied out of a
+plan row, and the loop has never said so.**
+
+**Measured, round 70.** A `rules-verifier` reported a passage as *"USA Hockey Rule 403 'GAME
+MISCONDUCT'"*. The coordinator relayed that into a repair agent's brief **verbatim, without opening the
+book**. The agent followed a brief that named a rule and quoted its text — correctly, by its own
+lights — and propagated it to **five sites in one file and three in another**. It then **reached a
+commit**, because a concurrent session committed the partial work. `commit-gate` caught it.
+
+**The quoted text is Rule 404(b)** (`usah.txt:2528-2540`), the ordinary next-game suspension.
+**403(b)** (`usah.txt:2440-2449`) is the **second major in the same game**, worth **two** games. ⚠️ **The
+book distinguishes them explicitly** — 404(b) names 403(b) as its own exception — so it cites the
+two-game case for a one-game consequence. ⚠️ **And five other documents already had it right**, so the
+diff shipped a self-contradiction.
+
+**THE RULE THAT COMES OUT OF IT, and it is the counterpart to the instruction that already does the most
+work here:**
+
+> ⚠️ **Every rule number, quotation and figure the coordinator puts INTO a brief must be re-derived from
+> primary text by the coordinator, or explicitly flagged in the brief as unverified relay.**
+> "Refute the brief" cannot save an agent from a citation that is wrong in a way only the book reveals,
+> because the agent's own verification will confirm the QUOTE — the quote is real — while the NUMBER
+> attached to it is not. **A correct quotation under a wrong citation passes every check an agent runs.**
+
+⚠️ **This is the fourth recorded instance of a wrong premise entering through a brief, and the first
+where the premise came from another agent's report rather than from the plan.** The plan already
+warns that relayed site lists measured 33-75% short and that one brief carried four distinct errors.
+**Add this shape to that list: a relayed CITATION, correct in its text and wrong in its number.**
+
+### ⚠️⚠️ THE CLASS FINDING: a corpus-wide sweep is scoped by the grep that drove it, and `content/` IS NOT THE CORPUS
+
+Round 69 repaired the negation-inversion defect across `content/` and **never reached
+`site/src/diagrams/*.mjs`. Captions are SPOKEN.** `playing_without_the_puck.mjs` still carried
+*"Never meet a goal post head first, and never duck — head up, chin off your chest."* while all three
+`content/` copies were already in the repaired form. **Same sentence, repaired in the layer people read,
+left standing in the layer people hear** — and the module's comment quoted the *pre-repair* wording as
+its source, so it would have survived the next review too, with a citation.
+
+⚠️ **Assume every past corpus-wide sweep has this hole.** Ask what the sweep's grep could not see:
+`site/src/diagrams/*.mjs`, `site/src/data/diagrams.json`, the `describe` fields, and `project/`.
+
+### ⚠️ OPEN — `scripts/md_to_speech.py`: TWO renderer defects, COORDINATOR-OWNED
+
+⚠️ **Not fixed in round 70 on purpose: every live agent was verifying repairs against this tool, and
+changing a shared tool mid-wave is the recorded round-59 failure. Do it BETWEEN waves.**
+
+1. **`→` renders as a bare comma** (`md_to_speech.py:285`, `("→", ",")`), so a read-then-conclusion
+   value is voiced as a list and **loses its conditional**. Measured: **25 values** — `risk_management`
+   (3), `neutral_zone_systems` (6), `offensive_zone_play` (3), `shooting` (12), `zone_entries` (1).
+   ⚠️ **Several survive the flattening and several do not — READ ALL 25, do not sweep.**
+2. **🇬🇧 renders as *"For British readers,"***, producing a mid-sentence capital: *"For British readers,
+   Do not read the IIHF book…"* (`forcing-them-outside`). Cosmetic, but it is in the spoken layer.
+
+### ⚠️ OPEN — SAFETY: three governing bodies teach arm-first board contact and the corpus quotes only the mildest
+
+`content/technique/skating.md:942` and `content/technique/body_contact_and_battles.md:1622` say the
+locked-straight-arm warning *"appears in no USA Hockey, HECC or Look Up Line material"*. ⚠️ **The absence
+is TRUE — verified. But all three named bodies positively INSTRUCT arm-first contact, and the corpus
+discloses only the weakest of the three:**
+
+- `sources/ibc.txt:1496-1497` — *"make contact with the boards and glass with their **extended arms**,
+  forearms, side of body and legs, but with no head contact at all"* ← **the direct antonym of "locked,
+  straight arm", quoted NOWHERE in the corpus**
+- `sources/ibc.txt:1482` — *"With **arms out** to create a three-part 'shock absorber'"*
+- `sources/ibc.txt:675-676` — stick and gloves on the glass ← **the only one the corpus quotes**
+- Look Up Line (live, 200) — *"Hit the boards or goal posts with **an arm**, a leg or anything but your head first."*
+- HECC (live, 200) — *"use your hands, **arms**, shoulders or facemask to cushion the impact."*
+
+⚠️ **This is round 59's direction in a new shape: not a false disclosure, but TRUE counter-evidence
+UNDERSTATED — and on a safety instruction.** Repair by quoting the stronger lines alongside the existing
+one. **Not a deletion.** Needs `safety-reviewer` on the result.
+
+### ✅ NEW TOOL — `scripts/check_chunk_splits.py`, and it CLOSED the handover it was built for
+
+⚠️ **A WORKLIST, NOT A GATE. It has no `--strict` and must never gain one.**
+
+**Why it exists.** Round 70 made ~60 repairs whose shape is exactly *"prohibition. remedy."* That shape
+is correct in the ear **only if a listener hears both sentences together.** ⚠️ **Chunk packing is
+GLOBAL — an edit to an earlier section re-packs every chunk after it** — so a repair can land on an
+audio boundary and give the listener the prohibition at the end of one file and the remedy at the start
+of the next. **That is STRICTLY WORSE than the defect it repaired.** The agent that named it could not
+test it, because the only run that counts is one taken after every agent has finished.
+
+⚠️ **`check_chunk_tails.py` DOES NOT COVER THIS.** That tool inspects a chunk's TAIL in isolation; this
+is a RELATION between a tail and the next chunk's HEAD. An agent hit exactly that gap this round and
+said so: *"it inspects tails, and this is a head."*
+
+**Result, run 9 September 2026 with every content agent finished: 2,894 boundaries, 2 hits, BOTH read,
+BOTH correct as written.** One is a reassurance (*"No shame in this at all."*) that is not a prohibition;
+one is an explanation that tells the listener in terms it is *"half of a five-clause Interpretation"*.
+**No repair split a prohibition from its remedy.** ⚠️ **Two hits out of 2,894 is the expected steady
+state — read every hit, and do not sweep.**
+
+### ⚠️ OPEN — DEPLOY: the `.m3u` playlists activate a dormant step and get a YEAR of immutable cache
+
+Found by `site-reviewer`, round 70. **Not fixed — `.github/workflows/` is deploy-facing.**
+
+`.github/workflows/deploy.yml` excludes `audio/*` from both `--delete` passes, then a *Sync audio* step
+copies `site/dist/audio` with `--cache-control "public, max-age=31536000, immutable"`. ⚠️ **Before this
+round `site/dist/audio` never existed, so that step always printed "nothing to sync."** It now ships
+**nine build-generated `.m3u` playlists** — and **only pass 2's log feeds the CloudFront invalidation**,
+so a playlist is **never invalidated**. **Add a document and `/audio/all.m3u` is stale at the edge
+indefinitely.**
+
+⚠️ The step's own comment — *"No `--delete`: the bucket is the source of truth for audio, not the
+repo"* — is now **half wrong**: the repo IS the source of truth for the `.m3u`. And its sibling at
+`:163` still says *"The narration MP3s (Phase 5)"*: **both "narration" and "MP3" are words this round
+corrected everywhere else**, and this is the last place they survive.
+
+**The audio itself is genuinely immutable and a year is right for it. The playlists are not.** Separate
+them, or invalidate the playlists.
+
+### ⚠️ OPEN — the audio is BUILT AND UNPUBLISHED, and the whole feature is ONE FLAG
+
+Everything is done except the upload, which is **outward-facing and needs the owner** (non-negotiable 9).
+`scripts/upload_podcast_audio.sh` is **dry-run by default** and refuses to run when
+`podcasts_web/manifest.json` and `site/src/data/podcast.json` disagree.
+
+**THE SEQUENCE, and it must be in this order:**
+1. `python3 scripts/build_podcast_cover.py` (or drop an owner cover at `podcasts/cover.png`).
+2. `S3_BUCKET=… bash scripts/upload_podcast_audio.sh` — **dry run first**, then `--go`.
+3. Confirm the URLs resolve **and that HTTP HEAD and byte-range requests work on them** — ⚠️ **Apple
+   requires both**, and nothing in the repository can check it.
+4. **Then** set `AUDIO_ENABLED = true` in `site/src/consts.ts`. ⚠️ **That one flag governs the on-page
+   player AND the downloads Audio section** — deliberately, after the first attempt disabled the player
+   for 404s while leaving 46 links to the same missing files on the downloads page.
+5. Validate the feed at Cast Feed Validator and Podba.se (both named by Apple AND Spotify; both verified
+   reachable). ⚠️ Apple's own pass-through validator needs a Connect sign-in and is **owner-only**.
+6. Spotify: the owner chose *ship the feed, then try Switch as a reversible experiment.*
+
+⚠️ **THE ONE THING NOBODY HAS EVER SEEN is this player working against a file that exists.** Every
+observation about it was made against a 404. **Dropping ONE episode into `site/public/audio/<doc_id>.m4a`
+locally and building would close that gap in one run**, and is worth doing before the real upload.
+
+### ⚠️ OPEN — A SAFETY VALUE CANNOT BE COMPLETED BECAUSE ITS BLOCK IS AT `MAX_COACHING_FACTS`, NOT `HARD_MAX`
+
+`content/positions/switching_positions.md:125` is a `Never:` value carrying two injury mechanisms, and it
+uses a **gapped predicate** to fit: *"…even a light hit from behind could severely injure head or neck;
+**ducking can**, at walking speed."* A `safety-reviewer` rated it **Minor, not Critical** — the
+prohibition is uttered first, complete and unqualified, and the failure needs a compound error (the gap
+unresolved AND *"at walking speed"* re-attached to *"or duck"*), which costs the reason rather than the
+rule.
+
+⚠️ **BUT IT IS THE ONLY ONE OF THE CORPUS'S FOURTEEN `walking speed` LINES THAT GAPS THE PREDICATE.**
+Every other states a full subject and verb. And it is the only carrier that drops the source's
+a-fortiori clause — `huh.txt:228`'s *"A player doesn't have to be going at full speed for this to
+happen"* — which is where the sentence's whole force lives. Its own sibling at `:142` keeps it.
+
+⚠️ **IT DOES NOT FIT, AND THAT IS A FINDING ABOUT THE SECTION, NOT ABOUT THE SENTENCE** (non-negotiable 1's
+own logic). Measured: **196 of 200 characters**, and the block holds **8 coaching facts against
+`MAX_COACHING_FACTS = 8`**. ⚠️ **So it cannot be split — `check_facts.py` trips the COACHING cap before
+`HARD_MAX = 11`, and that distinction is the thing to know before planning any repair here.** Seventeen
+rewrites were measured; every one that resolves the gap and keeps the four-component tail lands at
+202-217, and the only 200-char variant that resolves it **drops *"chin off your chest"***, which the
+owner calls non-negotiable.
+
+**The reviewer's recommendation, and it is the right one: free a slot by splitting the SECTION, or accept
+the gap. ⚠️ Do NOT spend the four remaining characters on the article *"the head or neck"*** — it reads
+better aloud and does nothing about the gap, and it **forecloses the fix that matters.**
+
+### ⚠️ OPEN — THE NHL'S OWN INDEX DISAGREES WITH ITS OWN SIGNAL TABLE, and nothing records it
+
+Found by a commit gate re-deriving `rules_primer.md`'s new hooking material. **The NHL rulebook's signal
+table at `sources/nhl_rules_layout.txt:3073` gives `29.18 | Hooking | "A tugging motion with both arms…"`.
+⚠️ Its own back-of-book INDEX at `:10839` files the hooking signal at 29.17 and the icing signal at
+29.18 — consistently one off from the table, throughout.**
+
+**The corpus follows the TABLE, which is correct.** But nothing in `sources/README.md` records that the
+NHL's index is offset, so the next agent to check a signal number against the index will find a
+mismatch and may "correct" a correct citation. ⚠️ **This is a source-internal contradiction, not a corpus
+defect — and it is exactly the kind of thing `sources/README.md` exists to hold.** Verify the offset is
+systematic rather than a single typo, then record it there with the two line numbers.
+
+### ⚠️ OPEN — THE CORPUS STATES A HAZARD MORE FIRMLY THAN THE BODY THAT OWNS THE WORDING, 8 SITES
+
+⚠️ **A NEW DEFECT CLASS, and it is the NEIGHBOUR of non-negotiable 1 rather than an instance of it:
+not inventing a fact, but HARDENING a sourced one.** Nothing in the non-negotiables names it, no checker
+sees it, and its direction — making the corpus sound MORE certain than its source — is the opposite of
+the one every convention here guards against, which is why nobody has stopped on it.
+
+**The phrase is `break your neck`. Neither source says it.**
+- `sources/ibc.txt:1570-1571` (USA Hockey, *Introduction To Body Contact*) — *"Even a light hit from
+  behind **could inflict** a severe head or neck injury"*
+- `sources/huh.txt:228-229` (USA Hockey, *Heads Up Hockey*) — the injury *"**can occur** at walking speed"*
+⚠️ **HUH does describe *"a fracture or break of one **of** more vertebrae"* (the extraction's own wording), so the phrase is closer in KIND
+than it first looks** — the firmer half is the modality and the dropped scope: *"can injure severely"*
+against *"could inflict a severe head or neck injury"* loses **even**, loses **head or neck**, and moves
+**could** to **can**.
+
+**PRE-EXISTING, NOT THIS ROUND'S DOING — measured: HEAD carried 10, the tree carries 8.** Round 70
+removed two (`switching_positions.md:125`, `:142`) and introduced none. The 8 remaining:
+- ⚠️ **`content/positions/winger.md:16`, `:94`, `:364` — the SPOKEN facts layer**, voiced alone with a
+  300 ms break either side. ⚠️ **And `winger.md` is INTERNALLY SPLIT: its hit-from-behind limb uses the
+  source's wording at `:15`, `:93`, `:363` while its ducking limb does not, in adjacent lines.**
+- `content/positions/winger.md:728` — Key Takeaways.
+- `content/technique/puck_handling.md:14`, `:918`, `:998` · `content/hockey-iq/puck_support_and_spacing.md:318`
+  — not read; someone must.
+
+⚠️ **THE REPAIR IS NOT A SWEEP AND MUST NOT BE ONE.** At `switching_positions.md:125` the house wording
+*"could inflict a severe head or neck injury"* was **6 characters too expensive** to sit beside a
+non-elliptical walking-speed limb inside the 200-char cap, and **splitting was unavailable because the
+binding cap there is `MAX_COACHING_FACTS = 8`, not `HARD_MAX = 11`** — a distinction worth knowing, since
+`check_facts.py` tests the coaching cap FIRST. ⚠️ **`winger.md:16` reportedly has ~10 characters of
+headroom, so the substitution may be affordable there where it was not there. Measure each site.**
+
+⚠️ **A DIVERGENCE THIS DIFF INTRODUCED, in the safe direction, which the row must own:** round 70 edited
+`winger.md:728` (the sentence carrying one of the eight) and repaired `switching_positions.md:125`.
+**So where HEAD had ONE spoken rendering of this hazard, the tree now has TWO** —
+`switching_positions.md:125`'s repaired form and `winger.md:16`'s unrepaired one. **That is a
+divergence, not a fix, until the other sites are brought across.**
+
+⚠️ **AND A CORRECTION TO THE FRAMING ABOVE, which a commit gate had to make twice.** An earlier brief
+said *"can break your neck"* is something *"neither USA Hockey source says."* ⚠️ **That is too strong.**
+`sources/huh.txt:221-223` describes the mechanism producing *"a fracture or break of one **of** more
+vertebrae"* (the extraction's own wording) — **so the phrase is a paraphrase IN KIND.** The genuinely firmed half is the **modality and
+scope**, not the severity. **A repair that treats this as an invented claim will overcorrect.**
+
+⚠️⚠️ **AND A `safety-reviewer` HAS NOW SETTLED THIS: `winger.md:16`, `:94` and `:364` ARE SOUND AND MUST
+NOT BE SWEPT.** *"can … at walking speed"* matches `huh.txt:229` exactly, and `huh.txt:221-223` reads
+*"resulting in a fracture or break of one of more vertebrae. And if one breaks, it can cause compression
+of the spinal cord, resulting in paralysis"* — **so "break your neck" is a paraphrase in kind, and those
+three are faithful.** ⚠️ **Sweeping them on the strength of this row's original, withdrawn framing would
+be the round-59 direction-of-travel failure: making the corpus look LESS supported than it is.**
+
+**So this row's remaining scope is much smaller than it first looked:** the four unread sites at
+`puck_handling.md:14`, `:918`, `:998` and `puck_support_and_spacing.md:318`. **Read them. Expect them to
+be sound.**
+
+⚠️ **AND DO NOT OVERCORRECT.** *"could inflict a severe head or neck injury"* is the governing body's own
+wording and is plenty strong. A hedge soft enough to stop the warning working is a worse outcome than the
+overstatement.
+
+⚠️ **A SECOND, SEPARATE ERROR IN THE SAME FAMILY:** `switching_positions.md:142` attached the walking-speed
+figure to the **COLLISION** rather than to the **INJURY** — which that file's own Sources trailer at `:540`
+explicitly warns against. **The two quotations belong to two different mechanisms** (a hit from behind;
+cervical flexion from ducking) and `content/on_ice_communication.md:626` records the division of labour
+between them. **Check the other 8 for that conflation too, not just for the wording.**
+
+### ⚠️⚠️ OPEN — `describe` IS A SECOND LISTENER'S LAYER, AND IT CARRIES THE CAPTION TOO
+
+**Established from source on 9 September 2026, not inferred — two agents had reported `describe` as
+"never voiced, page-only", and that is half true and misleading.**
+
+1. **`describe` never reaches the AUDIO pipeline.** `scripts/md_to_speech.py` contains **zero** field
+   accesses to `describe`; its `_image` handler reads `entry["caption"]` and nothing else (`:677-683`).
+2. ⚠️ **But `describe` DOES reach a SCREEN READER.** `site/scripts/lib/rink.mjs:566-571`, `longDesc()`,
+   returns `` `${describe} ${caption}` `` and `:1932-1935` emits it as `<desc>` under `role="img"`.
+   Verified in the built artefact: `site/public/diagrams/dz-collapse-corner.svg` has exactly one
+   `<desc>`, 2,139 characters, opening with the describe text and **ending with the caption**.
+3. ⚠️⚠️ **AND THIS IS THE PART THAT CHANGES THE RANKING.** `site/src/plugins/remark-corpus.mjs:292`
+   marks the `<figcaption>` **`aria-hidden`**, on the stated ground that the SVG's `<desc>` carries the
+   same words. **So for a screen-reader user the `<desc>` is the ONLY route to the caption at all.**
+
+⚠️ **A NEW SEAM NOBODY HAS SWEPT: the `describe`/`caption` JOIN.** They are announced as one continuous
+utterance separated by a single space. **A negation ending a `describe` and an imperative opening a
+`caption` would invert across that join — in two fields that are each individually correct.** No tool
+looks at the pair, and neither of this round's caption censuses did.
+
+⚠️ **CORRECTION TO A FIGURE THIS PLAN NEARLY CARRIED.** The `describe` population was relayed to an
+agent as **269**. It is not. Measured: wide sweep **619** hits (**528** caption / **91** describe);
+narrowed to em dash, semicolon or colon, **381** (**339** caption / **42** describe). ⚠️ **`describe` is
+42 on the strong measure. Re-run it; do not quote this line** — it is here to kill the 269, not to
+replace it with another number to copy.
+
+**Priority: below captions** — smaller audience, and `describe` carries walk-through prose rather than
+instructions — **but NOT "far below", and the join is the part to sweep first.**
+
+### ⚠️ THE DISCRIMINATOR THAT CAME OUT OF THE CAPTION PASS — worth more than the repairs
+
+Asked why one cardinal-rule instruction inverted and a dozen siblings did not, an agent found the rule:
+
+> **Repair when the negation is a MAIN-CLAUSE negation immediately before the separator. Leave when it
+> is embedded in a relative or subordinate clause, sits behind a MATCHED PAIR of parenthetical dashes,
+> or is resolved by an intervening "so" or "but".**
+
+⚠️ **The corpus's own convention was already doing this correctly and nobody had noticed:** every other
+cardinal-rule instruction in `site/src/diagrams/` is introduced by **"so"** — *"…is a coaching choice and
+not a law — …**so** find out which yours runs"* — and **that conjunction closes the negation.**
+`dz-collapse-corner` was the single one with a bare imperative straight after the dash.
+
+**Applying that rule found one more, penalty-bearing:** `goalie-rim-stop-or-clear` — *"the published
+documents **do not settle** whether the suspension still stands: **assume it binds**, ask your league…"*
+Inverted: *"don't assume it binds"*, telling a goaltender to assume the trapezoid restriction does not
+bind. **A delay-of-game minor, and the conservative half of an unsettled question.** Repaired.
+
+### ⚠️ OPEN — carried out of round 70, each named by the agent that could not reach it
+
+1. **`body_contact_and_battles.md:1038`** — the `Never:` value reads *"Never: Meet a goal post head
+   first. Head up and chin off your chest at the net front instead…"* and **has no *"and never duck"***,
+   which its three siblings all carry. A `Never:` voiced alone, one component short, **in the owning
+   document.** The style guide's "check for a missing component whenever you repair one of these".
+2. **`defender.md` does not carry the shot-fake / *"stay on your feet until the puck is actually
+   released"* point**, which is why the `shot-block-get-close` caption **cannot** be cut at the proposed
+   boundary. ⚠️ **The cut was REFUSED for this reason — do not re-propose it without closing this first.**
+3. **`net-front-walk-out-direction` (5,764 chars, the corpus's longest, voiced in THREE hosts) is not
+   demonstrably cuttable.** A 5-gram overlap test scored **exactly one of its 31 sentences** above 50% in
+   all three hosts. ⚠️ **The metric conflates paraphrase with absence and proves nothing either way** —
+   and this round's migration into `goaltender.md`/`defender.md` did not register as coverage.
+   **Needs a sentence-by-sentence read against three hosts. Never an overlap metric.**
+4. **12 multi-host captions assert something about "the section" or "this document"** and are unsafe to
+   borrow: `breakout-up(d)`, `defender-pair-overview`, `rush-gap-and-angle` (4 hosts),
+   `rush-3-on-2-default`, `forecheck-roles-rotate`, `delayed-penalty-your-own-net(c+d)`,
+   `goalie-rebound-corners-not-slot`, `oz-net-front-screen`, `winger-dz-rim`, `the-puck-decides-not-you`
+   (4 clauses), `winger-wall-depth-by-system`. ⚠️ **Partial mitigation, worth knowing: `md_to_speech`
+   announces a borrowed caption as *"Diagram, from body contact and battles."*, so for a LISTENER "the
+   section" resolves to the owner. The PAGE has no such lead-in, and a false factual claim is not
+   mitigated by attribution either way.**
+5. **Should §8 of `body_contact_and_battles.md` gain the Rule 622 boards-pin sentence?** The caption is
+   currently the only place a §8 listener meets that rule. Genuinely two-sided; a decision, not a defect.
+6. **`forechecking_systems.md` — four boards-posture sites (`:857`, `:863`, `:888`, `:949`) still carry
+   no shoulder-tip limb.** ⚠️ **Deliberately NOT swept: a layer test found 108 boards-posture windows
+   corpus-wide and only 16 carry the limb, so adding it to all four would break the corpus norm rather
+   than follow it.** A propagation decision for the coordinator.
+7. **NHL EDGE pass-speed claim (`passing_and_receiving.md:46`, `:842`) — CANNOT VERIFY by fetch, and
+   `site-reviewer` is the instrument.** ⚠️ `edge.nhl.com` serves **HTTP 200 to a URL that cannot exist**
+   (`/en/skater/BANANAFISHZZZ`, identical page title), and every stat name is client-rendered and returns
+   **zero** from the served HTML. **A status code from that host carries no information** — already
+   recorded at `sources/README.md:855-874`. Needs a real browser.
+
+### ✅ CLOSED in round 70
+
+- **32 rulebook-absence claims tested: 30 TRUE, 2 incomplete, 0 false.** ⚠️ **The brief predicted round
+  59's direction — every one false — and it did NOT generalise.** Round 59 measured **web and journal**
+  claims; these were written by people with the book open. **A reviewer expecting that direction would
+  have manufactured corrections.** The two incomplete ones (`rules_primer.md:407` NHL hooking signal
+  29.18; `shooting.md:920` crossbar enumeration) are repaired.
+- **11 web/journal absence claims tested: 11 TRUE, 0 false.** Real population is **~168**, not the 9
+  handed over; the hand-off was a ~5% sample.
+- **The PMID retraction sweep, extended 71 → 80.** Exactly one retraction, already labelled in five
+  places. Zero errata, zero expressions of concern.
+- **The Casebook crossbar question** (an agent's named unrun search): **zero** `cross ?-?bar` in the
+  Casebook's Rule 621 body, and its test is explicitly shoulder height — *"the intent of the high stick
+  rule is to keep the sticks below the height of the shoulder."* **The corpus's claim is strengthened.**
+
 ## ⚠️⚠️⚠️ TIER 0 — READABILITY AND DIAGRAMS. THE OWNER'S STANDING PRIORITY, ABOVE EVERYTHING BELOW.
 
 **Set by the owner, 4 September 2026, and restated after a session that did not follow it.** ⚠️ **A previous
@@ -643,7 +981,7 @@ room.
 ### ⚠️⚠️ D2 HAS A CEILING, AND IT IS ~100 NEW DIAGRAMS — NOT 917
 
 **Priced 6 September 2026** from the measured caption load (286 markers, 80,382 spoken caption
-words, 88.5 hours, **7.5% of everything the corpus speaks**), at the observed 281 caption words per
+words, 88.6 hours, **7.5% of everything the corpus speaks**), at the observed 281 caption words per
 marker:
 
 | new diagrams | added speech | caption total | **captions as share of spoken text** |
@@ -7604,7 +7942,7 @@ not checked.**
 ## Tier 0 — The largest items
 
 Detail: [`corpus_structure_measurements.md`](../reviews/corpus_structure_measurements.md).
-These outrank everything below. The corpus is **37 documents and 1,167,611 words — 88.5 hours of
+These outrank everything below. The corpus is **37 documents and 1,169,050 words — 88.6 hours of
 reading at 220 wpm** (Python `str.split()` over the raw markdown of every file in `content/` — `wc -w` gives 632,776 on the same files, a tokeniser difference and not missing content; derived by `scripts/check_counts.py`,
 26 August 2026 **on the tree that shipped it**, not on the tree before its repairs —
 the first version of this figure was HEAD's and was stale the moment it was written). ⚠️ **This read "532,518 words — 40.3 hours" until round 43**, a figure

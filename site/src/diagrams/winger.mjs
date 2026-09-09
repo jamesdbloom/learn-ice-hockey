@@ -324,7 +324,12 @@ const leavesThePoint = {
     'your team plays before your first shift, because on the coaching account a ' +
     'defensive-zone breakdown is two players working from different assumptions more often ' +
     'than it is an effort problem — coaching emphasis rather than a counted ranking. ' +
-    'Two real exceptions under collapse are not drawn here either: follow your man a few ' +
+    // ⚠️ FULL STOP, NOT A COLON. "are not drawn here either" is a MAIN-CLAUSE negation sitting
+    // immediately before the colon, and the tail is two bare imperatives — so a listener hears
+    // "don't follow your man" and "don't engage the puck", inverting two real coaching
+    // exceptions into prohibitions. The negation is about the PICTURE (these two are not drawn);
+    // the tail is what the reader should actually do. Closing the sentence separates them.
+    'Two real exceptions under collapse are not drawn here either. Follow your man a few ' +
     'feet if he walks down off the point, staying connected and calling the switch, and ' +
     'engage the puck if a corner battle squirts it up the wall to you, because that one is ' +
     'your breakout rather than a corner battle. The version of this picture with the winger ' +

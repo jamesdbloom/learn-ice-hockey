@@ -82,6 +82,7 @@ let linkCount = 0;
 let anchorCount = 0;
 let assetCount = 0;
 let externalCount = 0;
+let audioCount = 0;   // /audio/* — served from the bucket, never from dist. See below.
 /** Links inside the rendered corpus body — the cross-links written in the markdown. */
 let corpusLinkCount = 0;
 let corpusAnchorCount = 0;
@@ -135,6 +136,18 @@ for (const file of htmlFiles) {
       ? target
       : `/${path.posix.normalize(path.posix.join(path.posix.dirname(pageUrl), target))}`;
 
+    // ⚠️ /audio/* again — see the long note in the asset loop below. The FIRST
+    // version of that skip only covered <audio src> and missed <a href>, and the
+    // build failed on 40-odd download links and player fallbacks. The audio is
+    // reached BOTH ways: the player emits <audio src> with an <a href> fallback
+    // inside it, and downloads.astro emits a direct <a href download> per episode.
+    // Two selectors, one deploy model, and a skip that covers one of them is a
+    // skip that does not work.
+    if (resolvedPath.startsWith('/audio/')) {
+      audioCount += 1;
+      continue;
+    }
+
     const targetFile = urlPathToFile(resolvedPath.split('?')[0]);
     if (!targetFile) {
       report(href, `resolves to ${resolvedPath}, which is not in the build output`);
@@ -171,6 +184,28 @@ for (const file of htmlFiles) {
       const resolved = value.startsWith('/')
         ? value
         : `/${path.posix.normalize(path.posix.join(path.posix.dirname(pageUrl), value))}`;
+
+      // ⚠️ /audio/* IS NOT IN THE BUILD OUTPUT AND MUST NOT BE.
+      //
+      // The 37 episodes are ~1.12 GB, gitignored, and uploaded straight to the
+      // bucket by scripts/upload_podcast_audio.sh. deploy.yml already knows this:
+      // it excludes `audio/*` from EVERY sync pass, with the comment "A sync with
+      // --delete that did not exclude them would cheerfully delete every one of
+      // them." So the audio is on the origin without ever passing through dist/.
+      //
+      // ⚠️ THIS IS A DELIBERATE HOLE AND IT HAS A COST: nothing mechanical can
+      // now tell you an audio href is wrong. The defence is that these hrefs are
+      // GENERATED, not typed — AudioPlayer.astro, the m3u endpoint and the
+      // podcast feed all build them from site/src/data/podcast.json, which
+      // scripts/build_podcast_audio.py writes from the encoded files themselves.
+      // So the failure mode is not a typo, it is a STALE podcast.json, and the
+      // thing that catches that is upload_podcast_audio.sh, which refuses to run
+      // when the manifest and the tracked site data disagree.
+      // ⚠️ Do not widen this skip beyond /audio/.
+      if (resolved.startsWith('/audio/')) {
+        audioCount += 1;
+        continue;
+      }
       if (!urlPathToFile(resolved.split('#')[0].split('?')[0])) {
         report(value, `asset not found in the build output (${resolved})`);
       }
@@ -182,7 +217,7 @@ const summary =
   `check-links: ${htmlFiles.length} pages · ` +
   `${linkCount} internal links checked (${anchorCount} with anchors), of which ` +
   `${corpusLinkCount} are corpus cross-links from the markdown (${corpusAnchorCount} with anchors) · ` +
-  `${assetCount} assets · ${externalCount} external links skipped`;
+  `${assetCount} assets · ${externalCount} external links skipped · ${audioCount} /audio/ hrefs not checked (uploaded out of band)`;
 
 if (problems.length) {
   console.error(`\n${summary}`);

@@ -324,7 +324,18 @@ const collapseCorner = {
     'illegal hit. ' +
     'The centre’s trip down empties the high slot — the seam the puck comes back through — ' +
     'and this is frame one of two, not a shape to hold. ' +
-    'Under man-on-man or a hybrid these five would be reading bodies, not areas — ask your ' +
+    // ⚠️ FULL STOP, NOT AN EM DASH — AND THIS ONE INVERTS NON-NEGOTIABLE 7 ITSELF.
+    // This ran "…reading bodies, not areas — ask your coach which your team plays". The
+    // negation is a constituent negation in the MAIN clause, four words before the dash, with
+    // no conjunction closing it, and the tail is a bare imperative — so a listener can hear
+    // "not areas, DON'T ask your coach which your team plays". What that inverts is the
+    // corpus's cardinal rule: name the system, name the alternative, tell the reader to find
+    // out which their team plays. The inversion deletes the "find out" half in the spoken
+    // layer, which is the half that stops a coaching choice being heard as a law of hockey.
+    // Every OTHER cardinal-rule instruction in this directory is introduced by "so" ("…so
+    // find out which yours runs"), and that conjunction is what closes the negation. This was
+    // the one with a bare imperative straight after the dash.
+    'Under man-on-man or a hybrid these five would be reading bodies, not areas. Ask your ' +
     'coach which your team plays. ' +
     'All four books are set out earlier in this document.',
 
@@ -432,10 +443,18 @@ const collapseHighSlot = {
     'winger has already followed the opposing defenceman down off the point.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, the same moment as the ' +
-    'previous diagram one beat later. The opposition are unchanged: the puck carrier deep in ' +
+    // ⚠️ NO POSITIONAL POINTER. This opened "the same moment as the previous diagram one beat
+    // later" and continued "The opposition are unchanged… Two of our own players have moved" —
+    // three sentences describing a DIFF against whatever picture happens to sit above. True in
+    // defensive_zone_coverage.md, where `dz-collapse-corner` is immediately above it. FALSE in
+    // content/positions/defender.md, its other host, where the diagram above it is
+    // `net-front-walk-out-direction` — a different situation entirely. A `describe` is the SVG
+    // <desc> a screen reader announces, so a blind reader there was being told to compare
+    // against a picture that is not there. Restated self-contained; nothing described changed.
+    'The attacking half of the rink, the defended net at the right, a beat after the corner ' +
+    'battle begins. The opposition: the puck carrier deep in ' +
     'the strong-side corner, a forward on the strong-side half-wall, a forward at the net ' +
-    'front, and two defencemen at the points. Two of our own players have moved. The centre ' +
+    'front, and two defencemen at the points. Our own five are drawn mid-collapse. The centre ' +
     'has arrived on the inside edge of the strong-side corner, about nine feet from the carrier ' +
     'and about the same from the strong-side defenceman, so the carrier now has one of ours ' +
     'below him and one inside him — that is the two on one. The weak-side winger has come ' +

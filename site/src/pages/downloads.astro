@@ -1,6 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import { LAYERS, DOC_COUNT } from '../data/nav';
+import podcast from '../data/podcast.json';
+import { AUDIO_ENABLED } from '../consts';
+
+// The audio episodes, grouped by section, in the corpus's reading order.
+// Sizes and durations are MEASURED, from scripts/build_podcast_audio.py reading
+// the encoded files — never estimated. A reader on mobile data should see "28 MB"
+// before they tap, which is the same reason build-downloads.mjs carries byte sizes.
+const episodes = [...podcast.episodes].sort((a, b) => a.track - b.track);
+const audioHours = episodes.reduce((n, e) => n + e.duration_s, 0) / 3600;
+const audioGb = episodes.reduce((n, e) => n + e.bytes, 0) / 1e9;
+const mb = (bytes: number) => `${Math.round(bytes / 1e6)} MB`;
+const mins = (s: number) => `${Math.round(s / 60)} min`;
 
 // Filenames are deterministic and mirror scripts/build-downloads.mjs. That
 // script runs *after* Astro (it reads the rendered HTML), so this page cannot
@@ -71,12 +83,83 @@ const epubs = [
         file with its size.
       </p>
 
-      <h2>What is not here yet</h2>
+      <h2>Audio</h2>
+
+      {/* ⚠️ GATED ON THE SAME FLAG AS THE PLAYER, AND FOR THE SAME REASON.
+          The player was disabled because all 37 episode URLs 404 until
+          scripts/upload_podcast_audio.sh has run, and a control that looks healthy
+          and does nothing is a misleading affordance. ⚠️ That reasoning was applied
+          to the player and NOT to this page, which went on offering 46 links to the
+          same missing files — while the honest "specified but parked" disclosure
+          that used to stand here had been deleted in the same change, and
+          check-links.mjs had just been taught to skip /audio/ so nothing mechanical
+          would ever say so. A commit gate caught it.
+          ONE FLAG, ONE TRUTH: when the audio is in the bucket, consts.ts flips and
+          the whole feature — player, downloads, playlists, feed — becomes true at
+          once. */}
+      {!AUDIO_ENABLED && (
+        <p>
+          <strong>Not published yet.</strong> The {episodes.length} episodes are
+          recorded and encoded &mdash; about {audioHours.toFixed(0)} hours, one per
+          document &mdash; but they are not on the server yet, so there is nothing here
+          to download. A podcast feed, per-section playlists and direct downloads are
+          all ready and waiting on that upload. It is not abandoned.
+        </p>
+      )}
+
+      {AUDIO_ENABLED && (
+        <Fragment>
       <p>
-        <strong>Audio</strong> — narration, chaptered audiobooks and a podcast
-        feed — is specified but parked: the pipeline works and the voice quality
-        was not good enough to ship. It is not abandoned.
+        One episode per document, in reading order — {episodes.length} of them,
+        about {audioHours.toFixed(0)} hours. They are spoken editions of the
+        documents rather than word-for-word readings, so they are worth having
+        alongside the text rather than instead of it. AAC in an <code>.m4a</code>
+        container, mono, about {audioGb.toFixed(2)} GB for the lot.
       </p>
+
+      <h3>Subscribe</h3>
+      <p>
+        <a href="/feed/podcast.xml">The podcast feed</a> works in Apple Podcasts,
+        Overcast, Pocket Casts and anything else that reads RSS: copy that
+        address into your app's &ldquo;add a show by URL&rdquo; box. Episodes are
+        numbered rather than dated, so your app will play them in the order the
+        corpus is meant to be read.
+      </p>
+
+      <h3>Playlists</h3>
+      <p>
+        An <code>.m3u</code> playlist opens in VLC, Apple Music, most car stereos
+        and almost any desktop player, and needs no account or app.
+      </p>
+      <ul class="download-list">
+        <li>
+          <a href="/audio/all.m3u" download>The complete corpus</a>
+          <span class="download-note"> — all {episodes.length} episodes, in reading order.</span>
+        </li>
+        {LAYERS.map((l) => (
+          <li>
+            <a href={`/audio/${l.id}.m3u`} download>{l.title}</a>
+            {l.tagline && <span class="download-note"> — {l.tagline}</span>}
+          </li>
+        ))}
+      </ul>
+
+      <h3>One episode at a time</h3>
+      <p>
+        Each document&rsquo;s own page carries its own player. The direct
+        files are here if you would rather keep them &mdash; on a phone, saving
+        one to Files lets you open it in an audiobook player such as BookPlayer.
+      </p>
+      <ul class="download-list">
+        {episodes.map((e) => (
+          <li>
+            <a href={e.audio} download>{e.title}</a>
+            <span class="download-note"> — {e.section} · {mins(e.duration_s)} · {mb(e.bytes)}</span>
+          </li>
+        ))}
+      </ul>
+        </Fragment>
+      )}
 
       <hr />
       <p class="download-note">

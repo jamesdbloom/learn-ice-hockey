@@ -30,6 +30,26 @@
     }
   }
 
+  // ⚠️ A FAILED SOURCE IS NOT A FALLBACK CASE, AND THE MARKUP DOES NOT COVER IT.
+  // The <a> inside <audio> is the fallback for a browser with NO <audio> support.
+  // A browser that supports <audio> perfectly and cannot FETCH the file shows the
+  // native transport as normal: "Listen", a play triangle, 0:00 / 0:00, a full-width
+  // scrubber. Measured in headless Chrome against a 404: the ONLY pixel difference
+  // before and after pressing play is the triangle dimming by one shade, while
+  // audio.error is {code: 4, MEDIA_ELEMENT_ERROR: Format error}.
+  // ⚠️ That is a MISLEADING affordance, not a degraded one — a healthy-looking
+  // control that does nothing — and it would appear on all 37 pages the moment the
+  // site is deployed before the audio is uploaded. So say so out loud.
+  audio.addEventListener('error', function () {
+    if (wrap.dataset.failed) return;
+    wrap.dataset.failed = '1';
+    var note = document.createElement('p');
+    note.className = 'audio-player__error';
+    note.setAttribute('role', 'status');
+    note.textContent = 'This episode is not available yet.';
+    wrap.replaceChildren(note);
+  });
+
   var resumed = false;
   audio.addEventListener('loadedmetadata', function () {
     if (resumed) return;

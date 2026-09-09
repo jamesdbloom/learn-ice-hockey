@@ -31,6 +31,19 @@ const { prev, next } = getNeighbours(entry.id);
   withToc={true}
 >
   <main class="main" id="main">
+    {/* ⚠️ BEFORE the article, not after it, and the reason is keyboard order.
+        The player is `position: sticky; bottom: 0` (global.css), so it is ON SCREEN
+        from the first paint — but it used to sit after </article> in the DOM, which
+        made it the 184th tab stop on breakouts and the 192nd on rules_primer, behind
+        every inline link in the document. Measured in headless Chrome, not guessed.
+        WCAG 2.4.3 asks that focus order match the order things are presented in.
+        Moving it here costs nothing visually, because the positioning is sticky rather
+        than static. ⚠️ If anyone makes this element non-sticky, revisit this: at that
+        point DOM order and visual order agree again and it belongs back at the bottom.
+        ⚠️ It is deliberately OUTSIDE <article data-pagefind-body> so the player's text
+        never enters the search index. */}
+    <AudioPlayer id={entry.id} title={doc.title} />
+
     <article data-pagefind-body>
       <p class="doc-eyebrow">
         <a href={`/${doc.layerId}/`}>{doc.layerTitle}</a>
@@ -46,7 +59,6 @@ const { prev, next } = getNeighbours(entry.id);
       <CiteThis title={doc.title} />
     </article>
 
-    <AudioPlayer id={entry.id} title={doc.title} />
     <PrevNext prev={prev} next={next} />
   </main>
 

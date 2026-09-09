@@ -8,21 +8,28 @@ interface Props {
 }
 
 const { id, title } = Astro.props;
-const src = `${AUDIO_BASE}/${id}.mp3`;
+const src = `${AUDIO_BASE}/${id}.m4a`;
 const storageKey = `audio-position:${id}`;
 ---
 
 {/*
-  The narration does not exist yet (build spec phases 4–5), so the whole player
-  is behind AUDIO_ENABLED in src/consts.ts and is off by default. The shell is
-  built and styled so that turning the flag on is the only change needed.
+  Self-hosted, deliberately. The owner chose this over a Spotify embed on
+  9 September 2026 once the cost was measured rather than assumed: a Spotify
+  embed loads 15 scripts from six off-origin hosts and its <noscript> is empty,
+  and the site currently makes ZERO off-origin requests. oEmbed does not avoid
+  it — it hands you the same iframe. This element keeps that property, and
+  degrades to a plain download link with scripting off.
+
+  ⚠️ "Listen" and "Audio edition", never "Narration" — see the note in
+  src/consts.ts. The episodes are not verbatim readings and the durations prove
+  it, so a label promising narration would be a claim the audio cannot support.
 */}
 {
   AUDIO_ENABLED && (
     <div class="audio-player" data-audio-player data-storage-key={storageKey}>
       <span class="audio-player__label">Listen</span>
-      <audio controls preload="none" src={src} aria-label={`Narration of ${title}`}>
-        <a href={src}>Download the narration of {title}</a>
+      <audio controls preload="none" src={src} aria-label={`Audio edition of ${title}`}>
+        <a href={src}>Download the audio edition of {title}</a>
       </audio>
     </div>
   )

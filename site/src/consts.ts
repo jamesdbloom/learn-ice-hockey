@@ -6,15 +6,47 @@ export const SITE_DESCRIPTION =
   'A documentation corpus for learning ice hockey: where to be, how to execute, how to read the play, and how five players work as one unit.';
 
 /**
- * Audio narration.
+ * The audio edition.
  *
- * The narration does not exist yet (see project/site_build_specification.md,
- * phases 4 and 5). The player shell is built and styled, but is hidden until
- * this flag is turned on so the site can be reviewed without it.
+ * ⚠️ NOT "narration", and the word matters. Measured 9 September 2026: every
+ * episode runs 48-72 minutes REGARDLESS of its document's length — Rules Primer
+ * is 93,153 words in 67.9 min, Reading Ice Hockey Diagrams is 4,198 words in
+ * 53.4 min, against a ~150 wpm speech rate. No episode is a verbatim reading of
+ * its document, so "narration", "narrated" and "read aloud" all assert something
+ * false. The metadata in `scripts/build_podcast_audio.py` was corrected for the
+ * same reason; keep the two in step.
  *
- * When enabled, each document expects an MP3 at `/audio/<id>.mp3`, e.g.
- * `/audio/faceoffs.mp3` and `/audio/positions/center.mp3`.
+ * ⚠️ `.m4a`, NOT `.mp3`. The episodes are AAC-LC in MP4, which is what BOTH
+ * platforms prefer — Apple: "we strongly recommend using AAC instead of MP3…
+ * the MP4 format over the ADTS format"; Spotify's delivery spec: "MP4 with
+ * AAC-LC". Transcoding to MP3 would be a second generation of lossy loss for
+ * nothing. This constant previously said `.mp3` because the audio did not exist.
+ *
+ * ⚠️ THE FILES ARE NOT IN `site/dist`. They are gitignored (~1.12 GB) and
+ * uploaded to the bucket out of band, which is why `.github/workflows/deploy.yml`
+ * excludes `audio/*` from every sync pass — a sync with `--delete` that did not
+ * would erase all 37. So `check-links.mjs` cannot resolve these hrefs against
+ * the build output, and a link check that fails on `/audio/…` is telling you
+ * about the deploy model, not about a broken link.
  */
+// ⚠️ FALSE UNTIL THE AUDIO IS ACTUALLY IN THE BUCKET. This is ONE FLAG FLIP away
+// from shipping, and it is deliberately not flipped yet.
+//
+// MEASURED in headless Chrome, 9 September 2026, with the flag on: all 37 episode
+// URLs return 404, because `scripts/upload_podcast_audio.sh` is outward-facing and
+// has not been run (non-negotiable 9 — it needs the owner). A reader pressing play
+// got a full, healthy-looking transport control — "Listen", a play triangle,
+// 0:00 / 0:00, a full-width scrubber — that did nothing at all, on every one of the
+// 37 document pages. ⚠️ That is a MISLEADING affordance, not a degraded one.
+//
+// `public/audio-player.js` now listens for the element's `error` event and replaces
+// the panel with "This episode is not available yet.", so the failure is at least
+// honest. But honest-and-useless on 37 pages is not a thing to ship either.
+//
+// THE SEQUENCE IS: run the uploader, confirm the URLs resolve and that HTTP HEAD and
+// byte-range requests work on them (Apple requires both), THEN set this to true.
+// ⚠️ Do not flip it because the code looks finished. The one thing nobody has ever
+// seen is this player working against a file that exists.
 export const AUDIO_ENABLED = false;
 
 /** Where audio files are served from, relative to the site root. */
