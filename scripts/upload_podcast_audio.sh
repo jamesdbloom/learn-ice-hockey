@@ -57,6 +57,21 @@ done
 #
 # An earlier version of this guard just named the variable, which told the operator
 # what was missing and not where to get it. Say where.
+# ⚠️ THE `default` PROFILE HAS NO CREDENTIALS FOR THIS ACCOUNT, AND THE ERROR SAYS
+# "session has expired" RATHER THAN "wrong profile" — which sends you to re-run a
+# login you have already run. Measured 9 September 2026: `aws login` succeeded and
+# `aws sts get-caller-identity` still reported an expired session, because
+# `~/.aws/config`'s `[default]` carries only a region, while the account the bucket
+# lives in is reached through the `ice-hockey` profile.
+#
+# ⚠️ THE ACCOUNT ID IS NOT WRITTEN HERE, AND AN EARLIER VERSION OF THIS COMMENT PUT IT
+# HERE — in the same comment that explains why the bucket name is kept out of the file,
+# in a PUBLIC repository. `check_secrets.py` caught it. The id is in `~/.aws/config`
+# and in the GitHub repository variables, which is where it belongs.
+#
+# So default to that profile, and let the environment override it.
+export AWS_PROFILE="${AWS_PROFILE:-ice-hockey}"
+
 if [ -z "${S3_BUCKET:-}" ]; then
   cat >&2 <<'HELP'
 S3_BUCKET is not set.
@@ -77,6 +92,28 @@ HELP
 fi
 
 [ -f "$MANIFEST" ] || { echo "missing $MANIFEST — run scripts/build_podcast_audio.py first" >&2; exit 2; }
+
+# ⚠️ FAIL ON AUTH BEFORE MOVING A GIGABYTE, NOT AFTER THE FIRST FILE. The previous
+# run discovered an expired session by attempting a 29 MB upload and failing on it.
+# Cheap to check, and it names the profile so the remedy is obvious.
+if ! CALLER="$(aws sts get-caller-identity --query Arn --output text 2>&1)"; then
+  cat >&2 <<HELP
+AWS credentials are not usable for profile '${AWS_PROFILE}'.
+
+  ${CALLER}
+
+Log in, then re-run:
+
+    awsl-web            # or: aws sso login --profile ${AWS_PROFILE}
+
+⚠️ If you HAVE just logged in and still see "session has expired", it is the
+   PROFILE, not the session: ~/.aws/config's [default] has no sso_session, so a
+   bare 'aws' finds no credentials. This script defaults AWS_PROFILE to
+   'ice-hockey'; override it with AWS_PROFILE=<name> if the account moves.
+HELP
+  exit 3
+fi
+echo "authenticated as: ${CALLER}"
 
 # ⚠️ Refuse to upload against a manifest that disagrees with the tracked site data.
 # If they differ, the feed would declare byte sizes for files that are not the ones

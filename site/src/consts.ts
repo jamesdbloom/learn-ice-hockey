@@ -29,25 +29,22 @@ export const SITE_DESCRIPTION =
  * the build output, and a link check that fails on `/audio/…` is telling you
  * about the deploy model, not about a broken link.
  */
-// ⚠️ FALSE UNTIL THE AUDIO IS ACTUALLY IN THE BUCKET. This is ONE FLAG FLIP away
-// from shipping, and it is deliberately not flipped yet.
+// TRUE since 9 September 2026: the audio is in the bucket and was verified there.
 //
-// MEASURED in headless Chrome, 9 September 2026, with the flag on: all 37 episode
-// URLs return 404, because `scripts/upload_podcast_audio.sh` is outward-facing and
-// has not been run (non-negotiable 9 — it needs the owner). A reader pressing play
-// got a full, healthy-looking transport control — "Listen", a play triangle,
-// 0:00 / 0:00, a full-width scrubber — that did nothing at all, on every one of the
-// 37 document pages. ⚠️ That is a MISLEADING affordance, not a degraded one.
+// ⚠️ THE SEQUENCE THAT EARNED THIS, and it is the sequence to repeat if it is ever
+// turned off and back on. `scripts/upload_podcast_audio.sh --go` put 37 episodes and
+// the cover in `s3://<bucket>/audio/`, and then, against the LIVE origin:
+//   HEAD              200, `audio/x-m4a`, `Accept-Ranges: bytes`
+//   byte-range 0-99   206 Partial Content, `Content-Range: bytes 0-99/29265683`
+//   enclosure lengths  sampled 8 of 37, every one matching `podcast.json` exactly
+// ⚠️ Apple requires BOTH the HEAD and the byte-range, and nothing in this repository
+// can check either — they need a real object on a real origin.
 //
-// `public/audio-player.js` now listens for the element's `error` event and replaces
-// the panel with "This episode is not available yet.", so the failure is at least
-// honest. But honest-and-useless on 37 pages is not a thing to ship either.
-//
-// THE SEQUENCE IS: run the uploader, confirm the URLs resolve and that HTTP HEAD and
-// byte-range requests work on them (Apple requires both), THEN set this to true.
-// ⚠️ Do not flip it because the code looks finished. The one thing nobody has ever
-// seen is this player working against a file that exists.
-export const AUDIO_ENABLED = false;
+// ⚠️ THIS FLAG GOVERNS THE PLAYER **AND** THE DOWNLOADS AUDIO SECTION, deliberately.
+// An earlier attempt disabled the player because its 404s were a misleading
+// affordance, and left 46 links to the same missing files on the downloads page. One
+// flag, one truth: the feature is true or absent as a unit.
+export const AUDIO_ENABLED = true;
 
 /** Where audio files are served from, relative to the site root. */
 export const AUDIO_BASE = '/audio';

@@ -71,9 +71,13 @@ export const GET: APIRoute = ({ params, site }) => {
       // so the Response object is serialised to a FILE and its headers never reach
       // a reader — a preview server returned an EMPTY Content-Type for these, and
       // `podcast.xml` came back as `text/xml` rather than the type its endpoint sets.
-      // In production S3 guesses from the extension (.m3u -> audio/x-mpegurl), which
-      // happens to be right, so the outcome is fine and the mechanism is not the one
-      // this line implies.
+      // In production S3 guesses from the extension. ⚠️ MEASURED against the live
+      // bucket on 9 September 2026, after the audio was uploaded: it serves
+      // `audio/mpegurl` — NOT the `audio/x-mpegurl` an earlier version of this
+      // comment predicted. Both are accepted M3U types and players handle either, so
+      // the outcome is fine; the point is that the prediction was a guess and is now
+      // a measurement. Three reviews called this untestable locally, and it was —
+      // it took a real object in a real bucket.
       // ⚠️ Kept anyway because it is correct for a dev/SSR build and costs nothing —
       // but DO NOT rely on it, and do not "fix" a content-type problem here. The
       // lever in production is S3 metadata, set at upload.
