@@ -166,9 +166,35 @@ while IFS=$'\t' read -r rel doc_id; do
 done < "$PAIRS"
 
 if [ -f "$COVER" ]; then
-  aws s3 cp $DRY "$COVER" "s3://${S3_BUCKET}/audio/cover.png" \
+  # ⚠️ THE COVER IS UPLOADED UNDER A CONTENT-HASHED NAME AND IS IMMUTABLE.
+  #     It used to be `audio/cover.png` with a one-hour max-age, replaced in place.
+  #     That does not work here, for two reasons measured on 10 September 2026:
+  #       1. deploy.yml excludes `audio/*` from BOTH sync passes and only pass 2's log
+  #          feeds the CloudFront invalidation, so NOTHING under /audio/ is invalidated
+  #          by a deploy. The edge served the superseded cover with `Age: 71651` against
+  #          its own `max-age=3600` — twenty hours past its stated TTL.
+  #       2. ⚠️ Apple caches show artwork against the URL it fetched it from, so a cover
+  #          replaced in place can keep showing the old image in the directory after the
+  #          origin is right. After a show is LISTED that is slow to unpick.
+  #     So a new cover is a NEW URL, and the old one is simply left where it is.
+  # The served name comes from `site/src/data/podcast-cover.json`, which
+  # `scripts/build_podcast_cover.py` writes and `site/src/pages/feed/podcast.xml.ts`
+  # reads. ⚠️ All three derive from that one file; keep it that way.
+  COVER_NAME="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["file"])' "$REPO/site/src/data/podcast-cover.json")"
+
+  # ⚠️ Refuse if the tracked name is not the hash of the file about to be uploaded —
+  #     that means the cover was rebuilt without the site data being regenerated, and the
+  #     feed would point at a URL that does not exist.
+  ACTUAL="cover-$(python3 -c 'import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],"rb").read()).hexdigest()[:8])' "$COVER").png"
+  if [ "$COVER_NAME" != "$ACTUAL" ]; then
+    echo "⚠️  site/src/data/podcast-cover.json says '$COVER_NAME' but $COVER hashes to '$ACTUAL'." >&2
+    echo "    Re-run scripts/build_podcast_cover.py and commit the site data." >&2
+    exit 3
+  fi
+
+  aws s3 cp $DRY "$COVER" "s3://${S3_BUCKET}/audio/${COVER_NAME}" \
     --content-type "image/png" \
-    --cache-control "public, max-age=3600" \
+    --cache-control "public, max-age=31536000, immutable" \
     --no-progress
 else
   echo "⚠️  no cover at $COVER — run scripts/build_podcast_cover.py. The feed REQUIRES it:" >&2

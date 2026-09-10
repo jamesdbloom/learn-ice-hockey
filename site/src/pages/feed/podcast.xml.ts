@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { getDoc } from '../../data/nav';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, PODCAST_OWNER_EMAIL } from '../../consts';
 import podcast from '../../data/podcast.json';
+import coverData from '../../data/podcast-cover.json';
 
 /**
  * The PODCAST feed. Hand-rolled, like rss.xml.ts and the sitemap, so the site
@@ -115,7 +116,25 @@ const PUB_DATE = 'Mon, 08 Sep 2026 00:00:00 +0000';
 
 export const GET: APIRoute = ({ site }) => {
   const origin = (site ?? new URL('http://localhost/')).origin;
-  const cover = `${origin}/audio/cover.png`;
+  // ⚠️ THE COVER URL CARRIES A CONTENT HASH, AND IT MUST NEVER BE REPLACED IN PLACE.
+  //
+  // Two caches sit between this feed and a listener's eyes, and an invalidation only
+  // clears the first.
+  //   1. CloudFront. `.github/workflows/deploy.yml` excludes `audio/*` from BOTH sync
+  //      passes and only pass 2's log feeds the invalidation, so NOTHING under /audio/
+  //      is ever invalidated by a deploy. Measured 10 September 2026: after the cover
+  //      object was replaced, the edge served the OLD bytes with `Age: 71651` against
+  //      its own `max-age=3600` — twenty hours past its stated TTL.
+  //   2. ⚠️ APPLE, and this is the one that matters. Apple caches show artwork against
+  //      the URL it fetched it from. A cover replaced in place can keep showing the old
+  //      image in the directory after the origin is correct, and unpicking that once a
+  //      show is LISTED is slow.
+  //
+  // So a new cover is a NEW URL. `scripts/build_podcast_cover.py` hashes the PNG it
+  // writes and emits the served name into `site/src/data/podcast-cover.json`; this feed
+  // and `scripts/upload_podcast_audio.sh` both read that one file, so the three cannot
+  // drift. ⚠️ DO NOT hardcode `cover.png` back into this line to "simplify" it.
+  const cover = `${origin}/audio/${coverData.file}`;
 
   const items = podcast.episodes
     .slice()

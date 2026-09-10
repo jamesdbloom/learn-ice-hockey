@@ -53,6 +53,7 @@ THIS IS A PLACEHOLDER THE OWNER CAN REPLACE. Drop a 3000x3000 PNG or JPG at
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import pathlib
@@ -89,6 +90,7 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 RINK = REPO / "site" / "src" / "data" / "rink.json"
 OUT = REPO / "podcasts_web" / "cover.png"
 OVERRIDE = REPO / "podcasts" / "cover.png"
+COVER_DATA = REPO / "site" / "src" / "data" / "podcast-cover.json"
 
 SIZE = 3000
 
@@ -340,10 +342,33 @@ def main() -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     img.save(OUT, "PNG", optimize=True)
 
+    # ⚠️ THE SERVED NAME CARRIES A CONTENT HASH, AND THAT IS NOT DECORATION.
+    #     `audio/cover.png` was served by CloudFront for TWENTY HOURS after the object
+    #     behind it changed — `Age: 71651` against its own `max-age=3600` — because
+    #     `.github/workflows/deploy.yml` excludes `audio/*` from both sync passes and
+    #     only pass 2's log feeds the invalidation. NOTHING UNDER /audio/ IS EVER
+    #     INVALIDATED BY A DEPLOY. The nine .m3u playlists have the same problem.
+    # ⚠️ AND APPLE IS THE REAL REASON. Apple caches show artwork against the URL it
+    #     fetched it from. A cover replaced in place can keep showing the old image in
+    #     the directory long after the origin is correct, and unpicking that after a
+    #     show is listed is slow. A new cover must therefore be a NEW URL.
+    # So the hash is emitted into tracked site data, `site/src/pages/feed/podcast.xml.ts`
+    # reads it, and `scripts/upload_podcast_audio.sh` uploads to that key as immutable.
+    # The three cannot drift, because they all derive from this one file.
+    digest = hashlib.sha256(OUT.read_bytes()).hexdigest()[:8]
+    served = f"cover-{digest}.png"
+    COVER_DATA.parent.mkdir(parents=True, exist_ok=True)
+    COVER_DATA.write_text(json.dumps({
+        "file": served,
+        "sha256_8": digest,
+        "bytes": OUT.stat().st_size,
+    }, indent=2) + "\n")
+
     w, h = Image.open(OUT).size
     assert (w, h) == (SIZE, SIZE), f"wrote {w}x{h}, expected square {SIZE}"
     assert Image.open(OUT).mode == "RGB", "alpha channel present — both platforms refuse it"
     print(f"cover: {OUT.relative_to(REPO)}  {w}x{h}  {OUT.stat().st_size/1e6:.2f} MB  RGB, no alpha")
+    print(f"  served as audio/{served}  ->  {COVER_DATA.relative_to(REPO)}")
     print("  geometry from rink.json, by explicit path:")
     for k, v in read.items():
         print(f"    {k} = {v:g}")
