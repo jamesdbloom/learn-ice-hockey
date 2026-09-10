@@ -54,6 +54,7 @@ THIS IS A PLACEHOLDER THE OWNER CAN REPLACE. Drop a 3000x3000 PNG or JPG at
 from __future__ import annotations
 
 import json
+import math
 import pathlib
 import sys
 
@@ -105,6 +106,20 @@ MUTED = (131, 139, 150)     # --text-faint (dark)
 # arm's length; on a podcast tile shown at 55px it vanished entirely. Lifted until
 # the circle survives the thumbnail — CHECK IT AT 55px, not at full size.
 LINE = (62, 71, 84)
+
+# ⚠️ THE RINK'S OWN COLOURS, AND THEY ARE THE ONE PLACE THIS COVER IS NOT THE SITE
+#     PALETTE. A rink is red-lined and blue-lined; drawing it in `--text-faint` grey
+#     reads as a diagram of something, not as ice. These are muted well below the
+#     real thing so the cover still belongs to the site: a broadcast-saturation red
+#     on this ink background vibrates, and both platforms shrink it to 110px where
+#     saturated thin lines alias into mush.
+# ⚠️ CREASE IS FILLED, NOT OUTLINED, ON PURPOSE. At thumbnail size the filled creases
+#     and the nine faceoff spots are the only marks that survive; every thin line
+#     goes first. If you make the crease an outline, the cover stops reading as a
+#     rink the moment it is small, which is the only size that matters in a podcast app.
+RED = (196, 72, 72)
+BLUE = (58, 104, 176)
+CREASE = (38, 74, 120)
 
 TITLE = "Ice Hockey"
 SUBTITLE = "Learning to Play the Game"
@@ -179,71 +194,148 @@ def main() -> int:
         return 0
 
     rink = rink_metrics()
-    circle_r_ft = at(rink, "faceoff.circle_radius")   # 15 ft
-    hash_len_ft = at(rink, "faceoff.hash_length")     # 2 ft
-    rink_w_ft = at(rink, "sheet.width")               # 85 ft — NOT goal.width
+    read: dict[str, float] = {}
+
+    def g(path: str) -> float:
+        """`at`, but recording every path so the run can print what it actually read."""
+        v = at(rink, path)
+        read[path] = v
+        return v
+
+    # ---- the sheet, by name -------------------------------------------------
+    L = g("sheet.length")                       # 200
+    W = g("sheet.width")                        # 85 — NOT goal.width
+    CORNER = g("sheet.corner_radius")           # 28
+    GOAL_X = g("lines.goal_line_x")             # 89
+    BLUE_X = g("lines.blue_line_x")             # 25
+    EZ_X = g("faceoff.end_zone_dot_x")          # 69
+    DOT_Y = g("faceoff.dot_y")                  # 22
+    NZ_X = g("faceoff.neutral_dot_x")           # 20
+    CIRC_R = g("faceoff.circle_radius")         # 15
+    HASH_L = g("faceoff.hash_length")           # 2
+    HASH_SEP = g("faceoff.hash_separation")     # 5.583 — the NHL's 5 ft 7 in
+    CR_W = g("goal.crease_width")               # 8
+    CR_R = g("goal.crease_arc_radius")          # 6
+    POST_Y = g("goal.post_y")                   # 3
+    TZ_GL = g("trapezoid.width_at_goal_line") / 2       # 11
+    TZ_EB = g("trapezoid.width_at_end_boards") / 2      # 14
+
+    # ⚠️ CROSS-CHECK THE ONE HARDCODED FIGURE AGAINST THE DATA. HASH_GATE_HALF_FT
+    #     predates `faceoff.hash_separation` being in rink.json. Keeping both and
+    #     asserting they agree is cheaper than deleting one and finding out later
+    #     that the other was the stale copy.
+    assert abs(HASH_SEP / 2 - HASH_GATE_HALF_FT) < 0.01, (
+        f"rink.json says the hash gate is {HASH_SEP/2:.3f} ft either side of the dot; "
+        f"HASH_GATE_HALF_FT says {HASH_GATE_HALF_FT}. One of them is stale.")
 
     img = Image.new("RGB", (SIZE, SIZE), INK)   # RGB, so no alpha channel. Required.
     d = ImageDraw.Draw(img)
 
     # ---- composition --------------------------------------------------------
-    # ⚠️ THE FIRST VERSION PUT THE TYPE OVER THE CIRCLE'S CENTRE and drew a slab
-    # behind it — which hid the centre dot and the centre line completely, leaving
-    # two disconnected arcs that read as a mistake rather than as a faceoff circle.
-    # The geometry now sits ABOVE the type and nothing overlaps, so no slab is
-    # needed and every mark drawn is a mark you can see.
-    px_per_ft = SIZE / (rink_w_ft * 0.80)
-    r = circle_r_ft * px_per_ft
-    cx = SIZE / 2
-    cy = SIZE * 0.335
+    # The whole sheet, drawn to scale, above the type. Nothing overlaps: the
+    # assertion at the end enforces that, because two earlier compositions hid
+    # geometry behind the title and both looked fine until rendered.
+    RINK_FRAC = 0.94            # of the canvas width
+    Y_CENTRE = 0.335            # of the canvas height
+    ppf = (SIZE * RINK_FRAC) / L
 
-    # The centre line, behind the circle, stopping short of the edges so it reads
-    # as a line on ice rather than as a border.
-    d.line([SIZE * 0.06, cy, SIZE * 0.94, cy], fill=LINE, width=12)
-    # The faceoff circle.
-    d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=LINE, width=16)
-    # Hash marks: four, outside the circle, 2 ft long from the data.
-    # ⚠️ THE GATE IS A REAL MEASUREMENT, NOT A FRACTION OF THE RADIUS. An earlier
-    # version used `r * 0.19`, which happened to land near the right answer and
-    # would have drifted the moment the radius changed. `site/src/diagrams/faceoffs.mjs`
-    # records it: the four hash marks are 2 ft long, run parallel to the goal line
-    # at the outer edge of BOTH sides of the circle, and each pair is 5 ft 7 in
-    # apart — "a gate 5.58 ft wide in x, at x = 66.2 and x = 71.8", i.e. 2.79 ft
-    # either side of the dot. Drawn from that, so the cover and the corpus's own
-    # faceoff diagram cannot disagree.
-    hash_len = hash_len_ft * px_per_ft
-    hash_off = HASH_GATE_HALF_FT * px_per_ft
-    for sx in (-1, 1):
+    def X(x: float) -> float:
+        return SIZE / 2 + x * ppf
+
+    def Y(y: float) -> float:
+        return SIZE * Y_CENTRE + y * ppf
+
+    stroke = lambda f, floor: max(floor, int(ppf * f))
+
+    # Creases first, filled, so everything else draws over them. ⚠️ THE CREASE IS
+    # 8 FT WIDE, NOT 12: `goal.crease_arc_radius` is the ARC, not the width. An
+    # earlier draft drew a full 6 ft semicircle and made the crease half again too
+    # wide. The corpus's own built SVG path is the check:
+    #     M 89 -4  L 84.5 -4  A 6 6 0 0 0 84.5 4  L 89 4  Z
+    # ⚠️ AND THE ARC SWEEPS THROUGH 180 DEG, NOT THROUGH 0. Interpolating the short
+    #     way round bulges the crease BEHIND the goal line, into the trapezoid.
+    half = CR_W / 2
+    side_len = math.sqrt(max(CR_R ** 2 - half ** 2, 0.0))
+    theta = math.atan2(half, side_len)
+    for s in (-1, 1):
+        pts = [(s * GOAL_X, -half), (s * (GOAL_X - side_len), -half)]
+        a0, a1 = math.pi + theta, math.pi - theta
+        steps = 40
+        for i in range(steps + 1):
+            a = a0 + (a1 - a0) * i / steps
+            pts.append((s * (GOAL_X + CR_R * math.cos(a)), CR_R * math.sin(a)))
+        pts += [(s * (GOAL_X - side_len), half), (s * GOAL_X, half)]
+        d.polygon([(X(px), Y(py)) for px, py in pts], fill=CREASE)
+
+    # Boards, with the real corner radius.
+    d.rounded_rectangle([X(-L / 2), Y(-W / 2), X(L / 2), Y(W / 2)],
+                        radius=CORNER * ppf, outline=PAPER, width=stroke(0.9, 8))
+
+    # The trapezoid, behind each goal line. ⚠️ Rule 1.8 figures — rink.json warns in
+    # terms NEVER to take these from Rule 27.8, which is stale pre-2014 wording.
+    for s in (-1, 1):
         for sy in (-1, 1):
-            x = cx + sx * hash_off
-            y0 = cy + sy * r
-            d.line([x, y0, x, y0 + sy * hash_len], fill=LINE, width=16)
-    # The centre dot, in accent — the one spot of colour, and the only thing on
-    # the cover that is exactly where the rink says it is.
-    dot = r * 0.085
-    d.ellipse([cx - dot, cy - dot, cx + dot, cy + dot], fill=ACCENT)
+            d.line([X(s * GOAL_X), Y(sy * TZ_GL), X(s * L / 2), Y(sy * TZ_EB)],
+                   fill=RED, width=stroke(0.42, 4))
+
+    # Goal lines, and the goals behind them.
+    for s in (-1, 1):
+        d.line([X(s * GOAL_X), Y(-W / 2 * 0.86), X(s * GOAL_X), Y(W / 2 * 0.86)],
+               fill=RED, width=stroke(0.42, 4))
+        gx0, gx1 = sorted((X(s * GOAL_X), X(s * (GOAL_X + 4))))
+        d.rectangle([gx0, Y(-POST_Y), gx1, Y(POST_Y)], outline=PAPER, width=stroke(0.42, 4))
+
+    # Blue lines and the centre red.
+    for s in (-1, 1):
+        d.line([X(s * BLUE_X), Y(-W / 2), X(s * BLUE_X), Y(W / 2)], fill=BLUE, width=stroke(1.1, 10))
+    d.line([X(0), Y(-W / 2), X(0), Y(W / 2)], fill=RED, width=stroke(0.9, 8))
+
+    # Circles: centre, and one at each end-zone dot.
+    d.ellipse([X(-CIRC_R), Y(-CIRC_R), X(CIRC_R), Y(CIRC_R)], outline=BLUE, width=stroke(0.42, 4))
+    for s in (-1, 1):
+        for sy in (-1, 1):
+            cx, cy = X(s * EZ_X), Y(sy * DOT_Y)
+            d.ellipse([cx - CIRC_R * ppf, cy - CIRC_R * ppf, cx + CIRC_R * ppf, cy + CIRC_R * ppf],
+                      outline=RED, width=stroke(0.42, 4))
+            # Hash marks: four per circle, HASH_L long, HASH_SEP apart, running
+            # outward from the circle toward and away from the boards.
+            for hx in (-HASH_SEP / 2, HASH_SEP / 2):
+                for hs in (-1, 1):
+                    d.line([X(s * EZ_X + hx), Y(sy * DOT_Y + hs * CIRC_R),
+                            X(s * EZ_X + hx), Y(sy * DOT_Y + hs * (CIRC_R + HASH_L))],
+                           fill=RED, width=stroke(0.34, 3))
+
+    # The nine faceoff spots. These and the filled creases are what survive a
+    # 110px podcast-app thumbnail; every thin line goes first.
+    spot_r = 1.6 * ppf
+    spots = [(0.0, 0.0)]
+    spots += [(s * EZ_X, sy * DOT_Y) for s in (-1, 1) for sy in (-1, 1)]
+    spots += [(s * NZ_X, sy * DOT_Y) for s in (-1, 1) for sy in (-1, 1)]
+    for sx, sy in spots:
+        d.ellipse([X(sx) - spot_r, Y(sy) - spot_r, X(sx) + spot_r, Y(sy) + spot_r],
+                  fill=BLUE if (sx, sy) == (0.0, 0.0) else RED)
 
     # ---- type ---------------------------------------------------------------
-    f_title = font(FACES_BOLD, 330)
-    f_sub = font(FACES, 124)
-    f_foot = font(FACES, 74)
+    f_title = font(FACES_BOLD, 300)
+    f_sub = font(FACES, 116)
+    f_foot = font(FACES, 72)
 
     def centred(text, fnt, y, fill):
         l, t, rr, b = d.textbbox((0, 0), text, font=fnt)
         d.text(((SIZE - (rr - l)) / 2 - l, y), text, font=fnt, fill=fill)
 
-    centred(TITLE, f_title, SIZE * 0.605, PAPER)
-    centred(SUBTITLE, f_sub, SIZE * 0.775, ACCENT)
-    centred(FOOT, f_foot, SIZE * 0.895, MUTED)
+    title_top = SIZE * 0.635
+    centred(TITLE, f_title, title_top, PAPER)
+    centred(SUBTITLE, f_sub, SIZE * 0.795, ACCENT)
+    centred(FOOT, f_foot, SIZE * 0.90, MUTED)
 
-    # ⚠️ ASSERT THE COMPOSITION RATHER THAN EYEBALLING IT. The first two versions
-    # both hid part of the geometry behind the type — once the centre dot and line,
-    # once the lower pair of hash marks — and both looked fine until rendered.
-    circle_bottom = cy + r + hash_len
-    title_top = SIZE * 0.605
-    assert circle_bottom < title_top, (
-        f"the type overlaps the rink geometry: circle+hash reaches {circle_bottom:.0f}px, "
-        f"title starts at {title_top:.0f}px. Every mark drawn must be visible.")
+    # ⚠️ ASSERT THE COMPOSITION RATHER THAN EYEBALLING IT. Two earlier versions hid
+    # geometry behind the type — once the centre dot and line, once the lower hash
+    # marks — and both looked fine until rendered.
+    rink_bottom = Y(W / 2) + stroke(0.9, 8) / 2
+    assert rink_bottom < title_top, (
+        f"the type overlaps the rink: the boards reach {rink_bottom:.0f}px, "
+        f"the title starts at {title_top:.0f}px. Every mark drawn must be visible.")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     img.save(OUT, "PNG", optimize=True)
@@ -252,8 +344,9 @@ def main() -> int:
     assert (w, h) == (SIZE, SIZE), f"wrote {w}x{h}, expected square {SIZE}"
     assert Image.open(OUT).mode == "RGB", "alpha channel present — both platforms refuse it"
     print(f"cover: {OUT.relative_to(REPO)}  {w}x{h}  {OUT.stat().st_size/1e6:.2f} MB  RGB, no alpha")
-    print(f"  geometry from rink.json: faceoff.circle_radius={circle_r_ft:g} ft · "
-          f"faceoff.hash_length={hash_len_ft:g} ft · sheet.width={rink_w_ft:g} ft")
+    print("  geometry from rink.json, by explicit path:")
+    for k, v in read.items():
+        print(f"    {k} = {v:g}")
     return 0
 
 
