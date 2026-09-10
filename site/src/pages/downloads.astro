@@ -25,8 +25,8 @@ const epubs = [
 ];
 ---
 
-{/* bare: this is a standalone page with no sidebar, so the header must link
-    home rather than to #site-nav — same as index.astro and 404.astro. */}
+{/* bare: a standalone page with no sidebar and no table of contents, so the
+    shell is a single block column — same as index.astro and 404.astro. */}
 <Base
   title="Downloads"
   description="Take the corpus with you — EPUB for offline reading, and the markdown source."
@@ -124,6 +124,35 @@ const epubs = [
         address into your app's &ldquo;add a show by URL&rdquo; box. Episodes are
         numbered rather than dated, so your app will play them in the order the
         corpus is meant to be read.
+      </p>
+      {/*
+        The Spotify show, as a LINK and not an embed. The owner chose that trade on
+        9 September 2026 with the cost measured rather than assumed — an embed is a
+        third-party script, and this site's zero-off-origin-requests property is
+        checked by review. A link costs nothing: nothing is fetched until a reader
+        chooses to leave. See the same reasoning in AudioPlayer.astro.
+
+        rel/target are set by hand here because the pipeline that adds them
+        (rehype-corpus.mjs, "external links") only runs over markdown from
+        content/, never over a page in src/pages.
+
+        ⚠️ Registered in project/verification/link_baseline.tsv so link-check.yml
+        notices if it dies. A dead "listen on Spotify" link is exactly the rot that
+        file exists to catch. Apple Podcasts is NOT here yet — deliberately, because
+        no show URL for it existed when this was written, and a guessed one would
+        have been a fabricated citation. Add it beside Spotify when there is one.
+      */}
+      <p>
+        {/*
+          ⚠️ THE ANCHOR MUST STAY INLINE WITH THE WORDS EITHER SIDE OF IT. Written across
+          several lines for readability, it rendered as "The show is onSpotifytoo" — the
+          HTML compressor drops the whitespace-only tail of the preceding text node and the
+          head of the following one, so nothing supplies the gap. It was the only place in
+          the whole built site where prose was glued to a link. Do not fix that with a CSS
+          margin; keep the tag inline, or use {' '}.
+        */}
+        The show is on <a class="external" href="https://open.spotify.com/show/6efEshtC6EDwLOVGuN1lKH" rel="noopener noreferrer" target="_blank">Spotify</a> too, which needs no feed
+        address — follow that link, or search for it in the app.
       </p>
 
       <h3>Playlists</h3>

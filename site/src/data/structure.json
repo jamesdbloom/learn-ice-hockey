@@ -11,20 +11,12 @@
       ]
     },
     {
-      "id": "reading-diagrams",
-      "title": "Reading the Diagrams",
-      "tagline": "How to read the pictures",
-      "blurb": "The rink diagrams in this guide use a notation borrowed from published coaching material. Five minutes here makes every diagram in the rest of the guide readable at a glance.",
-      "docs": [
-        "reading-diagrams/reading_ice_hockey_diagrams"
-      ]
-    },
-    {
       "id": "foundation",
       "title": "Foundation",
       "tagline": "Read these first",
-      "blurb": "What everything is called, what is legal, and the words you shout. The canonical references the rest of the corpus links back to.",
+      "blurb": "How to read the pictures, what everything is called, what is legal, and the words you shout. The canonical references the rest of the corpus links back to.",
       "docs": [
+        "reading-diagrams/reading_ice_hockey_diagrams",
         "foundation/rink_map_and_glossary",
         "foundation/rules_primer",
         "foundation/uk_rules",

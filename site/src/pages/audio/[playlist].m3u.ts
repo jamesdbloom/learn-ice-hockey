@@ -44,9 +44,33 @@ function assertSingleLine(text: string, what: string): string {
   return text;
 }
 
+/** ⚠️ An episode's `section` is a STRING STORED IN podcast.json, written there by
+ *  scripts/build_podcast_audio.py from the layer title in structure.json. The filter
+ *  below matches it against the layer title, so regrouping a document in
+ *  structure.json WITHOUT regenerating podcast.json leaves an episode whose section
+ *  names a layer that no longer exists — and it then silently appears in no section
+ *  playlist at all, only in `all`. That is exactly what happened when "Reading the
+ *  Diagrams" stopped being a layer: nothing failed, nothing warned, and the episode
+ *  was simply missing. The audio is gitignored and uploaded out of band, so
+ *  regenerating podcast.json is not always possible — hence a check here instead. */
+function assertSectionsAreRealLayers(): void {
+  const titles = new Set(LAYERS.map((l) => l.title));
+  const orphans = podcast.episodes.filter((ep) => !titles.has(ep.section));
+  if (orphans.length > 0) {
+    throw new Error(
+      `m3u: ${orphans.length} episode(s) name a section that is not a layer in structure.json, ` +
+        `so they would appear in no section playlist: ` +
+        orphans.map((ep) => `${ep.doc_id} -> "${ep.section}"`).join(', ') +
+        `. Fix the "section" field in podcast.json (or re-run scripts/build_podcast_audio.py).`,
+    );
+  }
+}
+
 export const GET: APIRoute = ({ params, site }) => {
   const origin = (site ?? new URL('http://localhost/')).origin;
   const id = params.playlist!;
+
+  assertSectionsAreRealLayers();
 
   const layer = LAYERS.find((l) => l.id === id);
   const episodes = podcast.episodes

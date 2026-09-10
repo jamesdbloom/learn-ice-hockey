@@ -470,7 +470,12 @@ whichever one wrote first.
 ## Repository layout
 
 ```
-content/            The corpus. 37 documents in eight sections. The product.
+content/            The corpus. 37 documents in eight DIRECTORIES. The product.
+                    ⚠️ Eight directories, SEVEN sections on the site, and both numbers are
+                    right. site/src/data/structure.json groups reading-diagrams/ inside
+                    Foundation, so the nav and the home page show seven. check_counts.py
+                    counts DIRECTORIES and will keep saying eight — do not "fix" either
+                    number to match the other.
 project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds remaining work
                     plus the standing guidance for doing it — method notes, environment
                     facts, gate conditions. **No completed items:** when work closes it

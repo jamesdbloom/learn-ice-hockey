@@ -387,6 +387,28 @@ Angling as pure steering without contact is legal everywhere, which is probably 
 `check_absolutes.py` passes it.** Decide whether the tool should see this shape, or whether the sentence
 should say what it means.
 
+### ⚠️ OPEN — the `/reading-diagrams/` redirect paints a full-screen WHITE interstitial, in dark theme too
+
+Measured 10 September 2026 by screencast at ~1 frame/15ms, 1440x900, both themes. Astro's static redirect
+template carries no charset, no `lang` and no styling, so the browser paints an unstyled white page with
+Times New Roman *"Redirecting from /reading-diagrams/ to /foundation/"* before the second request lands.
+Average frame colour in the dark run: `(29,32,37)` → **`(255,255,255)`** → `(28,31,35)`.
+
+**It flashes. It does not stall and it does not look broken** — the whole event was ~30ms on localhost, and
+⚠️ **localhost is as short as it will ever be**; on a real connection the interstitial is visible for the
+full round trip, as a full-screen white flash for a dark-theme reader.
+
+**Two things that were expected to be wrong and are not**, both verified: there is **no back-button trap**
+(the 0-second refresh replaces the history entry rather than pushing one — one `history.back()` from
+`/downloads/` reaches `/foundation/`, two reaches `/`), and **nothing links to it** — a grep of the whole of
+`dist` for `href="/reading-diagrams/"` returns zero, and it is correctly absent from the sitemap. **It fires
+only for a bookmark, an inbound external link, or a human trimming the URL** — which is the case
+`astro.config.mjs` says it exists for.
+
+**Accepted for now on that ground.** If it is fixed, give the redirect stub a background matching the
+`theme-init` inline script the rest of the site uses. ⚠️ **Do NOT add a delay or a "click here" fallback** —
+both make it worse for the only reader who ever sees it.
+
 ### ⚠️⚠️⚠️ STANDING — "REFUTE THE BRIEF" IS AIMED AT AGENTS, AND THE DISPATCHER IS EXEMPT FROM NOTHING
 
 ⚠️ **A citation copied out of an AGENT'S REPORT is exactly as unverified as a figure copied out of a

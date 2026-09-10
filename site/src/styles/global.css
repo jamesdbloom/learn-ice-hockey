@@ -542,8 +542,8 @@ pre code .line {
 
   /*
     The whole row goes, not just the heading: on a wide screen this nav is the
-    sticky left rail, the header's Contents button does not move the page, and
-    a "back to top" for a jump that never happened would be noise.
+    sticky left rail, always in view without scrolling, so a "back to top"
+    inside it would offer to undo a trip the reader never made.
   */
   .sidebar__top {
     display: none;
@@ -905,9 +905,10 @@ a.chip:hover {
   the first two lines of the section sat in dead space under a 56px header.
 
   `scroll-padding-top` on the scroll container is the one that was kept because
-  it covers every target, not just headings — #main for the skip link, #site-nav
-  for the header's Contents button, and the .layer-section blocks on the home
-  page, none of which carry a scroll-margin of their own.
+  it covers every target, not just headings — #main for the skip link, the
+  .layer-section blocks on the home page, and #site-nav, which nothing in the
+  chrome points at today but which stays addressable, none of which carry a
+  scroll-margin of their own.
 */
 .prose h2,
 .prose h3,
@@ -1704,6 +1705,19 @@ figcaption .warn-inline {
 .home-hero p {
   color: var(--text-muted);
   font-size: 1.1rem;
+}
+
+/* The lede's three contrasts. Same muted colour and measure as the paragraphs
+   either side, so the list reads as part of the pitch rather than as content. */
+.home-hero__layers {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.home-hero__layers li {
+  margin: 0 0 0.4rem;
 }
 
 .home-cta {

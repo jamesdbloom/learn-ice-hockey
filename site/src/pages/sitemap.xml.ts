@@ -6,9 +6,12 @@ export const GET: APIRoute = ({ site }) => {
   const origin = (site ?? new URL('http://localhost/')).origin;
   // /offline/ is deliberately absent — it is a service-worker fallback, not a
   // page anyone should reach from a search result.
-  // The eight section hubs are listed before the documents they contain. They
-  // are real pages now (src/pages/[layer]/index.astro); while they were not, a
-  // sitemap naming them would have been advertising eight 404s to a crawler.
+  // The section hubs are listed before the documents they contain. They are
+  // real pages now (src/pages/[layer]/index.astro); while they were not, a
+  // sitemap naming them would have been advertising 404s to a crawler.
+  // Driven off LAYERS rather than a list, so a merged or renamed layer leaves
+  // the sitemap automatically — which is what you want, because the URL it
+  // leaves behind becomes a redirect, and a redirect must never be sitemapped.
   const paths = [
     '/',
     '/search/',

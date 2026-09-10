@@ -2,12 +2,6 @@
 import ThemeToggle from './ThemeToggle.astro';
 import { SITE_SHORT_TITLE } from '../consts';
 
-interface Props {
-  /** Where the "Contents" shortcut points. Document pages have an in-page nav. */
-  navHref?: string;
-}
-
-const { navHref = '/' } = Astro.props;
 ---
 
 <header class="site-header">
@@ -21,7 +15,25 @@ const { navHref = '/' } = Astro.props;
   </a>
   <span class="site-header__spacer"></span>
   <div class="site-header__actions">
-    <a class="icon-button" href={navHref}>Contents</a>
+    {/*
+      Always the home page, on every page type. It used to take a `navHref`
+      prop and point at #site-nav on the document and hub pages, which made
+      one button do three different things: a page load on the bare pages, a
+      jump to the bottom of the document below 60rem, and above 60rem a
+      barely-perceptible nudge of the text and nothing else — reported by a
+      reader, and the reason the prop is gone. ⚠️ THE NUDGE'S MECHANISM WAS
+      NEVER MEASURED IN A BROWSER, only read off the CSS: the rail is sticky
+      at `top: var(--header-h)` while <html> carries
+      `scroll-padding-top: calc(var(--header-h) + var(--player-h) + 1rem)`,
+      so the target can never clear the padding and the scroll stops a few
+      pixels in. Plausible, unverified — do not cite it as measured. What is
+      certain is that a cross-page link cannot scroll a fragment at all, so
+      the symptom cannot survive this change whatever caused it.
+
+      The deeper reason is not the nudge: a reader cannot learn a button that
+      behaves by breakpoint. Home is the contents.
+    */}
+    <a class="icon-button" href="/">Contents</a>
     <a class="icon-button" href="/search/" rel="search">
       <span aria-hidden="true">⌕</span>
       {/*

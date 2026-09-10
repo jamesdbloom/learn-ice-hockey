@@ -16,14 +16,19 @@ const { currentId } = Astro.props;
 */}
 <nav class="sidebar" id="site-nav" aria-label="Corpus contents">
   {/*
-    The header's "Contents" button points at #site-nav. On a wide screen that
-    is the sticky left rail and the jump is invisible. Below 60rem the grid
-    collapses and this nav is the last thing on the page, so the same tap threw
-    the reader 98% of the way down a 65,000px document — measured on
-    on_ice_communication at 375x812 — and there was nothing on screen to get
-    back with. This row lands under the sticky header at the same moment the
-    nav does, so the way back arrives with the jump. Hidden on wide screens,
-    where there is no jump to undo.
+    Nothing jumps here any more: the header's "Contents" button is a plain
+    link to the home page on every page type. It used to point at #site-nav,
+    and below 60rem — where the grid collapses and this nav is the last thing
+    on the page — that tap threw the reader 98% of the way down a 100,765px
+    document, measured on on_ice_communication at 375x812 on 10 September 2026,
+    with nothing on screen to get back with. ⚠️ THAT FIGURE READ 65,000px UNTIL
+    IT WAS RE-MEASURED AND FOUND 55% LOW — a page height is a property of a
+    document that keeps growing, so it goes stale silently and no checker can
+    see it. The 98% has held; the absolute number is the perishable half, which
+    is why it now carries a date. This row was the way back. It stays because the
+    trip is still available on foot: below 60rem a reader who scrolls to the
+    contents has scrolled the whole document to reach it. Hidden on wide
+    screens, where the rail is sticky and never has to be scrolled to.
   */}
   <div class="sidebar__top">
     <p class="sidebar__heading">Contents</p>

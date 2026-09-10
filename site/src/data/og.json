@@ -17,23 +17,17 @@
     "height": 630,
     "alt": "Getting Started"
   },
-  "/reading-diagrams/": {
-    "image": "/og/reading-diagrams.png",
+  "/foundation/": {
+    "image": "/og/foundation.png",
     "width": 1200,
     "height": 630,
-    "alt": "Reading the Diagrams"
+    "alt": "Foundation"
   },
   "/reading-diagrams/reading_ice_hockey_diagrams/": {
     "image": "/og/reading-diagrams__reading_ice_hockey_diagrams.png",
     "width": 1200,
     "height": 630,
     "alt": "Reading Ice Hockey Diagrams"
-  },
-  "/foundation/": {
-    "image": "/og/foundation.png",
-    "width": 1200,
-    "height": 630,
-    "alt": "Foundation"
   },
   "/foundation/rink_map_and_glossary/": {
     "image": "/og/foundation__rink_map_and_glossary.png",

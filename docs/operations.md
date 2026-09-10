@@ -134,6 +134,48 @@ account.
    have it silently missing from navigation.
 3. `npm run build` locally, then push.
 
+### Move or rename a document, or regroup a section
+
+**Every URL that stops being generated needs a redirect. No exceptions.** The
+site has been indexed and linked to from outside it; a moved page that 404s
+loses whatever that URL had earned, and a reader following an old link has no
+way to guess the new one.
+
+Two different things can move, and only one of them is obvious:
+
+1. **The document's own URL.** Hrefs come from the content collection id — the
+   path under `content/`, see `site/src/data/nav.ts` — so a document's URL
+   changes when the FILE moves, not when its section grouping changes. Moving
+   the file also means fixing every `../section/file.md` link in `content/`
+   that points at it; `check_links.py` will find them.
+2. **A section hub.** `site/src/pages/[layer]/index.astro` generates one hub per
+   layer in `structure.json`. Delete or merge a layer and its hub URL stops
+   existing, *even though the documents underneath it have not moved*. This is
+   the one people miss. It happened when "Reading the Diagrams" was merged into
+   Foundation: the document stayed at `/reading-diagrams/…/`, so the hub at
+   `/reading-diagrams/` was the likeliest URL for a reader to trim back to, and
+   it had just been deleted.
+
+⚠️ **Moving the FILE is a different and much more expensive decision than
+regrouping it, because of the podcast.** An episode's guid is
+`learn-ice-hockey:<doc_id>` and `feed/podcast.xml.ts` builds it that way on
+purpose — Apple requires a guid never to change, so it is pinned to "the one
+thing about an episode that does not move". Move the file and the guid moves
+with it, and a live subscriber's client sees the old episode vanish and a new
+one arrive. The per-layer `.m3u` playlists and the sitemap, by contrast, are
+generated from `LAYERS` and need no attention at all: regrouping a document
+moves it between playlists by itself.
+
+Add the redirect to `redirects` in `site/astro.config.mjs`. ⚠️ **Under static
+output Astro emits these as an HTML page carrying a meta refresh and a canonical
+link, not an HTTP 301** — it works for a human following an old link, and search
+engines do honour it, but it is not a real redirect. If one is ever needed as a
+true 301 it belongs in the CloudFront rewrite in `infra/`.
+
+`sitemap.xml` needs no edit: it enumerates `LAYERS` and `READING_ORDER`, so a
+removed hub drops out on its own — which is correct, because a redirect must
+never appear in a sitemap.
+
 ---
 
 ## Troubleshooting

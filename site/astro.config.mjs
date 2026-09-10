@@ -28,6 +28,23 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
 
+  /*
+    "Reading the Diagrams" used to be its own top-level layer, so /reading-diagrams/
+    was a built section hub. It is now a document inside Foundation, which means
+    [layer]/index.astro no longer generates that hub — but the document still lives at
+    /reading-diagrams/reading_ice_hockey_diagrams/, because hrefs come from the content
+    path (nav.ts) and the file did not move. A reader who trims that URL back a segment
+    would land on the 404 the hub pages were built to stop. So the URL stays, as a
+    redirect to the section the document is now in.
+
+    ⚠️ Static output emits this as an HTML page with a meta refresh and a canonical
+    link, NOT an HTTP 3xx. Good enough for a trimmed URL typed by a human; if this ever
+    needs to be a real 301 it belongs in the CloudFront rewrite, not here.
+  */
+  redirects: {
+    '/reading-diagrams/': '/foundation/',
+  },
+
   markdown: {
     // The remark/rehype processor rather than Astro 7's default, because the
     // corpus transforms are written against mdast/hast.

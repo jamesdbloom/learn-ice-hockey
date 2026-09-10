@@ -33,7 +33,7 @@ const { title, description, ogType, section, withToc = false, bare = false, hasP
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header navHref={bare ? '/' : '#site-nav'} />
+    <Header />
     <div class={bare ? 'shell shell--bare' : withToc ? 'shell shell--with-toc' : 'shell'}>
       <slot />
     </div>

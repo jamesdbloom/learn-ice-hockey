@@ -1,9 +1,17 @@
 ---
 /*
-  Section hub pages: /technique/, /systems/, /positions/ and the five others.
+  Section hub pages: /technique/, /systems/, /positions/ and the four others.
 
-  These eight URLs are the directories the documents already live in, and until
-  now every one of them returned the 404. That cost three separate things:
+  These URLs are the directories the documents already live in, and until they
+  were built every one of them returned the 404. That cost three separate things:
+
+  ⚠️ ONE DIRECTORY IS NO LONGER A HUB. content/reading-diagrams/ still holds a
+  document, but "Reading the Diagrams" stopped being a layer when it moved inside
+  Foundation, so this file does not generate /reading-diagrams/ any more. The
+  URL is kept alive as a redirect in astro.config.mjs; see the note there. A layer
+  merged into another one has to be given that treatment, or trimming the document's
+  URL back a segment reintroduces exactly the 404 described below.
+
 
   1. A reader who trimmed a URL back a segment — which people do — got an error
      page instead of the section they were trimming towards.
