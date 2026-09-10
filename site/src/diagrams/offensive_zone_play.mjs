@@ -623,7 +623,13 @@ const netFrontScreen = {
     // 20), goal.crease_width 8, crease_depth 6, crease_arc_radius 6 — and
     // rink.mjs's glyph radius 2.9 with its 0.75 outline and 1.95 halo strokes.
     // (79.5, 3)
-    { id: 'F', pos: 'F', at: { at: 'goal-line', dx: -9.5, dy: 3 }, label: 'edge of the paint' },
+    // ⚠️ LABEL: "outside the paint", NOT "edge of the paint". The edge of the paint IS the
+    // crease line, and CREASE_LINE_IS_THE_CREASE — imported into this very caption — says
+    // so: "outside the paint" means clear of the line too, not standing on it. The caption
+    // says "just outside the blue paint"; the label said stand on the one line the diagram
+    // exists to keep you off. The glyph is unmoved at (79.5, 3), 3.936 ft clear of the
+    // nearest crease boundary, so this is the words and not the position.
+    { id: 'F', pos: 'F', at: { at: 'goal-line', dx: -9.5, dy: 3 }, label: 'outside the paint' },
     { id: 'G', team: 'opp', pos: 'G', at: GOALIE },
   ],
 

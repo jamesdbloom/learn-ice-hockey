@@ -70,9 +70,30 @@ OVERLAP_THRESHOLD = 0.7
 #: label. Anchored to that adjacency rather than to a class, because the fill is
 #: an inline rgba() string with no stable hook.
 ZONE_RE = re.compile(
-    r'<polygon\s+points="(?P<points>[^"]+)"[^>]*/>\s*'
+    r'<polygon\s+points="(?P<points>[^"]+)"(?P<attrs>[^>]*)/>\s*'
     r'<text[^>]*>(?P<label>[^<]+)</text>'
 )
+
+#: A polygon with NEITHER fill NOR stroke draws nothing -- the renderer still
+#: emits it so that a <text> label lands at the vertex mean, which is how a
+#: module places a caption without shading anything.
+#: ⚠️  MEASURED 10 September 2026: counting these over-reported the zone total
+#:     and manufactured a "'goalmouth' vs 'no goalie' -- 100% the same ice" pair
+#:     out of one real zone and one invisible label carrier. A reviewer had to
+#:     open the module to find that NOTHING IS DRAWN there.
+#: ⚠️  BOTH SYNTAXES. The renderer emits ATTRIBUTES (`fill="none" stroke="none"`),
+#:     not a CSS style string -- a first version of this guard looked only for
+#:     `fill: none` and silently skipped nothing, which is a false pass in the shape
+#:     this whole file exists to prevent. Match either form.
+INVISIBLE = (
+    re.compile(r"""fill\s*[:=]\s*["']?\s*none""", re.I),
+    re.compile(r"""stroke\s*[:=]\s*["']?\s*none""", re.I),
+)
+
+
+def draws_nothing(attrs: str) -> bool:
+    """True when the polygon is a label anchor rather than a shaded region."""
+    return all(rx.search(attrs) for rx in INVISIBLE)
 
 
 def normalise(points: str) -> tuple[tuple[float, float], ...]:
@@ -85,6 +106,20 @@ def normalise(points: str) -> tuple[tuple[float, float], ...]:
     for pair in points.split():
         x, _, y = pair.partition(",")
         out.append((round(float(x), 2), round(float(y), 2)))
+    # ⚠️  ROTATE TO THE LEXICOGRAPHICALLY SMALLEST VERTEX. The same region written
+    #     from a different starting corner is the SAME REGION, but a raw tuple keys
+    #     as a different one. ⚠️  MEASURED 10 September 2026: 'home plate' was
+    #     reported as "drawn as more than one region" at IDENTICAL area and IDENTICAL
+    #     centre, and the two polygons turned out to be THE SAME SIX VERTICES in a
+    #     different rotation of the winding order. A permanent false positive, and a
+    #     reviewer spent a render proving it was nothing.
+    #     ⚠️  Rotation only, NOT reversal -- a polygon wound the other way round is
+    #     still the same ice, but a MIRRORED one has sign-flipped coordinates and must
+    #     keep reporting, because that is the legitimate other-end-of-the-rink case
+    #     this tool is documented to allow.
+    if out:
+        k = min(range(len(out)), key=lambda i: out[i])
+        out = out[k:] + out[:k]
     return tuple(out)
 
 
@@ -165,12 +200,19 @@ def main() -> int:
 
     by_label: dict[str, dict[tuple, list[str]]] = defaultdict(lambda: defaultdict(list))
     zones = 0
+    skipped = 0
     for svg in svgs:
         for m in ZONE_RE.finditer(svg.read_text()):
             label = " ".join(m.group("label").split())
+            if draws_nothing(m.group("attrs")):
+                skipped += 1
+                continue
             by_label[label][normalise(m.group("points"))].append(svg.stem)
             zones += 1
 
+    if skipped:
+        print(f"check_zones: {skipped} invisible polygon(s) skipped "
+              f"(fill:none AND stroke:none -- label anchors, nothing drawn)")
     divergent = {lab: shapes for lab, shapes in by_label.items() if len(shapes) > 1}
 
     print(f"check_zones: {len(svgs)} diagrams · {zones} labelled zones · "

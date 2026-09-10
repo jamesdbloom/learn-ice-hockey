@@ -206,6 +206,21 @@ const gapAndAngle = {
   zones: [
     {
       label: 'the middle',
+      // TEXT ONLY -- the polygon is untouched. The centroid of these four corners is
+      // x -68.50, and at this diagram's full-sheet text size (font-size 5.44) the
+      // words are 30.46 units wide, so the left end plus its halo reached x -84.06:
+      // over the crease arc's apex (x -82.97) and over the bare `G`, whose glyph is
+      // centred at x -85 and whose right edge is about -83.71. The halo knocked both
+      // out. Shifted 2.5 ft toward centre ice the label is drawn at x -66.00, left
+      // end -81.23 (-81.56 with halo), clear of the arc and clear of the `G`.
+      // ⚠️ MOVING THE POLYGON WAS NOT THE FIX. `check_zones.py` compares these
+      //    `points` between diagrams, so editing them would assert something about
+      //    the REGION rather than about where the ink sits.
+      // ⚠️ The label now overhangs the band's own right edge (x -54) out to about
+      //    x -50.77. Nothing is drawn there -- no route, no glyph, no circle reaches
+      //    the y = 0 band there -- so it costs a few units of overhang and saves two
+      //    collisions.
+      labelDx: 2.5,
       points: [
         'top-of-circle:right:far',                          // (-54, 22)
         { at: 'faceoff-dot:right:far', dx: -14 },           // (-83, 22)

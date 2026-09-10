@@ -160,10 +160,19 @@ jobs:
       # `--delete` is scoped by the same filters, so it prunes superseded hashed
       # assets without touching anything else.
       #
-      # `audio/*` is excluded from every pass. The narration MP3s (Phase 5) are
-      # generated outside this build and uploaded straight to the bucket; they
-      # are not in site/dist. A sync with --delete that did not exclude them
-      # would cheerfully delete every one of them.
+      # `audio/*` is excluded from every pass. The episodes are generated outside
+      # this build and uploaded straight to the bucket by
+      # scripts/upload_podcast_audio.sh; they are not in site/dist. A sync with
+      # --delete that did not exclude them would cheerfully delete every one.
+      #
+      # ⚠️ THIS COMMENT USED TO SAY "the narration MP3s (Phase 5)". Both words were
+      #    wrong and both were corrected everywhere else in the repository: the
+      #    episodes are AAC-LC in MP4 (.m4a), NOT MP3 — Apple "strongly recommend
+      #    using AAC instead of MP3" and Spotify's delivery spec asks for "MP4 with
+      #    AAC-LC" — and they are NOT "narration", because they are not verbatim
+      #    readings: every episode runs 48-72 minutes regardless of its document's
+      #    length, a 17x spread in apparent words per minute. This file was the last
+      #    place both survived.
       - name: Sync hashed assets (1 year, immutable)
         env:
           BUCKET: ${{ vars.S3_BUCKET }}
@@ -241,8 +250,53 @@ jobs:
             if [ -n "$line" ]; then PATHS+=("$line"); fi
           done < <(grep -E '\.html$|^/version\.json$' /tmp/changed-paths.txt || true)
 
+          # ⚠️ THE FEEDS ARE NOT HTML, SO THE GREP ABOVE NEVER MATCHES THEM — AND THE
+          #    PODCAST FEED IS THE ONE OBJECT APPLE AND SPOTIFY ACTUALLY POLL.
+          #    /feed/podcast.xml, /rss.xml and /sitemap.xml all land in sync pass 2 with
+          #    `max-age=300, must-revalidate`, so in principle they expire in five minutes
+          #    and need no help.
+          #
+          # ⚠️ IN PRACTICE THAT TTL WAS MEASURED NOT BEING HONOURED. On 10 September 2026
+          #    the edge served a superseded object with `Age: 71651` against its own
+          #    `max-age=3600` — twenty hours past its stated TTL. A five-minute header is
+          #    not a guarantee, and a stale podcast feed is a show description, an episode
+          #    list, or a cover URL that the platforms keep re-reading and caching onward.
+          #
+          # ⚠️ CHEAP: three wildcards, and a wildcard counts as ONE path against the
+          #    1,000-a-month free allowance. These are small text objects, so a refetch
+          #    from S3 costs nothing like the ~1.12 GB an /audio/* wildcard would.
+          if [ -f site/dist/feed/podcast.xml ]; then PATHS+=("/feed/*"); fi
+          if [ -f site/dist/rss.xml ]; then PATHS+=("/rss.xml"); fi
+          if [ -f site/dist/sitemap.xml ]; then PATHS+=("/sitemap.xml"); fi
+
+          # ⚠️ THE .m3u PLAYLISTS ARE BUILD OUTPUT UNDER /audio/, AND NOTHING ELSE
+          #    INVALIDATES THEM. `audio/*` is excluded from both sync passes above,
+          #    so only the "Sync audio" step writes them — and only THIS step's
+          #    changed-HTML list feeds the invalidation, which never matches a .m3u.
+          #    They are uploaded with a YEAR of immutable cache, so adding or renaming
+          #    a document leaves /audio/all.m3u stale at the edge indefinitely.
+          #
+          # ⚠️ MEASURED 10 SEPTEMBER 2026, on the cover rather than a playlist, but it
+          #    is the same gap: after the object behind audio/cover.png was replaced,
+          #    the edge served the SUPERSEDED bytes with `Age: 71651` against its own
+          #    `max-age=3600` — twenty hours past its stated TTL. The cover is now
+          #    immune because its URL carries a content hash. The playlists are not.
+          #
+          # ⚠️ ONE WILDCARD, NOT `/audio/*`. Invalidating all of /audio/ would evict
+          #    ~1.12 GB of genuinely immutable episode audio from the edge and force
+          #    CloudFront to refetch it from S3 on the next request. `*.m3u` reaches
+          #    only the nine playlists, and a wildcard counts as a single path against
+          #    the 1,000-a-month free allowance.
+          if [ -d site/dist/audio ] && compgen -G "site/dist/audio/*.m3u" > /dev/null; then
+            PATHS+=("/audio/*.m3u")
+          fi
+
+          # ⚠️ THE .m3u APPEND MUST COME BEFORE THIS EARLY EXIT. Placed after it, a
+          #    deploy that changed only a playlist would fall through "No HTML
+          #    changed" and invalidate nothing — the exact gap this block exists to
+          #    close, reintroduced by where it sat. Caught before it shipped.
           if [ ${#PATHS[@]} -eq 0 ]; then
-            echo "No HTML changed — no invalidation needed." >> "$GITHUB_STEP_SUMMARY"
+            echo "Nothing to invalidate — no HTML, no feeds and no playlists changed." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 

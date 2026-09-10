@@ -200,11 +200,28 @@ the UNDER-penalising direction.** ⚠️ **The corpus held THREE positions on Ho
 
 **Nobody has heard the audio.** Every read-aloud judgement here is a reading of the renderer's rules.
 
-**No caption was seen rendered.** Five agents were forbidden to build, so `diagrams.json` was stale
-throughout their work and **`check_absolutes.py` could not certify the caption layer until the coordinator
-rebuilt.** ⚠️ **None of the 22 shortened captions has been seen on a page, at phone width, or in either
-theme.** Two agents named that as their largest gap; one flagged that `the-call`'s new length leaves a
-**~50-character margin** against the renderer's split point, calculated from source and never run.
+**No caption was seen rendered BY THE AGENTS THAT WROTE THEM.** Five were forbidden to build, so
+`diagrams.json` was stale throughout their work and **`check_absolutes.py` could not certify the caption
+layer until the coordinator rebuilt.** Two named that as their largest gap.
+
+⚠️⚠️ **AN EARLIER VERSION OF THIS PARAGRAPH THEN SAID "None of the 22 shortened captions has been seen on
+a page, at phone width, or in either theme." THAT WAS TRUE WHEN WRITTEN AND FALSE BY THE TIME IT SHIPPED.**
+A `site-reviewer` ran afterwards and measured **726 figure renders** — 242 figures at three viewports —
+finding **0 captions too thin, 0 truncated, 0 blank figures**, with the 21 shortened captions landing
+between **943 and 3,109 characters**. Its section sits **above this one in this same file.**
+
+⚠️ **A commit gate caught the contradiction: "A future round scoping from that residual will redo finished
+work — the round's own thesis, uncaught by its seven corrections."** ⚠️ **This is the
+counted-list-with-stale-enumeration shape, in the residuals section of the record whose subject is stale
+claims.** It survived because it errs toward **under**-claiming, which is the direction no reviewer stops
+on — the same direction as every false disclosure round 59 found.
+
+**The honest residual is narrower:** the renders were **Chrome only** — no Firefox, no WebKit, no real
+device — **8 of 21 captions were read in full and 6 seen at all four matrix cells**; the other 13 passed
+mechanical truncation and thinness tests only, **so a caption that is complete but now WRONG about its own
+picture would have passed.** And one agent flagged that `the-call`'s new length leaves a **+89-character
+margin** against the renderer's split point (not the ~50 first reported), calculated from source and never
+run through `transform_document`.
 
 **Whether the shortened captions still teach.** Every agent said the same thing independently: they read the
 host documents before cutting, **which is precisely the state that disqualifies them from judging it.** It
@@ -473,3 +490,20 @@ five times. NOT run: `content-reviewer`, `source-verifier`, `diagram-reviewer` o
 - **`oz-net-front-screen`'s *"That reads the rule's structure rather than anything either book states in
   terms"* now follows a statement the books DO make in terms** (Situation 5E). ⚠️ **Referent drift from a
   compression — it hedges something directly printed. Understatement, not overstatement.**
+
+
+---
+
+# ⚠️ Recorded after the gate cleared — the icing-disclosure restoration
+
+A caption compression stripped an honest disclosure from `icing-the-race-and-the-dot`: *"though not the
+whole rule: the IIHF adds a paragraph for when there is no race at all"*, leaving *"IIHF Rule 81.1 in the
+same words"* standing alone. **Non-negotiable 4: an honest disclosure is not a length saving.** Restored,
+and verified against `sources/iihf_rules.txt` — the no-race paragraph is real.
+
+⚠️ **A gate noted the restoration itself was on no record, which is C11's third leg unmet.** It is now.
+
+**And one cut was verified severable and deliberately LEFT:** `icing-gaining-the-line` dropped the
+shorthanded-icing paragraph — NHL 81.6's major carve-out and USA Hockey 624(b)(1)'s classification limit.
+⚠️ **Checked before accepting: all four hosts carry 81.6 and 624(b)(1)**, and the caption keeps *"for a
+team equal or superior in numerical strength"*, so it asserts no bare exemption.

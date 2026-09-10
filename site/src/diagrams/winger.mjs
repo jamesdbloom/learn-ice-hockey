@@ -525,12 +525,20 @@ const arrivingAtTheLine = {
  * holding the line would be teaching a formation off one instant. The far
  * point is drawn still manned for the same reason.
  *
- * THE SAFETY LINE IS WORD-FOR-WORD THE ONE IN `winger-dz-rim` AND
- * `winger-dz-reverse`, from "never turn your back" onward. That is
- * deliberate: three captions in one document stating the same override in
- * three different forms is how a reader learns to hear it as decoration. If
- * you change it here, change it there, and check the ```facts blocks and
- * the body, which are where it actually lives.
+ * THE SAFETY LINE IS SHARED WITH `winger-dz-rim` AND `winger-dz-reverse`, AND
+ * THE SHARED SPAN HAS TWO ENDS. It runs word for word from "never turn your
+ * back to the wall" through to "head up and chin off your chest". OUTSIDE that
+ * span the three differ on purpose: the other two are prefaced with Whichever
+ * you are playing, because each of them draws a pair of plays and the override
+ * covers both, where this one is not; and this one alone closes with the two
+ * sentences saying that nothing in the picture is contact and nothing in it is
+ * a licence to hit.
+ * ⚠️ THIS NOTE USED TO CLAIM THE WHOLE LINE WAS WORD-FOR-WORD FROM THE FIRST OF
+ * THOSE PHRASES ONWARD, AND THAT WAS FALSE OF THE TAIL while reading as
+ * settled. An editor trusting it would have taken the two closing sentences for
+ * drift and swept them out. Name the span, not the line. If you change the
+ * shared span here, change it there, and check the ```facts blocks and the
+ * body, which are where it actually lives.
  *
  * GEOMETRY. Half sheet, the OPPOSITION net at the right.
  *   RW      (81, 33)  in the corner with the puck. 20.57 ft from the arc
@@ -588,8 +596,8 @@ const cornerAndTheEmptyPoint = {
     'and forcing it out of the corner through heavy traffic is the thing not to do. ' +
     '⚠️ Never turn your back to the wall and never duck. Those are two different injuries — ' +
     'a hit from behind you cannot brace for, and a chin tucked to the chest, which does not ' +
-    'need speed to do it. Skates parallel to the boards, forearm and hip into the contact, ' +
-    'head up and chin off your chest — and not on the point of your shoulder. Nothing in this ' +
+    'need speed to do it. Skates parallel to the boards, forearm and hip into the contact ' +
+    'rather than the point of your shoulder, head up and chin off your chest. Nothing in this ' +
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:

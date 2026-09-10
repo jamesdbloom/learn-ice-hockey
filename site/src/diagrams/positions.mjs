@@ -1035,7 +1035,7 @@ const wingerDzRim = {
     'are two different injuries — a hit from behind you cannot brace for, and a chin tucked to '+
     'the chest, '+
     'which does not need speed to do it. Skates parallel to the boards, forearm and hip into '+
-    'the contact, head up and chin off your chest.',
+    'the contact rather than the point of your shoulder, head up and chin off your chest.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
@@ -1105,7 +1105,7 @@ const wingerDzReverse = {
     'are two different injuries — a hit from behind you cannot brace for, and a chin tucked to '+
     'the chest, '+
     'which does not need speed to do it. Skates parallel to the boards, forearm and hip into '+
-    'the contact, head up and chin off your chest.',
+    'the contact rather than the point of your shoulder, head up and chin off your chest.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +

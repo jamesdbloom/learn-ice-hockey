@@ -51,6 +51,10 @@ extraction traps, and there are several that have manufactured false findings.
 | `eiha_inhouse_2026-27.txt` | IHUK In-House Rules **2026-27 — THE CURRENT BRITISH DOCUMENT.** The only edition carrying the four-nation scope (*"England, Wales, Scotland and Northern Ireland"*) and the *"policies of IHUK"* construction clause |
 | `eiha_inhouse.txt` | IHUK In-House Rules 2025-26 — **superseded**, kept for comparison. Scoped to *"England and Scotland"* only |
 | `eih_rr.txt` | England Ice Hockey Rules & Regulations 2024-2025 |
+| `ihuk_junior_roc.txt` | IHUK **Rules of Competition — Junior.** ⚠️ **This is the book that publishes the BODY-CHECKING AGE**, in a table: U10/U12 non-checking, U14/U16/U19 checking. The corpus asserted at eleven sites that no British rulebook says. `_layout` twin present |
+| `ihuk_nihl_roc.txt` | IHUK Rules of Competition — NIHL. `_layout` twin present |
+| `ihuk_wnihl_roc.txt` | IHUK Rules of Competition — WNIHL. `_layout` twin present |
+| `ihuk_u10_roc.txt` | IHUK Rules of Competition — U10. Records that **no penalties are recorded at U10**, which puts a U10 reader outside the corpus's penalty-cost arithmetic entirely. `_layout` twin present |
 | `ibc.txt` | USA Hockey *Introduction To Body Contact* |
 | `carha.txt` | CARHA Hockey Official Rule Book, printed 2020. ⚠️ **Governs CARHA-affiliated leagues only — never a general rec-hockey standard** |
 | `huh.txt` | USA Hockey *Heads Up Hockey* Program Guide. ⚠️ **Extracted with PLAIN `pdftotext`, not `-layout`** — it is a multi-column brochure and `-layout` splices the columns mid-sentence |
@@ -92,6 +96,14 @@ current British document and the only edition carrying the four-nation scope**, 
 books, `carha.txt`, and both `huh` extractions. **A verifier trusting it would have quoted the
 superseded England-and-Scotland edition and concluded the In-House Rules do not reach Wales or
 Northern Ireland.** Found by a verifier that reported its own instructions as a defect.
+
+⚠️ **IT RECURRED AT ROUND 73, AND THE COORDINATOR CAUSED IT.** Four IHUK Rules of Competition were
+installed, extracted and registered in `sources/README.md` during that round — and the table below was
+not touched, so for the rest of the round it named 26 rows against **36 `sources/*.txt` files**. A
+verifier asked to rule on whether a British book departs from the IIHF answered **having never been
+told four British competition regulations existed**. It caught this itself, by diffing the table
+against `ls`, and reported its own instructions as a defect — the second time an agent here has had
+to do that.
 
 **The lesson is not "keep the table updated."** A hand-maintained list of a growing source set
 decays silently, and nothing mechanical checks it. **Run `ls sources/*.txt` and diff it against this

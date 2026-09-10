@@ -356,12 +356,23 @@ const showAShoulder = {
   half: true,
   width: 900,
 
+  // ⚠️ "The mirror is not drawn HERE, BUT it works the same way" — "but", not "and",
+  // and "here" because the mirror IS drawn: `entry-outside-shoulder` in zone_entries.mjs
+  // is it, and that module's section-10 comment says so. "here" indexes the picture, so
+  // it travels safely to any host, unlike "this section".
+  // "is not drawn and works the same way: skate at the outside shoulder" let the
+  // negation carry across the colon: the inverted reading says the mirror does NOT
+  // work the same way, which is the opposite of the sentence's point, and it hands a
+  // bare imperative to the negation. "but" is the resolver the rest of this corpus uses.
+  // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run
+  // for check_caption_negations.py's CAPTION regex, which then scans only the prefix.
   caption:
     'Showing a defender one option in order to open another — space created in the ' +
     'defender’s mind before it exists on the ice. The carrier is wide, and his line is ' +
     'aimed at the defenceman’s inside shoulder, the shoulder toward the middle of the ' +
     'ice; the defenceman closes the middle — the shaded band, whose sides are the two ' +
-    'faceoff-dot lines — and the ice outside it, between him and the boards, is what opens. The mirror is not drawn and works the ' +
+    'faceoff-dot lines — and the ice outside it, between him and the boards, is what opens. ' +
+    'The mirror is not drawn here, but it works the ' +
     'same way: skate at the outside shoulder, the defenceman widens, and the middle opens ' +
     'instead. You are not trying to beat him where the two lines meet — you are trying to ' +
     'make him commit before you have decided, which is why the carrier’s line stops well ' +

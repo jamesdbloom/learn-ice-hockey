@@ -259,7 +259,7 @@ Action: Skate, stay on your feet and keep your stick in the lane — take away t
 Rule: All four books write the leap into the charging offence by name — NHL 42.1, IIHF 42.1, USA Hockey 607, Hockey Canada 7.4
 Rule: Hockey Canada Rule 7.4 Interpretation 1 defines the jump as the feet leaving the ice before contact — skates that come off after contact, during an otherwise legal check, are not charging
 Rule: IIHF Rule 48.1(IV) makes jumping to deliver a blow to the head or neck a separate offence — 48.2 sets the floor at a minor for any illegal check to the head or neck, and 48.3 is the ceiling, where the referee may assess a major and an automatic game misconduct for reckless endangerment
-Technique: Blocking a shot is a separate question, and the coached default is a standing block — close with your feet, not by lunging
+Technique: Blocking a shot is a separate question, and the coached default is a standing block — close with your feet, not by lunging, head out of the lane, and never turn your back or sideways
 Convention: On a 2-on-1 the slide is system-dependent — where your job is holding the passing lane, sliding early abandons it; some teams coach a timed slide across the lane as the method itself, so ask which yours plays
 Key: The penalty risk of leaving your feet is real and primary, and the positional cost sits on top of it — down is out of the play
 ```
@@ -582,6 +582,7 @@ Against ~3.1 goals per team per game, that is a meaningful piece of a game, give
 ```facts
 Read: Is the thing you are preventing more likely to become a goal than the one-in-five chance you are handing over?
 Action: Take the penalty to deny a certain goal — a 21% chance beats a 100% chance every time
+Rule: NHL 57.3 makes a foul from behind on a breakaway a penalty shot, not a 21% minor, and the IIHF writes it at 24.8 — with your own net empty that same foul is an awarded goal instead (NHL 25.1 and 57.4 as a pair; IIHF 25.3)
 Options: Late in a game, a minor that breaks a rush which would tie or win it is a defensible trade
 Options: Stopping play when you are pinned and exhausted with no change available is real, effective and universally disliked
 Never: Retaliate, send a message, stand up for a teammate after the whistle, or take anything at all in the first period

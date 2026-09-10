@@ -109,7 +109,7 @@ Goal: Better puck control and less risk of injury — a leg, side or arm absorbs
 Key: Arriving at the boards is the case you control completely, because it is decided several strides out in the route you pick
 Never: Duck or tuck your chin going into the boards — a tucked chin straightens the cervical spine, which USA Hockey ties to almost all on-ice cervical spine injuries, citing a six-patient case series
 Risk: The spinal injury from a head-down, head-first collision with the boards or a goal post can occur at walking speed — no speed is slow enough to make one safe
-Technique: If contact is coming, skates parallel to the wall, forearm and hip into it, head up and chin off your chest
+Technique: If contact is coming, skates parallel to the wall, forearm and hip into it rather than the point of your shoulder, head up and chin off your chest
 Priority: Everything after the route is contact, not skating. Read Body Contact and Battles in full
 ```
 
@@ -164,7 +164,7 @@ One equipment note, because it directly changes what your edges do: how deeply y
 Action: C-cuts on one foot, forward and backward, inside edges then outside edges
 Action: Inside-edge circles, then outside-edge circles, then figure eights forward and backward
 Action: Slalom edge transfers and one-foot glides for ankle strength and balance
-Technique: Build the outside-edge circle from walking pace on a wide arc, adding lean only as the edge holds
+Technique: Build the outside-edge circle from walking pace on a wide arc, helmet on, adding lean only as the edge holds
 Read: Wobbly is the edge of your control and where the improvement is; out of control means slow down
 Convention: Ten to fifteen focused minutes, done often, over long exhausting sessions — one source's guidance
 ```
@@ -571,7 +571,7 @@ Learn-to-skate progressions teach this **before** they teach stopping, and for a
 Action: Get low first — bend the knees and sink as you feel yourself going
 Action: Go to the side, onto your hip, thigh and the side of your backside
 Never: Land on your tailbone, your knees, or a straight arm
-Never: Stick a hand out to catch yourself — a locked arm concentrates your whole body weight into one wrist
+Never: Stick a hand out to catch yourself as you fall to the ice — a locked arm takes your whole weight through one wrist. At the boards it is the opposite: forearms and gloves spread on the glass
 Action: Slide with it — sliding spreads the impact over time, and fighting the fall turns it into a collision
 Key: Falling backwards to the ice, tuck your chin — it keeps your skull off the surface
 Key: Going forwards into the boards, head up and chin off your chest — a tucked chin straightens the cervical spine, and the spinal injury from that head-first collision can occur at walking speed
@@ -579,7 +579,7 @@ Key: Going forwards into the boards, head up and chin off your chest — a tucke
 
 - **Get low first.** As you feel yourself going, bend the knees and sink. The closer you are to the ice when you land, the less there is to absorb.
 - **Go to the side, onto the fleshy part.** Aim for your hip, thigh and the side of your backside. Those have padding, both anatomically and in your kit. Avoid landing on your tailbone, your knees, or a straight arm.
-- **Do not stick a hand out to catch yourself.** A locked, outstretched arm concentrates your whole body weight into a wrist. Keep the hands loose and close, and let your side take it.
+- **Do not stick a hand out to catch yourself as you fall to the ice.** A locked, outstretched arm concentrates your whole body weight into a wrist. Keep the hands loose and close, and let your side take it.
 - **Slide with it.** Ice lets you slide, and sliding spreads the impact over time instead of delivering it all at once. Fighting the fall is what turns it into a collision.
 - **Tuck your chin toward your chest if you are going over backwards.** This one stops the back of your head hitting the ice.
 
@@ -852,7 +852,7 @@ The realistic framing for an adult player: **you will not become fast this month
 - **Pivoting to the middle rather than the boards by default** as a defenceman, so that being beaten costs you the slot rather than the wall. Pivoting to the middle is sometimes the correct read — the mistake is doing it unthinkingly, or because it is your only competent direction. See [Which way to pivot](#which-way-to-pivot--a-coaching-default-not-a-law).
 - **Slowing down the moment you get the puck.** Your stride switches off at the moment you most needed speed — see [Puck Handling → Carrying at Speed](puck_handling.md#carrying-at-speed).
 - **Ducking your head going into the boards, or arriving perpendicular to them.** Go in on an angle, get your skates parallel to the wall, and take it on your forearm and hip, head up and chin off your chest — not on the point of your shoulder, and never head-first.
-- **Never having learned to fall or get up.** You will do both far more often than you will do a mohawk, and only one of them can hurt you. **And getting the chin backwards.** Falling *backwards to the ice*, tuck your chin — it keeps your skull off the surface. Going *forwards into the boards*, head up and chin off your chest: that is the "Heads Up, Don't Duck" case, where a tucked chin straightens the cervical spine to take an axial load. Falling flat: chin in. Hitting a wall: head up.
+- **Never having learned to fall or get up.** You will do both far more often than you will do a mohawk, and only one of them can hurt you. **And getting the chin — or the hands — backwards.** Falling *backwards to the ice*, tuck your chin — it keeps your skull off the surface. Going *forwards into the boards*, head up and chin off your chest: that is the "Heads Up, Don't Duck" case, where a tucked chin straightens the cervical spine to take an axial load. **The hands invert the same way.** Falling to the ice you keep them in, because a locked arm takes your whole descending weight through one wrist; at the boards your forearms and gloves go out and spread wide on the glass. **Falling flat: chin in, hands in. Hitting a wall: head up, arms out.**
 - **Bouncing straight back up because the shift is still going.** Take the two or three seconds first. **A fall is one of the ways a concussion happens, and you do not have to have been knocked out for it to be one** — [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md#concussion) has the red flags and the signs. If you are hurt, stay down and let play be stopped.
 - **Practising only your strong side**, because it's more fun to do things you're good at.
 
@@ -912,7 +912,7 @@ document, that is named too.*
 7. **A crossover has two pushes.** If you are just stepping one foot over the other, half the propulsion is switched off — the under-push of the inside leg is the half that is missing.
 8. **Backward skating is the defenceman's skill: you cannot hold a gap you are not fast enough to hold.** Pivot late, open the hips before the shoulders, and pivot toward the boards, so that being beaten costs you the wall rather than the slot. **That last one is a coaching default, not a law.** Ask your coach which they want, and drill both directions.
 9. **Learn to stop both ways, and train the weak side deliberately.** Two laps weak for every one strong is the common prescription — a coaching rule of thumb, not a measured optimum. Have someone film you, because you cannot see yourself skate; expect months for the basics and years for the rest, on one coaching provider's guidance rather than on measurement.
-10. **Learn to fall and learn to get up.** Take two or three seconds to check you are not injured before you rise, and stay down if you are hurt. **A fall is one of the ways a concussion happens, and you do not have to have been knocked out for it to be one** — [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md#concussion) has the red flags and the signs. Go to the side onto hip and thigh, never onto a locked arm. **The chin has two opposite cases, so take the right one.** Falling *backwards to the ice*, tuck your chin — it keeps your skull off the surface. Going *forwards into the boards*, head up and chin off your chest: that is the "Heads Up, Don't Duck" case of takeaway 1, where a tucked chin straightens the cervical spine to take an axial load. **Falling flat: chin in. Hitting a wall: head up.**
+10. **Learn to fall and learn to get up.** Take two or three seconds to check you are not injured before you rise, and stay down if you are hurt. **A fall is one of the ways a concussion happens, and you do not have to have been knocked out for it to be one** — [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md#concussion) has the red flags and the signs. Go to the side onto hip and thigh, never onto a locked arm — and that, like the chin below, is the *ice* case, because at the boards your forearms and gloves do go out, spread wide on the glass. **The chin has two opposite cases too, so take the right one.** Falling *backwards to the ice*, tuck your chin — it keeps your skull off the surface. Going *forwards into the boards*, head up and chin off your chest: that is the "Heads Up, Don't Duck" case of takeaway 1, where a tucked chin straightens the cervical spine to take an axial load. **Falling flat: chin in, hands in. Hitting a wall: head up, arms out.**
 
 ---
 

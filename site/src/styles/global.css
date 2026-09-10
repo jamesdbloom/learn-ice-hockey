@@ -2290,19 +2290,46 @@ figure.diagram--full .diagram-scroll::-webkit-scrollbar-thumb {
   ⚠️ THE CAPTION IS TALLER THAN THE PICTURE ON A PHONE, AND THAT IS NOT TREATED AS A
   DEFECT. Recorded here because it has been measured twice and will be measured again.
 
-  At 375 px a half-sheet diagram is 296 px tall and the median caption is ~1,070
-  characters, which sets to about 460 px; 103 of 110 captions are taller than their own
-  diagram and the longest, `forecheck-pinch` at 2,386 characters, is 1,059 px — 3.57x.
-  At 1440 the same caption is 454 px against a 678 px diagram, so the ratio is a
-  narrow-viewport effect.
+  ⚠️ THE CENSUS FIGURES THAT USED TO BE IN THIS PARAGRAPH HAVE BEEN REPLACED BY THE
+  COMMAND THAT PRODUCES THEM, because they had gone stale and nothing said so. They
+  read "the median caption is ~1,070 characters", "103 of 110 captions are taller than
+  their own diagram", and "the longest, `forecheck-pinch` at 2,386 characters". By
+  2026-09-10 the corpus held 198 captions, `forecheck-pinch` had grown to 3,034 and was
+  no longer the longest, and the worst ratio belonged to `forcing-them-outside`. Each
+  of those figures described the corpus on the day it was written and nothing after it.
+  A number copied out of its owner goes stale silently; a pointer to how to re-derive
+  it does not. So re-measure rather than quoting this block.
+
+  THE OWNER IS `site/src/data/diagrams.json` — a build product, so run
+  `site/scripts/build-diagrams.mjs` first, and use the absolute node binary (the `node`
+  on PATH here is an nvm shim that exits 127 while reporting 0):
+
+      node -e "const d=require('./site/src/data/diagrams.json');const c=[];
+      JSON.stringify(d,(k,v)=>{if(k==='caption'&&typeof v==='string')c.push(v.length);return v});
+      c.sort((a,b)=>b-a);console.log(c.length,c[0],c[c.length>>1])"
+
+  ⚠️ Say which length you mean. JS `String.length` counts UTF-16 code units, so a ⚠️
+  counts as two and Python's `len` disagrees with it: the same longest caption measures
+  4,195 by the command above and 4,193 in Python. Neither is wrong; an unlabelled
+  figure is.
+
+  WHAT THE DECISION RESTS ON IS THE SHAPE, AND THE SHAPE IS STABLE. At 375 px a
+  half-sheet diagram is 296 px tall while a median-length caption sets to several times
+  that; the great majority of captions are taller than their own diagram; and at 1440 px
+  a caption of that same length is shorter than that same diagram. So the ratio is a
+  narrow-viewport effect rather than a property of any one caption. (The px figures in
+  the two repair options below are measurements of a rendering experiment actually run
+  in August 2026, on a caption that has since grown. They are a record of what was
+  tried, not a description of the corpus, and they are left as they were measured.)
 
   It is not treated as a defect because the ratio is not the harm. It compares a
   fixed-aspect picture against variable-length prose, so it flags any figure with a
   paragraph-length caption — and this corpus writes paragraph-length captions on
   purpose: the caption is the accessible name, the EPUB text and the sentence the
   speech pass reads aloud, so it has to teach standing alone. There is no viewport at
-  which a 2,386-character caption is shorter than a 296 px picture. A "defect" present
-  in 94% of instances, each deliberately authored, is a characteristic.
+  which a caption of median length or longer is shorter than a 296 px picture. A
+  "defect" present in the overwhelming majority of instances, each deliberately
+  authored, is a characteristic.
 
   TWO REPAIRS WERE CONSIDERED AND BOTH COST MORE THAN THE THING THEY FIX:
 

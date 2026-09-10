@@ -52,9 +52,10 @@ import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.m
 // 1. Three lanes, and the carrier last to the line — section 4.
 // ---------------------------------------------------------------------------
 
-// The two wide players are ON the paint. The section wants them "at the line, at
-// speed, onside, before the puck gets there", and the puck below has not crossed,
-// so the picture is legal as drawn under every book in the document.
+// The two wide players are ON THE BLUE LINE -- on its twelve inches of paint, and NOT
+// `on the paint`, which rink_map_and_glossary.md owns for the CREASE. The section wants
+// them "at the line, at speed, onside, before the puck gets there", and the puck below
+// has not crossed, so the picture is legal as drawn under every book in the document.
 const WIDE_R = { at: 'blue-line', dy: 31 };            // (25, 31)
 const WIDE_L = { at: 'blue-line', dy: -31 };           // (25, -31)
 // "Half a stride to a full stride behind" — a stride is on the order of six or
@@ -68,13 +69,19 @@ const threeLanes = {
   half: true,
   width: 900,
 
+  // ⚠️ THIS CAPTION SAYS `on the blue line` AND MUST NOT GO BACK TO `on the paint`.
+  // It once read `already on the paint at speed`, meaning the blue line's twelve inches.
+  // `The paint` is an owned term: rink_map_and_glossary.md §"The paint" defines it as the
+  // light-blue CREASE, and most captions in this corpus use it that way — grep the
+  // caption strings rather than trusting a count written here, which goes stale.
+  // Voiced alone, and BORROWED into how_to_watch_hockey.md, which defines nothing, the
+  // old wording told a listener that two wingers arriving at speed stand in the goal
+  // crease, sixty-four feet away. `entry-trail-skate-drag` lower in this file carries the
+  // same repair, and its comment records the finding still open against the section.
+  // (Comment sits ABOVE `caption:`, outside the string run: a `//` line inside an
+  // 'a' + 'b' concatenation used to blind check_caption_negations.py to the tail.)
   caption:
     'Three attackers arriving at the attacking blue line in three lanes — one wide on each ' +
-    // ⚠️ "the paint" here means the BLUE LINE's twelve inches, a sense zone_entries.md
-    // defines at :131. But this caption is BORROWED into how_to_watch_hockey.md, which
-    // defines nothing -- and the glossary at rink_map_and_glossary.md:629 says the paint is
-    // the CREASE. 10 of 12 captions use the crease sense. Voiced alone, a listener was told
-    // two wingers arriving at speed stand in the goal crease, sixty-four feet away.
     'side, one through the middle — drawn at the instant the two wide players are already on ' +
     'the blue line at speed and the puck is still a stride short of it. That order is the whole ' +
     'point: if the carrier arrives first the supports are behind the play and the defence can ' +
@@ -852,8 +859,8 @@ const trapezoidAim = {
 // THE MIRROR OF THIS PLAY IS ALREADY DRAWN ELSEWHERE, and drawn deliberately as
 // the other half: `show-one-shoulder-open-the-other` in time_and_space.mjs runs
 // the carrier at the defenceman's INSIDE shoulder to open the boards, and its own
-// caption records that "the mirror is not drawn and works the same way: skate at
-// the outside shoulder, the defenceman widens, and the middle opens instead."
+// caption records that "the mirror is not drawn here, but it works the same way: skate
+// at the outside shoulder, the defenceman widens, and the middle opens instead."
 // This is that mirror, and it is this section's play rather than that one's: the
 // outside shoulder is the one nearest the boards on your side, and what opens is
 // the inside lane.
@@ -1157,7 +1164,7 @@ const trailSkateDrag = {
   caption:
     'The trail-skate drag, drawn at the instant the puck is still a stride short of the line. ' +
     "The far-side winger's body, hands and stick are already in the attacking zone; only the " +
-    'trailing blade is still on the paint, which keeps them onside everywhere, because a skate ' +
+    'trailing blade is still on the painted line, which keeps them onside everywhere, because a skate ' +
     'touching any part of the twelve-inch blue line counts as contact with it. The instant the ' +
     'puck completely crosses, the blade comes down and pushes through into the zone. Under the ' +
     'NHL and the IIHF, that trailing skate could instead be lifted, held behind the plane of the ' +
@@ -1176,7 +1183,18 @@ const trailSkateDrag = {
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
     { id: 'D', team: 'opp', pos: 'D', at: DRAG_D, label: 'standing up at the line' },
-    { id: 'F', pos: 'F', at: DRAG_WINGER, label: 'trail skate on the paint' },
+    // ⚠️ LABEL: `on the line`, NOT `on the paint`. A player label is read in total
+    // isolation on the picture, and `the paint` is an OWNED TERM: rink_map_and_glossary.md
+    // defines it as the light-blue CREASE, and the corpus's own instruction is `stay out of
+    // the paint`. A label reading `trail skate on the paint` put a winger's blade in the
+    // goal crease, sixty-four feet away, for any reader who took the glossary's sense.
+    // This is the same repair `entry-three-lanes` already had at the head of this file,
+    // where the caption now says "on the blue line" for the same reason.
+    // ⚠️ THE SECTION STILL USES THE BLUE-LINE SENSE AND THAT IS A FINDING AGAINST THE
+    // SECTION, NOT AGAINST THIS LABEL: zone_entries.md:148 (a `facts` line, voiced ALONE),
+    // :163, :173 and :188 all say "the paint" meaning the twelve inches of blue line.
+    // Reported to the coordinator; content/ is not this file's to change.
+    { id: 'F', pos: 'F', at: DRAG_WINGER, label: 'trail skate on the line' },
     { id: 'F', pos: 'F', at: DRAG_CARRIER, label: 'carrier, a stride behind' },
   ],
 

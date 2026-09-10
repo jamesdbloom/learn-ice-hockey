@@ -94,6 +94,14 @@ const offsideFaceoffLocation = {
   half: false,
   width: 1100,
 
+  // ⚠️ FULL STOP, NOT A COLON, at "...and not a fixed destination. Move the pass...".
+  // The colon let the negation carry, and the inverted reading — the spot does NOT move
+  // with the pass — reverses Rule 83.6 itself: "from the face-off spot in the zone closest
+  // to the point of origin of the shot or pass" (sources/nhl_rules.txt, Rule 83.6, read with
+  // whitespace flattened, that file being the plain extraction). No word of the claim
+  // changed; only the sentence boundary.
+  // ⚠️ Kept OUT of the string run: a // line inside `caption:` ends the run for
+  // check_caption_negations.py's CAPTION regex, which then scans only the prefix.
   caption:
     'Where the draw goes after an offside, under NHL Rule 83.6 — an NHL rule, and where the IIHF ' +
     'and USA Hockey books put the draw is not established here, so do not assume it is the same ' +
@@ -109,7 +117,7 @@ const offsideFaceoffLocation = {
     'while a carried one costs you a little: the two draws are 89 feet apart up the ice, which ' +
     'is arithmetic on the rink dimensions, not a figure from the rulebook. ' +
     'That far marker is ' +
-    'this pass’s answer and not a fixed destination: move the pass and the spot moves with it, ' +
+    'this pass’s answer and not a fixed destination. Move the pass and the spot moves with it, ' +
     'which is the argument for carrying the puck over the line under pressure rather than firing ' +
     'a hopeful pass into the zone.',
 

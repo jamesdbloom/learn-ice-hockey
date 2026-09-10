@@ -83,15 +83,39 @@ IMPERATIVE = re.compile(
 RESOLVER = re.compile(r"^(so|but|because|which|who|whose|since|though|although)\b", re.I)
 
 
+def strip_line_comments(src: str) -> str:
+    """Drop WHOLE-LINE `//` comments only.
+
+    ⚠️  MEASURED 10 September 2026, and this is why the function exists: `CAPTION` requires an
+        UNINTERRUPTED run of quoted strings, so a `//` line inside a `'a' + 'b'` concatenation
+        ENDED THE RUN and the tool scanned only the prefix of that caption. 55 caption/describe
+        blocks in 27 modules carry inline `//` lines. The tool saw 358,089 chars in 391 blocks;
+        the comment-stripped assembly is 408,890 in 395. **50,801 characters — 12.4% of the
+        layer — had NEVER been scanned**, hiding 156 hit occurrences, 4 at score 3 and 14 at
+        score 2. ⚠️  IT WAS WORST WHERE IT MATTERS MOST: the safety-counterweight captions
+        (`defending_the_rush.mjs` 44 comment lines, `zone_entries.mjs` 39,
+        `forechecking_systems.mjs` 31 and 30, `playing_without_the_puck.mjs` 30,
+        `body_contact_and_battles.mjs` 20) — and the crease caption at
+        `offensive_zone_play.mjs`, three of whose inline comments RECORD PREVIOUSLY-REPAIRED
+        INVERSIONS. A round that "finished" this worklist would have finished the prefix.
+
+    ⚠️  WHOLE-LINE ONLY. A caption containing `https://` loses half its text to a naive
+        strip, and this corpus's captions do carry URLs.
+    """
+    return "\n".join(l for l in src.splitlines() if not l.lstrip().startswith("//"))
+
+
 def captions() -> list[tuple[str, str, str, str]]:
     out = []
     for f in sorted(SRC.glob("*.mjs")):
-        src = f.read_text()
+        src = strip_line_comments(f.read_text())
         for m in CAPTION.finditer(src):
             text = "".join(p.replace("\\'", "'") for p in PIECE.findall(m.group(2)))
             if not text:
                 continue
-            before = src[max(0, m.start() - 1500):m.start()]
+            before = src[max(0, m.start() - 4000):m.start()]   # 1500 left 13 of 68 hits
+                                                             # reporting as [?], which is
+                                                             # unactionable on a worklist
             ids = IDENT.findall(before)
             out.append((f.name, ids[-1] if ids else "?", m.group(1), text))
     return out
@@ -106,6 +130,11 @@ def main() -> int:
             continue
         for m in SHAPE.finditer(text):
             neg, mid, sep, tail = m.group(1), m.group(2), m.group(3), m.group(4).strip()
+            # ⚠️  A MATCHED PARENTHETICAL PAIR DEFUSES THE CARRY, but `mid` is capped at 70
+            #     chars by SHAPE, so a pair whose OPENING dash sits further back scored as a
+            #     bare dash. MEASURED: 16 of 68 hits — ~24% of the whole band, and the single
+            #     largest false-positive family. Count from the start of the SENTENCE instead.
+            sent = re.split(r"[.!?]\s", text[:m.start()])[-1]
             # an intervening resolver in the middle span defuses most carries
             resolved = bool(re.search(r"\b(so|but)\b", mid, re.I)) or bool(RESOLVER.match(tail))
             score = 0
@@ -113,7 +142,7 @@ def main() -> int:
                 score += 2                      # a command is the dangerous tail
             if not resolved:
                 score += 1
-            if sep == "—" and mid.count("—") == 0:
+            if sep == "—" and (sent + mid).count("—") == 0:
                 score += 1                      # an UNMATCHED em dash, not a parenthetical pair
             hits.append((score, fname, did, field, neg, sep, tail))
 

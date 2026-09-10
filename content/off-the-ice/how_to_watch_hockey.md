@@ -582,7 +582,7 @@ Specific sites appear, change hands, go behind paywalls and disappear regularly,
 
 ## Part 9: A Practical Weekly Routine
 
-One hour a week, spent deliberately, will do more for your hockey brain than five hours of ordinary spectating. Here is a realistic split.
+One hour a week, spent deliberately, will do more for your hockey brain than several hours of ordinary spectating — a coaching judgement rather than a measured ratio. Here is a realistic split.
 
 **20 minutes — one period of professional hockey, one exercise.**
 Pick one exercise from Part 1 and do only that. Rotate weekly: week 1 one player, week 2 defencemen only, week 3 weak side, week 4 the five seconds before each goal. Watch live if you can, and sit high.
@@ -612,7 +612,7 @@ If you only have half an hour, cut the professional hockey and keep the footage 
 - **Sitting as close to the ice as possible.** Great for atmosphere, poor for learning. Height beats proximity when the goal is structure.
 - **Assuming what a professional team does is what your team wants.** Almost every "always do X" you see on TV is "in this team's system, in this score state, do X." Find out what *your* team wants.
 - **Skipping to your own touches on video.** Your touches are roughly **3–4% of your 5-on-5 ice time**, not a tenth of it. That is NHL tracking data the league itself calls unofficial, and 5-on-5 is the basis it reports — see [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md), which covers the figure and its limits. The other ninety-six per cent is the part that is actually holding you back.
-- **Quoting a statistic without knowing its definition.** Every site computes things slightly differently, and half of all hockey statistics arguments are two people using the same word for different numbers.
+- **Quoting a statistic without knowing its definition.** Every site computes things slightly differently, and a great many hockey statistics arguments turn out to be two people using the same word for different numbers.
 - **Treating plus/minus as a measure of defensive ability.** It is not, it never was, and it does not even include power-play goals against.
 - **Reading a single game's expected goals as a verdict.** One game of xG is noise wearing a lab coat. Use several games and know whose model it is.
 - **Believing an unusually good stretch is a new level.** If shooting or save percentage jumped and possession numbers did not, check PDO before you draw a conclusion.
@@ -671,7 +671,7 @@ document, that is named too.*
 7. **Time on ice is arguably the most honest single number in hockey**, because it is the coach's own revealed opinion of the player. It is also the denominator you need: convert totals to per-60 rates before comparing anyone.
 8. **Corsi and Fenwick are a rough measure of territory, not quality; expected goals prices quality** — but xG has no standard definition, so two sites will disagree about the same game. MoneyPuck values blocked attempts at zero; other providers may treat blocks differently, so check the glossary.
 9. **For goaltenders, GSAx beats save percentage beats goals against average**, because only the first accounts for how hard the shots were — though it inherits every weakness of the underlying xG model and needs a large sample. **PDO regresses hard towards 100**, but calling it luck is a useful simplification rather than a truth: elite finishers and elite goaltenders genuinely sustain it. Treat it as a flag, not a verdict.
-10. **Every number needs its context** — denominator, strength state, sample size, teammates, score state, whose model, and whether it passes the eye test. Without those, a hockey statistic is a rumour with decimal places. **An hour a week spent deliberately beats five hours of ordinary spectating**, and it only counts if it ends with one specific thing you are going to try at practice.
+10. **Every number needs its context** — denominator, strength state, sample size, teammates, score state, whose model, and whether it passes the eye test. Without those, a hockey statistic is a rumour with decimal places. **A deliberate hour a week beats several hours of ordinary spectating** — a coaching judgement rather than a measured ratio — and it only counts if it ends with one specific thing you are going to try at practice.
 
 ---
 

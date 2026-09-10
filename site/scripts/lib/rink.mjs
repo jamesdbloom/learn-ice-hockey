@@ -1486,9 +1486,24 @@ export function playSvg(spec, opts = {}) {
     const label = z.label
       ? (() => {
           const c = z.points.map(loc).reduce((a, q) => ({ x: a.x + q.x / z.points.length, y: a.y + q.y / z.points.length }), { x: 0, y: 0 });
+          // ⚠️ OPTIONAL NUDGE, IN FEET, FOR THE LABEL ONLY — never the polygon.
+          //    The centroid is right for the region and wrong for the ink often enough
+          //    to need this: in `rush-gap-and-angle` the centroid of (-54,±22),(-83,±22)
+          //    put "the middle"'s left end at x -84.06 including its halo, directly over
+          //    the crease arc's apex (x -82.97) and across the bare `G` at x -85, whose
+          //    right edge is -83.6. The halo knocked out both.
+          // ⚠️ MOVE THE LABEL, NOT THE ZONE. `check_zones.py` compares polygons between
+          //    diagrams; editing `points` to shift text would make a claim about the
+          //    REGION, which is a different and much larger assertion. That is why this
+          //    offset exists at all instead of the obvious fix.
+          // ⚠️ It is deliberately NOT applied to `zoneReserve` below: the reservation is
+          //    what stops the label PLACER dropping other text on this one, and reserving
+          //    the nudged box would let something land back on the centroid. Reserve
+          //    where the text could be; draw where it is.
+          const zdx = z.labelDx ?? 0, zdy = z.labelDy ?? 0;
           const zs = 3.2 * TXT;
           zoneReserve.push({ x: c.x, y: c.y, w: z.label.length * zs * 0.56, h: zs * 1.4 });
-          return `<text x="${c.x.toFixed(2)}" y="${py(c.y).toFixed(2)}" font-size="${zs.toFixed(2)}" ` +
+          return `<text x="${(c.x + zdx).toFixed(2)}" y="${py(c.y + zdy).toFixed(2)}" font-size="${zs.toFixed(2)}" ` +
                  `text-anchor="middle" fill="${P.home}" font-weight="700" ` +
                  `paint-order="stroke" stroke="#fff" ` +
                  `stroke-width="${(zs * LABEL_HALO).toFixed(2)}">${esc(z.label)}</text>`;

@@ -136,6 +136,19 @@ another agent's brief as its top priority — and was a measurement artefact.
 
 **The briefs are more defective than the corpus.** Plan accordingly.
 
+⚠️ **AND THE BRIEF'S PROPOSED WORDING IS A BRIEF, NOT A PATCH.** *"Refute the brief"* has always been aimed
+at a brief's **premises**. Round 73 recorded the first case of the **replacement text** being the defect: a
+coordinator specified a concussion sentence banning *"a bike"*, and **two paragraphs above, the document's own
+graded return-to-sport progression has light aerobic exercise as its second stage, before medical
+clearance.** The wording would have made the document contradict itself, and **only the agent that had read
+the file caught it** — it then apologised for a contradiction that was the dispatcher's.
+
+**So: specify the DEFECT and the CONSTRAINT. Let the agent that has read the document write the sentence.**
+When wording is supplied anyway — and sometimes it should be, because it carries the evidence — **say in the
+brief that it is a sketch to be checked against the surrounding prose, never a string to paste.** A
+coordinator writing replacement text is writing content it has not read the context for, which is the one
+thing this method exists to prevent.
+
 ### What the coordinator does and does not do
 
 - **Does:** all shared-state writes — `project/plans/`, `project/reviews/`,

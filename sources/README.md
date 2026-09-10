@@ -899,15 +899,42 @@ HALF.** Measured 9 September 2026 in `nhl_rules_layout.txt`.
 
 **They disagree by one. `content/foundation/rules_primer.md` follows the TABLE and is correct.**
 
-⚠️ **BUT DO NOT RECORD THIS AS "the index is systematically off by one" — IT IS NOT ESTABLISHED, AND THE
-OBVIOUS METHOD FOR ESTABLISHING IT FAILS.** Pairing index headwords with their `- signal … 29.x`
-sub-entries programmatically returns **duplicate assignments** — Charging at both 29.4 and 29.5, Icing at
+⚠️ **BUT THE OFFSET IS NOT THROUGHOUT, AND A PLAN ROW SAYING IT WAS SENT AN AGENT HUNTING IN THE WRONG
+RANGE.** Re-measured 9 September 2026, entry by entry:
+
+- **`29.1`–`29.10` AGREE EXACTLY.** Boarding 29.1, Charging 29.3, Clipping 29.5, Elbowing 29.10 — index
+  and table give the same number.
+- **The offset begins at "Goal scored" — table `29.12`, index `29.11` — and runs to the end**:
+  High-sticking 29.15/29.14 · Holding 29.16/29.15 · Holding the stick 29.17/29.16 · **Hooking
+  29.18/29.17** · Icing 29.19/29.18 · Interference 29.21/29.20 · Wash out 29.35/29.34.
+- The index has **no `- signal` sub-entry under Fighting** (table 29.11), which is where the shift starts.
+
+⚠️ **PROOF IT IS A REAL OFFSET AND NOT A MISREADING:** the eight consecutive late index entries
+`29.25/26/27/28/30/32/33/34` map, **under +1**, exactly onto the table's alphabetical run Penalty shot /
+Roughing / Slashing / Spearing / Time-out / Tripping / Unsportsmanlike / Wash out. **Under a zero offset
+they map onto nothing coherent.**
+
+**So the warning is narrower and more useful than "the index is off": a signal citation checked against
+the INDEX will look wrong at `29.12` and above, and right below it.** ⚠️ **Follow the table either way.**
+
+⚠️ **AND THE OBVIOUS METHOD FOR ESTABLISHING THE RANGE FAILS — WHICH IS WHY THE RANGE ABOVE WAS DERIVED A
+DIFFERENT WAY.** ⚠️ **This paragraph used to end *"the pattern is NOT established"*, and that was correct
+about the METHOD it had tried. It is superseded on the substance and kept for the method.** The offset is
+now evidenced by **six index entries whose headword is unambiguous** — **Butt-ending index 29.2 = table
+29.2 (offset 0)**, then **Hand pass 29.12/29.13 · Holding 29.15/29.16 · Roughing 29.26/29.27 · Spearing
+29.28/29.29 · Time-out 29.30/29.31, all +1** — plus the eight-entry alphabetical mapping above. **Neither
+argument depends on the pairing below.**
+
+⚠️ **DO NOT RECORD IT AS "the index is systematically off by one" — IT IS NOT, and the naive method still
+fails.** Pairing index headwords with their `- signal … 29.x` sub-entries programmatically returns
+**duplicate assignments** — Charging at both 29.4 and 29.5, Icing at
 both 29.18 and 29.19, Roughing at both 29.26 and 29.27 — because a `- signal` line belongs to the
 headword ABOVE it and consecutive headwords each carrying one defeat naive attribution. **Early entries
 (Butt-ending 29.2, Charging 29.3) match the table; several middle ones appear off by one.** That is
 suggestive and it is not a finding.
 
-**So: the hooking disagreement is VERIFIED and the pattern is NOT.** ⚠️ **What matters operationally is
+**So: the hooking disagreement is VERIFIED, the RANGE is verified by the two arguments above, and the
+NAIVE PAIRING remains useless.** ⚠️ **What matters operationally is
 the direction of trust: the SIGNAL TABLE is the normative text and the index is a finding aid. Check a
 signal number against the table, never against the index — and if a future agent "corrects" a signal
 citation on the strength of the index, this is why it is wrong.**
@@ -965,3 +992,56 @@ Hockey Canada bylaws, league supplementary discipline, association concussion pr
 **BVHS goalie manual**, which is linked in `goaltender.md`'s own Sources and would close the last
 unread mechanical-risk surface in that file.
 
+---
+
+## `ihuk_junior_roc` · `ihuk_u10_roc` · `ihuk_nihl_roc` · `ihuk_wnihl_roc` — the four IHUK Rules of Competition
+
+⚠️ **THESE ANSWER THE QUESTION THE CORPUS SPENT A LONG TIME SAYING NO BRITISH DOCUMENT ANSWERS: WHICH AGE
+GROUPS MAY BODY CHECK.** The two rule books genuinely are silent on it — `grep -i "body.?check"` returns
+**zero** in both In-House editions, raw and flattened, and the IIHF book's only category-scoped checking rule
+is 101.1 (women's). ⚠️ **The answer is in the COMPETITION regulations, which sit on the same England Ice
+Hockey page as the In-House Rules and had never been opened.** `uk_rules.md` had named the Rules of
+Competition as *"a separate standing document… which sets the coaching requirements and is not reproduced
+here"* — **the corpus knew it existed, characterised what was in it, and never fetched it.**
+
+| file | pages | what it settles |
+|---|---|---|
+| `ihuk_junior_roc` | 32 | The table: **U10 and U12 non-checking, U14 / U16 / U19s checking** |
+| `ihuk_u10_roc` | — | ⚠️ **The only one stating it as a RULE rather than a format label** — *"Bodychecking is NOT allowed in U10 matches."* |
+| `ihuk_nihl_roc` | — | *"NIHL │ 3 x 20 minute periods │ Full ice, **checking**, stop clock"* |
+| `ihuk_wnihl_roc` | — | *"WNIHL U16 … Full ice, **non-checking**"* and *"WNIHL … Full ice, **non-checking**"* ⚠️ **TIGHTER than IIHF 101.1, which permits a limited form** |
+
+### ⚠️⚠️ QUOTE THE CHECKING TABLE FROM `_layout` ONLY — THE PLAIN EXTRACTION SCRAMBLES IT
+
+**This is worse than a false zero. It is a false PAIRING.** `pdftotext` without `-layout` reads that table
+**column by column**:
+
+> `Age group U10 U12 U14 U16 U19s Length Click here for guidance 3 x 18-minute periods 3 x 15-minute periods … Format Cross-ice jamboree, non-checking Full ice, non-checking, running clock Full ice, checking, stop clock …`
+
+⚠️ **So *"U14"* sits nowhere near *"checking"*, and a PROXIMITY GREP PAIRS THE WRONG AGE WITH THE WRONG
+FORMAT — it would happily "confirm" that U12 is a checking category or that U16 is not.** ⚠️ **`_layout`
+keeps the row intact:** `U14  3 x 15-minute periods  Full ice, checking, stop clock` — **and both are on
+disk, because these four are in `DUAL_EXTRACT`.**
+
+### ⚠️ THEY ARE REVISED IN PLACE, AT UNCHANGED URLs
+
+**Every one carries a `ModDate` later than its `CreationDate`** — WNIHL's was **three days old** when
+fetched. ⚠️ **A silent replacement is invisible to a URL check. Re-fetch and compare dates before trusting a
+quotation.**
+
+**Text-to-PDF ratios, for spotting a failed re-extraction:** `ihuk_junior_roc` **5.0%** · `ihuk_u10_roc`
+**2.8%** · `ihuk_nihl_roc` **10.7%** · `ihuk_wnihl_roc` **6.5%**. All four have a real text layer.
+
+⚠️ **PRECEDENCE, ADJUDICATED — the arrow does NOT mean what it looks like.** The Junior ROC prints
+*"Order of precedence: IIHF Rules → IHUK In-House Rules → Junior Rules of Competition"*, **and the sentence
+immediately above it glosses the arrow**: *"Where the IIHF rules are supplemented or amended by the IHUK
+In-House Rules…, the IHUK wording **will take precedence** for domestic competition."* **The later, more
+local document wins where it speaks.** ⚠️ **But the question does not arise, which is the stronger answer:
+the IIHF book never GRANTS a right to body check — its glossary DEFINES a legal check and Rules 41–48
+penalise illegal ones. A competition regulation declaring its games non-checking is ADDING A RESTRICTION TO A
+SILENCE.**
+
+⚠️ **SCOPE LIMIT, and it must survive into anything written from these:** these are IHUK/EIH-published league
+regulations. **They do NOT settle Scottish domestic competitions outside the IHUK junior structure, BUIHA, or
+the EIHL. PNIHL is named in the NIHL document and was never fetched. NIHL National's own regulations exist
+and are unread.** *"Ask your league"* remains right everywhere else.

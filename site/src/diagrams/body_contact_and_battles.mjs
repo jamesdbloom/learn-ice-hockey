@@ -925,6 +925,31 @@ const W_PUCK = { at: 'corner:right', dx: -6, dy: 6 };            // (76, 40)
 // 10.7 ft, so no mark is eating another.
 const W_CHECKER = { at: 'top-of-circle:right', dx: 6, dy: -2 };  // (60, 20)
 
+// ⚠️ THE CAPTION SAYS "THREE CASES" AND MUST VOICE THREE. It promised three and
+// delivered two: Case 1 (the angle, which is the picture) and Case 2 (skates parallel,
+// forearm and hip). CASE 3 WAS ABSENT, so a listener was told there was a third and never
+// heard it — and the gap was the dangerous one, because the caption forbids the back to the
+// wall absolutely while the only remaining instruction, "get your skates parallel", is the
+// one a player already facing the wall cannot follow. A prohibition with no reachable
+// alternative is how a player turns.
+//
+// THE COUNT COULD NOT BE LOWERED INSTEAD. body_contact_and_battles.md's own ```facts block
+// numbers the cases — "Action: Case 3, already facing the wall — spread the load, stick and
+// gloves up on the glass, arms out as a shock absorber" — so a caption saying "two" would
+// contradict a facts line saying "Case 3" in the same document, in the layer voiced loudest.
+//
+// SOURCE, not memory. USA Hockey, Introduction To Body Contact: the teaching point is to
+// distribute the force of the impact over as wide a surface as possible, including putting
+// stick and gloves on the glass; the listed Common Error is failing to get them up and
+// spread out on it; the drill has players meet the boards with extended arms, forearms, side
+// of body and legs, but with no head contact at all; and the ordering is the manual's, which
+// asks a player to turn skates parallel "if at all possible". Case 3 is damage limitation,
+// and the caption says so rather than offering it as an equal option.
+//
+// ⚠️ NO NEW NEGATION-BEFORE-SEPARATOR. "cannot turn," was the obvious phrasing and is a
+// trap: it inverts to "if you are already facing the wall and CAN turn, get your stick and
+// gloves up on the glass", which is Case 3 taught to the player who still has Case 2. The
+// condition is therefore stated without a negation word at all.
 const angleIntoTheCorner = {
   id: 'angle-into-the-corner',
   owner: 'content/technique/body_contact_and_battles.md',
@@ -965,7 +990,12 @@ const angleIntoTheCorner = {
     // taught as the instruction. The tail is a noun phrase, which is why no verb-led scan of this
     // directory ever found it. The safety content is unchanged; only the sentence boundary moved.
     'to the wall and take it on your forearm and hip, not the point of your shoulder. Knees bent, ' +
-    'head up and chin off your chest.',
+    'head up and chin off your chest. That is the second case. The third is what is left when ' +
+    'turning is already impossible: you are facing the wall with the contact arriving. Get your ' +
+    'stick and gloves up and spread out on the glass, arms out as a shock absorber, and take the ' +
+    'impact over as wide a surface as you have, with no head contact at all. Turn your skates ' +
+    'parallel if at all possible, because that third case is damage limitation rather than the ' +
+    'position to aim for.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goaltender in its ' +

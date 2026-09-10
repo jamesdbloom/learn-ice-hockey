@@ -476,8 +476,8 @@ Action: Arrive at the puck on an angle rather than straight at the passer, curli
 Goal: Your next option should already be visible when the puck lands on your blade
 Key: Decide which way you are going before the puck arrives, and be pointing that way when it does
 Risk: A closed body invites the pressure to arrive on your back — worst on the offensive half-wall and on breakout receptions
-Never: Take that contact with your back to the boards, and never duck. Get your skates parallel to the wall instead and take it on your forearm and hip, head up, chin off your chest
-Technique: If you are already facing the wall and cannot turn, get your stick and gloves up and spread out on the glass, and spread the impact over as wide a surface as you have
+Never: Take contact with your back to the boards, and never duck. Get your skates parallel to the wall instead and take it on your forearm and hip, not your shoulder, head up, chin off your chest
+Technique: If you are already facing the wall and cannot turn, get your stick and gloves up on the glass and spread the impact over as wide a surface as you have, with no head contact at all
 ```
 
 **Open** means your hips and shoulders are turned so you can see up ice and across the ice at the moment the puck arrives — rather than square to the passer with your back to everything you want to do next.
@@ -824,6 +824,7 @@ document, that is named too.*
 8. **One-touch passing beats coverage because it moves the puck faster than a defence can rotate** — but only if you chose your next target before the puck arrived.
 9. **A pass is a two-player action.** The receiver's timing and lane create the pass as much as the passer's decision does. When a team cannot complete passes, look at the players without the puck first.
 10. **In your own zone the passing standard is certainty, not value.** No blind pass up the middle, no D-to-D through the slot, no cross-ice in your own end. Those three are risk-management defaults rather than laws of hockey — some breakouts deliberately build in a controlled D-to-D exchange, behind the goal line or high in the zone above the tops of the circles — so treat them as always-on unless your coach has explicitly designed the exception.
+11. **On the wall, the posture you take contact in is not a preference.** Never take contact with your back to the boards, and never duck. Get your **skates parallel to the wall** and take it on your **forearm and hip**, head up and chin off your chest — not on the point of your shoulder. If you are already facing the wall and cannot turn, get your stick and gloves up and spread out on the glass, **with no head contact at all**. This override outranks every other item on this list, and [Body Contact and Battles](body_contact_and_battles.md) owns the full three-case rule and the evidence behind each prohibition.
 
 ---
 

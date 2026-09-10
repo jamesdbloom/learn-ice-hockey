@@ -610,9 +610,14 @@ const clearAtFiveOnSix = {
 // the same pass nearly identical, and the one thing that tells them apart is an
 // empty crease that MAJ-5 has just established does not read at phone width. A cue
 // that only works when you can already see the difference is not a cue.
-//   Hedged:  "Many recreational leagues do not allow or practise pulling the goalie
-//            for this, and some officials stop play early, so agree it beforehand."
-//            The caption carries it, because the caption is all a listener gets.
+//   Hedged:  "Not every league allows or practises pulling the goalie for this, and
+//            some officials stop play early. How many is a question about leagues
+//            rather than about books, and this document has no count for it — so agree
+//            it beforehand." The caption carries the hedge, because the caption is all
+//            a listener gets. ⚠️ IT CARRIES IT WITHOUT THE PHRASE this document,
+//            because rules_primer.md hosts this diagram too and that phrase would
+//            name the wrong one there. The caption says the variation is a league
+//            question rather than a rulebook one, and asserts no count either way.
 //
 // WHY THE NET IS DRAWN EMPTY. The section's instruction to the goaltender is "go,
 // immediately, at the first sign", so by the time anyone is making a D-to-D in his
@@ -730,8 +735,10 @@ const delayedPenalty = {
     'because the whistle comes when they gain control and keeping it away from them is the entire ' +
     'job; your other four skaters are not drawn at all, because the shape you use with the extra ' +
     'attacker is a system choice and this is a picture of keeping the puck rather than of a shape. ' +
-    'And check before the game rather than in it: many recreational leagues do not ' +
-    'allow or practise pulling the goalie on a delayed call, and some officials stop play early.',
+    'And check before the game rather than in it: not every league allows or practises ' +
+    'pulling the goalie on a delayed call, and some officials stop play early. How many ' +
+    'is a question about leagues rather than about rulebooks, and no count of it is ' +
+    'given here.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is empty — no goaltender is ' +

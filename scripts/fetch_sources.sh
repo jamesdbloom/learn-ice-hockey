@@ -137,6 +137,22 @@ DOCS=(
   "ukcg|https://sportandrecreation.org.uk/|https://sportandrecreation.org.uk/files/uk-concussion-guidelines-for-grassroots-non-elite-sport---november-2024-update-061124084139.pdf"
   "crt6|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2024/02/Concussion-tool-CRT6.pdf"
   "carha|https://carhahockey.ca/|https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf"
+
+  # ⚠️ THE FOUR IHUK RULES OF COMPETITION. These answer a question the corpus spent a long time
+  # saying no British document answers: WHICH AGE GROUPS MAY BODY CHECK. The two rule books
+  # really are silent on it — the answer is in the COMPETITION regulations, which sit on the
+  # same England Ice Hockey page as the In-House Rules and had never been opened.
+  #
+  # ⚠️ THEY LIVED ONLY IN A SESSION SCRATCHPAD WHILE THE CORPUS QUOTED THEM. That is the
+  # carha.txt failure verbatim — a document the corpus depends on with no way to rebuild it.
+  #
+  # ⚠️ EVERY ONE CARRIES A ModDate LATER THAN ITS CreationDate — WNIHL's was three days old
+  # when fetched. IHUK REVISES THESE IN PLACE AT UNCHANGED URLs, so a silent replacement is
+  # invisible. Re-fetch before trusting a quotation, and check the dates.
+  "ihuk_junior_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/Junior-Rules-of-Competition-2026-27.pdf"
+  "ihuk_u10_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/U10-Rules-of-Competition-2026-2027.pdf"
+  "ihuk_nihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/NIHL-1-and-2-ROC-2026-2027.pdf"
+  "ihuk_wnihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/WNIHL-Rules-of-Competition-2026-2027.pdf"
 )
 
 # Books extracted BOTH ways. The plain extraction keeps the canonical name
@@ -146,7 +162,16 @@ DOCS=(
 # and nhl_rules.txt is the PLAIN extraction. Extracting the two editions by
 # different methods would make every diff between them an artefact of the method
 # rather than of the rewrite -- which is the one thing this file is held for.
-DUAL_EXTRACT=(nhl_rules nhl_rules_2024-25 hc)
+# ⚠️ THE IHUK REGULATIONS ARE HERE FOR A SHARPER REASON THAN THE OTHERS.
+#    The checking answer is a TABLE, and the PLAIN extraction reads it COLUMN BY COLUMN:
+#      "Age group U10 U12 U14 U16 U19s  Length ...  Format Cross-ice jamboree, non-checking
+#       Full ice, non-checking, running clock  Full ice, checking, stop clock ..."
+#    ⚠️ SO "U14" SITS NOWHERE NEAR "checking" IN THE PLAIN TEXT. This is WORSE than a false
+#    zero: a proximity grep PAIRS THE WRONG AGE WITH THE WRONG FORMAT, and would happily
+#    "confirm" that U12 is a checking category or that U16 is not. The -layout extraction
+#    keeps the row intact: "U14  3 x 15-minute periods  Full ice, checking, stop clock".
+#    ⚠️ QUOTE THE CHECKING TABLE FROM `_layout` ONLY.
+DUAL_EXTRACT=(nhl_rules nhl_rules_2024-25 hc ihuk_junior_roc ihuk_u10_roc ihuk_nihl_roc ihuk_wnihl_roc)
 
 command -v pdftotext >/dev/null 2>&1 || {
   echo "pdftotext not found — install poppler (brew install poppler)" >&2
