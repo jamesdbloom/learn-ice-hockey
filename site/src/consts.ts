@@ -83,6 +83,29 @@ export const SITE_AUTHOR_URL = 'https://github.com/jamesdbloom';
  * Guide to RSS; Apple verifies ownership with a claim token instead. This tag exists for
  * Spotify alone. Do not delete it as "unused" on Apple's account.
  */
+/**
+ * The podcast's own channel description — what Apple Podcasts and Spotify show
+ * under the show title, and what a listener reads before subscribing.
+ *
+ * ⚠️ DELIBERATELY NOT `SITE_DESCRIPTION`, and the two must not be merged back.
+ * `SITE_DESCRIPTION` is the meta description on every page, the homepage lede
+ * and the article RSS channel description — it describes a documentation corpus,
+ * because that is what the site is. This one is written in the podcast's voice
+ * and set by the owner on 10 September 2026. Pointing the feed at
+ * `SITE_DESCRIPTION` again would make the show sound like a by-product of a
+ * website; pointing the site at this one would have the homepage announce
+ * itself as a podcast. They are different products with different audiences.
+ *
+ * ⚠️ CHANGING THIS IS OUTWARD-FACING AND SLOW TO UNDO. Apple and Spotify poll
+ * the feed and cache what they find; a correction can take hours to appear and
+ * may need a manual refresh in Podcasts Connect.
+ */
+export const PODCAST_DESCRIPTION =
+  'The podcast that teaches you to think the game. Learn exactly where to ' +
+  'position yourself, how to make the right play, how to anticipate what ' +
+  'happens next, and how to flow with your teammates as a single unit. If you ' +
+  'want smarter hockey, this is where it starts.';
+
 export const PODCAST_OWNER_EMAIL = 'podcast@learn-ice-hockey.com';
 
 /**

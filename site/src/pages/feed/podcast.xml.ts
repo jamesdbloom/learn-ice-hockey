@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getDoc } from '../../data/nav';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, PODCAST_OWNER_EMAIL } from '../../consts';
+import { SITE_TITLE, PODCAST_DESCRIPTION, SITE_AUTHOR, PODCAST_OWNER_EMAIL } from '../../consts';
 import podcast from '../../data/podcast.json';
 import coverData from '../../data/podcast-cover.json';
 
@@ -174,11 +174,11 @@ export const GET: APIRoute = ({ site }) => {
   <channel>
     <title>${xml(SITE_TITLE)}</title>
     <link>${origin}/</link>
-    <description>${xml(SITE_DESCRIPTION)}</description>
+    <description>${xml(PODCAST_DESCRIPTION)}</description>
     <language>en-GB</language>
     <copyright>${xml(`© 2026 ${SITE_AUTHOR}. Licensed CC BY-NC 4.0.`)}</copyright>
     <itunes:author>${xml(SITE_AUTHOR)}</itunes:author>
-    <itunes:summary>${xml(SITE_DESCRIPTION)}</itunes:summary>
+    <itunes:summary>${xml(PODCAST_DESCRIPTION)}</itunes:summary>
     <itunes:type>serial</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="${xml(cover)}" />
