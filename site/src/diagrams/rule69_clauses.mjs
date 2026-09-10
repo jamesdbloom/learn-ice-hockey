@@ -106,7 +106,12 @@ export const REFEREE_JUDGEMENT =
  * line, " + this. Carries no terminal stop — the caller supplies it.
  */
 export const TABLES_ALLOW_OUTSIDE =
-  'allowing the goal where an attacker plants himself outside the crease and ' +
+  // ⚠️ 5E's OWN WORDING IS "on the crease line OR outside the goal crease", and this
+  // string dropped the first limb. That was harmless until round 72 made the LINE the
+  // whole subject — the corpus now tells a reader to keep both feet off it, so a shared
+  // string reaching four captions must not imply the tables only cover being clear of it.
+  'allowing the goal where an attacker plants himself on the crease line or outside ' +
+  'the crease and ' +
   'obstructs the goalie’s vision (NHL Table 14, and IIHF 2025/26 Appendix IV ' +
   'Table 16, renumbered Table 14 in 2026/27, at Situation 5E)';
 

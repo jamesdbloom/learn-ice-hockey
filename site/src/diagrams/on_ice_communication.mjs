@@ -241,31 +241,25 @@ const whoCanSeeIt = {
 
   caption:
     'Why the call exists at all: the player going to get the puck is the one who cannot see the ' +
-    // ⚠️ "IN THIS PICTURE" IS LOAD-BEARING. Anyone with a view can make the call — the section's
-    // own organising principle, and its :58 says flatly "Everyone else can see it" — so a bare
-    // "the two who can see it" would be an absolute the document contradicts three times. Only
-    // four players are drawn here; this sentence describes them, not hockey.
-    'danger, and in this picture the two who can see it are the two who cannot reach it. This is ' +
-    'your own end. A ' +
-    'defenceman is skating back into the corner for a loose puck; a forechecker is closing on him ' +
-    'from behind, which is the one place his eyes do not reach; and his partner across the net and ' +
-    'his goaltender can both see both of them and are both too far away to do anything about it ' +
-    'except say so. That is the whole mechanism of talking on the ice — the information that would ' +
-    'save the retriever is already sitting in somebody else’s eyes, costing nothing, and useless ' +
-    'until it is spoken. Say it while the puck is still travelling rather than as it arrives, keep ' +
-    'it to a word or two, make it loud enough to survive a rink, and use his name, because an ' +
-    'unaddressed shout turns four heads. Where two people can see it, both should call it: the ' +
-    'failure being guarded against is silence, not duplication. What the words are is a team matter ' +
-    'and not a law of hockey — there is no official hockey vocabulary, and calls vary by team, ' +
-    'region, level and coach, so agree your own list and drill it rather than assuming anyone ' +
-    'else’s travels. Three honest limits. This notation has no facing, no head and no sightline, so ' +
-    'the claim that the retriever cannot see him rests on which way he is travelling and is not ' +
-    'something the drawing itself establishes. ' +
-    'Which side the forechecker arrives from is one instance rather than a ' +
-    'fixed arrangement, and how many are coming is a separate call again — one forechecker can be ' +
-    'beaten with a reverse or a quick turn, two means you are being sealed and the puck has to ' +
-    'leave. And the mirror of this picture is the same corner with nobody arriving, where the call ' +
-    'is "time" and the danger runs the other way, because a false "time" sends a teammate into ' +
+    // ⚠️ "IN THIS PICTURE" IS LOAD-BEARING. Anyone with a view can make the call — the owner
+    // document's own organising principle, and on_ice_communication.md:60 says flatly "Everyone
+    // else can see it" — so a bare "the two who can see it" would be an absolute that document
+    // contradicts three times. Only four players are drawn here; this sentence describes them,
+    // not hockey.
+    'danger, and in this picture the two who can see it are the two who cannot reach it. A ' +
+    'defenceman is going back into his own corner for a loose puck; a forechecker is closing on ' +
+    'him from behind, which is the one place his eyes do not reach; and his partner across the ' +
+    'net and his goaltender can see both of them and can do nothing about it except say so. Both ' +
+    'are labelled "calls it", because where two people can see it both should call it: the ' +
+    'failure being guarded against is silence, not duplication. The words themselves are a team ' +
+    'matter, not a law of hockey. Agree your own list: there is no official hockey vocabulary. ' +
+    'Two honest limits. This notation has no facing, no head and no sightline, so the claim ' +
+    'that the retriever cannot see him rests on which way he is travelling and is not ' +
+    'something the drawing establishes. ' +
+    'And which side the forechecker arrives from is one instance rather than a fixed ' +
+    'arrangement. The mirror of this picture is the same corner with nobody arriving, where the ' +
+    'call is "time" and the danger runs the other way, because a false "time" sends a teammate ' +
+    'into ' +
     'contact he was not braced for. ⚠️ Which is the safety instruction this picture carries, since ' +
     'the warning is shouted at a player arriving at the wall who cannot see the check coming. Two ' +
     'separate postures injure a neck at the boards, and they are not the same warning. A back ' +
@@ -276,15 +270,18 @@ const whoCanSeeIt = {
     'cervical spine injuries have come from the head being slightly flexed while making head-on ' +
     'contact with the boards or the goal post. So never take that contact with your back to the ' +
     'boards, and never duck. ' +
-    // ⚠️ THIS SENTENCE NAMES ITS OWN SUBJECT AND RE-CARRIES BOTH PROHIBITIONS ON PURPOSE.
-    // The caption is 3,500-odd characters against md_to_speech's MAX_BILLED_CHARS of 2,800, so
-    // it CANNOT be voiced in one chunk and `_split_paragraph` cuts it at a sentence boundary
-    // near the limit — measured this session, immediately after "and never duck." A listener
-    // who hears only the second half would otherwise open on a bare "Get your skates parallel
-    // to the wall", an instruction about contact they were never told to expect, which is the
-    // dangling-demonstrative defect this same round found at the section's :62. Written this
-    // way, either half stands alone with both absolutes in it. If the caption is edited, the
-    // cut moves: re-run md_to_speech.transform_document and read the new boundary.
+    // ⚠️ THIS SENTENCE NAMES ITS OWN SUBJECT AND RE-CARRIES BOTH PROHIBITIONS ON PURPOSE,
+    // and that is now belt and braces rather than the only thing holding the caption
+    // together. It used to be load-bearing: at 3,989 characters against md_to_speech's
+    // MAX_BILLED_CHARS of 2,800 the caption could not be voiced in one chunk, and
+    // `_split_paragraph` cut it at the sentence boundary nearest the limit, which fell
+    // immediately after "and never duck." A listener who heard only the second half would
+    // otherwise have opened on a bare "The posture that survives an arrival at the wall…",
+    // an instruction about contact they were never told to expect. The caption is now under
+    // the limit and is voiced whole, so there is no boundary to engineer — but leave this
+    // sentence carrying both absolutes anyway, because the limit moves the moment anyone
+    // adds to the caption. ⚠️ If it grows past 2,800 again, re-run
+    // md_to_speech.transform_document and read the new boundary before shipping it.
     'The posture that survives an arrival at the wall is skates parallel to it, the contact taken ' +
     'on your forearm and hip, head up and chin off your chest — never your back to the boards, ' +
     'and never a chin dropped to look for the puck. Protecting the puck never justifies squaring ' +
@@ -292,25 +289,24 @@ const whoCanSeeIt = {
     'not something to lean on, because the penalty arrives after the injury does, and because in ' +
     'many leagues body checking is not allowed at all. Find out which book you are under, and ' +
     'whether you may body check in this game rather than merely in your division, before ' +
-    'you plan on taking contact or making it: USA Hockey Rule 604(a) prohibits body checking at 12 ' +
-    '& under and below, in every girls’ and women’s classification and in non-check adult hockey; ' +
-    '604(b) bars it outright any time a checking team plays a non-checking one; ' +
-    'Hockey Canada Rule 7.3 applies at U13 and below, throughout female hockey and in any other ' +
-    // ⚠️ BOTH LIMBS AND THE EXCEPTION, BECAUSE "ONLY" MAKES A TRUNCATION A FALSE
-    // PROHIBITION. This shipped as "only where there is a clear intention of playing the
-    // puck" — which, with "only" in front of it, tells a woman playing under the IIHF book
-    // that a check made while going for the puck she does not yet have is illegal. It is
-    // not. IIHF 101.1, verified against sources/iihf_rules.txt this session: "In Women's
-    // Hockey 'bodychecking' is allowed when there is a clear intention of playing the puck
-    // or attempting to 'gain possession' of the puck with the exception from the situation
-    // described in this rule." Two limbs, then a qualifier. The corpus has a settled short
-    // form for the qualifier — "subject to the exception the rule itself then sets out",
-    // used at forechecking_systems.md:502, defending_the_rush.md:353,
-    // offensive_zone_play.md:792 and game_management.md:770 — and center.md:606 and
-    // game_management.md:770 carry both limbs. This caption now carries all three parts.
-    'division a Member approves; and the IIHF restricts by category rather than by age, allowing ' +
-    'bodychecking in women’s hockey only where there is a clear intention of playing the puck or ' +
-    'an attempt to gain possession of it, subject to the exception the rule itself then sets out.',
+    'you plan on taking contact or making it.',
+    // ⚠️ CUT FOR LENGTH, NOT BECAUSE IT WAS WRONG, AND RECORDED SO IT IS RECOVERABLE.
+    // The sentence above used to end in a colon followed by a book-by-book survey of who
+    // may body check: USA Hockey 604(a) and 604(b), Hockey Canada 7.3, and the IIHF's
+    // women's-hockey restriction with both its limbs and its exception. It was ~580
+    // characters of a 3,989-character caption, it is voiced in BOTH hosts, and neither
+    // host's prose is where a reader would look for it. What replaces it is the corpus's
+    // settled short form — find out which book, and whether you may check in this GAME
+    // rather than merely in your division — which is the actionable half.
+    // The full survey is carried at body_contact_and_battles.md:48-66 (a table by
+    // classification), center.md:629-642, defending_the_rush.md:357-367,
+    // forechecking_systems.md:17 and :269, game_management.md:810 and
+    // playing_without_the_puck.md:169. Nothing in the corpus lost a claim.
+    // ⚠️ The IIHF limb in particular must not be restored in truncated form: it once
+    // shipped as "only where there is a clear intention of playing the puck", and "only"
+    // in front of one limb tells a woman under the IIHF book that a check made while
+    // going for a puck she does not yet have is illegal. It is not. Both limbs and the
+    // qualifier, or nothing.
 
   describe:
     'Your own end, your net at the right and your goaltender in the crease. A loose puck sits in ' +

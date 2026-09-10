@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getDoc } from '../../data/nav';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from '../../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, PODCAST_OWNER_EMAIL } from '../../consts';
 import podcast from '../../data/podcast.json';
 
 /**
@@ -80,8 +80,38 @@ function xml(value: string): string {
     .replace(/'/g, '&apos;');
 }
 
+/** Escape the characters that would be read as HTML MARKUP inside a CDATA section.
+ *  ⚠️ CDATA suspends XML parsing, so `xml()` above must NOT also be applied — the two are
+ *  mutually exclusive and double-escaping would ship a literal `&amp;lt;p&amp;gt;` to a listener.
+ *  But the podcast clients render the CDATA payload as HTML, so a `<` or `&` inside a
+ *  document's own description still has to be neutralised or it becomes markup. */
+function html(value: string): string {
+  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/** Wrap rich text for a podcast client. ⚠️ `]]>` is the ONLY sequence that can terminate a
+ *  CDATA section early, so it is the one thing that must be broken up. */
+function cdata(value: string): string {
+  return `<![CDATA[${value.replace(/]]>/g, ']]&gt;')}]]>`;
+}
+
 /** ⚠️ A CONSTANT. See the note above. Never compute this. */
 const PUB_DATE = 'Mon, 08 Sep 2026 00:00:00 +0000';
+
+/**
+ * ⚠️ THE LINK BACK TO THE SITE MUST BE AN ANCHOR, NOT A BARE URL.
+ * Read from both platforms' own documentation on 10 September 2026:
+ *   - Apple, A Podcaster's Guide to RSS: episode `<description>` accepts "some HTML
+ *     (`<p>`, `<ol>`, `<ul>`, `<li>`, `<a>`) **if wrapped in the `<CDATA>` tag**", and
+ *     "enclose all portions of your XML that contain embedded HTML in a CDATA section to
+ *     prevent formatting issues, and **to ensure proper link functionality**."
+ *   - Spotify, Formatting your show notes: `<a href>` is supported, and
+ *     ⚠️ "**We only support https links (not http)**."
+ * ⚠️ THIS PREVIOUSLY EMITTED PLAIN TEXT — "Full text at {url}" — and NEITHER PLATFORM
+ *     DOCUMENTS AUTO-LINKIFYING A BARE URL. It was almost certainly not clickable.
+ * ⚠️ Apple's "timed links" feature is NOT an alternative: it is scoped to links to Apple
+ *     services (Books, Music, Maps, News, TV, Shazam), never to an arbitrary website.
+ */
 
 export const GET: APIRoute = ({ site }) => {
   const origin = (site ?? new URL('http://localhost/')).origin;
@@ -99,7 +129,11 @@ export const GET: APIRoute = ({ site }) => {
         // Stable for the life of the episode: the document id, not the file.
         `      <guid isPermaLink="false">${xml(`learn-ice-hockey:${ep.doc_id}`)}</guid>`,
         `      <link>${xml(page)}</link>`,
-        `      <description>${xml(`${doc.description} Full text at ${page}`)}</description>`,
+        `      <description>${cdata(
+          `<p>${html(doc.description)}</p>` +
+          `<p>Full text, diagrams and sources at ` +
+          `<a href="${html(page)}">${html(page.replace(/^https?:\/\//, ''))}</a></p>`,
+        )}</description>`,
         `      <itunes:title>${xml(ep.title)}</itunes:title>`,
         `      <itunes:episode>${ep.track}</itunes:episode>`,
         // Spotify-only; Apple ignores it. Same value, so the two agree.
@@ -129,9 +163,12 @@ export const GET: APIRoute = ({ site }) => {
     <itunes:type>serial</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="${xml(cover)}" />
-    <itunes:category text="Sports" />
+    <itunes:category text="Sports">
+      <itunes:category text="Hockey" />
+    </itunes:category>
     <itunes:owner>
       <itunes:name>${xml(SITE_AUTHOR)}</itunes:name>
+      <itunes:email>${xml(PODCAST_OWNER_EMAIL)}</itunes:email>
     </itunes:owner>
     <image>
       <url>${xml(cover)}</url>

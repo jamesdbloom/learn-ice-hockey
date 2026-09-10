@@ -228,22 +228,16 @@ const icingGainingTheLine = {
 
   caption:
     'Two players in exactly the same place — both bodies on the centre red line, one drawn above ' +
-    'the other — and only one of them has iced the puck. NHL Rule 81.1: to nullify a potential ' +
-    'icing your team must gain the line, and the puck, while on a player’s stick and not a skate, ' +
-    'must make contact with the centre red line. This is the detail almost nobody ' +
-    'knows, because the question is not where you were, it is where the puck on your stick was. ' +
-    'The shaded region is the shooting team’s own half, which the red line divides off for this ' +
-    'purpose: the upper player’s dump-in leaves with the puck still inside it and is iced, while ' +
-    'the lower player’s leaves with the puck touching the line — the black dot, which is the ' +
-    'whole rule — so the identical dump is legal, and that is why you carry ' +
-    'it the extra half-stride. This notation has no symbol for a stick, so what you can see is where ' +
-    'each dump-in begins, and the gap between a body and the start of its line is the reach the ' +
-    'rule turns on rather than anything the body itself decides. Rule 81.1 applies to a team ' +
-    'equal or superior in numerical strength: on the penalty kill you may ice it freely — though ' +
-    'the NHL withdraws that from a team short-handed by a major which has left nobody on the ' +
-    'penalty bench (Rule 81.6), and USA Hockey grants it only at Youth 15-Only and above, Girls ' +
-    '16U and above, High School and Adult (Rule 624(b)(1)), so below those levels a shorthanded ' +
-    'team cannot ice the puck at all.',
+    'the other — and only one of them has iced the puck. NHL Rule 81.1, for a team equal or ' +
+    'superior in numerical strength: to nullify a potential icing your team must gain the line, ' +
+    'and the puck, while on a player’s stick and not a skate, must make contact with the centre ' +
+    'red line. So the question is not where you were. It is where the puck on your stick was. ' +
+    'The shading is the shooting team’s own half: the upper player’s dump-in leaves with the ' +
+    'puck still inside it and is iced, while the lower player’s leaves with the puck touching the ' +
+    'line — the black dot, which is the whole rule — so the identical dump is legal, and that is ' +
+    'why you carry it the extra half-stride. This notation has no symbol for a stick, so what you ' +
+    'can see is only where each dump-in begins, and the gap between a body and the start of its ' +
+    'line is the reach the rule turns on.',
 
   describe:
     'The full sheet, with the attacking end at the right. Two of our players are drawn, one in ' +
@@ -354,46 +348,36 @@ const icingTheRaceAndTheDot = {
   width: 900,
 
   caption:
-    'Hybrid icing, and why the end-zone faceoff dot is a deadline rather than a finish line. This ' +
-    'is your own end, your net at the right, and the puck has been shot the length of the ice ' +
-    'over your goal line into the corner. Both skaters reach the dot line at the same instant, and ' +
-    'the marked box is the near dot — marked as the cut-off for the decision, not as a place a ' +
-    'draw is taken. NHL Rule 81.1, and IIHF Rule 81.1 states every sentence quoted here in the same ' +
-    'words — though not the whole rule: the IIHF adds a paragraph for when there is no race at all. ' +
-    '"This decision by the Linesperson will be made by no later than the instant the first player reaches ' +
-    'the end zone face-off dots with the player’s skate being the determining factor" — and then, ' +
-    'in the rule’s own clarifying sentence, "the determining factor is which player would first ' +
-    'touch the puck, not which player would first reach the end zone face-off dots." So being ' +
-    'level at the box settles nothing. Your defenceman is on the wall lane, about twenty-five feet ' +
-    'from the puck; the forechecker inside him is about thirty. Those distances are measured ' +
-    'off this drawing, not taken from a rulebook. What settles it is being clearly on ' +
-    'course to reach the puck first, and "[i]f the ' +
-    'race for the puck is too close to determine by the time the first player reaches the end zone ' +
-    'face-off dots, icing shall be called." Your goaltender is drawn staying put on purpose: under ' +
-    'these two books a goaltender who "feigns playing the puck, attempts to play the puck, or skates ' +
-    'in the direction of the puck on an icing at any time" waves it off and leaves the other team a ' +
-    'live puck in your corner (Rule 81.3). ' +
-    'And this is not everybody’s icing — USA Hockey plays automatic icing: "Icing the puck shall have ' +
-    'been completed the instant the puck has completely crossed the goal line" (Rule 624, Note), so there is no race to draw ' +
-    'at all, and Hockey Canada runs hybrid only in U18AAA, Junior and Senior at the Member’s ' +
-    'option — where it is also the book that writes the two outcomes out, a defending skater judged ' +
-    'first to potentially touch the puck and "hybrid-icing will be called", an attacking skater ' +
-    'judged first and "hybrid icing will be waved off and play will continue" (Rule 6.7(e)). ' +
-    'Ask which your league plays. ' +
-    '⚠️ The race is not a licence to hit, and three of the four books say so in one sentence each: ' +
-    'unnecessary contact with a player playing the puck on an obvious icing play that results in ' +
-    'him hitting or impacting the boards "is boarding and must be penalized as such" (NHL 41.1, ' +
-    'IIHF 41.1, Hockey Canada 7.2, word for word), while USA Hockey penalises the same contact ' +
-    'without naming boarding, at Rule 624(d). If you are clearly beaten to the puck, do not run yourself into the end boards ' +
-    'for nothing. ' +
-    '⚠️ And whoever wins it, how you arrive at the wall is the part that hurts people — this one holds in every ' +
-    'league, checking or not, because unexpected contact happens in non-check hockey and the boards are just as ' +
-    'hard. Never take that contact with your back to the boards, and never duck. Get your skates parallel to the ' +
-    'wall instead, take it on your forearm and hip, head up and chin off your chest. Those are two prohibitions ' +
-    'against two different injuries: a turned back makes it a hit from behind, which you can neither see nor brace ' +
-    'for, and a chin tucked to the chest straightens the cervical spine — and it is that second one, from head-on ' +
-    'contact with the boards or a goal post with the head down, that USA Hockey’s Heads Up Hockey guide says "can ' +
-    'occur at walking speed." The walking-speed sentence belongs to that mechanism and to no other.',
+    'Hybrid icing, and why the end-zone faceoff dot is a deadline rather than a finish line. ' +
+    'Both skaters reach the dot line at the same instant, and the marked box is the near dot — ' +
+    'marked as the cut-off for the decision, not as a place a draw is taken. Under NHL Rule 81.1, ' +
+        // ⚠️ "IN THE SAME WORDS" IS NOT "THE WHOLE RULE", and a round-72 compression cut the
+    // clause that said so. Non-negotiable 4: an honest disclosure is not a length saving.
+'and IIHF Rule 81.1 in the same words — though not the whole rule, since the IIHF adds a ' +
+    'paragraph for when there is no race at all — the decision "will be made by no later than the instant ' +
+    'the first player reaches the end zone face-off dots with the player’s skate being the ' +
+    'determining factor" — and then, in the rule’s own clarifying sentence, "the determining ' +
+    'factor is which player would first touch the puck, not which player would first reach the end ' +
+    'zone face-off dots." So being level at the box settles nothing. What settles it is being ' +
+    'clearly on course to reach the puck first, and a race too close to determine by that instant ' +
+    'is icing. Your goaltender is drawn staying put on purpose: under those two books a goaltender ' +
+    'who "feigns playing the puck, attempts to play the puck, or skates in the direction of the ' +
+    'puck on an icing at any time" waves it off and leaves the other team a live puck in your ' +
+    'corner (Rule 81.3). ' +
+    '⚠️ And this is not everybody’s icing. USA Hockey plays automatic icing, completed "the instant ' +
+    'the puck has completely crossed the goal line" (Rule 624, Note), so there is no race to draw ' +
+    'at all. Hockey Canada runs hybrid only in U18AAA, Junior and Senior at the Member’s option ' +
+    '(Rule 6.7(e)). Ask which your league plays. ' +
+    '⚠️ The race is not a licence to hit. Unnecessary contact with a player playing the puck on an ' +
+    'obvious icing play that results in him hitting or impacting the boards "is boarding and must ' +
+    'be penalized as such" under NHL 41.1, IIHF 41.1 and Hockey Canada 7.2, word for word, and ' +
+    'USA Hockey penalises the same contact without naming boarding, at Rule 624(d). If you are ' +
+    'clearly beaten to the puck, do not run yourself into the end boards for nothing. ' +
+    '⚠️ And whoever wins it, how you arrive at the wall is the part that hurts people, in every ' +
+    'league, checking or not. Never take that contact with your back to the boards, and never ' +
+    'duck. Get your skates parallel to the wall instead, take it on your forearm and hip, head up ' +
+    'and chin off your chest — a turned back makes it a hit from behind, which you can neither see ' +
+    'nor brace for, and a tucked chin straightens the cervical spine.',
 
   describe:
     'The defending half of the rink, your own net at the right and your goaltender in the crease. ' +
@@ -520,56 +504,28 @@ const thePrivilegedArea = {
   width: 900,
 
   caption:
-    'The goalkeeper’s privileged area, shaded — USA Hockey’s own term and USA Hockey’s own shape. Searched ' +
-    'here for both: neither the words nor the construction that draws them appears anywhere in the NHL, IIHF ' +
-    '2025/26 or 2026/27, Hockey Canada or CARHA books, and what those four use to bound the same two questions ' +
-    'is the goal crease instead. So this is a region one book draws and the others do not, rather than a ' +
-    'rule the others write differently. It is also the answer to "USA Hockey has no trapezoid", which is true and is not the ' +
-    'same thing as no restriction behind the net. Rule 607(d) Note 2 draws it "by connecting the ' +
-    'end zone face-off spots with an imaginary line and imaginary lines from each face-off spot ' +
-    'running perpendicular to the end boards", the same words closing Rule 614(c), and the ' +
-    'Casebook at Rule 607, Situation 6 answers in terms that it "extends to the closer end ' +
-    'boards". So the shape is fixed by the dots and the boards rather than by any measurement, ' +
-    'and it travels with whatever sheet you are on; it is drawn here on the NHL-dimensioned rink ' +
-    'these diagrams use. Look at what it takes in and what it leaves out: the whole net front, the ' +
-    'goal line, and all the ice directly behind the net — but not the corners. Two separate rules ' +
-    'turn on it. Rule 614(c) makes it a minor for delay of game where a goalkeeper falls on or ' +
-    'gathers in the puck and causes a stoppage while "[t]he puck is outside the boundaries of the ' +
-    '‘goalkeeper’s privileged’ area", so under this book a goaltender may go to the corner and ' +
-    'play the puck there — what he may not do is smother it. Read the region as a boundary and not ' +
-    'as a licence inside it, though: it is one of four separate triggers in 614(c), and another of ' +
-    'them catches him wherever "[t]he puck is behind the goal line and their body is entirely ' +
-    'outside of the goal crease" — which takes in every part of the shading behind the goal ' +
-    'line. And Rule 607(c) prices contact on ' +
-    'him inside the region, with 607(d) Note 1 sending "any accidental or unavoidable contact" to ' +
-    'the interference rule instead. The two red dashed lines behind the net are not part of it: ' +
-    'that is the trapezoid, which this sheet carries because the rink these diagrams draw is the ' +
-    'NHL’s, and which USA Hockey marks nowhere at all. Set the two shapes against each other and ' +
-    'they are not even the same kind of rule — the trapezoid is much the smaller and says where a ' +
-    'goaltender may play the puck, while the shading says nothing at all about playing it and ' +
-    'bounds where he may freeze it and where contact on him is priced instead. ⚠️ 607(c) is the half to ' +
-    'know before you go hard to the net, and it writes no bare minor: "A minor plus a misconduct or a major plus a game ' +
-    'misconduct penalty shall be assessed to a player who body checks or charges a goalkeeper ' +
-    'while the goalkeeper is within the goal crease or privileged area", with 607(e) adding that ' +
-    '"[a] match penalty for reckless endangerment may also be assessed for charging." A ' +
-    'goaltender anywhere inside this shading, behind his own net included, is not somebody to ' +
-    'finish a check on. ' +
-    '⚠️ And the edge of the shading is not the edge of a permission — that is the half a diagram ' +
-    'of a region invites you to read into it, and 607(d) forecloses it: "A goalkeeper is NOT ‘fair ' +
-    'game’ because they are outside the privileged area. A penalty for interference or charging ' +
-    'should be called in every case where an opposing player makes unnecessary contact with a ' +
-    'goalkeeper." Note 1 under it sends any accidental or unavoidable contact to the interference ' +
-    'rule and "any deliberate body contact or check that is delivered to the goalkeeper" to ' +
-    'charging, and the Casebook at Rule 607, Situation 5 repeats the restriction outside the ' +
-    'region in its own words — a penalty "should be assessed in every instance where unnecessary ' +
-    'or avoidable contact is made with the goalkeeper – even when outside the privileged area" — ' +
-    'before conceding that where the goalkeeper has possession of the puck an attacker "is ' +
-    'permitted to physically engage" with him for it — and taking the concession straight back in ' +
-    'the next sentence, because "any check delivered with the intent to intimidate or punish the ' +
-    'goalkeeper should be penalized as charging", and once he is no longer in control of the puck ' +
-    '"any avoidable contact… must also be penalized under this rule." And since the other four ' +
-    'books searched here draw no such region at all, under them there is no outside-the-region ' +
-    'permission to be had in the first place.',
+    'The goalkeeper’s privileged area, shaded — USA Hockey’s own term and USA Hockey’s own shape. ' +
+    'Neither the words nor the construction that draws them was found anywhere in the NHL, IIHF ' +
+    '2025/26 or 2026/27, Hockey Canada or CARHA books, so this is a region one book draws and the ' +
+    'others do not, rather than a rule the others write differently. Rule 607(d) Note 2 draws it ' +
+    '"by connecting the end zone face-off spots with an imaginary line and imaginary lines from ' +
+    'each face-off spot running perpendicular to the end boards", so it is fixed by the dots and ' +
+    'the boards rather than by any measurement, and it travels with whatever sheet you are on. It ' +
+    'takes in the net front, the goal line and all the ice directly behind the net — but not the ' +
+    'corners. ⚠️ The two red dashed lines behind the net are not part of it. That is the ' +
+    'trapezoid, a different and much smaller shape, which this sheet carries because the rink ' +
+    'these diagrams draw is the NHL-dimensioned one, and which USA Hockey marks nowhere at all. ' +
+    'Two rules turn on it: 614(c) makes it a delay-of-game minor for a goalkeeper to freeze the ' +
+    'puck when "[t]he puck is outside the boundaries of the ‘goalkeeper’s privileged’ area", and ' +
+    '607(c) prices contact on him inside it. ' +
+    '⚠️ Read the shading as a boundary rather than as a licence, in either direction. Inside it a ' +
+    'goalkeeper still may not freeze the puck where "[t]he puck is behind the goal line and their ' +
+    'body is entirely outside of the goal crease" (614(c)(1)). Outside it he is still not "fair ' +
+    'game" (607(d)). ⚠️ And a goaltender anywhere in this shading, behind his own net included, is ' +
+    'not somebody to finish a check on. 607(c) writes no bare minor for body checking or charging ' +
+    'one there. It is "[a] minor plus a misconduct or a major plus a game misconduct penalty", ' +
+    'with 607(e) adding that "[a] match penalty for reckless endangerment may also be assessed ' +
+    'for charging."',
 
   describe:
     'The defending half of the rink, the net at the right, and no play in progress. A large shaded ' +

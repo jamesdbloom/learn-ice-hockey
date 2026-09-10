@@ -422,11 +422,20 @@ const theTrapezoid = {
     'The trapezoid — the goalkeeper’s restricted area — is the marked area behind the net ' +
     'inside which the goaltender is allowed to play the puck: 22 ft wide along the goal line, ' +
     'widening to 28 ft at the end boards, and 11 ft deep on an NHL sheet. ' +
-    'Unlike the house, the slot and the other named regions, it really is painted, in red, and ' +
-    'playing the ' +
-    'puck behind the goal line outside it is a two-minute minor for delay of game; the ' +
-    'position of the puck decides it, and the sole exception is a goaltender playing the puck ' +
-    'while keeping skate contact with the crease. ' +
+    // ⚠️ NOT "unlike the house, the slot and the other named regions", which this caption
+    // carried until it was read in its OTHER THREE HOSTS. That phrase assumes the reader has
+    // just met the house and the slot, which is true only in rink_map_and_glossary.md. In
+    // rules_primer.md, how_to_watch_hockey.md and goaltender.md it points at nothing.
+    'It really is painted, in red — most of the rink’s named regions are not. Playing the ' +
+    'puck behind the goal line outside it is a two-minute minor for delay of game — the ' +
+    // ⚠️ NHL 27.8 AND 63.2(viii) BOTH WRITE THIS EXCEPTION, and a readability compression
+    // removed it in round 72. Dropping it makes the rule harsher than the book: a
+    // goaltender who keeps a skate on the crease may play the puck out there and take no
+    // penalty. "The minor penalty will not be assessed when a goalkeeper plays the puck
+    // while maintaining skate contact with his goal crease." IIHF 27.7 is the same, and
+    // the owning document carries it at rink_map_and_glossary.md:248 and :254.
+    'position of the puck decides it, and the one exception is a goaltender playing the ' +
+    'puck while keeping skate contact with the crease. ' +
     'Under the IIHF book — the British one — the shape is 6.80 m along the goal line and ' +
     '8.60 m at the boards, within a few inches of the NHL figures, but deeper, because the ' +
     'IIHF goal line is 4.0 m from the end boards rather than 11 ft. ' +
@@ -434,8 +443,11 @@ const theTrapezoid = {
     'read directly in the rulebooks, and the KHL is commonly said to as well though no KHL rulebook ' +
     'was available to check that one. ' +
     'Neither the USA Hockey book nor the Hockey Canada ' +
-    'book marks one at all, so a league running on either has none — though neither leaves ' +
-    'the goalkeeper unrestricted back there: USA Hockey Rule 614(c) stops him freezing the ' +
+    // ⚠️ POSITIVE POLARITY ON PURPOSE. This read "though neither leaves the goalkeeper
+    // unrestricted back there:" — a main-clause negation immediately before a colon, which
+    // lets the negation carry onto the tail that states the two restrictions. Same claim.
+    'book marks one at all, so a league running on either has none. Both still restrict the ' +
+    'goalkeeper back there: USA Hockey Rule 614(c) stops him freezing the ' +
     'puck outside the privileged area, corners excluded, and Hockey Canada assesses a minor ' +
     'with no warning for freezing it at all once he has left the crease. ' +
     'And in ' +
@@ -457,7 +469,10 @@ const theTrapezoid = {
     // after making the save covers the puck, this shall be legal." It travels too, or
     // the caption produces a goaltender who will not cover a rebound.
     'Read that suspension narrowly if it applies to you: it frees where a goalkeeper may ' +
-    'play the puck behind the net, never where they may freeze it — freezing the puck to ' +
+    // ⚠️ FULL STOP, NOT AN EM DASH. This ran "never where they may freeze it —" straight
+    // into the sentence that says freezing IS a separate minor, so the negation could carry
+    // onto it and tell a listener the opposite. Sentence-final negation cannot invert.
+    'play the puck behind the net, never where they may freeze it. Freezing the puck to ' +
     'cause a stoppage is a separate two-minute minor anywhere outside the goal crease ' +
     'under IIHF Rule 63.2(I), and coming out to cut down the angle, saving, and then ' +
     'covering it stays legal.',

@@ -101,14 +101,11 @@ const gapAndAngle = {
     'That band is drawn on the two faceoff-dot lines and cut off at the top of the circles and at ' +
     'the crease so that the shading has an edge; the middle is a lane running the length of the ' +
     'rink, and none of those four edges is painted on the ice. ' +
-    'The gap drawn here is about nine feet, which is a little wider than the stick and a half the ' +
-    'gap ladder targets at the red line: the rulebooks cap a stick at 63 to 65 inches depending on which ' +
-    'one you play under, a senior stick in practice is about 1.5 metres, and on any of those figures ' +
-    'nine feet is nearer one and three-quarter stick lengths than one and a half. The full ladder runs ' +
-    'roughly two to three stick lengths through the neutral zone, around a stick and a half as they ' +
-    'cross the red line, and roughly a stick length at your own blue line, and notice that ' +
-    'the drawn gap is slightly tighter where the two routes end than where they start, because a gap ' +
-    'that grows as they approach is a goal waiting to happen. ' +
+    'The gap drawn here is about nine feet, a little wider than the stick and a half the gap ladder ' +
+    'targets at the red line: on any stick length the rulebooks allow, nine feet is nearer one and ' +
+    'three-quarter stick lengths than one and a half. Notice that the drawn gap is slightly tighter ' +
+    'where the two routes end than where they start, because a gap that grows as they approach is a ' +
+    'goal waiting to happen. ' +
     // ⚠️ The PROVENANCE limit travels with the ladder, not just the applicability hedge.
     // The style guide's owner row is explicit that "a guide, not a law" is about
     // applicability and does NOT carry provenance. This caption is borrowed into
@@ -138,15 +135,27 @@ const gapAndAngle = {
     // supported than it is, the direction no reviewer stops on; overstating it is how a
     // refuted negative existence claim reached a spoken caption in the first place.
     // Owner: §"Target distances" and the Sources trailer of content/systems/defending_the_rush.md.
-    'Those distances are a guide and not a law — they vary with your own backward speed and the ' +
-    'attacker’s skill, and the published coaching pages disagree with each other and with this ' +
-    'ladder. The neutral-zone figure is published by more than one page; the stick length at your ' +
-    'own blue line is published and anchored to that line exactly, though a second line-anchored ' +
-    'page prints two stick lengths there instead. The stick and a half at the red line is the one ' +
-    'to know about: the only page found that anchors a distance to the centre red line prints two ' +
-    'stick lengths there, not a stick and a half. One coaching book prints no distance at all, ' +
-    'holding that the blue line does not determine where gap control begins. So treat the ladder ' +
-    'as a shape to aim at rather than as three measured numbers. ' +
+    // ⚠️ SHORTENED, not stripped. This caption used to recite all three rungs and the
+    // provenance of each. It now names ONE rung -- the stick and a half at the red line, the only
+    // one the drawn gap is measured against -- so it carries that rung's provenance and no other.
+    // The neutral-zone and blue-line provenance went WITH THE RUNGS IT QUALIFIED, which are stated
+    // in prose beside a marker in every host that still needs them: the owner at
+    // §"Target distances", how_to_watch_hockey.md's gap bullet, and defender.md's gap-control
+    // bullet. Standing rule (4) of the style guide's gap-control row -- "the provenance limit
+    // travels with the rung" -- is what makes that legitimate, and RE-ADDING A RUNG HERE RE-ADDS
+    // ITS PROVENANCE TOO.
+    // ⚠️ The stick-length arithmetic behind "one and three-quarters" is no longer shown in
+    // the caption and MUST NOT be re-derived from memory: the working is in the GAP_D comment
+    // above, and the four shaft caps it rests on are equipment.md §"What the Rules Actually
+    // Require" (HC 3.3(b) 1.60 m/63 in, NHL 10.1 63 in, IIHF 10.1 1.63 m, USA Hockey 301(b) 65 in),
+    // re-read this session. 65 in is the longest any book allows, at which 8.944 ft is 1.65 sticks,
+    // still nearer 1.75 than 1.5 -- which is what "on any stick length the rulebooks allow" asserts.
+    'The stick and a half is a guide and not a law. It varies with your own backward speed and ' +
+    'the attacker’s skill, and the published coaching pages disagree with it: the only page found ' +
+    'that anchors a distance to the centre red line prints two stick lengths there rather than a ' +
+    'stick and a half, and one coaching book prints no distance at all. Treat that figure as a ' +
+    'shape ' +
+    'to aim at rather than as a measured number. ' +
     'What no still picture can show is the thing that matters most: that ' +
     'the defender was already at full backward speed before this instant, because a gap cannot be closed ' +
     'from a standstill.',
@@ -512,18 +521,17 @@ const backcheckLanes = {
     'The ice is three vertical lanes running the length of the rink: two outside lanes along the boards, ' +
     'and the shaded middle lane between the faceoff dots. In the standard assignment drawn here the centre ' +
     'takes the middle lane and the two wingers take the outside lanes, and each backchecker’s route bends ' +
-    'inside their man rather than trailing their shoulder — you cannot defend anything from behind, and ' +
-    'the aim is their inside hip, not their back pocket. ' +
+    'inside their man rather than trailing their shoulder: the aim is their inside hip, not their ' +
+    'back pocket, because you cannot defend anything from behind. ' +
     // The ranking this sentence used to carry — "the most commonly missed assignment in hockey" — was a
     // corpus-wide superlative with no source behind it, and a caption is the one place it reached a reader
     // as a caption rather than as prose. The mechanism is the teachable part and it survives; the league
     // table does not. Scope kept to the picture, which the picture can actually support.
     'The most dangerous player in the picture is the middle-lane driver, the attacker skating hard through ' +
-    'the middle without the puck: they are missed because they do not have the puck and eyes go to the puck. ' +
-    'The lane assignment is a coaching choice and not a law — other teams give the middle to the first ' +
-    'man back whoever it is, and others pick up man-on-man from the puck outward, so find out which yours ' +
-    'runs; under every variant somebody is responsible for the middle and nobody assumes it is ' +
-    'somebody else. ' +
+    'the middle without the puck, who is missed because eyes go to the puck. ' +
+    'The lane assignment is a coaching choice and not a law. Other teams give the middle to the first ' +
+    'man back, and others pick up man-on-man from the puck outward, so find out which yours runs; ' +
+    'under every variant somebody owns the middle and nobody assumes it is somebody else. ' +
     'The defencemen are not drawn, because this is about the three backcheckers.',
 
   describe:

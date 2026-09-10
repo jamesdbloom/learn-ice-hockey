@@ -305,22 +305,34 @@ const reverse = {
   half: false,
   width: 900,
 
+  // WHAT SURVIVED THE CUT, AND WHY. breakouts.md states the execution ("firm and low —
+  // soft reverses die in the corner"), the risk ("a space you cannot see, below your own
+  // goal line... the opposition has the puck behind your net") and the rim contrast in its
+  // own facts block and prose, four bullets from this marker; goaltender.md's call list and
+  // defender.md's facts block carry the rim-versus-reverse read too. What NO host carries is
+  // the pair of things the DRAWING cannot say — that the notation has no banked-puck symbol,
+  // and that a still frame cannot draw the momentum the whole read depends on — so those
+  // stay, and are now labelled as such. The rim contrast stays because it is the one pair
+  // readers reliably confuse, and the counter stays because a picture is the most
+  // absolute-looking thing on a page.
   caption:
     'The reverse, drawn in your own defensive zone at the left of the picture. D1 was working up the ' +
     'right wall; the forechecker has over-committed and skated past him, so D1 sends the puck back ' +
     'down the boards behind him, against the flow, into the space that forechecker has just left — ' +
-    'where D2 is arriving. In practice that is a hard backhand banked off the wall, firm and low, ' +
-    'because soft reverses die in the corner and become turnovers; the drill notation has no symbol ' +
-    'for a banked puck, so it is drawn simply as the pass it is. The whole play depends on the ' +
-    'forechecker’s momentum, and a still picture cannot draw momentum, so read the opponent ' +
-    'above D1 as a player already past him and unable to stop. The puck is being put into a space ' +
-    'D1 cannot see, below ' +
-    'his own goal line, so the receiving teammate has to call for it out loud — “reverse!” — because ' +
-    'D1 is looking the wrong way, and if nobody is there the opposition has the puck behind your net ' +
-    'with your defence facing the wrong direction. Keep this straight from the rim: a rim goes ' +
-    'onward around the boards in the direction the puck was already travelling, a reverse goes back ' +
-    'against it. A containing forechecker who steers rather than chases is never past you to begin ' +
-    'with, and beats it.',
+    'where D2 is arriving, and calling for it, because D1 is putting the puck somewhere he cannot ' +
+    'see. Two things this picture cannot draw. The play depends entirely on the forechecker’s ' +
+    'momentum, so read the opponent above D1 as a player already past him and unable to stop. And ' +
+    'the puck is a hard backhand banked off the wall; the drill notation has no symbol for a banked ' +
+    'puck, so it is drawn simply as the pass it is. Keep it straight from the rim: a rim goes onward ' +
+    'around the boards in the direction the puck was already travelling, a reverse goes back ' +
+    // ⚠️ PRE-EXISTING NEGATION INVERSION, found while cutting and fixed rather than carried.
+    // This read "A containing forechecker who steers rather than chases is never past you to
+    // begin with, and beats it." The main-clause negation sits immediately before ", and",
+    // so it carries onto the tail and a listener hears that the containing forechecker does
+    // NOT beat the reverse — which deletes the counter this sentence exists to give. Stating
+    // the limit first and ending on the negation makes it un-invertible.
+    'against it. And it beats one kind of forecheck only. A containing forechecker steers rather ' +
+    'than chases, so he is never past you to begin with.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 is on the right boards just ' +

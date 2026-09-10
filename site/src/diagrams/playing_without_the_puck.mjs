@@ -45,7 +45,6 @@
 // this one already had. See rule69_clauses.mjs for why all four still say it.
 import {
   CREASE_LINE_IS_THE_CREASE,
-  DISALLOWED_ROWS_SHARE_THE_CREASE,
   TABLES_ALLOW_OUTSIDE,
 } from './rule69_clauses.mjs';
 
@@ -345,23 +344,40 @@ const screenSightline = {
   width: 900,
 
   caption:
-    'One instance of a relationship, not a place to stand: with the puck at the right point, the ' +
+    // ⚠️ FULL STOP AFTER "not a place to stand". As a colon, the opening negation sat directly
+    // on the separator and could carry onto the tail, whose inverted reading denies that the
+    // wedge is the puck-to-goaltender line — the one thing the picture exists to assert.
+    'One instance of a relationship, not a place to stand. With the puck at the right point, the ' +
     'shaded wedge is the line between the puck and the goaltender, and the screen stands inside ' +
     'it with both feet outside the crease. The wedge swings as the puck moves, so the job is to ' +
     'stand where the goalie’s eyes are rather than where the puck is going; ' +
     'the instructions the picture cannot show are to keep your stick on the ice, because a screen ' +
+    // ⚠️ TWO FULL STOPS WHERE THERE WAS A COMMA AND A COLON. "Nothing here establishes … , and
+    // staying out of the blue paint is necessary and not sufficient:" put a main-clause
+    // negation on each separator. Inverted, the first denies the necessary-not-sufficient
+    // claim and the second denies that Rule 69.1 reaches positioning at all — a false rule
+    // statement in the permissive direction, in the caption whose job is the opposite.
     'is also a tip and rebound threat, and to move late. Nothing here establishes that the ' +
-    'position drawn is legal, and staying out of the blue paint is ' +
-    'necessary and not sufficient: NHL Rule 69.1 reaches an attacking player who, ' +
+    'position drawn is legal. Staying out of the blue paint is ' +
+    'necessary and not sufficient. NHL Rule 69.1 reaches an attacking player who, ' +
     '"either by his positioning or by contact", impairs the ' +
     'goalkeeper’s ability to move freely within his crease or defend his goal — no contact ' +
-    'required — and Rule 69.3 disallows a goal for establishing a significant position within the crease. The ' +
+    'required. The ' +
+    // ⚠️ "a goal", NOT "one". The original read "the sentence that actually disallows ONE", whose
+    // referent was in the clause cut with it (69.1's "only if" ceiling, which capped "when a goal
+    // may be disallowed"). Cutting the clause orphaned the pronoun; naming the referent is the fix.
+    // Cut with it: Rule 69.3's significant-position limb, which the owner's facts block carries and
+    // which "keep both feet out of the paint" below already instructs; and
+    // DISALLOWED_ROWS_SHARE_THE_CREASE, whose point — the disallowed rows share the crease — is the
+    // same point the sentence above it now makes. TABLES_ALLOW_OUTSIDE STAYS: it is the permissive
+    // half, and a caption that keeps "positioning alone can reach you" while dropping "the tables
+    // allow the outside-crease screen" teaches the rule as stricter than it is.
     'IIHF’s own 69.1 carries the same positioning limb in its own words. Read whole, though, both ' +
-    'books put the crease at the centre of it: 69.1’s “only if” caps when a goal may be disallowed, while ' +
-    'the sentence that actually disallows one requires the attacker to have entered the goal crease, and both ' +
+    'books put the crease at the centre of it: the sentence that actually disallows a goal ' +
+    'requires the attacker to have entered the goal crease, and both ' +
     'books’ reference tables apply exactly that line, ' +
-    TABLES_ALLOW_OUTSIDE + '; ' + DISALLOWED_ROWS_SHARE_THE_CREASE +
-    ' So keep both feet out of the paint, and off ' +
+    TABLES_ALLOW_OUTSIDE +
+    '. So keep both feet out of the paint, and off ' +
     CREASE_LINE_IS_THE_CREASE + '. Here ' +
     '"screen" means the goaltender’s sightline and nothing else. ' +
     // SAFETY. Owner's own wording, the "Never:" fact in

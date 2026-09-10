@@ -166,25 +166,21 @@ const dzoneAlignment = {
 
   caption:
     'A defensive-zone draw in your own end, frozen at the instant before the puck is dropped, ' +
-    'drawn at the right-hand circle. The centre is in the dot; the boards-side winger stands at ' +
-    'the outer pair of hash marks and the inside winger at the inner pair, facing the slot; the ' +
-    'boards-side defenceman is behind his winger, near the wall; the second ' +
-    'defenceman is in the slot in front of the goaltender. ' +
-    'On the ice that defenceman stands outside his winger as well as behind him, nearer the ' +
-    'boards — but the winger drawn here is already within a foot of them, so there is no room ' +
-    'outboard of him for a second player and “outside” is not attempted here. So the depth is ' +
-    'drawn as it is played, while that outboard offset is stated in these words and not in the ' +
-    'picture. ' +
-    'Where those four skaters stand is a coaching choice and not a rule — the alignment drawn is ' +
+    'drawn at the right-hand circle. On the ice the boards-side defenceman stands outside his ' +
+    'winger as well as behind him, nearer the boards — but the winger drawn here is already ' +
+    'within a foot of them, leaving no room outboard of him for a second player, so that offset ' +
+    'is stated in these words rather than drawn. ' +
+    'Where the wingers and defencemen stand is a coaching choice and not a rule — the alignment ' +
+    'drawn is ' +
     'the one that goes with a low zone collapse behind a 2-1-2 ' +
     'forecheck, and every team’s alignment differs, so find out what yours runs before your ' +
     'first shift. ' +
-    'What is not a choice is the shaded circle: every player other than the two taking the draw ' +
-    'must keep both skates outside the circle and outside the hash marks. ' +
-    '⚠️ Whether touching the line is safe is not the same in every book, so do not carry one ' +
-    'book\u2019s answer into another league. Under the NHL and the IIHF, Rule 76.7, skate contact ' +
+    'The shaded circle is the part that is a rule: every player other than the two taking the ' +
+    'draw must keep both skates outside the circle and outside the hash marks. ' +
+    '⚠️ Whether touching the line is safe is not the same in every book. Do not carry one ' +
+    'book’s answer into another league. Under the NHL and the IIHF, Rule 76.7, skate contact ' +
     'with the line is permitted and it is crossing it that is illegal. Hockey Canada counts a ' +
-    'skate on the face-off circle as encroachment, and USA Hockey\u2019s Casebook requires all ' +
+    'skate on the face-off circle as encroachment, and USA Hockey’s Casebook requires all ' +
     'sticks and all skates completely behind the hash marks. Keep your skates and your stick ' +
     'behind your own hash mark, and your hands and body off the opponent beside you, and you are ' +
     // ⚠️ This said "...and you are legal in all four books." as a SUFFICIENCY claim, which

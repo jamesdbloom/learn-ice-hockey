@@ -55,6 +55,14 @@ const G_AT = { at: 'crease', dx: 1 };                       // (87, 0)
 // The net-front player: "the edge of the blue paint, not inside it", offset to
 // the strong side so the glyph clears the goaltender's.
 //
+// ⚠️ QUOTATION UPDATED 10 September 2026. The corpus no longer says "the edge of the
+// blue paint" ANYWHERE — that phrasing put the reader ON the red crease line, which
+// IIHF 1.7, USA Hockey's 625(b) Note and Casebook 103 Sit 4, and Hockey Canada's
+// Glossary all count as part of the crease. The sites now read "just outside the blue
+// paint" / "both feet off the red crease line". ⚠️ THE GEOMETRY ABOVE IS UNAFFECTED and
+// still correct; only the quotation went stale. A comment that quotes another file is a
+// claim about that file, and it goes stale silently because no checker reads comments.
+//
 // ⚠️ THIS WAS dx -2, i.e. (82, 4), AND THAT COMMENT WAS FALSE AS DRAWN. Measured
 // off the BUILT SVG (site/public/diagrams/pp-131.svg), whose crease path is
 // "M 89 -4 L 84.5 -4 A 6 6 0 0 0 84.5 4 L 89 4 Z" — side lines 4.5 ft in from the
@@ -135,10 +143,10 @@ const pp131 = {
     // player in the crease. This caption is borrowed into center.md, whose own Technique line
     // at :380 says "off the red crease line, not on it" -- two voiced units of one document
     // contradicting each other. The `describe` field already said "just outside the crease".
-    'front just outside the blue paint — off the crease line, not on it, because under the ' +
-    'IIHF book the marked line belongs to the crease. The dashed lines are the four options a half-wall ' +
-    'player has at once, the point, the bumper, the net front and the far half-wall through the ' +
-    'seam, drawn as alternatives and not as a sequence; the solid line is the point walking the ' +
+    'front, just outside the blue paint and off the crease line: under the IIHF book the ' +
+    'marked line belongs to the crease. The dashed lines are the four options a half-wall ' +
+    'player has at once — the point, the bumper, the net front and the far half-wall through the ' +
+    'seam — drawn as alternatives rather than a sequence. The solid line is the point walking the ' +
     'line laterally, which changes the angle of every passing lane in the zone. ' +
     'Which formation your team runs, and who stands where inside it, is a coaching choice and ' +
     'not a rule of hockey — the umbrella, the overload, the spread and the 2-3 are all real ' +
@@ -724,10 +732,10 @@ const pkDiamond = {
     '1-3-1 it exists to answer, at the moment the puck is at the point. One player high at the ' +
     'apex, two in the middle either side, one low: exactly one player at the top, which is what ' +
     'makes it a diamond and not a box. The apex pressures the point and takes away the middle ' +
-    'shooting lane, and being the only player up there must not get walked around; each middle ' +
+    'shooting lane, and as the only player up there must not get walked around. Each middle killer ' +
     'takes a half-wall and both collapse onto the bumper when the puck goes to the middle, which ' +
     'is why this is the only common shape that starts with an answer to the bumper. What it ' +
-    'concedes is drawn as well as said: the single low player is alone against the net-front ' +
+    'concedes: the single low player is alone against the net-front ' +
     'presence and a backdoor arriver, a genuine 2-on-1 you are choosing to give up, and the shape ' +
     'is narrow enough that a quick cross-seam pass to the far half-wall pulls it apart. ' +
     'Which shape you run is a coaching choice, and the only personnel that is even loosely fixed ' +

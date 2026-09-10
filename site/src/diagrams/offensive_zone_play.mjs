@@ -24,7 +24,6 @@
 // this one already had. See rule69_clauses.mjs for why all four still say it.
 import {
   CREASE_LINE_IS_THE_CREASE,
-  DISALLOWED_ROWS_SHARE_THE_CREASE,
   REFEREE_JUDGEMENT,
   TABLES_ALLOW_OUTSIDE,
 } from './rule69_clauses.mjs';
@@ -46,6 +45,9 @@ const HALF_WALL = 'half-wall:right';
 const GOALIE = { at: 'crease', dx: 1 };
 
 // The net-front screening spot for `oz-low-to-high`. Section 6 states it in feet
+// ⚠️ SUPERSEDED 10 September 2026 — the file it quotes no longer contains this string.
+// offensive_zone_play.md:435 now reads "Inside the faceoff dots, six to eight feet out
+// — and both feet off the red crease line, which the arc reaches at six". The old text:
 // — "at the edge of the blue paint, inside the faceoff dots — roughly six to
 // eight feet out from the goal line ... Live just beyond the arc"
 // (offensive_zone_play.md:437). Eight feet out, which is the outer end of that
@@ -509,32 +511,50 @@ const netFrontScreen = {
   width: 900,
 
   caption:
-    'Where the net-front player actually stands to screen: at the edge of the blue paint, ' +
+    'Where the net-front player actually stands to screen: just outside the blue paint, ' +
     'roughly six to eight feet out from the goal line and inside the faceoff dots, standing on ' +
     "the line between the goaltender's eyes and the puck rather than the line between the " +
     'goaltender and the net — so when the point man walks the line, the screener slides with him ' +
     'or the screen stops being a screen. Take the six-to-eight feet from these words and not off ' +
-    'the picture: the marker for the screener is drawn nine and a half feet out instead, because a ' +
+    // ⚠️ FULL STOP, NOT A COLON: "and not off the picture:" sat a negation on the separator,
+    // and the inverted reading denies the drawn depth this sentence exists to disclose.
+    'the picture. The marker for the screener is drawn nine and a half feet out instead, because a ' +
     'player marker on these diagrams is nearly six feet across, far wider than a player, and at ' +
     'eight feet out on that sight line it would cover the very crease line the ' +
     'diagram is about. Note the crease as it is drawn, because this is easy to ' +
     'get wrong: it is eight feet wide at the goal line and six feet deep, so the six feet is the ' +
-    'depth and not the half-width, and "three feet out from the goal line" is inside the paint ' +
+    // ⚠️ FULL STOP AFTER "not the half-width" — the most dangerous seam in this caption.
+    // It read "…not the half-width, and 'three feet out from the goal line' is inside the
+    // paint", so the negation could carry across the comma and a listener hears that three
+    // feet out is NOT inside the paint. That is a screener planting a foot in the crease.
+    'depth and not the half-width. And "three feet out from the goal line" is inside the paint ' +
     'rather than clear of it. A screen from outside the crease without contact is normally legal ' +
     'under NHL and IIHF rules and you should do it constantly — but it is keyed to the crease: ' +
-    'every clause of Rule 69 that voids a goal for where you stood names it. 69.1’s disallowing ' +
-    'sentence requires the attacker to have entered the crease, 69.3 voids the goal outright for a ' +
-    'significant vision-obstructing position inside it with no contact at all, and 69.4, the rule ' +
-    'for outside it, reaches contact only. Both books’ own reference tables agree, ' +
-    TABLES_ALLOW_OUTSIDE + ' — ' + DISALLOWED_ROWS_SHARE_THE_CREASE +
-    ' That reads the rule’s structure rather than anything either book states in terms, and ' +
+    // ⚠️ THE CLAUSE-BY-CLAUSE WORKING WAS CUT, THE CONCLUSION AND ITS DISCLOSURE KEPT.
+    // This ran through 69.1's disallowing sentence, 69.3's significant-position ground and
+    // 69.4's contact-only reach, then DISALLOWED_ROWS_SHARE_THE_CREASE. Both hosts state that
+    // working themselves, immediately beside the marker: offensive_zone_play.md's "Screening"
+    // paragraph names all three clauses, and center.md's facts block at "The crease is the one
+    // line you don't cross" carries the keying AND the table citation. What could NOT be cut is
+    // the pair either side of it — TABLES_ALLOW_OUTSIDE, because dropping the permissive half
+    // teaches the rule as stricter than it is, and the "reads the rule's structure" disclosure,
+    // which is what stops the keying claim reading as either book's own words.
+    'every clause of Rule 69 that voids a goal for where you stood names the crease, and both ' +
+    'books’ own reference tables agree, ' +
+    TABLES_ALLOW_OUTSIDE +
+    '. That reads the rule’s structure rather than anything either book states in terms, and ' +
     REFEREE_JUDGEMENT +
     ' USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
     'still — there a foot in the paint can cost you the zone and not just the goal. One rec book is ' +
     'stricter again: the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from ' +
     'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +
     'one does, and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read ' +
-    'that as one rec book and not as the rec position — CARHA governs CARHA-affiliated leagues only, ' +
+    // ⚠️ FULL STOP, NOT AN EM DASH — a pre-existing negation inversion, found while cutting.
+    // "not as the rec position — CARHA governs CARHA-affiliated leagues only" lets the negation
+    // carry across the dash, and the inverted reading says CARHA does NOT govern only its own
+    // leagues, which is the opposite of the scope the sentence exists to set.
+    'that as one rec book and not as the rec position. CARHA governs CARHA-affiliated leagues ' +
+    'only, ' +
     'and rec and beer leagues are often said to be stricter still, which is an impression rather ' +
     'than a count. So keep your feet out of the blue paint, and off ' +
     CREASE_LINE_IS_THE_CREASE +
@@ -1064,8 +1084,8 @@ const postShotShape = {
   describe:
     'The attacking half of the rink, the net at the right, in the moments right after a shot. ' +
     'Three own forwards. F3 is high, at the top of the strong-side circle and just inside the ' +
-    'home-plate area, drawn as the safety. A second forward stands at the net front, at the edge ' +
-    'of the blue paint, for the screen and tip. A third stands closer to the strong-side faceoff ' +
+    'home-plate area, drawn as the safety. A second forward stands at the net front, just outside ' +
+    'the blue paint, for the screen and tip. A third stands closer to the strong-side faceoff ' +
     'dot, also inside the home-plate area, hunting the rebound. Both defencemen remain on the ' +
     'blue line, one each side. The opposing goaltender is in the crease. No routes are drawn: ' +
     'this is the shape at a moment, not a sequence.',

@@ -2,12 +2,31 @@
 """Draw the podcast show cover: a 3000x3000 PNG, from the site's own palette.
 
 WHY THIS EXISTS AT ALL. Both Apple Podcasts and Spotify require show artwork and
-none existed. The binding intersection of the two published specifications,
-verified 9 September 2026 against Apple's `artwork-requirements` page and
-Spotify's Podcast Delivery Specification v1.10 §4.2:
+none existed.
 
-    square (1:1) · 1400x1400 minimum · 3000x3000 maximum and preferred
-    PNG or JPG · RGB · no alpha channel
+⚠️  THE PIXEL, COLOURSPACE AND ALPHA CONSTRAINTS ARE APPLE'S ALONE. An earlier
+    version of this comment credited them jointly to Apple and to "Spotify's
+    Podcast Delivery Specification v1.10 §4.2", and re-read on 10 September 2026
+    §4.2 says NONE of them. It asks only for a "fully squared (1:1) aspect ratio",
+    the "highest resolution available", and "TIFF, PNG or JPEG" in that order of
+    preference — no minimum, no maximum, no RGB, no alpha statement.
+⚠️  It also named the wrong Apple page: these live in A Podcaster's Guide to RSS,
+    not the `artwork-requirements` page. The cover satisfies both books either
+    way; only the SOURCING was overstated. ⚠️  A requirement attributed to two
+    specifications when one of them is silent is the same defect this repository
+    keeps finding in its own plan — a claim about a source made without re-reading
+    the source.
+
+Apple, A Podcaster's Guide to RSS, verified 10 September 2026:
+
+    "Artwork must be a minimum size of 1400 x 1400 pixels and a maximum size of
+     3000 x 3000 pixels, in JPEG or PNG format, 72 dpi, with appropriate file
+     extensions (.jpg, .png), and in the RGB colorspace. Confirm your art does
+     not contain an Alpha Channel."
+
+Spotify, Delivery Specification v1.10 §4.2 — the whole of what it constrains:
+
+    square (1:1) · highest resolution available · TIFF, PNG or JPEG
 
 ⚠️  NEITHER PLATFORM PUBLISHES A FILE-SIZE LIMIT. Do not add one here and do not
     let anyone "optimise to under N KB" against a limit nobody wrote down.

@@ -470,6 +470,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_geometry.py, check_secrets.py, check_counts.py.
                     WORKLISTS, NOT GATES — none has a --strict and none should gain one:
                     check_external_links.py, check_rule_scope.py, check_pointers.py,
+                    check_chunk_splits.py, check_caption_negations.py,
                     check_zones.py, check_tables.py, check_disclosures.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
                     check_plan_rows.py.

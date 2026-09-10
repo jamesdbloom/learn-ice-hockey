@@ -83,6 +83,14 @@ const G_AT = { at: 'crease', dx: 1 };                    // (87, 0)
 // net front lives at the edge of the blue paint, not inside it", and its :978
 // Never: "Put a skate in the blue paint."
 //
+// ⚠️ QUOTATION UPDATED 10 September 2026. The corpus no longer says "the edge of the
+// blue paint" ANYWHERE — that phrasing put the reader ON the red crease line, which
+// IIHF 1.7, USA Hockey's 625(b) Note and Casebook 103 Sit 4, and Hockey Canada's
+// Glossary all count as part of the crease. The sites now read "just outside the blue
+// paint" / "both feet off the red crease line". ⚠️ THE GEOMETRY ABOVE IS UNAFFECTED and
+// still correct; only the quotation went stale. A comment that quotes another file is a
+// claim about that file, and it goes stale silently because no checker reads comments.
+//
 // At dx -4, i.e. (80, 4), the nearest boundary is 3.823 ft away: 0.92 ft of body
 // daylight, 0.55 ft of outlined-body daylight, and 0.05 ft of halo overlap — half
 // a pixel at the ~9 px/ft this file renders at.

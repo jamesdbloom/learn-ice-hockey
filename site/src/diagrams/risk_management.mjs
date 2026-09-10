@@ -241,10 +241,10 @@ const theRiskMap = {
     'these five regions rather than the labels on them. Take that order from the words, ' +
     'though, and not by ranking the tints against each other: the reds do run in order, but ' +
     'their end is drawn in blue rather than red, and a light blue prints darker than the ' +
-    'faintest red in greyscale, on a photocopy or on e-ink. The shading is a reminder of the ' +
-    'ranking and not the statement of it. Nothing here is marked on a real rink, and the ' +
-    'edges are drawn only so the shading can have one: the band at their line has no defined ' +
-    'depth, and the shaded ice at their end runs from the faceoff dots back to the end boards ' +
+    'faintest red in greyscale, on a photocopy or on e-ink. Nothing here is marked on a real ' +
+    'rink, and the edges are drawn only so the shading can have one: the band at their line ' +
+    'has no defined depth, and the shaded ice at their end runs from the faceoff dots back to ' +
+    'the end boards ' +
     'where the grade given is for their corners and the ice below their goal line. And a ' +
     'turnover also has a DIRECTION, which no still map can show — losing the puck while it ' +
     'travels toward your own net makes the turnover and the counter-attack the same event, and ' +
@@ -646,7 +646,7 @@ const pinchCentreHigh = {
     'third defender and the worst the failure can produce is two of their forwards against two ' +
     'of his teammates — a rush a team can defend. That is the question to run before you jump a ' +
     'lane, pinch or activate: not only "am I right?" but "what happens if I am right and I still ' +
-    'miss it?" A pinch this well backed is a good decision even when you lose the puck. ' +
+    'miss it?" ' +
     PINCH_CAVEATS,
 
   describe:

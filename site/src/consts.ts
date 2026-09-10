@@ -66,6 +66,26 @@ export const SITE_AUTHOR = 'James Bloom';
 export const SITE_AUTHOR_URL = 'https://github.com/jamesdbloom';
 
 /**
+ * The podcast owner address, emitted as `<itunes:email>` in `/feed/podcast.xml`.
+ *
+ * ⚠️ THIS IS PUBLIC AND PERMANENT. Spotify states it plainly: "Your email will be publicly
+ * available in the RSS feed. Anyone with a link to your RSS feed will see your email
+ * address." The feed is already live and scrapeable, and Spotify also warns that "we can't
+ * remove your podcast from third-party platforms that scrape your feed." ⚠️ SO THIS IS A
+ * DEDICATED ALIAS, NOT A PERSONAL ADDRESS — the owner chose that on 10 September 2026, and
+ * swapping it later does not retract the copies aggregators have already cached.
+ *
+ * ⚠️ IT MUST BE AN INBOX SOMEBODY READS. Spotify for Creators verifies show ownership by
+ * sending to exactly this address — "This email address is pulled from your RSS feed" — so a
+ * typo here does not fail a build, it fails a submission, silently, weeks later.
+ *
+ * ⚠️ APPLE DOES NOT NEED IT. `itunes:owner` appears nowhere in Apple's current Podcaster's
+ * Guide to RSS; Apple verifies ownership with a claim token instead. This tag exists for
+ * Spotify alone. Do not delete it as "unused" on Apple's account.
+ */
+export const PODCAST_OWNER_EMAIL = 'podcast@learn-ice-hockey.com';
+
+/**
  * Google Analytics 4 measurement ID, e.g. 'G-XXXXXXXXXX'.
  *
  * Empty disables analytics entirely and emits no third-party script, which is
