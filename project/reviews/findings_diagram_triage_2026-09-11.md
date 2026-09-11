@@ -185,3 +185,163 @@ before accepting any borrow.**
 was **render the receiving document**. ⚠️ **Every surviving borrow row is a hypothesis until the receiving
 document has been rendered and the caption heard in place.** Duplication, voice flips and splice defects are
 all invisible in the source.
+
+---
+
+# Batch 4 — three of three rejected, and two new categories
+
+**0 for 3, and every rejection rested on evidence the triage could not have had.** ⚠️ **That is now 7 of 12
+borrow proposals rejected. The triage verified caption fit against `diagrams.json` text; what it could not do
+was read the receiving document, render it, or look at the repository's history.**
+
+## ⚠️ NEW CATEGORY: a diagram can be borrowable ONLY AS A PAIR
+
+`practice-the-line-and-one-rep`'s shared caption contains: ***"The next picture is the same six skaters using
+one end of the ice."*** That is load-bearing for its owner, where `practice-small-area-in-one-zone` follows
+four lines later and the two set up an explicit contrast.
+
+⚠️ **In the proposed host, `getting_started.md:442`, THERE IS NO NEXT PICTURE — the next diagram in that file
+is 279 lines EARLIER.** A listener would hear *"Diagram, from Practice and Development… The next picture is
+the same six skaters using one end of the ice"* and then the drill-line steps.
+
+⚠️ **A shared caption cannot be re-captioned, so this cannot be fixed at the destination.** The diagram is
+borrowable **only as a pair** — and the pair carries the small-area-games argument, which belongs to its
+owner, not to a getting-started etiquette section. **Check a candidate caption for FORWARD AND BACKWARD
+REFERENCES to other pictures before proposing it.**
+
+## ⚠️ SECOND INTRA-FILE DUPLICATE PROPOSAL — check the receiving FILE, not just the section
+
+`rink-map-full` was proposed for `rink_map_and_glossary.md:199`. ⚠️ **It is already in that file at line 126
+— 73 lines above.** Second time in twelve proposals. **The triage checks whether the SECTION has a diagram;
+it must also check whether the DOCUMENT already has THAT diagram.**
+
+**Invariant re-derived independently and still holds: 323 placements, 198 ids, ZERO duplicate `(file, id)`
+pairs.** ⚠️ (The count is 323, not the 322 two briefs stated. Re-derive it; do not quote this line.)
+
+## ⚠️ COMMIT ARCHAEOLOGY ANSWERS "GAP OR CHOICE", AND IT SHOULD BE THE FIRST CHECK
+
+The brief asked whether `rink_map_and_glossary.md` failing to place its own full-rink diagram in its own
+faceoff-spots section was a gap or a deliberate choice. **It is provably a choice, and the proof is in git.**
+
+Commit **`6d9562c`** — *"Put every diagram at the head of what it teaches"* — swept that file. ⚠️ **It moved
+28 diagram markers there. `rink-map-full` was not one of them** — it appears as an unchanged context line,
+left where it sat because it already headed a section that exists solely to host it. **And the same sweep
+moved `faceoff-dzone-alignment` to the head of `### Hash marks`**, the section carrying the *"what's
+painted"* half of the subject. **So the faceoff region was specifically examined and specifically
+illustrated, with a purpose-fit diagram, and the full-rink map was deliberately not added.**
+
+⚠️ **Before filing any section as an undrawn gap, check whether a sweep already considered and declined it.**
+`git log -S '](diagram:' -- <file>` is the probe.
+
+## The third rejection — a caption serving 12% of its host
+
+`rink-map-full` → `faceoffs.md:96`. Of ~170 caption words, **exactly one sentence serves the section**, and
+the render shows it would be **the third statement of the same nine-dot breakdown inside one chunk** —
+caption, then `Rule: Every faceoff happens at one of nine marked spots`, then the table itself.
+
+⚠️ **And the picture is SILENT on what the section is actually about.** The heading is *"and what's painted
+on the ice"*; its headline items are the **hash marks** and the **centre's restraining lines**. In the render
+the hash marks are unlabelled ticks and the restraining lines **are not drawn at all**. The remaining ~88% of
+the caption is position vocabulary (*"the half-wall"*, *"the point"*) **that this section never uses**.
+
+**And the document is not picture-less on the point anyway:** `faceoff-where-the-draw-goes` sits 47 lines
+later showing all nine dots, captioned for a faceoff reader. **If a picture is wanted there, it is a new
+faceoff-specific one showing hash marks and restraining lines — not a borrow.**
+
+## Minor, routed to the owner
+
+`rink-map-full`'s labels render as **node identifiers with coordinate suffixes** — `half-wall:R`, `point:R`,
+`top-of-circle:L`, `neutral-dot:L`. ⚠️ **Its caption promises *"the standard position vocabulary"* and
+`rink_map_and_glossary.md` OWNS those names — it writes *"the half-wall"*, *"the point"*, never a `:R`/`:L`
+suffix, which is a coordinate-table artefact rather than anything a player says.** Legible and unambiguous,
+but not the words the document teaches. **Not checked: whether other map diagrams share the convention,
+which would make it deliberate.**
+
+---
+
+# Batch 3 — one placed, three rejected, and a placement rule nobody had written down
+
+**Running total: 6 placed, 10 rejected of 16 proposals.** ⚠️ **The rejection rate is the finding.** A triage
+can verify caption text; it cannot read the receiving document, render it, or read git history — and every
+single rejection has turned on one of those three.
+
+## ⚠️ NEW RULE: A DIAGRAM PLACED INSIDE AN ORDERED LIST BREAKS THE NUMBERING, AND THE RENDER PROVES IT
+
+`entry-drop-pass` was proposed for item 3 of a numbered list. **Measured in the speech render, the list splits
+and restarts:** *"First, A clean controlled entry… Second, You do not get many attempts… **First**, The drop
+pass… **Second**, The swing… **Fourth**, Regroup rather than force."* **Renumbered 1,2,1,2 then jumping to
+Fourth.**
+
+⚠️ **Check for an enclosing ordered list before proposing any placement mid-section.** The only non-breaking
+position is before the list — and here that made things worse, because it put the picture directly after
+*"What changes with the extra man is only this:"* while **showing no extra man.**
+
+## ⚠️ A VOICE BOUNDARY CAN BE A CONTRADICTION RATHER THAN A SEAM
+
+The recorded precedent for a crossed voice boundary is an added orienting sentence (`how_to_watch_hockey.md`:
+*"The two are drawn from opposite benches"*). ⚠️ **That fixes a SEAM. It cannot fix two opposite
+characterisations of the same play.** Here the caption says the drop pass ***"is not a default read"*** and
+the receiving section says it ***"is the signature power-play entry"*** — sixty seconds apart. **Distinguish
+the two cases before reaching for the orienting-sentence remedy.**
+
+**Third ground, and the simplest:** the picture is a **2-on-2 even-strength rush** — two forwards, two
+defencemen, a goalie. The section two paragraphs earlier says a kill *"has four players between you and the
+net… you have to bring a five-player structure through a narrow gate."* A reader would take an even-strength
+rush for the power-play entry shape.
+
+## ⚠️ SECOND INSTANCE OF PAIR-ONLY, AND IT COUPLES TO A REJECTED DIAGRAM
+
+`faceoff-dzone-clean-loss`'s caption opens *"**The same** defensive-zone alignment on a clean loss"* and
+closes *"Same alignment as **the diagram beside this one**, with the draw lost."* Both existing placements are
+on **adjacent lines**. ⚠️ **Placed alone, that closing sentence is false about the page** — and its partner
+was rejected on its own merits in the same batch, so the pair cannot travel either.
+
+**The partner's rejection is the cleanest scope argument in the round.** `breakouts.md` §7's *second sentence*
+reads *"Alignment, draw technique and faceoff violations are in Faceoffs. What follows is only the breakout
+that comes out of the draw."* ⚠️ **Roughly half the caption is faceoff-violation rules across four books.
+Placing it makes the document tell a listener to go elsewhere for faceoff violations and then deliver faceoff
+violations one paragraph later.** The agent checked the counter-precedent — `game_management.md` carries the
+same pair beside its own *"See Faceoffs"* — and showed why it works there: **that section's bullet IS "win the
+defensive-zone draws", so pre-drop alignment is its point.**
+
+## The one placement, and the cost it reported rather than hid
+
+`breakout-stretch-pass` → `passing_and_receiving.md:269`. ⚠️ **Deliberately NOT at the section head** —
+because **measured in the render**, at the heading the caption and the facts block land in **one chunk** and a
+listener hears the same two rule numbers and the same closing phrase *"two books of the four"* **twice, one
+breath apart.** Below the facts block, a chunk boundary separates them: chunk `014` ends the facts block and
+chunk `015` **opens** with the caption. Verified by `commit-gate` independently.
+
+⚠️ **THREE CORRECTIONS TO THIS ENTRY, ALL FROM `commit-gate`, AND TWO OF THEM CUT AGAINST THE JUSTIFICATION.**
+The line is **269, not 268**. The house pattern was stated as *"all six existing placements"*; there are
+**seven** existing markers and only **five** sit after a heading — **so the pattern was 5 of 7, not 6 of 6,
+and deviating from it is a smaller departure than the entry claimed.** ⚠️ **And the entry justified the
+position on the AUDIO layer alone: this is now the ONLY diagram in the file sitting BELOW its facts block,
+and the record never mentioned that visual consequence.** A trade argued in one layer has a cost in another.
+
+⚠️ **The gate also measured the duplication cost more honestly than the entry did.** *"Two books of the four"*
+lands in **six of 55 chunks** — and **five of those are pre-existing** (two are other sections' captions, one
+is Common Mistakes). **So the document already voiced it five times; this borrow makes six.** The marginal
+cost is smaller than *"three times in the section"* implied — **that density is the document's established
+norm, not something this diff created.**
+
+⚠️ **And the dangling referent is WORSE than dangling.** The caption's *"only the two skaters **the option**
+names are drawn"* has a nearest antecedent in earshot **one chunk earlier**: *"Options. Flat if the lane is
+clear, saucered if it must cross a stick."* **The listener's nearest referent is WRONG, not absent.**
+Mitigated only by the *"Diagram, from breakouts"* prefix telling them they are hearing another document's
+voice. **Recorded, not blocking — but a borrowed caption's referents can land on the wrong antecedent, not
+merely on none.**
+
+**Two residual costs it could not remove and reported anyway:** the offside divergence is now voiced **three
+times** in the section — facts line, caption, body paragraph — and *"two books of the four"* three times in
+about two minutes; four positions were tested and none avoids it, because the rule sentence is 37% of the
+caption and the rule is what the section is about. And the caption's *"only the two skaters **the option**
+names are drawn"* is a `breakouts.md` referent — nothing here is called an option. **A wobble, not a false
+statement.**
+
+## ⚠️ Handed back: what §7 actually needs
+
+`breakouts.md` §7 remains undiagrammed, **and neither triage candidate was ever going to fill it.** The
+spatial 60% of that section is **the wheel off a draw and its three variations** — win-and-up, win-and-reverse,
+the modified wheel. `breakout-wheel` exists at `breakouts.mjs:209` but draws **the general wheel, not the
+wheel off a faceoff.** That is a DRAW item, not a borrow.
