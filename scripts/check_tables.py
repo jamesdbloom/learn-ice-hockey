@@ -58,18 +58,45 @@ NEAR_MARGIN_CHARS = 30
 NEAR_MARGIN_ROWS = 2
 
 
+# A table can sit inside a blockquote, and nine rows of one do.
+#
+# ⚠️ THIS TOOL COULD NOT SEE THEM UNTIL 11 SEPTEMBER 2026, AND THE ONE IT COULD NOT
+#    SEE WAS THE CORPUS'S OWN PENALTY-CALL TABLE. `parse_tables` required
+#    `line.startswith("|")`, so a `> |` row was invisible -- while `md_to_speech`
+#    DOES see it and degrades it to "A detailed table appears here in the written
+#    version." So a listener had never heard any of the seven percentages, and the
+#    checker built to report exactly that reported nothing. Found by an agent ruling
+#    on whether those percentages could be aggregated; it could not have been found
+#    by this tool at all.
+#
+# ⚠️ THE FAILURE DIRECTION IS THE DANGEROUS ONE: silence read as a pass. A table this
+#    tool does not parse is not listed as dropped OR as read aloud -- it simply is not
+#    counted, so the totals in the summary line looked healthy while under-reporting.
+def _unquote(line: str) -> str:
+    """Strip blockquote markers so a `> |` table row parses as `|`.
+
+    Handles nesting (`> > |`). Returns the line unchanged when it is not quoted,
+    so every existing caller sees exactly what it saw before.
+    """
+    s = line.strip()
+    while s.startswith(">"):
+        s = s[1:].lstrip()
+    return s
+
+
 def parse_tables(text: str):
     """Yield (line_no, header_cells, row_cells) for every markdown pipe table.
 
     Deliberately simple: a header row, a separator row of dashes, then body
     rows. That is the only table form the corpus uses, and the renderer's own
-    parser accepts no more.
+    parser accepts no more -- except that any of those rows may be inside a
+    blockquote, which `_unquote` strips first. See the note above it.
     """
     lines = text.split("\n")
     i = 0
     while i < len(lines) - 1:
-        line = lines[i].strip()
-        nxt = lines[i + 1].strip()
+        line = _unquote(lines[i])
+        nxt = _unquote(lines[i + 1])
         is_sep = (
             nxt.startswith("|")
             and set(nxt.replace("|", "").replace(" ", "")) <= set("-:")
@@ -79,8 +106,8 @@ def parse_tables(text: str):
             header = [c.strip() for c in line.strip("|").split("|")]
             rows = []
             j = i + 2
-            while j < len(lines) and lines[j].strip().startswith("|"):
-                rows.append([c.strip() for c in lines[j].strip().strip("|").split("|")])
+            while j < len(lines) and _unquote(lines[j]).startswith("|"):
+                rows.append([c.strip() for c in _unquote(lines[j]).strip("|").split("|")])
                 j += 1
             yield i + 1, header, rows
             i = j

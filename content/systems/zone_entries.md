@@ -145,7 +145,7 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 ```facts
 Position: Far-side winger flying at the line, a stride ahead of a carrier about to put the puck over
 Technique: Attack the line at full speed with your inside foot leading
-Technique: Stop pushing with the trail leg and let that blade glide so it stays touching the painted line
+Technique: Stop pushing with the trail leg and let that blade glide so it stays touching the painted blue line
 Action: Keep your body, hands and stick already in the zone — only the trail blade is holding you onside
 Action: The instant the puck completely crosses, put that blade down and push
 Key: The judgement is made at one instant — time your glide to it, don't glide for two seconds
