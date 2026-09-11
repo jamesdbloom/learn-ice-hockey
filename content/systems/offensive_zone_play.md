@@ -217,15 +217,17 @@ Position: Just inside the blue line — the point — is the default: the low-to
 Technique: Stay a stride inside the line, not on it — if the puck completely crosses out, the zone is gone and everyone has to re-enter
 Rule: Losing the zone is not off-side — a delayed off-side arises when the puck is played back IN with attackers still inside (NHL and IIHF 83.3); the puck merely leaving nullifies one (USA Hockey 630(d)(1))
 Rule: ⚠️ Check your book before counting on tagging up — USA Hockey 630(d) grants the delayed off-side only at Youth 15-Only and Girls 16U and above, High School and Adult; below those 630(c) stops play at once. The NHL, IIHF and Hockey Canada 6.11(b) set no such floor
-Position: Down to the top of the circle is the activated position — shoot from a better angle, walk the line, or receive in the high slot, and still recover
+Position: Down to the top of the circle is the activated position — shoot from a better angle, walk the line (skate sideways along the blue line), or receive in the high slot, and still recover
 Risk: Below the circles is always a commitment — below the hash marks you are effectively a fourth forward
 Never: Go that deep before someone has taken your job at the blue line — before you go, not after
 ```
 
 An offensive-zone defenceman is always at one of three depths, and the difference between them is the difference between a good defenceman and a liability:
 
+![](diagram:defender-three-depths)
+
 1. **Just inside the blue line (the point).** The default. You are the outlet for low-to-high, the shooting threat that stops the defence collapsing entirely, and the safety net against a counter-attack. Stay a stride *inside* the line, not on it — if the puck completely crosses out, the zone is cleared and everyone has to re-enter. To be precise, a puck leaving is not "offside" and is not a delayed off-side either — it breaks no rule at all. Offside under **NHL Rule 83.1** is about attackers' skates preceding the puck *into* the zone, and what a puck leaving costs you is simply the zone: everyone must now re-enter behind it. The **delayed off-side** is the situation that arises *next*, when the puck is played back **into** the zone while your teammates are still inside it — **NHL and IIHF Rule 83.3** describe *"an attacking player (or players) has preceded the puck across the attacking blue line"*, and the linesperson's arm goes up rather than the whistle going. Your teammates clear it by **tagging up**. ⚠️ **Before you count on that recovery, find out which book you are under.** **USA Hockey Rule 630(d)** grants the delayed off-side and the tag-up only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications only)"*; below those classifications **Rule 630(c)** simply stops play, so the whistle is immediate and there is nothing to recover. **The NHL, the IIHF and Hockey Canada set no such floor** — Hockey Canada's Rule 6.11(b) carries no classification clause at all, and under those three books the recovery is yours at every level. **🇬🇧 Britain runs the IIHF book, and the IHUK In-House Rules carry no amendment to Rule 83**, so the tag-up is yours at every age band there too — [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) sets out that derivation and the limits on it. See [Rules Primer](../foundation/rules_primer.md).
-2. **Down to the top of the circle.** The activated position. You step down to shoot from a better angle, to walk the line toward the middle, or to receive a pass in the high slot. You are still recoverable: you can turn and get back to the line before most counter-attacks develop.
+2. **Down to the top of the circle.** The activated position. You step down to shoot from a better angle, to **walk the line** — skate sideways along the blue line to change the shooting angle — or to receive a pass in the high slot. You are still recoverable: you can turn and get back to the line before most counter-attacks develop.
 3. **Below the circles — too deep.** Not always wrong, but always a commitment. If you go below the hash marks (the short lines at the sides of the faceoff circles), you are effectively a fourth forward and someone must take your job at the blue line *before* you go, not after.
 
 ### Who covers for whom
@@ -962,9 +964,11 @@ This is the part most players never think about. From the perimeter, **you are n
 
 ### Getting pucks through from the point
 
+![](diagram:shooting-lane-and-the-step)
+
 ```facts
 Key: Your job is not to shoot harder, it is to shoot through — point shots are blocked more than shots from anywhere else on the ice
-Technique: Walk the line first — two or three strides toward the middle changes the angle and moves the shot-blocker's feet
+Technique: Walk the line first — skate sideways along the blue line toward the middle until the shot-blocker has to move their feet, then release from the new angle
 Technique: Change the release point — a quick snap from a different spot beats a blocker who has already dropped
 Technique: Take something off it — a slower, lower shot that gets through and gets tipped beats a 95 mph slapshot into a shin pad
 Options: Fake the shot — a blocker on the ice opens the lane for the real one, and often opens the seam pass instead
@@ -973,7 +977,7 @@ Options: Take the D-to-D first — it drags both the blocker and the goalie, and
 
 Point shots are blocked more than shots from anywhere else on the ice. If you are a defenceman, your job is not to shoot harder — it is to shoot *through*:
 
-- **Walk the line first.** Two or three strides toward the middle changes the angle and moves the shot-blocker's feet. A defenceman who receives and fires from the same spot is shooting at a stationary wall.
+- **Walk the line first.** Skating sideways along the blue line toward the middle changes the angle and moves the shot-blocker's feet. A defenceman who receives and fires from the same spot is shooting at a stationary wall. How far is feel rather than a measurement — go until the blocker has to move, which is usually a step or two.
 - **Change the release point.** A quick snap shot from a different spot than the one they set up for beats a blocker who has already dropped.
 - **Take something off it.** A deliberately slower, lower shot that gets through and gets tipped beats a 95 mph slapshot into a shin pad, every time.
 - **Fake the shot.** A shot fake that puts a blocker on the ice opens the lane for the real one, and often opens the seam pass instead.

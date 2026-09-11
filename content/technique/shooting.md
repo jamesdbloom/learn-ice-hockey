@@ -15,7 +15,7 @@ Shooting is two skills taught as one: the mechanics of getting the puck from you
 
 **Make the goalie move sideways, or take away their sight.** A shot taken immediately after a pass across the middle, or through a screen, is worth materially more than the same shot at a goalie who is set and square — act on that direction, but note that the two halves are not equally evidenced: **the movement half is priced in one narrow case** — a public expected-goals model uses how fast and how far the goalie had to travel — **and the sight half is not priced at all**, so any multiplier you hear put on a screen is folklore. Screening from outside the crease without contact is legal, and under the NHL and IIHF the goal crease does the work: every clause of **Rule 69** that voids a goal for **where you stood** names the goal crease, and 69.4, the rule for outside it, reaches contact only. ⚠️ **That is a reading of the rule's structure rather than something either book states in terms**, and both add that Rule 69 is *"enforced exclusively in accordance with the on-ice judgement of the Referee(s)."* ⚠️ **Work just outside the paint, and off the red line around it — but that last step is USA Hockey's and Hockey Canada's, not the NHL's or the IIHF's.** The NHL and the IIHF allow the screen planted *"on the crease line"* outright in their own appendix tables (Situation 5 E), and only the IIHF then contradicts itself about it, at Rule 1.7. **Off the line is the instruction that holds under all four books**, which is why it is the one given here. Take away their eyes, not their room. **USA Hockey and Hockey Canada answer this differently in both directions** — see the rules section below.
 
-**A shot that hits a shin pad is worse than no shot at all.** You have given up the puck, not tested the goalie, and usually started a counter-attack. Look for the lane before you decide to shoot; if there is not one, take a step or two sideways until there is.
+**A shot that hits a shin pad is worse than no shot at all.** You have given up the puck, not tested the goalie, and usually started a counter-attack. Look for the lane before you decide to shoot; if there is not one, step sideways until there is one.
 
 ---
 
@@ -380,7 +380,7 @@ Convention: "Aim for the corners" is one coaching school and this section follow
 
 ```facts
 Action: Look for the lane before you shoot — no sight of the net or of net-front sticks means no lane
-Action: Change the angle — one or two lateral steps beats the angle their sticks were set for
+Action: Change the angle — step sideways along the blue line until the blocker has to move their feet; their sticks are set for the angle you had
 Technique: Lift the puck a few inches to clear sticks; a foot or more is untippable and easy to catch
 Technique: Low and hard for tips — knee height or below, with enough pace that a small deflection still carries
 Options: Fake the shot to drop the defender into the lane, or move the puck until a lane exists
@@ -393,7 +393,7 @@ A shot that hits a shin pad is worse than no shot at all. **You have given up po
 **Getting the puck through, in order of importance:**
 
 1. **Look for the lane before you shoot, not after.** You need a clear channel to the net, not a hopeful gap. If you cannot see net or you cannot see your teammates' sticks at the net front, there is no lane.
-2. **Change the angle.** Do not shoot from where you received the puck. Take one or two steps laterally along the blue line — toward the middle usually, or toward the boards if that is where the gap is. Defenders' sticks and bodies are set for the angle you had a second ago. Two steps changes everything and costs you almost nothing.
+2. **Change the angle.** Do not shoot from where you received the puck. Step sideways along the blue line — toward the middle usually, or toward the boards if that is where the gap is. Defenders' sticks and bodies are set for the angle you had a second ago. How far is feel rather than a measurement: go until the blocker has to move their feet, which is usually a step or two, and it costs you almost nothing.
 3. **Get it off the ice — a little.** A puck kept flat is easy to block with a stick. A puck lifted a few inches clears sticks. A puck lifted a foot or more is unusable for a tip and easy for the goalie to catch. A few inches is the whole target.
 4. **Low and hard for tips.** If you have net-front traffic, the shot you want arrives at knee height or below, hard. Low enough for a teammate to redirect with a blade on the ice, hard enough that a small deflection still has pace on it. High point shots are a tipper's nightmare.
 5. **Fake the shot to make them commit.** A shoulder drop and a half wind-up drops the defender into the lane and takes their stick out of it. Then step around and shoot for real.

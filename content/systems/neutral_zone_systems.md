@@ -609,6 +609,10 @@ Action: Be the first man back if it turns over — that is the deal
 
 Also called the **trailer** or the **third man high**. One forward deliberately delays, staying 10 to 15 feet behind the play, arriving into the space the first two attackers have vacated.
 
+The picture below is drawn from the other bench — the defending team's, because that is the side that has to solve this, and it is the clearest way to see why the space is there. Read "the defencemen" and "the backcheckers" in it as the opponents of the trailer, not as your own.
+
+![](diagram:rush-trailer)
+
 **Why it works.** Defenders track the puck and the immediate threats. The player arriving second is the one nobody has picked up. On entries, the late man arriving into the high slot behind a two-man rush is treated across coaching material as one of the most reliable scoring looks in hockey — **coaching consensus rather than a tracked figure**, on exactly the same footing as the backchecking responsibility described above, and for the same reason. The published breakdowns of how goals are produced stop at the shot and the pass that preceded it; **none classifies a rush goal by the coverage that broke down**, so no measured figure separates the late man from any other way of scoring on a rush.
 
 **The discipline.** Being the late man means genuinely being late — not drifting five feet behind, but staying a full gap back so the defence has to choose between you and the puck. It also means being the first man back if it turns over, which is the deal.

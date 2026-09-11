@@ -122,6 +122,10 @@ Mindset: Be willing to look, for a second, like you are going backwards
 
 The play: you carry the puck into contested ice, you see that the option ahead isn't there, and instead of forcing it you **turn away from the pressure** — a tight turn or curl back toward your own end, protecting the puck on the outside of the turn — and hold it for one or two seconds while your support arrives.
 
+The picture below is drawn at the moment the play is hardest to make: arriving at the line alone against two defenders, with the support still coming.
+
+![](diagram:entry-delay-curl)
+
 Why it works:
 
 - **It buys the only thing your teammates need, which is time to get there.** A forward who is one stride late is useless; a forward who is one stride late and given a second and a half is a second attacker. You are not delaying the play, you are *synchronising* it. See [Puck Support and Spacing](puck_support_and_spacing.md).
@@ -171,6 +175,10 @@ Risk: The boards remove half your options too
 Two structures on the ice cannot be skated through, and you should treat both as teammates.
 
 **Behind the net is the safest pivot in hockey.** Standing behind your opponents' net with the puck, you can only be attacked from two sides, you can see the entire offensive zone laid out in front of you, and any defender who commits to one side has surrendered the other. Nothing behind the goal line is a scoring chance against you, so a mistake there is cheap. It is the one place on the ice where you can genuinely stop, lift your head, and choose.
+
+The picture below is what that choice looks like — two of the options laid out in front of a carrier standing behind their net.
+
+![](diagram:oz-behind-the-net)
 
 The same is *not* true behind your own net, where a turnover is a wraparound or a walk-out. Behind your own net you are pivoting, not surveying — one look, one decision, move it.
 

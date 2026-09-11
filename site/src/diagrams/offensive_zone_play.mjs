@@ -215,6 +215,12 @@ const royalRoad = {
 // 33 and the half-wall was itself 9.5 ft off the dasher; the offset has always
 // been measured from the half-wall, not from the boards, and the two stopped
 // being interchangeable when half-wall moved onto the wall.
+// ⚠️ AND THAT CORRECTION REACHED THIS COMMENT AND STOPPED. `oz-rotation-one-pass-later`'s
+// `describe` still read "five feet off the boards" on 11 September 2026 — the string a
+// screen reader is served, via `describe + " " + caption` (rink.mjs `longDesc`). Fixed
+// there too: it now says five feet inside the half-wall and nine feet off the boards,
+// which is (61, 33.5) against a dasher at 42.5. Same shape of defect as WALKED_TO's
+// below and found in the same pass: if you correct a number here, grep the `describe`.
 const ROTATED_UP = { at: 'half-wall:right', dx: -8, dy: -5 };   // (61, 33.5)
 
 // The high forward. Section 3: "higher in the zone, toward the top of the circles
@@ -320,7 +326,8 @@ const afterRotation = {
     'The attacking half of the rink, the net at the right, one pass after the previous diagram. ' +
     'F1 now has the puck in the strong-side corner — this is the player who was labelled F2 a ' +
     'moment ago. F2 is the player who was carrying on the half-wall, now eight feet up-ice of it ' +
-    'and five feet off the boards. F3 is unchanged at the top of the circles, inside the ' +
+    'and five feet inside it, nine feet off the boards. F3 is unchanged at the top of the ' +
+    'circles, inside the ' +
     'home-plate area. The two defencemen are unchanged on the blue line. The goaltender is in ' +
     'the crease. No routes are drawn.',
 
@@ -415,11 +422,32 @@ const halfWallOptions = {
 // named: 1. The passer... 2. The defenceman... " The order is the content.
 // ---------------------------------------------------------------------------
 
-// Where the defenceman shoots from, after walking. Section 5: "walks the puck
-// toward the middle before shooting". Fourteen feet in along the blue line from
-// the point node, which is the section's "two or three strides toward the middle".
-// (Said ten; the point node is y 20 and this is y 6. Not a rink.json fossil —
-// point.y is unchanged — but an internal dy edit that never reached the prose.)
+// Where the defenceman shoots from, after walking. Section 5 (:393): "walks the
+// puck toward the middle before shooting" — and that sentence is the whole of what
+// the owner commits to. Fourteen feet in along the blue line: `point:right` is
+// (25, 20) and `centre-point` is (25, 0) — both as on disk in site/src/data/rink.json
+// IN THIS WORKING TREE — so dy 6 lands at (25, 6) and the drawn walk is 14 ft,
+// entirely lateral at x 25.
+//
+// ⚠️ THE FOURTEEN IS ILLUSTRATIVE AND IS NOT A MEASUREMENT — the same status
+// shooting.mjs's STEPPED_TO records for its own ten. NOTHING in this document fixes
+// a distance for the walk: section 5 gives none, and section 11 (:980) deliberately
+// refuses to — "How far is feel rather than a measurement — go until the blocker has
+// to move, which is usually a step or two." The caption states no distance either,
+// which is right and stays that way.
+// ⚠️ THIS COMMENT USED TO CALL THE FOURTEEN "the section's 'two or three strides
+// toward the middle'". That phrase is in NO content document — check_diagram_quotes
+// reports it unfound. Bare "two or three strides" DOES survive, at :1056 of this
+// document and in forechecking_systems.md, but both are about arriving on a check and
+// neither is this walk. Re-grep before trusting any attribution here.
+// ⚠️ AND THE `describe` SAID TEN, which is what this note was written about and did
+// not reach. A screen reader is served `describe + " " + caption` (rink.mjs
+// `longDesc`), so a blind reader was given a different picture from the drawn one.
+// It now names the direction and the endpoint and no distance at all.
+//
+// The dy is co-constrained and is not free: route 4's lane runs from here to
+// (76, -0.5) and passes 6.79 ft from HIGH_SLOT_SUPPORT's centre at (63, 8) — 2.9 ft
+// of daylight past a forward's 3.875 ft of ink. Moving this dy moves that clearance.
 const WALKED_TO = { at: 'centre-point', dy: 6 };                // (25, 6)
 
 // The high-slot support. Section 5: "One forward supports in the high slot,
@@ -459,7 +487,7 @@ const lowToHigh = {
     'pass from a forward on the strong-side half-wall up the ice to a defenceman at the ' +
     'strong-side point. Two: the same forward then skates in off the wall toward the hash marks ' +
     'on the inside edge of the strong-side faceoff circle. Three: the defenceman carries the ' +
-    'puck ten feet along the blue line toward the middle of the ice. Four: from there a shot, ' +
+    'puck in along the blue line, stopping short of the middle of the ice. Four: from there a shot, ' +
     'drawn as a double line, runs down the ice and finishes short of the net, passing to the ' +
     'weak side of a forward who is standing at the net front, eight feet out from the goal line ' +
     'and just outside the strong-side post. ' +

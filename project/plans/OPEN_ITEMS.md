@@ -73,35 +73,130 @@ caption is not where a section's content goes.**
 **The owner's ruling:** the corpus should teach the game — where to be, what to do, what happens next — and
 **may mention rules**, but must not read as a rules reference.
 
-**Measured 11 September 2026:** 1,191,292 words carrying **16,523 rule-number citations — 13.9 per 1,000
-words, a rule number roughly every 72 words.**
+⚠️⚠️ **THE FIRST FIGURE IN THIS SECTION WAS WRONG AND WAS COMMITTED. Read this before quoting any number.**
+It said *"16,523 citations, 13.9 per 1,000"*. **The counter matched any decimal** — `4.5` ft, `2.10×`,
+`16.6%`, `1.7` m, version `1.1` — **35% of the figure was not a citation.** It also counted the **Sources
+trailer**, which `md_to_speech` strips and which is exactly where homework-proving belongs. **Found by the
+pilot agent, which could not reproduce the number by any of five methods.**
 
-| citations /1k | document | note |
-|---|---|---|
-| 22.8 | `foundation/rules_primer.md` | ⚠️ **this one is legitimately a reference. It is the exception, not the pattern** |
-| 22.2 | `systems/faceoffs.md` | a gameplay document |
-| 17.9 | `technique/body_contact_and_battles.md` | safety-critical; some density is earned |
-| 17.8 | `positions/goaltender.md` | a position document |
-| 17.6 | `hockey-iq/risk_management.md` | a decision-making document |
-| 17.5 | `systems/game_management.md` | |
-| 15.2 | `off-the-ice/team_play_and_culture.md` | ⚠️ **a CULTURE document, 308 rule citations, as dense as the primer** |
+**CORRECTED, body only, requiring an explicit `Rule N` or `NNN(a)` form:**
 
-**And the corpus proves it can teach without them:** `technique/skating.md` **2.4 /1k**,
-`hockey-iq/puck_support_and_spacing.md` **4.6 /1k**, `systems/neutral_zone_systems.md` **5.3 /1k**. **Nobody
-thinks those documents are worse for it.**
+| | |
+|---|---|
+| body words | **1,175,572** |
+| rule citations | **10,575** |
+| **density** | **9.0 per 1,000 — a rule number every ~110 words** |
 
-**The work:** for each document outside `rules_primer.md` and `uk_rules.md`, ask of every rule citation —
-**does a player need this to play the next shift?** If yes, keep it, usually compressed to the instruction
-with the rule number in a facts line. If it is a four-book comparison, **move it to the primer and link.**
+⚠️ **MEASURE THE BODY, NOT THE FILE, AND REQUIRE THE WORD "RULE".** A bare `57.1` is indistinguishable from
+a measurement.
 
-⚠️ **DO NOT SWEEP THIS.** ⚠️ **Non-negotiable 3 stands: never delete a claim merely because it is
-inconvenient**, and ⚠️ **non-negotiable 4 stands: an honest disclosure is not verbosity.** The corpus's
-rule-set flags exist because a reader penalised under the wrong book is the failure this project was built to
-prevent. **The target is the SURVEY, not the FLAG.** *"Under USA Hockey this is a minor"* earns its place;
-three paragraphs comparing four books on a clause nobody will meet does not.
+### ⚠️ The corpus ranking is the WRONG comparison. Use the peer group.
 
-⚠️ **And a compression is new text.** Every one needs `safety-reviewer` if it touches contact, technique,
-equipment or a penalty, and `rules-verifier` if it keeps a citation.
+The pilot's most useful finding. `team_play_and_culture.md` ranked **4th** corpus-wide, which reads as
+unremarkable. **Against its own section it was an outlier by an order of magnitude:**
+
+| off-the-ice | /1k |
+|---|---|
+| `team_play_and_culture.md` | **9.2** ⚠️ |
+| `equipment.md` | **7.6** ⚠️ **next target** |
+| `how_to_watch_hockey.md` | 3.4 |
+| `conditioning_and_recovery.md` | 2.2 |
+| `practice_and_development.md` | 1.5 |
+| `mental_game.md` | 0.4 |
+
+**A culture document at 9.2 beside a psychology document at 0.4 is the case. Brief the next twelve on their
+peer group, not on the corpus rank.** Densest overall are `rules_primer.md` 14.7 (legitimately a reference),
+`faceoffs.md` 14.2, `goaltender.md` 13.8, `body_contact_and_battles.md` 11.6.
+
+### The test
+
+**Does a player need this to play the next shift, or to not get hurt or ejected?** If yes, keep it,
+compressed. If it is a four-book comparison, **move it to `rules_primer.md` and link.** If it is there to
+prove the homework was done, **the Sources trailer already is that place.**
+
+⚠️ **THE DUPLICATION IS THE UNLOCK.** The pilot's biggest wins were surveys `rules_primer.md` already holds
+in more depth with the same quotations. ⚠️ **Verify the owner by READING the target section, not by trusting
+a pointer** — and check the rule number exists elsewhere at all: **four numbers in the pilot document existed
+NOWHERE else in the corpus**, so a link would have pointed at nothing and they were compressed in place.
+
+### ⚠️ Three constraints the pilot discovered, which the first brief got wrong
+
+1. ⚠️ **THE FACTS-LINE DESTINATION DOES NOT EXIST FOR OFF-ICE DOCUMENTS.** The style guide **excludes the six
+   off-ice documents from ` ```facts ` blocks by name** — *"they are reference or off-ice material, and
+   imperatives would misrepresent them."* `check_facts.py` covers **26 documents, not 37.** For those six the
+   only destinations are **paraphrase in place** and **the trailer**.
+2. ⚠️ **CUT THE ENUMERATION, KEEP THE INFERENCE.** The hardest passage was an ~800-word five-book survey that
+   existed to prove *no book reliably protects your goalie* — which is the whole reason the convention
+   matters. **The enumeration went; the load-bearing conclusion stayed.** ~230 words.
+3. ⚠️ **RUN A REMOVED-QUOTATION-VS-CORPUS DIFF BEFORE FINISHING.** The pilot **broke non-negotiable 3 once**
+   — it dropped *"[bench doors] must swing inward so they cannot be left protruding onto the ice"*, which a
+   grep then showed existed **nowhere else in the corpus.** It restored it. ⚠️ **It surfaced only because the
+   agent diffed removed quotations against the corpus rather than trusting its own hunks. Put that check in
+   every brief.**
+
+### ⚠️ What a compression costs, and who must see it
+
+**A compression is new text, and it removes the hedging that made the original cautious.** The pilot said it
+plainly: *"if the pre-existing text was wrong, my version is wrong more concisely and now reads as more
+confident because the hedging quotations are gone."* **`rules-verifier` matters MORE after a compression pass
+than before it**, and anything touching contact, technique, equipment or a penalty tier needs
+`safety-reviewer`.
+
+⚠️ **And density is a PROXY, not the ruling.** A document that discusses rules heavily **without numbering
+them** scores zero and looks clean. **Read the next one before trusting its number.**
+
+### ⚠️⚠️ THE HARD PILOT: measure the BODY, and the target is REPETITION as much as survey
+
+`faceoffs.md` was dispatched as the hard case — second-densest in the corpus — with the instruction that the
+most valuable finding would be **where the ruling does not apply**. It was.
+
+**Split by layer, the headline dissolves:**
+
+| layer | words | citations | /1k |
+|---|---|---|---|
+| Sources trailer | 6,306 (14%) | 321 (**29%**) | 50.9 |
+| ` ```facts ` blocks | 6,766 | 230 | 34.0 |
+| **body prose** | **31,992** | **538** | **16.8** |
+
+⚠️ **The trailer is where the ruling says homework belongs; the facts layer is where it says the citation
+belongs. The body was two points above corpus mean, not eight. The headline figure was mostly the file
+OBEYING the ruling already.**
+
+⚠️ **AND THE REAL DRIVER WAS NOT COMPARATIVE RULES WORK — IT WAS REPETITION.** One IHUK sentence quoted
+**verbatim 12 times**; the same edition story (*2025/26 warned, 2026/27 ejects, IHUK settles it*) told at
+**eight separate sites**, each time re-quoting the sources. **Deduplicated to 5 sites. Body 16.8 → 14.4,
+corpus mean. 1,834 words cut.** ⚠️ **Look for repetition before looking for surveys.**
+
+### ⚠️⚠️ WHERE THE RULING DOES NOT APPLY — read this before briefing any rules-heavy document
+
+**Most of `faceoffs.md`'s density is EARNED, and compressing further would damage it.** The four-book cases
+there are not a survey; **they are the instruction:**
+
+- ⚠️ **A British centre who does exactly what the IIHF book says is in violation.** IIHF 76.7(IV) asks for
+  *"at least the toe"*; IHUK requires *"the whole of their stick blades (not toe or heel)"*.
+- ⚠️ **Four different answers to "where do I put my foot", and the wrong one ejects your centre** — NHL/IIHF
+  permit a skate on the line, Hockey Canada counts it as encroachment, USA Hockey's Casebook says *"all
+  sticks and all skates"*.
+- Stick-down order: three answers across four books, deciding who shows their blade angle first.
+- Kicking the puck back is legal in the NHL and a violation under the IIHF — **a technique a British reader
+  must delete from their repertoire.**
+
+⚠️ **The agent's own reason, which is the best statement of the limit anyone has given:** *"a faceoff is the
+only moment in hockey where a TEAMMATE's positioning penalises YOU. The four-book comparison is how a reader
+learns their winger can cost them the draw, and it cannot be compressed to one book without picking a book
+for a reader you cannot see."*
+
+✅ **AND THE DOCUMENT ALREADY HOLDS THE RIGHT PATTERN — copy it.** At *"The rule everybody gets wrong"* it
+sets out all four books and then lands on: ***"The instruction that survives all four books is the short one:
+keep your skates and your stick behind your own hash mark."*** **Set out the divergence, then land on what
+survives it.** That is the model for every rules-heavy section.
+
+### ⚠️ What is NOT the target
+
+⚠️ **Non-negotiable 3 stands: never delete a claim merely because it is inconvenient.** ⚠️ **Non-negotiable 4
+stands: an honest disclosure is not verbosity.** ⚠️ **THE RULE-SET FLAG IS NOT THE SURVEY.** *"Under USA
+Hockey this is a minor"* earns its place — a reader penalised under the wrong book is the failure this
+project exists to prevent. Three paragraphs comparing four books on a clause nobody will meet does not.
 
 ---
 
@@ -237,6 +332,36 @@ entry.**
 
 ## Numbers and ownership
 
+- ⚠️⚠️ **FOLKLORE, NOT A WORDING PROBLEM: the corpus teaches "walking the line" in at least THREE documents
+  and has NO SOURCE for it anywhere.** Found 11 September 2026. One manoeuvre — a point player sliding
+  sideways along the offensive blue line — was stated **seven times in three magnitudes and three units**:
+  *"one or two steps"* (`shooting.md`), *"two or three strides"* (`offensive_zone_play.md`), *"three metres"*
+  and *"two or three metres"* (`special_teams.md`, contradicting itself in two facts lines **both voiced
+  alone**). ⚠️ **`grep` over all 60 files in `sources/` returns ZERO. The IIHF coach-development material's
+  two candidate passages give no distance. Two of the documents' own cited articles were FETCHED and give
+  none either** — one of them naming drills called *"Blue Line Shuffles"* and *"Lateral Blue Line Series"*
+  without a figure anywhere on the page.
+
+  **All seven repaired** by replacing the count with a **stop condition** labelled as craft — *"go until the
+  blocker has to move their feet"*, *"keep going until a killer turns their head"*. ⚠️ **But the repair
+  replaced a fabricated precision with UNSOURCED CRAFT that is honestly labelled and still unsourced.** The
+  agent said it plainly: *"no search I ran could have told me it was wrong rather than merely unsupported."*
+  **The upstream question stands and is the real row: a technique taught in three documents with no source
+  is the folklore-propagation shape, and the style guide has no numeric-owner row for it — a row that owned
+  the ABSENCE of a number is what would have stopped this.**
+
+  ⚠️ **Two jobs, one action, and the SITE LAYER HAD ALREADY DRAWN THE DISTINCTION** — `pp-131`'s caption
+  describes walking the line with no distance (the distribution job, changing passing lanes) while
+  `shooting-lane-and-the-step` carries the owner's *"one or two steps"* (the shooting job, beating one
+  blocker). **The prose was the only layer carrying metres.**
+
+- **`special_teams.md:377` — *"a missed pinch puts you two strides deeper than a missed hold does"*.** Same
+  species, reported not fixed. Nothing in `sources/` fixes it. **May be defensible as a rough comparative
+  rather than a measurement** — needs `safety-reviewer`, since it is the argument for not pinching with one
+  defenceman back.
+
+
+
 - ⚠️ **No figure in the §9 penalty table can be verified from this repository.** No script, no cached JSON —
   `grep` for `2967` / `gamecenter` returns only prose. **Two agents ruled on what those figures support;
   neither could check they are right.** If the raw pull exists, breaking out the residual 28.6% would settle
@@ -247,6 +372,46 @@ entry.**
 - **The IIHF and Hockey Canada exclude HOOKING from their stick categories too**, so a second of the seven
   also fails to sort. ⚠️ **Would strengthen the ruling — but the corpus calls hooking a stick foul elsewhere.
   Propagate or leave; do not do half.**
+
+## Diagrams — the describe layer
+
+- ⚠️⚠️ **"THE FIX REACHED THE COMMENT AND STOPPED BEFORE THE STRING A LISTENER HEARS." Found TWICE in one
+  module on 11 September 2026, both times by an agent sweeping numerically rather than reading.**
+  - `oz-low-to-high` told a screen-reader user the defenceman carries the puck **ten feet** along the blue
+    line. The geometry draws **fourteen** — `point.y 20` to `dy 6`. The module's own comment already said so.
+  - `oz-rotation-one-pass-later` said F2 is **five feet off the boards**. He is at y 33.5 against a dasher at
+    42.5 — **nine**. Its comment already said so too, and named the cause: *"true only while half-wall.y was
+    33"*.
+  ⚠️ **`describe` is the ONLY access a blind reader has to the picture**, and `longDesc` serves them
+  `describe + caption` — so a stale figure there is an accessibility defect, not a tidiness one.
+
+- ⚠️ **THE REPAIR WAS BETTER THAN THE SPECIFICATION, and the reasoning generalises.** The brief said make the
+  string say fourteen. The agent refused: **no layer of the owner fixes a distance** — §5 says only *"walks
+  the puck toward the middle"*, §11 **deliberately refuses** a number (*"go until the blocker has to move"*).
+  So fourteen is illustrative, and a flat *"fourteen feet"* would have been **an unhedged measurement in the
+  one layer that reaches a blind reader**. It now states no distance: *"carries the puck in along the blue
+  line, stopping short of the middle of the ice."* ⚠️ **If the owner fixes no distance, the `describe` states
+  none.**
+
+- ⚠️⚠️ **NEXT WAVE, SCOPED AND READY: 166 distance claims sit in `describe` strings across 27 modules, and
+  only two modules have ever been checked.** ⚠️ **But there is a cheap high-yield probe**, because both stale
+  strings had their correction already written in a neighbouring comment: **36 sites across 17 modules carry
+  a comment recording a numeric correction.** Grep shape:
+  `//.*\b(said|read|was true only|never reached|stale|should say|actually)\b.*\b\d+\b` near `ft|feet|\.y`.
+  **For each, ask only: does the `describe` still state the OLD number?** Densest: `body_contact_and_battles`
+  (6), `offensive_zone_play` (4, two now fixed), `positions` (4), `breakouts` (3), `defending_the_rush` (3).
+  ⚠️ **ONE MODULE PER AGENT** — four agents were once sent to this tree in one round each believing it owned
+  the files exclusively, and a rebuild published six captions nobody had read.
+
+- **Reported, geometry, not fixed:** `puck: { at: 'half-wall:right', dx: 1, dy: 3.5 }` at
+  `offensive_zone_play.mjs:305, 415, 528` resolves to **(70, 42.0)** with a glyph radius of 1.1 against a
+  dasher at 42.5 — **the puck is drawn 0.6 ft outside the playing surface** in three units, merging with the
+  boards line. Visible in a render. **Geometry, so the agent stopped rather than moved it.**
+
+- **`special_teams.mjs:191`** justifies its drawn ten feet as *"the section's own three metres"*. ⚠️ **The
+  section no longer says three metres** — it was repaired to a stop condition. The drawing is fine as a scale
+  choice; **the justification must be re-anchored** to the pattern `shooting-lane-and-the-step` already uses
+  (*"take the move from those words and not the distance from the picture"*).
 
 ## Tools
 

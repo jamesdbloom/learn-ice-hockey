@@ -147,16 +147,26 @@ const GOALIE_IN_CREASE = { at: 'crease', dx: 1 };
 // and that this marker is the schematic anchor for it; the caption says so in words.
 const POINT_R = 'point:right';
 
-// Where the shooter ends up after "one or two steps laterally along the blue line —
-// toward the middle usually" (:393).
+// Where the shooter ends up after "Step sideways along the blue line — toward the
+// middle usually" (:396). ⚠️ Re-checked 11 September 2026: this line used to quote
+// "one or two steps laterally along the blue line — toward the middle usually" and cite
+// :393. That string is in no content document, and :393 is now the list's lead-in.
 //
 // ⚠️ THE SECTION GIVES NO DISTANCE, and this is not one. Ten feet is chosen so that
 // the change of lane is visible at the scale these render at, and the caption tells
 // the reader to take the move from the words and not the feet from the picture —
 // which is the treatment `oz-net-front-screen` already gives its own six-to-eight
-// feet. For scale: `oz-low-to-high` draws fourteen feet for its owner's "two or
-// three strides"; ten is proportionate to "one or two steps" and is not derived
-// from anything.  (25, 10)
+// feet. For scale: `oz-low-to-high` draws fourteen feet for a walk ITS owner leaves
+// unmeasured too. ⚠️ This line used to attribute that fourteen to an owner's phrase
+// "two or three strides toward the middle"; re-checked 11 September 2026, that phrase
+// is in no content document, and offensive_zone_play.md :980 replaced the count with a
+// stop condition — "go until the blocker has to move". (Bare "two or three strides" DOES
+// survive in content, in forechecking_systems.md and at offensive_zone_play.md :1056, but
+// both are about arriving on a check.) ⚠️ AND THIS LINE THEN DID IT AGAIN: it went on to
+// proportion the ten to "one or two steps", which is ALSO in no content document as of
+// 11 September 2026 — shooting.md:396 demoted the count out of the instruction the same day.
+// A comment written to retract a stale quotation ended on a stale quotation. Ten is
+// proportioned to nothing but VISIBILITY AT THIS SCALE, which is what the caption says.  (25, 10)
 const STEPPED_TO = { at: 'point:right', dy: -10 };
 
 // The shot blocker, standing in the lane the shooter HAD.
@@ -228,9 +238,9 @@ const laneAndTheStep = {
     'it is there so you can see what the blocker is set for. First the shooter moves sideways ' +
     'along the blue line toward the middle; then the shot goes from the new spot, past the blocker ' +
     'and through to the net front. ' +
-    'Take the move from those words and not the distance from the picture: the instruction is one ' +
-    'or two steps sideways and it fixes no measurement, so the ten feet drawn here is only what it ' +
-    'takes for the change of lane to be visible at this scale. Keep the shot low, and say out loud who you are ' +
+    'Take the move from those words, not the distance from the picture: how far is feel rather ' +
+    'than a measurement — go until the blocker has to move their feet — so the ten feet drawn here ' +
+    'is only what makes the change of lane visible at this scale. Keep the shot low, and say out loud who you are ' +
     'shooting at, because it passes your own winger at the net front and they need to know it is ' +
     'coming and to have a blade on the ice for the tip. A point shot is almost never trying to ' +
     'score directly — it is there to make a tip, a rebound or a scramble in the slot, which is why ' +
@@ -280,8 +290,8 @@ const laneAndTheStep = {
   ],
 
   routes: [
-    // 1 — "Take one or two steps laterally along the blue line — toward the middle
-    //     usually". Drawn as `carry`, the key's SKATE AND STICKHANDLE: the shooter
+    // 1 — "Step sideways along the blue line — toward the middle usually" (:396).
+    //     Drawn as `carry`, the key's SKATE AND STICKHANDLE: the shooter
     //     has the puck. Not `crossovers`, which is a different claim about how the
     //     feet move, and which this section makes nowhere.
     //

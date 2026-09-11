@@ -358,6 +358,8 @@ Your **gap** is the distance between the defender and you. Reading the defender 
 - **Standing up versus backing off at the line.** Standing up at the blue line takes the entry away, so you beat it with a chip-and-chase, a lateral pass to a teammate entering in a different lane, or a regroup rather than forcing it. Backing off gives you the line and takes the middle. Note the vocabulary here: **stepping up** is challenging forward in the neutral zone or at your own line; a **pinch** is stepping *down* from the *offensive* blue line. They are different plays in different places.
 - **Their stick.** An active stick in the middle lane is protecting the middle; a trailing or outside stick means the middle may be open. A stick is easy to move, though, so this is the weakest of these cues — weight it below the feet.
 
+![](diagram:entry-outside-shoulder)
+
 See [Zone Entries](../systems/zone_entries.md) and [Defending the Rush](../systems/defending_the_rush.md).
 
 ### Reading the play's next state
