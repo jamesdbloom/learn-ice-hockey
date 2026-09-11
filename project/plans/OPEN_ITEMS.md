@@ -64,6 +64,31 @@ source change has a blast radius the diff does not show:** `forecheck-pinch` ren
 `/systems/forechecking_systems/` **and** `/systems/game_management/`. **Grep `dist` for the diagram id before
 reviewing a caption.**
 
+⚠️⚠️ **BEFORE COMMISSIONING ANY DIAGRAM, CHECK WHETHER IT WAS ALREADY DRAWN AND CUT.** The
+11 September triage ranked `dz-back-door-seam` as the corpus's **#1 undrawn picture**. It had been
+drawn, reviewed twice, repaired, re-reviewed and **cut** in round 68, cut accepted. **A diagram cut
+before it is committed leaves no trace in `content/` at all** — no `](diagram:` marker was ever
+added — so `git log -S '](diagram:'` **cannot see it**, and that probe was written into the triage
+as the archaeology method. **The probe that works:**
+
+```bash
+grep -rn '<diagram-id>' project/reviews/          # a rejection that got as far as a NAME
+awk '/NOT DRAWN/,0' site/src/diagrams/<module>.mjs  # a rejection that never got one
+```
+
+**17 modules carry a `WHAT IS DELIBERATELY NOT DRAWN` block.** `defending_the_rush.mjs`,
+`breakouts.mjs`, `forechecking_systems.mjs` and `skating.mjs` carry **none** — no recorded
+rejections there to trip over. Full record:
+[`findings_diagram_triage_2026-09-11.md`](../reviews/findings_diagram_triage_2026-09-11.md).
+
+⚠️ **And the gap that triage reported was never a gap: THREE back-door pictures already exist**
+(`dz-strong-side-overload`, `dz-collapse-high-slot`, and `pp-backdoor` from the attacking side).
+**Grep the diagram sources for the play, not just for the section.**
+
+| | a row this opened |
+|---|---|
+| ⬜ | **`defensive_zone_coverage.md` calls two different lanes "the seam"** — `:521` *"Stick in the seam. The pass has to cross the slot"* is the low lane; `:523` *"The seam runs through the high slot"* is not. `dz-strong-side-overload` draws the cross-ice route crossing at **x ≈ 76** = `slot`; `high-slot` is **x = 69**. Both are voiced as separate `<p>` units in `048.ssml`. **Needs the section's owner and a source — two reviewers have declined to assume, correctly.** |
+
 ⚠️ **The owner does not want long captions.** The two longest of 198 are `forecheck-press` (3,435 chars) and
 `forecheck-pinch` (3,102). At 390px the picture is 18% of the figure and one safety band runs 836px. **A
 caption is not where a section's content goes.**

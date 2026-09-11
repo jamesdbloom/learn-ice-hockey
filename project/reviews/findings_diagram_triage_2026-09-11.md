@@ -345,3 +345,61 @@ statement.**
 spatial 60% of that section is **the wheel off a draw and its three variations** — win-and-up, win-and-reverse,
 the modified wheel. `breakout-wheel` exists at `breakouts.mjs:209` but draws **the general wheel, not the
 wheel off a faceoff.** That is a DRAW item, not a borrow.
+
+---
+
+## ⚠️ ROW 1 OF BUCKET 2 WAS A RE-COMMISSION OF AN ACCEPTED CUT — and the probe I briefed is blind to that
+
+**`dz-back-door-seam` already existed.** It was drawn, reviewed twice, repaired, re-reviewed
+and **CUT** in round 68, and the cut was accepted —
+[`round_68_the_body_or_the_puck.md:115`](round_68_the_body_or_the_puck.md). The triage ranked
+it **#1**, the highest-value undrawn picture in the corpus, and dispatched an agent to draw it.
+The commission did not survive step 1 of that agent's own refute-the-brief pass.
+
+### The method defect, which is the generalisable half
+
+⚠️ **A diagram that is cut BEFORE it is committed leaves no trace in `content/` at all.** No
+`](diagram:…)` marker was ever added, so the archaeology probe written into this file —
+`git log -S '](diagram:' -- <file>` — **returns the file's ordinary history and nothing about
+the cut.** Verified: on `content/systems/defensive_zone_coverage.md` it reports one commit,
+`f2504ce`, which is the diagram layer's own introduction. The cut is invisible to it.
+
+**The probe that works is `grep -rn '<diagram-id>' project/reviews/`, and it takes two seconds.**
+Run it before commissioning anything.
+
+### That probe applied to the whole DRAW list, now
+
+Every id-shaped token in `project/reviews/` differenced against the 198 live ids in
+`site/src/data/diagrams.json`. **One genuine non-live id: `dz-back-door-seam`.** The other
+seven hits (`dz-support-structure`, `faceoff-dot`, `faceoff-dzone`, `nz-back-off`,
+`nz-stand-up`, `oz-cross-the-road`, `pp-1-3-1`) are **prefix truncations of live ids** by the
+extraction regex, not cut diagrams. ⚠️ **But the id probe only finds a rejection that got as
+far as being NAMED.** The authoritative record of a rejection that never got a name is each
+module's own **`WHAT IS DELIBERATELY NOT DRAWN`** block — **17 modules carry one**, and
+`defending_the_rush.mjs`, `breakouts.mjs`, `forechecking_systems.mjs` and `skating.mjs`
+carry **none**, which is the useful half of that census: those four have no recorded
+rejections to trip over.
+
+### And the gap row 1 reported was never a gap
+
+**Three back-door pictures already exist.** `dz-strong-side-overload` draws the threat from the
+defending side — the attacker alone at the far post, labelled *"nobody on the far post"*, the
+cross-ice pass dashed. `dz-collapse-high-slot` draws the weak-side winger sagged in. And
+**`pp-backdoor` in `special_teams.mjs` draws the same play from the attacking side.** The
+second reviewer's verdict on the cut version was that it was
+*"`dz-strong-side-overload` with four players deleted."*
+
+**Disposition: row 1 CLOSED as correctly undrawn.** A fifth entry recording all of it now sits
+in `defensive_zone_coverage.mjs`'s own `NOT DRAWN` block, so the next triage reads it in the
+file rather than rediscovering it. Borrowing `dz-strong-side-overload` into §"The back door"
+remains live and cheap and was **not** pursued.
+
+### A content defect found on the way, and NOT fixed
+
+⚠️ **`defensive_zone_coverage.md` uses "the seam" for two different lanes.** `:521`
+*"Stick in the seam. The pass has to cross the slot"* is the low lane; `:523` *"The seam runs
+through the high slot"* is not. The drawn cross-ice route in `dz-strong-side-overload` crosses
+at **x ≈ 76**, which `rink.json` calls `slot`; `high-slot` is **x = 69**. Both sentences are
+voiced as separate `<p>` units in `048.ssml`, so a listener hears the two readings a few
+seconds apart with nothing reconciling them. **Needs the section's owner and a source. No
+agent has assumed which is meant — round 68's reviewer declined, and so did this one.**

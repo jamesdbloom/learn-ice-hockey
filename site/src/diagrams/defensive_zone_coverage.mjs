@@ -28,6 +28,43 @@
  *
  * WHAT IS DELIBERATELY NOT DRAWN, and why, so the next reviewer does not add it:
  *
+ *   - **The back door / weak-side seam.** ⚠️ IT WAS DRAWN, REVIEWED TWICE,
+ *     REPAIRED AND CUT — `dz-back-door-seam`, recorded in
+ *     project/reviews/round_68_the_body_or_the_puck.md — and it has since been
+ *     re-commissioned by a triage that could not see the cut, because the marker
+ *     never reached `content/` and `git log -S '](diagram:'` therefore finds
+ *     nothing. Read that record before drawing it a third time. Four things
+ *     blocked it; three of them still do.
+ *       (1) THE SECTION'S FOUR BULLETS ARE EYES, A STICK, A WINGER'S SAG AND A
+ *           VOICE CALL. This notation can draw the sag and a body position and
+ *           nothing else — it has no stick symbol, a limitation
+ *           `stick-in-lane-body-net-side` states in its own caption, and a still
+ *           frame cannot show where a player is looking or what he shouts.
+ *       (2) BOTH DRAWABLE HALVES ARE ALREADY DRAWN IN THIS FILE.
+ *           `dz-strong-side-overload` draws the threat — the attacker alone at
+ *           the far post, labelled "nobody on the far post", with the cross-ice
+ *           pass as a dashed route — and `dz-collapse-high-slot` draws the
+ *           weak-side winger sagged into the high slot. The cut diagram was, in
+ *           its second reviewer's words, "`dz-strong-side-overload` with four
+ *           players deleted".
+ *       (3) THE GEOMETRY AT THE POST DOES NOT FIT. The far post is (89, ±3); a
+ *           triangle reaches 4.6 ft at its apex and a circle 3.875, halo
+ *           included. A defenceman body-on-man, the attacker he is on, and a
+ *           goaltender in the paint do not fit in that box. The cut version put
+ *           3.1 of the triangle's 5.4 ft in the blue paint and painted over the
+ *           `G`; its repair cleared the crease only by moving the attacker 10.8
+ *           ft off the post, which falsified its own caption's "drifts alone to
+ *           the far post".
+ *       (4) AND THE SECTION USES "the seam" FOR TWO DIFFERENT LANES, so any drawn
+ *           seam picks one and thereby authors a claim. "Stick in the seam. The
+ *           pass has to cross the slot" is the low lane; "The seam runs through
+ *           the high slot", two bullets later, is not. §"The high slot — the
+ *           seam" earlier in the same document takes the second reading ("the
+ *           seam runs through it — the back-door pass crosses it"), while the
+ *           cross-ice route drawn in `dz-strong-side-overload` crosses the centre
+ *           line at x ≈ 76, which is `slot`, not `high-slot` (x = 69). Which is
+ *           meant needs the section's owner and a source. The round-68 reviewer
+ *           declined to assume; so does this note.
  *   - **The hybrid's base shape.** The section says a raw headcount cannot tell a
  *     hybrid from a collapse ("Both a collapse and a hybrid put three low (two D
  *     and the centre), so a raw headcount tells you nothing... What separates them
@@ -76,8 +113,15 @@ const OUR_G = { at: 'crease', dx: 1 };                       // (87, 0)
 // defencemen hold the points.
 // A GLYPH IN THE CORNER MUST CLEAR THE ARC, NOT THE STRAIGHT DASHER — the same
 // rule positions.mjs states over its own corner cluster, which this module did
-// not follow. ASSUMES `site/src/data/rink.json` at sha256-12 f789ee35b8d9, and
+// not follow. ASSUMES `site/src/data/rink.json` at sha256-12 92f6bbb5667b, and
 // the glyph branches of site/scripts/lib/rink.mjs:
+// ⚠️ THIS LINE READ f789ee35b8d9, WHICH IS a7871c7~1. Not a falsified
+// measurement: that commit's rink.json diff is 8 lines in and 8 out and
+// every one is a `$comment` or a `note`. Re-checked 2026-09-11 by loading
+// both revisions and comparing them with `$comment`, `note`, `source` and
+// `book` stripped — structurally and numerically identical, so nothing
+// derived below moved. The hash is updated so the next re-derivation starts
+// from the file on disk rather than from a revision it has to go and find.
 //   boards       y = +/-42.5, x = +/-100        rink.json sheet 200 x 85
 //   corner arc   radius 28, centres (+/-72, +/-14.5) = (100 - 28, 42.5 - 28),
 //                drawn with a 0.6 stroke, so its INNER ink edge is r = 27.7
