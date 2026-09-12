@@ -62,8 +62,35 @@
  *     instant from the same side of the ice: you on the half-wall in your own end, a
  *     forechecker closing, the support option already in place behind you, and its caption
  *     already teaches that everything in the picture was there to be seen before the puck
- *     arrived. This section links to that document in its own body. The markdown should
- *     reference the id.
+ *     arrived. This section links to that document in its own body. ⚠️ THE MARKER IS NOW
+ *     PLACED, after the "what scanning is for" paragraph and before the coaching-choice
+ *     blockquote — so this entry's action item is DONE and the section is no longer
+ *     undrawn. The renderer announces the borrow aloud ("Diagram, from scanning and
+ *     anticipation."), so nothing claims this file drew it.
+ *
+ *     ⚠️ AND A LATER TRIAGE RE-PROPOSED IT ANYWAY, as "all three outs drawn from the
+ *     arrival point". THAT BRIEF IS WRONG FOUR WAYS AND THE COMPOSITE MUST NOT BE DRAWN:
+ *       (1) THE SECTION NAMES FOUR OUTS, NOT THREE — "a rim, a reverse, a spin to the
+ *           middle, or a chip off the wall past the checker". A brief that miscounts the
+ *           list it is asking for has not read the list.
+ *       (2) NONE OF THOSE FOUR IS THE SECTION'S FIRST OUT. The section asks three
+ *           questions in order, and the four-item list is the answer to the SECOND one,
+ *           "if nobody is there". The first out is the pass to the low support player.
+ *           A picture of the four would teach the FALLBACK as the section's content and
+ *           omit the option the section puts first — inverting its priority order.
+ *       (3) THE ADDED CLAIM IS A TIME CLAIM. What this section contributes beyond the
+ *           four routes is that you decide BEFORE you arrive. A plan view has no time
+ *           axis — the same reason given above for "When a simple pass is available",
+ *           and stronger here, because the whole section is a decision order rather than
+ *           a place on the ice.
+ *       (4) ALL FOUR ARE ALREADY DRAWN, and the "Using the boards" entry below lists
+ *           them: rim = `breakout-rim` + `winger-dz-rim`; reverse = `breakout-reverse` +
+ *           `winger-dz-reverse`; escape along the wall = `corner-escape-routes`; chip
+ *           past a checker = `dump-chip-past`. All six ids were confirmed to exist.
+ *           The "spin to the middle" is the fifth and it is the one that CANNOT be
+ *           drawn: a spin-off is a facing change, and this notation has no facing.
+ *           So the composite would be a fifth copy of four existing pictures plus one
+ *           thing the notation cannot say.
  *
  *   "### Using the boards" — its drawable half is drawn twice over. The escape along the
  *     wall is `corner-escape-routes` (body_contact_and_battles.mjs); the rim is

@@ -79,6 +79,39 @@
  *     Every one is movement over time by two or more players. Each would need its
  *     own before/after pair; five pairs is ten diagrams for material the section
  *     already carries as five bullets.
+ *     ⚠️ RE-COMMISSIONED 11 SEPTEMBER 2026 AS "ONE rotation, not five" — the
+ *     corner-to-behind-the-net exchange. The answer is written out here rather
+ *     than left to be re-derived, because the count was never the whole reason
+ *     and a proposal that only fixes the count reads as though it were.
+ *       (a) THIS ROTATION IS TWO SEQUENTIAL LEGS BY ONE PLAYER. The section:
+ *           "The strong-side defenceman follows it to the post and hands it off
+ *           at the midline... the first one slides back to the goalmouth." His
+ *           second leg happens only after the OTHER defenceman has committed to
+ *           his own post, so one frame has to order three legs by two players.
+ *           Numbered arrows can order them, but all three run in the 11 ft
+ *           between the goal line (x = 89) and the end boards (x = 100), past a
+ *           goal frame that reaches x = 92.3 and a goaltender at (87, 0).
+ *       (b) THE ARRIVAL INVARIANT IS NOT THE BLOCKER, so do not cite it as one.
+ *           "Takes the carrier as they emerge" is a `stop` route — two bars, the
+ *           safe mark by construction, exactly as `dz-walk-down-zone` uses it.
+ *       (c) THE AFTER-FRAME IS `dz-collapse-corner` MIRRORED. Once the roles have
+ *           swapped the shape is one defenceman on the puck and one at the
+ *           goalmouth, which is the frame already placed 21 lines below the
+ *           section it would sit in. That is the second reviewer's objection to
+ *           the cut `dz-back-door-seam`, in a new place.
+ *       (d) A BORROW IS NOT FREE EITHER, and it was checked. `defender-pair-
+ *           overview` (defender.mjs; placed in defender.md and
+ *           switching_positions.md) already carries the RULE in its caption, in
+ *           words close to the section's own — "you swap those jobs the moment
+ *           the puck crosses the middle of the ice" — but its PICTURE is that
+ *           same shape with four players instead of eleven, so placing it here
+ *           puts two near-identical frames within a screen of each other.
+ *     What a picture could add that the prose does not is that the handoff line
+ *     runs BEHIND the net rather than across the front of it — and that is drawn
+ *     already, for the puck rather than for coverage, by
+ *     `defender-d-to-d-behind-the-net` (positions.mjs), which shades the slot the
+ *     exchange must not cross. If a later round still wants this rotation, the
+ *     honest form is the before/after PAIR, and the brief should say so.
  *   - **The mistakes.** "Both wingers sagging at once", "both defencemen drawn to
  *     the same puck". A picture of a wrong shape is a picture, and a reader who
  *     glances at it takes the shape, not the caption that says not to.

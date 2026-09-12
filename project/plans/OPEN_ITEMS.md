@@ -31,6 +31,30 @@ boundary bug** — it treated only `###` as a boundary, so the last subsection o
 Mistakes, Check yourself and Key Takeaways. `winger.md`'s *"Backchecking"* was reported at 7,579 words; it is
 429. **Measure per SECTION, and count both heading levels, or the number is wrong.**
 
+⚠️⚠️ **AND 1,281 IS STILL TOO HIGH, for a SECOND reason found on 11 September.** The census above
+already corrects for `##` parents whose `###` children carry the picture. It does **not** correct for a
+`###` taught by a **SIBLING `###` inside the same `##` block** — and marker-proximity scoring cannot
+see that at all. Triage row 9 was dispatched to draw *"the weak-side D as safety"* on the ground that
+`forecheck-pinch` omits it. `forechecking_systems.mjs:904` draws that defenceman at (25, −8) and
+**labels him "the safety"**. The agent refuted the brief in its first ten minutes.
+
+**Measured, on a threshold of ≥120 words** — ⚠️ **stated because it is NOT the definition above, and
+the two must never be mixed or subtracted from each other:**
+
+| | |
+|---|---|
+| teaching units (≥120 words) | **1,206** |
+| carry their own diagram | **244** |
+| carry none, but a **sibling in the same `##` does** | **304** |
+| carry none, and nothing in the whole `##` block does | **658** |
+
+⚠️ **"Served by a sibling" is a CANDIDATE FILTER, NOT AN ANSWER. Distance decides**, and only
+`site-reviewer` on the built page can measure it. **Eight of the ten largest sibling-served units are
+the same rules surveys P2 rules must be COMPRESSED** — top of the list, `special_teams.md:621` at
+6,770 words. **A reader who scrolls 5,500 words between a picture and the section it teaches is not
+served by it, and the fix is shorter prose, not a second copy of the picture.** The two priorities
+keep turning out to be one problem.
+
 **Where the gap is worst — biggest undrawn section per document:**
 
 | words | undrawn/total | document | the section |
@@ -81,17 +105,179 @@ awk '/NOT DRAWN/,0' site/src/diagrams/<module>.mjs  # a rejection that never got
 rejections there to trip over. Full record:
 [`findings_diagram_triage_2026-09-11.md`](../reviews/findings_diagram_triage_2026-09-11.md).
 
+| | |
+|---|---|
+| ⬜ | **Decide whether the orphan probe becomes a worklist script.** One line; its first and only finding to date was a legitimate withholding. ⚠️ **Worklist, never a gate** — a tool that ranked unplaced specs and offered to place them is how round 44 manufactured a divergence that did not exist. |
+
 ⚠️ **And the gap that triage reported was never a gap: THREE back-door pictures already exist**
 (`dz-strong-side-overload`, `dz-collapse-high-slot`, and `pp-backdoor` from the attacking side).
 **Grep the diagram sources for the play, not just for the section.**
 
 | | a row this opened |
 |---|---|
-| ⬜ | **`defensive_zone_coverage.md` calls two different lanes "the seam"** — `:521` *"Stick in the seam. The pass has to cross the slot"* is the low lane; `:523` *"The seam runs through the high slot"* is not. `dz-strong-side-overload` draws the cross-ice route crossing at **x ≈ 76** = `slot`; `high-slot` is **x = 69**. Both are voiced as separate `<p>` units in `048.ssml`. **Needs the section's owner and a source — two reviewers have declined to assume, correctly.** |
+| ⬜ | ⚠️ **`defensive_zone_coverage.md` uses "the seam" for THREE different things, and two of them are adjacent bullets.** (1) `:529` *"**Stick in the seam.** The pass has to cross the slot"* — the low lane. (2) `:530`, the very next bullet, *"The seam runs through the high slot"* — not the same lane. (3) `:215`, `:223`, `:248`, `:255`, `:374` use it for the **gap between two defenders' zones** (*"two defenders' areas, where each assumes the other has them"*) — a third meaning with no geometry at all. `dz-strong-side-overload` draws the cross-ice route crossing at **x ≈ 76** = `slot`; `high-slot` is **x = 69**. Both (1) and (2) are voiced as separate `<p>` units in `048.ssml`. ⚠️ **Needs the section's owner and a source — two reviewers have declined to assume, correctly.** ⚠️ **The line numbers first recorded for this (`:521`/`:523`) were WRONG and `check_plan_rows.py` caught it; the real ones are `:529`/`:530`.** |
 
-⚠️ **The owner does not want long captions.** The two longest of 198 are `forecheck-press` (3,435 chars) and
-`forecheck-pinch` (3,102). At 390px the picture is 18% of the figure and one safety band runs 836px. **A
-caption is not where a section's content goes.**
+⚠️ **The owner does not want long captions.** At 390px the picture is 18% of the figure and one safety
+band runs 836px. **A caption is not where a section's content goes.**
+
+⚠️⚠️ **NO CAPTION LENGTHS ARE WRITTEN HERE. MEASURE THEM — one line over `site/src/data/diagrams.json`,
+and the figures move every time a caption is edited.** This passage used to name *"the two longest of
+198 — `forecheck-press` 3,435 and `forecheck-pinch` 3,102"* against a *"1,303-char median"*. **All of
+it was stale, and the correction was already written down in
+[`findings_diagram_triage_2026-09-11.md:21`](../reviews/findings_diagram_triage_2026-09-11.md) — which
+the coordinator did not read before copying the superseded line into EIGHT briefs in one round.** An
+agent measured it independently and refused to carry the brief's figure in, which is the only reason
+it was caught. **The longest is `forcing-them-outside`, and `the-risk-map` sits above
+`forecheck-pinch`; the median is near 1,270, not 1,303.** ⚠️ **Those figures are an illustration of
+the drift, not a new number to copy — the owner is the tool, and this is the third figure in this
+project replaced by a pointer for exactly this reason.**
+
+### ⚠️⚠️ TWO FAILURE MODES FOUND ON 11 SEPTEMBER THAT NO CHECKER IN THIS REPOSITORY CAN SEE
+
+**1. An index-based splice can overwrite a NEIGHBOURING diagram's caption and `describe`.** It
+happened while `nz-hinge` was being written: a `str.replace` at a computed index put the hinge's
+caption and `describe` onto `nz-regroup-d-to-d` and deleted the hinge's own anchors. ⚠️ **Nothing
+reported it except the renderer throwing a `ReferenceError`** — and only because the splice also broke
+the code. **Had the anchors survived, it would have shipped a caption and a `describe` that were both
+fluent, both wrong, and both about a real diagram in the same file.** `check_absolutes` reads captions
+for absolutes, not for subject; `check_diagram_quotes` checks quoted spans; `check-arrivals` reads
+routes. **None of them asks whether a caption describes its own diagram.**
+
+**So: edit a diagram spec by NAMED anchor, never by computed index, and `git diff --stat` your own file
+before reporting.** The agent caught it that way and said so; that is the only reason it is written
+down.
+
+**2. Numbered route badges collide, and the collision is invisible to every gate.** `numbered` puts
+each badge 9 ft along its route, nudged 3.4 ft off; on a full sheet `TXT` is 1.7, so **a badge covers
+roughly 7 × 6.5 ft of ice.** Two routes sharing a start are separated only by the angle between them —
+**at 20° two badges merged into one box reading "2 1".** A carry and its reversal put badge 4 back
+along badge 3's line: at a 23 ft carry their centres were **4 ft apart and the boxes touched.**
+⚠️ **Found by rendering four drafts and LOOKING at them, at 1100 px and 375 px. No checker can see
+this, and none should be written for it — the remedy is to look.**
+
+### ⚠️ NOTHING DETECTS AN ORPHAN DIAGRAM
+
+`check_links.py` verifies every `](diagram:` marker resolves to a spec. **The reverse is unchecked**, so
+a spec can be written, reviewed, committed and never placed with every gate green. Probe:
+
+```bash
+comm -13 <(grep -rho '](diagram:[a-z0-9-]*)' content/ | sed 's/.*diagram:\(.*\))/\1/' | sort -u) \
+         <(grep -rhoE "id: '[a-z0-9-]+'" site/src/diagrams/*.mjs | sed "s/id: '\(.*\)'/\1/" | sort -u)
+```
+
+⚠️ **Its first run found one unplaced spec whose correct disposition was to LEAVE IT** —
+`centre-crease-the-puck-decides` is a deliberate withholding, stated in capitals at `center.mjs:761`,
+because `the-puck-decides-not-you` is the same picture and is already placed in both documents. **So
+the probe's output is a question, never a defect. Worklist if ever scripted, never a gate.**
+⚠️ **And `git log -S` gives the date a commit TOUCHED a string, not the date it was created. The
+coordinator inferred a creation date from one and was wrong.** Full record:
+[`findings_diagram_triage_2026-09-11.md`](../reviews/findings_diagram_triage_2026-09-11.md).
+
+### ⚠️ Rows opened by the 11 September diagram round
+
+| | |
+|---|---|
+| ⬜ | **Three unverified stale-quotation comments in `special_teams.mjs`** — `pp-131`'s point re-take, the net-front paint quotation, `pk-wedge-plus-1`'s perimeter inversion. **Two of the five comments examined that day were stale**, so the base rate is not low. Re-grep each against today's `content/`. ⚠️ **The cautionary case is `shooting.mjs`: a comment written to retract a stale quotation ended ON a stale quotation.** |
+| ⬜ | **36 `describe` sites across 17 modules carry a comment recording a numeric correction** — the exact shape that has now gone stale three times. **One module per agent**, and the agent must re-grep the quotation, not read the comment. |
+| ⬜ | **`:312` cannot be drawn because the section has no words for it.** `special_teams.md` §Power play zone entries names no formation, no lane and no attacker position — its only spatial sentence covers two players with no side, depth or distance. **Give the section its own words for where the five stand and the picture becomes drawable.** This is a content row, not a diagram row. |
+| ⬜ | **`defensive_zone_coverage.md` §The rotations — the OTHER FOUR rotations were never tested** (low → high, point → point, corner → up the wall, puck to the far corner). The corner→behind-the-net one is refuted; one of the remaining four may be a single frame. |
+| ⬜ | ⚠️ **`check-arrivals.mjs` measures a route only against the owner's OPPONENTS — it is blind to a route passing the reader's own TEAMMATE.** Found while drawing `legal-route-through-traffic`, whose entire subject is a route run close past a teammate's body. That clearance (6.83 ft centre-to-centre, **2.96 ft of daylight**) was hand-computed off the renderer's Bézier construction and **is covered by no gate.** Decide whether the tool should measure all glyphs, not just opposing ones. |
+| ⬜ | **`playing_without_the_puck.mjs`, the `D1_MAN` comment on diagram 1, is arithmetically false.** It says *"At (74,-10) he is outside the left faceoff"* circle; he is **inside** it — 13.0 ft from the circle centre (69, −22) against a 15 ft radius. The glyph position is defensible either way; **the justification is not.** Reported by the agent that owned the file, deliberately left out of its commission's diff. |
+| ⬜ | **`zone_entries.md` §"Against a 1-3-1 neutral zone" — a DECLINED borrow that was never replaced.** `nz-1-3-1` was declined there on the addressee rule (that rule's first application) and nothing filled the hole. **`breakout-against-1-3-1` is voiced to the team coming up the ice, which is that section's reader too** — a borrow at zero authoring cost. ⚠️ **Caption fit NOT verified against that section's prose. Run the three-question borrow test properly.** |
+| ⬜ | ⚠️ **THREE OF THE FOUR NEW DIAGRAMS HAVE NOT BEEN LOOKED AT.** `rush-2-on-2`, `breakout-against-1-3-1` and `legal-route-through-traffic` are arithmetic, not ink — only `nz-hinge`'s author rendered and viewed his own (four drafts, 1100px and 375px). `diagram-reviewer` is on it. Unverified: whether `rush-2-on-2`'s two crossing arrowheads are legible where the curves meet, and whether its two identical 16-char `follow or switch` labels 22 ft apart read as ONE label spanning both glyphs — **the exact failure that module's header records from its first render**; whether `breakout-against-1-3-1`'s three flat glyphs at x = 3 read as a LINE at render scale, and where its **seven** labels land — `breakout-d-to-d` has a recorded case of the placer exiling a label **176.7 ft across the sheet on a leader line through an opponent's glyph**. ⚠️ **`check-arrivals` tests endpoints and the terminal tangent only — it is BLIND to a bowed curve passing through a player**, and its own header says that defect has happened here and only an eye caught it. **And the plan archive records that all 9 `breakouts` diagrams have been rendered and never looked at. These are the 10th and 11th.** LOOK AT THE PNGs. |
+| ⬜ | **None of the four new diagrams has been reviewed by anyone.** `diagram-reviewer` and `safety-reviewer` are running now; **no `content-reviewer` and no `rules-verifier` has seen any of it. New text has not been reviewed.** Specifically open: whether `breakout-against-1-3-1`'s safety clause may stay a faithful SUBSET of `breakouts.md:731` (it drops *"forearm and hip into contact if it comes"* and *"chin off your chest"* for length, ~70 chars to restore), and whether `defending_the_rush.md`'s own `Read:` line — *zone survives a crossing rush better than man-on-man* — is supported by anything. **Nobody has tested that claim; the diagram propagates it.** |
+| ⬜ | ⚠️ **`rush-2-on-2`'s safety clause carries no ⚠️ glyph**, so it gets neither `md_to_speech`'s `"Important. "` prefix nor the site's amber `.warn-inline` run. Its cited precedent `nz-stand-up-at-the-line` is the same — **consistent, not novel — but that caption never uses the word *safety* and this one does.** Decide whether the glyph convention should follow the word. |
+| ⬜ | ⚠️ **A STALE BUILD PRODUCT CAN SHIP A SUPERSEDED SAFETY CLAUSE, and it nearly did on 11 September.** `diagrams.json` was rebuilt at 23:36:50; a caption repair landed at 23:42:14; the shipped clause was missing the chin-off-your-chest and forearm-and-hip elements while the source carried both. **`check_absolutes.py` was already saying so — EXIT 2, "the caption layer is UNCERTIFIED" — and nobody had acted on it.** ⚠️ **An exit 2 from that checker is not a formality: it means the text a reader gets is not the text anyone reviewed.** |
+| ⬜ | ⚠️ **`breakouts.md` §Reverse and §Rim describe the boards posture and carry NO counterweight** — `:272-299`, *"sealed you against the boards"*. **Both sit at 8 facts, the coaching-fact ceiling**, so adding a `Never:` means re-labelling an existing line. |
+| ⬜ | **The boards formula now appears twice in one Key Takeaways list and thirteen times in `breakouts.md`.** The layer test justifies each — every spoken chunk must stand alone — **but no tool measures when a repeated safety sentence stops being heard.** Needs `content-reviewer` reading Key Takeaways end to end as PROSE, not as chunks. |
+| ⬜ | ⚠️ **A REVIEWER'S QUOTATION STOPPED MID-TAKEAWAY AND A CRITICAL WAS FILED ON THE TRUNCATION**, inside a passage its own report listed under *"Read in full."* **Re-check this round's other relayed quotations for the same shape** — the agent that caught it asked whether it came from a grep window, and if so the truncation may sit in more than one brief. |
+| ⬜ | ⚠️ **NO HUMAN EYE, AND NO SECOND BROWSER ENGINE, HAS SEEN THE FOUR NEW DIAGRAMS.** `site-reviewer` ran them — but **the Chrome extension was BLOCKED** (five refusals across two hostnames) and it fell back to driving real Chrome over CDP, the repository's own build mechanism. **Same engine, same stylesheet, real rasterisation at DPR 1 and 3 — but no GPU compositing and no physical screen.** ⚠️ **Its own words: the `CH` verdict is *"legible at DPR 1 and 3 in Chrome's rasteriser", not "legible in your hand"*, because subpixel antialiasing on a real macOS display differs from headless output — and that is the axis it turns on.** ⚠️ **And `nz-hinge`'s 3.6 px badge gap is exactly the margin that could close in Safari or Firefox, neither of which was touched.** |
+| ⬜ | ⚠️ **`nz-hinge`'s badges 2 and 1 sit 1.15 ft apart on one baseline** — 6.3 CSS px at 1100 px, **about 1.4 px of white at 375 px** — and **route 1's arrowhead and badge 3 touch EXACTLY, both edges at x = −8.41.** Still two boxes on both renders, so the header's recorded *"one box reading 2 1"* has not recurred. **A near miss, not a margin.** Numbers recorded so the next editor has them. |
+| ⬜ | **OWNER DECISION: self-narration in spoken captions.** `this corpus` appears in **3** captions and `these diagrams` in **7**; non-negotiable 6 names that form and captions are voiced. ⚠️ **Both instances found today do real work** — one is a safety statement about what is deliberately absent, the other explains why an arrival has no glyph. **Deletion was NOT recommended. Do not sweep this.** |
+| ⬜ | **Nobody has asked a COACH whether the drawn systems are recognisable.** `nz-1-3-1` and `breakout-against-1-3-1` put the trap's wall men at \|y\| = 33 and 36 — wider than the reviewer expected. ⚠️ **They agree with each other, so if it is wrong it is wrong in two places and internal consistency will never catch it.** |
+| ⬜ | ⚠️ **THE ARRIVAL INVARIANT PUSHED A DIAGRAM INTO TEACHING A GAP THE CORPUS FORBIDS.** `rush-2-on-2`'s four rejected layouts (8.60, 8.25, 7.21, 5.10 ft) were all refused against `ARRIVAL.noArrow`; the tips went back to 12.37 ft to clear the 9 ft bar **and the defence went back with them**, leaving a 35.2 ft gap where the section says *"tight gap"*. **The rule that stops a diagram teaching a hit made a different diagram teach a gap the document tells the reader never to have.** Being fixed now — but the INTERACTION is the row: `kind: 'pressure'` exists for this and was not reached for. **Check the other rush diagrams for the same pressure.** |
+| ⬜ | ⚠️ **`rules_primer.md:430`'s a-fortiori caveat may no longer be needed.** It cites USA Hockey's Declaration under COMPETITIVE CONTACT CATEGORY — written for non-check play — and honestly labels the carry-over as *"an inference, not the book's words"*. **USA Hockey Casebook Standard of Play Situation 12 (`usah_casebook.txt:18569`) states it positively**, putting the onus on the opponent to move around the player who established the space. ⚠️ **It is NOT unscoped, as first relayed — its own question scopes it to assessing interference *during face-offs*.** Carry that scope with it. ⚠️ **It exists only in the 476-page volume — the phrase returns ZERO from `usah.txt`.** Re-cite and decide whether the caveat stands. **A finding in the direction that makes the corpus more supported, which is the direction no reviewer stops on.** |
+| ⬜ | ⚠️ **`hc.pdf` IS NOT ON DISK**, so Hockey Canada's **Appendices A–D cannot be rendered with `pdftoppm`** the way the README's `ibc.txt` entry demands. A permission stated in a figure or table there is invisible to every search this project can run. **Fetch the PDF.** Also unsearched: the IIHF Situation Handbook (either edition), and any Hockey Canada rule bulletin, Member interpretation or officiating clinic memo — ⚠️ **one of which is exactly where a federation would put a body-position standard, and the repository holds none of them.** |
+| ⬜ | **`sources/README.md`'s file table is stale again — 36 `.txt` files on disk against 26 rows.** ⚠️ **The table warns it will go stale and it has; the warning is not a substitute for updating it.** None of the missing files bore on the question that found this. |
+| ⬜ | ⚠️ **NOTHING CATCHES A CAPTION DOWNGRADING "never" TO "not".** `breakout-against-1-3-1`'s boards-posture line shipped with the qualifier downgraded from never to not, where the source and **22 sites across `content/`** all write the stronger form and **none writes the weaker one**. Now repaired. `check_caption_negations.py` reads inversion structure, not a shed qualification, and the coordinator read the line, said it was "least confident" about it, and **passed it**. **Consider a probe for safety phrases that exist in the corpus in exactly one variant.** |
+| ⬜ | **No hedge anywhere on the section's claim that zone coverage survives a crossing rush better than man-on-man** — `defending_the_rush.md:496`. Searched across `content/`, `site/src/diagrams/` and `project/`: **no "nobody has tested this" note exists.** Unhedged in both layers, unsourced, and now propagated by `rush-2-on-2`'s caption. **A content row, not a caption fix.** |
+| ⬜ | ⚠️ **Captions moved the WRONG WAY this round.** `breakout-against-1-3-1` is **1,531 chars against a 1,270 median**; `rush-2-on-2` grew too. The growth is restored safety text and an honest gap disclosure, **so each addition is defensible and the trend is not.** The owner has said twice that captions should be short. |
+| ⬜ | ⚠️ **The `CH` glyph in `legal-route-through-traffic` has its own leader line struck through it, and NO fix is available inside the diagram.** The leader starts at the glyph **centre** (`<line x1="76.00" … x2="81.98">`), so it crosses the right half of whatever letter is there — **shortening halves the overlap, it does not clear it.** Every single-character id collides: `C` is a centre at **56** glyphs corpus-wide, `D` defence, `F` forward, `X` pylon. **A non-horizontal leader exit is renderer-owned.** Left alone deliberately: both reviewers confirmed the letters legible at zoom, and every alternative touches shared code. |
+| ⬜ | ⚠️ **`playing_without_the_puck.md` §"Screens and picks" facts block is at the 11-fact HARD CAP** (7 `Rule:` + 4 coaching; `check_facts.py` blocks at 12), **so the two-book prohibition could not be given a `Rule:` line and lives in body + Common Mistakes + Key Takeaway instead.** The style guide's remedy is to split on the seam the body already uses — and **a clean seam exists** (rulebook half above the diagram, practical route below) — ⚠️ **but the split would move the diagram marker that was just argued into place.** Owner's call. |
+| ⬜ | ⚠️ **A PRE-EXISTING `Rule:` line already records a book's silence, which is the shape `rules-verifier` ruled against on 11 September.** `playing_without_the_puck.md:586`, in §"Screen the goalie": *"Hockey Canada 8.5 grants no such permission…"*. **It is more defensible than the one that was refused, because it says what the book DOES ask** (*"it asks attacking players to avoid contact in all circumstances, anywhere on the ice"*) — **so it is not a bare silence.** ⚠️ **But it is voiced alone with a 300 ms break either side, and the ruling's reasoning applies: a listener hears a prohibition where the book prints none.** Test it. Not touched this round — different section, different rule, and found only by grepping for the shape. |
+| ⬜ | ⚠️⚠️ **`check_disclosures.py` IS BLIND TO A WHOLE CLASS OF FALSE NEGATIVE.** It did not flag the two false rulebook-absence claims in `content/hockey-iq/playing_without_the_puck.md` (*"enumerate nothing of the kind"*, *"write no such offence"*) — both in layers voiced alone. ⚠️ **Every negative phrased as what a book *enumerates*, *lists* or *names* is currently invisible to it.** Three reviewers found these by reading; the tool found none. **Add the pattern class — and keep it a worklist, never a gate.** |
+| ⬜ | ⚠️ **NOBODY OWNS THE PROTECTIVE-SCREEN SPLIT, and two documents cut it differently.** `playing_without_the_puck.md` frames a **two-book** split in four places; `breakouts.md` frames a **one-book** split in six (`:138`, `:142`, `:152`, `:255`, `:947`, `:1002`). They give different answers to one concrete case. **`rules_primer.md:430` holds both quotations and is the natural owner; it owns nothing at present.** Name an owner and make the other two point at it. |
+| ⬜ | **A corpus-wide test `facts-reviewer` named and did not run:** *"for every `Rule:`-bearing prohibition in a Common Mistakes bullet, check whether its own section's block carries it."* ⚠️ **It found this round's Critical only because the brief pointed at the block — *"the same defect in a block nobody flagged is exactly what I did not look for."*** |
+| ⬜ | **Four renderings of one clause across the corpus** — `625(a.1)`, `625(a)`, `625(a)(1)`. The book prints **(a)** then enumerated **(1)**. ⚠️ **Spoken, `625(a.1)` becomes *"six hundred and twenty-five, clause a point one"*, which is not a thing an official will recognise.** |
+| ⬜ | **All 13 `breakouts.md` sites drop the owner's negative half of the boards formula** — `body_contact_and_battles.md:766` writes *"not the point of your shoulder"* and lists taking the wall on your shoulder as a coaching myth. **`playing_without_the_puck.md:904` carries it; `breakouts.md` never does.** |
+| ⬜ | ⚠️ **A SHORT-PHRASE GREP IS NOT A PLACEMENT TEST, and it produced a false claim three times this round.** The coordinator reported three borrow placements that do not exist, having grepped the two-word string `token pressure` — which is ordinary prose on those pages (*"F1 gives token pressure"*). **The test that works is a caption sentence over 40 characters.** Earlier the same shape produced a false "no reader has ever seen it" and a false "the marker never reaches `dist`". |
+| ⬜ | **`/systems/faceoffs` without a trailing slash 404s on the preview server** (`trailingSlash: always`). Production depends on the CloudFront rewrite, **which cannot be exercised locally.** Not verifiable here, not established as a defect — **but nobody has tested it against production either.** |
+| ⬜ | **`nz-hinge`: route 1's arrowhead and badge 3 touch exactly**, both edges at x = −8.41, at both viewports and both themes. **They read as two shapes, so untidiness rather than a misreading** — recorded with the numbers so the next editor does not rediscover it. |
+| ⬜ | ⚠️ **SEVEN SITES CITE "NHL and IIHF 56.2(i)" AS ONE RULE, and none carries the IIHF's mandatory chapeau** — `on_ice_communication.md:261,540`; `defender.md:743,816`; `defensive_zone_coverage.md:476,706,768`. Correct for the limb, incomplete for the book. **And `goaltender.md:1148` has Hockey Canada "silent rather than against it"**, which understates that its general limb 8.3(i) is unqualified and the book writes no body-position permission at all. |
+| ⬜ | ⚠️ **`site/dist` no longer matches `diagrams.json`.** The repair added *"never duck"* to `breakout-against-1-3-1`'s caption **after `site-reviewer` had run**. The `.warn-inline` rendering mechanism is covered by that review; **the exact string is not.** Low risk — 11 characters inside a panel already verified — **but it is a C11 shape and is recorded rather than waved through.** |
+| ⬜ | ⚠️ **The IIHF's general interference definition returns ZERO to a flattened grep** — a running header, *"SECTION · RESTRAINING INFRACTIONS"*, is spliced **mid-sentence** at a page break. **The whole NHL/IIHF divergence rests on it.** Now recorded in both documents' verification notes so the next reviewer does not file it as a fabrication. ⚠️ **Consider whether `sources/README.md` should carry this splice the way it carries the `2007- 09` one.** |
+| ⬜ | **`forechecking_systems.md:594` — the CONSEQUENCE is undrawn**: a failed pinch becoming a 2-on-1. `rush-2-on-1` exists but is voiced from the defending side, so borrowing imports the wrong voice. |
+
+⚠️⚠️ **COORDINATOR ERROR, PROPAGATED INTO EIGHT BRIEFS IN ONE ROUND — the placement rule was
+BACKWARDS.** Every brief this round said *"put the marker where the prose has finished explaining the
+thing, never at a section head."* **[`content_style_guide.md:1417`](../content_style_guide.md) says the
+opposite, and it is the owner's own instruction:**
+
+> *"A diagram goes at the head of the unit it teaches… The owner's instruction is **'diagrams should be
+> at the start of sections'**, because a diagram that arrives after the prose it explains **arrives too
+> late**."*
+
+**Measured corpus-wide to settle it, not argued:**
+
+| | |
+|---|---|
+| diagram markers | **325** |
+| directly under a heading | **235 (72%)** |
+| after prose | **90 (28%)** |
+| inside a `facts` block | **0** |
+| immediately **before** a facts block | **248** |
+| immediately **after** a facts block | **1** |
+
+**What the coordinator stated as the convention was the corpus's minority pattern, by 235 to 90.**
+The rule was then used to manufacture a defect report against a file that was correct. **Consequences
+traced and repaired:** the `scan-before-a-wall-reception` borrow was placed after the prose in
+`puck_handling.md` and has been **moved to the head of `### Know your out before you get there`,
+above the facts block**; the `scanning_and_anticipation.md:27` row is retracted above; and the three
+live drawing agents were messaged mid-flight with the correction rather than left to ship it.
+⚠️ **`breakout-stretch-pass` in `passing_and_receiving.md` was NOT a casualty of the wrong rule — its
+position was measured, and moving it was a second error on top of the first. See the row below.**
+
+⚠️⚠️ **THE TEST FOR HEAD-OF-SECTION PLACEMENT IS NOT ADJACENCY, IT IS REPETITION**, and nothing
+stated that before this round. Measured on `puck_handling.md` (`md_to_speech.py --only`, 63 chunks):
+the borrowed caption and the facts line **share chunk 035**, and the chunk contains **zero repeated
+six-word phrases**. Adjacency present, cost absent — the placement stands. The stretch-pass failure
+was **duplication**, not adjacency. **Run the shingle probe, not the boundary probe.**
+
+**The real rule, with the three constraints that came out of applying it (`:1427-:1440`):**
+*"The unit is the teaching point"* — the head of the **smallest** unit the caption is about, which is
+not mechanically after every heading; **never between items of a real ordered list**, because it
+renumbers the list in the audio; **a before/after pair moves to the head of the unit they share**,
+because splitting breaks *"beside it"*; and ⚠️ **if a caption refers backward to prose the move would
+strand, leave it and say so — "a wrong move is worse than no move."**
+
+| | |
+|---|---|
+
+⚠️ **THE ROUND'S OWN LESSON, and it is a briefing rule, not a diagram rule: SEVEN triage rows were
+examined and SEVEN had their premise refuted** — one was an accepted cut, one was rejected by name in
+the module's own comments, one was already drawn *and labelled*, one was a timing section, two were the
+same section listed twice, one would have had to invent four of the five players it drew, and one
+re-proposed a ruling the plan archive had already closed with its reasons. **FOUR commissions survived their own agent's attack and were
+drawn: `rush-2-on-2`, `breakout-against-1-3-1`, `nz-hinge` and `legal-route-through-traffic`** — plus
+one borrow placed (`scan-before-a-wall-reception`), closing an action item that had sat unactioned in
+a `.mjs` comment, and one **orphan** found: a committed, four-book-sourced diagram placed nowhere.
+⚠️ **TWO rows re-opened CLOSED rulings — one recorded in a `.mjs` comment, one in the plan archive.
+Neither is findable by reading `content/` and counting markers, which is the only thing the triage
+did.** The triage was built
+by reading `content/` and counting markers; **it never read the diagram MODULES, where four of those
+answers were already written down.** ⚠️ **Read the `NOT DRAWN` blocks and the existing captions FIRST,
+the prose second** — and resolve every line number against `grep -n '^#\{2,3\} '` before briefing it,
+because two rows named the wrong section.
 
 ## P2 — BIG PICTURE OVER TECHNICALITY. Some rules, not a rulebook.
 

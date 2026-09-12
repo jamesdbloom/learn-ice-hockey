@@ -474,6 +474,8 @@ The standard form.
 
 ### The hinge, and the skating hinge
 
+![](diagram:nz-hinge)
+
 ```facts
 Action: After passing D-to-D, sink back into mid-ice behind your partner instead of following the puck up the boards
 Key: Your partner moves up, finds nothing, and returns it to you — you are now behind the play, in the middle, facing up ice with the whole sheet in front of you

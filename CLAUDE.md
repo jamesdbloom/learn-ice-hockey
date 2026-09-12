@@ -335,11 +335,17 @@ The short form:
    spoken *sentence* points at the table, so a table that degrades with nothing referring to it
    was invisible to every check. Also a worklist: **a dropped table is often correct**, because a
    wide comparison table cannot be read aloud and the corpus deliberately voices the substance
-   inline instead — and this tool cannot tell you whether it does. **Measured at introduction: 20
-   dropped against 26 read aloud, 11 of them over on CELL LENGTH ALONE** (narrow and short enough
-   to voice, dropped for one long cell), and `body_contact_and_battles.md:55` — the league-level
-   body-checking table — sitting at **exactly 0 rows of headroom.** `--near` lists the ones an
-   ordinary edit will break.
+   inline instead — and this tool cannot tell you whether it does. ⚠️ **NO COUNT IS WRITTEN HERE.
+   RUN THE TOOL — it is its own owner and it prints the figures.** This line carried
+   *"20 dropped against 26 read aloud, 11 of them over on CELL LENGTH ALONE"* from the day it was
+   introduced; the corpus has been repaired underneath it since, and `TABLE_MAX_COLUMNS`,
+   `TABLE_MAX_ROWS` and `TABLE_MAX_CELL_CHARS` have **never moved from their introducing commit**,
+   so the drift was real work and the sentence quietly took the credit for none of it. ⚠️ **It also
+   named `body_contact_and_battles.md:55` as sitting at "exactly 0 rows of headroom". That table is
+   now at `:60` with TWO rows of headroom, and the table actually at zero is
+   `rules_primer.md:753` — a different table, in a different document, found by running `--near`
+   rather than by reading this file.** `--near` lists the ones an ordinary edit will break; it is
+   the only trustworthy sentence this passage ever contained.
 
    `scripts/check_disclosures.py` reports **the corpus's own absence-of-evidence claims** —
    *"no study was found"*, *"nobody publishes a ranking"*, *"could not be traced"* — so they can

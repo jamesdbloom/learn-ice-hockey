@@ -188,7 +188,43 @@ const pp131 = {
   // through the seam — the far half-wall" — not four things that happen in order.
   // Numbering them would assert a sequence the section does not describe.
   routes: [
-    // The point walks the line. Ten feet is the section's own "three metres".
+    // The point walks the line.
+    //
+    // ⚠️ THIS LINE USED TO READ 'Ten feet is the section's own "three metres"'. THE
+    // SECTION NO LONGER SAYS THAT, and has not since 11 September 2026: the phrase was
+    // folklore — one lateral slide along the blue line was taught seven times across
+    // three documents in three magnitudes and three units, and no source in `sources/`
+    // fixes any of them. All seven were replaced with a stop condition. What the owner
+    // says now is a CUE, not a count: its facts line reads "The point walks the line
+    // laterally — sliding sideways changes the angle of every passing lane in the zone;
+    // keep going until a killer turns their head or shifts across to follow", and the
+    // "Point (the quarterback)" bullet under this diagram's own section says outright
+    // "How far is feel rather than a measurement: keep sliding until a killer turns
+    // their head or shifts across to follow you."
+    //
+    // ⚠️ SO THE JUSTIFICATION IS GONE, BUT THE GEOMETRY IS NOT UNJUSTIFIED — because
+    // nothing a reader receives claims a distance. A route has to have SOME length, and
+    // ten feet is proportioned to nothing but VISIBILITY AT THIS SCALE: shorter and the
+    // lateral walk does not read as a walk against a 900-wide half sheet. The caption
+    // says only "the point walking the line laterally", and the `describe` says only "a
+    // short solid route runs sideways along the blue line" — neither states a figure, in
+    // the layer a listener hears or the layer a screen reader reads. `shooting.mjs`'s
+    // `shooting-lane-and-the-step` took the same decision for the same reason on the same
+    // day, and its caption has to work harder because the STEP is what it teaches; here
+    // the walk is one of five routes and the stop condition is the section's to voice.
+    //
+    // ⚠️ DO NOT "RESTORE" A DISTANCE HERE, in this comment or in any reader-facing
+    // string. A comment that quotes another file is a claim about that file, and it goes
+    // stale silently because no checker reads comments. No count of these is given here
+    // on purpose — one would go stale the same way. What is true is that this file alone
+    // already carries four of them, each named at the site it corrects: the net-front
+    // "edge of the blue paint" quotation, `pp-131`'s "one player at the point (the blue
+    // line)", `pk-wedge-plus-1`'s "chases the puck around the perimeter" — which had
+    // inverted its own section — and the "it sends the reader to Zone Entries" clause at
+    // the head of the PK neutral-zone group below. `shooting.mjs` has a fifth, and that
+    // one is the cautionary case: a comment written to RETRACT a stale quotation ended on
+    // a stale quotation of its own. If this length ever changes, change it for legibility
+    // and say that is why.
     { from: 'centre-point', to: { at: 'centre-point', dy: 10 }, kind: 'skate' },
     { from: 'half-wall:right', to: { at: 'centre-point', dx: 3, dy: 6 }, kind: 'pass' },
     { from: 'half-wall:right', to: { at: 'bumper', dx: -1, dy: 6 }, kind: 'pass' },
@@ -894,11 +930,55 @@ const pkWedge = {
 
 /* ------------------------------------------ PK NEUTRAL-ZONE PRESSURE SCHEMES */
 //
-// Both of these draw four killers and ONE attacker. The section describes the
-// killers' shape and the puck carrier and says nothing about where the other four
-// power-play players stand on an entry — it sends the reader to Zone Entries for
-// that — so the other four are not drawn rather than invented, and both captions
-// say so. Full sheet, because a neutral-zone scheme spans both blue lines.
+// Both of these draw four killers and ONE attacker. The section that hosts them —
+// "The four you will meet" — describes the killers' shape and the puck carrier and
+// says nothing about where the other four power-play players stand on an entry, so
+// the other four are not drawn rather than invented, and both captions say so. Full
+// sheet, because a neutral-zone scheme spans both blue lines.
+//
+// ⚠️ THIS BLOCK USED TO ADD "it sends the reader to Zone Entries for that", AND THAT
+// CLAUSE IS FALSE OF THE SECTION IT DESCRIBES. Checked 11 September 2026: the whole
+// document links `zone_entries.md` in exactly two places, its Related trailer and the
+// POWER-PLAY entries section — nowhere in the PK neutral-zone sections these two
+// diagrams sit in. The delegation is real but belongs 250 lines away and to the other
+// unit. The substance above — nothing fixes the other four, so they are not drawn —
+// stands on the section's own silence and needed no borrowed sentence to hold it up.
+//
+// ⚠️ AND THAT DELEGATION IS WHY THE ATTACKING-SIDE COMPANION TO THESE TWO IS NOT
+// DRAWN. A "five attackers against the four-man wall, through the narrow gate"
+// picture for the power-play entries section was proposed and is REJECTED here, so the
+// next triage reads it in the file instead of rediscovering it:
+//
+//   1. ⚠️ IT WOULD HAVE TO INVENT FOUR OF THE FIVE. That section names no entry
+//      formation, no lane assignment and no attacker position. Its one spatial
+//      sentence is "one or two players arcing back to gather speed and receive
+//      already moving forward ... The single swing (one forward swings, one stays
+//      wide)" — which fixes two players loosely and no side, no depth and no distance
+//      from the line. Inventing the rest is the exact failure convention 1 at the head
+//      of this file exists to prevent, and it would be inventing the OWN unit, which
+//      is worse than inventing the opposition: a reader takes the shape he is shown
+//      for the shape his team runs.
+//   2. ⚠️ THE SECTION DISOWNS THE SUBJECT IN ITS OWN WORDS: "The entry toolkit itself
+//      — carry, chip, dump, delay, the drive-and-drop, and the data on what each is
+//      worth — is in Zone Entries, and everything there applies here. What changes
+//      with the extra man is only this:" — and of the six things that follow, two are
+//      tracked-data caveats, one is calibration, one is a four-book trapezoid rules
+//      passage, and the two spatial ones (the drop, the swing) are the toolkit it just
+//      handed to another document. A picture placed under that sentence contradicts it.
+//   3. THE EXISTING ALTERNATIVES ARE ALREADY DISPOSED OF. Borrowing `entry-drop-pass`
+//      into that section was rejected on the record on three independent grounds, one
+//      of which was that it draws a 2-on-2 even-strength rush into a section about
+//      bringing five men through four. And `pk-nz-1-3` and `pk-nz-1-1-2` ALREADY draw
+//      the wall being entered — in this same document, which is why re-placing either
+//      of them there is not available: no diagram appears twice in one document.
+//   4. THE SWING ITSELF BELONGS TO ANOTHER OWNER. `neutral_zone_systems.md`'s timing-
+//      the-swing section is an open DRAW item with three forwards at three depths;
+//      drawing a swing here would build a second maintenance point for it in the voice
+//      of the wrong unit.
+//
+//   What would change the answer: the entries section acquiring its own words for
+//   where the five stand. Until it does, the honest picture of that section is the one
+//   already on the page from the other side.
 
 // "one forward up on the puck, the other forward and both defencemen in a line
 // across the ice behind him." Passive version: "F1 gives token pressure to make

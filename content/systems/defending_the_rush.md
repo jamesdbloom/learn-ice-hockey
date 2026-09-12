@@ -488,6 +488,8 @@ Note what does *not* change between the two: **the goalie still owns the shooter
 
 ### 2-on-2
 
+![](diagram:rush-2-on-2)
+
 ```facts
 Convention: Play it man-on-man — each defender takes an attacker and holds a tight gap on them
 Options: Zone is the realistic alternative — strong-side D takes whoever carries into their half, weak-side D holds the middle

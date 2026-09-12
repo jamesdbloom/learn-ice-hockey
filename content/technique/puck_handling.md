@@ -488,6 +488,8 @@ The boards are a free extra defender, on your side.
 
 ### Know your out before you get there
 
+![](diagram:scan-before-a-wall-reception)
+
 ```facts
 Key: Protection is not a destination — every second you hold the puck, a second checker is arriving
 Never: Plan to shield it until something happens — what happens is a turnover

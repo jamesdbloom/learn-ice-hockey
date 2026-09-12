@@ -885,6 +885,179 @@ const centreSwing = {
   puck: { at: 'corner:right:far', dx: -1, dy: -7 },
 };
 
+// ---------------------------------------------------------------------------
+// 10 — Against a 1-3-1. The only diagram in this file whose subject is the
+//      OPPOSITION'S shape rather than one of the nine options.
+// ---------------------------------------------------------------------------
+
+// WHY THIS IS DRAWN RATHER THAN BORROWED, because "there is already a 1-3-1 diagram"
+// is the first thing the next editor will say. There are three, and none of them can
+// be placed in this section:
+//
+//   forecheck-131 (forechecking_systems.mjs) is A DIFFERENT SHAPE. Its own caption
+//     opens "the 1-3-1 pushed up into the offensive zone" and then says so outright:
+//     "the far more common use of the same name is a passive neutral-zone shape that
+//     is not a forecheck in any literal sense." That passive shape is the one
+//     breakouts.md's "Against a 1-3-1" describes — "three stretch across the neutral
+//     zone ... less a forecheck than a wall" — so the borrow would draw the wrong
+//     picture, not merely the wrong voice.
+//   nz-1-3-1 (neutral_zone_systems.mjs) IS the right shape and cannot be borrowed
+//     either. It is voiced to the team RUNNING it ("F1 is already one of your three",
+//     "his lane only"), which is the style guide's addressee rule — and that rule was
+//     written after declining forecheck-212 into this very document's "Against a
+//     2-1-2". Worse than the pronouns: nz-1-3-1 draws the breaking-out defenceman as
+//     `team: 'opp'`, a SOLID triangle. Hosted here, the reader's own puck carrier
+//     would be drawn in the opposition's glyph.
+//   pp-1-3-1 is a power play, a different shape in a different zone.
+//
+// ONE DIAGRAM, NOT FOUR. Section 6 has four "Against a ..." subsections. The other
+// three are not drawn here on purpose: the 1-2-2, the 2-1-2 and the full-ice press
+// each already have a picture in forechecking_systems.mjs, and the section's own
+// second sentence sends the reader there for what those shapes are. They are
+// undrawn in this file for the addressee reason above, which is a decision about
+// BORROWING, not a gap four new pictures should fill — four near-identical frames of
+// five opponents standing in slightly different places is the failure this corpus
+// calls "five pictures where one was needed". The 1-3-1 is the one case where the
+// corpus has no picture of the shape at all from the side that has to get through it.
+//
+// WHAT DOES NOT FIT, and it was measured before it was cut. A 1-3-1 met by a full
+// five-man breakout is ten skater glyphs plus a goaltender. Drawn here instead: the
+// opposition's five, because the shape IS the teaching point and a 1-3-1 with four
+// players is not a 1-3-1, and only the two own skaters the answer names — which is
+// exactly what breakout-stretch-pass above does, and says in its caption. Measured
+// on the placement below, the closest two glyphs on the sheet are 22.00 ft apart.
+
+// Their single forechecker. "One forward token-pressures" — drawn ten feet inside
+// your own blue line, which is a middle reading of a depth that genuinely varies:
+// nz-1-3-1's caption records that "in the most passive versions F1 barely leaves the
+// red line", so the caption here says the depth moves rather than the picture
+// asserting one.
+const TRAP_F1 = { at: 'blue-line::far', dx: -10 };              // (-35, 0)
+
+// The line of three. ALL THREE AT EXACTLY THE SAME x, because "the line is flat" is
+// the whole proposition — a chip past a flat line is past all three at once — and
+// staggering them for a prettier picture destroys the thing being taught.
+// dx +3 puts them three feet the far side of the centre red line. dy +-36 keeps a
+// forward's circle (ink radius 3.875) 2.63 ft off the dasher at |y| 42.5.
+const TRAP_WALL_STRONG = { at: 'centre-ice', dx: 3, dy: 36 };   // (3, 36)
+const TRAP_MID = { at: 'centre-ice', dx: 3 };                   // (3, 0)
+const TRAP_WALL_WEAK = { at: 'centre-ice', dx: 3, dy: -36 };    // (3, -36)
+
+// D1's carry, "skate it out". Starts EXACTLY on the shared RETRIEVAL anchor — every
+// arrow-ended route in the corpus begins exactly on a player, which is how
+// check-arrivals infers whose route it is. ASSUMES point.x = 25 and blue_line_x = 25
+// (site/src/data/rink.json, sha 24396ccc1109c262c0c77668c6f6fd81f6d9b08b).
+//
+// MEASURED AGAINST THE ARRIVAL INVARIANT (stated normatively above `playSvg` in
+// scripts/lib/rink.mjs; not restated here):
+//   (b) the nearest opposing skater lying ahead of the tip is their F1 at 39.22 ft,
+//       against the 9.0 ft bar.
+//   (a) the extended terminal tangent's closest approach to any opposing skater is
+//       7.64 ft, on the strong-side man of the three, and that is 50.4 ft beyond the
+//       tip. The bar is 2.9 ft.
+// The tip was chosen at dy 17 rather than 16 for that (a) figure: at (-48, 36) the
+// tangent passes the same man at 4.50 ft, which clears the bar and is close enough
+// to it that an ordinary edit would not.
+//
+// ⚠️ ANGLING THIS CARRY TOWARD THE MIDDLE WAS PROPOSED AND IS REFUSED. The extended
+// tangent passes their F1 at (-35, 0) by 38.6 ft, so the drawn carry does go round
+// the outside of a forechecker nowhere near it — and that is the section, not a
+// defect. `breakouts.md` §"Against a 1-3-1" says in terms: "Use short passes up the
+// wall and along the boards, NOT through the middle — the wall lanes are the softest
+// part of the shape", and the caption repeats it. A carry angled into the middle
+// would draw the one route the section tells the reader not to take. The threat the
+// caption claims is the carrier's SPEED past a single token forechecker, which is
+// what the section says makes the wall break shape; it is not a threat to run at him.
+// That the terminal tangent then lies 4.8 degrees off the bearing to W1, 21.0 ft
+// away, is the breakout arriving at its own outlet up its own wall, and W1 is the
+// reader's own player — the arrival invariant is about finishing at an OPPOSING
+// body, and check-arrivals reports this diagram clean.
+const CARRY_TIP = { at: 'point:right:far', dx: -23, dy: 17 };   // (-48, 37)
+
+// The winger up the boards at your own blue line, 21.02 ft beyond the carry's tip so
+// the arrowhead is not arriving at him. He is a forward, so his circle's ink reaches
+// 41.875 against a dasher at 42.5 — 0.63 ft, tighter than most of this file and
+// looser than the half-wall datum it uses everywhere (0.13 ft).
+const TRAP_OUTLET = { at: 'point:right:far', dx: -2, dy: 18 };  // (-27, 38)
+
+const againstThe131 = {
+  id: 'breakout-against-1-3-1',
+  owner: 'content/systems/breakouts.md',
+  half: false,
+  width: 900,
+
+  caption:
+    'Breaking out against a 1-3-1 in the neutral zone. Your own end is at the left and the play moves ' +
+    'left to right. Counting outwards from your end, the opposition is one, three, one: a forward ' +
+    'giving token pressure; three spread flat across the width of the ice by the centre red line, ' +
+    'conventionally two forwards on the walls with a defenceman in the middle; and one defenceman ' +
+    'behind them as the last man. It takes the long pass away — a stretch, an over or anything up the ' +
+    'middle arrives where three players already stand — and what it leaves you is time. The answer ' +
+    'drawn is the defenceman carrying it out himself: one token forechecker cannot stop a carrier ' +
+    'with speed, and a threat is what makes the line break shape. The winger on the boards at your ' +
+    'blue line is the short outlet along the wall, drawn with no route: the wall lanes are the soft ' +
+    'part of this shape and the middle is not. ⚠️ A player waiting on the boards is the one who gets ' +
+    'hit. Body open to the ice, head up, never your back to the boards and never duck. Get your ' +
+    'skates parallel to the wall instead, forearm and hip into contact if it comes, and chin off ' +
+    'your chest. ' +
+    'Chipping it past the line and racing for it is a legitimate answer too, and against a genuine ' +
+    'trap it is often the better one. It is not drawn here. Which of the two your team wants is a ' +
+    'coaching choice, so ask. Their forechecker is drawn pressing; the most passive versions barely ' +
+    'leave the red line. This is the neutral-zone 1-3-1, not the offensive-zone forecheck or the ' +
+    'power play of the same name.',
+
+  describe:
+    'The full 200-foot sheet. Your defending zone is at the left, the far end at the right. Your ' +
+    'goaltender is in the crease and the defenceman D1 has the puck deep in the right corner. Five ' +
+    'opposition players are drawn in three bands. One forward stands in the middle of the ice about ' +
+    'ten feet inside your blue line. Three more are level with each other just beyond the centre red ' +
+    'line, spanning the sheet: one near the top boards, a defenceman in the middle of the ice, one ' +
+    'near the bottom boards. A second defenceman stands alone behind them, in the middle of their own ' +
+    'blue line. Of your own team only two skaters are drawn: D1, and the winger W1 out on the right ' +
+    'boards a couple of feet inside your own blue line. A single smooth wave — skating with control ' +
+    'of the puck — runs from D1 ' +
+    'out of the corner and up the right boards, finishing in open ice about twenty feet short of the ' +
+    'winger. The winger has no route. Nothing is drawn arriving at any opposition player.',
+
+  players: [
+    { id: 'G',  pos: 'G', at: GOALIE },
+    { id: 'D1', pos: 'D', at: RETRIEVAL,   label: 'carries it' },
+    { id: 'W1', pos: 'F', at: TRAP_OUTLET, label: 'short outlet' },
+
+    // Their five. The middle man of the three is a DEFENCEMAN — a triangle — and
+    // that is not decoration: "it cannot be three forwards, because F1 is already a
+    // forward and there are only three on the ice" (forechecking_systems.md, and
+    // nz-1-3-1 states it the same way). A forward glyph here would draw a shape the
+    // corpus says does not exist.
+    { id: 'F1', pos: 'F', team: 'opp', at: TRAP_F1,           label: 'token pressure' },
+    { id: 'F2', pos: 'F', team: 'opp', at: TRAP_WALL_STRONG,  label: 'holds a lane' },
+    // ⚠️ LABEL LENGTH IS LOAD-BEARING HERE, not style. This glyph and F1 share the
+    // y = 0 centreline, so the solver puts both labels on the same baseline 38 ft
+    // apart in x. Label half-width is len * size * CLIP_ADV = len * 2.4 * 0.473 =
+    // len * 1.135 ft, so two 14-character labels leave 38 - 15.89 - 15.89 = 6.2 ft
+    // between them — about 12 px at a 375 px phone, where they read as one run,
+    // "token pressure the read-maker". At 10 characters the gap is 10.8 ft, ~20 px.
+    // "the middle" is also the caption's own words for him ("a defenceman in the
+    // middle") and the label rush-3-on-2-default already uses for a middle man.
+    // The solver owns placement and specs cannot ask for a label above a glyph, so
+    // LENGTH is the only lever here; the next one is F1's depth, which the comment
+    // above deliberately calls a middle reading of a depth that varies.
+    { id: 'D',  pos: 'D', team: 'opp', at: TRAP_MID,          label: 'the middle' },
+    { id: 'F3', pos: 'F', team: 'opp', at: TRAP_WALL_WEAK,    label: 'holds a lane' },
+    { id: 'D',  pos: 'D', team: 'opp', at: 'centre-point',    label: 'last man' },
+  ],
+
+  routes: [
+    // One route, unnumbered, because there is only one and numbering a single route
+    // implies a second. Straight rather than bowed: a bow would put the drawn curve
+    // somewhere the arrival figures above were not computed on, and the checker
+    // tests the straight segment and its terminal tangent, not the curve.
+    { from: RETRIEVAL, to: CARRY_TIP, kind: 'carry' },
+  ],
+
+  puck: { at: 'corner:right:far', dx: -1, dy: -7 },
+};
+
 export default [
   fiveRoles,
   up,
@@ -895,4 +1068,5 @@ export default [
   stretch,
   wingerWall,
   centreSwing,
+  againstThe131,
 ];

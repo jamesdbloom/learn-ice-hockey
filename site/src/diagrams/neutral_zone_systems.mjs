@@ -10,12 +10,16 @@
  * defence at your own blue line are 114 feet apart. Cropped to one half, a 1-2-2
  * loses its first number and a trap looks identical to a containment.
  *
- * ORIENTATION, held constant across all seven. **Our own net is always at the far
- * (left) end**, x = -89, and the end our team attacks is always +x. So:
+ * ORIENTATION, held constant across every picture in this file. **Our own net is
+ * always at the far (left) end**, x = -89, and the end our team attacks is always
+ * +x. So:
  *
  *   - in the six defensive-structure diagrams our five hold the middle third and
- *     the *opponents* break out from the right and move right-to-left;
- *   - in the regroup diagram our five have the puck and move left-to-right.
+ *     the *opponents* break out from the right and move right-to-left. The two
+ *     blue-line frames are the same way round: the carrier there is an opponent
+ *     coming at our line, and he moves right-to-left too;
+ *   - in the regroup and the hinge our own players have the puck and move
+ *     left-to-right.
  *
  * Either way "your own blue line" is x = -25 ('blue-line::far') and "their blue
  * line" is x = +25, which is the distinction the section keeps making and the one
@@ -688,7 +692,167 @@ const regroup = {
 };
 
 // ---------------------------------------------------------------------------
-// 8 and 9 — denying the blue line: stand up, or back off
+// 8 — the hinge
+// ---------------------------------------------------------------------------
+//
+// §"The hinge, and the skating hinge". The whole section is one sequence, and the
+// prose needs three paragraphs to say which player ends up where: "You pass D-to-D,
+// and then, instead of drifting up the ice after the puck, **you sink back into the
+// middle behind your partner**. Your partner carries it up, looks, and finds that
+// everything is covered — so rather than forcing it, they simply give it back to
+// you. **You are now the best-placed player on the ice**: behind the play, in the
+// middle of the sheet, facing up ice with everything in front of you and nobody
+// near you, because the forecheck has committed to the side the puck was just on."
+//
+// WHY A SECOND REGROUP PICTURE. `nz-regroup-d-to-d` above stops at the pass across
+// and draws the three forwards' depths; it says nothing about what the passer does
+// next, which is the entire subject of this section. The two share an orientation
+// and a starting shape on purpose, so the difference between them is the thing the
+// section is about.
+//
+// FOUR NUMBERED ROUTES, and the numbering is load-bearing. The puck leaves one
+// defenceman and comes back to him, and he is not where he started when it does — a
+// frame with no order cannot say that. Routes 1 and 2 are SIMULTANEOUS in the
+// skating hinge ("drop deeper *as* you make the first pass"), which numbering
+// cannot draw, so the caption says it in words.
+//
+// WHERE D1 ENDS UP IS AN ARROWHEAD, NOT A GLYPH. Drawing him twice would put one
+// player in two places in a notation that has no ghost mark, so the arrival is
+// carried by route 2's tip and by the return pass stopping short of it and pointing
+// at it — the same treatment the two passes in the regroup above get, except that
+// here there is no glyph for the eye to complete the line to. That is stated in
+// `describe`, because a blind reader has no other way to know a glyph is missing.
+//
+// THE CARRY EARNS ITS PLACE TWICE. Tactically it is why the puck comes back at all.
+// Structurally it is what keeps the two passes apart: drawn without it, the return
+// leaves D2's glyph within about 20 degrees of the D-to-D arriving at it, and the
+// picture has two dashed lines running side by side.
+//
+// THE TWO OPPONENTS ARE THE SECTION'S OWN, and there are only two because the
+// section says only two things about the forecheck: that it has "committed to the
+// side the puck was just on", and that a forecheck taking away "the cross-ice pass
+// to the far forward" is the one that concedes the hinge. So: one low on the puck's
+// side, one in the lane from the puck to the far winger. NEITHER is between the two
+// defencemen — the section above forbids a D-to-D made blind with a forechecker in
+// the lane, and this picture must not contradict it.
+//
+// THE READ IS NOT DRAWN. "What decides whether it is available is how they
+// forecheck" — a forecheck that takes the D-to-D away kills the hinge, and a frame
+// showing the hinge being run cannot also show the case where it does not exist.
+// The caption carries it, and says the picture cannot settle it.
+//
+// SPACING IS A CONSTRAINT HERE, NOT A PREFERENCE, and the first draft failed it.
+// `numbered` puts each badge 9 ft along its own route, nudged 3.4 ft off it, and on
+// a full sheet TXT is 1.7, so a badge covers about 7 x 6.5 ft of ice. Two
+// consequences the coordinates below exist to satisfy:
+//   - routes 1 and 2 SHARE A START, both being D1's, so their badges sit 9 ft from
+//     the same point and only the angle between the routes separates them. At the
+//     first draft's 20 degrees they overlapped into one box reading "2 1".
+//   - routes 3 and 4 are a carry and its REVERSAL, so badge 4 lands back along the
+//     line badge 3 is on. They clear only if the carry is long enough: at 23 ft
+//     their centres were 4 ft apart and the boxes touched. It is 30 ft here.
+// Anything that shortens the carry or straightens the sink brings a collision back,
+// so re-render and look rather than trusting these numbers.
+
+const H_D1 = { at: OUR_BLUE, dx: 15, dy: 26 };          // (-10,  26) — has the puck, makes the D-to-D
+const H_D2 = { at: OUR_BLUE, dx: 15, dy: -26 };         // (-10, -26) — the partner
+const H_D1_END = { at: OUR_BLUE, dx: 5, dy: 2 };        // (-20,   2) — mid-ice, behind his partner
+const H_D2_END = { at: 'centre-ice', dx: 14, dy: -8 };  // ( 14,  -8) — carried up, found nothing
+const H_W = { at: 'centre-ice', dx: 2, dy: 33 };        // (  2,  33) — the far winger, swung wide
+const H_OPP_LOW = { at: 'centre-ice', dx: 6, dy: -30 }; // (  6, -30) — followed the puck to that side
+const H_OPP_LANE = { at: 'centre-ice', dx: 9, dy: 8 };  // (  9,   8) — in the lane to the far winger
+
+const hinge = {
+  id: 'nz-hinge',
+  owner: 'content/systems/neutral_zone_systems.md',
+  half: false,
+  width: 1100,
+  numbered: true,
+
+  caption:
+    'The hinge, with our team in possession attacking left to right and our own net at the left. ' +
+    'The numbers are the order. One, the D-to-D. Two, the passer sinks back into mid-ice behind his ' +
+    'partner instead of following the puck up the ice — and in the skating hinge one and two happen ' +
+    'together, because dropping deeper as you make the pass is what lets you arrive into the return ' +
+    'with speed rather than standing still. Three, his partner carries it up and finds everything ' +
+    'covered: the forecheck has followed the puck to that side, and the second man is sitting in the ' +
+    'cross-ice lane to the far winger. Four, he gives it back, and it arrives to a player who is ' +
+    'behind the play, in the middle, facing up ice with nobody near him. That is where route two has ' +
+    'taken the first defenceman, and it is not where he started. The only mark at that spot is his ' +
+    // ⚠️ "because each player is drawn once" — NOT "because these diagrams draw each
+    // player once". The sentence has to keep explaining why the arrival carries no
+    // glyph; what it does not have to do is name the corpus to do it.
+    'own arrowhead, because each player is drawn once. Whether the hinge is available at ' +
+    'all is a read about how they forecheck, and one frame cannot show you both answers.',
+
+  describe:
+    'The full sheet, with our own net at the left and our team attacking to the right. Two of our ' +
+    'defencemen stand in the neutral zone, one on the upper side of the ice and one on the lower, ' +
+    'with a clean lane between them and the puck beside the upper one. One of our forwards is drawn: ' +
+    'a winger swung wide on the upper wall. Two opposition skaters are drawn, one low on the same ' +
+    'side as the lower defenceman, and one in the middle of the neutral zone sitting in the lane ' +
+    'from the lower defenceman to that winger. Neither is between our two defencemen, and neither is ' +
+    'behind them. Four numbered routes. One, a flat pass from the upper defenceman straight across ' +
+    'to the lower. Two, the upper defenceman’s own skating route, curling back and then down into ' +
+    'the middle of the ice behind his partner. Three, the lower defenceman carrying the puck up ice ' +
+    'and toward the middle, drawn as a wave. Four, a pass from there back to a point just short of ' +
+    'where route two’s arrowhead finishes. No glyph is drawn at the place the upper defenceman ends ' +
+    'up. Route two’s arrowhead is the only mark for it. Both goaltenders are shown. The centre and ' +
+    'the third forward are not drawn, and neither are the opponents’ other three skaters.',
+
+  players: [
+    // Only as much opposition as the section describes, and no more.
+    { id: 'F', team: 'opp', pos: 'F', at: H_OPP_LOW, label: 'committed to that side' },
+    // ⚠️ THE LABEL NAMES THE LANE, NEVER THE PASS. "Takes the cross-ice pass" was
+    // here, and in English and in hockey "takes the pass" means RECEIVES it — so the
+    // label attributed the reception of a cross-ice pass to an OPPONENT, one word
+    // away from the section's "one that takes the cross-ice pass AWAY concedes it".
+    // Route 4 is a dashed cross-ice pass drawn ~14 ft from him, so the reader had a
+    // pass to attach it to, and the section above ends on this corpus's most
+    // emphatic warning against exactly that outcome. No verb of motion either: this
+    // glyph carries no route, and "takes the pass away" would read as one.
+    { id: 'F', team: 'opp', pos: 'F', at: H_OPP_LANE, label: 'in the cross-ice lane' },
+    { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
+
+    { id: 'G', pos: 'G', at: OUR_G },
+    { id: 'D1', pos: 'D', at: H_D1, label: 'sinks into mid-ice' },
+    { id: 'D2', pos: 'D', at: H_D2, label: 'carries up, finds nothing' },
+    // ONE forward, and only because the section gives him a job: he is the "far
+    // forward" the second opponent is covering, which is why the partner "finds
+    // that everything is covered". The centre and the third forward are NOT drawn.
+    // The section names the centre once, as the second look, and fixes no position
+    // for him anywhere — drawing him would author one. He was also the single
+    // biggest source of congestion in the middle of the frame, which is exactly
+    // where the two arrowheads have to stay legible.
+    { id: 'W', pos: 'F', at: H_W, label: 'the far winger' },
+  ],
+
+  routes: [
+    // 1 — the D-to-D, flat and hard with nobody in the lane, stopping short of the
+    //     receiver so the arrowhead does not land on the triangle. Same treatment
+    //     as the two passes in nz-regroup-d-to-d above.
+    { from: H_D1, to: { at: OUR_BLUE, dx: 15, dy: -20 }, kind: 'pass' },
+    // 2 — the sink. Bowed toward our own end so it reads as dropping back first and
+    //     then coming across, which is the order the section gives, and so that the
+    //     badge clears route 1's. The drawn curve stays outside our own blue line
+    //     (deepest about 21 ft from centre): the hinge is a neutral-zone reset, and
+    //     taking it below the line is the LOW regroup, a different section.
+    { from: H_D1, to: H_D1_END, kind: 'skate', bow: -10 },
+    // 3 — "your partner carries it up, looks". A carry is the wave, never a plain
+    //     line. Angled into the middle, so the low forechecker is behind the tip
+    //     rather than ahead of it.
+    { from: H_D2, to: H_D2_END, kind: 'carry' },
+    // 4 — "they simply give it back to you", aimed at where route 2 finishes rather
+    //     than at where its owner started, and stopping short of it for the same
+    //     reason route 1 stops short of D2.
+    { from: H_D2_END, to: { at: OUR_BLUE, dx: 9.3, dy: 0.7 }, kind: 'pass' },
+  ],
+
+  puck: { at: OUR_BLUE, dx: 16.5, dy: 24 },
+};
+
+// ---------------------------------------------------------------------------
+// 9 and 10 — denying the blue line: stand up, or back off
 // ---------------------------------------------------------------------------
 //
 // §"Denying the blue line: stand up or back off". The section's first sentence is
@@ -913,6 +1077,7 @@ export default [
   pressure,
   leftWingLock,
   regroup,
+  hinge,
   standUpAtTheLine,
   backOffAtTheLine,
 ];

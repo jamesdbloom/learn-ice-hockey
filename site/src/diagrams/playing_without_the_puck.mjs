@@ -716,6 +716,167 @@ const driveTheNetAfter = {
 };
 
 /* ------------------------------------------------------------------------- *
+ * 8 — A legal route through traffic.
+ *
+ * Section: "Getting open: the mechanics of separating from a check" -> "Screens and
+ * picks — what is actually legal", the practical paragraph: "run your route close
+ * past a teammate so that your check has to go around them. You are not hitting
+ * anybody, your teammate is not moving into anybody, and the defender simply loses
+ * a stride navigating traffic."
+ *
+ * THE WORD. This document reserves "screen" for the goaltender's sightline and says
+ * so in terms — "the rulebook's vocabulary for skater-on-skater obstruction is body
+ * position, blocking, picks and interference ... so this document calls it traffic,
+ * or a route". The id, the caption and the labels obey that, and
+ * screen-the-goalie-sightline is the diagram that owns the other word. It is also
+ * why the stationary teammate is drawn out on the weak side rather than in the
+ * slot: a teammate standing still in front of the net is standing in the
+ * goaltender's sightline, and the picture would then illustrate the one word it
+ * exists to keep separate.
+ *
+ * SAFETY, and it governs the whole frame. The hazard this section engineers is a
+ * defender at chase speed into a teammate who is standing still and facing away —
+ * the document says so itself, in the paragraph after the one drawn here. So NO
+ * ROUTE IS DRAWN ON THE CHECK AT ALL, on the precedent of nz-stand-up-at-the-line
+ * in neutral_zone_systems.mjs, where the defenceman carries none because that frame
+ * is exactly where a beginner reaches for a hit. Nothing in this picture finishes
+ * at a body: the single arrow belongs to the reader, passes OUTSIDE the stationary
+ * teammate, and finishes in open ice with its terminal tangent pointing away from
+ * every glyph in the frame.
+ *
+ * MEASURED, on the curve actually drawn rather than on the chord, and assuming
+ * site/src/data/rink.json at sha 24396ccc1109c262c0c77668c6f6fd81f6d9b08b:
+ *   - the route's closest approach to the stationary teammate is 6.83 ft centre to
+ *     centre, which is 2.96 ft of daylight from his ink, and a glyph's ink reaches
+ *     3.875 ft. Close past him, and visibly not through him. Drawn straight it is
+ *     5.83 ft and 1.96 ft of daylight, which is why there is a bow.
+ *   - closest approach to the check, 9.94 ft; to the goaltender, 32.74 ft.
+ *   - the arrowhead is 16.28 ft from the teammate, 26.48 ft from the check and
+ *     38.48 ft from the goaltender, and both skaters lie BEHIND the tip, so neither
+ *     form of the arrival invariant fires on it.
+ *   - and the thing the picture exists to show: the straight line the check would
+ *     take to the ice this route finishes on passes 0.08 ft from the teammate's
+ *     centre — through him. He has to go round, and that is the stride.
+ *
+ * MEASURED IN THE SPEECH RENDER, NOT IN THE SOURCE, and it cost three sentences. The
+ * first caption written here said "you are not hitting anybody and your teammate is
+ * not moving into anybody" and "that stride is the whole gain". The very next
+ * paragraph says both in almost the same words, and md_to_speech puts the caption
+ * and that paragraph in ONE CHUNK — 033 — one breath apart. A third sentence
+ * restated the vocabulary rule in the document's own words ("screen is kept for the
+ * goaltender's sightline and means nothing else here") two paragraphs above the
+ * document's own "A word about the word". All three went. What replaced the first
+ * two is a statement about the DRAWING — "no arrow in this picture ends at a body" —
+ * which the prose cannot duplicate, because the prose is not about a drawing; what
+ * replaced the third names the picture and stops, "traffic, or a route, and not a
+ * screen", which is the guard a caption read alone still needs.
+ *
+ * THE ONE ECHO KEPT IS THE SAFETY CAUTION, deliberately. The document repeats it two
+ * paragraphs later in fuller terms, and a caption that drops the hazard because the
+ * prose carries it is the failure the promotion rule exists to stop.
+ * drive-the-net-before does the same thing for the same reason.
+ *
+ * ⚠️ check-arrivals.mjs CANNOT SEE THE CLEARANCE THAT MATTERS HERE. It measures a
+ * route against the route owner's OPPONENTS, and the body this route runs past is
+ * the reader's own teammate, so a clean run says nothing about the 6.83 ft. That
+ * figure was computed by hand off the renderer's own Bezier construction and is
+ * covered by no gate. If either anchor moves, recompute it.
+ * ------------------------------------------------------------------------- */
+
+// You, low on the weak side. Anchored to the weak-side corner rather than to a bare
+// coordinate, and ten feet off the boards, which have curved in to y = -42.2 by
+// x = 76.
+const D8_YOU = { at: 'corner:left', dx: -6, dy: 2 };            // (76, -32)
+// Open ice up the weak side, just above the top of the circle: the route finishes
+// on ice nobody is standing on and nobody is arriving at.
+const D8_YOU_TO = { at: 'top-of-circle:left', dx: -4, dy: 6 };  // (50, -16)
+// The teammate you run past, standing still just inside the weak-side dot. Well off
+// the net front, for the reason in the header note.
+const D8_MATE = { at: 'faceoff-dot:left', dx: -3, dy: 3 };      // (66, -19)
+// Your check, inside you — between you and the middle of the ice, which is where a
+// defender marking a forward low in the zone stands. Eleven feet from you and ten
+// from your teammate, so no two glyphs in the picture come near touching: a circle
+// carries 3.875 ft of ink.
+const D8_CHECK = { at: 'faceoff-dot:left', dx: 7, dy: 1 };      // (76, -21)
+
+const legalRouteThroughTraffic = {
+  id: 'legal-route-through-traffic',
+  owner: 'content/hockey-iq/playing_without_the_puck.md',
+  half: true,
+  width: 900,
+
+  caption:
+    // ⚠️ "legal" IS IN THE OPENING CLAUSE ON PURPOSE. Without it the caption's only
+    // statement of legality was the subordinate "What makes the arrangement legal …
+    // is settled by the section around the picture" — which PRESUPPOSES legality
+    // rather than stating it, so a listener, who gets this caption alone, was told
+    // the picture cannot settle whether this is legal and never told that what is
+    // drawn IS the legal one. THE MARKER STAYS WHERE IT IS, and the alternative fix
+    // — moving it below the "practical, legal version" paragraph — was declined:
+    // at the section head this caption's "settled by the section around the picture"
+    // would point at prose entirely below it, and a picture of a skater running past
+    // another player's body would arrive AHEAD of "you may not step laterally into
+    // someone" in a section about interference. The caption fix costs one word.
+    'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
+    'Your teammate is standing still a few feet inside your line, and your check is inside you ' +
+    'too. Your route goes round the outside of your teammate and finishes in open ice, while the ' +
+    'straight line your check would take to that same ice runs through your teammate. He has to ' +
+    'go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
+    'the other version a penalty, is settled by the section around the picture rather than by ' +
+    'the drawing. This guide calls this traffic, or a route, and not a screen. Your check is ' +
+    'drawn with no route at all, deliberately. What he does next is chase, and a chaser ' +
+    // ⚠️ "is not drawn" — NOT "is not something this corpus draws". The sentence's
+    // work is the safety statement that the arrival at a standing man's back is
+    // deliberately absent from the picture; naming the corpus was never part of it.
+    'arriving at the back of a man standing still is not drawn. No puck ' +
+    'is drawn. The subject is the ' +
+    'player who does not have it, and the picture is one instance of an arrangement rather than ' +
+    'a spot on the ice. ' +
+    // SAFETY. The owner's own caution, from the paragraph below the one this picture draws:
+    // content/hockey-iq/playing_without_the_puck.md — "The collision you are engineering is a
+    // defender at chase speed into a teammate who is standing still and facing away, and who
+    // cannot see them coming. Give them a shout as you come, and run past your teammate rather
+    // than into the space they are standing in. That is a coaching caution, not a rulebook
+    // requirement." LAST, for the promotion rule, and the qualifier travels with it.
+    '⚠️ The collision you are engineering is a defender at chase speed into a teammate who is ' +
+    'facing away and cannot see him. Shout as you come, and run past your teammate rather than ' +
+    'into the space he is standing in. That is a coaching caution, not a rulebook requirement.',
+
+  describe:
+    'The attacking end zone, the opposition net and goaltender at the right. Three skaters, all ' +
+    'on the weak side of the ice and none of them near the net front. One of your forwards ' +
+    'stands low, about ten feet off the boards and below the faceoff dot, with a curved route ' +
+    'running up the ice and in toward the middle: it passes outside a second forward of yours ' +
+    'and finishes in open ice just above the top of the faceoff circle, pointing away from ' +
+    'everybody. That second forward stands still a few feet inside the route, level with and ' +
+    'just above the faceoff dot, with no route of his own. An opposition skater, labelled as ' +
+    'your check, stands between you and the middle of the ice, ten feet from your teammate and ' +
+    'eleven from you, and he carries no route at all. No puck is drawn and nothing is shaded.',
+
+  players: [
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    { id: 'F', pos: 'F', at: D8_YOU, label: 'you' },
+    { id: 'F', pos: 'F', at: D8_MATE, label: 'standing still' },
+    // A role letter rather than a position, and a circle rather than a triangle:
+    // the section says only "your check", "a defender", "a chaser", and the
+    // published key states that the letters inside a glyph are roles, not
+    // positions. Diagram 1 above gives the opposition role letters for the same
+    // reason — this document kills the F1/F2 inference in terms.
+    { id: 'CH', team: 'opp', pos: 'F', at: D8_CHECK, label: 'your check' },
+  ],
+
+  routes: [
+    // Bowed +2, which offsets the control point toward the boards side, i.e. AWAY
+    // from the teammate: the drawn curve arcs round the outside of him rather than
+    // cutting the corner at him, and the closest approach goes from 5.83 ft to
+    // 6.83. The terminal tangent is (-0.776, 0.630) — up ice and toward the middle
+    // — with the check 23.3 ft behind the tip along it and the goaltender 17.1 ft
+    // behind. Nothing is ahead of the arrowhead at all.
+    { from: D8_YOU, to: D8_YOU_TO, kind: 'skate', bow: 2 },
+  ],
+};
+
+/* ------------------------------------------------------------------------- *
  * DELIBERATELY NOT DRAWN
  *
  * - "Layer, do not duplicate". The section hands the geometry to Puck Support and
@@ -726,6 +887,21 @@ const driveTheNetAfter = {
  *   the cardinal-rule failure in its most absolute-looking form.
  * - The scramble priority list, the four off-puck states, effort, habit, attention,
  *   the possession arithmetic, and the bench questions. None of them are spatial.
+ * - THE ILLEGAL VERSION of the route above, and this one was decided rather than
+ *   overlooked. The section names it in terms — "stopping in a defender's path and
+ *   taking the contact, or drifting sideways into a chaser" — and both halves are a
+ *   body arriving at a body, which is the shape this project has twice graded
+ *   Critical. Drawn with the arrow it would need, it IS a route terminating in an
+ *   opponent. Drawn as positions alone, it is INDISTINGUISHABLE FROM THE LEGAL CASE
+ *   the same section states four bullets above it: "a player is allowed the ice he
+ *   is standing on and is not required to move in order to let an opponent
+ *   proceed". What separates the two is how the player got there — moving laterally
+ *   without establishing body position — which is TIME, and the header of this file
+ *   already records that this notation cannot draw time. So a positions-only
+ *   illegal frame would teach the opposite of the rule it illustrates. It stays in
+ *   the prose, which states it in a sentence, and in the facts block, which states
+ *   it as a "Never:" — both layers a listener hears. See legal-route-through-traffic
+ *   above, which draws the legal half on its own.
  *
  * RESOLVED, and left here as a record. "Drive the net" was on this list, on the
  * grounds that a single frame cannot carry a two-moment claim. That was correct
@@ -741,4 +917,5 @@ export default [
   widthMakesTheMiddle,
   driveTheNetBefore,
   driveTheNetAfter,
+  legalRouteThroughTraffic,
 ];

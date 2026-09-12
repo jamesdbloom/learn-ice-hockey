@@ -2226,7 +2226,7 @@ backward skating, lateral crossovers, pivoting, skating with control of the puck
 stopping, drop pass, checking pressure, `X Pylon`, cluster of pucks. **The `Ⓒ` collision is real; the
 `A` one was invented.** ⚠️ **Found only because an agent rendered `sources/heo_intl_drill_symbols.pdf`
 and read the key rather than taking this cell on trust — which is what this guide tells everyone else
-to do about content.** The corpus uses `C` for a centre at 37 glyphs across `site/src/diagrams/*.mjs` (countable with `grep -rEo "id: *'C'"`) and reserves `A1`/`A2`
+to do about content.** The corpus uses `C` for a centre across `site/src/diagrams/*.mjs` — ⚠️ **no count is written here; run `grep -rEo "id: *'C'" site/src/diagrams/*.mjs | wc -l`.** This sentence carried **37**; the command returned **56** when an agent ran it on 11 September 2026 — drifted by half again, two lines below a warning about taking a cell on trust — and reserves `A1`/`A2`
 for attackers; bare `A` is not used. These are live only if a drill diagram is ever added — no diagram in the
 corpus draws a coach or an assistant — and relabelling those centres would break the rule directly above. Decide
 before drawing a drill, not after.

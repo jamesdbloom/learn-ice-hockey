@@ -4,7 +4,7 @@
  * The section is the source of truth. Every player and every route below is one
  * its prose describes; where the prose hedges, the caption hedges.
  *
- * ORIENTATION — the same in all six, deliberately. A rush travels the length of
+ * ORIENTATION — the same in all seven, deliberately. A rush travels the length of
  * the sheet, so every diagram here is `half: false` and the **defended net is the
  * far one, at the left**: `:far` positions are negative x. The attack therefore
  * moves right to left in all of them, and every caption says so, because a reader
@@ -12,9 +12,14 @@
  * Mixing orientations between diagrams in one document would be worse than either
  * choice on its own.
  *
- * COUNTS. An odd-man rush is named by its counts, so the glyph count is a claim.
- * Each spec states the count it must render, and the counts were checked in the
- * rendered PNG rather than in this file.
+ * COUNTS. A rush is named by its counts, so the glyph count is a claim. Each spec
+ * states the count it must render, and the counts were checked in the rendered PNG
+ * rather than in this file. That now covers all seven. `rush-2-on-2` was first added
+ * without a render, because its author could not run `build-diagrams.mjs`; the PNG
+ * has since been built and read, and the two attackers, the two defencemen and the
+ * lone goaltender are the only glyphs on the sheet, the two `follow or switch`
+ * labels sit clear of every other glyph on their leaders, and the two attacker
+ * routes cross exactly once, in the middle of the ice at the defending blue line.
  *
  * TWO THINGS THE FIRST RENDER GOT WRONG, both invisible here and obvious there:
  *  - Labels of more than about eighteen characters are wider than the space
@@ -35,8 +40,9 @@
 
 const OWNER = 'content/systems/defending_the_rush.md';
 
-// The defended goaltender. Named once because five of the six diagrams place them
-// the same way: in the crease, a foot out from the goal line.
+// The defended goaltender. Named once because six of the seven diagrams place them
+// the same way: in the crease, a foot out from the goal line. (The exception is the
+// 2-on-1, which puts him on the line from the net to the carrier on purpose.)
 const OWN_G = { at: 'crease::far', dx: 1 };            // (-85, 0)
 
 /* ------------------------------------------------------------------ *
@@ -349,7 +355,134 @@ const twoOnOne = {
 };
 
 /* ------------------------------------------------------------------ *
- * 3 · The 3-on-2, the common default
+ * 3 · The 2-on-2, with the attackers crossing
+ * ------------------------------------------------------------------ */
+
+// TWO attackers, TWO defencemen. Even numbers are the whole premise of the
+// section — "even makes people relax" — so a third glyph of either team destroys
+// the picture's claim, exactly as in the 2-on-1 above.
+//
+// ⚠️ WHY THE DEFENCEMEN CARRY NO ROUTE, AND WHY THAT IS TWO ARGUMENTS RATHER THAN ONE.
+// The precedent is nz-stand-up-at-the-line in neutral_zone_systems.mjs, which records
+// both halves. (1) The read is the teaching point and a still frame must not settle
+// it: the section says "either follow your man through the crossing or call a clean
+// switch — but do not do half of each", and a drawn defender route picks one. Crossed
+// D routes are "follow"; uncrossed ones are "switch". (2) A crossing rush is where a
+// beginner reaches for a hit, and with no defender route nothing in this frame can
+// finish into an attacker.
+//
+// ⚠️ AND THE GEOMETRY FORCED THE SAME ANSWER INDEPENDENTLY, which is worth recording
+// because it will come back if anyone tries to add those routes later. Man-on-man on a
+// 2-on-2 puts each defenceman INSIDE his man (gapAndAngle's whole teaching), and a
+// crossing attacker therefore skates at the OTHER defenceman by construction. Every
+// layout tried with the attackers' arrows completing the exchange put a tip inside
+// ARRIVAL.noArrow of a defenceman with him ahead of the tangent — 8.60, 8.25, 7.21 and
+// 5.10 ft in four separate attempts. The routes below stop in front of the defence
+// instead, which is also the honest moment: this is the instant the read has to be
+// made, not the instant it has been resolved.
+
+// The two attackers, level with each other in the neutral zone, one on each side.
+// `point:*:far` is used here purely as a neutral-zone landmark, as it is in the 2-on-1
+// above and in 26 other anchors across three modules; see rink.json's note on `point`.
+const A1_2ON2 = { at: 'point:right:far', dx: 13 };          // (-12, 20) carrier, right
+const A2_2ON2 = { at: 'point:left:far', dx: 13 };           // (-12, -20) second man, left
+// Where each route stops: on the far side from where it started, still in front of the
+// defence. Both are 12.37 ft from the nearer defenceman, against a 9.0 ft bar.
+const A1_TIP_2ON2 = { at: 'point:left:far', dx: -9, dy: 6 };   // (-34, -14)
+const A2_TIP_2ON2 = { at: 'point:right:far', dx: -9, dy: -6 }; // (-34, 14)
+// Each defenceman is INSIDE his man — 9 ft nearer the middle of the ice (A1 at y 20,
+// D1 at y 11) — and level with his partner, retreating together. y is +/-11 rather
+// than +/-10 so the two identical labels sit 22 ft apart; at 16 characters they are
+// inside the 18-character ceiling the header note sets. ⚠️ THIS READ "8 ft" AND
+// RESOLVED AGAINST NEITHER THE OLD +/-10 NOR THE CURRENT +/-11: it was a fossil of a
+// layout that no longer exists, and a reviewer measured it rather than reading it.
+//
+// ⚠️ WHY THE 35.2 FT GAP WAS NOT TIGHTENED, because it will be raised again. A1 at
+// (-12, 20) is hypot(34, 9) = 35.17 ft from D1 — the loosest gap in this module, and
+// the section this diagram heads says "holds a TIGHT gap". Three fixes were offered
+// and all three were declined, for reasons that are about this file rather than taste:
+//   MOVING THE COORDINATES buys almost nothing. A crossing needs ~34 ft of lateral
+//     travel, and the tips must stop 12.37 ft short of the nearer defenceman to clear
+//     the 9 ft ARRIVAL.noArrow bar (four earlier layouts were rejected at 8.60, 8.25,
+//     7.21 and 5.10). Attackers-to-defence therefore cannot be less than the route's
+//     x-travel plus ~12 ft. The best layout tried that keeps both attackers in the
+//     NEUTRAL ZONE and the tip margin unchanged reaches 29.4 ft — still ~5 stick
+//     lengths, so it moves a number without reaching "tight" and adds geometry risk
+//     for it. Half a fix, in the one diagram whose teaching point is "never half of each".
+//   `kind: 'pressure'` IS NOT AVAILABLE. It renders as a plain line ending in two bars
+//     — the sudden-stop/checking-pressure mark, meaning ARRIVE AND STOP — and A1 is the
+//     PUCK CARRIER. It would drop his arrowhead and his `carry` wave, so the notation
+//     would say the attacker stops on the blue line without the puck.
+//   SO THE CAPTION SAYS IT INSTEAD, and says it out loud rather than by omission: the
+//     frame is the instant the crossing begins, the drawn gap is not the one to copy,
+//     and what the section actually asks for is a gap that shrinks and never grows —
+//     which is the document's own `Key:` fact, and which the drawn routes do satisfy
+//     (nearest defenceman 35.17 ft at the start, 12.37 ft at the tips).
+// ⚠️ Do NOT restate the ladder in feet anywhere here. Converting stick lengths to feet
+// by inventing a 6 ft stick is the recorded root cause of a false clause in
+// `rush-gap-and-angle`'s caption, 300 lines above; no book allows a stick over 65 in.
+const D1_2ON2 = { at: 'blue-line::far', dx: -21, dy: 11 };  // (-46, 11)
+const D2_2ON2 = { at: 'blue-line::far', dx: -21, dy: -11 }; // (-46, -11)
+
+const twoOnTwo = {
+  id: 'rush-2-on-2',
+  owner: OWNER,
+  half: false,
+  width: 900,
+
+  caption:
+    'A 2-on-2 with the two attackers crossing, the attack moving right to left toward the defended ' +
+    'net at the left. Two attackers, two defencemen, nobody spare on either side — and the warning ' +
+    'that goes with it is that even numbers make people relax, which is coaching emphasis rather than ' +
+    'a counted ranking. The version drawn is man-on-man: each defenceman takes one attacker and holds ' +
+    'their gap on the inside of them. The gap drawn is wide because this is the instant the crossing ' +
+    'begins; the attackers close it by more than half over the routes shown. Aim for a gap that ' +
+    'shrinks the whole way in and never grows, rather than a distance measured off a picture. ' +
+    'The realistic alternative is zone, where the strong-side ' +
+    'defenceman takes whoever carries the puck into their half and the weak-side defenceman holds the ' +
+    'middle. Zone survives a crossing rush better and man-on-man is tighter on a straight one, so find ' +
+    'out which your team plays, because mixing the two on the same rush leaves an attacker free. ' +
+    'Neither defenceman is drawn with a route, for two reasons. Follow your man through the ' +
+    'crossing, or call a clean switch — both are real answers, and never half of each. A picture ' +
+    'would have to pick one of those two, so it picks neither and leaves the read with you. The ' +
+    'second reason is safety: a crossing rush is exactly where a beginner reaches for a hit instead ' +
+    'of holding their position. What loses under either answer is both of them ' +
+    'drifting toward the puck, because then one simple pass leaves the other attacker the net.',
+
+  describe:
+    'The full sheet, the defended net at the left with the goaltender in it. Exactly two opposition ' +
+    'forwards and two own defencemen, and nobody else. The two forwards are level with each other out ' +
+    'in the neutral zone, one on each side of the ice, and each has a skating route running diagonally ' +
+    'across to the far side; the two routes cross each other in the middle of the ice just inside the ' +
+    'defending blue line. Both routes stop well short of the defencemen. The two defencemen are level ' +
+    'with each other inside the defending zone, one either side of the middle, each nearer the middle ' +
+    'of the ice than the forward who started on their side. Neither defenceman has a route drawn at ' +
+    'all. The puck is with the forward who starts on the right.',
+
+  players: [
+    { id: 'A1', team: 'opp', pos: 'F', at: A1_2ON2, label: 'puck carrier' },
+    { id: 'A2', team: 'opp', pos: 'F', at: A2_2ON2, label: 'the second man' },
+    // The same label on both, as the 3-on-2 default does with "takes the wide man":
+    // the read is identical for the two of them and naming it twice is the point.
+    { id: 'D1', pos: 'D', at: D1_2ON2, label: 'follow or switch' },
+    { id: 'D2', pos: 'D', at: D2_2ON2, label: 'follow or switch' },
+    { id: 'G',  pos: 'G', at: OWN_G },
+  ],
+
+  routes: [
+    // Bowed APART rather than together. Mirrored bows of the opposite sign keep the two
+    // curves crossing once, cleanly, at a single point; bowing them toward each other
+    // runs them side by side through the crossing and muddies it. With these bows the
+    // curves cross at (-26.1, 0) — the middle of the ice a foot inside the blue line.
+    { from: A1_2ON2, to: A1_TIP_2ON2, kind: 'carry', bow: -2 },
+    { from: A2_2ON2, to: A2_TIP_2ON2, kind: 'skate', bow: 2 },
+  ],
+
+  puck: { at: 'point:right:far', dx: 9, dy: -1 },           // (-16, 19)
+};
+
+/* ------------------------------------------------------------------ *
+ * 4 · The 3-on-2, the common default
  * ------------------------------------------------------------------ */
 
 // THREE attackers, TWO defencemen, plus the backchecking centre the section says
@@ -426,7 +559,7 @@ const threeOnTwoDefault = {
 };
 
 /* ------------------------------------------------------------------ *
- * 4 · The 3-on-2, the realistic alternative
+ * 5 · The 3-on-2, the realistic alternative
  * ------------------------------------------------------------------ */
 
 // Same three attackers in the same places as the default diagram, on purpose: the
@@ -512,7 +645,7 @@ const threeOnTwoAlternative = {
 };
 
 /* ------------------------------------------------------------------ *
- * 5 · Backchecking lanes
+ * 6 · Backchecking lanes
  * ------------------------------------------------------------------ */
 
 // The play sits in the defending half so that centre ice is empty, because the
@@ -613,7 +746,7 @@ const backcheckLanes = {
 };
 
 /* ------------------------------------------------------------------ *
- * 6 · The trailer / late man
+ * 7 · The trailer / late man
  * ------------------------------------------------------------------ */
 
 const A1_TRAIL = { at: 'faceoff-dot:right:far', dx: 4, dy: 4 };    // (-65, 26) first wave, wide
@@ -690,6 +823,7 @@ const trailer = {
 export default [
   gapAndAngle,
   twoOnOne,
+  twoOnTwo,
   threeOnTwoDefault,
   threeOnTwoAlternative,
   backcheckLanes,
