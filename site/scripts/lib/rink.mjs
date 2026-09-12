@@ -273,10 +273,20 @@ function endZone(sx) {
  * @returns {string[]} SVG fragments, one per entry
  */
 function placeLabels(entries, opts = {}) {
-  const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [] } = opts;
+  const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [], leaderMin,
+          noCrossLeaders = false } = opts;
   // A label further than this from its point gets a leader line drawn to it. Below
   // it no leader is drawn, so nothing can be crossed and `avoid` does not apply.
-  const LEADER_MIN = 5.5;
+  //
+  // ⚠️ 5.5 IS ABOVE THE FIRST TWO ENTRIES IN `OFFSETS` (4 and 4.5), so the commonest
+  // placement of all — directly above or below the point — draws NO leader. That is
+  // right for a play diagram, where a label sits beside the only glyph near it and a
+  // leader would be noise. It is wrong for the vocabulary overlay, where eight named
+  // areas sit within 25 ft of each other along the centre line and the reader has no
+  // glyph to tie a word to: the owner reported not being able to tell which label
+  // belonged to which dot. `rinkSvg`'s `labels` branch lowers it; nothing else does,
+  // so every play diagram is byte-identical across this change.
+  const LEADER_MIN = leaderMin ?? 5.5;
   const CH = size * 0.56;   // approximate character width
   const LH = size * 1.25;   // line height
   const placed = [...reserve];  // {x, y, w, h} in rink feet — `reserve` blocks out
@@ -351,6 +361,31 @@ function placeLabels(entries, opts = {}) {
       segBox(e.x, e.y, cand.x, cand.y, b));
   };
 
+  // ⚠️ LEADERS THAT CROSS EACH OTHER ARE THE SECOND WAY A LABEL LOSES ITS ANCHOR, and
+  // `leaderClear` above does not see it: that tests a leader against BOXES the caller
+  // passed, never against another leader. On a play diagram it barely arises — the
+  // glyphs are spread out. On the vocabulary overlay it is the dominant defect: the
+  // owner reported not being able to tell which label belonged to which dot, and the
+  // first repair (reserving the painted lines, lowering LEADER_MIN) fixed the blue-line
+  // overlaps and then produced a fan of crossing leaders around the net, where
+  // `net-front` 84, `goalmouth` 85, `crease` 86, `goal-line` 89 and `behind-net` 94 sit
+  // within ten feet of each other.
+  //
+  // Two segments cross iff each straddles the other's line — the standard orientation
+  // test. Endpoints that merely touch are not a crossing, hence the strict signs.
+  const drawn = [];   // leaders already committed, as [x1,y1,x2,y2]
+  const cross = (a, b, c, d) => {
+    const o = (p, q, r) => Math.sign((q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]));
+    const o1 = o(a, b, c), o2 = o(a, b, d), o3 = o(c, d, a), o4 = o(c, d, b);
+    return o1 !== o2 && o3 !== o4 && o1 !== 0 && o2 !== 0 && o3 !== 0 && o4 !== 0;
+  };
+  const leaderUncrossed = (cand, e) => {
+    if (!noCrossLeaders) return true;
+    if (Math.hypot(cand.x - e.x, cand.y - e.y) <= LEADER_MIN) return true;
+    return !drawn.some(([x1, y1, x2, y2]) =>
+      cross([e.x, e.y], [cand.x, cand.y], [x1, y1], [x2, y2]));
+  };
+
   // A label belongs to the nearest thing to it, whatever the leader line says.
   // "puck carrier" was once placed 7.4 ft from F1 and 20.3 ft from the carrier it
   // named — the leader line disambiguated it only for a reader who traced the
@@ -369,7 +404,8 @@ function placeLabels(entries, opts = {}) {
   // because a label that is not drawn is the failure mode this file has already paid for
   // once — 104 goaltenders vanished from 112 diagrams with a clean exit 0.
   const placeOne = (e, w, h, strict) => {
-    const ok = (cand) => inside(cand) && !collides(cand) && (!strict || leaderClear(cand, e));
+    const ok = (cand) => inside(cand) && !collides(cand)
+      && (!strict || (leaderClear(cand, e) && leaderUncrossed(cand, e)));
     for (const [dx, dy] of OFFSETS) {
       const cand = { x: e.x + dx, y: e.y + dy, w, h };
       if (ok(cand) && ownsIt(cand, e)) return cand;
@@ -451,6 +487,7 @@ function placeLabels(entries, opts = {}) {
     }
     placed.push(put);
     const moved = Math.hypot(put.x - e.x, put.y - e.y) > LEADER_MIN;
+    if (moved) drawn.push([e.x, e.y, put.x, put.y]);
     // ⚠️ A LEADER MUST STOP SHORT OF THE WORDS, NOT RUN INTO THEM.
     //
     // This previously ended the line at `py(put.y) + (put.y > e.y ? -1.2 : 1.2)`.
@@ -632,7 +669,25 @@ export function rinkSvg(opts = {}) {
         entries.push({ text: p.sided ? `${name}:${side > 0 ? 'R' : 'L'}` : name, x, y });
       }
     }
-    overlay = placeLabels(entries, { size: 2.4, dot: 0.8, half }).join('\n    ');
+    // ⚠️ THE PAINTED LINES ARE RESERVED, AND THE REASON IS IN THE COORDINATE TABLE.
+    // `point` is at x 25 and the blue line IS x 25 — see rink.json's own note, "the
+    // blue-line end of the point". So `point:L` and `point:R` are not drifting onto
+    // the line; they are anchored on it, and `neutral-dot` at x 20 is 5 ft off it.
+    // Nothing in the placer knew the lines existed: `reserve` blocks out space the
+    // caller has already drawn into, and until now this branch passed none, so a
+    // label box could sit squarely on a foot of painted blue.
+    //
+    // Reserved 2 ft wide about each line's centre — the 1 ft line plus half a foot of
+    // air either side — against the label's own box, so the words clear the paint
+    // rather than merely missing its centreline. The labels that move gain a leader,
+    // because every offset that clears a 2 ft strip is past LEADER_MIN.
+    const paint = [RINK.lines.centre_line_x, RINK.lines.blue_line_x, -RINK.lines.blue_line_x,
+                   RINK.lines.goal_line_x, -RINK.lines.goal_line_x]
+      .filter((x) => !half || x >= -2)
+      .map((x) => ({ x, y: 0, w: 2, h: RINK.sheet.width }));
+    overlay = placeLabels(entries,
+      { size: 2.4, dot: 0.8, half, reserve: paint, leaderMin: 2.5, noCrossLeaders: true })
+      .join('\n    ');
   }
 
   // Everything inside the ice is clipped to the boards, so a goal line drawn the
