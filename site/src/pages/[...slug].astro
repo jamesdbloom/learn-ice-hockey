@@ -7,6 +7,7 @@ import PrevNext from '../components/PrevNext.astro';
 import AudioPlayer from '../components/AudioPlayer.astro';
 import CiteThis from '../components/CiteThis.astro';
 import { getDoc, getNeighbours } from '../data/nav';
+import podcast from '../data/podcast.json';
 import { AUDIO_ENABLED } from '../consts';
 
 export async function getStaticPaths() {
@@ -19,6 +20,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
+
+// The episode for this document, or undefined. A document with no episode renders
+// no player at all — 38 pages were rendering one against 37 episodes, so the newest
+// document offered a control that could never play.
+const episode = podcast.episodes.find((e) => e.doc_id === entry.id);
 
 const doc = getDoc(entry.id);
 const { prev, next } = getNeighbours(entry.id);
@@ -50,7 +56,7 @@ const { prev, next } = getNeighbours(entry.id);
         point DOM order and visual order agree again and it belongs back at the bottom.
         ⚠️ It is deliberately OUTSIDE <article data-pagefind-body> so the player's text
         never enters the search index. */}
-    <AudioPlayer id={entry.id} title={doc.title} />
+    {episode && <AudioPlayer id={entry.id} title={doc.title} src={episode.audio} />}
 
     <article data-pagefind-body>
       <p class="doc-eyebrow">

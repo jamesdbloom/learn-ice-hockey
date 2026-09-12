@@ -33,7 +33,7 @@
 > about whether the rest of this document's IIHF layer is current or stale under it, because
 > that has not been checked.
 >
-> **Related:** [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [UK and England Rules](../foundation/uk_rules.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
+> **Related:** [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
 
 ## Overview
 
@@ -111,7 +111,7 @@ Key: Encroachment is called loosely in the neutral zone and tightly in the end z
 | **Neutral-zone dots** | 4 | 2-foot red spots, 5 feet outside each blue line, 44 feet apart. **No circles** |
 | **End-zone dots** | 4 | 2-foot red spots with 15-foot-radius circles, 20 feet out from the goal line and 22 feet either side of the middle |
 
-*(The dimensions in that table are the rink's, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) covers them — it carries the same figures alongside the rest of the ice, with the IIHF metric equivalents.)*
+*(The dimensions in that table are the rink's, and [Rink Map](../foundation/rink_map.md) covers them — it carries the same figures alongside the rest of the ice, with the IIHF metric equivalents.)*
 
 Two markings inside the end-zone circles matter enormously and almost nobody can name them:
 

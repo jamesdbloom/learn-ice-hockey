@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Zone Entries](zone_entries.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Defending the Rush](defending_the_rush.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Faceoffs](faceoffs.md) · [Time and Space](../hockey-iq/time_and_space.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Zone Entries](zone_entries.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Defending the Rush](defending_the_rush.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Rink Map](../foundation/rink_map.md) · [Faceoffs](faceoffs.md) · [Time and Space](../hockey-iq/time_and_space.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 
@@ -25,6 +25,8 @@ The **neutral zone** is the middle third of the ice, between the two blue lines 
 
 **Challenging an attacker up at your blue line is a bet that you have help behind you; giving ground is the play when you do not.** Check over your shoulder before you commit, and say out loud which one you are doing. Staying close to the puck carrier is a five-man job anyway — your defencemen can only do it if the forwards got back.
 
+**The vocabulary is on one page.** [Language and Glossary](../foundation/language_and_glossary.md) defines the words used throughout — strong side and weak side, the gap, the rim and the reverse, the pinch and the step-up, the high slot — and [Rink Map](../foundation/rink_map.md) draws every line, marking and named area of the ice to scale. **Three of them are used constantly below and are worth having before you start.** **F1, F2 and F3** are the forwards, numbered by order of arrival at the puck rather than by position. **D1 and D2** mean the strong-side and the weak-side defenceman for that sequence, not the left and the right defenceman. And **the wall** names two different things here, both standard hockey: usually the boards, but also a line of skaters strung across the ice denying a lane, which is the sense in "the flat wall", "the three-man line" and "a wall of four". The preposition usually tells you which — you play a puck *off* or *along* the boards, and you get *behind* a line of skaters.
+
 ---
 
 ## What the neutral zone actually is
@@ -38,7 +40,7 @@ Never: Rebuild your attack around a local two-line pass rule unless somebody sho
 Read: On a shorter sheet every structure here collapses faster — passive traps work better on small ice, aggressive pressure on big ice
 ```
 
-**The neutral zone** is the area between the two blue lines. On a regulation NHL sheet (200 feet by 85 feet) the blue lines sit 75 feet from each end board, which leaves **50 feet of neutral zone** — a figure worked out from the rink's dimensions rather than one the NHL rule text states, and [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) owns it along with the IIHF's 15.0 m, which that book *does* state. Fifty feet is not much. A strong skater covers it in about three seconds. That is the entire window in which every decision in this document has to be made.
+**The neutral zone** is the area between the two blue lines. On a regulation NHL sheet (200 feet by 85 feet) the blue lines sit 75 feet from each end board, which leaves **50 feet of neutral zone** — a figure worked out from the rink's dimensions rather than one the NHL rule text states, and [Rink Map](../foundation/rink_map.md) owns it along with the IIHF's 15.0 m, which that book *does* state. Fifty feet is not much. A strong skater covers it in about three seconds. That is the entire window in which every decision in this document has to be made.
 
 Three lines govern what happens there, and you need all three in your head at once:
 
@@ -77,19 +79,7 @@ Four reasons, and they compound.
 
 ---
 
-## A note on language
-
-- **F1, F2 and F3 are roles, not people.** They are defined by order of arrival at the puck, not by whether you are a centre or a winger. The forward who gets there first is F1 for that sequence, whoever they are. Wherever this document uses them, read them that way.
-- **D1 and D2** likewise mean the strong-side and weak-side defenceman for that sequence, not left and right D.
-- **Strong side** = the side of the ice the puck is on. **Weak side** = the other side.
-- **Step up** = challenging an opponent forward, in the neutral zone or at your own blue line. This is *not* a **pinch**, which specifically means stepping down from the *offensive* blue line to keep a puck in. Different areas, different risk.
-- **Forecheck** = pressure applied in the opponent's end. **Neutral zone forecheck** = the structure your five players hold in the middle third while the opponent tries to break out. **Backcheck** = racing back toward your own end. A neutral zone forecheck is not a forecheck in the strict sense, but the name is universal, so it is used here.
-- **Gap** = the distance between a defender and the attacker they are responsible for.
-- **The wall** means two things, and both are standard hockey. Usually it is **the boards** — the perimeter wall of the rink — which is the sense in "on the wall", "off the wall", "along the wall", "the left wall" and "the strong-side wall". It also names **a line of skaters strung across the ice denying a lane**, which is the sense in "behind the wall", "the flat wall", "the three-man line" and "a wall of four". The preposition usually tells you which: you play a puck *off* or *along* the boards, and you get *behind* a line of skaters.
-- **Rim** = a hard puck sent *onward* around the boards, following the curve of the rink to the next teammate along. **Reverse** = a puck sent *back* against the flow, into the space a forechecker has just skated out of. They are different plays for different problems: a rim beats a forechecker sealing you against the boards, a reverse beats one who has over-committed past you. Do not use the words interchangeably.
-- **High slot** = the middle of the ice from the faceoff dots up to the top of the faceoff circles — one layer further out than the **goalmouth**, which is the immediate net front. Most of the dangerous neutral-zone passes are aimed at somebody arriving into the high slot.
-
-### How to read the numbers
+## How to read the numbers
 
 ```facts
 Convention: Structures are named from the puck outward — the first number is the layer closest to the opponent's net

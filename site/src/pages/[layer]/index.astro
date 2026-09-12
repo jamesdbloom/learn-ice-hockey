@@ -22,15 +22,19 @@
   3. There was no page for a section to rank as. The corpus is organised in
      layers and nothing on the site said so except the home page's anchors.
 
-  Nothing here is written from scratch. The title, tagline and blurb come from
-  structure.json — the corpus's own five-layer framing — and each card's title
-  and description come from docs-meta.json, which extract-meta.mjs generates
-  from the documents themselves. This file authors no hockey claim; if a
-  description here is wrong, it is wrong in the document it was read from.
+  Nothing here is written from scratch. The title, tagline, blurb and the optional
+  `layout` prose all come from structure.json — the corpus's own five-layer framing —
+  and each card's title and description come from docs-meta.json, which
+  extract-meta.mjs generates from the documents themselves. This file authors no
+  hockey claim; if a description here is wrong, it is wrong in the document it was
+  read from.
+
+  No CiteThis here, deliberately. A section hub is a routing page: it makes no claim
+  of its own to cite, and the block cost most of a screen on a page whose whole job
+  is to get the reader into a document. Document pages keep it.
 */
 import Base from '../../layouts/Base.astro';
 import SidebarNav from '../../components/SidebarNav.astro';
-import CiteThis from '../../components/CiteThis.astro';
 import { LAYERS } from '../../data/nav';
 
 export function getStaticPaths() {
@@ -68,6 +72,21 @@ const count = layer.docs.length;
       <p class="hub-tagline">{layer.tagline}</p>
       <p class="hub-blurb">{layer.blurb}</p>
 
+      {/*
+        Only a section whose pages share a structure worth explaining carries
+        `layout` in structure.json, and today only `positions` does. It sits ABOVE
+        the cards, on the owner's instruction: a reader choosing between five
+        documents needs to know how they are built before they pick one, not after.
+        Rendered as plain paragraphs — the field holds prose, not markup, so nothing
+        here parses or trusts its content.
+      */}
+      {layer.layout && (
+        <div class="hub-layout">
+          <h2 class="hub-heading">How these pages are laid out</h2>
+          {layer.layout.map((para) => <p class="hub-blurb">{para}</p>)}
+        </div>
+      )}
+
       <h2 class="hub-heading">
         {count === 1 ? 'The document in this section' : `The ${count} documents in this section`}
       </h2>
@@ -82,21 +101,6 @@ const count = layer.docs.length;
         }
       </div>
 
-      {/*
-        Only a section whose pages share a structure worth explaining carries
-        `layout` in structure.json, and today only `positions` does. It sits below
-        the cards rather than above them because it describes the documents the
-        reader has just seen listed, and it is rendered as plain paragraphs — the
-        field holds prose, not markup, so nothing here parses or trusts its content.
-      */}
-      {layer.layout && (
-        <div class="hub-layout">
-          <h2 class="hub-heading">How these pages are laid out</h2>
-          {layer.layout.map((para) => <p class="hub-blurb">{para}</p>)}
-        </div>
-      )}
-
-      <CiteThis title={layer.title} />
     </article>
 
     {/*

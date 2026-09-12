@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Puck Handling](puck_handling.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Risk Management](../hockey-iq/risk_management.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Breakouts](../systems/breakouts.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Puck Handling](puck_handling.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Risk Management](../hockey-iq/risk_management.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Breakouts](../systems/breakouts.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 
@@ -17,21 +17,9 @@ The puck moves faster than any skater can, and that single fact is the whole arg
 
 **In your own end the standard is certainty, not value.** No blind pass up the middle, no defence-to-defence pass across the ice in front of your own goal, no cross-ice pass — a mistake there is punished immediately. Those three are risk-management defaults rather than laws of hockey, and some breakouts deliberately build in a controlled defence-to-defence exchange behind the goal line, so treat them as always-on unless your coach has designed the exception.
 
----
+**The vocabulary is on one page.** [Language and Glossary](../foundation/language_and_glossary.md) defines the words used throughout — tape-to-tape, the blade's heel and toe, cupping, support, the slot, the half-wall, the point, strong side and weak side — and [Rink Map](../foundation/rink_map.md) draws every line, marking and named area of the ice to scale. **Two of them do constant work below and are worth having in hand now.** The blade's **heel** is the end nearest the shaft and its **toe** is the far end — almost every instruction here about where the puck sits on your stick is written in those two words. And the **slot** is the dangerous ice directly in front of the net, between the two faceoff circles.
 
-## A Note on Language
-
-Terms used throughout, defined here so the document stands alone:
-
-- **Tape-to-tape** — a pass that arrives flat on the receiver's stick blade, on the taped part, ready to be played immediately.
-- **Blade** — the flat part of your stick that touches the ice. Its **heel** is the end nearest the shaft; its **toe** is the far end.
-- **Cupping** — tilting the top edge of the blade slightly forward over the puck, so the face is closed rather than open to the sky. [Puck Handling](puck_handling.md) covers the technique.
-- **The slot** — the dangerous scoring area in front of the net, between the two faceoff circles. The **high slot** is from the faceoff dots up to the top of the circles; the **goalmouth** is the immediate net front.
-- **Half-wall** — the boards area roughly level with the faceoff dot, between the corner and the point.
-- **The point** — the area just inside the offensive blue line where defencemen normally stand.
-- **Strong side** — the side of the ice the puck is on. **Weak side** — the other side.
-- **Checker** — the opponent currently pressuring you. ⚠️ **Note the word runs both ways in hockey**: elsewhere in this guide, and in most coaching language, *"your check"* means the opponent **you** are responsible for covering. Both usages are common; take the direction from the sentence around it.
-- **Support** — a teammate positioning themselves to receive a pass from you.
+⚠️ **One word runs both ways in hockey, and this document uses the less common sense: here, the *checker* is the opponent currently pressuring you**, where elsewhere in this guide, and in most coaching language, *"your check"* is the opponent **you** are responsible for covering. Both usages are common; take the direction from the sentence around it.
 
 ---
 

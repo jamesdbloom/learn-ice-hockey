@@ -2,7 +2,7 @@
 
 > **Rule set:** This document is *about* the rule set. The other documents here are written to NHL rules with IIHF, USA Hockey and Hockey Canada differences flagged inline; this one tells a reader in Britain which of those flags is theirs.
 >
-> **Related:** [Rules Primer](rules_primer.md) · [Rink Map and Glossary](rink_map_and_glossary.md) · [Getting Started](../getting-started/getting_started.md) · [Equipment](../off-the-ice/equipment.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Faceoffs](../systems/faceoffs.md) · [Game Management](../systems/game_management.md)
+> **Related:** [Rules Primer](rules_primer.md) · [Rink Map](rink_map.md) · [Getting Started](../getting-started/getting_started.md) · [Equipment](../off-the-ice/equipment.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Faceoffs](../systems/faceoffs.md) · [Game Management](../systems/game_management.md)
 
 ## Overview
 
@@ -153,7 +153,7 @@ IIHF Rule 1.2 specifies a sheet *"60m long and 26m to 30m wide"* — note that 3
 
 **Both the list of named rinks and the scope of that In-House authorisation changed for 2026-27.** The 2025-26 edition named a third rink, Limekilns Road in Scotland, and carried the scope line *"This rule applies to all EIH and SIHA fixtures."* The 2026-27 edition names only the two and reads *"This rule applies to all fixtures."* So the authorisation now reaches university hockey too, where before it did not. The Elite League is not mentioned anywhere in the In-House Rules, so nothing here establishes what applies there.
 
-That threshold sits **outside IIHF Rule 1.2 altogether**: the book fixes the length at 60 m and makes 26 m its *minimum* width, so a rink below 56 m × 26 m is short of the book on both counts. [Rink Map and Glossary](rink_map_and_glossary.md) covers the dimensions and the markings.
+That threshold sits **outside IIHF Rule 1.2 altogether**: the book fixes the length at 60 m and makes 26 m its *minimum* width, so a rink below 56 m × 26 m is short of the book on both counts. [Rink Map](rink_map.md) covers the dimensions and the markings.
 
 This matters more than it sounds. [Time and Space](../hockey-iq/time_and_space.md) explains what rink size does to the game: on a smaller sheet the distances shrink, the angles do not, and everything arrives sooner. Check your rink before you assume the geometry in any document applies to it.
 

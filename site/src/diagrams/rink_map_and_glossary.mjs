@@ -100,6 +100,38 @@ function boardArcFar(sy) {
 }
 
 /**
+ * The board arc BEHIND the goal line, from the goal line round to the end boards.
+ *
+ * `boardArc` above starts at x 72, where the corner begins, because the regions it
+ * serves run from the middle of the zone outward. The strip behind the goal line
+ * starts at x 89 and is a fifth of the length, so it needs the arc sampled from
+ * there — reusing `boardArc` and discarding its first four points would draw the
+ * region's first vertex at x 72, five feet of ice OUTSIDE the strip it names.
+ *
+ * Sampled every foot rather than every four, because the arc is turning hardest in
+ * exactly this stretch: from x 89 the boards come in from y 36.749 to y 14.5 over
+ * eleven feet. At 4 ft spacing the chords visibly cut the corner.
+ *
+ * AREA, stated so a reviewer can check the shape without opening the renderer.
+ * Exact, by integration: 2·∫(14.5 + √(784 − (x−72)²)) dx from 89 to 100 = 660.7
+ * sq ft. The 1 ft polygon comes out at 657.8 — 0.4% under, because chords of a
+ * convex arc fall inside it. That is the whole error and it is in the safe
+ * direction: the shading stops a few inches short of the dasher rather than
+ * spilling over it.
+ *
+ * @param {number} sy  +1 for the side the diagram calls "right", -1 for the other
+ */
+function behindGoalLineArc(sy) {
+  const R = 28, CX = 72, CY = 42.5 - 28;      // 14.5
+  const pts = [];
+  for (let x = 89; x <= 100.0001; x += 1) {
+    const dy = Math.sqrt(Math.max(0, R * R - (x - CX) ** 2));
+    pts.push({ at: 'goal-line', dx: +(x - 89).toFixed(3), dy: +(sy * (CY + dy)).toFixed(3) });
+  }
+  return pts;
+}
+
+/**
  * The blue-line edge of a zone, sampled down its length.
  *
  * ⚠️ THIS IS A LABEL-PLACEMENT FIX AND IT IS SAID OUT LOUD, because it looks like
@@ -179,7 +211,7 @@ function creaseOutline() {
 
 const theSlot = {
   id: 'the-slot',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -228,7 +260,7 @@ const theSlot = {
 
 const theHighSlot = {
   id: 'the-high-slot',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -273,7 +305,7 @@ const theHighSlot = {
 
 const theLowSlot = {
   id: 'the-low-slot',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -317,7 +349,7 @@ const theLowSlot = {
 
 const theGoalmouth = {
   id: 'the-goalmouth',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -369,7 +401,7 @@ const theGoalmouth = {
 
 const pointAndHalfWall = {
   id: 'the-point-and-the-half-wall',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -414,7 +446,7 @@ const pointAndHalfWall = {
 
 const theTrapezoid = {
   id: 'the-trapezoid',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -518,7 +550,7 @@ const theTrapezoid = {
 
 const strongAndWeakSide = {
   id: 'strong-side-and-weak-side',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -626,7 +658,7 @@ const strongAndWeakSide = {
 
 const theGoalCrease = {
   id: 'the-goal-crease',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   title: 'The goal crease',
   half: true,
   width: 900,
@@ -695,7 +727,7 @@ const theGoalCrease = {
 
 const homePlate = {
   id: 'home-plate-the-house',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -766,7 +798,7 @@ const homePlate = {
 
 const aboveAndBelowTheDots = {
   id: 'above-and-below-the-dots',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
 
@@ -848,7 +880,7 @@ const aboveAndBelowTheDots = {
 
 const theThreeZones = {
   id: 'the-three-zones',
-  owner: 'content/foundation/rink_map_and_glossary.md',
+  owner: 'content/foundation/rink_map.md',
   title: 'The three zones',
   half: false,
   width: 1100,
@@ -929,58 +961,251 @@ const theThreeZones = {
 };
 
 // ---------------------------------------------------------------------------
-// The two maps that replace this document's ASCII schematics.
+// 12 · §2's map of the sheet, in two pictures
 //
-// Both old drawings carried the disclaimer "schematic, not to scale" — which was
-// honest, and was also the reason they were worth replacing. These are generated
-// from the coordinate table, so they ARE to scale, and scripts/check_geometry.py
+// ⚠️ WHAT THESE REPLACE, AND THE MEASUREMENT THAT DECIDED IT. §2 carried ONE
+// picture, `rink-map-full`: the whole sheet at `kind: 'rink'` with `labels: true`,
+// which overlays EVERY entry in src/data/rink.json. Three things were wrong with it
+// and only the first is about scale.
+//
+// (1) THE OVERLAY'S TYPE IS THE SMALLEST IN THE CORPUS AND NOTHING COMPENSATES IT.
+//     `rinkSvg` draws the overlay at a flat `size: 2.4` rink-feet. `playSvg` scales
+//     its own text by TXT = 1.7 on a full sheet, precisely because a full sheet holds
+//     twice the ice in the same column — but the overlay never goes through that
+//     path. So the labels came out at 2.4 ft on a 204-unit viewBox: 2.4 x 792/204 =
+//     9.3 px in a 792 px desktop column, against 3.2 x 792/104 = 24.4 px for a zone
+//     label on a half sheet. Under 40% of the size, in the one picture a beginner is
+//     told to come back to.
+//
+// (2) EVERY LABEL WAS IN THE RIGHT-HAND HALF, AND ON A PHONE THAT HALF STARTS
+//     OFF-SCREEN. All 19 entries in rink.json have x >= 0 — 26 labels once the seven
+//     sided ones are drawn twice — so they crowded into the attacking end while two
+//     thirds of the sheet carried none. A full-sheet figure is held at
+//     `min-width: 640px` inside a 346 px scroll box at 375 px (global.css:2188), so
+//     640 px of a 204-unit viewBox shows 110 units: x -102 to about +8, and ONLY
+//     `centre-ice` falls in it. The reader met an unlabelled rink and had to guess to
+//     drag inside the box. ⚠️ The px-per-foot is nearly the same on a phone either way
+//     (3.14 full against 3.33 half) — on a PHONE the defect is the hidden half, and on
+//     a DESKTOP it is the type size. Two different failures, one picture.
+//
+// (3) THE LABELS WERE NODE IDENTIFIERS, NOT THE VOCABULARY. `half-wall:R`,
+//     `top-of-circle:L`, `faceoff-dot:R` — the coordinate table's own keys with a
+//     mirror suffix, under a caption that promised the standard position vocabulary.
+//     §5 calls these the half-wall, the top of the circle, the dots. Two of the
+//     labels — `bumper` and `neutral-zone-mid` — name no area in §5 at all.
+//
+// ⚠️ AND THE SHADED-REGION INSTRUCTION CANNOT RESCUE THAT MAP — which is worth
+// stating, because shading an area instead of dotting it is the obvious repair and it
+// does not work HERE. Shading is right wherever the document bounds the region, and
+// §5's end-zone vocabulary splits cleanly in two:
+//
+//   BOUNDED, and therefore shadeable — the slot, the high slot, the low slot, the
+//   goalmouth, home plate, the crease, the trapezoid, above and below the dots. ⚠️ But
+//   they OVERLAP each other by construction: home plate contains the slot, the slot
+//   contains the high and low slot, the goalmouth sits over the crease, the trapezoid
+//   sits inside "below the dots". Every one already has its OWN diagram in this file,
+//   drawn alone, for exactly that reason.
+//
+//   UNBOUNDED, and therefore not shadeable at all — the point, the half-wall, the
+//   corners, the boards, the office, the top of the circle, behind the net as against
+//   the corners. §5 gives these no extent, deliberately: rink.json's own `point` note
+//   spends a paragraph on why inventing an offset for it is forbidden.
+//
+// So a single map of the end zone cannot shade its vocabulary: half of it would be
+// unreadable overlap and the other half would be invented geometry. Each of these two
+// pictures therefore shades exactly ONE region, and it is a region §1 or §2 gives a
+// dimension for.
+// ---------------------------------------------------------------------------
+
+const neutralZoneMap = {
+  id: 'rink-map-neutral-zone',
+  owner: 'content/foundation/rink_map.md',
+  title: 'The neutral zone',
+  half: false,
+  width: 1100,
+
+  caption:
+    'The whole sheet, with the neutral zone — the middle third, between the two blue ' +
+    'lines — shaded. ' +
+    'It is 50 ft from blue line to blue line on an NHL rink, and that figure is a ' +
+    'derivation rather than one the rule text states: Rule 1.2 gives the sheet 200 ft of ' +
+    'length, Rule 1.5 puts each goal line 11 ft from the end boards and each blue line ' +
+    '64 ft out from its goal line, and what is left in the middle is 50 ft. ' +
+    'Under the IIHF book — the British one — Appendix VI states it directly as a ' +
+    'quarter of the rink’s length, 15.0 m or 49.2 ft. The two are within a foot of each ' +
+    'other, so the length of this zone barely changes between the two books. What ' +
+    'changes between them is the width of the ice — which is why a neutral-zone trap ' +
+    'that works by squeezing the width gets much harder to run on a wide sheet. ' +
+    'Three sets of markings sit in it. The centre red line runs across the middle; on a ' +
+    'real rink it carries a distinctive pattern so that it can never be mistaken for a ' +
+    'blue line. The centre ice dot sits on it inside a blue circle 15 ft in radius, and ' +
+    'that is where each period opens and where play restarts after a goal. And four red ' +
+    'spots flank the blue lines, 5 ft outside each one and 44 ft apart — the ' +
+    'neutral-zone dots. They have no circles round them, ' +
+    'which is deliberate: a neutral-zone draw is meant to restart play quickly with ' +
+    'everyone spread out, so there is no restraining circle. ' +
+    'Both players’ benches are on one side of this zone and the penalty benches ' +
+    'opposite, which is why the bench side is the side you can change safely on. ' +
+    'The sheet is drawn here at the NHL’s 200 ft by 85 ft. If you play in Britain, the ' +
+    'In-House Rules authorise rinks below 56 m by 26 m for all levels, so your working ' +
+    'assumption should be that your own rink is smaller than this on both counts.',
+
+  describe:
+    'The full two hundred by eighty-five foot rink seen from above. The band between the ' +
+    'two blue lines is shaded and labelled "neutral zone". In it are the centre red line, ' +
+    'the centre faceoff dot inside its blue circle, and four red faceoff spots without ' +
+    'circles, two just outside each blue line. The two end zones either side are ' +
+    'unshaded, each with its goal, crease, trapezoid and pair of faceoff circles. No ' +
+    'players are drawn.',
+
+  zones: [
+    {
+      // ⚠️ DELIBERATELY THE SAME FOUR VERTICES AS `the-three-zones`' middle band, and
+      // under the same label. The two pictures answer different questions — §4's is
+      // about the zones being named relative to your TEAM, this one is about what is
+      // painted in the middle third — but they are the same ice, and a second polygon
+      // for it would be a second definition. scripts/check_zones.py groups by label
+      // and reports divergence, so identical is the only safe form.
+      points: [
+        { at: 'blue-line', dy: 42.5 },
+        { at: 'blue-line::far', dy: 42.5 },
+        { at: 'blue-line::far', dy: -42.5 },
+        { at: 'blue-line', dy: -42.5 },
+      ],
+      label: 'neutral zone',
+      // The vertex mean is (0, 0) — the centre dot, inside the centre circle, where
+      // the words would sit on top of both. Moved DOWN 28 ft: "neutral zone" is twelve
+      // characters at 3.05 ft each on a full sheet, so it spans x -18.3 to 18.3 (inside
+      // the band, which reaches ±25) and y -31.8 to -24.2 — clear of the circle, whose
+      // bottom is y -15, and clear of the two lower neutral-zone dots at (±20, -22),
+      // which the label's x span never reaches. The POLYGON is untouched.
+      labelDy: -28,
+      fill: 'rgba(15,90,143,0.13)',
+      stroke: 'none',
+    },
+  ],
+};
+
+const endZoneMarkings = {
+  id: 'rink-map-end-zone-markings',
+  owner: 'content/foundation/rink_map.md',
+  title: 'One half of the sheet',
+  half: true,
+  width: 1000,
+
+  caption:
+    'One half of the sheet, drawn to scale — the centre red line at the left, the end ' +
+    'boards at the right — so everything in it is twice the size it would be on a map of ' +
+    'the whole rink. ' +
+    'Everything drawn in it is a marking rather than a name for an area: the blue line, ' +
+    '64 ft out from the goal line; the two faceoff circles with their hash marks; the ' +
+    'goal line itself, with the net standing on it; the light blue crease in front of the ' +
+    'net; and behind it the two red trapezoid lines, which mark the goaltender’s ' +
+    'restricted area. ' +
+    'Not every rink carries all of them. Many rec rinks have no trapezoid painted at ' +
+    'all, and an unpainted one is a strong hint that your league is not enforcing it — a ' +
+    'hint rather than a ruling, because the rule turns on where the puck is rather than ' +
+    'on the markings. ' +
+    'The shaded strip is the ice behind the goal line. It is 11 ft deep in the NHL and ' +
+    '4.0 m, or 13.1 ft, under IIHF Rule 1.5 — the British book — so there is about two ' +
+    'feet more room back there on international ice. ' +
+    'It is live playing surface and it is worth more than it looks. A puck carrier who ' +
+    'goes behind the net can come out either side, so the defence has to commit; and it ' +
+    'is the safest place in your own zone to compose yourself, because a turnover there ' +
+    'produces no direct shot. ' +
+    'Do not assume the rink you stand in matches this one. These are the NHL’s ' +
+    'dimensions, most recreational and older sheets were not built to them, and British ' +
+    'rinks are authorised below the IIHF minimum on both length and width. On your first ' +
+    'shift at an unfamiliar rink, go and look at how far it is from the goal line to the ' +
+    'end boards.',
+
+  describe:
+    'One half of the rink seen from above, from the centre red line at the left to the ' +
+    'end boards at the right. A blue line crosses a quarter of the way in; then two ' +
+    'faceoff circles with their hash marks; then the goal line, with the net standing on ' +
+    'it, the light blue crease in front of it and two dashed red trapezoid lines behind ' +
+    'it. The strip of ice between the goal line and the end boards is shaded, running the ' +
+    'full width of the sheet and following the curve of the corners round to the end ' +
+    'boards. No players are drawn.',
+
+  zones: [
+    {
+      // The goal line at x 89 to the end boards at x 100, following the corner arc so
+      // the shading reaches the wall rather than cutting across it. 657.8 sq ft drawn
+      // against 660.7 exact — see `behindGoalLineArc` for the derivation and the sign
+      // of the error.
+      points: [
+        ...behindGoalLineArc(1),
+        ...behindGoalLineArc(-1).reverse(),
+      ],
+      // ⚠️ NO LABEL, AND IT IS A MEASUREMENT RATHER THAN A PREFERENCE. A zone label is
+      // drawn at the vertex mean with no collision avoidance — here (94.5, 0) — and the
+      // shortest honest name, "behind the net", is fourteen characters reserving 25.1 ft
+      // on a half sheet. The strip is 11 ft deep. The words would run from x 81.9 to
+      // 107.1: across the crease, out past the end boards at x 100 and off the frame,
+      // which stops at x 102. Same call and same reason as `theGoalCrease` above. The
+      // region is named in the caption and in `describe`.
+      // ⚠️ NO OUTLINE either: the goal line and the two trapezoid lines are already
+      // painted red along two of this polygon's edges, and a dashed blue border drawn
+      // over real paint invites a reader to take the wrong lines for the marking.
+      stroke: 'none',
+      // ⚠️ 0.13, NOT theTrapezoid's 0.16, and the difference is the point. That diagram
+      // shades the trapezoid in this same document; this one shades the whole strip,
+      // trapezoid included, and the trapezoid's own dashed lines show THROUGH it. Two
+      // regions in one document under an identical wash, one inside the other, is how a
+      // reader comes away thinking the shaded thing is the marked thing. The lighter
+      // fill is the same one theThreeZones and aboveAndBelowTheDots use for "a zone".
+      fill: 'rgba(15,90,143,0.13)',
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// The map that replaced this document's ASCII schematic of one end zone.
+//
+// The old drawing carried the disclaimer "schematic, not to scale" — which was
+// honest, and was also the reason it was worth replacing. This is generated
+// from the coordinate table, so it IS to scale, and scripts/check_geometry.py
 // asserts that table against this document's own dimensions. The relationship the
 // ASCII was drawn to fix in the reader's head — how much rink sits behind the goal
 // line, how far the point is from the half-wall — is now measurable off the page
 // rather than asserted beside it.
 export const MAPS = [
   {
-    id: 'rink-map-full',
-    kind: 'rink',
-    owner: 'content/foundation/rink_map_and_glossary.md',
-    half: false,
-    labels: true,
-    width: 1100,
-    caption:
-      'A map of the whole sheet, drawn to scale, with the standard position vocabulary ' +
-      'marked on it. Two blue lines divide the ice into three zones: your defending zone, ' +
-      'the neutral zone in the middle, and the attacking zone. The red centre line and the ' +
-      'centre faceoff dot are in the middle; a goal line runs across each end, with the net ' +
-      'on it and a strip of live ice behind. Nine faceoff dots are shown — four in the ' +
-      'end zones with circles, four in the neutral zone without, and centre ice. The names ' +
-      'marked here are the ones used throughout, so this is the picture to come ' +
-      'back to when you hear “the half-wall” or “the point” and you ' +
-      'are not sure where that is. Which end you are attacking swaps every period, so ' +
-      '“defending” and “attacking” are relative to your team and not to the ice.',
-    describe:
-      'The full 200 by 85 foot rink seen from above, with every named position in the ' +
-      'vocabulary marked by a dot and a label, and leader lines where a label ' +
-      'has been moved clear of its neighbours.',
-  },
-  {
     id: 'rink-map-end-zone',
     kind: 'rink',
-    owner: 'content/foundation/rink_map_and_glossary.md',
+    owner: 'content/foundation/rink_map.md',
     half: true,
     labels: true,
     width: 1000,
+    // ⚠️ THE ORIENTATION SENTENCE IS THE FIRST THING A LISTENER HEARS, AND IT MUST
+    // MATCH `half: true`'s ACTUAL FRAME. `rinkSvg` builds a half viewBox of
+    // `-2 -44.5 104 89` — its own parameter doc says "attacking half only, CENTRE LINE
+    // to end boards" — so the left edge is two feet PAST centre ice, not the blue line.
+    // Against src/data/rink.json the centre red line is x 0, the blue line x 25, the
+    // goal line x 89 and the end boards x 100, which puts the blue line 27 of 104 units
+    // in: a quarter of the way across, not at the edge. The centre red line IS drawn
+    // (full width, 1 ft, PALETTE red) and `centre-ice` is one of the overlay labels, so
+    // naming it points at something the reader can see. This caption said "the blue line
+    // is at the left" and the prose at rink_map_and_glossary.md §5 said the same; both
+    // were wrong, and this diagram is borrowed into getting_started.md, whose readers
+    // cannot tell a blue line from a red one by looking. `endZoneMarkings` above — the
+    // other `half: true` map in §2 — already words it correctly; keep the two together.
     caption:
       'One end zone, drawn to scale, with the names used for the places in it. ' +
-      'The blue line is at the left and the end boards at the right. Reading in from the ' +
-      'line: the point, where defencemen stand; the tops of the circles; the half-wall, ' +
-      'meaning the boards level with the faceoff dot; the high slot and then the slot in ' +
-      'front of the net; the goalmouth and the crease; the corners; and the ice behind the ' +
-      'net, with the trapezoid marked on it. These are names for areas rather than exact ' +
-      'spots, and different coaches draw their boundaries slightly differently — the ' +
+      'The picture runs from the centre red line at the left to the end boards at the ' +
+      'right, so the blue line — where the end zone begins — crosses about a quarter of ' +
+      'the way in. Reading in from the blue line: the point, where defencemen stand; the ' +
+      'tops of the circles; the half-wall, meaning the boards level with the faceoff dot; ' +
+      'the high slot and then the slot in front of the net; the goalmouth and the crease; ' +
+      'the corners; and the ice behind the net, with the trapezoid marked on it. These ' +
+      'are names for areas rather than exact spots, and different coaches draw their ' +
+      'boundaries slightly differently — the ' +
       'point in particular is an area just inside the blue line, not the line itself.',
     describe:
-      'The attacking half of the rink seen from above: blue line at the left, end boards at ' +
-      'the right, two faceoff circles, the net on the goal line with the crease in front of ' +
+      'The attacking half of the rink seen from above, from the centre red line at the ' +
+      'left to the end boards at the right, with the blue line about a quarter of the way ' +
+      'in: two faceoff circles, the net on the goal line with the crease in front of ' +
       'it and the trapezoid behind. Each named area of the zone is marked with a dot and a label.',
   },
 ];
@@ -997,6 +1222,10 @@ export default [
   homePlate,
   aboveAndBelowTheDots,
   theThreeZones,
+  // §2's pair, kept adjacent and in the order §2 introduces them: the whole sheet
+  // first for orientation, then one half of it at twice the scale.
+  neutralZoneMap,
+  endZoneMarkings,
   ...MAPS,
 ];
 

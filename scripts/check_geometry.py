@@ -2,7 +2,7 @@
 """Check the rink coordinate table against the document that owns the dimensions.
 
 `site/src/data/rink.json` is a coordinate system for diagrams. Every number in it
-is owned by `content/foundation/rink_map_and_glossary.md`, and this asserts the two
+is owned by `content/foundation/rink_map.md`, and this asserts the two
 agree — so a diagram cannot quietly disagree with the corpus about where the blue
 line is.
 
@@ -30,7 +30,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TABLE = ROOT / "site" / "src" / "data" / "rink.json"
-OWNER = ROOT / "content" / "foundation" / "rink_map_and_glossary.md"
+OWNER = ROOT / "content" / "foundation" / "rink_map.md"
 
 # Dimensions the owning document states, and where to find them in its prose.
 # Each is (json path, regex capturing the number, human name).
@@ -387,7 +387,7 @@ def main() -> int:
             print(f"  {p}")
         return 1
     if not quiet:
-        print("the coordinate table agrees with rink_map_and_glossary.md.")
+        print("the coordinate table agrees with rink_map.md.")
     return 0
 
 

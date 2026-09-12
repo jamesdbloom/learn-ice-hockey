@@ -1,6 +1,6 @@
 # Ice Hockey Documentation Project
 
-A corpus of 37 documents teaching people to play ice hockey, plus an Astro site
+A corpus of 38 documents teaching people to play ice hockey, plus an Astro site
 and a text-to-speech pipeline that publish it.
 
 ---

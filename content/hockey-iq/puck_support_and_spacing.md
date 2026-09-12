@@ -7,7 +7,7 @@
 > **goalkeeper's restricted area / trapezoid** (Rules 1.8, 27.8, 63.2(viii)) and **icing**
 > (Rule 81). **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Playing Without the Puck](playing_without_the_puck.md) · [Time and Space](time_and_space.md) · [Breakouts](../systems/breakouts.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Playing Without the Puck](playing_without_the_puck.md) · [Time and Space](time_and_space.md) · [Breakouts](../systems/breakouts.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 
@@ -689,7 +689,7 @@ document, that is named too.*
 
 ---
 
-*A note on verification:* the tactical principles here are drawn from published coaching material and are widely taught, but **there is no governing body that publishes support distances or spacing standards** — the figures given as rules of thumb are coaching guidance and vary by coach, level and ice size. The one sourced distance is Larry Bruyere's "8-to-10-foot-or-less pass" as the basis of small-area possession play. The NHL rink width of 85 feet is verified against **NHL Rule 1.2**: *"The official size of the rink shall be two hundred feet (200') long and eighty-five feet (85') wide."* The international sheet is verified against **IIHF Rule 1.2**: *"The official size of the rink shall be 60m long and 26m to 30m wide"* — a range whose narrow end is essentially NHL width. See [Rink Map and Glossary](../foundation/rink_map_and_glossary.md). Offside, icing and trapezoid statements are cited to the rulebook inline.
+*A note on verification:* the tactical principles here are drawn from published coaching material and are widely taught, but **there is no governing body that publishes support distances or spacing standards** — the figures given as rules of thumb are coaching guidance and vary by coach, level and ice size. The one sourced distance is Larry Bruyere's "8-to-10-foot-or-less pass" as the basis of small-area possession play. The NHL rink width of 85 feet is verified against **NHL Rule 1.2**: *"The official size of the rink shall be two hundred feet (200') long and eighty-five feet (85') wide."* The international sheet is verified against **IIHF Rule 1.2**: *"The official size of the rink shall be 60m long and 26m to 30m wide"* — a range whose narrow end is essentially NHL width. See [Rink Map](../foundation/rink_map.md). Offside, icing and trapezoid statements are cited to the rulebook inline.
 
 ---
 

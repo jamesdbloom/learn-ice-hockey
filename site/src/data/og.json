@@ -29,11 +29,17 @@
     "height": 630,
     "alt": "Reading Ice Hockey Diagrams"
   },
-  "/foundation/rink_map_and_glossary/": {
-    "image": "/og/foundation__rink_map_and_glossary.png",
+  "/foundation/rink_map/": {
+    "image": "/og/foundation__rink_map.png",
     "width": 1200,
     "height": 630,
-    "alt": "Rink Map and Glossary"
+    "alt": "Rink Map"
+  },
+  "/foundation/language_and_glossary/": {
+    "image": "/og/foundation__language_and_glossary.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Language and Glossary"
   },
   "/foundation/rules_primer/": {
     "image": "/og/foundation__rules_primer.png",

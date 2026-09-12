@@ -2,7 +2,7 @@
   "$comment": [
     "The rink as coordinates, and the corpus's position vocabulary expressed against it.",
     "",
-    "OWNERSHIP. Every dimension here is owned by content/foundation/rink_map_and_glossary.md.",
+    "OWNERSHIP. Every dimension here is owned by content/foundation/rink_map.md.",
     "This file does not get to disagree with it: scripts/check_geometry.py reads the numbers",
     "out of that document and fails if they diverge. If a dimension is wrong, fix the owner",
     "first and this file second — never the other way round.",
@@ -19,7 +19,7 @@
     "in its defensive-line sense — is deliberately absent. Those are not points on a rink."
   ],
   "units": "ft",
-  "source": "content/foundation/rink_map_and_glossary.md",
+  "source": "content/foundation/rink_map.md",
   "book": "NHL Official Rules 2025-2026",
   "sheet": {
     "length": 200,

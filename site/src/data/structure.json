@@ -17,7 +17,8 @@
       "blurb": "How to read the pictures, what everything is called, what is legal, and the words you shout. The canonical references the rest of the corpus links back to.",
       "docs": [
         "reading-diagrams/reading_ice_hockey_diagrams",
-        "foundation/rink_map_and_glossary",
+        "foundation/rink_map",
+        "foundation/language_and_glossary",
         "foundation/rules_primer",
         "foundation/uk_rules",
         "foundation/on_ice_communication"

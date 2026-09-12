@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Game Management](../systems/game_management.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Mental Game](../off-the-ice/mental_game.md) · [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Breakouts](../systems/breakouts.md) · [Zone Entries](../systems/zone_entries.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Game Management](../systems/game_management.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Mental Game](../off-the-ice/mental_game.md) · [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Breakouts](../systems/breakouts.md) · [Zone Entries](../systems/zone_entries.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Overview
 
@@ -156,7 +156,7 @@ Action: Find out where your coach draws the line on a D-to-D exchange
 
 **What to do instead.** Take it behind the net. It is a longer route by maybe eight feet, it takes half a second longer, and a failure there produces a battle behind the goal line rather than a shot from twenty feet.
 
-*Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, far enough out that an interception is not a slot chance — [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) has that geometry. Know where your coach draws the line.
+*Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, far enough out that an interception is not a slot chance — [Rink Map](../foundation/rink_map.md) has that geometry. Know where your coach draws the line.
 
 ### 2. Never make a blind backhand pass up the middle of your own zone
 

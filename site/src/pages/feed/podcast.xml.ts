@@ -146,7 +146,12 @@ export const GET: APIRoute = ({ site }) => {
         '    <item>',
         `      <title>${xml(ep.title)}</title>`,
         // Stable for the life of the episode: the document id, not the file.
-        `      <guid isPermaLink="false">${xml(`learn-ice-hockey:${ep.doc_id}`)}</guid>`,
+        // An episode may pin its guid explicitly. A guid derived from doc_id changes
+        // when a document is renamed, and a changed guid makes every podcast client
+        // drop the old episode and re-download it as new — subscribers lose their
+        // place on something already published. `foundation/rink_map_and_glossary`
+        // became `foundation/rink_map`; the pinned guid keeps the published identity.
+        `      <guid isPermaLink="false">${xml(ep.guid ?? `learn-ice-hockey:${ep.doc_id}`)}</guid>`,
         `      <link>${xml(page)}</link>`,
         `      <description>${cdata(
           `<p>${html(doc.description)}</p>` +

@@ -20,8 +20,9 @@
       "audio": "/audio/reading-diagrams/reading_ice_hockey_diagrams.m4a"
     },
     {
-      "doc_id": "foundation/rink_map_and_glossary",
-      "title": "Rink Map and Glossary",
+      "guid": "learn-ice-hockey:foundation/rink_map_and_glossary",
+      "doc_id": "foundation/rink_map",
+      "title": "Rink Map",
       "section": "Foundation",
       "track": 3,
       "bytes": 30298113,

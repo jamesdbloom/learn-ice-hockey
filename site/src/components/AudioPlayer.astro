@@ -2,13 +2,28 @@
 import { AUDIO_ENABLED, AUDIO_BASE } from '../consts';
 
 interface Props {
-  /** Collection id, e.g. `faceoffs` or `positions/center`. */
+  /** Collection id, e.g. `faceoffs` or `positions/center`. Keys the saved position. */
   id: string;
   title: string;
+  /**
+   * The episode's URL, from podcast.json. REQUIRED, and deliberately not derived
+   * from `id`.
+   *
+   * ⚠️ It used to be `${AUDIO_BASE}/${id}.m4a`, which held only while every
+   * collection id matched its encoded filename. Renaming a document broke that
+   * silently: the page offered `/audio/foundation/rink_map.m4a` while the file on
+   * the origin, the feed, the m3u playlists and the downloads page all still said
+   * `rink_map_and_glossary.m4a`. Nothing failed at build time — check-links.mjs
+   * skips every /audio/ href on purpose, because the audio is uploaded out of band.
+   * A reader found a dead player.
+   *
+   * Taking the URL from the manifest makes the manifest the single source of truth,
+   * so the page cannot disagree with the feed.
+   */
+  src: string;
 }
 
-const { id, title } = Astro.props;
-const src = `${AUDIO_BASE}/${id}.m4a`;
+const { id, title, src } = Astro.props;
 const storageKey = `audio-position:${id}`;
 ---
 

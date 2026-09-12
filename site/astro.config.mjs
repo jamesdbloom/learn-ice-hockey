@@ -43,6 +43,7 @@ export default defineConfig({
   */
   redirects: {
     '/reading-diagrams/': '/foundation/',
+    '/foundation/rink_map_and_glossary/': '/foundation/rink_map/',
   },
 
   markdown: {

@@ -15,7 +15,7 @@
 > [Body Contact and Battles](../technique/body_contact_and_battles.md) before acting on any
 > route that finishes on a player.
 >
-> **Related:** [Rink Map and Glossary](../foundation/rink_map_and_glossary.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Getting Started](../getting-started/getting_started.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Special Teams](../systems/special_teams.md)
+> **Related:** [Rink Map](../foundation/rink_map.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Getting Started](../getting-started/getting_started.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Special Teams](../systems/special_teams.md)
 
 ## Overview
 
@@ -99,7 +99,7 @@ a borrowed symbol, and four things are worth knowing about it.
 
 First, **the tint is not paint on the ice unless the caption says it is.** The slot,
 the house and the high slot are names for regions rather than markings, and
-[Rink Map and Glossary](../foundation/rink_map_and_glossary.md) is where their edges
+[Rink Map](../foundation/rink_map.md) is where their edges
 are defined. The edge is drawn thin and broken on purpose so that it cannot be taken
 for a line on the rink. The trapezoid is the exception — that one really is painted,
 and its caption says so.

@@ -111,10 +111,10 @@ wrong costs a second narration run. See the sequencing note in §4.
 > | Phase | State | Evidence |
 > |---|---|---|
 > | 0 · Close the review | ✅ **Done, and overshot** | Targeted round 13; reached **round 22**. Records in `project/reviews/` |
-> | 1 · Repository | ✅ Done | Public at `jamesdbloom/learn-ice-hockey`; 37 documents in 8 sections; licences; agents and hooks in `.claude/` |
+> | 1 · Repository | ✅ Done | Public at `jamesdbloom/learn-ice-hockey`; 38 documents in 8 sections; licences; agents and hooks in `.claude/` |
 > | 2 · Infrastructure | ✅ Done | S3 + CloudFront, Terraform, GitHub OIDC — no long-lived keys |
-> | 3 · Website | ✅ Done | Live at **learn-ice-hockey.com**, 39 pages, Pagefind search, CI deploys on push to `main` |
-> | 4 · Speech transform | ✅ Done | `md_to_speech.py`, all 36 documents, 83 self-test assertions, **0 unrecognised constructs** after round 22 |
+> | 3 · Website | ✅ Done | Live at **learn-ice-hockey.com**, 51 pages, Pagefind search, CI deploys on push to `main` |
+> | 4 · Speech transform | ✅ Done | `md_to_speech.py`, all 38 documents, 83 self-test assertions, **0 unrecognised constructs** after round 22 |
 > | 4b · Section kinds | ⏸ **Suspended** | Gated Phase 5 only; 0 documents tagged; D13 still open |
 > | 5 · Narration | ⏸ **Parked on quality** | Pilot ran, output rejected. §7.2 |
 > | 6 · Podcasts | 🟡 **Partly — 5 episodes exist** | Generated pre-repo from an older prompt. The `notebooklm-episode` skill now exists but **has never been run** |
