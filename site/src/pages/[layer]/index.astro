@@ -82,6 +82,20 @@ const count = layer.docs.length;
         }
       </div>
 
+      {/*
+        Only a section whose pages share a structure worth explaining carries
+        `layout` in structure.json, and today only `positions` does. It sits below
+        the cards rather than above them because it describes the documents the
+        reader has just seen listed, and it is rendered as plain paragraphs — the
+        field holds prose, not markup, so nothing here parses or trusts its content.
+      */}
+      {layer.layout && (
+        <div class="hub-layout">
+          <h2 class="hub-heading">How these pages are laid out</h2>
+          {layer.layout.map((para) => <p class="hub-blurb">{para}</p>)}
+        </div>
+      )}
+
       <CiteThis title={layer.title} />
     </article>
 

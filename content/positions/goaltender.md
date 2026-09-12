@@ -29,32 +29,6 @@ If you have not started playing yet, this is the cheapest route onto the ice: go
 
 ---
 
-## How This Document Maps onto the Other Position Documents
-
-[Center](center.md), [Defender](defender.md) and [Winger](winger.md) are all built on the same skeleton: three zones — **Defensive**, **Neutral**, **Offensive** — and inside each zone four situations: *Carrying the Puck in Free Space*, *Carrying the Puck Under Pressure*, *Pressuring an Opponent with the Puck*, and *Without the Puck*. Each finishes with an **Other Situations** section.
-
-A goaltender does not fit that grid, and forcing it would teach you something false. You spend the whole game in one zone, you carry the puck essentially never, and you pressure nobody. So this document is organised by skill instead. Here is the translation, so that a reader moving between the four documents does not lose their place:
-
-| The skaters' framing | Where the equivalent lives here |
-|---|---|
-| **Defensive zone — without the puck** | Almost the whole document: *Stance and Depth*, *Angles and Positioning*, *Movement*, *Save Selection*, *Rebound Control*, *Tracking the Puck*, *Screens, Tips and Traffic*. |
-| **Defensive zone — carrying the puck, free space** | *Playing the Puck* — retrievals behind your net, the trapezoid, the ranked list of safe outlets, the delay-of-game minor for putting the puck out of the rink, and your part in icing. |
-| **Defensive zone — carrying the puck, under pressure** | *Playing the Puck → The discipline of not playing it*, plus *Freezing the puck* under *Rebound Control*. Your equivalent of a defenceman's "get it off the glass" is a freeze or a clear. |
-| **Defensive zone — pressuring an opponent** | You almost never do this. The two exceptions are the poke check (*Save Selection*) and coming out to smother a loose puck (*Playing the Puck*). |
-| **Neutral zone** | Barely applies. You may not participate in the play beyond the centre red line, and **all four books penalise it** — see below. Your job here is watching for the shorthanded break. |
-| **Offensive zone** | Only when your net is empty — see *6-on-5 with your net empty*. |
-| **Other Situations** | Same job as the skaters': *Situational Goaltending* — breakaways, penalty shots, 2-on-1s, 3-on-2s, shootouts, special teams, the empty net, and what to do when a fight breaks out. |
-
-Three of those rows carry more than a table has room for.
-
-- **Playing your own zone without the puck is your version of a skater's "finding space"** — except the space you are finding is the shooting angle rather than a patch of ice.
-- **You have no real equivalent of pressuring an opponent, and the nearest thing to one is your voice.** *Communicating with Your Defence* is where it lives: you do not pressure anybody yourself, you direct the four players who can.
-- **The neutral-zone prohibition is a penalty in every book, and the books do not measure it the same way.** A minor is assessed under **NHL Rule 27.7**, **IIHF Rule 27.6**, **USA Hockey Rule 407(c)** and **Hockey Canada Rule 4.13(c)** — the last of those penalised as interference under its own Rule 8.3(a). The NHL's and the IIHF's determining factor is the position of the *puck*, and both books write that into the playing rule. **USA Hockey's and Hockey Canada's is the position of your *skates* — and neither writes it at the rule number just given.** USA Hockey's skates test is in the separate *Casebook* volume, at **Rule 407(c), Situation 13**; Hockey Canada's is in a different playing rule, **Rule 8.3(a)(ii)**, and restated in **Interpretation 2 to Rule 4.13(c)**. The full split is under *The trapezoid — the rule that defines what you can do*, and your shorthanded-break job is under *Power play*, in *Situational Goaltending*.
-
-Two sections have no skater equivalent at all and are specific to this position: *Goaltender Interference, From Your Side of It* and *What a Goalie Needs From Their Skaters*.
-
----
-
 ## A Note on Language
 
 ```facts

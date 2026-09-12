@@ -28,6 +28,11 @@
       "title": "Positions",
       "tagline": "Where do I stand and what is my job?",
       "blurb": "The four positions, plus the bridge between them. The three skater documents share one skeleton \u2014 by zone, then by situation within each zone. The goaltender document deliberately does not.",
+      "layout": [
+        "Center, Winger and Defender share one skeleton. Each works through the three zones \u2014 defensive, neutral, offensive \u2014 and inside each zone through the same four situations: carrying the puck in free space, carrying it under pressure, pressuring the opponent who has it, and playing without it. Each closes with an Other Situations section. Read across the three and a heading means the same thing in all of them, so what changes between the pages is the answer rather than the question.",
+        "Goaltender deliberately does not use that grid, because forcing it would teach something false: a goaltender spends the game in one zone, carries the puck rarely, and pressures nobody. It is organised by skill instead \u2014 stance and depth, angles and positioning, movement, save selection, rebound control, tracking the puck, and screens and traffic \u2014 and then by the jobs that are yours alone: playing the puck, communicating with your defence, and situational goaltending for breakaways, penalty shots, odd-man rushes and the empty net. Two of its sections have no skater equivalent at all, goaltender interference from your side of it and what a goalie needs from their skaters.",
+        "Switching Positions is the bridge between them, and is the page to start from if you are moving."
+      ],
       "docs": [
         "positions/center",
         "positions/winger",

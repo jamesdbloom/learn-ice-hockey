@@ -30,6 +30,13 @@ export interface Layer {
   title: string;
   tagline: string;
   blurb: string;
+  /* Optional. A section whose pages share a structure worth explaining carries it
+     here, as one paragraph per entry, and the hub renders them under the card grid.
+     Only `positions` has one: its three skater documents share a zone-by-situation
+     grid and the goaltender document deliberately does not, which a reader choosing
+     between them needs before they open one. Absent everywhere else, so the hub
+     must render nothing at all when it is missing. */
+  layout?: string[];
   docs: DocEntry[];
 }
 
@@ -41,6 +48,7 @@ export const LAYERS: Layer[] = structure.layers.map((layer) => ({
   title: layer.title,
   tagline: layer.tagline,
   blurb: layer.blurb,
+  ...('layout' in layer ? { layout: (layer as { layout: string[] }).layout } : {}),
   docs: layer.docs.map((id) => {
     const m = docsMeta[id];
     if (!m) {
