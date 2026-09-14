@@ -112,6 +112,108 @@ source of truth, owner, timestamp and commit, interpretation, and the decision
 the metric informs. Historical figures are context only and must not drive an
 implementation decision without a fresh measurement.
 
+## ⚠️ Three owner instructions given 14 September 2026
+
+**Given directly by the owner, after the first release wave. They override anything below that
+disagrees with them, and the third one reverses the style guide.**
+
+### 1. Most pages open with the high-level principle that frames them
+
+**A page should state, at the top, the principle its content sits inside** — so a reader has the
+framework before the detail, and can judge what follows against it rather than accumulating it.
+
+This is **not** the `## Key focus` layer and must not be merged with it. Key focus is *what to do*.
+The principle is *the idea that makes the page's content make sense* — the thing that lets a reader
+transfer it to a situation the page does not cover. A page may need both, and where it does the
+principle comes first, because it frames the actions rather than summarising them.
+
+- **Draw it from `content/foundation/core_principles.md`** where one of the seven fits, and link to
+  it. Where none fits, say so rather than inventing one — ⚠️ **the index's own rejected-candidate log
+  is longer than its accepted list, and that was the correct outcome.**
+- ⚠️ **A principle at the top of a page is a claim in the most prominent position in the document,
+  voiced, and often read alone.** It carries the same burden as any other claim: scope, owner, and
+  the qualification its owner carries. **The cardinal rule applies with more force here, not less** —
+  a page-opening principle is the single easiest place in this corpus to present a coaching choice
+  as a law of hockey.
+- **Not every page.** Reference material — the glossary, the rules primer's comparison sections —
+  may have no framing principle, and forcing one produces a slogan. Say which pages have none and
+  why.
+
+### 2. Reduce the text. The target is the citation apparatus and low-level rule detail
+
+**Cut length by keeping the important points and dropping low-level detail, especially detail about
+specific rules.** This sharpens a rule the style guide already has — *"Prefer one sentence of
+consequence to a paragraph of citation… Where four books agree, say so once and name one… That is
+provenance theatre."*
+
+⚠️ **This round measured that rule being broken, repeatedly, and the measurements are the brief:**
+
+| Measured 14 September | |
+|---|---|
+| `rules_primer.md` `## Key focus` | **407 words**, of which the first paragraph was **~240 words of bold citation apparatus** — the full USA Hockey classification list, a verbatim quotation, 604(b), Hockey Canada's scope and the British answer, **before reaching the layer's second question** |
+| `defensive_zone_coverage.md` | **+1,310 characters** and **four verbatim book quotations** for a rule its own sentence calls universal — **inside a document about defensive-zone coverage** |
+| `breakouts.md` | **+1,716 characters**, the same two rule sentences quoted **twice each** |
+| `neutral_zone_systems.md` | **+462 characters, ZERO verbatim quotations** — *"conditional and not universal… see Special Teams, which covers the conditions"* |
+| `rules_primer.md` Key Takeaway 9 | **1,256 words in one list item — 18× the corpus median of 70, and 6.8 screen-heights at 375px** |
+| `risk_management.md` `the-risk-map` figcaption | **634 words — 1,404px against a 279px figure it captions, 5× the height of the picture** |
+
+**`neutral_zone_systems.md` is the standard. Two reviewers named it independently.**
+
+⚠️ **AND THE CONSTRAINT THAT MAKES THIS HARD, because ignoring it produced this round's worst
+defects.** Both pilots came out of the first wave **LONGER**, and the reason was not carelessness:
+
+- **A required condition beats a length target.** A `safety-reviewer` pass blocked the release because
+  a Key focus taught how checks are policed without saying whether the reader may check at all. **The
+  repair grew that layer from 253 to 369 words and that was correct.**
+- ⚠️ **Compression is how this corpus's worst defects have entered.** Round 38's criticals came from
+  compressing under the guise of repair — *"a compression deleted a corrective instruction and an
+  honest disclosure."* This round, an agent measured every Common Mistakes bullet in `rules_primer.md`
+  for duplication and found the overlap was **scope qualifiers, not prose**, so shortening meant
+  deleting a book name, a division carve-out or a disclosure. **It left them long and said so.**
+
+**So the rule is: cut CITATION APPARATUS and RULE-LEVEL DETAIL, never a qualifier, a scope, a
+counterweight or an honest disclosure.** The test for any cut: *does a reader who acts on what
+remains do anything differently, or differently wrong?* If the answer is yes, it was not apparatus.
+**Where a document cannot be shortened without losing a qualifier, leave it long and record why** —
+that is a result, and this round produced several.
+
+### 3. ⚠️ A diagram FOLLOWS the content it illustrates — this REVERSES the style guide
+
+**Put the diagram after the prose that discusses it, in most cases.** A diagram that arrives first
+arrives out of context: the reader has nothing to interpret it against and has to hold it in mind
+until the explanation catches up.
+
+**The exception, and it is a real one:** an **overview or summary diagram** that helps a reader
+understand what follows **by seeing it first** — an orientation map, a notation key, a whole-ice
+frame that the text then works through. **Those go first, because their job is to give the reader
+the frame rather than to illustrate a point already made.**
+
+⚠️ **This reverses `content_style_guide.md:1417`**, which currently records the opposite as the
+owner's instruction — *"diagrams should be at the start of sections"*, on the reasoning that a
+diagram arriving after the prose arrives too late. **The style guide must be updated or it becomes
+false**, and the update must carry the reason, not just the new rule.
+
+⚠️ **It also GENERALISES an owner instruction already on record.** `OPEN_ITEMS.md` carries a 12
+September instruction that on the **positions pages** a diagram goes at the end of its section, with
+the reason: those sections are named by zone-and-situation — a *job* — while the caption draws one
+*instant* inside it, so a picture arriving first asserts that instant **is** the job. **That reasoning
+was never specific to positions pages, and this instruction says so.**
+
+**What this costs, measured, so nobody rediscovers it:**
+
+- **Current state: 252 markers sit before a facts block, 2 after.** This is a large corpus-wide move,
+  not a tidy-up.
+- ⚠️ **Never insert a marker between items of a real ordered list** — it renumbers the list in the audio.
+- ⚠️ **A caption that refers BACKWARD to prose is now the common case, and that is the point** — but a
+  caption that refers *forward* to prose the move would strand is a defect. **Read the caption in its
+  new position before moving the marker.**
+- **Where two diagrams are a deliberate before/after pair, move BOTH together.**
+- ⚠️ **A caption is voiced, and moving a marker moves the caption in the audio too.** Re-render and
+  read the chunk; a caption that made sense arriving before its prose may not make sense arriving
+  after it.
+
+---
+
 ## Target information architecture
 
 Implement the following conceptual layers. Exact component names may differ, but
