@@ -1350,3 +1350,23 @@ an *"ask your league"* instruction, which is the safe act. ⚠️ **But a reader
 closed list that their classification is fine has no reason to ask.** The `faceoffs.md` one is the worst
 because it is voiced alone. **Read each before fixing — a bare count is not the defect shape, and that is
 how the census produced four candidates of which only one was ours.**
+
+### Two unowned superlatives found while repairing their neighbours
+
+| | |
+|---|---|
+| ⬜ | ⚠️ **`technique/body_contact_and_battles.md:1001`, voiced: *"The commonest amateur error in the corner is two teammates fighting the same opponent for the same puck while a third opponent skates away with it."*** Same defect class as the one repaired thirty lines below it — **no owner, no qualifier, no source.** The agent left it deliberately: *"fixing it would be exactly the sweep the brief forbids, and I have not traced it to an owner."* ⚠️ **Note the pattern: a superlative was repaired at `:1024` and `:1030` and an identical one thirty lines away was NOT, because one was named in a brief and the other was not.** A census of `commonest`/`most common` in voiced layers is the row this suggests. |
+| ⬜ | **`hockey-iq/puck_support_and_spacing.md`'s replacement hedge — *"the corner is one of the places that ambiguity lives"*, and its sibling *"one of the off-puck failures coaches name most often"* — are the AGENTS' OWN wording**, written to replace superlatives. **Neither is sourced.** Both authors flagged their own: *"a reviewer should ask whether it needs one."* ⚠️ **A hedge written to replace an overclaim is still new unreviewed text making a claim about coaching consensus.** |
+
+### ⚠️ A diagram caption went stale against its own document TWICE in one day
+
+`site/src/diagrams/puck_support_and_spacing.mjs` carries a claim the document owns. The document was
+repaired in the morning and the caption still carried the superseded wording — found only because an agent
+noticed the renderer puts the caption and the repaired sentence **in the same spoken chunk**, so a listener
+heard the false form and the correction back to back. The coordinator fixed it. **The document was then
+rescoped AGAIN in the afternoon and the caption went stale a second time**, found the same way.
+
+| | |
+|---|---|
+| ⬜ | **The style guide already says to grep `site/src/diagrams/` when repairing a claim in prose. It was not applied, twice, on the same claim.** Whatever mechanism is added, the failure is not ignorance of the rule. |
+| ⬜ | ⚠️ **`check_absolutes.py` refuses to certify the caption layer when a `.mjs` is newer than the build product — that worked, and an agent hit it today.** What nothing detects is a caption that is **stale against its own document's prose** while the build is perfectly fresh. **That is a different check and it does not exist.** |
