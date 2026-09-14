@@ -1386,3 +1386,35 @@ fails identically.** If localhost and example.com both fail, it is the extension
 |---|---|
 | ⬜ | **Put the one-line diagnostic in any `site-reviewer` brief**: *try `example.com`; if that fails too, the extension needs re-authenticating — stop and say so.* ⚠️ **It cost a whole review pass today, and gate condition C10 went unmet for a session because of it.** |
 | ⬜ | **A blocked browser means C10 cannot be met.** Do not let static analysis stand in for it — the blocked reviewer was right to refuse, and said so: *"I would not clear C10. Not because I found a critical — because the dimension was not exercised."* |
+
+### ⚠️⚠️ A NOTE READ ALONE SAID THE WRONG THING, AND FIVE AGENTS VERIFIED IT INDEPENDENTLY
+
+**14 September 2026. The best available explanation of how one error entered the corpus, propagated to nine
+documents, and survived five separate re-derivations from primary text.**
+
+The claim: *"the shorthanded icing exemption ends the instant the penalty expires."* It is **false on a
+5-on-3** — when the first penalty expires you are 4-on-5, still below the opponent's numerical strength,
+still exempt in all five books.
+
+⚠️ **But Hockey Canada 6.7(b) Note 1, read entirely alone, says exactly the wrong thing:**
+
+> *"A team will no longer be considered shorthanded once the penalty time expires, irrespective of whether
+> or not the penalized player has left the Penalty Bench."*
+
+**Flat. No head-count. No qualification.** It is completed only by two other limbs in the same book — **6.7(b)
+itself**, the rule the Note annotates, which carries the head-count test (*"below the numerical strength of
+the opposing team at the instant the puck is shot"*), and **Interpretation 3**, whose *"on the ice, **for the
+purpose of equal numbers (or not)**"* is the parenthetical that does the work.
+
+⚠️ **The corpus cited "Hockey Canada 6.7(b) Note 1" BY NAME as its support. FIVE agents re-derived that
+citation from primary text today. All five confirmed it. All five were right about the Note and wrong about
+the rule — because none read the Note against the rule it annotates.**
+
+**The defect was not laziness and it was not a bad grep. Every one of those verifications was competent.**
+
+| | |
+|---|---|
+| ⬜ | ⚠️ **A NOTE, AN INTERPRETATION, A CASEBOOK SITUATION OR A GLOSSARY ENTRY IS NOT A RULE — IT ANNOTATES ONE. Verifying it in isolation verifies nothing.** Owner: `review_process.md`'s G-series, beside the existing *"re-derive from the book"* instruction, which this defeats as written: the agents DID re-derive from the book. |
+| ⬜ | **The general form: when a citation is to a sub-element — Note, Interpretation, Situation, glossary — the verification is not complete until the PARENT has been read.** ⚠️ **And the failure is silent: the sub-element is quotable, verbatim, and says what the corpus says it says.** |
+| ⬜ | **Two collateral mis-citations found by the same pass, both in the corpus's rules OWNER**: `rules_primer.md` cites **CARHA's Note 2 to Rule 65(a)** twice for an expiry test. ⚠️ **CARHA has no expiry clause at all** — positive control: `"instant the penalty"` returns **zero** in a flattened `carha.txt` while `"instant the puck is shot"` returns the **65(d)** hit. **65(d) is the rule wanted, and it states the head-count test more cleanly than any other book has it.** |
+| ⬜ | **An uncited authority that settles two questions at once.** The **IIHF glossary** definition — *"numerical strength is affected when one team has a lower number of Players on the ice than five skaters and one goalkeeper **due to one or more penalties that they are serving**"* — appears **nowhere in `content/`**. It settles the 5-on-3 case and the pulled-goalie case, for the British layer, in one sentence. Where the NHL's equivalent is an inference, this is a statement. |
