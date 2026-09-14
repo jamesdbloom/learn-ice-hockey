@@ -216,18 +216,8 @@ const theSlot = {
   width: 900,
 
   caption:
-    'The slot is the ice directly in front of the net, between the two faceoff circles, ' +
-    'running from the top of the circles down to the goalmouth — the shaded band here. ' +
-    'It is where most goals are scored from — over a three-year five-on-five sample, ' +
-    'close to half of all NHL goals came from the inner slot alone, on Sportlogiq tracking ' +
-    'that is not public and cannot be re-derived — which is why ' +
-    'defensive-zone coverage comes down to who is standing in it and offensive-zone play ' +
-    'comes down to getting a puck and a body there at the same time. ' +
-    'Nothing on a rink marks the slot out: its edges are read off the faceoff circles and ' +
-    'the crease, which are painted, but the region itself is not. ' +
-    'It is layered, and the layers have different jobs — the high slot from the dots up to ' +
-    'the top of the circles, the low slot from the dots down, and the goalmouth at the ' +
-    'crease — each of which is drawn separately.',
+    'The slot: the ice in front of the net, between the faceoff circles, from the top of ' +
+    'the circles down to the goalmouth — shaded here; not painted.',
 
   describe:
     'The attacking half of the rink, the net at the right. A shaded rectangle runs down ' +
@@ -265,17 +255,8 @@ const theHighSlot = {
   width: 900,
 
   caption:
-    'The high slot is the upper layer of the slot — from the level of the faceoff dots up ' +
-    'to the top of the circles, still between the two circles. ' +
-    'This is the shooting layer: a player left unmarked here gets a clean look with time to ' +
-    'pick a corner, and a puck arriving from the half-wall is a one-timer. ' +
-    'Who covers it is a coaching choice rather than a rule — in the low zone collapse (zone) ' +
-    'system assumed here as the default it belongs to the centre, or to the ' +
-    'weak-side winger collapsing down when the centre goes to help in the corner, while ' +
-    'under man-on-man nobody holds the area at all and you go with your check wherever they ' +
-    'go — so find out which system your team plays. ' +
-    'Like the rest of the slot it is not painted on the ice; the circles and dots that bound ' +
-    'it are.',
+    'The high slot: from the faceoff dots up to the top of the circles, between the two ' +
+    'circles — shaded here; not painted, though the dots and circles are.',
 
   describe:
     'The attacking half of the rink, the net at the right. A shaded rectangle occupies the ' +
@@ -310,17 +291,8 @@ const theLowSlot = {
   width: 900,
 
   caption:
-    'The low slot is the lower layer of the slot — from the faceoff dots down toward the ' +
-    'goalmouth, between the circles and outside the crease. ' +
-    'This is where tips, rebounds and screen position happen, which is why defenders cannot ' +
-    'let anyone stand unmarked in it and why a net-front player fights for it. ' +
-    'The scoring evidence points here more heavily than anywhere else on the ice — but what ' +
-    'has been counted is a share of goals rather than a conversion rate for this layer on ' +
-    'its own, so treat “highest-percentage ice” as the shape those figures agree on rather ' +
-    'than as a measured ranking of this layer against every other one. ' +
-    'It is not a marking: the shading stops at the front edge of the crease and at the inner ' +
-    'edges of the two faceoff circles, and those are the painted things a player actually ' +
-    'reads it off.',
+    'The low slot: from the faceoff dots down to the goalmouth, outside the crease — ' +
+    'shaded here; not painted, but its edges follow real markings.',
 
   describe:
     'The attacking half of the rink, the net at the right. A shaded rectangle occupies the ' +
@@ -354,23 +326,8 @@ const theGoalmouth = {
   width: 900,
 
   caption:
-    'The goalmouth is the immediate front of the net, at the edge of the crease — the small ' +
-    'shaded box here, which sits over the light blue paint and is a great deal smaller than ' +
-    'the low slot above it. ' +
-    'It is where tap-ins and jam plays happen. ' +
-    'It is a different job from the slot, one layer apart, and getting the two mixed up is one ' +
-    'of the most common causes of a blown assignment — coaching observation rather than a ' +
-    'counted ranking. ' +
-    'Who owns it is a coaching choice rather than a law: in the low zone collapse (zone) ' +
-    'coverage assumed here as the default the weak-side defenceman is responsible for it and ' +
-    'does not leave it, under man-on-man it belongs to whoever’s check went there, and under ' +
-    'a hybrid — man-on-man below the dots, zone above — to whichever of the low three is ' +
-    'matched to the net-front forward. A collapsing ' +
-    'box is a state rather than a system — what a low zone collapse turns into under maximum ' +
-    'pressure — and in it both defencemen are inside together, plus whoever else is in there. ' +
-    'So find out which system your team plays. ' +
-    'The crease itself is the goaltender’s space and the shading is not an invitation to ' +
-    'stand in it: the instruction is to work just outside the paint, not on its edge and not in it — three of the four books count the red line as crease.',
+    'The goalmouth: the immediate front of the net, at the edge of the crease — a small ' +
+    'shaded box here, much smaller than the low slot.',
 
   describe:
     'The attacking half of the rink, the net at the right. A small shaded box sits directly ' +
@@ -406,19 +363,8 @@ const pointAndHalfWall = {
   width: 900,
 
   caption:
-    'Two spots beginners routinely conflate, drawn together so the distance between them is ' +
-    'visible. ' +
-    'The point is the area just inside the blue line toward each set of boards, where the ' +
-    'defencemen set up in the offensive zone — there is a strong-side point and a weak-side ' +
-    'point, and it is an area rather than the blue line itself. ' +
-    'The half-wall is the boards level with the faceoff dot, between the corner and the ' +
-    'point, and it is where wingers live in offensive-zone possession, because from there ' +
-    'the point, the slot, the corner and the net front are all available. ' +
-    'They are not interchangeable: a defenceman who drifts down to the half-wall has ' +
-    'abandoned the blue line. ' +
-    'Neither is painted on the ice, the four players are drawn only to show where the two ' +
-    'spots are and not as anybody’s formation, and only the right-hand pair is labelled — ' +
-    'there is one of each on both sides.',
+    'The point and the half-wall: two spots beginners conflate. Defencemen stand at the ' +
+    'point, wingers at the half-wall — placed only to mark the spots, not as a formation.',
 
   describe:
     'The attacking half of the rink, the net at the right. Two defencemen stand just inside ' +
@@ -451,63 +397,8 @@ const theTrapezoid = {
   width: 900,
 
   caption:
-    'The trapezoid — the goalkeeper’s restricted area — is the marked area behind the net ' +
-    'inside which the goaltender is allowed to play the puck: 22 ft wide along the goal line, ' +
-    'widening to 28 ft at the end boards, and 11 ft deep on an NHL sheet. ' +
-    // ⚠️ NOT "unlike the house, the slot and the other named regions", which this caption
-    // carried until it was read in its OTHER THREE HOSTS. That phrase assumes the reader has
-    // just met the house and the slot, which is true only in rink_map_and_glossary.md. In
-    // rules_primer.md, how_to_watch_hockey.md and goaltender.md it points at nothing.
-    'It really is painted, in red — most of the rink’s named regions are not. Playing the ' +
-    'puck behind the goal line outside it is a two-minute minor for delay of game — the ' +
-    // ⚠️ NHL 27.8 AND 63.2(viii) BOTH WRITE THIS EXCEPTION, and a readability compression
-    // removed it in round 72. Dropping it makes the rule harsher than the book: a
-    // goaltender who keeps a skate on the crease may play the puck out there and take no
-    // penalty. "The minor penalty will not be assessed when a goalkeeper plays the puck
-    // while maintaining skate contact with his goal crease." IIHF 27.7 is the same, and
-    // the owning document carries it at rink_map_and_glossary.md:248 and :254.
-    'position of the puck decides it, and the one exception is a goaltender playing the ' +
-    'puck while keeping skate contact with the crease. ' +
-    'Under the IIHF book — the British one — the shape is 6.80 m along the goal line and ' +
-    '8.60 m at the boards, within a few inches of the NHL figures, but deeper, because the ' +
-    'IIHF goal line is 4.0 m from the end boards rather than 11 ft. ' +
-    'Where it applies is the part to check rather than assume: the NHL and IIHF play have it, both ' +
-    'read directly in the rulebooks, and the KHL is commonly said to as well though no KHL rulebook ' +
-    'was available to check that one. ' +
-    'Neither the USA Hockey book nor the Hockey Canada ' +
-    // ⚠️ POSITIVE POLARITY ON PURPOSE. This read "though neither leaves the goalkeeper
-    // unrestricted back there:" — a main-clause negation immediately before a colon, which
-    // lets the negation carry onto the tail that states the two restrictions. Same claim.
-    'book marks one at all, so a league running on either has none. Both still restrict the ' +
-    'goalkeeper back there: USA Hockey Rule 614(c) stops him freezing the ' +
-    'puck outside the privileged area, corners excluded, and Hockey Canada assesses a minor ' +
-    'with no warning for freezing it at all once he has left the crease. ' +
-    'And in ' +
-    'England and Wales England Ice Hockey’s own regulations say it is "not currently ' +
-    'enforced" while the current In-House Rules are silent — so ask your league before ' +
-    'assuming either way. ' +
-    // The suspension's LIMIT, and it has to travel with the suspension. §3 spends a
-    // warning block on the inference a listener draws without it, and Common Mistakes
-    // carries an entry for that inference alone — but both are hundreds of spoken
-    // sentences away, and the sentence immediately before this one has just taught the
-    // opposite pattern for USA Hockey and Hockey Canada ("no trapezoid, still not free
-    // to freeze"), so England arriving with no such rider reads as the deliberate
-    // exception. IIHF Rule 63.2(I), read in sources/iihf_rules_2026-27.txt:5228-5230:
-    // "On any Player, including the goalkeeper, who holds, 'freezes' or plays the puck
-    // ... in such a manner as to deliberately cause a stoppage of play. Regarding to a
-    // goalkeeper, this rule applies outside of their goal crease area". Two minutes by
-    // Rule 16.1 (:1972-1973). The carve-out is 63.2(VI)'s Note (:5257-5259): "If a
-    // goalkeeper comes out of their goal crease to 'cut down the angle' on a shot and
-    // after making the save covers the puck, this shall be legal." It travels too, or
-    // the caption produces a goaltender who will not cover a rebound.
-    'Read that suspension narrowly if it applies to you: it frees where a goalkeeper may ' +
-    // ⚠️ FULL STOP, NOT AN EM DASH. This ran "never where they may freeze it —" straight
-    // into the sentence that says freezing IS a separate minor, so the negation could carry
-    // onto it and tell a listener the opposite. Sentence-final negation cannot invert.
-    'play the puck behind the net, never where they may freeze it. Freezing the puck to ' +
-    'cause a stoppage is a separate two-minute minor anywhere outside the goal crease ' +
-    'under IIHF Rule 63.2(I), and coming out to cut down the angle, saving, and then ' +
-    'covering it stays legal.',
+    'The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the ' +
+    'goal line, widening to 28 ft at the boards, shaded here at NHL dimensions.',
 
   describe:
     'The attacking half of the rink, the net at the right. The area behind the goal line is ' +
@@ -555,20 +446,8 @@ const strongAndWeakSide = {
   width: 900,
 
   caption:
-    'Strong-side and weak-side are not places on the rink. The strong side is whichever side ' +
-    'of the ice the puck is currently on, and the weak side — also called the off-side or the ' +
-    'back side — is the other one. ' +
-    'Here the puck is in play on the right-hand side of the ice, inside the strong-side ' +
-    'faceoff circle, so the right half of the sheet is the strong side; move the puck ' +
-    'across the middle of the ' +
-    'ice and the two labels swap in that instant, which is why defence partners have to talk ' +
-    'constantly and why one of them is always on the puck while the other is at the ' +
-    'goalmouth. ' +
-    'Nothing is painted to divide the ice this way: the boundary is the middle of the ice, ' +
-    'not a marking, and this picture is one arrangement of the puck rather than a fixed map. ' +
-    'The weak-side net-front area has its own name, the backdoor, and a player arriving ' +
-    'there is behind the goaltender’s field of view, which is what makes it dangerous. ' +
-    'How it ranks against every other unmarked position is not something anyone has counted.',
+    'Strong-side and weak-side: whichever half of the ice the puck is on right now, and ' +
+    'the other half — not painted; the boundary moves with the puck.',
 
   describe:
     'The attacking half of the rink, the net at the right, tinted in two different shades ' +
@@ -664,31 +543,8 @@ const theGoalCrease = {
   width: 900,
 
   caption:
-    'The goal crease — the blue paint — shaded here. ' +
-    'Under NHL Rule 1.7 a two-inch red line runs one foot outside each goal post, ' +
-    'extends four feet six inches straight out at right angles to the goal line, and the ' +
-    'two straight sides are joined by a six-foot radius arc struck from the centre of the ' +
-    'goal line: eight feet wide at the goal line, six feet deep at its deepest point. ' +
-    'Under the IIHF book — the British one — it is essentially the same shape at metric ' +
-    'sizes, 2.45 m wide at the goal line. ' +
-    'Why it matters to you: the crease is the boundary of goaltender interference. ' +
-    'Two things this picture cannot show you. ' +
-    'The crease is a volume rather than a patch of ice — the NHL extends it four feet ' +
-    'vertically, to the height of the top of the goal frame, while IIHF Rule 1.7 says the ' +
-    'goal crease area extends vertically until the top of the crossbar rather than to a ' +
-    'fixed four feet — and a flat map of the ice draws only its floor. ' +
-    'And the region is eight feet across on a map of a hundred-foot half-rink, which is ' +
-    'too small a thing for any diagram at this scale to show you the difference between ' +
-    'standing at the edge of the paint and standing on its red line. ' +
-    'That difference is the one that costs you a goal: the red boundary line counts as ' +
-    'crease under the IIHF, USA Hockey and Hockey Canada, and no rule of the NHL’s says ' +
-    'either way. The single place the line’s status appears in the NHL book at all is a ' +
-    'reference table — Table 14, fifth group, headed "screening situations" — and it goes ' +
-    'the other way: an attacker who plants himself "on the crease line or outside the goal ' +
-    'crease" so as to obstruct the goalkeeper’s vision has the goal allowed. One row of an ' +
-    'appendix table, against three books that answer it the other way, is thin ground to ' +
-    'stand on with a goal at stake. So take the instruction rather than the picture — ' +
-    'keep your skates off the red line, not merely out of the blue paint.',
+    'The goal crease — the blue paint — shaded here: 8 ft wide at the goal line, 6 ft ' +
+    'deep, extending 4 ft up as a volume, not a floor.',
 
   describe:
     'The attacking half of the rink, the net at the right. The goal crease is shaded: it ' +
@@ -732,23 +588,8 @@ const homePlate = {
   width: 900,
 
   caption:
-    'Home plate — the high-danger area, also called the house — is the shape drawn here. ' +
-    'It runs in along the tops of the two faceoff circles, straight down the dot lines to ' +
-    'the two faceoff dots, which are forty-four feet apart, so that part of it is ' +
-    'forty-four feet wide, and then angles in to the two goalposts, six feet apart on the ' +
-    'goal line. Drawn out it looks like a baseball home plate with its point at the net: ' +
-    'square across the top, tapering to the width of the goal mouth. ' +
-    'It is not an official marking and nothing on a rink paints it. It is a shape used by ' +
-    'analysts and increasingly by coaches, and the things it is read off — the circles, ' +
-    'the dots and the posts — are the ones that really are painted. ' +
-    'The exact boundaries vary a little between analytics providers: Natural Stat Trick, ' +
-    'Evolving Hockey and MoneyPuck all draw it slightly differently, so treat it as a ' +
-    'concept rather than a measurement. ' +
-    'The concept is simple and worth having. It is the working definition of a ' +
-    'high-danger chance, and shots from inside it are worth several times a shot from ' +
-    'outside it. ' +
-    'That turns into two instructions on the ice: take your shots from inside it, and ' +
-    'work the puck inside rather than shooting from outside.',
+    'Home plate — the high-danger area, also "the house": tops of the circles down the ' +
+    'dot lines to the dots, angling in to the goalposts. Not a painted marking.',
 
   describe:
     'The attacking half of the rink, the net at the right. A shaded six-sided region is ' +
@@ -803,24 +644,8 @@ const aboveAndBelowTheDots = {
   width: 900,
 
   caption:
-    'The dots are the four end-zone faceoff spots, twenty feet out from the goal line. ' +
-    'Used loosely, the two at this end define a depth-line straight across the zone, and ' +
-    'that line is how coaches split the zone in half: above the dots is everything from ' +
-    'it out to the blue line, below the dots everything from it in to the end boards. ' +
-    'Note what the picture shows about that word "half" — the upper part is the longer ' +
-    'of the two, so read it as the upper part and the lower part rather than as equal ' +
-    'areas. ' +
-    'This split is worth more than it looks, because it is the one relational term in ' +
-    'this vocabulary with an exact anchor. High and low are comparatives with no ' +
-    'boundary anywhere on the ice; the dots are painted, so once you know which end is ' +
-    'meant, above and below them name a fixed line rather than a feeling. ' +
-    'It divides jobs as well as ice. In a hybrid defensive system, for example, coverage ' +
-    'is man-on-man below the dots and zone above them — one coaching choice among ' +
-    'several, so find out which system your team plays. ' +
-    'The line itself is not painted. Only the two dots at its ends are, and the boundary ' +
-    'is read across between them — which is also how coaches use the hash marks, where ' +
-    '"below the hash marks" for the low half of the zone is the same idea one step ' +
-    'finer, and coaching observation rather than a counted one.',
+    'Above and below the dots: the split coaches use to divide the zone at the end-zone ' +
+    'faceoff dots — unequal halves, tinted here.',
 
   describe:
     'The attacking half of the rink, the net at the right, tinted in two shades either ' +
@@ -886,28 +711,8 @@ const theThreeZones = {
   width: 1100,
 
   caption:
-    'The whole sheet, with the two blue lines dividing it into the three zones the ' +
-    'rulebook names. The defending zone is the one containing the goal your team is ' +
-    'defending, running from your own blue line to the end boards behind your own net. ' +
-    'The neutral zone is the centre ice area between the two blue lines. The attacking ' +
-    'zone is the one containing the goal you are attacking, from the opponent’s blue ' +
-    'line to the end boards behind their net. ' +
-    'The attacking end is drawn at the right here, and that is this picture’s choice ' +
-    'rather than a fact about the building. ' +
-    'Which is the part that confuses everyone: the zones are named relative to your team, ' +
-    'not to the ice. The same physical piece of ice is your defensive zone and their ' +
-    'offensive zone at the same moment, and because teams change ends after each period, ' +
-    'the end you defended in the first is the end you attack in the second. The label ' +
-    'follows the team, not the paint. So when a teammate says "get it deep", you have to ' +
-    'know whose zone they mean — and if you are in any doubt, say "our end" or "their ' +
-    'end" instead, which cannot be misheard. ' +
-    'One thing the shading cannot show: a zone includes its blue line. For offside the ' +
-    'puck is not in the attacking zone until it has completely crossed the line, and a ' +
-    'player standing on the line is not yet in the zone. The line is wide enough for that ' +
-    'to be a real distinction rather than a hair: NHL Rule 1.5 paints the blue lines twelve ' +
-    'inches across, the IIHF book thirty centimetres. Reading the width as existing for the ' +
-    'offside rule is this document’s inference, though — the rules that set the width do ' +
-    'not say why it is that wide.',
+    'The whole sheet, split by the two blue lines into defending, neutral and attacking ' +
+    'zones — attacking drawn on the right here, the picture’s choice, not a fixed fact.',
 
   describe:
     'The whole two-hundred by eighty-five foot rink seen from above, tinted in three ' +
@@ -1025,30 +830,8 @@ const neutralZoneMap = {
   width: 1100,
 
   caption:
-    'The whole sheet, with the neutral zone — the middle third, between the two blue ' +
-    'lines — shaded. ' +
-    'It is 50 ft from blue line to blue line on an NHL rink, and that figure is a ' +
-    'derivation rather than one the rule text states: Rule 1.2 gives the sheet 200 ft of ' +
-    'length, Rule 1.5 puts each goal line 11 ft from the end boards and each blue line ' +
-    '64 ft out from its goal line, and what is left in the middle is 50 ft. ' +
-    'Under the IIHF book — the British one — Appendix VI states it directly as a ' +
-    'quarter of the rink’s length, 15.0 m or 49.2 ft. The two are within a foot of each ' +
-    'other, so the length of this zone barely changes between the two books. What ' +
-    'changes between them is the width of the ice — which is why a neutral-zone trap ' +
-    'that works by squeezing the width gets much harder to run on a wide sheet. ' +
-    'Three sets of markings sit in it. The centre red line runs across the middle; on a ' +
-    'real rink it carries a distinctive pattern so that it can never be mistaken for a ' +
-    'blue line. The centre ice dot sits on it inside a blue circle 15 ft in radius, and ' +
-    'that is where each period opens and where play restarts after a goal. And four red ' +
-    'spots flank the blue lines, 5 ft outside each one and 44 ft apart — the ' +
-    'neutral-zone dots. They have no circles round them, ' +
-    'which is deliberate: a neutral-zone draw is meant to restart play quickly with ' +
-    'everyone spread out, so there is no restraining circle. ' +
-    'Both players’ benches are on one side of this zone and the penalty benches ' +
-    'opposite, which is why the bench side is the side you can change safely on. ' +
-    'The sheet is drawn here at the NHL’s 200 ft by 85 ft. If you play in Britain, the ' +
-    'In-House Rules authorise rinks below 56 m by 26 m for all levels, so your working ' +
-    'assumption should be that your own rink is smaller than this on both counts.',
+    'The whole sheet, with the neutral zone — the middle third between the two blue ' +
+    'lines — shaded, showing the centre line, centre dot and four neutral-zone spots.',
 
   describe:
     'The full two hundred by eighty-five foot rink seen from above. The band between the ' +
@@ -1094,30 +877,8 @@ const endZoneMarkings = {
   width: 1000,
 
   caption:
-    'One half of the sheet, drawn to scale — the centre red line at the left, the end ' +
-    'boards at the right — so everything in it is twice the size it would be on a map of ' +
-    'the whole rink. ' +
-    'Everything drawn in it is a marking rather than a name for an area: the blue line, ' +
-    '64 ft out from the goal line; the two faceoff circles with their hash marks; the ' +
-    'goal line itself, with the net standing on it; the light blue crease in front of the ' +
-    'net; and behind it the two red trapezoid lines, which mark the goaltender’s ' +
-    'restricted area. ' +
-    'Not every rink carries all of them. Many rec rinks have no trapezoid painted at ' +
-    'all, and an unpainted one is a strong hint that your league is not enforcing it — a ' +
-    'hint rather than a ruling, because the rule turns on where the puck is rather than ' +
-    'on the markings. ' +
-    'The shaded strip is the ice behind the goal line. It is 11 ft deep in the NHL and ' +
-    '4.0 m, or 13.1 ft, under IIHF Rule 1.5 — the British book — so there is about two ' +
-    'feet more room back there on international ice. ' +
-    'It is live playing surface and it is worth more than it looks. A puck carrier who ' +
-    'goes behind the net can come out either side, so the defence has to commit; and it ' +
-    'is the safest place in your own zone to compose yourself, because a turnover there ' +
-    'produces no direct shot. ' +
-    'Do not assume the rink you stand in matches this one. These are the NHL’s ' +
-    'dimensions, most recreational and older sheets were not built to them, and British ' +
-    'rinks are authorised below the IIHF minimum on both length and width. On your first ' +
-    'shift at an unfamiliar rink, go and look at how far it is from the goal line to the ' +
-    'end boards.',
+    'One half of the sheet at twice the scale: the blue line, faceoff circles, goal ' +
+    'line, crease, trapezoid, and the shaded strip of ice behind the net.',
 
   describe:
     'One half of the rink seen from above, from the centre red line at the left to the ' +
@@ -1178,6 +939,22 @@ export const MAPS = [
     half: true,
     labels: true,
     width: 1000,
+    // The owner's own polygons, copied from `theHighSlot` and `theLowSlot` above rather
+    // than re-derived — see the ⚠️ in rink.mjs on why copying is the correct move here.
+    // High slot: the tops of the circles in to the dots. Low slot: the dots in to the
+    // front of the crease, x 83 being the goal line less its 6 ft depth.
+    zones: [
+      // Staggered: the labels are wider than their own regions, so centring both on
+      // y 0 printed them through each other. One up, one down — see the ⚠️ in rink.mjs.
+      { points: [{ x: 54, y: 7 }, { x: 69, y: 7 }, { x: 69, y: -7 }, { x: 54, y: -7 }],
+        // Pushed left as well as up: centred, its box reached x 71.7 and denied
+        // `bumper` (anchor x 71) the only slot that keeps it off the lower circle's
+        // arc, which the owner reported as unreadable. The label is still inside its
+        // own region; the region is what carries the meaning, not the centring.
+        label: 'the high slot', labelDy: 3.6, labelDx: -5 },
+      { points: [{ x: 69, y: 7 }, { x: 83, y: 7 }, { x: 83, y: -7 }, { x: 69, y: -7 }],
+        label: 'the low slot', labelDy: -3.6 },
+    ],
     // ⚠️ THE ORIENTATION SENTENCE IS THE FIRST THING A LISTENER HEARS, AND IT MUST
     // MATCH `half: true`'s ACTUAL FRAME. `rinkSvg` builds a half viewBox of
     // `-2 -44.5 104 89` — its own parameter doc says "attacking half only, CENTRE LINE
@@ -1192,21 +969,17 @@ export const MAPS = [
     // cannot tell a blue line from a red one by looking. `endZoneMarkings` above — the
     // other `half: true` map in §2 — already words it correctly; keep the two together.
     caption:
-      'One end zone, drawn to scale, with the names used for the places in it. ' +
-      'The picture runs from the centre red line at the left to the end boards at the ' +
-      'right, so the blue line — where the end zone begins — crosses about a quarter of ' +
-      'the way in. Reading in from the blue line: the point, where defencemen stand; the ' +
-      'tops of the circles; the half-wall, meaning the boards level with the faceoff dot; ' +
-      'the high slot and then the slot in front of the net; the goalmouth and the crease; ' +
-      'the corners; and the ice behind the net, with the trapezoid marked on it. These ' +
-      'are names for areas rather than exact spots, and different coaches draw their ' +
-      'boundaries slightly differently — the ' +
-      'point in particular is an area just inside the blue line, not the line itself.',
+      'One end zone at twice the scale, labelled with the standard position vocabulary: ' +
+      'the point, half-wall, crease and corners, with the high and low slot shaded as ' +
+      'regions.',
     describe:
       'The attacking half of the rink seen from above, from the centre red line at the ' +
       'left to the end boards at the right, with the blue line about a quarter of the way ' +
       'in: two faceoff circles, the net on the goal line with the crease in front of ' +
-      'it and the trapezoid behind. Each named area of the zone is marked with a dot and a label.',
+      'it and the trapezoid behind. Most named areas — the point, the half-wall, the top ' +
+      'of the circle, the crease and the corners among them — are marked with a dot and a ' +
+      'plain-English label; the high slot and the low slot are shown instead as two ' +
+      'shaded regions in front of the net.',
   },
 ];
 

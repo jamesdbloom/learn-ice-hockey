@@ -148,7 +148,7 @@ A **2-inch red line drawn all the way across the ice**, 11 ft from the end board
 
 ### The blue lines
 
-Two **12-inch-wide blue lines**, drawn 64 ft out from each goal line, dividing the ice into three zones (NHL Rule 1.5). **Under IIHF Rule 1.5 they are 30 cm wide — the same foot — and sit 18.5 m out from each goal line** (Appendix VI puts them 22.50 m from the end boards). They are the widest lines on the ice, and the width is not decorative — it exists because offside is judged against the *whole* line.
+Two **12-inch-wide blue lines**, drawn 64 ft out from each goal line, dividing the ice into three zones (NHL Rule 1.5). **Under IIHF Rule 1.5 they are 30 cm wide — the same foot — and sit 18.5 m out from each goal line** (Appendix VI puts them 22.50 m from the end boards). They are the widest lines on the ice, and that width does work: offside is judged against the *whole* line, so the puck must cross all of it before the zone changes hands.
 
 What the blue lines do:
 
@@ -297,7 +297,7 @@ Two consequences you must internalise:
 
 Some documents and commentators use **"offensive zone"** where the rulebook says "attacking zone", and **"D-zone"** as shorthand for defending zone. All three are common; they mean the same thing.
 
-**The zone includes its blue line.** For offside purposes the puck is not in the attacking zone until it has *completely* crossed the line, and a player standing on the line is not yet in the zone. That is why the line is painted a foot wide.
+**The zone includes its blue line.** For offside purposes the puck is not in the attacking zone until it has *completely* crossed the line, and a player standing on the line is not yet in the zone. The line is painted a foot wide, 30 cm under the IIHF book — **reading that width as existing *for* the offside rule is this document’s inference, though: the rules that set the width do not themselves say why it is that wide.**
 
 **"End zone"** is the neutral term for either zone that contains a net — useful precisely because it carries no ownership.
 
@@ -308,6 +308,8 @@ Some documents and commentators use **"offensive zone"** where the rulebook says
 ![](diagram:rink-map-end-zone)
 
 This map is a close-up of **one end zone**, drawn to scale. The picture starts at the centre red line, so about a quarter of it is neutral zone: the end zone itself begins at the blue line and runs from there to the end boards at the right.
+
+**Not everything named below is painted on the ice.** The crease, the trapezoid, the faceoff dots and circles and the hash marks are real markings — §3 covers all of them — while the slot, the high slot, the low slot, the goalmouth, the point, the half-wall, and the split above and below the dots are vocabulary read off those markings, not lines of their own.
 
 ### The slot
 
@@ -400,7 +402,7 @@ The slot is layered, and the layers have different jobs:
 
 **Where:** the four end-zone faceoff spots. Used loosely to mean the depth-line they define across the zone.
 
-**Why it matters:** "**above the dots**" and "**below the dots**" is how coaches split the zone in half. In a hybrid defensive system, for example, coverage is man-on-man **below the dots** and zone **above** them.
+**Why it matters:** "**above the dots**" and "**below the dots**" is how coaches split the zone in half — though not into two equal halves: the end-zone dots sit 20 ft out from the goal line, so above the dots runs the 44 ft back to the blue line (64 ft − 20 ft) and below the dots runs the 31 ft on to the end boards (20 ft + 11 ft), the larger share on top. Unlike "high" and "low", which are always relative, the dots are painted, so once you know which end is meant, above and below them name a fixed line rather than a feeling. In a hybrid defensive system, for example, coverage is man-on-man **below the dots** and zone **above** them — one coaching choice among several, so find out which system your team plays; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out the rest.
 
 
 ### Behind the net
@@ -455,7 +457,7 @@ Related: **"third forward high"** means the third forward stays in the upper par
 - **Strong-side** = the side of the ice the puck is currently on.
 - **Weak-side** (also "**off-side**", "**back side**") = the opposite side.
 
-These flip the instant the puck crosses the middle of the ice, which is why defencemen have to talk constantly: one is always the strong-side defender (on the puck) and the other the weak-side defender (at the goalmouth), and they trade those jobs several times a shift.
+**Nothing is painted to mark this split** — the boundary is simply the middle of the ice, wherever the puck currently is. These flip the instant the puck crosses the middle of the ice, which is why defencemen have to talk constantly: one is always the strong-side defender (on the puck) and the other the weak-side defender (at the goalmouth), and they trade those jobs several times a shift.
 
 The **backdoor** is the weak-side net-front area. What makes it dangerous is that a player arriving there is behind the goaltender's field of view — how it ranks against every other unmarked space is not something anyone has counted.
 

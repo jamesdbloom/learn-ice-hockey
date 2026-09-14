@@ -341,7 +341,7 @@ function main() {
       // SVG's <title> repeats it. Omitting them here did not degrade the name, it
       // removed it — the two rink maps rendered as unlabelled graphics.
       : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER,
-                                      caption: d.caption, describe: d.describe })
+                                      caption: d.caption, describe: d.describe, zones: d.zones })
       : playSvg(spec, { half: d.half ?? true, width });
 
     const svgPath = join(OUT_DIR, `${d.id}.svg`);

@@ -157,6 +157,96 @@ const CIRCLE = Array.from({ length: 24 }, (_, i) => {
 
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// The same defensive-zone alignment at the OTHER circle.
+//
+// ⚠️ THE OWNER REPORTED THAT THE END-ZONE DOTS ARE WHERE PLAYERS MOST OFTEN GET
+// CONFUSED ABOUT WHERE TO STAND, and asked for the two dots drawn. This is the
+// companion to `dzoneAlignment` above, mirrored across the centre line.
+//
+// ⚠️ AND IT IS A MIRROR, NOT A SECOND SYSTEM. The roles do not change and the
+// instructions do not change: the boards-side winger is still on the boards, the
+// inside winger still ~5 ft off the middle, the boards-side D still nearer the goal
+// line than his winger. What changes is which physical side of the ice each of them
+// stands on — which is exactly why `faceoffs.md` says "boards-side" and "inside"
+// rather than "left" and "right". A reader who learns the alignment as "the winger on
+// the left" has learned it wrong at one of the two circles, and there is no way to draw
+// that with one picture.
+//
+// ⚠️ WHY A SEPARATE DIAGRAM AND NOT BOTH CIRCLES IN ONE. Drawing both alignments on
+// one sheet puts two centres, four wingers and two boards-side defencemen on the ice —
+// ten figures for a five-player team. The slot defenceman and the goaltender would be
+// the only two that did not double, because they stand in the same place for a draw at
+// either circle. A pair of pictures says the same thing without drawing a team that
+// cannot exist.
+const LDOT = 'faceoff-dot:left';
+
+const dzoneAlignmentOtherCircle = {
+  id: 'faceoff-dzone-alignment-other-circle',
+  title: 'The same alignment at the other circle',
+  owner: 'content/systems/faceoffs.md',
+  half: true,
+  width: 900,
+
+  caption:
+    'The same defensive-zone alignment as the diagram above it, drawn at the other ' +
+    'end-zone circle. Nothing about the job has changed: the boards-side winger is still ' +
+    'on the wall, the inside winger still about five feet off the middle of the ice, the ' +
+    'boards-side defenceman still nearer the goal line than his winger, and the slot ' +
+    'defenceman and the goaltender stand where they stood, because those two are in the ' +
+    'same place for a draw at either circle. What has changed is which side of the ice ' +
+    'each of them is on. That is why this document says boards-side and inside rather ' +
+    'than left and right: a player who learns "the winger on my left" has learned it ' +
+    'wrong at one of the two circles, and which circle is on your left depends on which ' +
+    'net you are defending and which way you are facing. The alignment itself is a ' +
+    'coaching choice, not a rule, and this is the one that goes with a low zone collapse ' +
+    '— find out what your team runs. ' +
+    // ⚠️ THE SHADED CIRCLE IS A CLAIM, AND IT NEEDED ITS CAVEAT. This diagram draws the
+    // same no-skate-inside zone as its twin and asserted the same thing about it with
+    // none of the twin's four-book warning. `dzoneCleanLoss` and `dzoneTieUp` omit that
+    // warning too, but they draw NO shaded zone, so they were never a precedent for
+    // dropping it here. A reader who meets this picture alone — a deep link, a search
+    // result, a screen reader taking one figure — got an absolute-sounding rule.
+    'The shaded circle is the part that is a rule rather than a choice: everyone but the ' +
+    'two takers stays outside it. ⚠️ What counts as outside is not the same in all four ' +
+    'books — the diagram above carries the split, and touching the line is legal under ' +
+    'some of them and encroachment under others, so do not carry one league’s answer ' +
+    'into another.',
+
+  describe:
+    'The defending half of the rink, your own net at the right, the draw at the ' +
+    'left-hand end-zone circle — a mirror image of the previous diagram. The faceoff ' +
+    'circle is shaded to mark the area no player other than the two takers may put a ' +
+    'skate inside. Five own players: the centre in the dot on the goal-line side of it; ' +
+    'the boards-side winger level with the dot at the outer hash marks, close to the ' +
+    'wall; the inside winger level with the dot at the inner hash marks, about five feet ' +
+    'off the middle of the ice; the boards-side defenceman about five feet nearer the ' +
+    'goal line than his winger, close to the same wall; the second defenceman in the ' +
+    'slot in front of the goaltender, who is in the crease. One opposition player is ' +
+    'drawn, the opposing centre, on the blue-line side of the dot. No routes: this is a ' +
+    'still shape at the moment before the drop.',
+
+  zones: [
+    { points: Array.from({ length: 24 }, (_, i) => {
+        const a = (i / 24) * Math.PI * 2;
+        return { at: LDOT, dx: +(15 * Math.cos(a)).toFixed(2), dy: +(15 * Math.sin(a)).toFixed(2) };
+      }) },
+  ],
+
+  players: [
+    // Mirrored across the centre line: every dy negated, every dx unchanged.
+    { id: 'C', pos: 'F', at: { at: LDOT, dx: STICK } },
+    { id: 'W', pos: 'F', at: { at: LDOT, dx: GATE, dy: -HASH }, label: 'boards-side winger' },
+    { id: 'W', pos: 'F', at: { at: LDOT, dx: GATE, dy: HASH },  label: 'inside winger' },
+    { id: 'D', pos: 'D', at: { at: LDOT, dx: 11, dy: -15 },     label: 'boards-side D' },
+    // Unmirrored on purpose — the slot and the crease are on the centre line, so these
+    // two stand in the same place whichever circle the draw is at. That is the point.
+    { id: 'D', pos: 'D', at: D_SLOT_D, label: 'slot D' },
+    { id: 'G', pos: 'G', at: D_GOALIE },
+    { id: 'C', pos: 'F', team: 'opp', at: { at: LDOT, dx: -STICK } },
+  ],
+};
+
 const dzoneAlignment = {
   id: 'faceoff-dzone-alignment',
   title: 'Defensive-zone draw alignment',
@@ -990,6 +1080,8 @@ const ozoneWingerWalkout = {
 
 export default [
   dzoneAlignment,
+  // Immediately after its twin: the pair only teaches anything read together.
+  dzoneAlignmentOtherCircle,
   dzoneCleanLoss,
   dzoneTieUp,
   ozoneAlignment,

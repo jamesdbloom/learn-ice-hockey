@@ -293,8 +293,14 @@ function placeLabels(entries, opts = {}) {
                                 // space the caller has already drawn into, e.g. the
                                 // player glyphs a label must not sit on top of.
 
-  const collides = (a) =>
-    placed.some((b) => Math.abs(a.x - b.x) * 2 < a.w + b.w && Math.abs(a.y - b.y) * 2 < a.h + b.h);
+  // ⚠️ A LABEL MAY SIT BESIDE THE LINE IT NAMES. Reserving the painted lines stopped
+  // labels landing on paint, which was the point — and it also stopped `goal line` from
+  // being placed anywhere near the goal line, which is the one place that label belongs.
+  // A reserve box may carry an `owner`; the entry of that name ignores it. Every other
+  // label still keeps off it.
+  const collides = (a, e) =>
+    placed.some((b) => (!b.owner || !e || b.owner !== e.name)
+      && Math.abs(a.x - b.x) * 2 < a.w + b.w && Math.abs(a.y - b.y) * 2 < a.h + b.h);
 
   // Keep labels off the boards — text running over the dasher is unreadable and
   // was the first thing to go wrong on the crowded end of the play diagrams.
@@ -404,8 +410,19 @@ function placeLabels(entries, opts = {}) {
   // because a label that is not drawn is the failure mode this file has already paid for
   // once — 104 goaltenders vanished from 112 diagrams with a clean exit 0.
   const placeOne = (e, w, h, strict) => {
-    const ok = (cand) => inside(cand) && !collides(cand)
+    const ok = (cand) => inside(cand) && !collides(cand, e)
       && (!strict || (leaderClear(cand, e) && leaderUncrossed(cand, e)));
+    // ⚠️ A PREFERRED OFFSET, TRIED FIRST AND NOT TRUSTED. The placer is greedy and
+    // order-dependent, so on a crowded picture it is the earlier entries that get the
+    // good slots and the later ones that end up wherever is left. `hint` lets the spec
+    // say where a particular label reads best — but it goes through `ok` and `ownsIt`
+    // exactly like every other candidate, so a hint that would collide, leave the ice,
+    // or sit nearer someone else's anchor is silently ignored rather than honoured into
+    // a defect. It is a preference, not an override.
+    if (e.hint) {
+      const cand = { x: e.x + e.hint[0], y: e.y + e.hint[1], w, h };
+      if (ok(cand) && ownsIt(cand, e)) return cand;
+    }
     for (const [dx, dy] of OFFSETS) {
       const cand = { x: e.x + dx, y: e.y + dy, w, h };
       if (ok(cand) && ownsIt(cand, e)) return cand;
@@ -545,7 +562,15 @@ function placeLabels(entries, opts = {}) {
       ? `<line x1="${ax.toFixed(2)}" y1="${ay.toFixed(2)}" x2="${ex.toFixed(2)}" y2="${ey.toFixed(2)}" ` +
         `stroke="${PALETTE.label}" stroke-width="0.18" stroke-dasharray="0.8 0.8"/>`
       : '';
-    const marker = dot ? `<circle cx="${e.x}" cy="${py(e.y)}" r="${dot}" fill="${PALETTE.label}"/>` : '';
+    // ⚠️ PER-ENTRY, AND THE JSDOC PROMISED THIS BEFORE THE CODE DID. The signature has
+    // said `dot?:boolean` on each entry since it was written; only the function-level
+    // option was ever read, so every label got a marker whether or not the thing it
+    // named was already drawn. On the vocabulary overlay that put a grey dot on top of
+    // the painted red faceoff dots, the neutral dots and the crease — a marker saying
+    // "a point is here" about features the ice already shows, which is noise at best
+    // and, on the two red dots, ink over the very thing being named.
+    const marker = (e.dot !== false) && dot
+      ? `<circle cx="${e.x}" cy="${py(e.y)}" r="${dot}" fill="${PALETTE.label}"/>` : '';
     return (
       marker + leader +
       `<text x="${put.x.toFixed(2)}" y="${py(put.y).toFixed(2)}" font-size="${size}" text-anchor="middle" ` +
@@ -609,7 +634,8 @@ export function longDesc(spec) {
 }
 
 export function rinkSvg(opts = {}) {
-  const { half = false, labels = false, width = 900, ns = 'r', caption, describe } = opts;
+  const { half = false, labels = false, width = 900, ns = 'r', caption, describe,
+          zones: zoneSpecs = [] } = opts;
   const { sheet: S, lines: L, faceoff: F } = RINK;
   // A diagram carries a one-line pointer to the notation, not a copy of it.
   //
@@ -659,35 +685,127 @@ export function rinkSvg(opts = {}) {
     .join('\n    ');
 
   let overlay = '';
+  // ⚠️ SHADED REGIONS FOR THIS MAP, AND THE REASON THEY ARE NOT DOTS.
+  // A dot says "this spot"; the slot is an area, and the owner defines it as one.
+  // The polygons are the owner's own, lifted from `the-high-slot` and `the-low-slot`
+  // in the same module rather than re-derived: high slot x 54 to 69, low slot x 69 to
+  // 83 (the goal line less the crease's 6 ft depth), both y ±7. `check_zones.py`
+  // compares polygons BETWEEN diagrams, so copying the coordinates is the point —
+  // inventing new ones here would manufacture a disagreement about what the slot is.
+  const zoneReserve = [];
+  const zoneOut = zoneSpecs.map((z) => {
+    const pts = z.points.map((q) => `${q.x.toFixed(2)},${py(q.y).toFixed(2)}`).join(' ');
+    let label = '';
+    if (z.label) {
+      const c = z.points.reduce((a, q) => ({ x: a.x + q.x / z.points.length,
+                                             y: a.y + q.y / z.points.length }), { x: 0, y: 0 });
+      const zs = 2.8;
+      // ⚠️ A ZONE LABEL IS CENTRED IN ITS POLYGON AND CAN BE WIDER THAN IT. The high
+      // slot is 15 ft across (x 54 to 69) and "the high slot" renders about 20 ft at
+      // this size, so two adjacent regions centred 14.5 ft apart printed straight
+      // through each other — the first build read "the high slcthe low slot". `labelDy`
+      // staggers them instead of shrinking the text, because the alternative is type
+      // small enough to lose on a phone.
+      //
+      // Reserved AT THE DRAWN POSITION, not the centroid: the reservation exists to stop
+      // the point-label placer dropping a word here, so it has to describe where the
+      // words actually are. (playSvg reserves at the centroid deliberately — there the
+      // nudge is a small correction for ink, and reserving the nudged box would let
+      // something land back on the centroid. Here the nudge IS the layout.)
+      const zdy = z.labelDy ?? 0, zdx = z.labelDx ?? 0;
+      zoneReserve.push({ x: c.x + zdx, y: c.y + zdy, w: z.label.length * zs * 0.56, h: zs * 1.4 });
+      label = `<text x="${(c.x + zdx).toFixed(2)}" y="${py(c.y + zdy).toFixed(2)}" font-size="${zs.toFixed(2)}" ` +
+              `text-anchor="middle" fill="${PALETTE.home}" font-weight="700" paint-order="stroke" ` +
+              `stroke="#fff" stroke-width="${(zs * LABEL_HALO).toFixed(2)}">${esc(z.label)}</text>`;
+    }
+    return `<polygon points="${pts}" fill="rgba(15,90,143,0.14)" ` +
+           `stroke="rgba(15,90,143,0.45)" stroke-width="0.35" stroke-dasharray="1.6 1.2"/>` + label;
+  }).join('\n    ');
+
   if (labels) {
+    // ⚠️ NOT EVERY ANCHOR IS WORTH A LABEL, AND THREE OF THEM WERE ACTIVELY IN THE WAY.
+    // `net-front` 84, `goalmouth` 85 and `crease` 86 are three names for overlapping ice
+    // within two feet of each other, and `behind-net` 94 joins them: four long words
+    // fighting for the same corner of the picture, which is what made the net end
+    // unreadable however the placer arranged them. The crease is kept — it is a painted
+    // marking with a rule attached, not a nickname for a patch of ice — and the other
+    // three are what a reader can see for themselves. `neutral-zone-mid` names nothing
+    // a player is ever told. The two slot anchors become shaded regions instead.
+    //
+    // ⚠️ THESE ARE DISPLAY DECISIONS ONLY. Every name stays in rink.json, because the
+    // keys are anchors: `point` alone is referenced in over a hundred places across
+    // eleven diagram modules, and its own $comment says so. Renaming a key to change a
+    // label would move geometry.
+    const OMIT = new Set(['behind-net', 'net-front', 'goalmouth', 'neutral-zone-mid',
+                          'high-slot', 'slot', 'centre-point']);
+    const PAINTED = new Set(['crease', 'neutral-dot', 'faceoff-dot', 'centre-ice',
+                             'centre-point', 'blue-line', 'goal-line']);
     const entries = [];
     for (const [name, p] of Object.entries(RINK.positions)) {
-      if (name.startsWith('$')) continue;
+      if (name.startsWith('$') || OMIT.has(name)) continue;
       for (const side of (p.sided ? [1, -1] : [0])) {
         const x = p.x, y = p.sided ? p.y * side : p.y;
         if (half && x < -2) continue;
-        entries.push({ text: p.sided ? `${name}:${side > 0 ? 'R' : 'L'}` : name, x, y });
+        // Plain English. The keys are hyphenated identifiers — `top-of-circle`,
+        // `half-wall` — and the sided ones were rendered `point:R`, which is a
+        // debug string, not a name a reader uses. Hyphens out, side spelled out
+        // and put in front, where English wants it: "the right point".
+        const pretty = name.replace(/-/g, ' ');
+        // No marker on anything the ice already marks. PAINTED is the test, not
+        // "visible": the boards, the corner and the half-wall are physical and obvious,
+        // but nothing on them says WHERE along them the anchor is, so those keep a dot.
+        // `top-of-circle` keeps one too — the circle is painted, the top of it is not.
+        // `centre-point` is dotless because its own rink.json note is "the middle of the
+        // blue line", and the blue line is paint.
+        // Owner-directed placements. `dy` is mirrored for the left-hand copy so a sided
+        // pair sits the same way up on both halves — the asymmetry between the two
+        // neutral-dot labels was reported, and it came from the greedy placer taking a
+        // different free slot on each side rather than from anything in the data.
+        const HINT = {
+          // Off the boards and inward, away from the faceoff circle they were crowding.
+          'boards': [-21, -4],
+          // Both neutral dots to the same side of their own dot.
+          // ⚠️ -8.5, NOT -9, AND THE 0.5 ft IS THE WHOLE POINT. "right neutral dot" is one
+          // character longer than "left neutral dot", so at -9 the right-hand box reached
+          // x -0.4 against a limit of 0, was rejected, and the placer put it somewhere else.
+          // THAT IS THE ASYMMETRY THE OWNER REPORTED: not a data difference, a word length.
+          // ⚠️ -7, AND THE VALUE WAS ARRIVED AT BY MEASUREMENT AFTER TWO WRONG GUESSES.
+          // "right neutral dot" is 22.8 ft wide against "left neutral dot"'s 21.5, so the
+          // right-hand box needs its centre at x >= 12.42 to clear the centre red line's
+          // own reserve where the left needs 11.75. At -9 and at -8.5 the right-hand hint
+          // was rejected and the placer put that label on the FAR side of its dot, 27 ft
+          // from its twin. THE REPORTED ASYMMETRY WAS A WORD LENGTH, not the data.
+          'neutral-dot': [-7.5, -4],
+          // Off its own line. The own-line exemption below is what lets `goal line` sit
+          // behind the goal; without a hint it also let `blue line` sit ON the blue line.
+          'blue-line': [8, -4],
+          // Behind the goal, which is where a reader looks for the goal line.
+          // Behind the goal, which is where a reader looks for the goal line. 2.5 not 3.5:
+          // at 3.5 the label's right edge reached x 98.6 against a 98.5 limit and `inside`
+          // rejected it silently — the hint mechanism refusing a bad placement, as intended.
+          'goal-line': [2.5, -9],
+        }[name];
+        const hint = HINT && (p.sided ? [HINT[0], HINT[1] * side] : HINT);
+        entries.push({ name, text: p.sided ? `${side > 0 ? 'right' : 'left'} ${pretty}` : pretty,
+                       x, y, dot: !PAINTED.has(name), hint });
       }
     }
-    // ⚠️ THE PAINTED LINES ARE RESERVED, AND THE REASON IS IN THE COORDINATE TABLE.
-    // `point` is at x 25 and the blue line IS x 25 — see rink.json's own note, "the
-    // blue-line end of the point". So `point:L` and `point:R` are not drifting onto
-    // the line; they are anchored on it, and `neutral-dot` at x 20 is 5 ft off it.
-    // Nothing in the placer knew the lines existed: `reserve` blocks out space the
-    // caller has already drawn into, and until now this branch passed none, so a
-    // label box could sit squarely on a foot of painted blue.
-    //
-    // Reserved 2 ft wide about each line's centre — the 1 ft line plus half a foot of
-    // air either side — against the label's own box, so the words clear the paint
-    // rather than merely missing its centreline. The labels that move gain a leader,
-    // because every offset that clears a 2 ft strip is past LEADER_MIN.
-    const paint = [RINK.lines.centre_line_x, RINK.lines.blue_line_x, -RINK.lines.blue_line_x,
-                   RINK.lines.goal_line_x, -RINK.lines.goal_line_x]
-      .filter((x) => !half || x >= -2)
-      .map((x) => ({ x, y: 0, w: 2, h: RINK.sheet.width }));
+    const paint = [[RINK.lines.centre_line_x, 'centre-ice'],
+                   [RINK.lines.blue_line_x, 'blue-line'], [-RINK.lines.blue_line_x, 'blue-line'],
+                   [RINK.lines.goal_line_x, 'goal-line'], [-RINK.lines.goal_line_x, 'goal-line']]
+      .filter(([x]) => !half || x >= -2)
+      // ⚠️ w 1, THE TRUE WIDTH OF THE PAINT, NOT 2. The collision test compares the sum of
+      // half-widths, so a 2 ft reserve demanded the label's EDGE stay half a foot clear of
+      // the line's edge — half a foot of air nobody asked for, on a sheet where it matters.
+      // Between the centre red line and the blue line there are 25 ft; "right neutral dot"
+      // is 22.85 ft wide. At w 2 the legal window for its centre was 0.15 ft wide and the
+      // label was exiled to the far side of its own dot, 27 ft from its twin. At w 1 the
+      // window is 1.14 ft. The label still may not touch paint — that is what the box
+      // width already guarantees — it simply need not hover half a foot off it.
+      .map(([x, owner]) => ({ x, y: 0, w: 1, h: RINK.sheet.width, owner }));
     overlay = placeLabels(entries,
-      { size: 2.4, dot: 0.8, half, reserve: paint, leaderMin: 2.5, noCrossLeaders: true })
-      .join('\n    ');
+      { size: 2.4, dot: 0.8, half, reserve: [...paint, ...zoneReserve], leaderMin: 2.5,
+        noCrossLeaders: true }).join('\n    ');
   }
 
   // Everything inside the ice is clipped to the boards, so a goal line drawn the
@@ -728,6 +846,7 @@ export function rinkSvg(opts = {}) {
     ${neutralDots}
     ${endZone(1)}
     ${endZone(-1)}
+    ${zoneOut}
     </g>
     ${overlay}
     ${footer}

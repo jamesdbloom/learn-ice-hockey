@@ -662,6 +662,8 @@ Options: Match the circle to the centre, flip your hands, or put a left-shot and
 
 A centre's shot handedness determines which circle they're better in, and every coaching staff builds around it.
 
+**One term, two meanings in this document — keep them apart.** "Strong side" for a *centre*, in this section, is about handedness: the circle where his natural backward pull sends the puck to the boards. Elsewhere in this document — the defenceman "on the draw side" at an offensive-zone draw, or the corner the puck goes to after a defensive-zone loss — "strong side" carries the ordinary hockey meaning used throughout this corpus: whichever side of the ice the puck is on. The two usually coincide, because a team tries to put its centre on his handedness strong side, but they are not the same claim, and this section's meaning is the handedness one.
+
 - The consensus in coaching sources (Ice Hockey Systems, Hockey's Arsenal) is that a **strong-side draw** is a **right-shot centre on the right side** of the ice, or a **left-shot centre on the left side**.
 - On your **strong side**, you can pull the puck backward on your **backhand toward the boards** — the most powerful motion available to you, sending the puck to the safest part of the ice.
 - On your **weak side**, that same board-side pull has to be made on the **forehand**, which is slower and weaker for most players. The alternative is to pull on your backhand — but that sends the puck toward the **middle of the ice**, which in your own end is the worst place it can go.
@@ -681,10 +683,14 @@ A centre's shot handedness determines which circle they're better in, and every 
 > **This entire section describes coaching choices, not rules of hockey.** Every team's faceoff alignment is different, and the differences are large. What follows is the most common default at each location, with realistic alternatives named. **Find out what your team runs before your first shift** — and specifically, find out what the *call* is for each draw. A faceoff alignment that half the line is guessing at is worse than no alignment.
 >
 > The defaults below assume the house system used throughout this guide: a **low zone collapse (zone) defensive-zone coverage** and a **2-1-2 forecheck** (see [Defensive Zone Coverage](defensive_zone_coverage.md) and [Forechecking Systems](forechecking_systems.md)).
+>
+> **A word on "left" and "right," because that confusion is exactly what this section is for.** Every end of the rink has two faceoff circles, one nearer each side board, and which one is on your left changes with which net you're defending and which way you're facing — it isn't fixed. That is why the alignments below are written in terms that do not depend on which way you are facing. Left and right are not banned — you will hear them constantly, and this document uses them further down where a fixed reference makes them safe — but they need that reference agreed first, and at a draw it usually is not. Two things about the two circles *are* fixed, and everything below is written in those terms instead: which one is nearer the boards you'll exit toward — called **boards-side** below, with the other called **inside** — and which one suits your centre's shot hand, his **strong side**, covered in "Handedness and which side you're strong on" above. Learn boards-side/inside and strong-side/weak-side rather than left and right, and the alignment below applies unchanged at whichever circle you're actually standing at: it's a mirror image at the other one.
 
 ### Defensive-zone draws
 
 ![](diagram:faceoff-dzone-alignment)
+
+![](diagram:faceoff-dzone-alignment-other-circle)
 
 ![](diagram:faceoff-dzone-clean-loss)
 
@@ -695,8 +701,8 @@ Priority: Do not lose this cleanly — a tie-up is acceptable, a clean loss to t
 Position: Boards-side winger on the outside hash mark; inside winger on the inside hash mark, facing the slot
 Position: Boards-side defenceman behind and outside that winger; slot defenceman in front of the goalie
 Action: On a clean win, pull to the boards-side defenceman to rim it out or hit the boards-side winger
-Action: On a clean loss, both wingers go to the points on the drop, not after they see where the puck went
-Convention: Sending both wingers to the points on a lost draw is the house zone system — under man-to-man each winger follows his assigned man, so ask which your team plays
+Action: On a clean loss, wingers release to the points on the drop; the centre covers the man who beat him, boards-side D takes the corner or half-wall, and the slot D holds the net front and blocks the lane
+Convention: This whole defensive-zone alignment is the house zone system, including who takes the corner and who holds the net front — under man-to-man each winger follows his man and those assignments change, so ask which your team plays
 Action: On a tie-up everyone jumps; the inside winger and the boards-side defenceman are usually closest
 Never: Pull the puck to the middle — a draw won into the slot is barely better than a loss
 ```
@@ -712,6 +718,8 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 - **Slot defenceman** — in the slot in front of the goalie, responsible for the net front and for blocking a point shot.
 
 **Common variation worth knowing:** many teams set their defencemen on their **"off" sides** for defensive-zone draws — the right-shot D on the left boards and vice versa — so that a puck pulled back to the wall arrives on their forehand and the breakout pass up the boards is a forehand pass. It costs you a little on defensive coverage and gains you a lot on the exit. Ask which your team does.
+
+**Which circle you're actually at matters as much as who's on it.** Boards-side and inside above are relative to whichever circle the draw is at, not to a fixed side of the rink — the alignment doesn't change from one circle to the other. What does change is which circle is your centre's strong side, and a team that gets to choose its dot — after an icing, or to start a power play — uses that choice to put him there; see "Handedness and which side you're strong on" above.
 
 **On a clean win:**
 - Pull to the **boards-side defenceman**, who rims it out or hits the boards-side winger for a direct exit. This is the default because the boards are the safe half of the ice.
@@ -740,6 +748,7 @@ Position: Weak-side defenceman at the far point, holding the line as the safety 
 Action: Centre wins it back rather than forward
 Read: The inside winger is the usual target for a quick pull-back, and the net-front driver if the draw is lost
 Priority: On a clean loss the priority flips instantly to not conceding a counterattack
+Action: On a clean loss, wingers pressure the puck rather than retreat, the strong-side D recovers to the line, and the weak-side D holds — a 2-1-2 forecheck already in position
 Key: An offensive-zone tie-up is a free 50-50 puck in the other team's end — a good outcome, not a failure
 Convention: The offensive-zone alignment described here is a common default, not a rule — they differ from team to team, so find out what your team runs
 ```
@@ -753,6 +762,8 @@ The one place in hockey where you get to run a genuine set play with a stationar
 - **Inside winger** — inside hash mark, the most common recipient of a quick pull-back for a shot from the circle, and the primary net-front driver if the draw is lost.
 - **Strong-side defenceman** — at the point on the draw side, **feet already set, stick already loaded**. This is the shooter.
 - **Weak-side defenceman** — at the far point, holding the line as the safety against a counterattack.
+
+**The same mirroring applies here as in your own end.** Boards-side and inside are relative to whichever circle hosts the draw, not to a fixed side of the ice — and "strong-side" for the point man here means the draw side, not necessarily his shooting hand (see "Handedness and which side you're strong on" above, which is where the two meanings of "strong side" in this document are kept apart).
 
 **On a clean win:** run the set play (see below). The important thing is that the shooter's feet are already planted — this is one of the very few shots in hockey where you don't have to receive, settle and set. That is worth more than a slightly better shooting angle.
 
@@ -816,7 +827,7 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 
 **The tip play.** The pull goes to the point, but the intended outcome is a deflection rather than a clean shot — someone screens, someone tips. Lower expected value per shot, higher rebound and chaos value, and it works when the goalie can see everything else you do. This is also the safest play, because a point shot into traffic rarely turns into a counterattack.
 
-**The board-side variations.** Coaching sources describe plays where the strong-side winger loops **over the top of the circle to the weak-side hash mark** for a one-timer, or where the winger and defenceman **swap positions** before the draw to create an unfamiliar passing lane. These work precisely once per game against an attentive opponent.
+**The board-side variations.** Coaching sources describe plays where the boards-side winger loops **over the top of the circle to the inside hash mark** for a one-timer, or where the winger and defenceman **swap positions** before the draw to create an unfamiliar passing lane. These work precisely once per game against an attentive opponent.
 
 ### Defensive-zone plays
 
