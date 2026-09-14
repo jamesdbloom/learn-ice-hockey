@@ -1284,3 +1284,29 @@ confirmed **it flags none of the four new mechanism sentences.**
 | ✅ | ⚠️ **CLOSED, and the closing correction matters more than the row did.** A verifier reported CARHA 49(a) as *"inverting the hold-your-ground rule outright"*. The coordinator relayed that into a review record and into `rink_map.md`. **It was over-broad**, and the coordinator's own first correction — *"CARHA writes both sides and does not reconcile them"* — **was also wrong.** The agent holding the file read both rules and found **they are not in tension at all**: 66(a) Note 2 is a note to an **interference** rule, whose operative limb is impeding a player *not in possession* — so it is CARHA's structural counterpart to NHL/IIHF **56.1**, which is also an interference rule. 49(a) is a separate **body-contact** rule, every limb qualified by intent, with **49(c)** excusing accidental contact outright. **Standing still to take away a lane is permitted; standing there to be hit is not. Both hold at once.** What is genuinely distinctive is narrow: 49(a)'s third limb adds a duty with no NHL/IIHF counterpart — it does not withdraw the entitlement, because the same book grants it. ⚠️ **And the coordinator's "the verifier counted IIHF twice" was the wrong diagnosis too: the PHRASE `not required to move` is in three books, but IIHF 101.1 is a REAL second, independently-worded hold-your-ground provision** (*"A Player, who is stationary, is entitled to that area of the ice"*), and **USA Hockey states the entitlement three times in three wordings, none of them a numbered rule** — so a phrase-count found one of five provisions and missed four. **Three successive coordinator framings of one rule, each wrong in a different way, each caught by the agent that had read the book.** |
 | ⬜ | **`center.md` and `site/src/diagrams/center.mjs` were DELIBERATELY not swept** to match `risk_management.md`'s repaired turnover disclosure. Their claim defends **the middle of your own defensive zone**, which the study in question never prices — it prices the offensive blue line. **Treating them as the same defect would be the consistency sweep that corrects the wrong document.** They may still want the *"say what was searched"* treatment. |
 | ⬜ | **`special_teams.md` and the six propagated documents now both call the icing exemption "conditional" but count the conditions differently** — one states a total, the others deliberately avoid one. Both defensible; **a post-wave cross-file read is the only thing that settles whether they clash read aloud.** |
+
+### ⚠️⚠️ EVERY `## Check yourself` SECTION MAY BE A NULL-EFFECT EXERCISE IN THE SPOKEN LAYER
+
+**Opened 14 September 2026 by the agent repairing two of them. It is a question about the FORMAT, not
+about any sentence in it, and no edit inside any single document can surface it.**
+
+These sections rest on retrieval practice, and the corpus states the evidence honestly at its owner,
+`off-the-ice/practice_and_development.md`: Rowland's 2014 meta-analysis, **159 effect sizes, g = 0.50,
+95% CI [0.42, 0.58]** for testing over restudying. ⚠️ **But the same meta-analysis has a no-feedback cell
+at g = 0.03, 95% CI [−0.21, 0.27]** — an interval straddling zero. The effect is in the *checking*, not in
+the attempting; the corpus's own instruction says so: *"answer them before you read on, be willing to be
+wrong, and then go and check."*
+
+⚠️ **A LISTENER CANNOT GO AND CHECK. The audio has no answer layer at all.** They hear *"the section named
+with each question is where you get it"* and cannot go there.
+
+**So in the spoken rendering these sections plausibly sit in the g = 0.03 cell while carrying the
+language of the g = 0.50 one.** 36 documents have one. They are **voiced**, and this release has just
+spent effort making two of them *audibly optional* — which mitigates the instruction but not the format.
+
+| | |
+|---|---|
+| ⬜ | **Decide what the spoken form of a self-test is.** Options include: an answer layer after the questions; dropping the section from the speech render as `## Notes on verification` already is; or saying in the spoken preamble that the answers are on the page. **Each is a different bet and none is obviously right.** |
+| ⬜ | ⚠️ **Whatever is decided, the two qualifications the owner carries must travel with it: 18% of Rowland's effect sizes were NEGATIVE, and the benefit is a RETENTION benefit — g = 0.41 under a day against g = 0.69 at a day or more.** So *"skipping costs you nothing"* is false **and** *"skipping costs you 0.50"* would also be false. The repaired preambles assert neither, deliberately. |
+| ⬜ | **A preamble template now exists in three files** — `rules_primer.md`, `getting_started.md`, `special_teams.md` — and **the third was adopted from the first rather than invented**, so the corpus has one form rather than three variants. **The remaining 33 still carry the old imperative.** Sweep direction unchanged: correct the 33 toward the template, never the reverse. |
+| ⬜ | ⚠️ **Q2–Q7 of `special_teams.md` and Q1–Q8 of `getting_started.md` were checked only for staleness caused by TODAY's edits.** Their premises were not re-attacked against their own sections. **A question that was already wrong before today survived that pass unseen**, and this corpus has shipped exactly that defect before — commit `c8ab508` records one. |
