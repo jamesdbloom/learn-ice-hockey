@@ -1370,3 +1370,19 @@ rescoped AGAIN in the afternoon and the caption went stale a second time**, foun
 |---|---|
 | ⬜ | **The style guide already says to grep `site/src/diagrams/` when repairing a claim in prose. It was not applied, twice, on the same claim.** Whatever mechanism is added, the failure is not ignorance of the rule. |
 | ⬜ | ⚠️ **`check_absolutes.py` refuses to certify the caption layer when a `.mjs` is newer than the build product — that worked, and an agent hit it today.** What nothing detects is a caption that is **stale against its own document's prose** while the build is perfectly fresh. **That is a different check and it does not exist.** |
+
+### Environment fact — the Chrome extension times out and needs re-authenticating
+
+**Recorded 14 September 2026, from the owner.** The `claude-in-chrome` extension **periodically times out and has to be
+re-authenticated**, which the owner can do quickly. While it is timed out, **every `navigate` and every screenshot
+returns `"Could not verify this site's safety category. Blocking as a precaution."`**
+
+⚠️ **The failure does NOT look like an auth failure, and that is the trap.** It names the *site*, so the obvious
+reading is that the URL is the problem. A `site-reviewer` lost roughly twenty minutes to it today across nine
+attempts on three tabs and four URLs before establishing the real cause the only way that works: **`https://example.com/`
+fails identically.** If localhost and example.com both fail, it is the extension, not the site and not the port.
+
+| | |
+|---|---|
+| ⬜ | **Put the one-line diagnostic in any `site-reviewer` brief**: *try `example.com`; if that fails too, the extension needs re-authenticating — stop and say so.* ⚠️ **It cost a whole review pass today, and gate condition C10 went unmet for a session because of it.** |
+| ⬜ | **A blocked browser means C10 cannot be met.** Do not let static analysis stand in for it — the blocked reviewer was right to refuse, and said so: *"I would not clear C10. Not because I found a critical — because the dimension was not exercised."* |
