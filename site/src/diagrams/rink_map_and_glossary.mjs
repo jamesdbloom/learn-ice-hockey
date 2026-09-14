@@ -398,7 +398,41 @@ const theTrapezoid = {
 
   caption:
     'The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the ' +
-    'goal line, widening to 28 ft at the boards, shaded here at NHL dimensions.',
+    'goal line, widening to 28 ft at the boards, shaded here at NHL dimensions. Playing the ' +
+    'puck behind the goal line outside it is a two-minute delay-of-game minor; the rule ' +
+    // ⚠️ "THE SOLE EXCEPTION" WAS FALSE, AND IT CAME FROM THE BODY, NOT FROM HERE.
+    // `rules-verifier` found the IIHF Situation Handbook publishes two more, in both the
+    // 2025/26 and 2026/27 editions: Situation 27.6 rules a puck stopped ON the goal line is
+    // not in the restricted area at all, and 27.9 rules a puck that merely deflects off the
+    // glass into a retreating goaltender draws nothing, because "the goalkeeper must PLAY
+    // the puck to be penalized". ⚠️ THE FIFTH "sole exception" IN THIS CORPUS WRITTEN FROM
+    // THE PLAYING RULES WITHOUT THE HANDBOOK.
+    // ⚠️ MAJOR. The exception excuses PLAYING the puck and never FREEZING it. IIHF 27.7's own
+    // words are "plays the puck while maintaining skate contact with their goal crease";
+    // freezing is a separate minor at 63.2(I), whose boundary is the CREASE, not the trapezoid.
+    // The verb survived in the body at §3 and in `goaltender.md`'s facts layer ("excuses
+    // playing, never freezing") and was in NEITHER this caption nor Key Takeaway 7.
+    // `md_to_speech.py` emits "Diagram. " + caption and never voices `describe`, so for a
+    // listener this caption IS the diagram — and a goaltender who hears "the one exception is
+    // skate contact with the crease" and nothing more can reasonably sit on the puck with a toe
+    // in the paint. One clause, and it costs the listener nothing to hear.
+    'text\u2019s one exception is a goaltender keeping skate contact with the crease, which ' +
+    'excuses playing the puck and never freezing it; and the ' +
+    'IIHF\u2019s Situation Handbook adds two more — a puck stopped on the goal line, and one ' +
+    'that only deflects into you. USA Hockey and Hockey ' +
+    'Canada mark no trapezoid, but both still stop the goaltender at the centre red line and ' +
+    'limit where the puck may be frozen. In England and Wales, England Ice Hockey’s Rule ' +
+    '22.3 says the area is not currently enforced — which frees where a goaltender may play ' +
+    // ⚠️⚠️ CRITICAL, CAUGHT BY `safety-reviewer`. This ended at "freeze it" — a flat NEVER,
+    // read ALONE by a listener, while the body treats two carve-outs as inseparable from
+    // this exact sentence: "Both carve-outs travel with that, or you produce a goaltender
+    // who will not cover a rebound." IIHF 63.2(VI)'s Note makes covering after a
+    // cut-the-angle save explicitly legal; 63.2(VII) excepts a goalkeeper actually being
+    // checked. A caption is the whole diagram for anyone who cannot see it.
+    'the puck and never where they may freeze it. Two things stay legal either way and have ' +
+    'to travel with that: coming out to cut down the angle, making the save and covering the ' +
+    'puck (IIHF 63.2(VI)), and a goaltender actually being checked (63.2(VII)). Cover the ' +
+    'rebound.',
 
   describe:
     'The attacking half of the rink, the net at the right. The area behind the goal line is ' +
@@ -544,7 +578,10 @@ const theGoalCrease = {
 
   caption:
     'The goal crease — the blue paint — shaded here: 8 ft wide at the goal line, 6 ft ' +
-    'deep, extending 4 ft up as a volume, not a floor.',
+    'deep, extending 4 ft up as a volume, not a floor. Three of the four books put the red ' +
+    'boundary line itself inside the crease — the IIHF, USA Hockey and Hockey Canada — and ' +
+    'the NHL never says either way. Keep your skates off the red line, not merely out of the ' +
+    'blue paint. No shading can draw an edge that fine.',
 
   describe:
     'The attacking half of the rink, the net at the right. The goal crease is shaded: it ' +

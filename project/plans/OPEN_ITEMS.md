@@ -289,7 +289,7 @@ listener never hears — **a pointer to another DOCUMENT is not that**, and it p
 
 | ✅ | **CLOSED — reviewed by `rules-verifier` (all five rules claims confirmed verbatim, no findings) and `safety-reviewer` (no Critical, no Major, no Minor; two read-aloud claims re-derived in the renderer). Both recorded in the change record.** Original: ⚠️ **THE WAVE-C REPAIRS ARE NEW TEXT AND NO REVIEWER HAS READ THEM — this is the live version of the row above, not a duplicate of it.** `defender.md:141` + `goaltender.md:941` (new body-check clause: a goaltender can take a minor for **checking an opponent** past the red line, previously unstated in both); `forechecking_systems.md` (*play* not *touch* at four sites, the Hockey Canada post-icing third answer, the seal/steer gloss); `shooting.md:353` (superlative relabelled); `language_and_glossary.md:349` (Screen entry). **Under review now.** |
 | ⬜ | **Declared coverage gap on the reviews that cleared the 12 Sep change: five of 52 changed files were read, and no from-scratch D11 omission pass was run over those five documents' full bodies.** Both reviewers stated this themselves. ⚠️ **Neither cross-checked `iihf_rules_2026-27.txt` for silent drift on 27.6, 27.7, 27.8, 81.4 or 82.1** — the corpus's IIHF layer is deliberately 2025/26 for the British reader, so this is a coverage limit, not a suspected defect. |
-| ⬜ | ⚠️⚠️ **REPRODUCED, NOT CONFIRMED: anchor links may not scroll, SITE-WIDE.** `site-reviewer` reported it as a Critical and I re-derived it myself in Chrome: navigating to `/foundation/rink_map/#5-named-areas-of-the-ice` leaves `scrollY` at **0** with the target at offsetTop **44,095**. ⚠️ **It is NOT a slug mismatch** — `getElementById` finds every target. **Isolated:** `scrollIntoView({behavior:'instant'})` moves to 43,967 correctly, while EVERY smooth scroll — `scrollIntoView()`, `scrollIntoView({behavior:'smooth'})`, and `scrollTop` assignment, which inherits smooth from `:root` — fails to complete after 2s. `:root` carries `scroll-behavior: smooth`; the document is **82,254 px** tall with 14 inline SVGs; `body` has `overflow-x: clip`; `scroll-padding-top` is 128px and correct. ⚠️ **WHY THIS IS NOT MARKED CONFIRMED: smooth-scroll animation is precisely what an automation harness interferes with, and the same session produced blank screenshots at depth and synthetic keystrokes that did not register.** **A human opening that URL in a normal Chrome window settles it in five seconds. Do that before anyone edits CSS.** ⚠️ **If real it is severe** — this corpus is built on `file.md#anchor` cross-links, and every one of them plus every "On this page" click would land at the top of the document. **Pre-existing; unrelated to the 12 Sep diagram work.** |
+| ⬜ | ⚠️⚠️ **ANCHOR LINKS: the MECHANISM is certain, the HUMAN IMPACT is not, and a harness confound is why. DO NOT EDIT CSS ON THIS EVIDENCE.** **Certain:** `html { scroll-behavior: smooth }` at `global.css:131` is what stops it. Forcing `auto` fixes it instantly **and lands to the pixel** — target − 128 px, exactly `header-h(56) + player-h(56) + 1rem`. **Ruled out by test, not assumption:** the slugs (`getElementById` finds every target), `scroll-padding-top` (correct), `overflow-x: clip` (removed, still fails), the audio player (class removed AND element deleted, still fails), and **all JS** — an independent grep of `site/src` for `scrollIntoView`/`hashchange`/`popstate`/`startViewTransition`/`scrollRestoration`/`IntersectionObserver` found **nothing outside `global.css`**, no Astro `ClientRouter`, no view transitions configured. ⚠️⚠️ **THE CONFOUND, and it is the reason this stays open: `document.visibilityState` was `"hidden"` on EVERY check, and STAYED hidden even after a trusted CDP click made `hasFocus()` true. Chromium defers compositor-driven scroll animations for tabs it does not consider visible — which would produce exactly this symptom with nothing wrong in the CSS.** ⚠️ **BUT VISIBILITY CANNOT BE THE WHOLE STORY: in the same harness, in the same hidden state, a real click on `/getting-started/getting_started/` WORKED (landed 35,009) while clicks on `/foundation/rink_map/` land at 0.** Something page-specific also matters and is **undetermined** — Rink Map is 51,355 px with 17 inline SVGs; Getting Started is 40,562 px with none above the target. ⚠️ **ONE CASE IS A GENUINE DEFECT REGARDLESS OF THE CONFOUND: a reader who opens a deep link in a BACKGROUND tab — middle-click, cmd-click, a restored session — is in exactly that hidden state.** ⚠️ **MEASUREMENT TRAP FOR WHOEVER PICKS THIS UP: scripted `scrollIntoView({behavior:'smooth'})` fails at EVERY distance, including 56 px, on a page where a real click succeeds. Scripted smooth scrolls are not evidence here. Only clicks are, and only in a tab that reports `visibilityState === "visible"`.** **To settle it: open `/foundation/rink_map/#5-named-areas-of-the-ice` in an ordinary foreground Chrome window and click a contents entry.** Stakes, from `global.css`'s own comment: **5,572 anchored internal links, 2,024 of them corpus cross-links.** |
 | ⬜ | **A hard-white diagram sits on the dark-theme background with no frame.** `site-reviewer` saw it at 1440 dark: the `<figure>` and `.diagram-scroll` both compute to `border: 0px none` and transparent background, so the SVG's literal `fill="#ffffff"` ice is an abrupt white block on `rgb(20,22,26)`. **The figcaption is legible** (`rgb(164,171,181)`), so this is cosmetic, not a legibility failure. ⚠️ **The SVGs are theme-invariant BY DESIGN — do not "fix" this by theming the diagram**; a `1px solid var(--border)` on `.diagram-scroll` in dark mode is the change being described. |
 | ⬜ | ⚠️ **METHOD, for whoever reviews this site next: naive scroll-then-screenshot is not trustworthy on a tall page here.** `site-reviewer` reported that programmatic scrolling followed by a screenshot produced **pure blank captures** deep in an ~48,850 px document — **reproduced even with a JS-injected `position:fixed` red square that should paint regardless of page content**, which proves it is a capture artifact of the tool at depth and not the page. It worked around this by pinning the figure near scroll-position 0. **Anything below the fold that was not re-verified that way should not be assumed screenshot-clean.** |
 | ⬜ | ⚠️ **`faceoffs.md:704`'s `Action:` line sits at 199 characters against a 200 cap — ONE character of headroom.** It is the line carrying both qualifications `facts-reviewer` restored (*"corner **or** half-wall"* and *"and blocks the lane"*), so the next ordinary edit to it fails the build, and the tempting fix is to drop a qualification to get under. ⚠️ **`check_facts.py` enforces the cap on the VALUE, not the whole line** — I measured the line including its `Action: ` label, got 207, and briefly thought a passing gate was wrong. **Record: `MAX_LEN, MAX_LEN_QUALIFIED = 200, 300` at `scripts/check_facts.py:76`, applied to the value.** |
@@ -300,6 +300,8 @@ listener never hears — **a pointer to another DOCUMENT is not that**, and it p
 | ⬜ | **Reported but NOT reproduced in a browser: the `slot D` label clipping a background circle.** `diagram-reviewer` found it in the source; `site-reviewer` checked all four viewport/theme cells and saw the label *"sitting in clear whitespace"*. ⚠️ **Recorded as unconfirmed either way, not as a refutation** — it may be fixed, or reproduce only under a condition the browser pass did not hit (font-rendering pass, resize mid-load). |
 | ⬜ | **`boards-side D` is the only label on that diagram with no leader line**, relying on proximity to its glyph. Readable at 375 px but the weakest of the four. |
 | ⬜ | ⚠️⚠️ **A STAGING LOOP OF MINE BEHAVED LIKE `git add -A` AND SWEPT IN AN UNTRACKED FILE.** `git status --porcelain | awk '{print $NF}'` picks up `??` entries — it staged `project/plans/READABILITY_AND_DUAL_AUDIENCE.md`, **5,517 words, not mine, into a public repo**, minutes after `commit-gate` warned it was *"one blanket add from being swept in"* and I said I would leave it alone. ⚠️ **Caught only because the file count jumped 10→11 and insertions 727→1,431.** CLAUDE.md bans `git add -A` for exactly this; **a loop that enumerates `git status` is the same thing wearing a disguise.** Unstaged; still `??`. **Either track that file or gitignore it — it is one mistake away from shipping again.** |
+
+| ⬜ | ⚠️ **`project/plans/READABILITY_AND_DUAL_AUDIENCE.md` IS NOW TRACKED, and that deviates from CLAUDE.md — recorded rather than resolved quietly.** CLAUDE.md says *"`project/plans/` — **The plan. `OPEN_ITEMS.md` is the only one.**"* This is a second plan file. **Tracked anyway** because it is a substantive 5,517-word implementation plan with a stated mission, not scratch — the repo's `*.local.md` gitignore pattern is explicitly for *"a scratch plan, analysis or working note"*, which this is not, and gitignoring would have hidden real work from the record. ⚠️ **It was previously untracked AND unignored, which is the state `commit-gate` flagged as "one blanket add from being swept in" — and which I then proved by sweeping it in.** **Either fold it into `OPEN_ITEMS.md` or amend CLAUDE.md to allow a second plan; it should not sit in permanent tension with the file that governs it.** |
 
 ### ⚠️ Found building the Language page, 12 September
 
@@ -810,6 +812,122 @@ entry.**
 
 ## Safety and rules — the highest-consequence group
 
+### ⚠️ `center.md:327` carries Hockey Canada clause v flat — the same shape as the Critical just repaired in the Rink Map
+
+Found by `commit-gate` on the twentieth pass, **outside that commit's diff and deliberately not swept into it.**
+
+A ` ```facts ` line — **voiced alone, with 300 ms breaks either side** — carries Interpretation 3 to Rule
+10.1(a) **clause v** flat (*"they will not be allowed to freeze the puck… No warning will be issued"*), and
+**clause ii's save-then-cover carve-out appears nowhere in that document.**
+
+⚠️ **This is the identical defect the Rink Map's §7 Critical turned out to be**, in the layer with the least
+surrounding context. **The direction of harm is weaker** — the block addresses a forechecker about the
+*opponent's* goaltender, not a goaltender about themselves — which is why it is a row and not an emergency.
+`center.md:324` already carries the 27.6/27.9 propagation, so the document is not neglected.
+
+**Before repairing, read `positions/goaltender.md` (the owner) and the Rink Map's repaired §7** — the corpus
+now states this correctly in both, and the fix is to align, not to compose.
+
+### ⚠️ `rink_map.md:400` states the goalkeeper-contact limit as an idiom where the Casebook states a test
+
+`commit-gate`, twentieth pass, **explicitly not blocking** — recorded so the judgement is not lost.
+
+The repaired sentence quotes the permission verbatim (*"can be legally checked"*) but renders the limit as
+*"still never 'fair game', so play the puck, not the goalie"* — an idiom plus an instruction. **The same
+Casebook answer states the operative test**: *"A penalty should be assessed in **every instance where
+unnecessary or avoidable contact** is made with the goalkeeper – even when outside the privileged area."*
+
+Key Takeaway 12 carries *"penalises any avoidable contact in the same answer"* — **but that is chunk 044,
+voiced alone at the very end.** The gate's assessment: *"the one place a repair-correcting-an-overstatement
+leans slightly past its finding. Six words would close it."*
+
+### ⚠️ The 187-word trapezoid caption renders in a VISIBLE `<figcaption>`, and no one has seen it at 375 px
+
+`site-reviewer` returned **PARTIAL** and **never reached the 375 px viewport** — declared in writing, so
+coverage is satisfied, but it is the viewport where a caption grown from 29 to 187 words would show worst.
+**Two occurrences in the built HTML, so it is not only the SVG `<desc>`.** ⚠️ **Check this before the next
+site change, not after.**
+
+
+### ⚠️ `rink_map.md:491` — the position table now sits at 13 characters of headroom. An ordinary edit costs a listener all six positions.
+
+Opened 14 September 2026. **The mechanism is measured, not predicted: it already happened once in this
+change and every gate passed on it.** A repair took the G cell to **234 characters against
+`TABLE_MAX_CELL_CHARS` of 200**, and `md_to_speech` replaced the **entire six-row table** with *"It does not
+read well aloud, so it is not narrated."* — costing a listener C, LW, RW, LD, RD and G. `check_links`,
+`check_facts`, `check_absolutes`, `check_geometry` and `check_secrets` **all passed on that version.**
+
+The cell was rewritten to 187 characters. **`check_tables.py --near` now lists this table at 13 characters
+of headroom, where before the change it did not appear at all.**
+
+⚠️ **"Not on `--near`" DOES NOT MEAN "has headroom".** The cell had 33 characters then. A coordinator brief
+relayed the absence as headroom and that is what caused the drop. **Run the tool and read the number.**
+
+**The 13 characters are the price of `[Goaltender](../positions/goaltender.md)` — 40 characters as raw
+markdown** — and buying headroom back means dropping either that owner pointer or the book-divergence scope
+flag. **Both were required by the safety constraint that made the cell shorter in the first place**, so this
+is a genuine three-way trade, not an oversight. ⚠️ **Do not "fix" it by deleting the pointer without reading
+`safety-reviewer`'s finding on why the cell had to stop asserting the geographic limb.**
+
+
+### ⚠️ `rink_map.md:502` — *"out of the crease neither book needs pressure to penalise you"* is broader than USA Hockey's text
+
+Found by `commit-gate` on the eighteenth pass and **ruled a row, not a block** — recorded here with that
+reasoning so nobody re-litigates it.
+
+The sentence is **exactly true** of Hockey Canada Interpretation 3 to Rule 10.1(a) clause v, and of USA
+Hockey **614(c)(1)** (puck behind the goal line, body wholly outside the crease) and **614(c)(3)** (puck
+outside the privileged area). It is **too broad for one gap**: a goaltender out of the crease, **in front
+of the goal line, inside the privileged area**, not against the boards or frame, falls to **614(c)(2)** or
+**610(b)** — and both of those **do** key on opportunity-before-pressure.
+
+**Why it is a row and not a block:** HEAD carried the same breadth, so the change neither introduced nor
+widened it; **the error runs in the cautious direction** (it tells a goaltender to expect a penalty where
+one may not come, never the reverse); and the sentences following it name what is actually flat.
+
+⚠️ **Do not "fix" this by deleting the caution.** The correct repair is to scope the claim to the limbs
+that are genuinely location-only, which costs words on a page that was shortened for being too long — so
+it is a judgement about that trade, not a tidy-up. **`goaltender.md` is the owner of the freezing rule and
+should be read before this is touched.**
+
+
+### ⚠️ *"Not a hittable player"* overstates every book that is cited for it. `zone_entries.md:1011`, and the same absolute in `rink_map.md`
+
+Found 14 September 2026 by a propagation census run off a `safety-reviewer` handover. **The phrase is not
+what the four books say, and the book most often cited for it says the opposite in terms.**
+
+`content/systems/zone_entries.md:1011`, a Common Mistakes bullet — *"A goaltender out of his crease playing a
+dumped puck **is not a hittable player**: all four books say he is not 'fair game' out there."*
+
+`sources/usah_casebook.txt:11716`, USA Hockey Casebook Rule 607 Situation 5, answering **this exact question**:
+
+> *"Although a goalkeeper **can be legally checked** when outside the privileged area, they are not
+> considered to be 'fair game.'"*
+
+⚠️ **"Not fair game" and "not hittable" are different claims.** What the books share is that **unnecessary or
+avoidable** contact is penalised — not that the goaltender is untouchable outside the protected area. The
+corpus has compressed the first into the second.
+
+**The direction of harm is the dangerous part: it runs toward the GOALTENDER, not the checker.** A goalie who
+believes they cannot be hit goes into the corner after a rimmed puck **unbraced**, and is legally checked
+there. That is the least-protected player on the ice, chasing a puck, with no expectation of contact.
+
+**Sites known:** `zone_entries.md:1011` (pre-existing) · `rink_map.md:400` and Key Takeaway 12 at `:623`
+(*"not a hittable player in any book"*) — the Rink Map pair is being handled in the shortening change; **this
+row owns `zone_entries.md`, which is NOT in that diff and must not be swept into it.**
+
+⚠️ **Do not "fix" this by deleting the caution.** The instruction *"play the puck, not the goalie"* is correct
+coaching and is the safe residue. The defect is stating it as a rule in all four books when it is not one.
+**Scope it, or state what is actually shared and label the stronger version as coaching caution.**
+
+**Census result, so nobody re-runs it:** these are the only two sites. ⚠️ **Two siblings state the neighbouring
+claims CORRECTLY and are the models to align to, not to edit** — `technique/shooting.md:442` hedges the
+crease-line screen (*"an appendix table, not rule text; and IIHF Rule 1.7 puts the line in the crease, so stay
+off the line"*, with editions named), and `systems/forechecking_systems.md:719` carries the privileged area
+*"not the corners"* **with both limbs of 607(d) Note 1**. Both are facts-layer lines, voiced alone, and both
+are right.
+
+
 - ⚠️ **USA Hockey's own speed caveat is in NEITHER boards document.** `ibc.txt:1498-1499` — *"The speed at
   which the players hit the boards must be managed"* — in the same lettered list the corpus quotes twice
   from. **The corpus now teaches that angling in is a safety skill because a limb meets the boards instead
@@ -940,6 +1058,73 @@ entry.**
   deliberately given an always-drawn scrollbar for this reason; `.table-scroll` never got the same treatment.
 - **The AudioPlayer degrades to a dead `0:00 / 0:00` control with no message** when its source 404s.
 
+### ⚠️ THE SOURCES TRAILERS MIS-PARSE THEIR OWN EMPHASIS. 39 STRAY ASTERISKS ON 16 PAGES, LIVE NOW.
+
+Found by `site-reviewer` reading the **built HTML**, 14 September 2026 — not by any checker, because **no gate
+in this repository parses markdown**. Confirmed by census over `site/dist/**/index.html`, rendered article
+text only: **39 literal `*` characters across 16 of the corpus's pages**, and **every one is inside a Sources
+trailer**.
+
+```
+technique/shooting (4) · technique/body_contact_and_battles (4) · positions/goaltender (4)
+off-the-ice/conditioning_and_recovery (3) · systems/special_teams (2) · systems/game_management (2)
+systems/forechecking_systems (2) · systems/faceoffs (2) · positions/winger (2) · positions/center (2)
+hockey-iq/playing_without_the_puck (2) · foundation/uk_rules (2) · foundation/rules_primer (2)
+foundation/rink_map (2) · foundation/on_ice_communication (2) · foundation/language_and_glossary (2)
+```
+
+⚠️ **THE ASTERISK COUNTS ARE EVEN AND THE SOURCE LOOKS FINE. This is not an unbalanced-markers bug and a
+count will not find it.** `rink_map.md:631` has **298 asterisks — even** — and still leaks two.
+
+**The cause is CommonMark's delimiter-run rule, not a typo.** A whole trailer paragraph is wrapped in one
+outer `*…*`, and inside it each quoted rule phrase is wrapped again in `*"…"*`. Where a nested quote opens
+straight after a bracket — `(*"no penalty should be assessed"*` — that `*` sits **between two punctuation
+characters**, which makes the run **both left- and right-flanking**. CommonMark then lets it match the
+**outer paragraph's pending opener as a CLOSER**. Italics end early, the following prose inherits emphasis it
+should not have until the next `</em>` resets it, and the run's true partner has nothing left to pair with —
+so **it renders as a literal `*` on the page.**
+
+⚠️ **Three of the four hits on a page are silent — only the fourth leaves a visible character.** So the
+visible count *understates* the damage: `foundation/rink_map` shows 2 stray asterisks but **4 mis-scoped
+quotes**. Grepping for `*` finds the loud ones and misses the rest. **Compare `<em>` scope, not asterisk
+counts.**
+
+**Two fixes, both in `site/`, neither a content edit** (this is rendering, not a claim — non-negotiable 1):
+
+- **(a)** Stop wrapping the whole trailer paragraph in `*…*`; italicise the container in CSS instead. Removes
+  the ambiguous outer context entirely, and is the only option that scales to a trailer of any length.
+- **(b)** Switch the nested per-quote emphasis to `_"…"_` so the two delimiter characters cannot compete.
+  Smaller change, but it is a convention every future trailer edit must remember.
+
+⚠️ **Whichever is chosen, re-verify by RE-RENDERING and diffing `<em>` scope — never by reading the source.**
+The source read fine for however long this has been shipping.
+
+**Not introduced by the rink-map shortening.** ⚠️ **That commit DID later amend one trailer line** (the IIHF
+Situation Handbook entry, 24,854 → 25,182 bytes), so an earlier "byte-identical" claim here is retracted.
+**The measurement that settles it is the rendered page: still exactly 2 stray asterisks, in the same two
+positions, both in the USA Hockey paragraph that commit never opened.** 15 of the 16 pages are untouched by it.
+
+### ⚠️ Five captions on the Rink Map page are over the 10–30 word band, and three are not that page's to fix
+
+Measured from the built `<figcaption>`s, 14 September 2026. Twelve sit at 23–29 words as intended. Five do not:
+
+| Caption | Words | Defined in | Owned by |
+|---|---|---|---|
+| The goal crease | 82 | `rink_map_and_glossary.mjs` | this page — **deliberate**, carries the crease penalty |
+| The trapezoid | 187 | `rink_map_and_glossary.mjs` | this page — **deliberate**, carries the delay-of-game minor |
+| Icing gaining the line | 187 | `rules_primer.mjs` | **another page** |
+| Defensive-zone draw alignment | 279 | `faceoffs.mjs` | **another page** |
+| The roles rotate mid-shift | 382 | `forechecking_systems.mjs` | **another page** |
+
+⚠️ **The bottom three are BORROWED diagrams**, embedded on the Rink Map page but defined and primarily used
+elsewhere. **A caption is a single shared string** — shortening them to satisfy the Rink Map rewrites three
+other documents' pages, and the two longest each carry an inline ⚠️ rule-divergence or classification warning
+that **has nowhere else to live for a listener**, since `md_to_speech.py` voices the caption and **not** the
+`describe`. So this is a **design decision for the owner**, not a tidy-up: either accept that a borrowed
+diagram keeps its owner's caption length, or give diagrams per-page caption overrides.
+
+**Not a defect in the rink-map shortening** — those three captions were never in its scope or its diff.
+
 ## Podcast — COMPLETE
 
 ✅ **Published to Spotify and Apple Podcasts.** The feed, the per-section `.m3u` playlists, the downloads
@@ -947,3 +1132,47 @@ page, the CDN invalidation and the episode metadata are all done and live. **The
 archive.** ⚠️ **One thing remains:** the Apple Podcasts show URL is not on `/downloads/` — the Subscribe
 block links the feed and Spotify only. **Add it, with a `link_baseline.tsv` row so `link-check.yml` notices
 if it dies.**
+
+### ⚠️⚠️ THE PUBLISHED PODCAST IS BEHIND THE CORPUS ON 35 OF 38 EPISODES. The header above says COMPLETE. For the audio layer it is not.
+
+Measured 14 September 2026 by re-running `md_to_speech.py --out` to a scratch directory and **comparing the
+per-chunk `sha256` in each `scripts/speech/*/manifest.json` against a fresh render**. This is exact, not an
+mtime guess. ⚠️ **The mtime guess was WRONG** — it flagged 36 documents; two of those (`on_ice_communication`,
+`positions__center`) render **byte-identical spoken text** and must not be re-billed. **16 source files share
+one 12 Sep 08:01 timestamp, so a single sweep inflated the mtime signal.** The whole corpus re-renders in
+**9 seconds**, so there is no reason to ever guess this again.
+
+| | documents | billed characters |
+|---|---|---|
+| Spoken text **identical** — do not re-bill | 2 | — |
+| Spoken text **changed** | **35** | |
+| — full re-synthesis of those 35 | | **6,027,392** |
+| — **only the chunks whose hash changed** | | **1,974,258** (**32%**) |
+
+**The delta is the finding.** Two thirds of a full re-synthesis would re-pay for audio that is already
+correct. The spread is wide and it is not proportional to document size: `hockey-iq__risk_management` has
+**3 new chunks of 81** (8,206 chars against 184,202 for a full run — **4%**), while `foundation__rink_map`
+after this cut has **39 new chunks of 44** and is effectively a whole new episode. ⚠️ **An earlier version of this row said 43; the staged text renders to 44, verified twice.**
+
+⚠️ **WHETHER A DELTA RUN IS POSSIBLE IS UNVERIFIED, AND THE ANSWER IS NOT IN THIS REPOSITORY.** The manifest
+carries a `sha256` per chunk and each chunk is its own `NNN.ssml` file, so the *inputs* are addressable. But
+**the TTS synthesis step is not in this repo** — `md_to_speech.py` stops at SSML, `build_podcast_audio.py`
+encodes existing **masters** to web m4a, and `upload_podcast_audio.sh` ships them. **Nothing here turns SSML
+into a master.** So "regenerate 32%" is a property of the data, **not a demonstrated capability of the
+pipeline**. Establish that before quoting the saving as a plan.
+
+**The feed itself is correct and must not be "fixed".** 37 items, one rink-map episode, title updated to
+**"Rink Map"**, while the **GUID and enclosure URL keep the old `rink_map_and_glossary` slug**. ⚠️ **That is
+deliberate: changing a published episode's GUID or enclosure re-downloads it for every subscriber or orphans
+it in their app.** The staleness is in the audio behind the URL, not in the addressing.
+
+⚠️ **Nothing detects any of this.** `check_links` passes because the feed's URLs resolve; no tool compares a
+manifest against its source; and the episode title being current makes the listing *look* current. **Audio is
+the only layer where this corpus can silently serve text that no longer exists** — and it is the layer with
+the most listeners per correction, because a listener gets one sentence with no surrounding context.
+
+Also recorded so nobody re-investigates: **`scripts/speech/foundation__rink_map_and_glossary/` is an orphaned
+manifest directory** whose `source` names a file that no longer exists — the only dangling manifest source of
+the 38. Six comments in `check_geometry.py`, `check_disclosures.py` and `check_zones.py` still name the old
+`.md` path; **comments only, no behaviour.** ⚠️ **`site/src/diagrams/rink_map_and_glossary.mjs` keeps its
+name legitimately — it is a real file and must not be swept.**

@@ -1742,7 +1742,7 @@
   "the-trapezoid": {
     "id": "the-trapezoid",
     "owner": "content/foundation/rink_map.md",
-    "caption": "The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the goal line, widening to 28 ft at the boards, shaded here at NHL dimensions.",
+    "caption": "The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the goal line, widening to 28 ft at the boards, shaded here at NHL dimensions. Playing the puck behind the goal line outside it is a two-minute delay-of-game minor; the rule text’s one exception is a goaltender keeping skate contact with the crease, which excuses playing the puck and never freezing it; and the IIHF’s Situation Handbook adds two more — a puck stopped on the goal line, and one that only deflects into you. USA Hockey and Hockey Canada mark no trapezoid, but both still stop the goaltender at the centre red line and limit where the puck may be frozen. In England and Wales, England Ice Hockey’s Rule 22.3 says the area is not currently enforced — which frees where a goaltender may play the puck and never where they may freeze it. Two things stay legal either way and have to travel with that: coming out to cut down the angle, making the save and covering the puck (IIHF 63.2(VI)), and a goaltender actually being checked (63.2(VII)). Cover the rebound.",
     "describe": "The attacking half of the rink, the net at the right. The area behind the goal line is shaded between the two red trapezoid lines, which begin either side of the goal and splay outward to the end boards: narrower at the goal line, wider at the boards. No players are drawn.",
     "title": null,
     "half": true,
@@ -1766,7 +1766,7 @@
   "the-goal-crease": {
     "id": "the-goal-crease",
     "owner": "content/foundation/rink_map.md",
-    "caption": "The goal crease — the blue paint — shaded here: 8 ft wide at the goal line, 6 ft deep, extending 4 ft up as a volume, not a floor.",
+    "caption": "The goal crease — the blue paint — shaded here: 8 ft wide at the goal line, 6 ft deep, extending 4 ft up as a volume, not a floor. Three of the four books put the red boundary line itself inside the crease — the IIHF, USA Hockey and Hockey Canada — and the NHL never says either way. Keep your skates off the red line, not merely out of the blue paint. No shading can draw an edge that fine.",
     "describe": "The attacking half of the rink, the net at the right. The goal crease is shaded: it is eight feet wide where it meets the goal line, a short straight side runs out from each end of that width, and the two are joined by an arc that reaches six feet out from the goal line at its deepest point, so the shape bulges into the zone rather than back toward the end boards. The goal stands on the goal line behind it, and is narrower than the crease. No players are drawn.",
     "title": "The goal crease",
     "half": true,
