@@ -1310,3 +1310,43 @@ spent effort making two of them *audibly optional* — which mitigates the instr
 | ⬜ | ⚠️ **Whatever is decided, the two qualifications the owner carries must travel with it: 18% of Rowland's effect sizes were NEGATIVE, and the benefit is a RETENTION benefit — g = 0.41 under a day against g = 0.69 at a day or more.** So *"skipping costs you nothing"* is false **and** *"skipping costs you 0.50"* would also be false. The repaired preambles assert neither, deliberately. |
 | ⬜ | **A preamble template now exists in three files** — `rules_primer.md`, `getting_started.md`, `special_teams.md` — and **the third was adopted from the first rather than invented**, so the corpus has one form rather than three variants. **The remaining 33 still carry the old imperative.** Sweep direction unchanged: correct the 33 toward the template, never the reverse. |
 | ⬜ | ⚠️ **Q2–Q7 of `special_teams.md` and Q1–Q8 of `getting_started.md` were checked only for staleness caused by TODAY's edits.** Their premises were not re-attacked against their own sections. **A question that was already wrong before today survived that pass unseen**, and this corpus has shipped exactly that defect before — commit `c8ab508` records one. |
+
+### ⚠️ CHUNK HEADROOM IS PER-SECTION, AND MEASURING ONE SECTION TELLS YOU NOTHING ABOUT ANOTHER
+
+**Measured 14 September 2026, by an agent that hit it.** A brief handed it a headroom measurement for
+`rules_primer.md`'s `## Key focus` — **321 characters free of `MAX_BILLED_CHARS = 2800`**, with the first
+split modelled at about +90 words. It added twelve words to a **Key Takeaway** instead, and **that section
+was ~10 characters from the limit**: the document's closing sentence, *"Ask, and ask before your first
+shift."*, was silently pushed into **a 37-character chunk of its own**. Chunk count went 235 → 236. It
+tightened the clause twice to get back inside.
+
+⚠️ **Nothing warns you.** `check_facts.py`, `check_links.py` and `check_absolutes.py` all pass on a
+document whose closing imperative has just become a standalone fragment. **Only rendering and comparing the
+chunk count sees it.**
+
+| | |
+|---|---|
+| ⬜ | **Say this in the brief whenever an edit adds words to a voiced layer**: render before, render after, compare the chunk count — **per section, not per document.** |
+| ⬜ | **A `check_chunk_splits.py`-adjacent check could catch it cheaply**: flag any chunk under some small length, since a 37-character chunk is almost always an accident. **Worklist, not a gate** — a genuinely short final section is legitimate. |
+| ⬜ | ⚠️ **Two boundary moves were ACCEPTED in `rules_primer.md` after checking nothing safety-bearing was severed**, and one of them left a stray pointer — *"Body Contact and Battles covers how to take one."* — at the head of the next chunk, heard alone before a topic change. **That chunk is at 2,769 of 2,800, so the pointer cannot be pulled back without cutting something else.** A `check_pointers.py`-shaped orphan created by a repair, recorded rather than hidden. |
+
+### Pre-existing: three documents give USA Hockey's checking classifications as a CLOSED list
+
+The release fixed this in `rules_primer.md` (a `safety-reviewer` blocking finding) and in `rink_map.md`
+(our own new text). ⚠️ **A coordinator census found the same shape in three documents this release did not
+touch**, each citing 604(a)'s classifications with **neither** the local-governing-body clause (*"may
+prohibit body checking in any classification"*) **nor** 604(b) (*"any time a team from a Competitive
+Contact category … plays a team from a Body Checking category, body checking shall be prohibited"*)
+anywhere in the file:
+
+| File | Site | Shape |
+|---|---|---|
+| `systems/faceoffs.md` | ~`:576` | a ` ```facts ` `Rule:` value — **voiced alone** |
+| `reading-diagrams/reading_ice_hockey_diagrams.md` | ~`:11` | the header blockquote |
+| `systems/neutral_zone_systems.md` | — | cites 604(a) in charging material; **read it before assuming it is the same shape** |
+
+⬜ **Not repaired in release one, deliberately**: the plan bounds the release, and each of these sits beside
+an *"ask your league"* instruction, which is the safe act. ⚠️ **But a reader who has just been told in a
+closed list that their classification is fine has no reason to ask.** The `faceoffs.md` one is the worst
+because it is voiced alone. **Read each before fixing — a bare count is not the defect shape, and that is
+how the census produced four candidates of which only one was ours.**
