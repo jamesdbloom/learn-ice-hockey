@@ -28,6 +28,23 @@ system, opponent, or game state. The implementation must therefore extract the
 small set of cross-scenario principles that guide the rest of the corpus, rather
 than leaving them scattered across position and systems pages.
 
+The authorial voice should be authoritative, direct, and useful. State the
+principle and the action plainly. Use a reference or brief evidence note when it
+supports the point, changes confidence, or helps the reader decide what applies.
+Do not make the main teaching path narrate the project's research process with
+repeated phrases such as “this could not be verified,” “no source was found,” or
+“the corpus has not checked this” when that uncertainty does not change what the
+reader should do. Such process noise weakens the authority and buries the value
+of the lesson.
+
+This is not permission to erase honest uncertainty. A disclosure stays when the
+evidence quality, source disagreement, scope limit, or inability to verify is
+material to how the reader should weigh or apply the claim. Make it concise,
+reader-facing, and adjacent to the claim; move extended provenance, search
+history, and verification detail to the Sources/reference layer. Never replace a
+required safety, rule-set, age, league, or medical qualification with a vague
+confidence statement.
+
 This plan is for an implementation agent. It is not permission to make a blind
 corpus-wide shortening pass.
 
@@ -48,12 +65,16 @@ corpus-wide shortening pass.
    realistic alternative, the changed job, and the instruction to ask the coach.
 6. Preserve the facts layer, Common Mistakes, Key Takeaways, Sources, and audio
    contracts unless the owning renderer is deliberately changed and tested.
-7. Do not add diagrams just to equalise document counts. Use diagrams for space,
+7. Use an authoritative voice: lead with the supported conclusion and practical
+   consequence, attach evidence where it adds value, and keep process disclosures
+   brief and out of the primary path unless they alter the reader's decision.
+   Never strip a material honest disclosure merely to sound confident.
+8. Do not add diagrams just to equalise document counts. Use diagrams for space,
    sequences for movement, demonstrations/video for body mechanics, and prose or
    checklists where visuals add little.
-8. Do not touch `infra/`. Do not deploy or push. Ask before any destructive,
+9. Do not touch `infra/`. Do not deploy or push. Ask before any destructive,
    outward-facing, or hard-to-reverse operation.
-9. Keep file ownership disjoint between agents. Agents do not edit
+10. Keep file ownership disjoint between agents. Agents do not edit
    `project/plans/`, `project/reviews/`, `scripts/`, or shared diagram outputs.
    The coordinator owns shared-state writes and tool changes.
 
@@ -271,6 +292,12 @@ reference; do not imply that the listener can hear it.
 - The primary pilot path is fully understandable without answering, clicking to
   reveal an answer, or performing an activity. Optional exercises remain visibly
   and audibly optional.
+- A fresh content review confirms that the primary path uses direct,
+  authoritative teaching language: supported conclusions and actions come first,
+  useful evidence is attached where it matters, and verification-process history
+  is absent unless it changes the reader's decision. Every retained uncertainty
+  is concise, reader-facing, materially relevant, and preserved in the required
+  spoken/summary layers.
 
 ## Phase 2: create a short primary path inside long documents
 
@@ -306,15 +333,23 @@ For each pilot:
 6. Put rationale, detailed rule comparisons, research methodology, edition
    archaeology, and non-essential alternatives under clearly named deeper
    sections or linked reference documents.
-7. Make Common Mistakes and Key Takeaways short, memorable, and actionable;
+7. Rewrite in an authoritative voice: say what the reader should understand and
+   do before explaining why. Add evidence or a reference when it materially
+   supports the instruction; do not lead with research history or the fact that
+   an agent searched for a source.
+8. Keep material uncertainty adjacent to the claim in one concise reader-facing
+   disclosure. Move extended source provenance, search history, and verification
+   mechanics to the Sources/reference layer. Do not remove a disclosure when it
+   changes how the reader should weigh or apply the claim.
+9. Make Common Mistakes and Key Takeaways short, memorable, and actionable;
    retain their corrective counterweights and scope qualifiers.
-8. Compare the facts block with the new body and summaries independently. The
+10. Compare the facts block with the new body and summaries independently. The
    facts layer is a separate spoken layer, not a reason to assume body coverage.
-9. Build a propagation matrix for each changed principle: body, facts or an
+11. Build a propagation matrix for each changed principle: body, facts or an
    explicit no-facts decision, Common Mistakes, Key Takeaways, diagrams/captions,
    sibling documents, source trailer, and spoken output. No row may be marked
    complete from a document-level grep alone.
-10. Measure the new primary path in readable words, headings, key principles,
+12. Measure the new primary path in readable words, headings, key principles,
     and separate reading/audio time. Report what was reduced and what was
     deliberately retained.
 
