@@ -1233,3 +1233,54 @@ siblings anyway and found four, including one that appeared in no brief, no plan
 | ⬜ | **Schulte et al. (2017), doi:10.1007/s10618-017-0496-z — UNREACHABLE, not absent.** Springer 303s to a cookie wall, the browser was blocked from the domain, Semantic Scholar confirms `isOpenAccess: false` with no open PDF. It is titled *"…valuing actions, **locations**, and team performance"* and is the most likely remaining falsifier of the turnover-location disclosure. **The open Routley MSc thesis was read instead: it values actions by zone but publishes zone splits for faceoffs only.** |
 | ⬜ | ⚠️ **`rules_primer.md:848`'s six-column, 23-row table is dropped from the audio and costs a listener 5,616 readable words — 69% of §10.** It was read against its surrounding prose this round: **22 of 23 rows survive in voiced form; one did not**, and that one was penalty-bearing (two equipment misconducts eject you in Britain with no foul against anybody). **That gap is now voiced. The table was not deleted or split, deliberately** — a wide comparison table that cannot be read aloud is often the correct state. |
 | ⬜ | **The principles index is unchecked by construction.** `check_facts.py`'s `IN_SCOPE_LAYERS` excludes `foundation/`, so any ` ```facts ` block in `content/foundation/core_principles.md` gets **no mechanical check at all** and needs `facts-reviewer` by hand. |
+
+## ⚠️⚠️ THE FINDING OF THE ROUND — a repair pattern that removes its own safety net
+
+**Opened 14 September 2026, by the `content-reviewer` pass over the readability release. Read this before
+repairing any absence claim, anywhere in this corpus.**
+
+This corpus makes absence-of-evidence claims — *"no study was found"*, *"nobody publishes a ranking"*. Round
+59 established that they must be **attacked**, and `scripts/check_disclosures.py` exists to list them so they
+can be. This round attacked four and found two defective.
+
+**The repairs replaced each failed search with an asserted MECHANISM** — a sentence saying *why* no
+measurement exists rather than *that none was found*. That looks strictly stronger, and the agents that wrote
+them said so: *"it says WHY no count exists instead of asserting that none was found, which is strictly
+stronger and is not vulnerable to the failure where every attacked absence claim has turned out false."*
+
+⚠️ **It is the opposite. The reviewer stated the general lesson:**
+
+> **Converting an absence claim into a mechanism removes it from the corpus's own disclosure worklist while
+> making it a stronger claim.**
+
+**`check_disclosures.py` searches for absence vocabulary.** The moment a sentence stops saying *"not found"*,
+**the tool stops seeing it** — exactly when the claim became harder to defend. The reviewer ran it and
+confirmed **it flags none of the four new mechanism sentences.**
+
+**And two of the four were false on arrival, both falsified from inside reach:**
+
+- `risk_management.md` asserted *"a bad pass out of your own zone is not a category anything counts"* — while
+  **a table 130 lines above it in the same document** prices *"Failed dump-out of your own zone ≈ 0.003 xG"*,
+  and its own Sources trailer cites **roughly 230,000 tracked zone exits split by whether the exit succeeded.**
+- `playing_without_the_puck.md` asserted that penalties and puck events **exhaust** what is counted in amateur
+  hockey — falsified by a study in **the bibliography of the document it names as its authority**: 249
+  video-coded head-contact events across 48 amateur games, **~67% of them within the rules**, so neither a
+  penalty nor a puck event. ⚠️ **And the consequence is not pedantic: if researchers can video-code 48 amateur
+  games, the reason nobody has ranked amateur off-puck errors is that NOBODY HAS DONE IT — not that only two
+  things get counted. The mechanism was not the reason.**
+
+| | |
+|---|---|
+| ⬜ | **Decide what the rule is.** Candidates: a mechanism claim must cite the source that establishes the mechanism; or it must keep an absence clause so the tool still sees it; or `check_disclosures.py` grows a second detector for *"what is counted is X and Y"* shapes. **None of these is obviously right and the choice is the owner's.** |
+| ⬜ | **Audit the mechanism sentences this round created**, in `risk_management.md` and `playing_without_the_puck.md`. Repairs dispatched; **the repairs are themselves new text and have not been reviewed.** |
+| ⬜ | ⚠️ **The narrow true proposition both borrowers overreached from is `neutral_zone_systems.md`'s**, which is sound and carries its own limits — *"Both are NHL, and one is a single hand-tracker's data"*. **It is about BREAKDOWNS, not about what gets counted at large, and every borrowing of it so far has widened it.** |
+
+### Smaller rows opened alongside it
+
+| | |
+|---|---|
+| ⬜ | ⚠️ **The technique cue *"your shoulder and hip turn toward the checker"* appears in exactly THREE places in the corpus, all in `rules_primer.md`, and is in NEITHER the owner document (`body_contact_and_battles.md`) nor any source on disk.** It is compatible with everything around it and contradicts nothing — **and that is the entire extent of what can be said for it.** A body-position instruction at twenty miles an hour, with no owner and no source. |
+| ⬜ | **The five books state the icing timing test in TWO different shapes, and a grep for one finds none of the other.** NHL and IIHF timestamp the **penalty expiry**; USA Hockey, Hockey Canada and CARHA timestamp the **shot**. They converge on the same outcome. ⚠️ **A verifier grepping the NHL's sentence across the other three books gets zero and would report a false absence.** |
+| ⬜ | ⚠️ **CARHA writes BOTH sides of hold-your-ground and does not reconcile them.** Rule 49(a) penalises a player who *"stands in front of an opponent for the purpose of making contact, and/or does not avert body contact"*; **Rule 66(a) Note 2** says *"the defending players are **entitled to 'stand their ground' or 'shadow'** the attacking players."* Verified directly. **An earlier record in this round said CARHA "inverts the rule outright" — that is over-broad and the record is corrected.** Also: *"not required to move"* is in **three** books, not four — the verifier counted IIHF twice. |
+| ⬜ | **`center.md` and `site/src/diagrams/center.mjs` were DELIBERATELY not swept** to match `risk_management.md`'s repaired turnover disclosure. Their claim defends **the middle of your own defensive zone**, which the study in question never prices — it prices the offensive blue line. **Treating them as the same defect would be the consistency sweep that corrects the wrong document.** They may still want the *"say what was searched"* treatment. |
+| ⬜ | **`special_teams.md` and the six propagated documents now both call the icing exemption "conditional" but count the conditions differently** — one states a total, the others deliberately avoid one. Both defensible; **a post-wave cross-file read is the only thing that settles whether they clash read aloud.** |
