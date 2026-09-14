@@ -1771,7 +1771,7 @@ The full corpus:
 
 **Entry point:** `getting_started.md`
 
-**Foundation:** `rink_map.md` · `rules_primer.md` · `on_ice_communication.md` · `uk_rules.md`
+**Foundation:** `core_principles.md` · `rink_map.md` · `language_and_glossary.md` · `rules_primer.md` · `on_ice_communication.md` · `uk_rules.md`
 
 **Positions:** `positions/center.md` · `positions/defender.md` · `positions/winger.md` · `positions/goaltender.md` · `switching_positions.md` *(root, not `positions/`)*
 
@@ -1788,6 +1788,14 @@ The full corpus:
 **Reading diagrams:** `reading_ice_hockey_diagrams.md`
 
 Link only to documents on this list. Assume every one of them exists.
+
+⚠️ **The PATHS in this list are stale and the NAMES are the part to trust.** It describes documents as
+living at the repository root; they live under `content/` in eight directories, and the real relative
+paths are whatever `check_links.py` validates — which is the actual gate. The list was also two names
+short until 14 September 2026: `language_and_glossary.md`, which was split out of the old
+`rink_map_and_glossary.md`, and `core_principles.md`, which is new. **A document missing from this list
+is unlinkable by this rule while being perfectly linkable in fact**, which is the wrong way round — so
+when you add a document, add it here in the same commit.
 
 ---
 

@@ -2,8 +2,52 @@
 import Base from '../layouts/Base.astro';
 import { LAYERS, READING_ORDER, DOC_COUNT } from '../data/nav';
 import { SITE_DESCRIPTION } from '../consts';
+import pathwayData from '../data/pathways.json';
 
 const first = READING_ORDER[0];
+
+/*
+  Entry points, from src/data/pathways.json. Four of them are doors onto the
+  four routes that already exist inside getting_started.md — the routes name
+  SECTIONS rather than documents, and they stay in the document because that is
+  where their caveats live ("each route is in priority order", "the one-line
+  descriptions are signposts, not summaries", "no route replaces asking your
+  club"). Duplicating ~90 deep anchors into site data would copy the list and
+  leave the caveats behind.
+
+  ⚠️ status 'draft' MUST NOT RENDER. TWO pathways are draft today, and an earlier
+  version of this very comment said "one" — which was false, eleven lines above a
+  comment that exists solely to record that an earlier comment in this file was
+  false. A commit-gate caught it.
+
+    · parent-of-a-new-player — the U10/parent entry point the plan requires. The
+      corpus has the material and no route written for that reader, and a label
+      describing a U10 reader holds only after a named safety reviewer has verified
+      the jurisdiction, contact rules, equipment assumptions and supervision context.
+    · core-principles — the document this release created. It is draft until fresh
+      reviewers have read the document itself, not the pathway.
+
+  Filtering here rather than omitting the rows keeps both gaps visible in the data.
+  ⚠️ Count the drafts in pathways.json before editing this comment; do not trust it.
+*/
+const pathways = pathwayData.pathways.filter((p) => p.status === 'reviewed');
+
+/*
+  ⚠️ The Getting Started layer is deliberately NOT rendered in the catalogue below.
+  It is a one-document section, and every one of the entry points above lands inside
+  that very document — four of the five link to its own route anchors — while the hero
+  button reads "Start with Getting Started". Rendering it again as a lone catalogue card
+  was the same door a third time. Owner's instruction, 14 September 2026.
+
+  ⚠️ IT IS REMOVED FROM THIS PAGE'S CATALOGUE ONLY. The document is untouched, keeps its
+  route, and is still in structure.json, nav.ts, the sidebar on every page, PrevNext,
+  search, the sitemap and the RSS and podcast feeds. DOC_COUNT is computed from nav.ts,
+  so "Search all N documents" is unaffected and still counts it. Do not "fix" the
+  apparent mismatch between the hero's count and the number of cards rendered here.
+*/
+const catalogue = LAYERS.filter((layer) => layer.id !== 'getting-started');
+const hrefFor = (p: (typeof pathwayData.pathways)[number]) =>
+  'doc' in p.entry ? `/${p.entry.doc}/#${p.entry.anchor}` : `/${p.entry.layer}/`;
 ---
 
 <Base description={SITE_DESCRIPTION} bare={true}>
@@ -37,11 +81,15 @@ const first = READING_ORDER[0];
       </ul>
       {/*
         These five are the site's own ON-ICE layers, in structure.json's order. ⚠️ THEY ARE
-        NOT ALL SEVEN SECTIONS RENDERED BELOW, and an earlier version of this comment said
+        NOT ALL THE SECTIONS RENDERED BELOW, and an earlier version of this comment said
         they were — which was false and would have told the next editor the page was
-        consistent when it was not. SEVEN sections render here; Getting Started and Off the
-        Ice are the two that are not on-ice layers, and the site says so itself in their
-        own taglines: "Before everything else" and "Underneath all five layers". The word
+        consistent when it was not. ⚠️ UPDATED 14 September 2026: SIX sections render here,
+        not seven. Getting Started was dropped from the catalogue on the owner's
+        instruction because the entry points above lead into it three times over, so
+        Off the Ice is now the ONLY rendered section that is not an on-ice layer, and the
+        site says so in its own tagline: "Underneath all five layers". Getting Started's
+        tagline, "Before everything else", is still live everywhere the layer still
+        appears — the sidebar, search, the sitemap, the feeds. The word
         "on-ice" in the paragraph above is what makes the count true, and the previous lede
         carried it. A draft that dropped it left the page claiming five while rendering
         seven. Do not remove it.
@@ -61,8 +109,33 @@ const first = READING_ORDER[0];
       </div>
     </section>
 
+    <section class="layer-section" id="start-here">
+      <div class="layer-section__head">
+        <h2>Where do you want to start?</h2>
+        {/* Counted from what actually renders, not written as a literal — one pathway is
+            draft and filtered out above, and a hard-coded number would have been wrong. */}
+        <span class="layer-section__tagline">{pathways.length} ways in</span>
+      </div>
+      <p class="layer-section__blurb">
+        Each of these lands you in the middle of a document rather than at the top of one,
+        because what you need before Saturday is a handful of sections, not a reading list.
+        Everything else is below, and the full contents stay one click away from every page.
+      </p>
+      <div class="card-grid">
+        {
+          pathways.map((p) => (
+            <a class="card" href={hrefFor(p)}>
+              <span class="card__title">{p.title}</span>
+              <span class="card__desc">{p.blurb}</span>
+              <span class="card__meta">{p.effort}</span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
     {
-      LAYERS.map((layer) => (
+      catalogue.map((layer) => (
         <section class="layer-section" id={layer.id}>
           <div class="layer-section__head">
             <h2>{layer.title}</h2>

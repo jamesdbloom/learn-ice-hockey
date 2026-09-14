@@ -1,6 +1,6 @@
 # Ice Hockey Documentation Project
 
-A corpus of 38 documents teaching people to play ice hockey, plus an Astro site
+A corpus of 39 documents teaching people to play ice hockey, plus an Astro site
 and a text-to-speech pipeline that publish it.
 
 ---
@@ -476,7 +476,7 @@ whichever one wrote first.
 ## Repository layout
 
 ```
-content/            The corpus. 37 documents in eight DIRECTORIES. The product.
+content/            The corpus. 39 documents in eight DIRECTORIES. The product.
                     ⚠️ Eight directories, SEVEN sections on the site, and both numbers are
                     right. site/src/data/structure.json groups reading-diagrams/ inside
                     Foundation, so the nav and the home page show seven. check_counts.py

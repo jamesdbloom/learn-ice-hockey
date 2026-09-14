@@ -233,12 +233,22 @@ const theRiskMap = {
     // legibility caveat, an undefined-edges caveat and a note about turnover direction.
     // Round 58 verified the invariant that no tactical prose is ambered anywhere; painting
     // honest limits in the safety colour is how a reader learns to discount the amber that
-    // does matter. Every word below is unchanged — only the glyph went.
+    // does matter.
+    //
+    // ⚠️ The caption's first limit was REWRITTEN on 14 September 2026 and is no longer 'every
+    // word unchanged'. It carried the document's flat 'no study ranking turnovers by where on
+    // the ice they happen was found for it' — and one of the five regions it draws has since
+    // been priced, so the caption was voicing a superseded absence claim INSIDE the document
+    // that had already corrected it. The surviving half — that nothing ranks the five against
+    // one another — is still true and is the half that matters. Figures stay with their owner
+    // in risk_management.md; a caption states that a price exists, never what it is.
     'should be at your most creative. Three honest limits, and the first one matters most. ' +
     'This ordering is coaching consensus, reasoned from shot danger and from how long a ' +
-    'turnover takes to become a shot on your net — it is not a measured ranking, and no study ' +
-    'ranking turnovers by where on the ice they happen was found for it, so take the order of ' +
-    'these five regions rather than the labels on them. Take that order from the words, ' +
+    'turnover takes to become a shot on your net — no source found here ranks these five regions ' +
+    'against one another, so take the order rather than the labels on them. One of the five has ' +
+    'since been priced on its own: a turnover at the band on their blue line carries a tracked ' +
+    'cost, from one league at five-on-five, and it is a reason to keep that band where it is ' +
+    'rather than to darken it. Take that order from the words, ' +
     'though, and not by ranking the tints against each other: the reds do run in order, but ' +
     'their end is drawn in blue rather than red, and a light blue prints darker than the ' +
     'faintest red in greyscale, on a photocopy or on e-ink. Nothing here is marked on a real ' +

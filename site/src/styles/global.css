@@ -1838,6 +1838,85 @@ figcaption .warn-inline {
   color: var(--text-muted);
 }
 
+/* The effort line on a pathway card ("About an hour, in priority order"). A third
+   <span>, so it needs its own display for the same reason __title and __desc do —
+   see the note above them. Deliberately quieter than __desc: it is a cost, not a
+   description, and it should not compete with the blurb for the first read.
+
+   ⚠️ Quieter via --text-faint, NOT via opacity. The first version of this rule
+   used `color: var(--text-muted); opacity: 0.85`, which composites #5b5f66 on
+   white to rgb(116,119,125) — 4.49:1, under the 4.5:1 floor this 13px text
+   needs. It failed by 0.01 and nothing would have caught it: contrast is
+   arithmetic, and no checker in this repo computes it. --text-faint exists for
+   exactly this job and the note beside its declaration records its ratio;
+   ⚠️ AND THEN THE NEXT EDIT IN THIS SAME RELEASE BROKE IT AGAIN, which is the more
+   useful half of the story. `#start-here .card` below repaints those cards with an
+   --accent-soft ground, and .card__meta exists in exactly FIVE places in the whole
+   repository — those five cards. So the two edits touch the same and only elements,
+   and changing the ground changed the ratio: --text-faint measures 4.49:1 on the tint
+   in light (marginally WORSE than the 4.4896 it was introduced to fix) and 3.98:1 in
+   dark. A site-reviewer measured it on the painted page.
+
+   ⚠️ An earlier version of this comment claimed "5.21:1 light and 5.26:1 dark". The
+   light figure was right; THE DARK ONE WAS NEVER RIGHT — 5.26 is --text-faint on --bg,
+   the page background, and .card__meta never renders there. It only ever renders
+   inside a .card. Do not trust a contrast figure that does not name its ground.
+
+   So: --text-muted, measured on the tint at 5.53:1 light and 5.92:1 dark. It matches
+   .card__desc's colour, and that is accepted deliberately — the 13px/14px size step
+   and the margin-top already carry the cost-vs-description hierarchy the note above
+   describes, and AA outranks a colour step. */
+.card__meta {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+/*
+  The homepage entry points (#start-here). ⚠️ THIS RULE EXISTS BECAUSE WITHOUT IT THE
+  SECTION WAS INVISIBLE. A site-reviewer measured the five entry cards against the 39
+  catalogue cards below them at 375, 768 and 1280 in both themes and found every computed
+  value identical — same background, same 0.667px border, same 6px radius, same padding,
+  same box-shadow:none, same 17px/650 title. The page carried 44 .card elements in 8
+  identically-styled section.layer-section blocks and nothing visual said which was the
+  door. The distinction was carried entirely by the copy — first-person card titles
+  against catalogue nouns — which is exactly the signal a reader skimming a card grid
+  does not receive.
+
+  Deliberately restrained: an accent rail and a tinted ground, not a different component.
+  These lead INTO the catalogue rather than competing with it, and the catalogue is the
+  thing a returning reader wants. --accent-soft is the existing token for this job and
+  carries its own contrast note.
+
+  ⚠️ BUT REPAINTING THE GROUND REPRICES EVERY TEXT COLOUR ON IT, AND AN EARLIER VERSION
+  OF THIS COMMENT SAID THE OPPOSITE — "text colours are untouched, so the .card__meta
+  ratio measured at 5.21:1 light / 5.26:1 dark still holds over the tint." It did not
+  hold: --text-faint fell to 4.49:1 light and 3.98:1 dark on this tint, and the dark
+  figure quoted was never a figure for .card__meta at all. See the .card__meta note
+  above, which is now --text-muted at 5.53:1 light and 5.92:1 dark measured on this
+  ground. Leaving a `color` declaration alone does not leave its contrast alone.
+*/
+#start-here .card {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+}
+
+#start-here .card:hover {
+  border-color: var(--accent);
+  border-left-color: var(--accent);
+}
+
+/* The arrow is decorative and additive: it is not the only cue, because the rail and the
+   ground carry the signal on their own for anyone who does not render pseudo-elements. */
+#start-here .card__title::after {
+  content: " \2192";
+  color: var(--accent);
+  font-weight: 400;
+}
+
 /* -------------------------------------------------------------- search --- */
 
 .search-wrap {

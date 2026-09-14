@@ -1,0 +1,194 @@
+{
+  "$comment": "Homepage entry points. ⚠️ THE ORDERING OF EACH PATHWAY IS NOT HERE ON PURPOSE. Four of these point at the four routes in content/getting-started/getting_started.md, which name SECTIONS rather than documents, are in deliberate priority order, and carry their own caveats — that each route is in priority order, that the one-line descriptions are signposts and not summaries, and that no route replaces asking your club. Copying ~90 deep anchors into site data would create a second, unreviewed copy of a maintained list, would put the caveats on the wrong side of the copy, and would take those anchors out of scripts/check_links.py's reach. The document owns the route; this file owns the door. `docs` below is DERIVED context for search and related links, never the order.",
+  "version": 1,
+  "policy": {
+    "noJavaScript": "These render as plain anchors in static HTML. There is no pathway state, no persistence and no client-side filtering in release one, so there is nothing to fall back FROM — which is the cheapest way to satisfy the plan's no-JS requirement and the reason it was chosen.",
+    "deepLinkFormat": "/{doc-id}/#{github-slugger anchor}. Verified by scripts/check_links.py against the heading text in content/, so a reworded heading fails the gate rather than rotting silently.",
+    "returnToCatalogue": "Every pathway lands inside a normal document page, which carries the full 38-document SidebarNav and the header's Contents link. The complete catalogue is never more than one click away and is not replaced by any pathway.",
+    "searchRanking": "Unchanged in release one. Pagefind currently has no filters and no metadata attributes; faceting by audience is new work, not configuration, and is deliberately deferred.",
+    "keyboard": "Anchors only — native tab order, native focus ring, no custom key handling and no focus traps.",
+    "statusGate": "A pathway with status 'draft' MUST NOT RENDER. Draft means no named reviewer has cleared what it asserts about its reader."
+  },
+  "pathways": [
+    {
+      "id": "core-principles",
+      "title": "The ideas underneath all of it",
+      "blurb": "Seven ideas that survive changing your position, your team and your league — each with an example and its evidence.",
+      "effort": "About twenty minutes. ⚠️ Reading only — this one has no podcast episode.",
+      "readerAudience": [
+        "all-players",
+        "u10-parent",
+        "adult-beginner",
+        "adult-rec",
+        "coach"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "foundation/core_principles",
+        "anchor": "key-focus"
+      },
+      "docs": [
+        "foundation/core_principles"
+      ],
+      "owner": "content/foundation/core_principles.md",
+      "status": "draft",
+      "evidence": "⚠️ DRAFT, AND IT DOES NOT RENDER. The plan requires Core principles to be a first-class homepage entry point, and the document now exists — but it was written today and no fresh reviewer has read it. The plan's own wave order puts reviewers after the author and before the gate, and this project's rule is that a repair is new text and new text has not been reviewed. Flip to 'reviewed' only once content-reviewer, facts-reviewer and safety-reviewer have cleared the document itself. Note also that it has NO EPISODE: the effort line says so, because the plan forbids any audio-facing pointer implying a listener can hear it."
+    },
+    {
+      "id": "first-game",
+      "title": "My first game is this week",
+      "blurb": "You can skate, you have never played a game, and your name is on a team sheet in a few days.",
+      "effort": "About an hour, in priority order.",
+      "readerAudience": [
+        "adult-beginner",
+        "youth-player"
+      ],
+      "prerequisites": [
+        "You can skate well enough to take part in a session."
+      ],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "route-1--your-first-game-is-this-week"
+      },
+      "docs": [
+        "technique/body_contact_and_battles",
+        "foundation/rink_map",
+        "foundation/rules_primer",
+        "off-the-ice/team_play_and_culture",
+        "foundation/on_ice_communication",
+        "off-the-ice/equipment"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "reviewed",
+      "evidence": "Route 1 of the four routes already in the owning document, which opens with whether body checking is permitted where you are playing — before anything tactical."
+    },
+    {
+      "id": "new-position",
+      "title": "I have been put on a position I have never played",
+      "blurb": "Told on Tuesday that you are playing centre on Thursday — or a parent whose child has just been moved.",
+      "effort": "About 45 minutes, plus the position's own document when you have an evening.",
+      "readerAudience": [
+        "adult-rec",
+        "adult-beginner",
+        "youth-player",
+        "u10-parent"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "route-2--you-have-been-put-on-a-position-you-have-never-played"
+      },
+      "docs": [
+        "positions/switching_positions",
+        "positions/center",
+        "positions/winger",
+        "positions/defender",
+        "positions/goaltender",
+        "systems/breakouts",
+        "systems/faceoffs",
+        "systems/defending_the_rush",
+        "systems/defensive_zone_coverage",
+        "technique/skating"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "reviewed",
+      "evidence": "Route 2, which branches four ways by the move being made and finishes on how to tell which system your team plays — the question a player in a new position is least likely to think to ask."
+    },
+    {
+      "id": "watch-and-learn",
+      "title": "I want to follow a game on television",
+      "blurb": "You do not play, or not yet, and you would like a broadcast to stop looking like chaos.",
+      "effort": "About an hour, and the order matters more here than anywhere else.",
+      "readerAudience": [
+        "all-players",
+        "u10-parent",
+        "adult-beginner"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "route-3--you-want-to-follow-a-game-on-television"
+      },
+      "docs": [
+        "foundation/rink_map",
+        "off-the-ice/how_to_watch_hockey",
+        "systems/forechecking_systems",
+        "systems/defensive_zone_coverage",
+        "systems/neutral_zone_systems",
+        "systems/special_teams"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "reviewed",
+      "evidence": "Route 3 — the words first, then the method."
+    },
+    {
+      "id": "playing-in-britain",
+      "title": "I play in Britain",
+      "blurb": "Every level of the game here runs the IIHF book, amended locally — and these documents are written to NHL rules with the differences flagged inline.",
+      "effort": "About an hour, and it is the route with the most riding on it.",
+      "readerAudience": [
+        "all-players"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "route-4--you-play-in-britain"
+      },
+      "docs": [
+        "foundation/uk_rules",
+        "technique/body_contact_and_battles",
+        "foundation/rules_primer",
+        "foundation/rink_map",
+        "off-the-ice/equipment",
+        "systems/faceoffs",
+        "systems/game_management",
+        "positions/goaltender"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "reviewed",
+      "evidence": "Route 4. ⚠️ This axis is not in the plan's list of required entry points. It is in the corpus because a British reader who does not find the amendments early reads the wrong book throughout, and it is kept for that reason rather than to fill a slot."
+    },
+    {
+      "id": "parent-of-a-new-player",
+      "title": "My child is starting",
+      "blurb": "Try-it-once events, learn-to-skate, learn-to-play, age divisions, and what has to be on them before they are allowed on the ice.",
+      "effort": "Read in whatever order suits — this one is not sequenced.",
+      "readerAudience": [
+        "u10-parent"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "3-routes-onto-the-ice--children"
+      },
+      "docs": [
+        "getting-started/getting_started",
+        "off-the-ice/equipment",
+        "positions/switching_positions"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "draft",
+      "evidence": "⚠️ DRAFT, AND IT DOES NOT RENDER. The plan requires a U10/player-parent entry point on the homepage. The corpus has real material for a parent — a children's routes section, age divisions with the instruction not to work them out from a sibling's experience two seasons ago, and the English junior cage requirement — but it has NO ROUTE written for this reader; Route 2 addresses a parent only as a sub-case. Assembling one here would be the coordinator writing a reader-facing path it has not had reviewed, and the plan is explicit that a label describing a U10 reader or age applicability holds only after a named safety reviewer verifies the jurisdiction, contact rules, equipment assumptions and supervision context. That review has not happened. The gap is recorded rather than filled."
+    },
+    {
+      "id": "adult-detail",
+      "title": "I want the detail",
+      "blurb": "Systems, technique and the reading of a play — where a system decides your job, the system is named and an alternative is given.",
+      "effort": "Open-ended. This is the reference half of the site.",
+      "readerAudience": [
+        "adult-rec",
+        "coach"
+      ],
+      "prerequisites": [
+        "Foundation — the rink map, the vocabulary and what is legal."
+      ],
+      "entry": {
+        "layer": "systems"
+      },
+      "docs": [],
+      "owner": "site/src/data/structure.json",
+      "status": "reviewed",
+      "evidence": "The existing section hubs. This entry point exists so that a beginner route does not become the only route — the plan's acceptance criterion — and it deliberately adds no new copy of anything."
+    }
+  ]
+}

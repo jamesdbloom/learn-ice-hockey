@@ -170,9 +170,26 @@ const supportTriangle = {
 // ---------------------------------------------------------------------------
 // 3 — support distance, drawn as a BAND rather than as spots.
 //
-// The section refuses to make this a rule: "There is no governing body that
-// publishes a support distance, and coaches differ. What follows is a
-// widely-taught rule of thumb, not a rule of hockey." A diagram that plants two
+// The section refuses to make this a rule: "No governing body HAS BEEN FOUND TO SET a support
+// distance as a standard, and coaches differ… What follows is a widely-taught
+// rule of thumb, not a rule of hockey."
+//
+// ⚠️ That wording is the REPAIRED one, and the repair is why this comment and the
+// caption below both had to change. The section used to say no governing body
+// *published* a support distance — which was false, and its falsifier was in the
+// document's own Sources list: a USA Hockey coaching article quoting Larry
+// Bruyere's "8-to-10-foot-or-less pass", which the section relies on six lines
+// further down. The surviving claim was narrowed twice on the same day: first to
+// nobody ISSUING one as a standard, then — after the IIHF's own Coach Development
+// manual was read and found to treat Support at length while naming no distance —
+// to "has been found to", because one manual's silence is not a survey of every
+// governing body. ⚠️ The caption must track the section, and it has now been out of
+// step with it TWICE in one day. It is voiced inside the document, so a stale
+// caption is a listener hearing the superseded claim and the repaired one in the
+// same breath — which is exactly how this was found the first time.
+// The caption carried the false flat form too, and md_to_speech puts the caption
+// and that sentence in the SAME CHUNK — so a listener heard the false form and
+// the correction back to back, in one breath. A diagram that plants two
 // or three teammates at fixed distances teaches the coordinates; a band teaches a
 // range, which is what the section actually claims.
 //
@@ -241,8 +258,9 @@ const supportDistance = {
     'than as a spot, because it travels with the puck. The range is eight to ten feet ' +
     'when the carrier is pressured, stretching to about fifteen when they have time — the tighter end is ' +
     'the one figure here with a source behind it, and the ten-to-fifteen default is a widely-taught ' +
-    'coaching rule of thumb rather than a rule of hockey, because no governing body publishes a support ' +
-    'distance and coaches differ. Shorten it under heavy pressure, in your own zone and below the ' +
+    'coaching rule of thumb rather than a rule of hockey, because no governing body has been found to ' +
+    'set a support distance as a standard and coaches differ — read that as none found, not as none ' +
+    'existing. Shorten it under heavy pressure, in your own zone and below the ' +
     'offensive goal line; lengthen it in open ice and above the offensive dots; on wider international ' +
     'ice check the rink first, because distances scale and angles do not. ' +
     'One teammate stands inside the band and is an option; the other is inside its inner edge, which is ' +

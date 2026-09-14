@@ -16,6 +16,7 @@
       "tagline": "Read these first",
       "blurb": "How to read the pictures, what everything is called, what is legal, and the words you shout. The canonical references the rest of the corpus links back to.",
       "docs": [
+        "foundation/core_principles",
         "reading-diagrams/reading_ice_hockey_diagrams",
         "foundation/rink_map",
         "foundation/language_and_glossary",

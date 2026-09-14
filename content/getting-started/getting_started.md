@@ -10,21 +10,29 @@
 >
 > **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Rink Map](../foundation/rink_map.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
+## Key focus
+
+**Before you turn up to any session, ask what gear is required, what standard it is, and whether there is contact** — the words rinks use for these sessions are conventions rather than defined categories, and arriving at a full-contact session expecting a skills session is how people get hurt.
+
+⚠️ **If you play in Britain, a neck laceration protector is mandatory for you at every level in all four home nations, adults included, and in England and Wales it covers training as well as games — an official who finds you without one penalises you on the spot rather than warning you first.** USA Hockey's adult exemption does not reach you. Read [UK and England Rules](../foundation/uk_rules.md) first.
+
+**Start a level below where your pride puts you** — judgement rather than sourced guidance, but a real asymmetry: moving up part-way through a season is easy and welcomed, and moving down is neither. Skating sorts players into levels, not shooting.
+
+**Ask which membership year you are buying, and whether the league is sanctioned, before you pay** — registering is insurance, safeguarding and eligibility rather than paperwork, England Ice Hockey gives no pro-rata discount, and in England insurance follows sanctioning and nothing else.
+
+**The rest is administered locally: your remaining answers belong to a person.** If you are short of time, take whichever of the [four routes](#four-routes-in-when-you-have-an-hour-rather-than-a-season) below fits you. Otherwise [section 10](#10-how-to-find-out-what-applies-to-you) holds the starting points and the questions to ask; sections 1 to 9 are reference, not a reading list.
+
 ## Overview
 
 Hockey is administered locally, so the answer to almost every specific question you have is a person at your rink or your local association rather than anything you can look up.
 
-A national governing body sets the rules, the insurance and the safeguarding standards; the fee, the level names, the session times and the age cut-offs your club uses are decided locally and change every season.
+A national governing body sets the rules, the insurance and the safeguarding standards; the fee, the level names, the session times and the age cut-offs your club uses are decided locally and change every season. That is why this document is mostly not about rules — it is about registration, programmes, tiers and etiquette, and where one of those varies it says so and tells you how to find your own answer.
 
-**The way in is graded, and it starts before hockey.** Public skating or a learn-to-skate class first, then a one-off taster, then a beginners' block of several weeks, then a team or a league. That order is deliberate: the NHL/NHLPA Learn to Play programme says participants are *"strongly encouraged to complete a 'Learn to Skate' program at a local rink before signing up"*, and it applies just as well to adults.
+**The way in is graded, and it starts before hockey.** Public skating or a learn-to-skate class first, then a one-off taster, then a beginners' block of several weeks, then a team or a league. That order is deliberate rather than cautious: the NHL/NHLPA Learn to Play programme strongly encourages a learn-to-skate programme before you sign up for hockey, and it applies just as well to adults. Section 2 quotes the programme itself.
 
-**Start a level below where your pride puts you.** Moving up part-way through a season is easy and welcomed; moving down is not. Skating is what sorts players into levels — not shooting.
+**If you play in Britain, the IIHF flags scattered through these documents are the ones addressed to you**, because every level of the game here runs the IIHF book with domestic amendments on top. [UK and England Rules](../foundation/uk_rules.md) carries the amendment list, and section 1 below covers who governs the game you are joining.
 
-**Registering is not paperwork; it is insurance, safeguarding and eligibility.** The membership year is not twelve months from the day you pay and is not pro-rata — England Ice Hockey's words are that *"pro-rata discounts are not available"* — so ask which year you are buying into first. Cover can also depend on the game being a recognised one: *"EIH participants are only insured through EIH insurance when the game or tournament has been sanctioned by EIH."* Ask whether a league is sanctioned before you join.
-
-**If you are starting in Britain, two things differ from most of what you will read.** Your rule book is the IIHF's rather than the NHL's, at every level of the game here. And a neck laceration protector is mandatory for every player, adults included. The In-House Rules — which IHUK and the British Universities Ice Hockey Association adopt across **England, Wales, Scotland and Northern Ireland**, university hockey included — give **no warning before the penalty**, where the IIHF book itself warns you first; and in England and Wales the requirement covers *"all on ice activities"*, so practices count too. The USA Hockey adult exemption is not yours, and neither is Hockey Canada's narrower requirement. [UK and England Rules](../foundation/uk_rules.md) has the rest.
-
-**Before you turn up to any session, ask what gear is required, what standard it is, and whether there is contact.** The words rinks use for these sessions are conventions rather than defined categories, and arriving at a full-contact session expecting a skills session is how people get hurt. Arrive a full hour before a genuine first one, and never shoot at a goaltender who is not ready.
+**A first session is mostly logistics, and two things catch people out.** Arrive a full hour before a genuine first one, because dressing takes twice as long the first three times as it will afterwards. And never shoot at a goaltender who is not ready. That is the etiquette breach that carries real injury risk, and section 7 gives the signal that tells you a goalie is set.
 
 ---
 
@@ -82,7 +90,7 @@ Whichever new position you have been given, finish with [Defensive Zone Coverage
 **For:** you do not play, or not yet, and you would like a broadcast to stop looking like chaos.
 **Roughly an hour**, and the order matters more here than anywhere else: the words first, then the method.
 
-**The words.** Four sections of [Rink Map](../foundation/rink_map.md) and no more: [4. The three zones](../foundation/rink_map.md#4-the-three-zones--and-the-thing-that-confuses-every-beginner), [5. Named areas of the ice](../foundation/rink_map.md#5-named-areas-of-the-ice), [6. Directional and relational vocabulary](../foundation/rink_map.md#6-directional-and-relational-vocabulary) and [7. Positions and shorthand](../foundation/rink_map.md#7-positions-and-shorthand). Commentary uses all of this constantly and defines none of it. Skip [1. Rink dimensions](../foundation/rink_map.md#1-rink-dimensions-and-why-they-matter), which matters when you are playing on an unfamiliar sheet rather than watching one, and [8. Glossary](../foundation/language_and_glossary.md#glossary), which is a reference.
+**The words.** Four sections of [Rink Map](../foundation/rink_map.md) and no more: [4. The three zones](../foundation/rink_map.md#4-the-three-zones--and-the-thing-that-confuses-every-beginner), [5. Named areas of the ice](../foundation/rink_map.md#5-named-areas-of-the-ice), [6. Directional and relational vocabulary](../foundation/rink_map.md#6-directional-and-relational-vocabulary) and [7. Positions and shorthand](../foundation/rink_map.md#7-positions-and-shorthand). Commentary uses all of this constantly and defines none of it. Skip [1. Rink dimensions](../foundation/rink_map.md#1-rink-dimensions-and-why-they-matter), which matters when you are playing on an unfamiliar sheet rather than watching one, and the [Language and Glossary](../foundation/language_and_glossary.md#glossary) headwords, which are a reference.
 
 **The method.** [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md), Parts 1 to 4 straight through: [Part 1 — Stop Watching the Puck](../off-the-ice/how_to_watch_hockey.md#part-1-the-core-instruction--stop-watching-the-puck), which explains what the broadcast camera is doing to you and gives four exercises to do about it; [Part 2: Seeing the Systems](../off-the-ice/how_to_watch_hockey.md#part-2-seeing-the-systems), which is four things you can literally count on screen; [Part 3: What to Watch at Each Part of the Game](../off-the-ice/how_to_watch_hockey.md#part-3-what-to-watch-at-each-part-of-the-game); and [Part 4: Live Versus Television](../off-the-ice/how_to_watch_hockey.md#part-4-live-versus-television). Then [Watching a winger](../off-the-ice/how_to_watch_hockey.md#watching-a-winger) and [Watching a defenceman](../off-the-ice/how_to_watch_hockey.md#watching-a-defenceman) from Part 6 — the two the camera is least likely to show you.
 
@@ -235,7 +243,7 @@ Learn-to-skate is not a hockey programme and does not need to be finished first 
 - Governing-body registration is included for the programme year. Note the season boundary: USA Hockey *"membership runs Sept 1-Aug 31 annually."*
 - Learn to Play registration is **online only** — *"phone and/or in-person registration at individual rinks will not be accepted"* — and popular sites run waiting lists.
 
-**The First Shift** (NHL/NHLPA with Hockey Canada and Bauer) is the Canadian counterpart: Hockey Canada describes it as a *"6-week learn-to-play program for kids aged 6 to 10 that includes head-to-toe Bauer equipment."*
+**The First Shift** (NHL/NHLPA with Hockey Canada and Bauer) is the Canadian counterpart: Hockey Canada describes it as a *"6-week learn-to-play program for kids aged 6 to 10 that includes head-to-toe Bauer equipment."* **Reach it from Hockey Canada's own pathway page rather than by typing a remembered web address**, because `thefirstshift.ca` led to an unrelated commercial site in July 2026 and to a domain registrar's parking page in September.
 
 > **Verification note:** the domain `thefirstshift.ca` does not reach the programme, and it has failed in two different ways inside six weeks — on 27 July 2026 it redirected to an unrelated commercial site, and on 1 September 2026 it served a domain registrar's parking page instead. `firstshift.ca` itself refuses automated retrieval. The programme description above is quoted from **Hockey Canada's** own pathway page, which links to `firstshift.ca`. **That a remembered domain can be wrong in a new way every few weeks is the reason to reach the programme through Hockey Canada's page rather than by typing one.**
 
@@ -597,12 +605,14 @@ And one more question to ask: **"I'm completely new — who should I talk to?"**
 
 ## Check yourself
 
-*Answer each question before you go on — a real attempt, not a guess. Then go
-and check, because the checking is the part that does the work. Producing an
-answer and getting it wrong is worth more than recognising a right one, but only
-when the right answer follows: the section named with each question, and the Key
-Takeaways after them, are where you get it. Where the answer lives in another
-document, that is named too.*
+*These eight questions are optional, and nothing else in this document depends
+on answering one — skip to the Key Takeaways if you would rather. If you do want
+them, attempt each before you go on, a real attempt rather than a guess, because
+producing an answer and getting it wrong is worth more than recognising a right
+one — and then go and check, since the checking is the part that does the work.
+The section named with each question, and the Key Takeaways after them, are
+where you get it. Where the answer lives in another document, that is named
+too.*
 
 1. You want to know what your season costs and which night you skate. Which of
    the four layers between you and the ice holds that answer, and which layer will
