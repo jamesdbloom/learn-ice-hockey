@@ -1176,3 +1176,60 @@ manifest directory** whose `source` names a file that no longer exists — the o
 the 38. Six comments in `check_geometry.py`, `check_disclosures.py` and `check_zones.py` still name the old
 `.md` path; **comments only, no behaviour.** ⚠️ **`site/src/diagrams/rink_map_and_glossary.mjs` keeps its
 name legitimately — it is a real file and must not be swept.**
+
+---
+
+# Readability and dual-audience — rows opened 14 September 2026
+
+Opened by the release-one work on
+[`READABILITY_AND_DUAL_AUDIENCE.md`](READABILITY_AND_DUAL_AUDIENCE.md). **Evidence for every row is in
+`project/reviews/readability_*_2026-09-14.md`** — the baseline, the wave-1 findings and layer spec, the
+rules verification, and the disclosures-and-corrections record. **Read the owner, not this summary.**
+
+⚠️ **The shape of the round, recorded because it should change how the next one is planned: the release was
+scoped to TWO documents, and the verification the plan itself demanded found defects in ELEVEN more. None
+was in a plan row.** The single highest-yield action was an agent briefed on one file that went looking for
+siblings anyway and found four, including one that appeared in no brief, no plan row and no verifier report.
+
+## ⚠️ Method rows — these are about the coordinator, not the corpus
+
+| | |
+|---|---|
+| ⬜ | ⚠️ **THE CENSUS BELONGS BEFORE THE DISPATCH.** A verifier finding about shorthanded icing was relayed into four briefs **over-broad**, and the one-command `grep` over `content/` that refuted it was run only after the third agent was already working. It also found three more sites at the same time. **`review_process.md` says "a reviewer's quotation is evidence, not verification… re-derive before any quoted string enters `content/`". It does NOT say *including one you are only putting in a brief*, and on this evidence it should.** Owner: `review_process.md`. |
+| ⬜ | ⚠️ **A SECOND RELAY ERROR, CAUGHT BY AN AGENT.** The coordinator described IIHF Rule 101.1 as barring body checking in **all** women's hockey. It does not — it allows it where the puck is the clear object and bars using the boards to eliminate or pin. Had it been carried, `rink_map.md` would have told every woman reading it that her book bans checking, **and `switching_positions.md` already states it correctly, so a later consistency sweep would have corrected the right document into the wrong one.** |
+| ⬜ | **Three agents refuted a coordinator premise this round and every refutation was correct.** The `rules_primer.md` agent alone refuted **five**, including that the §10 table has no Hockey Canada column at all and that the table was already dropped, which made one instruction meaningless. **The instruction to attack the brief is doing the work the record says it does. Do not weaken it.** |
+
+## Tool and renderer rows — ⚠️ change a tool BETWEEN waves, not during one
+
+| | |
+|---|---|
+| ⬜ | **`0:00` is spoken as "zero minutes".** `scripts/md_to_speech.py`'s `_clock_words` suppresses the seconds when they parse as falsy, and `float("00")` is zero. Correct for `2:00`; odd for a countdown. **Four agents hit it independently today and all four rewrote around it.** Decide whether the renderer should special-case it. Sites remain in `language_and_glossary.md` and `goaltender.md`. |
+| ⬜ | **`check_disclosures.py` misreports the layer for Sources-trailer lines.** It classed five `rules_primer.md` trailer lines as `body`; **none is voiced**, confirmed by grepping the rendered speech for five distinctive strings and getting zero matches. `is_voiced` accepts a line on any seven-word run matching anywhere in the speech, and trailer lines are the longest in the corpus, so the collision is near-certain. |
+| ⬜ | **`check_disclosures.py` has no `--content` flag**, so an agent forbidden to touch the working tree cannot get a before/after delta. Either add one or stop asking for the delta. |
+| ⬜ | ⚠️ **`CLAUDE.md:479` says "37 documents in eight DIRECTORIES" while `CLAUDE.md:3` says "A corpus of 38 documents".** The two disagree inside one file and **`check_counts.py` cannot see it** — neither `DOC_PATTERNS` anchor matches, because one cannot cross the full stop in *"The corpus. 37 documents"* and the other requires the word *sections*, not *DIRECTORIES*. |
+| ⬜ | **`CLAUDE.md`'s `check_tables` figures are stale, as that passage predicts of itself.** Measured today: **3 dropped, 45 read aloud.** The passage says "20 dropped against 26". ⚠️ **It also still names `body_contact_and_battles.md` as the zero-headroom table; it is `rules_primer.md`, now at `:770` after 14 lines were inserted above it.** |
+
+## Content rows
+
+| | |
+|---|---|
+| ⬜ | ⚠️ **`## Check yourself` — 34 documents carry the non-optional preamble, 2 pilots were repaired.** All 36 were byte-identical before today. **THE SWEEP DIRECTION IS: correct the 34 toward the pilots, NEVER the pilots toward the 34.** The section is **voiced**, so a listener is asked eight questions with no answer layer and no way to opt out. Not swept in release one because the plan bounds it and 34 files of new unreviewed text is what it forbids. **The two pilots' wordings also differ from each other and should be reconciled first** — one names a count ("these eight questions"), which is brittle. |
+| ⬜ | ⚠️ **Nine documents state the shorthanded-icing "two carve-outs" accurately but WITHOUT the timing test.** Not wrong, incomplete — and they were left that way deliberately. `breakouts.md` (4 sites), `defensive_zone_coverage.md`, `center.md`, `defender.md`, `winger.md`, `puck_support_and_spacing.md`, `scanning_and_anticipation.md`, `neutral_zone_systems.md`, `zone_entries.md`, `game_management.md`. **Hockey Canada's Note 1 to 6.7(b) and CARHA's Note 2 to 65(a) appear in only two documents corpus-wide.** |
+| ⬜ | **CARHA Rule 49(a) has no owner.** It **inverts** the hold-your-ground rule the other four books protect — a minor, or a major on injury, for a player who *"stands in front of an opponent for the purpose of making contact, and/or does not avert body contact"*. CARHA governs adult recreational leagues, one of this corpus's two named audiences, and **no document states this as a general fact about adult rec hockey.** |
+| ⬜ | **The anticipation principle has no owner and is stated two ways at Key Takeaway prominence.** `scanning_and_anticipation.md` has *"Guessing is acting on hope"* with a one-question test; `risk_management.md` has *"Gambling is acting on hope"* with a three-question test. Neither cites the other. **No `Convention:` label, no source, no owner row.** It is the corpus's cleanest transferable decision rule and its least audited. |
+| ⬜ | **`puck_support_and_spacing.md` §4 and §5 use "level" to mean two different things, in adjacent sections.** §4: same distance from your own net, across the ice. §5: neither goal-side nor puck-side. **§5 warns its vocabulary trips people up and does not mention the section immediately above it.** |
+| ⬜ | **`body_contact_and_battles.md`'s "most common defensive-zone breakdown" is stronger than anything its owner asserts.** `defensive_zone_coverage.md` claims only that most breakdowns are not *effort* failures and never ranks them. Labelled honestly rather than cut; **the superlative may belong in the owner or nowhere.** |
+| ⬜ | ⚠️ **Seven documents cite Hockey's Arsenal**, several with provenance chains of exactly the kind that failed on `zone_entries.md` — where the corpus reached Chatel through a restater while the author's own post was live and carried the sample size the restater lacked. `offensive_zone_play.md` and `shooting.md` named as most at risk. **Unaudited.** |
+| ⬜ | **The Sznajder 0.66/0.29 pair has two restaters giving two different provenances and no located primary.** Chatel credits a RITSAC 2018 presentation; Hockey's Arsenal dates it 2014-16. Sznajder's own archive does not carry the figures and **`ritsac.org` does not resolve.** |
+| ⬜ | **`getting_started.md` Key Takeaway 7 is two takeaways welded together** — neck protection, then facial protection by nation. Splitting gives 11 items, over the style guide's stated 5–10, **and re-derives every rule claim in both halves.** Declined twice by the agent as out of scope; recorded with that specific proposal. |
+| ⬜ | ⚠️ **`rules_primer.md`'s Common Mistakes is 10,644 words and WENT UP this round.** The agent measured 10-word-shingle overlap against the body for every bullet and found the overlap is **scope qualifiers, not prose** — so shortening means deleting a book name, a division carve-out or an honest disclosure, which is the operation that produced round 38's criticals. **Its conclusion: a shorter Common Mistakes here is a NEW LAYER, not a compression** — the same finding the review record reached for the 600-word primary path. |
+
+## Release-one rows still open
+
+| | |
+|---|---|
+| ⬜ | **The U10/player-parent homepage entry point is built but does not render.** It sits in `site/src/data/pathways.json` as `status: "draft"` and is filtered out. The corpus has real material for a parent but **no route written for that reader** — Route 2 addresses a parent only as a sub-case. **The plan is explicit that a U10 reader label holds only after a named safety reviewer verifies jurisdiction, contact rules, equipment assumptions and supervision context.** That review has not happened. |
+| ⬜ | **`site/src/data/audience.json` carries `status: "draft"` on every age, league, contact, supervision and safety field for both pilots.** Draft means no named reviewer has cleared what it asserts. **36 documents are explicitly `unclassified`, not overlooked.** |
+| ⬜ | **Schulte et al. (2017), doi:10.1007/s10618-017-0496-z — UNREACHABLE, not absent.** Springer 303s to a cookie wall, the browser was blocked from the domain, Semantic Scholar confirms `isOpenAccess: false` with no open PDF. It is titled *"…valuing actions, **locations**, and team performance"* and is the most likely remaining falsifier of the turnover-location disclosure. **The open Routley MSc thesis was read instead: it values actions by zone but publishes zone splits for faceoffs only.** |
+| ⬜ | ⚠️ **`rules_primer.md:848`'s six-column, 23-row table is dropped from the audio and costs a listener 5,616 readable words — 69% of §10.** It was read against its surrounding prose this round: **22 of 23 rows survive in voiced form; one did not**, and that one was penalty-bearing (two equipment misconducts eject you in Britain with no foul against anybody). **That gap is now voiced. The table was not deleted or split, deliberately** — a wide comparison table that cannot be read aloud is often the correct state. |
+| ⬜ | **The principles index is unchecked by construction.** `check_facts.py`'s `IN_SCOPE_LAYERS` excludes `foundation/`, so any ` ```facts ` block in `content/foundation/core_principles.md` gets **no mechanical check at all** and needs `facts-reviewer` by hand. |
