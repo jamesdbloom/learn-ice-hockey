@@ -214,6 +214,341 @@ was never specific to positions pages, and this instruction says so.**
 
 ---
 
+---
+
+---
+
+---
+
+## ⚠️⚠️ THE TEXT-SIZE CENSUS, run 15 September 2026 — instruction 2 has a target, and it is not where anyone was looking
+
+**Owner: `python3 scripts/check_readability_census.py words` and `... summary`. Prose layer only —
+fenced blocks excluded, so ` ```facts ` words are NOT in these figures.**
+
+⚠️ **NO TOTAL IS WRITTEN HERE. RUN `python3 scripts/check_readability_census.py words`.** What does not
+move: **`rules_primer.md` is by far the largest document and roughly a tenth of the corpus — the one a
+beginner reads first.**
+
+### ⚠️ Roughly THREE-TENTHS of the corpus is in TWO sections — run `... summary` for today's figure
+
+**Those words live in `Key Takeaways` and `Common Mistakes`.** Not in the teaching prose, not in the
+rule citations instruction 2 names as its target — **in the two summary sections.**
+
+⚠️ **The spread is the finding, not the average.** `switching_positions.md` is **39.4%**;
+`neutral_zone_systems.md` is **7.2%** and `playing_without_the_puck.md` **10.4%**.
+
+⚠️ **Which end is wrong has NOT been established and must not be assumed.** A 7% document may be
+**under-summarised** — and `playing_without_the_puck.md` is **the only document in the corpus whose
+Common Mistakes is LONGER than its Key Takeaways** — a shape, not a figure, so it survives a re-run. **Read both ends
+before treating either as the target.**
+
+### ⚠️⚠️ THE HAZARD, AND IT IS THE ONE THIS REPOSITORY EXISTS TO PREVENT
+
+**These are the propagation destinations.** `CLAUDE.md`: *"Body → facts blocks → Common Mistakes → Key
+Takeaways → every other document that repeats it… Every critical in round 10 was a correction that
+reached the body and stopped."* **This round has now produced THREE more instances of that shape.**
+
+⚠️ **And they are voiced standalone.** A Key Takeaway is its own chunk with a break either side — it is
+where a safety counterweight survives being heard out of context. **An earlier round found a document
+stating a hazard naked in the extraction layer precisely because the counterweight lived elsewhere.**
+
+⚠️⚠️ **So a words-per-section table is the most dangerous measurement in this plan.** It ranks by size
+the exact sections whose job is redundancy, and **cutting the biggest is indistinguishable, by any
+tool here, from deleting the corpus's propagation.** Non-negotiable 3 and 4 both bite.
+
+**The safe form of this work is CONSOLIDATION WITHIN A TAKEAWAY, not deletion of takeaways** — and the
+faceoff round measured the shape it takes: **every repaired facts line SHRANK while GAINING a book,
+because named books replaced five modal recitals.** ⚠️ **But that round also refuted the general
+version: two lines GREW, because they already used named books and had nothing to trade.** **The law
+is *"named books beat modal recitals"*, not *"repairs shrink."***
+
+### ⚠️ And the citation apparatus, which is what instruction 2 actually names
+
+**Owner: `python3 scripts/check_readability_census.py citations`.** A sentence counts when it carries a rule-number pattern —
+`Rule 76`, `81.6`, `613(d)`, `76.7(iv)`.
+
+⚠️ **NO FIGURE IS WRITTEN HERE. RUN `python3 scripts/check_readability_census.py citations`.** It has
+been roughly **45%** on every run to date — but that number has moved four times in one session, and
+the tool is its owner.
+
+⚠️⚠️ **THE PER-DOCUMENT TABLE IS DELETED, and a gate is why.** It carried six figures, and by the time
+it was staged **two were already wrong and the RANK ORDER had inverted** — `faceoffs.md`, the most
+heavily edited file in this commit, had climbed above `body_contact_and_battles.md` **while the table
+sat seven lines under a heading reading *"NO FIGURE IS WRITTEN HERE. RUN THE TOOL."*** ⚠️ **The section
+contradicted itself as staged.**
+
+**`python3 scripts/check_readability_census.py citations` prints the full ranking, sorted, every time.**
+
+**What does not move, and is worth keeping:** the apparatus is **concentrated, not spread** —
+`rules_primer.md` is far and away the highest and roughly ten times the share of the lowest; the
+technique and reading-diagrams documents sit at the bottom; and ⚠️ **the two at the bottom are within a
+TENTH OF A POINT of each other, so never name one of them "the thinnest" without re-running.**
+
+⚠️ **THE DENOMINATOR IS NOT THE SAME ONE THE SECTION ABOVE USES, and a commit gate caught that
+before it shipped.** The two censuses report **different totals**.
+**Both were called "prose words" and neither said which.**
+
+**Reconciled, exactly: the gap is 10,312 words, and it is the `##` and `###` heading text.**
+`wordcount.py` treats those lines as section boundaries and does not count them; `citations.py` counts
+them as body. ⚠️⚠️ **THE GAP IS EXACTLY 10,312 WORDS ON EVERY RUN, AND IT IS THE `##` AND `###` HEADING TEXT — that
+identity is the thing that does not move.** ⚠️ **`check_readability_census.py reconcile` prints both
+totals, the difference and the heading count, and says `reconciled: YES` or tells you to investigate.
+Run it; never re-derive it by hand.**
+
+**So the citation share is correct within its own base.** ⚠️ **Against the other base it is about half a
+point higher, and quoting the two figures in one breath — which is what the commit message first
+did — asserts a shared denominator that does not exist. That is [D8](../review_process.md), in a
+round about D8.**
+
+⚠️ **This measure ALSO OVER-ATTRIBUTES and the figure must never be quoted without saying so.** It counts
+the **whole sentence**, so a sentence that teaches something and cites a rule in passing is counted
+entirely as apparatus. ⚠️ **Whatever the tool prints is an UPPER BOUND on the target, not a measurement
+of waste.**
+
+⚠️ **What it does establish is DISTRIBUTION**, which is not sensitive to that flaw: the apparatus is
+**concentrated**, from roughly 70% down to 6.6%. **`rules_primer.md` is the single largest object in
+this plan** — around a tenth of the corpus, the document a beginner reads first, and it holds three of the five heaviest non-takeaway sections.
+
+⚠️ **Non-negotiable 2 sets the floor and it does not move:** *"Rules come from primary rulebook text on
+disk, grepped, with the wording quoted."* **The reduction is in how many times the corpus says it, and
+in which layer — never in whether the claim is sourced.** A cut that leaves a rule stated and its
+source removed is worse than no cut at all.
+
+### The twenty heaviest sections
+
+⚠️ **Fifteen of the twenty are `Key Takeaways`.** The five that are not are the ones worth reading
+first, because they are ordinary prose that grew:
+
+| Words | Section |
+|---:|---|
+| 11,299 | `foundation/language_and_glossary.md:231` — Glossary |
+| 10,619 | `foundation/rules_primer.md:435` — Body fouls |
+| 8,919 | `foundation/rules_primer.md:898` — 10. Rule Set Differences That Actually Matter |
+| 8,497 | `systems/special_teams.md:621` — Clearing, blocking, sticks and discipline |
+| 11,263 | `foundation/rules_primer.md:960` — Common Mistakes |
+
+⚠️ **Three of the five are in `rules_primer.md`, and instruction 2 names *"low-level rule detail"* as
+its target.** **That document is where this work starts.**
+
+## ⚠️ THE OPENER CENSUS, run 15 September 2026 — instruction 1's nine documents, named
+
+**Owner: `python3 scripts/check_readability_census.py openers`. Two earlier definitions of this
+measure returned nothing useful and are recorded in the script so nobody re-runs them:**
+
+- *"What does the document open with?"* → **all 39 answer `> **Rule set:**`**, the standing banner. The
+  measure is blind.
+- *"What is the first heading?"* → **all 39 answer `## Overview` or `## Key focus`.** Also blind.
+
+⚠️ **Both look like clean results. Neither tells you anything.** The measure that works is **what the
+Overview or Key focus section opens with**, and on that one the corpus splits 30 / 7 / 2.
+
+### The nine that open with no framing sentence at all
+
+**Seven open straight into a ` ```facts ` block** — which is the extraction layer, **voiced alone with
+a 300 ms break either side**, arriving before the reader has been told what the document is about:
+
+| Document | Line |
+|---|---|
+| `positions/center.md` | `:9` |
+| `positions/goaltender.md` | `:11` |
+| `positions/winger.md` | `:9` |
+| `systems/breakouts.md` | `:14` |
+| `systems/defensive_zone_coverage.md` | `:10` |
+| `systems/neutral_zone_systems.md` | `:10` |
+| `systems/offensive_zone_play.md` | `:10` |
+
+**Two open on a diagram marker**, which instruction 3's exception may well permit — **both name
+themselves as overviews and both need reading, not sweeping**:
+
+| Document | Line | Marker |
+|---|---|---|
+| `positions/defender.md` | `:9` | `defender-pair-overview` |
+| `systems/forechecking_systems.md` | `:10` | `forecheck-angling` |
+
+⚠️ **`defender-pair-overview` is an orientation diagram by its own name — it is the likeliest member
+of this list to be CORRECT as it stands.** `forecheck-angling` is not obviously one.
+
+### ⚠️ What this census does NOT establish
+
+**The other 30 open on prose. That is not the same as opening on the high-level principle that frames
+the document**, which is what instruction 1 actually asks for. **A prose opener can still open on a
+detail.** ⚠️ **No tool can tell the difference, and this census has not tried** — the 30 need reading,
+and this list should not be quoted as *"30 already comply."*
+
+**Three of the nine — `center.md`, `winger.md` and one further staged file — were being written by a
+live agent when this ran.** Re-run before dispatching.
+
+## ⚠️ A CONSTRAINT EVERY WAVE INHERITS: nine tables are one edit from silence
+
+`python3 scripts/check_tables.py --near`, run 15 September 2026. **3 dropped, 46 read aloud, 9 of
+those within one edit of being dropped.** Limits: 3 columns, 14 rows, 200 chars per cell.
+
+⚠️ **The one that matters most to this plan is in the document this plan targets hardest:**
+
+- **`foundation/rules_primer.md:809` — `Situation | Where the draw goes` — ZERO rows of headroom.**
+  **Add one row and a listener loses the whole table, silently, with every gate passing.**
+- **`hockey-iq/playing_without_the_puck.md:758` — FIVE characters of cell headroom.** One word.
+
+The rest, for the waves that touch them: `rink_map.md:495`, `getting_started.md:139` and `:541`,
+`risk_management.md:98` and `:470`, `body_contact_and_battles.md:60` and `:1336`.
+
+⚠️ **This is a live trap for instruction 2 specifically.** Text reduction that moves prose *into* a
+table, or that adds a qualifying row to preserve a scope the prose used to carry, **is exactly the
+edit that drops one.** ⚠️ **And never shorten a cell by dropping a hedge, a citation or a scope flag
+to get under the limit** — that trades an audible table for a false one.
+
+⚠️ **`CLAUDE.md` names `body_contact_and_battles.md:55` as the zero-headroom table. It is not** — that
+one is now at `:60` with two rows spare, and the table actually at zero is in `rules_primer.md`.
+**Re-run the tool; do not quote this section either.**
+
+---
+
+## ⚠️ THE MARKER CENSUS, run 15 September 2026 — and it disagrees with this file
+
+**Run by the coordinator, because a corpus-wide census is coordinator work.** ⚠️ **Owner: `python3 scripts/check_readability_census.py markers`.** Re-run it rather than quoting
+this table once anything moves — and see *"the figures below went stale inside their own session"*
+at the end of this block.
+
+**Definition, stated because the number depends on it:** a marker is counted on the **old side** when
+**zero non-blank prose lines** separate it from the heading above it — it is the first thing in its
+section. Fenced blocks are skipped, so a ` ```facts ` block between heading and marker does not count
+as prose.
+
+⚠️ **NO COUNT IS WRITTEN HERE. RUN `python3 scripts/check_readability_census.py markers`.** ⚠️ **It was 286 before the positions pages moved and is lower now — a gate caught this file still printing the pre-move figure.**
+
+⚠️ **This file says 284 and elsewhere says *"252 markers sit before a facts block, 2 after"*, which is
+a THIRD measure of a different thing.** I am not reconciling them by picking one: **the definition
+above is stated so the figure can be re-derived, and the two older figures should be read as what they
+are — counts of something else, or counts taken before the corpus moved underneath them.** ⚠️ **A
+number copied out of its owner goes stale silently.** The owner is the script.
+
+### ⚠️⚠️ THESE FIGURES WENT STALE THREE TIMES IN ONE SESSION — so read the command, not the numbers
+
+`CLAUDE.md` says a number copied out of its owner goes stale silently. **This section proved it on its
+own figures, three times, in a single day.**
+
+| measured | prose words | markers on the old side |
+|---|---|---:|
+| first run | the lowest | 286 |
+| after one repair agent | +320 | 286 |
+| after eight agents | +7,587 more | 286 |
+| after the reviews and repairs | **+13,832 more** | 286 |
+| **after the positions-page move** | — | ⚠️ **fell sharply — RUN THE TOOL** |
+
+⚠️ **The totals themselves are deliberately absent** — a gate caught this very table carrying a drift
+ledger that had itself gone stale while recording drift. **Run the tool.**
+
+⚠️ **The marker count did not move at all while the word count moved 7,587.** **The two measures decay
+at completely different rates**, so one refresh policy for this whole section was wrong from the start.
+
+⚠️⚠️ **SO NO FIGURE IS PRINTED BELOW ANY MORE. RUN THE TOOL:**
+
+```bash
+python3 scripts/check_readability_census.py all
+```
+
+**What is kept here is only what does NOT move:** the definitions, the reconciliation identity, the four
+documents that already comply, and the hazards. ⚠️ **The reconciliation held through every run — the two
+bases differ by exactly the `##` and `###` heading text, and `check_readability_census.py reconcile`
+prints `reconciled: YES` or tells you to investigate.**
+
+### ⚠️ FOUR DOCUMENTS ALREADY COMPLY, and one of them is the largest diagram user in the corpus
+
+`how_to_watch_hockey.md` carries **24 markers and not one on the old side.** So does
+`practice_and_development.md` (4), and the two single-marker documents.
+
+⚠️ **That changes what this work is.** It is not a corpus-wide convention being introduced against the
+grain — **the corpus already contains a worked, 24-marker demonstration of the target state.** **Read
+`how_to_watch_hockey.md` before moving a single marker elsewhere, and make the rest look like it.**
+
+### ⚠️ The census counts CANDIDATES, not defects
+
+The owner's instruction has a real exception — **an overview or orientation diagram goes first,
+because its job is to give the reader the frame.** `rink_map.md` shows 17 of 17 on the old side and is
+the likeliest place for that exception to be the correct answer, not the defect;
+`reading_ice_hockey_diagrams.md`'s single marker is a **notation key**, which is the exception by
+definition.
+
+⚠️ **A sweep over this table would be exactly the failure this repository keeps recording.** In an
+earlier round two lines matched a pattern and were not defects — they stated a rule's scope rather
+than its tension — and *"a sweep would have fixed them."* **Only reading decides.**
+
+| Document | Markers | On the old side | |
+|---|---:|---:|---|
+| `positions/winger.md` | 27 | **27** |
+| `off-the-ice/how_to_watch_hockey.md` | 24 | **0** | ✅ **already complies**
+| `positions/goaltender.md` | 20 | **20** |
+| `foundation/rink_map.md` | 17 | **17** |
+| `positions/center.md` | 16 | **16** |
+| `systems/offensive_zone_play.md` | 16 | **15** |
+| `systems/zone_entries.md` | 16 | **16** |
+| `positions/defender.md` | 15 | **15** |
+| `systems/game_management.md` | 15 | **8** |
+| `systems/neutral_zone_systems.md` | 13 | **12** |
+| `systems/special_teams.md` | 12 | **12** |
+| `systems/faceoffs.md` | 11 | **11** |
+| `systems/forechecking_systems.md` | 11 | **11** |
+| `systems/breakouts.md` | 10 | **10** |
+| `foundation/rules_primer.md` | 9 | **9** |
+| `hockey-iq/playing_without_the_puck.md` | 9 | **9** |
+| `hockey-iq/risk_management.md` | 9 | **8** |
+| `systems/defending_the_rush.md` | 9 | **9** |
+| `technique/body_contact_and_battles.md` | 8 | **8** |
+| `technique/passing_and_receiving.md` | 8 | **8** |
+| `hockey-iq/puck_support_and_spacing.md` | 8 | **8** |
+| `hockey-iq/time_and_space.md` | 8 | **6** |
+| `systems/defensive_zone_coverage.md` | 8 | **8** |
+| `positions/switching_positions.md` | 6 | **6** |
+| `technique/puck_handling.md` | 5 | **3** |
+| `technique/shooting.md` | 5 | **5** |
+| `hockey-iq/scanning_and_anticipation.md` | 5 | **4** |
+| `off-the-ice/practice_and_development.md` | 4 | **0** | ✅ **already complies**
+| `foundation/on_ice_communication.md` | 3 | **3** |
+| `technique/skating.md` | 2 | **2** |
+| `reading-diagrams/reading_ice_hockey_diagrams.md` | 1 | **0** | ✅ **already complies**
+| `getting-started/getting_started.md` | 1 | **0** | ✅ **already complies**
+
+### Ownership note for the waves
+
+⚠️ ⚠️⚠️ **THE FIVE POSITIONS PAGES HAVE NOW BEEN MOVED — 84 markers, 73 moved, 11 left — so every
+per-file figure in this section that predates that wave is stale.** **`center.md` and
+`switching_positions.md` now print `<- already complies`.** **Run the tool.**
+
+---
+
+## ⚠️ WAVE 1 OWNERSHIP — the partition, stated so it can be checked
+
+`CLAUDE.md`: ⚠️ ***"File ownership must be disjoint, and it must be stated. AND STATING IT DOES NOT
+MAKE IT TRUE — the coordinator is the one who gets this wrong."*** In an earlier round **four agents
+were sent to one directory, each brief saying *"You own EXCLUSIVELY"*.** They did not, and an agent's
+rebuild published six captions it had never read, under its own clean checker run.
+
+**So this partition is computed, not asserted.** `python3 scripts/check_readability_census.py partition` generates it by
+least-loaded assignment, and **asserts that no file appears twice before printing** — the assertion
+is in the code, not in this sentence.
+
+⚠️⚠️ **THE PARTITION TABLE IS DELETED, and a gate is why.** It was staged carrying per-file counts for
+the five positions files **that the same commit had just moved** — `winger.md` listed at 27 when it was
+1, `center.md` at 16 when it was 0. ⚠️ **That table is what the next wave's agents get dispatched from**,
+and it sat six lines under this file's own sentence *"this partition is computed, not asserted… Run the
+tool."* **The tool had not been re-run after the move.**
+
+```bash
+python3 scripts/check_readability_census.py partition --groups 10
+```
+
+**It prints the groups and asserts no file appears twice before printing.** ⚠️ **Generate it at dispatch
+time and paste it into the briefs, never into this file** — a partition committed to a plan is a
+partition that goes stale the moment anyone moves a marker, which is precisely what this wave did.
+
+⚠️ **Re-generate before dispatching rather than reading this table.** Three of these files were being
+written by a live agent when the census ran, and **a partition of a tree that has moved is a partition
+of nothing.**
+
+⚠️ **`rink_map.md` (group 03) is the one to brief differently.** All 17 of its markers are on the old
+side and it is the document most likely to be **correct as it stands** — an orientation map's job is
+to give the reader the frame first. **Brief that group to expect to move few or none.**
+
 ## Target information architecture
 
 Implement the following conceptual layers. Exact component names may differ, but

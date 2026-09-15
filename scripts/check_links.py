@@ -13,6 +13,17 @@ post-build checker (`site/scripts/check-links.mjs`) that walks the rendered
 HTML; the two are complementary — this one catches breakage before a build even
 happens, that one proves the rendering and routing preserved it.
 
+⚠️ It checks EVERY tracked markdown tree, not just `content/`. Until 14 September
+2026 the default root was `content/` alone, so the standard `--quiet` run — the
+one the commit gate makes — never opened a file under `project/` or `docs/`, and
+a commit touching only those trees passed C1 with nothing checked. Widening the
+default immediately found two dead links on the repository's own front page:
+`README.md` still pointed at `content/foundation/rink_map_and_glossary.md`,
+which had been split into two documents and no longer existed.
+
+⚠️ `content/` is the only tree that renders to routed site pages, so it is the
+only one where a link to a DIRECTORY is a defect — see renders_to_a_site_page().
+
 What it checks
     * every relative link resolves **against the directory of the file it is
       written in** — the part naive checkers get wrong for `positions/*.md`
@@ -26,8 +37,10 @@ What it deliberately does not check
       job (`scripts/check_external_links.py`), not in the build
 
 Usage
-    python3 scripts/check_links.py                # summary + failures
+    python3 scripts/check_links.py                # every tracked tree
     python3 scripts/check_links.py --quiet        # failures only, for CI
+    python3 scripts/check_links.py content        # one tree, as it used to default
+    python3 scripts/check_links.py content project docs README.md
     python3 scripts/check_links.py --list-anchors content/skating.md
 
 Exits non-zero if anything is broken.
@@ -43,7 +56,7 @@ import unicodedata
 import difflib
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Iterator
+from typing import Iterable, Iterator, Sequence
 from urllib.parse import unquote
 
 # --------------------------------------------------------------------------
@@ -199,12 +212,24 @@ def strip_code(lines: list[str]) -> list[bool]:
 
 
 def mask_inline_code(line: str) -> str:
-    """Blank out `code spans` so links quoted as examples are not checked."""
+    """Blank out `code spans` so links quoted as examples are not checked.
+
+    ⚠️ This was inert for every code span that did not start at column 0, which
+    in practice is all of them. `tick` counted the backticks with
+    `len(line) - len(line[i:].lstrip("`"))`, which adds `i` to the real run
+    length: a single backtick at column 2 was read as a triple, the closing
+    ``` was never found, and the function then bailed and returned **the whole
+    rest of the line unmasked**. Six links quoted as syntax examples inside
+    backticks — `[text](url)`, `See [Doc](path).` — were reported as broken
+    targets, and the failure was silent in the other direction too, because a
+    real link sitting after a code span on the same line was checked by
+    accident rather than by design.
+    """
     out = []
     i = 0
     while i < len(line):
         if line[i] == "`":
-            tick = len(line) - len(line[i:].lstrip("`"))
+            tick = len(line[i:]) - len(line[i:].lstrip("`"))
             marker = "`" * tick
             end = line.find(marker, i + tick)
             if end == -1:
@@ -314,15 +339,32 @@ def is_external(destination: str) -> bool:
 
 
 def markdown_files(root: Path) -> list[Path]:
-    return sorted(p for p in root.rglob("*.md") if p.is_file())
+    """Every checkable markdown file under `root` — or `root` itself if it is one.
+
+    `*.local.md` is skipped: the pattern is gitignored, so those files are
+    scratch notes that never enter the record and must not be able to fail a
+    gate. Excluding them here rather than in the caller keeps the rule in one
+    place.
+    """
+    if root.is_file():
+        return [root] if root.suffix == ".md" and not root.name.endswith(".local.md") else []
+    return sorted(
+        p
+        for p in root.rglob("*.md")
+        if p.is_file() and not p.name.endswith(".local.md")
+    )
 
 
 class Corpus:
-    def __init__(self, root: Path) -> None:
-        self.root = root
+    def __init__(self, roots: Sequence[Path]) -> None:
+        self.roots = list(roots)
+        self.root = self.roots[0]
         self.documents: dict[Path, tuple[list[str], list[Link], set[str]]] = {}
-        for path in markdown_files(root):
-            self.documents[path] = parse_document(path, path.read_text(encoding="utf-8"))
+        for root in self.roots:
+            for path in markdown_files(root):
+                if path in self.documents:
+                    continue  # a file reachable from two roots is still one file
+                self.documents[path] = parse_document(path, path.read_text(encoding="utf-8"))
 
     def anchors_for(self, path: Path) -> set[str]:
         if path not in self.documents:
@@ -334,7 +376,15 @@ class Corpus:
         return set(headings) | html_ids
 
     def links(self) -> Iterator[Link]:
-        for _, links, _ in self.documents.values():
+        # ⚠️ Snapshot first. `anchors_for()` parses a link TARGET on demand and
+        # inserts it into `self.documents`, so iterating the live dict raises
+        # "dictionary changed size during iteration" the moment a link points
+        # at a file that was not crawled. That could not happen while the only
+        # root was `content/` and every target was already inside it; it fires
+        # immediately once `project/` links out to `content/`. The lazily added
+        # documents are targets, not sources — their own links are deliberately
+        # not checked, because nothing asked for that tree to be checked.
+        for _, links, _ in list(self.documents.values()):
             for link in links:
                 yield link
 
@@ -355,8 +405,33 @@ def display_path(path: Path, root: Path) -> str:
     return str(path)
 
 
-def check(root: Path) -> tuple[dict[str, int], list[Failure]]:
-    corpus = Corpus(root)
+def renders_to_a_site_page(path: Path, site_root: Path | None) -> bool:
+    """Is this document published as a page, or read on GitHub?
+
+    It decides one thing: whether a link whose target is a DIRECTORY is a
+    defect. Under `content/` it is — every document becomes a routed page and a
+    directory has no route, so the reader gets a 404. Everywhere else the
+    document is read in the repository, where a directory link renders a file
+    listing and is a perfectly ordinary thing to write: `review_history.md`
+    points at `../.claude/agents/` on purpose.
+
+    ⚠️ Until 14 September 2026 the checker only ever ran over `content/`, so
+    this distinction never had to exist and directory links were unconditionally
+    a failure. Widening the default surfaced several legitimate ones; the summary line
+    prints the running count, which moves with every `project/` document added.
+    """
+    if site_root is None:
+        return False
+    try:
+        path.relative_to(site_root)
+    except ValueError:
+        return False
+    return True
+
+
+def check(roots: Sequence[Path], site_root: Path | None = None) -> tuple[dict[str, int], list[Failure]]:
+    corpus = Corpus(roots)
+    root = corpus.root
     counts = {
         "files": len(corpus.documents),
         "links": 0,
@@ -364,6 +439,7 @@ def check(root: Path) -> tuple[dict[str, int], list[Failure]]:
         "anchors": 0,
         "external": 0,
         "same_page": 0,
+        "directories": 0,
     }
     failures: list[Failure] = []
 
@@ -428,15 +504,19 @@ def check(root: Path) -> tuple[dict[str, int], list[Failure]]:
             continue
 
         if resolved.is_dir():
-            failures.append(
-                Failure(
-                    link.source,
-                    link.line,
-                    link.column,
-                    destination,
-                    f"target is a directory, not a file ({display})",
+            if renders_to_a_site_page(link.source, site_root):
+                failures.append(
+                    Failure(
+                        link.source,
+                        link.line,
+                        link.column,
+                        destination,
+                        f"target is a directory, not a file ({display}) — "
+                        "this document renders to a site page and a directory has no route",
+                    )
                 )
-            )
+            else:
+                counts["directories"] += 1
             continue
 
         if fragment:
@@ -463,10 +543,13 @@ def main(argv: Iterable[str] | None = None) -> int:
     repo_root = Path(__file__).resolve().parent.parent
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument(
-        "root",
-        nargs="?",
-        default=str(repo_root / "content"),
-        help="directory of markdown to check (default: content/)",
+        "roots",
+        nargs="*",
+        help=(
+            "directories or files of markdown to check "
+            "(default: every tracked markdown tree — content/, project/, docs/ "
+            "and the markdown at the repository root)"
+        ),
     )
     parser.add_argument("-q", "--quiet", action="store_true", help="print only failures (for CI)")
     parser.add_argument(
@@ -476,7 +559,37 @@ def main(argv: Iterable[str] | None = None) -> int:
     )
     args = parser.parse_args(list(argv) if argv is not None else None)
 
-    root = Path(args.root).resolve()
+    # ⚠️ THE DEFAULT USED TO BE `content/` ALONE, and that was a silent hole:
+    # the standard `--quiet` invocation — the one the commit gate runs — never
+    # opened a file under `project/` or `docs/`. A commit touching only those
+    # trees passed C1 without a single link being checked, while
+    # `review_process.md` says "C1 always applies". Found by a gate auditing a
+    # two-file `project/` diff: it passed, and had checked neither staged file.
+    # The default is now every tracked markdown tree, so the invocation nobody
+    # thinks about covers everything a rename can break.
+    default_roots = [
+        repo_root / "content",
+        repo_root / "project",
+        repo_root / "docs",
+        repo_root,          # CLAUDE.md, README.md — files only, rglob is not used on a file
+    ]
+    if args.roots:
+        roots = [Path(r).resolve() for r in args.roots]
+    else:
+        roots = [r for r in default_roots if r.exists()]
+        # The repo root is included for its own *.md, not for a second crawl of
+        # everything beneath it — markdown_files() on a directory would rglob
+        # into site/, node_modules/ and infra/. Expand it to its files here.
+        roots = [r for r in roots if r != repo_root]
+        roots += sorted(
+            p for p in repo_root.glob("*.md")
+            if p.is_file() and not p.name.endswith(".local.md")
+        )
+
+    # `content/` is the only tree that renders to routed site pages, so it is
+    # the only one where a link to a directory is a defect. See
+    # renders_to_a_site_page().
+    site_root = repo_root / "content"
 
     if args.list_anchors:
         path = Path(args.list_anchors).resolve()
@@ -487,11 +600,16 @@ def main(argv: Iterable[str] | None = None) -> int:
             print(f"{anchor}  (html id)")
         return 0
 
-    if not root.is_dir():
-        print(f"check_links: no such directory: {root}", file=sys.stderr)
+    missing = [r for r in roots if not r.exists()]
+    if missing:
+        for r in missing:
+            print(f"check_links: no such path: {r}", file=sys.stderr)
+        return 2
+    if not roots:
+        print("check_links: nothing to check", file=sys.stderr)
         return 2
 
-    counts, failures = check(root)
+    counts, failures = check(roots, site_root=site_root)
 
     if failures:
         print(f"\n{len(failures)} broken internal link(s):\n", file=sys.stderr)
@@ -519,6 +637,11 @@ def main(argv: Iterable[str] | None = None) -> int:
             f"{counts['same_page']} same-page anchors · "
             f"{counts['anchors']} fragments verified against derived heading slugs · "
             f"{counts['external']} external skipped"
+            + (
+                f" · {counts['directories']} directory links, legitimate outside content/"
+                if counts["directories"]
+                else ""
+            )
         )
         print("all internal links and anchors resolve.")
     return 0

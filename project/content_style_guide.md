@@ -1390,11 +1390,24 @@ one granting permission.**
 
 ## ⚠️ TWO LAYERS ARE NEVER VOICED AT ALL — measured, and it changes what "disclosed" means
 
-`scripts/md_to_speech.py:426` sets `DROP_SECTION_HEADINGS = ("notes on verification",)`, and the
+`scripts/md_to_speech.py` sets `DROP_SECTION_HEADINGS = ("notes on verification",)` — ⚠️ **cited by
+constant name because this line carried `:426` and the constant is not there any more**, which is the
+"copied out of its owner and goes stale" pattern in miniature, in the paragraph that teaches it. The
 **Sources trailer is dropped as well.** Measured by rendering the whole corpus and searching the
 emitted SSML: `Rulebooks:`, `Rules (primary)`, `read on 29 August` and `link baseline` appear in
-**zero** spoken characters out of roughly five million. **All 37 documents carry a Sources trailer.
-None of it is voiced.** On the site it renders as a **closed `<details>`** as well.
+**zero** spoken characters out of roughly five million. **Every document carries a Sources trailer and
+none of it is voiced.** On the site it renders as a **closed `<details>`** as well.
+
+⚠️ **That sentence read *"All 37 documents"* until 14 September 2026, and the corpus is now 39.** The
+zero-spoken-characters measurement had been taken over 37, so the two documents added since were not
+in it, and this line was left claiming only what had been measured. **It has since been re-measured
+over all 39 by a commit gate**, which rendered every document through `md_to_speech.py --report` and
+found the renderer drops `sources-section` **39 times — once per document** — with no trailer's
+opening words appearing in any spoken chunk. ⚠️ **Its first attempt at that was a SILENT FALSE PASS**
+— the CLI invoked positionally, exit 2 on all 39, no output, and a grep that reported *"0 documents"*.
+**Same shape as the nvm trap: nothing in the output said "did not run."** The lesson that stands
+regardless: **a count of the corpus, written into a sentence about something else, goes stale every
+time a document is added.**
 
 ⚠️ **So a qualification parked in either layer is PAGE-ONLY BY CONSTRUCTION.** For a listener it does
 not exist; for a reader it is behind a disclosure triangle.
@@ -1414,30 +1427,174 @@ only place it lives.
 
 ---
 
-## ⚠️ A diagram goes at the head of the unit it teaches — and a BORROWED caption must stand alone
+## ⚠️ A diagram usually FOLLOWS the content it illustrates — and a BORROWED caption must stand alone
 
-Two rules, both written after the corpus was measured against them in September 2026.
+Two rules. The second was written after the corpus was measured against it in September 2026. The
+first **reverses** what this section said until 14 September 2026.
 
-### Placement: the head of the teaching unit, not merely the head of the section
+⚠️ **The operative specification comes first and the history is at the end of the subsection.** An
+earlier draft opened with 25 lines of superseded rule before reaching the 12 lines an agent actually
+needs, and a reviewer reported that *"an agent skimming for its instructions reads the superseded
+direction first, at length, in bold."*
 
-The owner's instruction is *"diagrams should be at the start of sections"*, because a diagram that
-arrives after the prose it explains arrives too late. **Measured before the change: 0 of 286 markers
-sat at the head of their section, and 101 sat immediately before a `---` or the next heading.**
+### Placement: after the prose, not before it
 
-⚠️ **But "immediately after the heading" is the wrong rule stated too literally.** In a section that
-covers several independent numbered tactics, it produces every picture at the top and every
-explanation below — mechanically compliant and worse to read. **The unit is the teaching point.**
-Put the diagram at the head of the smallest unit its caption is about: usually the section,
-sometimes a numbered item inside one.
+⚠️ **The owner's instruction, 14 September 2026:** *"diagrams should follow the content discussing
+them in most cases as putting the diagram first is out of context and hard for the reader to
+understand, the exception being where we can present an overview or summary diagram that help the
+reader to understand the text by seeing it first."*
 
-Three constraints that came out of doing it:
+#### The rule, in the order you apply it
+
+1. ⚠️ **Decide what the caption is ABOUT, and that decides everything else.**
+   - **The caption's subject is the section's own title** → it is an **overview**. **It goes first**,
+     at the head of the section, before the prose. The reader needs the frame before the text fills
+     it in.
+   - **The caption's subject is ONE point inside the section** → **it goes after the prose that
+     teaches that point** — after the *first* passage that teaches it, not at the end of the unit.
+
+   ⚠️ **This replaces the tie-break an earlier draft gave, which was *"whether the prose explains the
+   picture or the picture illustrates the prose"* with a fallback of *"if the prose refers backward
+   to it."* A reviewer applied that to three real sections: it decided one and abstained on two, and
+   the fallback has no input at all for roughly 96% of markers — a corpus-wide scan found only
+   **9–14 genuine deictic references** in 331 sections. A test that abstains on the common case is
+   not a test.** The subject test decided all three.
+
+2. **The unit is the smallest heading level that contains BOTH the marker and the prose teaching the
+   caption's subject.** ⚠️ **Say it that way, because *"inside the same unit"* alone is not a
+   definition** — on `breakouts.md`'s `## 2. The Five Roles in Every Breakout`, which decomposes into
+   five `###` subsections, the `##` and the `###` give opposite answers.
+
+3. ⚠️ **A marker landing immediately before the next heading or a `---` is NOT acceptable**, and this
+   has to be said because the previous pass existed to eliminate exactly that state: **101 of 286
+   markers sat there before it, and 6 of 331 do now.** The default as written pushes markers back
+   toward it. **If applying rule 1 would strand a marker at the end of a unit with nothing after it,
+   the caption is about the whole unit — treat it as an overview and leave it at the head.**
+
+#### The four constraints
+
+Three came out of doing the moves in the OTHER direction and cut the same way in either one. **The
+fourth is what this reversal actually needs, and an earlier draft shipped without it.**
 
 - **Never insert a marker between items of a real ordered list.** It renumbers the list in the audio.
-- **Where two diagrams are a deliberate before/after or side-by-side pair, move BOTH to the head of
-  the unit they share** rather than splitting them into two child sections — splitting breaks
-  *"beside it"*.
-- ⚠️ **If a caption refers backward to prose that the move would strand below it, leave the marker
-  where it is and say so.** A wrong move is worse than no move.
+- **Where two diagrams are a deliberate before/after or side-by-side pair, move BOTH together**,
+  rather than splitting them across the prose — splitting breaks *"beside it"*.
+- ⚠️ **If a CAPTION refers to prose that the move would strand on the wrong side of it, leave the
+  marker where it is and say so.** A wrong move is worse than no move.
+- ⚠️⚠️ **AND IF THE BODY PROSE POINTS AT THE MARKER — *"the picture above"*, *"drawn above"*, *"at
+  the head of this section"* — EITHER LEAVE THE MARKER OR REWRITE THE SENTENCE IN THE SAME EDIT.**
+  Moving the marker below inverts every one of these, and **a reviewer verified ten live sites**:
+  `body_contact_and_battles.md:181`, `:209`, `:724`, `:1015`, `:1097`; `passing_and_receiving.md:190`,
+  `:589`, `:591`; `switching_positions.md:226`; `rink_map.md:298`. ⚠️ **`passing_and_receiving.md:589`
+  states the SUPERSEDED RULE in prose** — *"The first of the two pictures at the head of this
+  section"*. **An agent working to a spec without this constraint would have shipped ten false
+  sentences into a voiced corpus.**
+
+  **Not a defect, and checked so nobody re-opens it:** the `forecheck-212` / `-212-stacked` / `-122` /
+  `-131` chain cross-references *"the 2-1-2 above"*, and every marker moves inside its own section,
+  so document order is preserved and *"above"* survives.
+
+⚠️ **These four are why this cannot be swept, in either direction.**
+
+#### What the corpus looks like now, and how much of it is actually work
+
+⚠️ **Measured on 14 September 2026, re-derived independently by a reviewer, and re-derived again for
+the historical figures at commit `8ca1280`** — the pattern is a line beginning `![](diagram:`, and
+the classifier takes what immediately precedes it with blank lines skipped:
+
+| | |
+|---|---|
+| markers | **331** |
+| immediately after a heading | **239** |
+| not immediately after a heading | **92** |
+| heading → diagram → ` ```facts ` block | **178** |
+| immediately **before** a facts block | **209** |
+
+**The 92 breaks down as 58 preceded by another marker, 29 after prose, 3 after a list, 2 after a
+closed fence.**
+
+⚠️ **Read the 58 carefully — the first draft of this passage described all of them as chains a
+heading opens, and 13 of them are not.** A reviewer walked every chain back to its head: **45 are
+chained from a heading and 13 are chained from PROSE** — `how_to_watch_hockey.md:112, 132, 156, 172,
+174, 186, 188, 230, 246`, `practice_and_development.md:319, 406`, `game_management.md:101, 127`.
+**Those 13 are already compliant and belong off the move list.** ⚠️ **This is the second enumeration
+in this section to be right about its total and wrong about its parts** — the first was the 30-hit
+facts scan below, where five drill-shape hits were filed as the wrong kind. **Count, then describe
+each member; the total passing is not evidence the description holds.**
+
+⚠️ **And 4 of the 29 "after prose" markers follow a BOLD PSEUDO-HEADING, not explanatory prose** —
+`game_management.md:99, 117, 125, 133`, whose predecessors are `**1. Manage the puck.**` and the
+like. Those markers sit between a lead-in and its explanation, which is the head of their unit.
+**On this rule's own definition the count of markers following explanatory prose is 25, not 29.**
+
+**So the real shape of the job: 239 heading-anchored + 45 chained-from-a-heading = 284 candidates;
+29 after prose + 13 chained-from-prose + 3 after a list + 2 after a fence = 47 already compliant.
+284 + 47 = 331.**
+
+⚠️ **A definition trap worth stating: a count of "after prose" that means "not directly under a
+heading" gives 90-odd and flatters the corpus.** An earlier census in
+[`OPEN_ITEMS.md`](plans/OPEN_ITEMS.md) recorded *"after prose: 90 (28%)"* on 325 markers — 90 = 325 −
+235, so that is what it meant. **It is not wrong, it is differently defined.**
+
+#### The worked exception
+
+A diagram that is an **overview or a summary** goes first. ⚠️ **The worked example is a PAIR, and
+naming only half of it would contradict the pair constraint above:** `rink_map.md` stacks
+`rink-map-neutral-zone` **and** `rink-map-end-zone-markings`, and the prose beneath them opens *"The
+sheet is drawn here in **two** pictures"* and describes both.
+
+#### ⚠️ Why the corpus currently looks the other way
+
+**This section said the opposite until 14 September 2026, and the superseded rule is kept rather than
+deleted** — without it the corpus looks careless, the three inherited constraints lose the provenance
+that is the only part of this that cannot be re-derived, and the next reversal reads as somebody
+having been wrong.
+
+The superseded instruction was *"diagrams should be at the start of sections"*, *"because a diagram
+that arrives after the prose it explains arrives too late."* It recorded that **0 of 286 markers sat
+at the head of their section before that work and 101 sat immediately before a `---` or the next
+heading** — both re-derived at commit `8ca1280` — and it moved them to the head of the smallest
+teaching unit their caption was about. The next commit in that line, `6d9562c`, shows 304 markers and
+222 at head: **the placement pass, visible in the data.**
+
+⚠️ **Neither instruction was careless.** *"At the head of the unit"* optimised for **finding** the
+picture; this one optimises for **understanding** it, and understanding wins.
+
+### And that puts the marker BELOW the ` ```facts ` block — settled by measurement, not by taste
+
+209 markers currently sit immediately before a facts block, so the question is unavoidable: the facts
+block is the extraction layer and sits at the head of its section by construction, and moving a
+diagram below the prose moves it below the block too.
+
+**Measured 14 September 2026 to settle it: NO FACTS LINE IN THE CORPUS REFERS TO A DIAGRAM.** All facts lines in the corpus were scanned — **5,552 when this was measured, 5,555 after the commit that records it, and the scan still returns exactly 30 at exactly the sites named below** — with `\b(diagram|picture|figure|the image)\b`, which returns **exactly 30**.
+All 30 were read. **Every one is a false positive, in three kinds:**
+
+- *"figure"* meaning a **statistic** — *"a tracked figure"*, *"Tulsky's 26% figure"*;
+- *"picture"* meaning a **mental** one — *"the picture will still be there when you look up"*;
+- ⚠️ *"figure"* meaning a **drill shape**, which an earlier version of this passage omitted and a
+  commit gate found: `puck_handling.md:882` and `:884` (*"Figure 8 around two objects"*, *"Human
+  figure 8"*) and `skating.md:165`, `:480` and `:769` (*"figure eights"*). **Five of the thirty —
+  17% of the evidence for moving 209 markers, mis-described in the governing document that carries
+  it.**
+
+**Zero point at a marker.** The closest calls are `goaltender.md:152` (*"is the picture of what the
+arc looks like"*) and `defensive_zone_coverage.md:131` (*"is the picture Hockey Canada's rule
+names"*) — both metaphor, neither deictic, **neither strands if a marker moves.**
+
+**So there is nothing to strand in the direction that matters here.** The caption constraint — the
+one thing that stops a move — does not arise from a facts line, because no facts line points at a
+picture. **The marker goes after the prose, which means after the block.**
+
+⚠️ **An earlier draft said the two layers *"do not refer to each other at all"*, which is a
+bidirectional claim resting on a one-directional measurement.** Facts lines → diagrams was measured.
+**Captions → facts blocks was NOT**, and a reviewer's partial check could not cleanly separate
+caption strings from author comments in the `.mjs` sources. **The ruling does not need the stronger
+claim and no longer makes it.**
+
+⚠️ **This is a coordinator's ruling on the owner's principle, not a second owner instruction**, and it
+is recorded that way deliberately. The evidence is the scan above; if the scan is wrong the ruling
+falls with it. **It also cuts the way the shingle probe wants:** separating the caption from the
+facts lines can only reduce the repetition risk that probe exists to measure, never increase it.
 
 ### ⚠️ And it must address the READER OF THE HOSTING SECTION — the harder half of the rule
 
@@ -1488,9 +1645,13 @@ per marker than a newly written one.**
 
 ### A borrowed caption must stand alone in every document that hosts it
 
-**82 of 198 diagrams are hosted by more than one document** *(re-derived against this commit; it was
-75 of 195 before it, and this commit's own borrowing is what moved it — a figure stated flatly in the
-section that caused it to change is exactly the shape that goes stale silently).* A caption is quoted into documents that
+**Most diagrams are hosted by exactly one document and a large minority by more than one.**
+⚠️ **No figure is written here, and this line has carried three.** It read *"82 of 198"*, and before
+that *"75 of 195"*, each *"re-derived against this commit"* and each stale by the next borrowing; a
+reviewer re-derived it again on 14 September 2026 and got **87 of 204**. **The derivation is the
+owner, not a number:** count the slugs in `site/src/data/diagrams.json`, then count how many appear
+under more than one `content/` document. **A figure stated flatly in the section that causes it to
+change goes stale silently, and this is the third time in one line.** A caption is quoted into documents that
 do not own it, so **editing a caption is a content change in every hosting document** — and a
 caption that describes its *neighbours* is true in one document and false in another.
 
@@ -1522,7 +1683,9 @@ so **every corpus-wide census you run over `content/` sees a clean corpus whethe
 clean or not.** Six such censuses ran in one round while this layer went unexamined.
 
 ⚠️ **The characteristic caption defect is a qualification the PROSE keeps and the caption sheds.**
-Measured across all 112:
+Measured across every caption in the corpus at the time — **112 then, 204 today**; ⚠️ **the figure is
+left with its date rather than updated, because the FINDINGS below are a record of that census and
+re-pointing them at a larger corpus would claim a coverage nobody has:**
 
 - A rule-set claim stated **flat** in two captions while **all ten** prose sites carried the same
   hedge verbatim — *"no KHL rulebook was available to check it against."* The captions were the only

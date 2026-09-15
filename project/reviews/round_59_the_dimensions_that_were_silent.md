@@ -559,7 +559,7 @@ because it is what makes the first half worth acting on rather than a reason to 
 
 ### The seven that were false as this section was written — and no two failed the same way
 
-*(The round closed at eleven. See [Figures in this record](#-figures-in-this-record-and-why-several-disagree).)*
+*(The round closed at eleven. See [Figures in this record](#️-figures-in-this-record-and-why-several-disagree).)*
 
 | Disclosure | How it failed |
 |---|---|
@@ -609,7 +609,7 @@ The wording the borrowers should inherit, written by the agent that established 
 
 > *That a change of speed beats top speed is coaching craft, not a measured finding — the IIHF's
 > coach-development manual and Edge Ice Academy both teach it, and neither measures it. See
-> [Time and Space](../hockey-iq/time_and_space.md).*
+> `[Time and Space](../hockey-iq/time_and_space.md)`.*
 
 | File | Lines | Note |
 |---|---|---|

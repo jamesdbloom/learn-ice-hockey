@@ -6,7 +6,7 @@ A documentation corpus for learning ice hockey: where to be, how to execute, how
 
 > **Rule set:** Written to NHL rules throughout. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline.
 >
-> **Start here if you're new:** [Getting Started](content/getting-started/getting_started.md) → [Rink Map and Glossary](content/foundation/rink_map_and_glossary.md) → [Rules Primer](content/foundation/rules_primer.md) → your position.
+> **Start here if you're new:** [Getting Started](content/getting-started/getting_started.md) → [Rink Map](content/foundation/rink_map.md) → [Language and Glossary](content/foundation/language_and_glossary.md) → [Rules Primer](content/foundation/rules_primer.md) → your position.
 
 ---
 
@@ -59,8 +59,12 @@ And before any of them sits **[Getting Started](content/getting-started/getting_
 
 | Document | What it covers |
 |---|---|
-| [Rink Map and Glossary](content/foundation/rink_map_and_glossary.md) | Every named area of the ice, all the lines and markings, directional vocabulary, and a full glossary. The canonical reference the rest of the corpus links to. |
+| [Core Principles](content/foundation/core_principles.md) | Seven ideas that survive changing your position, your team and your league, each with an example and its evidence. |
+| [Reading Ice Hockey Diagrams](content/reading-diagrams/reading_ice_hockey_diagrams.md) | How to read the pictures: a circle is a forward and a triangle is a defenceman, and what every other mark on a rink diagram means. |
+| [Rink Map](content/foundation/rink_map.md) | Every named area of the ice, all the lines and markings, and what each one changes. Hockey's vocabulary is spatial, and this is the canonical reference for the places it names. |
+| [Language and Glossary](content/foundation/language_and_glossary.md) | The working vocabulary, which is small and almost entirely *relative* — strong side, weak side, above, below — plus the full glossary. |
 | [Rules Primer](content/foundation/rules_primer.md) | The canonical rules reference — offside, icing, the full penalty catalogue, goaltender rules, faceoffs, officials, and a four-way NHL/IIHF/USA Hockey/rec comparison. |
+| [UK and England Rules](content/foundation/uk_rules.md) | If you play in Britain your rule book is the IIHF's, amended locally. Which of the differences flagged elsewhere in the corpus are yours. |
 | [On-Ice Communication](content/foundation/on_ice_communication.md) | The actual words to shout. Forty-four calls grouped by purpose, plus the goaltender's own eight, who makes each one, and what the receiver does. |
 
 ---
