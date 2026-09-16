@@ -824,6 +824,56 @@ reviewable.** ⚠️ **Still open: `positions/center.md`, `technique/shooting.md
 list above.** `uk_rules.md` and `body_contact_and_battles.md`'s original
 figures below are UNVERIFIED against today's state — re-run before trusting them.
 
+⚠️⚠️ **UPDATE 2 (same day) — ten more documents worked, and a defect the fix
+ITSELF introduced.** Repaired: `positions/center.md` (8→~7, 1 fixed),
+`technique/shooting.md` (23→~21, 3 fixed), `foundation/on_ice_communication.md`
+(12→11, 2 fixed), `hockey-iq/time_and_space.md` (7→7, content changed, 2 fixed),
+`hockey-iq/playing_without_the_puck.md` (14→14, content changed, 2 fixed).
+**Zero repairs, all confirmed benign/false-positive**, in
+`technique/puck_handling.md`, `technique/passing_and_receiving.md`,
+`foundation/uk_rules.md`, `foundation/rink_map.md`, `hockey-iq/risk_management.md` —
+every flagged hit in these five was read and is genuinely non-defective; do not
+re-flag them as untouched.
+⚠️⚠️ **THE "ENFORCED EXCLUSIVELY" RESTORATION ITSELF SHIPPED A FLATTENED
+PARALLEL, IN FOUR PLACES, CAUGHT AND FIXED BY THE COORDINATOR.** `winger.md`'s
+fix quoted *"but may be subject to a Video Review… or to a Coach's Challenge"*
+as what *"both"* books add. **The NHL text (`sources/nhl_rules.txt:7144-7146`)
+names only a Coach's Challenge — no Video Review.** Two independent agents hit
+the same clause: one (technique cluster) re-derived it from source and got it
+right; the other (hockey-iq cluster), told to *"match the already-committed
+`winger.md` wording exactly,"* faithfully copied the error into three more
+sites. **Fixed at all five sites plus `project/content_style_guide.md`'s own
+copy of the same clause.** Full account in
+[`../reviews/round_81_the_flattened_parallel_2026-09-16.md`](../reviews/round_81_the_flattened_parallel_2026-09-16.md)
+§14. ⚠️ **The lesson: an instruction to copy a prior fix's wording, rather than
+re-derive it from the primary source, inherits whatever defect that fix
+carried.** `goaltender.md:1015` and `special_teams.md:1033` already had this
+clause scoped correctly and needed no change — recorded so nobody re-checks
+them.
+⚠️⚠️ **UPDATE 3 (same day) — systems cluster complete, and the charging-strides
+gap CLOSED.** Repaired: `offensive_zone_play.md` (10→4), `neutral_zone_systems.md`
+(4→2), `defensive_zone_coverage.md` (26→19, the most-flagged file in the corpus,
+no meaning-changing hit found), `game_management.md` (15→9),
+`forechecking_systems.md` (8→5). **Zero repairs, all confirmed benign/mixed-
+convention**, in `breakouts.md` (13 flagged, all case-only).
+**The charging-strides completeness gap is fixed**: CARHA Rule 52's Note —
+*"[i]f more than two steps or strides are taken, it shall be considered a
+charge"* (`sources/carha.txt:2556`) — matches USA Hockey 607's threshold
+exactly, and is now named at all 8 sites across `forechecking_systems.md` and
+`offensive_zone_play.md` (facts, body, Common Mistakes, Key Takeaways in each),
+with *"three of the four books"* → *"four of the five books"* updated
+everywhere that framing appeared, and the CARHA scope qualifier ("CARHA-
+affiliated adult leagues only") attached at each mention. Both edited `Rule:`
+facts fit the cap with room: 290/300 and 243/300.
+⚠️ **NOT propagated: `switching_positions.md:293`, `body_contact_and_battles.md`
+and `defending_the_rush.md` discuss the same charging-strides comparison and
+still say "three of the four/five" — now inconsistent with the two fixed
+files.** This is a completeness gap, not a correctness one (nothing in the
+un-propagated documents is false), but it is exactly the shape this project
+keeps finding. **Open row:** propagate the CARHA 52 addition to those three
+documents, or decide explicitly that the comparison in each is scoped
+narrowly enough not to need it.
+
 - [ ] **Start here — the instance a commit gate named, verified to the character.**
   `uk_rules.md:502` quotes USA Hockey **304(g)** as *"all players, including
   goalkeepers, in all age classifications except Adults"*. **The source prints

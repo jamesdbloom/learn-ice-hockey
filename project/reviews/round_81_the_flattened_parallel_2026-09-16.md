@@ -646,3 +646,103 @@ against a fresh `build-diagrams.mjs` output (204/204 rendered, exit 0) following
 the earlier diagram-caption wave; its worklist output (shared spans, mirrored
 regions) shows nothing inconsistent with what that wave's own agent already
 verified by hand.
+
+---
+
+## 14. A repair introduced the exact defect class it was fixing, in four places
+
+`winger.md`'s restoration of the truncated "enforced exclusively... on-ice
+judgement of the Referee(s)" clause (§13 above) quoted the fix as *"but may be
+subject to a Video Review… or to a Coach's Challenge"*, framed as what *"both"*
+books add. ⚠️ **It is not what both books add.** Read against the primary text:
+
+- `sources/nhl_rules.txt:7144-7146` — *"...enforced exclusively in accordance
+  with the on-ice judgement of the Referee(s), but may be subject to a Coach's
+  Challenge (see Rule 38)."* **No Video Review.**
+- `sources/iihf_rules.txt:5513-5514` — *"...but may be subject to a Video
+  Review: ➔ Rule 37... or to a Coach's Challenge ➔ Rule 38..."*
+
+**The fix corrected one flattened parallel and committed a second, smaller one
+in the same sentence** — presenting an IIHF-specific mechanism as something the
+NHL text also states, which is the same defect class this entire round exists
+to find (Workstream 2M). It was caught only because a later agent, told to
+apply "the already-committed `winger.md` wording exactly," faithfully copied it
+into three more documents — and two agents working the SAME clause independently
+arrived at different, incompatible wordings: `center.md` and `shooting.md`
+(technique cluster) correctly separated the books' wording (*"the NHL naming
+only 'a Coach's Challenge', the IIHF naming 'a Video Review… or to a Coach's
+Challenge' as well"*); `on_ice_communication.md`, `time_and_space.md` and
+`playing_without_the_puck.md` (×2, hockey-iq cluster) copied the flawed
+`winger.md` form. **Reading the two clusters' reports side by side is what
+surfaced it — neither agent's own gate suite could, because the sentence is
+syntactically valid and cites two real rule numbers.**
+
+**Fixed at all five sites** (`winger.md` ×2, `on_ice_communication.md`,
+`time_and_space.md`, `playing_without_the_puck.md` ×2) to the pattern already
+independently arrived at by the technique-cluster agent, and applied the same
+correction to `project/content_style_guide.md`'s own copy of the same clause —
+found only because an agent flagged it as out-of-scope-but-worth-fixing rather
+than silently ignoring it. `content/positions/goaltender.md:1015` and
+`content/systems/special_teams.md:1033` already scoped the Video Review clause
+to the IIHF correctly and needed no change.
+
+⚠️ **The lesson: "match the already-committed wording exactly" is a propagation
+instruction that inherits whatever defect the original commit carried.** A
+brief that tells an agent to copy a fix rather than re-derive it from the
+primary source removes the one check — reading the source — that would have
+caught this. Two independent re-derivations (technique cluster) got it right;
+one instructed copy (hockey-iq cluster) propagated the error three more times.
+
+---
+
+## 15. Third parallel wave — systems cluster, and a completeness gap closed
+
+`offensive_zone_play.md`, `breakouts.md`, `neutral_zone_systems.md`,
+`defensive_zone_coverage.md`, `game_management.md`, `forechecking_systems.md`:
+24 shape-3 repairs total, all punctuation moved outside quote marks with
+nothing hidden — confirmed against the primary source in every case, none a
+wording change. `breakouts.md`'s 13 flagged hits were all case-only, left
+uniformly per the established mixed-convention precedent. `defensive_zone_coverage.md`
+was the single most-flagged file in the corpus at 26; no meaning-changing drift
+was found there despite the volume.
+
+Two confirmed wrong-occurrence false positives, both benign: `forechecking_systems.md`'s
+IIHF "recklessly endangers" clause matched Rule 20.1/55.3's boilerplate instead
+of the correctly-cited Rule 43.3, whose real sentence genuinely ends where
+quoted; and the USA Hockey Casebook's "reckless endangerment" phrase matched an
+unrelated Rule 640 roughing situation in two files, when the actual cited
+clause, Rule 607(e), is a short, complete sentence.
+
+**The charging-strides CARHA completeness gap, recorded earlier in this round
+as a low-priority finding, was closed.** CARHA Rule 52's Note —
+*"[i]f more than two steps or strides are taken, it shall be considered a
+charge"* (`sources/carha.txt:2556`) — matches USA Hockey 607's threshold
+exactly and was added at all 8 layered occurrences across two documents (facts,
+body, Common Mistakes, Key Takeaways in each), with *"three of the four
+books"* corrected to *"four of the five books"* everywhere that framing
+appeared and a scope qualifier attached at each mention. ⚠️ **This is a genuine
+content addition, not a mechanical drift repair, and it was made carefully:
+verified against primary text first, checked against the char cap (290/300 and
+243/300, comfortable room), and propagated through every layer of both owning
+documents.** ⚠️ **It was NOT propagated to three sibling documents that discuss
+the same comparison** (`switching_positions.md:293`, `body_contact_and_battles.md`,
+`defending_the_rush.md`) — a new, smaller completeness gap opened by closing
+the first one, recorded as an open plan row rather than chased further this
+round.
+
+---
+
+## 16. Final state
+
+Three parallel Sonnet-model agents plus coordinator corrections closed this
+round's active work: 39 more drifted quotations repaired across ten documents
+in the first parallel dispatch of the day and thirty across the earlier two
+waves (§9, §13, §15 combined); one flattened-parallel defect found and fixed
+(`defender.md`); one flattened-parallel defect introduced by a repair and
+caught and fixed in five places plus the style guide (§14); one disclosure
+class tested and found mostly sound (§7, §12); one completeness gap closed and
+one opened in its place (§15). Full gate suite clean: `check_links` (0),
+`check_facts` (837 blocks / 5620 facts), `check_absolutes` (39 documents + 408
+caption units), `check_geometry`, `check_secrets` (338 files), `check_tables
+--near` (3 dropped, 46 read aloud, 9 near a limit, unchanged), `check_plan_rows`
+(every quoted assertion verified).
