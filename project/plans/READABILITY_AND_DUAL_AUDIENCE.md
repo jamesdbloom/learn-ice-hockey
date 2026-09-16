@@ -646,6 +646,42 @@ provenance workflow is specified separately in
 `project/plans/PODCAST_AUTOMATION_LOCAL.md`; this readability plan owns only the
 audio learning contract and whether pilot audio is current.
 
+### Podcast ordering and discoverability
+
+The podcast feed already sorts episodes by the manifest's `track` and emits
+serial ordering metadata (`itunes:type="serial"`, `itunes:episode`, and
+Spotify's `itunes:order`). Keep these as the project's intended ordering
+signals, but do not assume every Apple Podcasts or Spotify view exposes that
+order consistently. Keep these concepts separate: `track` orders the manifest
+and feed items; the RSS elements communicate serial order to platforms; a title
+prefix is only a discovery fallback.
+
+Add a reviewed `podcastTitle` field, separate from the shared site/EPUB
+`documentTitle`, with a measured client-display budget. Begin with compact
+examples such as `07 Pos - Center` and `12 Sys - Breakouts`; use `Systems` as
+the podcast abbreviation for `Systems and Situations`, but do not treat the
+abbreviation as a replacement for the site's section title. The title budget
+must be checked against the current local platform guidance before finalising
+the format, rather than assuming a title is fully visible.
+
+Before changing titles, snapshot every published GUID keyed by episode identity
+and require a generated-feed invariant showing that no GUID changes. Enumerate
+the exact consumers and owners: `podcast.json`/`podcastTitle`, RSS title fields,
+M3U playlist labels, site `AudioPlayer`, M4A metadata, downloads, and any EPUB
+metadata. Decide explicitly which consumers use `podcastTitle`; do not claim one
+field updates site and EPUB titles unless that is intentional. Preserved GUIDs
+maintain episode identity, but Apple/Spotify subscriber position remains
+platform-dependent and cannot be guaranteed locally. Never use invented dates
+to force ordering.
+
+Validate local XML ordering, title lengths, GUID stability, manifest references,
+and playlist output first, using the platform evidence and feed behaviour recorded
+in `site/src/pages/feed/podcast.xml.ts` and `podcast-submission.local.md`.
+Live Apple Podcasts/Spotify rehearsal is a separate outward-facing step that
+requires explicit approval; record client-specific observations as observations,
+not universal platform behaviour. Implement this after the principles/pathway
+pilot and before regenerating a larger podcast batch.
+
 ## Phase 1: build the learning model before rewriting prose
 
 ### Deliverables
