@@ -746,3 +746,57 @@ one opened in its place (§15). Full gate suite clean: `check_links` (0),
 caption units), `check_geometry`, `check_secrets` (338 files), `check_tables
 --near` (3 dropped, 46 read aloud, 9 near a limit, unchanged), `check_plan_rows`
 (every quoted assertion verified).
+
+---
+
+## 17. Corpus-wide quotation-drift sweep — final wave, and completion
+
+Two more parallel agents closed out the remaining ten documents.
+
+**Contact cluster** (`body_contact_and_battles.md`, `switching_positions.md`,
+`defending_the_rush.md`): refuted a brief premise outright —
+`switching_positions.md:293` was reported as the charging-strides comparison;
+it is actually the goalkeeper's-equipment comparison and already correctly
+cites CARHA, so there was nothing to propagate there. Two more confirmed
+wrong-occurrence false positives in `body_contact_and_battles.md` (a CARHA
+clause matched to an earlier, unrelated occurrence of similar wording in the
+same book; a USA Hockey Casebook situation matched to an NHL rule with a
+similar but longer sentence).
+
+⚠️ **One genuine meaning-changing repair:** `switching_positions.md` had
+dropped IIHF 101.1's condition — *"provided that 'possession of the puck'
+remains the sole object of the two (2) Players"* — leaving a conditional
+permission (two players may push and lean into each other) read as
+unconditional. Restored to match the wording already correct in
+`rules_primer.md`. Verified against `sources/iihf_rules.txt:7494-7497`.
+
+The CARHA-52 charging-strides propagation was completed: `body_contact_and_battles.md`
+already had CARHA Rule 52 in its Sources trailer from an earlier round and
+needed only body/facts propagation; `defending_the_rush.md` had never cited
+CARHA at all despite running the identical stride comparison in four layers,
+and gained the citation in all four plus a new Sources-trailer bibliography
+entry. The coordinator then fixed a stale cross-reference this propagation
+left behind: `forechecking_systems.md:217` pointed readers to
+`body_contact_and_battles.md` as *"the four-book comparison"*, now corrected
+to *"five-book."*
+
+**Remaining tail cluster** (`language_and_glossary.md`, `getting_started.md`,
+`equipment.md`, `team_play_and_culture.md`, `conditioning_and_recovery.md`,
+`skating.md`, `how_to_watch_hockey.md`): two repairs, both confirmed
+non-substantive restorations of dropped clauses already covered by
+surrounding prose, except one — the England Ice Hockey insurance quote in
+`getting_started.md`, which had silently dropped the minimum-eligibility
+clause. Safety-adjacent content (`equipment.md`'s helmet/mask/throat-protector
+quotations, `conditioning_and_recovery.md`'s and `skating.md`'s body-checking
+and boards-angle instructions) was checked closely per the brief's specific
+flag and found accurate in every case — no truncated safety qualifier found
+anywhere in this batch.
+
+**Every document in `content/` has now been run through `check_quote_drift.py`
+at least once this round.** The corpus-wide sweep begun with `rules_primer.md`
+at the start of this round is substantially complete: no known unrepaired or
+unexamined shape-3 (meaning-changing) hit remains. What is left, corpus-wide,
+is overwhelmingly CASE-shape drift in documents that already mix the
+disclosed-bracket and bare-lowered conventions — left deliberately uniform in
+every document where it was found, per the precedent this round established
+with `rules_primer.md`'s first pass.

@@ -865,14 +865,48 @@ with *"three of the four books"* → *"four of the five books"* updated
 everywhere that framing appeared, and the CARHA scope qualifier ("CARHA-
 affiliated adult leagues only") attached at each mention. Both edited `Rule:`
 facts fit the cap with room: 290/300 and 243/300.
-⚠️ **NOT propagated: `switching_positions.md:293`, `body_contact_and_battles.md`
-and `defending_the_rush.md` discuss the same charging-strides comparison and
-still say "three of the four/five" — now inconsistent with the two fixed
-files.** This is a completeness gap, not a correctness one (nothing in the
-un-propagated documents is false), but it is exactly the shape this project
-keeps finding. **Open row:** propagate the CARHA 52 addition to those three
-documents, or decide explicitly that the comparison in each is scoped
-narrowly enough not to need it.
+- [x] **PROPAGATED AND CLOSED, 16 September.** `switching_positions.md:293` was
+  a FALSE premise — re-checked and it is the goalkeeper's-equipment comparison,
+  not charging-strides, and already correctly cites CARHA; nothing to fix.
+  `body_contact_and_battles.md` had already cited CARHA Rule 52 verbatim in its
+  Sources trailer from an earlier round — propagated into its body and facts
+  layers, "four" → "five" corrected at each site. `defending_the_rush.md` had
+  **zero** CARHA mentions despite running the identical stride comparison in
+  four layers (facts, body, Common Mistakes, Key Takeaways) — added at all
+  four, plus a new CARHA bibliography entry in its Sources trailer, since the
+  document had never cited the book before. `forechecking_systems.md:217`'s
+  own cross-reference to `body_contact_and_battles.md` as *"the four-book
+  comparison"* was stale after the propagation — corrected to *"five-book"* by
+  the coordinator. **Every document in the corpus that runs this comparison now
+  agrees.**
+
+⚠️⚠️ **UPDATE 4 — the corpus-wide quotation-drift sweep is SUBSTANTIALLY
+COMPLETE, 16–17 September.** Ten more documents worked in the last two waves:
+`body_contact_and_battles.md` (34→32, both remaining hits confirmed
+wrong-occurrence false positives), `switching_positions.md` (18→11, 8
+repaired, 1 meaning-changing — see below), `defending_the_rush.md` (unchanged
+by drift, but see the CARHA propagation above), `language_and_glossary.md` (8,
+0 repaired — all confirmed benign or mixed-convention), `getting_started.md`
+(13, 1 repaired), `equipment.md` (7, 0 repaired, safety content checked
+closely and found accurate), `team_play_and_culture.md` (6, 0 repaired),
+`conditioning_and_recovery.md` (3, 0 repaired, safety content checked and
+accurate), `skating.md` (4, 0 repaired, safety content checked and accurate),
+`how_to_watch_hockey.md` (1, repaired).
+⚠️ **The one meaning-changing repair this pair of waves found:**
+`switching_positions.md` had dropped IIHF 101.1's load-bearing condition —
+*"provided that 'possession of the puck' remains the sole object of the two
+(2) Players"* — leaving a conditional permission read as unconditional.
+**Verified against `sources/iihf_rules.txt:7494-7497` and matched to the
+wording already correct in `rules_primer.md`.**
+**Every document in `content/` has now been run through `check_quote_drift.py`
+at least once this round.** Remaining unrepaired hits across the corpus are, by
+count, overwhelmingly CASE-shape (initial capital) in documents that already
+mix the disclosed-bracket and bare-lowered conventions — left uniformly per
+the standing precedent, file by file, with the reason stated in each report.
+**No outstanding shape-3 (meaning-changing) hit is known to remain unrepaired
+or unexamined** as of this update; if `check_quote_drift.py` is re-run later
+and reports a shape-3 hit, treat the corpus as having drifted again rather
+than assuming the pass missed it.
 
 - [ ] **Start here — the instance a commit gate named, verified to the character.**
   `uk_rules.md:502` quotes USA Hockey **304(g)** as *"all players, including
