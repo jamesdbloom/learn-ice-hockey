@@ -354,15 +354,30 @@ The short form:
    `scripts/check_disclosures.py` reports **the corpus's own absence-of-evidence claims** —
    *"no study was found"*, *"nobody publishes a ranking"*, *"could not be traced"* — so they can
    be **tested**. ⚠️ **Non-negotiable 4's *"never strip an honest disclosure"* had quietly been
-   read as *"never test one"*: before round 59 they had never been attacked SYSTEMATICALLY. Testing them then began, and
-   every one tested has been false** — ⚠️ **the count moved from three to eleven inside a single
-   round, so no total is written here. Its owner is the round-59 review record's *Figures in this
-   record* section. READ THAT, never this line.** The first three were: a figure whose source was in the document's own Sources
+   read as *"never test one"*: before round 59 they had never been attacked SYSTEMATICALLY.**
+   The first three found were: a figure whose source was in the document's own Sources
    list; a string said to appear *"nowhere"* on a site, on one of the five pages the sentence
    itself named; and a page said to 404 that returns 200 and always had, with the verification
    baseline already warning so. ⚠️ **They share nothing but DIRECTION: all three made the corpus
    look LESS supported than it is**, which is the opposite of the failure every other convention
-   here guards against, and exactly why no reviewer stopped on them. It renders each document
+   here guards against, and exactly why no reviewer stopped on them.
+   ⚠️⚠️ **THIS PASSAGE SAID *"every one tested has been false"* AND THAT IS NO LONGER TRUE.**
+   On 16 September an agent tested **18 facts-layer claims against the primary text and SEVENTEEN
+   HELD.** ⚠️ **The false sentence had already been carried into five briefs as settled fact, in
+   bold — and it sat four lines above this paragraph's own *"most held when attacked"*, flatly
+   contradicting it, for weeks.** ⚠️ **A claim about a RATE goes stale exactly the way a number
+   does, and nothing in this file was watching it.** **No rate is written here now. The owner is
+   [`project/plans/OPEN_ITEMS.md`](project/plans/OPEN_ITEMS.md) Workstream 2B — read that.**
+   ⚠️ **What the break actually taught, and it is a method, not a score:** the corpus's **rulebook**
+   negatives are in good shape, because a rulebook is a closed searchable text. **What stays rotten
+   is the subset whose question has since been ANSWERED ELSEWHERE IN THIS REPOSITORY and nobody
+   propagated to it.** The one that broke was **not found by attacking a search** — it was found
+   because [`sources/README.md`](sources/README.md) **had already written the answer down.**
+   ⚠️ **So the method that finds the next one is not a better grep: it is reading `sources/README.md`
+   and the sibling documents BEFORE believing the sentence.** ⚠️ **And two of the seventeen held
+   ONLY because the agent rendered an image-only PDF with `pdftoppm` and read editions POSITIONALLY
+   rather than trusting a zero — a worse method would have reported false disclosures that are not
+   false.** It renders each document
    through `md_to_speech`, because **the layer decides the cost** — a substantial minority of hits (⚠️ **58 of 498 when written; 63 of 550 on 2 September 2026 — RUN THE TOOL, never quote this line**) are in the
    ` ```facts ` layer, voiced alone with a 300 ms break either side. ⚠️ **Its first version looked
    for a `## Sources` heading; the trailer in this corpus HAS no heading, so it reported every
@@ -391,7 +406,11 @@ The short form:
    is invisible to it.** ⚠️ **The owner is `content/foundation/rink_map.md`.** This line said
                     `rink_map_and_glossary.md` until 16 September 2026 — **a file that has not existed
                     since commit `fd9e903` split it into `rink_map.md` and `language_and_glossary.md`.**
-                    The old name is still named by four scripts' comments and 21 diagram modules, and
+                    The old name is still named by four scripts' comments and by diagram modules —
+                    ⚠️ **this line said *21* and the census on 16 September found *17*, so the number
+                    is NOT written here any more: run
+                    `grep -rl 'rink_map_and_glossary\.md' site/src/diagrams/*.mjs | wc -l`.**
+                    **A count of a shrinking backlog goes stale in the direction that flatters it**, and
                     **no `owner:` field carries it, so `check_links.py` cannot see any of them.** An
                     agent told "only `rink_map_and_glossary.md` settles this" greps for a file that is
                     not there and finds nothing — the routing failure this file warns about for

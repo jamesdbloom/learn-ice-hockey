@@ -919,11 +919,25 @@ const overload = {
   // IN. "Some teams use it as their base, others as a situational squeeze" is a claim
   // about frequency that nobody has counted; without "nobody publishes a count … so
   // neither is offered here as the commoner one" the caption silently ranks them.
+  // Both survive below VERBATIM and are most of the remaining length.
+  //
+  // ⚠️ WHAT WAS CUT, 16 SEPTEMBER 2026, AND WHY IT IS NOT A LIMB. This caption used to
+  // re-tell the paragraph it now sits directly beneath — §"The strong-side overload",
+  // which is where scripts/check_caption_echo.py measured it at 41.2% of its 5-word
+  // runs, the second-highest in the corpus. `md_to_speech.py` emits "Diagram. " +
+  // caption and nothing else, so a listener heard "cutting the ice in half", "squeezing
+  // the carrier", "dies to one hard accurate cross-ice pass" and "the whole weak side is
+  // unoccupied by design" twice in a row, the second time with nothing added. Every one
+  // of those four is carried by the prose block immediately above the marker, checked
+  // line by line before the cut. What did NOT come out: the shape itself (a caption must
+  // stand alone — this module's own rule, after a borrowed caption was found resolving
+  // only in one host), the notation pointer to the dashed route, the disclosure, and the
+  // cardinal-rule tail.
   caption:
-    'The strong-side overload: all five defenders shift to the puck side, cutting the ice in ' +
-    'half and squeezing the carrier. ' +
-    'It dies to one hard, accurate cross-ice pass — the dashed route — because the whole weak ' +
-    'side is unoccupied by design. ' +
+    'The strong-side overload: all five defenders on the puck side, and the weak side ' +
+    'unoccupied by design. ' +
+    'The dashed route is the counter — the cross-ice pass to the attacker alone at the ' +
+    'far post. ' +
     'Some teams use it as their base system, others as a situational squeeze; nobody ' +
     'publishes a count of what teams actually run, so neither is offered here as the ' +
     'commoner one. A coaching choice: find out whether yours plays it, and when.',

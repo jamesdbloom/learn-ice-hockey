@@ -64,11 +64,21 @@
  * and until this edit it had not.
  *
  * GEOMETRY THE CORPUS OWNS. The goal line, the posts and the crease belong to
- * content/foundation/rink_map_and_glossary.md via src/data/rink.json, and
+ * content/foundation/rink_map.md via src/data/rink.json, and
  * scripts/check_geometry.py asserts them. Nothing here restates a crease or net
  * dimension; every position below is a named position plus an offset in feet, and
  * every offset is derived in a comment from the named positions, never measured off
  * a picture.
+ *
+ * ⚠️ THE OWNER DOCUMENT WAS SPLIT AND THIS FILE NAMED THE OLD PATH IN FOUR PLACES.
+ * `content/foundation/rink_map_and_glossary.md` has not existed since commit fd9e903
+ * split it into `rink_map.md` (the regions and the dimensions) and
+ * `language_and_glossary.md` (the vocabulary). No `owner:` field carried the old name,
+ * so scripts/check_links.py could not see any of the four, and an agent sent to the old
+ * name greps for a file that is not there and finds nothing. Corrected here rather than
+ * deleted so the name is not restored. The
+ * `rink_map_and_glossary.mjs` references below are a DIFFERENT file and are correct:
+ * the diagram MODULE kept its name when the document split.
  */
 
 // --- the two posts, as offsets from the centre of the goal line ------------------
@@ -334,7 +344,7 @@ const failureModes = {
  * against the renderer rather than against that sentence.
  *
  * WHAT IS DELIBERATELY NOT REDRAWN HERE, because the corpus already owns it:
- *   the trapezoid's SHAPE ......... `the-trapezoid`, rink_map_and_glossary.md
+ *   the trapezoid's SHAPE ......... `the-trapezoid`, rink_map.md
  *   USA Hockey's privileged area .. `the-privileged-area`, rules_primer.md
  *   the screen from the screener's
  *     side ........................ `screen-the-goalie-sightline`,
@@ -359,7 +369,7 @@ const failureModes = {
  * meanings corpus-wide, which the style guide forbids in terms.
  * =========================================================================== */
 
-// --- the slot, as content/foundation/rink_map_and_glossary.md defines it ---------
+// --- the slot, as content/foundation/rink_map.md defines it ----------------------
 // The SAME four vertices `the-slot` uses in rink_map_and_glossary.mjs: the top of
 // the circles (x 54) to the front edge of the crease (x 83), 7 ft either side of
 // centre. Restated here rather than imported because these spec files do not
@@ -750,7 +760,7 @@ const readingATip = {
 // a description rather than a polygon: no document in this corpus owns a shape
 // called "the corner". Shading one would be this file inventing a region, which is
 // the failure the zone checker exists to catch. The slot IS owned, by
-// rink_map_and_glossary.md, and its four vertices are the ones used here.
+// rink_map.md, and its four vertices are the ones used here.
 //
 // GEOMETRY. The shot comes from the left point, so the goaltender sits below the
 // centre line and the attacker in the slot sits above it: the puck at (27, -18)

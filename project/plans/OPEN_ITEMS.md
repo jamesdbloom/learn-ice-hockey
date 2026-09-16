@@ -96,6 +96,31 @@ words. **Take a copy of a tool before changing it; running the old one turns
   marker list; the row simply carried no marker. **When quoting a superseded
   figure, put a retrospect word on the same LINE as the number** — the check is
   per-line.
+- [ ] ⚠️ **A COORDINATOR FINDING THAT WAS WRONG, KEPT AS THE ROW BECAUSE THE
+  RESIDUAL IS REAL AND SMALLER.** It was written here that
+  `scripts/check_chunk_tails.py` *"prints a premise its own docstring retracts"* —
+  its footer asks *"does this still tell the truth if the listener stops here?"*
+  while the top of the file retracts the belief that a chunk is a separate file.
+  ⚠️ **That was FALSE, and reading twenty more lines of the source settled it:**
+  `check_chunk_tails.py` uses **that exact sentence on purpose**, immediately after
+  the retraction, framed as *"the one the corpus already asks of every facts value,
+  with the volume turned up."* It is the **standalone-reading test**, which the
+  docstring endorses. **The footer and the docstring agree.** Re-derive the line
+  numbers rather than trusting these; the file moves.
+  ⚠️ **The lesson is the one this plan keeps relearning from the other side: the
+  coordinator ran the tool, read its OUTPUT, and filed a defect against a file it
+  had not read — the tail-read failure, committed in the same hour as briefs
+  warning five agents against it.**
+  **The residual, which is real:** the footer is the only thing a reader sees who
+  runs the tool without opening it, and **on its own** *"stops here"* reads as the
+  retracted premise rather than as the standalone test. **Acceptance:** the footer
+  carries its own framing — that the seam is 300 ms inside one continuous file and
+  the test is whether the value tells the truth **alone, at any position** — or it
+  is recorded that the docstring is enough and this row closes unchanged.
+  ⚠️ **A SHARED TOOL IS SHARED STATE: change it BETWEEN waves, never during one.**
+  A classifier once changed under a live agent mid-round and the agent correctly
+  reported that *"no finding in any report should rest on that tool's output
+  today."* **This tool is named in a live brief right now.**
 - [ ] `scripts/check_zones.py`'s `overlap_fraction()` is a **bounding-box** IoU
   that divides by a zero-area union for line segments — it reported two zero-area
   polygons as *"71% the same ice"*, which means nothing. **Skip degenerate polygons
@@ -463,20 +488,82 @@ evidence, named scope, propagation matrix, `rules-verifier` clearance, and
 in one round.
 
 ⚠️ **Non-negotiable 4's *"never strip an honest disclosure"* had quietly been read
-as *"never test one."*** Every disclosure tested since systematic testing began
-has been **false**, and every one ran the same direction: **it made the corpus
-look LESS supported than it is.** Correcting a false disclosure is not stripping
-it — it is replacing an absence claim with the source. **Never remove a true one,
-and never make the corpus look more confident than it is.**
+as *"never test one."*** Correcting a false disclosure is not stripping it — it is
+replacing an absence claim with the source. **Never remove a true one, and never
+make the corpus look more confident than it is.**
 
-- [ ] Test the **70 disclosures in the ` ```facts ` layer** first. That layer is
-  voiced **alone**, with a 300 ms break either side, to a listener with no
-  surrounding context, so a false absence claim there is the worst case in the
-  corpus. Run `python3 scripts/check_disclosures.py` for today's list.
-  **Acceptance:** each is confirmed true with the search that was run named, or
-  replaced by the source. ⚠️ **Before writing that no source exists, search the
-  document's own Sources list, `sources/`, and sibling documents** — two of the
-  first three false ones were refuted by the document's own trailer.
+## ⚠️⚠️ THE "EVERY ONE HAS BEEN FALSE" PREMISE BROKE ON 16 SEPTEMBER. IT WAS THE HEADLINE FINDING OF THE ROUND, AND IT CHANGES HOW THIS BACKLOG IS WORKED.
+
+**This section previously read: *"Every disclosure tested since systematic testing
+began has been false, and every one ran the same direction."*** ⚠️ **That was
+carried into five briefs as settled fact, in bold, twice, and it is no longer
+true.** An agent tested **18 facts-layer claims against the primary text.
+SEVENTEEN HELD.** Most held verbatim and positionally.
+
+⚠️ **Two held ONLY because the agent used the technique the trap defeats:**
+`crt6.pdf` held **only after `pdftoppm` rendered it** — the `.txt` is page
+furniture; and the skate-definition and IIHF Situation-10.26 negatives held **only
+after the sentence was read POSITIONALLY in each edition** rather than by trusting
+a zero. **A worse method would have reported three false disclosures that are not
+false.**
+
+**So the class is NOT uniformly rotten.** ⚠️ **The corpus's RULEBOOK negatives —
+the bulk of the facts layer — are in good shape**, because a rulebook is a closed,
+searchable text.
+
+⚠️⚠️ **WHAT REMAINS ROTTEN IS A SUBSET WITH A NAMEABLE SHAPE: a disclosure whose
+question has since been ANSWERED ELSEWHERE IN THIS REPOSITORY, and nobody
+propagated to it.** The one that broke was **not found by attacking a search.** It
+was found by **ROUTING** — `sources/README.md` had already written the answer down,
+under a heading saying so in terms. ⚠️ **The method that finds the next one is not a
+better grep. It is reading `sources/README.md` and the sibling documents BEFORE
+believing the sentence.**
+
+⚠️ **And the agent flagged the limit of its own pass: it did that routing check on
+ONE claim, because the claim named British hockey. It did NOT do it systematically
+for the other seventeen.** **A second README section quietly answering one of them
+would not have been seen.**
+
+- [x] **Test the facts-layer disclosures — 18 of ~70 tested 16 September.** 17
+  HOLDS, 1 FALSE at two sites, 0 could-not-establish. **Routed to the file owners.**
+- [ ] ⚠️ **Re-test the seventeen HOLDS for the ROUTING shape only.** They were
+  attacked as searches and survived; **none was checked against `sources/README.md`
+  and the sibling documents**, which is the one method that has ever caught this
+  class. **Acceptance:** each HOLDS is confirmed against the README and its
+  siblings, or reclassified. ⚠️ **Cheap, and it is where the next false one is.**
+- [ ] ⚠️⚠️ **THE `no-X-exists` FAMILY — roughly 35 of the 70, the single biggest
+  block, and UNTESTED.** Claims about the coaching and analytics literature: *"no
+  published count ranks plays by frequency"*, *"nobody has counted cycle turnovers
+  by cause"*, *"no published study codes penalty motive"*, Valiquette's percentages
+  *"uncheckable"*, the weighted-puck passing measurement. ⚠️ **No network search was
+  run and NO VERDICT IS REPORTED ON ANY OF THEM — deliberately.** **These have no
+  rulebook behind them, which is exactly why they have survived: nobody can falsify
+  them cheaply.** Needs a dedicated agent **with search**, and a brief that says
+  ⚠️ ***record what you searched, not that it held*** — the style guide is explicit
+  that a single-engine HELD is worth almost nothing.
+- [ ] ⚠️ **Selection bias, stated so it is not forgotten: 17 of 18 holding does NOT
+  mean the class is clean.** It means **the ones checkable offline were the ones
+  checked.** The 35 above are the ones with nothing to check against. **See the
+  style guide's *"SIX OF FIFTEEN IS NOT A BASE RATE"*.**
+- [ ] **Untested and deliberately skipped:** `content/technique/shooting.md:449`
+  and `:566` — the file went modified mid-session under another agent.
+- [ ] ⚠️ **A completeness gap found while testing, NOT a false disclosure.**
+  `forechecking_systems.md:207` and `offensive_zone_play.md:810` say the books
+  *"do not count [charging strides] alike — Hockey Canada 7.4 two or more, USA
+  Hockey 607 more than two, IIHF 42.1 'multiple'; the NHL sets no count"*. **CARHA
+  Rule 52 (Note) sets one too:** *"If more than two steps or strides are taken, it
+  shall be considered a charge"*. **The line claims no exhaustiveness, so it is not
+  an error** — but `switching_positions.md:293` treats the set as *"the five
+  books"*, and ⚠️ **CARHA is the adult rec book a reader is most likely to be
+  under.** **Acceptance:** CARHA named, or the asymmetry recorded as deliberate.
+- [ ] ⚠️ **Two false-falsification traps recorded at `sources/README.md` lines 803
+  and 997 — `CE mark` matching *"i-ce mark-ings"*, and the nonsense-URL negative
+  control. Name them in the next brief in this class.**
+- [ ] ⚠️ **A method rule this round paid for.** An agent's first cross-book sweep
+  returned **0 for every book because the path was wrong**, and ⚠️ **the output
+  looked exactly like six clean verified negatives.** Only the positive control
+  caught it — `goalkeeper` = 0, which is impossible. **Every zero carries a
+  control, every time.**
 - [ ] ⚠️ Do **not** work the `unchecked` count of 184 as a worklist. It is an
   upper bound: a reviewer who read 58 facts-layer lines classified ~15 as
   genuinely unverifiable where the tool reported 31. The gap is disclosures that
@@ -575,11 +662,33 @@ which found it, verified it, and **deliberately did not close it**.
   adds up to"* as an unnamed question about leagues. **A CARHA goalie reads that,
   correctly concludes they have no trapezoid, and becomes a third puck-handler
   behind their own net.** ⚠️ **CARHA 58(b) bars the smother there on the same two
-  minutes**, in the same shape as USA Hockey 614(c)(1): *"…deliberately falls on
-  or gathers the puck into their body… when the puck is behind the goal line and
-  the goalkeeper's body is entirely outside the boundaries of the goal crease
-  area."* Verified verbatim. **The omission is permissive and changes what the
-  reader does.**
+  minutes**, and the wording is verbatim from `sources/carha.txt`: *"A Minor
+  penalty shall be assessed to any goalkeeper who deliberately falls on or gathers
+  the puck into their body, or holds or places the puck against any part of the
+  goal or boards when the puck is behind the goal line and the goalkeeper's body
+  is entirely outside the boundaries of the goal crease area."* **Re-read it there
+  rather than trusting this quotation.** **The omission is permissive and changes
+  what the reader does.**
+  ⚠️⚠️ **AN EARLIER VERSION OF THIS ROW SAID CARHA 58(b) WAS *"in the same shape as
+  USA Hockey 614(c)(1)"*. IT IS NOT, AND THE TWO BOOKS DIVERGE IN BOTH DIRECTIONS.**
+  Read on disk 16 September, `sources/usah.txt` Rule 614:
+  - ⚠️ **INTENT: CARHA says *"deliberately"*; USA Hockey 614(c) has NO intent word
+    at all** — *"A minor penalty for delay of game shall be assessed to a goalkeeper
+    who falls on or gathers the puck into their body…"*. ⚠️ **614(a), the SKATER
+    clause, does say *"deliberately"* — so the omission in (c) is deliberate
+    drafting, not an extraction artefact.** **A repair that writes *"deliberately"*
+    into the USA Hockey limb would add a word USA Hockey does not write, and would
+    narrow a penalty the book applies without it.**
+  - ⚠️ **CONSEQUENCE: USA Hockey 614(c) requires the act to *"cause a stoppage of
+    play"*. CARHA 58(b) requires no stoppage.** So neither rule is a superset of the
+    other, and **no single sentence can state both without naming both books.**
+  - ⚠️ **AND 614(c) HAS A SECOND TRIGGER CARHA HAS NO EQUIVALENT FOR:** (c)(2), the
+    goalkeeper who *"fail[s] to play the puck with their stick when provided the
+    opportunity to do so prior to being pressured by an attacking player."* **Any
+    repair citing 614(c) bare cites a rule with two limbs and quotes one.**
+  ⚠️ **This is the second time this session that a *"both books say the same thing"*
+  premise has failed on an intent word. Check the parent clause AND the sibling
+  clause before writing any cross-book parallel.**
   ⚠️⚠️ **WHY IT WAS NOT CLOSED, AND THIS IS THE FINDING:** that section's facts
   block sits at **11 of 11 facts — the hard cap** — with at most 26 characters of
   headroom on any line and **8 on the `Key:` line that would naturally host it.**
@@ -933,6 +1042,120 @@ has not been reviewed.**
   Captains and Leadership"*, which is ordinary English. **Both verified by
   rendering.**
 
+## Workstream 2M: the flattened cross-book parallel — a new class
+
+**Owner:** coordinator found it; `rules-verifier` was dispatched on
+`positions/goaltender.md`, `defender.md`, `center.md`, `winger.md`.
+**Evidence:** both books read on disk 16 September; wording quoted below.
+
+⚠️⚠️ **INTERRUPTED BY THE WEEKLY RATE LIMIT (resets 20 September, 22:00
+Europe/London), NOT by completion.** Three agents working this class died
+mid-round with a `rate_limit` API error on the Opus model. **What was verified
+before the interruption is recorded below and is solid — checked against the
+gates after the fact.** What was NOT reached:
+
+- [ ] ⚠️ **`positions/goaltender.md`, `defender.md`, `winger.md` — the
+  `rules-verifier` dispatched on all four files DIED BEFORE EDITING ANY OF THEM.**
+  `git status` confirms zero changes to these three. **The CARHA census for these
+  files (22/5/15/11 occurrences respectively) was never run by that agent** — its
+  last message before dying was *"Now the style guide, and in parallel the CARHA
+  counts."* **Re-dispatch when quota allows**, with this record and the corrections
+  below carried forward.
+- [x] **`positions/center.md:613` and its body sentence — fixed by the coordinator
+  directly**, because the agent tasked with it (a different one, testing
+  disclosures) died before reaching this file. See Workstream 2B for the
+  disclosure-side finding; this is its CARHA-adjacent repair. Both sites now read
+  *"the age comes from IHUK's Rules of Competition, not either rule book"* in
+  place of the false *"no book states a body-checking age"*. **`Rule:` fact at
+  `:613` measured 279/300 after the edit.** Verified: `check_facts`, `check_links`,
+  `check_absolutes` all clean.
+- [x] **`systems/faceoffs.md:882` and `systems/special_teams.md:322` — FIXED**,
+  by the agent holding those two files, which finished before the rate limit hit.
+  See the verified text below.
+- [ ] ⚠️ **Two reported-not-verified hits from that agent's tight sweep are still
+  open: `positions/center.md:449` ("CARHA 57(c) writes the same permission in
+  near-iden…") and `positions/goaltender.md:975` ("and so does CARHA's own
+  goalkeeper rule").** `goaltender.md:1425` was also flagged but sits in a Sources
+  trailer — check whether it is voiced at all before ranking it.
+
+⚠️⚠️ **THE SHAPE: a fifth book joined to another book's rule by a connective —
+*"likewise"*, *"the same"*, *"both books"*, *"all four books"*, *"as well"*,
+*"too"* — where the two books DIVERGE.** The connective does the damage, not the
+citation. **No checker sees any of it:** the Markdown is valid, the rule numbers
+are real, and `check_absolutes.py` scores penalty TIERS and DENIALS, not whether
+two books actually say the same thing.
+
+**The instance that started this workstream — `systems/faceoffs.md:882`, a
+`Rule:` fact, so voiced ALONE with a 300 ms break either side — ⚠️ NOW FIXED, see
+below:** originally *"…USA Hockey 614(c) behind the goal line… or outside its
+"goalkeeper's privileged" area, **CARHA 58(b) likewise**…"*
+
+⚠️ ***"Likewise"* is false on FOUR counts**, and each was read in the primary text
+rather than inferred. **Re-read both clauses rather than trusting this row.**
+
+1. ⚠️ **INTENT.** CARHA 58(b) says *"deliberately"*. **USA Hockey 614(c) has no
+   intent word at all.** ⚠️ **614(a), the SKATER clause, DOES say *"deliberately"*
+   — so the omission in (c) is deliberate drafting, not an extraction artefact.**
+   ⚠️ **Writing *"deliberately"* into the USA Hockey limb would narrow a penalty
+   the book applies without it.** **This was found only by reading the SIBLING
+   clause, which is why the parent-clause rule now extends to siblings.**
+2. **CONSEQUENCE.** USA Hockey 614(c) requires the act to *"cause a stoppage of
+   play"*. **CARHA 58(b) requires no stoppage.**
+3. ⚠️ **PRIVILEGED AREA.** `grep -ci privileged sources/carha.txt` returns **0** —
+   **CARHA has no such concept**, and the sentence's USA Hockey limb names it, so
+   *"likewise"* imports a concept CARHA does not have. **Positive control:
+   `grep -ci goalkeeper sources/carha.txt` returns 173**, so the file is intact and
+   the zero is real rather than a mis-extraction.
+4. **TRIGGER COUNT.** USA Hockey 614(c) has **four** numbered triggers; CARHA
+   58(b) is one sentence. ⚠️ **A FIRMER CLAIM WAS MADE HERE AND IS WITHDRAWN:**
+   that CARHA's goal-frame/boards limb is *"CONDITIONED on being behind the goal
+   line"*. **The text is genuinely ambiguous** — *"…falls on or gathers the puck
+   into their body, **or** holds or places the puck against any part of the goal or
+   boards **when** the puck is behind the goal line…"* — **the `when` clause may
+   condition both limbs or only the second, and the book does not settle which.**
+   ⚠️ **Do NOT resolve that ambiguity in either direction in the corpus.** The
+   conclusion is unaffected: **neither rule is a superset of the other.**
+
+**Neither rule is a superset of the other, so no single clause can state both
+without naming both books.** ⚠️ **`goaltender.md:522`'s *"four triggers, not one"*
+was checked against the book and is CORRECT — do not "fix" it.**
+
+- [ ] ⚠️ **The INVERSE is the permissive half and no connective reveals it: a book
+  named in the GRANT and given no authority for the LIMIT.** Recorded instance:
+  `systems/special_teams.md:322` names CARHA among books that write no trapezoid —
+  **verified: `trapezoid` and `restricted area` both return 0 against the 173-hit
+  control** — then cites **only USA Hockey and Hockey Canada** for *"not freeze it
+  out there"*. ⚠️ **And the limit as stated looks OVER-SCOPED for CARHA anyway: 58(b)
+  reaches only where *"the puck is behind the goal line"*, and a corner is partly in
+  front of it.** ⚠️⚠️ **THAT OVER-SCOPE READING WAS WRONG AND IS
+  WITHDRAWN.** It said *"CARHA Rule 61(a) is not the answer — it is expressly 'any
+  player except the goalkeeper'"*. **61(a) is not the answer; 61(b) IS.** *"A Minor
+  penalty shall be assessed to a goalkeeper who deliberately holds the puck and in
+  the opinion of the Referee, is causing an unnecessary stoppage of play."* **It
+  carries NO location condition**, so it reaches a corner in front of the goal line
+  where 58(b) does not — corroborated by **Rule 55(a) Note 2**, directing referees
+  to be strict about *"the goalkeeper holding the puck"*.
+  ⚠️ **So the defect at `:322` is SMALLER and DIFFERENT: the line is not
+  over-scoped, it is UNDER-CITED. 61(b) is the citation it is missing.**
+  ⚠️ **The coordinator read 61(a), saw the goalkeeper excluded, and stopped at the
+  sub-clause — the SIBLING-CLAUSE FAILURE THIS WORKSTREAM WAS OPENED TO RECORD,
+  committed in the same hour, by the person recording it.** Found by an agent that
+  did not own the file and checked anyway.
+  **Open, and not to be assumed either way:** whether 61(b)'s *"unnecessary
+  stoppage"* test is narrower **in practice** than 58(b)'s location test. **Routed,
+  with the correction, to the agent holding that file.**
+- [ ] ⚠️ **Census the shape across the 22 documents naming CARHA that no agent held
+  this wave.** `grep -rn CARHA content/` groups it by document — **run it rather
+  than quoting a count here.** ⚠️ **The test is NOT "is CARHA mentioned": a book
+  correctly named in a list of books that genuinely agree is the CORRECT state and
+  will be the commonest hit.** **Read every hit; sweep nothing.**
+- [ ] ⚠️ **Standing constraint for every repair in this class: NEVER REMOVE A BOOK
+  FROM A LIST to make a sentence true.** A reader under that book is then left with
+  **no rule at all**, which is worse than an imprecise one. **Name the divergence.**
+  ⚠️ **And naming a divergence LENGTHENS the line. These are `Rule:` facts at 300
+  chars, in blocks at 11 of 11.** **A repair that does not fit is a REPORT, not a
+  compression — and splitting a block at 10/11 into two gives 12, a breach.**
+
 ## Workstream 2K: a convention decision the quotation work surfaced
 
 - [ ] ⚠️ **`body_contact_and_battles.md` mixes the two quotation conventions:
@@ -1127,9 +1350,29 @@ stands at full severity; only the chunk-boundary rows are downgraded.
   sentence stops pointing at an unreachable layer. The other four
   `check_pointers` hits are in mixed documents where the tool cannot tell which
   table is meant; **read the rendered SSML, not the label.**
-- [ ] `check_chunk_tails.py --prose` has never been run. Body prose is unscanned,
-  and a repair that adds a limit as a **new paragraph** after its permission can
-  put a chunk break between them. **Acceptance:** run it and triage.
+- [x] `check_chunk_tails.py --prose` **has now been run, 16 September.** Body prose
+  is no longer unscanned. **The run is the closure; the triage it opened is the row
+  below.** Run the command for today's figures — no count is written here, because a
+  count copied out of its owner goes stale silently and a named command does not.
+- [ ] Triage the body-prose chunk tails that **grant** something. They outnumber the
+  facts-layer grants by roughly seven to one, so this is the largest speech-layer
+  worklist in the plan and it **cannot be worked in one pass.**
+  ⚠️⚠️ **RE-READ THE SEVERITY CORRECTION ABOVE BEFORE RANKING ANY OF THESE.** A chunk
+  boundary is a **300 ms seam inside one continuous file.** The listener hears what
+  follows. ⚠️ **These are PROSODIC findings — a qualification arriving after a seam
+  rather than inside the sentence — not lost limbs, and a row that argues otherwise
+  is arguing from the premise this plan already retracted.**
+  ⚠️ **`check_chunk_tails.py`'s own printed footer still asks *"does this still tell
+  the truth if the listener stops here?"*, which contradicts the retraction written
+  at the top of the same file.** Whoever runs the tool without reading its source is
+  handed the false premise. **See the tool row in Workstream 0B.**
+  ⚠️ **The docstring names the test that actually does the work:** a value whose
+  qualification lives *outside it* is defective **at any position in its block** —
+  the chunk edge is how the tool finds candidates, **not why they are defects.**
+  **Acceptance:** each hit is either repaired by folding the limit into the same
+  sentence as the permission, or recorded as safe with the reason. ⚠️ **The chunker
+  splits only at sentence ends, and lengthening anything MOVES every boundary below
+  it** — re-run after each change rather than trusting the list you started with.
 - [ ] Triage the 18 printed `check_diagram_quotes.py` hits — comments in diagram
   sources quoting text no content document now contains. Several are benign
   descriptions of what the picture does not draw. The ones worth reading first
