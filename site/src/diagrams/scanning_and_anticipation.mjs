@@ -158,21 +158,13 @@ const wallReception = {
   width: 900,
 
   caption:
-    'Your own end, your net at the right, drawn as a single instant: the puck is in the air on its ' +
-    'way to you on the half-wall — the boards area level with the faceoff dot — a teammate has just ' +
-    'moved it out from behind your net, and a forechecker is already closing. Everything in the ' +
-    'picture was there to be seen before the puck was even passed, which is the point of it. A ' +
-    'player who looked over one shoulder while the puck was still being retrieved, looked again as ' +
-    'the passer’s head came up, and took a last glance a heartbeat before it arrived already knows ' +
-    'about the forechecker and about the support behind them, and can receive the puck turning away ' +
-    'from the pressure. A player who watches the puck the whole way finds all of it out on arrival, ' +
-    'with the puck on their stick and a forechecker on top of them. The looking itself is not drawn ' +
-    'and cannot be: a scan is a head turn, and this notation has no head, no facing and no stick. ' +
-    'Which side the pressure comes from is not fixed — it is drawn ' +
-    'coming down the wall here and could as easily come from the middle, and which it is changes ' +
-    'your play, so check both shoulders and not just the one you were planning to pass to. The last ' +
-    'look is always back at the puck. Who takes each of these jobs is not part of the read: a shape ' +
-    'had to be chosen for every player and the notation has no neutral one, so read the retrieval ' +
+    'A single instant: the puck is in the air to you on the half-wall, level with the faceoff dot, ' +
+    'and a forechecker is already closing. Everything in the ' +
+    'picture was there to be seen before the puck was even passed. ' +
+    'The looking itself cannot be drawn: this notation has no head, no facing and no stick. ' +
+    'The pressure is drawn ' +
+    'coming down the wall and could as easily come from the middle, so check both shoulders. ' +
+    'Every shape here was forced by the notation, so read the retrieval ' +
     'as a job rather than as a position. ' +
     // SAFETY, LAST. The owner's own override, scanning_and_anticipation.md:149 and Key Takeaway 11
     // at :583, which says in terms that it outranks every tactical point beside it. A player
@@ -285,24 +277,14 @@ const whoScoresNow = {
   width: 900,
 
   caption:
-    'Your own end, your net at the right, with the puck in the corner and two players in a battle ' +
-    'for it. The question this picture asks is not where the puck is — everybody can see that — but ' +
-    'who scores if it comes out right now, and there are two usual answers, both drawn: a body at ' +
-    'the net front, the immediate area in the goalmouth, and a player sneaking into the high slot, ' +
-    'which is the shaded band, the ice between the two faceoff circles running from the level of ' +
-    'the faceoff dots up to the top of them. The weak-side net front has its own name, the back ' +
-    'door, and the tap-in conceded there is not bad luck: it is what happens when four players ' +
-    'watch a puck battle in the corner for three seconds. The rule of thumb the picture exists for ' +
-    'is that every time the puck goes into a corner in your own end, you check the net front. Your ' +
-    'other four skaters are deliberately not drawn, so the picture asks the question rather than ' +
-    'answering it — where they stand, and therefore whether either of these opponents is really ' +
-    'unmarked, depends on the coverage your team plays. Under the low zone collapse this corpus ' +
-    'assumes as its default, your eyes alternate between the puck and the most dangerous body near ' +
-    'you and your man is whoever is currently in your area; under a strict man-to-man your ' +
-    'assignment takes far more of your attention and the puck takes less; under a hybrid it depends ' +
-    'on where you are standing. Find out which one your team plays, because it decides where your ' +
-    'eyes belong. Neither the high slot nor the net front is painted on a rink: the circles and the ' +
-    'crease that fix their edges are, and the regions themselves are names for pieces of ice.',
+    'A puck battle in the corner of your own end. The question is not where the ' +
+    'puck is but who scores if it comes out now: the net front, whose weak side is called the ' +
+    'back door, and the shaded high slot — the ice between the circles, from the dots up to the ' +
+    'top of them. Your ' +
+    'other four skaters are deliberately not drawn, so whether either of these opponents is really ' +
+    'unmarked depends on the coverage your team plays: a low zone collapse, a strict ' +
+    'man-to-man or a hybrid. Find out which one your team plays, because it decides where your ' +
+    'eyes belong. Neither region is painted on a rink.',
 
   describe:
     'Your own end zone, your net at the right with your goaltender in the crease. A loose puck sits ' +
@@ -453,24 +435,14 @@ const anticipation = {
   width: 900,
 
   caption:
-    'The first of two frames of the same moment, showing two different choices — this one is the ' +
-    'anticipating position, and the next one is the guess. Your own end, your net at the right: an ' +
-    'opponent has the puck inside a faceoff circle on one side of your zone, a teammate of his is ' +
-    'away across the ice on the far wall, and you have read something that says the pass is ' +
-    'coming. Here you are ' +
-    'standing inside the shaded band — the ice between the puck and your own net — and on the side ' +
-    'of it nearer his option — shaded toward the likely pass, still between the puck and the net. If the pass comes you are already moving to it. If it never comes, you are still ' +
-    'in front of your own net and still doing a job — and that, not whether you turn out to be ' +
-    'right, is the test that tells them apart: would my position still be useful if I turn out to ' +
-    'be ' +
-    'wrong? Anticipation is acting on information and guessing is acting on hope, and they look ' +
-    'identical when they work. What the picture cannot show you is the cue itself. Reading a ' +
-    'passer means reading his shoulders, his blade angle and where his eyes have already been, and ' +
-    'this notation has no facing and no stick, so the information you are acting on is not on the ' +
-    'page. Your other four skaters are not drawn, and where they are matters, because one of the ' +
-    'conditions for a jump like this is having support behind you. The band is a name for a piece ' +
-    'of ice, not something painted on a rink, and you are drawn as a forward because a shape had to ' +
-    'be chosen — the notation has no neutral one, and who is standing here depends on the coverage ' +
+    'The first of two frames of the same moment: this one is the ' +
+    'anticipating position, the next one is the guess. You are ' +
+    'standing inside the shaded band — the ice between the puck and your own net, a name for a ' +
+    'piece of ice rather than a marking — on the side of it nearer his option. If the pass ' +
+    'never comes, you are still in front of your own net and still doing a job. ' +
+    'The cue itself cannot be drawn: this ' +
+    'notation has no facing and no stick. You are drawn as a forward because a shape had to ' +
+    'be chosen, and who is standing here depends on the coverage ' +
     'your team plays.',
 
   describe:
@@ -512,24 +484,18 @@ const guess = {
 
   caption:
     'The second of the two frames: the same moment, the same read, and the other choice. You have ' +
-    'left the ice between the puck and your own net — the shaded band, which now has nobody in it — ' +
-    'and committed to the passing lane, standing out between the two of them. If the pass comes, you ' +
-    'have it. If it does not come, or if it comes and you miss it by ' +
-    'a foot, the carrier has a clean lane at your goaltender and there is nobody in it. That is ' +
-    'a position that is worthless unless the guess lands. ' +
-    'The movement itself is not the mistake and this is not an instruction never to jump: it is the ' +
+    'left the band, which now has nobody in it, ' +
+    'and committed to the passing lane. If the pass does not come, or you miss it by ' +
+    'a foot, the carrier has a clean lane at your goaltender. ' +
+    'This is not an instruction never to jump: it is the ' +
     'right play when you have a real cue, when there is support behind you covering the ice you ' +
     'are vacating, and when the puck is in the neutral or the offensive zone, ' +
     'where being wrong costs a rush against rather than a goal against. What makes it a gamble here ' +
-    'is the place. This is your own defensive zone, and in the middle of your own zone a miss is a ' +
-    'point-blank chance rather than an inconvenience, which is why the read has to be well better ' +
-    'than even before it is worth taking and considerably better than that in your own end. Your ' +
-    'other four skaters are not drawn, and if you are the last player back there is no version of ' +
-    'this jump worth making at all. Two things the picture ' +
-    'cannot show: the cue, because reading a passer means reading shoulders, blade angle and eyes ' +
-    'and this notation has no facing; and reaching for the lane with your stick instead of getting ' +
-    'there with your feet, which is the physical signature of a guess and which the notation has no ' +
-    'stick to draw.',
+    'is the place: in the middle of your own zone a miss is a ' +
+    'point-blank chance. The read has to be well better ' +
+    'than even before it is worth taking, and considerably better than that in your own end. If ' +
+    'you are the last player back there is no version of ' +
+    'this jump worth making at all.',
 
   describe:
     'The same end zone and the same instant as the previous diagram, with everything unchanged ' +

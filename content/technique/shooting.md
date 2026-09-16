@@ -361,8 +361,6 @@ Convention: "Aim for the corners" is one coaching school and this section follow
 
 ## Shooting Through Traffic
 
-![](diagram:shooting-lane-and-the-step)
-
 ```facts
 Action: Look for the lane before you shoot — no sight of the net or of net-front sticks means no lane
 Action: Change the angle — step sideways along the blue line until the blocker has to move their feet; their sticks are set for the angle you had
@@ -374,6 +372,8 @@ Never: Shoot into a defender's shins — you give up the puck without testing th
 ```
 
 A shot that hits a shin pad is worse than no shot at all. **You have given up possession, you have not tested the goalie, and the block usually starts a counter-attack the other way** — three costs and no benefit. It happens because players decide to shoot before they check whether there is a lane, so the fix is an order of operations rather than a skill.
+
+![](diagram:shooting-lane-and-the-step)
 
 **Getting the puck through, in order of importance:**
 
@@ -390,8 +390,6 @@ A shot that hits a shin pad is worse than no shot at all. **You have given up po
 
 ## Where Shots Are Worth Taking
 
-![](diagram:oz-home-plate)
-
 This is the part that changes how many goals you score, and it has nothing to do with your hands.
 
 Shot value depends overwhelmingly on location. The exact figures vary by model, but every model agrees on the shape. **These are the numbers to use, and each carries its own qualification with it, because they do not all rest on the same kind of evidence.**
@@ -399,6 +397,8 @@ Shot value depends overwhelmingly on location. The exact figures vary by model, 
 - Shots from the **slot** — the ice between the two faceoff circles, from the goalmouth out to the tops of them — convert at roughly **10–15%**. Shots from the **perimeter** convert at roughly **2–4%** — a difference of three to seven times ([The Coaches Site](https://members.thecoachessite.com/article/shot-distribution-the-importance-of-getting-shots-from-high-quality-areas-as-illustrated-by-the-4-nations-face-off-championship-game)). **Qualification: the source attributes these to *"data from various hockey analytics sources"* and names no dataset**, so treat them as a coaching-level consensus range rather than a measurement you could re-derive.
 - **A second source, a wider region and a different denominator:** point shots produce around **1–3 goals per 100 shots** and shots from the **"house"** around **5–15** ([Hockey's Arsenal](https://hockeysarsenal.substack.com/p/shot-quantity-or-shot-quality)). The house is not the slot. It is a wider shape — square across the tops of both faceoff circles, straight down the dot lines to the two faceoff dots, then angling in to the two goalposts, so it is widest where the slot is narrowest; [Rink Map](../foundation/rink_map.md) owns the shape and its measurements. **Qualification: these are Greg Revak's readings off a shot-location map he credits to HockeyViz (Micah Blake McCurdy), given as ranges rather than as computed values** — so they are approximate by construction, but the model behind them is at least named, which the first bullet's is not. **Two things travel with the number.** The map is titled *"Goals per Unblocked Shot"* and McCurdy defines a shot on that page as *"a goal, a save, or a miss"* — **misses are in the denominator, so this is not shooting percentage** and it is a lower figure than one. And **it is the even-strength map**: McCurdy publishes three, one per strength state, and on the power-play one the 5% contour reaches roughly the blue line, so **none of this is an argument against a power-play point shot**. [Offensive Zone Play](../systems/offensive_zone_play.md) sets the same map out in full.
 - Over a three-year five-on-five sample, **close to half of all NHL goals came from the inner slot**, and just over a quarter from the outer slot ([The Point](https://www.thepointhockey.com/shot-optimization-how-optimal-shooting-habits-can-improve-individual-goal-scoring-rates/)). "Inner slot" there means the area closest to the crease; "outer slot" the rest of the slot out to the top of the circles. **Qualification: this split is computed from Sportlogiq tracking, which is not public** — the same limit that applies to the Kane and Laine figures below, and it applies to this number too. The article's own wording is *"nearly half"* and *"just over a quarter"*; nobody outside Sportlogiq can check it.
+
+![](diagram:oz-home-plate)
 
 **What that means when you are standing on the ice with the puck:** a shot from the slot is worth several times a shot from the point. Not slightly more — several times. If you can turn a point shot into a slot shot by making one pass, make the pass. If you can turn a perimeter shot into a slot shot by taking two strides toward the middle, take the strides.
 
@@ -416,9 +416,9 @@ A goaltender who sees the puck the whole way, from a set position, with their an
 
 ### The royal road
 
-![](diagram:oz-royal-road)
-
 Former NHL goaltender Steve Valiquette popularised a concept called the **royal road** — an imaginary line running down the middle of the ice, which a puck crossing forces the goalie to move laterally across. Shots taken immediately after the puck has crossed it, by a pass or by a carrier skating over it, score at a far higher rate than shots that have not, because the goalie cannot be set and square.
+
+![](diagram:oz-royal-road)
 
 **Published descriptions of where exactly that line runs do not agree, and the weight of evidence is against the popular version.** Most secondary accounts, including [OMHA's](https://www.omha.net/news_article/show/486107-the-most-important-line-on-the-ice-you-ve-never-heard-of), describe it as running the length of the ice from the centre of one net to the centre of the other. The two sources closest to Valiquette himself describe something narrower and **zone-limited**:
 
@@ -508,8 +508,6 @@ Never: Play the puck or touch the goalie after a defender has shoved you into th
 
 ## Shooting Off the Rush
 
-![](diagram:shooting-rush-wide-and-the-trailer)
-
 ```facts
 Read: Release as the defender's stick is closing, not after — waiting for a "good spot" shoots into a blocked lane
 Action: Release off the foot you do not normally release off; check which foot that is on the wing you play
@@ -520,6 +518,8 @@ Options: Delay a beat and feed a trailer into the high slot — it turns a perim
 ```
 
 Rush chances — attacking with speed before the defence is set — are among the best shooting opportunities in the game, and most of them are wasted by shooting a beat too late.
+
+![](diagram:shooting-rush-wide-and-the-trailer)
 
 **The timing.** As you carry the puck wide and drive toward the net, the defender is skating backwards, gap closing, stick out toward the puck. There is a window that opens as you approach and closes when their stick arrives. **Release as their stick is closing, not after.** If you wait until you are "in a good spot," you are shooting into a blocked lane from a bad angle.
 
@@ -559,8 +559,6 @@ If neither of you commits, you run out of ice and lose — so you cannot simply 
 
 ### Approach speed — slower than you think
 
-![](diagram:shooting-breakaway-approach)
-
 ```facts
 Action: Arrive at the top of the circles with less speed than you feel like carrying
 Risk: Full flight cuts you to one option and hands the goalie their easiest read
@@ -576,6 +574,8 @@ Read: A deke needs room; you cannot pull the puck across your body once you are 
 - **A deke needs room to happen in.** You cannot pull the puck across your body and get it back if you are already past the post.
 
 **A change of pace beats raw pace.** Come in hard to the blue line, then ease off through the top of the circles and accelerate again as you make your move. The deceleration pulls the goalie out of their retreat rhythm; the re-acceleration arrives before they have re-set. That single pattern is worth more than any hand skill. **That last ranking is coaching craft rather than a measured finding, and it reaches beyond the sources behind it.** The two coaching sources that teach the change of pace — the IIHF's coach-development manual and Edge Ice Academy — describe beating a *defender* one-on-one, and neither measures it; no source held for this document measures a change of pace against a goaltender, or against hand skill. See [Time and Space](../hockey-iq/time_and_space.md).
+
+![](diagram:shooting-breakaway-approach)
 
 ### Deception — take their eyes off the puck
 

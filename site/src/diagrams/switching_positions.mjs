@@ -359,74 +359,24 @@ const forcingThemOutside = {
   half: true,
   width: 900,
 
+  // CAPTION LENGTH, 15 September 2026. This ran to 765 words -- the longest in the
+  // corpus -- and reproduced the section's whole rules apparatus: USAH 604(a)/(b)/(c)
+  // and 603, Hockey Canada 7.3(a) and 7.5, IIHF 101.1, boarding, checking from behind,
+  // the sheet-width limb and the IHUK/IIHF 1.2 British derivation. Every one of those
+  // is carried IN THE PROSE AND THE ```facts BLOCK of content/positions/switching_positions.md
+  // immediately above this marker (the markers here sit AFTER the prose already), with
+  // citations this caption did not have room for -- USAH 604(b), for one, appears there
+  // four times. So the enumeration was not deleted, it was left with its owner. What
+  // survives here is the one safety limb a listener must not hear the steering
+  // instruction without, scoped to the books that write it, plus the picture's own point.
   caption:
-    'Forcing a carrier outside, in your own end, with your net at the right and the attack ' +
-    'arriving from the left. The defenceman is inside him and nearer the net, so the only ' +
-    'route the carrier can see runs out toward the boards, where the angle to the goal is ' +
-    'poor and the wall becomes a second defender. ' +
-    'The thing to read off this picture is not the route, though. It is where the defenceman ' +
-    'is standing at the moment drawn: still between the carrier and the net — nearer the ' +
-    'middle of the ice than he is, and nearer your own goal, which is what the label ' +
-    'goal-side on him means, and what Defending the Rush calls being on the defensive side. ' +
-    'That is the whole of what makes this forcing him outside rather than getting beaten ' +
-    'wide. The next diagram draws the same carrier on the same square foot of ice, skating ' +
-    'the same lane, and moves one player: the defenceman, eighteen feet up the ice. ' +
-    'Three things are deliberately not drawn: a gap distance, which Defending the Rush owns and ' +
-    'gives as a guide rather than a law; the defenceman’s retreat, because this is one instant; ' +
-    'and where your team meets a rush — standing up at the blue line and backing off into the ' +
-    'zone are both coached, so find out which yours plays. ' +
-    '⚠️ The angle is yours everywhere. The contact is not. Steering a carrier toward the ' +
-    'boards with the route you skate is legal, and Hockey Canada writes that permission in ' +
-    'terms — a player may steer or direct an opponent into the boards without actually ' +
-    'touching or body-checking them — but only while neither player uses their body to ' +
-    'body-check, bump, push or shove. Bumping is a lower bar than riding him along the wall. ' +
-    '⚠️ And where checking is allowed the ride still has a limit, which the carrier seeing ' +
-    'you coming does not lift. ' +
-    // ⚠️ 604(b) IS CARRIED WITH 604(a) AND STAYS IN THE SAME SENTENCE AS IT. USAH
-    // 604(b) (sources/usah.txt:3577), read this session: "Any time a team from a
-    // Competitive Contact category (see sub-section (a) above) plays a team from a
-    // Body Checking category, body checking shall be prohibited under this rule."
-    // 604's Note 2 (:3546) names the two categories and (a) closes "These levels
-    // would be considered the Competitive Contact Category of play" (:3558), which
-    // is what makes "any time a checking team plays a non-checking one" the whole of
-    // (b) rather than a narrowing. It is carried because (a) alone is an enumeration
-    // of DIVISIONS: a player in a checking division finds himself in none of the
-    // listed bars and concludes he may check, when (b) can bar it for the FIXTURE --
-    // a mixed-entry tournament, a girls' team on a boys' schedule. It sits INSIDE
-    // the same sentence as (a) because _split_paragraph breaks only at sentence
-    // ends, so a pair split across two sentences can be voiced as two units.
-    'Riding him into the wall with your body is a different act. USA Hockey’s rule 604(a) ' +
-    'prohibits body checking at twelve and under and below, in all girls’ and women’s ' +
-    'classifications and in all non-check adult classifications — the minor is 604(c), and ' +
-    'that list is a floor rather than a ceiling: a local governing body may prohibit checking ' +
-    'in any classification, and 604(b) bars it outright any time a checking team plays a ' +
-    'non-checking one, whatever your own division allows. Hockey Canada’s 7.3(a) bars it at under-thirteen and ' +
-    'below, in female hockey, and in any other division a Member of Hockey Canada approves, ' +
-    'and its own definition of a body check reaches a player who leaves their skating lane to ' +
-    'make contact, or who extends an arm, shoulder or hip after angling an opponent. In ' +
-    'women’s hockey, which is every level of it in Britain, IIHF rule 101.1 allows ' +
-    'bodychecking where playing the puck is the clear intention, but carves the boards out: ' +
-    'players competing for the puck may not use them to eliminate, push into or pin an ' +
-    'opponent. ' +
-    'Defenceless is not the whole test: USA Hockey’s ' +
-    'rule 603 asks no such question in its base sentence, and the NHL, IIHF and Hockey Canada ' +
-    'books all name unnecessary contact on a player chasing an obvious icing or off-side as ' +
-    'boarding, in ' +
-    'terms. In every one of the four the onus is on the player delivering the check, and USA ' +
-    'Hockey 603(a) has no bare minor. A carrier you have steered is often half-turned when ' +
-    'you arrive, and a check from behind into the boards is USA Hockey 608 — a major plus a ' +
-    'game misconduct if he goes head first, and Hockey Canada 7.5 writes no bare minor for it ' +
-    'either, reaching a match penalty where he cannot protect himself. ' +
-    'Nothing in this picture ends in contact, and nothing in it is a licence to hit. ' +
-    'And how much the wall does for you depends on sheet width: the wider it is, the more ' +
-    'room a carrier forced outside has, so gap control and stick position matter more than ' +
-    'steering. ' +
-    '🇬🇧 Do not read the IIHF book as meaning wide ice — its rule 1.2 starts at twenty-six ' +
-    'metres, fractionally wider than a full NHL rink — and do not assume a British sheet is a ' +
-    'wide one: the IHUK In-House Rules authorise rinks below fifty-six by twenty-six metres, ' +
-    'under that IIHF minimum on both dimensions, at every level bar Sutton and Coatbridge, ' +
-    'each capped at under-sixteen. On a narrow sheet the wall does more of the work for you, ' +
-    'not less. Rink Map and Glossary owns that limit.',
+    'Forcing a carrier outside, your net at the right. Read the defenceman, not the route: ' +
+    'inside the carrier and nearer your goal at the instant drawn — the whole difference ' +
+    'from getting beaten wide. No gap distance and no retreat are drawn. ' +
+    '⚠️ Steering with the route you skate is legal. Riding him into the wall with your body ' +
+    'is a body check — barred outright in many classifications by USA Hockey 604 and Hockey ' +
+    'Canada 7.3, and narrowed at the boards for women by IIHF 101.1. Find out which book you ' +
+    'are under. Nothing here ends in contact.',
 
   describe:
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +
@@ -462,42 +412,21 @@ const gettingBeatenWide = {
   half: true,
   width: 900,
 
+  // CAPTION LENGTH, 15 September 2026. 497 words before. The penalty-shot apparatus it
+  // set out in full -- NHL/IIHF, USAH 616(a) and 616(b), Hockey Canada 4.12(a) and the
+  // conditions on all four -- is carried in the prose and the ```facts block of
+  // content/positions/switching_positions.md above this marker, and Defending the Rush
+  // owns the rule text. The opening also said "the diagram before this one", which is
+  // the deixis the style guide forbids outright; the situation is named instead.
   caption:
-    'The same rush as the diagram before this one, your net at the right, with one thing ' +
-    'moved: the defenceman is eighteen feet further up the ice, and the carrier is past his ' +
-    'outside shoulder. That is what getting beaten wide means, and it is not what forcing ' +
-    'somebody outside means. ' +
-    'Nobody else has moved, deliberately — the carrier stands on the same ' +
-    'square foot of ice and skates the same lane toward the boards, because what separates ' +
-    'the two pictures is not where he goes. It is where you are standing. In the first ' +
-    'picture that wall lane was something conceded on purpose, with a defenceman inside it ' +
-    'at the moment drawn. Here there is nobody inside it and nobody between the carrier and the ' +
-    'net, so he can leave it for the goal whenever he chooses — and a still picture cannot ' +
-    'draw "whenever he chooses", which is why the route is left as it is rather than being ' +
-    'redrawn to the net. A route redrawn to the net is the commonest way this pair is got ' +
-    'wrong: it teaches that being beaten wide sends a carrier inside, which is the opposite ' +
-    'of what the word means. ' +
-    'Neither picture draws the defenceman’s own skating, which is where this pair stops ' +
-    'being useful: what decides which of the two you are standing in is very often not a ' +
-    'decision at all but backward speed, and no still picture can show that. Defending the ' +
-    'Rush draws the retreat and owns the distances. ' +
-    'So the instinct this pair is asking a converting forward to build is stay on the ' +
-    'defensive side of the puck — anything that puts an attacker between you and your net has ' +
-    'already gone wrong — rather than never let anyone reach the outside. Those are not the ' +
-    'same instruction, and only the first one is available on every shift. ' +
-    '⚠️ Chasing from behind, your stick goes on the puck and nothing else. A hook, trip, hold ' +
-    'or slash from behind that denies the scoring chance is a penalty shot rather than a ' +
-    'two-minute penalty under the NHL and IIHF books, and an awarded goal if your own net is ' +
-    'empty. The other two books are narrower here rather than the same. Under USA Hockey’s ' +
-    'rule 616(a) the referee may give a minor instead of the penalty shot, and its 616(b) ' +
-    'awards the empty-net goal only where the chance was prevented by the fouled-from-behind ' +
-    'provisions, so that test survives with the net empty where the NHL’s awarded-goal rule ' +
-    'carries none. Hockey Canada’s 4.12(a) routes its awarded goal through its own breakaway ' +
-    'criteria. All four have conditions, and Defending the Rush owns them and sets out the ' +
-    'rule text. ' +
-    '⚠️ And catching him is not a licence to lean on him. The angle is yours everywhere; the ' +
-    'contact that moves him off it is not, and from behind there is no cheap version of it ' +
-    'in any book. This picture stops before any of it.',
+    'Getting beaten wide, your net at the right: the carrier is past the defenceman’s ' +
+    'outside shoulder with nobody between him and the net. Same square foot of ice and the ' +
+    'same lane as when he is forced outside — the defenceman, eighteen feet up, is the only ' +
+    'thing that moved. The route is not redrawn to the net on purpose: a still picture ' +
+    'cannot draw "whenever he chooses". ' +
+    '⚠️ Chasing from behind, your stick goes on the puck and nothing else — a hook, trip, ' +
+    'hold or slash that denies the chance is a penalty shot under the NHL and IIHF, and USA ' +
+    'Hockey 616(a) and Hockey Canada 4.12(a) are narrower. All four carry conditions.',
 
   describe:
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +

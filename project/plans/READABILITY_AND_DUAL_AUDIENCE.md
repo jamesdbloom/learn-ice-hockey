@@ -199,6 +199,60 @@ the reason: those sections are named by zone-and-situation — a *job* — while
 *instant* inside it, so a picture arriving first asserts that instant **is** the job. **That reasoning
 was never specific to positions pages, and this instruction says so.**
 
+---
+
+## ⚠️⚠️ THREE FURTHER OWNER RULINGS, 15 SEPTEMBER 2026 — instruction 3 above is MODIFIED, and this file was the last to hear about it
+
+⚠️ **READ THIS BEFORE ACTING ON INSTRUCTION 3. As stated above, it is no longer complete.**
+
+⚠️⚠️ **AND NOTE HOW THIS FILE FAILED.** Instruction 3 above still ends *"The style guide must be updated
+or it becomes false."* **The style guide WAS updated, twice, on 15 September — and this plan was not.
+The relationship inverted: the plan became the stale document, and it is the one waves are dispatched
+from.** This file spent an entire section learning that *a number copied out of its owner goes stale
+silently*, and protected its figures accordingly by deleting them — **then let the RULINGS go stale
+instead.** ⚠️ **A plan that records instructions is as perishable as one that records counts, and
+nothing here was watching that.**
+
+**The owner, in the owner's own words:**
+
+> *"we don't want a diagram too close to the next header so that it is clear the next item is a header,
+> however we can always add a little gap then there is no reason why a diagram can't proceed the next
+> header, also why must a borrowed caption stand alone, I don't want long captions unless they are with
+> diagrams after the text describing them otherwise this breaks the readbility too much"*
+
+**1 · The placement rule is RELAXED. A marker MAY land immediately before a heading or a `---`.** The fix
+is the gap, not the position. ⚠️ **The old prohibition carried a COUNT, not a failure, and it cost a
+wave: it is why 8 markers moved and not ~27.** The gap is now CSS — `site/src/styles/global.css` ships
+`:has(+ h2/h3/h4/h5/h6/hr)` rules, **verified by ablation in a real browser at 44 px before an `h3` or
+`hr` and 40 px before an `h4`, against a 32 px baseline.** ⚠️ **So *"it would land just before a
+heading"* is NOT a reason to decline a move, and any brief still saying so is wrong.**
+
+**2 · Captions target TWENTY-FIVE TO FIFTY WORDS.** ⚠️ **Four things must survive the cut: every safety
+caveat, every rule scope, every hedge, and the deixis rule.** The `describe` field is exempt from the
+LENGTH target and **NOT** from the deixis rule.
+
+**3 · A formation diagram follows the prose, but only AFTER THE SHAPE SENTENCE** — the reader needs the
+shape named in words before the picture means anything, and does not need the whole section first.
+
+⚠️ **THE DETAIL LIVES IN `project/content_style_guide.md`, NOT HERE, AND THAT IS DELIBERATE.** Four
+sections there own it: *"THIS RULE IS ABOUT DEIXIS, NOT LENGTH"*, *"CAPTION LENGTH — the owner's
+target"*, *"Formation diagrams — AFTER THE SHAPE SENTENCE"* with its worked example and its
+glossary-document worked case, and rule 3's relaxed placement text. **Read those. Do not copy them back
+into this file** — that is the mistake this whole section exists to record.
+
+### ⚠️ What executing these produced, so nobody re-runs a finished wave
+
+**Both waves ran on 15 September 2026 and are CLOSED. The record is
+[`project/reviews/round_77_the_caption_could_not_be_shortened.md`](../reviews/round_77_the_caption_could_not_be_shortened.md),
+and the open rows they generated are in [`OPEN_ITEMS.md`](OPEN_ITEMS.md). Neither belongs here.**
+
+⚠️ **The one result that changes this plan's own strategy: THE CAPTION TARGET WAS LARGELY NOT MET — one
+caption of 92 reached 25–50 words.** ⚠️⚠️ **THAT FIGURE IS SCOPED TO THREE GROUPS (D, E and F) AND IS NOT WHAT SHIPPED. Corpus-wide, measured from the build product: 188 of 204 captions changed, 52,136 → 32,902 words (−37%), median 238.5 → 134.5, longest 765 → 556, and the count inside the owner's 25–50 band went 11 → 14 — THREE of the 188 rewrites landed in band, and 189 of 204 are still over 50 words.** ⚠️ **Quote the corpus figure here, not the group one: this is a DISPATCH document, and the section you are reading is the one titled "so nobody re-runs a finished wave."** **The owner of both figures is [`project/reviews/round_77_the_caption_could_not_be_shortened.md`](../reviews/round_77_the_caption_could_not_be_shortened.md).** Three agents on disjoint files reached the same diagnosis
+independently: **a caption cannot be cut while it is the only place a reader is told something that
+could hurt them.** ⚠️ **So instruction 2's remaining work is NOT compression. It is ROUTING safety limbs
+and rule scope out of captions and into bodies** — and the first one proved it, taking a 403-word
+caption to a cuttable ~176. **The routing targets are rows in `OPEN_ITEMS.md`.**
+
 **What this costs, measured, so nobody rediscovers it:**
 
 - **Current state: 252 markers sit before a facts block, 2 after.** This is a large corpus-wide move,

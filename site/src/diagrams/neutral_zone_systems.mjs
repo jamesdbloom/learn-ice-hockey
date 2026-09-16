@@ -86,19 +86,12 @@ const containment122 = {
   numbered: true,
 
   caption:
-    'A 1-2-2 neutral zone structure, frozen as the opposing defence starts its breakout: one forward ' +
-    'pressuring deep in the opponents’ end, two forwards across the middle third near the opposing ' +
-    'blue line, and both defencemen holding the back layer at your own blue line. The layers are named ' +
-    'from the puck outward, so the first number is the one closest to their net. F1 is not primarily ' +
-    'trying to steal the puck — his job is to take the middle away, kill the D-to-D behind the net ' +
-    'and show the carrier one side of the ice, which is why the route curves across rather than at the ' +
-    'puck; F2 then steps up on the winger receiving on that wall, F3 holds the middle and weak side, and ' +
-    'the weak-side defenceman stays home as the safety valve. The structure concedes the first pass by ' +
-    'design, which is drawn here: F1 alone cannot generate real pressure, and a calm defence with time ' +
-    'will break out cleanly against it. The strong-side defenceman’s step-up on the wall, which ' +
-    'is deliberately not drawn, is the most dangerous decision in it. Every neutral-zone ' +
-    'structure is a coaching choice, not a law. Find out which one your team plays, and what ' +
-    'the signal is to change it.',
+    'A 1-2-2 neutral zone structure, frozen as the opposing defence starts its breakout: one ' +
+    'forward pressuring deep in the opponents’ end, two forwards across the middle third, and ' +
+    'both defencemen holding the back layer at your own blue line. The layers are named from the ' +
+    'puck outward. F1 takes the middle away and shows the carrier one side rather than hunting ' +
+    'the puck, so the first pass is conceded by design. Every neutral-zone structure is a ' +
+    'coaching choice, not a law — find out which one your team plays.',
 
   describe:
     'The full sheet. Our own net is at the left, the opponents’ net at the right, and the opponents ' +
@@ -186,18 +179,12 @@ const trap122 = {
   // routes the order is not in doubt anyway.
 
   caption:
-    'The same five players and the same 1-2-2 name with the layers dropped back and the intent changed ' +
-    '— this is the neutral zone trap. F1 sits high in the opponents’ zone still splitting the ' +
-    'ice in half, F2 and F3 are at the red line on the walls, and the defence holds your own blue line ' +
-    'rather than contesting theirs. The structure has given up on stopping the attack: the carrier is ' +
-    'allowed to skate and is steered to a wall, where he arrives at the red line into F2 stepping up ' +
-    'with the strong-side defenceman behind him and no lane through the middle, so the turnover happens ' +
-    'with the opponents’ forwards ahead of the puck and behind the play. Not every neutral-zone ' +
-    '1-2-2 is a trap, and the tell is F2’s depth and F1’s speed — depth is what this ' +
-    'picture can show, but the difference between an F1 who is closing and an F1 who is gliding is not ' +
-    'something a still frame can carry, so compare this shape against the containment one rather than ' +
-    'trusting either arrow. The pure passive trap is no longer a viable full-time system at high levels; ' +
-    'it survives as a situational tool and as the DNA inside more modern structures.',
+    'A 1-2-2 with the layers dropped back and the intent changed — this is the neutral zone trap. ' +
+    'F1 sits high in the opponents’ zone still splitting the ice in half, F2 and F3 are at the ' +
+    'red line on the walls, and the defence holds your own blue line rather than contesting ' +
+    'theirs. The carrier is allowed to skate and is steered to a wall, into F2 stepping up with ' +
+    'the strong-side defenceman behind him and no lane through the middle. Depth is the tell a ' +
+    'still frame can show; whether F1 is closing or gliding is not.',
 
   describe:
     'The full sheet, our net at the left and the opponents’ at the right, with the opponents ' +
@@ -288,19 +275,13 @@ const wall131 = {
   width: 1100,
 
   caption:
-    'A 1-3-1 in the neutral zone — count the rows and you get one, then three, then one: F1 ' +
-    'pressuring alone, three players spread in a flat line across the width of the ice, and a single ' +
-    'defenceman behind them as the last man. Conventionally the three across are F2 and F3 on the walls ' +
-    'with a defenceman in the middle, and the middle man is the read-maker because he decides which way ' +
-    'the whole line slides; some coaches put a forward in the middle and a defenceman on a wall instead, ' +
-    'but what does not happen is three forwards across, because F1 is already one of your three. Each of ' +
-    'the three takes a lane and they slide as a unit toward the puck — the short arrows — and ' +
-    'their job is not to attack the puck but to leave no lane through them, which is the whole ' +
-    'proposition: a 1-3-1 does not try to take the puck from you, it offers you the puck on terms you ' +
-    'will not like. It is drawn with F1 up at the opponents’ blue line, but in the most passive ' +
-    'versions F1 barely leaves the red line, and if one of the three leaves his lane to chase the puck a ' +
-    'seam opens instantly, because the single defenceman behind cannot cover two lanes. Do not confuse ' +
-    'this with the power play 1-3-1, which is a different shape in a different zone.',
+    'A 1-3-1 in the neutral zone: F1 pressuring alone, three players spread flat across the width ' +
+    'of the ice, and a single defenceman behind them as the last man. Conventionally the three ' +
+    'are F2 and F3 on the walls with a defenceman in the middle as the read-maker, and some ' +
+    'coaches invert that; what does not happen is three forwards across, because F1 is already ' +
+    'one of your three. They slide as a unit toward the puck and their job is to leave no lane ' +
+    'through them. This is not the power play 1-3-1, which is a different shape in a different ' +
+    'zone.',
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right, opponents attacking right to ' +
@@ -392,19 +373,13 @@ const flat14 = {
   numbered: true,
 
   caption:
-    'A 1-4, the most conservative structure in hockey: one forechecker, and four skaters in a flat line ' +
-    'across your own blue line. Almost nothing goes through it — controlled entries against a ' +
-    'disciplined 1-4 are close to impossible and odd-man rushes are eliminated, because everybody is ' +
-    'already home — but it concedes the entire neutral zone and both blue lines, generates no ' +
-    'offence, and will keep you in your own end for the whole shift. Because the line is flat, nobody in ' +
-    'it is deeper than anybody else, which is why the answer drawn here is a hard chip past it and a ' +
-    'race for the puck: the stretch pass that beats a trap or a 1-3-1 does not work against a 1-4, ' +
-    'because a line held on its own blue line leaves no legal ice behind it and a receiver already back ' +
-    'there is offside the moment the puck crosses. The shape is only “four skaters in a flat ' +
-    'line”, and who takes which lane is not fixed; the two defencemen are drawn in the middle two ' +
-    'lanes here, which is one arrangement and not a rule. Use it protecting a lead in the last minute or ' +
-    'two, killing time with a stranded unit, or against a pulled goalie — some youth teams play it ' +
-    'as their default and should not.',
+    'A 1-4, the most conservative structure in hockey: one forechecker, and four skaters in a ' +
+    'flat line across your own blue line. Almost nothing goes through it, but it concedes the ' +
+    'entire neutral zone, generates no offence and will keep you in your own end. The answer ' +
+    'drawn is a hard chip past the flat line and a race for it — a stretch pass cannot beat it, ' +
+    'because a line held on its own blue line leaves no legal ice behind it and a receiver ' +
+    'already back there is offside the moment the puck crosses. Which skater takes which lane is ' +
+    'one arrangement and not a rule.',
 
   describe:
     'The full sheet, our net at the left. Four of our skaters stand in a flat line across our own blue ' +
@@ -474,21 +449,16 @@ const pressure = {
   numbered: true,
 
   caption:
-    'What the neutral zone looks like behind an aggressive forecheck, which is not really a ' +
-    'neutral-zone structure at all: two of your forwards are gone hunting the puck in the ' +
-    'opponents’ end, so F3 is the only layer between the puck and your defence, and the two ' +
-    'defencemen hold a deliberately tight gap back toward your own blue line, both prepared to step up. ' +
-    'F3 holds the middle, level with or slightly ahead of the puck, and does not drift to a wall, because ' +
-    'the pass that hurts you comes up the middle; the strong-side defenceman steps up hard on a pass to ' +
-    'the wall, which is the aggressive gap that makes the whole thing work and the decision with the least ' +
-    'cover behind it; the weak-side defenceman stays home as your only genuine safety. Where the two forecheckers ' +
-    'stand inside the zone is the 2-1-2’s business rather than the neutral zone’s, so it is ' +
-    'drawn only as two forwards deep. Note the phase: this is the moment the puck comes out, and while ' +
-    'the forecheck is still live those same two defencemen are the length of the neutral zone further ' +
-    'up, at the offensive blue ' +
-    'line. Beat the two forecheckers with one pass and F3 is alone against three with the defence ' +
-    'stepping up, which is how a 3-on-2 becomes a 3-on-1 — this is the right choice when you are ' +
-    'chasing a goal, not a default.',
+    'The neutral zone behind an aggressive forecheck: two of your forwards are gone hunting the ' +
+    'puck in the opponents’ end, so F3 is the only layer between the puck and your defence, and ' +
+    'both defencemen hold a deliberately tight gap back toward your own blue line. F3 holds the ' +
+    'middle and does not drift to a wall, because the pass that hurts you comes up the middle; ' +
+    'the strong-side defenceman steps up hard on a pass to the wall, which is the decision with ' +
+    'the least cover behind it; the weak-side defenceman stays home as your only genuine safety. ' +
+    'Note the phase: this is the moment the puck comes out, and while the forecheck was live ' +
+    'those same two defencemen were up at the offensive blue line. Beat the two forecheckers with ' +
+    'one pass and F3 is alone against three — this is the right choice when you are chasing a ' +
+    'goal, not a default.',
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right. Deep in the opponents’ ' +
@@ -561,18 +531,14 @@ const leftWingLock = {
   width: 1100,
 
   caption:
-    'The left-wing lock, frozen the moment possession has been lost: two forwards are still forechecking ' +
-    'in the opponents’ end and the left wing has dropped back into line with the two defencemen, ' +
-    'making a three-man line across the back with each player responsible for roughly one third of the ' +
-    '85-foot width. The effect is a 2-3 — aggressive up front, three across the back — which ' +
-    'lands somewhere between a 2-1-2 and a trap: you get real forechecking pressure without the odd-man ' +
-    'risk that normally comes with it, because the third man back is already there. Conventionally it is ' +
-    'the centre and the right wing who forecheck, often deliberately steering the puck to one side, but ' +
-    'that is a coaching choice rather than a law, and many teams now lock whichever winger is highest in ' +
-    'the zone instead, which removes the personnel problem at the cost of needing a loud and immediate ' +
-    'in-game call. The cost is real: it takes one player out of the counterattack and asks him to do a ' +
-    'job most wingers are not trained for, and a left wing who reads the transition late gives you the ' +
-    'worst of both systems.',
+    'The left-wing lock, frozen the moment possession has been lost: two forwards are still ' +
+    'forechecking and the left wing has dropped back into line with the two defencemen, making a ' +
+    'three-man line across the back. The effect is a 2-3 — forechecking pressure without the ' +
+    'odd-man risk that normally comes with it, because the third man back is already there. ' +
+    'Conventionally the centre and the right wing are the two who forecheck, but that is a ' +
+    'coaching choice rather than a law, and many teams now lock whichever winger is highest in ' +
+    'the zone instead. The cost is real: it takes one player out of the counterattack and asks ' +
+    'him to do a job most wingers are not trained for.',
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right. Two of our forwards, marked C ' +
@@ -634,19 +600,15 @@ const regroup = {
   numbered: true,
 
   caption:
-    'A D-to-D regroup, drawn at the instant the pass across is made — this time it is our team with ' +
-    'the puck, attacking left to right. A forward who could not advance has turned and put the puck back ' +
-    'to a defenceman, who receives with his hips open up the ice so he can see the whole sheet, and then ' +
-    'moves it D-to-D: that pass across is the pivot of the whole tactic, because it changes the point of ' +
-    'attack and forces the entire opposing structure to slide. The one hard rule is visible in the ' +
-    'picture — the D-to-D is flat and hard and the lane is clean; never make it blind across the ' +
-    'middle with a forechecker between you, because an interception there is an instant 2-on-1 with both ' +
-    'your defencemen wrong-sided. Notice the three forwards at three different depths rather than all ' +
-    'curling to the same place: one close for the short outlet, one wide for the outside lane, one high ' +
-    'as the stretch option, and the receiving defenceman hits whichever has the most speed and the most ' +
-    'ice. Their curls back toward the puck and up into their lanes are movement over time and are ' +
-    'deliberately not drawn here; what the picture is for is the shape, and the point that you are not ' +
-    'retreating — you still have the puck, and you are declining a bad entry to buy a better one.',
+    'A D-to-D regroup, drawn at the instant the pass across is made, with our team in possession ' +
+    'and attacking left to right. A forward who could not advance has turned the puck back to a ' +
+    'defenceman, who receives with his hips open up the ice and then moves it across: that pass ' +
+    'changes the point of attack and forces the entire opposing structure to slide. The one hard ' +
+    'rule is visible in the picture — the D-to-D is flat and hard and the lane is clean. Never ' +
+    'make it blind across the middle with a forechecker between you, because an interception ' +
+    'there is an instant 2-on-1 with both your defencemen wrong-sided. The three forwards sit at ' +
+    'three different depths rather than all curling to the same place: short outlet, outside ' +
+    'lane, stretch. You are declining a bad entry to buy a better one, not retreating.',
 
   describe:
     'The full sheet, with our own net at the left and our team attacking to the right. Two of our ' +
@@ -770,20 +732,17 @@ const hinge = {
   numbered: true,
 
   caption:
-    'The hinge, with our team in possession attacking left to right and our own net at the left. ' +
-    'The numbers are the order. One, the D-to-D. Two, the passer sinks back into mid-ice behind his ' +
-    'partner instead of following the puck up the ice — and in the skating hinge one and two happen ' +
-    'together, because dropping deeper as you make the pass is what lets you arrive into the return ' +
-    'with speed rather than standing still. Three, his partner carries it up and finds everything ' +
-    'covered: the forecheck has followed the puck to that side, and the second man is sitting in the ' +
-    'cross-ice lane to the far winger. Four, he gives it back, and it arrives to a player who is ' +
-    'behind the play, in the middle, facing up ice with nobody near him. That is where route two has ' +
-    'taken the first defenceman, and it is not where he started. The only mark at that spot is his ' +
+    'The hinge, with our team in possession attacking left to right. The numbers are the order. ' +
+    'One, the D-to-D. Two, the passer sinks back into mid-ice behind his partner instead of ' +
+    'following the puck up the ice — and in the skating hinge one and two happen together, ' +
+    'because dropping deeper as you make the pass is what lets you arrive into the return with ' +
+    'speed. Three, his partner carries it up and finds everything covered. Four, he gives it ' +
+    'back, and it arrives to a player who is behind the play, in the middle, facing up ice with ' +
     // ⚠️ "because each player is drawn once" — NOT "because these diagrams draw each
     // player once". The sentence has to keep explaining why the arrival carries no
     // glyph; what it does not have to do is name the corpus to do it.
-    'own arrowhead, because each player is drawn once. Whether the hinge is available at ' +
-    'all is a read about how they forecheck, and one frame cannot show you both answers.',
+    'nobody near him. The only mark at that spot is his own arrowhead, because each player is ' +
+    'drawn once. Whether the hinge is available at all is a read about how they forecheck.',
 
   describe:
     'The full sheet, with our own net at the left and our team attacking to the right. Two of our ' +
@@ -902,23 +861,17 @@ const standUpAtTheLine = {
   width: 1100,
 
   caption:
-    'Standing up at your own blue line, which is at the left because our net is: the defenceman ' +
-    'meets the attacker at it with his feet stopped, refuses to give ground and tries to turn the ' +
-    'carry into a dump, a pass or a turnover — a carried entry is worth roughly twice a dumped ' +
-    'one in shot terms, on hand-tracked NHL games now more than a decade old, so take the ' +
-    'direction rather than the decimals — and it keeps the play sixty feet from his net rather ' +
-    'than twenty. Drawn with it is what ' +
-    'beats it, the chip-and-chase: the attacker puts the puck past the ' +
-    'defenceman’s hip and runs round him, and stopped feet cannot win that race, because beaten ' +
-    'standing up is beaten completely. The defenceman is drawn with no route at all and nothing ' +
-    'in the picture finishes into the carrier, and both of those are deliberate — stopped feet ' +
-    'are the whole idea, and standing up at the line is exactly where a beginner reaches for a ' +
-    'hit instead. This is not the moment before the diagram beside it: it is the same instant ' +
-    'answered the other way, and the two are genuinely a trade-off ' +
-    'rather than one being correct. Standing up is a bet that you have help, and whether your ' +
-    'forwards got back is the read that decides it — no still frame can show that, and some ' +
-    'coaches want the line held as a team identity while others want everything funnelled ' +
-    'outside, so find out which yours wants before you decide to be a hero at the line.',
+    'Standing up at your own blue line: the defenceman meets the attacker at it with his feet ' +
+    'stopped, refuses to give ground and tries to turn the carry into a dump, a pass or a ' +
+    'turnover — a carried entry is worth roughly twice a dumped one in shot terms, on ' +
+    'hand-tracked NHL games now more than a decade old, so take the direction rather than the ' +
+    'decimals. Drawn with it is what beats it, the chip-and-chase past his hip: stopped feet ' +
+    'cannot win that race, because beaten standing up is beaten completely. Nothing in the ' +
+    'picture finishes into the carrier, and that is deliberate — standing up at the line is ' +
+    'exactly where a beginner reaches for a hit instead. It is a bet that you have help, and ' +
+    'whether your forwards got back is a read no still frame can show. Backing off answers this ' +
+    'same instant the other way rather than following it, and the two are a genuine trade-off, so ' +
+    'find out which your coach wants.',
 
   describe:
     'The full sheet. Our own net is at the left with our goaltender in it, our own blue line a ' +
@@ -968,22 +921,18 @@ const backOffAtTheLine = {
   width: 1100,
 
   caption:
-    'The same instant as the diagram beside it, answered the other way — same carrier, same puck, ' +
-    'the same defenceman in the same place, and only the answer has changed. He gives up the blue ' +
-    'line and skates backwards, matching the attacker’s speed and keeping him in front, and ' +
-    'funnels him outside where the shot is low-percentage; you cannot be beaten wide by pure ' +
-    'speed, and it is very hard to make a catastrophic error doing this. The shaded middle is the ' +
-    'thing he is not conceding: you give up the blue line but never ' +
-    'the middle or your body position, and the whole cost of the choice is in the picture too — ' +
-    'they come in with speed and possession and you are now defending with your feet moving ' +
-    'backwards toward your own net, which is exactly the scenario the attacking team wanted. The ' +
-    'band’s long edges are drawn on the faceoff-dot lines so that the shading has an edge; they are ' +
-    'not painted on the ice. It ' +
-    'is the play when you have no backpressure, when the attacker has a clear speed advantage, on ' +
-    'a two-on-one or worse, or when you are the last defender and a mistake is a breakaway — and ' +
-    'whether your forwards got back is a read no still frame can carry. Neither frame is a stage ' +
-    'of the other and neither is the correct answer: the two are genuinely a trade-off, ' +
-    'and which one you play is a coaching choice, so find out which your team wants.',
+    'Backing off at your own blue line, the answer standing up gives the other way: the ' +
+    'defenceman gives up the line and skates backwards, matching the attacker’s speed, keeping ' +
+    'him in front and funnelling him outside where the shot is low-percentage. You cannot be ' +
+    'beaten wide by pure speed, and it is very hard to make a catastrophic error doing this. The ' +
+    'shaded middle is the thing he is not conceding — you give up the blue line but never the ' +
+    'middle or your body position — and the cost of the choice is in the picture too: they come ' +
+    'in with speed and possession and you are defending with your feet moving backwards toward ' +
+    'your own net. The band’s long edges are drawn on the faceoff-dot lines so the shading has an ' +
+    'edge; they are not painted on the ice. It is the play when you have no backpressure, when ' +
+    'the attacker has a clear speed advantage, on a two-on-one or worse, or when you are the last ' +
+    'defender. Neither answer is the correct one and which you play is a coaching choice, so find ' +
+    'out which your team wants.',
 
   describe:
     'The full sheet, and the same arrangement as the diagram beside it: our own net at the left ' +

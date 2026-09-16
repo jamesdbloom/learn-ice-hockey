@@ -135,8 +135,6 @@ Key: A checker who knows you cannot pass backhand takes the forehand side away a
 
 ### Bank / board pass — the boards as a teammate
 
-![](diagram:bank-pass-angle)
-
 ```facts
 Technique: Play the angle, not the target. Aim at the spot on the wall that reflects toward your teammate
 Technique: Keep it flat and firm, and hit the boards low, where the bounce is truest
@@ -152,6 +150,8 @@ Risk: Low risk, moderate reliability — the puck never enters the lane the chec
 - **Hit the boards low.** Contact near the bottom of the boards gives the truest bounce. Higher up you may catch the glass stanchion or a change in the board material and lose the angle entirely.
 - **Learn the building.** Board liveliness genuinely varies rink to rink. Test a bank pass in warm-up.
 
+![](diagram:bank-pass-angle)
+
 **When to use it.** When a defender's stick or body sits in the direct lane but the boards run behind them — most often to beat a forechecker along the wall, to move the puck around the back of the net, or to get the puck past a defender pinching down the wall at your offensive blue line.
 
 **Risk.** Low risk, moderate reliability — and those are two different things, so keep them apart.
@@ -162,10 +162,6 @@ Risk: Low risk, moderate reliability — the puck never enters the lane the chec
 **It is underused** because it does not feel like a "real" pass — but a bank a teammate collects is a completed pass, and beating a stick with geometry costs you nothing. Call it, so the reliability problem is the boards' and not your teammate's.
 
 ### Rim vs reverse — two opposite plays, keep them straight
-
-![](diagram:winger-dz-rim)
-
-![](diagram:winger-dz-reverse)
 
 ```facts
 Options: Rim goes onward around the boards; reverse goes back the way the puck came, against the flow
@@ -187,6 +183,10 @@ These two are constantly conflated. They go in **opposite directions** and they 
 
 **How to choose.** Look at the checker's momentum, not their position. If they are still coming and have you pinned, rim it. If they have already gone by you and their feet are pointed the wrong way, reverse it.
 
+![](diagram:winger-dz-rim)
+
+![](diagram:winger-dz-reverse)
+
 ⚠️ **The two pictures above are borrowed from [Winger](../positions/winger.md), and their captions speak from that document rather than from this one.** Both are drawn for a winger on the wall in his own defensive zone, and both captions say "in your own end" — **and they draw the two halves of the choice above, not one situation: the rim is the picture where the checker still has you pinned, the reverse the one where he has skated past you up the wall.** This section does not confine either play to that zone — the *Typical use* row above places the rim at a defensive-zone exit and the reverse at any wall or behind-the-net battle. What carries across from the pictures is the read, and only the read: which way the puck goes relative to the checker's momentum. The wall-contact warning both captions carry is not scenery — it applies to any battle on the boards, and [Body Contact and Battles](body_contact_and_battles.md) owns it.
 
 **Risk on the rim.** A rim that a teammate is not expecting is a turnover to their opposite number, and a soft rim dies in the corner. Rims also need a called intention — see [On-Ice Communication](../foundation/on_ice_communication.md).
@@ -194,8 +194,6 @@ These two are constantly conflated. They go in **opposite directions** and they 
 **Risk on the reverse.** A reverse into a teammate who is not there is a turnover you cannot chase — the puck goes one way and your momentum the other — and a reverse is usually made deep in your own end, where a loose puck becomes a chance against you. Reverses are a *support-dependent* play: never reverse on hope. Cross-reference [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
 
 ### Area pass / chip into space — passing to a place, not a person
-
-![](diagram:area-pass-into-space)
 
 ```facts
 Goal: Aim at a patch of ice your teammate will reach before an opponent does, not at a blade
@@ -208,6 +206,8 @@ Risk: Only a good play if your teammate has a genuine speed or angle advantage; 
 **Mechanics.** You are not aiming at a blade; you are aiming at a patch of ice that a teammate will reach before an opponent does. Put it flat and with enough pace to get past the nearest defender's stick, but not so much that it runs to the far boards ahead of your teammate. Chipping it off the boards past a defender into open ice is the same idea.
 
 **When to use it.** When no teammate is currently open but one is about to be — the classic case is chipping a puck past a defender who is standing you up at the blue line, into the space behind them where your winger is already skating. Also the safe option in the neutral zone when a direct pass would have to thread traffic.
+
+![](diagram:area-pass-into-space)
 
 **Risk.** Low, and this is the point: an area pass cannot be intercepted in the way a direct pass can, because it is not aimed at a body. It becomes a **race** rather than a turnover. The risk is only that you lose that race — so it is only a good play if your teammate has a genuine speed or angle advantage. An area pass into a defender's feet with nobody chasing it is just giving the puck away politely.
 
@@ -254,9 +254,9 @@ Risk: High reward, high cost — a miss is usually an immediate change of posses
 Key: Ask whether a teammate is actually behind their forwards right now, or whether you are hoping
 ```
 
-![](diagram:breakout-stretch-pass)
-
 **Mechanics.** A long, hard pass — usually from a defenceman in or near their own zone — to a forward who has broken behind the opposition's forwards, often near the far blue line. Flat if the lane is clear, saucered if it must cross a stick. It requires real power, which means a full weight transfer and a long follow-through; most missed stretch passes are underpowered rather than misaimed.
+
+![](diagram:breakout-stretch-pass)
 
 **Rules note.** In the NHL a pass may cross both blue lines and the centre red line — the two-line pass restriction was removed by a **playing-rule change for the 2005-06 season, adopted alongside** the new Collective Bargaining Agreement rather than by it — the CBA is a labour agreement and does not set playing rules. The IIHF had already abolished the restriction in 1998. ⚠️ **Both of those dates are received history rather than rulebook text.** Neither year appears anywhere in the NHL, IIHF, USA Hockey or Hockey Canada books held here — which proves nothing either way, because a current rulebook sets out the rules as they stand and would not record an abolition. Take the dates as commonly given and unchecked. **What is checked is the part that governs your next pass: NHL Rule 83 — Off-side** is now the only restriction on how far *forward* a pass may go, and it contains no two-line provision. (Icing, Rule 81, still limits sending the puck from your own half of the ice past the opposing goal line, but that is a different rule doing a different job.) **And the other books agree.** Neither USA Hockey nor Hockey Canada has a general passes rule at all — the only thing in either book limiting how far *forward* a pass may go is off-side, and in both of them the centre red line does no work except icing and the goaltender restriction. **CARHA still prints the old vocabulary and then switches it off**: its Rule 73 is headed *"Passes and Off-side Passes"* and its signals section still carries a *"RED LINE OFF-SIDE PASS"* signal, but Rule 73(d) reads *"For the purpose of 2-line passes, the red line will not be in play. It will still be in effect for icing."* So the stretch pass is legal under every book checked for this document.
 
@@ -562,10 +562,6 @@ A one-touch pass — sometimes called a first-time pass, and the basis of a *tic
 
 ## Timing and Support — A Pass Is a Two-Player Action
 
-![](diagram:unmarked-but-unavailable)
-
-![](diagram:support-angles)
-
 ```facts
 Key: The receiver creates the pass as much as the passer does — most "bad passes" are actually bad pairs
 Action: As the receiver, move into a lane rather than just moving. Find the open line between you and the puck
@@ -586,7 +582,11 @@ What the receiver owes the passer:
 - **A target blade and a voice**, as above.
 - **A next option.** If your reception has no exit, you are not support, you are a trap.
 
-**The first of the two pictures at the head of this section** draws the first bullet: the receiver has nobody within ten feet of him and is still not an option, because a stick lies flat across the only line between him and the puck. **Unmarked and available are different things**, and the passer is reading the second one.
+![](diagram:unmarked-but-unavailable)
+
+![](diagram:support-angles)
+
+**The first of the two pictures above** draws the first bullet: the receiver has nobody within ten feet of him and is still not an option, because a stick lies flat across the only line between him and the puck. **Unmarked and available are different things**, and the passer is reading the second one.
 
 **The second picture** is the spatial half of the same idea — where support can stand relative to a carrier, and what each position offers. Note that none of them is simply *close*, and that the picture shows the *where* rather than the *when*: timing is the half no still frame holds.
 

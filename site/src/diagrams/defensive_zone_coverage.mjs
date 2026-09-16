@@ -313,24 +313,18 @@ const theHouse = {
   half: true,
   width: 900,
 
+  // ⚠️ SHORTENED to the owner's 25-50 word caption target, 15 September 2026.
+  // What was cut is carried by the prose and the ```facts block around the marker,
+  // with its qualifications: the shot-value claim and its "depends on whose figure
+  // you take" hedge (§Overview, which routes the numbers to Shooting), the outlet
+  // trade-off, and "coverage is about choosing which chances you give up" (the
+  // section's own Goal: and Priority: facts lines). The caption keeps the part the
+  // prose does NOT do: reading the shape off the markings that are painted.
   caption:
-    'The house, or home plate — the region every defensive-zone system ' +
-    'exists to protect: bounded by the two goalposts, widening out to the two end-zone ' +
-    'faceoff dots and up to the top of the two faceoff circles. ' +
-    'The most dangerous chances come from inside it — a shot from in there is worth several ' +
-    'times the same shot from outside, which is the part every source agrees on, while how ' +
-    'much of the scoring it accounts for depends on whose figure you take and the counted ' +
-    'ones are more modest than the versions repeated in dressing rooms. ' +
-    'So the problem every system solves is how to ' +
-    'allocate five bodies so that it is never open while still leaving somebody available ' +
-    'to receive an outlet pass. A shape that packs all five players onto the goal line ' +
-    'protects the house beautifully and has nobody available to receive that pass, so you ' +
-    'win the puck and immediately give it back. ' +
-    'Nothing here is painted on the ice: the circles, dots and crease that fix its corners ' +
-    'are, and the shape is read off them. ' +
-    'No system covers everything. Coverage is about choosing which chances outside the ' +
-    'house you are willing to give up, and the systems in the diagrams that follow each ' +
-    'concede something different.',
+    'The house, or home plate — the region every defensive-zone system exists to protect: ' +
+    'bounded by the two goalposts, widening to the end-zone faceoff dots and up to the tops ' +
+    'of the circles. ' +
+    'Nothing here is painted on the ice; the circles, dots and crease that fix its corners are.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. A shaded six-sided ' +
@@ -381,16 +375,21 @@ const collapseCorner = {
   // every book" is deliberate and load-bearing: USA Hockey 608(a) writes "a minor
   // plus a misconduct penalty", and a USA Hockey misconduct is ten minutes (404(a)),
   // NOT an ejection. It is still never bare in any of the four.
-  // ⚠️ THIS CAPTION IS THE MODULE'S LONGEST AND THIS EDIT MADE IT LONGER (220 →
-  // 240 words). Room was bought by cutting the five-job enumeration of the base
-  // shape, which the picture's own labels carry, the section's table at "The base
-  // shape" carries, and its facts block carries — three tellings before the reader
-  // reaches the picture. What was NOT cut to buy room is either warning.
+  // ⚠️ THIS CAPTION IS THE MODULE'S LONGEST AND IT IS DELIBERATELY OVER THE OWNER'S
+  // 25-50 WORD TARGET. Cut from 240 words to about 170 on 15 September 2026 by
+  // removing everything that was NOT a warning: the reason two on one wins the
+  // battle, the "seam the puck comes back through" gloss (frame two's caption and
+  // the section's facts block both carry it), and the rest of the base-shape
+  // recital. ⚠️ THE SAFETY UNIT IS ABOUT 100 OF THE REMAINING WORDS AND CANNOT BE
+  // CUT FURTHER WITHOUT SHEDDING A LIMB OR A BOOK SCOPE. Its four limbs are:
+  // arrives-late-and-unseen, the three legal arrivals, the NHL/IIHF tier floor, and
+  // the pin. If this caption must reach 50 words, the safety unit has to be routed
+  // into the body of §"The base shape" FIRST — it may not simply be deleted here.
   caption:
     'Low zone collapse — the house default assumed here, one of several a team might play — ' +
     'at the instant the puck goes into the strong-side corner. ' +
-    'Both wingers are still high on the points, and the centre is leaving the high slot to go ' +
-    'down as the second body into the corner battle, because two on one wins it. ' +
+    'Both wingers stay high on the points; the centre leaves the high slot to go down as the ' +
+    'second body and make it two on one. ' +
     '⚠️ The second body is the one that arrives late and unseen, and this carrier has the puck ' +
     'at his stick against the boards, with his back to the ice. ' +
     'Arrive on the puck, or on the ice he wants, or angle him off it — never into his back. ' +
@@ -399,8 +398,7 @@ const collapseCorner = {
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
     'illegal hit. ' +
-    'The centre’s trip down empties the high slot — the seam the puck comes back through — ' +
-    'and this is frame one of two, not a shape to hold. ' +
+    'This is frame one of two, not a shape to hold. ' +
     // ⚠️ FULL STOP, NOT AN EM DASH — AND THIS ONE INVERTS NON-NEGOTIABLE 7 ITSELF.
     // This ran "…reading bodies, not areas — ask your coach which your team plays". The
     // negation is a constituent negation in the MAIN clause, four words before the dash, with
@@ -503,21 +501,24 @@ const collapseHighSlot = {
     // which has no such predecessor, so 'the same ... a beat later' referred to nothing a
     // listener there had heard. Found by a D1 agent; it was already broken before the
     // markers moved. A borrowed caption must stand alone in every document that hosts it.
-    'A low zone collapse a beat after the corner battle begins — the weak-side winger’s ' +
-    'collapse, which is where this system succeeds or fails. ' +
-    'The centre is now the second body in the corner battle — arriving inside the carrier and ' +
-    'not behind him, because that carrier is facing the boards and cannot see him coming — ' +
-    'and the weak-side winger has ' +
-    'dropped off his point into the high slot to fill it; the strong-side winger holds his ' +
-    'point, because if both wingers sag the point-to-point pass across the top gives their ' +
-    'defenceman a free walk-in. ' +
-    'Anyone with a clear view calls it — the centre, the weak-side defenceman or the winger ' +
-    'himself — and the winger climbs straight back up to his point as soon as the puck comes ' +
-    'out of the corner. ' +
-    'The weak-side point is briefly unmarked, and that is deliberate: this system concedes ' +
-    'point shots on purpose. ' +
-    'It is one system among several, and even within it the collapse is not available if that ' +
-    'winger has already followed the opposing defenceman down off the point.',
+    // ⚠️ SHORTENED 15 SEPTEMBER 2026, and what was cut was chosen against BOTH hosts.
+    // Dropped: who calls the rotation and the climb back to the point — both hosts
+    // carry those in prose or facts within a screen of the marker
+    // (defensive_zone_coverage.md §"The weak-side winger's collapse" facts block;
+    // defender.md §"The high-slot rotation", immediately above the marker).
+    // ⚠️ KEPT, COMPRESSED: the arriving-inside-not-behind warning. It is the only
+    // safety limb a defender.md listener gets with this picture — that document does
+    // NOT host `dz-collapse-corner`, which is where the full checking-from-behind
+    // unit lives — so cutting it here would delete it for that host.
+    'A low zone collapse a beat after the corner battle begins — one of several systems — and ' +
+    'the weak-side winger’s collapse is where it succeeds or fails. ' +
+    'The centre is the second body in the corner, arriving inside the carrier and not behind ' +
+    'him, because that carrier is facing the boards and cannot see him coming. ' +
+    'The weak-side winger has dropped into the high slot; the strong-side winger holds his ' +
+    'point, because if both sag the point-to-point pass gives their defenceman a free walk-in. ' +
+    'The weak-side point is briefly unmarked on purpose: this system concedes point shots. ' +
+    'The rotation is not available if that winger has already followed his own man down off ' +
+    'the point.',
 
   describe:
     // ⚠️ NO POSITIONAL POINTER. This opened "the same moment as the previous diagram one beat
@@ -575,19 +576,19 @@ const walkDownZone = {
   half: true,
   width: 900,
 
+  // ⚠️ "the next diagram shows theirs" IS GONE, and not only for length. This caption
+  // is borrowed into off-the-ice/how_to_watch_hockey.md; the pair happens to be
+  // adjacent there too (:130 and :132) so the pointer resolved, but naming the
+  // systems costs the same words and cannot be broken by a marker move in either
+  // host. The cardinal-rule tail — coaching choice, named alternative, find out —
+  // survives intact and is 16 of the remaining words.
   caption:
-    'The walk-down from the point, and what low zone collapse does about it — the standard ' +
-    'instruction under this system is that the winger follows a few feet and stays connected ' +
-    'but does not chase into the corner, so his route here ends in a stop rather than an ' +
-    'arrowhead. ' +
-    'The opposing defenceman skates down to the top of the circle, about 35 feet from the ' +
-    'goal line, roughly halving his distance to the net without anybody touching him, and ' +
-    'from there he can shoot or feed the slot. ' +
-    'This, not the point shot, is the system’s real weakness — and the answer drawn here is ' +
-    'a coaching choice rather than a rule of hockey: man-on-man and hybrid teams answer it ' +
-    'differently, and the next diagram shows theirs. ' +
-    'Find out your team’s version before you need it, and call the switch loudly, because a ' +
-    'fourth attacker is now arriving low.',
+    'The walk-down from the point, answered by low zone collapse: the winger follows a few ' +
+    'feet and does not chase, so his route ends in a stop, not an arrowhead. ' +
+    'The opposing defenceman reaches the top of the circle, about 35 feet from the goal line, ' +
+    'untouched. ' +
+    'A coaching choice — man-on-man and hybrid teams answer it differently, so find out your ' +
+    'team’s version before you need it.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. The opposition ' +
@@ -644,18 +645,22 @@ const walkDownMan = {
   half: true,
   width: 900,
 
+  // ⚠️ OPENED "The same walk-down under man-on-man". This caption is borrowed into
+  // off-the-ice/how_to_watch_hockey.md, and "the same" is one of the exact words the
+  // style guide's deixis rule names. It resolved — the pair is adjacent in both
+  // hosts — but naming the situation costs nothing and cannot be broken by a marker
+  // move. ⚠️ THE HYBRID TRIGGER HEDGE IS 23 OF THE REMAINING WORDS AND IS NOT
+  // TRIMMABLE: "usually the faceoff dots" without "some teams draw it at the hash
+  // marks or the top of the circles" manufactures a false universal about where a
+  // team's man-and-zone line sits.
   caption:
-    'The same walk-down under man-on-man: the winger goes with him, all the way, wherever he ' +
-    'goes, including into the corner — which is the sharpest practical difference from low ' +
-    'zone collapse and one of the tells that separates them — though the first answer is to ask your coach. ' +
-    'Everybody else is on a body too: both defencemen on the two most dangerous forwards low, ' +
-    'the centre on the third, the other winger on the other defenceman. ' +
-    'A hybrid produces very nearly this picture, and the difference is only the trigger — a ' +
-    'hybrid winger plays the point by area and releases to man coverage as soon as his man ' +
-    'crosses the team’s man-and-zone line, usually the faceoff dots, though some teams draw ' +
-    'it at the hash marks or the top of the circles, so learn your team’s. ' +
-    'What man coverage costs is a winger in a footrace with no help behind him, and five ' +
-    'players standing wherever the other team put them at the moment you win the puck.',
+    'The walk-down from the point under man-on-man: the winger goes with him, wherever he ' +
+    'goes, including into the corner — the sharpest practical difference from low zone ' +
+    'collapse. Everybody else is on a body too. ' +
+    'A hybrid produces nearly this picture, and the difference is only the trigger, usually ' +
+    'the faceoff dots, though some teams draw it at the hash marks or the top of the circles, ' +
+    'so learn your team’s. ' +
+    'What man coverage costs is a winger in a footrace with no help behind him.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, and the same walk-down as ' +
@@ -753,22 +758,22 @@ const boxPlusOne = {
   half: true,
   width: 900,
 
+  // ⚠️ THREE THINGS SURVIVED THE CUT ON PURPOSE and are most of the length: the
+  // "one of several" framing (this module's own rule — a picture is the most
+  // absolute-looking thing on a page), the scope on the introductory-structure claim
+  // ("for young players and beginner adults" — dropping it widens the claim to all
+  // hockey), and the negative-existence disclosure ("nobody publishes a count"),
+  // which is what stops that claim reading as a measured fact. The "29 ft below the
+  // blue line" figure went because the picture LABELS it; the concession went because
+  // the section's own facts block has it as a Countered by: line.
   caption:
-    'Box+1, one of several defensive-zone systems rather than how defensive hockey is ' +
-    'generally played — coaching material describes it as the standard introductory ' +
-    'structure for young players and beginner adults, and nobody publishes a count of ' +
-    'what teams actually run, so take that as coaching consensus rather than a measured ' +
-    'fact. ' +
-    'Four players form a box around the slot, two low near the posts and two at the tops of ' +
-    'the circles about 29 feet below the blue line, and the fifth — the "+1" — is the only one ' +
-    'who chases the puck. ' +
-    'It is not a penalty-kill box: that is four players, two high and two low, and this is a ' +
-    'five-man even-strength shape. Same word, different thing. ' +
-    'The box’s depth is fixed, but how wide the two high players stand is not, so read ' +
-    'the width drawn here as one reasonable version rather than a measurement. ' +
-    'What it concedes is almost everything on the perimeter — the opposition defencemen here ' +
-    'are unpressured, one chaser cannot pressure a good puck-moving team, and it buys ' +
-    'structure at the cost of ever getting the puck back.',
+    'Box+1, one of several defensive-zone systems: coaching material calls it the standard ' +
+    'introductory structure for young players and beginner adults, and nobody publishes a ' +
+    'count of what teams actually run. ' +
+    'It is not a penalty-kill box — that is four players, and this is a five-man ' +
+    'even-strength shape. ' +
+    'The box’s depth is fixed, its width is not, so read the width drawn here as one ' +
+    'reasonable version, not a measurement.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. Four of our players stand ' +
@@ -836,17 +841,18 @@ const collapsingBox = {
   half: true,
   width: 900,
 
+  // ⚠️ THE FOUR USE CASES BECAME TWO PLUS "in spots". Listing two of four with a bare
+  // "or" would have read as the complete list; "in spots" says it is not, and the
+  // section's own Read: facts line carries all four. "Not to defend a whole game"
+  // stays — it is the hedge that keeps a state from reading as a system.
   caption:
-    'The collapsing box — a state rather than a full system, and what low zone collapse turns ' +
-    'into under maximum pressure: as the puck goes below the goal line the box shrinks toward ' +
-    'the crease until all five defenders are inside the house, sticks in the passing lanes. ' +
-    'It concedes the entire outside by design, including the points, where the two opposition ' +
-    'defencemen here have nobody near them and a shot from them is the accepted cost. ' +
-    'Teams use it protecting a lead late, defending six-on-five with the opposing goalie ' +
-    'pulled, when structure has already gone, or against a team that is dangerous below the ' +
-    'circles but generates nothing from its defencemen — not as a way to defend a whole game. ' +
-    'With all five below the circles there is nobody high, so there is no breakout speed the ' +
-    'moment you win the puck.',
+    'The collapsing box — a state rather than a full system: as the puck goes below the goal ' +
+    'line it shrinks until all five defenders are inside the house, sticks in the passing ' +
+    'lanes. ' +
+    'It concedes the entire outside by design, the points included, and leaves no breakout ' +
+    'speed the moment you win the puck. ' +
+    'Teams use it in spots — protecting a lead late, six-on-five against a pulled goalie — ' +
+    'not to defend a whole game.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the shaded house ' +
@@ -909,17 +915,18 @@ const overload = {
   half: true,
   width: 900,
 
+  // ⚠️ THE DISCLOSURE IS 26 OF THESE WORDS AND IS THE POINT OF THE SENTENCE IT SITS
+  // IN. "Some teams use it as their base, others as a situational squeeze" is a claim
+  // about frequency that nobody has counted; without "nobody publishes a count … so
+  // neither is offered here as the commoner one" the caption silently ranks them.
   caption:
-    'The strong-side overload — the opposite adjustment to the collapsing box. All five ' +
-    'defenders shift to the puck side, cutting the ice in half and squeezing the carrier for ' +
-    'time and space; it is aggressive and it generates turnovers. ' +
-    'It dies to one hard, accurate cross-ice pass, drawn here as the dashed route, because ' +
-    'the whole weak side is unoccupied by design — the attacker at the far post has nobody ' +
-    'near him. ' +
-    'Some teams use this as their base system and others as a situational squeeze when they ' +
-    'need the puck back; nobody publishes a count of what teams actually run, so neither of ' +
-    'those two uses is offered here as the commoner one. It is a coaching choice like every ' +
-    'other defensive-zone system: find out whether yours plays it, and when.',
+    'The strong-side overload: all five defenders shift to the puck side, cutting the ice in ' +
+    'half and squeezing the carrier. ' +
+    'It dies to one hard, accurate cross-ice pass — the dashed route — because the whole weak ' +
+    'side is unoccupied by design. ' +
+    'Some teams use it as their base system, others as a situational squeeze; nobody ' +
+    'publishes a count of what teams actually run, so neither is offered here as the ' +
+    'commoner one. A coaching choice: find out whether yours plays it, and when.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. The opposition puck ' +

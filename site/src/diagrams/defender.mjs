@@ -337,24 +337,17 @@ const stepUp = {
   title: 'Stepping up at your own line',
 
   caption:
-    'A step-up at your own blue line, drawn in your own end with the net you are ' +
-    'defending at the right and the attack coming from the left. Stepping up means moving ' +
-    'forward to challenge an oncoming carrier early instead of retreating in front of him, ' +
-    'and it happens here or out in the neutral zone. Pinching is the other play and it ' +
-    'happens at the other blue line, and the two being confused is what this picture is ' +
-    'drawn against. ' +
-    'What it is really about is the ice behind the defenceman who has gone. There is ' +
-    'nobody at all between him and his own goaltender, and his partner is across on the ' +
-    'far side with a second attacker already wide of him — so a step-up that misses does ' +
-    'not cost a stride, it leaves that partner alone in a two-on-one. A pinch is generally ' +
-    'the safer of the two for exactly the opposite reason: your forwards are still in the ' +
-    'zone behind you and can help recover. Read what that compares, though — rushes coming ' +
-    'back at you, and not what the two plays do to a body. ' +
-    'So step up only when you are confident you can win the puck or force a turnover: ' +
-    'confidence, not hope. How aggressive confident should be is a coaching choice rather ' +
-    'than a rule of hockey — an aggressive neutral-zone press wants you challenging at the ' +
-    'line, a passive trap wants you holding and steering the carrier wide — so ask which ' +
-    'risk your coach wants to carry. ' +
+    'A step-up at your own blue line, drawn in your own end with the net you are defending at the ' +
+    'right and the attack coming from the left. Stepping up means moving forward to challenge an ' +
+    'oncoming carrier early instead of retreating in front of him, and it happens here or out in ' +
+    'the neutral zone. Pinching is the other play and it happens at the other blue line, and the ' +
+    'two being confused is what this picture is drawn against. What it is really about is the ice ' +
+    'behind the defenceman who has gone. There is nobody at all between him and his own ' +
+    'goaltender, and his partner is across on the far side with a second attacker already wide of ' +
+    'him — so a step-up that misses does not cost a stride, it leaves that partner alone in a ' +
+    'two-on-one. So step up only when you are confident you can win the puck or force a turnover: ' +
+    'confidence, not hope. How aggressive confident should be is a coaching choice rather than a ' +
+    'rule of hockey, so ask which risk your coach wants to carry. ' +
     '⚠️ And a step-up is a closing of space, not a hit. The route drawn here ends in two ' +
     'bars, meaning arrive and contain, and it is drawn that way on purpose. A step-up ' +
     'finished as a hit is the geometry the charging rules are written for, and a carrier ' +
@@ -515,27 +508,17 @@ const holdingTheLine = {
   title: 'Holding your own blue line',
 
   caption:
-    'Holding your own blue line as the safety valve, drawn on the whole sheet with your ' +
-    'own goal at the left and your team attacking to the right. ' +
-    'Your two defencemen are at their own blue line, one either side of the middle of the ' +
-    'ice and both inside the width the two neutral-zone faceoff dots mark out. Together ' +
-    'they are the last line before their own zone, which is why neither of them is drawn ' +
-    'any further up the sheet. ' +
-    'Your forwards are up ice with the puck, and the nearest one has a forechecker closing ' +
-    'on him — so the dashed pass drawn back to the near defenceman is the job this ' +
-    'position exists for. Be an option your forwards can find when everything in front of ' +
-    'them is covered, and keep your stick down and in the passing lane while you wait, ' +
-    'because an active stick is what turns their attempted pass into your interception. ' +
-    'Then be ready to go either way: support the attack, or turn and defend, instantly. ' +
-    'The thing not to do from here is drift forward to join the play. The ice you are ' +
-    'standing on is the ice a turnover has to be defended from, and a defenceman who has ' +
-    'drifted twenty feet up the sheet is a defenceman who is no longer in front of the ' +
-    'rush that turnover creates. ' +
-    'Exactly where a defence pair holds in the neutral zone is part of your team’s system ' +
-    'rather than a fixed spot on the ice — Neutral Zone Systems sets out the structures ' +
-    'and they do not all hold at the same depth — so read this as the job rather than as a ' +
-    'square foot to memorise, and find out what yours wants. And nothing here is contact: ' +
-    'the forechecker’s route ends in two bars, meaning arrive and contain.',
+    'Holding your own blue line as the safety valve, on the whole sheet with your own goal at the ' +
+    'left. Your two defencemen are on that line either side of the middle, inside the width the ' +
+    'neutral-zone faceoff dots mark out, and they are the last line before their own zone. Your ' +
+    'forwards are up ice and the nearest has a forechecker closing, so the dashed pass back to ' +
+    'the near defenceman is the job this position exists for: be an option they can find, keep ' +
+    'your stick down and in the passing lane while you wait, and be ready either to support the ' +
+    'attack or to turn and defend. The thing not to do from here is drift forward to join the ' +
+    'play. The ice you are standing on is the ice a turnover has to be defended from. Where a ' +
+    'defence pair holds in the neutral zone is part of your team’s system rather than a fixed ' +
+    'spot on the ice, so find out what yours wants. And nothing here is contact: the ' +
+    'forechecker’s route ends in two bars, meaning arrive and contain.',
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left with your goaltender in ' +

@@ -231,26 +231,24 @@ const laneAndTheStep = {
   numbered: true,
 
   caption:
-    'Getting a point shot through, and the order is the whole of it: find the lane first, then ' +
-    'shoot. A defenceman has the puck at the point — the area just inside the blue line, not the ' +
-    'line itself. The faint dashed line is the lane he had a second ago, and an opponent is ' +
-    'standing squarely in it; that line is not a marking on the ice and nothing travels along it, ' +
-    'it is there so you can see what the blocker is set for. First the shooter moves sideways ' +
-    'along the blue line toward the middle; then the shot goes from the new spot, past the blocker ' +
-    'and through to the net front. ' +
-    'Take the move from those words, not the distance from the picture: how far is feel rather ' +
-    'than a measurement — go until the blocker has to move their feet — so the ten feet drawn here ' +
-    'is only what makes the change of lane visible at this scale. Keep the shot low, and say out loud who you are ' +
-    'shooting at, because it passes your own winger at the net front and they need to know it is ' +
-    'coming and to have a blade on the ice for the tip. A point shot is almost never trying to ' +
-    'score directly — it is there to make a tip, a rebound or a scramble in the slot, which is why ' +
-    'getting it through beats shooting it hard. The blocker is drawn as a forward because every ' +
-    'marker here is either a forward or a defenceman, while the instruction behind it is only about ' +
-    '"defenders’ sticks and bodies" and never says who — so read it as one body in the lane and ' +
-    'not as an assignment. No other defenders are drawn, and nothing here shows whether the blocker adjusts, ' +
-    'which is the next moment rather than this one. And a shot into a defender’s shins is worse ' +
-    'than no shot at all: you have given up the puck, you have not tested the goalie, and the block ' +
-    'usually starts the counter-attack the other way.',
+    // CAPTION LENGTH, 15 Sep 2026: 349 words before. This diagram is borrowed by
+    // offensive_zone_play.md §11, where the marker follows a five-bullet list that states
+    // the walk, the release point, the fake and the D-to-D; shooting.md's own marker sits
+    // above its numbered "Getting the puck through, in order of importance". Both hosts
+    // state the "no lane, no shot" order, the tip-and-rebound purpose and the shin-pad cost
+    // in prose and in a ```facts block within two lines of the marker.
+    // ⚠️ WHAT SURVIVED: the "take the distance from the words, not the picture" disclosure,
+    // because the ten feet is a DRAWING SCALE and a reader who measures it off the picture
+    // has been taught a number nobody wrote; and calling the shot, because the puck passes
+    // your own winger's face at the net front.
+    'Getting a point shot through: find the lane first, then shoot. ' +
+    'The faint dashed line is the lane the shooter had a second ago, with an ' +
+    'opponent standing squarely in it — not a marking on the ice, and nothing travels along ' +
+    'it. Take how far from the words and not from the picture: go until the blocker has to move their feet, ' +
+    'and the ten feet drawn here is only what makes the change of lane visible at this ' +
+    'scale. ⚠️ Keep it low and say out loud who you are shooting at — it passes your own ' +
+    'winger at the net front, and they need a blade on the ice for the tip. ' +
+    'No other defenders are drawn, and nothing here shows whether the blocker adjusts.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Own players are drawn open, ' +
@@ -407,24 +405,21 @@ const wideRushAndTheTrailer = {
   width: 900,
 
   caption:
-    'A wide rush, at the moment the decision is made. You are carrying the puck down the right ' +
-    'wing, a defenceman is between you and the net with the gap closing, and the goaltender has ' +
-    'come across to the near post to take away the short side — which is exactly what leaves them ' +
-    'exposed far side and low. Two things are worth doing from here and only one of them happens. ' +
-    'The first is your own shot, released as the defender’s stick is closing rather than after ' +
-    'it arrives, because if you wait until you are in a good spot you are shooting into a blocked ' +
-    'lane from a bad angle. That shot is not drawn: a plan view of the ice cannot show height, and ' +
-    '"far side and low" is half a height instruction. The second is drawn — delay a beat and feed ' +
-    'the trailer, who has arrived late into the high slot — the ice between the circles from the ' +
-    'level of the faceoff dots out to the tops of the circles. That is the whole argument for it: ' +
-    'it turns a shot from the wing, which is a perimeter shot, into a slot shot, and it only ' +
-    'exists if you knew what your second wave was doing before you got to the line. Three things ' +
-    'the picture cannot say. It cannot say when the defender’s stick arrives, which is the read ' +
-    'the shot depends on, and it cannot show the delay, which is a beat of time rather than a ' +
-    'movement backwards. It shows the trailer at the moment he gets there rather than skating in, ' +
-    'because a still frame can draw a place and not a late arrival. And he is drawn as a forward ' +
-    'only because a marker has to be a forward or a defenceman — what you are told is that a ' +
-    'trailer is coming, not who it is. No other defenders and no backcheckers are drawn.',
+    // CAPTION LENGTH, 15 Sep 2026: 326 words before. The timing read -- release as the
+    // stick is closing, not after -- is the section's own bolded sentence and a `Read:`
+    // facts line, both within two lines of this marker, so the caption no longer restates
+    // it. What is kept is the list of things the PICTURE cannot say, because that is the
+    // one thing the prose above does not do: three of the four claims here are about the
+    // limits of a plan view, and a reader who takes the drawn shape as the instruction has
+    // been taught something nobody wrote.
+    'A wide rush at the moment the decision is made: the goaltender has come across to the ' +
+    'near post, which leaves them exposed far side and low. Two plays are on and only one ' +
+    'happens. Your own ' +
+    'shot is not drawn, because a plan view cannot show height and "far side and low" is ' +
+    'half a height instruction. The feed to the trailer is. The picture cannot say when the ' +
+    'defender’s stick arrives, and it cannot draw the delay, which is a beat of time rather ' +
+    'than a movement backwards. He is a forward only because a marker has to be a forward ' +
+    'or a defenceman — you are told a trailer is coming, not who it is.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Own players are drawn open, ' +
@@ -519,26 +514,25 @@ const breakawayApproach = {
   numbered: true,
 
   caption:
-    'The approach on a breakaway, which is the half of it most players skip. Three phases, in ' +
-    'order: come in hard to the blue line; ease off through the top of the circles, arriving there ' +
-    'with less speed than you feel like carrying; then accelerate again into your move. Speed costs ' +
-    'you three things out here. It shortens the decision window — at full flight you get roughly ' +
-    'one option, where at three-quarter pace you can see the goaltender’s depth, change your ' +
-    'mind and still execute. It hands the goaltender their easiest read, because a shooter flying ' +
-    'in on a straight line has told them exactly where they will be in half a second. And a deke ' +
-    'needs room to happen in: you cannot pull the puck across your body and get it back once you ' +
-    'are past the post. Note the distance, because it is why the pattern works — the tops of the ' +
-    'circles are thirty-five feet out from the goal line, so easing off there still leaves you most ' +
-    'of a zone to accelerate through. What the last arrow does not say is which move you make, and ' +
-    'that is deliberate: the instruction is not to decide at the blue line, before you can see what ' +
-    'the goaltender is actually giving you. Two hedges travel with this. That a change of pace ' +
-    'beats raw pace, and is worth more than any hand skill, is coaching craft rather than a ' +
-    'measured finding — no source this document holds measures either ranking against a ' +
-    'goaltender. And the goaltender is drawn out at the top of the crease because that is the ' +
-    'well-coached one, who meets you out and retreats with you; their retreat is not drawn, and at ' +
-    'rec level a goaltender is far more likely to be deep, flat-footed and square, which is itself ' +
-    'a coaching observation rather than a counted one. Nobody else is on the ice, which is what ' +
-    'makes it a breakaway.',
+    // CAPTION LENGTH, 15 Sep 2026: 327 words before. The three costs of speed -- the
+    // decision window, the easy read and the room a deke needs -- are the section's own
+    // prose and its `Risk:` and `Read:` facts lines, immediately around this marker.
+    // ⚠️ BOTH HEDGES ARE KEPT IN FULL, and they are the reason this one does not reach 50.
+    // The first is a negative-existence claim ("no source this document holds measures
+    // either ranking"), which non-negotiable 4 protects and check_disclosures reports for
+    // testing; the second qualifies THE GOALTENDER THIS PICTURE DRAWS, so the prose cannot
+    // hold it -- a reader who takes the drawn depth as typical has been taught the
+    // well-coached goaltender as the normal one.
+    'The approach on a breakaway, numbered in order: hard to the blue line, ease off ' +
+    'through the top of the circles, then accelerate into your move. The tops of the ' +
+    'circles are thirty-five feet out from the goal line, so easing off there still leaves ' +
+    'most of a zone to accelerate through. The last arrow deliberately does not say which ' +
+    'move you make. That a change of pace beats raw pace, and is worth more ' +
+    'than any hand skill, is coaching craft rather than a measured finding — no source this ' +
+    'document holds measures either ranking against a goaltender. And the goaltender is ' +
+    'drawn out at the top of the crease because that is the well-coached one; at rec level ' +
+    'they are far more likely to be deep, flat-footed and square, which is itself a ' +
+    'coaching observation rather than a counted one. Nobody else is on the ice.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Own players are drawn open, ' +

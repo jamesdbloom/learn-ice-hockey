@@ -104,12 +104,12 @@ const forecheckAngling = {
   width: 900,
 
   caption:
-    'The skill everything below assumes: skate at the space you want to deny, not at the puck. ' +
-    'One forechecker curls in from the weak side on a puck carrier retrieving it behind his own ' +
-    'net, cutting off that side and forcing him back toward the strong-side wall — no contact is ' +
-    'drawn, because the aim is to eliminate options, not land a hit. Which side to take away is ' +
-    'a coaching choice, not a rule: the common default takes the middle and forces the retreat ' +
-    'to the wall, some coaches invert it, so find out which your team plays before your first shift.',
+    'The skill every forecheck here assumes: skate at the space you want to deny, not at the ' +
+    'puck. One forechecker curls in from the weak side on a carrier retrieving behind his own ' +
+    'net, cutting that side off and forcing him back toward the strong-side wall. No contact is ' +
+    'drawn, because the aim is to eliminate options rather than land a hit. Which side to take ' +
+    'away is a coaching choice, not a rule — the common default takes the middle, some coaches ' +
+    'invert it, so find out which your team plays before your first shift.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Three players: the goaltender ' +
@@ -146,28 +146,27 @@ const forecheck212 = {
 
   caption:
     'A 2-1-2 forecheck at the moment the opposing defenceman retrieves the puck behind the net. ' +
-    'F1 arrives from the weak side and angles the carrier towards the strong-side wall; ' +
-    'F2 attacks the first passing option rather than the puck; ' +
+    'F1 arrives from the weak side and angles the carrier towards the strong-side wall; F2 ' +
+    'attacks the first passing option rather than the puck; ' +
     // ⚠️ "at the top of the circles" IS LOAD-BEARING FOR A HOST, not decoration. It was cut
     // for length and restored: how_to_watch_hockey.md's prose beside this marker counts
     // "two forwards ... below the top of the circles in the first picture and one in the
     // second", so a listener needs that line named in the caption to check the host's own
     // sentence. A per-host coverage table shows it as duplicated and safe to cut; it is not.
-    'F3 stays high in the middle at the top of the circles; ' +
-    'both defencemen hold the offensive blue line. ' +
-    'This is one forechecking system among several, and three of the details shown are ' +
-    'coaching choices rather than rules — which way F1 angles the carrier, which side F3 ' +
-    'sits on, and the fact that it is drawn as a spread 2-1-2 with F1 and F2 arriving from ' +
-    'opposite sides rather than the stacked variant that sends both at the same corner — ' +
-    'so find out which your team runs. ' +
-    // "is treated separately" RESTORED after a length cut removed it. It is the host-neutral
-    // repair of an earlier "and is its own section", which was true in one of five hosts. A
-    // reader told the picture will not show the finish of an angle has to be told something
-    // shows it, and this phrase is the only pointer that is true in all five.
-    'Two things the picture deliberately does not settle: how a forechecker finishes an angle, ' +
-    'which is movement over time a still frame cannot carry and is treated separately, and ' +
-    'whether the first pass beats F2 or F2 beats the pass, which is the contest the system ' +
-    'turns on. ' +
+    // It survived the 2026 length cut for the same reason. Do not cut it again.
+    'F3 stays high in the middle at the top of the circles; both defencemen hold the offensive ' +
+    'blue line. This is one forechecking system among several, and three of the details shown are ' +
+    'coaching choices rather than rules — which way F1 angles the carrier, which side F3 sits on, ' +
+    'and the spread arrangement rather than the stacked variant — so find out which your team ' +
+    'runs. Two things the picture does not settle: how a forechecker finishes an angle, which is ' +
+    'movement over time a still frame cannot carry and ' +
+    // "is treated separately" RESTORED after a length cut removed it, and kept through the
+    // 2026 length cut. It is the host-neutral repair of an earlier "and is its own section",
+    // which was true in one of five hosts. A reader told the picture will not show the finish
+    // of an angle has to be told something shows it, and this phrase is the only pointer that
+    // is true in all five.
+    'is treated separately, and whether the first pass beats F2 or F2 beats the pass, which is ' +
+    'the contest the system turns on. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. WHY IT IS HERE AND WHY IT IS SHORT.
     // The long body-checking block on forecheck-122 and forecheck-131 is NOT the general
     // treatment: it is the reader-facing half of a round-27 remedy for two routes graded
@@ -318,18 +317,15 @@ const forecheck212Stacked = {
   width: 900,
 
   caption:
-    'The strong-side or stacked 2-1-2 — the variant of the diagram above, drawn against the same puck ' +
-    'carrier. F1 and F2 both come from the same side to overload one corner, and F3 shades to the puck side ' +
-    'as well instead of sitting weak-side, so all three forwards are on one half of the ice. ' +
-    'The count has not changed — two forwards deep, one high, both defencemen on the offensive blue line — ' +
-    'and only the sides have moved, which is why this is the same system and not a different one. ' +
-    'What the shape gives up is drawn as well: the far-side breakout, conceded deliberately, with the carrier ' +
-    'free to come out the other way into the half of the ice none of your forwards is standing on. ' +
-    'Which of the two your team runs is a bench call rather than a rule, and it decides whether F2 following ' +
-    'F1 into the same corner is the plan or one of the standing mistakes in forechecking — so find out before your ' +
-    'first shift, not during it. ' +
-    'F1 and F2 are drawn arriving nowhere, because how a forechecker finishes an angle is movement over time ' +
-    'that a still frame cannot carry. ' +
+    'The strong-side or stacked 2-1-2, drawn against the same puck carrier: F1 and F2 both come ' +
+    'from the same side to overload one corner, and F3 shades to the puck side as well instead of ' +
+    'sitting weak-side, so all three forwards are on one half of the ice. The count has not ' +
+    'changed — two forwards deep, one high, both defencemen on the offensive blue line — and only ' +
+    'the sides have moved, which is why this is the same system and not a different one. What the ' +
+    'shape gives up is drawn as well: the far-side breakout, conceded deliberately. Which of the ' +
+    'two your team runs is a bench call rather than a rule, so find out before your first shift. ' +
+    'F1 and F2 are drawn arriving nowhere, because how a forechecker finishes an angle is ' +
+    'movement over time that a still frame cannot carry. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. See the note on forecheck-212 above for why this
     // is short and why it is here at all. ONE OBJECTION ANSWERED, because it is a good one: a
     // diagram reviewer argued a counterweight about finishing a check is "a claim the picture
@@ -421,19 +417,16 @@ const forecheck122 = {
   width: 900,
 
   caption:
-    'A 1-2-2 forecheck against the same puck carrier as the 2-1-2 above, so the two can be compared: one ' +
-    'forward deep, two across the middle of the zone, two defencemen high at the offensive blue line. ' +
-    'One forward deep and not two is the whole difference — this system concedes the retrieval on purpose and ' +
-    'builds a wall the opponent has to pass through instead. ' +
-    'F1 pressures without committing to winning the puck, cutting the ice in half and staying inside so ' +
-    'the play cannot come back across; F2 sits up the strong-side wall and creates the turnover by ' +
-    'jumping an outlet F1 has made predictable; F3 holds the high middle. The dog, fox and hawk labels ' +
-    'on the picture are a memory hook some teams use rather than standard hockey vocabulary. ' +
-    'Three things drawn are coaching choices and not laws — which side F1 cuts off, the weak-side defenceman ' +
-    'holding the middle rather than the far point, and the choice of this system at all, since the ' +
-    'more usual default is the 2-1-2 — so find out which your team runs. ' +
-    'Whether the outlet beats F2 or F2 beats the outlet is the contest the system turns on, and the diagram ' +
-    'does not settle it. ' +
+    'A 1-2-2 forecheck against the same puck carrier as the 2-1-2, so the two can be compared: ' +
+    'one forward deep, two across the middle of the zone, two defencemen high at the offensive ' +
+    'blue line. One forward deep and not two is the whole difference — this system concedes the ' +
+    'retrieval on purpose and builds a wall the opponent has to pass through instead. F1 cuts the ' +
+    'ice in half without committing to winning the puck; F2 sits up the strong-side wall and ' +
+    'jumps an outlet F1 has made predictable; F3 holds the high middle. The dog, fox and hawk ' +
+    'labels are a memory hook some teams use rather than standard hockey vocabulary. Which side ' +
+    'F1 cuts off, the weak-side defenceman holding the middle rather than the far point, and the ' +
+    'choice of this system at all are coaching choices and not laws, so find out which your team ' +
+    'runs. ' +
     // SAFETY SCOPE. The long body-checking block below is VERBATIM SHARED by four captions in this
     // file -- forecheck-122, forecheck-131, forecheck-pinch and forecheck-press. 604(b)'s text, its
     // provenance and why it may not be split from 604(a) are argued out in the comment above
@@ -543,20 +536,17 @@ const forecheck131 = {
   width: 900,
 
   caption:
-    'The 1-3-1 pushed up into the offensive zone, against the same puck carrier as the other diagrams: one ' +
-    'forward pressuring, three players spread flat across the width of the ice, and one player behind them as ' +
-    'the last man. ' +
-    'The line of three is conventionally F2, F3 and one defenceman, the defenceman in the middle as the ' +
-    'read-maker and the two forwards on the walls — it cannot be three forwards, because F1 is already a ' +
-    'forward and there are only three on the ice. ' +
-    'F1 does not chase but steers, taking the middle away and shepherding the breakout to one side; as the ' +
-    'puck commits to that side the whole line shifts with it, the puck-side player stepping down as an ' +
-    'immediate second attacker while the other two slide across to cover the retreat. ' +
-    'What it concedes is drawn as plainly as what it takes: the initial puck entirely, and a great deal of ' +
-    'ice behind a line that is flat, so a chip past it is past all three at once. ' +
-    'It is one system among several and not a beginner one — it asks three players to read and skate ' +
-    'laterally at the same time — and the far more common use of the same name is a passive neutral-zone ' +
-    'shape that is not a forecheck in any literal sense. ' +
+    'The 1-3-1 pushed up into the offensive zone, against the same puck carrier as the other ' +
+    'diagrams: one forward pressuring, three players spread flat across the width of the ice, and ' +
+    'one player behind them as the last man. The line of three is conventionally F2, F3 and one ' +
+    'defenceman, the defenceman in the middle as the read-maker — it cannot be three forwards, ' +
+    'because F1 is already a forward and there are only three on the ice. F1 does not chase but ' +
+    'steers, and as the puck commits to one side the whole line shifts with it, the puck-side ' +
+    'player stepping down as an immediate second attacker while the other two slide across. What ' +
+    'it concedes is drawn as plainly as what it takes: the initial puck entirely, and a great ' +
+    'deal of ice behind a flat line, so a chip past it is past all three at once. It is one ' +
+    'system among several and not a beginner one, and the far more common use of the same name is ' +
+    'a passive neutral-zone shape that is not a forecheck in any literal sense. ' +
     // SAFETY SCOPE. The long body-checking block below is VERBATIM SHARED by four captions in this
     // file -- forecheck-122, forecheck-131, forecheck-pinch and forecheck-press. 604(b)'s text, its
     // provenance and why it may not be split from 604(a) are argued out in the comment above
@@ -663,21 +653,19 @@ const forecheckPinch = {
   width: 900,
 
   caption:
-    'The exchange that decides whether a forecheck is worth running, drawn inside a 2-1-2 because the ' +
-    'forwards have to be somewhere: their defenceman rims the puck up the strong-side wall to escape, your ' +
-    'strong-side defenceman steps down from the offensive blue line to kill it, and F3 leaves the high middle ' +
-    'to cover the point just vacated. ' +
-    'The two arrows finish pointing at each other and about ten feet apart on purpose — the test for going is ' +
-    '"if you can\'t arrive on contact, don\'t go", meaning you and the puck reach the wall at the same moment ' +
-    '— and on the pure race drawn here, a dying rim with nobody to seal, the bar is higher still: you have to ' +
-    'arrive clearly first, not probably first. ' +
-    'The weak-side defenceman does not join in. Holding the middle is what makes a failed pinch a ' +
-    'two-on-one rather than a breakaway, which is why their far winger is drawn already climbing towards ' +
-    'the exit. ' +
-    'Two things here are coaching choices rather than laws: that only one defenceman pinches at a time, which ' +
-    'is close to universal but still a choice, and that F3 is the one who covers the vacated point, where ' +
-    'some teams slide the weak-side defenceman across instead and some pinch only when F3 has already called ' +
-    'that they are high — so ask which yours is. ' +
+    'The exchange that decides whether a forecheck is worth running, drawn inside a 2-1-2 because ' +
+    'the forwards have to be somewhere: their defenceman rims the puck up the strong-side wall to ' +
+    'escape, your strong-side defenceman steps down from the offensive blue line to kill it, and ' +
+    'F3 leaves the high middle to cover the point just vacated. The two arrows finish pointing at ' +
+    'each other and about ten feet apart on purpose — the test for going is "if you can\'t arrive ' +
+    'on contact, don\'t go", meaning you and the puck reach the wall at the same moment — and on ' +
+    'the pure race drawn here, a dying rim with nobody to seal, the bar is higher still: you have ' +
+    'to arrive clearly first, not probably first. The weak-side defenceman does not join in. ' +
+    'Holding the middle is what makes a failed pinch a two-on-one rather than a breakaway, which ' +
+    'is why their far winger is drawn already climbing towards the exit. That only one defenceman ' +
+    'pinches at a time, and that F3 is the one who covers the vacated point, are coaching choices ' +
+    'rather than laws — some teams slide the weak-side defenceman across instead and some pinch ' +
+    'only when F3 has already called that they are high, so ask which yours is. ' +
     // ⚠️ CUT, and the cut is the point: this caption used to end with "a rim that gets past a
     // pinching defenceman is the counter that hurts a 2-1-2 most ... that ranking is coaching
     // emphasis, not a counted one". A RANKING CLAIM AND ITS OWN HEDGE, in a picture that does
@@ -972,22 +960,17 @@ const forecheckRolesRotate = {
   width: 900,
 
   caption:
-    'The instant after the opponents move the puck defenceman to defenceman, and the point of the picture ' +
-    'is that nobody has swapped position — they have swapped job. ' +
-    'Each glyph carries the role that player has just taken; the label beside it says which role they held ' +
-    'a second earlier. ' +
-    'The forward who was F1 has been beaten by the pass and is now behind the play, so he does not turn ' +
-    'and chase: he climbs, and takes the vacated support role — usually, as here, the high job as the ' +
-    'new F3. ' +
-    'The forward who was F2 is nearest the new carrier, so he is the new F1 and closes on him. ' +
-    'The forward who was F3 comes down off the high middle into the support job as the new F2. ' +
-    'Which body ends up in which role is settled by who is nearest the puck and by nothing else, so this ' +
-    'is one instance and not a pattern to memorise — put the pass the other way and the same three moves ' +
-    'belong to three different players. ' +
-    'The shape drawn around them is the 2-1-2 this guide takes as its house default, because three forwards ' +
-    'have to be standing somewhere and any arrangement of them names a system; the rotation itself is not ' +
-    'a property of that system, because it is simply what F1, F2 and F3 mean. ' +
-    'The two defencemen hold the offensive blue line and their jobs do not rotate. ' +
+    'The instant after the opponents move the puck defenceman to defenceman, and the point of the ' +
+    'picture is that nobody has swapped position — they have swapped job. Each glyph carries the ' +
+    'role that player has just taken; the label beside it says which role they held a second ' +
+    'earlier. The forward who was F1 has been beaten by the pass and is now behind the play, so ' +
+    'he climbs into the vacated support role as the new F3. The forward who was F2 is nearest the ' +
+    'new carrier, so he is the new F1 and closes on him. The forward who was F3 comes down off ' +
+    'the high middle as the new F2. Which body ends up in which role is settled by who is nearest ' +
+    'the puck and by nothing else, so this is one instance and not a pattern to memorise. The ' +
+    'shape drawn around them is the 2-1-2 this guide takes as its house default; the rotation ' +
+    'itself is not a property of that system, because it is simply what F1, F2 and F3 mean. The ' +
+    'two defencemen hold the offensive blue line and their jobs do not rotate. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs a forward to close on a
     // carrier picking a puck up in his own corner, which is the same exposure forecheck-212's
     // "goes hard at the puck carrier" creates, so it carries the same short scope sentence in
@@ -1103,23 +1086,18 @@ const forecheck23Lock = {
   width: 900,
 
   caption:
-    'The 2-3, drawn against the same puck carrier as the other forecheck diagrams so the shapes can be ' +
-    'compared: two forwards in on the puck, and three players across the ice behind them. ' +
-    'The third forward is the whole of the difference. Instead of joining the attack he sits up the wall ' +
-    'above their winger, and if the puck is not won he slides back into line with the two defencemen — ' +
-    'the arrow drawn from him — so that he is effectively a third defenceman whenever the puck is going ' +
-    'the other way. ' +
-    'What that buys is two-man pressure with three players always between the puck and your net. What it ' +
-    'costs is the fifth attacker in the offensive zone, so you cycle less, and a winger with the ' +
-    'positional discipline and the skating to do the job. ' +
-    'The famous version is the left-wing lock, in which the centre and the right winger are the two who go ' +
-    'and the left winger is the one who locks; a modern variant locks whichever winger is highest instead, ' +
-    'so which bodies fill these three jobs is a bench call and not a property of the shape. ' +
-    'It is one system among several and the default assumed throughout this document is a 2-1-2, so find ' +
-    'out which your team plays. ' +
-    'The picture puts the locking winger into the middle of the line because the two defencemen already ' +
-    'hold the two points; which lane he actually fills is a coaching detail this does not settle. ' +
-    'His arrow stops short of the line on purpose, because he goes back only if the puck is not won. ' +
+    'The 2-3, drawn against the same puck carrier as the other forecheck diagrams: two forwards ' +
+    'in on the puck, and three players across the ice behind them. The third forward is the whole ' +
+    'of the difference — instead of joining the attack he sits up the wall above their winger, ' +
+    'and if the puck is not won he slides back into line with the two defencemen, which is the ' +
+    'arrow drawn from him. That buys two-man pressure with three players between the puck and ' +
+    'your net; it costs the fifth attacker in the offensive zone and needs a winger with the ' +
+    'positional discipline and the skating to do the job. The famous version is the left-wing ' +
+    'lock, and a modern variant locks whichever winger is highest instead, so which bodies fill ' +
+    'these three jobs is a bench call and not a property of the shape. The default assumed ' +
+    'throughout this document is a 2-1-2, so find out which your team plays. Which lane the ' +
+    'locking winger actually fills is a coaching detail this does not settle, and his arrow stops ' +
+    'short of the line on purpose, because he goes back only if the puck is not won. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs two forwards in on a carrier
     // the picture puts behind his own net, so it carries the same exposure as forecheck-212 and
     // the same settled scope sentence -- which is also what the section itself does: '"Hard"
@@ -1206,23 +1184,19 @@ const forecheckPress = {
   width: 900,
 
   caption:
-    'The full-ice press, drawn against the same puck carrier as the other forecheck diagrams: all three ' +
-    'forwards deep or nearly deep and hunting the puck, and both defencemen stepping down from the ' +
-    'offensive blue line rather than one. ' +
-    'The empty ice is the system. Nothing at all is drawn between those five players and your own end, ' +
-    'because there is nothing there — no third forward high, no weak-side defenceman holding the middle, ' +
-    'no safety of any kind — so a single clean pass out of the zone is a breakaway or an empty-net goal ' +
-    'against. That is not a flaw in the shape; it is the trade being made. ' +
-    'It is less a system than a decision to accept unlimited risk in exchange for keeping the puck in ' +
-    'their end, which is why coaches reach for it almost exclusively late and trailing: down a goal in ' +
-    'the last few minutes, with the goaltender pulled, or on a delayed penalty where you have an extra ' +
-    'skater until the whistle goes. Nobody runs it for sixty minutes. ' +
-    'Both defencemen going is a called situation and not your own read: unless the bench has called one, ' +
-    'the default this document assumes is that only one pinches at a time and the other holds the middle, ' +
-    'which is what makes a failed pinch a two-on-one instead of a breakaway. ' +
-    'Call it a full-ice press or an all-out forecheck when you talk to your team. "2-2-1" is standard ' +
-    'basketball terminology and is not what hockey coaching material standardly calls this, and the other ' +
-    'name coaching sources use for the same picture is an aggressive 2-1-2 with both defencemen pinching. ' +
+    'The full-ice press, drawn against the same puck carrier as the other forecheck diagrams: all ' +
+    'three forwards deep or nearly deep and hunting the puck, and both defencemen stepping down ' +
+    'from the offensive blue line rather than one. The empty ice is the system. Nothing at all is ' +
+    'drawn between those five players and your own end, because there is nothing there — no third ' +
+    'forward high, no weak-side defenceman holding the middle — so a single clean pass out of the ' +
+    'zone is a breakaway or an empty-net goal against. That is the trade being made rather than a ' +
+    'flaw in the shape, which is why coaches reach for it almost exclusively late and trailing: ' +
+    'down a goal in the last few minutes, with the goaltender pulled, or on a delayed penalty. ' +
+    'Both defencemen going is a called situation and not your own read; the default this document ' +
+    'assumes is that only one pinches at a time and the other holds the middle, which is what ' +
+    'makes a failed pinch a two-on-one instead of a breakaway. Call it a full-ice press or an ' +
+    'all-out forecheck when you talk to your team, because "2-2-1" is standard basketball ' +
+    'terminology and is not what hockey coaching material standardly calls this. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. This caption instructs BOTH defencemen down the
     // walls, which is the pinch exposure rather than the arriving-forechecker one, so it carries
     // forecheck-pinch's settled sentence rather than forecheck-212's -- the section makes the

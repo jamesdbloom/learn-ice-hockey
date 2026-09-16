@@ -83,8 +83,8 @@ const lowZoneCollapse = {
   width: 900,
 
   caption:
-    'Your own defensive zone with the puck in the strong-side corner, at the moment the centre ' +
-    'has left the slot to help win it. The strong-side defenceman plays the puck and the centre ' +
+    'Your own defensive zone with the puck in the strong-side corner, at the moment the centre has ' +
+    'left the slot to help win it. The strong-side defenceman plays the puck and the centre ' +
     // ⚠️ "usually wins it" TRACKS THE PROSE WORD FOR WORD — center.md:119 and :131, which
     // were themselves corrected from "almost always" in this round. Do not hedge this
     // caption further on its own: a caption more qualified than its body is the mirror
@@ -93,16 +93,11 @@ const lowZoneCollapse = {
     // absence-of-evidence class that on_ice_communication.md:569 and risk_management.md:164
     // disclose, and center.md carries no such disclosure. If the owner adds one, this
     // caption follows it.
-    'joins him, because two of you on the puck usually wins it; the weak-side defenceman ' +
-    'stays at the goalmouth; the strong-side winger stays high covering the point; and the ' +
-    'weak-side winger collapses from his own point to cover the high slot the centre has vacated. ' +
-    'Those last two are two layers with two owners — the goalmouth is the weak-side defenceman’s ' +
-    'and the high slot, between the dots and the top of the circles, is the centre’s — and anyone ' +
-    'with a clear view calls the rotation early so the slot is never empty. ' +
-    'This is a low zone collapse, the zone coverage assumed throughout, and it is ' +
-    'a coaching choice rather than a rule of hockey: under man-on-man the wingers follow their ' +
-    'check into the corner instead, and under a hybrid they take their man down only below the ' +
-    'dots. Find out which one your team plays before your first shift.',
+    'joins him, because two of you on the puck usually wins it; the weak-side winger collapses from ' +
+    'his own point to cover the high slot the centre has vacated, while the weak-side defenceman ' +
+    'stays at the goalmouth — two layers with two owners. This is a low zone collapse, a coaching ' +
+    'choice rather than a rule of hockey: under man-on-man the wingers follow their check into the ' +
+    'corner instead, so find out which one your team plays.',
 
   describe:
     'The defending half of the rink, your own net at the right. Three opposition players: the puck ' +
@@ -205,18 +200,13 @@ const swingLow = {
   numbered: true,
 
   caption:
-    'Your defenceman has the puck behind his own net and the centre is swinging low to be the ' +
-    'outlet — inside the faceoff dots and below the hash marks, which in practice means inside ' +
-    'the strong-side faceoff circle rather than out on the boards. The boards are the strong-side ' +
-    'winger’s ice: a centre who drifts out there lets one opponent cover both of them, and the ' +
-    'defenceman loses the middle-lane option entirely. Having received it (one), the centre ' +
-    'carries out through the middle if the lane is clearly open (two); if it is not, the puck ' +
-    'goes to the winger on the boards instead. Low support like this belongs to the conventional ' +
-    'swing breakout, which is a coaching choice and not a rule: under a centre fly you leave the ' +
-    'zone early up the middle and the weak-side winger drops in to take this job, and under a ' +
-    'flat or spread breakout both wingers hold higher near the blue line. Find out which one your ' +
-    'team plays — a centre flying while the wingers hold high near the blue line leaves nobody ' +
-    'underneath the puck.',
+    'Your defenceman has the puck behind his own net and the centre is swinging low to be the outlet ' +
+    '— inside the faceoff dots and below the hash marks, which in practice means inside the strong-' +
+    'side faceoff circle rather than out on the boards, which are the winger’s ice. Having received ' +
+    'it, he carries out through the middle if that lane is clearly open; if it is not, the puck goes ' +
+    'to the winger on the boards instead. Low support like this belongs to the conventional swing ' +
+    'breakout, a coaching choice and not a rule: under a centre fly the weak-side winger drops in to ' +
+    'take this job instead, so find out which one your team plays.',
 
   describe:
     'The defending half of the rink, your own net at the right, and no opposition drawn — this is ' +
@@ -299,19 +289,13 @@ const backcheckMiddleLane = {
   width: 900,
 
   caption:
-    'A rush coming back at you, and the centre’s backcheck. The most dangerous attacker is ' +
-    'usually not the puck carrier but the forward filling the middle of the ice behind him, ' +
-    'arriving late and unmarked into the slot — and under the standard positional assignment ' +
-    'that player is the centre’s, with the wingers taking the outside lanes. Come back on the ' +
-    'defensive side of your man, between him and your own net, rather than chasing behind his ' +
-    'shoulder; and do not swing wide to help on the carrier, because your defencemen have him ' +
-    'and leaving the middle abandons the exact ice they are protecting. Which backchecker takes ' +
-    'which lane is a coaching choice, not a law: some teams give the middle to the first man ' +
-    'back, whoever that is, and others pick up man-on-man from the puck outward, so find out ' +
-    'which yours plays — under every one of them somebody is responsible for the middle and ' +
-    'nobody assumes it is somebody else. The defencemen are drawn retreating together and keeping the middle ' +
-    'sealed, which both named ways of defending a three-attacker rush have in common; how they ' +
-    'divide the attackers between them is its own coaching choice.',
+    'A rush coming back at you, and the centre’s backcheck. He comes back on the defensive side of ' +
+    'the middle-lane driver — between him and his own net — rather than chasing behind his shoulder, ' +
+    'and does not swing wide to help on the carrier, because the defencemen have him and the middle ' +
+    'is the ice they are protecting. They are drawn retreating together with that middle sealed. ' +
+    'Which backchecker takes which lane is a coaching choice and not a law: some teams give the ' +
+    'middle to the first man back, whoever that is, and others pick up man-on-man from the puck ' +
+    'outward — so find out which yours plays.',
 
   describe:
     'The defending half of the rink, your own net at the right, with three opposition forwards ' +
@@ -490,30 +474,22 @@ const wingerHighThenWall = {
 
   caption:
     'A winger’s defensive-zone job, drawn at both ends of the one move that defines it. While the ' +
-    'other team has the puck you are high on your side, roughly level with the opposing ' +
-    'defenceman you are covering and between him and the slot — that is what "stay high" means, ' +
-    'not halfway to the corner. ' +
+    'other team has the puck you are high on your side, level with the opposing defenceman you are ' +
+    'covering and between him and the slot — that is what "stay high" means, not halfway to the ' +
+    'corner. ' +
     // The hedge on the DEFENSIVE half of the picture. The caption used to hedge only
     // the breakout half, which left the thing the diagram spends most of its ice on —
     // a winger staying up out of the corner battle drawn beneath him — reading as a
     // law of hockey. It is not: it is the low zone collapse job. Wording follows
     // winger.md's own Convention line and the sibling captions on
     // centre-low-zone-collapse, dz-collapse-corner and dz-walk-down-zone.
-    'Staying high out of the corner rather than going down into it is the low zone collapse job — ' +
-    'the most common defensive-zone system, and a coaching choice rather than a rule of hockey. ' +
-    'Under man-on-man you follow your man wherever he goes, corner included, and under a hybrid ' +
-    'you take him down only below the hash marks, so find out which one your team plays before ' +
-    'your first shift. ' +
-    'The moment your team wins the battle below you it expires, and ' +
-    'you come down the wall to between the hash marks and the goal line, a little under 44 to ' +
-    '64 feet, ' +
-    'presenting yourself as an outlet with your stick on the ice and your feet already moving. ' +
-    'Watch the battle rather than the puck and turn your feet before it is won — but do not leave ' +
-    'the point until it actually is: anticipating while you can still get back is coached, and ' +
-    'abandoning your coverage on a hope is not. The wall position drawn here belongs to the ' +
-    'conventional swing breakout, which is a coaching choice: a flat or spread structure asks you ' +
-    'to hold higher toward the blue line, and a stretch or flying-winger structure sends one ' +
-    'winger up ice altogether, so find out which one you are in.',
+    'Staying high out of the corner rather than going down into it is the low zone collapse job, a ' +
+    'coaching choice rather than a rule of hockey: under man-on-man you follow your man wherever he ' +
+    'goes, corner included, so find out which one your team plays. It expires the moment your team ' +
+    'wins the battle below you, and you come down the wall to between the hash marks and the goal ' +
+    'line, stick on the ice and feet already moving — but do not leave the point until the battle is ' +
+    'actually won. That wall position belongs to the conventional swing breakout: a flat or spread ' +
+    'structure asks you to hold higher toward the blue line, so find out which one you are in.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition players: a ' +
@@ -628,15 +604,12 @@ const wingerOffensiveZone = {
 
   caption:
     'Where a winger works in the offensive zone, and the one layer that is not his. The half-wall ' +
-    '— the boards roughly level with the faceoff dot, between the corner and the point — is your ' +
-    'home base, and from it you are ready to shoot or to feed the centre in the slot; your own ' +
-    'faceoff circle is where you are ready for a one-timer off a cross-ice pass; and the side of ' +
-    'the net is where rebounds and tip-ins live, so time the crash to arrive as the shot is taken ' +
-    'rather than before it. Leave the high slot, between the dots and the top of the circles, for ' +
-    'the centre: the goalmouth and the high slot are two patches with two owners, and running ' +
-    'them together is how two forwards end up standing on the same square metre. "Shoot first" is ' +
-    'a bias rather than a rule — a teammate with a clear look at an open side is always worth the ' +
-    'extra pass. At the net front, work just outside the blue paint and keep your body out of ' +
+    '— the boards roughly level with the faceoff dot — is your home base; your own faceoff circle ' +
+    'is where the one-timer off a cross-ice pass arrives; the side of the net is where rebounds ' +
+    'and tip-ins live, so time the crash to arrive as the shot is taken rather than before it. ' +
+    'Leave the high slot, between the dots and the top of the circles, for the centre: two ' +
+    'patches with two owners. "Shoot first" is a bias rather than a rule. ' +
+    'At the net front, work just outside the blue paint and keep your body out of ' +
     'the crease: screening from outside it without contact is legal, ' +
     'but that is keyed to the crease: under both the NHL and the IIHF every clause of Rule 69 ' +
     'that voids a goal for where you stood names the goal crease, and 69.4, the rule for outside ' +
@@ -697,21 +670,18 @@ const twoOnOne = {
   width: 900,
 
   caption:
-    'A two-on-one: take away the pass and give up the shot. Sit in the passing lane between the ' +
-    'two attackers with your stick flat on the ice on the passing side, back up under control, ' +
-    'and do not slide unless the pass has already been released — a cross-ice pass to an open ' +
-    'forward is a chance your goaltender cannot save, whereas the shot is one they can see and ' +
-    'are set for. That is one of two legitimate systems rather than a law. The realistic ' +
-    'alternative is a timed slide flat across the passing lane, which removes the pass outright ' +
-    'and forces the shot — at the cost of putting you out of the play if you go early, and it is ' +
-    'a different action with its own penalty exposure, which this document sets out in full. Ask ' +
-    'your coach which one you are playing and how they want you down, and make sure your ' +
-    'goaltender gives the same answer. Either way it carries one honest caveat: if ' +
-    'the second attacker has been picked up by a backchecker and ' +
-    'the shooter is walking into the slot completely unpressured with no realistic pass ' +
-    'available, it is no longer a two-on-one and you close on the puck. Read what is actually in ' +
-    'front of you rather than the label. No backchecker is drawn here, because one would make ' +
-    'this a different situation.',
+    'A two-on-one: take away the pass and give up the shot. Sit in the passing lane between the two ' +
+    'attackers with your stick flat on the ice on the passing side, back up under control, and do not' +
+    ' slide unless the pass has already been released — a cross-ice pass to an open forward is a ' +
+    'chance your goaltender cannot save, whereas the shot is one they can see and are set for. That ' +
+    'is one of two legitimate systems rather than a law: the realistic alternative is a timed slide ' +
+    'flat across the passing lane, which removes the pass outright at the cost of putting you out of ' +
+    'the play if you go early, and it carries its own penalty exposure, which this document sets out ' +
+    'in full. Ask your coach which one you are playing and how they want you down, and make sure your' +
+    ' goaltender gives the same answer. One honest caveat either way: if the second attacker has been' +
+    ' picked up by a backchecker and the shooter is walking into the slot completely unpressured with' +
+    ' no realistic pass available, it is no longer a two-on-one and you close on the puck. No ' +
+    'backchecker is drawn here, because one would make this a different situation.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition forwards attack ' +
@@ -766,17 +736,14 @@ const threeDepths = {
   width: 900,
 
   caption:
-    'The three depths a defenceman plays at in the offensive zone. Just inside the blue line is ' +
-    'the default, and where both of you normally are. The top of the faceoff circle is the ' +
-    'activated position: the strong-side defenceman may step down to it to support a cycle or ' +
-    'create a shot, but only when there is no immediate threat of a turnover, and from there you ' +
-    'can still recover. Below the circles is not always wrong, but it is always a commitment — ' +
-    'down there you are a fourth forward, you cannot recover if it turns over, and somebody must ' +
-    'have taken your job at the blue line before you go rather than after, which is why that ' +
-    'band is drawn empty. Only one defenceman steps in at a time and the other holds the line as ' +
-    'the safety: that is a near-universal coaching convention rather than a rule, and coaches do ' +
-    'call exceptions — a full-ice press, a delayed penalty, six-on-five. When in doubt, stay at ' +
-    'the line.',
+    'The three depths a defenceman plays at in the offensive zone. Just inside the blue line is the ' +
+    'default, and where both of you normally are. The top of the faceoff circle is the activated ' +
+    'position: the strong-side defenceman may step down to it to support a cycle or create a shot, ' +
+    'but only when there is no immediate threat of a turnover, and from there he can still recover. ' +
+    'Below the circles you are a fourth forward and cannot recover if it turns over, which is why ' +
+    'that band is drawn empty. Only one defenceman steps in at a time and the other holds the line as' +
+    ' the safety — a near-universal coaching convention rather than a rule, and coaches do call ' +
+    'exceptions. When in doubt, stay at the line.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Three shaded bands run ' +
@@ -898,16 +865,12 @@ const dToD = {
 
   caption:
     'A defence-to-defence pass in your own end goes behind your own net, below the goal line, and ' +
-    'never across the slot — the shaded area, and the highest-danger ice there is. A D-to-D pass ' +
-    'in front of the net that gets intercepted there is a point-blank chance against, and it is ' +
-    'one of the most punished mistakes in the game — coaching emphasis, not a counted ranking. ' +
-    'The same holds if you are carrying rather than ' +
-    'passing: if no pass is on, skate behind the net to the other side instead of going through ' +
-    'the middle. Moving the puck to your partner is often all you need, because it makes the ' +
-    'forecheck reset and shift across. What varies between teams is the route rather than the ' +
-    'prohibition: some exchange high in the zone instead, above the tops of the circles, on the ' +
-    'reasoning that an interception up there is not a slot chance — two different routes and ' +
-    'not a hard version and a soft one, so ask your coach which yours uses.',
+    'never across the slot — the shaded area, and the highest-danger ice there is. One intercepted in' +
+    ' front of the net is a point-blank chance against, and among the most punished mistakes in the ' +
+    'game — coaching emphasis, not a counted ranking. The same holds if you are carrying rather than ' +
+    'passing: if no pass is on, skate behind the net to the other side instead of going through the ' +
+    'middle. What varies between teams is the route rather than the prohibition — some exchange high ' +
+    'in the zone instead, above the tops of the circles, so ask your coach which yours uses.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two of your defencemen stand low ' +
@@ -1018,24 +981,18 @@ const wingerDzRim = {
   width: 900,
 
   caption:
-    'Beating a checker who has sealed you against the boards, in your own end. You have the puck ' +
-    'on the wall with your body between it and him, which is why the puck is drawn on the far ' +
-    'side of you from the pressure — though body-between-puck-and-checker is the start of the ' +
-    'technique and not the whole of it, so keep your feet wide and low and still moving: a ' +
-    'stationary player on the wall gets pinned. He is inside you, ' +
-    'containing rather than chasing, so the ice he is taking away is the middle. That is exactly ' +
-    'the checker a RIM beats: a hard shot along the boards that follows the curve of the rink ' +
-    'past him to a teammate further around, because it goes where he is not. It is a completely ' +
-    'valid play and not an admission of failure — it resets possession and buys your team time to ' +
-    'regroup, which is worth more than a pass forced through traffic in your own zone. ' +
-    'Decide where the puck is going while you are still skating to it, not once you are pinned. ' +
-    'The opposite mistake needs the opposite play: the reverse beats a checker who has skated ' +
-    'past you instead of sealing you. ' +
-    '⚠️ Whichever you are playing, never turn your back to the wall and never duck. Those '+
-    'are two different injuries — a hit from behind you cannot brace for, and a chin tucked to '+
-    'the chest, '+
-    'which does not need speed to do it. Skates parallel to the boards, forearm and hip into '+
-    'the contact rather than the point of your shoulder, head up and chin off your chest.',
+    'Beating a checker who has sealed you against the boards, in your own end. Your body is between ' +
+    'the puck and him, which is why the puck is drawn on the far side of you from the pressure — but ' +
+    'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. He is' +
+    ' inside you, containing rather than chasing, so the ice he is taking away is the middle. That is' +
+    ' exactly the checker a RIM beats: a hard shot along the boards that follows the curve of the ' +
+    'rink past him to a teammate further around, because it goes where he is not. It is a valid play ' +
+    'and not an admission of failure. Decide where the puck is going while you are still skating to ' +
+    'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the wall and ' +
+    'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
+    'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
+    'forearm and hip into the contact rather than the point of your shoulder, head up and chin off ' +
+    'your chest.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
@@ -1090,22 +1047,19 @@ const wingerDzReverse = {
   width: 900,
 
   caption:
-    'Beating a checker who has over-committed, in your own end — the other half of the same ' +
-    'decision. Here he has not sealed you: he has skated past you up the wall, carrying his ' +
-    'momentum with him. The ice he has just left is behind you, so the play that beats him is a ' +
-    'REVERSE — the puck sent back the way it came, against the direction the pressure is flowing, ' +
-    'to a teammate arriving behind you. Read which of the two you are facing before the puck ' +
-    'arrives, because the plays are opposites and the wrong one hands him the puck in your own end ' +
-    'with your feet and your body already committed the wrong way to chase it. ' +
-    'Note what has not changed: feet wide and moving, backside into ' +
-    'him, puck on the far side of your body. A stationary player on the wall gets pinned whichever ' +
-    'mistake the checker is making. Call for it — "reverse!" — because the teammate you are ' +
-    'sending it to is looking the wrong way. ' +
-    '⚠️ Whichever you are playing, never turn your back to the wall and never duck. Those '+
-    'are two different injuries — a hit from behind you cannot brace for, and a chin tucked to '+
-    'the chest, '+
-    'which does not need speed to do it. Skates parallel to the boards, forearm and hip into '+
-    'the contact rather than the point of your shoulder, head up and chin off your chest.',
+    'Beating a checker who has over-committed, in your own end — the other half of the rim-or-reverse' +
+    ' decision. He has not sealed you: he has skated past you up the wall, carrying his momentum with' +
+    ' him. The ice he has just left is behind you, so the play that beats him is a REVERSE — the puck' +
+    ' sent back the way it came, against the direction the pressure is flowing, to a teammate ' +
+    'arriving behind you. Read which of the two you are facing before the puck arrives, because the ' +
+    'plays are opposites and the wrong one hands him the puck in your own end. Feet wide and moving, ' +
+    'backside into him, puck on the far side of your body — a stationary player on the wall gets ' +
+    'pinned whichever mistake the checker is making. Call for it — "reverse!" — because the teammate ' +
+    'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
+    'back to the wall and never duck. Those are two different injuries — a hit from behind you cannot' +
+    ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
+    'to the boards, forearm and hip into the contact rather than the point of your shoulder, head up ' +
+    'and chin off your chest.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
@@ -1193,22 +1147,19 @@ const offWingOpenToTheIce = {
   width: 900,
 
   caption:
-    'Receiving a breakout pass on your off wing, in your own end. Off wing means the puck sits on ' +
-    'the inside of your body rather than toward the boards, and the cost of it is exactly this ' +
-    'pass: up the wall, onto your backhand, with a forechecker arriving. The fix is drawn here — ' +
-    'take the puck OPEN TO THE ICE, hips turned out and a step or two off the boards. That ' +
-    'separation is the whole point, because it is what leaves all four answers available: ' +
-    'skate, pass to the centre, pass back to your defenceman, or attack the middle. Three routes ' +
-    'leave him at once here — carrying the puck up and inside, the pass to the centre, and the ' +
-    'pass back to your defenceman — alternatives rather than a sequence, and none of the four is ' +
-    'ranked above the others. Flush against the wall you have one of them. ' +
-    'Note that the coaching source this section otherwise follows teaches the opposite ' +
-    'reception — taking the pass with your back to the boards — and this guide does not follow ' +
-    'it there. ' +
-    '⚠️ Two things this picture cannot show, and both of them are prohibitions: never turn your back to the ' +
-    'boards to receive it, and never duck. Those are two different injuries — a hit from behind ' +
-    'you cannot brace for, and a chin tucked to the chest, which does not need speed to do it. ' +
-    'Skates parallel to the wall, forearm and hip, head up and chin off your chest.',
+    'Receiving a breakout pass on your off wing, in your own end. Off wing means the puck sits on the' +
+    ' inside of your body rather than toward the boards, and the cost of it is exactly this pass: up ' +
+    'the wall, onto your backhand, with a forechecker arriving. The fix is drawn here — take the puck' +
+    ' OPEN TO THE ICE, hips turned out and a step or two off the boards. That separation is what ' +
+    'leaves all four answers available: skate, pass to the centre, pass back to your defenceman, or ' +
+    'attack the middle. Three of them are drawn, as alternatives rather than a sequence, and none of ' +
+    'the four is ranked above the others; flush against the wall you have one. Note that the coaching' +
+    ' source this section otherwise follows teaches the opposite reception — taking the pass with ' +
+    'your back to the boards — and this guide does not follow it there. ⚠️ Two things this picture ' +
+    'cannot show, and both of them are prohibitions: never turn your back to the boards to receive ' +
+    'it, and never duck. Those are two different injuries — a hit from behind you cannot brace for, ' +
+    'and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the wall,' +
+    ' forearm and hip, head up and chin off your chest.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease ' +

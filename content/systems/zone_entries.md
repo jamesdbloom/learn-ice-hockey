@@ -145,8 +145,6 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 
 ### The trail-skate drag
 
-![](diagram:entry-trail-skate-drag)
-
 ```facts
 Position: Far-side winger flying at the line, a stride ahead of a carrier about to put the puck over
 Technique: Attack the line at full speed with your inside foot leading
@@ -170,6 +168,8 @@ Instead:
 4. The instant the puck completely crosses, **put that blade down and push**.
 
 You have arrived at the line at top speed, you have your stick in the zone ready to receive, and you are legal. A player who does not know the rule has to slow down and check their feet. You do not.
+
+![](diagram:entry-trail-skate-drag)
 
 Three details that separate people who *sort of* know this from people who use it:
 
@@ -236,8 +236,6 @@ A **carry-in** (also called a controlled entry) is any entry where your team has
 
 ### Attack the outside shoulder
 
-![](diagram:entry-outside-shoulder)
-
 ```facts
 Read: The defender's weakest moment is the pivot — turning from backwards to forwards, or opening their hips to one side
 Action: Aim at the outside shoulder, the one nearest the boards on your side, with pace and your eyes up
@@ -249,6 +247,8 @@ Key: You are not trying to beat them, you are trying to make them commit
 The defender's job is to stay between you and the middle of the ice. Their weakest moment is the **pivot** — the instant they turn from skating backwards to skating forwards, or open their hips to one side.
 
 Aim at the **outside shoulder** of the defender: the shoulder nearest the boards on your side. Do it with pace and with your eyes up. You are threatening the outside lane, which is the lane they are least worried about but most physically awkward to defend, because covering it means opening their hips toward the boards.
+
+![](diagram:entry-outside-shoulder)
 
 The moment their hips open outward, the **inside lane is available** — that is when you cut back into the middle, or slip the puck between their feet, or hit the middle driver. If they refuse to open and stay square, you have the outside lane for real: take it and get to the goal line.
 
@@ -274,8 +274,6 @@ You are looking for the moment two defenders both think the other one has it. Th
 
 ### The wide entry
 
-![](diagram:entry-wide)
-
 ```facts
 Action: Take the puck down the boards outside the defenceman and get to the goal line or below it
 Goal: Make the defender turn and skate — every stride toward the boards is a stride away from the front of the net
@@ -285,13 +283,13 @@ Risk: Going wide with nobody behind you is not an attack — it is a slow dump-i
 
 Take the puck down the boards outside the defenceman and get to the goal line or below it.
 
+![](diagram:entry-wide)
+
 - **Why it works:** the defender must turn and skate, and every stride they take toward the boards is a stride away from the front of the net.
 - **What you need:** a support player driving the net so that when you reach the goal line you have somewhere to put it, and a third player high for the back-door or point option.
 - **When it fails:** when you go wide with nobody behind you. Then you are alone below the goal line with three defenders between you and the net, which is not an attack, it is a slow dump-in with extra steps.
 
 ### The middle drive
-
-![](diagram:entry-middle-drive)
 
 ```facts
 Position: A teammate without the puck, skating hard through the seam between the defencemen, at the net
@@ -303,6 +301,8 @@ Never: Drive half-heartedly — that is a player standing in the slot, which fre
 A **middle drive** is a teammate without the puck skating hard through the middle of the ice, through the seam between the defencemen, at the net.
 
 The middle driver usually does not get the puck. That is not the point. The point is that a defenceman who ignores a player skating at their net will get scored on, so they cannot ignore them — which means they cannot step up on the puck carrier either. One player, running one route, at speed, buys the carrier several extra feet of space.
+
+![](diagram:entry-middle-drive)
 
 Middle drives only work if they are **committed**. A half-hearted middle drive is a player standing in the slot, which frees the defence rather than freezing it.
 
@@ -320,8 +320,6 @@ Two attackers crossing near the line can be used so that the second one runs int
 **Be careful with this one.** Deliberately body-blocking a defender who is not the puck carrier is **interference**. What is legal is skating your own route to the net and letting the defender's chosen path be the one that gets tangled. What is not legal is stopping, standing, or stepping into them to make the pick. The distinction is whether you are playing hockey or setting a screen; officials at every level judge it on whether you were going somewhere. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 ### Entering with numbers — 2-on-2 and 3-on-2
-
-![](diagram:entry-high-triangle)
 
 ```facts
 Goal: Arriving with an extra attacker is worth nothing unless you use it to make one defender responsible for two of you
@@ -346,6 +344,8 @@ That is the whole idea, and it is worth saying plainly because it sounds like th
 - **Midlane drive** — get the puck to the outside first, then the middle attacker drives hard at the net on the inside shoulder of the far defender. That defender now has to leave the prime scoring area, which turns the rest of it into a 2-on-1, and the shot can come from the middle with a screen already in place.
 - **Triple drive** — a variation where all three go deep. The carrier takes it wide with speed and then cuts hard inside, using the two driving teammates to create the room to do it.
 - **Drive and delay** — the carrier sells a hard drive to the net and then pivots away from the defender, back toward the blue line. The defender has already given ground for fear of the drive and needs a beat to react, and that beat is the time and space the entry was for. **The timing is the whole play:** turn up when you are level with the defender or just as they pivot toward you, and turn to the outside, away from them. Sell the drive first — a delay off a drive nobody believed is just slowing down. **This is the same turn [§5](#5-the-delay--curl-back) teaches, and the safety override below is the same one — it applies here too, and it applies at higher speed.**
+
+![](diagram:entry-high-triangle)
 
 **Which of these your team uses is a coaching choice**, and most teams practise one or two rather than all of them. What is not optional under any of them is speed: every one of these works by making a defender commit, and nobody commits to an attacker who is coasting.
 
@@ -415,8 +415,6 @@ A useful self-check: if you crossed the line and then had to slow down to stay w
 
 ### Timing all three forwards to hit the line together
 
-![](diagram:entry-three-lanes)
-
 ```facts
 Goal: Three attackers crossing within about a second of each other, in three different lanes — one wide each side, one middle
 Action: The middle lane player sets the clock — shortest route, so they adjust, usually by slowing or curling
@@ -433,6 +431,8 @@ How to get there:
 - **The wide players run their route full out** and use the trail-skate drag to hold at the line if they beat the puck there.
 - **The carrier reads the picture and decides the moment.** If two supports are on time and one is not, go anyway; if none of them are, delay (see below).
 
+![](diagram:entry-three-lanes)
+
 On the power play, coaches often push this further and want **four across the line** — two wide lanes and two inside-dot lanes filled — so that the carrier always has an option. That is a common structure, not a universal one.
 
 ---
@@ -448,8 +448,6 @@ Turning away from the blue line, keeping the puck, and coming back at the line o
 **⚠️ The IIHF's third option is a stop, and step 1 below says do not stop. Those are two different moments, not a disagreement.** Step 1 is scoped to approaching the line **alone or outnumbered**, where you are not going to out-stop the coverage. The IIHF's is scoped to an attacker already cut off from the net by one defender — and the manual attaches its own limit to it, in a separate *Quick Stop* entry: it works *"if the defender is not able to stop as quickly"*, and *"against a skilled defender, it will be necessary for the puck carrier to move laterally with the puck immediately after the quick stop in order to gain the necessary space."* Read step 1 with its scope attached, not as a flat rule about stopping.
 
 ### How to do it
-
-![](diagram:entry-delay-curl)
 
 ```facts
 Never: Stop when approaching the line alone or outnumbered — stopping there ends the entry
@@ -469,6 +467,8 @@ Action: Attack the line again with the puck on whoever has the best angle and th
 3. **Look back up ice** while you curl. Your eyes go to where support is coming from, not to the defender.
 4. **Slow the play** deliberately for one or two seconds, which is how long it takes your late support to arrive at speed.
 5. **Attack the line again** with the puck now in the hands of whoever has the best angle and the most speed — often not you.
+
+![](diagram:entry-delay-curl)
 
 ### Why it works
 
@@ -502,8 +502,6 @@ A **drop pass** is a pass backwards, usually left behind you as you cross paths 
 
 ### How it works
 
-![](diagram:entry-drop-pass)
-
 ```facts
 Action: Attack the line to draw the defenders' eyes and weight, then leave the puck in the space the trailer is skating into
 Technique: Drop to a space, not to a stick — you leave the puck, the receiver skates onto it
@@ -513,6 +511,8 @@ Options: On the power play, attack straight at the first penalty killer to freez
 ```
 
 The carrier attacks the line, drawing the defenders' eyes and weight toward the puck. A teammate arrives from behind and slightly to one side. The carrier leaves the puck stationary or gently rolling into the space the trailer is skating into, then keeps going — hard — into the zone as though they still have it.
+
+![](diagram:entry-drop-pass)
 
 Three things make it work:
 
@@ -559,8 +559,6 @@ Putting the puck in without possession is not one play. It is at least five, and
 
 ### 1. The hard rim
 
-![](diagram:dump-hard-rim)
-
 ```facts
 Action: Fire the puck low and hard around the boards, following the curve of the corner, onward in the direction of play
 Read: Pressure on you from the inside, and a teammate coming down the far wall or the far corner
@@ -571,14 +569,14 @@ Risk: Too soft and it dies behind the net; too hard and it comes off the far boa
 
 Fire the puck low and hard around the boards, following the curve of the corner, so it travels **onward around the boards** in the direction of play.
 
+![](diagram:dump-hard-rim)
+
 - **The read:** pressure is on you from the inside, and you have a teammate coming down the far wall or the far corner.
 - **Why:** the rim beats the defenceman who is stepping up on you, and it arrives at the far side before their partner can rotate.
 - **Careful:** a rim is not a **reverse**. A reverse goes *back against the flow* of the play, behind you, and it is a different play with a different purpose. Be precise about which one you are calling for.
 - **Risk:** a rim that is too soft dies behind the net; a rim that is too hard comes off the far boards straight to the weak-side defenceman.
 
 ### 2. The soft area dump
-
-![](diagram:dump-soft-area)
 
 ```facts
 Action: Place the puck gently into a specific area, usually a corner, so it dies there rather than rebounding
@@ -589,13 +587,13 @@ Never: Use it when your chaser is four seconds away — you have just given the 
 
 Place the puck gently into a specific area — usually a corner — so that it dies there rather than rebounding.
 
+![](diagram:dump-soft-area)
+
 - **The read:** you have a forechecker arriving in roughly two seconds, and the defence has to turn and retrieve.
 - **Why:** the value is entirely in the race. A soft dump gives your chaser a stationary puck and a body arriving on it, and gives the retrieving defenceman no help from the puck's momentum.
 - **When it's wrong:** when your chaser is four seconds away. Then you have just given the puck to their defenceman with time.
 
 ### 3. The chip past a defenceman stepping up
-
-![](diagram:dump-chip-past)
 
 ```facts
 Read: A defender committing hard and early, with space behind them on the wall
@@ -609,6 +607,8 @@ The defenceman steps up to meet you at or before the line. You lift or push the 
 
 **A chip past a defenceman stepping up is a possession play, not a surrender.** You are not giving the puck up; you are using the defender's own momentum against them. They are moving toward you; the puck is going behind them; you are going around them. If your feet are moving, you get it back and you are behind their defence with speed.
 
+![](diagram:dump-chip-past)
+
 - **The read:** a defender committing hard and early, and space behind them on the wall.
 - **The technique:** chip it early, off the boards if you need to lift it over a stick, and change your line **before** you release so you are already accelerating around them.
 - **Why it's under-used:** it requires you to give up the puck for a second while going full speed at someone, which feels wrong. It is one of the highest-value plays available against an aggressive gap.
@@ -616,8 +616,6 @@ The defenceman steps up to meet you at or before the line. You lift or push the 
 Note the terminology: a **pinch** is a defenceman stepping down from the *offensive* blue line. A defenceman challenging you in the neutral zone or at their own line is **stepping up**. Both are commonly called pinches in conversation; be precise when you are describing what happened.
 
 ### 4. The cross-corner (north-south) dump
-
-![](diagram:dump-cross-corner)
 
 ```facts
 Action: Shoot the puck hard diagonally into the far corner, or straight north down your own side, depending on where your speed is
@@ -628,13 +626,13 @@ Never: Dump cross-corner into nobody — your far-side winger has to have read i
 
 From one side of the ice, shoot the puck hard **diagonally** across into the far corner, or straight north down your own side depending on where your speed is.
 
+![](diagram:dump-cross-corner)
+
 - **The read:** the retrieving defenceman is on your side, or the strong-side corner is crowded.
 - **Why:** it moves the puck away from the defender best placed to get it and forces their weak-side defenceman into a long retrieval on their backhand, facing his own boards, with a forechecker arriving behind them. That is an awkward retrieval by design; which retrievals are hardest is coaching judgement rather than a counted ranking.
 - **What you need:** your far-side winger to have read it and be going there. Cross-corner dumps into nobody are pure giveaways.
 
 ### 5. The flip / area dump over a trap
-
-![](diagram:dump-flip-over-trap)
 
 ```facts
 Read: The opposition congesting the neutral zone — a trap, most commonly a 1-3-1 — and no route along the ice
@@ -651,13 +649,13 @@ Rule: 🇬🇧 A British kill keeps the icing exemption, but that does not make 
 
 Lift the puck high off the ice so it travels over sticks and bodies and lands in open space behind the defence.
 
+![](diagram:dump-flip-over-trap)
+
 - **The read:** the opposition are congesting the neutral zone — a **trap**, most commonly a **1-3-1** neutral zone structure with one forechecker, three players across the middle and one back — and there is no route along the ice.
 - **Why:** a flip does not have to get through the three-man wall; it goes over it. It also hangs long enough for your forwards to run underneath it.
 - **How:** open the blade, get under the puck, and aim to land it **past** the defence but **before** the goal line so it does not carry through for icing. Beware: a puck crossing the goal line untouched from behind the centre red line is **icing**. ⚠️ **Being shorthanded does not always save you.** USA Hockey grants that exemption *"(For all Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)"* (Rule 624(b)(1)), so at 14U and Girls 14U and below a shorthanded team is called for icing like anyone else; and NHL Rule 81.6 withdraws it from a team short by a *major* that has *"neglected to ensure there is a player on the penalty bench to exit upon the expiry of the penalty"* — *"Icing will be called."* **Read that limb to the end, because it bites at one moment only — the expiry — and then lifts at the next whistle:** *"[t]hey may substitute for this penalized player at the next stoppage of play"* — the same limit Rule 20.3 puts on the skater you are down. Rule 20.3 lets a team whose penalised player has been removed from the game or injured wait — it *"does not have to place a substitute player on the penalty bench immediately, but must do so at a stoppage of play prior to the expiration of the major penalty"* — so for most of a five-minute major the box may sit legitimately empty and the exemption still holds. ⚠️ **Not in every case, though: where that player also has minor penalties running on the clock alongside the major, the same rule requires the substitute *"immediately"*.** **The relief written into the same rule runs your way, too.** Icing on an expiring penalty is judged *"at the instant the penalty expires"*, and *"[s]hould the puck be released from the stick of the player shooting the puck down the ice prior to the penalty expiring, the icing infraction shall not apply"* (NHL 81.6; USA Hockey 624(b)(1) says the same in its own words, judging it *"at the time the penalty expires"* rather than *"at the instant"* — but it says so **inside that same classification-limited clause**, so the relief stops where the exemption does). **With two seconds left on the kill, fire it — if the exemption reaches your classification.** 🇬🇧 **Neither carve-out reaches a British reader.** IIHF Rule 81.6 runs to two paragraphs and stops — no major-penalty paragraph, no classification limit — so under the book British hockey is played on, both the exemption and that relief hold. ⚠️ **Read that as a deadline rather than an amnesty, though, because an empty penalty box is not free under the IIHF either.** Where NHL Rule 20.3 lets that team wait for a stoppage, **IIHF Rule 20.3 allows no delay at all** — the offending team *"must place a substitute in the penalty box immediately"* — and its **Rule 68.2** treats a failure as an illegal substitution *"calling for a bench minor penalty."* **The NHL's own 68.2 closes with that same sentence, so what divides the two books here is the deadline rather than the price** — and a whistle while the major is still running makes it a 5-on-3, the two minutes landing on a kill already down to four skaters. See the [Rules Primer](../foundation/rules_primer.md) for the full icing rule, including hybrid icing, and [Special Teams](special_teams.md) for the operative wording in all five books and the head count the exemption actually turns on.
 
 ### How the trapezoid shapes where you aim
-
-![](diagram:dump-and-the-trapezoid)
 
 ```facts
 Rule: Under the NHL and IIHF books a goalkeeper may not play the puck outside the designated area behind the net — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
@@ -687,6 +685,8 @@ So: **the corners are legally out of bounds for the goaltender, and the area dir
 That gives you a simple aiming rule where the trapezoid applies. **Dump to the corners, not to the goalie.** A puck that dies straight behind the net is a puck the goalie can legally stop and set for his defenceman, which is exactly the help you were trying to deny him. A puck in the corner has to be retrieved by a skater with a forechecker arriving.
 
 If you must put it behind the net, put it there **hard** — the goalie can play it, but stopping a rocketing puck and distributing it cleanly is a much harder job than corralling a soft one.
+
+![](diagram:dump-and-the-trapezoid)
 
 **Where the trapezoid applies:** the NHL and IIHF play (IIHF Rule 27.7, with the area defined as 6.80 m along the goal line widening to 8.60 m at the boards). **The NHL's commonly given 2005-06 start date is in no rulebook held here** — its Rules 1.8, 27.8 and 63.2(viii) carry no date at all — so treat it as the received date rather than a checked one. **The KHL is commonly said to have one too, though that one is unverified here: no KHL rulebook was available to check it against.** **In England and Wales, treat it as unsettled.** The IIHF book is the one in force and the In-House Rules do not amend Rule 27, in the current 2026-27 edition or the 2025-26 one before it — but England Ice Hockey's own *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"*, and that edition is 2024-25 while both In-House editions are silent on it. For you as the attacking team the safe assumption runs the other way: plan as though their goalie **may** retrieve the puck. Ask your league, and look behind the net to see whether the lines are painted at all. **Neither North American governing body's book has one:** the *USA Hockey Playing Rules 2025-29* and the *Hockey Canada Playing Rules 2026-2028* mark no goalkeeper's restricted area and put no limit on *where* a goalkeeper may play the puck, so a league running on either book has none. **How much rec, beer-league and youth hockey that adds up to is a question about leagues rather than about books, and this document has no count for it.** Where there is no trapezoid a puck-handling goalie can go anywhere behind his goal line, which flips the advice: rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand. **Under either of those books the forecheck still pays, though**, because neither lets their goalkeeper smother a dumped puck out there: USA Hockey Rule 614(c) bars *freezing* it outside the *"goalkeeper's privileged"* area, which excludes the corners, and Hockey Canada's Interpretation 3 to Rule 10.1(a), clause v, assesses a minor with no warning once the goaltender has left the crease. **Both books have a clause written for exactly the play you are making, and both run your way.** Hockey Canada's **clause iv** of the same Interpretation names it: a goaltender who comes out *"to beat an attacking player to the puck and simply jumps on the puck, causing a stoppage of play"* takes a minor, and *"[n]o warning will be issued in this instance."* USA Hockey's *Casebook* works the identical facts at **Rule 614(c), Situation 6** — the goalkeeper rushes a loose puck inside their own privileged area to beat a lone attacker to it and falls on it — and answers **Yes**, a minor, because *"[t]he goalkeeper has an obligation to play the puck with their stick, just like any other player."* **Situation 12** adds the boundary: a cover made *"behind the goal line or outside of the privileged area"* is one where the minor *"must be assessed."* ⚠️ **Do not carry that to a goaltender who came out to make a *save*** — a cover taken after stopping a shot is a different case in both books, and one where the carve-outs run the other way. [Goaltender](../positions/goaltender.md) sets them out. So a dumped puck in the corner still has to be played rather than smothered, and the chase is what forces it. ⚠️ **Forcing it is not licence to hit them, and this part is not scoped to the books without a trapezoid — all four say it in terms.** **USA Hockey Rule 607(d)**: *"A goalkeeper is NOT 'fair game' because they are outside the privileged area. A penalty for interference or charging should be called in every case where an opposing player makes unnecessary contact with a goalkeeper."* **Hockey Canada Rule 8.5** puts it in its own words and stretches it further — *"A Goaltender is not 'fair game' just because they are outside their goal crease. A penalty under this rule will be called where an opposing player makes unnecessary contact with the goaltender anywhere on the ice."* **The IIHF writes it twice.** **Rule 42.1**, inside the charging rule: *"A goalkeeper is not 'fair game' just because they are outside the goal crease area. The appropriate penalty should be assessed in every case where an opposing Player makes unnecessary contact with a goalkeeper."* **Rule 69.4 says it again in words of its own, not word for word** — *"outside the goal crease"* rather than *"the goal crease area"*, and *"an attacking Player"* rather than *"an opposing Player"*, which is the narrower of the two. Neither difference gives you a hit. ⚠️ **That is the sentence a British reader is playing under** — IHUK and BUIHA adopt the IIHF Rule Book *"as the foundation for the rules of the game to be applied in England, Wales, Scotland and Northern Ireland"*, and their In-House Rules amend Rule 69 only as to video review, leaving 42.1 and 69.4 untouched. **NHL 42.1** carries the same sentence in its own pronouns, as *"just because he is outside the goal crease area"*.
 
@@ -828,8 +828,6 @@ Tulsky's group modelled this directly: the carry/dump threshold moves with team 
 
 ### Against a standing-up defence
 
-![](diagram:entry-vs-standing-up)
-
 ```facts
 Read: They hold the blue line, take away the middle, and dare you to go around
 Action: Chip and chase past them — a defenceman standing still has no momentum to recover, so this is the ideal chip situation
@@ -839,6 +837,8 @@ Action: Change the entry point — swing the puck to the far side and enter on t
 ```
 
 They hold the blue line, take away the middle, and dare you to go around.
+
+![](diagram:entry-vs-standing-up)
 
 - **Chip and chase past them.** A defenceman standing still at the line has no momentum to recover. This is the ideal chip situation.
 - **Attack the seam between the two of them.** Two defenders holding a line have a gap between them by definition.
@@ -968,8 +968,6 @@ The traditional approach, often taught as **receiving the entry**: the defenceme
 
 ### More aggressive alternatives — name them
 
-![](diagram:defend-squash-and-slide)
-
 ```facts
 Options: F1 pressure with the D holding the dots — the first forward back pressures the carrier while the defencemen hold their depth
 Options: Squash-and-slide — the defenceman, not the backchecker, forces the carrier outside while the first forward back protects the slot
@@ -981,6 +979,8 @@ Action: Ask, and then talk to your partner about it before the puck drops
 
 - **F1 pressure with the D holding the dots:** the first forward back pressures the carrier while the defencemen hold their depth. Requires the defencemen to talk and to step on the cross-ice pass.
 - **Squash-and-slide** (as described publicly of Bruce Cassidy's Boston Bruins around 2018-19): the defenceman — not the backchecker — forces the carrier outside, while the first forward back protects the slot. The two defencemen hold the same depth and slide across together like a foosball bar, "squashing" the play against the wall if it goes wide and closing in on it if it goes inside. It buys time and space back at the cost of demanding a great deal from the forwards; one lazy backcheck and the weak side is wide open.
+
+![](diagram:defend-squash-and-slide)
 
 **These are systems, not laws.** Which one your team plays changes your job completely — whether you step up, whether you hold the dots, whether the first forward back takes the puck or the slot. Ask, and then talk to your partner about it before the puck drops.
 

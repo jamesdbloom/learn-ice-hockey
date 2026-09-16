@@ -111,15 +111,10 @@ const playingTheAngle = {
   width: 900,
 
   caption:
-    'An opposition shooter has the puck at the top of the right-hand faceoff circle, ' +
-    'with no second attacker to pass to. The shaded wedge running from the puck to the ' +
-    'two goalposts is every straight path from that puck into the net — the whole of ' +
-    'what the shooter has to shoot at. The goaltender is standing on the line from the ' +
-    'puck to the exact centre of the goal line, which is neither the middle of the goal ' +
-    'nor the middle of the ice, and has come out to challenge. A rough ' +
-    'default for this read — one shooter, from distance, no pass available — is the top ' +
-    'of the crease or beyond, but it is a default every goalie coach will ' +
-    'adjust, so treat the depth drawn here as an example of the read and not a measured ' +
+    'An opposition shooter at the top of the right-hand faceoff circle, with no pass available. ' +
+    'The shaded wedge is every straight path from that puck into the net. The goaltender is ' +
+    'standing on the line from the puck to the exact centre of the goal line, at a depth every ' +
+    'goalie coach will adjust — so read it as an example of the read rather than a measured ' +
     'instruction.',
 
   describe:
@@ -194,17 +189,10 @@ const frontDoorBackDoor = {
   width: 900,
 
   caption:
-    'A strong-side shooter has the puck, and a second attacker is standing unmarked on ' +
-    'the far side of the net — the back door. The goaltender is on the line from the puck to the ' +
-    'centre of the goal line but has backed off toward the goal line rather than ' +
-    'challenging, because the read for a pass available across the slot is to ' +
-    'back off: being slightly less square to a shot you can still see beats being ' +
-    'perfectly square to a shot that never comes while the back door is wide open. ' +
-    'How far to back off is a judgement made situation by situation and not a fixed ' +
-    'distance — the trade is always the front door against the back door, and there is ' +
-    'no universally correct answer, only a correct answer for each situation. Nobody is ' +
-    'drawn covering that far-post attacker, because an unmarked opponent there is ' +
-    'exactly what the goaltender’s call of “back door” is for.',
+    'A strong-side shooter, and a second attacker unmarked on the far side of the net — the back ' +
+    'door. With a pass available across the slot the read is to back off rather than challenge, ' +
+    'and the goaltender has. How far is a judgement made situation by situation: the trade is the ' +
+    'front door against the back door, and there is no universally correct answer.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition ' +
@@ -256,18 +244,11 @@ const angleClosesWide = {
   width: 900,
 
   caption:
-    'The puck has gone wide and low, out level with the goal line between the net and ' +
-    'the boards, and the goaltender has come back to the near post. Two things put them ' +
-    'there. The angle closes on its own as the puck moves toward the boards, so depth ' +
-    'buys nothing from out here and only leaves you unable to get back; and finishing a ' +
-    'lateral movement a foot short of the post rather than at it leaves a gap between ' +
-    'your pad and the post for a shooter to pick — the low short-side goal, which goalie ' +
-    'coaches call the cheapest goal in hockey, though that ranking is coaching emphasis ' +
-    'rather than a counted statistic. Closing it does not close the whole short side: ' +
-    'with your body low against the post the space over your shoulder is a separate ' +
-    'exposure, and shooters at higher levels look for it. This is one end of the shallow arc ' +
-    'a goaltender works along — out at the middle, curving back toward the posts as the ' +
-    'puck goes wide — and the arc itself is movement the still picture cannot carry.',
+    'The puck has gone wide and low, level with the goal line, and the goaltender has come back ' +
+    'to the near post. Out there the angle closes on its own, so depth buys nothing and only ' +
+    'leaves you unable to get back. End the lateral movement at the post rather than a foot short ' +
+    'of it — and note that closing the low short side leaves the space over your shoulder still ' +
+    'open.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition ' +
@@ -305,15 +286,11 @@ const failureModes = {
   width: 900,
 
   caption:
-    'Two positions to recognise in your own game, drawn against the same shooter, and ' +
-    'neither of them one to play from — it is the same goaltender drawn twice, at two ' +
-    'opposite extremes. One is hiding deep in the net, where the posts feel ' +
-    'safe and where the corners of the net are open. The other has run at the shooter, ' +
-    'out as far as the hash marks and about twenty feet from the goal line, where the ' +
-    'first pass or the first change of direction beats them. Both are ' +
-    'confidence problems rather than technique problems, so the fix is not a mechanical ' +
-    'one; the position you actually want is a read made situation by situation, out and ' +
-    'square and set at the depth that situation calls for.',
+    'The same goaltender drawn twice, against one shooter, and neither position is one to play ' +
+    'from. One is hiding deep in the net, where the corners are open. The other has run at the ' +
+    'shooter, out level with the hash marks and about twenty feet from the goal line, where the ' +
+    'first pass or the first change of direction beats him. Both are confidence problems rather ' +
+    'than technique problems.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. One opposition ' +
@@ -464,34 +441,18 @@ const safeOutlets = {
   width: 900,
 
   caption:
-    'You have the puck behind your own net and three of your five options are drawn, ' +
-    'ranked by risk. The short pass to your defenceman on the wall on your strong side is ' +
-    'simple, and if it is intercepted it is intercepted below the goal line where it means ' +
-    'less. The rim around the boards to the far winger concedes possession but relieves ' +
-    'pressure, so aim it to arrive where a teammate can meet it. The third runs into the ' +
-    'shaded slot, and it is the one to make almost never: a goalie’s turnover in the middle ' +
-    'of the ice is a shot on an empty net, and you are the one standing in it. Two options ' +
-    'are not drawn because a picture cannot carry them. Leaving the puck for a defenceman ' +
-    'who has time is the lowest-risk option of all and always comes first when it is ' +
-    'available — it is the one where you never touch the puck. And going off the glass and ' +
-    'out is rarely wrong when you are in trouble, but along the glass, never over it: a puck ' +
-    'you shoot directly out of the rink from your own end is a two-minute minor under NHL ' +
-    'and IIHF rules, where USA Hockey’s clause reaches only a deliberate clear. Hockey ' +
-    'Canada writes a limb aimed at you specifically — Rule 10.1, clause v, "a goaltender who ' +
-    'shoots or bats the puck directly out of the playing surface, with their stick" — and it ' +
-    'names no zone at all, so unlike the rule just described it is not confined to your own ' +
-    'end. Read the rule rather than the clause, though. The clause carries no deliberateness ' +
-    'word where the clauses either side of it do, but Rule 10.1 opens by saying delay of game ' +
-    'occurs when a player "deliberately causes a stoppage of play", and calls the list that ' +
-    'follows one that "includes, but is not limited to, the following actions" — so the ' +
-    'deliberateness sits in the rule above rather than in the clause, and the book never says ' +
-    'which reading wins. Treat an accidental clear there as unsettled rather than as free, ' +
-    'and keep the puck in the rink. Its Interpretation 5 gives you back the puck that touches the glass, the ' +
-    'one that deflects off a player or an official, and the one sent out where there is no ' +
-    'glass, such as over a bench. Whether you ' +
-    'play the puck at all is your team’s convention rather than a law — some coaches want ' +
-    'the goalie handling everything they legally can and others want you to touch nothing. ' +
-    'Ask, and then be consistent.',
+    'You have the puck behind your own net and three of your five options are drawn, ranked by ' +
+    'risk: the short pass to your defenceman on the wall, the rim around the boards to the far ' +
+    'winger, and the one to make almost never — the pass into the shaded slot, where a goalie’s ' +
+    'turnover is a shot on an empty net you are standing in. Two more cannot be pictured. Leaving ' +
+    'the puck for a defenceman who has time is the lowest-risk option of all. And going off the ' +
+    'glass and out is rarely wrong when you are in trouble, but along the glass, never over it. A ' +
+    'puck you shoot directly out of the rink from your own end is a two-minute minor under NHL ' +
+    'and IIHF rules, where USA Hockey’s clause reaches only a deliberate clear; Hockey Canada’s ' +
+    'Rule 10.1, clause v, writes a limb aimed at goaltenders specifically and names no zone at ' +
+    'all, and whether an accidental clear is caught by it is unsettled rather than free. Whether ' +
+    'you play the puck at all is your team’s convention rather than a law. Ask, and then be ' +
+    'consistent.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the goaltender ' +
@@ -561,58 +522,46 @@ const rimStopOrClear = {
   width: 900,
 
   caption:
-    'A puck rimmed hard around the boards is coming behind your net, and the shaded area is ' +
-    'the trapezoid — the marked area behind the goal line inside which you are allowed to ' +
-    'play it. Follow the rim: it crosses the goal line out near the boards, well outside ' +
-    'that area, and only then comes into it. Inside, the most useful thing you can do is ' +
-    // ⚠️ FULL STOP, NOT AN EM DASH. This ran "…is often not a pass at all — kill it dead, leave
-    // it for your defenceman, and call 'leave it' early", and the em dash opened onto three
-    // imperatives with the negation still live: a listener can hear "not kill it dead, not leave
-    // it for your defenceman", which pushes a goaltender into playing a puck the sentence exists
-    // to tell them to kill. Same shape the style guide records for a second em dash after a
-    // "Never" label. Punctuation only.
-    'often not a pass at all. Kill it dead, leave it for your defenceman, and call "leave ' +
-    'it" early, while they are still coming back rather than as they arrive. You have turned ' +
-    'a race into a pickup. Out where it crossed the line, get out of the way and let them ' +
-    'have it. Under the IIHF book that is not caution, it is the ' +
-    // ⚠️ DO NOT reintroduce the phrase "restricted area" into this sentence. The
-    // Situation Handbook uses it for the ice behind the goal line you are BARRED
-    // from, and the Rule Book uses it for the trapezoid ITSELF — Rule 1.8 is headed
-    // "Goalkeeper's Restricted Area". content/positions/goaltender.md:612 flags the
-    // clash in terms. A first draft of this caption wrote "blocks a pass inside the
-    // restricted area" and a listener with no picture would have taken it to mean a
-    // pad in the way INSIDE the trapezoid is a minor, which is the rule inverted.
-    'rule: its Situation Handbook answers a goaltender who drops and blocks a pass with the ' +
-    'leg pads out beyond that shaded area with a delay-of-game minor, so a pad in the way ' +
-    'counts as playing the puck. Under the NHL book, whether a deliberate body block counts ' +
-    'as playing it is this document’s reading rather than a quoted interpretation. In front ' +
-    'of the goal line, and behind it inside the shaded area, blocking a rim with your pads is ' +
-    'completely legal. One exception belongs to this rule and to no other: no penalty is ' +
-    'assessed when you play the puck while keeping skate contact with your crease, and it ' +
-    'excuses playing the puck rather than freezing it. Where a trapezoid applies is not ' +
-    'universal — the NHL and IIHF play have one, neither the USA Hockey nor the Hockey ' +
-    'Canada book marks one at all, and England Ice Hockey’s own regulations say it is "not ' +
-    'currently enforced" in England and Wales. That edition is 2024-25 and the current ' +
-    'In-House Rules are silent on the point, so the published documents do not settle ' +
-    // ⚠️ FULL STOP, NOT A COLON. "…do not settle whether the suspension still stands: assume
-    // it binds, ask your league…" puts a MAIN-CLAUSE negation immediately before the colon and
-    // three bare imperatives after it, so a listener can hear "don't assume it binds, don't ask
-    // your league". Inverted, that tells a goaltender to assume the restriction does NOT bind
-    // and to play the puck where they may not — a delay-of-game minor. "Assume it binds" is the
-    // conservative half of an unsettled question and it must survive being read aloud.
-    'whether the suspension still stands. Assume it binds, ask your league, and look behind ' +
-    'the net to see whether the lines are painted. ' +
-    'And no trapezoid still does not free you to freeze the puck out here — but that is not ' +
-    'one rule, because the two books with no trapezoid draw the freeze on different lines. ' +
-    'Hockey Canada keys it to your crease and is then in two minds: clause v of ' +
-    'Interpretation 3 to Rule 10.1(a) forbids the freeze once you have left the crease, with ' +
-    'no warning, clause ii permits covering a shot you came out and stopped, and the book ' +
-    'never says which governs. USA Hockey keys it to a region instead, and the region ' +
-    'excludes the corner this rim comes through: Rule 614(c) gives the same two minutes for ' +
-    'gathering the puck into your body behind the goal line with your body entirely outside ' +
-    'the crease, and again anywhere outside its "goalkeeper’s privileged" area — imaginary ' +
-    'lines joining the two end-zone faceoff spots and running back from each of them to the ' +
-    'end boards.',
+    'A puck rimmed hard around the boards is coming behind your net, and the shaded area is the ' +
+    'trapezoid — the marked area behind the goal line inside which you are allowed to play it. ' +
+    'Follow the rim: it crosses the goal line well outside that area, and only then comes into ' +
+    // ⚠️ FULL STOP, NOT AN EM DASH, in "often not a pass at all. Kill it dead" below. This
+    // ran "…is often not a pass at all — kill it dead, leave it for your defenceman, and call
+    // 'leave it' early", and the em dash opened onto three imperatives with the negation still
+    // live: a listener can hear "not kill it dead, not leave it for your defenceman", which
+    // pushes a goaltender into playing a puck the sentence exists to tell them to kill. Same
+    // shape the style guide records for a second em dash after a "Never" label. It survived the
+    // 2026 length cut deliberately; do not restore the dash.
+    'it. Inside, the most useful thing you can do is often not a pass at all. Kill it dead, leave ' +
+    'it for your defenceman, and call "leave it" early. Out where it crossed the line, get out of ' +
+    // ⚠️ DO NOT reintroduce the phrase "restricted area" into the IIHF sentence below. The
+    // Situation Handbook uses it for the ice behind the goal line you are BARRED from, and the
+    // Rule Book uses it for the trapezoid ITSELF — Rule 1.8 is headed "Goalkeeper's Restricted
+    // Area". content/positions/goaltender.md flags the clash in terms. A first draft of this
+    // caption wrote "blocks a pass inside the restricted area" and a listener with no picture
+    // would have taken it to mean a pad in the way INSIDE the trapezoid is a minor, which is the
+    // rule inverted.
+    'the way and let them have it. Under the IIHF book that is not caution, it is the rule: its ' +
+    'Situation Handbook answers a goaltender who drops and blocks a pass with the leg pads out ' +
+    'beyond that shaded area with a delay-of-game minor, so a pad in the way counts as playing ' +
+    'the puck. Under the NHL book, whether a deliberate body block counts as playing it is this ' +
+    'document’s reading rather than a quoted interpretation. In front of the goal line, and ' +
+    'behind it inside the shaded area, blocking a rim with your pads is completely legal. Where a ' +
+    'trapezoid applies is not universal — the NHL and IIHF play have one, neither the USA Hockey ' +
+    'nor the Hockey Canada book marks one at all, and England Ice Hockey’s 2024-25 regulations ' +
+    'say it is "not currently enforced" in England and Wales, which the current In-House Rules do ' +
+    // ⚠️ FULL STOP, NOT A COLON, before "Assume it binds" below. "…do not settle whether the
+    // suspension still stands: assume it binds, ask your league…" puts a MAIN-CLAUSE negation
+    // immediately before the colon and three bare imperatives after it, so a listener can hear
+    // "don't assume it binds, don't ask your league". Inverted, that tells a goaltender to assume
+    // the restriction does NOT bind and to play the puck where they may not — a delay-of-game
+    // minor. "Assume it binds" is the conservative half of an unsettled question and it must
+    // survive being read aloud.
+    'not settle. Assume it binds, ask your league, and look behind the net to see whether the ' +
+    'lines are painted. And no trapezoid still does not free you to freeze the puck out here: ' +
+    'Hockey Canada keys that to your crease and its own interpretation is in two minds about it, ' +
+    'and USA Hockey Rule 614(c) keys it to a "goaltender’s privileged" area that excludes the ' +
+    'corner this rim comes through.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. The area behind the goal ' +
@@ -681,22 +630,13 @@ const breakawayRetreat = {
   width: 900,
 
   caption:
-    'One attacker, you, and a lot of time to think — which is the actual difficulty. The ' +
-    'answer drawn here is to meet them well out and then back in on C-cuts, matching their ' +
-    'speed so the angle stays closed the whole way, rather than standing still at the top of ' +
-    'the crease and letting them pick a corner, or charging out and letting them go around ' +
-    'you. Keep a little backward motion the whole time: flow means you can react either way, ' +
-    'and flat-footed means you can react to nothing. Stay on your feet as long as you ' +
-    'possibly can, because their whole plan is to make you commit and the last one to move ' +
-    'wins. How far out "well out" is is a read rather than a distance, and this document ' +
-    'gives no figure for it, so treat the position drawn here as an example and not a ' +
-    'measured instruction. What to watch is a genuine coaching split: one school says watch ' +
-    'the puck and treats everything above it as theatre, and another says the puck is exactly ' +
-    'what a shooter fakes with and asks you to read the chest and hips instead. The two agree ' +
-    'on what they are against — the stick, the eyes and the shoulders. Ask your goalie coach ' +
-    'which they teach and be consistent about it, because switching mid-play is how you end ' +
-    'up reading neither. The poke check is available if the puck gets too far in front of ' +
-    'them, and it is expensive: miss and you have neither reach nor balance.',
+    'One attacker, you, and a lot of time to think — which is the actual difficulty. The answer ' +
+    'drawn here is to meet them well out and then back in on C-cuts, matching their speed so the ' +
+    'angle stays closed the whole way, keeping a little backward motion throughout and staying on ' +
+    'your feet as long as you possibly can. How far out "well out" is is a read rather than a ' +
+    'distance and this document gives no figure for it, so treat the position drawn as an ' +
+    'example. What to watch is a genuine coaching split — the puck, or the chest and hips — so ' +
+    'ask your goalie coach which they teach and be consistent about it.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. One opposition forward ' +
@@ -763,22 +703,15 @@ const readingATip = {
   width: 900,
 
   caption:
-    'A shot is coming from the point and an opposition forward is set in the shooting lane ' +
-    'with his blade on the ice. Watch the sticks and not just the puck: a forward standing ' +
-    'there makes every point shot a probable tip, and a tip changes the puck’s direction a ' +
-    'few feet in front of you, where no reflex is fast enough to follow it. So you do not ' +
-    'try. Stay tall and patient for as long as you can, because a tip that stays low will hit ' +
-    'you if you are big and set, and a tip that goes up will not if you are already down. ' +
-    'Your best chance is being in the right place with a wide body and a still head, not a ' +
-    'heroic reaction. Getting that forward moved is your defenceman’s job, and shouting for ' +
-    'it is yours. Two things this picture cannot show you. The forward is drawn further out ' +
-    'from the goalmouth than he would really stand, because two player glyphs will not fit ' +
-    'in the few feet of ice between a tipper and a goaltender. And the depth the goaltender ' +
-    'is drawn at is a consequence of what fits on the page rather than an instruction: how ' +
-    'deep to play a screened shot from distance is a genuine coaching split, one school ' +
-    'wanting you deeper for time to find the puck and another calling the deep retreat a ' +
-    'common error and wanting a close gap to take away room for the puck and for tips. Ask ' +
-    'which one your coach teaches before you pick one.',
+    'A shot coming from the point with an opposition forward set in the shooting lane, blade on ' +
+    'the ice: watch the sticks, because a forward standing there makes every point shot a ' +
+    'probable tip, and a tip changes direction a few feet in front of you where no reflex can ' +
+    'follow it. Stay tall and patient for as long as you can rather than dropping early. Two ' +
+    'things the picture cannot show. The forward is drawn further out than he would really stand, ' +
+    'because two glyphs will not fit in the few feet of real ice between a tipper and a ' +
+    'goaltender. And the goaltender’s depth is a consequence of what fits on the page rather than ' +
+    'an instruction, because how deep to play a screened shot from distance is a genuine coaching ' +
+    'split — so ask which one your coach teaches.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
@@ -840,22 +773,12 @@ const reboundCornersNotSlot = {
   width: 900,
 
   caption:
-    'A shot is on its way from the point, and an opposition forward is standing in the ' +
-    'shaded slot waiting for what comes off you. A save that produces a rebound into that ' +
-    'area has not really been a save; it has converted a shot from distance into a shot from ' +
-    'six feet. When you cannot absorb the puck you have to aim it, and the target is the ' +
-    'corners — wide and low toward the boards, below the goal line if you can, where nobody ' +
-    'is standing and where the puck becomes a battle rather than a chance. Only the area to ' +
-    'avoid is marked here; the corners are named in words rather than measured out. ' +
-    'You aim by angling your surfaces: a pad or blocker ' +
-    'turned even slightly changes where the puck goes, so on a shot to your blocker side ' +
-    'rotate the blocker so its face points at the corner rather than back up the ice. The ' +
-    'half that actually decides it is mental and happens before the shot. Look off the puck ' +
-    'while it is still on the shooter’s blade and register who is where, and be specific ' +
-    'about it — not "there’s a guy open" but "there’s a left shot open at the back post". ' +
-    'That detail tells you both which save to select and where the rebound must not go. ' +
-    'Nothing is drawn coming off the goaltender, because the rebound itself has no symbol in ' +
-    'the notation this corpus uses.',
+    'A shot is on its way from the point, and an opposition forward is standing in the shaded ' +
+    'slot waiting for what comes off you. A save that puts a rebound into that area has converted ' +
+    'a shot from distance into a shot from six feet. When you cannot absorb the puck you have to ' +
+    'aim it, and the target is the corners — wide and low toward the boards, named in words here ' +
+    'because only the area to avoid is marked. Know who is where before the shot, and be specific ' +
+    'about it.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
@@ -917,25 +840,18 @@ const fiftyFiftyPuck = {
   width: 900,
 
   caption:
-    'This is the picture the section exists to stop you making. A loose puck is in the corner ' +
-    'and you have left your net for it, and the forechecker is closer to it than you are — so ' +
-    'look at where your net is. The best puck-handling decision a goalie makes is usually to ' +
-    'leave the puck alone, and the first rule is not to leave your net for a fifty-fifty ' +
-    'puck: if you lose the race, the net is empty and you are behind the play. The rulebook ' +
-    'anticipates it as well. Racing out of your crease to beat an attacker to a loose puck ' +
-    'and then jumping on it instead of playing it is a two-minute minor under NHL and IIHF ' +
-    'Rule 63.2(vi). That is not a reason to hesitate over a puck you have already stopped — ' +
-    'both books attach a note to the same clause saying that coming out to cut down the ' +
-    'angle, making the save and then covering the puck is legal, and Hockey Canada permits ' +
-    'it at clause ii of Interpretation 3 to Rule 10.1(a). Hockey Canada is not settled, ' +
-    'though: clause v of that same interpretation says a goaltender who leaves their crease ' +
-    'will not be allowed to freeze the puck at all, and the book nowhere says which of the ' +
-    'two governs a cover made after a save outside the crease, so treating clause ii as the ' +
-    'exception is a reading and not a ruling. The puck here is in front of the goal line, so nothing ' +
-    'about the trapezoid is in play; this is only the race. And if you do commit, commit — ' +
-    'the worst outcome of all is starting for the puck, changing your mind, and leaving both ' +
-    'of you out of position. Call "I’ve got it" and mean it. A goalie who handles the puck ' +
-    'well is a real asset; a goalie who believes they handle it well is a liability.',
+    'A loose puck in the corner, you out of your net for it, and the forechecker closer to it ' +
+    'than you are — so look at where your net is. The first rule is not to leave your net for a ' +
+    'fifty-fifty puck. If you lose the race the net is empty and you are behind the play. The ' +
+    'rulebook anticipates it as well: racing out of your crease to beat an attacker to a loose ' +
+    'puck and then jumping on it instead of playing it is a two-minute minor under NHL and IIHF ' +
+    'Rule 63.2(vi). Both books attach a note to that clause saying that coming out to cut down ' +
+    'the angle, making the save and then covering the puck is legal, and Hockey Canada permits it ' +
+    'at clause ii of Interpretation 3 to Rule 10.1(a) — though clause v of that same ' +
+    'interpretation says a goaltender who leaves their crease will not be allowed to freeze the ' +
+    'puck at all, and the book nowhere says which governs. The puck here is in front of the goal ' +
+    'line, so nothing about the trapezoid is in play; this is only the race. And if you do ' +
+    'commit, commit.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, and the net has nobody in ' +

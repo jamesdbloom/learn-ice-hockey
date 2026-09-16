@@ -189,29 +189,19 @@ const dzoneAlignmentOtherCircle = {
   width: 900,
 
   caption:
-    'The same defensive-zone alignment as the diagram above it, drawn at the other ' +
-    'end-zone circle. Nothing about the job has changed: the boards-side winger is still ' +
-    'on the wall, the inside winger still about five feet off the middle of the ice, the ' +
-    'boards-side defenceman still nearer the goal line than his winger, and the slot ' +
-    'defenceman and the goaltender stand where they stood, because those two are in the ' +
-    'same place for a draw at either circle. What has changed is which side of the ice ' +
-    'each of them is on. That is why this document says boards-side and inside rather ' +
-    'than left and right: a player who learns "the winger on my left" has learned it ' +
-    'wrong at one of the two circles, and which circle is on your left depends on which ' +
-    'net you are defending and which way you are facing. The alignment itself is a ' +
-    'coaching choice, not a rule, and this is the one that goes with a low zone collapse ' +
-    '— find out what your team runs. ' +
+    'The same alignment at the other end-zone circle. Every job is unchanged, and the slot defenceman' +
+    ' and the goaltender stand in the same place at either circle; what changes is which side of the ' +
+    'ice each of the others is on. The alignment is a coaching choice, not a rule — find out what ' +
+    'your team runs. ' +
     // ⚠️ THE SHADED CIRCLE IS A CLAIM, AND IT NEEDED ITS CAVEAT. This diagram draws the
     // same no-skate-inside zone as its twin and asserted the same thing about it with
     // none of the twin's four-book warning. `dzoneCleanLoss` and `dzoneTieUp` omit that
     // warning too, but they draw NO shaded zone, so they were never a precedent for
     // dropping it here. A reader who meets this picture alone — a deep link, a search
     // result, a screen reader taking one figure — got an absolute-sounding rule.
-    'The shaded circle is the part that is a rule rather than a choice: everyone but the ' +
-    'two takers stays outside it. ⚠️ What counts as outside is not the same in all four ' +
-    'books — the diagram above carries the split, and touching the line is legal under ' +
-    'some of them and encroachment under others, so do not carry one league’s answer ' +
-    'into another.',
+    'The shaded circle is the rule rather than the choice: everyone but the two takers stays outside ' +
+    'it. ⚠️ What counts as outside is not the same in all four books — the diagram above carries that' +
+    ' split.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the ' +
@@ -255,24 +245,17 @@ const dzoneAlignment = {
   width: 900,
 
   caption:
-    'A defensive-zone draw in your own end, frozen at the instant before the puck is dropped, ' +
-    'drawn at the right-hand circle. On the ice the boards-side defenceman stands outside his ' +
-    'winger as well as behind him, nearer the boards — but the winger drawn here is already ' +
-    'within a foot of them, leaving no room outboard of him for a second player, so that offset ' +
-    'is stated in these words rather than drawn. ' +
-    'Where the wingers and defencemen stand is a coaching choice and not a rule — the alignment ' +
-    'drawn is ' +
-    'the one that goes with a low zone collapse behind a 2-1-2 ' +
-    'forecheck, and every team’s alignment differs, so find out what yours runs before your ' +
-    'first shift. ' +
-    'The shaded circle is the part that is a rule: every player other than the two taking the ' +
-    'draw must keep both skates outside the circle and outside the hash marks. ' +
-    '⚠️ Whether touching the line is safe is not the same in every book. Do not carry one ' +
-    'book’s answer into another league. Under the NHL and the IIHF, Rule 76.7, skate contact ' +
-    'with the line is permitted and it is crossing it that is illegal. Hockey Canada counts a ' +
-    'skate on the face-off circle as encroachment, and USA Hockey’s Casebook requires all ' +
-    'sticks and all skates completely behind the hash marks. Keep your skates and your stick ' +
-    'behind your own hash mark, and your hands and body off the opponent beside you, and you are ' +
+    'A defensive-zone draw frozen before the drop, at the right-hand circle. The boards-side ' +
+    'defenceman stands nearer the boards than his winger as well as behind him; there is no room in ' +
+    'the picture to draw it. Where everyone stands is a coaching choice and not a rule — this ' +
+    'alignment goes with a low zone collapse, and every team’s differs, so find out what yours runs. ' +
+    'The shaded circle is the part that is a rule: every player other than the two taking the draw ' +
+    'must keep both skates outside the circle and outside the hash marks. ⚠️ Whether touching the ' +
+    'line is safe is not the same in every book. Under the NHL and the IIHF, Rule 76.7, skate contact' +
+    ' with the line is permitted and it is crossing it that is illegal; Hockey Canada counts a skate ' +
+    'on the face-off circle as encroachment; and USA Hockey’s Casebook requires all sticks and all ' +
+    'skates completely behind the hash marks. Keep your skates and your stick behind your own hash ' +
+    'mark, and your hands and body off the opponent beside you, and you are ' +
     // ⚠️ This said "...and you are legal in all four books." as a SUFFICIENCY claim, which
     // NHL and IIHF 76.7(iii) do not support: "Any physical contact with an opponent prior to
     // the puck being dropped" is a violation in its own right, and the remedy falls on your
@@ -280,8 +263,7 @@ const dzoneAlignment = {
     // faceoffs.md:361 -- so the caption contradicted the corpus in the voiced layer, inside
     // winger.md itself, where both are read aloud.
     'legal in all four books — and under the NHL and IIHF any physical contact with an opponent ' +
-    'before the drop is a ' +
-    'violation in its own right (NHL and IIHF 76.7(iii)).',
+    'before the drop is a violation in its own right (NHL and IIHF 76.7(iii)).',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +
@@ -329,23 +311,14 @@ const dzoneCleanLoss = {
   width: 900,
 
   caption:
-    'The same defensive-zone alignment on a clean loss. Both wingers release straight to the ' +
-    'opposing points, and they go on the drop rather than after they see where the puck went — ' +
-    'it is the only thing standing between you and a shot from the top of the circle with your ' +
-    'goaltender screened. The boards-side winger takes the near point; the inside winger has the ' +
-    'harder job and must get all the way to the far one. ' +
-    'That call belongs to zone coverage: under man-to-man coverage ' +
-    'each winger instead takes the specific opponent he was assigned before the draw and follows ' +
-    'him, which may mean staying low, and a hybrid keeps the wingers releasing while the low ' +
-    'defender stays glued to a body — so ask which one your team plays. ' +
-    'Nobody else moves yet: the centre picks up the man who beat him, the slot defenceman holds ' +
-    'the net front and does not chase the puck to the point, and the boards-side defenceman ' +
-    'takes the strong-side corner or half-wall. Three of their players are drawn and all three ' +
-    'are solid: the centre who won the draw, and the two point men your wingers are racing to. ' +
-    'Your five skaters are the open glyphs, and your goaltender is the bare G in the crease — ' +
-    'a goaltender is drawn as a bare letter here, so he is the one glyph the ' +
-    'open-and-solid rule does not reach. Same alignment as the diagram beside this one, with ' +
-    'the draw lost.',
+    'A defensive-zone draw lost clean. Both wingers release to the opposing points on the drop rather' +
+    ' than after they see where the puck went — the boards-side winger to the near point, the inside ' +
+    'winger the harder job, all the way to the far one. That is the zone call: under man-to-man each ' +
+    'winger instead takes the specific opponent he was assigned before the draw and follows him, ' +
+    'which may mean staying low, and a hybrid keeps the wingers releasing while the low defender ' +
+    'stays glued to a body — so ask which one your team plays. Nobody else moves yet: the centre ' +
+    'picks up the man who beat him, the slot defenceman holds the net front rather than chasing the ' +
+    'puck to the point, and the boards-side defenceman takes the strong-side corner or half-wall.',
 
   describe:
     'The same defensive-zone draw as the previous diagram, your own net at the right. Two ' +
@@ -456,17 +429,12 @@ const dzoneTieUp = {
   width: 900,
 
   caption:
-    'The same defensive-zone draw on a tie-up, which is the most likely of the three outcomes — ' +
-    'a coaching estimate rather than a counted figure. ' +
-    'A tied-up draw is a loose puck in a two-foot area with eight players around it, and it ' +
-    'belongs to whoever moves first — this is the single most under-coached moment in hockey, ' +
-    'coaching observation rather than a counted ranking, and it shows: players wait to see ' +
-    'what happens instead of moving on the drop. ' +
-    'Everyone jumps; the two arrows are the inside winger and the boards-side defenceman, who in ' +
-    'this alignment are usually the two closest bodies and so should be the two who attack it. ' +
-    'Which two are nearest depends on the alignment your team actually runs, and the one drawn ' +
-    'here is a coaching default rather than a rule. Whoever has eyes on the puck calls it: ' +
-    '"Loose!"',
+    'A defensive-zone draw on a tie-up, which is the most likely of the three outcomes — a ' +
+    'coaching estimate rather than a counted figure. A tied-up draw is a loose puck in a two-foot ' +
+    'area with eight players around it, and it belongs to whoever moves first. The two arrows are the' +
+    ' inside winger and the boards-side defenceman, usually the two closest bodies in this alignment ' +
+    '— which is a coaching default rather than a rule, so which two are nearest depends on what your ' +
+    'team actually runs. Whoever has eyes on the puck calls it: "Loose!"',
 
   describe:
     'The same defensive-zone draw, your own net at the right, at the instant the two centres ' +
@@ -509,18 +477,11 @@ const ozoneAlignment = {
   width: 900,
 
   caption:
-    'An offensive-zone draw, frozen before the drop, at the right-hand circle. Both defencemen ' +
-    'are up at the points — the area just inside the blue line, not the line itself. The ' +
-    'strong-side one is on the draw side with his feet already set and his stick already ' +
-    'loaded, because he is the shooter; the weak-side one is at the far point, ' +
-    'holding the line as the safety against a counterattack. The boards-side winger is at the ' +
-    'outer hash marks ready to attack the wall or spin off it, the inside winger at the inner ' +
-    'ones, and the centre is trying to win it back rather than forward. ' +
-    'Set the shape beside the defensive-zone draw and the difference is the whole point: there, ' +
-    'one defenceman stands in the slot in front of his own goaltender, and here both are up at ' +
-    'the points, the weak-side one as the safety, because on a clean loss in the attacking end ' +
-    'the priority flips instantly to not conceding a counterattack. ' +
-    'This is the common default, not a rule; every team’s alignment differs, so ask what yours runs.',
+    'An offensive-zone draw, frozen before the drop, at the right-hand circle. Both defencemen are up' +
+    ' at the points — the area just inside the blue line, not the line itself. The draw-side one is ' +
+    'the shooter, with his feet already set and his stick already loaded; the far one holds the line ' +
+    'as the safety against a counterattack. This is the common default and not a rule; every team’s ' +
+    'alignment differs, so ask what yours runs.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, the draw at the right-hand ' +
@@ -558,18 +519,12 @@ const neutralZoneAlignment = {
   width: 980,
 
   caption:
-    'A neutral-zone alignment, drawn here at centre ice so the whole sheet is visible; you ' +
-    'attack to the right. The centre is in the dot, both wingers are wide in their own lanes ' +
-    'level with or just behind him, and both defencemen are back toward their own blue line, one ' +
-    'either side of the middle, ready to defend a rush if the draw goes the wrong way. ' +
-    'That depth is the shape’s whole argument: these are the lowest-stakes draws and the ones ' +
-    'most worth taking a risk on, because a lost one costs you almost nothing so long as your ' +
-    'defencemen are already gapped up to meet the rush. ' +
-    'On a win, advance the puck immediately and look to carry or pass it in with control: a won ' +
-    'neutral-zone draw that ends in a dump-in has produced very little. That comes from one ' +
-    'author’s tracking of the 2018-19 Swiss National League rather than the NHL, so treat it as ' +
-    'a direction and not as a measurement. ' +
-    'The alignment is a coaching default rather than a rule, and every team’s differs.',
+    'A neutral-zone alignment, drawn at centre ice so the whole sheet is visible; you attack to the ' +
+    'right. Both wingers are wide in their own lanes, level with or just behind the dot, and both ' +
+    'defencemen are back toward their own blue line, one either side of the middle. That depth is the' +
+    ' argument for taking risks here: a lost neutral-zone draw costs you almost nothing so long as ' +
+    'your defencemen are already gapped up to meet the rush. A coaching default rather than a rule, ' +
+    'and every team’s differs.',
 
   describe:
     'The full sheet, your own net at the left, attacking to the right. The draw is at the centre ' +
@@ -616,17 +571,13 @@ const goaliePulled = {
   width: 980,
 
   caption:
-    'An offensive-zone draw with your own goaltender pulled for an extra attacker: your own net, ' +
-    'at the far end of the picture, is empty. Six skaters changes the alignment entirely — the ' +
-    'extra attacker usually goes to the net front, drawn here, or to the high slot, and both ' +
-    'defencemen are at the points. ' +
-    'The centre is under maximum pressure to win it back cleanly, because there is no safe ' +
-    'outlet and no recovery from a loss; the empty ice behind the two defencemen is what a lost ' +
-    'draw plays into. A goaltender may not take part in a faceoff in any case: the NHL and IIHF ' +
-    'books both say so in the same words, at Rule 76.1. ' +
-    'The alignment is a default rather than a rule. The net front is drawn here only because one ' +
-    'of the extra attacker\u2019s two places had to be, and the wingers are on the hash marks as at ' +
-    'any offensive-zone draw, so ask what your team runs with six skaters out.',
+    'An offensive-zone draw with your own goaltender pulled for an extra attacker: your own net, at ' +
+    'the far end of the picture, is empty. The extra attacker is drawn at the net front; the high ' +
+    'slot is his other usual place, and both defencemen are at the points. The centre is under ' +
+    'maximum pressure to win it back cleanly, because there is no safe outlet and no recovery from a ' +
+    'loss. A goaltender may not take part in a faceoff in any case: the NHL and IIHF books both say ' +
+    'so in the same words, at Rule 76.1. The alignment is a default rather than a rule, so ask what ' +
+    'your team runs with six skaters out.',
 
   describe:
     'The full sheet, attacking to the right, the draw at the right-hand end-zone circle in the ' +
@@ -704,15 +655,13 @@ const whereTheDrawGoes = {
   width: 1100,
 
   caption:
-    'Four common stoppages and the faceoff spot each one sends the draw to, drawn on one sheet — ' +
-    'these are four separate situations, not one play, and knowing which spot is coming is what ' +
-    'lets you start skating there before the whistle has finished. Your own end is at the left, ' +
-    'the end you are attacking at the right. ' +
-    'Marked at centre ice: the start of every period, and every draw after a goal. ' +
-    'Marked in your own end: an icing you caused, or a penalty you took. One box is drawn round ' +
-    'one of the two spots there because the rule names the END rather than the dot — under the ' +
-    'NHL and the IIHF the attacking team chooses which of the two, and they will pick the side ' +
-    'their centre is strong on, while USA Hockey gives no choice of dot at all and Hockey Canada ' +
+    'Four common stoppages and the faceoff spot each one sends the draw to, drawn on one sheet — four' +
+    ' separate situations, not one play. Your own end is at the left, the end you are attacking at ' +
+    'the right. Marked at centre ice: the start of every period, and every draw after a goal. Marked ' +
+    'in your own end: an icing you caused, or a penalty you took. One box is drawn round one of the ' +
+    'two spots there because the rule names the END rather than the dot — under the NHL and the IIHF ' +
+    'the attacking team chooses which of the two, while USA Hockey gives no choice of dot at all and ' +
+    'Hockey Canada ' +
     // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
     // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
     // "attacking (non-offending) team" (hc.txt:4857), so in the situation DRAWN it belongs
@@ -721,23 +670,17 @@ const whereTheDrawGoes = {
     // faceoffs.md IN THIS SAME ROUND, and left standing here. The clause immediately above
     // already said "the attacking team chooses" for the NHL and IIHF, so the caption also
     // contradicted itself.
-    'gives it in Junior and Senior divisions only, and gives it to the attacking team — ' +
-    'your opponents, in the situation drawn here — who lose it unless they tell the ' +
-    'referee before the ' +
-    'line change procedure starts. ' +
-    'Marked outside the blue line you were attacking: an offside where the puck was carried over. ' +
-    'A puck SHOT or PASSED over the line offside goes back to the zone the puck came from ' +
-    'instead, which can be your own end — which is why carrying it over and being whistled costs ' +
-    'you far less than firing it over. ' +
-    'Marked in the end you are attacking: a goalie freeze, or any other stoppage between the ' +
-    'end-zone dots and the end boards, which under the NHL and the IIHF draws at the spot on the ' +
-    'side it happened — drawn here on the lower side. Goalies know that, and choose their side. ' +
-    'USA Hockey answers that one differently, taking the nearest spot only where its own ' +
-    'last-play face-off applies, and sending a stoppage the attacking team caused in the ' +
-    'attacking zone out to the neutral zone instead. ' +
-    'These four are the common ones and not the whole rule, and the boxes are markers rather ' +
-    'than anything painted on the ice — the nine faceoff spots themselves are painted, and are ' +
-    'the only places a draw may be taken.',
+    'gives it in Junior and Senior divisions only, and gives it to the attacking team — your ' +
+    'opponents, in the situation drawn here — who lose it unless they tell the referee before the ' +
+    'line change procedure starts. Marked outside the blue line you were attacking: an offside where ' +
+    'the puck was carried over. A puck SHOT or PASSED over the line offside goes back to the zone the' +
+    ' puck came from instead, which can be your own end. Marked in the end you are attacking: a ' +
+    'goalie freeze, or any other stoppage between the end-zone dots and the end boards, which under ' +
+    'the NHL and the IIHF draws at the spot on the side it happened — drawn here on the lower side. ' +
+    'USA Hockey answers that one differently, taking the nearest spot only where its own last-play ' +
+    'face-off applies, and sending a stoppage the attacking team caused in the attacking zone out to ' +
+    'the neutral zone instead. These four are the common ones and not the whole rule, and the boxes ' +
+    'are markers rather than anything painted on the ice.',
 
   describe:
     'The full sheet, your own net at the left and the net you are attacking at the right. No ' +
@@ -849,28 +792,20 @@ const strongSideDot = {
   width: 900,
 
   caption:
-    'Which of the two circles in your own end is your strong side, and why it is worth knowing ' +
-    'before an icing or a penalty puts a choice of dot on the table. The same centre is drawn twice, once at each ' +
-    'circle, making the same motion both times: a backward pull on the backhand, which goes to a ' +
-    'fixed side of your own body and therefore to the same side of the ice at both circles. At ' +
-    'one circle that carries the puck toward the boards, which is the safest place it can go and ' +
-    'the most powerful pull available to you. At the other the identical motion carries it toward ' +
-    'the middle, and a defensive-zone draw won into the slot is barely better than a loss — so on ' +
-    'your weak side the board-side pull has to be made on the forehand instead, which is slower ' +
-    'and weaker for most players. ' +
-    'That is the self-test, and it is the reliable one: your strong side is the circle where your ' +
-    'natural backward pull sends the puck toward the boards, and ten draws in each circle will ' +
-    'tell you within a minute. Coaching sources state it as a handedness rule instead — a ' +
-    'right-shot centre on the right side, a left-shot on the left — but they do not spell out the ' +
-    'reference frame they mean, so no handedness is drawn here and none should be read into it. ' +
-    'This is why a coach sends a particular centre out for a particular dot, and it is what makes ' +
-    'the rules that let a team pick its dot worth more than they look. The NHL and the IIHF give ' +
-    'that choice to the team that did not cause the stoppage — the attacking team after an icing, ' +
-    'and the team awarded a power play to start a penalty — while USA Hockey gives no choice of ' +
-    'dot at all. Hockey Canada rations it three ways: Rule 6.4(b) grants the choice only for an ' +
-    'end-zone draw "following the calling of an icing or a time penalty", only in Junior and ' +
-    'Senior divisions, and only to the attacking non-offending team — which loses it unless it ' +
-    'tells the referee the dot it wants before the line change procedure starts.',
+    'Which of the two circles in your own end is your strong side. The same centre is drawn twice, ' +
+    'once at each circle, making the same motion both times: a backward pull on the backhand, which ' +
+    'goes to a fixed side of your own body and therefore to the same side of the ice at both circles.' +
+    ' At one circle that carries the puck toward the boards, the safest place it can go; at the other' +
+    ' the identical motion carries it toward the middle, and a defensive-zone draw won into the slot ' +
+    'is barely better than a loss. That is the self-test: your strong side is the circle where your ' +
+    'natural backward pull sends the puck toward the boards. Coaching sources state it as a ' +
+    'handedness rule instead, but they do not spell out the reference frame they mean, so no ' +
+    'handedness is drawn here and none should be read into it. It is also what makes a choice of dot ' +
+    'worth more than it looks — and only some books give one: the NHL and the IIHF to the team that ' +
+    'did not cause the stoppage, USA Hockey none at all, and Hockey Canada only after an icing or a ' +
+    'time penalty, only in Junior and Senior divisions, and only to the attacking non-offending team,' +
+    ' which loses it unless it tells the referee the dot it wants before the line change procedure ' +
+    'starts (Rule 6.4(b)).',
 
   describe:
     'The defending half of the rink, your own net and goaltender at the right, both end-zone ' +
@@ -946,21 +881,13 @@ const ozoneDOneTimer = {
   width: 900,
 
   caption:
-    'The D one-timer off an offensive-zone draw, a beat after the puck is dropped: the centre ' +
-    'pulls it straight back to the strong-side defenceman at the point, who shoots first time. ' +
-    'The whole point of it is that the shooter’s feet are already set and the traffic is ' +
-    'already in place before the puck moves — he does not have to receive, settle and set, and ' +
-    'that is worth more than a slightly better shooting angle. ' +
-    'Its weakness is the other half of it: this is the play every penalty kill and every ' +
-    'defensive alignment expects, and the shot’s line to the net runs straight through the ' +
-    'inner hash marks, where the inside winger stands for the draw — so somebody has to clear ' +
-    'that lane for it. He is drawn here already out of it, a beat after the drop rather than at ' +
-    'the alignment beside this; who does the clearing is not drawn at all, because the section ' +
-    'names the net-front player and this five-player alignment has nobody at the net front. ' +
-    'Everything here is a coaching choice and not a rule of hockey — the alignment it runs from ' +
-    'is a common default, teams differ enormously, and the section it comes from names three ' +
-    'other plays off the same draw. Find out what your team runs, and what the call is, before ' +
-    'your first shift: a set play half the line is guessing at is worse than no play at all.',
+    'The D one-timer off an offensive-zone draw, a beat after the puck is dropped: the centre pulls ' +
+    'it straight back to the strong-side defenceman at the point, who shoots first time. The shot’s ' +
+    'line to the net runs straight through the inner hash marks, where the inside winger stands for ' +
+    'the draw, and he is drawn here already out of it; who does the clearing is not drawn at all, ' +
+    'because this five-player alignment has nobody at the net front. All of it is a coaching choice ' +
+    'and not a rule of hockey — find out what your team runs, and what the call is, before your first' +
+    ' shift.',
 
   describe:
     'The attacking half of the rink, the opposition net and goaltender at the right, the draw at ' +
@@ -1007,21 +934,13 @@ const ozoneWingerWalkout = {
   width: 900,
 
   caption:
-    'The winger walk-out off the same offensive-zone draw, and the answer to the same problem ' +
-    'from the other end: instead of going back to the point, the centre pulls the puck to the ' +
-    'inside winger standing in the circle, who takes a stride toward the middle of the ice and ' +
-    'then either shoots or feeds the slot. Which of those two he does is not drawn, because the ' +
-    'section gives both and the walk-out itself is the play; the picture stops where the choice ' +
-    'begins. It is the better play against a team that pressures the ' +
-    'point the instant the puck is dropped, because the ice you are attacking is the ice they ' +
-    'have just vacated — which also means it is the worse play against a team that does not. ' +
-    'Both defencemen stay at the points, one of them as the safety against a counterattack, ' +
-    'because on a clean loss in the attacking end the priority flips instantly to not conceding ' +
-    'one. ' +
-    'Which of the two plays is on is a call, not a read to be made individually — and every part ' +
-    'of this is a coaching choice rather than a rule of hockey. Teams differ enormously, most run ' +
-    'two or three plays per zone rather than six, and a play nobody heard is not a play. Ask what ' +
-    'yours are.',
+    'The winger walk-out off an offensive-zone draw: instead of going back to the point, the centre ' +
+    'pulls the puck to the inside winger standing in the circle, who takes a stride toward the middle' +
+    ' of the ice and then either shoots or feeds the slot. Which of those two he does is not drawn, ' +
+    'because the section gives both and the walk-out itself is the play; the picture stops where the ' +
+    'choice begins. Both defencemen stay at the points, one of them as the safety against a ' +
+    'counterattack. Every part of this is a coaching choice rather than a rule of hockey, and which ' +
+    'play is on is a call rather than an individual read — ask what your team’s are.',
 
   describe:
     'The attacking half of the rink, the opposition net and goaltender at the right, the draw at ' +

@@ -134,9 +134,9 @@ const pp131 = {
   width: 900,
 
   caption:
-    'The 1-3-1 power play: five attackers on a 5-on-4, with the four penalty killers not drawn ' +
-    'so the shape reads on its own. One player at the point, three across the middle — two on ' +
-    'the half-walls with a bumper between them in the middle of the slot — and one at the net ' +
+    'Five attackers on a 5-on-4, the four penalty killers not drawn ' +
+    'so the shape reads on its own: one player at the point, three across the middle — two on ' +
+    'the half-walls with a bumper between them in the slot — and one at the net ' +
     // ⚠️ "on the edge of the blue paint" places the reader ON the crease line. Under IIHF
     // Rule 1.7 "the marked line belongs to the Goal Crease", so the net-front player this
     // positions is INSIDE it; under USA Hockey a goal is disallowed outright with an attacking
@@ -145,18 +145,10 @@ const pp131 = {
     // contradicting each other. The `describe` field already said "just outside the crease".
     'front, just outside the blue paint and off the crease line: under the IIHF book the ' +
     'marked line belongs to the crease. The dashed lines are the four options a half-wall ' +
-    'player has at once — the point, the bumper, the net front and the far half-wall through the ' +
-    'seam — drawn as alternatives rather than a sequence. The solid line is the point walking the ' +
-    'line laterally, which changes the angle of every passing lane in the zone. ' +
-    'Which formation your team runs, and who stands where inside it, is a coaching choice and ' +
-    'not a rule of hockey — the umbrella, the overload, the spread and the 2-3 are all real ' +
-    'alternatives, and the bumper is most often the centre but that is team-dependent. ' +
-    'It is drawn with a defenceman at the point because first units are widely described as ' +
-    'running four forwards and one defenceman — and unlike the shape, that personnel has been ' +
-    'counted. Matt Cane measured four-forward units at roughly 56% of 5-on-4 ice time across ' +
-    'the league in 2016-17, which is a share of ice time rather than a count of teams and is not ' +
-    'a first-unit figure. What is uncounted is the shape: no published count of how many teams ' +
-    'run a 1-3-1 rather than an umbrella or an overload was found.',
+    'player has at once, drawn as alternatives rather than a sequence; the solid line is the ' +
+    'point walking the line laterally. Which formation your team runs, and who stands where ' +
+    'inside it, is a coaching choice and not a rule of hockey — and no published count of how ' +
+    'many teams run a 1-3-1 rather than an umbrella or an overload was found.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
@@ -259,20 +251,11 @@ const ppUmbrella = {
   numbered: true,
 
   caption:
-    'The umbrella power play in its modern version: five attackers on a 5-on-4, the killers not ' +
-    'drawn. The lone defenceman takes the apex just inside the blue line and two forwards drop ' +
-    'right down to the tops of the faceoff circles, where the one-timer lives, so the three high ' +
-    'players sit on a deep arc; two more sit low, one at the net front and one at the side of ' +
-    'the net. The classic version is just as much an umbrella and its arc is far shallower — a ' +
-    'forward at the apex with both defencemen out on the flanks, still close to the line — so ' +
-    'find out which your team runs; what neither version is, is three players strung level ' +
-    'across the blue line, because with no depth between them every pass is short and lateral ' +
-    'and the kill barely has to move. There is no bumper in a true umbrella: the middle of the ' +
-    'slot is deliberately vacated so the high players have clean lanes into it. ' +
-    'The two numbered routes are one option among many — a flank pass to the apex and a shot ' +
-    'aimed to be tipped or rebounded past the screen — and the shape concedes the middle by ' +
-    'design, sits far from the net, and can be let alone all night by a diamond or an ' +
-    'aggressive box.',
+    'Five attackers on a 5-on-4, the killers not drawn. The lone defenceman takes the apex ' +
+    'just inside the blue line and two forwards drop to the tops of the circles, so the three ' +
+    'high players sit on a deep arc, with two low. There is no bumper: the middle of the slot ' +
+    'is vacated on purpose. The two numbered routes are one option among many. The classic ' +
+    'version\'s arc is far shallower, so find out which your team runs.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Five own players in an arc and ' +
@@ -317,23 +300,10 @@ const ppOverload = {
   numbered: true,
 
   caption:
-    'The overload power play: five attackers on a 5-on-4, the killers not drawn. Four are loaded ' +
-    'onto one side of the ice — below the goal line, in the corner, on the half-wall and at the ' +
-    'point on that side — and the fifth stands alone on the weak side as a release valve and ' +
-    'safety. The numbered passes are one cycle among many, not a set play: the shape exists to ' +
-    'cycle the puck relentlessly in a small area, creating repeated 3-on-2s along the strong-side ' +
-    'wall until a killer over-commits, and then either attack the seam that opens or swing it ' +
-    'cross-ice to the lone weak-side player for a shot with the goalie moving. ' +
-    'Which formation your team runs, and who stands where inside it, is a coaching choice: the ' +
-    'second spot is either the corner or the low circle and it is drawn as the corner, the ' +
-    'weak-side player’s exact position is not fixed at all and is drawn at the top of the far ' +
-    'circle, and at rec and youth level the overload is often run out of a 2-3 ' +
-    'base with both defencemen staying at the points — an impression of how those levels play ' +
-    'rather than a measured share, with no count of rec or youth deployments published and none ' +
-    'here. ' +
-    'It is excellent against a passive box that will not come out to the wall, but the passes ' +
-    'are short and easy to intercept once the kill reads the pattern, and an interception on the ' +
-    'strong side leads straight to a shorthanded break.',
+    'Five attackers on a 5-on-4, the killers not drawn: four loaded onto one side — below the ' +
+    'goal line, in the corner, on the half-wall and at the point — with the fifth alone on ' +
+    'the weak side as a release valve. The numbered passes are one cycle among many, not a ' +
+    'set play, and who stands where inside it is a coaching choice.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four own players stacked on the ' +
@@ -380,20 +350,10 @@ const ppSpread = {
   numbered: true,
 
   caption:
-    'The spread power-play shape, drawn at 5-on-3 — five attackers against three killers, which ' +
-    'is where it is the standard shape. Two attackers low, one each side of the ' +
-    'net just outside the posts; two high and wide, drawn at the tops of the circles though the ' +
-    'points are the other option; and one in the middle of the slot — the point ' +
-    'is not the shape but the spacing: stand far enough apart that one killer cannot cover two ' +
-    'of you. The three killers sit in a tight triangle around the slot, two low in front of the ' +
-    'net and one high, and concede everything outside it — nobody is coming to hunt you on the ' +
-    'perimeter — so the numbered passes move the puck side to side across the royal road rather ' +
-    'than around the perimeter, until the goalie cannot get set; the goal usually comes from a ' +
-    'one-timer at the far post or the second-wave rebound, which is why someone is at the net ' +
-    'for both. Beware the word: "box" names this power-play spacing and also the standard ' +
-    'penalty-kill shape, and the two are unrelated. The same spacing is worth using at 5-on-4 ' +
-    'against a kill that has collapsed and conceded the outside, but there the long passes are ' +
-    'interceptable; and what is fixed is the spacing, not who plays which spot.',
+    'Drawn at 5-on-3, where it is the standard shape: two attackers low either side of the ' +
+    'net, two high and wide at the tops of the circles though the points are the other ' +
+    'option, one in the slot. What is fixed is the spacing, not who plays which spot. The ' +
+    'numbered passes cross the royal road rather than going round the perimeter.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Five own players spread wide: ' +
@@ -449,19 +409,11 @@ const pp23 = {
   numbered: true,
 
   caption:
-    'The 2-3 power play: five attackers on a 5-on-4, the killers not drawn. Two defencemen at ' +
-    'the points and three forwards low — one at the net front and one in each circle. The puck ' +
-    'goes low-to-high and back, which is what the two numbered routes show: a pass up to the ' +
-    'point and a shot judged on whether it arrives low, hard and on net with a body in front of ' +
-    'the goalie, not on whether it beats him clean. It was the default power play for decades ' +
-    'and remains common in rec, beer-league and youth hockey — both of those are impressions ' +
-    'rather than measured shares, with no count published and none here. It is the safe shape, ' +
-    'because two defencemen at the line means very few shorthanded breaks and good retrieval on ' +
-    'missed shots, and it is the easiest to teach — but it is also the shape that attacks the two ' +
-    'areas a box is built to defend and ignores the middle of the slot entirely, so against a ' +
-    'competent box it is close to harmless. Which formation your team runs is a coaching choice — and note ' +
-    'the contrast with the 1-3-1, which has exactly one player at the point: if you can see two, ' +
-    'you are looking at this shape, an umbrella or an overload, not a 1-3-1.',
+    'Five attackers on a 5-on-4, the killers not drawn: two defencemen at the points and ' +
+    'three forwards low, the puck going low-to-high and back. Count the players at the point ' +
+    '— two means this shape, an umbrella or an overload, while a 1-3-1 has exactly one. Which ' +
+    'your team runs is a coaching choice, and that it stays common in rec and youth hockey is ' +
+    'an impression rather than a measured share.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Five own players: two ' +
@@ -563,14 +515,10 @@ const ppBackdoor = {
   width: 900,
 
   caption:
-    'The backdoor: the weak-side post, the far side of the net, away from the puck. Whenever ' +
-    'the kill\'s low defender commits to the strong side or to the net-front player, drawn here ' +
-    'occupying him, it is a 2-on-1 with nobody covering it. Arrive late: a player camped at the ' +
-    'back post all shift is marked; one arriving as the pass is released is not. The pass shown ' +
-    'is the high-to-backdoor leg of a low-to-high-to-backdoor delivery; a straight pass from ' +
-    'below the goal line is the other way it arrives, not drawn. Either way it crosses the royal ' +
-    'road, which is why it converts. This is a read available off any formation, not a shape of ' +
-    'its own.',
+    'The weak-side post, away from the puck. When the kill\'s low defender commits to the ' +
+    'strong side or to the net-front player, drawn here occupying him, nobody is covering it. ' +
+    'Arrive late: a player camped at the back post is marked, one arriving as the pass is ' +
+    'released is not. A read off any formation, not a shape of its own.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
@@ -647,13 +595,10 @@ const ppWalkDown = {
   width: 900,
 
   caption:
-    'The walk-down: the half-wall player skates the puck down toward the goal line and inside ' +
-    'rather than passing, forcing a decision. If the low defender, drawn guarding low, steps out ' +
-    'to challenge, the net front is open for a pass across — a genuine 2-on-1, not drawn here. If ' +
-    'he holds his ground instead, the section says you still get a shot from the top of the ' +
-    'circle with a moving goaltender; that shot is not drawn either. Walk toward the dot, not the ' +
-    'corner — below the goal line and wide you are harmless. Keep your feet moving; the moment ' +
-    'they stop the kill resets. If it is denied, reset to the point and start again.',
+    'The half-wall player skates the puck down toward the goal line and inside rather than ' +
+    'passing, forcing a decision: if the low defender steps out, the net front is open; if he ' +
+    'holds, the shot comes from the top of the circle with a moving goaltender. Neither is ' +
+    'drawn. Walk toward the dot, not the corner.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
@@ -713,19 +658,11 @@ const pkBox = {
   width: 900,
 
   caption:
-    'The box penalty kill — four killers, shorthanded 4-on-5 — drawn against the five-man 1-3-1 ' +
-    'power play that counters it. A rectangle around the slot: two players high, both ' +
-    'forwards, one on each side and each responsible for one point, and two low, both ' +
-    'defencemen, covering the low corners and the goalmouth — a box has no single top, and if ' +
-    'you find yourself describing "the top of the box" you are describing a diamond. The picture ' +
-    'shows the shape’s one concession, which it makes by design: nobody in a box is assigned ' +
-    'to the middle of the slot, so the 1-3-1’s bumper stands uncovered in the hole in the ' +
-    'middle of the rectangle. The box slides with the puck rather than rotating — all four shift ' +
-    'together — which is movement a still frame cannot carry, so it is not drawn. Which shape ' +
-    'you run is a coaching choice and the same four players can run the box, the diamond and the ' +
-    'wedge+1 in one game: the box is simply the one almost everyone is taught first — an ' +
-    'impression from coaching sources rather than a measured share, because no public count ' +
-    'of which shape teams run as their base exists.',
+    'Four killers, shorthanded 4-on-5, drawn against the 1-3-1 that counters it: two forwards ' +
+    'high, one on each point, and two defencemen low on the corners and the goalmouth. A box ' +
+    'has no single top — describing one means you are describing a diamond. Nobody is ' +
+    'assigned to the middle, by design, so the bumper stands uncovered. Which shape a team ' +
+    'runs is a coaching choice, and no public count of bases exists.',
 
   describe:
     'Defending half of the rink, our net at the right and our goaltender in the crease. Four own ' +
@@ -764,19 +701,11 @@ const pkDiamond = {
   width: 900,
 
   caption:
-    'The diamond penalty kill — four killers, shorthanded 4-on-5 — drawn against the five-man ' +
-    '1-3-1 it exists to answer, at the moment the puck is at the point. One player high at the ' +
-    'apex, two in the middle either side, one low: exactly one player at the top, which is what ' +
-    'makes it a diamond and not a box. The apex pressures the point and takes away the middle ' +
-    'shooting lane, and as the only player up there must not get walked around. Each middle killer ' +
-    'takes a half-wall and both collapse onto the bumper when the puck goes to the middle, which ' +
-    'is why this is the only common shape that starts with an answer to the bumper. What it ' +
-    'concedes: the single low player is alone against the net-front ' +
-    'presence and a backdoor arriver, a genuine 2-on-1 you are choosing to give up, and the shape ' +
-    'is narrow enough that a quick cross-seam pass to the far half-wall pulls it apart. ' +
-    'Which shape you run is a coaching choice, and the only personnel that is even loosely fixed ' +
-    'is the apex — often the centre, but it varies by team — so the two forwards and two ' +
-    'defencemen drawn here are the usual kill personnel and not a rule.',
+    'Four killers, shorthanded 4-on-5, drawn against the 1-3-1 it exists to answer, with the ' +
+    'puck at the point: one high at the apex, two in the middle either side, one low. Exactly ' +
+    'one player at the top is what makes it a diamond and not a box. Both middle killers ' +
+    'collapse onto the bumper. What it concedes is the low player alone against the net front ' +
+    'and a backdoor arriver. Which shape you run is a coaching choice.',
 
   describe:
     'Defending half of the rink, our net at the right and our goaltender in the crease. Four own ' +
@@ -857,8 +786,9 @@ const pkWedge = {
     // would be read out. This was the only caption in the corpus that had any, briefly.
     'triangle around the net — all three are marked W for the wedge here rather than for a ' +
     'winger — two defencemen just off the crease edges, drawn wider apart than ' +
-    'they really stand, because at the true spacing their glyphs would sit on top of the ' +
+    'they really stand so their glyphs clear the ' +
     'net-front attacker they are boxing out — and one forward at the mid-to-high slot; they stay ' +
+
     // ⚠️ "BLOCK SHOTS" WAS BARE HERE, and this caption is voiced: `md_to_speech.py` resolves
     // `diagram:<id>` to the caption, so a listener got the instruction with none of the
     // technique. The qualification is the owning section's own, from `#### Shot blocking` in
@@ -866,23 +796,18 @@ const pkWedge = {
     // courage", "in the lane before the shot, not sliding into it", "Never block from a
     // screening position." Taken verbatim rather than paraphrased, so the caption and the
     // section cannot drift.
-    'tight, protect the slot and the goalmouth, block shots and rotate as a connected unit, and ' +
-    'they do not chase. Blocking shots is a technique, not an act of courage. Be in the lane ' +
+    'tight, block shots and do not chase. Blocking shots is a technique, not an act of ' +
+    'courage. Be in the lane ' +
     'before the shot, not sliding into it, and never block from a screening position — ' +
     'half-deflecting a shot your goaltender could not see is worse than letting it through ' +
-    'cleanly. The fourth, the +1, pressures whoever has the puck, and the drawn ' +
-    'route is checking pressure rather than an attempt to win it: the job is to make every ' +
-    'possession uncomfortable. The route drawn here — straight out from the goal at the ' +
+    'cleanly. The fourth, the +1, pressures whoever has the puck. The route drawn here — ' +
+    'straight out from the goal at the ' +
     'carrier — is one of three published readings and a coaching choice rather than the ' +
     'system: others sweep the +1 laterally across the top of the zone above the circles, ' +
     'and others let him roam out to the wall and the point, so ask which one your team ' +
-    'runs. What the picture cannot show is the exchange, which is the hard part — when ' +
-    'the pressure forces the puck to move, the nearest wedge player becomes the new +1 and the ' +
-    'old one drops into the triangle, and that is movement over time, not one frozen instant. ' +
+    'runs. ' +
     'Coaching material describes this as popular at NHL level, but no league-wide count is ' +
-    'published, so treat the prevalence claim as unverified; it is also a poor choice for a young ' +
-    'or ad-hoc unit because of the cognitive load, and if the +1 chases without purpose you are ' +
-    'killing with three players. ' +
+    'published, so treat the prevalence claim as unverified. ' +
     // SAFETY. The caption instructs "Be in the lane before the shot" and dropped the two elements
     // that make the block survivable. Owner's own wording, content/systems/special_teams.md:704
     // and again verbatim in its Key Takeaway 7 (:1103) — "Block from close and on your feet, head
@@ -990,20 +915,12 @@ const pkNz13 = {
   width: 900,
 
   caption:
-    'The 1-3 neutral-zone scheme on the penalty kill, in its passive version — four killers, ' +
-    'shorthanded 4-on-5, defending the net on the right against a power play attacking from the ' +
-    'left. One forward is up on the puck and the other forward and both defencemen form a line ' +
-    'across the ice behind him, backing up in unison and refusing to be split; F1 gives token ' +
-    'pressure to make the power play commit to a side, and the goal is not to win the puck but ' +
-    'to make them dump it in. The other version of the same scheme is the same-side press, where ' +
-    'F1 angles the carrier to one side and F2 closes from that side to force a dump or a ' +
-    'turnover — more pressure, but it needs killers who can read and accelerate — and the 1-1-2, ' +
-    'the retreating box and tandem pressure are three further schemes you will meet, so ask which ' +
-    'is called. F1 and F2 are roles set by who is first and second to the puck, not positions, ' +
-    'and which of the three across takes the middle is not fixed. Only the puck ' +
-    'carrier of the five-man power play is drawn, because where the ' +
-    'other four attackers stand is not fixed either; beat F1 or spread the three-man line and there is a lot of ice ' +
-    'behind it.',
+    'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
+    'attacking from the left, in the passive version. One forward is up on the puck; the ' +
+    'other forward and both defencemen form a line across the ice behind him, backing up in ' +
+    'unison to force a dump-in rather than to win the puck. The same-side press, the 1-1-2, ' +
+    'the retreating box and tandem pressure are the alternatives — ask which is called. Only ' +
+    'the power play\'s puck carrier is drawn.',
 
   describe:
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +
@@ -1056,18 +973,12 @@ const pkNz112 = {
   width: 900,
 
   caption:
-    'The 1-1-2 neutral-zone scheme on the penalty kill — four killers, shorthanded 4-on-5, ' +
-    'defending the net on the right against a power play attacking from the left. F1 is up on ' +
-    'the puck, F2 is layered behind him on the same side, forming a wall parallel to the boards, ' +
-    'and the two defencemen are abreast near the line: aggressive without over-committing, it ' +
-    'bleeds clock and forces contested entries. Coaching material commonly describes this as a ' +
-    'current NHL default for neutral-zone pressure — a different decision from the in-zone shape, ' +
-    'not a competing one — but that prevalence claim is not independently verified, and the 1-3, ' +
-    'the retreating box and tandem pressure are the alternatives you will meet. F1 and F2 are ' +
-    'roles set by who is first and second to the puck, not positions. Only the puck carrier of ' +
-    'the five-man power play is drawn, because where the other four ' +
-    'attackers stand is not fixed — and the weakness is theirs to exploit: quick direction changes and drop ' +
-    'passes at the red line slide underneath F1 and F2 at once.',
+    'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
+    'attacking from the left. F1 is up on the puck, F2 layered behind him on the same side, ' +
+    'and the two defencemen abreast near the line. Coaching material commonly calls this a ' +
+    'current NHL default for neutral-zone pressure, but that prevalence claim is not ' +
+    'independently verified; the 1-3, the retreating box and tandem pressure are the ' +
+    'alternatives. Only the power play\'s puck carrier is drawn.',
 
   describe:
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +

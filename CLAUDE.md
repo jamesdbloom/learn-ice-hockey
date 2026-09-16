@@ -497,13 +497,33 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_chunk_splits.py, check_caption_negations.py,
                     check_zones.py, check_tables.py, check_disclosures.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
-                    check_plan_rows.py.
+                    check_plan_rows.py, check_readability_census.py, check_caption_echo.py.
                     md_to_speech.py
+                    NOT CHECKERS, but in this directory and absent from every earlier version of
+                    this list: build_podcast_audio.py, build_podcast_cover.py.
                     ⚠️ THIS LIST WAS FIVE TOOLS SHORT until round 69 — check_diagram_quotes,
                     check_chunk_tails, check_leaders, check_plan_rows and check_disclosures
                     all existed and none was named here. A tool nobody knows about does not
                     get run. `ls scripts/*.py` is the authority; this list is a convenience
                     and goes stale the moment someone adds a tool without editing it.
+                    ⚠️ IT WENT TWO SHORT AGAIN ON 15 SEPTEMBER 2026, AND THE COORDINATOR WHO
+                    ADDED THE TOOLS HAD READ THE WARNING DIRECTLY ABOVE. check_readability_census
+                    was committed in the morning and named nowhere; check_caption_echo in the
+                    afternoon. ⚠️ The lesson is not "remember" — it is that the two actions are
+                    SEPARATE EDITS TO SEPARATE FILES, and nothing connects them. Run
+                    `ls scripts/*.py` against this block whenever you add one.
+                    check_readability_census.py — the diagram-marker, opener, word and citation
+                    censuses, with `--json` for per-marker line numbers. Written because four
+                    censuses were run from a session scratchpad and written into a plan, and a
+                    commit gate pointed out that no figure in that section would be reproducible
+                    once the session ended.
+                    check_caption_echo.py — captions that REPEAT the prose block now directly
+                    above them, which is the defect the caption wave and the marker wave create
+                    together and neither creates alone. ⚠️ Three kinds of overlap are CORRECT and
+                    its docstring names them: a region definition must match its owner word for
+                    word, a disclosure voiced in two layers is propagation, and a repeated safety
+                    limb is repeated on purpose. Only narrative restatement is cuttable, and the
+                    tool cannot tell the difference.
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.

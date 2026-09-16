@@ -67,9 +67,124 @@ import re, sys, pathlib, collections
 
 SRC = pathlib.Path(__file__).resolve().parent.parent / "site" / "src" / "diagrams"
 
-# caption: 'a' + 'b' + 'c'  ->  one string
-CAPTION = re.compile(r"(caption|describe):\s*((?:'(?:[^'\\]|\\.)*'\s*\+?\s*)+)", re.S)
-PIECE = re.compile(r"'((?:[^'\\]|\\.)*)'")
+# caption: 'a' + 'b' + CONST + 'c'  ->  one string
+#
+# ⚠️  THE IDENTIFIER ALTERNATIVE IS LOAD-BEARING AND WAS ADDED 15 September 2026.
+#     Without it this pattern matched quoted literals ONLY, so an interpolated shared
+#     constant ENDED THE RUN and the tool scanned a prefix. MEASURED against the build
+#     product at the time of the fix: 10 of 408 caption/describe units short,
+#     6,624 characters invisible, worst `oz-net-front-screen` at SIX PER CENT.
+#     ⚠️  IT WAS WORST WHERE IT MATTERS MOST. `PINCH_CAVEATS` in risk_management.mjs is
+#     docblocked "the sentences both captions must carry, written once so the pair cannot
+#     drift apart" -- it holds a cardinal-rule hedge AND a body-checking scope, and it
+#     contains "no contact is drawn: the pinching defenceman's route ends in two bars",
+#     which is a negation, a bare colon and a tail. THAT IS THIS TOOL'S OWN `SHAPE`,
+#     sitting in a constant the tool could not read. A shared constant is used precisely
+#     BECAUSE the text is load-bearing, so the invisible text was selected for importance.
+#     ⚠️  Do not "simplify" this by reading site/src/data/diagrams.json instead. That is a
+#     build product and goes stale the moment a caption is edited -- see the header.
+# ⚠️  A DOUBLE-QUOTED LITERAL IS NOT AN EDGE CASE, IT IS THE HOUSE STYLE FOR APOSTROPHES.
+#     This corpus writes "the goaltender's eyes" in double quotes precisely BECAUSE the text
+#     contains an apostrophe -- so the string most likely to be double-quoted is the one
+#     carrying possessive prose about a person. Matching only '...' ended the run there.
+#     MEASURED: oz-net-front-screen's caption was seen at SEVEN PER CENT for this reason
+#     alone, 173 of 2,509 characters, stopping at the first apostrophe-bearing clause.
+STR = r"""'(?:[^'\\]|\\.)*'|\"(?:[^\"\\]|\\.)*\""""
+CAPTION = re.compile(
+    r"(caption|describe):\s*((?:(?:" + STR + r"|[A-Z][A-Z0-9_]*)\s*\+?\s*)+)", re.S)
+PIECE = re.compile(
+    r"'((?:[^'\\]|\\.)*)'|\"((?:[^\"\\]|\\.)*)\"|\b([A-Z][A-Z0-9_]*)\b")
+# ⚠️  `export const` as well as `const`: rule69_clauses.mjs EXPORTS the Rule 69 hedges that
+#     several captions interpolate, and matching only a bare `const` left every one unresolved.
+CONST_DECL = re.compile(
+    r"^(?:export\s+)?const\s+([A-Z][A-Z0-9_]*)\s*=\s*"
+    r"((?:(?://[^\n]*\n\s*)*(?:" + STR + r"|[A-Z][A-Z0-9_]*)\s*\+?\s*)+);",
+    re.M | re.S)
+
+
+
+def _unescape(lit: str) -> str:
+    r'''Resolve a JS string literal's escapes to the characters the build ships.
+
+    ⚠️  THE THIRD TRUNCATION-CLASS BLIND SPOT IN THIS FUNCTION, found 16 September 2026 by a
+        commit gate. Five caption units carry RAW \uXXXX ESCAPES in source -- forecheck-212,
+        forecheck-212-stacked, forecheck-122, forecheck-131 and the-trapezoid -- so every
+        source-reading worklist was scanning the seven characters "\u2014" where an em dash
+        ships. ⚠️  TWO of those units have a NEGATION FOLLOWED BY \u2014 in their body-checking
+        scope sentence, which is PRECISELY the shape SHAPE exists to surface, and this tool
+        could not see it because the separator was spelled out rather than present.
+    ⚠️  check_absolutes.py is unaffected: it reads the resolved JSON build product.
+        This tool reads SOURCE on purpose -- the JSON goes stale the moment a caption is
+        edited -- which is exactly why it, and not that one, has to do the unescaping.
+    ⚠️  `unicode_escape` is latin-1-based, so round-trip through latin-1 first or a literal
+        em dash already in the file is mangled into mojibake. The two-step below is deliberate.
+    '''
+    out = lit.replace("\\'", "'").replace('\\"', '"')
+    if "\\u" not in out:
+        return out
+    return out.encode("latin-1", "backslashreplace").decode("unicode_escape")
+
+
+def _resolve(ident: str, consts: dict[str, str], where: str) -> str:
+    r"""Look up an interpolated constant, and SAY SO when it cannot be found.
+
+    (This docstring is a RAW string because it names \uXXXX escapes, and a plain one makes
+    Python try to decode them -- which is how the first version of it failed to parse.)
+
+    ⚠️  A FOURTH TRUNCATION CLASS LIVES IN THIS FUNCTION AND THIS CLOSES HALF OF IT.
+        `consts.get(ident, "")` silently dropped an unresolvable SCREAMING_CASE name to the
+        empty string, so a caption interpolating a constant this module cannot parse would be
+        scanned SHORT with nothing reported -- the same silent-prefix failure as the three
+        already fixed here (inline comments, double-quoted strings, \uXXXX escapes).
+    ⚠️  THE OTHER HALF IS STILL OPEN AND IS NOT CLOSED BY THIS: `CAPTION`'s alternation is
+        `STR | [A-Z][A-Z0-9_]*`, so a LOWERCASE identifier, a backtick TEMPLATE LITERAL, or a
+        FUNCTION CALL inside a `caption:` run still ends the match and the tool scans a prefix.
+        Neither is exercised today -- 408 units compared against the build product, zero short --
+        but nothing prevents the next caption edit from exercising them, and nothing would report
+        it. A build-product comparison is the only thing that has ever caught this class.
+    """
+    if ident in consts:
+        return consts[ident]
+    print(f"⚠️  {where}: cannot resolve interpolated constant {ident!r} — "
+          f"this caption is being scanned SHORT", file=sys.stderr)
+    return ""
+
+def _constants() -> dict[str, str]:
+    """Every `const NAME = 'a' + B + 'c';` in the diagram sources, resolved.
+
+    ⚠️  Built across ALL modules, not just the one being scanned, because a constant may be
+        imported from a sibling (rule69_clauses.mjs exports several). Names are SCREAMING_CASE
+        and distinctive, so a flat table is safe; a collision would be a source defect.
+    """
+    raw: dict[str, str] = {}
+    for f in sorted(SRC.glob("*.mjs")):
+        src = strip_line_comments(f.read_text())
+        for m in CONST_DECL.finditer(src):
+            raw[m.group(1)] = m.group(2)
+
+    resolved: dict[str, str] = {}
+
+    def value(name: str, seen: frozenset[str]) -> str:
+        if name in resolved:
+            return resolved[name]
+        if name in seen or name not in raw:
+            return ""          # a cycle, or a name that is not a caption constant
+        out = _assemble(raw[name], seen | {name})
+        resolved[name] = out
+        return out
+
+    def _assemble(run: str, seen: frozenset[str]) -> str:
+        parts = []
+        for sq, dq, ident in PIECE.findall(run):
+            if sq or dq:
+                parts.append(_unescape((sq or dq)))
+            else:
+                parts.append(value(ident, seen))
+        return "".join(parts)
+
+    for name in list(raw):
+        value(name, frozenset())
+    return resolved
 IDENT = re.compile(r"id:\s*'([^']+)'")
 
 NEGATION = r"\b(never|not|no|neither|nor|cannot|nothing|none)\b"
@@ -107,10 +222,17 @@ def strip_line_comments(src: str) -> str:
 
 def captions() -> list[tuple[str, str, str, str]]:
     out = []
+    consts = _constants()   # ⚠️ ONCE, not per module: it scans every file to build the table,
+                            #     so calling it inside the loop rebuilt it 31 times. Harmless but
+                            #     wasteful, and it read as if the table were module-scoped. It is not
+                            #     -- a constant may be imported from a sibling, which is why the table
+                            #     is global in the first place.
     for f in sorted(SRC.glob("*.mjs")):
         src = strip_line_comments(f.read_text())
         for m in CAPTION.finditer(src):
-            text = "".join(p.replace("\\'", "'") for p in PIECE.findall(m.group(2)))
+            text = "".join(
+                _unescape(sq or dq) if (sq or dq) else _resolve(ident, consts, f.name)
+                for sq, dq, ident in PIECE.findall(m.group(2)))
             if not text:
                 continue
             before = src[max(0, m.start() - 4000):m.start()]   # 1500 left 13 of 68 hits

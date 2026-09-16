@@ -80,18 +80,48 @@ const threeLanes = {
   // same repair, and its comment records the finding still open against the section.
   // (Comment sits ABOVE `caption:`, outside the string run: a `//` line inside an
   // 'a' + 'b' concatenation used to blind check_caption_negations.py to the tail.)
+  //
+  // ⚠️ AND IT MUST NOT GO BACK TO GIVING THE PUCK AS THE GROUND FOR BEING ONSIDE.
+  // It read "they are onside because it has not completely crossed", and before that
+  // "onside here because the puck has not yet completely crossed". Both state the
+  // WRONG TEST. Verified against four books this session:
+  //   - NHL 83.1, sources/nhl_rules.txt:8811 — "The position of the player's skates and
+  //     not that of his stick shall be the determining factor in all instances"; :8814 —
+  //     "on-side when either of his skates are in contact with the blue line, or on his
+  //     own side of the line, AT THE INSTANT the puck completely crosses the leading edge".
+  //   - Hockey Canada 6.11 Note 1, sources/hc_layout.txt:4217-4220 — "NOT off-side when any
+  //     part of either of their skates are in physical contact with, or on their own side of
+  //     the line at the instant the puck completely crosses".
+  //   - USA Hockey 630(a), sources/usah.txt:4660-4690 — skates AND puck are both named
+  //     "determining factors", and the Note fixes the moment: the determination "will only
+  //     take place at the moment the puck has completely crossed the determining edge";
+  //     :4689 — "A player only needs to have skate contact with one skate with the blue
+  //     line to be considered 'onside.'"
+  // ⚠️ DECISIVE, sources/hc_layout.txt:4277-4279, HC 6.11(a) Interpretation 4: "A player has
+  //   both skates over the blue-line, but the puck is still on the blue-line. POTENTIAL
+  //   OFF-SIDE, but not until the puck completely crosses." A puck that has not crossed does
+  //   not confer onside status — it leaves the question unasked. Interpretation 1 (:4268-4270)
+  //   decides the drawn case on the other ground: one skate on the line, one over, ON-SIDE.
+  // So the SKATES are the ground and the puck's complete crossing is the CLOCK, and the
+  // caption now says which does which. The host prose the diagram is borrowed into,
+  // content/off-the-ice/how_to_watch_hockey.md:226, already says exactly this — "which is
+  // the stronger reason of the two" — and the caption used to disagree with the paragraph
+  // it sits two lines under.
+  // ⚠️ AND `it` HAD TWO REFERENTS IN ONE VOICED SENTENCE — the blue line, then the puck —
+  // with the nearer antecedent making the second read as "the blue line has not completely
+  // crossed". Every pronoun in the rule sentence is now a noun.
+  // The airborne-skate divergence is deliberately NOT restated here: `entry-trail-skate-drag`
+  // lower in this file carries it with the two books named, and so does the host paragraph.
   caption:
-    'Three attackers arriving at the attacking blue line in three lanes — one wide on each ' +
-    'side, one through the middle — drawn at the instant the two wide players are already on ' +
-    'the blue line at speed and the puck is still a stride short of it. That order is the whole ' +
-    'point: if the carrier arrives first the supports are behind the play and the defence can ' +
-    'collapse on one player, so the carrier wants to reach the line half a stride to a full ' +
-    'stride behind the wingers, and arriving with speed is not the same as arriving early. ' +
-    'The wide players are onside here because the puck has not yet completely crossed, which ' +
-    'is exactly what the trail-skate drag is for. Which of the three carries, whether your ' +
-    'team crosses lanes at all, and whether the wide lanes are held strictly are coaching ' +
-    'choices that vary enormously — this is drawn with the carrier in the middle lane setting ' +
-    'the clock, and you should ask your coach what your team wants before you decide you know.',
+    'Drawn at the instant the two wide players are already on the blue line at speed and the ' +
+    'puck is still a stride short of the line — that order is the point. They are onside ' +
+    'because a skate is still on the line. Both the skates and the puck are in the test, and ' +
+    'they do different jobs: the skates decide, and the puck completely crossing fixes the ' +
+    'instant at which they are read. So a player with both skates fully over the line when ' +
+    'the puck crosses is offside however far behind him the puck was, and a skate on or ' +
+    'behind the line keeps you onside whatever the puck does — which is what the trail-skate ' +
+    'drag is for. Which of the three carries, and whether the lanes cross at all, is a ' +
+    'coaching choice.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. Three own forwards approach ' +
@@ -151,21 +181,16 @@ const wideEntry = {
   width: 900,
 
   caption:
-    'The wide entry: the carrier crosses the line outside the defenceman, down the boards, and ' +
-    'goes for the goal line or below it — so the defender has to turn and skate, and every ' +
-    'stride he takes toward the boards is a stride away from the front of his own net. It only ' +
-    'works with the two supports drawn here: one driving the net so ' +
-    'that the carrier has somewhere to put the puck when he reaches the goal line, and a third ' +
-    'high for the back-door or point option. Going wide with nobody behind you is not an attack ' +
-    'but a slow dump-in with extra steps, because you arrive alone below the goal line with the ' +
-    'defence between you and the net. No contact is drawn: the defender is beaten by having to ' +
-    'turn, not by being hit. The net drive stops at the blue paint: live at the edge of it, but ' +
-    'keep your feet out of the paint and off ' + CREASE_LINE_IS_THE_CREASE +
-    '. Screening from outside the ' +
-    'crease without contact is normally legal; what risks the goal is entering the paint, or ' +
-    'making contact with the goaltender — any contact once you are in the crease, and more ' +
-    'than incidental contact outside it. That is Rule 69 under both the NHL and the IIHF, and it ' +
-    'reads the rule’s structure rather than anything either book states in terms; ' +
+    'The carrier crosses outside the defenceman for the goal line or below, so the defender ' +
+    'has to turn — every stride he takes toward the boards is a stride away from the front of ' +
+    'his own net. It needs both supports drawn here, and no contact is drawn. The net drive ' +
+    'stops at the blue paint: keep your feet out of the paint, and off ' +
+    CREASE_LINE_IS_THE_CREASE +
+    '. Screening from outside the crease without contact is normally legal; what risks the ' +
+    'goal is entering the paint, or making contact with the goaltender — any contact once you ' +
+    'are in the crease, and more than incidental contact outside it. That is Rule 69 under ' +
+    'both the NHL and the IIHF, and it reads the rule’s structure rather than anything either ' +
+    'book states in terms; ' +
     REFEREE_JUDGEMENT,
 
   describe:
@@ -281,19 +306,10 @@ const delayCurl = {
   width: 900,
 
   caption:
-    'The delay, or curl-back — the play that runs against instinct, because turning away ' +
-    'from the offensive zone feels like retreating. A wasted entry at rec and youth level is ' +
-    'characteristically a player alone at the line who forced something instead; this document ' +
-    'has no figure for what share of wasted entries that accounts for, so read it as a coaching ' +
-    'observation rather than a measurement. ' +
-    'Arriving at the line alone against two defenders, the carrier does ' +
-    'not stop and does not force it: he turns away from the pressure, curls back toward the ' +
-    'neutral zone with his body between the defender and the puck, looks back up ice rather ' +
-    'than at the defender, and buys the one or two seconds his late support needs to arrive at ' +
-    'speed. A still ' +
-    'picture can only show the turn and the teammate arriving — the re-attack that follows, ' +
-    'with the puck going to whoever has the best angle and the most speed and often not to you, ' +
-    'is the next moment and is not drawn. ' +
+    'Arriving at the line alone against two defenders, the carrier does not stop and does not ' +
+    'force it: he turns away from the pressure, curls back toward the neutral zone with his ' +
+    'body between the defender and the puck, and buys the one or two seconds his late support ' +
+    'needs to arrive at speed. The re-attack that follows is not drawn. ' +
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
     'curl away from the wall, and never take contact with your back to the boards. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
@@ -408,16 +424,9 @@ const hardRim = {
   numbered: true,
 
   caption:
-    'The hard rim — the first of five distinct dump-ins. The read that calls ' +
-    'for it is pressure coming at you from the inside with a teammate coming down the far wall ' +
-    'or into the far corner: the puck is fired low and hard around the boards so that it follows ' +
-    'the curve of the corner and travels onward in the direction of play, beating the ' +
-    'defenceman stepping up and arriving on the far side before his partner can rotate. A rim ' +
-    'is not a reverse — a reverse goes back against the flow of the play, behind you, and is a ' +
-    'different play for a different purpose, so be precise about which one you are calling for. ' +
-    'The picture shows where the puck is meant to arrive, not that it will: too soft and it dies ' +
-    'behind the net, too hard and it comes off the far boards straight to the weak-side ' +
-    'defenceman.',
+    'Fired low and hard around the boards so it follows the curve of the corner and travels ' +
+    'on in the direction of play, arriving on the far side before the defence can rotate. A ' +
+    'rim is not a reverse: a reverse goes back against the flow of the play, behind you.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -476,15 +485,10 @@ const softAreaDump = {
   width: 900,
 
   caption:
-    'The soft area dump — the second of five distinct dump-ins, and the one ' +
-    'whose value is entirely in the race, which is why the chaser is drawn already most of the ' +
-    'way there. The puck is placed gently into a specific area, usually a corner, so that it ' +
-    'dies there rather than rebounding: that gives your chaser a stationary puck and a body ' +
-    'arriving on it, and gives the retrieving defenceman no help at all from the puck’s momentum. The ' +
-    'read that calls for it is a forechecker arriving in roughly two seconds and a defence that ' +
-    'has to turn and retrieve. Used when your chaser is four seconds away it is the opposite ' +
-    'play — you have simply given the puck to their defenceman with time. Nothing about how the ' +
-    'chase finishes is drawn here; angling is movement over time and a subject of its own.',
+    'Placed gently into a corner so that it dies there rather than rebounding — which is why ' +
+    'the chaser is drawn already most of the way there. The value is entirely in the race: a ' +
+    'stationary puck, a body arriving on it, and no help for the retriever from the puck\'s ' +
+    'momentum.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -542,17 +546,9 @@ const chipPast = {
   numbered: true,
 
   caption:
-    'The chip past a defenceman committing early — the third of five distinct dump-ins, and a ' +
-    'possession play rather than a surrender. He is stepping ' +
-    'up to meet you at or before the line with space behind him on the wall, so the puck is ' +
-    'lifted or pushed past him down the wall while you change your line before you release and ' +
-    'go around the other side to collect it yourself: he is moving toward you, the puck is going ' +
-    'behind him, and if your feet keep moving you are behind their defence with speed. Be precise ' +
-    'about the words — a defenceman challenging you at his own line is ' +
-    'stepping up, while a pinch is a defenceman stepping down from the offensive blue line, and ' +
-    'both get called pinches in conversation. It is under-used because giving the puck up for a ' +
-    'second while going full speed at someone feels wrong, and it is one of the highest-value ' +
-    'plays there is against an aggressive gap.',
+    'He is stepping up to meet you at or before the line with space behind him on the wall, ' +
+    'so the puck is lifted past him down the wall while you go around the other side to ' +
+    'collect it yourself. A possession play rather than a surrender.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -605,20 +601,13 @@ const crossCorner = {
   width: 900,
 
   caption:
-    'The cross-corner dump — the fourth of five distinct dump-ins. The read ' +
-    'that calls for it is the retrieving defenceman being on your side, or the strong-side ' +
-    'corner being crowded: the puck is shot hard diagonally across into the far corner, which ' +
-    'moves it away from the defender best placed to get it and leaves their weak-side ' +
-    'defenceman a long retrieval on his backhand, facing his own boards, with a forechecker ' +
-    'arriving behind him — awkward by design, though which retrievals are hardest is coaching ' +
-    'judgement rather than a counted ranking. It only works because the far-side ' +
-    'winger has read it and is already going there; cross-corner dumps into nobody are pure ' +
-    'giveaways. The same read can instead be answered by going straight north down your own ' +
-    'side, depending on where your speed is, and that alternative is not drawn. ' +
-    'Nothing about how the chase finishes is drawn here; angling is movement over time and a ' +
-    'subject of its own. ⚠️ Read the sentence above again before you skate it, though: a defenceman ' +
-    'facing his own boards has his back to you, which is the picture the checking-from-behind ' +
-    'rules are written about. Arrive on the puck, never on his back.',
+    'Shot hard diagonally into the far corner, away from the defender best placed to get it, ' +
+    'leaving their weak-side defenceman a long retrieval on his backhand facing his own ' +
+    'boards — awkward by design, though which retrievals are hardest is coaching judgement ' +
+    'rather than a counted ranking. It only works if your far-side winger is already going ' +
+    'there. ⚠️ A defenceman facing his own boards has his back to ' +
+    'you, which is the picture the checking-from-behind rules are written about. Arrive on ' +
+    'the puck, never on his back.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -699,14 +688,11 @@ const flipOverTrap = {
   width: 900,
 
   caption:
-    'The flip, or area dump, over a neutral-zone trap — the fifth of five distinct dump-ins, ' +
-    'and the one the trap exists to force. The structure drawn is a ' +
-    '1-3-1: one forechecker, three players across the middle and one back, with the three-across ' +
-    'layer designed to kill the puck at the red line, and skating into ' +
-    'the three is the trap working. So the puck is lifted high off the ice with the blade opened ' +
-    'under it, to travel over sticks and bodies and land in open space behind their defence. A ' +
-    'flat diagram cannot show the height, and the height is the whole play: it goes over the ' +
-    'three-man wall rather than through it, and hangs long enough for your forwards to run ' +
+    'The structure drawn is a 1-3-1, and skating into the three is the trap working. So the ' +
+    'puck is lifted high off the ice with the blade opened under it, to travel over sticks and ' +
+    'bodies and land in open space behind their defence. A flat diagram cannot show the ' +
+    'height, and the height is the whole play: it goes over the three-man wall rather than ' +
+    'through it, and hangs long enough for your forwards to run ' +
     // ⚠️ THE SHORTHANDED EXEMPTION IS NOT UNIVERSAL, and this caption stated it as though it
     // were — while `icing-gaining-the-line` in `rules_primer.mjs` carried the full scope, so
     // one voiced layer said it two ways. USA Hockey 624(b) nullifies icing where "(1) (For all
@@ -793,23 +779,13 @@ const trapezoidAim = {
   width: 900,
 
   caption:
-    'Where the trapezoid applies, it gives you a simple aiming rule: dump to the corners, not to ' +
-    'the goaltender. Behind the goal line, the marked lines are the only area in which he may ' +
-    'play the puck, what is judged is the position of the puck rather than his own position, ' +
-    'and his one ' +
-    'exception is playing it while keeping a skate in contact with his crease. So the corners ' +
-    'are legally out of bounds for him and the ice directly behind the net is not: a puck that ' +
-    'dies straight behind the net is one he can legally stop and set up for his defenceman, ' +
-    'which is exactly the help you were trying to deny him, while a puck in the corner has to be ' +
-    'retrieved by a skater with a forechecker arriving. If you must put it behind the net, put ' +
-    'it there hard. Where the trapezoid applies is not universal — it is the NHL and ' +
-    'the IIHF book, with the KHL commonly said to have one too though no KHL rulebook was ' +
-    'available to check that one; neither the USA Hockey book nor the Hockey Canada book marks ' +
-    'one at all, so a league running on either has none, ' +
-    'and in England and Wales the status is genuinely unsettled — so look behind the net to see ' +
-    'whether the lines are painted at all, ask your league, and plan as though their goalie may ' +
-    'come for it. Where there is no trapezoid the advice flips: rim it hard and low so he cannot ' +
-    'set up on it, or dump to the corner furthest from his stick hand.',
+    'Dump to the corners, not to the goaltender: behind the goal line the marked area is the ' +
+    'only ice on which he may play the puck, so a puck dying straight behind the net is ' +
+    'exactly the help you were trying to deny him. Where it applies is not universal — the ' +
+    'NHL and the IIHF book mark one, with the KHL commonly said to have one too though no KHL ' +
+    'rulebook was available to check that; neither the USA Hockey nor the Hockey Canada book ' +
+    'marks one at all, and in England and Wales the status is unsettled — so look behind the ' +
+    'net, ask your league, and where there is none, rim it hard and low instead.',
 
   describe:
     'The attacking half of the rink, opposition net at the right, with the goalkeeper’s ' +
@@ -891,21 +867,10 @@ const outsideShoulder = {
   width: 900,
 
   caption:
-    'Attacking a defenceman’s outside shoulder — the one nearest the boards on your side — on ' +
-    'the way to the attacking line, with the zone you are entering at the right. His job is to ' +
-    'stay between you and the middle of the ice, and his weakest moment is the pivot: the ' +
-    'instant he turns from backwards to forwards, or opens his hips to one side. So you threaten ' +
-    'the lane he is least worried about and most awkward to defend, because covering it means ' +
-    'opening his hips toward the boards — and the moment they open outward, the inside lane is ' +
-    'the one that is available. That lane is shaded here; it is a name for a piece of ice at one ' +
-    'instant and nothing marks it on the rink. What you do with it is a choice the picture does ' +
-    'not make for you: cut back into the middle, slip the puck between his feet, or hit a ' +
-    'teammate driving the middle. ' +
-    'Two honest limits. He may refuse to open and stay square, and then nothing here happens — ' +
-    'but the outside lane is yours for real, so take it and get to the goal line. And the ' +
-    'carrier’s line stops well short of him on purpose: you are not trying to beat him, you are ' +
-    'trying to make him commit, and no contact is drawn or intended. Pace and eyes up are the ' +
-    'conditions of it. A defender who has committed to one lane cannot defend the other.',
+    'You threaten the lane he is least worried about, because covering it means opening his ' +
+    'hips toward the boards — and the moment they open outward, the inside lane is available. ' +
+    'That lane is shaded here; nothing marks it on the rink. The carrier\'s line stops short ' +
+    'of him on purpose, and no contact is drawn.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, the attack moving left to ' +
@@ -1018,23 +983,16 @@ const middleDrive = {
   width: 900,
 
   caption:
-    'A middle drive on the way into the zone, with the net being attacked at the right: a ' +
-    'teammate without the puck skating hard through the middle of the ice, through the seam ' +
-    'between the two defencemen, at the net — while the carrier comes in wide with the puck. ' +
-    'The driver usually does not get it, and that is not the point. The point is that a ' +
-    'defenceman who ignores a player skating at his net will get scored on, so he cannot ignore ' +
-    'him — which means he cannot step up on the carrier either. One player, running one route, ' +
-    'at speed, buys the carrier several extra feet of space, and those feet are the reason for ' +
-    'the whole run. ' +
-    'It only works if it is committed. A half-hearted middle drive is a player standing in the ' +
-    'slot, which frees the defence rather than freezing it — and a still picture cannot show ' +
-    'effort, so read that arrow as full speed rather than as a path. Two things are not drawn ' +
-    'and are not optional. Your head is up: this is the one route where two defencemen can both ' +
-    'stand you up in open ice, and looking down at the puck as you arrive is what turns that ' +
-    'into an injury. And the drive stops well short of the goalmouth here, because what happens ' +
-    'in the last few feet of a net drive is contact in front of a goaltender, which this picture ' +
-    'does not teach. Where the two defencemen are drawn is one instance and not a system: how a ' +
-    'defence meets a rush is a coaching choice.',
+    'A teammate without the puck skating hard through the seam between the two defencemen, at ' +
+    'the net, while the carrier comes in wide. He usually does not get it; the point is that ' +
+    'a defenceman who ignores a player skating at his net gets scored on, so he cannot step ' +
+    'up on the carrier. A still picture cannot show effort — read that arrow as full speed. ' +
+    'Where the two defencemen are drawn is one instance and not a system: how a defence meets ' +
+    'a rush is a coaching choice. ' +
+    '⚠️ Your head is up: this is the one route where two defencemen can both stand you up in ' +
+    'open ice, and looking down at the puck as you arrive is what turns that into an injury. ' +
+    'And the drive stops well short of the goalmouth here, because what happens in the last few ' +
+    'feet of a net drive is contact in front of a goaltender, which this picture does not teach.',
 
   describe:
     'The attacking half of the rink, the opposition net and goaltender at the right, the attack ' +
@@ -1162,16 +1120,13 @@ const trailSkateDrag = {
   width: 900,
 
   caption:
-    'The trail-skate drag, drawn at the instant the puck is still a stride short of the line. ' +
-    "The far-side winger's body, hands and stick are already in the attacking zone; only the " +
-    'trailing blade is still on the painted line, which keeps them onside everywhere, because a skate ' +
-    'touching any part of the twelve-inch blue line counts as contact with it. The instant the ' +
-    'puck completely crosses, the blade comes down and pushes through into the zone. Under the ' +
-    'NHL and the IIHF, that trailing skate could instead be lifted, held behind the plane of the ' +
-    'line without breaking it, and still be legal; under USA Hockey Rule 630(a) and Hockey ' +
-    'Canada Rule 6.11 an airborne skate is offside, so keep it on the ice under those two books. ' +
-    'The defenceman standing up at the line is exactly why the head stays up: the ' +
-    "winger's body crosses before the skate does.",
+    'The winger\'s body, hands and stick are already in the attacking zone; only the trailing ' +
+    'blade is on the painted line, which keeps him onside, because a skate touching any part ' +
+    'of the twelve-inch blue line counts as contact with it. Under the NHL and the IIHF that ' +
+    'skate could instead be held in the air behind the plane of the line without breaking it, ' +
+    'and still be legal; under USA Hockey Rule 630(a) ' +
+    'and Hockey Canada Rule 6.11 an airborne skate is offside, so keep it on the ice under ' +
+    'those two books.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward — the far-side ' +
@@ -1242,15 +1197,9 @@ const dropPass = {
   width: 900,
 
   caption:
-    'A drop pass approaching the line, attacking net at the right. The carrier has already left ' +
-    'the puck rolling in the neutral zone, still short of the blue line, and drives on alone as ' +
-    'a decoy — taking a defenceman with him rather than coasting. A trailing teammate, arriving ' +
-    'from the far side with more speed than the defence has matched, skates onto the loose puck ' +
-    'to carry it in himself. The drop is to a space, not to a stick: the receiver has to be seen ' +
-    'and already moving before the puck is left. It answers one specific picture, a trailing ' +
-    'teammate with room and speed behind you, and is not a default read. Dropped blind, with no ' +
-    'trailer in sight, this is the worst turnover in hockey — a stationary puck left facing your ' +
-    'own net.',
+    'The carrier has already left the puck rolling short of the line and drives on alone as a ' +
+    'decoy; the trailer arrives with speed the defence has not matched. The drop is to a ' +
+    'space, not to a stick — dropped blind it leaves a stationary puck facing your own net.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. A puck sits alone in the ' +
@@ -1320,15 +1269,10 @@ const highTriangle = {
   width: 900,
 
   caption:
-    'The high triangle, one of several named ways to enter with an extra attacker — drawn here ' +
-    'with the puck carrier driving wide, a second attacker driving wide on the far side with no ' +
-    'puck, and the third trailing into the high slot. The read is whether a defenceman goes with ' +
-    'the wide driver: here the near one shifts to cover him, which is what opens the shot, the ' +
-    'pass across, or the drop behind for the trailer. A third attacker is worth nothing unless it ' +
-    'makes one defender responsible for two of you — that single movement is the cue, not a ' +
-    'route to memorise. Which named pattern your team actually runs — high triangle, midlane ' +
-    'drive, triple drive, drive and delay — is a coaching choice, and most teams drill one or two ' +
-    'rather than all of them, so ask rather than assume this is the one you will see.',
+    'The carrier driving wide, a second attacker driving wide on the far side with no puck, ' +
+    'and the third trailing into the high slot. The read is whether a defenceman goes with ' +
+    'the wide driver — here the near one shifts to cover him, and that movement is the cue. ' +
+    'Which named pattern your team runs is a coaching choice.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. Three own forwards approach ' +
@@ -1419,15 +1363,10 @@ const vsStandingUp = {
   width: 900,
 
   caption:
-    'A defence standing up at the blue line rather than backing in — one structure among ' +
-    'several you will meet, holding the line level to take away the middle and daring you to go ' +
-    'around it. Two answers at once: the wide attacker chips the puck past his stationary ' +
-    'defenceman, who has no backward momentum to recover, and skates around to collect it — the ' +
-    'ideal chip situation, because standing still leaves nothing to use against him — while a ' +
-    'fourth attacker arrives late and unmarked well behind the play, because standing up means ' +
-    'both defencemen are watching the puck rather than the ice behind it. Attacking the seam ' +
-    'between the two of them, or swinging the puck to the weak side, are the other two answers ' +
-    'to this same look and are not drawn here.',
+    'A defence holding the line level rather than backing in, taking away the middle — one ' +
+    'structure among several. Two answers at once: the wide attacker chips past a stationary ' +
+    'defenceman with no backward momentum to recover, while a fourth attacker arrives late ' +
+    'and unmarked behind the play.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. Two opposition defencemen ' +
@@ -1513,16 +1452,11 @@ const squashAndSlide = {
   width: 900,
 
   caption:
-    'You are defending here: squash-and-slide, one of several named ways to receive an entry — described publicly of ' +
-    "Bruce Cassidy's Boston Bruins around 2018-19, not a universal system. The two defencemen " +
-    'hold the same depth and slide across together like a foosball bar: the puck is on the near ' +
-    'side here, so both slide toward it, the near one forcing the carrier outside while the far ' +
-    'one holds square rather than dropping off deep. The first forward back does not join that ' +
-    'pressure — his job is the slot, protecting the middle while the pair squashes the play to ' +
-    'the wall. It buys time and space at a cost: one player sliding late, or a lazy backcheck ' +
-    'leaving the slot, and the weak side is wide open. Standing up at the line, or receiving the ' +
-    'entry with the defencemen simply holding the dots, are the alternatives — find out which ' +
-    'your team actually runs.',
+    'You are defending here. Both defencemen hold the same depth and slide across together ' +
+    'like a foosball bar: the puck is on the near side, so the near one forces the carrier ' +
+    'outside while the far one holds square. The first forward back takes the slot. Described ' +
+    'publicly of Bruce Cassidy\'s Boston Bruins around 2018-19, not a universal system — find ' +
+    'out which your team runs.',
 
   describe:
     'The attacking half of the rink from the defending team’s point of view, their own net ' +

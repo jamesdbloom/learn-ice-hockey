@@ -47,8 +47,6 @@ This has three practical consequences.
 
 ## 2. What "time" actually means
 
-![](diagram:breakout-reverse)
-
 ```facts
 Key: Your time is the distance to the nearest threatening defender divided by their closing speed — a teaching model, not a measured quantity
 Read: Closing speed, not distance — twenty feet closing hard is less time than three feet travelling away
@@ -68,6 +66,8 @@ Work through the two cases that catch players out.
 
 **You can have no time with an opponent twenty feet away.** A defenceman skating backwards at you with a tight gap, on balance, with their stick already in your lane, is twenty feet off and closing at maybe fifteen feet per second of relative velocity. You have a bit over a second, and part of that second is already spoken for by the puck being on your backhand. Meanwhile the "twenty feet" made you feel safe. It wasn't.
 
+![](diagram:breakout-reverse)
+
 **So read closing speed, not distance.** Concretely, look at three things when you scan:
 
 - **Which way are their hips pointed?** Hips are the honest signal — a stick can be anywhere, but a player accelerates where the hips face. This is the same read that gap control is built on.
@@ -84,8 +84,6 @@ Six of these seven tools require no skating speed and no hands. That is the poin
 
 ### Deception — defenders react to what you show them
 
-![](diagram:show-one-shoulder-open-the-other)
-
 ```facts
 Key: Space is created in the defender's mind before it exists on the ice — show them the wrong option
 Options: Fake shot, look-off, head and shoulder fake, or skating at one shoulder to open the other
@@ -101,6 +99,8 @@ Space is created in the defender's mind before it exists on the ice. A defender 
 - **The look-off.** Turn your head and eyes hard to one option, then deliver to another. This works on goalies and on defenders, and it works because head-and-eye direction is the earliest cue available to them, so it is the one they are trained to read. The cost is that you are not looking where you are passing, so it only belongs on passes you have already surveyed. Look, then look away, then pass.
 - **The head and shoulder fake.** The smallest move on this list. A hard head-and-shoulder dip to your forehand side while carrying wide will move a defender's shoulders and, half the time, their weight. You do not need to beat them; you need them to be leaning the wrong way for a fifth of a second, which is enough to change a contested lane into an open one.
 - **Showing one option to open another.** Skate at a defender's inside shoulder and they close the middle, which opens the outside. Skate at the outside shoulder and they widen, which opens the middle. You are not trying to beat them at the point of contact — you are trying to make them commit before you decide.
+
+![](diagram:show-one-shoulder-open-the-other)
 
 The [Cutting Edge Ice Academy](https://www.edgeiceacademy.com/article/how-deception-creates-space-without-speed) coaching material — the name in its own footer, though its domain reads `edgeiceacademy.com` — describes what a deceived defender actually does: they pivot their hips, reach with the stick, or shift weight in response to a cue that was false. Every one of those is a positional loss you can spend.
 
@@ -188,8 +188,6 @@ The trade-off is honest: the boards remove half your options too. Wall possessio
 
 ### Attacking into space, not at people
 
-![](diagram:attack-the-seam)
-
 ```facts
 Never: Skate directly at a defender — you hand them a stationary problem they can win by doing nothing
 Action: Attack the seam, the gap between two defenders that neither has clearly claimed
@@ -203,6 +201,8 @@ Action: In the offensive zone, move to the empty ice rather than to the puck
 The single most common waste of an odd-man rush is skating directly at a defender. You have handed them a stationary problem and made their job a coin-flip they can win by doing nothing.
 
 **Attack the seam.** The seam is the gap *between* two defenders — the space neither has clearly claimed. Attacking it forces a communication and a decision between two players rather than a reaction from one, and communication under pressure is where teams break. If they both take you, you have created a two-on-one somewhere else. If neither does, you're through.
+
+![](diagram:attack-the-seam)
 
 Same idea across the whole sheet:
 
@@ -322,8 +322,6 @@ The principle, and it is RinkHive's: *"Your stick's primary job in the defensive
 
 ### Pressure with support — why lone pressure creates holes
 
-![](diagram:layer-not-converge)
-
 ```facts
 Key: Lone pressure does not take space away, it moves it — behind you
 Action: Send pressure only with a second layer, positioned to take the puck if the first forces a rushed play and to cover the ice they left
@@ -337,6 +335,8 @@ Risk: If you go and your teammate doesn't, you have made a hole rather than clos
 Sending one player to pressure the puck, with nobody behind them, does not take space away. **It moves it.** The pressuring player vacates the ice they came from, and if they are beaten, that ice is now a clean lane and your team is a man short behind the puck.
 
 Pressure only takes space away when there is a **second layer** — a teammate positioned to take the puck if the first pressure forces a rushed play, and to cover the ice the first player left.
+
+![](diagram:layer-not-converge)
 
 This is a system question, so name your system. **The house default throughout is a 2-1-2 forecheck and a low zone collapse (zone) defensive-zone coverage.** In a 2-1-2, F1 pressures, F2 takes the first escape option, F3 holds the high middle as the safety valve — and **F1/F2/F3 are roles defined by order of arrival, not by position; whoever gets there first is F1.** A 1-2-2 puts one forechecker in and holds two back, which concedes possession behind their net but denies the neutral zone entirely. A 1-3-1 neutral-zone trap concedes even more and denies even harder.
 
@@ -364,8 +364,6 @@ This is a strong general principle rather than an absolute — some coaches will
 
 ### Deny the reception, not the pass
 
-![](diagram:deny-the-reception)
-
 ```facts
 Never: Lunge at the passing lane — passes are fast and you are guessing
 Action: Arrive as the puck does, on a route that puts you on the receiver with your stick on their blade or in their receiving lane
@@ -377,6 +375,8 @@ Key: A receiver forced to catch a puck while being closed on loses their scan �
 You will spend a career trying to intercept passes and mostly failing, because passes are fast and you are guessing. There is a better version.
 
 **Arrive as the puck does.** Rather than lunging at the passing lane, take a route that puts you on the receiver at the moment the puck reaches them, with your stick on their blade or in their receiving lane. The result is the same as an interception — no clean possession — but it does not require you to guess right, and it does not put you out of position when you're wrong.
+
+![](diagram:deny-the-reception)
 
 Two ideas make this work:
 

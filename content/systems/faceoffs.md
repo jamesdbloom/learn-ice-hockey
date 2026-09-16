@@ -690,8 +690,6 @@ Deception belongs here too: a small feint of the shoulder, a hip fake, or a deli
 
 ### Handedness and which side you're strong on
 
-![](diagram:faceoff-strong-side-dot)
-
 ```facts
 Convention: Coaching sources call the strong-side draw a right-shot centre on the right side, or a left-shot on the left
 Key: Your strong side is the circle where your natural backward pull sends the puck toward the boards
@@ -711,6 +709,8 @@ A centre's shot handedness determines which circle they're better in, and every 
 
 > **Flagged:** the sources above state the mapping (right shot / right side) but do not spell out the reference frame — "right side" as you stand at the dot facing the opponent's end. That is the standard reading and it's the one used here, but the sources are not explicit about it. **The reliable self-test that doesn't depend on anyone's convention: your strong side is the circle where your natural backward pull sends the puck toward the boards.** Take ten draws in each circle and you'll know within a minute.
 
+![](diagram:faceoff-strong-side-dot)
+
 **What teams do about it:**
 - **Match the circle to the centre.** This is why coaches send a specific centre out for a specific dot, and why the rules that let you *choose* the dot (after an icing, or starting a power play) are more valuable than they look.
 - **Flip your hands.** Some NHL centres — Vincent Trocheck is the frequently-cited example — take weak-side draws holding the stick the other way round, recreating strong-side mechanics on the wrong side of the ice. It is a real technique, and it is a lot of work: you are learning a second, mirror-image skill. Worth it if you take 1,000 draws a season; probably not if you take 100.
@@ -728,14 +728,6 @@ A centre's shot handedness determines which circle they're better in, and every 
 > **A word on "left" and "right," because that confusion is exactly what this section is for.** Every end of the rink has two faceoff circles, one nearer each side board, and which one is on your left changes with which net you're defending and which way you're facing — it isn't fixed. That is why the alignments below are written in terms that do not depend on which way you are facing. Left and right are not banned — you will hear them constantly, and this document uses them further down where a fixed reference makes them safe — but they need that reference agreed first, and at a draw it usually is not. Two things about the two circles *are* fixed, and everything below is written in those terms instead: which one is nearer the boards you'll exit toward — called **boards-side** below, with the other called **inside** — and which one suits your centre's shot hand, his **strong side**, covered in "Handedness and which side you're strong on" above. Learn boards-side/inside and strong-side/weak-side rather than left and right, and the alignment below applies unchanged at whichever circle you're actually standing at: it's a mirror image at the other one.
 
 ### Defensive-zone draws
-
-![](diagram:faceoff-dzone-alignment)
-
-![](diagram:faceoff-dzone-alignment-other-circle)
-
-![](diagram:faceoff-dzone-clean-loss)
-
-![](diagram:faceoff-dzone-tie-up)
 
 ```facts
 Priority: Do not lose this cleanly — a tie-up is acceptable, a clean loss to their strong-side point is not
@@ -762,6 +754,14 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 
 **Which circle you're actually at matters as much as who's on it.** Boards-side and inside above are relative to whichever circle the draw is at, not to a fixed side of the rink — the alignment doesn't change from one circle to the other. What does change is which circle is your centre's strong side, and a team that gets to choose its dot — after an icing, or to start a power play — uses that choice to put him there; see "Handedness and which side you're strong on" above.
 
+![](diagram:faceoff-dzone-alignment)
+
+![](diagram:faceoff-dzone-alignment-other-circle)
+
+![](diagram:faceoff-dzone-clean-loss)
+
+![](diagram:faceoff-dzone-tie-up)
+
 **On a clean win:**
 - Pull to the **boards-side defenceman**, who rims it out or hits the boards-side winger for a direct exit. This is the default because the boards are the safe half of the ice.
 - The **wingers release** the moment the puck is secured — you are not needed in the battle, you are needed out on the wall **between the hash marks and the goal line**, which is the outlet spot [Breakouts](breakouts.md) covers. That is at or just below the dot line, roughly twenty feet out from the goal line — not thirty feet up the wall, which would put you above the outlet and make the pass long, flat and into your back.
@@ -780,8 +780,6 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 
 
 ### Offensive-zone draws
-
-![](diagram:faceoff-ozone-alignment)
 
 ```facts
 Position: Strong-side defenceman at the point, feet already set and stick already loaded — this is the shooter
@@ -806,6 +804,8 @@ The one place in hockey where you get to run a genuine set play with a stationar
 
 **The same mirroring applies here as in your own end.** Boards-side and inside are relative to whichever circle hosts the draw, not to a fixed side of the ice — and "strong-side" for the point man here means the draw side, not necessarily his shooting hand (see "Handedness and which side you're strong on" above, which is where the two meanings of "strong side" in this document are kept apart).
 
+![](diagram:faceoff-ozone-alignment)
+
 **On a clean win:** run the set play (see below). The important thing is that the shooter's feet are already planted — this is one of the very few shots in hockey where you don't have to receive, settle and set. That is worth more than a slightly better shooting angle.
 
 **On a clean loss:** the priority flips instantly to **not conceding a counterattack**. The weak-side defenceman holds; the strong-side defenceman recovers to the line; the wingers pressure the puck rather than retreating, because you have four skaters above the puck and their exit options are limited. This is the moment a 2-1-2 forecheck is at its most effective, because everyone is already in position for it.
@@ -813,8 +813,6 @@ The one place in hockey where you get to run a genuine set play with a stationar
 **On a tie-up:** attack the puck with the two nearest bodies and keep the two defencemen honest at the line. An offensive-zone tie-up is a free 50-50 puck in the other team's end — a good outcome, not a failure.
 
 ### Neutral-zone draws
-
-![](diagram:faceoff-neutral-zone)
 
 ```facts
 Position: Both wingers wide in their lanes, level with or just behind the dot
@@ -835,6 +833,8 @@ The lowest-stakes draws, and the ones most worth taking a risk on. **The setup b
 
 **On a win:** advance the puck immediately. Neutral-zone possession is worth having but it decays fast — **Daniel Weinberger**, writing at Hockey Graphs, found that neutral-zone faceoff wins mostly turn into **dump-ins**, and that possessions containing a dump-in produced 5.5 shots and 0.17 **expected goals** per 100 possessions versus 32 shots and 0.68 expected goals for those without one. (*Expected goals* is a model estimate of how many goals an average shooter would score from those shots, given where and how they were taken — it values chance quality, not just chance count.) **⚠️ Note the league before you carry these numbers anywhere.** Weinberger's data is **InStat tracking of the 2018-19 Swiss National League**, not the NHL — he says so in the article — so this is the one set of figures in this document that is not measured on the league the rest of it is written to. **The four figures are quoted exactly as the article gives them** — but note what a roughly six-fold gap implies: this is one author's tracked sample of possessions following neutral-zone faceoff wins in one league in one season, not a league-wide measurement, and part of the gap is selection rather than causation (a possession that never generated a controlled entry is *why* it ended in a dump-in). Treat the direction as solid and the multiple as approximate. A won neutral-zone draw that ends in a dump-in has produced very little. Look to carry or pass into the zone with control. See [Zone Entries](zone_entries.md).
 
+![](diagram:faceoff-neutral-zone)
+
 **On a loss:** your defencemen are the whole plan. Gap up immediately and defend the rush — see [Defending the Rush](defending_the_rush.md).
 
 **Why this is where you experiment:** a lost neutral-zone draw costs you almost nothing. It is the right place to try the "lose it forward" play — going **round** the other centre rather than through them, which in women's hockey is IIHF Rule 101.1 rather than a preference (see "The techniques that use your body, your feet or your hands") — the weak-side flipped grip you're learning, or a technique you want your opponent to see now so it's in their head for the defensive-zone draw later.
@@ -849,10 +849,6 @@ Set plays off draws are the closest hockey gets to American football. They also 
 
 ### Offensive-zone plays
 
-![](diagram:faceoff-ozone-d-one-timer)
-
-![](diagram:faceoff-ozone-winger-walkout)
-
 ```facts
 Options: The D one-timer, the winger walk-out, the tip play, or a board-side variation
 Key: The point of the D one-timer is that the shooter's feet are set before the puck moves
@@ -865,6 +861,10 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 **The D one-timer.** The centre pulls the puck straight back to the strong-side defenceman, who shoots first-time. The whole point is that the shooter's feet are set and traffic is already in place before the puck moves. Its weakness is that it is the play every penalty kill and every defensive alignment expects — the inside winger's shooting lane needs to be cleared by someone, usually the net-front player stepping across.
 
 **The winger walk-out.** The centre pulls the puck to the inside winger in the circle, who takes a stride toward the middle and shoots or feeds the slot. Better than the D one-timer against a team that immediately pressures the point, because you're attacking the space they vacated.
+
+![](diagram:faceoff-ozone-d-one-timer)
+
+![](diagram:faceoff-ozone-winger-walkout)
 
 **The tip play.** The pull goes to the point, but the intended outcome is a deflection rather than a clean shot — someone screens, someone tips. Lower expected value per shot, higher rebound and chaos value, and it works when the goalie can see everything else you do. This is also the safest play, because a point shot into traffic rarely turns into a counterattack.
 
@@ -1048,8 +1048,6 @@ Note the restrictions (Rule 87.1): **no timeout after a faceoff violation**, and
 
 ### With the goalie pulled
 
-![](diagram:faceoff-goalie-pulled)
-
 ```facts
 Rule: The goalkeeper may not participate in a faceoff (Rule 76.1)
 Rule: A team that pulled its goalie may still substitute after an icing to put the goalie back in (NHL and IIHF Rule 81.4)
@@ -1067,6 +1065,8 @@ Key: Defending against a pulled goalie, winning the draw effectively ends the ga
 - **⚠️ Under the NHL, a visiting team may get no warning at all.** NHL Rule 82.3 opens *“Any attempt by the visiting team to make a change after the Referee's signal shall result in the assessment of a bench minor penalty for delay of game”* — a flat first-offence bench minor — where that same book's Rule 82.2(v) warns *“either team”* first. **The NHL book says both things and does not say which governs**, and the IIHF's 82.3 has a different first paragraph again, under which a failure or tardiness to comply by either team *“will result first in a warning from the Referee and then a bench minor penalty”*. So do not rely on the warning in a North American game either.
 - **Six skaters changes the alignment entirely.** The extra attacker usually goes to the net front or the high slot, and both defencemen are at the points. The centre is under maximum pressure to win it back cleanly, because there is no safe outlet and no recovery from a loss.
 - **Defending against a pulled goalie:** win the draw and the game is effectively over — you get an empty net at the other end. This is the single highest-leverage faceoff in hockey and it should get the most practice time of any of them, which in most organisations it does not.
+
+![](diagram:faceoff-goalie-pulled)
 
 ---
 

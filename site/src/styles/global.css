@@ -2240,6 +2240,76 @@ figure.diagram svg {
 .prose h4 + p:empty + figure.diagram,
 .prose h4 + figure.diagram { margin-top: 0.5rem; }
 
+/*
+  A DIAGRAM MAY NOW PRECEDE A HEADING, and this is the gap that makes it legible.
+
+  Owner's ruling, 15 September 2026: "we don't want a diagram too close to the next
+  header so that it is clear the next item is a header, however we can always add a
+  little gap - then there is no reason why a diagram can't precede the next header."
+
+  ⚠️ WHY THIS SELECTOR HAS TO EXIST. `content_style_guide.md` used to forbid a marker
+  landing immediately before a heading outright. The rule carried a COUNT rather than a
+  failure, and it was expensive: combined with "never inside a list" it left no legal
+  destination at all whenever a caption's teaching passage was the last item of a list,
+  which is where most of a marker wave's un-moved markers came from.
+
+  ⚠️ THE ACTUAL PROBLEM WAS NEVER THE POSITION, IT WAS THE SPACING. Without this rule a
+  figure's own `margin: 2rem 0` collapses against the heading's top margin, so a heading
+  following a diagram got the SAME separation as an ordinary paragraph does - and that is
+  what made it ambiguous which section the picture belonged to.
+
+  ⚠️ The mirror of the block above: those selectors TIGHTEN a diagram that follows a
+  heading so it sits exactly where a first paragraph would. This one LOOSENS a diagram that
+  precedes one, so the heading cannot be mistaken for the caption's continuation. The
+  figcaption is the last thing read before it, which is why the gap is measured from the
+  figure and not from the caption.
+*/
+.prose figure.diagram:has(+ h2),
+.prose figure.diagram:has(+ p:empty + h2) { margin-bottom: 3.25rem; }
+.prose figure.diagram:has(+ h3),
+.prose figure.diagram:has(+ p:empty + h3) { margin-bottom: 2.75rem; }
+.prose figure.diagram:has(+ h4),
+.prose figure.diagram:has(+ p:empty + h4) { margin-bottom: 2.5rem; }
+/*
+  ⚠️ h5 AND h6 ADDED 15 September 2026 AFTER A BROWSER REVIEW MEASURED THEIR ABSENCE.
+  No marker lands before an h5 or h6 today -- all 331 figures were probed -- so this was not
+  a live defect. It is here because of HOW it would have failed: a future marker move into
+  that position falls back to the 2rem baseline, which is EXACTLY the figure-followed-by-a-
+  paragraph spacing, so the heading would read as the caption's continuation and NOTHING
+  WOULD REPORT IT. check_readability_census would still say pass. That is the precise failure
+  four marker agents each named as the thing they could not check, parked one heading level
+  deeper than any of them looked.
+*/
+.prose figure.diagram:has(+ h5),
+.prose figure.diagram:has(+ p:empty + h5) { margin-bottom: 2.5rem; }
+.prose figure.diagram:has(+ h6),
+.prose figure.diagram:has(+ p:empty + h6) { margin-bottom: 2.5rem; }
+/*
+  ⚠️ MEASURED, and the hr rule is nearly a no-op: hr already carries margin-top: 40px, so
+  margin collapse yields 40px without this rule and 44px with it -- it buys FOUR PIXELS,
+  where the h3 rule buys twelve over the same 32px baseline. Verified by ablation in a real
+  browser: the declarations were removed from the live stylesheet and every gap re-measured.
+  It happens not to matter, because the symmetric 44-above/44-below reads correctly as a
+  section divider. ⚠️ If an hr ever needs to visibly belong to the NEXT section rather than
+  float between, THIS is the value to raise -- not the h-level ones.
+  ⚠️ And :has(+ h2) below is ENTIRELY UNEXERCISED: zero figures in the corpus are followed by
+  an h2, because an h2 in this corpus is always preceded by an hr. Correct by inspection,
+  never rendered.
+  ⚠️⚠️ MEASURED 15 September 2026, AND IT IS WIDER THAN THE h2 NOTE ABOVE ADMITS: EVERY real
+  occurrence in the corpus goes through the `p:empty` variant -- a browser review measured
+  `viaEmpty: true` on all eleven live cases it found. So the BARE-ADJACENCY half of every
+  level, `figure.diagram:has(+ hN)` with no empty paragraph between, is as unexercised as h5
+  was. It is correct -- the same review synthesised each case in the DOM and read computed
+  style: h2 52, h3 44, h4 40, h5 40, h6 40, hr 44, against a 32px paragraph baseline, identical
+  through both variants -- but correct-by-synthesis is not the same as rendered, and a reader
+  of this block should not infer from the h2 note that everything else here is exercised.
+  ⚠️ Independent evidence that no selector in this block is malformed: the production minifier
+  MERGES the h4, h5 and h6 rules into one declaration block in the built stylesheet. A parser
+  that had choked on a selector could not have done that.
+*/
+.prose figure.diagram:has(+ hr),
+.prose figure.diagram:has(+ p:empty + hr) { margin-bottom: 2.75rem; }
+
 figure.diagram figcaption {
   margin-top: 0.6rem;
   font-size: 0.9rem;

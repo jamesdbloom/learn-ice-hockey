@@ -256,22 +256,16 @@ const puckOnTheFarSide = {
   width: 900,
 
   caption:
-    'Puck protection in one picture, drawn in open ice in the attacking end with the opposition ' +
-    'net at the right; the geometry is the same anywhere on the sheet. You have the puck, a checker ' +
-    'is on the side of you nearer the middle of the ice, and the puck is drawn on the other side of ' +
-    'you, away from him, so your body is between the two. The numbers in the picture are the ' +
-    'argument for it: he is about nine and a half feet from you and about fifteen from the puck. If ' +
-    'the puck sits on the pressure side instead, you have already lost it — you are asking your ' +
-    'stick to beat his stick, and his has the shorter distance to travel. ' +
-    'Three things the picture cannot show, and they are most of the skill. Which way you are turned ' +
-    'is not drawn, because a glyph in this notation has no front and no back: read this as where ' +
-    'the puck is, not as how you are standing. What the document asks for is your backside and the ' +
-    'outside of your hip into the pressure rather than your chest, over a base wider than your ' +
-    'shoulders with the knees bent. Your stick is not drawn either, and it belongs on the far side ' +
-    'of the puck too, so that a poke check has to go through the puck and your blade to reach it. ' +
-    'And a far-side puck is only available to hands that can work wide of the body — hands pinned ' +
-    'to the hips leave no far side at all. The checker is drawn as a forward because a shape had to ' +
-    'be chosen and this notation has no neutral one; the section says only "the checker". ' +
+    'Puck protection in open ice; the geometry is the ' +
+    'same anywhere on the sheet. The checker ' +
+    'is nearer the middle of the ice and the puck is on the other side of ' +
+    'you, so your body is between the two: nine and a half feet from him to you, fifteen to the ' +
+    'puck. ' +
+    'Which way you are turned ' +
+    'is not drawn — a glyph here has no front and no back — so read this as where ' +
+    'the puck is, not as how you are standing. Your stick is not drawn either, and it belongs on ' +
+    'the far side of the puck too. The checker is a forward because a shape had to ' +
+    'be chosen; the section says only "the checker". ' +
     'Nothing in the picture shows contact. ' +
     '⚠️ And the moment a battle like this reaches the boards, this document\'s own override ' +
     'outranks every word of it: never turn your back to the wall and never duck, and neither ' +
@@ -417,9 +411,9 @@ const wherethePuckIs = {
   width: 900,
 
   caption:
-    'Your own net at the right, your goaltender in his crease, and a loose puck drawn inside the ' +
-    'shaded blue paint beside him with you standing outside it. This is the picture worth ' +
-    'carrying away, because the test is not where you are — it is where the puck is. ' +
+    'A loose puck inside the ' +
+    'shaded crease paint beside your goaltender, with you standing outside it. The test is not ' +
+    'where you are — it is where the puck is. ' +
     'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
     // ⚠️ "all four" flattened USA Hockey, which alone gives the referee an alternative:
     // Rule 614(b) Falling on Puck, "A penalty shot/optional minor penalty shall be
@@ -433,21 +427,20 @@ const wherethePuckIs = {
     '"a penalty shot/optional minor penalty shall be assessed", so that book alone lets the ' +
     'referee take the lesser option. All four exempt the goalkeeper, whose ' +
     'job that is. What decides it is the puck\'s location at the instant it is covered. So the two ' +
-    'cases run opposite to the way most players guess: a defender standing inside the crease who ' +
-    'covers a puck that was outside it has given away a minor penalty, and a defender standing ' +
-    'outside the crease, exactly as drawn here, who covers a puck that was inside it has given away ' +
+    'cases run opposite to the way most players guess: standing inside the crease and ' +
+    'covering a puck that was outside it is a minor penalty; standing ' +
+    'outside the crease, exactly as drawn here, and covering a puck that was inside it is ' +
     'the penalty shot. ' +
-    'Then the two things the picture cannot show, and the rule reaches both. The crease is a ' +
+    'The crease is a ' +
     'volume and not a patch of ice — all four books run it from the ice up to the top of the goal ' +
-    'frame — so a puck you pluck out of the air over this paint, below the crossbar, is a puck in ' +
-    'the crease. A plan view has no height in it, and the case that catches players out is a puck ' +
-    'in the air, so the drawing has to put the puck on the ice and the words have to carry the rest. ' +
-    'The instruction is the same wherever you are standing, which is why none of it needs working ' +
-    'out in the moment: do not keep hold of it. Knock it straight down at your feet in one ' +
+    'frame — so a puck plucked out of the air over this paint, below the crossbar, is a puck in ' +
+    'the crease, and a plan view has no height in it to draw that with. ' +
+    'The instruction is the same wherever you are standing: do not keep hold of it. Knock it ' +
+    'straight down at your feet in one ' +
     'continuous motion and play it with your skate or your blade. ' +
-    'Note what the shading is here, because it is the exception among these diagrams: the goal ' +
-    'crease is genuinely painted on the ice, where the tinted regions elsewhere are only names for ' +
-    'areas. You are drawn as a defenceman because a shape had to be chosen and the rule reaches ' +
+    'The goal ' +
+    'crease is genuinely painted on the ice, unlike the tinted regions elsewhere in this corpus. ' +
+    'You are drawn as a defenceman, but the rule reaches ' +
     'any skater. ' +
     '⚠️ And your goaltender is on the ice in this picture, deliberately. With him pulled for an ' +
     'extra attacker the price is worse rather than the same.',
@@ -710,30 +703,23 @@ const youCannotBeatTwo = {
   // unnumbered.
 
   caption:
-    'The moment a second defender arrives, drawn in the attacking end with the opposition net at ' +
-    'the right. You have the puck wide, one defenceman is already on you, and a second opponent is ' +
-    'closing from the middle of the ice — his route ends in two short bars rather than an ' +
-    'arrowhead, which in this notation means he arrives and contains rather than carrying on ' +
-    'through you. ' +
-    'You can beat one player. You cannot beat two, and pretending otherwise is how a two-on-two ' +
-    'becomes a rush the other way. So both of the drawn options are puck options rather than moves. ' +
-    'One is the pass to the teammate the second defender\'s arrival has left open — he has just ' +
-    'vacated that ice, which is the whole reason the teammate is open, and why the two are drawn ' +
-    'near each other. The other is the chip into the space behind them, up the boards past the ' +
+    'A second defender arriving: you have the puck wide, one defenceman is already on ' +
+    'you, and a second opponent is ' +
+    'closing from the middle. ' +
+    'Both drawn options are puck options rather than moves: the pass to the teammate whose ice ' +
+    'the second defender has just ' +
+    'vacated, and the chip into the space behind ' +
+    'them, up the boards past the ' +
     // ⚠️ FULL STOP, NOT A COLON. This read "…and it is not drawn: protect the puck, take the
     // contact and wait for support" — a colon opening onto three imperatives with a negation
     // still live, so a listener can hear "not protect the puck, not take the contact". The
     // negation predicates of the DIAGRAM rather than of the reader, which is why it is the
     // milder end of the class, but the tail is the instruction and the fix is one character.
     'first defenceman. There is a third option in this section and it is not drawn. Protect the ' +
-    'puck, take the contact and wait for support. Standing still has no symbol here, and an ' +
-    'unmarked absence would have read as a two-item list. ' +
-    'Read this as one instant and not as a promise. Whether the second man has really left somebody ' +
-    'open depends on who else is on the ice, and none of that is drawn — the teammate is placed to ' +
-    'show what "left open" means, not to say he will be there. What is not on the list, in any ' +
-    'version of it, is a third move: every extra move is another moment the puck is exposed and ' +
-    'another chance for a stick to arrive. The two opponents are drawn as a defenceman and a ' +
-    'forward because shapes had to be chosen and this notation has no neutral one; the section says ' +
+    'puck, take the contact and wait for support. Standing still has no symbol here. ' +
+    'Read this as one instant and not as a promise: the teammate ' +
+    'shows what "left open" means, not that he will be there. The two opponents’ shapes were ' +
+    'forced by the notation; the section says ' +
     'only that a second defender is arriving. ' +
     '⚠️ And protecting is a way to buy a second, not a place to live: every second you hold the ' +
     'puck under pressure another checker is arriving. If this drifts to the boards, the override in ' +
@@ -965,31 +951,26 @@ const theLastPlayerBack = {
   width: 1100,
 
   caption:
-    'You are the last player back, drawn on the whole sheet with your own net at the left and the ' +
-    'end you are attacking at the right. You have the puck in the neutral zone, two of their ' +
-    'forwards are up on you — the nearer one is closing, and his route ends in two short bars rather ' +
-    'than an ' +
-    'arrowhead, which in this notation means he arrives and contains rather than carrying on ' +
-    'through you — and the shaded ice behind you holds none of your skaters at all. The only player ' +
-    'in it is your goaltender. That is the whole picture: lose the puck here and the two of them go ' +
-    'the other way through all of that ice with nobody but him in front of them. So the instruction ' +
+    'You are the last player back, drawn on the whole sheet with your own net at the left. You have ' +
+    'the puck in the neutral zone, two of their ' +
+    'forwards are up on you, and the shaded ice behind you holds none of your skaters: the ' +
+    'only player ' +
+    'in it is your goaltender. Lose the puck here and the two of them go ' +
+    'the other way with nobody but him in front of them. So the instruction ' +
     'is a conditional rather than a ban on carrying — if losing the puck means an odd-man rush ' +
-    'against you, the move is off, always — and the question to ask is not whether you can beat the ' +
-    'man in front of you but what is behind you if you do not. The puck is drawn on the side of you ' +
-    'away from the pressure, which is where it belongs whatever you decide to do next. ' +
-    'Three things the drawing cannot do. It cannot show the rush that follows, because a plan view ' +
-    'has no time in it: the shading is what is behind you now, not a prediction. Two of your ' +
+    'against you, the move is off, always. ' +
+    'The shading is what is behind you now, not a prediction of the rush; a plan view ' +
+    'has no time in it. Two of your ' +
     'teammates are drawn far up the ice to show what being ahead of the puck looks like, and the ' +
-    'other two are not drawn at all, because where they stand varies and is not the point — what ' +
-    'makes this the situation is only that none of the four is behind you. And you are drawn as a ' +
-    'defenceman because a shape had to be chosen and this notation has no neutral one; a forward ' +
+    'other two are not drawn at all, because what ' +
+    'makes this the situation is only that none of the four is behind you. You are drawn as a ' +
+    'defenceman because a shape had to be chosen; a forward ' +
     'can be the last player back just as easily. ' +
     '⚠️ How much individual puck carrying a team wants is a coaching choice and not a law of ' +
-    'hockey, and it varies enormously. Some coaches want defencemen skating the puck out of the ' +
-    'zone whenever the lane is there; others want the first available pass, every time, with no ' +
-    'exceptions. Some want wingers attacking one-on-one on the wall, others want everything chipped ' +
-    'behind the defence for a forecheck. What is assumed here is a possession-oriented breakout ' +
-    'with a two-one-two forecheck, and the honest answer is that this is your coach\'s call. Ask. ' +
+    'hockey, and it varies enormously: some coaches want defencemen skating the puck out of the ' +
+    'zone whenever the lane is there, others want the first available pass, every time. ' +
+    'What is assumed here is a possession-oriented breakout ' +
+    'with a two-one-two forecheck, and this is your coach\'s call. Ask. ' +
     '⚠️ And if the decision you take turns into a battle and that battle reaches the boards, this ' +
     'document\'s override outranks every word of it: never turn your back to the wall and never ' +
     'duck, and neither prohibition is a rule for fast checkers only. Get your skates parallel to ' +

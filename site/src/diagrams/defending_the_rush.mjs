@@ -100,18 +100,30 @@ const gapAndAngle = {
 
   caption:
     'A 1-on-1 at the moment the carrier crosses the centre red line, the attack moving right to left ' +
-    'toward the defended net at the left. The defender is on the inside — body between the carrier and ' +
-    'the middle of the ice, boardside shoulder to the middle of their chest — so the only route the ' +
-    'carrier can see is toward the wall, and the shaded middle is the ice being taken away, because ' +
-    'shots from the slot beat goalies and shots from below the faceoff dots on the wall mostly do not. ' +
-    'That band is drawn on the two faceoff-dot lines and cut off at the top of the circles and at ' +
-    'the crease so that the shading has an edge; the middle is a lane running the length of the ' +
+    // ⚠️ "body between the carrier and the middle of the ice" WAS CUT AND PUT BACK, in this
+    // agent's own end-of-task diff. It is the definition of "on the inside", and standing on
+    // the BOARDS side instead is the error the GAP_CARRIER comment above records this diagram
+    // as existing to make unmistakable. A caption that says only "on the inside" leaves the
+    // beginner it is written for to guess which side that is.
+    'toward the defended net at the left. The defender is on the inside — body between the carrier ' +
+    'and the middle of the ice, boardside shoulder to the middle of their chest — so the only route ' +
+    'the carrier can see is toward the wall, and the shaded middle is the ice being taken away. ' +
+    // ⚠️ SHORTENED 15 SEPTEMBER 2026, and two things were cut that a re-reader may want back.
+    // (1) "shots from the slot beat goalies and shots from below the faceoff dots on the wall
+    // mostly do not" — the REASON the middle is the ice worth taking, stated in the owner's
+    // §"Angle to take the middle" and in every host's surrounding prose, with its "mostly"
+    // hedge intact there. (2) "the drawn gap is slightly tighter where the two routes end than
+    // where they start" — the gap-shrinks-never-grows point, which `rush-2-on-2`'s caption in
+    // this same module still states and which is the owner's own `Key:` fact.
+    // ⚠️ NOTHING BELOW THIS LINE WAS TOUCHED. The provenance block carries its own
+    // "Do not compress this back", and the zone disclosure is the one that stops a reader
+    // taking four drawn edges for markings on the ice.
+    'That band is drawn on the two faceoff-dot lines and cut off at the circles and the crease so ' +
+    'that the shading has an edge; the middle is a lane running the length of the ' +
     'rink, and none of those four edges is painted on the ice. ' +
     'The gap drawn here is about nine feet, a little wider than the stick and a half the gap ladder ' +
     'targets at the red line: on any stick length the rulebooks allow, nine feet is nearer one and ' +
-    'three-quarter stick lengths than one and a half. Notice that the drawn gap is slightly tighter ' +
-    'where the two routes end than where they start, because a gap that grows as they approach is a ' +
-    'goal waiting to happen. ' +
+    'three-quarter stick lengths than one and a half. ' +
     // ⚠️ The PROVENANCE limit travels with the ladder, not just the applicability hedge.
     // The style guide's owner row is explicit that "a guide, not a law" is about
     // applicability and does NOT carry provenance. This caption is borrowed into
@@ -162,7 +174,7 @@ const gapAndAngle = {
     'stick and a half, and one coaching book prints no distance at all. Treat that figure as a ' +
     'shape ' +
     'to aim at rather than as a measured number. ' +
-    'What no still picture can show is the thing that matters most: that ' +
+    'What no still picture can show is that ' +
     'the defender was already at full backward speed before this instant, because a gap cannot be closed ' +
     'from a standstill.',
 
@@ -285,12 +297,16 @@ const twoOnOne = {
 
   caption:
     'A 2-on-1 — two attackers, one defender — with the attack moving right to left toward the ' +
-    'defended net at the left. The defenceman sits in the shaded passing lane between the two attackers, ' +
-    'biased slightly toward the middle of the ice, on the defensive side of both, and retreats with them ' +
-    'rather than stepping toward either: the governing instruction is take away the pass and ' +
+    'defended net at the left. The defenceman sits in the shaded passing lane, biased slightly toward ' +
+    'the middle of the ice, on the defensive side of both, and retreats with them ' +
+    'rather than stepping toward either: take away the pass and ' +
     'give up the shot, because the goalie can save the shot and cannot save the cross-ice pass. ' +
-    'The goaltender is drawn set and square to the puck carrier, playing the shooter as though the second ' +
-    'attacker did not exist, and the shot from the wing is the chance being conceded on purpose. ' +
+    'The goaltender plays the shooter as though the second attacker did not exist. ' +
+    // ⚠️ THE TWO HEDGES ARE MOST OF WHAT IS LEFT AND NEITHER IS TRIMMABLE. The goalie
+    // agreement is a two-person convention this caption must not state as a rule, and its
+    // "some will ask you to pressure the puck instead" is the half that sends a reader to
+    // ask; the exception below is the one honest limit on "never step toward either", and
+    // without it the caption tells a defenceman to stand off an unpressured walk-in.
     'That division of labour is a two-person agreement and it only works if both people have said it out ' +
     'loud — most goalies want it exactly this way, but some, especially at rec level and especially ' +
     'against a weak shooter, will ask you to pressure the puck instead, so ask yours before the game. ' +
@@ -432,22 +448,21 @@ const twoOnTwo = {
 
   caption:
     'A 2-on-2 with the two attackers crossing, the attack moving right to left toward the defended ' +
-    'net at the left. Two attackers, two defencemen, nobody spare on either side — and the warning ' +
-    'that goes with it is that even numbers make people relax, which is coaching emphasis rather than ' +
+    'net at the left. Two attackers, two defencemen, nobody spare — and even numbers make people ' +
+    'relax, which is coaching emphasis rather than ' +
     'a counted ranking. The version drawn is man-on-man: each defenceman takes one attacker and holds ' +
     'their gap on the inside of them. The gap drawn is wide because this is the instant the crossing ' +
-    'begins; the attackers close it by more than half over the routes shown. Aim for a gap that ' +
-    'shrinks the whole way in and never grows, rather than a distance measured off a picture. ' +
+    'begins; aim for a gap that shrinks the whole way in and never grows, rather than a distance ' +
+    'measured off a picture. ' +
     'The realistic alternative is zone, where the strong-side ' +
     'defenceman takes whoever carries the puck into their half and the weak-side defenceman holds the ' +
     'middle. Zone survives a crossing rush better and man-on-man is tighter on a straight one, so find ' +
     'out which your team plays, because mixing the two on the same rush leaves an attacker free. ' +
     'Neither defenceman is drawn with a route, for two reasons. Follow your man through the ' +
     'crossing, or call a clean switch — both are real answers, and never half of each. A picture ' +
-    'would have to pick one of those two, so it picks neither and leaves the read with you. The ' +
+    'would have to pick one, so it picks neither and leaves the read with you. The ' +
     'second reason is safety: a crossing rush is exactly where a beginner reaches for a hit instead ' +
-    'of holding their position. What loses under either answer is both of them ' +
-    'drifting toward the puck, because then one simple pass leaves the other attacker the net.',
+    'of holding their position.',
 
   describe:
     'The full sheet, the defended net at the left with the goaltender in it. Exactly two opposition ' +
@@ -502,16 +517,22 @@ const threeOnTwoDefault = {
 
   caption:
     'A 3-on-2 defended the way assumed here — "two wide, middle to the backchecker" — with the ' +
-    'attack moving right to left toward the defended net at the left. Three attackers against two ' +
-    'defencemen: each defenceman takes an outside attacker, and neither chases the puck carrier, who here ' +
-    'is wide on the right and therefore belongs to the defenceman in that lane. The middle attacker ' +
+    'attack moving right to left toward the defended net at the left. Each defenceman takes an outside ' +
+    'attacker, and neither chases the puck carrier. The middle attacker ' +
     'belongs to the backchecking centre arriving from behind, who is the third own player in the picture ' +
-    'but is not one of the two in the name. Notice that the two defencemen are level with each other and ' +
-    'retreating at the same speed with the middle sealed between them — a staggered retreat opens a ' +
-    'diagonal seam straight to the slot — and that they stop above the circles rather than backing all ' +
-    'the way to the goal line, which would concede the whole slot. ' +
+    'but is not one of the two in the name. The two defencemen retreat level with each other, the ' +
+    'middle sealed between them — a staggered retreat opens a ' +
+    'diagonal seam straight to the slot — and stop above the circles rather than backing all ' +
+    'the way to the goal line. ' +
+    // ⚠️ "the realistic alternative is the next diagram" IS GONE, and this one mattered.
+    // The pair is borrowed into positions/goaltender.md as well as its owner, and it is
+    // adjacent in both today (:858/:860 and :526/:528) — but a pointer at a neighbour is
+    // what the style guide's deixis rule forbids, and NAMING the alternative costs the same
+    // words while surviving any marker move in either host. `rush-3-on-2-alternative`'s own
+    // caption names itself in these words, so the two still resolve to each other.
     'This is the two-wide default, and it is a coaching choice rather than a law: the realistic ' +
-    'alternative is the next diagram, the two fail in different directions, and two defencemen playing ' +
+    'alternative is strong side takes the puck and weak side splits, the two fail in different ' +
+    'directions, and two defencemen playing ' +
     'different ones on the same rush is worse than either, so ask your coach which you play. ' +
     'If the backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle ' +
     'and concede the far wide man — but not until they have looked.',
@@ -576,17 +597,23 @@ const threeOnTwoAlternative = {
   width: 900,
 
   caption:
-    'The same 3-on-2, defended the realistic alternative way — "strong side takes the puck, weak side ' +
+    // ⚠️ OPENED "The same 3-on-2" AND CARRIED "the positions they hold in the previous
+    // diagram" — two of the exact forms the style guide's deixis rule names, in a caption
+    // borrowed into positions/goaltender.md as well as its owner. Both are replaced by
+    // NAMING the other diagram — "the two-wide default", which is what that caption calls
+    // itself — so the pair still cross-references and neither half depends on adjacency.
+    'A 3-on-2 defended the realistic alternative way — "strong side takes the puck, weak side ' +
     'splits" — with the attack moving right to left toward the defended net at the left. The three ' +
-    'attackers are in exactly the positions they hold in the previous diagram; only the defence has ' +
-    'changed. The strong-side defenceman takes the puck carrier wherever they are and plays it as a ' +
-    '1-on-1 with a tight gap, while the weak-side defenceman drops off and sits in the shaded lane ' +
-    'between the middle attacker and the far attacker, splitting the two of them exactly as they would on ' +
-    'a 2-on-1; under this version the backchecker’s job becomes the third attacker rather than the middle ' +
+    'attackers stand exactly where they do in the two-wide default; only the defence has ' +
+    'changed. The strong-side defenceman takes the puck carrier and plays it as a ' +
+    '1-on-1 with a tight gap; the weak-side defenceman drops off into the shaded lane ' +
+    'and splits the middle attacker and the far attacker exactly as he would on ' +
+    'a 2-on-1. Under this version the backchecker’s job becomes the third attacker rather than the middle ' +
     'specifically, which is why that route finishes in open ice — which attacker it will be is not ' +
     'fixed, and this picture does not fix it either. ' +
     'The trade runs in both directions: this version never concedes the middle, but the weak-side ' +
-    'defenceman is covering two people and the far attacker gets more room, where the default keeps three ' +
+    'defenceman is covering two people and the far attacker gets more room, where the two-wide default ' +
+    'keeps three ' +
     'defenders on three attackers if the backcheck arrives and concedes the middle entirely if it does ' +
     'not. Ask your coach which one you are playing.',
 
@@ -669,7 +696,7 @@ const backcheckLanes = {
     'The ice is three vertical lanes running the length of the rink: two outside lanes along the boards, ' +
     'and the shaded middle lane between the faceoff dots. In the standard assignment drawn here the centre ' +
     'takes the middle lane and the two wingers take the outside lanes, and each backchecker’s route bends ' +
-    'inside their man rather than trailing their shoulder: the aim is their inside hip, not their ' +
+    'inside their man: the aim is their inside hip, not their ' +
     'back pocket, because you cannot defend anything from behind. ' +
     // The ranking this sentence used to carry — "the most commonly missed assignment in hockey" — was a
     // corpus-wide superlative with no source behind it, and a caption is the one place it reached a reader
@@ -764,11 +791,10 @@ const trailer = {
 
   caption:
     'The trailer, or late man — the attacker who arrives second — with the attack moving right to left ' +
-    'toward the defended net at the left. The first wave of two has pulled both defencemen low: one is ' +
-    'inside the wide carrier, the other is at the net front, and if either steps up to the trailer the ' +
+    'toward the defended net at the left. The first wave of two has pulled both defencemen low, and if ' +
+    'either steps up to the trailer the ' +
     'first wave gets the net. The trailer is following a few metres behind into the high slot, where the ' +
-    'look is clean and unopposed — at the instant drawn, the nearest defender to them is more than ' +
-    'twenty feet away — and the backchecking forward arriving from up-ice has to take them. ' +
+    'look is clean and unopposed, and the backchecking forward arriving from up-ice has to take them. ' +
     'That assignment is the house default, low zone collapse behind a 2-1-2 forecheck, and it is an ' +
     'assignment rather than a law: some teams instead give the trailer to the weak-side defenceman and ' +
     'drop the third forward to the net front, which is tighter on the trailer and thinner in front, so ask ' +

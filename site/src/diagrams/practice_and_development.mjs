@@ -183,23 +183,16 @@ const executionDrill = {
   width: 900,
 
   caption:
-    'The first of two frames of the same drill rep, drawn to be compared: this one has nobody ' +
-    'defending, and the next one has a single defender added. The attacking net is at the right. ' +
-    'You have the puck on the right side ' +
-    'inside the faceoff circle, a teammate is standing at the front of the net, and the dashed ' +
-    'line is the pass to him. That pass was the answer before the rep started, and it will still be ' +
-    'the answer next time, because there is no opposing skater anywhere in the picture who could ' +
-    'take it away — the only opponent drawn is the opposing goaltender, and he cannot stand in a ' +
-    'passing lane on the other side of the ice. None of that makes the drill a bad one. Taking the ' +
+    'The first of two frames of the same drill rep: this one has nobody ' +
+    'defending, and the next has a single defender added. ' +
+    'The dashed pass was the answer before the rep started, because ' +
+    'no opposing skater in the picture could ' +
+    'take it away. Taking the ' +
     'read out ' +
-    'is what makes a skill practisable, and a rep like this trains the timing, the pass and the ' +
-    'finish properly; what it cannot train is the choice, because there is only one option and it ' +
-    'never changes. The next frame is the same instant with a single player added — and with the ' +
-    'pass route gone, because his arrival is what takes it away. This is one ' +
-    'shape of drill among very many, and which ones your team runs, how they are built and what ' +
-    'each is meant to teach are your coach’s decisions rather than rules of hockey — so if the ' +
-    'purpose of a drill is not obvious, ask, because a rep whose point you cannot name is a rep of ' +
-    'the shape of the drill rather than of the thing it was built to teach.',
+    'is what makes a skill practisable, and this is not a bad drill; ' +
+    'what it cannot train is the choice. The next frame adds one player, and the pass route ' +
+    'goes with him. Which drills your team runs is your coach’s decision ' +
+    'rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.',
 
   describe:
     'The attacking half of the rink, the net at the right with the opposing goaltender in the ' +
@@ -244,20 +237,14 @@ const decisionDrill = {
   width: 900,
 
   caption:
-    'The second frame: the same instant, the same two own players, the same goaltender, the same ' +
-    'puck, and exactly one ' +
-    'player added. A single opposing skater now stands between you and your teammate, in the lane ' +
-    'the ' +
-    'pass was going to travel down. Nobody has moved. And there is no route drawn in this ' +
+    'The second frame: the same instant, with exactly one ' +
+    'player added, standing in the lane the pass was going to travel down. Nobody has moved. And ' +
+    'there is no route drawn in this ' +
     'picture at all, which is the point of it rather than an omission — the answer has left the ' +
-    'frame. The pass you were going to make is not there any more. What is there instead is a shot, ' +
-    'or holding the puck for one more beat, or beating him and going yourself, and which of those ' +
-    'is right depends on what he does next and on whether you had already looked before the puck ' +
-    'reached you. One defender, allowed to take away one option, is enough to turn a drill that ' +
+    'frame. One defender allowed to take away one option turns a drill that ' +
     'trains execution into one that trains a decision. That is a coaching approach and not a rule ' +
-    'of hockey, and it is not the only one: shrinking the space, shortening the clock, or a ' +
-    'constraint such as being forbidden to pass back to whoever passed to you all do similar work, ' +
-    'and so does simply playing a small-area game instead. Ask your coach which one a drill is ' +
+    'of hockey, and not the only one: shrinking the space, shortening the clock or playing a ' +
+    'small-area game do similar work. Ask your coach which one a drill is ' +
     'using. ⚠️ The defender drawn here is a passive one, allowed to take away a single option and ' +
     'nothing else. How hard a defender may compete in a drill, and whether body checking is ' +
     'permitted at all, depends on your age group, your league and the book they play under, and no ' +
@@ -372,29 +359,31 @@ const theLine = {
   half: false,
   width: 900,
 
+  // ⚠️ THE SAFETY PAIR SITS LAST AND THE GLYPH OPENS IT. It used to open the run, and
+  // because `captionNodes()` ambers from the first glyph to the END of the caption, the
+  // amber band ran on for another 380-odd characters of non-hazard prose: a coaching
+  // estimate, a "that is your coach's call" hedge, and — last of all, in the safety
+  // colour — the navigational sentence pointing at the next picture. Nothing was cut;
+  // those three sentences moved ahead of the glyph, in their original order, and the two
+  // safety bullets moved to the end unchanged with head-up still leading. The cost of the
+  // move is that "the next picture" is no longer the last thing said, which is the right
+  // trade: the warning names "that line", and the next caption opens "Nobody is queuing".
+  // ⚠️ THE ORDER IS LOAD-BEARING. Shortening this caption must not move the glyph earlier.
+  // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run for
+  // check_caption_negations.py's CAPTION regex, which then scans only the prefix. It sat
+  // mid-run until the caption was shortened, so that checker had been reading a prefix here.
   caption:
-    'A full-ice drill on the whole two-hundred-foot sheet, drawn at one instant: six skaters, one of ' +
-    'them out in the middle carrying the puck up the ice, and five standing in a line ' +
-    'against the boards at the far end waiting their turn. No goaltender is drawn in this one. ' +
-    'Count the picture and you have the ' +
-    'argument. One player is on the puck. Five are not moving. There is no opponent anywhere, so ' +
-    'nothing in the rep can surprise the player taking it. A drill shaped like this has real jobs — ' +
-    'it teaches a pattern, it can be skated at game pace, and it puts a whole group through the same ' +
-    'thing in turn — and this is not a picture of a badly run practice. What it is expensive in is ' +
-    'time, because a queue is ice you have paid for and are not using, and the way to get value out ' +
-    // ⚠️ THE SAFETY PAIR SITS LAST AND THE GLYPH OPENS IT. It used to open the run, and
-    // because `captionNodes()` ambers from the first glyph to the END of the caption, the
-    // amber band ran on for another 380-odd characters of non-hazard prose: a coaching
-    // estimate, a "that is your coach's call" hedge, and — last of all, in the safety
-    // colour — the navigational sentence pointing at the next picture. Nothing was cut;
-    // those three sentences moved ahead of the glyph, in their original order, and the two
-    // safety bullets moved to the end unchanged with head-up still leading. The cost of the
-    // move is that "the next picture" is no longer the last thing said, which is the right
-    // trade: the warning names "that line", and the next caption opens "Nobody is queuing".
-    'of one is to watch the rep in front of you and name what you would do differently. That ' +
+    'A full-ice drill on the whole two-hundred-foot sheet at one instant: six skaters, one ' +
+    'carrying the puck up the ice and five standing in a line ' +
+    'against the boards waiting their turn. No goaltender is drawn in this one. ' +
+    'One is on the puck, five are not moving, and no opponent is drawn, so ' +
+    'nothing can surprise the player taking the rep. ' +
+    'It teaches a pattern and puts a group through the same ' +
+    'thing in turn; this is not a badly run practice. What it is expensive in is ' +
+    'time. That ' +
     'roughly half of a typical team practice is spent ' +
     'standing in a line is a coaching estimate rather than anything anybody has counted. How a ' +
-    'practice is built is your coach’s call and not yours; what is yours is what you do while you ' +
+    'practice is built is your coach’s call; what is yours is what you do while you ' +
     'wait. The next picture is the same six skaters using one end of the ice. ⚠️ Two ' +
     'things about standing in that line, and the first one is the one that hurts people: keep your ' +
     'head up, because a practice has loose pucks flying and a line against the boards is exactly ' +
@@ -496,13 +485,13 @@ const smallAreaGame = {
   width: 900,
 
   caption:
-    'The same six skaters and the same sheet of ice, with the game shrunk into one end zone: three ' +
-    'against three below the blue line, one puck, one net, and a goaltender in it who was not in ' +
-    'the queue in the last picture — he is a seventh person, and he defends the net your three are ' +
-    'attacking. Nobody is queuing. ' +
-    'Every one of the six skaters is in the play, none of them more than about forty-five feet from ' +
-    'the puck, and there is a ' +
-    'live opponent who has not been told in advance what he is going to do — which is precisely the ' +
+    'The same six skaters, with the game shrunk into one end zone: three ' +
+    'against three, one puck, one net, and a goaltender who was not in ' +
+    'the queue in the last picture — a seventh person, defending the net your three ' +
+    'attack. Nobody is queuing. ' +
+    'Every one of the six is in the play, none of them more than about forty-five feet from the ' +
+    'puck, and there is a ' +
+    'live opponent who has not been told what he is going to do — which is precisely the ' +
     // ⚠️ THE ROUTE SENTENCE AND ITS SAFETY SENTENCE MOVED TO THE END AS A PAIR, AND THEY
     // HAVE TO MOVE TOGETHER. The glyph used to sit a third of the way in, so the amber band
     // ran 1,416 characters: it opened on the contact caveat and then painted ~1,100
@@ -514,16 +503,14 @@ const smallAreaGame = {
     // only wording change is "One of them" -> "One of the six", because after the move
     // "them" would have picked up "use them" (= small-area games) in the sentence now
     // immediately before it rather than the six skaters it means.
-    'information a drill takes out in order to make a skill practisable. Most of the rink is ' +
-    'empty here only because this is the only group drawn; in a real practice another group is ' +
-    'usually working in the space. Every single thing about this arrangement is a coaching choice ' +
-    'and not a law of hockey: the number of players, whether the game is played in a zone, in a ' +
-    'corner, between the blue lines or across the ice, whether there is a goaltender at all, what ' +
-    'each team is trying to score on — this picture uses the one net the rink already has, which is ' +
-    'a limit of what can be drawn rather than a recommendation — and what constraint is added, such ' +
-    'as one touch only, no passes above the dots, or three passes before you may score. Small ' +
-    'numbers give more touches than large ones, and shifts of about thirty to forty-five seconds ' +
-    'keep the quality up. Ask what the rules of the game are before it starts, because the ' +
+    'information a drill takes out to make a skill practisable. Most of the rink is ' +
+    'empty here only because this is the only group drawn. Every single thing about this ' +
+    'arrangement is a coaching choice ' +
+    'and not a law of hockey: the number of players, the area it is played in, whether there is a ' +
+    'goaltender at all, what each team is trying to score on, and what constraint is added. This ' +
+    'picture uses the one net the rink already has, ' +
+    'a limit of what can be drawn rather than a recommendation. ' +
+    'Ask what the rules of the game are before it starts, because the ' +
     'constraint is the teaching. And be careful how you argue for these: that small-area games build ' +
     'decision-making is highly plausible, near-universally believed by coaches and consistent with ' +
     'the theory, but it is genuinely under-tested, so use them and do not go quoting research you ' +

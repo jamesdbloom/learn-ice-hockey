@@ -87,16 +87,30 @@ const homePlate = {
   half: true,
   width: 900,
 
+  // CAPTION LENGTH, 15 Sep 2026: 145 words before. The corner-for-corner recitation of
+  // the polygon went: both hosts state it in prose and in a ```facts Position line within
+  // two lines of the marker, and the `describe` above walks it edge by edge for a screen
+  // reader. What is kept is what the picture cannot say for itself.
+  //
+  // ⚠️ THE BOUNDARY CAME BACK, AND THE SECOND HOST IS THE REASON. "Both hosts state it in
+  // prose" is true of `offensive_zone_play.md` and NOT of `shooting.md`, which never uses
+  // the words "home plate" anywhere except this marker line — it describes the identical
+  // shape two lines above the marker under the name "the house" ("square across the tops
+  // of both faceoff circles, straight down the dot lines to the two faceoff dots, then
+  // angling in to the two goalposts"). Without the boundary a shooting.md listener hears
+  // two names for one region and nothing joining them. The alias and the boundary are the
+  // bridge, and both are taken from owners rather than from memory: the alias from
+  // language_and_glossary.md §"Home plate" ("also called *the house*") and rink_map.md
+  // §'The "home plate" / high-danger area (also "the house")', the boundary from
+  // rink_map.md, which owns the shape and its measurements. It also matches this spec's
+  // own `zones` polygon corner for corner.
   caption:
-    'The home-plate area — the shape analysts use to mark off the dangerous part of the ' +
-    'offensive zone. It runs across the tops of the two faceoff circles, down the sides to the ' +
-    'two faceoff dots, and then angles in to the two goalposts; shots taken inside it are ' +
-    'counted as scoring chances. Shots from its inner part, close to the net and between the ' +
-    'dots, are counted as high-danger chances, and that inner boundary is deliberately not ' +
-    'drawn, because the description of that inner boundary is not precise enough to place ' +
-    'on the ice. Nothing here is painted on a real rink: it is a counting convention, not a ' +
-    'marking. The two markings that are real — the faceoff circles, which have a 15-foot radius and the crease, ' +
-    'six feet deep from the goal line — are the ruler everything else is measured against.',
+    'The home-plate area, also called the house — the shape analysts use to mark the ' +
+    'dangerous part of the offensive zone. It runs across the tops of the two faceoff ' +
+    'circles, straight down the dot lines to the two faceoff dots, and then angles in to ' +
+    'the two goalposts. The inner, high-danger boundary is deliberately not drawn: no ' +
+    'description of it is precise enough to place on the ice. Nothing shaded here is ' +
+    'painted on a real rink — it is a counting convention.',
 
   describe:
     'The attacking half of the rink, the net at the right. A single shaded six-sided region is ' +
@@ -142,20 +156,43 @@ const royalRoad = {
   width: 900,
 
   caption:
-    'The royal road — an imaginary line down the centre of the ice, lengthwise, from the middle ' +
-    'of one net to the middle of the other — and a pass crossing it in the offensive zone, which ' +
-    'is the highest-value pass type measured, roughly double the next one. Crossing it forces the ' +
-    'goaltender to push laterally, re-establish depth and angle, re-find the puck visually and ' +
-    'reset their stick; a shot arriving before they finish that sequence is a desperation save ' +
-    'rather than a positioning save. Passes across it finished at 15.50% — volunteer-tracked ' +
-    'Passing Project data, 51,308 shots at 5-on-5, counting all attempts rather than shots on ' +
-    'goal, so it is not comparable with a plain shooting percentage. Be careful with the line ' +
-    'itself: published descriptions of where it runs do not agree, and the net-to-net version ' +
-    'drawn here is kept for being the more conservative instruction, not ' +
-    'the better supported one — the two sources closest to the original figures describe a ' +
-    'shorter road that stops at the tops of the faceoff circles. The receiver is drawn at the ' +
-    'weak-side dot because that is where you scan first; the defenders and ' +
-    "the goaltender's lateral push are not drawn.",
+    // CAPTION LENGTH, 15 Sep 2026: 199 words before. The four-step account of what the
+    // goaltender has to do, and the naming of the two sources that describe a shorter
+    // road, belong to the section and are stated there at length in both hosts.
+    // ⚠️ THE 15.50% KEPT ITS QUALIFICATION -- volunteer-tracked, 5-on-5, all attempts --
+    // because a caption is voiced alone and a bare statistic in one is the exact defect
+    // the style guide's caption census records. The geometry hedge is kept for the same
+    // reason: it qualifies THE LINE THIS PICTURE DRAWS, so it cannot be left with the prose.
+    //
+    // ⚠️ AND "ALL ATTEMPTS" ON ITS OWN IS NOT THE QUALIFICATION. The clause that changes
+    // what the number MEANS is "rather than shots on goal": without it a listener hears a
+    // shooting percentage. The owner states the standing instruction at
+    // offensive_zone_play.md §1 -- "volunteer-tracked, 51,308 shots at 5v5, counting all
+    // attempts rather than shots on goal -- see the sourcing note above, and carry that
+    // qualification wherever you quote the figure" -- and special_teams.md repeats it:
+    // "Carry its qualification with it, because that qualification is part of the fact."
+    // ⚠️ `grep -rn "15\.50" content/` hits offensive_zone_play.md and special_teams.md and
+    // NOT shooting.md, which hosts this diagram at :421 -- so for that host this caption is
+    // the SOLE carrier of the figure. shooting.md:398 carries the same kind of warning for
+    // a DIFFERENT figure ("misses are in the denominator, so this is not shooting
+    // percentage"), which makes an unqualified 15.50% beside it more misleading, not less.
+    //
+    // ⚠️ "Defenders are not drawn" sits BEFORE the glyph deliberately. captionNodes() in
+    // site/src/plugins/remark-corpus.mjs (around lines 320-332) splits a caption at its first
+    // warning glyph and wraps the remainder in a .warn-inline span, to the end, with no closing
+    // delimiter -- so picture-description placed after the glyph renders as a warning.
+    // ⚠️ THIS COMMENT SAID "global.css" UNTIL A COMMIT GATE CORRECTED IT, 15 September 2026.
+    // global.css only STYLES the span; it does not decide what goes in it. The substance was
+    // right and the citation was wrong, which is the more dangerous combination: a later agent
+    // greps global.css, finds only colours, and concludes the split is not real.
+    'The royal road — an imaginary line down the centre of the ice, net to net — and a ' +
+    'pass crossing it in the offensive zone, which drags the goaltender across before the ' +
+    'shot arrives. Defenders are not drawn. Passes across it finished at 15.50% — ' +
+    'volunteer-tracked Passing Project data, 51,308 shots at 5-on-5, counting all attempts ' +
+    'rather than shots on goal, so it is not comparable with a plain shooting percentage. ' +
+    '⚠️ Published descriptions of where the line runs ' +
+    'do not agree: the net-to-net version drawn here is the more conservative instruction, ' +
+    'not the better supported one.',
 
   describe:
     'The attacking half of the rink, the net at the right. A dashed line runs down the middle of ' +
@@ -249,17 +286,18 @@ const fiveManShape = {
   numbered: true,
 
   caption:
-    'The five-man offensive-zone shape, at the moment the puck is on the strong-side half-wall: ' +
-    'the carrier on the wall with the puck, one forward below him in the corner and one above ' +
-    'him at the top of the circles, and both defencemen holding the blue line. That ' +
-    'below-level-above arrangement is the attack triangle, and it is a ' +
-    'default rather than a law of hockey — overload, a five-man rotation and a ' +
-    '1-3-1 spread are all real alternatives, so find out which one your team plays. The one ' +
-    'non-negotiable is that at least one forward is always in or attacking the home-plate area; ' +
-    'a triangle sitting entirely on the perimeter is three players passing around the outside of ' +
-    'a defence that is perfectly happy about it. Two things are about to happen, in order: the ' +
-    'puck goes down to the corner, and the carrier rotates up off the wall — the next diagram is ' +
-    'this same shift one pass later. Defenders other than the goaltender are not drawn.',
+    // CAPTION LENGTH, 15 Sep 2026: 167 words before. ⚠️ It also ended "the next diagram
+    // is this same shift one pass later" -- DEIXIS, which the style guide forbids in a
+    // caption outright. The two numbered routes are what the picture already says is
+    // about to happen, and `describe` walks them; the paired diagram names its own
+    // situation now rather than being pointed at. The cardinal-rule hedge and the
+    // home-plate non-negotiable are kept: both qualify what this picture DRAWS.
+    'The five-man offensive-zone shape with the puck on the strong-side half-wall: one ' +
+    'forward below in the corner, one above at the top of the circles, both defencemen on ' +
+    'the blue line. That below-level-above attack triangle is a default, not a law of ' +
+    'hockey — overload, a five-man rotation and a 1-3-1 spread are real alternatives, so ' +
+    'find out which one your team plays. At least one forward stays in or attacking the ' +
+    'home-plate area. Defenders other than the goaltender are not drawn.',
 
   describe:
     'The attacking half of the rink, the net at the right. Five own players. F1 has the puck on ' +
@@ -312,15 +350,14 @@ const afterRotation = {
   width: 900,
 
   caption:
-    'The same five players one pass later, and the point of the pair: the triangle has moved but ' +
-    'the shape has not. The corner player took the pass and is now F1 — the labels are roles set ' +
-    'by order of arrival, not people, so they were reassigned the moment the sequence of arrival ' +
-    'changed. The old carrier has rotated up off the wall and is now F2, the high forward has ' +
-    'held his position and is still F3, and both defencemen are still on the line. There is still ' +
-    'one player deep on the puck, one in support and one high, and one forward is still inside ' +
-    'the home-plate area. This is one default structure and not a law of ' +
-    'hockey; defenders other than the goaltender are not drawn, and no routes are drawn because ' +
-    'this frame is the result, not the movement.',
+    // CAPTION LENGTH, 15 Sep 2026: 144 words before, opening "The same five players one
+    // pass later" -- deixis with no situation named, which a borrowing document could not
+    // resolve. The situation is named instead. The cardinal-rule hedge stays.
+    'The same offensive-zone shift one pass later, the puck now in the strong-side corner: ' +
+    'the triangle has moved but the shape has not. F-numbers are roles set by order of ' +
+    'arrival, not people, so the corner player is now F1, the old carrier has rotated up ' +
+    'off the wall to F2, and the high forward holds as F3. One default structure, not a ' +
+    'law of hockey. No routes are drawn: this frame is the result, not the movement.',
 
   describe:
     'The attacking half of the rink, the net at the right, one pass after the previous diagram. ' +
@@ -366,17 +403,20 @@ const halfWallOptions = {
   width: 900,
 
   caption:
-    'The four options from the strong-side half-wall, drawn on one frame: low to the corner or ' +
-    'behind the net, high to the point, the seam pass across the middle, or taking it yourself ' +
-    'off the wall to the inside. They are deliberately unnumbered, because this is a menu and ' +
-    'not a sequence — only one of them happens, and nothing in the picture says which comes ' +
-    'first. Which one is on is a read: the low pass is the safe continuation that feeds the ' +
-    'cycle, the high pass is the shot generator when the defence has collapsed low and left the ' +
-    'point unpressured, the seam is the highest value, the highest risk and the shortest window, and taking it ' +
-    'yourself is best when your check is flat-footed or has turned their hips. The failure is ' +
-    'arriving on the wall with only one of these in mind, because you will then ' +
-    'play it whether or not the slot was open. Defenders other than the goaltender are not ' +
-    'drawn, and you should expect the seam to be defended and to open only briefly.',
+    // CAPTION LENGTH, 15 Sep 2026: 181 words before. ⚠️ AND A COLLISION WITH ITS HOSTS.
+    // It read "deliberately unnumbered, because this is a menu and not a sequence ...
+    // nothing in the picture says which comes first" -- but BOTH hosts present these four
+    // as an ORDERED list within two lines of the marker: offensive_zone_play.md numbers
+    // them 1-4, and risk_management.md ranks them in a `Priority:` facts line. Read aloud,
+    // "not a sequence" lands on top of a sequence. The fact about the PICTURE (no numbers
+    // on the routes, because only one happens) is true and kept; the editorial gloss that
+    // reached past the picture and contradicted the page is gone. The per-option reads are
+    // the numbered list itself and belong to it.
+    'The four options from the strong-side half-wall on one frame: low to the corner or ' +
+    'behind the net, high to the point, the seam across the middle, or taking it yourself ' +
+    'off the wall to the inside. The routes carry no numbers, because only one of them ' +
+    'happens and which one is a read. The failure is arriving on the wall with only one in ' +
+    'mind. Expect the seam to be defended and to open only briefly.',
 
   describe:
     'The attacking half of the rink, the net at the right. A forward has the puck on the ' +
@@ -465,22 +505,30 @@ const lowToHigh = {
   numbered: true,
 
   caption:
-    "Low-to-high, with everyone's job named and in order: the puck " +
-    'goes from the half-wall up to the point (1); the passer then supports toward the strong-side ' +
-    'hash marks (2), both as a bail-out outlet and to be in position for the rebound; the ' +
-    'defenceman walks the puck toward the middle before releasing it (3), which changes the ' +
-    'angle, makes the goalie track laterally and often opens a lane through the shot-blockers; ' +
-    'and the shot goes low through the screen (4). One forward is already at the net front to ' +
-    'screen and tip and one in the high slot as the second option, forming a triangle with the ' +
-    'point, while the weak-side defenceman reads for a rebound squirting to their side. ' +
-    'Low-to-high is a means and not an end: at even strength a point shot is among the ' +
-    'lowest-percentage shots on the ice, and blocked more often than a shot from anywhere else — ' +
-    'but that caution is an even-strength one, and on the power play the same map puts roughly ' +
-    'the whole zone at or above it, so it is no argument against a point shot there. ' +
-    'The play is only worth ' +
-    'doing when the net front is occupied — the identical shot with nobody in front is a ' +
-    'giveaway with extra steps. Defenders other than the goaltender are not drawn, so the ' +
-    'shot-blockers this play is trying to beat are not in the picture.',
+    // CAPTION LENGTH, 15 Sep 2026: 235 words before. The five-step walk-through and the
+    // standing positions are the section's own numbered list, two lines below the marker,
+    // and `describe` reads every route for a screen reader. ⚠️ THE STRENGTH-STATE SCOPE IS
+    // KEPT IN FULL. The style guide's caption census names a dropped strength-state scope
+    // as a measured caption defect, and this is the corpus's live instance of it: the
+    // point-shot caution is EVEN-STRENGTH ONLY, and shedding that half turns it into an
+    // argument against a power-play point shot, which McCurdy's own power-play map refutes.
+    // ⚠️ THE GLYPH GOES LAST, and the net-front condition and "the shot-blockers are not drawn"
+    // sit BEFORE it, for the reason `royalRoad` above records: captionNodes() in
+    // site/src/plugins/remark-corpus.mjs ambers everything from the first glyph to the END of the
+    // caption, so picture-description placed after it renders as a warning. A first version of
+    // this shortened caption put the glyph in front of the whole tail and did exactly that.
+    // ⚠️ AND THE CLAUSE MUST KEEP ITS CONCLUSION. "...puts roughly the whole zone at or above it"
+    // on its own states a fact and draws no conclusion; the conclusion is the clause's whole point,
+    // and the caption is voiced alone with a break either side.
+    'Low-to-high, numbered in order: the puck from the half-wall up to the point (1); the ' +
+    'passer supports toward the strong-side hash marks (2); the defenceman walks it toward ' +
+    'the middle before releasing (3), which changes the angle and often opens a lane; the ' +
+    'shot goes low through the screen (4). The play is only worth doing when the net front ' +
+    'is occupied. The shot-blockers this play is trying to beat are not drawn. ' +
+    '⚠️ At even strength a point shot is among the ' +
+    'lowest-percentage and most-blocked shots on the ice — but that caution is an ' +
+    'even-strength one, and on the power play the same map puts roughly the whole zone at ' +
+    'or above it, so it is no argument against a point shot there.',
 
   describe:
     'The attacking half of the rink, the net at the right. Four numbered routes. One: a dashed ' +
@@ -702,19 +750,31 @@ const behindTheNet = {
   width: 900,
 
   caption:
-    'Attacking from behind the net, which is a place to go on purpose and not a place you end ' +
-    'up. The pass out to the slot is the primary play and not the last resort: because it comes ' +
-    'from below the goal line it crosses the royal road almost by definition and arrives at a ' +
-    'player already inside the home-plate area, and passes from below the goal line finished at ' +
-    '6.73% — the second-most dangerous pass type measured, behind only royal road passes, in ' +
+    // CAPTION LENGTH, 15 Sep 2026: 253 words before. The account of the three options NOT
+    // drawn (wrap-around, bank, walkout) went: all three are listed in the owning section's
+    // prose and its ```facts block, and in center.md's, so a reader loses nothing but the
+    // notation's excuse. ⚠️ THE SAFETY LIMB AND THE QUALIFIED 6.73% BOTH STAY, and this
+    // diagram is the reason the rule is absolute: it is borrowed by center.md and
+    // time_and_space.md, and at NEITHER of those markers does the surrounding prose carry a
+    // checking-from-behind caveat. For those two hosts this caption is the only place a
+    // listener hears it. Cutting it there is the false-universal failure in its worst form.
+    //
+    // ⚠️ AND "THE QUALIFIED 6.73%" MEANS THE DENOMINATOR CLAUSE, WHICH WAS CUT ANYWAY.
+    // "volunteer-tracked 5-on-5 Passing Project data" leaves 6.73% sounding like a
+    // shooting percentage; "counting all attempts rather than shots on goal" is the clause
+    // that says what the number is. Its owner gives the standing instruction beside the
+    // sibling figure at offensive_zone_play.md §1 -- "carry that qualification wherever you
+    // quote the figure" -- and the ```facts line at §"Attacking from behind the net" states
+    // it the same way. ⚠️ `grep -rn "6\.73" content/` returns hits in offensive_zone_play.md
+    // ONLY, so at the center.md and time_and_space.md markers this caption is the SOLE
+    // carrier of the figure and of everything that says what it counts.
+    'Attacking from behind the net — a place to go on purpose, not a place you end up. The ' +
+    'pass out to the slot is the primary play, not the last resort: it crosses the royal ' +
+    'road almost by definition and arrives at a player already inside home plate. Passes ' +
+    'from below the goal line finished at 6.73%, second only to royal road passes — ' +
     'volunteer-tracked Passing Project data, 51,308 shots at 5-on-5, counting all attempts ' +
-    'rather than shots on goal. The other route drawn is the reverse back out to the corner to ' +
-    'restart the cycle, because possession retained is a perfectly good outcome; the two are ' +
-    'alternatives and only one of them happens, which is why neither is numbered. Three further ' +
-    'options are deliberately not drawn: the wrap-around and the bank off the ' +
-    "back of the goalie's pads both live in the goal mouth, which this notation will not draw a " +
-    'route through, and the walkout — coming out into the slot yourself with the puck — takes ' +
-    'the same ice as the pass, so drawn together the two arrows could not be told apart. ⚠️ Nobody ' +
+    'rather than shots on goal. The other route is the reverse back to the ' +
+    'corner to restart the cycle — alternatives, so neither is numbered. ⚠️ Nobody ' +
     'can come at you from directly behind here, but that is geometry and not immunity: checking ' +
     'from behind is a penalty anywhere on the playing surface and players do get driven into the ' +
     'goal frame, so keep your head up and know who is arriving.',
@@ -800,24 +860,21 @@ const crossTheRoadYourself = {
   title: 'Crossing the road yourself',
 
   caption:
-    'Crossing the royal road with your feet rather than with a pass. The road is the imaginary ' +
-    'line down the centre of the ice, lengthwise, from the middle of one net to the middle of the ' +
-    'other, and the two wavy routes are the two carries the section names: driving off the ' +
-    'strong-side half-wall into the high slot, and curling out from behind the net into the slot. ' +
-    'Both finish on the far side of the line, and a carrier who cuts through the middle drags the ' +
-    'goaltender laterally the same way a pass does — they have to push across, re-establish depth ' +
-    'and angle, re-find the puck and reset their stick. Be careful how far you carry that: the ' +
-    'measured figure this document quotes, the 15.50%, is a finishing rate on shots following a ' +
-    'cross-slot pass in volunteer-tracked 5-on-5 data, and it is a measurement of passes. This ' +
-    'document attaches no figure to carrying it across yourself, and neither does this picture — ' +
-    'the mechanism is the argument, not a number. No puck is drawn, because ' +
-    'these are two alternatives from two different places and only one of them is happening. And ' +
-    'the line itself comes with a caveat this document states in full: published descriptions of ' +
-    'where the royal road runs do not agree, and the net-to-net version drawn here is kept for ' +
-    'being the more conservative instruction rather than the better supported one — the two ' +
-    'sources closest to the original figures describe a shorter road that stops at the tops of ' +
-    'the faceoff circles. Defenders other than the goaltender are not drawn, so nothing here ' +
-    'shows how briefly the middle is actually open. ' +
+    // CAPTION LENGTH, 15 Sep 2026: 319 words before. The marker sits AFTER the "Carry it
+    // across yourself" bullet, so the reversed placement rule holds here and the prose
+    // above is the text that describes this picture. What went: the goaltender's four-step
+    // sequence (stated in the section and in oz-royal-road's own caption), and the
+    // road-geometry caveat (the section's own ⚠️ blockquote, a `Risk:` facts line, and
+    // oz-royal-road's caption -- three voiced sites in this one document, and the claim
+    // qualified here is the LINE, which oz-royal-road is the diagram that draws it).
+    // ⚠️ WHAT WAS NOT CUT: the "no figure attaches to the CARRY" hedge, because the 15.50%
+    // is a measurement of PASSES and this picture draws two carries -- and the safety limb
+    // below, whose placement after a completed sentence is load-bearing (see the note on it).
+    'Crossing the royal road with your feet rather than with a pass: driving off the ' +
+    'strong-side half-wall into the high slot, or curling out from behind the net into the ' +
+    'slot. Both finish on the far side of the line and drag the goaltender across the way a ' +
+    'pass does — though the 15.50% this document quotes measures passes, and no figure here ' +
+    'measures the carry. Only one of the two happens, so no puck is drawn. ' +
     // ⚠️ Placed AFTER the caption's last complete sentence, not inside one.
     // My first attempt spliced it between "stops at the tops of" and "the faceoff circles" --
     // severing an honest disclosure mid-sentence AND burying the safety line, unmarked, 250
@@ -938,18 +995,19 @@ const cycleRim = {
   title: 'The rim in the cycle',
 
   caption:
-    'The rim, in an offensive-zone cycle. The carrier is deep on the strong-side wall and the ' +
-    'checker is inside him, between him and the middle of the ice, sealing him against the boards ' +
-    'and still in front of him — and that is the read: a rim beats pressure that has you pinned. ' +
-    'The puck goes onward around the boards, following the curve of the rink, past the checker ' +
-    'and out to a teammate arriving behind the net — onward, in the direction the play was ' +
-    'already going, which is the whole difference between a rim and a reverse. The passer does ' +
-    'not then stand still: a cycle rotates, and no route is drawn for him here because this frame ' +
-    'is the read rather than the rotation. The companion ' +
-    'diagram is the same corner with the checker in the other place, and the two plays point in ' +
-    'opposite directions, so one of them is wrong every time. Picking the wrong one is described ' +
-    'as a leading cycle turnover — take that as coaching craft rather than a measurement, ' +
-    'because nobody has counted cycle turnovers by cause. ⚠️ And whichever one is on, this is a ' +
+    // CAPTION LENGTH, 15 Sep 2026: 246 words before. The marker sits AFTER "The mechanics",
+    // whose prose and ```facts block state both reads, the rotation and the turnover hedge.
+    // ⚠️ THE WALL-BATTLE LIMB IS UNTOUCHED, word for word, and stays in BOTH cycle captions:
+    // it is the safety caveat for the contact this picture is one frame away from, and the
+    // brief's rule on those admits no exception for repetition. ⚠️ "The companion diagram is
+    // the same corner with the checker in the other place" was DEIXIS -- the reverse is named.
+    'The rim, in an offensive-zone cycle. The checker is inside the carrier and still in ' +
+    'front of him, sealing him to the boards — that is the read: a rim beats pressure that ' +
+    'has you pinned. The puck goes onward around the boards to a teammate arriving behind ' +
+    'the net, in the direction the play was already going, which is the whole difference ' +
+    'from a reverse. Ranking the wrong read as a leading cycle turnover is coaching craft ' +
+    'rather than a measurement, because nobody has counted cycle turnovers by cause. ' +
+    '⚠️ And whichever one is on, this is a ' +
     'wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, ' +
     'forearm and hip into the contact, head up and chin off your chest — and not on the point of ' +
     'your shoulder. Only the checker and the ' +
@@ -1014,17 +1072,16 @@ const cycleReverse = {
   title: 'The reverse in the cycle',
 
   caption:
-    'The reverse — the same corner as the previous diagram, the same carrier on the same spot, ' +
-    'the same puck, and one thing changed: the checker has skated past him, carrying his ' +
-    'momentum on toward the end boards. That is the other half of the read. The ice he has just ' +
-    'left is back up the wall, so the puck goes back against the flow, into that space, to a ' +
-    'teammate arriving on the half-wall behind the play. A still picture cannot draw momentum, ' +
-    'so read the checker as a player already past the carrier and unable to stop. Call for it ' +
-    'out loud, because the puck is going somewhere the carrier is not looking. Get this the wrong ' +
-    'way round — reverse into a checker who is actually sealing you, or rim past one who has ' +
-    'already gone by — and you have handed over the puck in the offensive zone with your ' +
-    'forwards below it. That ranking of the wrong read as a leading cycle turnover is coaching ' +
-    'craft rather than a measurement: nobody has counted cycle turnovers by cause. ⚠️ And ' +
+    // CAPTION LENGTH, 15 Sep 2026: 242 words before, opening "the same corner as the
+    // previous diagram" -- DEIXIS, the exact form the style guide forbids. The situation is
+    // named instead. The wall-battle limb and the turnover hedge are untouched.
+    'The reverse, in the same deep corner of an offensive-zone cycle: the checker has ' +
+    'skated past the carrier, momentum carrying him on toward the end boards. The ice he ' +
+    'just left is back up the wall, so the puck goes against the flow into that space, to a ' +
+    'teammate arriving on the half-wall behind the play. A still picture cannot draw ' +
+    'momentum — read him as past and unable to stop, and call for it. Ranking the wrong ' +
+    'read as a leading cycle turnover is coaching craft rather than a measurement, because ' +
+    'nobody has counted cycle turnovers by cause. ⚠️ And ' +
     'whichever one is on, this is a wall battle: never turn your back to the boards and never ' +
     'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
     'your chest — and not on the point of your shoulder. Only the checker and the goaltender are ' +
@@ -1107,13 +1164,16 @@ const postShotShape = {
   width: 900,
 
   caption:
-    'The shape in the seconds right after a shot: F3 holds high, at or near the top of the ' +
-    'circle, as the safety — a rebound straight out is his, and a counter-attack has to go ' +
-    'through him. The other two forwards go to the net: one to the front for the screen and tip, ' +
-    'one hunting the strong-side rebound. Both defencemen are still on the blue line, the house ' +
-    'default and not a law: if the strong-side defenceman pinches, whether F3 covers the point, ' +
-    'the highest player covers under a five-man rotation, or the weak-side defenceman slides ' +
-    'across instead is a coaching choice this picture does not draw. Find out which your team plays.',
+    // CAPTION LENGTH, 15 Sep 2026: 115 words before. The three named alternatives for who
+    // covers a pinching defenceman's point are an `Options:` facts line in the owning
+    // section. The cardinal-rule hedge and "find out which your team plays" are kept -- a
+    // caption that presented the house default flat would be the corpus's commonest failure.
+    'The shape in the seconds after a shot: F3 holds high at the top of the circle as the ' +
+    'safety — a rebound straight out is his, and a counter-attack has to go through him. ' +
+    'The other two forwards go to the net, one to screen and tip and one hunting the ' +
+    'strong-side rebound, and both defencemen hold the blue line. That is the house ' +
+    'default, not a law: who covers a pinching defenceman’s point is a coaching choice this ' +
+    'picture does not draw. Find out which your team plays.',
 
   describe:
     'The attacking half of the rink, the net at the right, in the moments right after a shot. ' +

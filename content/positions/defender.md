@@ -554,8 +554,6 @@ A quick reference for situations outside the zone-by-zone framework above.
 
 ### Faceoffs
 
-![](diagram:faceoff-dzone-alignment)
-
 ```facts
 Key: The centre takes the faceoff; your position depends on the zone of the faceoff and your team's setup
 Position: Defensive zone — one defender supports the boards-side winger near the hash marks, ready to chase pucks to the corner or get to the back of the net
@@ -570,6 +568,8 @@ The center takes the faceoff. Your specific position depends on the zone of the 
 - **Defensive zone faceoff:** One defender (the "boards-side defender") supports the winger at the outside hash mark (the boards-side winger) — positioned near the hash marks, ready to chase pucks to the corner or get to the back of the net. The other defender is in the slot, ready to block a point shot or cover the net front. Be ready to react instantly to a tie-up or a loose puck.
 - **Offensive zone faceoff:** One defender at the strong-side point, ready to shoot on a clean win — a set play off a clean draw is one of the few chances in hockey where you get to shoot with your feet already set and traffic already in place. The other holds the weak-side point.
 - **Neutral zone faceoff:** Both defenders back at your blue line, ready to defend a rush if the opposing center wins it forward.
+
+![](diagram:faceoff-dzone-alignment)
 
 ### Power Play (your team has the man advantage)
 

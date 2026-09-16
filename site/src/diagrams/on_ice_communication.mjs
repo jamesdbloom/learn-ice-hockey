@@ -247,21 +247,19 @@ const whoCanSeeIt = {
     // contradicts three times. Only four players are drawn here; this sentence describes them,
     // not hockey.
     'danger, and in this picture the two who can see it are the two who cannot reach it. A ' +
-    'defenceman is going back into his own corner for a loose puck; a forechecker is closing on ' +
-    'him from behind, which is the one place his eyes do not reach; and his partner across the ' +
-    'net and his goaltender can see both of them and can do nothing about it except say so. Both ' +
+    'defenceman is going back into his own corner for a loose puck; a forechecker is closing ' +
+    'from the one place his eyes do not reach; and his partner and his goaltender can see both ' +
+    'and can do nothing about it except say so. Both ' +
     'are labelled "calls it", because where two people can see it both should call it: the ' +
     'failure being guarded against is silence, not duplication. The words themselves are a team ' +
-    'matter, not a law of hockey. Agree your own list: there is no official hockey vocabulary. ' +
-    'Two honest limits. This notation has no facing, no head and no sightline, so the claim ' +
-    'that the retriever cannot see him rests on which way he is travelling and is not ' +
-    'something the drawing establishes. ' +
-    'And which side the forechecker arrives from is one instance rather than a fixed ' +
+    'matter, not a law of hockey: there is no official vocabulary, so agree your own list. ' +
+    'This notation has no facing and no sightline, so that the retriever cannot see him rests ' +
+    'on which way he is travelling; which side the ' +
+    'forechecker arrives from is one instance rather than a fixed ' +
     'arrangement. The mirror of this picture is the same corner with nobody arriving, where the ' +
-    'call is "time" and the danger runs the other way, because a false "time" sends a teammate ' +
-    'into ' +
-    'contact he was not braced for. ⚠️ Which is the safety instruction this picture carries, since ' +
-    'the warning is shouted at a player arriving at the wall who cannot see the check coming. Two ' +
+    'call is "time" — and a false "time" sends a teammate into ' +
+    'contact he was not braced for. ⚠️ The safety instruction this picture carries is the one ' +
+    'shouted at a player arriving at the wall who cannot see the check coming. Two ' +
     'separate postures injure a neck at the boards, and they are not the same warning. A back ' +
     'turned to the wall is one: it makes the contact a hit from behind, which USA Hockey warns ' +
     'could inflict a severe head or neck injury even when the hit is light. A chin dropped to the ' +

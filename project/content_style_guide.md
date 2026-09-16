@@ -712,6 +712,38 @@ When describing something system-dependent:
 
 A symptom to watch for: if you write a rule and then need three "Exception —" blocks to walk it back, you have described a system without naming it. Name it instead.
 
+### ⚠️ Step 3's wording, and why two forms are both correct — measured 15 September 2026
+
+Round 70 found that **every** cardinal-rule instruction in `site/src/diagrams/` was introduced by *"so"*
+— *"…so find out which one your team plays"* — and that **the one site with a bare imperative straight
+after a dash was the one that had inverted** when read aloud. That is why the *"so"* form is the
+convention.
+
+⚠️ **It is a convention, not the safety property.** A later scan put six caption sentences in the negation
+worklist's top band for exactly the shape round 70 warned about — a bare imperative after a dash with a
+negation in front — and **none of them inverts:**
+
+> "The alignment is a coaching choice, **not a rule** — find out what your team runs."
+> "Every neutral-zone structure is a coaching choice, **not a law** — find out which one your team plays."
+> "Described publicly of Bruce Cassidy's Boston Bruins around 2018-19, **not a universal system** — find
+> out which your team runs."
+> "A still picture **cannot draw momentum** — read him as past and unable to stop, and call for it."
+
+**What makes these safe is that the negation is a PREDICATE NOMINAL — *not a rule*, *not a law*, *not a
+universal system* — or a complete verb phrase, *cannot draw momentum*. It closes inside its own phrase,
+so the imperative after the dash cannot be pulled under it.** The 2026 inversion happened where the
+negation was still open when the dash arrived.
+
+⚠️ **So do not "repair" these into the *"so"* form, and do not read the worklist's top band as a defect
+list.** `scripts/check_caption_negations.py` scores structure, not meaning: its `RESOLVER` recognises
+*so / but / because / which / who / whose / since / though / although*, and it has no way to know that
+`not a <noun>` has already terminated the scope. **That is its largest remaining false-positive family
+and it should not gain a `--strict` to match.**
+
+**The test, when you are unsure: read the sentence with the negation applied to the tail and ask what it
+then instructs.** *"Not find out what your team runs"* is not a reading English supports here. Where it
+IS a reading — where the negation is still open — use *"so"*.
+
 ---
 
 ## Document structure
@@ -1465,11 +1497,38 @@ reader to understand the text by seeing it first."*
    definition** — on `breakouts.md`'s `## 2. The Five Roles in Every Breakout`, which decomposes into
    five `###` subsections, the `##` and the `###` give opposite answers.
 
-3. ⚠️ **A marker landing immediately before the next heading or a `---` is NOT acceptable**, and this
-   has to be said because the previous pass existed to eliminate exactly that state: **101 of 286
-   markers sat there before it, and 6 of 331 do now.** The default as written pushes markers back
-   toward it. **If applying rule 1 would strand a marker at the end of a unit with nothing after it,
-   the caption is about the whole unit — treat it as an overview and leave it at the head.**
+3. ⚠️⚠️ **RELAXED ON THE OWNER'S RULING, 15 September 2026. A marker MAY land immediately before the
+   next heading or a `---`.** The owner's words: *"we don't want a diagram too close to the next header
+   so that it is clear the next item is a header, however we can always add a little gap — then there is
+   no reason why a diagram can't precede the next header."*
+
+   ⚠️ **So this is a SPACING concern, not a placement one. The fix is the gap, not the position.**
+
+   **What the rule used to say, and why it was wrong to keep:** it forbade the state outright, on the
+   ground that a previous pass existed to eliminate it — *"101 of 286 markers sat there before it, and
+   6 of 331 do now."* ⚠️ **That is a record of what was cleaned up, not a failure.** `CLAUDE.md` says
+   every rule here carries the failure it was written to prevent; **this one carried a count.**
+
+   ⚠️ **And the evidence ran against it.** A `site-reviewer` measured `goaltender.md`'s
+   `goalie-depth-failure-modes`, which sits immediately before a `---`: **the gap measured 40 px, LARGER
+   than the page's universal 32 px figure margin** — *"the diagram is not crowded into the break."*
+   ⚠️ **THAT 40 px IS THE PRE-CSS MEASUREMENT AND IS STALE AS OF THE SAME COMMIT THAT RECORDS IT.** The
+   `:has(+ hr)` rule shipped alongside this text sets `margin-bottom: 2.75rem`, so **that case is now
+   44 px**, as `global.css`'s own comment and the plan both say. ⚠️ **The argument is UNAFFECTED — it
+   only needs the gap to be larger than the ordinary 32 px, and 44 is further from it than 40 was — but
+   the NUMBER is superseded and a reader quoting it would be quoting the state before the fix.**
+   **And the
+   model document breaks the rule twice**: `how_to_watch_hockey.md`, held up throughout as what
+   compliance looks like, has two markers in this state, and `practice_and_development.md` two more.
+
+   ⚠️⚠️ **THE COST WAS THE REASON IT HAD TO GO.** Combined with *"never inside a list"*, this rule left
+   **no legal destination at all** whenever the caption's teaching passage was the last item of a list.
+   An agent working six documents put it plainly: ***"That, not the subject test, is why I moved 8 and
+   not ~27."*** **Its fallback then sent the marker back to the head, which is where most of a wave's
+   leaves came from.**
+
+   **What remains true:** a marker immediately before a heading must be visually separated from it, so
+   the heading still reads as a heading. **That is `site/src/styles/global.css`'s job, not the author's.**
 
 #### The four constraints
 
@@ -1668,6 +1727,209 @@ its new neighbours.
 **So: relative-position words in a caption — *the same*, *a beat later*, *the previous diagram*,
 *beside it*, *shown above* — are safe only in a caption that is never borrowed.** Where a caption is
 borrowed, name the situation instead of pointing at a neighbour.
+
+---
+
+### ⚠️⚠️ THIS RULE IS ABOUT DEIXIS, NOT LENGTH — and it has been over-read into a length requirement
+
+⚠️ **"Stand alone" means: do not point at a neighbour that may not exist in a hosting document.** It
+has never meant *"be a self-sufficient précis of your section."*
+
+⚠️⚠️ **Six agents read it the second way in one wave, and it is why the captions are long and why the
+marker moves kept colliding with their own prose.** Every group independently reported the same wall —
+a caption that summarises its whole section has **no interior position that is not adjacent to its own
+paraphrase.** One measured a caption reproducing its section's four paragraphs; another found three
+markers that could not move *because the caption repeated verbatim the paragraph it would land beside*.
+
+**The owner's ruling, 15 September 2026:** *"I don't want long captions unless they are with diagrams
+after the text describing them, otherwise this breaks the readability too much."*
+
+⚠️ **So: a caption may rely on the prose above it, because under the reversed placement rule the prose
+above it is the text that describes the diagram.** **A caption's job is what the surrounding text does
+NOT do** — name what the picture shows that the words did not.
+
+⚠️ **The deixis rule survives unchanged and is the ONLY thing "stand alone" constrains:** never write
+*"the same"*, *"a beat later"*, *"the previous diagram"*, *"beside it"* or *"shown above"* in a caption
+that any other document borrows. **Name the situation.** That is a referential-integrity rule and it
+costs no words.
+
+#### ⚠️⚠️ AND THE `describe` FIELD IS NOT EXEMPT FROM THE DEIXIS RULE — measured 15 September 2026
+
+**`describe` is exempt from the LENGTH target. It is not exempt from this one, and every agent in one
+wave read the first exemption as the second.** A deixis scan of all 408 caption and `describe` units
+found **20 positional references — 6 in captions and 14 in `describe` fields.**
+
+⚠️ **The consequence is a half-repair that reads as done.** That wave removed the neighbour-pointers from
+the CAPTIONS of every paired diagram and replaced them with naming — the 3-on-2 pair, the
+stand-up/back-off pair, the collapse and walk-down pairs. **It touched no `describe` field.** So those
+pairs now resolve **by name in the spoken layer and by position in the screen-reader layer**: a marker
+move breaks the second and leaves the first sound, and nothing reports it.
+
+**`describe` becomes the SVG `<desc>` on a `role="img"`**, reached by a screen reader travelling down the
+page in order — so *"the previous diagram"* degrades more gracefully there than in speech, **but only
+while the order holds, and the order is exactly what a marker pass changes.** Name the situation in both
+layers.
+
+#### ⚠️ A positional pointer can carry RULE SCOPE, which is the case that must never be written
+
+`faceoff-dzone-alignment-other-circle` carried: *"⚠️ What counts as outside is not the same in all four
+books — **the diagram above** carries that split."* **A four-book rule scope, resolved by position.** It
+was found because a NEGATION worklist put the sentence in its top band, not because any tool tests for
+deixis. ⚠️ **Nothing in this repository checks referential integrity in the caption layer.** The scan that
+found these was written for the occasion and is not a committed tool.
+
+#### ⚠️ ONE REFERENCE WAS KEPT ON PURPOSE, AND THE REASON IS THE EXCEPTION
+
+`drive-the-net-after` reads *"A net drive **a beat later** — a before and an after, not two alternatives,
+and this second frame is the reason for the first."* **The agent that shortened it kept the reference
+deliberately: the pair's CAUSAL claim is the teaching, and read as two alternatives the pair states the
+opposite of what it means.** It is single-host, so no borrowing document can separate them. ⚠️ **The rule
+forbids pointing at a neighbour that MAY NOT EXIST in a hosting document. Where the neighbour is
+guaranteed and the relationship between the two pictures IS the content, the pointer is the correct
+writing** — and the marker pass must then be told not to split them.
+
+### ⚠️⚠️ CAPTION LENGTH — the owner's target, 15 September 2026: TWENTY-FIVE TO FIFTY WORDS
+
+**Measured before the ruling, from `site/src/data/diagrams.json` at the commit that carried it: 204 captions, 52,136 words, median 238.5, longest 765, shortest 23.**
+⚠️ **This line read "212 captions" until a commit gate re-derived it. Four of the five figures were exact and the COUNT was eight high — `diagrams.json` has held 204 entries since 14 September and 198-203 before that, so it has never held 212.** ⚠️ **A wrong number sitting among four right ones is the hardest kind to notice, and the only thing that finds it is recomputing all five.** ⚠️
+**The median caption is about a page of speech, arriving in one breath group.**
+
+**The target is 25-50 words.** ⚠️ **A caption's job is what the surrounding text does NOT do — name what
+the picture shows that the words did not.** Under the reversed placement rule the prose above the
+diagram is the text that describes it, so the caption no longer has to carry the section.
+
+⚠️⚠️ **WHAT MUST SURVIVE THE CUT, WITHOUT EXCEPTION:**
+
+1. **Every safety caveat.** Captions carry checking-from-behind, boarding, head-contact and
+   neck-protection material. ⚠️ **Non-negotiable 4 — never strip an honest disclosure — applies to a
+   caption exactly as it applies to prose.** **If a safety limb cannot fit in 50 words, the caption is
+   the wrong place for it: move it into the body and say so.** **Never delete it.**
+2. **Every rule scope.** *"in three of the five books"*, *"NHL and IIHF only"*, *"ask your league"*.
+   **A shortened caption that drops a book scope has manufactured a false universal.**
+3. **Every hedge.** *"a coaching choice"*, *"nobody has counted this"*. **Compressing is not deleting.**
+4. ⚠️ **The deixis rule above.** A borrowed caption still may not say *"the same"*, *"a beat later"*,
+   *"beside it"* — **that constraint costs no words and is unaffected by length.**
+
+⚠️ **The `describe` text is a SEPARATE field and is NOT subject to this.** It is the accessible
+description for a screen reader and may stay long.
+
+### ⚠️ Formation diagrams — the owner's ruling: AFTER THE SHAPE SENTENCE
+
+**A diagram of a named formation, under a heading naming that formation** — `### 1-3-1`, `### 2-1-2`,
+`### The box` — **goes immediately after the sentence or bullet list that STATES the shape, and before
+the tactical detail that follows.**
+
+⚠️ **Not at the section head**, which is what the old rule produced, and ⚠️ **not at the end of the
+section**, which puts the picture behind everything it explains.
+
+**The reader gets the words and the picture together:**
+
+```
+### 1-3-1
+
+**The shape:** one player at the point, three across the middle, one at the net front.
+
+![](diagram:pp-131)
+
+**When to use it:** …
+**The risk:** …
+```
+
+⚠️ **This settles ~25 markers that six agents split on in one wave** — the whole of
+`special_teams.md`, plus the formation diagrams in `forechecking_systems.md` and
+`neutral_zone_systems.md`. **The argument for leading was that you cannot parse *"three across the
+middle"* without having seen the shape; the ruling is that the shape sentence does that work, and the
+picture confirms it.**
+
+#### ⚠️ WORKED CASE — A GLOSSARY DOCUMENT HAS A SHAPE SENTENCE TOO, AND THE SUBJECT TEST BREAKS THERE
+
+**Ratified 15 September 2026, after an agent applied this reading across `rink_map.md` and asked for it to
+be written down or reversed.**
+
+⚠️ **TWO RELAYED COUNTS WERE DELETED FROM THIS SECTION ON 16 SEPTEMBER 2026 RATHER THAN CORRECTED.** It
+said an agent *"moved thirteen markers"* and that the subject test *"would leave all fifteen markers"*
+where they were. **A commit gate could derive neither.** Measured: `rink_map.md` holds **17** markers,
+unchanged between HEAD and this commit, and **16** sections carry a `**Where:**` line. ⚠️ **Neither
+"thirteen" nor "fifteen" is any of those numbers, and the argument does not need them** — it is about the
+subject test degenerating on a glossary, which is true of every marker in the document however many there
+are. **THE FIX FOR A COUNT YOU CANNOT DERIVE IS TO STOP ASSERTING IT, not to assert a different one**;
+this is the third figure in this round removed rather than repaired, and every one of them was incidental
+to the point it sat inside.
+
+`rink_map.md` §5 is written as a glossary:
+
+```
+### The high slot
+
+**Where:** the upper part of the slot — from the level of the **faceoff dots** up to the **top of the circles**.
+
+![](diagram:the-high-slot)
+
+**Why it matters:** …
+```
+
+⚠️⚠️ **THAT `**Where:**` LINE IS PASTED FROM `content/foundation/rink_map.md:312`, VERBATIM, AND IT MUST
+STAY THAT WAY.** The first version of this worked case paraphrased it from memory as *"between the tops
+of the circles and the top of the faceoff dots"* — ⚠️ **"the top of the faceoff dots" is a boundary no
+owner writes.** A commit gate caught it.
+
+⚠️⚠️ **AND THE FIRST REPAIR OF THIS PARAGRAPH CARRIED A SECOND DEFECT OF THE SAME KIND. It went on to say
+the paraphrase was "a LOWER boundary" — a directional relation DERIVED FROM MEMORY, in the sentence that
+exists to say never to do that, and it was INVERTED.** In this corpus *"top"* is away from the net
+(`rink_map.md:302`: the slot runs *"from the top of the circles **down** to the goalmouth"*), and an NHL
+faceoff spot is *"two feet (2') in diameter"* (`sources/nhl_rules.txt:862`) — **so the top of a dot is a
+foot TOWARD the blue line, a HIGHER boundary, making the paraphrase one foot SHORTER rather than
+longer.** ⚠️ **The comparison has been deleted rather than corrected: *"a boundary no owner writes"* is
+true, is checkable by grep, and needs no derivation at all. THE FIX FOR A DERIVED CLAIM IS USUALLY TO
+STOP DERIVING, NOT TO DERIVE IT BETTER.**
+
+⚠️ **Three things made it worse than an ordinary slip, and they are the reason this warning is here:**
+**(1)** it is inside a **code fence**, which a next-round agent reads as a quotation of the owner rather
+than as prose; **(2)** the trailing `…` signalled truncation, not paraphrase, so nothing flagged it as
+approximate; **(3)** ⚠️ **the high slot is THE region in this repository with a recorded drift history —
+a band labelled "the high slot" was once drawn at 3.14× the area its owner defines, in two diagrams,
+under captions matching the owner's words, and it passed every gate.** `check_zones.py` exists because
+of it, and `CLAUDE.md` says only the rink map settles what a region is. **This file had just become a
+second place stating its bounds.**
+
+**So: when a worked case needs an owner's text, PASTE IT. Do not compress a definition to make an
+example read better — the example is about PLACEMENT, and the definition is only there to be the shape
+sentence.**
+
+⚠️ **The `**Where:**` line IS the shape sentence — the same slot as `**The shape:**` above.** It states
+what the region is in words; the picture then confirms it; `**Why it matters:**` is the tactical detail
+that must follow the picture, not precede it. **Seven markers in that document are settled by this one
+observation rather than case by case.**
+
+⚠️⚠️ **AND THIS IS WHERE THE OVERVIEW TEST DEGENERATES, WHICH IS THE REASON THE CASE IS HERE.** The
+ordinary test — *"if the caption's subject IS the section's title, it is an overview and goes first"* —
+is trivially satisfied by **every** `### <named area>` section in a glossary: the section is called *The
+high slot* and the caption is about the high slot. **Applied literally it would leave EVERY marker in that document
+where they were, and the document would keep the exact defect this rule exists to remove.**
+
+**So: on a document whose sections are DEFINITIONS rather than explanations, the subject test does not
+apply. Use the shape-sentence rule instead — the definition is the shape sentence.**
+
+⚠️ **The genuine orientation exception survives inside such a document and must be identified by
+something other than the subject test.** In `rink_map.md` it is `rink-map-end-zone`, which
+is a whole-zone frame for all of §5 and is pointed at by the next line — *"**This map** is a close-up of
+one end zone"* — and the two-picture pair at the head of §2, whose prose reads *"The sheet is drawn
+**here** in **two** pictures."* **A pointer in the prose is stronger evidence of a genuine orientation
+diagram than any test on the caption.**
+
+#### ⚠️ ONE EXCEPTION IS STRUCTURAL, NOT EDITORIAL
+
+A marker cannot go inside a blockquote, an ordered list, or a bullet list without changing what the
+renderer produces — a marker in a real ordered list **renumbers the audio**, and one inside a blockquote
+**fractures it into two quotes**. ⚠️ **So where a section's entire teaching passage IS such a block, there
+is no interior position, and the marker goes after the block — which under the relaxed placement rule may
+put it immediately before the next heading. That is now legal and is the correct answer.**
+
+**The one case where it is NOT:** `goaltender.md`'s trapezoid section runs heading → marker → facts block
+→ a single 29-line blockquote → two italic lines → next heading. **Every alternative position is after
+everything the section contains**, which the ruling rejects. **The marker was left where it is, and the
+real fix is to break up the blockquote** — a content change, not a placement one. **Recorded so that the
+next marker pass does not rediscover it as a failure.**
 
 ⚠️ **Do not sweep this pattern.** A census found 95 captions containing such a phrase and **most are
 correct** — *"the same puck carrier"*, *"the same shift"* are self-contained. **A hit is a defect

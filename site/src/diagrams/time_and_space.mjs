@@ -101,22 +101,12 @@ const attackTheSeam = {
   width: 900,
 
   caption:
-    'Attacking the seam instead of a defender. The seam is the gap between two defenders ' +
-    'that neither has clearly claimed — space by ambiguity rather than by distance. Nothing ' +
-    'marks it on the ice and it is not a place on the rink: it appears wherever two opponents ' +
-    'have not settled whose job you are, and it moves as they move. Here the carrier drives ' +
-    'the ice between the two defencemen rather than at the outside shoulder of one, which ' +
-    'forces a decision and a conversation between two players instead of a reaction from ' +
-    'one. If they both take him, his teammates are left against whoever is behind them; if ' +
-    'neither does, he is through. The two defencemen are drawn staggered, one stepped up and ' +
-    'one dropped off, because that is what an unclaimed gap looks like: if two defencemen ' +
-    'retreat level with each other and at the same speed, they seal the middle between them ' +
-    'and there is nothing here to attack. Where a defence chooses to meet a rush is a ' +
-    'coaching choice and not a law, so read this as one arrangement and not the only one, ' +
-    'and the shaded band as one instant rather than a marking. The carrier’s route stops at the ' +
-    'mouth of the seam, short of both defencemen: which of them moves decides what happens ' +
-    'next, no contact is drawn, and a still picture cannot show either. The two wide ' +
-    'teammates carry no routes because this section fixes only the carrier’s line.',
+    'The seam is the gap two defenders have both left unclaimed — space by ambiguity rather ' +
+    'than by distance, and it moves as they move. They are drawn staggered because two ' +
+    'defencemen retreating level seal the middle and leave nothing to attack. Where a ' +
+    'defence chooses to meet a rush is a coaching choice and not a law, so read this as one ' +
+    'arrangement, and the shaded band as one instant rather than a marking. No contact is ' +
+    'drawn.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, the attack moving left ' +
@@ -242,26 +232,16 @@ const denyTheReception = {
   width: 900,
 
   caption:
-    'Denying the reception rather than the pass. You will spend a career trying to intercept ' +
-    'passes and mostly failing, because passes are fast and you are guessing — and a lunge ' +
-    'that misses leaves you out of position at the worst moment. So instead of lunging at ' +
-    'the lane, take a route that arrives on the receiver at the moment the puck does, ' +
-    'between them and your own net, so that the option they wanted — turning toward your ' +
-    'goal — is the one you have taken away. The pass then works and gains them nothing, ' +
-    'because they have to turn back with you on them; and a receiver forced to catch a puck ' +
-    'while somebody is closing loses their scan, which is a second of blindness you created ' +
-    'without touching anybody. This is drawn as one instance, a pass from the wall into the ' +
-    'middle of your own end, because a picture has to put people somewhere — the read is the ' +
-    'same wherever the pass goes. Three things it cannot show. Your stick: this notation has ' +
-    'no stick symbol, and the section wants the blade on the receiver’s blade or in the ' +
-    'lane they are receiving through. The timing, which is the whole play — the pass and the ' +
-    'covering run are one instant here, not one after the other. And what you do in the last two feet: the ' +
-    'route ends in two bars rather than an arrowhead because it finishes on a patch of ice ' +
-    'and not on a person, no contact is drawn here, and what an arrival like this may end in ' +
-    'depends on whether your league allows body checking. Come from where the receiver can ' +
-    'see you, and never finish into the back of a player who is turned away from you. The ' +
-    'covering player is drawn as a forward; who takes this job depends on the coverage your ' +
-    'team plays, and the read is the same for a defenceman.',
+    'Denying the reception rather than the pass, drawn as one instance: a pass from ' +
+    'the wall into the middle of your own end. The read is the same wherever the pass goes. ' +
+    'The pass and the covering run ' +
+    'are one instant here, not one after the other. Your stick is not drawn and belongs on ' +
+    'the receiver’s blade or in the lane. The route ends in two bars rather than an arrowhead because ' +
+    'it finishes on a patch of ice and not on a person, no contact is drawn here, and what ' +
+    'an arrival like this may end in depends on whether your league allows body checking. ' +
+    'Come from where the receiver can see you, and never finish into the back of a player ' +
+    'who is turned away from you. Who takes this ' +
+    'job depends on the coverage your team plays; the read is the same for a defenceman.',
 
   describe:
     'Your own end, your net at the right and your goaltender in the crease. Two opposition ' +
@@ -367,22 +347,20 @@ const showAShoulder = {
   // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run
   // for check_caption_negations.py's CAPTION regex, which then scans only the prefix.
   caption:
-    'Showing a defender one option in order to open another — space created in the ' +
-    'defender’s mind before it exists on the ice. The carrier is wide, and his line is ' +
-    'aimed at the defenceman’s inside shoulder, the shoulder toward the middle of the ' +
-    'ice; the defenceman closes the middle — the shaded band, whose sides are the two ' +
-    'faceoff-dot lines — and the ice outside it, between him and the boards, is what opens. ' +
+    'Space created in the defender’s mind before it exists on the ice. The carrier’s line is ' +
+    'aimed at the inside shoulder, the one toward the middle of the ice; ' +
+    'the defenceman closes the middle — the shaded band — and the ice between him and the ' +
+    'boards is what opens. ' +
     'The mirror is not drawn here, but it works the ' +
     'same way: skate at the outside shoulder, the defenceman widens, and the middle opens ' +
-    'instead. You are not trying to beat him where the two lines meet — you are trying to ' +
-    'make him commit before you have decided, which is why the carrier’s line stops well ' +
-    'short of him and why no contact is drawn. Two honest limits. A defender who does not ' +
-    'bite gives you nothing, so read this as a picture of a defender who moved and not as a ' +
+    'instead. The line stops well short of him and no contact is drawn. Two honest ' +
+    'limits. A defender who does not ' +
+    'bite gives you nothing, so read this as a defender who moved and not as a ' +
     'promise that he will; and deception costs you a beat, so with two forecheckers closing ' +
     'and your back to the boards, fake nothing and make the simple play. Nothing here is ' +
-    'painted on the ice either: the band’s sides are the two faceoff-dot lines, which ' +
-    'are not painted, and its ends are drawn only so the shading has an edge — the middle ' +
-    'is a lane running the length of the rink and nothing gives it a depth.',
+    'painted on the ice: the band’s sides are the two faceoff-dot lines, and its ends are ' +
+    'drawn only so the shading has an edge — the middle is a lane running the length of the ' +
+    'rink and nothing gives it a depth.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, the attack moving left ' +

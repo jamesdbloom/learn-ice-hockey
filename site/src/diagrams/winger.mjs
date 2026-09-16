@@ -193,26 +193,17 @@ const wallDepthBySystem = {
   width: 900,
 
   caption:
-    'Where a winger stands on the wall in his own end, and why there is no single answer. ' +
-    'The whole sheet is drawn, your own goal at the left and the way you are attacking to ' +
-    'the right, at the moment your defenceman has the puck behind his net. ' +
-    'Three wingers are drawn on the same boards and only one of them is on the ice at a ' +
-    'time: they are the same player under three different breakout structures. ' +
-    'In the conventional swing breakout — the structure this guide assumes throughout — ' +
-    'you come down to the boards between the hash marks and the goal line, roughly level ' +
-    'with the faceoff dot or just below it, which is the deepest of the three. Under a flat ' +
-    'or spread structure you hold higher up the same wall, toward your own blue line. Under ' +
-    'a stretch or flying-winger structure one winger leaves the zone altogether and waits ' +
-    'up ice, drawn here out past the centre red line and short of the far blue line. ' +
-    'None of the three is more correct than the others, and the failure mode of standing at ' +
-    'the hash marks in a stretch system is exactly as bad as the reverse — so find out ' +
-    'which one you are in. Breakouts is the authority on all three and on this landmark. ' +
-    'Two things the picture cannot show. The first is timing: you come down as the puck ' +
-    'becomes yours and not before, and staying high while the other team has it is what ' +
-    'makes the trip short and makes you the first outlet available. The second is where you ' +
-    'were standing a second earlier — high on your side, level with the opposing point man — ' +
-    'because that belongs to your team’s defensive-zone system rather than to its breakout, ' +
-    'and it is a separate coaching choice. This guide assumes a low zone collapse there.',
+    'Where a winger stands on the wall in his own end, and why there is no single answer. The whole ' +
+    'sheet, your own goal at the left, at the moment your defenceman has the puck behind his net. ' +
+    'Three wingers are drawn on the same boards and only one is on the ice at a time: the same player ' +
+    'under three different breakout structures. In the conventional swing breakout you come down ' +
+    'between the hash marks and the goal line, roughly level with the faceoff dot, the deepest of the ' +
+    'three. Under a flat or spread structure you hold higher up the same wall. Under a stretch or ' +
+    'flying-winger structure one winger leaves the zone altogether, drawn out past the centre red ' +
+    'line. None of the three is more correct than the others, and standing at the hash marks in a ' +
+    'stretch system is exactly as bad as the reverse — so find out which one you are in. Where you ' +
+    'were standing a second earlier belongs to your team’s defensive-zone system rather than to its ' +
+    'breakout, and is a separate coaching choice; this guide assumes a low zone collapse there.',
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left and the attacking end at ' +
@@ -306,34 +297,28 @@ const leavesThePoint = {
   half: true,
   width: 900,
 
+  // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. Any note
+  // below was written against the longer text: a clause it names may no longer be in the
+  // caption, and it is kept for its reasoning rather than as a description of the string.
+  // ⚠️ FULL STOP, NOT A COLON. "are not drawn here either" is a MAIN-CLAUSE negation sitting
+  // immediately before the colon, and the tail is two bare imperatives — so a listener hears
+  // "don't follow your man" and "don't engage the puck", inverting two real coaching
+  // exceptions into prohibitions. The negation is about the PICTURE (these two are not drawn);
+  // the tail is what the reader should actually do. Closing the sentence separates them.
   caption:
-    'What it costs a winger to leave the point, drawn in your own end with your net at the ' +
-    'right. You have gone down into the corner to help with the battle; the puck has come ' +
-    'out of it to the opposing defenceman you were covering, and he is walking in off the ' +
-    'point with nobody near him. ' +
-    'Two things have gone at once, which is why the discipline of staying high pays twice. ' +
-    'He now has the time and space to shoot or to walk into the middle, which is the thing ' +
-    'covering the point exists to deny; and there is nobody on the boards between the hash ' +
-    'marks and the goal line, so if your team does win it back there is no outlet on that ' +
-    'side and the exit starts late. ' +
-    '⚠️ This is a mistake only under the system the picture assumes. Staying high out of the ' +
-    'corner is the low zone collapse job — the most common defensive-zone structure and a ' +
-    'coaching choice rather than a rule of hockey. Under man-on-man you follow your check ' +
-    'wherever he goes, corner included, and going down there is the job rather than the ' +
-    'error; under a hybrid you take him down only below the hash marks. Find out which one ' +
-    'your team plays before your first shift, because on the coaching account a ' +
-    'defensive-zone breakdown is two players working from different assumptions more often ' +
-    'than it is an effort problem — coaching emphasis rather than a counted ranking. ' +
-    // ⚠️ FULL STOP, NOT A COLON. "are not drawn here either" is a MAIN-CLAUSE negation sitting
-    // immediately before the colon, and the tail is two bare imperatives — so a listener hears
-    // "don't follow your man" and "don't engage the puck", inverting two real coaching
-    // exceptions into prohibitions. The negation is about the PICTURE (these two are not drawn);
-    // the tail is what the reader should actually do. Closing the sentence separates them.
-    'Two real exceptions under collapse are not drawn here either. Follow your man a few ' +
-    'feet if he walks down off the point, staying connected and calling the switch, and ' +
-    'engage the puck if a corner battle squirts it up the wall to you, because that one is ' +
-    'your breakout rather than a corner battle. The version of this picture with the winger ' +
-    'in the right place is the diagram in this document under Ready to Break Out.',
+    'What it costs a winger to leave the point, drawn in your own end with your net at the right. You ' +
+    'have gone down into the corner to help with the battle; the puck has come out of it to the ' +
+    'opposing defenceman you were covering, and he is walking in off the point with nobody near him. ' +
+    'Two things have gone at once. He has the time and space to shoot or to walk into the middle, ' +
+    'which is the thing covering the point exists to deny; and there is nobody on the boards between ' +
+    'the hash marks and the goal line, so if your team does win it back the exit starts late. ⚠️ This ' +
+    'is a mistake only under the system the picture assumes. Staying high out of the corner is the ' +
+    'low zone collapse job — a coaching choice rather than a rule of hockey. Under man-on-man you ' +
+    'follow your check wherever he goes, corner included, and going down there is the job rather than ' +
+    'the error; under a hybrid you take him down only below the hash marks. Find out which one your ' +
+    'team plays before your first shift. Two real exceptions under collapse are not drawn here ' +
+    'either. Follow your man a few feet if he walks down off the point, staying connected and calling ' +
+    'the switch, and engage the puck if a corner battle squirts it up the wall to you.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the ' +
@@ -442,34 +427,31 @@ const arrivingAtTheLine = {
   half: true,
   width: 900,
 
+  // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. Any note
+  // below was written against the longer text: a clause it names may no longer be in the
+  // caption, and it is kept for its reasoning rather than as a description of the string.
+  // ⚠️ This carried only the DUCKING half of a pair its owner states as inseparable
+  // (body_contact_and_battles.md:21, "Those are two prohibitions against two different
+  // injuries"). Voiced alone, a listener was told not to duck, not told not to turn his
+  // back — which is the reflex the owner says players actually have — and given no action
+  // to take instead. Now matches the pairing the two sibling captions in this file use.
   caption:
-    'Arriving at the attacking blue line as a winger, with the zone you are entering at the ' +
-    'right. You are the forward who attacks that line widest and fastest, and the picture is ' +
-    'drawn for one thing: where the defenceman meeting you is standing. He is stood up on ' +
-    'his own line, and the ice he is defending is the ice your body, your hands and your ' +
-    'stick reach before your trailing skate does. ' +
-    'So a head up is the condition of the technique rather than an extra — you cannot brace ' +
-    'for a hit you cannot see, and a body that is surprised does not absorb contact. ' +
-    // ⚠️ This carried only the DUCKING half of a pair its owner states as inseparable
-    // (body_contact_and_battles.md:21, "Those are two prohibitions against two different
-    // injuries"). Voiced alone, a listener was told not to duck, not told not to turn his
-    // back — which is the reflex the owner says players actually have — and given no action
-    // to take instead. Now matches the pairing the two sibling captions in this file use.
-    'And never turn your back to the wall and never duck. Those are two different injuries — ' +
-    'a hit from behind you cannot brace for, and a chin tucked to the chest, which does not ' +
-    'need speed to do it. Skates parallel to the boards, forearm and hip into the contact, ' +
-    'head up and chin off your chest — and not on the point of your shoulder. Body Contact and ' +
-    'Battles owns that instruction and writes it without exceptions. ' +
-    '⚠️ The trail skate itself is not drawn, and cannot be at this scale — it is smaller than ' +
-    'any mark on this page. What it does is still worth knowing. You are offside only when ' +
-    'both skates have completely crossed the line before the puck has, so a trailing skate ' +
-    'on the line keeps you onside; drag it and keep the blade in contact with the ice or the ' +
-    'paint, because a dragged, touching skate is onside under all four rule sets, while a ' +
-    'lifted one is onside under the NHL and the IIHF but offside under USA Hockey Rule ' +
-    '630(a) and Hockey Canada Rule 6.11. Find out which book your league runs. ' +
-    'And do not coast at the line to be safe: arriving late and slow is the single most ' +
-    'common way a winger reaches an offensive-zone battle with nothing left, and it costs ' +
-    'your line more than a whistle would.',
+    'Arriving at the attacking blue line as a winger, with the zone you are entering at the right. ' +
+    'The picture is drawn for one thing: where the defenceman meeting you is standing. He is stood up ' +
+    'on his own line, and the ice he is defending is the ice your body, your hands and your stick ' +
+    'reach before your trailing skate does. The trail skate itself is not drawn, and cannot be at ' +
+    'this scale. You are offside only when both skates have completely crossed the line before the ' +
+    'puck has, so a trailing skate on the line keeps you onside; drag it and keep the blade in ' +
+    'contact with the ice or the paint, because a dragged, touching skate is onside under all four ' +
+    'rule sets, while a lifted one is onside under the NHL and the IIHF but offside under USA Hockey ' +
+    'Rule 630(a) and Hockey Canada Rule 6.11. Find out which book your league runs. And do not coast ' +
+    'at the line to be safe: arriving late and slow costs your line more than a whistle would. ⚠️ A ' +
+    'head up is the condition of the technique rather than an extra — you cannot brace for a hit you ' +
+    'cannot see, and a body that is surprised does not absorb contact. And never turn your back to ' +
+    'the wall and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
+    'for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the ' +
+    'boards, forearm and hip into the contact, head up and chin off your chest — and not on the point ' +
+    'of your shoulder.',
 
   describe:
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +
@@ -581,23 +563,17 @@ const cornerAndTheEmptyPoint = {
   width: 900,
 
   caption:
-    'A winger with the puck in the offensive corner, drawn for the look that is easiest to ' +
-    'skip. The opposition net is at the right and their defenceman is on you from the ' +
-    'inside, so your body is the wall between him and the puck and the puck is drawn on the ' +
-    'far side of you from the pressure. Two outlets are drawn, and they are the two the ' +
-    'section names: your own defenceman, and your centre. ' +
-    'What the picture is actually about is where that defenceman is. He has stepped down ' +
-    'off the blue line to the top of the faceoff circle to support the cycle, which is a ' +
-    'normal and legitimate thing for him to do — so the point behind him, which is exactly ' +
-    'where a blind pass up the wall goes, is empty. Look up before you throw it there. He ' +
-    'may equally be holding the line, and this picture shows one of the two rather than the ' +
-    'way it always is; the far-side point here is still manned. ' +
-    'Protecting the puck and waiting for support beats a rushed pass that turns it over, ' +
-    'and forcing it out of the corner through heavy traffic is the thing not to do. ' +
-    '⚠️ Never turn your back to the wall and never duck. Those are two different injuries — ' +
-    'a hit from behind you cannot brace for, and a chin tucked to the chest, which does not ' +
-    'need speed to do it. Skates parallel to the boards, forearm and hip into the contact ' +
-    'rather than the point of your shoulder, head up and chin off your chest. Nothing in this ' +
+    'A winger with the puck in the offensive corner, drawn for the look that is easiest to skip. The ' +
+    'opposition net is at the right and their defenceman is on you from the inside, so your body is ' +
+    'the wall between him and the puck. Two outlets are drawn: your own defenceman, and your centre. ' +
+    'What the picture is actually about is where that defenceman is. He has stepped down off the blue ' +
+    'line to the top of the faceoff circle to support the cycle, which is normal and legitimate — so ' +
+    'the point behind him, exactly where a blind pass up the wall goes, is empty. Look up before you ' +
+    'throw it there. He may equally be holding the line, and this picture shows one of the two rather ' +
+    'than the way it always is. ⚠️ Never turn your back to the wall and never duck. Those are two ' +
+    'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
+    'which does not need speed to do it. Skates parallel to the boards, forearm and hip into the ' +
+    'contact rather than the point of your shoulder, head up and chin off your chest. Nothing in this ' +
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:

@@ -104,8 +104,6 @@ If you take one thing from this document: **goaltending is not primarily about r
 
 ### Playing the angle
 
-![](diagram:goalie-playing-the-angle)
-
 ```facts
 Position: Stand on the line from the puck to the exact centre of the goal line, facing along it, centred on it
 Technique: Be out — at the depth this situation calls for
@@ -116,6 +114,8 @@ Action: Ask for the extra second in practice — if you are never set in practic
 ```
 
 Imagine a line drawn from the puck to the exact centre of the goal line. Your job is to stand on that line, facing along it, with your body centred on it. Do that and you are covering the middle of the net by definition, and the shooter can only score by hitting the edges.
+
+![](diagram:goalie-playing-the-angle)
 
 Mitch Korn's three-step formulation of cutting down the angle is the clearest one in circulation, and worth memorising in order. He gives them as *"(1) being out … (2) being square … (3) being set (stationary if possible)"*:
 
@@ -553,8 +553,6 @@ Action: Find out which rules you are under before your first shift, and take the
 
 ### Stopping pucks for your defence
 
-![](diagram:goalie-rim-stop-or-clear)
-
 ```facts
 Action: Kill a rimmed puck dead behind the net and leave it stationary — you have converted a race into a pickup
 Action: Call "leave it" early, while your defenceman is still coming back, not as they arrive
@@ -573,9 +571,9 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
   **⚠️ Under the IIHF book it is not a reading at all — it is answered, and answered against you.** The IIHF Situation Handbook 2025/26 puts exactly this case, at Situation 27.7: a goalkeeper retreating through the corner *"drops down on the knees and blocks the pass using the leg pads which is clearly inside the restricted area."* The answer: *"Since the goalkeeper 'plays' the puck in the restricted area, the goalkeeper must be assessed a minor penalty for delay of game."* No stick, no possession, no attempt to make a play with it — a pad in the way of a pass is playing the puck. **That is the operative interpretation in Britain**, so the conservative reading this document takes is not caution there, it is the rule. Two things the Handbook also settles, both in your favour, and in the same words in the 2025/26 (v1.1) and 2026/27 editions. **A puck you stop on the goal line is not behind it**, so stopping it there is not the offence — Situation 27.6 reasons that *"the puck must be over the goal line to be considered to be in the restricted area."* ⚠️ **Read "restricted area" carefully in that sentence, because the IIHF's two publications use the phrase in opposite senses.** The **Handbook** means the ice behind the goal line that you are barred from; the **Rulebook** means the trapezoid itself — Rule 1.8 is headed *"Goalkeeper's Restricted Area"* and describes the marked trapezoidal area, and the goalkeeper-penalties table lists the offence as *"Playing puck outside restricted area"*. Everything that follows here uses the Rulebook's sense. And **a puck that comes off the glass and hits you while you are retreating is no penalty**, because *"the goalkeeper must play the puck to be penalized"* (Situation 27.9). Out there, get out of the way and let your defenceman have it.
 - **Know your team's convention.** Whether your goalie plays the puck at all is a coaching choice. Some teams want the goalie handling everything they legally can; others want the goalie to touch nothing and stay in the net. Both are defensible. Ask, and then be consistent.
 
-### The safe outlets
+![](diagram:goalie-rim-stop-or-clear)
 
-![](diagram:goalie-safe-outlets)
+### The safe outlets
 
 ```facts
 Priority: Rank your options by risk before you move the puck
@@ -593,6 +591,8 @@ When you do move the puck, rank your options by risk:
 3. **A rim around the boards to the far winger.** Concedes possession but relieves pressure. Aim it to arrive where a teammate can meet it.
 4. **Off the glass and out.** Rarely wrong when you are in trouble, and goalies are allowed to be boring — but ***along*** the glass, never over it. A puck you shoot directly out of the rink from your own end is a two-minute minor **under NHL and IIHF rules** — USA Hockey's clause reaches only a *deliberate* clear, so an accidental one is no penalty there — and the next section is about the rules that make it one, in all four books.
 5. **A pass up the middle.** Almost never. A goalie's turnover in the middle of the ice is a shot on an empty net, and you are the one standing in it.
+
+![](diagram:goalie-safe-outlets)
 
 ### Putting the puck out of play — the minor that is yours too, and the tier above it after a whistle
 
@@ -702,9 +702,9 @@ You see everything. You are stationary, and you are facing the play while your d
 
 **A call converts a blind decision into an informed one, and it costs you nothing.** The information was already sitting in your eyes, useless.
 
-### The core calls
-
 ![](diagram:the-call-and-who-can-see-it)
+
+### The core calls
 
 ```facts
 Convention: Goalie calls have a standard vocabulary, but the words vary by team — agree yours in the room, not on the ice
@@ -855,10 +855,6 @@ The call for it is **"I've got the pass" / "take the shooter."** Say it out loud
 
 ### 3-on-2s
 
-![](diagram:rush-3-on-2-default)
-
-![](diagram:rush-3-on-2-alternative)
-
 ```facts
 Convention: The common default is each defenceman taking an outside attacker, the middle man left to whoever backchecks that lane
 Read: A 3-on-2 is the same read as a 2-on-1, but with a wider back door
@@ -868,6 +864,10 @@ Action: Find out which 3-on-2 version your team plays, because the two fail in d
 ```
 
 The common default is each defenceman taking an outside attacker and neither chasing the carrier, with the middle attacker left to whoever is backchecking that lane — usually the centre, though some teams instead have the strong-side defenceman take the puck carrier and the weak-side defenceman split the middle and far man. Both are coaching choices and they fail in different directions, so find out which one your team plays ([Defending the Rush](../systems/defending_the_rush.md) sets out both). From your side, the read is the same as a 2-on-1 but with a wider back door: don't over-challenge, stay a little deeper, and prioritise the ability to move laterally over the last foot of angle. Talk — "odd man" tells everyone to stop thinking about the puck and start counting. (An **odd-man rush** is any attack where the attackers outnumber the defenders who got back: a 2-on-1, a 3-on-2, a breakaway.)
+
+![](diagram:rush-3-on-2-default)
+
+![](diagram:rush-3-on-2-alternative)
 
 ### Shootouts
 
@@ -1093,8 +1093,6 @@ Rule: An attacker who will not give ground after your contact may still be penal
 
 ### In front of your own net
 
-![](diagram:net-front-walk-out-direction)
-
 ```facts
 Action: Clear the net front with technique — inside shoulder ahead of theirs, box out, and lift their stick up rather than sideways, taking it below their bottom hand
 Convention: Whose job the net front is in the first place is a coaching choice — the weak-side defenceman's under a low zone collapse, whoever's check went there under man-on-man, which can as easily be a forward. Find out which your team plays
@@ -1112,6 +1110,8 @@ Rule: Nobody prices a body put head first into the boards or goal frame at two m
 - **Do not block a shot from a screening position.** Half-blocking a puck your goalie cannot see is *worse* than not blocking it, because you have just deflected an unseen puck. Get to the shooter and block from close, head up and out of the shot lane, or get out of the lane entirely. There is no useful middle. [Body Contact and Battles](../technique/body_contact_and_battles.md) has the rest of what to protect, and the full list of when not to block at all.
 - **Box out on rebounds.** After the save, the goalie is on the ice recovering. The most dangerous player is the one arriving unmarked at the second puck. Take the inside position on that body and hold it — that is the box-out, and it needs no checking league to be legal. ⚠️ **The authority for that is USA Hockey's *Standard of Play and Rule Emphasis*, not the Note to Rule 604(c) that everyone reaches for.** The Note describes the act better than anything else in the book — it blesses a player *"simply maintaining established body position"* — but it sits under a rule scoped to the categories where checking is barred. The sentences that are scoped to nothing are the Standard of Play summaries: *"A player is entitled to use proper body position and competitive contact in all age classifications in order to gain a competitive advantage"* (Body Checking, Summary) and *"Players are entitled to the ice they occupy as long as they are able to maintain their own foot speed and body position between opponent and puck"* (Restraining Fouls, Summary). Take the description of the act from the Note and the entitlement from those. Holding a position you have already established is written as legal in three of the four books — the NHL and the IIHF at Rule 56.1, and USA Hockey in those summaries — **with Hockey Canada silent rather than against it**: its Rule 7.3 defines body-*checking*, not the box-out, as deliberate contact with *"opposite-directional force,"* and its own preamble defines mere body *contact* as *"incidental contact of two opposing players in pursuit of the puck on the ice in the same direction"* — neither sentence grants the box-out, and neither forbids it. **Walking them off a spot they have already established is a different act, and it needs a full-checking league — and a checking league does not make it free.** Where checking is barred it is a minor — USA Hockey's same Note, on *"deliberate physical contact with an opponent, with no effort to legally play the puck,"* in every Competitive Contact classification (604(a): 12U and below, all girls'/women's, all non-check adult — and that list is a **floor, not a ceiling**, because 604(a) continues that a local governing body *"may prohibit body checking in any classification"*, so find out what your own league permits rather than reading your age off it) — and Hockey Canada's 7.3(a), which reaches anyone who *"intentionally body-checks, bumps, shoves, or pushes"* an opponent, in divisions of U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved. ⚠️ **And the minor is not the ceiling in either book** — USA Hockey **604(d)** is a major plus a game misconduct for a player who *"recklessly endangers an opponent with a body check in a Competitive Contact category"* and **604(e)** a match penalty that *"may also be assessed"* — permissive where 604(d) is mandatory — while Hockey Canada **7.3(b)** reaches the same pair *"At the discretion of the Referee, based on the degree of violence of the impact"* with nobody hurt, is compulsory where the check injures, and **7.3(c)** is a match penalty for a player who *"deliberately attempts to or deliberately injures an opponent by body-checking"*, which the attempt alone reaches and which needs nobody hurt. ⚠️ **And it is the game rather than the age group that settles it**: USA Hockey **604(b)** prohibits body checking any time *"a team from a Competitive Contact category … plays a team from a Body Checking category"*, so a checking-age team can be in a no-checking game tonight purely because of who it drew, and its **Blind Hockey** rules bar it in every Blind Hockey game with no age or classification limb at all, penalised *"under the guidelines within Rule 604"*. 🇬🇧 **In women's hockey the British book draws the same line itself** — **IIHF Rule 101.1** lets a player *"'hold their ground' any time that they have established their position on the ice"* and makes the move onto her an illegal hit: *"[a]ny move by a Player to step or glide into an opposing Player will be assessed at least a minor penalty (2')"*, with a major (5') and an automatic game misconduct above it. **And even in a checking league, a stationary opponent cannot simply be displaced.** NHL and IIHF Rule 56.1 protect the body position you are standing in, not a lateral move into someone else's — *"[m]oving laterally and without establishing body position, then making contact with the non-puck carrier is not permitted and will be penalized as interference"* — and USA Hockey Rule 625(a)(4) penalises a defender who *"changes their skating lane or foot speed in an effort to play the body of an opponent who is no longer in control of the puck."* Anywhere else, hold the position and let your goalie find the puck under you.
 - **Whichever way your league lets you move somebody at the goalmouth, move them toward the corner and not across the front of your own net.** ⚠️ **That half is not scoped to checking leagues even though the walk-out is**, and a legal box-out puts a body on the same path an illegal shove does. The route across your own goalmouth has a steel goal frame at one edge and your goaltender at the other, and the player being moved travels it sideways or backwards and can see neither of them. **USA Hockey writes the goal post into the head-first spinal-injury mechanism alongside the boards** — with the chin tucked to the chest the cervical spine straightens, and the injury that follows *"can occur at walking speed"* (*Heads Up Hockey Program Guide*). **Taking them to the corner instead is coaching caution drawn from that hazard rather than a rule anyone writes** — what the rules do price is the worst version of it, and never at two minutes: a major plus a game misconduct under **USA Hockey 608(b)** where a check from behind *"causes them to go head first into the boards or goal frame"*, a **match penalty** under **Hockey Canada 7.5(c)** where the player is *"unable to protect or defend themselves"*, and no minor for checking from behind at all in either the NHL's book or the IIHF's (**43.2** in both). ⚠️ **And where your league does let you drive from under the arm, their skates stay on the ice** — a player whose edges are gone cannot brace and cannot choose what meets the post first, and no book here prices that lift on its own, so the reason to keep them down is the collision rather than the tariff. **If you are the one being moved, in any league: head up, chin off your chest.** [Body Contact and Battles → Defending the net front](../technique/body_contact_and_battles.md#defending-the-net-front) owns the technique, and [Receiving a Hit Safely](../technique/body_contact_and_battles.md#6-receiving-a-hit-safely) the other end of it.
+
+![](diagram:net-front-walk-out-direction)
 
 ### The puck, the calls and their stick
 

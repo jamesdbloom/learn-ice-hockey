@@ -160,14 +160,19 @@ const areaPass = {
   width: 900,
 
   caption:
-    'An area pass at the attacking blue line, and the one thing about it a picture can show and a sentence ' +
-    'cannot: there is nobody at the target. A defender has stood the puck carrier up at the line, so rather than ' +
-    'pass to his winger the carrier chips the puck into the shaded patch of ice behind that defender — a place, ' +
-    'not a person. That makes the play a race rather than a turnover, so it is only a good play if the winger has ' +
-    'a genuine speed or angle advantage. The winger is drawn still short of the blue line on purpose, because a ' +
-    'receiver whose skates both cross the leading edge of the blue line before the puck does is off-side — the ' +
-    'stretch-pass section works that rule through, including the two books of the four that judge a lifted trail ' +
-    'skate differently. The section names the defender and the winger; it does not say who the puck carrier is.',
+    // CAPTION LENGTH, 15 Sep 2026: 164 words before. The mechanics and the risk are the
+    // section's prose and its ```facts block around this marker. ⚠️ THE OFF-SIDE LIMB STAYS
+    // WITH ITS BOOK SCOPE: it explains a DRAWN POSITION -- the winger is short of the line
+    // on purpose -- and a reader who copies the picture without it skates himself off-side.
+    // Dropping "two books of the four" from it would manufacture exactly the false
+    // universal the style guide names.
+    'An area pass at the attacking blue line, and the one thing a picture can show and a ' +
+    'sentence cannot: there is nobody at the target. The carrier chips the puck into the ' +
+    'shaded patch behind the defender who stood him up — a place, not a person, which makes ' +
+    'it a race rather than a turnover, and only a good play if the winger has a real speed ' +
+    'or angle advantage. The winger is drawn short of the blue line on purpose: a receiver whose ' +
+    'skates both cross the leading edge before the puck does is off-side, and two of the ' +
+    'four books judge a lifted trail skate differently.',
 
   describe:
     'The attacking half of the rink, attacking to the right, with the blue line running down the picture about a ' +
@@ -286,13 +291,19 @@ const leadTheReceiver = {
   width: 900,
 
   caption:
-    'Passing into space rather than onto the tape. The receiver is moving, so the pass is not aimed at him: it is ' +
-    'aimed at the spot where his stick will be when the puck arrives, and the gap between the end of his skating ' +
-    'arrow and the end of the pass is the lead. This is not the area pass: that one aims at ice nobody owns yet ' +
-    'and turns the play into a race, and this one aims at one particular teammate’s stick a moment from now. No ' +
-    'opponents are drawn but the goaltender, because the section describes a passer and a receiver only, and it ' +
-    'does not say what either of them is. The lead is judged the same way anywhere on the ice, although which ' +
-    'passes are worth making is not: in your own end the standard is certainty rather than value.',
+    // CAPTION LENGTH, 15 Sep 2026: 145 words before. The definition of a lead and the two
+    // variables that trade against each other are the section's prose and its ```facts
+    // block. What the picture alone can say -- that the gap between the two arrow-ends IS
+    // the lead, and that this is not the area pass -- is kept.
+    // The closing pair went TOGETHER and that is why no false universal was left behind:
+    // the caption said the lead is judged the same way anywhere on the ice, then scoped it
+    // ("in your own end the standard is certainty rather than value"). Cutting the scope
+    // alone would have manufactured the universal; the claim went with it. Both halves are
+    // in passing_and_receiving.md, at the overview (:18) and at Key Takeaway 10 (:816).
+    'Passing into space rather than onto the tape: the pass is aimed at the spot where the ' +
+    'receiver’s stick will be when the puck arrives, and the gap between the end of his ' +
+    'skating arrow and the end of the pass is the lead. This is not the area pass, which ' +
+    'aims at ice nobody owns yet and turns the play into a race.',
 
   describe:
     'The attacking half of the rink, attacking to the right, the opposition net at the right with their ' +
@@ -391,14 +402,17 @@ const bankPass = {
   width: 900,
 
   caption:
-    'A bank pass off the boards, drawn in your own end: your own net is at the right of this picture and up-ice ' +
-    'is to the left. A forechecker’s body sits in the direct lane between you and your teammate, so the puck is ' +
-    'not sent at the teammate at all. It is sent at a spot on the wall, chosen so that it comes off the boards at ' +
-    'roughly the mirror of the angle it went in at and arrives where he is: play the angle, not the target. It is ' +
-    'safe because the puck never travels through the lane the checker is defending, and only moderately reliable ' +
-    'because the bounce is not fully predictable — which is why you call it: a puck your teammate is not ' +
-    'expecting is a turnover however well it beat the checker. The section names a forechecker but not the ' +
-    'receiver; the geometry is the same whoever is in the lane and whoever is receiving.',
+    // CAPTION LENGTH, 15 Sep 2026: 162 words before. "Play the angle, not the target" and
+    // the risk rating are the section's own ```facts lines beside this marker. ⚠️ THE
+    // ORIENTATION SENTENCE STAYS: this diagram is drawn with YOUR OWN net at the right,
+    // the opposite way round to most of the corpus, and a reader who assumes the usual
+    // orientation reads a defensive-zone play as an attacking one. The "call it" limb also
+    // stays -- an uncalled bank is a turnover in your own end, which is where it is drawn.
+    'A bank pass off the boards, drawn in your own end: your own net is at the right of ' +
+    'this picture and up-ice is to the left. A forechecker sits in the direct lane, so the ' +
+    'puck is sent at a spot on the wall instead, chosen so it comes off at roughly the ' +
+    'mirror of the angle it went in at. The bounce is not fully predictable, which is why ' +
+    'you call it.',
 
   describe:
     'One end zone, drawn with your own net at the right of the picture and up-ice to the left, so the play runs ' +

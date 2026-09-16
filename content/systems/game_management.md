@@ -190,12 +190,6 @@ Three details worth knowing:
 
 ### Pressing without giving up odd-man rushes
 
-![](diagram:pinch-centre-high)
-
-![](diagram:pinch-centre-below-the-goal-line)
-
-![](diagram:forecheck-pinch)
-
 ```facts
 Action: Move the puck north faster and arrive in numbers through the neutral zone before you park extra players deep
 Options: Aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie — roughly that order of safety
@@ -214,6 +208,12 @@ What to add, in roughly this order of safety:
 3. **Pinching defencemen.** A **pinch** is your defenceman stepping down from the *offensive* blue line to keep a puck in — different from a **step up**, which is challenging an opponent forward in the neutral zone. Pinching keeps possession alive; a pinch that misses is a 2-on-1 the other way. Trailing, you pinch on anything close. Leading, you pinch only when you are certain.
 4. **Activating a defenceman into the rush or the low zone.** Now you have four attackers and one back. This is a genuine 2-on-1-against risk and should be deliberate, not accidental.
 5. **Pulling the goalie.** The biggest risk of all — its own section below.
+
+![](diagram:pinch-centre-high)
+
+![](diagram:pinch-centre-below-the-goal-line)
+
+![](diagram:forecheck-pinch)
 
 **The non-negotiable in all of this: someone is always the last man back.** If a defenceman goes, a forward replaces them high. That swap has to be spoken out loud. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
@@ -278,12 +278,6 @@ The analytics consensus sits much earlier than tradition, and it has been moving
 
 ### The 6-on-5 structure
 
-![](diagram:faceoff-goalie-pulled)
-
-![](diagram:six-on-five-shape)
-
-![](diagram:six-on-five-one-point-stays)
-
 ```facts
 Position: Two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
 Action: Get set up — a 6-on-5 that has to enter the zone repeatedly is wasting its advantage
@@ -298,8 +292,13 @@ Convention: Umbrella, overload or your normal power-play look at 6-on-5 is a tea
 
 The extra attacker is almost always a forward — Meghan Hall's NHL numbers have the use of *five* forwards with the net empty nearly doubling across seven seasons — and the sixth skater usually comes on for the goalie at a stoppage with an offensive-zone faceoff, or on the fly once you have possession in their end.
 
+![](diagram:faceoff-goalie-pulled)
 
-The most common shape takes a standard power-play look and adds a second body high: **two players at the points (the area just inside the blue line, not the line itself), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**. The principles matter more than the diagram:
+The most common shape takes a standard power-play look and adds a second body high: **two players at the points (the area just inside the blue line, not the line itself), two on the half-walls (level with the faceoff dots), one at the net front, and one below the goal line or in the middle of the zone**.
+
+![](diagram:six-on-five-shape)
+
+The principles matter more than the diagram:
 
 - **Get set up.** A 6-on-5 that has to enter the zone repeatedly is wasting its advantage. Win possession, gain the line, and get organised.
 - **Puck to the net with a screen.** The extra man is most valuable as a body in front and a second-chance collector, not as a sixth passer.
@@ -307,6 +306,8 @@ The most common shape takes a standard power-play look and adds a second body hi
 - **The point men do not both pinch.** Someone must be able to stop a clear. There is no net behind you.
 - **Change with possession, and change fast.** A 6-on-5 shift is exhausting. If you change while chasing the puck you will concede an empty-netter.
 - **⚠️ And remember what is behind you at the other end.** Your net is empty, so a foul the situation would normally justify back there stops being worth taking: with the goalie removed for an extra attacker, the NHL's **Reference Table 10** lists seven infractions that produce an **awarded goal** rather than a power play or a penalty shot, among them delaying the game (Rule 63), handling the puck (67) and tripping *"(fouling from behind – including hooking, holding, slashing, etc.)"* (57). Covering a loose puck in your own crease is the sharpest of them — an awarded goal under **NHL and IIHF 67.5** and **Hockey Canada 10.2(a)(vi)** on the bare fact of the substitution, and under **USA Hockey 614(b)** wherever the act *"has prevented an obvious and imminent goal"*. If a loose puck is in your crease, knock it straight down where you stand: that is free in all four books. See [When a penalty is worth taking](#when-a-penalty-is-worth-taking) and [Catching a loose puck in your own crease](#catching-a-loose-puck-in-your-own-crease).
+
+![](diagram:six-on-five-one-point-stays)
 
 > **The shape you use at 6-on-5 is a system choice.** Some teams run an **umbrella** (three players high) there, some **overload** four players onto one side, some just add a net-front body to their normal power-play look. Learn yours in practice, because there is no time to work it out in the game. See [Special Teams](special_teams.md).
 
@@ -319,8 +320,6 @@ If you are trailing *and* on a power play, pulling the goalie creates a 6-on-4. 
 **The caveat that makes this usable is time, not strength.** The same paper's scenarios with more clock left — down two with six minutes, down three with 12:22 — do not call for pulling while shorthanded. So the finding is **time-conditional**: late and down one, being shorthanded is not by itself a reason to keep the goalie in; earlier in a game it still is. This is a model of NHL scoring rates, not a rule, and no coach at rec level is running it — but if you are keeping the goalie in with under two minutes left because you are killing a penalty, the arithmetic does not support you.
 
 ### The delayed-penalty freebie
-
-![](diagram:delayed-penalty-your-own-net)
 
 ```facts
 Rule: On a delayed penalty the referee raises an arm and play continues until the team to be penalised gains control of the puck (NHL Rule 15.1)
@@ -347,6 +346,8 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 > is about to be awarded anything and there is no free attacker.** Go on the
 > referee's raised arm, not on the words. [Special Teams](special_teams.md) covers the
 > distinction.
+
+![](diagram:delayed-penalty-your-own-net)
 
 **What to do when the arm goes up:**
 - **Goalie:** go, immediately, at the first sign. Every second is a free attacker.

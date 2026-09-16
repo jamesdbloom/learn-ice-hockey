@@ -153,22 +153,21 @@ What the blue lines do:
 
 ### The centre red line
 
-![](diagram:icing-gaining-the-line)
-
 A **12-inch red line** across the middle of the ice, marked with a distinctive pattern so it can never be mistaken for a blue line (NHL Rule 1.5). Its remaining jobs:
 
 - **Icing** is measured from the centre red line: a puck shot from your own half, crossing the opponent's goal line untouched, is icing.
 - To nullify a potential icing, a teammate must "**gain the line**" — the puck must contact the centre red line **on a stick**, not a skate.
 - The centre red line is the conventional reference for gap control: close to about **a stick-and-a-half** by the red line. **That is a guide, not a law** — it moves with your own backward speed and the attacker's skill — **and it is coaching convention rather than a measured figure:** the one published coaching page found that anchors a distance to the centre red line prints **two** stick lengths there, not a stick and a half. [Defending the Rush](../systems/defending_the_rush.md) has the full set of distances, and says which published pages back each figure and which contradict it.
 
+![](diagram:icing-gaining-the-line)
+
 The centre red line is **no longer a passing restriction** in the NHL. The two-line pass rule was abolished by a playing-rule change for the 2005-06 season, so the centre line no longer determines an offside pass — which is why the **stretch pass** exists as a weapon at all.
 
 ### The goal crease ("the blue paint")
 
-![](diagram:the-goal-crease)
-
 In the NHL the crease is built as follows (Rule 1.7): a 2-inch red line runs **1 ft outside each goal post**, extending **4 ft 6 in** straight out at right angles to the goal line, and the two straight sides are joined by a **6 ft radius arc** struck from the centre of the goal line. So it is **8 ft wide at the goal line and 6 ft deep at its deepest point**. The enclosed area is painted light blue and — importantly — the crease is a **volume**, not a patch of ice: it extends **4 ft vertically**, to the height of the top of the goal frame.
 
+![](diagram:the-goal-crease)
 
 There are also two small **5-inch marks** on the inside of the crease lines, 4 ft out from the goal line. Those are the goaltender's reference marks, not player restraining lines.
 
@@ -219,11 +218,11 @@ How players name them in conversation:
 
 ### Hash marks
 
-![](diagram:faceoff-dzone-alignment)
-
 The **hash marks** are the short lines outside each end-zone faceoff circle. In the NHL they are two red lines, 2 inches wide and **2 ft long, placed 5 ft 7 in apart**, at the outer edge of each side of the circle, running parallel to the goal line (Rule 1.9). Four per circle — one pair on the boards side, one pair on the middle-of-the-ice side, both roughly level with the dot.
 
 They exist to keep players apart on a draw. **Encroachment into the area between the hash marks before the puck is dropped is a faceoff violation** (Rule 76.7(ii)). And, the part that catches people out, a winger who creeps over the hash marks gets **the centre** thrown out of the dot, not themselves.
+
+![](diagram:faceoff-dzone-alignment)
 
 They are also the depth reference coaches lean on most in the defensive zone — that it is the one leaned on *most* is coaching observation, but the line itself is painted and its depth is fixed. "**Below the hash marks**" means the band between that line and the goal line: the end-zone dot sits **20 ft** out from the goal line and the blue line **64 ft** out, so that band is roughly the **bottom third** of the zone's depth rather than the bottom half — half the depth would be 32 ft out, a full twelve feet higher. "**Above the hash marks**" is everything from there out to the blue line.
 
@@ -233,9 +232,9 @@ There is a second, smaller set of markings you may not have noticed: an L-shaped
 
 ### The trapezoid (goalkeeper's restricted area)
 
-![](diagram:the-trapezoid)
-
 The trapezoid is the marked area behind each net inside which the goaltender may play the puck. In the books that have one, a goaltender who plays the puck behind the goal line **outside** it takes a **two-minute minor for delay of game**, and the position of the puck is the determining factor. **The rule text's one exception is a goaltender playing the puck while maintaining skate contact with the goal crease** — there is no teammate-based exception. ⚠️ **The IIHF's Situation Handbook adds two more, and they are not in the rule text**: a puck stopped *on* the goal line is not in the restricted area at all (Situation 27.6), and a puck that merely deflects off the glass into a retreating goaltender draws nothing, because *"the goalkeeper must **play** the puck to be penalized"* (Situation 27.9). ⚠️ **Both answers misnumber it *"Rule 27.8"*; the IIHF's restricted area is 27.7.** The penalty sits at **NHL** Rules 27.8 and 63.2(viii) and **IIHF** Rules 27.7 and 63.2(VIII); [Rules Primer](rules_primer.md) carries it, and what it means for the goalie who has to live inside it is in [Goaltender](../positions/goaltender.md).
+
+![](diagram:the-trapezoid)
 
 **Current NHL markings (Rule 1.8 and the official rink diagram):** the lines begin **7 ft outside each side of the goal crease — 8 ft from each goal post** — and run diagonally back to points **11 ft from each goal post** at the end boards. In plain numbers: **22 ft wide along the goal line, widening to 28 ft at the end boards**, and 11 ft deep.
 
@@ -267,14 +266,13 @@ Because both benches are on one side, one half of the ice is the "**bench side**
 
 ## 4. The three zones — and the thing that confuses every beginner
 
-![](diagram:the-three-zones)
-
 The two blue lines divide the ice into three zones. The NHL rulebook names them from the perspective of one team (Rule 1.6 and the Glossary of Terms):
 
 - **Defending zone** — the zone containing the goal your team is defending. It runs from your own blue line to the end boards behind your own net.
 - **Neutral zone** — the centre ice area between the two blue lines. Neither defending nor attacking.
 - **Attacking zone** — the zone containing the goal you are attacking, from the opponent's blue line to the end boards behind their net.
 
+![](diagram:the-three-zones)
 
 **Here is the part that confuses everyone: the zones are named relative to your team, not to the building.** The same physical piece of ice is *your* defensive zone and *their* offensive zone, simultaneously. Nothing about the ice changes; the label depends on who is speaking.
 
@@ -301,9 +299,9 @@ This map is a close-up of **one end zone**, drawn to scale. The picture starts a
 
 ### The slot
 
-![](diagram:the-slot)
-
 **Where:** the area directly in front of the net, between the two faceoff circles, running from the top of the circles down to the goalmouth.
+
+![](diagram:the-slot)
 
 **Why it matters:** it is where most goals are scored from — see [Shooting](../technique/shooting.md) for the conversion rates by location and the samples they come from. It is the shortest route to the net and the widest angle on it. Everything in defensive-zone coverage is ultimately about who is standing in the slot, and everything in offensive-zone play is ultimately about getting a puck and a body there at the same time.
 
@@ -311,33 +309,33 @@ The slot is layered, and the layers have different jobs:
 
 ### The high slot
 
-![](diagram:the-high-slot)
-
 **Where:** the upper part of the slot — from the level of the **faceoff dots** up to the **top of the circles**.
+
+![](diagram:the-high-slot)
 
 **Why it matters:** this is the shooting layer. A player unmarked here gets a clean look with time to pick a corner, and a puck arriving here from the half-wall is a one-timer. **Who covers it is a coaching choice rather than a rule of hockey.** In a low zone collapse (zone) defensive system — the default assumed throughout this guide — the high slot belongs to the centre, or to the weak-side winger collapsing down when the centre goes to help in the corner. Under a **man-on-man** system nobody holds the area at all: you go with your check wherever they go. **Find out which system your team plays** — [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out each one.
 
 ### The low slot
 
-![](diagram:the-low-slot)
-
 **Where:** the lower part of the slot — from the dots down toward the goalmouth, outside the crease.
+
+![](diagram:the-low-slot)
 
 **Why it matters:** tips, rebounds, and screen position, and defenders cannot let anyone stand unmarked in it. This is the ice a net-front player fights for. **The scoring evidence points here more heavily than anywhere else on the ice — but note what has actually been counted, because it is a share of goals rather than a conversion rate for this layer on its own.** Close to half of all NHL goals came from the inner slot and just over a quarter from the outer slot, on Sportlogiq tracking of three seasons at five-on-five that is not public and cannot be re-derived; separately, **26.8%** of goals were scored within two stick-lengths of the net — about **10.5 feet** — and **51.6%** within twenty feet, computed from the NHL play-by-play feed over 400 games of 2024-25, from the 2,498 goals in it that carry coordinates. [Shooting](../technique/shooting.md) owns the shot-location figures and [Body Contact and Battles](../technique/body_contact_and_battles.md) the counted distances, and both hedge every one of them. **Treat "highest-percentage ice" as the shape those figures agree on rather than as a measured ranking of this layer against every other one.**
 
 ### The goalmouth
 
-![](diagram:the-goalmouth)
-
 **Where:** the immediate front of the net, at the edge of the crease — a much smaller area than the low slot.
+
+![](diagram:the-goalmouth)
 
 **Why it matters:** it is where tap-ins and jam plays happen. Under a **low zone collapse** — the zone defensive-zone coverage assumed as the default throughout this guide, and a coaching choice rather than a law — the **weak-side defenceman** owns the goalmouth and does not leave it. That is not universal: under **man-on-man** the net front belongs to whoever's check went there, and under a **hybrid** — man-on-man below the dots, zone above — to whichever of the low three is matched to the net-front forward. A **collapsing box** is a state rather than a system — what a low zone collapse turns into under maximum pressure — and in it both defencemen are inside together, plus whoever else is in there. **Find out which system your team plays** — [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out who has the net front under each. Getting "goalmouth" and "slot" mixed up is one of the most common causes of a blown assignment — coaching observation rather than a counted ranking. They are two different jobs, one layer apart.
 
 ### The "home plate" / high-danger area (also "the house")
 
-![](diagram:home-plate-the-house)
-
 **Where:** "home plate" is not an official marking — it is a shape used by analysts and increasingly by coaches. It runs in along the **tops of the two faceoff circles**, straight down the dot lines to the **two faceoff dots** — 44 ft apart, so that part of it is 44 ft wide — and then angles in to the **two goalposts**, which are 6 ft apart on the goal line. Drawn out, it looks like a baseball home plate with its **point at the net**: square across the top, tapering to the width of the goal mouth. [Offensive Zone Play](../systems/offensive_zone_play.md) and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) describe the same shape and are built around it.
+
+![](diagram:home-plate-the-house)
 
 **Why it matters:** it is the working definition of a "high-danger chance." The exact boundaries vary a little between analytics providers (Natural Stat Trick, Evolving Hockey, MoneyPuck all draw it slightly differently), so treat it as a concept rather than a measurement. The concept is simple and worth having: **shots from inside home plate are worth several times a shot from outside it.** Take shots from inside; work the puck inside rather than shooting from outside.
 
@@ -356,13 +354,13 @@ The slot is layered, and the layers have different jobs:
 
 ### The half-wall
 
-![](diagram:the-point-and-the-half-wall)
-
 **Where:** the boards **roughly level with the faceoff dot**, between the corner and the point. There is one on each side of each end zone. You will also hear it called the **half-boards**; it is the same place.
 
 **Why it matters:** the half-wall is the most important non-scoring area in the offensive zone — coaching observation rather than a measured ranking. It is the natural distribution point — from here a player can see the point, the slot, the corner and the net-front, and every one of those passes is available. Wingers live here in offensive-zone possession; half-wall players are the two "wings" of a 1-3-1 power play.
 
 **"Half-wall" is not "the point."** The point is the area just inside the blue line, not the line itself; the half-wall is level with the dot, roughly 20 ft from the goal line. Conflating them is a common error and it produces a real mistake — a defenceman drifting down to the half-wall has abandoned the blue line.
+
+![](diagram:the-point-and-the-half-wall)
 
 ### The boards / the wall
 
@@ -386,9 +384,9 @@ The slot is layered, and the layers have different jobs:
 
 ### The dots
 
-![](diagram:above-and-below-the-dots)
-
 **Where:** the four end-zone faceoff spots. Used loosely to mean the depth-line they define across the zone.
+
+![](diagram:above-and-below-the-dots)
 
 **Why it matters:** "**above the dots**" and "**below the dots**" is how coaches split the zone in half — though not into two equal halves: the end-zone dots sit 20 ft out from the goal line, so above the dots runs the 44 ft back to the blue line (64 ft − 20 ft) and below the dots runs the 31 ft on to the end boards (20 ft + 11 ft), the larger share on top. Unlike "high" and "low", which are always relative, the dots are painted, so once you know which end is meant, above and below them name a fixed line rather than a feeling. In a hybrid defensive system, for example, coverage is man-on-man **below the dots** and zone **above** them — one coaching choice among several, so find out which system your team plays; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out the rest.
 
@@ -440,12 +438,12 @@ Related: **"third forward high"** means the third forward stays in the upper par
 
 ### Strong-side and weak-side
 
-![](diagram:strong-side-and-weak-side)
-
 - **Strong-side** = the side of the ice the puck is currently on.
 - **Weak-side** (also "**off-side**", "**back side**") = the opposite side.
 
 **Nothing is painted to mark this split** — the boundary is simply the middle of the ice, wherever the puck currently is. These flip the instant the puck crosses the middle of the ice, which is why defencemen have to talk constantly: one is always the strong-side defender (on the puck) and the other the weak-side defender (at the goalmouth), and they trade those jobs several times a shift.
+
+![](diagram:strong-side-and-weak-side)
 
 The **backdoor** is the weak-side net-front area. What makes it dangerous is that a player arriving there is behind the goaltender's field of view — how it ranks against every other unmarked space is not something anyone has counted.
 
@@ -511,8 +509,6 @@ Note that **"defender", "defenceman", "defenseman" and "D" all mean the same pos
 
 ### F1 / F2 / F3 — roles, not people
 
-![](diagram:forecheck-roles-rotate)
-
 **F1, F2 and F3 are jobs defined by order of arrival, not by position.** This is one of the most important pieces of shorthand in hockey and one of the most commonly misunderstood — coaching observation rather than a counted ranking.
 
 - **F1** = the first forward to the puck. Pressures it.
@@ -520,6 +516,8 @@ Note that **"defender", "defenceman", "defenseman" and "D" all mean the same pos
 - **F3** = the third forward. Stays higher as the safety valve and covers the counter.
 
 If the centre is usually F1 on a forecheck but a winger gets there first, **the winger is F1 and the centre takes the support role.** Nobody swaps positions; they swap jobs. Teams that treat F1 as "the centre's job" end up with two players chasing and nobody high.
+
+![](diagram:forecheck-roles-rotate)
 
 **The "third forward high"** names that same F3 job from the other direction: the shorthand for keeping F3 — the third forward to arrive — above the puck. Which body it is changes shift to shift, and how high F3 sits is a coaching choice — see [Forechecking Systems](../systems/forechecking_systems.md), which sets out where the third forward stands under each forecheck.
 

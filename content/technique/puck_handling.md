@@ -349,8 +349,6 @@ The whole idea in one sentence: **put your body between the checker and the puck
 
 ### Puck on the far side
 
-![](diagram:puck-on-the-far-side)
-
 ```facts
 Position: Puck on the side of your body away from the pressure, with your torso as the wall between them
 Never: Let the puck sit on the pressure side — their stick has a shorter distance to travel than yours
@@ -364,6 +362,8 @@ The foundation. The puck lives on the **side of your body away from the pressure
 - If the puck is on the same side as the pressure, you have already lost it — you are relying on your stick to beat their stick, and their stick has a shorter distance to travel.
 - Handle it with the outside hand where you can, out toward the toe of the blade, away from the poke-check lane.
 - The stick should be on the far side of the puck too, so that a poke has to go through the puck *and* your blade.
+
+![](diagram:puck-on-the-far-side)
 
 This is why hands-away-from-the-body matters so much. A far-side puck is only available to a player whose hands can operate wide.
 
@@ -488,8 +488,6 @@ The boards are a free extra defender, on your side.
 
 ### Know your out before you get there
 
-![](diagram:scan-before-a-wall-reception)
-
 ```facts
 Key: Protection is not a destination — every second you hold the puck, a second checker is arriving
 Never: Plan to shield it until something happens — what happens is a turnover
@@ -510,6 +508,8 @@ Protection is not a destination. Every second you hold the puck under pressure, 
 - Where is the pressure coming from, and therefore which side does the puck need to be on when I arrive?
 
 Answering those three before your stick touches the puck is what [scanning](../hockey-iq/scanning_and_anticipation.md) is for. A player who scans arrives with a plan and holds the puck for half a second. A player who does not arrives with no plan, protects beautifully for three seconds, and loses it.
+
+![](diagram:scan-before-a-wall-reception)
 
 > **This is a good place to name a coaching choice.** How long you are *expected* to hold the puck on the wall is a system decision, not a law. Some teams want a quick chip or rim out immediately to avoid any risk; others want you to hang on, draw two checkers, and wait for support to arrive so the exit is with possession. These are genuinely different jobs. Find out which one your coach wants.
 
@@ -786,8 +786,6 @@ You can beat one player. You cannot beat two, and pretending otherwise is how a 
 
 ### When you are the last player back
 
-![](diagram:the-last-player-back)
-
 ```facts
 Never: Try a move when losing the puck means an odd-man rush against you — that prohibition has no exceptions
 Convention: How much individual carrying a team wants varies enormously — some coaches want the first available pass, every time
@@ -796,6 +794,8 @@ Convention: The default assumed here is a possession-oriented breakout with a 2-
 ```
 
 If losing the puck means an odd-man rush against you, the move is off. Always.
+
+![](diagram:the-last-player-back)
 
 > **A coaching choice, named:** how much individual puck carrying a team wants varies enormously. Some coaches want defencemen to skate the puck out of the zone whenever the lane is there; others want the first available pass, every time, with no exceptions. Some want wingers to attack 1-on-1 on the wall; others want everything chipped behind the defence for a forecheck. The default assumption here is a possession-oriented breakout with a **2-1-2 forecheck**, but the honest answer is that this is your coach's call. Ask.
 

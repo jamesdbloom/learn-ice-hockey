@@ -196,8 +196,6 @@ Your stick is a passive weapon. Used well it removes options without committing 
 
 ### Angle to take the middle and force them outside
 
-![](diagram:rush-gap-and-angle)
-
 ```facts
 Key: The middle of the ice is the dangerous ice — shots from the slot beat goalies, shots from the wall mostly do not
 Position: Boardside shoulder roughly on the middle of their chest, your body between them and the middle of the ice
@@ -215,6 +213,8 @@ Mindset: Good rush defence is choosing which thing to concede, not taking everyt
 **The middle of the ice is the dangerous ice.** Shots from the slot beat goalies; shots from below the faceoff dots on the wall mostly do not.
 
 So do not line up chest-to-chest with the carrier. Position yourself slightly to the **inside** — your **boardside shoulder** (the shoulder nearer the wall) roughly on the middle of their chest — so that your body sits between them and the middle of the ice, and the only route they can see is toward the boards. Getting this backwards and putting your *inside* shoulder on their chest slides your torso to the boards side and opens the middle, which is exactly the lane you are trying to take away.
+
+![](diagram:rush-gap-and-angle)
 
 - **The boards are your second defender.** A carrier pushed to the wall has no ice on one side, a shrinking angle to the net, and nowhere to cut back — **but what the boards take away is the carrier's ice, not the carrier.** Steering somebody there with your route is legal, and **two of the four books say so in terms** — and in both of them the permission sits inside the rule that bans body checking, so it survives in a classification where you may not check at all. Hockey Canada's Interpretation 1 to Rule 7.3(a) has it that a player *"may steer or direct an opposing player into the boards, without actually touching or body-checking them. This is acceptable"*, and that it is legal *"as long as either player does not use their body to intentionally body-check, bump, push, or shove an opponent"* — ⚠️ **a condition that bars *bumping*, which is a great deal less than riding somebody along the wall.** USA Hockey's Glossary defines **angling** as *"[a] legal defensive skill used to direct/control the puck carrier to an area that closes the gap and/or creates an opening that is too small for the puck carrier to advance"*, and the Note to its **604(c)** puts it inside legal competitive contact by name. ⚠️ **The NHL and IIHF books print neither word — not *angling*, not *steer*** — so under those two the permission rests on the absence of a prohibition rather than on anything either book grants, and that is an inference rather than a rule you can quote. **How much the wall is worth, though, depends on the sheet you are standing on.** On a wide rink an attacker forced outside still has room to keep skating, so gap control and stick position do more of the work than steering does. The IIHF book sets a width range — 26 m to 30 m, about 85 ft to 98 ft — where the NHL fixes a single 85 ft. ⚠️ **A width range is not an international peculiarity, and wide ice is not a foreign thing.** USA Hockey Rule 102(a) recommends a rink 85 ft to 100 ft wide, and Hockey Canada Rule 1.2(a) recommends the same span for a new rink — so both North American books reach a width greater than any legal IIHF sheet. What separates them is force rather than width: those two word the size as a recommendation, where the IIHF states its range as the official size and requires approval for a deviation. So how much the wall is worth to you is a question about the building you are standing in, not about which country's book you play under. ⚠️ **And do not read that as "your rink is wide":** [Rink Map](../foundation/rink_map.md) owns the dimensions, and its advice to a British reader is the opposite one — assume your rink is *smaller* than both standards until you have measured it. Go and look at yours.
 - **Force them to the outside, then close the outside.** Steering wide and then giving them the wall lane is only half the job — **in a checking league**, once they are committed outside, ride them further outside and away from the net, **and a carrier who can see you coming is protected by the boarding rule exactly as one who cannot.** ⚠️ **The second half of that instruction is a checking-league instruction; the first half is not.** Forcing them outside with your route stays legal wherever you play — riding them there with your body does not exist as an option in a great many leagues. **USA Hockey 604(a)** prohibits body checking *"in the 12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications"*, a minor under **604(c)** and a major plus a game misconduct under **604(d)** where it *"recklessly endangers an opponent"*; **Hockey Canada 7.3(a)** assesses a minor to a player who *"intentionally body-checks, bumps, shoves, or pushes any opposing player, in divisions of U13 and below, female hockey, and any other divisions approved by a Member of Hockey Canada"*. ⚠️ **And that classification list is a floor rather than a ceiling.** **604(a)** also provides that *"[a] local governing body may prohibit body checking in any classification"*, and **604(b)** prohibits it *"[a]ny time a team from a Competitive Contact category (see sub-section (a) above) plays a team from a Body Checking category"* — so a checking-age team can be in a no-checking game for the night purely because of who it drew. **Check the game, not the age group.** **In women's hockey — every level of it in Britain — the governing text is IIHF Rule 101.1**, which bars two or more players competing for the puck from using the boards *"to make contact with an opponent to eliminate her from the play, push her into the boards, or pin her along the boards"*, and makes *"[a]ny move by a Player to step or glide into an opposing Player"* at least a minor for an *"illegal hit"*. ⚠️ **What none of that takes away is the angle.** USA Hockey names it in terms in the Note to **604(c)** — competitive contact *"also occurs when a player has established an angle … on the opponent and closes the gap to create an opening that is too small for the puck carrier to advance"*, and *"[l]egal competitive contact shall not be penalized under this rule"* — while what that same Note does penalise is *"deliberate physical contact with an opponent, with no effort to legally play the puck."* Hockey Canada draws the line in the same place from the other side: its own definition of body-checking catches a player who *"leaves their skating lane to make contact"* or who *"extends an arm, shoulder, or hip after angling an opponent."* **So the route is yours everywhere; what is not yours everywhere is the contact that moves them off it.** **And in a league that does permit the ride, the league bar is not the only limit** — driving an opponent into the boards is boarding rather than defending, in all four books. ⚠️ **And *defenceless* is not the whole of that test:** USA Hockey 603 does not ask it at all, defining boarding by what happens to the opponent rather than by the state they were in, and the other three name the race for an iced puck as boarding in terms — a case in which nobody is defenceless. The rule text and the tiers are in [1-on-1](#1-on-1) below.
@@ -244,8 +244,6 @@ At some point you must turn and skate forwards with them. Delay that moment as l
 
 ### The three lanes
 
-![](diagram:rush-backcheck-lanes)
-
 ```facts
 Position: Three vertical lanes — two outside along the boards, one middle between the faceoff dots
 Convention: The standard assignment is the centre in the middle lane and the wingers in the outside lanes
@@ -262,6 +260,8 @@ The standard assignment, and the one assumed throughout this document:
 
 - **The centre takes the middle lane** — and, crucially, **the middle-lane driver**: the attacker skating hard through the middle without the puck.
 - **The two wingers take the outside lanes**, each picking up the attacker on their side.
+
+![](diagram:rush-backcheck-lanes)
 
 **Of the three lanes the middle is the most dangerous to leave unattended, and the middle-lane driver is the assignment most often missed — that ranking is coaching emphasis, not a counted one.** They arrive into the slot unmarked, at speed, with a clean look. They are missed because they do not have the puck, and eyes go to the puck. If you are the centre coming back, that player is yours before anything else. See [Center](../positions/center.md) and [Winger](../positions/winger.md).
 
@@ -419,8 +419,6 @@ The failure mode is both defenders converging on the carrier. That opens the ice
 
 ### 2-on-1 — the headline situation
 
-![](diagram:rush-2-on-1)
-
 ```facts
 Convention: Take away the pass and give up the shot — your goalie can save the shot and cannot save the pass; the realistic alternative is a timed slide to take the pass away outright and force the shot, so find out which your team plays
 Read: A shooter walking into the slot unpressured with no realistic pass available is no longer a 2-on-1, so close on the puck
@@ -442,6 +440,8 @@ Two attackers, one defender. This is the situation every defenceman is judged on
 - On the **cross-ice pass**, the goalie must push all the way across the crease while the puck travels faster than they can move. They arrive late, off balance, and often still sliding when the shot comes. A backdoor tap-in into an open half of the net is essentially unsaveable.
 
 So the arithmetic is not "which is the better chance for them" — it is "which chance can my goalie actually stop." One of them, and only one.
+
+![](diagram:rush-2-on-1)
 
 **The goalie/defenceman contract — say it out loud.** This is a two-person agreement, and it only works if both people know it:
 
@@ -488,8 +488,6 @@ Note what does *not* change between the two: **the goalie still owns the shooter
 
 ### 2-on-2
 
-![](diagram:rush-2-on-2)
-
 ```facts
 Convention: Play it man-on-man — each defender takes an attacker and holds a tight gap on them
 Options: Zone is the realistic alternative — strong-side D takes whoever carries into their half, weak-side D holds the middle
@@ -501,16 +499,14 @@ Key: The weak-side defender is not free; being ready to help is not the same as 
 
 Two attackers, two defenders. Even numbers, and it should be routine — but it is the situation most often botched, because "even" makes people relax. That ranking is coaching emphasis, not a counted one.
 
+![](diagram:rush-2-on-2)
+
 - **Play it man-on-man.** Each defender takes an attacker and holds a tight gap on them. This is the version assumed here, and the one the alternative below is described against. The realistic alternative is **zone**: the strong-side D takes whoever carries the puck into their half of the ice and the weak-side D holds the middle, so the two of you trade marks rather than following them across. Zone survives a crossing rush better; man-on-man is tighter on a straight one. Find out which your team wants, because mixing them on the same rush leaves an attacker free.
 - **Both defenders drifting to the puck is how an even rush becomes a goal.** The puck is magnetic: two of you converge on the carrier, they make a simple pass, and their partner has the net. If you are the defender on the non-puck attacker, your job is to *stay with them* and let your partner do theirs.
 - **Communicate the switch if they cross.** Attackers criss-cross specifically to make two defenders trade assignments badly. Either follow your man through the crossing or call a clean switch — "switch!" — but do not do half of each.
 - **The weak-side defender is not free.** You are marking a person. Being ready to help is not the same as leaving your man.
 
 ### 3-on-2
-
-![](diagram:rush-3-on-2-default)
-
-![](diagram:rush-3-on-2-alternative)
 
 ```facts
 Convention: The default assumed here is "two wide, middle to the backchecker" — a defenceman on each outside attacker; how many teams run it has never been counted
@@ -526,6 +522,10 @@ Key: Ask your coach which version you play; two defencemen playing different one
 Three attackers, two defenders. Chaotic-looking, and the way you take the chaos out is to have agreed in advance which of two systems you are playing.
 
 **The default assumed here — "two wide, middle to the backchecker."** This is what the rest of this section assumes unless you are told otherwise, and it is the baseline the alternative below is described against. **Nobody has published a count of what teams run on a rush**, as far as this document has been able to establish, so treat any "most teams run X" claim — its own included — as an impression rather than a measurement.
+
+![](diagram:rush-3-on-2-default)
+
+![](diagram:rush-3-on-2-alternative)
 
 - **Each defenceman takes an outside attacker.** One D on each wide lane.
 - **Nobody chases the puck carrier — under this default.** If the carrier is in the middle, they belong to the backchecker; if the carrier is wide, they belong to the defenceman in that lane and the other D holds the far attacker. Under the strong-side alternative set out below, the strong-side defenceman does take the carrier wherever they are, which is exactly why you need to know which one you are playing.
@@ -659,8 +659,6 @@ Rule: Throwing, shooting or kicking your stick or any object at the puck or carr
 
 ### The late man / trailer
 
-![](diagram:rush-trailer)
-
 ```facts
 Key: The player who arrives second is the one who gets forgotten — how often that is the reason a rush ends in a goal is coaching consensus, not a tracked share
 Position: The trailer follows a few metres behind and arrives into the high slot with a clean, unopposed look
@@ -674,6 +672,8 @@ The player who arrives second is the one who gets forgotten. How often that is t
 
 The **trailer** (or **late man**) is the attacker following the rush a few metres behind — often a defenceman who has activated, often a forward who was slow out of the zone. They arrive into the high slot just as the first wave has pulled everybody low, and they arrive with a clean, unopposed look.
 
+![](diagram:rush-trailer)
+
 - **In the house-default structure — low zone collapse behind a 2-1-2 forecheck — they belong to the backchecking forwards**, not to the defencemen. Your defencemen are occupied with the first wave, and if they step up to the trailer the first wave gets the net. **This is an assignment, not a law:** some teams have the weak-side defenceman take the trailer and the third forward drop to the net front instead, which is tighter on the trailer and thinner in front. Ask which your team runs, because a trailer covered by nobody and a trailer covered by two are both goals.
 - **This is the specific reason "skate first, then look" matters.** A backchecker who is five metres behind cannot catch the trailer. One who sprinted from the turnover can.
 - **If you are the last backchecker and everyone else is marked, the trailer is yours by default.** Do not skate into the pile.
@@ -684,11 +684,11 @@ The **trailer** (or **late man**) is the attacker following the rush a few metre
 
 ## Standing Up at the Blue Line vs Backing Off
 
+Two legitimate ways to defend the line, and this is a genuine trade-off rather than a right answer. It is also frequently a **coaching choice** — many teams specify which one they want, and it usually follows from their neutral-zone system. See [Neutral Zone Systems](neutral_zone_systems.md).
+
 ![](diagram:nz-stand-up-at-the-line)
 
 ![](diagram:nz-back-off-at-the-line)
-
-Two legitimate ways to defend the line, and this is a genuine trade-off rather than a right answer. It is also frequently a **coaching choice** — many teams specify which one they want, and it usually follows from their neutral-zone system. See [Neutral Zone Systems](neutral_zone_systems.md).
 
 ### Standing up (stepping up)
 

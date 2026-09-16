@@ -70,14 +70,19 @@ const supportInALine = {
   half: true,
   width: 900,
 
+  // ⚠️ "The next diagram pulls one of the three off the line" IS GONE. The pair is
+  // adjacent in this diagram's only host (:82 and :84), so the pointer resolved — but
+  // it is a pointer at a neighbour, which is what the style guide's deixis rule
+  // forbids, and it costs words. `support-triangle` now opens by naming the change
+  // instead. The "cheapest shape in hockey" claim is the section's and is left exactly
+  // as it was: shortening a caption is not a licence to restate a claim.
   caption:
-    'Three teammates strung in a straight line up the boards, with the puck on the deepest of them. ' +
+    'Three teammates in a straight line up the boards, the puck on the deepest of them. ' +
     'One opposition defender standing in that line is between the carrier and both receivers, so a ' +
     'single stick blade in a single lane kills two options at once — a line is the ' +
-    'cheapest shape in hockey to defend, and a line also has to be completely re-formed after every pass. ' +
-    'Nothing here is a fixed spot on the ice: what is wrong is the shape, and the shape is just as cheap ' +
-    'to defend wherever on the ice the three of them happen to be. ' +
-    'The next diagram pulls one of the three off the line.',
+    'cheapest shape in hockey to defend. ' +
+    'What is wrong is the shape, and it is just as cheap to defend wherever on the ice the three ' +
+    'of them happen to be.',
 
   describe:
     'The attacking half of the rink, the net at the right. Three own-team forwards stand in a straight ' +
@@ -112,16 +117,18 @@ const supportTriangle = {
   half: true,
   width: 900,
 
+  // ⚠️ OPENED "The same three teammates". That is one of the exact phrases the style
+  // guide's deixis rule names, and it pointed at the diagram above — which happens to
+  // be there in this caption's only host, and would not be after any marker move.
+  // Naming the change costs the same words.
   caption:
-    'The same three teammates with one of them pulled off the line into the middle, so the lanes out of ' +
+    'Three teammates with one of them pulled off the boards into the middle, so the lanes out of ' +
     'the carrier now diverge. The defender has not moved: he is still in the lane up the boards, and ' +
-    'covering it means turning his body away from the middle option, which is the point: ' +
-    'no single defender can be in both lanes. A triangle is the smallest shape in which all three corners ' +
-    'have two teammates at different angles, so whichever corner ends up with the puck already has its ' +
-    'support — and when the puck moves from one corner to another you still have a triangle, where a line ' +
+    'covering it means turning his body away from the middle option. ' +
+    'No single defender can be in both lanes. A triangle is the smallest shape in which all three ' +
+    'corners have two teammates at different angles, and it survives the puck moving, where a line ' +
     'has to be rebuilt every time. ' +
-    'This is one instance of a relationship rather than a set of spots: the triangle is not a formation ' +
-    'you set up, it is a shape you keep while everything moves, rotating and stretching with the puck.',
+    'It is not a formation you set up, it is a shape you keep while everything moves.',
 
   describe:
     'The attacking half of the rink, the net at the right. The puck carrier is deep on the right-hand ' +
@@ -253,6 +260,16 @@ const supportDistance = {
   half: true,
   width: 900,
 
+  // ⚠️ NOT ONE WORD OF THE PROVENANCE WAS CUT, and the comment above says why: this
+  // caption has been out of step with the section's repaired negative-existence claim
+  // TWICE, and md_to_speech puts the caption and that sentence in the same chunk. The
+  // split between the sourced 8-to-10 figure and the rule-of-thumb 10-to-15 default,
+  // "has been found to", and "read that as none found, not as none existing" all stand
+  // exactly as they were. ⚠️ CUT, and flagged to the coordinator: the zone-by-zone
+  // adjustments, including "on wider international ice check the rink first, because
+  // distances scale and angles do not". That is a rink-size caveat rather than a book
+  // scope, and the owner's own distance table states all of it — but it is the one cut
+  // here that a reviewer should look at again.
   caption:
     'Support has a working range, drawn here as a band of ice around a carrier on the half-wall rather ' +
     'than as a spot, because it travels with the puck. The range is eight to ten feet ' +
@@ -260,12 +277,9 @@ const supportDistance = {
     'the one figure here with a source behind it, and the ten-to-fifteen default is a widely-taught ' +
     'coaching rule of thumb rather than a rule of hockey, because no governing body has been found to ' +
     'set a support distance as a standard and coaches differ — read that as none found, not as none ' +
-    'existing. Shorten it under heavy pressure, in your own zone and below the ' +
-    'offensive goal line; lengthen it in open ice and above the offensive dots; on wider international ' +
-    'ice check the rink first, because distances scale and angles do not. ' +
-    'One teammate stands inside the band and is an option; the other is inside its inner edge, which is ' +
-    'supporting too close — one defender covers both of you, and you are standing ' +
-    'in the escape route the carrier needs to turn into. ' +
+    'existing. ' +
+    'One teammate stands inside the band and is an option; the other is inside its inner edge, which ' +
+    'is supporting too close. ' +
     'The real self-test is time, not distance — if your teammate released the puck right now, would it ' +
     'reach you before that defender does?',
 
@@ -363,24 +377,28 @@ const supportAngles = {
   half: false,
   width: 1000,
 
+  // ⚠️ THE OFFSIDE BLOCK IS UNTOUCHED — about 57 words of it — AND IS WHY THIS CAPTION
+  // STAYS OVER THE TARGET. It names four books and the two-of-four divergence on the
+  // raised trail skate; drop any limb of it and the caption states a false universal
+  // about a rule that decides whether a goal counts. The defensive-zone caveat on the
+  // level pass is untouched for the same kind of reason: the same pass is routine in
+  // two zones and a point-blank chance against in the third.
   caption:
     'One instance of the three support angles, drawn around a carrier in the neutral zone attacking to ' +
     'the right: one teammate behind the puck, one level with it across the ice, one ahead of it. ' +
-    'Behind is the outlet — a low-risk reset into space the opposition has already vacated, and the ' +
-    'option that still exists when the other two are covered, so a team with nobody behind the puck has ' +
-    'no answer to good pressure except dumping it away. ' +
+    'Behind is the outlet — a low-risk reset, and the option that still exists when the other two are ' +
+    'covered. ' +
     'Level changes the side of the ice, which is a normal, high-value play in the neutral and offensive ' +
     'zones; in your own defensive zone the same pass across the middle crosses the slot, where an ' +
     'interception is a point-blank chance, and the lateral option there goes behind your own net, ' +
     'not through the slot. ' +
-    'Ahead is the only one of the three that gains ground and the most interceptable, and at the blue ' +
+    'Ahead gains ground and is the most interceptable, and at the blue ' +
     'line it needs the receiver to time their entry rather than park in the zone, because both skates ' +
     'completely over the line before the puck completely crosses it is offside (NHL Rule 83) — ' +
     'and a raised trail skate is onside under NHL and IIHF rules but offside under USA Hockey ' +
     'Rule 630(a) and Hockey Canada Rule 6.11 — two books of the four — so check which book your ' +
     'league uses. ' +
-    'A team needs all three at once, so the useful question when you skate to support is which of the ' +
-    'three is currently missing.',
+    'A team needs all three at once.',
 
   describe:
     'The full sheet, attacking to the right. A puck carrier stands on the centre line towards the ' +
@@ -436,18 +454,20 @@ const defensiveZoneSupport = {
   half: true,
   width: 900,
 
+  // KEPT WHOLE: the orientation sentence (this is the one diagram in the file whose
+  // right-hand net is your OWN), "never through the slot", the zone-specific priority,
+  // and "whatever your league does about the trapezoid" — a league-scope hedge on a
+  // claim about the goaltender. CUT: the two glosses on the up and middle options, the
+  // reason behind the weak-side winger's width, and the tidy-exit-versus-clever-exit
+  // line, all of which the owner's prose states around the marker.
   caption:
     'The defensive-zone support structure, drawn with your own net at the right and up-ice to the left, ' +
     'at the moment your defenceman retrieves the puck behind the net and before they turn. ' +
     'The standard set of options is three: the strong-side winger on the wall roughly level with the ' +
-    'faceoff dot, which is the up option; the centre swinging low through the middle and curling toward ' +
-    'the same side, which is the option that turns a breakout into an attack; and the defence partner on ' +
+    'faceoff dot; the centre swinging low through the middle and curling toward ' +
+    'the same side; and the defence partner on ' +
     'the far side, reached behind the net and below the goal line, never through the slot. ' +
-    'The weak-side winger stays higher and wider than everybody else, and that width is what stops the ' +
-    'defence loading one side of the ice. ' +
-    'The zone-specific rule is that in your own end the safe outlet outranks the attacking option — ' +
-    'support short and keep the angles safe, because a tidy exit with possession is a win and a clever ' +
-    'exit that fails is a goal against. ' +
+    'In your own end the safe outlet outranks the attacking option. ' +
     'Your goaltender has the best view on the ice and no puck to look at, so they are part of this ' +
     'structure as a voice whatever your league does about the trapezoid.',
 
@@ -521,14 +541,12 @@ const neutralZoneLanes = {
   caption:
     'The neutral zone organised as three lanes — strong-side boards, middle, weak-side boards — with one ' +
     'player in each, attacking to the right. One player per lane is the usual default and a coaching ' +
-    'choice rather than a law: two players in the same lane can be covered by one defender, which is the ' +
-    'same-lane-same-checker failure, but the realistic alternative is a 1-3-1 regroup that deliberately ' +
-    'stacks the middle lane with a low centre and a high middle support, to overload the seam and pull ' +
-    'the opposing defence inward, accepting that one checker can see both. ' +
+    'choice rather than a law: two players in the same lane can be covered by one defender, but the ' +
+    'realistic alternative is a 1-3-1 regroup that deliberately ' +
+    'stacks the middle lane with a low centre and a high middle support, ' +
+    'accepting that one checker can see both. ' +
     'Find out whether your team spreads or stacks, because the two look identical for the first stride ' +
     'and then require opposite decisions. ' +
-    'The three are at different depths on curved routes on purpose — different lane, different speed, ' +
-    'and a curve lets you receive the puck already facing forward. ' +
     'The lane boundaries are drawn here on the faceoff-dot lines so that the shading has an edge; they ' +
     'are not marked on the ice.',
 
@@ -597,12 +615,21 @@ const battleSupport = {
   half: true,
   width: 900,
 
+  // ⚠️⚠️ THIS CAPTION IS THE SAFETY-CARRYING ONE IN THIS MODULE AND IS DELIBERATELY
+  // LEFT LONG. Only the first half was cut (245 words to about 215, 15 September
+  // 2026): the mechanism sentence and the description of what the support player has
+  // done were compressed. NOTHING AFTER THE ⚠️ WAS TOUCHED, and the three notes below
+  // record why each clause of it is worded as it is. The two exceptions stay whole
+  // too — they are the cardinal-rule hedge on an instruction not to go in, and the
+  // second of them ("many teams do assign a second player") is what sends a reader to
+  // ask rather than to decide. ⚠️ If this caption must reach 50 words, the arrival
+  // posture has to be routed into §"Supporting a battle" FIRST.
   caption:
     'Your teammate is pinned on the boards with the puck in a two-player battle, and every instinct says ' +
-    'go and help. Usually, don\'t — at least not into the battle: another body in a space that already ' +
-    'has no room brings your own checker in with it, so the exits the puck has to come out of are more ' +
-    'crowded than before. The support player here has instead moved to open ice about five metres away ' +
-    'with their stick down, so the puck has somewhere to go and they collect it with time. ' +
+    'go and help. Usually, don\'t — at least not into the battle: another body brings your own checker ' +
+    'in with it and crowds the exits the puck has to come out of. ' +
+    'The support player here has instead moved to open ice about five metres away with their stick ' +
+    'down, so the puck has somewhere to go. ' +
     'The exception is real, and it is two exceptions: go in to win the puck when it is a genuine ' +
     'fifty-fifty scramble that nobody has, and many teams do assign a second player to arrive at the ' +
     'wall — so find out whether that is your job before you decide it is not. ' +
@@ -728,12 +755,12 @@ const layerNotConverge = {
     'Two players defending one puck carrier, forechecking towards the net on the right: the first ' +
     'pressures, and the second layers behind and to the side of them instead of converging on the same ' +
     'puck. First and second here are the order they arrive in, not two particular players. ' +
-    'The layer is offset diagonally rather than directly behind, at a similar ' +
-    'two-to-three-stick-lengths range — close enough to take over the coverage, far enough that a single ' +
-    'move does not beat both of you — and it covers two things at once: the space the carrier goes if ' +
-    'the first player is beaten, and the passing lane out of the pressure. ' +
-    'Converging instead puts two of you on one puck, both beaten by the same pass, and by definition ' +
-    'leaves the other three of you covering four of them, and it is the free man who scores. ' +
+    'The layer is offset diagonally rather than directly behind, at two or three stick lengths — close ' +
+    'enough to take over the coverage, far enough that a single move does not beat both of you — and it ' +
+    'covers the space the carrier goes if the first player is beaten, and the passing lane out of the ' +
+    'pressure. ' +
+    'Converging instead puts two of you on one puck, both beaten by the same pass, and ' +
+    'leaves the other three of you covering four of them. ' +
     'Whether you may hold that layer at all is system-dependent and changes between zone, man-to-man and ' +
     'hybrid coverage, and a deliberate double-team — commonly allowed below your own goal line, where a ' +
     'turnover is contained by the net and the boards — is a coaching decision rather than something to ' +

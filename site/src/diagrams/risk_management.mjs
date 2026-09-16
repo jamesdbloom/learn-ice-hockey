@@ -202,63 +202,47 @@ const theRiskMap = {
   half: false,
   width: 1100,
 
+  // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. The notes
+  // below were written against the longer text: a clause one of them names may no longer
+  // be in the caption. They are kept for their reasoning, not as a description of it.
+  // NO WARNING GLYPH ON THIS RUN, AND THAT IS THE FIX RATHER THAN AN OVERSIGHT.
+  // `captionNodes()` in site/src/plugins/remark-corpus.mjs promotes from the first ⚠️
+  // to the END of the caption with no closing delimiter, so a glyph here ambered all
+  // 1,243 characters that follow — and not one of them is a hazard. What follows is a
+  // coaching-consensus disclosure, a negative existence claim, a greyscale/e-ink
+  // legibility caveat, an undefined-edges caveat and a note about turnover direction.
+  // Round 58 verified the invariant that no tactical prose is ambered anywhere; painting
+  // honest limits in the safety colour is how a reader learns to discount the amber that
+  // does matter.
+  //
+  // ⚠️ The caption's first limit was REWRITTEN on 14 September 2026 and is no longer 'every
+  // word unchanged'. It carried the document's flat 'no study ranking turnovers by where on
+  // the ice they happen was found for it' — and one of the five regions it draws has since
+  // been priced, so the caption was voicing a superseded absence claim INSIDE the document
+  // that had already corrected it. The surviving half — that nothing ranks the five against
+  // one another — is still true and is the half that matters. Figures stay with their owner
+  // in risk_management.md; a caption states that a price exists, never what it is.
   caption:
-    'A map of what a mistake costs, by where on the ice you make it. Your own net is at the ' +
-    'left of the whole sheet, the attack moves left to right, and the shading is a cost ' +
-    'gradient rather than anything painted on the ice: the darker the red, the more a ' +
-    'turnover there is likely to cost. Grade any patch of ice by one question — if I lose ' +
-    'the puck here, how many seconds and how many bodies stand between the turnover and a ' +
-    'shot on my own net? Darkest is your own slot, the ice in front of your own net between ' +
-    'the faceoff circles, where a turnover is not a chance against but very nearly a goal ' +
-    'against: the opponent gets the puck with your goaltender unset and your defenders facing ' +
-    'the wrong way, and no recovery time at all. Close to half of all NHL goals came from the ' +
-    'inner slot alone over a three-year five-on-five sample, on Sportlogiq tracking that is ' +
-    'not public and cannot be re-derived. Your own end as a whole is one shade lighter — ' +
-    'everybody is home, which helps, but the puck is thirty to fifty feet from your net and ' +
-    'one pass from the slot. The band across the middle of the neutral zone carries exactly ' +
-    'the same shade as your own end, and that is the picture’s point: a turnover at centre ice ' +
-    'catches two or three of your players skating the wrong way at full speed, so your own end ' +
-    'is dangerous but organised while the middle of the neutral zone is dangerous and ' +
-    'disorganised. The narrow band just inside their blue line is lighter again — a turnover ' +
-    'there does not threaten your net at once, but it starts a rush the other way against a ' +
-    'defence that has been supporting the attack, and the cost scales with how many of your ' +
-    'players are ahead of the puck. Their end, shaded blue rather than red, is the cheapest ' +
-    'ice on the sheet to make a mistake in: you are a hundred and fifty feet or more from your ' +
-    'own net with all five teammates between the puck and danger, which is why it is where you ' +
-    // NO WARNING GLYPH ON THIS RUN, AND THAT IS THE FIX RATHER THAN AN OVERSIGHT.
-    // `captionNodes()` in site/src/plugins/remark-corpus.mjs promotes from the first ⚠️
-    // to the END of the caption with no closing delimiter, so a glyph here ambered all
-    // 1,243 characters that follow — and not one of them is a hazard. What follows is a
-    // coaching-consensus disclosure, a negative existence claim, a greyscale/e-ink
-    // legibility caveat, an undefined-edges caveat and a note about turnover direction.
-    // Round 58 verified the invariant that no tactical prose is ambered anywhere; painting
-    // honest limits in the safety colour is how a reader learns to discount the amber that
-    // does matter.
-    //
-    // ⚠️ The caption's first limit was REWRITTEN on 14 September 2026 and is no longer 'every
-    // word unchanged'. It carried the document's flat 'no study ranking turnovers by where on
-    // the ice they happen was found for it' — and one of the five regions it draws has since
-    // been priced, so the caption was voicing a superseded absence claim INSIDE the document
-    // that had already corrected it. The surviving half — that nothing ranks the five against
-    // one another — is still true and is the half that matters. Figures stay with their owner
-    // in risk_management.md; a caption states that a price exists, never what it is.
-    'should be at your most creative. Three honest limits, and the first one matters most. ' +
-    'This ordering is coaching consensus, reasoned from shot danger and from how long a ' +
+    'A map of what a mistake costs, by where on the ice you make it. Your own net is at the left of ' +
+    'the whole sheet, the attack moves left to right, and the shading is a cost gradient rather than ' +
+    'anything painted on the ice: the darker the red, the more a turnover there is likely to cost. ' +
+    'Grade any patch of ice by one question — if I lose the puck here, how many seconds and how many ' +
+    'bodies stand between the turnover and a shot on my own net? Darkest is your own slot, the ice in ' +
+    'front of your own net between the faceoff circles. Your own end as a whole is one shade lighter. ' +
+    'The band across the middle of the neutral zone carries exactly the same shade as your own end, ' +
+    'and that is the picture’s point: your own end is dangerous but organised, while the middle of ' +
+    'the neutral zone is dangerous and disorganised. The narrow band just inside their blue line is ' +
+    'lighter again, and their end, shaded blue rather than red, is the cheapest ice on the sheet to ' +
+    'make a mistake in. Close to half of all NHL goals came from the inner slot alone over a ' +
+    'three-year five-on-five sample, on Sportlogiq tracking that is not public and cannot be ' +
+    're-derived. This ordering is coaching consensus, reasoned from shot danger and from how long a ' +
     'turnover takes to become a shot on your net — no source found here ranks these five regions ' +
-    'against one another, so take the order rather than the labels on them. One of the five has ' +
-    'since been priced on its own: a turnover at the band on their blue line carries a tracked ' +
-    'cost, from one league at five-on-five, and it is a reason to keep that band where it is ' +
-    'rather than to darken it. Take that order from the words, ' +
-    'though, and not by ranking the tints against each other: the reds do run in order, but ' +
-    'their end is drawn in blue rather than red, and a light blue prints darker than the ' +
-    'faintest red in greyscale, on a photocopy or on e-ink. Nothing here is marked on a real ' +
-    'rink, and the edges are drawn only so the shading can have one: the band at their line ' +
-    'has no defined depth, and the shaded ice at their end runs from the faceoff dots back to ' +
-    'the end boards ' +
-    'where the grade given is for their corners and the ice below their goal line. And a ' +
-    'turnover also has a DIRECTION, which no still map can show — losing the puck while it ' +
-    'travels toward your own net makes the turnover and the counter-attack the same event, and ' +
-    'that costs you more than moving one region along this map does.',
+    'against one another, and one of the five has since been priced on its own, at the band on their ' +
+    'blue line. So take the order from the words, and not by ranking the tints against each other: ' +
+    'their end is drawn in blue rather than red, and a light blue prints darker than the faintest red ' +
+    'in greyscale. Nothing here is marked on a real rink, and the edges are drawn only so the shading ' +
+    'can have one. And a turnover also has a DIRECTION, which no still map can show — losing the puck ' +
+    'while it travels toward your own net makes the turnover and the counter-attack the same event.',
 
   describe:
     'The full 200-foot sheet, seen from above, with no players and no routes. Your own end is ' +
@@ -615,16 +599,20 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // follows the scoreboard sentence exactly as it did before, so its "And" still lands.
 // "Three things this cannot promise" still fronts three: the coaching choice, the
 // scoreboard, and the contact limb.
+// ⚠️ SHORTENED 15 September 2026 to the owner's caption-length target. The order above is
+// unchanged and so is every limb: the glyph-count sentence lost its closing "which leaves his
+// partner and his centre", and the scoreboard sentence lost its worked example. The coaching
+// choice, the scoreboard hedge and the ⚠️-led contact limb are intact and still in that order,
+// and the glyph still opens the last sentence so the amber band covers the contact limb alone.
 const PINCH_CAVEATS =
   'The two wingers are not drawn, because what is being counted here is the ' +
   'players behind the puck: the defenceman who pinches has taken himself out of that count the ' +
-  'moment he goes, which leaves his partner and his centre. ' +
+  'moment he goes. ' +
   'Three things this cannot promise. Which forward stays high behind a pinch is a coaching ' +
   'choice and not a law of hockey: some teams give that job to the centre, some to whichever ' +
   'forward is highest when the puck arrives, and some slide the weak-side defenceman across ' +
   'instead — so find out what your team plays. Whether to pinch at all moves with the ' +
-  'scoreboard and the clock, so a team protecting a one-goal lead late will wave off a pinch ' +
-  'it would take in a tied first period. ⚠️ And no contact is drawn: the pinching defenceman’s ' +
+  'scoreboard and the clock. ⚠️ And no contact is drawn: the pinching defenceman’s ' +
   'route ends in two bars, meaning arrive and contain, on a patch of the wall rather than on a ' +
   'player, and what an arrival like that may end in depends on whether your league allows body ' +
   'checking at all.';
@@ -647,16 +635,14 @@ const pinchCentreHigh = {
   width: 900,
 
   caption:
-    'A pinch at the offensive blue line with the centre high in the zone behind it — the ' +
-    'arrangement that makes a pinch defensible. A pinch is stepping down from the offensive ' +
-    'blue line to keep a puck in their zone, and the defenceman here has left the point to kill ' +
-    'a puck their player is trying to move up the wall. What makes it a good pinch is not ' +
-    'whether it works. It is what is behind it if it does not: his partner has held the middle ' +
-    'at the line and his centre is high in the zone rather than deep, so the centre becomes the ' +
-    'third defender and the worst the failure can produce is two of their forwards against two ' +
-    'of his teammates — a rush a team can defend. That is the question to run before you jump a ' +
-    'lane, pinch or activate: not only "am I right?" but "what happens if I am right and I still ' +
-    'miss it?" ' +
+    'A pinch at the offensive blue line — a defenceman stepping down from the line to keep a ' +
+    'puck in their zone — with the centre high in the zone behind it, which is the arrangement ' +
+    'that makes a pinch defensible. What makes it a good pinch is not whether it works. It is ' +
+    'what is behind it if it does not: his partner has held the middle at the line and his ' +
+    'centre is high rather than deep, so the worst the failure can produce is two of their ' +
+    'forwards against two of his teammates — a rush a team can defend. That is the question to ' +
+    'run before you jump a lane, pinch or activate: not only "am I right?" but "what happens if ' +
+    'I am right and I still miss it?" ' +
     PINCH_CAVEATS,
 
   describe:
@@ -717,8 +703,7 @@ const pinchCentreDeep = {
     'far end of the zone from anywhere a third defender can help from, so his partner is the ' +
     'only player between two of their forwards and his own end. Beat the pinch and it is a ' +
     'two-on-one the other way — and it was a two-on-one waiting to happen whether the pinch ' +
-    'came off or not, which is the whole point: this is not a picture of a play that went ' +
-    'wrong, it is a picture of a decision that was wrong before anybody touched the puck. So ' +
+    'came off or not, which is the whole point. So ' +
     'the question to run before you jump a lane, pinch or activate is not only "am I right?" ' +
     'but "what happens if I am right and I still miss it?" ' + PINCH_CAVEATS,
 
@@ -879,39 +864,25 @@ const crossIceOwnEnd = {
   width: 900,
 
   caption:
-    'Your own defensive zone, your own net at the right: the cross-ice pass this section tells ' +
-    'you not to make, and the traffic standing in it. A defenceman has the puck in the ' +
-    'strong-side corner with a forechecker sealing him there, and the only outlet he can see ' +
-    'is on the far wall — so the pass goes east–west, across the width of the ice, below the ' +
-    'tops of the faceoff circles. The shaded band is your own slot, the ice in front of your own ' +
-    'net between the faceoff circles, and the pass crosses it in front of your own goaltender. ' +
-    'Three costs, and the third is the one people miss. It crosses every forechecking stick on ' +
-    'the ice: the forward drawn in the middle is standing beside that lane, and this notation ' +
-    'has no stick symbol, so his reach into it is not drawn at all. It spends longer in the air ' +
-    'than any other pass available to you, which is the most time anyone gets to read it — and ' +
-    'if it is picked off there, it is picked off by someone whose momentum already carries him ' +
-    'toward your net. And even when it works it usually arrives with the forecheck: their third ' +
-    'forward is already sliding across, so the receiver takes the puck facing the boards with a ' +
-    'checker arriving, which can be a worse situation than the one the pass was meant to solve. ' +
-    'What to do instead is move the puck north, or move it behind the net; and if the only ' +
-    'outlet really is on the far side, go defence-to-defence behind your own goal line first and ' +
-    'then north, because two low-risk passes beat one high-risk one. Five honest limits. ' +
-    'No rule forbids the pass itself: this is a coaching convention rather than a law of hockey, ' +
-    'and the convention has a line in it — some teams accept a cross-ice pass above the tops of ' +
-    'the circles, where an ' +
-    'interception is not a slot chance, and almost nobody accepts one below them, which is where ' +
-    'this one is drawn. It is also not the same play as the designed cross-ice option in a ' +
-    'structured breakout, which is taken only when the forecheck has genuinely overloaded one ' +
-    'side and the middle is empty; the middle here is not empty, and that is the whole ' +
-    'difference. The far-side outlet is drawn as a forward because that player is usually the ' +
-    'far winger, though a structured breakout may put the weak-side defenceman there instead, ' +
-    'and nothing here turns on which. And their two defencemen are not drawn, so do not count ' +
-    'bodies off this picture. ⚠️ And no contact is drawn: the arriving forward’s route ends ' +
-    'in two bars, meaning the route ends there rather than carrying on through a player, and ' +
-    'what an arrival like that may end in depends on whether your league allows body checking at ' +
-    'all. If you are the one collecting a puck on that wall, take the contact with your skates ' +
-    'parallel to the boards, forearm and hip into it, head up and chin off your chest, and never ' +
-    'with your back to the wall.',
+    'Your own defensive zone, your own net at the right: the cross-ice pass this section tells you ' +
+    'not to make, and the traffic standing in it. A defenceman has the puck in the strong-side corner ' +
+    'with a forechecker sealing him there, and the pass goes east–west below the tops of the faceoff ' +
+    'circles, across the shaded slot in front of your own goaltender. The forward drawn in the middle ' +
+    'is standing beside that lane, and this notation has no stick symbol, so his reach into it is not ' +
+    'drawn at all. Their third forward is already sliding across, so even when it works it usually ' +
+    'arrives with the forecheck. No rule forbids the pass itself: this is a coaching convention ' +
+    'rather than a law of hockey, and the convention has a line in it — some teams accept a cross-ice ' +
+    'pass above the tops of the circles, where an interception is not a slot chance, and almost ' +
+    'nobody accepts one below them, which is where this one is drawn. It is also not the same play as ' +
+    'the designed cross-ice option in a structured breakout, which is taken only when the middle is ' +
+    'genuinely empty; the middle here is not. The far-side outlet is drawn as a forward, though a ' +
+    'structured breakout may put the weak-side defenceman there instead, and nothing here turns on ' +
+    'which. And their two defencemen are not drawn, so do not count bodies off this picture. ⚠️ And ' +
+    'no contact is drawn: the arriving forward’s route ends in two bars, meaning the route ends there ' +
+    'rather than carrying on through a player, and what an arrival like that may end in depends on ' +
+    'whether your league allows body checking at all. If you are the one collecting a puck on that ' +
+    'wall, take the contact with your skates parallel to the boards, forearm and hip into it, head up ' +
+    'and chin off your chest, and never with your back to the wall.',
 
   describe:
     'The defending half of the rink, your own net at the right. Three own players are drawn as ' +
@@ -1023,15 +994,12 @@ const bothDToThePuck = {
   width: 900,
 
   caption:
-    'Never both defencemen to the same puck — the formation itself, not what happens after. ' +
-    'Your own defensive zone, own net at the right. Both defencemen have gone to a puck battle ' +
-    'in the corner against an opposition forward, and the ice in front of your own net, shaded ' +
-    'here, is left completely empty. Win the battle and you gain nothing a single defenceman ' +
-    'would not have gained alone; lose it, and there is literally no one between the puck and ' +
-    'your goaltender. A coaching convention, not a law — and it has a real exception: under a ' +
-    'strong-side overload some coaches send both defencemen low and give the slot to a forward ' +
-    'instead, so somebody is still home. Find out what your team plays. No contact and no route ' +
-    'are drawn: this is a shape, not a play.',
+    'Never both defencemen to the same puck — the formation itself, not what happens after. Your own ' +
+    'defensive zone, own net at the right. Both have gone to a puck battle in the corner, and the ' +
+    'ice in front of your own net, shaded here, is left completely empty. A coaching convention, not a ' +
+    'law — and it has a real exception: under a strong-side overload some coaches send both ' +
+    'defencemen low and give the slot to a forward instead, so somebody is still home. Find out what ' +
+    'your team plays. No contact and no route are drawn: this is a shape, not a play.',
 
   describe:
     'Your own defensive zone, the net at the right. An opposition forward, a solid circle, is ' +

@@ -229,19 +229,10 @@ const outOfTheMiddle = {
   width: 900,
 
   caption:
-    'Your own defensive zone, your own net at the right, with the puck on the centre’s stick ' +
-    'in the middle of the ice and two opponents closing through that middle. The instruction ' +
-    'is not to beat them: it is to stop being there. Carry out of the middle to the safe ice ' +
-    'behind your own net first and distribute from there — to the winger on the boards, which ' +
-    'is the outlet drawn here, or by rimming the puck onward around the boards, or by ' +
-    'reversing it back against the flow to a defenceman arriving behind you. A rim and a ' +
-    'reverse are opposite plays and the read is which kind of pressure you have: a reverse ' +
-    'beats a checker who has over-committed and skated past you, a rim beats one who is ' +
-    'sealing you in. Getting the puck out of danger beats making a great play. That the ' +
-    'middle of your own end is the most expensive place on the ice to lose it is coaching ' +
-    'consensus, reasoned from shot danger and from how few seconds stand between the turnover ' +
-    'and a shot — it is not a measured ranking, and no study ranking turnovers by where on the ' +
-    'ice they happen was found for this document.',
+    'Your own end, your net at the right: the puck on the centre’s stick in the middle, two opponents ' +
+    'closing through it. The instruction is not to beat them — it is to stop being there. The route ' +
+    'drawn carries out to the safe ice behind your own net; the outlet from there is the winger ' +
+    'on the boards.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition forwards come ' +
@@ -357,20 +348,11 @@ const neutralZoneOutside = {
   width: 1100,
 
   caption:
-    'The middle of the neutral zone, your own net at the far left and the end you are ' +
-    'attacking at the right, with the centre carrying and two opponents closing the middle in ' +
-    'front of him. Both routes drawn finish on the outside, and that is the whole instruction: ' +
-    'move the puck to a winger on the wall, or chip it off the boards. Neither is a surrender ' +
-    '— quick decision-making is worth more than individual skill here, and simple is what you ' +
-    'want under pressure. That the middle third is where odd-man rushes against you are made is ' +
-    'coaching consensus rather than a tracked figure: no public data classifies an odd-man rush ' +
-    'by the play that created it. The two routes are alternatives and only one of them happens; ' +
-    'which one is on depends on whether the winger is actually open and on where the checker ' +
-    'has his feet, and no still frame can tell you either. The chip is drawn finishing inside ' +
-    'the neutral zone rather than across the line, because putting the puck in is a different ' +
-    'play with a different question attached to it — and it is drawn going to the wall beside ' +
-    'the pressure rather than past it, because getting the puck out of the middle is the point ' +
-    'and beating a man with it is not.',
+    'The middle of the neutral zone, the end you are attacking at the right, the centre carrying with ' +
+    'two opponents closing the middle in front of him. Both drawn routes finish on the outside and ' +
+    'only one of them happens: a pass to a winger on the wall, or a chip off the boards, stopping ' +
+    'short of the blue line because putting the puck in is a different play. That the middle third is ' +
+    'where odd-man rushes against you are made is coaching consensus rather than a tracked figure.',
 
   describe:
     'The full sheet, your own net at the left, attacking to the right. Your centre has the ' +
@@ -456,6 +438,19 @@ const neutralZoneOutside = {
 // two books of the four that require that skate to be TOUCHING — and a glyph has no
 // skates. A picture that implied it had settled the question would be the worst kind of
 // wrong, because offside is a whistle and the reader would have taken it from a drawing.
+//
+// ⚠️ THE COACHING-CHOICE HEDGE IN THE CAPTION IS LOAD-BEARING AND WAS CUT ONCE. The caption
+// asserts an ARRANGEMENT — winger wide, centre in the middle lane — and the host section
+// ("Neutral Zone: Without the Puck — Supporting the Rush Through the Middle") hedges
+// nothing about who carries or how strictly the lanes are held. The only disclaimer near
+// it belongs to the PREVIOUS section and is about the defensive pressuring shape, not
+// about which attacking forward carries the puck in. The corpus position on this exact
+// claim is zone_entries.md §"Crossing patterns": "who takes the wide lane, whether the
+// centre or a winger carries — all of this is coaching choice, and it varies enormously…
+// Ask your coach what your team wants before you decide you know." Without the hedge this
+// caption states a coaching choice as a law of hockey, voiced alone, and contradicts that
+// section. The timing claim it sits beside — the puck crosses first — is the section's own
+// teaching and is NOT what is hedged here.
 // ---------------------------------------------------------------------------
 
 const C_MIDDLE_LANE = { at: 'blue-line', dx: -8, dy: 4 };    // (17, 4)
@@ -469,19 +464,14 @@ const arriveBehindThePuck = {
   width: 900,
 
   caption:
-    'Entering the attacking zone through the middle without the puck, the net you are ' +
-    'attacking at the right, drawn at the instant before the puck reaches the blue line. The ' +
-    'winger is carrying wide and the centre is in the middle lane a stride further from the ' +
-    'line than the puck is — level with it or slightly behind it, which is the position that ' +
-    'lets the puck cross first while you keep skating. The temptation is the opposite one: ' +
-    'give up speed in the middle to be certain of staying onside, and then the whole line ' +
-    'arrives slowly, which is exactly the entry a defence stands up at the blue line. Nothing ' +
-    'here says whether anybody is onside — a glyph has no skates, and that rule turns on where ' +
-    'a skate is. And do all of it with your head up: coaching material puts open-ice contact ' +
-    'in the middle third — consensus rather than a counted ranking — arriving at full speed ' +
-    'through it is no reason to drop your eyes, and you cannot brace for a hit you cannot ' +
-    'see. Which of the three carries, and how strictly ' +
-    'the wide lanes are held, are coaching choices that vary a great deal.',
+    'Entering the attacking zone through the middle without the puck, the net you are attacking at ' +
+    'the right, drawn the instant before the puck reaches the blue line. The winger carries wide; the ' +
+    'centre is in the middle lane level with the puck or slightly behind it, which lets the puck ' +
+    'cross first while you keep skating. Which forward carries, and how strictly the wide lanes ' +
+    'are held, is a coaching choice rather than a law of hockey, and it varies enormously: some ' +
+    'teams hold strict lanes, some are built on crossing and swinging. Find out what your team ' +
+    'wants before you decide you know. Nothing here says whether anybody is onside — a glyph has no ' +
+    'skates. And do it with your head up: you cannot brace for a hit you cannot see.',
 
   describe:
     'The attacking half of the rink, the net being attacked at the right, with the attack ' +
@@ -557,18 +547,11 @@ const slotOptions = {
   width: 900,
 
   caption:
-    'The centre with the puck in the slot in the attacking zone, the net at the right, with ' +
-    'space in front of him. This is the free-space case, so no defenders are drawn at all and ' +
-    'the picture says nothing about how much time you really have. Four things are on at once ' +
-    'and only one of them happens: the shot, a pass out to the winger on the half-wall, a pass ' +
-    'to the winger in the far circle, or a pass back to the defenceman at the point. With space ' +
-    'in front of you the first is the answer and the instruction is not to overthink it — on ' +
-    'the coaching-consensus conversion ranges behind that, roughly ten to fifteen per cent from ' +
-    'the slot against two to four from the perimeter, a slot shot is worth something like three ' +
-    'to seven times a perimeter one, but the source names no dataset, so trust the gap rather ' +
-    'than the decimals. The other three are what you do when the space closes. What no still ' +
-    'frame can show is the thing that makes the slot work at all, which is that you were moving ' +
-    'before the puck arrived: a stationary centre in the slot is easy to cover.',
+    'The centre with the puck in the slot in the attacking zone, the net at the right. This is the ' +
+    'free-space case, so no defenders are drawn at all and the picture says nothing about how much ' +
+    'time you really have. Four things are drawn and only one of them happens: the shot, a pass to ' +
+    'the winger on the half-wall, a pass to the winger in the far circle, or a pass back to the ' +
+    'point. With space in front of you, shoot.',
 
   describe:
     'The attacking half of the rink, the net being attacked at the right, and no opposition ' +
@@ -689,22 +672,12 @@ const decidingFromTheMiddle = {
   width: 1100,
 
   caption:
-    'The middle of the neutral zone with the centre carrying in free space, your own net ' +
-    'at the far left and the end you are attacking at the right. No opponent is drawn at ' +
-    'all, which is the case this describes rather than a claim about how much time you ' +
-    'really have. What the picture is for is the ice the carrier is standing on, not any ' +
-    'one of the three routes off him: from the middle lane a winger is a pass away on each ' +
-    'side and both of your own defencemen are behind you and in view, and that is why the ' +
-    'centre of the ice is the best place to decide from. Three things are on at once and ' +
-    'only one of them happens — carry through yourself if the space in front of you is ' +
-    'real, or give it to whichever winger is open and let him enter in stride. Do not ' +
-    'carry for its own sake: if a teammate is in a better position, move the puck. No ' +
-    'route is drawn back to either defenceman, because seeing them is what the section ' +
-    'claims and a pass back is not. The carry finishes short of the attacking blue line ' +
-    'because putting the puck across it is a different play with an offside question ' +
-    'attached, and nothing here says who ends up carrying it in. And do all of it with ' +
-    'your head up — a carrier looking down through the middle of the ice cannot brace for ' +
-    'contact he has not seen.',
+    'The middle of the neutral zone with the centre carrying in free space, the end you are attacking ' +
+    'at the right. No opponent is drawn at all, which is the case this describes rather than a claim ' +
+    'about how much time you really have. The point is the ice the carrier stands on: from the middle ' +
+    'lane a winger is a pass away on each side and both of your own defencemen are behind you and in ' +
+    'view. Head up — a carrier looking down through the middle cannot brace for contact he has not ' +
+    'seen.',
 
   describe:
     'The full sheet, your own net at the left, attacking to the right. Your centre has the ' +

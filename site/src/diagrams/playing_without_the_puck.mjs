@@ -71,18 +71,21 @@ const stickLaneBodyNet = {
   half: true,
   width: 900,
 
+  // ⚠️ SHORTENED to the owner's 25-50 word target, 15 September 2026. KEPT: the
+  // no-stick-symbol disclosure (this module's header requires it — the picture
+  // cannot draw the blade that does half the job) and the SCOPE on the priority
+  // ("in the defensive zone"), without which "net-side wins" becomes a law of
+  // hockey. CUT: the reason behind that priority (a completed pass twenty feet out
+  // is survivable, a man alone at the goalmouth is not) — the owner's prose carries
+  // it — and the "relationship, not a spot" gloss, compressed to "one instant".
   caption:
-    'Your own end, your net at the right: an opponent has the puck on the half-wall and the man ' +
-    'you are covering is in the low slot. The shaded band is the passing lane between the puck ' +
-    'and your man, and your body is deliberately not in it — you are on the goal side of him, ' +
-    'between him and your net, which is the tool that takes away the shot and the net drive. ' +
-    'These are two separate tools and players routinely use only one: the ' +
-    'blade goes flat on the ice in the lane while the body stays net-side, and this notation has ' +
-    'no stick symbol, so the picture shows only where the body goes. Read it as one instant of a ' +
-    'relationship between three things — you, your man and your net — that moves as the puck ' +
-    'moves, not as a spot on the ice. Where you cannot both seal the lane and stay net-side, ' +
-    'net-side wins in the defensive zone, because a pass completed ' +
-    'twenty feet from your net is survivable and a player alone at the goalmouth is not.',
+    'Your own end, your net at the right: an opponent has the puck on the half-wall, and the ' +
+    'shaded band is the passing lane to the man you are covering. ' +
+    'Your body is not in it — you are on the goal side of him, between him and your net. ' +
+    'Blade in the lane and body net-side are two tools, not one; this notation has no stick ' +
+    'symbol, so only the body is drawn. ' +
+    'Read it as one instant, not a spot on the ice. Where you cannot do both, net-side wins in ' +
+    'the defensive zone.',
 
   describe:
     'One end zone, the net at the right, defended by your own goaltender in the crease. Two ' +
@@ -171,21 +174,26 @@ const loosePuckWhoGoes = {
   half: true,
   width: 900,
 
+  // ⚠️ DELIBERATELY OVER THE 25-50 WORD TARGET. Cut from 319 words to about 215 on
+  // 15 September 2026, and everything cut was outside the warning: the reason two
+  // arrivals leave nobody available, "how you arrive into one is a whole subject of
+  // its own" (the arrow stopping five feet short already says it), and the long form
+  // of the letters-are-roles note.
+  // ⚠️ THE SAFETY UNIT IS ABOUT 118 OF THE REMAINING WORDS AND HAS FOUR PARTS THAT
+  // MUST TRAVEL TOGETHER: the two postures stated as two different dangers, the USA
+  // Hockey attribution on each, "neither depends on the angle you arrive at" (which
+  // is what stops the angling instruction being heard as the whole answer), and the
+  // instruction itself. If this caption must reach 50 words, that unit has to be
+  // routed into §"State 3 — The puck is loose" FIRST. It may not simply be deleted.
   caption:
     'A loose puck in your own corner, your net at the right, drawn under a low zone collapse, ' +
-    'the coverage assumed here: the closest player goes hard to it, one teammate ' +
-    'supports on the boards side, and one covers the net front — never two. Who goes is a ' +
-    'coaching choice, and the worst version is not knowing, so find out which ' +
-    'coverage your team plays; what survives every system is that one player goes, one supports ' +
-    'and nobody else joins, because two players arriving at the same loose puck from the same ' +
-    'angle leaves both committed and neither available. The other two skaters are not drawn, ' +
-    'because where they stand is not fixed, and the LETTERS name positions only because the ' +
-    'notation has no other way to label a player — these three jobs are assigned by who is ' +
-    'closest, not by position. How you arrive is deliberately not shown: the arrow stops five ' +
-    'feet short, because of how a puck race to the wall can end. How you arrive into one — ' +
-    'angling, contact and protecting yourself against the boards — is a ' +
-    'whole subject of its own. ⚠️ Two postures carry two ' +
-    'different dangers, and they are not the same warning. A chin dropped to the chest is ' +
+    'the coverage assumed here: the closest player goes hard to it, one teammate supports on ' +
+    'the boards side, one covers the net front, and nobody else joins. ' +
+    'Who goes is a coaching choice, and the worst version is not knowing, so find out which ' +
+    'coverage your team plays. ' +
+    'The other two skaters are not drawn, and the letters are roles rather than positions: ' +
+    'these three jobs go to whoever is closest. The arrow stops five feet short of the puck. ' +
+    '⚠️ Two postures carry two different dangers. A chin dropped to the chest is ' +
     'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
     'contact with the boards or the goal post. A back turned to the boards is the ' +
     'other: it makes the contact a hit from behind, which USA Hockey warns could inflict a ' +
@@ -259,18 +267,13 @@ const unmarkedNotAvailable = {
   width: 900,
 
   caption:
-    'The attacking zone, with a teammate carrying the puck on the half-wall and you alone in the ' +
-    'high slot: the nearest defender is a good ten feet away, and you are ' +
-    'still not available. The ' +
-    'shaded band is the only line the puck can travel from the carrier to your blade, and a ' +
-    'defenceman standing well off to the side has laid his stick flat across it — the one of the three ' +
-    'requirements that nothing about your own position tells you about, and it is ' +
-    'the whole difference between ' +
-    'unmarked and available. This notation has no stick symbol, so the defenceman is drawn where ' +
-    'his body is and the reach into the lane is not drawn at all. The fix is to look ' +
-    'at the passing lane rather than at your defender and to move, often only three or four ' +
-    'feet, until the angle opens — a change too small to draw as a second band, so it is not ' +
-    'attempted here.',
+    'The attacking zone, a teammate carrying the puck on the half-wall and you alone in the ' +
+    'high slot: the nearest defender is a good ten feet away, and you are still not available. ' +
+    'The shaded band is the only line the puck can travel to your blade, and a defenceman has ' +
+    'laid his stick flat across it — the requirement your own position cannot tell you about. ' +
+    'The stick is not drawn; this notation has no symbol for one. ' +
+    'The fix is three or four feet sideways until the angle opens, a change too small to draw ' +
+    'as a second band.',
 
   describe:
     'The attacking end zone, the opposition net at the right. Your teammate has the puck on the ' +
@@ -347,17 +350,25 @@ const screenSightline = {
     // ⚠️ FULL STOP AFTER "not a place to stand". As a colon, the opening negation sat directly
     // on the separator and could carry onto the tail, whose inverted reading denies that the
     // wedge is the puck-to-goaltender line — the one thing the picture exists to assert.
-    'One instance of a relationship, not a place to stand. With the puck at the right point, the ' +
-    'shaded wedge is the line between the puck and the goaltender, and the screen stands inside ' +
-    'it with both feet outside the crease. The wedge swings as the puck moves, so the job is to ' +
-    'stand where the goalie’s eyes are rather than where the puck is going; ' +
-    'the instructions the picture cannot show are to keep your stick on the ice, because a screen ' +
+    // ⚠️ THIS CAPTION RESISTS THE 25-50 WORD TARGET AND ONLY THE FIRST FEW SENTENCES WERE
+    // CUT (318 words to about 290, 15 September 2026). Everything after "Nothing here
+    // establishes" is a rule statement with a book scope on it, or the injury warning, and
+    // the two inline notes below record repairs that a re-cut would undo. ⚠️ THE HONEST FIX
+    // IS NOT A SHORTER CAPTION: it is to route the Rule 69 block into the bodies that own
+    // it — this diagram is borrowed into foundation/rules_primer.md and
+    // technique/body_contact_and_battles.md as well as its owner — and that needs
+    // rules-verifier and safety-reviewer, not a caption editor.
+    'One instance of a relationship, not a place to stand. The shaded wedge is the line between ' +
+    'the puck at the right point and the goaltender, and the screen stands inside it with both ' +
+    'feet outside the crease. The wedge swings as the puck moves: stand where the goalie’s eyes ' +
+    'are, not where the puck is going. ' +
+    'Not drawn: keep your stick on the ice, because a screen ' +
     // ⚠️ TWO FULL STOPS WHERE THERE WAS A COMMA AND A COLON. "Nothing here establishes … , and
     // staying out of the blue paint is necessary and not sufficient:" put a main-clause
     // negation on each separator. Inverted, the first denies the necessary-not-sufficient
     // claim and the second denies that Rule 69.1 reaches positioning at all — a false rule
     // statement in the permissive direction, in the caption whose job is the opposite.
-    'is also a tip and rebound threat, and to move late. Nothing here establishes that the ' +
+    'is also a tip and rebound threat, and move late. Nothing here establishes that the ' +
     'position drawn is legal. Staying out of the blue paint is ' +
     'necessary and not sufficient. NHL Rule 69.1 reaches an attacking player who, ' +
     '"either by his positioning or by contact", impairs the ' +
@@ -472,18 +483,21 @@ const widthMakesTheMiddle = {
   half: true,
   width: 900,
 
+  // CUT, and it was the hardest call here: "if both wingers drift inside to look busy,
+  // the defence compresses and the gap closes" — the alternative the picture cannot
+  // draw. The owner's own bullet states it, and it is a comparison rather than a
+  // scope, a hedge or a warning. The coaching-choice hedge about settled-zone width,
+  // with BOTH of its named alternatives, is 40 of the remaining words and stays whole.
   caption:
     'A three-on-two just inside the attacking blue line, drawn for what the two players without ' +
     'the puck are doing: each winger holds his width near the boards, which keeps a defenceman ' +
-    'out on each side and widens the gap between the pair, and the middle drive goes through ' +
-    'that gap. ' +
-    'Neither wide forward touches the puck on this rush, and their ' +
-    'width is the thing that made the middle lane exist. The comparison the picture cannot draw ' +
-    'is the alternative: if both wingers drift inside to look busy, the defence compresses and ' +
-    'the gap closes. How much width a team wants once the puck is settled in the offensive zone ' +
-    'is a coaching choice, so ask — some coaches want the far winger ' +
-    'high and wide against the counter-attack, others want them crashing the back post on every ' +
-    'shot — and this is one instant of a rush, not a system.',
+    'out on each side, and the middle drive goes through the gap that opens between them. ' +
+    'Neither wide forward touches the puck on this rush, and their width is what made that lane ' +
+    'exist. ' +
+    'How much width a team wants once the puck is settled in the offensive zone is a coaching ' +
+    'choice, so ask — some coaches want the far winger high and wide against the counter-attack, ' +
+    'others want them crashing the back post on every shot. This is one instant of a rush, not ' +
+    'a system.',
 
   describe:
     'The attacking half of the sheet, the opposition net and goaltender at the right. Three of ' +
@@ -610,17 +624,14 @@ const driveTheNetBefore = {
   caption:
     'The first of two frames a beat apart, in the attacking end with the opposition net at the ' +
     'right: you are skating hard at the net without the puck, and the defender you are about to ' +
-    'pull is still high, standing in the high slot — the ice between the two faceoff circles, ' +
-    'from the dots up to the tops of them. That ice is deliberately not shaded here, because it is not open yet: the ' +
-    'man who has to leave it has not left it, and a picture that shades it now would be claiming ' +
-    'the result before the cause. The drive has to be genuine — a half-hearted glide does not ' +
-    'move anybody, and if you are going, go as if you expect the puck — which is the one thing a ' +
-    'still frame cannot show you, so read the arrow as effort rather than as a path. It stops ' +
+    'pull is still high, standing in the high slot. ' +
+    'That ice is deliberately not shaded here, because it is not open yet: the man who has to ' +
+    'leave it has not left it. ' +
+    'The drive has to be genuine, so read the arrow as effort rather than as a path. It stops ' +
     'more than twenty feet short of the goalmouth and off the defender’s line on purpose: what ' +
     'happens ' +
     'in the last few feet of a net drive is contact in front of a goaltender, which this picture ' +
-    'does not teach. No puck is drawn at all, because the whole subject here is the player who ' +
-    'does not have it. ' +
+    'does not teach. No puck is drawn: the subject is the player who does not have it. ' +
     // SAFETY. The scope disclaimer above ("this picture does not teach") is not a warning when it
     // is read aloud, so the owner's own instruction follows it verbatim in substance:
     // content/hockey-iq/playing_without_the_puck.md:507 — "Never: Arrive into the goal frame head
@@ -660,20 +671,23 @@ const driveTheNetAfter = {
   half: true,
   width: 900,
 
+  // ⚠️ OPENED "The same drive a beat later". The pair is adjacent in this diagram's only
+  // host (:521 and :523) so the pointer resolved — but "the same" is one of the exact
+  // words the style guide's deixis rule names, and naming the drive costs nothing and
+  // survives a marker move. "A before and an after, not two alternatives" stays: read as
+  // two options the pair states the opposite of the causal claim it exists to make.
   caption:
-    'The same drive a beat later — this pair is a before and an after, not two alternatives, and ' +
-    'the second frame is the reason for the first. The defender has bent low with the driver, ' +
-    'because leaving a man driving the goalmouth is unacceptable to any defenceman, and the high ' +
-    'slot he was standing in is now shaded and empty; that ice, and the point behind it, is what ' +
-    'the drive opens, and a teammate arriving into it late is how it gets ' +
-    'cashed. Neither of the two players who matter here has the puck, which is the ' +
-    'whole point about the work nobody claps for, so no puck is drawn. The drive does a third ' +
-    'thing this picture cannot show — it makes a rebound and deflection threat, which changes the ' +
-    'goaltender’s depth and attention — and the shaded band is a name for a piece of ice, not ' +
-    'something painted on a real rink. Only the defender who is pulled is drawn, because he is ' +
-    'the only one the play fixes: where the other four defenders are, and where the arriving ' +
-    'teammate starts from, are not fixed, so read his route as one instance ' +
-    'and not as a place to stand.',
+    'A net drive a beat later — a before and an after, not two alternatives, and this second ' +
+    'frame is the reason for the first. The defender has bent low with the driver, because ' +
+    'leaving a man driving the goalmouth is unacceptable to a defenceman, and the high slot he ' +
+    'was standing in is now shaded and empty. That ice, and the point behind it, is what the ' +
+    'drive opens, and a teammate arriving into it late is how it gets cashed. ' +
+    'Neither of the two players who matter here has the puck, so none is drawn. The drive does ' +
+    'a third thing this picture cannot show — it makes a rebound and deflection threat, which ' +
+    'changes the goaltender’s depth and attention — and the shaded band names a piece of ice, ' +
+    'not a marking on a real rink. ' +
+    'Only the defender who is pulled is drawn, because he is the only one the play fixes: read ' +
+    'the arriving route as one instance and not as a place to stand.',
 
   describe:
     'The attacking half of the rink, the opposition net and goaltender at the right, a beat after ' +
@@ -818,19 +832,16 @@ const legalRouteThroughTraffic = {
     // another player's body would arrive AHEAD of "you may not step laterally into
     // someone" in a section about interference. The caption fix costs one word.
     'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
-    'Your teammate is standing still a few feet inside your line, and your check is inside you ' +
-    'too. Your route goes round the outside of your teammate and finishes in open ice, while the ' +
-    'straight line your check would take to that same ice runs through your teammate. He has to ' +
-    'go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
+    'Your route goes round the outside of your teammate, who is standing still, and finishes in ' +
+    'open ice, while the straight line your check would take to that same ice runs through him. ' +
+    'He has to go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
     'the other version a penalty, is settled by the section around the picture rather than by ' +
-    'the drawing. This guide calls this traffic, or a route, and not a screen. Your check is ' +
-    'drawn with no route at all, deliberately. What he does next is chase, and a chaser ' +
+    'the drawing. This guide calls this traffic, or a route, and not a screen. A chaser ' +
     // ⚠️ "is not drawn" — NOT "is not something this corpus draws". The sentence's
     // work is the safety statement that the arrival at a standing man's back is
     // deliberately absent from the picture; naming the corpus was never part of it.
-    'arriving at the back of a man standing still is not drawn. No puck ' +
-    'is drawn. The subject is the ' +
-    'player who does not have it, and the picture is one instance of an arrangement rather than ' +
+    'arriving at the back of a man standing still is not drawn. No puck is drawn: the subject ' +
+    'is the player who does not have it, and this is one instance of an arrangement rather than ' +
     'a spot on the ice. ' +
     // SAFETY. The owner's own caution, from the paragraph below the one this picture draws:
     // content/hockey-iq/playing_without_the_puck.md — "The collision you are engineering is a

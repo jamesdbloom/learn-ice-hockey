@@ -141,8 +141,6 @@ A turnover has a direction, and the direction changes the cost more than the loc
 
 ### 1. Never pass D-to-D through the slot. Go behind the net instead
 
-![](diagram:breakout-d-to-d)
-
 ```facts
 Never: Pass D-to-D through your own slot — an interception leaves the interceptor in the slot facing your goalie
 Action: Take the D-to-D pass behind the net instead — a longer route by maybe eight feet, and half a second slower
@@ -156,6 +154,8 @@ Action: Find out where your coach draws the line on a D-to-D exchange
 **Why not through.** A pass through your own slot travels across the highest-danger area on the ice, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
 
 **What to do instead.** Take it behind the net. It is a longer route by maybe eight feet, it takes half a second longer, and a failure there produces a battle behind the goal line rather than a shot from twenty feet.
+
+![](diagram:breakout-d-to-d)
 
 *Coaching convention.* Some teams do allow a D-to-D exchange high in the zone, above the tops of the circles, far enough out that an interception is not a slot chance — [Rink Map](../foundation/rink_map.md) has that geometry. Know where your coach draws the line.
 
@@ -179,8 +179,6 @@ A **blind pass** is one made without seeing the target — you throw it to where
 
 ### 3. Never make a cross-ice pass in your own defensive zone
 
-![](diagram:cross-ice-in-your-own-end)
-
 ```facts
 Never: Make a cross-ice pass in your own defensive zone — it crosses every forechecking stick and spends the longest of any pass in the air
 Risk: If it is picked off, it is picked off by someone whose momentum already carries them toward your net
@@ -196,11 +194,11 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 
 **What to do instead.** Move the puck north or move it behind the net. If the only outlet is genuinely on the far side, go D-to-D behind the goal line first and *then* north — two low-risk passes beat one high-risk one.
 
+![](diagram:cross-ice-in-your-own-end)
+
 *Coaching convention.* Nothing in the rulebook touches this. Some teams will accept a cross-ice pass above the tops of the circles, where an interception is not a slot chance; almost nobody accepts one below them.
 
 ### 4. Never both defencemen to the puck
-
-![](diagram:never-both-defencemen-to-the-puck)
 
 ```facts
 Never: Send both defencemen to the same puck — you commit 100% of your defensive-zone depth to a 50/50 battle; where a strong-side overload puts both low along the boards, a forward has the slot instead
@@ -214,6 +212,8 @@ Key: Somebody must be home; what varies is who — find out what your team plays
 **Why not.** If both of you attack the same puck, you have committed 100% of your defensive-zone depth to a 50/50 battle. Win it and you gain nothing you would not have gained with one of you. Lose it and there is no one — literally no one — between the puck and your goalie except forwards who are facing the wrong way.
 
 **What to do instead.** One goes, one supports. The one who goes takes the puck — **or the body, only where your league permits checking; where it is barred, take the ice they need and play the puck instead**, and see [Body Contact and Battles](../technique/body_contact_and_battles.md) for which of those you are under. The partner reads the likely outcome and covers the space it will squirt into, staying between the puck and the net. Talk about it out loud — see [On-Ice Communication](../foundation/on_ice_communication.md).
+
+![](diagram:never-both-defencemen-to-the-puck)
 
 *Coaching convention, with real exceptions.* Under a **strong-side overload**, some coaches put **both** defencemen low along the boards and hand the middle to a forward instead, swapping the weak-side defenceman's job with the first forward's. *(That variant is one coaching account of the system rather than anything counted, and note what it gives the forward is the **slot** rather than the goalmouth — so it is a reason to ask, not a licence to assume.)* The principle survives either way: **somebody must be home.** What varies is who. The house default throughout is a **low zone collapse (zone) coverage**, in which the strong-side defenceman pressures and the weak-side defenceman holds the net front; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out who has the net front under each system. Find out what your team plays.
 
@@ -381,8 +381,6 @@ This is the most practical section here. Each list is a **priority order**: run 
 
 ### Defensive zone — you have just retrieved the puck, forecheck arriving
 
-![](diagram:breakout-up)
-
 ```facts
 Priority: Quick-up → Up → Wheel → D-to-D → Reverse → Rim → Glass, taking the first option genuinely available
 Key: That defensive-zone order is a hierarchy for a retriever with no time to read, not a ranking of breakout plays
@@ -394,6 +392,8 @@ Never: Solve a defensive-zone jam by putting the puck over the glass
 ```
 
 This is the same order taught in [Defender](../positions/defender.md) — **Quick-up → Up → Wheel → D-to-D → Reverse → Rim → Glass** — with the reasoning attached. **It is a hierarchy for a retriever under pressure, not a ranking of breakout plays:** [Breakouts](../systems/breakouts.md) is the authority and is explicit that which breakout you run is chosen by reading the forecheck in front of you, not picked off a list of favourites. Use this list when there is no time to read anything.
+
+![](diagram:breakout-up)
 
 1. **Quick-up.** *Did we just win this puck, with their forwards still below it and no shape formed?* → Move it up ice on the first touch. [Breakouts](../systems/breakouts.md) calls this the lowest-risk high-reward play available, precisely because the two or three seconds after a retrieval are the least organised the opposition will ever be. It is first on the list because the window closes before you finish checking the rest of it. **First look up ice, then down.**
 2. **Up.** *Is a teammate open going north on my side of the ice, with no opponent between us?* → Pass it. The fastest way out, and — with the carry-out — one of the two exits that keep possession.
@@ -514,10 +514,6 @@ You are anticipating if you can answer *why* before you move — the carrier's h
 
 ### The second test: who is behind you?
 
-![](diagram:pinch-centre-high)
-
-![](diagram:pinch-centre-below-the-goal-line)
-
 ```facts
 Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am right and I still miss it?"
 Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
@@ -529,6 +525,10 @@ Action: Two yeses and a green light from the scoreboard question, go; otherwise 
 Even a well-read risk is a bad risk if nobody is covering the space you left. **Before you jump a lane, pinch or activate, the question is not only "am I right?" but "what happens if I am right and I still miss it?"**
 
 A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck, because the centre becomes the third defender and the worst case is a 2-on-2. The same pinch with your centre below the goal line is a bad pinch even if you win the puck, because you were one bad bounce from a 2-on-1 and you did not know it.
+
+![](diagram:pinch-centre-high)
+
+![](diagram:pinch-centre-below-the-goal-line)
 
 Those two pictures are the same picture twice, differing only in where the centre is; what the pinching defenceman can see of the puck and the man on the wall is identical in both.
 

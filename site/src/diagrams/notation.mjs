@@ -16,27 +16,12 @@ export default [{
   // document that says nothing about any of these symbols.
   owner: 'content/reading-diagrams/reading_ice_hockey_diagrams.md',
   width: 900,
-  caption: 'The drill notation used by every diagram here. Lines: a plain arrow is ' +
-    'forward skating; a long smooth wave is skate and stickhandle; a row of separate ' +
-    'overlapping arches is backward skating — a C-cut turned on its side and repeated, ' +
-    'which is how it is skated; a sharp zigzag ' +
-    'is a backward crossover; a ' +
-    'dashed arrow is a pass; a double line is a shot; a row of short bars across a line ' +
-    'is lateral crossovers, the one line symbol here taken from the Hockey Eastern ' +
-    'Ontario sheet because the IIHF key has none; a line ending in two bars terminates the route ' +
-    'and means arrive and stop rather than continue through; a pair of slashes on their own ' +
-    'is a stop; a curve turning back on itself is a pivot; a line with a marker part way ' +
-    'along is dropping the puck — this guide\'s own version of that mark, since both keys ' +
-    'begin it with a wave for the carry and these diagrams draw only the drop; a single arc at the end of a line is blocking or ' +
-    'screening. Players: shape says the ' +
-    'position — a circle is a forward and a triangle a defenceman — while fill says whose ' +
-    'team it is, open for your own and solid for the opposition — reading fill as the team ' +
-    'is this guide\'s own convention rather than the key\'s, which prints the pair without ' +
-    'saying what it is for. A goaltender is a bare G ' +
-    'with no shape around it, and an X is a pylon and never a player. The letters inside a ' +
-    'glyph are the roles the surrounding text uses, not fixed positions. The puck is a small ' +
-    'solid dot, about a third the width of a player; neither key publishes a mark for a ' +
-    'single puck, so that one is this guide\'s own.',
+  caption:
+    'The drill notation these diagrams use. Shape says the position — a circle is a ' +
+    'forward, a triangle a defenceman — while fill says whose team it is, open for your own ' +
+    'and solid for the opposition, which is this guide’s own convention rather than either ' +
+    'published key’s. A goaltender is a bare G, and an X is a pylon and never a player.',
+
   describe: 'A two-column key of line styles with their names, then rows showing the ' +
     'two player channels. Shape carries the position: a circle is a forward, a triangle a ' +
     'defenceman, which is the International Drill Symbols axis. Fill carries identity: an ' +

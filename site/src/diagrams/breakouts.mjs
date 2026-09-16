@@ -73,20 +73,16 @@ const fiveRoles = {
   width: 900,
 
   caption:
-    'The five jobs on a breakout, frozen at the instant the puck is retrieved. This is your own ' +
-    'defensive zone, drawn at the left of the picture, and the play will move left to right. ' +
-    'D1 has gone back for the puck in the right corner; D2 is on the opposite side of the net, ' +
-    'level with the goal line, where a pass behind the net reaches him and where he can see the ' +
-    'forecheck arriving behind his partner, which is why the calls are mostly his; the strong-side ' +
-    'winger is on the boards between the hash marks and the goal line on the puck side; the centre ' +
-    'is low support, inside the faceoff dots and below the hash marks in the strong-side circle, ' +
-    'not out on the wall; the weak-side winger is the second option. ' +
-    'This five-role structure is itself a coaching choice — it is the conventional swing breakout, ' +
-    'and the alternatives you will meet are the centre fly, where the centre leaves early and the ' +
-    'weak-side winger drops in to take low support, and flat or spread breakouts, where both wingers ' +
-    'hold higher near the blue line — so ask your coach which one you play, and the weak-side ' +
-    'winger’s job in particular is genuinely system-dependent. No forecheck is drawn: this is ' +
-    'the shape, not a play against anybody.',
+    'The five jobs on a breakout, frozen at the instant the puck is retrieved. Your own defensive ' +
+    'zone is at the left of the picture and the play will move left to right. D1 has gone back for ' +
+    'the puck in the corner; D2 is on the opposite side of the net, level with the goal line, where a' +
+    ' pass behind the net reaches him and where he can see the forecheck arriving behind his partner ' +
+    '— which is why the calls are mostly his. The strong-side winger is on the boards between the ' +
+    'hash marks and the goal line, the centre is low support inside the faceoff dots rather than out ' +
+    'on the wall, and the weak-side winger is the second option. This five-role structure is itself a' +
+    ' coaching choice: it is the conventional swing breakout, and under a centre fly the centre ' +
+    'leaves early and the weak-side winger takes low support instead — so ask your coach which one ' +
+    'you play. No forecheck is drawn: this is the shape, not a play against anybody.',
 
   describe:
     'The full 200-foot sheet. The defending zone is at the left, the attacking end at the right. ' +
@@ -136,18 +132,14 @@ const up = {
   width: 900,
 
   caption:
-    'The “up” breakout — the direct pass from the puck-carrying defenceman to the strong-side ' +
-    'winger on the wall, the fastest of the nine breakout options when the lane is open — no count ' +
-    'ranks breakout plays by speed — and, when it is there, the right one. Drawn in ' +
-    'your own defensive zone at the left of the picture, moving left to right. D1 has the puck ' +
-    'below the goal line, the winger is on the boards between the hash marks and the goal line, and ' +
-    'the centre is low in the middle as the bail-out; the read drawn here is the first forechecker ' +
-    'committed behind the net, which leaves the wall lane open. Pass firmly and to the winger’s ' +
-    'stick, not to the boards behind him. What a still picture cannot show is the risk: that pass ' +
-    'travels the lane a forecheck posts its wall-sealer in, and any forecheck that has one — the ' +
-    'second forechecker in a 2-1-2, the strong-side half-wall player in a 1-2-2 — ' +
-    'is standing in it, so intercepted at the hash marks it becomes a scoring chance from the top of ' +
-    'the circle.',
+    'The “up” breakout — the direct pass from the puck-carrying defenceman to the strong-side winger ' +
+    'on the wall, the fastest of the nine breakout options when the lane is open, though no count ' +
+    'ranks breakout plays by speed. Drawn in your own defensive zone at the left of the picture, ' +
+    'moving left to right; the read drawn here is the first forechecker committed behind the net, ' +
+    'which leaves the wall lane open. Pass firmly and to the winger’s stick, not to the boards behind' +
+    ' him. What a still picture cannot show is the risk: that pass travels the lane a forecheck posts' +
+    ' its wall-sealer in — the second forechecker in a 2-1-2, the strong-side half-wall player in a ' +
+    '1-2-2 — so intercepted at the hash marks it becomes a scoring chance from the top of the circle.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck deep in the ' +
@@ -215,36 +207,25 @@ const wheel = {
     'The wheel: the defenceman carries the puck himself, cutting tight behind his own net and coming ' +
     'up the far side. Drawn in your own defensive zone at the left of the picture, moving left to ' +
     'right. It needs two things, speed and space — a step on the first forechecker, and no second ' +
-    'forechecker waiting on the far side — and the second of those is an absence, so it is the ' +
-    'empty far side of this picture rather than anything drawn in it. Cut tight, because the net is ' +
-    'your screen and cutting wide gives the forechecker a straight line to you. ⚠️ D2 is drawn ' +
-    'already standing at the net front and with no route at all, and whether that is even legal is ' +
-    'the first thing to settle, because the books split on the act itself and not just on the ' +
-    'penalty for it. Under NHL and IIHF Rule 56.1 it is legal — the NHL writes “a player is ' +
-    'allowed the ice he is standing on (body position) and is not required to move in order to ' +
-    'let an opponent proceed”, and IIHF Rule 56.1 is that sentence bar the pronouns — and under ' +
-    'those two books, stick in tight and vertical, hands to yourself, no ' +
-    'bump as he goes past. ⚠️ Under USA Hockey it is a penalty: its 625(a.1) makes ' +
-    '“providing a protective screen and limiting the opportunity for an opposing player to apply ' +
-    'pressure to a teammate in possession or control of the puck” a minor, and on a wheel your ' +
-    'partner has the puck — so standing still does not save you, and if you play under that book ' +
-    'do not build a breakout around this. Hockey Canada Rule 8.3 and CARHA Rule 66(a) bar the team in ' +
-    'possession from running deliberate interference for the puck carrier, which reads as a bar on ' +
-    'moving rather than on standing. Sliding across into his path is interference under all four: a ' +
-    'minor, two minutes, at the exact moment your partner had beaten the forecheck. And two minutes ' +
-    'is the floor. The IIHF and Hockey Canada both reach a major and an ejection on a violent one ' +
-    'with nobody hurt; within Rule 56 the NHL reaches a major on the degree of violence but waits ' +
-    'for an injury before the game misconduct. ⚠️ Do not read that as the NHL being the lenient ' +
-    'book, because its ladder does not stop at Rule 56: NHL Rule 21.1 is a match penalty, out for ' +
-    'the balance of the game, “on any player who deliberately attempts to injure or who ' +
-    'deliberately injures an opponent in any manner”, and it needs no injury for the attempt. ' +
-    'USA Hockey escalates outside Rule 625 altogether: its 602(a) is a match penalty for a ' +
-    'player who “recklessly endangers or attempts to injure any opposing player”, tied to no ' +
-    'named foul. What differs between the four books is the bar, not whether an ejection is ' +
-    'available at all. ' +
-    'Section 2 sets out all four. ' +
-    'The far-side winger and the centre are the outlets, and a second forechecker holding the far side, ' +
-    'which is exactly what F2 does in a 2-1-2, turns all of this into a trap.',
+    'forechecker waiting on the far side — and the second of those is an absence, so it is the empty ' +
+    'far side of this picture rather than anything drawn in it. Cut tight, because the net is your ' +
+    'screen and cutting wide gives the forechecker a straight line to you. ⚠️ D2 is drawn already ' +
+    'standing at the net front and with no route at all, and whether that is even legal is the first ' +
+    'thing to settle, because the books split on the act itself and not just on the penalty for it. ' +
+    'Under NHL and IIHF Rule 56.1 it is legal — a player is allowed the ice he is standing on and is ' +
+    'not required to move to let an opponent proceed — so under those two books, stick in tight and ' +
+    'vertical, hands to yourself, no bump as he goes past. ⚠️ Under USA Hockey it is a penalty: its ' +
+    '625(a.1) makes providing a protective screen that limits an opponent’s chance to pressure a ' +
+    'teammate in possession a minor, and on a wheel your partner has the puck — so standing still ' +
+    'does not save you, and if you play under that book do not build a breakout around this. Hockey ' +
+    'Canada Rule 8.3 and CARHA Rule 66(a) bar the team in possession from running deliberate ' +
+    'interference for the puck carrier, which reads as a bar on moving rather than on standing. ' +
+    'Sliding across into his path is interference under all four. ⚠️ And do not read the NHL as the ' +
+    'lenient book: two minutes is only the floor, its Rule 21.1 match penalty needs no injury and no ' +
+    'named foul, and what differs between the four books is the bar for a major or an ejection, not ' +
+    'whether one is available at all. The far-side winger and the centre are the outlets, and a second ' +
+    'forechecker holding the far side, which is exactly what F2 does in a 2-1-2, turns all of this ' +
+    'into a trap.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
@@ -320,19 +301,19 @@ const reverse = {
     'right wall; the forechecker has over-committed and skated past him, so D1 sends the puck back ' +
     'down the boards behind him, against the flow, into the space that forechecker has just left — ' +
     'where D2 is arriving, and calling for it, because D1 is putting the puck somewhere he cannot ' +
-    'see. Two things this picture cannot draw. The play depends entirely on the forechecker’s ' +
-    'momentum, so read the opponent above D1 as a player already past him and unable to stop. And ' +
-    'the puck is a hard backhand banked off the wall; the drill notation has no symbol for a banked ' +
-    'puck, so it is drawn simply as the pass it is. Keep it straight from the rim: a rim goes onward ' +
-    'around the boards in the direction the puck was already travelling, a reverse goes back ' +
+    'see. The play depends entirely on the forechecker’s momentum, so read the opponent above D1 as a' +
+    ' player already past him and unable to stop. The puck is a hard backhand banked off the wall, ' +
+    'drawn simply as the pass it is because the drill notation has no symbol for a banked puck. Keep ' +
+    'it straight from the rim: a rim goes onward around the boards in the direction the puck was ' +
+    'already travelling, a reverse goes back ' +
     // ⚠️ PRE-EXISTING NEGATION INVERSION, found while cutting and fixed rather than carried.
     // This read "A containing forechecker who steers rather than chases is never past you to
     // begin with, and beats it." The main-clause negation sits immediately before ", and",
     // so it carries onto the tail and a listener hears that the containing forechecker does
     // NOT beat the reverse — which deletes the counter this sentence exists to give. Stating
     // the limit first and ending on the negation makes it un-invertible.
-    'against it. And it beats one kind of forecheck only. A containing forechecker steers rather ' +
-    'than chases, so he is never past you to begin with.',
+    'against it. And it beats one kind of forecheck only. A containing forechecker steers rather than' +
+    ' chases, so he is never past you to begin with.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 is on the right boards just ' +
@@ -409,18 +390,15 @@ const rim = {
     'The rim: a hard shot along the boards that follows the curve of the rink around behind the net ' +
     'to a teammate further along, usually the far-side winger. Drawn in your own defensive zone at ' +
     'the left of the picture, and it travels onward in the direction the puck was already going — ' +
-    'which is the whole difference between this and a reverse. The read is the one shown: a ' +
-    'forechecker has sealed D1 against the boards and there is no passing lane through him, and it ' +
-    'is also the standard release valve when you simply have no time. Two things decide whether it ' +
-    'works — height and pace, low and flat enough to stay on the boards and hard enough to carry all ' +
-    'the way round, because a soft rim dies in the corner and is a gift; and target, aimed to arrive ' +
-    'where a teammate can actually meet it rather than simply “around”. Be honest about what this ' +
-    'is: the rim is the play a forecheck most expects from a defenceman sealed on the boards — ' +
-    'coaching emphasis, not a counted ranking — any forecheck can post a player at the far ' +
-    'wall and most do, and it concedes possession more often than any option except an outright ' +
-    'clear. That ranking, too, is a coaching judgement rather than a tracked rate. The trapezoid ' +
-    'rules where you play change where a rim should be aimed, and that is its ' +
-    'own section.',
+    'which is the whole difference between this and a reverse. The read drawn is a forechecker who ' +
+    'has sealed D1 against the boards with no passing lane through him, and it is also the standard ' +
+    'release valve when you simply have no time. It has to be low, flat and hard, because a soft ' +
+    'rim dies in the corner and is a gift. Be ' +
+    'honest about what this is: the rim is the play ' +
+    'a forecheck most expects from a defenceman sealed on the boards, and it concedes possession more' +
+    ' often than any option except an outright clear — both coaching emphasis rather than counted ' +
+    'rankings. The trapezoid rules where you play change where a rim should be aimed, and that is its' +
+    ' own section.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck deep in the ' +
@@ -479,15 +457,13 @@ const dToD = {
   caption:
     'D-to-D: the pass across to your partner, changing which side the attack comes from and forcing ' +
     'the whole forecheck to reset and shift. Drawn in your own defensive zone at the left of the ' +
-    'picture, with the strong side flooded and the far side free, which is the read the option ' +
-    'needs — its real value is that it costs the opposition time, because everything they had ' +
-    'covered comes uncovered while they travel. The route is the point of the picture, and it is the reason ' +
-    'this diagram exists: go behind your own net, never through the shaded area. Intercepted below ' +
-    'the goal line the pass means nothing, because there is no shot from there; the same pass in ' +
-    'front of the net is a point-blank chance against, and it is one of the most punished mistakes ' +
-    'in the game — coaching emphasis, not a counted ranking. Pass it quickly rather than skating it ' +
-    'across, because carrying the puck toward your partner drags the pressure with you and hands ' +
-    'him your problem.',
+    'picture, with the strong side flooded and the far side free, which is the read the option needs.' +
+    ' The route is the point of the picture: go behind your own net, never through the shaded area. ' +
+    'Intercepted below the goal line the pass means nothing, because there is no shot from there; the' +
+    ' same pass in front of the net is a point-blank chance against, and among the most punished ' +
+    'mistakes in the game — coaching emphasis, not a counted ranking. Pass it quickly rather than ' +
+    'skating it across, because carrying the puck toward your partner drags the pressure with you and' +
+    ' hands him your problem.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
@@ -597,20 +573,17 @@ const stretch = {
   caption:
     'The stretch pass, which is why this picture is the whole 200-foot sheet: your defensive zone is ' +
     'at the left, the far blue line at the right. One forward — usually the weak-side winger — has ' +
-    'left the zone early and is waiting up ice, and the retrieving defenceman looks up before he ' +
-    'handles the puck and leads him so he collects it in stride. The read is the shape drawn: the ' +
+    'left the zone early and is waiting up ice, and the defenceman leads him so he collects it in ' +
+    'stride. The read is the shape drawn: the ' +
     'opposition has committed all three forwards deep and their defencemen have stepped up, which is ' +
-    'what leaves both a lane and a winger behind the coverage. The winger is drawn on his own side ' +
-    'of the far blue line because that is what keeps him onside — one skate in contact with the line ' +
-    'or behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 in ' +
-    'materially identical words differing only in pronoun, and a trailing skate in the air still ' +
-    'counts because the plane is unbroken, ' +
-    'though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is ' +
-    'offside — two books of the four. Apart from the goaltender, only ' +
-    'the two skaters the option names are drawn for the breaking-out team. And the honest risk: a completed stretch is ' +
-    'close to a breakaway, an intercepted one is a full-speed rush the other way with your winger ' +
-    'sixty to eighty feet behind the puck, the pass drawn here is over a hundred feet on an NHL ' +
-    'sheet, and in most amateur hockey it is not a good default.',
+    'what leaves both a lane and a winger behind the coverage. The winger is drawn on his own side of' +
+    ' the far blue line because that is what keeps him onside — one skate in contact with the line or' +
+    ' behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 in ' +
+    'materially identical words, and a trailing skate in the air still counts because the plane is ' +
+    'unbroken, though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is ' +
+    'offside — two books of the four. And the honest risk: a completed stretch is close to a ' +
+    'breakaway, an intercepted one is a full-speed rush the other way with your winger sixty to ' +
+    'eighty feet behind the puck, and in most amateur hockey it is not a good default.',
 
   describe:
     'The full 200-foot sheet. The defenceman D1 has the puck in the right corner of his own zone at ' +
@@ -748,25 +721,39 @@ const wingerWall = {
   width: 900,
 
   caption:
-    'The strong-side winger’s trip, drawn in your own defensive zone at the left of the picture ' +
-    'at the instant your team wins the puck. He starts high, level with the opposing point man — ' +
-    'that is his defensive-zone coverage under the house-default low zone collapse, and being there ' +
-    'is not an error — and comes down the wall to the boards between the hash marks and the goal ' +
-    'line, at or just below the dot line, never above it. Those two spots are a little under ' +
-    '44 to 64 feet apart and they belong to two different moments: the trip between them, and its timing, is the ' +
-    'job, and neither end of it is a place to live. Time the arrival rather than camping, because it ' +
-    'is better to be a little late than a little early — it is easy to speed up and very hard to ' +
-    'slow down and re-accelerate — and arrive with the body open to the ice rather than the nose ' +
-    'against the glass. Wall position is system-dependent: a flat or spread structure asks wingers ' +
-    'to hold higher toward the blue line, and a stretch or flying-winger structure sends one winger ' +
-    'up ice entirely, so find out which one you are in. ' +
-    // SAFETY. Not composed here: this is the owner's own wording, content/systems/breakouts.md:516
-    // — "Never: Shield with your back to the boards, or duck. Get your skates parallel to the
-    // boards instead, forearm and hip to the wall, head up and chin off your chest". The sibling
-    // off-wing-open-to-the-ice teaches the same reception and already carries it. LAST, because
-    // the renderer ambers from the first glyph to the end of the caption with no closing delimiter.
-    '⚠️ Never shield with your back to the boards, or duck. Get your skates parallel to the ' +
-    'boards instead, forearm and hip to the wall, head up and chin off your chest.',
+    'The strong-side winger’s trip, drawn in your own defensive zone at the left of the picture at ' +
+    'the instant your team wins the puck. He starts high, level with the opposing point man — that is' +
+    ' his defensive-zone coverage under the house-default low zone collapse, and being there is not ' +
+    'an error — and comes down the wall to the boards between the hash marks and the goal line, at or' +
+    ' just below the dot line, never above it. The trip between those two spots, and its timing, is ' +
+    'the job, and neither end of it is a place to live: time the arrival rather than camping, and ' +
+    'arrive with the body open to the ice rather than the nose against the glass. Wall position is ' +
+    'system-dependent: a flat or spread structure asks wingers to' +
+    ' hold higher toward the blue line, and a stretch or flying-winger structure sends one winger up ' +
+    'ice entirely, so find out which one you are in. ' +
+    // SAFETY. Not composed here: this is the owner's own wording, the "Never:" line in the facts
+    // block of content/systems/breakouts.md section "Presenting a target, and receiving open to
+    // the ice". Re-derive that line rather than trusting a number here; the marker pass of
+    // 15 September 2026 moved it once already.
+    // WIDENED 15 September 2026, and this is why. The line it copied read "Never: Shield with your
+    // back to the boards, or duck", which scoped the prohibition to SHIELDING and distributed one
+    // "Never:" across an "or". A corpus-wide scan of the caption layer found that the narrowest
+    // statement of this prohibition anywhere in the corpus was this caption -- against 20-plus
+    // captions in eleven modules stating the general form, and against the sibling
+    // breakout-against-1-3-1 in this same file. A listener receiving a pass, waiting on the wall or
+    // in a battle is not "shielding", so the narrow form did not reach them; and read aloud, "or
+    // duck" can parse as a permitted ALTERNATIVE rather than a second prohibition. The owner
+    // document's BODY always carried the general form and its facts block did not, so the caption
+    // had inherited from the weaker of the two layers. Both are now widened.
+    // FULL STOPS, not em dashes or semicolons: md_to_speech rewrites the "Never:" label as
+    // "Never - ", so a dash inside this sentence is voiced as a second dash and the clause after it
+    // reads as closing a parenthetical the label opened.
+    // The sibling off-wing-open-to-the-ice teaches the same reception and already carries it. LAST,
+    // because the renderer ambers from the first glyph to the end of the caption with no closing
+    // delimiter.
+    '⚠️ Never take contact with your back to the boards, and never duck. Puck protection never ' +
+    'justifies it. Get your skates parallel to the boards instead, forearm and hip to the wall, ' +
+    'head up and chin off your chest.',
 
   describe:
     'The full sheet, the defending zone at the left. The winger W1 is high in his own zone, just ' +
@@ -813,18 +800,17 @@ const centreSwing = {
   width: 900,
 
   caption:
-    'The centre’s low support swing, drawn in your own defensive zone at the left of the ' +
-    'picture. The shaded box is where the centre is going: inside the faceoff dots and below the ' +
-    'hash marks, in the strong-side circle — not out on the wall, which is the strong-side ' +
-    'winger’s ice, where one opponent would cover them both and the middle-lane option the ' +
-    'structure depends on disappears. If you can touch the glass you are in the wrong job. The route ' +
+    'The centre’s low support swing, drawn in your own defensive zone at the left of the picture. The' +
+    ' shaded box is where the centre is going: inside the faceoff dots and below the hash marks, in ' +
+    'the strong-side circle — not out on the wall, which is the strong-side winger’s ice, where one ' +
+    'opponent would cover them both. If you can touch the glass you are in the wrong job. The route ' +
     'curls away from the puck first and then turns back into it, which is how the centre arrives ' +
     'already moving instead of receiving standing still. Below the hash marks the lane is open, the ' +
     'pass is short and the centre receives facing up ice; above them he is level with the ' +
-    'opposition’s forwards and the puck arrives into his back. Centre-low is itself a coaching ' +
-    'choice — the alternative is the centre fly, and both are legitimate — but a centre flying in a ' +
-    'flat or spread system where the wingers hold high near the blue line leaves nobody underneath ' +
-    'the puck at all, and that is the breakdown you see most weekends.',
+    'opposition’s forwards and the puck arrives into his back. Centre-low is itself a coaching choice' +
+    ' — the alternative is the centre fly, and both are legitimate — but a centre flying in a flat or' +
+    ' spread system where the wingers hold high near the blue line leaves nobody underneath the puck ' +
+    'at all.',
 
   describe:
     'The full sheet, the defending zone at the left. A shaded box sits in the right faceoff circle, ' +
@@ -987,24 +973,24 @@ const againstThe131 = {
   width: 900,
 
   caption:
-    'Breaking out against a 1-3-1 in the neutral zone. Your own end is at the left and the play moves ' +
-    'left to right. Counting outwards from your end, the opposition is one, three, one: a forward ' +
+    'Breaking out against a 1-3-1 in the neutral zone. Your own end is at the left and the play moves' +
+    ' left to right. Counting outwards from your end, the opposition is one, three, one: a forward ' +
     'giving token pressure; three spread flat across the width of the ice by the centre red line, ' +
     'conventionally two forwards on the walls with a defenceman in the middle; and one defenceman ' +
-    'behind them as the last man. It takes the long pass away — a stretch, an over or anything up the ' +
-    'middle arrives where three players already stand — and what it leaves you is time. The answer ' +
-    'drawn is the defenceman carrying it out himself: one token forechecker cannot stop a carrier ' +
-    'with speed, and a threat is what makes the line break shape. The winger on the boards at your ' +
-    'blue line is the short outlet along the wall, drawn with no route: the wall lanes are the soft ' +
-    'part of this shape and the middle is not. ⚠️ A player waiting on the boards is the one who gets ' +
-    'hit. Body open to the ice, head up, never your back to the boards and never duck. Get your ' +
-    'skates parallel to the wall instead, forearm and hip into contact if it comes, and chin off ' +
-    'your chest. ' +
-    'Chipping it past the line and racing for it is a legitimate answer too, and against a genuine ' +
-    'trap it is often the better one. It is not drawn here. Which of the two your team wants is a ' +
-    'coaching choice, so ask. Their forechecker is drawn pressing; the most passive versions barely ' +
-    'leave the red line. This is the neutral-zone 1-3-1, not the offensive-zone forecheck or the ' +
-    'power play of the same name.',
+    'behind them as the last man. The answer drawn is the defenceman carrying it out himself: one ' +
+    'token forechecker cannot stop a carrier with speed. The winger on the boards at your blue line is the short outlet along the wall, drawn' +
+    ' with no route: the wall lanes are the soft part of this shape and the middle is not. Chipping ' +
+    'it past the line and racing for it is a legitimate answer too, and against a genuine trap it is ' +
+    'often the better one; it is not drawn here, and which of the two your team wants is a coaching ' +
+    'choice, so ask. Their forechecker is drawn pressing; the most passive versions barely leave the ' +
+    'red line. This is the neutral-zone 1-3-1, not the offensive-zone forecheck or the power play of ' +
+    'the same name. ' +
+    // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with
+    // no closing delimiter, so a warning placed mid-caption ambers everything after it. This
+    // limb sat in the middle and is unchanged in wording — only its position moved.
+    '⚠️ A player waiting on the boards is the one who gets hit. Body open to the ice, head up, never ' +
+    'your back to the boards and never duck. Get your skates parallel to the wall instead, forearm ' +
+    'and hip into contact if it comes, and chin off your chest.',
 
   describe:
     'The full 200-foot sheet. Your defending zone is at the left, the far end at the right. Your ' +

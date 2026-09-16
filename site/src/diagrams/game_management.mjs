@@ -126,23 +126,13 @@ const sixOnFive = {
   width: 900,
 
   caption:
-    'The most common 6-on-5 shape, with your goaltender pulled for a sixth attacker: two players ' +
-    'at the points — the area just inside the blue line, not the line itself — two on the half-walls ' +
-    'level with the faceoff dots, one at the ' +
-    'net front, and one below the goal line — that last player can sit in the middle of the zone ' +
-    'instead. The five defending skaters are not drawn, so the shape reads on its own, and your ' +
-    'own net is at the far end, empty. Which shape your team uses at 6-on-5 is a system choice and ' +
-    'not a rule of hockey: some teams run an umbrella with three players high, some overload four ' +
-    'onto one side, and some just add a net-front body to their normal power-play look — learn ' +
-    'yours in practice, because there is no time to work it out in the game. It is drawn with one ' +
-    'defenceman and five forwards, the defenceman at a point, because this shape is described as a ' +
-    'power-play look with a body added high and the extra attacker is almost always a forward — ' +
-    'but who is out there, and who stands where, is a team choice and not part of the shape. ' +
-    'The principles matter more than the ' +
-    'diagram: get set up rather than entering the zone again and again, put the puck to the net ' +
-    'with a screen because the extra man is a body in front and not a sixth passer, move it ' +
-    'one-touch, never let both point men pinch because there is no net behind you, and change with ' +
-    'possession rather than while chasing the puck.',
+    'The most common 6-on-5 shape, with your goaltender pulled for a sixth attacker: two at the ' +
+    'points — the area just inside the blue line, not the line itself — two on the half-walls level ' +
+    'with the faceoff dots, one at the net front, and one below the goal line, who can sit in the ' +
+    'middle instead. The five defenders are not drawn, and your own net is empty at the far end. ' +
+    'Which shape your team uses at 6-on-5 is a system choice and not a rule of hockey — an umbrella, ' +
+    'an overload, or a net-front body added to your normal power-play look. So learn yours in ' +
+    'practice. Who is out there, and who stands where, is a team choice too.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right and their goaltender in the ' +
@@ -257,24 +247,16 @@ const sixOnFivePinch = {
   width: 900,
 
   caption:
-    'The same 6-on-5 shape — two players at the points, the area just inside the blue line and ' +
-    'not the line itself — at the moment one point man steps down the wall to keep a puck in, ' +
-    'and the other does not go with him. That is the rule the shape lives by: the point men do ' +
-    'not both pinch, because someone must be able to stop a clear and there is no net behind ' +
-    'you. Your goaltender is on the bench and your own net is empty at the far end of the ice, ' +
-    'so a puck that gets past both point men is not a rush against you — it is a clear path to ' +
-    'an empty net. The one who stays is not being cautious; he is the whole insurance policy, ' +
-    'and that is the job, not a lack of nerve. Only the defender the pinch is aimed at is ' +
-    'drawn, and their other four are not, because the section does not say where they stand ' +
-    'and this is a picture of your own discipline rather than of their shape. Which point man ' +
-    'pinches, whether your team pinches at all with the goalie out, and who is standing at the ' +
-    'points are coaching choices and not laws of hockey: the pinching player is drawn as a ' +
-    'defenceman and the one who stays as a forward only because this shape is described as a ' +
-    'power-play look with a body added high, so find out what your team wants before the ' +
-    'goaltender leaves, because there is no time to work it out with the net empty. ' +
-    '⚠️ No contact is drawn: the pinching player’s route ends in two bars, meaning arrive ' +
-    'and contain, on a patch of the wall rather than on a player, and what an arrival like ' +
-    'that may end in depends on whether your league allows body checking at all.',
+    'A 6-on-5 with your goaltender pulled, at the moment one point man steps down the wall to keep a ' +
+    'puck in and the other does not go with him. That is the rule the shape lives by: the point men ' +
+    'do not both pinch, because your own net is empty at the far end, so a puck past both of them is ' +
+    'not a rush against you but a clear path to an empty net. The one who stays is the whole ' +
+    'insurance policy. Only the defender the pinch is aimed at is drawn. Which point man pinches, ' +
+    'whether your team pinches at all with the goalie out, and who is standing at the points are ' +
+    'coaching choices and not laws of hockey, so find out what your team wants before the goaltender ' +
+    'leaves. ⚠️ No contact is drawn: the route ends in two bars on a patch of the wall rather than on ' +
+    'a player, and what an arrival like that may end in depends on whether your league allows body ' +
+    'checking at all.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right and their goaltender in ' +
@@ -443,31 +425,24 @@ const clearAtFiveOnSix = {
   width: 900,
 
   caption:
-    'Defending a 6-on-5, from your own end: your goaltender is still in your net at one end, ' +
-    'theirs is empty at the other, and a puck has just come free to you. Every clear from here ' +
-    'is a shot, and three things can happen to it — so all three are drawn the same way, as one ' +
-    'act with three endings rather than as three different decisions. Get your head up and put ' +
-    'it on the empty net and it is a goal; a puck that goes in is not icing. Miss, and a puck ' +
-    'that crosses their goal line untouched from your own side of the centre red line is icing. ' +
-    'And the worst of the three is a blind clear that goes straight to their point man: it hands ' +
-    'the puck back at your own blue line and buys you nothing. So this is a shot to take when ' +
-    'you can actually hit the net, and not a blind heave. Only the player with the puck, one of ' +
-    'their point men and the two nets are drawn — this is a picture of where the puck can go ' +
-    'rather than of a defensive shape, and the section does not settle where your other four ' +
-    'skaters stand. ⚠️ And you can be iced against a pulled goaltender, which is one of the ' +
-    'worst things you can do to yourself: six players against six is equal strength and not ' +
-    'below it, and NHL ' +
-    'Rule 81.3 settles it in terms, saying an icing should not be nullified merely because ' +
-    'their goaltender was on his way to the bench for an extra attacker. Under the NHL and the ' +
-    'IIHF that whistle brings the draw back to your own end, lets the attacking team pick the ' +
-    'dot, and leaves you unable to change and unable to take a time-out at all — your five most ' +
-    'tired players, in your own end, against six, with no way out. Rule 81.4 does list ' +
-    'exceptions, but read which ones: an injured player, or a penalty that changes the on-ice ' +
-    'strength. The one that lets a goaltender come back in belongs to the team that pulled its ' +
-    'own, and that is not you. What an icing costs you also depends on the book: USA Hockey ' +
-    'attaches no substitution restriction to an icing at all, and Hockey Canada writes one only ' +
-    'in the categories its Rule 6.7(d) names — U18AAA, Junior, and Senior at the Member’s ' +
-    'option — so find out which rules your league runs before you count on any of that.',
+    'Defending a 6-on-5 from your own end: your goaltender is still in your net at one end, theirs is ' +
+    'empty at the other, and a puck has just come free to you. Every clear from here is a shot, and ' +
+    'three things can happen to it — so all three are drawn the same way, as one act with three ' +
+    'endings. Head up and on to the empty net, and it is a goal; a puck that goes in is not icing. ' +
+    'Missed, and a puck crossing their goal line untouched from your own side of the centre red line ' +
+    'is icing. A blind clear to their point man hands it back at your own blue line. Only the player ' +
+    'with the puck, one of their point men and the two nets are drawn. ⚠️ And you can be iced against ' +
+    'a pulled goaltender: six players against six is equal strength and not below it, and NHL Rule ' +
+    '81.3 says an icing should not be nullified merely because their goaltender was on his way to the ' +
+    'bench for an extra attacker. Under the NHL and the IIHF that whistle brings the draw back to ' +
+    'your own end, lets the attacking team pick the dot, and leaves you unable to change and unable ' +
+    'to take a time-out at all. Rule 81.4 does list exceptions, but read which ones: an injured ' +
+    'player, or a penalty that ' +
+    'changes the on-ice strength; the one that lets a goaltender come back in belongs to the team ' +
+    'that pulled its own, and that is not you. USA Hockey attaches no substitution restriction to an ' +
+    'icing at all, and Hockey Canada writes one only in the categories its Rule 6.7(d) names — ' +
+    'U18AAA, Junior, and Senior at the Member’s option — so find out which rules your league runs. ' +
+    'This is a shot to take when you can actually hit the net, and not a blind heave.',
 
   describe:
     'The full sheet. Your own net is at the left with your goaltender in the crease; the ' +
@@ -717,28 +692,18 @@ const delayedPenalty = {
   width: 900,
 
   caption:
-    'A delayed penalty, drawn in your own defending end — so the net in this picture is yours, ' +
-    'and it is empty, because your goaltender has already gone to the bench for a sixth attacker ' +
-    'at the first sign of the referee’s arm, which is what he should do. ' +
-    'The empty net behind you costs nothing here, and that is the whole point ' +
-    'of the situation: play runs on until the team to be penalised gains control of the puck ' +
-    'under NHL Rule 15.1, and until they do they cannot score — with one exception, and that ' +
-    'exception is the subject of this picture. Under NHL Rule 78.5(xi) they can only score if your own team ' +
-    'shoots the puck into your own net. So the one pass in this whole sequence that can beat you ' +
-    'is a blind defenceman-to-defenceman pass straight down the ice, across the front of your own ' +
-    'goal and through your own crease — and that pass is deliberately not drawn here. There is no ' +
-    'symbol in this notation for a route you must not take, and an arrow drawn across your own ' +
-    'goal mouth reads as an instruction rather than as a warning. The single route that is drawn ' +
-    'is the same pass made the safe way, out and around behind your own net, well clear of the ' +
-    'goal. The instruction is simply not to make the other one: no blind D-to-D passes across your ' +
-    'own crease during a delayed call. Only the opponent nearest the puck is drawn, ' +
-    'because the whistle comes when they gain control and keeping it away from them is the entire ' +
-    'job; your other four skaters are not drawn at all, because the shape you use with the extra ' +
-    'attacker is a system choice and this is a picture of keeping the puck rather than of a shape. ' +
-    'And check before the game rather than in it: not every league allows or practises ' +
-    'pulling the goalie on a delayed call, and some officials stop play early. How many ' +
-    'is a question about leagues rather than about rulebooks, and no count of it is ' +
-    'given here.',
+    'A delayed penalty, drawn in your own defending end — so the net in this picture is yours, and it ' +
+    'is empty, because your goaltender has already gone to the bench for a sixth attacker. Play runs ' +
+    'on until the team to be penalised gains control of the puck under NHL Rule 15.1, and until they ' +
+    'do they cannot score. There is one exception: under NHL Rule 78.5(xi) they can only score if your ' +
+    'own team shoots the puck into your own net. So the one pass that can beat you is a blind ' +
+    'defenceman-to-defenceman pass across the front of your own goal, and it is deliberately not ' +
+    'drawn, because an arrow across your own goal mouth reads as an instruction rather than as a ' +
+    'warning. The single route drawn is that same pass made the safe way, out and around behind your ' +
+    'own net. Only the opponent nearest the puck is drawn. And check before the game rather than in ' +
+    'it: not every league allows or practises pulling the goalie on a delayed call, and some ' +
+    'officials stop play early. How many is a question about leagues rather than about rulebooks, and ' +
+    'no count of it is given here.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is empty — no goaltender is ' +
@@ -894,23 +859,15 @@ const overtimeRegroup = {
   width: 1100,
 
   caption:
-    'Three-on-three overtime, and the skill the format is really about. You are inside their blue ' +
-    'line with no high-quality look, so rather than force a shot you turn and take the puck back ' +
-    'out through the neutral zone — the long wave running from their end to your own side of ' +
-    'centre ice — to reset and come again. Overtime at three a side is a possession game: if you ' +
-    'do not have a high-quality look you do not shoot, because giving the puck up means facing a ' +
-    '3-on-2 the other way immediately, and a missed net in 3-on-3 is often a goal against. ' +
-    'Retreating thirty or forty seconds without forcing anything is normal and correct, and the ' +
-    'whole ice is your working space — camping in their zone does not work. Change only with ' +
-    'possession; you never surrender the puck to get fresh legs. And the winning goal is often ' +
-    'not a great shot at all but a defender who has been stuck out and cannot get off, isolated. ' +
-    'All six skaters are drawn, which is what three a side actually looks like on two hundred ' +
-    'feet, and both goaltenders are in their creases. Two things this picture is not: Rule 84.1 ' +
-    'gives each side three skaters and one goalkeeper and says nothing about who they are, so the ' +
-    'two forwards and one defenceman a side drawn here are a team’s choice and not the format; ' +
-    'and all of the play above is the account coaches and players give of how this format is now ' +
-    'played, rather than a rule of hockey. This is NHL regular-season overtime, and the format ' +
-    'you actually play may not be it — in many British fixtures there is no overtime at all.',
+    'Three-on-three overtime. You are inside their blue line with no high-quality look, so rather ' +
+    'than force a shot you turn and take the puck back out through the neutral zone — the long wave ' +
+    'running to your own side of centre ice — to reset and come again. All six skaters are drawn, and ' +
+    'both goaltenders are in their creases. Two things this picture is not: Rule 84.1 gives each side ' +
+    'three skaters and one goalkeeper and says nothing about who they are, so the two forwards and ' +
+    'one defenceman a side drawn here are a team’s choice and not the format; and how the format is ' +
+    'played is the account coaches and players give of it rather than a rule of hockey. This is NHL ' +
+    'regular-season overtime, and the format you actually play may not be it — in many British ' +
+    'fixtures there is no overtime at all.',
 
   describe:
     'The full sheet. Your own net is at the left with your goaltender in the crease; the ' +

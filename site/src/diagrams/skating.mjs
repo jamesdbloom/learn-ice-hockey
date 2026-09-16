@@ -264,38 +264,19 @@ const pivotTowardTheBoards = {
   width: 900,
 
   caption:
-    'Why defencemen are taught to pivot toward the boards, drawn as the two failures rather than ' +
-    'as the turn. Your own end, the net you are defending at the right, the attack coming from the ' +
-    'left: a carrier is wide and outside you, you are inside him and nearer your own net, and you ' +
-    'are still skating backwards. The standard coaching instruction is to pivot toward the boards ' +
-    'rather than toward the middle, and the reasoning is about the failure and not about the ' +
-    'aesthetics — if the attacker beats you during the turn, you want to be beaten toward the wall, ' +
-    'drawn here finishing out on the boards past the faceoff dot and heading for the corner, where ' +
-    'the shooting angle is poor and the wall is a second defender. ' +
-    'The other failure is the shaded ice in the middle: the ' +
-    'slot, the ice in front of the net between the two faceoff circles, from the top of the circles ' +
-    'down to the goalmouth, which is where goals come from. It is shaded as a warning and not as a ' +
-    'target, and no route is drawn into it. ' +
-    'Three things this picture cannot show. It cannot show the pivot: which way a player turns is a ' +
-    'fact about hips and shoulders, and a glyph in this notation has no front and no back, so read ' +
-    'this as where each failure leaves you rather than as the turn that produced it. It cannot show ' +
-    'the more universal half of the instruction, which is to pivot late — once you have turned to ' +
-    'skate forwards you have given up your ability to react to a change of direction. And the ' +
-    'distance drawn between the two players is not a gap figure: it is about the closest two marks ' +
-    'can stand and still read as two, and the gap ladder belongs to Defending the Rush. ' +
-    '⚠️ Pivoting toward the boards is a coaching default and not a law of hockey. Some coaches want ' +
-    'a pivot to the middle on specific reads — when pivoting away would blind you to the puck, or ' +
-    'when you have inside help and the greater risk is the attacker cutting behind you — and either ' +
-    'choice needs you competent both ways, because the right direction is decided by where the ' +
-    'attacker is and not by which way you happen to be good at. Ask your coach which they want, and ' +
-    'drill both. ' +
-    'How much the wall is worth to you depends on the building you are standing in: this is an ' +
-    'eighty-five-foot sheet, and on a wider one an attacker forced outside still has room to keep ' +
-    'skating. What does not change with width is the direction of the choice. ' +
-    '⚠️ And being beaten toward the wall is not an invitation to ride him into it. Driving an ' +
-    'opponent into the boards is a separate act, and the NHL, the IIHF, USA Hockey and Hockey ' +
-    'Canada all have a boarding rule that reaches it — they do not grade it the same way. Nothing ' +
-    'in this picture shows contact.',
+    'Drawn as the two failures rather than as the turn: this notation has no front and no ' +
+    'back, so read it as where each failure leaves you. Beaten toward the wall puts you out ' +
+    'past the faceoff dot heading for the corner, where the shooting angle is poor and the ' +
+    'wall is a second defender. Beaten into the shaded ice in the middle — the slot — is a ' +
+    'scoring chance, and that shading is a warning rather than a target. The distance drawn ' +
+    'between the two players is not a gap figure. Pivoting toward the ' +
+    'boards is a coaching default and not a law of hockey, so ask your coach and drill both ' +
+    'ways. The more universal half of the instruction is not drawn here at all: pivot late — ' +
+    'once you have turned to skate forwards you have given up your ability to react to a ' +
+    'change of direction. ⚠️ And being beaten toward the wall is not an invitation to ride ' +
+    'him into it: driving an opponent into the boards is a separate act, and the NHL, the ' +
+    'IIHF, USA Hockey and Hockey Canada all have a boarding rule that reaches it — they do ' +
+    'not grade it the same way. Nothing in this picture shows contact.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right with our goaltender in its ' +
