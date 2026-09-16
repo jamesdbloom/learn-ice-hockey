@@ -82,7 +82,8 @@ corpus-wide shortening pass.
 
 Before editing, record the current state:
 
-- word and line counts for all 38 `content/**/*.md` files;
+- word and line counts for every current `content/**/*.md` file, including the
+  principles index when present;
 - document, diagram-reference, diagram-manifest, facts-block, and podcast counts;
 - per-document heading, section, facts-block, and diagram counts;
 - caption length distribution and captions over the project's existing warning
@@ -687,7 +688,8 @@ pilot and before regenerating a larger podcast batch.
 ### Deliverables
 
 - Inventory the corpus for recurring decision principles, then reduce the list to
-  a small, prioritised set. The inventory must read all 38 documents and record
+  a small, prioritised set. The inventory must read every current content
+  document and record
   each candidate's exact file, section, wording, and surrounding qualifiers.
   Classify each candidate as `fundamental-principle`, `rule-dependent`,
   `safety-constraint`, `system-convention`, `local-practice`, or
@@ -1208,7 +1210,7 @@ principle and confirm that the audio output was checked where applicable.
 ## Definition of done
 
 - A beginner can choose a relevant path and reach an actionable first lesson
-  without browsing all 38 documents.
+  without browsing the full catalogue.
 - The site has a reviewed core-principles entry point. Each principle is stated
   plainly first, followed by a short summary, recognition cues, and worked
   applications; adult readers can continue to deeper full-ice and technical
