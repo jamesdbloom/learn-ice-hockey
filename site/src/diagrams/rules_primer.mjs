@@ -28,6 +28,8 @@
  * new and awaiting an import; both are stale. `grep -n rules_primer index.mjs`.)
  */
 
+import { boardArc } from './risk_management.mjs';
+
 // ---------------------------------------------------------------------------
 // 1 — where the faceoff goes after an offside
 // ---------------------------------------------------------------------------
@@ -254,19 +256,44 @@ const icingGainingTheLine = {
   // sheet, but "inside the shaded half" against "on its edge" is not. §3 states
   // it — "If a team ... shoots ... the puck from their own half of the ice across
   // the opposition goal line", and "The centre red line divides the ice into
-  // halves for this purpose". Six points rather than four because the boards are
-  // a rounded rectangle and a square corner would sit outside the dasher.
+  // halves for this purpose".
+  //
+  // ⚠️ THIS POLYGON USED TO STOP 8.5 FT SHORT OF BOTH SIDE BOARDS AND STOP DEAD AT
+  // THE GOAL LINE, never reaching the end boards — six points at dy ±34 chamfering
+  // to ±20. It contradicted the rule (the half is the half: boards to boards, and
+  // behind your own net), and it contradicted this diagram's OWN `describe`, which
+  // says "from the centre red line back to the end boards". In the render the
+  // faceoff circles visibly poked out of it top and bottom.
+  //
+  // ⚠️ AND IT CARRIED A DASHED STROKE along that false inset. Every other
+  // board-touching zone in the corpus reaches the boards AND sets `stroke: 'none'`
+  // — this was the sole outlier on both counts. risk_management.mjs's own boardArc
+  // comment names exactly this failure: "the fill stopping short of the boards, and
+  // the dashes asserting a boundary where the only boundary is the wall." Here every
+  // edge IS a real boundary — the painted red line and the wall — so nothing needs
+  // drawing and the stroke is gone.
+  //
+  // ⚠️ `check_zones.py` COULD NOT HAVE FOUND THIS. All three of its passes compare
+  // diagrams to each other, and "your own half" has a single instance in the corpus:
+  // nothing to pair on label, nothing to pair on IoU, nothing to pair on span.
+  //
+  // ⚠️ THE LABEL MOVED AND HAD TO BE PUT BACK. The renderer sites a zone label at the
+  // polygon's VERTEX MEAN, not its area centroid. Six points gave x -61.67; the arc
+  // samples at 1 ft, so 60 points now give x -83.13, and "your own half" at 13
+  // characters would have run past the end boards. `labelDx` restores it to where it
+  // was and where it was already known to read. Re-check it against the boards if the
+  // arc's step ever changes.
   zones: [
     {
       points: [
-        { at: RED, dy: 34 },
-        { at: RED, dy: -34 },
-        { at: 'goal-line::far', dy: -34 },
-        { at: 'goal-line::far', dx: -7, dy: -20 },
-        { at: 'goal-line::far', dx: -7, dy: 20 },
-        { at: 'goal-line::far', dy: 34 },
+        { at: RED, dy: 42.5 },
+        ...boardArc(1, -1),
+        ...boardArc(-1, -1).reverse(),
+        { at: RED, dy: -42.5 },
       ],
       label: 'your own half',
+      labelDx: 21.46,
+      stroke: 'none',
     },
   ],
 

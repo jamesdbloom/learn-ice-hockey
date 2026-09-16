@@ -1204,6 +1204,30 @@ component whenever you repair one of these**, because the same compression produ
 no reading of the Markdown suggests it, and the author who wrote `_label_lead` could not have
 predicted it. **`md_to_speech.py --only <doc>` is a review instrument, not just a build step.**
 
+### ⚠️ AGE-CLASS TOKENS EXPAND, SO NEVER PUT A PREPOSITION IN FRONT OF ONE
+
+**`md_to_speech.py` expands `U14` to *"under fourteen"* and `16U` to *"sixteen U"*** — rules
+`age-group-u-first` and `age-group-u-last`. The expansion is correct and wanted.
+
+**It has bitten twice in one day, in two different shapes.**
+
+**Shape 1 — a preposition in front of the token DOUBLES the word.** *"below U14"* is voiced
+**"below under fourteen"**. So are *"under U14"*, *"above U16"* and *"from U14 up"* read carelessly.
+An agent drafting a British scope qualifier wrote *"below U14 IHUK's junior formats change the
+game"*, rendered it, heard *"below under fourteen"*, and replaced it with *"at U12 and U10"* — which
+names the same set and voices cleanly. ⚠️ **Write the ages out instead of the boundary.**
+
+**Shape 2 — the ARTICLE stops agreeing.** *"A U12 minor is three minutes"* is voiced **"A under
+twelve minor is three minutes."** The written form is correct; the spoken one is not, because the
+article was chosen for *"U"* and the renderer supplies a vowel. ⚠️ **It survived the author, a
+`safety-reviewer` and every gate, and was caught by a `content-reviewer` reading the rendered
+output** — which is the only place it exists. **An age token directly after `a`/`an` needs the
+sentence recast, not the article swapped**: *"an under twelve minor"* reads wrong on the page.
+
+⚠️ **No checker sees this.** `check_facts`, `check_links`, `check_absolutes` and `check_tables` all
+pass on the doubled form; it is legal Markdown and a legal fact. **It was caught only by rendering the
+sentence**, which is the whole reason the section above calls the renderer a review instrument.
+
 ⚠️ **AND WHEN YOU RENDER IT, USE `md_to_speech.spoken_text(path)` OR `spoken_sentences(path)`. DO NOT
 ASSEMBLE SPOKEN TEXT BY HAND.** Five separate reviewers have now reported the same phantom defect — a
 spoken *"IIHF 's"*, with a space before the possessive — **and it does not exist.** It is produced by

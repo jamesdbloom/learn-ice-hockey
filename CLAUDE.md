@@ -342,10 +342,14 @@ The short form:
    `TABLE_MAX_ROWS` and `TABLE_MAX_CELL_CHARS` have **never moved from their introducing commit**,
    so the drift was real work and the sentence quietly took the credit for none of it. ⚠️ **It also
    named `body_contact_and_battles.md:55` as sitting at "exactly 0 rows of headroom". That table is
-   now at `:60` with TWO rows of headroom, and the table actually at zero is
-   `rules_primer.md:753` — a different table, in a different document, found by running `--near`
-   rather than by reading this file.** `--near` lists the ones an ordinary edit will break; it is
-   the only trustworthy sentence this passage ever contained.
+   now at `:60` with TWO rows of headroom.** The passage was then repaired by naming
+   `rules_primer.md:753` as the table actually at zero — ⚠️ **and on 16 September `--near` did not
+   list that line either.** ⚠️⚠️ **SO THE REPAIR FAILED THE SAME WAY THE THING IT REPAIRED DID, IN
+   THE SAME PARAGRAPH, UNDER A SENTENCE READING "NO COUNT IS WRITTEN HERE. RUN THE TOOL." A LINE
+   NUMBER IS A FIGURE.** It was caught by an agent that ran `--near` because its brief told it to,
+   not by anyone reading this file. **No file, line or count for a near-limit table will be written
+   here again — the tool prints them, sorted, every time.** `--near` lists the ones an ordinary edit
+   will break; it is the only trustworthy sentence this passage ever contained.
 
    `scripts/check_disclosures.py` reports **the corpus's own absence-of-evidence claims** —
    *"no study was found"*, *"nobody publishes a ranking"*, *"could not be traced"* — so they can
@@ -384,7 +388,16 @@ The short form:
    described was edited in the same round.
 
    ⚠️ **It compares diagrams to EACH OTHER, so a region drawn consistently wrong everywhere
-   is invisible to it.** Only `rink_map_and_glossary.md` settles what a region is.
+   is invisible to it.** ⚠️ **The owner is `content/foundation/rink_map.md`.** This line said
+                    `rink_map_and_glossary.md` until 16 September 2026 — **a file that has not existed
+                    since commit `fd9e903` split it into `rink_map.md` and `language_and_glossary.md`.**
+                    The old name is still named by four scripts' comments and 21 diagram modules, and
+                    **no `owner:` field carries it, so `check_links.py` cannot see any of them.** An
+                    agent told "only `rink_map_and_glossary.md` settles this" greps for a file that is
+                    not there and finds nothing — the routing failure this file warns about for
+                    sources, reproduced for the corpus's own owner document. ⚠️ **And the split means
+                    there are now TWO owners: regions are `rink_map.md`, vocabulary is
+                    `language_and_glossary.md`.**
 
    They are the floor. None of them can check whether anything is true.
 
@@ -497,7 +510,8 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_chunk_splits.py, check_caption_negations.py,
                     check_zones.py, check_tables.py, check_disclosures.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
-                    check_plan_rows.py, check_readability_census.py, check_caption_echo.py.
+                    check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
+                    check_quote_drift.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py.
@@ -517,6 +531,19 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     censuses were run from a session scratchpad and written into a plan, and a
                     commit gate pointed out that no figure in that section would be reproducible
                     once the session ended.
+                    check_quote_drift.py — quotations whose ORIGINAL CHARACTERS differ from the
+                    source: a capital silently lowered, a terminal period added inside the quote
+                    marks where the source sentence CONTINUES. ⚠️ Every gate passes on all of it,
+                    because the Markdown is valid and the claim is true. A `safety-reviewer` read
+                    fourteen quotations in one section and reported every one verbatim; three had
+                    drifted. A systematic pass over ONE document then found 47 more, and
+                    `rules_primer.md` flags 106. ⚠️ It matches on ALPHANUMERICS ONLY, which is what
+                    defeats the page-furniture splice recorded in sources/README.md, then compares
+                    the originals. ⚠️ WORKLIST: the `[a]` bracket form is the corpus's disclosed-
+                    insertion convention and is CORRECT, and an ALL-CAPS source heading is a
+                    judgement call. ⚠️ It CANNOT see attribution drift — it keeps the closest match
+                    across ALL sources, so a sentence credited to the NHL but carrying the IIHF's
+                    wording scores clean — and it cannot see a quotation whose source is not on disk.
                     check_caption_echo.py — captions that REPEAT the prose block now directly
                     above them, which is the defect the caption wave and the marker wave create
                     together and neither creates alone. ⚠️ Three kinds of overlap are CORRECT and

@@ -106,11 +106,20 @@ const OWNER = 'content/hockey-iq/risk_management.md';
  * i.e. at (72, 14.5) with the origin at centre ice.
  *
  * ⚠️ THIS IS THE SECOND COPY OF THIS FUNCTION IN THE CORPUS. `boardArc` in
- * rink_map_and_glossary.mjs is the first, it is not exported, and no diagram
- * module imports anything. Two modules deriving one arc is exactly the shape
- * check_zones.py's own header records ("three modules define their own
- * HIGH_SLOT"), so it is written down here rather than left to be discovered: if a
- * third is ever needed, export the first instead of writing this one again.
+ * rink_map_and_glossary.mjs is the first. Two modules deriving one arc is exactly
+ * the shape check_zones.py's own header records ("three modules define their own
+ * HIGH_SLOT"), so it is written down here rather than left to be discovered.
+ *
+ * ⚠️ THIS COMMENT SAID "no diagram module imports anything", AND THAT WAS FALSE
+ * when it was written — offensive_zone_play.mjs and playing_without_the_puck.mjs
+ * both import from rule69_clauses.mjs. It was the stated reason for not
+ * consolidating, so a false premise was doing the load-bearing work.
+ *
+ * ⚠️ AND IT SAID "export the first instead of writing this one again". THE FIRST
+ * CANNOT DO THE JOB: rink_map_and_glossary.mjs's is one-argument and reaches the
+ * near end only; it needs a separate `boardArcFar` for the other. THIS one takes
+ * `ex` and does both, so it is the one now exported, and rules_primer.mjs imports
+ * it rather than becoming the third copy. Export this, not that.
  *
  * ⚠️ THE STEP IS ONE FOOT AND WAS FOUR, AND THE FOUR WAS VISIBLE IN THE RENDER.
  * Stepping x uniformly is wildly non-uniform in ARC LENGTH, because dy/dx runs to
@@ -136,7 +145,7 @@ const OWNER = 'content/hockey-iq/risk_management.md';
  * @param {number} sy  +1 for the side the diagram calls "right", -1 for the other
  * @param {number} ex  +1 for the near end (positive x), -1 for the far end
  */
-function boardArc(sy, ex) {
+export function boardArc(sy, ex) {
   const R = 28, CX = 72, CY = 42.5 - 28;      // 14.5
   const pts = [];
   for (let x = CX; x <= 100.0001; x += 1) {
@@ -215,6 +224,17 @@ const theRiskMap = {
   // honest limits in the safety colour is how a reader learns to discount the amber that
   // does matter.
   //
+  // ⚠️ THE "their end" SCOPE CLAUSE WAS CUT BY THE SHORTENING AND HAS BEEN PUT BACK. It is
+  // the sentence naming the ice the blue region actually covers — "from their faceoff dots
+  // back to the end boards, where the grade given is for their corners and the ice below
+  // their goal line" — and it does two jobs at once. It scopes the LABEL, because "their
+  // end" is rink_map.md §4's own unambiguous name for the whole attacking zone, blue line
+  // to end boards, while this polygon is the deepest 31 ft of it; and it discloses the
+  // polygon's OVER-reach, because the shading also covers the ice in front of their net,
+  // which the section's row ("In their corners and below their goal line") does not name.
+  // The zone comment below says the over-reach is "disclosed in the caption"; for one
+  // commit it was not. Do not cut it again — it is a scope clause, not narrative.
+  //
   // ⚠️ The caption's first limit was REWRITTEN on 14 September 2026 and is no longer 'every
   // word unchanged'. It carried the document's flat 'no study ranking turnovers by where on
   // the ice they happen was found for it' — and one of the five regions it draws has since
@@ -241,7 +261,10 @@ const theRiskMap = {
     'blue line. So take the order from the words, and not by ranking the tints against each other: ' +
     'their end is drawn in blue rather than red, and a light blue prints darker than the faintest red ' +
     'in greyscale. Nothing here is marked on a real rink, and the edges are drawn only so the shading ' +
-    'can have one. And a turnover also has a DIRECTION, which no still map can show — losing the puck ' +
+    'can have one: the band at their line has no defined depth, and the blue at their end covers the ' +
+    'ice from their faceoff dots back to the end boards, where the grade given is for their corners ' +
+    'and the ice below their goal line. And a turnover also has a DIRECTION, which no still map ' +
+    'can show — losing the puck ' +
     'while it travels toward your own net makes the turnover and the counter-attack the same event.',
 
   describe:

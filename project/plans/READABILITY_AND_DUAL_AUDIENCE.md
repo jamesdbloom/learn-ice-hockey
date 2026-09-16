@@ -129,8 +129,18 @@ transfer it to a situation the page does not cover. A page may need both, and wh
 principle comes first, because it frames the actions rather than summarising them.
 
 - **Draw it from `content/foundation/core_principles.md`** where one of the seven fits, and link to
-  it. Where none fits, say so rather than inventing one — ⚠️ **the index's own rejected-candidate log
-  is longer than its accepted list, and that was the correct outcome.**
+  it. Where none fits, say so rather than inventing one — ⚠️ **the rejected-candidate log is longer
+  than the accepted list, and that was the correct outcome.**
+  ⚠️⚠️ **THAT LOG IS IN `project/`, NOT IN `content/`.** It lives in
+  [`../reviews/readability_wave1_findings_and_layer_spec.md`](../reviews/readability_wave1_findings_and_layer_spec.md)
+  and in `project/pilots/keyfacts_pilot_defender.md`. This line previously read *"the **index's
+  own** rejected-candidate log"*, where *"the index"* meant the index **workstream**. On 16
+  September a coordinator read it as the **file's** log, put *"do not delete a rejected-candidate
+  entry — it is the document's integrity story"* into an agent's brief, and the agent had to
+  report that the thing did not exist. ⚠️ **Worse: had the agent obliged, a rejected-candidate log
+  inside `content/` is the corpus narrating its own review process, which is NON-NEGOTIABLE 6.**
+  The brief would have instructed a breach. **A principles index in `content/` must never carry
+  one.**
 - ⚠️ **A principle at the top of a page is a claim in the most prominent position in the document,
   voiced, and often read alone.** It carries the same burden as any other claim: scope, owner, and
   the qualification its owner carries. **The cardinal rule applies with more force here, not less** —

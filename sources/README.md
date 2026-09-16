@@ -570,6 +570,148 @@ python3 -c "p='sources/iihf_rules.txt'; t=open(p).read(); open(p,'w').write(t.re
 `usahockey.com` referer; `iihf.com` challenges robots and serves browsers. The
 fetch script sets both.
 
+## ⚠️⚠️ A RULE CONTINUES ACROSS PAGE FURNITURE — A FIXED GREP WINDOW MANUFACTURES A FALSE ABSENCE
+
+**Measured 16 September 2026, on `usah.txt` and `hc.txt`.**
+
+An agent read USA Hockey **304(e)** and Hockey Canada **3.6(d)** with a context
+window that stopped at a page break, and **was about to report two of the
+corpus's facts lines as fabricated citations.** ⚠️ **The corpus was right and the
+window was the artefact.**
+
+`sources/usah.txt` around `:2062` puts **eight lines of furniture inside a single
+rule** — blank lines, a running header (`2025-29 Official Rules of Ice Hockey`
+plus the page number), the InDesign build line
+(`Rulebook 2025-29.indd 23 … 2/14/25 9:28 AM`), and the section name
+(`EQUIPMENT`) — and then the rule resumes mid-sentence:
+
+> *"In all classifications, if the goalkeeper's helmet/facemask comes off during
+> play, the officials shall stop play immediately."*
+
+`hc.txt` does the same around `:2155`, where 3.6(d)'s goaltender limb sits below a
+`Note 1` and a blank run:
+
+> *"If the goaltender deliberately removes their protective equipment to gain a
+> stoppage of play, they will be penalized under Rule 10.1 (a) – Delay of Game."*
+
+⚠️ **So `grep -A 3` or any fixed `-A n` is unsound on these extractions.** A
+clause you are trying to prove absent may be eight lines further down, behind a
+page number. **Widen the window past the furniture, or flatten the file first,
+before concluding a book is silent.**
+
+### Three more instances, found the same day, in rules the corpus actively cites
+
+- **USA Hockey 618(c)** — the goaltender's forward-throw limb. `usah.txt:4262`
+  splits it mid-clause: *"…and it is first played by a"* / blank lines / the
+  running header `Playing Rules` / blank lines / *"teammate, play shall be
+  stopped…"*. ⚠️ **A phrase grep for *"first played by a teammate"* returns
+  NOTHING**, and that clause is the whole difference between USA Hockey's
+  **face-off** and the NHL's **penalty**.
+- **IIHF 67.3(III)** — `TABLE OF CONTENTS` plus a running header sit between the
+  limb and its Note.
+- **USA Hockey 304(e)** and **Hockey Canada 3.6(d)** — the cases that started
+  this. An agent was about to report two of the corpus's facts lines as
+  **fabricated citations**.
+
+⚠️ **This is the third member of the same family, and they all fail the same
+way — a search returns nothing and the file looks fine.** The other two are the
+image-only extraction (recorded above) and the house-word split (recorded below).
+**A negative-existence claim is only as good as the search that failed to refute
+it, and all three of these break the SEARCH rather than the file.**
+
+### ⚠️⚠️ FLATTENING DOES NOT FIX THIS, AND THE FIRST VERSION OF THIS SECTION SAID IT DID
+
+**Written, then tested, then corrected — in that order, which is the only reason
+it is right now.** The obvious remedy is to strip newlines and collapse
+whitespace before searching. **It fails**, because the furniture is not
+whitespace: it is *text*. Flattened, `usah.txt` reads
+
+> *"…and it is first played by a **Playing Rules** teammate, play shall be
+> stopped…"*
+
+so `"first played by a teammate"` is **still** absent. ⚠️ **A remedy that looks
+obviously correct and is not is worse than no remedy**, because it converts a
+known-hard search into one the searcher believes is sound.
+
+**What actually works, both verified:**
+
+1. **Strip the running-header text, then flatten.** For `usah.txt` that is
+   `re.sub(r'\s*Playing Rules\s*', ' ', text)` before collapsing whitespace —
+   the phrase is then present. **Each book needs its own header string**; find it
+   by printing a page boundary rather than guessing.
+2. **Read a LINE RANGE, not a phrase.** `sed -n 'N,Mp'` over the whole rule and
+   read it. Slower, and it is what caught all six of these.
+
+⚠️ **Prefer (2) when you are about to make a negative-existence claim.** (1) is a
+search aid; (2) is evidence.
+
+## ⚠️⚠️ THE BOOKS DO NOT SHARE A WORD FOR THE GOALTENDER, AND TWO OF THEM RETURN A HARD ZERO
+
+**Measured 16 September 2026.** `grep -oi <word> sources/<file>.txt | wc -l`:
+
+| book | `goaltender` | `goalkeeper` |
+|---|---:|---:|
+| `nhl_rules_layout` | **0** | 589 |
+| `iihf_rules_v1.1` | **0** | 464 |
+| `usah` | 2 | 270 |
+| `carha` | 4 | 181 |
+| `hc_layout` | **369** | 4 |
+
+⚠️⚠️ **A SINGLE-WORD GREP FOR ANY GOALTENDING QUESTION RETURNS A FALSE ZERO IN AT
+LEAST ONE BOOK, AND USUALLY IN TWO.** `goaltender` is **absent from the NHL and
+IIHF books entirely** — and this corpus is *written to NHL rules*, so the word a
+writer reaches for first is the one that finds nothing in the book they are
+checking against. Hockey Canada is the mirror image: `goalkeeper` appears four
+times in 369 opportunities.
+
+⚠️ **This is the same failure mode as an image-only extraction and it is worse,
+because the file looks fine.** `pdffonts` is reassuring, the byte count is right,
+the text layer is complete — and the search returns nothing. **A
+negative-existence claim built on one house word is unsound in four of the five
+books.**
+
+**So: search BOTH words, in EVERY book, EVERY time.** It bit an agent this round
+on Hockey Canada's restricted-area question, where `goalkeeper` returns 4 hits and
+none of them is the rule; the answer was under `goaltender`.
+
+### ⚠️ It is not just the goaltender. Two more were measured the same day.
+
+**`linesman` vs `linesperson`:**
+
+| book | `linesman` | `linesperson` |
+|---|---:|---:|
+| `nhl_rules_layout` | **0** | 123 |
+| `iihf_rules_v1.1` | **0** | 76 |
+| `usah` | **0** | 26 |
+| `hc_layout` | **0** | 83 |
+| `carha` | 1 | **0** |
+
+⚠️ **Four books have moved to `linesperson` and CARHA has not.** A search for
+`linesman` returns a hard zero in four of five; a search for `linesperson`
+returns a hard zero in CARHA. **There is no single word that finds the official
+in all five books.**
+
+**Body checking — and this one matters most, because it is the corpus's most
+safety-critical topic and the corpus is written to NHL rules:**
+
+| book | `bodychecking` | `body checking` | `body check` |
+|---|---:|---:|---:|
+| `nhl_rules_layout` | **0** | **0** | 2 |
+| `usah` | 0 | 48 | — |
+| `hc_layout` | 1 | **0** | — |
+| `iihf_rules_v1.1` | 1 | 2 | — |
+
+⚠️⚠️ **`grep -i "body checking" sources/nhl_rules_layout.txt` RETURNS ZERO.** The
+NHL book writes *"body check"* twice and `checking` 49 times, and never the
+gerund. **A writer checking "what does the NHL say about body checking" against
+the book this corpus is written to gets nothing**, and Hockey Canada returns zero
+for the same string while USA Hockey returns 48.
+
+**The general rule, now measured three times rather than assumed:** ⚠️ **before
+writing that a book is silent on something, establish the word THAT BOOK uses.**
+Not measured yet, and worth measuring before anyone relies on a zero:
+`he`/`they`, `referee`/`official`, `penalty box`/`penalty bench`.
+
 ## ⚠️ Python `splitlines()` and `grep -n`/`sed` disagree by up to 227 lines
 
 **Found 29 August 2026 by an agent whose first three rule diffs silently landed on the wrong rule.**
@@ -1006,10 +1148,38 @@ here"* — **the corpus knew it existed, characterised what was in it, and never
 
 | file | pages | what it settles |
 |---|---|---|
-| `ihuk_junior_roc` | 32 | The table: **U10 and U12 non-checking, U14 / U16 / U19s checking** |
+| `ihuk_junior_roc` | 32 | The table: **U10 and U12 non-checking, U14 / U16 / U19s checking** — ⚠️ **AND SEE BELOW: IT SETTLES FAR MORE THAN THAT** |
 | `ihuk_u10_roc` | — | ⚠️ **The only one stating it as a RULE rather than a format label** — *"Bodychecking is NOT allowed in U10 matches."* |
 | `ihuk_nihl_roc` | — | *"NIHL │ 3 x 20 minute periods │ Full ice, **checking**, stop clock"* |
 | `ihuk_wnihl_roc` | — | *"WNIHL U16 … Full ice, **non-checking**"* and *"WNIHL … Full ice, **non-checking**"* ⚠️ **TIGHTER than IIHF 101.1, which permits a limited form** |
+
+### ⚠️⚠️ THIS ENTRY UNDERSOLD `ihuk_junior_roc` FOR THE SAME REASON THE CORPUS ONCE UNDERSOLD THE WHOLE FILE
+
+**Until 16 September 2026 this section said these four documents settle *"which age groups may body check"*
+— and nothing else.** ⚠️ **That is wrong, and it is the identical failure one paragraph above records: the
+corpus knew the document existed, characterised what was in it, and never opened the rest.**
+
+⚠️ **`ihuk_junior_roc` contains `Appendix D — U12 Competition Format & Administration`, a COMPLETE
+ALTERNATIVE PLAYING CODE**, and it had never been read. Its ten headings are *Line Setting, Line Allocation,
+Line Management, Game Format, Stoppages, Line Changes, Offsides & Frozen Pucks, Icing, Netminders,
+Penalties*. What it settles, all of it absent from the corpus until that date:
+
+- **`"No icing calls at U12."`** — the **only** age-scoped icing provision in any British document.
+- **Offside: `"Play does not stop."`** The attacking team **`"must clear the zone before re-entering"`**, and
+  **`"Failure to retreat quickly = delay of game penalty."`**
+- **A running clock by default** — *Stoppages* reads **`"running clock, unless otherwise agreed by both
+  teams… In such cases, stoppages will occur after each goal"`**. ⚠️ **The default is the running clock;
+  it is easy to read that sentence backwards, and an agent did.**
+- **Minors are 3 minutes in a three-line game and 4 in a four-line game**, served only on the penalised
+  player's own line shifts, and **`"Coincidental penalties are not applied at U12"`**. ⚠️ **The format table
+  prints only `"3 x 18-minute periods"`; Appendix D adds 20 for the four-line format. A listener told only
+  "three minutes" returns to the ice a minute early.**
+- **A `"5+Game penalty"` ejects immediately and the five are not served** — ⚠️ **but Appendix D never says
+  which majors are one, so this does not settle the "junior major ends your game" inference.**
+
+⚠️ **The route to it is a pointer in the format table itself**, which is the parent that sends you there:
+*"U12: Playing format, including line changes, off-side rules, and penalty administration—is set out in
+Appendix D."* **Read the pointer, not just the row.**
 
 ### ⚠️⚠️ QUOTE THE CHECKING TABLE FROM `_layout` ONLY — THE PLAIN EXTRACTION SCRAMBLES IT
 
@@ -1023,11 +1193,41 @@ FORMAT — it would happily "confirm" that U12 is a checking category or that U1
 keeps the row intact:** `U14  3 x 15-minute periods  Full ice, checking, stop clock` — **and both are on
 disk, because these four are in `DUAL_EXTRACT`.**
 
-### ⚠️ THEY ARE REVISED IN PLACE, AT UNCHANGED URLs
+### ⚠️⚠️ THEY ARE REVISED IN PLACE, AT UNCHANGED URLs — AND IT HAS NOW HAPPENED, BACKWARDS
 
 **Every one carries a `ModDate` later than its `CreationDate`** — WNIHL's was **three days old** when
 fetched. ⚠️ **A silent replacement is invisible to a URL check. Re-fetch and compare dates before trusting a
 quotation.**
+
+⚠️⚠️ **THIS IS NO LONGER A WARNING. IT IS A MEASUREMENT.** All four were refetched on **16 September
+2026** and **two no longer match the copies on disk:**
+
+| Document | disk bytes | live bytes | disk `ModDate` | live `ModDate` |
+|---|---:|---:|---|---|
+| Junior RoC | 1,098,281 | 1,098,281 ✅ | 26 Aug 20:08 | 26 Aug 20:08 |
+| U10 RoC | 666,945 | 666,945 ✅ | — | — |
+| **NIHL 1 & 2 RoC** | 325,259 | **542,722** ❌ | **1 Sep 11:29** | **26 Aug 17:53** |
+| **WNIHL RoC** | 540,666 | **431,890** ❌ | **7 Sep 19:03** | **26 Aug 17:23** |
+
+⚠️⚠️ **THE LIVE `ModDate` ON BOTH CHANGED DOCUMENTS IS *EARLIER* THAN THE ON-DISK COPY'S. England Ice
+Hockey ROLLED BACK to the 26 August originals.** It did not publish a newer revision.
+
+**So the rule *"compare dates and take the later one"* is WRONG for this publisher.** A date comparison
+tells you the files differ; **it does not tell you which one is current**, and the newer-looking copy may
+be the one that has been withdrawn.
+
+**What actually changed, by `-layout` diff:**
+
+- **NIHL:** the live (older) file carries a placeholder the disk (newer) file does not —
+  *"A separate policy is being produced around British Trained/Not British Trained status."*
+- **WNIHL:** the disk (newer) file adds *"without any players being dual registered with other clubs"*
+  to the squad-registration clause, and contains the typo `"Eacho WNIHL team"`; the live file has neither.
+
+⚠️ **NO CORPUS QUOTATION IS AFFECTED**, and that was checked rather than assumed: both checking-format
+rows are **verbatim in both revisions of both documents**.
+
+**The practical rule: for these four, a SHA-256 against the on-disk copy is the only sound check, and a
+mismatch is a question rather than a verdict.** Record both hashes and say which you read.
 
 **Text-to-PDF ratios, for spotting a failed re-extraction:** `ihuk_junior_roc` **5.0%** · `ihuk_u10_roc`
 **2.8%** · `ihuk_nihl_roc` **10.7%** · `ihuk_wnihl_roc` **6.5%**. All four have a real text layer.

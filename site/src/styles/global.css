@@ -2297,7 +2297,16 @@ figure.diagram svg {
   never rendered.
   ⚠️⚠️ MEASURED 15 September 2026, AND IT IS WIDER THAN THE h2 NOTE ABOVE ADMITS: EVERY real
   occurrence in the corpus goes through the `p:empty` variant -- a browser review measured
-  `viaEmpty: true` on all eleven live cases it found. So the BARE-ADJACENCY half of every
+  `viaEmpty: true` on every live case it found. ⚠️ THIS LINE SAID "all eleven live cases"
+  UNTIL 16 September, when a browser review over all 49 built pages measured THIRTY, across
+  20 pages -- 22 before an h3, 3 before an h4, 5 before an hr -- because the marker wave moved
+  markers down onto headings. The COUNT is not the finding and must not be written here again;
+  the finding is that the bare-adjacency half stays unexercised however many there are. To
+  re-derive: probe every `figure.diagram` in `dist/` for a next-element-sibling heading or hr
+  and read the computed margin. Both computed margin-bottom AND the geometric gap were checked
+  and agree: h3 44, h4 40, hr 44, at 375, 768 and 1440. And the direction is right -- gap ABOVE
+  the figure measured 32 and gap BELOW 44 in every case, so the figure binds upward to the prose
+  it illustrates and the next item still reads as a heading. So the BARE-ADJACENCY half of every
   level, `figure.diagram:has(+ hN)` with no empty paragraph between, is as unexercised as h5
   was. It is correct -- the same review synthesised each case in the DOM and read computed
   style: h2 52, h3 44, h4 40, h5 40, h6 40, hr 44, against a 32px paragraph baseline, identical

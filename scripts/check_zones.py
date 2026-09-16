@@ -44,7 +44,10 @@ WHAT IT CANNOT SEE
 ------------------
 * Whether a polygon matches its OWNER DOCUMENT's definition. It compares
   diagrams to each other, so a region drawn consistently wrong everywhere is
-  invisible. Only reading `rink_map_and_glossary.md` settles that.
+  invisible. Only reading `content/foundation/rink_map.md` settles that.
+  (This line named `rink_map_and_glossary.md` until 16 Sep 2026; that file was
+  split into `rink_map.md` + `language_and_glossary.md` by commit fd9e903 and
+  has not existed since. Regions are `rink_map.md`'s.)
 * A zone with no text label, or one whose label is emitted elsewhere.
 * Whether the label is the right name for the region at all.
 """
@@ -133,8 +136,15 @@ def area(poly: tuple[tuple[float, float], ...]) -> float:
     briefly misleading here: two polygons labelled "the middle" came back at
     1276 and 1232 sq ft -- "1.04x", which reads as agreement -- while sitting
     in DIFFERENT PLACES, overlapping over 15 ft of spans 29 ft and 44 ft long.
-    That pair is legitimate (the glossary defines "the middle" as a DIRECTION,
-    not a bounded region), but the near-identical ratio was accidental. Hence
+    That pair is legitimate, but for a different reason than this docstring
+    gave until 16 Sep 2026. It said the glossary defines "the middle" as a
+    DIRECTION. It does not: rink_map.md:483 reads "**Middle** = the central
+    lane." ⚠️ A LANE HAS A WIDTH AND NO STATED LENGTH -- so the four polygons
+    labelled "the middle" are right to agree on width (all are y +/-22, the
+    faceoff-dot lines) and free to differ in length, which is what they do.
+    The old wording would have licensed WIDTH divergence, which is the one
+    dimension they must not differ in. The error had already propagated into
+    risk_management.mjs's comment. Hence
     `centroid` below: separation is reported next to area so a future reader is
     not told two disjoint regions nearly match.
     """

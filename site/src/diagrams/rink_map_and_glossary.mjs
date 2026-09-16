@@ -261,7 +261,7 @@ const theHighSlot = {
   describe:
     'The attacking half of the rink, the net at the right. A shaded rectangle occupies the ' +
     'middle of the zone between the two faceoff circles, running from the top of the circles ' +
-    'down to the depth of the two faceoff dots — the upper half of the slot. No players are ' +
+    'down to the depth of the two faceoff dots — the upper part of the slot. No players are ' +
     'drawn.',
 
   zones: [
@@ -297,7 +297,7 @@ const theLowSlot = {
   describe:
     'The attacking half of the rink, the net at the right. A shaded rectangle occupies the ' +
     'middle of the zone between the two faceoff circles, running from the depth of the ' +
-    'faceoff dots down to the front edge of the light blue goal crease — the lower half of ' +
+    'faceoff dots down to the front edge of the light blue goal crease — the lower part of ' +
     'the slot. No players are drawn.',
 
   zones: [
