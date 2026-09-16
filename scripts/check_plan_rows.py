@@ -97,10 +97,26 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PLAN = ROOT / "project" / "plans" / "OPEN_ITEMS.md"
 
-#: A row is open unless it is marked closed. Rows carry ✅ when closed and ⬜
-#: when open; 🟡 is used for partly-closed and is treated as open.
-OPEN_MARK = re.compile(r"[⬜🟡]")
-CLOSED_MARK = re.compile(r"✅")
+#: A row is open unless it is marked closed.
+#:
+#: ⚠️⚠️ THIS PATTERN WAS `[⬜🟡]` UNTIL 16 SEPTEMBER 2026 AND MATCHED NOTHING.
+#: `OPEN_ITEMS.md` uses Markdown task syntax -- `- [ ]` open, `- [x]` closed --
+#: and has for as long as anyone checked. The tool reported
+#:
+#:     check_plan_rows: 0 open row(s) · 0 quoted assertion(s) checked
+#:     every quoted assertion in an open row still appears in the file it names.
+#:
+#: over 151 open rows, which is the reassuring-false-pass shape `CLAUDE.md`
+#: catalogues: a zero that reads as "nothing wrong" when it means "nothing
+#: looked at". It was found by a commit gate, not by anyone running the tool --
+#: and the rows it would have caught were four stale premises in a workstream
+#: this very commit had closed.
+#:
+#: ⚠️ A CHECKER THAT MATCHES NOTHING IS WORSE THAN NO CHECKER, because it is
+#: cited as evidence. Both syntaxes are accepted now; the emoji forms are kept
+#: because other plan files may still use them.
+OPEN_MARK = re.compile(r"[⬜🟡]|^\s*[-*]\s*\[ \]")
+CLOSED_MARK = re.compile(r"✅|^\s*[-*]\s*\[[xX]\]")
 
 #: `name.md:123` or `name.md` -- the file the row is making a claim about.
 FILE_REF = re.compile(r"`?([A-Za-z0-9_./-]+\.(?:md|py|mjs|ts|astro|css|tsv|txt))(?::(\d+))?`?")

@@ -119,12 +119,45 @@ def openers():
     return out
 
 
+# ⚠️ THE SOURCES TRAILER HAS NO HEADING, AND THAT USED TO BE INVISIBLE HERE.
+# Every document ends with an unheaded `*Sources — ...*` trailer. A section is
+# bounded by the next `##`/`###`, so the trailer was attributed to whatever
+# heading preceded it -- `## Key Takeaways` in 37 of the 39 documents.
+#
+# ⚠️ MEASURED 16 September 2026, BEFORE THIS FIX: 195,639 words corpus-wide,
+# 17.8% of the whole corpus, counted as summary layer. The reported summary
+# share was 29.5%; the real one is 12.2%. `rules_primer.md`'s Key Takeaways
+# read 15,588 and is 5,077. AND THE RANK ORDER INVERTED -- the document the
+# plan named as the extreme high end was not the extreme high end.
+#
+# ⚠️ It was found because an agent was briefed that its Key Takeaways was
+# "the largest single thing you could cut", measured it, and reported the
+# BRIEF. Every gate passed throughout; nothing here was wrong, it was just
+# counting a bibliography.
+#
+# The trailer is reported as its own line rather than dropped, so it stays
+# visible instead of vanishing into a different kind of silence.
+TRAILER = re.compile(r"^\*Sources\b")
+
+
 def wordcounts():
     """Per-document and per-section word counts, EXCLUDING ## and ### lines."""
     docs, secs = [], []
     for path in documents():
         section, section_words, section_line, total = None, 0, 0, 0
         for i, line in unfenced(path):
+            if TRAILER.match(line):
+                # The trailer closes the last section and is reported separately.
+                # ⚠️ The `*Sources ...` line is BODY TEXT and must still be counted.
+                # Skipping it cost 376 words corpus-wide and broke `reconcile`,
+                # which is exactly what `reconcile` is for.
+                if section is not None:
+                    secs.append((section_words, path, section_line, section))
+                section, section_words, section_line = "(Sources trailer)", 0, i
+                n = len(line.split())
+                total += n
+                section_words += n
+                continue
             m = HEADING.match(line)
             if m:
                 if section is not None:
@@ -145,12 +178,20 @@ def summary_share():
     """How much of each document lives in the two summary sections."""
     rows = []
     for path in documents():
-        section, words, total = None, {}, 0
+        section, words, total, trailer = None, {}, 0, 0
         for _, line in unfenced(path):
+            if TRAILER.match(line):
+                section = None          # ⚠️ the trailer belongs to no section
+                n = len(line.split())   # ...but its text is still body words
+                total += n
+                trailer += n
+                continue
             m = HEADING.match(line)
             if m:
                 section = m.group(2).strip()
                 continue
+            if section is None and total:
+                trailer += len(line.split())
             n = len(line.split())
             total += n
             if section:

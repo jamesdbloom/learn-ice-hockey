@@ -24,7 +24,7 @@ the identity is reproducible from the definition above.
 
 | | Reported by the census | Actual |
 |---|---:|---:|
-| Corpus summary layer | **323,264 of 1,097,372 = 29.5%** | **134,210 of 1,099,726 = 12.2%** |
+| Corpus summary layer | **29.5%** | **12.2%** — ⚠️ the SHARE is the finding and is stable; the absolute totals drift with every content edit, so run `check_readability_census.py summary` rather than quoting them |
 | `rules_primer.md` Key Takeaways | 15,588 | **5,077** |
 | `body_contact_and_battles.md` Key Takeaways | 14,289 | **3,704** |
 | `goaltender.md` Key Takeaways | 13,009 | **2,921** |
@@ -81,7 +81,40 @@ part of the evidence.
   not** — which is exactly the failure mode `CLAUDE.md` describes when a figure
   is copied out of its owner, except that here the owner itself was wrong.
 
-## The fix, and why it has not been made yet
+## ⚠️ FIXED — 16 September 2026, between waves
+
+`TRAILER = re.compile(r"^\*Sources\b")` now closes the last section in
+`wordcounts()` and detaches it in `summary_share()`. **The trailer is reported as
+its own line — `(Sources trailer)` — rather than dropped**, so it stays visible
+instead of vanishing into a different kind of silence.
+
+**Corpus summary layer: 29.5% → 12.2%.** ⚠️ **Confirmed two ways** — the fixed
+tool and an independent hand-computation written before the fix both give 12.2%.
+
+**And the rank order corrected in the heaviest-sections table**: `rules_primer.md`
+Key Takeaways is no longer in the top twenty at all, and five of the top ten
+entries now read `(Sources trailer)` — which is the truth the old table was
+hiding.
+
+### ⚠️⚠️ THE FIX BROKE `reconcile`, AND `reconcile` CAUGHT IT
+
+The first version put `continue` on the trailer line **before counting its
+words**. ⚠️ **The `*Sources — retrieved …*` line is BODY TEXT.** Skipping it cost
+**exactly 376 words corpus-wide** — 39 documents, one line each — and
+`reconcile` went from `YES` to **`NO -- INVESTIGATE`**, with the difference at
+10,722 against a heading count of 10,346.
+
+**That is the reconciliation identity doing precisely the job it was written
+for**, on the very commit that changed the function it guards. The regression was
+found by running the check, not by reading the diff, and a backup copy of the
+pre-fix tool established within one command that the breakage was **mine and not
+pre-existing**.
+
+⚠️ **The lesson for the next tool change here: take a copy of the tool first and
+run the OLD one when a check fails.** Otherwise "was it already broken?" costs an
+investigation instead of a comparison.
+
+## The fix as originally deferred, and why
 
 ⚠️ **`scripts/` is shared state and five agents were live when this was found.**
 `CLAUDE.md`: *"Change a tool between waves, not during one."* In round 59 a

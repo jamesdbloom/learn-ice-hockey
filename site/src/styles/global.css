@@ -2116,6 +2116,90 @@ figcaption .warn-inline {
     margin: 18mm 16mm;
   }
 
+  /* ⚠️⚠️ PRINT IS ALWAYS A LIGHT DOCUMENT, AND SAYING SO ON html/body WAS NOT ENOUGH.
+     Measured 16 September 2026 by rendering this page to PDF from a dark-themed browser:
+     the FACTS LAYER and every ⚠️ CALLOUT came out as the FAINTEST text on the paper --
+     darkest pixel 148/255 against ordinary prose at 0/255 -- while every link printed
+     BLACK ON A SURVIVING DARK PANEL at 1.26:1. With backgrounds off (Chrome's default)
+     1,832 text elements were under 4.5:1.
+
+     ⚠️ THE CORPUS'S RECURRING DEFECT, REPRODUCED IN THE PRINT LAYER: the two layers that
+     came out faintest are the two that carry the caveats.
+
+     ⚠️ WHO IT REACHED, MEASURED RATHER THAN ASSUMED. An earlier version of this comment said
+     it hit readers who never touched the toggle, because `:root:not([data-theme='light'])`
+     applies the dark palette whenever the OS is dark. ⚠️ THAT IS WRONG, and a commit gate
+     caught it. Chrome renders the PRINT output with a LIGHT preferred colour scheme: a probe
+     printed under `--force-dark-mode` reports `PRINTMEDIA-YES` but `SCREEN-DARK-NO` and
+     `PRINT+DARK-NO`, so `@media (prefers-color-scheme: dark)` never matches while printing.
+     `theme-init.js` sets `data-theme` ONLY from localStorage. So the population affected was
+     readers who had EXPLICITLY CHOSEN dark in the toggle -- the `:root[data-theme='dark']`
+     rule at the top of this file, which is not inside a media query.
+     ⚠️ Measured in Chrome 152 on macOS only. Safari and Firefox are untested, and if either
+     honours prefers-color-scheme while printing the wider claim becomes true there.
+
+     CAUSE: the block below forces `background:#fff; color:#000` on html/body only. It never
+     re-declared the PALETTE, so `:root[data-theme='dark']` and the prefers-color-scheme rule
+     stayed in force for every descendant using var(--text-muted), var(--text), var(--bg-raised).
+
+     ⚠️ The shipped PDFs in dist/downloads/ were never affected -- build-pdf.mjs prints from a
+     fresh Chrome with no localStorage. This only ever hit a reader pressing Cmd-P.
+
+     So: re-declare the light palette here, and let the whole custom-property cascade be light
+     regardless of data-theme or prefers-color-scheme. Keep this list in sync with :root above.
+
+     ⚠️⚠️ THE SELECTOR IS `:root, :root[data-theme]` AND NOT BARE `:root`, AND THAT IS THE WHOLE
+     FIX. A bare `:root` is specificity (0,0,1); `:root[data-theme='dark']` at line 91 is (0,1,1)
+     and BEATS IT. The first version of this block used a bare `:root`, so every one of the 29
+     declarations below LOST to the dark theme and the block did nothing for the layers it was
+     written to repair -- the facts blocks and the callouts, which resolve through
+     var(--bg-raised) and var(--text-muted).
+
+     ⚠️ IT LOOKED FIXED, and that is why this comment is long. `html, body` below forces
+     background and colour DIRECTLY with !important, so body prose printed black-on-white and the
+     page looked repaired. Only the var()-driven layers stayed dark. The tell was the page margin
+     printing dark, because `color-scheme` was losing the same way and the UA paints the canvas
+     from it.
+
+     ⚠️ MEASURED, NOT INFERRED: rendering the built page to PDF with data-theme="dark" showed a
+     white content box inside a (18,18,18) margin band. A CSS-level check cannot see this -- the
+     declarations are all present and correct, they are simply outranked. */
+  :root,
+  :root[data-theme] {
+    color-scheme: light;
+
+  --bg: #fbfbfa;
+  --bg-raised: #ffffff;
+  --bg-sunken: #f1f1ef;
+  --bg-inset: #e9e9e5;
+  --text: #1b1c1e;
+  --text-muted: #5b5f66;
+  --text-faint: #686d75;
+  --border: #dedddc;
+  --border-strong: #c3c2c0;
+  --accent: #0f5a8f;
+  --accent-hover: #0b4470;
+  --accent-soft: #e4f0f8;
+  --warn: #9a4a06;
+  --warn-bg: #fdf3e7;
+  --warn-border: #e8a562;
+  --note: #2c5b3f;
+  --note-bg: #edf5ef;
+  --note-border: #9dc3ac;
+  --verify: #4a4487;
+  --verify-bg: #f0eff8;
+  --verify-border: #a9a4d0;
+  --measure: 70ch;
+  --sidebar-w: 17.5rem;
+  --toc-w: 15rem;
+  --header-h: 3.5rem;
+  --player-h: 0rem;
+  --radius: 6px;
+  --font-body: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  }
+
   /* Chrome's default header/footer are switched off by the --no-header flag;
      these are the on-page furniture that only makes sense on the web. */
   .skip-link,
@@ -2125,7 +2209,7 @@ figcaption .warn-inline {
   .heading-anchor,
   .site-footer__links,
   .theme-toggle,
-  .prev-next,
+  .prevnext,
   .audio-player {
     display: none !important;
   }
