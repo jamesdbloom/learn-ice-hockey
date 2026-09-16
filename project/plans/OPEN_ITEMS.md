@@ -531,22 +531,48 @@ would not have been seen.**
   and the sibling documents**, which is the one method that has ever caught this
   class. **Acceptance:** each HOLDS is confirmed against the README and its
   siblings, or reclassified. ⚠️ **Cheap, and it is where the next false one is.**
-- [ ] ⚠️⚠️ **THE `no-X-exists` FAMILY — roughly 35 of the 70, the single biggest
-  block, and UNTESTED.** Claims about the coaching and analytics literature: *"no
-  published count ranks plays by frequency"*, *"nobody has counted cycle turnovers
-  by cause"*, *"no published study codes penalty motive"*, Valiquette's percentages
-  *"uncheckable"*, the weighted-puck passing measurement. ⚠️ **No network search was
-  run and NO VERDICT IS REPORTED ON ANY OF THEM — deliberately.** **These have no
-  rulebook behind them, which is exactly why they have survived: nobody can falsify
-  them cheaply.** Needs a dedicated agent **with search**, and a brief that says
-  ⚠️ ***record what you searched, not that it held*** — the style guide is explicit
-  that a single-engine HELD is worth almost nothing.
-- [ ] ⚠️ **Selection bias, stated so it is not forgotten: 17 of 18 holding does NOT
-  mean the class is clean.** It means **the ones checkable offline were the ones
-  checked.** The 35 above are the ones with nothing to check against. **See the
+- [x] **THE `no-X-exists` FAMILY — TESTED 16 September, with search.** 11 of the
+  ~35 tested groups (covering roughly 23 individual flagged lines via testing a
+  repeated pattern once for every instance it covers), **ALL ELEVEN HELD, ZERO
+  FALSE.** ⚠️ **Read the method before trusting the verdicts: for several the
+  agent leaned on the document's OWN Sources trailer as strong prior evidence
+  without independently re-fetching the underlying study itself** (e.g.
+  `game_management.md:1037`'s four cited studies on penalty type/rate — the
+  strongest-evidenced disclosure in the set, confirmed but not re-verified from
+  scratch). **A single search per claim, even across 2-3 query variants, is not
+  proof of absence** — the style guide's caution about a single-engine HELD
+  applies doubly to a single-TOOL-CALL hold.
+  ⚠️ **One genuine near-miss, flagged for the owning documents, NOT a repair:**
+  `neutral_zone_systems.md:114` and `defending_the_rush.md:767` disclaim that
+  *"no public data classifies odd-man rushes by the cause"* (the five named
+  coaching mistakes — a blue-line turn-back, an E-W pass, a low pinch, etc).
+  **Real analytics work classifies rush GOALS by ZONE OF ORIGIN** (defensive-zone
+  exit vs. neutral-zone turnover vs. counter-attack) — a coarser grain than the
+  corpus's claim, and the agent could not trace the headline percentages to a
+  named author, publication or methodology that would clear this corpus's own
+  evidentiary bar on a follow-up search. **Close enough that a careless future
+  restatement could conflate the two** — worth a direct look by whoever next
+  touches those two files, not urgent.
+  ⚠️ **12+ of the ~35 remain genuinely UNTESTED** — deliberately not attempted
+  under "depth beats coverage," and the agent said explicitly: **treat them as
+  unknown, not as cleared by resemblance to a tested neighbour.** Untested:
+  `breakouts.md:211,706,767`, `zone_entries.md:623`,
+  `on_ice_communication.md:128`, `goaltender.md:723`,
+  `puck_handling.md:49,112,113`, `skating.md:831`, `game_management.md:396`.
+  **No file needs a repair routed — every tested disclosure held.**
+- [ ] ⚠️ **Selection bias, stated so it is not forgotten: 17 of 18 rulebook
+  disclosures holding, and 11 of 11 literature disclosures holding, does NOT
+  mean the class is clean.** It means **the ones tested — offline against a
+  rulebook, or via web search — were the ones checked.** 12+ of the literature
+  disclosures remain genuinely untested, and every disclosure outside the facts
+  layer (538 body-layer, 27 unvoiced) is untouched by either pass. **See the
   style guide's *"SIX OF FIFTEEN IS NOT A BASE RATE"*.**
-- [ ] **Untested and deliberately skipped:** `content/technique/shooting.md:449`
-  and `:566` — the file went modified mid-session under another agent.
+- [x] **`content/technique/shooting.md:449` — TESTED 16 September, HOLDS.**
+  The claim that no source this document has searched prices a screened/blind
+  shot's value against a sighted one — a web search found only that PUBLIC
+  expected-goals models lack a screen/sightline feature at all, corroborating
+  rather than refuting the disclosure. `:566` remains untested — it was not in
+  the set the later agent worked from.
 - [ ] ⚠️ **A completeness gap found while testing, NOT a false disclosure.**
   `forechecking_systems.md:207` and `offensive_zone_play.md:810` say the books
   *"do not count [charging strides] alike — Hockey Canada 7.4 two or more, USA
@@ -776,6 +802,27 @@ had drifted.**
 
 ⚠️ **RUN THE TOOL. These figures are a snapshot and the corpus is being repaired
 underneath them.**
+
+⚠️⚠️ **UPDATE 16 September — six more documents worked, all clean.** Repaired:
+`foundation/rules_primer.md` (106→76 flagged, 30 repaired), `positions/goaltender.md`
+(29→24), `positions/defender.md` (12, unchanged — all confirmed benign or
+wrong-occurrence false positives), `positions/winger.md` (5→5, contents changed —
+2 genuine restorations), `systems/special_teams.md` (25→20), `systems/faceoffs.md`
+(9→7), `systems/defending_the_rush.md` (12→3), `systems/zone_entries.md` (16→11).
+**Full per-file shape tables, false-positive lists and the meaning-changing
+restorations are in
+[`../reviews/round_81_the_flattened_parallel_2026-09-16.md`](../reviews/round_81_the_flattened_parallel_2026-09-16.md).**
+⚠️ **The same "enforced exclusively... but may be subject to a Coach's
+Challenge / Video Review" qualifier omission, first found in `rules_primer.md`
+and left as an open finding there (three sites, not fixed — a content decision
+about whether to propagate, not a quote-drift one), turned up INDEPENDENTLY in
+`winger.md`'s IIHF Rule 69 quotation and WAS fixed there** (two sites) **because
+in that document it had genuine practical stakes: the corpus told a winger the
+on-ice interference call was final, when the rule it quotes says it is
+reviewable.** ⚠️ **Still open: `positions/center.md`, `technique/shooting.md`
+(partially touched by the age-token wave only), and every document not in the
+list above.** `uk_rules.md` and `body_contact_and_battles.md`'s original
+figures below are UNVERIFIED against today's state — re-run before trusting them.
 
 - [ ] **Start here — the instance a commit gate named, verified to the character.**
   `uk_rules.md:502` quotes USA Hockey **304(g)** as *"all players, including
@@ -1054,13 +1101,22 @@ mid-round with a `rate_limit` API error on the Opus model. **What was verified
 before the interruption is recorded below and is solid — checked against the
 gates after the fact.** What was NOT reached:
 
-- [ ] ⚠️ **`positions/goaltender.md`, `defender.md`, `winger.md` — the
-  `rules-verifier` dispatched on all four files DIED BEFORE EDITING ANY OF THEM.**
-  `git status` confirms zero changes to these three. **The CARHA census for these
-  files (22/5/15/11 occurrences respectively) was never run by that agent** — its
-  last message before dying was *"Now the style guide, and in parallel the CARHA
-  counts."* **Re-dispatch when quota allows**, with this record and the corrections
-  below carried forward.
+- [x] **`positions/goaltender.md`, `defender.md`, `winger.md` — RE-DISPATCHED
+  16 September on the Sonnet model (the Opus weekly quota stayed exhausted) and
+  COMPLETED.** Independently re-derived CARHA census: 22 / 5 / 11 (the earlier
+  "15" for `winger.md` belonged to `center.md`, already fixed). **Full table of
+  every CARHA site in all three files, tested against `sources/carha.txt` and the
+  matching book, is in
+  [`../reviews/round_81_the_flattened_parallel_2026-09-16.md`](../reviews/round_81_the_flattened_parallel_2026-09-16.md).**
+  Summary: `goaltender.md` and `winger.md` — every CARHA parallel already CORRECT,
+  none needed repair. `defender.md` had the genuine gap: CARHA's freeze
+  restriction was cited only via 58(b) (location-conditioned), with no citation
+  for CARHA's own **location-free** equivalent, 61(b) — the same shape already
+  fixed in `special_teams.md:322`. **Fixed at all four sites** (facts block,
+  body blockquote, Key Takeaways, Sources trailer); new `Rule:` fact measured
+  188/300 chars, block now 8/11 facts. **No book was removed from any list.**
+  `goaltender.md:975`'s previously-reported-not-verified CARHA peacemaker claim
+  is now CONFIRMED against CARHA 37(d) — correct, no fix needed.
 - [x] **`positions/center.md:613` and its body sentence — fixed by the coordinator
   directly**, because the agent tasked with it (a different one, testing
   disclosures) died before reaching this file. See Workstream 2B for the
@@ -1072,11 +1128,24 @@ gates after the fact.** What was NOT reached:
 - [x] **`systems/faceoffs.md:882` and `systems/special_teams.md:322` — FIXED**,
   by the agent holding those two files, which finished before the rate limit hit.
   See the verified text below.
-- [ ] ⚠️ **Two reported-not-verified hits from that agent's tight sweep are still
-  open: `positions/center.md:449` ("CARHA 57(c) writes the same permission in
-  near-iden…") and `positions/goaltender.md:975` ("and so does CARHA's own
-  goalkeeper rule").** `goaltender.md:1425` was also flagged but sits in a Sources
-  trailer — check whether it is voiced at all before ranking it.
+- [x] **`positions/center.md:449` — CHECKED AND HOLDS.** *"CARHA 57(c) writes
+  the same permission in near-identical words"* to USA Hockey 613(d). Read both
+  on disk: CARHA 57(c) — *"the official may order them replaced at that face-off
+  by any player on the ice"*; USA Hockey 613(d) — *"may order them replaced for
+  that face-off by any teammate then on the ice"*. **The wording differs (`at`
+  vs `for`, `any player` vs `any teammate then`) but the substance is
+  identical — official's discretion, replacement drawn from players on the
+  ice — and the sentence says *"near-identical"*, not identical, which is the
+  accurate hedge.** No fix needed. Closed rather than left open for a future
+  round to re-check.
+- [x] **`positions/goaltender.md:975` — CHECKED AND HOLDS.** *"And so does
+  CARHA's own goalkeeper rule"* verified against CARHA 37(d)
+  (`sources/carha.txt:1802-1805`): *"When a goalkeeper leaves the goal crease to
+  join in a fight, act as a peacemaker, or take part in another fight during the
+  same stoppage of play, they shall receive a Game Misconduct penalty…"* — CARHA's
+  goalkeeper rule does eject a peacemaker, matching the claim. No fix needed.
+  `goaltender.md:1425` was also flagged but sits in a Sources trailer, unread by
+  this pass — still open; check whether it is voiced at all before ranking it.
 
 ⚠️⚠️ **THE SHAPE: a fifth book joined to another book's rule by a connective —
 *"likewise"*, *"the same"*, *"both books"*, *"all four books"*, *"as well"*,

@@ -497,3 +497,152 @@ file, and nothing except a full re-read of every occurrence would find that.**
 This was found by grepping the specific claim shape across every file the
 interrupted agents had touched, not by trusting either agent's own "done" report
 — **neither agent got the chance to file one.**
+
+---
+
+## 12. The `no-X-exists` literature disclosures — tested with search, 11 of 11 held
+
+Following the facts-layer disclosure break in §7, the untested literature block
+(claims about coaching/analytics studies rather than rulebooks — roughly 35 of
+the 70 facts-layer disclosures, the biggest single block) was tested with actual
+web search for the first time. **11 of 11 tested groups held, covering roughly 23
+of the ~35 flagged lines** via testing a repeated pattern once for every instance
+it covers. **Zero false.**
+
+⚠️ **The strongest-evidenced disclosure in the corpus was confirmed in passing:**
+`game_management.md:1037` already cites four real studies on penalty type and
+rate (Gilbert & Trudel; McFaul et al.; Kirker, Tenenbaum & Mattson; Régnier et
+al.) and explicitly says none of them measures *motive* — the specific thing the
+disclosure disclaims. Valiquette's uncheckable percentages were confirmed by
+**fetching the source PDF directly**: it shows the figures as slides with no
+methodology, sample size, or coding rules published anywhere.
+
+⚠️ **One genuine near-miss, flagged and NOT repaired.** `neutral_zone_systems.md`
+and `defending_the_rush.md` disclaim that no public data classifies odd-man
+rushes by the coaching-named cause (a blue-line turn-back, an E-W pass, a low
+pinch). Real analytics work classifies rush **goals** by **zone of origin**
+(defensive-zone exit vs. neutral-zone turnover vs. counter-attack) — a coarser
+grain than the corpus's claim, and the headline percentages found could not be
+traced to a named author, publication or methodology that would clear this
+corpus's own evidentiary bar. **Close enough that a careless future restatement
+could conflate the two.**
+
+⚠️ **A caveat on method, stated by the testing agent against its own result:**
+several holds leaned on a document's own Sources trailer as strong prior
+evidence — already-cited, already-quoted text treated as reliable — **without
+independently re-fetching the underlying study.** That is weaker than a
+from-scratch verification, and it is named here so a future pass knows which
+holds were checked at that lighter weight.
+
+**12+ of the ~35 literature disclosures remain genuinely untested**, and the
+agent was explicit: treat them as unknown, not as cleared by resemblance to a
+tested neighbour. The 538 body-layer and 27 unvoiced disclosures — outside the
+facts layer entirely — are untouched by either this pass or the earlier one.
+
+⚠️ **Read together with §7, the picture is now: two different disclosure
+sub-classes, tested by two different methods, both came back mostly clean** —
+rulebook negatives (17/18) via primary-text search, literature negatives (11/11)
+via web search. **The one confirmed false disclosure in either pass was a
+propagation failure**, not a sourcing failure: a question the corpus had already
+answered elsewhere, in a document nobody cross-checked against. That remains the
+most likely shape for the next one, in both sub-classes.
+
+---
+
+## 13. Re-dispatched on Sonnet after the Opus quota stayed exhausted — both waves completed clean
+
+Two agents were re-dispatched with an explicit Sonnet model override, since the
+Opus weekly quota (resets 20 September) did not recover mid-session. Both
+completed without incident; their file sets were disjoint from each other and
+from the earlier, interrupted Opus agents.
+
+### CARHA verification — `goaltender.md`, `defender.md`, `winger.md`
+
+Independently re-derived the CARHA census (22 / 5 / 11) rather than trusting the
+brief's figures, and found the brief's `winger.md` count of 15 was actually
+`center.md`'s — corrected before use. Every CARHA parallel in `goaltender.md`
+and `winger.md` was tested against `sources/carha.txt` and the matching book and
+found **already correct** — including the wave-off/touch-condition parity at
+CARHA 65(f)/(g)(2), the one-word-different goaltender rule at CARHA
+Note 2/59(a) vs. Hockey Canada 7.10(d), and the peacemaker ejection at CARHA
+37(d) (previously reported-not-verified, now confirmed).
+
+`defender.md` had the genuine gap, the same shape as the already-fixed
+`special_teams.md:322`: CARHA's freeze restriction was cited only via 58(b)
+(conditioned on the puck being behind the goal line), with no citation for
+CARHA's own location-free equivalent, 61(b) — *"deliberately holds the puck and
+in the opinion of the Referee, is causing an unnecessary stoppage of
+play"* (`sources/carha.txt:2938-2940`). Fixed at all four sites the claim
+appears (facts block, body blockquote, Key Takeaways, Sources trailer); the new
+`Rule:` fact measured 188/300 chars in a block now at 8/11 facts. No book was
+removed from any list in either file.
+
+Also run, per an added task: `check_quote_drift.py` on the same three files.
+`goaltender.md` 29→24, `winger.md` 5 flagged both before and after but with
+different content (2 genuine restorations replacing 2 that no longer flag,
+since the fix count and false-positive count moved independently). Four
+confirmed wrong-occurrence false positives — the tool matching Hockey Canada
+Interpretation 3 clause iv (which continues) when the corpus correctly quotes
+clause v (which genuinely ends there), twice, and a USA Hockey Rule 603
+near-duplicate line once — none required a corpus edit.
+
+**Five genuine meaning-changing restorations**, all confirmed by reading the
+cited clause in full before touching anything: a Hockey Canada 8.3(a) snow rule
+that had dropped *"in lieu of the Minor penalty or Penalty Shot"*, disguising
+whether an awarded goal replaces or stacks with the other remedies; a Hockey
+Canada 11.1(e) Note that had dropped a permission the parallel sentence two
+clauses earlier already quotes in full; and, with real practical stakes, the
+IIHF Rule 69 quotation in `winger.md` (two sites) that told a winger an on-ice
+interference call was final when the rule itself says it is reviewable — the
+same "enforced exclusively... but may be subject to Video Review or a Coach's
+Challenge" qualifier flagged as an open, unresolved finding in `rules_primer.md`
+in §10 above. Here it had a reader-facing consequence and was fixed; there it
+was left as a cross-document propagation decision. Both calls are recorded so
+neither reads as inconsistent with the other.
+
+### Quote-drift wave two — `special_teams.md`, `faceoffs.md`, `defending_the_rush.md`, `zone_entries.md`
+
+21 repairs across four files, all confirmed clean by whole-file diff. 18 were
+punctuation repositioned outside the quote marks with nothing hidden — the
+source's continuation in each case was an unrelated enumerated sub-clause, a
+bare cross-reference, or a Note already quoted separately in the same passage.
+Three restored genuine dropped substance: Hockey Canada 4.11(a)(i)'s
+penalty-shot criterion had silently dropped *", or fouled by the goaltender"*
+(cross-checked against `risk_management.md`, which already carries the clause
+in full and was left untouched — not owned this wave); USA Hockey 406(a) had
+dropped *"as a result of the infraction"*, a real scope qualifier
+(`special_teams.md` already quotes the same clause in full — brought into
+line); and IIHF Rule 83.1's on-side test, quoted as an explicit "reads in
+full" block, had dropped its own closing clause, *"for the purpose of the
+'off-side' rule"*.
+
+Zero wrong-occurrence false positives in this wave — every ADDED-shape hit's
+citation was checked against the primary source at the stated rule number and
+matched correctly. All four documents already mix the `[x]`-disclosed
+convention with bare lowered initials, so per the established precedent (first
+applied to `rules_primer.md`), all CASE-shape hits were left uniformly rather
+than partially swept.
+
+### A transient facts-count discrepancy, explained rather than chased
+
+Mid-round, `check_facts.py` reported 5620 facts where the previous commit's
+gate run had shown 5619. This was not investigated as a live defect: both
+agents were running concurrently, and `defender.md`'s new fact (the CARHA 61(b)
+addition) landed between the two checks. Per the standing warning that a
+checker run while agents are live proves nothing about a file mid-edit, the
+number was left alone and re-verified only after both agents reported
+complete — where it confirmed correctly at 5620, matching the one fact that was
+actually added.
+
+### Full gate suite, after both waves and the diagram rebuild
+
+`check_links` (exit 0), `check_facts` (837 blocks / 5620 facts, all conform),
+`check_absolutes` (39 documents + 408 caption/describe units, clean),
+`check_geometry` (77 assertions, agrees with `rink_map.md`), `check_secrets`
+(338 tracked files, no findings), `check_tables --near` (3 dropped, 46 read
+aloud, 9 near a limit — unchanged), `check_plan_rows` (every quoted assertion
+in an open row still appears in the file it names). `check_zones` was also run
+against a fresh `build-diagrams.mjs` output (204/204 rendered, exit 0) following
+the earlier diagram-caption wave; its worklist output (shared spans, mirrored
+regions) shows nothing inconsistent with what that wave's own agent already
+verified by hand.
