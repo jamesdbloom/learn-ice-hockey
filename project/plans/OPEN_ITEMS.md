@@ -689,9 +689,28 @@ waived**.
   was implicitly not needed (no facts blocks touched) but never explicitly
   declared out of scope — the exact silent-dimension failure mode `CLAUDE.md`
   warns about**, worth a one-line addendum to the review record rather than a
-  new pass. **Site-reviewer was NOT run** — self-acknowledged in the record's
-  own "what this method could not have found." **Genuinely open**: a
-  site-reviewer pass on the 36 new Key Focus sections has never happened.
+  new pass. **Site-reviewer: CLOSED, 17 September.** Full build (51 pages,
+  Pagefind indexed, all links resolving), 9 documents across all 7 content
+  families checked across viewport/theme combinations, console clean, no
+  off-origin requests, theme toggle genuinely persists via `localStorage`,
+  ⚠️-prefixed safety callouts inside Key Focus render as a distinct
+  bordered/tinted panel with the icon retained (not colour-alone). **One
+  Minor found:** three documents (`rules_primer.md`, `body_contact_and_battles.md`,
+  `getting_started.md`) place a pre-existing intro heading *before* `## Key
+  focus` in their Markdown source, unlike the other 36 where it is the first
+  section — a content-ordering inconsistency, not a rendering defect. Routed
+  to a fix-and-review pair below.
+- [x] **DECIDED AND CLOSED, 17 September — not a defect.** Read all three
+  intro headings directly: `rules_primer.md`'s "Hockey has more than one rule
+  book", `body_contact_and_battles.md`'s "Which book you are under decides
+  what is legal — and the boards do not care", and `getting_started.md`'s
+  "Hockey is administered locally, but it sits on a national floor" are each
+  that document's load-bearing cardinal-rule/rule-scope statement — exactly
+  the non-negotiable-7 framing ("name the system... find out which yours
+  is") that the Key Focus bullets immediately after then reference. This is
+  the same "orientation content may legitimately precede the highlight
+  section" exception the rollout convention already allows for orientation
+  diagrams, applied to prose. Left as is; no fix needed.
 
 ### Rollout stop/go criteria
 
