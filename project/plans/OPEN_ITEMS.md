@@ -829,15 +829,17 @@ would not have been seen.**
   expected-goals models lack a screen/sightline feature at all, corroborating
   rather than refuting the disclosure. `:566` remains untested — it was not in
   the set the later agent worked from.
-- [ ] ⚠️ **A completeness gap found while testing, NOT a false disclosure.**
-  `forechecking_systems.md:207` and `offensive_zone_play.md:810` say the books
-  *"do not count [charging strides] alike — Hockey Canada 7.4 two or more, USA
-  Hockey 607 more than two, IIHF 42.1 'multiple'; the NHL sets no count"*. **CARHA
-  Rule 52 (Note) sets one too:** *"If more than two steps or strides are taken, it
-  shall be considered a charge"*. **The line claims no exhaustiveness, so it is not
-  an error** — but `switching_positions.md:293` treats the set as *"the five
-  books"*, and ⚠️ **CARHA is the adult rec book a reader is most likely to be
-  under.** **Acceptance:** CARHA named, or the asymmetry recorded as deliberate.
+- [x] **CLOSED — already satisfied by Workstream 2G's "charging-strides
+  completeness gap CLOSED" update.** `forechecking_systems.md` and
+  `offensive_zone_play.md` both now name CARHA Rule 52's Note at all 8 sites
+  (facts, body, Common Mistakes, Key Takeaways in each), with "four of the
+  five books" corrected everywhere that framing appeared. `switching_positions.md`'s
+  *"the five books"* framing was re-checked and confirmed to be about
+  goalkeeper's-equipment (now at `:303`, *"Four of the five books bar a
+  skater from wearing goalkeeper's equipment"*), not charging strides — a
+  different, already-correct comparison — so no asymmetry exists there to
+  record. Verified directly: `grep -c CARHA` returns 5 and 13 hits
+  respectively in the two systems files.
 - [ ] ⚠️ **Two false-falsification traps recorded at `sources/README.md` lines 803
   and 997 — `CE mark` matching *"i-ce mark-ings"*, and the nonsense-URL negative
   control. Name them in the next brief in this class.**
@@ -918,19 +920,20 @@ The two found, both in `rules_primer.md`, both repaired:
   patterns). No further finding beyond the one above — the documents
   sampled already carry correct caveats (e.g. `defending_the_rush.md`:
   "Charging is not two minutes everywhere either").
-- [ ] ⚠️ **FOUR IHUK Rules of Competition URLs are cited in `content/` and NONE is
-  in `project/verification/link_baseline.tsv`** (812 rows, zero matches for any of
-  them). ⚠️ **My earlier row said three — the NIHL 1 & 2 regulation is also
-  missing**, found by a `source-verifier` that fetched all four rather than the
-  one it was asked about. Every other external URL in both documents is baselined.
-  ⚠️⚠️ **AND TWO OF THE FOUR HAVE ALREADY CHANGED UNDER THEIR URLs — BACKWARDS.**
-  Refetched 16 September: NIHL went 325,259 → 542,722 bytes and WNIHL 540,666 →
-  431,890, and **on both the live `ModDate` is EARLIER than the on-disk copy's.**
-  England Ice Hockey **rolled back** to the 26 August originals. **So "compare
-  dates and take the later one" is wrong for this publisher** — a date comparison
-  says the files differ, not which is current. ⚠️ **No corpus quotation is
-  affected; that was checked, not assumed** — both checking-format rows are
-  verbatim in both revisions of both documents. Full detail in `sources/README.md`.
+- [x] ⚠️ **CLOSED — superseded by the row immediately below, which resolves this
+  exact finding.** FOUR IHUK Rules of Competition URLs were cited in `content/`
+  with NONE in `project/verification/link_baseline.tsv` (812 rows, zero matches
+  for any of them). ⚠️ **My earlier row said three — the NIHL 1 & 2 regulation was
+  also missing**, found by a `source-verifier` that fetched all four rather than
+  the one it was asked about. ⚠️⚠️ **AND TWO OF THE FOUR HAD ALREADY CHANGED
+  UNDER THEIR URLs — BACKWARDS.** Refetched 16 September: NIHL went 325,259 →
+  542,722 bytes and WNIHL 540,666 → 431,890, and **on both the live `ModDate`
+  is EARLIER than the on-disk copy's.** England Ice Hockey **rolled back** to
+  the 26 August originals. **So "compare dates and take the later one" is wrong
+  for this publisher** — a date comparison says the files differ, not which is
+  current. ⚠️ **No corpus quotation was affected; that was checked, not
+  assumed** — both checking-format rows are verbatim in both revisions of both
+  documents. Full detail in `sources/README.md`.
 - [x] **CLOSED, 17 September — and the acceptance criteria as originally
   written was WRONG.** *"A deliberate baseline refresh via
   `check_external_links.py --write-baseline`"* cannot add these four rows:
@@ -1606,30 +1609,18 @@ rather than inferred. **Re-read both clauses rather than trusting this row.**
 without naming both books.** ⚠️ **`goaltender.md:522`'s *"four triggers, not one"*
 was checked against the book and is CORRECT — do not "fix" it.**
 
-- [ ] ⚠️ **The INVERSE is the permissive half and no connective reveals it: a book
-  named in the GRANT and given no authority for the LIMIT.** Recorded instance:
-  `systems/special_teams.md:322` names CARHA among books that write no trapezoid —
-  **verified: `trapezoid` and `restricted area` both return 0 against the 173-hit
-  control** — then cites **only USA Hockey and Hockey Canada** for *"not freeze it
-  out there"*. ⚠️ **And the limit as stated looks OVER-SCOPED for CARHA anyway: 58(b)
-  reaches only where *"the puck is behind the goal line"*, and a corner is partly in
-  front of it.** ⚠️⚠️ **THAT OVER-SCOPE READING WAS WRONG AND IS
-  WITHDRAWN.** It said *"CARHA Rule 61(a) is not the answer — it is expressly 'any
-  player except the goalkeeper'"*. **61(a) is not the answer; 61(b) IS.** *"A Minor
-  penalty shall be assessed to a goalkeeper who deliberately holds the puck and in
-  the opinion of the Referee, is causing an unnecessary stoppage of play."* **It
-  carries NO location condition**, so it reaches a corner in front of the goal line
-  where 58(b) does not — corroborated by **Rule 55(a) Note 2**, directing referees
-  to be strict about *"the goalkeeper holding the puck"*.
-  ⚠️ **So the defect at `:322` is SMALLER and DIFFERENT: the line is not
-  over-scoped, it is UNDER-CITED. 61(b) is the citation it is missing.**
-  ⚠️ **The coordinator read 61(a), saw the goalkeeper excluded, and stopped at the
-  sub-clause — the SIBLING-CLAUSE FAILURE THIS WORKSTREAM WAS OPENED TO RECORD,
-  committed in the same hour, by the person recording it.** Found by an agent that
-  did not own the file and checked anyway.
-  **Open, and not to be assumed either way:** whether 61(b)'s *"unnecessary
-  stoppage"* test is narrower **in practice** than 58(b)'s location test. **Routed,
-  with the correction, to the agent holding that file.**
+- [x] **CLOSED — the missing citation is now present at both sites.**
+  `systems/special_teams.md:334` and `:1018` both now cite **CARHA Rules 58(b)
+  and 61(b)** together for the "not freeze it out there" limit (61(b) is the
+  location-free clause — *"deliberately holds the puck and in the opinion of
+  the Referee, is causing an unnecessary stoppage of play"* — that reaches a
+  corner in front of the goal line where 58(b)'s "behind the goal line"
+  condition does not), with the intent-word divergence from USA Hockey 614(c)
+  (no intent word) stated explicitly at both sites. **The narrower question
+  left open above — whether 61(b)'s "unnecessary stoppage" test is in
+  practice narrower than 58(b)'s location test — remains genuinely
+  unanswered** (no CARHA casebook or interpretation exists on disk to settle
+  it) and is not claimed either way in the document.
 - [x] **DONE, 17 September — the full census run, at 28-document scale.**
   21 documents read in full (7 more had already been deeply scrutinized for
   CARHA content earlier the same day); 14 entirely clean, two Majors found
