@@ -1041,15 +1041,20 @@ which found it, verified it, and **deliberately did not close it**.
 repair agent, which fixed the two criticals and four majors and **declined these
 deliberately**, each with a reason.
 
-- [ ] ⚠️ **`:738` — *"The universal rule: stay on the defensive side of the
-  puck."*** ⚠️ **It is the only unhedged *"universal rule"* in `content/`** — the
-  only two other occurrences, both in `body_contact_and_battles.md`, are explicit
-  **denials**. **The facts layer did not inherit it** (`:727` correctly labels it
-  `Never:`). The repair agent's judgement: **it should go** — it is coaching
-  consensus, and this is the corpus contradicting its own register in the one
-  place it says the word straight. ⚠️ **This is the same phrase as the candidate
-  eighth principle in Workstream 1G, and the two decisions should be taken
-  together.**
+- [x] **DONE, 17 September.** Reworded to name what it actually is (the idea
+  underneath the 1-on-1/2-on-1/3-on-2 material above it) and to name its
+  real, already-taught exceptions (a pinch, a neutral-zone step-up,
+  activating into the rush) rather than claiming no exceptions exist. A
+  `content-reviewer` pass caught two real gaps in the first attempt —
+  "a forecheck" was an ungrounded term this document never establishes
+  as something a defenceman does on purpose (fixed to "a neutral-zone
+  step-up," already taught elsewhere in the file), and the facts-block
+  `Never:` line one section above still stated the old unconditional
+  version, unlike every one of its sibling `Never:` facts in the same
+  block, which all embed their real exception inline — fixed to match.
+  **The Workstream 1G worked-example addition to `core_principles.md`
+  Principle 1 is a separate, not-yet-done task** — checked, `core_principles.md`
+  does not yet mention "defensive side of the puck" anywhere.
 - [ ] Two byte-identical `Rule:` facts at `:337` and `:406` **had drifted apart**
   (*"none of the four books caps it"* against *"none of the four caps it"*). The
   agent **re-synchronised them** so a grep finds both copies, and **deliberately
@@ -1067,11 +1072,19 @@ deliberately**, each with a reason.
   `rink_map.md`. The style guide: *"rink dimensions belong to `rink_map.md`. Point,
   do not copy."* The agent left a true claim alone rather than delete it on its own
   judgement. **Owner decision.**
-- [ ] ⚠️ **`site-reviewer` is owed:** two new headings and two new blocks change the
-  in-page structure and the table of contents. ⚠️ **The BUILD has run** — all eleven
-  steps, exit 0, the last resolving 10,747 internal links — **but no browser has
-  been opened.** A commit gate blocked on exactly this distinction, in its own
-  words: *"I could confirm the number; I could not confirm the seeing."*
+- [ ] ⚠️ **Still owed, 17 September — same "count vs. seeing" gap, now for a
+  different reason.** A fresh build ran clean twice (11 steps, exit 0, 53
+  pages / 10,901 internal links resolving) and static analysis of the
+  built HTML confirmed today's `goaltender.md`/`defender.md` structural
+  changes render correctly at the markup level (correct heading nesting,
+  balanced facts-block `dt`/`dd` pairs, the CARHA-updated diagram caption
+  present identically in both the SVG `desc` and the visible
+  `figcaption`, no leaked code fences, one `h1` each, no heading-level
+  skips). **But the Chrome extension was not connected this session**, so
+  none of the four viewport×theme cells, console output, or actual
+  rendered layout were checked — the "seeing" half of this row is still
+  open, now blocked on tooling availability rather than on nobody having
+  tried. Re-run once Chrome is connected.
 - [ ] ⚠️ **The dangling-antecedent class is NOT exhausted.** The repair agent fixed
   a **pre-existing** one that a review of **all 215 facts** did not report. **A
   fact that reads correctly on the page and breaks when voiced alone is invisible
