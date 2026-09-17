@@ -1639,13 +1639,26 @@ across **body, two ` ```facts ` values and Common Mistakes**, inside a round who
 review record covered headings and punctuation. **A repair is new text and new text
 has not been reviewed.**
 
-- [ ] Recast all eight so the age token does not follow a preposition or an
-  article. ⚠️ **Write the ages out rather than the boundary** — the corpus's own
-  worked fix replaced *"below U14"* with *"at U12 and U10"*, which names the same
-  set and voices cleanly. ⚠️ **Do NOT swap the article**: *"an under twelve
-  minor"* reads wrong on the page.
-- [ ] ⚠️ **Render every recast sentence and read it aloud.** These exist only in
-  the spoken layer.
+- [x] **CLOSED, 17 September — re-censused fresh rather than trusting the "eight"
+  figure, and six of the eight had already been fixed by intervening commits.**
+  `body_contact_and_battles.md` and `shooting.md` now consistently read "above
+  **the** U13," which does not trigger the doubling (confirmed by rendering the
+  regex behavior: it only fires directly after a bare preposition/article, not
+  after "the"). No article-based instance (`a U15`, `an U18`) remains in either
+  file. **Two live instances remained, both new content in `rules_primer.md`**
+  not present at the 16 September census (the "Accidentally knocking your own
+  net off" comparison row and its prose): `:145` "below U18 AAA" → "at every
+  level younger than U18 AAA"; `:917` (inside a table already dropped from
+  speech by `check_tables.py`, fixed anyway for page correctness) "Below U18
+  AAA" → "Younger than U18 AAA." Pure paraphrase — no rule scope touched,
+  confirmed by reading the diff directly: neither the quoted rule text (Rule
+  6.1(g), Rule 6.7(d)(i)) nor the category list changed, only the word
+  introducing "categories other than these."
+- [x] **DONE, 17 September.** Both recast sentences were rendered through
+  `scripts/md_to_speech.py`'s `spoken_text()` directly: before ("below U18 AAA"
+  → "below under eighteen AAA," the doubling defect) and after ("younger than
+  U18 AAA" → "younger than under eighteen AAA," clean). The full in-situ
+  paragraph at `:145` was also rendered end-to-end and reads cleanly.
 - [ ] ⚠️ **Two false positives, recorded so nobody "repairs" them:**
   `playing_without_the_puck.md`'s *"625(a) under minors alone"* — the `a` is a
   **sub-clause letter** — and `team_play_and_culture.md`'s *"covered below under
