@@ -234,19 +234,82 @@ reports; `content/foundation/core_principles.md`.
   skill in every position"* — **but its TIMING does not**: a goalie scans between
   plays and on retrievals, never off a live shot. **Acceptance:** if principle 4
   frames that page, the timing qualifier is in the same sentence.
-- [ ] `systems/defensive_zone_coverage.md` has a section headed
-  `## The Universal Principles` containing **seven principles that are not the
-  index's seven**. A framing principle drawn from the index would sit above a
-  different set claiming the same word. **Naming collision, not a wrong
-  principle.** **Acceptance:** the collision is resolved or recorded as harmless.
-- [ ] `foundation/rink_map.md` should probably have **no** framing principle.
-  Principle 5 is the tempting fit and would be wrong: `rink_map.md` *settles what
-  a region is*, and principle 5's five-area ranking is explicitly coaching
-  reasoning. **Framing a definitional document with a hedged ranking inverts the
-  ownership.** **Acceptance:** recorded as "none, and why", per the owner's own
-  instruction that reference material may have none.
+- [x] **DECIDED, 17 September — real collision, low severity, rename needed.**
+  Verified: `defensive_zone_coverage.md:67`'s `## The Universal Principles`
+  heading sits directly above a `​```facts` block of seven DZ-specific facts
+  (Priority/Position/Key/Technique/Action/Rule×3) — content that is correct and
+  unrelated to `core_principles.md`'s seven cross-scenario principles, but
+  **the heading text itself claims the identical name.** A reader or a listener
+  could reasonably believe this section IS the corpus's principles index, or
+  that the two are meant to align. **Nothing factual is wrong; the heading
+  needs renaming** (e.g. to something like *"What Holds Regardless of System"*)
+  so the two concepts stop sharing a name. **Routed as a single-line heading
+  edit for whoever next holds this file — not done here, since renaming inside
+  a live document is a content edit outside the coordinator's role.**
+- [x] **DECIDED, 17 September — `rink_map.md` gets NO framing principle.**
+  Confirmed: Principle 5's whole evidentiary basis is `risk_management.md`'s
+  **hedged, explicitly-coaching-reasoning** five-area ranking (*"a convention
+  rather than a rule"*, one of five areas has a single tracked dataset point,
+  the rest are reasoned, not measured). `rink_map.md`'s job is to **settle what
+  a region IS** — definitional, not evaluative. Framing a definitional document
+  with a hedged ranking inverts which one is the authority. **Recorded as
+  the acceptance condition itself asked: "none, and why."** No further action
+  needed on this row.
 - [ ] **No `source-verifier` has ever refetched `core_principles.md`'s
   citations.** It is now load-bearing for every other page's opener.
+  **Dispatched 17 September — see Workstream 1K below.**
+
+## Workstream 1K: readability release one, restarted after a three-day gap
+
+⚠️⚠️ **THE PRIORITY-ORDER VIOLATION THIS ROW EXISTS TO CORRECT.** This plan's own
+"Priority order" states *"Readability, principles, and dual-audience release
+one"* as **priority 1**, and that *"no lower workstream may delay the first
+workstream unless it is a safety or release gate."* **Nothing in `core_principles.md`,
+the metadata manifest, or the pilot documents has changed since 14 September**
+(verified by `git log` on all three) — three full days and roughly a dozen
+commits went to Workstream 2's rules-accuracy and quote-drift residuals
+instead. ⚠️ **Read charitably, most of that work qualifies as the "safety or
+rules residuals" exception (priority 2) — a flattened cross-book parallel or a
+drifted quotation is a genuine safety-adjacent defect. Read uncharitably, the
+exception swallowed the rule for three days running, and nobody flagged it
+until asked.** **Restored to active status 17 September, on the user's direct
+instruction.**
+
+**Owner:** coordinator for shared site/data; dispatched agents for reviewer
+work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
+
+- [x] **Three of the six coordinator-owed decisions from Workstream 1D
+  resolved directly, 17 September** — see that workstream for the full
+  reasoning: `defensive_zone_coverage.md`'s naming collision (real, low
+  severity, routed as a heading rename), `rink_map.md`'s framing principle
+  (decided: none, and why), and the `goaltender.md`/principle-4 timing
+  mismatch (confirmed real; not yet a live bug since no document currently
+  links a specific numbered principle to itself — recorded as a hard
+  constraint for whoever builds the matrix below).
+- [ ] Dispatched: `source-verifier` refetch of every citation in
+  `core_principles.md` — it is now load-bearing for every other page's
+  opener and has never been independently re-verified.
+- [ ] Dispatched: test the eighth-principle candidate, *"stay on the
+  defensive side of the puck"* (five documents, called *"the universal
+  rule"* by one, *"The Organising Idea"* by another) for promotion —
+  `rules-verifier`, `content-reviewer`, `facts-reviewer` and
+  `safety-reviewer` clearance, or the rejected-candidate log with a reason.
+- [ ] **NOT started, and honestly scoped as needing more than an agent wave:**
+  Workstream 1A's principle-to-corpus matrix across all 39 documents, the
+  transfer audit in at least three contexts per principle, and Workstream
+  1C's task-based usability testing across the six audience strata. ⚠️ **The
+  plan's own acceptance condition names real human participants — "at least
+  one U10 player/parent pair," an older-youth reviewer, an adult beginner,
+  an adult-rec player, a reference reader, a coach.** Agent proxies can draft
+  the matrix and flag transfer failures, but **cannot substitute for the
+  human task-testing this gate requires**, and a proxy result must be labelled
+  as a proxy, per the plan's own working rule. This is the honest limit of
+  what this session can close on its own.
+- [ ] Metadata classification remains at 3 of 39 documents (the two pilots
+  plus the principles index); 36 explicitly `unclassified`, correctly, per
+  the plan's own rule against inferring a safety-relevant label. Expanding
+  this is Workstream 1B/1C-scale work, gated behind the go/no-go this
+  workstream has not yet reached.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
