@@ -782,11 +782,25 @@ would not have been seen.**
 
 - [x] **Test the facts-layer disclosures — 18 of ~70 tested 16 September.** 17
   HOLDS, 1 FALSE at two sites, 0 could-not-establish. **Routed to the file owners.**
-- [ ] ⚠️ **Re-test the seventeen HOLDS for the ROUTING shape only.** They were
-  attacked as searches and survived; **none was checked against `sources/README.md`
-  and the sibling documents**, which is the one method that has ever caught this
-  class. **Acceptance:** each HOLDS is confirmed against the README and its
-  siblings, or reclassified. ⚠️ **Cheap, and it is where the next false one is.**
+- [x] **CLOSED, 17 September — partially completable, and it paid off exactly as
+  predicted.** The original 18 are not individually enumerated anywhere on
+  disk (round 81 narrates a class result, not a manifest), so only 3 of the
+  17 HELD could be located and routing-checked with certainty — all three
+  survive, and two are independently corroborated (not merely un-contradicted)
+  by `sources/README.md` itself. ⚠️ **But the routing method caught a real gap
+  anyway, exactly where the row predicted it would be found — in the ALREADY
+  FALSE one's fix, not in a fresh HOLD.** `center.md`'s "no book states a
+  body-checking age" disclosure was found FALSE and fixed at `:613`/`:626`/`:634`
+  in an earlier round — but the same unscoped false form survives, unrepaired,
+  twice more in the same document (`:665` Common Mistakes, `:735` a numbered
+  coaching point), read aloud in a document whose own body elsewhere states the
+  correct scoped version. Routed to a fix-and-review pair (in progress), not
+  edited by the routing check itself. Full account:
+  [`../reviews/disclosure_routing_retest_2026-09-17.md`](../reviews/disclosure_routing_retest_2026-09-17.md).
+  **The 14 unidentifiable HOLDS remain genuinely un-routing-checked** — the
+  next pass on this class should re-run `check_disclosures.py --layer facts`
+  fresh and route-check that output as a new, honestly-labelled population
+  rather than claiming to have covered "the seventeen."
 - [x] **THE `no-X-exists` FAMILY — TESTED 16 September, with search.** 11 of the
   ~35 tested groups (covering roughly 23 individual flagged lines via testing a
   repeated pattern once for every instance it covers), **ALL ELEVEN HELD, ZERO
