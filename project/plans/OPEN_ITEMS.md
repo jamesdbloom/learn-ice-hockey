@@ -312,7 +312,7 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   the rejected-candidate log entry, and what a future qualified version would
   need are recorded in Workstream 1G below — this row is the dispatch record,
   that one is the decision.
-- [ ] **ADVANCED, 17 September — 25/39 documents now matrixed, up from 10.**
+- [x] **ADVANCED, 17 September — 25/39 documents now matrixed, up from 10.**
   Three more parallel batches (7 systems, 6 off-the-ice + reading-diagrams,
   4 foundation-reference) extended the first tranche's 10-document matrix,
   re-confirmed its headline principle-6 denial-direction finding intact
@@ -331,11 +331,42 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   **14 documents remain unmatrixed: all 5 hockey-iq, all 5 technique,
   `defending_the_rush.md`, and the two pilots** (spot-checked against the
   rollout's specific defect shapes, not yet run through the full
-  seven-principle matrix). ⚠️ **The transfer-audit acceptance condition —
-  "at least three contexts, including a position, a system, and a
-  technique/Hockey-IQ document" — is still only two-thirds met: no technique
-  or hockey-iq document has been matrixed in any of the four batches to
-  date.** That is the next tranche's priority.
+  seven-principle matrix).
+- [x] **DONE, 17 September — full 39/39 matrix coverage reached.** Three
+  more parallel batches (5 hockey-iq, 5 technique, plus
+  `defending_the_rush.md` and a full matrix on both pilots) closed the
+  remaining 14 documents. **The transfer-audit acceptance condition — "at
+  least three contexts, including a position, a system, and a
+  technique/Hockey-IQ document" — is now fully met.** Full account,
+  including two new Major findings (`getting_started.md`'s beginner
+  pointers for Principles 3/4/7 lead to content that isn't there, worst for
+  the Principle 7 boards-safety pointer explicitly labelled "before a first
+  session"; `defending_the_rush.md` is the corpus's richest Principle-6
+  evidence and isn't cited, and has a Principle-7 gap flagged for
+  `safety-reviewer` judgement) and one confirmed-clean result
+  (`body_contact_and_battles.md` already bidirectionally owns Principles 2
+  and 7 — not a linking candidate, already the linked document):
+  [`../reviews/principle_matrix_complete_2026-09-17.md`](../reviews/principle_matrix_complete_2026-09-17.md).
+- [ ] ⚠️ **`getting_started.md`'s "New to this" pointers for Principles 3, 4
+  and 7 lead a beginner to content that isn't there** — confirmed by direct
+  reading and targeted grep; none of the off-puck-states (P3),
+  scanning/looking (P4), or boards-contact safety posture (P7) vocabulary
+  appears anywhere in the document. Worst for P7: `core_principles.md`
+  labels that specific pointer "before a first session," and this is the
+  one principle it says has no realistic alternative. **Acceptance:** either
+  new content in `getting_started.md` (the `switching_positions.md:53`
+  honest-pointer model, or a full passage) or the three links re-pointed at
+  sections that already carry the content — an editorial choice, not a
+  mechanical fix. The Principle 7 route needs `safety-reviewer` sign-off
+  before it ships, per standing convention for contact-injury text.
+- [ ] `defending_the_rush.md`'s 2-on-1/1-on-2/3-on-2/3-on-1 sections are the
+  corpus's most developed Principle-6 denial-direction evidence and aren't
+  cited in `core_principles.md` §6 alongside `forechecking_systems.md` and
+  `special_teams.md`. Citation-completeness gap, not a wrong statement — add
+  next time that citation list is revisited. The same document also has no
+  Principle-7 content despite thematic adjacency (racing an opponent to a
+  loose puck near the boards); flag to `safety-reviewer` for a judgement on
+  whether that narrow gap needs filling.
   ⚠️ **The plan's own acceptance condition for the WIDER release (Workstream
   1C's task-based usability testing) names real human participants — "at
   least one U10 player/parent pair," an older-youth reviewer, an adult
