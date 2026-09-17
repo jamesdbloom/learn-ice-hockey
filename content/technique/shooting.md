@@ -282,7 +282,7 @@ A tip (or deflection) is redirecting a shot from a teammate as it passes you, us
 ```facts
 Position: Outside the blue paint, in the goalie's eyeline, not touching them — that is the legal and valuable screen
 Rule: Screening from outside the crease without contact is legal — 69.1's disallowing sentence is keyed to an attacker who "enters the goal crease", 69.3's no-contact screen ground to a significant position within it, and 69.4, for outside it, reaches contact only (NHL and IIHF Rule 69)
-Rule: Contact you initiate with a goalkeeper who is in their crease costs your team the goal, incidental or otherwise and whatever your own position was — the IIHF writes "a relevant contact" where the NHL writes contact (NHL and IIHF Rule 69.3)
+Rule: Contact you initiate with a goalkeeper who is in their crease costs your team the goal outside a rebound or loose-puck scramble, whatever your own position was — the IIHF writes "a relevant contact" where the NHL writes contact (NHL and IIHF Rule 69.3; the 69.7 exception is next)
 Rule: Rule 69.7 is the exception and it is narrow — incidental contact is permitted only where a goalkeeper and an attacker are simultaneously playing a rebound or a loose puck, inside or outside the crease, and only short of driving the goalkeeper in (NHL and IIHF 69.7)
 Rule: Even in a scramble the goal dies where a goalkeeper is pushed into the net together with the puck, by an attacking player, after making a stop — all three of those have to hold — and penalties may follow (NHL and IIHF 69.7)
 Rule: A goal disallowed for pushing the goalkeeper in has one relief — where the Referee judges that a defending player pushed or fouled you into them, it "can be permitted", which is judgement and not entitlement (NHL and IIHF 69.7)
@@ -451,7 +451,7 @@ Position: Screen in the sightline, feet just outside the blue paint, stick on th
 Rule: A no-contact screen loses the goal for where you stood only from inside the crease — NHL and IIHF 69.1's disallowing sentence reaches an attacker who "enters the goal crease", 69.3's screen ground a significant position within it, and 69.4, for outside it, is contact only
 Rule: Both books' tables allow the planted screen "on the crease line or outside the goal crease" obstructing the goalie's vision — "Goal is allowed" (NHL Table 14, IIHF 2025/26 Table 16, Situation 5 E) — an appendix table, not rule text; and IIHF Rule 1.7 puts the line in the crease, so stay off the line
 Rule: The allowed planted screen is not a safe harbour — with no contact at all, NHL and IIHF 69.3 wants a substantial part of your body in the crease for more than an instant, obstructing vision and impairing defending; the IIHF's own Situation 69.1 disallows a crease screen flat
-Rule: NHL and IIHF Rule 69.3 voids the goal for any contact you initiate with a goalkeeper who is in their crease, incidental or otherwise, and whatever your own position was
+Rule: NHL and IIHF Rule 69.3 voids the goal for any contact you initiate with a goalkeeper who is in their crease outside a rebound or loose-puck scramble, whatever your own position was — the 69.7 exception is next
 Rule: NHL and IIHF Rule 69.7 permits incidental contact in a rebound or loose-puck scramble, but not where you push the goalkeeper into the net together with the puck after making a stop — unless a defending player pushed or fouled you into them, when the Referee can permit the goal
 Rule: Situation 6B in both books is crowding, not screening — the goalie initiates contact to establish position, you do not vacate, and the referee assesses a penalty, a minor in the NHL's example; that player "runs the risk of 'bad things' happening by being in the crease"
 Action: Say who you are shooting at, then shoot through your own net-front teammate's legs from the point, knee height or below — the lane past them is also the sightline they are blocking
@@ -677,7 +677,7 @@ Rule: On a penalty shot or shootout attempt no goal counts on a rebound of any k
 Rule: The spin-o-rama is not permitted on a penalty shot or shootout attempt — a 360° turn completed on the approach has the shot stopped by the referee, and no goal (NHL Rule 24)
 Rule: The lacrosse-style move is permitted on a penalty shot or shootout attempt while the puck stays below shoulder height and the crossbar (NHL Rule 24)
 Rule: If the goalie leaves the crease before you touch the puck on a penalty shot or shootout attempt and you do not score, you shoot again (NHL Rule 24)
-Rule: Three shooters then sudden death, and nobody shoots twice until everyone eligible has (NHL Rule 84.4)
+Rule: Under NHL Rule 84.4: three shooters then sudden death, nobody shoots twice until everyone eligible has — check your own book, because British rule sets allow repeat shooters
 Rule: British shootouts are three shooters, not the IIHF's five, and under the current 2026-27 In-House Rules every competition they cover lets the same player go again — NIHL 1 and 2 only after the first three shots (IHUK In-House Rules 2026-27, Appendix 1)
 Rule: Neither the penalty-shot rule nor the shootout rule sets a time limit on the approach, so any "you have N seconds" is folklore (NHL Rules 24 and 84.4)
 Convention: Rec and youth shootouts often run house rules — ask first, a shorter approach pushes the read toward shooting

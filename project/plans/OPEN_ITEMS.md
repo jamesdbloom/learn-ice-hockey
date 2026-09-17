@@ -1403,40 +1403,29 @@ the plan holds no completed items, and a line number is a figure.**
 **Owner:** coordinator assigns one agent. **Found by:** the `rules-verifier` sent
 at `defender.md`, which followed the claims into their sibling.
 
-- [ ] ⚠️ **`goaltender.md:395` and `:951` quote USA Hockey 618(c) accurately and
-  omit the Casebook's definition of the operative word.** Casebook **Situation 9**:
-  ***"'Forward' is considered to be anywhere in between two imaginary lines, one at
-  each goal post, extending to the nearest end zone face-off spot."*** And
-  **Situation 8** confirms the prohibited act is *"catching the puck in their
-  glove, closing their hand and then propelling it to a teammate"*.
-  ⚠️ **So USA Hockey's *"forward"* is a CONE between the posts out to the nearest
-  end-zone faceoff spot — far narrower than *"forward towards their opponent's
-  goal"* reads on its face — and a side or rear throw is expressly permitted with
-  NO STOPPAGE AT ALL.** Neither string appears anywhere in the document.
-  **Acceptance:** the definition travels with the rule. Requires `safety-reviewer`,
-  because it is the definition of the word that decides whether the play is legal.
-  ⚠️ **And note the extraction trap that hides it:** `usah.txt` splits 618(c)
-  between *"first played by a"* and *"teammate"* with a running header, so a phrase
-  grep for *"first played by a teammate"* returns **zero from an intact rule**.
-- [ ] `goaltender.md:550` reproduces the NHL 27.8 quotation *"six feet from either
-  goal post"*. **The source reads *"lines that begin six feet (6') from either goal
-  post"*** — `(6')` elided with no ellipsis and no bracket. Same defect as
-  `defender.md:121`/`:130`; fix together.
-- [ ] **The corpus disagrees with itself on a date that IS sourced.**
-  `goaltender.md:550` says the trapezoid was widened *"in 2014"*; `defender.md` and
-  the owner `rink_map.md:241` say *"for the 2014-15 season"*. **Make `goaltender.md`
-  match its owner.**
-  ⚠️⚠️ **A CORRECTION TO THIS ROW'S FIRST DRAFT, which called the date
-  "unverifiable from anything on disk".** That was wrong, and it conflated two
-  different claims. **The date IS sourced** — `rink_map.md:241` states it with the
-  reason (widened two feet a side **at the NHLPA's request**) and its Sources
-  trailer cites **the NHL's own rule-change announcement**. What is true is the
-  narrower thing: **the date is absent from the RULEBOOK**, which dates no rule at
-  27.8. ⚠️ **And even "the NHL rulebook dates no rule" is false as a general
-  claim — NHL 9.7 reads *"Beginning with the 2013-2014 season"*.** A repair agent
-  caught that in its own draft before it shipped.
-  ⚠️ **Nobody has refetched the announcement URL.** If that page is dead or says
-  something else, the date is unsupported and no one would know.
+- [x] **DONE, 17 September — required a real section split, not a bare
+  addition.** The Casebook's "forward" cone definition now travels with
+  the rule, in a new `### Throwing the puck forward` subsection (the
+  original `Freezing the puck` block was at the 11-fact hard cap, exactly
+  as this row anticipated). `safety-reviewer` found and the fix closed a
+  genuine Critical the split introduced: one new fact dropped the word
+  "forward," directly contradicting the fact before it. Full account:
+  [`../reviews/goaltender_forward_throw_2026-09-17.md`](../reviews/goaltender_forward_throw_2026-09-17.md).
+- [ ] **New residual from the same fix**: Common Mistakes and Key
+  Takeaways are silent on this USA Hockey-specific wedge/hand-pass
+  nuance entirely — not wrong, just absent from the two layers a
+  podcast listener or skimmer is most likely to reach. Flagged by the
+  same `safety-reviewer` pass; not fixed, since it wasn't what that
+  fix was asked to close.
+- [x] **STALE, verified 17 September — already fixed in commit `d415f73`,
+  before this row was written.** `goaltender.md` already reads "lines
+  that begin six feet … from either goal post" with the elision properly
+  marked, matching `defender.md`'s own correct treatment of the same
+  quote.
+- [x] **STALE, verified 17 September — already fixed in the same commit
+  `d415f73`.** `goaltender.md` already reads "widened by two feet on
+  each side for the 2014-15 season," matching `rink_map.md`'s exact
+  phrasing.
 
 ## Workstream 2I: two residuals the second commit gate found
 
@@ -1877,25 +1866,36 @@ is precisely why their isolation matters.** Every facts-layer finding in this pl
 stands at full severity; only the chunk-boundary rows are downgraded.
 
 - [ ] `hockey-iq/playing_without_the_puck.md` chunk boundary 1→2 puts a **300 ms
-  seam** between a safety prohibition and its applicability condition: the chunk
-  ends *"Never turn your back to the wall, and never duck"* and the next opens on
-  whether the reader may use their body at all. ⚠️ **The listener DOES hear both** —
-  see the severity correction above. The question is whether the qualification
-  should be inside the sentence rather than after a seam. **Acceptance:** the
-  condition sits in the same spoken unit, or it is recorded why the seam is safe.
-- [ ] `systems/breakouts.md` chunk boundary 73→74 puts a seam between the two
-  halves of a five-clause Interpretation that the document's own sentence says
-  *"a goaltender told only that half has been told the rule wrong."* ⚠️ **The
-  listener reaches both halves** — the seam is 300 ms, not a file boundary — **so
-  the document's own sentence overstates the exposure.** The prosodic risk is
-  real. **Acceptance:** the halves sit in one sentence, or the document's claim
-  about being *"told the rule wrong"* is scoped to a reader who stops there.
-  Requires `rules-verifier`.
-- [ ] Three `Rule.` facts values truncate mid-clause at a chunk end —
-  `technique/puck_handling.md` 028/61, `technique/shooting.md` 018/95 and 055/95.
-  **Acceptance:** each still tells the truth if the listener stops there.
-  ⚠️ **Lengthening a block to fix one MOVES the boundary and can make a different
-  value chunk-terminal** — re-run after each change.
+  seam** between a safety prohibition and its applicability condition — **CLOSED,
+  17 September, correct as it stands.** A reviewer ran the actual TTS chunker
+  (`md_to_speech.transform_document`) rather than guessing at the boundary,
+  and read both sentences in full: they aren't a prohibition-and-qualifier
+  pair at all. "Never turn your back... never duck" is a universal,
+  correctly-unhedged safety instruction (no league makes ducking into
+  board contact advisable); "whether you may use your body at all" is a
+  separately-scoped, genuinely league-dependent question that already
+  carries its own qualifier inline. Nothing to merge.
+- [x] `systems/breakouts.md` chunk boundary (73→74, now 74→75 after later
+  edits) puts a seam between the two halves of a five-clause
+  Interpretation — **CLOSED, 17 September, correct as it stands.** The
+  document's "a goaltender told only that half has been told the rule
+  wrong" sentence is a general caution about incomplete rule
+  communication in the world (by a coach, a teammate, a summary), not a
+  self-referential claim about this corpus's own continuous, single-file
+  audio — the worklist's premise didn't match what the sentence actually
+  says. All five clauses of Hockey Canada's Interpretation 3 to Rule
+  10.1(a) re-verified verbatim against `sources/hc_layout.txt`.
+- [x] **DONE, 17 September — broadened into a full sweep, which is what
+  found the real defects.** The three originally-flagged indices didn't
+  match anything in the current files (stale, as the row's own caveat
+  anticipated); a full read of every `Rule:` fact in both documents (76
+  facts total) found two genuine Majors in `shooting.md` instead: an
+  NHL/IIHF crease-contact rule stated as an unqualified absolute with its
+  Rule 69.7 exception living only in the next fact (fixed at both
+  occurrences), and an NHL-specific shootout procedure with no scope flag
+  contradicting the same document's own body text on British rules
+  (fixed). `puck_handling.md` had no comparable defect. Full account:
+  [`../reviews/goaltender_forward_throw_2026-09-17.md`](../reviews/goaltender_forward_throw_2026-09-17.md).
 - [x] **FIXED, 17 September.** `hockey-iq/playing_without_the_puck.md`'s
   pointer to the dropped Notes section is gone. On inspection the Notes
   section held **no substance beyond what the body already stated** — same
