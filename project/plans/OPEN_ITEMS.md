@@ -1624,31 +1624,32 @@ was checked against the book and is CORRECT — do not "fix" it.**
 
 ## Workstream 2K: a convention decision the quotation work surfaced
 
-- [ ] ⚠️ **`body_contact_and_battles.md` mixes the two quotation conventions:
-  disclosed `[x]` bracket insertions against bare lowered initials — ⚠️ **RUN
-  `check_quote_drift.py` for both figures; a commit gate caught this row shipping
-  two that were wrong before AND after the round.** An agent
-  repaired the 13 **shape-3** drifts (a terminal period added inside the quotation
-  where the source sentence **continues** — the shape that changes meaning) and one
-  raised capital, then **read the 28 lowered initials and left them**, because
-  lowering a sentence-initial capital to embed a quotation mid-sentence changes no
-  meaning, and **repairing a quarter of them would leave the document no more
-  consistent while being exactly the sweep the method forbids.**
-  **This is a document-wide convention decision, not a subset one.** Decide it, or
-  record that the mix is acceptable.
-- [ ] ⚠️ **Two `check_quote_drift` hits were WRONG-OCCURRENCE false positives, and
-  one crossed books.** `:384` quotes CARHA 49(b), which ends *"assessed in the
-  normal manner."* — the tool matched a different line of the same book. `:1468`
-  quotes the **USA Hockey Casebook** Rule 629 Situation 1 — **the tool matched NHL
-  Rule 70.1, a different book entirely**, which continues past that point. **Both
-  corpus quotations are verbatim and correctly attributed.**
-  ⚠️ **This is the tool's declared blind spot seen from the other side: it keeps
-  the closest match across ALL sources, so it can not only miss attribution drift
-  but INVENT it.** Worth adding to its docstring.
-- [ ] ⚠️ **All four interior-case hits are the ALL-CAPS-heading judgement call,
-  and three additionally matched the IIHF book's INDEX entries** rather than its
-  headings — the index is cased differently from the heading the corpus
-  title-cases. **Not defects.**
+- [x] **DECIDED AND CLOSED, 17 September — bracket consistently, and the
+  document now does.** The convention decision this row asked for
+  ("decide it, or record the mix is acceptable") turned out to be moot:
+  the same 28 lowered-initial instances this row had deliberately left
+  as an accepted mix were independently found and bracketed by today's
+  quote-drift re-triage (see Workstream 2G's "UPDATE 6" — a fresh count
+  showed the "28 left alone" had actually drifted into 29 genuine
+  undisclosed instances, and all but one confirmed-correct false
+  positive were fixed). `grep -oE '\*"\[[a-z]\]' content/technique/body_contact_and_battles.md
+  | wc -l` now returns 133 disclosed-bracket insertions against zero
+  remaining bare-lowered-initial instances; `check_quote_drift.py`
+  confirms only 6 flagged, all verified ALL-CAPS-heading or
+  wrong-occurrence judgement calls, none a silent lowering needing a
+  bracket. The document is now internally consistent by construction,
+  not by a recorded acceptance of inconsistency.
+- [x] **CLOSED, 17 September — docstring updated.** Both instances
+  re-confirmed by two independent passes today (the same
+  cross-book-invented-drift shape recurred and was separately verified at
+  the "leave the players' or penalty bench" quotation). Added a
+  dedicated bullet to `check_quote_drift.py`'s own "WHAT IT CANNOT SEE"
+  section naming this exact failure mode — a quotation can match the
+  closest occurrence in an entirely different, uncited rulebook when two
+  books share an opening clause, inventing a "truncation" against a
+  source the document never cited. Script re-run after the edit; output
+  unchanged, no regression.
+- [x] **Not a defect — recorded, no action needed.**
 
 ## Workstream 2L: residuals from the adverse-authority round
 

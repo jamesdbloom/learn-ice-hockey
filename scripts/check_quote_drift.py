@@ -62,6 +62,14 @@ WHAT IT CANNOT SEE -- and this list is the honest half
   **clean**. It does not check the quotation against the book the prose names.
 - **A one-word change that lands on a phrase occurring elsewhere** matches the
   other occurrence silently.
+- ⚠️ **It can INVENT drift, not just miss it, when two different rulebooks share
+  an opening clause.** A quotation correctly attributed to one book's Casebook
+  can match the CLOSEST occurrence in an entirely different book's rule text
+  that happens to continue further -- flagging a fabricated "truncation" against
+  a source the document never cited. Confirmed twice in one document: a CARHA
+  quotation matched a different line of CARHA's own book, and a USA Hockey
+  Casebook quotation matched the NHL's rule instead. Read the document's own
+  attribution before trusting a DRIFT hit that spans two named rulebooks.
 - ⚠️ **Whether a verbatim quotation is the RIGHT quotation.** Nothing here tests
   whether the cited rule number prints those words, whether the edition is
   current, or whether truncating at the chosen point changes the rule's meaning.
