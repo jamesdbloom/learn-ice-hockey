@@ -1285,12 +1285,30 @@ than assuming the pass missed it.
   corpus credits to the NHL but carrying the IIHF's wording scores CLEAN.** Nothing
   checks a quotation against the book the prose names. **This wants its own pass
   and there is no tool for it.**
-- [ ] ⚠️ **Nor does it test whether a verbatim quotation is the RIGHT quotation** —
-  whether the cited rule number prints those words, whether the edition is current,
-  or whether truncating at the chosen point changes the rule's meaning. **Start
-  here:** `body_contact_and_battles.md:1468` stops before the source's *"or for the
-  purpose of starting an altercation"* while **the same document quotes the fuller
-  form twelve lines earlier at `:1467`.**
+- [x] **CLOSED, 17 September — real defect, wrong location named, found and
+  fixed.** ⚠️ **Nor does the tool test whether a verbatim quotation is the RIGHT
+  quotation** — whether the cited rule number prints those words, whether the
+  edition is current, or whether truncating at the chosen point changes the
+  rule's meaning. The line numbers this row named (`:1467`/`:1468`,
+  "checking-from-behind") were stale and pointed at the wrong clause entirely —
+  a `source-verifier` re-check found no truncated quote there at all. **The
+  same defect pattern was real, one clause over:** the `Rule:` fact for Hockey
+  Canada 10.4(e) (now `:1471`) quoted *"...while a fight is occurring on the
+  ice"* and stopped, dropping *"or for the purposes of starting a fight"* — an
+  independent ground for the same Game Misconduct — while the document's own
+  body prose 13 lines later (`:1485`) already quotes the clause in full.
+  Verified verbatim against `sources/hc_layout.txt:6276-6278`. Fixed by
+  restoring the full clause into the fact (294/300 chars). `check_facts.py`,
+  `check_links.py`, `check_absolutes.py` all clean.
+  ⚠️ **A second flagged line (`:1480`, attributed to USA Hockey Casebook Rule
+  629 Situation 1) was checked and confirmed a `check_quote_drift.py` false
+  positive**, not a defect: the tool's closest-match-across-all-sources
+  behaviour matched it against NHL 70.1's near-identical wording instead of
+  its actually-cited source; `sources/usah_casebook.txt:14974-14975` confirms
+  the Casebook's own sentence is verbatim as quoted, terminal period included.
+  Not a corpus defect and not actioned. **Not swept corpus-wide** — whether
+  other documents repeat the same Hockey Canada 10.4(e) truncation is
+  unchecked; a candidate for a future row if anyone wants it.
 
 ## Workstream 1J: the four majors — CLOSED, and one block left at its ceiling
 
