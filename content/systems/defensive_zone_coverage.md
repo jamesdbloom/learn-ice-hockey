@@ -64,7 +64,7 @@ There is one more constraint people forget. You are not only defending; you are 
 
 ---
 
-## The Universal Principles
+## What Stays True Across Every Coverage System
 
 ```facts
 Priority: Defend the middle before the outside — it tells you which chance to concede, not which square metre to stand in
@@ -736,12 +736,12 @@ document, that is named too.*
 
 3. "Never both defencemen on the puck." That is not quite what this document
    says. State the version it actually gives, and say what stays true under
-   every system. *(§The Universal Principles)*
+   every system. *(§What Stays True Across Every Coverage System)*
 
 4. An opposing forward is parked in your goalie's sightline, outside the crease,
    not touching anyone. Is that legal? What may you do about it, and what is the
    one thing you must not do from a screening position? *(§The point shot with a
-   screen, §The Universal Principles)*
+   screen, §What Stays True Across Every Coverage System)*
 
 5. There is a loose puck in your own crease and bodies everywhere. What may you
    use on it, what must you not do, and what does the wrong choice hand the

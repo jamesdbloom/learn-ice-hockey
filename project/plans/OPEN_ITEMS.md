@@ -289,11 +289,12 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
 - [ ] Dispatched: `source-verifier` refetch of every citation in
   `core_principles.md` — it is now load-bearing for every other page's
   opener and has never been independently re-verified.
-- [ ] Dispatched: test the eighth-principle candidate, *"stay on the
-  defensive side of the puck"* (five documents, called *"the universal
-  rule"* by one, *"The Organising Idea"* by another) for promotion —
-  `rules-verifier`, `content-reviewer`, `facts-reviewer` and
-  `safety-reviewer` clearance, or the rejected-candidate log with a reason.
+- [x] **DECIDED — REJECT, 17 September.** Two INDEPENDENT `content-reviewer`
+  passes, run on different days by different agents, converged on the same
+  verdict with overlapping but independently-derived reasoning. Full decision,
+  the rejected-candidate log entry, and what a future qualified version would
+  need are recorded in Workstream 1G below — this row is the dispatch record,
+  that one is the decision.
 - [ ] **NOT started, and honestly scoped as needing more than an agent wave:**
   Workstream 1A's principle-to-corpus matrix across all 39 documents, the
   transfer audit in at least three contexts per principle, and Workstream
@@ -357,27 +358,49 @@ times elsewhere.
 
 ## Workstream 1G: two coordinator decisions the reviews forced
 
-- [ ] ⚠️ **The eighth principle: `content-reviewer` says DO NOT PROMOTE
-  *"stay on the defensive side of the puck"*, independently and with reasons the
-  first agent did not give.** Census: **eleven sites in five documents.** Its
-  argument: (1) **it fails the seven's own structural test** — every one of the
-  seven answers *"A realistic alternative"*, four honestly *"None"*, and this one
-  has real alternatives the corpus already teaches (a defenceman pinching at the
-  offensive blue line, a forward activating into the rush, F1/F2 in an aggressive
-  2-1-2 are all deliberately on the **wrong** side of the puck); (2) **the corpus
-  disagrees with itself about its status** — *"the universal rule"* in one
-  document, *"The Organising Idea"* of a single document in another, *"the
-  instinct to build"* in a third; (3) ***"the universal rule"* is an unsourced
-  superlative** with no source at any of the eleven sites — the same shape as a
-  claim that survived eight review rounds before a primary source contradicted it;
-  (4) **it is genuinely geometric and largely true, which is what makes it
-  dangerous as a bare principle** — it reads like a law and is one only inside a
-  scope nobody states.
-  **If promoted anyway**, the stated constraints: scope it to the defending half
-  or to not having the puck; write its *"realistic alternative"* honestly, which
-  **makes it a child of principle 1 rather than a peer of principle 2**; and
-  settle the *"universal rule"* wording, **because it cannot be both a universal
-  rule and a thing with a named exception set two documents away.**
+- [x] ⚠️ **CLOSED, 17 September — TWO independent `content-reviewer` verdicts
+  now agree: DO NOT PROMOTE *"stay on the defensive side of the puck"* as a
+  standalone ninth-or-eighth core principle.** First census: eleven sites in
+  five documents (exact phrase). **The second pass re-derived this independently
+  and found it wider**: the underlying idea, in varied wording ("goal side",
+  "net-side", "between them and your net"), appears at **eleven-plus sites
+  across NINE documents** — the exact-phrase count undercounts the idea's reach.
+  Both passes converge on the same structural reasons: (1) **it fails the
+  existing seven's own test** — every one answers *"A realistic alternative"*
+  honestly (four say *"None"*), and this one has REAL, NAMED, CORPUS-TAUGHT
+  alternatives: a defenceman pinching at the offensive blue line, F1 pressing
+  deep in an aggressive 2-1-2, a forward activating into the rush — all
+  DELIBERATELY on the wrong side of the puck, and `defending_the_rush.md`'s own
+  "five causes of a rush" section already prices the cost of doing so; (2) **the
+  corpus disagrees with itself about its own register** — *"the universal
+  rule"* (unhedged, and the ONLY unhedged "universal rule" anywhere in
+  `content/` — the other two occurrences, in `body_contact_and_battles.md`, are
+  explicit DENIALS: *"but it is not a universal rule"*), *"The Organising
+  Idea"* of one document, *"the instinct to build"* in a third; (3) it is an
+  unsourced superlative, though the second pass notes this is less damning than
+  it sounds since the underlying geometry is definitionally true, not an
+  empirical claim — **the problem is the word "universal," not the geometry**;
+  (4) **the second pass's TRANSFER AUDIT found it genuinely FAILS to transfer**
+  to the goaltending position at all (goaltending is built on angle/depth, not
+  puck-relative positioning) and inverts on purpose during any attacking-state
+  system (pinching, forechecking) — two boundaries the "universal"/"Organising
+  Idea" framing never states.
+  **For the rejected-candidate log:** REJECT as standalone. **Recommended
+  instead:** fold as a SECOND WORKED EXAMPLE into principle 1 (alongside the
+  existing "stay high" example), explicitly contrasting the defending state
+  against the forechecking/pinching state — this preserves the idea's real
+  value without a status the corpus's own documents don't agree it has.
+  **If a future pass promotes a qualified version anyway, it needs:** a scope
+  sentence limited to the DEFENDING state only (tied to principle 3's four
+  off-puck states); the realistic alternative named in full, citing
+  `forechecking_systems.md`'s "When to pinch" and `defending_the_rush.md`'s
+  "five causes of a rush"; an explicit statement it governs which chance is
+  conceded, not where feet stand (reusing `defensive_zone_coverage.md`'s
+  already-correct language); an explicit GOALTENDING EXCLUSION; and an
+  "evidence and its limits" note stating plainly this is definitional, not
+  measured, matching principles 2 and 7's honesty pattern for non-measured
+  claims. **`defender.md`'s unhedged "universal rule" wording is tracked
+  separately as a residual in Workstream 2F, regardless of this decision.**
 - [ ] ⚠️ **Two implementations of one owner instruction, written the same day, and
   they should not diverge silently.** `getting_started.md` now carries four `##`
   sections — `The principle`, `Key focus`, `How to tell`, `Overview` — **before**
