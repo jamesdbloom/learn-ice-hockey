@@ -1,5 +1,32 @@
 # Local-only NotebookLM podcast automation plan
 
+## Scope decision, 18 September 2026 — regenerate the entire catalog, not just the gaps
+
+⚠️ **The user's explicit decision, given the fabrication findings below: regenerate
+all 39 episodes (38 excluding `getting-started/getting_started`), not just the
+3 that were missing.** The first batch of 3 (`core_principles`, `rink_map`,
+`language_and_glossary`) found confirmed content fabrication in 2 of 2 fully
+reviewed episodes so far — including a dangerous fabricated injury-response
+instruction reproduced almost verbatim across two independent generations on
+unrelated source documents (see the finding below). Given that, the user chose
+to treat the existing 34-episode catalog (generated in earlier sessions, before
+this two-reviewer process existed) as suspect rather than assumed-correct, and
+regenerate everything under the same mandatory rules-verifier + safety-reviewer
+pass. All 37 non-excluded documents are queued as of this decision (34 via
+`--stale`, `rink_map` and `core_principles` requeued after their NO-GO,
+`language_and_glossary` mid-review). **Scale: up to 10 generations running in
+parallel at once** (the plan's own hard batch ceiling, unchanged), each still
+requiring the full two-reviewer pass before acceptance — parallelism is about
+throughput of generation, not a shortcut past review.
+
+⚠️ **Operational finding: the NotebookLM notebook's own "Generating Audio
+Overview... Come back in a few minutes" status panel can go stale and keep
+showing "generating" long after the audio has actually finished** — one
+episode in the first batch showed as generating for roughly two hours; a page
+reload revealed it had finished and downloaded normally. **Reload the page
+before trusting a long-running "generating" status**, rather than assuming
+the process is stuck.
+
 ## Scope decision, 17 September 2026
 
 **One episode per document, ordered by the site's own page order, `getting-started/getting_started`
