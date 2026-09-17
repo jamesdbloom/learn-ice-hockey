@@ -1160,6 +1160,15 @@ facts fit the cap with room: 290/300 and 243/300.
   the coordinator. **Every document in the corpus that runs this comparison now
   agrees.**
 
+⚠️ **UPDATE 5, 17 September — the "32" above is now stale; re-run before
+trusting it.** A verification pass found `check_quote_drift.py` currently
+reports **34 flagged** for `body_contact_and_battles.md`, not 32 — the file
+has been edited twice more since Update 4 (commits `5460eed`, `09a7d40`),
+and it is not yet known whether the extra hits are genuinely new drift or
+a renumbering artefact. Not diffed against the Update-4 hand-checked list
+in this pass. **Needs a fresh triage before this file is treated as
+closed.**
+
 ⚠️⚠️ **UPDATE 4 — the corpus-wide quotation-drift sweep is SUBSTANTIALLY
 COMPLETE, 16–17 September.** Ten more documents worked in the last two waves:
 `body_contact_and_battles.md` (34→32, both remaining hits confirmed
@@ -1188,7 +1197,11 @@ or unexamined** as of this update; if `check_quote_drift.py` is re-run later
 and reports a shape-3 hit, treat the corpus as having drifted again rather
 than assuming the pass missed it.
 
-- [ ] **Start here — the instance a commit gate named, verified to the character.**
+- [x] **FIXED, 17 September — the sole divergent site now matches its two
+  siblings.** `uk_rules.md`'s USA Hockey **304(g)** quotation now reads
+  *"[a]ll players…"*, matching `equipment.md:486` and `goaltender.md:1161`'s
+  existing use of the corpus's disclosed-insertion convention.
+  `check_quote_drift.py` confirms: was `flagged=8`, now `flagged=7`.
   `uk_rules.md:502` quotes USA Hockey **304(g)** as *"all players, including
   goalkeepers, in all age classifications except Adults"*. **The source prints
   `All`.** `equipment.md:486` and `goaltender.md:1161` quote the sibling clause
@@ -1408,10 +1421,8 @@ at `defender.md`, which followed the claims into their sibling.
   are defensible and **a reader does the same thing under either.** One of the two
   should be rephrased so the document does not appear to contradict itself.
   **Not a wrong claim; a wrong impression.**
-- [ ] `uk_rules.md:502` — the one **new** quotation-drift instance this round
-  introduced, counted and not repaired: *"all players, including goalkeepers…"*
-  where USA Hockey **304(g)** writes *"All"*. Sources trailer, never voiced.
-  **It is the named starting instance in Workstream 2G.**
+- [x] **FIXED, 17 September — see Workstream 2G's own row for the same
+  instance.**
 
 ## Workstream 2J: the age-token doubling — censused, deliberately deferred
 
@@ -1577,9 +1588,15 @@ was checked against the book and is CORRECT — do not "fix" it.**
   **Open, and not to be assumed either way:** whether 61(b)'s *"unnecessary
   stoppage"* test is narrower **in practice** than 58(b)'s location test. **Routed,
   with the correction, to the agent holding that file.**
-- [ ] ⚠️ **Census the shape across the 22 documents naming CARHA that no agent held
-  this wave.** `grep -rn CARHA content/` groups it by document — **run it rather
-  than quoting a count here.** ⚠️ **The test is NOT "is CARHA mentioned": a book
+- [ ] ⚠️ **Census the shape across the documents naming CARHA that no agent has
+  held yet — STILL UNDONE, confirmed 17 September.** This row originally said
+  "22 documents"; a verification pass found `grep -rl CARHA content/ | wc -l`
+  now returns 28, because this session's own propagation work added CARHA
+  citations to `defending_the_rush.md` and others since the row was written.
+  **This is exactly why the row already says not to quote a count — the
+  count itself was already stale.** `grep -rn CARHA content/` groups it by
+  document — **run it rather than trusting any number written here,
+  including the one just given.** ⚠️ **The test is NOT "is CARHA mentioned": a book
   correctly named in a list of books that genuinely agree is the CORRECT state and
   will be the commonest hit.** **Read every hit; sweep nothing.**
 - [ ] ⚠️ **Standing constraint for every repair in this class: NEVER REMOVE A BOOK
