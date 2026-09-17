@@ -1834,12 +1834,13 @@ It is about the authority the brief did not carry.**
   under the NHL book — the IIHF Handbook is the only interpretive evidence and
   ranks itself below the Rulebook. **A reader under the NHL book has nothing but
   the bare words.** Record it where a reader meets the rule, or accept it.
-- [ ] **Two disclosures re-tested this round and UPHELD**, recorded so nobody
-  re-opens them: `risk_management.md:651` and `defensive_zone_coverage.md:602`
-  both assert the word *"catch"* appears in USA Hockey's volume only in the
-  goalkeeper's equipment specifications, in 618(c) and in the Sled Hockey Pusher
-  Rules. **Eight hits, all accounted for, with a positive control.** And the
-  Hockey Canada forward-throw negative held a **fifth** time.
+- [x] **RECORDED AND CLOSED.** Two disclosures re-tested this round and
+  UPHELD, recorded so nobody re-opens them: `risk_management.md:651` and
+  `defensive_zone_coverage.md:602` both assert the word *"catch"* appears in
+  USA Hockey's volume only in the goalkeeper's equipment specifications, in
+  618(c) and in the Sled Hockey Pusher Rules. **Eight hits, all accounted
+  for, with a positive control.** And the Hockey Canada forward-throw
+  negative held a **fifth** time.
 - [x] **The original hypothesis was STALE; a real, different defect was found
   and fixed in its place, 17 September.** The feared borrow into
   `defender.md` never actually happened — `git log --all -S` on that
