@@ -179,8 +179,21 @@ round, since it had a separate, just-completed source-verification pass.
 
 **Reasonably actionable next, in priority order:**
 
-1. `core_principles.md` §6's realistic-alternative hedge needs a second,
-   sharper sentence for the denial direction (content-reviewer).
+1. ✅ **DONE, 17 September.** `core_principles.md` §6's realistic-alternative
+   paragraph now carries the denial-direction sentence: *"A second reversal
+   happens when you are the one applying pressure rather than receiving it: a
+   forechecker angling the puck carrier, or a penalty kill holding its
+   shape, is not offering an option but taking one away on purpose"* — with
+   both source quotations (`forechecking_systems.md`'s *"one bad pass
+   available"*, `special_teams.md`'s *"never both drift to the same side"*)
+   verified verbatim against the current file text before insertion.
+   **Deliberately NOT added:** a mention of the goaltender's option-chooser
+   inversion (Safe Outlets, `goaltender.md:585-604`) — judged to be a
+   different kind of case (occupying the *other role* in the relationship,
+   not reversing the mechanism) better handled as a document-specific note
+   if `goaltender.md` ever gets its own principle-6 cross-link, not as a
+   third clause crowding one already-dense corpus-wide paragraph. Gates
+   clean; `check_quote_drift.py` confirms both new quotations exact.
 2. Three documents (`center.md`, `defender.md`, `winger.md`) have a genuine
    principle-4 content gap, not just a missing link — each needs its own
    scanning-relevant passage or an honest pointer, modelled on
@@ -189,7 +202,7 @@ round, since it had a separate, just-completed source-verification pass.
 4. The transfer audit requirement ("at least three contexts, including a
    position, a system, and a technique/Hockey-IQ document") is only
    half-satisfied by this tranche — no technique or Hockey-IQ document has
-   been matrixed yet.
+   been matrixed yet. **In progress, dispatched 17 September.**
 
 ## What this method could not have found
 
