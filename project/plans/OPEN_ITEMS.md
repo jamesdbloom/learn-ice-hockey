@@ -1588,15 +1588,21 @@ was checked against the book and is CORRECT — do not "fix" it.**
   **Open, and not to be assumed either way:** whether 61(b)'s *"unnecessary
   stoppage"* test is narrower **in practice** than 58(b)'s location test. **Routed,
   with the correction, to the agent holding that file.**
-- [ ] ⚠️ **Census the shape across the documents naming CARHA that no agent has
-  held yet — STILL UNDONE, confirmed 17 September.** This row originally said
-  "22 documents"; a verification pass found `grep -rl CARHA content/ | wc -l`
-  now returns 28, because this session's own propagation work added CARHA
-  citations to `defending_the_rush.md` and others since the row was written.
-  **This is exactly why the row already says not to quote a count — the
-  count itself was already stale.** `grep -rn CARHA content/` groups it by
-  document — **run it rather than trusting any number written here,
-  including the one just given.** ⚠️ **The test is NOT "is CARHA mentioned": a book
+- [x] **DONE, 17 September — the full census run, at 28-document scale.**
+  21 documents read in full (7 more had already been deeply scrutinized for
+  CARHA content earlier the same day); 14 entirely clean, two Majors found
+  and fixed (`faceoffs.md`'s CARHA Glossary never having been checked,
+  presenting CARHA as flatter than it is; `special_teams.md`'s scope
+  qualifier present once in the whole document instead of at its ~26
+  citations), three Minors found and fixed. `rules-verifier` gave full
+  clearance on every rule claim touched. Full account:
+  [`../reviews/carha_census_2026-09-17.md`](../reviews/carha_census_2026-09-17.md).
+  ⚠️ **Method note for the next census of this kind**: a `grep CARHA`
+  census cannot find a *silent* omission — a "the books agree" or "every
+  league" claim made where CARHA actually diverges but is never named at
+  all. That needs the reverse sweep: start from every general/absolute
+  claim and check it against CARHA's rulebook affirmatively. Not run this
+  round; the one instance found (`shooting.md`) was luck, not method. ⚠️ **The test is NOT "is CARHA mentioned": a book
   correctly named in a list of books that genuinely agree is the CORRECT state and
   will be the commonest hit.** **Read every hit; sweep nothing.**
 - [ ] ⚠️ **Standing constraint for every repair in this class: NEVER REMOVE A BOOK

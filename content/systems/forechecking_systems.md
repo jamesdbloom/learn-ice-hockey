@@ -216,7 +216,7 @@ Action: Arrive under control, not at maximum speed
 Technique: Get to top speed on the way in, then get your feet under you in the last two or three strides so you can change direction
 Key: The test — could you stop and pivot right now? If not, you are going too fast
 Risk: A forechecker who arrives flat out has one option, a straight line; one turn and you are 40 feet behind the play
-Rule: Building speed into the contact is charging, and the books do not count it alike — Hockey Canada 7.4 says two or more strides, USA Hockey 607 and CARHA 52 more than two, IIHF 42.1 "multiple"; the NHL sets no count and judges distance travelled
+Rule: Building speed into the contact is charging, and the books do not count it alike — Hockey Canada 7.4 says two or more strides, USA Hockey 607 and CARHA 52 (adult leagues only) more than two, IIHF 42.1 "multiple"; the NHL sets no count and judges distance travelled
 Rule: Charging is not two minutes everywhere either — USA Hockey 607(a) writes no bare minor at all, only "a minor plus a misconduct or a major plus a game misconduct", and 607(e) adds a match penalty for reckless endangerment
 ```
 
