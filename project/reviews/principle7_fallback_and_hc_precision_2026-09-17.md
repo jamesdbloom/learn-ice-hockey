@@ -59,16 +59,20 @@ corrected wording. A subsequent review of those two fixes found:
   `Rule:` cap by trading a stylistic aside (the IIHF's pronoun difference)
   for the substantive precondition.
 
-## Not fixed, recorded for a future pass
+## Also fixed: the same imprecision in two further documents
 
 The same review found the identical underlying fact stated with the same
-imprecision (naming Rule 8.1 without saying what it permits) in two
-further documents outside this round's scope:
+imprecision (naming Rule 8.1 without saying what it permits) in
 `content/hockey-iq/playing_without_the_puck.md` and
 `content/systems/breakouts.md`'s first of two mentions (its second
-mention already states Rule 8.1's full, correct wording — the most
-precise version of this fact anywhere in the corpus). Neither was edited
-in this round. Tracked in `OPEN_ITEMS.md`.
+mention already stated Rule 8.1's full, correct wording — the most
+precise version of this fact anywhere in the corpus, and the model both
+fixes followed). Fixed in both, then independently re-verified against
+both extractions of the primary text (`sources/hc_layout.txt` and
+`sources/hc.txt`, which agree word for word) — accurate, non-contradictory
+with each document's surrounding prose, and grammatically clean in both
+locations. This closes the propagation of this fix across every document
+where the check found it stated.
 
 ## Gates
 

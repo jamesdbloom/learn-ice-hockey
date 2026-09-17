@@ -175,14 +175,13 @@ set. **Priority:** highest. **Dependency:** Workstream 0. **Design specification
   unfixed, into `rink_map.md` and `on_ice_communication.md` — both
   corrected to match. Full account:
   [`../reviews/principle7_fallback_and_hc_precision_2026-09-17.md`](../reviews/principle7_fallback_and_hc_precision_2026-09-17.md).
-- [ ] The same Hockey Canada Rule 8.1 imprecision (naming the rule without
-  saying what it permits) is still live in two further documents:
-  `content/hockey-iq/playing_without_the_puck.md` and the first of two
-  mentions in `content/systems/breakouts.md` (whose second mention already
-  states it fully and correctly — the most precise version of this fact
-  anywhere in the corpus). Not fixed in this round; a future pass should
-  match both to the now-corrected wording in `core_principles.md`,
-  `rink_map.md` and `on_ice_communication.md`.
+- [x] **DONE, 17 September.** The same Hockey Canada Rule 8.1 imprecision
+  was also fixed in `content/hockey-iq/playing_without_the_puck.md` and
+  the first of two mentions in `content/systems/breakouts.md` (whose
+  second mention already stated it fully and correctly, and was the model
+  both fixes followed). Independently re-verified against both extractions
+  of the primary text — this closes the propagation of the fix across
+  every document where it was found stated imprecisely.
 
 ### 1B. Two pilot documents and pathways
 
