@@ -1314,27 +1314,41 @@ overstated.** The lateral throw is answered by the **IIHF's Situation Handbook**
   CHARACTERS of their cap — an ordinary edit breaks the block.**
   **The seam the body already uses is *the goalkeeper's own acts* against *what
   the puck does on its own*.** ⚠️ **Coordinator decision, not an agent's.**
-- [ ] ⚠️ **The highest-value question outstanding, and no source on disk settles
-  it:** the back of the net is **outside the crease**, and NHL **63.2(i)** reaches
-  *"any player, including the goalkeeper, who holds, freezes or plays the puck…
-  to deliberately cause a stoppage"* there. **85.2 is the specific rule and names
-  only a faceoff**, which is why the corpus says *"no penalty named"* — **but
-  nothing on disk says which governs.** The new fact inherits that unresolved
-  reading. **`rules-verifier`.**
-- [ ] ⚠️ **The British warning rests on an interpretive document that disclaims
-  priority over the rule it interprets.** The IIHF Handbook says *"in case of any
-  contradictions, the valid IIHF Rulebook is always the basis"*, and IIHF
-  67.3(III) on its face says only *"forward towards the opponent's net"*.
-  ⚠️ **If a British official reads 67.3(III) literally, the Common Mistakes entry
-  warns against a throw that is legal.** Conservative direction — **but stated
-  more firmly than the rule text alone supports.** The agent flagged this against
-  its own work.
-- [ ] **`content/systems/faceoffs.md:173` carries the NHL 85.2 back-of-net act
-  with NO USA Hockey / Hockey Canada divergence attached** — the same omission,
-  one document over.
-- [ ] `sources/README.md` **does not record CARHA Rule 58(b) or 61(b)** as the
-  fifth book's answer on goaltender freezing and handling. ⚠️ **Three reviewers
-  have now had to re-derive it.**
+- [x] ⚠️ **CLOSED, 17 September — investigated by `rules-verifier`, genuinely
+  unresolved, no corpus change needed.** The back of the net is **outside the
+  crease**, and NHL/IIHF **63.2(i)** reaches "any player, including the
+  goalkeeper... to deliberately cause a stoppage" there, while **85.2 names
+  only a faceoff** for the same act. Searched both full rulebooks for any
+  interpretive-hierarchy statement (`notwithstanding`, `supersede`,
+  `precedence`, `govern(s)`) and found none bearing on this pair; no NHL
+  casebook exists on disk at all to check further; the IIHF Situation
+  Handbook has no entry matching this exact fact pattern. **Genuinely
+  unresolved from primary sources — not a corpus defect.** The existing
+  wording ("NHL and IIHF 85.2 name no penalty for smothering it") only
+  describes 85.2's own text and does not claim 63.2(i) is thereby excluded,
+  so no edit was needed. Full account in
+  [`../reviews/goaltender_backofnet_and_boardsthrow_2026-09-17.md`](../reviews/goaltender_backofnet_and_boardsthrow_2026-09-17.md).
+- [x] **CLOSED, 17 September — fixed and independently verified (GO).** Added
+  the interpretive-Handbook caveat to both the body-prose and Common-Mistakes
+  versions of the lateral-throw passage in `goaltender.md`: the IIHF's
+  minor-penalty ruling comes from Situation Handbook 67.2, not from the bare
+  Rule 67.3(III) text, and the Handbook itself ranks below the Rulebook in
+  any conflict ("in case of any contradictions, the valid IIHF Rulebook is
+  always the basis" — its own Foreword). Re-verified against
+  `iihf_rules_v1.1.txt`, and Situation 67.2 across the v1.1, v1.0 and 2026/27
+  Situation Handbook editions. Record above.
+- [x] **CLOSED, 17 September — fixed and independently verified (GO).**
+  `content/systems/faceoffs.md:183` now carries the USA Hockey / Hockey
+  Canada divergence (both add a minor on top of the NHL/IIHF faceoff-only
+  answer) with a pointer to Goaltender's full four-book comparison.
+  Re-verified against `nhl_rules.txt`, `usah_casebook.txt` Rule 610 Situation
+  8, and `hc.txt` 6.12(b)/10.1(a). Record above.
+- [x] **CLOSED, 17 September.** `sources/README.md`'s `carha.txt` row now
+  records CARHA Rule 37(e) (goaltender centre-red-line participation,
+  `carha.txt:1811-1813`) and Rule 58(b) (goaltender freezing behind the goal
+  line, `carha.txt:2812-2817`); Rule 61(b) flagged as quoted correctly but not
+  independently re-verified, so a future reviewer knows its exact status
+  rather than re-deriving from scratch.
 
 ### Repaired outside the brief, and in the rare direction
 
