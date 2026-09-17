@@ -515,19 +515,31 @@ times elsewhere.
   measured, matching principles 2 and 7's honesty pattern for non-measured
   claims. **`defender.md`'s unhedged "universal rule" wording is tracked
   separately as a residual in Workstream 2F, regardless of this decision.**
-- [ ] ⚠️ **Two implementations of one owner instruction, written the same day, and
-  they should not diverge silently.** `getting_started.md` now carries four `##`
-  sections — `The principle`, `Key focus`, `How to tell`, `Overview` — **before**
-  the Overview, where the template has Overview first; `body_contact_and_battles.md`
-  puts its principle as a **bold lead inside `## Overview`**. ⚠️ **Each `##` also
-  opens a new audio chunk**, so the choice changes the spoken layer.
-  **And a second divergence:** `getting_started.md`'s opening principle is **not
-  one of the seven and is not in `core_principles.md` at all** — a new proposition,
-  with core principle 2 imported beneath it as the *exception*. ⚠️ **It makes no
-  false ownership pointer**, which is the failure mode the style guide records
-  (thirteen documents citing an owner that never held the rule), **so it is not a
-  defect** — but the owner instruction says principles are *"drawn from its seven
-  and linked to it"*, and one of the two is not. **Coordinator decision.**
+- [x] **DECIDED, 17 September — both divergences resolved, neither needs a
+  content change.** Re-checked directly against the current files: **the
+  first divergence no longer exists.** `body_contact_and_battles.md` no
+  longer puts its principle as "a bold lead inside `## Overview`" — it now
+  has its own top-level heading (`## Which book you are under decides what
+  is legal — and the boards do not care`, line 13) immediately before `##
+  Key focus`, the same structural position `getting_started.md`'s opening
+  heading occupies. Both documents now state their governing principle(s)
+  as a heading-led section ahead of Key focus; `getting_started.md` simply
+  has one further heading (`## How to tell`) between Key focus and Overview
+  that `body_contact_and_battles.md` doesn't need, which is not the
+  divergence this row was raised about. **The second divergence was
+  independently investigated today** by the principle-matrix stragglers
+  batch, which read `getting_started.md`'s opening section in full and
+  confirmed it makes no false ownership pointer, correctly imports
+  Principle 2 beneath it where their scopes actually meet, and is doing
+  real, distinct work no principle covers (an administrative/organisational
+  claim about national vs. local authority, not an on-ice behaviour) —
+  recommending it stay as a second, non-numbered framing idea rather than
+  be forced into the seven or removed. **Decision: leave both as they are.**
+  One residual, not a defect: this row's own description of
+  `body_contact_and_battles.md`'s structure had gone stale relative to the
+  file — a reminder that a plan row describing document structure needs
+  re-verification against the current file before being acted on, not
+  carried forward from when it was written.
 
 ## Workstream 1H: the critical the split created — CLOSED
 
