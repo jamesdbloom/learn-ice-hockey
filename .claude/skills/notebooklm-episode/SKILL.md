@@ -27,36 +27,50 @@ a login wall appears, hand back to the user rather than trying to get through it
 
 ---
 
-## Step 1 — Assemble the bundle
+## Step 0 — Find out what actually needs an episode, and in what order
 
 ```bash
-python3 .claude/skills/notebooklm-episode/build_episode.py <out_dir> "<Episode Title>" <doc.md> ...
+python3 scripts/podcast_queue.py status        # every document's episode/queue state
+python3 scripts/podcast_queue.py build-queue   # add anything missing to the queue
+python3 scripts/podcast_queue.py next-batch    # up to 10 queued items, oldest first
 ```
 
-This writes `<slug>__sources.md`: the documents concatenated, stamped with the
-corpus commit and a SHA-256 per file. **The stamp is the point.** §7.3 asks that
-episodes record which documents fed them so they can be regenerated when content
+⚠️ **This corpus ships one episode per document, not one per layer** — `site/src/data/podcast.json`
+is per-document, and `project/site_build_specification.md` §7.3 records the
+17 September 2026 decision to keep it that way despite the section's own
+original "group by layer" suggestion (below the strikethrough note there).
+`scripts/podcast_queue.py` derives both the episode list AND its order from
+`site/src/data/structure.json` — the same file that drives the site's own
+navigation — so an episode's position can never drift from its page's
+position. It will not queue a document speculatively: a document already in
+the manifest is left alone unless named explicitly with `--stale DOC_ID
+--reason "..."`, because re-running 37 already-fine episodes through
+NotebookLM on a guess is exactly the rate-limit risk this tool exists to
+prevent. See the script's own docstring and `PODCAST_AUTOMATION_LOCAL.md`
+for the full queue/checkpoint/batching contract.
+
+`getting-started/getting_started` is deliberately excluded from the queue —
+it already has an episode and does not need a new one — but it still counts
+for page order, so every other document's target track number already
+accounts for it.
+
+## Step 1 — Assemble the bundle
+
+For each queued item, one document is one episode:
+
+```bash
+python3 .claude/skills/notebooklm-episode/build_episode.py <out_dir> "<Episode Title>" content/<doc_id>.md
+```
+
+This writes `<slug>__sources.md`: the document, stamped with the corpus
+commit and a SHA-256. **The stamp is the point.** §7.3 asks that episodes
+record which documents fed them so they can be regenerated when content
 changes, and the hash is what makes "has this changed?" answerable later.
-
-### The episodes (§7.3)
-
-Group by **layer**, never per-document — the two-host format needs material to
-work with.
-
-| Episode | Documents |
-|---|---|
-| Getting Started | `getting-started/getting_started.md` |
-| Foundation & Rules | `foundation/*.md` — includes `uk_rules.md` |
-| The Four Positions | `positions/*.md` + `switching_positions.md` |
-| Systems I (offensive) | `breakouts` `zone_entries` `offensive_zone_play` `forechecking_systems` |
-| Systems II (defensive) | `defensive_zone_coverage` `neutral_zone_systems` `defending_the_rush` `special_teams` `game_management` `faceoffs` |
-| Technique | `technique/*.md` |
-| Hockey IQ | `hockey-iq/*.md` |
-| Off the Ice | `off-the-ice/*.md` |
-
-The Four Positions **bundle** comes to ~394k characters, comfortably inside
-NotebookLM's per-source limit (500,000 words at the time of writing — check it,
-it moves).
+`build_episode.py` accepts more than one path and will bundle them if a
+future episode genuinely needs to (it takes a title and any number of
+`doc.md` arguments) — but per-document is the shipped convention; do not
+bundle multiple documents into one episode without a coordinator decision
+recorded the way §7.3's was.
 
 **Check for safety cross-references that leave the bundle**, before you
 generate:
@@ -68,12 +82,19 @@ grep -o '\[[^]]*\]([^)]*\.\./[^)]*)' <bundle>
 A pointer that leaves the bundle from inside a safety passage means constraint 7
 cannot be satisfied for that passage — the full version is in a document
 NotebookLM cannot see. Either add the target document to the bundle, or accept
-it and check that the episode *points* rather than reconstructs. Two known
-cases: `body_contact_and_battles.md` sends the concussion red-flag list to
-`conditioning_and_recovery.md` (different episodes), and
+it and check that the episode *points* rather than reconstructs. ⚠️ **With
+one-document-per-episode this is the norm, not an edge case** — this corpus's
+own convention is heavy cross-linking rather than restating (see
+`CLAUDE.md`'s numeric-facts-ownership rule), so almost every episode will hit
+this. Two known cases: `body_contact_and_battles.md` sends the concussion
+red-flag list to `conditioning_and_recovery.md` (a different episode), and
 `forechecking_systems.md` teaches a dump-in that puts a defenceman's back to the
 forechecker while sending the checking-from-behind rule to
-`body_contact_and_battles.md` (also a different episode).
+`body_contact_and_battles.md` (also a different episode). The correct fix in
+almost every case is confirming the episode narrates the pointer itself
+("the full rule is in Body Contact and Battles") rather than inventing the
+missing content — not adding more documents to the bundle, which would
+recreate the per-layer approach §7.3 explicitly decided against.
 
 ---
 
@@ -111,10 +132,11 @@ previous session**, and close what you opened when done.
 3. **Add the source.** Use `find` for the file input, then `file_upload` with
    its `ref`. **Do not click the upload button** — that opens a native file
    picker you cannot see or dismiss, and it will strand the session.
-   - Uploading the five documents individually gives NotebookLM cleaner source
-     boundaries than the bundle. The bundle is for convenience; if fidelity
-     matters more, upload the originals and keep the bundle only as the
-     provenance record.
+   - With one document per episode there is only one source to upload —
+     upload the original `content/<doc_id>.md` itself, not the bundle, for
+     the cleanest possible source boundary. The `__sources.md` bundle
+     `build_episode.py` writes stays the provenance record either way (it
+     carries the commit stamp and hash even for a single-document bundle).
 4. Wait for sources to finish processing before touching Audio Overview —
    generating against a half-ingested source is a silent quality loss.
 5. **Audio Overview → Customise.** Paste the Step 2 prompt.

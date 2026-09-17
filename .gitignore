@@ -132,3 +132,9 @@ podcasts_web/
 # ⚠️ This IGNORES, it does not un-ignore. Never weaken these rules to make
 # something commit; force-add the one file if you genuinely mean to.
 podcasts/
+
+# Podcast-automation queue/checkpoint state (project/plans/PODCAST_AUTOMATION_LOCAL.md).
+# Operational state only — item status, hashes, timestamps. Never cookies,
+# credentials or account identifiers. Not the corpus record; project/reviews/
+# holds the tracked, accepted-episode record once an episode ships.
+.podcast_queue/
