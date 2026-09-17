@@ -19,6 +19,26 @@ parallel at once** (the plan's own hard batch ceiling, unchanged), each still
 requiring the full two-reviewer pass before acceptance — parallelism is about
 throughput of generation, not a shortcut past review.
 
+⚠️ **A third episode (`language_and_glossary`) landed the same fabricated
+injury/concussion segment a third time, now reinforced twice within one
+episode** — see
+[`../reviews/language_and_glossary_podcast_no_go_2026-09-17.md`](../reviews/language_and_glossary_podcast_no_go_2026-09-17.md).
+This closed the question of whether it was chance: it is a property of the
+pipeline. **Root cause found and fixed for one whole fabrication class**:
+`.claude/skills/notebooklm-episode/prompt_constraints.md`'s own constraint 3
+was itself stale — it told every generation that Britain's current IIHF
+edition (v1.1) "could not be obtained" and flagged a version gap that does
+not exist; `sources/README.md` confirms v1.1 is on disk and is exactly what
+the corpus cites. The generator wasn't hallucinating that specific narrative,
+it was faithfully restating a false instruction we gave it. **Fixed**, and a
+new constraint 9 added naming the other confirmed fabrication patterns
+directly (the fabricated safety segment, invented statistics/dimensions,
+invented rules), with an explicit self-check requirement and a direct call-out
+of which teaching-prompt instructions pull toward invention. **Not yet
+proven to work** — a small validation batch (2-3 documents, including a
+retry of `rink_map` and `core_principles` for a clean before/after) is being
+run before committing the fixed prompt to the full 10-parallel batch.
+
 ⚠️ **Operational finding: the NotebookLM notebook's own "Generating Audio
 Overview... Come back in a few minutes" status panel can go stale and keep
 showing "generating" long after the audio has actually finished** — one
