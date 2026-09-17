@@ -211,61 +211,41 @@ const theRiskMap = {
   half: false,
   width: 1100,
 
-  // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. The notes
-  // below were written against the longer text: a clause one of them names may no longer
-  // be in the caption. They are kept for their reasoning, not as a description of it.
-  // NO WARNING GLYPH ON THIS RUN, AND THAT IS THE FIX RATHER THAN AN OVERSIGHT.
-  // `captionNodes()` in site/src/plugins/remark-corpus.mjs promotes from the first ⚠️
-  // to the END of the caption with no closing delimiter, so a glyph here ambered all
-  // 1,243 characters that follow — and not one of them is a hazard. What follows is a
-  // coaching-consensus disclosure, a negative existence claim, a greyscale/e-ink
-  // legibility caveat, an undefined-edges caveat and a note about turnover direction.
-  // Round 58 verified the invariant that no tactical prose is ambered anywhere; painting
-  // honest limits in the safety colour is how a reader learns to discount the amber that
-  // does matter.
+  // ⚠️ CAPTION CUT FROM 407 WORDS TO 55 ON 18 September 2026, AND NOTHING IN IT WAS
+  // DELETED — IT WAS ROUTED. Before this cut the caption was the SOLE carrier of five things:
+  // a coaching-consensus disclosure, a negative-existence claim (no source ranks the five
+  // regions against each other), a greyscale/e-ink legibility caveat, an undefined-edges /
+  // "their end" scope clause, and a note that the map cannot show a turnover's direction.
+  // The first two were checked against the host document's prose and were ALREADY there —
+  // the vocabulary section and the Honest caveat under the risk-map table both state the
+  // consensus-not-measurement limit and the "nothing ranks the five against one another"
+  // claim in full, with more scope than the caption ever carried. The other three were not
+  // in the prose anywhere, so they are now: risk_management.md carries three new paragraphs
+  // directly after `![](diagram:the-risk-map)`, in this order — the greyscale/e-ink caution,
+  // the undefined-edges and "their end" scope clause (the same one a shortening once cut and
+  // this file's history recorded as "do not cut it again" — it is not cut, it has a home
+  // outside the caption now), and a one-sentence flag that the map has no sense of direction,
+  // which hands straight off to "Why north turnovers are so much worse than south turnovers",
+  // the very next section, where the mechanism was already spelled out at length. Cutting the
+  // caption further than this is fine PROVIDED whatever is cut still lives in that prose —
+  // check it there before shortening again, not by re-reading this comment.
   //
-  // ⚠️ THE "their end" SCOPE CLAUSE WAS CUT BY THE SHORTENING AND HAS BEEN PUT BACK. It is
-  // the sentence naming the ice the blue region actually covers — "from their faceoff dots
-  // back to the end boards, where the grade given is for their corners and the ice below
-  // their goal line" — and it does two jobs at once. It scopes the LABEL, because "their
-  // end" is rink_map.md §4's own unambiguous name for the whole attacking zone, blue line
-  // to end boards, while this polygon is the deepest 31 ft of it; and it discloses the
-  // polygon's OVER-reach, because the shading also covers the ice in front of their net,
-  // which the section's row ("In their corners and below their goal line") does not name.
-  // The zone comment below says the over-reach is "disclosed in the caption"; for one
-  // commit it was not. Do not cut it again — it is a scope clause, not narrative.
+  // NO WARNING GLYPH ON THIS CAPTION, and none is needed: `captionNodes()` in
+  // site/src/plugins/remark-corpus.mjs promotes from the first ⚠️ to the end of the caption
+  // with no closing delimiter, and there is no longer a caveat run for it to amber. Round 58's
+  // invariant — no tactical prose is ever ambered — holds trivially now because the caption
+  // is short enough that nothing in it needs the safety colour.
   //
-  // ⚠️ The caption's first limit was REWRITTEN on 14 September 2026 and is no longer 'every
-  // word unchanged'. It carried the document's flat 'no study ranking turnovers by where on
-  // the ice they happen was found for it' — and one of the five regions it draws has since
-  // been priced, so the caption was voicing a superseded absence claim INSIDE the document
-  // that had already corrected it. The surviving half — that nothing ranks the five against
-  // one another — is still true and is the half that matters. Figures stay with their owner
-  // in risk_management.md; a caption states that a price exists, never what it is.
+  // ⚠️ The caption's coaching-consensus/measurement limit was REWRITTEN on 14 September 2026,
+  // before this cut: it used to carry the document's flat 'no study ranking turnovers by where
+  // on the ice they happen was found for it', and one of the five regions had by then been
+  // priced, so that absence claim was stale inside the very document that had corrected it.
+  // The prose this caption now defers to carries the corrected, scoped version.
   caption:
-    'A map of what a mistake costs, by where on the ice you make it. Your own net is at the left of ' +
-    'the whole sheet, the attack moves left to right, and the shading is a cost gradient rather than ' +
-    'anything painted on the ice: the darker the red, the more a turnover there is likely to cost. ' +
-    'Grade any patch of ice by one question — if I lose the puck here, how many seconds and how many ' +
-    'bodies stand between the turnover and a shot on my own net? Darkest is your own slot, the ice in ' +
-    'front of your own net between the faceoff circles. Your own end as a whole is one shade lighter. ' +
-    'The band across the middle of the neutral zone carries exactly the same shade as your own end, ' +
-    'and that is the picture’s point: your own end is dangerous but organised, while the middle of ' +
-    'the neutral zone is dangerous and disorganised. The narrow band just inside their blue line is ' +
-    'lighter again, and their end, shaded blue rather than red, is the cheapest ice on the sheet to ' +
-    'make a mistake in. Close to half of all NHL goals came from the inner slot alone over a ' +
-    'three-year five-on-five sample, on Sportlogiq tracking that is not public and cannot be ' +
-    're-derived. This ordering is coaching consensus, reasoned from shot danger and from how long a ' +
-    'turnover takes to become a shot on your net — no source found here ranks these five regions ' +
-    'against one another, and one of the five has since been priced on its own, at the band on their ' +
-    'blue line. So take the order from the words, and not by ranking the tints against each other: ' +
-    'their end is drawn in blue rather than red, and a light blue prints darker than the faintest red ' +
-    'in greyscale. Nothing here is marked on a real rink, and the edges are drawn only so the shading ' +
-    'can have one: the band at their line has no defined depth, and the blue at their end covers the ' +
-    'ice from their faceoff dots back to the end boards, where the grade given is for their corners ' +
-    'and the ice below their goal line. And a turnover also has a DIRECTION, which no still map ' +
-    'can show — losing the puck ' +
-    'while it travels toward your own net makes the turnover and the counter-attack the same event.',
+    'A map of turnover cost by location, by coaching consensus rather than measurement. Own net ' +
+    'left, attack left to right; darker red costs more. Your own slot is worst; your own end and the ' +
+    'middle of the neutral zone share a shade — both dangerous, the middle also disorganised; their ' +
+    'end, in blue, is cheapest.',
 
   describe:
     'The full 200-foot sheet, seen from above, with no players and no routes. Your own end is ' +
@@ -407,7 +387,10 @@ const theRiskMap = {
       // are one continuous region on this sheet and a U-shaped polygon would put
       // its own label in the hole. That means the shading also covers the ice in
       // front of their net, which the row does not name — disclosed in the
-      // caption rather than silently included. The grading question answers the
+      // owner document's prose rather than silently included (see
+      // risk_management.md, the paragraph after the diagram — routed there
+      // from the caption on 17 September 2026, not in the caption itself
+      // any more). The grading question answers the
       // same way there ("150-plus feet from your own net with all five teammates
       // between the puck and danger"), but the row is the row.
       //

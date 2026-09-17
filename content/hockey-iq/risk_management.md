@@ -127,6 +127,12 @@ Laid over the ice, those five rows are one picture — and the thing a table can
 
 ![](diagram:the-risk-map)
 
+**A caution about reading the shading itself: it does not survive black-and-white.** The four red bands still rank correctly with the colour removed, but their end — the cheapest ice on the sheet, and the only region shaded blue rather than red — prints *darker* than the faintest red band once the colour is gone. On a black-and-white printout or an e-reader, take the order from the labels and the table above rather than from how dark each patch looks.
+
+**Nothing on the map is painted on a real rink.** The edges exist only so each row above can be shown as a patch of ice: the band at the offensive blue line has no fixed depth, and the blue region labelled “their end” runs from their faceoff dots back to the end boards — which also shades the ice directly in front of their net, ice the table's row above does not name (that row is written for their corners and the ice below their goal line specifically).
+
+**One more limit, and it is the subject of the next section: the map has no sense of direction**, and a turnover's direction changes its cost as much as its location does.
+
 ### Why north turnovers are so much worse than south turnovers
 
 ```facts

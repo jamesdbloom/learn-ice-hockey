@@ -2478,14 +2478,19 @@ file set, evidence link, and acceptance condition after the readability go/no-go
 - [x] **CLOSED, 17 September.** Re-measured against current `sources/hc.txt`
   (unchanged: `goaltender` 349, `goalkeeper` 4) and recorded in `sources/README.md`
   under the Hockey Canada entry.
-- [ ] `the-risk-map`'s caption is **407 words** against a 25–50 target, and
-  **cutting it is what caused a real regression this round** — commit `d09b318`
-  removed the clause scoping which ice the *"their end"* grade applies to. It is
-  the sole carrier of the Sportlogiq scope, the *"coaching consensus not
-  measurement"* limit, a negative-existence claim, the greyscale/e-ink caveat and
-  the undefined-edges caveat. **Acceptance:** route the greyscale/e-ink caveat and
-  the turnover-direction note into `risk_management.md` prose; the caption can
-  then safely halve. ⚠️ **Routing, not compression.**
+- [x] **CLOSED, 17 September — routed and cut, independently verified GO.**
+  The greyscale/e-ink caveat, the "their end" ice-scoping clause (the exact
+  regression `d09b318` caused), and the undefined-edges caveat were moved into
+  three new `risk_management.md` prose paragraphs; the Sportlogiq scope,
+  "coaching consensus not measurement," and the negative-existence claim were
+  confirmed already present elsewhere in the prose, not unique to the caption.
+  Caption cut from 407 to 55 words. An independent `diagram-reviewer` pass
+  verified the "their end" clause against the diagram's own zone polygon
+  (confirms it geometrically covers the net-front ice the clause discloses),
+  confirmed the greyscale luma claim arithmetically, confirmed only this one
+  diagram's build output changed, and confirmed nothing else the old caption
+  carried was lost. One stale internal code comment it flagged was also fixed.
+  `check_absolutes`, `check_links`, `check_facts`, `check_geometry` all clean.
 - [ ] `screen-the-goalie-sightline` carries an **operative where-to-stand
   instruction the body does not give in words** — *"keep both feet out of the
   paint, and off the crease line at its edge, which the IIHF, USA Hockey and
