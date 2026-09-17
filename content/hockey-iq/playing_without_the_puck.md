@@ -419,10 +419,10 @@ Key: Defenders match speed but struggle to match changes of speed, because react
 Action: Slow down, then explode — coasting for a stride invites the defender to close and settle, and the moment they settle you go
 Never: Arrive at your top speed with nowhere to go — speed is only useful if it creates separation at the moment the pass comes
 Technique: Stopping is a change of speed too — a hard stop while your check keeps going creates separation and leaves you facing the play
-Convention: That a change of speed beats top speed is coaching craft, not a measured finding — the IIHF's coach-development manual and Edge Ice Academy both teach it, and neither measures it
+Convention: That a change of speed beats top speed is coaching craft, not a measured finding — the IIHF's coach-development manual and Cutting Edge Ice Academy both teach it, and neither measures it
 ```
 
-Defenders match speed. They struggle to match *changes* in speed, because reacting costs them a beat. **That a change of speed beats top speed is coaching craft, not a measured finding** — the IIHF's coach-development manual and Edge Ice Academy both teach it, and neither measures it. See [Time and Space](time_and_space.md).
+Defenders match speed. They struggle to match *changes* in speed, because reacting costs them a beat. **That a change of speed beats top speed is coaching craft, not a measured finding** — the IIHF's coach-development manual and Cutting Edge Ice Academy both teach it, and neither measures it. See [Time and Space](time_and_space.md).
 
 - **Slow down, then explode.** Coasting for a stride invites the defender to close and settle. The moment they settle, go. It runs against instinct, because slowing down feels like laziness.
 - **Never arrive at your top speed with nowhere to go.** Speed is only useful if it creates separation at the moment the pass comes.

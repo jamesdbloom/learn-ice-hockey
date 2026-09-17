@@ -886,7 +886,7 @@ Action: Chip past them — an aggressive gap is a defender with committed moment
 Action: Get the puck off your stick early; make the play a stride before they arrive
 Action: Use the space behind the defenders — send a teammate into that ice and pass it to them there
 Technique: Change of pace beats a move — hard deceleration then re-acceleration ruins a defender who is closing hard
-Convention: That a change of pace beats a move is coaching craft, not a measured finding — the IIHF's coach-development manual and Edge Ice Academy both teach it, and neither measures it against a move or against top speed
+Convention: That a change of pace beats a move is coaching craft, not a measured finding — the IIHF's coach-development manual and Cutting Edge Ice Academy both teach it, and neither measures it against a move or against top speed
 ```
 
 They close hard and early, well before their own line.
