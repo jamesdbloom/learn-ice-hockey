@@ -794,8 +794,8 @@ would not have been seen.**
   in an earlier round — but the same unscoped false form survives, unrepaired,
   twice more in the same document (`:665` Common Mistakes, `:735` a numbered
   coaching point), read aloud in a document whose own body elsewhere states the
-  correct scoped version. Routed to a fix-and-review pair (in progress), not
-  edited by the routing check itself. Full account:
+  correct scoped version. Fixed (`:665`, GO from independent review) — see
+  Workstream 2M below for the fix record. Full account:
   [`../reviews/disclosure_routing_retest_2026-09-17.md`](../reviews/disclosure_routing_retest_2026-09-17.md).
   **The 14 unidentifiable HOLDS remain genuinely un-routing-checked** — the
   next pass on this class should re-run `check_disclosures.py --layer facts`
@@ -1554,6 +1554,29 @@ has not been reviewed.**
 **Owner:** coordinator found it; `rules-verifier` was dispatched on
 `positions/goaltender.md`, `defender.md`, `center.md`, `winger.md`.
 **Evidence:** both books read on disk 16 September; wording quoted below.
+
+- [x] **CLOSED, 17 September — `center.md:665` fixed, independently verified GO.**
+  The false "no published checking age at all" claim (found by the disclosure
+  routing re-test above) was corrected to match the already-correct sibling
+  passages at `:626` and `:634`: neither rule book states one, but IHUK
+  publishes one per league in its Rules of Competition. `check_links.py`,
+  `check_facts.py`, `check_absolutes.py` all clean; the untouched second
+  occurrence at `:735` was independently re-checked and confirmed already
+  correctly scoped.
+- [ ] ⚠️ **NEW FINDING from the same review: `center.md`'s own Sources trailer
+  (`:763`) is stale and now self-contradicts the body it is supposed to
+  document.** It reads *"...the IHUK In-House Rules 2025-26 and 2026-27 and
+  England Ice Hockey's Rules & Regulations on disk contain no body-checking
+  provision at all... so no British junior or recreational restriction is
+  stated here"* — a sentence that predates (commit `fda5dc5`) the later fix
+  (commit `f2e5fa0`) which correctly added "IHUK publishes one... in its
+  Rules of Competition" at `:626`/`:634`/now `:665`, but never touched the
+  trailer. **The trailer's "no restriction is stated here" now flatly
+  contradicts the body's "IHUK publishes one."** `f2e5fa0`'s commit message
+  says the same partial-propagation pattern may also affect
+  `body_contact_and_battles.md`'s and `faceoffs.md`'s Sources trailers — not
+  checked. **Acceptance:** `center.md:763` updated to match the body, and
+  the two named sibling documents checked for the same gap.
 
 ⚠️⚠️ **INTERRUPTED BY THE WEEKLY RATE LIMIT (resets 20 September, 22:00
 Europe/London), NOT by completion.** Three agents working this class died
