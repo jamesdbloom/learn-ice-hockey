@@ -162,16 +162,27 @@ set. **Priority:** highest. **Dependency:** Workstream 0. **Design specification
   test and surfaced real corpus defects, which is the strongest available
   evidence the method works, but a deliberately-constructed novel scenario
   has not been tried.
-- [ ] **Partially done, not claimable as closed.** Every principle *wording
-  change* made this session (the Principle-4 and Principle-6 fixes, the
-  `defending_the_rush.md` citation) was cleared by `content-reviewer` and,
-  where it touched safety content, `safety-reviewer`. Neither
-  `rules-verifier` nor `facts-reviewer` has run a dedicated pass over
-  `core_principles.md`'s seven principles as a named exercise — the matrix
-  work repeatedly flagged specific rule citations and numeric claims within
-  the matrix'd documents as needing `rules-verifier`/`facts-reviewer` before
-  a link ships, but that is downstream-document work, not a clearance of
-  the principles' own wording. Tracked as open.
+- [x] **DONE, 17 September — this row now closed.** Dedicated
+  `rules-verifier` and `facts-reviewer` passes ran over
+  `core_principles.md`'s seven principles as a named exercise, completing
+  1A's reviewer-clearance requirement. `facts-reviewer` found and fixed a
+  Critical (Principle 7's "no time to turn" boards fallback was silent in
+  its Key focus and Key Takeaway layers — the two most likely to be heard
+  in isolation). `rules-verifier` confirmed all 19 rule claims checked
+  against primary text, with one precision fix (a Hockey Canada claim
+  overstated as "no such sentence anywhere in its book," missing a
+  narrower Rule 8.1 permission) that was then found to have propagated,
+  unfixed, into `rink_map.md` and `on_ice_communication.md` — both
+  corrected to match. Full account:
+  [`../reviews/principle7_fallback_and_hc_precision_2026-09-17.md`](../reviews/principle7_fallback_and_hc_precision_2026-09-17.md).
+- [ ] The same Hockey Canada Rule 8.1 imprecision (naming the rule without
+  saying what it permits) is still live in two further documents:
+  `content/hockey-iq/playing_without_the_puck.md` and the first of two
+  mentions in `content/systems/breakouts.md` (whose second mention already
+  states it fully and correctly — the most precise version of this fact
+  anywhere in the corpus). Not fixed in this round; a future pass should
+  match both to the now-corrected wording in `core_principles.md`,
+  `rink_map.md` and `on_ice_communication.md`.
 
 ### 1B. Two pilot documents and pathways
 
