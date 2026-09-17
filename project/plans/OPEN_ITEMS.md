@@ -1015,11 +1015,19 @@ which found it, verified it, and **deliberately did not close it**.
   ⚠️ **This is the second time this session that a *"both books say the same thing"*
   premise has failed on an intent word. Check the parent clause AND the sibling
   clause before writing any cross-book parallel.**
-  ⚠️⚠️ **WHY IT WAS NOT CLOSED, AND THIS IS THE FINDING:** that section's facts
+  ⚠️⚠️ **WHY IT WAS NOT CLOSED, AND THIS IS THE FINDING. ⚠️ RETARGETED, 17
+  September — this is `### The trapezoid — the rule that defines what you can
+  do`, NOT `### Freezing the puck`.** An earlier version of this row did not
+  name the section, and a later agent dispatched at "Freezing" independently
+  re-derived and confirmed the actual location: the Trapezoid section's facts
   block sits at **11 of 11 facts — the hard cap** — with at most 26 characters of
-  headroom on any line and **8 on the `Key:` line that would naturally host it.**
-  Putting it in the body alone creates exactly the body-✓ / block-✗ propagation
-  gap the corpus forbids. **The style guide's own remedy is to split the section
+  headroom on any line and **8 on the `Key:` line that would naturally host it**
+  (independently recounted: 26, 2, 3, 8, 14, 2, 17, 21, 13, 2, 12 — matches).
+  The CARHA 58(b) content lives in this section's body (`goaltender.md:551`
+  area), not in Freezing's, and Freezing's own facts block (9/11, confirmed
+  independently) has no CARHA content to propagate. Putting it in the body
+  alone creates exactly the body-✓ / block-✗ propagation gap the corpus
+  forbids. **The style guide's own remedy is to split the section
   on the seam the body already uses — and that is authoring, not a correctness
   pass.** **Acceptance:** the section is split and the fact lands in both layers,
   reviewed as new authoring.
@@ -1686,15 +1694,19 @@ readers are mostly on the IIHF book. **The brief would have caused a
 penalty-bearing defect.** ⚠️ **"Refute the brief" is not only about stale premises.
 It is about the authority the brief did not carry.**
 
-- [ ] ⚠️ **`goaltender.md`'s `Freezing` facts block cannot carry the 618(c)
-  definition or the side/rear permission — it is at 11 of 11, the hard cap**, and
-  the line that would host it had 33 characters. The agent **did not trim a hedge
-  and did not split the section**, because the seam — three-seconds/stoppage-acts
-  against when-to-freeze-tactically — is **authoring, not a correctness pass.**
-  ⚠️ **No checker can see this omission: `check_facts` passes on a block at exactly
-  the cap.** Only a `facts-reviewer` reading the block against its section body
-  finds it. **Acceptance:** the section is split and both layers carry it, reviewed
-  as new authoring.
+- [x] **CLOSED, 17 September — the split this row asked for was already done,
+  correctly, under a different heading.** A `rules-verifier` re-checked this row
+  fresh and found it stale: the "Freezing" facts block is not at 11/11 (9 of 11,
+  independently recounted with per-line headroom of 3–182 chars), and the 618(c)
+  definition, the wedge geometry, and the closed-hand/open-hand side/rear
+  permission were already added today in a new `### Throwing the puck forward`
+  subsection with its own 4-fact block (`goaltender.md:413-423`) — not merged
+  into Freezing. Independently re-verified against `sources/usah.txt:4261-4268`
+  (Rule 618(c)) and `sources/usah_casebook.txt` Situations 8 and 9, both
+  verbatim, including the word "forward" and the defending-zone qualifier that
+  an earlier `safety-reviewer` pass flagged as Critical. **This row's "Freezing"
+  attribution was itself the stale part** — see the retargeted row below, which
+  is where the real 11/11 gap actually lives.
 - [x] **RE-CONFIRMED UNRESOLVABLE, 17 September, with the reasoning now on
   record.** A dedicated pass worked the full computation using
   `rink_map.md`'s own stated NHL/IIHF numbers and found it genuinely
