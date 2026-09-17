@@ -299,26 +299,37 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   mismatch (confirmed real; not yet a live bug since no document currently
   links a specific numbered principle to itself — recorded as a hard
   constraint for whoever builds the matrix below).
-- [ ] Dispatched: `source-verifier` refetch of every citation in
-  `core_principles.md` — it is now load-bearing for every other page's
-  opener and has never been independently re-verified.
+- [x] **CLOSED — see Workstream 1D for the full result.** All 14 citations
+  hold; one genuine misattribution found and fixed (a quotation credited to
+  `forechecking_systems.md` that was actually `breakouts.md`'s own wording).
 - [x] **DECIDED — REJECT, 17 September.** Two INDEPENDENT `content-reviewer`
   passes, run on different days by different agents, converged on the same
   verdict with overlapping but independently-derived reasoning. Full decision,
   the rejected-candidate log entry, and what a future qualified version would
   need are recorded in Workstream 1G below — this row is the dispatch record,
   that one is the decision.
-- [ ] **NOT started, and honestly scoped as needing more than an agent wave:**
-  Workstream 1A's principle-to-corpus matrix across all 39 documents, the
-  transfer audit in at least three contexts per principle, and Workstream
-  1C's task-based usability testing across the six audience strata. ⚠️ **The
-  plan's own acceptance condition names real human participants — "at least
-  one U10 player/parent pair," an older-youth reviewer, an adult beginner,
-  an adult-rec player, a reference reader, a coach.** Agent proxies can draft
-  the matrix and flag transfer failures, but **cannot substitute for the
-  human task-testing this gate requires**, and a proxy result must be labelled
-  as a proxy, per the plan's own working rule. This is the honest limit of
-  what this session can close on its own.
+- [ ] **STARTED, 17 September — first tranche of 10/39 documents.** Two
+  `content-reviewer` passes drafted the principle-to-corpus matrix for the
+  five position documents and five systems documents. Full matrix, five
+  convergent findings, and the priority order for what's next:
+  [`../reviews/principle_matrix_draft_2026-09-17.md`](../reviews/principle_matrix_draft_2026-09-17.md).
+  **Headline result: TWO independent agents, working in disjoint document
+  sets, both found that principle 6 has a real "denial direction" (a
+  forecheck angle, a penalty kill, and the goaltender's own subject-position)
+  that the principle's existing hedge does not cover** — a genuine gap in
+  `core_principles.md` itself, surfaced by exactly the transfer-audit method
+  this workstream exists to run. **Also found:** a real (not just missing-link)
+  principle-4 content gap in `center.md`, `defender.md` and `winger.md` — none
+  contains any scanning-related language at all; `switching_positions.md:53`
+  is the model instance to copy. **29 of 39 documents remain unmatrixed.**
+  ⚠️ **The plan's own acceptance condition for the WIDER release (Workstream
+  1C's task-based usability testing) names real human participants — "at
+  least one U10 player/parent pair," an older-youth reviewer, an adult
+  beginner, an adult-rec player, a reference reader, a coach.** Agent proxies
+  can draft the matrix and flag transfer failures — which they just did,
+  productively — **but cannot substitute for the human task-testing that gate
+  requires**, and a proxy result must be labelled as a proxy. That remains the
+  honest limit of what this session can close on its own.
 - [ ] Metadata classification remains at 3 of 39 documents (the two pilots
   plus the principles index); 36 explicitly `unclassified`, correctly, per
   the plan's own rule against inferring a safety-relevant label. Expanding
