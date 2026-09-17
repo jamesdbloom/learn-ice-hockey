@@ -22,7 +22,7 @@
 
 **You almost never have the puck** — about forty seconds in every twenty minutes of ice time, measured on professional forwards at five-on-five, on tracking data the NHL itself calls unofficial — so the rest of the shift is most of your game.
 
-**Look before the puck reaches you.** A glance while the pass is travelling is free; one taken after it arrives is paid for in possession.
+⚠️ **Look before the puck reaches you** — unless you are the goaltender, where the puck is already live and looking away from it is never free. Otherwise, a glance while the pass is travelling is free; one taken after it arrives is paid for in possession.
 
 **Where you are standing decides what a mistake costs**, so take the stride that changes the ice before you choose the play.
 
@@ -110,7 +110,7 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 
 ## 4. Look before the puck reaches you
 
-**The principle.** A glance over your shoulder while the pass is still travelling is free, because your eyes have nothing else to do. A glance after the puck arrives is paid for in possession time, and the picture has changed while you looked.
+**The principle.** A glance over your shoulder while the pass is still travelling is free, because your eyes have nothing else to do. A glance after the puck arrives is paid for in possession time, and the picture has changed while you looked. ⚠️ **This reverses for the one position that is watching a puck that is already live rather than waiting for one to arrive.** A goaltender facing a shot has nothing to gain by looking away from it — [Goaltender](../positions/goaltender.md) has them "[t]rack the puck all the way into the pad, the glove, the chest" instead, because losing sight of it, not failing to glance elsewhere, is what costs the goal.
 
 **Why it matters.** Players who look like they see the whole ice have almost always simply already looked. It is the cheapest improvement available in hockey: it costs no fitness, no ice time and no talent.
 
@@ -203,7 +203,7 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 2. ⚠️ **Which rule book you are under, and which age and league category you sit in, decides what is legal for you — so ask your coach or your league which category you are in before you play a shift, because you cannot work it out on the ice.**
 3. ⚠️ **If you play adult recreational hockey, find out whether your league is CARHA-affiliated before you rely on "hold your ground."** CARHA Rule 49(a) reaches a player who *"does not avert body contact with an opponent"*, which the NHL, IIHF and USA Hockey books do not — but **Rule 49(c) keeps genuinely accidental contact outside it**, and ⚠️ **that the limb amounts to a duty to get out of the way is a reading of the rule's grammar, which CARHA does not gloss.**
 4. **You almost never have the puck.** Measured on NHL forwards at five-on-five — on tracking data the league itself calls **unofficial** — it is about forty seconds in every twenty minutes of ice time, in bursts of about 1.3 seconds, so the off-puck shift is the game.
-5. **Look before the puck reaches you.** In professional hockey the action after a reception succeeded 78.8% of the time when the player had looked first against 70.1% when they had not, on the researchers' own definition of success — and those researchers say their data cannot tell you whether looking more than once adds anything.
+5. **Look before the puck reaches you.** In professional hockey the action after a reception succeeded 78.8% of the time when the player had looked first against 70.1% when they had not, on the researchers' own definition of success — and those researchers say their data cannot tell you whether looking more than once adds anything. ⚠️ **This one reverses in goal**: a goaltender facing a live puck has nothing to look away for, and tracks it all the way in instead.
 6. **Where you are standing decides what a mistake costs**, so take the stride that changes the ice before you choose the play. That ranking is coaching reasoning rather than a measured result.
 7. **Give the carrier two places to put the puck, and make sure they are at different angles**, because two teammates in one line from the puck are one option. That is coaching reasoning too, rather than a measured result.
 8. ⚠️ **Go in on an angle rather than straight at the wall — and when you cannot avoid it, meet it with your skates parallel to the boards and your forearm and hip to the wall, never the point of your shoulder, head up and chin off your chest.** Never turn your back to the boards, and never duck.

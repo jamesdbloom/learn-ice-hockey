@@ -156,10 +156,20 @@ a `Technique:` fact already on that page) rather than inventing new content.
 All three layers — Key focus, the Principle 4 body's "The principle"
 paragraph, and Key Takeaway 5 — now carry the qualifier. `check_links.py`
 and `check_facts.py` both pass (5,621 facts, unchanged — no facts block was
-touched). **Not yet committed**: per the non-negotiable that a repair cannot
-self-certify, a `content-reviewer` pass is checking the fix's accuracy,
-completeness across all three layers, and house-style conformance before
-this ships. Recorded here as in-progress rather than closed.
+touched).
+
+**Independent `content-reviewer` pass: no Critical, no Major.** The
+reviewer confirmed the quoted goaltender.md fragment is accurate, the fix
+is complete across all three layers, and the underlying claim is sound
+(goaltender.md's only "look away" language is scoped to dead-puck
+stoppages, never a live puck, so the fix does not contradict any nuance in
+the owning document). Two Minor findings, both fixed verbatim as
+suggested: (1) a silently-lowered capital in the quoted fragment with no
+`[x]` bracket disclosure — this document's own house convention elsewhere
+(e.g. line 75) — fixed to `"[t]rack the puck..."`; (2) the Key focus
+caveat lacked the ⚠️ marker its two sibling scope-narrowing bullets in the
+same block both carry — added. Gates re-run clean after both fixes.
+**Committed.**
 
 ## What this method could not have found
 
