@@ -255,9 +255,22 @@ reports; `content/foundation/core_principles.md`.
   with a hedged ranking inverts which one is the authority. **Recorded as
   the acceptance condition itself asked: "none, and why."** No further action
   needed on this row.
-- [ ] **No `source-verifier` has ever refetched `core_principles.md`'s
-  citations.** It is now load-bearing for every other page's opener.
-  **Dispatched 17 September — see Workstream 1K below.**
+- [x] **CLOSED, 17 September.** A full `source-verifier` pass refetched all
+  14 sources cited across the seven principles — NHL, IIHF, USA Hockey,
+  Hockey Canada, CARHA, four IHUK Rules of Competition documents, two USA
+  Hockey safety guides, and the Berg et al. 2025 and Iaboni et al. 2025
+  studies. **All 14 HOLD**, every quoted string located verbatim, every
+  number checked precisely (sample sizes, percentages, confidence intervals).
+  ⚠️ **One genuine defect found and fixed: a quotation was credited to the
+  WRONG SIBLING DOCUMENT.** `core_principles.md` quoted *"a documentation
+  convention, not a claim about what most teams play"* as `forechecking_systems.md`'s
+  own words; the phrase is verbatim in `breakouts.md:604`, not
+  `forechecking_systems.md` (which states the same underlying fact in
+  different words, at `:249`). **Right fact, wrong named source for that
+  exact wording** — fixed by moving the quotation to its actual source while
+  still crediting `forechecking_systems.md` for the same underlying claim.
+  All nine other cross-referenced sibling sections independently re-read and
+  confirmed unchanged since 14 September.
 
 ## Workstream 1K: readability release one, restarted after a three-day gap
 
