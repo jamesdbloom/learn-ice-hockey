@@ -2,7 +2,7 @@
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Center](center.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Zone Entries](../systems/zone_entries.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Center](center.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Zone Entries](../systems/zone_entries.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Key focus
 
@@ -96,6 +96,8 @@ Goal: Don't lose the puck in a dangerous position. Get it to safety
 **What to do:** Shield the puck from the pressuring opponent. Look for your center swinging low or your defenseman as a safe outlet. If no pass is available, **rim** the puck (a hard shot along the boards that follows the curve of the rink onward to a teammate further around) away from danger, or **reverse** it (send it back the way it came, against the direction the pressure is flowing) to a teammate arriving behind you.
 
 **Rim and reverse are opposite plays and you pick by where the pressure is.** A rim beats a checker who is sealing you against the boards, because it goes *past* them. A reverse beats a checker who has over-committed and skated past you, because it goes back into the space they just left.
+
+**Make that pick before the puck is on your stick, not after.** You are receiving into a wall reception, which is exactly the case where a late look costs the most — so take a glance over your inside shoulder while the pass is still travelling, and let the last look land back on the puck just before it arrives. [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) covers the habit and the research behind it in full; it is not restated here.
 
 ![](diagram:winger-dz-rim)
 

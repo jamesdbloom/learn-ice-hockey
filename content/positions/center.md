@@ -2,7 +2,7 @@
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Winger](winger.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Faceoffs](../systems/faceoffs.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Breakouts](../systems/breakouts.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Winger](winger.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Faceoffs](../systems/faceoffs.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Breakouts](../systems/breakouts.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Key focus
 
@@ -82,6 +82,7 @@ Action: Get to a safe position first, then move the puck to a winger or rim it a
 Options: Rim it onward around the boards, or reverse it back against the flow to a defenceman arriving behind you
 Read: A reverse beats pressure that has over-committed; a rim beats pressure that is sealing you in
 Priority: Getting the puck out of danger beats making a great play
+Action: Make the rim-or-reverse read while the puck is still travelling to you — a look over your shoulder before it arrives, not after
 ```
 
 **Where to be:** Low in the defensive zone near the boards or behind the net.
@@ -89,6 +90,8 @@ Priority: Getting the puck out of danger beats making a great play
 **What to do:** Don't try to carry through traffic in your own zone. Get to a safe position and quickly move the puck to a winger or rim it around the boards (a hard shot along the boards that follows the curve of the rink around to a teammate further along — typically from one corner, around behind the net, to the far corner). The priority is getting the puck out of danger, not making a great play.
 
 A **rim** and a **reverse** are different plays and worth keeping straight: a rim sends the puck *onward* around the boards in the direction you're facing; a reverse sends it *back the way it came*, against the flow of the forecheck, usually to your defence partner or a defenceman arriving behind you. A reverse beats pressure that has over-committed; a rim beats pressure that is sealing you in.
+
+**Make that read while the puck is still travelling to you, not after it's on your stick.** While your defenceman is retrieving it behind the net, take a look over your shoulder for the side the forecheck is sealing — that is the same look that lets you go straight into a rim or a reverse the instant you receive, instead of discovering the answer with a forechecker already on you. [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) covers the habit and the research behind it in full; it is not restated here.
 
 ![](diagram:centre-out-of-the-middle)
 
