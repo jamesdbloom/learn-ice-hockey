@@ -86,6 +86,46 @@ conform), `check_absolutes.py` (39 documents + 408 diagram units, clean)
 — run after every fix in this round, across `goaltender.md`,
 `defender.md`, and `equipment.md`.
 
+## Also fixed: the goaltender.md diagram caption had the same stale gap
+
+A `goalie-rim-stop-or-clear` caption review, dispatched to check a
+different, older plan hypothesis (a feared caption borrowed into
+`defender.md` addressing the wrong reader) found that hypothesis was
+stale — `git log --all -S` confirms the borrow never happened in this
+repository's history, and the diagram's only host today is
+`goaltender.md`, correctly voiced throughout. But the same review found
+the caption itself still carried the exact stale two-book trapezoid
+phrasing this round's CARHA fix had hunted down and closed everywhere
+else in the document's prose — a location `check_rule_scope.py` and
+`check_absolutes.py` cannot reach, since captions live in
+`site/src/diagrams/*.mjs` and the built `diagrams.json`, not in the
+`content/` prose those tools scan. Fixed, `diagrams.json` rebuilt from
+the updated source (confirmed genuinely regenerated, not stale), gates
+re-run clean. A `diagram-reviewer` pass confirmed the fix accurate,
+correctly rebuilt, and consistent with this document's own established
+pattern of not repeating the CARHA scope qualifier at every restatement
+of this specific claim — flagging that choice as a defensible judgement
+call rather than a defect, with a note that a diagram page reachable
+independent of the prose is a slightly more isolated context than a
+mid-document restatement, worth a future tightening pass rather than a
+blocker now.
+
+## A separate, unrelated finding: a live podcast episode narrates an
+   already-fixed rules mistake
+
+A research pass investigating a different open item (whether
+`core_principles.md` and `language_and_glossary.md` have podcast audio)
+found the `foundation/rink_map` episode's audio — still published, still
+linked — genuinely narrates real glossary content (28.6% of a ~60-minute
+episode), but that audio was generated 7 September, before a 12
+September text fix to the goalkeeper-crease rule (the audio still states
+it as keyed to skates alone, when USA Hockey Rule 625(b) also names the
+stick). This is a live discrepancy between what the corpus's written
+record says was corrected and what a subscriber currently hears. Not
+fixed here — audio regeneration is build/authoring work outside this
+round's scope — recorded in Workstream 3 with the full acceptance
+criteria a fix would need.
+
 ## What this round could not have found
 
 The over-scoped-permissions census used five fixed search patterns plus

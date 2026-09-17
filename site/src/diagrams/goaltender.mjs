@@ -557,8 +557,8 @@ const rimStopOrClear = {
     'the puck. Under the NHL book, whether a deliberate body block counts as playing it is this ' +
     'document’s reading rather than a quoted interpretation. In front of the goal line, and ' +
     'behind it inside the shaded area, blocking a rim with your pads is completely legal. Where a ' +
-    'trapezoid applies is not universal — the NHL and IIHF play have one, neither the USA Hockey ' +
-    'nor the Hockey Canada book marks one at all, and England Ice Hockey’s 2024-25 regulations ' +
+    'trapezoid applies is not universal — the NHL and IIHF play have one, none of USA Hockey, ' +
+    'Hockey Canada or CARHA marks one at all, and England Ice Hockey’s 2024-25 regulations ' +
     'say it is "not currently enforced" in England and Wales, which the current In-House Rules do ' +
     // ⚠️ FULL STOP, NOT A COLON, before "Assume it binds" below. "…do not settle whether the
     // suspension still stands: assume it binds, ask your league…" puts a MAIN-CLAUSE negation

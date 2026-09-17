@@ -1688,13 +1688,30 @@ It is about the authority the brief did not carry.**
   the cap.** Only a `facts-reviewer` reading the block against its section body
   finds it. **Acceptance:** the section is split and both layers carry it, reviewed
   as new authoring.
-- [ ] ⚠️ **A geometry question deliberately left open.** Does *"the top of the
-  circle along the boards"* — the IIHF Handbook's fact pattern — lie **outside**
-  USA Hockey's two lines from the posts to the end-zone faceoff spots?
-  `rink_map.md` could settle it. ⚠️ **The agent refused to assert it, because the
-  unsafe direction of being wrong is telling a USA Hockey goaltender a wall throw
-  is permitted**, and left the two rulings side by side. **If anyone does the
-  computation, the sentence it improves is `goaltender.md:395`, sentence 6.**
+- [x] **RE-CONFIRMED UNRESOLVABLE, 17 September, with the reasoning now on
+  record.** A dedicated pass worked the full computation using
+  `rink_map.md`'s own stated NHL/IIHF numbers and found it genuinely
+  cannot be settled from what the corpus states, for three independent
+  reasons: (1) `rink_map.md`'s own definition of "the top of the circle"
+  is a depth marker only (~35 ft from the goal line), with no stated
+  lateral coordinate to combine with "along the boards"; (2) that depth
+  sits *beyond* the end-zone dots, which is exactly the zone
+  `goaltender.md` already flags as undefined territory for USA Hockey's
+  wedge lines (the rule states the lines run "to" the dots and never
+  says whether they continue past that point); (3) `rink_map.md` gives
+  no USA-Hockey-specific rink/faceoff coordinates at all — only NHL and
+  IIHF tables — so comparing the two rulings requires assuming USA
+  Hockey shares NHL geometry, which is never stated as true. Worked the
+  arithmetic anyway, on those two unstated assumptions, purely to record
+  what a resolution would need: NHL numbers would place the point just
+  outside the USA Hockey wedge (36.25 ft from center vs. the boards at
+  42.5 ft) — but this is not reported as a corpus-grounded finding, only
+  as what's needed to eventually check it. **What would actually resolve
+  it**: a USA Hockey primary-source statement on whether the wedge
+  extends past the dots, a USA-Hockey-specific rink/faceoff table, and a
+  precise coordinate (not just a depth) for the IIHF fact pattern.
+  `goaltender.md`'s two rulings correctly remain presented side by side,
+  unresolved — no edit made, none warranted.
 - [ ] ⚠️ **The NHL has no obtainable casebook**, so *"forward"* is **undefined**
   under the NHL book — the IIHF Handbook is the only interpretive evidence and
   ranks itself below the Rulebook. **A reader under the NHL book has nothing but
@@ -1705,9 +1722,28 @@ It is about the authority the brief did not carry.**
   goalkeeper's equipment specifications, in 618(c) and in the Sled Hockey Pusher
   Rules. **Eight hits, all accounted for, with a positive control.** And the
   Hockey Canada forward-throw negative held a **fifth** time.
-- [ ] `goaltender.md`'s borrowed `goalie-rim-stop-or-clear` caption — **the style
-  guide's own worked example of a caption addressing the wrong reader** — sits two
-  sections from text edited this round and **was not re-examined.**
+- [x] **The original hypothesis was STALE; a real, different defect was found
+  and fixed in its place, 17 September.** The feared borrow into
+  `defender.md` never actually happened — `git log --all -S` on that
+  marker string returns no commits touching `defender.md` at any point
+  in this repository's history, and the diagram's only host today is
+  `goaltender.md` itself, where it is correctly voiced to a goaltender
+  throughout. (⚠️ **Documentation-hygiene note, not fixed**: a comment in
+  `site/src/diagrams/defender.mjs` asserts "a later round" reversed the
+  earlier refusal and made this borrow — that borrow was never actually
+  committed. A future author trusting that comment could reintroduce a
+  defect already correctly avoided, or skip re-vetting a decision that
+  was never made.) **The real, live defect**: today's own CARHA
+  propagation fix (see the `goaltender_carha` review record) reached this
+  document's prose everywhere except this diagram's caption, which still
+  read "neither the USA Hockey nor the Hockey Canada book marks one at
+  all" — the exact stale two-book phrasing the same commit hunted down
+  and closed everywhere else in this document, in a location
+  `check_rule_scope.py` and `check_absolutes.py` cannot reach (captions
+  live in `.mjs`/`diagrams.json`, not in the `content/` prose those tools
+  scan). Fixed to name CARHA, `site/src/data/diagrams.json` rebuilt from
+  the updated source, gates re-run clean. Also flagged, not fixed: a
+  label-overlap risk in the rendered PNG worth a look on a future pass.
 
 ## Workstream 3: diagrams, site, and audio release validation
 
@@ -1741,21 +1777,54 @@ disjoint diagram module. **Dependency:** Workstream 1 pilot structure.
 - [ ] Validate the speech layer in the pilot: explicit section markers, source
   order, standalone facts/warnings, and no required condition stranded in visual
   collapse. Decide whether pilot audio is regenerated or marked stale.
-- [ ] Resolve `language_and_glossary` audio explicitly before linking listeners:
-  generate/review an episode or label it reading-only everywhere.
-  ⚠️ **Derived 16 September: exactly TWO of the 39 documents have no podcast
-  episode, and the second one is release-one scope.** They are
-  `foundation/language_and_glossary` and **`foundation/core_principles`** — the
-  principles index every other page's opening principle is supposed to link to.
-  A pathway that tells a listener to start at Core Principles currently sends
-  them to a document with no audio. **Acceptance:** each is either generated and
-  reviewed, or labelled reading-only **everywhere it is linked**, including from
-  any page-opening principle.
-  ⚠️ **And note what the manifest already does here:** the `foundation/rink_map`
-  episode's asset is `/audio/foundation/rink_map_and_glossary.m4a` — one
-  file serving a name that spans two documents. Establish what that episode
-  actually contains **before** concluding the glossary is unvoiced; this may be a
-  labelling question rather than a generation one.
+- [ ] ⚠️⚠️ **INVESTIGATED IN FULL, 17 September — the manifest question is
+  answered, and it surfaced a live, unrelated defect: a published episode is
+  currently narrating a rules/safety mistake this corpus already fixed in
+  text.** Confirmed: `core_principles.md` has no episode, and cannot yet —
+  it didn't exist in git until 14 September, two days after
+  `podcast.json` was last written, and it's been edited four times since,
+  today alone. `language_and_glossary.md` also has none. Neither has a
+  false "listen to it" promise anywhere in `content/` — every inbound
+  pointer to Core Principles uses plain read/link language, and the
+  correct "reading only, no episode" disclosure already exists in
+  `pathways.json`'s Core Principles pathway entry — but that pathway's
+  `status` is `"draft"`, and drafts don't render, so **the disclosure
+  that exists is not currently reader-visible anywhere.**
+  ⚠️⚠️ **The `rink_map` manifest question resolved into something worse
+  than a stale filename.** Its audio genuinely does narrate real
+  glossary content — 22 of 77 chunks (28.6% of a ~60-minute episode) are
+  the old `## 8. Glossary` section, now `language_and_glossary.md`'s
+  Glossary section. But the TTS input is dated 7 September, and the
+  synthesized "The paint" entry states the goalkeeper-crease rule as
+  keyed to skates alone — **exactly the incomplete wording**
+  `project/reviews/change_2026-09-12_language_split_and_rink_map_rename.md`
+  **already identified as CRITICAL 1 and fixed in text on 12 September**
+  (USA Hockey Rule 625(b) also names the stick; a player relying on the
+  audio's version could have a legal goal disallowed). **The
+  already-published, still-linked episode has never been regenerated
+  since, and is currently telling a listener the pre-fix, incomplete
+  version of a rule this corpus's own written record says it corrected.**
+  The episode's glossary section also only covers roughly the back half
+  of the current `language_and_glossary.md` — the front ~200 lines,
+  consolidated from eight other documents' vocabulary sections, were
+  never part of the original episode and aren't in it at all.
+  **Acceptance, revised**: this is no longer "generate the missing
+  glossary episode or label it reading-only" alone. It needs (1) a fresh,
+  dedicated `language_and_glossary` episode — not a relabelled rink_map
+  one, since that audio is the wrong document's GUID, missing content,
+  and carries a fixed-in-text defect; (2) the `rink_map` episode itself
+  regenerated for the same reason, not left alone just because it
+  currently "counts" as covering the glossary; (3) `core_principles.md`
+  generated only once today's edits clear full review, given how many
+  times it's changed today; (4) the Core Principles pathway's
+  reading-only disclosure either promoted out of `draft` status or
+  restated somewhere that actually renders, so the correct warning that
+  already exists stops being invisible. None of this was implemented
+  here — audio generation and manifest/pathway edits are build/authoring
+  work outside a research pass's scope. Full account:
+  [`../reviews/goaltender_carha_2026-09-17.md`](../reviews/goaltender_carha_2026-09-17.md)
+  (the podcast-audio finding is filed there alongside the same day's
+  other CARHA-adjacent work; it is not itself a CARHA finding).
 - [ ] Apply podcast ordering/discovery from the separate podcast plan: preserve
   manifest `track`, RSS serial fields, and stable GUIDs; use a reviewed,
   podcast-only `podcastTitle` with a measured short prefix; validate locally
