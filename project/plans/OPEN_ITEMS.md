@@ -670,11 +670,35 @@ The two found, both in `rules_primer.md`, both repaired:
   says the files differ, not which is current. ⚠️ **No corpus quotation is
   affected; that was checked, not assumed** — both checking-format rows are
   verbatim in both revisions of both documents. Full detail in `sources/README.md`.
-  **Acceptance:** a deliberate baseline refresh via
-  `check_external_links.py --write-baseline`. ⚠️ **Do not hand-edit that file** —
-  it is tool-owned and a hand-written row diverges from what the tool writes. The
-  `source-verifier`'s report holds the four rows with today's status, bytes, final
-  URL and SHA-256 notes, ready to check the tool's output against.
+- [x] **CLOSED, 17 September — and the acceptance criteria as originally
+  written was WRONG.** *"A deliberate baseline refresh via
+  `check_external_links.py --write-baseline`"* cannot add these four rows:
+  ⚠️ **`--write-baseline` has NO discovery mechanism.** Read the source —
+  `load_baseline()` reads the existing TSV and `write_baseline()` re-verifies
+  and rewrites only the rows already there. It never scans `content/` for
+  URLs. Running it corpus-wide (812 URLs, done this session as part of the
+  same task — zero regressions, several previously-403/dead links now live)
+  left the four IHUK rows at zero matches, exactly as before, because the
+  tool was never going to add them.
+  ⚠️ **The referenced *"source-verifier's report... ready to check the tool's
+  output against"* could not be found** — not in `project/reviews/`, not in
+  `sources/README.md`. Whatever agent produced it, the report itself was
+  never saved to a tracked file, which is why it could not be used here.
+  **Resolved without hand-editing** by importing the tool's own `fetch()`
+  function directly and calling it against the four URLs — the row content
+  is exactly what the tool would have written had it discovered them, not
+  typed or guessed. Confirmed: Junior RoC 1,098,281 B (matches disk) and U10
+  666,945 B (matches disk); NIHL 542,722 B and WNIHL 431,890 B **still do not
+  match their on-disk copies** — the rollback `sources/README.md` documented
+  on 16 September has not reverted. All four rows appended with a note
+  explaining the rollback status; no corpus quotation is affected, per that
+  earlier check. **The baseline is now 815 rows, all four IHUK URLs
+  present.**
+  ⚠️ **Standing lesson for this class of acceptance criterion: verify a tool
+  actually does what a plan row assumes before writing "run the tool" as the
+  fix.** This is the second time this session a brief's proposed remedy
+  didn't match what the named tool does (the first was `check_chunk_tails.py`'s
+  own footer, wrongly accused and withdrawn — see Workstream 0B).
 
 ## Workstream 2E: the CARHA gap that could not be closed, and why
 
