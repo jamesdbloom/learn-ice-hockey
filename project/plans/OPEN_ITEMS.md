@@ -361,16 +361,15 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   flagged, as a gap rather than a defect, that it reaches no summary layer
   (Common Mistakes/Key Takeaways) the way the P7 passage does. Full account:
   [`../reviews/matrix_followup_fixes_2026-09-17.md`](../reviews/matrix_followup_fixes_2026-09-17.md).
-- [ ] **Two residuals from the row above, deferred rather than fixed under
-  review pressure:** (1) `getting_started.md` still doesn't teach the
-  angle-evasion technique or the "not on the point of your shoulder"
-  prohibition for boards contact — both present in `body_contact_and_battles.md`
-  §6 and in `core_principles.md` §7, absent here; the existing forward
-  pointer mitigates but doesn't close this. (2) The new P3/P4 passage has no
-  echo in `getting_started.md`'s Common Mistakes or Key Takeaways, unlike
-  the P7 passage's full three-layer propagation — a listener who only hears
-  this document's Key Takeaways will still never encounter "you almost
-  never have the puck" or "look before it arrives" from it.
+- [x] **DONE, 17 September — both residuals closed.** A `safety-reviewer`
+  judgement call recommended filling, not leaving as a pointer. `getting_started.md`
+  now states angle-evasion first (ahead of the brace posture, per the
+  source documents' own ordering) and the explicit shoulder-point
+  prohibition, in all three layers, and gained a Common Mistakes echo of the
+  P3/P4 passage. Reviewed clean (no Critical/Major); one Minor fixed (the
+  new scanning bullet had split a contiguous run of safety-critical Common
+  Mistakes bullets — reordered). Full account:
+  [`../reviews/boards_safety_gaps_closed_2026-09-17.md`](../reviews/boards_safety_gaps_closed_2026-09-17.md).
 - [x] **DONE, 17 September.** `core_principles.md` §6 now cites
   `defending_the_rush.md`'s 2-on-1 "take away the pass, give up the shot"
   mechanism alongside `forechecking_systems.md` and `special_teams.md`,
@@ -379,10 +378,14 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   also links `core_principles.md` and `body_contact_and_battles.md` (the
   latter justified by four existing body citations). Reviewed clean — no
   Critical or Major. Full account in the same review record as above.
-- [ ] `defending_the_rush.md` still has no Principle-7 content despite
-  thematic adjacency (racing an opponent to a loose puck near the boards);
-  flag to `safety-reviewer` for a judgement on whether that narrow gap needs
-  filling — not decided or fixed here.
+- [x] **DONE, 17 September.** A `safety-reviewer` judgement call recommended
+  a light fill, not the full technique: `defending_the_rush.md` now names
+  the retrieval hazard its own "force dump-ins" tactic creates, in both the
+  body prose (where it recommends the tactic) and the section's `facts`
+  block (so the hazard survives being heard in the audio-only facts layer,
+  which the reviewer separately flagged as still missing it), pointing to
+  `body_contact_and_battles.md#6` rather than restating the technique.
+  Reviewed clean. Same review record as above.
   ⚠️ **The plan's own acceptance condition for the WIDER release (Workstream
   1C's task-based usability testing) names real human participants — "at
   least one U10 player/parent pair," an older-youth reviewer, an adult

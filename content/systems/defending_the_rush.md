@@ -42,6 +42,7 @@ Key: On a rush your goalie is moving and cannot be set — and being set is what
 Key: Nobody has a mark, assignments are formed on the fly, and the attackers pick the play rather than you
 Priority: Preventing a rush chance is worth far more than defending one well
 Action: Kill rushes by holding a tight gap and forcing dump-ins rather than by making recoveries afterwards
+Key: A forced dump-in still has to be retrieved at your own boards, usually under forecheck pressure — decide your posture on the way in. See Body Contact and Battles
 ```
 
 Set defensive-zone play gets most of the practice time. Rush defence deserves more, and here is why.
@@ -55,7 +56,7 @@ On a rush, none of that is true:
 - **The attackers pick the play.** In a set zone you dictate what shot they get. On a rush, they do.
 - **Everything happens facing the wrong way.** You are skating backwards and they are skating forwards. That asymmetry is why rush defence has its own technique.
 
-The practical conclusion: **preventing a rush chance is worth far more than defending one well.** A defenceman who kills rushes by holding a tight gap and forcing dump-ins does more for the goals-against column than one who makes spectacular recoveries after they have already happened.
+The practical conclusion: **preventing a rush chance is worth far more than defending one well.** A defenceman who kills rushes by holding a tight gap and forcing dump-ins does more for the goals-against column than one who makes spectacular recoveries after they have already happened. That dumped puck still has to be retrieved by somebody, usually under forecheck pressure at your own boards — decide how you will meet the wall before that race starts, not on arrival: see [Body Contact and Battles, section 6](../technique/body_contact_and_battles.md#6-receiving-a-hit-safely).
 
 > **A note on numbers.** Rush and odd-man chances are widely treated by coaches and analysts as the highest-danger chances in hockey, and there is published tracking behind that. Sportlogiq data covering every NHL game from 2017-18 to 2020-21, presented at the Ottawa Hockey Analytics Conference and reported by [Alison Lukan for NHL.com](https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-chances-off-the-rush-328173944), puts a *"normal shot"* at an **8.15% likelihood of becoming a goal** — and says that *"the minute an opponent gets an extra skater on an attack, that likelihood almost triples."* The per-situation numbers sit in a Sportlogiq graphic rather than in the article's text, so the multiplier is quoted here in the words the source used and not as a precise figure.
 >
