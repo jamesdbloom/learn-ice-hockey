@@ -2266,10 +2266,9 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   makes. The claim currently rests on both books' markings rules read in full plus
   both house words searched — strong, **not** the picture. **Acceptance:** fetch
   the PDFs and `pdftoppm` the rink pages, or record the residual uncertainty.
-- [ ] ⚠️ **A house-word trap, now measured: Hockey Canada uses `goaltender` 349
-  times and `goalkeeper` 4 times.** A single-word grep of that book on any
-  goaltending question returns a false zero. **Acceptance:** recorded in
-  `sources/README.md` under the Hockey Canada entry.
+- [x] **CLOSED, 17 September.** Re-measured against current `sources/hc.txt`
+  (unchanged: `goaltender` 349, `goalkeeper` 4) and recorded in `sources/README.md`
+  under the Hockey Canada entry.
 - [ ] `the-risk-map`'s caption is **407 words** against a 25–50 target, and
   **cutting it is what caused a real regression this round** — commit `d09b318`
   removed the clause scoping which ice the *"their end"* grade applies to. It is
@@ -2292,16 +2291,17 @@ file set, evidence link, and acceptance condition after the readability go/no-go
 
 ## Workstream 4C: two `sources/README.md` corrections from the rules pass
 
-- [ ] `sources/README.md` records **three** instances of USA Hockey's Rule 610
-  lettering disagreeing with itself. **There is a fourth**, in the off-ice-officials
-  section, which cites *"Rule 610(c)"* for *"Delaying the game by deliberately
-  displacing the goal post"* — printed in the body as **(d)**.
-  ⚠️ **The corpus's own `610(c)` citation is SAFE** — Appendix I's Summary lists
-  *"610(c) Batting/shooting puck out of rink"*, agreeing with the printed body.
-  **Record the fourth instance; change no citation.**
-- [ ] ⚠️ **The IIHF Situation Handbook uses *"restricted area"* in the OPPOSITE
-  sense to the Rulebook** (already recorded) **and misnumbers the rule twice in
-  Situation 27.7.** `defender.md` uses the Rulebook sense throughout and is
-  correct. **Worth adding the misnumbering to the Handbook's entry**, so the next
-  reader does not resolve it the wrong way.
+- [x] **CLOSED, 17 September.** Fourth instance confirmed directly against
+  `sources/usah.txt`: the off-ice-officials Linesperson duties (`:3166`) cite
+  *"Rule 610(c)"* for *"Delaying the game by deliberately displacing the goal
+  post"*, while the printed body's goal-frame-displacement clause is **(d)**
+  (`:3776-3779`); printed (c) is the puck-out-of-rink clause. The corpus's own
+  `610(c)` citation was re-verified separately as safe — Appendix I's Summary
+  (`:5198`) agrees with the printed body — and was not touched. Recorded in
+  `sources/README.md`'s `usah_casebook.txt` row; no content citation changed.
+- [x] **ALREADY RECORDED — no action needed.** Checked directly: the "restricted
+  area used in the opposite sense" note at `sources/README.md` already documents
+  the Situation 27.7 double misnumbering (both the question's "Rule 28.8" and
+  the answer's "Rule 27.8", against the correct 27.7) in full, with the correct
+  number given. This row's premise — that it still needed adding — was stale.
 
