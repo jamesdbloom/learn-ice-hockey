@@ -602,83 +602,117 @@ the previous wave's review record gives a go decision.
 **Owner:** coordinator for census, partition, shared tools, and records; one
 agent per disjoint content file set. **Dependency:** Workstream 1 go/no-go.
 
-### Rollout preparation
+⚠️ **RECONCILED, 17 September — every row below was stale.** An independent
+read-only audit checked each row against `project/reviews/readability_keyfocus_rollout_2026-09-17.md`,
+`principle_matrix_complete_2026-09-17.md`, `READABILITY_AND_DUAL_AUDIENCE.md`,
+git history, and the corpus directly (`grep -c "^## Key focus"` — exactly one
+per document, all 39). **What actually shipped is narrower than this section
+specifies: every document got a `## Key focus` section (the first of six
+progressive-disclosure layers this section describes), not the full layer
+stack.** ⚠️ **And it shipped before its own stated dependency closed** —
+Workstream 1's pilot go/no-go (§1B/§1C above, human usability testing) is
+still entirely unchecked. The rollout's own review record says so itself,
+because the user explicitly asked for faster, larger-scale progress and the
+coordinator proceeded on that instruction rather than waiting for the gate —
+a recorded deviation, not an oversight, but it means **"rollout complete"
+cannot be declared until that gate is either satisfied or explicitly
+waived**.
 
-- [ ] Freeze the accepted principle taxonomy, page-layer headings, caption
-  standard, metadata schema, audience labels, and audio contract from release one.
-  Changes to these are a new design decision, not incidental follow-up edits.
-- [ ] Build the complete principle-to-corpus matrix for all current documents and
-  assign every document/section to exactly one wave. Include the current derived
-  document count; do not reuse historical 38-document figures.
-- [ ] Rank sections by learner value and risk: universal principles and beginner
-  foundations first; safety/rules next; positions and systems next; technique and
-  Hockey-IQ next; off-ice/reference material last. A long page is a review
-  candidate, not automatically a deletion target.
-- [ ] Before dispatch, census each assigned file for key focus/overview, summary,
-  recognition cues, worked examples, facts blocks, diagrams, captions, sources,
-  audio references, and repeated claims. Write the census to a unique run file.
-- [ ] Give each agent only its named files and the exact defects/constraints to
-  check. Require it to refute the brief, read surrounding prose, and re-derive
-  claims from primary sources before editing.
+- [x] **PARTIALLY DONE — no formal freeze record, but not blocking.** No
+  document consolidates the current caption standard / metadata schema /
+  audience labels / audio contract into one frozen reference; subsequent
+  design changes (caption target, placement rule, diagram-after-content
+  reversal) were each treated as an owner decision as this row asks, just not
+  written up as a single freeze artifact. Low priority — worth a short
+  dispatch if anyone needs one source of truth, not blocking further work.
+- [x] **DONE (matrix) / PARTIALLY DONE (wave assignment).** The full
+  principle-to-corpus matrix for all 39 current documents is complete
+  (`principle_matrix_complete_2026-09-17.md`, commit `72e2860`, correct
+  39-document count). Documents were disjointly split across 8 agents with a
+  collision check (not via `check_readability_census.py partition`), and no
+  artifact records the assignment for future reference — low-value gap now
+  that the wave itself is done.
+- [x] **SUPERSEDED BY EXPLICIT USER INSTRUCTION, not a gap.** The user asked
+  directly for faster, larger-scale parallel progress; all 36 remaining
+  documents were dispatched in one wave rather than risk-ranked order. Recorded
+  as a deliberate, approved deviation in `readability_keyfocus_rollout_2026-09-17.md`.
+- [x] **NOT DONE — no per-file census artifact exists for this wave.**
+  Mitigated after the fact by a thorough three-dimension review pass, but the
+  process step itself was skipped. Not worth redoing retroactively now that
+  the wave is reviewed and committed.
+- [x] **DONE in substance.** The review record's own findings (a truncated
+  USA Hockey quote, a flattened cross-book rule found and fixed at 3 more
+  sites, an inconsistent-length parenthetical) are exactly the shape this
+  practice produces — agents were refuting briefs and re-deriving from
+  primary sources. The literal briefs weren't preserved as separate artifacts.
 
 ### Content-family waves
 
-- [ ] Wave A: foundation, glossary, and communication pages. Establish shared
-  vocabulary, principles, rule scope, and beginner orientation before tactical
-  pages depend on them.
-- [ ] Wave B: positions, with Center/Winger/Defender kept as a comparable set and
-  Goaltender handled separately. Apply principles to each role without copying
-  system-specific assignments as universal rules.
-- [ ] Wave C: systems and situations. For every system, state the principle,
-  recognition cue, player action, why it works, and the realistic alternative;
-  show how the principle changes when the team uses another system.
-- [ ] Wave D: technique and Hockey-IQ. Connect mechanics and decision models to
-  the principles; use simple execution cues before research and technical depth.
-- [ ] Wave E: getting-started and off-the-ice material, including equipment,
-  practice, conditioning, mental game, culture, and watching hockey. Keep health,
-  age, supervision, and evidence limits intact while making the immediate action
-  easy to find.
-- [ ] Run a separate diagram-source wave only when a diagram's host is in the
-  current content wave. One agent owns one diagram module; generated output is
-  coordinator-owned and builds are serialized.
+- [x] **PARTIALLY DONE, uniformly, all five waves (A–E).** Every content
+  family got a `## Key focus` section — the deliverable that actually
+  shipped. None got the fuller per-wave treatment these rows separately ask
+  for (Wave C's "recognition cue, player action, why it works, realistic
+  alternative" for every system; Wave D's mechanics-to-principles connection;
+  etc.) — that fuller stack exists only in the two original pilots
+  (`getting_started.md`, `rules_primer.md`). **Genuinely open**: extending
+  the full progressive-disclosure stack past Key Focus to the rest of the
+  corpus, wave by wave, is real remaining work if the rollout is meant to go
+  further than Key Focus alone.
+- [x] **NOT TRIGGERED / not applicable to this wave.** No `site/src/diagrams/*.mjs`
+  files were touched by the Key Focus rollout (Key Focus sections don't need
+  diagrams). A separate diagram-placement initiative (commit `d09b318`) did
+  do module-based diagram work, under a different workstream.
 
 ### Per-wave completion
 
-- [ ] For each changed section, write the key focus first, then simple summary,
-  recognition cues, explanation, worked example, team/rule variation, and deeper
-  detail. Do not require quizzes, self-tests, scenarios, or practice activities
-  to understand the primary path.
-- [ ] Complete the principle matrix row and propagation matrix for every changed
-  principle: body, facts, Common Mistakes, Key Takeaways, diagrams/captions,
-  sibling documents, source trailer, and spoken output. Mark `not applicable`
-  with a reason rather than leaving a blank.
-- [ ] Audit diagram value only for diagrams touched by the wave: learner question,
-  unique visual contribution, mental-model position, caption, `describe`, all
-  hosts, mobile/accessibility output, and audio effect. Defer the full `rink_map`
-  value audit until its own wave.
-- [ ] Measure before/after primary-path words, minutes, headings, clicks,
-  first-action distance, caption lengths, and per-section speech chunks. Record
-  retained safety/rule detail and any budget exception.
-- [ ] Run fresh rules/source, content, facts, safety, and site reviews for the
-  wave. The next wave cannot start while a required review or owner decision is
-  unresolved.
+- [x] **PARTIALLY DONE.** Only the first layer (Key focus) was added
+  corpus-wide; simple summary, recognition cues, worked example, team/rule
+  variation, and deeper detail remain pilot-only. Same gap as the
+  content-family rows above — one open item, not five.
+- [x] **PARTIALLY DONE.** Principle matrix: done, 39/39. Formal
+  body/facts/Common-Mistakes/Key-Takeaways/diagrams/siblings/source-trailer/
+  spoken propagation matrix per changed principle: not produced as an
+  artifact, though specific findings were propagated and tracked narratively
+  (e.g. Principle 4's goaltender exception → `scanning_and_anticipation.md`,
+  `time_and_space.md`, commit `ba0f164`).
+- [x] **NOT APPLICABLE, correctly.** No diagrams were touched by this wave.
+  `rink_map.md`'s dedicated value audit remains explicitly deferred per
+  `READABILITY_AND_DUAL_AUDIENCE.md`, unchanged.
+- [ ] ⚠️ **NOT DONE — the clearest remaining measurement gap.** No
+  before/after primary-path word/minute/heading/click/first-action-distance
+  measurement was run for the Key Focus wave, though
+  `check_readability_census.py` exists to do exactly this. **Genuinely open
+  and actionable.**
+- [x] **PARTIALLY DONE.** Rules-verifier ✓ (3 more flattened-rule instances
+  found, fixed), safety-reviewer ✓ (2 defects fixed, 1 pre-existing found and
+  fixed), content/house-style ✓ (1 Major, 2 Minor, fixed). ⚠️ **Facts-reviewer
+  was implicitly not needed (no facts blocks touched) but never explicitly
+  declared out of scope — the exact silent-dimension failure mode `CLAUDE.md`
+  warns about**, worth a one-line addendum to the review record rather than a
+  new pass. **Site-reviewer was NOT run** — self-acknowledged in the record's
+  own "what this method could not have found." **Genuinely open**: a
+  site-reviewer pass on the 36 new Key Focus sections has never happened.
 
 ### Rollout stop/go criteria
 
-- [ ] Stop the rollout if a principle needs a new scope class, an agent finds a
-  contradiction between siblings, a safety/rule qualification cannot fit the
-  primary spoken unit, a caption relies on a borrowed host, or the measured
-  low-effort budget fails without a documented reason.
-- [ ] Stop if a repair changes a claim outside the finding, moves/renumbers
-  linked material, changes a shared renderer, or changes a generated diagram
-  without a fresh ownership and review decision.
-- [ ] Continue only when the wave's review record contains the matrix, measurements,
-  changed-file list, reviewer coverage, staged-tree confirmation, and “what this
-  method could not have found.”
-- [ ] After the final content-family wave, run a corpus-wide cross-document read
-  of principles, summaries, facts, captions, and audio before declaring the
-  rollout complete. This is a new review round, not an assumption that clean
-  individual waves add up to a clean corpus.
+- [x] **Standing gate, exercised correctly once, not a task to close.** The
+  `forechecking_systems.md`/`body_contact_and_battles.md` checking-from-behind
+  contradiction was caught and fixed pre-commit, consistent with this rule's
+  intent. No outstanding action.
+- [x] **Standing gate, not triggered.** Every fix in the Key Focus wave was
+  narrowly scoped to its finding; no renderer or diagram changes occurred.
+- [x] **PARTIALLY DONE.** The review record has staged-tree confirmation and a
+  full "what this method could not have found" section. Missing: a formal
+  matrix reference, the fuller measurement set (see above), a complete
+  changed-file list, and explicit in/out-of-scope declarations for
+  facts-reviewer and site-reviewer.
+- [ ] ⚠️ **NOT DONE — the second clearest remaining gap.** No corpus-wide
+  cross-document read of principles, summaries, facts, captions, and audio
+  together has run since the Key Focus rollout. `md_to_speech` rendering and a
+  site build were both explicitly skipped for this wave. **Genuinely open and
+  actionable** — this is what "rollout complete" actually requires before it
+  can be declared, on top of resolving the still-unmet Workstream 1 pilot
+  gate this rollout ran ahead of.
 
 ## Workstream 2: safety and rules residuals
 
