@@ -226,14 +226,18 @@ reports; `content/foundation/core_principles.md`.
   takeaway numbering. **Acceptance:** `rules-verifier`, `content-reviewer`,
   `facts-reviewer` and `safety-reviewer` clear it, or it goes to the rejected log
   with its reason.
-- [ ] ⚠️ **`positions/goaltender.md` would get a WRONG framing principle from
-  principle 4.** *"Look before the puck reaches you"*, voiced alone at the top of
-  that page, is the opposite of the document's own `Never: Look past the puck at
-  where it is going rather than where it is` and its *"cone of shame"* mindset.
-  The principle transfers — `switching_positions.md` says scanning is *"the same
-  skill in every position"* — **but its TIMING does not**: a goalie scans between
-  plays and on retrievals, never off a live shot. **Acceptance:** if principle 4
-  frames that page, the timing qualifier is in the same sentence.
+- [x] **FIXED, 17 September — and found to run deeper than this row states.**
+  A `core_principles.md` self-audit (part of the matrix's foundation batch)
+  found the timing mismatch is not confined to what a future `goaltender.md`
+  link would say — `core_principles.md` **itself** states Principle 4 as an
+  unqualified universal claim in THREE places (Key focus, the Principle 4
+  body, Key Takeaway 5) and never mentions a goaltender anywhere. Fixed in
+  all three layers, citing `goaltender.md`'s own already-verified wording
+  ("track the puck all the way into the pad, the glove, the chest"). Gates
+  clean (`check_links`, `check_facts` — 5,621 facts, unchanged). **Under
+  independent `content-reviewer` check before commit, per the standing rule
+  against self-certifying a repair** — see
+  [`../reviews/principle_matrix_tranche2_2026-09-17.md`](../reviews/principle_matrix_tranche2_2026-09-17.md).
 - [x] **DECIDED, 17 September — real collision, low severity, rename needed.**
   Verified: `defensive_zone_coverage.md:67`'s `## The Universal Principles`
   heading sits directly above a `​```facts` block of seven DZ-specific facts
@@ -308,20 +312,30 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   the rejected-candidate log entry, and what a future qualified version would
   need are recorded in Workstream 1G below — this row is the dispatch record,
   that one is the decision.
-- [ ] **STARTED, 17 September — first tranche of 10/39 documents.** Two
-  `content-reviewer` passes drafted the principle-to-corpus matrix for the
-  five position documents and five systems documents. Full matrix, five
-  convergent findings, and the priority order for what's next:
-  [`../reviews/principle_matrix_draft_2026-09-17.md`](../reviews/principle_matrix_draft_2026-09-17.md).
-  **Headline result: TWO independent agents, working in disjoint document
-  sets, both found that principle 6 has a real "denial direction" (a
-  forecheck angle, a penalty kill, and the goaltender's own subject-position)
-  that the principle's existing hedge does not cover** — a genuine gap in
-  `core_principles.md` itself, surfaced by exactly the transfer-audit method
-  this workstream exists to run. **Also found:** a real (not just missing-link)
-  principle-4 content gap in `center.md`, `defender.md` and `winger.md` — none
-  contains any scanning-related language at all; `switching_positions.md:53`
-  is the model instance to copy. **29 of 39 documents remain unmatrixed.**
+- [ ] **ADVANCED, 17 September — 25/39 documents now matrixed, up from 10.**
+  Three more parallel batches (7 systems, 6 off-the-ice + reading-diagrams,
+  4 foundation-reference) extended the first tranche's 10-document matrix,
+  re-confirmed its headline principle-6 denial-direction finding intact
+  post-fix, verified a flagged cross-document rules-propagation risk turned
+  out NOT to exist (all four suspect documents already scope
+  checking-from-behind correctly), and found a second, deeper instance of
+  the known `goaltender.md`/principle-4 timing mismatch — this time inside
+  `core_principles.md` itself, now fixed (see the row above). Two
+  coordinator scope decisions made and recorded: Principle 1 covers on-ice
+  *positional/structural* choices specifically, not any coaching judgement
+  call; a document may carry more than one framing principle where the
+  matrix shows a genuine multi-principle fit (`mental_game.md`,
+  `practice_and_development.md`, `on_ice_communication.md`), rather than
+  forcing a single frame. Full account:
+  [`../reviews/principle_matrix_tranche2_2026-09-17.md`](../reviews/principle_matrix_tranche2_2026-09-17.md).
+  **14 documents remain unmatrixed: all 5 hockey-iq, all 5 technique,
+  `defending_the_rush.md`, and the two pilots** (spot-checked against the
+  rollout's specific defect shapes, not yet run through the full
+  seven-principle matrix). ⚠️ **The transfer-audit acceptance condition —
+  "at least three contexts, including a position, a system, and a
+  technique/Hockey-IQ document" — is still only two-thirds met: no technique
+  or hockey-iq document has been matrixed in any of the four batches to
+  date.** That is the next tranche's priority.
   ⚠️ **The plan's own acceptance condition for the WIDER release (Workstream
   1C's task-based usability testing) names real human participants — "at
   least one U10 player/parent pair," an older-youth reviewer, an adult
