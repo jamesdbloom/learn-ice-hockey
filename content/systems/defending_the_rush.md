@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Defender](../positions/defender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Goaltender](../positions/goaltender.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Skating](../technique/skating.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Core Principles](../foundation/core_principles.md) · [Defender](../positions/defender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Goaltender](../positions/goaltender.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Skating](../technique/skating.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Key focus
 
