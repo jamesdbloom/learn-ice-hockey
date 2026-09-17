@@ -1535,6 +1535,67 @@ stands at full severity; only the chunk-boundary rows are downgraded.
 
 ## Workstream 3C: the site review — what it cleared, and what it opened
 
+### Fresh pass, 17 September — verifying the day's ~150-repair round
+
+⚠️ **The Chrome extension was unavailable for the ENTIRE session, four
+connection attempts.** Everything below the build/link-check gate is a
+**source/build-artifact-level inference, explicitly labelled as such by the
+reviewer** — not a rendered-pixel finding. Treat the print-layer and
+per-document verdicts below as corroborating evidence, not as the visual
+confirmation this project's own standard requires.
+
+**Build: clean.** Full `npm run build` with the absolute binaries, run twice,
+exit 0 both times. 11-step chain completed including `check:links` — **53
+pages, 10,753 internal links, all resolve, including 2,136 anchored
+cross-links.** `check-arrivals.mjs`: 204 diagrams, 304 routes, **0 hard
+failures**, 8 pre-existing advisories unrelated to today's two edited diagram
+modules.
+
+**No regression found from today's round**, at the level this pass could
+check: `dz-strong-side-overload`'s shortened caption is live in the rebuilt
+`diagrams.json` (confirms the cache was genuinely cleared, not stale) and
+well-formed; facts blocks render as `<dl class="facts">`, not raw code
+fences, on all 8 spot-checked documents; every table is wrapped in
+`.table-scroll`, counts matched 1:1; the corrected "Video Review… or to a
+Coach's Challenge" quotation renders cleanly with no entity-escaping
+breakage; no stray Markdown artifacts on any sampled page.
+
+**Print-layer fix: structurally sound by CSS specificity analysis, NOT
+re-measured visually.** The print block's `:root, :root[data-theme]` selector
+and the dark-theme override `:root[data-theme='dark']` are equal specificity
+(0,2,0); the print block wins on source order, appearing later in the same
+stylesheet. `.facts` and the three callout classes all resolve through the
+custom properties the print block redeclares. ⚠️ **This is proof of logic, not
+proof of pixels — the previous round's own documented measurement (a code
+comment at `global.css:2119-2166`) is the last actual pixel measurement on
+record.** A Chrome-driven print-preview re-check is still owed and is NOT
+satisfied by this pass.
+
+- [ ] ⚠️⚠️ **NEW, Major severity — the LOCAL preview server's custom 404 page
+  does not render for a genuinely unmatched route with no trailing slash.**
+  `curl http://localhost:4321/does-not-exist` returns Astro's generic
+  dev-mode error page (*"404: Not Found (trailingSlash is set to
+  'always')"*), not the corpus's branded 404. **The SAME path WITH a trailing
+  slash correctly returns the custom page.** Root cause: `astro.config.mjs`
+  sets `trailingSlash: 'always'`, and Astro's preview-server middleware
+  intercepts a no-slash unmatched path before it reaches the custom 404
+  handler. ⚠️ **The reviewer flags, correctly, that this may be a
+  preview-server-only artifact** — in production CloudFront's own
+  error-document substitution may serve `dist/404.html` regardless of
+  trailing slash, entirely outside Astro's control. **Acceptance:** confirm
+  directly against the deployed CloudFront distribution whether a raw
+  unmatched path (no trailing slash) returns the branded 404 or a generic
+  error. If it does not, this is live in production and needs the
+  CloudFront custom-error-response config checked, not an Astro-side fix.
+- [ ] **A real Chrome-driven visual pass is still owed** for: actual layout at
+  375px/1440px in both themes, print/PDF pixel contrast (re-measure, don't
+  just re-derive from CSS), theme-toggle behaviour and no-flash-on-first-paint,
+  ToC scroll-tracking against the sticky header, console errors, runtime
+  network requests, Pagefind's client-side query execution, keyboard focus
+  visibility, and screen-reader landmark behaviour. **None of these were
+  reached this pass** because the extension never connected.
+
+
 **Evidence:** a `site-reviewer` pass over the 11:00 build, all 49 sitemap pages,
 at 320/375/768/1440 in both themes, both `prefers-color-scheme` and explicit
 `data-theme`. ⚠️ **The Chrome extension refused every navigation, so it drove
