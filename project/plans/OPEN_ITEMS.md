@@ -2491,9 +2491,15 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   paint, and off the crease line at its edge, which the IIHF, USA Hockey and
   Hockey Canada all count as part of the crease."* A caption is the sole carrier
   of a rule. **Acceptance:** routed into `playing_without_the_puck.md`.
-- [ ] `off-the-ice/equipment.md:693` — *"Loaner pools are how most children get
-  onto the ice for the first time"*, an unsourced prevalence claim. Source it or
-  scope it; **do not delete it** (non-negotiable 3).
+- [x] **CLOSED, 17 September.** No source (this document's own Sources trailer,
+  a sibling document, or a limited external check) supports the "most children"
+  population-scale claim — only that taster sessions commonly use loaner gear,
+  which the already-cited USA Hockey Try Hockey For Free quote does support.
+  Reworded to state the supported claim and explicitly disclose the unmeasured
+  part as "this guide's own observation rather than a measured figure,"
+  matching the style guide's own established pattern for this exact failure
+  (its trapezoid and forecheck-personnel passages retract identical
+  unsourced-prevalence framings the same way). Not deleted, per non-negotiable 3.
 - [ ] ⚠️ **`positions/defender.md`'s facts lines sit at 299 and 298 of the
   300-character cap.** An ordinary edit breaks either. Not a defect — a fragility
   to know about before dispatching anyone at that file.
