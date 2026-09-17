@@ -7,7 +7,7 @@
 
 ## Key focus
 
-**Skill is not what makes players good; skill is what they spend — time and space are what they earn.** After a shift, judge yourself on how much room you had when the puck arrived, not on whether your move worked. Looking over your shoulder before you receive, and turning away from pressure, buy more room than any move you will ever learn.
+**Skill is not what makes players good; skill is what they spend — time and space are what they earn.** After a shift, judge yourself on how much room you had when the puck arrived, not on whether your move worked. Looking over your shoulder before you receive, and turning away from pressure, buy more room than any move you will ever learn. ⚠️ **This reverses for the goaltender**: tracking a live shot, they buy nothing by looking away from it — see [Goaltender](../positions/goaltender.md).
 
 **Time is not seconds on a clock — it is the distance to the nearest threatening defender divided by how fast they are closing on you.** You can have time with an opponent three feet away who has overrun you, and none with one twenty feet away closing hard. Read their hips, not their distance: a player accelerates where the hips face.
 
@@ -23,7 +23,7 @@ Hockey has one currency, and it is time and space: the room you have when the pu
 
 **Time is not seconds on a clock. It is how far away the nearest dangerous opponent is, divided by how fast they are closing on you** — a way of thinking about it rather than a quantity anyone measures. You can have time with an opponent three feet away who has overrun you and is travelling the wrong way, and none with one twenty feet away closing hard. Read hips rather than distance: a player accelerates where the hips face.
 
-**Look before the puck arrives, not after.** Your time starts the instant the puck touches your stick, so a glance over your shoulder while the pass is still travelling is free — and it arguably buys more than any move you will ever learn. Nobody has ranked it against a move; what has been measured is that scanning beats not scanning.
+**Look before the puck arrives, not after.** Your time starts the instant the puck touches your stick, so a glance over your shoulder while the pass is still travelling is free — and it arguably buys more than any move you will ever learn. Nobody has ranked it against a move; what has been measured is that scanning beats not scanning. ⚠️ **This reverses for the goaltender**, whose puck is already live rather than travelling toward them, and who never looks away from it — see [Goaltender](../positions/goaltender.md).
 
 **When the play ahead is not there, turn away from the closing defender rather than into them.** Make a tight turn with the puck on the outside of it, hold it a second or two, and let a teammate arrive. It is the least natural thing here and the most valuable — though never in your own end, where losing the puck is a goal against.
 
@@ -224,14 +224,14 @@ Same idea across the whole sheet:
 ### Scanning before you receive
 
 ```facts
-Key: Knowing your out before the puck arrives buys you more time than any move you will ever learn — a ranking nobody has measured
+Key: Knowing your out before the puck arrives buys you more time than any move you will ever learn — a ranking nobody has measured, and it does not hold for a goaltender tracking a live shot
 Key: What is measured is only that scanning beats not scanning — one study of pass receptions, and it never ranked scanning against a move; the figures and their limits are in Scanning and Anticipation
 Action: Shoulder-check as the pass is being made, not after — two looks are better than one
 Read: Your clock starts the instant the puck touches your blade, so arrive already decided
 Technique: Catch the puck with your hands and your peripheral vision, not by staring at it
 ```
 
-**Knowing your out before the puck arrives buys you more time than any move you will ever learn.** This is not an exaggeration and it is not a nice-to-have. **It is, though, a ranking nobody has measured**, so be exact about which half of it stands up: hockey has one study that counted scanning before a pass reception, and what it measured is that players who had scanned succeeded more often than players who had not. It did not rank scanning against a move, or against anything else you could spend a shift on. [Scanning and Anticipation](scanning_and_anticipation.md) sets out those figures with their qualifications.
+**Knowing your out before the puck arrives buys you more time than any move you will ever learn.** This is not an exaggeration and it is not a nice-to-have. **It is, though, a ranking nobody has measured**, so be exact about which half of it stands up: hockey has one study that counted scanning before a pass reception, and what it measured is that players who had scanned succeeded more often than players who had not. It did not rank scanning against a move, or against anything else you could spend a shift on. [Scanning and Anticipation](scanning_and_anticipation.md) sets out those figures with their qualifications. ⚠️ **And it assumes you are receiving a pass, not tracking a shot** — a goaltender facing a live puck gains nothing by looking away from it; see [Goaltender](../positions/goaltender.md).
 
 The mechanism: the time you have with the puck starts the instant it touches your blade. If you spend the first half-second of that finding out where everyone is, you have spent most of your budget on information you could have gathered for free while the puck was still in transit. A player who scanned before receiving starts their clock already decided, which effectively doubles the time they have.
 
@@ -606,7 +606,7 @@ document, that is named too.*
 
 1. **Time and space are hockey's currency, and skill is what you spend.** Time is distance divided by closing speed, not seconds — a way of thinking about it, not a quantity anyone measures. Read hips, not distance.
 2. **Deception and a change of speed create space before it exists on the ice.** Fake shots and look-offs work because defenders must react to what you show them — and only if you sometimes mean it. Separation comes from the *difference* in velocity, not your top speed: glide, look, explode. **That a change of speed beats top speed is coaching craft, not a measured finding** — two coaching sources teach it, the IIHF's own coach-development manual among them, and neither measures the ranking.
-3. **Buy your time before the puck arrives.** Scanning before you receive arguably buys more than any move — a ranking nobody has measured, against a measured finding that scanning beats not scanning — because your clock starts when the puck touches your blade, so arrive already decided. [Scanning and Anticipation](scanning_and_anticipation.md) has the figures and their limits. Under pressure, turning away from the closing defender and curling back buys your teammates the one thing they need, which is time to get there — **but never in your own end, where a lost puck is a goal against.**
+3. **Buy your time before the puck arrives.** Scanning before you receive arguably buys more than any move — a ranking nobody has measured, against a measured finding that scanning beats not scanning — because your clock starts when the puck touches your blade, so arrive already decided. [Scanning and Anticipation](scanning_and_anticipation.md) has the figures and their limits. Under pressure, turning away from the closing defender and curling back buys your teammates the one thing they need, which is time to get there — **but never in your own end, where a lost puck is a goal against.** ⚠️ **This is the receiving player's rule, and it reverses for the goaltender**, who never looks away from a live shot.
 4. **Attack the seam between two defenders, not one defender.** Force a decision between two players rather than a reaction from one.
 5. **Behind the net and the boards are structures nobody can attack you through — use them as pivots.** Facing the wall puts your back to the play: head up, chin off your chest, know what is arriving. Behind their net, survey; behind your own, one look and move it.
 6. **Take away the middle first and concede the outside.** In every zone, the middle is worth more because more options radiate out of it.
