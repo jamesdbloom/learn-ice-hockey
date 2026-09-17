@@ -42,10 +42,48 @@ a little" — which is not evidence, and is not queued.
 
 ⚠️ **Actually driving NotebookLM requires the Chrome extension connected**
 (`tabs_context_mcp` must not return "Browser extension is not connected").
-As of this session it is not connected, so the queue above is built and
-ready but no generation has been attempted. See `.claude/skills/notebooklm-episode/SKILL.md`
-Step 0 for the queue commands and Step 3 for what happens once Chrome is
-available.
+Connected mid-session on 17 September; see the generation finding immediately
+below before running any further batches.
+
+⚠️⚠️ **FIRST GENERATION RUN, 17 September — the constraints source did not
+prevent fabrication, and the episode was correctly blocked.** `foundation/core_principles`
+was generated (44:33, three notebook sources: the live site page, the full
+`prompt_constraints.md` text, and the full long-form teaching prompt — see the
+method note below on why the Customise dialog's own focus field could not
+carry the constraints). Two independent reviewers (`rules-verifier`,
+`safety-reviewer`) read a local `whisper-cli` transcript against the source
+document and both returned **NO-GO**, before seeing each other's findings.
+The episode invented an entire IIHF-edition provenance narrative (with
+invented dates, and an "unobtainable" claim that is false of this project —
+the edition it claims not to have IS on disk), invented the scope of Britain's
+In-House Rules, invented an EIHL Casebook backstory, and — the disqualifying
+one — **fabricated an injury-response instruction, attributed it to "the
+texts," and repeated it in the summary**, collapsing two of the corpus's
+deliberately separate protocols (spinal injury vs. concussion) into one
+instruction that is wrong for the more urgent case. Full account:
+[`../reviews/core_principles_podcast_no_go_2026-09-17.md`](../reviews/core_principles_podcast_no_go_2026-09-17.md).
+**Marked `blocked` in the queue, not published.** ⚠️ **Standing conclusion:
+every episode this pipeline produces needs this same two-reviewer pass before
+acceptance — giving the generator the constraints as a full-text overriding
+source did not make that step skippable.** `rink_map` and `language_and_glossary`
+were generated in the same batch and are held at `downloaded`/`processing`
+pending the identical review, not assumed clean by association.
+
+⚠️ **Method note: the Customise dialog's "focus" field has a silent, undocumented
+5000-character cap** (`document.querySelectorAll('textarea')` shows
+`maxLength: 5000` on that specific field, `-1` on every other text field in the
+UI). `prompt_constraints.md` is 8,636 characters; pasting it there truncated
+mid-constraint with no error. **Fix used:** add the constraints document and
+the teaching-style prompt as their own full-text notebook sources (via
+"Copied text," which has no such limit) instead of the focus field, and use
+the focus field only for a short (~1,400-character) pointer naming which
+source is overriding. `file_upload` also could not locate a real
+`input[type=file]` element in NotebookLM's DOM for direct `.md` upload, so the
+live site page URL was used as the content source instead — which has the
+side benefit of exposing diagram captions/descriptions a raw markdown upload
+would not carry, though NotebookLM's website-source ingestion states it
+imports only "visible text," not images, so the diagrams themselves are still
+not literally seen.
 
 ## Purpose and boundary
 
