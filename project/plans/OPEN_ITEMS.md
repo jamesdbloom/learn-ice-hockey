@@ -1160,14 +1160,24 @@ facts fit the cap with room: 290/300 and 243/300.
   the coordinator. **Every document in the corpus that runs this comparison now
   agrees.**
 
-⚠️ **UPDATE 5, 17 September — the "32" above is now stale; re-run before
-trusting it.** A verification pass found `check_quote_drift.py` currently
-reports **34 flagged** for `body_contact_and_battles.md`, not 32 — the file
-has been edited twice more since Update 4 (commits `5460eed`, `09a7d40`),
-and it is not yet known whether the extra hits are genuinely new drift or
-a renumbering artefact. Not diffed against the Update-4 hand-checked list
-in this pass. **Needs a fresh triage before this file is treated as
-closed.**
+✅ **UPDATE 6, 17 September — re-triaged and fixed. The "32" was wrong in
+the other direction: 29 of 34 were genuine, undisclosed drift, not false
+positives.** Two later commits (`5460eed`, `09a7d40`) had repositioned
+quotations without applying the corpus's `[x]` disclosure bracket. 28
+fixed as pure disclosure additions, verified character-by-character
+against nine source files; one (the tool's remaining flag on a USA
+Hockey Casebook quotation) confirmed a genuine wrong-source-file false
+positive and correctly left untouched. `source-verifier` sampled 16 of
+the fixes directly and caught one real error in the fix itself — a
+restored Oxford comma that silently swapped in the wrong organization's
+wording under an unchanged attribution — corrected. `check_quote_drift.py`:
+34 → 6 (all six now independently confirmed sound). Full account:
+[`../reviews/bcb_quote_drift_2026-09-17.md`](../reviews/bcb_quote_drift_2026-09-17.md).
+⚠️ **New candidate found, not fixed**: the same undisclosed-case-drift
+pattern also exists inside a `facts` block using plain quote marks,
+which `check_quote_drift.py`'s regex cannot see (it only matches the
+italicized `*"…"*` form). This tool blind spot may recur elsewhere in
+the corpus — not checked.
 
 ⚠️⚠️ **UPDATE 4 — the corpus-wide quotation-drift sweep is SUBSTANTIALLY
 COMPLETE, 16–17 September.** Ten more documents worked in the last two waves:
