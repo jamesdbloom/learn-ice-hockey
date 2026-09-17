@@ -347,26 +347,42 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   (`body_contact_and_battles.md` already bidirectionally owns Principles 2
   and 7 — not a linking candidate, already the linked document):
   [`../reviews/principle_matrix_complete_2026-09-17.md`](../reviews/principle_matrix_complete_2026-09-17.md).
-- [ ] ⚠️ **`getting_started.md`'s "New to this" pointers for Principles 3, 4
-  and 7 lead a beginner to content that isn't there** — confirmed by direct
-  reading and targeted grep; none of the off-puck-states (P3),
-  scanning/looking (P4), or boards-contact safety posture (P7) vocabulary
-  appears anywhere in the document. Worst for P7: `core_principles.md`
-  labels that specific pointer "before a first session," and this is the
-  one principle it says has no realistic alternative. **Acceptance:** either
-  new content in `getting_started.md` (the `switching_positions.md:53`
-  honest-pointer model, or a full passage) or the three links re-pointed at
-  sections that already carry the content — an editorial choice, not a
-  mechanical fix. The Principle 7 route needs `safety-reviewer` sign-off
-  before it ships, per standing convention for contact-injury text.
-- [ ] `defending_the_rush.md`'s 2-on-1/1-on-2/3-on-2/3-on-1 sections are the
-  corpus's most developed Principle-6 denial-direction evidence and aren't
-  cited in `core_principles.md` §6 alongside `forechecking_systems.md` and
-  `special_teams.md`. Citation-completeness gap, not a wrong statement — add
-  next time that citation list is revisited. The same document also has no
-  Principle-7 content despite thematic adjacency (racing an opponent to a
-  loose puck near the boards); flag to `safety-reviewer` for a judgement on
-  whether that narrow gap needs filling.
+- [x] **DONE, 17 September.** `getting_started.md` now carries a P7
+  boards-safety passage (Section 7, Common Mistakes, Key Takeaways) and a
+  combined P3/P4 honest-pointer passage (Section 9). A `safety-reviewer`
+  pass found one Critical (Key Takeaways had dropped the head/chin
+  instruction and the non-checking-scope clause the other two layers
+  carried — fixed) and, separately, one Major not fixed here on the
+  reviewer's own recommendation: the document still doesn't teach "go in on
+  an angle" (the safest of the three boards-contact cases) or "not on the
+  point of your shoulder," mitigated by the existing forward pointer to
+  `body_contact_and_battles.md#6`. A content review found the new P3/P4
+  passage accurate and well-modelled on `switching_positions.md:53` but
+  flagged, as a gap rather than a defect, that it reaches no summary layer
+  (Common Mistakes/Key Takeaways) the way the P7 passage does. Full account:
+  [`../reviews/matrix_followup_fixes_2026-09-17.md`](../reviews/matrix_followup_fixes_2026-09-17.md).
+- [ ] **Two residuals from the row above, deferred rather than fixed under
+  review pressure:** (1) `getting_started.md` still doesn't teach the
+  angle-evasion technique or the "not on the point of your shoulder"
+  prohibition for boards contact — both present in `body_contact_and_battles.md`
+  §6 and in `core_principles.md` §7, absent here; the existing forward
+  pointer mitigates but doesn't close this. (2) The new P3/P4 passage has no
+  echo in `getting_started.md`'s Common Mistakes or Key Takeaways, unlike
+  the P7 passage's full three-layer propagation — a listener who only hears
+  this document's Key Takeaways will still never encounter "you almost
+  never have the puck" or "look before it arrives" from it.
+- [x] **DONE, 17 September.** `core_principles.md` §6 now cites
+  `defending_the_rush.md`'s 2-on-1 "take away the pass, give up the shot"
+  mechanism alongside `forechecking_systems.md` and `special_teams.md`,
+  quoted verbatim and preserving the source's own hedge (a coaching choice
+  with a named alternative). `defending_the_rush.md`'s Related header now
+  also links `core_principles.md` and `body_contact_and_battles.md` (the
+  latter justified by four existing body citations). Reviewed clean — no
+  Critical or Major. Full account in the same review record as above.
+- [ ] `defending_the_rush.md` still has no Principle-7 content despite
+  thematic adjacency (racing an opponent to a loose puck near the boards);
+  flag to `safety-reviewer` for a judgement on whether that narrow gap needs
+  filling — not decided or fixed here.
   ⚠️ **The plan's own acceptance condition for the WIDER release (Workstream
   1C's task-based usability testing) names real human participants — "at
   least one U10 player/parent pair," an older-youth reviewer, an adult
