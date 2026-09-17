@@ -882,13 +882,25 @@ nothing here has. **So the 70.9% citation figure is an upper bound measured one
 way, and "nothing safely cuttable" rests on a search that would miss the largest
 cut available.**
 
-- [ ] **§10's comparison table: ~3,000–4,000 words with ZERO scope loss**, by
-  reducing each cell to *consequence + book + rule number* and deleting only
-  operative wording that §§1–9 already quote. ⚠️ **One complete pass over all 23
-  rows — a partial pass is the half-done propagation `CLAUDE.md` warns about.**
-  Each dropped quotation must be verified present in its owning section **first**.
-  Reader-facing only; the table is already dropped from the audio. Needs
-  `rules-verifier`.
+- [x] **CLOSED, 17 September — 6 of 23 rows compressed, independently verified
+  GO, and the "partial pass" concern this row raised turned out to be the
+  wrong shape of risk.** All 23 rows were read and judged individually, not
+  skipped: 6 were genuine near-total duplicates of §§1-9 and were compressed
+  to consequence + book + rule number; 17 carry unique cross-book synthesis
+  not stated in §§1-9 and were correctly left alone. An independent
+  `rules-verifier` re-check confirmed every compressed cell against primary
+  rulebook text, confirmed the fuller wording survives verbatim in its owning
+  §1-9 section for all six, and found **no dropped exception, carve-out or
+  condition**. `check_links.py`, `check_facts.py`, `check_absolutes.py`,
+  `check_tables.py` all clean/unchanged (table remains correctly dropped from
+  the speech layer).
+  ⚠️ **New finding from the same review, not acted on:** two of the untouched
+  rows (**"Illegal check to the head"** and **"Checking from behind"**) turn
+  out to ALSO be near-total duplicates of §4's Rule 48/43 treatment — the
+  "unique synthesis" reasoning used to leave them alone doesn't actually hold
+  for these two, unlike the other 15 spot-checked/characterized rows. Left
+  untouched this round (not wrong, just not yet done); a future pass could
+  compress them on the same principle already applied to the six done here.
 - [ ] ⚠️ **§4's per-book penalty ladders — where the remaining ~20,000 words are.**
   Could they state the *tier a reader is exposed to* once per foul instead of four
   times? **The agent declined to decide alone, and was right to: this is exactly
@@ -1080,23 +1092,41 @@ deliberately**, each with a reason.
   **The Workstream 1G worked-example addition to `core_principles.md`
   Principle 1 is a separate, not-yet-done task** — checked, `core_principles.md`
   does not yet mention "defensive side of the puck" anywhere.
-- [ ] Two byte-identical `Rule:` facts at `:337` and `:406` **had drifted apart**
-  (*"none of the four books caps it"* against *"none of the four caps it"*). The
-  agent **re-synchronised them** so a grep finds both copies, and **deliberately
-  did not deduplicate**: both sections genuinely need the charging rule, and
-  whether one should point at the other is a section-structure call. ⚠️ **A
-  correction to one would have missed the other, and it already half had.**
-- [ ] The shorthanded exemption now sits in **three** places in this document plus
-  six others. Each copy is internally correct. ⚠️ **Nobody has asked whether one
-  of them should POINT instead** — and `:337`/`:406` is the same question, already
-  answered badly once in this file.
-- [ ] `:11` §Overview carries three facts whose evidence is **130 lines below**
-  under a different heading. `:20` is now correct but still distant. ⚠️ **The block
-  is at 11/11 and cannot be repaired without a body change to §Overview.**
-- [ ] `:120` copies the painted-trapezoid geometry and **then** points at
-  `rink_map.md`. The style guide: *"rink dimensions belong to `rink_map.md`. Point,
-  do not copy."* The agent left a true claim alone rather than delete it on its own
-  judgement. **Owner decision.**
+- [x] **DECIDED AND CLOSED, 17 September.** Re-checked fresh: the two facts
+  (now `:352-353` and `:421-423`) are already byte-identical — the drift this
+  row described no longer exists. **Decision: keep both as full, independent
+  facts, do not point one at the other.** Each sits under its own section
+  with its own supporting body prose (extract-never-author requires a fact
+  trace to its own section, not the document), facts are voiced in isolation
+  with no cross-section jump available to a listener, and this exact
+  neighbourhood already produced one critical from a split (Workstream 1H).
+  No edit made; independently re-verified GO.
+- [x] **DECIDED AND CLOSED, 17 September, same reasoning as above.** The
+  shorthanded exemption's two facts blocks (a headline mention plus a
+  dedicated four-book drill-down immediately below it) are a legitimate
+  summary-then-detail structure, not bare repetition, and each traces to its
+  own section's body. Left as is.
+- [x] **CHECKED AND CLOSED, 17 September — not a defect.** The Overview's own
+  body prose already forward-points to the dedicated Trapezoid section a few
+  lines later (*"the retrieval section below sets out what each one does to
+  your job"*), and the Overview's own paragraphs state the core rule and
+  exception directly rather than leaving the facts unsupported. No fix
+  needed.
+- [x] **DECIDED AND CLOSED, 17 September — cut, pointed, independently
+  verified GO.** The ~150-word trapezoid-dimension derivation was trimmed to
+  its conclusion (dimensions, "measure from 1.8 not 27.8", the 2014-15
+  dating point) plus a link to `rink_map.md#the-trapezoid-goalkeepers-restricted-area`,
+  confirmed to carry the fuller geometry and reasoning. An independent
+  `rules-verifier` re-check confirmed the retained dimensions and the
+  1.8-vs-27.8 claim against `sources/nhl_rules.txt` directly, confirmed the
+  link resolves, and confirmed no rules-operative content (the penalty
+  citation, the skate-contact exception, the IIHF carve-outs) was lost — all
+  of that lives in the untouched preceding paragraph of the same blockquote.
+  ⚠️ **New finding, not fixed here (different file, out of scope):**
+  `content/systems/breakouts.md:917` still reads *"Handled the same way in
+  [Defender]... and [Forechecking Systems]"* — no longer true for Defender,
+  which now points onward rather than repeating the full derivation. Needs a
+  one-line fix by whoever next holds `breakouts.md`.
 - [ ] ⚠️ **Still owed, 17 September — same "count vs. seeing" gap, now for a
   different reason.** A fresh build ran clean twice (11 steps, exit 0, 53
   pages / 10,901 internal links resolving) and static analysis of the
@@ -1110,10 +1140,24 @@ deliberately**, each with a reason.
   rendered layout were checked — the "seeing" half of this row is still
   open, now blocked on tooling availability rather than on nobody having
   tried. Re-run once Chrome is connected.
-- [ ] ⚠️ **The dangling-antecedent class is NOT exhausted.** The repair agent fixed
-  a **pre-existing** one that a review of **all 215 facts** did not report. **A
-  fact that reads correctly on the page and breaks when voiced alone is invisible
-  to every gate**, and only `md_to_speech` plus a human reading finds it.
+- [x] **ANOTHER PASS DONE, 17 September — three more fixed, independently
+  verified GO, class still standing open by design.** A full read of all 27
+  facts blocks (228 lines) in `defender.md`, one fact at a time as if heard
+  alone, found and fixed three dangling antecedents: an "all five books"
+  claim naming only three (added the NHL/IIHF citation, verified verbatim
+  against `sources/nhl_rules.txt` and `sources/iihf_rules_v1.1.txt`
+  Rule 27.7/27.6); a bare "the angle" with no referent inside its own fact
+  (renamed to the actual subject, matching the neighbouring fact's wording);
+  a bare "20.3" with no book name where a sibling clause had just named two
+  books (added "NHL", and independently confirmed this isn't cosmetic — NHL
+  20.3 requires a stoppage, IIHF's own 20.3 does not, so the unqualified
+  citation was genuinely ambiguous). One borderline case (`:138`, CARHA
+  58(b)/61(b) contrast) found and deliberately left alone as not misleading.
+  ⚠️ **The class remains open by its own nature** — this is a corpus-wide
+  invisible-to-every-gate defect shape, not a per-document task with an end
+  state; each pass narrows it for the file it covers, and the standing row
+  stays to remind the next agent to run the same reading, not to grep for
+  "the fix."
 
 ## Workstream 2G: quotation drift — a corpus-wide class, with a tool
 
