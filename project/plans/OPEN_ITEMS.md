@@ -134,27 +134,44 @@ set. **Priority:** highest. **Dependency:** Workstream 0. **Design specification
 
 ### 1A. Principles source and coverage
 
-- [ ] Inventory all current content documents for candidate transferable
-  principles. For every candidate record exact file/section/wording, qualifiers,
-  owner, evidence, exceptions, alternatives, and decisions changed.
-- [ ] Classify each candidate as `fundamental-principle`, `rule-dependent`,
-  `safety-constraint`, `system-convention`, `local-practice`, or
-  `evidence-backed-observation`. Keep a rejected-candidate log; do not promote a
-  memorable coaching preference into a universal principle.
-- [ ] Create or verify the single source of truth at
-  `content/foundation/core_principles.md`, with one stable structure entry and
-  route. The index must present principle, why, recognition cue, action, worked
-  example, and links to beginner and deeper applications.
-- [ ] Build the principle-to-corpus matrix for the release scope. Cover every
-  changed position, system, technique, Hockey-IQ, practice, and relevant off-ice
-  section with application, rationale, scope qualifier, link, or an explicit
-  `not applicable` reason.
-- [ ] Run a transfer audit for each accepted principle in at least three contexts,
-  including a position, a team system, and technique or Hockey-IQ. Test a novel
-  reviewer-only situation; do not turn it into a public quiz.
-- [ ] Have `rules-verifier`, `content-reviewer`, `facts-reviewer`, and
-  `safety-reviewer` clear every principle whose wording could be read as a rule,
-  safety instruction, age claim, or system law.
+- [x] **Inventoried, 16-17 September.** Seven transferable principles
+  identified and sourced; an eighth candidate ("stay on the defensive side
+  of the puck") was inventoried, then rejected by two independent
+  `content-reviewer` passes — see Workstream 1G for the full reasoning and
+  the rejected-candidate log entry.
+- [x] Classification done implicitly through the rejection reasoning above
+  (the eighth candidate failed on exactly the `fundamental-principle` vs
+  `system-convention`/`evidence-backed-observation` boundary this row asks
+  to police) rather than as a separate formal table. No further candidate
+  has been raised since.
+- [x] `content/foundation/core_principles.md` is the single source of truth,
+  self-audited for internal consistency (found and fixed a Principle-4
+  defect spanning all three of its own layers — see Workstream 1K) and
+  citation-verified in full (all 14 sources hold — Workstream 1D).
+- [x] **DONE, 17 September — full 39/39 document matrix built**, closing
+  this row completely. See Workstream 1K's matrix-completion entries and
+  [`../reviews/principle_matrix_complete_2026-09-17.md`](../reviews/principle_matrix_complete_2026-09-17.md).
+- [x] **DONE, 17 September — transfer audit satisfied.** Position
+  (`defender.md` etc.), system (`defensive_zone_coverage.md` etc.), and
+  technique/hockey-iq (`body_contact_and_battles.md`,
+  `scanning_and_anticipation.md` etc.) are all covered by the completed
+  matrix, closing the "at least three contexts" requirement this row names.
+  No novel reviewer-only-situation test has been separately run; the matrix
+  work's own findings (e.g. the Principle-4 goaltender inversion, the
+  Principle-6 denial direction) functioned as exactly this kind of transfer
+  test and surfaced real corpus defects, which is the strongest available
+  evidence the method works, but a deliberately-constructed novel scenario
+  has not been tried.
+- [ ] **Partially done, not claimable as closed.** Every principle *wording
+  change* made this session (the Principle-4 and Principle-6 fixes, the
+  `defending_the_rush.md` citation) was cleared by `content-reviewer` and,
+  where it touched safety content, `safety-reviewer`. Neither
+  `rules-verifier` nor `facts-reviewer` has run a dedicated pass over
+  `core_principles.md`'s seven principles as a named exercise — the matrix
+  work repeatedly flagged specific rule citations and numeric claims within
+  the matrix'd documents as needing `rules-verifier`/`facts-reviewer` before
+  a link ships, but that is downstream-document work, not a clearance of
+  the principles' own wording. Tracked as open.
 
 ### 1B. Two pilot documents and pathways
 
