@@ -1507,25 +1507,36 @@ stands at full severity; only the chunk-boundary rows are downgraded.
   is no longer unscanned. **The run is the closure; the triage it opened is the row
   below.** Run the command for today's figures — no count is written here, because a
   count copied out of its owner goes stale silently and a named command does not.
-- [ ] Triage the body-prose chunk tails that **grant** something. They outnumber the
-  facts-layer grants by roughly seven to one, so this is the largest speech-layer
-  worklist in the plan and it **cannot be worked in one pass.**
-  ⚠️⚠️ **RE-READ THE SEVERITY CORRECTION ABOVE BEFORE RANKING ANY OF THESE.** A chunk
-  boundary is a **300 ms seam inside one continuous file.** The listener hears what
-  follows. ⚠️ **These are PROSODIC findings — a qualification arriving after a seam
-  rather than inside the sentence — not lost limbs, and a row that argues otherwise
-  is arguing from the premise this plan already retracted.**
-  ⚠️ **`check_chunk_tails.py`'s own printed footer still asks *"does this still tell
-  the truth if the listener stops here?"*, which contradicts the retraction written
-  at the top of the same file.** Whoever runs the tool without reading its source is
-  handed the false premise. **See the tool row in Workstream 0B.**
-  ⚠️ **The docstring names the test that actually does the work:** a value whose
-  qualification lives *outside it* is defective **at any position in its block** —
-  the chunk edge is how the tool finds candidates, **not why they are defects.**
-  **Acceptance:** each hit is either repaired by folding the limit into the same
-  sentence as the permission, or recorded as safe with the reason. ⚠️ **The chunker
-  splits only at sentence ends, and lengthening anything MOVES every boundary below
-  it** — re-run after each change rather than trusting the list you started with.
+- [x] **SUBSTANTIALLY WORKED, 16–17 September.** Two waves triaged the largest
+  concentrations: `rules_primer.md` (58), `body_contact_and_battles.md` (35 prose
+  + 8 facts-block hits out of scope for this pass), `goaltender.md` (29),
+  `special_teams.md` (21), `offensive_zone_play.md` (19), `forechecking_systems.md`
+  (21), `faceoffs.md` (17) — **200 hits read in full surrounding context, not the
+  tool's truncated printout.** **6 genuine fixes**, each folding an existing,
+  already-sourced qualifier into the same sentence as the permission it qualifies —
+  no rule, citation or claim was changed, only where the qualification sits. The
+  other ~194 were judged self-contained on a real read and are NOT re-flagged;
+  a handful of borderline cases (a rule quotation itself split mid-sentence across
+  a chunk boundary — a rendering artefact, not a content defect) were left with the
+  reason recorded, all erring in the safe/over-strict direction.
+  ⚠️ **`check_chunk_tails.py`'s printed footer was earlier accused of contradicting
+  its own docstring's retraction — THAT ACCUSATION WAS WRONG AND IS WITHDRAWN
+  (see Workstream 0B).** The footer and docstring agree; the footer states the
+  standalone-reading test on purpose.
+  ⚠️ **Remaining, corpus-wide:** every other document, at lower individual counts
+  (`getting_started.md` 9, `risk_management.md` 9, `equipment.md` 12, and roughly
+  20 more documents at 2–15 each — re-run the tool for today's figures). ⚠️ **A
+  propagation gap flagged by one agent, not chased further this round:**
+  `body_contact_and_battles.md:301` (a `Rule:` fact) and `:593` (another `Rule:`
+  fact) both state Hockey Canada's *"triggers no automatic suspension"* WITHOUT
+  the caveat folded into the fixed body-prose instance at `:311` (*"automatic
+  under the rulebook only, since your own league's supplementary discipline may
+  still act on it"*) — these weren't chunk-terminal so the tool never surfaced
+  them, and propagating a caveat into a `Rule:` fact needs a char-cap check first.
+  **Acceptance for what remains:** each hit is either repaired by folding the
+  limit into the same sentence as the permission, or recorded as safe with the
+  reason. ⚠️ **The chunker splits only at sentence ends, and lengthening anything
+  MOVES every boundary below it** — re-run after each change.
 - [ ] Triage the 18 printed `check_diagram_quotes.py` hits — comments in diagram
   sources quoting text no content document now contains. Several are benign
   descriptions of what the picture does not draw. The ones worth reading first
