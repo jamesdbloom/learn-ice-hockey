@@ -686,19 +686,36 @@ agent per disjoint content file set. **Dependency:** Workstream 1 go/no-go.
 `safety-reviewer` are mandatory. **Dependency:** Workstream 0; may run alongside
 Workstream 1 only on disjoint files.
 
-- [ ] Resolve the shorthanded-icing cluster: NHL 81.6's expiry trigger, NHL 20.3's
-  immediate-substitute and additional-minor limbs, the four-book scope, and all
-  affected `Rule:`/prose/facts sites. Read parent rules end to end, then propagate
-  only the settled wording.
-- [ ] Re-read Hockey Canada 6.7 and CARHA 65, including definitions, notes,
-  interpretations, and major-penalty substitution rules, before making any
-  exclusivity or silence claim.
-- [ ] Resolve British U12 applicability in `uk_rules.md`, then scope any
-  affected icing, offside, running-clock, and line-change guidance. Do not attach
-  an orphaned note to one dump-in subsection.
-- [ ] Review the remaining goaltender-contact/restricted-area and British-scope
-  statements, including `defender.md`'s beer-league/IIHF wording and its
-  inference from the absence of a trapezoid rule.
+- [x] **STALE, verified closed 17 September.** Already resolved by commits
+  `862c0dd` and `8af85e4` before this session, with the settled wording now
+  confirmed live (e.g. `special_teams.md:640`'s expiry/immediate-substitute/
+  bench-minor treatment). Independently confirmed on record in
+  `project/reviews/round_78_wave1_2026-09-16.md`, which reports a dedicated
+  `rules-verifier` end-to-end read of NHL 81.6/20.3, IIHF 81.6, USA Hockey
+  624 and Hockey Canada 6.7/CARHA 65 already closing this row's substance.
+- [x] **STALE, verified closed 17 September.** Same round-78 pass: *"tested
+  seven exclusivity and silence claims and all seven held."* This is
+  exactly what this row asked for. Pointer:
+  `project/reviews/round_78_wave1_2026-09-16.md`.
+- [x] **STALE, verified closed 17 September.** Resolved by commit `d0b884e`,
+  which added `uk_rules.md`'s dedicated `§U12 is a different game, and
+  neither rule book says so` section (icing, offside, running clock, and
+  line-change/penalty administration all covered), cross-linked from the
+  Overview, Common Mistakes, a Key Takeaway, and the Sources trailer — not
+  an orphaned note. Propagated outward to `core_principles.md`,
+  `rink_map.md`, `rules_primer.md`, `getting_started.md`, `special_teams.md`
+  and `body_contact_and_battles.md` (sampled, not exhaustively re-read).
+- [ ] **PARTIALLY RESOLVED, verified 17 September.** `defender.md`'s
+  beer-league/IIHF wording is fixed (commit `582a37b`) — CARHA is now named
+  as a fifth book, with the inference-from-absent-trapezoid risk explicitly
+  disclaimed ("'Beer league' is not a rule set, so ask yours which book it
+  runs, by name"). **Still open:** `goaltender.md`'s own trapezoid section
+  names only USA Hockey and Hockey Canada's freeze restriction, with no
+  CARHA mention anywhere in that section — this is Workstream 2E's
+  already-recorded, deliberately-deferred gap (that section's facts block
+  sits at the corpus's 11-fact hard cap with minimal character headroom, so
+  the fix needs a block restructure, not a bare addition). Not fixed here;
+  tracked at Workstream 2E.
 - [ ] Review the USA Hockey goalkeeper-area interaction, faceoff second-violation
   wording, charging/contact classifications, and any other penalty-bearing rows
   before propagation.
