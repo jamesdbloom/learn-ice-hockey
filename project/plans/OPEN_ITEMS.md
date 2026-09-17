@@ -1523,20 +1523,49 @@ stands at full severity; only the chunk-boundary rows are downgraded.
   its own docstring's retraction — THAT ACCUSATION WAS WRONG AND IS WITHDRAWN
   (see Workstream 0B).** The footer and docstring agree; the footer states the
   standalone-reading test on purpose.
-  ⚠️ **Remaining, corpus-wide:** every other document, at lower individual counts
-  (`getting_started.md` 9, `risk_management.md` 9, `equipment.md` 12, and roughly
-  20 more documents at 2–15 each — re-run the tool for today's figures). ⚠️ **A
-  propagation gap flagged by one agent, not chased further this round:**
-  `body_contact_and_battles.md:301` (a `Rule:` fact) and `:593` (another `Rule:`
-  fact) both state Hockey Canada's *"triggers no automatic suspension"* WITHOUT
-  the caveat folded into the fixed body-prose instance at `:311` (*"automatic
-  under the rulebook only, since your own league's supplementary discipline may
-  still act on it"*) — these weren't chunk-terminal so the tool never surfaced
-  them, and propagating a caveat into a `Rule:` fact needs a char-cap check first.
-  **Acceptance for what remains:** each hit is either repaired by folding the
-  limit into the same sentence as the permission, or recorded as safe with the
-  reason. ⚠️ **The chunker splits only at sentence ends, and lengthening anything
-  MOVES every boundary below it** — re-run after each change.
+⚠️⚠️ **UPDATE — a third wave closed the rest of the corpus, 17 September.** Three
+  more agents covered the remaining 20 documents: `defensive_zone_coverage.md`,
+  `game_management.md`, `equipment.md`, `puck_handling.md`,
+  `defending_the_rush.md` (66 hits); `center.md`, `risk_management.md`,
+  `getting_started.md`, `playing_without_the_puck.md`, `uk_rules.md`,
+  `on_ice_communication.md` (57 hits); `zone_entries.md`, `breakouts.md`,
+  `switching_positions.md`, `winger.md`, `passing_and_receiving.md`,
+  `defender.md`, `language_and_glossary.md`, `skating.md`, `rink_map.md` (56
+  hits). **179 more hits read in full context. ZERO further defects found** —
+  every one was already self-contained (qualifier in the same sentence, or in
+  the same paragraph as a genuinely continuous claim). Each agent specifically
+  grepped its files for the Hockey-Canada-suspension shape (*"no automatic",
+  "triggers no", "no further consequence"*) — **no further instance of it found
+  anywhere in these 20 documents.**
+  ⚠️ **A GAP FOUND WHILE CLOSING THIS OUT, THEN CLOSED: `technique/shooting.md`
+  (13 hits) was never assigned to any of the three waves** — an oversight in how
+  the file lists were split, not a deliberate exclusion. **Checked directly by
+  the coordinator, following the now well-established pattern: all 13 read in
+  full context, ZERO defects — every one is either an already-self-contained
+  quotation (its own proviso in the same sentence), a list-intro sentence
+  followed by the list, or a topic-closing line followed by an unrelated new
+  section.** No edit made. Still untouched, all small:
+  `neutral_zone_systems.md` (3), `how_to_watch_hockey.md` (3), `time_and_space.md`
+  (3), `team_play_and_culture.md` (2), `conditioning_and_recovery.md` (2),
+  `reading_ice_hockey_diagrams.md` (1), `practice_and_development.md` (1),
+  `scanning_and_anticipation.md` (1), `puck_support_and_spacing.md` (1),
+  `core_principles.md` (1) — **31 hits across 11 documents, roughly 8% of the
+  corpus-wide total, genuinely unexamined.**
+  ⚠️ **The propagation gap at `body_contact_and_battles.md:301` and `:593`
+  (Hockey Canada's *"triggers no automatic suspension"* stated without the
+  caveat folded into the fixed body-prose instance at `:311`) is STILL OPEN** —
+  not chased this round; propagating into a `Rule:` fact needs a char-cap check
+  first.
+  **Given 6 genuine fixes were found in the first ~257 hits reviewed and ZERO
+  in the next 179, this worklist has a strongly declining yield** — the
+  remaining 31-hit tail is a completeness item, not a known-live-defect list.
+  **Acceptance for what remains:** `shooting.md` gets a real pass (it is a
+  large, safety-adjacent document and should not stay the one accidental gap);
+  the ten small documents are optional, lowest priority in the plan. Each hit is
+  either repaired by folding the limit into the same sentence, or recorded as
+  safe with the reason. ⚠️ **The chunker splits only at sentence ends, and
+  lengthening anything MOVES every boundary below it** — re-run after each
+  change.
 - [ ] Triage the 18 printed `check_diagram_quotes.py` hits — comments in diagram
   sources quoting text no content document now contains. Several are benign
   descriptions of what the picture does not draw. The ones worth reading first

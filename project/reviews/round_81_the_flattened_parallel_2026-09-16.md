@@ -800,3 +800,36 @@ is overwhelmingly CASE-shape drift in documents that already mix the
 disclosed-bracket and bare-lowered conventions — left deliberately uniform in
 every document where it was found, per the precedent this round established
 with `rules_primer.md`'s first pass.
+
+---
+
+## 18. Chunk-tails prose triage — corpus-wide closure
+
+Three more agents covered the remaining 20 documents (66 + 57 + 56 = 179
+hits), followed by a direct coordinator check of `technique/shooting.md`
+(13 hits, missed by an oversight in how the three waves' file lists were
+split). **Zero further fixes across all 192 hits** — every one was already
+self-contained on a full read: a proviso already inside the same quoted
+sentence, a list-intro sentence followed immediately by its list, or a
+topic-closing line followed by an unrelated new section/heading.
+
+Each agent specifically re-tested for the one confirmed defect shape from the
+earlier waves — a "no automatic consequence" claim whose real scope is
+narrower than it reads alone — and found no further instance anywhere in
+these 20 documents.
+
+**Combined total across all five waves this round: roughly 450 chunk-terminal
+prose grants read in full surrounding context, across every document in the
+corpus except ten very small ones (31 hits, ~8% of the corpus-wide count,
+genuinely unexamined and left as an explicitly low-priority tail).** Six
+genuine fixes were found, all in the first 257 hits reviewed; the following
+192 produced zero. **The declining yield is itself informative**: it says the
+corpus's chunk-tail-adjacent prose is now in materially better shape than it
+was at the start of this round, and further passes over the same class should
+expect a low hit rate rather than treat every future run as starting from
+scratch.
+
+⚠️ **A propagation gap remains open and was not chased**: `body_contact_and_battles.md:301`
+and `:593`, both `Rule:` facts, state Hockey Canada's *"triggers no automatic
+suspension"* without the caveat already folded into the fixed body-prose
+instance at `:311`. Facts-block char caps need checking before any fix.
