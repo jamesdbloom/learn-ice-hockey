@@ -63,7 +63,7 @@ So the striking line — that the best youth players held the puck about as long
 
 Some arithmetic, all of which is mine rather than any source's — including the two inputs it starts from.
 
-Across the 2024-25 NHL regular season, forwards who played at least 40 games averaged **15:17 of ice time per game**; defencemen averaged **19:31**. A separate sample of 8,325 shifts from 11 NHL games in that season gives a **mean shift length of 47 seconds and a median of 45**. **Neither of those is a published figure** — the ice-time averages are calculated from Hockey Reference's 2024-25 skater table, the shift lengths from the NHL's public shift-chart API across a small sample of games chosen for convenience. They are not on the same footing as the peer-reviewed possession data above. Both computations are set out in full in the written *Notes on verification* section.
+Across the 2024-25 NHL regular season, forwards who played at least 40 games averaged **15:17 of ice time per game**; defencemen averaged **19:31**. A separate sample of 8,325 shifts from 11 NHL games in that season gives a **mean shift length of 47 seconds and a median of 45**. **Neither of those is a published figure** — the ice-time averages are calculated from Hockey Reference's 2024-25 skater table, the shift lengths from the NHL's public shift-chart API across a small sample of games chosen for convenience, and neither is on the same footing as the peer-reviewed possession data above.
 
 Take a forward with 15:17 of ice time. If the study's 5-on-5 rate held across all of it:
 

@@ -1497,12 +1497,23 @@ stands at full severity; only the chunk-boundary rows are downgraded.
   **Acceptance:** each still tells the truth if the listener stops there.
   ⚠️ **Lengthening a block to fix one MOVES the boundary and can make a different
   value chunk-terminal** — re-run after each change.
-- [ ] `hockey-iq/playing_without_the_puck.md` tells a listener both computations
-  are *"set out in full in the written Notes on verification section"* — a section
-  the renderer drops. **Acceptance:** the substance is voiced inline, or the
-  sentence stops pointing at an unreachable layer. The other four
-  `check_pointers` hits are in mixed documents where the tool cannot tell which
-  table is meant; **read the rendered SSML, not the label.**
+- [x] **FIXED, 17 September.** `hockey-iq/playing_without_the_puck.md`'s
+  pointer to the dropped Notes section is gone. On inspection the Notes
+  section held **no substance beyond what the body already stated** — same
+  source, same sample size, same caveat — so the pointer was over-promising
+  hidden detail rather than under-disclosing anything. The dangling sentence
+  was removed and its one non-redundant clause merged into the existing
+  sentence; the Notes section itself is untouched. `check_pointers.py` no
+  longer flags this document.
+  **The other four `check_pointers` hits — checked, all benign:**
+  `rules_primer.md:143` and `:483` point at plain bullet lists, not tables,
+  so `TABLE_MAX_*` drop rules don't apply. `rules_primer.md:942` points at
+  the one big comparison table that IS dropped from audio, but the sentence's
+  actual payload (what the table does NOT cover, and where to find it
+  instead) is voiced regardless of whether the table itself survives — a
+  wording nit, not a stranded limb. `body_contact_and_battles.md`'s table
+  pointer resolves to a table confirmed read-as-prose. **No further action
+  needed on any of the four.**
 - [x] `check_chunk_tails.py --prose` **has now been run, 16 September.** Body prose
   is no longer unscanned. **The run is the closure; the triage it opened is the row
   below.** Run the command for today's figures — no count is written here, because a
@@ -1566,12 +1577,22 @@ stands at full severity; only the chunk-boundary rows are downgraded.
   safe with the reason. ⚠️ **The chunker splits only at sentence ends, and
   lengthening anything MOVES every boundary below it** — re-run after each
   change.
-- [ ] Triage the 18 printed `check_diagram_quotes.py` hits — comments in diagram
-  sources quoting text no content document now contains. Several are benign
-  descriptions of what the picture does not draw. The ones worth reading first
-  are `rules_primer.mjs:91`, `shooting.mjs:517`, `rule69_clauses.mjs:95`,
-  `risk_management.mjs:587`. **Acceptance:** each is either benign, or the
-  content moved and the comment is stale evidence.
+- [x] **The 4 named starting points checked, 17 September — all benign.**
+  `rules_primer.mjs:93` quotes the diagram module's OWN `describe` field, not
+  `content/` prose — self-referential, not stale. `shooting.mjs:517` is a
+  close paraphrase of a disclosure still live in `shooting.md` in both its
+  `Convention:` fact and body prose — word ORDER differs, content doesn't.
+  `rule69_clauses.mjs:95` is internal code documentation cross-referencing
+  another `.mjs` module, not a claim about any `content/` document at all.
+  `risk_management.mjs:622` is a **deliberately preserved** record of a
+  caption's prior wording from a documented 15 September shortening pass —
+  the "kept so the reasoning stays traceable" class the tool's own docstring
+  names as correct to leave. **No `.mjs` file was edited.**
+  ⚠️ **The other ~14 of the original 18 named hits were NOT individually
+  triaged this pass** — still open, lowest priority. The tool's own baseline
+  is ~9% true-positive against 1,804 spans checked (1,045 not found
+  verbatim), so a further sweep should expect a low hit rate, not treat
+  every run as starting fresh.
 
 ## Workstream 3C: the site review — what it cleared, and what it opened
 
