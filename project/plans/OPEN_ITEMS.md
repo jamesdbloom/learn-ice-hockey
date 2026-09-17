@@ -1068,22 +1068,34 @@ which found it, verified it, and **deliberately did not close it**.
   alone creates exactly the body-✓ / block-✗ propagation gap the corpus
   forbids. **The style guide's own remedy is to split the section
   on the seam the body already uses — and that is authoring, not a correctness
-  pass.** **Acceptance:** the section is split and the fact lands in both layers,
-  reviewed as new authoring.
-- [ ] ⚠️ **The repair at `goaltender.md` `:395`, `:939` and `:951` is now itself an
-  unfalsifiable negative, written into three layers in one pass.** It asserts that
-  **Hockey Canada writes no forward-throw clause for a goaltender anywhere in its
-  book.** ⚠️ **`check_disclosures.py` does not flag it** — the tool's patterns do
-  not reach that phrasing, so it is invisible to the one worklist built for this
-  class. It rests on one agent's flattened whole-book regex plus a reading of
-  10.1(i)–(x), 10.2(a) and all its Interpretations, 4.13, 8.3(a)–(e) and 6.12(d).
-  **The agent flagged this against itself.** **Acceptance:** a second, independent
-  attack on that negative — and consider whether `check_disclosures.py` should
-  learn the phrasing.
-- [ ] `goaltender.md:391` — *"The two books run in parallel here"* is a **single
-  sentence two paragraphs above** the nine-bullet list it governs, and it is what
-  scopes every bare `67.3(x)` and `63.2(x)` citation below it. ⚠️ **Load-bearing
-  and fragile under chunked audio.** Reported, not restructured.
+  pass.** **CLOSED, 17 September — done and independently verified GO.** Split
+  into `### The trapezoid — the rule that defines what you can do` (6 facts: NHL/
+  IIHF rule, UK application, centre-red-line material) and a new
+  `### No trapezoid doesn't mean no restriction — the freeze under Hockey Canada,
+  USA Hockey and CARHA` (6 facts, including the new CARHA 58(b) fact). An
+  independent `rules-verifier` re-check confirmed the CARHA fact verbatim against
+  `sources/carha.txt`, confirmed both blocks ≤11 facts with every fact within its
+  character cap, confirmed every fact traces to its own section's body (no
+  cross-section leakage), confirmed the cross-reference links resolve, and
+  confirmed no content was dropped or duplicated (paragraph-length arithmetic
+  checked out exactly: 11 original facts + 1 new = 12, split 6/6).
+- [x] **CLOSED, 17 September — independently re-attacked, HOLDS.** A second,
+  genuinely independent search of `sources/hc.txt` and `sources/hc_layout.txt`
+  (not just re-reading the first agent's cited clauses) for "forward", "throw",
+  "propel" in goaltender contexts found only Interpretation 6 to Rule 10.2(a)
+  (*"Where a goaltender has the puck in their glove and throws the puck to a
+  teammate, the Referee will stop play, but no penalty will be assessed"*) —
+  direction-agnostic, no forward/toward-net distinction, already the clause
+  quoted in the document. No Hockey Canada forward-throw clause exists. `check_disclosures.py`
+  still won't catch this phrasing — not changed, out of scope for this row.
+- [x] **CLOSED, 17 September — small, safe fix made and independently
+  verified.** `goaltender.md:391`'s "the two books run in parallel here"
+  governs six bullets, not nine (the row's count was stale); two of the six
+  relied on the scoping sentence alone rather than naming their book inline.
+  Both rule numbers' identical NHL/IIHF numbering was verified against
+  `sources/iihf_rules_v1.1.txt` before adding "NHL and IIHF" directly into
+  those two citations, so each bullet is now self-sufficient regardless of
+  TTS chunk boundaries. No further restructuring attempted or needed.
 
 ## Workstream 2F: `defender.md` residue after the criticals
 
@@ -1843,10 +1855,16 @@ It is about the authority the brief did not carry.**
   precise coordinate (not just a depth) for the IIHF fact pattern.
   `goaltender.md`'s two rulings correctly remain presented side by side,
   unresolved — no edit made, none warranted.
-- [ ] ⚠️ **The NHL has no obtainable casebook**, so *"forward"* is **undefined**
-  under the NHL book — the IIHF Handbook is the only interpretive evidence and
-  ranks itself below the Rulebook. **A reader under the NHL book has nothing but
-  the bare words.** Record it where a reader meets the rule, or accept it.
+- [x] **CLOSED, 17 September — recorded where a reader meets the rule,
+  independently verified.** `### Throwing the puck forward` now discloses
+  that no NHL casebook exists in this corpus, so "forward" is undefined
+  under the bare NHL rule text, distinguishing it from the IIHF (Situation
+  Handbook exists but ranks below its own Rulebook) and USA Hockey (Casebook
+  defines the word). Independently confirmed via `ls sources/*.txt` and
+  `sources/README.md` — no NHL casebook/interpretive volume exists anywhere
+  in this corpus's source set — and the new sentence is carefully scoped
+  ("no NHL casebook is held here," not "does not exist"), matching what the
+  README actually supports.
 - [x] **RECORDED AND CLOSED.** Two disclosures re-tested this round and
   UPHELD, recorded so nobody re-opens them: `risk_management.md:651` and
   `defensive_zone_coverage.md:602` both assert the word *"catch"* appears in
