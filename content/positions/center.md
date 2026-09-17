@@ -4,6 +4,16 @@
 >
 > **Related:** [Winger](winger.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Faceoffs](../systems/faceoffs.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Breakouts](../systems/breakouts.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Carry the puck through the middle with your head up.** You cannot brace for a hit you cannot see — and the IIHF, the British reader's book, protects you *less* if you don't: it does not penalise a square check with no upward motion on a carrier skating toward the checker with their head down. [Body Contact and Battles](../technique/body_contact_and_battles.md#keep-your-head-up-always-this-one-rule-prevents-most-of-it) has the rule in full.
+
+**Check whether you may body check at all before planning a hit around it, and never finish one into somebody's back.** Checking is barred outright in several USA Hockey and Hockey Canada classifications by age, sex and contact tier — and neither list is the whole answer, so ask your affiliate rather than an age chart. In Britain the IIHF book writes no classification ban at all, so get your contact status from your league in writing. Checking from behind has no minor option under the NHL or the IIHF: it is a major plus an automatic game misconduct in both.
+
+**The breakout, the defensive-zone coverage and the neutral-zone pressure taught here are coaching systems, not laws** — a swing breakout versus a centre fly, a low zone collapse versus man-on-man, containment versus an aggressive press. Find out which your team actually plays before you build a habit on any of them.
+
+**A winger's stray stick can get you thrown out of a faceoff.** Encroachment before the drop usually ejects the centre, not the offending winger — tell your wingers what counts, and name two replacement draw-takers, because under Hockey Canada whoever caused the violation cannot be the replacement.
+
 ## Overview
 
 ```facts

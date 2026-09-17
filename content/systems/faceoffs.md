@@ -35,6 +35,16 @@
 >
 > **Related:** [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
 
+## Key focus
+
+**Most faceoffs matter far less than people think — do not chase your faceoff percentage.** Across NHL seasons, team faceoff win rate explains only a small share of a team's results. Chase instead the ten or fifteen draws a game where the outcome actually changes something — a coaching estimate, not a counted figure — especially your own defensive zone, where a clean loss puts a set opponent into the most dangerous ice on the rink while your team is still facing the wrong way.
+
+**Watch the official's hand, not your opponent's** — you're training a reaction, not fighting a duel. Faceoff win rates among regular NHL centres vary by more than twenty percentage points, far too wide a spread to be luck, which means this is a skill you can actually improve.
+
+**If a teammate creeps into the circle before the drop, it's your CENTRE who is punished, not them — tell your linemates where they may stand before it costs you a draw.** Under NHL rules your centre is ejected from the faceoff; under the IIHF's current (2026/27) rulebook the same is now true, but under the older 2025/26 book, which some leagues may still run, a violation was only a warning to the team. **If you play in Britain, IHUK's own In-House Rules settle it regardless of edition: your centre is replaced on every violation except one following an icing.**
+
+**A faceoff lost cleanly in your own end is dangerous immediately** — it puts a set opponent running a prepared play into the most dangerous ice on the rink while your team is still stationary and facing the wrong way, so prepare these draws above all others. Every alignment for a defensive-zone draw is a coaching choice, not a rule — find out what your team runs before your first shift.
+
 ## Overview
 
 A **faceoff**, or **draw**, is how play starts and restarts: an official drops the puck between the sticks of two opponents, and whoever wins it gives their team possession. There are roughly **56 in an average NHL game** — 56.6 per game in 2024-25 and 56.0 in 2025-26, computed from the NHL's official statistics — and they are the only moments where you know in advance where the puck will be and when.

@@ -5,6 +5,18 @@
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Rink Map](../foundation/rink_map.md) — the dictionary for every line, zone and named area of the ice used below · [Game Management](../systems/game_management.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Mental Game](mental_game.md) · [Practice and Development](practice_and_development.md) · [Playing Without The Puck](../hockey-iq/playing_without_the_puck.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**When someone is down and not getting up, stop playing and wave for the bench and the officials — and if it is a head or neck injury, call for immediate medical help, do not move them, and do not take their helmet off.** Waving at the bench is a rink convention, not a call for help — in a rec game there may be nobody at the rink who is trained, so somebody actually has to phone. One person stays with the player and keeps them still; somebody else calls. Assume a possible spinal injury in any head injury.
+
+**Never go over the boards during an altercation, and never leave the penalty box before an official releases you — your own penalty expiring is not permission to leave while it is still going on.** All four rulebooks put at least a game misconduct on leaving during an altercation, reaching more players than the first one off, and the NHL adds automatic suspensions on top. A bench that empties is a culture failure before it is a penalty.
+
+**Arguing with an official has essentially never reversed a call, and simply disputing a ruling is itself a minor penalty under the NHL, the IIHF and USA Hockey**, with no rudeness required — Hockey Canada's version needs the dispute to be conducted in an unsportsmanlike manner, so check your own book before assuming the bare act is enough. Coming off the bench to argue is worse again, under every book. Raising a rule interpretation is your captain's job, not yours.
+
+⚠️ **Don't shoot at your own goalie's head in the warm-up, or fire pucks at them from ten feet in a drill.** No book makes this an offence in itself in most cases, and every book that stops play for an injured goaltender still waits on an official judging them hurt — which a cage makes hard to see. Aim at the pads and the glove.
+
+**Trust on a team is a prediction problem rather than a feeling** — reliability, not skill, is the fastest way to be accepted, and a predictable teammate beats a brilliant unpredictable one.
+
 ## Overview
 
 The fastest way to be accepted by a hockey team is reliability, not skill. Being where you said you would be is what lets a teammate pass without looking up first.

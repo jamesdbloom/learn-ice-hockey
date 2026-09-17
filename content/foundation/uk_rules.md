@@ -4,6 +4,16 @@
 >
 > **Related:** [Rules Primer](rules_primer.md) · [Rink Map](rink_map.md) · [Getting Started](../getting-started/getting_started.md) · [Equipment](../off-the-ice/equipment.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Faceoffs](../systems/faceoffs.md) · [Game Management](../systems/game_management.md)
 
+## Key focus
+
+**If you play in Britain, your rule book is the IIHF's, not the NHL's, at every level.** Wherever any document — including this corpus — flags an IIHF difference, that is your game; a USA Hockey or Hockey Canada flag is not. On top of the IIHF book sits one thin layer of domestic amendment, the In-House Rules, which override it where the two differ.
+
+**A neck laceration protector is mandatory for every player at every British level, adults included, with no warning.** Under the In-House Rules a missing one is an immediate 10-minute misconduct, a second offence escalates automatically to a game misconduct, and if it comes off during play you must leave the ice and may not retrieve it. USA Hockey's adult exemption and Hockey Canada's minor/female-only rule are not yours.
+
+**Neither the IIHF rulebook nor the In-House Rules sets a checking age for British hockey — your competition's own Rules of Competition does, and the answer differs league by league.** For the leagues IHUK runs itself, junior U10 and U12 are non-checking, U14 upward is checking, NIHL Division 1 and 2 is checking, and the WNIHL is non-checking — but that covers only IHUK's own leagues, not the EIHL, BUIHA, NIHL National or Scottish domestic hockey outside it. Ask your league before you assume either way.
+
+**A first major penalty can end an adult's game in Britain, with no injury required.** IIHF Rule 20.4 automatically ejects on any of twenty listed infractions, where the NHL needs an injury on several equivalents and generally a third major. Do not calibrate your expectations on NHL hockey.
+
 ## Overview
 
 If you play in Britain, **your rule book is the IIHF's.** Every level of the game here runs on it — the National Ice Hockey League, the recreational and junior game across England, Wales, Scotland and Northern Ireland, university hockey and the GB national teams, and the Elite League too, though that last rests on the League's own public reporting rather than on its Casebook, which has not been read. Almost all hockey writing in English is written to NHL rules and so describes somebody else's game: wherever it flags an **IIHF** difference, that flag is yours; wherever it flags **USA Hockey** or **Hockey Canada**, it is not.

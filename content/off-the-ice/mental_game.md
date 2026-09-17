@@ -6,6 +6,18 @@
 >
 > **If you are in crisis right now, do not read the rest of this document — go straight to [§13, When to seek real help](#13-when-to-seek-real-help), which has the emergency and crisis-line numbers.**
 
+## Key focus
+
+**If you are in crisis right now — any thought of harming yourself or of suicide — stop reading this document and get help now, tonight.** Call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada) or go straight to [§13, When to seek real help](#13-when-to-seek-real-help) for crisis-line numbers by country. This is not a threshold to weigh up.
+
+**Build a four-step shift reset and run it after every mistake: a physical trigger, one long breath out, a cue word, then name your next action.** The last step is the point — a plan displaces the replay. The sequence itself is coaching craft with no study testing this exact ordering, but each part has independent support of its own.
+
+**Judge yourself on process rather than outcome, but do not delete the outcome goal** — the one study that tested all three together found the combination won, not process alone. Check which system your team plays before you copy anyone's process-goal list, because the job changes with it, and never put "finish every check" on it: whether you may check at all depends on your age and your league's classification.
+
+**Confidence comes above all from having actually done the thing.** In a scoring slump, shoot more, not less — shooting less shrinks the sample and removes the ugly goals that end droughts.
+
+**Nerves are your body preparing; anxiety is the worry about it.** Manage the first, address the second — and if it has spread beyond the rink, it is not a hockey problem; that warrants a qualified professional, and looking for one is not a failure of toughness.
+
 ## Overview
 
 The mental side of hockey closes the gap between your worst performance and your best. It does not raise your best.

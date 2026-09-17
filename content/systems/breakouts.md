@@ -9,6 +9,16 @@
 >
 > **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Forechecking Systems](forechecking_systems.md) · [UK and England Rules](../foundation/uk_rules.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Zone Entries](zone_entries.md) · [Faceoffs](faceoffs.md) · [Defender](../positions/defender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Goaltender](../positions/goaltender.md)
 
+## Key focus
+
+**Never take contact with your back to the boards, and never duck — puck protection never justifies either.** Get your skates parallel to the boards, forearm and hip into the wall, head up and chin off your chest, whether you're wheeling, reversing, or shielding the puck under pressure.
+
+**Do not move the puck across the ice in front of your own net — not with a pass, not by skating it — unless the read is unmistakable.** Go behind your own net instead, where an interception costs little; the same pass in front of the net is a point-blank scoring chance against. The one exception is the cross-ice "over," and it needs the forecheck genuinely overloaded to one side with the middle empty.
+
+**Default to leaving the zone with the puck; clear only when you've read the situation, not by reflex.** Carrying or passing the puck out led to an attack the other way about 89% of the time in one large NHL tracking study, against about 20% for a clear nobody recovered — though the study's own conclusion is that keeping possession, not the method, is what matters. Clear when you're outnumbered low with no outlet, the alternative is a slot turnover, you're killing a penalty (subject to your league's icing rules), changing your line, or protecting a late lead.
+
+**Almost everything else here — who plays where, and even what a play is called — is a coaching choice, not a law of hockey.** Teams call the same play different names, and some call different plays the same name. Learn the shapes below, then find out which ones your own team actually runs.
+
 ## Overview
 
 ```facts

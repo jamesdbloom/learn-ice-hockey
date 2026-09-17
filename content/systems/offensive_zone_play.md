@@ -5,6 +5,18 @@
 >
 > **Related:** [Zone Entries](zone_entries.md) · [Forechecking Systems](forechecking_systems.md) · [Shooting](../technique/shooting.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Faceoffs](faceoffs.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**You are not trying to take a shot — you are trying to take a shot from a dangerous place, with the goalie out of position.** Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot, and the cycle, the low-to-high and the net-front battle are all machinery for producing that one moment.
+
+**Look across the middle of the ice before you look up the wall.** A pass across the royal road, immediately before the shot, is the highest-value pass type measured, because the goalie cannot re-square, find the puck and reset their stick in the time available, and that gap opens and closes fast.
+
+**Standing in the goalie's sightline is legal outside the crease and worth doing constantly, provided there is no contact.** Inside the painted crease it is not, though the rule is narrower than it sounds: what voids the goal there with no contact at all is a significant position — a substantial part of your body in the paint for more than an instant, obstructing the goalie's vision and impairing their ability to defend. Keep your feet out of the paint whichever book you play under.
+
+**The seconds right after your own shot are the most dangerous moment in the possession.** The goalie has committed, is often down and out of position, and the puck is loose in the most dangerous area on the ice — the high forward's job is to be the safety at the top of the circle, so a rebound or a counter-attack has to go through them.
+
+**Almost everything else here is a coaching choice** — who takes the front of the net, whether the defencemen join the attack, how the forwards rotate. Find out what your team plays before deciding somebody else is out of position.
+
 ## Overview
 
 ```facts

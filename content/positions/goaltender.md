@@ -6,6 +6,16 @@
 >
 > **Related:** [Center](center.md) · [Defender](defender.md) · [Winger](winger.md) · [Switching Positions](switching_positions.md) · [UK and England Rules](../foundation/uk_rules.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Equipment](../off-the-ice/equipment.md) · [Mental Game](../off-the-ice/mental_game.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md)
 
+## Key focus
+
+**Every save begins with a decision you made before the shot: how far out of your net am I.** Depth always trades the shooter in front of you against the pass behind — challenge to the top of the crease or beyond against a lone shooter with no pass available, get back when the puck is in tight or a pass across the slot is on. On a screened shot from distance the coaching schools genuinely disagree, one wanting you deeper for time to find the puck and the other calling that a common error — ask which your coach teaches.
+
+**Outside your crease, play the puck or clear it rather than freezing it.** Under the NHL and IIHF a deliberate freeze out there is a two-minute minor however many bodies are around you, and the only cover those two books protect is one that follows your own save. USA Hockey's Casebook excuses some covers made under pressure in front of the goal line, so check your own book before you carry this rule into a game under it.
+
+**Stay in your net if a fight starts.** Leaving your crease during an altercation is a minor under the NHL, IIHF and Hockey Canada, and going in to help costs a game misconduct on top under USA Hockey and Hockey Canada alike — wait to be directed out by the referee.
+
+**Do not play on after a hard shot to your mask just because no whistle came.** A concussion needs no knockout and no body check to have happened, and judgement is one of the things it impairs, so this is not a call to make on your own read of how you feel. The whistle for it is discretionary in more than one rulebook, so say something rather than waiting for one.
+
 ## Overview
 
 ```facts

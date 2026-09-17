@@ -12,6 +12,18 @@
 >
 > **Related:** [Skating](../technique/skating.md) · [Game Management](../systems/game_management.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Practice and Development](practice_and_development.md) · [Equipment](equipment.md) · [Mental Game](mental_game.md) · [Goaltender](../positions/goaltender.md)
 
+## Key focus
+
+**If a concussion is suspected, the player comes off immediately and does not return to play that day — not that shift, not that period, not that game.** "Suspected", not "confirmed": nobody at a rec-league rink is qualified to rule it out, and a concussed player will tell you they are fine. Any one of ten red flags — neck pain or tenderness, a seizure, loss of vision or double vision, loss of consciousness, increasing confusion or a deteriorating conscious state, weakness or numbness/tingling in more than one arm or leg, repeated vomiting, a severe or worsening headache, increasing agitation, or a visible skull deformity — means calling an ambulance immediately, no exceptions. **Assume a possible spinal injury in any head injury: do not move them (other than what is required for airway support, unless you are trained to do more), and do not remove the helmet.** Short of a red flag, a suspected concussion still means: no return that day, no driving, no alcohol, not left alone for at least the first 3 hours, not sent home by themselves, and a medical professional's clearance before playing again — and symptoms clearing up is not the all-clear. If you play in Britain, there is a floor under that medical decision: no return to competition before 21 days from injury, counting the day of the injury as day 0.
+
+**You do not have to be knocked out to have a concussion** — loss of consciousness occurs in fewer than 10% of cases and is not required to diagnose one.
+
+⚠️ **Whether body checking is legal where you play depends on your age group, gender category, league and country — never assume, ask.** The rules differ sharply by rulebook and, in Britain, by competition regulation rather than by age alone; getting it wrong is a penalty that runs the whole way up to a match penalty.
+
+**Your groin is probably weak relative to the muscles that oppose it, and that was a measured risk factor in professional players** — below 80% of abductor strength, 17 times more likely to strain an adductor. Strengthen it deliberately, but no single exercise is proven to prevent the injury, and persistent groin or hip pain needs a physiotherapist, not more stretching.
+
+**The off-ice warm-up is the best-evidenced injury measure you control.** Ten to fifteen minutes, every time, beats a cleverly designed session done occasionally.
+
 ## Overview
 
 Hockey asks your body for repeated near-maximal efforts of roughly thirty to eighty seconds, separated by two to five minutes sitting down, for sixty minutes of clock time.

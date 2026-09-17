@@ -17,6 +17,14 @@
 >
 > **Related:** [Rink Map](../foundation/rink_map.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Getting Started](../getting-started/getting_started.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Special Teams](../systems/special_teams.md)
 
+## Key focus
+
+**Shape tells you what a player is; fill tells you which team they're on — and that pairing is this guide's own convention, not a universal one.** A circle is a forward, a triangle is a defenceman, and a bare G is a goaltender; an open glyph is your own team, a solid one the opposition. Elsewhere in hockey coaching material the same two shapes are just as likely to mark the two *teams* instead — the IIHF's own published key does exactly that, putting a defending right wing in a triangle — so do not carry this reading onto a diagram made somewhere else.
+
+**Believe the caption over the picture.** A diagram freezes one moment of one system among several, and where a caption calls a detail a coaching choice, the caption is right and the drawing is not the whole story — that goes for a shaded region, a ranked tint and a player's position alike.
+
+**A small numbered tag on a route marks the order things happened, never who did them.** Routes are numbered; players are labelled by role. The two marks never share a spot, and a number is never a player's name.
+
 ## Overview
 
 In a rink diagram a **circle is a forward and a triangle is a defenceman**, while

@@ -5,6 +5,18 @@
 >
 > **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Breakouts](breakouts.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Zone Entries](zone_entries.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Game Management](game_management.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**There is no single correct forecheck** — it is a family of named systems, each buying pressure at the price of risk, so ask your coach which one your team runs and which one it switches to with a lead; most teams have at least two.
+
+**Find out whether you may body check in this game before you learn to arrive on one.** USA Hockey bars it at 12 & under and below, in all Girls'/Women's and non-check Adult classifications, and outright whenever a checking team plays a non-checking one — the answer can change per fixture, not just per division. Hockey Canada bars it at U13 and below, throughout female hockey and in any Member-approved division.
+
+**Angling is the whole skill: skate at the space you want to deny, not at the puck.** The goal is to eliminate options, not to make a hit — a missed hit removes you from the play as surely as it removes them. Where body checking is barred, angling is the entire toolkit, not a beginner's version of hitting.
+
+**Never finish into the back of a player facing the end boards.** Take the puck, take the ice, or angle them off it instead — the onus is on you as the arriving player. Neither the NHL nor the IIHF writes a minor for checking from behind at all, so the floor is a major with an automatic game misconduct. Hockey Canada 7.5 always ejects too — its minor is paired with a mandatory game misconduct. USA Hockey's floor is lower: its default under 608(a) is a minor plus a misconduct (no ejection), and its Casebook reserves the ejecting tier for a forceful check on a player standing at the boards or one driven head first into them — so do not assume every check from behind ejects you there.
+
+**At the wall, forechecking or being forechecked, never turn your back to the boards and never duck — in every league, checking or not.** Skates parallel to the wall, forearm and hip to it, head up and chin off your chest.
+
 ## Overview
 
 ```facts

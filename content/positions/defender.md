@@ -4,6 +4,16 @@
 >
 > **Related:** [Center](center.md) · [Winger](winger.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Breakouts](../systems/breakouts.md) · [Skating](../technique/skating.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Never take contact at the boards with your back to the wall, and never duck.** You do more retrievals under pressure than anyone on the ice, so this is squarely your hazard. Turning your back converts the contact into a hit from behind, which you can neither see nor brace for — USA Hockey warns that even a light hit from behind could inflict a severe head or neck injury. Ducking tucks your chin to your chest and straightens the cervical spine, and the injury from that head-down, head-first collision with the boards or a goal post can occur at walking speed. Arrive with your skates already parallel to the boards, take the contact on your forearm and hip, head up and chin off your chest. [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the full rule and the technique.
+
+**Never carry or pass D-to-D through your own slot — go behind your own net instead.** Some teams exchange high above the circles rather than behind the net, so ask which route yours uses, but never through the middle: a pick-off there is a point-blank scoring chance.
+
+**Find out whether your league's goaltender plays a trapezoid before you plan a single retrieval.** Under the NHL and IIHF a goalie may only play the puck behind the goal line inside it, so a dead corner rim is yours to fetch under pressure. USA Hockey and Hockey Canada mark no trapezoid at all, so that same puck is your goalie's — sprinting for it out of habit races your own goaltender. Agree the call in the room.
+
+**Check whether you may body check at all before you plan a hit around it.** Checking is barred outright in several USA Hockey and Hockey Canada classifications by age, sex and contact tier, and neither list is the whole answer — ask your affiliate. In Britain the IIHF book writes no classification ban at all, so get your contact status from your league in writing.
+
 ## Overview
 
 ![](diagram:defender-pair-overview)

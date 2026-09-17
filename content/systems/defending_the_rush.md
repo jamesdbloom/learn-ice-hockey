@@ -5,6 +5,16 @@
 >
 > **Related:** [Defender](../positions/defender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Goaltender](../positions/goaltender.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Skating](../technique/skating.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Stay on the defensive side of every attacker, all the time — the line between them and your own net.** Anything that puts an attacker between you and your goal has already gone wrong. Most of the specific technique below is just this one idea applied to a particular situation.
+
+**You cannot close a gap from a standstill: start skating backwards the moment the other team retrieves the puck, and keep shrinking the gap as you retreat.** A big gap looks safe but hands the attacker speed, time to look, and a clean shooting lane all at once — closing it removes all three together. Any specific stick-length figure you're taught is a guide, not a law; published coaching sources disagree with each other on the exact distances.
+
+**Chasing an attacker from behind, your stick goes on the puck and nothing else — never finish a check into their back.** A foul from behind that denies a clear scoring chance is a penalty shot in most rulebooks, not a two-minute penalty, and checking someone into the boards is boarding once it's dangerous, in every book — steering a carrier wide with your route is legal, but actually driving them into the wall generally is not. Confirm whether your league allows body checking at all before you build your game around it.
+
+**On a 2-on-1, a common instruction is to take away the pass and give up the shot, calling it out loud so your goalie knows to own the shooter — but that's one coaching choice among more than one legitimate answer**, and the named alternative is a timed slide across the passing lane. Ask your coach and your goalie which one your team actually plays, rather than assuming.
+
 ## Overview
 
 A **rush** is an attack that arrives before the defence is set, and coaches and analysts widely treat the chances it produces as the highest-danger chances in hockey, with published tracking behind that: the goalie is still moving and nobody has picked up an opponent yet.

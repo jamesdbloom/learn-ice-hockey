@@ -5,6 +5,16 @@
 >
 > **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [Passing and Receiving](passing_and_receiving.md) · [Puck Handling](puck_handling.md) · [Equipment](../off-the-ice/equipment.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Goaltender](../positions/goaltender.md) · [Zone Entries](../systems/zone_entries.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Where you shoot from matters more than how you shoot it.** Shots from the slot — the ice between the two faceoff circles — convert at roughly 10–15%; shots from the perimeter at roughly 2–4%, a coaching-consensus range whose source names no dataset, so trust the gap rather than the decimals. If a teammate is in the slot and you are not, pass; if two strides toward the middle turns your shot into a slot shot, take them.
+
+**Release speed beats shot speed.** A goaltender does not really react to the puck; they read your body, hands and blade and get set before it arrives. Stop gathering the puck before you shoot, do not stop your feet, and shoot from where you already are.
+
+**Screening a goalie from outside the crease, without touching them, is legal and valuable — but where the line sits depends on the book.** The NHL and IIHF key the goal-voiding rule to the crease itself, and their own appendix tables allow a screen planted on the crease line — except that the IIHF's own Rule 1.7 says that line belongs to the crease, so under the IIHF book work off the line rather than on it. USA Hockey and Hockey Canada draw it differently again: your position alone inside the paint can cost the goal, contact or not. Find out which book your league runs before you plant a screen.
+
+**Never fire pucks at your own goaltender's head in warm-up, or from ten feet in a drill.** That is a coaching caution rather than a rule of hockey — only the IIHF (if the referee believes the goalie may be dazed) and Hockey Canada (mandatory, but only U13 and below) stop play for the hit itself. Every book stops play for an injured goaltender, but a cage is what usually keeps a referee from ever having to make that call.
+
 ## Overview
 
 Shooting is two skills taught as one: the mechanics of getting the puck from your stick to the net, and the shot selection that decides which are worth taking at all.

@@ -5,6 +5,16 @@
 >
 > **Related:** [Center](../positions/center.md) · [Defender](../positions/defender.md) · [Winger](../positions/winger.md) · [Breakouts](breakouts.md) · [Defending the Rush](defending_the_rush.md) · [Forechecking Systems](forechecking_systems.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Coverage is the most system-dependent part of hockey — two good teams can run completely different systems and both be right, so find out which one yours plays rather than assuming.** The fastest diagnostic question: when the puck is in your corner, does the winger stay up at the blue line, or come down to help? The answer sorts almost every system into one of two families.
+
+**Defend the middle before the outside.** Given a choice between taking away a shot from distance and taking away a pass into the middle in front of your net, take away the pass — a shot from the point is a save your goalie expects, a pass into that area is not. Different systems apply this in opposite ways, sagging toward the middle under one and following your man to the boards under another, so it tells you which chance to concede, not where to stand.
+
+**Somebody must always have the doorstep of your own net — the edge of the blue paint, not just the general area in front of it — and the two of you must know who.** Which player it is changes with the system; that it is always somebody never changes. The commonest breakdown at every level is both defencemen going to the same puck without either one having claimed it.
+
+**A screen on your own goalie is your problem to solve, not the referee's — move him yourself rather than expecting a whistle.** No book here disallows a goal for an outside-the-crease screen that merely impairs your goalie's view; you have to clear it with your body. And never shove an attacker into your own goaltender hoping for a disallowed goal — the goal generally still counts, it can draw a penalty against you under Hockey Canada's book, and your goalie is the one who takes the hit, arriving backwards and unable to see it coming.
+
 ## Overview
 
 ```facts

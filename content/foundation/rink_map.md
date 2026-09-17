@@ -7,6 +7,16 @@
 >
 > **Related:** [Language and Glossary](language_and_glossary.md) · [UK and England Rules](uk_rules.md) · [Getting Started](../getting-started/getting_started.md) · [Rules Primer](rules_primer.md) · [On-Ice Communication](on_ice_communication.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
+## Key focus
+
+**Zone names are relative to your team, not the building, and they swap every period.** "Defensive zone" means wherever your own net sits right now; the ice never changes, only who is attacking through it. Say "our end" or "their end" if there is any doubt.
+
+**If you play in Britain, assume your rink is smaller than both the NHL and IIHF standard until you have measured it or asked.** The IIHF book fixes a 60 m length and a 26–30 m width range, but the In-House Rules authorise British rinks below even that — under 56 m × 26 m — for all levels, in all fixtures. No distance in any diagram here is safe to assume on an unfamiliar sheet.
+
+**Playing the puck behind the goal line outside the trapezoid, where one applies, is a two-minute minor** — the rule's only exception is a goaltender keeping skate contact with the crease. The NHL and IIHF play one; USA Hockey and Hockey Canada do not; and in England and Wales whether it is enforced is genuinely unsettled. Play as though it binds, and plan as though an opponent's goalie may come out for a dumped puck regardless.
+
+**Keep your skates off the red crease line itself, not merely out of the blue paint.** Three of the four rulebooks — the IIHF, USA Hockey and Hockey Canada — count that line as part of the crease; only the NHL leaves it unsaid, and a net-front player standing on it can cost their team the goal.
+
 ## Overview
 
 Hockey's vocabulary is spatial: almost every instruction you will ever be given on the ice is a location plus a reason. Learn the locations and the instructions start to make sense on their own.

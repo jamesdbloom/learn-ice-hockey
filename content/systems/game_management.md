@@ -10,6 +10,18 @@
 >
 > **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Risk Management](../hockey-iq/risk_management.md) · [Special Teams](special_teams.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Faceoffs](faceoffs.md) · [Mental Game](../off-the-ice/mental_game.md) · [How To Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
+## Key focus
+
+**Everything here that is not explicitly a rule is a coaching choice** — your team may want something different, so ask rather than assume.
+
+**Protecting a lead is an active job, not a passive one.** Manage the puck rather than the clock: no cross-ice passes through the middle of your own end, no long passes you are unsure of, and a chip past the forechecker and out beats forcing a breakout pass under pressure. Deny the middle and shorten your shifts.
+
+**The bad change is among the most expensive routine mistakes in hockey.** Do not change while the puck is in your own end and your team does not have it, and do not change while you are the last player back — and once your own team has iced the puck, the NHL and the IIHF bar you from changing at all before the ensuing faceoff, subject only to narrow exceptions.
+
+**The analytics consensus is that coaches pull the goalie too late.** Expect to go earlier than feels natural — down two with four or five minutes left is normal, not desperate — and know the goalie comes out on your team's next favourable stoppage, not any stoppage.
+
+**Once your own goalie is pulled, no foul in your own end buys you anything.** Every trade that was worth taking with a goalie behind you — a penalty shot instead of a certain goal, for instance — stops being worth taking without one, because the rulebook skips the shot and simply awards the goal.
+
 ## Overview
 
 **Game management** is the layer above systems: how the score and the clock change the risk you take, the speed you play at and the decisions you make. A 2-1 lead with four minutes left is a different sport from a 2-1 lead in the first period. Everything here that is not explicitly a rule is a **coaching choice** — your team may want something different.

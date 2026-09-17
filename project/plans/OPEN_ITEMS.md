@@ -335,6 +335,32 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   the plan's own rule against inferring a safety-relevant label. Expanding
   this is Workstream 1B/1C-scale work, gated behind the go/no-go this
   workstream has not yet reached.
+- [x] **DONE, 17 September — every document in the corpus now has a `## Key
+  focus` section.** The user asked directly for larger, faster parallel
+  progress; the 36 remaining documents (2 pilots + the principles index
+  already had one) were rolled out in one wave — 8 parallel authoring agents,
+  then 3 parallel review agents (safety, rules, house style), all covering
+  the same 36 documents. Full account, including a process failure caught
+  mid-wave (an authoring task was first dispatched to the read-only
+  `content-reviewer` role, which two of eight agents correctly refused; the
+  other six proceeded via `Bash` regardless, creating a real collision risk
+  with fresh redispatches that was caught and resolved before any file was
+  corrupted) and every review finding:
+  [`../reviews/readability_keyfocus_rollout_2026-09-17.md`](../reviews/readability_keyfocus_rollout_2026-09-17.md).
+  **Two genuine safety gaps found and fixed** (a dropped helmet-stays-on
+  exception; a dropped shot-blocking head/hands instruction), **four rules
+  overstatements found and fixed** (all the same flattened cross-book-
+  parallel defect class as Workstream 2M — a checking-from-behind ejection
+  claim wrongly generalised in two separate documents, an NHL-specific
+  penalty rule stated without its scope, and one rule number applied to two
+  books when only one of them uses it), **one Major house-style violation
+  fixed** (five documents narrating their own word-count budget to the
+  reader — non-negotiable 6), and two minor hedge/clarity fixes. All 39
+  documents confirmed to carry exactly one Key focus section; full gate
+  suite clean. **Not done and not claimable by this method:** the release's
+  actual acceptance test is task-based usability testing with real human
+  participants across six audience strata — nothing here substitutes for
+  that, and the record says so plainly.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 

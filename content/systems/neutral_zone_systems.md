@@ -5,6 +5,18 @@
 >
 > **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Zone Entries](zone_entries.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Defending the Rush](defending_the_rush.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Rink Map](../foundation/rink_map.md) · [Faceoffs](faceoffs.md) · [Time and Space](../hockey-iq/time_and_space.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Every structure in the neutral zone is a coaching choice, not a law of hockey.** Find out which one your team plays and what the signal is to switch it — most teams run more than one.
+
+**You stay onside longer than you think, but not under every book.** Offside needs both of an attacker's skates to completely cross the blue line before the puck does; an airborne trail skate keeps you onside under the NHL and the IIHF, but not under USA Hockey or Hockey Canada, which require skate contact.
+
+**The centre red line is still the icing line, and the shorthanded exemption is conditional, not universal.** The exemption runs on a head count, not a clock — clear the puck while you are still below the opponents' strength, because a penalty expiring can bring you level and end the exemption mid-shift even if nothing else about the play changes.
+
+**Standing up at the blue line is refusing ground with your feet, not building speed into a hit.** A carrier who is fighting the puck or looking down at it is not an invitation to arrive harder — that tells you only that they cannot change direction, and charging rules reach exactly this picture in every book.
+
+**Read the first opponent who comes at you.** Coming hard and straight means they are pressuring — beat it with one early pass. Arcing across the ice means they are steering you toward teammates waiting in the middle — do not go where you are being steered.
+
 ## Overview
 
 ```facts

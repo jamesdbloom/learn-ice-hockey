@@ -6,6 +6,16 @@
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Rink Map](../foundation/rink_map.md) · [Puck Handling](puck_handling.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Defender](../positions/defender.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Equipment](../off-the-ice/equipment.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Go into the boards on an angle, never straight at them — one instruction that outranks everything else in this document.** It is the skating decision that keeps you out of the posture where the temptation to turn away starts: never turn your back to the wall, at any speed and in any league, and never duck or tuck your chin. If contact is coming, skates parallel to the wall, forearm and hip into it rather than the point of your shoulder, head up and chin off your chest. A back turned makes it a hit from behind; a tucked chin straightens the cervical spine, and that collision can occur at walking speed. [Body Contact and Battles](body_contact_and_battles.md) covers what happens after the route you choose — read it in full.
+
+**Bend your knees until they cover or pass your toes.** Standing too tall costs you power, balance, reaction time and edge angle all at once — a straight leg has nothing left to extend, and you cannot tilt a blade onto its edge without bending the knee and ankle.
+
+**Eyes up and scanning the ice — not just chin up.** Looking down at the puck drags your whole upper body forward off the balls of your feet; it is a skating fault as much as a hockey-IQ one.
+
+**Push out to the side and slightly back, never straight back.** A blade pushed straight backwards just slides and gives you nothing — finish the push off the front of the blade for the last flick of power.
+
 ## Overview
 
 Skating is the only skill you use every second you are on the ice; everything else is performed while skating and is limited by how well you do it. What makes a skater fast is technique rather than what they were born with, so it responds to deliberate practice at any age.

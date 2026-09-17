@@ -5,6 +5,16 @@
 >
 > **Related:** [Skating](skating.md) · [Passing and Receiving](passing_and_receiving.md) · [Shooting](shooting.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Time and Space](../hockey-iq/time_and_space.md) · [Risk Management](../hockey-iq/risk_management.md) · [Zone Entries](../systems/zone_entries.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Playing with your head up is the habit this document puts above every other — a coaching priority rather than a counted ranking, but a safety habit as much as a tactical one.** A player who stares at the puck cannot see the checker coming, and gets hit hard because of it; build the feel for the puck first, so your eyes are free to come up.
+
+**Protecting the puck against the boards has two absolute prohibitions: never turn your back to the boards, and never duck.** Get your skates parallel to the wall instead, take the contact on your forearm and hip, and keep your head up with your chin off your chest. Turning your back makes the contact a hit from behind; ducking straightens your cervical spine, and that collision can occur at walking speed.
+
+**Keep your free hand on your own stick, not on your opponent.** Fending off an opponent or their stick with your free hand is legal in most books; holding either is a minor everywhere, and under Hockey Canada it can be a mandatory major plus a game misconduct where it injures. Keeping that hand high on your own shaft is the one habit that needs no conditions met in any book.
+
+**Look for the pass before you try the move.** A pass moves the puck faster than any player can skate, and most one-on-ones are won by a change of speed and body position rather than by hands.
+
 ## Overview
 
 Puck handling — moving the puck on your stick, skating with it, and keeping it from an opponent — buys the half-second in which every other decision becomes possible.

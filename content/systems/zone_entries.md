@@ -7,6 +7,18 @@
 >
 > **Related:** [Rules Primer](../foundation/rules_primer.md) · [UK and England Rules](../foundation/uk_rules.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Offensive Zone Play](offensive_zone_play.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md)
 
+## Key focus
+
+**Carrying the puck in is worth roughly twice as much as dumping it in and chasing it, in shot terms, and the cost of trying and failing is smaller than it feels.** It feels dramatic when a carry goes wrong and invisible when it works; dumping the puck in and changing lines is the worse play of the two.
+
+**Attack the space between two defenders rather than at one of them, and if you get there alone, turn away rather than force it.** Protect the puck, look back up the ice, and come again with a teammate — curl in open ice, not against the wall: never take contact with your back to the boards.
+
+**You stay onside for longer than most players believe.** You are onside as long as one skate has not completely crossed the line, judged at the instant the puck completely crosses it — under the NHL and the IIHF that trailing skate may even be in the air, though under USA Hockey and Hockey Canada it must be touching the line or the ice behind it.
+
+**Never forecheck during a delayed offside — hold at the line and wait for the arm to drop.** Under USA Hockey and Hockey Canada nothing stops play before you arrive, and the retreating defenceman is not braced for you: hitting him there is checking from behind, which ends your night in every book that writes it.
+
+**The trail-skate drag is the single most useful piece of applied rules knowledge for a forward:** keep your body, hands and stick already in the zone while the trailing blade stays down or glides on the line, then push the instant the puck crosses — but keep your head up, because your body is already across the line where a defenceman standing up at the blue line will be.
+
 ## Overview
 
 A **zone entry** is the moment your team brings the puck across the opponent's blue line into the third of the ice containing the goal you are shooting at. The line is twelve inches wide, and the approach to it is where most attacks are won or lost — that framing is a coaching commonplace rather than a measured finding, but the entry itself has been measured, and the measurement is why this document exists.

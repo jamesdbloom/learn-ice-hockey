@@ -4,6 +4,16 @@
 >
 > **Related:** [Center](center.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Zone Entries](../systems/zone_entries.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Never turn your back to the wall, and never duck — two prohibitions against two different injuries, and neither is a rule for fast checkers only.** Turning your back makes the contact a hit from behind, and USA Hockey's warning is that *"Even a light hit from behind could inflict a severe head or neck injury."* Ducking tucks your chin to your chest and straightens the cervical spine, and that head-down collision with the boards or a goal post can occur at walking speed — no speed is slow enough to make it safe. Take the contact skates parallel to the boards, forearm and hip into it, head up and chin off your chest — not on the point of your shoulder, which USA Hockey rules out by name as its own injury mechanism.
+
+**Crashing the net is where you take contact you never see coming.** Your eyes are on the puck by design, and the path a defender walks you along has a steel goal post at one edge and a set goaltender at the other. Know where the near post is before the shot, take the shove braced with a wide base and your knees giving, head up and chin off your chest. This applies in every league, checking or not — a legal box-out puts you in the same place as an illegal shove.
+
+**Drag a trailing skate along the blue line and keep the blade touching.** One skate on the line keeps you onside, but a lifted trail skate is onside only under the NHL and IIHF — under USA Hockey and Hockey Canada it is offside, because both require actual skate contact.
+
+**"Stay high" in your own end expires the moment your team wins the puck** — then come down the wall to the outlet spot. That split belongs to a low zone collapse; under man-on-man you follow your check into the corner instead, so find out which your team plays.
+
 ## Overview
 
 ```facts

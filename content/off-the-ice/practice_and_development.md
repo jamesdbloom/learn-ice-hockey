@@ -12,6 +12,18 @@
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Skating](../technique/skating.md) · [Puck Handling](../technique/puck_handling.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Shooting](../technique/shooting.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Risk Management](../hockey-iq/risk_management.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Time and Space](../hockey-iq/time_and_space.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [How to Watch Hockey](how_to_watch_hockey.md) · [Mental Game](mental_game.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**A repetition without feedback is not practice.** A specific goal, immediate correction, working at the edge of what you can already do reliably, then going again — and get an outside eye on it, because you cannot see your own stride. Nothing here is a guarantee: the largest sports meta-analysis puts deliberate practice at 18% of the variance in performance and a statistically non-significant 1% among elite athletes, so track what you are doing, not just how many hours you spend.
+
+**Skating first, puck handling with your head up second, passing and receiving third, shooting fourth — but that order is a coaching choice, not a law of hockey.** A realistic alternative is to fix whatever is actively costing you the most, and a goaltender's priority list is different again. Find out what your own coach prioritises and why.
+
+**A changed technique feels worse before it feels better, and most players abandon the change right before it would have started to pay off.** Decide the change is permanent before you start, and judge it on a retention test a week later, not on how the session felt.
+
+⚠️ **Don't shoot at your goalie's head, and don't fire pucks at them from ten feet in a drill.** Only two of the four rulebooks stop play for a mask hit itself, and both are narrower than they sound — every book waits on a referee judging the goalie hurt, which a cage makes hard to see. Aim at the pads and the glove, and shoot from where the drill puts you.
+
+**The most common way amateurs get hurt while developing is not contact — it is a sudden jump in training load**, especially coming back from a layoff, when your competitiveness returns faster than your tissue does. Progress volume or intensity, never both at once.
+
 ## Overview
 
 The 10,000-hour rule was never a research finding. It was the average hours the *best* group of violinists in one study had accumulated by about age twenty, popularised as a threshold — and the researcher whose 1993 study it came from rejected that use of it.

@@ -11,6 +11,18 @@
 >
 > **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Getting Started](../getting-started/getting_started.md) · [Skating](../technique/skating.md) · [Shooting](../technique/shooting.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Puck Handling](../technique/puck_handling.md) · [Goaltender](../positions/goaltender.md) · [Rules Primer](../foundation/rules_primer.md) · [Conditioning and Recovery](conditioning_and_recovery.md)
 
+## Key focus
+
+**Never buy or wear a second-hand helmet — bought, borrowed or handed down — and a goalie mask counts as a helmet.** Protective foam works by crushing, and crushed foam does not un-crush: you cannot see a compressed liner or a hairline crack, and you cannot know the impact history. This is the one limit on the general advice to borrow club gear elsewhere in this document, and it reaches a taster session's loaner pool as well as a swap table — take your own helmet if you have one, or ask the host site before the session.
+
+**Replace any helmet that has taken a serious impact, even one that looks fine.** Bauer's own manual says a severely impacted helmet "should be replaced immediately," and Hockey Canada says the same of one that is cracked or has loose fittings or missing liner pieces. There is no concussion-proof helmet — that comes from a retailer's buying guide rather than concussion research — so wear it, but do not play as though you are wearing armour.
+
+⚠️ **If you play in Britain, a neck laceration protector is mandatory for you at every level and every age, adults included, with no warning before an immediate 10-minute misconduct.** USA Hockey's adult exemption and Hockey Canada's minor-and-female scope are not yours. In England and Wales it covers practice as well as games.
+
+**Equipment rules vary by league far more than playing rules do — find out what yours requires before you spend anything**, especially on facial protection, mouthguards and stick length, all of which differ between books.
+
+**Fit beats price everywhere, and skates are where it bites hardest.** A boot that is a size too big costs you edge control — the ankle wastes its first few degrees of movement taking up slack instead of tilting the blade — and it destroys the boot itself from the inside. Get measured, and allow a growing child no more than half a size extra.
+
 ## Overview
 
 Hockey gear does two separate jobs: it keeps you out of hospital, and it decides what your body is able to do on the ice. Most players get the first roughly right and the second badly wrong.

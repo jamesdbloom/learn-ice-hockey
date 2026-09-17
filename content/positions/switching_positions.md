@@ -4,6 +4,16 @@
 >
 > **Related:** [Center](center.md) · [Winger](winger.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Faceoffs](../systems/faceoffs.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Breakouts](../systems/breakouts.md) · [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [Mental Game](../off-the-ice/mental_game.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Equipment](../off-the-ice/equipment.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**The first question in a new position is a system question, not a technique question.** Zone or man-on-man, which forecheck, which backcheck lane, which breakout — every one is a coaching choice, not a law, and each changes your new job materially. Ask your coach before your first shift.
+
+**One thing here is not a preference.** Wherever a switch sends you to the wall, never turn your back to the boards, never duck, and never take the wall on the point of your shoulder. A turned back converts the contact into a hit from behind, which you can neither see nor brace for; a tucked chin straightens the cervical spine and puts your head into the boards first, and that collision can break your neck at walking speed; and USA Hockey rules out the shoulder tip by name as its own injury mechanism. Skates parallel to the wall, contact on your forearm and hip, head up and chin off your chest.
+
+**Forward to defence is limited by backward skating, not by attitude.** A defenceman who cannot travel backwards nearly as fast as an attacker travels forwards has skating failures scored against them as decision failures — a technical rebuild, not a set of new decisions.
+
+**Your old good habits are the problem in a new position.** A winger's lane discipline becomes a centre's passivity; a defenceman's caution becomes a forward's reluctance to attack space before it closes. Because those habits are automatic, they surface exactly when you are under pressure with no time to think — so name the one you are fighting out loud before the shift.
+
 ## Overview
 
 Almost every player who sticks with hockey gets moved at some point — wing to centre, forward to defence, onto the other side of the ice, occasionally into the net.

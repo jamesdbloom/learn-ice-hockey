@@ -5,6 +5,20 @@
 >
 > **Related:** [Forechecking Systems](../systems/forechecking_systems.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Zone Entries](../systems/zone_entries.md) · [Breakouts](../systems/breakouts.md) · [Faceoffs](../systems/faceoffs.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Practice and Development](practice_and_development.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+*(This document has no acute safety content of its own — it is a fan-facing explainer — the items below are the four things that make watching make sense fastest.)*
+
+**Give your eyes one job per period, and stop watching the puck.** The broadcast is built to follow the puck, and the puck is the least informative object on the ice — watch one player for a whole shift, or the two defencemen only, or the weak side, or the five seconds before a goal, one exercise at a time.
+
+**Every system below is a coaching choice, not a rule of hockey.** Teams change their forecheck, coverage and formation by score, period and opponent, so read a team over five or six sequences before deciding what they run, and expect the answer to shift.
+
+**Count, don't guess, to identify a system:** how many forwards go deep tells you the forecheck; whether the weak-side winger follows their man into the corner tells you the defensive-zone coverage; how many players stand at the point tells you the power-play formation.
+
+**Watch live for structure and television for technique** — sit as high as you can when you are there to learn, because height beats proximity for reading shape.
+
+**Treat any statistic as a rumour with decimal places until you know its denominator, its strength state, its sample size, who else was on the ice, the score state and whose model it comes from.**
+
 ## Overview
 
 Almost everything that decides a hockey game happens away from the puck, and the camera that follows the puck is training you to miss it.

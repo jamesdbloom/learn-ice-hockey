@@ -6,6 +6,12 @@
 >
 > **Related:** [Rink Map](rink_map.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [Breakouts](../systems/breakouts.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Shooting](../technique/shooting.md)
 
+## Key focus
+
+**This page is for looking a word up, not for reading start to end — but its whole logic is one idea, stated once here.** Almost every location word in hockey is relative to the net that matters right now, not a fixed place on the ice: learn what a word is measured from, rather than memorising it, and "high", "low" and "the point" stop contradicting each other. Where a word appears **bold** inside a definition it names something defined elsewhere on this page or in [Rink Map](rink_map.md); bold used any other way is plain emphasis, and there is nothing to look up.
+
+**One rule recurs across more entries here than any other: a goaltender is never "fair game", even outside the crease, in any of the four rulebooks.** Unnecessary contact with a goalie who has come out to play a loose puck is still penalised — sometimes a major plus a game misconduct — so play the puck, not the goaltender, wherever they are standing.
+
 ## Overview
 
 Hockey's working vocabulary is small, and almost all of it is **relative**. "High", "low", "strong side", "F1" and "the wall" do not name fixed places or fixed people. They name a position relative to the net that matters right now, the side the puck is on right now, or the order players happened to arrive in. The same patch of ice is high to one player and low to another, and it changes again when the puck moves.

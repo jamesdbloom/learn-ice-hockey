@@ -4,6 +4,16 @@
 >
 > **Related:** [Rink Map](rink_map.md) · [Goaltender](../positions/goaltender.md) · [Breakouts](../systems/breakouts.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [UK and England Rules](uk_rules.md)
 
+## Key focus
+
+**"Man on" carries a safety rule that outranks everything else in this document: never take that contact with your back to the boards, and never duck.** A back to the wall turns it into a hit from behind; a chin dropped to the chest straightens the neck into a head-first collision. Get your skates parallel to the wall instead and take it on your forearm and hip, head up, chin off your chest.
+
+**"Man on" and "time" are the two highest-value words in hockey, and both are usually unsaid.** "Man on" means an opponent is closing and you cannot see them: protect the puck and get rid of it. "Time" is its mirror — nobody is near you, so lift your head and make the good play instead of the safe one.
+
+**Whoever can see the play makes the call, and it only works if it is early, short and loud.** A call before the puck arrives lets the receiver plan; the same call as it lands just startles them. Use names: "Sam, man on" gets acted on, "man on" turns four heads.
+
+**If a puck is in your feet, send your own skate at the puck, never at an opponent's.** Kicking or attempting to kick another player is a match penalty under the NHL, USA Hockey and Hockey Canada rulebooks, whether or not anyone is hurt; the IIHF leaves it to a discretionary major with an automatic game misconduct once assessed.
+
 ## Overview
 
 The player with the puck is the least informed player on the ice, and everyone else can see what they cannot. An opponent closing from behind sits in the one place their eyes do not reach, so the information that would save them is already in somebody else's head, useless.

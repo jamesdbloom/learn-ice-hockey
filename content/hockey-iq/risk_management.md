@@ -5,6 +5,18 @@
 >
 > **Related:** [Game Management](../systems/game_management.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Mental Game](../off-the-ice/mental_game.md) · [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Breakouts](../systems/breakouts.md) · [Zone Entries](../systems/zone_entries.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Risk is a property of where you are standing, not of the play itself — the same pass is brilliant in their corner and catastrophic in your own slot.** Ranked by turnover cost — coaching consensus reasoned from shot danger and recovery time, not measured, except at one point on the ice — your own slot is catastrophic, your own zone and the middle of the neutral zone are both high, the offensive blue line is moderate, and their corners are nearly free. Change your location before you decide.
+
+**Leaving your feet to make a check is a real rule, not just bad tactics — all four rulebooks write the jump into the charging offence by name** (NHL 42.1, IIHF 42.1, USA Hockey 607, Hockey Canada 7.4). You cannot change direction in the air, and a carrier who reads it makes you miss and leaves you out of the play for four or five seconds. Skate, and keep your stick in the lane instead.
+
+**A minor penalty is roughly a one-in-five chance of a goal against** — 21.1% across the 2025-26 NHL regular season. Worth taking to deny a certain goal; almost never worth taking out of frustration or retaliation.
+
+**Fouling a breakaway from behind is one of the costliest fouls in hockey, not one of the cheapest.** Under the NHL and IIHF it draws a penalty shot rather than a two-minute minor (NHL Rule 57.3; IIHF Rule 24.8) — and with your own net empty, that same foul is an awarded goal instead, with no shot left to save. Prevent the breakaway earlier with your positioning; chasing and fouling from behind saves nothing.
+
+**A missed offensive chance costs you a chance; a defensive-zone turnover costs you a goal — not the same size.** Play simple in your own end, where the downside is enormous, and creative in theirs, where it is nearly free.
+
 ## Overview
 
 Every time you touch the puck you place a bet, and what you stand to lose depends more on where you are standing than on what you try.

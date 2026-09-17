@@ -4,6 +4,16 @@
 >
 > **Related:** [Time and Space](time_and_space.md) · [Puck Support and Spacing](puck_support_and_spacing.md) · [Playing Without the Puck](playing_without_the_puck.md) · [Risk Management](risk_management.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) · [Puck Handling](../technique/puck_handling.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**⚠️ Looking does not protect you; position does, and this outranks every other point below.** A reception on the wall is a reception into head-on contact with the boards. Never take that contact with your back to the boards, and never duck — get your skates parallel to the wall, take it on your forearm and hip, head up and chin off your chest. If you cannot turn in time, get your stick and gloves up and spread out on the glass.
+
+**Scanning before you receive the puck is measured, and the measurement is narrow: going from no scan to one is what helps.** Across 2,545 professional puck receptions, players who scanned at least once succeeded 78.8% of the time against 70.1% for those who had not — but the researchers themselves say they *"cannot say whether a higher scanning frequency would be more beneficial compared to a lower one."* Clear the bar of looking at least once.
+
+**Decide while the puck is still travelling to you, so its arrival triggers an action instead of starting a decision.** Name your first option and your bail-out, in one or two words, before it reaches you — a second-best play made instantly beats the perfect play made a second late.
+
+**Anticipation is acting on information; guessing is acting on hope, and they look identical when they work.** The real test: would your position still be useful if you turn out to be wrong? If not, you guessed.
+
 ## Overview
 
 Players who look like they see the whole ice have almost always simply already looked, at a moment when the puck was somewhere else and nobody was watching them.

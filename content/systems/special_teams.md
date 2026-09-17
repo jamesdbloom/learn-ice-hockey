@@ -9,6 +9,18 @@
 >
 > **Related:** [UK and England Rules](../foundation/uk_rules.md) · [Faceoffs](faceoffs.md) · [Zone Entries](zone_entries.md) · [Offensive Zone Play](offensive_zone_play.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Goaltender](../positions/goaltender.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Game Management](game_management.md)
 
+## Key focus
+
+**The extra skater on a power play is worth nothing until it forces somebody to cover two players at once.** A power play where nobody moves is four against four with a spare man standing somewhere useless — manufacture two-on-one moments wherever the kill allows, and cash them in as close to the net as you can.
+
+**Passing is what creates those moments, not shooting.** Four defenders can cover any single option and cannot cover three in two seconds. Most power plays die at the blue line rather than in the zone, so be willing to turn back and come again rather than force it.
+
+**A penalty kill is a decision about which shot you are willing to concede, then two minutes of discipline making sure it is the only one.** The power play wants you to chase, and a killer who chases and misses has opened the dangerous pass himself.
+
+**A team a skater short may usually send the puck the length of the ice without being called for icing — but check your own book first.** Under the IIHF book that British hockey runs on, the exemption carries neither of the two restrictions the NHL and USA Hockey attach to it, but it still runs on a head count rather than a clock: a penalty expiring counts its player back in, so the exemption ends only where that leaves your team level with the opponents.
+
+**Blocking a shot is a technique, not an act of courage.** Be in the shooting lane before the shot rather than sliding into it, and never block from a position where you are blocking your own goalie's view — half-deflecting a shot they could not see is worse than letting it through. Block from close and on your feet, head out of the lane and hands tucked.
+
 ## Overview
 
 **Special teams** means any situation where the two teams do not have the same number of skaters on the ice. Most often that is a **power play**, where you have the extra skater, or a **penalty kill**, where you are a skater short — written "5-on-4", counting skaters only.

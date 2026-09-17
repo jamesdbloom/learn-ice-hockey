@@ -5,6 +5,16 @@
 >
 > **Related:** [Puck Support and Spacing](puck_support_and_spacing.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Playing Without the Puck](playing_without_the_puck.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Zone Entries](../systems/zone_entries.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**Skill is not what makes players good; skill is what they spend — time and space are what they earn.** After a shift, judge yourself on how much room you had when the puck arrived, not on whether your move worked. Looking over your shoulder before you receive, and turning away from pressure, buy more room than any move you will ever learn.
+
+**Time is not seconds on a clock — it is the distance to the nearest threatening defender divided by how fast they are closing on you.** You can have time with an opponent three feet away who has overrun you, and none with one twenty feet away closing hard. Read their hips, not their distance: a player accelerates where the hips face.
+
+**When the play ahead is not there, turn away from the closing defender rather than into them, and hold the puck a second or two for a teammate to arrive — except never in your own defensive zone, where losing the puck there is a goal against.** A tight turn with the puck on the outside of it buys your support the time it needs to get there.
+
+**Facing the boards with the puck puts your back to the play, so know who is arriving before the puck does.** Head up, chin off your chest — that is the same posture Hockey Canada's checking-from-behind rule describes, and it is what keeps a puck-protection habit from becoming an injury.
+
 ## Overview
 
 Hockey has one currency, and it is time and space: the room you have when the puck reaches you, and the moment you have to use it. Every tactic in this guide is a way of getting more of it, or of taking it off the other team.

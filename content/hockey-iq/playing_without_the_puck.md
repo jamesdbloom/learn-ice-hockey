@@ -5,6 +5,16 @@
 >
 > **Related:** [Puck Support and Spacing](puck_support_and_spacing.md) · [Time and Space](time_and_space.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Risk Management](risk_management.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [UK and England Rules](../foundation/uk_rules.md)
 
+## Key focus
+
+**A puck race to the boards is a race into the boards — arrive with your skates parallel to the wall, contact on your forearm and hip, never the point of your shoulder, head up and chin off your chest.** USA Hockey's *Heads Up Hockey* materials attribute *"almost all on-ice cervical spine injuries"* to a head *"slightly flexed (head down) while making head-on contact with the boards or goal post,"* and note it *"can occur at walking speed."* Never turn your back to the wall, and never duck.
+
+**Whether you may use your body on defence is a question about your league, not a law of hockey.** Body checking is banned below certain ages and throughout girls'/women's play under USA Hockey (Rule 604(a)) and Hockey Canada (Rule 7.3), and a local governing body can bar it further still. In Britain neither book states an age — ask your league before you play a shift.
+
+**A check from behind is the one hit with no small version, in every rulebook.** The NHL and IIHF write no minor tier at all — a major plus an automatic game misconduct is the floor. Hockey Canada's floor is a minor plus a compulsory game misconduct, and USA Hockey's minor carries a further ten-minute misconduct. Chase a beaten carrier with your stick and feet — never your body.
+
+**Being unmarked is not the same as being available.** Three things make you passable to: a flat stick on the ice, a straight line to the player with the puck, and nobody's stick in that line. Fix the line before you complain about the pass, then go when the passer's head comes up rather than when the space appears.
+
 ## Overview
 
 You spend almost all of your ice time without the puck, and what you do in that time decides what the few seconds with it are worth. NHL tracking data — which the league itself calls unofficial — puts a forward at about forty seconds of possession in every twenty minutes of five-on-five play, in bursts of about 1.3 seconds each.
