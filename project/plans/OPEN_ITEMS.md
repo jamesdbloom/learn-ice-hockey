@@ -901,18 +901,23 @@ The two found, both in `rules_primer.md`, both repaired:
 - *"still free to ice the puck, **in all five books**"* — the same shape, and
   **bolded**, which is a site a scanning reader stops on.
 
-- [ ] ⚠️ **Run the corpus-wide census for this shape.** A first pass was run on
-  16 September on `every|all|any level(s) of British/UK`, `wherever you play`,
-  `in all five books`, `at every level`. **It was SAMPLED, NOT COMPLETED** — the
-  hits are dominated by the standing `> **Rule set:**` banner, which is correctly
-  scoped by *"amended locally"* and is not a defect in any of its 39 instances.
-  **Acceptance:** every non-banner hit read. ⚠️ **Expect most to be correct** —
-  `language_and_glossary.md`'s `Shorthanded` entry scores on the pattern and is
-  exemplary, carrying the classification limb, the NHL carve-out, the head-count
-  test and the IIHF's silence-with-a-reason. **Do not sweep this pattern.**
-- [ ] The same over-scoped shape almost certainly exists for **offside, line
-  changes and penalty duration**, because `uk_rules.md` records that U12 changes
-  all four and only icing has been tested.
+- [x] **DONE, 17 September — the full census run, at last.** 200 hits found
+  corpus-wide (34 banner, correctly excluded; 166 non-banner, all read in
+  full context). **165 of 166 were correct** — this corpus is, in the
+  census's own words, "unusually careful about jurisdiction/age/league
+  scoping." One genuine finding: `equipment.md`'s prominent Key focus
+  callout stated Britain's neck-guard penalty as universal ("no warning
+  before an immediate 10-minute misconduct"), when the same document's
+  own Key Takeaways correctly carves out the Elite League. Fixed to match
+  two sibling passages in the same document that already had it right.
+  Full account:
+  [`../reviews/goaltender_carha_2026-09-17.md`](../reviews/goaltender_carha_2026-09-17.md).
+- [x] **DONE, 17 September — same census, covered as item 4.** Offside,
+  line-change and penalty-duration claims were swept alongside icing
+  (searching broader vocabulary too, not just the five original
+  patterns). No further finding beyond the one above — the documents
+  sampled already carry correct caveats (e.g. `defending_the_rush.md`:
+  "Charging is not two minutes everywhere either").
 - [ ] ⚠️ **FOUR IHUK Rules of Competition URLs are cited in `content/` and NONE is
   in `project/verification/link_baseline.tsv`** (812 rows, zero matches for any of
   them). ⚠️ **My earlier row said three — the NIHL 1 & 2 regulation is also
@@ -961,13 +966,25 @@ The two found, both in `rules_primer.md`, both repaired:
 **Owner:** coordinator assigns. **Evidence:** round 78's `goaltender.md` agent,
 which found it, verified it, and **deliberately did not close it**.
 
-- [ ] ⚠️ **`positions/goaltender.md:526` leaves a CARHA-affiliated adult-league
-  goaltender with a permissive gap.** The body says *"no trapezoid is not no
-  restriction: **both of those books** restrict the freeze instead"* — USA Hockey
-  and Hockey Canada — and leaves *"how much rec, beer-league and youth hockey that
-  adds up to"* as an unnamed question about leagues. **A CARHA goalie reads that,
-  correctly concludes they have no trapezoid, and becomes a third puck-handler
-  behind their own net.** ⚠️ **CARHA 58(b) bars the smother there on the same two
+- [ ] **PROSE FIXED, 17 September — the facts-block acceptance criterion below
+  is still not met, so this row stays open.** The body no longer
+  reads "both of those books" — it names CARHA as a third book with no
+  trapezoid and states its Rule 58(b) freeze restriction. The fix was
+  checked directly against every specific divergence this row warned
+  about: it does NOT merge CARHA's "deliberately" into USA Hockey's
+  614(c) (which the primary text confirms has no intent word), and it
+  explicitly states "not a variant of USA Hockey's" rather than claiming
+  equivalence, correctly scoping the "same shape" comparison to the
+  location test only (trigger (1)) and naming what CARHA's rule lacks
+  (no privileged area, no second/third/fourth trigger). It does not
+  separately call out the stoppage-requirement divergence (USA Hockey's
+  614(c) requires the act to cause a stoppage; CARHA's does not) — an
+  omission, not a misstatement. Full account:
+  [`../reviews/goaltender_carha_2026-09-17.md`](../reviews/goaltender_carha_2026-09-17.md).
+  **What was previously here as the finding, preserved below, remains
+  accurate background** — a CARHA goalie reading only the old text would
+  have concluded they have no trapezoid, and become a third puck-handler
+  behind their own net. ⚠️ **CARHA 58(b) bars the smother there on the same two
   minutes**, and the wording is verbatim from `sources/carha.txt`: *"A Minor
   penalty shall be assessed to any goalkeeper who deliberately falls on or gathers
   the puck into their body, or holds or places the puck against any part of the
@@ -1423,13 +1440,12 @@ at `defender.md`, which followed the claims into their sibling.
 
 ## Workstream 2I: two residuals the second commit gate found
 
-- [ ] **Two `defender.md` facts are in mild tension on the intent word.** `:21`
-  says *"all four make **intentionally** taking part in the play past the centre
-  red line a minor"*; the retrieval block says *"USA Hockey and Hockey Canada
-  **write an intent word** into the centre-red-line bar."* ⚠️ **The NHL and IIHF do
-  write *"intentionally"*, inside their parenthetical gloss** — so both readings
-  are defensible and **a reader does the same thing under either.** One of the two
-  should be rephrased so the document does not appear to contradict itself.
+- [x] **FIXED, 17 September.** The facts line was reworded to state the
+  requirement generically ("with intent") rather than asserting one
+  specific word across all books — accurate for all five now that CARHA
+  is included, and no longer in tension with the detailed prose passage
+  that correctly distinguishes the parenthetical-gloss books from the
+  operative-clause books. Reviewed clean.
   **Not a wrong claim; a wrong impression.**
 - [x] **FIXED, 17 September — see Workstream 2G's own row for the same
   instance.**

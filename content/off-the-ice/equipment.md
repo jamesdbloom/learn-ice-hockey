@@ -17,7 +17,7 @@
 
 **Replace any helmet that has taken a serious impact, even one that looks fine.** Bauer's own manual says a severely impacted helmet "should be replaced immediately," and Hockey Canada says the same of one that is cracked or has loose fittings or missing liner pieces. There is no concussion-proof helmet — that comes from a retailer's buying guide rather than concussion research — so wear it, but do not play as though you are wearing armour.
 
-⚠️ **If you play in Britain, a neck laceration protector is mandatory for you at every level and every age, adults included, with no warning before an immediate 10-minute misconduct.** USA Hockey's adult exemption and Hockey Canada's minor-and-female scope are not yours. In England and Wales it covers practice as well as games.
+⚠️ **If you play in Britain, a neck laceration protector is mandatory for you at every level and every age, adults included.** USA Hockey's adult exemption and Hockey Canada's minor-and-female scope are not yours. Under the In-House Rules there is no warning before an immediate 10-minute misconduct for forgetting it — but the Elite League is understood to play the unamended IIHF book instead, which warns first and assesses only a minor. In England and Wales the requirement covers practice as well as games.
 
 **Equipment rules vary by league far more than playing rules do — find out what yours requires before you spend anything**, especially on facial protection, mouthguards and stick length, all of which differ between books.
 
