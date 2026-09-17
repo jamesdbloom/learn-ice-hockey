@@ -901,14 +901,27 @@ cut available.**
   for these two, unlike the other 15 spot-checked/characterized rows. Left
   untouched this round (not wrong, just not yet done); a future pass could
   compress them on the same principle already applied to the six done here.
-- [ ] ⚠️ **§4's per-book penalty ladders — where the remaining ~20,000 words are.**
-  Could they state the *tier a reader is exposed to* once per foul instead of four
-  times? **The agent declined to decide alone, and was right to: this is exactly
-  the edit that caps a penalty tier, and `safety-reviewer` has blocked this layer
-  before.** Needs `rules-verifier` **and** `safety-reviewer` on the brief itself.
-  ⚠️ **Hockey Canada 8.8 slew-footing is a double minor rising to a MATCH penalty;
-  USA Hockey 639(b) starts at a MAJOR plus game misconduct; IIHF 52.2 has no
-  lesser tier at all. "An ejection in all of them" would be a false cap.**
+- [x] **CLOSED, 17 September — checked carefully, no edit made, and that is the
+  correct outcome.** A `rules-verifier` read all of §4 and checked every foul's
+  ladder across all four books for genuine convergence, spot-verifying the two
+  most promising candidates against primary text. **Found no foul where tiers
+  and triggering conditions both genuinely converge** — even the broken-stick
+  minor, which looks uniform at "2:00 in every book," carries a real divergence
+  (USA Hockey's Casebook grants a conditional carry-to-the-bench allowance that
+  Hockey Canada and the 2026/27 In-House Rules do not have). Spearing/
+  butt-ending's apparent NHL/IIHF convergence is only 2 of 4 books — USA Hockey
+  and Hockey Canada each remove a different rung. **§4 is already applying the
+  correct compression** (the generic Minor=2:00/Major=5:00 table is stated once
+  because those durations genuinely are uniform; the prose beneath it is long
+  because that is where the actual divergence lives) — extending compression
+  further would risk exactly the false-cap failure this row warned against, at
+  the safety-relevant fouls a reader most needs the real answer for. Two
+  §10-table rows for the highest-visibility of these fouls (illegal check to
+  the head, checking from behind) were separately compressed where the
+  duplication was with §4 itself, not the tiers — independently `safety-reviewer`
+  cleared: no tier softened, no exception dropped, verified against
+  `sources/iihf_rules_2026-27.txt`, `sources/usah.txt`, `sources/usah_casebook.txt`,
+  `sources/hc.txt` directly.
 
 ## Workstream 2D: over-scoped permissions — a class no checker can see
 
