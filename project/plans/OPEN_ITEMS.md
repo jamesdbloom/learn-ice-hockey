@@ -1888,6 +1888,74 @@ opposite.
   paint.**"* Same spoken chunk, so the qualification is one sentence away — **but
   this is the sentence built to be remembered**, and the repair did not reach it.
 
+#### ⚠️⚠️ FACTS REVIEW, 18 September — ONE CRITICAL, THREE MAJORS. NOT YET REPAIRED.
+
+The commit-gate blocked partly because **D10 was never reviewed.** It has now run.
+**Every finding below is open**; the repair wave was held because a `site-reviewer`
+build was live and editing `content/` mid-build is a documented race.
+
+**CRITICAL — `technique/body_contact_and_battles.md:1060`. THE CAP EVICTED A
+RULEBOOK FACT.** The block is at `HARD_MAX` 11, so the give-ground duty could not be
+added as a `Rule:` fact and was folded into a neighbouring `Technique:` line as a
+subordinate clause — *"but never against the goaltender: in the crease, give ground
+at once"* — **with no rule number, no book and no penalty.** NHL 69.3
+(`sources/nhl_rules.txt:7203-7208`) is mandatory: *"the attacking player **will
+receive** a minor penalty for goalkeeper interference"*, goal or no goal. ⚠️ **Voiced
+alone it is a coaching preference sitting between `Mindset:` and `Position:` facts.
+Following the facts layer alone earns a penalty.** ⚠️ **It is an INCOMPLETE REPAIR,
+not a regression** — the block carried nothing on this before. **The fix must free a
+slot from the coaching half and state the duty as a `Rule:` fact.** ⚠️ **Which slot
+is the document owner's call, not the reviewer's.**
+
+**MAJOR — `systems/zone_entries.md:295`, `:316`, `:351` drop *"privileged area"*.**
+USA Hockey 607(c) (`sources/usah.txt:3679-3682`) reaches *"within the goal crease
+**or privileged area**"*, and 607(d) adds that a goalkeeper is **not** *"fair game"*
+outside it. All three bodies quote it in full; **all three facts attach 607(c) to a
+clause whose only marker is *"a goalie in his crease"*.** ⚠️ **`rink_map.md`'s own
+Common Mistakes names this exact trap.** `:351` is worst — it also drops 69.2's
+*"inside or outside the goal crease"*. Two have headroom; `:351` has two free
+`HARD_MAX` slots, **so split rather than compress.**
+
+**MAJOR — the harshest book is missing from the SECTION, not just the block.**
+Hockey Canada 8.5(b) (`sources/hc.txt:7009-7010`) — *"A Major penalty and Game
+Misconduct penalty **will** be assessed to any player who charges the goaltender"* —
+**mandatory, and keyed to no area of ice at all.** `zone_entries.md` carries it in
+Common Mistakes and Key Takeaways but **not in the §wide entry or §middle drive
+bodies**, so under extract-never-author it correctly appears in no fact. ⚠️ **Fix the
+BODY first; the fact then follows.** A Hockey Canada reader currently hears three
+facts about a rule set that is not theirs and nothing about the book that ejects
+them automatically.
+
+**MAJOR — `hockey-iq/playing_without_the_puck.md:588` is the only crease-line fact
+in the corpus that ends PERMISSIVE and carries no instruction.** It closes *"…both
+allow a goal on the line — so the IIHF answers the same play in two directions."*
+⚠️ **All five siblings open or close with the instruction** (`offensive_zone_play.md:538`,
+`special_teams.md:97`, `zone_entries.md:294`, `body_contact_and_battles.md:1068`,
+`shooting.md:452`). Its `Position:` sibling carries it — **and siblings are exactly
+what a listener does not have.** 52 characters of headroom; nothing need be traded.
+
+**Minors worth keeping:** `playing_without_the_puck.md:561` and
+`special_teams.md:1029` share a *"flat position bar … unless"* shape that
+self-contradicts voiced alone (`time_and_space.md:448`'s *"with three narrow
+carve-outs"* is the corpus's better form); `body_contact_and_battles.md:1068` lost
+its *"is a judgement call by its own terms"* gloss to the 296/300 cap and does not
+say a Situation is a **table row rather than rule text** (`shooting.md:452` is the
+model); `special_teams.md:97` cites *"its Appendix IV table"* with **no number and
+no edition**; `winger.md:453` and `special_teams.md:1035` sit at **197/200** with
+nowhere to go.
+
+⚠️ **A CORRECTION TO THE DISPATCHER, AGAIN.** The brief said `special_teams.md:97`
+was *"deliberately left unchanged"*. **It was changed** — `git diff` shows it. The
+294/300 figure was right; the word was not. **The reviewer's substantive judgement
+on it still holds.**
+
+⚠️⚠️ **THE REVIEW'S OWN LIMIT, AND IT IS THE FINDING THAT OUTLIVES THE ROUND:**
+*"Nothing I did tests the facts layer against the RULEBOOKS; it tests it against the
+BODIES, and where a body is short the block inherits the shortness and I call it
+traceable."* **A section whose body omits a rule set's harsher answer, in a document
+whose summary layer also omits it, passes a facts review clean** — it found the
+Hockey Canada gap only because that document's Key Takeaways happened to carry it.
+
 #### ⚠️⚠️ A NEW CLASS — THE CLAIM IS TRUE, THE **LAYER** IT IS ATTRIBUTED TO IS WRONG
 
 Found 18 September while clearing a commit-gate BLOCK. Four documents said the
