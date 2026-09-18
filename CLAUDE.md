@@ -530,10 +530,18 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_zones.py, check_tables.py, check_disclosures.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
                     check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
-                    check_quote_drift.py, check_caption_hosts.py.
+                    check_quote_drift.py, check_caption_hosts.py,
+                    check_facts_antecedents.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
-                    this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py.
+                    this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
+                    tts_sample.py. ⚠️ tts_sample.py synthesises ONE script on every TTS engine a
+                    credential exists for and reports the rest as SKIPPED with the reason, so the
+                    ear test is one command rather than four integrations written under pressure on
+                    the day someone has the keys. It reads keys from the ENVIRONMENT ONLY and never
+                    prints one. ⚠️ SINGLE-VOICE by decision — do not re-add a dialogue path; that
+                    narrows the engine field rather than widening it, and OpenAI is only in
+                    contention because the decision was made.
                     podcast_queue.py derives the episode queue from the site's own canonical page
                     order (`site/src/data/structure.json`), tracks per-episode workflow state and
                     enforces the batching ceiling. ⚠️ It does NOT drive a browser — NotebookLM has
@@ -570,6 +578,22 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     judgement call. ⚠️ It CANNOT see attribution drift — it keeps the closest match
                     across ALL sources, so a sentence credited to the NHL but carrying the IIHF's
                     wording scores clean — and it cannot see a quotation whose source is not on disk.
+                    check_facts_antecedents.py — ` ```facts ` lines that POINT AT SOMETHING A
+                    LISTENER HAS NOT HEARD. ⚠️ Every facts line is voiced ALONE, in its own <p>
+                    with a 300 ms break either side, so a line referring to the line above it
+                    refers, for a listener, to nothing. Two were found by hand in two consecutive
+                    rounds, in different documents, and no checker could see either.
+                    ⚠️ THE OBVIOUS PATTERN IS USELESS AND THE TOOL EXISTS TO SAY SO: matching every
+                    demonstrative returns 100+ hits and nearly all are CORRECT, because the corpus's
+                    disclosure convention RESTATES its claim ("That a change of speed beats top speed
+                    is coaching craft") and because "Both defencemen back toward your blue line"
+                    points at nothing. The discriminator is a demonstrative attached to a SHORT
+                    ABSTRACT NOUN — that count, that ranking, that pair, that exchange — where the
+                    noun is a pointer rather than a description. ⚠️ WORKLIST: a hit is a CANDIDATE.
+                    Read it voiced alone and ask what a listener knows at that moment. `--all` shows
+                    the broad pattern's noise for calibration, never to fix.
+                    ⚠️ Fixing one: TRY SUBSTITUTION FIRST — naming the thing is often SHORTER than
+                    pointing at it, measured twice now. Never trade out a caveat to make room.
                     check_caption_hosts.py — diagram captions SPOKEN INTO a document that does
                     not own them. ⚠️ It exists because a sole-carrier audit keyed on the `owner`
                     field in `site/src/data/diagrams.json` UNDER-COUNTS BY CONSTRUCTION, and one
