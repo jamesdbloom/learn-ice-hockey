@@ -122,7 +122,16 @@ def main(argv=None) -> int:
             continue
         scanned += 1
         for n, label, value in facts_lines(path):
-            rel = path.relative_to(REPO)
+            # ⚠️ A path given on the command line may be RELATIVE, and
+            # `Path.relative_to` raises rather than resolving it — so
+            # `check_facts_antecedents.py content/foo.md` crashed with a
+            # ValueError naming a path that plainly exists. Reported by an agent
+            # whose brief told it to run this tool. Resolve before comparing, and
+            # fall back to the path as given if it lies outside the repo.
+            try:
+                rel = path.resolve().relative_to(REPO)
+            except ValueError:
+                rel = path
             if POINTER.match(value):
                 narrow.append((rel, n, label, value))
             elif args.all and BROAD.match(value):

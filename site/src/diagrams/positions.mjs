@@ -31,7 +31,11 @@
 // A caption clause that appears in more than one diagram is imported, never
 // retyped: a sentence that appears twice is a sentence that can drift once, and
 // this one already had. See rule69_clauses.mjs for why all four still say it.
-import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.mjs';
+import {
+  CREASE_LINE_IS_THE_CREASE,
+  REFEREE_JUDGEMENT,
+  TABLES_ALLOW_OUTSIDE,
+} from './rule69_clauses.mjs';
 
 // ---------------------------------------------------------------------------
 // Shared anchors. Named once where more than one thing refers to them, so a
@@ -611,10 +615,26 @@ const wingerOffensiveZone = {
     'patches with two owners. "Shoot first" is a bias rather than a rule. ' +
     'At the net front, work just outside the blue paint and keep your body out of ' +
     'the crease: screening from outside it without contact is legal, ' +
-    'but that is keyed to the crease: under both the NHL and the IIHF every clause of Rule 69 ' +
-    'that voids a goal for where you stood names the goal crease, and 69.4, the rule for outside ' +
-    'it, reaches contact only. That is a reading of the rule’s structure rather than something ' +
-    'either book states in terms, and ' + REFEREE_JUDGEMENT +
+    // ⚠️ THIS SAID "every clause of Rule 69 that voids a goal for where you stood names the goal
+    // crease, and 69.4, the rule for outside it, reaches contact only", hedged as a reading of
+    // the rule's structure. FALSE ABOUT THE TEXT, and the hedge does not rescue an absolute a
+    // listener hears flat: 69.1's clause (1) reaches an attacking player who "either by his
+    // positioning or by contact, impairs the goalkeeper's ability to move freely within his
+    // crease OR DEFEND HIS GOAL" (nhl_rules_layout.txt:6035-6037; the IIHF carries the same limb
+    // in its own words), and that second limb names no location at all.
+    //
+    // ⚠️ IT ALSO CONTRADICTED ITS OWN HOST IN THE SPOKEN LAYER. This caption is voiced into
+    // content/positions/winger.md, whose body and Key Takeaway 8 were repaired on 18 September
+    // 2026 to walk exactly this absolute back and lead on the tables instead.
+    //
+    // The replacement is not a re-hedge, it is better evidence: both books print the answer to
+    // this play in their own reference tables, so the structural working is not needed here and
+    // the host carries it in full anyway. TABLES_ALLOW_OUTSIDE is imported rather than retyped —
+    // it carries the IIHF's 2025/26-to-2026/27 table renumbering, which is the most stale-prone
+    // string in these four captions and must have exactly one owner.
+    'and both the NHL and the IIHF answer this exact play in their own reference tables, ' +
+    TABLES_ALLOW_OUTSIDE +
+    '. That is an appendix table rather than rule text, and ' + REFEREE_JUDGEMENT +
     ' So keep your feet out of the paint, and off ' + CREASE_LINE_IS_THE_CREASE + '.',
 
   describe:

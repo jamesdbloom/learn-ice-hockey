@@ -66,7 +66,21 @@ extraction traps, and there are several that have manufactured false findings.
 Each time a verifier caught it, the count was corrected, and **it was stale again by the next
 round** — because the source set grows and a hand-maintained list of it cannot not decay.
 
-⚠️ **So the table is NOT the authority and must never be treated as one. Two things outrank it, in
+⚠️⚠️ **BEFORE YOU REPORT THE TABLE AS STALE, COUNT IT PROPERLY — FIVE CONSECUTIVE VERIFIERS HAVE
+REPORTED A PHANTOM.** `ls sources/*.txt | wc -l` returns **36** and this table has **32 rows**, and
+the difference is **not** four missing sources. The four IHUK Rules of Competition `_layout` twins
+are recorded **inline, in their siblings' rows**, as *"`_layout` twin present"* — `ihuk_junior_roc`,
+`ihuk_nihl_roc`, `ihuk_wnihl_roc` and `ihuk_u10_roc`. **32 rows + 4 inline twins = 36. The inventory
+is COMPLETE.**
+
+⚠️ **This still costs something, and it is not the counting.** A source recorded only inline is a
+source a verifier does not put on its search list: the pass that raised this most recently also
+wrote *"I did not search the four IHUK Rules of Competition… for any British departure on Rule 69"*
+— ⚠️ **the same four files.** **An inventory entry that does not look like an entry does not get
+searched, which is the routing failure this file already documents for `sources/README.md`.**
+**So: the twins exist, and you are expected to search them.**
+
+⚠️ **The table is NOT the authority and must never be treated as one. Two things outrank it, in
 this order:**
 
 1. **`ls sources/*.txt`** — the file system. It cannot be stale.

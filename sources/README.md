@@ -404,7 +404,35 @@ official documents, not resolved in either direction.
 > The left column's next line is spliced into the middle of the right column's sentence. **So
 > flattening cannot repair it either** — `"loss of goal only"` returns **zero** against
 > `iihf_rules.txt` raw *and* whitespace-normalised, and so does the full 6D answer. The same phrase
-> **is** greppable in `nhl_rules.txt`, whose Reference Table 14 does not interleave.
+> **is** greppable in `nhl_rules.txt`.
+>
+> ⚠️⚠️ **THIS SENTENCE READ *"…greppable in `nhl_rules.txt`, WHOSE REFERENCE TABLE 14 DOES NOT
+> INTERLEAVE"* UNTIL 18 SEPTEMBER 2026, AND THE TRAILING CLAUSE WAS FALSE.** The 6D *phrase* is
+> greppable; **the table is not clean.** Table 14 interleaves at **Situations 5 D and 5 E**, in
+> **both** NHL extractions. Measured — the flattened 5 E sentence returns **NOT FOUND against
+> `nhl_rules.txt` AND `nhl_rules_layout.txt`**, because the right column is spliced into the left:
+>
+>     E. An attacking player plants himself on Goal is allowed.
+>        the crease line or outside the goal
+>        crease, as to obstruct the goalkeeper’s
+>
+> ⚠️ **A true statement about ONE PHRASE was written as a general statement about THE TABLE**, and
+> the generalisation is the error — the same species this file exists to catch. **It was found by a
+> `rules-verifier` whose flattened search for a verbatim-correct corpus quotation returned zero**;
+> had it trusted this line, it would have filed a fabrication report against a quotation that is
+> **word for word right**. ⚠️ **The WHOLE OF TABLE 14 must be read POSITIONALLY, from the raw columns, exactly like the
+> IIHF's Table 16 — never concluded absent from a grep.**
+>
+> ⚠️⚠️ **THIS WARNING NAMED ONLY 5 D AND 5 E UNTIL 18 SEPTEMBER 2026, AND THAT WAS TOO NARROW
+> IN THE SAME WAY THE TEXT IT REPLACED WAS TOO BROAD.** **5 C interleaves too** — the flattened
+> sentence *"An attacking player skates in front of the goalkeeper, outside the crease"* returns
+> **NOT FOUND against BOTH NHL extractions**, because the row reads
+> `C. An attacking player skates in front of  Goal is allowed.` ⚠️ **EVERY row of Table 14 carries
+> the right column's first line on the left column's first line.** ⚠️ **And the corpus CITES 5 C** —
+> three times in `goaltender.md` and once in a Sources trailer — **so a verifier following the old
+> scope had a warning for two rows and none for the row next to them.** ***The previous text
+> over-stated cleanliness; its replacement under-stated the interleave — the same species, in the
+> other direction.*** **Scope it to the TABLE, not to a list of rows.**
 >
 > **What that means in practice.** The corpus's Table 16 quotations are **correct** — a human reading
 > the interleaved text can reconstruct them, and 6D was read that way. ⚠️ **Its operative sentence —

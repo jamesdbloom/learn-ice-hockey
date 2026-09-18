@@ -605,20 +605,31 @@ const netFrontScreen = {
     // feet out is NOT inside the paint. That is a screener planting a foot in the crease.
     'depth and not the half-width. And "three feet out from the goal line" is inside the paint ' +
     'rather than clear of it. A screen from outside the crease without contact is normally legal ' +
-    'under NHL and IIHF rules and you should do it constantly — but it is keyed to the crease: ' +
+    'under NHL and IIHF rules and you should do it constantly — and both books answer this exact ' +
     // ⚠️ THE CLAUSE-BY-CLAUSE WORKING WAS CUT, THE CONCLUSION AND ITS DISCLOSURE KEPT.
     // This ran through 69.1's disallowing sentence, 69.3's significant-position ground and
     // 69.4's contact-only reach, then DISALLOWED_ROWS_SHARE_THE_CREASE. Both hosts state that
     // working themselves, immediately beside the marker: offensive_zone_play.md's "Screening"
     // paragraph names all three clauses, and center.md's facts block at "The crease is the one
-    // line you don't cross" carries the keying AND the table citation. What could NOT be cut is
-    // the pair either side of it — TABLES_ALLOW_OUTSIDE, because dropping the permissive half
-    // teaches the rule as stricter than it is, and the "reads the rule's structure" disclosure,
-    // which is what stops the keying claim reading as either book's own words.
-    'every clause of Rule 69 that voids a goal for where you stood names the crease, and both ' +
-    'books’ own reference tables agree, ' +
+    // line you don't cross" carries the keying AND the table citation.
+    //
+    // ⚠️ AND ON 18 SEPTEMBER 2026 THE SURVIVING CONCLUSION WENT TOO. It read "every clause of
+    // Rule 69 that voids a goal for where you stood names the crease, and both books' own
+    // reference tables agree", hedged as a reading of the rule's structure. The hedge does not
+    // rescue it: 69.1's clause (1) reaches an attacking player who "either by his positioning
+    // or by contact, impairs the goalkeeper's ability to move freely within his crease OR
+    // DEFEND HIS GOAL" (nhl_rules_layout.txt:6035-6037), and that second limb carries no
+    // location condition at all — so "every clause" is false about the text, and a listener
+    // hears it as an absolute either way. The tables do not "agree" with a structural reading;
+    // they answer the play OUTRIGHT, which is stronger evidence and shorter to say. The same
+    // correction landed in eight content documents today, including this diagram's own hosts.
+    // TABLES_ALLOW_OUTSIDE is now the primary claim rather than corroboration of one.
+    // ⚠️ It must stay: dropping the permissive half teaches the rule as stricter than it is.
+    // Its replacement disclosure is "an appendix table rather than rule text" — the scope the
+    // tables actually need, and the wording winger.md and shooting.md use for the same row.
+    'play in their own reference tables, ' +
     TABLES_ALLOW_OUTSIDE +
-    '. That reads the rule’s structure rather than anything either book states in terms, and ' +
+    '. That is an appendix table rather than rule text, and ' +
     REFEREE_JUDGEMENT +
     ' USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
     'still — there a foot in the paint can cost you the zone and not just the goal. One rec book is ' +

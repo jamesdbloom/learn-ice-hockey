@@ -84,7 +84,7 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 
 **A realistic alternative.** None. This is the one place where "it depends what your coach says" is the wrong answer: a coach cannot make a body check legal in a non-checking category.
 
-**Where to read more.** New to this: [Rules Primer](rules_primer.md) for the rules a first game actually turns on, and [UK and England Rules](uk_rules.md) if you play in Britain. Deeper: [Body Contact and Battles, section 1](../technique/body_contact_and_battles.md#1-which-league-are-you-actually-in), which works through which league you are actually in.
+**Where to read more.** New to this: [Rules Primer](rules_primer.md) for the rules a first game actually turns on, and [UK and England Rules](uk_rules.md) if you play in Britain. Deeper: [Body Contact and Battles, section 1](../technique/body_contact_and_battles.md#1-which-contact-rules-are-you-actually-playing-under), which works through which contact rules you are actually playing under.
 
 ---
 

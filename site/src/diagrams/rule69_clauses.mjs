@@ -44,9 +44,56 @@
  * Rule 69.1 does not contradict its own appendix. Clause (1) sits under "Goals
  * should be disallowed only if" — a CEILING on when a goal may be disallowed,
  * not a direction to disallow one — and every provision that voids a goal for
- * position names the crease. 69.4, the rule for outside the crease, reaches
- * CONTACT only. That is a reading of the rule's STRUCTURE and neither book says
- * it in terms, which is why `REFEREE_JUDGEMENT` travels with it everywhere.
+ * position names the crease. 69.4, the rule for outside the crease, TAKES THE
+ * GOAL for contact only. That is a reading of the rule's STRUCTURE and neither
+ * book says it in terms, which is why `REFEREE_JUDGEMENT` travels with it
+ * everywhere.
+ *
+ * ⚠️⚠️ THAT SENTENCE READ "69.4 … REACHES CONTACT ONLY" UNTIL 18 SEPTEMBER 2026,
+ * AND IT WAS FALSE AS TO THE PENALTY. 69.4's returning-goalkeeper clause reaches
+ * positioning with no contact at all: where a goalkeeper "has played the puck
+ * outside of his crease and is then prevented from returning to his crease area
+ * due to the deliberate actions of an attacking player, such player may be
+ * penalized for goalkeeper interference." `project/content_style_guide.md` now
+ * says in terms: never write that 69.4 reaches contact only.
+ *
+ * ⚠️ THE PRECONDITION IS PART OF THE CLAUSE AND THE SHORTHAND SHEDS IT: the limb
+ * bites only where the goalkeeper HAS PLAYED THE PUCK outside the crease. A
+ * sentence that says "blocking a goalie's return may be penalized" without it
+ * states a wider rule than the book does.
+ *
+ * ⚠️ AND THE FIRST ATTEMPT TO FIX THIS FILE APPENDED A CORRECTION BELOW AND LEFT
+ * THE ORIGINAL SENTENCE ARMED — which is exactly the failure this comment block
+ * caused in the first place. A correction that does not edit the sentence it
+ * corrects is not a correction; the next agent reads the assertion, not the
+ * footnote.
+ *
+ * ⚠️ BUT "EVERY PROVISION … NAMES THE CREASE" IS NOT SETTLED AND MUST NOT BE
+ * VOICED AS AN ABSOLUTE, AND ON 18 SEPTEMBER 2026 TWO CAPTIONS WERE VOICING IT.
+ * The paragraph above survives only on the narrow reading that a "provision that
+ * VOIDS a goal" means 69.1's disallowing sentence ("If an attacking player enters
+ * the goal crease …", nhl_rules_layout.txt:6051-6054) and not the "only if"
+ * ceiling. Clause (1) of that ceiling reaches a player who "either by his
+ * positioning or by contact, impairs the goalkeeper's ability to move freely
+ * within his crease OR DEFEND HIS GOAL" (:6035-6037), and the second limb carries
+ * NO LOCATION CONDITION — on the attacker or on anything else. Said aloud, "every
+ * clause that voids a goal for where you stood names the crease" is heard as a
+ * statement about what the book says, and it is not one.
+ *
+ * ⚠️ AND THIS IS THE COMMENT THAT KEPT IT ALIVE. `oz-net-front-screen` and
+ * `winger-offensive-zone-patches` both carried the absolute with the structural
+ * hedge attached, and the hedge is what made it look reviewed. Eight content
+ * documents were corrected the same day, `content/positions/winger.md` — this
+ * caption's own host — among them; the captions were found afterwards, and this
+ * header, which says DO NOT REOPEN, was not.
+ *
+ * ⚠️ THE FIX IS NOT A BETTER HEDGE. Both books answer the net-front screen
+ * outright in their own reference tables — Situation 5 C (outside the crease, in
+ * motion) and 5 E (planted "on the crease line or outside the goal crease"), both
+ * "Goal is allowed." That is `TABLES_ALLOW_OUTSIDE`, it is the books' own worked
+ * examples rather than our reading of their structure, and it is SHORTER. Two of
+ * the four captions now lead on it. The structural working stays available to a
+ * caption that needs it — but it belongs with its limit, never alone.
  *
  * ---------------------------------------------------------------------------
  * ⚠️ These constants were extracted BYTE-IDENTICAL from the four captions.
