@@ -2163,9 +2163,23 @@ figcaption .warn-inline {
 
      ⚠️ MEASURED, NOT INFERRED: rendering the built page to PDF with data-theme="dark" showed a
      white content box inside a (18,18,18) margin band. A CSS-level check cannot see this -- the
-     declarations are all present and correct, they are simply outranked. */
+     declarations are all present and correct, they are simply outranked.
+
+     ⚠️ THE THIRD SELECTOR CLOSES THE REMAINING PATH, 18 September 2026. The two above reach a
+     reader who explicitly chose dark. They do NOT reach a reader with NO `data-theme` attribute
+     on an OS set to dark: there, `:root:not([data-theme='light'])` inside
+     `@media (prefers-color-scheme: dark)` is (0,2,0) and still outranks both. Measured under CDP
+     media emulation, that state printed the facts layer as near-white ink and diverged from the
+     light-themed print on 129 of 148 pages, max delta 174.
+     ⚠️ IT DOES NOT REPRODUCE IN CHROME, and that was proved rather than assumed -- a CSS-only
+     probe confirms Chrome prints with a LIGHT preferred colour scheme, so the media query never
+     matches and the 129-page figure is reachable only by forcing it. It is live in any browser
+     that DOES honour prefers-color-scheme while printing, which is exactly the Safari/Firefox
+     case the paragraph above flags as untested. Repeating the same specificity at equal weight
+     costs nothing and removes the dependency on that browser behaviour. */
   :root,
-  :root[data-theme] {
+  :root[data-theme],
+  :root:not([data-theme='light']) {
     color-scheme: light;
 
   --bg: #fbfbfa;

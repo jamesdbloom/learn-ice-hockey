@@ -2467,14 +2467,50 @@ the audio player**, which the reviewer checked and a naive pass would have misse
   **The reviewer's read: two of the three are variants of one convention; the
   third is the convention not applied.** **Acceptance:** one form, and
   `rules_primer`'s is the one that survives contact with the rendered page.
-- [ ] **MINOR — a scroll region announced as scrollable when it is not.** At 1440,
-  three `div.diagram-scroll` and two `div.table-scroll` carry `role="region"`,
-  `tabindex="0"` and `aria-label="Diagram, scrollable horizontally"` while
-  `scrollWidth === clientWidth`. **A screen-reader user is told it scrolls; a
-  keyboard user gets a tab stop that does nothing.** ⚠️ **The logic is CORRECT at
-  375** — the six non-overflowing wrappers there carry no role at all — **so the
-  conditional exists and resolves wrong at desktop width.** Pre-existing, not from
-  this change.
+- [ ] ⚠️⚠️ **MAJOR (upgraded from Minor) — dead scroll regions. BOTH PRIOR
+  VERSIONS OF THIS ROW WERE WRONG, IN OPPOSITE DIRECTIONS, and a full
+  52-route sweep on 18 September settled it.** Measured `scrollWidth` vs
+  `clientWidth` on every `[role="region"]` wrapper, site-wide:
+
+  | Viewport | Dead (announced, does not scroll) | Genuinely scrolling |
+  |---|---|---|
+  | **1440** | **141** | **2** |
+  | **375** | **16** | **132** |
+
+  ⚠️ **This row previously said "three `div.diagram-scroll` and two
+  `div.table-scroll`" at 1440 — that was ONE PAGE's count quoted as the
+  site's. The site figure is 141.** ⚠️ **And the Workstream 3D row that
+  corrected this one said "four dead tab stops survive at 375". Those four
+  reproduce exactly, but 3D only checked three pages — there are 16, on 14
+  pages.** At 1440 the announcement carries no information at all: 141 false
+  against 2 true. Severity is Major on that ratio, not Minor.
+
+  **Verified as a real keyboard no-op, not just a measurement:** focused a
+  `div.diagram-scroll[role="region"]` labelled *"Diagram, scrollable
+  horizontally"* and pressed ArrowRight six times. At 1440 (`scrollWidth`
+  792 = `clientWidth` 792) `scrollLeft` stays **0** — the focus ring draws
+  and nothing moves. At 375 the same element (640 vs 346) scrolls to 240.
+
+  ⚠️ **TWO DIFFERENT BUGS WEARING ONE LABEL** — confirmed in source, matching
+  the measurement:
+  - `site/src/plugins/remark-corpus.mjs:317-336` — the condition is
+    `d.half === false`, i.e. *is this a full-sheet diagram*, never *does it
+    overflow*. Its own comment justifies that on the 375 case, which is
+    exactly right at 375 and exactly wrong at 1440 where the 792px column
+    never overflows. **This is why 1440 is catastrophic and 375 is nearly
+    clean.**
+  - `site/src/plugins/rehype-corpus.mjs:130-150` — blanket, every `<table>`,
+    no condition at all. **This is the entire 375 residue** — every dead
+    wrapper at 375 is a `table-scroll`; zero `diagram-scroll` are dead there.
+
+  **Acceptance:** measure overflow at runtime and set `role`/`tabindex`/
+  `aria-label` from that, in both plugins. Fixing only one leaves the other
+  viewport broken.
+- [ ] **MINOR — the shaded region is weak in greyscale.** 210 against 233 mean
+  luminance, a 9% separation. It does not depend on colour alone: it is bounded by
+  the painted red line and the wall, and the label sits inside it. ⚠️ **If ever
+  adjusted, raise the fill alpha rather than restoring a stroke** — the whole point
+  of the repair was that every edge is a real boundary.
 - [ ] **MINOR — the shaded region is weak in greyscale.** 210 against 233 mean
   luminance, a 9% separation. It does not depend on colour alone: it is bounded by
   the painted red line and the wall, and the label sits inside it. ⚠️ **If ever
@@ -2536,9 +2572,40 @@ list in sync with `:root` above it.**
 prints from a fresh Chrome with no localStorage. **This only ever hit a reader
 pressing Cmd-P.**
 
-- [ ] ⚠️ **Verify the fix by rendering to PDF from a dark-themed browser and
-  re-measuring.** The CSS is structurally verified (29 properties, braces
-  balanced) but **nobody has looked at the printed output since the change.**
+- [x] ⚠️ **DONE, 18 September — VERIFIED IN PIXELS, not derived from the CSS.**
+  Printed `body_contact_and_battles` (148 pages) from a browser with
+  `localStorage.theme='dark'`, rasterised at 110 dpi, and diffed against the
+  same document printed light: **148 pages, 0 differing pixels, max delta 0.**
+  Byte-identical rasters. Per-layer ink measured against paper that itself
+  measured pure `(255,255,255)`:
+
+  | Layer | Darkest ink | Contrast | Was (16 Sept) |
+  |---|---|---|---|
+  | ` ```facts ` blocks | `(27,28,30)` | **17.05:1** | 148/255, ~3:1 |
+  | ⚠️ callout panels | `(0,0,0)` | **21.00:1** | faintest on page |
+  | Links | `(0,0,0)` | **21.00:1** | **1.26:1** black-on-dark |
+
+  Element census under print media across three documents: **13,432 text
+  elements, 0 below 4.5:1** (previously 1,832 below). The `(18,18,18)` margin
+  band is gone — margins print `(255,255,255)`. **The safety layers are now
+  the darkest text on the paper rather than the faintest.**
+- [x] **FIXED, 18 September — a latent cross-browser gap the same pass found.**
+  The print block's selector was `:root, :root[data-theme]`, which reaches a
+  reader who explicitly chose dark but **not** one with no `data-theme`
+  attribute on an OS set to dark — there `:root:not([data-theme='light'])`
+  inside `@media (prefers-color-scheme: dark)` is (0,2,0) and outranks both.
+  Forced under CDP media emulation, that state printed the facts layer as
+  near-white ink, diverging on **129 of 148 pages, max delta 174**.
+  ⚠️ **It does NOT reproduce in Chrome, and that was proved rather than
+  assumed** — a CSS-only probe confirms Chrome prints with a light preferred
+  colour scheme, so the media query never matches and the 129-page figure is
+  reachable only by forcing it. It is live in any browser that *does* honour
+  `prefers-color-scheme` while printing — the Safari/Firefox case the file's
+  own comment already flagged as untested. Fixed by adding
+  `:root:not([data-theme='light'])` to the print block's selector list, where
+  it wins on source order; rationale recorded in the comment beside it.
+  **Still owed:** an actual Safari and Firefox print check, which no pass has
+  ever run.
 
 ### FIXED: a dead print selector
 
