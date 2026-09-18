@@ -37,7 +37,7 @@
  * archives. Without that, every build would upload every EPUB and invalidate it.
  */
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'node-html-parser';
@@ -187,6 +187,35 @@ function main() {
     process.exit(2);
   }
   mkdirSync(join(OUT, 'markdown'), { recursive: true });
+
+  // ⚠️ CLEAN `.print/` BEFORE WRITING. A BUNDLE THAT STOPS BEING GENERATED USED TO
+  // BE PRINTED FOREVER.
+  //
+  // `build-pdf.mjs` takes its worklist from `readdirSync(PRINT_DIR)` rather than
+  // from the bundles this script just wrote, and `.print/` was never cleaned. So a
+  // layer that is removed or renamed leaves its last HTML behind and
+  // `dist/downloads/<it>.pdf` is rebuilt from that stale HTML on every build,
+  // forever, with a fresh mtime that makes it look current.
+  //
+  // ⚠️ IT HAD ALREADY HAPPENED AND SHIPPED. A site review on 18 September 2026
+  // found `.print/reading-diagrams.html` dated **8 days earlier** than the other
+  // eight, still producing a 570 KB PDF. `structure.json` has SEVEN layers plus the
+  // whole-corpus bundle — eight — and `reading-diagrams` is not one of them: it is
+  // folded into Foundation (the documented eight-directories / seven-sections
+  // split). `build-pdf` printed NINE.
+  //
+  // ⚠️ The stale bundle was the only HTML anywhere still carrying the PRE-CHANGE
+  // scroll-region attributes — a published artefact of a superseded build, and
+  // nothing in the pipeline could see it: every checker reads `content/` or `dist`,
+  // and the PDF is linked from no page, so no link check reaches it either.
+  //
+  // Cleaning here rather than in `build-pdf` keeps the invariant with the thing that
+  // establishes it: `.print/` contains exactly what this run generated.
+  if (existsSync(PRINT)) {
+    for (const stale of readdirSync(PRINT).filter((f) => f.endsWith('.html'))) {
+      rmSync(join(PRINT, stale));
+    }
+  }
   mkdirSync(PRINT, { recursive: true });
 
   // The hashed stylesheet, inlined into the print bundles below.
