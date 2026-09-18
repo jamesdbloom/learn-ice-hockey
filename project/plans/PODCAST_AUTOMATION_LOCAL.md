@@ -147,6 +147,102 @@ reload revealed it had finished and downloaded normally. **Reload the page
 before trusting a long-running "generating" status**, rather than assuming
 the process is stuck.
 
+## Direction decision, 18 September 2026 — TWO FLAVOURS, split by measured rule density
+
+**The user's decision:** stop trying to make one format serve the whole
+corpus. Produce **two** audio flavours and choose per document:
+
+1. **Podcast** (NotebookLM two-host deep dive) — for conceptual, tactical and
+   positional content, where the value is explanation and the rule density is
+   low.
+2. **Narration** (read the reviewed text aloud) — for rules-heavy content,
+   where verbatim accuracy is the whole point.
+
+### Why this removes the defect class rather than merely reducing it
+
+⚠️ **A narrated episode cannot make a transmission error.** The dominant v3/v4
+failure is not invention but *transmission*: rules the source states correctly
+coming out of the episode wrong (six of them in `rink_map` v3). That happens
+because a generative model sits between the reviewed text and the listener.
+**Narration deletes that step**, so the audio inherits the corpus's existing
+adversarial review rather than re-deriving it. This is a structural fix, not a
+tuning one.
+
+### The narration pipeline already exists and is mature
+
+`scripts/md_to_speech.py` — 4,619 lines, Markdown→SSML for Amazon Polly en-GB.
+Measured 18 September: **39 documents, 3,063 chunks, 6,645,269 billed
+characters, 0 unrecognised constructs, 46 tables rewritten as prose, 3 dropped
+to pointers.** It already solves the "sounds robotic" problem structurally —
+a graded pause hierarchy (900 ms document title / 1000 ms section / 700 ms
+subsection / 500 ms paragraph / 450 ms after a heading / 300 ms list item),
+63 notation rules, and `say-as interpret-as="characters"` on acronyms so
+"CAN/BNQ" is not read as a word.
+
+**The only open decision is the voice**, which `docs/decision-log.md` records
+as parked ("Phase 5 on voice quality after the pilot"). Full-corpus cost from
+the tool's own estimator, en-GB voices available in eu-west-2:
+
+| Engine | Rate | Full corpus | Voices |
+|---|---|---|---|
+| standard | $4/M | **$27** | Emma, Arthur, Brian, Amy |
+| neural | $16/M | **$106** | Emma, Arthur, Brian, Amy |
+| generative | $30/M | **$199** | Brian, Amy |
+| long-form | $100/M | — | **not available in eu-west-2** |
+
+⚠️ **`md_to_speech.py`'s own docstring and its manifest both say `long-form`,
+which this region does not offer.** That has to be settled before synthesis —
+either change the manifest's engine or synthesise from another region.
+Standard is the tier that sounds robotic; **generative** is the conversational
+tier and the realistic target. A voice A/B on a few chunks costs under a
+dollar and should happen before committing to a full run.
+
+### The split, by measured rule density
+
+Two measures, both reproducible — **run the tools rather than quoting these
+figures, which go stale**: `check_readability_census.py citations` for
+citation share, and a count of explicit `<Book> Rule` references per document
+for cross-book pressure. Ordered by the latter:
+
+| Document | Rule citations | Books cited |
+|---|---:|---:|
+| `foundation/rules_primer.md` | 369 | 5 |
+| `positions/goaltender.md` | 363 | 5 |
+| `technique/body_contact_and_battles.md` | 269 | 5 |
+| `systems/faceoffs.md` | 262 | 5 |
+| `technique/shooting.md` | 132 | 5 |
+| `systems/special_teams.md` | 120 | 5 |
+| `positions/center.md` | 107 | 5 |
+| `foundation/on_ice_communication.md` | 101 | 5 |
+| … | | |
+| `foundation/rink_map.md` | 40 | 5 |
+| `foundation/core_principles.md` | 4 | 3 |
+| `technique/skating.md` | 4 | 4 |
+| `reading-diagrams/reading_ice_hockey_diagrams.md` | 2 | 2 |
+
+⚠️ **THE TOPIC SPLIT AND THE RISK SPLIT DISAGREE, AND THE DISAGREEMENT IS THE
+POINT.** The instinct was "podcast suits positions and strategies." The data
+says `goaltender.md` is the **second most rules-dense document in the corpus**
+(363 citations across five books) and `center.md` is seventh. Those are
+positions documents, and by measured risk they belong in the narration tier,
+not the podcast tier. `faceoffs.md` and `special_teams.md` are "systems"
+documents with the same problem.
+
+⚠️ **AND RAW COUNT IS NOT THE WHOLE RISK.** `rink_map.md` has only 40
+citations yet produced **six** transmission errors — because it *compares*
+five books across those 40, and comparison is what the generator gets wrong.
+**Cross-book comparison density, not citation count, is the predictor.** Any
+final classification should be checked by reading, not taken off this table.
+
+### Status
+
+- **Podcast tier:** proceed. Low-rule-density conceptual documents.
+- **Narration tier:** blocked on two things — the voice decision above, and
+  an expired AWS session (`aws sts get-caller-identity` → *"Your session has
+  expired"*). Synthesis cannot be tested until that is renewed.
+- **Not yet decided:** whether every document gets *both* flavours, or each
+  gets one. Both is more work but lets a reader choose.
+
 ## Scope decision, 17 September 2026
 
 **One episode per document, ordered by the site's own page order, `getting-started/getting_started`
