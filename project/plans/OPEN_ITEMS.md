@@ -1888,6 +1888,45 @@ opposite.
   paint.**"* Same spoken chunk, so the qualification is one sentence away — **but
   this is the sentence built to be remembered**, and the repair did not reach it.
 
+#### ⚠️ THE CAP IS THE SYMPTOM, NOT THE CONSTRAINT — a structural finding left for the coordinator
+
+`body_contact_and_battles.md:1068` **cannot be repaired within its cap.** It sits at
+**296/300**, and the two things a `facts-reviewer` asked for — the *"Rule 69 is a
+judgement call by its own terms"* gloss (~45 chars) and a `shooting.md:452`-style
+*"a table row, not rule text"* qualifier on Situation 5 E (~22 chars) — need ~67
+characters that do not exist. **The style guide's own remedy is to split into two
+facts, and the block is at `HARD_MAX` 11.**
+
+⚠️⚠️ **THE AGENT NAMED THE REAL FINDING AND DECLINED TO ACT ON IT UNBRIEFED:**
+*"Whether `HARD_MAX` 11 is the right cap for §Attacking the net front. I worked
+inside it. **The block being full is the evidence that the section is doing two
+jobs**, and I treated that as a constraint rather than as the finding it probably
+is."*
+
+**§Attacking the net front does two jobs** — net-front coaching, then four-book
+screening exposition — **and its body already has the seam**, at the *"Screening is
+normally legal"* bullet.
+
+- [ ] **Decide whether to split the section on that seam.** ⚠️ It changes a heading
+  and its anchors, so `check_links.py` and every inbound cross-reference are in
+  scope. **This is a coordinator decision, not an agent's.**
+  ⚠️ **The generalisation is the valuable part: a block stuck at `HARD_MAX` is
+  evidence about the SECTION, not about the block.** Wherever a repair reports "no
+  slot", ask whether the section is doing two jobs before asking what to evict.
+
+#### ✅ CENSUS: is `607(c)` ever attached to the crease alone? — the repaired files are CLEAN
+
+Ran as a **layer test**, body and ` ```facts ` separately, after the tree went quiet.
+**Every `607(c)` mention in the repaired documents now carries *"privileged area"***
+— `zone_entries.md` at `:296`, `:306`, `:318`, `:327`, `:354`, `:374` all OK.
+
+⚠️ **Three facts lines share a shape that needs READING, not sweeping:**
+`playing_without_the_puck.md:617`, `shooting.md:291` and `:490` all open *"Charging
+a goalkeeper **who is in their crease**…"*. ⚠️ **That is probably CORRECT** — it
+describes a charge *inside* the crease, a true subset, rather than claiming the
+crease is the rule's outer boundary, which was the defect. **The distinction is
+exactly the one a sweep would destroy.** Candidates, not findings.
+
 #### ✅ CENSUS: "a facts line that states a conflict and gives no instruction" — CLEARED, and the discriminator is reusable
 
 An agent observed that this layer test *"has, as far as I can tell, never been
