@@ -243,6 +243,41 @@ final classification should be checked by reading, not taken off this table.
 - **Not yet decided:** whether every document gets *both* flavours, or each
   gets one. Both is more work but lets a reader choose.
 
+## ⚠️ The queue was reporting episode presence BACKWARDS for the two documents this work is about
+
+**Found and fixed 18 September 2026.** `scripts/podcast_queue.py` chose its
+manifest with `isinstance(data, list)`. The two files have **different shapes**:
+
+- `podcasts_web/manifest.json` — a bare JSON **list**.
+- `site/src/data/podcast.json` — the canonical file that superseded it, an
+  **object**: `{"note": ..., "episodes": [...]}`, written by
+  `scripts/build_podcast_audio.py`.
+
+So the canonical file **failed the shape test, fell through, and the tool read the
+superseded one.** ⚠️ **It printed which file it had used, and nothing said that was
+the wrong file.**
+
+⚠️⚠️ **It was not a harmless fallback.** The two disagreed about **exactly two
+documents**, and they are the two this work has been about:
+
+| Document | Canonical `podcast.json` | Superseded `manifest.json` |
+|---|---|---|
+| `foundation/core_principles` | **no episode** | has episode |
+| `foundation/rink_map` | **has episode** | no episode |
+
+**So the queue said `core_principles` already had an episode and `rink_map` did
+not. The truth is the reverse** — `core_principles` is the document with no
+published episode, and it is the one whose generation has been retried all day.
+
+**Fixed:** the loader now accepts both shapes, keeps the canonical file first, and
+**reports a fallback on stderr** instead of taking one silently. Verified: `status`
+now names `site/src/data/podcast.json` and both rows read correctly.
+
+⚠️ **The lesson is the shape of the bug, not the two rows.** A tool that tries
+candidate paths in order and validates each by shape will **skip a valid file whose
+shape changed** and carry on with an older one, reporting success. Nothing in this
+repository's gates covers `.podcast_queue/` or either manifest.
+
 ## TTS engine survey, 18 September 2026 — the cost objection to scripting our own podcast does not survive contact with the prices
 
 **This section exists because the direction decision above was made on the

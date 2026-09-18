@@ -123,13 +123,59 @@ def load_structure_order():
     return ordered
 
 
+def _manifest_episodes(data):
+    """Pull the episode array out of either manifest shape, or None if it is neither.
+
+    ⚠️ THE TWO FILES HAVE DIFFERENT SHAPES AND THAT SILENTLY BROKE THIS TOOL.
+    `podcasts_web/manifest.json` is a bare JSON **list**. The canonical
+    `site/src/data/podcast.json` that superseded it is an **object**,
+    ``{"note": ..., "episodes": [...]}`` -- see `build_podcast_audio.py`, which
+    writes it. The original loader tested ``isinstance(data, list)``, so the
+    canonical file failed the test, fell through, and the tool reported the
+    superseded file instead. **It said which file it had used, and nothing said
+    that was the wrong one.**
+
+    ⚠️ It was not a harmless fallback. On 18 September 2026 the two disagreed
+    about exactly two documents -- the canonical file carried an episode for
+    `foundation/rink_map` and none for `foundation/core_principles`, and the
+    superseded file the reverse -- so `status` printed `has_episode` **backwards
+    for both**, and they are the two documents the podcast work was actually
+    about. A queue that is wrong about which episodes exist is worse than no
+    queue.
+    """
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict) and isinstance(data.get("episodes"), list):
+        return data["episodes"]
+    return None
+
+
 def load_manifest():
-    """Return {doc_id: entry} from whichever manifest file exists, or {} if neither does."""
+    """Return ({doc_id: entry}, path) from the canonical manifest.
+
+    ⚠️ `MANIFEST_CANDIDATES` is ordered, and the order is the point: the
+    canonical file wins whenever it is readable. The superseded file is a
+    fallback for a checkout that predates the move, **not** an equal partner.
+    ⚠️ Falling back is now reported on stderr rather than happening quietly,
+    because the quiet version printed a plausible table built from stale data.
+    """
+    tried = []
     for path in MANIFEST_CANDIDATES:
-        if path.exists():
-            data = json.loads(path.read_text())
-            if isinstance(data, list):
-                return {e["doc_id"]: e for e in data if "doc_id" in e}, path
+        if not path.exists():
+            continue
+        episodes = _manifest_episodes(json.loads(path.read_text()))
+        if episodes is None:
+            tried.append(f"{path.relative_to(REPO_ROOT)} (unrecognised shape)")
+            continue
+        if tried:
+            print(
+                "podcast_queue: WARNING -- falling back to "
+                f"{path.relative_to(REPO_ROOT)} because "
+                + ", ".join(tried)
+                + ". Episode presence below may be stale.",
+                file=sys.stderr,
+            )
+        return {e["doc_id"]: e for e in episodes if "doc_id" in e}, path
     return {}, None
 
 
