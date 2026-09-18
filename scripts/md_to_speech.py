@@ -3661,6 +3661,42 @@ def discover(content_root: Path) -> list[tuple[Path, str, str]]:
     return found
 
 
+def prune_orphans(out_root: Path, live_doc_ids: Iterable[str]) -> list[str]:
+    """Remove output directories whose source document no longer exists.
+
+    ⚠️ WRITTEN BECAUSE ONE SURVIVED FOR ELEVEN DAYS AND WOULD HAVE BEEN PAID FOR.
+    ``write_document`` prunes stale ``.ssml`` files *within* a document's
+    directory, but nothing removed a whole directory when its source ``.md``
+    was deleted or renamed -- that document simply stops being visited, so its
+    output is never touched again.
+
+    Commit ``fd9e903`` split ``foundation/rink_map_and_glossary.md`` into
+    ``rink_map.md`` and ``language_and_glossary.md``. The orphan sat in
+    ``scripts/speech/foundation__rink_map_and_glossary/`` carrying **163,366
+    billed characters** of superseded text -- about $4.90 at generative rates,
+    and, far worse, it would have been **synthesised and published** by any
+    full run, because the synthesis step reads this directory rather than
+    ``content/``. Nothing in the pipeline could see it: the SSML was valid, the
+    manifest was well-formed, and every checker reads ``content/``.
+
+    ⚠️ NEVER CALL THIS ON A ``--only`` RUN. That flag filters ``documents`` to a
+    subset, so the "live" set is a subset too, and pruning against it would
+    delete the output of every document not named.
+    """
+    if not out_root.is_dir():
+        return []
+    live = set(live_doc_ids)
+    removed = []
+    for entry in sorted(out_root.iterdir()):
+        if not entry.is_dir() or entry.name in live:
+            continue
+        for leftover in sorted(entry.iterdir()):
+            leftover.unlink()
+        entry.rmdir()
+        removed.append(entry.name)
+    return removed
+
+
 def write_document(out_root: Path, doc_id: str, chunks: Sequence[Chunk],
                    report: DocReport) -> dict:
     directory = out_root / doc_id
@@ -4577,6 +4613,16 @@ def main(argv: Sequence[str] | None = None) -> int:
         reports.append(report)
 
     if not args.dry_run:
+        # ⚠️ Guarded on `--only`: that flag makes `documents` a subset, so
+        # pruning against it would delete every document not named. See
+        # prune_orphans' docstring for the orphan this exists to prevent.
+        if not args.only:
+            for orphan in prune_orphans(args.out, [d[1] for d in documents]):
+                print(
+                    f"pruned orphaned output: {orphan} "
+                    f"(no matching document under {args.content})",
+                    file=sys.stderr,
+                )
         index_path = args.out / "index.json"
         index_path.parent.mkdir(parents=True, exist_ok=True)
         index_path.write_text(
