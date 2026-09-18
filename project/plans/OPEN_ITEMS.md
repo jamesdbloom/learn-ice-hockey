@@ -1888,6 +1888,62 @@ opposite.
   paint.**"* Same spoken chunk, so the qualification is one sentence away — **but
   this is the sentence built to be remembered**, and the repair did not reach it.
 
+#### ⚠️⚠️ A NEW CLASS — THE CLAIM IS TRUE, THE **LAYER** IT IS ATTRIBUTED TO IS WRONG
+
+Found 18 September while clearing a commit-gate BLOCK. Four documents said the
+crease-line instruction *"rests on the **three books' rule text**."*
+
+⚠️ **Only ONE of the three answers in rule text.** Verified against primary text:
+
+| Book | Where it actually answers | Layer |
+|---|---|---|
+| IIHF | `sources/iihf_rules_v1.1.txt:631` | **rule text** ✓ |
+| USA Hockey | `sources/usah.txt:4509` — a **Note** to 625(b); `sources/usah_casebook.txt:1568-1571` — a **Casebook situation** |
+| Hockey Canada | `sources/hc.txt:959-961` — the **Glossary**. ⚠️ Its own **Rule 1.5(c)** (`sources/hc_layout.txt:905`) uses **the NHL's looser formula** |
+
+**Every individual book fact was right. The sentence generalising them was wrong**
+— and no checker can see that, because `check_quote_drift.py` locates quotations
+and cannot see **attribution drift**, and `check_facts.py` checks shape.
+
+⚠️ **It propagated to at least four files and, inside one of them, to three layers**
+— body, a **Key Takeaway**, and the verification notes — where the notes paragraph
+sat **at the end of the very passage that names the Note, the Casebook and the
+Glossary and thereby disproves it.**
+
+⚠️ **Getting the layer right makes the corpus's point STRONGER:** nothing in any of
+the four books says what status its own Notes, Casebook situations, Glossary
+entries or reference tables have relative to its rule text. **That unresolvable
+ranking is exactly why the conservative reading is the safe one** — a much better
+argument than a false claim of unanimity in rule text.
+
+- [ ] **Census the corpus for layer-attribution claims** — sentences of the form
+  *"X books' rule text"*, *"the rules say"*, *"both books' rules"* where the support
+  is a Note, a Casebook, a Glossary or an appendix table. ⚠️ **No tool finds these.
+  They need reading.** ⚠️ **And `sources/README.md` records that no book states the
+  authority of its own appendix tables**, so any sentence ranking layers is
+  suspect by construction.
+
+#### ✅ A NEGATIVE EXISTENCE CLAIM, ATTACKED RATHER THAN INHERITED
+
+An agent re-tested the corpus's *"the one place the NHL's book addresses the crease
+line"* instead of trusting the owner. Whitespace-flattened, `crease lines?` occurs
+**four times in the whole NHL book** — three in Rule 1.7 (dimensional) and one at
+Table 14 Situation 5 E. `lines? of the crease`, `marked line`, `line belongs`,
+`crease is marked` → **0 each**. **The claim holds.**
+
+⚠️ **Recorded because non-negotiable 4's *"never strip an honest disclosure"* had
+been read as *"never test one"*** — the Workstream 2B lesson, applied correctly for
+once. ⚠️ **Its own stated limit: a string census cannot see a row describing the
+same geometry in different words.**
+
+#### ⚠️ A CAP THAT COULD NOT CARRY THE FIX, AND THE AGENT SAID SO
+
+`special_teams.md:97` is a `Rule:` facts line at **294 of 300** carrying the
+defensible scoped form. It **cannot** carry the Table 14 nuance. The agent **left it
+and reported**, rather than trading out a caveat to make room — the correct outcome,
+recorded here because **the wrong outcome is invisible**: a traded-away caveat looks
+like a clean edit and passes every checker.
+
 #### ⚠️⚠️ A CAPTION GRANTS PERMISSION THE RULEBOOK DOES NOT — Rule 69 keyed on the wrong player
 
 `site/src/diagrams/zone_entries.mjs:190` says what risks the goal is *"any contact
