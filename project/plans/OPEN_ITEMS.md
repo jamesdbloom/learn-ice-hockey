@@ -2906,8 +2906,40 @@ the drive stops.** The crease boundary existed only in the caption. A listener
 hearing the body without the figure was driven at the goaltender with no boundary
 at all. Repaired 18 September; under review.
 
-⚠️ **One tested host, one real defect. That is the whole basis for this
-workstream — it is not a rate and must not be quoted as one.**
+### Results so far — FOUR hosts tested, THREE defects, and one was not the predicted shape
+
+| Host tested | Keyed how | Outcome |
+|---|---|---|
+| `hockey-iq/playing_without_the_puck.md` | `owner` | **clean** — body carries it in three layers, more richly than the caption |
+| `systems/zone_entries.md` | marker | ⚠️ **sole carrier.** Body drove a player at the net with no stopping point |
+| `technique/body_contact_and_battles.md` | marker | ⚠️ **sole carrier**, and worse — see below |
+| `foundation/rules_primer.md` | marker | ⚠️ **a DIFFERENT defect the method found anyway** — see below |
+
+⚠️ **`body_contact_and_battles.md` is the sharpest case for why `owner` is the
+wrong key.** Its body **deferred the boundary to another document** (*"see Rink
+Map"*) and then, in the next breath, stated the permission: *"out there all four
+leave the clean screen alone."* Its facts line ended *"And the crease line itself
+is unresolved"* — a tension with **nothing to act on**, voiced alone. Common
+Mistakes, Check yourself and Key Takeaways carried nothing. The only instruction
+was in a caption that `md_to_speech._diagram_is_away` announces as **another
+document's figure**.
+
+⚠️⚠️ **`rules_primer.md` was NOT a sole-carrier case, and it is the most important
+result here.** Its body was already correct. Its **Common Mistakes and Key
+Takeaways said the requirement was *"USA Hockey's and Hockey Canada's rather than
+the NHL's or the IIHF's"* — dropping the IIHF from the three books that state
+it** — contradicting the owner document, contradicting its own body, and
+**contradicting itself one clause later in the SAME rendered speech chunk**, which
+names IIHF Rule 1.7 as one of the three.
+
+**That is a body-✓ / summary-✗ propagation failure — the corpus's most-recorded
+shape, the one every critical in round 10 was — and the caption-host sweep found
+it by accident.** ⚠️ **So the method's value is not confined to sole carriers. The
+layer test is what finds these; the caption census is only what routes an agent to
+the document.**
+
+⚠️ **Four hosts is not a rate and must not be quoted as one.** What it establishes
+is that the class is real and that `owner` misses it.
 
 ### The trap for whoever works it
 
