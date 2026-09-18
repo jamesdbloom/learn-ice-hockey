@@ -569,10 +569,19 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   explicit that this does not change the document's safety verdict either
   way, since the actual reader-facing instruction doesn't depend on the
   retraction being true.
+- [x] **CLOSED, 18 September — the Copenhagen-exercise retraction citation
+  is CONFIRMED TRUE, not fabricated.** `source-verifier` refetched it
+  through four independent channels that don't share the blocked-HTML-
+  front-end problem the safety-reviewer hit: the EuropePMC REST API, NCBI's
+  own eutils API, and Crossref's publisher metadata all agree the paper
+  (PMID 40827942) was retracted, and the retraction notice's own abstract
+  text (PMID 41975640, fetched directly) matches both sentences the corpus
+  quotes verbatim, including the April 2026 date and the exact volume/issue.
+  The corpus's six citation points are accurate as written. This closes the
+  one item this workstream's four batches left open.
   **Genuinely still open, never attempted by any pass**: cross-document (not
   just intra-document) consistency between two different documents' Key
-  focus sections, and the flagged `source-verifier` check on the Copenhagen-
-  exercise retraction citation.
+  focus sections.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
