@@ -81,7 +81,63 @@ care) and `on_ice_communication`'s first attempt (title "How specific calls
 save your neck") both finished generating, were downloaded, installed as
 their masters (old files backed up to scratchpad), converted and transcribed
 locally, and dispatched to fresh `rules-verifier` + `safety-reviewer` pairs.
-Results not yet in.
+
+## Validation batch conclusion: 3 for 3 NO-GO, 18 September 2026
+
+⚠️ **Every document in the validation batch failed review.** `rink_map`,
+`core_principles`, and `on_ice_communication` each ran under the fixed
+prompt (the last two under the version before constraint 9 was broadened);
+all three were reviewed by an independent `rules-verifier` + `safety-reviewer`
+pair; all three came back NO-GO. Full records:
+[`rink_map_podcast_retry_no_go_2026-09-18.md`](../reviews/rink_map_podcast_retry_no_go_2026-09-18.md),
+[`core_principles_podcast_retry_no_go_2026-09-18.md`](../reviews/core_principles_podcast_retry_no_go_2026-09-18.md),
+[`on_ice_communication_podcast_no_go_2026-09-18.md`](../reviews/on_ice_communication_podcast_no_go_2026-09-18.md).
+
+**What actually worked:** in 3/3, the specific fabricated "self-protection and
+injury response" closing segment — the pattern that started this whole
+investigation — did not reappear. That is a real, repeated, confirmed result,
+not chance.
+
+**What did not work:** in 3/3, some other invented content survived — a
+fabricated cross-book rule comparison, a false historical anecdote naming a
+real player, an unsettled source claim restated as settled (`rink_map`);
+three fresh invented statistics including one inside the single most
+safety-audited sentence in the document, plus a dropped safety prohibition
+(`core_principles` — notably, on the *exact* document constraint 9 was
+written for, one of its three named patterns recurred, not just new drift);
+and, worst, a wholly invented biomechanical mechanism ("axial loading… the
+vertebrae cannot absorb the shock") layered onto real spinal-injury content,
+stripping the source's own hedge about how thin the underlying evidence is
+(`on_ice_communication`) — a new failure shape none of the existing
+constraint wording names, because the topic itself is legitimately in the
+source and only the specific invented detail is not.
+
+**Diagnosis, now with three independent data points:** naming specific
+fabrication instances in the prompt narrows what gets suppressed without
+closing the underlying behavior. NotebookLM's Long/Deep-dive generation
+appears to supplement whatever source material it is given with the model's
+own general hockey knowledge — true or false, on-topic or adjacent — whenever
+it judges the source incomplete relative to the teaching prompt's
+instructions to explain, contextualize, or add real-world detail. This has
+now shown up as: invented rules, invented statistics, invented history,
+invented governing-body scope, invented medical mechanism, and dropped
+hedges — six different surface shapes of what looks like one underlying
+generator behavior. Every fresh attempt at naming the shape more precisely
+has been followed by a new instance the naming didn't cover.
+
+**This is a decision point for the user, not something to keep iterating on
+alone.** The options: (a) try another prompt iteration incorporating all
+three failure records and retest — uncertain to work, since this is the
+second consecutive iteration to fail at the validation stage; (b) try a
+different NotebookLM format (e.g. "Brief" instead of "Deep dive" — shorter,
+possibly less prone to filling gaps, but a real reduction in the
+teaching-depth goal that motivated this whole project); (c) accept that
+every episode, not just a validation sample, needs the full two-reviewer
+pass before acceptance, indefinitely — which the plan already requires, but
+which means no batch of 10 can run unsupervised, since 0/3 in this sample
+passed unaided; (d) reconsider whether NotebookLM-generated podcasts can meet
+this corpus's accuracy bar at all in their current form, versus e.g. a
+differently-structured generation approach.
 
 ⚠️ **Operational finding: the NotebookLM notebook's own "Generating Audio
 Overview... Come back in a few minutes" status panel can go stale and keep
