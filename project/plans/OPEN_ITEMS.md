@@ -479,14 +479,39 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   clause that the same document's Key focus, Key Takeaway 8, and dedicated
   safety section all carry — a listener hearing only the Overview's audio
   chunk would miss it. **Fixed directly** (single-sentence addition matching
-  existing wording elsewhere in the same document) and sent to
-  `safety-reviewer` for confirmation, not yet returned.
-  9 of 39 documents is not full coverage — 30 remain unchecked by this
-  method, including all of `getting-started/`, `reading-diagrams/`, and four
-  of five `positions/` documents. **Genuinely still open**: extending this
-  read to the remaining 30, and — separately, never attempted by this
-  pass — cross-document (not just intra-document) consistency between two
-  different documents' Key focus sections.
+  existing wording elsewhere in the same document) — **confirmed GO by
+  `safety-reviewer`**, who also checked the rest of the same ~1650-line
+  document for other instances of the same gap and found one near-miss
+  (`:843`, a closing summary sentence inside the dedicated safety section
+  itself that doesn't repeat the helmet clause, but sits two paragraphs
+  after the full explanation — flagged as a minor, not fixed, since it is
+  inside the same tightly-scoped section rather than a distant chunk).
+  Second finding — the Hockey Canada dispute-conduct claim — verified
+  **TRUE** by `rules-verifier` against Hockey Canada Rule 11.1 (quoted
+  directly from `sources/hc_layout.txt`) and **propagated** into the body's
+  "What gets you a penalty" list, the Overview, Common Mistakes and Key
+  Takeaway 5, which previously stated only the NHL-scoped version as though
+  it were universal.
+- [x] **DONE, 18 September — a second sampled batch (9 more documents,
+  disjoint from the first), fully clean.** `defender.md`, `winger.md`,
+  `skating.md`, `shooting.md`, `breakouts.md`, `zone_entries.md`,
+  `equipment.md`, `getting_started.md`, and `scanning_and_anticipation.md`
+  all showed full layer consistency — every Key Focus claim matched its
+  Common Mistakes and Key Takeaways restatement, including the Berg et al.
+  scanning-study figures (2,545 receptions, 88 professionals, 78.8%/70.1%,
+  with the authors' own yes/no-not-frequency caveat preserved everywhere) —
+  the exact study `review_history.md` flags as previously downloaded twice
+  and never opened. A `md_to_speech.py` spot-check on 8 of the 9 documents
+  found two benign "Verification note:" paragraph deletions (the renderer's
+  documented behaviour), both confirmed non-destructive — the substantive
+  instruction survives in the preceding spoken paragraph in both cases.
+  **18 of 39 documents now checked; a third batch (9 more, different
+  directories) is running.**
+- [ ] 21 of 39 documents remain unchecked by this method after two clean
+  batches and one batch with two (now-fixed) findings. **Genuinely still
+  open**: completing the remaining coverage, and — separately, never
+  attempted by any pass so far — cross-document (not just intra-document)
+  consistency between two different documents' Key focus sections.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
