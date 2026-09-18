@@ -3211,6 +3211,45 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   `PODCAST_AUTOMATION_LOCAL.md`; do not make batch generation part of the
   readability release gate unless pilot audio is being regenerated.
 
+## ⚠️⚠️ ATTRIBUTION DRIFT, FOUND IN THE WILD — IIHF 69.3 IS NOT THE NHL'S 69.3, AND 22 SITES SAY IT IS
+
+**Found 18 September by an agent that read both books rather than one.** Verified by
+the coordinator directly:
+
+| Book | Opening limb |
+|---|---|
+| **NHL 69.3** (`sources/nhl_rules_layout.txt:6085-6088`) | *"If an attacking player initiates **contact** with a goalkeeper, incidental or otherwise… the goal will be disallowed **(refer to Rule 69.7 for an exception)**."* |
+| **IIHF 69.3** (`sources/iihf_rules_v1.1.txt:5555-5557`) | *"If an attacking Player initiates **\"a relevant contact\"** with a goalkeeper, incidental or otherwise… the goal will be disallowed."* |
+
+**Two differences, and both matter:**
+1. ⚠️ **The IIHF gates the limb on *"a relevant contact"* — in its OWN quotation
+   marks, i.e. a DEFINED TERM — where the NHL writes plain *"contact"*.**
+2. ⚠️ **The NHL carries an exception cross-reference to Rule 69.7 that the IIHF does
+   not.**
+
+⚠️ **`grep -rn 'NHL and IIHF 69.3' content/` returns 22 sites.** The corpus
+attributes the limb jointly throughout — in facts blocks, prose and Key Takeaways,
+written across many rounds by many agents.
+
+⚠️⚠️ **THIS IS THE ATTRIBUTION-DRIFT CLASS EVERY TOOL HERE IS BLIND TO, CAUGHT IN
+THE WILD.** `check_quote_drift.py` keeps the **closest match across all sources**, so
+a string quoted correctly from the NHL and *also* credited to the IIHF **scores
+clean** — and these two texts are near-identical, which is the worst possible corpus
+for that failure. **It was found only because an agent opened both books instead of
+one.**
+
+- [ ] ⚠️ **`rules-verifier` question, corpus-wide — NOT a coordinator's to settle.**
+  Does *"a relevant contact"* **narrow** the IIHF limb against the NHL's plain
+  *"contact"*, or is it a defined term that resolves to the same thing? **And does
+  the corpus ever QUOTE the NHL's wording while crediting both books?** That second
+  one is drift outright.
+  ⚠️ **Do not sweep the 22 sites.** If the substance is equivalent, joint
+  attribution is correct and a sweep would make 22 documents worse. **Read the
+  IIHF's definition of the term first.**
+  ⚠️ **Also check whether the corpus carries the NHL's 69.7 exception cross-reference
+  anywhere** — both compressed sites in `zone_entries.md` state the void flat, and
+  that predates this round's compression. **Direction is conservative.**
+
 ## ⚠️ THE CASEBOOK CITATION FORM — the owner is right, six files carry the misleading one
 
 **Settled 18 September with evidence, not preference.** The corpus cites one USA
