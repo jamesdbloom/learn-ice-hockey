@@ -507,11 +507,34 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   instruction survives in the preceding spoken paragraph in both cases.
   **18 of 39 documents now checked; a third batch (9 more, different
   directories) is running.**
-- [ ] 21 of 39 documents remain unchecked by this method after two clean
-  batches and one batch with two (now-fixed) findings. **Genuinely still
-  open**: completing the remaining coverage, and — separately, never
-  attempted by any pass so far — cross-document (not just intra-document)
-  consistency between two different documents' Key focus sections.
+- [x] **DONE, 18 September — a third batch, also clean.** 10 documents read
+  in full (`uk_rules.md`, `language_and_glossary.md`, `defending_the_rush.md`,
+  `defensive_zone_coverage.md`, `game_management.md`, `offensive_zone_play.md`,
+  `playing_without_the_puck.md`, `center.md`, `switching_positions.md`,
+  `passing_and_receiving.md`) plus a substantial partial read of
+  `rules_primer.md` (the corpus's largest document — Key Focus, the full
+  Body-fouls section, Common Mistakes, and Key Takeaways 1–5; sections 1–3
+  and 5–10 not yet read for this purpose). No Critical or Major findings —
+  every safety caveat, rule-set scope and numeric provenance disclosure
+  checked (the IIHF 2025/26-vs-2026/27 edition ambiguity, the trapezoid
+  enforcement uncertainty, `center.md`'s Lignell et al. ice-coverage
+  correction, `offensive_zone_play.md`'s royal-road attribution caveats)
+  matched across every layer. Two Minor, non-misleading specificity gaps
+  named, not fixed (`uk_rules.md`'s WNIHL non-checking claim drops the
+  body's "at U16 and senior" qualifier from Key Focus alone). `md_to_speech.py`
+  spot-checks on 4 of the 11 documents found zero dropped verification
+  paragraphs and zero unrecognised constructs.
+  **28 of 39 documents now checked across three batches, all disjoint,
+  two real defects found total (both fixed and confirmed).**
+- [ ] 11 of 39 documents remain unchecked by this sampled method:
+  `time_and_space.md`, `puck_support_and_spacing.md`, `conditioning_and_recovery.md`,
+  `how_to_watch_hockey.md`, `mental_game.md`, `practice_and_development.md`,
+  `reading_ice_hockey_diagrams.md`, `puck_handling.md`, plus the unread 7 of
+  10 sections of `rules_primer.md` and Key Takeaways 6+ in that same
+  document. **Genuinely still open**: completing that coverage, and —
+  separately, never attempted by any pass so far — cross-document (not just
+  intra-document) consistency between two different documents' Key focus
+  sections.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
