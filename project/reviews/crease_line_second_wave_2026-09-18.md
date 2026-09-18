@@ -256,3 +256,194 @@ the out-of-scope line in the record or it did not happen."*** So:
 - **A candidate, logged not acted on:** a Common Mistakes bullet omits 625(b)'s third
   relief — a defender shoving you into the crease. **Over-conservative, and carried
   elsewhere in the same document.**
+
+---
+
+# ADDENDUM 3 — the second BLOCK, and a safety finding that was not about the crease line
+
+⚠️ **A commit gate blocked a second time. One finding was procedural and one was
+substantive, and the substantive one turned out to be about a hazard this round had
+not been looking for.**
+
+## ⚠️ I DEFERRED A FIX ON GROUNDS THAT WERE FALSE, AND THE GATE CAUGHT IT
+
+`technique/shooting.md:452`, a `Rule:` facts line at **exactly 300/300**, still gave
+an **IIHF-only reason** for an instruction its own body — changed in the same hunk
+range — had just made three-book. ⚠️ **A USA Hockey or Hockey Canada listener hearing
+that line ALONE concludes "not my book" — the exact misread this round existed to
+close.**
+
+**I recorded it as *"blocked on the section split."* That was false.** A within-cap
+fix existed: `and IIHF Rule 1.7 puts the line in the crease` →
+`and three books count that line as crease`, **300 → 296, losing nothing.**
+
+⚠️⚠️ **THAT IS THE SUBSTITUTION LESSON I HAD RECORDED TWICE THE SAME DAY — once in a
+plan row and once in a tool docstring — AND THEN FAILED TO APPLY.**
+
+**Two things the repairing agent refused, both correct:**
+- ⚠️ **The gate ALSO suggested dropping `2025/26` to free eight more characters.
+  Taking that would have reintroduced a documented defect:** `sources/README.md:137`
+  records that a bare *"IIHF Table 16"* **resolves SUCCESSFULLY against the current
+  book — to Overtime.** The edition stays.
+- ⚠️ **Naming all three books outright does not fit**, and the only way to buy the
+  characters was trimming *"obstructing the goalie's vision"* — **the table row's
+  operative condition.** It declined.
+
+⚠️ **And it deliberately named NO layer.** *"Count that line as crease"* claims
+neither rule text nor definition, **so a Note and a Glossary are not silently
+promoted to rule text by sitting beside the words *"not rule text"*.**
+
+## ⚠️ A SAFETY REVIEW THAT REFUTED THE GATE — AND FOUND SOMETHING WORSE
+
+The gate said a new paragraph left a listener with *"the permission and never the
+owner"*. **The reviewer rendered it and refuted that**: the bullet is in chunk 108,
+and **chunk 109 opens with the post/spine counterweight in full.** A `<p>` boundary
+is not a session boundary.
+
+⚠️⚠️ **THEN IT RELOCATED THE FINDING, AND THE RELOCATION IS THE ROUND'S BEST CATCH.**
+§9 *Attacking the net front* instructs a player to stand in the shot lane **four
+times** — at close range, blade out, eyes on the puck, defender on the back — and
+**`grep` over `:1050`-`:1120` returns ZERO hits for `Equipment`, `helmet`, `cage`,
+`release` or `deflect`.**
+
+⚠️ **THE SAME DOCUMENT DOES IT CORRECTLY FOR THE OTHER HALF OF THE PAIR.** §11 carries
+the identical exposure for shot **blockers** in **both** layers, with an Equipment
+pointer. **Same file. Same hazard shape. One half has it; the other did not.**
+
+**Repaired in body, Common Mistakes and Key Takeaways**, restoring the two words the
+earlier text had dropped in transit — ⚠️ ***"at close range"* and *"upright"*, the
+words that make it a hazard rather than a geometry note.**
+
+⚠️ **NO INJURY RATE WAS INVENTED.** The owner's disclosure — *"No injury rate for
+screening is published in any source held here"* — **is pointed at, not restated or
+softened.**
+
+### ⚠️ WHAT THE REPAIR COULD NOT REACH, RECORDED RATHER THAN ACCEPTED
+
+**The facts layer.** That block is at `HARD_MAX` 11; its lead line has **three
+characters left**, headroom consumed by this round's own earlier edit; and **six of
+the eleven are `Rule:` lines a cap must never evict.** ⚠️ **No merge of the six frees
+a slot without losing a rulebook limb** — the closest pair is 292 and 293 against a
+300 cap. **No line was traded, merged or shortened.**
+
+⚠️ **So a listener who hears only §9's extraction layer still gets *"Set up in the
+shot lane"* with no cost attached. THAT IS THE OPEN DEFECT THIS ROUND DID NOT CLOSE.**
+
+⚠️ **The repairing agent flagged that it ACCEPTED the no-merge finding rather than
+testing it: *"Someone should attack that premise rather than inherit it from two
+briefs running."*** **Nobody has.**
+
+## ⚠️ A SECOND DOCUMENT HAS THE SAME ASYMMETRY
+
+`positions/winger.md` carries the **blocking** cost extensively — *"head out of the
+lane"*, *"hands behind your body with the backs of the gloves out"*, the going-down
+form, when **not** to block — and **no screening cost at all**, while its `Action:`
+facts line at `:535` says *"get in the goalie's eyes"*. **Untouched. Recorded as a
+decision, not swept.**
+
+⚠️ **The census that found it is MOSTLY NOISE — 25 lines, nearly all correct:**
+glossary definitions, diagram markers, the **defensive** side of the same call,
+vocabulary scoping, a self-check question, and the owner document **where the cost
+sits in the same section.** ⚠️ **Only reading separates them. Do not sweep.**
+
+## ⚠️ A STRUCTURAL FRAGILITY NOBODY WAS WATCHING
+
+`:1078`'s referent — *"And that instruction is what makes this the hardest place on
+the ice to take contact"* — **already crosses a chunk boundary, and did before this
+round.** It works because a listener hears chunks in order. ⚠️ **It is one chunker
+change away from being split, and NOTHING CHECKS IT.**
+
+## Gates
+
+`check_links` · `check_facts` · `check_absolutes` · `check_geometry` ·
+`check_secrets` · `check_counts` — **all 0 after every agent stopped.** Build exit 0,
+chain reached `check:links`: **53 pages, 10,923 internal links, 8 bundles / 8 PDFs.**
+
+---
+
+# ADDENDUM 4 — the third BLOCK demolished a premise two briefs had carried
+
+⚠️ **The gate was asked to attack the "no room in the facts layer" premise and did.
+It was false THREE ways, and the shape of the falsity matters more than the fix.**
+
+## The premise, and why it held by accident
+
+Addendum 3 recorded that the counterweight could not reach §9's facts layer because
+the block is at `HARD_MAX` 11 and *"no merge of the six `Rule:` lines frees a slot
+without losing a rulebook limb — the closest pair is 292 and 293 against a 300 cap."*
+
+1. ⚠️⚠️ **THE CLOSEST-PAIR FIGURE WAS WRONG. The smallest pair is 216 + 273 = 489**,
+   not 292 + 293 = 585. **Both exceed the cap, so the conclusion held BY ACCIDENT** —
+   the record *"argues against a lever nobody could ever have pulled, and then treats
+   that as proof no lever exists."*
+2. ⚠️ **THE BINDING CONSTRAINT WAS NEVER THE `Rule:` LINES.** Five non-`Rule:` lines
+   sat against `MAX_COACHING_FACTS` 8. ⚠️ **The `Mindset:` line was DUPLICATED
+   VERBATIM in the body two lines below, WITH the attribution the facts line
+   lacked** — verified by the repairing agent itself: the string occurred **exactly
+   twice in the file and nowhere else in `content/`.**
+3. **A fold needed no slot at all** — a `Read:` line had 120 characters of headroom.
+
+⚠️ **The premise travelled through TWO briefs unchecked.** The repairing agent had
+warned about exactly this: *"Someone should attack that premise rather than inherit
+it from two briefs running."* **Nobody did until the gate.**
+
+## ⚠️ AND THE AGENT REJECTED THE LEVER I OFFERED
+
+It took (2) and **refused (3)**, correctly: folding the cost into a `Read:` line
+**attaches it to a different instruction**, and the line that creates the exposure
+has three characters of headroom, so making *that* line carry it would mean cutting
+~100 characters of existing content. ⚠️ **§11's model — the one I cited — is itself a
+separate line, not a fold.**
+
+**The counterweight now reaches all four layers.** No `Rule:` line touched, no
+caveat evicted, no injury rate invented.
+
+## ⚠️ IT PROVED THE REFERENT CHAIN INSTEAD OF EYEBALLING IT
+
+Addendum 3 flagged that `:1078`'s referent **already crosses a chunk boundary** and
+that **nothing checks it**. The agent **rendered HEAD's version of the file into a
+scratch content tree and diffed the chunking**: the boundary is **pre-existing, not
+created by this edit.** ⚠️ **That is a stronger method than the brief asked for, and
+it settles a fragility this record had recorded as unwatched.**
+
+## ⚠️⚠️ A SECOND FALSE PREMISE — AND THIS ONE I PROPAGATED INTO EIGHT SITES
+
+The plan recorded that USA Hockey Casebook situations are numbered **per chapter**,
+concluding the owner's *"at The Rink, Situation 4"* was the accurate form. ⚠️ **The
+gate refuted it and the primary text confirms the refutation.**
+
+`sources/usah_casebook.txt:1513-1536`:
+```
+CASEBOOK FOR THE RINK          <- the chapter
+  Rule 101 Rink
+    Situation 1
+  Rule 103 Division of Ice Surface
+    Situation 1                <- RESTARTS under each Rule
+```
+**Rules 104, 105, 107, 109 each restart at Situation 1; Rule 625 runs 1-17 and Rule
+626 restarts.**
+
+⚠️ **The "proof" was a misreading:** the *"Rule References 103(a) and 624(Note)"* sits
+**inside a situation's ANSWER**, not in the heading it is filed under.
+
+⚠️⚠️ **SO THE FORM THIS WAVE REPLACED WAS THE PRECISE ONE.** *"At The Rink, Situation
+4"* resolves **only because Rule 103 happens to be the one rule in that chapter with
+four or more situations.** ⚠️ **And the corpus already knew — the same diff writes
+*"Rule 625, Situation 10"* three lines away, unremarked.**
+
+**Eight sites were converted on the false premise.** ⚠️ **Nothing is misstated and no
+reader is misled — both forms resolve** — but the premise **was recorded as settled**
+and would have been quoted by whoever ran the sweep. **The plan row now reverses the
+propagation direction and tells the next reader to verify against the primary text,
+because that file has asserted it both ways and one was wrong.**
+
+## Left open, deliberately
+`## Check yourself` question 11 says nothing about the exposure. ⚠️ **The agent judged
+it NOT the same defect — *"it is a recall prompt, not an instruction, so it does not
+state the screening instruction naked"* — and flagged it rather than fixing it out of
+scope.** Correct: an instruction without its cost is a defect; **a question that does
+not supply its own answer is doing its job.**
+
+## Gates
+All six **0** after every agent stopped. Build exit 0, chain reached `check:links`:
+**53 pages, 10,923 internal links, 8 bundles / 8 PDFs.**

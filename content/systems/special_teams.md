@@ -1026,7 +1026,7 @@ Your goaltender is a full participant in both special teams, not a bystander. **
 
 ```facts
 Rule: NHL and IIHF 69.1 name positioning as well as contact, but under a "should be disallowed only if" ceiling — the sentence that actually disallows a goal reaches an attacker who "enters the goal crease", and 69.4, the rule for outside it, reaches contact only
-Rule: USA Hockey 625(b) runs no such test — a flat position bar with three carve-outs: no goal with an attacking player in the crease whoever scored, unless the puck got there first, a defender's interference put them there, or the goalie is out of the crease area — and that last one is only half a rule
+Rule: USA Hockey 625(b) runs no impairment test — a flat position bar with three carve-outs: no goal with an attacker in the crease whoever scored, unless the puck got there first, a defender's interference put them there, or the goalie is out of the crease area — and that last one is only half a rule
 Rule: The goalie-out limb of USA Hockey 625(b) is only half a rule — its Casebook, at Rule 625, Situation 9, disallows the goal and adds an interference penalty where the goalie is returning to the crease and the attacker prevents them making a play
 Rule: The shoved-into-the-crease relief answers only for your position — USA Hockey 625(a)(8) is still a minor for physical contact, by stick or body, that interferes with the goalkeeper's movement, so it is no licence to act once you are there
 Rule: Three books protect a goalkeeper on the way back — NHL and IIHF 69.4's returning-goalkeeper clause says only "may be penalized" for "deliberate actions", USA Hockey's Casebook is mandatory; Hockey Canada writes no such clause, but its 8.5 penalises unnecessary contact anywhere on the ice

@@ -3509,13 +3509,27 @@ SETTLED and would have been quoted by whoever did the sweep.**
   first. It has now been asserted two ways in this file, and one of them was wrong.**
 
 ⚠️ **An agent holding one of the six deliberately LEFT it on the majority form**
-rather than create a three-way split mid-round. **That was the right call** — this
-wants **one propagation pass**, not six independent edits made by six agents who
-cannot see each other.
+rather than create a split mid-round.
 
-- [ ] Propagate the owner's form to all six in a single pass. ⚠️ **Do not let this be
-  done piecemeal** — a partial propagation is worse than the current consistent-wrong
-  state, because it leaves three forms instead of two.
+⚠️⚠️ **EVERYTHING ABOVE RESTS ON A PREMISE THAT IS FALSE — see the correction further
+up this row. Numbering runs PER RULE. `"Rule NNN, Situation N"` is the PRECISE form
+and the owner's is the ambiguous one.**
+
+⚠️ **AND THE "THREE FORMS" REASONING BELOW WAS ALSO WRONG. A commit gate measured it:
+THERE ARE TWO FORMS, NOT THREE.** The precise form is used **368 times across 30
+files**; before this round the ambiguous form existed at **exactly ONE real site —
+`rink_map.md:188`, the owner.** ⚠️ **This wave took it from 1 site to 9 and overwrote
+two correct citations.** **So fixing the eight would leave ONE residual site —
+strictly FEWER than deferring, not more.**
+
+- [ ] **Revert the eight converted sites to `"Rule NNN, Situation N"`, and bring the
+  owner to it too.** ⚠️ **This is NON-BLOCKING, and the real reasons are the gate's,
+  not the ones originally given here:** the locator **resolves uniquely** either way,
+  **both trailer sites carry *"Rule Reference 103(b)"* inside the quoted answer
+  itself**, and ⚠️ **an eight-site edit across long prose sentences has a MEASURED
+  history in this repository of introducing worse than it fixes.**
+  ⚠️ **Verify the per-rule numbering against `sources/usah_casebook.txt:1513-1575`
+  yourself before touching anything** — this row has asserted it both ways.
 
 ## ⚠️ THE DIAGRAM LAYER ALREADY CARRIES THE CREASE-LINE CLAIM AND NOBODY HAS CHECKED ITS ORDERING
 
