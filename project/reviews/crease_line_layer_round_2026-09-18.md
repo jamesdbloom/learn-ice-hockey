@@ -165,3 +165,100 @@ style guide relies on. **Open; `rink_map.md` was in no agent's file set this rou
   clean. ⚠️ And the **IIHF prints `"significant position"` inside its own quotation
   marks where the NHL does not**, so a copy-paste of the NHL string attributed to
   both books would pass every tool.
+
+---
+
+# ADDENDUM — findings enumerated, after a commit-gate BLOCK
+
+⚠️ **The record above gave COUNTS where the gate needed NAMES.** It said *"2
+criticals, 2 majors"* and *"1 critical, 3 majors"*, which is not enough to apply
+**C11's terminating rule**: whether each repair was *confined to its finding,
+re-derived from primary text and recorded* (clearance survives) or *moved, merged,
+split or renumbered* text (clearance void). **A reviewer's clearance is only as
+current as the text it read.** This addendum fixes that, and records what the gate
+found that this round had missed.
+
+## The gate's blocking findings — what the record got WRONG
+
+⚠️⚠️ **THE WHOLE-CORPUS DIFF IN THE RECORD ABOVE WAS WRONG, AND IT WAS MINE.** It
+says the eight documents were consistent. They were not:
+
+- `rules_primer.md:995` and `:1139` still carried the flat *"only the NHL leaves it
+  unsaid"*. ⚠️ **`:995` was followed IN THE SAME SPOKEN CHUNK by *"The NHL and the
+  IIHF allow the screen on the line at 5E above."*** The NHL leaves it unsaid, and
+  the NHL allows it — **the identical self-contradiction this round was dispatched
+  to remove, repaired at the two-book error and left standing at the "unsaid"
+  clause.**
+- `offensive_zone_play.md:1127` — the same, **inside the line the repair rewrote.**
+- `language_and_glossary.md:327` (**the vocabulary owner**) and `time_and_space.md:615`
+  (**a Key Takeaway with no counterweight anywhere in its file**) — ⚠️ **both
+  OUTSIDE the round's diff, so a diff of changed documents could not see them by
+  construction.** The record's *"what this could not have found"* named only
+  `rink_map.md`.
+
+⚠️ **My heuristic checked whether a table caveat appeared within two lines. It did —
+alongside the flat clause, which still stood.** Proximity is not correction.
+
+## Repairs, enumerated — for C11
+
+| # | File | Finding | Repair shape |
+|---|---|---|---|
+| 1 | `zone_entries.md` | boundary absent from middle-drive facts block | **confined** — block edit |
+| 2 | `zone_entries.md` | consequence stated as lost goal, contact limb absent | **structural** — 4 layers |
+| 3 | `zone_entries.md` | IIHF split attributed to NHL alone | **confined** |
+| 4 | `zone_entries.md` | 2 of ≥5 net-drive instructions reached | **structural** — new `Rule:` fact |
+| 5 | `body_contact_and_battles.md` | give-ground duty absent from all 5 layers | ⚠️ **structural — and INCOMPLETE, see below** |
+| 6 | `body_contact_and_battles.md` | *"the NHL leaves it unsaid"* wrong in 3 layers | **confined** |
+| 7 | `body_contact_and_battles.md` | cost never stated | **confined** |
+| 8 | `body_contact_and_battles.md` | quotation read as permission to enter the crease | **confined** — framing only, quote untouched |
+| 9 | `rules_primer.md` | KT9 headline contradicted its own chunk | **structural** — headline rewritten |
+| 10 | `rules_primer.md` | `:734`, `:720` closing instructions pre-repair form | **confined** ×2 |
+| 11 | `rules_primer.md` | `:995` opener used the narrower qualifier | **confined** |
+| 12 | `offensive_zone_play.md` | KT5 named two books | **confined** |
+| 13 | `rink_map.md` (**owner**) | flat form at `:18`, `:186`, `:188`, `:570` | **confined** ×4 |
+| 14 | `special_teams.md` | three phrasings in one document | **confined** ×2 |
+| 15 | `language_and_glossary.md` | vocabulary owner less precise than dependants | **confined** |
+| 16 | `time_and_space.md` | KT9 flat, no counterweight in file | **confined** |
+| 17 | `playing_without_the_puck.md` + `winger.md` + `zone_entries.md` | *"three books' rule text"* — wrong LAYER | **confined** ×5 |
+| 18 | `defensive_zone_coverage.md` + `special_teams.md` | bare IIHF table number, no edition | **confined** ×2 |
+
+⚠️ **Repairs 2, 4, 5 and 9 are structural, so their reviewers' clearance does NOT
+carry to the final text.** 2 and 4 were re-reviewed by `facts-reviewer`; **5 and 9
+were not re-reviewed after their last edit.**
+
+## ⚠️ STILL OPEN — this round does not clear
+
+**CRITICAL, from `facts-reviewer`: repair 5 is incomplete and the cap is why.**
+`body_contact_and_battles.md` §9 is at `HARD_MAX` 11, so the give-ground duty could
+not be added as a `Rule:` fact and was folded into a `Technique:` line **with no rule
+number, no book and no penalty.** NHL 69.3 is mandatory (*"will receive a minor
+penalty"*). ⚠️ **Voiced alone it is a coaching preference. Following the facts layer
+alone earns a penalty.**
+
+Plus three majors — *"privileged area"* dropped from three `zone_entries.md` facts;
+Hockey Canada 8.5(b) absent from two **section bodies**; and
+`playing_without_the_puck.md:588`, the only crease-line fact in the corpus ending
+permissive with no instruction. **All detailed in `project/plans/OPEN_ITEMS.md`.**
+
+## ⚠️ DIMENSIONS STILL UNCOVERED
+
+- **D15 / C10** — `site-reviewer` dispatched, **not yet reported**.
+- **D4, D5** — no new external URLs in the diff. **Declared OUT OF SCOPE**, which the
+  gate required be *written* rather than assumed.
+- **The 55 layer-attribution candidates** — census run, crease-line repaired,
+  **remainder explicitly unverified.**
+
+## What this addendum still could not establish
+
+⚠️ **`facts-reviewer` stated its own blind spot and it is the one that matters:**
+*"Nothing I did tests the facts layer against the RULEBOOKS; it tests it against the
+BODIES, and where a body is short the block inherits the shortness and I call it
+traceable."* **A section whose body omits a rule set's harsher answer, in a document
+whose summary layer also omits it, passes clean.** It found the Hockey Canada gap
+only because that document's Key Takeaways happened to carry it.
+
+⚠️ **And the dispatcher was refuted FIVE times** — a wrong cause, a wrong line, a
+wrong cap told to five agents, a wrong count, and a wrong *"left unchanged"*. **Every
+one was a locator, a count or a constraint; none was the substance. Every one was
+caught by the agent that had actually read the file.** The briefs remain more
+defective than the corpus.
