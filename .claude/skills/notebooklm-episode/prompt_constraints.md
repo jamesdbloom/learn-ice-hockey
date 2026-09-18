@@ -175,20 +175,47 @@ or confidence, **these win**.
    into it is not — "imagine skating that distance" is fine, "that's about six
    or seven feet" is not, unless the source states six or seven feet.
 
-   **This directly overrides several instructions in the teaching prompt
-   below**, the same way constraint 7 already overrides its "situations where
-   it does not apply" and "challenge assumptions" instructions for safety
-   absolutes. That prompt also asks you to "explain why it matters," "predict
-   what a learner might find confusing," "discuss how an expert would think
-   about the topic," and add "real-world examples" for every concept — good
-   instructions for teaching, and exactly the instructions that produce an
-   invented rationale, an invented illustrative number, or an invented
-   "what's covered elsewhere" claim when followed past what the source
-   actually gives you. Elaboration must connect facts already in the source
-   to each other; it must never add a new one. When you feel the pull to
-   explain *why* a rule exists, or to make a concept vivid with a concrete
-   number, and the source does not give you that reason or that number, say
-   the rule and stop — an accurate gap is better than a fabricated bridge.
+   **⚠️ THIS OVERRIDES THE TEACHING PROMPT NARROWLY, AT THE POINT OF A
+   SPECIFIC INVENTED FACT — AND NOWHERE ELSE.** An earlier version of this
+   passage said this constraint "directly overrides several instructions in
+   the teaching prompt" and then listed four of them ("explain why it
+   matters," "predict what a learner might find confusing," "discuss how an
+   expert would think about the topic," "real-world examples") as though
+   those instructions were themselves the problem. **That framing was wrong
+   and it did measurable damage**: a generation that read it produced an
+   18-minute episode where the previous attempt ran 43, having concluded
+   that teaching deeply was itself risky. **Keep following every one of
+   those four instructions, in full, throughout the episode.** They are what
+   makes the episode worth listening to.
+
+   The override bites at one specific moment only: **when carrying out a
+   teaching instruction would require you to state a fact the source does
+   not contain.** At that moment — and only that moment — you say the
+   sourced part and stop, rather than bridging the gap with an invention.
+   You do not skip the segment, shorten the discussion, or drop the
+   teaching instruction generally.
+
+   Worked examples of the narrow override:
+   - Asked to "explain why it matters" and the source gives a reason → give
+     the source's reason, at length, more than once.
+   - Asked to "explain why it matters" and the source gives no reason →
+     explain what the rule *requires of the listener* and what happens if
+     they get it wrong, both of which the source does give — do not invent a
+     historical or physiological rationale. Still spend the time.
+   - Asked for a "real-world example" and the source has one → use it, walk
+     through it step by step, come back to it later.
+   - Asked for a "real-world example" and the source has none → build the
+     example out of a situation the source *does* describe, without adding
+     new specifics (no invented speed, distance, player or date). Still give
+     the listener a concrete scenario to hang the idea on.
+
+   Elaboration must connect facts already in the source to each other —
+   **and doing that is actively wanted, not merely tolerated.** When you
+   feel the pull to explain *why* a rule exists, or to make a concept vivid
+   with a concrete number, and the source does not give you that reason or
+   that number, say the rule and stop *on that one point* — an accurate gap
+   is better than a fabricated bridge — then keep teaching everything around
+   it.
 
 10. **A validation retry of this pipeline, run 18 September 2026 after
     constraint 9 was written, confirmed constraint 9 works ONLY on the exact
@@ -284,6 +311,54 @@ or confidence, **these win**.
     says outright that no governing body issues a puck-support distance
     standard, and gives none) — never to supply an illustrative one of your
     own, hypothetical or not, "for example" or otherwise.
+
+12. **⚠️ WHAT THESE CONSTRAINTS DO NOT TOUCH — read this before you cut
+    anything, because the previous version of this file caused a real
+    problem by not saying it.** Constraints 9, 10 and 11 forbid adding new
+    FACTS. They say nothing whatever against **length, depth, repetition or
+    teaching structure**, and they must never be used as a reason to make an
+    episode shorter, thinner, or more clipped.
+
+    A generation on `core_principles.md` under the constraints above came
+    back at **18 minutes against the previous attempt's 43** — it had
+    correctly stopped inventing, and then wrongly also stopped teaching. That
+    is a failure, not a success. **The target is a long, detailed,
+    deliberately repetitive teaching episode that happens to contain only
+    sourced facts** — not a short accurate one.
+
+    So, explicitly, all of the following are **REQUIRED**, and none of them
+    is ever a violation of any constraint in this document:
+
+    - **Repeating a fact that is in the source, many times, in different
+      words.** Repetition is the single most important thing an audio
+      teaching episode does. Saying a sourced fact five times across an
+      episode is five times correct, not four times redundant.
+    - **Gradual disclosure** — introducing a concept simply, then adding a
+      layer, then adding the exception, then adding the cross-book
+      difference, then tying it back. Build the same idea up in passes
+      rather than dumping it once and moving on.
+    - **Summarising and recapping** — mid-episode recaps, end-of-section
+      summaries, a full synthesis at the end, and the teaching prompt's "if
+      you only remember ten things" list. Restating source content in
+      compressed form is not adding anything; it is the point.
+    - **Retrieval questions between the hosts** — "what should we remember
+      here?", "why does that matter?", "how does this connect to what we
+      said earlier?" — answered from the source.
+    - **Connecting two facts that are both already in the source**, and
+      saying plainly that they connect. Constraint 10's "elaboration must
+      connect facts already in the source to each other" is a permission, not
+      just a limit — take it.
+    - **Spending real time on each section.** If the source document has ten
+      sections, the episode covers ten sections properly, in order, at
+      length. Do not summarise the whole document in one pass and stop.
+
+    **The correct response to "I have nothing new to add here" is to teach
+    what is already there more thoroughly — another angle, another
+    restatement, another worked connection between two sourced facts, a
+    recap — NOT to end the segment early.** An episode that is long,
+    repetitive, well-structured and contains only sourced facts is exactly
+    the goal. An episode that is short because it was afraid to say anything
+    is a failure of this pipeline just as surely as a fabrication is.
 
 If a source passage is genuinely ambiguous, say so on air rather than picking
 the confident reading. "The sources are careful to say this depends on your
