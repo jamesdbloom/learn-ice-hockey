@@ -3211,6 +3211,66 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   `PODCAST_AUTOMATION_LOCAL.md`; do not make batch generation part of the
   readability release gate unless pilot audio is being regenerated.
 
+## ⚠️⚠️ THE CAP IS THE CORPUS'S BINDING CONSTRAINT — 107 BLOCKS ARE FULL, AND IT IS NOW CAUSING DEFECTS
+
+**Measured 18 September 2026 after a `facts-reviewer` traced FIVE of its SIX majors to
+one cause.** ⚠️ **Run the census rather than quoting these — they move with every
+edit:**
+
+```bash
+python3 scripts/check_facts.py --near        # lines near their character cap
+# and for blocks at HARD_MAX, the census in this row's commit message
+```
+
+**What it showed:** **107 of 839 facts blocks — 13% — sit at `HARD_MAX` 11.** Twelve
+in one document. **And 253 facts lines are within six characters of their character
+cap, eight AT it.**
+
+### ⚠️ THIS IS NO LONGER A TIDINESS ISSUE. IT IS PRODUCING DEFECTS, AND THE REVIEWER TRACED THE MECHANISM
+
+Every net-front block a crease-line correction needed to reach was **at the cap**. So
+the correction *went somewhere else*, three different ways — **each a separate major
+in the same review**:
+
+1. ⚠️ **SIDEWAYS, into a section whose body does not support it.**
+   `positions/center.md:367` — a new `Rule:` fact whose every source sentence lives
+   in the `####` subsection **below** it. **The `####` block was at 11, so the fact
+   went next door.** ⚠️ **That is `extract-never-author` violated by a cap, not by an
+   author.**
+2. ⚠️ **AHEAD OF ITS BODY.** `technique/shooting.md:486` states three books where its
+   own section body still closes *"get your feet out of the blue"* — **the blue, not
+   the red line.** ⚠️ **The FACT is right and the BODY is the stale layer** — the
+   inverse of the usual propagation failure.
+3. ⚠️ **NOT AT ALL.** `technique/shooting.md:452` still attributes the reading to the
+   IIHF alone while the body four lines below now names three books. ⚠️ **It is at
+   300/300 in an 11-fact block: it could not be widened and could not be split. The
+   propagation stopped because there was no room — the mechanism, not an oversight.**
+
+**And a fourth shape: the cap EVICTS.** `center.md:389` paid for its new crease-line
+clause with **93 characters of penalty caveat** — *"Under USA Hockey a shove in
+relieves your position only, not touching the goalie and not what you do next"*.
+⚠️ **The substance survives in abstract form two lines below, so a reader is left
+with a vaguer true statement rather than a false one** — which is why it is a major
+and not a critical. **But nothing saw the trade except the reviewer.**
+
+### The remedy exists and has never been applied
+
+`project/content_style_guide.md` already prescribes it: **split the section, on the
+seam the body already uses, not on rule-set lines.** ⚠️ **And the anchor cost was
+measured, not assumed: `grep -rn 'attacking-the-net-front'` across the repo
+(excluding `.git`, `node_modules`, `dist`) returned ZERO hits.** No document, no site
+source, no script references it.
+
+- [ ] ⚠️ **COORDINATOR DECISION, TAKEN: the section splits are now the critical path,
+  not a nicety.** Until they happen, **the next correction to this material will fail
+  the same three ways** — and that is the reviewer's own prediction, not a guess.
+  **Start with the six net-front blocks the crease-line wave could not reach.**
+  ⚠️ **A split moves a heading and its anchors, so `check_links.py` and every inbound
+  cross-reference are in scope** — but the anchor census says the cost is near zero.
+  ⚠️ **Do NOT raise `HARD_MAX`.** The cap is doing its job: **a full block is evidence
+  the SECTION is doing two jobs**, and 13% of blocks being full is evidence about the
+  corpus's structure, not about the number 11.
+
 ## ⚠️⚠️ ATTRIBUTION DRIFT, FOUND IN THE WILD — IIHF 69.3 IS NOT THE NHL'S 69.3, AND 22 SITES SAY IT IS
 
 **Found 18 September by an agent that read both books rather than one.** Verified by
