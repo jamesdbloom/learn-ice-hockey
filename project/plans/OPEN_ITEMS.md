@@ -1936,6 +1936,53 @@ body that was read contained a defect.**
 
 #### ✅ Census that CLEARED a worry — recorded so nobody re-runs it
 
+**Second census, 18 September — the two-book form was down to ONE line, and a
+sweep would have caused damage.**
+
+`offensive_zone_play.md:1127` (Key Takeaway 5) was the **only surviving two-book
+crease-line form anywhere in `content/`**. Every other layer already carried the
+three-book version — `rink_map.md:18`/`:357`, `shooting.md:293`/`:452`/`:477`,
+`winger.md:536`/`:748`, `playing_without_the_puck.md:585`/`:926`,
+`body_contact_and_battles.md:1068`, and `offensive_zone_play.md`'s own `:538` and
+`:553`. **Propagation had reached every layer but one: body ✓, facts ✓, summary ✗**
+— which is the shape the reviewer predicted. Fixed 18 September.
+
+⚠️⚠️ **THREE HITS LOOK LIKE THE SAME DEFECT AND ARE NOT. A SWEEP WOULD HAVE
+DAMAGED ALL THREE.** `center.md:408`, `special_teams.md:1108` and
+`offensive_zone_play.md:614` name USA Hockey without the IIHF because each is
+**correctly scoped to a single book** — a passage discussing one book naming one
+book is right. This is the `check_rule_scope.py` lesson restated: a tool that
+ranked these and offered to fix them is how round 44 manufactured a divergence
+that did not exist.
+
+#### ⚠️ A BRIEF OF MINE WAS WRONG AGAIN, AND THE AGENT CAUGHT IT
+
+I told the agent that `offensive_zone_play.md:563` carried the NHL/IIHF *"significant
+position … more than an instantaneous period of time"* narrowing. **It does not.**
+`:563` is the Table 14 / Situation 6 D **penalty-disagreement** paragraph. The
+narrowing lives at **`:557` (body), `:535` (facts), `:565` (blockquote), `:1062`
+(Common Mistakes) and `:1127` (Key Takeaway)** — five layers, none of them `:563`.
+
+**Anyone propagating that narrowing must be given those five, not `:563`.** The
+narrowing itself was verified correct against `sources/nhl_rules_layout.txt:6100-6107`
+and the IIHF equivalents — **do not change it.**
+
+⚠️ **One typographic hazard for whoever propagates it:** the **IIHF prints
+`"significant position"` inside its own quotation marks and the NHL does not.** The
+corpus never quotes the IIHF's version, so nothing has drifted — but a copy-paste of
+the NHL string attributed to **both** books is exactly the shape
+`check_quote_drift.py` cannot see, because it keeps the closest match across all
+sources and is blind to attribution drift.
+
+- [ ] ⚠️ **Nobody has measured when a spoken Key Takeaway stops being a takeaway.**
+  Takeaway 5 in `offensive_zone_play.md` was already the longest in that document
+  and the fix added roughly eighty words. **Every mechanical gate passes on that and
+  none of them can see it.** `check_chunk_splits.py` and `check_chunk_tails.py`
+  measure splits and tails, not whether a summary item has grown past the point of
+  summarising. **Acceptance:** a chunk-length census of the summary layers, with a
+  stated threshold, or a recorded decision that no threshold is wanted.
+
+
 The verifier could not reach whether the *"USA Hockey's and Hockey Canada's rather
 than the NHL's or the IIHF's"* flattening had propagated before today. **It had
 not.** A corpus-wide grep finds the formulation in `rules_primer.md` only, now
