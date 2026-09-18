@@ -3211,6 +3211,53 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   `PODCAST_AUTOMATION_LOCAL.md`; do not make batch generation part of the
   readability release gate unless pilot audio is being regenerated.
 
+## ⚠️ THE CASEBOOK CITATION FORM — the owner is right, six files carry the misleading one
+
+**Settled 18 September with evidence, not preference.** The corpus cites one USA
+Hockey Casebook situation two ways:
+
+- **`"Rule 103, Situation 4"`** — `rules_primer.md`, `shooting.md`, `center.md`,
+  `winger.md`, `special_teams.md`, `zone_entries.md` (**6 files**)
+- **`"at *The Rink*, Situation 4"`** — `rink_map.md`, `language_and_glossary.md`
+  (**2 files — and `rink_map.md` is the OWNER**)
+
+⚠️ **The owner's form is the accurate one, and here is the proof.** Casebook
+situation numbering runs **per CHAPTER, not per rule**: the running header at
+`sources/usah_casebook.txt` ~`:1571` is *"Casebook – The Rink"*, and **Situation 2 in
+that same chapter cites *"Rule Reference 103(a) and 624 (Note)"* — two different
+rules.** ⚠️ **A per-rule numbering could not do that.** So *"Rule 103, Situation 4"*
+wrongly implies *"the fourth situation under Rule 103"*, which is not what the
+number means.
+
+⚠️ **An agent holding one of the six deliberately LEFT it on the majority form**
+rather than create a three-way split mid-round. **That was the right call** — this
+wants **one propagation pass**, not six independent edits made by six agents who
+cannot see each other.
+
+- [ ] Propagate the owner's form to all six in a single pass. ⚠️ **Do not let this be
+  done piecemeal** — a partial propagation is worse than the current consistent-wrong
+  state, because it leaves three forms instead of two.
+
+## ⚠️ THE DIAGRAM LAYER ALREADY CARRIES THE CREASE-LINE CLAIM AND NOBODY HAS CHECKED ITS ORDERING
+
+Found while reading rendered speech for `center.md`: the `oz-net-front-screen`
+**describe** text and its **caption** already state the claim — including *"the
+IIHF's own appendix table allows the goal to a screener planted on the line: the
+same play answered in opposite directions inside one book"*.
+
+⚠️ **Whether those need the same lead-with-the-instruction ordering that
+`center.md:369` just got is UNCHECKED.** That line was reordered because, voiced
+alone, it ended on the permission — **and a caption is voiced alone too.**
+
+⚠️⚠️ **AND `check_absolutes.py` CANNOT SETTLE IT.** It reads `diagrams.json`, the
+**build product**, so a clean run certifies whatever was last built rather than what
+is in `site/src/diagrams/*.mjs` today. **A caption edited this round and not rebuilt
+is invisible to it.**
+
+- [ ] Layer-test the diagram captions and `describe` text for the crease-line claim,
+  as the spoken layer they are. ⚠️ **Run `node site/scripts/build-diagrams.mjs`
+  first** or the check certifies stale text.
+
 ## ⚠️ RULES REVIEW OF THE 18 SEPTEMBER REPAIR WAVE — the correction is right, three things are not
 
 **The headline is CONFIRMED.** `shooting.md`'s bolded Overview claim was wrong and
