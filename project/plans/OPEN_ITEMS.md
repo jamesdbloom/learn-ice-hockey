@@ -808,11 +808,29 @@ waived**.
 - [x] **NOT APPLICABLE, correctly.** No diagrams were touched by this wave.
   `rink_map.md`'s dedicated value audit remains explicitly deferred per
   `READABILITY_AND_DUAL_AUDIENCE.md`, unchanged.
-- [ ] ⚠️ **NOT DONE — the clearest remaining measurement gap.** No
-  before/after primary-path word/minute/heading/click/first-action-distance
-  measurement was run for the Key Focus wave, though
-  `check_readability_census.py` exists to do exactly this. **Genuinely open
-  and actionable.**
+- [x] **PARTIALLY DONE, 18 September — the word/opener half of this
+  measurement now has a real before/after, run against `check_readability_census.py`
+  itself rather than eyeballed.** A temporary git worktree at
+  `09a7d40~1` (`2518476`, the commit immediately before the rollout) let the
+  same tool run on both revisions:
+  - **Prose words:** 1,103,758 → 1,117,108 across the same 39 documents
+    (+13,350, ~342 words/document average — consistent with a short Key
+    Focus section added to each, not a wholesale rewrite).
+  - **Diagram-marker openers:** 2 documents opened cold on a diagram marker
+    with zero prose before it, pre-rollout; **0 do now** — the rollout put
+    Key Focus first in both, closing a real readability defect this same
+    tool was built to catch, as a side effect of the wave rather than a
+    targeted fix.
+  - **Marker count/placement:** unchanged (331 across 32 documents,
+    identical before and after) — expected, since Key Focus sections don't
+    touch diagrams.
+  **What this does NOT close**: minute (reading-time), click, and
+  first-action-distance are not things `check_readability_census.py`
+  measures at all — those need either a differently-built tool or the
+  task-based human testing this plan's own acceptance gate already requires
+  (Workstream 1C) and which no proxy measurement can substitute for. The
+  word/opener half was the part actually reproducible from git history
+  without a human tester; that part is now done.
 - [x] **PARTIALLY DONE.** Rules-verifier ✓ (3 more flattened-rule instances
   found, fixed), safety-reviewer ✓ (2 defects fixed, 1 pre-existing found and
   fixed), content/house-style ✓ (1 Major, 2 Minor, fixed). ⚠️ **Facts-reviewer
