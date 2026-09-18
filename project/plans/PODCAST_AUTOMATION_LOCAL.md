@@ -1,5 +1,139 @@
 # Local-only NotebookLM podcast automation plan
 
+## ⚠️⚠️ DIRECTION SET BY THE OWNER, 18 September 2026 — SINGLE VOICE, and a rule-citation policy by document
+
+**This supersedes the two-speaker assumption everywhere below it.** Recorded in the
+owner's own terms:
+
+> *"perhaps we can make the podcast only a single speaker as I assume that will make
+> the quality automatically better and the value to two people talking against each
+> other doesn't seem high enough, we can invest time more in the script generation
+> then to make it as natural and easy to listen to as possible"*
+
+### What single voice changes, and it is more than the voice count
+
+1. ⚠️ **THE MULTI-SPEAKER REQUIREMENT DISAPPEARS, AND WITH IT THE ENGINE
+   BOTTLENECK.** The survey below narrowed to three engines *only because* they can
+   return a conversation in one call. **That constraint is gone.** Single-voice TTS
+   is the whole market: Polly generative, Google Chirp 3 HD, Gemini-TTS, ElevenLabs,
+   and **OpenAI — which has no multi-speaker TTS at all and was excluded for that
+   reason alone.** OpenAI is now back in contention, and its `instructions`
+   parameter (tone, pacing, delivery) is something **no other engine here exposes.**
+2. ⚠️ **THE TURN-BOUNDARY PROSODY PROBLEM GOES AWAY.** Stitching separately
+   synthesised turns gives no shared prosody across the join — the most likely cause
+   of the "electronic, not easy to listen to" quality of earlier attempts. **A single
+   narrator has no joins.**
+3. ⚠️⚠️ **THE EXISTING PIPELINE ALREADY DOES THIS.** `scripts/md_to_speech.py` is
+   4,619 lines of graded pause hierarchy, 63 notation rules, acronym handling and
+   Polly-limit chunking, and it takes `--content <dir>` — **so it can synthesise a
+   directory of single-voice scripts with no new synthesis path at all.** The
+   engineering risk of scripting our own collapses to *writing* the scripts.
+4. **Cost falls slightly.** A single-voice script carries no dialogue scaffolding
+   (*"that's right, Amy"*), so it should run **at or below** source length rather
+   than the 1.2x assumed for dialogue. All three formats at 1.0x: **~$220 Polly
+   generative, ~$117 Polly neural.**
+
+### ⚠️ Rule-citation and figure policy — MEASURED, not intuited
+
+The owner's instruction:
+
+> *"if the content is about rules because it is a rink map or a rules primer then
+> quoting rule numbers is fine, but if we talking about the positions or the systems
+> content we should almost never be quoting rule numbers of figures or covering too
+> many rules unless it is absolutely key to why a player behaves in a certain way"*
+
+**Rule-and-figure density was measured across all 39 documents** (rule citations plus
+dimensional figures per 1,000 words). ⚠️ **Run the census rather than quoting these —
+they move with every content edit.** What it showed, in shape:
+
+⚠️⚠️ **THE "POSITIONS AND SYSTEMS" SPLIT DOES NOT HOLD AS A CLEAN LINE, AND THE
+EXCEPTION THE OWNER ALREADY NAMED IS EXACTLY WHERE IT BREAKS.** Four documents sit
+in the top six by density *without* being rules documents:
+
+| Document | Why it is rule-dense |
+|---|---|
+| `systems/faceoffs` | **3rd densest in the corpus.** A faceoff *is* a rules procedure — encroachment, violations, who places first |
+| `technique/body_contact_and_battles` | checking is rule-defined; the penalty tier *is* the teaching point |
+| `positions/goaltender` | crease, trapezoid, freezing the puck, interference — the position is rule-shaped |
+| `systems/game_management` | last-minute situations are rule situations |
+
+**For these four, the rule IS "absolutely key to why a player behaves in a certain
+way" — which is the owner's own stated exception.** A flat "systems and positions
+never cite rules" would gut them.
+
+**The documents where rule numbers should essentially vanish** are the genuinely
+conceptual ones — `technique/skating`, `off-the-ice/mental_game`,
+`foundation/core_principles`, `hockey-iq/puck_support_and_spacing`,
+`systems/neutral_zone_systems`, `technique/puck_handling`, `hockey-iq/time_and_space`.
+
+⚠️ **`off-the-ice/conditioning_and_recovery` is the odd one out and needs its own
+call:** it is figure-dense rather than rule-dense (sets, reps, durations). **The
+"don't quote figures" instruction bites hardest there**, and stripping them may
+remove the document's entire practical content. **Decide before scripting it.**
+
+**Policy, to be applied per script:**
+- **Cite freely:** `rink_map`, `rules_primer`, `uk_rules`.
+- **Cite only where the rule is the reason for the behaviour:** the four above.
+- **Almost never cite:** everything else. Teach the behaviour; if a rule drives it,
+  say *what happens to you*, not which numbered rule says so.
+- ⚠️ **NEVER drop a safety limb to satisfy this policy.** Non-negotiables 3 and 4
+  outrank it. A penalty consequence is not a "figure" — *"that is a major and a game
+  misconduct"* is the teaching point, not a citation to be stripped.
+
+### Structure: progressive disclosure, repetition, summarising
+
+The owner asks for *"the strict progressive disclosure and summarising technique the
+notebook lm podcast prompt tries to encourage"* — the intent behind constraint 12,
+which was written after accuracy constraints suppressed teaching depth and an episode
+collapsed from 43 minutes to 18. **Required in every script:** one idea at a time;
+restate it before building on it; a worked example after each idea; an explicit recap
+before each new layer; and a closing summary.
+
+⚠️ **A worked sample exists**: `scratchpad/tts/single.ssml` — 415 words, ~2m45s, drawn
+strictly from `hockey-iq/time_and_space.md`, carrying that document's own hedge
+(*"a way of thinking about it rather than a quantity anyone measures"*) to show the
+style handles a disclosure without breaking stride. ⚠️ **Polly's generative engine
+rejects `<emphasis>`** — it returns `InvalidSsmlException: Unsupported Generative
+feature`. Use `<break>` and paragraph structure only.
+
+## ⚠️ HOW TO ENABLE THE OTHER ENGINES — what is built, and what only the owner can do
+
+**Built and working: `scripts/tts_sample.py`.** One command synthesises the same
+script on every engine a credential exists for, and **reports the others as SKIPPED
+with the reason** rather than failing:
+
+```bash
+python3 scripts/tts_sample.py <script.txt> --out ~/Downloads/tts-compare
+```
+
+Verified 18 September: Polly synthesised, the other four correctly reported as
+missing credentials. ⚠️ **It reads keys from the ENVIRONMENT ONLY and never prints
+one.** Never pass a key as a command-line argument — it lands in shell history and in
+`ps`.
+
+### ⚠️ STEPS ONLY THE OWNER CAN TAKE — each is an account action
+
+| Engine | Minimum steps | Free tier? |
+|---|---|---|
+| **Polly** | ✅ **already working** — `AWS_PROFILE=ice-hockey`, `eu-west-2` | pay per char |
+| **OpenAI** | platform.openai.com → API keys → create → `export OPENAI_API_KEY=...` | no, but a sample costs cents |
+| **ElevenLabs** | elevenlabs.io → sign up → Profile → API key → `export ELEVENLABS_API_KEY=...` | **yes — 10k chars/month**, enough for samples |
+| **Gemini-TTS** | aistudio.google.com → Get API key → `export GOOGLE_API_KEY=...` | **yes**, generous |
+| **Chirp 3 HD** | same `GOOGLE_API_KEY`, **plus** enable *Cloud Text-to-Speech API* in the GCP console | free tier on first chars |
+
+⚠️ **`gcloud` is NOT installed on this machine and is NOT needed** — both Google
+engines are reachable with a plain API key over HTTPS, which is why the harness uses
+`urllib` rather than a vendor SDK. **Do not install the SDKs for a sample.**
+
+⚠️ **Put the keys in the shell that runs the command, not in a file in this
+repository.** `.gitignore` covers `.env`, the hook blocks credentials, and
+`check_secrets.py` scans tracked files — **but the safest version is that a key never
+enters the repository at all.** Non-negotiable: this repository is public.
+
+- [ ] Owner sets one or more keys → coordinator runs `tts_sample.py` → ear test.
+  ⚠️ **ElevenLabs and Gemini are both free for a sample, so the cheapest first move
+  is those two.**
+
 ## ⚠️ FOUR EPISODES GENERATED AND UNCOLLECTED, and the teaching-depth fix HELD
 
 **State at 09:00, 18 September 2026.** Chrome recovered after an outage of several
