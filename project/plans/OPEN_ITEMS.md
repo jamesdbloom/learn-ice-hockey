@@ -1923,6 +1923,41 @@ argument than a false claim of unanimity in rule text.
   authority of its own appendix tables**, so any sentence ranking layers is
   suspect by construction.
 
+#### ⚠️ THE LAYER-ATTRIBUTION CENSUS — 55 candidates, the corpus is mostly CAREFUL, and none of the rest is verified
+
+Run by the coordinator on 18 September after every content agent had stopped.
+Method: every `rule text` / `rule texts` mention with a multi-book word (*three,
+four, both, all, other, those*) inside a 90-character window either side.
+
+**55 windows.** The crease-line instances are repaired. ⚠️ **The remainder LOOK
+careful and are NOT verified** — recorded that way deliberately, because declaring a
+census clean on appearance is the exact mistake the coordinator made earlier the
+same day and the commit-gate caught.
+
+⚠️ **What is genuinely reassuring is that the corpus already draws this distinction
+by hand, repeatedly and unprompted:** *"appendix interpretations rather than
+operative rule text"*, *"a casebook interpretation, not rule text"*, *"take those as
+worked applications and not as rule text"*, *"read those as worked applications
+rather than rule text"*. **The crease-line failure was an outlier, not a systemic
+habit.**
+
+- [ ] Verify the multi-book rule-text claims that are **not** crease-line. The
+  checkable ones name specific rule numbers, so a `rules-verifier` can settle each:
+  `systems/defending_the_rush.md:649` and `:661`,
+  `technique/passing_and_receiving.md:418` and `:766`,
+  `systems/defensive_zone_coverage.md:588` (⚠️ **a different rule — delay of game,
+  not the crease line** — flagged by an agent as looking sound but unverified).
+  ⚠️ **Reproduce the census rather than working from this list; it goes stale.**
+
+⚠️⚠️ **THE CENSUS'S OWN LIMIT, AND IT IS THE IMPORTANT PART.** The agent that
+repaired two of these files found the defect in **five** places, not the two its
+brief named — and **the two it did not know about were phrased differently**
+(*"in their rule text"*, *"rule texts all"*) from the string its brief gave it. **It
+only learned to look for those after reading its own files.** So this census's
+pattern set was derived from the phrasings already found, and **a document stating
+the same thing a sixth way matches nothing in it.** No tool closes that gap; only
+reading does.
+
 #### ✅ A NEGATIVE EXISTENCE CLAIM, ATTACKED RATHER THAN INHERITED
 
 An agent re-tested the corpus's *"the one place the NHL's book addresses the crease
