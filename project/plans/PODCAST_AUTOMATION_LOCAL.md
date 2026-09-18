@@ -243,6 +243,95 @@ final classification should be checked by reading, not taken off this table.
 - **Not yet decided:** whether every document gets *both* flavours, or each
   gets one. Both is more work but lets a reader choose.
 
+## TTS engine survey, 18 September 2026 — the cost objection to scripting our own podcast does not survive contact with the prices
+
+**This section exists because the direction decision above was made on the
+assumption that a scripted podcast would be expensive. It is not.** Every figure
+below was read from a vendor pricing page on 18 September 2026 and every
+character count was measured in this repository, not estimated.
+
+### Measured character counts
+
+| Corpus artefact | Characters | How measured |
+|---|---:|---|
+| Narration — the full text of all 39 documents | 6,645,269 | `md_to_speech.py` output, after the orphan prune |
+| NotebookLM v4 scripts, all 39 episodes | ~2,977,552 | extrapolated from `rink_map` v4: 10,245 dialogue words from a 21,909-word source |
+| A podcast scripted by us to **full** coverage | 6.6M – 9.3M | assumption, stated as one: dialogue restates, so it is **at least** source length and plausibly 1.4x |
+
+⚠️ **The 47% ratio is the whole point of this table.** A NotebookLM episode is
+cheap *because it is short*, and it is short *because it selects*. Any podcast
+that genuinely covers every point costs at least what narration costs, because
+it contains at least as many words. **Cost is a proxy for coverage here** — a
+podcast quoted below the narration price is telling you it left something out.
+
+### Prices, all 39 episodes
+
+| Engine | $/1M chars | NotebookLM-length | Full coverage (1.0x – 1.4x) | Narration |
+|---|---:|---:|---:|---:|
+| Polly standard | 4 | $12 | $27 – $37 | $27 |
+| Polly neural | 16 | $48 | $106 – $149 | $106 |
+| **Gemini 2.5 Flash TTS** \* | **~17.6** | **$52** | **$117 – $164** | **$117** |
+| Polly generative | 30 | $89 | $199 – $279 | $199 |
+| Google Chirp 3 HD | 30 | $89 | $199 – $279 | $199 |
+| OpenAI `tts-1-hd` | 30 | $89 | $199 – $279 | $199 |
+| Gemini 2.5 Pro TTS / 3.1 Flash TTS | ~35 | $104 | $233 – $326 | $233 |
+| ElevenLabs v3 | 100 | $298 | $665 – $930 | $665 |
+
+\* ⚠️ **Gemini is token-priced, not character-priced. The $/1M chars column for
+it is DERIVED, not quoted** — from Google's footnote *"Audio tokens correspond
+to 25 tokens per second of audio"* plus an assumed 150 words per minute. **A
+derived figure goes stale in a way a list price does not, and if the speaking
+rate assumption is wrong the whole column moves.** Anyone quoting it must quote
+the derivation with it. The list prices are $0.50 in / $10.00 per 1M audio
+tokens for 2.5 Flash TTS.
+
+### Which engines can actually do two speakers in one call
+
+Three, and only three were found:
+
+- **ElevenLabs Text to Dialogue** — Eleven v3 only. Takes an `inputs[]` array of
+  `{text, voice_id}` turns with per-turn audio tags. Docs state no speaker
+  limit; they recommend **≤2,000 characters per request**, so ~29 calls per
+  episode with turn-taking preserved inside each chunk.
+- **Google Gemini-TTS multi-speaker** — 2.5 Flash TTS, 2.5 Pro TTS, 3.1 Flash
+  TTS (Preview). **≤4,000 bytes of combined dialogue per request**; the Gemini
+  Developer API caps it at **2 speakers**, the Cloud docs state no hard limit.
+  Google's own docs warn quality *"may begin to drift"* beyond a few minutes.
+- **PlayAI PlayDialog** — purpose-built two-speaker. ⚠️ **Its ~$100/1M price is
+  from a secondary source and was NOT verified on play.ai. Do not quote it.**
+
+**OpenAI has no multi-speaker TTS** — one voice per request, so a conversation
+means synthesising each turn separately and concatenating, which is the approach
+that produced the electronic, unlistenable result the owner described. Its
+`instructions` parameter (documented for accent, emotional range, intonation,
+tone, speed) is on `gpt-4o-mini-tts` only.
+
+### NotebookLM itself is not available as an API — confirmed, and the door is closing
+
+- The **Gemini Enterprise Podcast API is deprecated**; Google *"isn't
+  allowlisting new customers."*
+- NotebookLM Enterprise's `notebooks.audioOverviews.create` is **Preview**,
+  requires Gemini Notebook Enterprise, and **generates from notebook sources,
+  not from a script you supply** — so it cannot take our text even if we had
+  access. One overview per notebook.
+
+**So there is no route to "NotebookLM quality, our script."** The browser
+workflow in this document is the only way to reach that generator, and it is the
+workflow that has produced four consecutive NO-GOs.
+
+### What this changes
+
+⚠️ **Nothing above is an ear test, and the decision is an ear decision.** No
+audio was generated for any engine in this survey; every quality statement in
+the source material is the vendor's own marketing. The `dialogue_generative_BrianAmy.mp3`
+Polly sample is the only two-speaker audio anyone here has actually heard.
+
+**Acceptance for the next step:** generate ONE episode's opening two minutes on
+**Gemini 2.5 Flash TTS multi-speaker** and on **ElevenLabs v3 Text to Dialogue**,
+from the same hand-written script, and listen to both against the Polly sample.
+The price spread between them ($117 vs $665 at full coverage) only matters if
+both clear the bar; if only one does, there is no decision to make.
+
 ## Scope decision, 17 September 2026
 
 **One episode per document, ordered by the site's own page order, `getting-started/getting_started`
