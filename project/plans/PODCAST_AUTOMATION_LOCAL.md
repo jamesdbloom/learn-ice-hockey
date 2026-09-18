@@ -120,14 +120,37 @@ Measured in tokens, so it can be priced against whatever model is chosen:
 | Output — 6 journey scripts | ~41,000 |
 | **Total output, all three formats** | **~2,166,000** |
 
-⚠️ **NO MODEL PRICE IS WRITTEN HERE, ON PURPOSE — none was verified this session,
-and a rate invented from memory is a fabrication under non-negotiable 1.** Price it
-against the chosen model's published rate at the time, and **record the rate and the
-date beside the total.**
+⚠️⚠️ **CORRECTED BY THE OWNER, 18 September 2026: SCRIPT WRITING IS NOT A DOLLAR
+COST AT ALL.** It comes out of a **fixed Claude budget that is already paid for**.
+**So it does not appear in any total, and no model price should ever be written
+here.** What it actually costs is **elapsed time, and the displacement of other
+corpus work** — the agents writing scripts are the agents that would otherwise be
+repairing content.
 
-⚠️ **This is a per-attempt cost, not a per-episode one.** A script that fails review
-costs its tokens again. Today's evidence is that review finds real defects on the
-first pass, so **budget for more than one attempt per episode.**
+**The two costs are therefore in different currencies and must never be summed:**
+
+| | Currency | Who pays |
+|---|---|---|
+| TTS synthesis | **dollars, marginal** | per character, per regeneration |
+| Script writing | **wall-clock and opportunity** | fixed budget, already committed |
+
+⚠️ **The scheduling shape, which is the thing to plan around:** 39 long + 39 short +
+6 journey = **84 scripts**. **The long-form scripts are ~92% of the script-writing
+output** — so, exactly as with the TTS bill, **adding the short and journey formats
+is nearly free in BOTH currencies** (~8% of output tokens, under 10% of dollars).
+
+⚠️ **This is a per-ATTEMPT cost, not a per-episode one.** A script that fails review
+is rewritten, and today's evidence is that review finds real defects on the first
+pass. **Budget more than one attempt per episode in TIME.**
+
+⚠️⚠️ **AND IT CREATES A SEQUENCING CONSTRAINT THAT DID NOT EXIST UNDER THE DOLLAR
+FRAMING.** The corpus is **under active repair** — six documents were edited on 18
+September alone, several of them rewritten twice in one day after review. **A script
+written against a document that then changes is a script to be rewritten**, and the
+rewrite costs time that was the whole reason to prefer this direction. **So: script
+a document only after its content has settled**, or accept the rewrite explicitly
+and say so in the plan. **Do not start the long-form batch while a review round is
+open on its documents.**
 
 ### What is NOT yet established — do not let this section imply otherwise
 
