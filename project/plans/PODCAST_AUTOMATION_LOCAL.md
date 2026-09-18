@@ -1,5 +1,155 @@
 # Local-only NotebookLM podcast automation plan
 
+## ⚠️ DIRECTION UNDER CONSIDERATION, 18 September 2026 — SCRIPT OUR OWN, and stop treating NotebookLM as the only producer
+
+**This section is the owner of the own-scripted direction. Everything below it in
+this file predates the decision and describes the NotebookLM workflow.**
+
+### Why this is on the table at all
+
+Four consecutive NotebookLM generations were NO-GO (`rink_map` v1–v4,
+`core_principles`, `on_ice_communication`). The failure mode **changed** between
+v2 and v3 — from ADDITION (invented content, catchable by reading the source) to
+**TRANSMISSION** (rules the source states correctly coming out wrong), which looks
+sourced and is only caught by a primary-rulebook grep. ⚠️ **The trapezoid/Brodeur
+fabrication recurred four times across four prompt versions.** The evidence no
+longer supports treating it as a wording problem.
+
+⚠️ **And there is no route to "NotebookLM quality, our script."** Confirmed 18
+September: the Gemini Enterprise Podcast API is deprecated and not allowlisting new
+customers, and NotebookLM Enterprise's audio-overview method generates **from
+notebook sources, not from a supplied script**. See the TTS engine survey below.
+
+### What scripting our own buys, beyond accuracy
+
+Accuracy is the reason it is being considered, but it is not the only gain:
+
+1. **Completeness becomes a choice rather than an outcome.** Measured: NotebookLM
+   episodes run at **~0.47 of source length**. They are structurally *selecting*.
+   A script we write covers what we decide it covers.
+2. **Teaching structure becomes controllable** — gradual disclosure, deliberate
+   repetition, recap and retrieval questions, in the order the corpus's own
+   pedagogy wants rather than whatever the generator produced.
+3. ⚠️ **MULTIPLE FORMATS FROM ONE CORPUS — and this is the benefit that does not
+   exist at all under NotebookLM.** A long full-coverage episode, a short
+   orientation episode, and **journey episodes that cross documents**.
+4. **Production control.** Generation is an API call, so batch size, parallelism,
+   retry and regeneration-after-a-content-fix are all ours. ⚠️ **The current
+   workflow is a human driving a browser UI with a 5000-char silent `maxLength` on
+   one field** — it cannot be parallelised and cannot be re-run cheaply.
+5. **Regeneration after a content repair stops being expensive.** This matters
+   more than it looks: the corpus is under active repair, and **six documents were
+   edited on 18 September alone**. Under the browser workflow every one of those is
+   a manual re-drive.
+
+### ⚠️ Journey episodes — the constraint that must not be broken
+
+`site/src/data/pathways.json` defines **seven pathways**, six of them non-empty:
+
+| pathway | docs |
+|---|---:|
+| `core-principles` | 1 |
+| `first-game` | 6 |
+| `new-position` | 10 |
+| `watch-and-learn` | 6 |
+| `playing-in-britain` | 8 |
+| `parent-of-a-new-player` | 3 |
+| `adult-detail` | 0 — **has no doc list; not an episode candidate as it stands** |
+
+⚠️⚠️ **DO NOT BUILD A JOURNEY EPISODE FROM `pathways.json`'s `docs` FIELD.** That
+file says in terms that its `docs` list is *"DERIVED context for search and related
+links, **never the order**"*, and that **the ordering is deliberately absent**:
+
+> *"Four of these point at the four routes in
+> `content/getting-started/getting_started.md`, which name SECTIONS rather than
+> documents, are in deliberate priority order, and carry their own caveats…
+> Copying ~90 deep anchors into site data would create a second, unreviewed copy of
+> a maintained list, would put the caveats on the wrong side of the copy, and would
+> take those anchors out of `scripts/check_links.py`'s reach. The document owns the
+> route; this file owns the door."*
+
+**So a journey episode's running order must be derived from
+`getting_started.md`'s route sections at build time, and must carry the route's own
+caveats** — that each route is in priority order, that the one-line descriptions are
+signposts rather than summaries, and that **no route replaces asking your club.**
+⚠️ **A journey script that silently reorders or de-caveats a route reproduces the
+exact defect that file was written to prevent.**
+
+### Measured cost model — TTS *and* the half nobody had costed
+
+⚠️ **Every character count below was measured in this repository on 18 September
+2026. No count is quoted from memory.** Source: 7,581,838 raw markdown characters
+across 39 documents; **6,645,269 spoken characters** after `md_to_speech` strips
+markdown, tables and the Sources trailer (ratio ≈ 0.876 — use the spoken figure for
+TTS, never the raw one).
+
+| Format | Characters | Gemini 2.5 Flash TTS \* | Polly generative | ElevenLabs v3 |
+|---|---:|---:|---:|---:|
+| Narration (full text read aloud) | 6,645,269 | $117 | $199 | $665 |
+| **Long podcast, full coverage (1.2x)** | 7,974,322 | **$140** | **$239** | **$797** |
+| Short podcast, ~15 min x 39 | 526,500 | $9 | $16 | $53 |
+| Journey episodes, ~30 min x 6 | 162,000 | $3 | $5 | $16 |
+| **Long + short + journeys** | 8,662,822 | **$152** | **$260** | **$866** |
+| Everything, incl. narration | 15,308,091 | $269 | $459 | $1,531 |
+
+\* ⚠️ **Gemini is token-priced. That column is DERIVED**, from Google's *"25 tokens
+per second of audio"* footnote plus an assumed 150 wpm — **not a list price.** If the
+speaking-rate assumption is wrong the whole column moves. Quote the derivation with
+the figure or do not quote it.
+
+⚠️⚠️ **THE SHORT AND JOURNEY FORMATS ARE ROUNDING ERRORS. This is the headline of the
+whole table.** Short-form for all 39 documents costs **$9–$16**; six journey episodes
+cost **$3–$5**. **The long-form full-coverage episode is ~94% of the bill**, because
+the only thing that actually costs money is total minutes of audio. **Deciding to
+ship three formats instead of one adds under 10% to the TTS bill.**
+
+⚠️ **And cost is a coverage measurement in disguise.** A podcast quoted materially
+below the narration price is telling you it left something out — it contains fewer
+words than the document does.
+
+#### The other half: writing the scripts
+
+TTS is not the whole cost, and every figure produced before today ignored this.
+Measured in tokens, so it can be priced against whatever model is chosen:
+
+| | Tokens |
+|---|---:|
+| Input — corpus read once, plus per-episode briefs | ~2,051,000 |
+| Output — 39 long scripts | ~1,994,000 |
+| Output — 39 short scripts | ~132,000 |
+| Output — 6 journey scripts | ~41,000 |
+| **Total output, all three formats** | **~2,166,000** |
+
+⚠️ **NO MODEL PRICE IS WRITTEN HERE, ON PURPOSE — none was verified this session,
+and a rate invented from memory is a fabrication under non-negotiable 1.** Price it
+against the chosen model's published rate at the time, and **record the rate and the
+date beside the total.**
+
+⚠️ **This is a per-attempt cost, not a per-episode one.** A script that fails review
+costs its tokens again. Today's evidence is that review finds real defects on the
+first pass, so **budget for more than one attempt per episode.**
+
+### What is NOT yet established — do not let this section imply otherwise
+
+- ⚠️ **No audio has been generated on any engine except Polly.** Every quality claim
+  about Gemini and ElevenLabs is **vendor marketing**. The only two-speaker audio
+  anyone here has heard is `dialogue_generative_BrianAmy.mp3`.
+- ⚠️ **Nobody has written a full-coverage script yet**, so the 1.2x expansion factor
+  is an **assumption**, clearly marked as one. It drives ~94% of the bill and should
+  be replaced by a measurement from the first real script.
+- **Whether a scripted podcast is actually pleasant to listen to for 60 minutes** is
+  untested and is the whole point.
+
+### Acceptance for the next step — an EAR TEST, not more research
+
+- [ ] Hand-write **one** episode's opening two minutes as a two-speaker script.
+- [ ] Synthesise it on **Gemini 2.5 Flash TTS multi-speaker** and **ElevenLabs v3
+      Text to Dialogue**, and compare both against the Polly sample.
+- [ ] ⚠️ **The $152-vs-$866 spread only matters if both clear the bar.** If only one
+      does, there is no decision to make — so listen first and cost second.
+- [ ] Measure the real script-to-source expansion factor from that script and
+      **replace the 1.2x assumption in the table above with it.**
+
 ## Scope decision, 18 September 2026 — regenerate the entire catalog, not just the gaps
 
 ⚠️ **The user's explicit decision, given the fabrication findings below: regenerate
