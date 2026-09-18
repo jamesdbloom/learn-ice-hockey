@@ -550,12 +550,29 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   corpus, though every batch flagged the same caveat: this checks a
   document's own layers against each other, not against primary rulebook
   text (rules-verifier's job) or external citations (source-verifier's job).
+- [x] **DONE, 18 September — the dedicated `safety-reviewer` pass on
+  `conditioning_and_recovery.md` came back clean.** No Critical, Major or
+  Minor safety findings. Every primary-rulebook quote checked (USA Hockey
+  604(a), Hockey Canada 7.3, IIHF 101.1, all four IHUK competition
+  regulations, CRT6's ten red flags rendered from its image-only PDF) was
+  verbatim-verified against the source on disk. The document was
+  specifically checked against `CLAUDE.md`'s own recorded past hazard for
+  this exact document — a graded return-to-sport progression's early "light
+  aerobic exercise" stage contradicting a flat activity ban — and found not
+  to recur: the current ban text is scoped to "until you have been
+  assessed," not to the later graded stage. **One item flagged for
+  `source-verifier`, not asserted as a defect**: a cited meta-analysis's
+  claimed April 2026 retraction could not be independently confirmed
+  (`sources/` holds no file for it, the paper's own page returned HTTP 403)
+  — `project/reviews/round_50_tier1_parallel_batch.md` already records this
+  citation as "cited and unrefetched" since round 50. The reviewer is
+  explicit that this does not change the document's safety verdict either
+  way, since the actual reader-facing instruction doesn't depend on the
+  retraction being true.
   **Genuinely still open, never attempted by any pass**: cross-document (not
   just intra-document) consistency between two different documents' Key
-  focus sections, and a dedicated safety-reviewer pass specifically on
-  `conditioning_and_recovery.md`, which batch 4 flagged as carrying an
-  unusual density of contact/concussion-adjacent content without having had
-  one recently.
+  focus sections, and the flagged `source-verifier` check on the Copenhagen-
+  exercise retraction citation.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
