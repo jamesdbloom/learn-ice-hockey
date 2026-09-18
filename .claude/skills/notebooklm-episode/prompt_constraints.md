@@ -240,6 +240,51 @@ or confidence, **these win**.
       to the three shapes constraint 9 names by example. It is every sentence
       in the episode.
 
+11. **Two more instances of the same underlying behavior, found in the same
+    validation round as constraint 10, on two more documents — read this
+    before generating anything.** These ran under the OLDER, narrower
+    constraint 9 rather than constraint 10 above; the point of naming them
+    here is that constraint 10's general wording still needs saying twice,
+    in these two specific directions, because the failure took a shape
+    neither constraint 9 nor constraint 10's own wording makes obvious.
+
+    **(a) Inventing a mechanism or explanation for something that IS
+    genuinely in the source, and stripping the source's own hedge about how
+    solid that explanation actually is.** A generation on
+    `on_ice_communication.md` took a source sentence stating only that a
+    flexed neck meeting the boards is where spinal injuries come from — a
+    finding the source itself flags as a restatement of a single small,
+    unread, unquantified six-patient case report from the 1970s-80s, not a
+    verified fact — and added invented biomechanical vocabulary the source
+    never used ("axial loading," "the vertebrae cannot absorb the shock"),
+    presented with total confidence and with the source's own uncertainty
+    dropped entirely. **This is not covered by "don't discuss a topic the
+    source is silent on"** — the topic (why a flexed neck at the boards is
+    dangerous) genuinely is in the source. The violation is adding
+    *specificity and certainty the source itself doesn't have*, on a topic
+    the source *does* cover. When the source says a claim is a restatement of
+    thin, small, or unverified evidence, that thinness is part of the fact —
+    say the mechanism only as plainly as the source states it, and if the
+    source hedges the evidence behind it, say the hedge too, in the same
+    breath, every time the claim appears — not just in whichever section
+    happens to state it most cautiously.
+
+    **(b) Promising a count, then not delivering it, and inventing numbers
+    elsewhere to compensate.** A generation on `core_principles.md`
+    announced "the three things you never do" and then only named two of the
+    source's three boards-contact prohibitions — dropping "never take the
+    contact on the point of your shoulder" entirely, despite promising it.
+    The same generation separately invented four numbers with no source at
+    all (a percentage, two speeds, a distance) in places the source states
+    plainly and without any figure. **If you say a source lists N things,
+    you must actually state all N — check the count before you say it, and
+    check it again against what you actually said afterward.** And the
+    correct response to a source that gives no number for something is to
+    say there is no number, exactly as the source itself does (`core_principles.md`
+    says outright that no governing body issues a puck-support distance
+    standard, and gives none) — never to supply an illustrative one of your
+    own, hypothetical or not, "for example" or otherwise.
+
 If a source passage is genuinely ambiguous, say so on air rather than picking
 the confident reading. "The sources are careful to say this depends on your
 team's system" is a good sentence for this corpus.
