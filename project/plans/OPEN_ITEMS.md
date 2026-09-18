@@ -1912,6 +1912,46 @@ out wrong in a spoken layer. ⚠️ **No gate covers it:** `check_absolutes.py` 
 captions from the build product, and nothing checks a caption's rule claim against
 a rulebook. Dispatched 18 September.
 
+#### ⚠️ THE COORDINATOR OWES A WHOLE-CORPUS CREASE-LINE LAYER DIFF, AND NOTHING ELSE CATCHES IT
+
+Four agents wrote crease-line sentences into six documents on 18 September, each
+correct in isolation, each unable to read the others' live files. ⚠️ **Two agents
+writing individually-correct, jointly-contradictory sentences is this repository's
+recorded failure** — `239f70d` exists for it — and **no checker sees it.**
+
+- [ ] **After EVERY agent has finished and every file is staged**, diff the
+  crease-line layer across the whole corpus and read the results side by side:
+  body, ` ```facts `, Common Mistakes, Key Takeaways, and the four shared captions.
+  ⚠️ **This is the coordinator's and cannot be delegated to any of the agents that
+  wrote the text** — a repair cannot self-certify, and none of them could see the
+  others' files.
+
+#### ⚠️ A CHECKER RACE, OBSERVED RATHER THAN THEORISED
+
+`check_absolutes.py` exited **2** on one agent's first run (*caption layer
+uncertified, 0 units*) and **0** on its last (*408 units*), **with no edit of its
+own** — `site/src/data/diagrams.json` was rebuilt by a different agent mid-round.
+⚠️ **The agent ran no build and did nothing wrong.** This is the concrete instance
+of the standing rule: **a checker result taken while agents are live proves nothing
+in either direction.** The only run that counts is after every agent has finished
+and every file is staged.
+
+#### ⚠️ A FOURTH INSTANCE THE BRIEF DID NOT NAME — found by reading the render
+
+`rules_primer.md:720`: *"**The practical instruction is the same under all four and
+the reason differs:** get out of the paint."* Chunk 167's **isolated closing `<p>`
+before a 500 ms + 700 ms break** — the same shape as the `:734` defect, and **under
+a sentence explicitly claiming all four books**, when under three of them the line
+is crease. ⚠️ **The brief named three instances and there were four. The fourth was
+found by rendering, not by grepping** — which is the method note, not the count.
+
+- [ ] ⚠️ **`check_tables.py --near` puts `rules_primer.md:815` at ZERO rows of
+  headroom** (66 characters spare). **Any edit adding a row silently costs a
+  listener the whole table.** Also near-limit: `risk_management.md:488`,
+  `body_contact_and_battles.md:74` and `:1350`. ⚠️ **Run the tool — these are the
+  figures it printed on 18 September and they go stale the moment anyone edits a
+  table.**
+
 #### ⚠️ THE NEXT ROUND'S SCOPE, named by the reviewer that could not reach it
 
 A `content-reviewer` layer-tested the **summary layer of all 39 documents**
