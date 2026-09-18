@@ -530,10 +530,17 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_zones.py, check_tables.py, check_disclosures.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
                     check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
-                    check_quote_drift.py.
+                    check_quote_drift.py, check_caption_hosts.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
-                    this list: build_podcast_audio.py, build_podcast_cover.py.
+                    this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py.
+                    podcast_queue.py derives the episode queue from the site's own canonical page
+                    order (`site/src/data/structure.json`), tracks per-episode workflow state and
+                    enforces the batching ceiling. ⚠️ It does NOT drive a browser — NotebookLM has
+                    no API; `.claude/skills/notebooklm-episode/` does that, using this script's
+                    `next-batch` output as its worklist. ⚠️ It deliberately follows what is
+                    DEPLOYED (one episode per document) rather than the skill's own grouping
+                    table, which the corpus has never shipped.
                     ⚠️ THIS LIST WAS FIVE TOOLS SHORT until round 69 — check_diagram_quotes,
                     check_chunk_tails, check_leaders, check_plan_rows and check_disclosures
                     all existed and none was named here. A tool nobody knows about does not
@@ -563,6 +570,21 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     judgement call. ⚠️ It CANNOT see attribution drift — it keeps the closest match
                     across ALL sources, so a sentence credited to the NHL but carrying the IIHF's
                     wording scores clean — and it cannot see a quotation whose source is not on disk.
+                    check_caption_hosts.py — diagram captions SPOKEN INTO a document that does
+                    not own them. ⚠️ It exists because a sole-carrier audit keyed on the `owner`
+                    field in `site/src/data/diagrams.json` UNDER-COUNTS BY CONSTRUCTION, and one
+                    did: `owner` names ONE document per diagram, but `![](diagram:id)` markers
+                    embed it in more. The audit cleared the owner and stopped; a later layer test
+                    of the OTHER hosts found `systems/zone_entries.md` sending a player "driving
+                    the net" with the crease boundary living only in the caption. ⚠️ NO COUNT IS
+                    WRITTEN HERE — run the tool, it prints them, and a count of an actively edited
+                    corpus goes stale silently. `--rule-like` ranks the captions that state a rule
+                    or a boundary; `--by-host` groups them so one agent can be dispatched per
+                    document. ⚠️ WORKLIST: a diagram reused in a second document is the NORMAL
+                    case and most hits are correct. It reports where to look; only a LAYER TEST on
+                    the host decides. ⚠️ AND CAPTION TEXT IS OFTEN A SHARED CONSTANT — editing one
+                    to repair one host silently rewrites every caption that imports it. Check
+                    `grep -ln '<CONSTANT>' site/src/diagrams/*.mjs` first.
                     check_caption_echo.py — captions that REPEAT the prose block now directly
                     above them, which is the defect the caption wave and the marker wave create
                     together and neither creates alone. ⚠️ Three kinds of overlap are CORRECT and

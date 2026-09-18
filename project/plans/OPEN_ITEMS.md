@@ -2764,6 +2764,81 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   300-character cap.** An ordinary edit breaks either. Not a defect — a fragility
   to know about before dispatching anyone at that file.
 
+## Workstream 4D: captions spoken into documents that do not own them — a class, with a tool
+
+**Opened 18 September 2026.** This is the generalisation of the
+`screen-the-goalie-sightline` row above, and it is much larger than that row was.
+
+### The measurement
+
+`site/src/data/diagrams.json` gives each diagram **one** `owner`. But
+`![](diagram:id)` markers embed a diagram in as many documents as want it, and
+`md_to_speech.py` voices `"Diagram. " + caption` **in every host**. So a caption's
+audience is the set of HOST documents, not the owner.
+
+⚠️ **No figure is written here. Run `python3 scripts/check_caption_hosts.py` — it
+is its own owner and prints them.** A count of an actively edited corpus goes
+stale silently, and this plan has been burned by that repeatedly. What the tool
+reported on the day it was written, for shape only: a substantial minority of
+diagrams are embedded in more than one document, and the resulting
+caption/non-owner-host pairs number in the low hundreds, of which roughly 60% carry
+rule-stating wording. **Every one of those is invisible to an audit keyed on
+`owner`.**
+
+Two things the census checked and found **clean**, so nobody needs to re-check
+them: no diagram is built but embedded nowhere, and no owner document fails to
+embed its own diagram.
+
+### Why it matters, in the one case that has been tested
+
+The `screen-the-goalie-sightline` audit cleared its `owner`
+(`playing_without_the_puck.md` carries the crease rule in three layers) and
+stopped. A later layer test of the **other** hosts found
+`systems/zone_entries.md` was a **genuine sole carrier**: the body sends a support
+player "driving the net" and a middle driver "at the net" and **never says where
+the drive stops.** The crease boundary existed only in the caption. A listener
+hearing the body without the figure was driven at the goaltender with no boundary
+at all. Repaired 18 September; under review.
+
+⚠️ **One tested host, one real defect. That is the whole basis for this
+workstream — it is not a rate and must not be quoted as one.**
+
+### The trap for whoever works it
+
+⚠️ **Caption text is frequently a SHARED CONSTANT.**
+`site/src/diagrams/rule69_clauses.mjs:79` exports `CREASE_LINE_IS_THE_CREASE`,
+imported by four modules. **Editing it to repair one host silently rewrites four
+captions across three modules.** Before changing any caption text:
+`grep -ln '<CONSTANT>' site/src/diagrams/*.mjs`.
+
+### Rows
+
+- [ ] Work `check_caption_hosts.py --rule-like --by-host` down, **one agent per
+  host document**, each agent owning its host `.md` exclusively. ⚠️ **The decision
+  is a LAYER TEST on the host** — body prose, ` ```facts ` block, Common Mistakes
+  and Key Takeaways extracted and read *separately*, because body ✓ does not imply
+  block ✓ and both live in the same file. **A reused diagram is the normal case and
+  most hits will be correct**; the tool reports where to look, it does not decide.
+  Start with the highest-count hosts the tool prints, since they concentrate the
+  exposure.
+- [ ] ⚠️ **A known defect in the shared constant, found but NOT fixed.**
+  `rule69_clauses.mjs:79` states flatly that *"the IIHF, USA Hockey and Hockey
+  Canada all count [the crease line] as part of the crease."* IIHF Rule 1.7 does
+  say it — but IIHF Appendix IV **Table 16 in v1.1** (Situation 5 E) is reported to
+  **allow** the goal for an attacker planted *"on the crease line"*, and
+  `systems/offensive_zone_play.md:553` and `:565` record this as *"the unresolved
+  edge"*, answered *"in opposite directions inside one book."* **The caption
+  presents as settled what the corpus's own owner document says is not, and four
+  captions carry it.** ⚠️ Deliberately NOT dispatched yet: a diagram-module edit
+  needs `build-diagrams.mjs` before `check_absolutes.py` can see it, and a site
+  build was live. **Acceptance:** the caption states the divergence, or the owner
+  document is shown to be wrong. ⚠️ Name the IIHF edition — `sources/README.md:137`
+  records that a bare "Table 16" resolves against the *current* book to Overtime.
+- [ ] `owner` is still the right field for **numeric ownership** and for
+  `check_links.py`. This workstream does not propose changing it — only that a
+  coverage audit must not be keyed on it. Fold that into
+  `project/review_process.md` when the class is worked, not before.
+
 ## Workstream 4C: two `sources/README.md` corrections from the rules pass
 
 - [x] **CLOSED, 17 September.** Fourth instance confirmed directly against
