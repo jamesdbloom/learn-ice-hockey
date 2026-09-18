@@ -186,10 +186,34 @@ const wideEntry = {
     'his own net. It needs both supports drawn here, and no contact is drawn. The net drive ' +
     'stops at the blue paint: keep your feet out of the paint, and off ' +
     CREASE_LINE_IS_THE_CREASE +
+    // ⚠️ THE CONTACT TEST IS KEYED TO THE GOALTENDER'S POSITION, NOT THE ATTACKER'S, AND THIS
+    // CAPTION HAD IT KEYED TO THE ATTACKER'S. It read "any contact once you are in the crease,
+    // and more than incidental contact outside it". Both books key both limbs on the goalie:
+    // NHL 69.3 "while the goalkeeper is in his goal crease" (nhl_rules_layout.txt:6085-6088),
+    // NHL 69.4 "while the goalkeeper is outside his goal crease" (:6110-6113); IIHF 69.3/69.4
+    // are the same in their own words (iihf_rules_v1.1.txt:5555-5580).
+    //
+    // The error was NOT symmetrical, and one direction GRANTED PERMISSION THE BOOKS DO NOT.
+    // The common net-front case — goalie set in his crease, attacker outside it — is 69.3, where
+    // ANY contact the attacker initiates voids the goal. Keyed to the attacker, this caption read
+    // that case as "outside", and told a listener incidental contact there was fine.
+    //
+    // The positioning limb above ("entering the paint") is correctly keyed to the ATTACKER —
+    // 69.3's significant-position ground names the crease and the player in it. Do not "fix"
+    // that one to match this one; they key differently because the rule does.
+    //
+    // ⚠️ The structural-reading hedge is scoped DELIBERATELY. The contact keying is quoted
+    // rule text, and hedging it as "the rule's structure" would make the corpus look less
+    // evidenced than it is. What is a structural reading is the absence of a positioning
+    // ground outside the crease. Owner: content/systems/offensive_zone_play.md.
     '. Screening from outside the crease without contact is normally legal; what risks the ' +
-    'goal is entering the paint, or making contact with the goaltender — any contact once you ' +
-    'are in the crease, and more than incidental contact outside it. That is Rule 69 under ' +
-    'both the NHL and the IIHF, and it reads the rule’s structure rather than anything either ' +
+    'goal is entering the paint, or making contact with the goaltender. On contact it is where ' +
+    'the goaltender is that decides, not where you are: any contact you initiate at all while ' +
+    'he is in his crease, incidental or otherwise, and more than incidental contact while he ' +
+    'is out of it. And he is not fair game out there — both books say the appropriate penalty ' +
+    'should be assessed in every case of unnecessary contact. Those are Rules 69.3 and 69.4 ' +
+    'under both the NHL and the IIHF, in the books’ own words. That no clause voids a goal for ' +
+    'where you stood outside the crease reads the rule’s structure rather than anything either ' +
     'book states in terms; ' +
     REFEREE_JUDGEMENT,
 

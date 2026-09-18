@@ -23,6 +23,10 @@
  *   4. Adds `table-scroll--tall` to the wide comparison tables, which is the
  *      only thing that makes global.css's sticky column header apply. See the
  *      note on `columnsOf` below for why the trigger is the column count.
+ *   5. Loads public/scroll-regions.js on any page that has a scrollport, so the
+ *      focus and ARIA attributes on (1) and on remark-corpus.mjs's full-sheet
+ *      diagrams are re-decided against the viewport instead of guessed at build
+ *      time. See the note beside the injection at the foot of this file.
  */
 
 import { visit } from 'unist-util-visit';
@@ -122,8 +126,16 @@ function textOf(node) {
 
 export default function rehypeCorpus() {
   return function transformer(tree) {
+    // Whether this page has anything for public/scroll-regions.js to measure —
+    // the table wrappers made below, and the full-sheet diagram boxes
+    // remark-corpus.mjs made earlier in the pipeline. Both opt in by carrying
+    // `data-scroll-region`, so neither can be missed and neither is special-cased.
+    let scrollRegions = 0;
+
     visit(tree, 'element', (node, index, parent) => {
       if (!parent || index === undefined) return;
+
+      if (node.properties?.['data-scroll-region']) scrollRegions += 1;
 
       // ------------------------------------------------ scrollable tables
       if (node.tagName === 'table') {
@@ -145,6 +157,26 @@ export default function rehypeCorpus() {
             'aria-label': tall
               ? 'Table, scrollable horizontally and vertically'
               : 'Table, scrollable horizontally',
+            // ⚠️ AND THE LABEL ABOVE IS STILL A GUESS, because whether a table
+            // overflows is a question about the VIEWPORT and this runs at build
+            // time. Measured across the built site, only the two six-column
+            // comparisons still overflow at 1440 — so on a desktop the great
+            // majority of these wrappers are focus stops that go nowhere, each
+            // announcing a scroll the reader cannot perform. `--tall`'s second
+            // axis is a guess twice over: a capped table that fits horizontally
+            // at a wide viewport scrolls vertically ONLY, and is told otherwise.
+            //
+            // `data-scroll-region` opts the wrapper into public/scroll-regions.js,
+            // which measures both axes on load and on resize and rewrites these
+            // three attributes — including a "scrollable vertically" label that
+            // cannot be produced here. The build-time attributes stay as the no-JS
+            // baseline rather than being removed: with scripting off a dead tab
+            // stop is noise, while a missing one leaves the off-screen columns of a
+            // rule comparison reachable by pointer-drag alone. The trade is argued
+            // in full in that file's header.
+            // ⚠️ remark-corpus.mjs carries the same pair for full-sheet diagrams
+            // and must not drift from this one.
+            'data-scroll-region': 'Table',
           },
           [node],
         );
@@ -185,6 +217,9 @@ export default function rehypeCorpus() {
         }
 
         parent.children[index] = wrapped;
+        // Counted here rather than by the `data-scroll-region` test above,
+        // because the walk resumes past `wrapped` and never visits it.
+        scrollRegions += 1;
         return [visit.SKIP, index + 1];
       }
 
@@ -223,5 +258,28 @@ export default function rehypeCorpus() {
         }
       }
     });
+
+    // ------------------------------------------ the runtime scroll measurement
+    // ⚠️ A `<script src>` FROM A MARKDOWN PLUGIN, WHICH IS NOT HOW THE OTHER SEVEN
+    // SCRIPTS ON THIS SITE ARE LOADED. They are `<script is:inline src="…" defer>`
+    // in the .astro component that needs them. There is no component here to hang
+    // it on: both wrappers it measures are created by the markdown pipeline, they
+    // exist only on document pages, and the page shell has no way to know whether
+    // a given document has one. Emitting it here is what keeps the two facts —
+    // "this page has a scrollport" and "this page loads the script" — in the same
+    // place, so they cannot disagree.
+    //
+    // ⚠️ IT MUST BE A FILE, NOT INLINE. The production CSP is `script-src 'self'`
+    // with no `unsafe-inline`, enforced as a CloudFront response header, so an
+    // inline script is blocked in production and works locally — the trap
+    // public/cite-copy.js's header documents, hit twice already. A same-origin
+    // `src` is fine, and `is:inline` does not apply because Astro does not process
+    // script tags that come out of markdown at all.
+    //
+    // Zero regions, no request: most section hubs and the home page have neither a
+    // table nor a full-sheet diagram.
+    if (scrollRegions > 0) {
+      tree.children.push(el('script', { src: '/scroll-regions.js', defer: true }));
+    }
   };
 }

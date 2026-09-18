@@ -1208,6 +1208,16 @@ figcaption .warn-inline {
   The ARIA half was already right — role="region", tabindex="0" and an
   aria-label mean keyboard and screen-reader users were told all along. This
   is the sighted-mouse-user half.
+
+  ⚠️ "ALREADY RIGHT" WAS TOO STRONG, AND THE REASON IS IN THIS VERY RULE. The
+  gradient cover above is honest because it is drawn by the scroll container at
+  render time and appears only on a side that HAS content off-screen; the three
+  ARIA attributes were emitted by rehype-corpus.mjs at BUILD time, on every
+  table, and said "scrollable horizontally" whether or not that table overflowed
+  at the reader's width. The sighted-mouse-user half was viewport-aware and the
+  screen-reader half was not. public/scroll-regions.js now measures both axes and
+  rewrites the attributes on load and on resize; the build-time set is kept as the
+  no-JS baseline.
 */
 .table-scroll {
   overflow-x: auto;
@@ -2518,6 +2528,17 @@ figure.diagram--full .diagram-scroll svg {
   the same three attributes `.table-scroll` has carried since it was written, so a
   keyboard user gets a tab stop and arrow keys, and a screen-reader user is told the
   region scrolls. What is left for CSS is the sighted-mouse-user half: a cue.
+
+  ⚠️ THAT SENTENCE IS TRUE AT 375 AND WAS FALSE ON A LAPTOP, AND THE RULE THAT MADE
+  IT FALSE IS THE `min(640px, 100%)` FLOOR SIXTY LINES ABOVE. Above 60rem the sheet
+  fits the column and the box does not scroll — so the tab stop and the "scrollable
+  horizontally" announcement were emitted on every full-sheet figure at every width,
+  and on a desktop every one of them was a focus stop that goes nowhere. The two
+  rules were written in the same stylesheet, months apart, and neither knew about
+  the other. public/scroll-regions.js measures the box instead and rewrites the
+  three attributes on load and on resize; the build-time set is kept as the no-JS
+  baseline, because with scripting off a dead tab stop costs a keystroke and a
+  missing one costs 46% of the picture.
 
   ⚠️ AND THE CUE CANNOT BE `.table-scroll`'s. That trick paints gradients on the
   container's own background and lets the content slide over them, which works

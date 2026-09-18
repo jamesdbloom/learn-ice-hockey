@@ -73,12 +73,59 @@
  * The crease LINE is part of the crease — so "outside the paint" means clear of
  * the line too, not standing on it. Used by all four captions.
  *
- * Sourced in the owning documents; three books agree, which is why all three are
- * named. Reached as: "…keep your feet out of the paint, and off " + this.
+ * Reached as: "…keep your feet out of the paint, and off " + this. Carries its
+ * own terminal stop on the last sentence; the caller resumes after it.
+ *
+ * ⚠️ THIS STRING SAID "which the IIHF, USA Hockey and Hockey Canada all count as
+ * part of the crease", FLAT, AND THE IIHF'S BOOK ANSWERS IT BOTH WAYS.
+ * Verified on disk rather than carried in:
+ *
+ *   IIHF Rule 1.7   iihf_rules_v1.1.txt:631   "The marked line belongs to the
+ *                                              Goal Crease."
+ *   IIHF App. IV    iihf_rules_v1.1.txt:9941  Situation 5 E — an attacker who
+ *                   (Table 16 in 2025/26,     "plants themself on the crease line
+ *                    Table 14 in 2026/27)     … and a goal is scored" → "Goal is
+ *                                              allowed."
+ *   USA Hockey      usah.txt:4509             Note to 625(b): the area is the
+ *                                              space "outlined by the semi-circular
+ *                                              crease lines (including crease lines)"
+ *   Hockey Canada   hc_layout.txt:639         Glossary: "The lines of the crease
+ *                                              are considered part of the crease."
+ *
+ * Both IIHF limbs hold in the 2026/27 edition too, so the clash is not an
+ * artefact of one printing: iihf_rules_2026-27.txt:676 carries Rule 1.7 verbatim,
+ * and :10041 carries Situation 5 E verbatim under the renumbered Table 14
+ * (:5633 is the cross-reference that renames it). Hence no table NUMBER in the
+ * spoken string — a bare one goes stale on the next renumbering, and in the
+ * 2026/27 book "Table 16" resolves to Overtime.
+ *
+ * So USA Hockey and Hockey Canada settle it; the IIHF states it at 1.7 and then
+ * allows the goal on the line in its own appendix. The corpus's owners call that
+ * unresolved — content/foundation/rink_map.md:192,
+ * content/systems/offensive_zone_play.md:553 ("the same play, answered in
+ * opposite directions inside one book") and :565 ("the unresolved edge") — and
+ * this string was presenting it as settled in four listeners' ears.
+ *
+ * ⚠️ NOT A RULE CHANGE, AN ATTRIBUTION FIX. Staying off the line is the
+ * conservative reading under EITHER IIHF answer, so the instruction is unchanged
+ * and must stay unchanged. The NHL is not named because its book does not answer
+ * the line's status; off the line is safe there too, which is why the closing
+ * clause says "every book" rather than naming the three.
+ *
+ * ⚠️ FOUR CAPTIONS IN FOUR MODULES SPEAK THIS. Confirmed with
+ * `grep -ln CREASE_LINE_IS_THE_CREASE site/src/diagrams/*.mjs`, and each of the
+ * four was read in its host caption before this was rewritten:
+ * `oz-net-front-screen` (followed by " — and read your own league's rule."),
+ * `screen-the-goalie-sightline` (followed by ". Here …"),
+ * `winger-offensive-zone-patches` (followed by "."), `entry-wide` (followed by
+ * ". Screening from …"). All four still read as one sentence chain after it.
  */
 export const CREASE_LINE_IS_THE_CREASE =
-  'the crease line at its edge, which the IIHF, USA Hockey and Hockey Canada all ' +
-  'count as part of the crease';
+  'the crease line at its edge. USA Hockey and Hockey Canada both count that line ' +
+  'as part of the crease, and so does the IIHF’s Rule 1.7 — but the IIHF’s own ' +
+  'appendix table allows the goal to a screener planted on the line: the same play ' +
+  'answered in opposite directions inside one book, and unresolved. Off the line is ' +
+  'the answer that works under every book';
 
 /**
  * The hedge that must travel with any structural reading of Rule 69, because the

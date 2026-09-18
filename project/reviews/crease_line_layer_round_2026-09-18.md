@@ -262,3 +262,106 @@ wrong cap told to five agents, a wrong count, and a wrong *"left unchanged"*. **
 one was a locator, a count or a constraint; none was the substance. Every one was
 caught by the agent that had actually read the file.** The briefs remain more
 defective than the corpus.
+
+---
+
+# ADDENDUM 2 — the round now clears. What changed after the BLOCK.
+
+⚠️ **Addendum 1 above says *"this round does not clear"* and *"site-reviewer
+dispatched, not yet reported."* Both were true when written and are now false.
+Addendum 1 is left intact on purpose** — `review_history.md` is reconstructed from
+these records, and rewriting a record to match its outcome destroys the evidence of
+what the gate caught.
+
+## The critical is repaired
+
+`body_contact_and_battles.md:1066` now carries the give-ground duty as a **`Rule:`
+fact** — rule number, both books, the penalty, and the table hedge — at **281/300**. ⚠️ **This figure read 296 in the
+first draft of this addendum and the commit gate measured it as 281.** The error
+under-stated headroom by 19 characters — **precisely the mistake repair 25's own
+lesson exists to stop.** A figure in an addendum is correctable; **Addendum 1 stays
+frozen.**
+⚠️ **The slot was freed by MERGING two coaching facts, not by deleting one**
+(`:1062`). The agent's reasoning, recorded because it is the right default:
+*"merging trades nothing, deleting does."*
+
+⚠️ **It also preserved a distinction the brief would have lost:** NHL 69.3 says
+*"a minor"*; **IIHF 69.3 says *"the appropriate penalty"* and caps nothing.** The
+fact reads *"a minor in the NHL's words"* rather than attributing the NHL's word to
+both books.
+
+## Final-wave repairs, enumerated for C11
+
+| # | File | Finding | Shape |
+|---|---|---|---|
+| 19 | `body_contact_and_battles.md:1062` | slot freed for the `Rule:` fact | ⚠️ **structural — a MERGE**, coaching text only, lossless |
+| 20 | `body_contact_and_battles.md:1066` | give-ground duty demoted to a coaching label | **confined** |
+| 21 | `zone_entries.md:296`, `:318`, `:354` | *"privileged area"* dropped from 607(c) | **confined** ×3 |
+| 22 | `zone_entries.md:306`, `:327`, `:374` | Hockey Canada 8.5(b) absent from **section bodies** | **structural** ×3 — body additions |
+| 23 | `playing_without_the_puck.md:588` | only crease-line fact ending permissive | **confined** |
+| 24 | `playing_without_the_puck.md:561`, `special_teams.md:1029` | *"flat position bar … unless"* self-contradicts aloud | **confined** ×2 |
+| 25 | `special_teams.md:97` | table cited with no number or edition | ⚠️ **confined — by SUBSTITUTION, which made the line SHORTER** (294→293) |
+| 26 | `special_teams.md:117` | fact traced to the wrong section | **structural** — body sentence added |
+
+⚠️ **Repair 25 refuted a reviewer's judgement worth keeping.** It had ruled the line
+*"cannot fit, six characters"*. **That assumed ADDITION.** Substituting
+`its Appendix IV table` → `its 2025/26 Table 16` **shortened** it and gained the
+edition. **Before accepting "it will not fit", try substitution.**
+
+## Dimensions, all covered
+
+| | Outcome |
+|---|---|
+| **D10** facts layer | ran — 1 critical + 3 majors, **all repaired** |
+| **D15 / C10** rendered site | ran — **no criticals**; see `scroll_regions_site_round_2026-09-18.md` |
+| **D4 / D5** external citations | **no new external URLs in the diff. OUT OF SCOPE**, declared not assumed |
+
+## ⚠️ OPEN, carried forward — recorded here so the next round inherits them
+
+1. ⚠️ **The round's own defect class, inside the round's own diff.**
+   `zone_entries.md:306`, `:1051`, `:1112` say *"the NHL's own **book** says it
+   neither way"* — where the owner `rink_map.md:18` says *"the NHL's **rule text**
+   leaves it unsaid, and the one place its **book** does address the line answers
+   the other way."* **Two sentences about the same book, contradicting, both written
+   this round.** The counterweight is in the same sentence and the instruction is
+   intact, **so no reader is misled** — but `rules_primer.md:1167`'s *"The NHL writes
+   no such sentence"* is the precise form and should be adopted. ⚠️ **Same
+   imprecision in `site/src/diagrams/rule69_clauses.mjs` — but as a HEADER COMMENT at
+   lines 111-112, NOT a caption.** *"The NHL is not named because its book does not
+   answer the line's status"*, sitting **three lines above `TABLES_ALLOW_OUTSIDE`,
+   which names NHL Table 14 as answering exactly that.** ⚠️ **Nothing ships it to a
+   listener — and an agent sent to fix "the same imprecision in `rule69_clauses.mjs`"
+   will grep the captions and find nothing.**
+2. **Repetition, judged real.** `zone_entries.md:306`, **`:353-354`** (the facts
+   block) and **`:374`** (the prose sentence) carry near-verbatim goaltender-contact
+   passages within 70 lines, and two already end with a pointer back to the first.
+   ⚠️ **An earlier draft of this line said `:358` and `:375`. Both are BLANK LINES.**
+   A line number is a figure, and it went stale the same way every other figure in
+   this repository does. ⚠️ **The three FACTS-block copies are correct by
+   design — each is voiced alone.** Only the prose is tedious.
+3. **`body_contact_and_battles.md:1062`** — the merge left positional content
+   (*"in front of the goalie, not beside them"*) under a `Technique:` label.
+   **No checker sees this.**
+4. **Two files outside the diff carry the thin version.** `technique/shooting.md:14`
+   — the document's **opening principle** — gives the split for the NHL and IIHF but
+   never says USA Hockey and Hockey Canada put the line in the crease.
+   `positions/center.md:406` omits both North American books entirely.
+5. **`special_teams.md:1029`** — *"runs no such test"* refers to the preceding facts
+   line, so refers to nothing voiced alone. ⚠️ **This diff edited that line and left
+   the dangling reference**, at 298/300.
+
+## What the re-audit could not establish
+
+⚠️ **Attribution drift in the loosening direction is invisible to everything run
+here.** A string quoted correctly from the NHL and *also* attributed to the IIHF
+scores clean in `check_quote_drift.py`, which keeps the closest match across all
+sources. **The IIHF prints `"significant position"` inside its own quotation marks
+where the NHL does not** — exactly the condition that defeats it.
+
+⚠️ **Nobody heard any of it.** Every judgement in this round came from reading
+rendered SSML. **The give-ground `Rule:` fact is 296 characters to hear once, with a
+300 ms break either side.**
+
+And the gate audits what the diff **changed**: a claim already wrong before this
+round, in an unchanged passage, was checked for attribution *shape* only and not
+re-derived.

@@ -317,6 +317,23 @@ export default function remarkCorpus(options = {}) {
       // a "scrollable horizontally" announcement would be 74 focus stops that scroll
       // nothing — trading a real defect for a noisier one. The condition is the same
       // `d.half === false` that adds the class below, so the two cannot drift.
+      //
+      // ⚠️ AND `d.half === false` IS STILL NOT THE QUESTION. It says the box has
+      // `overflow-x: auto`; it does not say the box overflows, and whether it does is a
+      // question about the VIEWPORT, which a build cannot ask. Above 60rem global.css
+      // floors the SVG at `min(640px, 100%)` instead of 640px — the rule that stops a
+      // full sheet scrolling on a laptop at all — so on a desktop every one of these tab
+      // stops is dead by construction, announcing a scroll that cannot happen.
+      //
+      // `data-scroll-region` opts the box into public/scroll-regions.js, which measures
+      // `scrollWidth`/`scrollHeight` against the client box and rewrites these three
+      // attributes on load and on resize. The build-time attributes are LEFT IN as the
+      // no-JS baseline rather than removed: with scripting off, a dead tab stop is noise
+      // and a missing one is 46% of the picture reachable by pointer-drag alone. That
+      // trade is argued in full in the header of scroll-regions.js.
+      // ⚠️ The same pair exists for tables in rehype-corpus.mjs and must not drift from
+      // this one: same three attributes, same opt-in attribute, same baseline.
+
       // Split a caption at its first warning glyph. No glyph, no change — the common case
       // is one text node exactly as before.
       const captionNodes = (caption) => {
@@ -333,7 +350,13 @@ export default function remarkCorpus(options = {}) {
       const kids = [
         wrapper('div', scrolls
           ? { className: ['diagram-scroll'], tabindex: '0', role: 'region',
-              'aria-label': 'Diagram, scrollable horizontally' }
+              'aria-label': 'Diagram, scrollable horizontally',
+              // The noun for the runtime label, and the script's whole selector. A
+              // half sheet is deliberately left without it: it is `overflow: visible`
+              // and can never scroll, so observing one would be a forced reflow on
+              // every resize to reach a foregone answer — and half sheets are the
+              // large majority of the diagrams in the corpus.
+              'data-scroll-region': 'Diagram' }
           : { className: ['diagram-scroll'] },
           [{ type: 'html', value: svg }]),
         // ⚠️ A CAPTION CAN CARRY A SAFETY WARNING, AND THE CAPTION LAYER IS THE LIGHTEST

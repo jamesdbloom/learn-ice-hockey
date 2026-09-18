@@ -3038,44 +3038,22 @@ the audio player**, which the reviewer checked and a naive pass would have misse
   **Population is 143, not 141** — 49 `.table-scroll` + 94 `.diagram-scroll`.
   141 and 16 are the *dead* counts and both reproduce exactly.
 
-- [x] **FIXED 18 September, verified against a clean rebuild.**
-  `site/public/scroll-regions.js` measures `scrollWidth`/`scrollHeight` against
-  the client box and adds or removes `tabindex`/`role`/`aria-label` to match,
-  per-region `ResizeObserver`, rAF-coalesced. ⚠️ **It gates on the COMPUTED
-  `overflow-x`/`overflow-y` rather than re-listing selectors**, which is what
-  stops it announcing a phantom second axis on all 49 tables (CSS Overflow 3
-  makes `overflow-y` used-value `auto` on every `.table-scroll`). The plugins
-  now emit `data-scroll-region="Diagram"|"Table"`, and `rehype-corpus.mjs`
-  injects the script only on the 31 of 53 pages that have a region.
+- [x] **CLOSED 18 September — moved to
+  [`project/reviews/scroll_regions_site_round_2026-09-18.md`](../reviews/scroll_regions_site_round_2026-09-18.md),**
+  which names every file and carries the measurements. Verified in headless Chrome
+  across 31 pages × 12 viewports: **0 dead and 0 missing tab stops at every width**,
+  with the before-state reproduced exactly.
 
-  **The no-JS decision, stated rather than assumed:** the build-time attributes
-  were **kept** and the script *removes* the wrong ones — the brief had sketched
-  stripping them at build time, which would have been the more dangerous
-  default. A dead tab stop is noise; a **missing** tab stop on a box that really
-  overflows is content loss — the off-screen columns of a rule-comparison table
-  reachable by pointer-drag alone. Measured with script execution disabled:
-  `rules_primer` at 1440 keeps all 8 attributes, exactly the status quo.
+  ⚠️ **The band premise in the row above is HALF WRONG and the record corrects it:**
+  there *is* extra overflow at 960 and 1248 and the script correctly adds attributes
+  back — **but it is a TABLE, not a full sheet. Zero diagrams overflow at any width
+  ≥ 768**, so the `min(640px, 100%)` floor holds and `global.css`'s own comment is
+  now imprecise.
 
-  **Measured after:** 1440 → 2 of 143 carry `tabindex`, **0 mismatches**;
-  375 → 127 of 143, **0 mismatches**; resize 1440→375→1440 converges 1→7→1;
-  0 console errors. Print and EPUB untouched (`build-downloads` strips scripts,
-  0 script hits in `.print/*.html`). External file, not inline, because the
-  production CSP is `script-src 'self'` with no `unsafe-inline`.
-
-  ⚠️ **NOT covered and still open:** the stylesheet's own comment names
-  **960–1007 px and 1248–1287 px** as bands where a full sheet still overflows
-  on a desktop, and **neither was censused** — so the script is confirmed to
-  *remove* at 1440 and *add* at 375, but is **unconfirmed to add back** in those
-  bands. 200% zoom and forced large text are likewise untested, and the 1 px
-  tolerance is where a phantom would appear. ⚠️ **No screen reader was run** —
-  whether a region renamed *underneath* a user mid-session is re-announced is
-  unknown. ⚠️ **And `data-scroll-region` is an unguarded seam:** a future wrapper
-  that overflows without carrying it is invisible to the script and to every
-  checker.
-
-  **Acceptance:** measure overflow at runtime and set `role`/`tabindex`/
-  `aria-label` from that, in both plugins. Fixing only one leaves the other
-  viewport broken.
+  ⚠️ **Read the record's blind-spot list before treating this as settled:** no screen
+  reader was run, Chrome only, **the production CSP and CloudFront rewrite were never
+  seen**, the service-worker upgrade path is untested, and `data-scroll-region`
+  remains an unguarded seam no checker covers.
 - [ ] **MINOR — the shaded region is weak in greyscale.** 210 against 233 mean
   luminance, a 9% separation. It does not depend on colour alone: it is bounded by
   the painted red line and the wall, and the label sits inside it. ⚠️ **If ever
