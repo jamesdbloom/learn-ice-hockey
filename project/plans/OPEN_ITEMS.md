@@ -2127,7 +2127,7 @@ no surrounding context. **The facts blocks are inline in the single track, which
 is precisely why their isolation matters.** Every facts-layer finding in this plan
 stands at full severity; only the chunk-boundary rows are downgraded.
 
-- [ ] `hockey-iq/playing_without_the_puck.md` chunk boundary 1→2 puts a **300 ms
+- [x] `hockey-iq/playing_without_the_puck.md` chunk boundary 1→2 puts a **300 ms
   seam** between a safety prohibition and its applicability condition — **CLOSED,
   17 September, correct as it stands.** A reviewer ran the actual TTS chunker
   (`md_to_speech.transform_document`) rather than guessing at the boundary,
