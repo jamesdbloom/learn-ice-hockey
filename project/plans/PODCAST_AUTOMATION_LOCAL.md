@@ -134,6 +134,42 @@ enters the repository at all.** Non-negotiable: this repository is public.
   ⚠️ **ElevenLabs and Gemini are both free for a sample, so the cheapest first move
   is those two.**
 
+## ⚠️ THE TRANSCRIPTION STEP IS BROKEN — no whisper model on disk
+
+**Found 18 September.** `core_principles` v4 was collected
+(`~/Downloads/Surviving_the_Ninety_Six_Percent_of_Hockey.m4a`, 86 MB, **44.6
+minutes**) and converted to 16 kHz mono PCM successfully. **Transcription then
+failed: there is no `ggml-*.bin` anywhere on the filesystem.**
+
+`whisper-cli` **is** installed (`/opt/homebrew/bin/whisper-cli`, with the full
+whisper.cpp suite beside it). **Only the model weights are missing** — a
+full-filesystem `find` for `ggml-*.bin` returns nothing.
+
+⚠️ **So every episode-verification method this plan relies on is currently
+unavailable**, including the fabrication greps that produced four consecutive
+NO-GO verdicts. **An episode cannot be reviewed without a transcript**, so the four
+collected and pending episodes are **blocked, not merely queued.**
+
+- [ ] **Fetch the model.** ~148 MB for `base.en`. It is a download, so the owner
+  should run it:
+  ```bash
+  mkdir -p ~/whisper-models && curl -L -o ~/whisper-models/ggml-base.en.bin \
+    https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin
+  ```
+  Then transcription is:
+  ```bash
+  ffmpeg -i EPISODE.m4a -ar 16000 -ac 1 -c:a pcm_s16le OUT.wav
+  whisper-cli -m ~/whisper-models/ggml-base.en.bin -otxt -np -nt -f OUT.wav -of OUT
+  ```
+  ⚠️ **`base.en` is what every prior verdict in this file was measured with** — a
+  different size changes the transcript and is not comparable to the record.
+
+⚠️⚠️ **AND THE KNOWN TRAP SURVIVES THE FIX: WHISPER MANGLES PROPER NOUNS.**
+*"Brodeur"* transcribed as *"Brodua"*, and a grep for the correct spelling returned
+**zero on an episode that contained the fabrication four times.** **Never grep a
+transcript for an exact name. Search semantically and read the surrounding
+context.**
+
 ## ⚠️ FOUR EPISODES GENERATED AND UNCOLLECTED, and the teaching-depth fix HELD
 
 **State at 09:00, 18 September 2026.** Chrome recovered after an outage of several
