@@ -108,9 +108,18 @@
  *
  * ⚠️ NOT A RULE CHANGE, AN ATTRIBUTION FIX. Staying off the line is the
  * conservative reading under EITHER IIHF answer, so the instruction is unchanged
- * and must stay unchanged. The NHL is not named because its book does not answer
- * the line's status; off the line is safe there too, which is why the closing
- * clause says "every book" rather than naming the three.
+ * and must stay unchanged. The NHL is not named because its RULE TEXT does not
+ * answer the line's status; off the line is safe there too, which is why the
+ * closing clause says "every book" rather than naming the three.
+ *
+ * ⚠️ THAT SENTENCE READ "ITS BOOK DOES NOT ANSWER" UNTIL 18 SEPTEMBER 2026, AND IT
+ * CONTRADICTED `TABLES_ALLOW_OUTSIDE` THREE LINES BELOW, which names NHL Reference
+ * Table 14 as answering exactly that — and answering it the OTHER way, treating a
+ * player on the line as outside the crease. The NHL's rule text is silent; its book
+ * is not. Nothing shipped this to a listener, because it is a header comment rather
+ * than a caption — which is precisely why it survived a round that repaired the same
+ * imprecision in eleven content documents. An agent told to fix "the same thing in
+ * rule69_clauses.mjs" will grep the CAPTIONS and find nothing.
  *
  * ⚠️ FOUR CAPTIONS IN FOUR MODULES SPEAK THIS. Confirmed with
  * `grep -ln CREASE_LINE_IS_THE_CREASE site/src/diagrams/*.mjs`, and each of the
