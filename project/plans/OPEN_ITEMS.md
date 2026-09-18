@@ -3408,9 +3408,16 @@ alone, it ended on the permission — **and a caption is voiced alone too.**
 is in `site/src/diagrams/*.mjs` today. **A caption edited this round and not rebuilt
 is invisible to it.**
 
-- [ ] Layer-test the diagram captions and `describe` text for the crease-line claim,
-  as the spoken layer they are. ⚠️ **Run `node site/scripts/build-diagrams.mjs`
-  first** or the check certifies stale text.
+- [x] **CLOSED 18 September by a commit gate, with evidence rather than a rebuild.**
+  It read `oz-net-front-screen` out of `diagrams.json` directly. The caption already
+  ends *"USA Hockey and Hockey Canada both count that line as part of the crease, and
+  so does the IIHF's Rule 1.7 — but the IIHF's own appendix table allows the goal…
+  **Off the line is the answer that works under every book.**"* ⚠️ **Three books, then
+  the contradiction, then the instruction LAST — the exact ordering this wave had to
+  repair in two facts lines, already correct in the caption.**
+  ⚠️ **The staleness caveat still stands for any FUTURE check:** `check_absolutes.py`
+  reads the build product, so a caption edited and not rebuilt is invisible to it.
+  **This closure rests on reading `diagrams.json` directly, not on a checker pass.**
 
 ## ⚠️ RULES REVIEW OF THE 18 SEPTEMBER REPAIR WAVE — the correction is right, three things are not
 
