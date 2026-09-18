@@ -3308,6 +3308,55 @@ relieves your position only, not touching the goalie and not what you do next"*.
 with a vaguer true statement rather than a false one** — which is why it is a major
 and not a critical. **But nothing saw the trade except the reviewer.**
 
+### ⚠️ THE SEVEN LINES SITTING AT EXACTLY THEIR CAP — the next instances of this defect, waiting
+
+**`python3 scripts/check_facts.py --near` prints them. On 18 September 2026, seven:**
+
+| Line | Label | |
+|---|---|---|
+| `foundation/on_ice_communication:411` | `Rule:` | 300/300 |
+| `systems/breakouts:908` | `Rule:` | 300/300 |
+| `systems/defending_the_rush:368` | `Rule:` | 300/300 |
+| `systems/defending_the_rush:611` | `Rule:` | 300/300 |
+| `technique/body_contact_and_battles:1339` | `Rule:` | 300/300 |
+| `positions/defender:624` | `Key:` | 200/200 |
+| `systems/offensive_zone_play:818` | `Technique:` | 200/200 |
+
+⚠️ **Five of the seven are `Rule:` lines — the label that carries a citation, and the
+one `check_facts.py` is explicit must never be evicted by a cap.**
+
+⚠️⚠️ **THIS IS NOT A TIDYING LIST. IT IS THE SAME BRITTLE STATE THAT ALREADY PRODUCED
+A DEFECT TODAY.** `technique/shooting.md:452` sat at 300/300 and **could not be
+widened when its own body was broadened**, so one facts line kept an IIHF-only reason
+for an instruction its section had just made three-book. ⚠️ **A USA Hockey or Hockey
+Canada listener hearing it alone concluded "not my book"** — the exact misread the
+whole crease-line round existed to close.
+
+**It was repaired by SUBSTITUTION** — `and IIHF Rule 1.7 puts the line in the crease`
+→ `and three books count that line as crease` — **300 → 296, losing nothing.**
+⚠️ **The coordinator had recorded it as "blocked on the section split". That was
+false, and a commit gate caught it.** **Before deciding a line cannot fit, try
+substitution.**
+
+⚠️ **AND A TRAP THE REPAIRING AGENT REFUSED.** Naming all three books outright does
+**not** fit — every variant landed back at 298-300, and **the only way to buy the
+characters was trimming *"obstructing the goalie's vision"*, the table row's
+OPERATIVE CONDITION.** It declined. ⚠️ **It also deliberately named NO layer:
+*"count that line as crease"* claims neither rule text nor definition, so a Note and
+a Glossary are not silently promoted by sitting next to the words *"not rule text"*.**
+
+- [ ] **Read each of the seven and ask the question the `shooting.md` case answers:
+  is this line still true of what its own section now says?** ⚠️ **A line at cap
+  cannot absorb a correction, so it is where a section's body and its extraction
+  layer drift apart silently.** ⚠️ **Try substitution; never evict a caveat; and if
+  neither works, say so — that is a finding, not a failure.**
+
+⚠️ **A METHOD TRAP, MEASURED:** `check_quote_drift.py` run from a copy **outside the
+repository** resolves no sources and reports **`notfound=371`, a false all-fail**. An
+agent took that as a baseline, spotted it, and re-took the baseline by swapping the
+pre-edit file **in place with a hash-verified restore**. ⚠️ **Never baseline that tool
+from a scratchpad copy.**
+
 ### The remedy exists and has never been applied
 
 `project/content_style_guide.md` already prescribes it: **split the section, on the
