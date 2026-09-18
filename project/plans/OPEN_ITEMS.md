@@ -1842,6 +1842,107 @@ has not been reviewed.**
 
 ### ⚠️ NEW, 18 September — the IIHF crease-line divergence flattened in the SPOKEN facts layer, corpus-wide
 
+#### ⚠️⚠️ A REPAIR MADE ONE CHUNK WORSE, AND IT IS THE SAME DEFECT IT WAS DISPATCHED TO REMOVE
+
+`rules_primer.md` Key Takeaway 9 (`:1139`). **Before the repair the headline and
+its follow-up were CONSISTENTLY wrong about the IIHF. The repair fixed the
+follow-up and left the headline** — converting a consistent error into a
+**contradiction inside one spoken chunk**, which is precisely what the repair was
+dispatched to remove from the Common Mistakes chunk. That chunk is now clean;
+this one is not.
+
+Rendered, a listener hears these consecutively:
+
+1. *"…under the NHL and IIHF the goal crease is what decides it — **the region, not
+   the painted line around it**."*
+2. *"…off the red line around it, which **three of the four books count as part of
+   the crease**…"*
+3. *"…what puts the line inside the crease is … **IIHF Rule 1.7**…"*
+
+Sentence 1 says the painted line is not what decides under the IIHF. IIHF Rule 1.7
+(`sources/iihf_rules_v1.1.txt:631`) says *"The marked line belongs to the Goal
+Crease"*, and sentences 2 and 3 say so in the same breath.
+
+⚠️ **A second, subtler half:** what *is* true of both books is their **appendix
+situation tables** — and this document says at `:732` that those are *"appendix
+interpretations rather than operative rule text."* The headline promotes them to a
+book-level statement of what "decides it", for a book whose operative rule says the
+opposite.
+
+- [ ] **Rewrite the Key Takeaway 9 headline.** ⚠️ **Constraint, not wording — the
+  agent holding the file writes the sentence against the surrounding prose.** The
+  headline must not assert, for the IIHF, that the painted line is outside what
+  decides. If the tables' answer leads, attribute it **to the tables**, and the
+  1.7 conflict must reach **the same clause** rather than arrive two sentences
+  later. **The safe instruction — off the line, which holds under all four — is
+  already in sentence 2 and is what should survive unqualified.**
+  ⚠️ **Penalty consequence, so this is not cosmetic:** a listener acting on
+  sentence 1 alone screens with a skate on the red line. USA Hockey 625(b)
+  (`sources/usah.txt:4503-4505`) is a **flat position bar** — no goal may be scored
+  with an attacking player in the crease, **whoever scored it** — so it voids a
+  *teammate's* goal with no impairment to judge.
+
+- [ ] **`rules_primer.md:734` — the section's boldface last word still stops at the
+  paint.** `:733` ends *"keep clear of the line as well as of the paint"*; the very
+  next line is *"**Get in the goalie's eyes; keep your skates out of the blue
+  paint.**"* Same spoken chunk, so the qualification is one sentence away — **but
+  this is the sentence built to be remembered**, and the repair did not reach it.
+
+#### ⚠️⚠️ A CAPTION GRANTS PERMISSION THE RULEBOOK DOES NOT — Rule 69 keyed on the wrong player
+
+`site/src/diagrams/zone_entries.mjs:190` says what risks the goal is *"any contact
+once **you** are in the crease, and more than incidental contact outside it."*
+**Both limbs are keyed on the ATTACKER's position. Both rules are keyed on the
+GOALKEEPER's.** Verified by the coordinator in the primary text:
+
+- **NHL 69.3**, `sources/nhl_rules_layout.txt:6085-6088` — contact *"incidental or
+  otherwise, **while the goalkeeper is in his goal crease**"*, goal disallowed.
+- **NHL 69.4**, `sources/nhl_rules_layout.txt:6110-6113` — *"any contact … other
+  than incidental contact, **while the goalkeeper is outside his goal crease**"*.
+
+⚠️ **The error is not symmetrical and one direction is UNSAFE.** Where the
+goalkeeper is **in** the crease and the attacker **outside** it, the rule
+disallows the goal for contact *"incidental or otherwise"* — but the caption reads
+that case as "outside" and **permits incidental contact the rule does not
+permit.** The reverse case is merely over-strict.
+
+⚠️ **`content/systems/offensive_zone_play.md:557` already states it correctly**, so
+this is a TRANSMISSION error — a rule the corpus states correctly elsewhere coming
+out wrong in a spoken layer. ⚠️ **No gate covers it:** `check_absolutes.py` reads
+captions from the build product, and nothing checks a caption's rule claim against
+a rulebook. Dispatched 18 September.
+
+#### ⚠️ THE NEXT ROUND'S SCOPE, named by the reviewer that could not reach it
+
+A `content-reviewer` layer-tested the **summary layer of all 39 documents**
+exhaustively — every facts line, Common Mistakes bullet, Check-yourself item and
+Key Takeaway — and found **16 documents carry the crease-line instruction.** It
+read the **body layer of exactly one**, `rules_primer.md`.
+
+⚠️⚠️ **The worst defect it found in that document was a BODY sentence, and it found
+it by reading §7 whole rather than because its method looked there:** `:734`, the
+section's emphasised closing line, gives *"keep your skates out of the blue
+paint"* — the pre-repair form — one sentence after `:733` says *"keep clear of the
+line as well as of the paint."* Its own `<p>`, followed by a 700 ms break.
+
+**So: fifteen documents carrying this instruction have unread bodies, and the one
+body that was read contained a defect.**
+
+- [ ] Run the same layer test over **body paragraphs**, specifically the **short
+  emphasised closing sentence of each section** — that is where both this defect
+  and `shooting.md:830`'s live, and **no checker and no facts-layer tool can see
+  it.** ⚠️ **One-for-one is not a rate** and must not be quoted as one; it is a
+  reason to look, not a prediction.
+
+#### ✅ Census that CLEARED a worry — recorded so nobody re-runs it
+
+The verifier could not reach whether the *"USA Hockey's and Hockey Canada's rather
+than the NHL's or the IIHF's"* flattening had propagated before today. **It had
+not.** A corpus-wide grep finds the formulation in `rules_primer.md` only, now
+repaired. The other documents state the three-of-four form or the IIHF split
+correctly.
+
+
 **Found while reviewing the `zone_entries.md` crease repair.** The IIHF answers
 one question in two directions: **Rule 1.7** says *"The marked line belongs to the
 Goal Crease"*, while **Appendix IV Situation 5 E** allows the goal for an attacker
