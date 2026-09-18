@@ -1888,6 +1888,58 @@ opposite.
   paint.**"* Same spoken chunk, so the qualification is one sentence away — **but
   this is the sentence built to be remembered**, and the repair did not reach it.
 
+#### ✅ CENSUS: "a facts line that states a conflict and gives no instruction" — CLEARED, and the discriminator is reusable
+
+An agent observed that this layer test *"has, as far as I can tell, never been
+run"*. It has now. ⚠️ **The interesting part is that the obvious pattern does not
+work and a narrower one does.**
+
+**Loose form** — any `Rule:`/`Convention:` line containing a conflict word
+(*but, while, however, allows, neither, differ…*) and no instruction verb:
+**251 hits. Useless.** ⚠️ **Most are CORRECT**: a `Rule:` fact whose whole job is to
+state a cross-book divergence needs no instruction — *"Kicking the puck is legal —
+NHL and IIHF 49.2 — but USA Hockey 627(a) needs no kicking motion at all"* is the
+fact, not a defect. **A sweep on this pattern would have damaged the corpus.**
+
+**The discriminator that works: does the line's FINAL clause loosen?** Because a
+facts line is voiced alone, **the last thing heard is what a listener carries
+away.** Two hits corpus-wide:
+
+- `systems/forechecking_systems.md:437` — **false positive.** *"going the other
+  way"* describes a winger's movement, not a rule permission.
+- `systems/special_teams.md:97` — ends on *"only the NHL's 1.7 is silent"*, **but
+  opens with *"Keep both feet outside the red crease line"***. Instruction first,
+  nuance last: **the corpus's accepted form, and correct.**
+
+**So the defect has no remaining instance.** `playing_without_the_puck.md:588` was
+the only one and is repaired.
+
+⚠️ **Keep the discriminator, not the result.** The result goes stale on the next
+edit; *"does the final clause loosen"* keeps working, and it generalises past the
+crease line to any facts line pairing a rule with its exception.
+
+#### ⚠️ A CAP JUDGEMENT THAT WAS WRONG BECAUSE IT ASSUMED ADDITION
+
+A `facts-reviewer` judged `special_teams.md:97` could not carry an edition stamp —
+*"six characters of headroom"* — and that leaving it was right. ⚠️ **The agent
+holding the file refuted that: the judgement assumed ADDITION.** By **substitution**
+— `its Appendix IV table` → `its 2025/26 Table 16` — **the line got SHORTER**,
+294 → 293, and gained the edition.
+
+⚠️ **This matters beyond one line.** *"It will not fit"* has been the stated reason
+for leaving several near-cap lines unrepaired today. **Before accepting it, try
+substitution: a more precise phrase is often shorter than the vague one it
+replaces.** ⚠️ **The rule against trading out a caveat stands unchanged** — that
+forbids removing a *claim*, not tightening a *phrase*.
+
+#### ⚠️ STILL OPEN — a new instance of the same class, found by the agent repairing it
+
+`special_teams.md:1029` contains *"runs no such test"*, which **refers to the
+previous facts line and therefore refers to nothing when voiced alone.** ⚠️ **Same
+defect class as the MAJOR that agent was sent to fix, in a line it was editing.** It
+left it deliberately: **fixing it self-containedly costs characters the 300-cap does
+not have.** ⚠️ **It needs a slot freed or a split — not a patch.**
+
 #### ⚠️⚠️ FACTS REVIEW, 18 September — ONE CRITICAL, THREE MAJORS. NOT YET REPAIRED.
 
 The commit-gate blocked partly because **D10 was never reviewed.** It has now run.
