@@ -2491,17 +2491,68 @@ the audio player**, which the reviewer checked and a naive pass would have misse
   792 = `clientWidth` 792) `scrollLeft` stays **0** — the focus ring draws
   and nothing moves. At 375 the same element (640 vs 346) scrolls to 240.
 
-  ⚠️ **TWO DIFFERENT BUGS WEARING ONE LABEL** — confirmed in source, matching
-  the measurement:
-  - `site/src/plugins/remark-corpus.mjs:317-336` — the condition is
-    `d.half === false`, i.e. *is this a full-sheet diagram*, never *does it
-    overflow*. Its own comment justifies that on the 375 case, which is
-    exactly right at 375 and exactly wrong at 1440 where the 792px column
-    never overflows. **This is why 1440 is catastrophic and 375 is nearly
-    clean.**
-  - `site/src/plugins/rehype-corpus.mjs:130-150` — blanket, every `<table>`,
-    no condition at all. **This is the entire 375 residue** — every dead
-    wrapper at 375 is a `table-scroll`; zero `diagram-scroll` are dead there.
+  ⚠️⚠️ **THE CAUSE STATED IN THE PREVIOUS VERSION OF THIS ROW WAS WRONG, AND IT
+  WAS MY BRIEF THAT WAS WRONG — CORRECTED 18 SEPTEMBER AFTER A FULL REBUILD AND
+  A 31-ROUTE CDP CENSUS.** The row said the diagram attributes were applied
+  *"blanket"* and unconditionally. **They are not.** `remark-corpus.mjs` gates
+  them on `d.half === false`, and its comment is **correct** that this matches
+  the only CSS rule carrying `overflow-x: auto`. Nothing in either plugin is
+  blanket for diagrams.
+
+  **The real cause is sixty lines away in a different file**, and neither rule
+  knew about the other:
+  - `site/src/styles/global.css` — `@media (min-width: 60rem)` sets
+    `figure.diagram--full .diagram-scroll svg { min-width: min(640px, 100%) }`.
+    Above 960 px the sheet **fits its column and stops overflowing**, so
+    **all 94 diagram tab stops are dead above 960 px by construction** — and
+    **0 of 94 are dead at 375.** The two rules were written months apart in the
+    same stylesheet. ⚠️ **The plugin was never the diagram defect.**
+  - `site/src/plugins/rehype-corpus.mjs` — genuinely unconditional on every
+    `<table>`. **This is the entire 375 residue**, and 47 of the 49 dead table
+    stops at 1440.
+
+  ⚠️ **A THIRD DEFECT NEITHER MEASUREMENT NOR EITHER BRIEF NAMED.** The
+  `--tall` label *"scrollable horizontally and vertically"* is a guess twice
+  over: a capped table that fits horizontally at a wide viewport scrolls
+  **vertically only**, and the build has no way to know. A third label is owed.
+
+  **Population is 143, not 141** — 49 `.table-scroll` + 94 `.diagram-scroll`.
+  141 and 16 are the *dead* counts and both reproduce exactly.
+
+- [x] **FIXED 18 September, verified against a clean rebuild.**
+  `site/public/scroll-regions.js` measures `scrollWidth`/`scrollHeight` against
+  the client box and adds or removes `tabindex`/`role`/`aria-label` to match,
+  per-region `ResizeObserver`, rAF-coalesced. ⚠️ **It gates on the COMPUTED
+  `overflow-x`/`overflow-y` rather than re-listing selectors**, which is what
+  stops it announcing a phantom second axis on all 49 tables (CSS Overflow 3
+  makes `overflow-y` used-value `auto` on every `.table-scroll`). The plugins
+  now emit `data-scroll-region="Diagram"|"Table"`, and `rehype-corpus.mjs`
+  injects the script only on the 31 of 53 pages that have a region.
+
+  **The no-JS decision, stated rather than assumed:** the build-time attributes
+  were **kept** and the script *removes* the wrong ones — the brief had sketched
+  stripping them at build time, which would have been the more dangerous
+  default. A dead tab stop is noise; a **missing** tab stop on a box that really
+  overflows is content loss — the off-screen columns of a rule-comparison table
+  reachable by pointer-drag alone. Measured with script execution disabled:
+  `rules_primer` at 1440 keeps all 8 attributes, exactly the status quo.
+
+  **Measured after:** 1440 → 2 of 143 carry `tabindex`, **0 mismatches**;
+  375 → 127 of 143, **0 mismatches**; resize 1440→375→1440 converges 1→7→1;
+  0 console errors. Print and EPUB untouched (`build-downloads` strips scripts,
+  0 script hits in `.print/*.html`). External file, not inline, because the
+  production CSP is `script-src 'self'` with no `unsafe-inline`.
+
+  ⚠️ **NOT covered and still open:** the stylesheet's own comment names
+  **960–1007 px and 1248–1287 px** as bands where a full sheet still overflows
+  on a desktop, and **neither was censused** — so the script is confirmed to
+  *remove* at 1440 and *add* at 375, but is **unconfirmed to add back** in those
+  bands. 200% zoom and forced large text are likewise untested, and the 1 px
+  tolerance is where a phantom would appear. ⚠️ **No screen reader was run** —
+  whether a region renamed *underneath* a user mid-session is re-announced is
+  unknown. ⚠️ **And `data-scroll-region` is an unguarded seam:** a future wrapper
+  that overflows without carrying it is invisible to the script and to every
+  checker.
 
   **Acceptance:** measure overflow at runtime and set `role`/`tabindex`/
   `aria-label` from that, in both plugins. Fixing only one leaves the other
