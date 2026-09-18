@@ -3464,13 +3464,49 @@ Hockey Casebook situation two ways:
 - **`"at *The Rink*, Situation 4"`** — `rink_map.md`, `language_and_glossary.md`
   (**2 files — and `rink_map.md` is the OWNER**)
 
-⚠️ **The owner's form is the accurate one, and here is the proof.** Casebook
-situation numbering runs **per CHAPTER, not per rule**: the running header at
-`sources/usah_casebook.txt` ~`:1571` is *"Casebook – The Rink"*, and **Situation 2 in
-that same chapter cites *"Rule Reference 103(a) and 624 (Note)"* — two different
-rules.** ⚠️ **A per-rule numbering could not do that.** So *"Rule 103, Situation 4"*
-wrongly implies *"the fourth situation under Rule 103"*, which is not what the
-number means.
+⚠️⚠️ **THAT PROOF WAS FALSE, AND SO IS THE CONCLUSION. CORRECTED 18 SEPTEMBER BY A
+COMMIT GATE, AND VERIFIED BY THE COORDINATOR AGAINST THE PRIMARY TEXT.**
+
+**Casebook numbering runs per RULE, not per chapter.** `sources/usah_casebook.txt`
+around `:1513-1536` shows the actual structure:
+
+```
+CASEBOOK FOR THE RINK          <- the chapter
+  Rule 101 Rink
+    Situation 1
+  Rule 102 Dimensions of Rink
+    No situations.
+  Rule 103 Division of Ice Surface
+    Situation 1                <- RESTARTS at 1 under each Rule
+```
+
+**Rule 104, 105, 107 and 109 each restart at Situation 1; Rule 625 runs 1-17 and
+Rule 626 restarts at 1.**
+
+⚠️ **The "proof" was a misreading.** The *"Rule References 103(a) and 624(Note)"*
+sits **INSIDE Rule 103 Situation 1's ANSWER** — it is a cross-reference in the
+answer text, **not the heading the situation is filed under.**
+
+⚠️⚠️ **SO *"Rule 103, Situation 4"* IS THE PRECISE FORM AND THE OWNER'S IS THE
+AMBIGUOUS ONE.** *"At The Rink, Situation 4"* resolves **only because Rule 103
+happens to be the one rule in that chapter with four or more situations.**
+
+⚠️ **AND THE CORPUS ALREADY KNEW THIS.** The same wave's own diff writes
+*"Rule 625, Situation 10"* three lines from where it converted the other form —
+**the per-rule shape, used correctly and unremarked.**
+
+### ⚠️ WHAT THIS COST, AND WHAT IT DID NOT
+
+**A wave converted EIGHT sites from the precise form to the ambiguous one, on this
+false premise.** ⚠️ **Nothing is misstated and no reader is misled — both forms
+resolve — so it is not a defect to rush at.** ⚠️ **But the premise was recorded as
+SETTLED and would have been quoted by whoever did the sweep.**
+
+- [ ] ⚠️ **The propagation direction is now REVERSED: the owner should adopt
+  `"Rule NNN, Situation N"`, not the other way round.** ⚠️ **Do it in ONE pass** —
+  `rink_map.md`, `language_and_glossary.md` and the eight converted sites.
+  ⚠️ **Verify the numbering claim against `sources/usah_casebook.txt` yourself
+  first. It has now been asserted two ways in this file, and one of them was wrong.**
 
 ⚠️ **An agent holding one of the six deliberately LEFT it on the majority form**
 rather than create a three-way split mid-round. **That was the right call** — this
