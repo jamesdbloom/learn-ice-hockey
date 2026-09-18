@@ -1,5 +1,48 @@
 # Local-only NotebookLM podcast automation plan
 
+## ⚠️ FOUR EPISODES GENERATED AND UNCOLLECTED, and the teaching-depth fix HELD
+
+**State at 09:00, 18 September 2026.** Chrome recovered after an outage of several
+hours. Four NotebookLM notebooks show a generated episode, none collected:
+
+| Notebook title | Document | Length |
+|---|---|---|
+| *The Seven Pillars of Ice Hockey Mastery* | `core_principles` | **44:33** |
+| *The invisible map of hockey rinks* | `rink_map` | not read |
+| *The hidden ninety-six percent of hockey* | not identified | not read |
+| *Essential On-Ice Communication and Safety Rules* | `on_ice_communication` | not read |
+
+### ⚠️ THE ONE MEASUREMENT THAT MATTERS: constraint 12 worked
+
+**`core_principles` v4 runs 44:33. v3 ran 18 minutes.**
+
+That is the constraint-12 experiment resolving. The accuracy constraints had
+**suppressed teaching depth as a side effect** — v3 came back at 18 minutes against
+the previous attempt's 43, having correctly stopped inventing and **wrongly also
+stopped teaching**. Constraint 12 was written to say, in terms, that the accuracy
+constraints forbid adding new FACTS and say nothing whatever against length, depth,
+repetition or teaching structure.
+
+**v4 is back to 44:33.** ⚠️ **Length is a proxy for teaching depth, not a
+measurement of it, and it says NOTHING about accuracy** — `rink_map` v4 was the
+longest episode ever produced and still failed its review. **Do not read this as a
+GO.**
+
+- [ ] Collect all four, transcribe with `whisper.cpp`, and measure word counts.
+  ⚠️ **Whisper mangles proper nouns** — *"Brodeur"* came out *"Brodua"* and a grep
+  for the correct spelling returned zero on an episode that contained the
+  fabrication four times. **Never grep for an exact name; search semantically and
+  read the context.**
+- [ ] ⚠️ **Review must be a RULEBOOK pass, not a source-comparison pass.** That is
+  the only method that would have caught six of v3's ten defects, and it raises the
+  standing per-episode review cost permanently. **Price it in before any decision to
+  scale generation.**
+
+⚠️ **This does not change the direction below.** Four generations have been NO-GO,
+the failure mode has shifted to transmission errors that look sourced, and the
+browser workflow still cannot be parallelised or cheaply re-run. **A longer episode
+that is still wrong is not progress on the thing that blocks publication.**
+
 ## ⚠️ DIRECTION UNDER CONSIDERATION, 18 September 2026 — SCRIPT OUR OWN, and stop treating NotebookLM as the only producer
 
 **This section is the owner of the own-scripted direction. Everything below it in
