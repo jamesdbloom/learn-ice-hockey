@@ -935,3 +935,79 @@ ten-item ceiling, rate-limit backoff, failure recovery, conversion validation,
 and no accidental writes to public files or shared manifests. A real batch still
 requires the user's approval before public redistribution and must observe
 NotebookLM's current terms.
+
+## ⚠️⚠️ POLLY IS NOT BLOCKED — it was reachable all along via an SSO profile, and a SHELL ALIAS hid it
+
+**Found 18 September 2026, after this plan and a status report to the owner both said the
+TTS half was blocked pending a key.**
+
+⚠️ **`tts_sample.py` reads credentials from the ENVIRONMENT ONLY**, and every TTS variable
+is unset (`GEMINI_API_KEY`, `ELEVENLABS_API_KEY`, `OPENAI_API_KEY`, `AWS_ACCESS_KEY_ID`).
+**That is what "blocked" was based on, and it was wrong** — AWS credentials here are an
+**SSO profile**, not environment variables:
+
+```
+aws configure list-profiles   →  … ice-hockey
+```
+
+**Verified working:** `sts get-caller-identity` returns an assumed `AdministratorAccess`
+role, and `polly describe-voices --engine generative` returns **en-GB generative voices —
+`Amy` and `Brian`.** ⚠️ **en-GB matters here: the IIHF is Britain's book and this corpus is
+written for a British reader.**
+
+- [ ] ⚠️ **`tts_sample.py` should accept an AWS PROFILE, not only environment credentials.**
+  It reported Polly as available because boto3 would have found the profile — but **boto3 is
+  not installed** (`ModuleNotFoundError: No module named 'boto3'`), so the only working path
+  today is the **CLI**. **A tool that checks for env vars will keep reporting a false
+  blocker on this machine.**
+
+### ⚠️ THE SHELL TRAP — a third instance of the class `CLAUDE.md` already documents twice
+
+`aws` on this machine is a **zsh alias**, not a binary:
+
+```
+aws: aliased to DYLD_LIBRARY_PATH=/opt/homebrew/opt/expat/lib aws
+```
+
+⚠️ **`command -v aws` RETURNS THE ALIAS TEXT**, so a script that resolves the binary that
+way builds a command line beginning `alias aws='…'` and fails with
+`no such file or directory` — **naming a file that is obviously not a path.**
+
+**This is the nvm shim trap again** (`CLAUDE.md` records it for `node` and `npm`, both zsh
+**functions**). ⚠️ **Three tools on this machine now shadow their binaries from the shell,
+and the failure mode differs each time — 127 with a wrapper reporting 0, a silent stale
+build, and now a quoted alias treated as a filename.** **The remedy is the same one already
+written down: use the absolute binary.**
+
+```
+/opt/homebrew/bin/aws            # also at /usr/local/bin/aws and /opt/homebrew/opt/awscli/bin/aws
+export DYLD_LIBRARY_PATH=/opt/homebrew/opt/expat/lib   # the alias exists to set this — it is required
+```
+
+⚠️ **Do NOT drop the `DYLD_LIBRARY_PATH` export.** The alias exists to set it; that is the
+whole reason someone wrote the alias.
+
+### Measured, not estimated
+
+| | |
+|---|---|
+| Sample | `body_contact_and_battles` speech chunk 109 — 8 `Rule:` facts, no prose |
+| SSML in | 3,033 bytes · **`RequestCharacters` billed: 2,554** |
+| Engine | `generative`, voice `Amy`, `en-GB`, MP3 |
+| Out | 1,110,860 bytes · **185.1 s (3m05s)** · 48 kbps |
+| Cost | **$0.077** at generative's $30/M billed characters |
+
+⚠️ **`RequestCharacters` (2,554) is 16% BELOW the raw SSML byte count (3,033) — Polly does
+not bill the tags.** **Every cost estimate in this plan computed from SSML file size is
+therefore HIGH by roughly that margin.** Bill from `RequestCharacters`, which the API
+returns on every call.
+
+⚠️ **The SSML this corpus emits is accepted by the generative engine as-is** — `<speak>`,
+`<p>`, `<break>`, `<say-as>` all passed. **No `<emphasis>` appears in the render**, which is
+what would have been rejected (`InvalidSsmlException: Unsupported Generative feature`).
+
+- [ ] **Still genuinely blocked, and still needs the owner:** the **Whisper model**
+  (`~/whisper-models/ggml-base.en.bin`, ~148 MB — the directory does not exist) for
+  verifying collected episodes, and **any non-AWS key** if the comparison against Gemini,
+  ElevenLabs or Chirp 3 HD is still wanted. ⚠️ **Polly alone no longer blocks producing
+  listenable samples, and that was the binding constraint on the owner hearing anything.**
