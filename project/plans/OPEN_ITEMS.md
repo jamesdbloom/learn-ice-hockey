@@ -3211,6 +3211,83 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   `PODCAST_AUTOMATION_LOCAL.md`; do not make batch generation part of the
   readability release gate unless pilot audio is being regenerated.
 
+## ⚠️ RULES REVIEW OF THE 18 SEPTEMBER REPAIR WAVE — the correction is right, three things are not
+
+**The headline is CONFIRMED.** `shooting.md`'s bolded Overview claim was wrong and
+its replacement is correct **in all four books**, each verified in its own layer:
+IIHF **rule text** 1.7, USA Hockey's **Note** to 625(b) plus **Casebook Rule 103
+Situation 4**, Hockey Canada's **Glossary** (identical in both extractions, so not
+an artefact), and the NHL **silent in rule text** with **Reference Table 14
+Situation 5 E** answering the other way.
+
+⚠️ **The negative was ATTACKED, not assumed.** Over de-hyphenated, whitespace-flattened
+copies of **both** NHL extractions: `part of the crease` **0**, `belongs to` **0**,
+`including crease` **0**, `inside edge` **0**, `outside edge` **0**. `crease line`
+returns **4**, every one accounted for. **No fifth site.**
+
+✅ **And no document says *"three books' rule text"*** — every site names the layer
+individually. **The class repaired four times is not present.**
+
+### ⚠️ THREE DEFECTS — all open
+
+1. ⚠️⚠️ **THE COMPRESSION INTRODUCED A PRECISION LOSS.** `zone_entries.md:327` and
+   `:374` now attach **USA Hockey 607(c)** to a sentence whose subject is
+   **incidental** contact. **607(c) reaches *"body checks or charges"* only.** Its own
+   **Note 1 to 607(d)** (`sources/usah.txt:3689-3693`): *"any accidental or
+   unavoidable contact… shall be penalized under the Interference rule. Any
+   **deliberate** body contact or check… shall be penalized as charging."*
+   **Incidental contact is 625(a)(8), a minor.** The pre-compression text quoted the
+   trigger; the compressed text does not. ⚠️ **Direction is CONSERVATIVE — it
+   over-warns, so no reader is hurt or penalised by acting on it.** Not a deletion
+   candidate.
+2. ⚠️ **`center.md:369`, a `Rule:` fact voiced ALONE**, says the NHL's rule text does
+   not say and *"its Reference Table 14 answers the other way"* — ⚠️ **but the IIHF's
+   OWN Table 16 answers it the other way in identical terms**
+   (`sources/iihf_rules_v1.1.txt:9941-9945`). **A listener hearing this alone
+   concludes the IIHF's answer is clean and only the NHL's table dissents.** Every
+   prose site in that file says the IIHF *"answers the same play in two directions"*;
+   **this layer does not.**
+3. ⚠️ **`shooting.md:495`, a `Never:` fact**, names USA Hockey and Hockey Canada —
+   **but not the IIHF, which is the British reader's book and the only one of the
+   three answering in RULE TEXT.**
+
+### ✅ THREE ADDITIONS THAT WOULD STRENGTHEN THE CORPUS — none is an error
+
+- ⚠️ **The most explicit sentence in any of the four books is not quoted anywhere.**
+  USA Hockey Casebook Rule 103 Situation 4's **second** sentence
+  (`sources/usah_casebook.txt:1574-1575`): *"The goal crease area includes the space
+  bounded by the **OUTSIDE EDGES** of the semi-circular crease lines."*
+- ⚠️⚠️ **CASEBOOK RULE 103 SITUATION 5 ANSWERS THE CORPUS'S WHOLE INSTRUCTION IN
+  TERMS, FROM THE GOVERNING BODY, ABOUT REAL RINKS — and no document cites it**
+  (`sources/usah_casebook.txt:1579-1587`): *"In many cases, only a truncated version
+  of the crease is shaded blue, but the edges of the USA Hockey crease are still
+  marked with a red line. This area **MUST BE CONSIDERED PART OF THE CREASE** even
+  though it may not be shaded blue."* **This is direct support for *"off the red, not
+  merely out of the blue."***
+- **A FIFTH book answers it and agrees.** CARHA: *"The lines which designate these
+  areas are to be considered as part of the creases."* `shooting.md:829` already
+  cites CARHA as *"a fifth book, stricter still"* without saying this. **Four of
+  five, not three of four** — scoped to CARHA-affiliated leagues.
+
+### Nits
+`center.md:754` and `shooting.md:916` cite `usah.txt:4509`; the Note **begins at
+`:4508`**. And the corpus labels one Casebook situation two ways — *"at The Rink,
+Situation 4"* (`rink_map.md:188`) versus *"Rule 103, Situation 4"*. **Both resolve.**
+
+### ⚠️ What the review could NOT settle
+- ⚠️ **The NHL rulebook's rink DIAGRAM on page iv is an IMAGE that Rule 1.7
+  cross-references.** If the NHL answers this anywhere, it is there, **and no grep of
+  either extraction can see it.** The corpus's *"the NHL's rule text is silent"* is
+  therefore the honest form and must not be strengthened to *"the NHL is silent"*.
+- The new negative at `:306` — *"no book of the four ranks one layer of itself
+  against another"* — **was attacked across 12 precedence terms in four books and
+  nothing contradicts it.** ⚠️ **Unconfirmed but well-attacked; not a deletion
+  candidate.** The IIHF *Situation Handbook* ranks itself below the Rulebook, but
+  that is a separate document, not a layer within one.
+- **No league bulletin was searched.** `ihuk_*_roc`, `eiha_inhouse_2026-27.txt` and
+  `eih_rr.txt` were not checked for a crease provision, and the EIHL Casebook and
+  IHUK Rule Bulletins are **not on disk**.
+
 ## ⚠️⚠️ `AGENTS.md` AND `.agents/` ARE STALE DUPLICATES OF THE PROJECT'S INSTRUCTIONS — UNTRACKED, UNIGNORED, AND DIVERGING
 
 **Found 18 September 2026** after sitting untracked in `git status` all day while
