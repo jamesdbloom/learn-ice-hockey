@@ -526,15 +526,36 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   paragraphs and zero unrecognised constructs.
   **28 of 39 documents now checked across three batches, all disjoint,
   two real defects found total (both fixed and confirmed).**
-- [ ] 11 of 39 documents remain unchecked by this sampled method:
-  `time_and_space.md`, `puck_support_and_spacing.md`, `conditioning_and_recovery.md`,
-  `how_to_watch_hockey.md`, `mental_game.md`, `practice_and_development.md`,
-  `reading_ice_hockey_diagrams.md`, `puck_handling.md`, plus the unread 7 of
-  10 sections of `rules_primer.md` and Key Takeaways 6+ in that same
-  document. **Genuinely still open**: completing that coverage, and —
-  separately, never attempted by any pass so far — cross-document (not just
-  intra-document) consistency between two different documents' Key focus
-  sections.
+- [x] **DONE, 18 September — the final batch, closing full coverage.** The
+  remaining 8 documents (`time_and_space.md`, `puck_support_and_spacing.md`,
+  `conditioning_and_recovery.md`, `how_to_watch_hockey.md`, `mental_game.md`,
+  `practice_and_development.md`, `reading_ice_hockey_diagrams.md`,
+  `puck_handling.md`) plus the rest of `rules_primer.md` (sections 1, 2, 3,
+  5–10 and Key Takeaways 6–10) were all read and cross-checked. No Critical
+  or Major findings. Two Minor, non-misleading gaps named: `how_to_watch_hockey.md`'s
+  Key Focus states a six-item statistics checklist where Overview and Key
+  Takeaways state seven (missing the "eye test" criterion); `rules_primer.md`
+  names the same league two ways across layers ("women's NIHL" in Key Focus/
+  Key Takeaways vs. "WNIHL" in the comparison table), substance identical,
+  formal name lost to a listener who hears only the summary layers. Neither
+  fixed — both are additive completeness gaps, not contradictions, and
+  low-priority. `md_to_speech.py` spot-checks on 4 more documents found zero
+  dropped verification paragraphs; `rules_primer.md`'s large comparison
+  table renders as a spoken pointer by design (the prose says so explicitly
+  and names the owning section), not a defect.
+  **39 of 39 documents now checked, across four disjoint batches. Two real
+  defects found and fixed in the entire rollout** (the body_contact_and_battles.md
+  helmet-instruction gap, the team_play_and_culture.md Hockey Canada
+  carve-out) — a strong result for a same-day bulk rollout across the whole
+  corpus, though every batch flagged the same caveat: this checks a
+  document's own layers against each other, not against primary rulebook
+  text (rules-verifier's job) or external citations (source-verifier's job).
+  **Genuinely still open, never attempted by any pass**: cross-document (not
+  just intra-document) consistency between two different documents' Key
+  focus sections, and a dedicated safety-reviewer pass specifically on
+  `conditioning_and_recovery.md`, which batch 4 flagged as carrying an
+  unusual density of contact/concussion-adjacent content without having had
+  one recently.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
