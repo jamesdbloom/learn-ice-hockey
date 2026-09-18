@@ -3266,6 +3266,46 @@ page-furniture class again, in a NEW book and a NEW rule.** `sources/README.md`
 records the class; this is another instance, and **a flattened grep is not enough on
 its own.**
 
+## ⚠️ A DOCUMENT CARRIES THE BLOCKER'S COST AND NOT THE SCREENER'S — and it is a SECOND instance
+
+**Found 18 September by a coordinator census after a `safety-reviewer` found the same
+asymmetry in a different document.**
+
+`technique/body_contact_and_battles.md` §9 told a player to stand in the shot lane
+**four times** and said nothing about what that exposes, while **§11 of the same file
+carried the identical exposure for shot BLOCKERS in both its facts layer and its
+prose**, with an Equipment pointer. **Repaired this round** — body, Common Mistakes
+and Key Takeaways. ⚠️ **It could NOT reach the facts layer: that block is at
+`HARD_MAX` 11 and its lead line has three characters left. Recorded, not forced, no
+caveat evicted.**
+
+⚠️ **`positions/winger.md` has the same asymmetry and is untouched.**
+
+| | Blocking | Screening |
+|---|---|---|
+| `winger.md:581` (body), `:663` (Common Mistakes) | ✅ *"head out of the lane"*, *"hands behind your body with the backs of the gloves out"*, the going-down form, when **not** to block | — |
+| `winger.md:535` (**`Action:` facts, voiced alone**), `:549` (body) | — | ❌ *"get in the goalie's eyes"* — **no cost named anywhere in the file** |
+
+⚠️ **A grep of that document for `close range`, `puck's path`, `protection`,
+`deflect`, `released`, `upright` returns only BLOCKING material.**
+
+- [ ] Decide whether `winger.md` owes the screener's counterweight, or whether
+  pointing at the owner is enough for a positions document. ⚠️ **The owner is
+  `hockey-iq/playing_without_the_puck.md:594`/`:603`**, which carries both the
+  side-by-side comparison and the disclosure *"No injury rate for screening is
+  published in any source held here"*. ⚠️⚠️ **DO NOT SUPPLY A RATE — non-negotiable
+  1.** The truthful, unsourced-free material is: *close range* · *upright* · blade in
+  the lane to tip · know when the puck is released · head and face protection **right
+  rather than nearly right**.
+  ⚠️ **Check the block's headroom FIRST** — `python3 scripts/check_facts.py --near`.
+
+⚠️ **THE CENSUS THAT FOUND IT IS MOSTLY NOISE, and that is worth recording.** A sweep
+for screening instructions naming no cost returns **25 lines**, of which nearly all
+are **correct**: glossary definitions, diagram markers, the **defensive** side
+(*"move out of the sightline yourself"*), vocabulary scoping, a self-check question,
+and the owner document itself — **where the cost sits in the same section.** ⚠️ **Only
+reading separates them. Do not sweep this pattern.**
+
 ## ⚠️⚠️ THE CAP IS THE CORPUS'S BINDING CONSTRAINT — 107 BLOCKS ARE FULL, AND IT IS NOW CAUSING DEFECTS
 
 **Measured 18 September 2026 after a `facts-reviewer` traced FIVE of its SIX majors to
