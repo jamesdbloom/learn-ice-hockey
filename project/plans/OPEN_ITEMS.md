@@ -3211,6 +3211,48 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   `PODCAST_AUTOMATION_LOCAL.md`; do not make batch generation part of the
   readability release gate unless pilot audio is being regenerated.
 
+## ⚠️⚠️ `AGENTS.md` AND `.agents/` ARE STALE DUPLICATES OF THE PROJECT'S INSTRUCTIONS — UNTRACKED, UNIGNORED, AND DIVERGING
+
+**Found 18 September 2026** after sitting untracked in `git status` all day while
+every wave stepped around them.
+
+- **`AGENTS.md` is a 40 KB copy of `CLAUDE.md`**, dated **17 September**.
+  **Diverged by 58 lines**, and its script inventory is missing **four** tools —
+  `check_caption_hosts.py`, `check_facts_antecedents.py`, `podcast_queue.py`,
+  `tts_sample.py`.
+- **`.agents/skills/notebooklm-episode/` mirrors `.claude/skills/`**, and its
+  `prompt_constraints.md` **differs by 237 lines** — ⚠️ **it predates the accuracy
+  and teaching-depth constraints added this week, including the one written after
+  an episode collapsed from 43 minutes to 18.** It also has no `scripted-episode`
+  skill.
+- ⚠️ **Neither is gitignored.** `git check-ignore` returns nothing — they were
+  simply never added. **So every `git status` all session showed them, and
+  `git add -A` would take both**, which is one more reason the blanket-staging ban
+  exists.
+
+⚠️⚠️ **THIS IS THE `pathways.json` DEFECT SHAPE, APPLIED TO THE INSTRUCTIONS
+THEMSELVES.** That file refuses to copy a maintained list into site data because it
+*"would create a second, unreviewed copy of a maintained list"* and *"would put the
+caveats on the wrong side of the copy."* **These duplicates are exactly that, for
+the file that carries every non-negotiable.**
+
+⚠️ **The failure is not staleness, it is ROUTING.** An agent tool that reads
+`AGENTS.md` — the cross-tool convention some runners use instead of `CLAUDE.md` —
+**gets yesterday's non-negotiables, yesterday's build traps and a tool inventory
+four short.** It would not know `check_facts_antecedents.py` exists, and a tool
+nobody knows about does not get run. **The copy is silently authoritative for
+whoever reads it.**
+
+- [ ] ⚠️ **OWNER DECISION, NOT THE COORDINATOR'S — it is outward-facing and
+  deleting is hard to reverse (non-negotiable 9).** Three options:
+  **(a)** delete both, if no tool here reads them;
+  **(b)** replace each with a **one-line pointer** to `CLAUDE.md` and
+  `.claude/skills/`, which is the only version that cannot go stale;
+  **(c)** generate them from the originals in a build step, so divergence is
+  impossible rather than merely discouraged.
+  ⚠️ **Do NOT simply re-copy today's version — that recreates the same defect with
+  a fresher date, and the next edit to `CLAUDE.md` reopens it.**
+
 ## Common execution rules
 
 - [ ] ⚠️⚠️ **NEVER WRITE "THE 300-CHARACTER CAP" IN A BRIEF. THERE ARE TWO CAPS.**
