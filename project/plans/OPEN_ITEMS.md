@@ -3211,6 +3211,61 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   `PODCAST_AUTOMATION_LOCAL.md`; do not make batch generation part of the
   readability release gate unless pilot audio is being regenerated.
 
+## ⚠️⚠️ A FABRICATION TRAVELLED THROUGH A REVIEW REPORT INTO A BRIEF, AND ONLY THE IMPLEMENTING AGENT CAUGHT IT
+
+**18 September 2026. The most important process finding of the round.**
+
+A `safety-reviewer` wrote, in a report otherwise verified to an unusually high
+standard: *"Read with **IIHF 42.4** (`:3962-3966`), a major carries an automatic game
+misconduct."* **The coordinator relayed it into a repair brief. Neither checked it.**
+
+**What IIHF 42.4 actually says** (`sources/iihf_rules_v1.1.txt:3960-3964`, read by the
+coordinator after the catch):
+
+> *"The Referee, **at their discretion, may** assess a major penalty and a game
+> misconduct penalty if, in their judgment, the Player recklessly endangers their
+> opponent by **"charging"** and the Player **would not be sufficiently sanctioned by
+> imposing a major penalty**."*
+
+⚠️ **Wrong three ways: it is DISCRETIONARY, not automatic; it is keyed to CHARGING,
+not to any major; and it is CONDITIONAL on a major being insufficient.**
+
+⚠️⚠️ **The brief would have put an invented automatic ejection into TWO paragraphs of
+a document teaching a collision sport.** That is non-negotiable 1 — **and it was
+caught by the agent asked to implement it, not by the reviewer who wrote it or the
+coordinator who relayed it.**
+
+### The lesson, and it is NOT "check harder"
+
+⚠️ **A claim in a REVIEW REPORT is not verified merely because a reviewer wrote it.**
+This one arrived **with a line range attached**, which is exactly what made it look
+sourced — the citation was real, the rule was real, and the *characterisation* was
+invented. **The corpus's own TRANSMISSION-error class, committed in a review report
+rather than in content.**
+
+⚠️ **The existing instruction is what saved it:** *"Give every agent the plan row as a
+hypothesis and tell it to refute the brief before acting on it."* **The agent
+refuted a rulebook claim its brief asserted, and was right.**
+
+- [ ] **Dispatch rule, to apply from now:** ⚠️ **when a brief carries a rulebook claim
+  taken from a REPORT rather than from the books, say so in the brief and mark it
+  unverified.** The implementing agent then knows which claims are evidence and which
+  are relay. **Do not launder a report's characterisation into a brief's assertion.**
+
+⚠️ **Two smaller relay failures in the same brief, both caught by the same agent:**
+its sketch **silently dropped the very limb the brief itself raised**, and its
+character figure was wrong (292, not 289) so the proposed fix **did not fit**.
+
+### ⚠️ And another false-negative grep, in the same session
+
+**IIHF 69.2's quoted phrase returns ZERO on a flattened grep** of
+`sources/iihf_rules_v1.1.txt` — the running header `SECTION · OTHER INFRACTIONS` and
+a page number are spliced **between *"whether or not the goalkeeper"* and *"is inside
+or outside"***. With furniture stripped it returns 1. ⚠️ **That is the documented
+page-furniture class again, in a NEW book and a NEW rule.** `sources/README.md`
+records the class; this is another instance, and **a flattened grep is not enough on
+its own.**
+
 ## ⚠️⚠️ THE CAP IS THE CORPUS'S BINDING CONSTRAINT — 107 BLOCKS ARE FULL, AND IT IS NOW CAUSING DEFECTS
 
 **Measured 18 September 2026 after a `facts-reviewer` traced FIVE of its SIX majors to
