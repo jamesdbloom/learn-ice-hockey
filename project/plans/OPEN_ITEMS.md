@@ -1840,6 +1840,61 @@ has not been reviewed.**
 
 ## Workstream 2M: the flattened cross-book parallel — a new class
 
+### ⚠️ NEW, 18 September — the IIHF crease-line divergence flattened in the SPOKEN facts layer, corpus-wide
+
+**Found while reviewing the `zone_entries.md` crease repair.** The IIHF answers
+one question in two directions: **Rule 1.7** says *"The marked line belongs to the
+Goal Crease"*, while **Appendix IV Situation 5 E** allows the goal for an attacker
+planted *"on the crease line"*. ⚠️ **Table 16 in the 2025/26 edition, renumbered
+Table 14 in 2026/27** — `sources/README.md:137` records that a bare "Table 16"
+resolves against the *current* book to Overtime, so the edition must be named.
+
+**Reproduce the census** (do not quote a count from this row — run it):
+
+```bash
+# every ```facts line stating the crease line, and whether its document
+# discloses the IIHF's internal contradiction anywhere
+grep -rn 'crease line' content/ | grep -viE '^\S+:[0-9]+:\*?Rink specifications|Rules:'
+```
+
+**What the census found on 18 September, in kind rather than in total.** Every
+document that states the rule **does** disclose the contradiction *somewhere* — so
+this is **not** a corpus that gets the rule wrong. ⚠️ **But only two facts lines
+carry the hedge IN THE LINE** (`offensive_zone_play.md:538` and
+`shooting.md:452`), and **a facts line is voiced alone, in its own `<p>`, with a
+300 ms break either side.** The rest state the three-book agreement flat.
+
+⚠️ **The best form in the corpus is `body_contact_and_battles.md:1068`**, which
+puts *"the red crease line is unsettled"* **inside the facts line itself**. That is
+the shape to propagate, and it already exists — nothing needs inventing.
+
+⚠️ **`special_teams.md` is the sharpest case and shows why a document-level grep
+clears it wrongly.** `:97` states the IIHF settled; `:1035` is a *different facts
+block*, ~940 lines away, stating *"NHL Table 14 and IIHF Table 16 answer 'Goal is
+allowed' at 5C and 5E."* **Both are spoken, neither is near the other, and a
+listener never hears them reconciled.** A document grep sees a hedged document. A
+**layer test** sees two facts lines in tension.
+
+- [ ] Bring the flat facts lines into line with
+  `body_contact_and_battles.md:1068`'s form. Candidates from the census:
+  `playing_without_the_puck.md:585`, `special_teams.md:97`,
+  `zone_entries.md:294` (already dispatched as part of its own repair), and
+  `center.md:368`. **Verify each line number before acting — they go stale.**
+  ⚠️ **Acceptance is NOT "mention Situation 5 E".** It is that a listener hearing
+  the line **alone** does not take away a settled rule the corpus's own owner
+  document calls unsettled.
+  ⚠️ **DELETE NOTHING and do not weaken the instruction.** Staying off the line is
+  the conservative reading under either answer, every document already says so,
+  and the IIHF contradiction is an argument **for** the instruction, not against
+  it. This is an attribution fix, not a rule change.
+  ⚠️ **Check headroom first** — the cap is 300 characters and `check_facts.py`
+  enforces it; `offensive_zone_play.md:538` shows the hedged form fits in ~255.
+
+- [ ] ⚠️ **The shared diagram caption flattens it too**, and four captions carry
+  it — see Workstream 4D's second row. Same defect, different layer, and it must
+  not be fixed by editing the constant without checking its importers.
+
+
 **Owner:** coordinator found it; `rules-verifier` was dispatched on
 `positions/goaltender.md`, `defender.md`, `center.md`, `winger.md`.
 **Evidence:** both books read on disk 16 September; wording quoted below.
