@@ -855,13 +855,19 @@ waived**.
   matrix reference, the fuller measurement set (see above), a complete
   changed-file list, and explicit in/out-of-scope declarations for
   facts-reviewer and site-reviewer.
-- [ ] ⚠️ **NOT DONE — the second clearest remaining gap.** No corpus-wide
-  cross-document read of principles, summaries, facts, captions, and audio
-  together has run since the Key Focus rollout. `md_to_speech` rendering and a
-  site build were both explicitly skipped for this wave. **Genuinely open and
-  actionable** — this is what "rollout complete" actually requires before it
-  can be declared, on top of resolving the still-unmet Workstream 1 pilot
-  gate this rollout ran ahead of.
+- [x] **DONE, 18 September.** The corpus-wide cross-document read of
+  principles, summaries and facts against the Key Focus rollout has now run
+  in full — four disjoint batches, 39/39 documents, `md_to_speech.py`
+  spot-checks on 11 documents, a dedicated safety-reviewer pass on the one
+  document flagged as under-reviewed, and independent source verification
+  on the one citation flagged as unconfirmed. See this workstream's most
+  recent entries above for the full account. Two real defects found and
+  fixed across the entire rollout; every disclosure and citation checked
+  held up. **What this still does not cover**: cross-document (not just
+  intra-document) Key focus consistency, and a full site build/render — no
+  pass in this round opened a browser or ran the Astro build, so the
+  rendered page and the audio pipeline's actual output remain unverified
+  beyond `md_to_speech.py`'s dry-run report.
 
 ## Workstream 2: safety and rules residuals
 
