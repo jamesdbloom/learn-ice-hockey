@@ -74,6 +74,15 @@ but neither is a clean test of the newly-broadened constraint. **A further
 retry under the broadened constraint is needed before any document is
 accepted or before scaling to the 10-parallel batch.**
 
+`core_principles`'s retry (title "The hidden ninety-six percent of hockey" —
+a bare percentage baked into the title is exactly the shape of invented
+statistic constraint 9 targets, so this is being checked with particular
+care) and `on_ice_communication`'s first attempt (title "How specific calls
+save your neck") both finished generating, were downloaded, installed as
+their masters (old files backed up to scratchpad), converted and transcribed
+locally, and dispatched to fresh `rules-verifier` + `safety-reviewer` pairs.
+Results not yet in.
+
 ⚠️ **Operational finding: the NotebookLM notebook's own "Generating Audio
 Overview... Come back in a few minutes" status panel can go stale and keep
 showing "generating" long after the audio has actually finished** — one

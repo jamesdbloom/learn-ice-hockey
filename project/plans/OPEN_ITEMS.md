@@ -452,6 +452,41 @@ work. **Design specification:** `READABILITY_AND_DUAL_AUDIENCE.md`.
   actual acceptance test is task-based usability testing with real human
   participants across six audience strata — nothing here substitutes for
   that, and the record says so plainly.
+- [x] **DONE, 18 September — the corpus-wide cross-document layer read this
+  plan flagged as "the second clearest remaining gap" (see the Content-family
+  waves section below) has now had a first pass, sampled rather than
+  exhaustive.** A `content-reviewer` agent read 9 documents across 6 of the 8
+  `content/` directories in full (body, Key focus, facts blocks, Common
+  Mistakes, Key Takeaways, and — for 2 of them — actual rendered `md_to_speech`
+  audio chunks), checking whether the 17 September Key Focus rollout's new
+  sections agree with the rest of each document. **Six documents confirmed
+  clean** (`forechecking_systems.md`, `body_contact_and_battles.md`'s
+  checking-from-behind passage, `risk_management.md`, `faceoffs.md`,
+  `special_teams.md`, `neutral_zone_systems.md`, `core_principles.md` — every
+  prior rollout-fix's propagation held layer-to-layer). **Two Major findings,
+  both now dispatched for fix/verification:**
+  (1) `team_play_and_culture.md`'s Key focus states a Hockey Canada
+  dispute-conduct carve-out ("needs the dispute to be conducted in an
+  unsportsmanlike manner") that appears nowhere else in the document — not
+  the body's "What gets you a penalty" list, not Common Mistakes, not Key
+  Takeaways, not the Sources trailer — making it new authoring rather than a
+  promotion of existing content, and currently unsourced within the document
+  itself. A `rules-verifier` pass is checking the claim against Hockey
+  Canada's primary rulebook text before deciding whether to propagate it
+  (if true) or flag/remove it (if not verifiable).
+  (2) `body_contact_and_battles.md`'s `## Overview` section stated the
+  head/neck-injury protocol without the "helmet stays on — no exception"
+  clause that the same document's Key focus, Key Takeaway 8, and dedicated
+  safety section all carry — a listener hearing only the Overview's audio
+  chunk would miss it. **Fixed directly** (single-sentence addition matching
+  existing wording elsewhere in the same document) and sent to
+  `safety-reviewer` for confirmation, not yet returned.
+  9 of 39 documents is not full coverage — 30 remain unchecked by this
+  method, including all of `getting-started/`, `reading-diagrams/`, and four
+  of five `positions/` documents. **Genuinely still open**: extending this
+  read to the remaining 30, and — separately, never attempted by this
+  pass — cross-document (not just intra-document) consistency between two
+  different documents' Key focus sections.
 
 ## Workstream 1E: safety defects in text written 16 September — CLOSED
 
