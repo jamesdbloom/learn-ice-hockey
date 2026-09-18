@@ -333,9 +333,67 @@ def report_hedges(paths: list[Path]) -> None:
     print("Advisory only — verify each by hand; some are covered in other words.")
 
 
+def report_near(paths, scope, margin: int = 6) -> None:
+    """List facts lines with `margin` characters or fewer left before their cap.
+
+    ⚠️ NOT A GATE AND NOT A DEFECT LIST. Sitting near the cap is legal and often
+    unavoidable. This answers one question before anyone edits a block: **is there
+    room?**
+
+    ⚠️ IT EXISTS BECAUSE A FULL BLOCK EVICTED A RULEBOOK FACT AND NOTHING SAW IT.
+    On 18 September 2026 a block at ``HARD_MAX`` forced a mandatory give-ground duty
+    out of a ``Rule:`` fact and into a ``Technique:`` line, with no rule number and
+    no penalty — voiced alone it read as a coaching preference. **The eviction looked
+    like a clean edit and passed every checker**, which is the whole problem: a
+    traded-away caveat is invisible, and only the person making the trade knows.
+
+    ⚠️ THE FIGURES ARE NOT WRITTEN ANYWHERE. Run it. A coordinator brief the same day
+    said "three lines sit within six characters of their cap"; the real figure was two
+    orders of magnitude out, and **eight lines sat at EXACTLY their cap**. A count of
+    a corpus under active repair goes stale the moment anyone edits a block.
+
+    ⚠️ AND THERE ARE TWO CAPS. ``Rule:`` and ``Convention:`` get ``MAX_LEN_QUALIFIED``
+    because a citation and a hedge are both mandatory; everything else gets
+    ``MAX_LEN``. The length measured is the VALUE, after the ``Label: `` prefix —
+    a brief that measures the raw line is wrong by the label's width.
+
+    ⚠️ Before deciding a line "cannot fit", try SUBSTITUTION. Naming a thing is
+    frequently shorter than pointing at it: one repair replaced a vague phrase with a
+    precise one and the line came out SHORTER while gaining an edition stamp.
+    """
+    rows = []
+    for path in paths:
+        doc_id = str(path.relative_to(CONTENT)).removesuffix(".md")
+        if doc_id not in scope:
+            continue
+        blocks, _, _ = parse(path)
+        for block in blocks:
+            body, start = block[2], block[3]
+            for offset, fact in enumerate(body):
+                stripped = fact.strip()
+                if not stripped:
+                    continue
+                m = FACT_RE.match(stripped)
+                if not m:
+                    continue
+                label, value = m.group(1), m.group(2)
+                limit = MAX_LEN_QUALIFIED if label in QUALIFIED else MAX_LEN
+                left = limit - len(value)
+                if left <= margin:
+                    rows.append((left, doc_id, start + offset + 1, label, len(value), limit))
+    rows.sort()
+    at_cap = sum(1 for r in rows if r[0] <= 0)
+    print(f"check_facts --near: {len(rows)} facts lines within {margin} characters of "
+          f"their cap, of which {at_cap} are AT it")
+    for left, doc_id, line, label, length, limit in rows:
+        flag = "  <-- AT CAP" if left <= 0 else ""
+        print(f"  {left:>3} left  {doc_id}:{line}  [{label}]  {length}/{limit}{flag}")
+
+
 def main() -> int:
     scope = in_scope()
-    args = [a for a in sys.argv[1:] if a != "--hedges"]
+    flags = {"--hedges", "--near"}
+    args = [a for a in sys.argv[1:] if a not in flags]
     if args:
         paths = [Path(a).resolve() for a in args]
     else:
@@ -343,6 +401,11 @@ def main() -> int:
 
     if "--hedges" in sys.argv[1:]:
         report_hedges([p for p in paths if str(p.relative_to(CONTENT)).removesuffix(".md") in scope])
+        return 0
+
+    if "--near" in sys.argv[1:]:
+        # ⚠️ Reporting path only — never changes the gate's exit code.
+        report_near(paths, scope)
         return 0
 
     problems, checked, total_blocks, total_facts = [], 0, 0, 0

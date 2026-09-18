@@ -307,6 +307,20 @@ The short form:
    text, but it cannot rebuild for you. ⚠️ **Round 58 rewrote ten-plus captions and every clean
    `check_absolutes` run covered the superseded text.**
 
+   ⚠️ **`check_facts.py --near` lists facts lines with six characters or fewer left
+   before their cap.** Run it **before editing any block**, not after. ⚠️ **It exists
+   because a block at `HARD_MAX` evicted a rulebook fact and nothing saw it** — a
+   mandatory give-ground duty was forced out of a `Rule:` fact into a `Technique:`
+   line, with no rule number and no penalty, and voiced alone it read as a coaching
+   preference. **The eviction looked like a clean edit and passed every checker.**
+   ⚠️ **NO FIGURE IS WRITTEN HERE — run it.** A brief on 18 September said "three
+   lines sit within six characters of their cap"; the real figure was two orders of
+   magnitude out and **eight lines sat at EXACTLY their cap**. ⚠️ **And there are TWO
+   caps** — `Rule:` and `Convention:` get 300 because a citation and a hedge are both
+   mandatory, everything else gets 200, **measured on the VALUE after the label**.
+   ⚠️ **Before deciding a line "cannot fit", try SUBSTITUTION** — naming a thing is
+   often shorter than pointing at it.
+
    `check_counts.py --update` is the last step before staging, **after** the final
    `content/` edit — `project/` edits cannot move the figure, so it converges.
 
