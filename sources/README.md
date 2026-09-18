@@ -763,6 +763,36 @@ they had every reason to expect to find:
 contain the sentence is the normal case here, in every book on disk, and a negative-existence
 claim built on one is worthless.** Read the window with `sed -n`; do not trust a phrase grep.
 
+## ⚠️ `check_quote_drift.py` reports these splices as NOT-FOUND — and the quotations are CORRECT
+
+**This is the operational consequence of mode four, and it had not been written down.** The
+tool matches on alphanumerics only, which defeats the *hyphen* and *line-break* shapes — but
+**it cannot defeat a splice, because a splice inserts WORDS.** So every mode-four instance
+above surfaces in that tool's output as a `not-found`, indistinguishable from a quotation that
+was actually misattributed or drifted.
+
+⚠️ **A `not-found` from `check_quote_drift.py` near a page boundary or a two-column table is
+therefore NOT evidence of a defect, and "repairing" one would corrupt a verbatim quotation.**
+That tool is a worklist, not a gate, and this is exactly why. Two instances were confirmed by
+hand on 18 September 2026 while closing an unrelated row:
+
+- **NHL Rule 42.1, `nhl_rules_layout.txt:4529-4537` — a sixth instance, and the second in an
+  NHL extraction.** *"A minor, major or a major and a game misconduct shall be"* ends one page;
+  *"imposed on a player who charges a goalkeeper while the goalkeeper is within his goal
+  crease"* begins the next. Between them sit a running header
+  (`NATIONAL HOCKEY LEAGUE … OFFICIAL RULES 2025-2026`), the page number `73`, the nav line
+  `Previous Page  Table of Contents  Next Page`, a **form feed**, and the section banner
+  `SECTION 6 – PHYSICAL INFRACTIONS`. ⚠️ **The recorded NHL instance above is Rule 80.1 in
+  `nhl_rules.txt`; this one is a different rule in a different extraction**, so the two files
+  splice independently and neither clears the other.
+- **NHL Appendix Table 14, Situation 5E, `nhl_rules_layout.txt:9286-9290`** — present and
+  legible, but wrapped in a narrow left column with the right column's *"Goal is allowed."*
+  interleaved into the **first line**. Same shape as the IIHF Table 16 interleave recorded
+  above. ⚠️ **Read it with a line range, never a phrase grep.**
+
+**Both were reached from `content/hockey-iq/playing_without_the_puck.md`, whose citations of
+them are verbatim and correct.** No content was changed.
+
 ## ⚠️ `iihf_rules_2026-27.txt` RENUMBERS RULE 46 — a citation that resolves to the wrong rule
 
 **2026/27's Rule 46.3 is ALTERCATION. v1.1's Rule 46.3 is INSTIGATOR / INITIATOR**, and v1.1

@@ -2712,11 +2712,45 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   diagram's build output changed, and confirmed nothing else the old caption
   carried was lost. One stale internal code comment it flagged was also fixed.
   `check_absolutes`, `check_links`, `check_facts`, `check_geometry` all clean.
-- [ ] `screen-the-goalie-sightline` carries an **operative where-to-stand
-  instruction the body does not give in words** — *"keep both feet out of the
-  paint, and off the crease line at its edge, which the IIHF, USA Hockey and
-  Hockey Canada all count as part of the crease."* A caption is the sole carrier
-  of a rule. **Acceptance:** routed into `playing_without_the_puck.md`.
+- [x] **CLOSED 18 September — THE ROW'S PREMISE WAS FALSE. The body was never
+  silent.** `screen-the-goalie-sightline` was recorded as the sole carrier of an
+  operative where-to-stand instruction. A layer test (` ```facts ` lines
+  extracted and tested separately, not a document grep) found
+  `playing_without_the_puck.md` carrying it in **three** spoken layers — body
+  prose at `:596`, the `Position:` facts line at `:585`, and Key Takeaway 7 at
+  `:926` — and carrying it **more richly than the caption does**: the caption
+  names three books, the body names three books *with operative wording and rule
+  numbers* and adds the contrast that the NHL alone leaves it unsaid. All three
+  book quotations re-verified against primary text on disk (IIHF 1.7, USA Hockey
+  Note to 625(b), Hockey Canada Glossary), and NHL 1.7 confirmed to write the
+  near-identical sentence **without** USA Hockey's *"(including crease lines)"*
+  parenthesis. ⚠️ **The row appears to have been written from the caption alone,
+  without reading the owner** — the failure this plan's own "refute the brief"
+  instruction exists to catch, and it was caught by it.
+
+  ⚠️ **The caption STAYS.** `md_to_speech.py:663` voices `"Diagram. " + caption`
+  and nothing else; `describe` is never voiced and there is no cross-caption
+  reference mechanism in speech. Cutting the clause would remove a safety
+  counterweight from a listener's ears while leaving the page unchanged.
+  `check_caption_echo.py`'s docstring category 3 — a safety limb repeated is
+  repeated on purpose — covers it exactly.
+
+- [ ] ⚠️ **THE ROW ABOVE WAS AIMED AT THE WRONG DOCUMENT, AND THE REAL ONE MAY
+  STILL BE OPEN.** The caption string is not local: it is the shared constant
+  `CREASE_LINE_IS_THE_CREASE`, exported from
+  `site/src/diagrams/rule69_clauses.mjs:79` and imported by **four** modules —
+  `playing_without_the_puck.mjs`, `zone_entries.mjs`, `positions.mjs` and
+  `offensive_zone_play.mjs` (verified by `grep -ln` on 18 September). Only
+  `playing_without_the_puck.md` has been layer-tested. **The other three
+  modules' host documents have never been checked, and any one of them could be
+  the sole-carrier case this row was reaching for.**
+
+  ⚠️ **And the shared constant is a trap for whoever acts on it:** editing
+  `CREASE_LINE_IS_THE_CREASE` to fix one caption silently changes **four**
+  captions across three modules. Anyone dispatched here must be told that.
+  **Acceptance:** each host document layer-tested; where its body is genuinely
+  silent, the instruction routed into the body and propagated, with the NHL's
+  silence preserved. Dispatched 18 September.
 - [x] **CLOSED, 17 September.** No source (this document's own Sources trailer,
   a sibling document, or a limited external check) supports the "most children"
   population-scale claim — only that taster sessions commonly use loaner gear,
