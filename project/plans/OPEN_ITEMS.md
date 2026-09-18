@@ -1934,6 +1934,32 @@ body that was read contained a defect.**
   it.** ⚠️ **One-for-one is not a rate** and must not be quoted as one; it is a
   reason to look, not a prediction.
 
+#### ⚠️ NINE MORE EDITION-LESS IIHF TABLE CITATIONS — and a reviewer's claim that did not survive
+
+A `content-reviewer` reported it had enumerated **all 41** IIHF table citations in
+the corpus and that **every one but two carried its edition.** ⚠️ **That did not
+survive contact.** A single-line-window census returns **nine** more candidates:
+
+`foundation/rules_primer.md:414, :695, :1075` · `foundation/uk_rules.md:230, :326` ·
+`positions/goaltender.md:548, :1118, :1458` · `technique/shooting.md:916`
+
+⚠️ **Two are the same species as the Table 16 trap, not noise.** `sources/README.md:137`
+records that old Tables 5/6/7 **merged into one Table 5** in 2026/27 and everything
+from Table 9 shifts **−2**. So a bare **"IIHF Reference Table 6"** and a bare
+**"IIHF Table 13"** (13 → 11) are **edition-dependent exactly as Table 16 is** — and
+like Table 16, a bare number does not fail, it resolves successfully to the wrong
+table.
+
+- [ ] Verify and fix the nine. ⚠️ **Candidates, not findings** — the census is a
+  **single-line regex window** and cannot see an edition carried in a neighbouring
+  paragraph or in a facts line above the hit, so some are probably fine. **Read each
+  in context.** ⚠️ **And it cannot see the inverse defect at all: a citation carrying
+  an edition that is WRONG. Nobody has checked for that.**
+  ⚠️ **Do not "correct" an NHL table number to match an IIHF one** — both books have
+  a Table 14 and they are different tables.
+  ⚠️ **Check the cap before editing a facts line — see the two-cap warning in Common
+  execution rules.** A `Key:` line at 197/200 cannot absorb an edition stamp.
+
 #### ✅ Census that CLEARED a worry — recorded so nobody re-runs it
 
 **Second census, 18 September — the two-book form was down to ONE line, and a
@@ -2918,6 +2944,25 @@ file set, evidence link, and acceptance condition after the readability go/no-go
   readability release gate unless pilot audio is being regenerated.
 
 ## Common execution rules
+
+- [ ] ⚠️⚠️ **NEVER WRITE "THE 300-CHARACTER CAP" IN A BRIEF. THERE ARE TWO CAPS.**
+  `scripts/check_facts.py:76-77`: `MAX_LEN, MAX_LEN_QUALIFIED = 200, 300` and
+  `QUALIFIED = {"Rule", "Convention"}`. **Only `Rule:` and `Convention:` get 300.**
+  `Key:`, `Position:`, `Action:`, `Never:`, `Technique:` and `Options:` get **200**.
+  ⚠️ **And the checker measures the value AFTER the label, not the whole line.**
+
+  ⚠️ **The spec had this right all along** — `project/content_style_guide.md:853`
+  reads *"200 characters at the outside. `Rule:` and `Convention:` may run to 300,
+  because a citation and a hedge are both mandatory."* **The dispatcher did not read
+  it, and told FIVE agents on 18 September that the cap was 300 flat.** One was
+  editing a `Key:` line with **11 characters of headroom, not 111**; it measured
+  rather than trusting the brief, and its fix fitted at 197/200 with 3 to spare.
+  **Had it trusted the brief it would have written a line the checker rejects — or,
+  worse, traded out a caveat it thought it had room to keep.**
+
+  ⚠️ **This is a ROUTING defect, not a diligence one.** A brief that states a wrong
+  constraint produces an agent working to a wrong constraint. **Cite the checker and
+  the style-guide line; do not restate the number from memory.**
 
 - [ ] Before every dispatch, check current `HEAD`, status, exact ownership, and
   whether the plan row is still true. A row is a hypothesis, not evidence.
