@@ -39,6 +39,41 @@ proven to work** — a small validation batch (2-3 documents, including a
 retry of `rink_map` and `core_principles` for a clean before/after) is being
 run before committing the fixed prompt to the full 10-parallel batch.
 
+**Validation batch, first result: NO-GO, 18 September 2026.** `rink_map`
+retry ran under the fixed prompt (source (1) content, source (2) the full
+fixed constraints text as a Copied-text source, source (3) the unchanged
+teaching prompt as a second Copied-text source, plus a short focus-field
+pointer naming all three and their priority order), was downloaded (audio
+finished at 50:58), installed as the new `podcasts/Foundation/Rink Map.m4a`
+master, transcribed locally via whisper.cpp, and reviewed by an independent
+`rules-verifier` + `safety-reviewer` pair. **Result: the fix worked narrowly
+and not broadly.** The fabricated injury-response segment and the fabricated
+IIHF version-history did not reappear — genuine, confirmed progress. But the
+retry invented three new things constraint 9 never named: a four-book
+faceoff-encroachment comparison with no basis anywhere in the source, a false
+historical/causal story naming a real NHL player (Martin Brodeur) and
+inventing why the trapezoid rule was created, and a restatement of a
+source passage explicitly marked "genuinely unsettled" as settled fact,
+broadened from one governing body to a whole class of reader. Full record:
+[`../reviews/rink_map_podcast_retry_no_go_2026-09-18.md`](../reviews/rink_map_podcast_retry_no_go_2026-09-18.md).
+**A secondary finding: the rules-verifier also caught the first NO-GO's own
+"invented centre-ice restriction" finding as itself wrong** — that rule is
+real (NHL 27.7/IIHF 27.6), confirmed directly against primary rulebook text,
+and the retry stated it correctly; the record above retracts that finding
+rather than let a stale conclusion stand uncorrected.
+
+**Constraint 9 broadened in response**, from a list of three named patterns
+to the general rule underneath them: nothing from the generator's own hockey
+knowledge belongs in an episode, ever, even when true, unless traceable to a
+sentence in the actual sources given; a hedge in the source is never the
+episode's to resolve into confidence. `rink_map` returned to `blocked` in the
+queue (failure count 2). `core_principles` and `on_ice_communication`
+finished generating under the OLD (now-known-insufficient) prompt version —
+their reviews still run, for additional evidence of the same failure shape,
+but neither is a clean test of the newly-broadened constraint. **A further
+retry under the broadened constraint is needed before any document is
+accepted or before scaling to the 10-parallel batch.**
+
 ⚠️ **Operational finding: the NotebookLM notebook's own "Generating Audio
 Overview... Come back in a few minutes" status panel can go stale and keep
 showing "generating" long after the audio has actually finished** — one

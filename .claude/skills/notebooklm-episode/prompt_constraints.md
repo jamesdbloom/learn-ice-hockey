@@ -168,10 +168,8 @@ or confidence, **these win**.
 
    The same three generations also fabricated: illustrative statistics with no
    source ("95% of amateur players", "a 200 pound player at 20 miles an hour");
-   dimensions with no source (an invented rink distance); and, worst, entire
-   invented rules stated as if quoted — one generation invented an NHL/IIHF
-   "centre-ice restriction" rule that does not exist, by blending two real,
-   separate rules into a false one. **A rule, a number, or a distance is either
+   dimensions with no source (an invented rink distance); and invented rules
+   stated as if quoted. **A rule, a number, or a distance is either
    quoted or closely paraphrased from a sentence in the source, or it is not
    said at all.** An analogy or a worked example is fine; a new fact injected
    into it is not — "imagine skating that distance" is fine, "that's about six
@@ -191,6 +189,56 @@ or confidence, **these win**.
    explain *why* a rule exists, or to make a concept vivid with a concrete
    number, and the source does not give you that reason or that number, say
    the rule and stop — an accurate gap is better than a fabricated bridge.
+
+10. **A validation retry of this pipeline, run 18 September 2026 after
+    constraint 9 was written, confirmed constraint 9 works ONLY on the exact
+    words it names, and does not touch the general behavior underneath it.**
+    The retry contained zero instances of the fabricated injury segment or
+    the fabricated IIHF version-history — genuine improvement — but invented,
+    in the same episode, on the same document, three new things constraint 9
+    never mentioned: (a) a four-book comparison on faceoff-encroachment
+    strictness that appears nowhere in the source document at all; (b) a
+    specific, plausible, false historical/causal story — naming a real NHL
+    player and inventing a reason a real rule was created — sourced from the
+    generator's general hockey knowledge, not from the document it was given;
+    (c) a source passage the document explicitly calls **"genuinely
+    unsettled"** and says **"ask your league"** about, restated as settled
+    fact and broadened from one specific governing body to a whole class of
+    reader the source never covers. Full record:
+    [`../../project/reviews/rink_map_podcast_retry_no_go_2026-09-18.md`](../../project/reviews/rink_map_podcast_retry_no_go_2026-09-18.md).
+
+    **So the constraint is now the general rule, not the list of examples.**
+    Constraints 5 and 9's specific named patterns are real and still apply —
+    but treat them as *evidence of the shape*, not the boundary of it:
+
+    - **Nothing you know about hockey from outside this bundle of sources
+      belongs in this episode — not a player's name, not a rule's history or
+      the reason it was written, not a comparison across rule books, not a
+      statistic, not a dimension — unless you can point to the sentence in
+      the sources you were actually given that states it.** This applies
+      even when what you would add happens to be true. A generation in this
+      same validation round added a real, correctly-remembered NHL rule the
+      *source document didn't state*, apparently drawing on the model's own
+      knowledge of the rulebook rather than the source in front of it — that
+      is exactly as much a violation as adding a false one, because the
+      episode is supposed to teach the document, not the model's general
+      knowledge, and there is no way for a listener (or, it turns out, a
+      reviewer working from the source document alone) to tell the two
+      apart after the fact.
+    - **A hedge in the source is not yours to resolve.** Where the source
+      says a question is unsettled, disputed, not established, or "ask your
+      league/governing body," the episode's job is to say exactly that, with
+      the source's own scope — not to pick the more confident-sounding
+      reading, and not to broaden a caveat that names one specific governing
+      body or competition into a claim about a wider class of reader.
+    - **Before adding ANY sentence that is not a direct quotation or close
+      paraphrase of specific source wording — a fact, a name, a comparison,
+      a history, a resolved hedge — run constraint 9's self-check on it: can
+      you point to the literal sentence in the document you were actually
+      given? If you cannot, cut it, regardless of how plausible, responsible,
+      or true it seems.** This is not limited to safety-adjacent segments or
+      to the three shapes constraint 9 names by example. It is every sentence
+      in the episode.
 
 If a source passage is genuinely ambiguous, say so on air rather than picking
 the confident reading. "The sources are careful to say this depends on your
