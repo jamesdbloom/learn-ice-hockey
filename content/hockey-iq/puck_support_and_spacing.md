@@ -15,7 +15,7 @@
 
 **Support distance is a coaching rule of thumb, not a rule of hockey — no governing body has been found to set one as a standard.** The widely used figure, roughly two to three stick lengths, is a starting point for your coach to adjust. The real test is time, not distance: would the pass beat the defender closing on your teammate?
 
-**When you go into a board battle, or a double-team at the wall, how you arrive matters more than winning the puck.** Get your skates parallel to the wall before contact, take it on your forearm and hip — never the point of your shoulder — head up and chin off your chest, and never your back to the boards, never duck.
+**When you go into a board battle, or a double-team at the wall, how you arrive matters more than winning the puck.** Get your skates parallel to the wall before contact, take it on your forearm and hip — never the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest, and never your back to the boards, never duck.
 
 **To help a teammate pinned in a battle, usually move away from them rather than into the pile — they need somewhere to put the puck, not another body in it.** Defending, it usually reverses: layer behind the first defender instead of converging, because two players on one carrier leave somebody else unmarked. "Usually" is doing real work both ways — a double-team below your own goal line is a common coaching call, so ask where and when your team doubles.
 

@@ -711,7 +711,7 @@ Risk: The spinal injury from a head-down, head-first collision with the boards o
 Action: Case 1, best of all — arrive on an angle, not perpendicular
 Action: Case 2, contact coming — skates parallel to the boards, forearm and upper thigh to the wall, feet apart and knees bent for a low centre of gravity, lean into the impact
 Action: Case 3, already facing the wall — turn skates parallel to it before contact if at all possible; only if you cannot, spread the load, stick and gloves up on the glass, arms out as a shock absorber
-Never: Take the wall on your shoulder — never the tip, and never the whole shoulder if you can help it. Forearm and hip meet the wall. Never crouch or duck to avoid a check
+Never: Take the wall on your shoulder — never the tip, and not the whole shoulder if you can help it. Forearm and hip meet the wall. Never crouch or duck to avoid a check
 Rule: Turning into a hit deliberately to draw a call earns nothing — a player who intentionally turns to create contact with their back draws the checker no penalty for checking from behind (NHL Rule 43.1; IIHF Rule 43.1, which adds that other penalties may still be assessed)
 Rule: The turn-into-a-hit waiver is the NHL's and the IIHF's alone — USA Hockey and Hockey Canada write no such clause, and Hockey Canada's Interpretation 2 to Rule 7.5(a) puts this exact case and gives the checking-from-behind penalty to the checker anyway
 Key: Head up, chin off your chest — hit the boards or a post with an arm, a leg or anything but your head first

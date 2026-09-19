@@ -6418,9 +6418,12 @@ most youth age groups and in most adult recreational and beer leagues."*** ⚠�
 non-check league has an ACTIVE REASON to file the boards technique under *"not mine"* — and then races
 a puck to the wall with their chin down.** **A wall does not need a legal body check to break a neck.**
 
-**Five siblings carry it and this document does not** — `body_contact_and_battles.md:21`
+**Four siblings carry it and this document did not** — `body_contact_and_battles.md:21`
 (*"absolute in every league, checking or not, because a wall does not need an opponent to hurt you"*),
-`forechecking_systems.md:876` and `:539`, `core_principles.md`, `goaltender.md:1169`.
+`forechecking_systems.md:876` and `:539`, `goaltender.md:1169`. ⚠️ **`core_principles.md` was on this
+list and does NOT belong: `grep -n "checking or not\|whatever league\|non-check hockey\|every
+league"` returns ZERO there. It carries the IDEA at `:37` in different words.** **Refuted by the
+repairing agent, which greped the list instead of trusting it.**
 
 - [ ] ⚠️ **NOT graded critical, and the reasoning matters: the text never RESTRICTS the advice to
   checking leagues, so nothing inverts and no reader is told anything false.** **The failure is
@@ -6505,9 +6508,51 @@ which governs the tip on any approach, rather than the broader one written for t
 
 - [ ] ⚠️ **This is NOT the `:742` defect** — none of the six says *"USA Hockey says it twice"*.
   **Each simply reaches for the wrong one of two real sentences.**
-- [ ] ⚠️ **AND THE OWNER DOCUMENT'S OWN CONCLUSION IS BROADER THAN ALL SIX: *"the safe course is the
-  strictest of the three: no part of the shoulder leads."*** **So every one of the six under-states
-  its own corpus's settled position, in the direction that permits more contact.**
+
+### ⚠️⚠️ THE ROW'S STATED REASON IS WRONG — the fix survives, the reasoning does not
+
+**This row says the six sites *"teach skates-parallel — the Case 2 posture — and then cite the TIP
+sentence"*, as though the two sentences govern different postures.** ⚠️ **They do not.**
+
+**Found by the agent propagating into `hockey-iq/`, and verified by the coordinator:
+`sources/ibc.txt:1450` sits INSIDE the very *"Angling In"* list that carries the tip sentence, and
+reads *"Keep your feet parallel to the boards."***
+
+⚠️ **So the tip sentence's OWN list teaches a feet-parallel posture too.** ***"These documents teach
+skates-parallel, therefore they reached for the wrong sentence" DOES NOT FOLLOW.***
+
+⚠️⚠️ **The two sentences differ on SCOPE (whole shoulder vs tip) and FORCE (*"Avoid"* vs *"Never"*) —
+NOT on which posture they govern.** **That is the whole defect, and it is the only defect. Any repair
+sentence written on the posture reasoning will be wrong about the source even when it improves the
+corpus.**
+
+### ⚠️ And the row's file list is wrong in at least one place
+
+**`playing_without_the_puck.md` does not belong on the list of six.** ⚠️ **It cites the tip sentence in
+exactly ONE place — its Sources trailer — alongside the broad sentence, correctly attributed and
+correctly scoped.** **Its nine teaching sites attribute the shoulder phrase to NOBODY AT ALL.**
+**Drop it from the list; the propagation work there was real, the attribution charge was not.**
+
+### ⚠️ A class this row's grep CANNOT see
+
+**Three facts lines carry the full wall posture with NO shoulder limb of any kind** —
+`scanning_and_anticipation.md:146`, `puck_support_and_spacing.md:317` and `:548`. ⚠️ **Each is voiced
+alone and is the only wall-posture line in its block, so the grep for a shoulder phrase can never
+reach them.**
+
+- [ ] ⚠️ **NOT unsafe — each states the affirmative *"forearm and hip"*.** **But headroom is 31 / 15 /
+  3 characters against a limb costing ~78, and `:548`'s block is already at `MAX_COACHING_FACTS` 8.**
+  ⚠️ **The only room would come from evicting *"head up, chin off your chest"*, which is forbidden.**
+  **This needs a section split or nothing. Decide, do not squeeze.**
+- [ ] ⚠️ **AND THE OWNER DOCUMENT'S OWN CONCLUSION IS BROADER THAN ALL SIX.** ⚠️⚠️ **THE WORDING THIS ROW
+  ORIGINALLY GAVE WAS STALE AND STRICTER THAN THE OWNER** — it said *"the safe course is the strictest
+  of the three: no part of the shoulder leads"*, **dropping USA Hockey's own hedge.** **Commit
+  `72ef106` settled it as *"no part of the shoulder leads IF YOU CAN HELP IT, and the tip never"*
+  (`body_contact_and_battles.md:754`).** **Caught by the agent propagating into `systems/`, which
+  checked the row against the file rather than trusting it.** ⚠️ **A plan row that states a safety
+  conclusion MORE STRICTLY than its owner is the same defect class as one that states it less
+  strictly: both send an agent to write a sentence the corpus does not hold.** **Every one of the six
+  under-states the settled position, in the direction that permits more contact.**
 - [ ] ⚠️ **DO NOT SWEEP THE STRING.** *"The tip of your shoulder"* is **correct** wherever the passage
   is about angling in, and **correct** wherever the surrounding prose carries the reconciliation.
   **A regex cannot tell which case a passage teaches. Read each.**
@@ -6546,3 +6591,301 @@ PATH silently removed legitimate hits in the body.** **Filter on the path field,
 **Verified by the coordinator.** ⚠️ **A brief citing both would let an agent source a Case 2 claim from
 the open-ice section, and nothing in the line itself would give the mistake away — the two bullets are
 character-identical.**
+
+---
+
+## Workstream 34: ⚠️ THE CAPTION LAYER CARRIES THE UNREPAIRED WORDING, AND NO WORKLIST ROUTES IT
+
+**Found 19 September 2026 by the agent propagating into `positions/`, from the RENDERED SPEECH of a
+document it owned — not from any tool.** **Coordinator-verified and counted.**
+
+⚠️ **Diagram captions are VOICED INTO their host documents.** **So after a propagation wave repairs
+the prose, a listener still receives the old wording every time a caption is read aloud.**
+
+**Measured:** `grep -rn "point of your shoulder\|tip of your shoulder" site/src/diagrams/*.mjs` returns
+**10 sites across 6 modules** — `body_contact_and_battles.mjs` (2), `forechecking_systems.mjs` (2),
+`offensive_zone_play.mjs`, `positions.mjs` (2), `scanning_and_anticipation.mjs`, `winger.mjs` — and
+the build product `site/src/data/diagrams.json` carries **10**.
+
+⚠️⚠️ **`check_caption_hosts.py --rule-like` RANKS ZERO OF THEM.** **That worklist exists to surface
+captions stating a rule or a boundary in a document that does not own them — and a boards-posture
+technique cue is neither, so the tool cannot route this by construction.** ***"It was only visible
+from the rendered speech of the host document."***
+
+### The rows
+
+- [ ] ⚠️ **NOT DONE IN THE WAVE, DELIBERATELY.** **`site/src/data/diagrams.json` is a BUILD PRODUCT
+  that `check_absolutes.py` reads**, and `build-diagrams.mjs` takes ~6 minutes. ⚠️ **Editing the
+  sources mid-wave would leave every live agent's `check_absolutes` run reading a stale or half-built
+  file.** **`CLAUDE.md`: change shared state BETWEEN waves, not during one.**
+- [ ] ⚠️ **`build-diagrams.mjs` MUST run BEFORE `check_absolutes.py`** — that checker reads the build
+  product, so a caption edit without a rebuild is **unchecked by construction.** **It now detects the
+  staleness and refuses to certify the caption layer rather than passing on old text.**
+- [ ] ⚠️ **CAPTION TEXT IS OFTEN A SHARED CONSTANT.** **Editing one to repair one host silently
+  rewrites every caption that imports it.** **`grep -ln '<CONSTANT>' site/src/diagrams/*.mjs` FIRST.**
+- [ ] ⚠️ **One module already knows the answer.** `forechecking_systems.mjs:805-812` carries a comment
+  quoting **both** USA Hockey sentences with their line numbers, and the note that ibc *"is TECHNIQUE
+  teaching built on the 2007-09 rulebook"*. **Whoever repaired that caption did the source work and
+  the other five modules did not inherit it.** **Read that comment before writing anything.**
+- [ ] **Check `check_caption_echo.py` afterwards** — a caption that now repeats the prose directly
+  above it is the defect the caption wave and the marker wave create together.
+
+---
+
+## Workstream 35: two distinctions my briefs conflated, and a new false-pass shape
+
+### 35A — ⚠️ "cites the wrong sentence" and "carries the narrow half" are DIFFERENT defects
+
+**Workstream 33's scope is the sites that cite the TIP sentence as authority for a Case 2
+instruction.** ⚠️ **But most sites in this corpus use the corpus's OWN HOUSE PHRASE — *"the point of
+your shoulder"* — CITE NOBODY, and defer to the owner.**
+
+⚠️ **Those are not a Workstream 33 defect at all. They are a PROPAGATION GAP from the owner's repair
+in `72ef106`** — the narrow half of a conclusion that now has two halves.
+
+**Two agents independently reported their files as wrongly listed:** ⚠️ **`playing_without_the_puck.md`
+cites the tip sentence in ONE place, its Sources trailer, correctly scoped** · ⚠️ **`passing_and_receiving.md`
+returns ZERO *tip* hits and was never on any WS33 list — my brief put it there.**
+
+- [ ] **Keep the two rows apart.** **The repair text is similar; the JUSTIFICATION a repairing agent
+  writes is not, and a sentence written on the wrong justification is wrong about the source even
+  when it improves the corpus.**
+- [ ] ⚠️ **`passing_and_receiving.md` was INTERNALLY SPLIT before its repair** — its facts `Never:`
+  already carried the broad *"not your shoulder"* while four spoken body sites carried the narrow one.
+  **Check the other documents for the same split before assuming a file is uniform.**
+
+### 35B — ⚠️ A FALSE PASS NOBODY HAD RECORDED: `md_to_speech.py` with a positional argument
+
+**An agent ran `md_to_speech.py <path>`.** ⚠️ **The tool takes `--content` / `--out` / `--only` and
+ERRORS on a positional argument — writing a 223-byte error file.** ⚠️⚠️ **The agent's grep over that
+file returned nothing and READ AS A CLEAN RENDER.**
+
+- [ ] ⚠️ **This is the same shape as the two build traps `CLAUDE.md` records: the failure is SILENT
+  and the absence of output looks like the absence of defects.** **It was caught only because the
+  agent disbelieved a clean result.**
+- [ ] **Any brief telling an agent to render must give the flags**, and any agent rendering must check
+  the chunk COUNT is non-zero before reading the output.
+
+---
+
+## Workstream 36: ⚠️ A ⚠️ ANYWHERE IN A PARAGRAPH PREFIXES THE WHOLE PARAGRAPH — the mechanism is documented, the consequence is not
+
+**Found 19 September 2026 by the agent repairing `skating.md`, in its own draft, ON THE RENDER.**
+⚠️ **Its first rewrite of `:21` — the document's SECOND SENTENCE — placed a ⚠️ mid-paragraph for
+emphasis, and the renderer prefixed the entire opening paragraph with *"Important."*, hijacking the
+document's opening seconds.** **Caught, removed, re-rendered.**
+
+### What IS written down, and what is not
+
+**`scripts/md_to_speech.py` documents the MECHANISM in two places** — the `⚠ → "Important. "`
+substitution, and a comment recording a case where a caption *"came out as 'Important. Protect what is
+not padded…'"*. **It also carries a long note on the `🇬🇧` marker used mid-clause, ending: *"If a future
+author writes 🇬🇧 mid-clause again, this rule will break that sentence and no checker will see it."***
+
+⚠️⚠️ **What is NOT written down is the CONSEQUENCE for placement: the prefix attaches to the PARAGRAPH,
+not to the clause the marker sits beside.** **So a ⚠️ added mid-paragraph to emphasise ONE sentence
+RELOCATES that emphasis to the paragraph's first word — and in an Overview, to the first thing a
+listener hears about the document.**
+
+### The rows
+
+- [ ] ⚠️ **NOT CHANGED — a shared tool is shared state and agents were live.** **And the fix is almost
+  certainly NOT to weaken the renderer:** the same file records that when a marker was misused
+  mid-clause, ***"the CONTENT was fixed to honour the marker's contract, not the renderer weakened to
+  tolerate a misuse."*** **That precedent should govern here too.**
+- [ ] **Write the placement consequence into the tool's own comment**, beside the mechanism it already
+  documents. ⚠️ **And into any brief that asks an agent to add emphasis to a paragraph it is editing.**
+- [ ] ⚠️ **Census the corpus for markers sitting mid-paragraph in an OPENING paragraph**, where the
+  cost is highest. **Nobody has looked.** **This one was found only because an agent rendered its own
+  draft and listened to the first sentence.**
+
+---
+
+## Workstream 37: Workstreams 30 and 33 contradict each other about the same line
+
+**Found by the `skating.md` agent, and it is right that both are half-right.**
+
+**WS30 calls `skating.md:604` *"the mismatch, unlabelled"*. WS33 names the same line as *"the sibling
+that already gets it right"*.**
+
+⚠️ **Reconciliation: it cites the BROAD sentence — so WS33's attribution defect does not apply — but
+as authority for the NARROW instruction, so WS30's does.** **Both rows describe the same line and
+neither describes it completely.**
+
+- [ ] **Reconcile the two rows in the plan.** ⚠️ **Two plan rows disagreeing about one line is the
+  shape that sends two agents to make opposite edits.**
+- [ ] ⚠️ **And WS30's own table is short: it says *"five sites"* and *"four SPOKEN sites"*. There are
+  SIX and all six are spoken** — the table is missing `:11`, `:868` and `:920`. **Measured by the
+  agent that read them.**
+- [ ] ⚠️ **`skating.md` contains ZERO instances of *"tip of your shoulder"*, so it is NOT one of
+  Workstream 33's six documents at all.** **Two agents have now reported their file wrongly listed
+  there — see Workstream 35A.**
+
+---
+
+## ⚠️ Workstream 34 addendum — an agent reported the caption layer CLEAR for its own files, and it is not
+
+**The agent repairing `systems/` wrote: *"Diagram captions: checked, and clear. No caption in
+`diagrams.json` states a boards-contact posture — the 'shoulder' hits are all lane-reference
+geometry."***
+
+⚠️⚠️ **REFUTED. The coordinator parsed `site/src/data/diagrams.json` and listed every caption carrying
+*"point of your shoulder"* with its owner. There are TEN, and FOUR belong to that agent's own two
+files:**
+
+| caption id | owner |
+|---|---|
+| `forecheck-press`, `forecheck-pinch` | ⚠️ **`content/systems/forechecking_systems.md`** |
+| `oz-cycle-rim`, `oz-cycle-reverse` | ⚠️ **`content/systems/offensive_zone_play.md`** |
+| `winger-dz-rim`, `winger-dz-reverse`, `winger-arriving-at-the-line`, `winger-corner-and-the-empty-point` | `content/positions/winger.md` |
+| `scan-before-a-wall-reception` | `content/hockey-iq/scanning_and_anticipation.md` |
+| `angle-into-the-corner` | `content/technique/body_contact_and_battles.md` |
+
+**The caption text is plainly a boards posture** — `offensive_zone_play.mjs:1096-1098`: *"this is a
+wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, forearm
+and hip into the contact, head up and chin off your chest — and not on the point of your shoulder."*
+
+⚠️ **So four documents whose PROSE was repaired this wave still voice the unrepaired wording through
+their own captions.** ⚠️ **And the agent checked, in good faith, and got the opposite answer.**
+
+- [ ] ⚠️ **Record HOW the check failed, because the lesson is the reusable part.** **A grep for
+  *"shoulder"* over `diagrams.json` returns mostly lane-reference geometry, and the boards captions
+  are a minority buried in it.** **Searching for the NARROW PHRASE — *"point of your shoulder"* —
+  returns ten and nothing else.** **The discriminator is the phrase, not the body part.**
+- [ ] ⚠️ **`check_caption_hosts.py --rule-like` ranks ZERO of the ten**, so no worklist routes this.
+  **It was found from RENDERED SPEECH by one agent and by a targeted parse by the coordinator — two
+  methods, neither of them a tool.**
+
+---
+
+## Workstream 38: *"Two prohibitions, two different injuries"* — a candidate, and I think it is a FALSE POSITIVE
+
+**Flagged by the agent repairing `switching_positions.md:167`, in a file it owned, and correctly NOT
+acted on** — *"fixing it means adding a limb AND changing the count in the same sentence: new safety
+text that needs its own review."*
+
+**Key Takeaway 9 (`:556`) reads *"Two prohibitions, two different injuries"* and names the turned back
+and the tucked chin. The agent reports that Key Focus, the Overview, the facts block, the body and
+Common Mistakes all name THREE prohibitions, so the takeaways layer fails the layer test.**
+
+### ⚠️ Why I think the takeaway is right and the finding is not
+
+**The corpus deliberately keeps a PAIR apart on the grounds that they have DIFFERENT EVIDENCE.**
+`skating.md:127-129` states it in terms: ***"Note which evidence belongs to which prohibition, because
+the two are against two different injuries."*** **The turned back rests on USA Hockey's *"[e]ven a
+light hit from behind could inflict a severe head or neck injury"*; the tucked chin rests on the
+walking-speed finding, which the corpus is careful to say is stated of the head-down collision and NOT
+of the turn.**
+
+⚠️ **The shoulder limb is a POSTURE instruction — which surface meets the wall — not a third member of
+that evidentially-distinct pair.** **So *"two prohibitions, two different injuries"* is a claim about
+the EVIDENCE pairing, and inserting the shoulder would make it false rather than complete.**
+
+- [x] ✅ **RULED 19 September 2026 by the `commit-gate`: FALSE POSITIVE. DO NOT INSERT THE LIMB.**
+  ⚠️ **Its reasoning: the instruction clause immediately preceding the count reads *"Never your back to
+  the boards, and never duck"* — exactly TWO — and the colon then enumerates exactly those two, each
+  with its own distinct evidence.** **Inserting a shoulder limb makes *"two… two"* false.**
+  ⚠️ **No `content-reviewer` is owed. This row is closed on the count question.**
+- [ ] ⚠️ **What the gate flagged SEPARATELY and is NOT closed: Key Takeaway 9 is the one summary unit
+  in that file carrying NO shoulder limb at all, while the Common Mistake at `:492` names three.**
+  **That asymmetry is PRE-EXISTING — the old `:492` already read *"three separate prohibitions"* — so
+  this wave did not create it.** **A plan row, not a gate item, and it must NOT be fixed by editing the
+  counting sentence.**
+~~- [ ] ⚠️ **And if it IS the full set, the fix changes a count AND adds a limb in one sentence.**~~
+  ⚠️ **STRUCK — its condition was closed by the ruling two bullets above, and it was left standing
+  beside its own answer.** **This is instance FOUR of the pattern named in the standing guidance
+  below, caught by the commit gate in the same audit that cleared the wave.**
+
+### Also flagged and not acted on, same file
+
+- [ ] **`:556` carries a stray apostrophe** — `[Breakouts](../systems/breakouts.md)':` **renders in
+  speech as *"the reception taught here is Breakouts': open your hips…"***. **Cosmetic, pre-existing,
+  passes `check_links`.**
+
+
+---
+
+## Workstream 39: two rows the coordinator SAID were filed and never wrote
+
+⚠️⚠️ **Caught by the commit gate, which greped for them instead of believing me:**
+**`grep -c "playing_without_the_puck.md:968" OPEN_ITEMS.md` → 0.**
+**`grep -i "listen to the hedged sites in sequence"` → no match in either staged file.**
+
+⚠️ **I told the gate both were carried forward. They existed only in a message.** **A row described as
+filed and not written is worse than one never mentioned: the next reader searches, finds nothing, and
+concludes the question was never asked.**
+
+### 39A — ⚠️ the corpus had the answer in a Sources trailer the whole time
+
+**`content/hockey-iq/playing_without_the_puck.md:968` has been quoting BOTH USA Hockey shoulder
+sentences — the broad-and-soft one and the narrow-and-flat one — correctly scoped, in its Sources
+trailer, since before this wave began.** ⚠️ **Meanwhile FIFTEEN documents instructed on the narrow half
+alone, and a seven-agent wave was needed to repair them.**
+
+- [ ] ⚠️ **This is the `check_disclosures` shape from the other direction: a question ANSWERED
+  ELSEWHERE IN THIS REPOSITORY that nobody propagated FROM.** **The gate's own words: *"no gate of mine
+  would ever have reported that."***
+- [ ] **Census the Sources trailers for claims the instructional layers do not carry.** ⚠️ **A trailer
+  is the layer a listener never hears AND the layer most likely to be complete, because it is where the
+  source work lands. Nobody has ever swept it as a SOURCE of propagation rather than a target.**
+
+### 39B — the only open question the ordering test left
+
+**Every mechanical property was established: no site carries the hedge without the tip absolute, and
+the gate's `naked = 0` upgrade proves every hedge-bearing LINE carries its absolute ON THE SAME LINE.**
+
+⚠️ **What remains is the SEQUENCE question: whether, hearing several hedged sites in succession through
+`md_to_speech`, the hedge ever reads as SOFTENING the absolute.**
+
+- [ ] ⚠️ **Nobody has rendered the corpus and listened to the hedged sites in order.** **The gate stated
+  its own blind spot precisely: *"I checked ordering in the SOURCE, not in the layer the listener
+  actually hears; the 300 ms break either side of a facts line is where a backwards attachment would
+  actually happen, and that is precisely where my method is blind."***
+- [ ] ⚠️ **AND THE ADJACENT-LINE CONCERN IS CLOSED — do not carry it forward.** **The gate upgraded its
+  own blind spot on re-reading its output: `naked = 0` means the same-spoken-unit property is
+  ESTABLISHED, not assumed.**
+
+
+---
+
+## ⚠️ STANDING GUIDANCE: a repair aims at the sentence; the pre-repair state lives in the sentences AROUND it
+
+**Named by the `commit-gate` on 19 September 2026, after asking it to call the fourth instance as a
+pattern rather than an item.** ⚠️ **It did, and it found the cause is MECHANICAL, NOT ATTENTIONAL.**
+
+| | what the repair fixed | what it left behind | distance |
+|---|---|---|---|
+| 1 | `switching_positions.md:492` gained a limb | **the count of three, unchanged** | same sentence |
+| 2 | a table's bare `67`/`1` retracted | ***"the single ordering hit"*** | **4 lines below** |
+| 3 | the same table reordered | ***"the second and third rows"*** | **4 lines above** |
+| 4 | Workstream 38's count question ruled | ***"if it IS the full set…"*** | **2 lines below** |
+
+⚠️⚠️ **Every one was within FIVE LINES of the edit, and every one was a POINTER INTO THE PRE-REPAIR
+STATE.** **Instances 2, 3 and 4 were in review and plan prose, not in `content/` — so no checker in
+this repository could ever have seen any of them.**
+
+### ⚠️ Why `CLAUDE.md`'s existing remedy is not working
+
+**It already says *"read to the end of the paragraph, not the end of the clause."*** ⚠️ **That asks
+for VIGILANCE, and vigilance is what failed four times in one wave — twice to agents, twice to the
+coordinator.**
+
+### The step that replaces it
+
+> ⚠️⚠️ ***"After any repair, RE-READ THE WHOLE BLOCK the edit sits in and ask what in it pointed at the
+> state you just changed."***
+
+**THE THREE FORMS ARE ENUMERABLE, which is what makes this a checklist item rather than a
+resolution:**
+
+1. ⚠️ **COUNTS** — *"those two"*, *"neither of the three"*, *"at once"*, *"Two prohibitions"*. **A
+   sentence that counts its own limbs goes false when you insert one.**
+2. ⚠️ **ORDINAL / POSITIONAL REFERENCES** — *"the second and third rows"*, *"the line above"*, *"as
+   stated earlier"*. **Reordering is a structural edit and pointers do not move with it.**
+3. ⚠️ **CONDITIONALS WHOSE CONDITION YOU JUST SETTLED** — *"if it IS the full set…"*, *"until someone
+   rules"*. **Not false, which is why they survive: a hypothesis left standing beside its own answer.**
+
+- [ ] ⚠️ **This belongs in `CLAUDE.md` beside the existing sentence, not instead of it.** **Change a
+  shared file BETWEEN waves, not during one.**
+- [ ] ⚠️ **It applies to `project/` as hard as to `content/` — three of the four instances were in a
+  review record or a plan row, where nothing mechanical is watching at all.**
