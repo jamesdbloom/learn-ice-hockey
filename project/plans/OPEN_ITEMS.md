@@ -6141,7 +6141,7 @@ census it ran after finding the same defect twice in the file it owned.**
 
 ~~**`604(d)` appears 32 times across `content/`; 9 lack the trigger.**~~
 
-⚠️⚠️ **STRUCK 20 September 2026 — THE CENSUS WAS A REGEX ARTEFACT, AND THIS ROW WOULD HAVE SENT AN
+⚠️⚠️ **STRUCK 19 September 2026 — THE CENSUS WAS A REGEX ARTEFACT, AND THIS ROW WOULD HAVE SENT AN
 AGENT TO "FIX" FIVE LINES THAT ARE ALREADY CORRECT.**
 
 **Refuted by the `rules-verifier` on the conditioning repair, and verified line by line by the
@@ -6483,3 +6483,66 @@ FACING-the-wall case, so it cannot contradict the parallel-case paragraph at all
 
 - [ ] ⚠️ ***"Which means a drawing that contradicts Case B's posture would sit in FIG. 7, and I did not
   look at Fig. 7 at all. That is the live gap."*** **`pdftoppm` it.**
+
+---
+
+## Workstream 33: six documents cite the NARROW shoulder sentence as authority for a Case 2 instruction
+
+**Found 19 September 2026 by the agent repairing `body_contact_and_battles.md:742`, in files it did
+not own, and correctly reported rather than swept.**
+
+**USA Hockey writes two shoulder prohibitions, and they differ on TWO axes:**
+
+| source | section | scope | force |
+|---|---|---|---|
+| `ibc.txt:692` | **B. Checked Along The Boards** — *"checked while skating parallel to the boards"* | **the whole shoulder** | *"Avoid"* |
+| `ibc.txt:1453` | the ***"Angling In"*** demonstration list | **the tip only** | *"Never"* |
+
+⚠️ **Six documents teach skates-parallel — the Case 2 posture — and then cite the *TIP* sentence,
+which governs the tip on any approach, rather than the broader one written for that very case:**
+`winger.md` · `offensive_zone_play.md` · `forechecking_systems.md` (two sites) ·
+`zone_entries.md` · `playing_without_the_puck.md` · `conditioning_and_recovery.md`.
+
+- [ ] ⚠️ **This is NOT the `:742` defect** — none of the six says *"USA Hockey says it twice"*.
+  **Each simply reaches for the wrong one of two real sentences.**
+- [ ] ⚠️ **AND THE OWNER DOCUMENT'S OWN CONCLUSION IS BROADER THAN ALL SIX: *"the safe course is the
+  strictest of the three: no part of the shoulder leads."*** **So every one of the six under-states
+  its own corpus's settled position, in the direction that permits more contact.**
+- [ ] ⚠️ **DO NOT SWEEP THE STRING.** *"The tip of your shoulder"* is **correct** wherever the passage
+  is about angling in, and **correct** wherever the surrounding prose carries the reconciliation.
+  **A regex cannot tell which case a passage teaches. Read each.**
+
+### ⚠️ Two strings, two counts, and a filter that lost four files
+
+**A commit gate flagged this row as saying SIX where a brief said ~10. Both are right — they are
+DIFFERENT STRINGS, and the coordinator measured them:**
+
+| string | files |
+|---|---|
+| *"the **tip** of your shoulder"* — the narrow USA Hockey sentence quoted as authority | **7**, of which 6 are not the owner |
+| *"the **point** of your shoulder"* — the corpus's own house phrase | **16** |
+
+⚠️ **The house phrase is the bigger surface and MOST of its sites pair it with *"forearm and hip"*, so
+they are not this defect.** **The row's scope is the SIX that cite the tip sentence as the authority
+for a Case 2 instruction.**
+
+⚠️⚠️ **AND A MEASUREMENT TRAP WORTH RECORDING, because the coordinator fell into it while checking
+this very row.** Filtering the owner out with `grep -rn <string> content/ | grep -v
+body_contact_and_battles` returns **2 files, not 6** — **because `grep -v` matches the LINE, and four
+of those lines contain a markdown LINK to `body_contact_and_battles.md`.** ⚠️ **A filter meant for the
+PATH silently removed legitimate hits in the body.** **Filter on the path field, or use `grep -rl`.**
+- [ ] ⚠️ **Check the LAYER before editing.** Several of these sites are facts lines voiced alone, and
+  at least one block is already at `MAX_COACHING_FACTS`. **Run `--near` first — it sorts ASCENDING, so
+  `tail` shows the safest lines.**
+- [ ] **The sibling that already gets it right is the model:** `skating.md:604` quotes the broad
+  sentence **with its case attached** — *"which USA Hockey's teaching points for a player checked while
+  skating parallel to the boards rule out"*.
+
+### ⚠️ And a citation trap in the coordinator's own brief, worth recording
+
+**I cited `ibc.txt:702` AND `:712` for *"standing too upright with your feet together"*.**
+⚠️ **They are the SAME bullet printed under TWO DIFFERENT SECTIONS: `:702` is section B's Common Error
+— the parallel case — and `:712` is under C. Checked AWAY From The Boards, which is OPEN ICE.**
+**Verified by the coordinator.** ⚠️ **A brief citing both would let an agent source a Case 2 claim from
+the open-ice section, and nothing in the line itself would give the mistake away — the two bullets are
+character-identical.**

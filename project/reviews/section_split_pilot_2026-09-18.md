@@ -4910,3 +4910,182 @@ pass that closes it** · **no rulebook consulted, stated as an assumption rather
 does the thing the sentence describes."*** · **the critical above was found by going looking for a
 sibling contradiction this diff created — NOT by running a pass over that document**, whose facts
 layer remains unexamined, **and Workstream 19's census still has not been run as a pass.**
+
+---
+
+## Addendum 54 — the shoulder flattening, and a count asserted over a list the document was quoting from
+
+**`body_contact_and_battles.md` was the last file held from the round. A `facts-reviewer` cleared its
+Case 3 gate; a `safety-reviewer` then BLOCKED the repair to it on two findings, both cheap, both in
+the same file. Both are now fixed.**
+
+### ⚠️ THE MAJOR: *"USA Hockey writes two sentences about the shoulder and the boards."* There are FOUR.
+
+**Coordinator-verified, all four:**
+
+| # | line | wording | context |
+|---|---|---|---|
+| 1 | `ibc.txt:692` | *"Avoid hitting the boards with the shoulder"* | §B, **Case 2** |
+| 2 | `ibc.txt:1453` | *"Never hit the boards or glass with the tip of your shoulder – it can cause injury"* | the "Angling In" list |
+| **3** | **`ibc.txt:1537` = `huh.txt:647`** | ***"No shoulder contact on the boards, if possible"*** | the taking-a-check checklist |
+| 4 | `ibc.txt:1281` | *"turn the far shoulder toward the boards to prevent shoulder injury"* | a drill |
+
+⚠️⚠️ **#3 IS THE DOCUMENT'S OWN CONCLUSION IN USA HOCKEY'S WORDS — AND THE DOCUMENT DISCLOSED IT AS
+ITS OWN INFERENCE:** *"Reading them together this way is this document's reading rather than something
+either body writes."* **USA Hockey writes it, in two manuals.**
+
+⚠️ **And the count was asserted over a list the document QUOTES FROM.** `:758` carries two bullets
+from the same checklist. **`check_disclosures.py` independently flagged the line.**
+
+**Now:** *"So the safe course is not this document's synthesis but USA Hockey's own instruction, hedged
+the way USA Hockey hedges it: no part of the shoulder leads if you can help it, and the tip never."*
+⚠️ **Shorter, better sourced, and the hedge now belongs to USA Hockey rather than being dropped.**
+
+### The critical: the facts layer taught the narrow prohibition the body had just named as narrow
+
+**`:714` was 77/200 and — unlike its siblings — carried NO POSITIVE COUNTERPART**, so voiced alone the
+only surface a listener was handed was *the tip*. ⚠️ **Precisely the inference `:750` exists to
+debunk: *"'Take the wall on your shoulder.' Players and coaches say this constantly."*** ⚠️ **And the
+diff CREATED the divergence — before it, the body's emphasis matched the block's.**
+
+**Now 187/200, widened in place** — the absolute on the tip kept, the source's hedge kept as *"if you
+can"*, and the positive counterpart added. **Block unchanged at 10 facts / 8 coaching: nothing added,
+nothing evicted.** **Rendered 300 ms apart, `:712`'s *"forearm and upper thigh to the wall"* and
+`:714`'s *"Forearm and hip meet the wall"* reinforce rather than contradict.**
+
+**`:713` also regained the source's TIMING gate by substitution** — *"to the wall"* → *"to it"*,
+plus *"before contact"* — **186 → 195/200.**
+
+### ⚠️ FIG. 7 OPENED FOR THE FIRST TIME, AND IT CORROBORATES
+
+**Five agents chased Fig. 6. Nobody had opened Fig. 7 — the figure for §B, which IS Case 2.** The
+safety pass rendered PDF page 25 at 500 dpi: **a player skates-parallel to the boards, feet apart and
+knees deeply bent — the drawn opposite of the Common Error — head up, chin off the chest, both hands
+on the stick held away from the wall, SHOULDER HELD CLEAR, the forearm-and-hip line nearest the
+boards, torso rotated to face the ice.**
+
+⚠️ **It corroborates the repaired sentence exactly, and it is a PICTURE: no text search could have
+produced it.** **Caveat recorded by the reviewer: a drawing cannot show the moment of impact, so it
+cannot rule out a shoulder arriving later in the collision.**
+
+### ⚠️ Four premises of the coordinator refuted, one of them a verification
+
+| I wrote | measured |
+|---|---|
+| `:758` quotes `ibc.txt:1535-1536` | ⚠️ **NO — `huh.txt:645-646`.** The document's wording lacks `ibc`'s leading *"Use"* / *"Keep"* and matches `huh` exactly. **I verified the wrong manual while making an argument about which manual says what.** |
+| *"`:712` immediately above `:714`"* | `:713` is immediately above |
+| *"a claim about a page not on disk"* | ⚠️ **`:754` ALREADY asserts both HECC pages *"were each searched for it"*.** **So the tension is with text already on the line, and it is UNRESOLVED** |
+| — | ⚠️ **`check_disclosures.py` STILL flags `:754` after the fix, and that is CORRECT: the line carries a SECOND, genuine disclosure about the locked-straight-arm folklore.** ***"A coordinator treating 'the flag clears' as the success criterion would be misled."*** |
+
+### Left deliberately unresolved, and recorded as such
+
+⚠️ **`ibc.txt:1281`'s *"turn the far shoulder toward the boards to prevent shoulder injury"* is
+addressed to the player being checked and DOES read against `:740`'s *"your shoulder and hip turn
+toward the checker."*** **Both the reviewer and the repairing agent read it, both declined to quote
+it, and both said it needs a RULING rather than a quotation.** **Nobody has given one.**
+
+### What the repair could not reach
+
+⚠️ ***"I never opened a PDF page… The brief says the reviewer opened Fig. 7 and it corroborates — I am
+RELAYING that, not confirming it."*** **Correct discipline, and the relay happens to be sound.** ·
+**`ibc:1537`'s Case 2 scope is a reading of a bulleted list's ADJACENCY, not a stated scope** ·
+**no corpus-wide layer test was run — *"which is exactly how `:714` survived"*** · ⚠️ **`:758` lowers
+two source capitals without the bracket convention while the SAME SENTENCE correctly writes
+*"[c]heck over your shoulder"* — and `check_quote_drift.py` clears all three, so the tool has a blind
+spot there.**
+
+---
+
+## Addendum 55 — the cold read: CLEAR, and a better reason than either author had
+
+### ⚠️ Why `:714` is safe, and it is NOT the reason the repair gave
+
+**The repair said the positive instruction is safe because it sits in its own sentence. The cold read
+found the stronger reason:**
+
+> ***"Forearm and hip meet the wall" is a DECLARATIVE WITH A SUBJECT, not an imperative. `Never …
+> forearm and hip meet the wall` is not grammatical as a continuation, so the inverted reading is
+> UNAVAILABLE."***
+
+⚠️⚠️ **And that is exactly why the previous version DID invert: *"keep the whole shoulder off the
+boards"* WAS grammatical after *never*.** **The sentence boundary was never the protection. The
+grammar is.**
+
+**Not a novel form either: `switching_positions.md:167` has used the identical `Never:` → full stop →
+declarative shape for the same instruction.** ⚠️ **All 68 corpus `Never:` lines with a positive second
+sentence were scanned for the coordinated-inversion shape and NONE was found — the corpus is clean on
+this pattern, and the defect was unique to the repair that created it.**
+
+### ⚠️ The repair's justification for dropping *"along your side"* was wrong; the change is right anyway
+
+**The repair argued `ibc.txt:1537` is a GENERAL taking-a-check instruction.** ⚠️ **It is not: the
+FIRST point in that same list is *"Keep skates parallel to the boards"*, so `:1537` is scoped to the
+along-the-boards case exactly as `:692` is.**
+
+**The unscoped facts form is still correct — but for a different reason: the scope is carried by *"the
+wall"* and by the hedge.** ⚠️ **In Case 3, where the shoulder is unavoidable and HECC names shoulders
+as a cushioning surface, *"if you can help it"* is precisely what releases it.**
+
+### The unbriefed sentence — upheld, and the reasoning is the transferable part
+
+> *"Until it is, the instruction this document gives you is the one above: skates parallel, forearm
+> and hip."*
+
+⚠️ **Without it, the LAST thing a listener hears in that paragraph is `ibc:1281` — *"turn the far
+shoulder toward the boards"* — a primary-source instruction pointing a shoulder AT the wall, voiced
+with nothing after it.** ***"Recency does the damage."*** **The added sentence puts the standing
+instruction in final position.**
+
+⚠️ ***"A safety paragraph that voices an unresolved source conflict and stops is a hazard."*** **And it
+does not over-claim: it says the tension *"is not settled in this document"* rather than resolving
+it.**
+
+### ⚠️ Fig. 6 rendered — and it settles NOTHING, which was already written down
+
+**The repair said the `ibc:1281` ruling needs both figures.** ⚠️ **It does not. Fig. 6 is the CASE 3
+picture — it sits under section A, *"Checked Into The Boards"*, and shows a player FACING the glass,
+both arms bent, gloves and stick up. It says nothing about which shoulder meets the wall in the
+parallel case.** **Only Fig. 7 bears on `ibc:1281`, and Fig. 7 was already rendered.**
+
+⚠️⚠️ ***"`sources/README.md:41` had this written down; nobody needed to render it."*** **Five agents
+chased Fig. 6 across this round. The README said what it was the whole time.**
+
+**It did independently confirm the `:713` repair: the turn-parallel-first / spread-second priority
+matches `ibc.txt:672-677` verbatim AND IN THE SOURCE'S OWN ORDER.**
+
+### The thing most likely to have gone wrong, and did not
+
+⚠️ **The tip prohibition survived the hedge in ALL SEVEN places it appears** — `:714`, `:742`, `:750`,
+`:754`, `:780`, `:1569`, `:1680`. ⚠️⚠️ **AND IN EVERY ONE OF THE FOUR LINES WHERE BOTH LIMBS APPEAR,
+THE HEDGE IS POSITIONED AFTER THE TIP LIMB, so it cannot be heard attaching backwards to it. That
+ordering is load-bearing and it is correct four times out of four.**
+
+**Non-negotiable 1 cleared: the hedge attaches only to a limb that did not exist before this repair —
+nothing previously absolute became conditional.** **Non-negotiable 2 cleared: *"avoid"* and *"if
+possible"* are USA Hockey's own words, and a flat *"never the whole shoulder"* would have manufactured
+a severity the source does not carry.**
+
+### Major, outside the six lines, and deliberately NOT a block
+
+**~25 instances across 11 documents still carry only the narrow form.** ⚠️ **NOT critical, and the
+reasoning is worth keeping: *"every sibling already gives the correct POSITIVE instruction — forearm
+and hip to the wall — so none of them affirmatively directs a reader to lead with the whole shoulder.
+They are less complete than the owner, not unsafe. Blocking a change that strictly improves one
+document because eleven others have not caught up would be a FALSE BLOCK."*** **Folded into
+Workstream 33.**
+
+### One pre-existing hazard checked and cleared rather than re-opened
+
+**`:750` opens on the folklore as a bare imperative and quotation marks are silent.** ⚠️ **Verified
+mitigated: `086.ssml` carries *"Three pieces of rink-side advice you will hear that the primary
+coaching material does not support"* in its own `<p>`, one 300 ms break earlier. The frame lands.**
+**Recorded so the next reviewer does not re-open it.**
+
+### What the cold read could not reach
+
+⚠️ ***"`md_to_speech` renders the label colon as an EM DASH, so `:714` carries THREE em dashes with
+two different jobs. I can see that; I cannot hear how the voice paces it."*** **`tts_sample.py` would
+settle it and was not run.** · **Fig. 7's corroboration is inherited, not re-verified** · ⚠️ **the
+sibling sweep found 25 instances by grep BECAUSE THE PHRASE IS FIXED — *"a sibling that states the
+same instruction in different words is invisible to that method, and I have no estimate of how many
+there are."***
