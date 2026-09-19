@@ -212,7 +212,12 @@ def main(argv=None) -> int:
     if skipped:
         print("Set the missing keys and re-run; see PODCAST_AUTOMATION_LOCAL.md "
               "for the minimum setup steps per vendor.")
-    return 0
+    # ⚠️ Measured 19 September 2026: with every engine skipped or failed and
+    # zero synthesised, this returned 0 unconditionally — a clean exit code on
+    # a run that produced no audio at all. An agent that checks the exit code,
+    # as every brief in this repository instructs, would conclude the ear test
+    # ran. It had synthesised nothing. Non-zero here is the whole fix.
+    return 0 if ran else 1
 
 
 if __name__ == "__main__":

@@ -1,5 +1,58 @@
 # The whole-shoulder limb — a seven-agent propagation wave, and the cross-file read four agents asked for
 
+---
+
+## ⚠️⚠️ CORRECTION, ADDED LATER THE SAME DAY: THIS WAVE WAS NOT COMPLETE, AND THE VERIFICATION BEHIND IT COULD NOT HAVE TOLD ME
+
+**Everything below this block stands as written about the sites the wave TOUCHED. What it got wrong is
+the SET.**
+
+**Measured markup-stripped, corpus-wide, after the wave: TWENTY-ONE documents teach the boards posture
+(*"forearm and hip"*). `fa662cc` reached sixteen. FIVE CARRY NO SHOULDER LIMB AT ALL** —
+`systems/breakouts.md` (13 posture sites), `technique/puck_handling.md` (8),
+`foundation/on_ice_communication.md` (6), `positions/defender.md` (5),
+`hockey-iq/risk_management.md` (4). **Not prose asides: between them they include a
+*"two absolute prohibitions"* opener and at least eight `Never:`/`Technique:`/`Priority:`/`Action:`
+facts lines, every one of which is voiced ALONE with a 300 ms break either side.**
+
+### ⚠️ THE VERIFICATION IN THIS RECORD WAS STRUCTURALLY INCAPABLE OF FINDING THEM
+
+**This record's central safety claim — *"zero sites carry the hedge without the tip absolute"* — was
+established by censusing sites that MATCH THE LIMB WORDING.** ⚠️ **THESE FIVE DOCUMENTS MATCH NOTHING.
+THEY WERE INVISIBLE BY CONSTRUCTION.** **The claim remains TRUE of every site it examined and it was
+independently reproduced; it simply never described the corpus.**
+
+⚠️⚠️ **A CENSUS OF WHERE A PHRASE *IS* CANNOT FIND WHERE IT *OUGHT TO BE*.** **The correct frame,
+used to find these: census the POSTURE — the thing the limb qualifies — then ask which carriers lack
+the limb.** **That inversion is the transferable lesson of this whole wave and it is not stated
+anywhere below.**
+
+### Two further mechanisms, each of which independently cleared a defective file
+
+**FALSE PRESENCE.** **`grep -c shoulder content/technique/puck_handling.md` returns **34**, across
+**47 distinct contexts**, every one read.** ⚠️ **NOT ONE IS AN IMPACT SURFACE — they are DEKING: the
+head-and-shoulder fake, a defender's *"inside shoulder"* and *"outside shoulder"*, *"skating shoulder
+to shoulder"*.** **Every false-absence class this project records is a grep returning too FEW. This is
+the inverse, and it is worse: a reviewer who greps the word, sees 34 hits and moves on HAS DONE THE
+CHECK AND GOT THE WRONG ANSWER.**
+
+**A CAPTION MASKING ITS HOST'S GAP.** **`puck_handling.md`'s render DOES voice the full limb, at chunk
+36 of 62.** ⚠️ **It is the `scan-before-a-wall-reception` CAPTION, embedded by a marker and OWNED BY
+ANOTHER DOCUMENT; the file's own prose and facts lines say none of it.** **An audit keyed on the
+diagram `owner` field scores it CLEAN.** **This is `check_caption_hosts.py`'s known under-count firing
+in the OPPOSITE direction to the one it was written for: there the caption carried a boundary the host
+omitted; here it CONCEALS that the host omits one.**
+
+### What this means for the record below
+
+- **The wave's WORK is sound. Its SCOPE was wrong, and its own verification could not have said so.**
+- ⚠️ **Do NOT quote this record's site or document counts as a description of the corpus.** **They
+  describe what the wave touched.**
+- **The five documents are dispatched. Repairing them also settles seven diagram captions that were
+  correctly left alone — the corpus's propagation order is body → facts → captions, and a caption-only
+  repair in an unrepaired document inverts it.**
+
+
 **19 September 2026.** **Seven agents, sixteen `content/` files, disjoint ownership stated per file.**
 
 **The limb:** commit `72ef106` settled the owner's conclusion as ***the tip never, and no part of the

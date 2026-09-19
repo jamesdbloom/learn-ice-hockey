@@ -270,9 +270,16 @@ const puckOnTheFarSide = {
     '⚠️ And the moment a battle like this reaches the boards, this document\'s own override ' +
     'outranks every word of it: never turn your back to the wall and never duck, and neither ' +
     'prohibition is a rule for fast checkers only. Get your skates parallel to the wall and take ' +
-    'the contact on your forearm and hip, head up and chin off your chest. USA Hockey warns that ' +
-    'even a light hit from behind could inflict a severe head or neck injury, and the head-down ' +
-    'collision that ducking produces can break your neck at walking speed.',
+    'the contact on your forearm and hip, head up and chin off your chest. USA Hockey addresses ' +
+    // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
+    // Behind, whose lead sentence is "Checking from behind is illegal, extremely dangerous and
+    // less than courageous" — so the warning is aimed at the CHECKER, not at the player who
+    // turns. The caption carried the twelve words verbatim with no quotation marks, which
+    // check_quote_drift.py cannot see because there are no quote marks to match against.
+    // Capital "Even" is the source's own and is kept because the quotation opens after a colon.
+    'its warning about hits from behind to the checker delivering one: "Even a light hit from ' +
+    'behind could inflict a severe head or neck injury." And the head-down collision that ' +
+    'ducking produces can break your neck at walking speed.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right and their goaltender in the ' +

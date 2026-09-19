@@ -112,7 +112,14 @@ text = open(DOC, encoding="utf-8").read()
 lines = text.split("\n")
 quotes, seen = [], set()
 for ln, l in enumerate(lines, 1):
-    for m in re.finditer(r'\*"([^"]{%d,})"\*' % MINLEN, l):
+    # ASCII *and* typographic quote marks. The corpus uses both: a census on
+    # 19 September 2026 found 156 italic-quoted fragments across 10 documents
+    # written with U+201C/U+201D, every one of them structurally INVISIBLE to
+    # this checker while the pattern accepted only '"'. forechecking_systems.md
+    # held 60 of them and center.md 45. An agent found it only because its own
+    # nine new quotations scored clean=900 unchanged until it converted them to
+    # straight quotes, at which point the figure moved to 909.
+    for m in re.finditer(r'\*["\u201c]([^"\u201d]{%d,})["\u201d]\*' % MINLEN, l):
         q = m.group(1)
         if (ln, q) in seen: continue
         seen.add((ln, q)); quotes.append((ln, q))

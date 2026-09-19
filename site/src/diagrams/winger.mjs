@@ -421,6 +421,29 @@ const leavesThePoint = {
 const LINE_WINGER = { at: 'blue-line', dx: -6, dy: 33 };           // (19, 33)
 const LINE_CARRIER = { at: 'neutral-dot:right', dx: -8, dy: -2 };  // (12, 20)
 
+// ⚠️ SHOULDER, 19 Sep 2026 — BOTH CAPTIONS IN THIS FILE THAT TEACH THE WALL POSTURE
+// (winger-arriving-at-the-line below, winger-corner-and-the-empty-point further down).
+// Each carried only the TIP limb. USA Hockey writes two sentences and they differ on both
+// axes: sources/ibc.txt:1453, "Never hit the boards or glass with the tip of your shoulder -
+// it can cause injury" (absolute, narrow), and :692, "Avoid hitting the boards with the
+// shoulder" (soft, broad, under the objective "checked while skating parallel to the
+// boards"); ibc.txt:1537 and huh.txt:647 print "No shoulder contact on the boards, if
+// possible". All read this session. A listener told only that the tip is ruled out infers
+// the flat of the shoulder is available, and the shoulder is the most fractured site in the
+// game. "not the whole shoulder", NEVER "never" — USA Hockey writes one "never" here and it
+// is the tip. Hedge AFTER the absolute so it cannot be heard attaching backwards, and the
+// surface that should meet the wall named first, which is what makes it a redirection rather
+// than a licence. Owner: content/positions/winger.md:662, adopted verbatim.
+// ⚠️ THE CORNER CAPTION'S CLAUSE ORDER MOVED TOO, for the reason set out in positions.mjs:
+// it read "forearm and hip into the contact rather than the point of your shoulder, head up
+// and chin off your chest", and appending the hedge there would leave a live negation
+// reaching "head up" — the inversion commit 49f1dc6 exists to repair.
+// ⚠️ NO COUNT MOVED. Both captions say "Those are two different injuries" of the turned back
+// and the tucked chin, a pair the corpus keeps together because their EVIDENCE differs; the
+// shoulder has no named mechanism and was never a member of it.
+// ⚠️ AND THE ARRIVING CAPTION HID FROM THE GREP that scoped this repair: its phrase splits
+// across a string-concatenation boundary ("the point " + "of your shoulder"), so a line-based
+// grep of this directory does not return it. Count from site/src/data/diagrams.json.
 const arrivingAtTheLine = {
   id: 'winger-arriving-at-the-line',
   owner: OWNER,
@@ -451,7 +474,7 @@ const arrivingAtTheLine = {
     'the wall and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
     'for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the ' +
     'boards, forearm and hip into the contact, head up and chin off your chest — and not on the point ' +
-    'of your shoulder.',
+    'of your shoulder, and not the whole shoulder if you can help it.',
 
   describe:
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +
@@ -573,7 +596,8 @@ const cornerAndTheEmptyPoint = {
     'than the way it always is. ⚠️ Never turn your back to the wall and never duck. Those are two ' +
     'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
     'which does not need speed to do it. Skates parallel to the boards, forearm and hip into the ' +
-    'contact rather than the point of your shoulder, head up and chin off your chest. Nothing in this ' +
+    'contact, head up and chin off your chest — and not on the point of your shoulder, and not the ' +
+    'whole shoulder if you can help it. Nothing in this ' +
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:

@@ -58,12 +58,26 @@ a listener NEVER TO KEEP THEIR HEAD UP.
         by "so", and that THE ONE SITE WITH A BARE IMPERATIVE STRAIGHT AFTER A DASH WAS THE ONE
         THAT INVERTED. That is the corpus's own convention working, not an edge of it.
 
+⚠️  A NEGATION DOES NOT NEED A NEGATIVE WORD, and until 19 September 2026 this tool assumed it
+    did. "rather than", "instead of", "other than", "as opposed to" all negate their complement,
+    and the complement's scope runs forward over a comma exactly as "not" does. THREE LIVE
+    INSTANCES of the 49f1dc6 shape were found BY HAND on 19 September carrying "rather than",
+    all three telling a listener, voiced, not to keep their head up. See `CONNECTIVE` below for
+    the measurement, and `POSTURE` for the half of the change that actually did the work.
+⚠️  WHAT THAT WIDENING DID NOT FIND. A full sweep of all 408 SHIPPED caption/describe strings
+    for `rather than | instead of | as opposed to | other than | in place of | short of |
+    without | before | unless | except | avoid | far from | not...but | too...to | seldom` on
+    19 September returned ZERO further defects. "rather than" alone occurs 237 times in the
+    layer and is this corpus's HOUSE STYLE for stating a contrast without a bare negation --
+    which is the CORRECT form, not a smell. The new vocabulary is a regression guard on a
+    family that has bitten three times, not a backlog. EXPECT ITS HITS TO BE CORRECT.
+
 ⚠️  READS THE .mjs SOURCES, NOT `site/src/data/diagrams.json`. The JSON is a build product
     and goes stale the moment a caption is edited, so a scan of it silently reports
     superseded text — the same trap `check_absolutes.py` refuses to fall into.
 """
 from __future__ import annotations
-import re, sys, pathlib, collections
+import re, sys, pathlib, collections, itertools
 
 SRC = pathlib.Path(__file__).resolve().parent.parent / "site" / "src" / "diagrams"
 
@@ -191,10 +205,43 @@ NEGATION = r"\b(never|not|no|neither|nor|cannot|nothing|none)\b"
 # negation ... separator-that-is-not-a-full-stop ... tail
 SHAPE = re.compile(NEGATION + r"([^.!?]{0,70}?)([;:,—])\s+(\w[^.!?]{0,90})", re.I)
 
+# ⚠️  THE SECOND VOCABULARY, ADDED 19 September 2026, AND IT DOES NOT WORK ALONE. A negation
+#     does not need a negative WORD. "rather than" negates its complement just as hard as
+#     "not" does, and on 19 September THREE LIVE INSTANCES were found BY HAND, invisible to
+#     every vocabulary above:
+#         "forearm and hip into the contact rather than the point of your shoulder,
+#          head up and chin off your chest"
+#     -> the negation reaches forward over the comma and a listener is told NOT TO KEEP THEIR
+#     HEAD UP. That is commit 49f1dc6's defect exactly, in the caption layer, three times, in
+#     `winger-dz-rim`, `winger-dz-reverse` and `winger-corner-and-the-empty-point`. They were
+#     caught only because an agent happened to be editing those lines.
+#     ⚠️  MEASURED against the pre-repair sources: `SHAPE` finds ZERO matches anywhere inside
+#     the defect SENTENCE. Not a low score — no match at all. The whole family was invisible.
+CONNECTIVE = r"\b(rather than|instead of|as opposed to|other than|in place of|short of|without)\b"
+SHAPE_CONN = re.compile(CONNECTIVE + r"([^.!?]{0,70}?)([;:,—])\s+(\w[^.!?]{0,90})", re.I)
+
 # signals that RAISE suspicion; none is proof
 IMPERATIVE = re.compile(
     r"^(find|get|keep|take|ask|read|treat|stay|play|make|use|watch|put|drive|skate|check|"
     r"call|look|turn|angle|arrive|carry|hold|leave|move|start|stop|square|seal|block)\b", re.I)
+# ⚠️  THE TAIL DISCRIMINATOR IS THE LOAD-BEARING HALF, AND THE VOCABULARY ABOVE IS NOT.
+#     MEASURED 19 September 2026 on the three real defects. With `CONNECTIVE` added but the
+#     tail signal left as `IMPERATIVE` alone, all three score **1** — the low-signal band,
+#     buried among 104 other new score-1 hits, indistinguishable from noise. Widening the
+#     vocabulary WITHOUT this line would have been worse than useless: 198 new occurrences
+#     bought and the defect still invisible.
+#     With posture nouns counted as a dangerous tail, all three score **3**, and the whole
+#     shipped layer yields just 3 occurrences at score >= 3 under the new vocabulary.
+#     ⚠️  WHY A BODY PART IS THE SIGNAL. The corpus's boards-contact instruction is a run of
+#     posture limbs in apposition — "skates parallel to the wall, forearm and hip into it,
+#     head up and chin off your chest". When the thing being ruled out is ALSO a body part
+#     ("the point of your shoulder"), there is no grammatical boundary left for a listener to
+#     hear, and the negation's scope simply runs on. That parallelism IS the defect; a tail
+#     starting with a finite verb ("get your skates parallel") resets the clause and is much
+#     weaker evidence. ⚠️  Still only a SIGNAL. Read the hit.
+POSTURE = re.compile(
+    r"^(head|chin|knees|skates|feet|hands|gloves|stick|shoulder|shoulders|forearm|hip|hips|"
+    r"elbow|elbows|back|body|arms|weight|eyes)\b", re.I)
 RESOLVER = re.compile(r"^(so|but|because|which|who|whose|since|though|although)\b", re.I)
 
 
@@ -250,7 +297,7 @@ def main() -> int:
     for fname, did, field, text in rows:
         if only and only not in (fname, did):
             continue
-        for m in SHAPE.finditer(text):
+        for m in itertools.chain(SHAPE.finditer(text), SHAPE_CONN.finditer(text)):
             neg, mid, sep, tail = m.group(1), m.group(2), m.group(3), m.group(4).strip()
             # ⚠️  A MATCHED PARENTHETICAL PAIR DEFUSES THE CARRY, but `mid` is capped at 70
             #     chars by SHAPE, so a pair whose OPENING dash sits further back scored as a
@@ -260,8 +307,8 @@ def main() -> int:
             # an intervening resolver in the middle span defuses most carries
             resolved = bool(re.search(r"\b(so|but)\b", mid, re.I)) or bool(RESOLVER.match(tail))
             score = 0
-            if IMPERATIVE.match(tail):
-                score += 2                      # a command is the dangerous tail
+            if IMPERATIVE.match(tail) or POSTURE.match(tail):
+                score += 2                      # a command, or a posture limb, is the dangerous tail
             if not resolved:
                 score += 1
             if sep == "—" and (sent + mid).count("—") == 0:

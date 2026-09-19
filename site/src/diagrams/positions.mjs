@@ -994,6 +994,31 @@ const dToD = {
 // which is what half-wall's y was tuned for. Both checkers below are placed inside him
 // because that is where the prose puts them — containment and over-commitment are read
 // off the ice they take away — and not because the boards forced it.
+// ⚠️ SHOULDER, 19 Sep 2026 — BOTH DZ CAPTIONS BELOW. They carried "forearm and hip into the
+// contact rather than the point of your shoulder", which is the narrow half of USA Hockey's
+// instruction and, read aloud, put the negation in front of the head-up limb.
+// (1) THE LIMB. USA Hockey writes two sentences and they differ on both axes: sources/ibc.txt
+//     :1453, "Never hit the boards or glass with the tip of your shoulder - it can cause
+//     injury" (absolute, narrow), and :692, "Avoid hitting the boards with the shoulder" (soft,
+//     broad, under the objective "checked while skating parallel to the boards" — the wall
+//     battle these two diagrams draw); ibc.txt:1537 and huh.txt:647 print "No shoulder contact
+//     on the boards, if possible". All read this session. A listener told only that the TIP is
+//     ruled out infers the flat of the shoulder is available.
+// (2) "not", NEVER "never", for the whole shoulder. USA Hockey writes exactly one "never" here
+//     and it is the tip; the broad sentences are "avoid" and "if possible".
+// (3) THE CLAUSE ORDER MOVED, and that is not a tidy. With the shoulder limb mid-sentence,
+//     appending the hedge would give "rather than the point of your shoulder, and not the whole
+//     shoulder if you can help it, head up and chin off your chest" — a negation still live
+//     when the list resumes, reaching a listener as an instruction NOT to keep the head up.
+//     That inversion is what commit 49f1dc6 exists to repair, and forechecking_systems.mjs
+//     states the placement rule in terms: the shoulder limb goes AFTER "chin off your chest",
+//     never before it, so the sentence ends on the negation with nothing to carry onto.
+//     The replacement is content/positions/winger.md:662's own sentence, adopted verbatim.
+// (4) NO COUNT MOVED. "Those are two different injuries" counts the turned back and the tucked
+//     chin, which the corpus keeps as a pair because their EVIDENCE differs. The shoulder is a
+//     posture instruction with no mechanism named for it and was never a member of that pair,
+//     so it does not make the count three here — unlike forechecking_systems.mjs, whose owner
+//     section does enumerate three prohibitions and whose captions say so.
 const wingerDzRim = {
   id: 'winger-dz-rim',
   owner: 'content/positions/winger.md',
@@ -1011,8 +1036,8 @@ const wingerDzRim = {
     'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the wall and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
     'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
-    'forearm and hip into the contact rather than the point of your shoulder, head up and chin off ' +
-    'your chest.',
+    'forearm and hip into the contact, head up and chin off your chest — and not on the point of ' +
+    'your shoulder, and not the whole shoulder if you can help it.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
@@ -1078,8 +1103,8 @@ const wingerDzReverse = {
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
     'back to the wall and never duck. Those are two different injuries — a hit from behind you cannot' +
     ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
-    'to the boards, forearm and hip into the contact rather than the point of your shoulder, head up ' +
-    'and chin off your chest.',
+    'to the boards, forearm and hip into the contact, head up and chin off your chest — and not on ' +
+    'the point of your shoulder, and not the whole shoulder if you can help it.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +

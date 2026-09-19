@@ -191,9 +191,15 @@ export const CREASE_LINE_IS_THE_CREASE =
  * Reached as: "…rather than anything either book states in terms, and " + this,
  * or "…states in terms; " + this. Ends the sentence, so it carries its own stop.
  */
+// ⚠️ QUOTED. These are the books' own words, not a gloss: both the NHL and the IIHF print
+// "enforced exclusively in accordance with the on-ice judgement of the Referee(s)" verbatim
+// (both re-located this session), and this constant shipped them bare into three captions.
+// The full stop sits OUTSIDE the quote because the source sentence continues — the NHL's
+// with "but may be subject to a Coach's Challenge", the IIHF's with "but may be subject to
+// a Video Review" — and a period inside would be exactly the drift check_quote_drift.py hunts.
 export const REFEREE_JUDGEMENT =
-  'both add that Rule 69 is enforced exclusively in accordance with the on-ice ' +
-  'judgement of the Referee(s).';
+  'both add that Rule 69 is "enforced exclusively in accordance with the on-ice ' +
+  'judgement of the Referee(s)".';
 
 /**
  * The reference-table citation: the books' OWN worked examples putting a

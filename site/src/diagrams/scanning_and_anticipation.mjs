@@ -171,10 +171,24 @@ const wallReception = {
     // standing on the wall with a checker arriving is exactly the shape that override exists for,
     // so the caption cannot end without it. (Whether any other diagram in the corpus draws that
     // shape has NOT been checked here, and no claim about that is made.)
+    // ⚠️ SHOULDER, 19 Sep 2026: this carried only "not on the point of your shoulder" — the
+    // narrow half. USA Hockey writes two sentences that differ on both axes: sources/ibc.txt
+    // :1453, "Never hit the boards or glass with the tip of your shoulder - it can cause
+    // injury" (absolute, narrow), and :692, "Avoid hitting the boards with the shoulder"
+    // (soft, broad, under the objective "checked while skating parallel to the boards", which
+    // is this diagram's own case — a reception on the wall with a forechecker arriving);
+    // ibc.txt:1537 and huh.txt:647 print "No shoulder contact on the boards, if possible".
+    // All read this session. Told only that the TIP is ruled out, a listener infers the flat
+    // is available. "not" and never "never" for the whole shoulder: USA Hockey writes one
+    // "never" here and it is the tip. Hedge AFTER the absolute so it cannot attach backwards.
+    // The replacement is the owner's own sentence, scanning_and_anticipation.md:537 and :597,
+    // adopted verbatim through to "with no head contact at all" — so the caption and the two
+    // spoken body sites cannot drift. No count in this caption names the shoulder.
     '⚠️ Looking does not protect you; position does. A reception on the wall is a reception into ' +
     'head-on contact with the boards. Never take that contact with your back to the boards, and ' +
     'never duck. Get your skates parallel to the wall and take it on your forearm and hip, head up ' +
-    'and chin off your chest — not on the point of your shoulder. If you are already facing the ' +
+    'and chin off your chest — not on the point of your shoulder, and not the whole shoulder if ' +
+    'you can help it. If you are already facing the ' +
     'wall and cannot turn, get your stick and gloves up and spread out on the glass, with no head ' +
     'contact at all.',
 

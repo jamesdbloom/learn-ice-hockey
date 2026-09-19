@@ -791,12 +791,21 @@ const forecheckPinch = {
     // sources, and three owner documents forbid joining the walking-speed evidence to the turned
     // back -- USA Hockey's walking-speed sentence is about a HEAD-DOWN, head-first collision and
     // it writes nothing of the kind about a turn. That separation is unchanged.
-    // ⚠ THREE PROHIBITIONS, NOT TWO, AND THE SHOULDER TIP IS THE THIRD. This block used to end
+    // ⚠ THREE PROHIBITIONS, NOT TWO, AND THE SHOULDER IS THE THIRD. This block used to end
     // the posture at "chin off your chest" and then call it "two prohibitions against two
     // different injuries", while the OWNING SECTION says "The turned back, the tucked chin and
-    // the shoulder tip are three separate prohibitions" -- content/systems/forechecking_systems.md
-    // :542 (the pinch section, which is this diagram's own) and :875. One document saying TWO and
+    // the shoulder on the boards are three separate prohibitions" -- content/systems/
+    // forechecking_systems.md:539 (the pinch section, which is this diagram's own) and :876.
+    // One document saying TWO and
     // THREE about one subject, and captions are voiced, so both reach one listener in one track.
+    // ⚠ THE COUNT IS STILL THREE. On 19 Sep 2026 the owner broadened the THIRD MEMBER from
+    // "the shoulder tip" to "the shoulder on the boards" and this caption followed it. That is
+    // a substitution inside the list, not an insertion: nothing was added to the three, so the
+    // numeral did not move. Do not "correct" it to four -- the hedge below is the same
+    // prohibition stated to its full width, not a separate one.
+    // ⚠ AND THE LINE NUMBERS ABOVE ARE A POINTER THAT GOES STALE. They were :542 and :875 when
+    // this comment was written and are :539 and :876 today, after a wave that did not touch
+    // this file. Grep the quoted sentence rather than trusting the number.
     // ⚠ AND IT WAS NOT ONLY A COUNT. This block TEACHES the receiving posture -- "forearm and hip
     // to it, head up and chin off your chest" is the owner's Case 2 technique -- so the missing
     // limb was missing from the INSTRUCTION, not merely from an enumeration. Naming the two
@@ -847,7 +856,24 @@ const forecheckPinch = {
     // The light-hit quotation is still NOT carried here: it belongs to the turned back, and it
     // is in the section and in body_contact_and_battles.md §6, where the scoping around it can
     // be stated in full.
-    'And whatever your book says about contact, one thing holds in every league, checking or not: never take contact on the wall with your back to the boards, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest — and not on the point of your shoulder. The turned back, the tucked chin and the shoulder tip are three separate prohibitions — a back turned makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey says can occur at walking speed.',
+    // ⚠ 19 Sep 2026 -- AND THE SOURCE WORK ABOVE WAS DONE AND THEN HALF-USED. The comment
+    // already quoted ibc.txt:692, "Avoid hitting the boards with the shoulder", and the caption
+    // still went out carrying only the TIP. Quoting the broad sentence in a comment is not the
+    // same as obeying it in the string, and nothing mechanical could see the gap: the caption
+    // was true, cited, and short of the instruction. The two sentences differ on BOTH axes --
+    // :1453 is absolute and narrow, :692 is soft and broad and is printed under the objective
+    // "checked while skating parallel to the boards", which is this diagram's own case; and
+    // ibc.txt:1537 and huh.txt:647 both print "No shoulder contact on the boards, if possible".
+    // A reader told the tip is ruled out infers the flat is available.
+    // ⚠ "not the whole shoulder", NEVER "never". USA Hockey writes exactly one "never" here and
+    // it is the tip; the broad sentences are "avoid" and "if possible". An unobeyable absolute
+    // sitting third in a run of three prohibitions discounts the two above it, and those two
+    // protect the cervical spine.
+    // ⚠ AND THE HEDGE GOES AFTER THE ABSOLUTE, inside the same sentence, so it cannot be heard
+    // attaching backwards to the tip. That is the same PLACEMENT rule as the note above, one
+    // clause further on: the sentence still ends on the negation and still carries nothing
+    // after it. Owner wording: content/systems/forechecking_systems.md:539 and :876.
+    'And whatever your book says about contact, one thing holds in every league, checking or not: never take contact on the wall with your back to the boards, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest — and not on the point of your shoulder, and not the whole shoulder if you can help it. The turned back, the tucked chin and the shoulder on the boards are three separate prohibitions — a back turned makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey’s Heads Up Hockey guide says "can occur at walking speed".',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, with the puck in the strong-side corner. ' +
@@ -1228,7 +1254,7 @@ const forecheckPress = {
     // wall is the half-treatment. VERBATIM identical to forecheck-pinch's, deliberately, so the
     // two cannot drift; its scoping, its two-mechanism separation and its walking-speed
     // qualifier are all argued out in the comment above that caption and are not restated here.
-    'And whatever your book says about contact, one thing holds in every league, checking or not: never take contact on the wall with your back to the boards, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest — and not on the point of your shoulder. The turned back, the tucked chin and the shoulder tip are three separate prohibitions — a back turned makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey says can occur at walking speed.',
+    'And whatever your book says about contact, one thing holds in every league, checking or not: never take contact on the wall with your back to the boards, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest — and not on the point of your shoulder, and not the whole shoulder if you can help it. The turned back, the tucked chin and the shoulder on the boards are three separate prohibitions — a back turned makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey’s Heads Up Hockey guide says "can occur at walking speed".',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +

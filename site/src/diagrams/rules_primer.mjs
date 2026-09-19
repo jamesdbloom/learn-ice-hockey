@@ -398,10 +398,29 @@ const icingTheRaceAndTheDot = {
     'hitting or impacting the boards "is boarding and must be penalized as such" under NHL 41.1, IIHF ' +
     '41.1 and Hockey Canada 7.2, word for word, and USA Hockey penalises the same contact without ' +
     'naming boarding, at Rule 624(d). And whoever wins it, how you arrive at the wall is the part ' +
+    // ⚠️ SHOULDER LIMB ADDED 19 September 2026, and the EXPLANATION MOVED TO MAKE ROOM FOR IT
+    // SAFELY. The owner (`content/foundation/rules_primer.md`, Key Takeaways) already carried
+    // "your forearm and hip meeting the wall, never the point of your shoulder, not the whole
+    // shoulder if you can help it"; this caption named the surfaces and stopped, so it was a
+    // propagation lag rather than a new claim.
+    // ⚠️ WHY THE REORDER AND NOT AN APPEND. The limb could not go where the old em-dash tail was:
+    // "not the whole shoulder if you can help it — a turned back makes it a hit from behind" puts
+    // a HEDGE in front of a bare separator, which is the 49f1dc6 shape `check_caption_negations.py`
+    // exists to catch, and the tail's evidence names the BACK and the CHIN, not the shoulder. A
+    // colon after "never duck" was rejected for the same reason in the other direction: the
+    // inverted reading there is "a turned back does NOT make it a hit from behind", which is the
+    // one inversion in this block a listener could act on. So the explanation became its own
+    // sentence — both its subjects are named nouns, so it stands alone voiced — and the posture
+    // instruction now ENDS ON THE NEGATION, hedge after the absolute, beside the named substitute.
+    // ⚠️ The only count word in the safety tail is "neither see nor brace for", a correlative about
+    // seeing and bracing. It is NOT a count of prohibitions, so the added limbs do not strand it.
+    // Contrast `support-a-battle-from-outside`, whose "neither prohibition" IS a count and which
+    // therefore cannot take this limb without a substitution in the same edit.
     'that hurts people, in every league, checking or not. Never take that contact with your back to ' +
-    'the boards, and never duck. Get your skates parallel to the wall instead, take it on your ' +
-    'forearm and hip, head up and chin off your chest — a turned back makes it a hit from behind, ' +
-    'which you can neither see nor brace for, and a tucked chin straightens the cervical spine.',
+    'the boards, and never duck. A turned back makes it a hit from behind, which you can neither ' +
+    'see nor brace for, and a tucked chin straightens the cervical spine. Get your skates parallel ' +
+    'to the wall instead, take it on your forearm and hip, head up and chin off your chest — and ' +
+    'not on the point of your shoulder, and not the whole shoulder if you can help it.',
 
   describe:
     'The defending half of the rink, your own net at the right and your goaltender in the crease. ' +

@@ -988,12 +988,35 @@ const angleIntoTheCorner = {
   // than as "not the position to aim for" before a comma. The warning at the const above about
   // "cannot turn," applies to this sentence too.
   // ⚠️ TWO SENTENCES, NOT ONE COMMA LIST — the §6 form, at "Get your skates parallel to the
-  // wall and put your forearm and hip to it — not the point of your shoulder, and never your
-  // back. Head up, chin off your chest." Run as one list, the "not ... your shoulder" is still
+  // wall and put your forearm and hip to it — not the point of your shoulder, not the whole
+  // shoulder if you can help it, and never your back. Head up, chin off your chest." (That
+  // quotation carried only the tip limb until 19 Sep 2026; body_contact_and_battles.md:788
+  // now carries both, and the caption below was brought to it in the same edit — see the
+  // SHOULDER note below.) Run as one list, the "not ... your shoulder" is still
   // live when the list resumes after the comma, and a listener carries it across into the tail:
   // "never ... knees bent, head up and chin off your chest" — the cervical-flexion mechanism
   // taught as the instruction. The tail is a noun phrase, which is why no verb-led scan of this
   // directory ever found it. The safety content is unchanged; only the sentence boundary moved.
+  // ⚠️ SHOULDER, 19 Sep 2026: this caption carried only "not the point of your shoulder" —
+  // the narrow half. USA Hockey writes two sentences and they differ on both axes:
+  // sources/ibc.txt:1453, "Never hit the boards or glass with the tip of your shoulder - it
+  // can cause injury" (absolute, narrow, in the "Angling In" list this diagram draws), and
+  // ibc.txt:692, "Avoid hitting the boards with the shoulder" (soft, broad, under the
+  // objective "checked while skating parallel to the boards" — the case this caption
+  // teaches); ibc.txt:1537 and huh.txt:647 both print "No shoulder contact on the boards, if
+  // possible". All read this session. A listener told only that the TIP is ruled out infers
+  // the flat of the shoulder is available. Both limbs now, hedge AFTER the absolute so it
+  // cannot be heard attaching backwards, and the surface that should meet the wall named
+  // first — that last property is what makes it a redirection rather than a licence.
+  // ⚠️ "not the whole shoulder", never "never": USA Hockey writes exactly one "never" here
+  // and it is the tip. Owner: content/technique/body_contact_and_battles.md:788, whose
+  // wording this adopts. The two-sentence boundary above is preserved — the added limb goes
+  // inside the FIRST sentence, so "Knees bent, head up" stays out of the negation's reach.
+  // ⚠️ NO COUNT MOVED. "two separate injuries with two separate mechanisms" counts the
+  // turned back and the tucked chin; the shoulder was never a member of that pair — it is a
+  // posture instruction with no mechanism named for it, which is why USA Hockey says only
+  // that it "can cause injury". "three cases for meeting a wall" counts cases, not
+  // prohibitions, and is untouched.
   caption:
     'Going back for a puck in your own corner with a checker inside the line you are skating, and the ' +
     'only thing drawn is that line. It bends: it sets off pointed at the corner and finishes running ' +
@@ -1010,11 +1033,18 @@ const angleIntoTheCorner = {
     'you at all depends on your age group, your league and the book they play under, and nothing that ' +
     'follows depends on the answer. Never take that contact with your back to the boards, and never ' +
     'duck. Those are two separate injuries with two separate mechanisms. A back turned makes it a hit ' +
-    'from behind, and USA Hockey addresses its warning about those to the player delivering one — ' +
-    'even a light hit from behind could inflict a severe head or neck injury. A chin tucked to the ' +
-    'chest straightens the cervical spine, and the injury that follows is one USA Hockey says can ' +
-    'happen at walking speed. So, in every league, checking or not, get your skates parallel to the ' +
-    'wall and take it on your forearm and hip, not the point of your shoulder. Knees bent, head up ' +
+    // ⚠️ BOTH BORROWINGS QUOTED. The addressee was already right here; what was missing was the
+    // quotation marks. "Even a light hit..." is sources/ibc.txt:1570 verbatim (§5 Checking From
+    // Behind), and the em dash that introduced it became a colon so the source's capital "Even"
+    // is correct rather than a silent mid-sentence capital. The walking-speed clause read "can
+    // happen at walking speed"; sources/huh.txt:229 says "it can occur at walking speed", so the
+    // verb is the source's now and the string is quoted to the same standard as the first.
+    'from behind, and USA Hockey addresses its warning about those to the player delivering one: ' +
+    '"Even a light hit from behind could inflict a severe head or neck injury." A chin tucked to ' +
+    'the chest straightens the cervical spine, and the injury that follows is one USA Hockey says ' +
+    '"can occur at walking speed". So, in every league, checking or not, get your skates parallel to the ' +
+    'wall and take it on your forearm and hip, not the point of your shoulder, and not the whole ' +
+    'shoulder if you can help it. Knees bent, head up ' +
     'and chin off your chest. That is the second case. The third is what is left when turning is ' +
     'already impossible, and it is damage limitation rather than the position to aim for. USA ' +
     'Hockey asks you to turn your skates parallel if at all possible before you settle for it. ' +

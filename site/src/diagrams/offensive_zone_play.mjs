@@ -1008,7 +1008,25 @@ const cycleRim = {
   caption:
     // CAPTION LENGTH, 15 Sep 2026: 246 words before. The marker sits AFTER "The mechanics",
     // whose prose and ```facts block state both reads, the rotation and the turnover hedge.
-    // ⚠️ THE WALL-BATTLE LIMB IS UNTOUCHED, word for word, and stays in BOTH cycle captions:
+    // ⚠️ SHOULDER, 19 Sep 2026: the wall-battle limb carried only "not on the point of your
+    // shoulder" — the narrow half of USA Hockey's instruction. ibc.txt:1453 is absolute and
+    // narrow ("Never hit the boards or glass with the tip of your shoulder - it can cause
+    // injury"); ibc.txt:692 is soft and broad ("Avoid hitting the boards with the shoulder")
+    // and is printed under the objective "checked while skating parallel to the boards", which
+    // is the cycle wall battle exactly; ibc.txt:1537 and huh.txt:647 print "No shoulder contact
+    // on the boards, if possible". All read this session. A listener told only the tip is ruled
+    // out infers the flat is available. Hedge AFTER the absolute, "not" and never "never" —
+    // USA Hockey writes one "never" here and it is the tip. Owner:
+    // content/systems/offensive_zone_play.md:318 and :340. The limb is still word-for-word
+    // identical in BOTH cycle captions, which is the property below.
+    // ⚠️ AND THIS ONE HID FROM THE GREP. The rim caption's phrase is SPLIT ACROSS A STRING
+    // CONCATENATION BOUNDARY — "the point of" ends one line and "your shoulder" opens the next —
+    // so a line-based grep for "point of your shoulder" over this directory returns the reverse
+    // caption and NOT this one. The census that scoped this repair counted eight sites against
+    // ten built captions and concluded the captions must share a constant. They do not: there
+    // are ten sites, and two of them were invisible to the grep. Search the BUILD PRODUCT,
+    // site/src/data/diagrams.json, when you need a true count of what a listener receives.
+    // ⚠️ THE WALL-BATTLE LIMB IS OTHERWISE UNTOUCHED, word for word, and stays in BOTH cycle captions:
     // it is the safety caveat for the contact this picture is one frame away from, and the
     // brief's rule on those admits no exception for repetition. ⚠️ "The companion diagram is
     // the same corner with the checker in the other place" was DEIXIS -- the reverse is named.
@@ -1021,7 +1039,7 @@ const cycleRim = {
     '⚠️ And whichever one is on, this is a ' +
     'wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, ' +
     'forearm and hip into the contact, head up and chin off your chest — and not on the point of ' +
-    'your shoulder. Only the checker and the ' +
+    'your shoulder, and not the whole shoulder if you can help it. Only the checker and the ' +
     'goaltender are drawn on the other team.',
 
   describe:
@@ -1095,7 +1113,8 @@ const cycleReverse = {
     'nobody has counted cycle turnovers by cause. ⚠️ And ' +
     'whichever one is on, this is a wall battle: never turn your back to the boards and never ' +
     'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
-    'your chest — and not on the point of your shoulder. Only the checker and the goaltender are ' +
+    'your chest — and not on the point of your shoulder, and not the whole shoulder if you can ' +
+    'help it. Only the checker and the goaltender are ' +
     'drawn on the other team.',
 
   describe:

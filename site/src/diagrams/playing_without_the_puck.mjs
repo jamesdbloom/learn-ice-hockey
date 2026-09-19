@@ -195,9 +195,15 @@ const loosePuckWhoGoes = {
     'these three jobs go to whoever is closest. The arrow stops five feet short of the puck. ' +
     '⚠️ Two postures carry two different dangers. A chin dropped to the chest is ' +
     'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
+    // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
+    // Behind and is addressed to the player delivering the check; the caption carried its
+    // wording with the word order shuffled and no quotation marks, which is invisible to
+    // check_quote_drift.py. The source's own "Even a light hit" carries the not-only-fast-hits
+    // point that the old trailing "even when the hit is light" was carrying by paraphrase.
     'contact with the boards or the goal post. A back turned to the boards is the ' +
-    'other: it makes the contact a hit from behind, which USA Hockey warns could inflict a ' +
-    'severe head or neck injury even when the hit is light. Neither warning depends on the ' +
+    'other: it makes the contact a hit from behind. USA Hockey addresses its warning about those ' +
+    'to the checker delivering one: "Even a light hit from behind could inflict a severe head or ' +
+    'neck injury." Neither warning depends on the ' +
     'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
     'skates parallel to it, take the contact on your forearm and hip, head up and chin off ' +
     'your chest, and never turn your back to the wall or duck.',
@@ -371,8 +377,13 @@ const screenSightline = {
     'is also a tip and rebound threat, and move late. Nothing here establishes that the ' +
     'position drawn is legal. Staying out of the blue paint is ' +
     'necessary and not sufficient. NHL Rule 69.1 reaches an attacking player who, ' +
-    '"either by his positioning or by contact", impairs the ' +
-    'goalkeeper’s ability to move freely within his crease or defend his goal — no contact ' +
+    // ⚠️ THE CLOSING QUOTE MARK USED TO SIT AFTER "contact", and everything from "impairs" to
+    // "defend his goal" is NHL 69.1 verbatim too — the rule's own words, shipped bare, reading
+    // as this corpus's gloss. Source checked this session: "an attacking player, either by his
+    // positioning or by contact, impairs the goalkeeper's ability to move freely within his
+    // crease or defend his goal". The quote now runs to the end of the borrowed clause.
+    '"either by his positioning or by contact, impairs the ' +
+    'goalkeeper’s ability to move freely within his crease or defend his goal" — no contact ' +
     'required. The ' +
     // ⚠️ "a goal", NOT "one". The original read "the sentence that actually disallows ONE", whose
     // referent was in the clause cut with it (69.1's "only if" ceiling, which capped "when a goal

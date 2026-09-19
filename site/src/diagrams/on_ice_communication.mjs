@@ -261,8 +261,15 @@ const whoCanSeeIt = {
     'contact he was not braced for. ⚠️ The safety instruction this picture carries is the one ' +
     'shouted at a player arriving at the wall who cannot see the check coming. Two ' +
     'separate postures injure a neck at the boards, and they are not the same warning. A back ' +
-    'turned to the wall is one: it makes the contact a hit from behind, which USA Hockey warns ' +
-    'could inflict a severe head or neck injury even when the hit is light. A chin dropped to the ' +
+    // ⚠️ QUOTED AT LAST. This module's own header comment above already printed this sentence
+    // as a quotation from Introduction To Body Contact §5 — sources/ibc.txt:1570 — while the
+    // shipped caption paraphrased its word order and dropped the quotation marks entirely. The
+    // addressee is named because §5 is addressed to the checker, not to the player who turns.
+    // The source's "Even a light hit" already blocks the "so a slow one is fine" reading that
+    // the old trailing "even when the hit is light" was doing by hand.
+    'turned to the wall is one: it makes the contact a hit from behind. USA Hockey addresses its ' +
+    'warning about those to the checker delivering one: "Even a light hit from behind could ' +
+    'inflict a severe head or neck injury." A chin dropped to the ' +
     'chest is the other: it straightens the cervical spine, and USA Hockey’s Heads Up Hockey ' +
     'guide, restating research by Charles Tator and colleagues, has it that almost all on-ice ' +
     'cervical spine injuries have come from the head being slightly flexed while making head-on ' +

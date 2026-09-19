@@ -665,9 +665,14 @@ const battleSupport = {
     'the wall and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
     'head up and chin off your chest. Loose-puck races and fifty-fifty pucks at the wall are ' +
     'where checking-from-behind and boarding injuries happen, and neither prohibition is a rule ' +
-    'for fast arrivals only: USA Hockey warns that even a light hit from behind could inflict a ' +
-    'severe head or neck injury, and the head-down collision that ducking produces can break ' +
-    'your neck at walking speed.',
+    // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570, §5 Checking From Behind, is
+    // addressed to the player delivering the check. The caption carried the twelve words
+    // verbatim and unquoted. The colon that used to introduce this clause became a full stop so
+    // the quotation can open after its own colon and keep the source's capital "Even".
+    'for fast arrivals only. USA Hockey addresses its warning about hits from behind to the ' +
+    'checker delivering one: "Even a light hit from behind could inflict a severe head or neck ' +
+    'injury." And the head-down collision that ducking produces can break your neck at walking ' +
+    'speed.',
 
   describe:
     'The attacking half of the rink, the net at the right. An own-team forward is on the right-hand ' +
