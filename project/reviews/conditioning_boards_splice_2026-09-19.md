@@ -192,3 +192,83 @@ the old clearance."***
 - **Dropping *"or a goal post"*** from the walking-speed claim in both summary layers is **a narrowing
   it judged correct for a boards-specific bullet.** *"A reviewer may disagree."*
 - ⚠️ **It did not `pdftoppm` the IBC figures** — **the third agent today to leave Fig. 6 unrendered.**
+
+---
+
+## Both held-file reviews returned CLEAR — and both refuted the same premise of mine, independently
+
+**`safety-reviewer`: CLEAR TO COMMIT.** *"No critical. No new hazard is introduced by any of the six
+edits. Every quotation in the diff is verbatim including the dash codepoints, the boards case is
+correctly assigned, no wrong-case limb is present, and all four ladder sites agree with the primary
+text and with each other."*
+
+**`rules-verifier`: the rules content is clean.** **Every trigger verbatim in primary text, every one
+of the four sites states it, and no site attributes Hockey Canada's discretion to USA Hockey.**
+
+### ⚠️ The premise both refuted, and it was mine
+
+**I relayed the repairing agent's self-flagged incompleteness: that 604(e) reaches *"a Competitive
+Contact category OR NON-CHECK ADULT CLASSIFICATION"* and is therefore WIDER than 604(d).**
+
+⚠️⚠️ **It is not wider. USA Hockey 604(a) carries a DEEMING SENTENCE, and the coordinator read it:**
+
+> *"Body checking is prohibited in the 12 & under youth age classifications and below, all
+> Girls'/Women's age classifications and all non-check Adult classifications. **These levels would be
+> considered the Competitive Contact Category of play.**"*
+
+**So the non-check Adult classifications ARE the Competitive Contact category, and 604(e)'s extra limb
+is belt-and-braces.** ⚠️ **USA Hockey's own two summary layers drop it entirely.** **There is no scope
+gap to disclose, and a reader inferring the two scopes match is inferring correctly — because the
+rulebook says they match.** ***"Nothing to fix. Do not add text closing a gap that does not exist."***
+
+### ⚠️ And Fig. 6 is now resolved TWICE, by two different methods
+
+**Five agents chased it. One rendered it with `pdftoppm` and found it corroborates. The safety pass
+then resolved it a SECOND way, without rendering anything: by reading the text layer's subsection
+structure and establishing that Fig. 6 sits inside subsection A — the FACING-the-wall case — so it
+cannot contradict the parallel-case paragraph at all.**
+
+⚠️ ***"Which means a drawing that contradicts Case B's posture would sit in FIG. 7, and I did not look
+at Fig. 7 at all. That is the live gap."*** **Filed as Workstream 32F.**
+
+### The four ladder sites, compared against each other — the thing neither repair had done
+
+**They agree on every operative element.** ⚠️ **The *"individually correct, flatly contradictory read
+aloud"* failure is NOT present.** **Differences are of completeness only, and both are filed:** 411(a)
+stated without its *aggressive-infractions* scope at two sites of three, and the ear-shape fix
+reaching one summary layer of three.
+
+### Byte-level confirmations worth keeping
+
+⚠️ **The dash finding verified at BYTE level by the rules pass:** the corpus, `ibc.txt` and `huh.txt`
+all carry the same sentence, and **the corpus uses `ibc.txt`'s EN DASH (U+2013) where `huh.txt` has an
+EM DASH (U+2014)** — **matching the manual it names.** ⚠️ **And the rules pass established why *"the
+same manual"* is right and not a confusion: the line sits on a page of the IBC PDF whose running head
+is *"HEADS UP HOCKEY"*, because that is a CHAPTER of Introduction To Body Contact.**
+
+**One typography note recorded as NOT drift:** the source prints a curly apostrophe in *"doesn't"*;
+the corpus prints a straight one. ⚠️ **The file contains 0 curly and 51 straight apostrophes — house
+normalisation across the whole corpus, not a per-quotation alteration — and `check_quote_drift.py`
+matches alphanumerics only and would not see it either way.**
+
+### ⚠️ The Major both passes left open, and why neither blocked on it
+
+**The boards technique carries no *"whatever league you play in"* counterweight in any layer**, while
+five siblings do — **and two sections later this document tells the reader checking is barred in most
+youth and most adult rec leagues.** ⚠️ **NOT critical: the text never RESTRICTS the advice, so nothing
+inverts. The failure is UNDER-APPLICATION.** **It predates the diff — but the diff is the first time
+this document teaches boards technique at all.** **Workstream 32A.**
+
+### What neither method could reach
+
+⚠️ **The Major was found only because the reviewer had five sibling documents open FOR A DIFFERENT
+REASON.** ***"A grep for a counterweight that is ABSENT returns nothing, and nothing looks the same as
+clean."*** · **Neither reviewer ran `check_rule_scope.py`, and the cross-document question — whether
+the other documents repeating this ladder now disagree with this one's four compressions — is
+untested** · **the rules pass did NOT search `usah_casebook.txt`, and says plainly that any future
+*"USA Hockey publishes no interpretation of 604(d)"* must read it first** · ⚠️ **no grep tells either
+of them whether a player executing *"skates parallel, forearm and hip"* BADLY — late, upright, feet
+together — is safer than one who does something else.** **The manual names that stance as its own
+Common Error; this document does not carry it; the safety pass ruled that acceptable because the owner
+does, and called that ruling *"a judgement about link-following behaviour, and I have no evidence for
+it."***

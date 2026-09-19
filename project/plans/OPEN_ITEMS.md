@@ -6139,11 +6139,39 @@ twenty rounds.**
 **Found 19 September 2026 by the agent repairing `conditioning_and_recovery.md`, in a corpus-wide
 census it ran after finding the same defect twice in the file it owned.**
 
-**USA Hockey Rule 604(d)'s trigger is *"recklessly endangers an opponent"*.** ⚠️ **`604(d)` appears
-**32 times** across `content/`; **9 lack the trigger**.** Two were in the repaired file and are fixed.
-**The remaining seven:** `team_play_and_culture.md:650` · `on_ice_communication.md:259`, `:552` ·
-`body_contact_and_battles.md:1126`, `:1584` · `center.md:625` · `defensive_zone_coverage.md:488`,
-`:778`.
+~~**`604(d)` appears 32 times across `content/`; 9 lack the trigger.**~~
+
+⚠️⚠️ **STRUCK 20 September 2026 — THE CENSUS WAS A REGEX ARTEFACT, AND THIS ROW WOULD HAVE SENT AN
+AGENT TO "FIX" FIVE LINES THAT ARE ALREADY CORRECT.**
+
+**Refuted by the `rules-verifier` on the conditioning repair, and verified line by line by the
+coordinator.** ⚠️ **The census searched for the rulebook's VERB form *"recklessly endangers"*. The
+corpus overwhelmingly uses the NOMINALISATION *"reckless endangerment"* — which is USA Hockey's own
+phrase, printed in 604(e).** **A search on one form misses the other.**
+
+| site | measured |
+|---|---|
+| `on_ice_communication.md:259` | ✅ **trigger present** — *"for reckless endangerment"* |
+| `body_contact_and_battles.md:1126` | ✅ **trigger present** |
+| `body_contact_and_battles.md:1584` | ✅ **trigger present** |
+| `center.md:625` | ✅ **trigger present**, and both HC 7.3(b) limbs |
+| `defensive_zone_coverage.md:488` | ✅ **trigger present** |
+| `defensive_zone_coverage.md:778` | ✅ **trigger present** |
+| `team_play_and_culture.md:650` | ⚠️ **LEGITIMATE SCOPING** — a Sources-trailer provenance list of clauses read, not a rule statement, **in a layer with no heading that `md_to_speech` never voices** |
+| `on_ice_communication.md:552` | ⚠️⚠️ **THE ONE GENUINE DEFECT — and the row above did not describe it as one** |
+
+⚠️ **`on_ice_communication.md:552` is a Common Mistakes bullet — the SPOKEN layer — giving six clause
+numbers and a trigger for none of them:** *"Where checking is barred it is a minor rising to a major
+plus a game misconduct and then a match penalty (USA Hockey 604(c), 604(d), 604(e); Hockey Canada
+7.3(a), 7.3(b), 7.3(c))."* **It also flattens the two books' different triggers into one ladder.**
+
+⚠️ **AND THE RAW COUNT IS UNSTABLE: 32 when the census ran, 35 on a recount, because the file has been
+edited since. TREAT NEITHER NUMBER AS REAL.**
+
+⚠️⚠️ **This row's own warning — *"DO NOT SWEEP. Some may be legitimately scoped… They need reading,
+not a regex"* — WAS VINDICATED BY ITS OWN EVIDENCE, AND THE COORDINATOR STILL WROTE THE COUNT.**
+**The lesson is not "pick a better pattern": it is that a census stating a DEFECT COUNT, rather than a
+CANDIDATE LIST, has already made the judgement the reading is supposed to make.**
 
 - [ ] ⚠️ **DO NOT SWEEP. Some may be legitimately scoped** — a line discussing the penalty tier rather
   than the offence does not need the trigger. **They need reading, not a regex.**
@@ -6309,3 +6337,149 @@ never hears. Here the pointer is IN the unheard layer, which is worse — nothin
   for shoulder-first contact.** **Nobody has looked.**
 - [ ] ⚠️ **Do NOT sweep the string.** *"The point of your shoulder"* is correct wherever the
   surrounding prose carries the reconciliation, and a regex cannot tell.
+
+---
+
+## Workstream 31: a count in a docstring, going stale — and the eviction candidate to name before it is needed
+
+**Both opened 19 September 2026 by the commit gate on `content/positions/goaltender.md`.**
+
+### 31A — `md_to_speech.py`'s `Never:` docstring carries a stale figure
+
+**`scripts/md_to_speech.py` around `:2806` returns `label + " — "` for a `Never:` label,
+deliberately, because so many `Never:` facts open with an imperative.** ⚠️ **The docstring that
+explains this quotes a count, and it has gone stale: `grep -c '^Never: ' content/*/*.md` sums to
+**579** today.**
+
+⚠️⚠️ **This matters more than an ordinary stale figure, because that docstring is the ONLY place in
+the repository that records why the label is rendered as it is — and it already records AN EARLIER
+VERSION OF ITSELF GETTING THE UNDERLYING FACT WRONG.** **An agent reading it for the reasoning meets a
+number it can measure, finds the number wrong, and has no way to know the reasoning survived.**
+
+- [ ] ⚠️ **Replace the count with the command, not with a newer count.** `CLAUDE.md`'s own rule: *"a
+  number copied out of its owner goes stale silently, and a pointer to a named section does not."*
+  **The owner here is the corpus, and the pointer is `grep -c '^Never: ' content/*/*.md`.**
+- [ ] ⚠️ **A SHARED TOOL IS SHARED STATE — change it between waves, not during one**, and tell every
+  live agent.
+- [ ] **The reasoning itself is CORRECT and must survive the edit.** ⚠️ **A coordinator brief this
+  session told an agent to sweep every facts line for a `Rule:`-imperative shape; the agent read this
+  docstring, refused the sweep, and repaired the one real target. Two correct lines survived because
+  that paragraph exists.**
+
+### 31B — name the eviction candidate before the pressure arrives
+
+⚠️ **Both `goaltender.md` blocks are now at `HARD_MAX` — 11 of 11. There is no free slot in either.**
+
+> ***"At 11/11 the NEXT eviction will be decided under pressure, and the weakest line in either block
+> is `:1105`, an edition-numbering footnote holding block 1's last slot. Name it as the eviction
+> candidate in the plan before you need it."***
+
+- [ ] ⚠️ **Record the judgement NOW, while nothing is at stake.** **The failure this guards against is
+  documented: a block at its cap once forced a mandatory give-ground duty out of a `Rule:` fact into a
+  `Technique:` line with no rule number and no penalty, and every checker passed.** **A decision taken
+  under pressure is how that happened.**
+- [ ] ⚠️ **But do NOT evict it pre-emptively.** `:1105` earns its place today — the edition
+  renumbering is real, and a bare *"Table 16"* lands on **Rule 84, Overtime** in the current book.
+  **The row is a decision about PRIORITY, not a licence to cut.**
+- [ ] ⚠️ **The real answer is probably a second split, and the gate said so:** the section's only
+  visible seam is a **rule-set line**, which is the split round 52 made that *"relieved the wrong
+  thing."* **So the seam has to be found in the body's own topic structure first. That is the work,
+  and it is not small.**
+
+### ⚠️ And a correction to the coordinator's framing, recorded because I got it backwards
+
+**I put it to the gate that the capacity ceiling had already cost a listener the no-contact crease case
+— goal disallowed, no penalty — leaving it *"stated only in the body"*.**
+
+⚠️ **REFUTED, and I confirmed it: `goaltender.md:1101` carries it in the FACTS layer** — *"A screen
+from outside your crease without contact is normally legal; inside the crease only a significant
+position voids the goal…"* **What is missing from that layer is the *"and no penalty"* HALF, not the
+case.**
+
+⚠️⚠️ **And that half runs in the SAFE direction: a goaltender who does not learn the opponent goes
+unpenalised still claims their paint and still shouts, and cannot be hurt or ejected by not knowing
+it. The defect that was repaired ran the OTHER way — it promised a call that is not coming.**
+**Ship it; log it.**
+
+---
+
+## Workstream 32: rows opened by the two reviews that cleared `conditioning_and_recovery.md`
+
+**Both returned CLEAR TO COMMIT. These are follow-ups, and the safety pass was explicit that every one
+is *"cheaper to fix in a follow-up row than to re-open this change."***
+
+### 32A — ⚠️ the boards technique has no *"whatever league you play in"* counterweight, in ANY layer
+
+**`grep -n "checking or not|whatever league|non-check hockey|every league"` on
+`conditioning_and_recovery.md` returns ZERO.**
+
+⚠️ **And two sections later the document tells the reader body checking *"is prohibited outright in
+most youth age groups and in most adult recreational and beer leagues."*** ⚠️⚠️ **So a reader in a
+non-check league has an ACTIVE REASON to file the boards technique under *"not mine"* — and then races
+a puck to the wall with their chin down.** **A wall does not need a legal body check to break a neck.**
+
+**Five siblings carry it and this document does not** — `body_contact_and_battles.md:21`
+(*"absolute in every league, checking or not, because a wall does not need an opponent to hurt you"*),
+`forechecking_systems.md:876` and `:539`, `core_principles.md`, `goaltender.md:1169`.
+
+- [ ] ⚠️ **NOT graded critical, and the reasoning matters: the text never RESTRICTS the advice to
+  checking leagues, so nothing inverts and no reader is told anything false.** **The failure is
+  UNDER-APPLICATION, not misapplication.** **It also predates the diff — but the diff is the first time
+  this document teaches boards technique at all, which is what makes the omission live rather than
+  theoretical.**
+- [ ] ⚠️ **Reuse the sibling wording rather than reinventing it, so the two documents do not end up
+  saying it two ways.** **One clause in the body and one in Key Takeaway 12.**
+
+### 32B — the ear-shape fix reached one site of three, and the other two are in the same diff
+
+**The round's headline finding was *"a citation can pass every gate and be wrong FOR THE EAR"*, on a
+Key Takeaway draft that rendered as *"which six hundred and four, clause e says…"*.** ⚠️ **Rendered
+today, `:210` and the Common Mistakes bullet BOTH produce that exact construction.**
+
+- [ ] ⚠️ **Both are better placed than the rejected draft — the same `<p>` names *"under Hockey
+  Canada"* in prose one rung earlier — BUT THE REJECTED DRAFT HAD THE SAME PRIOR ESTABLISHMENT AND WAS
+  STILL JUDGED DEFECTIVE.** ***"If the standard is right, it is right at all three sites; if it is
+  not, KT4 did not need rewriting."*** **Decide which.**
+- [ ] ⚠️ **This is the corpus's commonest shape — a correction that reached one summary layer —
+  appearing in the REPAIR TO A REPAIR.**
+
+### 32C — restore *"or a goal post"* to Key Takeaway 12, and only there
+
+**The repair dropped it from two summary sites, judging it correct for boards-specific text. The
+safety pass ruled: correct for the Common Mistakes bullet, WRONG for the Key Takeaway.**
+
+- [ ] **Six siblings keep the corpus house form *"…collision with the boards or a goal post…"*.**
+  ⚠️ **Four words; the hazard class is cervical spine, where under-scoping is the expensive direction;
+  and the takeaway opens on *"a shoulder or a neck"*, so it is ALREADY broader than the bullet.**
+  **As written, a listener who hears it alone has no reason to carry the walking-speed mechanism to a
+  net front — which two sibling documents exist to tell them.**
+
+### 32D — a game misconduct's own cost is stated nowhere in this file
+
+**USA Hockey 404(b): a game misconduct *"shall also be **suspended for the team's next game**"*.**
+
+⚠️ **All four ladder sites state *"a major plus a game misconduct"* and then jump to 411(a)'s THIRD
+major — so a listener infers the FIRST one costs only tonight. It costs tonight AND the next scheduled
+game, automatically.**
+
+- [ ] **A propagation gap, not a defect the diff introduced** — 404(b) appeared nowhere in this file
+  before it either. **Seven documents carry it**, including as a `Rule:` facts line.
+- [ ] ⚠️ **If added, it belongs to the USA HOCKEY limb only** — *"I did not find a Hockey Canada
+  equivalent and did not search for one, so do not write it as 'both books'."*
+
+### 32E — 411(a) stated without its scope at two of three sites
+
+**411(a) counts only majors *"for any combination of **aggressive infractions** listed below"*, and a
+Note routes Fighting to its own rule.** ⚠️ **`:208` carries the qualifier; the Common Mistakes bullet
+and Key Takeaway 4 drop it, so a listener hears *"any third major"*.** **The error runs toward
+over-warning.**
+
+### 32F — ⚠️ IBC Fig. 7 has never been opened, and the reasoning that retired Fig. 6 points straight at it
+
+**Fig. 6 was chased by five agents. It is now resolved TWICE OVER: one agent rendered it with
+`pdftoppm` and found it corroborates, and the safety pass then resolved it a second way — by reading
+the text layer's subsection structure and establishing Fig. 6 sits inside subsection A, the
+FACING-the-wall case, so it cannot contradict the parallel-case paragraph at all.**
+
+- [ ] ⚠️ ***"Which means a drawing that contradicts Case B's posture would sit in FIG. 7, and I did not
+  look at Fig. 7 at all. That is the live gap."*** **`pdftoppm` it.**
