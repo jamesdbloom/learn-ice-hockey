@@ -669,3 +669,255 @@ negative**: `"8.3 (b)"`, `"8.3(b)"`, `"8.3 (c)"`, `"Rule 8.3"`, `"course of play
 **`rules-verifier` and `safety-reviewer` on the THIRD repair**, and **`facts-reviewer` on a block it
 has never seen at its current size.** ⚠️ **The repair's author said it plainly and the gate agreed:
 *"I have not certified this work. The repairs are new text and no reviewer has read them."***
+
+---
+
+## ⚠️⚠️ THE FACTS PASS FOUND A CRITICAL — AND REFUTED THE PARAGRAPH ABOVE, WHICH WAS WRITTEN TO FIX EXACTLY THIS
+
+**The section above says the third repair carried 8.3(b)'s *"discretionary and mandatory forms"* to
+the body, the facts layer, Common Mistakes, Key Takeaway 9 and the Sources trailer.**
+
+⚠️ **Measured against the tree by the `facts-reviewer`, and confirmed by the coordinator:
+`grep -n "degree of violence" content/positions/goaltender.md` → the discretionary limb is at `:1033`
+(a DIFFERENT block, about Rule 8.5(b)) and at `:1141` (the body). IT IS NOT AT `:1133`, NOT IN COMMON
+MISTAKES AND NOT IN KEY TAKEAWAY 9.**
+
+⚠️⚠️ **ONLY THE BODY AND THE SOURCES TRAILER CARRY IT. The record over-claimed FIVE layers where TWO
+hold — inside the paragraph written to record the gate catching the record over-claiming.**
+**Third instance today of a record asserting a state its file does not hold.**
+
+### The critical
+
+**`:1133`** — *"Do not read Hockey Canada's minor for deliberate contact at 8.3(a)(i) as your ceiling —
+8.3(b) is a major plus game misconduct **where an interference foul injures**…"* — **292/300**
+
+**`hc_layout.txt:5406-5412` gives 8.3(b) TWO INDEPENDENT LIMBS**, and the coordinator read both:
+
+> *"A Major penalty and Game Misconduct penalty, **at the discretion of the Referee, based on the
+> degree of violence of the impact**, **may** be assessed to any player who interferes with an
+> opposing player."*
+> *"A Major penalty and Game Misconduct penalty **will** be assessed to any player who **injures** an
+> opponent by an interference infraction that would otherwise call for a Minor penalty."*
+
+⚠️ **The fact carries limb 2 only. LIMB 1 NEEDS NO INJURY AT ALL — violence of impact alone reaches a
+major plus a game misconduct.**
+
+⚠️⚠️ **And this is worse than a gap for the reason the round already graded 6E critical: the line's
+whole rhetorical job is *"do not read the minor as your ceiling"* — AND IT THEN NAMES A NEW CEILING,
+INJURY, ON THE WAY UP.** **A Hockey Canada goaltender who takes the block and skips the prose learns
+that a violent but non-injurious crease shove is capped at two minutes. It is not.** **The direction
+is ejection.**
+
+**`:1133` has 8 characters. THE BLOCK IS AT `HARD_MAX`.** ⚠️ **So it cannot be repaired in place.**
+⚠️ **And do NOT recover the length from its Glossary clause — that clause is the only thing in the
+layer establishing 8.3(b) reaches a goaltender at all.**
+
+### ⚠️ THE MAJOR IS A NEW DEFECT CLASS: TTS DOES NOT VOICE QUOTATION MARKS
+
+**`:1130` renders, voiced alone in its own `<p>`:**
+
+> ***"Rule. Establish your crease position by using excessive force or acting in a manner which would
+> otherwise warrant a penalty and the penalty is yours at six G and six H…"***
+
+⚠️ **The first fourteen words are a `Rule:`-labelled IMPERATIVE TELLING A GOALTENDER TO USE EXCESSIVE
+FORCE.** **The corrective arrives afterwards and parses as the consequence of having complied.**
+
+⚠️⚠️ **And a neighbour makes it worse: block 1's `:1105` renders as *"Action. **Establish and hold
+your crease position early**…"* — two near-identical openings, opposite meanings, same document.**
+
+**19 characters of headroom, so a subject-first construction costs nothing.** ⚠️ **NO PRIOR PASS
+LOGGED THIS: the three bare-row-letter fixes were about the LETTERS, not the MOOD.**
+
+### Capacity — ruled, and it is a finding about the section
+
+| block | facts | `Rule:` | coaching | |
+|---|---|---|---|---|
+| `:1097` | 10 | 8 | 2 | one slot free |
+| `:1123` | **11** | 9 | 2 | ⚠️ **AT `HARD_MAX`** |
+
+⚠️ ***"Block 2 is already over capacity in substance, and by a wide margin… the proof is that it drops
+SEVEN distinct things its own body states."*** **And the only visible seam is a RULE-SET LINE —
+which is the split round 52 made that *"relieved the wrong thing."*** **Block 1's free slot is the
+only capacity in the pair.**
+
+### More dropped rungs and flags, all measured
+
+- **640(h)'s match penalty is missing from `:1132` and from Key Takeaway 9** — ⚠️ **and the omitted
+  rung is printed INSIDE the Casebook sentence the line quotes from:** *"A minor, major plus game
+  misconduct **or match penalty** for Roughing must be assessed."* **Common Mistakes has it; the two
+  layers voiced in isolation do not.**
+- ⚠️ **Nine facts lines cite *"IIHF 2025/26 Table 16"* and NOT ONE carries the body's twice-stated
+  warning that the current book numbers it 14** — **where a bare *"Table 16"* lands on Rule 84,
+  OVERTIME.** **The layer exists so a reader can skip the prose, and a reader who does is sent to the
+  wrong table in the only book they play under.**
+- **`:1128`, the 6E line this round added, is the one table-derived `Rule:` with NO status caveat of
+  any kind.** 5 characters.
+- ⚠️ **`:1128` opens *"One row needs no excessive force"* — an INDEFINITE pointer on a short abstract
+  noun.** **`check_facts_antecedents.py` keys on DEMONSTRATIVES and returned 0 on this file.**
+  ***"I found this one by ear. I have no method that would find the next one except reading every line
+  aloud."***
+
+### ⚠️ Where the facts pass ruled AGAINST the commit gate, and I accept it
+
+**The gate called `:1133`'s missing *"genuinely unsettled"* flag a defect.** The facts pass disagrees:
+**the confidence runs in the direction the body itself instructs — *"hold the reading that costs you
+nothing to hold: the Minor is the floor"*** — **and both summary layers close on *"so do not assume it
+does."*** ⚠️ ***"An unhedged assertion that OVER-warns is not the cardinal-rule failure; it is the
+safe reading stated as such."*** **Minor, and arguably correct. Do not spend `:1133`'s eight
+characters on it — spend them on limb 1.**
+
+### Clean, and reported plainly
+
+**Traceability, cardinal rule, ownership and placement all clean.** ⚠️ **Nothing coaching wears a
+`Rule:` label — and the two places it would have been easy, `:1124`'s four-row synthesis and `:1134`'s
+*"don't tell an opponent they get a free one"*, are correctly `Key:` and `Never:`.** **`:1134` picks
+the rule-text side of the 6D conflict and SAYS SO, so it does not contradict `:1127`.**
+
+**Every citation checked in the render: no loose letters survive, and the `(i)`/`(h)` trap is not
+reproduced.** **The record's BLOCK is genuinely closed, verified in chunk 127 rather than in the
+diff.** **No contradiction found within or between the blocks or against either summary layer.**
+
+### ⚠️ Fourth consecutive reviewer to declare the same blind spot, from a fourth direction
+
+***"The three things I found missing were all findable because A RULE NUMBER ADVERTISED THEM. An
+omission with no number attached is one I had no method for."***
+
+**Also unreached, now by a third report each: `rules_primer.md`'s Rule 69 passage, which this file
+points at twice · the corpus-wide 69.4 census · the built page, unasked across four consecutive
+reports on this file.**
+
+---
+
+## The fourth repair — all four majors closed, and the brief refuted SIX ways
+
+**Every fix was SUBSTITUTION; the block was at `HARD_MAX` throughout.**
+
+| finding | layers repaired | chars |
+|---|---|---|
+| **Major 1** — 8.3(b)'s discretionary limb missing | facts, Common Mistakes, Key Takeaway 9 | 291 → **294**/300 |
+| **Major 2** — the mandatory minor stated unconditionally | facts + body (*"an opponent standing in your crease"* → *"who will not give ground after your contact"*) | 190 → **185**/200 |
+| **Major 3** — the ladder stopped at 640(g) | facts, KT9, body | 292 → **296**/300 |
+| **Major 4** — the `Rule:` imperative | facts | 281 → **288**/300 |
+| the Table 16 → 14 renumbering flag | ⚠️ **body FIRST, then a new `Key:`** | **170**/200 |
+| `:1129`'s indefinite pointer and missing status caveat | facts | 295 → **281**/300 |
+
+⚠️ **`:1129` came out FOURTEEN CHARACTERS SHORTER while GAINING the status caveat and LOSING the
+pointer** — *"Situation 6E needs no excessive force"* for *"One row needs no excessive force, and it
+is 6E"*. **Substitution has now paid more often than it has failed in this round.**
+
+### ⚠️⚠️ THE REFUTATION THAT MATTERS: MY BRIEF WOULD HAVE CAUSED A SWEEP
+
+**I told the agent to check every line in both blocks for Major 4's imperative shape.**
+
+⚠️ ***"`Never:` does not render as `Never.` — `md_to_speech._label_lead` returns `Never — `
+DELIBERATELY, BECAUSE hundreds of `Never:` facts open with an imperative."***
+
+**Coordinator-verified: `md_to_speech.py:2795` carries a docstring saying exactly that, and it records
+that AN EARLIER VERSION OF ITSELF CLAIMED THE OPPOSITE AND WAS WRONG.** **`grep -rh '^Never: '
+content/` returns 579 lines.**
+
+⚠️ **So the brief had exactly ONE real target, not three — and *"check every line"* would have
+rewritten two correct lines.** **The tool had already written down the answer, in the file the
+renderer lives in, and neither the reviewer nor the coordinator read it.**
+
+### Five more premises refuted
+
+- ⚠️ **The new Table-16 claim existed ONLY in a reviewer's report.** The agent verified it
+  (`iihf_rules_2026-27.txt:10278` = `TABLE 16 · RULE 84 OVERTIME`; `:9899` = `TABLE 14 · RULE 69`),
+  **put it in the BODY first, then extracted.** ⚠️ ***"A brief's finding is not a body sentence."***
+  **That is extract-never-author applied to a REVIEW, and it is the right reading.**
+- **The body understated 640(h)** — *"under the same sub-section"* (singular) where `usah.txt:5146`
+  names **five**. Now quoted verbatim in both places.
+- ⚠️ **This record's own citation was wrong: 8.3(b) is at `hc_layout.txt:5410-5415`, not `5406-5412`.**
+- **Casebook Situation 8's own Rule Reference is 640(g)** while the Summary of Penalties lists 640(h)
+  under *"Match Penalty Option"*. **KT9 was phrased to assert neither clause number.**
+- **`:1125` did NOT gain *"deliberate"*** — it would not fit without a trade. **Instead `:1129` now
+  OPENS on *"deliberate contact"*, which is where the body says the word does its work.**
+
+**Every measured headroom figure in the brief was exactly right.**
+
+### ⚠️ A blind spot in `check_quote_drift.py`, found by hand
+
+***"`check_quote_drift` NEVER CHECKED `"(b), (c), (d), (e) or (f) of this rule"` — 15 alphanumerics,
+below its `MINLEN` of 25. I matched it by hand. Any short quotation is invisible to that tool, and
+NOTHING SAYS SO AT THE POINT OF USE."*** **Coordinator-confirmed at `check_quote_drift.py:90`.**
+
+### ⚠️ CAPACITY IS NOW SPENT, AND THAT IS THE FINDING
+
+**Both blocks are at `HARD_MAX` — 11/11. Block 1's free slot is gone.** ⚠️ **The next finding anywhere
+in this section CANNOT BE FIXED IN THE FACTS LAYER AT ALL without an eviction.**
+
+⚠️ **And it has already cost something:** the narrowing of `:1135` leaves the **no-contact** crease
+case — goal disallowed, **no penalty** — stated **only in the body**. ***"A listener who skips the
+prose no longer hears the wrong rule, but now hears no rule. There is no room to add it."***
+
+### What it could not reach
+
+**It verified only the rows its edits touch (6E, 6G, 6H) and the four clauses named** — **6B, 6C, 6D,
+6F and Handbook 69.5/69.6 were not re-verified this session** · **`rules_primer.md`'s Rule 69 passage
+and the corpus-wide census: third report each** · ⚠️ **the built page is unreached for the FIFTH
+consecutive report on this file** · **`:978` is a `Rule:` opening on a bare imperative that the agent
+judged NOT Major 4's defect, because the imperative states the legal act** — *"a fresh reader should
+confirm that judgement; I am the author and have had none of it reviewed."*
+
+---
+
+## The site review — C10 closed, and the question five reports deferred answers well
+
+**Verdict: the page is fine. No Critical, no Major.** **Four viewport × theme cells covered; the
+build the commit gate had already run was served rather than re-run.**
+
+⚠️ **The best result is the one that was actually at issue.** The deep link lands with the new
+heading **128 px from the top on both widths** — clearing the 48 px sticky header and the ~55 px
+sticky audio player — **and at 375 px a reader sees the heading in full PLUS the entire `Key:` fact,
+which is exactly what the heading promises.**
+
+| checked | result |
+|---|---|
+| the two 11-fact blocks | render as `<dl class="facts">`, **0 of 22 rows clipped**, every `.facts__value` has `scrollWidth == clientWidth` at 375 px |
+| ⚠️ **eleven facts is not new territory** | **of the 54 facts blocks on this page, NINE already carried 11 rows.** These two joined an existing population |
+| facts blocks falling through to raw text | **zero** |
+| the long heading at 375 px | wraps to **2 lines**, bold, reads as a heading |
+| Key Takeaways | one `<ol>`, **markers 1–14, no duplicate, no skip**; the new item 9 is 3,121 px at mobile against a pre-existing item 7 at **3,468** — not the outlier |
+| Common Mistakes | ⚠️ **the brief said two new bullets; the diff adds FOUR** — and the ⚠️ treatment **survives inside `<li>`**, so a safety flag in a bullet is as loud as one in a paragraph |
+| console | ⚠️ **zero messages. Not zero errors — zero messages of any kind, on a full load** |
+| network | 15 requests, all `localhost` or `data:`; the two `chrome-extension://` hits are the user's own extensions |
+| contrast, both themes | ⚠️ **all above AA 4.5:1** — `.warn-inline` 5.71 / 8.29, `.facts__label` 7.29 / 7.59, body 5.03 / 5.26. **No dark-mode regression** |
+| 320 px | no body horizontal scroll; **zero** elements wider than the viewport |
+
+### ⚠️ The 10.9 KB paragraph — measured, and this change did not cause it
+
+**8.8 phone screens at 375 px, 2.9 at desktop.** ⚠️ **But it is NOT undifferentiated grey text: that
+single `<p>` carries 18 `.warn-inline` ⚠️ callouts, 45 `<strong>` and 43 `<em>`, so it renders as a
+sequence of amber-flagged claims with bolded leads.**
+
+⚠️ **Judged from the diff rather than by reverting: at HEAD that line was 10,810 characters and it is
+now 10,911. This change added 101 — about 1%.** **It did not create the paragraph and did not
+meaningfully lengthen it.**
+
+### ⚠️ A measurement it nearly reported, and caught itself
+
+**The Sources trailer is 36,907 characters and lays out at 18,129 px — 22.3 phone screens.**
+⚠️ ***"I nearly reported that. It is wrong to."*** **`<details class="sources">` is CLOSED BY DEFAULT
+— collapsed height 78 px.** **A reader sees a 78 px disclosure, not 22 screens, and the trailer's
+growth costs the page nothing.**
+
+### Declared limits, stated as limits
+
+⚠️ **The desktop cell was 1680 px, not the intended 1440** — the Chrome window would not leave macOS
+fullscreen, **so a 1440-specific breakpoint would have been missed, and the reviewer said so rather
+than reporting the matrix it meant to run.** · **The mobile cells are exact**, via a same-origin
+iframe harness at true 375 and 320 px. · **One scripted iframe reload across ~223,000 px timed the
+renderer out; it could NOT be reproduced as a user action** (real fragment loads landed instantly at
+128 px, twice) **and is recorded as seen, not as affecting readers.** · **The in-page ToC has no
+scroll-spy — checked against the source and confirmed static by design, not a regression.**
+
+### ⚠️ And its closing limit is the one that matters
+
+> ***"I verified that eleven facts render as eleven legible rows. I did not verify that Rule 69.4, NHL
+> Table 14 or IIHF Table 16 say what those rows claim. A page can render perfectly and still tell a
+> goaltender something that gets them penalised."***
+
+**And on the layer this corpus actually ships:** *"the ⚠️ callouts I verified as VISUALLY loud are
+voiced in a layer I did not hear — a facts line is spoken alone with a 300 ms break either side, and
+nothing about its amber styling travels there."*
