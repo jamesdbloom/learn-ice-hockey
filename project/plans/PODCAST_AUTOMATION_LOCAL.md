@@ -115,11 +115,33 @@ one.** Never pass a key as a command-line argument — it lands in shell history
 
 | Engine | Minimum steps | Free tier? |
 |---|---|---|
-| **Polly** | ✅ **already working** — `AWS_PROFILE=ice-hockey`, `eu-west-2` | pay per char |
+| **Polly** | ⚠️ **working, but the SSO token EXPIRES** — see the box below | pay per char |
 | **OpenAI** | platform.openai.com → API keys → create → `export OPENAI_API_KEY=...` | no, but a sample costs cents |
 | **ElevenLabs** | elevenlabs.io → sign up → Profile → API key → `export ELEVENLABS_API_KEY=...` | **yes — 10k chars/month**, enough for samples |
 | **Gemini-TTS** | aistudio.google.com → Get API key → `export GOOGLE_API_KEY=...` | **yes**, generous |
 | **Chirp 3 HD** | same `GOOGLE_API_KEY`, **plus** enable *Cloud Text-to-Speech API* in the GCP console | free tier on first chars |
+
+⚠️⚠️ **THE STEP THE OWNER ACTUALLY HAS TO TAKE FIRST, AND IT IS NOT AN API KEY.**
+Polly needs no new account and no new credential — **the existing SSO session simply
+expires**, and when it does every synthesis call fails:
+
+```
+aws: [ERROR]: Error when retrieving token from sso: Token has expired and refresh failed
+```
+
+**Confirmed expired at 19:33 on 18 September 2026.** The fix is one interactive command,
+and it must be the owner because it opens a browser for sign-in:
+
+```bash
+aws sso login --profile ice-hockey
+```
+
+⚠️ **This blocks ALL audio, on every engine choice** — Polly is the only engine with a
+working credential today, so until this is run **nothing can be heard at all**, and the
+ear test that every direction decision in this file is waiting on cannot happen.
+⚠️ **It is also the cheapest possible unblock: no signup, no key, no new account.**
+⚠️ **Re-run it whenever a synthesis call returns that error — the token expiring is
+normal and is NOT a sign that anything is broken.**
 
 ⚠️ **`gcloud` is NOT installed on this machine and is NOT needed** — both Google
 engines are reachable with a plain API key over HTTPS, which is why the harness uses
@@ -1011,3 +1033,499 @@ what would have been rejected (`InvalidSsmlException: Unsupported Generative fea
   verifying collected episodes, and **any non-AWS key** if the comparison against Gemini,
   ElevenLabs or Chirp 3 HD is still wanted. ⚠️ **Polly alone no longer blocks producing
   listenable samples, and that was the binding constraint on the owner hearing anything.**
+
+## ⚠️ A DEFECT CLASS THE SCRIPTED-EPISODE ROUTE CREATES AND THE CORPUS DOES NOT HAVE — 18 September 2026
+
+**The skating episode's second `safety-reviewer` returned NOT SAFE TO VOICE on a critical
+that the FIRST REPAIR INTRODUCED.** The draft was safe here; the repair broke it.
+
+**What happened.** A repair added a closing mnemonic — *"Falling flat: chin in, hands in.
+Hitting a wall: head up, **arms out**."* ⚠️ **The episode never teaches "arms out."** The
+reviewer grepped the script: *spread*, *glass*, *glove*, *wide* — **zero hits in 2,446
+words**. The only elaborated arm instruction in the episode is that instruction's
+**prohibition**, ten words earlier in the same sentence (*"a locked arm takes your whole
+descending weight through one wrist"*). **So the phrase has exactly one available meaning
+to a listener: stick an arm out** — a distal radius or scaphoid fracture, and because the
+locked arm stops the body rotating to present the side, the shoulder point or the head
+arrives next anyway.
+
+### ⚠️ The corpus was censused for the same defect and is CLEAN — which is the point
+Every `content/` site carrying the instruction teaches **spread-the-load in the same
+breath**, and the two that sit in the ` ```facts ` layer — voiced ALONE, with a 300 ms
+break either side — are **self-contained**:
+
+| Site | Layer | Carries the teaching? |
+|---|---|---|
+| `skating.md:603` | body | ✓ *"spread wide on the glass… two forearms, two gloves, your side and your legs"* |
+| `skating.md:868` | Common Mistakes | ✓ the paragraph states the spread before the mnemonic |
+| `body_contact_and_battles.md:713` | **facts** | ✓ *"spread the load, stick and gloves up on the glass, arms out as a shock absorber"* |
+| `puck_handling.md:410` | **facts** | ✓ *"spread the load, stick and gloves up on the glass, arms out"* |
+| `core_principles.md:19, :177, :209` | body + takeaways | ✓ forearm/skates-parallel form, no bare mnemonic |
+
+⚠️ **There is no naked "arms out" anywhere in `content/`.** The corpus's own convention is
+that the phrase never travels without its qualifier — **including inside a single facts
+line, which is the hardest place to afford one.**
+
+### ⚠️ The generalisable rule, and it is specific to this route
+**A document has layers; an episode does not.** In `content/`, a mnemonic can rely on the
+paragraph above it, because a reader's eye is still on the page. ⚠️ **A spoken episode is
+one pass, in order, with nothing to glance back at — so a mnemonic is not a SUMMARY of
+what was taught, it is the ONLY thing many listeners retain.**
+
+⚠️ **THEREFORE: every compressed cue in a script must name a technique the script has
+already taught IN FULL, and a compression that is safe in the corpus can be lethal in an
+episode.** The extraction step is where this class is born, and no checker can see it —
+`md_to_speech.py` transforms faithfully, and the phrase is verbatim corpus wording.
+
+### ⚠️ And the second-order lesson, which cost more than the first
+**The repairer certified this itself**, writing that the mnemonic was *"safe only because
+both limbs are now taught"*. It was wrong: *"forearm and hip rather than the point of your
+shoulder"* is about **which surface absorbs**; *"spread wide on the glass"* is about
+**spreading the load**. **Two different instructions on two different axes, and the repair
+substituted the first for the second and then announced the second.**
+⚠️ **A repair is new text, and new text has not been reviewed — including when the repair
+is itself answering a safety verdict.** The draft, the repair and the re-review were three
+different agents; **only the third one could see this.**
+
+### ⚠️ SECOND INSTANCE OF THE CLASS, AND IT NAMES THE MECHANISM: THE LINK LAYER
+
+The third `safety-reviewer` on the skating script found a **second critical of the same family**,
+and this one explains why the first was invisible.
+
+**`script.md:83`** tells a listener that a fall can concuss them **without knocking them out** —
+correct, and it kills the right misconception — then leaves them with **a two-second
+self-assessment** and *"the document on conditioning and recovery has the red flags and the
+signs."* ⚠️ **`conditioning_and_recovery.md:273` says that self-assessment is worthless for this
+injury, in terms: *"There is no version of this that involves the player deciding for themselves.
+Symptoms can be delayed, judgement is one of the things a concussion impairs, and a concussed
+player will tell you they are fine."***
+
+⚠️ **Every clause of that sentence is near-verbatim from `skating.md`, and every provenance row
+cites the right line.** It is **true of `skating.md` and false of the episode.**
+
+### ⚠️ THE MECHANISM — and it is the whole finding
+In `skating.md` those sentences sit beside **a live hyperlink** to
+`conditioning_and_recovery.md#concussion`. ⚠️ **A reader is one click from the action. A listener is
+not.** **Strip the link layer and the instruction INVERTS: *"here is where the answer is"* becomes
+*"you are on your own."***
+
+| | Document | Episode |
+|---|---|---|
+| Hazard named | ✓ | ✓ |
+| Action | behind a link | **absent** |
+| Route | clickable | **inaudible** |
+| Second chance | Common Mistakes, Key Takeaways, the linked doc | **none — `concussion` occurs ONCE in 2,622 words** |
+
+⚠️ **And the renderer sharpens it:** `md_to_speech.py` places that sentence as the **final `<p>` of
+chunk 004**, followed by a 1000 ms break and *"The boards."* — **the last thing a listener hears
+before a hard section break.**
+
+### ⚠️ The rule, now covering both instances
+**The "arms out" critical was a compressed cue whose teaching lived in an earlier paragraph. This
+one is an instruction whose action lives behind a hyperlink. Both are correctly attributed,
+verbatim borrowings. Both are safe in the corpus and unsafe spoken.**
+
+⚠️⚠️ **SO: WHEN EXTRACTING FOR SPEECH, EVERY CROSS-REFERENCE IS A DELETION.** A sentence that
+points — at a link, a table, a later section, another document — **arrives at a listener with the
+pointed-at thing removed.** ⚠️ **The test is not "is this sentence accurate?" It is "what does this
+sentence RELY ON that a listener does not get?"** **Provenance checking cannot answer that
+question, and in both criticals provenance was perfect.**
+
+⚠️ **`scripts/check_pointers.py` already reports spoken sentences pointing at layers a listener
+never hears — and it is the closest existing tool to this class.** ⚠️ **It has NEVER been run
+against an episode script**, only against `content/`. **Running it on scripts is the obvious next
+step and has not been done.**
+
+### Observation for the owner — the renderer's boilerplate opener
+`md_to_speech.py` injects: *"From the ice hockey learning resource. **Written to NHL rules, with
+differences under other rule sets flagged where they matter.**"* ⚠️ **The skating script states no
+rule and flags no divergence, so that sentence over-promises** — harmless here, but **it is the
+only thing telling a listener which book they are under**, and it disappears entirely if an
+episode is synthesised by any other path. **A decision, not a defect.**
+
+### ⚠️ `check_pointers.py` CANNOT see the link-layer class — measured, with the trap named
+
+Its patterns were read this session. `POINTERS` anchors on **the Sources trailer, a
+`## Notes on verification` section, a footnote, and tables/rows/columns/lists** — *"the table
+above"*, *"at the foot of this document"*, *"see the note below"*. ⚠️ **NOTHING in it matches a
+pointer to a SIBLING DOCUMENT.** Its whole-corpus run reports only table-pointer hits, all in
+mixed documents.
+
+⚠️ **So *"The document on conditioning and recovery has the red flags and the signs"* — the exact
+sentence carrying the second podcast critical — scores CLEAN, and always would have.** In
+`content/` that sentence is a markdown link, so `check_links.py` validates it and a **reader** is
+one click away. **Voiced, it is a dead end, and no tool in this repository looks at it.**
+
+### ⚠️ A CENSUS WAS RUN AND ITS NUMBER IS DELIBERATELY NOT WRITTEN HERE
+Rendering all 39 documents through `md_to_speech.py` and matching spoken sentences that name a
+sibling document returns a four-figure count. ⚠️ **That figure is NOISE and must not be quoted.**
+The match set is dominated by **document titles**, which the renderer voices as headings — *"Defender."*,
+*"Getting Started."*, *"Rules Primer."* — plus legitimate site pointers, which this corpus's own
+worklist convention already rules **correct** (it renders to a web page as well as to audio).
+
+⚠️ **This is the same shape as `check_facts_antecedents.py`'s documented lesson: the obvious
+pattern returns 100+ hits and nearly all are correct.** **A raw cross-reference count is not a
+worklist, and shipping one would manufacture a backlog that does not exist** — which is how round
+44 manufactured a divergence.
+
+### The discriminator that WOULD make it a worklist — not yet built, not yet run
+**A cross-reference is dangerous only when the pointed-at thing carries an ACTION the pointing
+document does not state, and the pointing sentence is the listener's only instruction at that
+moment.** Both podcast criticals fit that shape exactly; *"Rules Primer carries the full four-book
+comparison"* does not, because nothing a listener must DO is behind it.
+
+⚠️ **So the open question is not "how many cross-references are voiced" but "which voiced
+cross-references are load-bearing for a safety action."** ⚠️ **That is a reading task, not a grep
+— and it has not been done.**
+
+⚠️ **`check_pointers.py` has NEVER been run against an episode script**, only against `content/`,
+and **it cannot be without a tool change**: it hardcodes `content/` and has no argument parsing.
+⚠️ **A tool change goes BETWEEN waves, never during one** — six agents were live when this was
+found. **Not done today, deliberately.**
+
+### ⚠️ `md_to_speech.py` CONTRADICTS ITSELF ABOUT THE ENGINE — found 18 September 2026
+
+**`scripts/md_to_speech.py:3739`** writes into every manifest:
+```json
+"voice": {"engine": "long-form", "language": "en-GB"}
+```
+**`scripts/md_to_speech.py:3899`** prints, in the same run:
+```
+long-form   $100/M  unavailable in eu-west-2 — would require another region
+```
+
+⚠️ **Both are in the same file, ~160 lines apart, and the comment at `:3885-3886` records WHY:
+*"`aws polly describe-voices` returns no long-form voice in eu-west-2, in any"*.** The cost table
+was corrected when that was measured; **the manifest field was not.**
+
+**Not a live blocker today**, and this is why: ⚠️ **`scripts/build_podcast_audio.py` does NOT
+synthesise.** It re-encodes existing masters to 64 kbps mono and never calls Polly — `grep` for
+`synthesize_speech`, `VoiceId`, `Engine` returns **nothing** in it. **So no code reads that field,
+and nothing has failed because of it.**
+
+⚠️ **It is a trap armed for the first person to write the synthesis step**, who will read the
+manifest the renderer produced, pass `Engine="long-form"` to Polly in `eu-west-2`, and get an
+error whose cause is 160 lines from its symptom — **while the same tool's own stdout said the
+answer.**
+
+**Fix:** the manifest should name the engine actually used, or omit the field. ⚠️ **NOT DONE TODAY
+AND DELIBERATELY SO — a shared tool is shared state, and agents were live.** Round 59: a
+coordinator changed a checker mid-round and an agent reported *"no finding in any report should
+rest on that tool's output today."* **This goes between waves.**
+
+⚠️ **And note what found it: an agent reporting a field it had no reason to care about, in a file
+it did not own, under "what I could not reach."** Neither the tool's own cost table nor any gate
+could see the contradiction, because **both halves are correct in isolation.**
+
+## ⚠️ THE SKATING EPISODE: FOUR REVIEWS, FOUR NOT-SAFE VERDICTS — what it cost and what it proves
+
+**One episode, from one document, on 18 September 2026.** Every review by a **different** agent;
+every repair by a **different** agent from the reviewer and from the previous repairer.
+
+| Draft | Words | Verdict | What the review found |
+|---|---|---|---|
+| 1 | 1,999 | NOT SAFE | no eyes-up instruction anywhere; four majors |
+| 2 | 2,446 | NOT SAFE | ⚠️ **the repair INVENTED *"arms out"*** — a technique the episode never taught |
+| 3 | 2,622 | NOT SAFE | ⚠️ **the repair named concussion with NO ACTION** and an inaudible route |
+| 4 | 2,718 | NOT SAFE | ⚠️ **the drill protocol gives TWO of the source's FOUR fall limbs** |
+
+**+36% length, and every added word is safety material. No teaching content was cut to pay for
+any of it.**
+
+### ⚠️ What is actually converging — and it is not "fewer defects"
+**Four reviews, four criticals.** ⚠️ **But the KIND changed, and that is the signal:**
+- Drafts 2 and 3's criticals were **created by the preceding repair**.
+- ⚠️ **Draft 4's was NOT created by a repair — it is an ORIGINAL OMISSION that three reviews
+  missed**, because the drill paragraph only became a "protocol" when R19 relabelled it. **The
+  defect was always there; the announcement that made it findable is new.**
+- Severity is falling: review 3 found **1 critical, 0 majors**; review 4 found **1 critical, 2
+  majors, 4 minors**, and its own grading note says the majors are **the same limb** as the critical.
+
+### ⚠️ The three defect classes this route produces, all now measured
+1. **The compressed cue** — a mnemonic naming a technique the episode never taught (*"arms out"*).
+2. **The stripped link layer** — an instruction whose action lives behind a hyperlink a listener
+   cannot follow (the concussion route).
+3. **The partial limb set** — a protocol announced, then delivered incomplete (two of four fall
+   limbs; four of five concussion actions, dropping ⚠️ ***"do not drive yourself home"***).
+
+⚠️⚠️ **ALL THREE ARE CORRECTLY ATTRIBUTED, VERBATIM BORROWINGS WITH PERFECT PROVENANCE.** **Not one
+would be caught by checking citations.** ⚠️ **The test is not "is this sentence accurate?" It is
+"what does this sentence RELY ON that a listener does not get?"**
+
+### ⚠️ What the corpus already knew, and the extraction kept losing
+`skating.md:919` — **Takeaway 1, the one that *"outranks everything else on this list"*** — carries
+its own collision fix **inside itself**: *"**That is the boards case. Falling backwards to the ice
+is the opposite case and takes the opposite chin — takeaway 10 has it.**"* ⚠️ **A repairer refused
+to add the ice-chin limb, arguing it would collide with the boards rule. The corpus had solved that
+collision in one clause, in its highest-ranked takeaway, and nobody looked.**
+⚠️ **THE CORPUS IS A BETTER GUIDE TO SPOKEN SAFETY STRUCTURE THAN ANY REVIEWER'S JUDGEMENT — because
+twenty rounds already paid for it. READ THE SUMMARY LAYERS BEFORE DECIDING SOMETHING CANNOT BE SAID.**
+
+### The honest cost line for the owner
+**One 18-minute episode has consumed four safety reviews and five repair passes, and is not
+cleared.** ⚠️ **NO PER-EPISODE ESTIMATE IS WRITTEN HERE** — this is the **first** script through the
+process and the three defect classes above did not exist as named categories when it started.
+⚠️ **A second episode is the only thing that can say whether this cost is the process or the
+learning curve, and it has not been run.** **Do not quote draft one's cost as a forecast.**
+
+### ⚠️ THE SPEECH RATE — it has an owner, but not one this plan could reach
+
+Every duration in this file's episode work is computed at **146 wpm**. An agent asked where that
+came from and reported *"that rate has no owner anywhere in the repo."* ⚠️ **It does — but the
+agent was right that it could not be found from here.**
+
+**Owner:** `project/reviews/section_split_pilot_2026-09-18.md`, the measurement table —
+**2.43 words/sec = 146 wpm**, measured from a real Polly **generative** render, voice **`Amy`**,
+**en-GB** (450 words → 185.136 s). ⚠️ **Before that, 156 wpm was assumed and was 7% fast.**
+⚠️ **This plan carried the figure in its arithmetic and named its source NOWHERE, so every agent
+that needed it had to take it on trust from a brief.** **Fixed by this paragraph; do not restate
+the number elsewhere — point here, and let this point at the record.**
+
+### ⚠️ AND THE RATE DOES NOT TRANSFER CLEANLY — a limitation, measured
+The skating episode's SSML carries **9.6 seconds of explicit `<break>`** plus **67 `<p>`
+boundaries**, each of which Polly renders as a pause the word count cannot see.
+
+⚠️ **So 146 wpm is a rate for the SAMPLE'S break density, not a constant.** A script with more
+paragraphs per word runs **slower** than its word count predicts. **Every minutes figure in this
+file is therefore a FLOOR.** The agent that raised it put the episode *"above 21 minutes"* against a
+20.9-minute arithmetic result, and that is the right direction to read them in.
+
+⚠️ **THE HONEST POSITION: no episode has ever been synthesised end to end, so no duration in this
+file has been confirmed against audio. The first real render settles it, and nothing before then
+can.** ⚠️ **Do not tighten the rate on another arithmetic pass — measure it on the first full
+render, then replace the figure in its owner and leave the pointer here alone.**
+
+## ✅ THE SKATING EPISODE IS CLEARED — SAFE TO VOICE, 18 September 2026
+
+**Six safety reviews. Six repair passes. Twelve different agents, no agent reviewing its own text.**
+**Verdict: no critical, no major, three non-blocking minors.**
+
+| Draft | Words | Verdict |
+|---|---|---|
+| 1 | 1,999 | NOT SAFE — no eyes-up instruction anywhere |
+| 2 | 2,446 | NOT SAFE — **the repair invented *"arms out"***, untaught |
+| 3 | 2,622 | NOT SAFE — concussion named with **no action**, inaudible route |
+| 4 | 2,718 | NOT SAFE — fall protocol gave **two of five** limbs |
+| 5 | 2,982 | NOT SAFE — recap dropped **"not the point of your shoulder"** |
+| **6** | **3,051** | ✅ **SAFE TO VOICE** |
+
+**+53% length across the series, every added word safety material, no teaching content cut.**
+
+### ⚠️ What finally closed it was a METHOD CHANGE, not another review
+Reviews 1–5 read the script and found what was wrong with what it said. ⚠️ **Review 6 ran the
+REVERSE SWEEP: enumerate every one of the owner's summary lines and ask which the episode SHOULD
+have restated and silently did not.**
+
+**27 summary lines enumerated individually — 17 Common Mistakes + 10 Key Takeaways.**
+**15 taught and carried · 12 correct omissions · 0 taught-but-missing-a-limb.**
+
+⚠️ **The twelve omissions were verified as correct one by one, not waved through** — the episode
+teaches stance, push, recovery, edges, falling and the boards, and nothing else, so crossovers,
+pivots, stopping and backward skating carry no hazard into it.
+
+⚠️⚠️ **THE LESSON FOR EVERY FUTURE EPISODE: a reviewer reading a script is good at catching a
+sentence that says TOO MUCH and structurally weak at catching one that says TOO LITTLE. Only an
+enumeration of the OWNER's summary layers finds the second kind — and four of this episode's six
+criticals were exactly that kind.** **Run the reverse sweep BEFORE the first safety review, not
+after the fifth.**
+
+### The three minors, accepted and NOT repaired — with reasons
+1. **`:85`'s two-or-three-second check is unlabelled** where the owner calls it *"coaching caution
+   rather than a sourced clinical finding"*. ⚠️ **The reviewer recommended NO CHANGE and would ship
+   without it: the worst case of an unlabelled version is a two-second delay; the worst case of a
+   repairer "adding a hedge" is a softened safety imperative.** **Recorded; do not sweep.**
+2. **The concussion routing enumeration reads closed and omits return-to-play** — relevant because
+   `conditioning_and_recovery.md` carries the **UK Concussion Guidelines for Non-Elite Sport**,
+   adopted by England Ice Hockey, with *"no return to competition before 21 days from injury"*.
+   ⚠️ **DO NOT FIX BY VOICING "21 DAYS" — the owner says in terms *"That is a bar, not a date"*, and
+   a number in a spoken sentence with no surrounding prose becomes a clearance date.** **The defect
+   is the closed-looking enumeration, not the absent number. Episode 2 work.**
+3. **An `ssml/README.md` warning overstated a chunker risk — corrected in place**, with the
+   measurement that refuted it.
+
+### ⚠️ The decision to STOP repairing, and why it is a decision
+**Five of the six repair passes introduced or left a defect the next reviewer caught.** ⚠️ **With the
+episode cleared and all three remaining findings graded non-blocking by the reviewer that found
+them, the marginal risk of a seventh repair cycle exceeds the marginal benefit of a minor.**
+**Stopping is the call. It is recorded so it is not mistaken for an oversight.**
+
+### What is now blocking audio — ONE owner action
+```bash
+aws sso login --profile ice-hockey
+```
+**Nothing else.** The SSML is built and pinned (`md5 90cd687c1fd86877c95363b1e3b699ce`, 9 chunks,
+16,285 billed, generative **$0.49**). ⚠️ **`manifest.json` says `"engine": "long-form"` — IGNORE IT,
+that engine does not exist in `eu-west-2`.** ⚠️ **And nothing in this directory has ever been heard
+by anyone: every duration here is a character count, not audio.**
+
+## ✅ FIRST EPISODE SYNTHESISED — 18 September 2026, and the speech rate was WRONG
+
+**The owner ran `aws sso login --profile ice-hockey`. The skating episode was synthesised end to
+end: 9 chunks, Polly generative `Amy`, en-GB, eu-west-2. Zero failures. 6,384,764 bytes.**
+**Built from the script a `safety-reviewer` graded SAFE TO VOICE, md5-pinned
+`90cd687c1fd86877c95363b1e3b699ce` and verified against the SSML before spending anything.**
+
+### ⚠️ MEASURED: 1,064.1 s = 17.7 MINUTES — and that refutes this file's own rate
+
+| | words | rate | duration |
+|---|---|---|---|
+| **arithmetic, all round** | 3,051 | **146 wpm** | 20.9 min |
+| ⚠️ **MEASURED FROM AUDIO** | 3,051 | ⚠️ **172.0 wpm** | ⚠️ **17.7 min** |
+
+⚠️⚠️ **EVERY DURATION IN THIS FILE WAS ~18% TOO LONG — AND IN THE OPPOSITE DIRECTION TO THE CAVEAT
+WRITTEN ABOVE.** That caveat said 146 was a **floor**, because 9.6 s of explicit `<break>` and 67
+`<p>` boundaries would push the real figure **higher**. ⚠️ **The breaks are real and the conclusion
+was still backwards: generative `Amy` reads the corpus FASTER than the 450-word sample the 146 was
+derived from.** **A rate measured on one sample did not transfer to a different text in the same
+voice, and the hedge attached to it pointed the wrong way.**
+
+⚠️ **CONSEQUENCE FOR THE LENGTH DECISION: the four options in the episode's `notes.md` were all
+computed at 146. Their arithmetic is wrong and the "band" they were chasing was never where anyone
+thought it was. RE-COMPUTE BEFORE DECIDING ANYTHING.** At 172 wpm the full episode is already
+**17.7 min**, so option 1 lands near 16 and options 2 and 3 near 12.4 and 11.8 — ⚠️ **and options 2
+and 3 still delete the edges layer, which holds 100% of the concussion content and the only
+falling-backwards chin instruction. That hazard is unchanged by the arithmetic.**
+
+### ⚠️ The rule this yields
+**A speech rate is a property of (voice × engine × text), not of a voice.** ⚠️ **Do not carry 172
+forward as the new constant either — it is one measurement, on one document, in one voice.**
+**Measure per episode from the rendered audio, and record the figure beside the episode rather than
+in this file.** ⚠️ **The 146 is now retired: it was measured honestly, hedged in the wrong
+direction, and quoted in every length decision of the round.**
+
+### Cost, measured rather than estimated
+**16,285 billed characters × $30/M = $0.49 for a 17.7-minute episode**, ≈ **$0.028/minute**.
+⚠️ **At 39 documents that is roughly $19 for a full catalogue at this length — but the corpus is
+1.3 M words and this episode is 3,051, so THAT EXTRAPOLATION IS MEANINGLESS. Do not quote it as a
+catalogue forecast.**
+
+### ⚠️ Still true, and it is the important caveat
+**NOBODY HAS LISTENED TO IT.** Duration is a number from `ffprobe`. ⚠️ **Whether the prosody lands —
+whether *"forearm and hip RATHER THAN the point of your shoulder"* stresses the right limb, whether
+the 45-second `<p>` at `:83` is followable, whether a prohibition inverts on a misplaced emphasis —
+is decided at synthesis and can only be judged BY EAR.** **That is the next step and no checker
+substitutes for it.**
+
+## ⚠️ OWNER DECISION, 19 September 2026 — EPISODES TARGET THE CATALOGUE LENGTH, ~50–70 MINUTES
+
+**Asked directly, with the measured alternatives in front of them, the owner chose: match the
+deployed catalogue.** **So episode two's ~79 minutes is roughly right, and ⚠️ EPISODE ONE (17.7
+min) IS THE OUTLIER AND SHOULD BE RE-SCRIPTED LONGER.**
+
+| | words | duration | summary entries taught |
+|---|---|---|---|
+| ep1 `skating` | 3,051 | **17.7 min** (measured) | 15 of 27, **12 correctly omitted** |
+| ep2 `equipment` | 13,509 | **~79 min** at 172 wpm | **39 of 39, 0 omitted** |
+| deployed catalogue | — | **48–72 min** | — |
+
+⚠️ **This retires the four length options in episode one's `notes.md`** — all were computed at the
+wrong rate (146 wpm) against a target nobody had set. **Do not re-open them.**
+
+### ⚠️ What this does NOT license
+⚠️ **Length is now a target, not a licence to pad.** The `safety-reviewer` on episode two was
+explicit: **the LENGTH is not the defect — the ORDERING is.** Its protective-fit block, *"the three
+coverage gaps that cause the most injuries"*, lands at **~51 minutes, behind ~12 minutes of blade
+radius, Flat-Bottom V and stick lie.** ⚠️ **A longer episode must put the injury-dense material
+EARLY, not merely include it.**
+
+### ⚠️ THE REVERSE SWEEP'S SCOPE WAS WRONG, AND THIS IS THE ROUND'S LESSON FOR EPISODE THREE
+Episode two ran the reverse sweep **first**, as instructed, and reported **39 entries, 39 taught, 0
+omitted.** ⚠️ **The reviewer agreed the count and rejected the conclusion, in one sentence worth
+keeping:**
+> ⚠️ ***"Both of my criticals live in neither section — they live in the BODY. A sweep that returns
+> 39/39 and still ships two criticals has told you its SCOPE was wrong, not that its EXECUTION
+> was."***
+
+⚠️⚠️ **THE SWEEP COVERED COMMON MISTAKES AND KEY TAKEAWAYS. THE CRITICALS WERE IN THE BODY** —
+`equipment.md:661` (a bag checklist the episode deleted entirely), `:677` and `:455`.
+⚠️ **So for episode three the sweep must run over the OWNER'S BODY PROSE as well as its summary
+layers — specifically every CHECKLIST, every ordered dressing sequence, and every place the source
+repeats a mandate near an instruction.** **Both criticals were an episode dropping a repetition the
+source made deliberately.**
+
+### ⚠️ And the sweep is still worth running — it found what it was scoped to find
+**It caught a missing limb in the author's own first draft** (CM28's skater-stick comparison) **and
+the author added it before review.** **The instrument works; it was pointed at two of the three
+places the defects live.**
+
+### ⚠️ `<say-as>` IS NOT EXECUTABLE FROM A SCRIPT — probed, not assumed
+
+An agent tried to mark up two certification acronyms by writing
+`<say-as interpret-as="characters">CSA</say-as>` into the markdown. ⚠️ **The renderer ESCAPES it.**
+It is voiced literally as *"less than say-as interpret-as equals characters greater than C S A…"*.
+
+⚠️⚠️ **SO A SCRIPT AUTHOR CANNOT CONTROL PRONUNCIATION. AT ALL.** **Every acronym, code and
+standards designation is decided by two tuples in `scripts/md_to_speech.py`** — `SPELL_OUT` (`:465`)
+and `STANDARDS_BODIES` (`:459`) — **and by nothing a script can say.**
+
+**Current state, read this session:**
+- `SPELL_OUT` — `SDHL SHL CARHA ASHL IIHF CDPA ADM PDO CI SD RR OZ DZ NZ`
+- `STANDARDS_BODIES` — `CAN/BNQ ISO/DIS ISO/IEC ISO BNQ CSA ASTM NOCSAE` — ⚠️ **fires on the CODE
+  form** (letters + solidus + digits), so a **bare** *"CSA"* in prose is untouched.
+
+### The open item — and why it was NOT done today
+Episode two's reviewer asked for **`CSA`** and **`CE`** to be spelled out: *"CSA is the sticker a
+Canadian buyer looks for and the one the counterfeit warning turns on; CE is the operative mark in
+the British test."* ⚠️ **A misheard certification mark is a reader buying the wrong helmet.**
+
+⚠️ **NOT CHANGED, deliberately.** **A shared tool is shared state**, and editing these tuples
+changes the SSML of **all 39 documents**, including one episode already synthesised and shipped.
+**Two acronyms in one episode is not a reason to move the renderer under the whole corpus.**
+
+**When it is done, it needs all of this:**
+1. ⚠️ **`CSA` is already in `STANDARDS_BODIES`** — check the precedence before adding it to
+   `SPELL_OUT`, or the code form may regress to letter-by-letter digits.
+2. ⚠️ **`CE` is TWO LETTERS and a common substring.** **Verify the matcher is word-bounded and
+   sweep the corpus for false positives before adding it.**
+3. ⚠️⚠️ **DO NOT ADD `HECC`. It is said as *"heck"* in the sport — USA Hockey's own explainer is
+   titled *"What the Heck is HECC?"*. Spelling it out would make every episode sound wrong.**
+4. **Re-render the whole corpus and diff the SSML** before trusting it.
+5. ⚠️ **Nothing here is testable without an EAR. Every acronym judgement on record is inference
+   from markup; nobody has heard a single one of these marks spoken.**
+
+## ✅ EPISODE TWO SYNTHESISED — and it settles the speech-rate question
+
+**`equipment`, 39 chunks, Polly generative `Amy`, en-GB, eu-west-2. Zero failures. 29 MB.**
+**14,075 words → MEASURED 85.4 minutes (5,124 s).**
+
+### ⚠️ THE RATE DOES NOT TRANSFER — now measured twice, not argued
+
+| episode | words | measured duration | measured rate |
+|---|---|---|---|
+| `skating` | 3,051 | 17.7 min | **172.0 wpm** |
+| `equipment` | 14,075 | **85.4 min** | **164.8 wpm** |
+
+⚠️ **A 4% spread between two documents in the SAME voice and the SAME engine.** ⚠️ **So a speech
+rate is a property of (voice × engine × TEXT), and NEITHER number is a constant.** **The retired 146
+was wrong by 18%; 172 would have been wrong here by 4% and in the optimistic direction.**
+⚠️ **MEASURE PER EPISODE FROM THE RENDERED AUDIO. Record the figure beside the episode. Never carry
+one forward as a planning constant.**
+
+### ⚠️ It overshoots the owner's target by 15 minutes
+**The owner set 50–70 minutes. This is 85.4.** ⚠️ **That is information, not a failure:** the episode
+teaches **39 of 39** summary-layer entries because a `safety-reviewer` independently agreed every one
+is a safety, legality or money consequence a listener acts on. **Cutting to 70 minutes means cutting
+~2,500 words of that.**
+
+⚠️ **AND THE REVIEWER ALREADY NAMED WHERE THE REAL COST IS, AND IT IS NOT LENGTH:** the
+protective-fit block — *"the three coverage gaps that cause the most injuries"* — lands at roughly
+**51 minutes**, behind ~12 minutes of blade radius, Flat-Bottom V and stick lie. ⚠️ **A second
+reviewer ruled the ORDERING does not block, because the three gaps are re-voiced in full in the
+closing recap — so they land twice, the second time at the retention peak.**
+
+⚠️ **THE DECISION IF THE TARGET IS TO BE HELD: reorder before cutting.** An agent checked and
+reports the move is **feasible and would repair a seam rather than break one** — the block opens
+*"Back to protection…"*, a sentence that exists only to apologise for its own misplacement, and has
+no backward dependency. **Two consequences a mover must handle: that opener must go, and three
+British rules would move with it, so the halfway rules recap needs a limb or it will omit rules its
+own half now teaches.**
+
+### Cost, measured
+**78,600 billed characters × $30/M = $2.36** for 85.4 minutes ≈ **$0.028/minute** — ⚠️ **identical to
+episode one's rate**, so cost per minute IS stable across documents even though words per minute is
+not. **Two episodes: $2.85 total.**
+
+### ⚠️ Still true
+**NOBODY HAS LISTENED TO EITHER EPISODE.** Duration is `ffprobe`. ⚠️ **Whether a certification mark
+is intelligible — `CSA` and `CE` are NOT in `SPELL_OUT` and are voiced as bare letters — and whether
+a prohibition inverts on a misplaced stress, are decided at synthesis and can ONLY be judged by ear.**
