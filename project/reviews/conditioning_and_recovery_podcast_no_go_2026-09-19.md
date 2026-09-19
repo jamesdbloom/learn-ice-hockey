@@ -577,3 +577,41 @@ different questions and the tool cannot tell you that you asked the wrong one.**
 record describing its own third pass has no baseline at all.** ⚠️ **The section about the gate is now
 ~75 lines and every enlargement makes the hole bigger. It stands UNREVIEWED and must not be quoted as
 settled. If a fourth pass is wanted, it is a FRESH gate.**
+
+---
+
+## ⚠️⚠️ RETRACTION — the coordinator's recorded decision on *"all its clubs"* was WRONG, and the third safety review refuted it with a quotation
+
+**Earlier in this record the coordinator ACCEPTED the repair's removal of *"all its clubs"* as
+*"scoping, not deletion"*, reasoning that the reach *"returns zero on disk"*. ⚠️ **That reasoning was
+false. It does not return zero on disk.**
+
+**`content/off-the-ice/conditioning_and_recovery.md:261`, quoted directly and retrieved 31 August
+2026:**
+
+> ***"England Ice Hockey's Safer Sport page says 'England Ice Hockey have adopted this guidance which
+> now applies to all clubs.'"***
+
+**Cited again as a source in `content/foundation/uk_rules.md:514`.**
+
+⚠️ **So the corpus had the answer, in a quotation, with a retrieval date, in the very document the
+script derives from — and neither the rules reviewer, nor the repairing agent, nor the coordinator
+looked there before concluding it was unconfirmed.** **The rules pass had searched the RULEBOOKS and
+the competition regulations, where it correctly returns zero; nobody searched `content/`.**
+
+⚠️⚠️ **This is the `check_disclosures.py` failure mode named in `CLAUDE.md`, verbatim: a disclosure
+*"whose question has since been ANSWERED ELSEWHERE IN THIS REPOSITORY and nobody propagated to it"* —
+and the three found by that tool *"share nothing but DIRECTION: all three made the corpus look LESS
+supported than it is, which is the opposite of the failure every other convention here guards
+against, and exactly why no reviewer stopped on them."*** **A fourth now joins them, and this time the
+coordinator ratified it in writing.**
+
+**And the cost is not cosmetic.** ⚠️ **That adoption is the AUTHORITY behind the 24-hour assessment
+window and the 21-day floor, for the exact listener those bind.** **The script now says *"how far down
+to club level that adoption is written, I could not confirm on the documents I have"* — a sentence
+that undercuts its own safety instruction, on a question its source document answers with a
+quotation.**
+
+⚠️ **The method that would have caught it is written in `CLAUDE.md` and was not used: *"the method
+that finds the next one is not a better grep: it is reading `sources/README.md` and the SIBLING
+DOCUMENTS before believing the sentence."*** **Routed to the repair.**

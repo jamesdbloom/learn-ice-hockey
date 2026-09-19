@@ -1572,3 +1572,42 @@ apply the rule that was attached to it.**
   tag was emitted; it does not tell you the voice got it right** — and the episode-three reviewer
   declared exactly this limit on its own pass: *"how they land in a synthesised voice… is an ear test
   nobody has run."*
+
+---
+
+## ⚠️ EVERY LENGTH FIGURE IN THIS SESSION WAS MEASURED ON THE WRONG THING
+
+**Found 19 September 2026 by the agent on its second repair of episode one, checking the record's own
+arithmetic rather than accepting it.**
+
+**The word counts quoted all round — 11,414, 11,500, 14,042, 16,126 — are
+`grep -v '^#' script.md | wc -w`: the markdown body with heading lines REMOVED.**
+
+⚠️⚠️ **The renderer VOICES the headings, and it INJECTS `DOC_INTRO` — nineteen words the markdown does
+not contain at all.** **So the markdown count is neither an upper nor a lower bound on what a listener
+hears; it is a different quantity.**
+
+**Coordinator-verified by stripping tags from the rendered `.ssml` of all three episode-one renders:**
+
+| render | markdown-minus-headings | **SPOKEN** | at 165–172 wpm |
+|---|---:|---:|---|
+| episode one, first | 11,414 | **11,499** | 66.9–69.7 min |
+| episode one, after repair 1 | 11,500 | **11,585** | **67.4–70.2 min** |
+| episode one, after repair 2 | 11,557 | **11,642** | **67.7–70.6 min** |
+
+⚠️ **So episode one was ALREADY fractionally over the 70-minute ceiling before the second repair, and
+the review record that priced its cut list did not know.** **Every "inside the band" statement made
+about it this session was made on the wrong number.**
+
+**Re-measured the same way, episode three is `SPOKEN=16,935` across 55 chunks — 98–103 minutes**,
+against the owner's 50–70. **The markdown figure understated it by ~100 words.**
+
+- [ ] ⚠️ **THE ONLY VALID MEASURE IS THE RENDER.** `md_to_speech.py` over the script, then strip tags
+  and count. **Never quote a markdown word count as a runtime input again.**
+- [ ] ⚠️ **AND THE RATE IS STILL AN INFERENCE.** 165–172 wpm was measured on two real synthesised
+  episodes, which is far better than a guess — **but nobody has synthesised either of these two
+  scripts, and a script's own prosody, sentence length and punctuation density move the rate.**
+  **The honest form is a RANGE with its provenance attached, which is what the table above does.**
+- [ ] **`billed characters` is the one figure the renderer prints that needs no interpretation**
+  (97,919 for episode three; 63,866 for episode one) — **it is what Polly charges for and it is exact.**
+  **Cost, unlike duration, can be stated without hedging.**

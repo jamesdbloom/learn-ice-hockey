@@ -4292,3 +4292,621 @@ it. The filter cannot tell.**
 times, and in FIVE CONSECUTIVE BRIEFS the supplied WORDING carried a defect while the premises held.**
 ⚠️ **`CLAUDE.md` says specify the defect and the constraint and let the agent that has read the
 document write the sentence. The briefs that stopped supplying wording stopped shipping defects.**
+
+---
+
+## Addendum 48 — the `facts-reviewer` ruling on the new `skating.md` boards fact, and the limb it was missing
+
+**The question asked** was narrow and the repairing agent asked it against its own work: do
+`skating.md:587` and `:588`, restating the boards spread 300 ms apart, constitute **deliberate
+repetition of a safety limb** or a **stutter**? The agent judged the former, and said plainly that it
+could not certify a judgement about text it had written.
+
+**The ruling: the pair is deliberate propagation and `:587` should exist — but the stutter was real
+and inside `:587`, and answering the question surfaced a MAJOR nobody had asked about.**
+
+### The major: `:587` carried one half of a two-part posture
+
+`skating.md`'s own body states the posture twice in the same blockquote at `:604` — *"the posture to
+aim for is skates parallel to the wall, forearm and hip"* and *"On the wall it means skates parallel,
+forearm and hip, if you can still turn"*. USA Hockey's Case-2 teaching point (`sources/ibc.txt`) is
+*"Press your forearm and upper thigh (hip area) against the boards"*. **The fact told a listener to
+TURN and said nothing about which surface takes the load — and the surface is the point of the
+instruction.**
+
+⚠️ **The brief said THREE sibling documents carry this limb in their facts layer. The reviewer
+counted FIVE** — `body_contact_and_battles.md:712`, `playing_without_the_puck.md:293`,
+`risk_management.md:408`, `zone_entries.md:481` and `:513`. **`skating.md` was the outlier, and the
+undercount ran in the direction that weakened the case for the fix.** Sixty-third refutation of the
+coordinator this round, and the count came from the coordinator, not from the tool.
+
+### The arithmetic forced the trade rather than leaving it to taste
+
+Keeping the duplicated fallback clause **and** adding the missing limb measures **215/200** — over
+cap. **Dropping the duplicate is what paid for the limb.** No hedge, citation or scope flag was
+traded out: *"if there is any time at all"* survives verbatim, and the fallback is not lost from the
+block because `:588` carries it 300 ms later under the gate that matches
+`body_contact_and_battles.md:712`'s Case 3 word for word.
+
+| | before | after |
+|---|---|---|
+| `:587` `Action:` | 179/200 | **140/200** — 60 spare; gone from `--near` |
+| `:588` `Never:` | 194/200 | 194/200 — unchanged, still the last entry of `--near` |
+| block | 8 facts · 8 coaching · `MAX_COACHING_FACTS = 8` | unchanged — ceiling held, `HARD_MAX = 11` untouched |
+
+### Why the *stutter* reading was right about a thing and wrong about which thing
+
+Both lines ended with the same six-noun list, 300 ms apart, **under two different trigger
+conditions** — `:587` said spread *"when there is not [time]"*, `:588` says spread *"Already facing
+the wall"*. ⚠️ **Repetition that reinforces repeats the same CONDITION. Two conditions for one
+action is not reinforcement, and the one that sticks is the last-heard — here, under the emphatic
+`Never:` label, the LOOSER gate.** `check_caption_echo`'s *"repeated safety limb"* category covers
+repetition **across layers**; this was back-to-back **within one block**, which that tool does not
+cover and no checker can see.
+
+**The corpus's own reviewed treatment of exactly these two limbs — `body_contact_and_battles.md:712`
+— gives them as two separate `Action:` facts with NON-OVERLAPPING action text.** `skating.md` now
+matches it.
+
+### What the reviewer declined to do, and it was right to
+
+Every one of the five siblings also carries *"— not the point of your shoulder"*. **That sentence is
+not in this section's body**, only in `body_contact_and_battles.md`. Adding it would have been
+extraction from the wrong section. **If it belongs in `skating.md`, the body has to carry it first —
+filed, not fixed.**
+
+### Verified after the edit, not argued from the page
+
+`check_facts` clean (26 documents, 841 blocks, 5,660 facts); `check_links`, `check_absolutes`,
+`check_geometry`, `check_secrets`, `check_counts` all clean. Rendered through `md_to_speech.py
+--only skating`: the fact lands in `037.ssml` as its own `<p>` reading *"Action. Going into the
+boards, turn your skates parallel to the wall before contact if there is any time at all, and take
+it on your forearm and hip."* — **preference and fallback are now distinct conditions in the audio,
+which is the layer the defect lived in.**
+
+### ⚠️ The pass the reviewer says should exist, and it is not the one it ran
+
+Its own closing: the `forearm and hip` gap was surfaced by the **five-sibling facts-layer census**,
+which it ran **by chance, to test the brief's "three documents" claim** — not as a pass. Its
+traceability method, bounded by *this section*, **cannot see a limb that belongs in a block and is
+stated nowhere in its own document**, because the correct response to "not in this section" is "do
+not add it" — the response it gave, correctly, to the shoulder. ⚠️ **A traceability-bounded method
+is blind to this class by construction. The cross-document facts-layer census is the pass that finds
+it, and it has never been run as one.** Filed as Workstream 19.
+
+---
+
+## Addendum 49 — the coordinator shed a scope qualifier in the very brief that closed Addendum 48, and the census that caught it
+
+⚠️ **Addendum 48 records the `facts-reviewer` declining to add *"— not the point of your shoulder"* to
+`skating.md:587`, on the grounds that the sentence is not in this section's body. That reasoning is
+sound and the reviewer stated its scope correctly: *"that sentence is not in THIS SECTION'S body."***
+
+⚠️⚠️ **The coordinator then wrote it into the next brief — the `safety-reviewer` dispatched to clear
+the same line for commit — as *"that sentence is in `body_contact_and_battles.md` and NOT IN
+`skating.md`'S BODY."* The scope was dropped in transcription, and the claim became false.**
+
+**Measured with `grep -n shoulder content/technique/skating.md` minutes later. The document carries
+the limb at four sites:**
+
+| site | layer |
+|---|---|
+| `:11` | Key focus opener |
+| `:121` | ⚠️ a `Technique:` **facts line** in `### Arriving at the boards` — the complete three-part posture, **in the layer the reviewer said it was missing from** |
+| `:868` | Common Mistakes |
+| `:920` | Key Takeaway 1 |
+
+**The live agent was corrected mid-flight** and its question re-put on the true state: `:121` and
+`:587` are two facts lines in one document stating the same posture at different completeness,
+roughly 470 lines apart, which in audio is a long way. **That is a better question than the one the
+brief asked, and the brief could not have asked it.**
+
+### ⚠️ This is [D8](../review_process.md#the-dimensions--a-review-must-cover-all-of-these), and it is the failure `CLAUDE.md` opens with
+
+**`CLAUDE.md`'s first warning is that a figure quoted out of its owner sheds the owner's
+qualification. This is the same failure with a SCOPE rather than a number**, and it happened in a
+session that had already recorded sixty-two refutations of the coordinator and a passage reading
+*"the briefs are more defective than the corpus."* ⚠️ **Relaying a reviewer's conclusion without its
+scope is indistinguishable, at the receiving end, from stating a fact.**
+
+### What actually caught it — and it was not a review
+
+**The cross-document facts-layer census** (now Workstream 19), run by the coordinator on the boards
+posture immediately after dispatching the brief. It extracts every ` ```facts ` line in `content/`
+mentioning the boards, the wall or the glass and tabulates which parts of the limb each carries:
+**63 lines across 19 documents.**
+
+⚠️ **THE COUNT OF SHOULDER CARRIERS HAS NOW BEEN WRONG THREE TIMES IN ONE THREAD, EACH TIME LOW:**
+
+| stated by | count | when |
+|---|---|---|
+| the coordinator's brief | 3 sibling documents | dispatch |
+| the `facts-reviewer` | **5** — *"the brief's 'three documents' undercounts"* | its ruling |
+| the census | **10 facts lines outside `skating.md`**, plus four sites inside it | ⚠️ minutes later |
+
+⚠️ **The census figure is itself a CANDIDATE LIST generated by a regex, and none of the ten has been
+read.** **It is not the true count either — it is the third estimate, and the direction of the error
+has not changed.** ⚠️ **A count of carriers of a safety limb is exactly the figure a coordinator
+should never state and should always run.**
+
+### And the census immediately paid for itself twice more
+
+Both are candidates, **not findings — nobody has read them**, and they are filed in Workstream 19
+rather than acted on:
+
+- ⚠️ **The class "carries `skates parallel` but NOT `forearm`/`hip`" is now EMPTY corpus-wide** — it
+  contained exactly one line, `skating.md:587`, and Addendum 48 closed it. **That is a positive
+  control for the census, and it is the only one available.**
+- **Seven lines carry `forearm` and/or `hip` with NO `skates parallel`** — `switching_positions.md:167`,
+  `winger.md:356`, `puck_handling.md:482`, `breakouts.md:273`, `forechecking_systems.md:239`,
+  `neutral_zone_systems.md:629`, and `skating.md:588` itself. ⚠️ **Most of these are almost certainly
+  CORRECT** — `:588` is the no-time-to-turn fallback, where turning is by definition unavailable, and
+  a line teaching one part because its section teaches one part is the normal case. **A sweep here
+  would write a false instruction into correct sentences. Read every one.**
+
+---
+
+## Addendum 50 — the commit was BLOCKED, and the defect was created by the repair being cleared
+
+⚠️⚠️ **A `safety-reviewer` dispatched to clear `skating.md:587` for commit returned BLOCK — and the
+critical it found is one that DID NOT EXIST BEFORE Addendum 48's repair.** The edit is *"a net
+improvement on the posture axis and a net regression on the gate axis, and the gate is the
+higher-consequence one."*
+
+### The critical
+
+**After the edit, the block at `:583-592` contains no statement of the condition under which the
+spread-on-the-glass fallback applies.** `no time`, `cannot turn`, `if you cannot` — **none of those
+strings is anywhere in the block.** The only surviving gate is `:588`'s *"Already facing the wall"*.
+
+**Voiced alone — and every facts line is voiced alone, in its own `<p>` with a 300 ms break either
+side — `:588` tells a listener who is facing the wall WITH TIME TO TURN to spread on the glass.**
+⚠️ **That substitutes damage limitation for the posture to aim for and leaves the player arriving at
+the boards FACING them: the head-first geometry, when they could have arrived along the wall.**
+The document's own blockquote at `:604` calls the spread *"damage limitation rather than the posture
+to aim for"*.
+
+**USA Hockey does not gate on facing.** `sources/ibc.txt` Case A — objective *"To protect the body
+when being checked while facing the boards"* — orders its teaching points **turn first, spread
+second and conditionally**. **Facing the boards is the trigger for TRYING TO TURN, not for
+spreading.**
+
+### ~~⚠️ How the repair caused it, and this is the part worth keeping~~ — ⚠⚠ **STRUCK. THE CAUSAL STORY IS REFUTED — see Addendum 51**
+
+~~The pre-repair `:587` ended *"…if there is any time at all — when there is not, spread stick, gloves
+and forearms on the glass instead"*. **Voiced alone, that was complete and correctly gated.**~~
+⚠️ **That string is in the WORKING TREE only. It is in no commit** — `git log -S` returns nothing, and
+`HEAD`'s block holds SEVEN facts with no `Action: Going into the boards…` line at all. **Everything
+below this line measures one uncommitted state against another and calls the difference a
+regression.** The finding survives; the story does not.
+
+The `facts-reviewer` correctly diagnosed a divergence between **two different gates on one action**
+and observed that *"the one that sticks is the last-heard, under the emphatic `Never:` label, the
+LOOSER one."* ⚠️⚠️ **It then resolved the divergence by DELETING THE TIGHT GATE AND KEEPING THE LOOSE
+ONE — making the gate it had just identified as the dangerous one not merely last-heard but
+ONLY-heard.**
+
+~~⚠️ **The diagnosis was right and the remedy moved toward the hazard the diagnosis named.** **That is
+a new shape in this record.**~~ ⚠⚠ **STRUCK — refuted in Addendum 51 with `git` evidence.** It is not a wrong premise, not a stale figure, not a supplied string —
+**the reviewer's own reasoning, correctly applied, produced the defect**, and nothing in the
+mechanical layer could see it: `check_facts.py` passes on 841 blocks and 5,660 facts, and **every
+defect of this shape is invisible to it by construction.**
+
+**Neither reviewer was wrong about its own question. The block was created between them.**
+
+### The repair is boxed in on three sides, all measured
+
+| | |
+|---|---|
+| `:588` headroom | **6 characters** (194/200) — it is on `--near` |
+| a ninth coaching line | ⚠️ **impossible** — the block is 8/8 against `MAX_COACHING_FACTS` |
+| restoring the clause to `:587` | **215/200** — over cap, measured twice independently |
+
+**So the gate must be repaired INSIDE `:588` by substitution, in six net characters or paid for in
+the same line** — and `:588` also carries the ice-fall wrist clause, so the two halves have to be
+balanced by someone who has read the whole line. ⚠️ **The reviewer declined to write it and said why.
+The coordinator declined for the same reason. The repairing agent writes it.**
+
+### ⚠️ The finding that outlives this line
+
+Asked whether an hour of listening between two statements of the same posture was the relevant
+measure, the reviewer answered that it is not, and generalised it:
+
+> ***"A facts line must stand alone regardless of what preceded it by an hour… A 300 ms silence and a
+> 60-minute silence are the same silence."***
+
+**It grounded that in the corpus's own architecture rather than in taste** — every facts line is
+voiced in its own `<p>`, and `check_facts_antecedents.py` exists precisely because a line leaning on
+context leans, for a listener, on nothing. ⚠️ **This retires the *"they heard the full version an
+hour ago"* defence corpus-wide, and the coordinator's rendered separation table — 007 at ~14 min
+against 037 at ~76 min — is the wrong measurement, correctly refused.**
+
+### ⚠️ And the census was refuted in the OTHER direction within the hour
+
+Addendum 49 recorded ten facts lines carrying *"not the point of your shoulder"* and warned that none
+had been read. **The reviewer extracted the complementary set: roughly TWENTY facts lines carry
+`forearm` and OMIT the shoulder limb** — across `on_ice_communication`, `breakouts` (five),
+`puck_support_and_spacing` (two), `scanning_and_anticipation`, `winger` (three), `defender`,
+`switching_positions` (two), `puck_handling` (two), `risk_management`, `body_contact_and_battles`.
+
+⚠️ **Omission is the corpus MAJORITY, and `:587` is not anomalous.** **That is why the shoulder limb
+is a MAJOR and not a critical, and it is a reason to add it at this one site — where the source
+states both limbs in a single three-item list — rather than to sweep.** ⚠️ **A count stated three
+times and low every time has now been corrected by measuring the set it is not in. That is the
+method, and it is cheaper than reading ten lines.**
+
+### Upheld on re-verification, so they stop being re-opened
+
+- **`:587` correctly names NO STICK.** USA Hockey's parallel-case list names forearm, upper thigh and
+  a low centre of gravity — **no stick.** The stick belongs only to the facing case. ⚠️ **A
+  coordinator once tried to route a stick-on-the-glass instruction to the parallel case and an agent
+  refused; that refusal is confirmed in the primary text for the second time.**
+- **The quotation is verbatim**, checked in the primary rather than carried from the brief.
+- **`:587` traces to its own section's body** at `:604`.
+- **The chin pair does not contradict** — `:590` and `:591` are each self-gated voiced alone.
+- **The blockquote survives rendering** in full as the opening `<p>` of chunk `038`, *"only if you
+  cannot"* included. ⚠️ **Which is exactly why the facts-layer absence is the finding: the body is
+  intact and the layer read aloud is not.**
+
+### What the reviewer disclosed about its own pass
+
+It verified ten quotations **by eye** and did **not** run `check_quote_drift.py` — noting that the
+tool exists because a `safety-reviewer` read fourteen quotations verbatim and three had drifted.
+It consulted **no rulebook**, on the reasoning that self-protection is penalised in no book —
+**sound, and stated as an assumption rather than a finding.** And it read one section because the
+brief named it: ⚠️ **a hazard in a section whose heading does not advertise it would have passed it**,
+which is the same blind spot Addendum 48's reviewer declared, from a different direction.
+
+---
+
+## Addendum 51 — the repairing agent refuted the BLOCK's causal story with `git`, repaired the defect anyway, and was right on both counts
+
+⚠️⚠️ **Addendum 50 is the first entry in this record to be STRUCK for a reason other than a wrong
+premise: it measured one UNCOMMITTED state against another and called the difference a regression.**
+
+### What `HEAD` actually holds
+
+```
+Never: Stick a hand out to catch yourself as you fall to the ice — a locked arm takes your
+whole weight through one wrist. At the boards it is the opposite: forearms and gloves spread
+on the glass
+```
+
+**Seven facts. No `Action: Going into the boards…` line at all.** ⚠️ **And `HEAD`'s gate is *"At the
+boards"* — no gate beyond being at the wall.** `git log -S'when there is not, spread stick'` **returns
+nothing**: the string Addendum 50 called *"the pre-repair `:587`"* **has never been in a commit.**
+
+**So against the committed corpus, every version of this block in this session is an IMPROVEMENT**,
+and the `Already facing the wall` gate that Addendum 50 treated as pre-existing loose text was
+**itself part of the same uncommitted repair, which had TIGHTENED it from `At the boards`.**
+
+⚠️ **The coordinator read a working-tree line, edited it, and then narrated the edit as though the
+line it replaced were the corpus's own.** **`git status` and `git show HEAD:` answer this in two
+commands and neither was run.** ⚠️ **`CLAUDE.md` already requires `git status` and `git log -1` before
+any change touching more than two files — the rule exists for contention, and this is a second reason
+for it: WITHOUT THE BASELINE YOU CANNOT SAY WHAT YOUR OWN EDIT DID.**
+
+### The second refutation, and it lands on the `safety-reviewer`'s wording that I relayed unchecked
+
+Addendum 50 states *"USA Hockey does not gate on facing."* ⚠️ **`sources/ibc.txt:674` gates on facing,
+literally:** *"If checked while facing the boards, distribute the force of the impact over as wide a
+surface as possible, including putting your stick and gloves on the glass to cushion the blow"*.
+
+**The real evidence is the ORDERING, not the absence of a facing gate.** Teaching point 1 at `:672`
+is *"If at all possible, try to turn skates parallel to the boards before contact is made"*.
+⚠️ **Facing IS the source's own condition; it is simply not the WHOLE condition, because turning
+outranks it.** **The conclusion holds and the reason given for it was false.**
+
+### ⚠️ The defect was real, and it is a PROPAGATION defect — which is a better finding
+
+**The same uncommitted edit rewrote the body to gate the spread on TIME** — `:604` *"no time left to
+turn"* and *"only if you cannot"*, `:869` *"with no time to turn"*, `:929` *"and cannot turn"* — **and
+left the facts line carrying only the facing gate. Body updated, summary layer not.** Voiced alone it
+then told a listener facing the wall *with* time to turn to take the damage-limitation posture.
+
+⚠️ **That is round 10's defining failure — a correction that reached the body and stopped — inside a
+repair whose whole purpose was the summary layer.** **It is a more useful finding than "a reviewer
+deleted the tight gate", because it names a class that recurs and a check that catches it.**
+
+### The repair
+
+| line | before | after |
+|---|---|---|
+| `:587` | 140/200 | **172/200** — appended `, not the point of your shoulder`, the exact house wording of the four existing in-document sites |
+| `:588` | 194/200 | **195/200** — `Already facing the wall, it is the opposite: stick, gloves and forearms spread on the glass` → `Facing the wall with no time to turn, spread stick, gloves and forearms on the glass instead`. **Substitution only, net +1 char; the ice-fall wrist clause untouched; `instead` carries the inversion that *"it is the opposite"* carried and bonds to the `Never:` prohibition rather than sitting in tension with it.** Still on `--near`, 5 left |
+| `:604` | body | ⚠️ **+1 clause and +1 quotation, NOT specified in the brief** |
+
+⚠️ **The `:604` addition is the agent applying a rule the brief did not think of.** Adding the
+shoulder limb to `:587` would have left it **with no trace in its own section's body** — the limb
+lives at `:11`, `:121`, `:868` and `:920`, **none of which is in `### How to fall`** — **breaking
+extract-never-author.** **So it put the limb in the body FIRST**, with USA Hockey's own teaching
+point quoted verbatim (`ibc.txt:692`, `grep -c` = 1), the disclosed-insertion bracket, and **no
+terminal period inside the quote marks because the source bullet has none.** No new source needed.
+
+⚠️ **This is the shape Addendum 48 filed and deferred** — *"if it belongs in `skating.md`, the body
+has to carry it first"* — **executed without being asked, by the agent that had read the document.**
+
+### Verified against primary text, not relayed
+
+`ibc.txt:670-678` Case A ordering · `:688-694` Case B's three-item list · `:1453` *"Never hit the
+boards or glass with the **tip** of your shoulder"* — ⚠️ **note *tip*, where the corpus's house
+phrasing is *the point of your shoulder*; `body_contact_and_battles.md:750` reconciles the two
+explicitly** · the four in-document sites confirmed, **so nothing was imported** · the block confirmed
+at 8 non-`Rule:` facts against `MAX_COACHING_FACTS = 8`.
+
+**Gates:** `check_facts` PASS · `--near` `:588` 5 left, `:118` 4 left (pre-existing) · `check_links`
+PASS · `check_absolutes` PASS · `check_quote_drift` on this document: **4 CASE flags, all
+pre-existing, none on a touched line.** Rendered: both lines land in chunk `037`, each in its own
+`<p>` with 300 ms breaks, **and the block now agrees with the blockquote in `038`.**
+
+### ⚠️ One handover answered, and the answer is "no defect" — so it stops being re-opened
+
+The agent flagged that `check_quote_drift.py` *"appears not to scan the `:604` blockquote at all"*.
+**It scans it.** The tool's regex matches all four quotations on that line — verified by running the
+regex directly — **and none appears in the NOT-FOUND list, so all four are in the `clean` bucket.**
+⚠️ **The tool prints DRIFT and NOT FOUND and says nothing about a clean quotation. Absence from its
+output is a PASS, not a skip** — and an agent reading only the printed sections cannot tell those
+apart. **The new `ibc.txt` quotation is verified by the tool as well as by the agent's grep.**
+
+### The other handover, recorded because it will recur
+
+**`check_facts.py`'s corpus totals moved between the agent's runs with no edit of its own** —
+841 blocks / 5,660 facts → 842 / 5,663 — **because the `goaltender.md` agent was live.** ⚠️ **The
+agent stood behind its PER-FILE run only, and that is the correct handling.** **`CLAUDE.md` warns that
+a checker PASS while agents are live proves nothing, because the tree it read is already gone; this is
+that warning observed in the corpus totals rather than in a failure.**
+
+### What the repair could not reach
+
+- ⚠️ **`sources/README.md` records Fig. 6, *Protecting Yourself Along The Boards*, PDF page 24, as
+  showing BOTH ARMS BENT AT THE ELBOW, gloves up and spread. It was not rendered.** *"If that drawing
+  shows the facing posture with the skates already parallel, my gate wording may be finer than the
+  picture supports."* ⚠️ **An image-only figure is unGREPPABLE, not unverifiable — `pdftoppm` and
+  read it.** **Filed.**
+- **Whether HECC or Look Up Line gate the spread differently.** Only `body_contact_and_battles.md`'s
+  reconciliation paragraph was read, not the primaries.
+- ⚠️ **A `Never:` label followed by an imperative is a MOOD CLASH no checker sees.** The agent judged
+  `instead` safe from the rendered SSML **by reading, not by hearing it** — *"I cannot rule out that
+  a listener attaches the prohibition across the full stop."* **Only the ear test answers it.**
+
+---
+
+## Addendum 52 — Workstream 9 executed: the goaltender's own document now tells them what THEY can be penalised for
+
+**The split the coordinator decided on two days ago, and deliberately did not bundle, has been done.**
+`### What it changes about what you do` carried Rules 69.3, 69.4, 69.7, 64.1, 51.3 **and** the whole
+Table 14 / Table 16 matrix on **one 11-fact block at `HARD_MAX`** — and the item squeezed out was the
+only clause in the section that penalises its own reader.
+
+**Blocks: 11 → 9, plus a new block of 5. No eviction. Nothing deleted.**
+
+⚠️ **The seam was NOT invented — it is the one the body already used.** The first half ends on IIHF
+Situation Handbook 69.1 (the attacker's position, screening); the new `### When you initiate the
+contact, and the rows where the penalty is yours` opens on Handbook 69.2 and runs the 6B–6H matrix.
+**Prose preservation was proved with a SENTENCE-LEVEL DIFF of the old paragraph against the two new
+halves — only the three intended changes and the seam sentence — rather than by eye.**
+
+### The fact the corpus did not have
+
+> `Rule: Rule 69.4 penalises the goalkeeper as well as the attacker — where by your actions outside
+> your crease you deliberately interfere with an attacking player "who is attempting to play the puck
+> or an opponent", you "may be penalized" — "may", so it is the referee's call (NHL and IIHF Rule
+> 69.4)`
+
+**Both quoted fragments are reported character-identical in the NHL and IIHF books, which is what
+makes the joint attribution sound.** ⚠️ **And the clause's trigger — *"by his/their actions outside
+of his/their crease"* — carries NO puck-played precondition, unlike the returning-goalkeeper limb
+above it, so none was imported.** **That distinction is the substance of the round's earlier
+ten-document repair, and getting it backwards is what six sites were repaired for.**
+
+**`:1098`'s false completeness banner is gone.** *"Rule 69.4 cuts both ways"* over two attacker-facing
+limbs now names what each limb actually does. **294 → 279 chars, no caveat traded.**
+
+**Situation 6C is now in the facts layer** — the row the body explicitly says *"know it is there"*
+about, and which was in no facts line. ⚠️ **It measured 304/300 first and SUBSTITUTION fixed it**
+(*"does not have to refuse to move"* → *"need not refuse to move"*, −8 chars, nothing traded).
+**Substitution has now paid in this round more often than it has failed, and the one recorded failure
+was in this same document.**
+
+**Propagated**, because the mirror half was one-sided in the summary layers too: a new Common Mistakes
+bullet beside the existing *"Assuming the stick fouls are a skater's problem"*, and a clause on
+**Key Takeaway 8**, whose *"What 69.4 does give you out there is the way home"* had no counterpart.
+**KT8's precondition untouched.**
+
+### ⚠️ A defect found outside the brief, in the agent's own file, and fixed
+
+The body claimed Situation 6B is quoted *"in identical words in both books"*. **The IIHF capitalises
+*"Player"*; the NHL does not.** Rewritten as *"the NHL's wording here, the IIHF's differing only in
+its capitalised 'Player'"*.
+
+⚠️⚠️ **THIS IS THE ATTRIBUTION-DRIFT CLASS `check_quote_drift.py` CANNOT SEE — found by an agent
+reading characters, in a document that was not its assignment.** ⚠️ **And the repair itself uses
+*"differing ONLY in"*, the construction every instance of which has been wrong so far this round.
+Sent to `rules-verifier` to diff the two rows character by character.** **"No *only*" is not the
+standard; accuracy is — one such claim has been verified as genuinely complete and correctly left.**
+
+### Three premises of the coordinator's brief refuted
+
+| the brief said | measured |
+|---|---|
+| three sketched replacement lines sit at `section_split_pilot_2026-09-18.md:2623` | ⚠️ **that line is the HANDBACK paragraph. There are no sketches anywhere in the 4,375-line file.** The agent searched, found none, and **wrote from primary text — which is what the brief asked for anyway. The pointer is dead and must not be reused.** |
+| both blocks sit at `HARD_MAX` | **true of FACT COUNT, false of CHARACTERS.** Neither had a line at the character cap; the tightest was 299/300 |
+| `:1107` is *"measured against a proposition the listener never heard"* | ⚠️ **overstated. The line has no deictic and no *"not only"*, renders as a complete self-standing proposition, and `check_facts_antecedents.py` returns zero for this document. The real defect was the MISSING SIBLING FACT, not a dangling antecedent.** |
+| `:1098` reuses a completeness banner over two attacker-facing limbs | ✅ **could not be refuted — the one premise that held** |
+
+### The `HARD_MAX` question, asked two days ago, now answered — and the answer is NO
+
+The `facts-reviewer` had observed that **two adjacent blocks at exactly `HARD_MAX`, in the one section
+of the corpus where the reader is the person being penalised, might be evidence about the CAP rather
+than the section.** The agent that did the work disagrees, on its own evidence:
+
+> ***"The cap was right… The section really was two sections: after the split one sits at 9 and the
+> other at 5, and the thing squeezed out was squeezed out because a table matrix and a set of on-ice
+> consequences were sharing one block. I found no line that could not be written, and one that looked
+> unwriteable fitted after substitution."***
+
+⚠️ **`HARD_MAX` stands. No cap change should ever rest on one document's evidence, and this document's
+evidence now runs the other way.**
+
+### Extraction trap confirmed live, as warned
+
+`grep "loss of goal only" sources/iihf_rules_v1.1.txt` returns **0** — it wraps as
+`loss of\ngoal only`. ⚠️ **The agent read Appendix IV POSITIONALLY at `9958-10035` instead and
+verified rows 6A–6H verbatim.** **A verifier stopping at the grep reports a fabrication that is not
+there, and this is the second document in which that exact string has done it.**
+
+### Gates, run after every edit
+
+`check_facts` 26 documents · 842 blocks · 5,663 facts · exit 0 · `--near` **263 within six chars,
+7 at cap, none in `goaltender`** · `check_links` exit 0 **before and after — and the corpus was
+grepped first: NO document links into any heading in this section, so the split moved no live
+anchor** · `check_absolutes`, `check_geometry`, `check_secrets`, `check_counts` (read-only, every live
+figure still matches) · `check_pointers`, `check_tables --near`, `check_facts_antecedents` — no
+`goaltender` hits · `check_quote_drift` 24 pre-existing fragments, **none of them the agent's**.
+
+**Rendered and read rather than judged from the page:** all five new or changed facts land each in
+their own `<p>` with 300 ms breaks, in chunks 126, 134, 135 and 179, **each self-standing with no
+antecedent, and the new heading is spoken before its block.**
+
+### ⚠️ NOT YET COMMITTED — three reviewers are live on it
+
+**`rules-verifier`, `facts-reviewer` and `safety-reviewer` were dispatched the moment it finished.**
+**A repair is new text, and new text has not been reviewed** — and this one is a structural change
+that moves prose across a heading boundary, which is the shape most likely to create a defect neither
+half's author can see.
+
+### What the split could not reach, in its own words
+
+- ⚠️ **The IIHF Situation Handbook quotations (69.1, 69.2, 69.5, 69.6) are not on disk under any name
+  the agent found, and FOUR were moved across the section boundary WITHOUT ONE BEING RE-VERIFIED.**
+  *"If any has drifted, my split carried it intact."* **Handed to `rules-verifier` to establish
+  whether that source is genuinely absent.**
+- **Whether the new `Key:` line is extraction or synthesis.** It is drawn from **four table rows**
+  rather than one sentence. ⚠️ *"I believe it is extraction; an author cannot certify that about their
+  own line."* **The sharpest question in the facts review.**
+- **Whether the heading is the right seam FOR A READER.** It renders cleanly; whether a goaltender
+  scanning the page finds *"When you initiate the contact"* where they expect it is a `site-reviewer`
+  question and has not been asked.
+- **The other eleven documents.** The census found 28 lines across 12 documents stating 69.4 from the
+  attacker's side. The agent checked only that the mirror clause exists in the body of **two**
+  documents corpus-wide, and **did not read the eleven to decide whether any of their readers needs
+  the mirror.** ⚠️ *"That is an inference from a grep, not a reading."*
+- **A worklist item, pre-existing, now sitting in the new block:** a facts line opening *"6F is your
+  excessive force…"* renders aloud as *"six F is your excessive force"* — **a line beginning with a
+  bare table-row letter.** Not the agent's text and not in its brief.
+
+---
+
+## Addendum 53 — the skating repair CLEARED, Fig. 6 finally rendered, and the same critical found live in the OWNER document
+
+### Verdict: CLEAR TO COMMIT
+
+**Both gates verified in the rendered SSML, not the Markdown** — `037.ssml`, consecutive `<p>`
+elements with 300 ms either side:
+
+> *"Action. Going into the boards, turn your skates parallel to the wall before contact **if there is
+> any time at all**, and take it on your forearm and hip, not the point of your shoulder."*
+>
+> *"Never — Put a hand out to break your fall to the ice — a locked arm takes your whole weight
+> through one wrist. **Facing the wall with no time to turn**, spread stick, gloves and forearms on
+> the glass instead."*
+
+⚠️ **Neither action now reaches a listener without its trigger, and `no time` / `cannot turn` /
+`if you cannot` are back in the block, the summaries AND the body.** **Four-layer test passes on both
+limbs; `:869` and `:929` close with the SAME sentence character for character.**
+
+### ⚠️ FIG. 6 RENDERED — the handover THREE agents left open, and it corroborates
+
+**`sources/ibc.pdf` page 24, rendered at 150 dpi whole-page and 400 dpi cropped.** The drawing is from
+the far side of the glass: the player square to the glass, **head up and looking forward**, **both
+hands on the stick** held horizontally across it, **both arms bent at the elbow**, gloves up and
+spread at chest height.
+
+- **It corroborates the new body clause *"both hands on it if you can"* — and it is a PICTURE, not a
+  grep.** ⚠️ **That is the strongest confirmation available for that clause and no text search could
+  ever have produced it.**
+- **It corroborates *"forearms"*** (a forearm on the glass requires a bent elbow) and is consistent
+  with the block's prohibition on the locked arm.
+- ⚠️ **The repairing agent's own worry is answered NO: the figure is cropped at chest height by the top
+  of the boards. THE SKATES ARE NOT IN THE DRAWING.** **It cannot show the facing posture with skates
+  already parallel, so it cannot make the gate wording finer than the picture supports.**
+  **This stops being re-opened.**
+
+### The three questions, answered
+
+**Nothing was traded for `:588`'s net +1 char.** The wrist clause is verbatim intact; the characters
+were paid by *"Stick a hand out to catch yourself as you fall"* → *"Put a hand out to break your
+fall"* and *"it is the opposite:"* → *"instead"*. ⚠️ **And *"instead"* carries the inversion BETTER
+than *"it is the opposite"* did, because it names what to do IN PLACE OF the prohibited act rather
+than asserting an abstract opposition a listener has to resolve.**
+
+**The `Never:` + imperative mood clash — judged SAFE on a precedent inside the same rendered
+document.** ⚠️ **Chunk `038` already contains the identical construction: *"Never — Play on if you are
+hurt. **Stay down instead** and let play be stopped."*** **Reviewed, shipped house pattern —
+prohibition, imperative, `instead` — in the same document and the same voice.**
+
+**All four `:604` quotations verbatim, and all four source bullets confirmed to carry NO TERMINAL
+PERIOD** (`sed -n l` on each). The source's curly nested quotes rendered as straight singles is
+established house handling. ⚠️ **`check_quote_drift` prints no DRIFT and no NOT-FOUND for `:604` —
+per Addendum 51 that is a PASS, not a skip.**
+
+---
+
+## ⚠️⚠️ CRITICAL FOUND OUTSIDE THE DIFF — the same defect, live, in the document that OWNS the rule
+
+**`content/technique/body_contact_and_battles.md:713`** —
+`Action: Case 3, already facing the wall — spread the load, stick and gloves up on the glass, arms out
+as a shock absorber`
+
+⚠️ **Voiced alone it tells a listener who is facing the wall WITH TIME TO TURN to take the
+damage-limitation posture. That is Addendum 50's critical, verbatim, in the owner document.**
+
+| layer | gate |
+|---|---|
+| body `:744` | *"already facing the boards **AND CANNOT TURN**"* ✓ |
+| **facts `:713`** | ***"already facing the wall"*** ✗ |
+| Common Mistakes `:1569` | *"If you are **STUCK** facing the wall"* ✓ |
+| Key Takeaways `:1680` | *"already facing the wall **and cannot turn**"* ✓ |
+
+⚠️ **Three of four layers carry the time gate and the FACTS LINE — the one voiced alone — does not.**
+
+**The reviewer attached two honest qualifications and then decided rather than hedging:** Case 2 is
+voiced 300 ms earlier and does carry the turn-first posture, and the Case 1/2/3 labelling is a
+deliberate ordered sequence — **but this round retired the *"they heard it a moment ago"* defence
+explicitly, so the mitigation does not fully hold.** ⚠️ ***"I grade it by the precedent this round
+already set on the same sentence shape."*** **Repair dispatched. It does not block the skating diff.**
+
+### Major, in scope, introduced by the repair — and NOT blocking
+
+**`:604` offers a BROAD source prohibition as warrant for a NARROW corpus one.** USA Hockey's Case B
+point rules out **the shoulder**; the corpus's house phrase rules out **the point** of it.
+⚠️ **The reconciliation of `ibc.txt:692` with `ibc.txt:1453`'s *"the TIP of your shoulder"* lives ONLY
+in `body_contact_and_battles.md:754`, which `skating.md` neither carries nor points at — and five
+sites in `skating.md` use the narrow phrase unreconciled.** **Until this repair no site in this
+document sat next to the broader quotation, so the gap was invisible here.**
+
+⚠️ **Not a block, by this round's own rule: the STRICTER wording is audible, verbatim and LAST-HEARD
+in the rendered sentence — and Addendum 48 established that the one that sticks is the last-heard.
+The reader is not deprived of the safe version.**
+
+### Minor, recorded
+
+`:604`'s opening sentence is the **one ungated sentence left in the paragraph** and it is the first
+sentence of chunk `038`; **unchanged from HEAD, so the repair did not create it, but the repair
+rewrote everything around it** · ⚠️ **the `### How to fall` block now teaches boards posture with no
+*"never turn your back"* line** — the absolute lives ~470 lines earlier — **and it CANNOT be fixed by
+addition, because the block is at 8/8 against `MAX_COACHING_FACTS`; any new line evicts an existing
+safety fact** · two `:604` refinements are body-only and stop there, **a deliberate consequence of
+that same ceiling rather than an oversight** · the two *Heads Up* quotations are attached to the
+facing case where the source's framing is general — ⚠️ **a narrowing that runs in the SAFE direction,
+because it withholds the stick from the parallel case where USA Hockey names no stick.**
+
+### What it could not reach
+
+**53 chunks of `skating.md` unopened** — ⚠️ *"a hazard whose heading does not advertise it would have
+passed me"*, **the third reviewer in a row to declare that blind spot and the third not to run the
+pass that closes it** · **no rulebook consulted, stated as an assumption rather than a finding** ·
+⚠️ ***"I cannot verify that a listener who hears `:588` at speed, mid-panic, three feet from the wall,
+does the thing the sentence describes."*** · **the critical above was found by going looking for a
+sibling contradiction this diff created — NOT by running a pass over that document**, whose facts
+layer remains unexamined, **and Workstream 19's census still has not been run as a pass.**

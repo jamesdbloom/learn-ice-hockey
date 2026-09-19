@@ -996,6 +996,84 @@ misses.
 "the source mentions it only twice" claim that is simply false.** Compare a whitespace-stripped,
 letters-only form as well, and reconcile the two counts before quoting either.
 
+### ⚠️ AND IT IS NOT ONLY `ukcg.txt` — THE IIHF SITUATION HANDBOOKS DO IT TOO, AND IT PRODUCED A FALSE ABSENCE ON 19 SEPTEMBER 2026
+
+`iihf_situations_v1.1.txt`, `iihf_situations_2026-27.txt` and `iihf_situations.txt` set their
+**situation headings** letter-spaced. The extraction reads:
+
+> `S I T UAT I O N 69.1`
+
+⚠️ **So `grep "Situation 69\."` returns ZERO across all three files** — and note the spacing is
+*irregular* (`S I T UAT I O N`), so a fixed `S.I.T.U.A.T.I.O.N` pattern misses it as well.
+
+⚠️⚠️ **An agent concluded from this that the Situation Handbook was "not on disk under any name I
+found", and moved four quotations of it across a section boundary without re-verifying one.** It was
+on disk the whole time — **465,603 bytes, Rule 69 beginning at `iihf_situations_v1.1.txt:5401`** — and
+a later `rules-verifier` re-verified all four as **verbatim**.
+
+**How to search these files:** grep the situation's **text**, not its heading, or read **positionally**
+from the rule's first line. ⚠️ **The heading form is the one thing in the document you cannot search
+for.**
+
+⚠️ **This is the FOURTH kind of false absence this README now documents for the same class of
+question** — image-only PDFs, wrapped phrases, page-furniture extractions, and letter-spaced headings.
+**All four answer "is it in the source?" with a confident, wrong NO.** **`grep` returning zero is a
+question, not an answer.**
+
+### ⚠️ FIFTH: COLUMN-INTERLEAVED REFERENCE TABLES — the row you want is real and unreachable by any phrase search
+
+**Found 19 September 2026 by the agent repairing `content/positions/goaltender.md`, which needed
+Situation 6E from both books' interference-on-the-goalkeeper matrices.**
+
+⚠️ **Flattened searches for the NHL's 6E description, the NHL's 6E result AND the IIHF's 6E result all
+returned ZERO in every extraction on disk.** **Both Table 14 and Table 16 interleave at that row:**
+a cell's text is split across columns and lands dozens of lines from its own row, sometimes directly
+beneath a DIFFERENT row's result.
+
+**All three were verified by reading the columns POSITIONALLY.** ⚠️ **`check_quote_drift.py` reports
+nothing about them either way** — it cannot find what it cannot match, and it does not distinguish
+*"this quotation drifted"* from *"this quotation is unreachable by my matcher"*.
+
+⚠️ **`nhl_rules_layout.txt` has the NHL tables correctly and `nhl_rules.txt` does not.** **Read any
+reference-table row from the `-layout` extraction, and read it positionally even there.**
+
+⚠️⚠️ **This one is more dangerous than the other four, because a phrase search here does not merely
+return zero — it can return a HIT ON THE WRONG ROW.** An orphaned situation text landing under a
+neighbouring row's result will match, and a verifier that stops at the match attributes one row's
+facts to another row's penalty. **A confident wrong YES, where the other four give a confident wrong
+NO.**
+
+### ⚠️ SIXTH: THE BOOK'S HOUSE WORD IS NOT YOUR WORD — and this one defeated TWO reviewers on one claim
+
+**Found 19 September 2026 by a `safety-reviewer` on `content/positions/goaltender.md`, against a
+negative existence claim that a `rules-verifier` had ALREADY attacked with eleven concept patterns and
+upheld.**
+
+The document recorded, honestly, exactly what it had searched: ***"initiates contact"*, *"give
+ground"*, *"the act of establishing"*** — and concluded USA Hockey publishes no
+goalkeeper-initiates-contact provision.
+
+⚠️ **USA Hockey writes *"body checks"*.** `usah.txt`, Rule 640(f): ***"A minor penalty shall be
+assessed to any goalkeeper who body checks an opponent."*** With **640(g)** a mandatory major plus
+game misconduct for reckless endangerment and **640(h)** a match penalty — and the Casebook, Rule 640
+Situation 7, answering the question in terms: ***"Is a goalkeeper allowed to body check an opponent?
+No."***
+
+⚠️⚠️ **Two independent agents attacked the same negative and both missed it, because both searched the
+CONCEPT in the vocabulary of the OTHER books.** **The IIHF and the NHL write *"initiates contact"*;
+USA Hockey writes *"body checks"*, and its carve-out term of art is *"competitive contact"* — which is
+NARROWER than the IIHF's *"establish position"* (it requires *"an effort to gain possession of the
+puck"*).**
+
+**This README already records the species for `hc.txt` — `goaltender` 349 hits against `goalkeeper`
+4.** ⚠️ **The lesson generalises: before accepting any cross-book negative, find out what the book you
+are searching CALLS the thing, from that book's own index, glossary or penalty summary — not from the
+book you came from.**
+
+⚠️ **And note what actually caught it: the document had WRITTEN DOWN ITS THREE SEARCH STRINGS.** *"The
+disclosure convention caught its own defect; nothing in my method would have."* **A negative claim
+whose search terms are not recorded cannot be attacked this way at all.** **Record the strings.**
+
 ## The `heo_intl_drill_symbols` PDF is the corpus's NOTATION AUTHORITY, and it extracts to 30 bytes
 
 The whole file is one page of glyphs against labels — read visually, 2 September 2026:

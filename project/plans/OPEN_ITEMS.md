@@ -1361,6 +1361,144 @@ divergence from the other side.** **Verified against `sources/nhl_rules.txt:6250
 CHARACTERS are one book's.** ⚠️ **And state the divergence you MEASURED, not the one you expected:
 *"differing only in…"* is a claim about what is NOT different and must be checked by word-diff.**
 
+## Workstream 17: FACING vs PARALLEL — two board cases with different instructions, possibly conflated
+
+⚠️ **A repair was dispatched to add the stick to `skating.md:121` and the agent REFUSED, correctly.
+Following the brief would have CONTRADICTED the primary source.** **Verified twice, flattened:**
+
+| USA Hockey case | Objective | Teaching points |
+|---|---|---|
+| **PARALLEL** | *"To protect the body when being checked while **skating parallel to the boards**"* | *"Press your **forearm and upper thigh (hip area)** against the boards"* · *"Avoid hitting the boards with the shoulder"* · *"Keep a low center of gravity"* — ⚠️ **NO STICK** |
+| **FACING** | *"checked while **facing the boards**"* | *"**If at all possible, try to turn skates parallel** before contact"* · *"distribute the force… including putting your **stick and gloves on the glass**"* — ⚠️ **STICK** |
+
+⚠️⚠️ **THE STICK BELONGS TO THE FACING CASE ONLY. The parallel case is forearm-and-hip.** **`:121` is
+the parallel case, and the coordinator's brief nearly put the stick in it.**
+
+### ⚠️ The open question — candidates, NOT findings
+**Twelve documents carry the spread-the-load instruction.** ⚠️ **The repairing agent warned the same
+conflation may exist in them, and specifically named `core_principles.md:19` and `:198` as stating
+spread-the-load without scoping the facing case as tightly as its own `:177` does.**
+
+⚠️⚠️ **DO NOT SWEEP THIS, AND DO NOT USE A GREP COUNT AS EVIDENCE.** A raw count of facing-scope
+mentions per file proves nothing about whether each INSTRUCTION is correctly scoped — ⚠️ **the
+coordinator ran exactly that count, got a non-zero number for all twelve, and it told it nothing.**
+**Read each site and ask which case it is teaching.**
+
+### ⚠️⚠️ THE SOURCE IS IN TENSION WITH ITSELF — and "facing only" is too strong a claim about it
+
+**USA Hockey states the stick instruction at TWO levels that pull against each other, in ONE book.
+Both verified verbatim, flattened, this session:**
+
+| Passage | Scope | Stick |
+|---|---|---|
+| **Contact Confidence A** | *"while **facing** the boards"* | *"putting your **stick and gloves on the glass**"* |
+| **Contact Confidence B** | *"while skating **parallel** to the boards"* | ⚠️ **none** — *"forearm and upper thigh"*, *"low center of gravity"* |
+| **B's drill emphasis** | parallel | ⚠️ ***"keeping the legs moving with the feet apart, knees bent and **the stick down**"*** |
+| ⚠️ **Heads Up Hockey §2, *"Hitting the Boards"*** | ⚠️ **UNSCOPED — hitting the boards generally** | ⚠️ ***"the best way to cushion an impact with the boards is: with **both hands on the stick** if possible"*** |
+
+⚠️ **So the corpus must present NEITHER as the settled position.** ⚠️ **This cuts both ways: it is why
+`skating.md:603` quoting the general demonstration for a general claim is DEFENSIBLE, and why the
+unscoped SUMMARY lines were still wrong — they stated one USA Hockey position where the source has
+two.**
+
+⚠️ **The Heads Up Hockey passage is duplicated in `huh.txt` from an independent PDF, so it is not an
+extraction artefact.** ⚠️ **Anyone repairing the `:603` ownership inversion needs this passage,
+because it is the one `:603` actually quotes.**
+
+### ⚠️ A REFUSAL worth keeping — do not "improve" on it
+An agent declined to add the parallel-case *"stick down"* limb to `skating.md:868`, though the source
+supports it and it would sharpen the contrast: ⚠️ **`body_contact_and_battles.md` — the OWNER — has
+NO board-contact stick limb at all** (its only *"stick down"* hits are stick-lift and slashing
+material). **Adding one to a delegating document would create a SECOND ownership inversion of exactly
+the kind already filed. It belongs in the owner first.**
+
+### Corpus sweep — `skating.md` was the SOLE outlier
+Every other document carrying this instruction already had the facing trigger:
+`passing_and_receiving.md:480`, `switching_positions.md:168`, `puck_handling.md:410`,
+`scanning_and_anticipation.mjs:178`, and all four owner layers. ⚠️ **That independently corroborates
+the reviewer and narrows this row: the conflation the coordinator feared across twelve documents
+does NOT exist. Only `skating.md` had it, and it is fixed.**
+
+### ⚠️ A relayed MEASUREMENT that did not reproduce
+A reviewer measured a scoped rewrite of the facts line at **183/200**, *"eleven characters shorter"*.
+⚠️ **The repairing agent could not reproduce it — every rewrite preserving the prohibition, the
+one-wrist reason and *"spread"* came in at 194–219.** It reached 194 only by substituting *"catch
+yourself as you fall to the ice"* → *"break your fall to the ice"*. ⚠️ **The CONCLUSION (no cap
+pressure) was right; the NUMBER was wrong, and an agent that trusted it would have budgeted eleven
+characters it did not have.** **A reviewer's measurement is evidence about that reviewer's draft,
+not about yours.**
+
+### ⚠️ A limb in BOTH primaries that the corpus carries NOWHERE
+`sources/ibc.txt` and `sources/huh.txt`, from two independent PDFs, both give the cushioning
+demonstration as: ⚠️ ***"With both hands on the stick if possible"*** and ***"With arms out to create
+a three-part 'shock absorber'"***.
+⚠️ **Neither limb is in any `content/` document.** ⚠️ **`body_contact_and_battles.md` carries the
+stick correctly at four sites with the *"[i]f at all possible"* hedge intact — and it does not carry
+this either.**
+⚠️ **A COORDINATOR FALSE ALARM, RECORDED: `grep -c "both hands on the stick"` returns 2 in
+`puck_handling.md`, but BOTH are a STICK-CHECKING rule — *"unrealistic to expect both players to keep
+both hands on the stick at all times"* — nothing to do with cushioning. A count is not a reading.**
+
+### Closed by this row's work
+**`skating.md` now carries the stick in body `:603`, facts `:587`, Common Mistakes `:868` and Key
+Takeaway 10 `:928`** — verified by a layer test, not a grep. ⚠️ **`:919` (Takeaway 1) was REFUSED and
+that refusal needs a reviewer's eye: it carries route and posture and delegates the three-case rule
+to `body_contact_and_battles.md`, whereas `core_principles.md:209` DOES include the fallback in its
+equivalent takeaway.**
+
+⚠️ **CONSEQUENCE: the shipped skating episode now TRAILS its source** — it reproduced `:603` exactly,
+stick and all, because it was faithful. **An episode must never lead its source; re-scripting is the
+owner's call.** **`PODCAST_AUTOMATION_LOCAL.md` also quotes the superseded line.**
+
+## Workstream 18: the OWNER states the Case-3 limb ungated, in a blockquote — and nobody has layer-tested it
+
+⚠️ **`content/technique/body_contact_and_battles.md:754`**, the myth blockquote:
+> *"USA Hockey teaches the opposite: get your **stick and gloves up and spread out on the glass**, and
+> it names failing to do so as the common error"*
+
+⚠️ **NO Case-3 gate anywhere on the line — three paragraphs downstream of the correctly gated Case 3
+at `:713`.** ⚠️ **This is the exact defect just repaired in `skating.md`, sitting in the OWNER
+document, in a blockquote.** ⚠️ **A blockquote is the container that has failed here before.**
+
+### ⚠️ Why it matters — the scope is real and triple-sourced
+**Three separate passages give the PARALLEL case and NONE mentions a stick going up:**
+- `sources/ibc.txt:691-694` — Contact Confidence B: *"Press your forearm and upper thigh (hip area)
+  against the boards"*, *"Keep a low center of gravity"*
+- `sources/ibc.txt:1531-1537` — *"Taking A Hit On The Boards… while skating close to the boards"*:
+  *"Keep skates parallel"*, *"Use arms/legs as shock absorbers"*, *"Keep feet apart, knees bent"*
+- `sources/huh.txt:465-469` — *"Keep your feet parallel to the boards / Forearms — hands — legs ready
+  / Lean into the impact"*
+⚠️ **And where USA Hockey gives a stick HEIGHT for that case it says DOWN** (`ibc.txt:1547`,
+`huh.txt:658`). ⚠️ **`huh.txt` contains *"glass"* EXACTLY TWICE and neither puts a stick on it.**
+
+⚠️ **THE HARM: a listener skating parallel with a check coming squares their chest to the glass to
+get both hands up — forfeiting the forearm-and-hip presentation, RAISING THE CENTRE OF GRAVITY
+(USA Hockey's own named Common Error for that case), taking the hands off the puck, and converting a
+Case-2 contact into the Case-3 geometry Case 3 exists to salvage.**
+
+### ⚠️ NOBODY HAS LAYER-TESTED THAT DOCUMENT
+Two reviewers said so independently. **Read `:713`, `:744`, `:754` and `:1680` RENDERED, not as
+Markdown** — `skating.md`'s defect was invisible on the page and obvious in the chunk, and the repair
+moved its first gate from **word 96 to word 39** of a 288-word unit.
+
+### The corpus-wide row this implies, and it is NOT a sweep
+⚠️ **A layer test for `stick` + `glass` WITHOUT a facing gate, across every document that carries the
+instruction.** ⚠️ **Do NOT grep and fix — the same session proved a raw count tells you nothing: a
+coordinator ran one, got a non-zero facing-scope mention for all twelve carriers, and it was not
+evidence about any of them.** **Read each hit RENDERED and ask what a listener knows at that moment.**
+
+### ⚠️ An UNRESOLVABLE tension in the source — report it, do not "fix" it
+`ibc.txt:1474-1484` (*"Hitting the Boards"*) gives *"with both hands on the stick if possible"*
+**generically**, as a demonstration point scoped to no case, while `:1531-1537` gives the parallel
+checklist with **no stick at all**. ⚠️ **Only USA Hockey can resolve that. The corpus currently
+reports both faithfully and should keep doing so — DO NOT resolve it by choosing one.**
+
+### Closed alongside
+**`skating.md` is repaired in all four layers** and its facts block now carries USA Hockey's **first**
+teaching point for the facing case (*"try to turn skates parallel before contact"*), which three
+sibling documents had and it did not. ⚠️ **That block is now at 8/8 against `MAX_COACHING_FACTS` — the
+free slot is spent, and a future COACHING fact there will fail loudly.**
+
 ## Workstream 7: three untracked, un-ignored paths — an OWNER DECISION, measured 18 September 2026
 
 ⚠️ **`AGENTS.md`, `.agents/` and `.codex/` are untracked AND absent from `.gitignore`.** Nothing
@@ -5620,3 +5758,554 @@ on lines that commit does not touch:**
   **relative-clause-on-the-goalkeeper** restructure (gained headroom on a single-rule line)
   and **replacing the headline framing** (needed where the line carries a four-book
   comparison). ⚠️ **Measure before choosing; the first was refuted on the second line.**
+
+---
+
+## Workstream 19: the cross-document facts-layer census — a pass that has never been run as one
+
+**Opened by the `facts-reviewer` ruling recorded as Addendum 48 in
+[`project/reviews/section_split_pilot_2026-09-18.md`](../reviews/section_split_pilot_2026-09-18.md).
+It found a MAJOR — `skating.md:587` carried *"skates parallel to the wall"* and dropped
+*"forearm and hip"*, half of a two-part posture — and then said plainly how it found it:**
+
+> *"The five-sibling census is the only thing that surfaced the `forearm and hip` gap, and I ran it
+> by chance, to test the brief's 'three documents' claim, not as a pass. **That census should be the
+> pass.**"*
+
+### The class, and why every existing method is blind to it
+
+⚠️ **A facts line is reviewed for TRACEABILITY — does it trace to a sentence in its own section?
+That test cannot see a limb that belongs in the block and is stated nowhere in its own document**,
+because the correct response to *"not in this section"* is *"do not add it"* — and the same reviewer
+gave exactly that response, correctly, to a different limb in the same block (*"not the point of your
+shoulder"*, which is in `body_contact_and_battles.md` and not in `skating.md`).
+
+**So the two outcomes are indistinguishable from inside one document:**
+
+| | what a traceability pass sees | what it is |
+|---|---|---|
+| limb absent from this document's body | "not in this section — do not add" | ⚠️ **could be a propagation gap** |
+| limb absent from this document's body | "not in this section — do not add" | correct scope boundary |
+
+**Only a census across the documents that carry the same limb separates them**, and **nothing in
+`scripts/` does this.** `check_facts.py` reads one block at a time. `check_facts_antecedents.py`
+looks for pointers, not omissions. `check_counts.py` counts. **There is no tool and there has been
+no pass.**
+
+### The rows
+
+- [ ] **Build the census as a repeatable thing, not a one-off grep.** For a named safety limb,
+  extract every ` ```facts ` line in `content/` that carries any part of it and tabulate which
+  documents carry which parts. ⚠️ **It must run on the FACTS LAYER, not the document** — a
+  document-level grep cleared four documents in an earlier round and a facts-layer extraction found
+  a fifth stating the hazard naked. **Body ✓ does not imply block ✓, and this is the inverse: block
+  ✗ while body ✓ is exactly the `skating.md:587` defect.**
+- [ ] **Decide whether it earns a script.** ⚠️ **If it does, it is a WORKLIST and must never gain a
+  `--strict`** — a document legitimately carrying one part of a limb because it teaches one part is
+  the normal case, and a tool that ranked these and offered to fix them is precisely how round 44
+  manufactured a divergence that did not exist. ⚠️ **And if a script lands, name it in `CLAUDE.md`'s
+  `scripts/` block in the SAME session** — that list has gone short four times, twice by a
+  coordinator who had just read the warning.
+- [ ] **Seed it with the limbs already known to be multi-part**, each of which is a candidate and
+  none of which has been censused:
+  - the boards posture — **skates parallel · forearm and hip · not the point of your shoulder**
+    (five carriers found: `body_contact_and_battles.md:712`, `playing_without_the_puck.md:293`,
+    `risk_management.md:408`, `zone_entries.md:481`, `:513`; `skating.md:587` was the outlier and is
+    now repaired for two of the three parts)
+  - the chin — **tuck backwards to the ice · head up forwards into the boards**, where carrying one
+    half alone is the dangerous direction
+  - the concussion red flags, whose count has been wrong at four consecutive levels in this project
+- [ ] ⚠️ **The census is a CANDIDATE GENERATOR. Only reading decides.** A missing part is sometimes
+  correct — `skating.md` should not carry the shoulder limb until its own body does, and the
+  reviewer was right to refuse it. **The fix for a real gap is BODY FIRST, then the block.**
+- [ ] ⚠️ **Check `--near` before editing any block this opens.** The `skating.md` repair fitted only
+  because dropping a duplicated clause paid for the missing limb; keeping both measured **215/200**.
+  **A census that generates ten of these will generate ten cap fights, and the block that loses one
+  evicts a fact silently.**
+
+### ⚠️ The census has now been run once, and it is NOT a tool yet
+
+A first pass over the boards posture ran on 19 September 2026 as an inline script, not a committed
+one. ⚠️ **NO FIGURE FROM IT IS WRITTEN HERE.** The owner is
+[`section_split_pilot_2026-09-18.md`](../reviews/section_split_pilot_2026-09-18.md) **Addendum 49**,
+which tabulates what it measured, names the two candidate classes it opened, and records that its
+own shoulder-carrier count is **the third estimate in one thread and the third to run low.**
+
+- [ ] ⚠️ **It is not reproducible.** It was an inline `python3 - <<'PY'` in a session that will end.
+  **A checker that lives in a session is a measurement nobody can repeat** — which is precisely why
+  `check_readability_census.py` was written, after four censuses were run from a scratchpad and a
+  commit gate pointed out that no figure in that section would survive the session. **Same defect,
+  same round, and this time it is known at the moment of writing.**
+- [ ] **Its positive control is thin.** Exactly one class it tested came back empty — *carries
+  `skates parallel` without `forearm`/`hip`* — and it came back empty **because Addendum 48 had just
+  emptied it.** ⚠️ **A control that passes because you fixed it five minutes earlier tells you the
+  regex matches, not that the method finds things.** It needs a control it did not author.
+- [ ] ⚠️ **It is a REGEX OVER EXTRACTED LINES and it reports word shapes, not meaning.** The
+  seven-line "forearm without parallel" class is expected to be mostly correct, and one of its
+  members is the no-time-to-turn fallback, **where turning is unavailable by definition.** **Read
+  every hit; a sweep here writes a false instruction into correct sentences** — which is how round 44
+  manufactured a divergence that did not exist.
+
+---
+
+## Workstream 20: two corpus-level questions raised by the `skating.md` boards block, deliberately not fixed there
+
+**Both were found by the `safety-reviewer` that BLOCKED the `skating.md:587` commit
+([Addendum 50](../reviews/section_split_pilot_2026-09-18.md)). Both were flagged and left alone,
+correctly — a line-level repair is the wrong place to settle a corpus-wide phrasing question.**
+
+### 20A — the corpus says *"hip"*; USA Hockey says *"upper thigh (hip area)"*
+
+- [ ] **The load-bearing surface the primary source names is the UPPER THIGH, glossed as the hip
+  area.** The corpus's most faithful rendering is `body_contact_and_battles.md:712` — *"forearm and
+  upper thigh to the wall"*. ⚠️ **The short form points at a smaller, bonier landmark than the one
+  the source teaches**, and a listener aiming at the hip joint rather than the thigh is aiming at
+  bone.
+- [ ] ⚠️ **It is settled house phrasing across 40+ sites and changing it is a corpus-wide edit**, so
+  it needs a decision before any repair, not a sweep. **Two questions the decision turns on, neither
+  answered:** does the corpus's *"hip"* mean the joint or the region, and does any other primary
+  source use the short form? ⚠️ **NO COUNT IS WRITTEN HERE — the "40+" is the reviewer's estimate and
+  nobody has censused it.** Workstream 19's census is the instrument.
+- [ ] ⚠️ **Do not sweep this string.** `hip` appears in the ice-fall limb too (*"onto your hip, thigh
+  and the side of your backside"*), where it is **correct and means something different** — that is
+  the fleshy landing surface, not the wall-contact surface. **A regex cannot tell the two apart.**
+
+### 20B — the ice-fall limbs in `skating.md:583-592` carry no case marker
+
+- [ ] **`:584`, `:585`, `:586` and `:589` state the ice-fall technique with nothing marking it as the
+  ice case.** Voiced alone — which is how every facts line reaches a listener — `:585` (*"Go to the
+  side, onto your hip, thigh and the side of your backside"*) **could be applied at the boards**,
+  where it is the wrong answer.
+- [ ] ⚠️ **Pre-existing, NOT introduced by the 19 September repair**, and recorded here so it is not
+  later attributed to it.
+- [ ] ⚠️ **It cannot be repaired by addition: the block is at 8/8 against `MAX_COACHING_FACTS`.**
+  Any fix is substitution inside the four lines, or a section split. **Check `--near` before touching
+  any of them**, and remember that `:588` in the same block sits at six characters of headroom.
+- [ ] **The block's gate discipline has already produced one critical** — see Addendum 50, where
+  removing a tight gate left a loose one as the block's only gate. ⚠️ **Treat any edit in this block
+  as gate-critical, and render it rather than judging it from the page.**
+
+---
+
+## Workstream 21: the podcast scripts have overtaken the corpus, and nobody owns the direction
+
+**Opened 19 September 2026 by the first `rules-verifier` pass ever run on a podcast script**
+([the episode-three record](../reviews/conditioning_and_recovery_podcast_no_go_2026-09-19.md)). It
+is a coordinator question and the reviewer said so rather than guessing:
+
+> *"Several provenance rows say a claim is 'not in the source document'… meaning the script states
+> rules the corpus document does not. **If the script is right, the corpus document is short. If the
+> script is wrong, the defect is new text nobody reviewed.** I did not open the corpus document."*
+
+⚠️ **Both branches are live and they need opposite responses**, which is why no agent can close this
+alone: **a script row that is right is a PROPAGATION GAP in `content/` — the corpus owes the
+addition.** **A script row that is wrong is unreviewed new text in a file about to be voiced.**
+
+### The rows
+
+- [ ] **Enumerate every `provenance.md` row across all three episode scratchpads marked *"not in the
+  source document"*, and classify each one.** Four are already identified in episode three
+  (`provenance.md:33`, `:34`, `:209`, `:210`). ⚠️ **NO TOTAL IS WRITTEN HERE — episodes one and two
+  have never been examined for this at all**, and episode one is being re-scripted from scratch as
+  this row is written.
+- [ ] ⚠️ **A script is NOT a reviewed layer.** `content/` gets `rules-verifier`, `source-verifier`,
+  `content-reviewer`, `facts-reviewer`, `safety-reviewer` and a commit gate. **A script gets whatever
+  the coordinator happens to dispatch** — and episode three reached its second grading before anyone
+  ran a rules pass on it. **A claim that exists only in a script has had strictly less scrutiny than
+  one in the corpus, and it is the one being read aloud.**
+- [ ] **Decide the direction of authority and write it down.** The corpus is the product; the scripts
+  derive from it. ⚠️ **So a script claim absent from its source document is by default a DEFECT IN
+  THE SCRIPT, and promoting it into `content/` requires the full gate** — not a copy. **But the
+  default must not become a licence to delete**: non-negotiable 3 applies, and at least one of the
+  four episode-three rows is a rule the reviewer located verbatim in a primary book.
+- [ ] ⚠️ **`source-verifier` has NEVER been run on any script.** The episode-three rules pass
+  declared the research layer — the meta-analyses, the retracted study and its retraction notice,
+  the cohorts, the position statements, the VO2 and specialisation figures — **entirely unverified,
+  and called it *"the larger half"* of that script.** Two effect sizes carrying the script's bridge
+  from evidence into its rules section are verified **by nobody**. **This is a missing dimension, not
+  a backlog row.**
+
+### ⚠️ And a provenance table can be right and useless at the same time
+
+Episode three's table cites `hc_layout.txt:4772-4773` for Hockey Canada's match-penalty trigger.
+**Those lines are Rule 7.4, Charging.** The rule cited is at `:4745-4746`. **The quoted text is
+correct; the pointer lands on the wrong rule.**
+
+- [ ] ⚠️ **No checker reads these tables.** A right quote with a wrong pointer **passes everything and
+  fails the next reader**, who greps the pointer, finds an unrelated rule, and either reports a
+  fabrication that is not there or repairs a claim that was sound. ⚠️ **It is the inverse of the
+  `check_quote_drift.py` blind spot found in the same file the same day** — there, the characters
+  matched and the *clause the quotation came from* was wrong. **Both are invisible to a character
+  comparison, and both live in the evidence record rather than the text.**
+- [ ] **Decide whether provenance pointers are worth a checker.** They are line numbers into files on
+  disk; a tool could verify that the quoted string actually appears at the cited line. ⚠️ **If one is
+  written it is a WORKLIST** — a pointer off by two lines after an extraction is re-run is not a
+  defect — **and it must be named in `CLAUDE.md`'s `scripts/` block in the same session, which that
+  list has failed four times.**
+
+---
+
+## Workstream 22: the wrong case's limb, spliced into the boards approach — in `content/`, not only in a script
+
+**Found 19 September 2026 by the agent repairing podcast episode three, in a file it did not own, and
+correctly reported rather than fixed. Verified by the coordinator against both documents.**
+
+### The defect
+
+`content/off-the-ice/conditioning_and_recovery.md:192`:
+
+> *"learning how to take and absorb a hit and how to approach the boards with your **head up and hands
+> in front** (see Body Contact and Battles)"*
+
+(⚠️ **The link markup is stripped in the quotation above on purpose — quoted verbatim it resolves
+relative to THIS file and `check_links.py` reports a broken target that is not broken in the
+source.**)
+
+⚠️ ***"Hands in front"* is the limb of a DIFFERENT CASE.** `body_contact_and_battles.md:772`:
+*"**Chest and shoulder first, hands in front.** Keep your hands and stick in front of your body, not
+out to the side"* — **that is open-ice contact, not the boards.**
+
+⚠️⚠️ **And the limb it displaced is the one that protects the cervical spine.** The owner document
+treats *"head up, **chin off your chest**"* as **one inseparable non-negotiable** (`:21`, `:746`) and
+gives the mechanism: a chin tucked to the chest straightens the cervical spine, and a vertebra can
+fracture at walking speed.
+
+**So the sentence pairs a correct half-cue with a correct limb from the wrong case, and the result
+reads complete.** ⚠️ **It is the exact shape that graded episode three NOT SAFE TO VOICE — and the
+episode inherited it from HERE.** **The script has been repaired; the corpus has not.**
+
+### The rows
+
+- [ ] ⚠️ **This is NOT a script defect that leaked into `content/`. It is the reverse, and that matters
+  for how it is fixed:** the podcast derived the defect faithfully from its source. **Repair the
+  source. Then check whether any other episode carried it.**
+- [ ] ⚠️ **The cross-reference is load-bearing and a listener cannot follow it.** For a READER the
+  pointer to Body Contact and Battles supplies the rest; **for a listener every cross-reference is a
+  deletion**, and what reaches them is *"head up and hands in front"* with the chin limb nowhere.
+  **The fix has to work in both layers.**
+- [ ] **Check the propagation, not just the line.** Body → facts blocks → Common Mistakes → Key
+  Takeaways. ⚠️ **A layer test, not a document grep — body ✓ does not imply block ✓.**
+- [ ] ⚠️ **Do not sweep `hands in front`.** It is **correct** at `body_contact_and_battles.md:772` and
+  wherever the case is chest-and-shoulder contact. **A regex cannot tell the two cases apart, and a
+  sweep would delete a correct instruction.**
+- [ ] **Still open from the previous round and in the same file:** `:210`'s trigger-less penalty
+  ladder.
+
+---
+
+## Workstream 23: the emergency-number guard is narrower than an author will assume, and it bit twice in one paragraph
+
+**`scripts/md_to_speech.py`'s `_emergency_number` guard exists because `999` voiced as *"nine hundred
+and ninety-nine"*. Its own docstring calls it *"A SAFETY DEFECT, NOT A TIDINESS ONE"* and records an
+open row about its scope.**
+
+⚠️⚠️ **That open row is about TIGHTENING the guard. This is the case for WIDENING it, and it is a
+different row.**
+
+**Measured 19 September 2026, by the agent repairing episode three, in the render:**
+
+> ***"`999` voiced as 'nine hundred and ninety-nine' in the closing recap, and again in my body summary
+> 'So: 999 for a red flag, 111 within twenty-four hours' — both numbers mangled in the one sentence a
+> listener is most likely to act on."***
+
+**The guard fires on two shapes: a dialling verb before the number, or the number followed by
+`in`/`across`/`from`/`now`/`immediately`.** **A bare `999` in a summary sentence matches neither.**
+
+- [ ] ⚠️ **The lesson is not "authors should remember".** The author **had read the rule**, had written
+  two correct instances four lines earlier using the `9-9-9` workaround, **and still wrote the broken
+  sentence.** ⚠️ **Knowing the rule did not prevent it. Only the render caught it.** **A guard that
+  depends on the author remembering to phrase around it is not a guard.**
+- [ ] **Consider a `--report` warning on a bare `999`/`111`/`112`/`911`** rather than widening the
+  substitution. ⚠️ **A warning cannot mangle anything**, where a wider substitution can start reading a
+  sample size of 111 as a phone number — **which is precisely the failure the docstring's existing row
+  is worried about, in the other direction.** **The two rows constrain each other and must be decided
+  together.**
+- [ ] ⚠️ **NOT CHANGED, DELIBERATELY — a shared tool is shared state and agents were live.** **Change a
+  tool between waves, not during one**, and tell every live agent what changed.
+- [ ] ⚠️ **Whatever lands, the verification is an EAR TEST.** Reading the SSML tells you the
+  substitution fired; **it does not tell you the voice got it right.**
+
+---
+
+## Workstream 24: `skating.md`'s acceleration section has no gaze limb, and the episode inherited the gap
+
+**Found 19 September 2026 by the `safety-reviewer` on podcast episode one v2, which flagged it
+explicitly as a finding about the SOURCE rather than about the script:**
+
+> *"This gap is in `skating.md` too. §Acceleration and the First Three Steps and its facts block carry
+> no head or eyes limb either. The script inherited it. That is a finding about the SOURCE document,
+> and it belongs in the plan independently of what happens to this episode."*
+
+**Confirmed by the coordinator.** A word-boundary sweep of `{head|eyes|gaze|look}` over
+`content/technique/skating.md:303-326` returns **one hit, and it is *"what it looks like"*.** The
+facts block returns **zero**.
+
+### Why it matters here specifically
+
+⚠️ **That section teaches the only maximal-effort, maximum-lean technique in the document** — a
+torso lean of roughly forty-five degrees, *"nose over toes"* — **and it is the technique a player uses
+to approach a loose puck in a corner.** **At that lean with no gaze cue, the head follows the torso.**
+
+⚠️ **The document's own sourced threshold is not a tucked chin — it is *"a head that is simply looking
+down"***, and the mechanism is USA Hockey's: *"almost all on-ice cervical spine injuries have been due
+to the head being slightly flexed (head down) while making head-on contact with the boards or goal
+post… it can occur at walking speed."*
+
+### The rows
+
+- [ ] ⚠️ **The reviewer was careful about what it was NOT claiming, and the repair must be too:**
+  *"I am NOT claiming 'nose over toes' is a head-down instruction — it is a torso cue, and I will not
+  invent a hazard. I am claiming that the one section that most invites a dropped gaze is the one
+  section with no gaze limb."* **Do not write a sentence implying the lean is unsafe. The lean is
+  correct and sourced. The torso goes forward; the eyes do not.**
+- [ ] **The document already does this correctly in the adjacent case, and that sentence is the
+  model** — §Tight turns tells a reader to keep head and eyes up *"because turning is one of the
+  moments where players reflexively drop their gaze"*. **Acceleration has no equivalent.**
+- [ ] ⚠️ **Check `--near` before touching the block, and propagate with a LAYER TEST** — body ✓ does
+  not imply block ✓.
+- [ ] ⚠️ **Sweep the OTHER fast sections with the same method before closing this.** The reviewer
+  named where it would look next and why: **§The forward stride and §Backward skating**, *"where a
+  player is travelling fast with their hips open, and I checked only for head and chin."*
+
+### ⚠️ How it was found, which is the transferable part
+
+> *"The two findings I am proudest of were found by a MECHANICAL SWEEP, not by reading — and reading
+> had already missed them. I read §Acceleration twice for sense and saw nothing. The grep returning
+> zero across two whole chunks is what made it visible. **That tells me my reading pass is unreliable
+> for absence.**"*
+
+⚠️ **A reading pass finds what is wrong. It does not find what is missing.** **This corpus's omission
+passes have now been declared heading-dependent by four consecutive reviewers in one day** — each
+saying it found the omission *because a heading let it enumerate* — **and this is the first one found
+by a sweep for a word that was simply not there.** ⚠️ **That is a method, and it is cheap: pick the
+limb, pick the sections that most invite its absence, and grep for the absence rather than reading for
+the presence.**
+
+---
+
+## Workstream 25: `skating.md:21` states an unsourced relative-contribution claim that two sibling documents hedge with a citation
+
+**Found 19 September 2026 by the `content-reviewer` on podcast episode one v2, and it is a finding
+about the CORPUS rather than the script** — recorded in
+[the episode record](../reviews/skating_podcast_v2_no_go_2026-09-19.md) as C4. **Confirmed by the
+coordinator against all three documents.**
+
+### The three sentences
+
+| document | what it says |
+|---|---|
+| `content/technique/skating.md:21` | *"What makes a skater fast is technique rather than what they were born with, so it responds to deliberate practice at any age."* ⚠️ **No source and no label — not here, not in the Sources trailer, not in the `Not verified` block.** |
+| `content/off-the-ice/mental_game.md:575` | ⚠️ Flagged *"**This one is genuinely misrepresented and worth correcting**, because it does real damage to how players think about their own progress"* — **Macnamara, Moreau & Hambrick (2016): deliberate practice accounts for 18% of the variance in sports performance (95% CI 12–25%)**, leaving roughly four-fifths to starting age, **physical attributes**, coaching quality, **genetics** and injury history. **Cited in full in its trailer with a DOI.** |
+| `content/off-the-ice/practice_and_development.md:80` | *"Some of the remaining 82% is **genetics**… Practise because it reliably moves *you* forward, not because it will make you a specific thing."* |
+
+### ⚠️ What this is NOT
+
+- [ ] ⚠️ **NOT a flat contradiction, and the reviewer was explicit about that.** The constructs differ
+  — Macnamara measures variance in sports performance ACROSS ATHLETES; the skating sentence is about
+  what makes a skater fast. **Do not report it as one.**
+- [ ] ⚠️ **NOT a deletion.** Non-negotiable 3: never delete a claim merely because it is unsourced.
+  **Source it or label it.**
+
+### What it IS
+
+⚠️ **The shape the style guide predicts under *"claims that 'everyone knows' are the least audited"*:
+an unsourced relative-contribution claim that reads as common knowledge, while the document that owns
+the underlying question hedges hard and cites a meta-analysis.**
+
+⚠️ **And it is `skating.md`'s second sentence**, which in the rendered audio is in the opening seconds.
+**The episode amplified it into the framing for the whole hour** — *"here is the part that ought to
+change how you think about practice"* — **which is what made it visible. Nobody had looked at it in
+twenty rounds.**
+
+### The rows
+
+- [ ] **Reconcile against `practice_and_development.md` and `mental_game.md` rather than against
+  memory**, and decide whether `skating.md` should carry a pointer, a label, or the figure itself.
+  ⚠️ **If it carries the figure it inherits the owner's qualifications — the CI, and the list of what
+  the other four-fifths contains.** **A number copied out of its owner goes stale silently.**
+- [ ] ⚠️ **Check the LAYERS before writing anything.** `skating.md:21` is in `## Overview`. **Whatever
+  lands has to survive being voiced alone**, and the claim as it stands is the kind that reads as
+  settled fact in a standalone `<p>`.
+- [ ] ⚠️ **Check whether the claim has PROPAGATED.** It is the sort of sentence that gets restated in
+  openers. **A layer test, not a document grep.**
+- [ ] ⚠️ **`mental_game.md` records that the dispute is LIVE and that Ericsson replied.** **Do not
+  present the 18% as settled either** — that would be the same defect pointed the other way, and this
+  corpus has already shipped three disclosures that made it look *less* supported than it is.
+
+---
+
+## Workstream 26: nine of thirty-two `604(d)` citations carry no trigger
+
+**Found 19 September 2026 by the agent repairing `conditioning_and_recovery.md`, in a corpus-wide
+census it ran after finding the same defect twice in the file it owned.**
+
+**USA Hockey Rule 604(d)'s trigger is *"recklessly endangers an opponent"*.** ⚠️ **`604(d)` appears
+**32 times** across `content/`; **9 lack the trigger**.** Two were in the repaired file and are fixed.
+**The remaining seven:** `team_play_and_culture.md:650` · `on_ice_communication.md:259`, `:552` ·
+`body_contact_and_battles.md:1126`, `:1584` · `center.md:625` · `defensive_zone_coverage.md:488`,
+`:778`.
+
+- [ ] ⚠️ **DO NOT SWEEP. Some may be legitimately scoped** — a line discussing the penalty tier rather
+  than the offence does not need the trigger. **They need reading, not a regex.**
+- [ ] ⚠️ **The defect is what a trigger-less ladder sounds like VOICED ALONE:** a penalty presented as
+  following from the act rather than from the act's recklessness. **In the repaired file, `:210` sat
+  BELOW its own neighbour at `:208`, which already carried the trigger** — so the two adjacent lines
+  disagreed about what the rule requires.
+- [ ] **Hockey Canada's parallel triggers are the comparison and they differ:** 7.3(b) *"based on the
+  degree of violence of the impact"* plus mandatory *"[i]f a player is injured"*; 7.3(c)
+  *"deliberately attempts to or deliberately injures"*. ⚠️ **604(e) is *"may also be assessed"* and
+  carries NO intent limb — the books diverge here and a line that flattens them is a separate defect.**
+- [ ] **Check the layers, not the line.** Nine hits is a body count; **the facts blocks and summary
+  layers have not been censused for this at all.**
+
+---
+
+## Workstream 27: `check_quote_drift.py` produces a SILENT FALSE PASS outside the corpus tree
+
+**Found 19 September 2026 by the agent repairing podcast episode three, which ran the tool, got a
+clean result, disbelieved it, and reproduced the cause.**
+
+**`scripts/check_quote_drift.py` builds its source set from
+`dirname(abspath(DOC))/../../sources/*.txt`.** ⚠️ **That path is correct for `content/<dir>/<doc>.md`
+and for `project/reviews/<doc>.md` — the coordinator verified the second — and WRONG for anything
+whose parent is not two levels below the repository root.** **For a script in a session scratchpad it
+resolves to a directory that does not exist, the glob returns zero files, and the tool prints a
+result.**
+
+⚠️⚠️ **Combined with its second constraint the failure is silent: it extracts only `*"…"*` fragments,
+and a SPEECH SCRIPT HAS NONE — so it prints `clean=0 flagged=0 notfound=0` and exits as though it had
+checked something.** **An agent that runs it on a podcast script and believes it has verified nothing
+at all.**
+
+- [ ] ⚠️ **NOT CHANGED — a shared tool is shared state and agents were live.** **Change a tool between
+  waves, not during one.**
+- [ ] **The minimum fix is a REFUSAL, not a relocation:** if the source glob returns zero files, say so
+  and exit non-zero. ⚠️ **The precedent is `check_zones.py`, which *"says so and exits 0 rather than
+  pretending a missing directory is a pass"* — and `check_absolutes.py`, which now *"refuses to
+  certify the caption layer"* rather than passing on stale text.** **Both were written after a silent
+  false pass. This is the third.**
+- [ ] **Decide separately whether it should scan speech scripts at all.** ⚠️ **A script's quotations
+  are not in `*"…"*` form, so the tool cannot see them even with sources loaded** — which is why the
+  repairing agent wrote two disposable scanners in its own scratchpad instead. **Those found two real
+  defects the tool structurally cannot.**
+- [ ] ⚠️ **If a `--strict` or a refusal lands, name it in `CLAUDE.md`'s `scripts/` block IN THE SAME
+  SESSION.** That list has gone short four times.
+
+---
+
+## Workstream 28: two USA Hockey lean permissions, ten lines apart, and the corpus quotes one of them
+
+**Opened by a premise the episode-three repair refuted — and the refutation's REASON is itself wrong,
+which is the point of this row.**
+
+**The agent reported that USA Hockey *"prints the Competitive Contact definition twice, with different
+wording"* — *"sole object of the contact"* against *"sole objective of the two players"*.
+⚠️ **The coordinator read `usah.txt:270-290`. They are not one definition printed twice. They are TWO
+DIFFERENT DEFINITIONS, ten lines apart:**
+
+| | wording |
+|---|---|
+| **Competitive Contact** (the definition) | *"reasonably allowed to lean into each other provided possession of the puck remains the **sole object of the contact**"* |
+| **Physical Engagement** (one of the *"acceptable examples"* listed beneath it) | *"allowed to reasonably lean into each other provided that possession of the puck remains the **sole objective of the two players**"* |
+
+⚠️ **So the agent's conclusion holds — the script's *"sole objective"* IS verbatim and IS in the
+Glossary — and its explanation does not.** **The two strings belong to two different terms of art,
+and a grep for either returns the other and looks like proof of drift in both directions.**
+
+- [ ] ⚠️ **Establish which of the two each corpus citation is quoting, and make it say so.**
+  **`body_contact_and_battles.md:1559` quotes this material and is the first place to look.**
+  **A citation that says *"the Glossary"* without naming the term does not tell a reader which
+  permission they have.**
+- [ ] ⚠️ **They are not interchangeable.** *Competitive Contact* is the category; *Physical Engagement*
+  is one named example inside it, alongside **Angling** and **Collisions** — and the Collisions entry
+  carries its own rule (*"No player is required to move out of the way of an oncoming player to avoid
+  an impact"*) that the corpus attributes elsewhere to the IIHF. **Check whether USA Hockey's version
+  is cited anywhere it should be.**
+- [ ] ⚠️ **A third agent will hit this and read it as drift.** **Record the distinction in the
+  citations, not only here.**
+
+---
+
+## Workstream 29: a British red flag no `content/` document carries
+
+**`grep -rn -iE 'lying rigid|motionless due to muscle' content/` returns NOTHING.**
+
+**The UK Concussion Guidelines' seizure red flag reads *"Seizure/convulsion **or limb twitching or
+lying rigid/motionless due to muscle spasm**"*. CRT6's flag is only *"Seizure, 'fits', or
+convulsion"*, and a player lying motionless is on CRT6 a **Visible Clue** — suspected concussion, come
+off — not a red flag.**
+
+⚠️ **So for a British grassroots player the same observation is an AMBULANCE and for CRT6 it is not.**
+**Podcast episode three now carries this limb. No document in the corpus does.**
+
+- [ ] **Decide the owner.** `conditioning_and_recovery.md` holds the concussion material and
+  `uk_rules.md` holds the British floor. ⚠️ **The script has overtaken the corpus again — Workstream
+  21's shape, and this is the clearest instance yet: a safety limb that exists ONLY in a scratchpad
+  file.**
+- [ ] ⚠️ **Read `ukcg.txt` POSITIONALLY.** Its headings are letter-spaced and a flattened phrase search
+  under-counts.
+- [ ] **Check the layers.** The British red-flag differences may be partially carried already;
+  `conditioning_and_recovery.md:261` is where the list lives.
+
+---
+
+## Workstream 30: *"not the point of your shoulder"* is voiced alone at two sites, and the reason it is narrow lives in a trailer
+
+**Found 19 September 2026 by the agent repairing the Case 3 gate in
+`content/technique/body_contact_and_battles.md`, which was asked to confirm a coordinator claim and
+found it HALF WRONG.**
+
+### ⚠️ The coordinator's claim, corrected
+
+**I wrote that `body_contact_and_battles.md:754` reconciles two USA Hockey sentences** —
+`ibc.txt:692` *"Avoid hitting the boards with the shoulder"* against `ibc.txt:1453` *"Never hit the
+boards or glass with the **tip** of your shoulder"*.
+
+⚠️ **It does not.** **`:754` reconciles USA Hockey against HECC** — HECC's *"use your hands, arms,
+**shoulders** or facemask to cushion the impact"* against USA Hockey's *tip* sentence — concluding
+*"the safe course is the narrower one: no part of the shoulder leads."*
+
+⚠️⚠️ **The USA-Hockey-INTERNAL tension is at `:742`, and there it is NOT RECONCILED AT ALL:** *"USA
+Hockey says it twice: 'Avoid hitting the boards with the shoulder' and 'Never hit the boards or glass
+with the tip of your shoulder'"* — **presented as one body saying the same thing twice, when the first
+sentence is materially BROADER than the second.**
+
+**Nobody is endangered by that** — the corpus lands on the narrow-is-safer conclusion at `:754`
+anyway, which covers `:692`. ⚠️ **But the two reconciliations are distinct and only one is written
+down.**
+
+### The real finding
+
+**`skating.md` uses the narrow house phrase *"not the point of your shoulder"* at five sites, and the
+reason it is safe to be narrow is not at any of them.**
+
+⚠️ **Two of the four SPOKEN sites — `:121` and `:587` — are ` ```facts ` lines, voiced ALONE in their
+own `<p>` with a 300 ms break either side.** **Voiced alone, *"not the point of your shoulder"* can be
+heard as LICENSING THE REST OF THE SHOULDER.**
+
+**The document is not silent, but neither pointer reaches a listener:**
+
+| where | what it says | reaches a listener? |
+|---|---|---|
+| `skating.md:604` | quotes `ibc.txt:692` — the **broader** sentence — as authority for the narrow phrase | ✓ voiced, ⚠️ **and it is the mismatch, unlabelled** |
+| `skating.md:957` | Sources trailer: the reconciliation *"is stated where the warning lives… in Body Contact and Battles"* | ✗ **trailer** |
+| `skating.md:945` | the three-case rule is *"owned by and quoted verbatim"* there | ✗ **trailer** |
+
+⚠️ **`check_pointers.py` exists precisely to flag a spoken sentence pointing at a layer the listener
+never hears. Here the pointer is IN the unheard layer, which is worse — nothing points at it at all.**
+
+### The rows
+
+- [ ] **Decide whether the four spoken sites need a cue that the narrow phrase has a safer reading
+  behind it** — ⚠️ **or whether the phrase itself should widen.** **The corpus's own conclusion is
+  *"no part of the shoulder leads"*, which is what `:754` settles; the house phrase is narrower than
+  the conclusion the corpus reached.**
+- [ ] ⚠️ **Check `--near` first.** `:587` is at **172/200**; `:121` was not measured. **And
+  `skating.md`'s `### How to fall` block is at 8/8 against `MAX_COACHING_FACTS`, so nothing can be
+  ADDED there — any change is substitution.**
+- [ ] **Reconcile `:742` in the owner, or label the two sentences as broader and narrower.** ⚠️ **Do
+  not delete either — both are USA Hockey's.**
+- [ ] ⚠️ **Check whether `:742`'s unreconciled *"says it twice"* has propagated anywhere as a licence
+  for shoulder-first contact.** **Nobody has looked.**
+- [ ] ⚠️ **Do NOT sweep the string.** *"The point of your shoulder"* is correct wherever the
+  surrounding prose carries the reconciliation, and a regex cannot tell.
