@@ -1529,3 +1529,46 @@ not. **Two episodes: $2.85 total.**
 **NOBODY HAS LISTENED TO EITHER EPISODE.** Duration is `ffprobe`. ⚠️ **Whether a certification mark
 is intelligible — `CSA` and `CE` are NOT in `SPELL_OUT` and are voiced as bare letters — and whether
 a prohibition inverts on a misplaced stress, are decided at synthesis and can ONLY be judged by ear.**
+
+---
+
+## ⚠️ `NIHL` and `WNIHL` are absent from `SPELL_OUT`, and a British listener pays for it
+
+**Found 19 September 2026 by the `safety-reviewer` on episode three, in the file it was reading,
+outside its brief — and correctly filed rather than fixed:** *"a tooling matter for the coordinator,
+not an edit to this script."*
+
+**Measured at `scripts/md_to_speech.py:465`.** `SPELL_OUT` currently holds
+`SDHL, SHL, CARHA, ASHL, IIHF, CDPA, ADM, PDO, CI, SD, RR, OZ, DZ, NZ`. **`NIHL` and `WNIHL` are in
+neither it nor `STANDARDS_BODIES` (`:459`).** So Polly is handed a pronounceable four-letter string
+and will say it as a **word**.
+
+⚠️ **The cost is specific and it is a safety cost, not a polish one.** The British sections of these
+episodes distinguish competitions whose names are near-homophones once spoken — **NIHL National**
+against **National League Divisions 1 and 2** — and the whole point of those passages is that the
+checking rules DIFFER between them. **A listener who cannot tell which competition was named cannot
+apply the rule that was attached to it.**
+
+- [ ] ⚠️ **NOT CHANGED, DELIBERATELY. A shared tool is shared state, and five agents were live.**
+  `CLAUDE.md`: *change a tool between waves, not during one* — in round 59 a mid-round edit to a
+  checker changed its classification output under an agent that had run it twice, and **no finding in
+  any report could rest on that tool's output that day.** ⚠️ **Do this between waves and tell every
+  live agent, or do not do it.**
+- [ ] ⚠️ **Do NOT add `HECC` while in here.** It is voiced as *"heck"* **on purpose** and must stay
+  bare. ⚠️ **And `<say-as>` is NOT executable from markdown** — the renderer escapes it and voices the
+  tag literally — **so `SPELL_OUT` and `STANDARDS_BODIES` are the ONLY controls that exist.** A
+  content-side fix is not available.
+- [ ] **Check what else is missing before editing the tuple**, rather than adding two entries and
+  closing the row. **Candidates named in this corpus and not in either list:** `WNIHL`, `NIHL`,
+  `CE`, `EIHL`, `BUIHA`. ⚠️ **This row originally listed a SIXTH, `WSHL`, which occurs NOWHERE in
+  this repository except in the row naming it** — caught by the commit gate. **A candidate list
+  written to dispatch a future agent is a brief, and a phantom in it sends that agent looking for
+  something that does not exist.** ⚠️ **NO COUNT AND NO VERDICT IS WRITTEN HERE — read the tuple and
+  grep the corpus.** Each one needs deciding separately: **a string that is already pronounced
+  correctly gets WORSE when spelled out**, which is the failure mode in the other direction and the
+  reason this list is short rather than exhaustive.
+- [ ] ⚠️ **Whatever changes, the verification is an EAR TEST, not a diff.** `tts_sample.py`
+  synthesises one script on every engine a credential exists for. **Reading the SSML tells you the
+  tag was emitted; it does not tell you the voice got it right** — and the episode-three reviewer
+  declared exactly this limit on its own pass: *"how they land in a synthesised voice… is an ear test
+  nobody has run."*
