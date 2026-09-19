@@ -887,6 +887,537 @@ waived**.
   rendered page and the audio pipeline's actual output remain unverified
   beyond `md_to_speech.py`'s dry-run report.
 
+## Workstream 8: a `Rule:` line AT CAP, and the pipe that hid it — 18 September 2026
+
+⚠️ **`content/technique/body_contact_and_battles.md:1375` is a `Rule:` line at 300/300 — ZERO
+characters of headroom.** Five more lines in the same file sit at one character left: `:586`,
+`:708`, `:765`, `:1124`, `:1125`. ⚠️ **33 lines in this file are within six characters of a cap.**
+
+⚠️ **ANY ordinary edit to those blocks breaks the build or forces an eviction.** This is the exact
+condition `--near` exists to warn about: a block at `HARD_MAX` once evicted a rulebook fact into a
+`Technique:` line, where — voiced alone — a mandatory give-ground duty read as a coaching
+preference, **and every checker passed.**
+
+⚠️ **NO REPAIR IS PRESCRIBED HERE.** A line at cap is not a defect; it is a line with no room. **The
+row exists so the next agent editing this file is told BEFORE it starts**, not after.
+⚠️ **TRY SUBSTITUTION FIRST — naming a thing is often shorter than pointing at it. It paid three
+times in this round**, once taking a line from 294 to **287** characters, so the corrected line was
+shorter than the wrong one. **Never trade out a hedge, a citation or a scope flag to make room.**
+
+### ⚠️ How the coordinator missed this, and the trap generalises
+A brief stated this file had *"six lines within 6 characters of their cap"* and named three at
+294/300. **The real figure was 33, and the named three were the LEAST constrained of the set.**
+
+⚠️⚠️ **The cause was `check_facts.py --near | tail -25`. `--near` SORTS ASCENDING BY REMAINING
+HEADROOM — so `tail` shows the SAFEST lines and scrolls the at-cap ones off the top. Piping this
+tool to `tail` INVERTS ITS MEANING.** Use `head`, or no pipe.
+
+⚠️ **The damage was not a wrong number — it was a MISAIMED AGENT, pointed away from the only line
+with zero headroom.** ⚠️ **Second instance this round of a correct tool whose signal was destroyed
+by the coordinator's shell** (the other: reading a tool's empty output as a pass while it printed
+usage). **Both times the tool was right and the pipeline was wrong.**
+
+## Workstream 9: the goaltender's own document does not tell them what THEY can be penalised for
+
+⚠️ **CRITICAL, pre-existing, and DELIBERATELY NOT BUNDLED into today's commit.** Found by a
+`facts-reviewer` layer test; the repair is blocked at `HARD_MAX` and needs a structural decision.
+
+### The defect
+**NHL/IIHF Rule 69.4's third paragraph has two halves.** The first penalises an attacker who stops
+a goalkeeper returning. The second penalises **the goalkeeper** — `sources/nhl_rules.txt:7233-7236`:
+*"Similarly, the goalkeeper may be penalized, if by his actions outside of his crease he
+deliberately interferes with an attacking player who is attempting to play the puck or an
+opponent."*
+
+⚠️ **A concept layer test over all 841 blocks / 5,659 facts found 28 lines across 12 documents
+touching 69.4 outside the crease. EVERY ONE is written from the attacker's side. The mirror half is
+in ZERO facts lines, corpus-wide** — including `positions/goaltender.md`, whose reader is the person
+the clause penalises.
+
+### ⚠️ Worse than silence: the block advertises completeness it does not deliver
+`goaltender.md:1098` — *"**Rule 69.4 cuts both ways outside your crease**… incidental contact is
+permitted while you play the puck… and one whose 'deliberate actions' stop you returning… 'may be
+penalized'"*. ⚠️ **Neither named "way" is the goalkeeper being penalised. Both are attacker-facing.**
+The body uses that same banner for the **correct** pair at `:1052` (*"It runs both ways, so know your
+own side of it"*), as does `rules_primer.md:701`. **The fact reuses the body's completeness banner
+over a different, incomplete pair — so a goaltender hears "cuts both ways", hears two protections,
+and concludes the rule is accounted for.**
+
+⚠️ **And `:1107` (*"The stick and body fouls bind you as they bind a skater"*) is limb 2 of body
+bullet `:1115`, whose limb 1 is the missing clause. The block took the *"not only"* and dropped the
+*"interference"*.** Voiced alone, `:1107` is measured against a proposition the listener never heard.
+
+### ⚠️ Why it was not repaired — and the agent was right not to
+Every route requires an **eviction**, which is forbidden:
+- Block `1097-1109` = **11 facts = `HARD_MAX`**. A twelfth fails `check_facts.py`.
+- Block `1064-1075` has the one free slot, but its own `Key:` line declares the section *"a
+  protection you have **rather than a restriction on you**"* — a goalkeeper-penalising fact does not
+  trace there.
+- Block `1022-1034`, whose body also carries the clause, is **also at 11**.
+- ⚠️ **Substitution was tested and FAILS here** — the first time in this round. A faithful single
+  line carrying both limbs measures **310/300**; all three limbs **346/300**. Getting under the cap
+  costs *"reasonable effort to avoid"*, *"after you played the puck out"*, or *"or an opponent"* —
+  **a hedge, a precondition and a scope flag.**
+- All 11 facts in the block were checked for an untraceable one to correct away. **There is none.**
+
+### ⚠️ THE COORDINATOR'S DECISION, RECORDED: SPLIT THE SECTION, AND NOT IN TODAY'S COMMIT
+`### What it changes about what you do` carries Rules **69.3, 69.4, 69.7, 64.1, 51.3 AND** the whole
+Table 14 / Table 16 matrix (6B, 6C, 6D, 6F, 6G, 6H) on one 11-fact block. ⚠️ **It is over capacity,
+and the item squeezed out is the only clause in the section that penalises its own reader.**
+
+**Decision: split the Table 14/16 rows into their own `###`** — they already cluster at `:1105`,
+`:1106`, `:1108` — **freeing three slots**, then add the three facts the reviewer sketched
+(⚠️ **sketches to be checked against the surrounding prose, NEVER strings to paste**).
+
+⚠️ **NOT BUNDLED, deliberately.** A heading split moves anchors and rewrites body structure; today's
+diff is about the 69.4 precondition and floor. **The `commit-gate` set this precedent earlier in the
+same round — *"file the row, do not bundle the edit"* — on the joint-attribution question.** A
+structural change needs its own review, its own `check_links.py` anchor pass, and its own gate.
+
+### ⚠️ An open question this raises about the CAP ITSELF, not the section
+The reviewer's closing observation, recorded rather than answered: **two adjacent blocks sitting at
+exactly `HARD_MAX` in the one section of the corpus where the reader is the person being penalised
+may be evidence about the cap rather than about the section.** ⚠️ **No change to `HARD_MAX` should be
+made on one document's evidence** — but the question is now asked, and it has never been asked before.
+
+### Cleared while here — do not re-open
+⚠️ **`rules_primer.md` is NOT defective and cannot be.** `grep -c '```facts'` returns **0**: it is
+excluded from the facts layer **by construction** — `scripts/check_facts.py:56` sets
+`IN_SCOPE_LAYERS = {positions, systems, technique, hockey-iq}` plus
+`IN_SCOPE_EXTRA = {foundation/on_ice_communication}`. **A document cannot omit a clause from a layer
+it does not have, and adding a block there would be a scope violation, not a repair.**
+⚠️ **`rules_primer.md:701` is CLEARED — for the fifth time, and this time by the right method.**
+Rendered through `md_to_speech.py`: it is chunk `159.ssml`, and the NHL quotation **with** its
+precondition is voiced **in the same `<p>`, three clauses before** the IIHF fragment, which is
+introduced by *"The IIHF writes the same paragraph at the same number."* **The four previous
+clearances were greps; this one read the spoken output. Stop re-opening it.**
+
+## Workstream 10: Hockey Canada 8.3(b) — a discretionary major the corpus may be flattening to a minor
+
+**Found 18 September 2026 by a repairing agent, in a file it owned, outside its brief.**
+
+`sources/hc.txt:6839` — **Rule 8.3(b)**: *"**A Major penalty and Game Misconduct penalty, at the
+discretion of the Referee**, based on the degree of violence of the impact, may be assessed to any
+player who interferes with an opposing player."* ⚠️ **The same discretionary tier CARHA 66(a)
+carries, and the corpus has just been corrected for understating CARHA's.**
+
+### ⚠️ Why it was NOT fixed where it was found, and that call was right
+The agent left its own sentence reading *"a minor"* at Hockey Canada, because **8.3(b)'s major is
+gated on *"degree of violence of the impact"* and the act under discussion involves NO CONTACT** —
+a gate CARHA's 66(a) does **not** have. **Sound for that sentence.**
+
+### The open work — a census nobody has run
+⚠️ **Anywhere the corpus states a bare minor at Hockey Canada 8.3 for a CONTACT interference,
+8.3(b) may make it an understatement.** **Understating a penalty tier is the direction that gets a
+reader ejected while believing they risked two minutes.**
+
+**Method:** find every site citing HC 8.3 or 8.3(a) with a penalty consequence; for each, decide
+whether the act it describes involves **contact** (8.3(b) live) or **position only** (8.3(b) gated
+out). ⚠️ **This is a READING task — the discriminator is the act described, not the rule number, so
+a grep produces candidates and nothing more.** ⚠️ **And run the LAYER TEST: a facts line voiced
+alone that says "a minor at Hockey Canada 8.3" for a contact act is the worst case.**
+
+⚠️ **NO COUNT IS WRITTEN HERE.** The corpus has been edited under this question all day.
+
+## Workstream 11: the screen permission stated bare — a measured backlog, and a FLOOR not a total
+
+⚠️ **A block-level layer test over all 39 documents: 18 blocks state the screen permission; NINE
+carry no returning-goaltender duty anywhere in the block.** Every line was **read**, not regex-hit.
+
+| Document | block | permission at |
+|---|---|---|
+| `foundation/on_ice_communication.md` | @253 | 263 |
+| `hockey-iq/time_and_space.md` | @244 | 253 |
+| `hockey-iq/time_and_space.md` | @437 | 447 |
+| `positions/center.md` | @385 | 386, 388 |
+| `systems/defensive_zone_coverage.md` | @482 | 483 |
+| `systems/offensive_zone_play.md` | @529 | 530 |
+| `technique/body_contact_and_battles.md` | @1081 | 1084, 1088 |
+| `technique/shooting.md` | @487 | 490 |
+
+⚠️ **The sharpest is `hockey-iq/time_and_space.md:253`** — it reproduces the exact string the style
+guide records as having been graded **CRITICAL**, *"and 69.4 takes the goal outside it for contact
+only"*, with no counterweight in its block.
+**Cheapest is `systems/defensive_zone_coverage.md:483`**, well under the 200 cap.
+
+### Two more classes the same pass found
+- ⚠️ **Duty present but ONLY under USA Hockey** — `positions/center.md:740` (KT8) and
+  `systems/offensive_zone_play.md:1128` (KT5) reach the returning goaltender solely through USA
+  Hockey Casebook 625 Sit. 9, **naming neither NHL nor IIHF 69.4.** ⚠️ **The IIHF is the British
+  reader's book, so under the two books this corpus is written to, both takeaways state the
+  permission without the limit.** ⚠️ **A mechanical duty-grep scores both CLEAN. Only reading finds
+  them.** `positions/winger.md:452`'s block has the same shape.
+- **Duty absent in any form** — `systems/zone_entries.md:1112` (KT11) and
+  `hockey-iq/playing_without_the_puck.md:930` (KT7). **Neither was named by the corpus-wide sweep
+  that preceded this one.**
+
+### ⚠️ A FALSE POSITIVE recorded so nobody "fixes" it
+`positions/goaltender.md` block @1022 matches on `:1029`, which is **Hockey Canada's passivity
+carve-out, not a screen permission. That block is correct as written.**
+
+### ⚠️ NINE IS A FLOOR, NOT A TOTAL — and the agent said so against its own result
+Its own first-pass pattern **scored `shooting.md:892` and `goaltender.md:1098` as gaps when both
+carry the duty** in wording it had not anticipated (*"returning to it"*, *"stop you returning"*).
+⚠️ **The corpus states this permission somewhere in prose no pattern has matched.**
+⚠️ **The coordinator proved the same point the same hour: its own census matched `road home` while
+the corpus says `way home` — ONE WORD — and reported two correct documents as defective.**
+
+⚠️⚠️ **METHOD FOR WHOEVER TAKES THIS: before trusting a NEGATIVE census result, take one
+KNOWN-POSITIVE site and confirm your pattern catches it. One command. It would have caught both
+failures above.**
+
+### Not to be swept blindly
+⚠️ **The fix is NOT "add the precondition everywhere."** See Addendum 44 in the round's review
+record: the attacker's layers take the **bare, unconditional** limit; ⚠️ **`goaltender.md`'s keeps
+the precondition, and must be EXEMPTED BY NAME from any precondition-stripping sweep** — for that
+reader, unconditional protection is the over-confident direction.
+
+## Workstream 12: `skating.md` drops the STICK from USA Hockey's spread-the-load instruction
+
+**Found 18 September 2026 by a podcast sweep — in the SOURCE, not the script.**
+
+⚠️ **USA Hockey's own wording, verified verbatim in `sources/ibc.txt` (flatten whitespace first):**
+- Teaching point — *"distribute the force of the impact over as wide a surface as possible,
+  including **putting your stick and gloves on the glass** to cushion the blow"*
+- Named Common Error — *"**Not getting your stick and gloves up and spread out on the glass**"*
+
+⚠️ **`content/technique/skating.md` says *"two forearms, two gloves, your side and your legs"* — and
+names no stick**, at `:121`, `:867` and `:919`.
+
+### ⚠️ Why this is a real gap and not a paraphrase
+**The stick is the longest object the player is holding.** In an instruction whose entire principle
+is *"spread the impact over the largest area you can"*, **the stick is the single biggest
+contributor to that area** — and USA Hockey lists its absence as a **named common error**, not as an
+optional extra.
+
+### ⚠️ TEN other documents already carry it — `skating.md` is the outlier
+`grep -rln "stick and gloves up\|stick and gloves on the glass\|gloves up onto the glass" content/`
+returns ten files including `core_principles.md`, `body_contact_and_battles.md`,
+`on_ice_communication.md`, `defender.md` and `winger.md`. ⚠️ **So this is not a corpus-wide omission
+— it is ONE DOCUMENT out of step with its siblings and with the primary they all cite.**
+⚠️ **RUN THE GREP; the file list will drift.**
+
+### ⚠️ Do NOT fix this in the podcast script
+The skating episode's `:107` reproduces `skating.md` **exactly** here. ⚠️ **Patching the script would
+put the episode AHEAD OF ITS SOURCE and break the provenance chain that makes the episode
+reviewable at all.** **Repair `skating.md` first; the script follows.**
+
+### Scope for whoever takes it
+`skating.md:121`, `:867` (Common Mistakes) and `:919` (Key Takeaway 1) — ⚠️ **the last is the
+takeaway the document itself says *"outranks everything else on this list"***. ⚠️ **Check
+`body_contact_and_battles.md`'s matching lines in the same pass — they were not measured.**
+⚠️ **And run `check_facts.py --near` first: `:919` is a summary-layer line in a document whose facts
+blocks sit at `HARD_MAX` in several places. Do NOT pipe `--near` to `tail`; it sorts ascending.**
+
+## Workstream 13: the VERB — a fifth generation, and the case where the verb is NOT the defect
+
+⚠️ **A reviewer predicted a fifth generation of one sentence and named the discriminator: the verb.**
+**NHL/IIHF 56.1** — *"A player is allowed the ice he is standing on… **is not required to move**"* —
+so **STANDING** in a lane is protected and **MOVING INTO** it is the offence.
+**Four sites were repaired. A sweep then found the fifth, in files the brief never named.**
+
+### Open — verify, then repair
+**`content/positions/center.md:392`**, a ` ```facts ` line voiced ALONE:
+> *"…**blocking** a returning goalie is the goal off and a minor (Casebook Situation 9)"*
+
+⚠️ **`[Rule]` at 297/300; block `:385-397` at `HARD_MAX` = 11.** `blocking` → `moving into` is **+3 =
+exactly 300/300.** **It fits, and nothing else in that block can then move.**
+
+⚠️⚠️ **BUT DO NOT ASSUME THE VERB IS WRONG HERE — THIS ONE MAY BE CORRECT, AND THAT IS THE POINT.**
+The line is scoped to **USA Hockey**, whose Casebook Situation 9 turns on ***"any interference"***
+(verified present in `sources/usah_casebook.txt`, flattened) — **not** on 56.1's movement framing.
+⚠️ **And USA Hockey writes NO stand-your-ground limb in any numbered rule** — a `rules-verifier`
+found its only such wording in the **Declaration of Player Safety front matter, page xii**. **So
+"blocking" may be accurate for that book while being wrong for the NHL and the IIHF.**
+⚠️ **This needs a `rules-verifier`, not a sweep.**
+
+### ⚠️ THE CASE THAT MUST NOT BE "FIXED" — scope, not tension
+**`content/technique/shooting.md:300`** — *"**standing in** a goaltender's road home can cost you two
+minutes even though the screen in front of them costs you nothing."*
+⚠️ **Probably CORRECT.** It is scoped to **Rule 69.4**, whose operative term is ***"due to the
+deliberate actions of an attacking player"*** (verified verbatim in `sources/nhl_rules.txt`,
+flattened) — **not** 56.1's *"moves into"*. **And it is double-hedged: *"can"*, then *"Read 'may',
+not 'will'"*.** `content/systems/offensive_zone_play.md` carries the same shape.
+
+⚠️⚠️ **SO THE VERB RULE IS SCOPED, NOT UNIVERSAL: it governs claims resting on 56.1/56.2, and NOT
+claims resting on 69.4, whose own test is deliberateness rather than movement.** ⚠️ **A sweep for
+`standing in` would have "fixed" both of these and made two correct sentences wrong — which is
+`CLAUDE.md`'s recorded *"they stated a rule's SCOPE rather than its TENSION"* case, reproduced
+exactly.** **Read every candidate for WHICH RULE IT RESTS ON before touching the verb.**
+
+### Also open from the same wave
+- ⚠️ **`special_teams.md` Key Takeaway 11 still says nothing about the goaltender's path home.** The
+  Common Mistakes bullet landed; **the Takeaways layer did not.** ⚠️ **And KT11 ends *"safe under all
+  four"* while `:1036` names five books on the same paint/line question — unruled.**
+- **`core_principles.md:81` and `on_ice_communication.md:264` carry the BEST version of the CARHA
+  Note 2 scoping** — and pair it with **CARHA Rule 49(a)**, the counter-rule (*"stand your ground but
+  not lean"*), which `special_teams.md` and `team_play_and_culture.md` still do not mention.
+
+### ⚠️ A METHOD ERROR worth more than the finding
+A brief offered a *positive control* for the negative *"CARHA writes no goaltender-vision
+provision"*: **`hc.txt` returns 37 hits for `vision`, `carha.txt` returns 0.** ⚠️ **The 37 are
+*division* and *provision*. On `\bvision\b`, `hc.txt` returns ONE.** **The negative still holds —
+`\bvision\b` = 0 and `\bview\b` = 0 in `carha.txt` — but it was upheld on evidence that was an
+artefact.** ⚠️ **A POSITIVE CONTROL THAT IS NOT WORD-BOUNDED IS NOT A CONTROL. It can validate a
+pattern that would have matched anything.**
+
+## Workstream 14: two documents state the screen permission with NO road-home caveat anywhere
+
+⚠️ **PRE-EXISTING — explicitly ruled NOT a reason to block the 18 September commit.** Found by a
+corpus-wide census during the third C6 review.
+
+**Census: 16 documents state the outside-crease screen permission. FOURTEEN carry the road-home
+limit somewhere in the file. TWO carry it nowhere:**
+
+1. ⚠️ **`content/technique/body_contact_and_battles.md`** — `:1084` (a ` ```facts ` line, **voiced
+   ALONE with a 300 ms break either side**) *"A screen set outside the crease without contact is
+   normally legal under NHL and IIHF Rule 69…"* and `:1095` (body) *"Screening is normally legal.
+   Standing outside the crease in the goalie's sightline without contact is not goaltender
+   interference."*
+   ⚠️⚠️ **THIS IS THE CONTACT DOCUMENT** — the one a reader opens to learn what contact costs them —
+   **and its Key Takeaways count for this limit is ZERO.**
+2. **`content/systems/zone_entries.md`** — states the permission and carries nothing.
+
+**What reaches the act:** NHL/IIHF **69.4** for a penalty; **56.2(i)** / HC **8.3(i)** / CARHA
+**66(a)(1)** in four of five books; **USA Hockey Casebook 625 Situation 9** on *"any interference"*,
+taking the goal **and** adding a minor.
+
+### ⚠️ Constraints for whoever takes this
+⚠️ **FLOOR THE VERB, and check which rule your sentence rests on first.** **56.1/56.2 claims: the
+offence is *moving into* the lane — *"A player is allowed the ice he is standing on… is not required
+to move."*** ⚠️ **69.4 claims are DIFFERENT — their operative term is *"deliberate actions"*, not
+movement, so *"standing in"* can be CORRECT there.** **See Workstream 13; a sweep would make correct
+sentences wrong.**
+⚠️ **`body_contact_and_battles.md:1375` is a `Rule:` line AT CAP (300/300) and 33 lines in that file
+sit within six characters — see Workstream 8. Run `--near` first; do NOT pipe it to `tail`.**
+
+### ⚠️ How it was found, and why a reading pass would have missed it
+**Not by reading either file.** The reviewer ran a census over the **permission sentence** across all
+39 documents and then checked each hit's file for the limit. ⚠️ **It says plainly: *"a document
+stating the permission in words my regex did not match is invisible to me"* — so SIXTEEN is a floor.**
+⚠️ **Before trusting that count, take one known-positive site and confirm the pattern catches it,
+WORD-BOUNDED** — a control that is not word-bounded validated a wrong conclusion earlier today
+(`hc.txt`'s 37 hits for `vision` are *division* and *provision*; word-bounded it returns one).
+
+## Workstream 15: Rule 69.4's incidental-contact permission stated with its condition dropped
+
+⚠️ **Found 18 September 2026 in a file the round had already repaired three times — and it is NOT
+the defect the round was chasing. It was byte-identical in HEAD.**
+
+**Rule 69.4 has TWO conditions on the permission and the corpus repeatedly carries ONE.**
+`sources/nhl_rules.txt:7223-7229`, verbatim:
+> *"A goalkeeper is not 'fair game' just because he is outside the goal crease. **The appropriate
+> penalty should be assessed in every case where an attacking player makes unnecessary contact with
+> the goalkeeper.** However, incidental contact will be permitted **when the goalkeeper is in the
+> act of playing the puck outside his goal crease** provided the attacking player has made a
+> reasonable effort to avoid such unnecessary contact."*
+
+⚠️ **THE HARM: a reader told *"incidental contact outside the crease is fine if you made a reasonable
+effort to avoid it"* accepts contact with a goaltender who is NOT playing the puck** — off their
+post, tracking a point shot, skating back. **That is *"unnecessary contact"*, and the rule says the
+penalty *"should be assessed in every case."*** **Read as a check rather than a bump it reaches
+607(c) / 42.4 — a misconduct or a game misconduct.**
+
+### The census — CANDIDATES, not findings
+**8 documents carry the condition** (`act of playing the puck`): `rules_primer`,
+`body_contact_and_battles`, `playing_without_the_puck`, `shooting`, `goaltender`,
+`offensive_zone_play`, `zone_entries`, `forechecking_systems`.
+**15 documents carry the permission** (`incidental contact`). ⚠️ **So SEVEN state the permission with
+the condition nowhere in the file:**
+
+`language_and_glossary` · `defender` · `center` · `game_management` · `special_teams` ·
+`defending_the_rush` · `faceoffs`
+
+⚠️⚠️ **DO NOT SWEEP THIS. A hit is a CANDIDATE.** Several will be legitimate — a glancing mention, a
+permission scoped by its own sentence, or a document discussing *inside*-crease contact where 69.4's
+outside limb never arises. ⚠️ **`check_caption_echo`'s documented lesson applies: only reading
+decides, and a sweep of a pattern like this is how round 44 manufactured a divergence that did not
+exist.**
+
+### ⚠️ A SECOND defect found with it — mis-attribution of the "fair game" limb
+In `special_teams.md`, **both** occurrences of *"fair game"* were attributed to **Hockey Canada**,
+presented as its distinctive coverage — ⚠️ **when the NHL and the IIHF write the identical protection
+in the same Rule 69.4, immediately above the returning-goalkeeper clause the passage already
+quotes.** ⚠️ **Check the other six candidates for the same shape: a limb all four books write,
+credited to one.**
+
+### Method notes for whoever takes this
+⚠️ **Verify the IIHF wording separately before any joint attribution** — it writes *"their goal
+crease"*, *"attacking Player"* and puts *"reasonable effort"* in its own quotation marks. **One
+book's characters credited to two is this round's most repeated quotation defect, and
+`check_quote_drift.py` CANNOT see it — it keeps the closest match across all sources.**
+⚠️ **Sources wrap mid-phrase; flatten whitespace or read ranges.** ⚠️ **Run `check_facts.py --near`
+first and do NOT pipe it to `tail`.**
+
+## Workstream 16: one book's characters credited to two — 20 PRE-EXISTING sites, found mechanically
+
+⚠️ **A `commit-gate` BLOCKED a commit on this class. Four instances were in the diff and repaired. A
+mechanical sweep then found TWENTY MORE in pre-existing text, in the same ten files.**
+
+**The defect:** a sentence introduced as *"NHL and IIHF Rule X"* followed by a quotation carrying
+**only the NHL's characters**. The IIHF writes *"their"* for *"his"*, *"they are"* for *"he is"*,
+capitalises *"Player"*, and sets its own defined terms — *"possession"*, *"body position"*,
+*"Goalkeeper interference"* — in quotation marks.
+
+⚠️⚠️ **`check_quote_drift.py` CANNOT SEE THIS, BY CONSTRUCTION.** Its docstring says it keeps the
+**closest match across ALL sources**, so a sentence credited to two books while carrying one book's
+wording scores **clean**. ⚠️ **And `MINLEN = 25` means short fragments like *"the ice he is standing
+on"* are never scanned at all.** **Every one of these 24 sites passes every gate in the repository.**
+
+### ⚠️ THE METHOD — mechanical, and it is the whole finding
+**Do not look for this by reading.** A `commit-gate` audited the diff, blocked on four instances, and
+**missed a fifth in a file it had just audited**. The repairing agent found that fifth **by
+word-diffing NHL against IIHF with `difflib`**, and recommended the sweep that found the rest.
+
+```python
+# for each quotation of >=25 chars on a line naming BOTH books:
+#   flatten whitespace in both rulebooks
+#   if quote in NHL and quote NOT in IIHF and the attribution is JOINT -> candidate
+```
+⚠️ **THE DISCRIMINATOR IS THE JOINT ATTRIBUTION IMMEDIATELY BEFORE THE QUOTE.** **A first sweep
+matched "line mentions both books" and returned 41 KB of noise — most lines naming both books quote
+each separately and correctly.** ⚠️ **A second filter is also required: a quote followed by a
+DISCLOSURE (*"the NHL's wording, the IIHF writing…"*) is CORRECT, and three of the diff's four
+in-scope hits turned out to be already disclosed.** **Without that filter the sweep re-reports its
+own repairs as defects.**
+
+### ⚠️ NO COUNT IS WRITTEN HERE, AND THE REASON IS THE FINDING
+
+**This row first said "20 pre-existing sites" with a per-file breakdown. That figure was an
+ARTEFACT OF AN ARBITRARY PARAMETER and has been withdrawn.**
+
+The sweep decides a quote is jointly attributed by looking back a fixed distance for the phrase
+*"NHL and IIHF"*. **Varying only that window, over the same ten files, same day, same rulebooks:**
+
+| look-back window | undisclosed candidates |
+|---|---|
+| 90 chars | **15** |
+| 400 chars | **38** |
+| 1,200 chars | **63** |
+
+⚠️⚠️ **THE COUNT IS A PROPERTY OF THE WINDOW, NOT OF THE CORPUS.** ⚠️ **And the 90-char window —
+the one that produced the withdrawn "20" — DEMONSTRABLY MISSED A REAL INSTANCE:** an agent found a
+second NHL-credited quotation in the very line it was repairing, where *"his crease"* → *"their
+**goal** crease"* **twice, inserting a word rather than swapping a pronoun.** The joint attribution
+sat further back with an intervening sentence, so the quote's own preamble was only *"It opens"*.
+
+⚠️ **A wider window is not the fix either: at 1,200 characters an attribution can be several
+sentences away, with the document having re-attributed in between, so most of the extra hits will be
+false.** **There is no window that is correct.**
+
+⚠️ **THEREFORE: this class CANNOT BE COUNTED MECHANICALLY — only SURFACED as candidates and then
+READ.** **Run the sweep at a window you choose, treat every hit as a candidate, and never write the
+total into a plan row.** **Concentrations were seen in `rules_primer.md`, `defensive_zone_coverage.md`,
+`body_contact_and_battles.md` and `shooting.md` — as a hint about where to start reading, not as a
+tally.**
+
+### ⚠️ Not all 20 are defects
+**Read each.** Legitimate cases: a passage **about the NHL** that names the IIHF only to contrast;
+a quotation whose fragment contains **none** of the divergent characters; a divergence already
+disclosed **elsewhere in the same paragraph**. ⚠️ **A sibling agent over-claimed a `Player`
+capitalisation for a fragment that did not contain the word, and caught itself. VERIFY THE FRAGMENT'S
+BOUNDS, not the surrounding sentence's.**
+
+### ⚠️ THE WORD *"ONLY"* IS THE DEFECT — measured across a whole round
+
+⚠️ ***"Differing only in X"* is a claim about what is NOT different, and EVERY instance this round
+wrote was wrong:**
+- a capital claimed for a span that did not contain the word;
+- a quotation-mark divergence true of one span, claimed for two;
+- *"belong to the 'pick' sentence **alone**"* — false: the IIHF quotes that term at **seven** further
+  places in Rule 56.1 and once in Rule 54.2;
+- *"differs **only** in its pronouns"* — excluding a capitalisation that sits inside the span.
+
+⚠️ **THE FIX IS USUALLY TO DELETE THE WORD, NOT TO EXTEND THE LIST.** **Five sibling sites in the
+corpus carry no exclusivity word at all — they simply enumerate — and none of them has failed.**
+⚠️ **BUT "no *only*" IS NOT THE GOAL, ACCURACY IS:** an agent found a third *"only"* on the same
+line, diffed it, verified it **complete**, and correctly left it alone.
+
+### ⚠️ A pre-existing instance of the INVERTED form — filed 19 September 2026
+**`content/foundation/core_principles.md:81`** quotes the **IIHF's** sentence and says the NHL is
+*"the same sentence with **"he"** for **"they"**"* — ⚠️ **omitting the `player`→`Player`
+capitalisation AND the `is`→`are` change.** **Same defect, opposite direction: it under-states the
+divergence from the other side.** **Verified against `sources/nhl_rules.txt:6250-6252` and
+`sources/iihf_rules_v1.1.txt:4683-4684` this session.**
+
+### ⚠️ Method notes that cost this round several passes
+- ⚠️ **CHECK THE QUOTED SPAN'S BOUNDS, NOT THE SENTENCE'S.** Three over-claims came from naming a
+  divergence sitting outside the quote marks.
+- ⚠️ **Consistent in FORM, never in WORDING.** The sites quote **different spans**; copying wording
+  between them is how a single over-claim spread to three files.
+- ⚠️ **`check_quote_drift.py` compares ALPHANUMERICS ONLY** — it cannot see quotation marks or
+  capitalisation, so these clauses score **clean whether right or wrong.** **A word-diff is the only
+  check.**
+- ⚠️ **The IIHF extraction uses CURLY QUOTES.** **A straight-quote grep returns zero and reads as an
+  absence.**
+- ⚠️ **Read the repaired clause VOICED.** One agent's draft said *"in the NHL's characters **too**"*
+  where the chunk boundary fell immediately before it — voiced alone, *"too"* pointed at nothing.
+
+### The repair form — four models now exist in the corpus
+> *"…that in the NHL's wording, the IIHF capitalising *"Player"* and setting *"possession"* in
+> quotation marks of its own…"*
+
+⚠️ **Never weaken the claim that both books carry the rule — they do. Disclose only that the QUOTED
+CHARACTERS are one book's.** ⚠️ **And state the divergence you MEASURED, not the one you expected:
+*"differing only in…"* is a claim about what is NOT different and must be checked by word-diff.**
+
+## Workstream 7: three untracked, un-ignored paths — an OWNER DECISION, measured 18 September 2026
+
+⚠️ **`AGENTS.md`, `.agents/` and `.codex/` are untracked AND absent from `.gitignore`.** Nothing
+staged them today. ⚠️ **They are invisible to every gate in this repository:
+`check_secrets.py` reports *"369 tracked files"* — it does not scan untracked paths, so its clean
+run says NOTHING about these three.**
+
+**Measured directly instead:**
+
+| Path | What it is | Size |
+|---|---|---|
+| `AGENTS.md` | 602 lines — a port of `CLAUDE.md` for another harness | — |
+| `.agents/` | 4 files — `scripted-episode` and `notebooklm-episode` skills | 36K |
+| `.codex/` | 12 files — agent definitions, `config.toml`, `hooks/git-guard.sh` + its test | 148K |
+
+⚠️ **Scanned for credentials by hand: NOTHING credential-shaped.** Every hit for
+*key/token/secret/password* is a rule **about** secrets — `git-guard.sh`'s own blocking patterns,
+the commit-gate's `AKIA` regex, and a skill instructing an agent not to enter passwords. **No
+`AKIA`, no `sk-`, no `ghp_`, no PEM header, no assignment to a secret-shaped name.**
+
+### ⚠️ The real risk is not a secret — it is DIVERGENCE, and it has already happened
+⚠️ **MEASURED PROPERLY — AND THE FIRST FIGURE WRITTEN HERE WAS MISLEADING.** A raw `diff` reports
+~70 differing lines, **but almost all of that is the harness's own name.** Normalising
+`Claude`/`Codex` to a common token and comparing paragraph by paragraph: ⚠️ **exactly ONE
+substantive paragraph of `CLAUDE.md` is absent from `AGENTS.md`**, plus its code fence.
+
+⚠️ **It is the `check_facts.py --near` block** — the passage that exists because a block at
+`HARD_MAX` evicted a rulebook fact into a `Technique:` line where, voiced alone, a mandatory
+give-ground duty read as a coaching preference, **and every checker passed.**
+
+⚠️ **So the divergence is SMALL, SINGULAR, and the worst available one to be missing.** "~70 lines"
+overstated the breadth while understating the significance. ⚠️ **A line count is not a measure of
+divergence between two files that address different harnesses by name** — and the coordinator wrote
+that count into this plan within an hour of recording, in the same round, that relayed figures are
+this round's dominant defect.
+
+⚠️⚠️ **So an agent run under `AGENTS.md` is not told to run `--near` before editing a facts block.**
+**This is the "number copied out of its owner goes stale" failure, applied to a whole instruction
+file** — and unlike a stale number, nothing in either file points at the other, so no reader of
+one can discover that the other has moved.
+
+### The decision, and it is the owner's — this repository is PUBLIC
+- **Commit them** — they are project tooling, they carry no credential, and tracking them puts
+  them under `check_secrets.py` and the hook. ⚠️ **Then `AGENTS.md`'s divergence becomes a
+  maintained obligation, and it is ALREADY BEHIND.**
+- **`.gitignore` them** — zero divergence risk in the record, but the tooling stays invisible and
+  the next contributor re-creates it. ⚠️ **Never weaken `.gitignore` afterwards to un-ignore them.**
+
+⚠️ **Either way, `AGENTS.md` must not be left as a silently-stale copy of `CLAUDE.md`.** If it is
+kept, the sustainable form is a POINTER to `CLAUDE.md` plus only the harness-specific deltas —
+**a full copy of a file that documents its own staleness failures is the one shape guaranteed to
+reproduce them.**
+
+⚠️ **Standing hazard until decided:** `git add -A` or `git add .` anywhere in this repository
+stages all three under whatever message is being written. **This repository already forbids both
+gestures and the hook blocks them — that is the mitigation, and it is not a resolution.**
+
 ## Workstream 2: safety and rules residuals
 
 **Owner:** coordinator assigns disjoint files; `rules-verifier` and
