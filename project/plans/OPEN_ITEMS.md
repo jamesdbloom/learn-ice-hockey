@@ -75,28 +75,17 @@ record.
 
 ### Corpus content
 
-- **`content/hockey-iq/time_and_space.md`** — Key Takeaways item 9 doesn't mention Rule 69.4's
-  returning-goalkeeper duty (an omission, not a wrong claim; Common Mistakes already states it).
-- **`content/positions/goaltender.md`** — Key Takeaways is missing eight distinct Common-Mistakes
-  points: leaving the crease during a fight, playing on with a broken stick, pulling your own mask for
-  a whistle, banking snow onto the netting, drifting toward a puck you wanted whistled, the ordinary
-  stick fouls binding a goaltender too, a Britain-specific glove-throw ruling, and Rule 69.7's
-  rebound-scramble whistle. Given the volume, likely needs one dedicated Key Takeaways item rather
-  than eight insertions. See `rule_69_4_propagation_2026-09-20.md` §"KT/CM asymmetry sweep" for detail
-  (recorded there even though the finding is broader than that wave's own subject).
-- **`content/technique/body_contact_and_battles.md`** — Key Takeaways missing the "checking a player
-  already engaged with a teammate" rule (USA Hockey 640(e)/(g)/(h); IIHF vulnerable-player glossary
-  entry) that Common Mistakes already states.
-- **`content/systems/special_teams.md`** — Key Takeaways missing two rule-consequence points Common
-  Mistakes already has: losing last change after your own icing (Rule 82.1), and the
-  faceoff-centre-ejection escalation ladder.
-- **`content/systems/breakouts.md`** — Key Takeaways item 12 understates a penalty ceiling; Common
-  Mistakes correctly states a screening-interference penalty is not capped at a minor (match penalty /
-  major-plus-game-misconduct tiers across all four books).
+- **`content/off-the-ice/team_play_and_culture.md:86`** — the boards-sitting bullet's injury-mechanism
+  clause ("how you get a skate blade in someone's face") is unsourced; a safety-reviewer couldn't find
+  it in any bench-safety source on disk. Pre-existing (not introduced by the 20 September Key
+  Takeaways propagation, which faithfully carried the same uncited clause into a third layer) — either
+  source it or soften to explicit coaching-caution framing. Low priority, not a blocker.
 - **A full Common-Mistakes/Key-Takeaways asymmetry sweep** — only 6 of 39 documents were checked (both
-  directions attempted, mostly one direction done thoroughly). The five items above came from that
-  partial sweep; the other 33 documents, including the two most rule-dense (`rules_primer.md`,
-  `uk_rules.md`), are unchecked.
+  directions attempted, mostly one direction done thoroughly). All five of that partial sweep's own
+  findings (`time_and_space.md`, `goaltender.md`, `body_contact_and_battles.md`, `special_teams.md`,
+  `breakouts.md`) were retracted 20 September on discovering each had already been fixed in an earlier
+  round, with the plan rows simply never retired — none needed a new edit. The other 33 documents,
+  including the two most rule-dense (`rules_primer.md`, `uk_rules.md`), remain unchecked.
 - ~~The renderer drops the word "clause" from every multi-clause citation~~ — **FIXED** (see below,
   same day). `scripts/md_to_speech.py`'s citation regex was widened and verified against the real
   pipeline, zero survivors corpus-wide.
