@@ -234,6 +234,12 @@ is a coaching choice, believe the caption, not the picture.
   *checking pressure* in one published key, half of a *sudden stop* in another, and
   *screen, pick, or block* in a coaching manual. Check the key in front of you before
   you read the picture.
+- **Reading the letter inside a glyph as where a player stands.** The letters here mark
+  a role set by who does what during the play, not a position — F1 is whoever arrives at
+  the puck first, not the centre (the fuller case is in
+  [Forechecking Systems](../systems/forechecking_systems.md)). The same letter can
+  collide with an unrelated meaning on someone else's key, too: a circled `C` means
+  *coach* on both published keys consulted here and *centre* in this guide.
 - **Assuming your coach uses these symbols.** Nothing here has been checked against
   how any particular club draws things. If your coach's whiteboard disagrees, their
   whiteboard wins.
@@ -281,6 +287,14 @@ is a coaching choice, believe the caption, not the picture.
    first, not the centre.
 7. **Where a caption says a detail is a coaching choice, it is.** Ask which version
    your team runs rather than taking the picture as the answer.
+8. **A line ending in a single bar appears in none of these diagrams, on purpose:
+   across the sources behind this notation it carries three different meanings** —
+   checking pressure on one published key, half of a sudden stop on another, and
+   screen, pick, or block in a coaching manual. Do not assume a key you meet elsewhere
+   uses it the same way any of them do.
+9. **None of this notation has been checked against how any real club or coach draws
+   things.** If your coach's whiteboard disagrees with a symbol here, their whiteboard
+   wins.
 
 ---
 

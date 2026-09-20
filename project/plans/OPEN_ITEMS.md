@@ -70,16 +70,47 @@ record.
   -committed content, is how Workstream 145 (20 September) found ten sites where three had been found.
 - **Forbid `git stash` explicitly in any brief where other agents may be concurrently live** — it
   touches every unstaged file in the tree, not just the caller's own.
+- **This file's own bookkeeping has more than one place that can go stale independently, and fixing
+  one does not fix the others.** A single document's status is asserted in at least three places that
+  can drift apart: (1) a per-document row under "Genuinely open," (2) the live coverage census's
+  document-name lists, and (3) a historical workstream section's own "FIXED" annotation (or lack of
+  one). This session found the same class of defect three separate times in one evening — a plan row
+  contradicting a review record staged in the same commit, a coverage-census sentence never revisited
+  after its wave's fixes landed, and (found by the coordinator itself, not a gate) a historical
+  section's already-fixed findings re-surfacing as "unknown" in a later, unrelated census
+  reconciliation. **When closing any finding, grep this whole file for every other place the same
+  document name appears before declaring the row closed** — a single find-and-fix is not enough.
 
 ## Genuinely open
 
 ### Corpus content
 
+- **The IIHF's current rulebook has no "match penalty" concept anywhere in it** — discovered
+  incidentally while verifying kicking (Rule 49) and clipping (Rule 44) citations, confirmed by a
+  corpus-wide grep for "match penalty" returning zero hits across all four IIHF editions on disk
+  (`iihf_rules.txt`, `iihf_rules_v1.1.txt`, `iihf_rules_v1.0.txt`, `iihf_rules_2026-27.txt`). Any
+  corpus claim assuming an IIHF match-penalty tier for some *other* offense — not yet checked — could
+  be wrong the same way the pre-fix versions of the kicking/clipping claims in this wave were heading.
+  Worth a dedicated corpus-wide grep for "match penalty" near "IIHF" in a future wave.
+- **A prompt-injection attempt, correctly ignored** — a sweep agent working on
+  `content/foundation/on_ice_communication.md` reported that a tool result during its run contained
+  embedded text styled as "MCP Server Instructions," directing it to create an external "Claude Docs"
+  artifact and post progress there. The agent correctly identified this as untrusted content and did
+  not act on it. No corpus content affected. Logged for the record per standing instruction, not an
+  open item requiring action.
 - **`content/off-the-ice/team_play_and_culture.md:86`** — the boards-sitting bullet's injury-mechanism
   clause ("how you get a skate blade in someone's face") is unsourced; a safety-reviewer couldn't find
   it in any bench-safety source on disk. Pre-existing (not introduced by the 20 September Key
   Takeaways propagation, which faithfully carried the same uncited clause into a third layer) — either
   source it or soften to explicit coaching-caution framing. Low priority, not a blocker.
+- **`content/off-the-ice/equipment.md`** (lines 92, 111, 456, 690) — states "SIHA Recreational, SIHA
+  University and BUIHA hockey, a half visor is the minimum, regardless of age," narrower phrasing than
+  the overclaim already fixed in `uk_rules.md` (which said the half-visor floor bound "every player in
+  a BUIHA game"). Judged during that fix as a related-but-distinct claim, not the same defect requiring
+  an identical carve-out — already correctly cross-references `uk_rules.md` as the owner document.
+  Recovered from historical-only narrative during this session's plan-bookkeeping reconciliation; low
+  priority, no evidence it's inaccurate, just never independently re-verified against the primary
+  SIHA/BUIHA source text.
 - **A full Common-Mistakes/Key-Takeaways asymmetry sweep** — this line previously stated "only 6 of 39
   documents were checked," a stale count from before the 20 September sweep continuation; corrected
   here by naming documents rather than re-guessing a total, per this file's own standing lesson that a
@@ -93,17 +124,30 @@ record.
   `off-the-ice/how_to_watch_hockey.md`, `getting-started/getting_started.md`,
   `hockey-iq/puck_support_and_spacing.md`, `foundation/core_principles.md`,
   `foundation/language_and_glossary.md`, `foundation/rules_primer.md`,
-  `off-the-ice/practice_and_development.md` (23 documents — the last 8 named closed via
-  `project/reviews/fifth_backlog_wave_2026-09-20.md`, closing out the full list an earlier sweep record
-  named as unchecked, plus `foundation/uk_rules.md`/`off-the-ice/equipment.md`'s own Critical, closed
-  separately via `project/reviews/fourth_backlog_wave_2026-09-20.md`). **Status genuinely unknown** —
-  no record found either way — for the remaining 16: `foundation/on_ice_communication.md`,
-  `hockey-iq/risk_management.md`, `off-the-ice/mental_game.md`, `positions/center.md`,
-  `positions/defender.md`, `positions/winger.md`, `reading-diagrams/reading_ice_hockey_diagrams.md`,
-  `systems/defending_the_rush.md`, `systems/defensive_zone_coverage.md`, `systems/faceoffs.md`,
-  `systems/forechecking_systems.md`, `systems/game_management.md`, `systems/neutral_zone_systems.md`,
-  `systems/offensive_zone_play.md`, `systems/zone_entries.md`, `technique/shooting.md`. Whoever checks
-  one of these last 16 should update this row by name, not by adjusting a total.
+  `off-the-ice/practice_and_development.md`, `positions/defender.md`, `positions/winger.md`,
+  `foundation/on_ice_communication.md`, `hockey-iq/risk_management.md`, `off-the-ice/mental_game.md`,
+  `positions/center.md`, `reading-diagrams/reading_ice_hockey_diagrams.md`,
+  `systems/defending_the_rush.md`, `systems/faceoffs.md`, `systems/forechecking_systems.md`,
+  `systems/game_management.md`, `systems/neutral_zone_systems.md`, `systems/offensive_zone_play.md`,
+  `systems/zone_entries.md`, `technique/shooting.md` (38 documents — the 8 named before
+  `defender.md`/`winger.md` closed via `project/reviews/fifth_backlog_wave_2026-09-20.md`, closing out
+  the full list an earlier sweep record named as unchecked; `defender.md`/`winger.md` came back clean
+  in the next wave; the 6 named after them had 14 Major findings between them, all fixed and
+  independently reviewed via `project/reviews/sixth_backlog_wave_2026-09-20.md`; `foundation/uk_rules.md`/
+  `off-the-ice/equipment.md`'s own Critical closed separately via
+  `project/reviews/fourth_backlog_wave_2026-09-20.md`. The final 7 — `faceoffs.md`,
+  `forechecking_systems.md`, `game_management.md`, `neutral_zone_systems.md`, `offensive_zone_play.md`,
+  `zone_entries.md`, `shooting.md` — were missing from this line entirely until a commit-gate caught it:
+  they were checked in an *earlier* wave (the "12 more documents checked" pass — see the historical
+  section above, now annotated FIXED), 4 clean on that pass (`game_management.md`, `zone_entries.md`,
+  `forechecking_systems.md`, `shooting.md`) and 3 with findings since fixed via
+  `project/reviews/second_backlog_wave_2026-09-20.md` (`faceoffs.md`, `neutral_zone_systems.md`,
+  `offensive_zone_play.md`). **`center.md` and `defending_the_rush.md` also appeared in that same
+  earlier pass's "clean" list — that verdict is superseded, not confirmed: the sixth wave's closer read
+  found real Major gaps in both, since fixed.** This is the second time this session a stale-plan
+  bookkeeping gap survived past its own fix; see the standing method notes.). **Status genuinely
+  unknown** — no record found either way — for the one remaining document: `systems/defensive_zone_coverage.md`.
+  Whoever checks it should update this row by name, not by adjusting a total.
 - ~~The renderer drops the word "clause" from every multi-clause citation~~ — **FIXED** (see below,
   same day). `scripts/md_to_speech.py`'s citation regex was widened and verified against the real
   pipeline, zero survivors corpus-wide.
@@ -121,24 +165,53 @@ record.
   archive) — the first time this session a reviewer questioned a corpus convention itself rather than
   compliance with it. Flagged as needing a decision before remaining sites are swept one way or the
   other.
+- **`content/positions/goaltender.md`'s Rule 69.7 rebound-scramble counterweight omission** — item 15's
+  rebound-scramble sentence states the incidental-contact permission but omits its counterweight
+  (pushed into the net with the puck after a stop = goal disallowed), already present in the
+  neighbouring Common Mistakes bullet. Judged a completeness nuance about scoring outcome, not a safety
+  defect — the instruction given ("go win the puck") remains correct either way. Recovered from
+  historical-only narrative during this session's plan-bookkeeping reconciliation; low priority.
+- **Whether the Boarding/Interference rule-scope gap found in `body_contact_and_battles.md` recurs
+  elsewhere in the corpus** — never checked. The specific defect (a pre-existing sentence wrongly citing
+  NHL Roughing 51.1 for a body-check scenario the rule doesn't fit) was fixed at its one known site;
+  no sweep was run for the same misattribution pattern in other documents. Recovered from historical-only
+  narrative during this session's plan-bookkeeping reconciliation.
+- **A corpus-wide house-style question: disclose every undisclosed-capital-lowering quote, or accept
+  silent lowering as a deliberate style choice** — the identical USA Hockey 607(a) fragment recurs with
+  its sentence-initial capital silently lowered (no `[a]` bracket) in at least four separate systems
+  documents, reading as a consistent house style rather than four independent oversights. Needs a
+  coordinator decision before any further quote-drift triage treats this pattern as a defect to fix.
+  Recovered from historical-only narrative during this session's plan-bookkeeping reconciliation —
+  structurally the same kind of open convention-question as the "injury mechanism form" item above.
 
 ### Tooling
 
 - **`check_quote_drift.py`'s facts-layer coverage (fixed 20 September) surfaced ~150 new candidates
-  corpus-wide; only 12 of the highest-volume documents were triaged.** Found and fixed in the tool
-  itself: a false-positive class from short quote-pairs on one line (documented in the tool's own
-  docstring), and a false-positive class from NHL Table 14 / IIHF Table 16's known column-interleaved
-  extraction (also documented). Found and NOT yet fixed in content: six genuine Minor defects
-  (undisclosed initial-capital lowering, no `[x]` bracket, no meaning change) in
-  `content/systems/defensive_zone_coverage.md` (2 sites), `content/technique/shooting.md`,
-  `content/systems/special_teams.md`, `content/positions/goaltender.md` (2 sites) — see
-  `rule_69_4_propagation_2026-09-20.md` for exact lines and fixes. ~27 documents never triaged.
+  corpus-wide.** Found and fixed in the tool itself: a false-positive class from short quote-pairs on
+  one line (documented in the tool's own docstring), and a false-positive class from NHL Table 14 /
+  IIHF Table 16's known column-interleaved extraction (also documented). The six genuine Minor content
+  defects this same pass found (undisclosed initial-capital lowering, no `[x]` bracket, no meaning
+  change) in `content/systems/defensive_zone_coverage.md` (2 sites), `content/technique/shooting.md`,
+  `content/systems/special_teams.md`, `content/positions/goaltender.md` (2 sites) — **FIXED, committed
+  in `ea4d793`** (verified directly: `git show ea4d793 --stat` touches all four files). **The ~27-
+  documents-never-triaged figure that used to sit here is also stale — the triage was completed the
+  same day, all 39 documents, see "Quote-drift triage complete" below**, which found exactly one more
+  genuine defect (a tense mismatch in `playing_without_the_puck.md`), also fixed and committed in
+  `ea4d793`. This whole bullet describes fully closed work; nothing here is still open.
 - **A structural fix to `check_quote_drift.py`'s short-quote-pair false positive** was scoped but not
   implemented: require quote content to start immediately after whitespace/punctuation rather than
   treating every quote mark as a valid re-anchor point.
 - **`project/content_style_guide.md`'s `HARD_MAX` change (11→14, 20 September)** never got a dedicated
   `content-reviewer` pass — only coordinator judgment plus explicit user direction. Not a hockey-content
   claim, flagged by a commit-gate as worth a look, not blocking.
+- **A bare-bracket renderer case, distinct from the fixed clause-dropping defect** — 2 sites in
+  `content/systems/offensive_zone_play.md` use a bracket like `(b, c, d, e or f)` with no rule number
+  attached, an elliptical back-reference to a number stated earlier in the same sentence. Fixing this
+  safely would require tracking the last-mentioned rule number across matches within a sentence, which
+  risks misattributing a bracket to the wrong preceding number in a denser sentence — likely best fixed
+  as a content edit (restating the number explicitly) rather than a renderer change. Found during the
+  renderer-fix workstream, never entered here — recovered from that historical section during this
+  session's plan-bookkeeping reconciliation.
 
 ### Site / infra (not actionable from this environment)
 
@@ -182,12 +255,17 @@ record.
   §8, §9). Both books' actual position (contact-based statute plus a no-contact ordinary-interference
   route) is now stated correctly in both files and traced through `rules_primer.md`. Close.
 
-## Push status (as of this consolidation)
+## Push status
 
-Local `main` is two commits ahead of `origin/main`: `21de48f` (a plan file, the repo owner's own
-commit) and `5dc4d4d` (this session's third commit). `835850b` and `a9856df` are already pushed.
-Pushing `21de48f`/`5dc4d4d` needs the user's explicit go-ahead — `main` deploys to production on push,
-and approval to commit is never approval to push.
+⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit and must be
+re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or from an earlier
+paragraph in this file.** As of the sixth backlog wave's commit, local `main` is **4 commits ahead** of
+`origin/main`: `2401efc`, `3be7066`, `2671d7a`, `11d7602` (plus a fifth once this wave's own commit
+lands). None of these have been pushed. Pushing needs the user's explicit go-ahead — `main` deploys to
+production on push, and approval to commit is never approval to push. (The two-commits/`21de48f`/
+`5dc4d4d` figure this section previously stated was itself already stale by the time of the very next
+commit and is preserved nowhere else — a earlier illustration of exactly the live-fact-vs-narrative
+staleness this file's standing method note now warns about generally.)
 
 ## In progress — Workstream 147 wave (2026-09-20, post-consolidation)
 
@@ -292,6 +370,19 @@ primary source in this pass (relied on each document's own already-sourced citat
 pass on these five new findings' citations is still owed before fixing); each of the 21 remaining
 documents got only one read-through, not the second pass round 20's own history says catches what a
 first pass misses.
+
+**All four findings above — FIXED, 20 September 2026**, in the wave recorded as
+`project/reviews/second_backlog_wave_2026-09-20.md` (`uk_rules.md`'s BUIHA clause,
+`neutral_zone_systems.md`'s icing/line-change bar, `offensive_zone_play.md`'s two Minors, `faceoffs.md`'s
+scrum-relocation Minor — all independently rules-verified and safety-reviewed, committed in `2401efc`
+and an earlier same-day commit). This whole section is historical narrative kept for its evidence, not
+a live worklist — none of these four rows describe open work. ⚠️ **The 20-September coordinator missed
+this note when doing a later, unrelated reconciliation of the "Genuinely open" coverage census and
+briefly mis-listed all seven of this section's documents (the 4 fixed plus the 3 of the "7 clean" not
+already covered elsewhere) as having unknown or open status** — caught by a commit-gate three waves
+later. The lesson generalizes past this one instance: a historical section's "FIXED" annotation and the
+live coverage census are two different pieces of bookkeeping, and updating one does not update the
+other automatically.
 
 ## Quote-drift triage complete — all previously-untriaged documents now covered
 
@@ -459,7 +550,9 @@ any Claude/Anthropic/co-author mention. Not pushed — remains the user's call.
 **Genuinely open, carried forward:** the renderer clause-dropping defect (confirmed live, root cause
 identified, not fixed); 21 of 39 documents unchecked in the CM/KT asymmetry sweep, plus 5 new findings
 from this wave's continuation not yet fixed (uk_rules.md BUIHA half-visor, neutral_zone_systems.md
-icing/line-change bar, 2 offensive_zone_play.md Minors, faceoffs.md Minor); goaltender.md's Rule 69.7
+icing/line-change bar, 2 offensive_zone_play.md Minors, faceoffs.md Minor) — **all 5 of these — FIXED
+later the same day, via `project/reviews/second_backlog_wave_2026-09-20.md`; all four documents already
+correctly appear in the live "confirmed checked" coverage-census line**; goaltender.md's Rule 69.7
 counterweight omission (non-blocking completeness nuance); whether the Boarding/Interference scope
 gap recurs elsewhere in the corpus (never checked); the check_quote_drift.py regex's own structural
 fix (scoped, not implemented); the HARD_MAX style-guide change's own content-reviewer pass (never
@@ -616,6 +709,11 @@ couldn't locate this last one at the path given — it's under `content/getting-
 None of these 8 new findings are fixed yet — this is a scoping result. Given the volume (13 total
 findings now logged across two sweep passes, 5 already fixed today), the remaining 8 are queued for a
 future wave rather than actioned immediately.
+
+**All 8 findings above — FIXED, 20 September 2026**, in `project/reviews/third_backlog_wave_2026-09-20.md`
+(all five documents' findings independently rules-verified and safety-reviewed, committed). All five
+documents already correctly appear in the live "confirmed checked" coverage-census line near the top of
+this file. This section is historical narrative kept for its evidence, not a live worklist.
 
 ## Safety review of the four CM/KT fixes: one real Major found and fixed, one Minor found and fixed
 
