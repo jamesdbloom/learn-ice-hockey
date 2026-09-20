@@ -39,12 +39,12 @@ executable corpus-content work is tracked in this file.
 
 ## Priority order
 
-1. Safety residuals that could get a reader hurt, ejected, or given wrong rules for their age/division
-   — see the pathway Critical below, now the top item.
-2. The two standing house-style/convention decisions below — low effort, blocking further triage in
-   their areas until decided.
-3. Site, diagram, and audio validation.
-4. Deferred technical, source, and corpus-wide work.
+1. Safety residuals that could get a reader hurt, ejected, or given wrong rules for their age/division.
+2. Site, diagram, and audio validation — see the site-wide anchor-scroll item below.
+3. Deferred technical, source, and corpus-wide work.
+
+(The two standing house-style/convention decisions that used to sit at priority 2 are both closed —
+see "Closed 20 September" below.)
 
 A row is complete only after its acceptance condition and required review are recorded in a review
 record.
@@ -143,16 +143,27 @@ urgent: `pathways.json`'s own `$comment` says `docs` order "never" carries meani
 pathways' `evidence` fields write as if `docs[0]` "leads" — a latent inconsistency between the file's
 stated policy and its own annotations, pre-existing and not introduced by this fix.
 
-### Decisions needed (low effort, blocking further triage)
+### Closed 20 September — both standing decisions resolved
 
-- **Is the "injury mechanism form" convention worth keeping?** — the first time this session a reviewer
-  questioned a corpus convention itself rather than compliance with it. Remaining sites can't be swept
-  one way or the other until this is decided.
-- **A corpus-wide house-style question: disclose every undisclosed-capital-lowering quote, or accept
-  silent lowering as a deliberate style choice?** The identical USA Hockey 607(a) fragment recurs with
-  its sentence-initial capital silently lowered (no `[a]` bracket) in at least four separate systems
-  documents, reading as a consistent house style rather than four independent oversights. Needs a
-  decision before any further quote-drift triage treats this pattern as a defect to fix.
+- ~~Is the "injury mechanism form" convention worth keeping?~~ — **decided: drop it.** The
+  convention (making the injury, not the collision, the grammatical subject of a walking-speed
+  injury sentence — "the injury can occur" vs. "a collision can break your neck") was never codified
+  in `content_style_guide.md`; it existed only as a pattern applied by earlier fix-agents. Both forms
+  assert the same fact and no one had confirmed a listener perceives a difference, which was the
+  reviewer's own objection when raising this. Going forward: neither form is a defect; do not flag an
+  inconsistency between them as one, and do not re-sweep sites already in the "injury" form to revert
+  them — this is a stop-enforcing decision, not a reversion.
+- ~~A corpus-wide house-style question: disclose every undisclosed-capital-lowering quote, or accept
+  silent lowering?~~ — **decided: accept as house style.** Investigating the specific "USA Hockey
+  607(a), at least four documents" claim behind this item found the paper trail didn't hold up — it
+  looks like an imprecise restatement conflating two different, already-resolved findings (a 608(a)
+  fragment lowered at 9 sites, already judged "house practice, not drift"; an NHL 42.1 fragment at 4
+  documents, already fixed with `[a]` brackets). A fresh check found the underlying source phrase
+  recurs under multiple rule numbers in the primary text and across 17 corpus documents — too
+  widespread to be anything but deliberate. Decision matches the precedent already set for the 608(a)
+  case. Recorded in `scripts/check_quote_drift.py`'s docstring so future quote-drift triage doesn't
+  re-open this: a bare Shape-1 hit (capital silently lowered, no meaning change) is no longer a
+  fixable defect to flag.
 
 ### Corpus content
 

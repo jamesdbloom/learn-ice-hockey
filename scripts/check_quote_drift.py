@@ -66,6 +66,19 @@ table-of-contents hit cannot masquerade as the body.
   defect.
 - **A sentence-initial quotation may legitimately carry the source's capital.**
   Only reading the source decides.
+- ⚠️ **DECIDED 20 September 2026: silent capital-lowering (Shape 1) is ACCEPTED
+  HOUSE STYLE, not a defect to sweep.** The question sat open for a session after
+  a USA Hockey penalty-tier fragment ("[a] minor plus a misconduct or a major
+  plus a game misconduct") turned up with its sentence-initial capital silently
+  lowered at nine sites across nine documents, uniformly, with no `[a]` bracket
+  -- "a lowering applied uniformly at nine sites is house practice, not drift,"
+  not four independent oversights. The coordinator confirmed this generalises:
+  the same source phrase recurs under multiple rule numbers in the primary text
+  and across 17 corpus documents, too widespread to be anything but a deliberate
+  style choice. **Do not flag a bare Shape-1 hit (no meaning change, no
+  terminal-punctuation issue) as a fixable defect going forward** -- it is a
+  worklist entry for awareness, not an open question. Shapes 2-4, and any Shape-1
+  hit that DOES change meaning, are unaffected by this decision.
 - ⚠️ **THE `[x]` EXEMPTION ONLY STRIPS A SINGLE LETTER.** `clean_quote()`'s bracket
   regex is ``\\[([a-zA-Z])\\]`` -- one character. A genuinely disclosed multi-letter
   insertion (`delay[ing]`, `kick[ing]`) still reports NOTFOUND, because the
