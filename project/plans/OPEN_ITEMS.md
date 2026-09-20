@@ -511,3 +511,188 @@ All mechanical checks (`check_links.py`, `check_facts.py`, `check_absolutes.py`)
 a `scripts/` change with no `content/` files touched — dispatching a commit-gate for due diligence
 (TTS rendering is safety-adjacent, per this session's own earlier chunk-boundary CRITICAL) but this
 doesn't need rules-verifier/safety-reviewer coverage since no content claim changed.
+
+## Fifth commit-gate CLEAR (with a self-caught count discrepancy, fixed before commit)
+
+Fifth dispatch (renderer fix only, no content/ touched) independently reproduced every claim from
+scratch — the diff, the self-test (260/2 pre-existing failures), a fresh unit test of all five
+patterns, and re-rendering 12+ documents through the real pipeline. **CLEAR**, with one honest,
+non-blocking flag: its own recount of the affected-site pattern found 43/12, not the review record's
+claimed 34/11 — a real discrepancy, not something to wave off. Investigated before committing: a full
+general-pattern recount (matching exactly what the widened regex now accepts, not the five literal
+known phrasings) found the true count higher still — 50 sites across 15 documents — confirming the
+original "34" figure was itself stale the moment a broader check was run. Re-rendered all 15 and
+confirmed zero raw-digit-then-bracket survivors corpus-wide. Softened both the review record and the
+code's own comment to state the check rather than a number, per this project's own repeated lesson
+about a census going stale the instant it's quoted rather than reproduced.
+
+**Committed** as `6944829` — "Voice every clause a citation names, not just the first one." 3 files
+changed. Commit message verified free of any Claude/Anthropic/co-author mention. Not pushed.
+
+**Local main is now three commits ahead of origin/main** (`ea4d793`, `6944829`, plus the earlier
+`5dc4d4d`/`95fe466` already accounted for — full state: origin at `835850b`, local at `6944829`).
+Push remains the user's call throughout.
+
+## Workstream: closing the four remaining CM/KT gaps from the earlier sweep, plus sweep continuation
+
+Dispatched five parallel agents against the consolidated backlog: `uk_rules.md` (BUIHA half-visor),
+`neutral_zone_systems.md` (icing/line-change bar), `offensive_zone_play.md` (two Minor findings —
+Rule 69.7 rebound carve-out, high-stick crossbar-vs-shoulder divergence), `faceoffs.md` (post-whistle
+scrum), plus a fifth agent continuing the CM/KT asymmetry sweep on ~14 of the remaining 21 unchecked
+documents (results pending).
+
+- `uk_rules.md` — BUIHA half-visor clause added to Key Takeaways item 4. Agent correctly refuted my
+  own brief's wrong premise (item 4 did NOT already mention SIHA, contrary to what I'd claimed) and
+  avoided writing a dangling "separate from the SIHA one" reference as a result — wrote a
+  self-contained sentence instead. All checks clean, diff minimal (1 line).
+
+  **Two new items surfaced, not acted on:** (1) Key Takeaways item 4 also omits the SIHA half-visor
+  floor entirely — the same gap shape, previously mis-attributed as already-fixed in my own brief; (2)
+  no document states how the women's-under-18 full-face rule interacts with the BUIHA half-visor floor
+  (a genuine potential ambiguity: could a reader think BUIHA's minimum overrides the age-based full-face
+  requirement?) — flagged as a pre-existing gap the edit surfaced, not one it fixed. Both logged as new
+  open items. Safety-reviewer pass still needed before commit.
+
+- `neutral_zone_systems.md` — new Key Takeaways item 11 added stating the icing/line-change bar and
+  its cross-book divergence, verified independently against `nhl_rules.txt:8624`,
+  `iihf_rules_v1.1.txt:6673`, `hc.txt:5090-5121`. Judged a new item was right rather than folding into
+  an unrelated existing one. All checks clean, diff minimal (1 line). Agent flagged the same fact
+  likely recurs with the same summary-layer gap in `faceoffs.md`/`special_teams.md`/
+  `defending_the_rush.md` — worth a future sweep, not checked here.
+
+- `faceoffs.md` — confirmed real (not marginal) and fixed: one sentence added to Key Takeaways item 1,
+  distinguishing the post-whistle scrum-relocation rule from the pre-draw encroachment ejection rule
+  already stated there. Verified against `nhl_rules.txt` Rule 76.2, `iihf_rules_v1.1.txt` Rule 76.2,
+  `usah.txt` Rule 612(d), `hc.txt` Rule 6.3(d)(vi). All checks clean, diff minimal (1 line).
+
+- `offensive_zone_play.md` — both findings confirmed real and fixed (judged Finding 2 not marginal,
+  fixed both rather than declining the second). Key Takeaways item 5 extended with Rule 69.7's
+  rebound carve-out and its defender-fouled-you-in limit; new item 11 added for the high-stick
+  crossbar-vs-shoulder divergence, quoting USA Hockey Casebook Situation 7 verbatim. Verified against
+  `nhl_rules.txt:7258-7275,8544`, `iihf_rules_v1.1.txt:5605-5623`, `hc.txt:5292-5300`,
+  `usah.txt:4330-4336`, `usah_casebook.txt:13977-13987`. All checks clean, diff minimal (2 lines). 4 of
+  5 content-fix agents in this wave now done; sweep continuation still running.
+
+## CM/KT asymmetry sweep continued — 10 more documents checked, 5 with genuine gaps (8 findings)
+
+Sweep checked 10 of 16 remaining candidates. Clean: technique/skating.md, off-the-ice/conditioning_and_recovery.md,
+positions/switching_positions.md, foundation/rink_map.md, hockey-iq/scanning_and_anticipation.md.
+
+**New genuinely-open findings, none fixed in this pass:**
+
+- **`off-the-ice/equipment.md`** (Major) — three broken-stick rules (skating with one, disposing of one
+  over the boards — mandatory misconduct under USA Hockey Casebook/NHL/IIHF — a goaltender playing on
+  with one) entirely absent from Key Takeaways.
+- **`off-the-ice/team_play_and_culture.md`** (Major) — "sitting on the boards" is explicitly flagged in
+  the body as the one bench-culture item that's a real, penalised, physically dangerous rule (NHL Rule
+  75.2(iv), minor after one warning) — absent from Key Takeaways entirely.
+- **`technique/puck_handling.md`** (3 Major) — the can-opener/stick-between-the-legs rule; kicking an
+  opponent (match penalty in three of four books, "whether or not an injury occurs" under NHL 49.3);
+  grabbing a puck in your own crease (penalty shot/awarded goal). All three absent from Key Takeaways.
+- **`technique/passing_and_receiving.md`** (1 Major, 1 flagged Critical-leaning) — kicking an opponent
+  (same match-penalty content, recurs identically in puck_handling.md — worth fixing as a pair); **high
+  stick contact with an opponent's head/face/neck** (NHL/IIHF Rule 60, USA Hockey 620(a), Hockey Canada
+  7.6 — minor to match penalty, direct injury risk) — the longest Common Mistakes bullet in the
+  document and completely absent from Key Takeaways. Flagged by the reviewer as the strongest safety
+  finding of this whole sweep.
+- **`hockey-iq/playing_without_the_puck.md`** (Major) — charging/bumping a goaltender in the crease
+  (major plus game misconduct in all four books, mandatory under Hockey Canada 8.5(b)) absent from Key
+  Takeaways, which covers only the sightline/screening side of goaltender contact.
+
+**Coverage now stands at 28 of 39 documents** (18 + 10, minus overlap already counted). **6 documents
+remain genuinely unchecked**: `foundation/language_and_glossary.md`, `foundation/core_principles.md`,
+`off-the-ice/how_to_watch_hockey.md`, `off-the-ice/practice_and_development.md`,
+`hockey-iq/puck_support_and_spacing.md`, and `getting-started/getting_started.md` (the reviewer
+couldn't locate this last one at the path given — it's under `content/getting-started/`, not
+`content/foundation/`, a routing note for whoever picks this up next).
+
+None of these 8 new findings are fixed yet — this is a scoping result. Given the volume (13 total
+findings now logged across two sweep passes, 5 already fixed today), the remaining 8 are queued for a
+future wave rather than actioned immediately.
+
+## Safety review of the four CM/KT fixes: one real Major found and fixed, one Minor found and fixed
+
+Independent `safety-reviewer` confirmed `neutral_zone_systems.md` and `offensive_zone_play.md`'s
+fixes CONFIRMED-SAFE outright. Found a genuine Major in `uk_rules.md`: the reviewer traced the
+flagged women's-under-18/BUIHA interaction question into the primary source and found the real gap
+was different and narrower than originally worried — an ordinary BUIHA fixture has no under-18
+population at all (the source says so directly), BUT the same source carves out one case where an
+under-18 player genuinely appears: a BUIHA team's challenge match against a non-BUIHA opponent whose
+own under-18 player is then bound by the standard age-based full-face rule, not BUIHA's half-visor
+floor. Neither the body nor the new Key Takeaways sentence disclosed this. **Fixed**: one clause added
+to the body's BUIHA bullet carrying the actual carve-out, verified against
+`sources/eiha_inhouse_2026-27.txt:660-669` directly. Caught my own new quote-drift defect while fixing
+this (a falsely-terminated quote, the exact "dangerous" shape this project's tooling flags — my quote
+ended with a period where the source continues "(see Rule 25)") and corrected it by moving the period
+outside the quote marks.
+
+Also found a Minor in `faceoffs.md`: "that outer edge" (introduced without a prior "outer edge" noun
+phrase in the same Key Takeaways item) is an antecedent a listener can't resolve alone. Fixed: reworded
+to "the outer edge of the circle," self-contained.
+
+All mechanical checks re-run clean on all four files. Ready to stage.
+
+## Sixth commit-gate BLOCK: fixed half the Major, missed the other half — caught by the gate
+
+Sixth dispatch found a real, important issue: the earlier "fix" to `uk_rules.md`'s BUIHA
+challenge-match carve-out only updated the BODY bullet — the Key Takeaways sentence added in the same
+diff still stated the old, overclaiming wording flatly ("binding on every player in a BUIHA game"),
+directly contradicting the body three paragraphs above and reintroducing the exact defect the safety
+review had just closed. The gate correctly named this NOT an oversight but an incomplete fix, and
+quoted the plan's own record back to show only the body was ever claimed fixed. Also BLOCKed on C4:
+no dedicated rules-verifier pass across any of the four files' new citations (all self-verified by
+authoring agents only) — the same gap pattern as two commits ago.
+
+**Fixed**: Key Takeaways item 4 now carries the same carve-out as the body, in one sentence. All
+mechanical checks re-run clean, no new drift. Dispatched a targeted `rules-verifier` pass across all
+four files to close C4.
+
+The gate's independent re-derivation of every citation across all four files (done as due diligence,
+not a substitute for the missing rules-verifier pass) found no other errors — this was specifically a
+missed-second-instance-of-a-known-fix problem, not a wider accuracy issue.
+
+## goaltender.md wave's rules-verifier: CONFIRMED-ACCURATE, closing C4
+
+Targeted `rules-verifier` pass verified every rule citation across all four files (uk_rules.md's
+BUIHA carve-out, faceoffs.md's scrum-relocation divergence, neutral_zone_systems.md's icing/line-change
+bar, offensive_zone_play.md's Rule 69.7 and high-stick divergences) directly against primary source.
+Zero errors found. Attacked and confirmed two negative-existence claims specifically (USA Hockey has
+no post-icing substitution bar; USA Hockey/Hockey Canada have no rebound/loose-puck incidental-contact
+carve-out — the latter's Hockey Canada equivalent is if anything stricter, confirming rather than
+merely failing to refute the claim). D1/D2/D3 all explicitly CHECKED and held.
+
+## Seventh commit-gate BLOCK: the same overclaim, a third time, in a third layer nobody checked
+
+Seventh dispatch found the identical BUIHA overclaim ("binds every player in a BUIHA game") still
+live in `uk_rules.md`'s Common Mistakes bullet — a THIRD instance of the exact defect two prior fixes
+had already closed in the body and Key Takeaways, in the one layer nobody had re-swept. The gate
+correctly named this a failure of the plan's own "D9 — CHECKED, exhaustively" claim: propagation was
+checked body-to-Key-Takeaways but never re-swept Common Mistakes for the same document.
+
+**Fixed**: the Common Mistakes bullet now carries the same carve-out. Before declaring this the last
+instance, ran an exhaustive corpus-wide grep for "BUIHA" rather than assume — found one more, related
+but distinct instance in `content/off-the-ice/equipment.md` (two sites, both phrased as "BUIHA
+players"/"BUIHA hockey need a half visor... regardless of age," narrower than uk_rules.md's original
+"every player in a BUIHA game," and both already deferring to uk_rules.md as the owner document via an
+explicit cross-reference). Judged this NOT the same defect requiring an identical fix — logged as a
+new, lower-priority open item for a future round rather than extending this already seven-gate cycle
+further. All mechanical checks re-run clean on the actual fix.
+
+Dispatching a final, narrowly-scoped safety re-check on just the Common Mistakes fix before staging —
+the third and (pending verification) last leg of this specific defect.
+
+## Final safety re-check: CONFIRMED-SAFE, but caught a real process gap first
+
+Independent fresh reviewer confirmed all three uk_rules.md locations (body, Key Takeaways, Common
+Mistakes) now state the carve-out consistently, verified both quotes character-for-character against
+`sources/eiha_inhouse_2026-27.txt:660-673` again, and confirmed no fourth instance exists anywhere in
+the file (checked all 21 "BUIHA" mentions individually). Confirmed the `equipment.md` finding is
+already logged and correctly judged distinct, not a new discovery.
+
+**But it caught a real process failure first**: the Common Mistakes fix existed only in the WORKING
+TREE — I had edited the file but never re-staged it after the sixth/seventh gate cycle, so the index
+still held the old, overclaiming version. Exactly the "index doesn't match tree" gap this project's
+own standing method notes warn about repeatedly. Caught before any commit, not after — `git add`
+applied immediately, `git diff --name-only content/` now confirmed empty.
+
+All mechanical checks clean. Staging and re-dispatching the commit gate now — eighth time on this wave.
