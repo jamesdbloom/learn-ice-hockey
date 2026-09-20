@@ -85,13 +85,13 @@ record.
 
 ### Corpus content
 
-- **The IIHF's current rulebook has no "match penalty" concept anywhere in it** — discovered
-  incidentally while verifying kicking (Rule 49) and clipping (Rule 44) citations, confirmed by a
-  corpus-wide grep for "match penalty" returning zero hits across all four IIHF editions on disk
-  (`iihf_rules.txt`, `iihf_rules_v1.1.txt`, `iihf_rules_v1.0.txt`, `iihf_rules_2026-27.txt`). Any
-  corpus claim assuming an IIHF match-penalty tier for some *other* offense — not yet checked — could
-  be wrong the same way the pre-fix versions of the kicking/clipping claims in this wave were heading.
-  Worth a dedicated corpus-wide grep for "match penalty" near "IIHF" in a future wave.
+- ~~The IIHF's current rulebook has no "match penalty" concept anywhere in it, and other corpus claims
+  might assume otherwise~~ — **CHECKED, corpus-wide, nothing found.** A dedicated sentence-level sweep
+  of every "match penalty"/"IIHF" co-occurrence in `content/` (~250 sentences, plus a stricter
+  no-negation pass to catch any site positively misattributing a match-penalty tier to the IIHF) found
+  every instance already correctly stated across roughly 15 documents, independently re-verified against
+  `sources/iihf_rules_v1.1.txt` for the highest-load-bearing rule numbers (42.4, 44.3/44.4, 49.3, 60.4).
+  Close.
 - **A prompt-injection attempt, correctly ignored** — a sweep agent working on
   `content/foundation/on_ice_communication.md` reported that a tool result during its run contained
   embedded text styled as "MCP Server Instructions," directing it to create an external "Claude Docs"
@@ -175,11 +175,12 @@ record.
   neighbouring Common Mistakes bullet. Judged a completeness nuance about scoring outcome, not a safety
   defect — the instruction given ("go win the puck") remains correct either way. Recovered from
   historical-only narrative during this session's plan-bookkeeping reconciliation; low priority.
-- **Whether the Boarding/Interference rule-scope gap found in `body_contact_and_battles.md` recurs
-  elsewhere in the corpus** — never checked. The specific defect (a pre-existing sentence wrongly citing
-  NHL Roughing 51.1 for a body-check scenario the rule doesn't fit) was fixed at its one known site;
-  no sweep was run for the same misattribution pattern in other documents. Recovered from historical-only
-  narrative during this session's plan-bookkeeping reconciliation.
+- ~~Whether the Boarding/Interference rule-scope gap found in `body_contact_and_battles.md` recurs
+  elsewhere in the corpus~~ — **CHECKED, corpus-wide, nothing found.** A keyword sweep of every
+  Boarding/Roughing citation across all 39 documents (NHL/IIHF Rule 41/51, Hockey Canada 7.2/7.9, USA
+  Hockey 640, CARHA 49), each checked against primary source for whether the cited rule's real elements
+  actually fit the scenario it's attached to, found the one known site now correctly and honestly
+  scoped, and no other mismatch anywhere else. Close.
 - **A corpus-wide house-style question: disclose every undisclosed-capital-lowering quote, or accept
   silent lowering as a deliberate style choice** — the identical USA Hockey 607(a) fragment recurs with
   its sentence-initial capital silently lowered (no `[a]` bracket) in at least four separate systems
