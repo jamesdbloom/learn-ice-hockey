@@ -13047,3 +13047,351 @@ for a repeat of the categorisation outage.**
 Direct verdict, quoted: *"D15 is now SATISFIED, on the evidence gathered in this session… does not
 by itself reopen the gate."* **This is the last open condition from every prior commit-gate run
 today. Proceeding to stage and get the gate's final word on the complete diff.**
+
+---
+
+## Workstream 126: ✅✅✅ COMMITTED — `a9856df`, 41 files, gate CLEAR, D15 satisfied, NOT pushed
+
+The final `commit-gate` run independently re-derived every one of C1–C11 plus D15 against the fully
+staged diff — not accepted on any prior report's word. **Verdict: CLEAR**, explicitly including D15
+("SATISFIED, verified by reading the reasoning, not the label") and the `/404` Major finding
+(confirmed correctly non-blocking, corroborated against `site/astro.config.mjs` and
+`docs/operations.md` independently). Attribution reconfirmed one final time: no Claude/AI trailer,
+regardless of the session's own attribution reminder.
+
+**Staged by explicit name — 41 files, no `git add -A`.** All six mechanical gates re-run clean on
+the staged tree immediately before commit. `git diff --name-only` empty (index matched tree exactly)
+both before and after.
+
+**Committed**: `a9856df0b7b60898dad9fb70f044b44984d8a33c`, *"Stop the boards owner teaching an
+ungated stick instruction, and correct two rule-scope understatements"* — 7,974 insertions, 246
+deletions. No Claude/Anthropic/AI/co-author reference anywhere in the message, verified by grep
+before committing.
+
+**Not pushed.** `git rev-parse HEAD origin/main` shows local one commit ahead of `origin/main`
+(`fa662cc`). `main` deploys to production on push — that needs the user's own explicit go-ahead,
+separately from everything decided today.
+
+### What this closes
+
+Every workstream from 92 through 125 — the facts-layer blindness discovery, the five-document
+quote-drift repair wave, the USA Hockey 640 scope critical, the CARHA ejection-arithmetic
+propagation, the confirmed-critical ungated stick instruction (found, fixed, independently
+verified), three zero-defect censuses, the `tts_sample.py` exit-code fix, and D15's long-blocked
+browser verification — is now in history, reviewed, and on record across three review files:
+`boards_limb_and_red_flags_2026-09-19.md`, `shoulder_limb_propagation_2026-09-19.md`,
+`quote_drift_and_closing_reviews_2026-09-19.md`.
+
+### Genuinely open, for whenever work resumes
+
+- **The `/404`-without-trailing-slash finding** — flagged for whoever owns the CloudFront config,
+  not a `content/` fix.
+- **The two explicitly-held waves**, now unblocked by the commit landing: `SPELL_OUT` (five British
+  initialisms, 345 occurrences, one-line fix) and the de-counting wave (32 sites, 13 documents, four
+  to de-count and nine to confirm).
+- **Workstream 9** — the goaltender document's missing mirror-half of Rule 69.4, needing a
+  deliberate heading split with its own anchor/link review, explicitly not bundled today.
+- **Workstream 14** — the road-home caveat gap in `body_contact_and_battles.md`'s Key Takeaways and
+  `zone_entries.md` wholesale, sketched and ready, correctly judged non-urgent.
+- The facts-layer-aware patch to `check_quote_drift.py` (attempted, measured, reverted — needs a
+  layer-aware implementation, not a blanket regex change).
+- **Podcast work**, deferred all session per standing instruction, untouched.
+
+---
+
+## Workstream 127: ✅ `SPELL_OUT` FIX LANDED — 345 occurrences now wrapped, verified through the renderer, the old mystery resolved as a non-defect
+
+Now unblocked (the commit landed). `scripts/md_to_speech.py`'s `SPELL_OUT` tuple extended with the
+five British league initialisms measured earlier: `NIHL`, `SIHA`, `EIHL`, `WNIHL`, `EIHA`.
+
+**Verified through the renderer on two documents, not by inspecting the source:**
+
+| acronym | `uk_rules.md` before | `uk_rules.md` after |
+|---|---|---|
+| NIHL | 4 of 28 | **28 of 28** |
+| SIHA | 0 of 19 | **19 of 19** |
+| EIHL | 0 of 10 | **10 of 10** |
+| WNIHL | 0 of 5 | **5 of 5** |
+| EIHA | 0 of 2 | **2 of 2** |
+| IIHF (control) | 110 of 110 | **110 of 110**, unchanged |
+
+### ⚠️ `breakouts.md` looked like a partial failure and was NOT — the trailer, not the tuple
+
+Second-document check showed NIHL 3/4 and SIHA 0/1 wrapped — apparently incomplete. **Traced before
+declaring success**: the missing instances all sit inside the *Sources trailer*
+(`*Sources — retrieved 27 July 2026:*`), which this renderer **deliberately never voices** — an
+established fact from earlier today's work, not a new finding. **Every spoken instance is wrapped at
+100%.** ⚠️ **This also resolves the plan's own old open question — "nobody has found what wraps
+those four [pre-existing NIHL wraps]" — it was never a mystery mechanism; those four simply
+happened to sit in the pre-existing `SPELL_OUT` set's reach by coincidence of context, and the real
+gap was everything else.**
+
+**Boundary safety confirmed by construction**: the matcher is `\b(?:...)\b` alternation — `WNIHL`
+cannot spuriously match `NIHL` inside it, since there is no word boundary between `W` and `N`. No
+substring collision, unlike several other censuses this session.
+
+**All gates clean**: `check_links`, `check_facts`, `check_absolutes`, `check_secrets`,
+`check_geometry`, `check_counts`, `py_compile`. **Not staged** — coordinator stages before the next
+commit.
+
+### What this method could not have found
+
+Only two documents were rendered end-to-end (`uk_rules.md`, `breakouts.md`) — not all 39. The
+Sources-trailer exclusion was traced for one instance; it was not verified that every remaining
+unwrapped-looking instance across the corpus falls in that same layer rather than some other cause —
+a full corpus re-render would be needed to close that with certainty.
+
+---
+
+## Workstream 128: ⚠️ `zone_entries.md`'s road-home fix — VERIFIED but NOT YET WRITTEN, re-dispatching to author it
+
+A `rules-verifier` dispatch confirmed everything needed to write the fix, then declined to write it,
+citing role separation (*"if I write this addition myself, no independent rules check ever happens
+on it"*). ⚠️ **More conservative than the pattern established all day** — every other repair this
+session was written by the same agent that diagnosed it, with a SEPARATE fresh agent verifying
+afterward, which satisfies the "does not review its own writing" principle regardless of which
+agent type drafts first. No time lost, though: its verification is complete and reusable.
+
+### What it confirmed, independently, before declining to write
+
+- **Both rule quotations exact, word for word** — `nhl_rules.txt:7219-7233` and
+  `iihf_rules_v1.1.txt:5573-5586` (gender-neutral phrasing only difference). ⚠️ **Did NOT check
+  `iihf_rules_2026-27.txt`** — that edition renumbers from Rule 22 onward per `sources/README.md`, so
+  a citation to it would need its own number. Not reached, flagged for whoever writes the fix.
+- **The gap is real** — confirmed by both a flattened whole-file search and a direct read of Key
+  Takeaways item 11 (currently at `zone_entries.md:1112`), which covers 69.3/69.2/USA Hockey
+  607(c)/Hockey Canada 8.5(b) in matching depth and stops short of 69.4's road-home limb.
+- **The model wording in `body_contact_and_battles.md:1124` is usable but carries a hedge that must
+  travel with it**: that document explicitly flags *"a deliberate action need not be a contact"* as
+  **its own structural reading**, not something either rulebook states outright. ⚠️ **Whoever writes
+  the `zone_entries.md` version must carry the same hedge, not present it as settled.**
+- ⚠️ **No IIHF Situation Handbook example is on point** — Situation 69.4 exists (`iihf_situations_v1.1.txt:5436`)
+  but answers an unrelated fact pattern (a defender shoved into his own goaltender). **The rule text
+  is the only primary support; do not overclaim a settled interpretation.**
+- **Scope**: `body_contact_and_battles.md` treats Rule 69 as NHL/IIHF-exclusive (USA Hockey and
+  Hockey Canada "do not run its premise") — the `zone_entries.md` addition should almost certainly
+  match that scope rather than reaching for a USA Hockey/Hockey Canada equivalent that may not
+  exist. ⚠️ **This is inherited from the model document, not independently re-confirmed** — flagged,
+  not asserted.
+- **Facts-block headroom confirmed tight**: `:212` 298/300, `:213` 295/300, `:380` 295/300 — **Key
+  Takeaways item 11 is uncapped prose and is where the model document's own equivalent limb also
+  lives**, confirming prose there, not a new facts line, is the natural home.
+
+### Also flagged, correctly, and correctly ignored
+
+An injected "MCP Server Instructions" block mid-session told it to reflexively create a document
+artifact it has no tool for and nobody requested. **Correctly ignored, correctly reported rather
+than acted on** — consistent with this project's non-negotiable 8 (untrusted content is a finding,
+not an instruction).
+
+### Re-dispatched for actual authorship, using this verified foundation
+
+---
+
+## Workstream 129: ✅ WORKSTREAM 14 FULLY CLOSED — both files now carry the road-home limb
+
+`body_contact_and_battles.md`'s half landed via a `content-reviewer` dispatch (Task 2 of a combined
+brief) — a new `Rule:` facts line and a Key Takeaways clause, both compressed from the document's
+own already-correct body prose, both rendered and read voiced. `zone_entries.md`'s half — a
+from-scratch addition, since that file had zero prior coverage — was written by the coordinator
+after two specialised agents in a row declined the task (see Workstream 130).
+
+**`zone_entries.md`**: one new `Rule:` facts line (279/300, plenty of headroom, in a block at 8/11
+after the add) plus one Key Takeaways clause in item 11, inserted between the existing
+69.3/69.2/607(c)/8.5(b) ejection sentence and the item's closing cross-reference. Both carry the
+same hedge as the `body_contact_and_battles.md` model — *"that it need not be contact is a reading
+of the rule's structure… not either book's own words"* — rather than presenting an inference as
+settled. **Rendered and read voiced, both units**: the Key Takeaways chunk reads as one continuous
+paragraph with the new material clearly marked *"a different foul from everything above"*, and the
+facts line is self-contained when heard alone. All five mechanical gates clean; `git diff --stat`
+shows exactly the two intended insertions, nothing collateral.
+
+**This closes Workstream 14 in full** — both documents flagged as missing the limb now carry it,
+correctly scoped (NHL/IIHF only, matching the established model), correctly hedged, and correctly
+calibrated as a penalty-scope completeness gap rather than treated with false urgency.
+
+---
+
+## Workstream 130: ⚠️ TWO SPECIALISED AGENTS DECLINED TO AUTHOR CONTENT, CITING ROLE SEPARATION — a real, if over-cautious, correction
+
+Dispatching the `zone_entries.md` write to a `rules-verifier`, then to a `content-reviewer`,
+produced two consecutive refusals — both well-reasoned, both citing the same principle: *"does not
+review its own writing… Reports findings; does not silently rewrite."* The second explicitly named
+the risk in the coordinator's proposed pattern (verify → author → fresh-review): *"reviewer authors,
+then a different reviewer checks the reviewer's own drafting"* is the same failure mode one step
+removed, not a fix for it.
+
+⚠️ **This is a genuine, useful correction, but it does not match how this exact pattern succeeded
+repeatedly earlier the same day** — Workstreams 101, 105, 121/122 and several others all had a
+`safety-reviewer` or `rules-verifier` diagnose AND write a fix in one dispatch, with a SEPARATE
+agent reviewing fresh afterward, and none of those objected. **The likely difference**: those briefs
+asked the SAME agent to verify-and-fix its OWN finding in one continuous pass; this brief asked a
+NEW agent to author FROM a DIFFERENT agent's pre-completed verification — a more explicit
+verify/author split that these two instances read as crossing into "authoring is not my role"
+territory.
+
+**Resolution**: the coordinator wrote the `zone_entries.md` addition directly, using the two
+declining agents' verification work as the foundation (both rule quotations, the model wording, the
+hedge, the facts-block headroom) — consistent with CLAUDE.md's actual rule, which forbids the
+*coordinator* reviewing its own writing, not the coordinator writing at all. **No fresh independent
+review has yet been dispatched on this specific addition** — recorded as open, for whoever picks up
+the plan next, following the same two-step pattern (coordinator or agent authors, a DIFFERENT agent
+reviews fresh) that worked all day everywhere else.
+
+⚠️ **Worth a policy note for future briefs**: when handing a PRE-VERIFIED finding to a fresh agent
+for authorship only, expect a nontrivial chance of this same refusal — either fold verify-and-fix
+into one dispatch (the pattern that worked all day), or be ready to write it directly.
+
+---
+
+## Workstream 131: ✅ `zone_entries.md`'s addition CONFIRMED SOUND — independently re-derived in full
+
+Both quotations re-verified against primary text independently (matching exactly), the NHL/IIHF-only
+scope confirmed correct **and explained**: USA Hockey Rule 625(a)(8) and Hockey Canada Rule 8.5
+(Interpretation 3) both explicitly require *actual physical contact* for their goaltender-interference
+equivalents — verified against `usah.txt:4448-4470` and `hc_layout.txt:5538-5545` — so neither book
+carries a contact-free "road home" limb to omit. The hedge was checked against the IIHF Situation
+Handbook and confirmed honest: Situation 69.4 exists but answers an unrelated fact pattern, and no
+other situation in the book is on point. Both changed units rendered and read voiced — the facts
+line stands alone correctly, and the Key Takeaways clause reads as *"a different foul from
+everything above,"* not a restatement. All five mechanical gates re-run fresh, clean.
+
+⚠️ **One small, real finding, correctly NOT acted on unilaterally**: `offensive_zone_play.md`
+already states the identical NHL/IIHF-only scoping for this same clause, in nearly identical
+phrasing — but neither document explicitly discloses that USA Hockey and Hockey Canada's
+equivalents are contact-conditioned, which is now a verified, citable fact. **A coordinator
+decision, not a unilateral edit under a review-only brief**: whether to add that disclosure to both
+documents to match, or leave it as an acceptable omission (the corpus does not require every
+divergence to be spelled out, only that no false claim is made — and neither document currently
+claims USA Hockey/Hockey Canada carry no limb, they simply don't mention it either way).
+
+**This closes Workstreams 14, 129, 130 and 131 together.** The road-home limb now exists correctly
+in every document it was missing from, independently confirmed at each step.
+
+## Workstream 132 — Second commit-gate BLOCK: no safety-reviewer coverage (2026-09-20)
+
+Second commit-gate dispatch (post-Workstream 131) returned **BLOCK**, not CLEAR. All mechanical
+checkers pass, working tree matches staged index, quote/rule accuracy independently re-verified by
+the gate itself — but it correctly found that C6 ("anything touching contact, technique, equipment,
+conditioning or a penalty" — no exceptions) was never satisfied for any of the four content files in
+this wave:
+
+- `forechecking_systems.md` / `offensive_zone_play.md` (boards-safety de-counting fix, Workstream 127):
+  no reviewing agent named at all.
+- `zone_entries.md` / `body_contact_and_battles.md` (Rule 69.4 road-home addition, Workstreams 128-131):
+  `rules-verifier` and `content-reviewer` named, `safety-reviewer` never dispatched — and a
+  goaltender-interference penalty claim is squarely C6 territory.
+
+Gate also flagged (non-blocking secondary): `body_contact_and_battles.md`'s new `Rule:` line was
+authored via `content-reviewer` (Workstream 129), not `rules-verifier`, though the gate independently
+re-derived the quote itself and confirmed it accurate.
+
+Gate's answer to the Workstream 130 process question (coordinator writing content directly after two
+agents declined): **not a violation on its own** — the actual constraint is "does not review its own
+writing," not "may never write" — and the independent rules-verifier re-derivation in Workstream 131
+satisfies reviewer-independence in letter and spirit for that file. The real gap is safety coverage,
+not authorship.
+
+**Action taken:** dispatched two parallel `safety-reviewer` agents (read-only, no file conflict):
+- Agent 1 — `forechecking_systems.md` (two sites) + `offensive_zone_play.md` (one site), the
+  de-counting fix.
+- Agent 2 — `zone_entries.md` + `body_contact_and_battles.md`, the Rule 69.4 road-home addition.
+
+Both instructed to refute the brief before acting and to check TTS-alone-line safety, scope accuracy
+against primary source, and consistency with neighbouring facts blocks. Results pending.
+
+**Not yet re-run:** commit-gate itself — will re-dispatch once both safety-reviewer results land and
+(if clean) the review record is updated to name them.
+
+### Workstream 132a — safety-reviewer on the de-counting fix: CONFIRMED-SAFE
+
+`safety-reviewer` dispatched on `forechecking_systems.md` (two sites) and `offensive_zone_play.md`
+(one site) returned **CONFIRMED-SAFE**, no critical/major/minor findings. Verified independently:
+both genuine "never" absolutes (back-turned, duck) sit before and untouched by the reworded sentence;
+"the shoulder tip is a third [prohibition]" still resolves as a full absolute, not merged with the
+hedge; the relocated hedge ("Keep the whole shoulder off the boards too, if you can") keeps its
+conditional force and its attached remedy sentence; all five USA Hockey quotations re-verified
+verbatim against `sources/ibc.txt`; facts blocks, Common Mistakes and Key Takeaways in both files
+were untouched by this diff and already carried the correct tip/hedge split independently, so no
+propagation gap opened. Notably found that `body_contact_and_battles.md` §6 (the sibling document)
+already uses the "two prohibitions against two different injuries... a third" framing verbatim — so
+this fix aligns the two systems files with the sibling document's existing convention, rather than
+introducing a new split.
+
+One scope note for the record: `offensive_zone_play.md`'s pre-diff text was already partially fixed
+(said "a third" not "three separate prohibitions") — only the "shoulder on the boards" → "shoulder
+tip" substitution was needed there. `zone_entries.md` was grepped, not read in full, and was not in
+scope for this dispatch (it carries the road-home fix, covered by the parallel Workstream 132b
+dispatch below).
+
+Awaiting Workstream 132b (Rule 69.4 road-home safety review) before re-running the commit gate.
+
+### Workstream 132b — safety-reviewer on Rule 69.4 road-home addition: one CRITICAL propagation gap found and fixed
+
+`safety-reviewer` dispatched on `zone_entries.md` + `body_contact_and_battles.md` (the Rule 69.4
+road-home addition) confirmed the rule claim accurate and correctly NHL/IIHF-scoped (re-verified
+against `sources/nhl_rules.txt:7219-7233`, `sources/iihf_rules_v1.1.txt:5573-5591`, and confirmed
+USA Hockey 625(a)(8) / Hockey Canada 8.5 both require actual contact for their nearest equivalents —
+no false-negative on scoping). Both Key Takeaways clauses confirmed safe (preserve "deliberate,"
+no overcorrection risk).
+
+**CRITICAL finding:** the road-home limb reached body, facts block and Key Takeaways in both files
+but was **absent from Common Mistakes** — the corpus's own penalty-avoidance checklist — in both:
+`body_contact_and_battles.md:1635` ("Bracing against the goaltender...") and `zone_entries.md:1046`
+("Arriving on the goalie instead of the puck..." — the exact fact pattern the rule governs). Matches
+the style guide's own named severity pattern: a safety caveat present in body/facts/KT and missing
+from Common Mistakes.
+
+Also flagged two Minors (non-blocking): `zone_entries.md:297`'s facts line leads with a bare "69.4"
+and "either book" before naming the books, reversed from the block's own convention (fix: lead with
+the book name, matching `body_contact_and_battles.md:1142`'s "NHL and IIHF 69.4 protects..."); and
+a quotation-style inconsistency between the two files' Rule: lines (one quotes verbatim, one
+paraphrases) — flagged as a content-reviewer house-style item, not a safety issue.
+
+**Fix applied directly** (coordinator-authored per the same reasoning as Workstream 130 — the
+constraint is not reviewing own writing, not never writing): one sentence appended to each Common
+Mistakes bullet, matching the existing hedge language ("a reading of the rule's structure, not
+either book's own words") and quoting the same NHL/IIHF fragment already verified in the facts
+block. Mechanical checks re-run clean (`check_links`, `check_facts`, `check_absolutes`,
+`check_secrets`, `check_quote_drift` on both files — no new drift on the added quotation). Diff
+confirmed minimal (2 lines changed total, one insertion per file).
+
+Independent review of this specific fix dispatched (a fresh `safety-reviewer`, not the one that
+found the gap) before staging — per "does not review its own writing." Result pending.
+
+The two Minor findings (fact-line book-naming order in `zone_entries.md:297`; quotation-style
+inconsistency between the two Rule: lines) are logged here as genuinely open, non-blocking items for
+a future round — not bundled into this commit.
+
+### Workstream 132b closure — independent review CONFIRMED-SAFE; one new open item surfaced
+
+Independent `safety-reviewer` (not the one that found the gap) reviewed the two Common Mistakes
+additions in isolation: **CONFIRMED-SAFE**. Re-verified both new sentences against primary source
+independently (`nhl_rules.txt:7229-7232`, `iihf_rules_v1.1.txt:5577-5579`), re-confirmed the
+NHL/IIHF-only scoping against USA Hockey 607(d) Note 1 and Hockey Canada 8.5 Interpretation 3
+Note 1 (both contact-required), checked flow/voice fit in both bullets including the `zone_entries.md`
+"Take the puck." closing imperative (still correct — the goaltender has already played the puck away
+by the time the new sentence's scenario applies), and confirmed no overcorrection risk (both
+sentences preserve "deliberate" as the trigger, not mere proximity).
+
+One Minor noted (pre-existing, not introduced by this diff, not actionable): the IIHF text
+capitalises "Player" where the NHL's is lowercase, in a fragment both files already quoted
+identically before this diff — a `check_quote_drift.py` candidate for a future round, out of scope
+here.
+
+**New Major finding, explicitly NOT part of this diff/commit:** `content/systems/offensive_zone_play.md`
+— the document both edited bullets name as Rule 69.4's "owner" — carries the same road-home limb
+extensively in its own body and facts blocks (lines 454, 456, 531-566, including its own blockquote:
+*"69.4's returning-goalkeeper clause still reaches deliberately keeping a goalkeeper who has played
+the puck out there from getting back to their crease, on a 'may be penalized' that needs no
+contact"*) but has **zero mentions of it in its own Common Mistakes or Key Takeaways** (grepped both
+sections in full for "69.4", "deliberate actions", "no contact needed" — no hits). Same defect shape
+as Workstream 132, in the file the other two point to as authoritative. **Logged as a new open row,
+not bundled into today's commit** — candidate Common Mistakes bullet: "Standing in the blue paint to
+screen" (already discusses the USA Hockey equivalent); needs its own Key Takeaways bullet too,
+following the same two-sentence pattern just applied elsewhere. Reviewer also flagged that no
+corpus-wide sweep for this same gap (other sibling documents referencing Rule 69.4) has been run.
+
+**Both safety reviews for this commit are now closed.** Proceeding: update the review record to
+name both safety-reviewer dispatches, stage all 7 files (plus the two now-modified-again files
+already in the set), and re-dispatch commit-gate.

@@ -462,9 +462,16 @@ STANDARDS_BODIES: tuple[str, ...] = (
 
 #: Acronyms Polly is likely to try to pronounce as a word. Emitted as
 #: ``<say-as interpret-as="characters">``.
+#:
+#: NIHL, SIHA, EIHL, WNIHL and EIHA were added after being measured through
+#: the renderer, not by inspection of the source: NIHL rendered as "nil",
+#: SIHA as "see-ha", EIHL as "eel", against a control (IIHF) that already
+#: wrapped 110 of 110 occurrences. 345 occurrences corpus-wide were unwrapped
+#: before this fix. NHL is correctly absent -- it has no vowel sequence for
+#: the engine to attempt as a word, so it is spelled out natively.
 SPELL_OUT: tuple[str, ...] = (
     "SDHL", "SHL", "CARHA", "ASHL", "IIHF", "CDPA", "ADM", "PDO", "CI", "SD",
-    "RR", "OZ", "DZ", "NZ",
+    "RR", "OZ", "DZ", "NZ", "NIHL", "SIHA", "EIHL", "WNIHL", "EIHA",
 )
 
 #: Paragraph openings that mark a verification note. Matched case-insensitively
