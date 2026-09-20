@@ -97,9 +97,9 @@ record.
   directions attempted, mostly one direction done thoroughly). The five items above came from that
   partial sweep; the other 33 documents, including the two most rule-dense (`rules_primer.md`,
   `uk_rules.md`), are unchecked.
-- **The renderer drops the word "clause" from every multi-clause citation, ~34 sites** (originally
-  Workstream 102, archive) — never confirmed fixed in a later workstream. Verify current state before
-  treating as live; if still present, it's a read-aloud-integrity defect, not a rules error.
+- ~~The renderer drops the word "clause" from every multi-clause citation~~ — **FIXED** (see below,
+  same day). `scripts/md_to_speech.py`'s citation regex was widened and verified against the real
+  pipeline, zero survivors corpus-wide.
 - **A cross-document facts-layer census has never been run as one pass** (originally Workstream 19,
   archive) — the traceability check inside one document cannot distinguish "this limb doesn't belong
   here" from "this is a propagation gap"; only a census across documents that share a limb can. At
@@ -437,3 +437,77 @@ the Interpretation explicitly. A precision nit, not an error.
 
 Writing the explicit D1-D15 dimension-coverage section into the review record now, then re-running the
 mechanical checks and dispatching the fifth commit-gate.
+
+## Fifth commit-gate CLEAR — fourth commit of the day landed
+
+Fifth dispatch independently re-derived 6 citations from `goaltender.md` item 15 across four
+rulebooks plus a Situation Handbook, re-confirmed both twice-fixed files hold in their current staged
+text, confirmed §5's dimension-coverage section exists and is genuine, and confirmed HEAD/index/tree
+state throughout. **CLEAR.**
+
+**Committed** as `ea4d793` — "Close eight summary-layer gaps, fix a wrong citation two propagations
+deep, and confirm a renderer defect is still live." 12 files changed. Commit message verified free of
+any Claude/Anthropic/co-author mention. Not pushed — remains the user's call.
+
+**Genuinely open, carried forward:** the renderer clause-dropping defect (confirmed live, root cause
+identified, not fixed); 21 of 39 documents unchecked in the CM/KT asymmetry sweep, plus 5 new findings
+from this wave's continuation not yet fixed (uk_rules.md BUIHA half-visor, neutral_zone_systems.md
+icing/line-change bar, 2 offensive_zone_play.md Minors, faceoffs.md Minor); goaltender.md's Rule 69.7
+counterweight omission (non-blocking completeness nuance); whether the Boarding/Interference scope
+gap recurs elsewhere in the corpus (never checked); the check_quote_drift.py regex's own structural
+fix (scoped, not implemented); the HARD_MAX style-guide change's own content-reviewer pass (never
+dispatched).
+
+## Renderer fix: the clause-dropping defect (Workstream 102) is fixed and verified end-to-end
+
+Confirmed live earlier today by rendering the pipeline; now fixed in `scripts/md_to_speech.py`.
+
+**Root cause**: three citation regexes (`rule-citation`, `bare-clause-citation`, `usa-clause-citation`)
+each captured only a SINGLE clause token per bracket pair — `640(b)` worked, but a list or range
+packed into ONE bracket (`640(b, c, d, e or f)`, `640(b–f)`) matched none of them and fell through to
+generic bracket-stripping, where **brackets are silent in this renderer** — so the clause letters and
+the joining word simply vanished from the audio.
+
+**Fix**: widened each regex's first-clause capture group to also match a list/range inside one
+bracket (comma, "and", "or", or a dash between tokens), and added a new shared function
+(`_expand_clause_list`) that expands the captured content into fully-spoken form — "clause b, clause
+c, clause d, clause e or clause f" / "clause b to clause f" — repeating "clause" before every item,
+matching the convention already used for the separate-bracket form (`RE_CLAUSE_TAIL`). A single-token
+bracket takes the same code path as always (the new expansion loop runs zero times), so no existing
+behaviour changed.
+
+**Verified, in this order:**
+1. Unit-level: all five known corpus patterns (`640(b)`, `640(b-f)`, `640(b–f)`,
+   `640(b, c, d, e or f)`, `621(b and c)`, `615(a, d and e)`) render correctly; existing single-clause
+   and no-"Rule"-prefix cases unaffected.
+2. `python3 scripts/md_to_speech.py --self-test` — 260 assertions, 2 failures, both pre-existing
+   (confirmed identical failure count/messages before and after this change via `git stash`) — zero
+   new regressions.
+3. Rendered the actual pipeline for all 8 originally-affected documents
+   (`systems/breakouts.md`, `foundation/rules_primer.md`, `systems/game_management.md`,
+   `technique/body_contact_and_battles.md`, `hockey-iq/playing_without_the_puck.md`,
+   `hockey-iq/time_and_space.md`, `systems/offensive_zone_play.md`,
+   `systems/forechecking_systems.md`) and inspected the shipped `.ssml` output directly — every
+   previously-mangled site now reads correctly.
+4. **The original "34 sites" figure was itself stale** — a general-pattern recount (matching the
+   exact shape the widened regex now accepts) found the true corpus-wide total to be higher and
+   growing with each recount (a commit-gate's own partial recheck found 43). Re-rendered all 15
+   documents the general pattern actually appears in and grepped every `.ssml` for a raw
+   digit-then-paren survivor: **zero, corpus-wide.** That check — not any of the three numbers this
+   workstream produced — is what settles it; no count is written here as final, per this project's
+   own repeated lesson about a census going stale the moment it's quoted.
+
+**One narrower, distinct pattern found and NOT fixed here**: 2 sites, both in
+`content/systems/offensive_zone_play.md`, use a BARE `(b, c, d, e or f)` bracket with no rule number
+attached at all — an elliptical back-reference to a number stated earlier in the same sentence
+("640(g) is a major... where an action under (b, c, d, e or f) recklessly endangers..."). This is
+structurally different: fixing it safely would require tracking the last-mentioned rule number across
+matches within a sentence, which no current rule attempts and which risks misattributing a bracket to
+the wrong preceding number in a denser sentence. Logged as a new, narrow open item — likely best fixed
+as a content edit (restating the number explicitly, e.g. "640(b, c, d, e or f)") rather than a
+renderer change, since the source sentence already establishes 640 a few words earlier.
+
+All mechanical checks (`check_links.py`, `check_facts.py`, `check_absolutes.py`) re-run clean. This is
+a `scripts/` change with no `content/` files touched — dispatching a commit-gate for due diligence
+(TTS rendering is safety-adjacent, per this session's own earlier chunk-boundary CRITICAL) but this
+doesn't need rules-verifier/safety-reviewer coverage since no content claim changed.

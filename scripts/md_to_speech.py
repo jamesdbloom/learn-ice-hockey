@@ -807,7 +807,7 @@ def _rule_citation(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {label} {_clause_words(clause, match.string)}"
+        out += f", {_expand_clause_list(clause, match.string, label)}"
     # ⚠️ THE THIRD CODE PATH. `_bare_clause` and `_usa_clause_citation` gained
     # clause-tail handling first; this one -- the form WITH the word "Rule" --
     # was missed, so `Rule 8.1(c)/(d)` still dropped its second clause while
@@ -849,6 +849,51 @@ def _clause_words(clause: str, context: str = "") -> str:
     if sub:
         return f"{sub.group(1)} point {int_to_words(int(sub.group(2)))}"
     return clause  # a lettered clause: '(b)' -> 'clause b'
+
+
+#: Splits the CONTENT of one bracket that packs several clauses together --
+#: "b, c, d, e or f" or "b–f" -- into (token, separator, token, ...).
+RE_CLAUSE_LIST_SEP = re.compile(r"\s*(,|\band\b|\bor\b|[-–—])\s*")
+
+
+def _expand_clause_list(raw: str, context: str, label: str) -> str:
+    """One bracket's content -- a single clause, or several packed into ONE
+    bracket and joined by a comma, 'and', 'or' or a dash -- fully spoken,
+    repeating `label` before every clause it names.
+
+    ⚠️ CONFIRMED LIVE IN SHIPPED AUDIO, 20 September 2026, by rendering the
+    pipeline and reading the `.ssml` output, not by reading this file.
+    NO SITE COUNT IS WRITTEN HERE -- the first estimate (34 sites, 11
+    documents) was itself stale the moment a general-pattern recount was run;
+    a corpus-wide grep for a 2-3-digit number immediately followed by a
+    comma/and/or/dash-joined bracket is the reproducible check, not a number
+    quoted from this comment. `640(b, c, d, e or f)` and `640(b–f)` pack every
+    clause into ONE bracket -- unlike `RE_CLAUSE_TAIL`'s one-bracket-per-clause
+    form, "(a), (b)" -- and no citation rule's `c1` group matched more than a
+    single token, so the whole bracket fell through to generic bracket
+    stripping. **Brackets are silent in this renderer.** The clause letters
+    and the joining word were not mangled -- they were simply gone: "Rule six
+    hundred and forty(b to f)" reached a listener as inert punctuation where
+    five sub-sections should have been named. This function is called only
+    when the widened `c1` capture in `rule-citation`, `bare-clause-citation`
+    and `usa-clause-citation` matches more than one token; a single token
+    takes the same path it always did (the loop below runs zero times).
+    """
+    parts = RE_CLAUSE_LIST_SEP.split(raw)
+    out = f"{label} {_clause_words(parts[0], context)}"
+    for i in range(1, len(parts), 2):
+        sep, token = parts[i].lower(), parts[i + 1]
+        if sep == "or":
+            joiner = "or"
+        elif sep == "and":
+            joiner = "and"
+        elif sep in ("-", "–", "—"):
+            joiner = "to"
+        else:
+            joiner = ","
+        piece = _clause_words(token, context)
+        out += f", {label} {piece}" if joiner == "," else f" {joiner} {label} {piece}"
+    return out
 
 
 def _bare_roman_marker(match: re.Match) -> str:
@@ -1003,7 +1048,7 @@ def _bare_clause(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {label} {_clause_words(clause, match.string)}"
+        out += f", {_expand_clause_list(clause, match.string, label)}"
     return out + _clause_tail(match.groupdict().get("more"))
 
 
@@ -1149,7 +1194,7 @@ def _usa_clause_citation(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {label} {_clause_words(clause, match.string)}"
+        out += f", {_expand_clause_list(clause, match.string, label)}"
     out += _clause_tail(match.groupdict().get("more"))
     return out
 
@@ -1712,7 +1757,12 @@ NOTATION_RULES: tuple[Rule, ...] = (
             # never got the chance. 2026/27 was hit too, not just 2026-27.
             r"\b(?P<word>Rules?)\s+(?P<major>\d{1,3})(?!\d)"
             r"(?:\.(?P<minor>\d{1,2}))?"
-            r"(?:[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
+            # ⚠️ `c1` matches a LIST or RANGE packed into one bracket --
+            # "(b, c, d, e or f)", "(b–f)" -- as well as a single clause, so
+            # `_rule_citation` can voice every sub-section named. See
+            # `_expand_clause_list`.
+            r"(?:[ ]?\((?P<c1>(?:[ivxIVX]{1,6}|[a-z]|\d{1,2})"
+            r"(?:\s*(?:,|\band\b|\bor\b|[-–—])\s*(?:[ivxIVX]{1,6}|[a-z]|\d{1,2}))*)\))?"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
             r"(?P<more>(?:(?:,|/|[ ]and|[-–—])[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
@@ -1730,7 +1780,8 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "bare-clause-citation",
         re.compile(
             r"(?<![\w.])(?P<major>\d{1,3})\.(?P<minor>\d{1,2})"
-            r"[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z])\)"
+            r"[ ]?\((?P<c1>(?:[ivxIVX]{1,6}|[a-z])"
+            r"(?:\s*(?:,|\band\b|\bor\b|[-–—])\s*(?:[ivxIVX]{1,6}|[a-z]))*)\)"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
             r"(?P<more>(?:(?:,|/|[ ]and|[-–—])[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
@@ -1754,7 +1805,8 @@ NOTATION_RULES: tuple[Rule, ...] = (
             # that refuted a corpus negative about slap shots. Widening to two
             # digits cannot swallow a season or a page number: both branches
             # require an immediately following parenthesised clause letter.
-            r"(?<![\w.])(?P<major>\d{2,3})[ ]?\((?P<c1>[ivxIVX]{1,6}|[a-z]\.\d|[a-z])\)"
+            r"(?<![\w.])(?P<major>\d{2,3})[ ]?\((?P<c1>(?:[ivxIVX]{1,6}|[a-z]\.\d|[a-z])"
+            r"(?:\s*(?:,|\band\b|\bor\b|[-–—])\s*(?:[ivxIVX]{1,6}|[a-z]\.\d|[a-z]))*)\)"
             r"(?:[ ]?\((?P<c2>[ivxIVX]{1,6}|[a-z]|\d{1,2})\))?"
             r"(?P<more>(?:(?:,|/|[ ]and|[-–—])[ ]?\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\))+)?"
         ),
