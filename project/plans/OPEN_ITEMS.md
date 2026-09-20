@@ -261,15 +261,19 @@ record.
 
 ## Push status
 
-⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit and must be
-re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or from an earlier
-paragraph in this file.** As of the sixth backlog wave's commit, local `main` is **4 commits ahead** of
-`origin/main`: `2401efc`, `3be7066`, `2671d7a`, `11d7602` (plus a fifth once this wave's own commit
-lands). None of these have been pushed. Pushing needs the user's explicit go-ahead — `main` deploys to
-production on push, and approval to commit is never approval to push. (The two-commits/`21de48f`/
-`5dc4d4d` figure this section previously stated was itself already stale by the time of the very next
-commit and is preserved nowhere else — a earlier illustration of exactly the live-fact-vs-narrative
-staleness this file's standing method note now warns about generally.)
+⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
+push, and must be re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or
+from an earlier paragraph in this file.** As of the seventh backlog wave's commit, local `main` is
+**1 commit ahead** of `origin/main`: `0dec77b`. The user pushed everything through `4dbe3af` themselves,
+from outside this session (confirmed via `git reflog show origin/main`, "update by push" attributed to
+the repo owner) — this is the first time in the session the push count dropped rather than grew, and it
+happened without this session initiating or being asked about it, which is expected: the user's own
+pushes need no permission from this session, only this session's own pushes do. `0dec77b` has not been
+pushed and needs the user's explicit go-ahead before that changes. (The two-commits/`21de48f`/`5dc4d4d`
+and four-commits/`2401efc`-through-`11d7602` figures this section previously stated were themselves
+stale within one commit each time — a running illustration of exactly the live-fact-vs-narrative
+staleness this file's standing method note warns about generally, and now also of the fact that a push
+from outside this session can change this number without this session's own action.)
 
 ## In progress — Workstream 147 wave (2026-09-20, post-consolidation)
 
