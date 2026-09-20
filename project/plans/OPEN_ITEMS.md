@@ -201,10 +201,9 @@ pointing back here and an inline annotation on its Conclusion's overstated traff
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or
-from an earlier paragraph in this file.** As of 20 September 2026, local `main` is **1 commit ahead**
-of `origin/main`: `ce43613` ("Cut the plan folder from 3,885 lines to under 1,100, and stop a pathway
-fix from overclaiming what it fixed"), committed and not pushed. The traffic-plan pathway-assembly
-wave documented above (the four `pathways.json` entries, the `getting_started.md`/`goaltender.md`/
-`practice_and_development.md` fixes, and this consolidation's own updates) is unstaged working-tree
-content, not yet committed. Push remains the user's own call throughout — this session pushes nothing without
+from an earlier paragraph in this file.** As of 20 September 2026, local `main` is **2 commits ahead**
+of `origin/main`: `ce43613` (the plan-folder consolidation) and `82c09d2` (the traffic-plan
+pathway-assembly wave documented above — the checking-permission fix, the goaltender.md fix, the four
+`pathways.json` entries, and the three-round `practice_and_development.md` safety fix). Both committed,
+neither pushed. Push remains the user's own call throughout — this session pushes nothing without
 explicit go-ahead.
