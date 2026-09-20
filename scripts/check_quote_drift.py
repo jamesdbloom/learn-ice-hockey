@@ -66,6 +66,25 @@ table-of-contents hit cannot masquerade as the body.
   defect.
 - **A sentence-initial quotation may legitimately carry the source's capital.**
   Only reading the source decides.
+- ⚠️ **THE `[x]` EXEMPTION ONLY STRIPS A SINGLE LETTER.** `clean_quote()`'s bracket
+  regex is ``\\[([a-zA-Z])\\]`` -- one character. A genuinely disclosed multi-letter
+  insertion (`delay[ing]`, `kick[ing]`) still reports NOTFOUND, because the
+  bracket survives into the normalised comparison. Confirmed twice in one
+  triage, both correct content wrongly flagged: `faceoffs.md:218` ("delays" ->
+  "delay[ing]") and `faceoffs.md:636` ("kicks" -> "kick[ing]"), both verified
+  verbatim against `sources/hc.txt` once the bracket is read as intended. A
+  NOTFOUND fact worth a second look: does the quoted fragment carry a bracket
+  longer than one character before concluding it is missing from `sources/`.
+- ⚠️ **A THIRD FALSE-POSITIVE CLASS: self-quoted coaching maxims, never claimed
+  as citations.** `Key:`/`Never:`/`Convention:` facts routinely put a coined
+  phrase or rhetorical question in quotation marks purely for emphasis --
+  *"what is behind me, and who is it?"*, *"did I have more time than I
+  thought?"*, *"two wide, middle to the backchecker"*. These correctly score
+  NOTFOUND: they were never claimed to come from a rulebook or article, quoted
+  for voice rather than for provenance. Confirmed a dozen-plus instances
+  corpus-wide in one triage pass. Distinguish from a genuine missing citation
+  by asking whether the surrounding fact reads as attributing the quotation to
+  a source at all, or is simply using quotation marks as emphasis.
 
 WHAT IT CANNOT SEE -- and this list is the honest half
 ------------------------------------------------------

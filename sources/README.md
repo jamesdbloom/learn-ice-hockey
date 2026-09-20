@@ -828,6 +828,16 @@ hand on 18 September 2026 while closing an unrelated row:
 **Both were reached from `content/hockey-iq/playing_without_the_puck.md`, whose citations of
 them are verbatim and correct.** No content was changed.
 
+⚠️ **A third instance, found 20 September 2026, in a different source and a different book.**
+**USA Hockey Casebook, Rule 607, Situation 4, `usah_casebook.txt:11683-11693`** — *"…the attacking
+player has clearly made every attempt to"* ends one page; running headers `Playing Rules` and
+`CASEBOOK` sit between it and the next page's *"avoid the contact with the goalkeeper."* Reached
+this time from `content/systems/offensive_zone_play.md:579`, whose citation is verbatim and
+correct once the page furniture is read out. **Confirmed `check_quote_drift.py`'s facts-layer fix
+(20 September) surfaces this same species as a NOTFOUND in every facts-block quotation of the
+sentence, corpus-wide** — the splice is a property of the source file, not of any one document's
+citation of it, so expect this exact fragment to keep scoring NOTFOUND wherever it is quoted next.
+
 ## ⚠️ IIHF RULE 42.1 IS THE CONTROL FOR MODE FOUR — use it to test a flattening pipeline
 
 Found 19 September 2026. **This is the most useful mode-four instance on disk, because it is a

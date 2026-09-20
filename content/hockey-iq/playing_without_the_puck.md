@@ -350,7 +350,7 @@ The same is true against you. Two seconds of your own disorganisation is where y
 Action: When you have just won it, turn and go immediately — start moving on the likelihood of possession, not the certainty of it
 Risk: Skating hard in the wrong direction is a survivable error; being late means the window is gone
 Action: Get width and get depth in the same instant — if everyone does the same one, the breakout dies
-Never: All go — transition is exactly where the "one more forward joined the rush than should have" goal against comes from
+Never: All go — transition is exactly where the "one more forward joins the rush than should have" goal against comes from
 Read: When you have just lost it, find the most dangerous man, not the puck — usually the man arriving late into the middle rather than the carrier; that ranking is coaching emphasis, not a counted one
 Never: Everyone sprint to the middle — two wingers and a centre converging there leaves both outside attackers unmarked
 Convention: Backcheck lane assignment is a coaching choice rather than a law — the standard one used throughout is centre in the middle lane, wingers on the outside; others use first man back takes the middle, or man-on-man from the puck outward

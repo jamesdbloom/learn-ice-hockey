@@ -438,7 +438,7 @@ Convention: Under a collapse, be patient — the house is full and they aren't t
 Action: Get one hard win — cycles end when somebody wins a puck battle, so send two, which in the collapse is the strong-side defenceman and the centre
 Never: Send the second body into a back — the player digging along your boards cannot see you, and no book prices that check at two minutes alone
 Rule: Hockey Canada 7.5(a) is a minor plus a game misconduct for hitting from behind "anywhere on the ice" and its 7.5 preamble names the puck-digger along the boards; under the NHL and IIHF the floor is a major with a game misconduct, no minor tier existing (43.2)
-Rule: USA Hockey alone lets you finish the game at its floor — 608(a) is a minor plus a misconduct, and a misconduct is not an ejection — but its Casebook at Rule 608, Situation 1 requires the major "in every instance where a player forcefully checks an opponent who is standing along the boards"
+Rule: USA Hockey alone lets you finish the game at its floor — 608(a) is a minor plus a misconduct, and a misconduct is not an ejection — but its Casebook at Rule 608, Situation 1 requires the major "[i]n every instance where a player forcefully checks an opponent who is standing along the boards"
 Rule: A USA Hockey misconduct is ten minutes only by default — 404(a) writes "10 minutes, or the designated misconduct penalty time", and its Note lets affiliates outside Adult hockey set 6:00 where periods are 12 minutes or less and 8:00 where they are under 17. The other three books write a flat ten
 Rule: A USA Hockey game misconduct is not only this game — 404(b) also suspends the player for their team's next game, minimum two where imposed under 403(b); the NHL's automatic suspension (23.6) starts only at the second such ejection, Hockey Canada's (4.8(c)) only in the last 10 minutes or overtime
 ```
@@ -487,7 +487,7 @@ Rule: A game in which checking is legal does not make the net-front walk-out fre
 Rule: USA Hockey 625(a)(4) names the walk-out — a minor for a defending player "who changes their skating lane or foot speed in an effort to play the body of an opponent who is no longer in control of the puck". Rule 625 carries no Competitive Contact scope, so it reaches a checking game too
 Rule: Walking an opponent off an established position is a push, and USA Hockey does not cap it at a minor where checking is barred — 604(c) a minor, 604(d) a major plus a game misconduct for reckless endangerment, 604(e) a match
 Rule: Hockey Canada prices the push that walks a screener off their position at U13 and below, in female hockey and in any division a Member has approved — 7.3(a) a minor, 7.3(b) a major plus a game misconduct on the degree of violence with nobody hurt, mandatory on injury, 7.3(c) a match
-Rule: In women's hockey it is an illegal hit under IIHF 101.1 — "any move by a Player to step or glide into an opposing Player" is at least a minor, with a major and an automatic game misconduct above it
+Rule: In women's hockey it is an illegal hit under IIHF 101.1 — "[a]ny move by a Player to step or glide into an opposing Player" is at least a minor, with a major and an automatic game misconduct above it
 Rule: USA Hockey's Competitive Contact list is a floor, not a ceiling — 604(a) lets a local governing body prohibit body checking in any classification, and 604(b) prohibits it whenever a Competitive Contact team plays a Body Checking team. Check the game, not the age group
 ```
 
