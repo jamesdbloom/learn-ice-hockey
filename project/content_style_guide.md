@@ -808,9 +808,22 @@ Never: Carry through the slot — skate behind the net to the other side instead
   restates its own heading. Where a section has no subsections and is itself the
   unit of teaching, `##` is right.
 - **3–6 coaching facts, 8 at most.** More than 8 and the section is probably two
-  sections. **`Rule:` facts do not count against that 8-fact coaching cap — but they DO count against the 11-fact total below** — a cap must never
+  sections. **`Rule:` facts do not count against that 8-fact coaching cap — but they DO count against the 14-fact total below** — a cap must never
   evict a rulebook fact, so the cap governs how much *coaching* content a block
-  holds. No block may exceed 11 facts in total.
+  holds. No block may exceed 14 facts in total.
+
+  ⚠️ **This total was 11 until 20 September 2026, raised to 14 by a deliberate decision that
+  the discipline this project actually wants is relevance, not a specific count.** The 8-fact
+  coaching cap below is unchanged and is what enforces that discipline — it is the one that
+  fires when a block accumulates discretionary content rather than mandatory rulebook facts,
+  and "the section is probably two sections" still applies at 8 regardless of where the total
+  sits. The total exists only to catch a block doing two jobs *by volume*, not to force a split
+  on a block that is one job with one or two more citations than 11 allowed. Two blocks hit the
+  old cap on 20 September 2026 needing exactly one more `Rule:` fact each
+  (`center.md`/`winger.md`, propagating NHL/IIHF Rule 69.4's road-home limb) — neither was doing
+  two jobs, and forcing a split for one fact would have been the "relieved the wrong thing"
+  failure the round 52 note below already warns about, applied to a total that never needed
+  splitting in the first place.
 
   ⚠️ **The 3-fact floor is not an absolute, and a corpus-wide count is what showed it.**
   **51 blocks sit below three coaching facts and three have none at all** (measured across all
@@ -835,13 +848,18 @@ Never: Carry through the slot — skate behind the net to the other side instead
   - **None in the body** — the all-`Rule:` block is honest. Leave it, and do not invent a fact
     to fill it.
   - **Some in the body** — they belong in the block. That is extraction, not authoring.
-  - **Some in the body and the block already at 11** — **split the section, on the seam the body
-    already uses, not on rule-set lines.** A split by book leaves both halves all-`Rule:`:
-    round 52 split one that way and *"relieved the wrong thing"*, leaving 11 facts and a single
-    coaching fact behind it.
+  - **Some in the body and the block already at the 14-fact cap** — **split the section, on the
+    seam the body already uses, not on rule-set lines.** A split by book leaves both halves
+    all-`Rule:`: round 52 split one that way (against the cap of 11 then in force) and
+    *"relieved the wrong thing"*, leaving 11 facts and a single coaching fact behind it.
 
-  **The 11-fact hard cap is not the thing to relax.** Every block that reached it in that review
-  was a section doing two jobs, and the cap is what said so.
+  **Splitting is still the right answer when a block is genuinely doing two jobs — the cap being
+  higher now doesn't change that.** What the 20 September 2026 change recognises is that a block
+  one or two `Rule:` facts over the *old* 11 was not always that case: `center.md` and
+  `winger.md`'s blocks were each already-focused single-job sections that needed exactly one more
+  mandatory citation, and splitting either would have produced two sections doing half a job each
+  rather than one section doing two. Read the block before deciding which failure you're looking
+  at — a genuine two-job block still gets split at 14 exactly as it would have at 11.
 - **No block on a section that is itself already an extraction layer.**
   `## Common Mistakes` and `## Key Takeaways` always; also any section that is a
   bulleted recap of the subsections above it, whatever it is called. A third

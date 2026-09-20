@@ -67,8 +67,15 @@ EXEMPT_HEADINGS = {"common mistakes", "key takeaways"}
 
 # The cap governs how much COACHING content a block holds. Rulebook facts are
 # mandatory — the style guide is explicit that a cap must never evict one — so
-# they do not count against it. The hard ceiling still applies to everything.
-MIN_FACTS, MAX_COACHING_FACTS, HARD_MAX = 3, 8, 11
+# they do not count against it. The hard ceiling still applies to everything,
+# raised from 11 to 14 on 20 September 2026: the discipline this project cares
+# about is relevance, not a specific count, and that discipline is enforced by
+# MAX_COACHING_FACTS (unchanged) — a block dominated by discretionary coaching
+# content still trips at 8 and is still told to split. HARD_MAX exists only to
+# catch a block that is doing two jobs regardless of label mix; 14 keeps that
+# signal while giving one or two more mandatory Rule: citations room to land
+# without forcing an artificial split on a block that is otherwise one job.
+MIN_FACTS, MAX_COACHING_FACTS, HARD_MAX = 3, 8, 14
 
 # A terse imperative. `Rule:` carries a citation and `Convention:` carries the
 # body's hedge, and both are mandatory, so they are allowed more room. Neither

@@ -557,6 +557,7 @@ Track it for ten games and the habit takes. It is the fastest improvement availa
 - **Standing still on the half-wall or at the net front.** A stationary player is covered by a defender who also gets to watch the puck. Movement is what makes coverage expensive.
 - **Letting the stick go to sleep.** The blade in a passing lane is the cheapest thing you do all shift and the first thing you drop when tired.
 - **Forcing the middle against a team protecting a lead.** They are conceding the outside on purpose. Take what's given.
+- **Assuming a goalie who has left the crease to play the puck is fair game as long as you never touch them.** NHL and IIHF Rule 69.4 penalises an attacker whose *"deliberate actions"* prevent a goalkeeper who has already played the puck outside the crease from returning to it — *"may be penalized"* for goalkeeper interference — and that clause names no contact at all. **Hockey Canada reaches the same act too, just by a different rule**: its goalkeeper-interference statute is contact-only (the Note to Interpretation 3 of Rule 8.5(a): *"No penalty would be assessed unless the attacking player's body or stick makes actual physical contact with the goaltender"*), but a goaltender who has not played the puck is not in possession by its own Glossary, so moving into his path is a minor under its ordinary interference rule, 8.3(i), with no contact needed. USA Hockey's reach here is the one genuinely unsettled of the four. Find out which book you're under before you plant yourself in a scrambling goalie's lane.
 
 ## Check yourself
 

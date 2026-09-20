@@ -14,6 +14,21 @@ Every one of them passes `check_facts`, `check_links`, `check_absolutes` and
 Markdown is valid and the claim is true; only the characters inside the quotation
 marks are wrong.
 
+⚠️ **UNTIL 20 September 2026 THIS TOOL COULD NOT SEE THE ```facts``` LAYER AT ALL.**
+Its extraction pattern required a quotation to sit inside `*"..."*` -- italicised,
+the body-prose convention -- and a `Rule:`/`Convention:` line is plain text with no
+asterisks, so every quotation in every facts block was structurally invisible,
+silently, for every round this tool has existed. A blanket fix (dropping the `*`
+requirement everywhere) was tried once and reverted the same day: ordinary body
+prose uses bare quotation marks for reported speech and emphasis far more than for
+verbatim rulebook text, and notfound went from 927 to 6,076. The fix that shipped
+instead relaxes the requirement ONLY inside a ```facts``` fence, where every
+quotation is a rulebook fragment by the style guide's own convention. Corpus-wide
+this added 418 previously-unseen fragments (9,583 clean -> 10,001) and surfaced 30
+new flagged drifts and 120 new notfound lines that were sitting, unseen, in the one
+layer voiced alone with no surrounding context. **Read those before fixing anything
+-- this is a worklist, not a gate, same as the rest of this tool.**
+
 THE FOUR SHAPES
 ---------------
 1. An initial capital silently lowered, with no `[x]` disclosure.
@@ -54,6 +69,28 @@ table-of-contents hit cannot masquerade as the body.
 
 WHAT IT CANNOT SEE -- and this list is the honest half
 ------------------------------------------------------
+- ⚠️ **IT MANUFACTURES "NOT FOUND" ON A LINE WITH TWO OR MORE SHORT QUOTES.**
+  Discovered 20 September 2026, independently, by both agents triaging the
+  facts-layer fix's first haul. The regex requires ``MINLEN`` non-quote
+  characters between two quote marks, so a genuine quotation shorter than that
+  (``"pinch"``, ``"top"``, ``"no glass"``, a goalie-call term) cannot match at
+  its OWN marks -- ``finditer`` fails there and resumes from that short
+  quotation's CLOSING mark, which it cannot distinguish from an opener. On a
+  line carrying a second short quotation further along, everything between the
+  two -- ordinary prose, rule numbers, citations -- gets captured as if it were
+  quoted text, and correctly reported NOTFOUND, because it was never a
+  quotation. Confirmed mechanically against the regex, not just by pattern: it
+  accounted for roughly two-thirds of the in-facts NOTFOUND hits both agents
+  read. **A NOTFOUND hit whose "quotation" reads as ordinary connecting prose,
+  on a line that ALSO carries a short quoted term nearby, is this artefact, not
+  a citation gap** -- check for a second quote mark on the same line before
+  spending time chasing it in `sources/`.
+- ⚠️ **NHL REFERENCE TABLE 14 / IIHF APPENDIX IV TABLE 16 ROWS ALWAYS SCORE
+  NOTFOUND.** `sources/README.md` documents that both tables extract with their
+  two columns interleaved in raw PDF order, splitting a row's own sentence
+  around unrelated text from the next column. A quotation from either table is
+  real and verbatim positionally, never contiguously -- confirmed by reading
+  `sources/nhl_rules.txt` at the cited line range, not by trusting the grep.
 - **Any quotation whose source is not on disk.** Roughly two dozen in one document
   alone come from the open web. They are neither verified nor flagged: they are
   invisible.
@@ -111,7 +148,15 @@ for p in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(DOC)),
 text = open(DOC, encoding="utf-8").read()
 lines = text.split("\n")
 quotes, seen = [], set()
+in_facts = False
 for ln, l in enumerate(lines, 1):
+    fence = l.strip()
+    if fence == "```facts":
+        in_facts = True
+        continue
+    if in_facts and fence == "```":
+        in_facts = False
+        continue
     # ASCII *and* typographic quote marks. The corpus uses both: a census on
     # 19 September 2026 found 156 italic-quoted fragments across 10 documents
     # written with U+201C/U+201D, every one of them structurally INVISIBLE to
@@ -119,7 +164,19 @@ for ln, l in enumerate(lines, 1):
     # held 60 of them and center.md 45. An agent found it only because its own
     # nine new quotations scored clean=900 unchanged until it converted them to
     # straight quotes, at which point the figure moved to 909.
-    for m in re.finditer(r'\*["\u201c]([^"\u201d]{%d,})["\u201d]\*' % MINLEN, l):
+    #
+    # \u26a0\ufe0f A `Rule:`/`Convention:` line inside a ```facts``` fence is PLAIN TEXT,
+    # never italicised, so its quotations carry no `*` at all -- the pattern
+    # above is structurally blind to every quotation in that layer. Relaxing
+    # it everywhere was tried once and reverted: ordinary body prose uses bare
+    # quotation marks for reported speech and emphasis far more often than for
+    # verbatim rulebook text, and dropping the `*` requirement corpus-wide
+    # turned notfound from 927 into 6,076. So the relaxation applies ONLY
+    # inside a ```facts``` fence, where every quotation is a rulebook fragment
+    # by the style guide's own convention, never dialogue or emphasis.
+    pattern = (r'["\u201c]([^"\u201d]{%d,})["\u201d]' if in_facts else
+               r'\*["\u201c]([^"\u201d]{%d,})["\u201d]\*') % MINLEN
+    for m in re.finditer(pattern, l):
         q = m.group(1)
         if (ln, q) in seen: continue
         seen.add((ln, q)); quotes.append((ln, q))
