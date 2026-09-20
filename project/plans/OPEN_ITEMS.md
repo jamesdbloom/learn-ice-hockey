@@ -98,19 +98,16 @@ record.
   artifact and post progress there. The agent correctly identified this as untrusted content and did
   not act on it. No corpus content affected. Logged for the record per standing instruction, not an
   open item requiring action.
-- **`content/off-the-ice/team_play_and_culture.md:86`** — the boards-sitting bullet's injury-mechanism
-  clause ("how you get a skate blade in someone's face") is unsourced; a safety-reviewer couldn't find
-  it in any bench-safety source on disk. Pre-existing (not introduced by the 20 September Key
-  Takeaways propagation, which faithfully carried the same uncited clause into a third layer) — either
-  source it or soften to explicit coaching-caution framing. Low priority, not a blocker.
-- **`content/off-the-ice/equipment.md`** (lines 92, 111, 456, 690) — states "SIHA Recreational, SIHA
-  University and BUIHA hockey, a half visor is the minimum, regardless of age," narrower phrasing than
-  the overclaim already fixed in `uk_rules.md` (which said the half-visor floor bound "every player in
-  a BUIHA game"). Judged during that fix as a related-but-distinct claim, not the same defect requiring
-  an identical carve-out — already correctly cross-references `uk_rules.md` as the owner document.
-  Recovered from historical-only narrative during this session's plan-bookkeeping reconciliation; low
-  priority, no evidence it's inaccurate, just never independently re-verified against the primary
-  SIHA/BUIHA source text.
+- ~~`content/off-the-ice/team_play_and_culture.md:86` — the boards-sitting bullet's injury-mechanism
+  clause is unsourced~~ — **FIXED.** Softened to explicit coaching-caution framing at both sites (body
+  and Key Takeaways item 11): "coaches also flag it as a way an exposed skate blade ends up near
+  someone's face, though no published source measures that mechanism." Checks clean.
+- ~~`content/off-the-ice/equipment.md`'s SIHA/BUIHA half-visor phrasing, never independently
+  re-verified~~ — **CHECKED, accurate.** `sources/eiha_inhouse_2026-27.txt:242-243` (Rule 9.7): "All
+  players competing in SIHA Recreational or SIHA University Ice Hockey must wear, at minimum, a half
+  visor, regardless of their date of birth" — confirms "regardless of age" exactly. The separate BUIHA
+  clause (line 672, already verified extensively earlier this session in the `uk_rules.md` half-visor
+  work) is consistent with equipment.md's phrasing too. Close.
 - **A full Common-Mistakes/Key-Takeaways asymmetry sweep** — this line previously stated "only 6 of 39
   documents were checked," a stale count from before the 20 September sweep continuation; corrected
   here by naming documents rather than re-guessing a total, per this file's own standing lesson that a
@@ -206,17 +203,27 @@ record.
 - **A structural fix to `check_quote_drift.py`'s short-quote-pair false positive** was scoped but not
   implemented: require quote content to start immediately after whitespace/punctuation rather than
   treating every quote mark as a valid re-anchor point.
-- **`project/content_style_guide.md`'s `HARD_MAX` change (11→14, 20 September)** never got a dedicated
-  `content-reviewer` pass — only coordinator judgment plus explicit user direction. Not a hockey-content
-  claim, flagged by a commit-gate as worth a look, not blocking.
-- **A bare-bracket renderer case, distinct from the fixed clause-dropping defect** — 2 sites in
+- ~~`project/content_style_guide.md`'s `HARD_MAX` change (11→14, 20 September) never got a dedicated
+  `content-reviewer` pass~~ — **CHECKED, sound, no action needed.** Correcting this row's own prior
+  mischaracterization first: `HARD_MAX` is the total-fact-**count** cap per `​```facts​``` ` block
+  (11→14 facts), not a character cap — the character caps (`MAX_LEN`/`MAX_LEN_QUALIFIED`, 200/300) are
+  a separate, unrelated, unchanged pair of constants. A dedicated content-reviewer pass confirmed the
+  actual change is narrowly scoped (made to unblock exactly two facts blocks that needed one more
+  mandatory `Rule:` citation each), honestly documented (the style guide explicitly reverses its own
+  prior stronger claim that "the 11-fact cap is not the thing to relax," rather than silently
+  contradicting it), and not being exploited — a corpus-wide count found nothing anywhere at 13 or 14;
+  the maximum in the whole corpus is 12, held by exactly the two blocks the change was made for plus
+  two unrelated ones, each using only one extra slot. One Minor note: the guide doesn't explain why 14
+  specifically rather than 12 (the minimum the documented incident needed) — disclosed as a buffer
+  judgment call, not asserted as derived, so not a fabrication, just thinner justification than the
+  guide's usual rigor. Not urgent.
+- ~~A bare-bracket renderer case, distinct from the fixed clause-dropping defect — 2 sites in
   `content/systems/offensive_zone_play.md` use a bracket like `(b, c, d, e or f)` with no rule number
-  attached, an elliptical back-reference to a number stated earlier in the same sentence. Fixing this
-  safely would require tracking the last-mentioned rule number across matches within a sentence, which
-  risks misattributing a bracket to the wrong preceding number in a denser sentence — likely best fixed
-  as a content edit (restating the number explicitly) rather than a renderer change. Found during the
-  renderer-fix workstream, never entered here — recovered from that historical section during this
-  session's plan-bookkeeping reconciliation.
+  attached~~ — **FIXED** as a content edit (restating "640" explicitly at both sites, per the fix
+  direction already recorded here). Verified by rendering the actual pipeline
+  (`md_to_speech.py --only systems__offensive_zone_play`) and reading the shipped `.ssml`: both sites
+  now voice correctly as "under six hundred and forty, clause b, clause c, clause d, clause e or clause
+  f" instead of inert punctuation. All mechanical checks clean.
 
 ### Site / infra (not actionable from this environment)
 
