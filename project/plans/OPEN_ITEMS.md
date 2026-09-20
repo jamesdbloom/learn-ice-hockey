@@ -129,7 +129,8 @@ record.
   `positions/center.md`, `reading-diagrams/reading_ice_hockey_diagrams.md`,
   `systems/defending_the_rush.md`, `systems/faceoffs.md`, `systems/forechecking_systems.md`,
   `systems/game_management.md`, `systems/neutral_zone_systems.md`, `systems/offensive_zone_play.md`,
-  `systems/zone_entries.md`, `technique/shooting.md` (38 documents — the 8 named before
+  `systems/zone_entries.md`, `technique/shooting.md`, `systems/defensive_zone_coverage.md`
+  (**39 of 39 — the full corpus, first time this session** — the 8 named before
   `defender.md`/`winger.md` closed via `project/reviews/fifth_backlog_wave_2026-09-20.md`, closing out
   the full list an earlier sweep record named as unchecked; `defender.md`/`winger.md` came back clean
   in the next wave; the 6 named after them had 14 Major findings between them, all fixed and
@@ -145,9 +146,12 @@ record.
   `offensive_zone_play.md`). **`center.md` and `defending_the_rush.md` also appeared in that same
   earlier pass's "clean" list — that verdict is superseded, not confirmed: the sixth wave's closer read
   found real Major gaps in both, since fixed.** This is the second time this session a stale-plan
-  bookkeeping gap survived past its own fix; see the standing method notes.). **Status genuinely
-  unknown** — no record found either way — for the one remaining document: `systems/defensive_zone_coverage.md`.
-  Whoever checks it should update this row by name, not by adjusting a total.
+  bookkeeping gap survived past its own fix; see the standing method notes. `systems/defensive_zone_coverage.md`
+  was the last of the 39 to be checked — 2 Major, 2 Minor found, all fixed and independently
+  rules-verified and safety-reviewed via `project/reviews/seventh_backlog_wave_2026-09-20.md`, which
+  also caught and fixed a Critical rule-inversion the fix itself introduced. **No document in the
+  corpus has an unknown CM/KT status as of this wave** — whoever finds a new gap in a "checked"
+  document should log it as a fresh finding, not reopen this census.
 - ~~The renderer drops the word "clause" from every multi-clause citation~~ — **FIXED** (see below,
   same day). `scripts/md_to_speech.py`'s citation regex was widened and verified against the real
   pipeline, zero survivors corpus-wide.
