@@ -88,22 +88,22 @@ table-of-contents hit cannot masquerade as the body.
 
 WHAT IT CANNOT SEE -- and this list is the honest half
 ------------------------------------------------------
-- ⚠️ **IT MANUFACTURES "NOT FOUND" ON A LINE WITH TWO OR MORE SHORT QUOTES.**
-  Discovered 20 September 2026, independently, by both agents triaging the
-  facts-layer fix's first haul. The regex requires ``MINLEN`` non-quote
-  characters between two quote marks, so a genuine quotation shorter than that
-  (``"pinch"``, ``"top"``, ``"no glass"``, a goalie-call term) cannot match at
-  its OWN marks -- ``finditer`` fails there and resumes from that short
-  quotation's CLOSING mark, which it cannot distinguish from an opener. On a
-  line carrying a second short quotation further along, everything between the
-  two -- ordinary prose, rule numbers, citations -- gets captured as if it were
-  quoted text, and correctly reported NOTFOUND, because it was never a
-  quotation. Confirmed mechanically against the regex, not just by pattern: it
-  accounted for roughly two-thirds of the in-facts NOTFOUND hits both agents
-  read. **A NOTFOUND hit whose "quotation" reads as ordinary connecting prose,
-  on a line that ALSO carries a short quoted term nearby, is this artefact, not
-  a citation gap** -- check for a second quote mark on the same line before
-  spending time chasing it in `sources/`.
+- ⚠️ **FIXED 20 September 2026 (the short-quote-pair artefact below).** A line
+  carrying two or more short quotes (``"pinch"``, ``"top"``, ``"no glass"``, a
+  goalie-call term) used to manufacture a fabricated "quotation" spanning the
+  ordinary prose between them, reported NOTFOUND. The regex now requires the
+  opening mark be preceded by whitespace, punctuation or start-of-line
+  (``(?<![A-Za-z0-9])``), not by the tail of a word -- which is exactly what a
+  short quotation's own CLOSING mark looks like, and is what let it be
+  misread as a fresh opener. Verified against a synthetic reproduction of the
+  artefact and against the corpus: every file re-checked showed notfound drop
+  or hold steady, with zero new flagged (drift) hits anywhere -- the fix only
+  removes fabricated fragments, it does not touch anything that was ever a
+  genuine quotation.
+  ⚠️ **A NOTFOUND hit reading as ordinary connecting prose can still appear
+  on some other line shape this fix doesn't cover** -- if one does, check
+  first whether it's a new instance of a related pattern before assuming the
+  regex has a second gap of the same kind.
 - ⚠️ **NHL REFERENCE TABLE 14 / IIHF APPENDIX IV TABLE 16 ROWS ALWAYS SCORE
   NOTFOUND.** `sources/README.md` documents that both tables extract with their
   two columns interleaved in raw PDF order, splitting a row's own sentence
@@ -193,8 +193,22 @@ for ln, l in enumerate(lines, 1):
     # turned notfound from 927 into 6,076. So the relaxation applies ONLY
     # inside a ```facts``` fence, where every quotation is a rulebook fragment
     # by the style guide's own convention, never dialogue or emphasis.
-    pattern = (r'["\u201c]([^"\u201d]{%d,})["\u201d]' if in_facts else
-               r'\*["\u201c]([^"\u201d]{%d,})["\u201d]\*') % MINLEN
+    # (?<![A-Za-z0-9]) before the opening mark, IN THE FACTS BRANCH: a genuine
+    # opening quote is preceded by whitespace, punctuation or start-of-line,
+    # never by the last letter of a word -- which is exactly what a SHORT
+    # quote's own CLOSING mark looks like. Without this, a short quote below
+    # MINLEN fails to match at its own marks, and finditer resumes from its
+    # closing mark, treating that as a fresh opener and swallowing everything
+    # up to the NEXT quote mark as fabricated "quoted" text (see the
+    # docstring's short-quote-pair false-positive class, where this bug was
+    # actually found). This lookbehind was the scoped-but-unimplemented fix;
+    # verified against a synthetic reproduction of the artifact and
+    # corpus-wide before landing here. It is carried into the body-prose
+    # branch below for consistency, but is a no-op there: the `\*` that
+    # branch requires immediately before the quote mark is never alphanumeric
+    # itself, so the lookbehind always already held.
+    pattern = (r'(?<![A-Za-z0-9])["\u201c]([^"\u201d]{%d,})["\u201d]' if in_facts else
+               r'\*(?<![A-Za-z0-9])["\u201c]([^"\u201d]{%d,})["\u201d]\*') % MINLEN
     for m in re.finditer(pattern, l):
         q = m.group(1)
         if (ln, q) in seen: continue

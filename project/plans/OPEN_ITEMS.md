@@ -200,9 +200,16 @@ record.
   same day, all 39 documents, see "Quote-drift triage complete" below**, which found exactly one more
   genuine defect (a tense mismatch in `playing_without_the_puck.md`), also fixed and committed in
   `ea4d793`. This whole bullet describes fully closed work; nothing here is still open.
-- **A structural fix to `check_quote_drift.py`'s short-quote-pair false positive** was scoped but not
-  implemented: require quote content to start immediately after whitespace/punctuation rather than
-  treating every quote mark as a valid re-anchor point.
+- ~~A structural fix to `check_quote_drift.py`'s short-quote-pair false positive was scoped but not
+  implemented~~ — **FIXED.** Added a negative lookbehind (`(?<![A-Za-z0-9])`) requiring an opening
+  quote mark not be immediately preceded by a letter or digit — a genuine opener follows whitespace or
+  punctuation; a short quote's own closing mark (which is what was being misread as a fresh opener)
+  follows the last letter of a word. Verified against a synthetic reproduction of the artefact, then
+  corpus-wide: every one of the 39 documents re-checked showed `notfound` drop or hold steady (1,049 →
+  981 total, −68), with **zero files showing any change in `flagged` count** — confirming the fix
+  removes only fabricated fragments and never touches a genuine drift detection. `scripts/
+  check_quote_drift.py`'s docstring updated to record the fix in place of the old open-problem
+  description.
 - ~~`project/content_style_guide.md`'s `HARD_MAX` change (11→14, 20 September) never got a dedicated
   `content-reviewer` pass~~ — **CHECKED, sound, no action needed.** Correcting this row's own prior
   mischaracterization first: `HARD_MAX` is the total-fact-**count** cap per `​```facts​``` ` block
