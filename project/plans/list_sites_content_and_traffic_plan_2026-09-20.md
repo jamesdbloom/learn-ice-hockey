@@ -1,5 +1,14 @@
 # List-site research: content and traffic plan
 
+> **Status note (added during plan consolidation, not part of the original research).** This is
+> the original research plan as committed directly by the repo owner on 20 September 2026, outside
+> this project's normal generation process. It was subsequently adversarially reviewed against this
+> project's standards — see
+> [`project/reviews/traffic_plan_adversarial_review_2026-09-20.md`](../reviews/traffic_plan_adversarial_review_2026-09-20.md).
+> The actionable, reframed items from that review are tracked live in `project/plans/OPEN_ITEMS.md`,
+> under its "Content/traffic plan" section — not here. This file is kept as historical research
+> context, not a live worklist; do not act on it directly without reading the review above first.
+
 **Research date:** 20 September 2026
 
 **Question:** Can the sites returned for "list of good ice hockey websites"
@@ -19,6 +28,14 @@ Directory inclusion may produce some referral traffic and a small amount of
 discoverability, but it is unlikely to be a material acquisition channel by
 itself. The stronger route is to create useful, distinctive resources that
 clubs, coaches, parents and community sites have a reason to recommend.
+
+> **Annotation (added during plan consolidation).** The adversarial review's Major finding 3 flags
+> this paragraph's "unlikely to be a material acquisition channel" verdict as stated with more
+> confidence than this plan's own evidence supports — nothing in "Sources reviewed" above measures
+> directory-referral value for this site or a comparable one. Read the verdict as an inference from
+> general directory/SEO behaviour, not a measured finding, pending the Phase 4 measurement this plan
+> itself proposes. See
+> [`project/reviews/traffic_plan_adversarial_review_2026-09-20.md`](../reviews/traffic_plan_adversarial_review_2026-09-20.md#major-findings).
 
 ## Sources reviewed
 
