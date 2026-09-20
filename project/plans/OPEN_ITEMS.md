@@ -23,6 +23,8 @@ review record:
 | Corpus-wide CM/KT asymmetry sweep (all 39 documents, first time this session), the renderer clause-list fix, and the safety/rules-verifier re-check chain that followed (20 Sept, "Workstream 147" onward) | `second_backlog_wave_2026-09-20.md`, `third_backlog_wave_2026-09-20.md`, `fourth_backlog_wave_2026-09-20.md`, `fifth_backlog_wave_2026-09-20.md`, `sixth_backlog_wave_2026-09-20.md`, `seventh_backlog_wave_2026-09-20.md`, `eighth_backlog_wave_2026-09-20.md`, `clause_citation_renderer_fix_2026-09-20.md` |
 | Traffic/content plan review (20 Sept) | `traffic_plan_adversarial_review_2026-09-20.md` |
 | `check_quote_drift.py` short-quote-pair fix; `/404` trailing-slash confirmed production-safe (20 Sept) | `tooling_and_infra_closures_2026-09-20.md` |
+| `parent-of-a-new-player` checking-permission Critical, closed (20 Sept) | `parent_pathway_checking_gap_closed_2026-09-20.md` |
+| Traffic-plan pathway assembly: facts census, goaltender.md fix, four `pathways.json` entries, `practice_and_development.md`'s three-round safety fix (20 Sept) | `traffic_plan_pathway_assembly_2026-09-20.md` |
 
 If you're looking for the detail behind a closed item and it isn't below, it's in one of these files —
 grep the relevant archive for the workstream number, or the review record above, first.
@@ -91,42 +93,55 @@ record.
 
 ## Genuinely open
 
-### Safety — `pathways.json`'s `parent-of-a-new-player` entry (Critical, STILL LIVE, found and re-confirmed 20 September)
+### Site-wide: deep-link anchors don't scroll to their target on cross-page navigation (found 20 September)
 
-A `safety-reviewer` pass found this draft pathway sends a parent of a starting child through
-`getting_started.md` → `equipment.md` → `switching_positions.md`, entering at
-`3-routes-onto-the-ice--children` — and **never routes them to the corpus's own body-checking
-safety material**, even though checking-age thresholds (IHUK U10/U12 no, U14+ yes; USA Hockey 12U and
-below no; Hockey Canada U13 and below no) sit exactly at this audience's boundary.
+**Not caused by this session's work, but found while site-reviewing this session's `pathways.json`
+additions, and it affects every one of them.** A `site-reviewer` pass clicking through the four new
+pathway cards found that landing on `document#anchor` from a different page does not scroll to the
+anchor at all — the reader lands at the top of the document, not the promised section. Confirmed
+three independent ways (direct navigation to the URL+fragment, a simulated click on the actual pathway
+card, and setting `location.hash` via JS on an already-loaded page) — all three fail identically.
+Confirmed **pre-existing and site-wide**, not introduced by this session: it reproduces identically on
+`rules_primer.md#10-...` and `body_contact_and_battles.md#1-...`, both already-shipped anchors used by
+the pre-existing `playing-in-britain` pathway, unrelated to anything edited this session. An in-page
+table-of-contents click to the same heading works correctly (lands precisely, respecting the sticky
+header offset) — only cross-page navigation to a fragment is affected.
 
-**A first attempted fix (adding `technique/body_contact_and_battles` to the pathway's `docs` array)
-was independently checked by both a fresh `safety-reviewer` and a fresh `content-reviewer` and found
-NOT to close the gap** — both, independently, read `site/src/pages/index.astro`'s actual render code
-and confirmed a pathway's `docs` array is never consumed by the site build; the only thing rendered is
-`entry.doc`/`entry.anchor`, which is unchanged and still lands the reader in `getting_started.md`
-Section 3 ("Routes onto the ice — children," lines 233–274), which still says nothing about checking
-permission — unlike the parallel adult section two routes above it. `pathways.json` has been corrected
-to stop describing this as fixed and to record it as documentation-only.
+**Likely cause, not confirmed**: `site/src/styles/global.css`'s `html { scroll-behavior: smooth; ...
+scroll-padding-top: ... }` (around line 131) interacting with the browser's native scroll-to-`:target`
+step on page load — the same file already has a comment (around line 890) documenting a smaller,
+related, partially-fixed defect in this exact area. What was observed this time is much larger (a
+near-total non-scroll, not a small offset) and reproduces even via `location.hash =` with no click
+involved, so it may be a different or regressed defect, not the same one. Needs an engineer with a
+live debugger, not a content fix — **this is a `site/src/styles/`, not `content/`, issue.**
 
-- **Critical, genuinely still open**: the real fix is a `content/` edit to `getting_started.md`
-  Section 3 — an early sentence pointing to `technique/body_contact_and_battles.md`'s §1 (which
-  correctly answers this for a UK reader, verified by the safety-reviewer against IHUK, NIHL and WNIHL
-  terms specifically, not just US/Canadian tables) — or an `entry.anchor` change landing the reader
-  directly on such a sentence, matching how Route 1's own anchor already does this. Needs the normal
-  C1–C11 gate (`safety-reviewer`, `rules-verifier`) before it can land.
-- **Major, resolved**: `positions/switching_positions.md` has been **removed** from this pathway's
-  `docs` — both independent reviewers recommended dropping it outright (not just flagging it): it
-  isn't promised by the pathway's blurb, its one relevant passage sits ~80% through a document written
-  for an audience the separate `new-position` pathway already owns more precisely.
-- Everything else in the three documents (helmet/mask sourcing, UK jurisdiction scoping, age-division
-  guidance, the checking-caveat's survival across every layer of `body_contact_and_battles.md`, the
-  verified rule citations) was independently checked twice and holds — no other defect found.
-- A secondary, non-safety finding from the content-reviewer: this file's own `$comment` says `docs`
-  order "never" carries meaning, but several pathways' `evidence` fields (including this one, before
-  correction) write as if `docs[0]` "leads" — a latent inconsistency between the file's stated policy
-  and its own annotations, pre-existing and not introduced by this fix. Worth a look, not urgent.
-- **Not safe to promote out of `draft` status** until the `getting_started.md` §3 content fix lands
-  and is reviewed — the JSON is now accurate about this, but the reader-facing gap is unchanged.
+**Impact**: every one of this session's four new pathway cards has a correct `href` but currently
+lands the reader at the wrong place — the data is right, the experience is broken. This is a real,
+site-wide navigation defect independent of anything in `content/`, so it does not block staging this
+session's `content/`/`pathways.json` work (the gate's C10 concern was about the new cards rendering
+and linking correctly, which they do — this is a distinct, pre-existing defect the same pass happened
+to surface). But it affects every pathway card, old and new, and plausibly every other deep link into
+the corpus from anywhere off-page.
+
+### Closed 20 September — the `parent-of-a-new-player` checking-permission Critical
+
+**Fixed and independently double-verified — see `project/reviews/parent_pathway_checking_gap_closed_2026-09-20.md`
+for the full record.** The real fix (a `content/` edit, not the `pathways.json` metadata note the first
+attempt mistook for one) landed: two lines in `getting_started.md` Section 3, pointing a parent to
+`technique/body_contact_and_battles.md`'s checking-permission section. A fresh `safety-reviewer` and a
+fresh `rules-verifier`, dispatched independently, both confirmed it — the rules-verifier checked every
+underlying citation (USA Hockey 604, Hockey Canada 7.3, four IHUK Rules of Competition documents, IIHF,
+PWHL 52.1) against primary source directly. Not yet staged/committed.
+
+One new item surfaced, not a blocker: **`sources/README.md` has no entry for the PWHL Official Rule
+Book**, even though `body_contact_and_battles.md` quotes it (Rule 52.1). The rules-verifier fetched the
+live PDF to verify the existing quote (it held), but the corpus's source-inventory convention doesn't
+cover this book. Low priority — add it to `sources/README.md`'s inventory when convenient.
+
+A secondary, non-safety finding from the earlier content-reviewer pass, still worth a look but not
+urgent: `pathways.json`'s own `$comment` says `docs` order "never" carries meaning, but several
+pathways' `evidence` fields write as if `docs[0]` "leads" — a latent inconsistency between the file's
+stated policy and its own annotations, pre-existing and not introduced by this fix.
 
 ### Decisions needed (low effort, blocking further triage)
 
@@ -141,44 +156,55 @@ to stop describing this as fixed and to record it as documentation-only.
 
 ### Corpus content
 
-- **A cross-document facts-layer census has never been run as one pass** — the traceability check
-  inside one document cannot distinguish "this limb doesn't belong here" from "this is a propagation
-  gap"; only a census across documents that share a limb can. At least one Major (a dropped "forearm
-  and hip" half of a posture instruction) was found this way by accident, not by a dedicated pass.
-- **`content/positions/goaltender.md`'s Rule 69.7 rebound-scramble counterweight omission** — the
-  rebound-scramble sentence states the incidental-contact permission but omits its counterweight
-  (pushed into the net with the puck after a stop = goal disallowed), already present in the
-  neighbouring Common Mistakes bullet. A completeness nuance about scoring outcome, not a safety
-  defect — the instruction given ("go win the puck") remains correct either way. Low priority.
+- ~~A cross-document facts-layer census has never been run as one pass~~ — **run 20 September, came
+  back clean, closing as a discrete task.** Sampled ~20 of ~130 rule-number clusters found across the
+  26 facts-bearing documents, prioritizing the highest-consequence ones (checking eligibility,
+  checking-from-behind, the shorthanded-icing exemption, delayed offside, high-sticking, shot-blocking,
+  the exact "forearm and hip" posture limb this item originally named) — every one sampled was fully
+  and consistently propagated, including the named example. **Converting to a standing practice
+  instead of an indefinite backlog item**: run this style of rule-number/limb cross-reference whenever
+  a new safety- or penalty-bearing rule limb is added to any document, rather than treating it as a
+  one-time census to exhaust. Full sampling scope and method on file with this session if a future
+  pass wants to extend coverage rather than re-derive it.
+- ~~`content/positions/goaltender.md`'s Rule 69.7 rebound-scramble counterweight omission~~ — **fixed
+  and independently verified 20 September.** A fresh `rules-verifier` pass confirmed the fix word-for-
+  word matches the pre-existing, already-verified Common Mistakes bullet, re-checked NHL 69.7 and IIHF
+  69.7 against primary source directly (`sources/nhl_rules.txt:7258-7269`,
+  `sources/iihf_rules_v1.1.txt:5608-5620`), and confirmed the listener-facing antecedent ("the same
+  rule") is unambiguous in context. One pre-existing (not introduced by this edit) minor compression
+  noted, not blocking: the summary layers say "unless fouled, allowed" where the rulebook's own
+  exception is discretionary ("can be permitted... in the opinion of the Referee") — the body text
+  already carries the full discretionary wording, so a listener who reaches Common Mistakes or the
+  body gets the complete picture. Mechanical checks clean. Not yet staged.
 
-### Content/traffic plan (20 September — see `traffic_plan_adversarial_review_2026-09-20.md`)
+### Closed 20 September — the traffic/content plan's actionable items
 
-The plan document itself (`list_sites_content_and_traffic_plan_2026-09-20.md`) now carries a header
-pointing back here and an inline annotation on its Conclusion's overstated traffic-value verdict — that
-annotation resolves the "rewrite the Conclusion" item this section used to carry. Still open, for
-whoever picks this up:
+**All of it — Phase 1 items 2, 3, 5, and both Phase 2 comparison types — done, independently reviewed,
+not yet staged.** See `project/reviews/traffic_plan_pathway_assembly_2026-09-20.md` for the full
+record: four new `pathways.json` entries (`cost-and-registration`, `equipment-journey`,
+`rulebook-differences`, `checking-formats`), all `status: "reviewed"`; one real wording defect caught
+and fixed (`equipment-journey` wrongly implied programme-issued kit is borrowed, when it's kept); and
+a three-round safety fix to `practice_and_development.md`'s home-practice scope note, closed only
+after a third independent `safety-reviewer` pass read the whole document and confirmed no fourth
+instance of the same gap shape remained. None of this needed a `rules-verifier` pass — all pathway
+assembly, no new rules claims.
 
-- **Reframe Phase 1 items 2 ("cost, local-start, registration and insurance"), 3 ("the equipment
-  journey"), and 5 ("a home-practice route")** before writing anything — the underlying material
-  already exists in depth in `getting_started.md` (registration), `equipment.md` (loan/hire/buy), and
-  `practice_and_development.md` (off-ice practice). The task is pathway assembly and cross-linking to
-  existing sections, not new authorship.
-- **Route each item through the full C1–C11 review gate before it touches `content/`**: Phase 1 items
-  2, 3, 5 need it (items 3 and 5 are `safety-reviewer` territory), and so does Phase 2's proposed
-  NHL/IIHF/USA Hockey comparison pages (`rules-verifier` across four books). Everything else in the
-  plan (title/description tags, internal link structure, Search Console review, directory submissions)
-  is a site/marketing operation, not a content review.
-- The `parent-of-a-new-player` pathway itself is tracked above now, under Safety, since it has a
-  Critical finding — not re-listed here.
+Two low-priority items surfaced, not fixed: `pathways.json`'s `$comment` wrongly claims
+`check_links.py` verifies pathway anchors (it doesn't check this file at all); `equipment.md`'s Key
+Takeaways has a sentence missing a word ("Kit a programme gives a child to keep is new..."). Both in
+the review record above.
+
+The plan document itself (`list_sites_content_and_traffic_plan_2026-09-20.md`) carries a header
+pointing back here and an inline annotation on its Conclusion's overstated traffic-value verdict.
 
 ## Push status
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or
-from an earlier paragraph in this file.** As of 20 September 2026 (re-checked during this same
-consolidation, after the user pushed again independently mid-session), local `main` and `origin/main`
-are **identical** at `dcb5de8` — 0 commits ahead, nothing of this session's work is unpushed. This
-number moved twice during this single consolidation pass without this session's own action, which is
-expected: the user's own pushes need no permission from this session, only this session's own pushes
-do. No changes made in this consolidation pass (the plan-file edits, the `pathways.json` fix, or the
-review records) have been committed or pushed yet.
+from an earlier paragraph in this file.** As of 20 September 2026, local `main` is **1 commit ahead**
+of `origin/main`: `ce43613` ("Cut the plan folder from 3,885 lines to under 1,100, and stop a pathway
+fix from overclaiming what it fixed"), committed and not pushed. The traffic-plan pathway-assembly
+wave documented above (the four `pathways.json` entries, the `getting_started.md`/`goaltender.md`/
+`practice_and_development.md` fixes, and this consolidation's own updates) is unstaged working-tree
+content, not yet committed. Push remains the user's own call throughout — this session pushes nothing without
+explicit go-ahead.

@@ -171,6 +171,100 @@
       "evidence": "⚠️ DRAFT, AND IT DOES NOT RENDER. The plan requires a U10/player-parent entry point on the homepage. The corpus has real material for a parent — a children's routes section, age divisions with the instruction not to work them out from a sibling's experience two seasons ago, and the English junior cage requirement — but it has NO ROUTE written for this reader; Route 2 addresses a parent only as a sub-case. Assembling one here would be the coordinator writing a reader-facing path it has not had reviewed, and the plan is explicit that a label describing a U10 reader or age applicability holds only after a named safety reviewer verifies the jurisdiction, contact rules, equipment assumptions and supervision context. That review has not happened. The gap is recorded rather than filled. ⚠️ 20 September 2026, CRITICAL STILL LIVE — TWO INDEPENDENT REVIEWERS (safety-reviewer, content-reviewer) CONFIRMED THIS: an earlier edit here added `technique/body_contact_and_battles` to `docs` believing that closed the gap. It did not. `index.astro` never reads a pathway's `docs` array at all (confirmed by reading the render code) — the only thing the site ever renders is `entry.doc`/`entry.anchor`, which for this pathway is still `getting-started/getting_started#3-routes-onto-the-ice--children`, and that section of `getting_started.md` still says nothing about whether body checking is permitted at a child's age/division, unlike the parallel adult section two routes above it. A parent who actually follows this pathway once it's promoted still reaches no answer to the corpus's own flagship injury question. `docs` is retained here as a documentation note only — it is NOT a fix and must not be described as one. The real fix is a `content/` edit to `getting_started.md` §3 adding an early pointer to `technique/body_contact_and_battles.md`'s checking-permission section (§1), tracked in `project/plans/OPEN_ITEMS.md`, needing its own safety-reviewer/rules-verifier pass and commit gate before this pathway can be promoted. Also removed: `positions/switching_positions` — both independent reviewers recommended dropping it (not merely questioned it): it isn't promised by this pathway's blurb, its one relevant passage sits ~80% through a document written for an audience already served by the separate `new-position` pathway, and the array only supports whole-document references with no way to point at just that passage. Still draft; still does not render; still needs the getting_started.md §3 content fix, reviewed, before promotion."
     },
     {
+      "id": "cost-and-registration",
+      "title": "What it costs and what registering actually buys you",
+      "blurb": "What you register with, why it exists beyond paperwork — insurance and safeguarding — and why no site can hand you a number for what it costs where you play.",
+      "effort": "About ten minutes. The costs and dates are set locally, so the section gives you the questions to take to your club rather than a figure.",
+      "readerAudience": [
+        "adult-beginner",
+        "u10-parent"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "6-registration--what-it-is-what-it-buys-what-it-costs"
+      },
+      "docs": [
+        "getting-started/getting_started",
+        "off-the-ice/practice_and_development"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "reviewed",
+      "evidence": "Assembled per the traffic/content plan's item 2 finding (project/plans/list_sites_content_and_traffic_plan_2026-09-20.md), confirmed by a dedicated scoping pass: the cost/registration/insurance material was never a content gap, only a missing pathway entry. Section 6 of the owning document was read in full this session — it is fully sourced (EIH Rules & Regulations, EIHA, Hockey Canada, USA Hockey), jurisdiction-hedged throughout (it flags the England/Wales registration body's 30 June 2026 changeover and an unreconciled discrepancy between two published registration-year definitions), and self-contained; it explicitly declines to invent a cost figure and instead gives sourced context plus the questions to ask a club. No new prose was written or proposed. REVIEWED 20 September by a `content-reviewer` pass: blurb accurate, holds to house style, no unsourced claim. One optional, non-blocking note left as-is: the effort field's 'dates are set locally' isn't quite accurate for England, which EIH sets nationally — the practical advice ('ask your club') still holds regardless, so not treated as blocking."
+    },
+    {
+      "id": "equipment-journey",
+      "title": "What to buy, borrow, or keep before you start",
+      "blurb": "What you need on the ice for day one: the kit a programme like Learn to Play issues you to keep, what a club or loaner pool can lend you instead, and where that borrowing has to stop — before you spend anything.",
+      "effort": "About ten minutes, then Equipment's own Buying Strategy section for exactly what is safe to buy used and what never is.",
+      "readerAudience": [
+        "adult-beginner",
+        "u10-parent"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "getting-started/getting_started",
+        "anchor": "8-the-minimum-equipment-to-start"
+      },
+      "docs": [
+        "getting-started/getting_started",
+        "off-the-ice/equipment",
+        "foundation/uk_rules"
+      ],
+      "owner": "content/getting-started/getting_started.md",
+      "status": "reviewed",
+      "evidence": "Assembled per the traffic/content plan's item 3 finding (project/plans/list_sites_content_and_traffic_plan_2026-09-20.md), confirmed by a dedicated scoping pass: the equipment-journey material already exists and the intended front door is section 8 of the owning document, which already hands off explicitly to Equipment's Buying Strategy section for loan/hire/buy detail — this entry preserves that existing handoff rather than creating a competing entry point. Read this session, in full: getting_started.md section 8, and equipment.md's Buying Strategy and Helmets and Facial Protection sections. Confirmed the used-helmet/goalie-mask rule is written with no taster/loaner exception on either side of the handoff — getting_started.md section 8 states plainly that '[Equipment]'s rule against second-hand helmets covers borrowed ones as well as bought ones, and it writes no exception for a taster or a learn-to-play session', and equipment.md itself calls a club's shared loaner mask 'the one place the advice to borrow club gear has to stop'. equipment.md also frames the rule as a firm safety caution rather than a rulebook law (no primary rulebook text distinguishes a borrowed helmet from an owned one) — the blurb above does not characterise it as a law of hockey, does not restate its substance, does not imply loan/hire/buy are equally safe, and does not imply that registering or borrowing satisfies any legal or certification requirement; it only signals that a limit exists and defers the substance to the destination document, per this task's safety constraint. No new prose was written or proposed. UPDATE (this session): a content-reviewer pass found the original title/blurb grouped three distinct sources of gear — a programme (e.g. Learn to Play), a club, and a loaner pool (e.g. Try Hockey For Free) — under 'lend'/'borrow'/'have lent to you' as near-synonyms. getting_started.md section 8 explicitly separates these, keyed on the heading 'Keep two kinds of programme apart, because the question each one raises is a different question': Learn to Play's kit is stated to be issued to keep ('its equipment page has participants ... says All the equipment provided will be for participants to keep upon completion of the program. So Learn to Play's kit is issued to one child and goes home with them rather than back onto a shelf'), while a loaner pool 'lend[s] gear for the session' and a club loan is a third arrangement — and this distinction sits directly beside the used-helmet safety rule, so grouping programme-issued kit under lending language risked implying it carries the same borrowed-gear caution the document does not apply to it (its actual open question about programme kit is whether it is new, not whether it is borrowed). Reworded the title and blurb to state that a programme like Learn to Play issues kit to keep, while a club or loaner pool can lend gear instead, preserving the accurate parts (club/loaner-pool borrowing is real and has a hard limit at the used-helmet rule). REVIEWED 20 September by a fresh content-reviewer pass: the corrected wording checked out against source (the 'that borrowing' pronoun correctly attaches to club/loaner-pool lending, not to Learn to Play's kept kit), the safety signal is preserved without stating the rule, and Learn to Play is confirmed the only currently-sourceable example. That pass's one non-blocking note — the title was a length outlier against sibling cards — is addressed: shortened to 'What to buy, borrow, or keep before you start,' still naming all three actions without conflating them."
+    },
+    {
+      "id": "rulebook-differences",
+      "title": "How the rulebooks actually differ",
+      "blurb": "One table sets NHL, IIHF, the Home Countries, USA Hockey and rec leagues side by side — trapezoid, icing, checking, head contact, fighting, faceoffs, overtime — for a reader who has just moved leagues, countries, or books.",
+      "effort": "About fifteen minutes for the table alone; every row also unpacks in the section of the page that owns that rule.",
+      "readerAudience": [
+        "all-players",
+        "adult-rec",
+        "coach"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "foundation/rules_primer",
+        "anchor": "10-rule-set-differences-that-actually-matter"
+      },
+      "docs": [
+        "foundation/rules_primer",
+        "technique/body_contact_and_battles"
+      ],
+      "owner": "content/foundation/rules_primer.md",
+      "status": "reviewed",
+      "evidence": "Assembled per the traffic/content plan's item 6 finding, confirmed by a dedicated scoping pass: an 'NHL/IIHF/USA Hockey comparison' was proposed as new content and already exists in depth, as section 10 of the owning document, read here in full. It is a single wide comparison table (trapezoid, both icing 'gaining the line' and shorthanded-exemption sub-rules, checking, illegal check to the head, checking from behind, high-sticking, broken sticks, fighting, when majors and misconducts eject you, offside review, faceoffs, overtime, period length) across NHL/IIHF/Home Countries/USA Hockey/typical rec, with Hockey Canada and CARHA woven through nearly every row and a dedicated CARHA/rec-book subsection beneath it, plus the document's own note that every row is also set out in prose in the section that owns that rule. No new prose was written or proposed. ⚠️ DESIGN DECISION — ONE ENTRY HERE, A SEPARATE ONE FOR CHECKING FORMATS (see 'checking-formats' below), not one entry covering both: this table treats body checking as a single row among thirteen — it states the checking column and then says 'See [Body Contact and Battles]' rather than reproducing that document's depth. The reader question this entry answers ('how do the books generally differ, and which one is mine') is broad, curiosity- and orientation-driven, and answered completely by this one table plus the prose sections beside it. The reader question 'is checking legal where I actually play' is narrower, safety-weighted, and gets a materially deeper, differently-structured treatment two sections and one document away (a two-category framework, a twelve-row per-league table, six named gotchas, and gendered and British subsections) that this table does not attempt to hold. Folding the second into this entry's blurb would either bury the safety-relevant question under trivia (trapezoid rules, faceoff stick order) or force this blurb to promise depth it does not deliver at this anchor. `docs` lists body_contact_and_battles because this table's checking row sends the reader there; `entry.doc`/`entry.anchor` point at this table because it is the broader, more general landing point the plan's item asked for. REVIEWED 20 September by a `content-reviewer` pass: blurb accurate, split rationale sound, no safety-framing issue. One Minor the pass found (this evidence field's row count for the OTHER entry's table, corrected above from a wrong 'nine' to the actual twelve) is now fixed."
+    },
+    {
+      "id": "checking-formats",
+      "title": "Is checking legal where you play",
+      "blurb": "Body contact is legal in every league at every age; body checking is not — the age, league and gender lines it actually turns on, the USA Hockey line that flips when a checking team plays a non-checking one, and why 'I'm an adult' or 'I'm above the youth cutoff' does not settle it by itself.",
+      "effort": "About fifteen minutes, then your own league's classification sheet or Rules of Competition for the one answer this page cannot give you.",
+      "readerAudience": [
+        "u10-parent",
+        "youth-player",
+        "adult-beginner",
+        "adult-rec",
+        "coach"
+      ],
+      "prerequisites": [],
+      "entry": {
+        "doc": "technique/body_contact_and_battles",
+        "anchor": "1-which-contact-rules-are-you-actually-playing-under"
+      },
+      "docs": [
+        "technique/body_contact_and_battles",
+        "foundation/rules_primer",
+        "foundation/uk_rules"
+      ],
+      "owner": "content/technique/body_contact_and_battles.md",
+      "status": "reviewed",
+      "evidence": "Assembled per the traffic/content plan's item 6 finding, confirmed by a dedicated scoping pass: 'beginner versus checking formats' was proposed as new content and already exists in depth, as section 1 of the owning document, read here in full. It opens by drawing the body-contact/body-checking distinction the plan's phrasing conflates, then gives a two-category framework, a twelve-row per-league classification table (NHL, USA Hockey by classification and by mixed fixture, Hockey Canada by division/gender/Member-approved, IIHF women's international, women's hockey in Britain, PWHL, British IHUK leagues by competition, adult rec), six named 'things that catch people out' (a Hockey Canada division above U13 is not automatically checking; a local body can ban checking in any USA Hockey classification including an adult one; a checking-vs-non-checking fixture is non-checking outright and coaches cannot override it; USA Hockey's Blind Hockey ban sits outside Rule 604 and reaches adults the age list does not; 'non-check' does not mean 'non-contact'; CARHA has no checking division and treats intentional contact itself as the penalty), a dedicated women's-hockey subsection (USA Hockey/Hockey Canada bar it outright; IIHF and the PWHL permit a restricted form; the distinction most often got wrong), and a Britain-specific subsection stating plainly that neither the IIHF Rule Book nor the In-House Rules sets a checking age at all — the answer lives only in IHUK's Rules of Competition, which the section quotes by league and age group. No new prose was written or proposed. ⚠️ DESIGN DECISION — kept separate from 'rulebook-differences' above rather than merged into one entry: see that entry's evidence field for the reasoning. In short, this is a narrower, more actionable, more safety-weighted reader question ('am I, or is my child, allowed to be checked here') than 'how do the rulebooks generally differ', it is answered by a different document at a different depth (a full decision framework rather than one table row), and this project's cardinal rule against presenting a coaching choice as a law of hockey makes the distinction between 'body contact is legal everywhere' and 'body checking depends on your specific classification, and you must ask' load-bearing enough to warrant its own front door rather than a subordinate mention. `docs` includes uk_rules.md because the section's own British subsection defers equipment and age-category detail to it, and rules_primer.md because its own checking row is the shorter, general-comparison version of the same fact this entry's anchor treats in depth. This entry does not resolve the separate, already-tracked 'parent-of-a-new-player' pathway's blocked status — that gap is specifically about `getting_started.md` section 3 lacking an early pointer to this section, and remains open regardless of this entry existing. REVIEWED 20 September by a `content-reviewer` pass: blurb accurate, split rationale sound, safety framing correct (states no answer itself, only the shape of the question, deferring the actual determination to the reader's own league). Two Minor findings from that pass, both now fixed: this evidence field's own row-count for its own table (corrected above from a wrong 'nine' to the actual twelve, verified by direct count), and the blurb's rule-mechanism sentence (now names USA Hockey explicitly rather than stating the mixed-fixture rule as if universal). `youth-player` added to readerAudience per that pass's note that the destination content is substantially about age-based eligibility, a question a teenage reader would plausibly want answered directly."
+    },
+    {
       "id": "adult-detail",
       "title": "I want the detail",
       "blurb": "Systems, technique and the reading of a play — where a system decides your job, the system is named and an alternative is given.",

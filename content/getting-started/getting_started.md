@@ -232,6 +232,8 @@ If you are considering goaltending, say so early and loudly. Goalies are scarce 
 
 ## 3. Routes onto the ice — children
 
+**Before you choose where your child plays, find out whether checking is permitted at their age and division.** [Body Contact and Battles → 1. Which Contact Rules Are You Actually Playing Under?](../technique/body_contact_and_battles.md#1-which-contact-rules-are-you-actually-playing-under) settles that, and it separates body contact from body checking, which are not the same question. Inside it, the section headed [If you play in Britain](../technique/body_contact_and_battles.md#if-you-play-in-britain) is the one addressed to a British reader.
+
 ### Try-it-once events
 
 **Try Hockey For Free** (USA Hockey) is a one-session taster held at hundreds of rinks. From USA Hockey's own event site, retrieved 27 July 2026: the national dates for the coming season are **3 October 2026 and 27 February 2027**, it is aimed at ages **4 to 9**, *"Most host locations will have loaner equipment, however, you are welcome to bring your own if you have it"* — **take your own helmet if you have one, for the reason in section 8** — and, the question every parent asks, *"Do I need a USA Hockey membership to Try Hockey? No!"* A waiver at registration provides the cover for the event itself. **The scale figure comes from a different USA Hockey page** — its *Come Play Youth Hockey* page, not the event site — which calls Try Hockey For Free *"the world's largest introduction-to-hockey initiative, annually spanning more than 800 rinks nationwide."*

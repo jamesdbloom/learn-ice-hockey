@@ -229,6 +229,8 @@ The governing principle is **specificity**: practice transfers to the extent tha
 
 Judge every off-ice tool against that. Below is an honest ranking. Note that this is reasoning from the specificity principle plus coaching consensus — **direct experimental evidence that any specific off-ice hockey drill improves on-ice performance is thin**, and where evidence exists it is noted.
 
+**A scope note, since some of what follows will suit a reader with no ice time yet:** everything below is about which off-ice training methods build skill that carries onto the ice, not about whether your practice space is safe. Clearance from people, windows and glass, footing, and supervision for a child are judgements for whoever is there to make — this document has not assessed them. And however well something transfers, none of it replaces ice time; it is what makes the ice time you already have, or the ice time you are working toward, count for more.
+
 ### Stickhandling with a ball or puck — transfers well
 
 Your hands do very nearly the same thing off ice as on. This is the highest-value off-ice practice there is, it costs nothing, and it can be done in a kitchen.
@@ -278,6 +280,8 @@ Strength, sprinting and single-leg work make you a better athlete on the ice, an
 ---
 
 ## Off-Ice Practice That Transfers Less Than People Think
+
+**The scope note above still applies here.** Some of what follows is done at home too — an empty net in a driveway, cone weaves in a garage — and this section, like the last one, is only about whether the practice transfers to your game, not about whether the space is safe to do it in. See [the note in the previous section](#off-ice-practice-that-genuinely-transfers) for what this document has and hasn't assessed.
 
 ### The correlation trap
 
@@ -466,6 +470,8 @@ A workable week, around 3–4 hours total:
 | Game day | **One process goal**, chosen in advance | Turns a game from entertainment into a rep |
 | 1 × 20 min per week | **Video or clip review** with one question | The feedback that makes everything else deliberate practice |
 
+**Three rows in that table — the stickhandling, the wall passing, and the pad shooting — happen wherever you have floor space, and this document has only judged whether they transfer, not whether the room they'd happen in is safe to do them in.** See [the scope note](#off-ice-practice-that-genuinely-transfers) for what that leaves to you.
+
 Add, if you can find it: one **stick-and-puck or drop-in** session a month spent entirely on skating with no puck, and one **power-skating session** a season. Both are unglamorous and both outperform everything else on the list.
 
 ### If you have three to five sessions a week
@@ -593,6 +599,7 @@ Full detail, including specific hip and adductor work, is in [Conditioning and R
 - **Practising falls in full gear on the assumption that the gear makes them harmless.** It does not cover a wrist you put out to catch yourself, and a fall is one of the ways a concussion happens. Learn the technique — hip and thigh, hands in, and the right chin for the direction you are going: **falling flat, chin in; hitting a wall, head up** ([Skating](../technique/skating.md#falling-and-getting-up)).
 - **Firing pucks at your goalie's head in the warm-up, or from ten feet in a drill.** Both are more common than they should be, and **only two books stop play for the hit itself** — IIHF Rule 9.6's is a *"may"* that a scoring chance cancels, Hockey Canada Rule 6.18(a)'s *"shall"* reaches only *"categories of U13 and below"*, and the NHL, USA Hockey's **stand-up** rules and CARHA write no mask-specific stoppage (USA Hockey's only counterpart is a Sled Hockey rule). ⚠️ **Every book does stop play for an injured goalkeeper** — NHL and IIHF 8.1, USA Hockey 206(a), Hockey Canada 2.4(b), CARHA 20(d) — **but each waits on a referee judging them hurt, which is exactly what a cage hides.** Aim at the pads and the glove, and shoot from where the drill puts you.
 - **Buying the tool instead of doing the work.** A rebounder in a garage improves nothing.
+- **Assuming this document has checked that your home, garage or driveway is a safe place to shoot or swing a stick.** It hasn't. Clearance from people, glass, footing and supervision for a child are judgements for whoever is there to make, however well the drill itself transfers (see [Off-Ice Practice That Genuinely Transfers](#off-ice-practice-that-genuinely-transfers)).
 - **Re-reading the theory instead of testing yourself on it.** Re-reading feels productive and builds a much weaker memory than trying to recall the thing and then checking. The checking is not optional: a failed recall that is never corrected is worth close to nothing. Note this is about material you *read* — systems, rules, reads — not about skills you skate.
 
 ## Check yourself
@@ -646,7 +653,7 @@ document, that is named too.*
 3. **Improvement is a staircase, and a changed technique feels worse before it feels better.** How well you perform during a session is an unreliable index of what you learned. Players usually abandon a change somewhere between week two and week five — a coaching observation rather than a measured window — typically just before it would have started to pay.
 4. **Skating first, puck handling with your head up second, passing and receiving third, shooting fourth — and that ordering is a coaching choice, not a law of hockey.** A realistic alternative is to fix whatever is actively costing you most, and a goaltender's list is different again; ask what your own coach prioritises and why. Whichever order you take, it runs close to the reverse of the order in which those things are fun.
 5. **Receiving is the more neglected half of passing, and the more valuable one — a coaching observation rather than a measured finding, since nobody has counted how players split their reps.** Ten minutes against a wall buys hundreds of receptions with instant feedback — but a wall returns a flat, predictable, forehand pass, so vary your angle and distance and take half of them on your backhand.
-6. **Head up or don't bother.** Thousands of head-down stickhandling reps make the head-down pattern the automatic one, and automatic patterns are what surface under pressure. You will then need months to undo it, and your handling will get worse while you do.
+6. **Head up or don't bother.** Thousands of head-down stickhandling reps make the head-down pattern the automatic one, and automatic patterns are what surface under pressure. You will then need months to undo it, and your handling will get worse while you do. Neither this drill nor the wall-passing one above has been checked against your actual space — a kitchen, a garage, a driveway: clearance from people and glass, footing, and supervision for a child are for whoever is standing in it to judge (see [Off-Ice Practice That Genuinely Transfers](#off-ice-practice-that-genuinely-transfers)).
 7. **Small-area games are the highest-value use of ice.** Even in the 2002 Olympic men's gold-medal game, players averaged about a minute of puck possession each; shrinking the space multiplies touches. That they build decision-making is highly plausible, near-universally believed by coaches, and **under-tested** — use them, but don't cite research you don't have.
 8. **Half of a team practice is time spent standing in a line — a coaching estimate rather than a measured share — and that time is either wasted or used.** Watch the rep in front of you and name what you would do differently; keep your feet moving, because standing still for long stretches in cold air is how people pull something on the next hard rep. ⚠️ **And keep your head up while you queue.** A practice has loose pucks flying, and a line standing still against the boards is exactly where they arrive.
 9. **Train decisions, not just skills.** A skill executed at the wrong moment is worthless, often worse than worthless. A passive defender allowed to take away just one option is enough to turn an execution drill into a decision drill.
