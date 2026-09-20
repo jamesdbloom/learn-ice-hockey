@@ -75,17 +75,97 @@ record.
 
 ### Corpus content
 
+- **`content/foundation/uk_rules.md`** — three further findings from the same sweep, not yet fixed:
+  (Major) Key Takeaways omits the "two majors, or two misconducts, end your game" IIHF 20.4/22.1
+  ejection trap entirely from Common Mistakes, despite it being a real, independently-verified rule and
+  exactly the kind of gotcha every other Common Mistakes bullet catalogues; (Major) the CRT6
+  leave-the-helmet-on instruction for an injured player is in the body and Key Takeaways but has no
+  Common Mistakes counterpart, despite injury-adjacent subject matter; (Major) Key Takeaways states the
+  neck-guard mandate without Common Mistakes' detail that England Ice Hockey extends it to practices,
+  not just games.
+- **`content/off-the-ice/how_to_watch_hockey.md`** — a CM/KT sweep found (Major) the document's own
+  "Check yourself" self-test promises Key Takeaways contains the answer to every question, but Question
+  4 (on why plus/minus doesn't measure defensive ability) has no Key Takeaways counterpart at all —
+  the promise is broken for exactly the stat most commonly misused by the casual-viewer audience this
+  document targets. Several Minor completeness gaps also logged in the sweep's full report (not
+  duplicated here).
+- **`content/getting-started/getting_started.md`** — a CM/KT sweep found (Major) Key Takeaways states
+  "insurance follows sanctioning" (playing in an EIH/IIHF-unrecognised league voids insurance and
+  risks suspension plus financial penalties, EIH Rules 25.1-25.3) with no Common Mistakes counterpart
+  at all, despite the body itself flagging this as a real risk pattern for exactly the kind of
+  ad-hoc rink league this document's readers are likely to encounter. Several Minor completeness gaps
+  also logged in the sweep's full report.
+- **`content/hockey-iq/puck_support_and_spacing.md`** — a CM/KT sweep found two Major findings: (1)
+  the document's own stated flagship mistake — skating to the puck instead of the space — is entirely
+  absent from Key Takeaways and from the "Key focus" preview, despite the body calling it "the one
+  coaches name most often"; (2) Key Takeaways item 5 conflates two deliberately-separate vocabulary
+  systems from the body (the behind/level/ahead-of-the-puck framework, and the separate above-the-puck
+  safety-valve convention), mislabeling the system-dependent "who plays safety" choice as if it were
+  about the attacking "ahead" role — undoing a disambiguation the body goes out of its way to make.
+- **`content/foundation/core_principles.md`** — a CM/KT sweep found two Major findings: (1) Common
+  Mistakes misattributes a Swedish-league scanning study as NHL data, when only the other of the two
+  cited findings is actually NHL data (Key Takeaways correctly avoids this error); (2) Key Takeaways'
+  CARHA "stand your ground" carve-out — a real, cited divergence where CARHA Rule 49(a) reaches conduct
+  the NHL/IIHF/USA Hockey books explicitly permit — has no Common Mistakes counterpart at all, despite
+  being penalty-relevant for any reader in a CARHA-affiliated adult league.
+- **`content/foundation/language_and_glossary.md`** — a CM/KT sweep found two Major findings: (1) the
+  Icing and Shorthanded glossary entries — the two entries this corpus has twice found badly stated
+  elsewhere and corpus-wide-swept to fix (commits `8af85e4`, `862c0dd`) — never reach Common Mistakes
+  or Key Takeaways at all, so a listener of this document's own summary layers gets zero exposure to
+  either rule; (2) Common Mistakes' crease-stick-reach bullet states the rule narrower than Key
+  Takeaways does, omitting two carve-outs (puck preceded the attacker in; a defender's interference put
+  them there) that Key Takeaways and the Sources trailer both carry — a rule stated wrong-by-omission in
+  one summary layer if heard alone.
+- **`content/foundation/rules_primer.md`** — a CM/KT sweep found three Major findings: (1) the
+  corpus's own concussion instruction ("come off and say so... a medical professional before you play
+  again") is stated twice in Common Mistakes and appears nowhere in the 10-item Key Takeaways, despite
+  Key Takeaways covering the same head-contact rules in rule-by-rule detail; (2) the body promises
+  high-stick-at-the-faceoff-dot detail "in the high-sticking bullet in section 4" and that content does
+  not exist there (verified by two direct reads) — a dead cross-reference, not merely an asymmetry; (3)
+  the new-this-season IHUK broken-stick rule (2-minute penalty for skating with one anywhere on the
+  ice, no bench exception, contrasted with USA Hockey's looser rule) is detailed in Common Mistakes and
+  entirely absent from Key Takeaways, despite Key Takeaways having a dedicated "which rule set are you
+  under" item that lists several other book-specific differences but not this one.
+- **`content/off-the-ice/practice_and_development.md`** — a CM/KT sweep found two Major findings: (1)
+  the document's own most heavily-flagged injury-risk claim (sudden training-load spikes after a
+  layoff, not contact, is the most common way amateurs get hurt while developing) is stated at the top
+  of the document, in its dedicated injury section, and in Common Mistakes, but is absent from all 13
+  Key Takeaways — and the sibling document it cross-links to for detail (`conditioning_and_recovery.md`)
+  does not carry it in its own Key Takeaways either, so no summary layer in the corpus states it for a
+  listener of either document's episode; (2) the fall-technique/concussion chin-direction rule
+  (Common Mistakes here) has no Key Takeaways counterpart in this document, though it is correctly and
+  fully stated in `technique/skating.md`'s Key Takeaways, the document this one's Common Mistakes links
+  to.
 - **`content/off-the-ice/team_play_and_culture.md:86`** — the boards-sitting bullet's injury-mechanism
   clause ("how you get a skate blade in someone's face") is unsourced; a safety-reviewer couldn't find
   it in any bench-safety source on disk. Pre-existing (not introduced by the 20 September Key
   Takeaways propagation, which faithfully carried the same uncited clause into a third layer) — either
   source it or soften to explicit coaching-caution framing. Low priority, not a blocker.
-- **A full Common-Mistakes/Key-Takeaways asymmetry sweep** — only 6 of 39 documents were checked (both
-  directions attempted, mostly one direction done thoroughly). All five of that partial sweep's own
-  findings (`time_and_space.md`, `goaltender.md`, `body_contact_and_battles.md`, `special_teams.md`,
-  `breakouts.md`) were retracted 20 September on discovering each had already been fixed in an earlier
-  round, with the plan rows simply never retired — none needed a new edit. The other 33 documents,
-  including the two most rule-dense (`rules_primer.md`, `uk_rules.md`), remain unchecked.
+- **A full Common-Mistakes/Key-Takeaways asymmetry sweep** — this line previously stated "only 6 of 39
+  documents were checked," a stale count from before the 20 September sweep continuation; corrected
+  here by naming documents rather than re-guessing a total, per this file's own standing lesson that a
+  count goes stale the moment anyone re-checks it. **Confirmed checked, clean or with findings fixed
+  and committed**: `technique/skating.md`, `off-the-ice/conditioning_and_recovery.md`,
+  `positions/switching_positions.md`, `foundation/rink_map.md`, `hockey-iq/scanning_and_anticipation.md`,
+  `off-the-ice/equipment.md`, `off-the-ice/team_play_and_culture.md`, `technique/puck_handling.md`,
+  `technique/passing_and_receiving.md`, `hockey-iq/playing_without_the_puck.md`,
+  `hockey-iq/time_and_space.md`, `positions/goaltender.md`, `technique/body_contact_and_battles.md`,
+  `systems/special_teams.md`, `systems/breakouts.md` (15 documents). **Checked with findings still
+  open** (logged above; the `uk_rules.md`/`equipment.md` Critical closed separately — see
+  `project/reviews/fourth_backlog_wave_2026-09-20.md` — everything below is unfixed):
+  `foundation/uk_rules.md`,
+  `off-the-ice/how_to_watch_hockey.md`, `getting-started/getting_started.md`,
+  `hockey-iq/puck_support_and_spacing.md`, `foundation/core_principles.md`,
+  `foundation/language_and_glossary.md`, `foundation/rules_primer.md`,
+  `off-the-ice/practice_and_development.md` (8 documents — this closes out the full list an earlier
+  sweep record named as still unchecked). **Status genuinely unknown** — no record found either way —
+  for the remaining 16: `foundation/on_ice_communication.md`,
+  `hockey-iq/risk_management.md`, `off-the-ice/mental_game.md`, `positions/center.md`,
+  `positions/defender.md`, `positions/winger.md`, `reading-diagrams/reading_ice_hockey_diagrams.md`,
+  `systems/defending_the_rush.md`, `systems/defensive_zone_coverage.md`, `systems/faceoffs.md`,
+  `systems/forechecking_systems.md`, `systems/game_management.md`, `systems/neutral_zone_systems.md`,
+  `systems/offensive_zone_play.md`, `systems/zone_entries.md`, `technique/shooting.md`. Whoever checks
+  one of these last 16 should update this row by name, not by adjusting a total.
 - ~~The renderer drops the word "clause" from every multi-clause citation~~ — **FIXED** (see below,
   same day). `scripts/md_to_speech.py`'s citation regex was widened and verified against the real
   pipeline, zero survivors corpus-wide.
