@@ -93,35 +93,29 @@ record.
 
 ## Genuinely open
 
-### Site-wide: deep-link anchors don't scroll to their target on cross-page navigation (found 20 September)
+### Closed 21 September — the site-wide deep-link anchor-scroll bug
 
-**Not caused by this session's work, but found while site-reviewing this session's `pathways.json`
-additions, and it affects every one of them.** A `site-reviewer` pass clicking through the four new
-pathway cards found that landing on `document#anchor` from a different page does not scroll to the
-anchor at all — the reader lands at the top of the document, not the promised section. Confirmed
-three independent ways (direct navigation to the URL+fragment, a simulated click on the actual pathway
-card, and setting `location.hash` via JS on an already-loaded page) — all three fail identically.
-Confirmed **pre-existing and site-wide**, not introduced by this session: it reproduces identically on
-`rules_primer.md#10-...` and `body_contact_and_battles.md#1-...`, both already-shipped anchors used by
-the pre-existing `playing-in-britain` pathway, unrelated to anything edited this session. An in-page
-table-of-contents click to the same heading works correctly (lands precisely, respecting the sticky
-header offset) — only cross-page navigation to a fragment is affected.
+`site/src/styles/global.css`'s `html` rule had `scroll-behavior: smooth` removed and
+`scroll-behavior: auto` set explicitly — that property, interacting with the browser's native
+scroll-to-`:target` step on initial page load, was causing every cross-page fragment navigation
+site-wide to land at `scrollY: 0` instead of the target heading (an in-page table-of-contents click,
+which doesn't go through that native step, worked correctly throughout, which is what pointed at this
+specific property).
 
-**Likely cause, not confirmed**: `site/src/styles/global.css`'s `html { scroll-behavior: smooth; ...
-scroll-padding-top: ... }` (around line 131) interacting with the browser's native scroll-to-`:target`
-step on page load — the same file already has a comment (around line 890) documenting a smaller,
-related, partially-fixed defect in this exact area. What was observed this time is much larger (a
-near-total non-scroll, not a small offset) and reproduces even via `location.hash =` with no click
-involved, so it may be a different or regressed defect, not the same one. Needs an engineer with a
-live debugger, not a content fix — **this is a `site/src/styles/`, not `content/`, issue.**
+**Independently verified** by a fresh `site-reviewer` pass — a genuinely separate check from the
+coordinator's own preliminary look, fresh build, fresh server process, fresh tabs. All three
+previously-broken repro modes confirmed fixed, with matching measurements between methods: direct
+navigation to all four `pathways.json` target anchors landed at scrollY 21,895 / 30,867 / 130,621 /
+3,192, each with the heading exactly ~128px from the viewport top (the correct header/player offset);
+a real click on the `checking-formats` homepage pathway card landed at the identical figure for that
+anchor; `location.hash =` set via JS on an already-loaded page — the one repro mode that didn't fit a
+pure initial-navigation-timing theory — also landed at the identical figure. An in-page
+table-of-contents click still works with no regression (an instant jump instead of an animated scroll,
+the expected trade-off). Zero console errors, zero off-origin requests, both themes checked with no
+visual regression. Not independently checked: the phone viewport (a tool limitation this session, not
+a site defect — `resize_window` wasn't changing the actual viewport).
 
-**Impact**: every one of this session's four new pathway cards has a correct `href` but currently
-lands the reader at the wrong place — the data is right, the experience is broken. This is a real,
-site-wide navigation defect independent of anything in `content/`, so it does not block staging this
-session's `content/`/`pathways.json` work (the gate's C10 concern was about the new cards rendering
-and linking correctly, which they do — this is a distinct, pre-existing defect the same pass happened
-to surface). But it affects every pathway card, old and new, and plausibly every other deep link into
-the corpus from anywhere off-page.
+No content change; `site/src/styles/global.css` only. Not yet committed.
 
 ### Closed 20 September — the `parent-of-a-new-player` checking-permission Critical
 

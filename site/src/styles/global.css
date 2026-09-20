@@ -128,8 +128,22 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-  /* ⚠️ THE PLAYER IS PART OF THE TOP OBSTRUCTION, NOT JUST THE HEADER.
+  /* ⚠️ `scroll-behavior: smooth` HERE BROKE FRAGMENT NAVIGATION FROM ANOTHER
+     PAGE, SITE-WIDE. Confirmed 20 September 2026 across three unrelated
+     documents/anchors, three ways (direct URL+fragment navigation, a
+     simulated click on a homepage pathway card, and `location.hash =` on an
+     already-loaded page) — all three landed at `scrollY: 0` instead of the
+     target heading, far down the page in every case. An in-page
+     table-of-contents click to the same heading (no cross-page navigation)
+     worked correctly throughout, so the defect is specific to `smooth`
+     interacting with the browser's native scroll-to-`:target` step on initial
+     page load, not a broken anchor or a broken offset — this file's own two
+     older comments below document two DIFFERENT, already-fixed bugs in this
+     same area (a scroll-container promotion, a doubled offset); this is a
+     third, distinct failure. Set to `auto` instead: an instant jump, not
+     animated, but one that actually lands. Re-test all three repro modes
+     before ever reintroducing `smooth` here.
+     ⚠️ THE PLAYER IS PART OF THE TOP OBSTRUCTION, NOT JUST THE HEADER.
      This was `calc(var(--header-h) + 1rem)` = 72px, which cleared the 56px
      header alone. When the audio player became `position: sticky;
      top: var(--header-h)` it put a SECOND fixed obstruction between 56px and
@@ -142,6 +156,7 @@ html {
      ⚠️ `--player-h` is 0 on pages with no player, so index and home pages keep
      the original 72px and do not gain dead space. */
   scroll-padding-top: calc(var(--header-h) + var(--player-h) + 1rem);
+  scroll-behavior: auto;
 }
 
 /* Set by Base.astro on pages that actually render the audio player. ⚠️ Do not
