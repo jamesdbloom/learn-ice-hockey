@@ -20,8 +20,16 @@ sources entry, and the pathways.json documentation fix), and
 `check_links_pathways_anchor_gate_2026-09-21.md` (the `check_links.py` extension that now verifies
 `pathways.json` anchors — closes the item this file used to carry about that gap), and
 `caption_routing_and_game_management_propagation_2026-09-21.md` (the caption-routing investigation
-and the four-round `game_management.md` propagation fix it triggered).
-The two standing house-style decisions (injury-mechanism-form convention, capital-lowering) and the
+and the four-round `game_management.md` propagation fix it triggered),
+`check_links_section_reference_gate_2026-09-21.md` (the `check_links.py` extension that now verifies
+`§N` cross-document section references — closes the item this file used to carry about that gap),
+`game_management_late_hit_common_mistakes_2026-09-21.md` (the late-hit Common Mistakes fix, its
+independent safety-reviewer and rules-verifier passes, and the Minor citation-tier fix one of them
+caught), and `search_console_refresh_2026-09-21.md` (a live Google Search Console pull and the
+striking-distance page list it produced).
+The two standing house-style decisions (injury-mechanism-form convention, capital-lowering), the
+"punt to the owner, don't restate" caption policy (decided 21 September: yes, make it the standard),
+and the
 site-wide anchor-scroll bug were all closed 20–21 September and are recorded in the archive above; no
 action remains on any of them.
 
@@ -91,32 +99,21 @@ record.
 
 ## Genuinely open
 
-- **`game_management.md`'s late-hit hazard has no Common Mistakes bullet.** Found incidentally by a
-  safety-reviewer's omission pass while closing a caption-routing gap in the same document (see
-  coverage above) — the late-hit hazard is taught extensively in body prose, facts blocks, and Key
-  Takeaways (items 12-15, quoting USA
-  Hockey's *Declaration of Player Safety*), but the nearest Common Mistakes bullet explicitly defers
-  the late-hit question rather than answering it. Not fixed — a distinct hazard from what triggered
-  the finding, logged rather than force-fixed. See
-  `project/reviews/caption_routing_and_game_management_propagation_2026-09-21.md`.
-- **`§N` cross-document section references aren't mechanically checked.** `check_links.py` verifies a
-  `[Body Contact and Battles](../technique/body_contact_and_battles.md)` link resolves, but has no way
-  to check the plain-text `, §5` half against that document's actual current section numbering — a
-  corpus-wide, established pattern (22 uses across 7 files, before this session's own additions)
-  that could go stale silently if
-  `body_contact_and_battles.md`'s sections are ever renumbered. Low priority; same class of gap as the
-  now-closed pathway-anchor one, but for a different reference style.
-- **Policy call needed: is `how_to_watch_hockey.md` explicitly declining to teach a rule its own
-  caption touches (naming the correct owner document instead) the right pattern going forward?**
-  Surfaced during the caption-routing work above — a disclosed, deliberate design choice, not a
-  defect, but nobody has decided whether it's the standard other documents in the same position
-  should follow.
-- **Traffic-plan marketing/ops items, genuinely outstanding, outside this environment's scope**:
-  refresh Google Search Console; identify and improve striking-distance pages (positions 11–20);
-  submit to Kadaza and FeedSpot; outreach to EIHA/clubs/rinks/coaches; monthly traffic measurement.
-  See `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 2–4 for detail. None
-  of this is a content-review task — it needs the repo owner's own credentials, judgement, and
-  outreach, not a dispatch.
+- **Draft improved openings for the two highest-value striking-distance pages** (`faceoffs.md`,
+  2,457 impressions at position 14; `rules_primer.md`, 2,182 impressions at position 27) — the two
+  standouts identified in a live Google Search Console refresh, by impression volume. This is a real
+  `content/` change (titles/descriptions are auto-generated from each document's own H1 and Overview
+  — there is no metadata field to edit separately), so it needs the normal
+  content-reviewer/rules-verifier/commit-gate chain, not a quick pass across all pages. The other 16
+  identified striking-distance pages are lower individual payoff — worth batching only once the first
+  two prove out. See `project/reviews/search_console_refresh_2026-09-21.md` for the full ranked list
+  and reasoning. Not started — needs the user's go-ahead before touching two of the corpus's most
+  heavily-reviewed documents.
+- **Kadaza/FeedSpot submission, outreach to EIHA/clubs/rinks/coaches, and monthly traffic
+  measurement — genuinely outstanding, outside this environment's scope.** Unchanged from the
+  original plan: these need the user's own account/credentials, relationships, and an ongoing cadence
+  this session can't hold open. See
+  `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 3–4 for detail.
 - **The podcast-vs-corpus divergence question** — owned in `PODCAST_AUTOMATION_LOCAL.md`, not
   duplicated here (see "Design specifications" above).
 - **Podcast work generally** — deferred all session per standing instruction; see
@@ -126,7 +123,10 @@ record.
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or
-from an earlier paragraph in this file.** As of 21 September 2026, local `main` is **2 commits ahead**
-of `origin/main`: `1e04005` (the `check_links.py` pathway-anchor gate) and `a642f87` (the caption
-routing / `game_management.md` propagation fix). Both committed, neither pushed. Push remains the
-user's own call throughout — this session pushes nothing without explicit go-ahead.
+from an earlier paragraph in this file.** As of 21 September 2026, local `main` is **3 commits ahead**
+of `origin/main`: `1e04005` (the `check_links.py` pathway-anchor gate), `a642f87` (the caption
+routing / `game_management.md` propagation fix), and `120e706` (the plan-hygiene pass removing
+already-fixed work narrated as pending). All committed, none pushed. A fourth commit for the
+late-hit fix, the `§N` gate, the Search Console record, and this file's own updates is about to be
+added in this same session. Push remains the user's own call throughout — this session pushes
+nothing without explicit go-ahead.

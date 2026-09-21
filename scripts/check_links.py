@@ -35,6 +35,11 @@ What it checks
       `site/src/data/pathways.json`, resolved against `content/` and slugged
       with the exact same machinery as an ordinary cross-link — checked
       regardless of a pathway's `status` (`draft` rots exactly like `reviewed`)
+    * every `[text](doc.md), §N` house-style reference to a NUMBERED SECTION of
+      another document — the corpus's way of pointing at a section without a
+      deep `#anchor` — resolved to the target's own `## N. Title` heading, so a
+      renumbering or reordering of that document's sections breaks the gate
+      instead of rotting silently. See check_section_references().
 
 What it deliberately does not check
     * external `http(s)` URLs — they need the network and belong in the weekly
@@ -169,6 +174,30 @@ REF_USE_RE = re.compile(r"(?<!\\)\[(?P<text>(?:[^\[\]\\]|\\.)*)\]\[(?P<label>(?:
 # Inline HTML with an explicit id/name, which is also a valid anchor target.
 HTML_ID_RE = re.compile(r"""<[a-zA-Z][^>]*?\s(?:id|name)\s*=\s*["']([^"']+)["']""")
 
+# The corpus's numbered-section heading convention: "## 1. Which Contact Rules
+# Are You Actually Playing Under?" — numeral, period, space, title. Confirmed
+# against every document currently targeted by a `§N` house-style reference
+# (content/technique/body_contact_and_battles.md, sections 1-12) and against
+# two unrelated documents that use the same convention independently
+# (content/foundation/rules_primer.md, content/hockey-iq/time_and_space.md),
+# so this is a corpus-wide style, not one document's habit. Deliberately
+# restricted to `##` (exactly two hashes): every numbered section observed is
+# top-level, and a `###` subsection is never what a `§N` reference means.
+SECTION_HEADING_RE = re.compile(r"^(\d+)\.\s")
+
+# The corpus's house style for citing a NUMBERED SECTION of another document
+# without a deep `#anchor`: "[Body Contact and Battles](../technique/
+# body_contact_and_battles.md), §6". Matched immediately after a link's
+# closing `)`, allowing the punctuation this corpus actually uses between the
+# two — a trailing comma or period, and markdown italic/bold markers
+# reopening around the `§` (some of these references sit inside an italicised
+# Sources note) — but deliberately NOT an em dash. An em dash before `§N` in
+# this corpus marks a different thing entirely: a citation to an EXTERNAL
+# source's own section numbering ("USA Hockey ... (PDF) — §5"), which this
+# check has no business verifying and must not be confused with the
+# corpus's own cross-references.
+SECTION_REF_RE = re.compile(r"\A[,.]?\s*[*_]{0,3}§(\d+)\b")
+
 EXTERNAL_SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.\-]*:")
 
 INLINE_MARKUP_RE = re.compile(
@@ -269,21 +298,48 @@ class Failure:
     message: str
 
 
-def parse_document(path: Path, text: str) -> tuple[list[str], list[Link], set[str]]:
-    """Return (heading ids, links, explicit html ids) for one markdown file."""
+@dataclass(frozen=True)
+class SectionRef:
+    """A `[text](doc.md), §N` house-style section cross-reference.
+
+    `destination` is the preceding link's own destination (resolved the same
+    way as any other link, to find which document `number` is supposed to be
+    a section of); `raw` is the matched punctuation-plus-marker text between
+    the link and the `§`, kept only so a failure report can show what was
+    actually written.
+    """
+
+    source: Path
+    line: int
+    column: int
+    destination: str
+    number: int
+    raw: str
+
+
+def parse_document(
+    path: Path, text: str
+) -> tuple[list[str], list[Link], set[str], list[SectionRef], dict[int, str]]:
+    """Return (heading ids, links, explicit html ids, section refs, numbered sections)."""
     lines = text.splitlines()
     in_code = strip_code(lines)
 
     slugger = Slugger()
     anchors: list[str] = []
     html_ids: set[str] = set()
+    numbered_sections: dict[int, str] = {}
 
     for index, line in enumerate(lines):
         if in_code[index]:
             continue
         atx = ATX_RE.match(line)
         if atx:
-            anchors.append(slugger.slug(heading_text(atx.group(2))))
+            rendered = heading_text(atx.group(2))
+            anchors.append(slugger.slug(rendered))
+            if atx.group(1) == "##":
+                section_match = SECTION_HEADING_RE.match(rendered)
+                if section_match:
+                    numbered_sections[int(section_match.group(1))] = rendered
             continue
         # Setext heading: text on the previous line underlined with = or -.
         if (
@@ -299,7 +355,47 @@ def parse_document(path: Path, text: str) -> tuple[list[str], list[Link], set[st
         html_ids.update(HTML_ID_RE.findall(line))
 
     links: list[Link] = []
+    section_refs: list[SectionRef] = []
     ref_defs: dict[str, tuple[int, int, str]] = {}
+
+    def check_section_ref(destination: str, line: str, end: int, index: int) -> None:
+        """If `§N` sits right after a link ending at `end`, record it.
+
+        Only for internal destinations — an external citation uses the same
+        `§N` glyph for the SOURCE's own numbering (see SECTION_REF_RE's
+        comment), and this pattern only means something for a link into this
+        corpus.
+
+        The reference is allowed to soft-wrap onto the next physical line —
+        confirmed necessary by `content/technique/puck_handling.md`, where
+        prose reflow puts the closing `)` at the end of one line and `§6` at
+        the start of the next. Peeking one line ahead (never into a fenced
+        code block) is enough: SECTION_REF_RE tolerates at most one `\n`, so
+        it cannot cross a blank-line paragraph break and land on an unrelated
+        `§` two paragraphs later.
+        """
+        if is_external(destination):
+            return
+        rest = line[end:]
+        if index + 1 < len(lines) and not in_code[index + 1]:
+            rest += "\n" + lines[index + 1]
+        match = SECTION_REF_RE.match(rest)
+        if not match:
+            return
+        # Report the line the `§N` itself actually sits on. SECTION_REF_RE
+        # is matched with .match(), which always anchors at position 0 of
+        # `rest` — match.start() is therefore always 0 and useless for
+        # locating the match; what tells the two cases apart is whether the
+        # matched text itself swallowed the injected "\n".
+        matched_text = match.group(0)
+        if "\n" not in matched_text:
+            ref_line, column = index + 1, end + 1
+        else:
+            ref_line = index + 2
+            column = lines[index + 1].find("§") + 1
+        section_refs.append(
+            SectionRef(path, ref_line, column, destination, int(match.group(1)), matched_text.strip())
+        )
 
     for index, line in enumerate(lines):
         if in_code[index]:
@@ -314,22 +410,26 @@ def parse_document(path: Path, text: str) -> tuple[list[str], list[Link], set[st
             destination = match.group("angle")
             if destination is None:
                 destination = match.group("plain") or ""
+            destination = destination.strip()
             links.append(
-                Link(path, index + 1, match.start() + 1, match.group(0)[:80], destination.strip())
+                Link(path, index + 1, match.start() + 1, match.group(0)[:80], destination)
             )
+            check_section_ref(destination, line, match.end(), index)
         for match in REF_USE_RE.finditer(masked):
             label = (match.group("label") or match.group("text")).strip().lower()
             if label in ref_defs:
                 _, _, destination = ref_defs[label]
+                destination = destination.strip()
                 links.append(
-                    Link(path, index + 1, match.start() + 1, match.group(0)[:80], destination.strip())
+                    Link(path, index + 1, match.start() + 1, match.group(0)[:80], destination)
                 )
+                check_section_ref(destination, line, match.end(), index)
 
     # Reference definitions are links in their own right.
     for label, (line_no, column, destination) in ref_defs.items():
         links.append(Link(path, line_no, column, f"[{label}]: {destination}"[:80], destination))
 
-    return anchors, links, html_ids
+    return anchors, links, html_ids, section_refs, numbered_sections
 
 
 # --------------------------------------------------------------------------
@@ -367,7 +467,9 @@ class Corpus:
     def __init__(self, roots: Sequence[Path]) -> None:
         self.roots = list(roots)
         self.root = self.roots[0]
-        self.documents: dict[Path, tuple[list[str], list[Link], set[str]]] = {}
+        self.documents: dict[
+            Path, tuple[list[str], list[Link], set[str], list[SectionRef], dict[int, str]]
+        ] = {}
         for root in self.roots:
             for path in markdown_files(root):
                 if path in self.documents:
@@ -380,8 +482,23 @@ class Corpus:
                 self.documents[path] = parse_document(path, path.read_text(encoding="utf-8"))
             else:
                 return set()
-        headings, _, html_ids = self.documents[path]
+        headings, _, html_ids, _, _ = self.documents[path]
         return set(headings) | html_ids
+
+    def numbered_sections_for(self, path: Path) -> dict[int, str]:
+        """The `## N. Title` section numbers a document declares, as {number: title}.
+
+        Reuses the same lazy on-demand parse as anchors_for() — a section-ref
+        target is typically already crawled (it's `content/`), but the lookup
+        works identically for one that is not.
+        """
+        if path not in self.documents:
+            if path.suffix.lower() == ".md" and path.is_file():
+                self.documents[path] = parse_document(path, path.read_text(encoding="utf-8"))
+            else:
+                return {}
+        _, _, _, _, numbered_sections = self.documents[path]
+        return numbered_sections
 
     def links(self) -> Iterator[Link]:
         # ⚠️ Snapshot first. `anchors_for()` parses a link TARGET on demand and
@@ -392,9 +509,18 @@ class Corpus:
         # immediately once `project/` links out to `content/`. The lazily added
         # documents are targets, not sources — their own links are deliberately
         # not checked, because nothing asked for that tree to be checked.
-        for _, links, _ in list(self.documents.values()):
+        for _, links, _, _, _ in list(self.documents.values()):
             for link in links:
                 yield link
+
+    def section_refs(self) -> Iterator[SectionRef]:
+        # Same snapshot reasoning as links(): section refs only originate from
+        # already-crawled SOURCE files (content/), so this never lazily grows
+        # self.documents, but snapshotting keeps the two iterators symmetric
+        # and safe under future change.
+        for _, _, _, refs, _ in list(self.documents.values()):
+            for ref in refs:
+                yield ref
 
 
 def nearest(fragment: str, anchors: set[str]) -> str:
@@ -539,6 +665,82 @@ def check_pathways(
     return count, failures
 
 
+# --------------------------------------------------------------------------
+# §N house-style section references
+# --------------------------------------------------------------------------
+#
+# The style guide's cross-referencing convention for pointing at a numbered
+# section of another document without a deep `#anchor`: "[Body Contact and
+# Battles](../technique/body_contact_and_battles.md), §5." Unlike a deep
+# link, the target's exact section wording never has to match — only the
+# NUMBER does — but that number is exactly as capable of going stale as a
+# heading slug: if body_contact_and_battles.md's sections are ever
+# renumbered or reordered, every one of these `§N` references breaks, and
+# nothing before this check ever read the plain text after a link to notice.
+#
+# This is a GATE, not a worklist, for the same reason the pathway-anchor
+# check above is a gate rather than check_rule_scope.py-style human judgement:
+# "does target document have a `## N. ...` heading" is a yes/no mechanical
+# fact, exactly like "does this fragment match a heading slug". There is no
+# judgement call for a human to make on a hit — a `§N` with no matching
+# section is unambiguously broken, the same way a `#anchor` matching no slug
+# is unambiguously broken. Contrast check_rule_scope.py, which reports a book
+# divergence that is very often *correct* and needs a human's judgement to
+# read; this check has no such legitimate-hit case.
+
+
+def check_section_references(corpus: Corpus) -> tuple[int, list[Failure]]:
+    """Verify every `[text](doc.md), §N` reference against a real `## N. ...` heading.
+
+    Resolves the preceding link's destination exactly like an ordinary
+    cross-link (relative to the citing file's directory), then asks the
+    target document — via Corpus.numbered_sections_for(), which shares the
+    lazy on-demand parse anchors_for() already uses — whether it declares a
+    `## N. Title` heading for that number.
+
+    A target that does not exist, or is not a `.md` file, is left to the main
+    link-resolution loop to report — this only adds an *additional* signal on
+    top of an already-resolving link, never a competing message about the
+    same broken destination.
+    """
+    failures: list[Failure] = []
+    count = 0
+
+    for ref in corpus.section_refs():
+        count += 1
+
+        target_part, _, _ = ref.destination.partition("#")
+        target_part = target_part.split("?")[0]
+        relative = unquote(target_part)
+        if not relative:
+            continue  # a same-page "(#anchor), §N" is not this house style
+
+        if relative.startswith("/"):
+            resolved = (corpus.root / relative.lstrip("/")).resolve()
+        else:
+            resolved = Path(posixpath.normpath(str(ref.source.parent / relative)))
+
+        if not resolved.is_file() or resolved.suffix.lower() != ".md":
+            continue  # reported by the main link check, or not ours to parse
+
+        sections = corpus.numbered_sections_for(resolved)
+        if ref.number not in sections:
+            display = display_path(resolved, corpus.root)
+            available = ", ".join(str(n) for n in sorted(sections)) or "none"
+            failures.append(
+                Failure(
+                    ref.source,
+                    ref.line,
+                    ref.column,
+                    f"{target_part}{ref.raw}",
+                    f"{display} exists but has no '## {ref.number}. ...' section "
+                    f"(sections present: {available})",
+                )
+            )
+
+    return count, failures
+
+
 def check(
     roots: Sequence[Path],
     site_root: Path | None = None,
@@ -556,6 +758,7 @@ def check(
         "same_page": 0,
         "directories": 0,
         "pathway_anchors": 0,
+        "section_refs": 0,
     }
     failures: list[Failure] = []
 
@@ -657,6 +860,10 @@ def check(
         counts["pathway_anchors"] = pathway_count
         failures.extend(pathway_failures)
 
+    section_count, section_failures = check_section_references(corpus)
+    counts["section_refs"] = section_count
+    failures.extend(section_failures)
+
     return counts, failures
 
 
@@ -720,7 +927,7 @@ def main(argv: Iterable[str] | None = None) -> int:
 
     if args.list_anchors:
         path = Path(args.list_anchors).resolve()
-        headings, _, html_ids = parse_document(path, path.read_text(encoding="utf-8"))
+        headings, _, html_ids, _, _ = parse_document(path, path.read_text(encoding="utf-8"))
         for anchor in headings:
             print(anchor)
         for anchor in sorted(html_ids):
@@ -753,6 +960,7 @@ def main(argv: Iterable[str] | None = None) -> int:
             f"checked {counts['links']} links across {counts['files']} files "
             f"({counts['internal']} internal, {counts['same_page']} same-page anchors, "
             f"{counts['pathway_anchors']} pathway deep links, "
+            f"{counts['section_refs']} §N section references, "
             f"{counts['external']} external skipped) — {len(failures)} broken",
             file=sys.stderr,
         )
@@ -765,6 +973,7 @@ def main(argv: Iterable[str] | None = None) -> int:
             f"{counts['same_page']} same-page anchors · "
             f"{counts['anchors']} fragments verified against derived heading slugs · "
             f"{counts['pathway_anchors']} pathways.json deep links verified · "
+            f"{counts['section_refs']} §N section references verified · "
             f"{counts['external']} external skipped"
             + (
                 f" · {counts['directories']} directory links, legitimate outside content/"
