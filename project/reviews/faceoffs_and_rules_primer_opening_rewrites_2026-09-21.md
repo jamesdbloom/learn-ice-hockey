@@ -167,9 +167,32 @@ actual value delivered here is citation precision and TTS listenability, not a p
   neutral effect on the actual truncated snippet (both old and new text fit under the 185-char cap).
 - **`offensive_zone_play.md:1006` carries its own unhedged "only moment in the game" claim**, found
   as a side effect of this round's `faceoffs.md` review, not fixed here (out of file scope for this
-  task) — logged to `OPEN_ITEMS.md` as a new row.
+  task) — logged to `OPEN_ITEMS.md` as a new row. **Closed 21 September**, see
+  `project/reviews/offensive_zone_play_only_moment_hedge_2026-09-21.md`; the convention question it
+  raised is now written up in `project/content_style_guide.md`, "An unsourced 'only X' needs the word
+  softened, not just a trailing hedge."
 - The other 16 lower-priority striking-distance pages from the Search Console refresh remain
   unstarted, per the original plan's own sequencing (batch only once these two "prove out").
+
+## Status, closed 22 September 2026
+
+Both open questions above are **parked, not solved** — closing this record's active status rather than
+leaving it as a live backlog row that nobody is working. Nothing changed since 21 September to
+warrant reopening either:
+
+- **`faceoffs.md`'s CTR problem remains unaddressed.** No new angle (structured data, a title change,
+  or any other lever) has been proposed or attempted since this record was written. Re-attempting the
+  same Overview paragraph without a new idea would just repeat the null result already measured here.
+  If a future Search Console refresh shows this page's numbers moved on their own, or someone proposes
+  a genuinely different lever, that's a new task — not a reason to reopen this one.
+- **The other 16 striking-distance pages remain unstarted**, correctly, since the plan's own
+  precondition for batching them (a content-layer opening rewrite shown to move a page's numbers) still
+  has not been met — `faceoffs.md`'s attempt is the one data point available, and it was a null result.
+  Nothing has changed about that since 21 September.
+
+Neither closure requires or implies any corpus-content change. Both are decisions to *not* pursue
+further work right now, recorded so the question doesn't sit in `OPEN_ITEMS.md`'s "Genuinely open"
+looking like a pending task when no one is actually working it.
 
 ## What this method could not have found
 

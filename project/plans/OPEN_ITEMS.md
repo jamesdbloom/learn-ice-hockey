@@ -29,14 +29,18 @@ caught), `search_console_refresh_2026-09-21.md` (a live Google Search Console pu
 striking-distance page list it produced), and
 `faceoffs_and_rules_primer_opening_rewrites_2026-09-21.md` (the two Search-Console-standout
 opening-paragraph rewrites, two rounds of independent review each, and the two new items they
-surfaced), and `offensive_zone_play_only_moment_hedge_2026-09-21.md` (the parallel unhedged "only
-moment in the game" claim one of those rewrites surfaced, now hedged — closes the item this file
-used to carry about it).
+surfaced — both now closed/parked, see that record's own "Status" section), and
+`offensive_zone_play_only_moment_hedge_2026-09-21.md` (the parallel unhedged "only moment in the
+game" claim one of those rewrites surfaced, now hedged — closes the item this file used to carry
+about it; the convention question it raised is written up in `project/content_style_guide.md`,
+"An unsourced 'only X' needs the word softened, not just a trailing hedge").
 The two standing house-style decisions (injury-mechanism-form convention, capital-lowering), the
 "punt to the owner, don't restate" caption policy (decided 21 September: yes, make it the standard),
 and the
 site-wide anchor-scroll bug were all closed 20–21 September and are recorded in the archive above; no
-action remains on any of them.
+action remains on any of them. **Kadaza and FeedSpot submissions (site and podcast) are both done by
+the user, 22 September 2026** — see "Genuinely open" below for what's left of the traffic-plan
+marketing backlog.
 
 ## Design specifications, not dispatch queues
 
@@ -104,35 +108,10 @@ record.
 
 ## Genuinely open
 
-- **The corpus now has two different remediation conventions for the same "unhedged only-X claim"
-  defect shape**, applied to two sibling documents days apart: `faceoffs.md`'s fix kept the word
-  "only" and hedged only a trailing precision clause; `offensive_zone_play.md`'s fix (closed this
-  session) softened "only" itself to a comparative and appended a full hedge clause. Both are
-  individually defensible but not standardized — worth a style-guide note next time this pattern
-  recurs, not worth relitigating either already-committed fix. See
-  `project/reviews/offensive_zone_play_only_moment_hedge_2026-09-21.md`.
-- **`faceoffs.md`'s Overview rewrite achieved no measurable SEO change** — the safe, properly-hedged
-  version of its opening produces a meta description character-for-character identical to before this
-  session's work. Whether this page's low click-through (3 clicks on 2,457 impressions at position 14)
-  needs a different lever entirely — structured data, a title change, or simply isn't fixable at the
-  content layer — is open. Not urgent; record the question rather than re-attempt the same paragraph
-  again without a new angle. See
-  `project/reviews/faceoffs_and_rules_primer_opening_rewrites_2026-09-21.md`.
-- **The other 16 lower-priority striking-distance pages** identified in the Search Console refresh —
-  per the original plan's own sequencing, worth batching only once a content-layer opening rewrite is
-  shown to actually move a page's numbers, which `faceoffs.md`'s attempt did not establish. See
-  `project/reviews/search_console_refresh_2026-09-21.md` for the full ranked list.
-- **Kadaza submission — done by the user 22 September 2026.**
-- **FeedSpot submission, outreach to EIHA/clubs/rinks/coaches, and monthly traffic measurement —
-  genuinely outstanding, outside this environment's scope.** These need the user's own
-  account/credentials, relationships, and an ongoing cadence this session can't hold open. FeedSpot's
-  publisher submission page: <https://www.feedspot.com/publisher/> — per FeedSpot's own publisher
-  documentation, submit via the "Submit Site" form there (or the "Submit your Blog" button on any of
-  their blog-list pages); a FeedSpot Publisher account is created automatically on submission, and a
-  confirmation email follows listing which lists the site was added to. (Direct fetch of the page
-  itself returned HTTP 403 from this environment — likely bot-blocking, not a dead link — so verify it
-  opens normally in your own browser before using it.) See
-  `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 3–4 for detail.
+- **Outreach to EIHA/clubs/rinks/coaches, and monthly traffic measurement — genuinely outstanding,
+  outside this environment's scope.** These need the user's own relationships and an ongoing cadence
+  this session can't hold open. See `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md`
+  Phases 3–4 for detail. (Kadaza and FeedSpot submissions are both done — see coverage above.)
 - **The podcast-vs-corpus divergence question** — owned in `PODCAST_AUTOMATION_LOCAL.md`, not
   duplicated here (see "Design specifications" above).
 - **Podcast work generally** — deferred all session per standing instruction; see
@@ -142,11 +121,10 @@ record.
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git fetch origin main && git rev-list --count origin/main..HEAD`,
-never quoted from memory or from an earlier paragraph in this file.** As of 21 September 2026, a fresh
-fetch shows `origin/main` at `c216af7` — the same commit as local `main` before this session's newest
-uncommitted work, meaning `c216af7` (the `faceoffs.md`/`rules_primer.md` opening rewrites) has also
-been pushed to production, again not by this session — this is the **second** time in this session a
-commit this session made has appeared on `origin/main` via some other route (another session, or the
-user directly) before this file's next check. The `offensive_zone_play.md` hedge fix is about to be
-committed as this file's own update lands — once that commit exists, local `main` will be ahead of
-`origin/main` again and **not pushed** — push remains the user's own call throughout.
+never quoted from memory or from an earlier paragraph in this file.** As of 22 September 2026, a fresh
+fetch shows `origin/main` at `c216af7`, and local `main` is **2 commits ahead**: `7df04fc` (the
+`offensive_zone_play.md` hedge fix) and `25b0725` (the Kadaza-done / FeedSpot-link plan update).
+Unlike the two prior checks in this file, this time origin was NOT already at local HEAD — the
+auto-push pattern noted twice earlier in this session did not recur here. This file's own newest
+update (the style-guide note, the two closed items, this section) is about to add a further commit —
+push remains the user's own call throughout.
