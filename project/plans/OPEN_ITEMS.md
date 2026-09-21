@@ -15,8 +15,10 @@ review record — see the archive files themselves for the full workstream-to-re
 recent additions are `parent_pathway_checking_gap_closed_2026-09-20.md` (the checking-permission
 Critical), `traffic_plan_pathway_assembly_2026-09-20.md` (the four new pathway entries, the
 goaltender.md fix, the facts census, and the three-round `practice_and_development.md` safety fix),
-and `equipment_pwhl_pathways_cleanup_2026-09-21.md` (the equipment.md claim correction, the PWHL
-sources entry, and the pathways.json documentation fix).
+`equipment_pwhl_pathways_cleanup_2026-09-21.md` (the equipment.md claim correction, the PWHL
+sources entry, and the pathways.json documentation fix), and
+`check_links_pathways_anchor_gate_2026-09-21.md` (the `check_links.py` extension that now verifies
+`pathways.json` anchors — closes the item this file used to carry about that gap).
 The two standing house-style decisions (injury-mechanism-form convention, capital-lowering) and the
 site-wide anchor-scroll bug were all closed 20–21 September and are recorded in the archive above; no
 action remains on any of them.
@@ -28,6 +30,11 @@ design principles this corpus is written under. [`PODCAST_AUTOMATION_LOCAL.md`](
 — local NotebookLM/TTS pipeline operations, including the podcast-vs-corpus divergence question (its
 own open item, owned there — not duplicated here). Do not duplicate either file's specification here;
 executable corpus-content work is tracked in this file.
+
+**`list_sites_content_and_traffic_plan_2026-09-20.md` relocated to `project/reviews/` on 21 September**
+— every content-actionable item it produced is closed (see coverage above); it is kept there as
+historical research context, not a live plan. Its non-content marketing/ops items are tracked below
+under "Genuinely open," not restated here.
 
 ## Priority order
 
@@ -82,11 +89,17 @@ record.
 
 ## Genuinely open
 
-- **Nothing mechanically verifies a `pathways.json` anchor against the heading it points to** —
-  `check_links.py` only scans `content/**/*.md`; the file's own `$comment` claims otherwise (falsely).
-  Every anchor in the file has been manually checked as of 21 September, but a future reworded heading
-  would break one silently. Would need either a `check_links.py` extension or a correction to the
-  `$comment`'s claim. Low priority, but a real gap in the mechanical safety net.
+- **Caption safety/rule-scope routing — fix dispatched 21 September, in progress.** Not a fixed
+  backlog to clear to zero: some safety/rule content still lives only in captions with no home in body
+  prose (per `READABILITY_AND_DUAL_AUDIENCE.md`'s "Open threads" and
+  `project/reviews/round_77_the_caption_could_not_be_shortened.md`). A pass identifying and routing
+  the specific remaining blocks is dispatched, pending review.
+- **Traffic-plan marketing/ops items, genuinely outstanding, outside this environment's scope**:
+  refresh Google Search Console; identify and improve striking-distance pages (positions 11–20);
+  submit to Kadaza and FeedSpot; outreach to EIHA/clubs/rinks/coaches; monthly traffic measurement.
+  See `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 2–4 for detail. None
+  of this is a content-review task — it needs the repo owner's own credentials, judgement, and
+  outreach, not a dispatch.
 - **The podcast-vs-corpus divergence question** — owned in `PODCAST_AUTOMATION_LOCAL.md`, not
   duplicated here (see "Design specifications" above).
 - **Podcast work generally** — deferred all session per standing instruction; see

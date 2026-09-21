@@ -31,10 +31,17 @@ What it checks
     * the fragment, if any, matches a heading in the target file, using the same
       slug derivation as the site (GitHub style, via github-slugger semantics)
     * same-file anchors (`#some-heading`)
+    * every `entry.doc`/`entry.anchor` deep link in
+      `site/src/data/pathways.json`, resolved against `content/` and slugged
+      with the exact same machinery as an ordinary cross-link — checked
+      regardless of a pathway's `status` (`draft` rots exactly like `reviewed`)
 
 What it deliberately does not check
     * external `http(s)` URLs — they need the network and belong in the weekly
       job (`scripts/check_external_links.py`), not in the build
+    * a pathway `entry` with no `doc`/`anchor` (e.g. `entry: {"layer": "systems"}`)
+      — it routes into a section hub, not a `content/` heading, so there is no
+      anchor to rot
 
 Usage
     python3 scripts/check_links.py                # every tracked tree
@@ -49,6 +56,7 @@ Exits non-zero if anything is broken.
 from __future__ import annotations
 
 import argparse
+import json
 import posixpath
 import re
 import sys
@@ -429,7 +437,114 @@ def renders_to_a_site_page(path: Path, site_root: Path | None) -> bool:
     return True
 
 
-def check(roots: Sequence[Path], site_root: Path | None = None) -> tuple[dict[str, int], list[Failure]]:
+# --------------------------------------------------------------------------
+# pathways.json deep links
+# --------------------------------------------------------------------------
+#
+# site/src/data/pathways.json builds homepage entry points that jump straight
+# to a heading inside a content/ document via `entry: {"doc": ..., "anchor":
+# ...}`. That anchor is exactly the kind of thing this checker already gates
+# on for an ordinary `file.md#heading` link — a reworded heading breaks it
+# just as silently, and the file's own $comment says as much: "Verified by
+# scripts/check_links.py against the heading text in content/, so a reworded
+# heading fails the gate rather than rotting silently." Until this was added
+# that sentence was aspirational, not true — nothing ever opened the file.
+#
+# Reuses Corpus.anchors_for() (and its lazy on-demand parsing) rather than
+# re-deriving slugs, so a pathway anchor is checked with the identical
+# slugify()/Slugger() logic as every other anchor in this tool — no drift
+# possible between how a regular link and a pathway link are validated.
+
+
+def load_pathways(path: Path) -> list[dict] | None:
+    """The `pathways` array from pathways.json, or None if the file is absent."""
+    if not path.is_file():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("pathways", [])
+
+
+def pathway_id_line(path: Path, pathway_id: str) -> int:
+    """Best-effort line number of a pathway's `"id"` key, for a useful failure location.
+
+    This is a small text search over the JSON, not a JSON-aware line mapper —
+    good enough to point a human at the right pathway in a 300-line file,
+    which is all a failure report needs.
+    """
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return 0
+    needle = f'"{pathway_id}"'
+    for index, line in enumerate(lines):
+        if '"id"' in line and needle in line:
+            return index + 1
+    return 0
+
+
+def check_pathways(
+    pathways_path: Path, content_root: Path, corpus: Corpus
+) -> tuple[int, list[Failure]]:
+    """Verify every pathway's `entry.doc`/`entry.anchor` against a real heading.
+
+    Checked regardless of `status` — a draft pathway's anchor rots exactly like
+    a reviewed one's, and draft-ness is a publication gate (`statusGate` in the
+    file), not a reason to skip verification.
+    """
+    failures: list[Failure] = []
+    count = 0
+    pathways = load_pathways(pathways_path)
+    if not pathways:
+        return count, failures
+
+    for pathway in pathways:
+        entry = pathway.get("entry") or {}
+        doc = entry.get("doc")
+        anchor = entry.get("anchor")
+        if not doc or not anchor:
+            continue  # e.g. {"layer": "systems"} — routes into a section hub, not content/
+        count += 1
+        pathway_id = pathway.get("id", "?")
+        line = pathway_id_line(pathways_path, pathway_id)
+        destination = f"{doc}#{anchor}"
+
+        target = (content_root / f"{doc}.md").resolve()
+        display = display_path(target, content_root)
+
+        if not target.is_file():
+            failures.append(
+                Failure(
+                    pathways_path,
+                    line,
+                    1,
+                    destination,
+                    f"pathway '{pathway_id}': target does not exist ({display})",
+                )
+            )
+            continue
+
+        anchors = corpus.anchors_for(target)
+        if anchor not in anchors:
+            failures.append(
+                Failure(
+                    pathways_path,
+                    line,
+                    1,
+                    destination,
+                    f"pathway '{pathway_id}': {display} exists but no heading slugs to '{anchor}'"
+                    f"{nearest(anchor, anchors)}",
+                )
+            )
+
+    return count, failures
+
+
+def check(
+    roots: Sequence[Path],
+    site_root: Path | None = None,
+    pathways_path: Path | None = None,
+    content_root: Path | None = None,
+) -> tuple[dict[str, int], list[Failure]]:
     corpus = Corpus(roots)
     root = corpus.root
     counts = {
@@ -440,6 +555,7 @@ def check(roots: Sequence[Path], site_root: Path | None = None) -> tuple[dict[st
         "external": 0,
         "same_page": 0,
         "directories": 0,
+        "pathway_anchors": 0,
     }
     failures: list[Failure] = []
 
@@ -536,6 +652,11 @@ def check(roots: Sequence[Path], site_root: Path | None = None) -> tuple[dict[st
                     )
                 )
 
+    if pathways_path is not None and content_root is not None:
+        pathway_count, pathway_failures = check_pathways(pathways_path, content_root, corpus)
+        counts["pathway_anchors"] = pathway_count
+        failures.extend(pathway_failures)
+
     return counts, failures
 
 
@@ -591,6 +712,12 @@ def main(argv: Iterable[str] | None = None) -> int:
     # renders_to_a_site_page().
     site_root = repo_root / "content"
 
+    # pathways.json deep-links into content/ regardless of which roots were
+    # requested on the command line — a `--quiet` run scoped to just `project`
+    # would otherwise never notice a pathway anchor rot. See check_pathways().
+    pathways_path = repo_root / "site" / "src" / "data" / "pathways.json"
+    content_root = repo_root / "content"
+
     if args.list_anchors:
         path = Path(args.list_anchors).resolve()
         headings, _, html_ids = parse_document(path, path.read_text(encoding="utf-8"))
@@ -609,7 +736,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         print("check_links: nothing to check", file=sys.stderr)
         return 2
 
-    counts, failures = check(roots, site_root=site_root)
+    counts, failures = check(roots, site_root=site_root, pathways_path=pathways_path, content_root=content_root)
 
     if failures:
         print(f"\n{len(failures)} broken internal link(s):\n", file=sys.stderr)
@@ -625,6 +752,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         print(
             f"checked {counts['links']} links across {counts['files']} files "
             f"({counts['internal']} internal, {counts['same_page']} same-page anchors, "
+            f"{counts['pathway_anchors']} pathway deep links, "
             f"{counts['external']} external skipped) — {len(failures)} broken",
             file=sys.stderr,
         )
@@ -636,6 +764,7 @@ def main(argv: Iterable[str] | None = None) -> int:
             f"{counts['internal']} internal cross-links · "
             f"{counts['same_page']} same-page anchors · "
             f"{counts['anchors']} fragments verified against derived heading slugs · "
+            f"{counts['pathway_anchors']} pathways.json deep links verified · "
             f"{counts['external']} external skipped"
             + (
                 f" · {counts['directories']} directory links, legitimate outside content/"

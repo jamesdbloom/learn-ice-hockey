@@ -1,13 +1,20 @@
 # List-site research: content and traffic plan
 
-> **Status note (added during plan consolidation, not part of the original research).** This is
+> **Status note (updated 21 September 2026 — all content work closed, file archived).** This is
 > the original research plan as committed directly by the repo owner on 20 September 2026, outside
 > this project's normal generation process. It was subsequently adversarially reviewed against this
 > project's standards — see
-> [`project/reviews/traffic_plan_adversarial_review_2026-09-20.md`](../reviews/traffic_plan_adversarial_review_2026-09-20.md).
-> The actionable, reframed items from that review are tracked live in `project/plans/OPEN_ITEMS.md`,
-> under its "Content/traffic plan" section — not here. This file is kept as historical research
-> context, not a live worklist; do not act on it directly without reading the review above first.
+> [`traffic_plan_adversarial_review_2026-09-20.md`](traffic_plan_adversarial_review_2026-09-20.md).
+> Every content-actionable item this plan produced (Phase 1's parent/new-player pathway, cost/
+> registration, equipment journey, and Phase 2's rulebook-comparison pages) was completed, reviewed,
+> and committed — see `traffic_plan_pathway_assembly_2026-09-20.md`. Relocated here from
+> `project/plans/` on 21 September 2026 because no content work remains against it; this project's
+> own convention keeps a live plan folder free of completed items. What's left below (Phase 2's
+> Search Console/technical-SEO items, Phase 3's outreach, Phase 4's measurement) is genuinely
+> outstanding but is a site/marketing operation needing the repo owner's own credentials and
+> judgement, not a content-review task — it is not tracked as a live row in `OPEN_ITEMS.md` for that
+> reason, but it has not been done either. Read the review above before treating anything below as
+> settled.
 
 **Research date:** 20 September 2026
 
