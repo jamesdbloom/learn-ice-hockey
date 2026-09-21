@@ -122,9 +122,9 @@ record.
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git fetch origin main && git rev-list --count origin/main..HEAD`,
 never quoted from memory or from an earlier paragraph in this file.** As of 22 September 2026, a fresh
-fetch shows `origin/main` at `c216af7`, and local `main` is **2 commits ahead**: `7df04fc` (the
-`offensive_zone_play.md` hedge fix) and `25b0725` (the Kadaza-done / FeedSpot-link plan update).
-Unlike the two prior checks in this file, this time origin was NOT already at local HEAD — the
-auto-push pattern noted twice earlier in this session did not recur here. This file's own newest
-update (the style-guide note, the two closed items, this section) is about to add a further commit —
-push remains the user's own call throughout.
+fetch shows `origin/main` at `c216af7`, and local `main` is **3 commits ahead**: `7df04fc` (the
+`offensive_zone_play.md` hedge fix), `25b0725` (the Kadaza-done / FeedSpot-link plan update), and
+`22c9cc6` (the "only X" hedging style-guide note plus the two closed SEO questions). Unlike the two
+prior checks in this file, origin was NOT already at local HEAD this time — the auto-push pattern
+noted twice earlier in this session did not recur here. All three committed, none pushed — push
+remains the user's own call throughout.
