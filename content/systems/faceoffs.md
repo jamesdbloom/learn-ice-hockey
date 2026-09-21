@@ -47,7 +47,7 @@
 
 ## Overview
 
-A **faceoff**, or **draw**, is how play starts and restarts: an official drops the puck between the sticks of two opponents, and whoever wins it gives their team possession. There are roughly **56 in an average NHL game** — 56.6 per game in 2024-25 and 56.0 in 2025-26, computed from the NHL's official statistics — and they are the only moments where you know in advance where the puck will be and when.
+A **faceoff**, or **draw**, is how play starts and restarts: an official drops the puck between the sticks of two opponents, and whoever wins it gives their team possession. There are roughly **56 in an average NHL game** — 56.6 per game in 2024-25 and 56.0 in 2025-26, computed from the NHL's official statistics. Each one is the only moment in the game where you know in advance where the puck will be, and when — a coaching observation, not a measured claim.
 
 **Most of them matter far less than people think.** Across eleven NHL seasons, a team's faceoff win percentage explains only around 6% of the variation in the share of standings points it takes, and the relationship is unstable enough to have gone slightly negative in one of those seasons. That is a **team-level** figure, and it is the one people mean when they say faceoffs are overrated. So do not chase your faceoff percentage. Chase the ten or fifteen draws a game where the outcome actually changes something — a coaching estimate of how many carry real consequence, not a counted figure.
 
