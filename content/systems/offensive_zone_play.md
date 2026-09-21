@@ -1003,7 +1003,7 @@ More detail on mechanics is in [Shooting](../technique/shooting.md).
 
 ## 12. Offensive-Zone Faceoffs
 
-An offensive-zone faceoff is the only moment in the game where you get to arrange all five players exactly where you want them, with the puck about to arrive at a known place. It is the closest hockey gets to a free kick, and most amateur teams waste it entirely.
+An offensive-zone faceoff is as close as the game gets to a moment where you can arrange all five players exactly where you want them, with the puck about to arrive at a known place — **a coaching judgement, not a measured claim; no source here catalogues every dead-puck moment in the game.** It is the closest hockey gets to a free kick, and most amateur teams waste it entirely.
 
 Full treatment of the draw itself — technique, stick placement, the violations that get your centre ejected — is in [Faceoffs](faceoffs.md). What matters here is what happens in the second *after* the draw.
 

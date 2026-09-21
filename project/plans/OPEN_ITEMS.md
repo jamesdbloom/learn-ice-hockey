@@ -29,7 +29,9 @@ caught), `search_console_refresh_2026-09-21.md` (a live Google Search Console pu
 striking-distance page list it produced), and
 `faceoffs_and_rules_primer_opening_rewrites_2026-09-21.md` (the two Search-Console-standout
 opening-paragraph rewrites, two rounds of independent review each, and the two new items they
-surfaced — see "Genuinely open" below).
+surfaced), and `offensive_zone_play_only_moment_hedge_2026-09-21.md` (the parallel unhedged "only
+moment in the game" claim one of those rewrites surfaced, now hedged — closes the item this file
+used to carry about it).
 The two standing house-style decisions (injury-mechanism-form convention, capital-lowering), the
 "punt to the owner, don't restate" caption policy (decided 21 September: yes, make it the standard),
 and the
@@ -102,14 +104,13 @@ record.
 
 ## Genuinely open
 
-- **`offensive_zone_play.md:1006` carries its own unhedged "only moment in the game" claim** —
-  found as a side effect of reviewing the `faceoffs.md` opening rewrite: "An offensive-zone faceoff
-  is the only moment in the game where you get to arrange all five players exactly where you want
-  them, with the puck about to arrive at a known place." A parallel claim in `faceoffs.md` was hedged
-  this session ("a coaching observation, not a measured claim") after a content-reviewer flagged it as
-  an unsourced superlative; this one was out of that task's file scope and was not touched. Same
-  treatment likely applies here — needs its own dispatch, not folded into unrelated work. See
-  `project/reviews/faceoffs_and_rules_primer_opening_rewrites_2026-09-21.md`.
+- **The corpus now has two different remediation conventions for the same "unhedged only-X claim"
+  defect shape**, applied to two sibling documents days apart: `faceoffs.md`'s fix kept the word
+  "only" and hedged only a trailing precision clause; `offensive_zone_play.md`'s fix (closed this
+  session) softened "only" itself to a comparative and appended a full hedge clause. Both are
+  individually defensible but not standardized — worth a style-guide note next time this pattern
+  recurs, not worth relitigating either already-committed fix. See
+  `project/reviews/offensive_zone_play_only_moment_hedge_2026-09-21.md`.
 - **`faceoffs.md`'s Overview rewrite achieved no measurable SEO change** — the safe, properly-hedged
   version of its opening produces a meta description character-for-character identical to before this
   session's work. Whether this page's low click-through (3 clicks on 2,457 impressions at position 14)
@@ -136,10 +137,10 @@ record.
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git fetch origin main && git rev-list --count origin/main..HEAD`,
 never quoted from memory or from an earlier paragraph in this file.** As of 21 September 2026, a fresh
-fetch shows `origin/main` at `9aee8f3` — the same commit as local `main` before this session's newest
-uncommitted work, meaning the prior batch (`1e04005`, `a642f87`, `120e706`, `9aee8f3`) has been pushed
-to production. This session did not perform that push; it happened via some other route (another
-session or the user directly) between this file's last update and this one. The `faceoffs.md` /
-`rules_primer.md` opening rewrites are about to be committed as this file's own update lands — once
-that commit exists, local `main` will be ahead of `origin/main` again and **not pushed** — push
-remains the user's own call throughout.
+fetch shows `origin/main` at `c216af7` — the same commit as local `main` before this session's newest
+uncommitted work, meaning `c216af7` (the `faceoffs.md`/`rules_primer.md` opening rewrites) has also
+been pushed to production, again not by this session — this is the **second** time in this session a
+commit this session made has appeared on `origin/main` via some other route (another session, or the
+user directly) before this file's next check. The `offensive_zone_play.md` hedge fix is about to be
+committed as this file's own update lands — once that commit exists, local `main` will be ahead of
+`origin/main` again and **not pushed** — push remains the user's own call throughout.
