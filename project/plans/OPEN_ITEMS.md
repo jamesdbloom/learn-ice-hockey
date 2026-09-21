@@ -92,8 +92,9 @@ record.
 ## Genuinely open
 
 - **`game_management.md`'s late-hit hazard has no Common Mistakes bullet.** Found incidentally by a
-  safety-reviewer's omission pass while closing the caption-routing item below — the late-hit hazard
-  is taught extensively in body prose, facts blocks, and Key Takeaways (items 12-15, quoting USA
+  safety-reviewer's omission pass while closing a caption-routing gap in the same document (see
+  coverage above) — the late-hit hazard is taught extensively in body prose, facts blocks, and Key
+  Takeaways (items 12-15, quoting USA
   Hockey's *Declaration of Player Safety*), but the nearest Common Mistakes bullet explicitly defers
   the late-hit question rather than answering it. Not fixed — a distinct hazard from what triggered
   the finding, logged rather than force-fixed. See
@@ -105,15 +106,11 @@ record.
   that could go stale silently if
   `body_contact_and_battles.md`'s sections are ever renumbered. Low priority; same class of gap as the
   now-closed pathway-anchor one, but for a different reference style.
-- **Caption safety/rule-scope routing — remains open-ended, not a checklist to clear to zero.** The
-  one confirmed gap this session (`game_management.md` missing a wall-contact receiving-posture
-  caveat, present only in a caption) is fixed and independently verified across all four content
-  layers — see the review record above for the full four-round saga. One disclosed, deliberate design
-  choice was found and left as-is (`how_to_watch_hockey.md` explicitly declines to teach a rule its
-  caption touches, naming the correct owner instead) — worth a coordinator/owner policy call on
-  whether that's the right pattern going forward, not a defect to fix. Treat any further work in this
-  area as its own fresh investigation, per `READABILITY_AND_DUAL_AUDIENCE.md`'s standing framing, not
-  as resuming a backlog.
+- **Policy call needed: is `how_to_watch_hockey.md` explicitly declining to teach a rule its own
+  caption touches (naming the correct owner document instead) the right pattern going forward?**
+  Surfaced during the caption-routing work above — a disclosed, deliberate design choice, not a
+  defect, but nobody has decided whether it's the standard other documents in the same position
+  should follow.
 - **Traffic-plan marketing/ops items, genuinely outstanding, outside this environment's scope**:
   refresh Google Search Console; identify and improve striking-distance pages (positions 11–20);
   submit to Kadaza and FeedSpot; outreach to EIHA/clubs/rinks/coaches; monthly traffic measurement.
@@ -129,7 +126,7 @@ record.
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git rev-list --count origin/main..HEAD`, never quoted from memory or
-from an earlier paragraph in this file.** As of 21 September 2026, local `main` and `origin/main` are
-**identical** — the user pushed everything through `6c06561` independently. Nothing of this session's
-work is unpushed. Push remains the user's own call throughout — this session pushes nothing without
-explicit go-ahead.
+from an earlier paragraph in this file.** As of 21 September 2026, local `main` is **2 commits ahead**
+of `origin/main`: `1e04005` (the `check_links.py` pathway-anchor gate) and `a642f87` (the caption
+routing / `game_management.md` propagation fix). Both committed, neither pushed. Push remains the
+user's own call throughout — this session pushes nothing without explicit go-ahead.

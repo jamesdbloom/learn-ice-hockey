@@ -93,14 +93,13 @@ before writing or reviewing content against these; do not re-derive the detail h
 
 ## Open threads
 
-- **Caption safety/rule-scope routing is not a closable checklist.** Round 77 identified several
-  specific blocks still duplicated across captions with no home in a body (a shared receiving-posture
-  tail, a four-book rule enumeration, a charging-rule block, a shared hedge constant) and completed one
-  routing target as proof of the method. The rest are not currently tracked as rows in
-  `project/plans/OPEN_ITEMS.md`, and two 19 September records show related captions (`forecheck-pinch`,
-  `forecheck-press`, and others) gaining safety content rather than losing it, for an unrelated defect.
-  Treat any further caption-routing work as open-ended — read `project/reviews/round_77_the_caption_could_not_be_shortened.md`
-  and the consolidated record before assuming it is either done or a fixed-size backlog.
+- **Caption safety/rule-scope routing is not a closable checklist.** Round 77's four flagged blocks
+  were all traced and resolved 21 September (three were already routed; the fourth, a wall-contact
+  receiving-posture tail missing from `game_management.md`, was fixed across all four content layers
+  — see `project/reviews/caption_routing_and_game_management_propagation_2026-09-21.md`). This does
+  not close the category: it is open-ended by nature, not a fixed-size backlog, and any future pass
+  should re-investigate from scratch (read the review record above and
+  `round_77_the_caption_could_not_be_shortened.md` first) rather than assume nothing remains.
 - **The full seven-layer pilot rewrite** (Simple summary / Recognition cues / Understand it / If your
   team differs / Go deeper as literal layers, per Phase 2 below) has not visibly shipped in either
   `getting_started.md` or `rules_primer.md` — both carry Key focus, Go deeper, Common Mistakes, and Key
