@@ -122,10 +122,16 @@ record.
   per the original plan's own sequencing, worth batching only once a content-layer opening rewrite is
   shown to actually move a page's numbers, which `faceoffs.md`'s attempt did not establish. See
   `project/reviews/search_console_refresh_2026-09-21.md` for the full ranked list.
-- **Kadaza/FeedSpot submission, outreach to EIHA/clubs/rinks/coaches, and monthly traffic
-  measurement — genuinely outstanding, outside this environment's scope.** Unchanged from the
-  original plan: these need the user's own account/credentials, relationships, and an ongoing cadence
-  this session can't hold open. See
+- **Kadaza submission — done by the user 22 September 2026.**
+- **FeedSpot submission, outreach to EIHA/clubs/rinks/coaches, and monthly traffic measurement —
+  genuinely outstanding, outside this environment's scope.** These need the user's own
+  account/credentials, relationships, and an ongoing cadence this session can't hold open. FeedSpot's
+  publisher submission page: <https://www.feedspot.com/publisher/> — per FeedSpot's own publisher
+  documentation, submit via the "Submit Site" form there (or the "Submit your Blog" button on any of
+  their blog-list pages); a FeedSpot Publisher account is created automatically on submission, and a
+  confirmation email follows listing which lists the site was added to. (Direct fetch of the page
+  itself returned HTTP 403 from this environment — likely bot-blocking, not a dead link — so verify it
+  opens normally in your own browser before using it.) See
   `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 3–4 for detail.
 - **The podcast-vs-corpus divergence question** — owned in `PODCAST_AUTOMATION_LOCAL.md`, not
   duplicated here (see "Design specifications" above).
