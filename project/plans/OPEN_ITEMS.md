@@ -18,7 +18,9 @@ goaltender.md fix, the facts census, and the three-round `practice_and_developme
 `equipment_pwhl_pathways_cleanup_2026-09-21.md` (the equipment.md claim correction, the PWHL
 sources entry, and the pathways.json documentation fix), and
 `check_links_pathways_anchor_gate_2026-09-21.md` (the `check_links.py` extension that now verifies
-`pathways.json` anchors — closes the item this file used to carry about that gap).
+`pathways.json` anchors — closes the item this file used to carry about that gap), and
+`caption_routing_and_game_management_propagation_2026-09-21.md` (the caption-routing investigation
+and the four-round `game_management.md` propagation fix it triggered).
 The two standing house-style decisions (injury-mechanism-form convention, capital-lowering) and the
 site-wide anchor-scroll bug were all closed 20–21 September and are recorded in the archive above; no
 action remains on any of them.
@@ -89,11 +91,29 @@ record.
 
 ## Genuinely open
 
-- **Caption safety/rule-scope routing — fix dispatched 21 September, in progress.** Not a fixed
-  backlog to clear to zero: some safety/rule content still lives only in captions with no home in body
-  prose (per `READABILITY_AND_DUAL_AUDIENCE.md`'s "Open threads" and
-  `project/reviews/round_77_the_caption_could_not_be_shortened.md`). A pass identifying and routing
-  the specific remaining blocks is dispatched, pending review.
+- **`game_management.md`'s late-hit hazard has no Common Mistakes bullet.** Found incidentally by a
+  safety-reviewer's omission pass while closing the caption-routing item below — the late-hit hazard
+  is taught extensively in body prose, facts blocks, and Key Takeaways (items 12-15, quoting USA
+  Hockey's *Declaration of Player Safety*), but the nearest Common Mistakes bullet explicitly defers
+  the late-hit question rather than answering it. Not fixed — a distinct hazard from what triggered
+  the finding, logged rather than force-fixed. See
+  `project/reviews/caption_routing_and_game_management_propagation_2026-09-21.md`.
+- **`§N` cross-document section references aren't mechanically checked.** `check_links.py` verifies a
+  `[Body Contact and Battles](../technique/body_contact_and_battles.md)` link resolves, but has no way
+  to check the plain-text `, §5` half against that document's actual current section numbering — a
+  corpus-wide, established pattern (22 uses across 7 files, before this session's own additions)
+  that could go stale silently if
+  `body_contact_and_battles.md`'s sections are ever renumbered. Low priority; same class of gap as the
+  now-closed pathway-anchor one, but for a different reference style.
+- **Caption safety/rule-scope routing — remains open-ended, not a checklist to clear to zero.** The
+  one confirmed gap this session (`game_management.md` missing a wall-contact receiving-posture
+  caveat, present only in a caption) is fixed and independently verified across all four content
+  layers — see the review record above for the full four-round saga. One disclosed, deliberate design
+  choice was found and left as-is (`how_to_watch_hockey.md` explicitly declines to teach a rule its
+  caption touches, naming the correct owner instead) — worth a coordinator/owner policy call on
+  whether that's the right pattern going forward, not a defect to fix. Treat any further work in this
+  area as its own fresh investigation, per `READABILITY_AND_DUAL_AUDIENCE.md`'s standing framing, not
+  as resuming a backlog.
 - **Traffic-plan marketing/ops items, genuinely outstanding, outside this environment's scope**:
   refresh Google Search Console; identify and improve striking-distance pages (positions 11–20);
   submit to Kadaza and FeedSpot; outreach to EIHA/clubs/rinks/coaches; monthly traffic measurement.
