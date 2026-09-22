@@ -85,6 +85,12 @@
  * says what was drawn and that it is not part of the teaching.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
+
 const OWNER = 'content/hockey-iq/risk_management.md';
 
 /* ------------------------------------------------------------------ *
@@ -887,7 +893,10 @@ const crossIceOwnEnd = {
     'no contact is drawn: the arriving forward’s route ends in two bars, meaning the route ends there ' +
     'rather than carrying on through a player, and what an arrival like that may end in depends on ' +
     'whether your league allows body checking at all. If you are the one collecting a puck on that ' +
-    'wall, take the contact with your skates parallel to the boards, forearm and hip into it, head up ' +
+    // KT6'S MID-SENTENCE SLOT, not the tail. This sentence ends on an absolute -- "never with
+    // your back to the wall" -- and a hedged clause appended there would read as qualifying it.
+    'wall, take the contact with your skates parallel to the boards, forearm and hip into it — ' +
+    SHOULDER_NOT_THE_SURFACE + ' — head up ' +
     'and chin off your chest, and never with your back to the wall.',
 
   describe:

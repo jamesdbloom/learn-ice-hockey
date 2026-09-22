@@ -28,6 +28,12 @@
  * new and awaiting an import; both are stale. `grep -n rules_primer index.mjs`.)
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. These captions already agreed byte for byte; the constant is what keeps
+// them agreeing. See wall_contact_clauses.mjs.
+import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+
+
 import { boardArc } from './risk_management.mjs';
 
 // ---------------------------------------------------------------------------
@@ -419,8 +425,8 @@ const icingTheRaceAndTheDot = {
     'that hurts people, in every league, checking or not. Never take that contact with your back to ' +
     'the boards, and never duck. A turned back makes it a hit from behind, which you can neither ' +
     'see nor brace for, and a tucked chin straightens the cervical spine. Get your skates parallel ' +
-    'to the wall instead, take it on your forearm and hip, head up and chin off your chest — and ' +
-    'not on the point of your shoulder, and not the whole shoulder if you can help it.',
+    'to the wall instead, take it on your forearm and hip, head up and chin off your chest' +
+    SHOULDER_TAIL,
 
   describe:
     'The defending half of the rink, your own net at the right and your goaltender in the crease. ' +

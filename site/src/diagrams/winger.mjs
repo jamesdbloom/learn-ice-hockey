@@ -119,6 +119,12 @@
  * corrected in the corpus would reach every markdown site and stop dead at a caption.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. These captions already agreed byte for byte; the constant is what keeps
+// them agreeing. See wall_contact_clauses.mjs.
+import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+
+
 const OWNER = 'content/positions/winger.md';
 
 /* ==================================================================== *
@@ -473,8 +479,7 @@ const arrivingAtTheLine = {
     'cannot see, and a body that is surprised does not absorb contact. And never turn your back to ' +
     'the wall and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
     'for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the ' +
-    'boards, forearm and hip into the contact, head up and chin off your chest — and not on the point ' +
-    'of your shoulder, and not the whole shoulder if you can help it.',
+    'boards, forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +
@@ -596,8 +601,7 @@ const cornerAndTheEmptyPoint = {
     'than the way it always is. ⚠️ Never turn your back to the wall and never duck. Those are two ' +
     'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
     'which does not need speed to do it. Skates parallel to the boards, forearm and hip into the ' +
-    'contact, head up and chin off your chest — and not on the point of your shoulder, and not the ' +
-    'whole shoulder if you can help it. Nothing in this ' +
+    'contact, head up and chin off your chest' + SHOULDER_TAIL + ' Nothing in this ' +
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:

@@ -44,6 +44,12 @@
  */
 
 // A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
+
+// A caption clause that appears in more than one diagram is imported, never
 // retyped: a sentence that appears twice is a sentence that can drift once, and
 // this one already had. See rule69_clauses.mjs for why all four still say it.
 import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.mjs';
@@ -378,8 +384,11 @@ const delayCurl = {
     'Two separate postures injure a neck at the boards and they are not the same warning: ' +
     'turning your back to an oncoming checker makes the contact a hit from behind, and a chin ' +
     'tucked to the chest straightens the cervical spine. So if you cannot get off the boards, ' +
-    'take the contact rather than turning away into them — skates parallel to the wall, ' +
-    'forearm and hip into it, head up and chin off your chest, and never duck.',
+    // COLON, not a third em dash: the shoulder clause below needs a dash PAIR around it, and
+    // this sentence already opened on one, which put three em dashes in a row.
+    'take the contact rather than turning away into them: skates parallel to the wall, ' +
+    'forearm and hip into it — ' + SHOULDER_NOT_THE_SURFACE +
+    ' — head up and chin off your chest, and never duck.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +

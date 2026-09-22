@@ -250,15 +250,20 @@ five straight NOT-SAFE verdicts to clear — if the scripted route sounds right 
 sounds right there.
 
 **Then sample `equipment` if you have time.** You do not need all 85 minutes: the known concern
-is **ordering**, not content. Its protective-fit block — the three coverage gaps that cause the
-most injuries — opens with the words *"Protective fit, and the three gaps"* and sits about
-**two-thirds of the way in, near the 56-minute mark**, behind a long run of blade-radius and
-stick-lie material. ⚠️ **That timestamp is derived** from the block's position at 66% through
-the episode's own spoken text, not measured off the audio; the review record's own "~51
-minutes" was measured against an earlier, shorter cut, so search for the phrase rather than
-trusting either clock. Judge whether that is too late for a listener who came for fit. One
-reviewer ruled it non-blocking because the three gaps are re-voiced in full in the closing
-recap; a second recorded the reorder as feasible and preferable. **Your ear settles it.**
+is **ordering**, not content. **Skip to 56:03.** That is where the protective-fit block opens,
+with the words *"Protective fit, and the three gaps"*; the three coverage gaps themselves begin
+at **57:39**, behind a long run of blade-radius and stick-lie material.
+
+⚠️ **Those two timestamps are MEASURED**, from a whisper transcription of the actual audio on
+22 September 2026 — not derived, and not the review record's *"~51 minutes"*, which was taken
+against an earlier and shorter cut of the episode. **Ignore that figure; it does not describe
+the file you have.**
+
+**And the reviewer who ruled this non-blocking was right on the facts:** the three gaps *are*
+re-voiced in the closing recap, at **1:23:03** of an 85:24 episode — confirmed in the same
+transcript. So the question genuinely is ordering and nothing else. A second reviewer recorded
+the reorder as feasible and preferable. **Your ear settles it: is 56 minutes too late for a
+listener who came for fit?**
 
 ---
 

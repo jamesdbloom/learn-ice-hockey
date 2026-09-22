@@ -14,6 +14,12 @@
  * relationship that travels with the puck.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+
 // ---------------------------------------------------------------------------
 // 1 and 2 — the contrast. "Why a triangle and not a line" is a comparison, and a
 // single picture cannot make a comparison. The same four players stand in the
@@ -663,7 +669,8 @@ const battleSupport = {
     // "so a slow hit from behind is fine."
     '⚠️ And if you do go in, how you arrive outranks winning the puck. Never turn your back to ' +
     'the wall and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
-    'head up and chin off your chest. Loose-puck races and fifty-fifty pucks at the wall are ' +
+    'head up and chin off your chest' + SHOULDER_TAIL +
+    ' Loose-puck races and fifty-fifty pucks at the wall are ' +
     'where checking-from-behind and boarding injuries happen, and neither prohibition is a rule ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570, §5 Checking From Behind, is
     // addressed to the player delivering the check. The caption carried the twelve words

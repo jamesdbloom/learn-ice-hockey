@@ -145,18 +145,18 @@ Action: F1 — arrive fast, arrive on an angle, take away one side of the ice an
 Convention: Whether F1 also hunts the puck is a coaching choice — steering in the 1-2-2, 1-3-1 and 1-4, hunting in a 2-1-2 or press; ask which your team wants
 Key: F1's first job is to make the next play predictable — nothing works if the carrier still has three good options when you arrive
 Action: F2 — skate to where the puck is about to be forced, not to the puck, and stay far enough from F1 that one deke cannot remove both of you
-Position: F3 — stay high, take away the middle of the ice, and be the first man back if the puck escapes
+Position: F3 — stay high, take away the middle of the ice, and be the first man back if the puck escapes; in a 1-3-1 the middle is conventionally a defenceman's instead and F3 takes a wall
 ```
 
 The *shape* of these three jobs holds across most systems; what changes is *where* F2 and F3 stand, and — importantly — **how hard F1 is told to go**.
 
 - **F1 — take away options.** Arrive fast, arrive on an angle, take away one side of the ice, and make the carrier's decision for them.
 
-  **Whether F1 is also trying to win the puck is a coaching choice, and it is the single biggest difference between the systems below.** In the **containment** systems (1-2-2, 1-3-1, 1-4) F1's job is explicitly *not* to win the puck — F1 steers, and somebody else collects. In an **aggressive 2-1-2 or full-ice press**, F1 goes hard at the puck carrier with the intent of taking it, and the [Center](../positions/center.md) document describes exactly that, because the house default throughout is a 2-1-2. Both are correct within their own system, and getting it backwards is expensive: F2 reads off F1, so a steering F1 with a sealing F2 wins pucks, and a hunting F1 with a sealing F2 leaves the middle wide open. **Ask which one your team wants.**
+  **Whether F1 is also trying to win the puck is a coaching choice, and it is the single biggest difference between the systems below.** In the **containment** systems (1-2-2, 1-3-1, 1-4) F1's job is explicitly *not* to win the puck — F1 steers, and somebody else collects. In an **aggressive 2-1-2 or full-ice press**, F1 goes hard at the puck carrier with the intent of taking it. The [Center](../positions/center.md) document is written from that default — its centre drives straight at the carrier to force a quick decision — but note what it asks you to do on the way in: take a deliberate angle and steer the carrier to one side, so F2 knows where to go. **Driving at the carrier and steering them are not alternatives, and the difference between the two systems is what you do when you arrive**, not how fast you get there. Both are correct within their own system, and getting it backwards is expensive: F2 reads off F1, so a steering F1 with a sealing F2 wins pucks, and a hunting F1 with a sealing F2 leaves the middle wide open. **Ask which one your team wants.**
 
   What *is* common to both: F1's first job is to make the next play predictable. Winning the puck outright is a bonus in one system and the plan in the other, but neither works if the carrier still has three good options when you arrive.
 - **F2 — read F1 and seal.** Do not skate to the puck. Skate to where the puck is about to be forced. Keep enough distance from F1 that you can still react if F1 is beaten — arriving in the same square metre as F1 means one deke removes both of you.
-- **F3 — be patient and be the insurance.** Stay high, take away the middle of the ice, and be the first man back if the puck escapes. F3 is the most disciplined job on the forecheck and the least rewarding. It is also the one that decides whether a failed forecheck costs you nothing or costs you a goal.
+- **F3 — be patient and be the insurance.** Stay high, take away the middle of the ice, and be the first man back if the puck escapes. **The last of those holds everywhere; the middle does not.** In the **1-3-1** below, the middle of the ice conventionally belongs to a defenceman and F3 takes one of the walls instead — so read F3's job off the system your team actually runs, not off this line. F3 is the most disciplined job on the forecheck and the least rewarding. It is also the one that decides whether a failed forecheck costs you nothing or costs you a goal.
 
 ---
 
@@ -373,7 +373,7 @@ The New Jersey Devils' 1990s and 2000s teams are the standard reference for buil
 ```facts
 Position: One forward pressuring, three players spread in a line across the width of the ice, one player behind them as the last man
 Convention: The single forechecker does not chase. They steer, take away the middle and shepherd the breakout to one side
-Convention: The line of three is F2, F3 and one defenceman, the defenceman in the middle as the read-maker; it shifts across as a unit with the puck
+Convention: The line of three is conventionally F2, F3 and one defenceman, the defenceman in the middle as the read-maker — some coaches put a forward in the middle instead, so ask which yours is; it shifts across as a unit with the puck
 Convention: The single high player is the safety, responsible for anything that gets behind the line of three
 Goal: Take away lanes rather than players — against a team exiting on three short passes there is nowhere to put the puck
 Read: Pick it against short controlled breakouts, when you cannot get pressure on in time such as against a line change, and to protect a lead
@@ -387,7 +387,7 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 
 **The jobs:**
 - **The single forechecker** (usually the centre, but again — whoever gets there) does not chase. They **steer**. They take away the middle and shepherd the breakout to one side, then keep angling so the puck cannot come back to the defence partner or through the middle.
-- **The line of three** — conventionally **F2, F3 and one defenceman**, with the defenceman in the middle as the read-maker and the two forwards on the walls — spreads across the ice and erases the passing lanes. (It cannot be three forwards: F1 is already a forward, and there are only three on the ice.) As the puck commits to one side, the whole line shifts with it, so the puck-side player becomes an immediate second attacker while the others cover the retreat.
+- **The line of three** — conventionally **F2, F3 and one defenceman**, with the defenceman in the middle as the read-maker and the two forwards on the walls — spreads across the ice and erases the passing lanes. ⚠️ **That arrangement is coaching convention rather than a counted or sourced one**, and it is not the only one a team plays: some coaches put a forward in the middle and a defenceman on a wall instead, which moves the read onto a forward and changes what F3 is asked to do. **Ask which your team runs before you assume the middle is not yours.** What does not happen either way is three forwards across: F1 is already a forward, and there are only three on the ice. As the puck commits to one side, the whole line shifts with it, so the puck-side player becomes an immediate second attacker while the others cover the retreat.
 - **The single high player** is the safety, responsible for anything that gets behind the line of three.
 
 ![](diagram:forecheck-131)
@@ -453,7 +453,7 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 
 **When a coach picks it:** When you want pressure but cannot afford to bleed rush chances — a strong two-way team's default, or a team trying to nurse a lead without going fully passive.
 
-**Where the left-wing lock actually came from.** The two origin stories usually told about the lock are **complementary, not competing**. It was developed in **Czechoslovak hockey in the 1970s** as a way to cope with the dominant Soviet teams, and was used in various forms across Swedish and Finnish hockey before it reached North America. It was then **adapted for the narrower North American rink by Barry Smith**, an assistant on the Detroit Red Wings' staff, where Scotty Bowman adopted it; Detroit's teams from the mid-1990s onward made it famous. Invention in Europe and adaptation in Detroit are separate events roughly twenty years apart, and there is no conflict between them — Detroit did not invent it, and Barry Smith never claimed to. The lock is much rarer in the modern NHL than it was in 1997, largely because contemporary systems ask wingers to be more involved offensively — but it remains a common structure at junior, college and European club level.
+**Where the left-wing lock actually came from.** The two origin stories usually told about the lock are **complementary, not competing**. It was developed in **Czechoslovak hockey in the 1970s** as a way to cope with the dominant Soviet teams, and is commonly said to have been used in various forms across Swedish and Finnish hockey before it reached North America — **that Nordic leg is the unsourced part of the account** and nothing located for this document attests it, where the Czechoslovak origin and the Detroit adaptation each have a source behind them. It was then **adapted for the narrower North American rink by Barry Smith**, an assistant on the Detroit Red Wings' staff, where Scotty Bowman adopted it; Detroit's teams from the mid-1990s onward made it famous. Invention in Europe and adaptation in Detroit are separate events roughly twenty years apart, and there is no conflict between them — Detroit did not invent it, and Barry Smith never claimed to. The lock is much rarer in the modern NHL than it was in 1997, largely because contemporary systems ask wingers to be more involved offensively — but it remains a common structure at junior, college and European club level.
 
 **Where the lock lives once possession changes** — the three-man wall across the neutral zone, and the modern "lock whichever winger is highest" variant — is covered in [Neutral Zone Systems](neutral_zone_systems.md).
 
@@ -614,7 +614,7 @@ Every one of those is a decision to accept a breakaway as the price. None of the
 
 The practical version, for you personally: **look for your partner before you commit.** If they are already down the wall, you are the safety unless the bench has called one of the situations above. That decision does not depend on how tempting the puck looks.
 
-When the strong-side defenceman does pinch, somebody has to fill the point they left. **The common default is that F3 recovers towards the middle and replaces them at the blue line** — and when nobody does, a pinch that gets beaten becomes a rush the other way with your defenceman below the puck and the line unguarded. It is not the only arrangement: some coaches instead have the **weak-side defenceman slide across** to cover both points and accept a hole on the far side, and some teams pinch only when F3 has already called that they are high and ready, so no rotation is needed at all. Ask which of the three your team runs. See [Defender](../positions/defender.md) and [Risk Management](../hockey-iq/risk_management.md).
+When the strong-side defenceman does pinch, somebody has to fill the point they left. **The common default is that F3 recovers towards the middle and replaces them at the blue line** — and when nobody does, a pinch that gets beaten becomes a rush the other way with your defenceman below the puck and the line unguarded. It is not the only arrangement: some coaches instead have the **weak-side defenceman slide across** to cover both points and accept a hole on the far side, and some teams pinch only when F3 has already called that they are high and ready, so no rotation is needed at all. Ask which of the three your team runs. **[Offensive Zone Play](offensive_zone_play.md) is where all three are set out**, from the attacking side; [Defender](../positions/defender.md) carries the one-defenceman-at-a-time convention that sits underneath them, and [Risk Management](../hockey-iq/risk_management.md) the read on whether the pinch is on at all — a pinch with your centre high behind you is a different bet from the same pinch with your centre below the goal line.
 
 ---
 
@@ -635,7 +635,7 @@ Rule: That minor is not this hit — USA Hockey's Casebook, Rule 608 Situation 1
 Rule: The boarding onus is weighed, not absolute — NHL 41.1, IIHF 41.1 and Hockey Canada 7.2 let the referee weigh whether the opponent put themself in a vulnerable position or the check was unavoidable; USA Hockey 603 attaches no such balance. Never rely on it: arrive as though it were absolute
 Rule: A deliberate turn is not the same carve-out in every book — NHL 43.1, "no penalty shall be assessed"; IIHF 43.1 waives only the checking-from-behind call and adds "other penalties may still be assessed"; Hockey Canada's 7.5 interpretations penalise the checker anyway. Never a free hit
 Convention: F1 takes the retrieval and F2 commits early to the passing lane rather than following F1 into the corner
-Options: Three kinds of dump — a hard rim, a soft chip behind the defenceman, and a cross-corner dump; your line should agree in advance
+Options: Five kinds of dump — hard rim, soft area dump, chip past a defenceman stepping up, cross-corner, and flip over a trap; the forecheck timing differs for each, so agree it in advance
 ```
 
 When you dump the puck in, **you chose when it went in and you know where it is going**. You get to arrive at full speed with a head start, and their defenceman has to turn their back on the play to retrieve it.
@@ -653,7 +653,7 @@ What that means for you:
 - **F1 takes the retrieval, F2 takes the outlet.** Because you know where the puck is going, F2 can commit early to the passing lane rather than following F1 into the corner.
 - **F3 and the D can be aggressive**, because your team is organised and coming forward as a unit.
 
-There are broadly three kinds of dump — a **hard rim** around the boards, a **soft chip** into the corner behind the defenceman, and a **cross-corner** dump that changes the side of retrieval. Which you use is a [Zone Entries](zone_entries.md) topic, but the forecheck timing differs for each and your line should agree in advance.
+There are five kinds of dump, and which you use is a [Zone Entries](zone_entries.md) topic — it sets out the read that calls for each. A **hard rim** travels onward around the boards. A **soft area dump** is placed gently so it dies in a corner and your chaser arrives on a stationary puck. A **chip past a defenceman stepping up** goes down the wall behind a defender who has committed, and you collect it yourself on the other side — a possession play rather than a surrender, and a different read from the soft dump, not a variant of it. A **cross-corner** dump changes the side of retrieval. A **flip over a trap** goes over a congested neutral zone rather than through it. The forecheck timing differs for each, and your line should agree in advance which is coming.
 
 ### Off a turnover — you are behind the play
 

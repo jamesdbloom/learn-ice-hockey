@@ -184,6 +184,12 @@
  * copying the Common Mistakes wording in here.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+
 const OWNER = 'content/technique/puck_handling.md';
 
 /* ===================================================================================
@@ -270,7 +276,11 @@ const puckOnTheFarSide = {
     '⚠️ And the moment a battle like this reaches the boards, this document\'s own override ' +
     'outranks every word of it: never turn your back to the wall and never duck, and neither ' +
     'prohibition is a rule for fast checkers only. Get your skates parallel to the wall and take ' +
-    'the contact on your forearm and hip, head up and chin off your chest. USA Hockey addresses ' +
+    'the contact on your forearm and hip, head up and chin off your chest' + SHOULDER_TAIL +
+    // The clause sits after the POSTURE and before the two quoted warnings, never after them:
+    // appended to "never turn your back to the wall" its "if you can help it" would attach
+    // backwards to an absolute.
+    ' USA Hockey addresses ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
     // Behind, whose lead sentence is "Checking from behind is illegal, extremely dangerous and
     // less than courageous" — so the warning is aimed at the CHECKER, not at the player who
@@ -732,7 +742,7 @@ const youCannotBeatTwo = {
     'puck under pressure another checker is arriving. If this drifts to the boards, the override in ' +
     'this document outranks all of it — never turn your back to the wall and never duck, and ' +
     'neither prohibition is a rule for fast checkers only. Skates parallel to the wall, forearm and ' +
-    'hip, head up and chin off your chest.',
+    'hip, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The attacking half of the rink, the opposition net at the right and their goaltender in the ' +
@@ -981,7 +991,8 @@ const theLastPlayerBack = {
     '⚠️ And if the decision you take turns into a battle and that battle reaches the boards, this ' +
     'document\'s override outranks every word of it: never turn your back to the wall and never ' +
     'duck, and neither prohibition is a rule for fast checkers only. Get your skates parallel to ' +
-    'the wall and take the contact on your forearm and hip, head up and chin off your chest.',
+    'the wall and take the contact on your forearm and hip, head up and chin off your chest' +
+    SHOULDER_TAIL,
 
   describe:
     'The whole sheet. Your own net is at the left with your goaltender in his crease, and the net ' +

@@ -375,9 +375,84 @@ export default function remarkCorpus(options = {}) {
         // picture, and promoting it too would flatten the distinction this fixes.
         wrapper('figcaption', { 'aria-hidden': 'true' }, captionNodes(d.caption)),
       ];
+      // ------------------------------------------------- the route to the key
+      //
+      // ⚠️ 32 DOCUMENTS DRAW DIAGRAMS AND TWO OF THEM LINK THE KEY. Neither of the two
+      // is a systems or a positions document, which is where a reader who has never met
+      // the notation actually meets it. The site's nav DOES carry the route — it is on
+      // 49 of 53 built pages — but below 60rem `SidebarNav.astro` is plain flow at the
+      // BOTTOM of the document, and its own comment records a page measured at
+      // 100,765 px tall at 375x812. So a phone reader who meets a glyph in §3 reaches
+      // the key by scrolling the whole document. Nothing at the diagram itself pointed
+      // anywhere: this transform emitted no link of any kind, and there is no in-picture
+      // legend in any of the built SVGs.
+      //
+      // WHY HERE AND NOT THIRTY HAND-WRITTEN `Related:` LINES. This transform already
+      // knows the id, the manifest entry and — via `away` — whether the host owns the
+      // diagram, so one emitter fixes every document at once and cannot fall out of step
+      // the way thirty copies would.
+      //
+      // ⚠️ IT IS SITE-ONLY BY CONSTRUCTION, AND THAT WAS CHECKED RATHER THAN ASSUMED.
+      // The speech pass never walks this HTML: `md_to_speech.py` resolves
+      // `diagram:<id>` straight out of `site/src/data/diagrams.json` and voices the
+      // CAPTION. So nothing added here is spoken, and a listener is not made to hear
+      // "symbol key" 331 times. Anything of this shape that needs to reach a listener
+      // has to go in the caption instead, where it costs a sentence in every document
+      // the diagram is embedded in.
+      //
+      // THE LINK TEXT ASSERTS NO MAPPING, DELIBERATELY. A bare "Symbol key" routes only
+      // a reader who already suspects the glyphs are coded; a reader who assumes
+      // circle-versus-triangle is universal has no reason to click, and that is the
+      // reading the destination exists to break ("that pairing is this guide's own
+      // convention, not a universal one"). Naming the two encodings — the shapes and the
+      // fills — is what creates the suspicion. What it does NOT do is say what either
+      // means: a mapping written here would be a second copy of the key, in the one
+      // layer that is hardest to review, and the corpus's whole defect history is
+      // layers drifting apart. The qualification belongs at the destination, which
+      // carries it in its first bold sentence.
+      //
+      // THE HREF IS RESOLVED, NOT HARD-CODED, so a rename cannot leave a dead link:
+      // `resolveDocHref` returns null for an unknown id and then nothing is emitted.
+      // `check-links.mjs` runs against the built HTML and fails the build, so a
+      // hard-coded path would have been a build break waiting for a file move.
+      //
+      // ⚠️ THE REPETITION IS A REAL COST AND IT IS BOUNDED RATHER THAN AVOIDED. This
+      // fires on EVERY figure, because "once per page, on the first diagram" recreates
+      // the defect for a reader who scrolls to §7 or enters at a heading anchor — which
+      // is the same distance argument that condemns the nav route. The cost is held to
+      // one line by reusing the `.diagram-source` slot: a figure carried 0 or 1 line of
+      // furniture before and carries exactly 1 after, never 2. The worst page is
+      // winger.md at 27 figures. If an owner would rather pay the §7 reader than the 27
+      // lines, the change is to guard this block with a per-file flag — the judgement is
+      // about repetition, not about the route.
+      const keyHref = resolveDocHref('reading-diagrams/reading_ice_hockey_diagrams.md', knownIds);
+      // Suppressed on the key document's own page: a figure there must not link to the
+      // page it is on. `away` gives this for free for the notation key itself, but the
+      // test is the HOST, not the owner, so it is written against `here`.
+      const onKeyDoc = here.includes('reading-diagrams/reading_ice_hockey_diagrams');
+      const sourceKids = [];
       if (away) {
-        kids.push(wrapper('p', { className: ['diagram-source'] },
-          [{ type: 'text', value: `Diagram from ${d.owner.replace(/^content\/[^/]+\//, '').replace(/\.md$/, '').replace(/_/g, ' ')}` }]));
+        sourceKids.push({ type: 'text',
+          value: `Diagram from ${d.owner.replace(/^content\/[^/]+\//, '').replace(/\.md$/, '').replace(/_/g, ' ')}` });
+      }
+      if (keyHref && !onKeyDoc) {
+        if (sourceKids.length) sourceKids.push({ type: 'text', value: ' \u00b7 ' });
+        sourceKids.push({
+          type: 'link',
+          url: keyHref,
+          data: { hProperties: { className: ['diagram-key-link'] } },
+          children: [{ type: 'text', value: 'What the shapes and fills mean' }],
+        });
+      }
+      // `inline()`, not `wrapper()`. This paragraph now holds a LINK beside text, and
+      // the two helpers differ exactly there: `wrapper` produces a blockquote node, whose
+      // mdast-to-hast handler calls `state.wrap(..., true)` and interleaves newline text
+      // nodes between children — harmless around a lone string, which is all this slot
+      // ever held before, and noise once there are three inline children to separate.
+      // `inline()` is the paragraph handler, which is what "an element with inline
+      // children" means and what this is.
+      if (sourceKids.length) {
+        kids.push(inline('p', { className: ['diagram-source'] }, sourceKids));
       }
       // A full-sheet diagram is 204 rink-feet wide against a half sheet's 104, so at
       // the same column width every mark in it renders at half the size — labels land

@@ -151,8 +151,36 @@ DOCS=(
   # invisible. Re-fetch before trusting a quotation, and check the dates.
   "ihuk_junior_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/Junior-Rules-of-Competition-2026-27.pdf"
   "ihuk_u10_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/U10-Rules-of-Competition-2026-2027.pdf"
-  "ihuk_nihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/NIHL-1-and-2-ROC-2026-2027.pdf"
+    # ⚠️ 2026/09 path with the trailing -1, NOT 2026/08 — the publisher moved it and the OLD URL STILL
+  #    RETURNS 200 serving the 26 Aug original, which is OLDER than the copy on disk. See sources/README.md.
+"ihuk_nihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf"
   "ihuk_wnihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/WNIHL-Rules-of-Competition-2026-2027.pdf"
+  # ⚠️ 2026/09 path. The 2026/08 one ALSO returns 200 with an older, smaller revision (358,330 vs
+  #    544,036). Named as a blocker by two agents before it was fetched on 22 September 2026.
+  "ihuk_coaching_regs|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/09/Coaching-Regulations-2026-2027.pdf"
+
+  # The Elite League's own casebook. Added 22 September 2026, after five separate
+  # sessions cited it and NONE of them had read it -- sources/README.md listed it under
+  # "Still not obtained" for months while the corpus asserted its existence in eleven
+  # places across three documents, sourced to the League's news reporting.
+  #
+  # ⚠️ IT WAS ONE CLICK AWAY. The homepage has no rules link; the Casebook sits behind
+  # About -> /the-eihl, whose submenu lists it, and that page links the PDF directly.
+  # The lesson is not "fetch harder" -- it is that "no source on disk supports it" was
+  # read as "label the claim" when the correct move was to go and get the document.
+  #
+  # ⚠️ ITS PREAMBLE MAKES IT SUPERSEDING, NOT SUPPLEMENTARY: the interpretations "will
+  # replace or in specific cases, supersede" the IIHF ruling, and the IIHF book governs
+  # only "For all rules not mentioned in the EIHL Casebook". So an EIHL claim sourced to
+  # the IIHF book alone is unsafe until this file has been checked for that rule.
+  #
+  # ⚠️ THREE VERSION STAMPS DISAGREE AND NOBODY HAS RESOLVED THEM:
+  #      link text / version table  -> "Version 1.1 080926"
+  #      PDF Title metadata         -> "[PUBLIC] EIHL Casebook 26 - 27 Version 1.0 080926"
+  #      all 27 page footers        -> "SECTION D VERSION 1.0 010826"
+  #    Do not treat any one as authoritative. If the footers are right, a superseded
+  #    Section D is what is on disk.
+  "eihl_casebook|https://www.eliteleague.co.uk/casebook|https://www.eliteleague.co.uk/document/191-eihl-casebook-26-27-version-1-1-080926"
 )
 
 # Books extracted BOTH ways. The plain extraction keeps the canonical name
@@ -171,7 +199,22 @@ DOCS=(
 #    "confirm" that U12 is a checking category or that U16 is not. The -layout extraction
 #    keeps the row intact: "U14  3 x 15-minute periods  Full ice, checking, stop clock".
 #    ⚠️ QUOTE THE CHECKING TABLE FROM `_layout` ONLY.
-DUAL_EXTRACT=(nhl_rules nhl_rules_2024-25 hc ihuk_junior_roc ihuk_u10_roc ihuk_nihl_roc ihuk_wnihl_roc)
+# ⚠️⚠️ THIS COMMENT PREVIOUSLY GAVE A FALSE REASON, WRITTEN BY THE COORDINATOR ON THE DAY THE
+#    SOURCE WAS INSTALLED, AND IT WAS REFUTED THE SAME DAY BY AN AGENT THAT MEASURED IT.
+#    It claimed Rule 86.6's warm-up provisions "LINE-WRAP in the plain extraction -- a grep for
+#    'Any violations of game rules that occur during the warmup' returns ZERO there."
+#    ⚠️ IT RETURNS 1 IN BOTH FILES. Flattened to alphanumerics both extractions are 36,090 chars
+#    and are CHARACTER-IDENTICAL from offset 1373 to the end. Either file greps identically for
+#    any rule. A raw multi-word grep is defeated by line breaks in BOTH, equally.
+#    ⚠️ The lesson is the one this repository keeps relearning: A MEASUREMENT NOBODY RAN IS NOT A
+#    MEASUREMENT. It was written as fact, in bold, and carried into three files before an agent
+#    that actually ran it said so.
+#
+# ⚠️ DUAL_EXTRACT IS STILL WARRANTED, FOR THE REAL REASON: the two files differ at offsets
+#    88-1373 -- the FRONT-MATTER VERSION TABLE, whose cells extract in a different order in each.
+#    That table is the evidence for the three disagreeing version stamps below, so losing either
+#    extraction loses the ability to read it. Nothing in the rule sections needs the twin.
+DUAL_EXTRACT=(nhl_rules nhl_rules_2024-25 hc ihuk_junior_roc ihuk_u10_roc ihuk_nihl_roc ihuk_wnihl_roc eihl_casebook ihuk_coaching_regs)
 
 command -v pdftotext >/dev/null 2>&1 || {
   echo "pdftotext not found — install poppler (brew install poppler)" >&2

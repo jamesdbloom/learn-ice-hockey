@@ -26,6 +26,13 @@
  *     deliberately not drawn, at the foot of this file.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
+
+
 /* ------------------------------------------------------------------------- *
  * 1 — Stick in the lane, body between man and net.
  *
@@ -205,7 +212,11 @@ const loosePuckWhoGoes = {
     'to the checker delivering one: "Even a light hit from behind could inflict a severe head or ' +
     'neck injury." Neither warning depends on the ' +
     'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
-    'skates parallel to it, take the contact on your forearm and hip, head up and chin off ' +
+    // KT6's mid-sentence slot rather than the tail: this sentence ends on two absolutes
+    // ("never turn your back to the wall or duck") and a hedged clause appended after them
+    // would read as qualifying them.
+    'skates parallel to it, take the contact on your forearm and hip — and ' +
+    SHOULDER_NOT_THE_SURFACE + ' — head up and chin off ' +
     'your chest, and never turn your back to the wall or duck.',
 
   describe:

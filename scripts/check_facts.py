@@ -77,6 +77,25 @@ EXEMPT_HEADINGS = {"common mistakes", "key takeaways"}
 # without forcing an artificial split on a block that is otherwise one job.
 MIN_FACTS, MAX_COACHING_FACTS, HARD_MAX = 3, 8, 14
 
+
+def coaching_count(facts):
+    """The number of facts that count against MAX_COACHING_FACTS.
+
+    ⚠️ THE GATE AND `--near` MUST BOTH CALL THIS. They did not until 22 September
+    2026, and the two implementations disagreed on 254 blocks by up to 6 facts:
+    `--near` skipped every label in QUALIFIED (i.e. `Convention:` as well as
+    `Rule:`), while the gate exempts `Rule:` ALONE. So `--near` reported free
+    slots on blocks that were at the cap -- `positions/center:21` showed four
+    left when the real figure was zero -- and an agent that trusted it wrote a
+    block the gate then rejected.
+
+    Only `Rule:` is exempt. A `Convention:` line gets the 300-char length cap
+    (MAX_LEN_QUALIFIED) but is still a non-`Rule:` fact for block-size purposes,
+    and a line that does not parse as a fact at all still occupies the block.
+    """
+    body = [f for f in facts if f.strip()]
+    return len(body) - sum(1 for f in body if f.startswith("Rule:"))
+
 # A terse imperative. `Rule:` carries a citation and `Convention:` carries the
 # body's hedge, and both are mandatory, so they are allowed more room. Neither
 # gets unlimited room: past this it is prose and belongs in the body.
@@ -220,8 +239,7 @@ def check(path: Path, scope: set[str]) -> list[str]:
         seen.add((parent, text, level))
 
         body = [f for f in facts if f.strip()]
-        rules = sum(1 for f in body if f.startswith("Rule:"))
-        coaching = len(body) - rules
+        coaching = coaching_count(facts)
         if len(body) < MIN_FACTS:
             problems.append(f"{where}: {len(body)} facts, fewer than {MIN_FACTS}")
         elif coaching > MAX_COACHING_FACTS:
@@ -395,6 +413,47 @@ def report_near(paths, scope, margin: int = 6) -> None:
     for left, doc_id, line, label, length, limit in rows:
         flag = "  <-- AT CAP" if left <= 0 else ""
         print(f"  {left:>3} left  {doc_id}:{line}  [{label}]  {length}/{limit}{flag}")
+
+    # Blocks near MAX_COACHING_FACTS.
+    #
+    # Added 22 September 2026 because TWO agents in one day planned a repair to
+    # HARD_MAX (14) and discovered only on running the gate that the cap which
+    # actually bites is MAX_COACHING_FACTS (8) on NON-`Rule:` facts. One of them:
+    # "Had I planned to 14 I would have written four failing blocks." The other
+    # asked for exactly this and declined to write it because scripts/ is the
+    # coordinator's.
+    #
+    # The length report above says NOTHING about fact-count headroom, so an agent
+    # told "add a scoped line" to a block already at 8 coaching facts got a gate
+    # failure with no prior warning. That is what this section prevents.
+    #
+    # WORKLIST, NOT A GATE. A block at 8 is CONFORMING -- check_facts passes it.
+    # This only says the next non-`Rule:` line added to it will not pass, so a
+    # repair there must fold scope into an existing line, relabel to `Rule:`/
+    # `Convention:` (which also buys the 300-char cap), or split the section.
+    block_rows = []
+    for path in paths:
+        doc_id = str(path.relative_to(CONTENT)).removesuffix(".md")
+        if doc_id not in scope:
+            continue
+        blocks, _, _ = parse(path)
+        for block in blocks:
+            body, start = block[2], block[3]
+            coaching = coaching_count(body)
+            left = MAX_COACHING_FACTS - coaching
+            if left <= 1:
+                block_rows.append((left, doc_id, start, coaching, len(body)))
+    block_rows.sort()
+    at_block_cap = sum(1 for r in block_rows if r[0] <= 0)
+    print()
+    print(f"check_facts --near: {len(block_rows)} block(s) within 1 non-`Rule:` fact of "
+          f"MAX_COACHING_FACTS ({MAX_COACHING_FACTS}), of which {at_block_cap} are AT it")
+    print("  (a block AT the cap is CONFORMING -- but the next non-`Rule:` line "
+          "added to it will FAIL the gate)")
+    for left, doc_id, start, coaching, total in block_rows:
+        flag = "  <-- AT CAP, no room for another coaching fact" if left <= 0 else ""
+        print(f"  {left:>3} left  {doc_id}:{start}  {coaching}/{MAX_COACHING_FACTS} "
+              f"coaching, {total} total{flag}")
 
 
 def main() -> int:

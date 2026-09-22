@@ -157,6 +157,13 @@
  * 0.8 round-joined stroke.
  */
 
+// A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
+
+
 const OWNER = 'content/foundation/on_ice_communication.md';
 
 /* ------------------------------------------------------------------ *
@@ -287,8 +294,16 @@ const whoCanSeeIt = {
     // sentence carrying both absolutes anyway, because the limit moves the moment anyone
     // adds to the caption. ⚠️ If it grows past 2,800 again, re-run
     // md_to_speech.transform_document and read the new boundary before shipping it.
+    // ⚠️ KT6'S MID-SENTENCE SLOT, AND ONE SENTENCE STILL. The shoulder clause cannot go at the
+    // end: this run finishes on two absolutes and a hedge appended there attaches backwards to
+    // them. It cannot be given its own sentence either, because the comment above requires the
+    // posture and both absolutes to stay in ONE sentence so no chunk boundary can separate them.
+    // So the clause takes Key Takeaway 6's own slot, immediately after the forearm and hip, and
+    // the em dash before "never your back" becomes a semicolon -- every word preserved, one
+    // sentence still. 88 of the corpus's 204 captions already carry a semicolon.
     'The posture that survives an arrival at the wall is skates parallel to it, the contact taken ' +
-    'on your forearm and hip, head up and chin off your chest — never your back to the boards, ' +
+    'on your forearm and hip — and ' + SHOULDER_NOT_THE_SURFACE + ' — ' +
+    'head up and chin off your chest; never your back to the boards, ' +
     'and never a chin dropped to look for the puck. Protecting the puck never justifies squaring ' +
     'your back to an oncoming checker. The checker carries the legal obligation here, not you — but that is ' +
     'not something to lean on, because the penalty arrives after the injury does, and because in ' +

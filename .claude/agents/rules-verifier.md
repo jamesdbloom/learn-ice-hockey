@@ -51,10 +51,12 @@ extraction traps, and there are several that have manufactured false findings.
 | `eiha_inhouse_2026-27.txt` | IHUK In-House Rules **2026-27 — THE CURRENT BRITISH DOCUMENT.** The only edition carrying the four-nation scope (*"England, Wales, Scotland and Northern Ireland"*) and the *"policies of IHUK"* construction clause |
 | `eiha_inhouse.txt` | IHUK In-House Rules 2025-26 — **superseded**, kept for comparison. Scoped to *"England and Scotland"* only |
 | `eih_rr.txt` | England Ice Hockey Rules & Regulations 2024-2025 |
+| `eihl_casebook.txt` | **Motorpoint EIHL Casebook 26-27** — the Elite League's own casebook. ⚠️ **Added and registered 22 September 2026, after being cited in eleven places across three documents with nobody having read it.** `_layout` twin present, ⚠️ **The two extractions are NOT a second opinion on the rules:** flattened they are **36,090 chars and character-identical from offset 1373 to the end** — they differ only in the **front-matter version table**, whose cells extract in a different order in each. That table is the evidence for the three disagreeing version stamps below, which is the whole reason the twin is kept. ⚠️⚠️ **AND THE EXTRACTION TRAP IN THIS BOOK DEFEATS FLATTENING, WHICH TWO AGENTS AND THE COORDINATOR EACH GOT WRONG IN TURN.** A page footer with a page number is spliced **mid-sentence** into Rule 9.5's visor clause (`MOTORPOINT EIHL CASEBOOK 26 - 27 - SECTION D VERSION 1.0 010826   8`). For *"along the sides so that it cannot be flipped up"*, **measured: raw 0, whitespace-stripped 0, alphanumerics-only 0, footer-lines-deleted 1.** ⚠️ **Stripping whitespace does not remove a footer, and neither does stripping to alphanumerics — the footer IS alphanumerics.** **Delete the running-header and page-number lines before phrase-searching this book**, and note the same shape is recorded for the USA Hockey Casebook in `sources/README.md`. ⚠️⚠️ **ITS PREAMBLE MAKES IT SUPERSEDING, NOT SUPPLEMENTARY** — the interpretations *"will replace or in specific cases, supersede"* the IIHF ruling, and the IIHF book governs only *"For all rules not mentioned in the EIHL Casebook"*. **So an EIHL claim sourced to the IIHF book ALONE is unverified until this file has been checked for that rule** — a defect of exactly that shape was found in `uk_rules.md` on the day it was installed. ⚠️ **THREE version stamps disagree** (footers `1.0 010826`, version table `1.1 080926`, PDF `Title` metadata `1.0 080926`) and the Preamble says in-season updates are issued by email and website, so **the copy on disk may already be superseded**. ⚠️ **It is a playing-rule document, NOT a Rules of Competition**: `check`, `checking`, `bodychecking`, `rule27`, `trapezoid` and `restrictedarea` all return **zero flattened in both extractions**, so it sets no body-checking age and settles the EIHL checking question **neither way**. ⚠️ **It also points OUTWARD at two documents NOT on disk** — *"EIHL Roster Regulations"* (`:156`) and *"Gamebook section: EIHL DOPS"* (`:386`) |
 | `ihuk_junior_roc.txt` | IHUK **Rules of Competition — Junior.** ⚠️ **This is the book that publishes the BODY-CHECKING AGE**, in a table: U10/U12 non-checking, U14/U16/U19 checking. The corpus asserted at eleven sites that no British rulebook says. `_layout` twin present |
 | `ihuk_nihl_roc.txt` | IHUK Rules of Competition — NIHL. `_layout` twin present |
 | `ihuk_wnihl_roc.txt` | IHUK Rules of Competition — WNIHL. `_layout` twin present |
 | `ihuk_u10_roc.txt` | IHUK Rules of Competition — U10. Records that **no penalties are recorded at U10**, which puts a U10 reader outside the corpus's penalty-cost arithmetic entirely. `_layout` twin present |
+| `pwhl_rules.txt` | **PWHL Official Rule Book 2025-2026.** ⚠️ **Added 21 September 2026 and absent from this table until 22 September** — `body_contact_and_battles.md` quotes its Rule 52.1 on angling and bodychecking. `_layout` twin present. ⚠️ **A WOMEN'S PROFESSIONAL book — never a general standard, and not one of the five the corpus normally compares** |
 | `ibc.txt` | USA Hockey *Introduction To Body Contact* |
 | `carha.txt` | CARHA Hockey Official Rule Book, printed 2020. ⚠️ **Governs CARHA-affiliated leagues only — never a general rec-hockey standard** |
 | `huh.txt` | USA Hockey *Heads Up Hockey* Program Guide. ⚠️ **Extracted with PLAIN `pdftotext`, not `-layout`** — it is a multi-column brochure and `-layout` splices the columns mid-sentence |
@@ -67,11 +69,18 @@ Each time a verifier caught it, the count was corrected, and **it was stale agai
 round** — because the source set grows and a hand-maintained list of it cannot not decay.
 
 ⚠️⚠️ **BEFORE YOU REPORT THE TABLE AS STALE, COUNT IT PROPERLY — FIVE CONSECUTIVE VERIFIERS HAVE
-REPORTED A PHANTOM.** `ls sources/*.txt | wc -l` returns **36** and this table has **32 rows**, and
-the difference is **not** four missing sources. The four IHUK Rules of Competition `_layout` twins
-are recorded **inline, in their siblings' rows**, as *"`_layout` twin present"* — `ihuk_junior_roc`,
-`ihuk_nihl_roc`, `ihuk_wnihl_roc` and `ihuk_u10_roc`. **32 rows + 4 inline twins = 36. The inventory
-is COMPLETE.**
+REPORTED A PHANTOM.** The difference between `ls sources/*.txt | wc -l` and this table's row count is
+**not** missing sources. The four IHUK Rules of Competition `_layout` twins are recorded **inline, in
+their siblings' rows**, as *"`_layout` twin present"* — `ihuk_junior_roc`, `ihuk_nihl_roc`,
+`ihuk_wnihl_roc` and `ihuk_u10_roc` — and the PWHL pair likewise. **Rows + inline twins = the `ls`
+count.**
+
+⚠️⚠️ **NO FIGURE IS WRITTEN IN THIS PARAGRAPH ANY MORE, AND NONE EVER SHOULD BE. On 22 September 2026
+this passage simultaneously asserted `ls` returns 36 (it returns 38) AND, three paragraphs below,
+correctly recorded `32 + 4 + 2 = 38`. It contained BOTH answers and contradicted itself.** A
+coordinator then quoted the stale half into a brief and filed a finding that had to be retracted.
+⚠️ **`ls sources/*.txt` is the authority. RUN IT. A sentence written to stop people reporting a
+phantom became the phantom.**
 
 ⚠️ **This still costs something, and it is not the counting.** A source recorded only inline is a
 source a verifier does not put on its search list: the pass that raised this most recently also
@@ -123,6 +132,20 @@ to do that.
 decays silently, and nothing mechanical checks it. **Run `ls sources/*.txt` and diff it against this
 table before you trust either.**
 
+⚠️⚠️ **AND AGAIN, THE SAME DAY, CAUGHT BY THE NEXT VERIFIER — the FOURTH time.** `ls sources/*.txt`
+returned **40** after the EIHL Casebook was installed and registered that afternoon, and **neither
+`eihl_casebook.txt` nor its `_layout` twin was named here.** ⚠️ **The install and this table are
+SEPARATE EDITS TO SEPARATE FILES, and nothing connects them** — which is the same mechanism recorded
+for the `scripts/` list in `CLAUDE.md`. The row is now added. **Diff `ls sources/*.txt` against this
+table's own rows at the START of every job; do not wait to notice.**
+
+⚠️ **IT HAPPENED AGAIN ON 22 SEPTEMBER 2026, AND A VERIFIER CAUGHT IT AGAIN — the third time an agent
+here has had to report its own instructions as a defect.** `ls sources/*.txt` returned **38** against
+32 rows plus 4 inline `_layout` mentions; `pwhl_rules.txt` and `pwhl_rules_layout.txt` were on disk,
+**registered in `sources/README.md`**, and named nowhere here. ⚠️ **The arithmetic is the tell:
+32 + 4 + 2 = 38.** The PWHL row is now added. ⚠️ **`sources/README.md` was right and this table was
+wrong, both times — so when the two disagree, BELIEVE THE README AND FIX THIS FILE.**
+
 ⚠️ **FOUR files on disk are deliberately NOT in this table, and NONE of them is a rulebook.**
 They are `source-verifier`'s and `safety-reviewer`'s ground, not yours. Do not cite any of them
 for a rule.
@@ -152,6 +175,30 @@ verbatim, including *"Do not remove helmet (if present) or other equipment"* WIT
 (`I F I N D O U B T,  S I T  T H E M  O U T`), so a flattened phrase search finds about **one
 occurrence in six** and returns a number that looks like a real count. Strip ALL whitespace and
 reconcile the two counts before quoting either.
+⚠️⚠️ **THE 40-vs-TABLE GAP IS NOW RECONCILED, NAME BY NAME, so nobody has to guess again.** On
+22 September 2026 an agent reported the discrepancy and **correctly refused to assert which files it
+was** — this passage tells you not to invent a number, and it followed that. **Measured:
+`ls sources/*.txt` returned 40 that day; exactly FIVE filenames appeared nowhere in this file** —
+`eihl_casebook_layout.txt`, `ihuk_junior_roc_layout.txt`, `ihuk_nihl_roc_layout.txt`,
+`ihuk_u10_roc_layout.txt`, `ihuk_wnihl_roc_layout.txt`. **All five are `_layout` twins whose primary
+IS in the table and whose existence the primary's row states in words (*"`_layout` twin present"*).**
+⚠️ **So the table is NOT stale — it is written with twins described rather than listed, and a
+filename-by-filename diff will always report five "missing" rows that are not missing.**
+
+⚠️⚠️ **DO NOT READ "40" AS CURRENT. It was 42 by the end of 22 September 2026** — `ihuk_coaching_regs`
+and its `_layout` twin were fetched that evening after **two** agents named the document's absence as
+the highest-value thing they could not reach. **Run `ls sources/*.txt | wc -l` rather than trusting the
+figure above**, and expect the five-twin gap to grow as twins are added.
+
+**`ihuk_coaching_regs.txt` / `_layout`** — IHUK Coaching Regulations & Requirements 2026-2027, 15pp.
+§9 is scoped in terms to *"practices, games, camps, and hockey schools"*. §9.3 makes a neck guard
+mandatory for the **coach's own** on-ice PPE; the coach's duty toward **players** names only
+*"approved helmets and face protection, sticks, and gloves"*. ⚠️ **The player neck-guard mandate is
+NOT extended to training by this document** — a searched negative, not a gap. `jewel|earring|piercing|bracelet` scores **0**.
+**The command that answers it honestly, and the only one to trust:**
+`for f in sources/*.txt; do grep -q "$(basename $f)" .claude/agents/rules-verifier.md || echo "$f"; done`
+**If it prints anything OTHER than those five `_layout` twins, the table really is stale.**
+
 ⚠️ **So `ls sources/*.txt` returning more rows than this table is EXPECTED, and is not by itself
 evidence the table is stale.** Two agents have reported it stale this round by matching the
 filenames inside the warning below, which names files that never existed. **Diff the table's own

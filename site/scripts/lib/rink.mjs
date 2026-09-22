@@ -1952,10 +1952,29 @@ export function playSvg(spec, opts = {}) {
           // that converge on the same point — F2 arriving in the lane, and the pass
           // crossing it — otherwise stack their badges on top of each other, which
           // is exactly where the ordering matters most.
+          //
+          // ⚠️ THE NUDGE IS A FUNCTION OF THE BOX, AND IT DID NOT SCALE WITH IT. It was
+          // a flat 3.4 ft against a tag drawn at `2.1 * TXT` by `1.9 * TXT`, so on a
+          // full sheet (TXT = 1.7) the tag grew to half-extents of 3.57 x 3.23 ft while
+          // the nudge stayed at 3.4 — and a tag whose own half-diagonal is 4.81 ft,
+          // moved 3.4 ft, is still sitting on the line it was moved off. It is opaque
+          // white, so it does not overlap the route, it ERASES it.
+          //
+          // Measured on `breakout-reverse`, where route 2 is the reverse pass the whole
+          // diagram exists to teach: the route runs 33.3° off the horizontal, so the
+          // axis-aligned tag reaches 3.57·sin 33.3 + 3.23·cos 33.3 = 4.66 ft along the
+          // perpendicular and buried 1.26 ft of a 16.75 ft route. At 3.4 * TXT = 5.78 ft
+          // the same route clears by 1.12 ft. Six diagrams are `numbered` AND
+          // `half: false`, and the tag was drawn on a route in every one of them.
+          //
+          // ⚠️ HALF SHEETS ARE TXT = 1 AND ARE BYTE-FOR-BYTE UNCHANGED, which is why this
+          // is a scale bug and not a re-tuning: the value that was tested is the value
+          // that still applies wherever it was tested.
           const a = at(Math.max(0, k - 0.05)), b = at(Math.min(1, k + 0.05));
           const tl = Math.hypot(b.x - a.x, b.y - a.y) || 1;
-          const bx = c.x - ((b.y - a.y) / tl) * 3.4;
-          const by = c.y + ((b.x - a.x) / tl) * 3.4;
+          const nudge = 3.4 * TXT;
+          const bx = c.x - ((b.y - a.y) / tl) * nudge;
+          const by = c.y + ((b.x - a.x) / tl) * nudge;
           // A rounded tag, not a ring. An open ring is what the key's opposition
           // forward looks like, and in greyscale the badges read as two more
           // opposing players standing in the slot.

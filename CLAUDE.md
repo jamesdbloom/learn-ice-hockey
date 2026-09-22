@@ -319,6 +319,15 @@ The short form:
    magnitude out and **eight lines sat at EXACTLY their cap**. ⚠️ **And there are TWO
    caps** — `Rule:` and `Convention:` get 300 because a citation and a hedge are both
    mandatory, everything else gets 200, **measured on the VALUE after the label**.
+
+   ⚠️⚠️ **AND THERE ARE THREE BLOCK-SIZE CAPS, NOT ONE. `MIN_FACTS, MAX_COACHING_FACTS,
+   HARD_MAX = 3, 8, 14`** (`scripts/check_facts.py:78`). ⚠️ **`HARD_MAX` 14 is the TOTAL;
+   the cap that actually bites is `MAX_COACHING_FACTS` — a block trips at MORE THAN 8
+   NON-`Rule:` facts** and is told *"the section is probably two sections"*.
+   ⚠️ **A coordinator named only `HARD_MAX` in roughly fifteen briefs on 22 September
+   2026. The agent that caught it said so plainly: *"Had I planned to 14 I would have
+   written a block that failed the gate."*** **Name all three, or name none and say
+   "run `check_facts.py --near` and read the caps from the source."**
    ⚠️ **Before deciding a line "cannot fit", try SUBSTITUTION** — naming a thing is
    often shorter than pointing at it.
 
@@ -432,6 +441,64 @@ The short form:
                     sources, reproduced for the corpus's own owner document. ⚠️ **And the split means
                     there are now TWO owners: regions are `rink_map.md`, vocabulary is
                     `language_and_glossary.md`.**
+
+   ⚠️⚠️ **TWO SEARCH FAILURES THAT LOOK LIKE FINDINGS, both measured on 22 September 2026.**
+
+   **(1) A ZERO FROM A *LABEL* IS NOT AN ABSENCE OF THE *RULE*.** A corpus-wide sweep for the
+   flattened term `kickshot` returned **0** for the NHL, IIHF and Hockey Canada. The figure is real
+   and reproduces. ⚠️ **It is also meaningless: those books describe the act without ever using the
+   label** — NHL 49.2 reads *"including kicking the blade of his own stick"*, and a sweep for
+   `bladeof{his,their}ownstick` returns **2 in each**. ⚠️⚠️ **The false negative was then written
+   into the corpus as fact, in a sentence telling a reader the NHL and IIHF "do not name it" — and
+   every mechanical gate passed it, while a SIBLING DOCUMENT already carried the correct text.**
+   **So: sweep for the ACT in several wordings, never for the corpus's own name for it** — and the
+   same sweep was wrong in the other direction too, reporting `usah` at 0 when it scores 3, because
+   the plain extraction breaks the word across a line as `"kick / shot,"`.
+
+   **(2) "YOU CHECKED FOUR BOOKS AND THIS CORPUS HOLDS TEN."** ⚠️ **Every *"all four books"* and
+   *"none of the books"* claim in this corpus was tested against the books its own sentence names.**
+   `ls sources/*.txt` is the authority. **CARHA Rule 68 — the only book on disk that makes the kick
+   shot a PENALTY — was missed by exactly that error**, and the PWHL carries clauses the corpus
+   attributes to *"NHL and IIHF only"*. **There is no tool that says your sentence names four and the
+   directory holds more.** ⚠️ **AND NO COUNT IS WRITTEN HERE ON PURPOSE — THIS LINE SAID
+   *"thirty-eight"* AND THE DIRECTORY HELD 40, THEN 42** once `ihuk_coaching_regs` and its `_layout`
+   twin landed on 22 September 2026. **A count of a GROWING directory goes stale in the direction that
+   flatters your sweep**, which is the same failure this file records for shrinking backlogs. Run
+   `ls sources/*.txt | wc -l`.
+
+   ⚠️ **`md_to_speech.py --only` TAKES THE BARE DOCUMENT STEM** — `special_teams`, not
+   `systems-special_teams`; the rendered directory uses a **double underscore**. ⚠️ **A wrong id
+   prints *"no markdown found"* and EXITS 0** — a silent false pass that burned two briefs in one
+   day. ⚠️ **AND IT WRITES SSML TO FILES, printing only a one-line summary, so GREPPING ITS STDOUT
+   for your repaired sentence returns nothing and exits 0 as well.** Render with
+   `--out <scratchpad dir>` and grep the **SSML**; a real run names a document count and a chunk
+   count. ⚠️ **A naive `grep -o` over raw SSML can also appear to truncate a sentence at a word like
+   `CARHA` — that is `<sub alias>` markup splitting the match, not a defect. De-tag before reading.**
+
+   ⚠️⚠️ **THE SCRATCHPAD IS SHARED BETWEEN CONCURRENTLY RUNNING AGENTS, AND `md_to_speech --out`
+   MAKES THAT DANGEROUS.** Measured 22 September 2026: an agent ran
+   `md_to_speech.py --only defensive_zone_coverage --out <scratchpad>/ssml`, got a correct
+   *"1 documents, 94 chunks"* — **and the output directory also held `systems__faceoffs/`,
+   `systems__neutral_zone_systems/` and `systems__special_teams/`, written into the same path by
+   THREE SIBLING AGENTS.** ⚠️ **A naive `cat <out>/*/*.ssml | grep` returns another agent's document
+   and looks exactly like your own render.** The agent's first pass did precisely that and surfaced
+   ~25 posture sentences from files it did not own. **Grep the named `<layer>__<stem>/`
+   subdirectory, never the output root** — or give each run its own `--out` directory.
+   ⚠️ **Same species as the `--only` silent-exit-0 false pass above: the tool reports success and
+   the wrong bytes are what you read.**
+   ⚠️⚠️ **AND IT IS WORSE THAN READING THE WRONG BYTES — A CONCURRENT `--out` RUN CAN DELETE ANOTHER
+   AGENT'S WORKING SET.** Measured the same day: a `diagram-reviewer` mid-task reported *"my
+   scratchpad was cleared — another agent ran `md_to_speech.py --out` into the directory I was
+   rendering into and **my SVG/PNG working set disappeared**"*, leaving the other agent's
+   `index.json` and one `technique__…/` directory behind. **Nothing unrecoverable was lost and no
+   project file was touched — the agent re-rendered.** ⚠️ **THE CAUSE IS THE COORDINATOR'S BRIEFS,
+   and the agent named it exactly: *"a brief that tells an agent to use 'the scratchpad' is telling
+   TWO agents to use the same directory."*** **Give every concurrent agent its own NAMED `--out`
+   subdirectory in the brief.**
+
+   ⚠️ **`timeout` DOES NOT EXIST ON macOS.** `timeout N cmd` exits **127**, and wrapped in `$(…)`
+   yields an **empty string that greps as 0** — an agent's first corpus census came back all-zeros
+   and looked clean. Same species as the nvm shims above.
 
    They are the floor. None of them can check whether anything is true.
 

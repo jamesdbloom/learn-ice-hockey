@@ -16,6 +16,28 @@ row P2 recorded Overviews restating their own facts blocks VERBATIM — `defende
 `goaltender.md` 8 of 8, `center.md` 7 of 8 — and that repair reached only 5 of 9 documents
 before it stopped. ⚠️ **Do not quote those figures as current. Run this tool.**
 
+⚠️⚠️ THREE MEASURED BLIND SPOTS. Read these before believing a number.
+
+  1. **A TRUNCATED SAFETY LIST SCORES LOWER, SO IT LOOKS CLEANER.** Found the day this tool
+     was written: conditioning_and_recovery.md's Overview carries SIX of CRT6's TEN concussion
+     red flags while Key focus carries all ten. A layer carrying a safety list in full scores
+     HIGH and looks like a defect; a layer carrying six of ten scores LOW and looks clean.
+     ⚠️ The incentive gradient points at truncating safety lists. For a safety list, a LOW
+     score is actively suspicious. This tool cannot find that class — a layer test can.
+  2. **`_words()` DROPS EVERY TOKEN OF FOUR CHARACTERS OR FEWER**, so the percentage measures
+     CONTENT-WORD overlap, not what a listener hears. "a new player is the one person on the
+     ice with an unlimited licence to ask" — 18 words, verbatim across two layers — reduces to
+     four content words and produces ZERO 6-shingles. It scores 0.0%.
+  3. **The sixth pair was missing.** See the note on PAIRS below.
+
+⚠️  A PREMISE THIS FILE ONCE GOT WRONG, corrected 22 September 2026 by rendering:
+    **ONLY ` ```facts ` LINES ARE VOICED ALONE**, each in its own <p> with a 300 ms break
+    either side. ORDINARY PROSE PARAGRAPHS ARE NOT — the renderer groups several <p> into one
+    <speak> chunk (special_teams.md's Overview renders as five <p> in ONE chunk). A prose
+    paragraph is isolated only if it HAPPENS TO START A CHUNK, and chunk boundaries move when
+    text above them changes. ⚠️ So re-render and re-check after editing; never infer a layer's
+    spoken isolation from its name.
+
 ⚠️  AND REPETITION IS A CORRECTNESS RISK, NOT ONLY A READING ONE. `content_style_guide.md`
     puts it exactly: *"A third restatement is one more place for a correction to fail to
     reach."* Every round-10 critical was a correction that reached the body and stopped.
@@ -36,8 +58,9 @@ a different job.
      instruction is in three layers, the condition is in three layers. Never trade a
      caveat away to lower a score here.
   2. **A DISCLOSURE VOICED IN TWO LAYERS IS PROPAGATION, NOT REDUNDANCY.** Non-negotiable 4
-     forbids stripping an honest disclosure, and each layer is voiced ALONE with a 300 ms
-     break either side — a listener who meets one may never meet the other.
+     forbids stripping an honest disclosure. A ` ```facts ` line is voiced alone, and a prose
+     paragraph that starts a chunk is too — so a listener who meets one copy may never meet
+     the other.
   3. **A DEFINITION MUST MATCH ITS OWNER WORD FOR WORD.** Region and rule definitions score
      high against their owning document and that is the correct state; rewording to score
      lower is how a definition drifts.
@@ -77,11 +100,18 @@ import re
 import sys
 
 LAYERS = ("Key focus", "Overview", "Common Mistakes", "Key Takeaways")
+# ⚠️ ALL SIX pairs. `("Overview", "Common Mistakes")` was MISSING until 22 September 2026,
+# and it is the pair with the Overview as a member — the layer the differentiation wave
+# rewrites. A live instance was hiding in that wave's own output: a repair took
+# switching_positions.md's Overview from 5 shared words with Common Mistakes to 18 VERBATIM
+# while cutting its Key focus overlap, and scored as a clean win. Never drop a pair to make
+# the output shorter; an unmeasured pair is where a defect goes to be moved rather than fixed.
 PAIRS = (
     ("Key focus", "Overview"),
     ("Key focus", "Key Takeaways"),
     ("Key focus", "Common Mistakes"),
     ("Overview", "Key Takeaways"),
+    ("Overview", "Common Mistakes"),
     ("Common Mistakes", "Key Takeaways"),
 )
 SHINGLE = 6

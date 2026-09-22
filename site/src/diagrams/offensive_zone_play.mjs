@@ -20,6 +20,12 @@
  */
 
 // A caption clause that appears in more than one diagram is imported, never
+// retyped. These captions already agreed byte for byte; the constant is what keeps
+// them agreeing. See wall_contact_clauses.mjs.
+import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+
+
+// A caption clause that appears in more than one diagram is imported, never
 // retyped: a sentence that appears twice is a sentence that can drift once, and
 // this one already had. See rule69_clauses.mjs for why all four still say it.
 import {
@@ -1038,8 +1044,8 @@ const cycleRim = {
     'rather than a measurement, because nobody has counted cycle turnovers by cause. ' +
     '⚠️ And whichever one is on, this is a ' +
     'wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, ' +
-    'forearm and hip into the contact, head up and chin off your chest — and not on the point of ' +
-    'your shoulder, and not the whole shoulder if you can help it. Only the checker and the ' +
+    'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL +
+    ' Only the checker and the ' +
     'goaltender are drawn on the other team.',
 
   describe:

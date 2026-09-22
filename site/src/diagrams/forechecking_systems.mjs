@@ -539,10 +539,12 @@ const forecheck131 = {
     'The 1-3-1 pushed up into the offensive zone, against the same puck carrier as the other ' +
     'diagrams: one forward pressuring, three players spread flat across the width of the ice, and ' +
     'one player behind them as the last man. The line of three is conventionally F2, F3 and one ' +
-    'defenceman, the defenceman in the middle as the read-maker — it cannot be three forwards, ' +
-    'because F1 is already a forward and there are only three on the ice. F1 does not chase but ' +
+    'defenceman, the defenceman in the middle as the read-maker, and some coaches invert that, ' +
+    'putting a forward in the middle and a defenceman on a wall — ask which your team runs. ' +
+    'What does not happen is three forwards across, because F1 is already a forward and there ' +
+    'are only three on the ice. F1 does not chase but ' +
     'steers, and as the puck commits to one side the whole line shifts with it, the puck-side ' +
-    'player stepping down as an immediate second attacker while the other two slide across. What ' +
+    'player becoming an immediate second attacker while the other two slide across. What ' +
     'it concedes is drawn as plainly as what it takes: the initial puck entirely, and a great ' +
     'deal of ice behind a flat line, so a chip past it is past all three at once. It is one ' +
     'system among several and not a beginner one, and the far more common use of the same name is ' +
@@ -561,7 +563,8 @@ const forecheck131 = {
     'dot; then a flat line of three at the top of the circles — F2 on the strong-side wall, a defenceman in ' +
     'the middle of the ice, F3 on the far wall, all three at exactly the same depth; then the second ' +
     'defenceman alone on the offensive blue line in the middle, as the safety behind them. Three unnumbered ' +
-    'routes, because they happen together: F2 steps down the strong-side wall as the second attacker, and the ' +
+    'routes, because they happen together: F2 becomes the immediate second attacker, stepping out to the ' +
+    'strong-side wall, and the ' +
     'defenceman in the middle and F3 on the far wall both slide laterally towards the puck side. F1 is drawn ' +
     'with no route.',
 
@@ -612,7 +615,30 @@ const forecheck131 = {
     //     site/src/data/rink.json; this said 7 ft). Safety must
     //     not depend on a coordinate edited for a cosmetic reason, so the endpoint
     //     is now expressed relative to the winger himself and capped.
-    { from: LINE3_WALL, to: { at: 'half-wall:right', dx: -11, dy: -3 }, kind: 'pressure', bow: -2 },
+    //     ⚠️ LEGIBILITY, 22 September 2026, AND THE SAFETY NUMBERS IMPROVED RATHER THAN
+    //     TRADED. This route ran to { dx: -11, dy: -3 }, i.e. (58, 35.5) from LINE3_WALL's
+    //     (54, 33) -- a chord of 4.72 ft drawn under a player glyph 5.80 ft across. The
+    //     ENTIRE shaft was hidden and only the terminal bar escaped, reading at 360 px as a
+    //     stray tick beside F2, under a caption that says "Note what F2 is drawn doing:
+    //     arriving at the wall, not at the winger". The picture did not support the sentence.
+    //     LENGTHENING ALONG THE OLD BEARING WAS NOT AVAILABLE and the cap above is why: that
+    //     chord already ran nearly at W1, clearing rule 1 by 0.38 ft (d 11.41 ft, theta 16.7
+    //     deg, miss 3.28 ft against the 2.9 ft floor), so any extension toward him drops miss
+    //     under the floor. The endpoint moves ONTO the wall instead -- dy 0 puts it on the
+    //     half-wall line, which is what "arriving at the wall" means literally -- and the
+    //     approach turns to meet the boards rather than to run along them:
+    //         chord (54,33) -> (59,38.5)   length 7.43 ft, i.e. 1.63 ft clear of the glyph
+    //         d to W1 at (69, 38.5)        10.00 ft   (was 11.41; still over the 9 ft mark)
+    //         theta, chord against bearing 47.7 deg   (was 16.7)
+    //         miss = d.sin(theta)          7.40 ft    (was 3.28, floor 2.9)
+    //     So d falls 1.4 ft and the clearance that actually decides legality more than
+    //     doubles. Still 'pressure', never an arrowhead: a bar says arrive and contain.
+    //     ⚠️ MEASURED AGAINST COMMITTED site/src/data/rink.json -- half-wall {x:69, y:38.5},
+    //     top-of-circle {x:54, y:22}, player glyph radius 2.9 ft. The file was unmodified in
+    //     the working tree when these were taken, which is the check the cap above exists to
+    //     force. Figures are chord-based; check-arrivals.mjs uses the terminal tangent and is
+    //     the authority -- it was run after this edit.
+    { from: LINE3_WALL, to: { at: 'half-wall:right', dx: -10, dy: 0 }, kind: 'pressure', bow: -2 },
     // The other two: "the whole line shifts with it ... while the others cover
     // the retreat". Lateral, so the key's LATERAL CROSSOVERS symbol and not
     // forward skating — the two mean different things and the key defines both.

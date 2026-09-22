@@ -29,6 +29,12 @@
  */
 
 // A caption clause that appears in more than one diagram is imported, never
+// retyped. The shoulder clause below was missing from this caption entirely; the
+// census that found it, and why it is owed wherever the posture is prescribed, are
+// in wall_contact_clauses.mjs.
+import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+
+// A caption clause that appears in more than one diagram is imported, never
 // retyped: a sentence that appears twice is a sentence that can drift once, and
 // this one already had. See rule69_clauses.mjs for why all four still say it.
 import {
@@ -611,8 +617,18 @@ const wingerOffensiveZone = {
     '— the boards roughly level with the faceoff dot — is your home base; your own faceoff circle ' +
     'is where the one-timer off a cross-ice pass arrives; the side of the net is where rebounds ' +
     'and tip-ins live, so time the crash to arrive as the shot is taken rather than before it. ' +
-    'Leave the high slot, between the dots and the top of the circles, for the centre: two ' +
-    'patches with two owners. "Shoot first" is a bias rather than a rule. ' +
+    // ⚠️ THIS SAID "Leave the high slot ... for the centre: two patches with two owners" — an
+    // OWNERSHIP claim stated flat, in the imperative, to a listener who hears the caption alone.
+    // FALSE IN THE OFFENSIVE ZONE ON ITS OWN EVIDENCE, not merely by import from the defensive-zone
+    // repair of 22 September 2026: content/systems/offensive_zone_play.md, which OWNS this zone,
+    // gives the high slot to no position — a forward supporting to form a triangle with the point
+    // (:406), a defenceman activated down to the top of the circle (:243), and the late-arriving
+    // trailer (:754) all take it. It also contradicted its own host two lines above the marker:
+    // content/positions/winger.md:430 reads "gives that upper layer to no position ... Which of
+    // those your team asks for is a coaching choice, so find out." Non-negotiable 7.
+    'Stay out of the high slot, between the dots and the top of the circles, unless your ' +
+    'team’s structure sends you there: no position owns that layer, so find out who ' +
+    'fills it in yours. "Shoot first" is a bias rather than a rule. ' +
     'At the net front, work just outside the blue paint and keep your body out of ' +
     'the crease: screening from outside it without contact is legal, ' +
     // ⚠️ THIS SAID "every clause of Rule 69 that voids a goal for where you stood names the goal
@@ -643,7 +659,8 @@ const wingerOffensiveZone = {
     'puck, and the left winger in the left faceoff circle. Two routes: a shot from the half-wall ' +
     'toward the net, stopping short of the crease, and the left winger’s skate to the side of the ' +
     'net, arriving beside it rather than in the blue paint. The high slot, between the faceoff ' +
-    'dots and the top of the circles, is shaded and empty — it is the centre’s layer. The ' +
+    'dots and the top of the circles, is shaded and empty — it is the layer a winger stays ' +
+    'out of unless his team’s structure sends him there. The ' +
     'opposition defence is not drawn.',
 
   zones: [{ points: HIGH_SLOT, label: 'the high slot' }],
@@ -666,7 +683,20 @@ const wingerOffensiveZone = {
     { from: W_CIRCLE, to: { at: 'goalmouth', dx: 1, dy: -10 }, kind: 'skate', bow: 6 },
   ],
 
-  puck: { at: 'half-wall:right', dx: -1, dy: -2 },
+  // ⚠️ WAS INSIDE THE WINGER, 22 September 2026. At { dx: -1, dy: -2 } the disc sat 2.24 ft
+  // from RW's centre and the player glyph's radius is 2.9 ft, so it was drawn INSIDE the
+  // circle, over his label -- and this diagram's describe tells a reader where the puck is.
+  // breakouts.mjs records the identical defect and its fix: "left at dy -3 ... the disc would
+  // have been drawn inside him", resolved at about 4.5 ft from the centre, where the disc's
+  // inner edge clears the glyph's stroke.
+  // MEASURED AGAINST COMMITTED site/src/data/rink.json -- half-wall {x:69, y:38.5}, RW on that
+  // datum with no offset, crease {x:86, y:0}.
+  // WHICH WAY IT MOVED, and every other direction is taken: +y is the boards, 4 ft away; -y
+  // alone puts it on the shot route, which leaves W_HALF_WALL (69, 38.5) for (79, 6) and would
+  // pass within 1.4 ft of the disc -- the "blob welded to a route" failure the off-wing puck in
+  // this same file was moved to fix. Up-ice and inside at (-3, -3.5) is 4.61 ft from his centre
+  // and 3.90 ft off that route, which reads as a puck on his stick.
+  puck: { at: 'half-wall:right', dx: -3, dy: -3.5 },
 };
 
 // ---------------------------------------------------------------------------
@@ -1036,8 +1066,7 @@ const wingerDzRim = {
     'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the wall and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
     'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
-    'forearm and hip into the contact, head up and chin off your chest — and not on the point of ' +
-    'your shoulder, and not the whole shoulder if you can help it.',
+    'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
@@ -1103,8 +1132,8 @@ const wingerDzReverse = {
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
     'back to the wall and never duck. Those are two different injuries — a hit from behind you cannot' +
     ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
-    'to the boards, forearm and hip into the contact, head up and chin off your chest — and not on ' +
-    'the point of your shoulder, and not the whole shoulder if you can help it.',
+    'to the boards, forearm and hip into the contact, head up and chin off your chest' +
+    SHOULDER_TAIL,
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
@@ -1204,7 +1233,7 @@ const offWingOpenToTheIce = {
     'cannot show, and both of them are prohibitions: never turn your back to the boards to receive ' +
     'it, and never duck. Those are two different injuries — a hit from behind you cannot brace for, ' +
     'and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the wall,' +
-    ' forearm and hip, head up and chin off your chest.',
+    ' forearm and hip, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The defending half of the rink, your own net at the right. Your goaltender is in the crease ' +
