@@ -17,25 +17,52 @@ end and cleared by safety review: `skating` (17.7 min) and `equipment` (85.4 min
 listened to either by ear — every verdict to date is from a text/transcript review and `ffprobe`
 duration.
 
+**The steps that need a human — an AWS login, the TTS vendor signups, the ear test, the
+listening pass — are split out into [`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md),
+written for the owner and not for an agent.** Everything below is the engineering backlog. Do
+not duplicate the manual steps here; when one of them lands, record the outcome in
+`project/reviews/` and update this file's orientation.
+
+⚠️ **The audio was on borrowed time, and one artefact already went this way.** Checked
+22 September 2026: the only copies of both cleared episodes were in an ephemeral
+`/private/tmp/claude-503/.../scratchpad/` directory. They are now at
+`~/Documents/personal/ice_hockey_scripted_episodes/{skating,equipment}/`, outside the
+repository, with their scripts, provenance tables and notes. `ffprobe` confirms 1,064.1 s and
+5,123.6 s — the 17.7 and 85.4 minutes on record. **Anything a future session wants to keep
+goes outside the scratchpad at the moment it is made**, which is the same lesson the missing
+whisper model taught below.
+
 ## Open items
 
-- **Fetch the whisper model — the transcription/verification step is broken without it.**
-  Confirmed 20 September: no `ggml-*.bin` exists at the documented location
-  (`~/whisper-models/` does not exist on disk). `whisper-cli` itself **is** installed
-  (`/opt/homebrew/bin/whisper-cli`). Fetch and place the model, then transcribe:
+- **Whisper model — FETCHED 22 September 2026, no longer blocking.**
+  `~/whisper-models/ggml-base.en.bin` now exists at **147,964,211 bytes**, byte-for-byte the
+  size the previous session recorded, from
+  `https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin`. `base.en`
+  specifically — it is what every prior transcript-based verdict was measured with, and a
+  different size is not comparable. `whisper-cli` was already installed at
+  `/opt/homebrew/bin/whisper-cli`. The transcribe step:
   ```bash
-  mkdir -p ~/whisper-models && curl -L -o ~/whisper-models/ggml-base.en.bin \
-    https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin
-  ffmpeg -i EPISODE.m4a -ar 16000 -ac 1 -c:a pcm_s16le OUT.wav
+  ffmpeg -i EPISODE.mp3 -ar 16000 -ac 1 -c:a pcm_s16le OUT.wav
   whisper-cli -m ~/whisper-models/ggml-base.en.bin -otxt -np -nt -f OUT.wav -of OUT
   ```
-  `base.en` specifically — it's what every prior transcript-based verdict in the consolidated
-  history was measured with; a different size isn't comparable. ⚠️ **A file matching the expected
-  size (147,964,211 bytes, dated 17 September) already sits in a session scratchpad directory under
-  `/private/tmp/claude-503/...` — that is ephemeral, not a durable fix, but copying it to
-  `~/whisper-models/ggml-base.en.bin` may be faster than re-downloading if it's still there.**
-  Known trap once transcription works: whisper mangles proper nouns (*"Brodeur"* → *"Brodua"*) —
-  never grep a transcript for an exact name, search semantically and read context.
+  ⚠️ **Not yet run against either cleared episode** — fetching the model is not the same as
+  verifying with it, and no transcript has been produced in this session.
+  Known trap once you do: whisper mangles proper nouns (*"Brodeur"* → *"Brodua"*) — never grep a
+  transcript for an exact name, search semantically and read context.
+  ⚠️ **`~/whisper-models/` is outside the repository and is not backed up by it.** It went
+  missing once already; if it goes again, the command above is the whole fix.
+
+- **The `ice-hockey` AWS profile's SSO token expires, and its failure looks like a Polly
+  outage.** Found 22 September 2026: `aws sts get-caller-identity` under `AWS_PROFILE=ice-hockey`
+  returns `Error when retrieving token from sso: Token has expired and refresh failed`. The
+  profile is SSO-based (an SSO session and account id recorded in `~/.aws/config`, region `eu-west-2`),
+  so it will expire again on a cadence nobody controls. ⚠️ **This matters beyond the
+  inconvenience: on 18 September the plan and a status report to the owner both said TTS was
+  blocked pending an API decision, when Polly had been reachable all along** (§3.1 of the
+  consolidated record). An expired token is the mirror-image trap — a working integration that
+  reports as broken. **Check the token before concluding anything about Polly.** The fix is
+  `aws sso login --profile ice-hockey`, which needs a browser and is therefore the owner's, not
+  an agent's — it is step 0 of `PODCAST_MANUAL_STEPS.md`.
 
 - **Podcast-script-vs-corpus divergence — coordinator decision, not agent-closable.** `OPEN_ITEMS.md`
   points here for this item rather than duplicating it (see its "Design specifications, not dispatch
@@ -81,3 +108,38 @@ duration.
   route), but its patterns don't match a pointer to a sibling document at all, only to
   in-document layers (Sources trailer, tables, footnotes). Extending it to take a script path is the
   obvious next step and hasn't been done — do this between waves too, for the same reason as above.
+
+- **The ear-test sample now exists, and the setup instructions `tts_sample.py` points at did
+  not.** `scripts/tts_sample.py` ends by telling the reader to "see PODCAST_AUTOMATION_LOCAL.md
+  for the minimum setup steps per vendor" — **this file had no such section**, in any version.
+  A pointer to advice that was never written is the routing failure CLAUDE.md warns about for
+  sources, reproduced for the project's own tooling. Both halves are now closed:
+  `PODCAST_MANUAL_STEPS.md` step 2 carries the per-vendor signup steps with live URLs, and
+  `project/tts_ear_test_sample.txt` is the sample to feed the harness — 475 words / 2,708
+  characters, extracted from `md_to_speech.py`'s own render of `content/technique/skating.md`
+  (the Key focus safety block, plus the recovery-speed research block), not written for the
+  demo. ⚠️ **It is plain text with no header and no framing, because `tts_sample.py` speaks the
+  whole file** — anything added to the top gets read aloud in every comparison. It exercises the
+  four things this corpus's prose actually breaks TTS on: em-dashed safety clauses, an accented
+  proper noun (*Pierre Pagé*), a quotation mid-sentence, and the renderer's spelled-out decimals.
+  ⚠️ **If `content/technique/skating.md` is rewritten, this file does not follow it** — it is a
+  frozen sample, deliberately, so that two engines heard weeks apart are compared on identical
+  input. Do not regenerate it to "keep it current"; that destroys the comparison.
+
+- **Polly-tier ear-test audio already existed on the machine and was in no plan file.** Found
+  22 September 2026 by a filesystem sweep, not by reading anything: `~/Downloads/polly-voice-test/`
+  (18 September) holds `uk_rules` chunk 010 read by Amy on all three Polly tiers — `standard`
+  (2:45), `neural` (2:55) and `generative` (3:07) — plus a `dialogue/` subdirectory from the
+  abandoned two-speaker experiment. ⚠️ **The standard/neural/generative comparison answers a
+  question the plan has been treating as open** (is the generative tier audibly worth its price?)
+  **and it has been answerable for four days.** Separately, `~/Downloads/tts-compare/` holds a
+  `polly_generative_Amy.mp3` from an 18 September `tts_sample.py` run whose **sample text is not
+  recorded anywhere** — 2:23 of audio that cannot be attributed to an input, which makes it
+  useless as a comparison baseline and is why `tts_ear_test_sample.txt` is now a frozen, named
+  file. ⚠️ **`tts_sample.py` names output files by ENGINE, not by run**, so a second run into the
+  same directory overwrites the first with no warning; `PODCAST_MANUAL_STEPS.md` step 3 now dates
+  the output directory for this reason.
+  ⚠️ **The general lesson, and it is the third instance in this file:** the whisper model, both
+  cleared episodes, and now this audio were all outside the repository and outside every plan
+  file. **`~/Downloads` and the session scratchpad are where this project's artefacts go to be
+  forgotten.** Before recording that something has never been done, sweep the filesystem for it.

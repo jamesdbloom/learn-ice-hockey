@@ -47,8 +47,11 @@ marketing backlog.
 [`READABILITY_AND_DUAL_AUDIENCE.md`](READABILITY_AND_DUAL_AUDIENCE.md) — the Key Focus / dual-audience
 design principles this corpus is written under. [`PODCAST_AUTOMATION_LOCAL.md`](PODCAST_AUTOMATION_LOCAL.md)
 — local NotebookLM/TTS pipeline operations, including the podcast-vs-corpus divergence question (its
-own open item, owned there — not duplicated here). Do not duplicate either file's specification here;
-executable corpus-content work is tracked in this file.
+own open item, owned there — not duplicated here).
+[`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md) — **the owner's own worklist**: the AWS SSO
+login, the TTS vendor signups with live URLs, the ear test, and the listening pass. Written for a
+human, not an agent; added 22 September 2026 at the owner's request. Do not duplicate any of the
+three files' specifications here; executable corpus-content work is tracked in this file.
 
 **`list_sites_content_and_traffic_plan_2026-09-20.md` relocated to `project/reviews/` on 21 September**
 — every content-actionable item it produced is closed (see coverage above); it is kept there as
@@ -108,23 +111,52 @@ record.
 
 ## Genuinely open
 
-- **Outreach to EIHA/clubs/rinks/coaches, and monthly traffic measurement — genuinely outstanding,
-  outside this environment's scope.** These need the user's own relationships and an ongoing cadence
-  this session can't hold open. See `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md`
-  Phases 3–4 for detail. (Kadaza and FeedSpot submissions are both done — see coverage above.)
-- **The podcast-vs-corpus divergence question** — owned in `PODCAST_AUTOMATION_LOCAL.md`, not
-  duplicated here (see "Design specifications" above).
-- **Podcast work generally** — deferred all session per standing instruction; see
-  `PODCAST_AUTOMATION_LOCAL.md` for current state.
+- **Monthly traffic measurement — genuinely outstanding, outside this environment's scope.** Needs
+  an ongoing cadence this session can't hold open. See
+  `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 3–4 for detail.
+  (Kadaza and FeedSpot submissions are both done — see coverage above.) ⚠️ **Outreach to
+  EIHA/clubs/rinks/coaches was removed from this file on 22 September 2026 at the owner's
+  instruction** — a longer-term item they will do naturally at the right time, deliberately not
+  tracked. It is recorded here as a removal, not a closure, so nobody re-derives it from the traffic
+  plan and files it as a fresh gap. **Do not re-add it.**
+- **Podcast work — the engineering backlog is owned in
+  [`PODCAST_AUTOMATION_LOCAL.md`](PODCAST_AUTOMATION_LOCAL.md), and the owner's own manual steps in
+  [`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md).** Neither is duplicated here (see "Design
+  specifications" above); that includes the podcast-vs-corpus divergence question, which is tracked
+  in the first of those. The pipeline is **blocked on two things only a human can do** — an ear test
+  across TTS engines, and a listening pass on the two episodes cleared by transcript alone.
+
+- **Readability and dual-audience: NOT complete, and the residue is three named threads, not a
+  sweep.** Re-measured 22 September 2026, live, not quoted from the file:
+  `check_readability_census.py openers` reports **39 of 39 prose — done**;
+  `check_readability_census.py markers` reports **331 markers across 32 documents, 16 still
+  arriving with zero prose after their heading**. ⚠️ **That 16 is a worklist, not a defect list** —
+  several are orientation diagrams likely correct as they stand, and the tool prints the per-document
+  breakdown, so **run it rather than quoting this figure**. The other two threads are in
+  [`READABILITY_AND_DUAL_AUDIENCE.md`](READABILITY_AND_DUAL_AUDIENCE.md) under "Open threads":
+  caption safety/rule-scope routing (open-ended by nature, re-investigate from scratch), and the
+  **seven-layer pilot rewrite, which needs an owner decision before any work is dispatched** — it has
+  not shipped in either pilot document, and whether the seven named layers are still the target, or
+  whether Key focus + Go deeper + the summary sections is the corpus's settled shape, is a question
+  nobody has put to the owner. **Do not dispatch against Phase 2's acceptance criteria until that is
+  answered.**
 
 ## Push status
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git fetch origin main && git rev-list --count origin/main..HEAD`,
-never quoted from memory or from an earlier paragraph in this file.** As of 22 September 2026, a fresh
-fetch shows `origin/main` at `c216af7`, and local `main` is **3 commits ahead**: `7df04fc` (the
-`offensive_zone_play.md` hedge fix), `25b0725` (the Kadaza-done / FeedSpot-link plan update), and
-`22c9cc6` (the "only X" hedging style-guide note plus the two closed SEO questions). Unlike the two
-prior checks in this file, origin was NOT already at local HEAD this time — the auto-push pattern
-noted twice earlier in this session did not recur here. All three committed, none pushed — push
-remains the user's own call throughout.
+never quoted from memory or from an earlier paragraph in this file.**
+
+**Re-checked 22 September 2026, second check of the day: `origin/main` and local `main` are both at
+`e0a0b69`. Nothing is unpushed.** ⚠️ **This corrects what this section said a few hours earlier**, which
+was that three commits (`7df04fc`, `25b0725`, `22c9cc6`) were committed and unpushed, and that the
+auto-push pattern "did not recur here." **It did recur** — all three are now on `origin`, pushed by
+something other than this session between the two checks.
+
+⚠️ **So the standing lesson is stronger than "re-check before quoting": this section can go stale
+WITHOUT ANYONE IN THE SESSION DOING ANYTHING.** A commit count is not merely a figure that ages, it is
+a figure another process can change underneath a correct reading. The fetch-and-count command above is
+the only trustworthy sentence in this section; every commit hash and every count written around it is a
+snapshot with a shelf life measured in hours. **Push remains the user's own call throughout** — the
+observation that something else is pushing is recorded as a fact about this repository, not as
+permission for an agent to push.
