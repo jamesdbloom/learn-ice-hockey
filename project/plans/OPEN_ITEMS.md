@@ -213,18 +213,41 @@ in between, and nothing tells a reader whether they need the body at all or whic
 Approved approach:
 
 - [ ] **Keep the five-slot spine.** Universal, working, and the one finished piece of this rollout.
-- [ ] **Add "Recognise it" where a document teaches a decision — not everywhere.** The highest-value
-      missing rung: it converts a principle into a trigger and serves every audience at once.
-      `getting_started.md`'s `## How to tell` is the existing form to follow.
+- [x] ⚠️ **PRECURSOR CHECK DONE, 22 September 2026 — and it refuted the optimistic estimate.** Full
+      measurement and method limits in
+      [`../reviews/recognise_it_precursor_census_2026-09-22.md`](../reviews/recognise_it_precursor_census_2026-09-22.md).
+      **The material mostly does not exist**: 5 documents carry a `##`-level cue section, 6 only a
+      `###`-level one, and **28 have no cue heading at any level**. A broad prose pattern returned
+      530 lines and looked like the optimistic answer; a read sample of 16 was ~4–5 genuine and the
+      rest false positives, and a high-precision pattern returns **49 corpus-wide**, with **15 of the
+      28 at zero**. Only 7 contiguous clusters exist and at least one is a watching *exercise*, not a
+      cue. ⚠️ **So the work is WRITING, not promoting a heading, and the approved approach's cost
+      estimate was wrong.**
+- [ ] **Add "Recognise it" starting from the five documents that already do it** — not to all 39.
+      `systems/defensive_zone_coverage.md`'s **`## How to Tell Which System Your Team Plays`** is the
+      best in the corpus and is the pattern to name: ask the coach first, then five observable tells,
+      serving the cardinal rule at the same time. The others are `neutral_zone_systems.md`,
+      `getting_started.md`, `forechecking_systems.md`, `scanning_and_anticipation.md`.
+- [ ] **Promote the six `###`-level cue sections to `##` where the document teaches a decision** — a
+      cheap win needing no new prose. (`language_and_glossary`, `rules_primer`,
+      `playing_without_the_puck`, `equipment`, `mental_game`, `goaltender`.)
+- [ ] ⚠️ **NEVER gather the scattered cue sentences into a new section.** They are welded to their
+      instruction, which is the correct state — `winger.md:148` reads *"It is tempting to chase the
+      puck into the corner when you see your team battling there. In a collapse system, resist it."*
+      Extracting the cue **separates it from the instruction**, which the design spec forbids in
+      terms, and each layer is voiced alone with a 300 ms break either side so audio makes it worse.
+      **A gathering pass would manufacture the defect the layer exists to prevent.**
+- [ ] ⚠️ **Before writing into any of the 28, READ the document — the counts are LEXICAL.**
+      `winger.md:148` is genuine recognition prose and matches none of the high-precision patterns.
+      **49 is a floor, not a census**, and a zero means "zero of the phrasings searched for", not
+      "no cue material". This is *an empty extraction is not an absence*, applied to the corpus's own
+      census. **Writing a second copy of material already there is the restatement defect that is now
+      this plan's highest priority.**
 - [ ] **Add "If your team differs" only where the cardinal rule bites** — where a coaching choice
       could be read as a law of hockey. A safety layer, not a readability one.
 - [ ] **Treat "Understand it" and "Go deeper" as already existing** under document-specific headings.
       **Do not rename 39 documents' body sections to a template** — the cost is high and the gain is
       a table of contents that reads identically on every page.
-- [ ] ⚠️ **Before any of the above, check whether "Recognise it" material already exists inside body
-      prose under other names.** It probably does, which would change the cost from *writing* to
-      *promoting a heading* — and that is the difference between a wave and a sweep. **This check has
-      not been done and nothing should be dispatched before it.**
 - [ ] **Audience routing is a `pathways.json` job, not a per-document layer job.** Six audiences and
       11 pathways already exist (9 reviewed, 2 draft), and the model is already right: beginner
       pathways deep-link to a *heading anchor*, while `adult-detail` routes to a *section hub* with
