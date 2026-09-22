@@ -76,6 +76,12 @@ under "Genuinely open," not restated here.
 
 ## Priority order
 
+⚠️⚠️ **1. THE ⚠️ CALLOUT FLOW PROBLEM — owner's instruction, 22 September 2026, AND IT IS CORPUS-WIDE.**
+**1,538 callouts; 1,196 of them interrupt a section rather than close it; runs of up to 18 in a row.**
+Reduce, consolidate, move to section ends, keep succinct. ⚠️ **Consolidation is NOT deletion** — see the
+first row under *Genuinely open*. **This outranks everything below it.**
+
+
 1. Safety residuals that could get a reader hurt, ejected, or given wrong rules for their age/division.
 2. **Layer differentiation — the summary layers must reinforce and add, never restate.** Owner
    instruction, 22 September 2026, and **the highest-priority content focus until it is done.** See
@@ -136,6 +142,1220 @@ record.
   check whether each `docs` entry was actually curated for *this* pathway's audience, not just present.
 
 ## Genuinely open
+
+### 🔺🔺 HIGHEST PRIORITY — OWNER'S INSTRUCTION, 22 September 2026: THE ⚠️ CALLOUTS BREAK THE READING FLOW
+
+**The owner's words:** *"too often callout-warning sections, it is like we're paranoid about players not
+using their judgement… they break up the flow of the content too much… Currently the warnings are very
+jarring in the middle of text and disrupt the flow of the content too often."*
+
+**What the owner asked for, and this is the specification:**
+1. **Reduce the number.**
+2. **Where a warning must stay, GROUP them into a single consolidated warning** — several paragraphs if
+   need be — rather than scattering them.
+3. **Put that consolidated warning at the END of a section, not in the middle.**
+4. **Keep each one as succinct as possible.**
+
+**The owner's own example, and it reproduces exactly.** `foundation/core_principles.md` **§Key focus**
+opens *"Seven ideas survive changing your position, your team and your league."* ⚠️ **The reader then
+meets TWO warnings before idea one**, and a third interrupting the middle. **The layer that promises
+seven ideas delivers two warnings first.**
+
+### Measured corpus-wide, so the work can be scoped rather than guessed
+
+**1,538 lines carry a ⚠️ callout.** By layer: **body 1,111**, Key Takeaways 229, Common Mistakes 150,
+Overview 31, **Key focus 17**.
+
+⚠️⚠️ **THE DECISIVE MEASUREMENT — 77% INTERRUPT RATHER THAN CLOSE A SECTION:**
+
+| position in its section | count |
+|---|---:|
+| **mid-section (interrupting flow)** | **1,196** |
+| at or near the section end | 357 |
+
+⚠️ **And they stack.** Consecutive runs: 587 singletons, **169 pairs, 65 triples, 32 quadruples** — and a
+tail running to **11, 16 and 18 in a row**.
+
+**Key focus is the sharpest place to start** — it is the first layer a reader meets and the one the
+podcast voices first. 17 callouts across 12 documents; `core_principles.md` has **three**, the most.
+
+### ⚠️ THE CONSTRAINT THAT MAKES THIS DELICATE — consolidation is NOT deletion
+
+⚠️⚠️ **Non-negotiable 4 stands: never strip an honest disclosure.** And `check_layer_echo`'s docstring
+records that **a repeated safety limb is repeated on purpose** — that repetition is correct, not
+duplication.
+
+**So the work is PLACEMENT and CONCISION, not removal.** A warning that is moved to the end of its
+section, merged with its neighbours and tightened has lost nothing. **One that is deleted because it
+interrupted has lost something the corpus exists to carry.**
+
+⚠️ **The test for each one: does a reader who acts on this section WITHOUT having read the warning do
+something that gets them hurt, ejected or penalised?** If yes it stays — consolidated, succinct, at the
+end. If no, it was never a warning; it was a hedge wearing a ⚠️, and those are the number to reduce.
+
+⚠️ **One genuine tension to resolve rather than paper over:** a warning at the end of a section is read
+*after* the instruction it qualifies. For most of these that is fine. **For a limb that must be known
+BEFORE acting — a contact permission, a crease boundary — end-placement may be wrong**, and the honest
+answer is to fold it into the instruction sentence itself rather than trail it. **Say which you did.**
+
+### ⚠️ SCOPE — THE OWNER CORRECTED THIS EXPLICITLY: IT IS ALL CONTENT, NOT KEY FOCUS
+
+*"this doesn't just impact Key focus it impacts all areas of content so consider everything"*
+
+⚠️ **The first draft of this row scoped the work to Key focus and that was wrong.** Key focus is where
+the owner first NOTICED it and it is the sharpest illustration — **17 callouts, first layer a reader
+meets, first layer the podcast voices** — but it is **1% of the problem**. ⚠️ **The body carries 1,111
+of the 1,538, and 1,196 of all callouts interrupt rather than close their section.**
+
+**Every layer is in scope: body, Key focus, Overview, Common Mistakes, Key Takeaways, and the facts
+blocks.** ⚠️ **And the ````facts` layer deserves its own look** — every line there is voiced ALONE with
+a 300 ms break either side, so a ⚠️ line in that layer is not an interruption of flow, it is **a whole
+utterance**. Its economics are different and the fix may be too.
+
+**Order of work — by density and reader cost, not by layer:**
+
+✅ **THE PER-DOCUMENT RANKING IS RUN — dispatch from this, and re-run it as work lands.**
+
+| document | mid-section | total | runs of 3+ |
+|---|---:|---:|---:|
+| `foundation/rules_primer.md` | **170** | 201 | **20** |
+| `positions/goaltender.md` | **109** | 138 | 16 |
+| `technique/body_contact_and_battles.md` | **106** | 144 | 13 |
+| `systems/faceoffs.md` | 71 | 94 | 7 |
+| `systems/special_teams.md` | 57 | 69 | 7 |
+| `technique/shooting.md` | 49 | 57 | 9 |
+| `systems/offensive_zone_play.md` | 45 | 55 | 5 |
+| `foundation/uk_rules.md` | 44 | 65 | 6 |
+| `off-the-ice/equipment.md` | 42 | 61 | 8 |
+| `systems/forechecking_systems.md` | 40 | 52 | 6 |
+| `positions/center.md` | 39 | 50 | 6 |
+| `systems/game_management.md` | 36 | 46 | 2 |
+| `hockey-iq/risk_management.md` | 30 | 36 | 3 |
+| `positions/defender.md` | 27 | 38 | 4 |
+| **`foundation/core_principles.md`** | **24** | **25** | 1 |
+| `hockey-iq/playing_without_the_puck.md` | 23 | 31 | 3 |
+
+**Corpus: 1,196 mid-section of 1,553; 141 runs of three or more.**
+
+⚠️ **`core_principles.md` — the owner's example — is 24 mid-section of 25. 96% of its callouts
+interrupt.** It is the **pilot** precisely because it is small enough to get the pattern right before
+applying it to `rules_primer.md`'s 170.
+
+⚠️ **`rules_primer.md`, `goaltender.md` and `body_contact_and_battles.md` are 385 of the 1,196 between
+them** — a third of the problem in three documents. ⚠️ **They are also the three most
+safety-critical**, so they are the ones where *consolidation is not deletion* will be hardest and where
+the hurt/ejected/penalised test must be applied most carefully. **Do not start there.**
+- [ ] **`core_principles.md` as the pilot**, because the owner named it and because a short document
+      makes the pattern legible before it is applied at scale. **Its §Key focus is the demonstration,
+      not the deliverable — do the whole document.**
+- [ ] **Then the densest documents by mid-section count**, whole document at a time.
+- [ ] ⚠️ **DISPATCH PER DOCUMENT, NEVER AS A SWEEP.** Each callout needs the hurt/ejected/penalised test
+      read against its own section. **A sweep here strips disclosure at scale**, which is the one failure
+      this corpus cannot absorb.
+- [ ] ⚠️ **Every document touched needs a RENDER** — consolidating changes what is voiced and where the
+      breaks fall. Six render-only defects were caught this way in the last round alone.
+- [ ] ⚠️ **Report a per-document before/after count**, so the reduction is measured rather than asserted.
+
+
+### 🔴🔴 THE SAME EMPHASIS DEFECT IS LIVE ON 14 MORE PAGES — and a source grep CANNOT find it
+
+**C10 passed for the two repaired pages** — zero literal asterisks, trailers italic to the last
+character, verified at 1265 px **and at a genuine 371 px viewport** in both themes. The previous
+commit's repair at `how_to_watch_hockey` also still renders clean, so **the fix pattern does not
+regress.**
+
+⚠️ **But a rendered census of all 39 pages found the same defect on 15**, with a recurring signature: a
+**pair** of literal asterisks, one closing a `("…"` quotation and one at the very end of the trailer
+paragraph. The affected pages include `language_and_glossary:467`, `rink_map:645`,
+`special_teams:1201`, `goaltender:1495`, `on_ice_communication:661`, `body_contact_and_battles:1848`,
+`shooting:912`, `center:787`, `rules_primer:1169`, `conditioning_and_recovery:652`,
+`equipment:838`, `game_management:1177`, `forechecking_systems:968`, `winger:749`.
+
+⚠️⚠️ **PRE-EXISTING, NOT A REGRESSION — verified before deciding.** Three of those lines are touched by
+this commit's hunks, and the signature is **identical at HEAD and in the working tree** on all three.
+The only emphasis-affecting edits in this commit are the two repairs and the deliberate space, all three
+independently confirmed clean in the render.
+
+⚠️⚠️ **THE METHOD FINDING, AND IT VINDICATES NOT SWEEPING THE 112:** *"CommonMark's delimiter arithmetic
+makes `(` + `*"` AMBIGUOUS, not always broken. It resolves two ways — benign (emphasis closes and
+reopens; only the quotation flips upright, nothing leaks) or destructive (a literal `*` surfaces and the
+remainder of the trailer loses italic). **A source grep for `(*"` therefore cannot find this; only the
+rendered output can.**"* `faceoffs.md` still carries three `(*"` and renders clean.
+
+✅ **And it hands over an exact, cheap regression gate: the count of literal asterisks in the rendered
+article text of `dist/`.** That is the instrument my two deleted checkers were trying and failing to be.
+
+**Severity: Major, not Critical.** All text is present and legible; what is lost is **emphasis**, and it
+is confined to Sources trailers — **no facts block and no ⚠️ callout was found degraded anywhere.**
+
+⚠️ **TWO THAT ARE NOT DEFECTS — do not "fix" them:** `uk_rules.md:574` and
+`conditioning_and_recovery.md:668` both reproduce **the quoted source's own footnote marker**
+(*"…before day 21*"*), deliberately — and the latter document's next sentence literally begins
+*"That asterisk…"*.
+
+- [ ] Repair the 14, per page, with the rendered asterisk count as the before/after check.
+
+### 📌 THE DELIBERATE SPACE IS VISIBLE TO A READER — seen, and passed on purpose
+
+`playing_without_the_puck` renders `**Rule 602(a)** ( "A match penalty shall be assessed…` — ⚠️ **the
+space after the `(` is on the page.** Confirmed introduced by this commit.
+
+**Passed deliberately**: the `check_quote_drift.py:224` coverage it protects — a USA Hockey match-penalty
+quotation that would otherwise fall out of drift checking **entirely and invisibly** — outranks one
+space in an unvoiced trailer.
+
+⚠️ **A zero-artefact alternative exists and is recorded for later, not now:** the `faceoffs.md` repair
+achieved the same result by **restructuring where the emphasis opens** —
+`*"All face-offs must be conducted on one of the nine"* face-off spots *"located on the rink."*` — with
+no visible space.
+
+### 📌 `resize_window` IS CONFIRMED BROKEN, AND THERE IS A WORKING SUBSTITUTE
+
+It reported *"Successfully resized … to 375x812"* while `clientWidth` stayed **1265** and
+`matchMedia('(max-width: 60rem)')` stayed **false** — the second review to hit this.
+
+✅ **The work-around that worked: inject a 375 px-wide `<iframe>` at the same origin.** Media queries
+fire, the mobile layout renders, and it is a **genuine CSS viewport** — so narrow-width findings from it
+are **observations, not proxies**. ⚠️ **What it does NOT reproduce:** real browser chrome, dynamic
+viewport units, touch scrolling, overlay scrollbars, pinch-zoom.
+
+**Measured at 371 px and 316 px: document horizontal overflow 0 px, every table in its own
+`overflow-x` container, text reflowing with no clipping.**
+
+
+### 🔴🔴 A DRIFT CLASS `check_quote_drift` CANNOT SEE BY CONSTRUCTION — whitespace-only
+
+`rules_primer.md` quoted the EIHL Preamble as *"on the EIHL **website**"*. **The source reads *"on the
+EIHL **web site**"*.** ⚠️ **The tool matches on ALPHANUMERICS ONLY, so `website` and `web site` flatten
+identically** — confirmed empirically: both become `ontheeihlwebsiteand`, and the file scored **72
+flagged / 1293 clean both before and after the repair.**
+
+⚠️⚠️ **So the alphanumeric flattening that DEFEATS the page-furniture splice also BLINDS the tool to
+every whitespace-only alteration of a quotation.** That is not a bug to fix — the flattening is
+load-bearing for the splice problem — **it is a permanent coverage hole nobody had named.**
+
+**Candidates exist corpus-wide:** `web ?site` scores in 10 documents. ⚠️ **Most will be the corpus's own
+prose, not quotations — do not sweep.** The class is wider than this one word: any compound a source
+writes open and the corpus writes closed, or vice versa.
+
+- [ ] Is there a cheap second pass that compares **unflattened** where a fragment already matched flattened?
+
+### ✅ C6 CLEARED, AND THE SAFETY PASS EARNED THE BLOCK — four findings, two permissive
+
+⚠️ **The commit gate was right to block on this, and I was wrong to think the repair was complete.**
+
+- **A · A checking permission over-generalised from two divisions to a whole league.** The staged text
+  said *"the IHUK Rules of Competition for **the NIHL** set the adult format as 'Full ice, checking'"*.
+  ⚠️ **That document is titled *"National League Division 1 and 2 Rules of Competition"*** — it governs
+  **NIHL 1 and NIHL 2**. Written as *"the NIHL"*, an adult in any other British competition reads a
+  checking permission as theirs **by resemblance** — the exact error the brief warned about.
+- **B · THE FALSE CLAIM THE COMMIT EXISTS TO REMOVE WAS STILL LIVE IN KEY FOCUS.** `:12` still read
+  *"For an adult **nothing published settles it**"* — ⚠️ **in the first layer a listener hears, four
+  hundred lines above the body that now contradicts it.** **Body ✓ / summary ✗ is the shape of every
+  round-10 critical**, and the repair had produced it.
+- **C · The women's limb gave a permission its own competition regulation narrows.** After the repair
+  the document said *"non-checking"* at `:28` and *"101.1 permits bodychecking"* at `:191`. ⚠️ **The
+  agent deliberately did NOT assert which is tighter** — *"non-checking"* is also the ordinary label for
+  the hockey 101.1 governs, and `sources/README.md`'s *"TIGHTER than IIHF 101.1"* is an editorial
+  reading it could not settle from primary text. **It wrote around the ambiguity rather than resolving
+  it.**
+- **D · The two IHUK tables give OPPOSITE answers at U16** — Junior *"Full ice, checking"*, WNIHL
+  *"Full ice, non-checking"* — and the document carried both without saying so. **A sixteen-year-old had
+  no way to tell which was hers.**
+
+⚠️ **The new facts line carries a CAVEAT AND AN ACTION ONLY, no permission** — because a facts line is
+voiced alone and *"the NIHL is checking"* heard alone is the hazard.
+
+### 🔴 NEW, OPEN — a sixteen-year-old can be legally entered in an adult full-checking competition
+
+`ihuk_junior_roc_layout.txt:648` — *"NIHL: players aged 16+ may play up to any NIHL division. (They can
+train up from 15 years old)"*; `:645` — *"WNIHL: girls aged 14+ may play up to any WNIHL division."*
+
+⚠️ **So the age tables are not the whole answer: the play-up route crosses them.** The repaired document
+covers it with *"find out which you are in"*, **but if `uk_rules.md` states a British checking age line
+it should carry the play-up route**, and nobody has checked whether it does.
+
+### 📌 THE EIHL COVERAGE FIGURE WAS WRONG IN BOTH DIRECTIONS
+
+`uk_rules.md` said *"only a **minority** of its rules are reported here"*. ⚠️ **It is exactly half** —
+**eleven of the Casebook's twenty-two rule numbers.** The previous figure, *"nine"*, was **stale**,
+overtaken by this round's own additions.
+
+✅ **Replaced with a SELF-CHECKING construction** the reader can count off the same sentence, which also
+agrees with `rules_primer.md`'s independently-derived *"twenty-two rule numbers"*. ⚠️ **A number copied
+out of its owner goes stale silently; one the sentence lets you verify does not.**
+
+⚠️ **And an edition label was missing on a quotation that exists in only ONE edition** — *"the standard
+penalty for a Player engaged in a fight"* is **2026/27 only**, quoted one paragraph below a
+characterisation of the **2025/26** 46.1, under an Overview saying every Rule 46 number in the document
+is the 2025/26 book's.
+
+
+### ✅ BOTH EMPHASIS DEFECTS FIXED — and they had ONE cause, which is a named, greppable construct
+
+**Parse clean in both files**, verified with the site's own `mdast-util-from-markdown`:
+`faceoffs.md:1244` outer emphasis now spans 0–8261 (was 0–**1889**); `playing_without_the_puck.md:966`
+spans 0–24040 (was 0–**8779**). **Literal asterisks 2 → 0 in each. Block counts unchanged.** Audio
+re-rendered and **byte-identical**.
+
+⚠️ **THE AGENT REFUTED HALF MY RESTATEMENT, AND THE CORRECTION IS THE VALUABLE PART.** I described the
+second defect as *"`*English Ice Hockey Association***` plus a stray `.*`"*. **Those were downstream
+symptoms.** The parser put the break **thousands of characters earlier**, and the cause was the **same
+construct as the first file**:
+
+> **An `*` preceded by `(` is RIGHT-FLANKING, so CommonMark lets it CLOSE the trailer's outer italic
+> rather than open a nested one.** The nested `*"…"*` spans that work in the same paragraph are each
+> preceded by a **space**, which makes them left-flanking only. ⚠️ **`(` is the whole difference.**
+
+**Scale: 21,632 characters rendering outside their trailer across the two**, against ~1,190 in the
+`how_to_watch_hockey.md` case.
+
+### ⚠️ `(*"` IS A RISK MARKER, NOT A DEFECT LIST — 112 occurrences, and I am NOT calling them defects
+
+Censused after the agent named the construct: **112 occurrences across 54 Sources-trailer paragraphs**
+(densest `special_teams.md:1201` ×8, `language_and_glossary.md:467` ×6,
+`body_contact_and_battles.md:1848` ×6).
+
+⚠️⚠️ **DO NOT TREAT THIS AS A WORKLIST OF 112 DEFECTS.** Whether `(*"` closes the outer italic depends
+on **what is open at that point**, which only a parse answers. **Trailers here carry up to eight
+occurrences and parse clean.** The two confirmed sites each happened to have exactly one, and it was the
+break.
+
+⚠️ **This is the fifth time this round my first census over-reported**, and I am stopping at the marker
+rather than dispatching a sweep. **A sweep on 112 sites would edit ~110 correct ones.**
+
+- [ ] The only sound method is a parse with `mdast-util-from-markdown` over the 54 trailers, asking
+      whether the outer emphasis spans the paragraph. ⚠️ **I do not have a correct implementation — I
+      wrote two and both were wrong.** An agent with `site/node_modules` does.
+
+### 🔴🔴 A CHECKER SILENTLY LOSES COVERAGE WHEN A `*` MOVES — nobody is watching that number
+
+⚠️ **The agent deliberately broke a constraint I gave it, and was right to.** My brief required the fix
+be byte-identical after stripping `*`. It applied that, re-ran the gates, and caught `check_quote_drift`
+dropping `clean` **297 → 296**. It refused to accept a one-count drift and diffed the tool's fragment
+list to find the casualty:
+
+> *"A match penalty shall be assessed to any player or team official who recklessly endangers or
+> attempts to injure any opposing player or team official"* — **USA Hockey 602(a), a match-penalty
+> quotation.**
+
+**The cause is `scripts/check_quote_drift.py:224`:** the body-prose branch requires a **literal `*`
+immediately before the opening quote mark**. `*("` breaks that adjacency, so the quotation **silently
+fell out of drift coverage entirely** — ⚠️ **it did not become flagged, it became INVISIBLE.**
+
+**So the byte-identical fix would have traded a site defect for the permanent loss of drift protection
+on a safety-relevant rulebook quotation.** It added **one space** after the `(` — fixing the render,
+preserving `*"` adjacency, costing one invisible character in an unspoken trailer — **and told me,
+rather than letting a 297 look like a 296 nobody asked about.**
+
+⚠️⚠️ **THE GENERALISABLE DEFECT: any past edit that moved a `*` away from a quote mark dropped a
+fragment the same way. The tool reports a lower `clean` and NO error. Nobody is watching that number.**
+
+- [ ] Is `clean` lower than it should be corpus-wide? Nothing currently tracks it between runs.
+
+
+### ⚠️⚠️ I SHIPPED A BROKEN CHECKER, THEN A WORSE ONE, AND HAVE REMOVED IT — the full episode
+
+**`scripts/check_emphasis.py` is deleted and de-registered from `CLAUDE.md`.** The corpus is back to
+its documented tool set, verified against `ls scripts/*.py`.
+
+**What happened, in order:**
+1. I wrote it to test `str.count("**") % 2` per paragraph. It reported **5** hits and I recorded that
+   as a clean worklist against the per-line version's 157.
+2. An agent tested **every** hit against the site's real parser (`mdast-util-from-markdown`). ⚠️ **FOUR
+   OF THE FIVE WERE FALSE POSITIVES.** A trailer ending `…quote"**` is an **inner italic close
+   immediately followed by the trailer's own italic close**. `count("**")` reads those two adjacent
+   single asterisks as ONE strong marker; the parser reads two closing delimiters and is right.
+   ⚠️⚠️ **"Fixing" one by writing `"***` would inject a strong marker with NO OPENER — actively worse
+   than the non-defect.**
+3. ⚠️ **A live agent had been briefed to run it.** I messaged it mid-task to stop and to revert
+   anything it had changed on the tool's word.
+4. I rewrote it with the agent's own discriminator — *does the outer italic span the whole paragraph* —
+   implemented as a hand-rolled delimiter walk. ⚠️ **It reported 238 hits. Worse than the original.**
+   Nested italics inside a trailer close the outer one in my model.
+5. **Removed.**
+
+⚠️ **THE DECISION, AND THE REASON: I guessed twice and was wrong twice. A third guess living in
+`scripts/` is a liability, not an asset** — a tool that lies is worse than a tool nobody wrote, because
+its output gets carried into briefs as fact. **That is exactly what happened here.**
+
+✅ **THE ONE REAL DEFECT WAS FOUND AND IS FIXED** — `how_to_watch_hockey.md:695` closed an IIHF
+quotation with `…Goal Awarded"**` where one `*` was meant. The stray asterisk closed the **trailer's**
+italic early, so the last ~1,190 characters — the entire IIHF 2026/27 entry — **rendered outside the
+trailer's emphasis on the site.** Repaired with two single-asterisk changes and verified
+**byte-identical after stripping `*`**: not one word changed.
+
+⚠️⚠️ **AND IT HAD FALSE NEGATIVES TOO — which is the half that settles the decision.** A second agent
+distrusted a `0` and parsed its own files anyway: **the tool scored `0` on two files that each contain a
+real, parser-confirmed defect of exactly the class it was built for.**
+
+- `faceoffs.md:1244` — the **opening** `*` of `*"they has"*` is consumed as the trailer's own italic
+  **close**, so the trailing `*` survives as a literal and the rest of the entry renders outside the
+  italic. ⚠️ **Same shape as the one real defect the tool did catch.**
+- `playing_without_the_puck.md:966` — `*English Ice Hockey Association***` plus a stray terminating
+  `.*`, inside a **24,039-character** trailer.
+
+**Both pre-existing** — proved by parsing the HEAD blob and getting byte-identical hit strings and
+identical block counts. **Both site-only: zero literal asterisks in the spoken layer, and neither
+passage is voiced.**
+
+⚠️ **A tool that OVER-reports wastes a reviewer. A tool that UNDER-reports on the exact class it was
+built for is how one ships.** Mine did both, in the same five files. **That is why it is deleted rather
+than fixed.**
+
+⚠️ **And the false-negative rate was never measured corpus-wide** — the first agent tested only the
+paragraphs the tool **flagged**. On a sample of five files it missed two. **So "5 hits" was never the
+population; it was the tool's opinion of the population.**
+
+- [ ] If this is ever rebuilt, the **only** implementation that worked was **parsing with the site's own
+      `mdast-util-from-markdown`** and treating an asterisk surviving into a `text` node as the signal.
+      ⚠️ **Do not hand-roll a delimiter walk. Do not test parity.** Both have now been tried and both
+      were wrong, **in opposite directions**.
+- [ ] Repair of the two false-negative sites dispatched 22 Sep, with parse-before-and-after and a
+      byte-identical-after-stripping-`*` check required.
+
+### 🔴🔴 A FALSE NEGATIVE ABOUT BRITISH BODY-CHECKING — and the document contradicted itself
+
+`playing_without_the_puck.md:28` said *"For an adult **no British document publishes an answer at all**
+— ask your league."* ⚠️ **The IHUK NIHL Rules of Competition publish it:** *"NIHL · 3 x 20 minute
+periods · **Full ice, checking**, stop clock"*, and WNIHL *"Full ice, **non-checking**"*.
+
+And `:191` said *"In Britain **neither book states an age at all**"* — literally true of the two books
+named, **materially false**, because the Junior RoC publishes the whole table (U10/U12 non-checking,
+U14 upward checking) and `ihuk_u10_roc.txt:123` states *"Bodychecking is NOT allowed in U10 matches."*
+
+⚠️⚠️ **`:28` AND `:191` WERE FLATLY INCONSISTENT INSIDE ONE DOCUMENT**, four hundred lines apart.
+
+⚠️ **The direction is the unusual one — it made the corpus look LESS supported than it is**, and the
+standing instruction was conservative (*"ask"*), so nobody could have been hurt. **That is precisely why
+no reviewer stopped on it.** Repaired by naming the published answer and **keeping the "ask" scoped** to
+competitions outside those regulations. ⚠️⚠️ **THIS LINE PREVIOUSLY READ "Handed to `safety-reviewer`" AND THAT WAS FALSE — NO SUCH PASS HAD RUN.** The phrase was the reporting agent's intention, carried into the plan by the coordinator as though it were a completed action. **The commit gate caught the contradiction** between this line and the coordinator's own brief, which said plainly that no pass covered it. ⚠️ **A plan that records an intention as an action is worse than a plan that records nothing**, because the next reader treats it as coverage. **The pass was dispatched only after the gate blocked on it.**
+
+### 🔴 NEW — `faceoffs.md`'s "READ THIS BEFORE YOU ACT" BLOCKQUOTE IS NOT SPOKEN
+
+Measured in the render: the sentence *"Read this before you act on any IIHF flag in this document"* is
+**absent from the SSML**. ⚠️ **So the entire front-matter block — including the In-House answer and the
+newly added Elite League paragraph — reaches a site reader only.**
+
+✅ **A listener is covered, but only incidentally**, because the body item and the facts line carry the
+same material and both were verified present in the SSML. ⚠️ **`check_pointers.py` cannot see this**
+because nothing points *at* the block. Structural and pre-existing.
+
+### 📌 A CROSS-DOCUMENT COUNT COLLISION, LIVE
+
+`center.md:689` was widened today to *"**four books** put that red line inside it"*. ⚠️ **The
+`rink_map.md` half of this row was overtaken by the commit that carries it** — `:18` now names CARHA as a
+fifth book and the second site has moved from `:186` to `:188`, so the two line numbers this row was
+written with are gone. **`shooting.md:14`/`:293` and `offensive_zone_play.md:613` still carry the
+un-widened form, and they are what is left of this row.** ⚠️ **Both are true under their own scope and they contradict each other read aloud** —
+"four" means *the four-book set* in one document and *the four books that say yes* in the other.
+
+⚠️ **And the brief I gave for that work contained a wrong citation:** I said Hockey Canada's silent
+crease wording is **1.6(a)**. It is **1.5(c)** — 1.6(a) is the Centre Ice Spot and Circle. **The corpus
+already had it right.** The agent checked and refused: *"had I taken the brief's number I would have
+'corrected' a correct citation."*
+
+
+### ✅ THE DOUBLED-NUMERAL CLASS IS CLOSED — 55 spoken sites repaired, corpus-wide zero verified
+
+Two waves: 28 sites across twelve documents, then 27 across the remaining four. **I rendered all 39
+documents myself afterwards: ZERO genuine doubled numerals.** The only residual render hits are
+**journal `volume(issue)` citations** — `J Strength Cond Res 21(1)` speaking as *"twenty-one(one)"* —
+correctly identified as a **different species** and left alone.
+
+⚠️ **MY CENSUS PATTERN WAS NECESSARY BUT NOT SUFFICIENT, and an agent caught it.** `uk_rules.md:265`
+quoted IIHF 46.2 as *"at least two (2) Players with at least one Player (1) to be penalized"* — **the
+second numeral is DISPLACED one word from its spelled form**, so it renders *"at least one Player one"*
+and **my adjacent-only pattern could not see it**. Repaired. **I then censused the displaced shape
+source-wide: now ZERO.**
+
+### ⚠️⚠️ TWO NEW FACTS ABOUT `check_quote_drift` — both found by splitting quotations, both worth keeping
+
+**1 · SHORTENING A FRAGMENT CAN RE-POINT IT AT A DIFFERENT OCCURRENCE OF THE SAME PHRASE.**
+A split left a 37-char tail quoting NHL 70.10 whose period was **correct**; the tool's *closest match
+across all occurrences* then landed on a **different 70.10 paragraph** continuing *"of his Club."* and
+reported a **phantom `ADDED '.'` at two sites.** ⚠️ **A drift flag that appears after a split may be an
+artefact of the split, not a defect** — check which occurrence the tool matched before repairing.
+
+**2 · A SPLIT UNMASKS DRIFT THE LONGER FRAGMENT WAS HIDING, AND THIS ONE WAS REAL.**
+`goaltender.md:400` quoted IIHF 67.3(I) ending *"'checked / pressured' by an opponent."* — **the source
+continues with a semicolon.** A genuine Shape-3 drift. ⚠️ **It had scored as only ONE flag before,
+because the tool reports the FIRST difference per fragment and the fragment opened with an accepted
+Shape-1 capital-lowering.** Splitting made the second defect visible.
+
+⚠️⚠️ **So `flagged` returning to baseline does NOT mean a file is clean — one accepted Shape-1 hit can
+be masking a Shape-3 behind it in the same fragment.** That is a property of the tool nobody had
+recorded.
+
+### 📌 A DIFFERENT SPECIES, REPORTED AND DELIBERATELY NOT FIXED — ~38 bare parenthetical numerals
+
+Sweeping the render for **any** parenthesised numeral (not just doubled) found ~38 sites in two shapes:
+
+1. **Rulebook penalty shorthand** — the EIHL Casebook's *"an instigating (2) minor penalty, a (5) major
+   penalty… a (20) game misconduct"* speaks as *"an instigating two minor penalty, a five major
+   penalty"*. ⚠️ **Roughly intelligible, but a listener has no way to know the numbers are DURATIONS IN
+   MINUTES.**
+2. **Enumerator markers** — USA Hockey's delay-of-game triggers voiced as *"(one) The puck is behind the
+   goal line… (two) They fail to play the puck"*. **Probably benign.**
+
+⚠️ **The agent deliberately did not invent a second convention mid-round** — the failure its brief
+named. **Shape 1 may be a real defect; shape 2 probably is not.**
+
+- [ ] Owner's call on shape 1.
+
+### ⚠️ A SLASH COUNT DISCREPANCY THAT IS NOT A DISAGREEMENT
+
+An agent reported **40** slash-bearing quotations in `body_contact_and_battles.md` against my **21**.
+**Both are right on their own basis and neither is wrong:** I counted **spoken** `" or "` instances in
+the rendered SSML; it counted **source** `*"…"*` quotations containing a `/`. ⚠️ **A source quotation can
+contain a slash that the renderer handles correctly** — `CAN/BNQ` and season forms are special-cased —
+**so the source count is always higher.** Recorded so nobody reconciles them into a defect.
+
+### ⚠️ A FIFTH LOOSE-REGEX SELF-CORRECTION, IN THE SAME SITTING AS RECORDING THE PATTERN
+
+Checking for the displaced shape, my render-side regex returned **1,982 hits** — essentially **all
+correct**: *"one point one"* is Rule 1.1, *"two one two"* is the forecheck, *"one three one"* the neutral-zone
+structure. ⚠️ **I recorded the loose-regex pattern as a coordinator defect two entries above, and then
+did it again immediately.** The source-side census was the right instrument and returned **0**.
+**The habit is not "write a better regex" — it is LOOK AT THE HITS BEFORE BELIEVING A COUNT.**
+
+
+### 🔴 THE "ASK WHICH IIHF EDITION" CLASS — CENSUSED, 15 SITES STILL OPEN
+
+**32 British-context sites** tell a reader the IIHF edition matters. **17 already name the Elite League
+answer. 15 do not.** Six were repaired in `rules_primer.md` this round.
+
+⚠️ **The answer is published and unambiguous for one population:** the EIHL Casebook's Preamble adopts
+*"the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook"* as the fallback, and the Casebook
+writes **no Rule 60, no Rule 83, no high-sticking and no offside** (verified on validated
+footer-and-form-feed-stripped text, with a control phrase returning 1 first). **So those IIHF rules
+govern an EIHL game through the fallback.**
+
+⚠️⚠️ **AND ONE OF THE REPAIRED SITES DECIDED A PENALTY TIER** — `rules_primer.md:440`, high-sticking.
+**The waist floor NARROWS what counts as a high stick**: a defence for the striker and **less protection
+for a crouching opponent**. It moves in the dangerous direction, so the counterweight was attached
+**directly** rather than left four sentences downstream.
+
+**Still open, in files free at the time of writing:** `faceoffs.md` ×4, `zone_entries.md` ×2,
+`getting_started.md` ×2, `special_teams.md`, `playing_without_the_puck.md`, `rules_primer.md:1163`.
+**In held files:** `body_contact_and_battles.md` ×3 (including `:1515`, the reference-point claim) and
+`uk_rules.md:48`.
+
+⚠️ **Both halves must survive every repair.** The EIHL answer settles the **Elite League only**.
+Everywhere else in Britain it genuinely is **not** settled, because the In-House Rules contradict
+themselves — cover *"the Current IIHF Rule Book"* against Introduction *"Version 1.1, published July
+2025"*, which is the **2025/26** book.
+
+### ⚠️⚠️ COORDINATOR METHOD DEFECT — MY FIRST CENSUS REGEX IS ALWAYS TOO LOOSE, FOUR TIMES NOW
+
+A pattern in my own work, recorded because it has now cost four separate investigations:
+
+| census | first pass | after tightening | what the looseness was |
+|---|---:|---:|---|
+| unpaired `**` | **157** | **5** | counted per LINE; hard-wrapped bold is normal |
+| slash in quotations | **147** | **~2** | `and/or` and compound alternatives render fine |
+| "ask which edition" | **54** | **15** | matched "the books differ" prose, not edition claims |
+| unavailability vs sibling | **269** | **0** | Sources trailers are 10–27k-char single lines |
+
+⚠️ **Every one over-reported by 10–50×, and in three of the four the tight answer was a genuinely
+useful worklist while the loose answer would have been a sweep.** ⚠️ **A brief carrying the loose
+figure would have sent an agent to "fix" 150 correct lines.**
+
+**The habit that works: census, LOOK AT THE HITS, tighten, and only then dispatch.** Never brief off the
+first number.
+
+### ⚠️ MY BRIEF WAS WRONG AGAIN, AND IN THE CORPUS'S FAVOUR
+
+I listed three IIHF change-log rows as *"unexamined"* against `rules_primer.md`. **All three were
+already correct** — and 60.1 **in more depth than my brief had**, carrying both editions verbatim, the
+opposite-direction point, the 60.3 carry-limb deletion, and the derived reference-point claim sourced to
+Situation 60.13. **6.1 has no bearing on any claim in the document at all.**
+
+⚠️ **My two line numbers were also wrong**: `:1193` is a Sources-trailer edition note that was already
+exhaustive. **The real defect was at six different sites.** The agent found them by reading, not by
+trusting the brief.
+
+
+### ✅ THE PREDICTED TWO-AGENT CONTRADICTION WAS NOT THERE — and the negative is worth as much as a find
+
+Two documents grew a §*"Leaving the bench or the box during an altercation"* the same day, written by
+agents blind to each other. **Diffed side by side and voiced alone: they agree on every tension** — both
+price IIHF **70.3** (bench → game misconduct) and the box tariff as separate doors; both carry that the
+EIHL suspension is scoped to *"to join an altercation"* while IIHF 70.1 is wider, so **the penalty can
+land where the suspension does not**; both state the direction as lighter in-game / heavier in
+suspension; and **neither** asserts the unsourced *"of the game"* reading of the Casebook's 2nd-major
+note. **The wrong *"minor plus a game misconduct either way"* is gone from both.**
+
+⚠️⚠️ **THE METHODOLOGICAL LINE OF THE ROUND, and it should govern every future diff:**
+***"The agreement between two documents is not evidence; it is the thing most likely to be wrong
+together."*** The agent broke that symmetry on the rule numbers, the EIHL heading and the In-House
+negative — **and not on the Casebook tariffs, the instigator compositions, the DOPS ladder, or the USA
+Hockey and Hockey Canada halves**, which it read for internal consistency only, against no book.
+
+### ⚠️⚠️ COORDINATOR VERIFICATION — I CHECKED THREE REPORTED MAJORS AND TWO DID NOT HOLD
+
+**Recording this because the round's own lesson is that a report is evidence, not a verdict.**
+
+**MAJ-1, citation of IIHF 70.4 — REFUTED. Acting on it would have made the corpus WORSE.**
+The report said both files cite **70.4** for a tariff the IIHF prints at **70.6**, and proposed
+recitation. ⚠️ **The IIHF prints that sentence TWICE**: `iihf_rules.txt:5694` under
+**`70.4. LEAVING THE PENALTY BOX`** (heading at `:5671`) and `:5735` under
+**`70.6. GAME MISCONDUCT PENALTY`** (heading at `:5731`). **The corpus's 70.4 citation is correct**, and
+`body_contact`'s *"Both write the same paragraph twice"* is **true of the IIHF as well as the NHL**.
+**The agent read 70.4, found the other clauses, and stopped before the duplicate.** ⚠️ **Had I dispatched
+the fix, a correct citation would have been replaced by a narrower one.**
+
+**MAJ-4, "no Key Takeaway reaches §12" — REFUTED.** The Key Takeaways proper (isolated from the Sources
+trailer, which contaminates a naive `awk` to end-of-file) run **28,609 characters across ten items**, and
+carry *fight* ×4, *altercation* ×7, *helmet* ×7, *head-butt* ×3, *eject* ×2, *misconduct* ×29,
+*EIHL* ×3. ⚠️ **The agent listed ten takeaway TOPICS and concluded none covered §12 — but each takeaway
+averages ~2,800 characters and carries the material inside it.**
+
+**MAJ-3, IIHF 20.4 missing — CONFIRMED.** `grep -c '20\.4'`: **0** in `body_contact_and_battles.md`,
+**13** in `uk_rules.md`. **The third counterweight to the EIHL fighting softening is genuinely absent
+from the sibling**, where the other two are present. **This one is real and is a live safety gap.**
+
+- [ ] Propagate IIHF 20.4's two-majors trigger into `body_contact_and_battles.md` §The EIHL's fighting rules.
+
+### ✅ CORPUS CENSUS — sections whose topic never reaches their own Key Takeaways: THREE
+
+Prompted by MAJ-4. ⚠️ **A word-overlap measure was useless** — 373 sections, floor 32%, inflated by
+common English. **A heading-term test discriminates:** only **three** sections corpus-wide have no
+heading term appearing anywhere in their document's Key Takeaways —
+`team_play_and_culture.md:385` *Handling Conflict*, `offensive_zone_play.md:385` *5. Low-to-High*,
+`passing_and_receiving.md:629` *Deception*.
+
+⚠️ **A heading term is a proxy, not the thing** — a section can be well covered under different words.
+**Three candidates to read, not three defects.**
+
+### 🔴 NEW — THE SLASH DEFECT WAS LIVE IN TWO FILES AND VERIFIED IN THE RENDER
+
+Both files quoted the Casebook heading *"Leaving the Player **/** Penalty Bench (Also see Rule 70)"*.
+`md_to_speech.py:355` rewrites `/` → `" or "` **globally**, so a listener heard
+*"Leaving the Player **or** Penalty Bench"* — **a quotation the Casebook does not contain, inside quote
+marks, in the layer read aloud.**
+
+⚠️ **Splitting the quote does NOT help here** — unlike the doubled numeral, **the substitution is not
+quote-scoped.** Repaired in both by replacing the quotation with a faithful description and keeping the
+exact string only in the **unvoiced** Sources trailer. `check_quote_drift`'s `notfound` fell by one in
+each file.
+
+### ⚠️ A `check_quote_drift` FALSE POSITIVE, VERIFIED AS FALSE
+
+`body_contact_and_battles.md:1653` — *"No player may leave the players' or penalty bench at any time
+during an altercation."* — flagged as an ADDED period against `nhl_rules.txt`, where the sentence
+continues. ⚠️ **The corpus attributes it to the USA Hockey Casebook, not the NHL, and
+`usah_casebook.txt` prints it with a full stop exactly there.** **Do not "fix" it.** This is the
+attribution blindness the tool's own docstring records, firing in reverse.
+
+
+### ⚠️⚠️ TWO AGENTS CONTRADICTED EACH OTHER ON THE NUMERAL FIX — SETTLED BY MEASUREMENT
+
+One agent repaired four sites and measured **doubled numerals: 0** afterwards. A second declined to
+repair its four, reasoning that *"splitting the quotation leaves the numeral in the document, where the
+renderer still speaks it"*, and that any working fix **removes a character from inside a quotation** and
+would trip `check_quote_drift`. **It asked for a coordinator decision rather than inventing one — the
+right call, and the reason this was caught.**
+
+⚠️ **I rendered `faceoffs.md` myself: 138 chunks, ZERO doubled numerals. The convention works.** The
+second agent had modelled a **two-step** version. The real one is **three steps**, from
+`faceoffs.md:117` verbatim:
+
+> NHL Rule 76.2 opens `*"All face-offs must be conducted on one of the nine"*` face-off spots `*"loc…`
+
+1. **CLOSE** the quotation immediately **before** the parenthetical numeral.
+2. **DROP** the numeral. ⚠️ **It is no longer inside a quotation, because step 1 closed the quote** — so
+   this is an **elision at a quote boundary**, not a character removed from inside a quotation.
+3. **RESUME** after it, with short unquoted prose bridging the gap.
+
+✅ **And it does not trip the checker, measured:** `faceoffs.md` reports `clean=506 flagged=9
+notfound=16` — **unchanged** before and after, all 9 being the disclosed `[a]`-bracket convention.
+
+⚠️ **The real cost stands and must be in every brief:** `check_quote_drift`'s `MINLEN=25` means a
+shortened fragment **stops being machine-compared**. Both shortened fragments in `faceoffs.md` were
+**hand-verified against primary text with line numbers.**
+
+⚠️ **The live agent applying this was messaged mid-work with the corrected three-step form**, before it
+could propagate the two-step reading across twelve files.
+
+### 🔴 NEW — "NOT SETTLED BY ANYTHING PUBLISHED" WAS FALSE FOR THE ELITE LEAGUE
+
+`shooting.md` said of the IIHF high-sticking edition question: *"which of the two a British reader is
+under **is not settled by anything published**."* ⚠️ **For an EIHL reader it IS settled, and the
+Casebook says so in terms** — its Preamble adopts *"the official 2026 - 2027 IIHF Rulebook"*, and the
+Casebook **writes no Rule 60 and no high-sticking passage at all** (measured: `rule60`, `highstick`,
+`60.1`, `windup`, `followthrough` all score 0 on the validated footer-stripped text). **So the fallback
+fires and an EIHL player is under the contact-and-waist definition.**
+
+⚠️⚠️ **THE CORPUS ALREADY KNEW THIS IN ONE DOCUMENT AND NOT IN THREE.** `goaltender.md:1297` carries
+the EIHL→2026/27 finding **independently and correctly**. Absent from `shooting.md` (now fixed),
+`rules_primer.md:440` and `:1193`, and `body_contact_and_battles.md:1515`.
+
+**This is the rotten-disclosure class exactly: a negative whose question had been ANSWERED ELSEWHERE IN
+THIS REPOSITORY and nobody propagated it.**
+
+- [ ] Propagate the EIHL edition answer to `rules_primer.md` and `body_contact_and_battles.md`.
+- [ ] `shooting.md` points at `uk_rules.md` as the place that "sets that out" — **confirm it now does, or the pointer over-promises.**
+
+### ✅ THE HIGH-STICKING EDITION CHANGE IS REAL AND THE CORPUS ALREADY HANDLED IT WELL
+
+IIHF **2025/26**: *"A 'high stick' is one which is **carried above** the height of the opponent's
+shoulders."* **2026/27**: *"one which **contacts** an opponent above the shoulders, **provided their
+shoulders are at waist level or higher**"* — **identical to the NHL's sentence.** And 60.3's
+double-minor limb keyed to *"carries or holds any part of their stick above the shoulders"* was
+**deleted**, replaced by *"(above the height of the opponent's waist)"*.
+
+✅ **The corpus was NOT stranded:** `shooting.md:167` already set out the edition split in full, and
+every identity claim checked out — **including the three easiest to get wrong**: that 60.2 is
+word-for-word in all three books, that 60.4 is identical between the IIHF editions, and that the
+2026/27 60.3 parenthetical is the NHL's own wording.
+
+### 📌 A GREP THAT RETURNS ZERO BECAUSE THE EXTRACTION BROKE THE PHRASE
+
+`"each team shall confine its activity to its own end of the rink"` returns **ZERO** in
+`nhl_rules.txt` — the extraction breaks it as `confine its / activity`. **Flattening finds it.**
+
+⚠️ **A verifier who trusted that grep would have filed a false attribution finding** against a
+quotation that is word-identical in both books. **Same species as the EIHL form-feed splice and the
+`kick / shot,` line break.**
+
+
+### 🔴🔴 NEW DEFECT CLASS, CORPUS-WIDE AND MEASURED — THE RENDERER DOUBLES A SPELLED NUMERAL
+
+Rulebooks write `nine (9)`. ⚠️ **The renderer expands the numeral, so a listener hears
+"one of the nine NINE face-off spots"** — and *"nine nine"* is mishearable as **ninety-nine**. **A
+numeric fact corrupted in the layer that reaches a listener.**
+
+**Found in `faceoffs.md` (4 sites) by an agent reading its own SSML. It could not census the corpus and
+handed that over. Censused and then VERIFIED:**
+
+- **Source-side: 72 sites across 16 files, 68 of them inside a quoted span.** Densest:
+  `body_contact_and_battles.md` **13**, `team_play_and_culture.md` **11**, `shooting.md` **9**,
+  `goaltender.md` **8**, `special_teams.md` **8**, `rules_primer.md` **5**.
+- ⚠️ **VERIFIED IN A REAL RENDER, not inferred:** `team_play_and_culture.md` — a file **no agent touched
+  today** — renders *"five (five)"* ×2, *"three (three)"*, *"twenty (twenty)"*. **The source-side regex
+  is a sound predictor.**
+
+⚠️⚠️ **EVERY MECHANICAL GATE PASSES ON ALL OF IT** — `check_links`, `check_facts`, `check_absolutes`,
+`check_tables`, `check_facts_antecedents` **and** `check_quote_drift`. The Markdown is valid and the
+quotation is verbatim; **the corruption happens downstream of every checker.**
+
+**The repair convention exists and is proven:** close the quote before the parenthetical numeral and
+resume after — used in `body_contact_and_battles.md:1657` and across `faceoffs.md`. Post-repair render
+there measured **doubled numerals: 0**.
+
+⚠️ **THE TRADEOFF, MEASURED, AND IT MUST BE STATED IN ANY BRIEF:** splitting shortens fragments below
+`check_quote_drift`'s `MINLEN=25`, so short pieces **stop being machine-compared to source**. The
+faceoffs agent verified both shortened fragments **by hand** against the primary text. **A repair wave
+that does not do that trades a spoken defect for an unverified quotation.**
+
+- [ ] Repair the remaining sites, reading each — **this is NOT a blind sweep**; a split must not break
+      the quotation's sense, and each shortened fragment needs a hand check.
+- [ ] Add a checker. ⚠️ **It must run over the RENDERED SSML, not the Markdown** — the doubling does not
+      exist in the source. A source-side regex is a usable predictor but it is not the defect.
+
+### 🔴 NEW — A QUOTATION CREDITED TO THE NHL THAT THE NHL DOES NOT PRINT
+
+`faceoffs.md:459` said IIHF 76.7 *"carries the escalation **in the NHL's own terms**"* and then quoted
+*"When **two (2)** 'face-off' violations…"*. **That string is the IIHF's.** The NHL prints *"When **a
+least two** face-off violations…"* (`nhl_rules.txt:8151-8153`) — ⚠️ **including the NHL's own slip,
+"a least" for "at least"** — with `face-off` unquoted.
+
+**So *"in the NHL's own terms"* was FALSE.** Repaired by quoting NHL 76.7's actual sentence alongside,
+with the slip flagged as the book's. ⚠️ **The substantive claim — two violations by one team on one draw
+is a bench minor in all three books — was correct and is unchanged.**
+
+✅ **And the Rule 76 edition check came back clean:** the numbering is **identical** across NHL, IIHF
+v1.1 and IIHF 2026/27 (76.4 CENTERS, 76.6 OTHER PLAYERS, 76.7 VIOLATIONS); **no 76.x citation in the
+document is mis-cited**; and the edition split is already disclosed at **six** layers. ⚠️ **v1.1's
+Rule 76 contains the word "eject" ZERO times** — the corpus's trap note about that was verified.
+
+### 🔴 NEW, OPEN — A BRITISH U10 READER IS OUTSIDE `faceoffs.md` ENTIRELY
+
+`ihuk_u10_roc_layout.txt:165-191` publishes a **different faceoff procedure altogether**: a Level 2
+coach acts as referee, restarts are *"at the centre of the playing surface"*, the referee must *"not
+wait for teams to be set-up in a face-off formation"* and calls *"the nearest player from each team to
+face-off"* — **and a dot may not even be painted.**
+
+⚠️ **Combined with that book's "no penalties recorded at U10", the bench-minor arithmetic does not reach
+them either.** `faceoffs.md` does not say so anywhere. ⚠️ **The agent declined to write it** because the
+claim needs the U10 ROC read in full and may belong to whichever document owns U10 scope — **which is
+the right call and the reason this is a row rather than an edit.**
+
+
+### 🔴🔴 CRITICAL — A REPAIR CREATED A PERMISSION, AND THE SAFETY PASS OVER IT CAUGHT THAT
+
+**Second time today that a `safety-reviewer` reading a `rules-verifier`'s repair has found a Critical.**
+
+`uk_rules.md` had been repaired to read *"in the Elite League a first plain willing fight can leave you
+in the game, and the second cannot."* ⚠️ **A softening stated as a flat two-step ladder with rung one
+presented as safe.** A reader hears *"my first fight won't end my game"* and takes it.
+
+**Three limbs the paragraph omitted, all in the same Casebook Rule 46 it was quoting:**
+1. **46.1's own words are *"at least a Major Penalty"*** — ⚠️ **the corpus quoted the words and then
+   glossed the floor as a ceiling.**
+2. ⚠️⚠️ **Casebook 46.2 Altercation, never quoted anywhere in the corpus:** *"A game misconduct penalty
+   shall be imposed on any player who is assessed a major penalty for fighting **after the original
+   altercation has started**."* **So a fighting major that is not the original altercation is an
+   automatic game misconduct ON THE FIRST MAJOR.** Stop-at-rung-one, in the permission direction.
+3. **IIHF 20.4's two-majors trigger is untouched by the Casebook.**
+
+⚠️ **And an unsourced scope claim rode along:** the Casebook says *"Note for their 2nd Major Penalty"*
+and **never says whether that second is counted in the game or across the season** — yet the Key
+Takeaway asserted *"of the game"*. Its own supplementary-discipline table counts majors *"during the
+EIHL regular season"*, **so the season reading is live.** Repaired by **naming the ambiguity** and
+telling the reader to read it the stricter way and ask the League. ⚠️ **It must stay unresolved.**
+
+### 🔴 NEW — TWO DOCUMENTS NOW OWN THE SAME SECTION, WRITTEN BLIND TO EACH OTHER
+
+`body_contact_and_battles.md` and `uk_rules.md` **both** carry a §*"Leaving the bench or the box during
+an altercation"*, both written today, **by two agents who could not see each other's work.**
+
+⚠️ **This is the exact defect this repository has recorded before** — individually-correct, flatly
+contradictory sentences, caught only by diffing whole files. The safety reviewer named it and could not
+fix it: *"I could only read one of them as a snapshot. Someone should diff them after all agents
+finish."* **Dispatched 22 Sep, all agents in both files finished first.**
+
+**The specific tensions:** whether both price IIHF **70.3** (bench → game misconduct, **no minor**) and
+**70.4** (box → minor + game misconduct) as *separate doors*; whether both carry that the EIHL suspension
+is scoped to *"to join an altercation"* while **IIHF 70.1 is wider**, so **the penalty can land where the
+suspension does not**; and whether the Critical above reached the sibling.
+
+### ⚠️ A PRE-EXISTING CLAIM MADE SELF-CONTRADICTORY BY A NEW REPAIR — and the mechanism is general
+
+`uk_rules.md` carried *"Leaving the bench or box during an altercation is still a minor plus a game
+misconduct either way"* — ⚠️ **wrong for the BENCH in both editions**: IIHF **70.3** gives a game
+misconduct with **no minor**; **70.4** gives minor + game misconduct for the **box**.
+
+⚠️⚠️ **Eight lines earlier, the new text now said *"either a 20 (Game Misconduct) penalty or 2 + 20"*.
+Two sentences in one section, each defensible alone, flatly contradictory read aloud.** The new text did
+not create the error — **it made an existing one visible and load-bearing.**
+
+**The general lesson: adding correct detail can break a neighbouring summary that was getting away with
+being loose.** Nothing mechanical reports that.
+
+### ⚠️ AN UNMATCHED `**` SHIPPED PAST EVERY CHECKER — again
+
+Introduced by a repair in `uk_rules.md`, caught by the next agent's whole-file scan. **Every checker
+passed it and the speech render swallowed it — but the site could surface a literal asterisk.**
+
+⚠️ **That is now TWO unbalanced-emphasis defects in one round**, the other spoken as a literal asterisk
+into a Key Takeaway. **Neither `check_links`, `check_facts`, `check_absolutes` nor `check_quote_drift`
+sees an unbalanced `**`.**
+
+**MEASURED 22 September, and the check IS viable — but only at the right unit:**
+
+- **Per LINE: 157 hits — useless.** Nearly all are legitimate **hard-wrapped bold spans** that open on
+  one line and close on the next. ⚠️ The obvious pattern is noise, which is the shape this project
+  keeps rediscovering.
+- **Per PARAGRAPH (blank-line delimited, fenced blocks skipped): SIX hits — a real worklist.**
+
+⚠️ **All six are Sources trailers**, in `puck_support_and_spacing.md`, `how_to_watch_hockey.md`,
+`goaltender.md`, `switching_positions.md`, `forechecking_systems.md` and
+`body_contact_and_battles.md`.
+
+**So the listener impact is NIL — trailers are not voiced — and the SITE impact is real**, because an
+unclosed bold span surfaces a literal asterisk or swallows the rest of the paragraph.
+
+⚠️ **And locating one needs tooling, not eyes:** `body_contact_and_battles.md`'s trailer is a **single
+53,628-character line carrying 407 `**` markers**. The imbalance is somewhere inside it and no human
+finds that by reading.
+
+✅ **WRITTEN — `scripts/check_emphasis.py`, 22 September**, at **paragraph** granularity, fenced blocks
+skipped, no `--strict` and it should not gain one. **Registered in `CLAUDE.md`'s scripts list in the
+same sitting**, and the list verified complete against `ls scripts/*.py` — ⚠️ **that registration is the
+step this project has forgotten twice, because adding a tool and naming it are separate edits to
+separate files and nothing connects them.**
+
+⚠️ **It was written as a NEW file deliberately, while an agent was live.** A new script cannot change
+the output of a tool a running agent is using; editing an existing one can, which is round 59's
+recorded failure.
+
+**Current count: FIVE** (one of the original six was fixed the same day). All five are **Sources
+trailers**, so **site-render risk only, not speech** — trailers are not voiced.
+`switching_positions.md:565` carries **181** markers; a sibling trailer carried **407** in a single
+53,628-character line where one unclosed span cascaded through ~80 later markers.
+
+- [ ] Fix the five. ⚠️ **Pure markup — not one word changes.** The technique that worked: **walk the
+      markers in order and find where the parity flips**; reading cannot do it at that scale.
+
+
+### 🔴🔴 NEW — THE RENDERER SILENTLY REWRITES A SLASH INSIDE A VERBATIM QUOTATION
+
+Found by an agent reading its own render. `md_to_speech.py` speaks the Casebook heading
+*"Leaving the Player **/** Penalty Bench"* as **"Leaving the Player OR Penalty Bench."**
+
+**Confirmed in the source:** `md_to_speech.py:1827-1828` documents the general rule — a slash reads as
+*"or"* — and `:1029`'s own comment warns that *"a slash as a comma turns an alternative into an
+enumeration."* **The behaviour is deliberate and usually right** (`and/or` → *"and or"*;
+`usahockey.com/playingrules` → *"com slash playingrules"*).
+
+⚠️ **The defect is narrow and real: inside a VERBATIM QUOTATION it changes the words a listener hears.**
+**Censused: 133 quoted spans in `content/` contain a slash.** Most are `and/or` and harmless. The ones
+that matter are quoted rule headings and clause names where *"or"* asserts an alternative the source
+did not write.
+
+⚠️ **NOT FIXED — this is `scripts/`, agents were live, and a shared tool is shared state.** ⚠️ **And the
+fix is NOT obviously "stop rewriting slashes"** — that would break the URL and standards-number handling
+the same rule exists for. **The likely answer is to leave the renderer alone and stop putting a slash
+inside a quoted span**, which is a content decision.
+
+✅ **DECIDED 22 September — NO RENDERER CHANGE AND NO SWEEP.** Investigated properly rather than
+acted on, and the alarm was largely unfounded.
+
+**Classified every slash inside a VOICED quotation corpus-wide:**
+- **41 are the `and/or` shape** → renders *"and or"*. Awkward, **meaning preserved**. Leave.
+- **106 are other shapes** — and reading them, **almost all are compound alternatives where *"or"* is
+  correct or actively better**: `neck/face/head`, `arms/legs`, `helmet/facemask`, `his/her`,
+  `numbness/tingling` (a CRT6 red flag, where *"or"* is the right reading).
+
+**The two shapes I expected to corrupt DO NOT, and I checked rather than assumed:**
+- ⚠️ **Season forms** (`2021/22`, `2014/15`) — **ZERO hits in the rendered speech.** Already handled.
+- ⚠️ **Standards numbers** (`CAN/BNQ`, `CAN/CSA`) — **already special-cased** at
+  `md_to_speech.py:452-460`, whose own comment records that `CAN/BNQ 9415-370` *"was narrating as 'CAN
+  or BNQ…'"* and was fixed. The apparent formula hits (`EIH or SIHA`, `NHL or IIHF`) are organisation
+  abbreviations where *"or"* is correct.
+
+⚠️ **So the renderer is right and must not be changed** — the rule also carries URL and
+standards-number handling that a blanket change would break.
+
+**The residue is a CONTENT judgement at a handful of sites: a quoted compound HEADING where *"or"*
+asserts an alternative the source did not write.** The one found — *"Leaving the Player / Penalty
+Bench"* → *"Leaving the Player **or** Penalty Bench"* — was repaired **by describing the heading rather
+than quoting it**, keeping the exact string in the unvoiced trailer. ⚠️ **Splitting cannot fix this
+class, because the substitution is not quote-scoped.**
+
+- [ ] Standing guidance, not a wave: **do not put a slash inside a quoted compound heading.** Describe
+      it, and keep the verbatim string in the trailer.
+
+### 🔴 NEW — A SHARED CAPTION CONSTANT IS NOW NARROWER THAN THE PROSE THAT HOSTS IT
+
+`CREASE_LINE_IS_THE_CREASE` (`site/src/diagrams/rule69_clauses.mjs:179-184`) names **IIHF, USA Hockey
+and Hockey Canada** — **not CARHA**. `center.md`'s prose was just widened to four books because
+**CARHA's *Creases* definition does say the lines are part of the creases.**
+
+⚠️ **It is a SHARED CONSTANT reaching at least three diagrams**, so **every diagram importing it now
+understates the crease-line warrant by one book** — and editing it to fix one host silently rewrites
+every caption that imports it. **Only a caption-layer pass across all its hosts can price this.**
+
+⚠️ **Related, and reported by the same agent:** `center.md` points at `rink_map.md` as setting *"the
+four books' answers on the crease boundary side by side."* **If that table has four columns, it now
+understates by one.** Not checked — different owner.
+
+### ✅ THE BOOK-FRAME SWEEP CAME BACK OVERWHELMINGLY CLEAN — and that is the finding
+
+**28 sites read in `center.md`, 6 in `neutral_zone_systems.md`. Changed 3. Correctly scoped as-is: 31.**
+⚠️ **Outcome "actually wrong, changes what a reader should do" DID NOT OCCUR ONCE.** In every case
+tested, the absent book **agrees**.
+
+⚠️ **Two near-misses that would each have produced a FALSE finding, and both are method lessons:**
+1. **Hockey Canada's Rule 1.6(a) does NOT say the line is crease** — it carries the same silent wording
+   as the NHL. The claim rests **entirely on the Glossary entry**. *"Had I stopped at the rule text I
+   would have reported the corpus wrong."*
+2. A flattened search for `linesofthecrease` returned **0 in CARHA** — because CARHA writes *"considered
+   **as** part of the crease**s**"*, plural, with an extra word. ⚠️ **Only a looser token caught it. A
+   tighter search would have manufactured a "CARHA is silent" finding.**
+
+⚠️ **`neutral_zone_systems.md` got ZERO edits, deliberately**, and the reasoning is worth keeping: the
+agent **measured the spoken distance** from each charging claim to the nearest `CARHA` utterance —
+**8,447 characters at the closest** — and concluded no listener can collide them. **Five widenings for
+no behavioural change were declined.**
+
+⚠️ **Do not let a future sweep conflate two different "fours":** `center.md:683` and `:787` say *"none of
+the four regulations"*, meaning **the four IHUK Rules of Competition**, not the four rulebooks.
+
+### 📌 THE EQUIPMENT CITATION AUDIT — three of four "bare claims" were SOURCED
+
+⚠️ **The `content-reviewer` was right to leave all four alone.** Writing *"nothing cited here
+establishes that"* **would have been a false disclosure in three of the four cases.**
+
+- *"most NHL players wear second-tier boots"* — **sourced**, Discount Hockey, verbatim. The real defect
+  is **provenance**: a retailer asserting it with no survey or study.
+- *"donut on a baseball bat"* — **sourced**, Pure Hockey, verbatim. ⚠️ And the source says *"strength
+  **and speed**"* where the corpus had narrowed it to *"hand and wrist strength"* — **a specification
+  the source does not make.**
+- Machine-washing and *"3-6 weeks"* — **sourced**. ⚠️ **But the 3-6 weeks is about the SMELL returning,
+  not the gear's condition**, and the corpus had generalised it.
+- *"roughly halves the break-in time"* — ⚠️ **THE ONE GENUINE ABSENCE.** Zero hits for
+  `half|halve|break-in|twice as|50%` on the cited page. **Labelled, not deleted** (non-negotiable 3).
+
+⚠️ **Only ~12 of ~40 citations were reached.** The whole rulebook and standards-body set — HECC, ASTM,
+CSA, BNQ, ISO — **was not refetched.**
+
+
+### 🔴🔴 EIHL RULE 46 REFUTED TWO NEGATIVE EXISTENCE CLAIMS — including one the corpus said it had checked
+
+Taking Rule 46 first was the right call and it paid immediately.
+
+**1 · A negative the corpus explicitly claimed to have verified.** `uk_rules.md` said of bench-leaving:
+*"Nothing domestic amends it, **and that negative was looked for rather than assumed**."* ⚠️ **EIHL
+Casebook Rule 46, FINES AND SUSPENSIONS (2) attaches an automatic minimum of THREE GAMES**, and
+cross-references Rule 70 by name. The in-game penalty is unchanged, so nobody was told the wrong thing
+to *do* — **but they were told no British document adds to it, and one does.**
+
+**2 · Key Takeaway 7 said the EIHL softening did not exist.** It read *"The only domestic softening is
+the plain willing fight, in NIHL, SNL and BUIHA Varsity."* ⚠️ **The EIHL is a SECOND softening, by a
+different mechanism**: Casebook 46.1 holds the automatic game misconduct back to a player's **second**
+fighting major, where IIHF 46.1 makes it the standard penalty on the first.
+
+⚠️⚠️ **DIRECTION, AND IT IS EASY TO INVERT: two of these make the EIHL LIGHTER IN-GAME than the IIHF
+book and HEAVIER IN SUSPENSION.** The instigator tariff is minor + major + ten-minute misconduct where
+IIHF 46.10 gives an automatic game misconduct — but the final five minutes add a game, and the coach is
+exposed. **It is both stricter and more lenient, on different axes. Do not let anyone flatten that.**
+
+**Also found and written in:** a Casebook minor the IIHF book has **no limb for at all** — an
+unsportsmanlike minor for a player in an altercation *"[who] does not have his sweater properly tied
+down"* — and automatic suspensions keyed to a **season COUNT** of fighting majors (10th → one game;
+14th → two per additional), reset for the play-offs.
+
+**Under `safety-reviewer` now.** ⚠️ **Propagation to `body_contact_and_battles.md` dispatched** — it
+prices fighting and bench-leaving across four books and was named as the highest-value follow-up.
+
+### 📌 THE CASEBOOK'S OWN RULE NUMBERS DISAGREE WITH THE BOOK IT ADOPTS
+
+Its `46.2` is IIHF `46.3`; its `46.13` is IIHF `46.11`; and it **prints `46.2` twice**, for altercation
+and for aggressor. Recorded in the corpus, **not corrected** — the disagreement is the book's.
+
+⚠️ **This is now British evidence for advice the corpus already gave** — look Rule 46 up **by heading,
+not by number**. Alongside the `RULE 42 – ELBOWING` typo (its own error for IIHF 45), this book
+mis-numbers itself in at least three places.
+
+### 🔴 OPEN — EIGHT of the Casebook's 22 amended rules remain unexamined
+
+Reached this round: **14**. Left: **10 (Sticks), 11 (Goalkeepers Equipment), 12 (Illegal Equipment), 28,
+30, 36, 47 (Head-butting), 77 (Game and Intermission Timing)**.
+
+⚠️ **Take Rule 12 next, and the agent gave the reason:** `uk_rules.md` has an equipment-failure ladder
+built on Casebook **9.5**, and **12 is a second path into the same subject** — *"the two-enforcement-paths
+shape that has already caught this book twice"* (9.5 vs 9.12 on neck guards; 86.6 vs 5.6 vs 46 FINES(4)
+on warm-up conduct).
+
+**Three findings deliberately left for their owners:** Casebook **63.5** prices crowd debris at a
+**2-minute bench minor on the home team** (no document owns crowd conduct); **64** carries a
+goaltender-embellishment passage `goaltender.md` may want; **6** allows one captain and **no more than
+three** alternates, and bars *"forego[ing] the naming of a captain by naming four alternate captains"*.
+
+### ⚠️ A THIRD RENDER TRAP — a parenthetical numeral inside a quotation
+
+A verbatim *"minimum of three (3) games"* rendered as **"minimum of three (three) games"**. The
+quotation had to be split around the parenthetical.
+
+⚠️ **That is now THREE defects this round that only a render caught** — this, the bold/italic span
+crossing that spoke **a literal asterisk** into a Key Takeaway, and a bare count voiced alone in the
+most-extracted layer. ⚠️ **Every one passed `check_links`, `check_facts`, `check_absolutes` AND
+`check_quote_drift`.** **Render before and after, every time.**
+
+
+### 🔴🔴 NEW WORKLIST — 87 CANDIDATE ATTRIBUTION DRIFTS, AND NO TOOL CAN SEE ANY OF THEM
+
+Attribution drift was found **three times in one file** — a quotation carrying one book's characters
+under a joint attribution naming two. ⚠️ **`check_quote_drift.py` scored all three CLEAN before and
+after**, because it keeps the closest match across **all** sources. Its docstring records this.
+
+**The searchable signal is the PHRASING, not the quotation:** *"word for word"*, *"the same sentence"*,
+*"in both books"*, *"identical in both"*, *"character-identical"*.
+
+**Census run 22 September:** 437 raw hits across 31 files → narrowed to lines carrying a **40+ char
+quotation AND two or more named books** → **87 candidates across 30 files.** Densest:
+`rules_primer.md` (45 raw), `body_contact_and_battles.md` (37), `goaltender.md` (25), `shooting.md`
+(23), `faceoffs.md` (23).
+
+⚠️ **A mechanical ranking exists and it works: HOUSE PRONOUNS.** NHL writes *his/he*; IIHF writes
+*their* and capitalised *Player*; PWHL writes *her/she*. A quotation whose pronouns belong to one book
+while the sentence names two or three is the drift shape.
+
+**The sharpest hit, and it is in material committed in `79bdfde`:** `rules_primer.md:286` quotes
+*"On **her** own side of the line shall be defined by a 'plane'…"* and *"possession and control of the
+puck **with her stick**"* — **PWHL pronouns, attributed to NHL + IIHF + PWHL.**
+
+⚠️⚠️ **THE PRONOUN TELL IS A CANDIDATE SIGNAL, NOT A VERDICT.** Many of the 87 will be correct — the
+corpus legitimately quotes one book and names others for comparison, and several of these lines do
+exactly that and say so. **Only a side-by-side read of two primary texts decides. Do not sweep.**
+
+- [ ] Work the 87 by file, densest first. `rules_primer.md` dispatched 22 Sep.
+
+### ✅ CLOSED — the EIHL Casebook amends NEITHER Rule 44 NOR Rule 50
+
+Established three ways, not by rule-number grep: the **contents list and body pass enumerated in full**
+(it writes 5, 6, 7, 9, 10, 11, 12, 28, 30, 36, 37, 38, 41, 42 Charging, 42 Elbowing *(its own typo for
+45)*, 46, 47, 63, 64, 69, 77, 84, 86 — **no 44, no 50**); a **concept sweep** (`knee` 0, `clip` 0,
+`lowhit` 0, `thigh` 0); and ⚠️ **a CONTROL PHRASE validating the cleaning first** — see the new form-feed
+trap in `sources/README.md`.
+
+**So IIHF 44 and 50 stand for an EIHL reader**, and both are **character-identical across the two IIHF
+editions**, so the British edition question does not bite on either foul. Every British competition
+document was searched and is silent; the only `clip` hits are **helmet J-clips**.
+
+⚠️ **A positive finding that runs TOWARD the corpus:** **IIHF Situation Handbook, Situation 44.1** —
+identical in both editions — rules that a player *"skating backwards and lowers the body in an attempt
+to make a hip check… so low that contact is in the area of A16's knees"* is **clipping**. ⚠️ **A hip
+check — a technique a reader may believe is traditional — is the illustration the rule is written
+against**, in a document whose §5 and §7 both teach getting low. **Now in the document; needs
+`safety-reviewer`.** Rule 50 prints *"No situation."* — an explicitly published absence, now stated
+rather than left as silence.
+
+### 📌 NEW — a corpus citation resolves to an OLDER revision than the copy the corpus verified against
+
+`body_contact_and_battles.md` links the NIHL ROC at `…/2026/08/NIHL-1-and-2-ROC-2026-2027.pdf`.
+⚠️ **`scripts/fetch_sources.sh` fetches `…/2026/09/…-1.pdf` and records that the 2026/08 URL still
+returns 200 serving a revision OLDER than the copy on disk.** So the document's link sends a reader to
+a document older than the one the corpus checked. **Affects every site using that URL, not one file.**
+
+
+### ⚠️⚠️ COORDINATOR DEFECT — A BRIEF INVENTED A DEFECT, AND THE AGENT REFUTED IT
+
+A brief asserted that `center.md` and `neutral_zone_systems.md` both point at `rules_primer.md` as
+*"the four-book comparison"* on offside, and asked for the wording to be retargeted.
+
+**Both halves were false.** `grep -c rules_primer content/systems/neutral_zone_systems.md` returns
+**0** — that file has never pointed at it. And `center.md`'s pointer reads *"the full rule — tagging up,
+what turns a delayed offside into a whistle, and the rule-set differences"* — **it never said
+"four-book comparison".**
+
+⚠️ **The coordinator inferred a plausible-sounding defect from the shape of a previous finding and
+wrote it into a brief as fact.** Same class as the mis-attributed rule number and the short site list
+earlier in the round. **The agent checked before editing, found nothing to retarget, and said so** —
+which is the only reason no wording was changed to match a defect that did not exist.
+
+### 🔴🔴 THE REAL DEFECT THE DISPATCH FOUND — a closed four-book field asserted TWO LINES from a six-book one, in the same block
+
+Five statements asserted a **closed field of four books** on the airborne trail skate. In **both** files
+that assertion sat **inside the same ` ```facts ` block**, two lines from a line naming five or six:
+
+- `center.md:262` *"…not the NHL, USA Hockey, Hockey Canada, CARHA or the PWHL"* → `:264` *"two books
+  of the four"*
+- `neutral_zone_systems.md:48` *"two books of the four require contact"* → `:50` *"neither do the IIHF,
+  USA Hockey, Hockey Canada or CARHA books"*
+
+⚠️ **Each facts line is voiced ALONE with 300 ms either side. A listener hears the field is six, then
+hears it is four, in adjacent utterances.**
+
+⚠️ **Why it is worse than arithmetic:** the trail-skate drag is a **taught technique**, and a CARHA
+beer-leaguer told *"the NHL and IIHF let you lift it, two of the four don't"* is invited to place their
+own book in the permissive group **by resemblance** — which the owner document warns against in terms.
+**Repaired in 8 lines across both files, every count scoped to the offside rule, CARHA kept as silent.**
+
+### 🔴 NEW, OPEN — `center.md` RUNS THREE DIFFERENT BOOK-FRAMES AND NOTHING EXPLAINS WHY
+
+Counted: **28** four-book phrases, **7** five-book, **2** six-book. The faceoff section already says
+*"all five books"* and *"in only two of the five rulebooks"* with CARHA included; the crease and
+checking-from-behind sections still say *"three of the four books"* (`:402`, `:689`) and *"any of the
+four books"* (`:653`). `neutral_zone_systems.md` is 8 four-book / 3 five-book.
+
+⚠️ **Each is locally defensible and NO DOCUMENT SAYS WHY THEY DIFFER. A listener has no way to
+reconcile them, and nothing mechanical will ever report it.**
+
+- [ ] `rules-verifier` sweep: does CARHA have a **checking-from-behind** rule the four-book sentences exclude?
+  ⚠️ **The CREASE half of this row is closed** — answered in the commit of 22 September 2026 for
+  `rink_map.md` and `center.md` from `sources/carha.txt` (Glossary *Creases* entry at `:270`, Rule 5(c)
+  at `:545`); the record is `project/reviews/spoken_layer_and_edition_scope_2026-09-22b.md`. **Left open
+  so the next round does not re-run work this commit did.** The checking-from-behind half is untouched.
+
+### 🔴🔴 NEW — A CAPTION SPEAKS A FIFTH BOOK INTO A SECTION WHOSE OWN FACTS LINE SAYS FOUR
+
+`center.md:415` embeds `![](diagram:oz-net-front-screen)`, whose caption is **owned by
+`offensive_zone_play.md`**. Heard in the render of `center.md`: *"One rec book is stricter again: the
+CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from standing in the goal
+crease…"*
+
+⚠️ **Thirteen lines above it, `center.md:402` is voiced alone as *"three of the four books count that
+line as part of the crease"*.** ⚠️⚠️ **The CARHA string appears NOWHERE in `content/` — it reaches the
+listener only through the caption layer.**
+
+**This is `check_caption_hosts.py`'s failure mode, live and audible.** ⚠️ **Caption text is a shared
+constant** — editing it to fix this host would silently rewrite every caption importing it. The fix
+belongs in `center.md`'s frame, not the caption.
+
+### ⚠️ A RENDER CAUGHT TWO DEFECTS EVERY CHECKER PASSED — in the agent's OWN first edit
+
+Found only because it rendered **twice**, before and after:
+
+1. `center.md:759` — a bold/italic span crossing (`**…never defines its *"own side"** of the line`)
+   rendered **a literal asterisk spoken into a Key Takeaway**. ⚠️ **`check_links`, `check_facts`,
+   `check_absolutes` and `check_quote_drift` all passed it.**
+2. A Key Takeaway opening *"Two books turn a habit…"* — a **bare count voiced alone in the
+   most-extracted layer**. Substituted the names, which was **shorter than pointing at them**, as the
+   standing guidance predicts.
+
+⚠️ **The lesson is dispatchable: an agent that renders only AFTER editing cannot catch a defect it
+introduced in the rendering itself. Render before and after.**
+
+
+### 🔴🔴 NEW, HIGH VALUE — THE IIHF 2026/27 CHANGE LOG HAS EIGHT ROWS AND THE CORPUS HAS CHECKED TWO
+
+`sources/iihf_rules_2026-27.txt:246-278` is the book's **own** statement of what changed between
+editions. The coordinator pointed an agent at one line of it; **the agent read the whole thing.** The
+eight rows:
+
+| Rule | What changed |
+|---|---|
+| **6.1** | one captain + two alternates, or no captain and three |
+| **33.2** | a fouled player is credited with an awarded goal |
+| **46** | *"Major editorial changes… No changes in the implementation of the rule are expected"* |
+| **60.1** | ⚠️ **high-sticking now requires the opponent's shoulder at waist level or higher** |
+| **76** | ⚠️ **a faceoff violation ejects the CENTRE of the offending team**, and *"does not apply at a face-off when icing is called"* |
+| **79.1** | a hand deflection gaining no advantage is not a violation |
+| **83.1** | an attacking player entering early must **control the puck with the stick** to stay onside |
+| **102.7 / 202.7** | deleted; **Rule 12.1 now applies to all games** |
+
+⚠️⚠️ **60.1 and 76 are subjects this corpus teaches at length and NEITHER HAS BEEN CHECKED against the
+corpus.** 83.1 bears directly on the offside work just shipped. **This is a primary-source list of
+exactly where a corpus claim may have gone stale, and it was sitting unread.**
+
+✅ **Two rows are already correct in the corpus and were verified, not assumed:** `equipment.md:119`
+states the 102.7/202.7 deletion with the **right direction and the right editions**, and `uk_rules.md`
+states Rule 12.1 with **no age scope**, which is correct in both.
+
+⚠️ **Direction, which the agent got right and is easy to invert:** **Rule 12.1's own text is IDENTICAL
+in the two editions.** What changed is the **deletion of the junior carve-out** — so junior hockey
+**loses** a ten-minute-misconduct procedure and falls back to 12.1's adult ladder.
+
+- [ ] Check the corpus against IIHF 60.1, 76, 83.1, 6.1, 33.2 and 79.1.
+
+### 🔴 NEW — ATTRIBUTION DRIFT, found by reading two sources side by side, invisible to every checker
+
+`body_contact_and_battles.md:527` says **NHL 50.1 and IIHF 50.1** *"are the same sentence"* and quotes
+**the IIHF's wording attributed to both.** Verified by me against both books:
+
+- **NHL** (`nhl_rules.txt:5980-5982`): *"a player leading with **his** knee… **his** leg… **his**
+  opponent"*
+- **IIHF v1.1** (`iihf_rules_v1.1.txt:4374-4376`): *"a **Player** leading with **their** knee… **their**
+  leg… **their** opponent"*
+
+Three pronouns and one capital differ. **True in substance, false as to characters** — and the quotation
+marks cannot support the NHL half.
+
+⚠️⚠️ **NO TOOL CAN SEE THIS.** `check_quote_drift.py` keeps the **closest** match across **all** sources,
+so a sentence credited to the NHL while carrying the IIHF's characters scores **clean**. Its own
+docstring records this as a known blind spot. **It was found by an agent reading both sources side by
+side while writing the parallel passage elsewhere — not by any checker, and re-running one will not find
+the next.** Relayed to the agent holding that file.
+
+- [ ] Are there other joint *"NHL and IIHF"* quotations carrying one book's characters? **Nothing mechanical will answer this.**
+
+### 📌 NEW — CARHA writes NO kneeing definition at all, and it is WIDER than Hockey Canada
+
+`carha.txt:2685-2692`, Rule 56 *"Elbowing and Kneeing"*: *"any player who fouls an opponent in any manner
+with their elbow or knee"* — minor, or discretionary major plus game misconduct, major **mandatory** on
+injury, and **no match tier**.
+
+⚠️ **"In any manner" is wider than Hockey Canada's point-of-contact test**, which the corpus has just
+established as the widest of the four it names. **CARHA is the book many adult rec readers are actually
+under.** PWHL kneeing is the NHL sentence feminised and aligns with the other three.
+
+- [ ] Decide how CARHA sits in the kneeing frame before any document states a four- or six-book version.
+
+### ⚠️ COORDINATOR IMPRECISION — a brief asserted a clean tree that was about to stop being clean
+
+A brief said *"HEAD is `79bdfde` and the tree is clean"*. **True when written; false minutes later**,
+because the coordinator dispatched four more agents into other files immediately after. The agent
+finished, saw `equipment.md` modified, and **correctly flagged that the disjointness claim might not
+hold** rather than assuming.
+
+✅ **Disjointness DID hold** — every modified file had exactly one owner. **But the agent could not know
+that**, and it was right to raise it. ⚠️ **A brief should say which OTHER files are live, not that the
+tree is clean** — "clean" is a claim with a shelf life of seconds in a parallel round.
+
 
 ### 🔴 NEW, HIGH PRIORITY — the diagram-key link does not deliver its OWN stated justification
 
@@ -275,10 +1495,35 @@ the corpus already knows how to state a ranking honestly; one document just did 
 **Still open from earlier today:** `body_contact_and_battles.md:1716` — *"Assuming the four worst
 fouls…"*, with nothing in the document ranking fouls by severity.
 
-- [ ] Repair `equipment.md:401` + its two `Check yourself` echoes + the anchor.
-- [ ] Repair `body_contact_and_battles.md:1716`.
+- [x] ✅ **DONE — `equipment.md:401`**, by the `content-reviewer` dispatched to that file. The heading is
+      now `### Three gaps between pieces of kit, and how to close each one`, with a labelling lead-in
+      carrying the disclosure (*"fitting-guide emphasis rather than a counted ranking"*) instead of the
+      ranking, and **both `Check yourself` echoes retargeted**. ⚠️ **That agent also found TWO MORE
+      instances of the same defect in the same section** that this row never named — `:405`'s *"the most
+      common way"* and Key Takeaway 6's *"The three gaps that hurt people"*.
+- [x] ✅ **DONE — `body_contact_and_battles.md:1716`**, by the `rules-verifier` dispatched for the EIHL
+      clipping and kneeing work. *"Assuming the **four worst fouls** are…"* → the four named outright,
+      with **every citation in the bullet untouched**. `grep -c 'four worst fouls'`: **1 at HEAD, 0
+      staged.**
 
-⚠️ **Both are in files that were STAGED for the pending commit, so neither was touched** — editing a
+⚠️⚠️ **THE PARAGRAPH BELOW WAS TRUE WHEN WRITTEN AND FALSE WITHIN THE HOUR, AND IT SHIPPED AS FACT INTO
+A PENDING COMMIT.** It says neither file was touched. **Both were** — the coordinator wrote this note
+while both files were staged and it expected not to touch them, **then dispatched agents into those very
+files** and never came back to correct it. **The commit gate caught it by reading the index rather than
+the plan.**
+
+⚠️ **This is the *"Handed to `safety-reviewer`"* defect WITH THE SIGN REVERSED.** Last pass the plan
+recorded an **intention as an action**; this pass it recorded an **action as a non-action**, and left
+both rows open. ⚠️ **Committing it would have written a false statement into the defect record and
+guaranteed the next round re-dispatched finished work** — the *"rediscovered rather than read"* failure
+the one-plan rule exists to prevent.
+
+⚠️ **The lesson is not "be careful". It is that a plan note asserting what WILL or WILL NOT happen goes
+stale the moment the next dispatch is made, and nothing connects the two edits.** A row should record
+what IS, and be re-read before the gate.
+
+**Superseded text, kept because the record is the point:** *"Both are in files that were STAGED for the
+pending commit, so neither was touched — editing a
 staged file while the commit gate audits it creates exactly the index/tree divergence no checker and no
 hook can see. **Dispatch these after the commit lands.**
 
@@ -527,7 +1772,44 @@ added there fails the gate, so a repair must fold scope into an existing line, r
 `Rule:`/`Convention:`, or split the section. **With 90 blocks in that state, this will bite the next
 wave repeatedly** — and `foundation/on_ice_communication` alone has five.
 
-- [ ] Decide whether 90 blocks at cap means the cap is wrong or the sections are.
+✅ **MEASURED 22 September, and the distribution answers it: the cap is BINDING, and authors are
+writing TO it.**
+
+Coaching-fact counts across all **850** blocks:
+
+```
+ 0 coaching:   7        5 coaching: 201   <- mode
+ 1 coaching:  39        6 coaching: 167
+ 2 coaching:  52        7 coaching: 113
+ 3 coaching:  60        8 coaching:  90   <- AT CAP
+ 4 coaching: 121        9+:           0
+```
+
+⚠️⚠️ **THE SHAPE IS THE FINDING. The distribution tapers from its mode at 5 — 201, 167, 113 — and then
+JUMPS BACK UP to 90 at exactly 8, and stops dead.** A natural tail would continue falling past 7. **A
+pile-up at the boundary is the signature of a constraint shaping the content, not of a checker catching
+outliers.**
+
+**What the at-cap blocks actually are:** ⚠️ **71 of the 90 carry ZERO or ONE `Rule:` fact**, and **79 of
+90 have 10 or fewer facts in total — none is anywhere near `HARD_MAX` (14).** So they are not large
+blocks; they are **pure-coaching blocks sitting on exactly 8**.
+
+**So the cap is doing its designed job** — it targets *"a block dominated by discretionary coaching"* and
+these are exactly that. ⚠️ **But 90 blocks at precisely the limit with no rulebook content is not a
+corpus that happens to fit; it is a corpus written to fit.** The gate's own message for exceeding is
+*"the section is probably two sections"*, and for 90 blocks nobody has ever tested whether that is true.
+
+⚠️ **The practical consequence for every future wave, which is why this matters now:** an agent told to
+add a scoped line, a hedge or a safety limb to one of these **cannot**. Its only legal moves are fold
+into an existing line, relabel to `Rule:`/`Convention:` (which also buys the 300-char cap), or split the
+section. **`foundation/on_ice_communication.md` alone has four such blocks at 8/0/8.**
+
+⚠️ **Measurement caveat:** taken while five agents were editing `content/`, so individual counts may
+have moved. **The aggregate shape is not sensitive to that; do not quote individual figures from here.**
+
+- [ ] Owner's call: sample a few of the 71 zero-`Rule:` at-cap blocks and test whether "probably two
+      sections" is actually true. If it is, the cap is right and the corpus owes a split pass. If it is
+      not, the cap is mis-shaped for coaching-only blocks and should be argued about, not worked around.
 
 ### 🔴🔴 CRITICAL FOUND AND FIXED — the shot-block equipment precondition reached the body and stopped
 
@@ -6478,11 +7760,17 @@ The design spec now lives at
 push, and must be re-checked with `git fetch origin main && git rev-list --count origin/main..HEAD`,
 never quoted from memory or from an earlier paragraph in this file.**
 
-**Re-checked 22 September 2026, second check of the day: `origin/main` and local `main` are both at
-`e0a0b69`. Nothing is unpushed.** ⚠️ **This corrects what this section said a few hours earlier**, which
-was that three commits (`7df04fc`, `25b0725`, `22c9cc6`) were committed and unpushed, and that the
-auto-push pattern "did not recur here." **It did recur** — all three are now on `origin`, pushed by
-something other than this session between the two checks.
+**Re-checked 22 September 2026, third check of the day: `origin/main` and local `main` are both at
+`79bdfde`. Nothing was unpushed at the moment of the check.** ⚠️ **And this paragraph is stale the
+instant you read it in the commit that contains it** — the commit that stages this very file moves HEAD
+past `79bdfde` by construction, so the hash above is a record of a check, never an answer to "is anything
+unpushed." **Run the fetch-and-count command.**
+
+⚠️ **This supersedes, but does not erase, what this section said earlier in the day.** It first said
+that three commits (`7df04fc`, `25b0725`, `22c9cc6`) were committed and unpushed and that the auto-push
+pattern "did not recur here"; the second check found **it did recur** — all three had reached `origin`,
+pushed by something other than this session between the two checks. The `e0a0b69` the second check
+recorded has since been superseded twice. **Three snapshots, three different hashes, one day.**
 
 ⚠️ **So the standing lesson is stronger than "re-check before quoting": this section can go stale
 WITHOUT ANYONE IN THE SESSION DOING ANYTHING.** A commit count is not merely a figure that ages, it is

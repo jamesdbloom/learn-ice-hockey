@@ -845,3 +845,12 @@ https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010416-0440
 https://www.researchgate.net/publication/303380538	403	23272	same	blocks automated fetch
 https://psycnet.apa.org/record/2016-25506-011	200	1037	same	⚠️ 1 KB WAF stub, no record text - same soft-block trap as the two APA rows above
 https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/07/Kornell_Hays_RBjork_2009.pdf	404	196	same	dead; a GUESSED path, not cited by the corpus - recorded so nobody re-guesses it
+https://www.purehockey.com/c/how-to-clean-hockey-equipment	403	5736	same	unreachable, Cloudflare interstitial. NOT a cited URL - recorded so nobody re-guesses it
+https://cdn.shopify.com/s/files/1/0658/4749/2861/files/BAU-WB-012_QR.pdf	200	3580441	same	⚠️⚠️ IMAGE-ONLY: 3.4 MB / 20pp yielding 952 BYTES of pdftotext. grep -i wash = 0 while the Maintenance paragraph PERMITS machine washing at 30C. Read via pdftoppm
+https://cdn.shopify.com/s/files/1/0658/4749/2861/files/BAU-WB-004_r7-warning-booklet_QR.pdf	200	3371450	same	⚠️ IMAGE-ONLY: 951 B / 19pp; same maintenance text
+https://cdn.shopify.com/s/files/1/0658/4749/2861/files/BH25-BAU-WB-005_r5_QR.pdf	200	3262795	same	⚠️ IMAGE-ONLY: 937 B / 19pp; same maintenance text
+https://www.bauer.com/blogs/learn/how-to-clean-hockey-equipment	404	762253	same	a GUESSED url, not cited; soft-404 serving site chrome - byte count alone would not reveal it
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=498402	200	1398	same	Salmela & Fiorito 1979 abstract verified in full; confirms the corpus's claim that it does NOT bear on tape colour
+https://pubmed.ncbi.nlm.nih.gov/?term=hockey+stick+tape+color+puck+visibility	200	200369	same	"No results were found" - corpus disclosure UPHELD
+https://pubmed.ncbi.nlm.nih.gov/?term=hockey+tape+colour+puck+detection	200	200101	same	"No results were found" - corpus disclosure UPHELD
+https://pubmed.ncbi.nlm.nih.gov/?term=stick+blade+tape+goaltender	200	199833	same	"No results were found" - corpus disclosure UPHELD

@@ -1583,6 +1583,59 @@ moved the source BACKWARDS to the 26 August original** — the rollback hazard a
 the corpus cites this document only for playing format. A `-layout` diff of the full 20 pages between the
 on-disk copy and the current 3rd revision reports **exactly the one U18 clause** and nothing else.
 
+### ⚠️⚠️ THE EIHL CASEBOOK FOOTER SPLICE CONTAINS A **FORM FEED**, AND STRIPPING HEADERS IS NOT ENOUGH
+
+Measured 22 September 2026. The standing advice here — *delete the `MOTORPOINT EIHL CASEBOOK` lines and
+the bare page-number lines, then flatten* — **is incomplete.** The actual splice is:
+
+```
+…along the sides\n\nMOTORPOINT…1.0 010826\n\n8\n\n\fso\nthat it cannot be flipped up.
+```
+
+⚠️ **There is a form feed (`\f`) glued to the first word after the page number.** Strip only the header
+and number lines and the flattened text reads `…alongthesides` + `\fsothatitcannotbeflippedup` — so a
+search for `alongthesidessothatitcannotbeflippedup` returns **0 even after cleaning**, and the zero looks
+like a finding.
+
+⚠️⚠️ **THE METHOD THAT CAUGHT IT IS THE POINT, AND IT SHOULD BE STANDARD FOR EVERY NEGATIVE:** the agent
+picked a **control phrase it KNEW spanned a splice**, cleaned, and **refused to trust any zero until the
+control returned 1.** Its first cleaning scored the control at 0; adding `\f` to the strip set scored it
+at 1. **Only then did it report `knee` 0, `clip` 0, `lowhit` 0 as real.**
+
+**So: before asserting an absence in any spliced extraction, validate the cleaning against a string you
+already know is there.** A zero from an unvalidated cleaning is not evidence of anything.
+
+### ⚠️⚠️ THE `crt6` SIGNATURE, HIT LIVE AGAIN — BAUER'S PROTECTIVE BOOKLETS ARE IMAGE-ONLY
+
+Measured 22 September 2026. **All three Bauer protective booklets: HTTP 200, 3.3–3.6 MB, 19–20 pages —
+and 937–952 BYTES from `pdftotext`.** The extraction holds only hyperlink annotations and
+`CAN/BNQ 9415-370`. **None of the instructions.**
+
+⚠️⚠️ **`grep -i wash` returns 0 — while the Maintenance paragraph EXPLICITLY PERMITS machine washing.**
+A grep-only pass would have reported *"Bauer says nothing about washing"*, which is **a false negative
+pointing the wrong way**: it would have licensed the corpus's existing advice instead of qualifying it.
+
+**This is the `crt6.txt` signature exactly** — a multi-megabyte PDF yielding a kilobyte of page
+furniture. **Render with `pdftoppm` and read the pages.** What that actually found:
+*"can be machine washed at cold temperature (30°C) with like colors. Close fasteners before washing.
+Do not use bleach… **Do not tumble dry**, do not iron…"* ⚠️ **A long hot cycle and a tumble dry both sit
+outside that, and the corpus was recommending the longest cycle.**
+
+⚠️ **And a gap worth knowing before anyone re-derives it: Bauer publishes NO care booklet for shoulder,
+elbow or shin pads.** Its manuals index carries helmets, facemasks, visors, goalie masks and neck
+protectors only. **"Bauer's instructions" therefore cannot be generalised to all protective gear**, and
+CCM, Warrior and True were not checked.
+
+### ⚠️ PURE HOCKEY: 403 ON FIRST REQUEST, 200 ON RETRY — AND THE RETRY CARRIED THE EVIDENCE
+
+Three Pure Hockey pages returned **403 with ~5.7 KB challenge bodies on the first request and 200 with
+209–225 KB on retry** with a referer and a cookie jar.
+
+⚠️⚠️ **The quotation that REFUTED a suspected unsourced claim was only reachable on the retry.** A
+single-attempt pass would have filed it as unsourced and **manufactured a false disclosure** — the
+failure direction this project records as the hardest to see. *"A 403 is not an absence"* is not
+advisory here; it was load-bearing.
+
 ### ⚠️⚠️ SOFT-BLOCK TRAP — A PUBLISHER CAN SERVE A BLOCK PAGE WITH **HTTP 200**
 
 Measured 22 September 2026 while trying to reach Rowland 2014. **APA blocks it three ways and two of
