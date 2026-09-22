@@ -2,7 +2,7 @@
 
 **Full execution history — census tables, wave-by-wave ownership, the caption-shortening saga, and the
 dated owner-instruction record — is consolidated in
-[`project/reviews/readability_rollout_consolidated_2026-09-20.md`](../reviews/readability_rollout_consolidated_2026-09-20.md).
+[`project/reviews/readability_rollout_consolidated_2026-09-20.md`](reviews/readability_rollout_consolidated_2026-09-20.md).
 This file holds only the current design spec and genuinely open threads.**
 
 ## Mission
@@ -91,24 +91,25 @@ before writing or reviewing content against these; do not re-derive the detail h
   Phase 1's schema section below should be read as the original design intent, not as a description of
   what to build — check `pathways.json` and `site/src/content.config.ts` before adding a new field.
 
-## Open threads
+## This file is a specification, not a plan
 
-- **Caption safety/rule-scope routing is not a closable checklist.** Round 77's four flagged blocks
-  were all traced and resolved 21 September (three were already routed; the fourth, a wall-contact
-  receiving-posture tail missing from `game_management.md`, was fixed across all four content layers
-  — see `project/reviews/caption_routing_and_game_management_propagation_2026-09-21.md`). This does
-  not close the category: it is open-ended by nature, not a fixed-size backlog, and any future pass
-  should re-investigate from scratch (read the review record above and
-  `round_77_the_caption_could_not_be_shortened.md` first) rather than assume nothing remains.
-- **The full seven-layer pilot rewrite** (Simple summary / Recognition cues / Understand it / If your
-  team differs / Go deeper as literal layers, per Phase 2 below) has not visibly shipped in either
-  `getting_started.md` or `rules_primer.md` — both carry Key focus, Go deeper, Common Mistakes, and Key
-  Takeaways, but not the full named layer set this plan originally specified. Confirm current intent
-  (whether the seven-layer IA is still the target, or whether Key focus + Go deeper + summary sections is
-  the corpus's actual settled shape) before dispatching any work against Phase 2's acceptance criteria.
-- **Executable, dated work items belong in `project/plans/OPEN_ITEMS.md`, not here.** This file is a
-  design specification; do not add dispatch rows to it. If something below reads as a task rather than a
-  standing rule, move it to `OPEN_ITEMS.md` rather than executing it from here.
+⚠️ **It used to live in `project/plans/`, and that was the defect.** Moved to `project/` on
+22 September 2026, alongside [`content_style_guide.md`](content_style_guide.md) and
+[`review_process.md`](review_process.md), because that is what it is: the standing design the
+corpus is written under. `project/plans/` holds what is **open**, and CLAUDE.md has said since
+24 August 2026 that `OPEN_ITEMS.md` is the only plan — a rule this file broke by existing where
+it did from 14 September, and which `OPEN_ITEMS.md` then wrote a "Design specifications, not
+dispatch queues" carve-out to accommodate. The carve-out is gone with the move.
+
+**Every open thread this file used to carry now lives in
+[`plans/OPEN_ITEMS.md`](plans/OPEN_ITEMS.md)** — the caption safety/rule-scope routing category,
+the marker residue, and the seven-layer pilot question. **Do not add dispatch rows here.** If
+something below reads as a task rather than a standing rule, it belongs in `OPEN_ITEMS.md`.
+
+⚠️ **Read the phases below as original design intent, not as a description of what shipped.**
+The "Current state" section above is the measured position; Phase 1's elaborate metadata schema
+in particular was **not** what was built — check `site/src/data/pathways.json` and
+`site/src/content.config.ts` before adding a field.
 
 ---
 
@@ -163,8 +164,10 @@ renderer's behaviour is deliberately changed and tested. For each pilot, save th
 and verify that every required condition remains in the same unit as its instruction.
 
 The local NotebookLM generation, batching, download, conversion, retry, and provenance workflow is
-specified separately in `project/plans/PODCAST_AUTOMATION_LOCAL.md`; this readability plan owns only the
-audio learning contract and whether pilot audio is current.
+specified separately — what is open is in `project/plans/OPEN_ITEMS.md`, the history in
+`project/reviews/podcast_automation_plan_consolidated_2026-09-20.md`, and the owner's own manual
+steps in `project/plans/PODCAST_MANUAL_STEPS.md`. This specification owns only the audio learning
+contract and whether pilot audio is current.
 
 ### Podcast ordering and discoverability
 

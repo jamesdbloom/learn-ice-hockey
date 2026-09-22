@@ -133,7 +133,8 @@ podcasts_web/
 # something commit; force-add the one file if you genuinely mean to.
 podcasts/
 
-# Podcast-automation queue/checkpoint state (project/plans/PODCAST_AUTOMATION_LOCAL.md).
+# Podcast-automation queue/checkpoint state (scripts/podcast_queue.py; see
+# project/plans/OPEN_ITEMS.md for what is open).
 # Operational state only — item status, hashes, timestamps. Never cookies,
 # credentials or account identifiers. Not the corpus record; project/reviews/
 # holds the tracked, accepted-episode record once an episode ships.

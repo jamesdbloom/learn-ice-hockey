@@ -25,8 +25,8 @@ grep `plan_archive_2026-09-20_pre_consolidation.md` for the workstream number fi
 
 ## Design specifications, not dispatch queues
 
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md) — the Key Focus / dual-audience
-rollout specification. [`PODCAST_AUTOMATION_LOCAL.md`](../plans/PODCAST_AUTOMATION_LOCAL.md) — local NotebookLM
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md) — the Key Focus / dual-audience
+rollout specification. [`PODCAST_AUTOMATION_LOCAL.md`](podcast_automation_plan_consolidated_2026-09-20.md) — local NotebookLM
 operations. Do not duplicate their specifications here; all executable work is tracked in this file.
 
 ## Priority order

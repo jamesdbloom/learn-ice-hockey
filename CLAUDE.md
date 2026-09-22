@@ -36,6 +36,7 @@ So: **write nothing from memory, and commit nothing that has not been attacked.*
 | [`project/content_style_guide.md`](project/content_style_guide.md) | **The specification.** What a correct document looks like. Read in full. |
 | [`project/review_process.md`](project/review_process.md) | **The process.** Generation gates, the 15 review dimensions, the commit gate. |
 | [`project/review_history.md`](project/review_history.md) | **The evidence.** What twenty rounds actually found. |
+| [`project/readability_and_dual_audience.md`](project/readability_and_dual_audience.md) | **The readability / dual-audience design.** Who the corpus is written for and the layers it is written in. ⚠️ Read its phases as original design intent, not as what shipped — the "Current state" section is the measured position, and it lived in `project/plans/` until 22 September 2026, which was the defect. |
 
 The style guide's rules each carry the failure they were written to prevent.
 Those failure descriptions are the best available predictor of what you are
@@ -532,9 +533,29 @@ project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds rema
                     plus the standing guidance for doing it — method notes, environment
                     facts, gate conditions. **No completed items:** when work closes it
                     moves out to a review record.
+                    ⚠️ ONE EXCEPTION, and it is the owner's: `PODCAST_MANUAL_STEPS.md` — the
+                    logins, vendor signups, ear test and listening pass only a human can do.
+                    It is not a dispatch queue and no agent works from it.
+                    ⚠️ THIS RULE HAS BEEN BROKEN ONCE AND IT COST SOMETHING. It was written
+                    24 August 2026 (`ec70b16`) after four plan files made "what is open" have
+                    no single answer and items were "rediscovered rather than read". On
+                    14 September `933ea01` added two more plan files anyway, and on 20 September
+                    OPEN_ITEMS.md wrote a "Design specifications, not dispatch queues" carve-out
+                    to justify them. The predicted symptom duly arrived: on 22 September
+                    answering "is the readability work done?" took three files, and TWO podcast
+                    items listed as open had been fixed days earlier in their own evidence files
+                    with nobody noticing. Both extra files were dissolved on 22 September.
+                    ⚠️ **A design specification is NOT a third category — it goes in project/
+                    beside the style guide.** If it is open it is a row in OPEN_ITEMS.md; if it
+                    is a standing rule it is a spec. There is no third thing.
 project/reviews/    Review records, findings, measurements and evidence. Where work
                     *done* is tracked, and where a plan item goes when it closes.
-project/            Style guide, review process, verification data.
+                    ⚠️ ARCHIVES ARE EVIDENCE. When a file move breaks their links, retarget the
+                    link PATH and leave the visible text and every sentence alone — a reader of
+                    an archive must still see the name the record was written with. Done this
+                    way for 15 links on 22 September; no finding was altered.
+project/            Style guide, review process, verification data, and the readability /
+                    dual-audience design specification.
                     Never fed to the podcast generator.
 scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_geometry.py, check_secrets.py, check_counts.py.

@@ -1,7 +1,7 @@
 # Readability release one — the record
 
 **Date:** 14 September 2026. **Baseline commit:** `c8ab508`. **Plan:**
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md).
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md).
 
 **Scope as planned:** a metadata schema, homepage/pathway routing, a principles index, and **no more than
 two pilot documents.**

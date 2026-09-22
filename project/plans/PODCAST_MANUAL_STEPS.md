@@ -5,7 +5,7 @@ browser, or a pair of ears. Each step says what to click, what to paste, what "d
 like, and what it unblocks. Nothing here needs you to search for anything.
 
 **Scope.** This file is the manual worklist. The engineering state, the open defects and the
-history live in [`PODCAST_AUTOMATION_LOCAL.md`](PODCAST_AUTOMATION_LOCAL.md) and
+history live in [`OPEN_ITEMS.md`](OPEN_ITEMS.md) (podcast section) and
 [`../reviews/podcast_automation_plan_consolidated_2026-09-20.md`](../reviews/podcast_automation_plan_consolidated_2026-09-20.md).
 Do not duplicate those here.
 
@@ -222,8 +222,9 @@ what this corpus's audio actually has to survive:
 Then pick one of: *keep Polly*, *switch to X*, *re-test with a different voice*.
 
 **Tell me the verdict and I will record it** — which engine, why, and what you heard — in
-`project/reviews/`, and update `PODCAST_AUTOMATION_LOCAL.md`'s orientation section, which
-currently states the Polly decision as settled on price and one sample.
+`project/reviews/`, and update the podcast orientation in
+[`OPEN_ITEMS.md`](OPEN_ITEMS.md), which currently states the Polly decision as settled on
+price and one sample.
 
 ⚠️ **Separately and just as important: listen to one of the two finished episodes.** Both were
 cleared on transcript review alone.
@@ -264,10 +265,11 @@ recap; a second recorded the reorder as feasible and preferable. **Your ear sett
 ## Step 5 — nothing else needs you
 
 For completeness, so you know what you are *not* on the hook for. These are mine, tracked in
-[`PODCAST_AUTOMATION_LOCAL.md`](PODCAST_AUTOMATION_LOCAL.md):
+[`OPEN_ITEMS.md`](OPEN_ITEMS.md) under "Podcast — engineering":
 
 - the whisper transcription model — **fetched 22 September 2026**, no longer a manual step;
-- the podcast-script-vs-corpus divergence question (episode three);
+- the podcast-script-vs-corpus divergence question (episode three) — **resolved 22 September**;
+  see `project/reviews/podcast_corpus_divergence_resolved_2026-09-22.md`;
 - running `source-verifier` on a script for the first time;
 - the `long-form` engine string `md_to_speech.py` writes into every manifest, for an engine
   that does not exist in `eu-west-2`;

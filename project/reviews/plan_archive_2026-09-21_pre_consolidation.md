@@ -31,8 +31,8 @@ grep the relevant archive for the workstream number, or the review record above,
 
 ## Design specifications, not dispatch queues
 
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md) — the Key Focus / dual-audience
-design principles this corpus is written under. [`PODCAST_AUTOMATION_LOCAL.md`](../plans/PODCAST_AUTOMATION_LOCAL.md)
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md) — the Key Focus / dual-audience
+design principles this corpus is written under. [`PODCAST_AUTOMATION_LOCAL.md`](podcast_automation_plan_consolidated_2026-09-20.md)
 — local NotebookLM/TTS pipeline operations, including the podcast-vs-corpus divergence question (its
 own open item, owned there — not duplicated here). Do not duplicate either file's specification here;
 executable corpus-content work is tracked in this file.

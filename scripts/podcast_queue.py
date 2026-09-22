@@ -3,9 +3,10 @@
 
 WHY THIS EXISTS
 ---------------
-`project/plans/PODCAST_AUTOMATION_LOCAL.md` describes a queue/checkpoint/
-rate-limit workflow for driving NotebookLM one episode at a time. Nothing
-implemented it — `.claude/skills/notebooklm-episode/build_episode.py` only
+`project/plans/OPEN_ITEMS.md` (podcast section) and the history in
+`project/reviews/podcast_automation_plan_consolidated_2026-09-20.md` describe a
+queue/checkpoint/rate-limit workflow for driving NotebookLM one episode at a
+time. Nothing implemented it — `.claude/skills/notebooklm-episode/build_episode.py` only
 assembles a source bundle for a single episode already decided on. This
 script is the missing piece: it derives the correct queue from the site's
 own canonical page order, tracks per-item progress through the workflow's
@@ -108,7 +109,14 @@ VALID_STATUSES = [
     "downloaded", "converted", "reviewed", "accepted", "blocked",
 ]
 
-BATCH_HARD_CEILING = 10  # project/plans/PODCAST_AUTOMATION_LOCAL.md: "at most 10 per batch"
+# ⚠️ A hard rate-limit and RECOVERY ceiling, not a throughput target: `next-batch`
+# caps at 10 unconditionally, regardless of `--limit`. The figure and that rationale
+# were set in commit 919982c (17 Sept 2026) and this constant is now their only owner
+# — the plan file that carried them was consolidated away on 20 September, and until
+# 22 September this line still quoted "at most 10 per batch" from a file that had not
+# said it for two days. A citation outlives the sentence it cites; prefer owning the
+# figure here to pointing at prose that can be edited underneath it.
+BATCH_HARD_CEILING = 10
 
 
 def load_structure_order():

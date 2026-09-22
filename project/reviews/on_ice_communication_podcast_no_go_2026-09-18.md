@@ -73,7 +73,7 @@ carried completely and accurately.
   tested under the fixed prompt failed, for overlapping but not identical
   reasons, and one produced a new failure mode (invented medical certainty)
   the existing constraint language does not name. See
-  [`PODCAST_AUTOMATION_LOCAL.md`](../plans/PODCAST_AUTOMATION_LOCAL.md) for
+  [`PODCAST_AUTOMATION_LOCAL.md`](podcast_automation_plan_consolidated_2026-09-20.md) for
   the consolidated conclusion and the decision this forces.
 
 ## What this record could not establish

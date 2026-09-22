@@ -32,9 +32,9 @@ full-corpus matrix construction, disjoint content-family waves, per-wave
 measurements, fresh review, and stop/go criteria.
 
 The detailed design remains in
-[`../plans/READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md).
+[`../plans/READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md).
 The local NotebookLM procedure remains in
-[`../plans/PODCAST_AUTOMATION_LOCAL.md`](../plans/PODCAST_AUTOMATION_LOCAL.md).
+[`../plans/PODCAST_AUTOMATION_LOCAL.md`](podcast_automation_plan_consolidated_2026-09-20.md).
 The active queue states that those files are specifications/procedures, not
 additional dispatch queues.
 

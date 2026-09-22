@@ -1,7 +1,7 @@
 # Key focus rollout — all 36 remaining documents, in one parallel wave
 
 **Date:** 17 September 2026. **HEAD at dispatch:** `2518476`. **Plan:**
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md)
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md)
 Workstream 1B. **Trigger:** the user asked directly for larger-scale, faster
 parallel progress on readability after several small, serial waves — this
 record covers the corrected response.

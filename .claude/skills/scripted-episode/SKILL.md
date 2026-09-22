@@ -6,8 +6,9 @@ description: Write a single-voice podcast script from one corpus document, for s
 # Writing a scripted episode
 
 **This skill replaces the NotebookLM workflow for any document it is used on.**
-Read `project/plans/PODCAST_AUTOMATION_LOCAL.md` first — it owns the direction,
-the costs and the engine decision. This file owns **how a script is written.**
+Read `project/plans/OPEN_ITEMS.md` (podcast section) first — it owns what is open,
+and `project/reviews/podcast_automation_plan_consolidated_2026-09-20.md` owns the
+direction, the costs and the engine decision. This file owns **how a script is written.**
 
 ## Why this exists
 

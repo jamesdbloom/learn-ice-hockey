@@ -4,7 +4,7 @@
 goaltender never to freeze the puck"*, 2026-09-14 10:10:20 +0100.
 **Working tree at measurement:** `git status --short` empty. `git diff --cached --name-only` empty.
 `git diff --name-only content/` empty. **The tree was clean and the index matched it** — stated
-because [`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md) requires it
+because [`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md) requires it
 and forbids claiming it when it is not.
 **Measured by:** the coordinator, 14 September 2026, with five read-only agents live. Every agent in
 that wave was read-only, so no checker in this record raced a writer.
@@ -41,7 +41,7 @@ in release one. Either (a) the budget is restated as *"the required conditions o
 spoken unit as their instruction, measured on the `md_to_speech` extraction"* — a contract the corpus
 can actually hold — or (b) a short-form audio path is a separate deliverable with its own plan. The
 plan itself already separates the generation workflow into
-[`PODCAST_AUTOMATION_LOCAL.md`](../plans/PODCAST_AUTOMATION_LOCAL.md) and says this plan *"owns only
+[`PODCAST_AUTOMATION_LOCAL.md`](podcast_automation_plan_consolidated_2026-09-20.md) and says this plan *"owns only
 the audio learning contract and whether pilot audio is current"* — which is consistent with (a).
 **This is a question for the owner, recorded here rather than decided by the coordinator.**
 

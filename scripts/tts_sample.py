@@ -2,8 +2,9 @@
 """Synthesise one script on every TTS engine we have credentials for.
 
 ⚠️ NOT A CHECKER AND NOT A GATE. A one-shot comparison harness for the ear test
-that `project/plans/PODCAST_AUTOMATION_LOCAL.md` says must happen before any
-engine decision. It writes audio to a directory you name and touches nothing else.
+that `project/plans/OPEN_ITEMS.md` says must happen before any engine decision;
+`project/plans/PODCAST_MANUAL_STEPS.md` is the step-by-step, with per-vendor signup
+links and the sample to feed this harness (`project/tts_ear_test_sample.txt`). It writes audio to a directory you name and touches nothing else.
 
 WHY IT EXISTS
 -------------
@@ -210,8 +211,8 @@ def main(argv=None) -> int:
 
     print(f"\ntts_sample: {ran} synthesised, {skipped} skipped, {failed} failed")
     if skipped:
-        print("Set the missing keys and re-run; see PODCAST_AUTOMATION_LOCAL.md "
-              "for the minimum setup steps per vendor.")
+        print("Set the missing keys and re-run; see project/plans/PODCAST_MANUAL_STEPS.md "
+              "step 2 for the minimum setup steps per vendor.")
     # ⚠️ Measured 19 September 2026: with every engine skipped or failed and
     # zero synthesised, this returned 0 unconditionally — a clean exit code on
     # a run that produced no audio at all. An agent that checks the exit code,

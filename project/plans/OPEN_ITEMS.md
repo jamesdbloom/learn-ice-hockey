@@ -42,16 +42,32 @@ action remains on any of them. **Kadaza and FeedSpot submissions (site and podca
 the user, 22 September 2026** — see "Genuinely open" below for what's left of the traffic-plan
 marketing backlog.
 
-## Design specifications, not dispatch queues
+## The one-plan rule, and the two files that broke it
 
-[`READABILITY_AND_DUAL_AUDIENCE.md`](READABILITY_AND_DUAL_AUDIENCE.md) — the Key Focus / dual-audience
-design principles this corpus is written under. [`PODCAST_AUTOMATION_LOCAL.md`](PODCAST_AUTOMATION_LOCAL.md)
-— local NotebookLM/TTS pipeline operations, including the podcast-vs-corpus divergence question (its
-own open item, owned there — not duplicated here).
-[`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md) — **the owner's own worklist**: the AWS SSO
-login, the TTS vendor signups with live URLs, the ear test, and the listening pass. Written for a
-human, not an agent; added 22 September 2026 at the owner's request. Do not duplicate any of the
-three files' specifications here; executable corpus-content work is tracked in this file.
+⚠️ **This is the only plan.** CLAUDE.md has said so since 24 August 2026, when commit `ec70b16`
+consolidated four plan files into this one *"because 'what is open' had no single answer and items
+were rediscovered rather than read."* On 14 September commit `933ea01` created two more plan files
+anyway, and on 20 September this file grew a *"Design specifications, not dispatch queues"* section
+to accommodate them retroactively. **The symptom the 24 August commit predicted duly recurred** — on
+22 September, answering "is the readability work done?" required reading three files, and a podcast
+item recorded here as open had been fixed in its own evidence file three days earlier and nobody saw.
+
+**Closed 22 September 2026:**
+
+- `READABILITY_AND_DUAL_AUDIENCE.md` → **moved** to
+  [`project/readability_and_dual_audience.md`](../readability_and_dual_audience.md). It is a design
+  specification, not a plan — a sibling of `content_style_guide.md` and `review_process.md`. Its open
+  threads are rows in this file now.
+- `PODCAST_AUTOMATION_LOCAL.md` → **deleted**; its open items are rows in this file, and its history
+  was already in
+  [`project/reviews/podcast_automation_plan_consolidated_2026-09-20.md`](../reviews/podcast_automation_plan_consolidated_2026-09-20.md).
+- [`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md) **stays, deliberately.** It is the owner's own
+  worklist — an AWS login, vendor signups, an ear test, a listening pass — and it is not a dispatch
+  queue for an agent. It is the one exception, at the owner's instruction, 22 September 2026.
+
+⚠️ **Do not create a third plan file.** If something is open, it is a row here. If it is a standing
+rule or a design, it belongs in `project/` beside the style guide. There is no third category, and
+the two times one was invented, this is what it cost.
 
 **`list_sites_content_and_traffic_plan_2026-09-20.md` relocated to `project/reviews/` on 21 September**
 — every content-actionable item it produced is closed (see coverage above); it is kept there as
@@ -87,7 +103,7 @@ record.
 - **A TTS chunk boundary can silently strip a scope gate** from an instruction in a neighbouring
   sentence — verify safety-relevant prose by rendering and reading the actual chunk, not by reading
   Markdown.
-- **`.agents/`, `.codex/`, `AGENTS.md` are untracked and un-ignored on purpose** — mirrors of this
+- **`.agents/` and `.codex/` are untracked and un-ignored on purpose** ⚠️ **(this note named a third, `AGENTS.md`, until 22 September 2026, when a sweep found it absent from the working tree — untracked, so git cannot say when it went; not restored, and not this session's to restore)** — mirrors of this
   project's tooling for a different agent runner. `check_secrets.py` is clean on them; the only real
   risk is a future blanket `git add -A` sweeping them in, which is already blocked by both `git-guard.sh`
   and this file's own rule above. Do not re-raise this as a fresh finding; do not delete them without
@@ -111,35 +127,103 @@ record.
 
 ## Genuinely open
 
-- **Monthly traffic measurement — genuinely outstanding, outside this environment's scope.** Needs
-  an ongoing cadence this session can't hold open. See
-  `project/reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 3–4 for detail.
-  (Kadaza and FeedSpot submissions are both done — see coverage above.) ⚠️ **Outreach to
-  EIHA/clubs/rinks/coaches was removed from this file on 22 September 2026 at the owner's
-  instruction** — a longer-term item they will do naturally at the right time, deliberately not
-  tracked. It is recorded here as a removal, not a closure, so nobody re-derives it from the traffic
-  plan and files it as a fresh gap. **Do not re-add it.**
-- **Podcast work — the engineering backlog is owned in
-  [`PODCAST_AUTOMATION_LOCAL.md`](PODCAST_AUTOMATION_LOCAL.md), and the owner's own manual steps in
-  [`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md).** Neither is duplicated here (see "Design
-  specifications" above); that includes the podcast-vs-corpus divergence question, which is tracked
-  in the first of those. The pipeline is **blocked on two things only a human can do** — an ear test
-  across TTS engines, and a listening pass on the two episodes cleared by transcript alone.
+### Podcast — engineering (absorbed from `PODCAST_AUTOMATION_LOCAL.md`, 22 September 2026)
 
-- **Readability and dual-audience: NOT complete, and the residue is three named threads, not a
-  sweep.** Re-measured 22 September 2026, live, not quoted from the file:
-  `check_readability_census.py openers` reports **39 of 39 prose — done**;
-  `check_readability_census.py markers` reports **331 markers across 32 documents, 16 still
-  arriving with zero prose after their heading**. ⚠️ **That 16 is a worklist, not a defect list** —
-  several are orientation diagrams likely correct as they stand, and the tool prints the per-document
-  breakdown, so **run it rather than quoting this figure**. The other two threads are in
-  [`READABILITY_AND_DUAL_AUDIENCE.md`](READABILITY_AND_DUAL_AUDIENCE.md) under "Open threads":
-  caption safety/rule-scope routing (open-ended by nature, re-investigate from scratch), and the
-  **seven-layer pilot rewrite, which needs an owner decision before any work is dispatched** — it has
-  not shipped in either pilot document, and whether the seven named layers are still the target, or
-  whether Key focus + Go deeper + the summary sections is the corpus's settled shape, is a question
-  nobody has put to the owner. **Do not dispatch against Phase 2's acceptance criteria until that is
-  answered.**
+**Orientation.** Episodes are synthesised from single-voice scripts through `scripts/md_to_speech.py`
+/ `scripts/tts_sample.py` (Polly generative `Amy`, en-GB) — **not** NotebookLM's two-host Audio
+Overview. Direction set by the owner 18 September 2026, commit `3aa176f`. Two episodes are fully
+synthesised and cleared by text review: `skating` (17.7 min) and `equipment` (85.4 min). **Nobody has
+listened to either by ear.** Full history:
+[`../reviews/podcast_automation_plan_consolidated_2026-09-20.md`](../reviews/podcast_automation_plan_consolidated_2026-09-20.md).
+⚠️ **The audio, the scripts and episode three's provenance now live at
+`~/Documents/personal/ice_hockey_scripted_episodes/` — outside this repository**, rescued
+22 September from an ephemeral scratchpad. `~/whisper-models/ggml-base.en.bin` (147,964,211 bytes)
+is likewise outside it. Neither is backed up by this repo.
+
+- **`source-verifier` has never been run on any podcast script.** The episode-three rules pass
+  explicitly declared the script's research layer — meta-analyses, effect sizes, a retracted study
+  and its retraction notice, cohort and VO2/specialisation figures — entirely unverified, calling it
+  *"the larger half"* of the script. This is a **missing review dimension**, not a backlog row: a
+  script gets whatever the coordinator happens to dispatch, unlike `content/`, which gets all five
+  reviewing agents plus a commit gate. ⚠️ **Highest-value podcast item open.**
+- **`scripts/md_to_speech.py` writes a synthesis engine into every manifest that does not exist in
+  this region.** Re-verified 22 September: line 3798 emits `"voice": {"engine": "long-form", ...}`
+  while line 3958's own printed cost table says `long-form` is *"unavailable in eu-west-2"*. Never
+  touched since introduced. Not a live blocker — `build_podcast_audio.py` does not call Polly — but a
+  trap for whoever writes the real synthesis step. Fix: name the engine actually used (`generative`)
+  or omit the field. **Shared-tool change: make it between waves, not during one.**
+- **`check_pointers.py` cannot be run against an episode script without a small tool change.**
+  Re-verified 22 September: `main()` hardcodes `root / "content"` (lines 102 and 175), with no
+  argument parsing. It is the closest existing tool to the link-layer safety class found in the
+  skating episode — a spoken sentence routing a listener to another document with no clickable route
+  — but its patterns match only in-document layers, not a pointer to a sibling document. **Both
+  halves need doing**; extending the path argument alone gains nothing.
+- **Whisper transcription has a model again but has never been run.** `~/whisper-models/ggml-base.en.bin`
+  fetched 22 September at 147,964,211 bytes — byte-identical to the size on record, so prior
+  transcript-based verdicts remain comparable. ⚠️ **Fetching a model is not verifying with it**; no
+  transcript has been produced. `ffmpeg -i EPISODE.mp3 -ar 16000 -ac 1 -c:a pcm_s16le OUT.wav` then
+  `whisper-cli -m ~/whisper-models/ggml-base.en.bin -otxt -np -nt -f OUT.wav -of OUT`. Known trap:
+  whisper mangles proper nouns (*"Brodeur"* → *"Brodua"*) — search a transcript semantically, never
+  for an exact name.
+- **Whether provenance pointers deserve a checker — undecided, and now evidenced.** No checker reads
+  an episode's `provenance.md`, so a correct quotation under a wrong line pointer passes everything
+  silently. One such instance existed and **was repaired by hand on 19 September**; it survived in
+  this project's plan as an open item until 22 September because nothing connects the two. A worklist
+  if ever built, **never a gate** — a pointer going stale after a source re-extraction is not a defect.
+- **The `ice-hockey` AWS profile's SSO token expires, and its failure reads as a Polly outage.** Found
+  22 September: `Token has expired and refresh failed`. ⚠️ **On 18 September the plan and a status
+  report both said TTS was blocked when Polly had been reachable all along; an expired token is the
+  mirror of that** — a working integration reporting as broken. **Check the token before concluding
+  anything about Polly.** The fix needs a browser and is therefore the owner's: step 0 of
+  [`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md).
+
+### Podcast — the owner's own steps
+
+- **Blocked on two things only a human can do:** an **ear test** across TTS engines, and a
+  **listening pass** on the two episodes cleared by transcript alone. Both are laid out with verified
+  URLs in [`PODCAST_MANUAL_STEPS.md`](PODCAST_MANUAL_STEPS.md). ⚠️ **Nothing in the engineering list
+  above unblocks these, and they do not unblock each other** — the engine decision and the "does the
+  scripted route sound right at all" question are separate.
+
+### Readability and dual audience (absorbed from `READABILITY_AND_DUAL_AUDIENCE.md`, 22 September 2026)
+
+The design spec now lives at
+[`../readability_and_dual_audience.md`](../readability_and_dual_audience.md). What is **open**:
+
+- **The seven-layer pilot rewrite needs an owner decision before anything is dispatched.** Simple
+  summary / Recognition cues / Understand it / If your team differs / Go deeper, as literal named
+  layers, never shipped in either pilot document — `getting_started.md` and `rules_primer.md` both
+  carry Key focus, Go deeper, Common Mistakes and Key Takeaways instead. **The question nobody has
+  put to the owner:** is the seven-layer IA still the target, or is Key focus + Go deeper + the
+  summary sections the corpus's settled shape? ⚠️ **Do not dispatch against the spec's Phase 2
+  acceptance criteria until this is answered** — the spec's own phases are original design intent,
+  not a description of what shipped.
+- **Marker residue: a worklist, not a defect list.** Measured 22 September:
+  `python3 scripts/check_readability_census.py markers` reports **331 markers across 32 documents,
+  16 arriving with zero prose after their heading** (was 286 on 14–15 September). Several of the 16
+  are orientation diagrams likely correct as they stand. ⚠️ **Run the tool rather than quoting that
+  figure** — it prints the per-document breakdown, and a count of an actively edited corpus goes
+  stale silently. Openers are **done**: 39 of 39 prose, confirmed the same day.
+- **Caption safety/rule-scope routing is open-ended by nature, not a fixed-size backlog.** Round 77's
+  four flagged blocks were all traced and resolved 21 September (three already routed; the fourth, a
+  wall-contact receiving-posture tail missing from `game_management.md`, fixed across all four
+  layers). **That does not close the category.** Any future pass should re-investigate from scratch —
+  read `../reviews/caption_routing_and_game_management_propagation_2026-09-21.md` and
+  `../reviews/round_77_the_caption_could_not_be_shortened.md` first. ⚠️ **The 25–50 word caption
+  target was found structurally unreachable** and that is an accepted negative result: 188 of 204
+  captions were shortened (−37%), but only 14 landed in the band. The remaining work is **routing**
+  safety and rule material into body prose, not further compression.
+
+### Marketing and measurement
+
+- **Monthly traffic measurement — genuinely outstanding, outside this environment's scope.** Needs an
+  ongoing cadence this session can't hold open. See
+  `../reviews/list_sites_content_and_traffic_plan_2026-09-20.md` Phases 3–4. (Kadaza and FeedSpot
+  submissions are both done — see coverage above.) ⚠️ **Outreach to EIHA/clubs/rinks/coaches was
+  removed from this file on 22 September 2026 at the owner's instruction** — a longer-term item they
+  will do naturally at the right time, deliberately not tracked. Recorded as a **removal, not a
+  closure**, so nobody re-derives it from the traffic plan and files it as a fresh gap. **Do not
+  re-add it.**
 
 ## Push status
 

@@ -46,8 +46,9 @@ position. It will not queue a document speculatively: a document already in
 the manifest is left alone unless named explicitly with `--stale DOC_ID
 --reason "..."`, because re-running 37 already-fine episodes through
 NotebookLM on a guess is exactly the rate-limit risk this tool exists to
-prevent. See the script's own docstring and `PODCAST_AUTOMATION_LOCAL.md`
-for the full queue/checkpoint/batching contract.
+prevent. The script's own docstring is now the authority on the queue,
+checkpoint and batching contract — `podcast_queue.py` owns `BATCH_HARD_CEILING`
+and its rationale outright. What is open is in `project/plans/OPEN_ITEMS.md`.
 
 `getting-started/getting_started` is deliberately excluded from the queue —
 it already has an episode and does not need a new one — but it still counts

@@ -1625,7 +1625,7 @@ name legitimately — it is a real file and must not be swept.**
 # Readability and dual-audience — rows opened 14 September 2026
 
 Opened by the release-one work on
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md). **Evidence for every row is in
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md). **Evidence for every row is in
 `project/reviews/readability_*_2026-09-14.md`** — the baseline, the wave-1 findings and layer spec, the
 rules verification, and the disclosures-and-corrections record. **Read the owner, not this summary.**
 
@@ -1876,7 +1876,7 @@ the rule — because none read the Note against the rule it annotates.**
 ### The three owner instructions of 14 September 2026 — measured, before any work
 
 The instructions are recorded in full in
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md) and the placement one now
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md) and the placement one now
 governs [`content_style_guide.md`](../content_style_guide.md). What follows is what a census found,
 so a brief does not have to guess.
 

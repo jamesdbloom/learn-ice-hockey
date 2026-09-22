@@ -6,9 +6,9 @@ That archive is evidence, not a dispatch queue. Completed, retracted, duplicated
 and historical material must stay out of this file.
 
 This is the only active queue. Detailed design for the top priority is in
-[`READABILITY_AND_DUAL_AUDIENCE.md`](../plans/READABILITY_AND_DUAL_AUDIENCE.md). Local
+[`READABILITY_AND_DUAL_AUDIENCE.md`](../readability_and_dual_audience.md). Local
 NotebookLM operations are in
-[`PODCAST_AUTOMATION_LOCAL.md`](../plans/PODCAST_AUTOMATION_LOCAL.md). Do not duplicate
+[`PODCAST_AUTOMATION_LOCAL.md`](podcast_automation_plan_consolidated_2026-09-20.md). Do not duplicate
 their specifications here.
 
 The two linked files are specifications and operating procedures, not additional
