@@ -565,6 +565,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_zones.py, check_tables.py, check_disclosures.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
                     check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
+                    check_layer_echo.py,
                     check_quote_drift.py, check_caption_hosts.py,
                     check_facts_antecedents.py.
                     md_to_speech.py
@@ -644,6 +645,20 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     the host decides. ⚠️ AND CAPTION TEXT IS OFTEN A SHARED CONSTANT — editing one
                     to repair one host silently rewrites every caption that imports it. Check
                     `grep -ln '<CONSTANT>' site/src/diagrams/*.mjs` first.
+                    check_layer_echo.py — the five fixed SUMMARY LAYERS restating each other
+                    instead of adding to each other. ⚠️ Added 22 September 2026 after the owner
+                    reported that Key focus, Overview and Key Takeaways read one after another felt
+                    REPETITIVE rather than reinforcing. It is a measured failure mode, not a worry:
+                    `project/reviews/corpus_structure_measurements.md` row P2 found Overviews
+                    restating their own facts blocks VERBATIM and that repair reached only 5 of 9
+                    documents. ⚠️ Repetition is a CORRECTNESS risk too — the style guide's own
+                    *"a third restatement is one more place for a correction to fail to reach"*.
+                    ⚠️ WORKLIST: the target is NEVER zero. A safety limb, an honest disclosure and a
+                    definition matching its owner all score here and are all CORRECT, and a document
+                    scoring 0% may simply have failed to propagate. The test is whether each layer
+                    does a DIFFERENT JOB — instruction / map / mechanism / failure mode / kernel —
+                    not whether it shares words. ⚠️ NEVER trade a caveat away to lower a score.
+                    ⚠️ NO FIGURE IS WRITTEN HERE — run it; `--show` prints the shared phrases.
                     check_caption_echo.py — captions that REPEAT the prose block now directly
                     above them, which is the defect the caption wave and the marker wave create
                     together and neither creates alone. ⚠️ Three kinds of overlap are CORRECT and

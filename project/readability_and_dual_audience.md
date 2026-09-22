@@ -149,6 +149,43 @@ but the distinction must remain visible in both HTML and audio decisions:
 7. **Go deeper:** detailed evidence, rule comparisons, edge cases, provenance, and technical full-ice
    application.
 
+### ⚠️ Each layer must do a DIFFERENT JOB
+
+**Added 22 September 2026 on the owner's instruction, and it outranks the layer list above.** The
+layers are supposed to reinforce and add detail. They had instead become repetitive — Key focus, the
+Overview and the Key Takeaways carrying the same content in the same words, so that meeting them one
+after another felt like being told one thing three times. **It is a measured failure mode here**:
+`project/reviews/corpus_structure_measurements.md` row P2 found Overviews restating their own facts
+blocks verbatim, and that repair reached only 5 of 9 documents.
+
+**Same fact, different job, is reinforcement and is the goal. Same fact, same job, same words, is the
+defect.**
+
+| Layer | Its job, and only its job |
+|---|---|
+| Key focus | **The instruction** — what to do, plus the condition that makes it safe or legal |
+| Overview | **The map, not the trip** — what this is, why it matters, what the document covers, and the hedges and alternatives that qualify the instruction |
+| body | **The mechanism** — how and why it works, the worked example, the named alternatives |
+| Common Mistakes | **The failure mode** — what getting it wrong looks like from the inside |
+| Key Takeaways | **The kernel** — what is worth retaining a week later |
+
+⚠️ **Three kinds of repetition are MANDATORY and cutting them damages the corpus**, the same three
+`check_caption_echo.py` carries: a **safety or legal condition** must sit in the same visible and
+spoken unit as its instruction, in every layer that carries the instruction; an **honest disclosure**
+voiced in two layers is propagation, because each layer is voiced alone with a 300 ms break either
+side; and a **definition must match its owner word for word**, because rewording to look less
+repetitive is how a definition drifts.
+
+⚠️ **So the fix is differentiation, never deletion** — cut the restatement of the *instruction*, keep
+every caveat, hedge, alternative and disclosure. **Never trade a caveat away to make a layer look
+less repetitive.** And repetition is a correctness risk as well as a reading one:
+`content_style_guide.md` has it that *"a third restatement is one more place for a correction to fail
+to reach."*
+
+**The measure is `scripts/check_layer_echo.py`** — a worklist, never a gate. ⚠️ **The target is not
+zero**, and a document scoring zero may simply have failed to propagate. The tool cannot tell
+restatement from propagation; only reading both layers can.
+
 Do not hide a safety warning, medical restriction, rule exception, applicability condition, or honest
 evidence limit merely to make a page look short. Any condition needed to act safely or legally must
 appear in the same visible and spoken unit as the instruction. Only rationale, further examples,
