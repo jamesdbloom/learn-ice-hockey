@@ -105,10 +105,18 @@ Common Mistakes, Key Takeaways and the ` ```facts ` blocks. **Rules stay — the
 words, not the spine.**
 
 ⚠️ **The Key Takeaways are the worst offender and three agents reported it independently without
-being asked:** `winger.md` KT8 is **~1,300 words of crease law voiced aloud as ONE unit**;
-`switching_positions.md` KT6 is **~1,100 words** and almost entirely citation; `shooting.md` KT6 is
-**~1,050 words**. One agent's verdict: ***"Read on their own with the body absent, the takeaways say a
-winger's job is knowing Rule 69."***
+being asked:** `winger.md` KT8, `switching_positions.md` KT6 and `shooting.md` KT6 were each **crease
+law or citation voiced aloud as ONE unit**, the first at **3.0× its next largest sibling**. One
+agent's verdict: ***"Read on their own with the body absent, the takeaways say a winger's job is
+knowing Rule 69."***
+
+⚠️⚠️ **NO WORD COUNT IS WRITTEN HERE, AND THE REASON IS THIS PARAGRAPH'S OWN HISTORY.** It carried
+three — *"~1,300"*, *"~1,100"* and *"~1,050"* words. ⚠️ **An agent told to measure rather than inherit
+found the first was 956, and it had ALREADY BEEN CARRIED INTO A BRIEF.** ⚠️⚠️ **The repair then
+replaced that one figure with 248 and LEFT THE OTHER TWO STANDING — a commit gate measured them the
+same day at 428 and 290, so the sentence was simultaneously correcting one stale number and shipping
+two.** **A figure copied out of its owner goes stale silently, and repairing one figure in a list is
+how a list stays wrong.** **Run `check_tactics_ratio.py --file <stem> --by-layer`.**
 
 ⚠️ **A Key Takeaway is a KERNEL, not a second Common Mistakes and not a rules appendix.**
 `check_layer_echo.py` scored `switching_positions.md`'s Common Mistakes → Key Takeaways at **20.1%**,

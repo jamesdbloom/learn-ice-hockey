@@ -17,7 +17,7 @@
 
 **Before you turn up to any session, ask what gear is required, what standard it is, and whether there is contact** — arriving at a full-contact session expecting a skills session is how people get hurt.
 
-⚠️ **If you play in Britain, a neck laceration protector is mandatory for you at every level in all four home nations, adults included** — and in England and Wales it covers training as well as games. USA Hockey's adult exemption does not reach you. **Under the In-House Rules, which cover IHUK, England Ice Hockey and SIHA competitions, an official who finds you without one penalises you on the spot rather than warning you first**; the Elite League writes its own Rule 9.12 instead, which warns first and then gives a minor, and which covers warm-ups and practice too. Read [UK and England Rules](../foundation/uk_rules.md) first.
+**If you play in Britain, a neck laceration protector is mandatory for you at every level in all four home nations, adults included** — and in England and Wales it covers training as well as games. USA Hockey's adult exemption does not reach you. ⚠️ **Under the In-House Rules, which cover IHUK, England Ice Hockey and SIHA competitions, an official who finds you without one penalises you on the spot rather than warning you first**; the Elite League writes its own Rule 9.12 instead, which warns first and then gives a minor, and which covers warm-ups and practice too. Read [UK and England Rules](../foundation/uk_rules.md) first.
 
 **Start a level below where your pride puts you** — judgement rather than sourced guidance, but a real asymmetry: moving up part-way through a season is easy and welcomed, and moving down is neither.
 

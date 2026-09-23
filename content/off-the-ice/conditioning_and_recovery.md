@@ -18,7 +18,7 @@
 
 **You do not have to be knocked out to have a concussion** — loss of consciousness occurs in fewer than 10% of cases and is not required to diagnose one.
 
-⚠️ **Whether body checking is legal where you play depends on your age group, gender category, league and country — never assume, ask.** The rules differ sharply by rulebook and, in Britain, by competition regulation rather than by age alone; getting it wrong is a penalty that runs the whole way up to a match penalty.
+**Whether body checking is legal where you play depends on your age group, gender category, league and country — never assume, ask.** The rules differ sharply by rulebook and, in Britain, by competition regulation rather than by age alone; ⚠️ **getting it wrong is a penalty that runs the whole way up to a match penalty.**
 
 **Your groin is probably weak relative to the muscles that oppose it, and that was a measured risk factor in professional players** — below 80% of abductor strength, 17 times more likely to strain an adductor. Strengthen it deliberately, but no single exercise is proven to prevent the injury, and persistent groin or hip pain needs a physiotherapist, not more stretching.
 

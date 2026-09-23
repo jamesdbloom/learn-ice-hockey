@@ -7,7 +7,7 @@
 
 ## Key focus
 
-⚠️ **On the wall, the posture you take contact in is not a preference, and it outranks every other instruction in this document.** Never take contact with your back to the boards, and never duck. Get your skates parallel to the wall and take it on your forearm and hip, head up and chin off your chest — not on the point of your shoulder, and not the whole shoulder if you can help it. If you are already facing the wall and cannot turn, get your stick and gloves up and spread out on the glass, with no head contact at all. [Body Contact and Battles](body_contact_and_battles.md) owns the full rule and the evidence behind it.
+**On the wall, the posture you take contact in is not a preference, and it outranks every other instruction in this document.** ⚠️ **Never take contact with your back to the boards, and never duck.** Get your skates parallel to the wall and take it on your forearm and hip, head up and chin off your chest — not on the point of your shoulder, and not the whole shoulder if you can help it. If you are already facing the wall and cannot turn, get your stick and gloves up and spread out on the glass, with no head contact at all. [Body Contact and Battles](body_contact_and_battles.md) owns the full rule and the evidence behind it.
 
 **Head up, always, and look before the puck arrives.** Take your look over both shoulders while the puck is travelling to you, not after it arrives — by then a checker is on you and the information is out of date. If you have to look at the puck to pass it, your passing is limited by your stickhandling.
 

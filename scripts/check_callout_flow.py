@@ -78,6 +78,58 @@ SUMMARY = ("## Common Mistakes", "## Key Takeaways", "## Check yourself")
 PRE = "(before the first ## — Key focus / Overview)"
 
 
+# ⚠️ THE SITE'S OWN PANEL TEST, AND IT IS NOT `classify()`.
+#
+# `classify()` answers "what STRUCTURAL kind of line is this" and is correct at it.
+# It does NOT answer "does this render as an amber panel", and those two questions
+# come apart on exactly the lines this corpus is made of.
+#
+# `site/src/plugins/remark-corpus.mjs:617` reads:
+#     if (!WARNING_RE.test(toText(node))) return;
+# — the anchored `/^\s*(⚠|❗|🚫)/u` applied to the paragraph's FLATTENED text. So:
+#
+#   `**⚠️ Looking does not protect you.**`   -> toText drops the `**`, marker is
+#                                               first -> PANELS. A raw-line regex
+#                                               says it does not. WRONG.
+#   `**Bold lead.** ⚠️ **Hazard clause.**`   -> marker is not first after
+#                                               flattening -> INLINE, no panel.
+#                                               `classify()` says "own paragraph".
+#
+# Both misreadings were made in one session, in opposite directions. An agent's
+# first census used a raw-line regex and reported the worst-shaped page of its four
+# as clean; it caught itself by rebuilding the check against the real AST. The
+# coordinator made the mirror-image error and told another agent to use the raw-line
+# form. Measured on the real `equipment.md` repair: `classify()` returned
+# "own paragraph" before AND after, while the site went panel -> no panel.
+#
+# ⚠️ WHAT THIS DOES AND DOES NOT CHANGE. `renders_as_panel()` is the authority for
+# panel-vs-inline and is exposed as `--panels`. The DEFAULT count still runs through
+# `classify()` and is deliberately unchanged: `classify()` answers a different
+# question (does this callout interrupt a section), its docstring records a 3x
+# undercount from getting its branch order wrong once already, and every figure in
+# project/ was measured with it. Changing the default would silently invalidate
+# those. So the two counts disagree ON PURPOSE -- `--panels` is the one that
+# predicts the site, and the gap between them is the amber panels that moving a
+# marker off a paragraph's opening removed while the spoken "Important." survived.
+# Nine pages were repaired that way; the default's numbers did not move, and that
+# is why `--panels` exists rather than a rewrite of `classify()`.
+INLINE_EMPHASIS = re.compile(r"(\*\*|__|\*|_|`)")
+
+
+def flattened(stripped):
+    """The paragraph text as `toText()` yields it — inline emphasis removed."""
+    return INLINE_EMPHASIS.sub("", stripped)
+
+
+def renders_as_panel(stripped):
+    """True when the site wraps this paragraph in `<aside class="callout callout-warning">`.
+
+    Mirrors `remark-corpus.mjs:617` exactly: the anchored marker regex against the
+    FLATTENED text. This is the authority for panel-vs-inline; `classify()` is not.
+    """
+    return bool(re.match(r"^\s*(\u26a0|\u2757|\U0001f6ab)", flattened(stripped)))
+
+
 def classify(stripped):
     """Which structural kind of line this is.
 
@@ -171,6 +223,9 @@ def main():
                     help="runs of consecutive flow-breaking callouts")
     ap.add_argument("--by-section", action="store_true",
                     help="group a document's flow-breaking callouts by the section holding them")
+    ap.add_argument("--panels", action="store_true",
+                    help="count paragraphs the SITE renders as amber panels, via the "
+                         "plugin's own flattened-and-anchored test (not classify())")
     ap.add_argument("--markers", action="store_true",
                     help="markers PER LINE -- shows which de-marks are free and which cost audio")
     ap.add_argument("--file", help="restrict to one document (substring match on the path)")
@@ -194,6 +249,18 @@ def main():
         return 0
 
     fb = flow_breaking(rows)
+
+    if args.panels:
+        panelled = [(str(p), n, t) for p, n, _, _, _, t in rows if renders_as_panel(t)]
+        print(f"check_callout_flow: {len(panelled)} paragraphs render as amber panels "
+              f"of {len(rows)} marker-bearing lines\n")
+        print("\u26a0\ufe0f  This is the SITE's test (remark-corpus.mjs WARNING_RE over the")
+        print("   FLATTENED paragraph), not classify(). The two disagree on purpose --")
+        print("   see the note beside renders_as_panel(). A paragraph that is NOT here")
+        print("   reads as prose and still speaks its \"Important.\".\n")
+        for f, n, t in panelled[:40]:
+            print(f"  panel  {f}:{n}  {t[:70]}")
+        return 0
 
     if args.markers:
         rows_m = [(str(p), n, t.count(MARKER), t) for p, n, _, _, _, t in rows]
