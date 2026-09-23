@@ -1,3 +1,5 @@
+*Do not paste this prompt on its own. `.claude/skills/notebooklm-episode/prompt_constraints.md` is prepended to it and is marked as overriding — it carries the accuracy and safety constraints, and the register instruction that tells the hosts to lead with what a player does rather than with the rulebook. This file is the generic teaching prompt and deliberately says nothing about hockey; the corpus-specific instructions live in exactly one place so that a correction to them cannot reach one copy and miss another.*
+
 Create a long-form, highly detailed educational podcast discussion that extracts and teaches the most important knowledge from the source material.
 The goal is not merely to summarise the content, but to help the listener achieve deep understanding, long-term retention, accurate recall, and practical application of the material.
 Assume the listener wants to master the subject well enough to:

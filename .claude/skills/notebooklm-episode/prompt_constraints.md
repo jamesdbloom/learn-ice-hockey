@@ -5,6 +5,86 @@ first and must be marked as overriding — see SKILL.md Step 2 for why.*
 
 ---
 
+## What these sources are, and the register that matches them
+
+*Read this first, because it decides the SHAPE of the episode. It overrides every
+style instruction in the teaching prompt. **It is subordinate to the numbered
+accuracy and safety constraints below** — where this section and any numbered
+constraint pull in different directions, the numbered constraint wins, every
+time. Nothing here is permission to say less, hedge less, or scope less.*
+
+**These documents teach somebody how to PLAY.** Each one is about a position, a
+system or a skill — where to be, what to do, what to do instead when it goes
+wrong. It is not a rulebook and it is not a rules summary. The rules are in
+there, in full, and they matter — but they are background to the playing, not
+the spine of it. **An episode that re-sorts one of these documents into a rules
+lecture has inverted its source**, and the listener finishes knowing the tariff
+instead of the game.
+
+**The source's own structure tells you the shape, and you should follow it
+rather than impose one:**
+
+- **`## Key focus`** — the things a player should most focus on to play
+  effectively, stated as things a player *does*. **This is the episode's spine.**
+  Open on it, and come back to it.
+- **`## Overview`** — discusses those same points: why they are right, when they
+  apply, and what changes if the listener's team plays a different system.
+- **the numbered body sections** — the situations, in the source's order, with
+  the rules a player actually meets in play.
+- **`## Common Mistakes`** — what goes wrong, and what to do instead. Each
+  bullet's *instruction* is the part the listener needs; the penalty detail that
+  follows it is why it costs something.
+- **`## Check yourself`** — questions the document puts to the reader, each
+  naming the section that answers it. Retrieval material, already written.
+- **`## Key Takeaways`** — kernels, each written to the test *"what does a player
+  DO in that situation?"* Treat them as the answer to "if you only remember ten
+  things", not as a rules appendix.
+
+**Lead with what a player does; let the rule follow.** Within a segment, a
+paragraph, and a sentence: say the instruction first, then what it costs to get
+it wrong and which book prices it that way. Reversing that order is the single
+commonest way this material goes wrong on audio, because the listener hears the
+tariff and never reaches the instruction. **This is an ordering rule, not a
+trimming rule** — nothing is cut, and every scope, exception and book name that
+constraints 1 to 3 require is still said, in full, in the same breath.
+
+**The register, by the sources' own examples.** Sentences of this kind lead:
+
+- *"never pass the puck — or skate it — across the front of your own goal"*
+- *"a defender is goal side of their attacker"*
+- *"crash the net for the rebound"*
+
+Fine-grained mechanics do not lead: which way the push goes, the toe flick,
+stride recovery, grip pressure, blade cupping, hollow depth, the catalogue of
+dekes. **Teach them where the source teaches them — do not build a segment
+around them.** The test, and it settles most cases on its own:
+
+> **Does a teammate watching a shift notice this, or only a coach watching your
+> feet?**
+
+If a teammate notices it, it is the kind of thing the episode leads with. If
+only a coach watching your feet notices, it is mechanics.
+
+⚠️ **One exclusion from that test, and it is absolute: a safety point is never
+mechanics.** "Head up, always", "never turn your back to the boards", "never
+duck into a check", how to meet the wall, the checking-eligibility gate — these
+are governed by constraint 7 below and are stated every time, in full, wherever
+the source puts them. **The discriminator above decides what LEADS a segment. It
+never decides what is said.**
+
+**A rule earns the lead when the rule *is* the tactic.** *"Never put it over the
+glass from your own zone"* is a rule and a piece of tactical advice in one
+sentence; so is *"be onside"*; so is *"the crease is not yours — take the ice in
+front of it"*. Where the rule is the thing a player does, lead with it. Where the
+rule is the consequence of getting the tactic wrong, the tactic leads and the
+rule follows.
+
+**The instruction is never "say fewer rules".** Say every rule the source says,
+with every scope, exception, book name and qualification it attaches. Say them
+where the source puts them, behind the instruction they modify.
+
+---
+
 ## Accuracy and safety constraints — these override every style instruction below
 
 You are narrating a corpus that teaches people to play a **collision sport**.
@@ -232,7 +312,7 @@ or confidence, **these win**.
     unsettled"** and says **"ask your league"** about, restated as settled
     fact and broadened from one specific governing body to a whole class of
     reader the source never covers. Full record:
-    [`../../project/reviews/rink_map_podcast_retry_no_go_2026-09-18.md`](../../project/reviews/rink_map_podcast_retry_no_go_2026-09-18.md).
+    [`project/reviews/rink_map_podcast_retry_no_go_2026-09-18.md`](../../../project/reviews/rink_map_podcast_retry_no_go_2026-09-18.md).
 
     **So the constraint is now the general rule, not the list of examples.**
     Constraints 5 and 9's specific named patterns are real and still apply —

@@ -1,3 +1,5 @@
+*The short variant of `podcast_generation_prompt_longer.md`, kept for comparison. The shipped pipeline uses the longer one — see `.claude/skills/notebooklm-episode/SKILL.md` Step 2. If this one is ever used, `.claude/skills/notebooklm-episode/prompt_constraints.md` must be prepended to it and marked as overriding, exactly as it is for the longer prompt: it carries the accuracy and safety constraints and the tactics-first register instruction, and neither is repeated here.*
+
 Create a long, highly detailed educational podcast discussion that covers every important idea, concept, fact, argument, example, and insight from the source material.
 The primary goal is deep understanding and long-term memory retention, not just summarization.
 Structure the discussion so that:

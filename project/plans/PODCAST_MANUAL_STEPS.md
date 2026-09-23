@@ -74,13 +74,54 @@ nothing extra and needs no new account.** Each additional engine is a separate s
 | Google Gemini-TTS | new signup; free tier, no card | free to try, and the same key covers Chirp 3 HD |
 | Google Chirp 3 HD | the Gemini key **plus** a billing-enabled GCP project with the API switched on | Google's premium en-GB line |
 
-⚠️ **No per-vendor price is written in this table on purpose.** The one figure this project has
-actually measured is **$0.028 per minute of finished audio on Polly generative** — from the two
-real episodes, not from a rate card — which puts the 475-word sample at roughly **8 cents**.
-Every other vendor's price would be their marketing, restated by me from memory, and prices
-move. **Each signup step below links that vendor's own pricing page; read it there.** The
-sample is small enough that none of this should be material, but check rather than trust this
-paragraph.
+⚠️ **Only two vendors have a price here, and they are priced two DIFFERENT WAYS — read the next
+paragraph before comparing them.** Every other vendor's price would be their marketing, restated
+from memory, and prices move. **Each signup step below links that vendor's own pricing page; read
+it there.**
+
+- **Polly generative — $0.028 per minute of finished audio.** ✅ **MEASURED, from the two real
+  episodes, not from a rate card.** That puts the 475-word sample at roughly **8 cents**.
+- **ElevenLabs — see the costing below.** ⚠️ **NOT measured: a published rate card multiplied by a
+  character count.** Nobody has rendered a minute of this corpus on it.
+
+⚠⚠ **SO THE TWO NUMBERS ARE NOT LIKE FOR LIKE.** One is what this project actually paid; the other
+is what a price list says it would pay. **Treat the ratio as an order of magnitude, not a quote.**
+
+### ElevenLabs costing — the whole corpus
+
+**The two inputs, both reproducible:**
+
+| input | value | where it comes from |
+|---|---|---|
+| corpus size | **7,257,563 billed characters** (39 documents, 3,337 chunks) | `python3 scripts/md_to_speech.py --dry-run` |
+| audio length | **107.3 hours ≈ 6,438 minutes** at 220 wpm | `python3 scripts/check_counts.py` |
+| credit conversion | **1 text character = 1 credit** | elevenlabs.com/pricing, *"For V2 Multilingual models, 1 text character equals 1 credit"* |
+
+**So the whole corpus is 7,257,563 credits.** Published plans, fetched **23 September 2026** —
+⚠️ **re-read the page rather than trusting this table; the whole point of the paragraph above is
+that prices move:**
+
+| plan | $/month | credits/month | $/credit | months to cover the corpus | total |
+|---|---|---|---|---|---|
+| Starter | 6 | 30,000 | 0.000200 | 242 | $1,452 |
+| Creator | 22 | 121,000 | 0.000182 | 60 | $1,320 |
+| **Pro** | **99** | **600,000** | **0.000165** | **13** | **$1,287** |
+| Scale | 299 | 1,800,000 | 0.000166 | 5 | $1,495 |
+| Business | 990 | 6,000,000 | 0.000165 | 2 | $1,980 |
+
+⚠️⚠️ **NO OVERAGE RATE IS PUBLISHED ON THAT PAGE.** It states plan allowances and nothing about the
+price of a credit beyond them, so **every total above assumes you buy whole months and waste the
+remainder.** At the best published rate the corpus is **$1,198 of credit value** — but **no plan
+sells that bundle**, and the cheapest real path is the one that wastes least, not the one with the
+lowest headline.
+
+**Against the one measured figure:** Polly generative at $0.028/min × 6,438 minutes =
+**$180**. ⚠️ **ElevenLabs is roughly 6.6× that at its best published rate** — ⚠️ **subject to the
+not-like-for-like warning above.**
+
+✅ **AND THE COMPARISON SAMPLE IS FREE.** At 5.124 billed characters per word the 475-word passage
+is **~2,434 credits**, and the free tier is **10,000 credits/month** — it fits four times over.
+**Running step 2's ElevenLabs comparison costs nothing and needs no card.**
 
 **The minimum useful test is Polly + one challenger.** If you only want to do one signup, do
 **ElevenLabs** — it is the one whose quality claim the project has never been able to check.
@@ -99,7 +140,24 @@ Set up only the ones you picked. Each is a signup, a key, and one line in a file
    American — comparing her against en-GB `Amy` tells you about the accent, not the engine.
    Browse **https://elevenlabs.io/app/voice-library**, filter to English (UK), open a voice
    you like, and copy its **voice ID**. That goes in `ELEVENLABS_VOICE_ID` below.
-4. Pricing, if you want to check before running: **https://elevenlabs.io/pricing**
+   ✅ **ALREADY CHOSEN — the owner's preferred voice is `L0Dsvb3SLTyegXwtm47J`.** Use that unless
+   you are deliberately re-auditioning. ⚠️ **A voice id is an identifier, not a credential** — it
+   belongs in the environment beside the key, but it is not a secret and does not need the secret
+   store.
+4. ✅ **The API key is already stored**, in AWS Secrets Manager at
+   `ice-hockey-production/elevenlabs-api-key` (eu-west-2, account `ice-hockey`). Retrieve it into
+   the environment rather than pasting it anywhere:
+   ```bash
+   export ELEVENLABS_API_KEY=$(AWS_PROFILE=ice-hockey AWS_REGION=eu-west-2 \
+     aws secretsmanager get-secret-value \
+     --secret-id ice-hockey-production/elevenlabs-api-key \
+     --query SecretString --output text)
+   export ELEVENLABS_VOICE_ID=L0Dsvb3SLTyegXwtm47J
+   ```
+   ⚠️ **It is NOT in Terraform.** `infra/` does not manage it, so it is unmanaged drift, tagged
+   `ManagedBy=manual`. Importing it into state is a separate decision.
+5. Pricing, and the source for the costing above: **https://elevenlabs.io/pricing**
+   ⚠️ **Re-read it rather than trusting the table — it was fetched 23 September 2026.**
 
 ### 2b. OpenAI
 

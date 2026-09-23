@@ -1,29 +1,40 @@
 ---
 name: notebooklm-episode
-description: Generate a podcast episode from the ice hockey corpus using NotebookLM, driven through Chrome. Use when asked to make a podcast episode, an Audio Overview, or Phase 6 output; when regenerating an episode after content changed; or when asked how the podcast pipeline works. Assembles a provenance-stamped source bundle, drives the browser, and records which documents fed the episode.
+description: Generate a podcast episode from the ice hockey corpus using NotebookLM. Use when asked to make a podcast episode, an Audio Overview, or Phase 6 output; when regenerating an episode after content changed; or when asked how the podcast pipeline works. Assembles a provenance-stamped source bundle and the constraints-first prompt, hands the owner the manual browser pass (an agent cannot reach notebooklm.google.com), then reviews what came back and records which documents fed it.
 ---
 
 # NotebookLM episode
 
-NotebookLM has no API. Generation is a human — or this skill — pasting into a
-browser. Everything either side of that paste **is** automatable: source
-assembly, provenance, the prompt, the record of what fed what, and the review
-of what came back.
+NotebookLM has no API, and the browser tool cannot reach it either (see below),
+so generation is the owner pasting into their own browser. **Everything either
+side of that paste is the agent's:** source assembly, provenance, the prompt,
+the record of what fed what, and the review of what came back — which is the
+part that decides whether an episode ships.
 
 Spec: [`project/site_build_specification.md`](../../../project/site_build_specification.md) §7.3 (episodes) and §8 (terms).
 
 ---
 
-## Before you start
+## ⚠️ Before you start — an agent cannot drive NotebookLM
 
-**Check the browser extension is connected.** Call `tabs_context_mcp` first. If
-it returns *"Browser extension is not connected"*, stop and tell the user: they
-need the Claude extension from `claude.ai/chrome`, logged into the same account,
-with Chrome restarted after install. Do not retry — it will not fix itself.
+**Measured 23 September 2026: the browser tool cannot reach
+`notebooklm.google.com`.** `navigate` returns *"Could not verify this site's
+safety category. Blocking as a precaution."* — the same refusal it gives for
+every URL tried, including `example.com`, so this is the tool's own blanket
+block rather than anything about NotebookLM.
 
-**NotebookLM needs their Google session.** You are working in the user's own
-logged-in browser. You will not be creating accounts or entering passwords; if
-a login wall appears, hand back to the user rather than trying to get through it.
+**So Step 3 is the owner's, done by hand, and the agent's job is everything
+either side of it.** An agent runs Steps 0, 1 and 2, hands the owner a source
+file and a prompt to paste, and then runs Steps 4 and 5 on what comes back.
+Do not spend a turn trying to get the browser through; it is a blanket block,
+not a flaky one.
+
+If the block is ever lifted, the automation notes kept at the end of Step 3
+still describe how to drive the page — but **check first, and do not assume.**
+
+**NotebookLM needs the owner's Google session.** No agent creates accounts or
+enters passwords. If a login wall appears in the manual path, that is the
+owner's to clear.
 
 ---
 
@@ -103,60 +114,111 @@ recreate the per-layer approach §7.3 explicitly decided against.
 
 Concatenate, in this order:
 
-1. [`prompt_constraints.md`](prompt_constraints.md) — eight accuracy and safety
-   constraints
+1. [`prompt_constraints.md`](prompt_constraints.md) — the register section, then
+   the numbered accuracy and safety constraints. **Do not quote a count of the
+   constraints anywhere; this line used to say "eight" and the file has grown
+   since. Read the file.**
 2. `project/podcast_generation_prompt_longer.md` — the long-form teaching prompt
 
-**The constraints go first and are marked as overriding. This is not optional.**
+**The constraints file goes first and is marked as overriding. This is not
+optional.** Inside it the order matters too: the register section comes before
+the numbered constraints because it decides the episode's *shape*, and it says
+in its own words that the numbered constraints outrank it. **Do not reorder it,
+and do not renumber the constraints** — constraints 10 and 11 refer to
+constraint 9 by number.
 
 The long prompt asks for confidence, memorability and teaching that sticks.
 Applied to hockey coaching material, that pushes two hosts straight into the
-defect twenty-one review rounds were spent removing: *"F1 forechecks the
-strong-side half-wall"* is memorable, *"in a 2-1-2 — and check which your team
-plays — F1 usually takes the strong-side half-wall"* is accurate, and a prompt
-optimising for retention picks the first every time. The same pressure drops
-rule-set flags, strips qualifications off numbers, and compresses safety
-caveats.
+defect this corpus's review rounds were largely spent removing (the record is
+[`project/review_history.md`](../../../project/review_history.md); do not quote a
+round total from here): *"F1 forechecks the strong-side half-wall"* is
+memorable, *"in a 2-1-2 — and check which your team plays — F1 usually takes the
+strong-side half-wall"* is accurate, and a prompt optimising for retention picks
+the first every time. The same pressure drops rule-set flags, strips
+qualifications off numbers, and compresses safety caveats.
+
+**And it applies a second pressure the earlier versions of this file did not
+name.** A prompt asking for frameworks, comparisons and comprehensive coverage
+invites a generator to re-sort a document into the shape it finds easiest to
+organise — and for this corpus that shape is a rules lecture, because rule
+numbers and penalty tiers sort themselves. The corpus was re-aimed in September
+2026 so that its first layers carry *what a player does*; **an episode that puts
+the rulebook back at the front has thrown that re-aiming away.** That is what
+the constraints file's register section exists to prevent, and it is why the
+register section sits above the numbered constraints rather than at the end.
 
 The corpus survives being read aloud. It does not automatically survive being
 re-narrated by an enthusiastic host.
 
+**Write the concatenation out as one file**, because Step 3 is a human paste and
+a hand-off that can be performed in the wrong order eventually is:
+
+```bash
+cat .claude/skills/notebooklm-episode/prompt_constraints.md \
+    project/podcast_generation_prompt_longer.md > <out_dir>/<slug>__prompt.md
+```
+
+`build_episode.py` does not do this and says so in its own docstring.
+
 ---
 
-## Step 3 — Drive Chrome
+## Step 3 — The manual pass, in the owner's own browser
 
-`tabs_context_mcp` → `tabs_create_mcp` → navigate. **Never reuse a tab from a
-previous session**, and close what you opened when done.
+⚠️ **This step is the owner's. No agent can do it** — see *Before you start*.
 
-1. Navigate to `notebooklm.google.com`.
-2. **Create notebook.** Screenshot to confirm where you are before clicking.
-3. **Add the source.** Use `find` for the file input, then `file_upload` with
-   its `ref`. **Do not click the upload button** — that opens a native file
-   picker you cannot see or dismiss, and it will strand the session.
-   - With one document per episode there is only one source to upload —
-     upload the original `content/<doc_id>.md` itself, not the bundle, for
-     the cleanest possible source boundary. The `__sources.md` bundle
-     `build_episode.py` writes stays the provenance record either way (it
-     carries the commit stamp and hash even for a single-document bundle).
-4. Wait for sources to finish processing before touching Audio Overview —
-   generating against a half-ingested source is a silent quality loss.
-5. **Audio Overview → Customise.** Paste the Step 2 prompt.
-6. **Generate.** Long-form overviews take several minutes. Poll with
-   screenshots at a sensible interval rather than hammering.
-7. Download the `.m4a`.
+**What the agent hands over.** Two things, named by absolute path, plus one
+sentence saying which document this episode is:
 
-### Rules while driving
+1. **The source file to upload** — the original `content/<doc_id>.md`, *not*
+   the bundle. One document per episode, so there is one source, and uploading
+   the document itself gives the cleanest source boundary. The `__sources.md`
+   bundle from Step 1 stays the provenance record either way; it carries the
+   commit stamp and the hash even for a single-document bundle.
+2. **The prompt to paste** — `prompt_constraints.md` followed by
+   `project/podcast_generation_prompt_longer.md`, concatenated in that order,
+   written out as one file ready to copy. **Hand over the concatenated file, not
+   two files and an instruction to join them** — the order is the thing that
+   makes the constraints override, and a hand-off that can be done in the wrong
+   order eventually is.
 
-- **Never trigger a JavaScript dialog** — `alert`, `confirm`, `prompt`. They
-  block the extension and end the session. Use `console.log` +
-  `read_console_messages` if you need to inspect something.
-- **Locate by intent, not coordinates.** Use `find` with natural language.
-  NotebookLM's UI changes often; hardcoded pixel positions in this file would
-  be wrong within weeks, which is why there are none.
-- **Stop after three failures** on the same step, or if the extension stops
-  responding, and ask the user. Do not explore unrelated pages.
-- **Accepting terms, granting permissions, or anything that publishes** needs
-  the user's explicit go-ahead in chat first.
+**What the owner does, in order:**
+
+1. Open `notebooklm.google.com` in their own Chrome, signed in.
+2. **Create a new notebook.** A new one per episode — do not add a second
+   document to an existing notebook, because the episode's provenance record
+   says one document fed it.
+3. **Add the source**: upload the `content/<doc_id>.md` file the agent named.
+4. **Wait for the source to finish processing** before touching Audio Overview.
+   Generating against a half-ingested source is a silent quality loss — nothing
+   in the UI calls it an error.
+5. **Audio Overview → Customise.** Paste the whole concatenated prompt. Check
+   before generating that the paste starts with the constraints file's title
+   line and not with *"Create a long-form…"* — if it starts with the teaching
+   prompt, the constraints did not go in, and everything they guard is off.
+6. **Generate**, and wait. Long-form overviews take several minutes.
+7. **Download the `.m4a`**, and tell the agent where it landed and how long it
+   runs.
+
+⚠️ **The run length is a review input, not trivia.** A short episode is a
+failure mode this pipeline has recorded — constraint 12 in the constraints file
+exists because one generation came back at 18 minutes against a previous
+attempt's 43, having stopped inventing and wrongly also stopped teaching. Report
+the duration with the file.
+
+⚠️ **Anything that accepts terms, grants a permission, or publishes is the
+owner's decision in chat first** — see *Before publishing*.
+
+### If the browser block is ever lifted
+
+Kept because it was learned the hard way, not because it is currently reachable.
+`tabs_context_mcp` → `tabs_create_mcp` → navigate; never reuse a tab from a
+previous session, and close what you opened. **Do not click the upload button** —
+it opens a native file picker an agent cannot see or dismiss, and it strands the
+session; use `find` for the file input and `file_upload` with its `ref`. **Never
+trigger a JavaScript dialog** (`alert`, `confirm`, `prompt`) — they block the
+extension and end the session. **Locate by intent, not coordinates**; NotebookLM's
+UI changes often, which is why there are no pixel positions in this file. **Stop
+after three failures** on the same step and ask.
 
 ---
 
@@ -209,7 +271,36 @@ criticals and **every one was an omission** — and a checklist that only asks
       measured on — or arrive bare?
 - [ ] Is anything asserted that is not in the sources?
 
-### C · Advisory
+### C · Register — did the re-aiming survive?
+
+**Not stop-the-line: nothing here can hurt a listener, and a register failure is
+never a reason to hold an episode that passed A and B.** It is the question the
+owner actually wants answered, because the whole point of re-aiming the corpus
+at tactics was to produce a better episode from it.
+
+- [ ] **What does the episode open on?** The document's Key focus — things a
+      player does — or which rulebook governs and what a penalty costs?
+- [ ] **Within a segment, does the instruction come before the tariff**, or is
+      the instruction the last clause after two minutes of penalty tiering?
+- [ ] Is a rule that *is* the tactic ("never put it over the glass from your own
+      zone") led with, and a rule that is only the consequence put behind the
+      instruction it modifies?
+- [ ] Did the episode build a segment around fine mechanics — push direction,
+      grip, blade, the deke catalogue — that the source keeps in its body?
+      (⚠️ A **safety** technique is not mechanics and must be stated in full
+      wherever the source states it. That is Group A, not this list.)
+- [ ] Did the Key Takeaways arrive as kernels a player can act on, or as a
+      rules appendix?
+- [ ] Did the episode follow the source's own order, or re-sort it?
+
+⚠️ **Record the answers whether they are good or bad.** The owner's hypothesis
+is that the re-aimed sources produce a more accurate episode because there is
+less tariff for the generator to flatten. **That hypothesis is untested and this
+checklist is the test** — an episode that passes A and B and reads as a rules
+lecture is evidence about the prompt; one that passes all three is evidence for
+the hypothesis. Neither is worth anything unless it is written down in Step 5.
+
+### D · Advisory
 
 - [ ] Does layer-grouping actually beat the per-document episodes that already
       exist for centre, winger and defender?
@@ -226,9 +317,15 @@ to.** Do this before the publishing step below, not after.
 ## Step 5 — Record it
 
 Write the episode to `project/reviews/` or an episode log: title, documents,
-their hashes, the corpus commit, the date, the prompt version used, and the
-review checklist result. An episode nobody can trace to its sources cannot be
+their hashes, the corpus commit, the date, the prompt version used, the run
+length, and the review checklist result — **Groups A, B and C, each answered
+rather than left silent.** An episode nobody can trace to its sources cannot be
 regenerated when the sources change — and they change.
+
+⚠️ **Record the Group C answers even on a clear run.** The corpus was re-aimed
+at tactics in September 2026 on the owner's instruction, and whether that makes
+NotebookLM's output better is an open question with no evidence on either side
+yet. A clear run with Group C unanswered adds nothing to it.
 
 ---
 

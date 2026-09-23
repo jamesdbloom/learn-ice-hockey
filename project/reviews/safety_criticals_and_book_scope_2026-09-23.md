@@ -535,3 +535,127 @@ measures the LEAD only, so the unit scored CLEAN.**
 | **D11** safety | ✅ **CHECKED.** Two `safety-reviewer` passes; two criticals and three majors found and repaired. |
 | **D13** the spoken layer | ✅ **CHECKED BY RENDERING throughout** — every wave, before and after, each into its own named `--out`. **Two decisions were reversed by the audio.** |
 | **D15** the rendered page | ✅ **CHECKED BY THE OWNER, 23 September** — the eleven Key focus pages at ≥7 paragraphs were reviewed in a browser and passed. ⚠️ **First time this dimension has been closed rather than declared.** |
+
+---
+
+# THE NET-FRONT WAVE, and a premise that no grep could see
+
+**Files:** `offensive_zone_play.md` · `center.md` · `goaltender.md` · `rink_map.md` ·
+`body_contact_and_battles.md` · `playing_without_the_puck.md` · `uk_rules.md` ·
+`PODCAST_MANUAL_STEPS.md`.
+
+## 🔴 The defect was a PREMISE, not a sentence
+
+⚠️⚠️ **`offensive_zone_play.md` OWNS the corpus's net-front material, and its screening teaching was
+built on the assumption that holding your spot is what you do there** — *"that is what stops a
+defenceman moving you"*, *"be still at the moment of release"*, *"plant and obstruct"* — **and then
+named the goaltender as an edge of the path it sends the reader down, with no instruction about
+them.**
+
+> ***"`center.md`'s bullet was silent about the goalie; this one NAMED the goalie and still gave no
+> instruction about them."***
+
+⚠️ **The material that fixed it sat ~100 lines below, in a different spoken chunk.** ✅ **Repaired in
+three layers, and a reviewer upheld all three** — the boundary is inside each sentence (*"the way you
+brace against a **defender**"*), so no site teaches a reader to give way to every shove. ⚠️ **That
+mattered: a reader who stops bracing against defenders is worse at the job for no safety gain.**
+
+## 🔴 AND IT REACHED `center.md`'s BODY AND STOPPED — the sixth instance of that shape today
+
+**Its facts block still named the goaltender as an edge of the path and instructed for the POST END
+ONLY, with an `Action:` line two above stating the hold-your-spot premise naked. Both voiced alone.**
+
+> ***"A listener who hears this block and not the body plants, is shoved, holds, and arrives braced
+> into a goalkeeper."***
+
+✅ **Repaired in the facts block and mid-bullet in Common Mistakes** — ⚠️ **deliberately NOT last,
+because a reviewer had flagged that a sibling's clause placed last *"is the kind of limb that gets
+trimmed for flow."***
+
+⚠️ **The repairing agent caught a defect in its OWN first draft and reported it unprompted:** its
+wording forbade the *posture* — *"never brace against"* — **and by implication permitted UNBRACED
+contact with the goalie.** **Rewritten to match the body's prohibition verbatim.** ⚠️ **That is the
+permissive direction, and it is the first time this round an agent's self-caught error ran that way.**
+
+## 🔴 A BODY-CHECKING PERMISSION WITH NO CLASSIFICATION SCOPE, IN THE LAYER VOICED ALONE
+
+**`goaltender.md`'s facts line asserts a goaltender *"can be legally checked"* outside the privileged
+area.** ⚠️⚠️ **A skater acting on that in a 12U-and-below, any girls'/women's, or any non-check adult
+game takes a minor under USA Hockey 604(c) — or a MAJOR PLUS GAME MISCONDUCT under 604(d).**
+⚠️ **Rendered and confirmed: the word *"classification"* appears NOWHERE in that chunk. The scope
+lives only in the body's.** ***"The goalie half errs safe; the skater half does not."***
+
+⚠️⚠️ **AND THE SAME SHAPE IS IN `rink_map.md`, THE SKATER-FACING CARRIER** — the same permission at
+two sites with no scope, **in a document whose register is *"Play the puck, not the goalie."***
+***"That is the reader most likely to act on it."*** **Both dispatched as ONE claim across both
+files.**
+
+## ✅ The geometry repair — the most valuable single fix of the day
+
+**A sentence told a goaltender their protected area runs *"out to the top of the circles."*** ⚠️ **USA
+Hockey 104(d)/(e): the faceoff spots are TWENTY FEET from the goal line and the circles are THIRTY
+FEET across, so the top of the circle is 35 ft and the boundary is 20.** ⚠️⚠️ **The text drew the
+shield FIFTEEN FEET TOO FAR UP ICE — *"in the direction that tells a goaltender they are protected
+where they are not"* — four clauses from the new sentence saying that outside it they can be legally
+checked.** ✅ **Every other layer and both siblings were already right; that one sentence was the
+outlier.**
+
+## ⚠️ What the reviews upheld AGAINST the coordinator's prompting
+
+- ✅ **The corner bullet reads CAREFUL, not DON'T-GO** — the instruction to go is stated first and
+  never withdrawn, and the bullet **closes on the protection that survives.** *"That ordering is
+  doing real work."*
+- ✅ **Two Key Takeaways were left alone**, each on measured grounds: one already carries three
+  goaltender-contact instructions **in the same spoken chunk**; the other's missing limb is a **tier
+  nuance**, and its sibling takeaway now carries the corner scope.
+- ✅ **A match-penalty ceiling split was declined twice** — already in the document verbatim, and a
+  fourth restatement.
+- ✅ **A facts line carrying CARHA was drafted at 299/300, FITTED, and REVERTED** — because fitting
+  it forced *"Hockey Canada"* down to *"HC"*, **which the renderer voices as "H C" in a line spoken
+  alone.**
+
+## ⚠️ Where the coordinator's briefs were wrong, again
+
+1. **"The claim is FALSE"** — it was **UNDER-SCOPED**. ***"A future brief saying 'false' will send
+   someone hunting for an error that is really a scope."***
+2. **"Three sites"** — there were **SIX**, two in the facts layer voiced alone.
+3. **Two repairs were asked for that were ALREADY in the document verbatim.**
+4. **"CARHA writes no deliberate delay-of-game limb"** — **it does, at Rule 75(b), not the Rule 55
+   the brief named.** ***"A grep of Rule 55 alone returns the brief's answer."***
+5. **"`center.md` has not moved"** — **stale by hours**; its body was repaired in `cbbae59`.
+6. **"The next agent has no slot"** — true only of COACHING facts; **`HARD_MAX` leaves three `Rule:`
+   slots.**
+
+## ⚠️ The divergence nobody had found
+
+**A shaft-above-the-upper-hand hold or hook is a MINOR in four books, a DISCRETIONARY DOUBLE MINOR
+under CARHA — and under USA Hockey it is reachable as BUTT-ENDING: 606(a) major plus game
+misconduct, 606(b) match, plus Rule 411 progressive suspension.** ⚠️⚠️ **AN EJECTION WHERE FOUR BOOKS
+GIVE TWO MINUTES**, and **no interpretation on disk settles which rule governs.** ✅ **The document
+already carried it and says so honestly.**
+
+## Coverage
+
+| Dimension | Status |
+|---|---|
+| **D1–D3** rules accuracy | ✅ **CHECKED across six books** for every changed claim; **`goaltender.md`'s interference tariffs verified for the FIRST TIME**, including a sentence-level alignment that caught a transposition a token diff was structurally blind to. |
+| **D11** safety | ✅ **CHECKED** — five `safety-reviewer` passes this wave. **Two criticals, four majors and several minors found and repaired.** |
+| **D13** the spoken layer | ✅ **CHECKED BY RENDERING throughout.** ⚠️ **Chunk membership decided four separate rulings, and two were REVERSED by it.** |
+| **D15** the rendered page | ✅ **CHECKED BY THE OWNER** earlier the same day on the eleven Key focus pages. ⚠️ **The net-front changes since are NOT in that check.** |
+| **D4–D5** citation integrity, provenance | ⚠️ **PARTIAL, and the gap is named.** ~30 PWHL and CARHA citations were added across the wave and each was derived from primary text by the agent adding it; a commit gate independently re-derived a sample of ten and **all held**. ⚠⚠ **BUT NO `source-verifier` RAN, and a sample is not the condition.** ⚠️ **Nothing was refetched — a stale extraction or a superseded edition reads clean to every check performed**, which matters most for `eihl_casebook.txt`, whose three disagreeing version stamps are recorded in `sources/README.md`. |
+| **D6–D9** cardinal rule, summary layers, numeric ownership, negative existence | ✅ **CHECKED.** Two nn6 breaches removed earlier in the day; **no coaching choice was presented as a law** — one agent caught itself doing exactly that and replaced the sentence. **Every negative existence claim added was attacked before writing**, including the CARHA stick-lift gap (swept raw and flattened, written as *"a gap in the book, not a ruling either way"*) and the British competition-regulation negatives (re-swept in eleven wordings, every non-zero hit read). ⚠️ **One numeric-ownership defect survives and is a ranked row: seven residual four-book tallies in `body_contact_and_battles.md`, flagged and explicitly NOT cleared by the agent that found them.** |
+| **D10 / D12** the ` ```facts ` layer | ✅ **CHECKED by a dedicated `facts-reviewer`**, which returned **four majors** — ⚠️ **including a body/facts contradiction and two adjacent facts lines that contradict each other READ ALOUD, where the scope reconciling them is never spoken.** ⚠⚠ **`check_facts_antecedents.py` returns 0 on that last one by construction: its discriminator is a demonstrative plus a short abstract noun, and *"the four books"* is a numeral phrase it cannot see.** **All four are dispatched, not shipped.** ✅ **No block gained a coaching fact; nothing was evicted; a line drafted at 299/300 was REVERTED because fitting it forced an initialism the renderer speaks as letters.** |
+| **D14** diagrams / captions | ⚠️ **OUT OF SCOPE, DECLARED.** No `site/` file was touched and no diagram source changed. ⚠⚠ **But a reviewer named the residual risk and it is not zero: `rink_map.md` is the corpus's diagram owner, and `check_caption_hosts.py` was NOT run** — *"a caption stating this permission would be spoken into a host document and invisible to every grep I ran."* **That is a row, not a clearance.** |
+
+## What this method could not have found
+
+- ⚠️ **Whether concurrent agents contradicted each other.** Four waves touched net-front material in
+  overlapping files. A reviewer named it: ***"if that agent changed how 604 is scoped there while I
+  was reading, my layer test is already stale."*** **Nothing mechanical sees this.**
+- ⚠️ **Whether the correct action is safe to execute.** ***"No grep tells you that a player who gives
+  ground at the net front ends up backing into a defender's stick or falling into the goalie
+  anyway."*** And on a goaltender bracing in a corner in full pads: ***"that is a question about
+  bodies, not about rules. If a goalie coach is available to the project, that one sentence is worth
+  two minutes of their time."***
+- ⚠️ **A caveat that was never written.** ***"I can only test the hedges that are on the page against
+  the layers, not the ones that should have been."***

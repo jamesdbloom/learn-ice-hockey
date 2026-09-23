@@ -1121,7 +1121,7 @@ could check it, and at least three agents said so in their reports.**
 **Material on page 2 the corpus may not carry** — an athlete with suspected concussion should **NOT**
 *"be left alone initially (at least for the first 3 hours)"*, *"be sent home by themselves"*, drink
 alcohol or take drugs not prescribed by their HCP, or *"drive a motor vehicle until cleared to do so
-by a healthcare professional"*. **Reported here, not written into `content/` by the coordinator.**
+by a healthcare professional"*. ⚠️ **THIS LINE IS NOW STALE AND IS KEPT ONLY SO NOBODY RE-DERIVES IT.** It said this material was *"reported here, not written into `content/`"*. **Two of the four ARE now carried — *"be sent home by themselves"* and *"drive a motor vehicle until cleared to do so by a healthcare professional"* — in `body_contact_and_battles.md`'s concussion takeaway**, confirmed 23 September 2026 by an agent that rendered page 2 with `pdftoppm` and read it visually, against a corpus quotation that is **verbatim**. ⚠️ **Check `content/` before treating any item in this paragraph as absent.**
 
 ⚠️ **THE TRANSFERABLE POINT: an image-only PDF is not unverifiable, it is unGREPPABLE.** Three
 reports in one round said CRT6 *"cannot be verified from disk"*. That was true of every text tool and
