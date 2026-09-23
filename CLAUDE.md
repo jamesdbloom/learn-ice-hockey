@@ -428,6 +428,53 @@ precisely the one that does NOT.** The agent wrote *"named in three books, a min
 **+10 chars and exactly true.** ⚠⚠ **A SKETCH SIZED TO FIT A CHARACTER CAP IS STILL A CLAIM, and the
 smallness of an edit is not evidence that it is safe.**
 
+⚠️⚠️ **AND A BRIEF THAT NAMES ONE RULE PRODUCES AN AGENT THAT VERIFIES ONE RULE. Measured
+23 September 2026, and the reviewer named the mechanism against itself:**
+
+> ***"The direction I am structurally weak on is the one I caught here by luck of routing: a fact that
+> says too LITTLE. I checked 66(b) against CARHA only because the brief named it; had the brief named
+> 52(b) instead I would have verified 52(b) and never asked what else CARHA prices."***
+
+**The coordinator briefed CARHA Rule 66(b) as the book's answer on contact with a goaltender. It is
+not the only one.** `carha.txt:2559-2562` **Rule 52(b)** makes a major plus a game misconduct
+**MANDATORY** — *"shall be assessed"* — for charging a goalkeeper **in the crease**, and 52(a)'s Note
+makes more than two strides a charge, so the threshold is reachable from the slot. The repair written
+from that brief told a CARHA reader their ceiling was a **discretionary** major and that location was
+irrelevant. ⚠️ **It understated a mandatory ejection, which is the dangerous direction, and every
+mechanical gate passed it.**
+
+⚠️⚠️ **AND THE MECHANISM IS A *TRUE* NEGATIVE, WHICH IS WHY NOTHING CAUGHT IT.** Every warning in
+this file about searching concerns **FALSE** negatives — `carha.txt` line-breaking a word, an
+image-only PDF, a label a book never uses. **This defect came from a negative that was CORRECT.** The
+agent swept CARHA flattened for `privileged`, got **0**, and the zero was **true** — CARHA really has
+no privileged area. In its own words:
+
+> ***"A true negative is exactly what stops the next search, and no tool in this repository says
+> 'this book has another rule about the same act.'"***
+
+⚠️⚠️ **AND A BOOK'S SILENCE IS NOT A GRANT. Measured on the coordinator the same day.** A brief
+asserted a divergence — *"a SECOND post-icing violation costs an EIHL centre the dot where an NIHL
+centre keeps it"* — inferred from the In-House Rules saying nothing about repetition. The agent
+refused to write it:
+
+> ***"That is silence about repetition, not a grant… your brief takes the permissive one, and the
+> permissive one tells a British centre an act is cheaper than it may be."***
+
+⚠️ **A sibling document had ALREADY considered and declined the same inference** — *"the In-House
+sentence also says nothing about the 'first violation only' limit… so treat one attempt as what you
+have."* **Where a book is silent, the conservative reading is the one that ships, and the sibling that
+already reasoned about it is the first place to look.**
+
+**A false negative leaves you uneasy and you search again. A true negative satisfies you and you
+stop.** ⚠️ **So a confirmed absence is the most dangerous place to end a search, not the safest.**
+**After any negative — true or false — ask what OTHER rule the book uses to reach the same act**, and
+name the act, never the rule, when briefing the search.
+
+⚠️ **So the question a brief must ask is not "is this rule quoted correctly" but "is this rule the
+book's WHOLE answer to the act?"** A verified quotation of an incomplete rule is a half-rule, and it
+reads as a complete one. **Name the ACT and tell the agent to find every rule that prices it** — do
+not hand it a rule number and ask it to check that number.
+
 **So: specify the DEFECT and the CONSTRAINT. Let the agent that has read the document write the sentence.**
 
 ⚠⚠ **AND BRIEF A CLAIM, NEVER A LINE. Measured 23 September 2026, and it is the round-10 shape
@@ -469,6 +516,23 @@ stood alone.**
 ⚠️ **The pattern is not "agents are careless" — all three reported honestly and two declared the
 gap themselves.** **It is that a brief pointed at a place instead of a claim, and the summary layers
 are where the naked version survives.**
+
+⚠️⚠️ **AND THE COORDINATOR DID IT TO ITSELF ON 23 September 2026, IN THE FILE THAT STATES THIS RULE.**
+It repaired ONE four-book tally in a goaltender-contact paragraph, self-certified the edit, and staged
+it. A `safety-reviewer` dispatched only because a commit gate blocked on C6 **upheld the edit and then
+found TWO MAJORS the edit had left standing in the same and adjacent paragraphs** — one of them the
+section's own stated safety anchor (*"if you take one thing from this section, take that"*), the other
+**false in the permissive direction**: *"rather than a flat prohibition all four books write"*, when
+CARHA 66(b) **is** a flat prohibition on deliberate contact with a goalkeeper, in or out of the crease.
+The reviewer's words:
+
+> ***"This is the brief's own rationale surviving its own repair… Brief a claim, never a line — the
+> claim is the four-book frame in this section, wherever it appears."***
+
+⚠️ **Two lessons, and the second is the one with teeth.** **(1)** Repairing one instance of a claim is
+the same defect whether a brief caused it or the coordinator did. **(2) SELF-CERTIFICATION IS WHAT HID
+IT** — the edit passed every gate, was recorded in the plan as *"needs a reader"*, and would have
+shipped. **The reader is not a formality; it found two majors in three sentences.**
 
 ⚠️ **A brief naming `:996` produces an agent that repairs `:996`.** That is the routing failure this
 file already records for `sources/` and for owner documents, **reproduced for the corpus's own
@@ -579,6 +643,19 @@ The short form:
    NEGATIVE**, and the agent has no way to detect it except by refusing to trust the brief. ⚠️ **So
    name the owner only when you have checked it is the owner — otherwise say "find the owner."**
 
+   ⚠⚠ **AND A CASEBOOK SITUATION'S OWN `Rule Reference` IS NOT ITS SCOPE. Measured
+   23 September 2026.** ⚠️ **This line first said the defect *"recurred in FIVE documents"* — a
+   figure the coordinator never measured, written into this file within an hour of recording that a
+   figure copied out of its owner goes stale silently. The owner is
+   [`project/reviews/safety_criticals_and_book_scope_2026-09-23.md`](project/reviews/safety_criticals_and_book_scope_2026-09-23.md),
+   which lists the carriers and which of them lacked the scope. Read it there.** USA Hockey
+   Casebook Rule 607 Situation 5 permits checking a goalkeeper outside the privileged area, and
+   its printed `Rule Reference` is **607(d)** — **it never mentions Rule 604**, which is what
+   decides whether any body check is legal in that game at all. ⚠️ ***"The scope is genuinely
+   outside the Situation, which is why THREE CONSECUTIVE READERS of the Casebook passage never met
+   it."*** ⚠⚠ **So a Situation read to its own citation is read HALF. Ask what rule decides
+   whether the permitted act is available to this reader, not only which rule the Situation cites.**
+
 3. Attach evidence at the moment of writing: book, edition, rule number,
    operative wording. Numbers come from their
    [owner document](project/content_style_guide.md#numeric-facts-and-their-owners)
@@ -596,6 +673,20 @@ The short form:
    document stating the hazard **naked in the extraction layer**, where it is voiced in its
    own `<p>` with a 300 ms break either side. **The document-level grep could not see it,
    because the body and the block both live in the same file.**
+
+   ⚠️⚠️ **AND *"IT CORRECTS ITSELF LATER"* IS A READER'S JUDGEMENT. ONLY THE RENDERER SAYS WHETHER IT
+   CORRECTS ITSELF IN TIME FOR A LISTENER.** Measured 23 September 2026. A commit gate ruled a flat
+   *"in Britain"* claim non-blocking because the page corrects it **three paragraphs later**. An agent
+   tested that against `md_to_speech` instead of accepting it: the claim is **chunk 024** and the
+   correction is **chunk 026**, and chunk 024 *ends* on the instruction. Its words:
+
+   > ***"For a reader it is three paragraphs; for a listener it is unreachable at the moment of
+   > instruction."***
+
+   **The claim was permissive and penalty-bearing, so the distance mattered.** ⚠️ **Measure the CHUNK
+   distance, not the paragraph distance** — and ⚠️ **a pointer is not a correction**: the same agent
+   wrote *"the paragraphs below set out why"* and then removed it, because it is *"a pointer a
+   listener can act on only after the fact."*
 
    ⚠️ **A layer test finds candidates; only reading decides.** In the same run two lines
    matched the pattern and were **not** defects — they stated a rule's *scope* rather than
@@ -630,6 +721,17 @@ The short form:
    proves only that the chain got past step 1** — a failure at `build:pdf` or `check:links` leaves a
    fresh-mtime, incomplete `dist` and `ls -ld` reports success. A remedy written to close one silent
    false pass opened another.
+   ⚠️⚠️ **AND A THIRD, MEASURED ON THE COORDINATOR 23 September 2026: A BUILD THAT PASSED CAN STILL
+   NOT COVER YOUR DIFF, BECAUSE IT RAN TOO EARLY.** A build was run mid-round, exited 0, rebuilt
+   `dist` and reached `check-links` — **and five of the files eventually staged were edited AFTER it**
+   (`dist` 19:36; `special_teams` 19:40, `body_contact_and_battles` 19:40, `goaltender` 19:41,
+   `uk_rules` 19:45, `faceoffs` 19:48). ⚠️ **The coordinator then reported that build as clearing the
+   round, and a `commit-gate` caught it by comparing mtimes.** ⚠️ **`dist`'s mtime is set by step 1,
+   `clean:cache`, so it timestamps when the chain STARTED, not when it finished — it cannot tell you
+   what the build covered.** **So the rule for the checkers is the rule for the build: the only run
+   that counts is the one after EVERY agent has finished and EVERY file is staged.** **Compare
+   `ls -ld site/dist` against `git diff --cached --name-only | xargs ls -l` before believing a build.**
+
    **(2) Astro CACHES the markdown transform.** Even with the real binary, a caption edit did not
    appear: the check reported **5 promoted captions when 17 were in the source**. `npm run build`
    runs `clean:cache` first for exactly this reason. ⚠️ **A caption or content edit verified by an
@@ -779,6 +881,22 @@ The short form:
                     sources, reproduced for the corpus's own owner document. ⚠️ **And the split means
                     there are now TWO owners: regions are `rink_map.md`, vocabulary is
                     `language_and_glossary.md`.**
+
+   ⚠️⚠️ **A THIRD, AND IT IS A SCOPE COLLISION RATHER THAN A SEARCH FAILURE: A LAYER SCOPED BY A
+   PLACE WHERE THE RULE IS SCOPED BY A COMPETITION.** Measured 23 September 2026. A facts line read
+   *"**In England and Scotland**, give the referee nothing to interpret at the net front — there is
+   nothing to appeal a live judgement to."* ⚠️ **Most Elite League clubs play in England and
+   Scotland, and for them the second clause is FALSE** — the IHUK In-House Rules' video-review and
+   coach's-challenge deletions reach **EIH and SIHA competition**, not an EIHL fixture, and the EIHL
+   Casebook keeps both at its own Rules 37 and 38. **Voiced alone, it told an Elite League reader
+   something untrue about what a bad call costs him.**
+
+   ⚠️⚠️ **AND THE GREP THAT WOULD FIND IT DOES NOT EXIST, WHICH IS THE WHOLE LESSON:** ***"A grep for
+   `EIHL` will miss it, because the defective line is the one that does NOT mention the EIHL."***
+   **The shape to look for is a geographic scope — *"in Britain"*, *"in England and Scotland"*, *"at
+   any level here"* — attached to a claim whose governing document is a COMPETITION regulation.**
+   ⚠️ **The same collision is live wherever this corpus says *"in Britain"* about a rule the In-House
+   Rules amend**, because those amendments do not reach the Elite League.
 
    ⚠️⚠️ **TWO SEARCH FAILURES THAT LOOK LIKE FINDINGS, both measured on 22 September 2026.**
 
