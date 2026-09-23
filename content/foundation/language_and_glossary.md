@@ -12,6 +12,10 @@
 
 **One rule recurs across more entries here than any other: a goaltender is never "fair game", even outside the crease, in every rulebook that addresses it — the CARHA book your adult league may run on and the PWHL's included.** Unnecessary contact with a goalie who has come out to play a loose puck is still penalised — sometimes a major plus a game misconduct — so play the puck, not the goaltender, wherever they are standing.
 
+**Forechecking and backchecking are opposite jobs, not two versions of one.** Forechecking is pressuring the team that has the puck in *their* end, trying to win it back rather than retreat; backchecking is racing toward your own end after your team has lost it. Most of the confusion in a coach's instruction comes from not knowing which of the two you have just been given.
+
+**A shape name tells you nothing until you know which end of the ice it means.** **2-1-2**, **1-2-2**, **1-3-1** and **1-4** each name an in-their-end forecheck *and* a neutral-zone structure a hundred feet away — a 1-4 puts four skaters about 114 feet from the net they are supposedly forechecking. Ask which your coach means before you go and stand somewhere.
+
 ## Overview
 
 Hockey's working vocabulary is small, and almost all of it is **relative**. "High", "low", "strong side", "F1" and "the wall" do not name fixed places or fixed people. They name a position relative to the net that matters right now, the side the puck is on right now, or the order players happened to arrive in. The same patch of ice is high to one player and low to another, and it changes again when the puck moves.

@@ -18,6 +18,8 @@
 
 **Skating first, puck handling with your head up second, passing and receiving third, shooting fourth — but that order is a coaching choice, not a law of hockey.** A realistic alternative is to fix whatever is actively costing you the most, and a goaltender's priority list is different again. Find out what your own coach prioritises and why.
 
+**If you get a say in how ice time is spent, ask for small-area games.** A live game in a restricted space puts the puck on your stick far more often than a lineup drill does, which is why USA Hockey builds much of its development material around them. Its own possession figures — published as a page of summary with no stated method, so read them as the governing body's report rather than as a study you can go and check — have a 12-and-under player at 38.4 seconds of puck possession across a whole championship game. Anything that raises that number beats another rep in a queue.
+
 **A changed technique feels worse before it feels better, and most players abandon the change right before it would have started to pay off.** Decide the change is permanent before you start, and judge it on a retention test a week later, not on how the session felt.
 
 **Don't shoot at your goalie's head, and don't fire pucks at them from ten feet in a drill.** Of the five books this guide works from, only two stop play for a mask hit itself, and both are narrower than they sound — ⚠️ **every book waits on a referee judging the goalie hurt, which a cage makes hard to see.** Aim at the pads and the glove, and shoot from where the drill puts you.

@@ -11,7 +11,15 @@
 
 **Defend the middle before the outside.** Given a choice between taking away a shot from distance and taking away a pass into the middle in front of your net, take away the pass — a shot from the point is a save your goalie expects, a pass into that area is not. Different systems apply this in opposite ways, sagging toward the middle under one and following your man to the boards under another, so it tells you which chance to concede, not where to stand.
 
+**Stay on the defensive side of the puck — between your man, or your area, and your own net.** Any time an opponent is between you and your goalie you are defending nothing, just skating behind a play. It is also why you angle an attacker toward the boards rather than reaching across your body at the puck: reaching turns you, and a turned defender is on the wrong side half a second later.
+
 **Somebody must always have the doorstep of your own net — the edge of the blue paint, not just the general area in front of it — and the two of you must know who.** Which player it is changes with the system; that it is always somebody never changes. The commonest breakdown at every level is both defencemen going to the same puck without either one having claimed it.
+
+**Talk, and talk early — announce your intentions, not your observations.** "I've got the corner, you have the net" resolves who has whom; "he's coming down your side" only describes it. Coverage is a shared model of who has whom, and out loud is the only way to keep it shared. The moment you realise you do not know who is yours, go to the middle: every mistake made in front of your own net is smaller than the same one made outside it.
+
+**Box out at the net front rather than swinging at the puck.** Inside shoulder ahead of theirs, position established between them and the puck, and lift their stick instead of cross-checking their back — **the lift goes up rather than sideways, stays below their bottom hand, and stops at their stick** rather than carrying on into their head.
+
+**Sticks flat in the passing lanes, on the ice.** A stick held off the ice or waving at hip height does nothing. An active stick lying in a lane takes the pass away without committing your body, so you can still get to the next thing — and when you cannot reach the puck, you can almost always reach the lane.
 
 **A screen on your own goalie is your problem to solve, not the referee's — move him yourself rather than expecting a whistle.** No book here disallows a goal for an outside-the-crease screen that merely impairs your goalie's view; you have to clear it with your body. And never shove an attacker into your own goaltender hoping for a disallowed goal — the goal generally still counts, it can draw a penalty against you under Hockey Canada's book, and your goalie is the one who takes the hit, arriving backwards and unable to see it coming.
 

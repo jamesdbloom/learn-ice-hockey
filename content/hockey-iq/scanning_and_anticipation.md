@@ -12,6 +12,10 @@
 
 **Decide while the puck is still travelling to you, so its arrival triggers an action instead of starting a decision.** Name your first option and your bail-out, in one or two words, before it reaches you — a second-best play made instantly beats the perfect play made a second late.
 
+**Scan in this order: pressure on you, then your outlet options, then the danger you are responsible for, then the space you could move into.** Beginners scan for the puck and stop there; experienced players keep the puck as an anchor and spend every extra look on people and space. Which side the pressure arrives on matters more than how far away it is — a checker closing on your forehand side takes your best play away, one on your backhand leaves your strong hand free. Know your first option, your support option and your safe out before the puck reaches you, and in your own end ask who scores if it goes to the net right now: usually the net front or the high slot.
+
+**Reading a puck carrier, put your eyes on the numbers on their chest or on their belt — you will see the puck perfectly well peripherally.** The centre of the body is where to weight your attention rather than a single magic cue read in isolation, with hips and feet together as a reliable second: hips rotated and the outside foot planted means they are going that way. Do not bite on a head fake, a shoulder dip or a puck fake — those are free to produce and aimed precisely at you. The best carriers can lie with their hips too, so when one genuinely beats you, re-establish position instead of chasing. And when *you* carry, deceive with your head and hands, because they cost you nothing.
+
 **Anticipation is acting on information; guessing is acting on hope, and they look identical when they work.** The real test: would your position still be useful if you turn out to be wrong? If not, you guessed.
 
 ## Overview

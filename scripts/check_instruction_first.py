@@ -97,8 +97,26 @@ def first_sentence(text, keep_name=False):
     # capital after it (as the full-stop branch must, to avoid splitting "69.3" or an
     # abbreviation) silently failed to split every colon in the corpus, which is how the first
     # attempt at this fix still scored four correct repairs as tariff-first.
-    m = re.search(r"(?:[.!?][*_)\u201d\u2019\"']*\s+(?=[A-Z\u201c\u2018*\u26a0])"
-                  r"|:[*_)\u201d\u2019\"']*\s+)", t)
+    # ⚠ AN EM DASH AND AN OPENING PARENTHESIS END A NAME-AS-INSTRUCTION TOO, and omitting them was
+    # the THIRD artefact class in this tool -- after the ".**" lookbehind and the colon. A Key
+    # Takeaway named "**The race is to the puck, not the dot** -- under NHL Rule 81.1..." or
+    # "**Minors end early...** (Rule 81.6)" is an instruction whose citation follows; both scored
+    # tariff-first. Reported by the agent whose own two correct units were counted as failures.
+    # ⚠⚠ An earlier attempt widened OPENER's trailing class instead. That was WRONG: OPENER governs
+    # what is SKIPPED in Common Mistakes, so it silently swallowed more of those units' bodies and
+    # moved the corpus figure without fixing either case. Fix the splitter, not the opener.
+    end = (r"(?:[.!?][*_)\u201d\u2019\"']*\s+(?=[A-Z\u201c\u2018*\u26a0])"
+           r"|:[*_)\u201d\u2019\"']*\s+)")
+    if keep_name:
+        # ⚠ EM DASH AND OPENING PARENTHESIS ONLY APPLY TO THE NAME-AS-INSTRUCTION CASE, and
+        # scoping them here is the whole point. Allowed everywhere they cut FRAGMENTS out of
+        # Common Mistakes bodies -- "It is not --", "The two measured findings on this page --" --
+        # which then scored as instructions because a fragment carries no rule words. Measured: 33
+        # units flipped, and a hand read of twelve showed roughly a quarter were that artefact.
+        # The reported defect was only ever a Key Takeaway whose bold name IS the instruction and
+        # whose citation follows after a dash or in brackets.
+        end += r"|[*_]*\s*[\u2014\u2013]\s+|[*_]*\s+(?=\()"
+    m = re.search(end, t)
     return (t[:m.end()] if m else t).strip()
 
 

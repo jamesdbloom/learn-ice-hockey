@@ -121,13 +121,40 @@ def flattened(stripped):
     return INLINE_EMPHASIS.sub("", stripped)
 
 
+BLOCKQUOTE_PREFIX = re.compile(r"^\s*(?:>\s*)+")
+
+
 def renders_as_panel(stripped):
     """True when the site wraps this paragraph in `<aside class="callout callout-warning">`.
 
-    Mirrors `remark-corpus.mjs:617` exactly: the anchored marker regex against the
-    FLATTENED text. This is the authority for panel-vs-inline; `classify()` is not.
+    Mirrors `remark-corpus.mjs:615` : the anchored marker regex against the FLATTENED
+    text. This is the authority for panel-vs-inline; `classify()` is not.
+
+    ⚠️⚠️ THE BLOCKQUOTE STRIP IS NOT COSMETIC AND ITS ABSENCE UNDER-COUNTED THE WHOLE
+    CORPUS. The first version ran the anchored regex over the raw line, so every
+    callout nested inside a blockquote -- `> ⚠️ ...` -- scored False and was reported
+    as "not a panel". IT IS A PANEL. `remark-corpus.mjs:615` is
+    `visit(tree, 'paragraph', ...)`, which is RECURSIVE and says so in its own comment,
+    and its ONLY skip is a parent that is ALREADY a callout. A blockquote is not a
+    callout, so a `⚠️`-opening paragraph inside one gets wrapped in the amber aside and
+    nested inside the grey blockquote -- double furniture, which is worse than either.
+
+    ⚠️ MEASURED 23 September 2026, and the direction is what matters: the tool reported
+    ZERO panels for `goaltender.md`. Re-running the site's own test with the prefix
+    stripped found TWENTY-SIX, twelve of them in one section. An agent briefed off the
+    unfixed figure would have read "0 panels" as "this file is clean" -- a false pass,
+    silently, in the corpus's densest tariff area.
+
+    ⚠️ AND IT WAS FOUND BY READING `remark-corpus.mjs`, NOT BY READING THIS FILE. The
+    docstring above claimed to mirror the plugin "exactly" and had done since it was
+    written. A comment asserting fidelity to another file is not fidelity to it.
     """
-    return bool(re.match(r"^\s*(\u26a0|\u2757|\U0001f6ab)", flattened(stripped)))
+    return bool(
+        re.match(
+            r"^\s*(\u26a0|\u2757|\U0001f6ab)",
+            flattened(BLOCKQUOTE_PREFIX.sub("", stripped)),
+        )
+    )
 
 
 def classify(stripped):

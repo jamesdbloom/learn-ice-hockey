@@ -11,13 +11,15 @@
 
 **Carrying the puck in is worth roughly twice as much as dumping it in and chasing it, in shot terms, and the cost of trying and failing is smaller than it feels.** It feels dramatic when a carry goes wrong and invisible when it works; dumping the puck in and changing lines is the worse play of the two.
 
-**Attack the space between two defenders rather than at one of them, and if you get there alone, turn away rather than force it.** Protect the puck, look back up the ice, and come again with a teammate — curl in open ice, not against the wall: never take contact with your back to the boards.
+**Attack the space between two defenders rather than at one of them, and if you get there alone, turn away rather than force it.** Protect the puck, look back up the ice, and come again with a teammate — and curl in open ice rather than against the wall.
+
+**Carry if you have the line or the support; chip it past them if they are committing; delay if support is one second away.** Dump it only to a place a teammate is already skating to, and never dump and change if you can help it — the same NHL tracking that produced that two-to-one figure rated dumping and changing the worst-valued play of all.
+
+**Be the last of your three forwards to the blue line, with your supports already there and onside.** As the carrier you want to reach it half a stride to a full stride behind your wingers; as a winger you want to be at the line, at speed and onside before the puck gets there. If the carrier arrives first the supports are behind the play and the defence collapses on one man; if they arrive a beat later, the defence has had to respect three threats and the picture is already pulled apart.
 
 **You stay onside for longer than most players believe.** You are onside as long as one skate has not completely crossed the line, judged at the instant the puck completely crosses it — under the NHL, the IIHF and the PWHL that trailing skate may even be in the air, though under USA Hockey and Hockey Canada it must be touching the line or the ice behind it.
 
 **Never forecheck during a delayed offside — hold at the line and wait for the arm to drop.** Under USA Hockey and Hockey Canada nothing stops play before you arrive, and the retreating defenceman is not braced for you: hitting him there is checking from behind, which ends your night under the NHL, the IIHF and Hockey Canada, and costs a minor plus a ten-minute misconduct at its very lightest under USA Hockey.
-
-**The trail-skate drag is the single most useful piece of applied rules knowledge for a forward:** keep your body, hands and stick already in the zone while the trailing blade stays down or glides on the line, then push the instant the puck crosses — but keep your head up, because your body is already across the line where a defenceman standing up at the blue line will be.
 
 ## Overview
 

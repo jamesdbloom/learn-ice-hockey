@@ -16,6 +16,8 @@
 
 **Confidence comes above all from having actually done the thing.** In a scoring slump, shoot more, not less — shooting less shrinks the sample and removes the ugly goals that end droughts.
 
+**Build a pre-game routine and keep it the same, so the game is the only thing that changes week to week.** A meta-analysis pooling 112 effect sizes found pre-performance routines genuinely do improve performance; what nobody can yet tell you is which parts of one are doing the work, so build one and distrust anyone who says which elements are essential. **One test separates a routine from a superstition: if you cannot do it, does it wreck you?** If arriving late only means you compress it, it is a routine.
+
 **Nerves are your body preparing; anxiety is the worry about it.** Manage the first, address the second — and if it has spread beyond the rink, it is not a hockey problem; that warrants a qualified professional, and looking for one is not a failure of toughness.
 
 ## Overview

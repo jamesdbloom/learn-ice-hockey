@@ -7,15 +7,15 @@
 
 ## Key focus
 
-**Every structure in the neutral zone is a coaching choice, not a law of hockey.** Find out which one your team plays and what the signal is to switch it — most teams run more than one.
-
-**You stay onside longer than you think, but not under every book.** Offside needs both of an attacker's skates to completely cross the blue line before the puck does; an airborne trail skate keeps you onside under the NHL and the IIHF, but not under USA Hockey or Hockey Canada, which require skate contact.
-
-**The centre red line is still the icing line, and the shorthanded exemption is conditional, not universal.** The exemption runs on a head count, not a clock — clear the puck while you are still below the opponents' strength, because a penalty expiring can bring you level and end the exemption mid-shift even if nothing else about the play changes.
-
-**Standing up at the blue line is refusing ground with your feet, not building speed into a hit.** A carrier who is fighting the puck or looking down at it is not an invitation to arrive harder — that tells you only that they cannot change direction, and charging rules reach exactly this picture in every book.
-
 **Read the first opponent who comes at you.** Coming hard and straight means they are pressuring — beat it with one early pass. Arcing across the ice means they are steering you toward teammates waiting in the middle — do not go where you are being steered.
+
+**One forward in each lane — left wall, middle, right wall — and when the puck is in a lane that is not yours, hold your lane rather than going to help.** Three separated forwards are three separate passing options, and a flat line of defenders cannot cover three lanes without spreading thin. Two of you in the same lane means one defender covers both, and you have made it 5-on-4 against yourselves. Support here means being available in a different place, not being close. Lanes are positions rather than people, so call the one you are in.
+
+**With no good way forward, turn the puck back and come again rather than forcing the entry.** A forced entry into a set structure ends your possession — a turnover at the line, a dump-in nobody recovers, or an offside. Turning back keeps the puck, makes their forecheck reset, and turns their forwards round, which is the slowest thing anybody does on skates. The real prize is that your own forwards then arrive at the line with speed instead of receiving it standing still. You are not retreating; you are declining a bad entry to buy a better one.
+
+**At your own blue line, standing up is a bet that you have help behind you — give ground when you do not, and say out loud which one you are doing.** Stand up when you have backpressure, when the attacker is wide rather than in the middle, or when they are already fighting the puck; beaten standing up you are beaten completely, because your feet are stopped and theirs are not. **And standing up is refusing ground with your feet, not building speed into a hit** — a carrier with their head down is not an invitation to arrive harder, and that is the picture the charging rules reach.
+
+**Every structure in the neutral zone is a coaching choice, not a law of hockey.** Find out which one your team plays and what the signal is to switch it — most teams run more than one.
 
 ## Overview
 

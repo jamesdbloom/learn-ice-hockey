@@ -12,11 +12,9 @@
 
 ## Key focus
 
-**Seven ideas survive changing your position, your team and your league. Each has its own section below, with an example and its evidence. The two that can get you hurt or penalised come first.**
-
 **Whether you may body check, or be body checked, is set by your age group, your league and your country rather than by anything visible on the ice** — ⚠️ **so ask your coach or your league which category you are in before your first game.**
 
-**Go in on an angle rather than straight at the wall — and when you cannot avoid it, meet it with your skates parallel to the boards, feet apart and knees bent, and take the contact on your forearm and hip — never on the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest.** ⚠️ **Never turn your back to the wall, and never duck.** **And if the wall arrives with you already facing it and no time to turn, spread the load instead: stick and gloves up on the glass, arms out — damage limitation, not the posture to aim for.** **A wall does not need an opponent to hurt you, so this one is yours in a non-checking league exactly as it is in a checking one.**
+**Decide how you will meet the boards on the way in, not on arrival: go in on an angle rather than straight at the wall, and get your skates parallel to it with your head up and your chin off your chest.** ⚠️ **Never turn your back to the wall, and never duck.** The angle is not available in the last half-stride, and a wall does not need an opponent to hurt you — so this one is yours in a non-checking league exactly as it is in a checking one. [Principle 7](#7-choose-how-you-meet-the-boards-before-you-have-to) has the rest of the posture and what each half of it protects.
 
 **Most of what a coach tells you is your team's system rather than a law of hockey.** When your bench and this page disagree, your bench wins.
 

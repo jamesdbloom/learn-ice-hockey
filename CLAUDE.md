@@ -56,6 +56,10 @@ about to get wrong.
 > not turning your back to the boards or dragging your skates. **No one cares about those points in Key
 > focus or Overview; those are technical rules, not practical useful tactics or strategy advice.**"*
 
+⚠️⚠️ **THE *"4 OR 5"* IN THAT QUOTATION IS SUPERSEDED — the owner relaxed it to UP TO TEN on
+23 September 2026, and made it a QUALITY BAR rather than a count. The quotation stays verbatim
+because it is a quotation; the operative rule is below, under "What goes in Key focus".**
+
 > *"**the entire content should be more focused on tactics and strategy than the exact rules across all
 > pages and content**"*
 
@@ -67,7 +71,74 @@ governs, while *"be goal side"* and *"crash the net for the rebound"* are buried
 
 ### What goes in Key focus and Overview, on every page
 
-**The four or five things that are universally true for this position, stated as things a player DOES.**
+**The things a player should MOST focus on to play effectively, stated as things a player DOES.**
+
+### ⚠️⚠️ THE COUNT WAS RELAXED BY THE OWNER, 23 September 2026 — AND IT IS NOW A QUALITY BAR, NOT A CAP
+
+**The owner's instruction, verbatim:**
+
+> *"I'm happy to relax the key focus rules, we can even have **up to 10 points** but as long as each
+> point is **truly a key focus and important for tactical or strategy of how to play effectively**. I
+> want the key focus to concentrate on **the things a player should most focus on to play effectively
+> and be a good player**."*
+
+⚠️ **So the old *"four or five"* is gone as a limit. The test is no longer HOW MANY — it is whether
+each point earns its place.** **Ask of every bullet: is this one of the things a player should MOST
+focus on to play effectively?** **If yes it belongs, and ten is fine. If no it does not belong, and
+five is too many.**
+
+### ⚠️ THE DISCRIMINATOR FOR A TECHNIQUE POINT, and it settles the owner's own non-example
+
+**An agent ruling on ten technique and hockey-IQ documents produced the test:**
+
+> ***"Does a teammate watching a shift notice this, or only a coach watching your feet?"***
+
+**KEY FOCUS** — *edges* · *change of speed and the first three steps* · *knee bend* · *eyes up* ·
+*stopping on both sides* · *puck on the far side of your body* · *carrying without decelerating* ·
+*cushioning a pass* · *release speed* · *shot location* · *arriving at a battle with position*.
+**MECHANICS, and they belong in the body** — *push direction and the toe flick* · stride recovery ·
+grip pressure · blade cupping · wrist-versus-arm · the deke catalogue · hollow depth.
+
+⚠️ **The owner's non-example, *"dragging your skates"*, is on the mechanics side; *"you never change
+speed"* is on the Key focus side. That is why the exclusion is not a ban on technique.**
+
+⚠️⚠️ **AND THE DEFECT IS USUALLY ABSENCE, NOT EXCESS.** ⚠️ **No figure is written here — this line
+carried one for an hour and it was STALE ON ARRIVAL, scoped to two audits when four had run. The
+owner is [`key_focus_quality_bar_2026-09-23.md`](project/reviews/key_focus_quality_bar_2026-09-23.md),
+section *"THE FINDING, MEASURED ON 35 DOCUMENTS"* — read it there.** *"`body_contact_and_battles.md`'s Key focus said nothing a
+player does to win a puck; `time_and_space.md`'s was entirely offensive; **`risk_management.md` owns
+the owner's own worked example and did not state it**; `playing_without_the_puck.md` barely described
+playing without the puck."* ⚠️ **A report that only cuts has asked half the question.**
+
+⚠️ **This RAISES the bar rather than lowering it.** A count cap could be satisfied by cutting; a
+quality bar cannot. **A weak seventh bullet was always wrong — it is not made right by being under
+ten, and it was not made right by being under five.** ⚠️ **And the register is unchanged: things a
+player DOES, not rules, not equipment law, not a map of the document's contents.**
+
+### ⚠⚠ AND WHETHER A POINT EARNS ITS PLACE IS DOCUMENT-RELATIVE — the owner, 23 September 2026
+
+**Two agents escalated rather than overrule the owner's own verbatim exclusion of board posture:
+`rules_primer.md`'s *"drag your trail blade in contact with the blue line"* and `winger.md`'s *"never
+your back to the wall and never duck"*. The ruling:**
+
+> *"I'm happy with both of these, I agree **in both cases in this context the language is good**, but
+> **in other contexts that content is too much detail in the wrong area**."*
+
+⚠⚠ **SO THE TEST IS NOT THE SENTENCE. IT IS WHAT THE DOCUMENT IS ABOUT.** The same limb is a
+key focus in the document whose subject is that hazard, and too much detail in a document that merely
+inherited it. **Neither agent was wrong to escalate — the discriminator they needed is not in the
+exclusion at all.**
+
+✅ **This settles the seven-document spinal-limb question too: KEEP it where the document is about
+board contact, DEMOTE it where it was inherited.** ⚠️ **Demotion needs a per-limb LAYER TEST with
+the carrier list supplied — never a sweep, never one agent for a whole layer** — and ⚠️ **Common
+Mistakes cannot be a demotion target the way Key Takeaways can**, because several of its bullets are
+the only place a tariff lives outside its own section.
+
+✅ **This settles an open question rather than creating one.** `equipment.md`'s Key focus had grown
+to **six** bullets and an agent escalated it rather than deciding — *"I judged the owner's register —
+things a player DOES — the governing test and am flagging the count for your call."* **That judgement
+was right, the sixth bullet stands, and the reasoning is now the rule.**
 Examples the owner gave, and they are the register to match:
 
 - *never pass the puck — or skate it — across the front of your own goal*
@@ -350,7 +421,60 @@ graded return-to-sport progression has light aerobic exercise as its second stag
 clearance.** The wording would have made the document contradict itself, and **only the agent that had read
 the file caught it** — it then apologised for a contradiction that was the dispatcher's.
 
+⚠⚠ **AND IT HAPPENED AGAIN ON 23 SEPTEMBER, IN THE SMALLEST POSSIBLE EDIT.** A coordinator's sketch
+for a facts line said to change *"a named minor in two books"* to *"three books"*, +2 chars, to fit a
+cap. ⚠️ **That would have said THREE BOOKS CAP IT AT A MINOR — and the third book, CARHA, is
+precisely the one that does NOT.** The agent wrote *"named in three books, a minor in two"* instead,
+**+10 chars and exactly true.** ⚠⚠ **A SKETCH SIZED TO FIT A CHARACTER CAP IS STILL A CLAIM, and the
+smallness of an edit is not evidence that it is safe.**
+
 **So: specify the DEFECT and the CONSTRAINT. Let the agent that has read the document write the sentence.**
+
+⚠⚠ **AND BRIEF A CLAIM, NEVER A LINE. Measured 23 September 2026, and it is the round-10 shape
+surviving a wave whose whole subject was the sentence.** A brief named one site of a false
+exclusivity. The agent repaired that site, reported honestly, and **declared the gap it could not
+reach.** A follow-up wave found **the identical false sentence still standing at TWO more sites** —
+one in the body, and one in a **Key Takeaway, which is voiced ALONE to a listener.**
+
+⚠⚠ **IT HAPPENED THREE TIMES ON 23 SEPTEMBER 2026 ALONE, IN THREE DIFFERENT FILES, AND EVERY
+TIME THE SURVIVING COPY WAS IN A LAYER VOICED ALONE TO A LISTENER:**
+- a false exclusivity repaired at one site, still standing in the body **and in a Key Takeaway**;
+- a cross-checking limit that reached the body and the ` ```facts ` block and stopped — **the Key
+  Takeaway and Common Mistakes still carried the UNCONDITIONAL permission**, and a safety reviewer
+  found that **neither spoken chunk contained the word "cross-check" anywhere**;
+- a CARHA scope that reached the body and stopped, **with the document's own body carrying the
+  warning not to carry it across unaltered.**
+
+⚠⚠⚠ **AND THERE IS AN INVERSE SHAPE THIS FILE DID NOT NAME UNTIL 23 SEPTEMBER 2026, WHICH IS
+MORE DANGEROUS BECAUSE THE REPAIR CAUSES IT: FIXING ONE LAYER CAN MAKE ANOTHER LAYER FALSE.**
+Round 10's defect was a correction that reached the body and STOPPED. **This one is a correction that
+reached the body and REVERSED THE PREMISE A SUMMARY LAYER WAS BUILT ON.** Twice in one day:
+- A body was repaired to say standing in the crease after a whistle IS reachable. **A Common Mistakes
+  bullet still read *"none of them are enforceable"* — written when the body said the opposite — and
+  it is VOICED IN ITS OWN `<p>` WITH A 300 ms BREAK EITHER SIDE, AS THE LAST SENTENCE OF ITS CHUNK**,
+  so nothing follows it to qualify it. ⚠️ **A coordinator first wrote this up as *"its own standalone
+  chunk"*, which is WRONG — it shares a chunk with four other bullets — and the agent that repaired it
+  said so: *"a future brief that says so will send someone looking for a chunk that does not exist."*
+  The defect survived the correction; the description did not.**
+- A body and facts block gained a cross-checking limit. **A Key Takeaway still promised the move
+  *"needs no condition met in any book."***
+
+⚠⚠ **BOTH DIRECTIONS TELL A READER AN ACT IS CHEAPER THAN IT IS, AND NO CHECKER CAN SEE EITHER.**
+⚠️ **So after repairing a claim, do not only ask *"did the fix reach every layer?"* — ask
+**"WHICH LAYER WAS WRITTEN ASSUMING THE OLD ANSWER?"** A layer that never mentioned the claim can
+still have been BUILT ON IT.** **Both were found by a fresh reviewer reading the whole document, not
+by any sweep, and one was found only because the reviewer rendered the audio and noticed the sentence
+stood alone.**
+
+⚠️ **The pattern is not "agents are careless" — all three reported honestly and two declared the
+gap themselves.** **It is that a brief pointed at a place instead of a claim, and the summary layers
+are where the naked version survives.**
+
+⚠️ **A brief naming `:996` produces an agent that repairs `:996`.** That is the routing failure this
+file already records for `sources/` and for owner documents, **reproduced for the corpus's own
+repeated sentences.** ⚠⚠ **AND NO TOOL CATCHES IT: `check_layer_echo` and a document grep BOTH miss
+it, because every copy lives in the same file.** **Say "this claim, wherever it appears in this
+document, in every layer" — and require the layer test in the report.**
 When wording is supplied anyway — and sometimes it should be, because it carries the evidence — **say in the
 brief that it is a sketch to be checked against the surrounding prose, never a string to paste.** A
 coordinator writing replacement text is writing content it has not read the context for, which is the one
@@ -447,6 +571,14 @@ The short form:
    filed a fourth — **every time, the answer was already written down in that README.**
    ⚠️ **The defect is ROUTING, NOT DILIGENCE: a brief that names a source and says
    "grep it" produces an agent that greps it. So say this in the brief.**
+   ⚠⚠ **AND THE SAME ROUTING FAILURE HAPPENS WITH THE CORPUS'S OWN OWNER DOCUMENTS, measured
+   23 September 2026.** A brief routed a **cervical-spine** claim to *"`conditioning_and_recovery.md`
+   and the concussion material."* **The concussion material has nothing to do with it.** The agent:
+   ***"An agent that went to the concussion material would have found nothing and might have reported
+   the claim UNVERIFIABLE."*** ⚠️ **A brief that names the wrong owner MANUFACTURES A FALSE
+   NEGATIVE**, and the agent has no way to detect it except by refusing to trust the brief. ⚠️ **So
+   name the owner only when you have checked it is the owner — otherwise say "find the owner."**
+
 3. Attach evidence at the moment of writing: book, edition, rule number,
    operative wording. Numbers come from their
    [owner document](project/content_style_guide.md#numeric-facts-and-their-owners)
@@ -879,8 +1011,11 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     marks where the source sentence CONTINUES. ⚠️ Every gate passes on all of it,
                     because the Markdown is valid and the claim is true. A `safety-reviewer` read
                     fourteen quotations in one section and reported every one verbatim; three had
-                    drifted. A systematic pass over ONE document then found 47 more, and
-                    `rules_primer.md` flags 106. ⚠️ It matches on ALPHANUMERICS ONLY, which is what
+                    drifted. A systematic pass over ONE document then found 47 more.
+                    ⚠️ NO PER-FILE FIGURE IS WRITTEN HERE. This line said `rules_primer.md` "flags 106";
+                    an agent ran the tool on 23 September 2026 and it reports 72. THE TOOL TAKES A FILE
+                    PATH — run it. A figure copied out of its owner goes stale silently, and this is the
+                    second stale number found in this block by an agent that was not looking for one. ⚠️ It matches on ALPHANUMERICS ONLY, which is what
                     defeats the page-furniture splice recorded in sources/README.md, then compares
                     the originals. ⚠️ WORKLIST: the `[a]` bracket form is the corpus's disclosed-
                     insertion convention and is CORRECT, and an ALL-CAPS source heading is a
@@ -902,7 +1037,13 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     Read it voiced alone and ask what a listener knows at that moment. `--all` shows
                     the broad pattern's noise for calibration, never to fix.
                     ⚠️ Fixing one: TRY SUBSTITUTION FIRST — naming the thing is often SHORTER than
-                    pointing at it, measured twice now. Never trade out a caveat to make room.
+                    pointing at it, measured several times now. Never trade out a caveat to make room.
+                    ⚠⚠ BUT IT DOES NOT HOLD FOR A LOCATION, AND A BRIEF THAT PROMISES IT WILL SENDS AN
+                    AGENT HUNTING FOR A SHORTER FORM THAT DOES NOT EXIST. Measured 23 September 2026 in
+                    one file: replacing a forward-pointing demonstrative ran 78 → 57 chars, while
+                    glossing a term of art for a PLACE ran +54 — *"there is no shorter way to define a
+                    location than to state it."* SO: substitution shrinks a POINTER; a definition is an
+                    ADDITION, and that is not a defect.
                     check_caption_hosts.py — diagram captions SPOKEN INTO a document that does
                     not own them. ⚠️ It exists because a sole-carrier audit keyed on the `owner`
                     field in `site/src/data/diagrams.json` UNDER-COUNTS BY CONSTRUCTION, and one
@@ -956,7 +1097,39 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     Three definitions: `--all` is every marker line including list items (calibration noise
                     — a Common Mistakes bullet is SUPPOSED to warn); the default is flow-breaking callouts
                     (blockquote or own-paragraph, outside the summary sections); `--stacks` is runs of
-                    consecutive ones. `--by-section` groups them so one agent can be dispatched per document.
+                    consecutive ones.
+                    ⚠⚠ AND A FOURTH THE REST OF THIS ENTRY DID NOT NAME UNTIL 23 SEPTEMBER 2026:
+                    `--panels` COUNTS WHAT THE SITE ACTUALLY RENDERS AS AMBER, via the anchored
+                    `WARNING_RE`. IT IS THE ONE THAT PREDICTS THE SITE — BUT ONLY SINCE IT WAS FIXED
+                    THAT DAY, AND THE BUG IS THE WARNING WORTH CARRYING.
+                    ⚠⚠ IT RAN THE ANCHORED REGEX OVER THE RAW LINE, SO EVERY CALLOUT NESTED IN A
+                    BLOCKQUOTE — `> ⚠️ …` — SCORED "NOT A PANEL". IT IS A PANEL:
+                    `remark-corpus.mjs:615` is `visit(tree, 'paragraph', …)`, RECURSIVE and commented
+                    as recursive, and its only skip is a parent that is ALREADY a callout — a
+                    blockquote is not, so the paragraph gets an amber aside nested inside a grey
+                    blockquote. DOUBLE FURNITURE, which is worse than either.
+                    ⚠⚠ THE DIRECTION IS WHAT MATTERS: it reported ZERO panels for `goaltender.md`
+                    and the real figure was TWENTY-SIX, twelve in one section. AN AGENT BRIEFED OFF
+                    THAT WOULD HAVE READ "0" AS "CLEAN" — A SILENT FALSE PASS IN THE CORPUS'S DENSEST
+                    TARIFF AREA. The corpus-wide figure moved 270 → 331 on the fix.
+                    ⚠️ AND IT WAS FOUND BY READING `remark-corpus.mjs`, NOT THIS TOOL: the docstring
+                    claimed to mirror the plugin "exactly" and had done since it was written.
+                    A COMMENT ASSERTING FIDELITY TO ANOTHER FILE IS NOT FIDELITY TO IT.
+                    ⚠⚠ THIS MATTERS BECAUSE THE DEFAULT AND `--stacks` OVER-COUNT BY CONSTRUCTION:
+                    `classify()` files ANY paragraph OPENING `**bold**` as "own paragraph" wherever its
+                    marker sits. Measured: a coordinator briefed "ELEVEN amber panels in a row" in
+                    `rules_primer.md` on the strength of `--stacks`; the agent checked with `--panels` and
+                    found THREE, with prose between two of them. ⚠️ THE OTHER EIGHT WERE ALREADY REPAIRED
+                    — the marker had been moved mid-paragraph in an earlier round, which is exactly the
+                    fix this file recommends.
+                    ⚠⚠ AND A MOVE-2 REPAIR REAPPEARS IN `--stacks` FOREVER: the tool's header says
+                    "the AUDIO benefit is real and permanent; the COUNT benefit was an artefact. Do not
+                    bank it." ⚠️ SO NEVER BRIEF A CALLOUT WAVE FROM `--stacks` ALONE, and never judge
+                    one by whether `--stacks` fell — it will not. `--panels` is the measurement that moves.
+                    ⚠️ AND THE TWO CENSUSES ANSWER DIFFERENT QUESTIONS: `--panels` is what a READER sees;
+                    the marked-PARAGRAPH count is what a LISTENER hears. A run of eleven bold prose
+                    paragraphs each speaking "Important." is a real listener defect that `--panels` scores
+                    as clean. `--by-section` groups them so one agent can be dispatched per document.
                     ⚠️ `--stacks` LABELS TWO SHAPES AND THEY ARE NOT THE SAME DEFECT: `[one blockquote]`
                     is ONE long warning region, `[separate blocks]` is the real flow break.
                     ⚠️⚠️ AND THE FIRST VERSION OF THIS PASSAGE GOT ITS OWN EXAMPLE WRONG, WHICH IS WHY THE
