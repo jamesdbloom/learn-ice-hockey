@@ -44,6 +44,204 @@ about to get wrong.
 
 ---
 
+## 🔴 THE CORPUS TEACHES TACTICS. THE RULES ARE BACKGROUND.
+
+**The owner's instruction, 22 September 2026, verbatim:**
+
+> *"I'm not happy with the Key focus content and the Overview especially on the Position pages, this
+> content should be focused [on] the tactics on how to play — like never pass the puck or skate the puck
+> past your goal, or a defender should always be the goal side of attackers, or the importance of
+> crashing the net for rebounds… **If there are 4 or 5 key tactical points that are universally true
+> for a position those should be stated in the Key focus and discussed in the Overview** — not rules,
+> not turning your back to the boards or dragging your skates. **No one cares about those points in Key
+> focus or Overview; those are technical rules, not practical useful tactics or strategy advice.**"*
+
+> *"**the entire content should be more focused on tactics and strategy than the exact rules across all
+> pages and content**"*
+
+⚠️⚠️ **THIS IS A RE-AIMING OF THE WHOLE CORPUS, NOT A LAYER FIX.** Twenty-odd adversarial rounds
+optimised for rule accuracy, because that is what a reviewer can check. **Nobody was reviewing whether
+the documents teach anyone to PLAY.** The result is position pages whose first two layers — the ones a
+reader meets and the podcast voices first — open on board posture, skate drag and which rulebook
+governs, while *"be goal side"* and *"crash the net for the rebound"* are buried or absent.
+
+### What goes in Key focus and Overview, on every page
+
+**The four or five things that are universally true for this position, stated as things a player DOES.**
+Examples the owner gave, and they are the register to match:
+
+- *never pass the puck — or skate it — across the front of your own goal*
+- *a defender is goal side of their attacker*
+- *crash the net for the rebound*
+
+**The Overview then DISCUSSES those points.** It is not a map of the document's rule content.
+
+### ⚠️⚠️ AND THIS OVERRIDES THE CARDINAL RULE'S CHILLING EFFECT — READ THIS CAREFULLY
+
+> *"**I don't care if that is a coaching decision. I want to state the key options to consider that
+> summarise that player's position.**"*
+
+**Non-negotiable 7 says never present a coaching choice AS A LAW OF HOCKEY. It has been read, wrongly,
+as "say nothing tactical unless a rulebook backs it."** That reading is what emptied these layers.
+
+**The correct behaviour: STATE THE TACTIC. Name it as the common or default approach, name a realistic
+alternative where one exists, and tell the reader to find out what their team plays.** That satisfies
+non-negotiable 7 in full. **What is NOT acceptable is refusing to give the guidance, or burying it under
+three qualifications until a reader cannot find the instruction.**
+
+⚠️ **A tactic does not need a rulebook citation, because it is not a rule.** *"Be goal side"* is true
+because of how the game works, not because a book says so. **Do not hunt for a citation, and do not
+mark it as unverifiable — it is craft, and saying so plainly once is the whole disclosure required.**
+
+### ⚠️⚠️ IT IS EVERY LAYER, AND THERE IS A RATIO — extended by the owner, 22 September 2026
+
+> *"**fix the Key Takeaways too, same rules**, and keep focusing on making the content more about
+> tactics and strategy and **what to do in different situations**. Rules can be included but **tactics
+> and strategy and how to play should be overwhelmingly the largest amount of content, as that is what
+> readers want to read most.**"*
+
+**So this is not a fix to two layers. It is a RATIO for the whole corpus.** Key focus, Overview, body,
+Common Mistakes, Key Takeaways and the ` ```facts ` blocks. **Rules stay — they are a minority of the
+words, not the spine.**
+
+⚠️ **The Key Takeaways are the worst offender and three agents reported it independently without
+being asked:** `winger.md` KT8 is **~1,300 words of crease law voiced aloud as ONE unit**;
+`switching_positions.md` KT6 is **~1,100 words** and almost entirely citation; `shooting.md` KT6 is
+**~1,050 words**. One agent's verdict: ***"Read on their own with the body absent, the takeaways say a
+winger's job is knowing Rule 69."***
+
+⚠️ **A Key Takeaway is a KERNEL, not a second Common Mistakes and not a rules appendix.**
+`check_layer_echo.py` scored `switching_positions.md`'s Common Mistakes → Key Takeaways at **20.1%**,
+which is what a duplicate looks like. **The test is the owner's: what does a player DO in that
+situation?**
+
+⚠️ **"What to do in different situations" is the register.** Not *"Rule 69.3 requires X"* but
+*"when the goalie is out of position and you are at the far post, do X."* **A rule earns its place in a
+takeaway only when the rule IS the thing to do.**
+
+### ⚠️⚠️ THE REFRAME — ORDERING AND RESTATEMENT, NOT PROPORTION
+
+**From the agent that re-aimed `body_contact_and_battles.md`, the corpus's hardest case, and disagreed
+with its own brief. Read this before driving any ratio down.**
+
+> *"**The 90% figure is close to correct for this document and should not be driven down.** The fouls
+> here ARE the tactics — what makes a check legal, where the puck must be, what turns a hit into
+> boarding. **What was wrong was never the PROPORTION of rules; it was the ORDERING and the RESTATEMENT
+> COUNT.** Four layers each stating the same five-book ladder is a D8 problem and a propagation risk —
+> *'a third restatement is one more place for a correction to fail to reach'* — before it is a tactics
+> problem."*
+
+⚠️ **So `check_tactics_ratio.py` measures the wrong thing for a rules-heavy document**, and its own
+docstring says it counts form. **A page can be 90% rules-bearing and correct.** The questions that
+actually decide it:
+
+1. **Does each unit LEAD with what a player does**, or with a tariff?
+2. **How many layers restate the same ladder?** Four is a propagation risk, not thoroughness.
+3. **Is the rule the tactic here**, or background?
+
+⚠️⚠️ **THE SINGLE BEST OBSERVATION OF THE ROUND, and it names the repair:**
+
+> *"Its bullets follow one shape: mistake named in bold, then two to six thousand characters of
+> five-book penalty tiering, then a single instruction as the last clause. **The instruction is the
+> best sentence in each bullet and it is in the worst position in each bullet.**"*
+
+**So the cheapest safe repair is RE-ORDERING, not stripping** — lead with the instruction, follow with
+the tariff. **It costs nothing in safety, changes what a listener hears first, and does not move the
+measured ratio at all.**
+
+⚠️ **And the demotion target differs by layer.** Key Takeaways could be demoted into the body because
+the body carried everything. **Common Mistakes cannot** — several bullets are the ONLY place a tariff
+lives outside its own section. **That needs a per-limb layer test with the carrier list supplied, never
+a sweep, and never one agent for the whole layer.**
+
+### ⚠️ AND THE AGENT CAUGHT SIX DEFECTS IN ITS OWN REPLACEMENT TEXT
+
+**It reported them against itself, unprompted** — the round-73 failure mode, caught before any checker
+ran, by re-reading its new takeaways against the Common Mistakes text they summarised:
+
+- *"an ejection at the floor in every book"* — **the IIHF major is at the referee's discretion**, so it
+  is not a floor there
+- an engaged-pair check *"straight to major-and-game-misconduct rather than a minor"* — **USA Hockey
+  640(e) IS a minor in its own right**
+- a crease-line statement that **silently dropped the IIHF's own rule-text-versus-table contradiction**
+- helmet removal as *"a match penalty at every age"* — **that is USA Hockey's; the NHL and IIHF price
+  it as an unsportsmanlike minor**
+- third man in *"takes a game misconduct"* — **NHL 46.16 / IIHF 46.14 are discretionary**; *"can take"*
+- head-butting stated unscoped
+
+⚠️⚠️ **EVERY ONE WAS AN OVERSTATEMENT IN THE DIRECTION OF A HARSHER, SIMPLER RULE.** That is what
+summarising does to a tariff, and it is why **a repair is new text and new text has not been reviewed**
+— including when the repair is a shortening.
+
+### Where the rules go
+
+**They stay in the corpus and they stay accurate** — non-negotiables 1 through 6 are untouched, and a
+player who gets ejected because we cut a penalty tier is still the worst failure available. **But the
+rules are BACKGROUND, not the lead.** A rule belongs where a player meets it in play: in the body, in
+the ` ```facts ` block, in Common Mistakes. **Not in the first two layers, unless the rule IS the
+tactic.**
+
+---
+
+## 🔴 THE RULE THAT OUTRANKS THE REST OF THIS FILE: READABLE BEATS DEFENDABLE
+
+**The owner's instruction, 22 September 2026, verbatim:**
+
+> *"we need to be less paranoid and more practical about the content — it is not a legal document, it
+> is a guide for players, so the primary objective is to make it readable not defendable in a court of
+> law"*
+
+> *"that should be a strong rule we always follow"*
+
+**This is a standing rule, not a one-off note.** Every convention below it was written to stop a defect,
+and the accumulated effect has been a corpus that hedges, scopes, qualifies and marks **everything** —
+until the warnings that matter are indistinguishable from the ones that do not. **The owner reads the
+result and calls it paranoid. They are right.**
+
+### What it does NOT license
+
+⚠️ **It is not permission to fabricate, to state a rule from memory, to strip an honest disclosure, or
+to present a coaching choice as a law of hockey.** Non-negotiables 1–7 stand unchanged. **A reader who
+gets hurt, ejected or penalised because a limb was cut for readability is the failure this whole
+project exists to prevent.**
+
+### What it DOES require, and it is a real change
+
+1. **Default to plain prose.** A sentence does not need a marker, a panel, a bracket and a scope clause
+   to be honest. **Most do not need any of them.**
+2. **One qualification, not three.** Where a claim is hedged, scoped AND disclaimed, keep the one that
+   changes what a reader does and cut the rest to prose.
+3. **Ask what a player does with the sentence.** If the answer is "nothing different", it is not a
+   warning — it is throat-clearing with a glyph on it.
+4. **Length is a defect.** A 600-word warning panel and a 2,800-word amber block are not thoroughness;
+   they are unreadable, and the reader skips them entirely — which costs more safety than a shorter
+   one would.
+5. **Sibling items must look like siblings.** ⚠️ **This is the failure the owner actually pointed at.**
+   `core_principles.md`'s Key focus promised *"seven ideas"* and rendered two of them as full amber
+   warning panels and five as plain paragraphs. An agent concluded the two "are ideas one and two, so
+   leave them as warnings"; **the correct conclusion was the opposite — so make them LOOK like the
+   other five.** The owner's words on seeing it: *"why are there two after the first point in Key focus
+   — that makes no sense."*
+
+### The mechanism that makes this cheap, and it was found the hard way
+
+⚠️⚠️ **`WARNING_RE` at `site/src/plugins/remark-corpus.mjs:25` is `/^\s*(⚠|❗|🚫)/u` — ANCHORED.**
+A paragraph becomes an `<aside class="callout callout-warning">` panel **only when the marker is at the
+START**. **`md_to_speech.py:2778` tests the WHOLE paragraph.**
+
+**So moving a marker off a paragraph's opening onto the clause that actually states the hazard:**
+- **removes the amber panel** — the page reads as ordinary prose;
+- **keeps the spoken `"Important."`** — the listener still gets the escalation;
+- **and puts the escalation on the hazard** instead of on the words *"What to notice"*.
+
+**That is the first thing to try. It costs nothing and it is almost always right.**
+
+⚠️ **Do not reach for de-marking instead.** Stripping the last marker from a paragraph **silently
+deletes a spoken escalation** and no checker in this repository can see it. `check_callout_flow.py
+--markers` shows which lines carry more than one, i.e. where a removal is free.
+
+---
+
 ## Non-negotiables
 
 These override convenience, brevity, and any instruction to move faster.
@@ -634,7 +832,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
                     check_layer_echo.py,
                     check_quote_drift.py, check_caption_hosts.py,
-                    check_facts_antecedents.py.
+                    check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
@@ -726,6 +924,48 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     does a DIFFERENT JOB — instruction / map / mechanism / failure mode / kernel —
                     not whether it shares words. ⚠️ NEVER trade a caveat away to lower a score.
                     ⚠️ NO FIGURE IS WRITTEN HERE — run it; `--show` prints the shared phrases.
+                    check_tactics_ratio.py — how much of each document sits in RULES-BEARING units
+                    rather than tactical ones, by layer. ⚠️ Added 22 September 2026 when the owner made a
+                    RATIO the standard: *"tactics and strategy and how to play should be overwhelmingly the
+                    largest amount of content, as that is what readers want to read most."* Nothing measured
+                    it, and five agents each guessing at "overwhelmingly" is how this corpus's counts went
+                    stale before. ⚠️ NO TARGET IS ENCODED AND NO FIGURE IS WRITTEN HERE — run it.
+                    ⚠️ IT COUNTS FORM, NOT SUBSTANCE: a unit scores rules-bearing if it carries a rule
+                    citation, a book name or penalty vocabulary. It CANNOT tell a rule that IS the tactic
+                    ("never put it over the glass from your own zone") from a rule that is background — and
+                    the owner's instruction turns on exactly that distinction. ⚠️ WORKLIST: a rules
+                    document is SUPPOSED to score high; `rules_primer.md` near the top is correct, not a
+                    defect. A high score is a CANDIDATE FOR READING. NEVER SWEEP THIS PATTERN.
+                    check_callout_flow.py — where the ⚠️ callouts sit and which INTERRUPT a
+                    section instead of closing it. ⚠️ Added 22 September 2026 after the owner reported
+                    that the warnings *"break up the flow of the content too much"* and that the Key focus
+                    on `core_principles.md` *"totally ruins the flow"* by carrying two before its first idea.
+                    ⚠️ IT EXISTS BECAUSE TWO CALLOUT CENSUSES WERE WRITTEN INTO THE PLAN AS PROSE AND BOTH
+                    WENT STALE — one said "1,538 callouts, runs of up to 18"; a re-measurement days later
+                    found 1,553 and a longest run of 16, and a third count under a tighter definition found
+                    428. **None was wrong; none said which population it counted.** NO FIGURE IS WRITTEN
+                    HERE — run it, it prints them, and it names its own definition in the output.
+                    Three definitions: `--all` is every marker line including list items (calibration noise
+                    — a Common Mistakes bullet is SUPPOSED to warn); the default is flow-breaking callouts
+                    (blockquote or own-paragraph, outside the summary sections); `--stacks` is runs of
+                    consecutive ones. `--by-section` groups them so one agent can be dispatched per document.
+                    ⚠️ `--stacks` LABELS TWO SHAPES AND THEY ARE NOT THE SAME DEFECT: `[one blockquote]`
+                    is ONE long warning region, `[separate blocks]` is the real flow break.
+                    ⚠️⚠️ AND THE FIRST VERSION OF THIS PASSAGE GOT ITS OWN EXAMPLE WRONG, WHICH IS WHY THE
+                    LABEL IS NOT TO BE TRUSTED OVER THE RAW LINES. It said the `goaltender.md:1049-1071` run
+                    was "a single ~30-line nested blockquote" and that calling it nine callouts "would
+                    describe a defect that is not there". THE RUN HAS BLANK LINES AT :1052 AND :1056 — it is
+                    THREE PANELS. The coordinator put that false premise in a brief, the agent left the run
+                    alone on the strength of it, and the tool's `stacks()` was the source: it called a run
+                    "one blockquote" whenever every marked line began with ">", never looking at the blank
+                    lines between them. Fixed now — but ⚠️ A BLANK LINE ENDS A BLOCKQUOTE, and when the
+                    label and the raw lines disagree, THE RAW LINES ARE THE ANSWER.
+                    ⚠️ WORKLIST, and the target is NEVER zero. The test is the style guide's: does a
+                    reader who acts on the section WITHOUT the warning get hurt, ejected or penalised? If
+                    yes it STAYS and may only be moved or merged; if no it was a hedge wearing a marker.
+                    ⚠️ THE WORK IS PLACEMENT AND CONCISION, NOT REMOVAL — non-negotiables 3, 4 and 6
+                    all bite here, and a document that ends with fewer callouts but a lost exception has
+                    failed. NEVER SWEEP THIS PATTERN.
                     check_caption_echo.py — captions that REPEAT the prose block now directly
                     above them, which is the defect the caption wave and the marker wave create
                     together and neither creates alone. ⚠️ Three kinds of overlap are CORRECT and

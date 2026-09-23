@@ -1741,3 +1741,39 @@ regulations. **They do NOT settle Scottish domestic competitions outside the IHU
 the EIHL** — ⚠️ **and note the EIHL Casebook, obtained 22 September 2026, does NOT settle the EIHL
 checking question either: it is a playing-rule document and contains no `check`/`checking` at all.** PNIHL is named in the NIHL document and was never fetched. NIHL National's own regulations exist
 and are unread.** *"Ask your league"* remains right everywhere else.
+
+---
+
+## ⚠️ TWO-COLUMN TABLE SPLICES — a false zero that flattening does NOT repair
+
+**Recorded 22 September 2026, after two agents hit it independently on the same rule.**
+
+`grep -ci "on the crease line"` returns **0** in `nhl_rules.txt`, `nhl_rules_layout.txt`,
+`pwhl_rules.txt` and `pwhl_rules_layout.txt` — **and stays 0 when flattened** with `tr -d ' \n\t'`.
+
+**The phrase is there.** `nhl_rules_layout.txt:9286-9290`, Reference Table 14 row E:
+
+> *"E. An attacking player plants himself on | **Goal is allowed.** | the crease line or outside the
+> goal crease, as to obstruct the goalkeeper's vision and impair his ability to defend his goal, and a
+> goal is scored."*
+
+**The result column interleaves INSIDE the phrase.** The PWHL copy has the same shape at
+`pwhl_rules_layout.txt:8319-8326`, in the feminine.
+
+⚠️⚠️ **WHY FLATTENING CANNOT SAVE YOU, AND WHY THIS IS DIFFERENT FROM THE PAGE-FURNITURE SPLICE.**
+The furniture splice recorded elsewhere in this file is defeated by alphanumeric-only matching because
+the intruder is *page furniture*. **Here the intruder is CONTENT — "Goal is allowed." is words.** No
+normalisation removes it, because nothing distinguishes it from the sentence around it.
+
+⚠️ **THIS IS ALSO A DOCUMENTED LIMIT OF `scripts/check_quote_drift.py`.** That tool matches on
+alphanumerics only, and its docstring says so as the thing that defeats splices. **It does not defeat
+this one.** Two verbatim, correct quotations of row E — the NHL's and the PWHL's — both score
+**NOT FOUND**. A `notfound` on a table-row quotation is therefore **not evidence of drift**; read the
+`_layout` extraction by eye and confirm positionally.
+
+**So: a zero from a grep against a TWO-COLUMN TABLE means nothing.** Read the `_layout` file.
+
+⚠️ **The scope of this is UNKNOWN and nobody has checked it.** Row E is the row we happened to look at.
+**If the interleave is general to Reference Table 14 — or to the IIHF's Appendix IV Table 16 — then
+other situation-row claims in this corpus may rest on greps that returned a false zero, and no tool on
+disk would say so.** That census has not been run.
