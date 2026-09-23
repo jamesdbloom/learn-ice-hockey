@@ -288,6 +288,9 @@ The standard assignment, and the one assumed throughout this document:
 Never: Chase from behind their shoulder — that is jogging, and you cannot defend anything from behind
 Action: Take a route that puts you inside them, between them and your net, even if it is slightly longer
 Position: Arrive at their inside hip, not their back pocket, so your stick reaches the passing lane
+Action: Take the ice, not the body — get to the spot ahead of your man and hold the lane you picked rather than veering into him, because he does not have the puck
+Rule: Body position is yours to lengthen an opponent's path to the puck "provided [the] stick is not utilized" — NHL and IIHF 56.1, PWHL 57.1 — so on a man without the puck the blade goes in the passing lane, not on him
+Rule: USA Hockey 625(a)(4) is a minor for a defender who "changes their skating lane or foot speed in an effort to play the body of an opponent who is no longer in control of the puck"
 Options: If you are genuinely beaten and can only chase, chase the stick — blade under theirs or on the puck, never reaching around their body, which is a hook or a trip
 Risk: Reaching around their body from behind is a hook or a trip, and near your own net that gets expensive
 ```
@@ -295,7 +298,7 @@ Risk: Reaching around their body from behind is a hook or a trip, and near your 
 Chasing an attacker from behind their shoulder is not backchecking — it is jogging. You cannot defend anything from behind.
 
 - **Take a route that puts you inside them**, between them and your net, even if that route is slightly longer.
-- **Arrive at their inside hip**, not their back pocket. From there your stick reaches the passing lane and your body is already goal side.
+- **Arrive at their inside hip**, not their back pocket, and **take the ice, not the body** — get to the spot ahead of them and hold the lane you picked, rather than veering into them on the way across. From there your body is already goal side and your stick reaches the passing lane, **and the lane is what the stick is for.** Laid across a man who does not have the puck it is a restraining foul instead: the NHL, the IIHF and the PWHL each grant you your body position to lengthen an opponent's path to the puck *"provided [the] stick is not utilized"*, and **USA Hockey 625(a)(4)** reaches the feet half too — a minor for a defender who *"changes their skating lane or foot speed in an effort to play the body of an opponent who is no longer in control of the puck."* ⚠️ **Hockey Canada and CARHA write no stick proviso into interference** — they simply penalise impeding an opponent who is not in possession (8.3(i), 66(a)(1)) — **and CARHA's is a minor *"or, at the discretion of the Referee, a Major penalty and a Game Misconduct penalty"*, so in the adult rec book this is the backcheck that can end your game.**
 - **If you are genuinely beaten and can only chase**, chase the *stick*, not the body: get your blade under theirs or on the puck and never around their body, because reaching around them from behind is a hook or a trip, and near your own net that gets expensive (see the breakaway section below).
 
 ### Skate first, then look

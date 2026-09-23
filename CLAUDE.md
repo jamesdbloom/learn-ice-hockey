@@ -839,7 +839,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_diagram_quotes.py, check_chunk_tails.py, check_leaders.py,
                     check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
                     check_layer_echo.py,
-                    check_quote_drift.py, check_caption_hosts.py,
+                    check_quote_drift.py, check_caption_hosts.py, check_instruction_first.py,
                     check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of

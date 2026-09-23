@@ -223,6 +223,7 @@ The technique is to keep your assignment in your **peripheral vision** while you
 ```facts
 Technique: Blade on the ice, flat, in the passing lane between the puck and your man — a stick held six inches up removes nothing
 Position: Put your body between your man and your own net, not between your man and the puck
+Never: Put your stick on a man who does not have the puck — the blade goes in the passing lane, and laid across him it is a restraining foul instead
 Technique: Face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane
 Priority: When you cannot both seal the lane and stay net-side, net-side wins in the defensive zone
 Key: A pass completed twenty feet from your net is survivable; a player alone at the goalmouth is not
@@ -230,12 +231,14 @@ Key: A pass completed twenty feet from your net is survivable; a player alone at
 
 Two separate tools, and players routinely use only one.
 
-- **Your stick takes away the pass.** Blade on the ice, in the passing lane between the puck and your man. A stick lying flat in a lane removes a pass that a stick held six inches up does not.
-- **Your body takes away the shot and the net drive.** Position yourself between your man and your own net, not between your man and the puck.
+- **Your stick takes away the pass.** Blade on the ice, in the passing lane between the puck and your man — **in the lane, not on him.** A stick lying flat in a lane removes a pass that a stick held six inches up does not.
+- **Your body takes away the shot and the net drive.** Position yourself between your man and your own net, not between your man and the puck — **take the ice, not the body**, getting to the spot and holding it rather than stepping across into him.
 
 ![](diagram:stick-in-lane-body-net-side)
 
 Doing both at once is a body-position problem: face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane. When they conflict — you cannot both seal the lane and stay net-side — **net-side wins in the defensive zone**, because a pass completed twenty feet from your net is survivable and a player alone at the goalmouth is not.
+
+**And your man does not have the puck, which conditions both tools.** The NHL, the IIHF and the PWHL each let you use your body position to lengthen an opponent's path to the puck *"provided [the] stick is not utilized"*, so the blade belongs in the lane rather than on him; and you take the ice by getting to the spot first, not by stepping across into him once he is moving.
 
 ### Layer, do not duplicate
 
