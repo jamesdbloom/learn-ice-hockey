@@ -218,6 +218,88 @@ afterwards.**
 
 ---
 
+## 🔴 FROM THE CLEARING GATE — five rows it raised while passing the commit
+
+**Commit `23c33de` is CLEAR and committed. These are its non-blocking findings.**
+
+### 1 ⚠️ NAME THE SIX DOCUMENTS READ TRUNCATED — a declared limit that does not say where it bites
+
+The `content-reviewer` covering D6–D9 declared it *"read the diff TRUNCATED to 330–400 characters…
+for most changed paragraphs I read the opening clause and nothing else"* and that **whole-paragraph
+reads of six documents remain undone — but never named which six.**
+
+⚠️ **That layer is the one this commit restructured most.** The gate sampled the densest restructured
+takeaway and swept every added harsh-tier absolute, and all held — **but it said plainly its sampling
+does not close the gap**, and that `center.md` (74 changed lines), `winger.md` (63) and
+`goaltender.md` (39) were **not read paragraph-by-paragraph by anyone.**
+
+> *"**A declared limit that does not say where it bites cannot be discharged by the next round.**"*
+
+### 2 ⚠️ THE FAIR-GAME COUNT IS STILL SHORT AT FOUR UNSTAGED SITES
+
+`language_and_glossary.md:13`, `:419`, `:447` and `rink_map.md:573` still say *"the four books"* for
+the goaltender *"fair game"* claim. ⚠️ **Not false — the four named do say it — but it under-counts
+by two in the direction this record calls its own sharpest species: a CARHA or PWHL reader hears
+their own book excluded.**
+
+⚠️ **Correctly left out of the commit: sweeping this pattern is forbidden and each site needs a
+per-site read.** ⚠️ **And the gate found a fifth, also unstaged: `shooting.md:293`, a `Rule:` facts
+line reading *"not 'fair game' … in every book"* while enumerating five and omitting the PWHL —
+TRUE AS STATED, SHORT AS ENUMERATED.**
+
+### 3 🔴 CARHA IS A FIFTH BOOK SETTLING THE CREASE LINE — AND THE ANSWER WAS ALREADY IN THIS REPOSITORY
+
+`carha.txt:270-274`, Glossary: *"The lines which designate these areas are to be considered as part
+of the creases."* **PWHL 1.7 does not carry it (confirmed, 0 hits).**
+
+⚠️⚠️ **This is the coordinator file's own recorded pattern verbatim: the answer was already written
+down here — it is in the grep table of the review record for this very commit — and nobody
+propagated it.** The corpus's count-free form (*"every book that settles the question in its rule
+text or glossary"*) absorbs it without change; the enumerations do not.
+
+**Direction is SAFE** — CARHA agrees with the conservative *"stay off the line"* reading — **so this
+is completeness, not a hazard.**
+
+### 4 ⚠️ TIGHTEN THE CARHA INFERENCE, which is on the record rather than hidden
+
+*"Every book here prices a penalty separately from the goal"* is **explicit** for NHL, IIHF, USA
+Hockey and Hockey Canada, and **explicit for the PWHL**. ⚠️ **For CARHA it is an INFERENCE** —
+52(b)'s Note imposes a penalty for unnecessary contact and **never conditions on a goal**, so nothing
+ties the two, **but the book does not say *"separately"* in terms.** The gate called the handling
+correct and the wording worth tightening.
+
+### 5 ⚠️ SEVEN FACTS LINES AT CAP, 284 WITHIN SIX CHARACTERS
+
+`check_facts` passes. ⚠️ **This is the eviction risk that once forced a mandatory give-ground duty
+out of a `Rule:` line and into a `Technique:` line with no rule number and no penalty — where,
+voiced alone, it read as a coaching preference.** Already rows; restated because the number grew.
+
+---
+
+## ✅ WHAT THE FOURTH GATE ESTABLISHED, AND IT IS THE FIRST TIME
+
+> *"I re-derived everything from `sources/` and inherited nothing from my three prior reports.
+> **Every claim I sampled held exactly — no drift, no misattribution, no overstatement. That is the
+> first time that has been true in four audits.**"*
+
+⚠️ **It also closed the record's OWN declared blind spot** — all five `Introduction To Body Contact`
+quotations at `zone_entries.md:496` tested, **every attribution holds**, including that the
+Program Guide really does carry the tip-of-shoulder sentence and really does **not** carry the
+walking-speed one.
+
+**And C11 was settled rather than deferred:** `zone_entries.md`'s repairs **terminate** (confined,
+re-derived, recorded); ⚠️ **`game_management.md`'s 16→17 merge DID void its clearance** — it merges,
+renumbers and adds — **so the gate performed the fresh pass itself** and found every tier
+verbatim-correct.
+
+⚠️⚠️ **AND THE OPPOSITE OF THE EXPECTED FAILURE, worth recording because this wave found twenty-plus
+of the other kind:** the merged takeaway **PRESERVES an ambiguity most compressions would flatten** —
+640(g)/(h) reach only actions under 640(b), and 640(b) excepts adult men, so *"whether they reach a
+late hit there the book does not say."* **A summarisation that ran toward the honest reading rather
+than the harsher simpler one.**
+
+---
+
 ## 🔴 THE SITE REVIEW RAN — C10's HYPOTHESIS WAS HALF WRONG, AND THE REAL DEFECT IS BULK
 
 **Chrome recovered; the review ran at 1200 px in both themes across ten pages.**
