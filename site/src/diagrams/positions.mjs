@@ -616,7 +616,28 @@ const wingerOffensiveZone = {
     'Where a winger works in the offensive zone, and the one layer that is not his. The half-wall ' +
     '— the boards roughly level with the faceoff dot — is your home base; your own faceoff circle ' +
     'is where the one-timer off a cross-ice pass arrives; the side of the net is where rebounds ' +
-    'and tip-ins live, so time the crash to arrive as the shot is taken rather than before it. ' +
+    'and tip-ins live, so time the drive drawn here — in from your circle or the wall — to arrive ' +
+    'as the shot is taken rather than well before it. The screen is the other job and it runs the other ' +
+    'way: if the net front is your assignment, you are planted there before the release. ' +
+    // ⚠️ THIS SAID "time the crash to arrive as the shot is taken rather than before it" — one
+    // timing instruction for two jobs that need opposite ones, and a caption is SPOKEN INTO its
+    // host, so a listener got the repaired body and then this. content/positions/winger.md and
+    // content/systems/offensive_zone_play.md were both repaired on 23 September 2026 to split
+    // them: planted before the release if the net front is your assignment (winger.md:9, :32,
+    // :665, Key Takeaway 9; offensive_zone_play.md:526 and its facts block at :519), arriving
+    // with the release if you are driving in from the wall or your own circle.
+    // ⚠️ THE DRAWN PLAY IS THE DRIVE, not the screen — LW starts in his own faceoff circle and
+    // skates to the side of the net — so the old sentence was CORRECT FOR THE PICTURE and wrong
+    // only in being unscoped. The repair is the scope, not a reversal; reversing it would have
+    // mistaught the route this diagram actually shows.
+    // ⚠️ "WELL before it" ADDED 23 September 2026, and the tolerance word is load-bearing HERE
+    // for the same reason it is in winger.md:9 — this caption states BOTH clocks fourteen words
+    // apart ("rather than before it ... planted there before the release"), and it is spoken
+    // into its host as one unit. Without "well" the two clauses read as a flat contradiction and
+    // the drive's timing becomes a knife-edge with no tolerance. The owner is
+    // content/systems/offensive_zone_play.md:527 — "arrive as the puck is released rather than
+    // well before it" — and every other layer carries the word. The quotes ABOVE deliberately
+    // preserve the superseded wording; do not "repair" them to match this string.
     // ⚠️ THIS SAID "Leave the high slot ... for the centre: two patches with two owners" — an
     // OWNERSHIP claim stated flat, in the imperative, to a listener who hears the caption alone.
     // FALSE IN THE OFFENSIVE ZONE ON ITS OWN EVIDENCE, not merely by import from the defensive-zone
@@ -651,7 +672,45 @@ const wingerOffensiveZone = {
     'and both the NHL and the IIHF answer this exact play in their own reference tables, ' +
     TABLES_ALLOW_OUTSIDE +
     '. That is an appendix table rather than rule text, and ' + REFEREE_JUDGEMENT +
-    ' So keep your feet out of the paint, and off ' + CREASE_LINE_IS_THE_CREASE + '.',
+    ' So keep your feet out of the paint, and off ' + CREASE_LINE_IS_THE_CREASE + '. ' +
+    // SAFETY, ADDED 23 September 2026, and it was absent entirely. This caption sends a
+    // winger "to the side of the net ... to arrive as the shot is taken" and the drawn
+    // skate route ends at (86, -10) — 7.6 ft from the near post at (89, -3), with its
+    // terminal tangent running across the face of the net toward the end boards. That is
+    // CLOSER to the frame than `entry-wide`'s net drive (11.2 ft), which was given this
+    // limb an hour earlier. The sibling's retraction test for `entry-middle-drive` —
+    // "the picture deliberately does not send a player into the frame", route tip 27 ft
+    // out — was applied here and does NOT refute it: this picture does send him in.
+    //
+    // Owner's own wording, content/positions/winger.md:430 ("Never: Meet a goal post head
+    // first, and never duck. Head up, chin off your chest instead"), :440 (the near-post
+    // habit and the braced shove), :671 and Key Takeaway 9 at :738. Primary text verified
+    // in this session: sources/huh.txt:220-229 and sources/ibc.txt:1390-1391.
+    //
+    // ⚠️ THE MARKER IS ON THE INSTRUCTION, NOT ON THE ATTRIBUTION. A listener hears the
+    // spoken "Important." land on knowing where the post is, not on USA Hockey's name.
+    //
+    // ⚠️ THREE WORDINGS THAT ARE WRONG AND WERE DELIBERATELY NOT WRITTEN:
+    //   · "never your head" — the source is about what you LEAD with: "anything but your
+    //     head FIRST" (ibc.txt:1390-1391).
+    //   · "an arm or a shoulder" — that contradicts this corpus's own shoulder
+    //     prohibition, imported into three captions in this very file as SHOULDER_TAIL.
+    //     The source says "an arm, a leg, or anything but your head first."
+    //   · "the collision can happen at walking speed" — the "it" in USA Hockey's sentence
+    //     is the INJURY, not the collision, and winger.md:760 makes that reading explicit.
+    //
+    // ⚠️ NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the boards
+    // posture and is not this round's to edit; this string is local and stays local.
+    '⚠️ Know where the near post is before the shot is taken, rather than finding out ' +
+    'where it is by hitting it, and arrive head up with your chin off your chest: never ' +
+    'meet a goal post head first, and never duck into one. Your eyes are on the puck by ' +
+    'design, so a defender walking you sideways is a body you are feeling rather than ' +
+    'watching, and the path he walks you along has the steel frame at one edge. USA ' +
+    'Hockey names the goal post beside the boards as the same head-down, head-first ' +
+    'cervical spine injury, and says that injury can occur at walking speed — so take ' +
+    'either one with an arm, a leg, anything but your head first. That holds in every ' +
+    'league, checking or not: a legal box-out walks you along the same path as an ' +
+    'illegal shove.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +
@@ -671,9 +730,13 @@ const wingerOffensiveZone = {
     { id: 'LW', pos: 'F', at: W_CIRCLE,    label: 'ready to one-time it' },
   ],
 
-  // Not numbered: the section says to arrive "just as the shot is taken", so these
-  // two are simultaneous, and a badge saying one preceded the other would teach the
-  // mistiming the section warns about ("Arriving at the net front too early").
+  // Not numbered: the route drawn is the DRIVE IN from the winger's own circle, and for that
+  // job the section has the arrival coinciding with the shot — so these two are simultaneous,
+  // and a badge saying one preceded the other would teach the mistiming the section's Common
+  // Mistakes warns about ("Arriving at the net front too early on a drive", winger.md:665).
+  // ⚠️ The OTHER net-front job is planted before the release, and if this diagram is ever
+  // redrawn to show that one the routes stop being simultaneous and the caption's scope
+  // clause has to move with them.
   // The crash is bowed so that it *finishes* running across the face of the net
   // toward the end boards rather than pointing into the crease. A route whose
   // terminal tangent aims at the goaltender draws goalie interference, which is

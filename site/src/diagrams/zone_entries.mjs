@@ -192,6 +192,37 @@ const wideEntry = {
     'his own net. It needs both supports drawn here, and no contact is drawn. The net drive ' +
     'stops at the blue paint: keep your feet out of the paint, and off ' +
     CREASE_LINE_IS_THE_CREASE +
+    // ⚠️ THE POSTURE LIMB. This is the only route in this file that finishes in front of a
+    // goaltender — tip (78, -5), 8.60 ft out, the closest in-front skater arrival in the corpus
+    // per the measurement block on that route below — and the caption stated the arrival with no
+    // posture at all. Voiced alone into content/systems/zone_entries.md, a listener got the net
+    // drive and the crease law and nothing about what to lead with when they get there.
+    //
+    // PRIMARY TEXT, read this session rather than carried in:
+    //   sources/huh.txt:220-229 (USA Hockey, Heads Up Hockey Program Guide) — "almost all on-ice
+    //     cervical spine injuries have been due to the head being slightly flexed (head down)
+    //     while making head-on contact with the boards or goal post", and "A player doesn't have
+    //     to be going at full speed for this to happen -- it can occur at walking speed."
+    //   sources/ibc.txt:1390-1391 (USA Hockey, Introduction To Body Contact) — "Hit the boards or
+    //     goal posts with an arm, a leg, or anything but your head first."
+    //
+    // ⚠️ "ANYTHING BUT YOUR HEAD FIRST" IS ABOUT WHAT YOU LEAD WITH, not about whether your head
+    // may touch a post. Written as "never your head" it becomes an instruction nobody can follow.
+    // ⚠️ AND "IT" IN THE WALKING-SPEED SENTENCE IS THE INJURY, NOT THE COLLISION — the Sources
+    // trailer of the host document makes that reading explicit, so the clause below says the
+    // injury occurs at walking speed rather than that the hit does.
+    // ⚠️ SCOPE IS EVERY BOOK AND EVERY LEVEL. This is not a checking-league point: a legal
+    // box-out moves you along the same path, and huh.txt attaches the mechanism to the head's
+    // angle, not to whether a check was thrown.
+    //
+    // NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the BOARDS posture and is
+    // held by another agent this round; a second module touching it is the clobbering this file's
+    // own header warns about. If a second caption ever needs this, promote it there, not here.
+    '. ⚠️ Arrive head up and chin off your chest: never meet a goal post head first, and never ' +
+    'duck into one. USA Hockey names the boards and the goal post together as the same ' +
+    'cervical-spine injury, and says the injury can occur at walking speed, so take either with ' +
+    'an arm, a leg, anything but your head first. That is every level and every book, not a ' +
+    'checking-league point: a legal box-out moves you along the same path' +
     // ⚠️ THE CONTACT TEST IS KEYED TO THE GOALTENDER'S POSITION, NOT THE ATTACKER'S, AND THIS
     // CAPTION HAD IT KEYED TO THE ATTACKER'S. It read "any contact once you are in the crease,
     // and more than incidental contact outside it". Both books key both limbs on the goalie:

@@ -194,7 +194,7 @@ The far winger. What you do here is genuinely system-dependent:
 
 ```facts
 Position: Low support, underneath the puck — the pivot the whole structure turns on
-Convention: The five-role structure is itself a coaching choice — the conventional swing breakout, taught by most development programmes and assumed throughout
+Convention: The five-role structure is itself a coaching choice — the conventional swing breakout, and the one assumed throughout this document
 Options: The centre fly — the centre leaves the zone early up the middle to stretch the ice, and the weak-side winger drops in to take the low support job instead
 Options: Flat or spread breakouts — both wingers hold higher near the blue line and the exit is made with longer passes rather than short support
 Action: Ask your coach which one you play
@@ -203,7 +203,7 @@ Risk: A centre flying in a system where the wingers hold high leaves nobody unde
 
 Low support, underneath the puck. This is the pivot the whole structure turns on, and it is covered in full in section 5.
 
-> **This five-role structure is itself a coaching choice.** What's described above is the conventional **swing breakout** taught by most development programmes and assumed throughout. The two alternatives you will actually meet:
+> **This five-role structure is itself a coaching choice.** What's described above is the conventional **swing breakout**, and the one assumed throughout this document. The two alternatives you will actually meet:
 > - **The centre fly** (sometimes "centre high", or the "weak-side-wing-support" breakout): the centre deliberately leaves the zone early up the middle to stretch the ice, and the **weak-side winger drops in** to take the low support job instead.
 > - **Flat or spread breakouts:** both wingers hold higher, near the blue line, and the exit is made with longer passes rather than short support.
 >

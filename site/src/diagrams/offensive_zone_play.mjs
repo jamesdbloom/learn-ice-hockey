@@ -637,7 +637,35 @@ const netFrontScreen = {
     TABLES_ALLOW_OUTSIDE +
     '. That is an appendix table rather than rule text, and ' +
     REFEREE_JUDGEMENT +
-    ' USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
+    // ⚠️ THE GLYPH IS DELIBERATE AND IT IS PLACED HERE RATHER THAN EARLIER.
+    // `remark-corpus.mjs` splits a caption at its FIRST ⚠️ and promotes everything after
+    // it into the amber `.warn-inline` run. There is exactly ONE split available, so where
+    // it goes decides what a reader sees escalated — and until now there was no glyph at
+    // all, so a site review measured this caption in the DOM at 2,641 chars as a single
+    // text node, 453 px tall, the only long caption on either host page with no break in
+    // it. "It reads as a wall… the callout looks authored, the caption looks like
+    // something that failed to get formatted."
+    //
+    // ⚠️ THE OBVIOUS-LOOKING SEAM IS THE WRONG ONE, MEASURED. Splitting at "A screen from
+    // outside the crease" puts 1,659 chars and 304 words in amber and OPENS the panel on a
+    // PERMISSION — "normally legal … and you should do it constantly" — followed by a
+    // reference-table citation. That is amber spent on provenance, and at 304 words it is
+    // within reach of the 364-word panel the same review condemned for rendering half a
+    // viewport as one undifferentiated amber rectangle. From HERE the run is 1,074 chars /
+    // 203 words and every sentence in it is the same hazard: the books that are stricter,
+    // what a foot in the paint costs you, the scope of the strictest one, and the
+    // instruction all of it leads to. The grey lead falls 2,641 -> 1,567, which is no
+    // longer the longest on either page. The permissive half and its "appendix table
+    // rather than rule text" disclosure stay together in the grey, where the disclosure
+    // travels with the claim it qualifies.
+    //
+    // ⚠️ AND THIS ADDS A SPOKEN ESCALATION THAT WAS NOT THERE BEFORE — it is not the
+    // cost-free marker MOVE the mechanism is normally used for. The caption carried no
+    // glyph, so `_diagram_caption_is_important` (md_to_speech.py) returned False and a
+    // listener heard the crease law as flat prose. It now prefixes "Important." on both
+    // hosts. Correct here, because the run really is a hazard — but stated, because an
+    // addition and a move are easy to confuse and only one of them is free.
+    ' ⚠️ USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
     'still — there a foot in the paint can cost you the zone and not just the goal. One rec book is ' +
     'stricter again: the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from ' +
     'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +

@@ -25,7 +25,20 @@ Run it, read the spread, and let a human decide.
 import argparse, pathlib, re, sys
 
 BOOKS = r"NHL|IIHF|USA Hockey|Hockey Canada|CARHA|PWHL|EIHL|IHUK|EIHA|SIHA"
-RULE_CITE = r"\bRule\s+\d|\b\d{1,3}\.\d{1,2}\b|\b\d{3}\([a-z]\)"
+# ⚠️ A BARE DECIMAL IS NOT A RULE CITATION. The first version of this pattern was
+# `\b\d{1,3}\.\d{1,2}\b`, which matches EVERY decimal — so `0.08`, `15.50` and `78.8`
+# all scored as rule citations. Measured 23 September 2026: 166 of 13,495 units flipped
+# on a decimal alone, and one Key Takeaways layer reported 98% rules-bearing when its
+# only rules-bearing token in a 132-word unit was the string `0.08` — 132 words of
+# analytics scored as rulebook tiering, and the figure ranked that document top of a
+# dispatch queue. The naive repair is WRONG in the other direction: `81.4` in
+# rules_primer.md IS a rule number. The discriminator is that a rule number never
+# starts `0.` and never carries a percent sign or a unit after it.
+RULE_CITE = (
+    r"\bRule\s+\d"
+    r"|\b(?!0\.)\d{1,3}\.\d{1,2}\b(?!\s*%|\s*(?:per\s?cent|sec|s\b|m\b|ft|km|kg|mph))"
+    r"|\b\d{3}\([a-z]\)"
+)
 PENALTY = (r"\bminor penalt|\bmajor penalt|\bmatch penalt|game misconduct|\bmisconduct\b"
            r"|penalty shot|\bejected\b|\bejection\b|bench minor|two-minute|delay of game")
 RULES_RE = re.compile(f"({BOOKS})|({RULE_CITE})|({PENALTY})", re.I)
