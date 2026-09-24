@@ -86,7 +86,7 @@ acts on this section WITHOUT having read the warning get hurt, ejected or penali
 yes it stays and may be moved to the end of the section; if no it was never a warning,
 it was a hedge wearing a marker. Only reading decides. NEVER SWEEP THIS PATTERN.
 """
-import argparse, pathlib, re, sys
+import argparse, html as html_mod, pathlib, re, sys
 
 MARKER = "⚠️"
 SUMMARY = ("## Common Mistakes", "## Key Takeaways", "## Check yourself")
@@ -252,6 +252,57 @@ LIST_START = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
 DIST = pathlib.Path("site/dist")
 
 
+def _strip_nav_chrome(h):
+    """Remove NAVIGATION CHROME, which duplicates heading text the reader already meets.
+
+    ⚠️ A `> ### ⚠️ ...` heading produces TWO more glyph sites besides the heading itself:
+    the table-of-contents entry (`nav.toc`) and the sidebar (`nav.sidebar`), both built
+    from the heading string. Neither is prose, neither can be repaired by moving an
+    asterisk -- a ToC link is not bold and never gets a `.warn-inline` wrapper -- so
+    counting them made every such heading a PERMANENT false positive worth two or three
+    hits apiece, and sent an agent hunting a defect that does not exist in any markdown.
+
+    Found by an agent that refused to trust the count and traced all five of its hits to
+    source before editing. It also established the other half of the same false positive:
+    the heading's own glyph sits INSIDE `aside.callout-warning`, so the reader meets it on
+    an amber panel and is not skating past anything. That one is handled by the existing
+    aside strip; this handles its two shadows.
+    """
+    for cls in ("toc", "sidebar"):
+        h = re.sub(rf'<nav class="{cls}"[^>]*>.*?</nav>', "", h, flags=re.S)
+    return h
+
+
+def _strip_invisible(h):
+    """Drop SVG `<desc>` and `<title>` before counting glyphs.
+
+    ⚠️⚠️ THIS FUNCTION EXISTS BECAUSE THE FIRST VERSION OF `--bare` OVER-COUNTED BY 113
+    OF 210 AND SENT FOUR AGENTS HUNTING PHANTOMS. An agent briefed "your file has 11"
+    found ONE in its markdown; the other ten were inside `<svg><desc>`, which has NO
+    VISIBLE RENDERING -- it is an accessible long description -- and is not in
+    `content/` at all. It comes from `site/src/diagrams/*.mjs` via
+    `site/src/data/diagrams.json`.
+
+    ⚠️ `remark-corpus.mjs` ALREADY SAYS THESE SHOULD STAY UNMARKED, and names only the
+    sibling case: "SVG `<title>` elements, which are accessible names with no visible
+    rendering to colour." `<desc>` is the same thing and the comment did not name it.
+
+    ⚠️⚠️ AND THE OVER-COUNT INVERTED THE EVIDENCE FOR AN EARLIER DECISION. A source-level
+    heuristic was rejected for scoring 184 against "the build's 210", with `winger` 7
+    against 11 cited as proof the source was wrong. `winger` really has ONE visible glyph;
+    the build was inflated by ten `<desc>` hits and the SOURCE WAS CLOSER. The build is
+    still the right authority for WHICH glyphs are untreated -- it is not automatically
+    the right authority for HOW MANY.
+
+    ⚠️ A GLYPH IN `<desc>` IS NOT NOTHING, IT IS A DIFFERENT AUDIENCE. What a screen
+    reader does with a bare warning-sign emoji inside a long description is untested, and
+    that layer is the whole content for the one audience that depends on it.
+    """
+    h = re.sub(r"<desc>.*?</desc>", "", h, flags=re.S)
+    h = re.sub(r"<title>.*?</title>", "", h, flags=re.S)
+    return h
+
+
 def bare_glyph_rows(dist=DIST):
     """Yield (page, count) for warning glyphs the SITE gives NO visual treatment.
 
@@ -290,10 +341,59 @@ def bare_glyph_rows(dist=DIST):
         h = page.read_text(encoding="utf-8", errors="replace")
         h = re.sub(r'<span class="[^"]*warn-inline[^"]*".*?</span>', "", h, flags=re.S)
         h = re.sub(r'<aside class="callout callout-warning">.*?</aside>', "", h, flags=re.S)
+        h = _strip_nav_chrome(h)
+        h = _strip_invisible(h)
         n = len(re.findall(r"[\u26a0\u2757\U0001f6ab]", h))
         if n:
             out.append((str(page.parent.relative_to(dist)), n))
     out.sort(key=lambda r: -r[1])
+    return out
+
+
+def bare_glyph_contexts(page_rel, dist=DIST):
+    """Return the text AFTER each untreated glyph on one page, as a worklist --
+    or None when `page_rel` matches no built page.
+
+    (The siblings in this file all say "Yield" and all return lists. This one says
+    Return because its None case is load-bearing: main() branches on it to tell a
+    MISSING BUILD from a BAD PATH, which is a distinction this tool used to get
+    wrong -- it answered "build first" on a freshly built tree.)
+
+    ⚠️ A SOURCE-LEVEL HEURISTIC DOES NOT WORK AND WAS TESTED BEFORE THIS EXISTED.
+    "a marker not followed by `**`" scores 184 against the built HTML's 210, and
+    ranks the files differently as well (`zone_entries` 11 vs 4, `winger` 7 vs 11).
+    The plugin's shape rules are more than "is the next thing bold", so a guess from
+    source is a FOURTH wrong model of the same thing. Read the build.
+
+    The returned text is what a reader sees in BLACK after the glyph. Find that
+    sentence in the markdown and bold the clause that states the hazard.
+
+    ⚠️ THIS MUST APPLY THE SAME STRIPS AS bare_glyph_rows(), AND ONCE IT DID NOT.
+
+    Measured 24 September 2026: `--bare` reported `off-the-ice/equipment` as **1** while
+    `--bare --file off-the-ice/equipment.md` reported **2**, listing the SAME sentence twice.
+    The listing was missing `_strip_nav_chrome()`, so it counted the table-of-contents and
+    sidebar copies of a `> ### ⚠️` heading as separate hits.
+
+    ⚠️ THE COUNT AND THE LISTING DISAGREEING IS THIS TOOL'S RECURRING BUG, and the direction
+    is always the same: the per-file view over-reports, which reads as thoroughness. An agent
+    briefed off `--file` would have hunted a defect that the corpus view already knew was one
+    heading's chrome. Caught only because a figure was being copied into a review record and
+    the two numbers were compared first.
+    """
+    f = dist / page_rel / "index.html"
+    if not f.exists():
+        return None
+    h = f.read_text(encoding="utf-8", errors="replace")
+    h = re.sub(r'<span class="[^"]*warn-inline[^"]*".*?</span>', "", h, flags=re.S)
+    h = re.sub(r'<aside class="callout callout-warning">.*?</aside>', "", h, flags=re.S)
+    h = _strip_nav_chrome(h)   # ⚠️ MUST MATCH bare_glyph_rows() -- see the docstring above
+    h = _strip_invisible(h)
+    out = []
+    for m in re.finditer(r"[\u26a0\u2757\U0001f6ab]\ufe0f?", h):
+        tail = re.sub(r"<[^>]+>", " ", h[m.end():m.end() + 400])
+        tail = html_mod.unescape(re.sub(r"\s+", " ", tail)).strip()
+        out.append(tail[:160])
     return out
 
 
@@ -461,6 +561,30 @@ def main():
             print("   This check reads the BUILT HTML on purpose: the plugin's wrapper")
             print("   rules are more than \"is the next thing bold\", and guessing from")
             print("   source would be a fourth wrong model of the same thing.")
+            return 0
+        if args.file:
+            # ⚠️ ACCEPT BOTH PATH FORMS. A brief naturally writes the path that exists on
+            # disk -- `content/systems/faceoffs.md` -- but this maps to a DIST page, which
+            # is `systems/faceoffs`. Requiring the dist form made a correct invocation on a
+            # FRESHLY BUILT tree answer "no built page -- build first", which names the
+            # wrong cause and sends the reader to rebuild something that is already current.
+            rel = args.file[:-3] if args.file.endswith(".md") else args.file
+            if rel.startswith("content/"):
+                rel = rel[len("content/"):]
+            ctx = bare_glyph_contexts(rel)
+            if ctx is None:
+                built = "site/dist exists" if DIST.exists() else "site/dist is MISSING"
+                print(f"check_callout_flow: no built page for {rel} ({built}).")
+                if DIST.exists():
+                    print("   The build is present, so this is a PATH that does not match "
+                          "a page.\n   Expected the dist form, e.g. systems/faceoffs.")
+                return 0
+            print(f"check_callout_flow: {len(ctx)} bare glyphs on {rel}\n")
+            for i, t in enumerate(ctx, 1):
+                print(f"  {i:>3}. ...{t}")
+            print("\n\u26a0\ufe0f  The text above is what a reader sees in BLACK after the glyph.")
+            print("   Find it in the markdown and BOLD THE CLAUSE THAT STATES THE HAZARD.")
+            print("   \u26a0\ufe0f  Bold the INSTRUCTION, never a citation.\n")
             return 0
         total = sum(n for _, n in rows)
         print(f"check_callout_flow: {total} warning glyphs render with NO visual "

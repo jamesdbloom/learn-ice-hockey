@@ -709,12 +709,60 @@ export default function remarkCorpus(options = {}) {
     // What genuinely stays unmarked, and should: diagram captions, which come
     // from the diagram manifest rather than this markdown and are handled
     // separately; table-of-contents entries, where the heading itself carries the
-    // mark; and SVG <title> elements, which are accessible names with no visible
-    // rendering to colour.
+    // mark; and SVG <title> AND <desc> elements, which are accessible names and
+    // long descriptions with no visible rendering to colour.
     //
-    // ⚠️ What stays unmarked and is a judgement call, not an oversight: a single-
+    // ⚠️ <desc> WAS MISSING FROM THAT LIST AND IT COST A WAVE. A checker that
+    // mirrored this comment counted <desc> text as untreated and reported 210
+    // bare glyphs corpus-wide when 97 were visible; ten agents were briefed off
+    // the inflated figure. Worse than the wasted effort: each <desc> string is a
+    // SECOND COPY of a caption whose visible <figcaption> twin is ALREADY wrapped
+    // correctly here by captionNodes(), so an agent sent to "repair" one would
+    // have edited text that was already right — and caption text is frequently a
+    // shared constant, so the damage would have propagated to hosts nobody was
+    // looking at. The agents caught it; this comment did not.
+    //
+    // ⚠️⚠️ READ THE NEXT PARAGRAPH WITH ITS SCOPE. It is about a glyph followed by
+    // PLAIN PROSE in a facts value. It is NOT a statement that a facts value
+    // cannot be coloured, and it was read that way on 24 September 2026: an agent
+    // left SIX repairable lines alone, citing this comment's "get no treatment at
+    // all" plus a true corpus-wide count of ZERO `dd.facts__value` containing a
+    // <strong>. Both were real evidence and the conclusion was still wrong.
+    //
+    // ⚠️ THE TWO PASSES DIFFER AND THAT IS THE WHOLE POINT. The BLOCK pass above
+    // returns early on `hName`, so a facts `dd` never becomes a panel. THIS pass,
+    // markInlineWarnings, has NO hName guard and recurses into it, so a glyph
+    // followed by a `<strong>` run in a facts value DOES get a .warn-inline
+    // wrapper. Confirmed on the built site. NO COUNT IS WRITTEN HERE: this line
+    // said FOUR and the build held EIGHT. The four it named were one wave's; a
+    // second wave's four were already in the same build.
+    //
+    // ⚠️ AND THE WAY IT WENT STALE IS THE POINT. The same commit corrected this
+    // figure in CLAUDE.md and in the review record AND STOPPED BEFORE THIS FILE --
+    // a correction that reached two layers and not the third, inside the commit
+    // whose whole subject is corrections that reach two layers and stop. A commit
+    // gate caught it. The direction was an UNDER-count, which is the dangerous one
+    // here: an under-count of this exact figure is what satisfied an agent into
+    // declaring six repairable facts lines structurally unrepairable.
+    //
+    // To count, structurally (an anchored grep on `facts__value"><span` returns 7 --
+    // it misses the mid-value shape (c) instance, which is the one shape the
+    // start-of-value cases do not exercise):
+    //   python3 -c "import re,pathlib; print(sum('warn-inline' in m.group(1) for p in pathlib.Path('site/dist').rglob('index.html') for m in re.finditer(r'<dd class=\"facts__value\">(.*?)</dd>', p.read_text(encoding='utf-8'), re.S)))"
+    // So the repair for a bare glyph in a facts value is the same as anywhere
+    // else — bold the clause that states the hazard — subject only to
+    // check_facts.py's character caps.
+    //
+    // ⚠️ "Never done before" is not "cannot be done": a corpus-wide count of zero
+    // is a TRUE negative, and a true negative is exactly what stops the next
+    // question. It satisfies a careful reader into declaring a repairable thing
+    // unrepairable, which is the flattering direction because an impossibility
+    // needs no work.
+    //
+    // What stays unmarked and is a judgement call, not an oversight: a single-
     // figure handful of the corpus's several thousand `dd.facts__value` values
-    // open with ⚠️ and get no treatment at all — measured identical in colour,
+    // open with ⚠️ FOLLOWED BY PLAIN PROSE and get no treatment at all — measured
+    // identical in colour,
     // background and weight to a non-warning
     // sibling in the same panel, in both themes. The cause is the block-paragraph
     // pass above, which returns early on `node.data?.hName`, and a facts `dd` is

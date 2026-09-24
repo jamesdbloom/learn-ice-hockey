@@ -327,8 +327,61 @@ MEASUREMENT.** `remark-corpus.mjs` needs a `<strong>` after the glyph to bound t
 (`WARNING_TAIL_RE`, the shape (c) pass). **Marker in front of PLAIN PROSE → no wrapper → no colour,
 no bar, no bold.** `--panels` falls, `--markers` holds, the spoken `"Important."` holds, the SSML is
 byte-identical — **and the reader's escalation is gone.**
-⚠️ **Measured corpus-wide the first time anyone looked: 207 bare glyphs across 33 pages.**
-**Run `check_callout_flow.py --bare` — it reads `site/dist`, so BUILD FIRST.**
+⚠️⚠️ **NO FIGURE IS WRITTEN HERE. RUN `check_callout_flow.py --bare` — IT READS `site/dist`, SO
+BUILD FIRST.** ⚠️ **This line carried *"207 bare glyphs across 33 pages"* and it was stale in TWO
+directions at once: 113 of that population were inside `<svg><desc>`, which has NO VISIBLE RENDERING,
+and the corpus was being repaired underneath the sentence while it sat here.** The real visible
+figure the day it was written was **97**. ⚠️⚠️ **AND THIS SENTENCE THEN CARRIED "a wave took it to
+23" — WHICH WAS ITSELF STALE WITHIN THE HOUR, IN A PASSAGE WHOSE SUBJECT IS "NO FIGURE IS WRITTEN
+HERE", IN THE SAME EDIT THAT DELETED A DIFFERENT FIGURE FOR BEING STALE.** A second wave had already
+taken it lower and the sentence was never updated. **A commit gate caught it by re-running the tool.**
+**The tool prints both the total and the per-page listing every time.**
+
+⚠️ **`--file` takes EITHER path form** — `content/systems/faceoffs.md` or `systems/faceoffs`.
+⚠️ **It used to accept only the second, and answered the first with *"no built page — build first"*
+ON A FRESHLY BUILT TREE — naming the wrong cause and sending the reader to rebuild something already
+current.** Fixed; it now distinguishes a missing build from a path that matches no page.
+
+### ⚠️⚠️ AND A ` ```facts ` LINE **CAN** BE TREATED. THE OPPOSITE WAS BELIEVED, ON REAL EVIDENCE.
+
+**Measured 24 September 2026.** One agent left **six** facts lines untreated, reporting that bolding
+there *"would not work and would probably render literal asterisks"*. Its evidence was real: **0 of
+5,868 `dd.facts__value` in `dist` contained a `<strong>`**, and `remark-corpus.mjs`'s own comment says
+facts values *"get no treatment at all"*. **Two other agents treated facts lines the same day and
+proved the wrapper forms by running the strings through the plugin itself.**
+
+⚠️ **The reconciliation is that they were reading DIFFERENT PASSES.** The **block** pass returns early
+on a facts `dd`, so there is **no panel**. `markInlineWarnings` has **no `hName` guard** and recurses
+into it, so the **`warn-inline` wrapper does form.** ✅ **Confirmed on the built site. ⚠️ NO COUNT IS WRITTEN HERE — this line said FOUR and the build
+held EIGHT.** The four it counted were one wave's; a second wave's four were already in the same
+build, and a commit gate found the two staged files disagreeing with each other. ⚠️⚠️ **AND DO NOT USE A grep THAT ANCHORS ON THE START OF THE VALUE.** This line first prescribed
+`grep -rho 'facts__value"><span class="warn-inline"'` and a commit gate ran it: **it returns 7 where
+the truth is 8.** It misses the **mid-value shape (c)** instance, whose wrapper is not at the start —
+**the one shape the staged four do not exercise.** ⚠️ **A pointer that under-reports is the same
+failure as a stale figure, one level down.** Count STRUCTURALLY:
+```
+python3 -c "import re,pathlib; print(sum('warn-inline' in m.group(1) for p in pathlib.Path('site/dist').rglob('index.html') for m in re.finditer(r'<dd class=\"facts__value\">(.*?)</dd>', p.read_text(encoding='utf-8'), re.S)))"
+```
+
+⚠️⚠️ **THE LESSON IS THIS FILE'S OWN TRUE-NEGATIVE WARNING, REPRODUCED FOR A RENDERER: *"NEVER DONE
+BEFORE"* IS NOT *"CANNOT BE DONE."*** A corpus-wide count of zero is a **true negative**, and a true
+negative is what stops the next question. **It satisfied a careful agent into declaring six repairable
+lines structurally unrepairable** — and the direction is the flattering one, because an impossibility
+needs no work. ⚠️ **AND A COMMENT ASSERTING A CONSTRAINT IS NOT THE CONSTRAINT** — this repository
+already records *"a comment asserting fidelity to another file is not fidelity to it"*; **this is the
+same failure one file over.**
+
+### ⚠️ THE REPAIR IS USUALLY NOT "ADD BOLD" — IT IS TO SPLIT AN EXISTING BOLD RUN
+
+⚠️ **Measured on one document: only 2 of 29 glyphs were a marker in front of plain prose. TWENTY-SEVEN
+were INSIDE an existing `**strong**` run** — `**head, ⚠️ hazard clause.**`. **The plugin needs the
+glyph to PRECEDE a strong run, so a glyph WITHIN one gets nothing.** The repair is to **close the
+strong before the glyph and reopen after it** — same words, same visible bold extent. **That is why a
+whole wave changed no word: 27 edits moved four asterisks each.**
+
+⚠️ **`WARNING_NEAR_RE` caps the glyph-to-strong gap at 48 characters and forbids `— : ; ! ?` and
+`. `.** Twice in one wave the real instruction was unreachable behind a colon or an emphasis node.
+**Both were REPORTED, not forced — reaching them needs a word change.**
 
 ⚠️⚠️ **AND IT REPRODUCES THE OWNER'S ORIGINAL COMPLAINT IN A WORSE FORM.** Before, the mismatch was
 panel-vs-prose ACROSS paragraphs. A bare glyph is **amber-vs-black INSIDE ONE PARAGRAPH, three lines
@@ -1151,7 +1204,17 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
-                    tts_sample.py. ⚠️ tts_sample.py synthesises ONE script on every TTS engine a
+                    tts_sample.py, synthesize_style_b.py.
+                    ⚠️⚠️ synthesize_style_b.py IS THE THIRD RECORDED INSTANCE OF THE FAILURE THIS BLOCK
+                    ALREADY WARNS ABOUT TWICE, AND IT WAS FOUND BY AN AUDIT LOOKING FOR SOMETHING ELSE.
+                    Measured 24 September 2026: it scored 0 mentions in CLAUDE.md and 0 in
+                    OPEN_ITEMS.md. It synthesises a Style B script into one finished audio file via
+                    ElevenLabs, and its own header says its settings are "CHOSEN AND UNHEARD" with a
+                    CLI override on every one — so it is a tool with an explicit open question in it,
+                    that nobody outside its own file knew existed. ⚠️ THE WARNING ABOVE DID NOT WORK
+                    THE FIRST TWO TIMES AND HAS NOT WORKED NOW; the remedy is the mechanical one this
+                    block already names — run `ls scripts/*.py` AGAINST THIS LIST, rather than
+                    intending to remember. ⚠️ tts_sample.py synthesises ONE script on every TTS engine a
                     credential exists for and reports the rest as SKIPPED with the reason, so the
                     ear test is one command rather than four integrations written under pressure on
                     the day someone has the keys. It reads keys from the ENVIRONMENT ONLY and never

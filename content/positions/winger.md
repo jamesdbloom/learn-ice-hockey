@@ -306,7 +306,7 @@ Never: Drag the trail skate with your head down — your body, hands and stick a
 Rule: A dragged, touching skate keeps you onside wherever you play; a lifted trail skate is onside in the NHL, IIHF and PWHL but offside under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11
 Rule: Tagging up is a five-man act — the arm stays up until every teammate has cleared, in all six books; four of them word it "at the same instant" (NHL 83.3(i); PWHL 85.3(i))
 Rule: Hockey Canada 6.11(b)(ii) and CARHA 72(e)(2) word the tag-up requirement as skate contact from every attacker and as a result — the zone "completely clear of attacking players", CARHA's in the Note under the clause — rather than as an instant, which comes to the same thing
-Rule: ⚠️ First check you have a tag-up at all — USA Hockey Rule 630(d) grants the delayed off-side only at Youth 15-Only and above, Girls 16U and above, High School and Adult; below those the whistle is immediate
+Rule: ⚠️ **First check you have a tag-up at all** — USA Hockey Rule 630(d) grants the delayed off-side only at Youth 15-Only and above, Girls 16U and above, High School and Adult; below those the whistle is immediate
 Action: Tag, then look before you go — as the winger usually first to the line, you are the one who re-enters too early
 Never: Coast at the blue line to be safe — arriving late and slow costs your line more than a whistle would
 Read: On your off wing the lane is the same, but the puck sits on your inside hand — it helps entering the zone and costs you on a breakout pass up your own wall

@@ -2432,3 +2432,379 @@ missing rule.** Added to the three already recorded:
 ABOUT THE BOOK.** ⚠️ **Run a control phrase you KNOW is present through the same pipeline before
 believing any zero** — `sources/README.md` already records that discipline for the form-feed splice,
 and it would have caught this in one line.
+
+---
+
+## Wave: the bare-glyph repair, ten documents — 24 September 2026
+
+**What it repaired.** The move-the-marker waves created a THIRD rendering state nobody had
+modelled: a glyph with no panel and no inline amber run — **a small black glyph mid-sentence
+that reads as a typo.** A `site-reviewer` skimming four pages stopped on every amber mark and
+**skated past every bare one**, finding them only by DOM query afterwards.
+
+**Measured on the built site, before and after a clean eleven-step build:**
+
+| | before | after |
+|---|---|---|
+| bare glyphs, corpus-wide | **97** | ⚠️ **RUN `check_callout_flow.py --bare`** — this cell said **23** and a second wave took it lower before the sentence was re-read |
+| amber panels | 54 | **54 — unchanged** |
+| spoken `"Important."`, all ten files | — | **unchanged in every file** |
+| billed characters | — | **identical in every file** |
+| stripped-text diff vs HEAD | — | **byte-identical in every file — no word changed** |
+
+Nine of the ten documents are now at **zero**. The repair moved asterisks only.
+
+### ⚠️ THE REPAIR WAS NOT THE ONE THE BRIEF ASSUMED, AND THE FACEOFFS AGENT FOUND IT
+
+**Only 2 of 29 glyphs on `faceoffs.md` were a marker in front of plain prose.** **27 were
+INSIDE an existing `**strong**` run** — `**head, ⚠️ hazard clause.**`. The plugin needs the
+glyph to *precede* a strong run, so a glyph *within* one gets nothing. **The repair is not
+"add bold" — it is to close the strong before the glyph and reopen after it**, same words,
+same visible bold extent. **That is why no word changed anywhere: 27 edits moved four
+asterisks each.**
+
+### 🔴 A FALSE IMPOSSIBILITY COST SIX REAL FIXES, AND IT IS THE TRUE-NEGATIVE SHAPE
+
+**Two agents reached opposite conclusions about the same thing on the same day.**
+
+- `faceoffs` left **six ` ```facts ` lines untreated**, reporting that bolding there *"would
+  not work and would probably render literal asterisks"* — evidenced by **0 of 5,868
+  `dd.facts__value` in `dist` containing a `<strong>`**, and by `remark-corpus.mjs:715-728`
+  returning early on a facts `dd`.
+- `game_management` and `offensive_zone_play` **treated facts lines and proved the mechanism**
+  by running the strings through `remark-corpus.mjs` itself.
+
+⚠️ **Both cited real evidence. The reconciliation is that they were reading DIFFERENT PASSES:
+the BLOCK pass returns early on a `dd`, so no PANEL; the INLINE pass `markInlineWarnings` has
+no `hName` guard and recurses into it, so the `warn-inline` WRAPPER forms.** The plugin's own
+comment asserts facts values *"get no treatment at all"* — **true of the panel pass, false of
+the inline pass, and that comment is what the faceoffs agent read.**
+
+✅ **Settled empirically after the build: `dist` now holds FOUR facts values containing
+`warn-inline`, rendering correctly.**
+
+⚠️⚠️ **THE LESSON IS THE ONE CLAUDE.md ALREADY RECORDS FOR SEARCHES, REPRODUCED FOR A
+RENDERER: *"never done before"* IS NOT *"cannot be done."*** A corpus-wide count of zero is a
+**true negative**, and a true negative is exactly what stops the next question. **It satisfied
+a careful agent into declaring six repairable lines structurally unrepairable** — and the
+direction is the flattering one, because an impossibility needs no further work.
+
+⚠️ **AND A COMMENT ASSERTING A CONSTRAINT IS NOT THE CONSTRAINT.** `remark-corpus.mjs`'s
+comment was the proximate cause. This repository already records *"a comment asserting fidelity
+to another file is not fidelity to it"*; **this is the same failure, one file over.**
+
+### ⚠️ WHAT THE `<desc>` CORRECTION ACTUALLY PREVENTED — worse than a wasted wave
+
+The `game_management` agent refined the diagnosis and it raises the stakes: **each of the
+seven strings it could not find in its markdown appears TWICE in the built page** — once in
+`<svg><desc>` (invisible) and once in `<figcaption>`, **where it is ALREADY correctly wrapped
+in `warn-inline`.**
+
+> ***"So the over-count was not 'seven unfixed captions.' It was seven captions that HAD
+> ALREADY BEEN FIXED, being counted a second time in their invisible shadow."***
+
+⚠️ **An agent briefed to repair them would have edited text that was already correct — and
+caption text is frequently a SHARED CONSTANT**, so the damage would have propagated to hosts
+nobody was looking at.
+
+✅ **No agent did. All ten resolved every hit to source BEFORE editing**, and several reported
+the over-count independently before the coordinator's correction reached them.
+
+### ⚠️ A CONSTRAINT THE WAVE HIT AND COULD NOT BEAT, reported rather than forced
+
+`WARNING_NEAR_RE` allows at most **48 characters** between glyph and strong run **and forbids
+`— : ; ! ?`**. Twice the real instruction was unreachable behind a colon or an emphasis node:
+
+- `offensive_zone_play:469` — *"live at the far end of it"* is ~100 chars past the glyph. The
+  amber covers the hazard's basis; **the instruction stays black.**
+- `body_contact_and_battles:1534` — the only text in the window **was the citation itself**, so
+  the glyph was moved back one sentence onto the instruction instead.
+
+⚠️ **Both were reported, not forced.** Forcing either needs a word change, which this wave
+forbade.
+
+### Tool defects found and fixed in the same session
+
+- **`_strip_invisible()`** now strips `<desc>` and `<title>`: **210 → 97**.
+- **`--file` now accepts both path forms.** `--file content/systems/faceoffs.md` on a FRESHLY
+  BUILT tree answered *"no built page — build first"*, ⚠️ **naming the wrong cause and sending
+  the reader to rebuild something already current.** It now distinguishes a missing build from
+  a bad path.
+- **A reported defect that is NOT real, recorded so nobody "fixes" a correct regex:** the
+  non-greedy `warn-inline` strip was reported as truncating on a nested `</span>`. **Measured:
+  0 of 3,047 warn-inline spans contain a nested `<span>`.**
+
+### Open, and not this wave's defect
+
+- ⚠️⚠️ **BARE GLYPHS REMAIN — RUN `check_callout_flow.py --bare` FOR THE FIGURE AND THE PAGES.**
+  **This bullet said *"23 across 12 documents"* and it sat under a heading reading `### Open`, so it
+  read as a WORKLIST.** A commit gate measured the build and found the real figure materially lower.
+  ⚠️ **A future agent would have gone hunting glyphs and documents that do not exist** — a stale
+  figure under an `Open` heading is worse than a stale figure anywhere else. Six of the remainder are
+  the `faceoffs` facts lines now
+  known to be treatable.
+- **113 `<desc>` glyphs are announced by a screen reader** as "warning sign", with no
+  escalation structure, in a layer nobody has ever tested. **Not a sighted-reader defect;
+  a different audience's.**
+- **Nothing here verified a single rule claim.** ⚠️ **Bolding a clause makes it LOUDER, not
+  truer** — `offensive_zone_play` named this against its own edit: it bolded a rule scope and a
+  geometry claim, neither re-verified this session. **A bolded half-rule reads as a checked one.**
+
+### What this method could not have found
+
+- **Whether the amber lands on the right clause.** The tool finds glyphs with *no* treatment;
+  a wrapper sitting on the **wrong** clause scores clean.
+- **Whether any of it looks right.** No browser was opened. A facts-value `warn-inline` has
+  never been seen rendered in either theme, and this wave shipped the first four.
+- **Whether amber inside the collapsed Sources trailer is wanted at all.** Two glyphs there are
+  methodological footnotes, not hazards.
+
+### ⚠️ CORRECTION TO THIS RECORD, FROM THE COMMIT GATE — *"moved asterisks only"* IS HALF TRUE
+
+**The gate measured what this record asserted and the assertion does not generalise.** *"Moved
+asterisks only"* is true — no word changed, and the gate proved it harder than this record did, by
+rendering the WHOLE corpus through `md_to_speech` at HEAD and at the staged tree: **39 documents,
+3,359 chunks, 7,313,323 billed characters, `diff -rq` exit 0.** **A listener is provably unaffected.**
+
+⚠️ **But *"same words, same visible bold extent"* holds only for the `faceoffs` split subset.**
+**Bold characters GREW in all ten files:**
+
+| file | bold chars at HEAD | after | change |
+|---|---|---|---|
+| `rules_primer.md` | 165,160 | 166,108 | +948 |
+| `uk_rules.md` | 33,876 | 34,791 | +915 |
+| `defender.md` | 36,684 | 36,930 | +246 |
+| `goaltender.md` | 114,228 | 114,791 | +563 |
+| `winger.md` | 27,557 | 27,593 | +36 |
+| `faceoffs.md` | 61,095 | 61,165 | +70 |
+| `forechecking_systems.md` | 52,645 | 52,831 | +186 |
+| `game_management.md` | 36,470 | 36,713 | +243 |
+| `offensive_zone_play.md` | 46,229 | 46,315 | +86 |
+| `body_contact_and_battles.md` | 108,877 | 109,080 | +203 |
+
+**New bold was genuinely added — that is the POINT of the wave, since a glyph needs a strong run to
+bound the wrapper.** ⚠️ **The defect is the sentence, not the work: a later reader taking *"moved
+asterisks only"* corpus-wide draws the wrong conclusion about what was promoted to amber.**
+
+### The ten documents, named — C8, and the gate was right to block on it
+
+**This record said "ten documents" without naming them, and three were named NOWHERE in either the
+review record or the plan: `rules_primer.md`, `defender.md`, `goaltender.md`.** ⚠️ **`rules_primer.md`
+is the LARGEST content hunk in the diff.** **A record that cannot be checked against a diff is not a
+record.**
+
+| document | bare glyphs before → after | note |
+|---|---|---|
+| `foundation/rules_primer.md` | 19 → 16 real → **0** | largest hunk, +794 bold chars |
+| `foundation/uk_rules.md` | 10 → **0** | every hit real |
+| `positions/defender.md` | 10 → 3 real → **0** | 7 were `<desc>` |
+| `positions/goaltender.md` | 12 → 7 real → **0** | 5 were `<desc>`; ⚠️ **one repair had to be re-repaired — see below** |
+| `positions/winger.md` | 11 → 1 real → **0** | 10 were `<desc>` |
+| `systems/faceoffs.md` | 37 → 29 treated → **6** | 27 of 29 were glyphs INSIDE a strong run; 6 facts lines left on a false impossibility |
+| `systems/forechecking_systems.md` | 9 → 1 real → **0** | glyph followed by an EMPHASIS node, which the plugin skips at any distance |
+| `systems/game_management.md` | 10 → 3 real → **0** | first bold ever shipped inside a facts value |
+| `systems/offensive_zone_play.md` | 11 → 2 real → **0** | 9 were `<desc>` |
+| `technique/body_contact_and_battles.md` | 8 → 2 real + 2 citation traps → **0** | one glyph MOVED, inside its paragraph |
+
+### 🔴 THE WAVE NEWLY BOLDED A CITATION — the one thing its brief forbade
+
+⚠️ **`goaltender.md:1537`.** HEAD had a bare `⚠️ Cite the 6:`; the wave produced `⚠️ **Cite the 6:**`
+— **so the amber wrapper ended at the LABEL and the useful clause, *"Table 14 has two D rows, 5D
+being the screening case"*, stayed black.** That is the exact inversion this file warns about,
+**created by the repair that was supposed to prevent it.**
+
+⚠️ **And it could not be fixed by bolding the clause instead, because `WARNING_NEAR_RE` FORBIDS a `:`
+in the glyph-to-strong gap.** The repair was to move the glyph PAST the colon —
+`Cite the 6: ⚠️ **Table 14 has two D rows…**` — same paragraph, so the spoken output is unmoved, and
+the Sources trailer is not voiced at all. **Word-level diff against HEAD: zero differences.**
+
+⚠️ **Found by the commit gate, not by the agent, not by any checker, and not by the coordinator.**
+`--bare` scores a wrapper on the WRONG clause as **clean**.
+
+### 🔴 OPEN — the same anti-pattern PRE-EXISTS at `rules_primer.md:372`
+
+`⚠️ **Situation 81.7**` takes the amber; the substance after it — *"Only time a line change is
+permitted is when a penalty is assessed…"* — is black. **Not this wave's defect, so not repaired
+here.** ⚠️ **AND NO TOOL FINDS THIS CLASS**: a wrapper on a citation is invisible to `--bare`,
+which only sees glyphs with NO treatment. **Needs a census of its own.**
+
+---
+
+## THE SITE REVIEW — C10 ANSWERED, AND THREE PREMISES OF MINE REFUTED (24 September 2026)
+
+### ✅ THE VERDICT THE COMMIT WAS WAITING ON
+
+**The four facts-value repairs LAND. They are not no-ops.** In all four cells — light and dark,
+desktop and ~390px — the `span.warn-inline` inside a `dd.facts__value` is **the most salient thing in
+its panel** and is unmistakably distinct from a non-warning sibling carrying the *same* `dt` label.
+
+| | light | dark |
+|---|---|---|
+| warn text on warn tint | **5.71:1** | **8.29:1** |
+| warn tint vs panel bg | 1.10:1 | 1.07:1 |
+
+⚠️⚠️ **THE PLUGIN'S OWN REASONING ARGUED THE WRONG WAY.** Its comment declined to colour facts values
+because the `dd` *"already has its own border and label colour"*. **Measured, that is why it works:**
+the panel's furniture is **cool blue** and the warning is **warm amber**, so they do not compete —
+*"the amber reads as foreign to the panel rather than absorbed by it."*
+
+⚠️ **THE TINT IS DOING ALMOST NOTHING — 1.10:1.** The escalation is carried by **colour, bold and the
+3px bar.** **Do not later "simplify" this to a background tint.**
+
+### 🔴 M2 — THE STAGED COPY CARRIED THE BAD FORM, AND MY FIX WAS NEVER STAGED
+
+⚠️⚠️ **I repaired `goaltender.md:1537` — amber on the label `**Cite the 6:**` with the substance left
+plain — and then LEFT THE REPAIR UNSTAGED.** The reviewer read the **staged** form on the built page
+and blocked on it. **`git show :content/positions/goaltender.md` confirmed it: the good form scored
+0.** Now staged.
+
+⚠️ **This is the coordinator's own "stage only what will not be edited again" rule failing in the
+direction nobody watches** — not a half-staged propagation, but a **repair that exists in the tree and
+not in the commit.** **No checker can see it: every gate reads the working tree, where the fix was.**
+
+### 🔴 M3 — MY BRIEF DESCRIBED A STATE THAT DOES NOT EXIST
+
+I briefed the reviewer to judge whether a partial `faceoffs` facts repair had left *"two lines amber
+and one between them black"*, and whether that made the block worse.
+
+⚠️⚠️ **THE EDIT NEVER HAPPENED.** The staged `faceoffs` facts block is **byte-identical to HEAD**;
+the staged diff is **entirely prose marker moves.** **Zero `warn-inline` exists in any faceoffs facts
+value.** So the agent's honest self-doubt — *"my repair may have made that line look worse"* —
+**describes a state it never created**, and I carried that self-doubt into a brief as fact.
+
+✅ **The worry is also unfounded on the merits:** all three glyph lines in that block are treated
+**identically**, so there is no intra-block mismatch. The real shape is **block-vs-page**: the page
+carries **150 glyphs, 144 amber, 6 bare — and all six bare ones are facts values.**
+
+⚠️ **AND ONE OBSERVATION CORRECTS THE THREE-STATE MODEL ITSELF:** a bare `⚠️` in a facts value renders
+as the **full-colour emoji**, not the *"small black glyph"* the model describes, and there is a space
+after it. **It is a weak signal, not an invisible one, and not a typo.**
+
+### ⚠️ AND THE "FOUR FACTS VALUES" FIGURE WAS WRONG — IT IS EIGHT
+
+**The build holds EIGHT `dd.facts__value` carrying a `<strong>`, all eight `warn-inline`. Four are
+this commit's AT THE TIME OF THE SITE REVIEW; the other four came from files then UNSTAGED.**
+⚠️⚠️ **THAT IS HISTORY, NOT A DESCRIPTION OF WHAT SHIPS — the second wave was staged afterwards, so
+ALL EIGHT ARE IN THIS COMMIT.** ⚠️ **So at the time `site/dist` was showing the
+reviewer unstaged work alongside the commit**, and every figure I took from that build conflated the
+two. **The `0 of 5,868` HEAD baseline is correct and was reproduced.**
+
+⚠️ **One of the four extras exercises a shape none of the staged four does** — the **mid-value**
+shape (c) form rather than start-of-value. It renders correctly.
+
+### m1 — KEEP the Sources-trailer edits; the agent's offer to revert was wrong
+
+That trailer **already carried 21 amber-shaped markers at HEAD**; the commit converts the last two
+bare ones. ⚠️ **Reverting would RECREATE the inverse defect** — a bare glyph five lines from an
+identical amber sibling. ⚠️ **And one of the two is NOT inside the collapsed `<details>` at all** —
+its ancestry is `ASIDE.verification-notes › DIV.prose`, **always visible.** The brief said otherwise.
+
+### m2 — amber inside a collapsed `<details>` is not reader-facing at all
+
+Closed, the trailer is a plain grey bar. **No amber, no count, no hint.** ⚠️ **So "does the escalation
+reach the reader" is the WRONG QUESTION inside a collapsed box** — judge those by internal
+consistency instead, which is what m1 does.
+
+### 🔴 OPEN — `warn-inline` CARRIES NO ACCESSIBLE ROLE OR LABEL
+
+⚠️⚠️ **The reviewer certified the escalation and then named its own limit: it is PURELY VISUAL.** A
+screen-reader user gets nothing from it beyond the `⚠️` character itself. **And at 5.71:1 under
+colour-vision deficiency it will still read as *emphasis* but may not read as *warning*.**
+**Same audience as the 113 `<desc>` glyphs, and still nobody has tested that layer.**
+
+---
+
+## THE SECOND WAVE — nine more documents, and the C8 correction that forced this section
+
+⚠️⚠️ **A commit gate BLOCKED on C8 because this record documented TEN documents while the diff staged
+NINETEEN.** Its words: the record *"describes a state that is not the state being committed"* — and it
+is **the same ordering failure this record was already corrected for once**, recurring because **a
+blocking gate always starts another wave, so any record written before the gate clears is a record of
+the wrong round, by construction.**
+
+⚠️ **`switching_positions.md` was named NOWHERE in the record** (`grep -c` = 0), and the nine
+unrecorded files were not cosmetic — `center.md` promoted a **faceoff stick-down divergence** to amber
+and `time_and_space.md` a **USA Hockey 630(d) age scope**.
+
+### All nineteen staged documents, measured on the shipped build
+
+| document | bare glyphs now |
+|---|---|
+| `foundation/core_principles.md` · `foundation/rules_primer.md` · `foundation/uk_rules.md` | **0** |
+| `hockey-iq/risk_management.md` · `hockey-iq/time_and_space.md` | **0** |
+| `positions/center.md` · `positions/defender.md` · `positions/goaltender.md` | **0** |
+| `positions/switching_positions.md` · `positions/winger.md` | **0** |
+| `systems/defending_the_rush.md` · `systems/forechecking_systems.md` | **0** |
+| `systems/game_management.md` · `systems/offensive_zone_play.md` · `systems/special_teams.md` | **0** |
+| `technique/body_contact_and_battles.md` | **0** |
+| `hockey-iq/playing_without_the_puck.md` | 1 — a `Rule:` value at **297/300 chars**; a bold pair costs +4 |
+| `off-the-ice/equipment.md` | 1 |
+| `systems/faceoffs.md` | 6 — all `Rule:` values at or near cap |
+
+**Seventeen of nineteen are at zero.** ⚠️ **NO CORPUS TOTAL IS WRITTEN HERE — run
+`check_callout_flow.py --bare`.** This record carried `97 → 23` and the gate re-ran the tool and
+measured lower; the figure was stale because the second wave landed after the sentence.
+
+### ⚠️ A DIFFERENT DEFECT CLASS RODE IN WITH THIS WAVE, and it is not a marker move
+
+`systems/defending_the_rush.md:959` carried `a* tight *gap` — a **malformed delimiter that broke the
+`strong` entirely**, rendering italic-inside-italic with no bold. ⚠️ **What it had silently demoted
+was an honest provenance disclosure** — *"which is a private coaching website and not Hockey Canada"*
+— sitting immediately after an authoritative-looking quotation. **Every gate passed it because the
+Markdown is valid, and `--bare` MISDIAGNOSES it as "the author never bolded this".**
+
+### ✅ AND THE WAVE REPAIRED A WRAPPER-ON-CITATION RATHER THAN CREATING ONE
+
+`body_contact_and_battles.md:541` went from `⚠️ **Hockey Canada 7.8(a)** is a **double** Minor` —
+amber on the citation, tariff black — to amber covering **citation and tariff together**. The gate
+verified **this commit creates no new instance of that class**, by extracting every `warn-inline` from
+the built HTML and diffing each citation-headed one against HEAD.
+
+### 🔴 OPEN — THE WRAPPER-ON-CITATION CENSUS, RUN BY THE GATE. EIGHT PRE-EXISTING INSTANCES.
+
+**All confirmed present at HEAD, so none is this commit's — but the wave's own brief forbade exactly
+this shape, and no tool finds it: `--bare` scores a wrapper on the wrong clause as CLEAN.**
+
+- `positions/goaltender.md` — `⚠️ **8.5(b)**`, then black *"…'A Major penalty and Game Misconduct'"*
+- `positions/goaltender.md` — `⚠️ And **USA Hockey 607(d)**`, then black
+- `positions/defender.md` — `⚠️ **Hockey Canada 7.4(b)**`, then black
+- `systems/game_management.md` — `⚠️ **640(g)**:`, then the black major-plus-game-misconduct text
+- `systems/forechecking_systems.md` — `⚠️ **Rule 627, Situation 1**`
+- `systems/special_teams.md` — `⚠️ … **IIHF Official Rule Book 2025/26**`
+- `foundation/rules_primer.md:372` — `⚠️ **Situation 81.7**`
+- `technique/shooting.md` ×3 — `Rule 79(a):`, `NHL Rule 42.1`, `Hockey Canada 2.2(j)`
+
+⚠️⚠️ **FOUR OF THESE PUT AMBER ON A RULE NUMBER AND LEAVE A PENALTY TIER BLACK** — which the plugin's
+own comment calls *"arguably worse than leaving the sentence unmarked."*
+
+### 🔴 OPEN — the emphasis-promotion declaration does not cover the nine
+
+~80 clauses were newly bolded. **No claim changed** — proven by a character-multiset test, not
+asserted. But the corpus has made a set of claims **more prominent without re-verifying them**, and
+⚠️ **the written declaration of that risk originally lived only in the ten-document framing.** The
+nine second-wave files promoted **at least two rule scopes** — `center.md`'s faceoff stick-down
+divergence and `time_and_space.md`'s USA Hockey 630(d) age scope — **which ARE named above, but have
+NOT been re-verified.** ⚠️ **This sentence previously said "nothing currently names" them, which
+contradicted the section above it in the same file.** **And `goaltender.md`'s 14 new bold pairs
+belong in this exposure too.**
+
+### What the gate proved that this record had only asserted
+
+- **17 of 19 staged blobs byte-identical** after stripping `[*_]`, and **the STRIPPED character
+  multiset is identical in all 19** — so **no word of any claim changed anywhere in the diff.**
+  ⚠️⚠️ **THIS BULLET FIRST SAID THE TWO THAT DIFFER ARE "PROVABLY PURE MOVES" WITH AN IDENTICAL
+  CHARACTER MULTISET. THAT IS TRUE OF ONLY ONE OF THEM.** `body_contact_and_battles.md`'s RAW multiset
+  is identical (12,430 asterisks either side) — a pure move. **`goaltender.md` gained 28 asterisks,
+  i.e. 14 NEW BOLD PAIRS**, so it is a glyph move **plus emphasis promotion**, and its raw multiset is
+  **not** identical. ⚠️ **The safety conclusion survives untouched; the PROOF did not.** The record
+  booked those 14 pairs into the "provably pure" column when they belong in the emphasis-promotion
+  exposure declared open below. **A record that overstates what was verified is the defect this
+  project weights highest, and this was the third consecutive gate to find a figure defect here.**
+- **The listener is unaffected, re-derived from the renderer rather than from a `diff`:**
+  `md_to_speech.py:726-728` strips bold outright, and `:478` tests the `"Important."` marker against
+  the **stripped** paragraph text. **So bold growth cannot reach the SSML by construction.**
+- **The consolidation deleted no open work:** 3,207 non-empty lines left the plan, **3,186 are
+  verbatim in the archive**; of the 21 that are not, exactly one was an unchecked `- [ ]` row, and it
+  survives as `- [x] ✅ CLOSED` with its phrase confirmed gone from `winger.md`.
+- **Every built HTML file is newer than the newest staged content file** (`dist` holds **52** `index.html`; ⚠️ **53 is `check-links.mjs`'s PAGE count, which includes a non-document route** — this line said 53), so the chain ran past
+  `build:pdf` and `check:links` rather than dying after `clean:cache`.

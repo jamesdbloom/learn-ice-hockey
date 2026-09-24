@@ -490,7 +490,7 @@ Rule: Pre-drop contact by a player facing off is a minor — discretionary under
 Rule: A second violation on one draw is a bench minor under NHL and IIHF 76.7, a minor on the offender under USA Hockey 613(d), and discretionary under Hockey Canada 6.2(e) and CARHA 57(d) — though Hockey Canada makes it automatic if the offender then contacts a linesperson clearing the dot
 Never: Push your head over the dot — depth comes from bent knees and hips. Helmet to helmet before the drop is pre-drop contact in all five books, and the 2026/27 IIHF handbook ejects the centre responsible
 Rule: The ninth spot is centre ice, where the visitor's blade goes down first; at the other eight, the defending centre (NHL and IIHF 76.4). USA Hockey 613(a) reverses it to the attacker at all but centre ice, Hockey Canada 6.2(a) puts the visitor first at all nine, CARHA 57 writes no order
-Rule: ⚠️ Across the Home Countries there is no stick-down order — IHUK scraps it ("Either centre can now put their stick down first for a face-off") and wants "the whole of their stick blades (not toe or heel)" in the white; CARHA 57(a) wants "the full blade of their sticks flat on the ice"
+Rule: ⚠️ **Across the Home Countries there is no stick-down order** — IHUK scraps it ("Either centre can now put their stick down first for a face-off") and wants "the whole of their stick blades (not toe or heel)" in the white; CARHA 57(a) wants "the full blade of their sticks flat on the ice"
 Rule: In the Elite League the stick-down order still binds — the In-House Rules never name the EIHL and the Casebook writes no Rule 76, so IIHF 76.4 governs: at the eight outer spots the defending centre puts their stick down first, the visiting centre at centre ice
 ```
 
