@@ -219,3 +219,78 @@ Every method here was a search for an **act** across books that are text on disk
 whether a legally-timed check thrown by a player who has never been taught to hit still injures someone,
 and nothing about what a referee in an adult recreational league actually calls. The corpus's scope
 sentences are the only guard on the second, and they are a scope, not evidence.
+
+
+---
+
+# Follow-up: the route changes the discretion (same day, second commit)
+
+The round closed with an open item against itself, and testing it broke. Two agents had independently
+flagged that IIHF Rules 41, 43, 48 and 69 can each price a charge on a goaltender, and that **43.3 and
+48.3 carry an automatic game misconduct where 42.4 does not.**
+
+**The tariff worry was refuted; the discretion claim was not.** Nothing in the IIHF book exceeds a major
+plus a game misconduct — established structurally rather than by enumeration: the book has **no match
+penalty and no gross misconduct at all**, Rule 23.1 defines a game misconduct as *"the suspension of a
+Player for the balance of the game"*, and Rule 28's Supplementary Discipline is expressly out-of-game. So
+the committed ceiling sentence stands.
+
+**What was incomplete is the framing clause.** Both files said the IIHF *"leaves charging a goaltender to
+the referee"*. That is true of Rule 42 and false of the same physical act delivered from behind: **43.2
+writes *"there is no option to award a minor penalty"***, and **43.1 names the goal frame itself** — a
+goaltender square to the shooter has his back to his own net by definition. A corpus-wide census found
+**not one sentence in `content/` connecting checking from behind to a goaltender**; the corpus carries
+43.2 well in six documents, always about a skater at the boards.
+
+Repaired in both files at four layers each, with the disclosure that this is *"a reading of how the book
+is assembled rather than a sentence the IIHF prints"* — naming Rule 5.1 and 43.1's goal frame, and
+carrying both counter-facts: Appendix II defines a vulnerable position for *"a skater"*, and the Situation
+Handbook prints **no Situation under Rule 43 at all.**
+
+## Corrections to the coordinator's own briefs, all caught by the agents
+
+⚠️ **Six coordinator errors across this round, and five share one mechanism: a source relayed or truncated
+rather than quoted whole.**
+
+- **IIHF Rule 48 does NOT remove the minor.** 48.2 is a minor rung. A brief implied otherwise; an agent
+  read 48.2 and rewrote its own draft before the correction arrived, then reported the near-miss against
+  itself. **Only Rule 43 removes the choice.**
+- **IIHF 43.3 was truncated at both ends**, dropping *"The Referee, at their discretion,"* and *"and who
+  recklessly endangers the fouled Player"* — harsher in both directions. The shipped text quotes only the
+  word *"automatic"* and attaches it to the game misconduct, never the major.
+- **`sources/README.md` was misrelayed twice in one sentence**: it records **57.3** (tripping) as the bare
+  major, not 101.1, and attributes *"in all cases"* to the **British** overlay, not the IIHF. The README
+  was right both times.
+- Three figures that did not reproduce — a `--near` capability, a trailer-entry count, and a
+  `check_secrets` total.
+
+## What the follow-up also settled
+
+- **IIHF Sections 11 and 12 read end to end**: nothing in any category exceeds major plus game misconduct,
+  so the ceiling needs no category qualification. **101.1 is a two-rung choice, not a bare major**, and its
+  automatic game misconduct is in the rule's own text.
+- **The Situation Handbook is silent on this act under every rule number**, not only Rule 43 — swept whole
+  in both editions. The gap is neutral, not adverse.
+- ⚠️ **`check_quote_drift.py` scored two truncations clean in one day**, including the coordinator's. It
+  keeps the closest match, so a quotation cut at a clause boundary reads as a shorter valid one.
+
+## Open after this commit
+
+1. **`shooting.md` is the highest-exposure, lowest-coverage document in the corpus on this claim** — 27
+   goalie-charging mentions, and zero occurrences of Rule 43, Rule 48, checking from behind or head
+   contact anywhere in the file. It teaches net-front work.
+2. **`goaltender.md:1121` and `:1119`, `special_teams.md:1086`** — three facts lines, voiced alone, that
+   state the discretionary framing; `special_teams.md`'s names itself *"the British answer"*.
+3. ⚠️ **`body_contact_and_battles.md` owns both the correct sentence (`:591`) and the defective one
+   (`:1208`), 620 lines apart in the same file.** The cheapest repair in the corpus.
+4. **Six sites name the mandatory books and leave the IIHF out**, so it appears only on the discretionary
+   side. No sentence is false; the defect is the contrast structure.
+5. **`body_contact_and_battles.md:591` says 42.4's game misconduct is not automatic** — true for adult
+   men's IIHF hockey, **false for juniors under 201.1 and for British women's hockey under the In-House
+   Rules' Rule 101.** Permissive, in a layer voiced alone.
+6. **Whether IIHF 201.1 reaches a British U16 boy is genuinely unresolved on the documents on disk** — the
+   In-House Rules note that junior categories are *"unisex and not classified as 'Mens'"*.
+7. **The ceiling rests on a lexical negative attacked from one direction.** Test: sweep the IIHF book for
+   `expulsion|expelled|disqualif|eject|banned` and read every hit, and establish whether anything in the
+   IIHF Disciplinary Code — **not on disk** — bites during the game rather than after it.
+8. **Rule 43's text was not diffed between editions**, only the tables.

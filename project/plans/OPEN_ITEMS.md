@@ -17580,7 +17580,333 @@ describes the extractions accurately.** · ⚠️ **Open item 1 is live and unte
 69 can each price a charge on a goaltender, and 43.3 and 48.3 carry an AUTOMATIC game misconduct where
 42.4 does not.** ***"Test it before the next wave, not after."***
 
+## ✅ COMMITTED — `cc10b7c`, 25 files, "Say what each book actually prices, not what its label happens to name"
+
+**Re-gate verdict: CLEAR**, inheriting nothing from the blocked run. **Content bytes byte-identical to what
+was audited; index matched tree on every staged path; `site/package-lock.json` deliberately excluded and
+the gate agreed** — *"every deleted line is `libc`/`glibc`/`musl` metadata on optional platform deps.
+Committing it would strip Linux libc constraints on a macOS-local artefact."*
+
+### ✅ THE GATE DID NOT TAKE THE RECORD'S WORD ON ANYTHING
+It **extracted 775 italic-quoted strings from the added lines**, flattened them, matched against all 42
+on-disk books, and hand-checked every non-match. ***"Every quotation resolves."*** The 46 initial misses
+were its own matcher's ellipsis/`[a]`-insertion artefacts; four residuals are pre-existing corpus text at
+HEAD. **It then re-derived ~45 load-bearing claims independently**, including USA Hockey 614(c)'s four
+triggers, 618(c), 632(b), CARHA 30(a)/32(d)/66(b)/66(e)/74(b)/27(b), IIHF Situation 67.8 and Appendix II.
+✅ **It confirmed the round's self-caught regression is fixed: the staged `winger.md:471` reads *"five of
+the six reach a match penalty above that"***, arithmetically consistent with `:472`.
+
+### ✅ C5 PASSED ON STRONGER EVIDENCE THAN THE RECORD CLAIMED
+***"Zero URLs enter the corpus. Zero new `[text](url)` markup. There is no new fetch target and no new
+redirect chain."*** ⚠️ **And it could not reproduce my *"12 new trailer entries"* — it counted 2 by its own
+method.** **The figure is now GONE from the record rather than corrected a third time**, replaced by the
+reproducible statement. ⚠️ **Third unreproducible figure of mine this round.**
+
+### ✅ ITS C10 RULING, AND THE REASON IS BETTER THAN "SEVEN GLYPHS IS SMALL"
+> ***"This commit stages NO `site/` file at all — not the plugin, not `global.css`, not a diagram module.
+> The rendering pipeline is byte-identical to the one already in production. The construct D15 could not
+> see painted — `span.warn-inline` inside a Key Takeaway `<li>` — is not introduced by this commit; I
+> counted 29 instances in `equipment`'s takeaways list and 19 in `uk_rules`'s, all already deployed.
+> Holding this commit for 'does the amber paint in a numbered list' would hold it for a question the live
+> site has already answered."***
+⚠️⚠️ **BUT: *"The visual check is owed before the PUSH, not before the commit… you do not have my
+clearance to push, and you need the user's."*** **A `site-reviewer` on `body_contact_and_battles`,
+`uk_rules` and `equipment` is REQUIRED BEFORE ANY PUSH.**
+
+### ✅ Three should-fix items applied before committing
+1. **A "Files in this commit" manifest** — the record named only 12 of 22 files; it now names all 22 plus
+   `sources/README.md`, with the defect each carried. ⚠️ *"The plan is by design transient — the record is
+   the durable artefact."*
+2. **The bare-glyph line corrected: at least one of the six was CREATED by this wave** — a doubled-glyph
+   artefact in `playing_without_the_puck.md` where the FIRST `⚠️` falls outside the wrapper. **Cosmetic,
+   not an escalation loss.** `rink_map.md` is not in this diff, so its two are not this round's.
+3. ⚠️ **D4 now states plainly that the closing repairs POST-DATE the safety review and NO FRESH
+   `safety-reviewer` READ THEM** — they were re-derived from primary text by two gate runs, *"but that is
+   verification of the text, not a safety reading of it."*
+
+## 🔴 THE IIHF ROUTE SWEEP — the TARIFF worry is REFUTED, but the **DISCRETION** claim is a half-answer
+
+**NOT a commit blocker** — `cc10b7c` stands; neither staged sentence is false. **Next-round row, high
+priority, and a `safety-reviewer` hand-off.**
+
+### ✅ THE CEILING CLAIM IS CONFIRMED THREE WAYS — the flagged worry is refuted on tariff
+**Nothing in Rules 41, 43, 48, 56, 69 or 21 exceeds major + game misconduct.** Types of Penalties runs
+Rules 15–28 with no match category; Rule 23 is the top in-game sanction. ✅ **And Situation 42.2 DIRECTLY
+SUPPORTS the corpus's ladder as written**: *"At the discretion of the Referee, it is possible to assess a
+minor, major or major plus game misconduct. Rule 42 and Rule 69.2."*
+✅ **Rule 69 CAPS AT A MAJOR and writes no game misconduct anywhere — LIGHTER than Rule 42, not heavier.**
+✅ **Rule 21 refuted as a route, exactly as predicted** — its residual clause (*"not covered by the playing
+rules"*) excludes charging by its own terms.
+
+### 🔴 BUT THE SENTENCE'S OWN FRAMING CLAUSE IS THE HALF-ANSWER
+Both files say the IIHF **"leaves charging a goaltender to the referee"** / **"discretionary in… IIHF
+42.4"**. ⚠️⚠️ **True of Rule 42, and FALSE of the same physical act delivered from behind or to the head:**
+- **43.2** — *"This infraction is considered serious and dangerous, therefore **THERE IS NO OPTION TO AWARD
+  A MINOR PENALTY** for 'Checking from Behind'."* **43.3** makes the game misconduct **AUTOMATIC**.
+  ⚠️ **43.1 names the goal frame itself** — *"hits an opponent from behind into the boards, **THE GOAL
+  FRAME**, or on open ice"* — **and a goaltender square to the shooter has his back to his own net by
+  definition.**
+- **42.1 SURRENDERS IN TERMS**: *"This rule **is superseded by** all similar actions regarding an 'illegal
+  hit to the head'."* **48.1**: *"There is no clean check to the head or neck."* **48.3**'s game misconduct
+  is **automatic**. ✅ **Counterweight honestly given: Situation 48.1 confirms a minor IS available under
+  48.2 for a hit *"not overly aggressive"*, so 48 is not a floor the way 43 is.**
+- ✅ **THE IIHF TABULATES THE DISTINCTION ITSELF: Appendix IV Table 6 is the AUTOMATIC group (43.3, 48.3,
+  21.1); Table 7 is the REFEREE'S-JUDGEMENT group (41.4, 42.4, 45.4, 56.5, 57.4).**
+
+### ✅ THE HINGE HOLDS — and it is the Glossary-routing shape again
+**Rule 5.1**: *"any reference to 'Player' shall refer to **both skaters and goalkeepers**."* ⚠️ **In the
+TEAMS section, not the Glossary.** ⚠️ **Counter-evidence reported honestly: Appendix II's *Vulnerable
+Position* says *"A SKATER is considered…"*, and the IIHF publishes NO Situation under Rule 43** — the
+Handbook prints *"RULE 43 CHECKING FROM BEHIND / No situation."* ***"That is strong, but it is a reading of
+how the book is assembled, not a sentence the IIHF prints about goaltenders — and the corpus should say so
+once rather than assert it flat."***
+
+### 🔴 A ROUTE THE BRIEF DID NOT NAME, found by reading Rule 20 end to end
+**20.4** — *"An 'Automatic Game Misconduct' shall be applied to any Player who has been assessed **A SECOND
+MAJOR PENALTY**… in the same game."* ⚠️ **So a bare 42.3 major for running a goaltender ejects outright if
+it is the player's second major, with no 42.4 judgement involved at all.** ***"I found it only because I
+read Rule 20 end to end for an unrelated reason… my searches were all keyed on the act or on a rule
+number, and 20.4 is keyed on neither."***
+✅ **And the mitigating half: 20.6 requires video review of every major with only three outcomes —
+confirm, reduce, nullify — so a major can be REDUCED BUT NEVER INCREASED on review.**
+
+### ⚠️ EDITION WARNING, NEW
+**In 2026/27 the automatic-versus-judgement distinction is NO LONGER TABULATED** — Tables 5/6/7 merge into
+one Table 5 with only `MAJOR ONLY` / `MAJOR + GMP` columns. **The word *"automatic"* survives only in
+43.3's and 48.3's prose.** **The corpus writes to 2025/26, so cite Tables 6/7 WITH the edition named.**
+
+### CONSTRAINTS for the repair
+1. ⚠️ **NOT a facts line — both blocks are at `HARD_MAX` (14).** **The BODY is the natural carrier;** both
+   documents already run body paragraphs on Rule 69 and the crease line.
+2. ⚠️ **DO NOT WEAKEN THE CEILING CLAIM — it is correct.** *"A fix that says the IIHF can go higher than
+   major plus game misconduct would be a new error in the harsher direction."*
+3. ⚠️ **Check Key Takeaways and Common Mistakes in both files** — *"the word 'discretionary' is the limb
+   that would survive naked in a layer voiced alone."* **Not audited.**
+
+### ⚠️ Its weakest negatives — both dispatched
+1. ⚠️ **IIHF Section 11 (Rules 100–102, women's) and Rules 200–202 (men's junior) NOT READ.** `sources/README.md`
+   records **Rule 101.1 as a bare major that Rule 101 ejects on *"in all cases"***, and 101.1 is in Table
+   6's automatic group. ***"So there is a category-specific rule that changes what a body check costs, in
+   a section I did not read."***
+2. ⚠️ **The Rule-42-only framing may repeat elsewhere in the corpus** — *"a brief that names two sites
+   produces an agent that checks two sites."* **A sweep for `42.4` together with `discretion`/`referee` is
+   the cheap next step.**
+3. **The EIHL Casebook — which supersedes IIHF rulings for EIHL play — was not checked for a 42/43/48
+   addition.**
+
+## ✅ IIHF SECTIONS 11 AND 12 — CEILING CLAIM CONFIRMED, NO REPAIR NEEDED. **AND MY BRIEF WAS WRONG TWICE.**
+
+### 🔴 MY RELAY OF `sources/README.md` WAS FALSE IN BOTH HALVES — verified by the coordinator
+I briefed: *"`sources/README.md` records Rule 101.1 as a **BARE MAJOR** that **Rule 101 ejects on 'in all
+cases'**."* **Neither half is true, and the README says neither.**
+1. ⚠️ **README says *"That bites hardest where a book writes a BARE major: **IIHF 57.3** is one"* — 57.3 is
+   TRIPPING.** I swapped the rule number.
+2. ⚠️ **README says *"**The British overlay** is in `eiha_inhouse_2026-27.txt`… and Rule 101 ejects on any
+   major *'in all cases'*."* **The subject of that sentence is the BRITISH OVERLAY. I dropped the word
+   *British* and attributed a British clause to the IIHF.**
+3. ✅ **IIHF 101.1 is expressly a TWO-RUNG CHOICE, and the top rung already carries the ejection:**
+   *"(I) Minor penalty (2') / (II) Major penalty (5') **and automatic game misconduct penalty**."*
+⚠️⚠️ ***"`sources/README.md` is right. The brief is wrong. No README edit is needed. This is the routing
+failure the agent brief warns about, occurring inside the warning's own delivery."***
+⚠️ **Fourth incorrect or unreproducible thing from the coordinator this round** — after the `--near`
+premise, the `~20`/`12` trailer figure and the CARHA Case Situation truncation. **The pattern is relaying a
+source's content instead of quoting it.**
+
+### ✅ THE COMMITTED CEILING CLAIM NEEDS NO CATEGORY QUALIFICATION
+**Both sections read END TO END in both editions — Section 11 is ~110 lines, Section 12 ~90; there is no
+hidden material.** The complete tariff set is minor, **major + automatic GM (101.1(II))**, ten-minute
+misconduct, the 201.1 automatic GM appended to any major, and Supplementary Discipline (out of game).
+**Flattened `match` over both sections = 0.** ✅ ***"Major plus a game misconduct is the IIHF's in-game
+ceiling needs no category qualification and no repair,"*** and `winger.md:472`'s *"in-game ceiling, 42.5
+Supplementary Discipline above"* is **exactly the right construction.**
+
+### ✅ What those sections actually do
+- **101.1 ADDS a rule and LOWERS the threshold** — it does not replace 41/42/43/48/69. ⚠️ **It has NO age,
+  category or championship limb**, unlike 100.1 and 102.x. ✅ **The corpus's framing of 101.1 as the
+  operative bodychecking rule in British women's hockey is CONFIRMED**, and `winger.md:390`/`:414` quote
+  the boards/pinning limb verbatim.
+- **201.1 CHANGES THE ROUTE, NOT THE CEILING** — *"Any Player who commits a foul that is assessed a major
+  penalty will also receive **in any case** an additional game misconduct penalty"* — **scoped to Men's
+  Junior U20/U18, so it does NOT reach adult men's hockey.**
+  ⚠️ **The IIHF's words are *"in any case"*; *"in all cases"* is the BRITISH paraphrase. Do not conflate.**
+- ⚠️ **Nothing in either section prices contact with a goaltender** — `goaltender`, `crease`, `charg`,
+  `interference`, `boarding` all score **0**; the four `goalkeeper` hits are equipment. ✅ **But Rule 5.1
+  means 101.1 and 201.1 BIND goalkeepers anyway** — a women's goalkeeper can commit or suffer an illegal
+  hit, and a junior goalkeeper's major carries an automatic GM where an adult's would not.
+- ✅ **Table and rule text AGREE on 101.1** in both editions — *"worth recording, because this book has a
+  documented history of the two disagreeing."*
+- ⚠️ **NO IIHF SITUATION EXISTS for Rules 100–102 or 200–202** (`women` scores 0 in both Handbooks).
+  ***"That is an honest gap and the corpus should not be made to look as if one exists."***
+
+### 🔴 ONE CANDIDATE DEFECT, NEXT ROUND — and it is permissive
+**`body_contact_and_battles.md:591` (a ` ```facts ` line, VOICED ALONE) and `:612`** say IIHF 42.4's game
+misconduct *"does not make that game misconduct automatic"*. ⚠️ **True for adult men's IIHF hockey and
+FALSE for two populations this corpus serves** — under **201.1** a men's U20/U18 charging major is
+automatically an ejection, and under the **British In-House Rule 101** so is any major in British women's
+hockey at any age. **It tells a junior or a British woman a charge is cheaper than it is.**
+**CONSTRAINTS: keep the adult-men's statement; attribute *"in any case"* to IIHF 201.1 and *"in all cases"*
+to the British In-House Rules, never conflating; respect the 300-char cap; and DO NOT SWEEP — only this
+document's charging and head-contact limbs were checked.**
+
+### ⚠️ A BRITISH SCOPE QUESTION IT FOUND BY READING ADJACENT, AND HONESTLY DECLINED TO SETTLE
+`eiha_inhouse_2026-27.txt:472` — ***"Note: Junior age categories are unisex and are not classified as
+'Mens' within the UK"***, and the In-House Rules reach IIHF 201.1 for juniors only through the **women's**
+Rule 101 bullet. ⚠️ **So whether IIHF 201.1's automatic ejection applies to a British U16 BOY is GENUINELY
+UNRESOLVED on the documents on disk.** ***"I am not asserting either way."***
+⚠️ **And the second In-House bullet — *"Any player who commits a foul that is assessed a Major Penalty
+will, in all cases, also receive an additional Game Misconduct"* — carries NO AGE LIMB where the first
+does. Read on its face, every major in British women's hockey at every age is an ejection.**
+
+### ⚠️ Its weakest negatives
+1. ⚠️ **Rule 28 (Supplementary Discipline) NOT re-read, and 101.2 routes into it expressly.** *"If Rule 28
+   empowers a Proper Authority to impose something that takes effect DURING the same game, then 'in-game
+   ceiling' is a claim about Rule 20's tiers that Rule 28 could sit above by a different route… exactly
+   the shape of the CARHA 52(b) failure."*
+2. **British scope established from `eiha_inhouse_2026-27.txt` ALONE** — `ihuk_wnihl_roc.txt` is the
+   women's competition regulation and *"the single most likely place for a departure I have not seen"*;
+   `eihl_casebook.txt` unchecked and its preamble SUPERSEDES the IIHF book.
+3. **It read both editions and saw no difference — *"I read them, I did not diff them."***
+
+## 🔴🔴 THE RULE-42-ONLY CENSUS — 3 CRITICALS, 7 MAJORS, AND **MY BRIEF WAS WRONG IN THE HARSHER DIRECTION**
+
+### 🔴 MY FIFTH ERROR THIS ROUND, AND THE FIRST ONE THAT OVERSTATES A TARIFF
+**I briefed that IIHF 42.1 surrenders to Rule 48 and implied 48 removes the minor. IT DOES NOT.** Verified
+by the coordinator: **`48.2. MINOR PENALTY — "The Referee shall, at their discretion, assess a minor
+penalty to any Player who delivers an 'illegal check to the head or neck'."`**
+⚠️⚠️ **Rule 48 is NOT a no-minor rule. ONLY RULE 43 IS.** ***"A wave that copies its framing will ship a
+harsher-than-true rule — the direction this repository records as what summarising does to a tariff."***
+✅ **URGENT CORRECTION SENT to the live agent mid-task, before it could write my error into two files.**
+✅ **And the correctly-scoped wording ALREADY EXISTS at `body_contact_and_battles.md:591`** — *"unlike head
+contact at 48.3, Rule 42.4 does not make that game misconduct automatic."* **That is the model.**
+⚠️ **Second correction: 43.3's MAJOR is itself discretionary** — *"The Referee, **at their discretion**,
+shall assess a major penalty and an automatic game misconduct"*. **What is automatic is the GAME
+MISCONDUCT ONCE THE MAJOR IS GIVEN.** ⚠️ **The limb that actually changes what a player does is 43.2:
+*"there is no option to award a minor penalty."***
+
+### ✅ THE COUNT THAT MATTERS: not one sentence in `content/` connects checking from behind to a goaltender
+**Outside the two files under live repair.** The corpus carries 43.2's no-minor rule **well, in six
+documents — but always about a SKATER with his back turned at the boards**, never about a goalkeeper
+square to a shooter with his back to his own goal frame. **Meanwhile ten sites say the IIHF prices running
+a goaltender from a minor upward at the referee's discretion, with nothing in the same chunk saying that
+from behind it does not.**
+
+### 🔴 CRITICALS — all three are ` ```facts ` lines, ALL VOICED ALONE, all verified by render
+- **`goaltender.md:1121`** (chunk 139) — ⚠️ **its whole subject is the face/head case**, and it tells a
+  goaltender the IIHF leaves the ejection to the referee. ⚠️ **`goaltender.md` mentions Rule 48 ZERO times
+  in 1,600 lines.**
+- **`shooting.md:293` and `:498`** (chunks 035, 064) — ⚠️⚠️ **THE HIGHEST-EXPOSURE, LOWEST-COVERAGE
+  DOCUMENT IN THE CORPUS: 27 goalie-charging mentions and ZERO occurrences of Rule 43, checking from
+  behind, Rule 48 or head contact anywhere in the file.** **This is the document that teaches net-front
+  work and screening.**
+- **`special_teams.md:1086`** (chunk 111) — ⚠️ **worse in shape than the others because it is an explicit
+  BRITISH-SCOPED ASSURANCE**: *"not Hockey Canada's mandatory ejection — **is the British answer**"*.
+  ***"Everything the sentence says about Rule 42 is true; what makes it a critical is that it answers a
+  question wider than Rule 42 and names itself 'the British answer'."***
+
+### 🔴 MAJORS
+**M1** `goaltender.md:1119`, same chunk as C1 — *"fixing C1 alone leaves this standing, which is this
+repository's named round-10 shape."* · **M2** `playing_without_the_puck.md:634`/`:636` — ✅ **the CEILING
+claim survives the carve-out; what does not survive is the FLOOR.** · **M3**
+`body_contact_and_battles.md:1208`/`:1214` — ⚠️⚠️ **this document OWNS the correct 48.3-vs-42.4 sentence
+and the corpus's densest checking-from-behind treatment, and NEITHER REACHES ITS OWN GOALTENDER SECTION
+620 LINES LATER. The highest-value cheap repair in the corpus: the model sentence and the defective one
+are in the same file.** · **M4** `special_teams.md:1104` + the 🇬🇧 blockquote · **M5** `shooting.md:521` ·
+**M6 THE INVERSE SHAPE — six sites naming the mandatory books and leaving the IIHF out**, so the IIHF
+appears only on the discretionary side. ***"No sentence here is false. The defect is the CONTRAST
+STRUCTURE."*** · **M7** `forechecking_systems.md:225`.
+
+### ✅ WHAT IT CLEARED, EXPLICITLY — thirty documents named
+And two genuine pieces of good news: ⚠️ **NO KEY TAKEAWAY ANYWHERE IN THE CORPUS carries the naked
+discretion limb** — every numbered takeaway containing a goalie-charging phrase was checked and **none
+states a Rule 42 tier.** ✅ **And the 43.2 material carried for skaters in `special_teams`, `zone_entries`
+and `playing_without_the_puck` is CORRECT AS WRITTEN — none of it is a defect.**
+
+### ⚠️ Its weakest negatives — the first is testable in one command
+1. ⚠️ ***"A 69.2-only site with no 42 number anywhere would have passed me invisibly."*** **Sweep all 39
+   documents for `deems appropriate` and `minor or major` and read each hit for whether it implies a
+   floor.**
+2. **Its discretion filter was SINGLE-LINE** — a hard-wrapped paragraph with *"discretion"* and
+   *"goaltender"* on different physical lines and no rule number on either scores zero.
+3. ⚠️ **It read NO diagram captions at all** — `check_caption_hosts.py` exists because captions state
+   tariffs into documents that do not own them.
+4. ⚠️⚠️ **It verified the IIHF ONLY. Every non-IIHF tariff in every passage it quotes is unverified**, and
+   several hits compare four to six books in one sentence. ***"Hand the six-book comparison sentences to
+   `rules-verifier` with the ACT named — 'running a goaltender from behind, and to the head' — not with a
+   rule number."***
+
+## ✅ THE 43/48 ROUTE CARRIED — and the agent caught MY Rule 48 error BEFORE my correction arrived
+
+⚠️⚠️ **AND IT FOUND A SIXTH ERROR OF MINE I HAD NOT SPOTTED: I TRUNCATED IIHF 43.3 AT BOTH ENDS.**
+**Verified by the coordinator.** Source: *"**The Referee, at their discretion,** shall assess a major
+penalty and an automatic game misconduct penalty to a Player guilty of 'checking from behind' an opponent,
+**and who recklessly endangers the fouled Player**."*
+**My brief quoted only:** *"shall assess a major penalty and an AUTOMATIC game misconduct penalty."*
+⚠️ **That drops the DISCRETION at the front and the RECKLESSNESS CONDITION at the back — harsher in both
+directions.** ***"I wrote to the full text, not the brief's."***
+⚠️ **Six coordinator errors this round. Five of six are the same mechanism: relaying or truncating a
+source instead of quoting it whole.**
+
+### ✅ It also caught the Rule 48 near-miss in its OWN first draft, unprompted
+*"My opening sentence originally ran '…the IIHF takes the two-minute option away' and then treated 42.1's
+supersession by Rule 48 in the same breath. I read 48.2 before shipping and rewrote it."* ⚠️ **Fixed
+BEFORE my correction message arrived, and reported against itself anyway.**
+⚠️ **And a second truncation of its own**: its first 42.1 quote closed before *", except those related to
+'fighting'"*. ***"`check_quote_drift.py` scored it CLEAN — it matches alphanumerics and keeps the closest
+match, so a truncation reads as a shorter valid quotation."***
+
+### ✅ The repair — body carrier plus FOUR summary sites, because the word was in four places
+**New body paragraph in both files** quoting 43.2 in full, 43.1's goal-frame limb, **Appendix IV Tables 6
+and 7 WITH THE EDITION NAMED**, the **48.2 counterweight explicitly** (*"so checking from behind is the one
+route that removes the choice"*), the discretion 43.3 keeps, and ⚠️ **"None of this lifts the ceiling"**
+plus 20.4. ✅ **Closes with the Rule 5.1 + 43.1 disclosure and both counter-facts.**
+✅ **Four voiced-alone sites appended** — Common Mistakes and Key Takeaway 8 in each file.
+✅ **A premise the brief did not give it, found and used: Situation 42.2** directly supports the
+*"discretionary"* half — *"which is why I could SCOPE rather than REPLACE it."*
+✅ **`winger.md:472` rewritten in place at 291/300**, evicting *"the IIHF writes no match penalty
+anywhere"* — ⚠️ **deliberately chosen because it is the PERMISSIVE limb**, and *"in-game ceiling… 42.5
+Supplementary Discipline above"* carries the same information conservatively.
+
+### ⚠️ A judgement it made and flagged for overruling
+**`center.md:441` LEFT ALONE at 299/300.** ***"The only limb long enough to evict is 'all but the IIHF add
+a match penalty, a tier its book lacks' — which is the HARSHER limb about five other books, so trading it
+out moves the corpus in the permissive direction for five rulebooks to fix one book's scope."***
+✅ **And `center.md`'s facts layer already carries the limb at `:680`** — *"The NHL and IIHF write no minor
+for checking from behind at all (43.2 in both)"* — **voiced alone and scoped exactly right.**
+⚠️ ***"`winger.md` had NO checking-from-behind fact anywhere in its extraction layer, which is why it was
+the file that needed the substitution."*** **Accepted. A named open row, not an omission.**
+
+### ✅ Five defects it caught in its own text
+The Rule 48 near-miss · the 42.1 truncation · **a flat *"is IIHF Rule 43 instead"* in a layer voiced
+alone**, where 43.1 requires a vulnerable player unaware of the hit with contact on the back — reworded to
+describe the act · **a back-pointer *"the discretion above"* with the entire CARHA paragraph between it and
+its antecedent, i.e. a different chunk** · ⚠️ **a state-4 marker shape** (`**⚠️** **…**`, glyph in its own
+strong run, no amber) — rewritten so the glyph precedes a strong run.
+
+### ✅ Verified after
+Chunk counts **unchanged** (85 / 101); **the new body paragraph is its own chunk in both files and speaks
+`"Important."`**; KT8 speaks it in both; **marked-paragraph counts unchanged, no paragraph lost its last
+marker.** `check_facts` 850 blocks / 5,919 facts · `check_links` 0 · `check_absolutes` 0 ·
+`check_quote_drift` **winger 0 flagged**, center 2 **pre-existing and not in text it wrote.**
+
+### ⚠️ Open rows it opened
+- ⚠️ **`winger.md`'s Common Mistakes bullet *"Arriving into the goaltender…"* carries NO `⚠️` at all**, so
+  its chunk speaks no `"Important."` — **`center.md`'s equivalent bullet does.** **Pre-existing in HEAD,
+  not caused by this wave.**
+- **A pre-existing `check_quote_drift` `ADDED '.'` at two `center.md` sites** on *"…Major penalty (5') and
+  automatic game misconduct penalty."*
+- ⚠️ **Its weakest negative: it took the brief's word that nothing in IIHF 41/43/48/21/20 exceeds major +
+  GM, rather than sweeping the book for the act.** ***"Test it by sweeping for the ACT — `goalkeeper`
+  within N lines of `major`, and `goalkeeper` in the Table 6 list — not by checking the rule numbers I
+  cited."*** **Rules 51 (roughing), 56 (interference) and 62 (spearing) named as candidates.**
+- **It searched the Handbook for Rule 43 and got *"No situation"* — but not for a goaltender-from-behind
+  Situation filed under a DIFFERENT rule number, e.g. 69 or 21.**
+
 ## Push status
+
+🔴 **NOT PUSHED. `main` deploys to production.** ⚠️ **Two things are owed BEFORE any push: the
+user's approval, and a `site-reviewer` on the three marker pages — the commit gate made that an explicit
+condition of its CLEAR.**
+
 
 ⚠️ **This section is a live fact, not historical narrative — it goes stale on every commit AND on every
 push, and must be re-checked with `git fetch origin main && git rev-list --count origin/main..HEAD`,
