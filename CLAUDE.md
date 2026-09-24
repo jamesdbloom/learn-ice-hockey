@@ -308,8 +308,40 @@ project exists to prevent.**
 A paragraph becomes an `<aside class="callout callout-warning">` panel **only when the marker is at the
 START**. **`md_to_speech.py:2778` tests the WHOLE paragraph.**
 
+⚠️⚠️ **THERE ARE THREE RENDERING STATES, NOT TWO, AND A WHOLE CORPUS-WIDE WAVE WAS PLANNED ON THE
+BINARY MODEL BEFORE A `site-reviewer` LOOKED AT THE PAGE (24 September 2026):**
+
+| State | What the reader sees |
+|---|---|
+| `aside.callout-warning` | the amber **PANEL**. `--panels` counts these. |
+| `span.warn-inline` | **amber bold text, an amber left bar and a tint** — eye-stopping. A marker moved onto a **STRONG run** gets this. |
+| nothing | a **small black glyph mid-sentence**, often with no space after it, reading as a typo. |
+
+⚠️ **SO A MOVED MARKER IS NOT DEMOTED TO PROSE — IT IS DEMOTED FROM PANEL TO INLINE AMBER.**
+`uk_rules.md` went from 25 panels to **2 panels plus 83 inline amber marks**, one every ~530 px. The
+reviewer skimmed without reading and **stopped on every amber mark and skated past every bare one**,
+finding the bare ones only by DOM query afterwards. **That is the whole reason this repair is safe.**
+
+⚠️⚠️ **BUT STATE 3 IS THE DEFECT THIS REPAIR MANUFACTURES, AND IT IS INVISIBLE TO EVERY OTHER
+MEASUREMENT.** `remark-corpus.mjs` needs a `<strong>` after the glyph to bound the wrapper
+(`WARNING_TAIL_RE`, the shape (c) pass). **Marker in front of PLAIN PROSE → no wrapper → no colour,
+no bar, no bold.** `--panels` falls, `--markers` holds, the spoken `"Important."` holds, the SSML is
+byte-identical — **and the reader's escalation is gone.**
+⚠️ **Measured corpus-wide the first time anyone looked: 207 bare glyphs across 33 pages.**
+**Run `check_callout_flow.py --bare` — it reads `site/dist`, so BUILD FIRST.**
+
+⚠️⚠️ **AND IT REPRODUCES THE OWNER'S ORIGINAL COMPLAINT IN A WORSE FORM.** Before, the mismatch was
+panel-vs-prose ACROSS paragraphs. A bare glyph is **amber-vs-black INSIDE ONE PARAGRAPH, three lines
+apart** — and the two worst found were both **instructions**: *"Tape it or take it off"* and *"The
+difference is deliberateness, not force."*
+
+⚠️ **THE FIX IS TO BOLD THE CLAUSE THAT STATES THE HAZARD** so the glyph precedes a strong run.
+⚠️⚠️ **BOLD THE INSTRUCTION, NEVER A CITATION — the wrapper ENDS where the strong run ends**, so a
+bolded rule number takes the amber and leaves the instruction after it black. Two live instances were
+found on the page: *"⚠️ **Hockey Canada 7.8(a)**"* amber, the tariff after it black.
+
 **So moving a marker off a paragraph's opening onto the clause that actually states the hazard:**
-- **removes the amber panel** — the page reads as ordinary prose;
+- **removes the amber panel** and leaves an **inline amber run** — not plain prose, provided a strong run follows;
 - **keeps the spoken `"Important."`** — the listener still gets the escalation;
 - **and puts the escalation on the hazard** instead of on the words *"What to notice"*.
 

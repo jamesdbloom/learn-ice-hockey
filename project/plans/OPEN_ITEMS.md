@@ -236,6 +236,36 @@ git diff -- <file> | strip +/- lines, remove ⚠ glyphs and whitespace, compare
 **So: byte-identical SSML is the STRONGEST gate but not the only acceptable one.** A small delta that
 the stripped-text diff explains as a split connective is fine. **An unexplained delta is not.**
 
+### 🔴 OPEN — a "ceiling" quoted as a floor, found by a placement agent and correctly NOT repaired
+
+`off-the-ice/team_play_and_culture.md:338`: *"a floor of 'not less than three' games and **a ceiling
+of** 'not less than twenty' games."*
+
+⚠️ **A ceiling quoted as *"not less than twenty"* is self-contradictory as prose** — the quoted NHL
+wording is a **floor in both limbs**, and calling the second a ceiling reads as *"at most twenty."*
+
+✅ **The agent left it, and was right to under the lane rule: the direction is HARSHER, not
+permissive.** ⚠️ **But a listener hearing *"ceiling"* is told the tariff is BOUNDED when the book does
+not bound it** — which is a real defect in a suspension ladder. **Needs a `rules-verifier`, not a
+placement agent.**
+
+### 🟡 THE RESTORE CANDIDATES — collected as agents name them, for the panel-target decision
+
+**If the site review says the pages have lost too much visual signal, these are the panels the agents
+themselves nominated to bring back.** Recorded now because each agent saw its own document closely and
+that judgement is expensive to reconstruct later.
+
+| document | agent's nomination |
+|---|---|
+| `off-the-ice/team_play_and_culture.md` | ***"if any single panel should be restored it is `:419`"*** — leaving the bench in an altercation: major + game misconduct, short-handed kill, NHL ten- and five-game suspensions |
+| `positions/defender.md` | kept `:151`; if more are wanted, ***"the candidates to restore are `:268` and `:400`"*** — the net-front move-them-to-the-corner limb and the check-from-behind numbers |
+| `hockey-iq/risk_management.md` | **argued zero is correct there**, with a reason: every one of its 15 panels wrapped a 600–700-word paragraph, so the amber was *"not a sharp warning but an unreadable slab"* |
+
+⚠️ **Note the pattern in the nominations: every one is an EJECTION or SUSPENSION hazard, and every
+"leave it at zero" argument turns on the PARAGRAPH BEING TOO LONG for a panel to help.** **That
+suggests the right rule is not a count per page but a shape test: a panel earns its place when the
+hazard is short enough to read in one glance.**
+
 ### 🔴🔴 THE OPEN QUESTION THIS WAVE HAS NOW FORCED — how many panels SHOULD a page have?
 
 **Five documents in, the wave is working and nobody has ever stated the target.** The agent on
@@ -1525,6 +1555,87 @@ is why this one is checkable.**
 (*"no division clause in any of the four books"*), and ⚠️ **Key Takeaway 5's *"Only two of the four
 books state that envelope"*, which it flagged as the one it would attack next.** Then
 `rules_primer.md`, the largest carrier.
+
+## 🔴🔴 PAGE-SCOPED IS NOT LISTENER-SCOPED — a scope that holds on the page and breaks at a chunk boundary
+
+**Measured in `body_contact_and_battles.md:849`, 24 September 2026, and ONLY THE RENDERER SHOWED IT.**
+
+On the page, a CARHA clause sits in the **same paragraph** as the conditional *"if your league permits
+checking"*, so a reader meets the condition and the claim together and it reads as correctly scoped.
+
+⚠️⚠️ **For a listener it is not: the conditional renders into chunk 105 and the CARHA clause into
+chunk 106.** **Different chunks, 300 ms apart, with nothing carrying the condition across.**
+
+⚠️⚠️⚠️ **AND IT IS THE WORST POSSIBLE PLACE FOR IT: §5's opener explicitly redirects CARHA readers
+there** — *"this section is not yours either… Skip to Section 6"* — **so the corpus routes the CARHA
+reader to the one passage where the scope had been dropped.**
+
+### ⚠️ WHY NO EXISTING CHECK REACHES THIS
+
+- **A document grep** sees the condition and the claim in one paragraph and clears it.
+- **A reader** sees them together and clears it.
+- **`check_facts_antecedents.py`** looks at facts lines, not body prose.
+- **The layer test** passes: the claim IS in the body, WITH its condition.
+
+**Only rendering and reading the chunk boundary finds it.** ⚠️ **This is a THIRD distinct
+scope-failure shape, alongside the geographic/competition collision and the pointer-promises-
+completeness case above.**
+
+### ⚠️ THE CHECK, and it is now cheap because agents already render
+
+**When a scope condition and the claim it governs sit in one paragraph, confirm they land in the SAME
+CHUNK.** A paragraph long enough to split is long enough to strand its own condition. ⚠️ **And
+`:1766` in the same file had its counterweight NINETEEN CHUNKS away** — the page said "same section",
+the audio said "unreachable".
+
+### ✅ AND THE AGENT CAUGHT ITS OWN ANTECEDENT DEFECT MID-REPAIR
+
+It first wrote *"That fifth book's stride count…"* into a new facts line and **noticed the
+demonstrative pointed at a line that now came AFTER it**. It rewrote by substitution, naming CARHA
+directly. ⚠️ **Adding a line can break a neighbour's antecedent** — `check_facts_antecedents.py`
+returned 0 for both files afterwards.
+
+### 🔴 OPEN — the better long-term carrier, named by the agent and outside its brief
+
+`systems/offensive_zone_play.md:829` is a facts line **enumerating the books that BAN body checking**
+— USA Hockey 604(a), Hockey Canada 7.3 — **with CARHA absent**, while `:825` says *"where your league
+permits body checking — take the player"*. ⚠️ **A CARHA reader hears the list of books that ban it,
+does not hear their own, and concludes they are permitted.** **Permissive.** It has 9 characters of
+headroom.
+
+⚠️ **The agent also declared: `offensive_zone_play.md` carries NO checking-division limb anywhere** —
+18 CARHA sites, zero counterweight — **so this file is the weakest carrier in the corpus for that
+claim.**
+
+## 🔴🔴 AND IT HAS AN INTERNAL VARIANT THAT A REPAIR **CREATES**: THE POINTER PROMISES COMPLETENESS
+
+**Measured in `defending_the_rush.md`, 24 September 2026.** A permissive CARHA defect was repaired at
+`:738`. ⚠️ **That same sentence points the reader at `:383` as *"the full treatment"* of whether you
+may body check at all — and `:383`, plus the facts lines at `:217` and `:373`, names only USA Hockey
+604(a), Hockey Canada 7.3(a) and the IIHF women's rule. CARHA is absent.**
+
+⚠️⚠️ **So a CARHA adult-rec reader follows a pointer that PROMISES COMPLETENESS, does not meet their
+own book, and concludes their league is unrestricted** — while under Rule 49(a) the ride is a minor or
+major at discretion and a **mandatory major if it injures.**
+
+⚠️⚠️⚠️ **THE REPAIR MADE THE DOCUMENT MORE INTERNALLY INCONSISTENT, NOT LESS.** Before it, the
+document was uniformly narrow on CARHA. After it, one site is complete and the passage it advertises
+as the full answer is not. **A repair that fixes a site and not its pointer target widens the gap
+between them.**
+
+⚠️ **This is the SOLE-OWNER-BY-REFERENCE shape turned inward.** The cross-file version is one document
+delegating to another; this is one SENTENCE delegating to a section of its own file. **Both are
+invisible to `check_links.py`, which verifies the anchor RESOLVES and never that the target ANSWERS.**
+
+### ⚠️ THE CHECK THIS YIELDS, and it is cheap
+
+**After repairing a claim, grep the document for a pointer AT the repaired subject** — *"the full
+treatment"*, *"set out in"*, *"is in §"*, *"see"* — **and read what it points at.** If the target was
+written to the old, narrower answer, the repair has just made the pointer a lie.
+
+⚠️ **And the reviewer named the limit of its own method on this: *"A unit that states the same
+restriction in plain words, naming no rule, would have passed me."*** **The grep found these only
+because the corpus happens to cite rule numbers consistently.**
 
 ## 🔴🔴 A NEW FAILURE SHAPE: **SOLE OWNER BY REFERENCE** — a claim whose owner is a DIFFERENT FILE
 

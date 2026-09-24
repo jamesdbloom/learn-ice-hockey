@@ -249,6 +249,54 @@ def scan(root):
 LIST_START = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
 
 
+DIST = pathlib.Path("site/dist")
+
+
+def bare_glyph_rows(dist=DIST):
+    """Yield (page, count) for warning glyphs the SITE gives NO visual treatment.
+
+    ⚠️⚠️ THIS EXISTS BECAUSE A `site-reviewer` SKIMMED FOUR PAGES AND SKATED PAST EVERY
+    ONE OF THESE WITHOUT EXCEPTION, then found them by DOM query afterwards. Measured
+    24 September 2026: 207 corpus-wide.
+
+    ⚠️ THERE ARE THREE RENDERING STATES, NOT TWO, AND THE WHOLE CALLOUT WAVE WAS PLANNED
+    ON A BINARY MODEL THAT WAS WRONG:
+
+      1. `aside.callout-warning` -- the amber PANEL. `--panels` counts these.
+      2. `span.warn-inline`      -- amber bold text, an amber left bar and a tint.
+                                    A marker moved onto a STRONG run gets this. It is
+                                    eye-stopping, and it is why moving a marker does not
+                                    cost a skimming reader the escalation.
+      3. NOTHING                 -- a small black glyph mid-sentence, often with no space
+                                    after it, reading as a typo rather than a warning.
+
+    ⚠️ STATE 3 IS WHAT THIS FUNCTION FINDS, AND IT IS THE DEFECT A MOVE-THE-MARKER WAVE
+    MANUFACTURES. `remark-corpus.mjs` needs a `<strong>` after the glyph to bound the
+    `.warn-inline` wrapper (see WARNING_TAIL_RE and the shape (c) pass). Marker moved in
+    front of PLAIN PROSE -> no wrapper -> no colour, no bar, no bold.
+
+    ⚠️⚠️ AND IT REPRODUCES THE OWNER'S ORIGINAL COMPLAINT IN A WORSE FORM. Before the
+    wave the mismatch was panel-vs-prose ACROSS paragraphs; a bare glyph is
+    amber-vs-black INSIDE ONE PARAGRAPH, sometimes three lines apart.
+
+    ⚠️ IT READS THE BUILT HTML, because the plugin's shape rules are more than "is the
+    next thing bold" and a source-level guess would be a fourth wrong model. A stale or
+    missing `dist` is reported, never treated as a pass.
+    """
+    if not dist.exists():
+        return None
+    out = []
+    for page in sorted(dist.rglob("index.html")):
+        h = page.read_text(encoding="utf-8", errors="replace")
+        h = re.sub(r'<span class="[^"]*warn-inline[^"]*".*?</span>', "", h, flags=re.S)
+        h = re.sub(r'<aside class="callout callout-warning">.*?</aside>', "", h, flags=re.S)
+        n = len(re.findall(r"[\u26a0\u2757\U0001f6ab]", h))
+        if n:
+            out.append((str(page.parent.relative_to(dist)), n))
+    out.sort(key=lambda r: -r[1])
+    return out
+
+
 def panel_rows(root):
     """Yield (path, lineno, text) once per amber panel the SITE actually renders.
 
@@ -375,6 +423,10 @@ def main():
                     help="runs of consecutive flow-breaking callouts")
     ap.add_argument("--by-section", action="store_true",
                     help="group a document's flow-breaking callouts by the section holding them")
+    ap.add_argument("--bare", action="store_true",
+                    help="warning glyphs the SITE renders with NO visual treatment at "
+                         "all -- neither an amber panel nor an inline amber run. Reads "
+                         "site/dist, so BUILD FIRST.")
     ap.add_argument("--panels", action="store_true",
                     help="count paragraphs the SITE renders as amber panels, via the "
                          "plugin's own flattened-and-anchored test (not classify())")
@@ -401,6 +453,31 @@ def main():
         return 0
 
     fb = flow_breaking(rows)
+
+    if args.bare:
+        rows = bare_glyph_rows()
+        if rows is None:
+            print("check_callout_flow: site/dist not found -- build first, then re-run.")
+            print("   This check reads the BUILT HTML on purpose: the plugin's wrapper")
+            print("   rules are more than \"is the next thing bold\", and guessing from")
+            print("   source would be a fourth wrong model of the same thing.")
+            return 0
+        total = sum(n for _, n in rows)
+        print(f"check_callout_flow: {total} warning glyphs render with NO visual "
+              f"treatment, across {len(rows)} pages\n")
+        for pg, n in rows[:40]:
+            print(f"  bare {n:>4}  {pg}")
+        if len(rows) > 40:
+            print(f"\n  ... {len(rows) - 40} more pages NOT LISTED")
+        print("\n\u26a0\ufe0f  A bare glyph is a marker with NO panel and NO inline amber run.")
+        print("   A site-reviewer skimming four pages stopped on every amber mark and")
+        print("   SKATED PAST EVERY BARE ONE, finding them only by DOM query afterwards.")
+        print("   FIX: bold the clause that states the hazard, so the glyph precedes a")
+        print("   strong run and the plugin can bound an inline amber wrapper around it.")
+        print("   \u26a0\ufe0f  Bold the INSTRUCTION, never a citation -- the wrapper ends")
+        print("   where the strong run ends, so a bolded rule number takes the colour and")
+        print("   leaves the instruction after it black.\n")
+        return 0
 
     if args.panels:
         panelled = [(str(p), n, t) for p, n, t in panel_rows(args.root)
