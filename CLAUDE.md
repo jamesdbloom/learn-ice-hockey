@@ -1264,10 +1264,16 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     as recursive, and its only skip is a parent that is ALREADY a callout — a
                     blockquote is not, so the paragraph gets an amber aside nested inside a grey
                     blockquote. DOUBLE FURNITURE, which is worse than either.
-                    ⚠⚠ THE DIRECTION IS WHAT MATTERS: it reported ZERO panels for `goaltender.md`
-                    and the real figure was TWENTY-SIX, twelve in one section. AN AGENT BRIEFED OFF
-                    THAT WOULD HAVE READ "0" AS "CLEAN" — A SILENT FALSE PASS IN THE CORPUS'S DENSEST
-                    TARIFF AREA. The corpus-wide figure moved 270 → 331 on the fix.
+                    ⚠⚠ THE DIRECTION IS WHAT MATTERS: it reported ZERO panels for `goaltender.md`.
+                    AN AGENT BRIEFED OFF THAT WOULD HAVE READ "0" AS "CLEAN" — A SILENT FALSE PASS IN
+                    THE CORPUS'S DENSEST TARIFF AREA.
+                    ⚠️⚠️ NO FIGURE IS GIVEN FOR WHAT THE REAL COUNT WAS, AND THAT IS A CORRECTION.
+                    This passage said TWENTY-SIX, and "the corpus-wide figure moved 270 → 331 on the
+                    fix". BOTH WERE MEASURED BY A TOOL THAT WAS STILL WRONG — two further bugs were
+                    found later, so every figure in this paragraph's own history is superseded.
+                    ⚠️ A NUMBER MEASURED BY A BROKEN TOOL DOES NOT BECOME TRUE BY BEING WRITTEN DOWN,
+                    AND THIS PARAGRAPH CARRIED THREE SUCH NUMBERS WHILE DESCRIBING THE BUG THAT
+                    PRODUCED THEM. Run `--panels --file <path>`.
                     ⚠️⚠️ AND `--panels` WITHOUT `--file` TRUNCATES ITS LISTING AT 40 ENTRIES.
                     the `--panels` branch slices its listing — `for f, n, t in
                     panelled[:40]:` — a HARD SLICE. The header reports the whole figure; the listing
@@ -1290,10 +1296,11 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     the whole blockquote ONE aside and `:615` then skips its children. (2) It counted
                     indented CONTINUATION lines, which are part of the paragraph above and open no
                     panel. It also MISSED `> ### ⚠️` headings, the one under-counting limb.
-                    ⚠️ `--panels` NOW AGREES WITH `site/dist` ON EVERY FILE, NOT ONLY IN TOTAL — 358
-                    against 358, 39 files, zero mismatches. **VALIDATE IT THAT WAY AFTER ANY CHANGE
-                    TO IT**: a total can agree by cancellation, and this tool's history is three
-                    successive wrong answers that each looked plausible in aggregate.
+                    ⚠️ `--panels` NOW AGREES WITH `site/dist` ON EVERY FILE, NOT ONLY IN TOTAL —
+                    validated per file against the built HTML, zero mismatches. **VALIDATE IT THAT WAY
+                    AFTER ANY CHANGE TO IT, AND RUN IT FOR THE FIGURE**: a total can agree by
+                    cancellation, and this tool's history is three successive wrong answers that each
+                    looked plausible in aggregate.
                     ⚠️⚠️ THE LESSON IS NOT "THE TOOL IS NOW RIGHT." It is that EVERY figure this tool
                     produced was quoted into this file and into briefs as measured fact, three times,
                     and the built HTML — which was sitting in `site/dist` the whole time — was never

@@ -2348,3 +2348,87 @@ the paranoia the owner's standing rule names.**
   found; **the inverse shape needs a fresh reader of each whole document, and this round read diffs.**
 - **Whether a player hearing 704 characters of six-book scoping takes away *"clear it off the glass,
   not over it."*** Only a listener answers that, and none has.
+
+---
+
+## ✅ D4 PROVENANCE — CLOSED FOR CARHA, 24 September 2026, after five gates declared it open
+
+**Every gate this round named the same gap and none could close it.** The wording hardened each time
+— *"NOT DONE"*, *"the largest unexamined surface"*, *"naming it is not testing it"* — and the fifth
+gate put it plainly: *"Every CARHA claim in this commit rests on one 2020 extraction that has never
+been rendered with `pdftoppm` and never refetched. Two of four gates this round blocked on a CARHA
+limb."*
+
+⚠️ **It stayed open because it was always the LAST thing on a list that never ended**, and because it
+is the one check no reviewing agent can do from inside its own brief: it needs the network and the
+`sources/` directory, which only the coordinator holds.
+
+### What was tested, and what each result rules out
+
+| Check | Result | What it rules out |
+|---|---|---|
+| Refetch from the publisher URL | **1,008,517 bytes — BYTE-IDENTICAL to the link baseline** | The file at that address changing under us |
+| `pdfinfo` | **99 pages** | A truncated download (the `pwhl_rules` failure mode, which happened silently) |
+| Per-page `pdftotext` census | **No page whose RULE TEXT is image-only.** ⚠️ Pages 92-93 ARE image-only diagram pages (equipment measurements); their figures do not extract. **The limits they depict are in the rule text** — Rule 21 `:983`ff, Rule 23 `:1057`ff | **A rule hidden from every grep.** ⚠️ **NOT** "no image-only page" — see the correction below |
+| Fresh `pdftotext -layout` vs `sources/carha.txt` | **Byte-identical, 206,667; flattened-identical** | The extraction on disk having drifted from its source |
+| Spot-check of the limbs this round turned on | 52(b) both limbs, 48(a), 55(a), 53(a), 66(e) — **present in both** | A specific rule lost in extraction |
+
+✅ **So the corpus's CARHA basis is sound: the book is unchanged, nothing in it is ungreppable, and
+the text on disk is what the PDF says.**
+
+### ⚠️ The honest limit, stated because the whole point of this check was to stop declaring
+
+**Byte-identity proves the file at THAT URL has not moved since the baseline. It does NOT prove CARHA
+has published no newer edition elsewhere.** ⚠️ **And the PDF's own `CreationDate` is 18 December 2024
+(Ghostscript) for a book whose title page says PRINTED 2020** — a re-processing date, not an edition
+date, and exactly the trap recorded for `pwhl_rules.txt`, where eleven pages carry the prior season's
+running header. **Take the edition from the title page.**
+
+⚠️ **This closes D4 for CARHA only.** No other source was refetched, and no `source-verifier` has run
+this round.
+
+### ⚠️⚠️ AND THE FIRST DRAFT OF THIS SECTION COMMITTED THE EXACT FAILURE IT CLAIMED TO RULE OUT
+
+**It said *"ZERO image-only pages"* and *"there is nothing in this book that a grep cannot reach"*,
+and cited the census as ruling out *"the `crt6.txt` failure mode"*.** ⚠️ **Both sentences were false,
+and a gate caught them by READING THREE PAGES rather than running anything.**
+
+⚠️⚠️ **THE METHOD WAS THE DEFECT: a 40-character floor cannot distinguish a text page from a
+FURNITURE-ONLY page — which IS the `crt6.txt` mode**, where 1,535 bytes of BMJ page furniture made
+`pdffonts` look reassuring while `grep -ci helmet` returned 0. **The census was measuring the wrong
+thing and reporting it as the right thing.** Measured properly with `-layout`, the median is **2,196
+chars/page** and three pages fall under 300: page 1 (the title page) and **pages 92-93, equipment
+diagram pages whose captions extract and whose figures are images.**
+
+✅ **The conclusion survives for RULES** — the limits those figures depict are stated in text at
+**Rule 21** (`carha.txt:983`ff) and **Rule 23** (`:1057`ff, the 11-inch pad width at `:1096`) — **so
+no rule is lost.** ⚠️ **But the claim as written was true by luck, not by method**, and it sat in
+`sources/README.md`, **the routing document every agent is ordered to read before concluding anything
+about a source.**
+
+⚠️⚠️ **DIRECTION: PERMISSIVE. It told the next agent that a zero from a grep over `carha.txt` is a
+fact about the book** — contradicting this section's own headline lesson **three paragraphs below
+it.** ⚠️ **A page-yield floor is evidence about EXTRACTION, not about COVERAGE**, and nothing in this
+repository can see a furniture-only page. **That is why the `crt6` mode keeps recurring, and why the
+next one will not be caught by a threshold either.**
+
+### ⚠️⚠️ AND THE CHECK ITSELF PRODUCED A FALSE NEGATIVE — the fourth distinct shape
+
+The first comparison pass reported **two rule fragments absent from BOTH files**, which would have read
+as a missing rule in a book this round leaned on completely. **It was the checker's own bug: the
+haystack was case-folded and the needles were not.**
+
+⚠️ **A case-sensitive needle against a case-folded haystack is a false zero that looks exactly like a
+missing rule.** Added to the three already recorded:
+
+| Shape | Signature | Remedy |
+|---|---|---|
+| **newline** | phrase wraps | flatten |
+| **hyphenation** | a WORD splits | flatten |
+| **page furniture** | text INSERTED into the phrase | search fragments, check order |
+| **case mismatch** *(new)* | needle and haystack folded differently | fold BOTH, and prove the pipeline on a control phrase |
+
+⚠️⚠️ **THE COMMON LESSON ACROSS ALL FOUR: A ZERO IS A CLAIM ABOUT YOUR SEARCH BEFORE IT IS A CLAIM
+ABOUT THE BOOK.** ⚠️ **Run a control phrase you KNOW is present through the same pipeline before
+believing any zero** — `sources/README.md` already records that discipline for the form-feed splice,
+and it would have caught this in one line.
