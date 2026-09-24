@@ -23,7 +23,7 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 |---|---|---|
 | `iihf_rules.txt` | IIHF Official Rule Book 2025/26 **v1.1, July 2025** — the edition Britain adopts ⚠️ **The on-disk file is NOT yet from this URL.** It is the repaired rbihf.be mirror extraction (MD5 `b8bc551a…`); the publisher-original `-layout` extraction is a **different file** — 662,701 bytes against 663,692. **Running `fetch_sources.sh` replaces it and shifts every `iihf_rules.txt:NNNN` citation in `project/`.** Do that deliberately, not as a side effect of a `--force` run. | [blob.iihf.com, publisher-original](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/3_the_iihf/2025-26_iihf_rulebook_22122025-v1.pdf) (see below) |
 | `iihf_rules_v1.0.txt` | IIHF Official Rule Book 2025/26 v1.0, May 2025 — superseded, kept for comparison | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf) |
-| `iihf_rules_2026-27.txt` | ⚠️ **IIHF Official Rulebook 2026/27, Version 1.0, June 2026 — THE CURRENT BOOK, and the corpus does not yet describe it.** Obtained 29 August 2026; clean `pdftotext -layout`, 0 mojibake. **The corpus's IIHF layer is 2025/26 across 13 documents.** Rules 76.6 and 76.7 have been checked and **changed substantively** (see the note below); **the rest of the book has not been read.** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/rule%20book/2026-27_iihf_rule_book.pdf) |
+| `iihf_rules_2026-27.txt` | ⚠️ **IIHF Official Rulebook 2026/27, Version 1.0, June 2026 — THE CURRENT BOOK, and the corpus does not yet describe it.** Obtained 29 August 2026; clean `pdftotext -layout`, 0 mojibake. **The corpus's IIHF layer is 2025/26 across 13 documents.** Rules 76.6 and 76.7 have been checked and **changed substantively** (see the note below); **the rest of the book has not been read — with ONE SECTION NOW CLOSED, below.** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/rule%20book/2026-27_iihf_rule_book.pdf) |
 | `iihf_situations_2026-27.txt` | IIHF Situation Handbook 2026/27, Version 1.0, June 2026. Obtained 29 August 2026; clean extraction, 0 mojibake. **⚠️ **NO LONGER TRUE — corrected 2 September 2026.** A full situation-by-situation diff against v1.1 has now been run (**638 situations in v1.1, 644 in 2026/27**; 637 common, **513 byte-identical**, 55 substantively different), and **five documents already quote this edition accurately** — `goaltender.md` (new Situation 10.26), `uk_rules.md` and `body_contact_and_battles.md` (new 60.13), `rules_primer.md` (the 81.20→81.21 and 82.6→82.7 renumberings, both already flagged in-text), and `faceoffs.md` (new 81.18, and the warn⇒eject change at **fifteen situations across five rules**, a count independently re-parsed and confirmed). ⚠️ **The staleness ran the OTHER way: this note said the edition was unread while the corpus was already citing it correctly.**** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2026-27_iihf_situation_handbook.pdf) |
 | `iihf_situations_v1.1.txt` | IIHF Situation Handbook 2025/26 **v1.1, August 2025 — the current edition OF THE 2025/26 BOOK (the 2026/27 Handbook is the row above), and the one the corpus cites.** Obtained 29 August 2026 from the URL below; self-declares *"Version 1.1, August 2025"* at lines 9 and 8941. Clean `pdftotext -layout` extraction: **0 mojibake, 0 ligatures**. | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2025_iihf_situationhandbook_17082025-v1_1.pdf) |
 | `iihf_situations.txt` | IIHF Situation Handbook 2025/26 **v1.0, June 2025 — superseded, kept for comparison.** ⚠️ **This file came from the URL beside it, which now serves v1.1.** The publisher replaced the document behind an unchanged link: the filename said `v1_1` in July 2026 and served v1.0; in August 2026 the same URL serves v1.1. See the edition note below — four rulings changed, and one reversed. | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2025_iihf_situationhandbook_17082025-v1_1.pdf) (now serves v1.1) |
@@ -90,6 +90,51 @@ the count depends entirely on the normalisation — a third method gives 153/110
 ⚠️ **Do not go back to the mirror.** It is a Ghostscript re-distillation whose
 broken `fi`/`fl` ToUnicode map is what makes the ligature repair below
 necessary.
+
+### ✅ IIHF SECTION 11 — RULE 101.1, *ILLEGAL HIT IN WOMEN'S HOCKEY*: THE EDITION QUESTION IS CLOSED
+
+⚠️ **This section governs every women's-hockey claim in the corpus, and the corpus cites Rule 101.1 at
+176 sites across 22 documents.** It had no entry here, and the `2026-27` row's *"the rest of the book has
+not been read"* left it an open edition question for all of them.
+
+✅ **CLOSED, 24 September 2026, by two agents independently and by mechanical diff rather than by eye.**
+Each extracted `101.1.`→`101.2.` from every edition on disk (taking the BODY pass by `rindex`, not the
+ToC), flattened to alphanumerics and diffed:
+
+- **`iihf_rules_2026-27.txt:7591` · `iihf_rules_v1.1.txt:7491` · `iihf_rules_v1.0.txt:7499` ·
+  `iihf_rules.txt:7491`**
+- **All four are 1,449 characters.** The three 2025/26 files are byte-identical. **The only difference in
+  the 2026/27 text is the running footer** — edition string `2025/26`→`2026/27` and page `155`→`156`.
+
+**So no women's-hockey claim in this corpus turns on which IIHF edition a reader holds.**
+
+**Two facts about the rule worth recording here, because both have already misled a brief:**
+1. **Its scope is *"In Women's Hockey"* and NOTHING MORE** — no age, championship or category limb. Rule
+   100.1 above it defines Senior and U18 by World Championship eligibility, but **101.1 is not scoped to
+   them.**
+2. ⚠️⚠️ **ITS BOARDS / PINNING LIMB EXISTS IN NO OTHER BOOK, THE PWHL INCLUDED.** Flattened across all
+   six: `usetheboards`, `pinher`, `pushherintotheboards`, `eliminateherfromtheplay` each score **1 in the
+   IIHF and 0 everywhere else**, and **PWHL 41.1 Boarding requires *"violently or dangerously"***, which
+   no low-speed pin reaches. **PWHL Rule 52.1 is otherwise a near-copy of 101.1 and runs FURTHER — 52.4
+   is a match tier the IIHF lacks.** ⚠️ **That negative was reached by sweeping the PWHL for the IIHF's
+   OWN WORDING, which is this file's recorded failure shape. PWHL 57.1 Interference and its holding rule
+   have NOT been read against the act.**
+
+⚠️ **AND TWO PERMISSIVE LIMBS THAT A BRIEF ALREADY GOT BACKWARDS:** *"they are reasonably allowed to
+**push and lean into each other**"* in a puck race, and *"A Player, who is stationary, is entitled to
+that area of the ice. It is up to the **opponent** to avoid body contact."* **A document telling a woman
+she may not lean or hold her ground would be WRONG under this rule.**
+
+⚠️⚠️ **AND CARHA 49(a) CONTRADICTS IT HEAD-ON** — *"…and/or **does not avert body contact with an
+opponent**"* (`carha.txt:2452-2456`), a DUTY TO AVERT, scoped to nobody by sex, age or division, with a
+major there an ejection under 30(a). **A reader carrying *"hold your ground, they must avoid you"* into a
+CARHA league is wrong in the direction that gets him ejected.**
+
+⚠️ **The British overlay is in `eiha_inhouse_2026-27.txt` (which has its own row, line 35 — an agent
+briefed *"the README has no entry"* would skip the file that answers half the question).** It replaces
+IIHF 100.1's categories — *"Adult: From the player's 14th birthday onward"* — and Rule 101 ejects on any
+major *"in all cases"*. ⚠️ **That bites hardest where a book writes a BARE major: IIHF 57.3 is one, and
+Appendix IV Table 5 also ticks MAJOR ONLY for boarding, charging, elbowing and the unwilling combatant.**
 
 ⚠️ **AND THE FILE ON DISK AT `sources/iihf_rules_v1.1.pdf` IS THAT MIRROR, NOT THE
 PUBLISHER-ORIGINAL DESCRIBED ABOVE.** Verified 1 September 2026: it is **3,928,725
