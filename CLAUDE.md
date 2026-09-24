@@ -952,6 +952,16 @@ The short form:
    TWO agents to use the same directory."*** **Give every concurrent agent its own NAMED `--out`
    subdirectory in the brief.**
 
+   ⚠️⚠️ **AND A BOUNDED-QUANTIFIER `grep -oE` OVER UTF-8 TEXT FAILS ON macOS AND EXITS 2.**
+   `grep -oE ".{0,700}pattern.{0,700}"` against corpus markdown or de-tagged SSML returns
+   **`ugrep: error: ... exceeds complexity limits`** — because macOS `grep` is **ugrep**, and a
+   bounded quantifier over multibyte characters blows its DFA. ⚠️ **It EXITS 2, so a pipeline that
+   only checks for output sees an empty result and reads it as "no matches".** **Hit twice on
+   23 September 2026 — once by the coordinator mid-census, once by an agent trying to read a
+   rendered chunk — and neither recognised it as a tool failure at first.** **Use a Python slice to
+   read context windows, never a bounded-quantifier grep.** **Same family as the `timeout` and nvm
+   false passes below: the command fails and the absence of output looks like a clean result.**
+
    ⚠️ **`timeout` DOES NOT EXIST ON macOS.** `timeout N cmd` exits **127**, and wrapped in `$(…)`
    yields an **empty string that greps as 0** — an agent's first corpus census came back all-zeros
    and looked clean. Same species as the nvm shims above.
@@ -1002,6 +1012,21 @@ any commit that touches a claim:
   `safety-reviewer`
 - propagation done
 - a review record written to `project/reviews/`
+
+⚠️⚠️ **THE REVIEW RECORD IS WRITTEN LAST, AFTER THE FINAL `content/` EDIT — IT IS ORDERED LIKE
+`check_counts.py --update`, AND FOR THE SAME REASON.** ⚠️ **Measured on 24 September 2026: one round's
+record stopped before the text that shipped THREE TIMES, and three successive gates caught it by
+comparing mtimes.** The record even diagnosed the mechanism against itself — *"a record is written when
+a wave ENDS, and a blocking gate always starts another wave after it"* — **and then did it twice more
+after writing that sentence.**
+
+⚠️ **So this is not a diligence problem and another warning will not fix it; three already existed.
+It is ORDERING.** A blocking gate always starts another wave, so **any record written before the gate
+clears is a record of the wrong round, by construction.** **Write the findings into
+[`project/plans/OPEN_ITEMS.md`](project/plans/OPEN_ITEMS.md) as they land — that is what the plan is
+for — and move them into a review record only once the gate is CLEAR and no content file will change
+again.** ⚠️ **`ls -l` the record against the newest `content/` file before staging; if any content file
+is newer, the record does not cover the commit.**
 - `commit-gate` run on the staged diff, and clear
 
 `.claude/hooks/git-guard.sh` enforces the mechanical half — it blocks secrets,
@@ -1140,6 +1165,19 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     judgement call. ⚠️ It CANNOT see attribution drift — it keeps the closest match
                     across ALL sources, so a sentence credited to the NHL but carrying the IIHF's
                     wording scores clean — and it cannot see a quotation whose source is not on disk.
+                    ⚠️⚠️ AND IT IS NOT A NET FOR THE TRUNCATED QUOTATION, WHICH IS THE DEFECT CLASS IT
+                    LOOKS MOST LIKE IT COVERS. Measured 24 September 2026 on two instances of the SAME
+                    shape — a quotation cut at a clause boundary and closed with a terminal period
+                    INSIDE the quote marks, where the source sentence continues. It FLAGGED
+                    `goaltender.md:1090` (`ADDED '.'`) and was BLIND to `shooting.md:472`. Because it
+                    matches on alphanumerics and keeps the CLOSEST match, a truncation simply scores as
+                    a clean SHORTER quotation; it reports `ADDED '.'` only when the continuation happens
+                    to fall inside the matched span. ⚠️ A COORDINATOR BRIEFED "the tool CAN see this one"
+                    AND THE AGENT MEASURED OTHERWISE. The `shooting.md:472` instance was a mandatory
+                    ejection understated in the permissive direction, and it survived a wave that
+                    repaired three other sites in the same file. ⚠️ ONLY READING THE SOURCE SENTENCE
+                    PAST THE QUOTATION'S CLOSING MARK FINDS THIS. A clean `check_quote_drift` run is not
+                    evidence that a quotation is complete — only that the characters inside it are real.
                     check_facts_antecedents.py — ` ```facts ` lines that POINT AT SOMETHING A
                     LISTENER HAS NOT HEARD. ⚠️ Every facts line is voiced ALONE, in its own <p>
                     with a 300 ms break either side, so a line referring to the line above it
@@ -1230,6 +1268,54 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     and the real figure was TWENTY-SIX, twelve in one section. AN AGENT BRIEFED OFF
                     THAT WOULD HAVE READ "0" AS "CLEAN" — A SILENT FALSE PASS IN THE CORPUS'S DENSEST
                     TARIFF AREA. The corpus-wide figure moved 270 → 331 on the fix.
+                    ⚠️⚠️ AND `--panels` WITHOUT `--file` TRUNCATES ITS LISTING AT 40 ENTRIES.
+                    the `--panels` branch slices its listing — `for f, n, t in
+                    panelled[:40]:` — a HARD SLICE. The header reports the whole figure; the listing
+                    shows 40 of them, in PATH ORDER. So
+                    `--panels | grep <file>` is a FALSE NEGATIVE for any document past the cut:
+                    A DOCUMENT PAST THE CUT SCORES ZERO IN A CORPUS-WIDE
+                    LISTING WHATEVER ITS REAL FIGURE. USE `--file` FOR A PER-FILE FIGURE, ALWAYS.
+                    ⚠️⚠️ AND NO PER-DOCUMENT HIT COUNT IS WRITTEN HERE, BECAUSE THE ONE THAT WAS
+                    HERE WAS FALSE WHEN IT SHIPPED. This sentence carried "`rules_primer` scores 20
+                    hits"; a commit gate re-derived it against the FIXED tool and got 16. The 20 was
+                    measured on the PRE-FIX tool, whose listing composition the fix changed — so the
+                    figure went stale the moment the thing it described was repaired, inside the
+                    paragraph warning that this tool's figures go stale. THE LISTING IS A FUNCTION OF
+                    THE TOOL AND THE CORPUS, AND BOTH MOVE. Run it.
+                    ⚠️⚠️ AND THE FIGURE THIS PASSAGE ORIGINALLY GAVE FOR `goaltender` — "really has
+                    14" — WAS ITSELF WRONG, BECAUSE `--panels` WAS STILL WRONG WHEN IT WAS WRITTEN.
+                    Two further errors were found on 24 September 2026 and BOTH OVER-REPORTED, which
+                    is why neither was noticed: an over-count reads as thoroughness. (1) It counted
+                    one panel per `⚠️` PARAGRAPH inside a blockquote; `remark-corpus.mjs:567` makes
+                    the whole blockquote ONE aside and `:615` then skips its children. (2) It counted
+                    indented CONTINUATION lines, which are part of the paragraph above and open no
+                    panel. It also MISSED `> ### ⚠️` headings, the one under-counting limb.
+                    ⚠️ `--panels` NOW AGREES WITH `site/dist` ON EVERY FILE, NOT ONLY IN TOTAL — 358
+                    against 358, 39 files, zero mismatches. **VALIDATE IT THAT WAY AFTER ANY CHANGE
+                    TO IT**: a total can agree by cancellation, and this tool's history is three
+                    successive wrong answers that each looked plausible in aggregate.
+                    ⚠️⚠️ THE LESSON IS NOT "THE TOOL IS NOW RIGHT." It is that EVERY figure this tool
+                    produced was quoted into this file and into briefs as measured fact, three times,
+                    and the built HTML — which was sitting in `site/dist` the whole time — was never
+                    the thing it was checked against. A TOOL THAT CLAIMS TO MIRROR ANOTHER FILE MUST
+                    BE DIFFED AGAINST THAT FILE'S OUTPUT, NOT AGAINST ITS SOURCE READ BY EYE.
+                    ⚠️⚠️ NO LINE NUMBER IS CITED FOR THAT SLICE ANY MORE, AND THE REASON IS THIS
+                    PASSAGE'S OWN HISTORY. It said `check_callout_flow.py:288`; the real line is 414,
+                    AND IT WAS THIS VERY COMMIT'S OWN +140-LINE EDIT TO THAT SCRIPT THAT MOVED IT.
+                    The passage that carries "A LINE NUMBER IS A FIGURE" was not updated with the
+                    change it was describing. ⚠️ A LINE NUMBER IN A FILE YOU ARE EDITING IS STALE
+                    BEFORE THE COMMIT LANDS — name the IDENTIFIER, which moves with the code.
+                    ⚠️ It also said "all 331 panels" while a line nineteen rows below, in the same
+                    passage, said 358 — the paragraph contradicted itself. NO PANEL FIGURE IS WRITTEN
+                    HERE; run the tool.
+                    ⚠️⚠️ THIS PASSAGE FIRST SAID THE LISTING WAS EMPTY — "prints its header and NO
+                    LISTING AT ALL" — AND THAT WAS THE COORDINATOR'S OWN GREP PATTERN FAILING, NOT THE
+                    TOOL. It grepped `^\s+content/` where the format is `^  panel  content/…`, got
+                    zero, and wrote the zero into this file in bold as measured fact. A commit gate
+                    reproduced the real behaviour and blocked on it. ⚠️ THE CORRECTED WARNING IS
+                    MATERIALLY DIFFERENT FROM THE FALSE ONE: "no listing" tells an agent the output is
+                    useless and it never greps; "sliced at 40" tells it to grep AND check whether its
+                    file fell past the cut.
                     ⚠️ AND IT WAS FOUND BY READING `remark-corpus.mjs`, NOT THIS TOOL: the docstring
                     claimed to mirror the plugin "exactly" and had done since it was written.
                     A COMMENT ASSERTING FIDELITY TO ANOTHER FILE IS NOT FIDELITY TO IT.

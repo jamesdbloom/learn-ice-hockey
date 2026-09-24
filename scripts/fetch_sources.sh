@@ -174,12 +174,22 @@ DOCS=(
   # only "For all rules not mentioned in the EIHL Casebook". So an EIHL claim sourced to
   # the IIHF book alone is unsafe until this file has been checked for that rule.
   #
-  # ⚠️ THREE VERSION STAMPS DISAGREE AND NOBODY HAS RESOLVED THEM:
+  # ⚠️ THREE VERSION STAMPS DISAGREE — AND THEY WERE RESOLVED ON 23 September 2026:
   #      link text / version table  -> "Version 1.1 080926"
   #      PDF Title metadata         -> "[PUBLIC] EIHL Casebook 26 - 27 Version 1.0 080926"
   #      all 27 page footers        -> "SECTION D VERSION 1.0 010826"
-  #    Do not treat any one as authoritative. If the footers are right, a superseded
-  #    Section D is what is on disk.
+  #    ✅ THE FRONT-MATTER VERSION TABLE SETTLES IT, and it settles it in the corpus's
+  #    favour: it names 1.1 080926 as REPLACING 1.0 010826, "Valid From 09/26 - 07/27".
+  #    So the FOOTERS ARE STALE BOILERPLATE and the Title metadata is a typo. The file
+  #    on disk is the current one. This entry previously said "if the footers are right,
+  #    a superseded Section D is what is on disk" — that worry is closed.
+  # ✅ REFETCHED 23 September 2026: HTTP 200, no redirect, SHA-256 BYTE-IDENTICAL to
+  #    sources/eihl_casebook.pdf (690,498 bytes), and fresh pdftotext output byte-identical
+  #    to both extractions. The League's page says "Last updated: 08.09.26" and carries
+  #    exactly ONE document link — there is no Version 1.2.
+  # ⚠️ THE IRREDUCIBLE LIMIT REMAINS: the Preamble says in-season interpretations go out
+  #    "by email, on the EIHL web site and in print". The website carries nothing newer;
+  #    an EMAIL-ONLY bulletin to clubs is invisible to every check available here.
   "eihl_casebook|https://www.eliteleague.co.uk/casebook|https://www.eliteleague.co.uk/document/191-eihl-casebook-26-27-version-1-1-080926"
 )
 

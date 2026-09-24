@@ -223,7 +223,29 @@ is the owner of that claim; do not restate a section list here, because a list g
 pointer does not.** ⚠️ **IT IS NOW IN `sources/`, AND REGISTERED — 22 September 2026.** `eihl_casebook.pdf`,
 `eihl_casebook.txt` and `eihl_casebook_layout.txt`, with an entry in `scripts/fetch_sources.sh`
 and `eihl_casebook` added to `DUAL_EXTRACT`. **Text:PDF ratio 6.70%** — a healthy text layer, so it
-greps honestly and needs no positional read. ⚠️⚠️ **THIS ENTRY CARRIED A FALSE MEASUREMENT FOR A FEW HOURS ON 22 SEPTEMBER 2026 AND IT IS
+greps honestly and needs no positional read. ✅ **REFETCHED AND RE-VERIFIED 23 September 2026 — CURRENT,
+and the three-version-stamp worry is CLOSED.** Both cited URLs served HTTP 200 with no redirect; the
+document is **SHA-256 byte-identical** to the copy on disk (690,498 bytes) and fresh `pdftotext` and
+`pdftotext -layout` output is **byte-identical to both extractions**. The League's page reads
+*"Last updated: 08.09.26"* and carries **exactly one** document link — **there is no Version 1.2.**
+✅ **The front-matter VERSION TABLE resolves the stamps, in the corpus's favour:** it names
+**1.1 080926 as REPLACING 1.0 010826**, *Valid From* **09/26–07/27**. **So the 27 page footers
+(`SECTION D VERSION 1.0 010826`) are stale boilerplate and the PDF `Title` metadata is a typo — the
+file on disk is the current Section D.** ⚠️ **This entry and `scripts/fetch_sources.sh` both used to
+say "if the footers are right, a superseded Section D is what is on disk." That was the corpus being
+LESS CONFIDENT THAN THE EVIDENCE SUPPORTS — a direction non-negotiable 4 does not protect against.**
+✅ **Six claim families re-verified against the FRESH extraction and all hold:** Rule 64's plain minor
+(the whole section greps **zero** for `10`, `misconduct`, `2 plus` outside the footer), the **absence
+of any Rule 76** (headings jump **69 → 77**, and a sweep for the ACT — `facingoff`, `dropthepuck`,
+`stickblade`, `sticksonice`, `winthedraw`, `encroach` — scores **0** for each, with all five
+`face-off` hits non-procedural), the Preamble routing unmentioned rules to the **2026-27** IIHF book,
+Rules **37/38** keeping video review and the Coach's Challenge, the Rule **69** addition and its three
+criteria, and Rules **9.5/9.12**. ⚠️ **IRREDUCIBLE LIMIT: the Preamble says in-season interpretations
+go out *"by email, on the EIHL web site and in print"*. The site carries nothing newer; an
+EMAIL-ONLY bulletin to clubs is invisible to every check available here.** ⚠️ **And a SECOND instance
+of this book's numbering defect was found: its contents list prints Rule 42 TWICE, for Charging and
+for Elbowing** — alongside the 46.2 duplication already recorded. **A faithfully quoted book can still
+be internally wrong.** ⚠️⚠️ **THIS ENTRY CARRIED A FALSE MEASUREMENT FOR A FEW HOURS ON 22 SEPTEMBER 2026 AND IT IS
 RETRACTED HERE.** It said Rule 86.6's warm-up provisions *"line-wrap in the plain extraction"* so
 that a grep for *"Any violations of game rules that occur during the warmup"* returned **ZERO**
 there. ⚠️ **It returns 1 in BOTH files.** Flattened to alphanumerics both extractions are **36,090

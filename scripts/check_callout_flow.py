@@ -42,11 +42,26 @@ agent refuted it on its own output:
 `⚠️ **What to notice.**` puts the spoken escalation on the word "What". Moving it onto
 the hazard repairs that rather than hiding it.
 
-⚠️⚠️ BUT MOVE 2 DOES NOT WORK INSIDE A BLOCKQUOTE, and its count benefit HAS AN
-EXPIRY DATE. Two limits an agent measured and neither is obvious:
-  (a) `classify()` tests ">" BEFORE the marker case, and `scan()` yields any line holding
-      a marker -- so inside a blockquote the choice is BINARY: marked (counted, speaks
-      "Important.") or unmarked (uncounted, silent). Position does not help there.
+⚠️⚠️ MOVE 2's COUNT BENEFIT HAS AN EXPIRY DATE. Two limits an agent measured and
+neither is obvious:
+  (a) ⚠️ THIS LIMIT IS ABOUT THE DEFAULT COUNT ONLY, AND AN EARLIER VERSION OF THIS LINE
+      OVERSTATED IT AS "MOVE 2 DOES NOT WORK INSIDE A BLOCKQUOTE". IT DOES WORK -- ON THE
+      SITE. `classify()` tests ">" BEFORE the marker case, and `scan()` yields any line
+      holding a marker, so for the DEFAULT census the choice inside a blockquote is binary:
+      marked (counted, speaks "Important.") or unmarked (uncounted, silent), and position
+      does not help. ⚠️⚠️ BUT `renders_as_panel()` STRIPS THE BLOCKQUOTE PREFIX and
+      `remark-corpus.mjs:615` visits paragraphs RECURSIVELY, so a marker moved off a
+      blockquote paragraph's opening DOES take it from amber panel to prose. Measured
+      23 September 2026 on `positions/goaltender.md`: four blockquote paragraphs
+      (`:413`, `:559`, `:579`, `:850`) went panel -> prose, part of a fourteen-panel
+      reduction with the spoken "Important." count unchanged at 142.
+      ⚠️ THE ENDPOINTS OF THAT WAVE WERE FIRST WRITTEN HERE AS "14 -> 0" AND BOTH WERE
+      WRONG; ONLY THE DELTA WAS RIGHT. Measured with this tool once it agreed with
+      `site/dist`: `goaltender.md` went 19 -> 5 and the corpus went 372 -> 358. The five
+      survivors are all list items. A DELTA STATED AS A PAIR OF LEVELS IS TWO CLAIMS, AND
+      NEITHER HAD BEEN MEASURED.
+      ⚠️ INSIDE A BLOCKQUOTE, MOVE 2 IS WHAT REMOVES THE AMBER-NESTED-IN-GREY DOUBLE
+      FURNITURE. Judge it with `--panels --file <path>`, never with the default count.
   (b) In PROSE, move 2's count benefit was produced by the `startswith(("-","*"))` bug
       fixed above -- the `**Opener.**` paragraph dropped out because it was misfiled.
       NOW THAT THE BUG IS FIXED, EVERY MOVE-2 REPAIR REAPPEARS IN THIS CENSUS. The AUDIO
@@ -123,6 +138,38 @@ def flattened(stripped):
 
 BLOCKQUOTE_PREFIX = re.compile(r"^\s*(?:>\s*)+")
 
+# A list marker is STRUCTURE, not text: `toText(node)` never sees it, because the
+# marker belongs to the listItem and the warning lives in the paragraph inside it.
+# Requires the space, so `**bold` is emphasis and `*item ` is a bullet.
+LIST_PREFIX = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
+
+# A heading marker is structure too: `toText()` on a `### ⚠️ …` heading yields the
+# text without the hashes, so the site types the block a warning and the tool must.
+# Measured in `equipment.md:90` -- `> ### ⚠️ If you play in Britain` is a warning
+# callout on the built page and scored False here until this was added.
+HEADING_PREFIX = re.compile(r"^\s*#{1,6}\s+")
+
+
+def strip_structure(stripped):
+    """Remove the block structure the site's `toText()` never sees.
+
+    Blockquote markers and list markers, repeatedly and in either order, because
+    they nest: `> - text` and `- > text` both reach a paragraph node whose text
+    begins at `text`.
+
+    ⚠️ RAW FIRST, FLATTEN AFTER, AND THE ORDER IS LOAD-BEARING. A paragraph opening
+    `**- ⚠️` is emphasis followed by a LITERAL hyphen; the site's `toText()` yields
+    `- ⚠️ ...`, which the anchored regex correctly rejects. Stripping list markers
+    from the FLATTENED text would turn that non-panel into a panel.
+    """
+    prev = None
+    while prev != stripped:
+        prev = stripped
+        stripped = BLOCKQUOTE_PREFIX.sub("", stripped)
+        stripped = LIST_PREFIX.sub("", stripped)
+        stripped = HEADING_PREFIX.sub("", stripped)
+    return stripped
+
 
 def renders_as_panel(stripped):
     """True when the site wraps this paragraph in `<aside class="callout callout-warning">`.
@@ -152,7 +199,7 @@ def renders_as_panel(stripped):
     return bool(
         re.match(
             r"^\s*(\u26a0|\u2757|\U0001f6ab)",
-            flattened(BLOCKQUOTE_PREFIX.sub("", stripped)),
+            flattened(strip_structure(stripped)),
         )
     )
 
@@ -197,6 +244,84 @@ def scan(root):
             s = line.strip()
             in_summary = section.startswith(SUMMARY)
             yield p, n, section, classify(s), in_summary, s
+
+
+LIST_START = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
+
+
+def panel_rows(root):
+    """Yield (path, lineno, text) once per amber panel the SITE actually renders.
+
+    ⚠️⚠️ THIS IS BLOCK-AWARE AND `scan()` IS NOT, AND THAT DIFFERENCE IS THE POINT.
+    `scan()` yields one row per marker-bearing LINE. The site renders one aside per
+    BLOCK. Two corrections are needed to get from one to the other, and each was
+    measured against the built HTML rather than reasoned about:
+
+    1. ⚠️ ONE ASIDE PER BLOCKQUOTE, NOT PER PARAGRAPH INSIDE IT.
+       `remark-corpus.mjs:567` reclassifies every remaining blockquote as a callout
+       and types it `warning` if ANY child warns; the paragraph pass at `:615` then
+       skips any paragraph whose parent is already a callout. A blockquote holding
+       four `⚠️` paragraphs is ONE amber aside.
+
+    2. ⚠️ ONLY THE FIRST LINE OF A PARAGRAPH CAN OPEN A PANEL. `WARNING_RE` is
+       anchored to the start of the paragraph's TEXT, and an indented continuation
+       line is part of the paragraph above it, not a new one. Measured in
+       `rules_primer.md:128-129`: two `⚠️`-opening lines indented under the list item
+       at `:127`. They are lazy continuations, the paragraph's text begins *"A player
+       coming out of the penalty box"*, and the site renders NO panel for either.
+
+    ⚠️ MEASURED 23 September 2026, corpus-wide, against `site/dist`: counting per
+    marker line gave 384 panels; adding (1) gave 361; adding (2) gave the built
+    figure. ⚠️ BOTH ERRORS OVER-REPORTED, WHICH IS HOW THEY SURVIVED -- an over-count
+    reads as thoroughness. The UNDER-count that preceded them (no blockquote strip,
+    no list strip) read as cleanliness and produced a false pass on `goaltender.md`.
+
+    ⚠️ FENCED BLOCKS ARE NOT PARAGRAPHS. A `⚠️` inside a ` ```facts ` block is code,
+    never an aside.
+
+    ⚠️ IT AGREES WITH `site/dist` FILE BY FILE, NOT ONLY IN TOTAL -- a total can agree
+    by cancellation. Re-check it that way after any change here.
+    """
+    for p in sorted(pathlib.Path(root).rglob("*.md")):
+        lines = p.read_text(encoding="utf-8").split("\n")
+        fenced = False
+        prev_blank = True
+        quote_emitted = False
+        for n, line in enumerate(lines, 1):
+            stripped = line.strip()
+
+            if stripped.startswith("```"):
+                fenced = not fenced
+                prev_blank, quote_emitted = True, False
+                continue
+            if fenced:
+                continue
+
+            blank = not stripped
+            in_quote = stripped.startswith(">")
+            # A `>` on its own is a blank line INSIDE the quote: it ends the
+            # paragraph but not the blockquote.
+            quote_blank = in_quote and not BLOCKQUOTE_PREFIX.sub("", stripped).strip()
+
+            if not in_quote:
+                quote_emitted = False
+
+            # A paragraph opens after a blank line, after a heading, or wherever a
+            # new list item begins.
+            opens = (prev_blank or blank or quote_blank
+                     or stripped.startswith("#")
+                     or bool(LIST_START.match(BLOCKQUOTE_PREFIX.sub("", stripped))))
+
+            if (MARKER in line and opens and not blank
+                    and renders_as_panel(stripped)):
+                if in_quote:
+                    if not quote_emitted:
+                        quote_emitted = True
+                        yield p, n, stripped
+                else:
+                    yield p, n, stripped
+
+            prev_blank = blank or quote_blank or stripped.startswith("#")
 
 
 def flow_breaking(rows):
@@ -278,7 +403,8 @@ def main():
     fb = flow_breaking(rows)
 
     if args.panels:
-        panelled = [(str(p), n, t) for p, n, _, _, _, t in rows if renders_as_panel(t)]
+        panelled = [(str(p), n, t) for p, n, t in panel_rows(args.root)
+                    if not args.file or args.file in str(p)]
         print(f"check_callout_flow: {len(panelled)} paragraphs render as amber panels "
               f"of {len(rows)} marker-bearing lines\n")
         print("\u26a0\ufe0f  This is the SITE's test (remark-corpus.mjs WARNING_RE over the")
