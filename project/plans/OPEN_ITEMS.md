@@ -22,6 +22,769 @@ they did not need to.**
 done?"* took three files, and **two podcast items listed as open had been fixed days earlier** with
 nobody noticing.
 
+## 🔴🔴🔴 CRITICAL, 24 September 2026 — "608(b) IS A BOARDS RULE" IS FALSE, AND IT SURVIVED ITS OWN REPAIR
+
+**A `safety-reviewer` dispatched ONLY because a commit gate blocked on C6 upheld the repair it was
+sent to check — and then found the identical defect still standing in a summary layer.**
+
+### The claim, and it is a CLAIM not a line
+
+**USA Hockey 608(b) has TWO limbs joined by "or", and the first carries NO board condition.**
+`usah.txt:3722-3731`: *"A major penalty plus game misconduct penalty **shall be assessed** to any
+player who **recklessly endangers an opponent, or** causes them to go head first into the boards or
+goal frame."* 608's own Note: *"This includes body checking or pushing an opponent from behind **in
+open ice**…"*. 608(c)'s match penalty turns on reckless endangerment of a vulnerable opponent, **not
+on board contact.**
+
+⚠️⚠️ **AND THE CASEBOOK SETTLES IT IN TERMS** — `usah_casebook.txt:11772-11774`, Rule 608
+Situation 1: the major-plus-game-misconduct-or-match applies *"in every instance where the player
+recklessly endangers the opponent from a check from behind, **regardless of whether or not board
+contact is made**."*
+
+### Where it was, and what it cost
+
+**`playing_without_the_puck.md:890`, Common Mistakes.** It dropped the reckless-endangerment limb and
+filed 608(c) under *"near the boards"*. **A backchecker learns that finishing into a back in OPEN ICE
+tops out at the minor-plus-misconduct rung — the tier that leaves him on the ice.**
+
+⚠️⚠️ **THE COST WAS MEASURED, NOT INFERRED.** The reviewer rendered the document: **chunk 085 is the
+whole bullet, and the correct open-ice limb is not in that chunk anywhere.** The next thing a listener
+hears is an unrelated bullet about 2-1-2 forechecks.
+
+⚠️ **LAYERS: body ✓ · facts ✓ (just repaired) · Common Mistakes ✗ · Key Takeaway ✓.** **The repair
+reached the facts block and STOPPED** — round 10's shape, in a file whose facts line had just been
+fixed for the SAME narrowing.
+
+### ⚠️⚠️ THE PROCESS LESSON, AND IT IS THE WHOLE JUSTIFICATION FOR C6
+
+**The gate blocked because the repair was self-certified by its own author.** The brief that followed
+said *"review the SECTION, not the line"* — **and the Critical was in the section, not the line.**
+✅ **This is the second time that exact sequence has paid: on 23 September a C6 block produced a
+reviewer that upheld an edit and then found two majors the edit had left standing nearby.**
+⚠️ **A repair may not self-certify, and the adjacent text is where the defect is.**
+
+### Also found, and repaired in the same pass
+- **`:20` Key focus** — the boards-scoped model survives **by omission**: the only geography it gives
+  is the Casebook's *"danger zone"*. ⚠️ **It is the layer a reader and the podcast meet FIRST**, and
+  the only one of four that never says the offence reaches anywhere on the ice.
+- **`:733`** — CARHA 53(a)'s mandatory injury escalation is absent while Hockey Canada's identical
+  limb IS stated, so the asymmetry reads as CARHA lacking one. `carha.txt:2575-2582`: *"If a player is
+  injured, a Major penalty plus a Game Misconduct penalty **must be assessed**."* ⚠️ Conservative
+  direction, hence Minor. CARHA's unused Note is the strongest sentence in the rule: *"Referees are
+  instructed not to substitute other penalties… This rule must be strictly enforced."*
+
+### ✅ What the reviewer UPHELD, re-derived rather than taken on trust
+The `:723` repair is **correct and better than what it replaced**, at 299/300 chars. The sibling
+`:722` five-book tally is accurate. Every NHL/IIHF/HC/CARHA/Casebook quotation checked was verbatim.
+⚠️ **It also swept all 42 books for the ACT rather than the label, and all eight British books return
+zero — so no British competition regulation amends Rule 43 here.** And it asked what OTHER rule each
+book uses to reach the act: **none raises the ceiling above the match penalty already cited, and the
+IIHF has no match penalty anywhere in its book** (`match penalt` returns 0 in both editions).
+
+### 🔴 OPEN — the claim was only chased inside ONE file
+⚠️ **The reviewer proved the boards-scoped frame absent-or-present in `playing_without_the_puck.md`
+only.** It names `body_contact_and_battles.md` §6 and `defending_the_rush.md` as carrying from-behind
+material and says plainly it did not layer-test them. **Check both for the same frame.**
+
+## ✅ THE CREASE-LINE CORRECTION REACHED EVERY LAYER BUT THE BUILD PRODUCT
+
+**`rink_map.md:359` said the red boundary line counts as crease *"under the IIHF, USA Hockey and
+Hockey Canada, and the NHL never says either way."*** ⚠️ **Two defects:** CARHA was missing
+(`carha.txt:273-274`, Glossary *Creases*: *"The lines which designate these areas are to be considered
+as part of the creases"*), and **"the NHL never says either way" is a FALSE negative-existence claim**
+— `nhl_rules.txt:12296` **Reference Table 14 row E**: an attacker who *"plants himself on the crease
+line or outside the goal crease… **Goal is allowed**."* ⚠️ **The document refuted itself 394 lines
+later in its own KT15.**
+
+### ⚠️⚠️ AND THE SURVIVING COPY WAS THE ONE NO GREP CAN SEE — A DIAGRAM CAPTION
+After the prose repair, the agent checked **every** layer rather than the two it was sent to:
+**chunks 001 (Key focus), 029 (body), 045 (Common Mistakes) and 053 (Key Takeaways) all already
+carried the corrected version.** ⚠️ **The caption was the SOLE surviving stale copy** — and its text
+lives in `site/src/diagrams/`, **a build product, which is exactly the layer a `content/` grep cannot
+reach.**
+
+⚠️⚠️ **AND THE LISTENER COST WAS MEASURED:** the caption is spoken into `rink_map.md` as **chunk
+012** and the corrected prose is **chunk 029** — **a listener heard the false version SEVENTEEN
+CHUNKS BEFORE the correction.**
+
+✅ **One caption, TWO hosts** (`rink_map.md:182`, `rules_primer.md:685`), so one edit repaired both.
+✅ **`check_caption_hosts.py` confirms there is no third host.** ✅ **In `rules_primer.md` the caption
+is the ONLY place the question is answered at all** — that host's crease section defers geometry and
+moves to Rule 69.1 — **so standing alone was mandatory there.**
+
+✅ **Build order obeyed and verified, not assumed:** `build-diagrams.mjs` ran BEFORE `check_absolutes`,
+and the agent **loaded `site/src/data/diagrams.json` and printed the caption** rather than trusting an
+exit code.
+
+### ⚠️ A NEAR-MISS THE AGENT DECLARED AGAINST ITSELF
+It almost carried the PWHL limb across from the repaired host sentence **without checking it**.
+**It verified instead** — `pwhl_rules.txt:863` carries the NHL's silent wording and `:10885` the same
+table row, feminised (*"plants **herself** on the crease line… Goal is allowed"*) — **and it holds.**
+⚠️ **Its own words: *"had that been wrong, my caption would have propagated it into a second
+document."*** **That is a coordinator writing replacement text, one level down.**
+
+### 🔴 OPEN — the trapezoid caption, same shape, wider blast radius
+`site/src/diagrams/rink_map_and_glossary.mjs` — *"USA Hockey and Hockey Canada mark no trapezoid, but
+both still stop the goaltender at the centre red line."* ⚠️ **Names four books, omits CARHA and the
+PWHL.** It states **no count**, so it is **not false as written** — but it is the four-book frame in a
+directory holding 42, **in a caption voiced alone**. ⚠️⚠️ **AND IT HAS THREE HOSTS:**
+`how_to_watch_hockey.md:433`, `rink_map.md:249`, `rules_primer.md:748` — plus a related
+`dump-and-the-trapezoid` in `forechecking_systems.md:775`. **A `rules-verifier` should settle what
+CARHA and the PWHL do with the trapezoid before anyone edits it.**
+
+### 🔴 OPEN — a restatement-count pattern, reported not asserted
+**`rules_primer.md` carries *"Three of the four books"* at FIVE spoken chunks — 008, 013, 037, 119,
+269.** Each names the fourth book explicitly and each looks locally sound. ⚠️ **Chunks 008 and 269 are
+the SAME checking-from-behind claim in two layers** — the restatement-count risk, not a proportion
+one. **Reported as a pattern; nobody has read all five together.**
+
+## 🔴 THE SPIN-O-RAMA CHAIN — one Critical became eight sites, two claims and a new search trap
+
+**A `content-reviewer` found the corpus stating that the spin-o-rama is not permitted on a penalty
+shot. Hockey Canada EXPRESSLY LEGALISES IT.**
+
+### The six-book position, established from primary text for the first time
+
+| Book | position |
+|---|---|
+| NHL `nhl_rules.txt:3057` · IIHF `iihf_rules.txt:2326` · PWHL `pwhl_rules.txt:2753` | *"shall not be permitted"* |
+| **Hockey Canada `hc.txt:3444`** | **LEGAL** — Note 1 to Interp 5, Rule 4.11(b): *"this will be considered legal, if the puck continues its overall motion towards the opponent's goal line"* |
+| USA Hockey `usah.txt:2646` · CARHA `carha.txt:1622` | **no provision either way** |
+
+### ⚠️⚠️ A NEW FALSE-NEGATIVE SHAPE: A TYPOGRAPHIC VARIANT
+**The PWHL spells it `spin–o–rama` with EN DASHES.** A hyphen search returns **0** in
+`pwhl_rules.txt`. ⚠️ **Had anyone repaired from that zero, *"PWHL unverified"* would have become
+*"PWHL silent"* — wrong in the PERMISSIVE direction.** **This joins the newline, hyphenation,
+page-furniture and case traps: sweep for the ACT in several wordings and several TYPOGRAPHIES.**
+
+### ⚠️ IT WAS EIGHT SITES ACROSS THREE FILES, AND A DIFF REVIEW COULD NOT HAVE FOUND IT
+The reviewer found it only because a diff drew its eye to one Key Takeaway. **Its own verdict: *"a
+diff review finds the sentences that changed, not the sentences that are wrong."*** A corpus sweep
+then found **four more sites in two files nobody owned**, including `goaltender.md`'s ` ```facts `
+line **voiced alone**. ✅ **All eight now carry the Hockey Canada divergence; the sweep returns 0
+sites missing it.**
+
+### 🔴 A SECOND CLAIM RODE ALONG, FOUND BY READING PAST THE INTERPRETATION
+**Hockey Canada's Interpretation 6 permits the LACROSSE move on the SHOULDER-HEIGHT LIMB ALONE and
+writes NO CROSSBAR CONDITION.** The corpus stated the crossbar limb as universal. Restrictive
+direction, so not a safety defect — **but false**, and it was in a facts line voiced alone.
+
+### ⚠️⚠️ AND THE ROUND-10 SHAPE RECURRED INSIDE THE REPAIR ITSELF, TWICE
+1. The lacrosse fix reached the body and KT7 and **stopped at `shooting.md:686`** — a `Rule:` line
+   voiced alone, still reading *"is permitted"* flat. ⚠️ **Voiced alone that tells a USA Hockey reader
+   an act is allowed when their book is SILENT — the permissive direction.** Repaired to 295/300.
+2. **The repair of `:686` then left KT7 without the USA Hockey/CARHA silence limb**, while the
+   sentence **immediately before it in the SAME SPOKEN CHUNK** states that limb for the spin-o-rama.
+   **Declared by the fixer against its own work.**
+
+### ✅ AN ARGUMENT FROM SILENCE CONVERTED INTO DIRECT EVIDENCE
+Rather than re-checking IIHF Rule 42 for a match penalty, an agent asked what else the book uses:
+**`grep -ci match` returns 1 in the entire IIHF book, and it is *"match-fixing"* in the fair-play
+preamble** — reproduced independently in both editions. **The IIHF has no match penalty anywhere, for
+anything.** That is stronger than *"no match limb in Rule 42"*.
+
+### 🔴 OPEN — found in passing, none of it repaired
+- ⚠️ **THE BAN REACHES SHOOTOUTS, NOT JUST PENALTY SHOTS**, and the corpus says so nowhere.
+  `iihf_situations.txt:1882` (Situation 24.2): *"not a legal move during a Penalty Shot **or Shootout
+  attempt**"*; NHL `:4689` and IIHF `:3321` list it among shootout stoppage reasons. **A goaltender
+  faces shootouts.**
+- ⚠️ **USA Hockey's Casebook answers GOALKEEPER SUBSTITUTION on a penalty shot materially differently
+  from the NHL and IIHF** — Rule 406 Situations 4 and 5 let a team change goalkeepers and let the
+  original resume, *"the conclusion of the penalty shot constitutes the next stoppage of play."*
+  `shooting.md:867` states the NHL/IIHF rule and names only those two books. **Nothing false; the
+  divergence is unstated.**
+- ⚠️ **Hockey Canada's book on disk has NO shootout provision at all** (flattened `shootout` = 0), so
+  its clause was deliberately left unscoped rather than implying it prices a shootout it never
+  mentions. **Worth confirming that is the book and not the extraction.**
+### 🔴 A SAFETY DEFECT FOUND BY SWEEPING THE CLAIM, NOT THE LINE LIST — 24 September 2026
+
+**`goaltender.md:880` (body) said a high stick *"costs the shooter the goal and buys you the whistle
+— **it is not a penalty**."*** ⚠️⚠️ **FALSE under USA Hockey, in the PERMISSIVE direction.**
+
+- **Only CARHA 62(d) says it** — *"No penalty is assessed to the player."*
+- **USA Hockey 621(d) prescribes only a stoppage and a face-off and says nothing about a penalty.**
+- ⚠️ **And its Casebook contradicts the claim outright** — `usah_casebook.txt:13910-13925`, **Rule 621
+  Situation 2**: must contact occur for a high-sticking penalty? **"No"** — high sticking *"must be
+  called"* where a player *"raises their stick above their shoulders in an attempt to intimidate an
+  opponent or is careless in their actions."* **A careless high lacrosse attempt is reachable at
+  621(a).**
+
+⚠️⚠️ **THE JOINT ATTRIBUTION TURNED A SILENCE INTO A STATEMENT**, and the facts line at `:867` did it
+too. **Both repaired; the no-penalty limb is now CARHA's alone.**
+✅ **`shooting.md` was checked and is CLEAN** — it says only *"stop play for a puck above the
+shoulders"*, and `:927` correctly names 621(a) minor, 621(b) major, 621(c) match.
+
+### 🔴 AND A TRUNCATED QUOTATION `check_quote_drift` CANNOT SEE
+**`body_contact_and_battles.md:1711`, a ` ```facts ` line voiced alone**, read
+`619(b) adds "[a] match penalty for reckless endangerment"` — ⚠️ **the closing mark cut off BOTH the
+modal AND the object**, so voiced alone it says 619(b) **IS** a match penalty for head-butting.
+**Harsher-and-simpler overstatement plus a missing object, in one truncation.** ⚠️ **`check_quote_drift`
+scored it clean, because a truncation reads as a shorter quotation** — exactly as this file records.
+
+### ⚠️ THE SEARCH THAT FINDS THESE, AND THE ONE THAT DOES NOT
+⚠️⚠️ **`grep "may also be assessed"` on `usah.txt` returns ONE hit. `grep "match penalty for reckless
+endangerment"` returns SIXTEEN.** The book wraps the clause mid-phrase. **Prefer the longer, earlier
+fragment; flatten before trusting any count.** **And sweep `match penalty` + `60X(`, never the phrase
+"reckless endangerment" — an agent proved that is a true negative on the sites carrying no trigger
+words at all.**
+
+### 🔴 OPEN — fourteen of the sixteen rules are unswept outside two files
+**`603(c)` · `604(e)` · `609(c)` · `611(c)` · `620(c)` · `621(c)` · `623(c)` · `628(c)` · `634(c)` ·
+`635(b)`** are all live in this corpus. ⚠️ **Only `body_contact_and_battles.md` and `goaltender.md`
+have had the full claim sweep.** **`rules_primer.md`, `shooting.md` and the eight other files the
+earlier repair touched need the same treatment** — **sweep `match penalty` and `6XX(`, read 230
+characters after each.**
+
+## 🔴🔴 USA HOCKEY'S "HOUSE FORM" — a structural misreading, 15+ sites repaired and MORE STANDING
+
+**The book writes, in SIXTEEN rules:** *"A match penalty for reckless endangerment may also be
+assessed **for X**."*
+
+⚠️⚠️ **"For reckless endangerment" NAMES the penalty. The ACT it is assessed FOR follows the SECOND
+"for".** Reading the first "for" as the trigger makes the match penalty look **harder to reach than it
+is — the permissive direction.** Objects verified: 603(c) *"for boarding"* · 604(e) *"for body
+checking in a Competitive Contact category or non-check Adult classification"* · 606(b) *"for
+butt-ending"* · 607(e) *"for charging"* · 622(c) *"for grabbing or holding the facemask"* · 635(b)
+*"for spearing"* · 639(c) *"under this rule"* · 640(h) *"under sub-sections (b), (c), (d), (e) or (f)"*.
+
+### ⚠️⚠️ THE COUNT WAS WRONG IN MY BRIEFS — SIXTEEN, NOT THIRTEEN
+**Run `grep -c` on the flattened source.** ⚠️ **The coordinator briefed "thirteen rules" to several
+agents; a commit gate re-counted and got 16, and the coordinator confirmed it.** The gate's standard
+is the right one: ***"any record stating thirteen is a figure defect before it is written."***
+⚠️ **The figure never reached this plan — it lived ONLY in briefs, which is worse, because agents
+scoped their sweeps to it.**
+
+### 🔴🔴 AND THE REPAIR REACHED TEN FILES AND STOPPED *INSIDE* THEM
+⚠️⚠️ **`body_contact_and_battles.md` had `:601` and `:626` repaired in the same diff that left SIX
+more sites standing** — the document now contradicts itself across layers, and **three of the
+survivors are ` ```facts ` lines voiced alone:**
+
+| Site | Layer | Rule | Missing object | Headroom |
+|---|---|---|---|---|
+| `body_contact_and_battles.md:1196` | **facts, voiced alone** | 607(e) | *"for charging"* | 19 |
+| `body_contact_and_battles.md:1549` | **facts, voiced alone** | 639(c) | *"under this rule"* | 38 |
+| `goaltender.md:1174` | **facts, voiced alone** | 640(h) | *"under sub-sections (b)–(f)"* | **4 — substitute** |
+| `body_contact_and_battles.md:1496` | body | 606(b) | *"for butt-ending"* | — |
+| `body_contact_and_battles.md:1509` | body | 622(c) | *"for grabbing or holding the facemask"* | — |
+| `body_contact_and_battles.md:1755` | **Common Mistakes** | 607(e) | *"for charging"* | — |
+| `body_contact_and_battles.md:1868` | Sources trailer | 639(c) | *"under this rule"* | — |
+
+⚠️ **`:1196` ENDS on *"and 607(e) adds a match penalty option for reckless endangerment"*, twenty
+lines below prose that now says *"may also be assessed for charging"*.**
+
+⚠️⚠️ **THIS IS "BRIEF A CLAIM, NEVER A LINE", COMMITTED BY THE COORDINATOR, IN THE WAVE WHOSE WHOLE
+SUBJECT IS THAT RULE.** Every brief named line numbers. **The next one must name the CLAIM — "USA
+Hockey's match penalty for reckless endangerment, wherever it appears, in every layer" — and require
+a per-layer sweep of `match penalty` and `60X(`, NOT of the phrase "reckless endangerment"**, which an
+agent proved is a true negative on the sites that carry no trigger words at all.
+
+### ⚠️ Sites that LOOK like the defect and are CORRECT — do not "fix" them
+- **A verbatim quotation WITH its object.** The rule's own NAME contains *"for reckless
+  endangerment"*; a coordinator sweep flagged eight sites and **three were false positives.**
+- **`time_and_space.md:257` and `playing_without_the_puck.md:467`** cite **602(a)**, which genuinely
+  **is** the standalone reckless-endangerment rule tied to no named foul.
+- **The *"under the same sub-sections"* sites** — `goaltender.md:1540`, `breakouts.md:152`,
+  `forechecking_systems.md:580` — and the paraphrased-object sites, all verified intact.
+
+## ✅ CLOSED — AND THE RIGHT FRAMING IS "ONE MECHANISM", NOT "A DIVERGENCE"
+
+⚠️⚠️ **THE DECLARED GAP WAS REAL AND THE OLD WORDING WAS PERMISSIVE IN EFFECT.** *"USA Hockey and
+CARHA write no rule, so do not assume it"* told a reader **nothing governs the act**. In fact
+**USA Hockey 621(d)** and **CARHA 62(d)** both stop play for a puck played above the shoulders — an
+**ordinary playing rule that applies on a penalty shot as anywhere else.** Repaired at all three
+`shooting.md` sites and both `goaltender.md` sites (one a facts line voiced alone).
+
+✅ **AND AN AGENT FOUND THE FRAMING NOBODY HAD, BY FOLLOWING A CROSS-REFERENCE NOBODY BRIEFED:**
+**NHL 24.2 ends *"See also 80.1"* and IIHF 24.2 ends *"➔ Rule 80.1 – High-sticking the Puck."***
+
+> ***"So all six books route the height cap through their high-stick rule — the NHL and IIHF by
+> cross-reference, USA Hockey and CARHA by application. That makes the repair a COMPLETION OF ONE
+> MECHANISM rather than a divergence."***
+
+⚠️ **What USA Hockey and CARHA genuinely lack is (a) a crossbar-on-release condition and (b) a
+penalty-shot-specific procedure.** ⚠️ **And CARHA says *"No penalty is assessed to the player"* — two
+agents independently caught themselves writing *"bar"* or *"a penalty"*. Play stops and the goal dies;
+that is not a penalty.**
+
+### 🔴 STILL OPEN after the closure — declared by the fixers
+- ⚠️ **Nobody layer-tested `goaltender.md`'s Common Mistakes, Key Takeaways or Overview** for a
+  sentence written when the answer was *"permitted in every book that writes about it."* ⚠️ **And
+  `grep -i lacrosse` returns only the repaired lines — which is exactly the negative that stops a
+  search: a takeaway saying *"the only limit is the crossbar"* would not contain the word.**
+- ⚠️ **The British books were not swept for a high-stick or lacrosse amendment.** *"All six books"* is
+  the wrong frame for a British reader if an EIHL or IHUK In-House deletion reaches it — the
+  geographic-scope-versus-competition-regulation collision.
+- 🔴 **THE EARLIER DECLARED GAP, now closed, and the one the fixer left:** the *"USA Hockey and CARHA write no rule"*
+  negative is a **TRUE negative on the label and the act's wordings — the kind that stops a search.**
+  ⚠️ **The NHL and IIHF do NOT price the lacrosse move only in Rule 24 — NHL 80.1 carries it too**
+  (*"If this is done by a player on a penalty shot or shootout attempt, the shot shall be stopped"*).
+  **So the penalty-shot rule is not the whole answer in those books. Nobody has asked whether USA
+  Hockey's or CARHA's high-sticking rule reaches a cradling shooter.** **If it does, three repaired
+  sites are half-answers.** **Under test now.**
+
+## ✅ P1 — `faceoffs.md` and `uk_rules.md`, and a LAYER TEST THAT SAYS *DO NOT DEMOTE*
+
+### ✅ The defect was ABSENCE again — a whole section had no kernel at all
+**`faceoffs.md`'s `## Special Teams Faceoffs` section had NO Key Takeaway**, and it holds some of the
+document's best tactics. A new KT15 now carries them: *the zone entry you avoid is worth more than the
+draw you win* · win it or do not lose it **cleanly** · *"killing, you are not trying to create — you
+are trying to end the possession"* · best draw man on the PK · the shorthanded-icing conversion with
+both carve-outs.
+
+### 🔴🔴 THE LAYER TEST SAID **DO NOT DEMOTE**, AND THIS IS THE FINDING WORTH KEEPING
+`faceoffs.md` KT2 is **2,303 chars** and is the obvious cut. ⚠️⚠️ **Its closing disclosure — *"The
+2026/27 book has been read only in part"* — appears at EXACTLY ONE SITE IN THE ENTIRE DOCUMENT: Key
+Takeaway 2.** The body does not carry it, and the edition note that does carry the surrounding
+material sits in the **Sources trailer, which has no heading and is NOT VOICED to a listener.**
+
+⚠️ **Demoting KT2 would delete this document's ONLY SPOKEN statement of its own IIHF edition scope —
+non-negotiable 4.** ✅ **The concrete next row: land the disclosure in the body FIRST; only then is
+KT2 demotable.**
+
+### ⚠️ AND THE RATIO DID NOT MOVE — reported as a non-result rather than dressed up
+**`faceoffs` KT went 89% → 90%.** The agent's reasoning, and it is right: `check_tactics_ratio`
+**counts form**, and the new special-teams takeaway is overwhelmingly tactical prose that happens to
+carry Rules 76.2, 612(b), 624(a), 81.6, 624(b)(1), 20.3 and 68.2 — **so it scores 100% rules-bearing.
+Stripping those citations to move the number is exactly the failure this project guards against.**
+⚠️ **It also declined to claim the ratio is fine:** *"`faceoffs.md` is not a rules document the way
+`uk_rules.md` is, so the 'a rules document scoring high is correct' defence does not obviously cover
+it. I declined to cut, which is a different thing from having established that the ratio is fine."*
+
+### ✅ Three defects it caught in its OWN new text
+1. **A dot-choice permission naming three books** — voiced alone, a Hockey Canada or CARHA reader
+   learns nothing about their own book. Rewritten to *"depends on your book… so check yours."*
+2. **A pointer to a heading that does not exist in that form** — the real heading continues past what
+   it quoted.
+3. ⚠️⚠️ **IT NEARLY SHIPPED THE GEOGRAPHIC-SCOPE-ON-A-COMPETITION-RULE DEFECT** — its first draft said
+   overtime is *"not universal **here**"* (here = Britain). **The In-House Rules do not reach the
+   Elite League.** Rewritten to *"not universal in the competitions the In-House Rules reach."*
+
+### ✅ Verified against primary source
+**"Put the WHOLE blade down" is safe in all five books, not a British-only instruction** —
+`carha.txt:2701` *"the **full blade** of their sticks flat on the ice"*; `hc.txt:4573` *"the **toe** of
+the blade"*; IIHF 76.7(IV) *"at least the toe"*. **No book caps blade placement, so the whole blade
+satisfies every one.** ✅ This also confirms KT10's existing attribution of *"full blade"* to **CARHA
+rather than Hockey Canada** is correct — the two books genuinely differ and are one line apart.
+
+### 🔴 OPEN — two unreached EIHL scope questions in `uk_rules.md`
+- **Overtime**: `§Overtime is not universal` and KT9 are scoped entirely by In-House Rule 84
+  (NIHL / SNL / BUIHA Varsity) and say nothing about the Elite League, **which those rules never
+  name.** The edit asserts nothing either way, **but a British reader in the EIHL gets no answer.**
+- **Medical cover**: KT10 says *"In England and Wales, clubs must provide a first aider"* — that is
+  **England Ice Hockey's** regulation. ⚠️ **Whether EIHL clubs are bound by EIH's Rules & Regulations
+  is established nowhere in the document.** Not false; unreached, and in the scope-collision family.
+
+### ⚠️ DECLINED, with reasons — `uk_rules.md` KT6
+*"Adults are not safe either"*. Its instruction sits mid-bullet, **but promoting it risks collapsing
+IIHF 20.4's MANDATORY twenty-infraction table and its DISCRETIONARY five-infraction table into one
+tier.** **That needs a `rules-verifier`, not a re-order.**
+
+## ✅ THE FIX WAVE — every Critical and Major repaired, and the agents improved on the sketches
+
+**Three fixers, disjoint files.** ⚠️ **My brief's line numbers were 1–7 lines off in one file; the
+agent repaired BY STRING MATCH and said so.** **Brief a claim, never a line — again.**
+
+### ✅ `body_contact_and_battles.md:1234` + `:1757` — the em-dash parse, fixed in ONE edit
+Semicolon-separated list; the Hockey Canada item stands alone with its own board-and-frame limb.
+⚠️ **The agent improved on the sketch twice:** it added *"which does carry one"* so the contrast
+between the books is **stated** rather than inferred, and it **restored Hockey Canada's board/frame
+condition into the quotation at `:1234`**, which the staged text had cut to a bare fragment — **so
+both layers now match word for word, which is what makes a future correction reach both.**
+**Rendered chunks 147 and 237 confirmed: the Hockey Canada item now speaks as its own list element.**
+
+### ✅ `switching_positions.md:487` — condition restored, AND THE OWNER VERIFIED
+*"…three of the five books count it, **and the other two only while it touches neither your opponent
+nor their stick**."* ⚠️ **Nobody had ever re-verified `winger.md:509`. It HOLDS**, against all five
+primaries: `nhl_rules.txt` 76.7(ii) and `iihf_rules_2026-27.txt` 76.7(II) conditional; `usah_casebook`
+Situation 8 to 613 (*"This includes all sticks and all skates"*), `hc.txt` 6.2(a) and `carha.txt`
+57(a) unconditional. ✅ **Hockey Canada and CARHA state it a SECOND time in their glossary
+Encroachment definitions** — corroboration, not correction.
+
+### ✅ `forechecking_systems.md` KT7 — CARHA's mandatory ejection and the KHL disclosure both restored
+⚠️ **The agent widened my sketch:** I wrote *"in a CARHA league"*; it wrote **"CARHA-affiliated adult
+league"**, carrying HEAD's own scope rather than a narrower paraphrase. The pointer is restored and
+its anchor resolves. **KT7 is chunk 107 and now carries the CARHA limb, the KHL disclosure and the
+pointer in one spoken unit.**
+
+### ✅ `defensive_zone_coverage.md` — the two conventions-as-law, fixed
+⚠️⚠️ **THE AGENT REFUSED MY WORDING ON THE CENTRE FLY AND WAS RIGHT.** My sketch put the exception in
+an em-dash aside and left the bare link text *"(Breakouts)"* — a markdown link with no sentence around it — as **a dangling spoken noun** — the exact
+punctuation failure the same brief warned about. ⚠️ **It also found what my brief did not say: the
+owner claim at `breakouts.md:593` is a `Convention:` FACTS LINE, therefore voiced alone**, and echoed
+its wording deliberately. ✅ `dzc` KT6's *"consensus rather than a count"* disclosure is **byte-for-byte
+intact.**
+
+### ✅ FALSE POSITIVE RESOLVED — `equipment.md:127`'s flagged neck-guard quotation is COMPLETE
+`check_quote_drift` flagged `ADDED '.'` on *"…regardless of being 18+."* ⚠️ **The source bullet ENDS
+there** — `ihuk_junior_roc.txt` continues with a **separate** bullet (*"Players 18 or older are not
+permitted to consume alcohol"*). **The tool saw `18+.` followed by `•` in flattened text and read a
+run-on. The quotation is right.** ⚠️ **Worth knowing generally: a bullet delimiter in a flattened
+source produces a false `ADDED '.'`.**
+
+### 🔴 OPEN — declared by the fixers against their own work
+- **A truncated USA Hockey quotation survives at both `:1234` and `:1757`** — the source continues
+  *"…as a result of checking from behind."* ⚠️ **Carried forward from HEAD, not introduced**, and the
+  framing clause supplies the omitted limb — **but `check_quote_drift` is blind to it by construction,
+  and a future editor rewriting that framing clause would strip the compensation invisibly.**
+- **`:1234` does not mention USA Hockey 608(c)** (match penalty, vulnerable opponent), which sits
+  directly below the quoted clause in the source. **The CARHA-52(b)-shaped true-negative risk, uncleared.**
+- **`switching_positions.md` KT6 is 2,492 chars — the largest takeaway measured in the corpus**, 1.5×
+  `center.md`'s worst. **Not staged, untouched, still open.**
+- **Nobody swept CARHA for every rule pricing contact with a goaltender** — 52(b) and 66 were checked
+  because a brief named them.
+
+## 🔴🔴🔴 THE C11 BLOCK PAID: TWO CRITICALS IN SELF-CERTIFIED P1 TEXT, 24 September 2026
+
+**A commit gate blocked because six documents had claim-bearing text moved, merged and reordered and
+the agents that wrote it were the agents that cleared it.** A `safety-reviewer` dispatched on that
+block found **two Criticals and three Majors.** ⚠️ **Every one would have shipped.**
+
+### 🔴 CRITICAL — A REPAIR NARROWED AN UNCONDITIONAL PROHIBITION, IN THE PERMISSIVE DIRECTION
+
+`center.md:792`, **Key Takeaway 8, voiced alone.**
+
+| | text |
+|---|---|
+| HEAD | *"So go and get the rebound, **without leaning on the goaltender**."* |
+| staged | *"go and get it **without leaning on a goaltender who already has the puck**"* |
+
+⚠️⚠️ **THE STAGED SENTENCE LICENSES LEANING ON A GOALTENDER WHO DOES NOT HAVE THE PUCK. No book
+writes that permission.** `carha.txt` **66(b)** is flat — *"deliberate contact with a goalkeeper
+**whether in or out of the goal crease**"*, **no possession condition**. `hc.txt` **8.5(a)
+Interpretation 1** disallows the goal *"regardless of whether the contact occurs inside or outside of
+the goal crease"*. NHL/IIHF **69.3**'s give-ground duty triggers on the goalkeeper **establishing
+position**, not on possession.
+
+⚠️⚠️ **THE MECHANISM IS THE ONE NOBODY WAS WATCHING: A QUALIFIER THAT CHANGED JOBS.** The clause came
+from body `:456` — *"do not read 69.7 as room to lean on a goaltender who already has the puck"* —
+where it correctly limits **the 69.7 carve-out**. **Lifted into the takeaway it became the
+INSTRUCTION, and its antecedent stayed behind.**
+
+> ***"This is precisely the 'which layer was written assuming the old wording' shape — except
+> inverted: the new layer inherited a clause whose antecedent it left behind."***
+
+⚠️ **The reviewer found it only because *"who already has the puck"* is an unusual string it could
+trace back.** Its own words: **"a demoted limb that left no lexical trace would have passed me."**
+
+### 🔴 CRITICAL — THE 608(b) REPAIR INTRODUCED A PARSE DEFECT THAT MIS-ATTRIBUTES A TARIFF
+
+`body_contact_and_battles.md:1234` (Critical) and `:1757` (Major). **An em-dash aside opened and never
+closed swallows the next list item**, so a listener hears the **USA Hockey** reckless-endangerment
+limb priced at a **Hockey Canada match penalty**, and *"where they are"* loses its antecedent.
+**Confirmed in rendered chunks 147 and 237.** ⚠️ **Both facts are individually correct and verbatim —
+the defect is the PARSE**, in the harsher direction, and it made the sentence **less readable than
+HEAD**, against the standing rule the wave was serving. ⚠️ **`:1757` partially recovers via *"for the
+same hit"*; `:1234` does not.** **One claim, two layers, one file — a document grep cannot tell them
+apart.**
+
+### 🔴 MAJORS
+- **`center.md:792`** — the **CARHA match route was dropped** and *"a match penalty above it in every
+  one of those books but the IIHF's"* attaches *"those books"* to the three just named, **so Hockey
+  Canada's match penalty vanishes.** The carrier at `:441` intends all five. **Understates a ceiling.**
+- **`forechecking_systems.md` KT7** — *"the only permission any book here writes… is USA Hockey's,
+  **and it is narrower than it looks**"*. HEAD carried the condition. ⚠️ **Voiced alone, a 12U or
+  non-check adult reader hears that USA Hockey permits deliberate engagement with a goaltender.**
+  ✅ Three live carriers, so a demotion rather than a sole-carrier loss.
+
+### ✅ AND IT REFUTED THE GATE'S OWN FINDING — *"USA Hockey alone counts your stick as you"* IS TRUE
+The gate called it an unscoped exclusivity stronger than its carrier. **The reviewer checked all five
+books and upheld it:** USA Hockey **625(b)** reaches an attacker who *"stands, holds their stick, or
+skates through the goal crease"*; **CARHA 66(b)** and **Hockey Canada** key the bar to **standing**;
+**NHL/IIHF 69** has no stick-position bar. ⚠️ **`:429`'s *"on your body alone"* is a DIFFERENT
+sentence, not a weaker one.** **Weakening it would have damaged a true claim.**
+
+### ✅ Upheld after primary-text checking
+`shooting.md` KT6's CARHA 52(b) — **both limbs present**, mandatory correctly distinguished from
+discretionary · KT4's carve-out list, including that **Hockey Canada writes the OPPOSITE** via
+Interpretation 1 to 9.5(a) · KT7's EIHL five shooters (`eihl_casebook.txt` 84.4) ·
+`forechecking_systems.md` KT2's reorder · **`zone_entries.md` and `defensive_zone_coverage.md` are
+purely additive — no tier, scope, hedge or safety limb removed. Their re-aiming is sound.** ·
+`switching_positions.md`'s neck-protector bullet keeps every British scope.
+
+### ⚠️ DECLARED NOT REACHED — and this is the next wave's scope
+> ***"`goaltender.md` has the largest diff in this commit (42 lines) and I did not open it.
+> `rules_primer.md` (28 lines) likewise. If either touched a penalty tier, nobody in this wave has
+> read it."***
+
+## ✅ P1 BACK LAYERS — `center.md` and `defensive_zone_coverage.md`, and the defect was ABSENCE
+
+| layer | center | defensive_zone_coverage |
+|---|---|---|
+| Common Mistakes | 82% → 82% | **82% → 76%** |
+| Key Takeaways | **77% → 76%** | **72% → 70%** |
+| CM→KT echo | 9.6% → 9.4% | 8.4% → 8.1% |
+
+**Spoken `"Important."` per paragraph: 47 → 47 and 28 → 28**, with `center`'s per-chunk multiset
+**byte-identical**. `--panels` 0→0 and 4→4; `--bare` unmoved.
+
+### ⚠️ THE DEFECT IN `dzc` WAS ABSENCE, NOT EXCESS — the half of the question a cutting report skips
+**Six Common Mistakes bullets named a mistake and its cost and NEVER SAID WHAT TO DO INSTEAD.** Each
+gained an instruction traceable to the document's own body or facts blocks, **nothing was removed, and
+the rules-bearing word count is byte-identical at 20,360** — the ratio fell because tactical words
+were ADDED. ⚠️ **KT6 told the reader nothing to do at all**; it now carries the two things that are
+the player's job under man coverage, **with its "consensus rather than a count" disclosure kept
+verbatim** (non-negotiable 4).
+
+### ✅ `center.md` KT8 WAS A FOURTH RESTATEMENT — 2,688 chars cut to a 1,846-char kernel
+**Demotion was preceded by a per-limb LAYER TEST, not a grep**, confirming **every limb has at least
+two other carriers** across body / ` ```facts ` / Common Mistakes. The kernel leads with an
+instruction in every clause and keeps the tariff behind it.
+
+### 🔴🔴 SIX DEFECTS THE AGENT FOUND IN ITS OWN REPLACEMENT TEXT AND REPAIRED BEFORE REPORTING
+**Two are the exact failure modes its brief warned about, committed by it and caught by it:**
+1. **A flat *"every book"* claim** — *"it risks ejection in every book"*, inherited phrasing.
+   `ls sources/*.txt` holds 42; the document reads five. **Fixed to *"every one of the five books read
+   here."***
+2. **A dropped CARHA limb** — its first kernel had 52(b) as automatic *"with the goalkeeper in their
+   crease"* only; `carha.txt:2559-2562` adds *"**or who injures an opponent as a result of a charge**"*.
+   **Both limbs shipped.**
+3. **An EIHL overstatement in the permissive direction** — it wrote *"without leaning on a goaltender"*
+   where the EIHL Casebook is flat (*"Contact in the blue paint area calls for disallowing a goal"*),
+   so *"don't lean"* is not that league's instruction. **Fixed to *"without touching the goaltender at
+   all"*.**
+4. **It nearly dropped the match-penalty tier** as "the body carries it" — **the permissive direction
+   in a layer voiced alone.** Kept and scoped: *"a match penalty above it in every one of those books
+   but the IIHF's."*
+5. A contrast it wrote itself that made the IIHF look like it was on one side when it is **the book
+   that contradicts itself.** Rewritten explicitly.
+6. **`dzc` CM 734 taught the WRONG TRIGGER** — it wrote *"let a man who is skating away from the puck
+   go"*, but the body's failure case is a man skating **into the corner, toward the puck**, who never
+   intended to get it.
+
+⚠️⚠️ **THIS IS WHAT "RE-READ YOUR OWN REPLACEMENT TEXT AGAINST THE TEXT IT SUMMARISES" BUYS.** Every
+one would have passed every mechanical gate.
+
+### 🔴 OPEN, declared by the agent
+- **`check_pointers.py` has not been run on `center.md`** — KT8's kernel now points at a body section,
+  and **a listener cannot follow a pointer at all.**
+- **The INVERSE layer test was not done on `center.md`**: *"which layer was written assuming KT8's old
+  length?"* — `## Check yourself` was read only for its ratio, not for questions whose answers lived in
+  the demoted text.
+- **The six new `dzc` instructions are internally consistent but were not checked against a sibling** —
+  `defender.md` and `forechecking_systems.md` are where a contradiction would live.
+
+## ✅ CLOSED — the "608(b) is a boards rule" frame is NOT in `defending_the_rush.md`
+
+**A `rules-verifier` read every from-behind passage layer by layer against primary text.** ⚠️ **The
+coordinator's regex had flagged several hits; ALL were false positives**, exactly as suspected —
+`:14` is *"never finish a check into their back"* (a different, correct claim) and the Overview hits
+are **boarding** passages, correctly distinguished from checking from behind.
+
+✅ **The file is one of the corpus's BETTER carriers of the correct frame**, quoting the Casebook's
+*"regardless of whether or not board contact is made"* in **three layers** — including the ` ```facts `
+block at `:373`, *"with or without board contact"*, **which is the layer voiced alone and the exact
+counterweight the sibling file lacked.**
+
+**Layers checked:** Key focus · Overview · all seven facts blocks · all body prose containing
+`behind`/`608`/`boards` · Common Mistakes · Key Takeaways · the self-test questions · **all nine
+diagram captions AND their `describe` text** · the Sources trailer.
+
+### ⚠️⚠️ MINOR, AND ITS REPAIR IS A TRAP — READ BEFORE FIXING IT
+
+**CARHA Rule 53 is nowhere in this file, while the file uses CARHA as a FIFTH book elsewhere in the
+same document** — `:870` writes *"not capped at a minor in any of the **five** books"* and `:415`
+cites CARHA 49(a)/(b) by number. Every from-behind claim here is scoped *"all four books"*.
+
+✅ **This is incompleteness, NOT misdirection, and there is NO permissive-direction consequence:**
+CARHA 53(a) attaches a **Game Misconduct to its minor**, so *"all four books end your game"* stays
+true of CARHA as well, and `:383`'s *"USA Hockey the only one of the four whose lowest tier lets you
+back on the ice"* stays true if CARHA joins — **CARHA does not let you back on either.**
+
+⚠️⚠️ **BUT FOLDING CARHA IN CARELESSLY MANUFACTURES THE VERY DEFECT THIS ROW CLOSED.** **CARHA 53(b)'s
+match penalty IS board-conditioned** — *"from behind into the boards or goal net"* — **while 53(a) is
+*"anywhere on the ice"*.** That is the same split as Hockey Canada 7.5(c). **An agent adding CARHA
+here could tie the tier to the boards while believing it was adding a book.** ⚠️ **Brief it as: 53(a)
+anywhere, 53(b) boards-conditioned, and they are different tiers.**
+
+### Two observations, not findings
+- `:372` and `:383` state **608(b) and HC 7.5(b) as a pair — *"reach a major"***. ⚠️ **608(b) is
+  MANDATORY (*"shall be assessed"*); HC 7.5(b) is DISCRETIONARY (*"may assess"*, mandatory only on
+  injury).** The phrasing is neutral rather than wrong and tells nobody an act is cheap — flagged
+  because **pairing a mandatory clause with a discretionary one is the shape that produced the
+  self-caught errors CLAUDE.md records.**
+- NHL 43.4's discretionary match is not stated; the omission is at the **top** of the ladder, so it
+  understates nothing a player relies on.
+
+✅ **Ceiling question settled across all five books:** NHL 43.4 match · USAH 608(c)/602(a)/603(c) match
+· HC 7.5(c) match · CARHA 53(a)/(b) match · **IIHF has NO match penalty anywhere in the book** —
+ceiling is 43.3's major plus automatic game misconduct, which the file states correctly.
+
+### ⚠️ Declared not reached
+**The reviewer did not render through `md_to_speech`** — it judged each layer by reading its unit in
+the markdown. **So a chunk-boundary defect is unmeasured**: if the *"regardless of board contact"*
+clause were split from the tier it qualifies, this method would not see it. `:383` and `:881` carry
+both together in one paragraph, so the risk is low. **It also did not check the PWHL, IIHF 2026/27,
+the EIHL Casebook or the four IHUK Rules of Competition for a from-behind departure.**
+
+## 🔴🔴 P3 — THE SCRIPT'S DIVERGENCE FROM ITS SOURCE WIDENED AGAIN ON 24 SEPTEMBER. MEASURED, NOT ESTIMATED.
+
+⚠️⚠️ **`defender.md` was repaired four times on 24 September and the approved script tracks NONE of it.**
+Measured by the coordinator against `podcast_defender_script.local.md` and the repaired source:
+
+| Probe | In the script | In `defender.md` |
+|---|---|---|
+| *"tying up the stick"* | **2** | **0** |
+| *"let it go"* (the release duty) | **0** | **5** |
+| *"release the stick"* | **0** | **2** |
+| *"yours in every league"* | **2** | 2 *(but now scoped — see below)* |
+| CARHA **63** (holding the stick) | **0** | **2** |
+
+**Two sentences in the script are now false against their own source:**
+
+1. > *"Taking the inside position and **tying up the stick are yours in every league**. Nobody has taken
+   > those away from you."*
+   ⚠️ **The corpus now teaches a LIFT WITH RELEASE, because holding an opponent's stick is priced in
+   ALL SIX books** — NHL 54.2, IIHF 54.2, PWHL **55.2**, Hockey Canada 8.1, **USA Hockey 622**, CARHA
+   63(a), with **63(b) and Hockey Canada 8.1(b) mandatory on injury**. ⚠️ **The script says *"tying
+   up"* twice and *"let it go"* never.**
+2. > *"…the hands is hooking in **three of the four rulebooks**."*
+   ⚠️ **A four-book population in a six-book corpus, and a `safety-reviewer` graded the same sentence
+   in `defender.md` a CRITICAL** — a forceful chop at the hands is **SLASHING** in five books
+   (NHL/IIHF 61.1, PWHL 63.1, USA Hockey 634, Hockey Canada 9.3), and **USA Hockey's writes no
+   attempt-to-play-the-puck let-out at all.** ⚠️ **`grep -c "lash"` on the script returns 0.**
+
+### ⚠️ THIS IS WHY §12's *"do not script a document under repair"* EXISTS, AND IT IS NOW MEASURED
+
+**The script was traceable to `defender.md` when it was written. It is not now.** ⚠️ **A re-cut cannot be
+a find-and-replace:** the script is spoken prose with its own pacing, the release duty is a **new
+clause** rather than a word swap, and **a repair is new text that has not been reviewed.**
+
+⚠️ **AND THE SPLIT PLAN DOES NOT CARRY OVER.** `synthesize_style_b.py --dry-run` produced 5 chunks
+sized to the OLD text. **Re-run it with `--max-chunk-chars 5000` after the re-cut** — the default 4,500
+puts a seam between the shot-block method and its four never-dos, which is the standard's own
+whole-or-not-at-all pairing divided by a synthesis boundary.
+
+✅ **The order is now fixed and it is not negotiable: source → `safety-reviewer` clear → re-cut →
+`rules-verifier` + `safety-reviewer` on the SCRIPT → `--dry-run` → only then synthesise.**
+⚠️ **`synthesize_style_b.py` spends money and produces a finished audio file.**
+
+## 🔴🔴 P3 BLOCKER — THE APPROVED SCRIPT CARRIES A SENTENCE PROVED FALSE ON 24 SEPTEMBER 2026
+
+⚠️⚠️ **DO NOT SYNTHESISE THE DEFENDER SCRIPT. DO NOT RUN A TRIAL ON IT.** `synthesize_style_b.py`
+spends money and produces a finished audio file; this sentence must be repaired first.
+
+**`podcast_defender_script.local.md` says, verbatim:**
+
+> *"Taking the inside position and tying up the stick are **yours in every league**. Nobody has taken
+> those away from you."*
+
+⚠️ **That is the exact sentence repaired out of `content/positions/defender.md` this round, at three
+sites, as FALSE.** **CARHA Rule 49(a)** (`carha.txt:2449-2457`) is a **minor or major**, at the
+referee's discretion on intent and violence of impact, for a player who *"intentionally bodies,
+pushes, shoves, stands in front of an opponent for the purpose of making contact, and/or **does not
+avert body contact with an opponent**"* — **and the major is MANDATORY where injury results.** CARHA
+**63(a)** (holding *"in any other manner"*) and **59(c)** (*"unnecessary rough play"*) reach the same
+act again.
+
+⚠️ **The repaired corpus sentence is:** *"the stick lift is yours in every league, and the box-out is
+written as legal in terms in four of the six books read here."* **The script still carries the flat
+form.**
+
+### ⚠️⚠️ AND THE SCRIPT'S OWN TRACEABILITY FILE HAD ALREADY FLAGGED IT — TWICE, BEFORE THIS ROUND
+
+**`podcast_defender_traceability.local.md`, in its own words:**
+
+> *"…the net-front body says CARHA Rule 49(a) writes 'a duty to avert contact, not a licence to hold
+> your spot by it' — and **a duty to avert contact reaches the box-out, not only the walk-out.** Those
+> are not obviously [consistent]…"*
+
+> *"**The CARHA duty-to-avert-contact sentence at the net front, cut in the last pass for length. It is
+> the one cut I am least comfortable with**, because it makes an adult rec player under CARHA think
+> th[ey are protected]…"*
+
+⚠️⚠️ **THE AUTHOR NAMED ITS OWN WEAKEST POINT AND A LATER, INDEPENDENT ROUND PROVED IT A REAL DEFECT
+IN THE SOURCE.** ✅ **This is the standing lesson working exactly as intended:** *"'What this method
+could not have found' is not a courtesy at the end of a report; it is the next brief — and here it was
+the next DEFECT."* ⚠️ **A declared discomfort is a finding. This one sat unactioned in a gitignored
+file while the plan recorded the script as approved.**
+
+⚠️ **AND THE CUT WAS MADE FOR LENGTH.** **Length pressure removed a safety limb**, which is the
+documented eviction shape — a block at its cap once forced a mandatory give-ground duty out of a
+`Rule:` fact, and every checker passed it. ⚠️ **A trim is an edit to a claim.**
+
+### What has to happen before any trial
+
+1. ✅ **Source repaired** — `defender.md` fixed at three sites this round. **A `safety-reviewer` is
+   reviewing that repair; it is not yet cleared.**
+2. 🔴 **Re-cut the script's net-front passage** against the repaired source. ⚠️ **It is NOT a
+   find-and-replace** — the script is spoken prose with its own pacing, and **a repair is new text that
+   has not been reviewed.**
+3. 🔴 **`rules-verifier` and `safety-reviewer` have NEVER run on this script.** Both were already
+   blocking; this finding raises the priority rather than creating it.
+4. ⚠️ **Re-run `synthesize_style_b.py --dry-run --max-chunk-chars 5000` after the re-cut** — the
+   default 4,500 target puts a seam between the shot-block method and its four never-dos, which is the
+   standard's own whole-or-not-at-all pairing divided by a synthesis boundary. **The re-cut changes
+   character counts, so the previous 5-chunk plan does not carry over.**
+
+### ⚠️⚠️ AND THIS SHARPENS THE OWNER'S QUESTION ABOUT `*.local.md`
+
+**The script, its traceability, AND THIS DEFECT all live in gitignored files.** CLAUDE.md says that
+pattern is *"Scratch notes only… **NOT for plans or findings**."* ⚠️ **A safety finding about a
+mandatory-ejection tariff was sitting outside version control, in a file no sweep can reach and no
+reviewer is routed to.** **This is now a decision for the owner, not a tidiness note.**
+
+## 🔴 P3 — THE DEFENDER SCRIPT EXISTS AND IS APPROVED. THE GAP IS ITS DELIVERABLES, NOT THE SCRIPT.
+
+⚠️ **A coordinator dispatched an agent to WRITE this script. It already existed, complete and
+owner-approved** — `podcast_defender_script.local.md`, 20,148 spoken chars, and **this plan already
+recorded it**. `project/podcast_style_b_script_standard.md` is *reverse-engineered from it* and names
+it as the sole exemplar. ✅ **The agent refused the brief rather than produce an unreviewed second
+script competing with an approved one**, and delivered the missing artefacts instead.
+
+✅ **The script is STILL VALID against the current source.** `defender.md` changed after it was
+written, but a word-diff shows **all 24 changes are callout-marker moves and bold-run extensions — not
+one word of prose.** No rewrite needed.
+
+✅ **Traceability now exists** (`podcast_defender_traceability.local.md`). **Every factual claim
+resolves to a `defender.md` line**, tariff scopes intact — and ⚠️ **the failure mode we most feared is
+ABSENT: the check-from-behind ladder correctly gives USA Hockey's floor as 608(a)'s minor plus
+misconduct, not 608(b)'s major.**
+
+### ✅ The split plan — stitching is known to work before anyone spends money
+`synthesize_style_b.py --dry-run` → **5 chunks: 4,242 / 4,411 / 4,412 / 4,251 / 2,824**, largest 44%
+of the 10,000 cap, no mid-sentence split.
+
+⚠️ **BUT the default 4,500 target puts seam 4 between the shot-block method and its four never-dos** —
+the standard's own whole-or-not-at-all pairing, divided by a synthesis boundary. **`--max-chunk-chars
+5000` fixes it for free**: same 5 chunks, same cost, every seam on a numbered-idea boundary the script
+already pauses at. **Use it.**
+
+### 🔴 Five findings against the standard
+
+1. **§5's named residue was never repaired.** The standard says in terms to replace *"a safety point
+   that overrides everything in this section"*. **It is still in the script, at 58.4%, immediately
+   before the back-to-the-wall safety pairing.** Diagnosed and never edited.
+2. **A second backward pointer the standard's greps cannot see** — *"Gap control, as we covered it"*
+   (71.6%). ⚠️ **§5 bans four phrasings; this is not one of them, so `grep -c` scored 0 four times.**
+   **A ban enforced by a phrase list is not a ban on the shape.**
+3. **§4's recap rule is not met.** Consolidations sit at **9.4% and 95.0% only** — nothing in the
+   middle third, which §4 explicitly requires. ⚠️ **The approved exemplar fails the standard derived
+   from it, in the one place the standard knowingly departed from it.**
+4. **Britain/competition scope collision — the SOURCE's defect, not the script's.** The script's *"If
+   you play in Britain"* is `defender.md:172`'s own opening, while `:160` scopes the same claim to
+   *"England and Wales"*, and the EIH Rules & Regulations are a **competition** instrument. ✅ The
+   script's instruction is the conservative one, so no listener is told an act is cheaper than it is.
+5. **Weakest sentence: clipping as *"a different offence with a higher ceiling"*** — compresses a
+   four-book trigger divergence into one unnumbered comparative. Errs harsh, names no book.
+
+### 🔴 TWO §12 CHECKBOXES CANNOT BE DONE AS WRITTEN
+- **`md_to_speech.py` renders CORPUS MARKDOWN, not a Style B script.** The Style B chunker is
+  `synthesize_style_b.split_script`. **§12 names the wrong tool and must be restated.**
+- **`check_pointers.py` reads `content/` and cannot see a `.local.md`** — which is why finding 2
+  needed a hand audit.
+
+### 🔴 BLOCKING THE TRIAL
+- `rules-verifier` against the primary books, and `safety-reviewer`: **neither has run on this script.**
+- ⚠️ **`defender.md`'s three-way CARHA box-out contradiction is STILL OPEN, and the script carries the
+  flat *"yours in every league"* form** — so §12's *"do not script a document under repair"* is live.
+  **Fix the source first.**
+
+### ⚠️ A QUESTION FOR THE OWNER, NOT AN ACTION
+**The approved script and its traceability live in `*.local.md`, which `.gitignore` covers** — so
+neither is in the record, and CLAUDE.md says that pattern is *"Scratch notes only… NOT for plans or
+findings."* **An approved deliverable and its evidence sitting outside version control is a gap
+somebody chose; it should be a decision, not an accident.**
+
 ## 📊 WHERE P1 AND P2 ACTUALLY STAND — MEASURED 24 September 2026
 
 ⚠️ **This section exists because "how much is left in P1 and P2?" could not be answered from this
@@ -42,6 +805,786 @@ this file's own history is a list of figures that went stale in the direction th
 the warnings *"break up the flow of the content too much"*. **The panel wave fixed what a READER
 SEES. It did not touch what a LISTENER HEARS** — a marked paragraph still speaks *"Important."*
 whether or not it renders amber, and **692 of them remain, 60% of those in consecutive runs.**
+
+### ✅ CLOSED — *"does `body_contact_and_battles.md`'s who-may-check table have the same critical?"*
+
+**No. It is already correct, and it was correct before this round.** Checked by the coordinator, by
+reading the file rather than by dispatching:
+- `content/technique/body_contact_and_battles.md:114` — *"**Never:** Read IHUK's junior, U10, NIHL 1
+  and 2 and WNIHL Rules of Competition as settling **the EIHL, BUIHA, NIHL National, the PNIHL, the SNL
+  or Scottish domestic hockey outside the IHUK junior structure**"*
+- `:113` — *"**Never:** Settle it by asking whether IHUK runs your league — IHUK's In-House Rules reach
+  NIHL National, the SNL and BUIHA Varsity, and no Rules of Competition for any of them was read"*
+- `:140` carries the gap as an honest disclosure; `:93` and `:109`–`:110` carry the bands with their
+  four-document scope attached.
+
+⚠️⚠️ **SO `faceoffs.md` WAS THE OUTLIER, NOT THE PATTERN — and that inverts the assumption the finding
+was raised under.** The agent that found the critical named this as *"the single highest-value next
+check, because this file now points readers at it."* **It pointed at a table that was already right.**
+✅ **The lesson is not that the check was wasted — it is that a sibling holding the correct form is
+evidence, and the FIRST place to look.** It cost one grep and closed a safety row.
+
+### 🔴 NEW, from the same sweep — the U10 draw procedure is a different game
+
+⚠️ **`sources/ihuk_u10_roc_layout.txt:172-195` writes a MATERIALLY DIFFERENT faceoff procedure**, found
+by sweeping the four Rules of Competition for **the act** (`drop`, `restart`, `centre ice`, `puck
+down`, `circle`, `dot`) rather than the label:
+
+> *"Coach/Referees to drop a puck as soon as a player from each team is at the faceoff point and ready,
+> **do not wait for teams to be set-up in a face-off formation**"*
+
+**The Level 2 coach acts as referee; the nearest player from each team is called in; and every restart
+after a goal, freeze, line change or puck out of play is *"a quick face off at the centre of the
+playing surface."*** ⚠️ **So a U10 reader of `faceoffs.md` is being taught a nine-spot, stick-order,
+blade-in-the-white procedure their own competition does not run.**
+
+⚠️ **NOT written, and the reason is routing:** `uk_rules.md` owns the British format layer and was not
+the reporting agent's file; and the claim needs its own **layer test** before anyone writes a scope
+line into `faceoffs.md`. ⚠️ **It would have scored ZERO on `face.?off`, `Rule 76` and `draw` — the
+label search that produced a clean negative for the other three documents.**
+
+✅ **And `ihuk_junior_roc` Appendix D WAS read in full this time** (`_layout:1473-1640`), closing a row
+opened earlier the same day. **It changes format, line allocation, clock, penalties, offside and icing
+at U12 — it does NOT touch stick order, blade placement, encroachment or violation consequences.** Its
+one restart clause (`:1540`, *"Officials manage restarts fairly, dropping the puck quickly"*) changes
+**tempo, not procedure.** **The negative holds, and it is now a read negative rather than a grepped one.**
+
+### 🔴 CARRIED — `faceoffs.md:294` cannot fit its own correction
+
+The facts line carries the same CARHA 57(a) incompleteness KT10 was repaired for — *"not under CARHA
+57(a) ('the full blade of their sticks flat on the ice')"* — at **290/300, ten characters**. ⚠️ **There
+is no way to add the second paragraph's scope without truncating the quotation** (the defect class this
+repository warns about) **or evicting another book from the list.** **Direction is HARSH and the
+instruction it produces — whole blade — is universally safe under all five books, so no reader is
+endangered.** ⚠️ **Candidate for a SECTION SPLIT, not a squeeze.**
+
+⚠️⚠️ **AND A COORDINATOR BRIEF GOT THIS RULE WRONG IN THE PERMISSIVE DIRECTION.** It said CARHA *"asks
+for the full blade **at centre ice** and the toe everywhere else."* **`carha.txt:2699-2703` scopes the
+opening paragraph to NO LOCATION AT ALL** — *"The players taking the face-off shall stand squarely
+facing their opponent's end of the rink… with the full blade of their sticks flat on the ice"*.
+⚠️ **Had the agent adopted that framing, KT10 would have told a CARHA reader the TOE is enough at an
+end-zone spot, contradicting this document's own body at `:308`.** ✅ **The agent repaired the
+incompleteness the brief correctly identified WITHOUT adopting its scope inference — which is exactly
+what "refute the brief" is for.**
+
+### 🔴 THE FOUR-BOOK ENUMERATION — a corpus-wide worklist, sized 24 September 2026, NOT a blocker
+
+⚠️ **The shape:** a sentence enumerates **four books** where the directory holds more, and **stops one
+book short of the strictest one.** ⚠️⚠️ **A grep for `CARHA` CANNOT FIND IT, because the defective line
+is the one that does not say CARHA.**
+
+**Sized, honestly:** a tight pattern (`all four` · `three of the four` · `none of the four` ·
+`one of the four` · `of the four books` · `four books` · `four rulebooks`) naming **neither CARHA nor
+PWHL** returns **287 candidate lines** across the 23 staged documents — `rules_primer.md` 46,
+`body_contact_and_battles.md` 40, `risk_management.md` 22, `goaltender.md` 22, and a long tail.
+
+⚠️⚠️ **THAT FIGURE IS A CANDIDATE COUNT AND IT IS NOISY.** A broader first pass matched *"four other
+skaters"*, *"the four dots"* and a Check-yourself question. **Most hits will be correct — a document
+discussing four books is entitled to say four.** ⚠️ **NEVER SWEEP THIS PATTERN. Only reading decides.**
+
+✅ **Only 16 of the 287 were ADDED by this commit, and the one live instance was repaired:**
+`offensive_zone_play.md:634` said *"Hockey Canada is the strictest of the four, and the only one of
+them that makes a penalty on you mandatory."* ⚠️ **CARHA 66(b) makes a minor MANDATORY in precisely
+that scenario** — *"shall be imposed on an attacking player, not in possession of the puck, who is
+tripped or caused to fall and fails to attempt to avoid contact with the goalkeeper, **whether the
+goalie is in or out of the goal crease**"* — **and its second limb is BROADER than Hockey Canada's.**
+✅ **Repaired by naming the four AND adding the CARHA limb**, so *"those four"* now self-resolves in the
+spoken chunk. **Measured: claim, named four, correction and quotation all in chunk 065 — distance 0.**
+
+⚠️ **AND THE INSERTION FORCED AN ANTECEDENT REPAIR:** *"Interpretation 2 to Rule 8.5(a)"* now followed a
+CARHA quotation and would have read as CARHA's. **Changed to *"Hockey Canada's Interpretation 2"*.**
+✅ **That is the qualifier-changes-jobs shape, caught by the agent that created it.**
+
+### 🔴 A NAMED NEXT SITE, verified and deliberately not repaired unbriefed
+
+**`offensive_zone_play.md:1089`**, Common Mistakes, *"Pinching to hit a winger who is facing the
+glass"* — enumerates **NHL 43.2/43.3, IIHF, Hockey Canada 7.5(a), USA Hockey 608(a)** and **omits
+CARHA**, whose answer is **CARHA 53(b)**, `carha.txt:2586-2591`: a **MANDATORY MATCH PENALTY** for a
+player *"propelled in any manner from behind into the boards **or goal net**"*, with a Note that
+*"Referees are instructed **not to substitute other penalties**… This rule **must be strictly
+enforced**."*
+
+✅ **The bullet's headline — *"No book lets this one cost you two minutes and nothing else"* — stays
+TRUE, so this is not a contradiction.** ⚠️ **It is an enumeration that stops one book short of the
+strictest, in a Common Mistakes bullet, and 53(b)'s *"or goal net"* limb makes it genuinely net-front.**
+
+⚠️ **53(b) does NOT belong at `:634`** — the actor is reversed. At `:634` the reader is the one *put
+into* the goalie; **53(b) prices the player who does the propelling.** **The agent checked and declined
+to add it there.**
+
+### ✅ THE CARHA MANDATORY CENSUS — run 24 September 2026, and it corrects an order-of-magnitude understatement
+
+**A facts line said *"CARHA writes three mandatory penalties"*. The real figure is roughly TWELVE
+mandatory majors and SEVENTEEN mandatory match penalties.** ⚠️ **The repair changed the grammar from a
+TOTAL to a PREDICATION — *"Three CARHA net-front penalties are mandatory"* — which does not claim to be
+exhaustive.** ✅ **That is the cheap general fix for a count in a layer voiced alone.**
+
+**Mandatory major (± game misconduct), each confirmed against its printed `Rule N.` header:**
+**52(a)** `:2551-2555` injury limb · **52(b)** `:2559` crease or injury · **53(a)** `:2577-2580`
+checking from behind, *"must be assessed"* — **the strongest verb in the book** · **54(b)** `:2603-2606`
+cross-check above the shoulders, *"whether or not injury results"* · **54(c)** `:2608` · **56(b)**
+`:2691-2692` elbowing/kneeing injury · **62(b)** `:2978-2982` high stick above the shoulders · **63(b)**
+`:3013` holding injury · **64(b)** `:3021` hooking injury · **66(e)** `:3203` interference injury ·
+**79(a)** `:3569-3571` slap shot injury · **80(b)** `:3592` slashing injury.
+
+**Mandatory match:** **48(a)–(h)** `:2390-2441` · **50(c)** `:2501` · **53(b)** `:2586-2591` ·
+**54(d)** `:2613` · **59(a)** `:2830` · **62(c)** `:2996` · **80(d)** `:3601` · **81** `:3606` ·
+**71(a)(b)**, **72(c)**.
+
+**Mandatory MINOR, and it bears directly on the net front:** **66(b)** `:3156-3166` — *"A Minor penalty
+**shall be assessed** to an attacking player… **interfered with by a defending player, but fails to
+attempt to avoid making contact with the goalkeeper**"*, and a second limb for an attacker *"tripped or
+caused to fall"*, **"whether the goalie is in or out of the goal crease."**
+
+### 🔴 OPEN — CARHA 53(b) is a NET-FRONT match penalty in no layer of any document
+
+`carha.txt:2586-2591` — a **match penalty** for a player **propelled from behind into the boards *or
+goal net***. ⚠️ **The goal-net limb makes it net-front material, and it appears nowhere.**
+
+### ⚠️⚠️ TWO SEARCH TRAPS MEASURED THIS ROUND, BOTH PRODUCING FALSE RESULTS
+
+1. ⚠️ **A raw line-grep for CARHA's mandatory verbs is a NEAR-TOTAL FALSE NEGATIVE.** The extraction
+   wraps clauses mid-sentence — *"If injury results, a Major penalty"* / *"and a Game Misconduct penalty
+   shall be assessed"*. **Flatten first.** ⚠️ **AND THE FLATTENED SWEEP'S RULE ATTRIBUTION LAGS BY ONE
+   HEADER — confirm every rule number against its printed `Rule N.` header.** **Same shape this file
+   already records for USA Hockey's *"may also be assessed"*.**
+2. ⚠️⚠️ **A TRUE MATCH ON THE WRONG RULE.** `grep "kept in motion"` in `usah.txt` hits **Rule 406(c)
+   Penalty Shot** at ~`:2705` **AND `:6723`, which is the SHOOTOUT / tie-breaking procedure.**
+   ⚠️ **A grep-only agent gets the right words under the wrong rule and cites it confidently.**
+   **This is the *"confident wrong YES"* the interleave census declared it could not test for — and here
+   it is, outside a table.** ✅ **Verify by reading the printed rule heading, never by the phrase.**
+
+### ✅ CLOSED — the spin-o-rama silence claim, repaired in TWO files
+
+**The claim: *"USA Hockey and CARHA are silent on the spin-o-rama."*** ⚠️ **False as compressed —
+both write *"the puck must be kept in motion towards the opponent's goal line"* (USA Hockey 406(c),
+CARHA 35(a)), which is THE SAME TEST Hockey Canada uses to PERMIT the move.** They write no
+**spin-o-rama provision**; they are not silent on the act.
+
+⚠️⚠️ **A `commit-gate` blocked on `shooting.md`. A corpus-wide check of the CLAIM then found the naked
+form surviving at `goaltender.md:865` — a `Rule:` fact voiced alone, with neither the counterweight nor
+the positive requirement — while `goaltender.md:879` in the SAME FILE already had both.**
+✅ **Both repaired by SPLITTING; in each case substitution could not close a ~120-character gap against
+a 300 cap, and nothing was traded.**
+⚠️ **Had the fix stopped at the file the gate named, the identical false sentence would have shipped in
+a file that was already staged.** ✅ ***"Brief the claim, not the line"* is what caught it.**
+
+⚠️ **STILL OPEN:** `shooting.md`'s Key Takeaway (~`:900`) carries *"write no rule either way, and their
+silence is not a permission"* — **safe, because the counterweight is attached in the same breath** —
+but the first clause is the same compression and it **does not say what the books positively require.**
+**A reviewer's call, not a sweep.**
+
+### 🔴 CARHA 66(e) — A THIRD MANDATORY RUNG, AND `grep -rn "66(e)" content/` WAS ZERO CORPUS-WIDE
+
+**`carha.txt:3204-3205`:** *"A Major penalty shall be imposed on any player who injures an opponent by
+interference."* ⚠️ **Mandatory, inside Rule 66 — the same rule the net-front sections are built on.**
+**66(b)** (`carha.txt:3169-3170`) is a minor for deliberate contact with a goalkeeper, *"At the
+discretion of the Referee, a Major penalty may be imposed"* — ⚠️ **so 66(e) is a genuine mandatory rung
+ABOVE a discretionary one, and 66(b)'s minor is the floor rather than the ceiling.**
+
+⚠️⚠️ **IT IS A MAJOR WITH NO GAME MISCONDUCT — NOT AN EJECTION.** A coordinator brief asked for a count
+to be widened from *"twice"* to *"three times"* around the sentence *"neither **ejection** is the
+referee's to withhold"*. ⚠️ **Widening the count without changing that noun would have manufactured a
+fresh overstatement in the HARSH direction.** The agent changed it to *"none of them is"*.
+
+✅ **FIXED in `offensive_zone_play.md`** (facts `:586`, body `:642`, Key Takeaway 5).
+🔴 **OPEN, and it is arguably the same permissive defect one file over: `body_contact_and_battles.md:1208`
+names 66(b) as a minor with NO mention of 66(e)'s escalator.** **Reported by the agent that repaired
+the sibling; it does not own that file.**
+
+🔴 **AND THE HOLE CLASS IS UNSWEPT IN FIVE BOOKS.** ⚠️ ***"I did not ask what USA Hockey, Hockey Canada,
+the NHL, the IIHF or the PWHL write for 'injures an opponent by interference' as a rule SEPARATE from
+their goalkeeper-interference rule. If any carries an injury-escalator the corpus has not searched for,
+this document is a half-answer in five more places, AND MY REPAIR WOULD LOOK COMPLETE."***
+
+### ⚠️⚠️ FOR THE NEXT GATE: `git show HEAD:` IS NOT THE PRE-EDIT BASELINE FOR THIS ROUND'S FILES
+
+**Measured on `offensive_zone_play.md`:** one paragraph is **2,136 chars at HEAD** and was **2,867 chars**
+when the final agent inherited it — **~731 characters of this round's EARLIER uncommitted waves sit
+between them.** ⚠️ **Anyone diffing a file against HEAD will attribute earlier waves' work to the last
+agent that touched it.** **Several files in this round were edited three to five times.**
+
+### 🔴 OPEN — a chunk that carries tariffs without their scope caveat
+
+**`offensive_zone_play.md` chunk 069** carries CARHA's three mandatory limbs; **the scope sentence
+*"CARHA governs CARHA-affiliated leagues only and is not a general rec-hockey standard"* is in chunk
+070.** ⚠️ **The split PRE-EXISTS this round** — the agent reconstructed the pre-edit paragraph at 2,867
+chars, already past the splitter, and said so rather than claiming credit or blame.
+✅ **The facts line `:586` and Key Takeaway 5 both carry the caveat INLINE, so the two layers voiced
+alone are covered. Chunk 069 is the one nobody could certify.**
+
+### ⚠️ TWO MORE COORDINATOR SKETCH DEFECTS, CAUGHT BY THE AGENT — the 11th and 12th of the round
+
+1. ⚠️ **A sketch kept *"both run to a match penalty"* while naming THREE books.** With CARHA added,
+   *"both"* loses its antecedent and **the nearest reading attributes a MATCH PENALTY to CARHA.**
+   **CARHA's charging ceiling is 52(b), a major plus game misconduct; its match penalty is 54(d) and
+   needs DELIBERATE injury — a different act.** Written as *"the first two run to a match penalty"*.
+2. ⚠️⚠️ **A sketch said *"under CARHA"*, dropping the existing *"CARHA's adult-league book"* — A SCOPE
+   CAVEAT, IN A LAYER VOICED ALONE.** **The agent made the same slip on its first pass and caught it by
+   re-reading against the pre-edit text.** ✅ ***"Nothing in this corpus should let a listener hear a
+   CARHA tariff without the signal that it governs one book's affiliated adult leagues."***
+
+⚠️ **And a third: the sketch's own opener did not fit.** *"CARHA takes the discretion away three times"*
+measured **308 chars with the full scope caveat** — over cap — and every way of fitting it cost either
+*"affiliated"* or the charging threshold. **The agent wrote *"CARHA writes three mandatory penalties"*
+at 297, and chose a CONCRETE noun over the abstract *"limbs"* because the line is voiced alone.**
+
+### 🔴🔴 CARHA RULE 54(c) — A SECOND MANDATORY EJECTION, MISSING FROM SEVEN DOCUMENTS
+
+⚠️⚠️ **`carha.txt:2608-2611`, Rule 54(c) Cross-Checking:**
+> *"A Major penalty and Game Misconduct **shall** be assessed to any player who crosschecks a
+> goalkeeper while they are in the goal crease, or who injures an opponent as a result of a
+> cross-check."*
+
+**Same mandatory force as 52(b), for an act the net-front sections make routine** — and cross-checking
+at the net front is named as an enforcement emphasis at `body_contact_and_battles.md:1757`.
+
+⚠️⚠️ **THE PROPAGATION ROW, MEASURED: `54(c)` scored 0 across `content/` outside
+`body_contact_and_battles.md`.** The corpus records **54(b)** (above the shoulders) and **54(d)**, but
+the **goalkeeper-in-crease limb reached one file.** **These seven all state CARHA's CHARGING ejection
+and NONE states the cross-checking one:** `goaltender.md:1107-1109` · `winger.md:470` ·
+`center.md:441` · `shooting.md:293` and `:498` · `zone_entries.md:704` ·
+`playing_without_the_puck.md:633` · and `body_contact_and_battles.md:1261` states 54(b)/54(d) but,
+on the grep, **not** the goalkeeper limb.
+
+✅ **FIXED in `offensive_zone_play.md` only** (facts `:586`, blockquote `:642`). **The other seven are
+open.** ⚠️ **Brief it as the CLAIM — "CARHA takes the referee's discretion away twice at the net
+front" — not as seven line numbers.**
+
+### ✅ THE METHOD THAT FOUND IT, AND IT IS THE ONE THIS FILE KEEPS PRESCRIBING
+
+**The brief said naming one rule produces an agent that verifies one rule. So the agent swept the ACT:
+it grouped every `goalkeeper|goaltender|goalie` line in `carha.txt` by its containing `Rule N.` heading
+and read each cluster.** ⚠️ **54(c) has nothing to do with Rule 66 or Rule 52 and no brief would have
+named it.**
+
+✅ **And it attacked its own negative rather than assuming it** — Rules 87, 37, 23/24, 35, 58 and 61
+were read and cleared (Rule 87's 23 goalkeeper mentions are tournament-roster and bench-protest
+clauses). ⚠️ **It then named what it did NOT read: Rule 59 (Fighting and Roughing), three goalkeeper
+mentions skimmed not read, and Rule 36 (Awarded Goals), three not read** — *"the likeliest place a
+fourth route hides"*, and **Rule 36 could falsify the new "no push-in relief" sentence.**
+
+### ⚠️⚠️ A COORDINATOR SKETCH THAT WOULD HAVE MANUFACTURED THE INVERSE DEFECT
+
+**The brief's sketch ended *"and penalties follow"*, flat. Its sibling at `:577` says the NHL/IIHF
+version carries penalties that *"may follow"*.** ⚠️ **A flat *"follow"* for CARHA against a hedged
+*"may follow"* for the NHL manufactures the OPPOSITE false contrast to the one being repaired — CARHA
+would read as the only book that certainly penalises.** **Both books condition identically
+(*"If applicable"*), and the agent wrote *"penalties follow if applicable"* instead.**
+
+⚠️ **The brief also carried a character measurement (275) that no longer applied once the wording was
+corrected; the real line is 295, still inside 300.** ✅ **A SKETCH SIZED TO A CHARACTER CAP IS STILL A
+CLAIM — and its length is a claim too.**
+
+### 🔴 OPEN — one re-scoping the agent declined to write rather than verify
+
+**`offensive_zone_play.md:633`:** *"Hockey Canada is the strictest of the four, and the only one of
+them that makes a penalty on you mandatory."* ⚠️ **Literally true** — CARHA is this document's
+consistent fifth book, excluded from *"the four"*. ⚠️ **But it now sits two paragraphs from CARHA's two
+mandatory ejections, and CARHA's minor on a fouled attacker who fails to avoid contact is ALSO
+*"shall be assessed"*.** **The agent left it because the fix is a claim it would be writing rather than
+verifying. Needs one reader.**
+
+### 🔴 OPEN — one grep nobody ran
+
+**Does the PWHL's 71.7 carry the push-in relief limb?** The new `:595` sentence frames the relief as
+*"the NHL and IIHF"*. ⚠️ **If the PWHL omits it, the framing is right but the PWHL's position is stated
+nowhere in that section.** **One grep of `pwhl_rules.txt`.**
+
+### 🔴 CARRIED — `defensive_zone_coverage.md:517` carries the four-book count that was just fixed next door
+
+**It says hooking-at-the-hands is *"three of the four books"*. The true count is THREE OF SIX** — PWHL
+**56.1** (`pwhl_rules.txt:5238-5242`) and CARHA **64(a)** (`carha.txt:3016-3019`) carry **no hands
+clause**, both verified. ⚠️ **The identical defect was just repaired at `defender.md:278`, and `:589`
+of the same file is CORRECT on slashing and was used as the alignment target.** ✅ **So one file holds
+both the right answer and the wrong one, in adjacent material.**
+
+⚠️ **Also unfixed, same file family: `defender.md`'s cross-checking bullet reads *"in three of the four
+books"*.** The framing is correct on its merits (NHL/IIHF/HC vs USA Hockey) — **but *"four"* has no
+antecedent for a reader**, and the document is a six-book document.
+
+### ⚠️⚠️ THE CHUNK MEASUREMENT THAT SHOWS WHY THE SLASHING DEFECT WAS A CRITICAL
+
+**Measured through the renderer, 24 September 2026, `defender.md` at 97 chunks:**
+**BEFORE the repair, the permissive *"not under the NHL"* was in chunk 035 and its ONLY qualification
+was in chunk 038 — THREE CHUNKS AWAY.** ⚠️ ***"For a reader it is three paragraphs; for a listener it
+is unreachable at the moment of instruction."*** **After: all four facts lines are in chunk 035.
+Distance zero — the correction now travels with the claim.**
+
+✅ **This is the measurement CLAUDE.md demands and the reason it demands it. Paragraph distance would
+not have shown it.**
+
+### ⚠️ A FORMULATION THAT MUST NOT BE REUSED — corrected by the agent against a coordinator brief
+
+**A brief told an agent to adopt `body_contact_and_battles.md:214`'s wording for CARHA:
+*"49(a) reaches the leaning and bodying, not the standing."*** ⚠️⚠️ **THAT IS INACCURATE FOR 49(a),
+WHICH EXPRESSLY NAMES *"stands in front of an opponent for the purpose of making contact"* — so it DOES
+reach a kind of standing.** **The agent anchored to Rule 66 Note 2's own words instead:** *"Note 2
+entitles you to stand your ground; it says nothing about the body you put on them."*
+
+⚠️ **Do not propagate the `:214` formulation to any CARHA 49(a) site.** ⚠️ **And check whether `:214`
+itself needs the same treatment — it was not re-read this round.**
+
+### 🔴 UNREVIEWED NEW TEXT, and the agent flagged its own inference
+
+**Three new `Rule:` facts lines and a rewritten body bullet in `defender.md` are new text.** ⚠️ **The
+agent named the sentence it least trusts, which is the one to attack:**
+> *"'a screener standing in front of your goaltender is not the puck-carrier, so that exemption is not
+> yours' is **my own inference** from the quoted exemptions — the books do not say it in terms."*
+
+**Direction is HARSH** (it withdraws a protection rather than granting one), **so it endangers nobody**
+— but Hockey Canada 9.3 and CARHA's glossary both limit the tap exemption to the **puck-carrier** in
+their own words, and whether that reading holds for a net-front screener should be read by someone who
+did not write it.
+
+### 🔴 THE HIGHEST-VALUE FOLLOW-UP, named by the agent against its own clean run
+
+> *"I swept all six books for **slashing**, **hooking** and **holding**. I did NOT ask what else prices
+> a chop at an opponent's hands — **roughing**, **high-sticking** (a lift that rides up), or
+> **butt-ending** are all plausible and I checked none. **My negatives here are TRUE negatives on the
+> LABEL, and a true negative is what stops the next search.**"*
+
+⚠️⚠️ **This is the CARHA 52(b) shape and the lacrosse-move shoulder-cap shape, verbatim, for a third
+time. Sweep the six books for THE ACT — a stick contacting an opponent's hands — never for these three
+rule names.**
+
+⚠️ **And the British layer is unchecked on Rule 61:** the agent quoted `iihf_rules.txt` (the 2025/26
+v1.1 mirror) and did **not** check `iihf_rules_2026-27.txt`, `eihl_casebook.txt` or the four IHUK Rules
+of Competition. **The EIHL Casebook is superseding, not supplementary.**
+
+### 🔴 CARRIED — the 69.2 penalty limb has reached TWO documents and the act lives in at least seven
+
+⚠️⚠️ **`uk_rules.md` and `shooting.md` now carry IIHF 69.2's penalty limb — *"a minor or a major, whether
+or not the goalkeeper is inside or outside the goal crease, and whether or not a goal is scored"*.
+EVERY OTHER NET-FRONT SITE IN THE CORPUS STILL PRICES THE ACT ONLY IN DISALLOWED GOALS.**
+
+**The permissive inference this was written to close is still live in:** `playing_without_the_puck.md`,
+`offensive_zone_play.md`, `goaltender.md`, `winger.md`, `zone_entries.md`, `rink_map.md`. ⚠️ **A reader
+of any of them can still conclude *"if nothing goes in, nothing costs me."***
+
+⚠️⚠️ **AND THE GREP THAT WOULD FIND IT DOES NOT EXIST, WHICH IS THE WHOLE POINT:** ***"A grep for 'fair
+game' will miss them — the defective sentence is the one that NEVER QUOTES 69.4."*** **Find them by
+finding every site that prices net-front contact and asking which ones stop at the goal.**
+
+✅ **69.2 is WORD-FOR-WORD IDENTICAL in both IIHF editions** — the only differences are the line-wrap
+hyphenation of *goal-/keeper* and the Appendix pointer (Table 16 → Table 14). **So the limb is NOT
+🇬🇧-scoped and must not be written as though it were.**
+
+### 🔴 CARRIED — the EIHL Casebook has never been swept for the ACT, only for Rule 69
+
+⚠️ **Named as the single highest-value follow-up, and it is the CARHA-52(b) shape verbatim:**
+> *"I searched the Casebook for **Rule 69 material**, not for the **act**. The Casebook has a *Fines and
+> Suspensions* list under Rule 46 that legislates for an act (leaving the bench) **whose rule it does
+> not carry** — exactly the shape that would hide a second goaltender-contact tariff under some other
+> number. Nobody has swept that book for goaltender-contact wordings that never say '69'."*
+
+### ⚠️⚠️ A NOTES-ON-VERIFICATION LIST WAS STALE BY THREE RULES *BEFORE* THIS ROUND, AND NO CHECKER CAN SEE IT
+
+**`uk_rules.md:601` said *"Only Rules 9.5, 9.12, 28, 37, 38, 41, 42, 64 and 86.6, and Section 11, are
+reported, so no EIHL interpretation of any other rule is stated anywhere here."*** ⚠️ **Verified against
+`git show HEAD:` — Rules 5, 7 and 46 were ALREADY reported in the committed body and already missing
+from that list.** **So the sentence has been false for more than one round, in the corpus's INTEGRITY
+LAYER.**
+
+✅ **Re-measured BY ENUMERATION, not arithmetic** — every `Casebook` mention in the body read for the
+rule it reports: **5, 7, 9.5, 9.12, 28, 37, 38, 41/42, 46, 64, 69, 86.6, and Section 11.**
+✅ **A THIRD LAYER WAS ALREADY RIGHT and became the anchor rather than the outlier:** the Common Mistakes
+bullet at `:436` names Rule 69, Rule 46, Rules 5.1/5.4/7, 5.6, 28 and 86.6 and says *"twelve of those
+rule numbers are reported here"* — **the enumeration matches it exactly**, so *"twelve"* held and was
+not touched.
+
+⚠️⚠️ **THE STANDING LESSON, and there is no tool for it:** ***"A sentence of the form 'only X, Y and Z
+are reported' in a Notes section is UNFALSIFIABLE BY EVERY CHECKER HERE and goes stale every time a body
+section is added. It will rot again the next time this document gains a Casebook rule."***
+⚠️ **Re-derive such a list by enumeration whenever the document gains a section — never by adding one to
+the count.**
+
+### ⚠️⚠️ SECOND LIVE CONFIRMATION TODAY: `check_quote_drift.py` IS CLEAN ON THE DEFECT IT LOOKS LIKE IT COVERS
+
+**An agent manufactured the truncated-quotation shape its own brief had named, in the same session, and
+caught it by hand.** Its first write closed a 69.2 quotation as `…whether or not a goal is scored."` —
+**a terminal period INSIDE the quote marks where the source sentence continues** (*"…, the attacking
+Player will receive a penalty (minor or major…)"*). ⚠️ **`check_quote_drift.py` FLAGGED NOTHING EITHER
+WAY — it reported clean on the DEFECTIVE version.**
+
+⚠️ **The agent's own conclusion, and it is the method:** ***"If I introduced a second of the same shape
+in a quotation whose continuation happens to fall outside the matched span, no tool in this repository
+and no step in my method would have seen it. Every quotation I added should be read past its closing
+mark by a second reader."***
+
+### 🔴 CARRIED FORWARD — found 24 September 2026, DELIBERATELY NOT in that commit
+
+⚠️ **These are real and unowned. They were found by reviews of repairs made the same day, and the round
+was closed rather than opened again — a wave that keeps spawning waves has no end.** ⚠️ **Each was
+declared by an agent AGAINST ITS OWN WORK, which is the highest-value class in this repository.**
+
+**1. ⚠️⚠️ THE STICK-LIFT ACT, SWEPT BY LABEL RATHER THAN BY ACT — the biggest of these.**
+`defender.md` now says holding an opponent's stick is priced in **all six books** (NHL 54.2, IIHF 54.2,
+**PWHL 55.2**, Hockey Canada 8.1, USA Hockey 622, CARHA 63). ⚠️ **Nobody asked what a book does when a
+stick lift becomes a SLASH, a STICK INFRACTION or UNSPORTSMANLIKE rather than holding.** The agent:
+> *"If any of the six reaches a held stick through a second rule the way CARHA 52(b) reaches goaltender
+> contact, my 'all six books' sentence is a verified quotation of an incomplete answer, **and it reads
+> as a complete one**."*
+✅ **It is testable and the method is named: sweep each book for the ACT — `pin the stick`, `trap the
+stick`, `stick on stick`, `prevent … from playing the puck` — NEVER for the word "holding".**
+⚠️ **This shape already bit once today:** `holdinganopponentsstick` scores **0** flattened in
+`usah.txt`, and **USA Hockey 622 prices the act by name** through its **Note**, not its heading. **A
+coordinator brief said "five of six books" on the strength of that zero; the agent found the sixth by
+searching the act.** ⚠️ **That error ran PERMISSIVE and toward the book most of this corpus's youth
+readers play under.**
+
+**2. THE CARHA BODY-POSITION FRAME, WHEREVER IT APPEARS IN THE CORPUS.** `body_contact_and_battles.md`
+was repaired for it; **CARHA 66(a) Note 2 grants the standing half** (*"defending players are entitled
+to 'stand their ground' or 'shadow' the attacking players"*) **while 49(a) reaches leaning or bodying
+to keep it.** ⚠️ **Named as plausible carriers, none opened:** `playing_without_the_puck.md`,
+`defender.md`, `winger.md`, `defensive_zone_coverage.md`, `offensive_zone_play.md`. **Brief it as the
+claim, not as five files.**
+
+**3. HOCKEY CANADA 8.3's REACH, BEYOND `body_contact_and_battles.md`.** 8.3 Interference prices
+impeding a non-puck-carrier with **no carve-out**, running to a major plus game misconduct on violence,
+**mandatory on injury**, match at 8.3(c) — and it is **UNSCOPED across all divisions**, unlike 7.3.
+⚠️ **Any document teaching a box-out inherits this gap.**
+
+**4. THREE `usah_casebook.txt` QUOTATIONS THAT NOTHING HAS EVER CHECKED.** `defender.md:89`, `:711`,
+`:762`. ⚠️ **`check_quote_drift.py` DOES NOT INDEX `usah_casebook.txt`** — they list under *"NOT FOUND
+IN ANY LOCAL SOURCE"*. **No tool in this repository can see them; only reading the source past the
+closing quote mark will.**
+
+**5. A CASEBOOK SITUATION'S OWN SCOPE IS NARROWER THAN THE CORPUS'S USE OF IT.** USA Hockey Casebook
+Rule 623 Situation 2 permits a stick lift *"at any time"* — ⚠️ **its own frame is *"under the Standard
+of Play guidelines"*, which is narrower than the document's *"in every league"*.** **Ask what rule
+decides whether the permitted act is available to this reader at all.**
+
+**6. HOCKEY CANADA READ FROM THE PLAIN EXTRACTION ONLY.** `hc.txt`, not the `_layout` twin. ⚠️ **A
+clause lost to a line-join in the 8.1 region is invisible.**
+
+**7. `ihuk_junior_roc`'s APPENDIX D, NEVER READ.** A four-Rules-of-Competition negative on the faceoff
+was searched **by LABEL** (`face.?off`, `Rule 76`, `draw`), **not by ACT**. ⚠️ ***"A clause that changed
+the draw without using the word 'face-off' — a restart procedure, a clock provision, a format appendix
+— would score zero on every pattern I ran."*** **Appendix D is the likeliest home and it was not read.**
+
+**8. TEN EIHL CASEBOOK RULE NUMBERS STILL UNREPORTED** in `uk_rules.md` (now twelve of twenty-two):
+Rules **6, 10, 11, 12, 30, 36, 47, 63, 77, 84**. ⚠️ **47 Head-butting, 63 Delaying the Game and 84
+Overtime plausibly bear on other documents.** ⚠️ **The disclosure is honest and must NOT be stripped.**
+
+**9. IIHF APPENDIX IV's INTERFERENCE-ON-THE-GOALKEEPER TABLE, on the Rule 69 write-up.** Both 69.3 and
+69.4 cross-refer to it and **it was not read** for the `uk_rules.md` section. **The *"is this the book's
+WHOLE answer"* gap, declared rather than closed.**
+
+**10. `uk_rules.md`'s NEW RULE 69 SECTION HAS NOT BEEN SAFETY-REVIEWED OR RENDERED.** Goaltender
+interference is penalty-bearing — **69.2 prices intentional contact at a minor or major whether or not
+a goal is scored.** ⚠️ **Nobody has tested whether its anti-permissive limb survives being voiced
+alone.**
+
+### ⚠️ TWO TOOL FACTS WORTH KEEPING, both measured 24 September 2026
+
+1. ⚠️⚠️ **`check_quote_drift.py` FALSE POSITIVE ON A DUPLICATED SENTENCE.** *"A goalkeeper is not 'fair
+game' just because they are outside the goal crease"* appears **TWICE** in the IIHF book — at
+`iihf_rules_2026-27.txt:4001` under **Rule 56**, where it continues *"…crease **area**. The ap…"*, and
+at **`:5678` under 69.4**, where it continues *"…crease. The ap…"*. **The tool keeps the CLOSEST match,
+matched the wrong occurrence, and reported an `ADDED '.'` that is not there.** ✅ **A drift hit on a
+sentence a book prints twice is the tool's own artefact — read the cited line directly.**
+2. ⚠️ **"blue paint" IS A TERM THE IIHF BOOK NEVER USES.** `grep -i "blue paint\|light blue"` returns
+**0** in `iihf_rules_2026-27.txt`; the only hit in the EIHL Casebook is its Rule 69 criterion 3.
+**The Casebook borrows a North-American colloquialism while the governing book defines the region by a
+RED marked line that BELONGS to the crease (Rule 1.7).** ⚠️ **That gap is exactly where a reader loses
+a goal standing on the line.**
+
+### ✅ CLOSED — the interleave false-zero census, run 24 September 2026
+
+⚠️ **`sources/README.md` had recorded this as open and uncounted for weeks.** It has now been run.
+
+✅ **HEADLINE: NO FALSE ZERO IS WRITTEN INTO THE CORPUS IN THIS CLASS.** Every cited situation row was
+read positionally from primary text and checked against the corpus's words. **Every one held.**
+Verified in full: NHL Table 14 §5 A–E and §6 A–H, Table 10, Table 11; IIHF Table 16 §5, §6, §7;
+PWHL Table 14 §5, §6, §7; IIHF Tables 6 and 7. **Four negative-existence claims were attacked with
+multiple wordings and positive controls — all four HELD.**
+
+**Exposure measured:** 171 lines across 23 files, 421 citation instances, of which **76 are
+situation-row citations** (`5 E` ×48). Densest: `goaltender.md` 30, `rules_primer.md` 24,
+`shooting.md` 13, `uk_rules.md` 12.
+
+✅ **`usah_casebook.txt` is NOT in this class** — its Situations are single-column prose (9.0% of
+non-blank lines carry a 5+-space gap, against 15.5% for `nhl_rules_layout.txt` and 28.4% for
+`iihf_rules_v1.1.txt`). Its false-negative class is the **page-furniture splice**, already recorded.
+
+✅ **Two routing defects found and FIXED in `sources/README.md` the same day** — read them there. In
+short: the *"read tables from `-layout`"* instruction is right for **reading** and manufactures a
+**100% false zero on the NHL's RESULT column** when followed as a **grep** instruction; and the IIHF
+entry said *"interleaves its two columns"* without saying **which** column dies. **It is the RESULT
+column — the ruling — and it is unreachable in all three IIHF extractions, `v1.1` included**, which
+contradicts that entry's own 2 September scoping.
+
+⚠️⚠️ **THE TRAP WORTH CARRYING: the only strings that survive everywhere are SINGLE-LINE cells.**
+*"Goal is allowed."* hits in all four NHL and PWHL extractions. **So a permissive row looks verifiable
+while its prohibitive sibling does not, and a grep-built picture of a table is BIASED TOWARD
+PERMISSION.**
+
+### 🔴 W1 — OPEN: the PWHL is cited by a label its book does not print, in two layers voiced ALONE
+
+**`pwhl_rules_layout.txt:8290-8400`: the PWHL's Table 14 prints `SITUATION | RESULT` as a column header
+and group headings (`5. Screening situations`) with COMPLETELY UNLETTERED ROWS.** No `A.`–`H.`, no
+*"Situation 5 E"* anywhere. **The NHL at least letters its rows; the PWHL letters nothing.**
+
+⚠️ **The corpus already knows this and the disclosure did not reach two summary layers.**
+`special_teams.md:1055` says *"The PWHL prints those same two screening rows in its own Table 14,
+**unlettered**"*, and `offensive_zone_play.md` and `playing_without_the_puck.md` carry the word too.
+`shooting.md:923` discloses the reconstruction **for the NHL only**.
+
+**The two sites, both ` ```facts ` lines voiced alone with a 300 ms break either side:**
+- `content/technique/shooting.md:459` — *"(NHL and PWHL Table 14, IIHF 2025/26 Table 16, **Situation 5 E**)"*
+- `content/positions/winger.md:460` — *"**NHL, PWHL and IIHF Situation 5 E** allows the goal…"*
+
+⚠️ **DIRECTION: not permissive.** The *ruling* is correct in all three books; this is a
+**citation-resolution** defect — a PWHL reader sent to *"Situation 5 E"* finds five unlettered rows.
+**Shape: a correction that reached the body of three documents and stopped before the summary layer of
+two others.**
+
+⚠️ **NOT DISPATCHED — both files were held by live agents when this landed.** ⚠️ **Check ownership
+before dispatching, and brief it as THE CLAIM — "the PWHL's rows are unlettered, wherever this corpus
+cites them by letter" — not as two line numbers.**
+
+### 🔴 STILL UNCENSUSED, with the command to continue
+
+1. **IIHF Appendix IV Table 15 / Table 13** (coincidental penalties), examples 18-20 and 32 — cited at
+   `game_management.md:906, :920, :1170` and `special_teams.md:911, :919, :1230, :1232`, **unverified**.
+   Continue with `grep -n "TABLE 15 ·" sources/iihf_rules_v1.1.txt`, then read the block by `sed` range.
+2. **NHL Reference Tables 1–9, 12, 13, 15, 16** — only 10, 11 and 14 verified.
+3. **IIHF Appendix IV Tables 1–4, 8–12** — not censused.
+4. **USA Hockey Casebook Situations** — the largest citation population (~670 lines). Ruled out of the
+   *interleave* class on measurement; **not censused on its own terms.**
+5. ⚠️ **`hc.txt` is PLAIN-ONLY** — the worst case for tables. The corpus's Hockey Canada and CARHA
+   citations here look like Glossary entries and Rule 8.5 rather than tables, **but that was not
+   confirmed.**
+
+⚠️⚠️ **THE CENSUS TESTED ONLY FOR MISSES, AND ITS OWN DECLARED GAP IS A CONFIDENT WRONG *YES*.**
+`sources/README.md` warns that an orphaned description can land under a **neighbouring row's** result,
+so a phrase search returns a hit **on the wrong row**. **A corpus sentence pairing a real description
+with a real-but-WRONG result would HIT on both halves of this census and pass clean.** ⚠️ **Only
+reading the `-layout` columns side by side catches that, and it was done for Tables 14/16 ONLY.**
+
+⚠️ **And a table claim with NO table number and no "Situation" label is invisible to the census regex
+entirely** — *"the NHL's own worked example answers 'Goal is allowed'"* would not match. ⚠️ **That is
+exactly the phrasing the re-aiming toward plain tactical prose produces.**
+
+### 📌 THE CREASE-LINE ROUND, 24 September 2026 — one claim, SIX documents, and it was WRONG IN A DIFFERENT WAY IN EACH
+
+**The claim:** every book that settles the question in its rule text or glossary counts the **red crease
+line itself** as crease, so *"out of the blue paint"* is **not** the boundary. **The instruction is
+*"off the red line, not merely out of the paint."*** ⚠️ **It is penalty-bearing and net-front, so the
+error direction is always permissive: a player stands where they believe they are safe and the goal is
+waved off.**
+
+⚠️⚠️ **THE ROUND'S LESSON: "BRIEF A CLAIM, NEVER A LINE" IS NOT ENOUGH ON ITS OWN — THE CLAIM WAS
+FALSE IN A DIFFERENT SHAPE IN EVERY FILE, AND A SINGLE BRIEF WOULD HAVE FOUND ONE SHAPE.**
+
+| Document | Shape of the defect | State |
+|---|---|---|
+| `foundation/rink_map.md` | **NHL/PWHL-only framing** at 4 sites; body contradicted its own callout 3 lines up | ✅ repaired |
+| `technique/shooting.md` | **already correct in every layer** — and found a **THIRD permissive table** nobody had counted | ✅ verified + extended |
+| `systems/offensive_zone_play.md` | **the ANTECEDENT defect** — the geometry layer *defined* crease **=** paint | ✅ repaired |
+| `positions/winger.md` | stale **"a pair of reference tables"** surviving in Common Mistakes only | ✅ repaired |
+| `foundation/rules_primer.md` | **already correct** — KT9 says the IIHF is *"at odds with its own table"* | ✅ verified, no edit |
+| diagram caption `the-goal-crease` | implied only the NHL/PWHL tables dissent | ✅ repaired |
+
+### ⚠️⚠️ THE FINDING THAT MATTERS MOST: THE ANTECEDENT DEFECT
+
+`offensive_zone_play.md` defined the crease as *"the goal crease — **the blue paint** — extends six feet
+out"*, directly under a facts line calling it *"your on-ice ruler for everything below."* ⚠️ **The
+appositive makes crease = paint BY DEFINITION, and every downstream "out of the paint" instruction in
+the document rested on it.** **It mentions no book and no table, so it survived every grep and every
+book-scope check.** ⚠️ **This is the inverse shape in its purest form: not a claim that is wrong, but a
+DEFINITION the correct claims were built on.**
+
+### ⚠️ A THIRD PERMISSIVE REFERENCE TABLE — the corpus counted two, the directory holds three
+
+**`pwhl_rules_layout.txt:8296-8326`, Section 11 Reference Tables, TABLE 14, Rule 71** — the row E
+equivalent at `:8323-8326` allows the goal to an attacker who *"plants herself on the crease line or
+outside the goal crease."* **PWHL Rule 1.7** (`pwhl_rules_layout.txt:831`) carries the NHL's silent
+*"all the space outlined by the crease lines"*. ✅ **So the PWHL is NHL-shaped, not IIHF-shaped: it adds
+a third permissive TABLE without adding a second CONTRADICTION. Only the IIHF contradicts itself.**
+
+⚠️⚠️ **AND THE SEARCH TRAP REPRODUCED EXACTLY: flattened, `creaselineoroutsidethegoal` scores 0 in
+`pwhl_rules_layout.txt` AND THE PHRASE IS THERE.** The two-column result splice breaks it. **It was
+found by searching `plantsherself` and reading POSITIONALLY.**
+
+### ✅ ANSWERED — do USA Hockey, Hockey Canada or CARHA publish a permissive table?
+
+**No.** `grep -ci "reference table"` = **0** in `usah.txt`, `usah_casebook.txt`, `hc.txt`,
+`hc_layout.txt` and `carha.txt` (**50** in both PWHL extractions). Their worked interpretations run the
+**restrictive** way — USA Hockey Casebook *The Rink* Situation 4 answers *"Yes"* that the line is part
+of the crease. ⚠️ **But that is a search for a LABEL, and the agent said so against itself:** a worked
+situation permitting a crease-line screen under another heading, naming neither *"reference table"* nor
+*"crease line"*, would have passed. **It did not read all 476 Casebook pages.**
+
+### 🔴 STILL OPEN — and two agents named it independently as the highest-value unreached item
+
+⚠️⚠️ **THE BRITISH LAYER HAS NEVER BEEN CHECKED ON THIS CLAIM.** *"The **EIHL Casebook is superseding,
+not supplementary** by its own Preamble, so an EIHL claim sourced to the IIHF book alone is unverified
+until it is checked."* `shooting.md` carries 🇬🇧-marked IIHF crease claims, **and so do `rink_map.md`'s
+repaired sites.** ⚠️ **Dispatched 24 September; if that agent's report is not in this plan, the question
+is still open.** ⚠️ **A book's silence is not a grant in either direction — where the Casebook is silent,
+the conservative reading ships.**
+
+### 🔴 STILL OPEN — inherited from the round, unowned
+
+1. ⚠️ **`offensive_zone_play.md` says *"the same instruction under all four"* while the same section
+   discusses **six** books** (PWHL 71.7 and CARHA 66(b) both named in it). **`ls sources/*.txt` returns
+   42.** This is the documented *"you checked four books and this corpus holds ten"* shape. **Not
+   adjudicated — flagged, not decided.**
+2. ⚠️ **Does a skate resting ON the red line already trip USA Hockey 625(b)'s neutral-zone-faceoff
+   stoppage**, independently of any goal? **`winger.md` and `offensive_zone_play.md` both ASSERT it
+   does, and neither verified it against the Casebook.**
+3. **The PWHL's table rows were read positionally in `_layout` only.** Nobody confirmed the unlettered
+   rows map to A–E as the NHL's do. ⚠️ **Nothing rests on it today — but if a future edit writes
+   *"PWHL Situation 5 E"*, that letter is UNVERIFIED.**
+4. **`defender.md:252`** tells a British junior reader to get their contact status *"from your league in
+   writing"* — **but `ihuk_junior_roc_layout.txt:153-157` publishes it as a table** (U10/U12
+   non-checking; U14/U16/U19 checking). ⚠️ **The RoC covers JUNIOR ONLY** — `ihuk_nihl_roc` and
+   `ihuk_wnihl_roc` score 0 for `check`. **Needs its own brief.**
+5. **`defender.md:870`** trailer says CARHA is *"the oldest of the five read here"* while the body says
+   **six**. Cosmetic, trailer layer, not voiced.
+
+### ✅ CLOSED — the crease-line claim's AUDIO layer, measured through the renderer 24 September 2026
+
+The agent that repaired `rink_map.md`'s four crease-line sites declared one thing it could not reach:
+*"a listener hears `:186` and `:188` as separate paragraphs and **I did not run `md_to_speech` to
+measure the chunk distance between them**. That is the specific unchecked thing, and it is checkable."*
+
+**Checked.** `python3 scripts/md_to_speech.py --only rink_map --out <own named dir>` → 1 document,
+54 chunks. ⚠️ **Own `--out` subdirectory, because the scratchpad is shared and a concurrent `--out` run
+both reads the wrong bytes and deletes the other agent's working set.**
+
+**All four repaired sites carry the contradiction AND the instruction inside the SAME chunk:**
+
+| Chunk | Site | Ends on |
+|---|---|---|
+| 001 | Key focus | *"…off the line is the only ice that is safe whichever book you are under, and a net-front player standing on it can cost their team the goal."* |
+| 012 | caption + body lead | *"…'on the line' is exactly where a net-front player stands."* |
+| 029 | named areas | instruction voiced inline (*"so stay off the line"*) before the pointer |
+| 053 | KT15 | *"Staying off the line is the only position safe whichever book you are under."* |
+
+✅ **And the ordering is right rather than merely adequate: chunk 012 delivers the contradiction, and
+chunk 013 — which states IIHF Rule 1.7 — is the NEXT chunk and itself ends on the same instruction.**
+So the qualification reaches the listener **before** the rule, not three paragraphs after it. **The
+`:186`/`:188` distance the agent feared is zero chunks.**
+
+⚠️ **This is the measurement CLAUDE.md demands and the reason it demands it:** *"for a reader it is
+three paragraphs; for a listener it is unreachable at the moment of instruction."* **Paragraph distance
+would not have answered it. Only the renderer does.**
+
+⚠️ Minor, not a defect: chunk 029 says *"See the crease section above for that"* — a `check_pointers`
+shape. **The substance is voiced inline immediately before it**, and a pointer aimed at the site is
+legitimate, so this is a wording nit and **not** to be swept.
+
+### 🔴 STILL OPEN from the same round — two censuses nobody has run
+
+1. ⚠️ **The interleave false-zero census.** `sources/README.md` records it as open in its own words:
+   *"If the interleave is general to Reference Table 14 — or to the IIHF's Appendix IV Table 16 — then
+   other situation-row claims in this corpus may rest on greps that returned a false zero… That census
+   has not been run."* ⚠️ **A grep for `"on the crease line"` returns 0 in the NHL and PWHL extractions
+   EVEN FLATTENED**, because the result column interleaves inside the phrase. **Every situation-row
+   claim in this corpus sourced by grep is suspect until this is run.** ⚠️ **A TRUE-LOOKING ZERO IS THE
+   MOST DANGEROUS PLACE TO END A SEARCH** — read the `_layout`/positional text.
+2. ⚠️ **Do Hockey Canada, USA Hockey or CARHA have a goalkeeper-interference reference table of their
+   own?** The corpus asserts all three reach the crease-line question **by rule text and glossary only**.
+   Nobody has verified that. ⚠️ **If any of them has a table row on the permissive side, every sentence
+   repaired this round is still incomplete in the same direction the old ones were.**
+
+### 🔴 `rules_primer.md` KEY TAKEAWAY 9 IS 7,634 CHARACTERS, VOICED AS ONE UNIT — measured 24 September 2026
+
+⚠️ **This is the documented worst-offender shape, and it is the largest instance found so far.**
+`content/foundation/rules_primer.md:1159`, Key Takeaway 9, is **7,634 characters — 2.6× its next
+largest sibling** and **48% of the section's 15,933 characters across six takeaways**:
+
+| Takeaway | Chars |
+|---|---|
+| **KT9 (`:1159`)** | **7,634** |
+| `:1161` | 2,939 |
+| `:1157` | 2,819 |
+| `:1155` | 2,206 |
+| `:1140` | 225 |
+| `:1114` | 110 |
+
+⚠️ **Re-measure before acting** — `rules_primer.md` is a live P2 target and these are line numbers,
+which is a figure. Count with `python3 -c` over the numbered list, not by eye.
+
+**What is in it:** Rule 69.1's *"only if"* ceiling, the NHL/PWHL/IIHF situation tables, USA Hockey
+625(b) and its Casebook Situation 9, Hockey Canada 8.5 with Interpretations 2 and 3 and the 8.5(b)/(c)/(d)
+tier ladder, CARHA 66(e) and 30(a), the trapezoid, USA Hockey 614(c)'s four triggers and the privileged
+area, and CARHA 58(b). ⚠️ **That is most of the document's rule content restated inside one takeaway.**
+
+⚠️⚠️ **THIS IS NOT A LENGTH COMPLAINT — IT IS THE OWNER'S REGISTER TEST.** *"A Key Takeaway is a
+KERNEL, not a second Common Mistakes and not a rules appendix."* Read alone with the body absent, KT9
+says a player's job is knowing Rule 69.1's clause structure. **The owner's test is: what does a player
+DO in that situation?** The answer is already in its own first sentence — *"keep your skates out of the
+blue paint, and off the red line around it, and never in the goaltender's road back to the crease."*
+
+✅ **SO THE REPAIR IS RE-ORDERING AND DEMOTION, NOT STRIPPING.** The instruction is the best sentence in
+the takeaway and it is already in the best position; everything after it is tariff and clause structure
+that **the body already carries** — `:725`, `:733`, `:735`, `:737` and the
+§*Screening is legal outside the crease* section, which KT9 itself links to.
+
+⚠️⚠️ **VERIFY THAT CARRIER CLAIM BEFORE CUTTING A SINGLE LIMB.** The demotion target differs by layer
+and **the body must be confirmed to hold each limb FIRST, limb by limb** — this is the per-limb layer
+test with the carrier list supplied, never a sweep. ⚠️ **Any limb the body does NOT carry cannot be
+demoted at all**, and several of these are mandatory-ejection tariffs where an omission tells a reader
+an act is cheaper than it is.
+
+⚠️ **AND CHECK THE INVERSE:** KT9 currently carries the IIHF-at-odds-with-its-own-table disclosure
+(*"which leaves the IIHF book at odds with its own table"*). That matches the repaired `the-goal-crease`
+caption and `rink_map.md`. **If it moves, confirm it survives somewhere a listener reaches** — it is an
+honest disclosure and non-negotiable 4 covers it.
+
+⚠️ **A repair is new text and new text has not been reviewed** — including when the repair is a
+shortening. The agent that re-aimed `body_contact_and_battles.md` caught **six** defects in its own
+replacement takeaways, **every one an overstatement toward a harsher, simpler rule.** That is what
+summarising does to a tariff. **Budget a `rules-verifier` and a `safety-reviewer` on the replacement.**
+
+### 🔴 THE FLOW-BREAK WAVE IS DISPATCHABLE — worklist measured 24 September 2026
+
+⚠️ **RE-RUN BEFORE DISPATCHING. `python3 scripts/check_callout_flow.py --by-section`** prints this
+itself, and these figures raced three live agents on `rink_map.md`, `faceoffs.md` and `defender.md`.
+**The tool is the owner; this table is a convenience and goes stale the moment anyone edits a file.**
+
+**Six documents hold 319 of the 690 — 46% — and they are disjoint, so they dispatch as one wave.**
+
+| Document | Flow-breaks | Where they concentrate |
+|---|---|---|
+| `foundation/rules_primer.md` | 79 | §7 Goaltender-Specific Rules (22), §6 PP/PK (15), §4 Penalties (12) |
+| `positions/goaltender.md` | 61 | Goaltender Interference (33), Playing the Puck (15), Situational (9) |
+| `technique/body_contact_and_battles.md` | 54 | §5 Legal Body Check (14), §12 Without Penalties (9), §9 Net-Front (7) |
+| `systems/faceoffs.md` | 46 | Violations/Ejections/Bench Minor (22), Procedure and Rules (9) |
+| `foundation/uk_rules.md` | 45 | The amendments that change what you do (33) |
+| `systems/special_teams.md` | 34 | PENALTY KILL (17), BOTH (14) |
+
+⚠️⚠️ **THE THREE LONGEST RUNS ARE THE BRIEF, NOT THE TOTALS** — `--stacks` names them:
+`goaltender.md:1061-1093` **14 in a row**, `rules_primer.md:646-666` **11**, `goaltender.md:1179-1197`
+**10**, all three `[separate blocks]`, which is the real flow break rather than one long warning region.
+
+⚠️ **NEVER BRIEF THIS WAVE FROM `--stacks` ALONE, AND DO NOT JUDGE IT BY WHETHER `--stacks` FALLS.**
+A marker moved mid-paragraph still scores as a stack forever — the tool's own header says the audio
+benefit is real and permanent but the count benefit is an artefact. ⚠️ **AND `classify()` files ANY
+paragraph opening `**bold**` as "own paragraph" wherever its marker sits, so the default and `--stacks`
+OVER-COUNT by construction.** A coordinator briefed "eleven amber panels in a row" in `rules_primer.md`
+off `--stacks`; `--panels` found **three**, with prose between two of them, and the other eight were
+already repaired.
+
+⚠️⚠️ **THE TARGET IS NEVER ZERO, AND THE WORK IS PLACEMENT AND CONCISION — NOT REMOVAL.** The test is
+the style guide's: **does a reader who acts on the section WITHOUT the warning get hurt, ejected or
+penalised?** If yes it STAYS and may only be moved or merged. If no it was a hedge wearing a marker.
+⚠️ Non-negotiables 3, 4 and 6 all bite here, and **a document that ends with fewer callouts but a lost
+exception has failed.** ⚠️ **Stripping the last marker from a paragraph silently deletes a spoken
+`"Important."` and NO CHECKER IN THIS REPOSITORY CAN SEE IT** — `--markers` shows which lines carry
+more than one, i.e. where a removal is free.
+
+⚠️ **These two censuses answer different questions and only one of them is this wave's:** `--panels` is
+what a READER sees and is ~85% done; **the marked-PARAGRAPH count is what a LISTENER hears**, and a run
+of eleven bold prose paragraphs each speaking *"Important."* is a real listener defect that `--panels`
+scores as clean. **This wave is the listener's.**
+
+⚠️ **`rules_primer.md` scoring highest is not evidence it is worst** — a rules document is supposed to
+carry warnings. **A high score is a candidate for reading. NEVER SWEEP THIS PATTERN.**
 ⚠️ **`--panels` falling from 358 to 54 is real work and it is NOT a proxy for this.** Do not report
 P2 as nearly done on the strength of the panel figure.
 
@@ -131,6 +1674,103 @@ across 16**. **Neither was wrong — concurrent agents were editing `content/` b
 which is this file's own rule for checkers applied to censuses: **the only run that counts is the one
 after every agent has finished.**
 
+### 🔴🔴 `--by-section` AND `--stacks` ARE THE WRONG BRIEFING INSTRUMENT FOR CALLOUT FLOW
+
+**Measured 24 September 2026, after a coordinator briefed six agents off `--by-section` and THREE
+refuted the premise independently.**
+
+| file | `--by-section` said | `--panels` (what a reader sees) |
+|---|---|---|
+| `rules_primer.md` | 79 | **0** |
+| `goaltender.md` | 61 | **0** |
+| `special_teams.md` | 34 | **0** |
+| `shooting.md` | 24 | 1 |
+| `risk_management.md` | 21 | **0** |
+| `game_management.md` | 20 | 2 |
+
+⚠️⚠️ **THE PANEL DEFECT IS AT ITS FLOOR ALMOST EVERYWHERE — the marker-move repair already ran.**
+Those counts are bold-opening paragraphs with INLINE markers, the shape `classify()` over-counts, and
+the tool's own docstring says so: *"every MOVE-2 repair reappears in this census. The AUDIO benefit is
+real and permanent; the COUNT benefit was an artefact. Do not bank it."*
+
+⚠️⚠️ **AND THE COORDINATOR'S BRIEF MADE THE EXACT MISTAKE IT WARNED ITS AGENTS ABOUT** — it cautioned
+each of them that `--stacks` over-counts, then briefed them from `--by-section`, which has the same
+defect. **`--by-section` has now misled briefs about `rules_primer.md` twice.**
+
+### 🔴🔴🔴 THIS CENSUS WAS WRONG FOUR TIMES. THE UNIT IS THE **LINE**. MEASURE AGAINST THE RENDERER.
+
+⚠️⚠️ **SETTLED 24 September 2026 BY RENDERING, NOT BY READING THE SOURCE.** On
+`body_contact_and_battles.md`:
+
+| | count |
+|---|---|
+| **`md_to_speech` actually spoke** | **139** `"Important."` |
+| predicted per **LINE** | **146** ← right unit; the gap is unvoiced trailers and dropped tables |
+| predicted per **BLOCK** (`\n\s*\n`) | **89** — **36% under** |
+
+**Why the line wins:** `md_to_speech.py:2778` sets `important = "⚠" in text` per PARAGRAPH **and
+`:2827` sets `important = "⚠" in item` per LIST ITEM.** ⚠️ **In this corpus a prose paragraph and a
+list item are each ONE LINE**, so the line is the unit for both. **A blank-line block is not a
+paragraph here** — it fuses a whole bullet list, a table or a trailer into one "paragraph".
+
+### The four errors, because the pattern is the useful part
+
+1. **Counted lines, labelled them paragraphs.** Figures right, label wrong.
+2. **"Corrected" to blocks** — which made the corpus's densest site visible but **was the wrong unit**.
+3. **Sources trailers ranked as prose.** The filter matched only `*Rules:` and **missed `*Rulebooks:`
+   and `*Unverified…`**, so trailers still scored.
+4. **Blocks fuse lists and tables.** A *"21-marker paragraph"* was a **41-line Common Mistakes list of
+   48,795 characters** whose largest single bullet holds **six**. A *"19-marker paragraph"* was **two**
+   list items. One entry was a **table**.
+
+⚠️⚠️ **EVERY CORRECTION CAME FROM SOMEONE GOING TO LOOK AT AN ENTRY — a gate reading the definition,
+an agent visiting the site. The TOTAL reproduced every time.** ⚠️ **A reproducing total is not
+evidence a worklist is right, and four rounds of arithmetic could not substitute for one render.**
+**`md_to_speech` was available throughout. Run it.**
+
+### ✅ Use `check_callout_flow.py --markers`, which already counts per line
+It reports marker-bearing lines and how many carry more than one. ⚠️ **NO FIGURE IS WRITTEN HERE.**
+**Then read the hits** — a long bullet list is not a flow defect, and a Sources trailer's markers are
+scope qualifiers on citations where **no removal is free**.
+
+### ⚠️⚠️ AND FOR THE DENSEST SITES THE ANSWER IS "NOT A CALLOUT PROBLEM AT ALL"
+
+**Measured on `body_contact_and_battles.md`, the file briefed as the corpus's worst:** `--panels` **1**,
+`--bare` **0** — both already at floor. Its `:1183` is **one bullet of 8,785 characters carrying 13
+markers**, running roughly nine distinct sub-claims in one breath. **The agent read all 13 and every
+one sits on a genuine corrective limb** — *"Read its second half before you take comfort from the
+first"* — **not one a hedge wearing a marker.**
+
+> *"Removing amber from an 8,785-character paragraph does not make it readable, and every removal here
+> would cost a counterweight."*
+
+✅ **So the owner's *"breaks up the flow"* complaint, in this file, is a PARAGRAPH-LENGTH AND ORDERING
+problem wearing a callout costume.** ⚠️ **The remedy is the P1 one — split the bullet, lead with the
+instruction, follow with the tariff — which changes words.** **`:1183` (8,785 chars) and `:1208`
+(8,306) are the correct next P1 brief. Do not send another placement wave at this file.**
+
+⚠️ **AND A TABLE THERE IS ONE ORDINARY EDIT FROM SILENCE:** `:1479` sits at **16 characters and 2 rows
+of headroom** before `md_to_speech` DROPS it and a listener loses the whole infraction-test table.
+`:1266` is already flagged `[4 cols > 3]`. **Run `check_tables.py --near` before editing either.**
+
+### ⚠️ AND THE REMOVAL IS ONLY FREE ON A MULTI-MARKER LINE
+
+`md_to_speech.py` sets `important = "⚠" in text` **per paragraph, not per marker** — confirmed by two
+agents independently. **So taking one marker off a paragraph that has several costs the listener
+NOTHING**, and taking the last one silently deletes a spoken escalation no checker can see.
+**`--markers` names the lines where removal is free.** A wave that removed 15 markers from
+`rules_primer.md` held spoken `"Important."` at 169 → 169 by obeying exactly this.
+
+### ⚠️⚠️ AND THE DEEPER DOUBT, RAISED BY AN AGENT AGAINST ITS OWN CLEAN RESULT
+
+> *"The owner's 'breaks up the flow' complaint may, in this section, be a paragraph-length and
+> ORDERING problem wearing a callout costume."*
+
+**`rules_primer.md:646-666` is eleven consecutive paragraphs of 1,500–4,000 characters each,
+wall-to-wall five-book tariff comparison. Removing amber does not make that readable.** ⚠️ **The
+remedy is the P1 one — lead with the instruction, follow with the tariff — which changes words and is
+outside a placement brief.** **Do not send another placement wave at it.**
+
 ### P1 — tactics over rules. The FRONT layers are largely won; the BACK two are the work.
 
 `check_tactics_ratio.py` · **corpus-wide: 64% of 1,232,320 words sit in rules-bearing units.**
@@ -142,8 +1782,38 @@ what the owner's instruction actually turns on:**
 |---|---|---|
 | **Key focus** | **25%** | 2 of 39 |
 | **Overview** | **43%** | 3 of 39 |
-| **Key Takeaways** | **70%** | **11 of 39** |
-| **Common Mistakes** | **77%** | **12 of 39** |
+| **Key Takeaways** | 70% → **69.5%** | **11 → 8 of 39** |
+| **Common Mistakes** | 77% → **76.8%** | **12 → 11 of 39** |
+
+⚠️ **THESE ARE WORD-WEIGHTED AND STATED TO ONE DECIMAL ON PURPOSE.** A commit gate and the
+coordinator disagreed 76 vs 77 on Common Mistakes; the true value is **68,268/88,868 = 76.8%**, and
+the gap was **truncation versus rounding, not a measurement error.** ⚠️ **A whole-number percentage
+in this table cannot survive two readers. State the fraction or state the decimal.**
+
+⚠️⚠️ **READ THE TWO COLUMNS DIFFERENTLY — THE PERCENTAGE IS THE WEAKER ONE.** After a full day of
+re-aiming across thirteen documents the headline moved **one point**, while the count of documents in
+the worst band fell **11 → 8**. **The percentage is a poor instrument here and every agent that
+worked it said so independently:**
+
+- **`check_tactics_ratio` scores a whole numbered item as rules-bearing if ANY sentence in it names a
+  book.** A 150-word penalty-kill takeaway that is pure shape-and-pressure instruction scores **100%
+  rules-bearing** because it cites `USA Hockey 624(b)(1)` once — **and that citation must stay,
+  because whether your clear is legal IS the tactic.**
+- **`rink_map.md` went 84% → 70% having cut ZERO rules words** (1,423 → 1,424). **The entire move was
+  ADDED TACTICS.** That is the shape to aim for.
+- **`team_play_and_culture.md` went 83% → 85% and the agent refused to chase it down**, because every
+  word it added landed in units already scored rules-bearing. Driving it down meant cutting the answer
+  to a Check-yourself question or splitting a sentence to game the metric. **It did neither.**
+
+✅ **THE REAL WIN WAS ABSENCE, NOT PROPORTION.** On **seven** documents the defect was a layer that
+said nothing a player does: whole sections with **no Key Takeaway at all** (`faceoffs` special teams ·
+`winger` power play AND penalty kill · `rink_map` home plate AND left/right shot ·
+`team_play_and_culture` not-running-up-the-score, **which is the subject of a Check-yourself question
+whose preamble tells the reader the answer is in the Key Takeaways**), and eleven Common Mistakes
+bullets across three documents that named a mistake and its cost and **never said what to do.**
+
+⚠️ **So do not judge the next wave by this table.** **Ask: does each unit lead with what a player
+does, and is every section represented in the layer a listener hears alone?**
 
 ✅ **So the owner's original complaint — Key focus and Overview opening on rules — IS SUBSTANTIALLY
 REPAIRED.** 🔴 **The remaining P1 work is the BACK TWO LAYERS, and this file already said so at

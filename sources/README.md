@@ -509,7 +509,19 @@ before concluding a number is absent.
 > extractions**, because the interleaving is in the PDF's own text ordering rather than in the flag.
 > ⚠️ **SCOPED, 2 September 2026: this is a property of `iihf_rules.txt` — the Ghostscript mirror —
 > and NOT of `iihf_rules_v1.1.txt`.** In v1.1 the table extracts as clean side-by-side columns and
-> **every row is legible on a single physical line**. The `sed`-range advice still stands for both;
+> **every row is legible on a single physical line**.
+>
+> ⚠️⚠️ **THAT SCOPING IS TOO GENEROUS, AND THE HALF IT OMITS IS THE ANSWER. Re-measured
+> 24 September 2026 across all three IIHF extractions on disk:** the **description** cells (5 C, 5 E,
+> 6 D) are reachable in `iihf_rules_v1.1.txt`, `iihf_rules.txt` **and** `iihf_rules_2026-27.txt` — but
+> the **RESULT** cells (5 B, 6 B, 6 D) are **NOT FOUND in any of them**, and neither is
+> *"loss of goal only"*. ⚠️ **So for the IIHF it is the RULING that is ungreppable, everywhere, v1.1
+> included.**
+>
+> ⚠️⚠️ **THIS PARAGRAPH SAID "interleaves its two columns" AND NEVER SAID WHICH COLUMN DIES. That is
+> the whole defect:** an agent sweeping the IIHF for *"Goal is disallowed"* or *"loss of goal only"*
+> gets a **true-looking zero ON THE ANSWER** and stops — the exact failure this file's own
+> true-negative warning describes, one column over. The `sed`-range advice still stands for both;
 > the *"cannot be grepped in any extraction"* framing does not apply to v1.1. Verified by reading
 > Appendix IV in full in both files.
 >
@@ -1231,6 +1243,31 @@ nothing about them either way** — it cannot find what it cannot match, and it 
 
 ⚠️ **`nhl_rules_layout.txt` has the NHL tables correctly and `nhl_rules.txt` does not.** **Read any
 reference-table row from the `-layout` extraction, and read it positionally even there.**
+
+⚠️⚠️ **BUT THAT INSTRUCTION IS FOR READING, NOT FOR GREPPING — AND FOLLOWED AS A GREP INSTRUCTION IT
+MANUFACTURES A 100% FALSE ZERO ON THE NHL'S RESULT COLUMN, WHICH IS THE HALF CARRYING THE RULING.**
+Measured 24 September 2026 by hand-transcribing cells positionally and testing each as an
+alphanumeric-flattened substring:
+
+| NHL Table 14 | `nhl_rules.txt` (plain) | `nhl_rules_layout.txt` |
+|---|---|---|
+| **description** (left) cells, 9 rows | 6 / 9 NOT FOUND | **9 / 9 NOT FOUND** |
+| **result** (right) cells, 6 strings | **1 / 6 NOT FOUND** | **5 / 6 NOT FOUND** |
+
+**Plain `pdftotext` reads DOWN each column, so the NHL's result cells survive there and die in
+`-layout`.** ⚠️ **So the two extractions fail on OPPOSITE halves, and this file said only the first
+half of that for weeks.**
+
+✅ **The operative rule, stated as three separate jobs:**
+- **To PAIR a row with its result, or to read by eye — use `-layout`.** It is the only extraction that
+  keeps the columns apart, and nothing else can tell you which result belongs to which situation.
+- **To GREP an NHL table's RESULT column — use PLAIN.**
+- **To GREP a PWHL table — neither works.** Description cells score 3/3 NOT FOUND in **both**
+  `pwhl_rules.txt` and `pwhl_rules_layout.txt`; it is the worst of the three books.
+
+⚠️ **The only strings that survive everywhere are SINGLE-LINE cells** — *"Goal is allowed."* hits in
+all four NHL and PWHL extractions. ⚠️⚠️ **THAT IS THE TRAP: A PERMISSIVE ROW LOOKS VERIFIABLE WHILE ITS
+PROHIBITIVE SIBLING DOES NOT**, so a grep-built picture of a table is biased toward permission.
 
 ⚠️⚠️ **This one is more dangerous than the other four, because a phrase search here does not merely
 return zero — it can return a HIT ON THE WRONG ROW.** An orphaned situation text landing under a

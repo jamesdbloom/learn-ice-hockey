@@ -278,6 +278,34 @@ getting hurt doing the thing the first half just taught him."*
 **The test, applied before any cut:** *does what remains teach an act without the constraints
 that make it survivable?* If yes, **restore the constraints or cut the whole section.**
 
+### ⚠️⚠️ AND A CUT IS ONLY ONE OF THREE WAYS TO BREAK THIS PAIRING — all three were measured on 24 September 2026
+
+**The rule above guards against CUTTING. The pairing can also be divided without anybody cutting
+anything.**
+
+**1. A SYNTHESIS SEAM can fall between the method and its never-dos.**
+`synthesize_style_b.py --dry-run` on the exemplar splits it into five requests at the default
+4,500-character target — and **seam 4 falls between the shot-block method and its four never-dos.**
+⚠️ **Nothing is missing from the script; the pairing is simply delivered in two API calls.**
+✅ **`--max-chunk-chars 5000` fixes it for free** — same five chunks, same cost, **every seam on a
+numbered-idea boundary the script already pauses at.** **Use it, and check `--dry-run`'s seam
+positions against the pairings before any paid run.**
+
+**2. A CHUNK BOUNDARY in the corpus renderer can do the same to a document.** The corpus's own
+measure is `md_to_speech`, and chunk distance is not paragraph distance. **A qualifier three
+paragraphs away is a different chunk and unreachable at the moment of instruction.**
+
+**3. A LAYER BOUNDARY is the third, and it produced a CRITICAL the same day.**
+`winger.md`'s penalty-kill Key Takeaway told a reader to *"block from close and on your feet"* — the
+method — while **"head out of the shot lane", which this corpus calls *"the one cue that never
+bends"*, sat in the body, the facts block and Common Mistakes but NOT in the takeaway.** It rendered
+as the **final chunk**, and the nearest head-position teaching was **eighteen chunks earlier.**
+⚠️ **Every layer had the limb except the one voiced alone.**
+
+⚠️⚠️ **SO THE TEST IS NOT ONLY "DID I CUT IT?" — IT IS "WILL THE LISTENER HEAR IT IN THE SAME
+BREATH AS THE METHOD?"** **Check the cut, the seam AND the layer. Measure with `--dry-run` and with
+the renderer; do not reason about it.**
+
 Sections this reaches, at minimum: blocking shots · net-front box-outs and walk-outs · meeting
 the boards · retrievals with pressure behind you · anything a goaltender does in traffic ·
 anything at all in an injury-response section.
@@ -454,12 +482,21 @@ implement.
 ## 12. Before a Style B script is accepted
 
 - [ ] Every claim traced to the source document. **Name the line for each.**
-- [ ] **Rendered through `scripts/md_to_speech.py` and every chunk read.** ⚠️ **The exemplar
-      was NOT rendered** — its author flagged that as the specific thing he could not check.
-      **It is the first thing every subsequent script does.** ⚠️ Give the run its **own named
-      `--out` directory**: the scratchpad is shared between concurrent agents, and a naive
-      glob over the output root returns another agent's document.
-- [ ] `scripts/check_pointers.py` clean of anything pointing at an unheard layer.
+- [ ] **Chunked through `synthesize_style_b.split_script` and every chunk read.**
+      ⚠️⚠️ **THIS CHECKBOX NAMED THE WRONG TOOL UNTIL 24 September 2026, AND THE TOOL IT NAMED
+      CANNOT DO THE JOB.** It said *"rendered through `scripts/md_to_speech.py`"*. **That script
+      renders CORPUS MARKDOWN** — its `--content` argument is a directory of corpus documents and
+      `--only` filters by document id. **A Style B script is a different artefact and is not in
+      `content/`.** **The Style B chunker is `synthesize_style_b.split_script(body, max_chars)`,
+      and `--dry-run` prints the split without calling the API.** ⚠️ **An agent hit this and said
+      so: a brief carrying an unrunnable command costs the next agent a round trip.**
+      **The exemplar was NOT chunk-read** — its author flagged that as the specific thing he
+      could not check. **It is the first thing every subsequent script does.**
+- [ ] ⚠️ **`scripts/check_pointers.py` CANNOT BE RUN ON A SCRIPT.** It reads `content/`, so it
+      cannot see a `.local.md`. **The backward-pointer audit is therefore BY HAND** — and §5's
+      four banned phrasings are a phrase list, not a test: an agent found *"Gap control, as we
+      covered it"* surviving four clean `grep -c` runs. **A ban enforced by a phrase list is not
+      a ban on the shape. Read for the SHAPE.**
 - [ ] A **`rules-verifier`** pass **against the primary rulebooks, not against the source
       document** — a source-comparison pass cannot see a transmission error.
 - [ ] A **`safety-reviewer`** pass if the document touches contact, technique at speed,

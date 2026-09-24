@@ -315,7 +315,15 @@ BINARY MODEL BEFORE A `site-reviewer` LOOKED AT THE PAGE (24 September 2026):**
 |---|---|
 | `aside.callout-warning` | the amber **PANEL**. `--panels` counts these. |
 | `span.warn-inline` | **amber bold text, an amber left bar and a tint** — eye-stopping. A marker moved onto a **STRONG run** gets this. |
-| nothing | a **small black glyph mid-sentence**, often with no space after it, reading as a typo. |
+| nothing | the glyph with **NO TYPOGRAPHIC ESCALATION** — no bold, no left bar, no tint — reading as a stray emoji dropped mid-sentence. |
+
+⚠️⚠️ **STATE 3 IS NOT "A SMALL BLACK GLYPH", AND THIS TABLE SAID SO FOR WEEKS.** Measured in a browser
+on 24 September 2026 and zoomed: **`⚠️` is a COLOUR EMOJI and renders in its native amber-yellow
+triangle whatever the plugin does.** ⚠️ **What state 3 loses is the BOLD, THE LEFT BAR AND THE TINT —
+not the colour.** **A brief describing these as "black" sends the next agent looking for the wrong
+thing.** ✅ **The reviewer's own test still reproduced exactly: it skimmed a screenshot, stopped dead on
+both `warn-inline` runs, and did NOT notice the bare glyph in the same image — it found it only by DOM
+walk afterwards.** **The defect is real; the description was wrong.**
 
 ⚠️ **SO A MOVED MARKER IS NOT DEMOTED TO PROSE — IT IS DEMOTED FROM PANEL TO INLINE AMBER.**
 `uk_rules.md` went from 25 panels to **2 panels plus 83 inline amber marks**, one every ~530 px. The
@@ -403,6 +411,30 @@ found on the page: *"⚠️ **Hockey Canada 7.8(a)**"* amber, the tariff after i
 ⚠️ **Do not reach for de-marking instead.** Stripping the last marker from a paragraph **silently
 deletes a spoken escalation** and no checker in this repository can see it. `check_callout_flow.py
 --markers` shows which lines carry more than one, i.e. where a removal is free.
+
+⚠️⚠️ **AND AN AGGREGATE SPOKEN-`"Important."` DELTA CAN HIDE ONE. CHECK PARAGRAPH BY PARAGRAPH.**
+Measured 24 September 2026, **on the coordinator.** A wave on `goaltender.md` showed 79 → 77, and the
+coordinator explained the −2 as coming from a paragraph MERGE — a sanctioned operation. **Only one of
+the two did.** The other was a paragraph whose **LAST marker had been stripped**, losing its spoken
+escalation outright. ⚠️ **It was sitting INSIDE a delta that had already been accounted for, so the
+explanation is what would have closed the round over it.** The reviewing agent's words:
+
+> ***"That is the exact defect the brief told me no checker can see, and it was sitting inside a delta
+> the brief had already explained away."***
+
+⚠️ **A net figure is the sum of a loss and a gain, and both are invisible in it.** `md_to_speech.py`
+sets `important = "⚠" in text` **per paragraph, not per marker**, so the test is cheap: split both
+revisions on blank lines, pair the paragraphs, and **name every paragraph that had a marker and now
+has none.** ⚠️ **Do this for every file in a marker wave, not for the wave's total** — and the agent
+that found it said the same thing about its siblings: *"I would check the others' spoken-`Important.`
+deltas paragraph-by-paragraph rather than in aggregate."*
+
+⚠️ **AND A MERGE IS NOT AUTOMATICALLY SAFE EITHER.** The merge in that same wave fused two paragraphs
+making **opposite-direction claims about one rule row** — one saying the row protects you, the other
+*"do not read its silence as immunity, because it is not"* — into a single 2,941-character breath.
+**The limb that lost its own escalation was the PERMISSIVE-CORRECTION one**, the half telling a reader
+the act is more expensive than the silence implies. **Merging two paragraphs that state ONE hazard is
+sanctioned; merging a claim with its counterweight is not.**
 
 ---
 
@@ -550,6 +582,34 @@ sentence also says nothing about the 'first violation only' limit… so treat on
 have."* **Where a book is silent, the conservative reading is the one that ships, and the sibling that
 already reasoned about it is the first place to look.**
 
+⚠️⚠️⚠️ **AND ON 24 September 2026 AN AGENT'S SELF-DECLARED "MOST LIKELY NEXT DEFECT" WAS TESTED AND
+WAS REAL — TWO HOPS OUT FROM THE ORIGINAL FINDING.** It had written *"USA Hockey and CARHA write no
+rule"* about the lacrosse-style move on a penalty shot, then flagged its own negative against itself:
+
+> ***"My negative for both is a TRUE negative on the label and on the act's several wordings — which
+> is precisely the kind that stops a search… If [USA Hockey's high-sticking rule] reaches a cradling
+> shooter, the corpus's 'write no rule' for USA Hockey is a half-answer on this act."***
+
+**It does. USA Hockey Rule 621(d) and CARHA Rule 62(d) both stop play for a puck played above the
+shoulders — an ORDINARY PLAYING RULE that applies on a penalty shot as anywhere else.** So the
+shoulder-height cap is written in **all six books**; what those two genuinely lack is a crossbar
+condition and a penalty-shot-specific procedure.
+
+⚠️⚠️ **AND THE OLD WORDING WAS PERMISSIVE IN EFFECT WHILE READING AS CAUTIOUS.** *"Write no rule, so
+do not assume it"* tells a USA Hockey reader **nothing governs the act** — when in fact raising the
+puck above his shoulders **kills the goal and stops the shot.**
+
+⚠️⚠️ **THE SEARCH THAT FOUND IT IS THE WHOLE LESSON: `lacrosse` and `cradl*` SCORE ZERO in `usah.txt`,
+`usah_casebook.txt` and `carha.txt`.** **Those books price the act without ever naming the move.** The
+zero was true, reproducible, and the reason three sites shipped a half-answer. **What broke it was
+sweeping for the ACT — `heightoftheshoulders`, `abovethenormalheight`, `battingthepuck` — and reading
+every hit with context rather than counting them.**
+
+✅ **SO REQUIRE THE DECLARATION AND THEN TEST IT.** *"What this method could not have found"* is not a
+courtesy at the end of a report; **it is the next brief, and here it was the next DEFECT.** ⚠️ **An
+agent that names its own weakest negative has done the hardest part; a coordinator that files the
+report without testing it has thrown that away.**
+
 **A false negative leaves you uneasy and you search again. A true negative satisfies you and you
 stop.** ⚠️ **So a confirmed absence is the most dangerous place to end a search, not the safest.**
 **After any negative — true or false — ask what OTHER rule the book uses to reach the same act**, and
@@ -591,7 +651,30 @@ reached the body and REVERSED THE PREMISE A SUMMARY LAYER WAS BUILT ON.** Twice 
 - A body and facts block gained a cross-checking limit. **A Key Takeaway still promised the move
   *"needs no condition met in any book."***
 
-⚠⚠ **BOTH DIRECTIONS TELL A READER AN ACT IS CHEAPER THAN IT IS, AND NO CHECKER CAN SEE EITHER.**
+⚠️⚠️⚠️ **AND THERE IS A THIRD SHAPE, MEASURED 24 September 2026, WHICH A RE-AIMING WAVE CREATES AND
+WHICH IS SUBTLER THAN BOTH: A QUALIFIER THAT CHANGES JOBS WHEN IT MOVES BETWEEN LAYERS.**
+
+**The body carried:** *"do not read 69.7 as room to lean on a goaltender **who already has the
+puck**"* — where the clause correctly limits **the Rule 69.7 carve-out**.
+**The re-aimed Key Takeaway became:** *"go and get it **without leaning on a goaltender who already
+has the puck**"*.
+
+⚠️⚠️ **THE QUALIFIER BECAME THE INSTRUCTION, AND ITS ANTECEDENT STAYED BEHIND — so the sentence now
+LICENSES leaning on a goaltender who does NOT have the puck.** HEAD had said *"without leaning on the
+goaltender"*, **unconditional**. `carha.txt` **66(b)** is flat — *"deliberate contact with a
+goalkeeper **whether in or out of the goal crease**"*, **no possession condition** — and Hockey
+Canada **8.5(a) Interpretation 1** is flat too. **It is a Key Takeaway, voiced ALONE.**
+
+⚠️ **So when a clause moves between layers, ask WHAT IT WAS QUALIFYING.** A limit on a *carve-out*
+becomes a *permission* the moment the carve-out is left behind. **This is not a propagation failure —
+every layer was updated. It is a MEANING failure inside a correct-looking propagation.**
+
+⚠️⚠️ **AND THE REVIEWER THAT CAUGHT IT NAMED THE LIMIT OF THE METHOD AGAINST ITSELF:** it traced the
+clause home only because *"who already has the puck"* is a lexically unusual string. **"A demoted limb
+that left no lexical trace would have passed me."** **There is no tool for this. Only a reader who
+asks what each moved clause was attached to.**
+
+⚠⚠ **ALL THREE DIRECTIONS TELL A READER AN ACT IS CHEAPER THAN IT IS, AND NO CHECKER CAN SEE ANY OF THEM.**
 ⚠️ **So after repairing a claim, do not only ask *"did the fix reach every layer?"* — ask
 **"WHICH LAYER WAS WRITTEN ASSUMING THE OLD ANSWER?"** A layer that never mentioned the claim can
 still have been BUILT ON IT.** **Both were found by a fresh reviewer reading the whole document, not
@@ -985,6 +1068,23 @@ The short form:
 
    ⚠️⚠️ **TWO SEARCH FAILURES THAT LOOK LIKE FINDINGS, both measured on 22 September 2026.**
 
+   ⚠️⚠️ **AND A THIRD, MEASURED 24 September 2026: THE SHORTER, MORE OBVIOUS PATTERN IS THE ONE THAT
+   FAILS, BECAUSE THE LINE BREAK FALLS INSIDE IT.** Hunting USA Hockey's *"A match penalty for reckless
+   endangerment may also be assessed for X"* form in `usah.txt`:
+
+   | pattern | hits |
+   |---|---|
+   | `may also be assessed` (raw) | **1** |
+   | `match penalty for reckless endangerment` (raw) | **16** |
+   | `may also be assessed` (flattened) | 17 |
+
+   ⚠️ **The book breaks the clause as `"may also be` / `assessed for X."`, so the obvious four-word
+   search returns ONE hit where sixteen rules carry the form — a near-total false negative that LOOKS
+   like a clean result.** **An agent found this and said so: *"a brief that said 'grep for the
+   sentence' would have produced a near-total false negative."*** ⚠️ **Prefer the LONGER, earlier
+   fragment — it survives the wrap that kills the shorter one — and flatten before you trust any
+   count.**
+
    **(1) A ZERO FROM A *LABEL* IS NOT AN ABSENCE OF THE *RULE*.** A corpus-wide sweep for the
    flattened term `kickshot` returned **0** for the NHL, IIHF and Hockey Canada. The figure is real
    and reproduces. ⚠️ **It is also meaningless: those books describe the act without ever using the
@@ -1016,6 +1116,17 @@ The short form:
    count. ⚠️ **A naive `grep -o` over raw SSML can also appear to truncate a sentence at a word like
    `CARHA` — that is `<sub alias>` markup splitting the match, not a defect. De-tag before reading.**
 
+   ⚠️⚠️ **AND GREPPING RENDERED SSML FOR ANY FIGURE RETURNS A FALSE NEGATIVE, BECAUSE THE RENDERER
+   EXPANDS IT.** Measured 24 September 2026 on `winger.md`: **`2026/27` NOT FOUND** but
+   `twenty twenty-six` found; **`76.42` NOT FOUND** but `seventy-six` found. ⚠️ **A rule number, a
+   year, a page reference, a percentage — none survive into the spoken text as digits.** **So "I
+   grepped the SSML and my repaired sentence is not there" is NOT evidence the repair failed**, and a
+   chunk-distance check done that way is worthless. **Search the WORDS around the figure, never the
+   figure.** ⚠️ **Two agents hit this in one day** — one reported a false negative on its own correct
+   edit, the other on a `<sub alias>` expansion of `CARHA` splitting a match — **and chunk-distance
+   verification was used repeatedly that day to certify that a claim and its qualifier reach a
+   listener together.**
+
    ⚠️⚠️ **THE SCRATCHPAD IS SHARED BETWEEN CONCURRENTLY RUNNING AGENTS, AND `md_to_speech --out`
    MAKES THAT DANGEROUS.** Measured 22 September 2026: an agent ran
    `md_to_speech.py --only defensive_zone_coverage --out <scratchpad>/ssml`, got a correct
@@ -1046,6 +1157,24 @@ The short form:
    rendered chunk — and neither recognised it as a tool failure at first.** **Use a Python slice to
    read context windows, never a bounded-quantifier grep.** **Same family as the `timeout` and nvm
    false passes below: the command fails and the absence of output looks like a clean result.**
+
+   ⚠️⚠️ **`check_facts.py` DOES NOT ACCEPT `--quiet`, AND PIPING IT HIDES THAT.** It treats the flag
+   as a PATH, raises `ValueError: '…/--quiet' is not in the subpath of '…/content'` — **and the
+   pipeline still reports exit 0.** ⚠️ **Measured on the coordinator 24 September 2026, which used
+   `check_facts.py --quiet | tail -1` repeatedly in one session and read every run as a pass.**
+   **`check_links.py` takes `--quiet`; `check_facts.py` does not.** ⚠️ **Same family as the nvm and
+   `timeout` traps: the command fails and the absence of output reads as a clean result.** **Run the
+   gates WITHOUT a pipe, or check `${PIPESTATUS[0]}`.**
+
+   ⚠️⚠️ **`resize_window` SILENTLY NO-OPS AND REPORTS SUCCESS.** Measured 24 September 2026: three
+   calls (400×860 twice, 900×800 once) each returned **`Successfully resized`** while `innerWidth`
+   stayed **1200** and `outerWidth` reported **0** — the window is maximised and the call does nothing.
+   ⚠️ **Same family as the nvm, `timeout` and `--only` traps: the tool says it worked.**
+   ✅ **THE WORKAROUND THAT GIVES A REAL NARROW VIEWPORT:** load the page into a **same-origin
+   `<iframe width="400">`** on `/404.html`. That gives the inner document a true 400px layout viewport
+   with real media-query evaluation (confirmed `clientWidth: 400`), not an emulation shim.
+   ⚠️ **Brief every `site-reviewer` with this** — it is not a phone (no mobile UA, no dynamic toolbar,
+   no text-size-adjust), but it is a genuine layout viewport.
 
    ⚠️ **`timeout` DOES NOT EXIST ON macOS.** `timeout N cmd` exits **127**, and wrapped in `$(…)`
    yields an **empty string that greps as 0** — an agent's first corpus census came back all-zeros
@@ -1310,6 +1439,14 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     the host decides. ⚠️ AND CAPTION TEXT IS OFTEN A SHARED CONSTANT — editing one
                     to repair one host silently rewrites every caption that imports it. Check
                     `grep -ln '<CONSTANT>' site/src/diagrams/*.mjs` first.
+                    check_instruction_first.py — units that LEAD with a tariff instead of with what a
+                    player does. ⚠️⚠️ IT MEASURES POSITION, NOT CRAFT, AND ITS HITS ARE OFTEN FALSE
+                    POSITIVES. Measured 24 September 2026: a coordinator briefed it as "the measurement
+                    that should move" on two files; the agent checked both flagged units and BOTH lead
+                    with the instruction — they scored tariff-first only because the opening sentence
+                    happens to contain a book name. Its words: "Had I been judged on that number I would
+                    have DAMAGED TWO CORRECT SENTENCES." ⚠️ WORKLIST, NOT A TARGET. Read every hit, and
+                    never brief a wave to drive this number down.
                     check_layer_echo.py — the five fixed SUMMARY LAYERS restating each other
                     instead of adding to each other. ⚠️ Added 22 September 2026 after the owner
                     reported that Key focus, Overview and Key Takeaways read one after another felt
@@ -1324,6 +1461,12 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     does a DIFFERENT JOB — instruction / map / mechanism / failure mode / kernel —
                     not whether it shares words. ⚠️ NEVER trade a caveat away to lower a score.
                     ⚠️ NO FIGURE IS WRITTEN HERE — run it; `--show` prints the shared phrases.
+                    ⚠️⚠️ ITS FLAGS ARE `--doc <stem>` AND `--show <stem>`. THERE IS NO `--file`, AND A
+                    COORDINATOR PUT `--show --file <path>` IN FOUR BRIEFS ON 24 September 2026. It
+                    errors out rather than failing silently, so nothing was measured wrongly — but it
+                    costs every agent a round trip, and the agent that hit it said so. ⚠️ A GATE
+                    COMMAND IN A BRIEF IS A CLAIM LIKE ANY OTHER: run it once yourself before
+                    shipping it to ten agents.
                     check_tactics_ratio.py — how much of each document sits in RULES-BEARING units
                     rather than tactical ones, by layer. ⚠️ Added 22 September 2026 when the owner made a
                     RATIO the standard: *"tactics and strategy and how to play should be overwhelmingly the

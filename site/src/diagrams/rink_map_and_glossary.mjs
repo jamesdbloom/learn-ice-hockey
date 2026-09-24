@@ -578,10 +578,12 @@ const theGoalCrease = {
 
   caption:
     'The goal crease — the blue paint — shaded here: 8 ft wide at the goal line, 6 ft ' +
-    'deep, extending 4 ft up as a volume, not a floor. Three of the four books put the red ' +
-    'boundary line itself inside the crease — the IIHF, USA Hockey and Hockey Canada — and ' +
-    'the NHL never says either way. Keep your skates off the red line, not merely out of the ' +
-    'blue paint. No shading can draw an edge that fine.',
+    'deep, extending 4 ft up as a volume, not a floor. The red boundary line itself counts ' +
+    'as crease in the rule text or glossary of the IIHF, USA Hockey, Hockey Canada and ' +
+    'CARHA; the NHL and the PWHL leave it unsaid. The books’ reference tables answer the ' +
+    'other way, the IIHF’s own among them — a contradiction inside one book that nothing ' +
+    'here resolves. So keep your skates off the red line, not merely out of the blue ' +
+    'paint. No shading can draw an edge that fine.',
 
   describe:
     'The attacking half of the rink, the net at the right. The goal crease is shaded: it ' +
