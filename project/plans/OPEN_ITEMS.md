@@ -1,5 +1,315 @@
 # Active work
 
+## 🔴🔴 THE LANE RULE — OWNER DECISION, 24 September 2026. IT GOVERNS EVERY P1/P2 WAVE.
+
+**The owner asked how to speed up P1 and P2, was shown the diagnosis, and chose:**
+
+> **A P1/P2 wave repairs a rules defect ONLY when it is PERMISSIVE AND PENALTY-BEARING — i.e. it tells
+> a reader an act is CHEAPER than their book prices it. Everything else is REPORTED into this plan and
+> the wave keeps going.**
+
+**Reported, not repaired:** scope nits · four-book frames · counts · quote drift · citation slips ·
+attribution questions · layer echo.
+
+### ⚠️ WHY — the diagnosis this was chosen from, measured 24 September 2026
+
+**A P2 readability pass on `goaltender.md` found a tariff defect. Seventeen sites, six gate passes and
+two commits later, P2 had moved FOURTEEN PANELS.** ⚠️ **Every individual decision to stop and repair
+was defensible; the aggregate was that the owner's stated top two priorities did not move.**
+
+⚠️⚠️ **THIS WILL RECUR BY CONSTRUCTION: P1/P2 waves OPEN DOCUMENTS, and opening a document in this
+corpus surfaces rules defects.** Without a rule, the accuracy work always wins, because each finding
+looks more urgent than the queue behind it.
+
+### ⚠️ HONOUR IT IN BOTH DIRECTIONS
+
+🔴 **Do not let a permissive tariff through** — that is the failure this project exists to prevent and
+it still stops the wave.
+✅ **Do not let a scope nit stop you.** A four-book frame in a document you are re-aiming is a ROW, not
+a detour. **The corpus is demonstrably more accurate than its paperwork; the queue is the risk now.**
+
+### The other two levers, which are METHOD and need no decision
+
+1. **Parallelism.** P2 is **per-document and disjoint** — callout placement in one file cannot touch
+   another. Tonight's low parallelism was forced by ACCURACY work, which has cross-file claims.
+   **P2 runs 10 agents at a time; 39 documents is four waves.**
+2. **Mechanical gating.** A marker-relocation diff **changes no claim**, so it is provable with three
+   measurements instead of an adversarial read: ⚠️ **`--panels` FALLS · `--markers` UNCHANGED · spoken
+   `"Important."` UNCHANGED.** The `goaltender.md` wave hit 19 → 5 panels with spoken **142 → 142**.
+   **A wave satisfying all three needs no `safety-reviewer` for the marker change** — only for text
+   that was rewritten.
+
+### 🔴🔴 A LAYER TEST WAS RUN AND RETURNED A FALSE CLEAR — on a site a plain grep finds
+
+**The strongest methodological finding of this wave, and it is not about a tool.**
+
+A repairing agent reported its layer test as *"exactly two carriers (`:749`, `:993`), with `:966` the
+trapezoid."* ⚠️⚠️ **`:966` is a KEY TAKEAWAY that names CARHA Rule 66 and states its tariff** —
+*"CARHA Rule 66 makes deliberate contact with one a minor whether in or out of the crease"* —
+**understating by two tiers**, and **`grep -n CARHA` returns it.**
+
+⚠️ **This is NOT the hard inverse case** this project has recorded (a unit built on an old premise
+without naming the rule, which no grep reaches). **It names the book and the rule number.** The layer
+test ran, returned the line, and **the agent classified it from its neighbourhood instead of reading
+it.**
+
+⚠️⚠️ **MEASURED: the repaired body is chunks 080-081; `:966` is chunk 106 — 25 chunks later, and the
+LAST CARHA sentence a listener hears. Nothing after it qualifies it.**
+
+### ⚠️ THE RULE THIS YIELDS, and it is cheap
+
+**Do not report a layer test as clean unless you can NAME WHAT EVERY HIT IS.** Enumerate the grep,
+say in the report what each line claims, and **a hit you classified without reading is the failure.**
+⚠️ **"That one is the trapezoid" is a classification, not a reading.**
+
+### ✅ AND THE COORDINATOR RAN THE SIBLING CENSUS THE REVIEWER COULD NOT — IT COMES BACK CLEAN
+
+The reviewer declared: *"the propagation failure at `:966` may have siblings I never looked for."*
+**Censused corpus-wide: every other `Rule 66` site states a DIFFERENT LIMB** — 66(a) Note 2 (standing
+your ground / shadowing), 66(b)'s crease-standing bar and goal disallowance, 66(a)(1) interference —
+**none of which needs a charging tariff.** ✅ **The `:966` shape is unique to `forechecking_systems.md`
+and is dispatched.**
+
+⚠️ **Worth recording as a POSITIVE example of the discipline: a mechanical flag returned ~20 hits and
+almost all were correct.** **Reading them was the whole job, and sweeping them would have inserted a
+charging tariff into a dozen paragraphs about standing your ground.**
+
+### 🔴🔴 THE GATE HAS A HOLE THE MEASUREMENTS CANNOT SEE: A MARKER CAN LAND WHERE IT RENDERS AS A BARE GLYPH
+
+**Found by the agent on the corpus's heaviest file, against its own first pass.** Eight of its moves
+had parked the marker in front of **plain prose with no strong run after it**. It read
+`remark-corpus.mjs` rather than assuming, and found those eight would have rendered as
+**a stray ⚠️ character in black prose** — **the sighted reader's escalation destroyed** — while:
+
+- `--panels` **fell** ✅
+- `--markers` **unchanged** ✅
+- spoken `"Important."` **unchanged** ✅
+- billed characters **identical** ✅
+
+⚠️⚠️ **EVERY GATE THIS WAVE USES WOULD HAVE SCORED THAT AS A CLEAN SUCCESS.** In the agent's own
+words: ***"The panel count alone would have scored that defect as a clean success."***
+
+**Why: the audio test is whole-paragraph, so the spoken layer is unaffected no matter where the glyph
+sits — which is exactly why the SSML checks pass.** ⚠️ **The panel count measures what was REMOVED.
+Nothing measures what REPLACED it.**
+
+✅ **The fix it applied: bold the operative clause so the marker precedes a strong run** and the
+colour lands on what the reader must DO.
+
+⚠️⚠️ **AND A SECOND SHAPE IT COULD NOT VERIFY: the wrapper ENDS at the close of the strong run.** Where
+a re-seated marker precedes a bold run that is a **citation** rather than the caution, the colour
+lands on a rule number and **the instruction after it stays black.** It flagged
+`body_contact_and_battles.md:1533` as exactly that shape — `⚠️ So does the **IIHF Official Rulebook
+2026/27**` — and **the plugin's own comment says this is the NORM for that shape, not an outlier.**
+
+### ⚠️ SO THE NEXT WAVE'S BRIEF MUST ADD A FOURTH REQUIREMENT
+
+**After moving a marker, confirm it is immediately followed by a strong run (`**…**`) that contains
+the HAZARD — not a citation, not plain prose.** If there is no such run, **bold the operative clause
+to create one.** ⚠️ **This cannot be measured by any tool in this repository and must be asserted by
+the agent per move.**
+
+⚠️⚠️ **AND IT IS THE STRONGEST ARGUMENT YET FOR A HUMAN LOOK AT ONE BUILT PAGE** before the remaining
+waves run: three independent agents said they predicted rendering from source and never opened a
+browser, and **the plugin's own comments record that a previous prediction of exactly this kind was
+wrong.**
+
+### ⚠️⚠️ ONE LEG OF THE THREE-MEASUREMENT GATE IS WEAK, AND AN AGENT SAID SO AGAINST ITS OWN CLEAN RUN
+
+> *"**The `--markers` count is a LINE count, not a marker count.** 55 lines carry a marker before and
+> after; **a move within a line is invisible to it.** The `"Important."` count and the identical
+> 225,699 billed characters are what actually establish nothing was lost."*
+
+⚠️ **That is correct and it was the coordinator's design error.** `--markers` was included to prove no
+escalation was deleted — but **this wave's whole technique is moving a marker WITHIN its line**, which
+`--markers` cannot see in either direction. **It would report "unchanged" even if a marker had been
+deleted from a line that still carried another.**
+
+✅ **The gate that actually holds, in priority order:**
+
+| | proves |
+|---|---|
+| **1. Identical billed characters** in the render | the spoken layer is unchanged **entirely** |
+| **2. Spoken `"Important."` count** | no escalation deleted |
+| **3. Stripped-text diff** (remove `⚠`, `**`, whitespace → compare) | **no claim touched** — several agents ran this unprompted and it is the strongest of the three |
+| 4. `--markers` | weak; keep as a cheap cross-check, never as the proof |
+| 5. **Raw `⚠` glyph count** | better than `--markers` — it counts GLYPHS, not lines |
+
+⚠️ **Three agents independently invented measurement 3** (*"strip every `⚠`/`**` and normalise
+whitespace, compare"*) and one found it **byte-identical**, which is a stronger claim than any count.
+**Put it in the next wave's brief as a requirement, and demote `--markers` to a cross-check.**
+
+### ✅✅ A STRONGER GATE THAN THE THREE MEASUREMENTS — found by the first agent to run this wave
+
+**`md_to_speech` prints a BILLED CHARACTER COUNT. For a pure marker-move it must be BYTE-IDENTICAL
+before and after.** The first wave agent reported *"1 documents, 100 chunks, 223,497 billed
+characters"* on **both** runs and called it *"the strongest available proof that nothing was added,
+lost or reworded for a listener."* **It is.**
+
+⚠️ **The three measurements prove no escalation was DELETED. The identical billed-character count
+proves the spoken layer is UNCHANGED, full stop** — no rewording, no reflow, no chunk boundary moved.
+**Use it as the primary gate for any placement wave, with the three measurements as the diagnosis when
+it does NOT match.**
+
+⚠️ **It only holds for a pure MOVE.** A wave that also rewords will legitimately differ, and then the
+three measurements are the gate.
+
+### ⚠️⚠️ A MARKER INSIDE THE BOLD STILL PANELS — "inside the bold is safe" IS WRONG
+
+`uk_rules.md:223` was written `**⚠️ Treat this as unsettled.**` — the marker **inside** the emphasis.
+⚠️ **It still rendered as an amber panel**, because the site FLATTENS inline emphasis before applying
+the anchored `WARNING_RE`, so `**⚠️` and `⚠️` are the same thing to it.
+
+**Anyone who assumes wrapping a marker in bold moves it off the opening is wrong**, and a move-2 repair
+that only re-bolds has done nothing. ⚠️ **The marker must move to a LATER CLAUSE, not into different
+markup.**
+
+### ⚠️⚠️ AND AN AGENT DIAGNOSED THAT SAME BEHAVIOUR AS A BUG. IT IS NOT. **DO NOT "FIX" IT.**
+
+**An agent reported:** *"`check_callout_flow.py` **under-counts panels, in the flattering direction**…
+`rules_primer.md` really had **27** panels; the tool reported **24**."* ⚠️ **That diagnosis is WRONG,
+and it was checked rather than filed.**
+
+**Measured against the BUILT page, which is the authority:**
+
+| | |
+|---|---|
+| `site/dist/foundation/rules_primer/index.html`, pre-wave `callout callout-warning` count | **24** |
+| tool `--panels --file foundation/rules_primer.md`, pre-wave | **24** |
+
+✅ **The tool was EXACT**, as it is on all 39 files (358 = 358, zero mismatches). ⚠️ **The "27" counts
+MARKED PARAGRAPHS that would each panel if they stood alone. The site renders ONE aside per
+blockquote** — `remark-corpus.mjs:567` types the whole blockquote and `:615` then skips its children.
+**Verified in the source: `:716`/`:723` are one blockquote; `:796`/`:798`/`:800` are another.**
+
+⚠️⚠️ **SO "PANELS" AND "PARAGRAPHS THAT WOULD PANEL" ARE DIFFERENT QUANTITIES, and only the first
+describes the page.** The agent's **practical** observation is correct and valuable — **you must
+iterate the repair, because the aside does not disappear until every marked paragraph in that
+blockquote has moved.** Its **diagnosis** is not.
+
+⚠️ **This matters beyond one number: an asserted tool bug that does not exist is how round 44
+manufactured a divergence.** **A tool validated per-file against `site/dist` outranks any agent's
+inference about it — including a careful agent's, and including this coordinator's.**
+
+⚠️ **AND THE FLATTERING-DIRECTION FRAMING IS BACKWARDS.** Reporting 24 where the page shows 24 is not
+flattering; treating 27 as the target would make a repair look INCOMPLETE when the page is already
+clean. **Check a tool against its output, never against its behaviour.**
+
+### ⚠️⚠️ `--panels` LISTS ONE SITE PER BLOCKQUOTE, SO A REPAIR MUST BE ITERATED — found empirically
+
+**Measured on `faceoffs.md:486-492`**, four consecutive quoted paragraphs, three of them amber asides
+**nested inside** one grey blockquote:
+
+> *"`--panels` only reported the FIRST of the three (`:486`). `:488` and `:490` surfaced only after
+> `:486` was repaired and the tool re-run."*
+
+⚠️ **The COUNT is correct and the LISTING is incomplete, and both follow from the same fact:**
+`remark-corpus.mjs:567` makes the whole blockquote **ONE** aside, so the tool emits **one row per
+blockquote** — which is right for counting the page, and misleading for planning a repair.
+
+⚠️⚠️ **THE CONSEQUENCE IS THAT THE PANEL DOES NOT GO AWAY UNTIL EVERY MARKED PARAGRAPH IN THAT
+BLOCKQUOTE IS MOVED.** Fix one and the count does not move, because the blockquote is still typed
+`warning` by its remaining children.
+
+**So: in a quoted region, RE-RUN `--panels` after each repair until the site stops appearing. Do not
+plan a blockquote from a single run** — and **do not read "count unchanged" as "my edit did nothing".**
+
+⚠️ **This is a usability limit, not a bug: changing it would break the count, which is the thing the
+tool was fixed to get right.** Recorded rather than repaired.
+
+### ⚠️ A PLACEMENT WAVE IS NOT ALWAYS A PURE MOVE — the connective gets dropped
+
+**Two agents split a bold span to land a marker on its hazard-bearing half, and a connective went with
+it.** `risk_management.md:688` lost a *"but"*; `special_teams.md` shows `— and it` → `. **It**`. ⚠️ **No
+claim changed and no scope moved** — but **the SSML is then NOT byte-identical**, and a coordinator
+checking only that number would see a mismatch and not know why.
+
+✅ **One agent disclosed it unprompted** (*"the connective 'but' was dropped as a consequence of the
+split"*); **one described the delta as *"punctuation moved, not text cut"***, which is true in
+substance and understates it slightly. ⚠️ **The coordinator verified by diffing with markers and
+whitespace stripped — that is the check that actually resolves it**, and it is cheap:
+
+```
+git diff -- <file> | strip +/- lines, remove ⚠ glyphs and whitespace, compare
+```
+
+**So: byte-identical SSML is the STRONGEST gate but not the only acceptable one.** A small delta that
+the stripped-text diff explains as a split connective is fine. **An unexplained delta is not.**
+
+### 🔴🔴 THE OPEN QUESTION THIS WAVE HAS NOW FORCED — how many panels SHOULD a page have?
+
+**Five documents in, the wave is working and nobody has ever stated the target.** The agent on
+`defender.md` put it exactly:
+
+> *"Whether one panel is the right residue. **The owner has never said how many panels a page should
+> have.** If the answer is zero, `:151` moves in one edit; if the answer is more than one, I have
+> over-cut and the candidates to restore are `:268` and `:400`."*
+
+| document | panels before | after |
+|---|---|---|
+| `uk_rules.md` | 25 | **2** |
+| `special_teams.md` | 24 | **0** |
+| `game_management.md` | 15 | **2** |
+| `risk_management.md` | 15 | **0** |
+| `defender.md` | 13 | **1** |
+
+⚠️⚠️ **TWO DOCUMENTS ARE NOW AT ZERO.** Each agent reasoned well and independently, and the results
+still diverge — because **the test they were given ("does a reader who acts without the warning get
+hurt?") decides WHICH callouts stay, not HOW MANY.**
+
+⚠️ **`risk_management.md`'s agent argued zero is correct there and gave the reason: every one of its
+15 panels wrapped a 600–700-word paragraph, so the amber block was "not a sharp warning but an
+unreadable slab".** **That is persuasive and it is still a judgement nobody has ratified.**
+
+**This needs the owner's eye on a built page, not another measurement.**
+
+### 🔴🔴 THE RISK THIS WAVE CREATES, named by the agent that ran it — AND NOBODY CAN SEE IT
+
+> *"The risk I cannot see is the opposite of the one I fixed: **23 fewer visual breaks in a long
+> document may make some sections read as an undifferentiated wall.**"*
+
+⚠️⚠️ **THAT IS A READABILITY REGRESSION PRODUCED BY A READABILITY WAVE, AND IT IS INVISIBLE TO EVERY
+MEASUREMENT THIS WAVE USES.** `--panels` falling is the GOAL; it is also the symptom. The three
+measurements and the byte-identical SSML **all pass on a document that has become a wall of text.**
+
+⚠️ **`site-reviewer` cannot run in this environment** (recorded: the browser classifier refuses every
+URL), so **no automated check reaches this.** **It needs a human eye on a built page** — and it should
+be checked after ONE wave, before the remaining three run, because the fix if it is real is to keep
+more panels, which is cheaper to decide now than after 39 documents.
+
+**Concretely: `uk_rules.md` is 597 lines and now has TWO panels, both medical-emergency instructions.
+That may be exactly right, or it may be too few. A reader decides, not a checker.**
+
+### ✅ FIRST RESULT — and the lane rule did its job in both directions
+
+`systems/game_management.md`: **15 panels → 2**, markers **47 → 47**, spoken *"Important."* **49 → 49**,
+SSML byte-identical. **13 panels removed in one pass**; 14 insertions / 14 deletions, every marker
+moved **within its own line**.
+
+✅ **Two were the DOUBLE-FURNITURE shape** — an amber aside nested inside a grey blockquote.
+✅ **Three were SIBLING MISMATCHES** — a bullet rendering as a full panel beside plain-prose bullets in
+the same list, **which is the owner's original complaint**.
+✅ **Two panels were KEPT, each with its hazard named** — the empty-net pivot (a reader who misses it
+concedes a goal outright) and the *"put it down means down where you are"* boundary.
+
+✅ **LANE RULE HONOURED: no permissive penalty-bearing defect found, nothing repaired, and TWO scope
+nits reported instead of chased** — a British-scope/competition-regulation collision at `:728` (the
+recorded shape where a grep for `EIHL` cannot find it, **because the defective paragraph never says
+EIHL**), and an untested absence-of-provision claim about the In-House Rules at `:851`.
+
+⚠️ **The agent also declared the limit of a placement wave honestly:** *"'2 panels' is the checker's
+prediction of the page, not an observation of it"* — no build was run. **The coordinator builds once
+at the end of the wave, not per agent.**
+
+### ⚠️ WHAT THIS DOES NOT SPEED UP, stated honestly
+
+**P1 BODY re-aiming.** Whether `skating.md` at 28% rules-bearing should be lower is a JUDGEMENT, and
+the corpus-wide 64% is a **candidate figure, not a verdict** — `check_tactics_ratio` counts FORM, and
+`rules_primer.md` at 97% is CORRECT. ⚠️ **That work is readable-at-pace and parallelises only to the
+file count. Do not mechanise it.**
+
+---
+
 ## 🔴🔴 THE OWNER'S PRIORITY ORDER — SET 23 September 2026, AND IT GOVERNS DISPATCH
 
 **The owner's instruction, verbatim:**
@@ -1107,6 +1417,213 @@ Three successive wrong answers; see `project/reviews/safety_criticals_and_book_s
 section *"`--panels` WAS WRONG THREE TIMES"*. **No figure is repeated here** — run the tool.
 ⚠️ **Validate it PER FILE against `site/dist` after any change to it; a total can agree by
 cancellation, which is this tool's entire history.**
+
+---
+
+## 🔴🔴🔴 WORKSTREAM — THE FOUR-BOOK FRAME IS CORPUS-WIDE, AND IT IS THE LARGEST OPEN SHAPE
+
+**Census run 24 September 2026. NO FIGURE IS REPEATED ELSEWHERE — re-run it, it moves with every
+wave:**
+
+```
+python3 - <<'EOF'
+import glob,pathlib,re
+pat=re.compile(r'(all four books|the four books|any of the four|four of the|only two of the four|none of the four|in any of the four)',re.I)
+for f in sorted(glob.glob('content/**/*.md',recursive=True)):
+    for i,l in enumerate(pathlib.Path(f).read_text(encoding='utf-8').split('\n'),1):
+        for m in pat.finditer(l): print(f"{f}:{i}  {m.group(0)}")
+EOF
+```
+
+**On the day: 402 hits across 35 of 39 documents**, led by `rules_primer.md` and
+`body_contact_and_battles.md`. ⚠️ **`ls sources/*.txt | wc -l` returns 42.**
+
+### ⚠️⚠️ MOST OF THESE ARE CORRECT. THIS IS NOT A SWEEP, AND A SWEEP WOULD DO REAL DAMAGE.
+
+**The discriminator, earned across three documents this round — apply it per sentence:**
+
+| Shape | Verdict |
+|---|---|
+| *"of the four books compared here…"* — names its set and stays inside it | ✅ **CORRECT.** Leave it. |
+| *"not capped at a minor in **any book**"* — a UNIVERSAL | ⚠️ **TEST IT.** May survive widening (this one did — CARHA 54(a)/(b) and PWHL 60.3 both reach a major without injury). |
+| A **TARIFF** priced over a four-book set when a fifth book on disk prices the same act | 🔴 **DEFECT, permissive direction.** |
+| A count — *"three of the four write a match penalty"* | ⚠️ **Usually DELETE rather than correct.** Each bullet already states its own tier; the count is a fragile restatement that adds nothing and goes stale on every widening. |
+
+⚠️ **AND THE DEFINITION/TARIFF DISTINCTION DECIDES MANY OF THEM.** *"Force is in the NHL and IIHF
+definitions and not Hockey Canada's"* is a **definition** claim and was verified correct; *"a
+cross-check is not a two-minute foul in any of the four books"* is a **tariff** claim and was narrow.
+**A brief that conflates them sends an agent to audit the wrong sentences.**
+
+### ✅ WHAT THE FIRST SLICE FOUND — the proof this is worth doing
+
+`body_contact_and_battles.md` §"The cross-check problem": **CARHA Rule 54 writes tiers the ladder had
+no bullet for**, including **54(c), a MANDATORY major plus game misconduct for crosschecking a
+goalkeeper in the crease** — ⚠️ **precisely the act that section is about.** Permissive for a CARHA
+reader at the net front. Five sites repaired, three verified correctly scoped and left.
+
+⚠️ **Key Takeaway 3 was INTERNALLY INCONSISTENT** — three clauses earlier it already said *"a fifth
+book on disk, CARHA Rule 62(b)"*, then reverted to a four-book frame for the cross-check. **A document
+can carry both frames in one spoken unit.**
+✅ **Two repairs came out SHORTER and WIDER**: *"one book's wording, absent from the other three"* →
+*"USA Hockey Rule 609's wording, absent from every other book here"*. **Naming the book beats counting
+the books.**
+
+### ✅ SLICE 2 — 212 SITES SWEPT, 5 REPAIRED. THE 2.4% RATE IS THE POINT.
+
+**The discriminator works, and the number proves this shape needs READING, not sweeping.** Of 212
+candidate sites in `body_contact_and_battles.md`, **207 were correct as scoped** and were left with
+reasons recorded.
+
+| Defect | Shape | Direction |
+|---|---|---|
+| Slew-footing: *"a defence to slew-footing in no book"* | False universal — **CARHA 86(b)'s Note** | ⚠️ **CONSERVATIVE** — the corpus was HARSHER than CARHA |
+| §6 stride count: *"only two of them count strides"* | **Contradicted its own next three sentences**, which name THREE | count |
+| Box-out lift | Negative stated over three books; **NHL and PWHL 48.1(i) write the exact words** | 🔴 permissive |
+| High-sticking: CARHA *"starts above it… no minor rung beneath it"* | **CARHA 62(a) IS a minor** — the opponent's waist, no contact required | 🔴 permissive |
+| Key Takeaway 5: *"Only two of the four books"* | Count → naming; **arithmetic also wrong** (*"the other three"* vs two of four) | count |
+
+⚠️ **THE SLEW-FOOTING ONE RAN CONSERVATIVE, AND THAT IS WORTH NOTING.** Every other tariff defect this
+week ran permissive. **A false universal can be wrong in the safe direction and still be false** — and
+voiced alone it is still a claim about books the corpus had not read.
+
+✅ **AND THE COUNTS WERE DELETED, NOT CORRECTED**, per the discriminator — *"the enumeration does the
+work"*. ✅ **`--panels` 47 → 47, unmoved**: the one marker added sits mid-paragraph, so it speaks
+*"Important."* without rendering amber. **P2 was not damaged by a P1-adjacent wave.**
+
+### ✅ RESOLVED by the coordinator — a question the agent declared it could not answer
+
+It flagged that **no CARHA `-layout` extraction exists on disk**, so it could not tell whether 86(b)'s
+Note is typographically attached to 86(a) — *"if it is, my repair is over-cautious rather than wrong."*
+
+✅ **Answered by rendering the refetched PDF with `pdftotext -layout`: the Note is printed UNDER (b)**,
+indented one space deeper than (b)'s own text. **So scoping the universal was correct.**
+⚠️ **And the agent's caution was right for a second reason it had already written in: the Note's
+SUBSTANCE is tripping, not slew-footing** — it says *"the **tripping** shall be ignored"* and describes
+*"falling or sliding along the ice"*, which is **86(a)'s** limb. **The repair says exactly that
+(*"which is not the act 86(b) describes"*) and `:1567` still states plainly that playing the puck first
+is not a defence. No reader is told they have a defence they do not have.**
+
+⚠️ **NOTE FOR THE NEXT AGENT: a CARHA `-layout` extraction is NOT on disk and the PDF is NOT either.**
+The coordinator refetched it to a scratchpad for the provenance check. **If indentation ever decides a
+question again, refetch and render — do not conclude from the plain extraction.**
+
+### 🔴 NEW, OPEN — PWHL Rule 48 diverges from the NHL's and §5's facts block does not carry it
+
+`body_contact_and_battles.md` §5's head-contact ` ```facts ` block says *"the NHL rules out a major
+and a game misconduct (48.3, 48.4)"* — **true of the NHL.** ⚠️ **The PWHL has no such clause and its
+48.2 IS a major.** The agent stated the divergence where it was load-bearing in §9 but **§5 still
+prices head contact over four books.**
+
+⚠️⚠️ **DIRECTION: PERMISSIVE. A PWHL reader is told the floor is a minor when their book's floor is a
+major.** **Head contact, in a facts block voiced alone.** ⚠️ **`sources/README.md` records the PWHL
+renumbers from Rule 52 onward — Rule 48 keeps its number, so an NHL-number search FINDS it here, which
+is why this one is checkable.**
+
+### 🔴 NEXT, and the agent that did the first slice named them
+
+**Same file, same shape, unaudited:** slashing (*"all four books"*), high-sticking, kneeing/clipping
+(*"no division clause in any of the four books"*), and ⚠️ **Key Takeaway 5's *"Only two of the four
+books state that envelope"*, which it flagged as the one it would attack next.** Then
+`rules_primer.md`, the largest carrier.
+
+## 🔴🔴 A NEW FAILURE SHAPE: **SOLE OWNER BY REFERENCE** — a claim whose owner is a DIFFERENT FILE
+
+**Found 24 September 2026 by an agent auditing a document that turned out to contain no defect.**
+
+`puck_handling.md:465` states the cross-check DEFINITION across five books and then delegates the
+entire tariff: *""Body Contact and Battles … #the-cross-check-problem" sets out what a cross-check
+costs."* ⚠️ **That pointer is puck handling's WHOLE answer on cost — the file states no cross-check
+tariff in any layer.**
+
+⚠️⚠️ **SO IF THE LADDER IN THE OWNING DOCUMENT IS NARROW, EVERY READER WHO ARRIVES BY THAT POINTER
+INHERITS THE GAP — AND NO CHECKER IN THIS REPOSITORY CAN SEE IT.** The agent named the mechanism:
+***"the claim and its owner live in different files, so `check_layer_echo` and a document grep both
+miss it."***
+
+⚠️ **This is the INVERSE of the shape this corpus has spent a week on.** Every previously recorded
+propagation defect was **one claim repeated in many places**, where the risk is that a correction
+reaches some copies and not others. **This is one claim in ONE place that many documents depend on** —
+where the risk is that the single copy was never wide enough, and the dependents look clean because
+they say nothing at all.
+
+⚠️ **A reader arriving from another document expects the COMPLETE answer and has no way to know the
+set was narrowed.** **So when a section is a pointer target, "correctly scoped to the four books
+compared here" is not automatically sufficient — the scope has to be legible to someone who did not
+read the surrounding document.**
+
+**Where to look for more of it:** any `[Link](other_doc.md#anchor)` that stands in place of stating a
+tariff. ⚠️ **`check_links.py` verifies the anchor RESOLVES; nothing verifies the target ANSWERS.**
+
+### ✅ CLOSED — a holding tariff understated, found while auditing something else
+
+`sources/carha.txt:3006-3015`, **Rule 63(b)**: *"A Major penalty shall be assessed to any player who
+injures an opponent by 'holding'."* **Mandatory.**
+
+⚠️ **The ` ```facts ` line at `puck_handling.md:436` already carried 63(b) correctly, with its
+scope. Two SPOKEN layers did not** — Key focus `:16` (chunk 001) and Common Mistakes `:948` (chunk
+058) both said *"CARHA leaves a major to the referee for holding of any kind"*, **inside an explicit
+*"a minor is not the ceiling"* enumeration that credits Hockey Canada with a mandatory major and gives
+CARHA only the discretionary limb.** ⚠️ **A CARHA reader was told their ceiling is discretionary when
+on injury it is mandatory — the same species as commit `f624f6d`.** ✅ Repaired at both sites with the
+CARHA-affiliated scope attached.
+
+### 🔴 OPEN — a Key Takeaway that is a rules appendix, flagged not fixed, and the agent was right to decline
+
+`puck_handling.md:1034`, **Key Takeaway 11**: ~300 words **voiced alone**, naming *"the NHL, IIHF,
+USA Hockey and Hockey Canada"* and *"those four"*, with **CARHA nowhere in it**.
+
+✅ **It is honestly scoped and NOT false**, and its instruction — *"Treat the minor as the floor"* — is
+conservative, so it prices nothing cheaply. ⚠️ **But it is exactly what the owner complained about:**
+a takeaway that reads as a rules appendix rather than a kernel of what a player DOES. **The
+`check_facts` layer already carries CARHA in its own spoken chunk (032), so the takeaway is not the
+sole carrier.**
+
+⚠️⚠️ **THE AGENT DECLINED IT ON THE RIGHT GROUND, AND THE REASONING IS THE RULE:
+*"an accuracy repair is not a re-aiming, and re-aiming it would be new text nobody has reviewed."***
+**This is a P1 tactics job, not an accuracy fix. Do not fold the two together in one wave.**
+
+### ✅ REFUTED — the coordinator's own plan row on CARHA 54(c)
+
+The row predicted a propagated crease-only cross-check tariff. **A census found the corpus never
+states CARHA's cross-check tariff at all**, so there was nothing to repair. ✅ **And every cross-check
+claim in `puck_handling.md` was verified CORRECT** — they are DEFINITION claims (force vs no force),
+not tariff claims, and the definitional universal was tested against a book neither brief named
+(**PWHL 60.1**, the same base definition). ⚠️ **Definition and tariff are different questions about
+the same word, and a brief that conflates them sends an agent to audit the wrong sentences.**
+
+---
+
+## ✅ THE TTS TIER IS NOT A BLOCKER — OWNER DECISION, 24 September 2026
+
+**The owner's instruction, verbatim, on being shown the full-corpus credit cost:**
+
+> *"Yes but when we need it I'll upgrade my elevenlab account"*
+
+**So the measured requirement — ~545,000 credits for 37 Style B episodes — is a COST TO BE PAID AT THE
+RIGHT MOMENT, not a constraint on the plan.** ⚠️ **Do not design around Creator's 100,000/month
+allowance, and do not propose a cheaper engine on price grounds** — the engine choice was made on
+quality after a five-engine comparison and is not reopened by cost.
+
+**What this does and does not unblock:**
+- ✅ **P3 is no longer gated on credits.** It remains gated on **P1 and P2 progress**, which is the
+  owner's stated priority order and unchanged.
+- ⚠️ **Testing continues on the first chunk** until the upgrade happens — the owner's earlier
+  instruction, *"for now for any testing we can just use the first chunk of the podcast that fits into
+  the API quote"*, still governs.
+- ⚠️ **The seam question is now LOWER stakes, and the reason is technical:** a paid tier unlocks
+  **PCM**, which removes the mp3 frame-padding at every stitch join. **The seam risk measured on
+  Creator is the WORST case** — if it is inaudible on mp3 it cannot appear on PCM. **So the two-chunk
+  seam test is only worth its ~3,200 credits if the corpus is going to be generated on Creator.**
+- ⚠️ **It does NOT unblock the ear test.** Nobody has listened to a single second of Style B output,
+  and the chosen settings (Speed 1.00 / Stability 0.35 / Similarity 0.75 / Style 0.20 / Speaker boost
+  ON) remain **chosen and unheard**. That is a human step and it is in
+  `project/plans/PODCAST_MANUAL_STEPS.md`.
+
+**Measured, for whoever sizes the upgrade** — from the defender exemplar and the observed billing
+ratio, both in `project/podcast_style_b_script_standard.md`: **~14,740 credits per episode**, **~545,000
+for 37**, worst case ~745,600 if the billing discount does not hold at volume. ⚠️ **The synthesiser's
+content-hash cache means a re-run of unchanged chunks costs nothing, so the exposure is ONE-TIME, not
+per-iteration.**
 
 ---
 

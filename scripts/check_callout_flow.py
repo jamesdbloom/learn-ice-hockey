@@ -413,6 +413,16 @@ def main():
         print("   reads as prose and still speaks its \"Important.\".\n")
         for f, n, t in panelled[:40]:
             print(f"  panel  {f}:{n}  {t[:70]}")
+        # ⚠️ THE SLICE APPLIES WITH --file TOO, AND ITS SILENCE COST A WHOLE PASS.
+        # An agent repairing the corpus's heaviest file worked the 40 listed rows,
+        # re-ran, and found SEVEN MORE it had never been shown -- in that file's
+        # densest penalty area. The header said 47 the whole time. A truncation
+        # that does not announce itself is the same species as the silent exit-0
+        # false passes catalogued in CLAUDE.md: the tool reports success and you
+        # read the wrong bytes. Announce it instead of documenting it.
+        if len(panelled) > 40:
+            print(f"\n  ... {len(panelled) - 40} more NOT LISTED (listing is capped at 40). "
+                  f"Repair these, re-run, and the next ones appear.")
         return 0
 
     if args.markers:

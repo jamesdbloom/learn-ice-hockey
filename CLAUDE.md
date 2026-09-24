@@ -1281,6 +1281,15 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     `--panels | grep <file>` is a FALSE NEGATIVE for any document past the cut:
                     A DOCUMENT PAST THE CUT SCORES ZERO IN A CORPUS-WIDE
                     LISTING WHATEVER ITS REAL FIGURE. USE `--file` FOR A PER-FILE FIGURE, ALWAYS.
+                    ⚠️⚠️ BUT `--file` FIXES THE FIGURE AND NOT THE LISTING — THE 40-ROW SLICE STILL
+                    APPLIES, AND THIS PASSAGE USED TO IMPLY OTHERWISE. Measured 24 September 2026:
+                    `--panels --file technique/body_contact_and_battles.md` printed a header of 47 and
+                    listed 40. An agent repaired the 40 it was shown, re-ran, and SEVEN MORE appeared,
+                    in that file's densest penalty area. ⚠️ IT WOULD HAVE LEFT 15% OF THE WORK UNDONE
+                    AND EVERY MEASUREMENT WOULD HAVE LOOKED LIKE PROGRESS. The tool now PRINTS
+                    "... N more NOT LISTED" rather than relying on anyone reading this line — but
+                    ⚠️ THE STANDING RULE IS: REPAIR, RE-RUN, REPEAT UNTIL THE HEADER REACHES ZERO OR
+                    THE LISTING STOPS CHANGING. Never treat one listing as the worklist.
                     ⚠️⚠️ AND NO PER-DOCUMENT HIT COUNT IS WRITTEN HERE, BECAUSE THE ONE THAT WAS
                     HERE WAS FALSE WHEN IT SHIPPED. This sentence carried "`rules_primer` scores 20
                     hits"; a commit gate re-derived it against the FIXED tool and got 16. The 20 was
