@@ -325,6 +325,23 @@ thing.** ✅ **The reviewer's own test still reproduced exactly: it skimmed a sc
 both `warn-inline` runs, and did NOT notice the bare glyph in the same image — it found it only by DOM
 walk afterwards.** **The defect is real; the description was wrong.**
 
+⚠️⚠️ **AND THERE IS A FOURTH STATE THAT `--bare` CANNOT SEE — MEASURED 24 September 2026:
+A GLYPH *INSIDE* A `**strong**` RUN.** `markInlineWarnings` needs the glyph to **PRECEDE** a strong
+run — it reads the *preceding text node*. A glyph **within** the bold gets **the bold and nothing
+else: no amber, no left bar, no tint.**
+
+⚠️ **`--bare` DOES NOT COUNT THESE**, because they carry typographic treatment. Measured in
+`site/dist`: **76 glyphs sit inside a `<strong>` run; 63 are wrapped and correct; 13 ARE NOT** —
+against a `--bare` figure of **5**, a different population. **So the real untreated total is ~18 where
+the tool says 5.**
+
+✅ **THE REPAIR IS FREE AND CHANGES NO WORDS: close the strong before the glyph and reopen after** —
+`**head, ⚠️ hazard.**` → `**head,** ⚠️ **hazard.**`. **Same visible bold extent, same spoken
+`"Important."`, and the wrapper now forms.** Verified in built HTML on three sites the same day.
+
+⚠️ **To find them:** `<strong>([^<]*⚠[^<]*)</strong>` over `<main>` in `site/dist`, then discard any
+whose preceding 200 characters open an unclosed `warn-inline` span. **No checker does this.**
+
 ⚠️ **SO A MOVED MARKER IS NOT DEMOTED TO PROSE — IT IS DEMOTED FROM PANEL TO INLINE AMBER.**
 `uk_rules.md` went from 25 panels to **2 panels plus 83 inline amber marks**, one every ~530 px. The
 reviewer skimmed without reading and **stopped on every amber mark and skated past every bare one**,
@@ -736,6 +753,21 @@ before the gate, not on each completion notification.** ⚠️ **`SendMessage` t
 not ask it a question; it RESUMES it**, and it will keep editing files that are already in the index.
 That happened here and left the index holding a **half-done propagation** — one file with the full
 treatment, two with none of it.
+
+⚠️⚠️ **AND IT HAPPENED AGAIN ON 24 September 2026, CAUGHT ONLY BY A `safety-reviewer` DISPATCHED FOR A
+DIFFERENT REASON.** A coordinator ran `git add` on a file, then dispatched an agent that repaired **a
+Key Takeaway voiced alone** in that same file, then re-gated — **without re-staging.** The index held a
+closed **three-book** enumeration of a **mandatory match penalty** while the tree held the repair, and
+⚠️ **the facts block and Common Mistakes in the SAME STAGED FILE both said six** — so the staged state
+was internally contradictory and would have shipped.
+
+⚠️ **Every mechanical gate passed, because they read the TREE.** ⚠️ **A `commit-gate` had already
+CLEARED the neighbouring conditions on that same staged diff.** ✅ **It was found only because a
+`safety-reviewer` ran `git show :<path>` instead of reading the working file.**
+
+✅ **SO THE CHECK IS NOT `git status`, WHICH SHOWS THE FILE AS STAGED EITHER WAY. It is
+`git diff --name-only` — EMPTY means the index matches the tree — or `git show :<path>` for the bytes
+that will actually ship.** ⚠️ **Run it AFTER the last agent finishes, not when you stage.**
 
 ⚠️ **No checker can see this, and the hook cannot either.** `check_facts.py` and `check_links.py` read
 the **working tree**; `git-guard.sh` gates on those same checkers. **So a commit can pass every

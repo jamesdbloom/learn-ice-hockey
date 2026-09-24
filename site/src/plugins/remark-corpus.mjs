@@ -61,9 +61,15 @@ const WARNING_TAIL_RE = /(⚠|❗|🚫)\uFE0F?\s*$/u;
 // the citation in place unbolded (systems/breakouts.md ×2,
 // systems/game_management.md). At least one was outstanding when they were —
 // foundation/rules_primer.md, `⚠️ Under **Hockey Canada Rule 6.11(b)(ii)**` —
-// and whether it still is, this comment cannot tell you. Re-derive, and READ
-// each hit: a strong run that completes a claim rather than naming a rule is
-// correct as it stands and must not be swept.
+// and that one is now REPAIRED: re-derived on 24 September 2026 by extracting
+// every glyph-to-citation pairing in that document's body. Seven matched a
+// citation-shaped opening and ALL SEVEN continue into a claim, so none is the
+// defect this comment describes. The 6.11(b)(ii) citation now carries no glyph;
+// its paragraph's marker precedes a strong run that completes a claim.
+// ⚠️ THIS SENTENCE WILL GO STALE THE SAME WAY THE ONE IT REPLACES DID, AND
+// NAMING A FILE IS WHAT MAKES IT STALE. A comment cannot watch a corpus. So:
+// re-derive, and READ each hit — a strong run that completes a claim rather
+// than naming a rule is correct as it stands and must not be swept.
 // ⚠️ So when writing a warning: put the bold on what the reader must DO, and
 // leave the rule number plain. Never drop the citation to make room.
 //
