@@ -22,6 +22,59 @@ they did not need to.**
 done?"* took three files, and **two podcast items listed as open had been fixed days earlier** with
 nobody noticing.
 
+## 🔴 FIVE ROWS FROM THE 25 September GATES — three are TRAPS THAT WOULD UNDO CORRECT WORK
+
+### 🔴🔴 A `check_quote_drift.py` FALSE POSITIVE THAT INVITES A RUN-ON TO BE RESTORED
+**`content/hockey-iq/playing_without_the_puck.md:337` is flagged `ADDED '.'`. IT IS CORRECT AS IT
+STANDS.** ⚠️ **The tool matched the closest string across ALL sources and landed on
+`iihf_situations.txt`, not `usah.txt`.** USA Hockey **601(d)(7)** reads *"…during a stoppage of play
+when done in protest of an official's decision."* and **item (8) begins immediately after**, so the
+terminal period inside the quote marks belongs to the clause quoted. ⚠️ **The phrase occurs FIVE times
+in `usah.txt` and that line cites TWO of them, quoting each differently — both are right.**
+⚠️⚠️ **DO NOT "FIX" THIS FLAG. Removing that period is what produced the run-on a gate blocked on.**
+
+### 🔴🔴 NO CHECKER LOOKS FOR A MISSING SENTENCE TERMINATOR, AND A QUOTE-DRIFT REPAIR CREATES THEM
+⚠️ **Two were shipped and caught only by a gate reading the diff by eye.** A quote-drift repair removes
+a terminal period from inside quotation marks — **sometimes correctly** — and puts nothing outside them,
+**fusing a tariff and its ⚠️ counterweight into one spoken breath.**
+⚠️ **`check_quote_drift.py` reports the drift and CANNOT see what removing it does to the sentence
+around it.** ✅ **The scan that finds them, and it is not a tool:** a quotation mark followed directly by
+a capital or a marker, run **DIFFERENTIALLY** against HEAD so facts-block line boundaries (which carry no
+terminal period by convention) do not swamp it.
+**🔴 ONE KNOWN INSTANCE STANDING, PRE-EXISTING:** `content/systems/forechecking_systems.md`, Sources
+trailer — *"…(e) or (f) of this rule" ⚠️ **Note the scope of those sub-sections**:"* — **no period
+before the ⚠️ sentence.** Byte-identical in HEAD, so it was out of that commit's scope.
+
+### 🔴 `goaltender.md` KT13 HAS 17 CHARACTERS OF HEADROOM
+**2,783 of `MAX_BILLED_CHARS = 2800`, verified as ONE chunk (`225.ssml`).** ⚠️ **The next edit to that
+takeaway, however small, SPLITS IT — and only the half holding the first marker speaks *"Important."***
+⚠️ **This is the third takeaway in this corpus to be found near that boundary; the previous two had
+already split and stranded injury instructions in unmarked halves.**
+
+### 🔴 A COMPRESSION THAT IS NOT PERMISSIVE BUT IS NOT EXACT
+`goaltender.md:1547` says CARHA 54(b) reaches a cross-check *"above your shoulders"*; the book says
+*"above the normal height of the opponents shoulders"* (**the missing apostrophe is the book's own, and
+`:1141` reproduces it exactly**). ⚠️ **Dropping *"the normal height of"* — a STANDING-height reference —
+makes the corpus WIDER than the book for a butterflied goaltender, so it overstates the tariff.**
+**Direction is safe; *"above normal shoulder height"* is exact for two more characters.**
+
+### 🔴 THE REVIEW RECORD NOW CARRIES TWO DIFFERENTLY-NUMBERED "D1 to D15" TABLES
+**One has D1 = Cardinal rule, the other D1 = rules accuracy.** ⚠️ **Harmless today and it will make the
+record impossible to cite later** — a reader quoting *"D1"* out of it cannot know which is meant.
+
+### 🔴 `sources/hc.txt` DIVERGES FROM THE LIVE PUBLISHER FILE, AND ONLY RULE 7.5 WAS CHECKED
+⚠️ **A gate stated the limit against its own clearance:** *"any other Hockey Canada claim in these nine
+files was checked against an extraction that no longer matches the publisher's file, and I did not
+re-extract."* **Rule 7.5 is byte-identical; nothing else was diffed.**
+
+### ⚠️ AND `site/dist` IS STALE RELATIVE TO WHAT SHIPPED
+**The build ran at 01:07; two files were repaired at 01:18 and 01:19.** ✅ **No rebuild was needed for
+the commit — the edits add no marker, no heading, no anchor, no table and no `<strong>` boundary, and
+`--panels` on source was diffed against the built HTML to prove no rendering state changed.**
+⚠️ **REBUILD BEFORE ANY DEPLOY.**
+
+---
+
 ## 🔴 SOURCE PROVENANCE, 25 September 2026 — the publisher moved a document under an unchanged URL
 
 ### 🔴 OPEN — `sources/hc.txt` and `hc_layout.txt` are superseded
