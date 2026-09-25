@@ -342,7 +342,9 @@ const puckOnTheFarSide = {
  * Section: "### If the puck pops up, do not grab it" — and specifically its middle, which
  * the document states twice: "it is the puck that has to be in the crease, not you", and
  * the ```facts line "Whether it is a penalty shot turns on where the puck is, not where
- * you are, in all four books".
+ * you are, in all five books".
+ * (That line said "all four books" until 25 September 2026, when CARHA Rule 5(c) and 58(c)
+ * were verified and the claim was widened. A comment quoting another file goes stale silently.)
  *
  * WHY A RULES PICTURE EARNS A PLACE IN A TECHNIQUE DOCUMENT. The consequence is a penalty
  * shot against your own team, and the thing that decides it is a LOCATION — the one kind
@@ -432,7 +434,34 @@ const wherethePuckIs = {
     'shaded crease paint beside your goaltender, with you standing outside it. The test is not ' +
     'where you are — it is where the puck is. ' +
     'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
-    // ⚠️ "all four" flattened USA Hockey, which alone gives the referee an alternative:
+    // ⚠️⚠️ THIS CAPTION CARRIES NO BOOK COUNT, AND THAT IS DELIBERATE — DO NOT PUT ONE BACK.
+    // It said "all four books" until 25 September 2026, then "all five" for part of that day, and
+    // NO COUNT CAN BE TRUE IN BOTH HOSTS: `content/technique/puck_handling.md` never names the
+    // PWHL and counts five, `content/positions/center.md` names it in two facts lines, a body
+    // paragraph and its trailer and counts six. The five-count put "all six" and "all five" about
+    // fifteen seconds apart inside center.md's spoken chunk 063. "Every book" is true in both, is
+    // this corpus's own form in this layer (puck_handling.md:962 and :1034 both use it), and does
+    // not go stale when a book is added to the shelf.
+    // ⚠️ THE LESSER OPTION WAS ALSO GIVEN TO THE REFEREE, AND IT IS NOT THE REFEREE'S. CARHA prices this act: Rule 58(c) awards the penalty shot "when a defending player (except the
+    // goalkeeper) deliberately falls on the puck, holds or gathers the puck into their body in any
+    // manner, or picks up the puck with their hand, while the puck is within their goal crease. No
+    // other penalty shall be assessed." (carha.txt:2819-2828) — read past the mark: that last
+    // sentence is what makes USA Hockey's alternative unique, so "that book alone" survives —
+    // doubly, because PWHL Rule 65.6 (pwhl_rules.txt:5765-5775) is flat the same way: "No
+    // defending player, except the goalkeeper, will be permitted to fall on the puck ... when the
+    // puck is within the goal crease ... a penalty shot shall be ordered against the offending
+    // Team, but no other penalty shall be given." That sentence also carries the PWHL's goalkeeper
+    // exemption, and PWHL Rule 1.7 (pwhl_rules.txt:863-864) carries the volume in the NHL's own
+    // words: the crease area "shall include all the space outlined by the crease lines and
+    // extending vertically four feet (4') to the level of the top of the goal frame."
+    // CARHA Rule 5(c) carries the volume too, almost the NHL's own sentence:
+    // the crease area "shall include all the space outlined by the crease lines and extending
+    // vertically to the level of the top of the goal frame." (carha.txt:546-548)
+    // ⚠️ AND THE ELECTION IS NOT THE REFEREE'S. USA Hockey Rule 406(a) (usah.txt:2646-2653): "the
+    // non-offending team may, prior to the penalty shot, elect that the minor or bench minor
+    // penalty be assessed ... in lieu of the penalty shot." The caption had given the choice to the
+    // official; the owner document's own body already said whose it is.
+    // ⚠️ "all four" also flattened USA Hockey, which alone gives an alternative:
     // Rule 614(b) Falling on Puck, "A penalty shot/optional minor penalty shall be
     // assessed". ⚠️ This was first written as 406(b) — the number came from a review
     // report and was not re-derived. 406 is Penalty Shot and governs WHO TAKES one
@@ -440,16 +469,17 @@ const wherethePuckIs = {
     // QUOTATION was verified and the CITATION was not, which is the same defect as
     // carrying a figure out of its owner. The owner's
     // own facts block already carried the distinction; this caption had dropped it.
-    'shot in all four books — though USA Hockey Rule 614(b) reads ' +
-    '"a penalty shot/optional minor penalty shall be assessed", so that book alone lets the ' +
-    'referee take the lesser option. All four exempt the goalkeeper, whose ' +
+    'shot in every book, CARHA at its own Rule 58(c) — though USA Hockey Rule 614(b) reads ' +
+    '"a penalty shot/optional minor penalty shall be assessed", so that book alone offers a lesser ' +
+    'option, and its Rule 406(a) puts that election with the non-offending team rather than with ' +
+    'the referee or with you. Every book exempts the goalkeeper, whose ' +
     'job that is. What decides it is the puck\'s location at the instant it is covered. So the two ' +
     'cases run opposite to the way most players guess: standing inside the crease and ' +
     'covering a puck that was outside it is a minor penalty; standing ' +
     'outside the crease, exactly as drawn here, and covering a puck that was inside it is ' +
     'the penalty shot. ' +
     'The crease is a ' +
-    'volume and not a patch of ice — all four books run it from the ice up to the top of the goal ' +
+    'volume and not a patch of ice — every book runs it from the ice up to the top of the goal ' +
     'frame — so a puck plucked out of the air over this paint, below the crossbar, is a puck in ' +
     'the crease, and a plan view has no height in it to draw that with. ' +
     'The instruction is the same wherever you are standing: do not keep hold of it. Knock it ' +

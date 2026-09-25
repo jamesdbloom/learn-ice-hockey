@@ -352,7 +352,7 @@ const stepUp = {
     'bars, meaning arrive and contain, and it is drawn that way on purpose. A step-up ' +
     'finished as a hit is the geometry the charging rules are written for, and a carrier ' +
     'with his head down is the picture those rules name: that tells you he cannot change ' +
-    'direction, and nothing more. None of the four books caps charging at a minor, and ' +
+    'direction, and nothing more. None of the six books caps charging at a minor, and ' +
     'USA Hockey Rule 607(a) writes no bare one at all — "a minor plus a misconduct or a ' +
     'major plus a game misconduct penalty shall be assessed for charging an opponent". ' +
     // ⚠️ CRITICAL, found by `safety-reviewer`. This read "the Note to USA Hockey Rule 607
@@ -366,14 +366,17 @@ const stepUp = {
     // Common Mistakes -- and the ONE layer voiced with no surrounding text did not. Round 10's
     // shape exactly.
     'The stride counts disagree, and none of them is a threshold you may skate to. ' +
-    'Hockey Canada Rule 7.4 makes "two or more strides immediately prior to making ' +
-    'contact" charging, USA Hockey\'s 607 Note "more than two", the IIHF Rule 42.1 ' +
-    '"multiple strides", and NHL Rule 42.1 no number at all. But every one of those books ' +
+    'Hockey Canada Rule 7.4(ii) makes "two or more strides immediately prior to making ' +
+    'contact" charging, where the Note to USA Hockey Rule 607 needs "more than two ' +
+    'strides" and the Note to CARHA Rule 52(a) "more than two steps or strides". ' +
+    'IIHF Rule 42.1 writes no number, only "multiple strides", and ' +
+    'NHL Rule 42.1 and PWHL Rule 42.1 none either, judging it "as a result of distance ' +
+    'traveled". But every one of those books ' +
     'also reaches a check with no strides in it: USA Hockey\'s own sentence continues ' +
     '"or travels an excessive distance to accelerate through a body check for the purpose ' +
     'of punishing the opponent", and its Casebook answers "Yes" at 607 Situation 3 to a ' +
     'player who "delivers a check without taking the two fast strides, but instead ' +
-    'accelerates through the check". Leaving your feet is charging in all four on its own. ' +
+    'accelerates through the check". Leaving your feet is charging in all six on its own. ' +
     'Two strides is a safe harbour in no book. ' +
     // ⚠️ The division claim below was DESTROYED by my own repair of this caption and
     // restored here. A line-index replacement cut its subject and left the tail

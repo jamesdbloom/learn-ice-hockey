@@ -326,9 +326,20 @@ both `warn-inline` runs, and did NOT notice the bare glyph in the same image —
 walk afterwards.** **The defect is real; the description was wrong.**
 
 ⚠️⚠️ **AND THERE IS A FOURTH STATE THAT `--bare` CANNOT SEE — MEASURED 24 September 2026:
-A GLYPH *INSIDE* A `**strong**` RUN.** `markInlineWarnings` needs the glyph to **PRECEDE** a strong
-run — it reads the *preceding text node*. A glyph **within** the bold gets **the bold and nothing
-else: no amber, no left bar, no tint.**
+A GLYPH *INSIDE* A `**strong**` RUN, AFTER OTHER CHARACTERS** — `**head, ⚠️ hazard.**`. **That one
+gets the bold and nothing else: no amber, no left bar, no tint.**
+
+⚠️⚠️ **BUT `**⚠️ text**` — THE GLYPH *LEADING* THE STRONG RUN — IS FINE, AND THIS PASSAGE SAID
+OTHERWISE FOR WEEKS.** It read *"`markInlineWarnings` needs the glyph to PRECEDE a strong run — it
+reads the preceding text node"*, which names only **shape (b)**. ⚠️ **`markInlineWarnings` handles
+THREE shapes, and its own comments name them.** **`WARNING_LEAD_RE` — `/^\s*(\d+[.)]\s*)?(⚠|❗|🚫)/u`
+— is tested against the STRONG RUN'S OWN TEXT and is checked FIRST, before any preceding node is
+looked at.** ✅ **So a strong run that OPENS with the glyph is wrapped wherever it sits in the
+paragraph.** ⚠️ **The discriminator is NOT where the run sits — it is whether the glyph LEADS the
+run.** ⚠️⚠️ **A `commit-gate` inferred the position rule from this passage, briefed a "repair" for a
+correct line, and an agent REFUSED it: verified in source AND across `site/dist`, where **80**
+`<strong>` runs open with a glyph and **ZERO are untreated**. The gate's sibling check came out right
+for the wrong reason.** ✅ **The 63-of-76 figure below was always shape (a) working.**
 
 ⚠️ **`--bare` DOES NOT COUNT THESE**, because they carry typographic treatment. Measured in
 `site/dist`: **76 glyphs sit inside a `<strong>` run; 63 are wrapped and correct; 13 ARE NOT** —
@@ -399,8 +410,10 @@ same failure one file over.**
 ### ⚠️ THE REPAIR IS USUALLY NOT "ADD BOLD" — IT IS TO SPLIT AN EXISTING BOLD RUN
 
 ⚠️ **Measured on one document: only 2 of 29 glyphs were a marker in front of plain prose. TWENTY-SEVEN
-were INSIDE an existing `**strong**` run** — `**head, ⚠️ hazard clause.**`. **The plugin needs the
-glyph to PRECEDE a strong run, so a glyph WITHIN one gets nothing.** The repair is to **close the
+were INSIDE an existing `**strong**` run** — `**head, ⚠️ hazard clause.**`. **A glyph INSIDE a strong run, AFTER other
+characters, gets nothing** — ⚠️ **but one that LEADS the run is wrapped by `WARNING_LEAD_RE` wherever
+the run sits. Check which shape you have before editing: 27 of those 29 needed the repair; a
+`**⚠️ …**` run does NOT.** The repair is to **close the
 strong before the glyph and reopen after it** — same words, same visible bold extent. **That is why a
 whole wave changed no word: 27 edits moved four asterisks each.**
 
@@ -1361,7 +1374,8 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_plan_rows.py, check_readability_census.py, check_caption_echo.py,
                     check_layer_echo.py,
                     check_quote_drift.py, check_caption_hosts.py, check_instruction_first.py,
-                    check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py.
+                    check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py,
+                    check_marker_pairs.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
@@ -1644,6 +1658,16 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     word, a disclosure voiced in two layers is propagation, and a repeated safety
                     limb is repeated on purpose. Only narrative restatement is cuttable, and the
                     tool cannot tell the difference.
+                    check_marker_pairs.py — paragraphs that carried a ⚠️ in HEAD and carry none
+                    now. ⚠️ `md_to_speech.py` sets `important` PER PARAGRAPH, so a paragraph losing
+                    its LAST marker silently loses a spoken "Important." and NO other checker can
+                    see it. ⚠️⚠️ AND AN AGGREGATE DELTA HIDES IT IN BOTH DIRECTIONS: a wave showed
+                    79 → 77 and the −2 was explained away as a sanctioned MERGE — only one of the two
+                    was; on 25 September `team_play_and_culture.md` rose 24 → 33 while no paragraph
+                    had lost its own marker, so a RISE hides a loss exactly as a fall does. ⚠️ It keys
+                    a paragraph by its first 60 characters, so a REWRITTEN OPENING reports as "no
+                    longer present by key" — a CANDIDATE, not a finding, and a re-aiming wave produces
+                    these by design. WORKLIST: read every hit.
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.
