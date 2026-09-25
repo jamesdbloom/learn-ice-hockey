@@ -248,7 +248,7 @@ Two separate tools, and players routinely use only one.
 
 Doing both at once is a body-position problem: face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane. When they conflict — you cannot both seal the lane and stay net-side — **net-side wins in the defensive zone**, because a pass completed twenty feet from your net is survivable and a player alone at the goalmouth is not.
 
-**And your man does not have the puck, which conditions both tools.** The NHL, the IIHF and the PWHL each let you use your body position to lengthen an opponent's path to the puck *"provided [the] stick is not utilized"*, so the blade belongs in the lane rather than on him; and you take the ice by getting to the spot first, not by stepping across into him once he is moving.
+**And your man does not have the puck, which conditions both tools.** NHL and IIHF Rule 56.1 and PWHL Rule 57.1 each let you use body position to lengthen an opponent's path to the puck on three conditions — the stick is not utilized, the free hand is not used, and the position is not used to deliver an otherwise illegal check. So the blade belongs in the lane rather than on him, and the position you win is not a licence for the contact that follows it. You take the ice by getting to the spot first, not by stepping across into him once he is moving.
 
 ### Layer, do not duplicate
 
