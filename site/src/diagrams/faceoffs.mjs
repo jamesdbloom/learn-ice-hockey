@@ -200,7 +200,14 @@ const dzoneAlignmentOtherCircle = {
     // dropping it here. A reader who meets this picture alone — a deep link, a search
     // result, a screen reader taking one figure — got an absolute-sounding rule.
     'The shaded circle is the rule rather than the choice: everyone but the two takers stays outside ' +
-    'it. ⚠️ What counts as outside is not the same in all four books — the diagram above carries that' +
+    // ⚠️ This said "not the same in all four books" until the split it points at was
+    // corrected. The split names SIX -- the NHL, the IIHF and the PWHL permissive, Hockey
+    // Canada and CARHA counting a skate on the line as encroachment, USA Hockey's Casebook
+    // wanting everything behind the hash marks -- so the pointer's count was never the same
+    // number as the thing it pointed at, and this caption's only host, faceoffs.md, declares
+    // its own survey shelf as five. A pointer carries no count now; the diagram it points at
+    // carries the books.
+    'it. ⚠️ What counts as outside is not the same in every book — the diagram above carries that' +
     ' split.',
 
   describe:
@@ -251,19 +258,48 @@ const dzoneAlignment = {
     'alignment goes with a low zone collapse, and every team’s differs, so find out what yours runs. ' +
     'The shaded circle is the part that is a rule: every player other than the two taking the draw ' +
     'must keep both skates outside the circle and outside the hash marks. ⚠️ Whether touching the ' +
-    'line is safe is not the same in every book. Under the NHL and the IIHF, Rule 76.7, skate contact' +
-    ' with the line is permitted and it is crossing it that is illegal; Hockey Canada counts a skate ' +
-    'on the face-off circle as encroachment; and USA Hockey’s Casebook requires all sticks and all ' +
-    'skates completely behind the hash marks. Keep your skates and your stick behind your own hash ' +
-    'mark, and your hands and body off the opponent beside you, and you are ' +
-    // ⚠️ This said "...and you are legal in all four books." as a SUFFICIENCY claim, which
-    // NHL and IIHF 76.7(iii) do not support: "Any physical contact with an opponent prior to
-    // the puck being dropped" is a violation in its own right, and the remedy falls on your
-    // CENTRE, who is thrown out of the dot. The corpus already knew this at winger.md:672 and
-    // faceoffs.md:361 -- so the caption contradicted the corpus in the voiced layer, inside
-    // winger.md itself, where both are read aloud.
-    'legal in all four books — and under the NHL and IIHF any physical contact with an opponent ' +
-    'before the drop is a violation in its own right (NHL and IIHF 76.7(iii)).',
+    'line is safe is not the same in every book. The NHL, the IIHF and the PWHL permit skate ' +
+    'contact with the line and make it crossing the line that is illegal (NHL and IIHF Rule 76.7, ' +
+    'PWHL Rule 78.7); Hockey Canada and CARHA both count a skate on the face-off circle as ' +
+    'encroachment; and USA Hockey’s Casebook requires all sticks and all skates completely behind ' +
+    'the hash marks. Keep your skates and your stick behind your own hash mark, and your hands and ' +
+    'body off the opponent beside you: that position satisfies every book, whichever one your game ' +
+    'is played under. ' +
+    // ⚠️ THE COUNT AND THE SUFFICIENCY ARE TWO SEPARATE DEFECTS AND THIS CAPTION CARRIED
+    // BOTH. It once ended "...and you are legal in all four books." The SUFFICIENCY half was
+    // repaired first: NHL and IIHF 76.7(iii) make pre-drop contact a violation in its own right,
+    // so foot position is not the whole of legality, and the corpus already knew that at
+    // winger.md and faceoffs.md. THE COUNT HALF SURVIVED THAT REPAIR, and it was wrong twice.
+    //
+    // (1) It contradicted its own owner in the voiced layer. faceoffs.md declares its survey
+    //     shelf in terms -- "'The five books' below means five, and there is a sixth on the
+    //     shelf" -- and states THIS VERY INSTRUCTION as "legal in all five rulebooks this
+    //     document covers", twice more in Common Mistakes and Key Takeaways. center.md's
+    //     faceoff facts block says "now true in all five books" a few lines above the marker
+    //     that embeds this picture.
+    // (2) No count is true in all SEVEN hosts. defender.md declares six; faceoffs.md and
+    //     center.md five; rink_map.md and game_management.md four; how_to_watch_hockey.md
+    //     declares none. Count-free is the only wording true in every host -- and it is the
+    //     owner's own ruling, faceoffs.md: "That is legal everywhere, it needs no edition and
+    //     no book named."
+    //
+    // The book-by-book split was ALSO short two books, in BOTH directions, so widening the
+    // count alone would not have repaired it. PWHL 78.7(i)-(ii) is the NHL's clause verbatim
+    // (permissive, skate contact with the line allowed); CARHA's Glossary "Encroachment" is
+    // Hockey Canada's verbatim -- a skate "either inside the face-off circle, on the face-off
+    // circle, or in the area between the hash marks" -- so naming Hockey Canada alone told a
+    // CARHA reader nothing about his own book.
+    //
+    // And the contact limb below was under-attributed to the NHL and IIHF. PWHL 78.7(iii) is
+    // word-identical; Hockey Canada 6.2(a) and CARHA 57(a) both eject the CENTRE when a player
+    // other than the taker "makes physical contact with an opponent" before the drop. USA
+    // Hockey is the one book that does not name a non-taker's contact -- 613(e) reaches the
+    // players facing off -- so it is left unnamed here rather than swept in.
+    '⚠️ Contact is priced on its own, and your centre pays for it: any physical contact with ' +
+    'an opponent before the drop is a face-off violation in its own right under the NHL, the IIHF ' +
+    'and the PWHL (NHL and IIHF Rule 76.7, PWHL Rule 78.7), and under Hockey Canada Rule 6.2(a) and ' +
+    'CARHA Rule 57(a) a player other than the taker who makes contact with an opponent gets their ' +
+    'own centre ejected from the dot.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +

@@ -21,12 +21,22 @@ WORKLIST, NOT A GATE. Read every hit.
 Usage: python3 scripts/check_marker_pairs.py <path> [<path> ...]
 """
 
-import subprocess, sys, re
+import subprocess, sys, re, os
 def paras(t): return [p for p in re.split(r'\n\s*\n', t) if p.strip()]
 def key(p):  # first 60 chars of stripped text as identity
     return re.sub(r'\s+',' ', p.strip())[:60]
+ROOT = subprocess.run(['git','rev-parse','--show-toplevel'],
+                      capture_output=True, text=True).stdout.strip()
+
 for path in sys.argv[1:]:
-    old = subprocess.run(['git','show',f'HEAD:{path}'],capture_output=True,text=True).stdout
+    # git show needs a REPO-RELATIVE path. An absolute path silently yields an
+    # empty blob, which printed HEAD=0 and read like a catastrophic marker loss.
+    # Reported by an agent that hit it, 25 September 2026.
+    rel = os.path.relpath(os.path.abspath(path), ROOT)
+    r = subprocess.run(['git','show',f'HEAD:{rel}'], capture_output=True, text=True)
+    if r.returncode != 0:
+        print(f"{path}: NOT IN HEAD (new file?) -- skipping"); continue
+    old = r.stdout
     new = open(path,encoding='utf-8').read()
     o = {key(p): ('⚠' in p) for p in paras(old)}
     n = {key(p): ('⚠' in p) for p in paras(new)}
