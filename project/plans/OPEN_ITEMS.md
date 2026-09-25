@@ -22,6 +22,300 @@ they did not need to.**
 done?"* took three files, and **two podcast items listed as open had been fixed days earlier** with
 nobody noticing.
 
+## 🔴🔴🔴 P2's BACKLOG FIGURE IS THE WRONG METRIC, AND IT SENT A WHOLE WAVE TO FILES WITH NO WORK
+
+**Measured 25 September 2026, by eight agents dispatched on a worklist the coordinator built wrong.**
+
+⚠️⚠️ **THE `690` / `707` "flow-breaking callouts" FIGURE IS THE DEFAULT `classify()` CENSUS, NOT
+`--panels`.** ⚠️ **`classify()` files ANY paragraph OPENING `**bold**` as "own paragraph" wherever its
+marker sits** — so a document whose markers were ALREADY moved mid-paragraph still scores high forever.
+
+| document | default census | **real panels** |
+|---|---|---|
+| `rules_primer.md` | 81 | **0** |
+| `goaltender.md` | 63 | **0** |
+| `body_contact_and_battles.md` | 56 | **1** |
+| `faceoffs.md` | 47 | **0** |
+| `uk_rules.md` | 42 | **2** |
+| `special_teams.md` | 36 | **0** |
+| `forechecking_systems.md` | 29 | **1** |
+| `offensive_zone_play.md` | 26 | **0** |
+| **total** | **380** | **4** |
+
+**Corpus-wide: 58 panels of 1,598 marker-bearing lines.** ⚠️⚠️ **THE MARKER-PLACEMENT WAVE IS
+ESSENTIALLY COMPLETE.** Commits `dff5ae7`, `8a5ad1b` and `9dba344` already did it.
+
+⚠️ **CLAUDE.md ALREADY SAYS THIS AND THE COORDINATOR QUOTED IT TO ALL EIGHT AGENTS IN THE SAME BRIEF
+THAT MISUSED IT:** *"a move-2 repair reappears in `--stacks` FOREVER — the AUDIO benefit is real and
+permanent; the COUNT benefit was an artefact. **Do not bank it.**"* **The same is true of the default
+census, and nothing said so.**
+
+✅ **THE ONLY WAY TO DRIVE THE DEFAULT FIGURE DOWN IS DE-MARKING, WHICH SILENTLY DELETES SPOKEN
+ESCALATIONS AND NO CHECKER CAN SEE IT.** **So the figure must not be a target. Track `--panels`.**
+
+### ✅ THREE AGENTS VALIDATED `--panels` RATHER THAN TRUSTING IT, AND THAT IS THE STANDARD
+`rules_primer.md`: **0 `callout-warning` in built HTML, 386 `warn-inline` spans, 389 raw glyphs** — the
+3-glyph gap all inside `<svg><desc>`, which has no visible rendering. `goaltender.md`: verified three
+ways, including **`grep -c '^\s*[>]*\s*(⚠|❗|🚫)'` on the source returning 0** — conclusive
+independent of the tool, because `WARNING_RE` is anchored.
+⚠️ **One agent's FIRST count said 9 untreated glyphs; it re-checked, found its own region matcher was
+closing spans early, and corrected itself: *"No agent should be dispatched on my first number."***
+
+---
+
+## 🔴🔴🔴 THE CLOSED BOOK-COUNT IS A CORPUS-WIDE SHAPE — ~75 SITES IN ONE FILE ALONE
+
+**Measured 25 September 2026 by an agent that repaired eleven sites and then declared the rest.**
+
+⚠️⚠️ **THE DEFECT: a bare closed count — *"all four"*, *"the other three"*, *"two of the four"*,
+*"three of the five"* — in a corpus that holds SIX books and `ls sources/*.txt | wc -l` = 42 files.**
+**A reader whose book is outside the count hears that their book is outside the rule.**
+
+### What one file's sweep found
+**`offensive_zone_play.md`: ~75 closed-count sites. Eleven repaired. The rest UNCHECKED**, and the
+great majority sit in the **goaltender-interference cluster** — `:642`, `:657`, `:665`, `:843`,
+`:900`, `:942`, `:1128`, `:1137`, `:1163`, `:1181`. ⚠️⚠️ **That same file already cites PWHL 71.1,
+71.3 and 71.7 at `:457`, `:559` and `:576-580`.** ***"The crease cluster is the same defect shape as
+the one I just repaired, one section over."***
+✅ **THE MODEL IS IN THE SAME FILE: `:1151` KT5 scopes it — *"the five books it covers"*. Scope the
+count, or name the books. Never leave a bare closed count in a layer voiced alone.**
+
+### ⚠️ AND IT RECURRED INSIDE THE COMMIT THAT REPAIRED IT — three times
+A `commit-gate` BLOCKED on this shape after the round had already filed it as a Critical:
+1. **`special_teams.md` used *"the five books"* for TWO DIFFERENT SETS** — `:745`/`:760`/`:770`/`:772`
+   mean NHL+IIHF+USAH+HC+**CARHA**; `:1060` means a set with the **PWHL** and without CARHA. **Both
+   facts lines, both voiced alone, both authored by the same diff.**
+2. **`special_teams.md`'s *"all five books"* ladder** — the PWHL prints every tier: **65.2(vii)** minor,
+   **65.6** penalty shot, and ⚠️ **69.5 awarded goal FLAT — no *"obvious and imminent goal"* condition,
+   where CARHA's Note 1 routes to Rule 36(b) which DOES condition it. So the PWHL is the STRICTER
+   column and a closed count silently excluded it.**
+3. **`offensive_zone_play.md` KT11, voiced alone** — *"two of the five have no crossbar at all"* while
+   **PWHL 82.3** prints the contact-point test verbatim. **Permissive for a PWHL reader.**
+
+### ⚠️ THE PWHL RENUMBERS, SO A RULE-NUMBER SEARCH MISSES IT — three worked examples
+**Rebound carve-out: NHL 69.7 → PWHL 71.7.** **Abandoned puck: NHL/IIHF 72.3 → PWHL 74.3.**
+**Goalkeeper interference: NHL 69.x → PWHL 71.x.** ⚠️ **And PWHL Rule 69 is *Handling Puck*, stopping
+at 69.6 — so a 69.7 search returns a TRUE negative on a rule that exists under another number.**
+✅ **SEARCH THE ACT, NEVER THE NUMBER.**
+
+### ⚠️ ADDING A BOOK CAN FALSIFY A SUPERLATIVE YOU NEVER TOUCHED
+`offensive_zone_play.md:502` read *"Hockey Canada 6.9(b) is **the most explicit of the three** about
+what that test forgives"*. ⚠️ **PWHL 37.5 prints that parenthetical WORD FOR WORD.** **The agent's own
+repair would have shipped a false superlative had it not swept for one.**
+✅ **After changing any count, sweep the file for `most`, `only`, `alone`, `strictest` near it.**
+⚠️ **This round already shipped one false superlative — *"the strictest book here"*, refuted by NHL
+43.5 one clause away — and it reached the corpus.**
+
+### 📌 A CITATION CORRECTION WORTH KEEPING
+**For the crossbar test cite PWHL 82.3, not 37.5.** ⚠️ **37.5 is the *Video Review* rule; 82.3 is the
+playing rule and the direct counterpart to NHL 80.3.** A `commit-gate` briefed 37.5 and the agent
+found the better citation by reading.
+
+---
+
+## 🔴🔴 USA HOCKEY'S *GLOSSARY* DEFINITION OF DEFENCELESS IS WIDER THAN THE *PREFACE* ONE THE CORPUS QUOTES
+
+**Found 25 September 2026 by an agent that then REFUSED to repair it, correctly.**
+
+| source | wording |
+|---|---|
+| **Preface** (`usah.txt:322-324`) — **what the corpus quotes** | *"unaware, unprepared, or unsuspecting of an impending **hit**"* |
+| **Glossary** (`usah.txt:6280-6283`) — **never quoted** | *"unaware, unprepared or unsuspecting of an impending body check **AND/OR COMPETITIVE CONTACT**"* |
+
+⚠️⚠️ **So in a USA Hockey NON-CHECK or COMPETITIVE-CONTACT game, a screener whose eyes are on the puck
+is defenceless against COMPETITIVE CONTACT too — not only against a body check.** **A defender reading
+the document's step-3 scope (*"this step needs a full-checking game"*) concludes the screener is
+unprotected against anything short of a check. The widest-permission book is also the one whose
+defenceless definition reaches furthest.**
+**Scope: USA Hockey only — 12U and below, all Girls'/Women's, all non-check Adult (604(a)), and any
+fixture made non-checking by 604(b).**
+⚠️⚠️ **NOT THE IIHF: `iihf_rules.txt:8247` DOES carry a possession limb (*"no longer in control or
+possession of the puck"*), so a British reader's book does not reach this the same way.** ⚠️ **State
+the two alike and you tell a British reader something their book does not say.**
+
+**Layers: body ✓ (preface form only, `:1781`, scoped to head contact) · facts ✗ · Common Mistakes ✗ ·
+Key Takeaways ✗.** ✅ **Natural host is `:1747`, whose subject IS how much contact non-check hockey
+permits — as a counterweight to its *"can be very physical"* quotation.**
+⚠️ **WHY IT WAS NOT REPAIRED, and the reasoning is right:** *"It is a new rule claim needing body +
+facts + Common Mistakes + Key Takeaway, and half-propagating it is the round-10 defect exactly. It also
+needs the IIHF contrast stated in the same breath. **That is a brief, not a patch.**"*
+
+### 🔴 AND FOUR CHUNK HEADS OPEN ON A PENALTY TIER WITH NO BOOK NAMED — pre-existing
+**Chunk 069 opens** *"six hundred and forty, clause g: 'A major plus a game misconduct penalty shall be
+assessed…' six hundred and forty, clause h: 'A match penalty for reckless endangerment…'"* — ⚠️ **that
+is USA HOCKEY 640(g)/(h), and the words *"USA Hockey"* are in the PRECEDING chunk.** Same shape at
+**073** (Hockey Canada 7.6(b)), **089** (IIHF 23.2/28.1), **183** (USA Hockey 404(b)/411/606/623).
+⚠️ **Verified IDENTICAL before and after that round's edits — not created by them.** **Reader on the
+page is fine; the listener gets a mandatory major-plus-game-misconduct and a match penalty with no book
+and no scope, in a corpus whose whole point is that the six books differ.** ✅ **069 first.**
+✅ **Reproduce: render, then scan chunk heads for a penalty word with no book name in the first ~150
+characters.**
+
+### ⚠️ A COORDINATOR ERROR WORTH NOT REPEATING
+**A brief relayed six "instructions already in the document" from a previous agent's table. FIVE OF THE
+SIX DO NOT EXIST VERBATIM** — `"play them as if they bind you, because they do"`, `"keep your momentum
+angled back toward your own net"`, `"poke from a stopped base"`, `"take the space and seal the outlet
+instead"`, `"screen or block, never both"` all return **zero**. ⚠️ **A carrier phrase quoted in a brief
+is a CLAIM like any other, and this one was relayed without being run.** ✅ **The agent found the real
+carriers and borrowed those.**
+
+---
+
+## 🔴 A CLAUSE-BY-CLAUSE DIFF OF ONE RULE RETURNS A TRUE NEGATIVE FOR THE WHOLE BOOK — 25 September 2026
+
+**An agent diffed IIHF Rule 46 across both editions, clause by clause, and found a sixth substantive
+change the document had missed. It then named what that method structurally cannot see:**
+
+> ***"I diffed Rule 46 against Rule 46. If the 2026/27 edition moved a fighting consequence OUT of Rule
+> 46 into another rule — Rule 20, Rule 28, Rule 70, or Appendix IV's merged Table 5 — my clause-by-clause
+> diff returns a TRUE NEGATIVE for Rule 46 and I would have called it unchanged."***
+
+⚠️ **`uk_rules.md` leans on Rules 20.4, 22.1, 28 and 70 in FOUR separate places.**
+✅ **The test: diff 2025/26 Rules 20, 22, 28 and 70 against their 2026/27 counterparts for any
+fighting-, instigator- or aggressor-keyed limb.**
+
+### ✅ What the Rule 46 diff DID find — the instigator widened, and it reaches the coach
+**46.3 → 46.10 INSTIGATOR**, verified verbatim in both editions:
+- *"conduct in retaliation to a prior game **(or season)** incident"*
+- *"obvious retribution for a previous incident **in the game or season**"*
+⚠️ **`or season` returns 0 anywhere in the 2025/26 book.** Tariff is a minor plus a major plus an
+automatic game misconduct — **so a grudge carried from a fixture months ago can be what ejects you.**
+**And a limb with NO counterpart in the old book:** an instigator penalty *"in the final five (5)
+minutes of regulation time or at any time in overtime"* exposes the player to Rule 28, and *"the
+player's coach shall also be subject to potential supplemental discipline."* **Verified absent three
+ways — `final five` 0, `coach shall also be subject` 0, and all eleven old `instigator` lines read.**
+
+### 🔴 OPEN — an edition-flip hazard, correct today and voiced alone
+⚠️ **2026/27's 46.8 ADDS the unwilling-combatant waiver to fighting outside the periods**, replacing the
+old mandatory *"will be investigated by Proper Authorities"* with *"may be subject to potential
+supplementary discipline."* **`:275`, `:361` and KT7 `:583` all say that route *"keeps its IIHF
+major-plus-ejection."*** ✅ **All three are CORRECT AS SCOPED — Britain's declared default is 2025/26 —
+and the error direction is the STRICT one, so they were left.** ⚠️⚠️ **But any future edition-flip of
+this document must reach all three, and KT7 IS VOICED ALONE.**
+
+### ✅ AND A COUNT THAT COULD NOT BE BOUNDED WAS REPLACED, NOT GUESSED
+*"**Five** Rule 46 clauses changed in substance"* → *"**Several**"*. The agent's reason, and it is the
+rule this file keeps relearning: ⚠️ ***"a count I cannot bound is not a count I should write."***
+⚠️ **46.12 and 46.15 were read and DELIBERATELY NOT written in** — 46.12 restates 46.1's own standard
+penalty as a standalone clause, 46.15 consolidates supplementary-discipline pointers the old book
+scattered. **Consolidation, not new exposure.** ✅ **Recorded so nobody re-derives them.**
+
+---
+
+## 🔴🔴 ADDING TEXT TO A LONG BULLET RE-CUTS EVERY CHUNK AFTER IT — AND NO MARKER DIFF SEES IT
+
+**Measured 25 September 2026, by the agent that caused it and caught it.**
+
+An insertion into a long Common Mistakes bullet in `body_contact_and_battles.md` moved the bullet's
+chunk split. Before, chunk 245 held the CARHA scope (*"CARHA-affiliated adult leagues only"*), the
+*"fifth book"* framing, the mandatory 52(b)/54(c)/49(a) ejections **and** *"can leave the game
+instead"* — one breath. ⚠️⚠️ **After, chunk 246 OPENED on *"But 52(b) provides that a major plus a game
+misconduct shall be assessed…"* — A MANDATORY EJECTION VOICED WITH NO BOOK NAMED AND NO ADULT-LEAGUE
+SCOPE, the last book named in that breath being HOCKEY CANADA.**
+
+✅ **Fixed by naming the book at the new chunk head** — `But **CARHA 52(b)** — the same adult-league
+book — provides…` — and re-verified that the CARHA limb still shares a chunk with its counterweight.
+
+⚠️⚠️ **THE LESSON, AND IT IS A METHOD: a PARAGRAPH-BY-PARAGRAPH MARKER DIFF CANNOT SEE THIS.** Markers,
+spoken `"Important."` totals and paragraph counts were all **unchanged** — 274 chunks, 145 utterances,
+identical to baseline. ⚠️ **Only a CHUNK-BOUNDARY DIFF against a baseline render finds it.**
+✅ **The method that worked: render the file with the new text REMOVED (`md_to_speech.py --content
+<scratchpad>/basecontent`), then diff chunk by chunk.** It showed **only chunks 244–248 changed**,
+which is what let the regression be isolated.
+
+⚠️ **So the three marker measurements are necessary and NOT sufficient for any edit that ADDS LENGTH.**
+**Every insertion into a unit over ~2,000 characters needs a chunk-boundary diff as well**, and the
+question to ask of each new chunk head is: ⚠️ **does this breath name its own book and its own scope?**
+
+---
+
+## 🔴 THE HIGH-STICK CEILING IS A SIX-BOOK QUESTION AND THE CORPUS COUNTS FIVE — 25 September 2026
+
+**An agent repairing the tip claim named this as its own weakest negative and could not run the test.
+The coordinator ran it. The PWHL prints the rule.**
+
+- **PWHL 74.3 High Stick** — *"When a player contacts the puck with her stick **above the normal height
+  of the shoulders**…"*, cross-referencing **Rule 82 – High-sticking the Puck**.
+- **PWHL 82.3 Disallowed Goal** — *"When an attacking player causes the puck to enter the opponent's
+  goal by contacting the puck **above the height of the crossbar**… the goal shall not be allowed…
+  **If the puck makes contact with the stick at or below the level of the crossbar and enters the goal,
+  this goal shall be allowed.**"*
+
+✅ **So the PWHL is in the NHL/IIHF/Hockey Canada group — crossbar test, goal allowed between shoulder
+and crossbar.** ✅ **The repaired sentences' *"three of the five / two of the five"* are CORRECT for the
+corpus's usual five books, and the direction is SAFE — adding the PWHL makes it four of six allow, two
+of six disallow.** ⚠️ **But `offensive_zone_play.md` already cites PWHL Rule 71 in its net-front
+material, so it treats the PWHL as live — and the reader's true field there is SIX.**
+
+### ⚠️ THE GENERAL SHAPE, AND IT IS THE ONE WORTH CARRYING
+⚠️⚠️ ***"My counts are counts of the corpus's USUAL FIVE, not of every book on disk."*** **`ls sources/*.txt`
+is the authority and the directory has GROWN twice.** **There is no tool that says your sentence names
+five and the directory holds more.**
+✅ **The test the same agent named for its own file, and it generalises:**
+`grep -n "every book\|all four\|whichever book\|each of them\|any of the" <file>` — ⚠️ **because a
+frame that names NO book count and NO book name is invisible to a search for "four books" or for a
+book's name.** **Ask of each hit: WHICH books is the reader actually choosing among there?**
+
+---
+
+## ✅ P2 HAS NO SECOND DEFECT EITHER — both candidate findings were MEASUREMENT ARTEFACTS
+
+⚠️⚠️ **THE COORDINATOR WROTE TWO FINDINGS INTO THIS FILE AND BOTH WERE REFUTED WITHIN THE HOUR — ONE
+BY TWO AGENTS INDEPENDENTLY, ONE BY ITS OWN RENDER.** They are recorded here so nobody re-discovers
+them as defects.
+
+### ❌ REFUTED — *"rules_primer is ~4.6× the safe amber density"*
+**It is 1.09×.** The 4.6× came from comparing **RAW COUNTS** — 386 spans against 83 — across documents
+whose `<main>` bodies differ by **4.5×**. Normalised per 10,000 characters of body text, Sources
+trailer and verification notes excluded:
+
+| document | spans | panels | body chars | **per 10k** |
+|---|---|---|---|---|
+| `rules_primer` | 386 | 0 | 615,065 | **5.9** |
+| `uk_rules` (the SAFE reference) | 84 | 2 | 137,732 | **5.4** |
+| `body_contact_and_battles` | 302 | 1 | 589,169 | **4.7** |
+| `forechecking_systems` | 119 | 2 | 264,931 | **4.5** |
+| `goaltender` | 243 | 0 | 514,607 | **4.4** |
+| `rink_map` | 51 | **5** | 131,245 | **2.7** |
+
+⚠️ ***"Do not brief a wave to strip amber from `rules_primer` on the strength of that number — per unit
+of text it sits within 9% of the reference, and a sweep would damage correct escalations."***
+📌 **Two corrections to CLAUDE.md's own figure: the built page holds 84, not 83.** And ⚠️ **the
+"~530 px" cannot be re-derived from `dist` — it needs a browser.** ✅ **The reproducible substitute is
+`1,640 characters of body text between marks` (137,732 ÷ 84). State the corpus target in those units.**
+📌 **And `rink_map.md` has 5 panels — more than any file in the eight-document wave.**
+
+### ❌ REFUTED — *"a 13,757-character bullet voiced as ONE unit"*
+⚠️ **`MAX_BILLED_CHARS = 2800` SPLITS IT.** Rendered by the coordinator: `rules_primer` is **279
+chunks, longest 2,814 plain characters**. `forechecking_systems` is **111 chunks, longest 2,824**.
+**No long line reaches a listener as one breath, and the Sources trailer is NOT VOICED AT ALL.**
+⚠️ **A character count of a markdown LINE is not a spoken unit. The renderer is the only authority.**
+
+### ✅ SO THE REMAINING P2 WORK IS PER-SITE AND SMALL, NOT A WAVE
+⚠️⚠️ **DO NOT DISPATCH A SPLITTING WAVE — three agents said so independently.** *"These lines are
+precisely where the counterweights live. CLAUDE.md's 'merging a claim with its counterweight is not
+sanctioned' applies IN REVERSE to splitting."* Measured example: `uk_rules.md:277` states the EIHL
+softening of a plain willing fight **and its counterweight in the same breath** — *"⚠️ Do not hear that
+as permission, because three things sit on top of it."*
+
+### 🔴 OPEN — the one real P2 finding: THE WRAPPER LANDS ON A POINTER, NOT THE HAZARD
+⚠️ **The `warn-inline` wrapper ENDS where the strong run ends**, so amber on a lead-in leaves the
+operative text black. **Zero instances of the bare-citation shape were found in `uk_rules` or
+`forechecking_systems` bodies** — but a **softer variant is live in both**, ~8 times in
+`forechecking_systems` and 3 in `uk_rules`:
+- ⚠️ **Worst measured, `uk_rules.md:126`** — amber on *"…carries the test that decides whether you are
+  a fighter or not, in Rule 46.6:"*, **black on the test itself** — *"defends themself with a 'few
+  punches'"* versus *"a Player who retaliates… will be assessed at least a minor penalty… or a major"*.
+  **The limb deciding minor-versus-major is the untreated one.**
+- `forechecking_systems`: *"Read what it does not restrict."*, *"Note which sub-sections that reaches."*
+- **Two in `forechecking_systems`'s Sources trailer**, incl. `⚠️ **Rule 627, Situation 1**` — the genuine
+  bare-citation shape, **but the trailer is not voiced**, so low value.
+
+⚠️ **Repairing most of these needs a WORD CHANGE — the instruction sits behind a colon, which
+`WARNING_NEAR_RE` forbids.** **Per-site wording judgement. NEVER SWEEP.**
+
+---
+
 ## 🔴 FIVE ROWS FROM THE 25 September GATES — three are TRAPS THAT WOULD UNDO CORRECT WORK
 
 ### 🔴🔴 A `check_quote_drift.py` FALSE POSITIVE THAT INVITES A RUN-ON TO BE RESTORED
