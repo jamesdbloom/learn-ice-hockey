@@ -1129,10 +1129,26 @@ const middleDrive = {
 // Your body, hands and stick are already across the blue line; only your
 // trailing skate is still legal ice. This diagram draws the universally-legal
 // version of that instant — the blade gliding ON the twelve-inch painted line,
-// which is onside in all four rulebooks — rather than the airborne version,
-// which is legal under only two of them and cannot be drawn as a single frozen
-// position without asserting a moment mid-air that a still picture cannot
-// honestly place. The caption carries the book split in words instead.
+// which is onside in every book — rather than the airborne version, which is
+// legal in some of them and not others, and which cannot be drawn as a single
+// frozen position without asserting a moment mid-air that a still picture
+// cannot honestly place. The caption carries the book split in words instead.
+//
+// ⚠️ NAME THE BOOKS, NEVER COUNT THEM. This comment said "all four rulebooks"
+// and "only two of them" until 26 September 2026, when the corpus's own
+// population was measured at SIX and the split at 3 / 2 / 1. A lifted trail
+// skate is ONSIDE under the plane test in NHL 83.1, IIHF 83.1 and PWHL 85.1
+// ("If a player's skate has yet to break the 'plane' ... she is deemed to be
+// on-side"); it is OFFSIDE where contact is required, under USA Hockey 630(a)
+// and Hockey Canada 6.11 — whose OWN PREAMBLE, not merely an Interpretation,
+// reads "Only the player's skate(s) that are in physical contact with the ice
+// surface will be used in determining an off-side". CARHA is UNSETTLED: its
+// 72(c) Note 1 is a disjunction ("in physical contact with, or on their own
+// side of, the blue line") and it never defines "own side" as a plane, so
+// assert nothing about CARHA either way. A DRAGGED, TOUCHING SKATE IS ONSIDE
+// IN ALL SIX, because contact satisfies CARHA's disjunction explicitly — so
+// the drawn version is universal and only the numeral was ever wrong.
+// ⚠️ A count goes stale when the shelf grows; a named book does not.
 //
 // RULE TEXT VERIFIED THIS SESSION, grepped fresh rather than carried from the
 // prose above (which was itself independently re-checked, not merely trusted):

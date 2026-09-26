@@ -209,6 +209,39 @@ const wheel = {
   half: false,
   width: 900,
 
+  // ⚠️ THE BOOK COUNTS WERE DROPPED 26 September 2026, and the PWHL added. This caption
+  // NAMED FIVE BOOKS and then twice said "four", contradicting itself on its face, with the
+  // PWHL absent altogether. Read in primary text that day, past every closing mark:
+  //   · STANDING STILL IS LEGAL in three — NHL 56.1, IIHF 56.1 and PWHL 57.1, which prints
+  //     the sentence in the same words ("A player is allowed the ice she is standing on
+  //     (body position) and is not required to move in order to let an opponent proceed").
+  //   · SLIDING ACROSS IS INTERFERENCE IN ALL SIX — NHL/IIHF/PWHL 56.1 & 57.1 ("Moving
+  //     laterally and without establishing body position, then making contact with the
+  //     non-puck carrier ... will be penalized as interference"); USA Hockey 625's Note and
+  //     625(a.1); Hockey Canada 8.3(a) with "Players of the team in possession of the puck
+  //     may not run deliberate interference for the puck carrier"; CARHA 66(a)(1) with its
+  //     Note 2, which writes that same bar. So: "wherever you play", not a numeral.
+  //   · A MAJOR OR AN EJECTION IS AVAILABLE IN ALL SIX, at different bars — NHL 56.4/56.5
+  //     and 21.1; IIHF 56.4; PWHL 57.4/57.5; Hockey Canada 8.3(b), (c) and (e); CARHA 66(a)
+  //     (discretionary major plus game misconduct) and 66(e) (major on injury). ⚠️ USA
+  //     HOCKEY IS THE ONE THAT NEEDS A SECOND RULE: its 625 writes ONLY a minor, and the
+  //     ejection route is the general Rule 602(a), a match penalty for a player "who
+  //     recklessly endangers or attempts to injure any opposing player". Name the ACT, not
+  //     the rule — 625 read alone says an ejection is unavailable, and it is not.
+  //   · ⚠️ THE PERMISSIVE INFERENCE WAS REMOVED 26 September 2026. This caption read
+  //     "which reads as a bar on moving rather than on standing" of Hockey Canada 8.3 and
+  //     CARHA 66(a) — an inference from silence, in the permissive direction, and its own
+  //     host document says the opposite in two places. Re-verified in primary text:
+  //     HC 8.3's definition limb (i) is "Interferes with or impedes the progress of an
+  //     opponent, who is not in possession of the puck" — NO movement element; the "may not
+  //     run deliberate interference" sentence is an ADDITIONAL bar, not a limit on limb (i).
+  //     CARHA 66(a)(1) is the same wording. Hockey Canada writes NO standing-ground
+  //     entitlement anywhere: flattened hc.txt scores 0 for "allowed the ice", "stand their
+  //     ground", "shadow" and "is not required to move". CARHA writes one, but 66(a) Note 2
+  //     addresses it to "the defending players", and D2 here is on the team IN POSSESSION.
+  //     On injury both escalate MANDATORILY — HC 8.3(b) 2nd para "will be assessed",
+  //     CARHA 66(e) "shall be imposed". State the silence; never read a permission out of it.
+  // ⚠️ NAME THE BOOKS, NEVER COUNT THEM.
   caption:
     'The wheel: the defenceman carries the puck himself, cutting tight behind his own net and coming ' +
     'up the far side. Drawn in your own defensive zone at the left of the picture, moving left to ' +
@@ -218,17 +251,26 @@ const wheel = {
     'screen and cutting wide gives the forechecker a straight line to you. ⚠️ D2 is drawn already ' +
     'standing at the net front and with no route at all, and whether that is even legal is the first ' +
     'thing to settle, because the books split on the act itself and not just on the penalty for it. ' +
-    'Under NHL and IIHF Rule 56.1 it is legal — a player is allowed the ice he is standing on and is ' +
-    'not required to move to let an opponent proceed — so under those two books, stick in tight and ' +
-    'vertical, hands to yourself, no bump as he goes past. ⚠️ Under USA Hockey it is a penalty: its ' +
+    'Under NHL and IIHF Rule 56.1, and PWHL Rule 57.1 in the same words, it is legal — a player is ' +
+    'allowed the ice they are standing on and is not required to move to let an opponent proceed — ' +
+    'so under those three books, stick in tight and vertical, hands to yourself, no bump as he ' +
+    'goes past. ⚠️ Under USA Hockey it is a penalty: its ' +
     '625(a.1) makes providing a protective screen that limits an opponent’s chance to pressure a ' +
     'teammate in possession a minor, and on a wheel your partner has the puck — so standing still ' +
-    'does not save you, and if you play under that book do not build a breakout around this. Hockey ' +
+    'does not save you, and if you play under that book do not build a breakout around this. And 625 ' +
+    'is not the ceiling: it writes no tier above the minor, but its Rule 602(a) reaches a match ' +
+    'penalty for a player who “recklessly endangers or attempts to injure” an opponent, tied to no ' +
+    'named foul. Hockey ' +
     'Canada Rule 8.3 and CARHA Rule 66(a) bar the team in possession from running deliberate ' +
-    'interference for the puck carrier, which reads as a bar on moving rather than on standing. ' +
-    'Sliding across into his path is interference under all four. ⚠️ And do not read the NHL as the ' +
+    'interference for the puck carrier, and they write the bar itself flat — impeding an opponent ' +
+    'who is not in possession, with no movement element. ⚠️ Neither writes the standing-ground ' +
+    'entitlement the first three do; CARHA has one, but Rule 66(a) Note 2 addresses it to the ' +
+    'defending players, and on a wheel your team has the puck. Do not assume the stationary screen ' +
+    'is legal there, and if it is called and a forechecker is injured by it, Hockey Canada 8.3(b) ' +
+    'and CARHA 66(e) both make the major mandatory. ' +
+    'Sliding across into his path is interference wherever you play. ⚠️ And do not read the NHL as the ' +
     'lenient book: two minutes is only the floor, its Rule 21.1 match penalty needs no injury and no ' +
-    'named foul, and what differs between the four books is the bar for a major or an ejection, not ' +
+    'named foul, and what differs between the books is the bar for a major or an ejection, not ' +
     'whether one is available at all. The far-side winger and the centre are the outlets, and a second ' +
     'forechecker holding the far side, which is exactly what F2 does in a 2-1-2, turns all of this ' +
     'into a trap.',
@@ -649,6 +691,21 @@ const stretch = {
   width: 900,
 
   caption:
+    // OFF-SIDE LIMB, BOOK SCOPE, 26 Sep 2026. It read "NHL and IIHF Rule 83.1" until
+    // today; the shelf holds six books and PWHL 85.1 is the NHL's own words in the
+    // feminine ("she is deemed to be on-side"), so it belonged in the permissive group.
+    // ⚠️ THE PWHL NUMBERS OFF-SIDE 85, NOT 83, and prints "off–side" with an EN DASH —
+    // a label grep returns a near-total false negative; find it by heading.
+    // NAME THE BOOKS, NEVER COUNT THEM. The split: permissive plane test — NHL 83.1,
+    // IIHF 83.1, PWHL 85.1. Contact required — USA Hockey 630(a) ("does not have skate
+    // contact with any part of the Neutral Zone or the blue line"), Hockey Canada 6.11
+    // PREAMBLE ("Only the player's skate(s) that are in physical contact with the ice
+    // surface"), with Interpretation 3 to 6.11(a) ruling the raised trail skate OFF-SIDE
+    // in terms. ⚠️ 6.11(a) Note 1 reads permissive ON ITS OWN — the preamble decides it.
+    // UNSETTLED — CARHA 72(c) Note 1 disjoins "in physical contact with, or on their own
+    // side of, the blue line" and never defines "own side"; "plane" scores 0 in that book.
+    // CARHA goes in NEITHER group. The closing instruction is safe in all six: blade-down
+    // contact satisfies CARHA's first disjunct expressly, so do not weaken it.
     'The stretch pass, which is why this picture is the whole 200-foot sheet: your defensive zone is ' +
     'at the left, the far blue line at the right. One forward — usually the weak-side winger — has ' +
     'left the zone early and is waiting up ice, and the defenceman leads him so he collects it in ' +
@@ -656,10 +713,11 @@ const stretch = {
     'opposition has committed all three forwards deep and their defencemen have stepped up, which is ' +
     'what leaves both a lane and a winger behind the coverage. The winger is drawn on his own side of' +
     ' the far blue line because that is what keeps him onside — one skate in contact with the line or' +
-    ' behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 in ' +
-    'materially identical words, and a trailing skate in the air still counts because the plane is ' +
-    'unbroken, though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is ' +
-    'offside — two books of the four. And the honest risk: a completed stretch is close to a ' +
+    ' behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 and ' +
+    'PWHL Rule 85.1 in materially identical words, and a trailing skate in the air still counts ' +
+    'because the plane is unbroken, though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 ' +
+    'an airborne skate is offside — so keep the blade on the ice and you are onside under every ' +
+    'book. And the honest risk: a completed stretch is close to a ' +
     'breakaway, an intercepted one is a full-speed rush the other way with your winger sixty to ' +
     'eighty feet behind the puck, and in most amateur hockey it is not a good default.',
 

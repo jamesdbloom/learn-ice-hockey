@@ -91,6 +91,48 @@ the count depends entirely on the normalisation — a third method gives 153/110
 broken `fi`/`fl` ToUnicode map is what makes the ligature repair below
 necessary.
 
+### 🔴 IIHF RULE 83.1 IS A THIRD SUBSTANTIVE 2025/26 → 2026/27 CHANGE — found 26 September 2026
+
+**The 2026/27 book ADDS one sentence to Rule 83.1 that the 2025/26 book does not contain:**
+
+> *"For the purposes of this rule, a "skate" is to be considered the blade of the skate only."*
+
+**It is the NHL 83.1 sentence verbatim.** Measured by flattened count across every IIHF extraction on
+disk: `bladeoftheskateonly` scores **1 in `iihf_rules_2026-27.txt`** and **0 in `iihf_rules.txt`,
+`iihf_rules_v1.0.txt` and `iihf_rules_v1.1.txt`**. A windowed diff of the surrounding passage shows
+the two editions are otherwise **identical word for word** — it is a clean single-sentence insertion,
+not an extraction artefact.
+
+⚠️ **This row exists because the table above says only Rules 76.6 and 76.7 had been checked and
+*"the rest of the book has not been read."* 83.1 is now the third.**
+
+### ⚠️ WHAT IT DOES AND DOES NOT MEAN FOR THE CORPUS
+
+✅ **No corpus claim is wrong.** The corpus's IIHF layer is **2025/26 v1.1 by decision**, because that
+is the edition the IHUK In-House Rules adopt — so an agent reading v1.1 for an offside claim is
+reading the right book, and two did so today and were correct.
+
+⚠️ **But a NEGATIVE recorded today is edition-specific and was not labelled as such:** an agent wrote
+that the IIHF *"does NOT carry the NHL's blade-only definition — confirmed absent in v1.1"*, and
+concluded a raised **boot** is therefore unsettled under the IIHF. **That is true of 2025/26 and
+FALSE of 2026/27.** The corpus text it produced claims only the plane test for the IIHF, which is
+conservative and safe either way — ⚠️ **the defect is the recorded negative, not the shipped
+sentence.**
+
+⚠️⚠️ **AND THE ROUTING HAZARD IS REAL AND HAPPENED TODAY: two agents in one wave read DIFFERENT IIHF
+EXTRACTIONS** — one `v1.1`, one `2026-27` — **because their briefs named different files.** Neither
+was wrong on its own terms; **nothing in either brief said which edition the corpus runs.** ✅ **Name
+the edition in the brief, not just the filename.** ⚠️ **There are FIVE IIHF rule extractions on disk
+and the filenames do not say which is canonical — only this README does.**
+
+### The question this opens and does not answer
+
+⚠️ **Nobody has diffed the 2026/27 rule book systematically.** The Situation Handbook got a full
+situation-by-situation diff (recorded above); **the rule book has had three rules checked, all three
+by accident, and all three changed.** ⚠️ **Three for three is not a sample that supports leaving the
+rest unread.** A full sentence-set diff of `iihf_rules_v1.1.txt` against `iihf_rules_2026-27.txt` is
+the obvious next piece of work, and it is mechanical.
+
 ### ✅ IIHF SECTION 11 — RULE 101.1, *ILLEGAL HIT IN WOMEN'S HOCKEY*: THE EDITION QUESTION IS CLOSED
 
 ⚠️ **This section governs every women's-hockey claim in the corpus, and the corpus cites Rule 101.1 at

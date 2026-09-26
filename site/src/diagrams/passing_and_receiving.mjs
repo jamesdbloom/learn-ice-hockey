@@ -124,8 +124,8 @@
 // drawn SHORT OF THE BLUE LINE. Draw him inside it with the puck still in the neutral
 // zone and the picture is a diagram of an off-side. The rule is not imported from
 // outside the document — this same document states it at §"Stretch pass", quoting NHL
-// Rule 83.1, and works through the two books of four that judge a lifted trail skate
-// differently. The caption carries the constraint and points at that section rather
+// Rule 83.1, and works through the books that require the trail skate to be touching
+// (USA Hockey 630(a), Hockey Canada 6.11) rather than applying a plane test. The caption carries the constraint and points at that section rather
 // than restating a book-by-book rule a caption cannot hold.
 // ---------------------------------------------------------------------------
 
@@ -164,15 +164,20 @@ const areaPass = {
     // section's prose and its ```facts block around this marker. ⚠️ THE OFF-SIDE LIMB STAYS
     // WITH ITS BOOK SCOPE: it explains a DRAWN POSITION -- the winger is short of the line
     // on purpose -- and a reader who copies the picture without it skates himself off-side.
-    // Dropping "two books of the four" from it would manufacture exactly the false
-    // universal the style guide names.
+    // Dropping the BOOK SCOPE from it would manufacture exactly the false universal the
+    // style guide names. ⚠️ BUT DO NOT RESTORE A COUNT: this limb read "two of the four
+    // books" until 26 Sep 2026, and the shelf holds six. The split is 3 permissive
+    // (NHL 83.1, IIHF 83.1, PWHL 85.1 — a plane test) / 2 contact-required (USA Hockey
+    // 630(a), Hockey Canada 6.11) / 1 UNSETTLED (CARHA 72(c) Note 1 disjoins "in physical
+    // contact with, or on their own side of, the blue line" and never defines "own side").
+    // NAME THE BOOKS, NEVER COUNT THEM — a count goes stale when the shelf grows.
     'An area pass at the attacking blue line, and the one thing a picture can show and a ' +
     'sentence cannot: there is nobody at the target. The carrier chips the puck into the ' +
     'shaded patch behind the defender who stood him up — a place, not a person, which makes ' +
     'it a race rather than a turnover, and only a good play if the winger has a real speed ' +
     'or angle advantage. The winger is drawn short of the blue line on purpose: a receiver whose ' +
-    'skates both cross the leading edge before the puck does is off-side, and two of the ' +
-    'four books judge a lifted trail skate differently.',
+    'skates both cross the leading edge before the puck does is off-side, and under USA Hockey ' +
+    'Rule 630(a) and Hockey Canada Rule 6.11 a lifted trail skate is off-side too — so keep it down.',
 
   describe:
     'The attacking half of the rink, attacking to the right, with the blue line running down the picture about a ' +

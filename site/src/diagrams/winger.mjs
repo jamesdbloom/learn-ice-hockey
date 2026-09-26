@@ -459,6 +459,19 @@ const arrivingAtTheLine = {
   // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. Any note
   // below was written against the longer text: a clause it names may no longer be in the
   // caption, and it is kept for its reasoning rather than as a description of the string.
+  // ⚠️ THE OFFSIDE COUNT WAS DROPPED 26 September 2026 — "onside under all four rule sets"
+  // became "keeps you onside wherever you play", and the lifted-skate limb gained the PWHL.
+  // The population is SIX, not four, and the split is 3 / 2 / 1: the plane test in NHL 83.1,
+  // IIHF 83.1 and PWHL 85.1 ("If a player's skate has yet to break the 'plane' ... she is
+  // deemed to be on-side"); physical contact required by USA Hockey 630(a) and by Hockey
+  // Canada 6.11's OWN PREAMBLE ("Only the player's skate(s) that are in physical contact
+  // with the ice surface will be used in determining an off-side"); CARHA UNSETTLED, because
+  // 72(c) Note 1 is a disjunction and "own side" is never defined as a plane there. A
+  // dragged, TOUCHING skate is onside in all six — contact satisfies CARHA's disjunction —
+  // so the claim was always true and only the numeral was wrong. This matches the owner,
+  // content/positions/winger.md, in the neutral-zone "filling your lane" section — its
+  // facts-block Rule: line and its body both read "keeps you onside wherever you play".
+  // ⚠️ NAME THE BOOKS, NEVER COUNT THEM: a numeral goes stale when the shelf grows.
   // ⚠️ This carried only the DUCKING half of a pair its owner states as inseparable
   // (body_contact_and_battles.md:21, "Those are two prohibitions against two different
   // injuries"). Voiced alone, a listener was told not to duck, not told not to turn his
@@ -471,9 +484,10 @@ const arrivingAtTheLine = {
     'reach before your trailing skate does. The trail skate itself is not drawn, and cannot be at ' +
     'this scale. You are offside only when both skates have completely crossed the line before the ' +
     'puck has, so a trailing skate on the line keeps you onside; drag it and keep the blade in ' +
-    'contact with the ice or the paint, because a dragged, touching skate is onside under all four ' +
-    'rule sets, while a lifted one is onside under the NHL and the IIHF but offside under USA Hockey ' +
-    'Rule 630(a) and Hockey Canada Rule 6.11. Find out which book your league runs. And do not coast ' +
+    'contact with the ice or the paint, because a dragged, touching skate keeps you onside wherever ' +
+    'you play, while a lifted one is onside under the NHL, the IIHF and the PWHL but offside under ' +
+    'USA Hockey Rule 630(a) and Hockey Canada Rule 6.11. Find out which book your league runs. And ' +
+    'do not coast ' +
     'at the line to be safe: arriving late and slow costs your line more than a whistle would. ⚠️ A ' +
     'head up is the condition of the technique rather than an extra — you cannot brace for a hit you ' +
     'cannot see, and a body that is surprised does not absorb contact. And never turn your back to ' +

@@ -383,9 +383,23 @@ const supportAngles = {
   half: false,
   width: 1000,
 
+  // ⚠️ 26 September 2026: the STRING said "onside under NHL and IIHF rules" while this
+  // comment block already stated the 3/2/1 split — so the PWHL, which prints the plane
+  // test verbatim, was missing from the sentence a listener hears. Re-verified that day in
+  // pwhl_rules.txt 85.1: "On her own side of the line shall be defined by a 'plane' of the
+  // blue line ... If a player's skate has yet to break the 'plane' prior to the puck
+  // completely crossing the leading edge, she is deemed to be on-side". Widened to
+  // "NHL, IIHF and PWHL". CARHA stays OUT of the offside half: "plane" scores 0 in
+  // carha.txt and 72(c) Note 1 is a disjunction, so that book is unsettled, not strict.
   // ⚠️ THE OFFSIDE BLOCK IS UNTOUCHED — about 57 words of it — AND IS WHY THIS CAPTION
-  // STAYS OVER THE TARGET. It names four books and the two-of-four divergence on the
-  // raised trail skate; drop any limb of it and the caption states a false universal
+  // STAYS OVER THE TARGET. It NAMES THE TWO CONTACT-REQUIRED BOOKS rather than counting
+  // books — the shelf holds six and the split is 3 permissive (NHL 83.1, IIHF 83.1,
+  // PWHL 85.1, all a plane test) / 2 contact-required (USA Hockey 630(a), Hockey Canada
+  // 6.11 in the rule's own preamble) / 1 UNSETTLED (CARHA 72(c) Note 1 is a disjunction,
+  // "in physical contact with, or on their own side of, the blue line", and CARHA never
+  // defines "own side" as a plane). A COUNT GOES STALE WHEN THE SHELF GROWS; the book
+  // names do not. The instruction is safe in all six: contact satisfies CARHA's
+  // disjunction explicitly. Drop the book scope and the caption states a false universal
   // about a rule that decides whether a goal counts. The defensive-zone caveat on the
   // level pass is untouched for the same kind of reason: the same pass is routine in
   // two zones and a point-blank chance against in the third.
@@ -401,9 +415,9 @@ const supportAngles = {
     'Ahead gains ground and is the most interceptable, and at the blue ' +
     'line it needs the receiver to time their entry rather than park in the zone, because both skates ' +
     'completely over the line before the puck completely crosses it is offside (NHL Rule 83) — ' +
-    'and a raised trail skate is onside under NHL and IIHF rules but offside under USA Hockey ' +
-    'Rule 630(a) and Hockey Canada Rule 6.11 — two books of the four — so check which book your ' +
-    'league uses. ' +
+    'and a raised trail skate is onside under NHL, IIHF and PWHL rules but offside under USA Hockey ' +
+    'Rule 630(a) and Hockey Canada Rule 6.11 — so keep the trail skate down, which is onside under ' +
+    'every book. ' +
     'A team needs all three at once.',
 
   describe:

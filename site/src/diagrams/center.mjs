@@ -435,7 +435,8 @@ const neutralZoneOutside = {
 //
 // ⚠️ NOTHING HERE SAYS ANYONE IS ONSIDE, and the caption says so out loud. The rule turns
 // on where a skate is — both skates completely across, a trailing skate on the line, and
-// two books of the four that require that skate to be TOUCHING — and a glyph has no
+// USA Hockey 630(a) and Hockey Canada 6.11 requiring that skate to be TOUCHING where the
+// NHL, IIHF and PWHL apply a plane test and CARHA settles it neither way — and a glyph has no
 // skates. A picture that implied it had settled the question would be the worst kind of
 // wrong, because offside is a whistle and the reader would have taken it from a drawing.
 //
@@ -742,8 +743,8 @@ const decidingFromTheMiddle = {
 // correction reaches one copy and not the other.
 //
 // ⚠️ THE RECOMMENDATION IS TO DROP THIS ONE, not the other, and the reason is not
-// politeness. That caption carries two things this one does not and cannot: that all four
-// books exempt the GOALKEEPER, and that the crease is a VOLUME running to the top of the
+// politeness. That caption carries two things this one does not and cannot: that the books
+// exempt the GOALKEEPER, and that the crease is a VOLUME running to the top of the
 // goal frame — which is the half of the rule a plan view is structurally unable to draw
 // and the half a centre plucking a puck out of the air most needs. center.md can reference
 // `the-puck-decides-not-you` by id instead of redrawing it, exactly as
@@ -796,7 +797,7 @@ const creaseThePuckDecides = {
     'and the same answer under Hockey Canada, though that book takes three separate passages to ' +
     'reach it. With your own net empty it becomes an awarded goal instead, and USA Hockey alone ' +
     'conditions that on the act having prevented an obvious and imminent goal. Catching the ' +
-    'puck out of the air is not the offence in any of the four books, though USA Hockey’s ' +
+    'puck out of the air is not the offence in any book, though USA Hockey’s ' +
     'permission is a casebook interpretation rather than rule text — provided you knock it ' +
     'straight down where you caught it, rather than holding it, carrying it, or dropping it ' +
     'somewhere better.',
