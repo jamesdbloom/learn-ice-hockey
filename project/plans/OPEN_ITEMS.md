@@ -240,6 +240,348 @@ known renderer behaviour rather than measured — and it said so.** ⚠️ **And
 siblings in eight other documents BY GREP ONLY: *"a sibling whose SUMMARY layer narrows the claim while
 its body is correct would need the same per-layer read I gave one file, and I gave it to no other."***
 
+## 🔴 THE CARHA "COULD" PROHIBITION IS ALREADY BREACHED AT ONE PRE-EXISTING SITE
+
+**Found by a commit gate, 26 September 2026, while clearing the wave that WROTE the prohibition.**
+
+`content/systems/zone_entries.md:1063` (pre-existing, not in that diff) states CARHA *"its 53(a)
+**reaches** a match penalty with no boards in it at all."* ⚠️ **53(a) says the match *"**could** also be
+assessed"* — discretionary. *"Reaches"* asserts it.**
+
+⚠️⚠️ **THIS IS THE EXACT RESTATEMENT THE SAME WAVE'S OWN RECORDED PROHIBITION WARNS AGAINST** — that the
+gloss is safe *"because the discretion sits inside the quotation marks"* and **must never be restated
+without the *"could"*.** ✅ **Direction is HARSHER, so it does not block — but it is the prohibition
+being breached at a site that predates the prohibition, which is how a rule written in a record fails
+to reach the corpus.**
+
+⚠️ **And it means the claim now stands at FOUR sites, three of them keeping the *"could"* and one
+asserting it.** **Repair by restoring the quoted *"could"*, not by deleting the sentence.**
+
+## 🔴🔴 PERMISSIVE AT THREE LAYERS IN `winger.md`, TWO OF THEM VOICED ALONE — the exclusivity is a CONTRAST, not a ceiling
+
+**Found 26 September 2026 by a `safety-reviewer` that swept all 78 corpus-wide `7.5(c)` sites while
+reviewing a different diff. NOT in any commit — its own row, and the next wave.**
+
+`content/positions/winger.md` states, at a ` ```facts ` line (**voiced alone**), a **Key Takeaway**
+(**voiced alone**) and in the body:
+
+> *"A check from behind that drives an opponent into the boards or goal frame unable to protect
+> themselves is a mandatory match penalty — Hockey Canada 7.5(c) and CARHA 53(b); **USA Hockey 608(c)
+> writes its match penalty with or without board contact**."*
+
+⚠️⚠️ **THE TRAILING CLAUSE IS THE WHOLE POINT: USA Hockey's match reaches *"with or without board
+contact"*, THEREFORE Hockey Canada's and CARHA's do not.** **Hockey Canada 7.5(c)'s second paragraph is
+mandatory with NO destination condition.** ⚠️ **A listener hearing the facts line or the takeaway alone
+concludes an open-ice check from behind cannot cost him a match penalty under Hockey Canada. It can,
+mandatorily.**
+
+⚠️⚠️ **THE SENTENCE IS NOT LITERALLY FALSE — it states a sufficient condition and never says *"only"*.
+THE CONTRAST SUPPLIES THE EXCLUSIVITY.** ✅ **That is a new shape and it is the reason the reviewer's
+first pattern missed it:** its corpus-wide filter matched **ceiling and exclusivity VOCABULARY**, and
+this document *"phrases the exclusivity as a CONTRAST rather than as a ceiling"*. **It was found by
+reading the filtered hits' NEIGHBOURS, not by the filter.** ⚠️ **And the reviewer named the
+consequence: *"A document that implies the same exclusivity with no shared phrase at all would have
+passed me, and there are at least six documents I filtered but did not read."***
+
+✅ **THE FIX IS PROPAGATION, NOT RESEARCH:** `defending_the_rush.md` (four sites) and
+`playing_without_the_puck.md` (four sites) **already carry the second paragraph at every layer.**
+**`winger.md` is the document the claim has not reached.** ⚠️ **Brief it as a CLAIM across all three
+layers — repairing the body alone leaves both voiced-alone layers wrong.**
+
+---
+
+## ✅ THE WAVE ITSELF WAS RULED SOUND, AND TWO ACCURACY DEFECTS WERE FOUND IN IT
+
+**Nothing in the diff blocks.** ✅ **All eleven repairs accurate against primary text; the second
+paragraph quoted COMPLETE at all eleven sites (read past the closing mark); and the
+mandatory-versus-discretionary distinction preserved everywhere — no site says *"may"* of Hockey
+Canada, and every CARHA site quotes *"could also be assessed"* rather than asserting it.**
+
+### 🔴 An antecedent that over-reaches its own two rules — HARSHER direction
+
+**Key Takeaway 9 names Hockey Canada 7.5(c) and CARHA 53(b), then says *"and neither stops at the
+boards"*.** ⚠️ **CARHA 53(b) DOES stop at the boards or goal net. The no-boards CARHA route is 53(a)** —
+a different clause, which the same sentence goes on to quote. ✅ ***"Neither"* is true of the two BOOKS
+and false of the two RULES it just named.** **Being repaired.**
+
+### 🔴 A deliberate-injury clause glossed as the ordinary hit — HARSHER direction
+
+After quoting the second paragraph, the body adds *"which is **the open-ice version of the hit you are
+contemplating**."* ⚠️ **The hit that passage is about is a frustrated backchecker chasing a carrier —
+that is 7.5(a), *"anywhere on the ice"*, minor plus game misconduct. The second paragraph is gated on
+*"deliberately"*, TWICE.** ✅ **The instruction it supports is correct in all six books, so no behaviour
+changes.** **Being repaired.**
+
+### ✅ THE CARHA GLOSS RULED SAFE — and the ruling comes with a prohibition worth keeping
+
+*"CARHA 53(a) says a match **'could also be assessed'** anywhere on the ice"* is **safe to voice**, for
+a precise reason: ✅ **the discretion sits INSIDE the quotation marks, so nothing hardens**;
+*"anywhere on the ice"* is 53(a)'s own wording for the base offence; and the arguable injury condition
+is elided in the direction that makes the act look MORE expensive, which licenses nothing.
+
+⚠️⚠️ **BUT IT IS THE WEAKEST SENTENCE IN THE WAVE AND MUST NEVER BE PROMOTED OR HARDENED.** **Do NOT
+restate it as *"a match penalty is available anywhere on the ice"*, and do NOT lift it into a
+` ```facts ` line without the *"could"* and the injury adjacency.** ⚠️ **It is now a THREE-SITE claim
+resting on a reading the rule text does not settle.**
+
+### 🔴 A CARVE-OUT NO DOCUMENT CARRIES — pre-existing, and the wave does not worsen it
+
+**Hockey Canada 7.5 Interpretation 3:** *"Provided that contact is marginal in nature and does not
+endanger the safety of the opponent, no penalty may be assessed. **Pinning a player to the boards at low
+speed and with minimal impact is permitted, even if contact is initiated from behind** (except under
+Rule 7.3 – Body-checking, as applicable)."*
+
+⚠️ **It appears at NO site in any of the three files, and `defensive_zone_coverage.md` states flatly
+that *"pinning the opponent is not [legal]"* — sourced only to the IIHF women's rule.** ✅ **The wave
+does not worsen it: every inserted clause is gated on *"deliberately"* twice, so a reader of the
+repaired text does NOT now believe a low-speed pin is a match penalty** — the specific overstatement
+the brief asked about. ⚠️ **And Interpretation 1 (Checking from Behind versus Cross-checking turning on
+whether the checker is IN MOTION) is likewise uncarried and likewise does not bite, because every
+repaired sentence describes a checker ARRIVING.**
+
+⚠️⚠️ **THE REVIEWER'S CLOSING POINT IS THE ONE TO CARRY INTO THE BOARDING ROW:** *"Interpretation 3's
+'low speed and with minimal impact' is the only place a book draws that line, and nothing in these three
+documents carries it."*
+
+### ✅ Unrepaired sites ruled on, and the pairing is what makes them safe
+
+**None of the fourteen is dangerous alone.** They state the boards limb as a **sufficient** condition
+without asserting a ceiling — ✅ **and in each repaired document the boards facts line and the new
+second-paragraph line are ADJACENT in the extraction layer**, so a listener gets them together.
+⚠️ **The one to watch is a second, word-identical copy of a facts line in another section of
+`defensive_zone_coverage.md` with NO second-paragraph sibling beside it — but it claims a FLOOR, not a
+ceiling, so voiced alone it is true and conservative.**
+
+## ✅ THE FALSE COMPARATIVE REPAIRED BY SPLITTING — and the cap arithmetic is the record worth keeping
+
+**`zone_entries.md:754`, 26 September 2026.** *"Hockey Canada puts its **heaviest price on the boards
+version** of this hit"* — ⚠️ **a COMPARATIVE with nothing to be comparative against, because 7.5(c)'s
+second paragraph is the SAME Match penalty. It told a reader the non-boards version is cheaper.**
+
+### ⚠️⚠️ THE AGENT TRIED THE REWRITE FIRST AND MEASURED WHY IT FAILS — this is the useful part
+
+**The honest single sentence — both paragraphs of 7.5(c) plus 7.5(b)'s violence limb — measures 307
+CHARACTERS AGAINST THE 300 CAP.** **Both ways to fit it cost something real:**
+- eliding the verb → **291 chars, but it compresses grammar to fit a cap**, which is the move that
+  produced the *"a raised skate is onside"* defect;
+- inverting to *"The boards are one route … not the only one"* → **290 chars and TRUE, but voiced alone
+  it NAMES NO OTHER ROUTE.** ⚠️ **A dangling pointer of the `check_facts_antecedents` family, traded in
+  to fit a cap.**
+
+✅ **SO IT SPLIT. Nothing was shortened, both quotations are intact, and 7.5(b)'s limb GAINED a word** —
+*"on the violence of the impact alone"*, closer to the book's *"based on the degree of violence of the
+impact"*. ⚠️⚠️ **THAT IS THE SECOND MEASURED DEMONSTRATION TODAY THAT A CAP DOES NOT FORCE A COMPROMISE
+— IT FORCES A SPLIT. Record the arithmetic, not the instinct.**
+
+### ✅ IT CAUGHT AN ANTECEDENT DEFECT IN ITS OWN DRAFT, IN THE CLASS THE TOOL EXISTS FOR
+
+Its first draft opened *"The boards are not what makes **it** a Match penalty"*. ⚠️ **Voiced alone,
+*"it"* has no antecedent.** ✅ **Named the act instead — *"a check from behind"* — at a cost of 18
+characters it had.**
+
+### ✅ AND IT DELIBERATELY DID NOT COPY ITS OWN SIBLING LINE
+
+The limb it added to another block closes *"asking nothing about where the player lands"*; this one
+closes *"wherever the retriever ends up"*, **because this section's subject is a forechecker arriving on
+a turned retriever, and *"the retriever"* is the block's own established term, used unglossed at three
+neighbouring lines.** ✅ **Two carriers of one claim, each written for its own section — not a paste.**
+
+### ✅ CHUNK DISTANCE MEASURED ON THE COORDINATOR — the agent's declared gap, closed
+
+It could not render, and named the risk exactly: *"a split inside a facts block DOES change the number
+of separately voiced `<p>` units the listener gets… if they do not share a chunk, a listener hears the
+boards limb and the no-boards limb as two breaths rather than one."*
+
+**Measured: both land in CHUNK 067.** ✅ **One breath.** ⚠️ **And the sibling limb in the other block
+lands in chunk 022, where it belongs with its own section — so the two carriers are correctly
+separated rather than accidentally adjacent.**
+
+### ✅ The corpus-wide sweep it ran unasked
+
+`grep -rn "heaviest price\|boards version" content/` → **ZERO.** ✅ **The false framing existed at
+exactly one site.** ⚠️ **And it reported the drift-tool delta as EVIDENCE rather than the pass:
+*"`clean` moved 285 → 286 while `flagged` and `notfound` held"* — so the new quotation located and did
+not drift. **A moving clean-count is better evidence than an exit code.**
+
+### 🔴 OPEN — a carve-out neither new line carries, and no tool can see it
+
+⚠️ **Hockey Canada 7.5's Interpretations were not re-read for this edit.** **Interpretation 1 turns
+Checking from Behind versus Cross-checking on whether the checker is IN MOTION, and Interpretation 3
+permits *"pinning a player to the boards at low speed and with minimal impact"*.**
+⚠️⚠️ **Neither new line carries the low-speed carve-out — and this block's subject is a forechecker
+closing on a retriever ALONG THE BOARDS, the exact place a reader might be pinning rather than
+checking.** ✅ **`check_absolutes.py` passes, so no tool sees it.** **A candidate, not a finding, and it
+belongs with the boarding row.**
+
+## 🔴🔴 THE 7.5(c) PROPAGATION — AND A SITE THAT WAS FALSE BY ASSERTION, NOT MERELY INCOMPLETE
+
+**26 September 2026. Eleven sites repaired across three files, nine declined with reasons.**
+
+### ⚠️⚠️ THE `facts-reviewer`'S "PERMISSIVE IN EFFECT, NOT BY ASSERTION" RULING DOES NOT GENERALISE
+
+It was right for the two lines it read. ⚠️ **`zone_entries.md`'s Common Mistakes bullet — voiced alone —
+read that Hockey Canada *"**tops out at** a match penalty for a hit from behind into the boards or goal
+frame"* and then contrasted CARHA: *"its 53(a) reaches a match penalty with no boards in it at all."*
+⚠️⚠️ ***"Tops out at"* IS exclusivity by assertion, and the CARHA contrast ACTIVELY told the reader
+Hockey Canada has no non-boards route when it has a MANDATORY one.** **Repaired.**
+
+✅ **AND THE REPAIR FIXED A NEIGHBOUR: the following sentence *"CARHA sits in the same place"* was
+FALSIFIED by the old text and is now true.** **That is the read-the-whole-unit check paying out in the
+opposite direction from usual — a repair that made a neighbouring sentence correct.**
+
+### 🔴 A SECOND FALSE-BY-ASSERTION SITE, FLAGGED BY THE AGENT AS ITS LEAST-CONFIDENT DECLINE
+
+`zone_entries.md:754`, a `Rule:` line at **292/300** — *"Hockey Canada puts its **heaviest price on the
+boards version** of this hit."* ⚠️⚠️ **7.5(c)'s second paragraph is the SAME match penalty with no
+destination condition, so the heaviest price is IDENTICAL either way. The line tells a reader the
+non-boards version is cheaper. PERMISSIVE.**
+
+✅ **The agent declined it (no headroom, and three carriers already in the document) but flagged it as
+*"the one decline I am least sure of"* and asked for a second opinion. The coordinator checked and it
+IS false. Sent back for repair.** ⚠️ **A decline flagged for review is worth more than a repair made
+silently.**
+
+### ✅ IT REFUTED THE `facts-reviewer`'S "LIKELIEST NEXT DEFECT" AND WROTE NOTHING
+
+**Hockey Canada 7.1(c) is NOT a third route.** *"…in any manner **not otherwise covered within the
+playing rules**."* ⚠️ **Expressly residual — and checking from behind IS otherwise covered, by 7.5(c)'s
+second paragraph, in the same words.** ✅ **7.1(a)–(f) reach hair, facial protectors, head-butting,
+misconduct bars and team officials. None reaches a check from behind.** **Writing it in as a third route
+would have been wrong, and the agent wrote nothing.**
+✅ **Useful by-product: 7.1 carries the book's own definition of *"intent"* — *"the deliberate nature of
+the action … as well as the reasonable expectation that this action would cause injury"* — which is the
+best available gloss on 7.5(c)'s *"deliberately"*. NOT propagated; flagged as an option.**
+
+### ⚠️ A GENUINE AMBIGUITY DISCLOSED RATHER THAN RESOLVED
+
+**CARHA 53(a)'s *"A Match penalty could also be assessed under this rule"* sits immediately after
+*"If a player is injured…"*, so whether that discretionary match is INJURY-CONDITIONED or generally
+available is NOT settled by the rule text.** ✅ **The agent used the corpus's existing gloss
+(*"anywhere on the ice"*, word for word from `defending_the_rush.md:299`), noted the broader reading is
+the one that WARNS, and said plainly: *"I did not invent the gloss and I would not defend it as
+settled."*** ⚠️ **Its own declared next step is the right one: check whether a sibling has already
+reasoned about it. It did not look.**
+✅ **And it preserved the mandatory-versus-discretionary distinction at every site** — Hockey Canada
+*"assesses one to any player"*, CARHA *"could also be assessed"*.
+
+### ⚠️⚠️ THE STANDING GAP IT NAMED, AND IT IS THE BEST ONE OF THE DAY
+
+> ***"A check from behind into the boards is TWO FOULS, and I only priced one of them upward… whether
+> any of the four books writes a BOARDING match penalty with no destination condition is the question I
+> did not ask."***
+
+⚠️ **The corpus already tells readers the boards add boarding — so the tariff a reader owes is the
+HIGHER of two ladders, and only one ladder has been swept.** **Rules 7.2 (Boarding), 7.4 (Head Contact)
+and 7.6 (Cross-checking) can each reach the same collision.** **Its own row; brief it by the ACT.**
+
+### 🔴 Fourteen of seventeen sites remain as the boards limb, DELIBERATELY — and the model may be wrong
+
+**The agent gave each document one dedicated facts carrier plus its body ladder plus its voiced-alone
+summary layer**, following the precedent, and declined the rest to avoid a fourth restatement.
+⚠️ ***"If that model is wrong — if a listener who hears only one unrepaired facts line needs the limb in
+that line too — then I have left the defect in place at every unrepaired site and my report reads like
+completion."*** ✅ **That is the honest statement of a judgement call, and it is the thing to test next.**
+
+### ✅ A provenance gap found that the brief never mentioned
+
+**`defensive_zone_coverage.md`'s Sources trailer named Hockey Canada 7.2, 7.3, 7.6 and 7.7 — but NEVER
+7.5**, while its body quotes 7.5's preamble, (a), (b), (c) and (e) at length. ✅ **A full 7.5 entry was
+added, both paragraphs of (c) included, dated to this session.**
+
+---
+
+## ⚠️⚠️ AND MY OWN CENSUS WAS WRONG BECAUSE I RAN IT WHILE AN AGENT WAS EDITING — a new instance of a recorded race
+
+My brief said *"the deliberate-injury limb appears ONCE, in `defensive_zone_coverage.md`."*
+⚠️ **It appears ZERO times in any of the three files. The single hit my grep found was LINE 161 — the
+AGENT'S OWN NEW LINE, written while I was measuring.**
+
+⚠️⚠️ **This file already records that *"while agents are live the checkers race them, in both
+directions"* and that *"a checker PASS while agents are live proves nothing."* I did it to myself with a
+CENSUS, which is the same failure one instrument over.** ✅ **THE RULE EXTENDS: a census over `content/`
+is only valid AFTER every agent has finished — exactly like a checker run and a build.** ⚠️ **And the
+direction was the flattering one: it made the corpus look one site better than it was, and it would have
+sent an agent looking for a carrier to propagate FROM that did not exist.**
+
+**Twelfth wrong coordinator premise this session, and the first caused by a measurement rather than by
+memory.**
+
+## ✅ THE EXEMPLAR'S CAPTION REPAIRED — 504 → 727 chars, all six books named, ONE CHUNK
+
+**26 September 2026.** `entry-trail-skate-drag` (sole host and owner `zone_entries.md`) now names
+**NHL 83.1, IIHF 83.1 and PWHL 85.1** permissive, **USA Hockey 630(a) and Hockey Canada 6.11** strict,
+**CARHA 72(c) settling it neither way**, and closes on *"keep the blade on the ice, which is onside
+under every book."*
+
+✅ **The plane qualifier was made MORE explicit, not shortened** — the lift is now conditioned in terms,
+with the failure case named (*"swing it forward over the line and you are offside in those books
+too"*). ⚠️ **The agent's reason is the one to keep: the old wording was correct but *"easy for a
+listener to hear as decoration on the permission."*** ✅ **No numeral anywhere; books named.**
+
+### ✅ CHUNK DISTANCE MEASURED ON THE COORDINATOR — the agent's declared highest-value gap, closed
+
+It could not render (the brief forbade a build) and named the risk precisely: *"If the renderer splits
+between 'held in the air and still be legal' and 'but only while the blade has not broken the vertical
+plane', a listener hears an UNCONDITIONAL PERMISSION — the exact defect class this repair exists to
+prevent, one layer down."*
+
+**Rendered after the diagram rebuild: all six parts land in CHUNK 017** — the permission, the plane
+condition, the forward-swing failure case, the strict pair, CARHA's silence and the closing
+instruction. ✅ **One breath. The risk does not arise.** ⚠️ **And its mitigation was the right one
+anyway: it put the qualifier in the SAME SENTENCE rather than the next, to make a bad split
+survivable.**
+
+### ✅ A FALSE EDITION SCOPE AVOIDED, AND THE FINDING IS WORTH KEEPING
+
+⚠️ **The plane limb needs NO IIHF edition qualifier.** The agent diffed all three IIHF extractions: the
+plane sentence is present in `iihf_rules_v1.1.txt`, `iihf_rules.txt` AND `iihf_rules_2026-27.txt`
+alike. ✅ **The ONLY 2025/26 ↔ 2026/27 divergence at Rule 83.1 is the BLADE-ONLY definition, which the
+2026/27 book adds** — and the caption does not rely on it. **The host's facts line already scopes the
+blade-only claim by edition correctly.** ⚠️ **So a wave that "helpfully" added an edition scope to the
+plane claim would be adding a caveat the books do not support.**
+
+---
+
+## ⚠️⚠️ MY COMMENT-VERSUS-CAPTION CENSUS OVER-REPORTED — THIRD TIME THIS SESSION
+
+The caption agent named the next sweep against its own work: **other modules carry COMMENTS recording
+the six-book split, and nobody has checked whether their CAPTIONS match** — *"this defect was precisely
+a comment that had been corrected while the caption was not."*
+
+**Run at module level it flagged four modules. Reading the BUILT captions, two are FALSE POSITIVES:**
+`center.mjs`'s and `passing_and_receiving.mjs`'s offside-adjacent captions **name no books at all**.
+⚠️⚠️ **A caption that makes no book claim cannot be wrong about books.** **My census keyed on "the
+module's comments name a book the module's non-comment text does not" — which flags research notes as
+defects.**
+
+### 🟡 THE REAL FINDING — three captions name five books and omit CARHA, and it is NOT permissive
+
+`support-angles`, `winger-arriving-at-the-line` and `breakout-stretch-pass` each name **NHL, IIHF,
+PWHL, USA Hockey and Hockey Canada** and are silent on CARHA. **The caption agent spotted the same
+divergence and asked for a ruling rather than acting.**
+
+✅ **COORDINATOR RULING: leave them, and here is the reasoning.** **CARHA's position is UNSETTLED, so
+omitting it withholds an answer rather than giving a wrong one — and all three close on a universal
+instruction that is true in all six books.** ⚠️ **The repaired caption names CARHA because that
+diagram's WHOLE SUBJECT is the airborne-versus-contact split, so CARHA's silence is the reader's
+question. The other three have different subjects and CARHA's silence is background.** ✅ **That is the
+owner's own document-relative test — the same limb is a key focus where the document is about it and
+too much detail where it was inherited — applied to the caption layer.**
+
+⚠️ **Recorded so the divergence is a decision on the record rather than an inconsistency someone
+"fixes" later.**
+
+---
+
+## 🔴 OPEN — reported by the caption module itself, unactioned, and it is a VOCABULARY COLLISION
+
+A pre-existing comment in `zone_entries.mjs` records that its host uses **"the paint"** to mean the
+twelve inches of blue line — including in a ` ```facts ` line **voiced alone** — while
+**`rink_map.md` OWNS *"the paint"* as the light-blue CREASE.** ⚠️ **Two different regions under one
+term, one of them in the layer with no surrounding context.** ⚠️ **The line numbers in that comment
+were not verified and may have drifted — locate by reading.** **`rink_map.md` is the owner, so the
+owner's definition governs and the host is what must change.**
+
 ## 🔴🔴 THE EXEMPLAR FILE IS CORRECT IN EVERY MARKDOWN LAYER AND **SPEAKS** A STALE CAPTION
 
 **Found on the coordinator 26 September 2026, by running `check_caption_hosts.py` — the tool the

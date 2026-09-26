@@ -117,7 +117,9 @@ const threeLanes = {
   // with the nearer antecedent making the second read as "the blue line has not completely
   // crossed". Every pronoun in the rule sentence is now a noun.
   // The airborne-skate divergence is deliberately NOT restated here: `entry-trail-skate-drag`
-  // lower in this file carries it with the two books named, and so does the host paragraph.
+  // lower in this file carries it with every book on the shelf named, and so does the host
+  // paragraph. (This line said "the two books named" until 26 September 2026, which described
+  // that caption's own defect — it named two of six — rather than what it should carry.)
   caption:
     'Drawn at the instant the two wide players are already on the blue line at speed and the ' +
     'puck is still a stride short of the line — that order is the point. They are onside ' +
@@ -1199,14 +1201,40 @@ const trailSkateDrag = {
   half: true,
   width: 900,
 
+  // ⚠️⚠️ BOOK SCOPE OF THE SPOKEN CAPTION, 26 Sep 2026. The comment block above was
+  // corrected to the six-book population and THE CAPTION WAS NOT — it named the NHL and
+  // the IIHF as the permissive group, omitted PWHL 85.1, and never mentioned CARHA, then
+  // closed "under those two books". The host, content/systems/zone_entries.md, is correct
+  // at EVERY markdown layer (Key focus, Overview, three facts lines, body, Common
+  // Mistakes, Key Takeaways, Sources trailer) — and a caption does not live in the
+  // document, so no layer test of the document reached this string.
+  // Re-verified in the primary text this session, flattened before phrase-searching:
+  //   PERMISSIVE (plane test): NHL 83.1 (sources/nhl_rules.txt:8818), IIHF 83.1
+  //     (sources/iihf_rules_v1.1.txt:6829, the 2025/26 v1.1 book the corpus runs BY
+  //     DECISION — the plane sentence is in the 2026/27 book too, so this limb needs no
+  //     edition scope; only the blade-only definition differs between editions),
+  //     PWHL 85.1 (sources/pwhl_rules.txt, found BY HEADING — the PWHL numbers off-side
+  //     85, not 83, and prints "off–side" with an EN DASH, so a label grep false-negatives).
+  //   CONTACT REQUIRED: USA Hockey 630(a) (sources/usah.txt:4665), Hockey Canada 6.11
+  //     PREAMBLE (sources/hc.txt:5376-5377), with Interpretation 3 to 6.11(a) ruling the
+  //     raised trail skate OFF-SIDE in terms (:5475). 6.11(a) Note 1 alone reads permissive.
+  //   UNSETTLED: CARHA 72(c) Note 1 disjoins "in physical contact with, or on their own
+  //     side of, the blue line" and never defines "own side"; `plane` scores 0 in that
+  //     book and the zero is TRUE. CARHA goes in NEITHER group.
+  // ⚠️ THE PLANE QUALIFIER IS LOAD-BEARING AND MUST NOT BE SHORTENED AWAY: the permissive
+  // books condition the lift on the blade not having broken the plane, so a skate lifted
+  // and swung FORWARD over the line is offside in all three. The closing instruction is
+  // safe in all six — blade-down contact satisfies CARHA's first disjunct expressly.
   caption:
     'The winger\'s body, hands and stick are already in the attacking zone; only the trailing ' +
     'blade is on the painted line, which keeps him onside, because a skate touching any part ' +
-    'of the twelve-inch blue line counts as contact with it. Under the NHL and the IIHF that ' +
-    'skate could instead be held in the air behind the plane of the line without breaking it, ' +
-    'and still be legal; under USA Hockey Rule 630(a) ' +
-    'and Hockey Canada Rule 6.11 an airborne skate is offside, so keep it on the ice under ' +
-    'those two books.',
+    'of the twelve-inch blue line counts as contact with it. Under NHL Rule 83.1, IIHF Rule ' +
+    '83.1 and PWHL Rule 85.1 that skate could instead be held in the air and still be legal, ' +
+    'but only while the blade has not broken the vertical plane rising from the leading edge ' +
+    'of the line: swing it forward over the line and you are offside in those books too. Under ' +
+    'USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 an airborne skate is offside outright, ' +
+    'and CARHA Rule 72(c) settles it neither way. So keep the blade on the ice, which is ' +
+    'onside under every book.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward — the far-side ' +
