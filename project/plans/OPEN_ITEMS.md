@@ -240,6 +240,328 @@ known renderer behaviour rather than measured — and it said so.** ⚠️ **And
 siblings in eight other documents BY GREP ONLY: *"a sibling whose SUMMARY layer narrows the claim while
 its body is correct would need the same per-layer read I gave one file, and I gave it to no other."***
 
+## 🔴 FOUR ROWS FROM THE GATE THAT CLEARED THE DELIMITER WAVE — two with exact sites
+
+**26 September 2026. All four were found by a commit gate reading past what it was asked to check.**
+
+### 🔴 `winger.md:651` names NO MODALITY, and it is the permissive direction
+
+*"A check from behind **can** cost a match penalty nowhere near the boards."* ⚠️ **USA Hockey 608(c) is
+*"shall be assessed … in all instances"*.** **Voiced alone, a listener hears DISCRETION where the book is
+MANDATORY.** ⚠️ **It is the only one of the three facts lines that leaves it open — `:650` says
+*"mandatory"* and `:652` says *"which is discretion"* of CARHA.** ✅ **The tier itself is stated, which is
+why the gate ruled it non-blocking and said *"fix before or just after the commit."*** **Fix: *"costs"*,
+not *"can cost"*. FIRST ROW OF THE NEXT WAVE.**
+
+### ⚠️ `winger.md:650` — a Note that belongs to one book, attached to two
+
+*"Hockey Canada 7.5(c) and CARHA 53(b), **whose Note** tells referees to substitute nothing cheaper."*
+⚠️ **The Note is CARHA'S ALONE; Hockey Canada writes no such instruction.** **Nearest-antecedent reads
+correctly, but voiced alone it can attach to both.** ✅ **Harsher direction. Same wave as the above.**
+
+### 🔴 A CORPUS-WIDE SCOPE POINT, and it is stated NOWHERE
+
+**CARHA's *"A Match penalty could also be assessed under this rule"* sits inside the INJURY
+sub-paragraph** — *"**If a player is injured**, a Major penalty plus a Game Misconduct penalty must be
+assessed. A Match penalty could also be assessed under this rule."*
+
+⚠️⚠️ **Every site in the corpus renders it as *"anywhere on the ice"*, taking the scope from 53(a)'s MAIN
+clause.** ✅ **Defensible on *"under this rule"*, and HARSHER, so nothing is understated** — ⚠️ **but the
+injury context is stated NOWHERE, and this is now a four-site claim resting on a reading the rule text
+does not settle.** **A sibling that already reasoned about it is the first place to look; nobody has
+looked.**
+
+### 🔴 THE UNSWEPT ADVERB ROW — exact sites, both pre-existing and unstaged
+
+**Hockey Canada writes *"**deliberately** attempts to or **deliberately** injures"* — the double adverb is
+the book's HOUSE FORM (7.2(c), 7.3(c), 9.3(c) too).** A paraphrase dropping the second lets
+*"or injuring"* cover an ACCIDENTAL injury.
+
+⚠️ **Both sites are in `content/systems/defending_the_rush.md`:** **`:299`, a ` ```facts ` line VOICED
+ALONE** — *"deliberately attempting to **or injuring** an opponent"* — and **`:899`** —
+*"deliberately attempting to injure **or injuring**"*. ✅ **`:902`'s *"a deliberate injury"* is fine, and
+everything in the delimiter wave's own diff is correct.** **Both harsher, so neither blocks.**
+
+## ⚠️⚠️ THE PARITY CHECK CAME OUT **EVEN** ON A BROKEN PAGE — the under-report case, demonstrated
+
+**26 September 2026.** The Sources-trailer defect was **TWO artefacts of ONE imbalance, not one** — the
+coordinator's single-run model was half right:
+1. **An unclosed OPENER** — `**NHL, PWHL and IIHF Rule 9.6 were read the same day…`, which is
+   **left-flanking only** (space before, letter after), so it can open and never close. Its intended
+   closer, at the end of its own sentence, was simply absent.
+2. **An ORPHAN CLOSER** — a spurious third `*` in the entry's terminal `***`, one closer with no opener.
+
+⚠️⚠️ **AND PARITY CANCELS THEM: the entry's `**` runs counted EVEN at HEAD — 106 — while the page was
+broken.** **CommonMark did not pair the two across the 4,800 characters between them: the opener cannot
+close, and the next right-flanking candidate downstream is already the closer of an intended pair, so
+the chain resolves without either and both ends fall out as TEXT.**
+
+✅ **So the counting approach is now demonstrated wrong in BOTH directions on real data:** my censuses
+over-reported **314** and **114** against a true **3**, and a parity check UNDER-reported this entry as
+clean. ⚠️ **It is not a conservative approximation. Only the render shows it.**
+
+✅ **The fix was 2 characters added and 2 removed, +2/−2, and with every `*` stripped the line is
+BYTE-IDENTICAL to HEAD** — so no word, date, scope clause or disclosure moved. **Rendered evidence:
+literal `**` count 0 over the whole file; a full before/after HTML diff shows exactly ONE changed
+paragraph; `<strong>` 664 → 665, `<em>` 409 → 409 unchanged.**
+
+### ✅ THE BOLD EXTENT WAS ARGUED FROM THE ENTRY'S OWN TEMPLATE, NOT GUESSED
+
+**Every sibling read-on statement in that entry bolds the *"X was read on DATE"* claim and drops to
+plain for the detail** — *"…on 25 September 2026**:"*, *"…the same day**:"*, *"…the same day** for"*.
+**This sentence has no colon or dash, so the statement ends at the full stop.** ✅ **And the adjacent
+entry legitimately ends `.***` because there the closing statement really is bold to the end — that
+contrast is what settles it.**
+
+⚠️ **AND IT DECLARED THE LIMIT OF ITS OWN REASONING: `git log -S` puts both artefacts' birth in one
+commit, and *"the entry has never rendered clean"* — so THERE IS NO CORRECT PRIOR STATE TO DIFF
+AGAINST.** ***"A reader who wrote that entry could tell me the bold should stop at 'were read the same
+day'; my evidence cannot."***
+
+---
+
+## 🔴🔴 AND THE RENDER-FOR-LITERALS TEST HAS ITS OWN BLIND SPOT — named against itself
+
+> ***"A delimiter that pairs PLAUSIBLY BUT WRONGLY — bolding the wrong clause, or an italic whose
+> extent moved — emits perfectly valid HTML and scores 0."***
+
+⚠️⚠️ **So the test I recorded as definitive is definitive only for LITERAL asterisks. It cannot see
+wrongly-scoped-but-valid emphasis.** ✅ **And the agent proved the class exists by finding an instance
+IN THE SAME ENTRY, by eye in a rendered diff, not by any test:**
+
+**`(*"…"*)` sitting inside an already-open outer italic.** ⚠️ **Markdown cannot nest emphasis in
+emphasis, so it CLOSES the outer `<em>` and reopens after — leaving a stray `</em>` after each `(` and
+an `<em>` before each `)`:**
+```
+the <em>Note applying to Situations 14-20</em> (</em>"an altercation does not need…"<em>),
+```
+**Two Casebook quotations render UPRIGHT while the surrounding entry is italic, with the tag order
+inverted.** ⚠️ **Present identically in HEAD; cosmetic — no rule claim, tier, book scope, date or quoted
+character is affected, and a listener never reaches a trailer.** ✅ **The repair changes no words: drop
+the inner `*…*`, which buys nothing inside an italic region.** **Left alone as a second claim, correctly.**
+
+⚠️ **The corpus-wide sweep for THIS shape does not exist and cannot be built by counting or by
+literal-asterisk rendering. It needs emphasis-EXTENT comparison, or a reader.**
+
+### 🔴 OPEN — the render test has never been run corpus-wide for literals either
+
+✅ **Two literal `**` reached production in one file, so the population is non-empty.** ⚠️ **A per-file
+render-for-literals pass is cheap and nobody has run it — the coordinator ran it over `site/dist`,
+which is the same test one layer out, and it found exactly these two plus the winger one.** **Run it
+after every build, before the gate.**
+
+## 🔴🔴🔴 NOTHING IN THIS REPOSITORY CHECKS BOLD-DELIMITER BALANCE — AND IT COSTS AN AMBER WARNING
+
+**26 September 2026.** A `safety-reviewer` found that a repaired **Key Takeaway** had **SEVEN `**`
+delimiters where HEAD had EIGHT** — the outer strong run opened after the `⚠️` was never closed.
+
+⚠️⚠️ **TWO EFFECTS, AND THE SECOND IS THE ONE THAT MATTERS:**
+1. **The reader sees LITERAL ASTERISKS** on the page.
+2. ⚠️⚠️ **THE INLINE AMBER ESCALATION ON A SPINAL-INJURY WARNING IS GONE.** The wrapper needs the glyph
+   to END the preceding text node, or sit within 48 characters of a strong run with no `— : ; ! ?` or
+   `. ` in the gap, **or** the strong run's own text to LEAD with it. **None held** — the preceding text
+   node ended *"…and a match penalty "*, some 330 characters and two em dashes past the glyph, and the
+   first strong run began *"Hockey Canada"*. **CLAUDE.md's state 3, on the corpus's highest-consequence
+   warning class.**
+
+✅ **Listeners are unaffected** — the asterisks strip out, the takeaway is one chunk, and the spoken
+*"Important."* survives because the renderer tests the PARAGRAPH for the glyph. **Reader-only.**
+
+⚠️⚠️ **AND THE TOOLING GAP IS TOTAL: `check_facts`, `check_links`, `check_absolutes` and the speech
+renderer ALL PASS on a line that shows literal asterisks to a reader.** **The reviewer found it by
+rendering the line through the site's own remark pipeline against HEAD — not by eye, and not by any
+checker.**
+
+### ⚠️⚠️ AND MY TWO ATTEMPTS TO CENSUS IT BY COUNTING OVER-REPORTED BY ~100×, TWICE
+
+- **Per LINE, fences stripped: 314 hits.** ⚠️ **Wrong unit — a bold run may legitimately SPAN a soft
+  line break inside one paragraph**, and the first hits were exactly that.
+- **Per blank-line PARAGRAPH: 114 hits.** ⚠️ **Still the wrong unit — a bullet list is ONE blank-line
+  block but MANY parsed items, so an odd total says nothing about which item is unbalanced.**
+
+✅ **THE DEFINITIVE TEST IS THE RENDERED ARTEFACT, AND IT IS CHEAP: an unbalanced run survives into the
+built HTML as literal `**`.** **Measured across all of `site/dist` inside `<main>`, scripts and styles
+stripped: THREE occurrences, at TWO sites.**
+
+```
+python3 -c "import pathlib,re; [print(p.parent.name, re.sub(r'<[^>]+>','',b[max(0,m.start()-90):m.start()+90])) \
+  for p in pathlib.Path('site/dist').rglob('index.html') \
+  for b in [re.search(r'<main[^>]*>(.*?)</main>', p.read_text(errors='replace'), re.S).group(1)] \
+  for m in re.finditer(r'\*\*', b)]"
+```
+⚠️ **It needs a FRESH BUILD, so it belongs after the build and before the gate.** ⚠️ **A COUNT OF
+DELIMITERS IN MARKDOWN IS NOT A TEST; THE RENDER IS.** ✅ **This is the same lesson this file already
+records for `check_callout_flow.py --panels`: a tool that claims to mirror the renderer must be diffed
+against the renderer's OUTPUT, not against its source read by eye.**
+
+### ⚠️⚠️ THE COUNTING APPROACH FAILS IN BOTH DIRECTIONS — the repairing agent named it against its own scan
+
+It ran a line-level odd-count scan over its file and found zero remaining. **Then it said why that is
+not reassurance:**
+
+> ***"A line-level odd-count scan — which is what I ran — would miss an EVEN-count line whose delimiters
+> pair WRONGLY, e.g. a run opened and closed across a flanking asymmetry like the one that caused this
+> defect. My scan would have scored the broken line as CLEAN had it carried one more stray `**`."***
+
+⚠️⚠️ **SO COUNTING OVER-REPORTS (my two censuses, 314 and 114 against a true 3) AND UNDER-REPORTS (an
+even count that pairs wrongly).** ✅ **It is not a conservative approximation in either direction. THE
+RENDERED ARTEFACT IS THE ONLY TEST.**
+
+⚠️ **And the mechanism it diagnosed is worth keeping, because it explains why the eye misses it:**
+markdown's flanking rules decide which `**` closes which. In the broken line, *"penalty **Hockey
+Canada"* was **left-flanking only, so it could not close** the run opened after the glyph, and two later
+delimiters paired off with each other instead. **The delimiters looked plausible in the source and
+parsed into something else.**
+
+### ✅ The repair verified by rendering, not by counting
+
+Run through `remark-corpus.mjs` itself: **before**, literal asterisks and no wrapper; **after**,
+`<span class="warn-inline">⚠️ <strong>…</strong></span>`, structurally identical to a model bullet in
+the same file rendered in the same run for comparison. ✅ **Two `*` characters added, no word changed.**
+
+### ⚠️ A judgement it declined, and it was right to flag rather than take it
+
+Restoring HEAD's structure leaves the clause *"and the boards are not the condition: USA Hockey 608(c)
+names no place at all…"* — **three book scopes and a mandatory tier — in plain bold, OUTSIDE the amber
+run.** ⚠️ **A reader skimming stops on the first clause and skates past that one.** The model bullet
+gives that same clause **its own `⚠️`**; the takeaway does not. ✅ ***"Whether it should is a judgement I
+did not have the brief to make"* — and adding a marker would be NEW escalation, which is not a
+delimiter repair.** **Open row, and it is a readability question for the owner, not a correctness one.**
+
+### 🔴 And the double adverb is a CLAIM, not a line
+
+⚠️ **Hockey Canada writes *"deliberately attempts to or deliberately injures"* — the double adverb is
+the book's HOUSE FORM, confirmed at 7.2(c), 7.3(c) and 9.3(c) as well.** ⚠️ **So wherever the corpus
+PARAPHRASES any of those rules with one adverb, *"or injuring"* reads as covering an accidental injury.**
+**Seventeen sites of 7.5(c) were repaired in a recent commit and only this file's two paraphrases were
+checked for the adverb.** **Sweep the paraphrases, not the quotations — a quotation carries both adverbs
+by construction.**
+
+## 🔴 AND THE RENDER TEST FOUND A SECOND, PRE-EXISTING SITE NOBODY KNEW ABOUT
+
+**`content/off-the-ice/team_play_and_culture.md`, Sources trailer.** An unbalanced run opens in one
+trailer entry and is never closed, so a later `**` renders literally and the italic/bold structure of
+two adjacent entries is wrong on the page:
+
+> *"…the anthem clause being an order to remove rather than a permission. **NHL, PWHL and IIHF Rule 9.6
+> were read the same day…"* … *"…above its gross misconduct.** Mercy rule, and the rec-league change
+> limit: …"*
+
+⚠️ **Pre-existing, NOT in this wave's diff, and in a Sources trailer — so a LISTENER never reaches it
+and no rule claim is affected.** ✅ **Direction is cosmetic: no tier is understated.** ⚠️ **But it is
+reader-facing broken text in the corpus's own provenance layer, and the fix is one delimiter.**
+**Its own row. Verify by RE-RENDERING, not by counting.**
+
+## ✅ THE EXCLUSIVITY-BY-CONTRAST REPAIRED AT ALL THREE LAYERS, PLUS A TRAILER GAP NOBODY BRIEFED
+
+**26 September 2026, `content/positions/winger.md`.** The trailing clause that did the work of an
+exclusivity — *"USA Hockey 608(c) writes its match penalty with or without board contact"* — is gone
+from the facts line, the body and **Key Takeaway 10**, replaced by all three books stated positively
+with **mandatory-versus-discretionary explicit**.
+
+✅ **THE HONEST FACTS SENTENCE WOULD NOT FIT 300 CHARS, SO THE LINE WAS SPLIT.** One intermediate draft
+hit **305/300** and was fixed by splitting plus one verb substitution *"assesses a mandatory"* →
+*"is a mandatory"* — ⚠️ **never by cutting a qualifier.** **Third measured instance today that a cap
+forces a split, not a compromise.**
+
+### ✅ IT DECLINED TO IMPORT THE PRECEDENT'S OWN WORDING, FOR THE RIGHT REASON
+
+The precedent frames this as *"**Neither** Hockey Canada nor CARHA confines its match penalty to the
+boards."* ⚠️⚠️ **In THIS file USA Hockey is named alongside, so a *"neither"* of two would have been
+exactly the antecedent breakage found false in another file EARLIER THE SAME DAY.** ✅ **It matched the
+precedent's substance and refused its syntax.** **That is what "match the precedent" should mean.**
+
+✅ **And it rejected its own intermediate wording *"The boards are not the condition — …"* because
+voiced ALONE it points at an antecedent a listener has not heard.** **Both final facts lines name the
+act in full.**
+
+### ✅ A PROVENANCE GAP THE BRIEF NEVER MENTIONED
+
+⚠️ **The Sources trailer had NO checking-from-behind entry at all**, while the body quotes Hockey Canada
+7.5(a) and 7.5(c), CARHA 53(a) and 53(b), USA Hockey 608(b) and 608(c), and IIHF 43.2 directly.
+✅ **A full entry was added — dated, scope-limited, and flagging that 7.5(c) RUNS TO TWO PARAGRAPHS.**
+⚠️ **The agent's own reading of what that implies is the useful part: *"the trailer gap here suggests the
+CITATION-COVERAGE half of this claim was never swept at all — only the sentence was."*** **That is a
+row: the 78-site sweep looked at sentences, not at whether each carrier's trailer covers what its body
+quotes.**
+
+### ✅ CHUNK DISTANCE MEASURED ON THE COORDINATOR — all three layers internally coherent
+
+**Rendered: 86 chunks.** The body's full contrast — USA Hockey naming no place, Hockey Canada's second
+paragraph, and CARHA's discretion — lands **together in chunk 070**. The three facts lines share
+**068**. **Key Takeaway 10's tail is self-contained in 083.** ✅ **No layer depends on a qualifier in
+another chunk.**
+
+⚠️⚠️ **AND A PROBE OF MINE RETURNED A FALSE NEGATIVE FOR A NEW REASON WORTH RECORDING: THE TYPOGRAPHIC
+APOSTROPHE.** I searched the SSML for *"the referee's discretion"* with an ASCII `'` and got **NOT
+FOUND**; the corpus writes `’` (U+2019). ✅ **Normalised, it is in chunk 070.**
+⚠️ **This file already records that grepping rendered SSML returns false negatives for FIGURES, because
+the renderer expands them. This is a SECOND cause, and it bites the words rather than the numbers:
+NORMALISE APOSTROPHES AND QUOTATION MARKS BEFORE SEARCHING RENDERED TEXT.** **Same family as the
+`<sub alias>` split already recorded.**
+
+### ⚠️ Its declared gaps, and the first is the standing one
+
+> ***"I did NOT sweep for other rules that price the same act — HC 7.2 boarding, 7.6/7.7 head contact,
+> CARHA 49(a)/(b), USA Hockey 603(c) and 620(c) all reach a check from behind by another door, and my
+> negatives on them are untested."***
+
+⚠️ **That is now named by SEVEN agents across this session.** **It is the boarding row, and it is the
+next real piece of work.**
+
+⚠️ **And it flagged two pre-existing framings it took as given rather than verifying: *"five of the six
+books"* and *"none of the six books asks who has the puck"*.** ✅ **Said plainly: *"I read six books'
+worth of nothing to check them."*** **Unverified, not endorsed.**
+
+## ✅ THE BREACHED CARHA PROHIBITION REPAIRED — one site, and the agent's own ✓ TESTED AND UPHELD
+
+**26 September 2026.** `zone_entries.md`'s Common Mistakes bullet went from *"its 53(a) **reaches** a
+match penalty with no boards in it at all"* to *"its 53(a) **adds that a match penalty *"could also be
+assessed under this rule"***, with no boards in it at all."* ✅ **The discretion now sits INSIDE the
+quotation marks, which is the sanctioned form. Nothing deleted (NN3); the scope gloss untouched, so the
+injury-conditioned ambiguity was left alone rather than resolved.**
+
+**Layer swept, and the bare-assertion form appears NOWHERE ELSE in the file.** ✅ **Five other sites read
+and left: the facts line and the body both keep the quoted *"could"*; two Key Takeaways make no match
+claim at all (one refers to the GAME MISCONDUCT, the other is true on 53(a)'s minor-plus-game-misconduct
+floor alone).** ⚠️ **That is the kind of reading that stops a sweep turning into damage.**
+
+### ✅ IT DECLARED ITS OWN ✓ AS UNPROVEN, AND THE MEASUREMENT UPHOLDS IT
+
+It ruled the body site safe *"because the verbatim *"could"* sits in the sentence immediately before"*
+the gloss *"the open-ice version of the hit reaches the ejection too"* — **and then said plainly that a
+listener hears those as separate `<p>`s, that it had not measured the chunk distance, and that *"if they
+do not [share a chunk], `:229` is a second instance of this defect and my ✓ is wrong."***
+
+**Measured on the coordinator: the quoted *"could also be assessed under this rule"* and the gloss
+*"reaches the ejection too"* BOTH land in chunk 025.** ✅ **Same chunk. The discretion reaches a listener
+with the gloss, and the ✓ holds.** ⚠️ **The quotation also appears in chunk 085, which is the repaired
+Common Mistakes bullet — so both carriers now keep it.**
+
+⚠️ **AND IT NAMED THE SEARCH CORRECTLY: *"search the WORDS around the figure, never `53` or `53(a)`,
+which the renderer expands."*** **That is this file's own rule, applied unprompted.**
+
+### 🔴 OPEN — the same bare-assertion form may stand in the siblings, and the search is by ACT
+
+> ***"A bare-assertion restatement of CARHA 53(a)'s match penalty could be standing in
+> [`body_contact_and_battles.md` or `rules_primer.md`], and my method could not see it. The search that
+> would find it is for the ACT — checking from behind reaching a match penalty in CARHA — not for the
+> string `53(a)`, because the defective form may not cite the rule number at all."***
+
+⚠️ **`body_contact_and_battles.md` is the corpus's checking-from-behind OWNER and is linked from the
+repaired bullet's own paragraph.** **Brief it by the act.**
+
+### ⚠️ And the inverse of the prohibition was NOT checked, by its own account
+
+> ***"I only checked CARHA 53(a)'s *"could"*. I did not ask whether any other DISCRETIONARY CARHA or
+> Hockey Canada match penalty in this file is stated as MANDATORY."***
+
+⚠️ **`53(b)`, `72(e)` and the Hockey Canada 7.5(c) second paragraph all price ejections in the same
+bullet and their existing wording was taken on trust.** ✅ **A brief that names one rule produces an
+agent that verifies one rule — said by the agent, about the brief, correctly.** **The inverse sweep is
+its own row: a discretionary tier stated as mandatory is the HARSHER direction, so it does not block —
+but it is the same defect class facing the other way.**
+
 ## 🔴 THE CARHA "COULD" PROHIBITION IS ALREADY BREACHED AT ONE PRE-EXISTING SITE
 
 **Found by a commit gate, 26 September 2026, while clearing the wave that WROTE the prohibition.**
