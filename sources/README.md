@@ -1923,3 +1923,71 @@ this one.** Two verbatim, correct quotations of row E — the NHL's and the PWHL
 **If the interleave is general to Reference Table 14 — or to the IIHF's Appendix IV Table 16 — then
 other situation-row claims in this corpus may rest on greps that returned a false zero, and no tool on
 disk would say so.** That census has not been run.
+
+## ⚠️⚠️ PWHL Reference Table 6 — a LOST ASTERISK that manufactures a mandatory match penalty (26 September 2026)
+
+**`pwhl_rules_layout.txt:7372` and `pwhl_rules.txt:8456` both print, with NO leading asterisk:**
+
+```
+NOTE – match penalty must be assessed when injury results
+```
+
+⚠️⚠️ **Read as an unqualified sentence, that makes a match penalty MANDATORY ON INJURY for all twenty
+rows of Table 6 — including *Illegal Check to the Head* and *Checking from behind* — and so flatly
+contradicts Rule 48.4's and Rule 43.4's own *"The Referee(s), at their discretion, may assess a match
+penalty."*** **A verifier who quotes the NOTE and not the rule will write a mandatory ejection into the
+corpus where the book gives the referee a choice.**
+
+✅ **It is a FOOTNOTE, and the NHL's extraction supplies the missing key.** `nhl_rules_layout.txt:8265`
+prints the identical line **with the asterisk**:
+
+```
+* NOTE - match penalty must be assessed when injury results
+```
+
+**The PWHL's asterisked rows are exactly the NHL's set** — butt-ending, the goalkeeper's blocking glove,
+head-butting, punching and injuring an unsuspecting opponent, spearing, tape on the hands. ⚠️ **Illegal
+Check to the Head (xiii) and Checking from behind (vi) carry NO asterisk in either PWHL extraction.**
+**Both PWHL extractions lost the asterisk on the NOTE line only, not on the rows.**
+
+⚠️ **NOT CONFIRMED IN THE PDF — `pdftoppm` p147 and read it to close this.** The reading is near-certain
+from the NHL parallel and from the six asterisked rows, but it rests on two text extractions of one page.
+
+⚠️ **The same species as the `hc.txt` and `nhl_rules.txt` column faults already recorded above, with one
+difference that makes it worse: a lost column produces GARBLED text a reader distrusts, and a lost
+ASTERISK produces a clean, quotable, grammatical sentence that is false.**
+
+### ⚠️ And a cross-reference that resolves to the WRONG rule
+
+**`pwhl_rules.txt:4517`, inside Rule 43.3, points at *"Rule 45.5 – Game Misconduct."*** ⚠️ **Rule 45 is
+ELBOWING, and 45.5 exists and is a real game-misconduct clause, so the citation resolves — to the wrong
+rule.** **43.5 is what is meant.** **Undetermined whether this is the book's error or the extraction's.**
+Same species as the USA Hockey 610-lettering defect recorded elsewhere in this file.
+
+### ⚠️ Rule 48 is NOT in the accumulation category, and Table 8 does not tell you so
+
+Measured 26 September 2026. **`pwhl_rules_layout.txt:2419-2427`** — the **Physical Infractions
+Category**, whose two game misconducts trigger an automatic suspension under **23.6** — lists **nine**
+rules: Boarding 41, Body Checking 52, Charging 42, **Checking from Behind 43**, Clipping 44, Elbowing 45,
+Head-butting 47, Interference 57, Kneeing 50. ⚠️ **Illegal Check to the Head, Rule 48, is absent**, and
+Rule 48 is the only physical-infraction rule in the book with **no Fines and Suspensions sub-rule at
+all** (48.1–48.5, full stop, where Rule 43 has 43.6 and Rule 47 has 47.5).
+
+⚠️⚠️ **DO NOT SETTLE THIS FROM TABLE 8, WHICH ANSWERS A DIFFERENT QUESTION AND LOOKS LIKE IT ANSWERS
+THIS ONE.** Table 8 is a *"Summary of Game Misconduct Penalties"* — which rules CARRY a game misconduct
+— and it **does** list **(xiii) Illegal Check to the Head — Rule 48.5** at `pwhl_rules_layout.txt:7440`.
+**Carrying a game misconduct and feeding the accumulation ladder are two different things, and only the
+23.6 category list answers the second.** ✅ **So an ICTH ejection does not count toward the two-GM
+automatic suspension, where a checking-from-behind ejection does** — only Rule 28's discretionary
+supplementary discipline reaches it.
+
+## ⚠️ USA Hockey: the `danger zone` geography exists ONLY in the Casebook volume (26 September 2026)
+
+**`dangerzone` flattened: `usah.txt` = 0, `usah_casebook.txt` = 1.** Casebook Rule 608 Situation 1 defines
+it — *"the 'danger zone,' which is the area approximately ten feet out from the boards"* — and the
+Playing Rules volume never uses the term. ⚠️ **A verifier working from `usah.txt` alone reports the
+corpus's danger-zone geography unsourced.** **Grep both volumes; they are one book in two files.**
+
+⚠️ **And Standard of Play Casebook Situations 19 and 22 REPRINT the boarding and head-contact rulings
+under a SECOND numbering — Situation 22 with no `Rule Reference` line at all.** **A bare "Situation 22"
+citation is ambiguous between the two series; always name the rule as well.**

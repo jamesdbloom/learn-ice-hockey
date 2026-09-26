@@ -240,6 +240,101 @@ known renderer behaviour rather than measured — and it said so.** ⚠️ **And
 siblings in eight other documents BY GREP ONLY: *"a sibling whose SUMMARY layer narrows the claim while
 its body is correct would need the same per-layer read I gave one file, and I gave it to no other."***
 
+## ✅✅ THE BOARDING LADDER SWEPT AT LAST — AND THE NEGATIVE IS THE FINDING: NO PERMISSIVE GAP EXISTS
+
+**26 September 2026, read-only, six books plus a casebook, every rule that reaches the act.** **EIGHT
+agents had named this as their weakest point; the books themselves group the rules.** ✅⚠️ **The sweep
+found NOTHING permissive, and that is the result:**
+
+> ***"The corpus's checking-from-behind / boarding / head-contact ladder is the best-covered rules area I
+> have seen in this repository. Every mandatory limb I located in every book is already carried, with the
+> correct modality, usually at 8–17 sites. I attacked it from the act rather than the label and could not
+> break it."***
+
+✅ **The brief's own premise — *"whether any book writes a boarding match penalty with no destination
+condition is the question I did not ask"* — HAD ALREADY BEEN ASKED AND ANSWERED IN THE CORPUS.**
+⚠️⚠️ **And it says plainly what a brief written the other way would have cost: *"A brief written on the
+premise that this ground is unexamined would have produced duplicate additions AT SCALE."***
+
+**Carried and verified with correct modality:** USA Hockey 608(a)/(b)/(c) **and the Casebook Situation**
+(14–17 files); Hockey Canada 7.5(a)/(b)/(c), 7.4(c)'s non-deliberate match limb (13 sites, explicitly
+flagged as *"the first of that rule's two limbs"*), 7.6's supersession (14 sites), 7.6(b)'s *"whether or
+not injury results"*, 7.7(b)'s *"glass, ice"* limb; CARHA 53(a)/(b) with its Note (12+ sites), **49(b)'s
+double-minor waiver on ANY foul with a boards destination**, 52(a)/(b); NHL and PWHL 43.2/43.3/43.5;
+IIHF 43.2/43.3 and **42.1's INBOUND supersession**.
+
+### 🔴 TWO INCOMPLETENESSES, NEITHER PERMISSIVE, AND THE FIRST IS AN OWNERSHIP FAILURE
+
+**(A) The document whose SUBJECT is body contact carries ONE of the Casebook's THREE mandatory
+triggers.** `body_contact_and_battles.md` quotes trigger (1) with the correct *"[i]n every instance"*
+modality. ⚠️⚠️ **Triggers (2) *"thrust head first into the boards or goal frame"* and (3) *"regardless of
+whether or not board contact is made"* are each carried at EIGHT OTHER FILES — and not in the owner.**
+⚠️ **Trigger (3) is the one that makes the ladder LOCATION-FREE: it is the answer to the brief's own
+question, and the owning document does not have it.** ✅ **A propagation gap, not an error.**
+**Constraints: the modality is *"must be called"* / *"in every instance"*; the tier is *"a major plus a
+game misconduct penalty, OR match penalty"* — DISJUNCTIVE, not a floor plus a ceiling; and the
+Situation's printed `Rule Reference` is bare *"608"*, so whether body checking is legal in that game at
+all is decided OUTSIDE the Situation.**
+
+**(B) The PWHL is the ONLY one of the six books that makes head contact a MANDATORY EJECTION, and the
+corpus nowhere says so.** **48.2's mandatory major is at ONE site; 48.5 — *"a game misconduct **must
+also be imposed**"* — at NONE.** ⚠️ **So the corpus never states that the PWHL's floor for an illegal
+check to the head is an ejection, where the NHL's is two minutes with *"no provision for a major"* and
+the IIHF's default is a discretionary minor.** **Constraint: 48.3 permits reduction to a minor for
+accidental contact ONLY after automatic off-ice video review, so *"always an ejection"* would be wrong —
+and the PWHL is a women's professional book, never a general standard.**
+
+### ⚠️⚠️ TENSION 1 — A TABLE THAT WOULD MAKE A FUTURE REVIEWER "CORRECT" THE CORPUS THE PERMISSIVE WAY
+
+**USA Hockey 608(c)'s RULE TEXT is mandatory — *"shall be assessed … in all instances"* — and the
+book's own Summary of Penalties table files 608(c) under the heading *"Match Penalty OPTION"*, beside
+rules whose text says *"may also be assessed"*.**
+
+⚠️⚠️ **A reviewer who consults the table alone will read the corpus's mandatory statement as an
+OVERSTATEMENT and correct it in the PERMISSIVE direction.** ✅ **The rule text and the Casebook
+(*"must be assessed in all instances"*) both govern; the corpus is RIGHT.** ✅ **And this corpus already
+records that USA Hockey's summary tables contradict themselves elsewhere — two disagreeing 615(c)
+entries — and that nothing rests on them.** ⚠️ **Keep that disclosure attached wherever 608(c) is
+stated.**
+
+### ⚠️ TENSION 2 — the IIHF has NO match-penalty category at all, book-wide
+
+**`matchpenalt` scores ZERO flattened in `iihf_rules_v1.1.txt`, `iihf_rules.txt` AND
+`iihf_rules_2026-27.txt` — confirmed independently by the coordinator.** **The IIHF's top in-game
+sanction for every foul in this family is a major plus a game misconduct, with Rule 28 Supplementary
+Discipline above it.** ⚠️ **So any corpus sentence of the form *"all five/six books reach a match
+penalty"* is false, and any *"IIHF match penalty"* citation would be a fabrication.** ✅ **Appendix IV
+checked for the rule-text-versus-table shape: Tables 7 and 10 list boarding and checking from behind but
+both are GAME-MISCONDUCT tables, so there is no contradiction.**
+
+### ⚠️⚠️ AND THE IIHF SUPERSESSION RUNS **DOWNWARD** — nobody has drawn the consequence
+
+**IIHF 42.1 is written from the other direction: *"This rule **is superseded by** all similar actions
+regarding an 'illegal hit to the head'."*** ⚠️⚠️ **So under the IIHF a check from behind that contacts
+the head is routed to Rule 48, whose floor is a DISCRETIONARY MINOR — where Rule 43 forecloses the minor
+entirely.** ✅ **The sweep found no corpus sentence drawing that consequence and refused to propose one:
+*"it needs a reader who knows the document."*** **Its own row.**
+
+---
+
+## ⚠️⚠️ AND MY FIFTH CENSUS OF THE DAY OVER-REPORTED, WITH A DIAGNOSABLE CAUSE WORTH RECORDING
+
+I tested the fabrication risk corpus-wide and got **116 sentences pairing the IIHF with a match
+penalty**, then **33**, then **24** after widening the exclusion list. ✅ **Every hit I read is CORRECT** —
+the corpus consistently writes *"the IIHF writes no match penalty"*, *"every book but the IIHF"*,
+*"and under the IIHF Rule 49 … a major instead"*.
+
+⚠️⚠️ **THE CAUSE: MY SENTENCE SPLITTER BROKE ON THE PERIOD INSIDE A RULE NUMBER.** *"…under IIHF Rule
+49."* truncates the sentence and **cuts off the very exclusion clause that follows**, so a correct
+sentence is served to the test as a fragment that looks affirmative.
+
+✅ **THIS IS A GENERAL TRAP FOR EVERY PROSE CENSUS OVER THIS CORPUS: the text is dense with `43.2`,
+`7.5(c)`, `608(b)`, so ANY `.`-based sentence split produces fragments that lose their qualifiers.**
+⚠️ **Split on blank lines, or on `.` followed by a space AND a capital that is not a rule-number
+continuation — and read every hit.** **Five over-reporting censuses in one session, each with a
+different wrong unit: the line, the blank-line paragraph, a single probe string, a delimiter parity
+count, and now a period-split sentence.**
+
 ## ✅ THE TRAVELLING FRAGMENT SCOPED, AND THE AGENT BEAT THE REVIEWER'S SKETCH BY REMOVING THE PRONOUN
 
 **26 September 2026, `winger.md` Key Takeaway 10.** *"…and assesses it in all instances"* became
@@ -31598,3 +31693,800 @@ safety pass.** **A reviewer was dispatched for the wave's first four files and n
 lanes; the authoring agents verified their own replacement text, which is self-certification and C6
 admits no exception for it.** **Dispatched now.**
 
+
+## ✅ THE OWNER DOCUMENT TOOK THE CASEBOOK TIER AND THE PWHL FLOOR — AND THE BRIEF WAS REFUTED AGAIN
+
+**26 September 2026, `content/technique/body_contact_and_battles.md`.** The two incompletenesses the
+boarding-ladder sweep handed over are repaired. **Purely additive:** two body sentences, two ` ```facts `
+`Rule:` lines, two Sources-trailer extensions. Nothing was cut and no book count was widened.
+
+### ⚠️ THE BRIEF SAID THE TRIGGERS WERE ABSENT. THEY WERE NOT — THE GAP WAS THE TIER
+
+The coordinator briefed Casebook 608 Situation 1's triggers (2) and (3) as *"NOT in the document whose
+subject is body contact."* ⚠️ **Their SUBSTANCE was already at three sites**, carried by USA Hockey's
+**playing rule 608(b)**, which is already mandatory (*"shall be assessed"*) — including a Common
+Mistakes bullet quoting it verbatim **with the location-free point already drawn**: *"its first limb
+carrying no board or frame condition."*
+
+✅ **The genuine gap was narrower and the agent found it:** 608(b) alone gives **major + game
+misconduct**; the Casebook makes the tier ***"[t]he major plus a game misconduct penalty, or match
+penalty"*** — so a **match penalty is reachable for those two instances WITHOUT 608(c)'s
+excessive-force-plus-vulnerable-position conditions.** That is the harsher direction, and it was
+missing.
+
+⚠️ **THE LESSON IS NOT "THE BRIEF WAS SLOPPY." A brief that says a claim is ABSENT is a claim about the
+whole corpus, and the coordinator cannot make it from a grep.** An agent that had accepted it would
+have written a fourth restatement of a limb already carried three times — which this repository treats
+as a propagation risk before a thoroughness gain.
+
+### ⚠️ AND READING PAST THE CLOSING MARK FOUND A FOURTH PARAGRAPH THE BRIEF'S QUOTATION STOPPED BEFORE
+
+`sources/usah_casebook.txt`, immediately after trigger (3): *"A match penalty must be assessed in all
+instances when a player clearly checks an opponent from behind with excessive force while the opponent
+is in a vulnerable or defenseless position, thereby recklessly endangering the opponent."* **That is
+608(c)'s content and the file already carries it** — so no repair. ⚠️ **But a brief quoting the
+Situation without it sends the next agent to write a duplicate.** **Quote a Situation to its END, not
+to the clause you needed.**
+
+### ✅ THE DISJUNCTION WAS PRESERVED, WHICH WAS THE EASIEST THING TO GET WRONG
+
+*"major plus a game misconduct penalty, **OR** match penalty"* is **DISJUNCTIVE — not a floor plus a
+ceiling.** The new body sentence says *"the referee's choice is between an ejection and a match
+penalty, not between an ejection and two minutes"*, and neither new facts line states a match penalty
+as mandatory on its own.
+
+### ✅ A CAP FORCED A SPLIT AGAIN — THE FIFTH MEASURED INSTANCE
+
+One facts line came to **355 against the 300 cap**. Split into two at **259** and **295**, and the
+295 draft had been 306 — fixed by cutting the redundant `from behind` from the opener, **which the
+quotation itself carries.** ⚠️ **No qualifier was traded away.** **Both lines name USA Hockey and the
+Situation explicitly**, because each facts line is voiced alone and a demonstrative pointing at a
+sibling line points at nothing.
+
+### ✅ THE 604 CLAUSE WAS DELIBERATELY NOT WRITTEN, AND THE REASONING IS THE RULE
+
+Situation 1's printed `Rule Reference` is bare **608** — it never cites **604**, which is what decides
+whether body checking is legal in a division at all. ⚠️ **The agent wrote no 604 caveat, because
+attached to this sentence it would read as *"in a non-checking division 608 may not reach you"* — the
+permissive direction — when the file's own §5 answer is the opposite:** *"boarding (7.2, 603), charging
+(7.4, 607) and checking from behind (7.5, 608) carry no division or classification clause at all."*
+✅ **A scope clause that is true of the BOOK can be false of the SENTENCE. Ask what the caveat licenses
+where you are putting it.**
+
+### ✅ THE PWHL FLOOR, WITH ITS WAY DOWN IN THE SAME BREATH
+
+**48.2** assesses *"a major penalty"* for an illegal check to the head; **48.5** adds that when that
+major is assessed *"a game misconduct must also be imposed"*; **48.3** allows reduction to a minor for
+accidental contact **only after automatic off-ice video review** and *"at the discretion of the
+Official(s)"*. The text says *"called as an ejection"*, **never *"always an ejection"***.
+
+⚠️ **An earlier draft read *"not the referee's own read of the hit"* — WRONG, because 48.3's reduction
+IS at the Officials' discretion, just only after review.** **The agent caught it in its own text before
+writing.** ✅ **Scope limb present and copied from the file's own existing PWHL convention: *"PWHL
+only — it is not the rule for any other women's competition, and a British women's player is under
+IIHF Rule 48."***
+
+### ✅ CHUNK DISTANCE MEASURED ON THE COORDINATOR — the question the agent declared it could not reach
+
+`md_to_speech.py --only body_contact_and_battles` into its own named `--out` directory, **288 chunks**:
+
+| claim | chunk | its qualifier | chunk |
+|---|---|---|---|
+| PWHL *"a game misconduct must also be imposed"* | **075** | *"reviewed automatically"* · *"reduced to a minor penalty"* · the PWHL-only scope | **075** |
+| Casebook *"must be called"* | **083** | *"regardless of whether or not board contact is made"* | **083** |
+
+✅ **Distance ZERO in both cases. No listener meets either claim without its qualifier.**
+⚠️ **Measured by searching the WORDS, never a figure** — the renderer expands `48.2` to *"forty-eight
+point two"*, so grepping SSML for a rule number is a guaranteed false negative.
+
+### ✅ RENDER AND DELIMITER TESTS, AFTER A BUILD VERIFIED THREE WAYS
+
+Build with the **absolute npm binary**, reached `check-links` (**53 pages · 11,586 internal links**),
+`site/dist` at 14:20 against the content edit at 14:12, **and the artefact itself carries the new
+strings.** ⚠️ **Three facts, because `dist`'s mtime is set by step 1 `clean:cache` and timestamps when
+the chain STARTED.**
+
+- literal `**` inside `<main>` corpus-wide: **0**
+- `<strong>` runs containing a glyph but untreated: **0**
+- `--bare`: **5**, unchanged, across `language_and_glossary` (2), `rink_map` (2), `equipment` (1) —
+  **none in this file**, so both new markers took `span.warn-inline`
+- marker pairing against HEAD, 60-char key: **465/465 paragraphs, 97 marked before and after, no
+  paragraph lost its last marker, no merge, no split**
+
+### 🔴 OPEN ROW — THE FOUR-FOULS FACTS BLOCK IS STRUCTURALLY FULL
+
+**§5 *"Four fouls no division is exempt from"* holds 14 facts against `HARD_MAX` 14.** Its head-contact
+tier line has **46 characters of headroom**; the shortest honest PWHL limb carrying the 48.5 mandate is
+**~67**. ⚠️ **The agent did NOT evict a line and did NOT trim a qualifier** — this repository records
+both as shipped defects — **so the PWHL head-contact floor is body-only.**
+
+**The block is doing four jobs in one 14-line block.** ✅ **Either it SPLITS BY FOUL, or the floor stays
+body-only.** ⚠️ **`MAX_COACHING_FACTS` is 8 and `Rule:` lines are exempt from it, so a split is
+available; the constraint is `HARD_MAX`, which is the total.** The `Keep your head up` block at 13/14
+is **not** a host — it is about receiving hits and posture, not tariff.
+
+### 🔴 OPEN ROW — `:1254` IS KNOWINGLY INCOMPLETE, AND THE AGENT SAID SO AGAINST ITSELF
+
+*"the PWHL's 48.2 makes that rule 'a major penalty' where the NHL's 48.2 is a minor"*, with **no 48.5**.
+**True, and not permissive.** The agent declined to add the ejection limb as a fourth restatement of
+the same ladder — ⚠️ **and then named the cost: *"a reader who only meets `:1254` learns a major and
+not an ejection."*** **That is a judgement, not a verified fact. Owner's call.**
+
+### 🔴 OPEN ROW — THE PWHL SOURCES TRAILER IS WIDER THAN THE GAP JUST CLOSED
+
+The body cites PWHL **41.1, 43.1, 43.2, 43.3, 43.5, 46.15, 49.3, 52.1, 56.1, 57.1, 60.1/61.1**; the
+trailer listed **Rule 52 and Rule 47 only**. **Rule 48 was added, because that is all the agent read
+today (NN5).** ⚠️ **The rest is pre-existing trailer under-coverage and needs a `source-verifier`, not
+the agent that found it.**
+
+### 🔴 OPEN ROW — TWO DECLARED NEGATIVES THAT ARE NOT EVEN TESTED NEGATIVES
+
+The agent named both against itself, and both are the shape this repository records as most dangerous:
+
+1. *"I verified the tier the Casebook sets; I did not sweep for what ELSE prices a check from behind in
+   the other five books."* ⚠️ **The brief handed it one Situation in one book, so it verified that
+   Situation** — the recorded routing failure, verbatim.
+2. *"I did not ask what ELSE the PWHL book uses to reach head contact — a Rule 21 match-penalty
+   provision, a 43.x route, or a supplementary-discipline clause could all price the same act. **My
+   negative there is not even a tested negative; it is an unasked question.**"*
+
+✅ **Both dispatched to a `rules-verifier` the same round, plus the CARHA 66(b)/52(b) question one book
+over.** ⚠️ **A declared weakest negative has twice this week been the NEXT DEFECT. Filing the report
+without testing it throws that away.**
+
+## ✅ THE BARE-GLYPH BACKLOG CLOSED — AND ONE OF THE FIVE WAS THE CHECKER, NOT THE CORPUS
+
+**26 September 2026. `--bare` reported 5 across 3 pages. Four were real and are repaired; the fifth
+was a tool false positive.** Two agents, disjoint file sets, both refuted their brief.
+
+### ⚠️ THE FIFTH HIT WAS SITE CHROME — `check_callout_flow.py` DOES NOT STRIP `details.toc-inline`
+
+`_strip_nav_chrome()` strips `<nav class="toc">` and `<nav class="sidebar">` and **not**
+`<details class="toc-inline">`. So the auto-generated in-page contents mirror of a
+`> ### ⚠️ …` heading is counted as a bare glyph — **while the heading's own body instance renders as a
+full amber panel.** `off-the-ice/equipment` is 0, not 1.
+
+⚠️⚠️ **THIS IS THE BUG THAT FUNCTION'S OWN DOCSTRING WAS WRITTEN TO FIX, ONE CONTAINER OVER.** The
+docstring records `--bare` once saying 1 while `--file` said 2, *"counting the table-of-contents and
+sidebar copies of a `> ### ⚠️` heading as separate hits."* **The `details.toc-inline` copy was never
+added.** ⚠️ **Direction is over-reporting, which reads as thoroughness — and here it manufactured a
+whole agent dispatch.** ✅ **The agent measured the fix read-only rather than applying it: `5 across 3`
+→ `4 across 2`.**
+
+🔴 **OPEN ROW — the fix is one `re.sub` in `_strip_nav_chrome` (both call sites already share it).**
+⚠️ **NOT APPLIED THIS ROUND, DELIBERATELY: three agents were live and a tool is shared state — round 59
+recorded a classifier changing its output mid-round under a live agent, who then could not trust any of
+its own runs.** ⚠️ **And this tool's history is three successive wrong answers that each looked
+plausible in aggregate, so the fix must be VALIDATED PER FILE AGAINST `site/dist`, not in total.
+Change it between waves.**
+
+### ✅ THE FOUR REAL HITS WERE TWO SENTENCES AT FOUR SITES, AND THE REPAIR CHANGED NO WORD
+
+`foundation/language_and_glossary.md:473` and `foundation/rink_map.md:650` carry the **same two
+byte-identical disclosure sentences** in each file's own Sources trailer. **So it is two claims at four
+sites, not four defects** — and `--bare --file` printing an identical listing for both pages **looks
+like a tool bug and is not one.**
+
+Both were the **rarer shape**: a marker in front of plain prose, shape (b) failing because the next
+sibling is an `emphasis`/`inlineCode` node rather than `strong`, and shape (c) failing on the
+48-character cap. ⚠️ **Not the "27 of 29 inside an existing bold run" shape at all.**
+
+The repair moved the glyph onto the clause stating the hazard and bolded that clause, catching **shape
+(a) `WARNING_LEAD_RE`**: `**⚠️ is not the general rule**` and `**⚠️ it reads contiguously in the plain
+one only**`. **+8 bytes per file. Four asterisks. No word changed, no word reordered.**
+
+✅ **AND IT DECLINED THE CHEAP TARGET FOR THE RIGHT REASON.** `**Sled Hockey**` sat three words from
+the glyph and would have caught the wrapper for free — ⚠️ **it is a discipline name, i.e. exactly the
+"bold the citation and leave the instruction black" failure this file records as found live twice.**
+
+### ⚠️⚠️ AND ONE AGENT PREDICTED THE OTHER'S WORK WAS IMPOSSIBLE. IT WAS NOT
+
+The `equipment` agent, reporting helpfully outside its own file, read both sibling sentences and
+concluded the repair was **unavailable without a word change**, because *"both glyphs follow a `;`"* and
+`WARNING_NEAR_RE` forbids `;` in the gap — advising that the siblings *"should expect to REPORT rather
+than force these."*
+
+⚠️ **The `;` PRECEDES the glyph. It was never in the gap.** And the repair that worked did not use the
+gap rule at all — it used **shape (a)**, where the strong run's own text leads with the glyph and no
+gap exists to measure. ✅ **The sibling rendered it through the plugin and it formed.**
+
+⚠️⚠️ **THE LESSON IS THIS REPOSITORY'S OWN TRUE-NEGATIVE WARNING, ONE LEVEL UP: an agent reasoning
+CORRECTLY from an INCOMPLETE model of the three shapes declared a free repair impossible, and the
+direction is the flattering one, because an impossibility needs no work.** **It is the sixth recorded
+instance of *"never done before" being read as "cannot be done"* here.** ✅ **Nothing was lost — the
+prediction was never relayed, because the sibling finished first.** ⚠️ **Had it been relayed, a
+correct, free, word-preserving repair would have been abandoned on it.** **A cross-file courtesy
+finding is a HYPOTHESIS, and it must be verified by the agent that owns the file.**
+
+### ✅ VERIFIED BY RENDERING AND EXTENT, NEVER BY COUNTING
+
+Both agents pushed their strings through `remark-corpus.mjs` itself with the **absolute node binary**,
+the foundation agent twice — on the isolated sentences and on the **whole 20,672- and 16,274-character
+real source lines**. Extents read: the wrapper opens at the glyph and closes at the end of the
+instruction; no literal `**`; no nested `<strong>`; and **every one of the ~20 pre-existing wrappers in
+those paragraphs re-formed unchanged**, so the backwards `markInlineWarnings` pass over the siblings was
+not disturbed.
+
+**Marker pairing against HEAD, 60-char key:** `language_and_glossary` 224→224 paragraphs, 24→24 marked;
+`rink_map` 267→267, 22→22. **No paragraph lost its last marker in either file, and no paragraph key
+changed at all**, so no aggregate could be hiding a loss.
+
+**State 4 swept in both files and CLEAN** — zero glyphs sitting inside a `**strong**` run after other
+characters, across 130 glyphs. ⚠️ **The agent declared the limit of its own sweep: its `\*\*(.+?)\*\*`
+pairing mis-pairs across adjacent runs on a 20,000-character line, so it verified against no AST.**
+
+### 🔴 OPEN ROWS THE WAVE OPENED
+
+1. **The trailer's `span.warn-inline` has never been seen in a browser.** All four repairs sit inside
+   the Sources `<details>`. ⚠️ **A container-scoped CSS override — a colour reset on `details em`, a
+   `.sources` rule, a specificity win — would defeat 100% of this work while every check still
+   passes.** **Needs a `site-reviewer` with the trailer EXPANDED.**
+2. **Is the trailer voiced at all?** `check_pointers`'s entry says the trailer is a layer a listener
+   never hears and it has no heading. **If unvoiced, the spoken-`"Important."` risk at these four sites
+   was nil from the start.** Worth settling once, because it re-prices every trailer row in this plan.
+3. **Triage order:** a trailer hit is behind a collapsed `<details>`, so it is **lower reader impact
+   than a body-prose bare glyph.** Put trailer hits at the bottom of any remaining backlog.
+4. **Do these two sentences appear in a THIRD document's trailer?** ⚠️ **`--bare` will not name it
+   unless it is bare there too** — a treated copy is invisible to the tool by construction. **Census
+   the two sentences corpus-wide.**
+5. ⚠️ **The 126 glyphs `--bare` calls clean in those two files were never READ.** A glyph forming a
+   **panel** where an inline mark was wanted, or the inverse, is invisible to `--bare`. Same for the
+   `equipment` page's **76 wrapped spans and 14 panels**: *"I checked the extent of none of them"* —
+   and the worst case, `⚠️ **Hockey Canada 7.8(a)**` with the tariff after it black, **scores as a
+   clean `warn-inline` in every count.** **That needs reading, not a tool.**
+
+## 🔴🔴 A TENTH CRITICAL-SHAPED MAJOR — A FALSE *CLOSED COUNT*, AND THE SAME DIFF CARRIED THE RIGHT NUMBER
+
+**26 September 2026, `content/technique/body_contact_and_battles.md:666`, found by a `safety-reviewer`
+dispatched for C6 on a diff every mechanical gate had already passed.**
+
+The new insert opened *"⚠️ **And its Casebook names TWO cases where the referee may not go lower…**"*
+⚠️ **USA Hockey's Casebook Rule 608 Situation 1 names THREE, and they are NUMBERED in the book:**
+
+> (1) *"In every instance where a player forcefully checks an opponent who is standing along the boards
+> (back toward the middle of the ice)."*
+> (2) *"In every instance where a player is thrust head first into the boards or goal frame."*
+> (3) *"In every instance where the player recklessly endangers the opponent from a check from behind,
+> regardless of whether or not board contact is made."*
+
+**The insert quoted (2) and (3) and omitted (1) — the forceful check on a player standing facing the
+wall, which is the commonest dangerous check from behind there is.**
+
+⚠️⚠️ **THE DIRECTION IS PERMISSIVE, WHICH IS WHY IT BLOCKS.** A reader who hears *"names two cases"* and
+then hears exactly two quoted concludes that instance (1) is **not** one where the referee may not go
+lower — i.e. **that a minor plus misconduct stays available for driving a player facing the wall into
+it.** It does not: that tier *"must be called."*
+
+### ⚠️⚠️ AND THE SAME DIFF CONTAINED BOTH ANSWERS. THE TRAILER WAS THE HALF THAT WAS RIGHT
+
+The Sources-trailer text added in the **same wave** reads *"the tier it makes mandatory … in **three**
+named instances, the third 'regardless of whether or not board contact is made'"*. ⚠️ **Body says two,
+trailer says three, one diff, one claim, one agent, one hour.** ✅ **So the agent had the correct count
+in hand while writing the false one** — this is not a research failure, it is a **restatement** failure,
+and it is the exact species this file records as *"summarising does to a tariff"*: **every one of the
+six defects an agent once caught in its own replacement text was an overstatement toward a harsher,
+simpler rule.** **This one runs the other way, which is worse.**
+
+### 🔴 THE NEW SHAPE, AND IT NEEDS A NAME: A CLOSED COUNT IS A CLAIM ABOUT WHAT IS *ABSENT*
+
+⚠️ **`--panels`, `check_facts`, `check_quote_drift`, `check_absolutes`, `check_marker_pairs`, the
+chunk-distance measurement and the extent read ALL PASSED.** **Every quotation was verbatim, drift-free
+and read past its closing mark. The citation was right. The disjunction was preserved. The modality was
+preserved. The numeral in front of them was wrong, and nothing mechanical can see a numeral.**
+
+⚠️ **This is the eleventh distinct shape this round** — after the quotation stopping one clause short,
+the true quotation inside a false sentence, the paraphrase with no characters to compare, the shared
+predicate true of three books and false of a fourth, the exclusivity carried by a contrast, the
+verbatim fragment travelling without its scoping clause, the self-referential scope phrase, the
+qualifier that changed jobs between layers, and the modality read as discretion. ✅ **All eleven have
+one thing in common: THE QUOTATION WAS FINE.**
+
+**So the question to ask of a summary sentence is not *"is every quotation right?"* but *"what does
+this sentence assert about what is NOT here?"*** **A count, a *"neither"*, an *"only"*, a *"two of the
+books"* — each is an absence claim, and an absence claim is unfalsifiable by quotation-checking.**
+
+### ⚠️ THE REVIEWER NAMED THE LIMIT OF ITS OWN FINDING, AND IT IS THE NEXT BRIEF
+
+> ***"The omitted-instance search cuts one way only. I found instance (1) because the Casebook's
+> paragraph NUMBERS its instances, so the count was checkable. A Situation that stated four instances in
+> unnumbered prose, or a rule whose second paragraph carried the exception, would have passed me exactly
+> as the 'two cases' count nearly did — and I only counted because your brief told me to read past the
+> closing mark."***
+
+🔴 **OPEN ROW: sweep the corpus for CLOSED COUNTS over an UNNUMBERED source enumeration.** Numbered ones
+are checkable and this one was caught; unnumbered ones have no net at all.
+
+### ✅ INSTANCE (1) IS NOT ABSENT FROM THE CORPUS — BUT IT DOES NOT REACH A LISTENER IN TIME
+
+Quoted verbatim later in the **same line 666**, in a §7 facts line at `:1107`, and in §7 body at
+`:1117`. ⚠️ **Rendered, the false *"two"* is chunk 085 and instance (1) is chunk 087 — the two-chunk
+distance this repository has already ruled *"unreachable at the moment of instruction."*** **A
+correction three paragraphs away is a reader's comfort and a listener's absence.**
+
+### ⚠️ FOUR MORE WRONG COORDINATOR PREMISES, AND TWO WERE ABOUT THE AGENT'S OWN WORK
+
+1. *"the agent split one 355-char line into two (259 and 295)"* — ⚠️ **there was no split.** Pure
+   addition of two lines, no deletion; **the 355-char line never existed in HEAD.** Lengths are **259
+   and 294**. ⚠️ **The coordinator relayed an agent's own account of its work back to a reviewer as
+   fact, and it was wrong in both the operation and the figure.**
+2. *"`matchpenalt` is 0 in all THREE IIHF extractions"* — ⚠️ **there are EIGHT** (`iihf_rules.txt`,
+   `_v1.0`, `_v1.1`, `_2026-27`, `iihf_situations` ×3, `iihf_coachdev_off_tactics`). **All eight score
+   0, so the conclusion holds** — ⚠️ **but a sweep sized to three leaves five unchecked, which is this
+   file's own *"you checked four books and the directory holds more"* defect one level down, committed
+   by the coordinator inside the warning against it.**
+3. *"the file's own answer at `:586` and `:1775`"* — ⚠️ **`:586` is the HEADING (the answer is the facts
+   line at `:589`) and `:1775` IS NOT A CARRIER AT ALL** — it is about late hits and Rule 640's
+   adult-male exception. The real second carrier is **KT6 at `:1894`**. ⚠️ ***"An agent that had checked
+   only the two places you named would have found one of them irrelevant and might have reported the
+   argument unsupported."*** **A brief that names the wrong owner manufactures a false negative — the
+   routing failure, for the third time this week.**
+4. *"two new sentences in the body"* — each insert is **four sentences inside one bolded run**.
+
+### ✅ EVERYTHING ELSE UPHELD, AND THE LIST IS WORTH KEEPING
+
+Disjunction preserved at all three sites with **no match penalty stated as mandatory**; **eight
+quotations verbatim, read past every closing mark, no terminal period added inside a quote mark**;
+`[t]`/`[i]`/`[u]` are the disclosed-insertion convention; **no 604 clause needed and nothing licensed**
+— both new facts lines are pure tariff with no permissive limb; **no IIHF match penalty anywhere in the
+file** — all ten collocations are *"writes no match penalty"*; **no book count widened**, verified by
+reconstructing HEAD's line and diffing it against the new line minus the insert, exact match on both;
+**both facts lines survive voiced alone**; **the British scope limb true of the editions on disk**
+(`ihuk_wnihl_roc.txt` adopts the IIHF book, `eiha_inhouse_2026-27.txt` adopts v1.1, no In-House
+amendment to Rule 48 surfaced).
+
+### ⚠️ TWO NON-BLOCKING MINORS LEFT KNOWINGLY
+
+1. **PWHL 48.4's discretionary match penalty is unstated.** The sentence claims a **floor**, not a
+   ceiling, so it is not a false closed enumeration. **Understates a harsher tier.**
+2. **The Situation's fourth paragraph** — 608(c)'s mandatory match penalty — leaves that subset's
+   choice-removal unstated in the insert, **but 608(c) is stated in the sentence-region immediately
+   before it and lands in the same rendered chunk 085.**
+
+### 🔴 STANDING RISK RECORDED BY THE REVIEWER
+
+**The §6 checking-from-behind facts block is now at exactly `HARD_MAX` = 14.** ⚠️ **The next `Rule:`
+line anyone wants there will fail the gate — and the recorded failure at that boundary is a mandatory
+give-ground duty EVICTED from a `Rule:` line into a `Technique:` line, losing its rule number and its
+penalty.** ✅ **Which is why the repair goes in the existing BODY sentence with a pointer to §7, where
+instance (1) already lives as a facts line.** **Second block in this file at `HARD_MAX`; the four-fouls
+block is the other.**
+
+## ✅ THE ACT SWEPT ACROSS PWHL, USA HOCKEY CASEBOOK AND CARHA — AND BOTH DECLARED WEAK NEGATIVES TESTED AND HELD
+
+**26 September 2026.** The two questions an agent declared it had not asked — *"what ELSE does the PWHL
+use to reach head contact"* and *"is Casebook 608 Situation 1 the whole answer"* — were answered by a
+`rules-verifier` briefed on **the ACT, never a rule number.** `ls sources/*.txt` = **42**.
+
+✅ **The corpus's new PWHL sentence is ACCURATE.** *"There an illegal check to the head is called as an
+ejection, not as two minutes"* is what 48.2 + 48.5 produce, corroborated by the book's own Reference
+Table 5 (`Illegal Check to the Head  Rule 48  [AUTO GM]`). **Two incompletenesses, both away from the
+safety direction.**
+
+### ✅ THE COORDINATOR TESTED BOTH DECLARED WEAKEST NEGATIVES. BOTH HELD — RECORD THIS, IT IS RARE
+
+⚠️ **This file records twice this week that a declared weakest negative WAS the next defect. Here it was
+not, and that is worth as much** — it means the declaration mechanism produces testable claims, not
+just hedges.
+
+1. *"I reported that PWHL Rule 48 is absent from the Physical Infractions Category. That is a TRUE
+   negative and I stopped. If **Table 8** or 23.1–23.5 carries Rule 48, my finding is false."*
+   ✅ **Tested. It HOLDS.** `pwhl_rules_layout.txt:2419-2427` — the Physical Infractions Category lists
+   **nine** rules: Boarding 41, Body Checking 52, Charging 42, **Checking from Behind 43**, Clipping 44,
+   Elbowing 45, Head-butting 47, Interference 57, Kneeing 50. **Rule 48 is not among them.**
+   ⚠️ **Table 8 does NOT falsify it and the distinction matters:** Table 8 is a *"Summary of Game
+   Misconduct Penalties"* — a list of which rules CARRY a GM — and it does list **(xiii) Illegal Check
+   to the Head — Rule 48.5** (`:7440`). **The accumulation category is a separate, narrower list.**
+   ✅ **So: an ICTH ejection carries a game misconduct but does NOT feed the two-GM automatic-suspension
+   ladder, where a checking-from-behind ejection does.** Only Rule 28's discretionary supplementary
+   discipline reaches it.
+2. *"CARHA's **Examples of Minor Penalties** section I never opened — a list of examples is precisely
+   where a cheaper characterisation of a check from behind could live, under no rule number."*
+   ✅ **Tested. It HOLDS, and for a reason worth writing down: that section characterises NO ACT AT
+   ALL.** `carha.txt:1947` — it is a **coincident-penalty CLOCK ARITHMETIC** worked-example set
+   (*"Team 'A' No. 6 – 2 min. at 4:00 … Team 'B' scores at 2:30 … Team 'A' No. 6 returns"*), twenty-odd
+   numbered timing puzzles. **There is no act in it to price cheaply.** ⚠️ **A section title can name a
+   penalty class and contain no rule content — so "I did not open it" was the right worry and the wrong
+   target.**
+
+### 🔴 THE TWO REAL INCOMPLETENESSES IN THE NEW PWHL SENTENCE
+
+1. **PWHL 48.4 is the way UP and is unstated.** `pwhl_rules.txt:4891-4895` — *"The Referee(s), at their
+   discretion, may assess a match penalty if, in their judgment, the player attempted to or deliberately
+   injured her opponent with an illegal check to the head."* **The corpus gives 48.3 as the way down and
+   names no ceiling.** Direction: understates a harsher tier. **43.4 is the identical shape for checking
+   from behind** (`:4518-4520`).
+2. 🔴🔴 **THE ONE PLACE A READER COULD OVER-CREDIT THE PWHL — AND THE DOCUMENT ALREADY HANDLES IT FOR
+   THE OTHER BOOKS.** `body_contact_and_battles.md:41` says *"Where a book does soften it, that
+   softening is written into its boarding rule."* ⚠️ **The PWHL belongs in that sentence's scope and is
+   not named there.** **41.2 boarding and 42.2 charging are *"at their discretion, may assess a MINOR
+   penalty, based on the degree of violence"*** (`:4438`, `:4477`), and **each rule's head-injury game
+   misconduct attaches only to a MAJOR** (41.5, 42.5). ⚠️ **So in the PWHL a hit that drives a
+   defenceless opponent's head into the boards is reachable at a bare minor if the referee calls
+   boarding rather than 43 or 48 — and a reader told the PWHL floor for a hit to the HEAD is an ejection
+   may infer the same about a hit to the BOARDS.** **Safety-bearing. Hand to `safety-reviewer`.**
+3. **Cross-checking 60.2 is a minor, and the PWHL prints NO instruction against substituting a lesser
+   rule** — where **43.3 names cross-checking as a checking-from-behind act** and **43.2 forecloses a
+   minor for it**. ⚠️ **CARHA is the only book on disk that closes that door in terms (see below).**
+4. **Roughing 51 is a route to the head whose floor is two minutes** — 51.1 defines it as a motion
+   *"normally directed at the head or face of an opponent"*, 51.2 is a minor, and **none of its
+   escalations follow the head** (51.3's major is hair-pulling, biting, facemask; 51.4's match penalty is
+   scoped to a goalkeeper's blocking glove). **A punch to the head is cheaper in the PWHL than a check
+   to it.**
+5. **Rule 47 head-butting is priced ABOVE Rule 48 and has no minor route at all** — 47.2 *"shall"* major
+   for head-butting **or attempting to**, 47.3 *"shall"* match penalty on injury, **mandatory, and no
+   48.3-style video-review reduction exists.** **A player who leads with her own head is priced above
+   one who picks the opponent's.**
+6. **Rule 21.1 is a general match-penalty overlay** — *"deliberately attempts to injure or who
+   deliberately injures an opponent **in any manner**"* — and **21.2 adds automatic suspension until the
+   Hockey Operations Officer rules.** **46.14** is a mandatory match penalty for a sucker punch causing
+   injury.
+
+### ⚠️⚠️ AN EXTRACTION TRAP THAT MANUFACTURES A FALSE MANDATORY MATCH PENALTY — RECORDED IN `sources/README.md`
+
+`pwhl_rules_layout.txt:7372` and `pwhl_rules.txt:8456` both print, **with no leading asterisk**:
+`NOTE – match penalty must be assessed when injury results`. ⚠️ **Read as unqualified that makes a match
+penalty MANDATORY ON INJURY for all twenty of Table 6's rows, including ICTH and checking from behind —
+flatly contradicting 43.4's and 48.4's *"at their discretion."*** ✅ **It is a FOOTNOTE. The NHL prints
+the identical line WITH the key** — `nhl_rules_layout.txt:8265`, `* NOTE - match penalty must be
+assessed when injury results` — **and the PWHL's asterisked rows are exactly the NHL's set.** **ICTH
+(xiii) and Checking from behind (vi) carry no asterisk.** **Both PWHL extractions lost the asterisk on
+the NOTE line only.** ⚠️ **Unconfirmed in the PDF — render p147 with `pdftoppm` to close it.**
+
+### 🔴 USA HOCKEY: CASEBOOK 608 SITUATION 1 IS NOT THE WHOLE ANSWER — AND TWO ROUTES ARE CHEAPER
+
+**Rule 608 has exactly one Situation. Six other Casebook rulings and two Playing Rules reach the act.**
+
+**Adds a trigger.** **Casebook 603 Boarding, Situation 3** (`usah_casebook.txt:11266-11276`): a trip from
+behind at the bottom of the end-zone circle that crashes an opponent into the end boards **is
+boarding** — *"the boarding call is preferred to draw attention to the more aggressive infraction."*
+**603(a)'s floor is minor plus misconduct, the same rung as 608(a).** **Casebook 621 Situation 1**: a
+stick to the head area **during a check** routes to the **Head Contact** rule, not 621.
+
+🔴 **Removes a trigger — the cheaper direction, twice.**
+- **Casebook 620 Head Contact, Situation 2** (`:13839-13847`): accidental head contact while two fallen
+  players get up **is NOT penalised**, *"provided the action was in the normal course of play and there
+  was not excessive force."* ⚠️⚠️ **This sits in visible tension with Situation 1 TWENTY LINES ABOVE,
+  which says *"The only thing that matters is whether there was contact made to the head, face or neck
+  of the opponent with any part of the body or equipment."*** 🔴 **OPEN ROW, AND IT IS A CLAIM NOT A
+  LINE: the corpus asserts *"620 reaches any contact to the head"* at `:41` and `:609` and possibly in
+  the facts block and Key Takeaways. Situation 2's carve-out reaches ALL of them.** **Brief the claim,
+  every layer, with the carrier list found rather than supplied.**
+- **Casebook 609 Cross-Checking, Situation 2** (`:11822-11829`): stick contact to the back of a player
+  shielding the puck, *"but not use enough force to be considered a check from behind"*, **is
+  cross-checking** — a **plain minor** under 609(a), **below 608(a)'s minor-plus-misconduct floor and
+  below every rung Situation 1 enumerates.**
+
+**Prices it elsewhere.** **602(a)** is a general match penalty for reckless endangerment *"or attempts
+to injure"*, and with the Glossary redefinition it needs **no injury and no intent** — *"then the match
+penalty MUST be assessed."* **411(a)** feeds a progressive-suspension ladder from a third major across
+608, 620 and eight other rules. ⚠️⚠️ **AND COUNTER-INTUITIVELY, Casebook 411 Situation 2
+(`:7952-7963`): a MATCH penalty for reckless endangerment does NOT count toward that ladder** — *"Since
+a match penalty already requires additional suspension or a hearing, it would not count."* **Worse
+tonight, and it does not feed the ladder.** **409(b) Situation 6:** a goal by the non-offending team on a
+delayed minor-plus-misconduct for checking from behind **terminates the minor**. **503(e) Situations
+9-10:** a check from behind is an *"injury potential penalty"*, so a **Linesperson may report it behind
+the play.**
+
+⚠️ **`dangerzone` flattened scores 0 in `usah.txt` and 1 in `usah_casebook.txt`.** Situation 1's
+operational geography — *"the 'danger zone,' which is the area approximately ten feet out from the
+boards"* — **exists only in the Casebook volume.** **A verifier working from `usah.txt` alone reports it
+absent.**
+
+⚠️ **Standard of Play Situations 19 and 22 REPRINT the boarding and head-contact rulings under a second
+numbering, and Situation 22 carries NO `Rule Reference` line at all.** **A bare "Situation 22" citation
+in this corpus is ambiguous between the two series.**
+
+### 🔴🔴 CARHA IS THE LARGEST FINDING, AND IT RUNS BOTH WAYS
+
+✅ **CARHA is the ONLY book on disk that forecloses the cheap substitution in terms.** **53(b) Note**,
+`carha.txt:2593-2596`: *"Referees are instructed not to substitute other penalties when a player is
+checked from behind in any manner. This rule must be strictly enforced."* And **53(b) is a MANDATORY
+match penalty** — *"shall be assessed"* — while **53(a)** makes major plus game misconduct mandatory on
+injury.
+
+⚠️ **A SCOPE POINT THAT IS NOT IN 53(a), AND IT IS THE DEFINITION THAT FIXES IT.** CARHA's own
+definition of Checking From Behind (`:258-261`) is *"intentionally pushed, body checked, **high-sticked,
+cross-checked**, or hit in any manner from behind"* — **broader than 53(a)'s enumerated three**
+(*"pushes, body checks, or hits"*). 53(b) restores the full list. ⚠️ ***"A reader who reads only 53(a)
+will think a cross-check from behind in open ice is outside the rule."***
+
+🔴 **THREE CARHA MAJOR-FLOOR RULES THAT ANY "CARHA IS SIMILAR" SENTENCE UNDERSTATES BY TWO TIERS —
+NOT YET AUDITED IN THE CORPUS:**
+- **62(b)** — *"accidentally or intentionally contacts an opponent above the normal height of the
+  opponent's shoulders with a high stick shall be assessed a **Major** penalty, whether or not injury
+  results."* **The NHL and IIHF price that as a minor or double minor.**
+- **54(b)** — a cross-check above the shoulders is **major plus game misconduct, *"whether or not injury
+  results."***
+- **48(b)** — *"Players who engage in head-butting shall be assessed a **Match** penalty."* **Mandatory,
+  no major tier, no discretion.**
+
+⚠️⚠️ **AND A CARHA ESCALATION WITH NO EQUIVALENT ANYWHERE: 49(b)** (`:2457-2463`) — *"In the event that
+a player, by committing an infraction of the rules, causes an opponent to collide with the boards, the
+Minor penalty normally assessed under the rules **will be waived and a Double Minor penalty shall be
+assessed**."* **Mandatory, attached to ANY infraction that puts an opponent into the boards** — CARHA's
+structural equivalent of Casebook 603 Situation 3 and stronger than it.
+
+⚠️ **A CARHA CONTRADICTION EIGHTEEN LINES APART.** **50(a)** makes **accidental** head/face/neck contact
+a **Minor**; **49(c)** says *"Where, in the opinion of the Referee, accidental contact has taken place,
+**no penalty** shall be assessed."* **50 is the more specific rule and its (a) clause is explicit about
+accident, so 50(a) governs** — ⚠️ **but a reader who finds 49(c) first concludes the opposite.**
+**CARHA is also the only book on disk that penalises purely accidental head contact at all.**
+
+Also: **48(a)** mandatory match for deliberate injury *"in any manner"*; **48(e)** helmet or facial
+protector as a weapon; **48(h)** slash, high stick or cross-check; **49(a)** mandatory major on injury
+from intentional body contact; **52(a)** mandatory major plus GM on injury from a charge, with the Note
+making **more than two strides** a charge; **52(b)**'s second limb general, not goalkeeper-specific;
+**56(b)** mandatory major for injuring by elbowing or kneeing; **62(c)** match penalty; **59(c)**'s
+generic *"unnecessary rough play"* minor, **barred for checking from behind by 53's Note**; **86(d)** and
+**80(c)** a penalty shot for fouling from behind on a breakaway.
+
+### ⚠️ A DATING TRAP REPRODUCED LIVE, EXACTLY AS `sources/README.md` WARNS
+
+`pwhl_rules.txt:4474` prints **`PWHL Official Rule Book 2024 – 2025`** — **on the Rule 42 Charging
+page** — and `:5509` the same on the Rule 60 Cross-checking page. **Publisher's stale furniture. Take
+the edition from the title page.**
+
+### 🔴 DECLARED NOT REACHED — THIS IS THE NEXT BRIEF, NOT A CAVEAT
+
+- **Hockey Canada, the IIHF and the In-House Rules were NOT searched for an alternative route to either
+  act** — none of `hc.txt`, `iihf_rules_v1.1.txt`, `iihf_situations_v1.1.txt`, `eiha_inhouse_2026-27.txt`
+  or `eihl_casebook.txt`. ⚠️ ***"The EIHL Casebook is SUPERSEDING, not supplementary, so a British
+  checking-from-behind or head-contact claim sourced to the IIHF alone is unverified until it is
+  checked."*** **That is the British reader, i.e. this corpus's primary audience.**
+- **PWHL 43.3 cross-references *"Rule 45.5 – Game Misconduct"*** (`:4517`). **Rule 45 is Elbowing; 45.5
+  exists and is a real GM clause, so the citation resolves to the WRONG rule. 43.5 is what is meant.**
+  **Book error or extraction error, undetermined — same species as the USA Hockey 610-lettering defect
+  already in `sources/README.md`.**
+- The NHL 48.3/48.4/48.5 quotations at `:609` are unverified by this sweep.
+- **PWHL Rule 57 Interference and Rule 44 Clipping** beyond their Table 5 rows.
+
+⚠️ **And the method's own limit, which found a real thing:** *"Grep finds rules that NAME the act. It
+cannot find a rule that reaches the act through a CONSEQUENCE — a suspension schedule, an accumulation
+ladder, a roster regulation. I found PWHL 23.6's exclusion of Rule 48 only because I happened to read
+the category list while checking a cross-reference."*
+
+## ✅ THE FALSE COUNT REPAIRED — AND THE REPAIR FOUND AN **ORDINAL** DEFECT THE SKETCH AND THE RELAY BOTH MISSED
+
+**26 September 2026, `content/technique/body_contact_and_battles.md:666`.** *"names two cases"* →
+*"names three instances"*, with instance (1) stated inline.
+
+### ⚠️⚠️ THE ORDINAL, AND IT IS THE MOST VALUABLE THING IN THE ROUND
+
+The closing clause read *"a forechecker … is inside **the second of them**, wall or no wall."*
+⚠️ **Putting instance (1) back into the list moves reckless-endangerment from SECOND to THIRD.** The
+agent changed it to *"the third of them"* — **and neither the reviewer's sketch nor the coordinator's
+relay mentioned the ordinal at all.** Its words:
+
+> ***"A repair that only changed the numeral would have left a sentence pointing a forechecker at
+> instance (2), head-first-into-the-boards — a WALL-DEPENDENT instance — in the clause whose whole
+> purpose is to say the wall is not needed."***
+
+⚠️⚠️ **THAT IS THE PERMISSIVE DIRECTION, MANUFACTURED BY THE FIX, INSIDE ONE SENTENCE.** ✅ **It is this
+file's *"fixing one layer can make another false"* shape at its smallest possible scale — not across
+layers, not across paragraphs, but between two clauses of the sentence being repaired.** **A count and
+an ordinal in one sentence are ONE claim, and changing the count silently re-points the ordinal.**
+**Nothing mechanical can see it. No reviewer named it. Only the agent that rewrote the sentence did.**
+
+### ✅ IT REFUSED THE SKETCH'S FORWARD POINTER, FOR A REASON MEASURED RATHER THAN ASSERTED
+
+The sketch said *"and — set out below — where a player forcefully checks…"* ⚠️ **Instance (1) is TWO
+CHUNKS downstream when spoken, and this repository has already ruled a forward pointer *"a pointer a
+listener can act on only after the fact."*** ✅ **It stated instance (1) INLINE, in prose, in the book's
+own order (1)(2)(3)** — closing the chunk rather than pointing out of it.
+
+**Instance (1) went in as a PROSE PARAPHRASE, not a fourth verbatim quotation**, because it is already
+quoted verbatim three times in the file and *"a fourth restatement is one more place for a correction to
+fail to reach."* **The lead quotation *"must be called"* governs all three limbs.** ⚠️ **A paraphrase
+has no characters to compare, so `check_quote_drift` is blind to it by construction — dispatched to a
+`safety-reviewer` for exactly that reason.**
+
+### ✅ A SECOND EDIT FOUND BY THE RENDERER, NOT BY REVIEW
+
+The first render opened chunk **086** on a bare *"So in all three the referee's choice is…"* — **a
+demonstrative whose antecedent sat in the previous chunk.** Changed to *"So in each of those three
+**checks from behind** the referee's choice…"*. ⚠️ **The agent then named its own exposure: *"Every
+other sentence I wrote today has the same exposure and I measured only the probes I thought to name."***
+**Invisible in the markdown and in the HTML. Only the SSML showed it.**
+
+### ✅ CHUNK DISTANCE, MEASURED BEFORE AND AFTER
+
+| probe | chunk |
+|---|---|
+| the count, *"names three instances…"* | **085** |
+| instance **(1)**, in prose | **085** |
+| instances **(2)** and **(3)**, quoted | **083** and **085** |
+
+**Distance 0, where it was 2 before (count 085, instance (1) 087).** ✅ **And a bonus nobody predicted:
+the two new facts lines carry instances (2) and (3) with *"must be called"* in chunk 083, TWO CHUNKS
+EARLIER than the body — the extraction layer reaches a listener before the body does.** **Chunk 085 read
+whole: it ends on the three-instance enumeration, carrying the count, the modality and all three
+instances, with the paragraph's spoken `"Important."` on it.**
+
+### ✅ THE AGENT'S DECLARED HIGHEST-VALUE GAP — SETTLED BY THE COORDINATOR, AND THE CLAIM HOLDS
+
+> ***"The PWHL insert says 'ONE BOOK makes an ejection the floor'. I verified that against the five books
+> enumerated in that paragraph, but CARHA IS NOT IN THAT PARAGRAPH… If CARHA's head-contact rule also
+> floors at an ejection, 'one book' is the same defect class I just repaired, in the same diff, in the
+> direction that reads as thoroughness."***
+
+✅ **Checked in `carha.txt` directly. It does not, so the claim HOLDS.** CARHA **Rule 50 Head Contact**:
+**(a)** *"A Minor penalty shall be assessed to any player who **accidentally** contacts an opponent in
+the head, face or neck with any part of the player's body or equipment other than a stick"*; **(b)** *"A
+Double Minor penalty or a Major penalty and a Game Misconduct penalty, **at the discretion of the
+Referee** and based on the degree of violence of impact"* for intentional contact. **No mandatory
+ejection anywhere in Rule 50. CARHA's floor is a MINOR.**
+
+⚠️ **And Rule 50's opening Note routes a whole class OUT of the rule: *"If a stick is used on contact
+this infraction falls under Rule 62 – High Sticks."*** **Which is why CARHA 62(b)'s MAJOR floor for a
+stick above the shoulders *"whether or not injury results"* matters — it is CARHA's head-contact answer
+whenever a stick is involved, and it is two tiers above the NHL's and the IIHF's.**
+
+### ⚠️ THE MECHANISM OF THE ORIGINAL DEFECT, NAMED BY THE AGENT AGAINST ITSELF
+
+> ***"I derived the body's opener from the TWO TRIGGERS THE BRIEF NAMED and the trailer's from the
+> Situation I had just read in full. The brief named two; the book names three; I inherited the brief's
+> framing into a NUMERAL in the layer that leads."***
+
+⚠️⚠️ **So *"a brief that names one rule produces an agent that verifies one rule"* has a sharper form:
+A BRIEF THAT NAMES TWO ITEMS PRODUCES A COUNT OF TWO.** **A count is the one thing an agent should never
+inherit from a brief, because the brief's enumeration is a description of the BRIEF, not of the book.**
+✅ **And the same agent, in the same hour, wrote the correct count into the trailer from the source. The
+evidence was in hand; the framing overrode it.**
+
+### ⚠️ MY RELAYED LINE NUMBERS WERE WRONG, AND THE AGENT SAID SO
+
+I relayed `usah_casebook.txt:11765-11775`. **The raw offset is near 614370; the flattened index of
+`mustbecalledinthefollowinginstances` is 344412.** ⚠️ **A line number in a brief is a figure like any
+other, and this is the second time in this round a brief's location was wrong while its CLAIM was
+right.** ✅ **The agent found the passage by flattening rather than by trusting the number.**
+
+### ✅ AND IT ACCEPTED ALL FOUR BRIEF CORRECTIONS, MAKING ONE WORSE THAN I DID
+
+On the *"295"* figure: *"I had measured a draft at 306, removed a redundant `from behind` (11 chars), and
+**reported 295 by arithmetic instead of re-measuring the string I actually wrote.**"* ⚠️ **A DERIVED
+figure in a report about not deriving figures. The file measures 259 and 294.** ✅ **And on the IIHF
+count: *"my `matchpenalt` conclusion was inherited from the brief's framing, not from a sweep I sized
+myself… I should have run `ls sources/*iihf*` before accepting the number."***
+
+### 🔴 STILL OPEN AFTER THE REPAIR
+
+1. **The repair is new text and is under review now** — the prose paraphrase and the changed ordinal, in
+   a paragraph about a check that breaks necks.
+2. *"I still have not asked what USA Hockey's PLAYING RULES do with instance (1) beyond 608(a)/(b)/(c),
+   nor whether a second Casebook Situation under 604 or 603 prices the same act."* ⚠️ **Partly answered
+   by the act sweep the same round — Casebook 603 Situation 3 prices a trip from behind into the boards
+   as BOARDING and calls it the preferred call — but not closed.**
+
+## 🔴🔴 THE ADVERB CENSUS — THE PREMISE WAS REFUTED, AND THERE ARE **11 CONFIRMED PERMISSIVE DEFECTS IN 7 FILES**
+
+**26 September 2026, report-only census, layer-aware, all 39 documents.** ⚠️ **This plan asserted a
+Hockey Canada *"house form"* of the double adverb. THERE IS NO HOUSE FORM — THERE ARE FOUR FORMS, and a
+sweep built on the premise would have damaged more sites than it repaired.**
+
+### ⚠️ THE FOUR FORMS, VERIFIED IN `hc.txt` (Hockey Canada Playing Rules 2026-2028)
+
+- **Form A — double adverb, *"deliberately attempts to or deliberately injures"***: **7.1(c)**, **7.2(c)**,
+  **7.3(c)**, and **7.5(c)'s SECOND paragraph**.
+- **Form A′ — double adverb, DIFFERENT WORD ORDER**: **9.3(c)** is *"deliberately attempts to injure or
+  deliberately injures"* — **not** the 7.2/7.3 order this plan implied. **9.4(c)** doubles the adverb on
+  the **act**, not on injury.
+- **Form B — SINGLE adverb, and a one-adverb paraphrase of these is CORRECT**: **7.6(c)**, 8.3(c),
+  8.4(c), **8.5(c)**, 8.7(c), 9.2(c), 10.5(c) — all *"attempts to injure or deliberately injures"*.
+- **Form C — the ATTEMPT limb only**: 7.4(c), 7.7(c), 7.8(c), 7.9(c).
+
+⚠️⚠️ **AND 7.5(c) IS TWO PARAGRAPHS WHERE ONLY THE SECOND CARRIES ANY ADVERB.** The first — the
+boards/goal-frame limb — has **none**: *"who pushes, body-checks, cross-checks, or hits an opposing
+player in any manner from behind into the boards or goal frame…"* ✅ **So a paraphrase of the FIRST
+paragraph carrying no adverb is CORRECT, and an adverb-count sweep would have flagged it.**
+
+⚠️ **7.6(c) sits ONE RULE from 7.5(c) and is deliberately narrower on one limb and wider on the other.**
+**`rules_primer.md:438` states that contrast correctly and touching it would destroy a true finding.**
+
+### ⚠️ TWO BOOKS THE BRIEF NEVER NAMED, AND ONE OF THEM OWNS THE LARGEST CLUSTER
+
+- **NHL 21.1 is Form A** (double); **NHL 48.5 / 53.6 / 60.4 are SINGLE** — **nine corpus sites quote
+  those correctly with one adverb and a naive sweep would have damaged all nine.**
+- 🔴 **CARHA 62(c) is Form A′ DOUBLE** — *"deliberately attempts to injure or deliberately injures an
+  opponent with a high stick"* — **and the brief did not name CARHA at all. It produces FIVE of the
+  eleven defects.** Also double: 49(h), 54(d), 80(d). **48(a) is SINGLE and the corpus quotes it right.**
+
+### 🔴 THE ELEVEN, ALL PARAPHRASES, ALL PERMISSIVE
+
+**Hockey Canada 7.5(c) second paragraph:** `defending_the_rush.md:299` (facts, **voiced alone**) ·
+`:899` (Common Mistakes) · `offensive_zone_play.md:711` (facts, **voiced alone**) ·
+`special_teams.md:1264` (Sources trailer — ⚠️ **this one DROPS the *"deliberately injures"* limb
+entirely**, so a reader who injured without attempting reads himself OUT of the rule).
+
+🔴🔴 **THE WORST SITE IN THE CENSUS — `defending_the_rush.md:385`, facts, voiced alone:**
+*"7.3(c) a Match penalty for **deliberately attempting or CAUSING INJURY**"*. ⚠️⚠️ ***"Causing injury"*
+is STRICT CAUSATION.** **It tells a listener — in a line with a 300 ms break either side — that ANY body
+check that injures is a match penalty. 7.3(c) requires the injury to be DELIBERATE.** ⚠️ **7.3(c) is the
+body-checking rule, so the listener is a U13 or female-hockey player being told an ACCIDENTAL injurious
+check ejects him.** ✅ ***"A correctly-cited rule is not a safely-taught one here."***
+
+**CARHA 62(c), five sites:** `rules_primer.md:972` (body) · `offensive_zone_play.md:1169` (**Key
+Takeaways**) · `passing_and_receiving.md:792` (Common Mistakes) · `shooting.md:174` (body) · `:963`
+(**Key Takeaways**).
+
+**NHL 21.1:** `body_contact_and_battles.md:1528` (facts, voiced alone) — ⚠️ **read from
+`git show HEAD:` because the file was CONTENDED; must be re-read from the working tree.**
+
+### ⚠️⚠️ TWO LAYER-TEST FAILURES INSIDE ONE FILE EACH — THE RECORDED SHAPE, TWICE
+
+- **`defending_the_rush.md`: the BODY at `:648` and `:987` states 7.5(c) CORRECTLY with both adverbs, and
+  the facts block and Common Mistakes do not.** **Body ✓, block ✗, Common Mistakes ✗, one file.**
+- **`passing_and_receiving.md`: BODY at `:442` correct, Common Mistakes at `:792` not.**
+- **`shooting.md` fails at BOTH body and Key Takeaways**, so it needs both.
+
+✅ **`winger.md:652` and `:755` are CORRECT** — the repaired pair from the recent commit. **That
+propagation worked.**
+
+### ✅ NO QUOTE DRIFT IN THE FAMILY — 159 HITS CHECKED
+
+**Every site presenting the phrase inside quotation marks carries its source's adverb count.** ⚠️ **All
+eleven defects are PARAPHRASES, outside quotation marks — invisible to `check_quote_drift` by
+construction.**
+
+### 🔴 AN ADJACENT FINDING IN THE CAPTION LAYER, OF THE *OTHER* CLASS
+
+**`site/src/diagrams/body_contact_and_battles.mjs:537`** paraphrases **only 7.5(c)'s FIRST paragraph**
+and never mentions the second. **Adverb-clean, so not this class — but it is the *second-paragraph
+missing* class of the recent seventeen-site commit, in the CAPTION layer.** ⚠️ **The caption text is a
+SHARED STRING in that module**, so editing it rewrites every caption importing it — check
+`grep -ln` first.
+
+### ⚠️⚠️ THE CENSUS'S OWN WEAKEST NEGATIVE, AND IT NAMED THE `kickshot` MISTAKE AGAINST ITSELF
+
+> ***"'The diagram-caption layer is clear' is a TRUE negative on the phrase family and therefore the
+> dangerous kind. I swept captions for the LABEL — attempt, injure, deliberately — exactly the mistake
+> recorded for `kickshot`. `body_contact_and_battles.mjs:537` is the proof the method is thin: it
+> discusses 7.5(c)'s match penalty at length, is spoken into the corpus, and scores zero on every adverb
+> pattern, because it paraphrases the OTHER paragraph. A caption saying 'a match penalty if he gets hurt'
+> about 7.3(c) would have scored zero too, and I would have reported the layer clear. My sweep read 14
+> flattened counts. It did not read the captions."***
+
+🔴 **OPEN ROW — sweep the captions for the ACT** (`matchpenalty`, `eject`, `frombehind`, `bodycheck`,
+`highstick`, `hurt`, `injur`), **read every hit with context**, and cross-check with
+`check_caption_hosts.py --rule-like` for how many documents each caption is spoken into.
+
+### ⚠️ AND THE METHOD'S OTHER DECLARED LIMITS
+
+1. ⚠️ **A paraphrase using neither *attempt* nor *injure* scores zero in all three sweeps.** *"7.3(c)
+   ejects you if the check hurts him"* states the same defect and is invisible. **D5 is the near-miss
+   that proves it — it survived two sweeps and fell only to a RULE-NUMBER anchor, so a site naming no
+   rule number would have survived all three.**
+2. **The INVERSE defect — a HARSHER paraphrase — was not swept for at all.**
+3. **Chunk distance was asserted from the `facts` fence, not measured.** ⚠️ **Confirm with
+   `md_to_speech --only <stem> --out <own named dir>` before briefing the repair wave.**
+4. **The four contended files were read from `git show HEAD:` and ALL FOUR need re-running** after this
+   round. `rink_map.md` had zero hits in HEAD.
+
+### 🔴 SAFETY HAND-OFF
+
+**`defending_the_rush.md:385` (D5) and `:299` (D1) go to `safety-reviewer` as well as to the repair
+wave** — both ` ```facts ` lines voiced alone, both about checking from behind and body-checking in
+U13/female divisions, a match penalty and a cervical-spine mechanism.
+
+## 🔴 SESSION LIMIT, 26 September 2026 — WHAT IS DIRTY AND UNREVIEWED
+
+**A session limit killed two agents. One (the adverb census) had finished its work and delivered the
+report above; the other (a `safety-reviewer` on the closed-count repair) died having done NOTHING.**
+
+⚠️⚠️ **SO `content/technique/body_contact_and_battles.md` HOLDS UNREVIEWED NEW TEXT — a prose paraphrase
+of a mandatory Casebook trigger and a changed ORDINAL — in a paragraph about a check that breaks necks.
+IT MUST NOT BE COMMITTED UNTIL A READER HAS SEEN IT.** **C6 is unmet. Self-certification is what hid
+two majors in three sentences the last time it was skipped.**
+
+**Dirty and uncommitted, deliberately:**
+- `content/technique/body_contact_and_battles.md` — **needs `safety-reviewer` on the repair.** The
+  brief is written above under *"THE FALSE COUNT REPAIRED"*.
+- `content/foundation/language_and_glossary.md`, `content/foundation/rink_map.md` — the glyph repairs.
+  **Verified by the coordinator in built HTML (`warn-inline` present on both pages, `--bare` 5 → 1, the
+  remaining 1 being the tool's own `details.toc-inline` false positive) and no word changed** — but **no
+  independent reader, and they ride in the same tree.**
+- `site/package-lock.json` — ⚠️ **NEVER STAGE. A macOS `npm install` stripped its
+  `libc: [glibc|musl]` fields; staging would break Linux CI.** ~40 gates have now concurred.
+
+**Committed this round: `project/plans/OPEN_ITEMS.md` and `sources/README.md` only — the findings and
+the extraction traps, so nothing above is lost.** ⚠️ **No `content/` file was staged, so the hook's
+checker gate did not apply and the checkers were run by hand instead.**
