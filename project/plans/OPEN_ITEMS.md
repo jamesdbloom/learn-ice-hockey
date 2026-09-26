@@ -240,6 +240,238 @@ known renderer behaviour rather than measured — and it said so.** ⚠️ **And
 siblings in eight other documents BY GREP ONLY: *"a sibling whose SUMMARY layer narrows the claim while
 its body is correct would need the same per-layer read I gave one file, and I gave it to no other."***
 
+## ✅ THE TRAVELLING FRAGMENT SCOPED, AND THE AGENT BEAT THE REVIEWER'S SKETCH BY REMOVING THE PRONOUN
+
+**26 September 2026, `winger.md` Key Takeaway 10.** *"…and assesses it in all instances"* became
+*"…and assesses a match penalty in all instances **where** a check from behind recklessly endangers a
+vulnerable or defenseless opponent with excessive force"*. **All four of 608(c)'s conditions now travel
+into the takeaway: from behind · recklessly endangers · excessive force · vulnerable or defenseless.**
+
+⚠️⚠️ **THE AGENT DEPARTED FROM THE SAFETY REVIEWER'S SKETCH, AND ITS REASON IS THE POINT: the sketch kept
+the PRONOUN — *"…with excessive force **it** assesses a match penalty"* — and a wandering pronoun in a
+voiced-alone layer IS THE DEFECT CLASS BEING REPAIRED.** ✅ **It made 608(c) the subject throughout and
+attached the condition as a `where` clause, so there is no pronoun left to wander at all.**
+✅ **It also re-punctuated with semicolons, because the new clause carries its own comma and commas could
+no longer delimit the three book clauses.**
+
+⚠️ **Sixth supplied wording refused or improved this session — two the coordinator's, two the reviewer
+that found the defect, and two sketches improved on rather than pasted.**
+
+✅ **And the book confirms the diagnosis precisely: 608's floor is a MINOR PLUS A MISCONDUCT (608(a)), and
+*"in all instances"* is the FREQUENCY of an already-conditioned match penalty, not a ceiling that reaches
+every check from behind.**
+
+## ✅ THE NEGATIVE NARROWED, AND IT HAD BEEN SITTING ABOVE ITS OWN PARTIAL CONTRADICTION
+
+*"Hockey Canada writes no equivalent"* → *"no such instruction"*. ✅ **Both Hockey Canada
+strict-enforcement sentences verified verbatim** — *"…strictly enforce the rules in situations such as
+the following"* and *"Only through Referees being consistent in calling this type of infraction with
+strict enforcement…"*.
+
+✅ **And CARHA's Note is TWO sentences:** *"Referees are instructed **not to substitute other penalties**
+when a player is checked from behind in any manner. **This rule must be strictly enforced.**"*
+⚠️⚠️ **So Hockey Canada has an equivalent of the SECOND sentence and none of the FIRST. *"No such
+instruction"* — whose antecedent is the substitution instruction the same clause just stated — is exactly
+true; *"no equivalent"* overreached in the direction of making Hockey Canada look laxer than it is.**
+
+✅ **The agent also noticed the old wording sat DIRECTLY ABOVE ITS OWN PARTIAL CONTRADICTION: the next
+line affirms 7.5(c) runs to a second paragraph.** **The narrowed negative now agrees with it.**
+
+## ✅ THE EXTENT READ, DONE PROPERLY — and it found a pre-existing amber boundary
+
+**Rendered through the plugin, reporting extents rather than asterisk counts:** no literal `**`;
+`<strong>` #3 opens at *"and the boards are not the condition:"* and closes at *"…anywhere on the ice."*
+✅ **All three citations and the quoted *"could also be assessed"* are INSIDE the bold — no attribution
+falls outside a run, and nothing renders as plain text beside bold siblings.**
+
+⚠️ **AND IT REPORTED A PRE-EXISTING BOUNDARY IT DID NOT CREATE: `<strong>` #3 is NOT inside the
+`warn-inline` wrapper** — `WARNING_TAIL_RE` bounds the wrapper at the previous run, **so the amber stops
+before the tier enumeration.** ✅ **Reaching it would need a word change or a second marker, both outside
+a scoping brief.** **This is the same open readability row already recorded: the tier enumeration is bold
+but not amber, and a skimming reader stops at the first clause.**
+
+## 🔴 ITS OWN DECLARED RESIDUAL RISK, recorded rather than dismissed
+
+> ***"The direction to watch is whether *"assesses a match penalty in all instances where…"* reads to a
+> listener as the match penalty being the ONLY tier 608 writes, when (a) and (b) sit below it."***
+
+⚠️ **Direction is HARSHER, so it does not block.** ✅ **Mitigations, both real: the text cites **608(c)**
+by sub-clause, which implies siblings; and the takeaway's own earlier clause states a floor for five of
+the six books.** ⚠️⚠️ **But USA HOCKEY IS THE EXCLUDED SIXTH, so a listener hears no USA Hockey FLOOR
+anywhere in that unit** — only its match tier. **Worth one clause if anyone is in that takeaway again.**
+
+⚠️ **And it flagged that the *"five of the six"* count is LOAD-BEARING ON THAT EXCLUSION:** USA Hockey's
+608(a) floor is a minor plus a **misconduct**, not a game misconduct, which is exactly why the count
+excludes it. ✅ **Verified; no defect — but a future edit that "corrects" five to six breaks it.**
+
+## ⚠️ Declared gaps
+**It repaired two lines and did NOT sweep the document's other layers for the same unscoped fragment** —
+*"in all instances"*, *"names no place"*, an unscoped 608(c) — in Key focus, the Overview or Common
+Mistakes. ⚠️ ***"The claim, not the line — and I only repaired two lines."*** **And USA Hockey 609(b)/(c)
+and its boarding rule reach the same act by another route, untested.**
+
+## 🔴🔴 A VERBATIM FRAGMENT TRAVELLED AND ITS SCOPING CONDITION DID NOT — the same defect, one layer over
+
+**26 September 2026, `winger.md` Key Takeaway 10, VOICED ALONE.** The modality repair carried
+USA Hockey 608(c)'s words *"in all instances"* into the takeaway. ⚠️⚠️ **The scoping clause is INSIDE the
+rule the fragment was lifted from:** *"in all instances **when** a player recklessly endangers an opponent
+from behind with excessive force while the opponent is in a vulnerable or defenseless position."*
+
+⚠️ **Voiced alone, the nearest antecedent for *"it"* is *"a match penalty"* two clauses back — so a
+listener hears EVERY check from behind as a match penalty, place irrelevant.** **608(a) prices a plain
+check at a minor plus a misconduct or a major plus a game misconduct; 608(b) at a major plus game
+misconduct.**
+
+⚠️⚠️ **THIS IS THE EXACT DEFECT THE PREVIOUS AGENT REFUSED IN THE FACTS LINE, SURVIVING ONE LAYER OVER.**
+**The facts line puts all four conditions in its SUBJECT; the takeaway has none of them.** ✅ **Direction
+is HARSHER so it does not block** — but it is CLAUDE.md's *"a qualifier that changes jobs when it moves
+between layers"*, and the mechanism here is new: **the repair did not move a qualifier, it moved a
+QUOTATION and left the qualifier behind in the book.**
+
+✅ **THE LESSON: A VERBATIM FRAGMENT IS NOT SELF-SCOPING.** ⚠️ **When lifting a phrase like *"in all
+instances"*, *"in any manner"* or *"whether or not injury results"* into a summary layer, the rule's
+*"when…"* clause must travel WITH it or be restated — the quotation marks make it look safe precisely
+because the words are the book's.**
+
+### ⚠️ And the supplied fix upheld the refused wording
+
+✅ **The safety read verified the facts-line repair: 608(c) carries exactly FOUR conditions — from
+behind, recklessly endangers, excessive force, vulnerable or defenseless — and the new subject states
+ALL FOUR.** *"Vulnerable or defenseless opponent"* for *"while the opponent is in a vulnerable or
+defenseless position"* is **compression, not relaxation.** ✅ **And it confirmed the coordinator's
+suggested bare *"costs"* would have been false in the harsher direction. The agent was right to refuse
+it.**
+
+## 🔴 A NEGATIVE THAT OVERREACHED, AND THE MISREADING IS THE PERMISSIVE ONE
+
+*"…CARHA's Note tells referees to substitute nothing cheaper, and **Hockey Canada writes no
+equivalent**."* ⚠️ **Voiced alone, after a sentence whose subject is a mandatory match penalty, that can
+be heard as *"no equivalent MATCH PENALTY"* — false and permissive, since 7.5(c) is the clause the
+sentence opened by citing.**
+
+⚠️⚠️ **AND THE NEGATIVE ITSELF OVERREACHED. Hockey Canada DOES carry a strict-enforcement instruction** —
+*"Referees should be aware of the tragic consequences of spinal injuries and **strictly enforce the
+rules**"*, and *"Only through Referees being consistent in calling this type of infraction with strict
+enforcement…"* ✅ **That is an equivalent of CARHA's SECOND Note sentence (*"This rule must be strictly
+enforced"*), not of the substitution instruction.** **So the negative is true OF SUBSTITUTION ONLY.**
+✅ **Fix: *"no such instruction"*, +4 characters, which says exactly that.**
+
+⚠️ **The substitution negative itself was VERIFIED, not accepted: ~35 `substitut*` hits in `hc.txt` are
+ALL player-substitution mechanics** — penalty bench, coincidental penalties, goaltender for skater.
+✅ **And 7.5(d) runs the other way: *"No Misconduct penalty may be assessed for a checking from behind
+infraction."***
+
+## ✅ THE EXTENT READ IS NOW THE METHOD, AND IT CAUGHT BOTH OF THIS FILE'S BOLD DEFECTS
+
+**HEAD's Key Takeaway carried 8 `**` delimiters as a NESTED pair; the tree carries 6 as three clean
+runs.** ⚠️ **Nested bold emits VALID HTML with NO literal asterisks and an EVEN count — so the literal
+scan and every checker score it clean.** ✅ **It was caught by rendering and reading WHERE `<strong>` and
+`warn-inline` begin and end.** **Verified on the artefact: literal `**` across the built site = 0, and
+the amber span now CONTAINS the mandatory attribution that had been rendering as plain text.**
+
+## ⚠️ Pre-existing and named for the record — a paragraph break the corpus reads across
+
+**`:652`, `:661` and `:755` all attribute CARHA's discretionary match to 53(a) *"anywhere on the ice"*.**
+⚠️ **That clause is 53(a)'s FIRST paragraph (the minor/major limb). The match sentence is in 53(a)'s
+SECOND, indented paragraph, whose opening is the INJURY condition.** **The corpus imports *"anywhere on
+the ice"* across the paragraph break and drops the injury context.** ✅ ***"Under this rule"* may
+genuinely reach the whole of Rule 53, so this is an AMBIGUITY IN THE SOURCE rather than a clear error,
+and the direction is HARSHER.** **Not caused by this diff; correctly labelled as discretion everywhere.**
+
+## ⚠️ The declared gap, and now the book itself supports it
+
+> ***"Hockey Canada 7.6 Head Contact says it *"supersedes any other rules"* and requires any foul causing
+> head contact to be penalised as Head Contact — it sat two pages from the text I read and I did not
+> follow it. A check from behind that contacts the head may therefore be priced by a rule this document
+> never names."***
+
+⚠️⚠️ **Combined with USA Hockey's own Standardized Discipline list grouping 608(c) with 603(c) Boarding
+and 620(c) Head Contact as Level-2 match penalties, the BOOKS THEMSELVES now group these rules.**
+✅ **That is the strongest evidence yet that the boarding-and-head-contact row is real rather than
+theoretical. EIGHT agents have named it. It is the next real work.**
+
+## 🔴🔴🔴 NESTED BOLD MADE THE *MANDATORY ATTRIBUTION* THE ONE CLAUSE THAT LOST ITS AMBER — and it emits VALID HTML
+
+**26 September 2026, `winger.md` Key Takeaway 10, PRE-EXISTING IN HEAD.** The takeaway carried a
+**NESTED** bold pair:
+
+> `⚠️ **That last one … a match penalty **Hockey Canada 7.5(c) and CARHA 53(b) make mandatory** where he goes …**`
+
+⚠️⚠️ **Markdown does not nest `**`. The inner pair CLOSED the outer run and REOPENED it, so the two book
+names and the word *mandatory* rendered as PLAIN TEXT inside an otherwise bold amber run.** ✅ **The
+mandatory attribution was the ONE clause that lost the escalation.** **Repaired by deleting the inner
+pair — no word changed.**
+
+### ⚠️⚠️ THIS IS THE BLIND SPOT THE PREVIOUS WAVE NAMED, AND IT IS NOW ADDRESSABLE
+
+The previous agent said the literal-asterisk render test *"cannot see a delimiter that pairs PLAUSIBLY
+BUT WRONGLY — it emits perfectly valid HTML and scores 0."* ⚠️ **This is exactly that: no literal `**`,
+valid HTML, every checker clean, and an even delimiter count.**
+
+✅ **IT WAS FOUND BY RENDERING AND READING THE EXTENT — not by detecting literal asterisks, and not by
+counting.** **So the method is: render the changed lines and INSPECT WHERE `<strong>` AND `warn-inline`
+ACTUALLY BEGIN AND END, then ask whether that is the extent the words require.** ⚠️ **A literal-asterisk
+scan is the cheap corpus-wide net; an extent read is what catches the rest, and only a reader can do
+it.**
+
+---
+
+## ⚠️⚠️ A FIFTH SUPPLIED WORDING WOULD HAVE SHIPPED A DEFECT — and this one was the COORDINATOR'S
+
+**My brief suggested fixing *"A check from behind **can** cost a match penalty"* by substituting bare
+*"costs"*.** ⚠️⚠️ **The agent refused it: that leaves the subject as *"A check from behind"*, so voiced
+alone it says EVERY check from behind is a match penalty — FALSE in the HARSHER direction.**
+**`usah.txt` 608(a) prices a plain check from behind at *"A minor plus a misconduct penalty, or a major
+plus a game misconduct penalty"*, and 608(b) at a major plus game misconduct.**
+
+✅ **It moved 608(c)'s three conditions into the SUBJECT, where they gate the mandatory verb, and stated
+the modality in the book's own words — *"assesses it 'in all instances', which is no discretion"*,
+mirroring the sibling line's *"which is discretion"*.** **All three `Rule:` lines in the block now
+declare modality.**
+
+⚠️ **Running total: FIVE supplied wordings refused this session, two of them the coordinator's and two
+written by the reviewer that found the defect it reproduced.** ✅ **Specify the DEFECT and the CONSTRAINT.
+The sentence belongs to whoever read the document.**
+
+---
+
+## ✅ AND THE SWEEP FOUND THE SAME MODALITY DEFECT IN THE LAYER VOICED ALONE
+
+**Key Takeaway 10 enumerated *"Hockey Canada 7.5(c) and CARHA 53(b) make mandatory"* and then said only
+*"USA Hockey 608(c) names no place at all"* — SILENT on modality where its two siblings are explicit.**
+⚠️ **That asymmetry inside one spoken unit reads as 608(c) being the soft one.** **Repaired.**
+✅ **The brief named one line; the sweep found the claim in two.**
+
+### ✅ The Hockey Canada negative was VERIFIED, not taken on the brief's word
+
+**`:650` attached CARHA's Note to both books.** ✅ **The agent read Hockey Canada Rule 7.5 in full —
+preamble, (a) through (e), and the Interpretations — and confirmed there is NO Note, no substitution
+instruction and no *"strictly enforced"* clause on any lettered limb.** ⚠️ **The nearest text is an
+unlettered preamble exhortation (*"strictly enforce the rules in situations such as the following"*),
+which is strictness, NOT a substitution bar** — ✅ **and the one clause that constrains substitution runs
+the OTHER way: 7.5(d), *"No Misconduct penalty may be assessed for a checking from behind
+infraction."*** **The repair states the negative explicitly rather than relying on a possessive a
+listener cannot re-hear.**
+
+### ✅ Two sweep shapes run, four sites each checked and left
+
+**Modality words** — three other hits, all about a **disallowed goal** rather than a penalty, all
+correctly conditional. **Book-specific Notes** — four other carriers, all already unambiguous and inside
+CARHA-only context. ✅ **Neither sweep produced damage.**
+
+### ⚠️ Its declared gaps, and the second is the standing one
+
+> ***"I swept for modality WORDS the corpus uses, not for the SHAPE. A permissive reading carried by
+> STRUCTURE — a mandatory penalty listed in a sentence whose main verb is soft, or a 'depending on'
+> construction — leaves no lexical trace."***
+
+⚠️ **And it named the density risk precisely: `winger.md` cites six books side by side in at least five
+passages it did not read, and *"those are the highest-density sites for this shape."***
+⚠️ **Plus the standing one: USA Hockey 603 Boarding, 620 Head Contact and 602(a) all reach a check from
+behind by another route — and the book's OWN Standardized Discipline list puts 608(c) alongside 603(c)
+and 620(c) as Level-2 match penalties.** ✅ **That is the strongest evidence yet that the boarding row is
+real: the book itself groups them.**
+
 ## 🔴 FOUR ROWS FROM THE GATE THAT CLEARED THE DELIMITER WAVE — two with exact sites
 
 **26 September 2026. All four were found by a commit gate reading past what it was asked to check.**
