@@ -22,6 +22,137 @@ they did not need to.**
 done?"* took three files, and **two podcast items listed as open had been fixed days earlier** with
 nobody noticing.
 
+## 🔴 OPEN ROWS CARRIED OUT OF THE 28 SEPTEMBER 2026 ROUND
+
+**The round itself is closed and recorded in
+[`round_2026-09-28_crash_recovery_and_p1p2_wave.md`](../reviews/round_2026-09-28_crash_recovery_and_p1p2_wave.md).**
+What stays here is only what is still open.
+
+### P1 / P2 — what the wave showed about the next one
+
+- 🔴 **Brief the next back-layer wave as "find the section with no kernel and the bullet with no instruction"** —
+  absence was the defect in every file. **And re-test every promoted lead as a standalone claim** (six regressions
+  this round came from re-ordering).
+- 🔴 **P1 not yet waved:** `neutral_zone_systems`, `breakouts`, `puck_support_and_spacing`, `scanning_and_anticipation`,
+  `time_and_space`, `skating`, `mental_game`, `practice_and_development`, `conditioning_and_recovery`,
+  `how_to_watch_hockey`, `getting_started`, `core_principles`, `reading_ice_hockey_diagrams`, plus the nine
+  adverb-round files (`rules_primer`, `uk_rules`, `body_contact_and_battles`, `special_teams`, `offensive_zone_play`,
+  `defending_the_rush`, `passing_and_receiving`, `shooting`, `language_and_glossary`, `rink_map`).
+- 🔴 **P2 stacks remaining** — re-run `check_callout_flow.py --stacks`; `rules_primer` §6 (11 in a row) and
+  §7, `body_contact_and_battles` §5, `special_teams` PK, `offensive_zone_play` §6, `winger` §OZ, `shooting` §Screens
+  were not in this wave.
+- ⚠️ `game_management` §Discipline is back to a stack of 5 after a real counterweight's marker was restored —
+  accepted; a merge or rewording would be new text.
+
+### Accuracy rows reported under the lane rule (none permissive unless marked)
+
+- `goaltender.md`: **CARHA 24(f) prices deliberate mask removal** (minor; penalty shot on a breakaway / last two
+  minutes / OT) — `:847`, `:864`, `:1445` say *"all five books"*. `:1445` *"a scoring chance"* → *"immediate"*.
+- `center.md` KT9 lacks USA Hockey's optional minor and the obvious-and-imminent condition (harsher).
+- `zone_entries.md` body §9 still says *"carry almost regardless"*; 49(a) cited in neither CARHA unit.
+- `forechecking_systems.md` facts `:738` harsher than USA Hockey Casebook 607 Sit. 5 (ruled acceptable).
+- `puck_handling.md` facts `:443` — the arm strength-move carve-out is PWHL 55.2 too (restrictive); KT10's NHL
+  escalation drops *"may"*; HC 7.1(b) mid-tier omitted from KT10.
+- `on_ice_communication.md` KT14 names only interference; facts `:235` lacks *"without leaning"* (CARHA 49(a)).
+- `equipment.md`: three other *"four books"* counts (helmet removal; pads under jersey; stick shaft cap).
+- `team_play_and_culture.md`: KT10 peacemaker limb omits HC Interpretation 6 (harsher).
+- `winger.md`: faceoff section frames five books; PWHL 78.7 is on disk and NHL-identical.
+- `defending_the_rush.md:383` **and `:641`** both sit at exactly 300/300 — the next edit to either fails the gate.
+- 🔴 **D13 folklore minors deferred from the 28 September commit (wording only; do in the next wave's files):**
+  `team_play_and_culture:61` *"one of the most expensive communication failures"* (unmeasured superlative; the
+  sibling names two worse things) · `zone_entries` KT12 *"most coaches want it deep and a forecheck"* (invented
+  head count; *"a forecheck"* heard as aggressive where `forechecking_systems:798` says cautious) and its three-read
+  order (body §9 has four) · `forechecking_systems` KT5 *"has most of a system"* (body: *"most of the benefit of"*;
+  *"stays high"* undefined) · `defender` KT3 *"the most expensive thing at the net front"* (superlative lost its
+  support; push geometry) · `playing_without_the_puck:878` dropped the body's *"often"* before "three or four feet" ·
+  `winger:676` and body `:123` *"a rim … resets possession"* · `game_management:1108` **(coordinator relay)** *"what
+  the analysis supports"* — the body's evidence points earlier than teams pull, not at 4–5 minutes ·
+  `equipment` KT11 *"each is stricter than it looks"* · `equipment:711` flex rounding states only one direction.
+  Also: `faceoffs:1160`/`:1227` and `game_management:1109` gendered pronouns in text women's-hockey readers hear.
+- 🔴 **For `rules-verifier`/`safety-reviewer`, found in passing (HEAD text):** `equipment:732` *"your backup goes in
+  cold"* — a goalie's minor is served by a teammate, so a broken-stick minor does not by itself put the backup in ·
+  `game_management:1174` *"two of the four books"* vs its own body `:43` naming NHL, IIHF and PWHL ·
+  `puck_handling:840` "trapping in your skates is legal in all zones" could take the crease caveat.
+- 🔴 **P2, safety-adjacent: `goaltender.md` body net-front bullet** ends on *"If you are the one being moved, in any
+  league: head up, chin off your chest."* in **plain bold** while two clauses in the same bullet are amber and the
+  identical sentence is amber in Common Mistakes — a skimming reader stops on the rules and slides past the injury
+  instruction. **Move-2 candidate (put the glyph before that strong run); needs a paragraph-level pairing check.**
+- P2, CSS: `.warn-inline` right padding (0.3em) leaves a gap before a following `;`/`,` — `site/src/styles/global.css`.
+- P2: pre-existing amber runs that open on a signpost or citation (*"⚠️ Read that…"*, *"⚠️ Rule 49(a) prices…"*,
+  goaltender's Sources trailer) on all six reviewed pages; goaltender Key focus carries amber on 2 of 10 items.
+- `body_contact_and_battles.md` Key focus `:23` (*"in five of them even the lightest call ends your game"*) and CM1
+  (*"no book here lets you off with two minutes"*) carry the recorded **HC 7.6 supersession row** into rewritten
+  text: where head contact is involved, 7.6(a)'s floor in minor and female hockey is a bare minor. Harsher; open.
+- `team_play_and_culture.md` sends readers to `rules_primer.md#talking-to-officials` for the clause-by-clause
+  version — **that section gives only the NHL/IIHF route and not the USA Hockey/HC/CARHA match** (cross-doc #5).
+- `body_contact_and_battles.md`: the USA Hockey Casebook **danger-zone paragraph is carried nowhere in the corpus**.
+- `passing_and_receiving.md:422` — a facts line voiced alone gives a CARHA reader a ceiling of major + GM where
+  62(c) reaches a match. **Permissive by omission — next wave's first repair.**
+- **CARHA 50(c)** carries the double adverb; no census has checked the other documents for it.
+- **Shared weakest negative:** a paraphrase stating a mental element without the words `injur` or `attempt`
+  (*"a match penalty if somebody gets hurt"*) scores zero in every sweep run.
+- **A checker is wanted for an ordinal referring back to an enumeration that ends a chunk** (produced two
+  cross-chunk pointers in one sentence this round).
+
+### 🔴 CROSS-DOCUMENT CLAIMS OPENED BY THIS WAVE — each is ONE claim, brief it across every document
+
+1. *"go behind your net, where an interception means nothing"* — `switching_positions.md` (being fixed)
+   and `defender.md :15, :876`.
+2. *"CARHA 52(b) while he is in his crease"* as the whole CARHA answer on goalie contact — `zone_entries.md`
+   (being fixed); siblings unswept.
+3. *"USA Hockey's floor leaves you on the ice"* for checking from behind — `body_contact_and_battles.md`
+   (fixed); `rules_primer.md`, `defender.md`, `uk_rules.md` unswept.
+5. *"Force against an official is a game misconduct"* — under USA Hockey 601(e)(1), Hockey Canada 11.5(c)(ii)
+   and CARHA 71(a) it is a **MATCH**. Fixed in `team_play_and_culture.md` at three sites; **`rules_primer.md`
+   carries the claim too** (held-out file) — brief it there as the SAME claim.
+6. *"Use your skate on the puck at the dot"* without IIHF 76.3(VI) — fixed in `faceoffs.md` at three sites
+   (one a facts line the reviewer never named); siblings unswept.
+9. ⚠️ **"No book prices a head-first push from behind at two minutes" / "five of six eject outright"** — FALSE
+   for the NHL and PWHL, whose 43.1 DEFINES checking from behind as a hit on a player unable to protect
+   themselves; an aware player's case falls to boarding 41.2 / cross-checking 59.2, where a minor exists. **The
+   round-2 reviewer's own sketch carried this into `defender.md`; the round-3 verifier caught it.** Harsher, not
+   permissive — but false in a KT voiced alone. ⚠️ **The same "five of six" frame appears in
+   `body_contact_and_battles.md` Key focus `:23` ("in five of them even the lightest call ends your game") —
+   verify its framing there: for the NHL/PWHL "the lightest call" under Rule 43 IS a major + GM, but only
+   because 43.1's definition narrows the act.**
+7. **Stick lift without puck timing** — Hockey Canada 8.2 Interp. 1 permits it *"for the purpose of making a
+   play on the puck"*; USA Hockey Casebook calls it good *"when the puck is in the vicinity"*. Found in
+   `defender.md` (sent); **`on_ice_communication.md` KT14 and `body_contact_and_battles.md` likely carry it** —
+   sweep `lift their stick` / `stick lift` corpus-wide.
+8. **Kicking-an-opponent match lists omitting CARHA 48(c)** — fixed in `on_ice_communication.md` at four sites;
+   **other documents listing the kicking match are unswept.**
+10. **Goalie broken stick / skater's stick under CARHA 51(c)** — `equipment.md` `:732` said *"five books, two
+    attach a limit"* while quoting 51(c), whose own first sentence is the limit (being fixed, with body `:383`).
+    `goaltender.md:1342` is the correct model (six books). ⚠️ **`rules_primer.md:506`/`:516` is written to its
+    declared FOUR-book frame** (*"neither of the other two books"*, *"Hockey Canada is the one book that bars it
+    in terms"*) — true of those four and silent on CARHA/PWHL, so under the lane rule a **four-book-frame row,
+    not a repair**; it belongs to the four-book workstream.
+4. **Bold-heading tariff framing is invisible to `check_instruction_first` and the ratio tool** (found in
+   `equipment.md`) — every document may carry it and score clean.
+
+### 🔴🔴 TOOL DEFECT — `check_marker_pairs.py` UNDER-COUNTS LOST SPOKEN ESCALATIONS INSIDE BLOCKQUOTES
+
+**Found by the `center.md` agent against its own pairing.** The tool keys a whole blockquote as ONE
+paragraph; **`md_to_speech` voices each inner blockquote paragraph as its own `<p>` with its own
+`"Important."`** — so a blockquote whose first inner paragraph loses its marker while a later one
+keeps it scores **no loss**. Measured: three spoken losses in `center.md`, **the tool reported one.**
+⚠️ **Direction: UNDER-reporting a lost safety escalation — the silent kind.** This wave's P2 reports
+(`goaltender`, `center`, `game_management`, `risk_management`, `faceoffs`) must have their pairing
+checked on RENDERER UNITS, not on the tool. 🔴 **Fix between waves, not during one** (agents are live
+on it now): split blockquotes on `>`-only lines the way the renderer does, and validate against a
+per-`<p>` SSML diff. **Also: the tool prints nothing and exits 0 with no path argument** — make that
+an error.
+
+✅ **THE PATTERN ACROSS SEVEN RETURNS IS UNANIMOUS: the back-layer defect is ABSENCE, NOT ORDERING.**
+Every agent refuted the rules% premise the same way — the tariff-heavy units already led; **what was
+missing was an instruction in short bullets and a KT for whole sections.** ⚠️ **So the next P1 brief
+should be "find the section with no kernel and the bullet with no instruction", not "re-order the
+tariff-heavy units".**
+
+⚠️ **Every P1 edit is new text and needs a reader before commit** (`content-reviewer` for craft,
+`safety-reviewer` where a penalty or contact limb moved). **A P2 marker move that passes the
+four-part proof in `p2_common.md` needs no reader for the move — only for re-worded units.**
+
 ## 🔴🔴 THE OFFSIDE WAVE'S OWN SAFETY PASS — three Majors, and one is the round-10 shape surviving the wave whose subject WAS that shape
 
 **Found 26 September 2026 by the `safety-reviewer` dispatched onto the twelve files that entered a
@@ -7468,18 +7599,6 @@ eligibility or protective equipment that the document does not?**
       ✅ **A Casebook Situation's own `Rule Reference` is not its scope** — Situation 5's printed
       reference is 607(d) and never mentions 604, *"which is why three consecutive readers of the
       Casebook passage never met it."*
-- [ ] 🔴🔴 **THE OWNER'S OWN WORKED EXAMPLE IS MISSING FROM THE TWO LAYERS THE OWNER'S
-      INSTRUCTION RE-AIMED.** The owner named *"**never pass the puck — or skate it — across the front
-      of your own goal**"* and, as a rule that IS a tactic, *"never put it over the glass from your
-      own zone."* ⚠⚠ **In `playing_without_the_puck.md`, NOTHING in Common Mistakes or Key Takeaways
-      tells a reader not to put the puck out of play from their own zone, for ANY book.** The facts
-      layer calls an unglamorous clear *"unambiguously correct"* and the restriction lives only in
-      that block and one body bullet.
-      ✅ **NOT the round-10 shape** — the summaries carry no contradicting permission, so nobody is
-      misled — **and NOT caused by any recent diff.** ⚠️ **But it is the re-aiming gap in miniature:
-      a rule that IS the tactic, absent from the layers a reader and a listener meet.**
-      ⚠️ **Check the same two layers in the siblings before writing anything** — this is a claim, not
-      a line.
 - [ ] ⚠️ **A 10,637-character body bullet in `playing_without_the_puck.md` — the longest in the
       document — is a SPLIT candidate.** ✅ **It already leads with its instruction, so the cheap
       re-ordering repair is DONE; the cost is the sheer distance to the bottom.** ⚠⚠ **And the

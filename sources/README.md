@@ -1991,3 +1991,71 @@ corpus's danger-zone geography unsourced.** **Grep both volumes; they are one bo
 ⚠️ **And Standard of Play Casebook Situations 19 and 22 REPRINT the boarding and head-contact rulings
 under a SECOND numbering — Situation 22 with no `Rule Reference` line at all.** **A bare "Situation 22"
 citation is ambiguous between the two series; always name the rule as well.**
+
+## ⚠️⚠️ LINE-BREAK HYPHENATION — A FALSE NEGATIVE IN **27 OF THE 42** EXTRACTIONS (28 September 2026)
+
+⚠️⚠️ **FLATTENING ON WHITESPACE ALONE IS NOT ENOUGH, AND EVERY WARNING IN THIS FILE ABOUT FLATTENING
+ASSUMED IT WAS.** These PDFs hyphenate words across a line break, so the hyphen **survives**
+`re.sub(r'\s+','',text)` and sits in the middle of the word you are searching for.
+
+**Measured, `[a-z]-\n\s*[a-z]` per file:**
+
+| file | hits | file | hits |
+|---|---|---|---|
+| `iihf_rules_v1.0.txt` | **223** | `iihf_situations.txt` | 123 |
+| `iihf_rules.txt` | **222** | `iihf_situations_v1.1.txt` | 123 |
+| `iihf_rules_v1.1.txt` | **222** | `iihf_rules_2026-27.txt` | 101 |
+| `page_1975.txt` | 158 | `usah_casebook.txt` | **71** |
+| `carha.txt` | **118** | `nhl_rules_layout.txt` | 47 |
+| `nhl_rules_2024-25_layout.txt` | 45 | `iihf_situations_2026-27.txt` | 39 |
+| `usah.txt` | **30** | `hc_layout.txt` | 26 |
+
+plus single figures in `pwhl_rules_layout.txt`, `ihuk_nihl_roc_layout.txt`, `ihuk_junior_roc_layout.txt`,
+`ihuk_wnihl_roc_layout.txt`, `iihf_coachdev_off_tactics.txt`, `bvhs.txt`, `ibc.txt`, `eih_rr.txt`,
+`eiha_inhouse.txt`, `eiha_inhouse_2026-27.txt`, `ihuk_coaching_regs_layout.txt`, `ihuk_junior_roc.txt`,
+`ukcg.txt`.
+
+✅ **`hc.txt` scores ZERO — but `hc_layout.txt` scores 26.** **So the plain and `-layout` twins differ on
+this, and a search that works in one silently fails in the other.**
+
+### ⚠️ HOW IT BIT, AND IT BIT THE COORDINATOR
+
+Verifying **CARHA 62(c)** — the shared premise under three concurrently dispatched agents — a flattened
+search for `deliberatelyattemptstoinjureordeliberatelyinjures` returned **0**. **The conclusion drawn
+from that zero was that a census's premise was refuted.** The rule read raw:
+
+```
+   (c) A Match penalty shall be assessed to any player who deliber-
+       ately attempts to injure or deliberately injures an opponent
+       with a high stick.
+```
+
+**The double adverb is there. `deliberately` is split `deliber-` / `ately`**, so the flattened text holds
+`whodeliber-atelyattemptstoinjure` and every probe containing the word misses.
+
+⚠️⚠️ **THE DIRECTION IS WHAT MAKES THIS DANGEROUS: A FALSE NEGATIVE HERE SAYS A RULE HAS ONE ADVERB
+WHERE IT HAS TWO, AND "CORRECTING" THE CORPUS TO MATCH IS A PERMISSIVE CHANGE TO A MATCH-PENALTY RULE.**
+**Three agents were mid-task on exactly that claim and were warned before any of them acted.**
+
+⚠️ **AND THE LONGEST, MOST DISTINCTIVE WORD IS THE ONE MOST LIKELY TO BE SPLIT** — which is usually the
+word the finding turns on. **This file already records preferring the LONGER fragment because it
+survives a wrap; that advice is unchanged for wraps and WRONG for hyphenation, where a longer fragment
+is MORE likely to contain the break.** **The two traps pull in opposite directions, so neither fragment
+length is safe on its own.**
+
+### ✅ THE FIX
+
+**Strip hyphen-plus-whitespace BEFORE collapsing whitespace:**
+
+```python
+flat = re.sub(r'\s+', '', re.sub(r'-\s+', '', text))
+```
+
+⚠️ **This is lossy for genuinely hyphenated compounds** (`cross-checking` at a line end becomes
+`crosschecking`), **which is usually what you want for searching and never what you want for
+quoting.** ✅ **Quote from the RAW text, always — read the rule with a Python slice and look at it.
+Flattening is for FINDING, never for QUOTING.**
+
+⚠️ **A zero from a flattened search is not an absence.** This file already says an empty extraction is
+not an absence and a zero from a LABEL is not an absence of the RULE. **This is the third member of that
+family: a zero from a WORD is not an absence of the word.**

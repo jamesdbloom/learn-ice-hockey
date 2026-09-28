@@ -4208,3 +4208,21 @@ Found only because it rendered **twice**, before and after:
 introduced in the rendering itself. Render before and after.**
 
 
+
+
+## ✅ CLOSED 28 September 2026 — the owner's over-the-glass example in `playing_without_the_puck.md`
+
+**Stale when re-tested:** CM *"Ending the pressure by putting the puck over the glass"* and KT12 *"Clear the zone off the glass, never over it"* both exist and lead with the instruction, added in `a5319dd` (24 September). The re-aiming agent re-swept the act across every book on disk and all tariffs held; it added no fourth restatement. The original row, verbatim:
+
+- [ ] 🔴🔴 **THE OWNER'S OWN WORKED EXAMPLE IS MISSING FROM THE TWO LAYERS THE OWNER'S
+      INSTRUCTION RE-AIMED.** The owner named *"**never pass the puck — or skate it — across the front
+      of your own goal**"* and, as a rule that IS a tactic, *"never put it over the glass from your
+      own zone."* ⚠⚠ **In `playing_without_the_puck.md`, NOTHING in Common Mistakes or Key Takeaways
+      tells a reader not to put the puck out of play from their own zone, for ANY book.** The facts
+      layer calls an unglamorous clear *"unambiguously correct"* and the restriction lives only in
+      that block and one body bullet.
+      ✅ **NOT the round-10 shape** — the summaries carry no contradicting permission, so nobody is
+      misled — **and NOT caused by any recent diff.** ⚠️ **But it is the re-aiming gap in miniature:
+      a rule that IS the tactic, absent from the layers a reader and a listener meet.**
+      ⚠️ **Check the same two layers in the siblings before writing anything** — this is a claim, not
+      a line.

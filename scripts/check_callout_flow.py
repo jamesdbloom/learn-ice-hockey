@@ -270,6 +270,13 @@ def _strip_nav_chrome(h):
     """
     for cls in ("toc", "sidebar"):
         h = re.sub(rf'<nav class="{cls}"[^>]*>.*?</nav>', "", h, flags=re.S)
+    # ⚠️ A THIRD shadow, found 26 September 2026 and missed when this function was
+    # written: the IN-PAGE contents mirror is a `<details class="toc-inline">`, not a
+    # `<nav>`, so the two lines above walked straight past it. It cost a whole agent
+    # dispatch -- `--bare` reported a hit on a page whose only glyph was this mirror of
+    # a heading that renders as a full amber panel in the body. Direction is
+    # OVER-reporting, which reads as thoroughness and so goes unquestioned.
+    h = re.sub(r'<details class="toc-inline"[^>]*>.*?</details>', "", h, flags=re.S)
     return h
 
 
