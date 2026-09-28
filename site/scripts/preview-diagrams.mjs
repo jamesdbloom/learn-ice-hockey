@@ -20,20 +20,20 @@ import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 import { playSvg, rinkSvg, legendSvg } from './lib/rink.mjs';
+import { findChrome } from './lib/chrome.mjs';
 
 const FOOTER = null;
 
-const [modPath, outDir] = process.argv.slice(2);
-if (!modPath || !outDir) {
+const [modPath, outArg] = process.argv.slice(2);
+if (!modPath || !outArg) {
   console.error('usage: node scripts/preview-diagrams.mjs <diagrams-module> <out-dir>');
   process.exit(2);
 }
+// Absolute, because a relative file:// URL cannot be loaded: depending on the binary it
+// exits 0 or 1, and either way writes no PNG.
+const outDir = resolve(outArg);
 
-const chrome = [
-  process.env.CHROME_PATH,
-  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-  '/usr/bin/google-chrome-stable', '/usr/bin/google-chrome', '/usr/bin/chromium',
-].filter(Boolean).find((c) => existsSync(c));
+const chrome = findChrome();
 
 const specs = (await import(pathToFileURL(resolve(modPath)).href)).default;
 mkdirSync(outDir, { recursive: true });
@@ -65,6 +65,8 @@ for (const d of specs) {
       `--screenshot=${join(outDir, `${d.id}.png`)}`,
       `--window-size=${width},${h + 190}`, `file://${html}`], { stdio: 'ignore' });
     rmSync(html, { force: true });
+    // A run that exits 0 and writes nothing is this repository's commonest silent pass.
+    if (!existsSync(join(outDir, `${d.id}.png`))) throw new Error(`preview: no PNG written for ${d.id}`);
     try { execFileSync('xattr', ['-d', 'com.apple.quarantine', join(outDir, `${d.id}.png`)], { stdio: 'ignore' }); } catch {}
   }
 }

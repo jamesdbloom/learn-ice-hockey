@@ -28,7 +28,7 @@
  * Usage:  node scripts/build-og.mjs
  */
 
-import { writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
+import { writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { execFileSync } from 'node:child_process';
@@ -39,6 +39,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { rinkSvg } from './lib/rink.mjs';
+import { findChrome } from './lib/chrome.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = join(HERE, '..', 'public', 'og');
@@ -63,18 +64,6 @@ const SITE_SHORT_TITLE = 'Learning to Play the Game';
 const SITE_DESCRIPTION =
   'A documentation corpus for learning ice hockey: where to be, how to execute, how to read the play, and how five players work as one unit.';
 const DOMAIN = 'learn-ice-hockey.com';
-
-/* Same discovery order as build-diagrams.mjs and build-pdf.mjs. */
-function findChrome() {
-  const candidates = [
-    process.env.CHROME_PATH,
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    '/usr/bin/google-chrome-stable',
-    '/usr/bin/google-chrome',
-    '/usr/bin/chromium',
-  ].filter(Boolean);
-  return candidates.find((c) => existsSync(c)) ?? null;
-}
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

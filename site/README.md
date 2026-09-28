@@ -14,6 +14,7 @@ build derives everything it needs from the markdown as it stands.
 |---|---|
 | Node | **≥ 22.12** (Astro 7's floor). `node -v` |
 | npm | ≥ 9.6.5 |
+| Chrome | `npm run setup:chrome` once. Diagram PNGs, share cards and PDFs are rendered by `chrome-headless-shell`; without it the build falls back to your installed Chrome, and on macOS you cannot open that browser from the Dock while the build runs. |
 
 ## Develop
 

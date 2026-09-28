@@ -34,6 +34,7 @@ import { fileURLToPath } from 'node:url';
 
 import { DIAGRAMS } from '../src/diagrams/index.mjs';
 import { playSvg, rinkSvg, legendSvg } from './lib/rink.mjs';
+import { findChrome } from './lib/chrome.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = join(HERE, '..', 'public', 'diagrams');
@@ -124,20 +125,6 @@ function warnIfSourcesMovedDuringBuild() {
 // rather than a link, pointed at a section the reader could not click through to.
 // The notation is its own navigable section instead.
 const FOOTER = null;
-
-// Same discovery order as build-pdf.mjs. PNGs are a fallback artefact, so a
-// missing Chrome is a warning rather than a build failure — but it is a *loud*
-// warning, because an EPUB built without them silently loses its fallback.
-function findChrome() {
-  const candidates = [
-    process.env.CHROME_PATH,
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    '/usr/bin/google-chrome-stable',
-    '/usr/bin/google-chrome',
-    '/usr/bin/chromium',
-  ].filter(Boolean);
-  return candidates.find((c) => existsSync(c)) ?? null;
-}
 
 // Everything the rasterisation depends on, as data rather than as side effects, so
 // that the cache key can hash the SAME values the run actually uses. Splitting this
@@ -301,6 +288,9 @@ function main() {
   // Locked even for --no-png: that mode still writes every SVG and the manifest, which
   // a concurrent full build is also writing.
   if (!acquireLock()) { process.exitCode = 2; return; }
+  // PNGs are a fallback artefact, so a missing Chrome is a warning rather than a
+  // build failure — but a *loud* one, because an EPUB built without them silently
+  // loses its fallback.
   const chrome = noPng ? null : findChrome();
   if (!noPng && !chrome) {
     console.warn('build-diagrams: no Chrome found — SVGs only, EPUB will have no raster fallback.\n' +

@@ -24,6 +24,7 @@
     "build:pwa": "node scripts/build-pwa.mjs",
     "build:pdf": "node scripts/build-pdf.mjs",
     "build:diagrams": "node scripts/build-diagrams.mjs",
+    "setup:chrome": "npx -y @puppeteer/browsers@3.2.3 install chrome-headless-shell@stable --path \"$HOME/.cache/puppeteer\"",
     "build:og": "node scripts/build-og.mjs"
   },
   "dependencies": {

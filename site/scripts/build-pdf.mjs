@@ -27,30 +27,12 @@ import { execFileSync } from 'node:child_process';
 import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { findChrome } from './lib/chrome.mjs';
+
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DIST = join(HERE, '..', 'dist');
 const PRINT_DIR = join(HERE, '..', '.print');
 const OUT_DIR = join(DIST, 'downloads');
-
-const CANDIDATES = [
-  process.env.CHROME_PATH,
-  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-  '/Applications/Chromium.app/Contents/MacOS/Chromium',
-  '/usr/bin/google-chrome-stable',
-  '/usr/bin/google-chrome',
-  '/usr/bin/chromium-browser',
-  '/usr/bin/chromium',
-  '/snap/bin/chromium',
-].filter(Boolean);
-
-function findChrome() {
-  for (const p of CANDIDATES) if (existsSync(p)) return p;
-  try {
-    return execFileSync('which', ['google-chrome'], { encoding: 'utf8' }).trim() || null;
-  } catch {
-    return null;
-  }
-}
 
 const human = (b) =>
   b < 1024 * 1024 ? `${(b / 1024).toFixed(0)} KB` : `${(b / 1024 / 1024).toFixed(1)} MB`;
