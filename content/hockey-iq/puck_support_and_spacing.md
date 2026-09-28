@@ -231,7 +231,7 @@ You are roughly the same distance from your own net as the carrier, but across f
 Position: Further up ice than the carrier
 Goal: Gain territory — this is the only one of the three angles that gains ground
 Risk: The ahead-of-the-puck pass is the most interceptable of the three angles, and if it fails you are behind the play and cannot recover
-Rule: Offside needs both skates completely over the line before the puck completely crosses it (NHL Rule 83)
+Rule: Both skates completely over the line before the puck completely crosses it is offside (NHL Rule 83)
 Rule: A raised trail skate is onside under NHL, IIHF and PWHL rules, but USA Hockey 630(a) and Hockey Canada 6.11 require skate contact, and CARHA 72(c) settles it neither way — so drag the blade and you are onside wherever you play
 Action: Time your entry rather than parking in the zone
 ```
@@ -490,7 +490,7 @@ Action: Delay deliberately, so you arrive with speed as the puck arrives
 Technique: "Puck first, feet second" — let the carrier commit a defender before you launch
 Goal: Cross the space at full speed while the defender is stationary with their head turned to the puck
 Key: A late arrival with speed beats a set gap — by the time the defenceman reacts you are past the point where they could have set one
-Rule: The puck must cross the blue line before or as your second skate does (NHL Rule 83 offside)
+Rule: The puck must cross the blue line before or as your second skate does (NHL Rule 83 offside); under USA Hockey 630(a) and Hockey Canada 6.11 that trailing skate must also be touching the ice, so keep it down wherever you play
 Never: Delay in your own zone — the carrier needs the outlet now, and a late arrival there is an absent one
 ```
 
@@ -500,7 +500,7 @@ The cue used in neutral-zone coaching is **"puck first, feet second"** — let t
 
 This is what people mean when they say a player "arrives late." It is not a criticism. **A late arrival with speed beats a set gap**, because by the time the defenceman reacts you are already past the point where they could have set one. The trailer on a rush, the defenceman jumping into the slot, the weak-side winger cutting to the back post — all the same mechanism.
 
-The offside constraint bites here and is worth being exact about: the puck must cross the blue line before, or at the same moment as, your second skate. Both skates over before the puck is offside. One skate on or behind the line and you are fine. Timing your route so the puck beats you across is the whole skill.
+The offside constraint bites here and is worth being exact about: the puck must cross the blue line before, or at the same moment as, your second skate. Both skates over before the puck is offside. Keep one skate on the line or behind it, **and keep that blade on the ice**: NHL, IIHF and PWHL rules count a skate raised over the neutral-zone side of the line as onside, but USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 count only a skate in contact, so a lifted trail skate is offside there. Timing your route so the puck beats you across is the whole skill.
 
 **When not to delay:** in your own zone, where the carrier needs the outlet *now* and a late arrival is just an absent one. Supporting late is an attacking tool.
 
@@ -636,19 +636,19 @@ One question, asked constantly: **"Where are my two options?"**
 
 ## Common Mistakes
 
-- **Skating to the puck instead of to the space around it.** The instinct is universal and it is wrong more often than it is right. You arrive with your checker; you crowd the carrier; you vacate the space the puck is about to reach.
-- **Supporting from too close.** You feel involved, but one defender is now covering two of you, and you have taken away the carrier's escape route.
-- **Supporting from too far.** The pass takes a second to arrive, a stick gets into the lane, and you were never really an option.
-- **Two players in the same lane.** In the neutral zone especially: one checker handles both of you, and one of you was wasted.
-- **Standing still in the right place.** Correct position, arrived too early, now marked. The defence had all the time in the world to walk over.
-- **All support on one angle.** Three teammates all behind the puck is safety with no attack; three all ahead of it is an attack with no reset. You need all three angles at once.
-- **Nobody above the puck.** Everyone chases the play, the puck turns over, and it is a rush the other way. This is the mistake that shows up on the scoresheet.
-- **Wingers drifting into the middle.** It feels like getting involved. It closes the space that made the middle valuable, and it puts you in your centre's lane.
-- **Piling into a board battle your teammate already controls.** You brought a defender into the one area that needed to stay clear — the exit. The exception is a genuine 50-50 scramble, or being your team's designated second player; **going in does not change how you arrive.** Skates parallel to the wall, forearm and hip — never the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest, and **never your back to the boards, never duck.**
-- **Two defenders attacking the same puck carrier — when nobody called for it.** Both beaten by one pass, and by definition someone is unmarked. Support the first defender rather than duplicating them. The exception is a **called** double-team, usually below your own goal line where a turnover is contained; that is a coaching decision, not something you decide alone.
-- **Stick off the ice while "open".** No blade, no target, no pass. You were unmarked and unavailable, which counts as absent.
-- **Finding a good spot once and then stopping.** The puck moved. Your spot was correct three seconds ago. Support is continuous, not a destination.
-- **Assuming your team's rotation rules.** Who is allowed below the puck in the offensive zone is a coaching choice and varies. Guessing is how you end up as the extra man deep with nobody home.
+- **Skating to the puck instead of to the space around it.** The instinct is universal and it is wrong more often than it is right. You arrive with your checker; you crowd the carrier; you vacate the space the puck is about to reach. Unless you are the closest player, skate to the open ice the puck is about to reach, at an angle nobody else holds.
+- **Supporting from too close.** You feel involved, but one defender is now covering two of you, and you have taken away the carrier's escape route. Back off until one defender cannot cover both of you — about two stick lengths under pressure, more in open ice.
+- **Supporting from too far.** The pass takes a second to arrive, a stick gets into the lane, and you were never really an option. Close in until a pass released now would reach you before the defender does.
+- **Two players in the same lane.** In the neutral zone especially: one checker handles both of you, and one of you was wasted. If a teammate already holds your lane, move to a different angle rather than queueing behind them.
+- **Standing still in the right place.** Correct position, arrived too early, now marked. The defence had all the time in the world to walk over. Hold off, then arrive at speed as the puck does — except in your own zone, where the carrier needs the outlet now.
+- **All support on one angle.** Three teammates all behind the puck is safety with no attack; three all ahead of it is an attack with no reset. You need all three angles at once, so look at where your teammates are and take the angle nobody holds.
+- **Nobody above the puck.** Everyone chases the play, the puck turns over, and it is a rush the other way. This is the mistake that shows up on the scoresheet. Before you go below the puck, know who is above it — and if nobody is, it is you.
+- **Wingers drifting into the middle.** It feels like getting involved. It closes the space that made the middle valuable, and it puts you in your centre's lane. Stay wide and keep your checker out there with you, unless your team's rotation sends you inside or you are driving the net on a shot.
+- **Piling into a board battle your teammate already controls.** You brought a defender into the one area that needed to stay clear — the exit. Move to open ice a few metres away with your stick down, so the puck has somewhere to go. The exception is a genuine 50-50 scramble, or being your team's designated second player; **going in does not change how you arrive.** Skates parallel to the wall, forearm and hip — never the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest, and **never your back to the boards, never duck.**
+- **Two defenders attacking the same puck carrier — when nobody called for it.** Both beaten by one pass, and by definition someone is unmarked. Layer behind the first defender rather than duplicating them. The exception is a **called** double-team, usually below your own goal line where a turnover is contained; that is a coaching decision, not something you decide alone.
+- **Stick off the ice while "open".** No blade, no target, no pass. You were unmarked and unavailable, which counts as absent. Keep your blade on the ice where you want the pass.
+- **Finding a good spot once and then stopping.** The puck moved. Your spot was correct three seconds ago. Support is continuous, not a destination. Re-check your angle every time the puck moves.
+- **Assuming your team's rotation rules.** Who is allowed below the puck in the offensive zone is a coaching choice and varies. Guessing is how you end up as the extra man deep with nobody home. Ask your coach who may go below the puck, and when.
 
 ## Check yourself
 
@@ -699,13 +699,13 @@ document, that is named too.*
 1. **A puck carrier with two options beats one with none, regardless of skill.** Being one of those two options, on purpose, is most of what a teammate is for.
 2. **Two options are only two if they are at different angles.** Two teammates in the same lane are one option, because one defender's stick covers both.
 3. **The triangle is the shape that survives a pass.** A line is cut by one stick and has to be rebuilt after every pass; a triangle rotates and stays connected.
-4. **Support has a working range, not a standard — and no governing body has been found to set one.** Roughly two to three stick lengths by default, shorter under pressure and in your own end, longer in open ice. One figure has been published by a governing body: USA Hockey's coaching article quotes Larry Bruyere's "8-to-10-foot-or-less pass", which is tighter than the default and describes play under pressure — one coach's rule of thumb, not a standard the association issues. The IIHF's own coaching manual treats support at length and asks only for "close and quick support", naming no distance at all — **but one manual's silence is not a survey of every governing body.** The real test is time: would the pass beat the checker?
+4. **Support from a distance the pass can beat — the test is time, not a tape measure.** Would a pass released now reach you before the defender does? As a starting point, roughly two to three stick lengths — tighter, eight to ten feet, when the carrier is pressured, shorter in your own end, longer in open ice. That range is a coaching rule of thumb, not a standard — no governing body has been found to set one — so let your coach adjust it.
 5. **You need support behind, level with and ahead of the puck at once.** Behind is the outlet, level changes the side, and ahead is the only one of the three that gains ground. Ask which angle is currently missing and go be that one.
 6. **"Above the puck" is a different idea from "ahead of it," not another name for the same thing.** Above means goal-side of the puck relative to your own net, in every zone — it is not about which end of the ice you are in. Somebody stays above the puck in every zone as the insurance against the attack failing; *who* that is is a system choice — both defencemen holding the points under the house default, two forwards layered under a 1-2-2, or the weak-side winger under a single-high structure — but that somebody must is not. Before you go below the puck, know who is above it.
 7. **To help a teammate in a battle, usually move away from them** — they need somewhere to put the puck, not another body in the pile. Defending, it usually reverses: layer behind the first defender rather than converging, because two players on one carrier are both beaten by one pass. **"Usually" is doing work:** a deliberate double-team below your own goal line is a common coaching instruction, and man-to-man coverage can require you to leave the layer entirely. Ask your coach where and when your team doubles, and see [Playing Without the Puck](playing_without_the_puck.md) for how zone, man-to-man and hybrid coverage each change the job. **And when you do go in, safety outranks the puck:** get your **skates parallel to the wall**, take contact on your **forearm and hip** — never the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest, and **never your back to the boards, never duck.**
 8. **Wingers stay wide: the middle only exists while someone is holding the outside.** Drifting in deletes the space that made the play possible. How wide, and who may go below the puck, is a coaching choice — ask what your team's rotation rules are.
 9. **Skate to the space, not to the puck.** You do not arrive alone — you arrive as two players' worth of coverage, in a spot that was already crowded — and you vacate the empty ice the puck was about to reach. Ask "who is closest?" — if it isn't you, your job is the space, not the puck.
-10. **Arriving late with speed beats standing early in the right place.** "Puck first, feet second" — let the carrier commit a defender, then go.
+10. **Arriving late with speed beats standing early in the right place.** "Puck first, feet second" — let the carrier commit a defender, then go, and time it so the puck beats you over the blue line. In your own zone, don't delay: the carrier needs the outlet now.
 11. **Unmarked is not available — and converting yourself from one to the other is the receiver's job, not the passer's.** Move to the passing angle rather than to the space, use your voice because the carrier's head is down, and keep adjusting as the puck moves. [Playing Without the Puck](playing_without_the_puck.md) covers what availability requires.
 12. **Ask yourself "where are my two options?" every few seconds,** on the puck and off it. It is the single habit that turns positioning into support.
 

@@ -382,14 +382,14 @@ Never: Lean your body after the sweep. Sweep with your stick instead and keep yo
 
 ```facts
 Technique: Lay your blade or shaft on top of their blade, pinning it to the ice so they cannot shoot, pass or move the puck
-Read: Use it in tight — net front, board battles, faceoff scrambles — when you want the whistle or a teammate to arrive
+Read: Use it in tight — net front, board battles, faceoff scrambles — when you want a teammate to arrive
 Key: The lift takes their blade up so you can take the puck; the press takes it down so they cannot use it
 Never: Press with force, chop down repeatedly, or press on their hands — a press is a hold-and-pin, not a chop
 ```
 
 **What it is:** You lay your blade or shaft down on top of their stick blade, pinning it to the ice so they cannot shoot, pass, or move the puck.
 
-**When it works:** In tight — net front, board battles, faceoff scrambles, and any time the puck is sitting between you and an opponent and you want either the whistle or a teammate to arrive. It is the opposite tool to the lift: the lift takes their blade *up* so you can take the puck; the press takes their blade *down* so they cannot use it.
+**When it works:** In tight — net front, board battles, faceoff scrambles, and any time the puck is sitting between you and an opponent and you want a teammate to arrive. It is the opposite tool to the lift: the lift takes their blade *up* so you can take the puck; the press takes their blade *down* so they cannot use it.
 
 **Where it becomes a penalty:** Pressing down with force, repeatedly chopping down, or pressing down on their hands. A press is a hold-and-pin, not a chop.
 
@@ -1071,23 +1071,24 @@ Practise this deliberately. Almost no amateur does, and it wins pucks every sing
 
 ```facts
 Read: Pin when you are outnumbered, tangled with an equally stuck opponent, or a turnover here is a chance against
-Action: Pin the puck against the boards with your skate or your body and let the whistle come
-Key: Under pressure, pin it; unpressured, play it — pinning is legal only while the puck is genuinely contested
-Rule: Deliberately freezing the puck to cause a stoppage is a delay-of-game minor (NHL Rule 63.2(i); USA Hockey Rule 610(a))
-Never: Pin because a change is due or you are protecting a lead — that is the delaying purpose both rules describe
+Action: Pin the puck to the boards with your skate or stick for a second or two, long enough for a teammate to dig it out — never hold it for a whistle
+Key: The pin buys time for your second player, not a faceoff — call for help, and when help arrives, move the puck
+Rule: Under USA Hockey, holding the puck against the boards for three seconds is a minor whether or not you were pressured (Rule 632(b); Casebook Rule 632, Situation 6)
+Rule: Outside USA Hockey a deliberate freeze is a minor — NHL 63.2(i), IIHF 63.2(I), PWHL 65.2(i); Hockey Canada 10.1(i) and CARHA 74(b) exempt a hold while "being checked by an opponent", but Hockey Canada 6.12(b) still penalises a freeze for a stoppage and CARHA 55(a) makes stalling a bench minor
+Rule: Deliberately falling on the puck or gathering it into your body is a minor in all six books (NHL 63.2(v), IIHF 63.2(V), PWHL 65.2(v), USA Hockey 614(a), Hockey Canada 10.2(a)(iv), CARHA 58(a)) — a penalty shot with the puck in your own crease
+Never: Pin because a change is due or you are protecting a lead — that is the delaying purpose these rules describe
 Rule: IIHF women's rules prohibit pinning an opponent along the boards — pin the puck, not the player (IIHF Rule 101.1, and so in British women's hockey)
 ```
 
-Sometimes you cannot win the battle and neither can they. If you are outnumbered, if you are tangled up with an opponent who is just as stuck as you are, or if a turnover here is a scoring chance against, **pin the puck against the boards with your skate or your body and let the whistle come.** A defensive-zone faceoff is a far better outcome than a turnover in the slot.
+Sometimes you cannot win the battle and neither can they. If you are outnumbered, if you are tangled up with an opponent who is just as stuck as you are, or if a turnover here is a scoring chance against, **stop the puck moving: pin it against the boards with your skate or your stick blade, call for help, and hold it only until a teammate arrives to dig it out.** A puck going nowhere is a far better outcome than a turnover in the slot, and the pin is what gives your second player time to get there. **Never hold it for a whistle, and never fall on it or gather it into your body** — that is a minor in every book, and a penalty shot when the puck is in your own crease (NHL and IIHF 63.6, PWHL 65.6, USA Hockey 614(b), Hockey Canada 10.2(a)(v), CARHA 58(c)).
 
-**The qualifier is part of the tactic, because the same action without it is a penalty.** Pinning is legal *while the puck is genuinely contested* — an opponent is on it or arriving, and neither of you can free it. That is how most board-battle whistles happen, and referees let it run. Freezing the puck when nobody is actually pressuring you, purely to buy a stoppage, is a minor:
+**Pin it to wait for help, not to wait for the referee — that play keeps you out of trouble in every book.** Under USA Hockey, a pin held for a whistle is itself the penalty: Rule 632(b) assesses a minor for delay of game to *"any player(s), including a goalkeeper, who holds or freezes the puck along the boards or goal frame in any manner causing a stoppage of play."* The Casebook applies it to exactly this play: once the puck *"is held against the boards for more than three seconds by one player, the Referee must stop play and assess the penalty for delaying the game. The fact that the player may or may not have been pressured by their opponent has no bearing on the call"* (Rule 632, Situation 6). Two of you sitting on it does not get you a free whistle either — officials *"cannot blow the whistle simply because two opposing players want to obtain a stoppage"* (Rule 632, Situation 4), and where both of you are waiting for one, the minors go to *"the player(s) most responsible for causing the stoppage"* (Rule 610, Situation 1). Move it inside three seconds, warned or not — the Casebook has the referee warn you first only when you are not being checked (Rule 632, Situation 5).
 
-- **NHL Rule 63.2(i)** assesses a minor for delay of game *"On any player, including the goalkeeper, who holds, freezes or plays the puck with his stick, skates or body in such a manner as to deliberately cause a stoppage of play."*
-- **USA Hockey Rule 610(a)** names the intent in plainer terms: *"A minor penalty shall be assessed to any player or goalkeeper who deliberately freezes the puck along the boards or goal frame for the purpose of delaying the game."*
+**The other five books stop play and face it off when the puck is frozen between opposing players** (NHL and IIHF 85.2, PWHL 87.2, Hockey Canada 6.12(c), CARHA 75(c)). What they penalise is the freeze done on purpose. **NHL Rule 63.2(i)** assesses a minor *"On any player, including the goalkeeper, who holds, freezes or plays the puck with his stick, skates or body in such a manner as to deliberately cause a stoppage of play"*, and the IIHF's 63.2(I) and the PWHL's 65.2(i) write the same sentence. **Hockey Canada 10.1(i)** and **CARHA 74(b)** add a pressure test — a player who *"deliberately holds the puck against the boards or any part of the goal in any manner, unless they are being checked by an opponent."* **That exemption does not make a freeze for a whistle safe under pressure:** Hockey Canada 6.12(b) penalises a player who *"deliberately puts the puck out of bounds or makes it unplayable in order to gain a stoppage of play"*, with no being-checked exception, and CARHA's Rule 55(a) is a bench minor for a team *"deliberately delaying the game in any manner"*, its Note 2 naming *"freezing the puck"*.
 
-**Under pressure, pin it; unpressured, play it.** Note what that rules out as a *motive*: "a change is due" and "we are protecting a lead late" are precisely the delaying purpose both rules describe. They are reasons to get the puck out — rim it, chip it off the glass, or make the safe play up the wall — not reasons to sit on it and fish for a whistle. Pin because you cannot win the puck and cannot afford to lose it, never because you want the clock stopped. See **[Game Management](../systems/game_management.md)** for the legal ways to kill time and change lines.
+**Pinning to wait for help also rules out two motives.** "A change is due" and "we are protecting a lead late" are precisely the delaying purpose these rules describe. They are reasons to get the puck out — rim it, chip it off the glass, or make the safe play up the wall — not reasons to sit on it and fish for a whistle. See **[Game Management](../systems/game_management.md)** for the legal ways to kill time and change lines.
 
-Pinning is a legitimate tactic and a game-management decision, not a failure. Know the exception: **IIHF women's rules specifically prohibit pinning an opponent along the boards** (Rule 101.1) — there, you may pin the puck, but not the player. **That exception is live in Britain**, because women's hockey under England Ice Hockey and the SIHA runs Rule 101.1 unamended. [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) carries the same "pin the puck, not the player" distinction with the same freezing qualifier; the two documents agree.
+Pinning is a legitimate tactic and a game-management decision, not a failure. Know the exception: **IIHF women's rules specifically prohibit pinning an opponent along the boards** (Rule 101.1) — there, you may pin the puck, but not the player. **That exception is live in Britain**, because women's hockey under England Ice Hockey and the SIHA runs Rule 101.1 unamended. [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) carries the same "pin the puck, not the player" distinction and the same limits on holding it; the two documents agree.
 
 ---
 

@@ -166,7 +166,7 @@ const wallReception = {
     'coming down the wall and could as easily come from the middle, so check both shoulders. ' +
     'Every shape here was forced by the notation, so read the retrieval ' +
     'as a job rather than as a position. ' +
-    // SAFETY, LAST. The owner's own override, scanning_and_anticipation.md:149 and Key Takeaway 11
+    // SAFETY, LAST. The owner's own override, scanning_and_anticipation.md:149 and Key Takeaway 13
     // at :583, which says in terms that it outranks every tactical point beside it. A player
     // standing on the wall with a checker arriving is exactly the shape that override exists for,
     // so the caption cannot end without it. (Whether any other diagram in the corpus draws that
