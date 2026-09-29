@@ -375,7 +375,8 @@ const forcingThemOutside = {
     'from getting beaten wide. No gap distance and no retreat are drawn. ' +
     '⚠️ Steering with the route you skate is legal. Riding him into the wall with your body ' +
     'is a body check — barred outright in many classifications by USA Hockey 604 and Hockey ' +
-    'Canada 7.3, and narrowed at the boards for women by IIHF 101.1. Find out which book you ' +
+    'Canada 7.3; in women\'s hockey IIHF 101.1 bars using the boards to push, pin or eliminate ' +
+    'an opponent. Find out which book you ' +
     'are under. Nothing here ends in contact.',
 
   describe:

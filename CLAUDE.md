@@ -1664,10 +1664,14 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     see it. ⚠️⚠️ AND AN AGGREGATE DELTA HIDES IT IN BOTH DIRECTIONS: a wave showed
                     79 → 77 and the −2 was explained away as a sanctioned MERGE — only one of the two
                     was; on 25 September `team_play_and_culture.md` rose 24 → 33 while no paragraph
-                    had lost its own marker, so a RISE hides a loss exactly as a fall does. ⚠️ It keys
-                    a paragraph by its first 60 characters, so a REWRITTEN OPENING reports as "no
-                    longer present by key" — a CANDIDATE, not a finding, and a re-aiming wave produces
-                    these by design. WORKLIST: read every hit.
+                    had lost its own marker, so a RISE hides a loss exactly as a fall does. ⚠️ It pairs
+                    SPOKEN UNITS the way md_to_speech sets `important` — per paragraph, per LIST ITEM,
+                    per blockquote inner paragraph, per facts line. Until 29 September 2026 it split on
+                    blank lines only and MISSED SIX losses in one wave (rules_primer :798, shooting
+                    :512/:514, special_teams :712/:1115/:1157); `--base <rev>` re-checks a committed
+                    wave and reproduced all six. ⚠️ It keys a unit by its first 60 characters with ⚠
+                    and ** stripped, so a REWRITTEN OPENING reports as "no longer present by key" — a
+                    CANDIDATE, not a finding. WORKLIST: read every hit.
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.
