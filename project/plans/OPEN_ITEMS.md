@@ -22,7 +22,44 @@ they did not need to.**
 done?"* took three files, and **two podcast items listed as open had been fixed days earlier** with
 nobody noticing.
 
-## 🔴 OPEN ROWS CARRIED OUT OF WAVE 5 (closed 29 September 2026)
+## 🔴 OPEN ROWS CARRIED OUT OF WAVE 6 (closed 29 September 2026)
+
+**Wave 6 is recorded in [`round_2026-09-29_wave6_101_seal_561_stacks.md`](../reviews/round_2026-09-29_wave6_101_seal_561_stacks.md)** (Appendix A is the live log, verbatim). Adopted rulings, now standing guidance: **IIHF women's 101.1**: a positional seal only on ice you reached first; a late arriver skates around and takes only open ice; any step or glide into her is at least a minor; never use the boards to push, pin or lean her out of the play (a minor, or a major + auto GM). **Stick lift/press**: "as the puck arrives, low, and let go" in every layer; the IIHF 56.1 "receiving a pass" reading appears at most once per document, as a disclosed reading. **CARHA 32(d)**: "no AUTOMATIC suspension" for an injuring accidental high stick, and 32(b) still sends it to the Chairman.
+
+**NEXT — wave 7:**
+- 🔴 604 Note 1 inclusion quoted as if it were the whole definition: faceoffs :644; DZC :516/:749 (lower priority).
+- 🔴 winger :497: "32(d) adds an automatic one-game suspension to that game misconduct" straight after an injuring-accidental-high-stick bracket (harsher).
+- 🔴 A sibling census for women's-seal permissions without "first" (defender, DZC, others); none was found outside the wave files, but only lexically.
+- 🔴 **TOOL (scripts/): check_marker_pairs must pair UNITS the way md_to_speech sets `important`** (per list item and per blockquote inner paragraph). It missed losses at rules_primer :798, shooting :512/:514 and special_teams :712/:1115/:1157. Consider the special_teams unified-plugin harness as a no-build render predictor in check_callout_flow.
+- 🔴 P2 stacks not done: body_contact §5, offensive_zone_play §6, winger §OZ; rules_primer §4 runs (417-421, 462-466, 469-471, 514-516), judged genuine hazards.
+- 🔴 special_teams :684/:1077/:1111 are still 3k–10k+ characters of tariff: concision needs a per-limb layer test.
+- 🔴 Pre-existing quote drift: body_contact :438/:1703 have a full stop added inside the quote marks where the source continues; uk_rules :151.
+- 🔴 Minors carried from the final reads: forechecking :751 omits "does not avert"; DTR :219 lacks "does not avert" (cap); body_contact KT1's women's clause reads as part of the checking point, :428 "that is the whole of it", facts :58 "on anyone" vague, facts :339 drops "impedes"; the §7 facts :1080/body :1091 name only pinning; OZP 1a "lean on her" vs pursuit leaning; `switching_positions.mjs:357` "narrowed at the boards" vague; game_management carries rules only through the pinch caption; "holding body position" drops USAH's "established".
+- 🔴 Rulings wanted (rules-verifier): the CARHA 49(a) stand-in-front limb vs 66 Note 2 "stand their ground" in every non-check unit; the USAH Declaration/Collisions two-factor test vs "overt action" wording corpus-wide; the IIHF Disciplinary Code (automatic suspensions?) is not on disk.
+- 🔴 Unswept censuses carried from the wave-6 log (the first gate run found these unhomed):
+  - non-lexical boards instructions ("finish him on the wall", "squeeze him off") and captions spoken into the 101.1 hosts;
+  - "32(d) … that game misconduct" attached to an injuring accidental high stick in **passing_and_receiving** and **playing_without_the_puck** (winger :497 above);
+  - "a double minor where it puts them into the boards" without "a major stays a major" in **switching_positions** and elsewhere;
+  - NHL/PWHL/CARHA interference rules not swept BY ACT for a stick lift on a receiver;
+  - shooting's "carried high is a penalty" framing, and "by reference" / "your own shoulders" in documents other than uk_rules;
+  - captions in modules other than forechecking that may paraphrase "the seal is not available".
+  - the 604 Note 1 inclusion-only sweep's other half: diagram captions and non-lexical rewordings (only faceoffs :644 / DZC :516/:749 were found lexically);
+  - "worst case an ejection" (defender :418/:799/:875 and siblings) does not check other books' match-penalty suspensions;
+  - the "only exception" sweep: every "the only exception an accidental high stick" (e.g. forechecking :576/:760, goaltender :1141 from wave 4) against CARHA 16(i) Note 1, the lone-goalie carve-out.
+- 🔴 Rulings/readings carried from the wave-6 log:
+  - "In women's hockey" means IIHF 101.1 by DTR's file convention, but the PWHL (a women's league) has no boards limb (harsher at most);
+  - the "Never" lift lines (body_contact :318/:339, DZC) are stricter than USAH Casebook SoP Sit. 2 "lift… at any time provided they do not impede their progress" (harsher, low cost);
+  - DTR facts :223 frames the PWHL as a "may not check" league with an exception, and needs a reader's judgement;
+  - a second suspension route through USA Hockey affiliate discipline policy was not swept;
+  - body_contact §2 :265/:274, the end-of-angle seal in a non-checking league, is legal as written on a reasoned judgement only, with no ruling.
+- 🔴 Currency / network (owner): is there a 2026-27 IHUK R&R rather than EIH 2024-25? Do the WNIHL/NIHL/U10 ROCs incorporate §24? Is the In-House Supplementary Discipline section scoped to the NIHL (read the layout PDF)?
+- 🔴 Three untreated glyphs in rules_primer HTML appear to come from injected captions ("Never meet a goal post head first, and never duck"): trace them.
+- 🔴 Site minors (the wave-6 site-reviewer re-confirmed both pre-existing ones): `.warn-inline` gap before punctuation (19 of 101 runs on special_teams); the equipment ToC link has the only bare glyph in dist and its heading id begins with U+FE0F, and `check_callout_flow --bare` does not see ToC links. New: the forechecking caption amber run covers 2,113 of 3,295 chars (the caption build wraps the whole rules block); a special_teams run switches weight midway.
+- 🟠 OWNER: propagate the CARHA 32(d) suspension beyond units that already price the full tariff? Fetch Hockey Canada officiating material to settle 6.9(b) crossbar vs shoulder? Unwrap the ~30k-character shooting §Screens blockquote into prose (the audio is unchanged)?
+
+## 🔴 OPEN ROWS CARRIED OUT OF WAVE 5 (partly closed by wave 6)
+
+⚠️ Wave 6 closed only the IN-FILE parts of the wave-6-labelled rows below: the 101.1 seal in the wave files, the 56.1 timing in body_contact/DZC/defender, the accidental-high-stick 32(d) at DZC :529, forechecking :987, OZP :645 and bc :103, the forechecking 49 block, the double-minor/major rows in OZP/defender, the DTR §Angle body, the uk_rules trailer/by-reference, shooting HC 6.9(b)/8.5(b), and the uk_rules :130/:158/:367/:201/:457 rows. **Every SIBLING census attached to those rows stays open**; they are carried in the wave-6 section above. The rest remain open as written.
 
 **Wave 5 is recorded in [`round_2026-09-29_wave5_p1_reaim.md`](../reviews/round_2026-09-29_wave5_p1_reaim.md).** Below are the live-section bullets that contain an open 🔴 row, verbatim. **Only the 🔴 part of each is open.** **NEXT: wave 6, the IIHF women's 101.1 seal (ruling and sketch in the bullets below; census in [`w5_wall_101_census_2026-09-29.md`](../reviews/w5_wall_101_census_2026-09-29.md)).** **Still pending owner decision: propagate the CARHA 32(d) suspension beyond units that already price the full tariff?** ⚠️ body_contact KT numbers in the rows below use the pre-split numbering (the old KT11–13 are now KT12–14).
 
