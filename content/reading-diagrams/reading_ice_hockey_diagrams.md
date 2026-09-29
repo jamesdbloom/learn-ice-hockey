@@ -19,30 +19,58 @@
 
 ## Key focus
 
-**Shape tells you what a player is; fill tells you which team they're on — and that pairing is this guide's own convention, not a universal one.** A circle is a forward, a triangle is a defenceman, and a bare G is a goaltender; an open glyph is your own team, a solid one the opposition. Elsewhere in hockey coaching material the same two shapes are just as likely to mark the two *teams* instead — the IIHF's own published key does exactly that, putting a defending right wing in a triangle — so do not carry this reading onto a diagram made somewhere else.
+**Read the caption first, and believe it over the picture.** A diagram freezes one moment of one system among several. The caption says what the picture is for, which details are a coaching choice, and what a shaded region or a darker tint means — so ask which version your team runs rather than taking the drawing as the answer.
 
-**Believe the caption over the picture.** A diagram freezes one moment of one system among several, and where a caption calls a detail a coaching choice, the caption is right and the drawing is not the whole story — that goes for a shaded region, a ranked tint and a player's position alike.
+**Find yourself next.** Shape is the position — a circle is a forward, a triangle a defenceman, a bare G the goaltender — and fill is the team: open is yours, solid is theirs. The letter inside is your role, not your spot: on the forecheck, F1 is whichever forward reaches the puck first, so if that is you, the F1 route is yours whichever forward position you play. Some coaches assign F1 by position instead, so check how yours does it.
 
-**A small numbered tag on a route marks the order things happened, never who did them.** Routes are numbered; players are labelled by role. The two marks never share a spot, and a number is never a player's name.
+**Follow the routes in number order where they are numbered, and read how each one ends.** A small numbered tag gives the order things happen, never who does them. An arrowhead means the move carries on past the end of the line; two short bars mean the player stops there, under control.
+
+**Read where a player is relative to the puck and the other players, not as a spot on the ice.** Positions are drawn at one instant. On the ice, keep the relationship as the puck moves rather than skating to the drawn mark and staying there.
+
+**Treat a route that ends on an opponent as "arrive under control", never as permission to hit.** The mark says where you stop, not whether you may make contact. Whether you may body-check at all depends on your age group, your league and your book — find out before you play one, and until you know, do not hit anyone.
+
+**Check the key before you read anyone else's diagram — and on your own team, the coach's whiteboard wins.** Shape as position follows one published key and reading fill as the team is this guide's own choice, and neither is universal: the IIHF's own key uses the two shapes for the two *teams*, so a defending right wing there is a triangle. Where no key is printed, ask whoever drew it before the drill starts.
 
 ## Overview
 
-In a rink diagram a **circle is a forward and a triangle is a defenceman**, while
-**an open glyph is your own team and a solid one the opposition**. A **goaltender is
-a bare G** with no shape around it, and an **X is a pylon** — a practice cone, never
-a player. So shape tells you what a player is and fill tells you whose side they are
-on: a winger is a circle whether they are attacking or backchecking, because the
-shape follows the player rather than the moment. **That is one published key's
-convention, and the other cited below uses the same two shapes for the two teams
-instead** — which is the first thing to know if you meet a diagram from somewhere else. Colour carries nothing in the player glyphs
-or the line symbols, which is why they still work printed, photocopied or in either
-theme. The shaded regions described further down are the single exception — a region
-drawn as a hazard is tinted red rather than blue, a difference greyscale loses, so
-their captions say in words which one they mean. And where
-a caption says a detail is a coaching choice, believe the caption rather than the
-picture: a diagram is the most absolute-looking thing on a page, and it shows one
-moment of one system among several. You do not need to memorise the rest; come back
-when a symbol is unfamiliar.
+A diagram is only useful if you can turn it into what you do on your next shift, and
+the reading order above is how. **Start with the caption.** A diagram is the most
+absolute-looking thing on a page, but it shows one moment of one system among several,
+and the caption is where it says so — which detail is a coaching choice, whether a
+shaded box is ice to head for or ice a pass must never cross, and what order a set of
+tints ranks in. Where the caption and your eye disagree, the caption wins; where it
+names a choice, ask which version your team runs.
+
+**Then find yourself.** A **circle is a forward and a triangle is a defenceman**, a
+**goaltender is a bare G** with no shape around it, and an **X is a pylon** — a practice
+cone, never a player. **An open glyph is your own team and a solid one the
+opposition.** A winger is a circle whether attacking or backchecking, because the shape
+follows the player rather than the moment. The letter inside is a role: on the forecheck, F1 is whichever
+forward gets to the puck first, not the centre, so the route you play is set by what
+happens rather than by the name on your line-up card — though some coaches assign F1
+by position, so check how yours does it.
+
+**Then run the routes in order and read where each one stops.** Numbered tags give the
+sequence — the pass before the forechecker arrives, or after. An arrowhead carries on;
+two short bars stop there under control. And read the positions as relationships:
+where a defenceman sits relative to the puck and the attacker, where a support forward
+sits relative to the carrier. That relationship is what you keep on the ice as the puck
+moves — the drawn spot is only where it was at one instant.
+
+**A route that finishes on an opponent is not an instruction to hit.** The bars say
+where you arrive and that you arrive under control; whether you may make contact
+depends on your age group, your league and your book, and many youth, women's and
+non-check adult leagues ban body checking outright. Find out what yours allows before
+you play any route that finishes on a player.
+
+**Last, check whose key it is.** Shape as position follows one published key, and
+reading fill as the team is this guide's own choice; the other key cited below uses the
+same two shapes for the two teams instead, which is the first thing to know if you meet a diagram from somewhere
+else. On your own team, your coach's whiteboard wins. Colour carries nothing in the
+player glyphs or the line symbols, which is why they still work printed, photocopied or
+in either theme; the one exception is a region drawn as a hazard, tinted red rather than
+blue — a difference greyscale loses, so its caption says in words which it is. You do
+not need to memorise the rest; come back when a symbol is unfamiliar.
 
 The notation is drawn from **two published symbol keys**, and one symbol is compared
 below against a third source that is a coaching manual with its own house key, not a governing-body one. The two keys
@@ -87,7 +115,10 @@ player is facing is not something this notation can draw. The rest:
   rather than by their shape. An arrowhead reads as *continuing past the point the line
   ends at*; the bars read as *ending there*. Where that end point is an opponent rather
   than open ice, read the bars as **arrive under control**, and the destination and the
-  caption carry the rest.
+  caption carry the rest. The IIHF key does have a mark for a hit — a line ending in a
+  small curled bracket, which it names *body check* — so a drill drawn to that key can
+  say "hit here" outright. That tells you what the drill's author had in mind, not what
+  your league allows.
 - **Bars across a line** are *lateral crossovers* — **the one *line* symbol here taken
   from the Hockey Eastern Ontario sheet rather than the IIHF key**, because the IIHF key
   has no lateral-crossover symbol at all. (The player glyphs come from that sheet as
@@ -166,11 +197,11 @@ carries a goaltender a second way, as the numeral 1 inside a team glyph, which i
 convention this guide does not use. No shape is wrapped round the letter here because a circle would say forward and a triangle
 would say defenceman.
 
-⚠️ **The IIHF key does this differently, and if you meet it you will be caught out.**
+**The IIHF key does this differently, and if you meet it you will be caught out.**
 Its columns read *TEAMS — OFFENSIVE / DEFENSIVE*, with circles in one column and
 triangles in the other, and the **position carried by a numeral inside** — 1
-goaltender, 2 right defence, through 6 left wing. On that key a right wing on the
-defending team is a *triangle*. Two published keys, two incompatible meanings for the
+goaltender, 2 right defence, through 6 left wing. ⚠️ **On that key a right wing on the
+defending team is a triangle.** Two published keys, two incompatible meanings for the
 same two shapes; these diagrams follow the Hockey Eastern Ontario sheet.
 
 **Fill is the team.** An **open** glyph is your own team and a **solid** one the
@@ -213,9 +244,9 @@ to carry the warning instead.
 
 ### The word "international"
 
-⚠️ **Do not call this notation "international" to anyone.** *Both* keys above carry that
-word in their titles — *International Drill Symbols* and *International Symbols* — and what
-is drawn here is neither of them. The one-bar glyph
+*Both* keys above carry the word "international" in their titles — *International Drill
+Symbols* and *International Symbols* — and what is drawn here is neither of them, ⚠️ **so
+do not call this notation "international" to anyone.** The one-bar glyph
 above is the sharpest illustration: the Hockey Eastern Ontario sheet calls it *checking
 pressure*, a coaching manual calls it *screen, pick, or block*, and the IIHF key does not
 define it at all. Neither meaning is wrong inside the system it belongs to; they are simply
@@ -242,55 +273,54 @@ is a coaching choice, believe the caption, not the picture.
 
 ## Common Mistakes
 
-- **Reading a diagram as the way hockey is played.** A picture is the most
-  absolute-looking thing on a page. Almost every diagram here shows one system among
-  several, and the caption says so — believe the caption, then ask which version your
-  team runs.
-- **Taking a shape as a place to stand.** Positions in a diagram are drawn at one
-  instant. Where the play moves, the shape moves with it. Read where a player is
-  *relative to the puck and the other players*, not as a spot on the ice, and on the
-  ice keep that relationship as the puck moves rather than skating to the drawn mark
-  and staying there.
+- **Reading a diagram as the way hockey is played.** Believe the caption, then ask which
+  version your team runs. A picture is the most absolute-looking thing on a page, but
+  almost every diagram here shows one system among several, and the caption says so.
+- **Taking a shape as a place to stand.** Read where a player is *relative to the puck
+  and the other players*, and on the ice keep that relationship as the puck moves
+  rather than skating to the drawn mark and staying there. Positions in a diagram are
+  drawn at one instant; where the play moves, the shape moves with it.
 - **Assuming a key you meet elsewhere means the same thing.** Check the key in front of
-  you before you read the picture. The two shapes are the
-  biggest trap: a circle is a *forward* here and *the attacking team* on the IIHF's own
-  key, so the same picture reads two ways. One mark — a line ending in a single bar — is
-  *checking pressure* in one published key, half of a *sudden stop* in another, and
-  *screen, pick, or block* in a coaching manual. Where no key is printed, ask whoever
-  drew it.
-- **Reading the letter inside a glyph as where a player stands.** The letters here mark
-  a role set by who does what during the play, not a position — F1 is whoever arrives at
-  the puck first, not the centre (the fuller case is in
-  [Forechecking Systems](../systems/forechecking_systems.md)). So on the forecheck, when
-  you are the first forward to the puck, do F1's job, whatever position you play. The same letter can
+  you before you read the picture, and where no key is printed, ask whoever drew it. The
+  two shapes are the biggest trap: a circle is a *forward* here and *the attacking team*
+  on the IIHF's own key, so the same picture reads two ways. One mark — a line ending in
+  a single bar — is *checking pressure* in one published key and *screen, pick, or
+  block* in a coaching manual, while the IIHF key has no one-bar symbol at all: there,
+  one bar is half of its two-bar *sudden stop*.
+- **Reading the letter inside a glyph as where a player stands.** On the forecheck, when
+  you are the first forward to the puck, do F1's job, whichever forward position you play. The
+  letters here mark a role set by who does what during the play, not a position — F1 is
+  whoever arrives at the puck first, not automatically the centre, though some coaches
+  assign it by position (the fuller case is in
+  [Forechecking Systems](../systems/forechecking_systems.md)). The same letter can
   collide with an unrelated meaning on someone else's key, too: a circled `C` means
   *coach* on both published keys consulted here and *centre* in this guide.
-- **Assuming your coach uses these symbols.** Nothing here has been checked against
-  how any particular club draws things. If your coach's whiteboard disagrees, their
-  whiteboard wins — and if a mark on it is new to you, ask before the drill starts.
-- **Reading a route that ends on an opponent as permission to hit.** The two bars at
-  the end say where you stop and that you arrive under control — never whether you may
-  make contact. Whether body checking is allowed at all depends on your age group,
-  your league and your book, and many youth, women's and non-check adult leagues ban it.
-  So find out what yours allows before you play any route that finishes on a player,
-  and until you know, do not hit anyone.
+- **Assuming your coach uses these symbols.** If your coach's whiteboard disagrees,
+  their whiteboard wins — and if a mark on it is new to you, ask before the drill
+  starts. Nothing here has been checked against how any particular club draws things.
+- **Reading a route that ends on an opponent as permission to hit.** Find out what your
+  league allows before you play any route that finishes on a player, and until you
+  know, do not hit anyone. The two bars at the end say where you stop and that you
+  arrive under control — never whether you may make contact. Whether body checking is
+  allowed at all depends on your age group, your league and your book, and many youth,
+  women's and non-check adult leagues ban it.
   [Body Contact and Battles](../technique/body_contact_and_battles.md) sets out the books.
-- **Taking a shaded region for a marking on the ice.** The slot, the house and the
-  rest are names for areas, not paint; go and look at a rink and there is no line
-  marking any of them out. Learn where each one sits from
+- **Taking a shaded region for a marking on the ice.** Learn where each region sits from
   [Rink Map](../foundation/rink_map.md) and find it on the ice from the lines that are
-  painted — the circles, the dots, the crease. The trapezoid is the one shaded region in
-  these diagrams that really is painted, and its caption says so.
+  painted — the circles, the dots, the crease. The slot, the house and the rest are
+  names for areas, not paint; go and look at a rink and there is no line marking any of
+  them out. The trapezoid is the one shaded region in these diagrams that really is
+  painted, and its caption says so.
 - **Ranking regions by how dark they look.** Take the order from the caption's words,
   never from how dark a region looks. On the turnover-cost map in
   [Risk Management](../hockey-iq/risk_management.md) two of the reds are deliberately
   the same, so there are fewer steps than there are regions — and in greyscale or on a
   photocopy the comparison across the red and blue tints inverts outright, because a
   light blue prints darker than the faintest red.
-- **Expecting a diagram to show a whole play.** One frame shows one moment. Where a
-  movement only makes sense over time you will find two diagrams, and the captions
-  say whether they are a sequence or two answers to the same instant — so read the
-  caption before you read the pair.
+- **Expecting a diagram to show a whole play.** Read the caption before you read a pair
+  of diagrams: it says whether they are a sequence or two answers to the same instant.
+  One frame shows one moment, so where a movement only makes sense over time you will
+  find two.
 
 ## Key Takeaways
 
@@ -331,19 +361,22 @@ is a coaching choice, believe the caption, not the picture.
    across the red and blue tints inverts in greyscale or on a photocopy.
 6. **A small numbered tag on a route says what happened first.** It counts routes in
    order, never players, and it never sits inside a player's shape.
-7. **The letters inside a glyph are roles, not positions.** F1 is whoever arrives
-   first, not the centre — so on the forecheck, when you are the first forward to the
-   puck, the F1 route is yours.
-8. **Where a caption says a detail is a coaching choice, it is.** Ask which version
+7. **The letters inside a glyph are roles, not positions.** On the forecheck, F1 is
+   whichever forward reaches the puck first, so when that is you, the F1 route is yours.
+   Some coaches assign F1 by position instead, so check how yours does it.
+8. **A drawn position is a relationship to the puck and the other players, not a spot
+   to skate to.**
+9. **Where a caption says a detail is a coaching choice, it is.** Ask which version
    your team runs rather than taking the picture as the answer.
-9. **A line ending in a single bar appears in none of these diagrams, on purpose:
-   across the sources behind this notation it carries three different meanings** —
-   checking pressure on one published key, half of a sudden stop on another, and
-   screen, pick, or block in a coaching manual. Do not assume a key you meet elsewhere
-   uses it the same way any of them do.
-10. **None of this notation has been checked against how any real club or coach draws
-   things.** If your coach's whiteboard disagrees with a symbol here, their whiteboard
-   wins.
+10. **On a diagram from anywhere else, check its key before you read it.** A line
+   ending in a single bar appears in none of these diagrams, on purpose: it is checking
+   pressure on one published key and screen, pick, or block in a coaching manual, and
+   the IIHF key has no one-bar symbol at all — one bar there is half of its two-bar
+   sudden stop. None of this notation has been checked against how any real club or
+   coach draws things. If your coach's whiteboard disagrees with a symbol here, their
+   whiteboard wins — and ask about any mark you do not know before the drill starts.
+   No key settles whether you may hit, not even one with a mark for a body check: your
+   age group, league and book decide that, and until you know, do not hit anyone.
 
 ---
 

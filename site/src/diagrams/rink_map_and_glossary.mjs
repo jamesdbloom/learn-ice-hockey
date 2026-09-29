@@ -429,10 +429,15 @@ const theTrapezoid = {
     // who will not cover a rebound." IIHF 63.2(VI)'s Note makes covering after a
     // cut-the-angle save explicitly legal; 63.2(VII) excepts a goalkeeper actually being
     // checked. A caption is the whole diagram for anyone who cannot see it.
-    'the puck and never where they may freeze it. Two things stay legal either way and have ' +
-    'to travel with that: coming out to cut down the angle, making the save and covering the ' +
-    'puck (IIHF 63.2(VI)), and a goaltender actually being checked (63.2(VII)). Cover the ' +
-    'rebound.',
+    // ⚠️ MAJOR, PERMISSIVE, CAUGHT BY `safety-reviewer`: the "actually being checked"
+    // exception was voiced here as a carve-out from the OUT-OF-CREASE freezing minor. It is
+    // not: IIHF 63.2(VII) and NHL 63.2(vii) are written for a goalkeeper "in their own goal
+    // crease", and IIHF Situation 63.1 penalises a goalkeeper out of the crease who falls on
+    // the puck as an attacker bears down. Only the save-then-cover carve-out travels.
+    'the puck and never where they may freeze it. One thing stays legal either way: coming ' +
+    'out to cut down the angle, making the save and covering the puck (IIHF 63.2(VI)). Being ' +
+    'checked excuses a freeze only inside the crease (63.2(VII)); out of it, falling on a ' +
+    'loose puck as an attacker bears down is still a minor. Cover the rebound.',
 
   describe:
     'The attacking half of the rink, the net at the right. The area behind the goal line is ' +
