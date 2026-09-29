@@ -398,8 +398,8 @@ const icingTheRaceAndTheDot = {
     'attempts to play the puck, or skates in the direction of the puck on an icing at any time" waves ' +
     'it off (Rule 81.3). ⚠️ And this is not everybody’s icing. USA Hockey plays automatic icing, ' +
     'completed "the instant the puck has completely crossed the goal line" (Rule 624, Note), so there ' +
-    'is no race to draw at all. Hockey Canada runs hybrid only in U18AAA, Junior and Senior at the ' +
-    'Member’s option (Rule 6.7(e)). Ask which your league plays. The race is not a licence to hit. ' +
+    'is no race to draw at all. Hockey Canada runs hybrid only in U18AAA and Junior, and in Senior at ' +
+    'the Member’s option (Rule 6.7(e)). Ask which your league plays. The race is not a licence to hit. ' +
     'Unnecessary contact with a player playing the puck on an obvious icing play that results in him ' +
     'hitting or impacting the boards "is boarding and must be penalized as such" under NHL 41.1, IIHF ' +
     '41.1 and Hockey Canada 7.2, word for word, and USA Hockey penalises the same contact without ' +

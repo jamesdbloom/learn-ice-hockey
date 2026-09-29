@@ -296,300 +296,141 @@ const anglingYourRoute = {
 };
 
 // ---------------------------------------------------------------------------
-// Which way you walk a net-front opponent
+// Holding the net front, and the ice no body is moved into
 // ---------------------------------------------------------------------------
 //
-// §9 "Defending the net front", step 3 and the warning that follows it:
+// §9 "Defending the net front", step 3: "**Hold your position — never walk them out.** Once
+// you have the inside position, stay there — low and wide, no lean, no push". A screener has
+// no puck, so moving one is interference in every game, checking or not; the owner's step 3
+// sets out the books.
 //
-//   "**3. Work under their arms — full-checking leagues only.** To move someone, get
-//    *under* them — your shoulder beneath their armpit, your legs driving, walking them
-//    out sideways — **toward the corner, and with their skates staying on the ice**."
+// ⚠️ REDRAWN 29 September 2026, WITH THE OWNER'S APPROVAL. The id is unchanged because three
+// documents embed it, but the picture is not the one the id names. It used to draw a
+// defenceman BEHIND the forward, collinear with a solid forward-skating arrow running from the
+// forward to the corner, under a design written for the old step 3 ("walk them out sideways
+// — toward the corner"). After step 3 became "never walk them out", a diagram review found
+// the geometry still read as "drive the screener to the corner", that the relabel "holds the
+// inside" contradicted a D standing further from the net than the forward, and that the
+// caption had grown to 290 words defending a route the prose now forbids. Relabelling and
+// re-captioning could not fix a picture whose geometry was the instruction.
 //
-//   "⚠️ **Step 3 has a direction, and it is the safety half of it: walk them toward the
-//    corner, not across your own goalmouth.** Which league you are in decides whether you
-//    may move them at all; which way you move them decides what they hit, and that half is
-//    the one nobody teaches. A body moved across the front of your own net travels sideways
-//    or backwards through a space with a steel goal frame at one edge and your goaltender
-//    at the other, and it is the player being moved who meets the post."
-//
-// ⚠️ WHY THIS ONE IS DRAWN AND MOST OF §9 IS NOT. Steps 1, 2, 4 and 5 of that list are a
-// shoulder, a stick, a leverage argument and where your eyes are. None of them is a
-// position on the ice, and the rink primitives cannot draw any of them — the same reason
-// skating.md and puck_handling.md correctly own no diagram at all. Step 3's DIRECTION is
-// the exception: it is a bearing across a piece of ice with a goal frame on it, and the
-// document says in terms that it is "the one nobody teaches". A picture of a bearing is
-// something a picture can actually be.
-//
-// ⚠️ WHAT IS DELIBERATELY NOT DRAWN: THE FORBIDDEN DIRECTION ITSELF. The obvious design is
-// two routes from one defenceman, one to the corner and one across the goalmouth, so the
-// reader sees the contrast. It is geometrically false and was rejected for that. A player
-// is walked in the direction the defender drives, and the defender drives from the side he
-// is standing on: to walk this attacker the other way the defenceman would have to be on
-// his other shoulder, which is a different picture and not a second arrow on this one.
-// Drawing both from one anchor would assert that one defenceman standing in one place has
-// both options open, which is the thing that is not true. The hazard is carried by the
-// caption, and the goal frame, the crease and the goaltender are all drawn, at the end of
-// the ice the pair is being taken away from — so the reader can see what the other bearing
-// runs through.
-//
-// ⚠️ AND NO CONTACT MARK IS DRAWN, in a picture that IS about contact. `bodycheck` exists
-// in the renderer and has no legend row on purpose — "a legend that advertises a
-// body-check glyph without saying who may legally deliver one is a contact instruction
-// with no scope attached". The contact here is a box-out held and driven, not a check
-// thrown, and the caption carries the scope: USA Hockey 604(c) and Hockey Canada 7.3(a)
-// price driving a player off an established spot as a push in the divisions they name, and
-// IIHF 101.1 makes it an illegal hit in women's hockey.
+// So there is no route. The defenceman stands BESIDE the forward on the inside, and the
+// hazard is drawn as a PLACE — a `danger` band over the goal frame and the goaltender — rather
+// than as a direction of travel. Nothing in the picture moves.
 
 // The attacker, planted on the spot he wants and NOT in the paint. `net-front` is (84, 0),
 // which rink.json's own note warns is 1 ft INSIDE the crease on the centre line, so this
 // glyph is offset off both axes: at (77.5, 6) it is 11.5 ft out from the goal line and 6 ft
 // off centre, and the crease reaches neither — its front face is at x = 83 and it is never
-// wider than |y| = 4. Nothing here draws a skater standing in the blue paint. It is also
-// 9.6 ft from the goaltender's mark; an earlier draft had him at (80.5, 4.5) and rendered
-// with his glyph touching the G, which reads as an attacker standing on the goaltender and
-// was invisible in the source.
+// wider than |y| = 4. It is also 9.6 ft from the goaltender's mark.
 const A_PLANTED = { at: 'net-front', dx: -6.5, dy: 6 };          // (77.5, 6)
 
-// The defenceman, underneath him and on the side he is being driven FROM. He is at lower y,
-// which is what makes the drive run toward the corner drawn at the top of the picture, and
-// at lower x, which is up-ice of the attacker — the attacker has the inside, which is
-// exactly the case step 3 is written for.
+// The defenceman, BESIDE him at the same depth and on the inside — nearer the centre line of
+// the goal — which is the position step 1 wins and step 3 holds. Level with the forward (see
+// below for the half foot), so neither reads as behind the other.
 //
-// ⚠️ THE 7.9 FT BETWEEN THEM IS A DRAWING CONSTRAINT AND NOT A HOCKEY ONE, and the caption
-// says the shoulder is under the armpit rather than letting the gap say otherwise. A
-// forward's circle reaches 3.275 ft of ink and a defenceman's triangle 4.0, so two glyphs
-// closer than 7.275 ft eat each other and the white halo punches a hole in whichever was
-// drawn first. In the real thing these two are in contact.
-const D_UNDER = { at: 'net-front', dx: -9, dy: -1.5 };           // (75, -1.5)
+// ⚠️ THE 8 FT BETWEEN THEM IS A DRAWING CONSTRAINT AND NOT A HOCKEY ONE. Two glyphs closer
+// than about 7.3 ft eat each other's halo; in the real thing these two are shoulder to
+// shoulder. Clearances, from rink.mjs's own glyph geometry (triangle circumradius 3.6, apex
+// toward +y, halo 1.0): the triangle's right-hand ink reaches x ~ 81.1 at y = -4, clear of
+// the shaded band's front edge at x = 81.5 and of the crease arc; the goaltender's bare
+// letter at (85, 0) is 8.2 ft away and has no halo. Half a foot up-ice of the forward only
+// to buy that clearance; at this scale it reads as level.
+const D_INSIDE = { at: 'net-front', dx: -7, dy: -2 };            // (77, -2)
 
-// WHERE THE PAIR GOES: out toward the corner drawn at the top. `corner:right` is (82, 34),
-// and the route stops 4 ft short of it, because a walk-out is a few strides and not a trip
-// to the boards. The line is 24.4 ft long and runs (77.5, 6) -> (82, 30).
+// THE BAND: the goal frame and the goaltender, from the back of the net (x 92.33, the frame's
+// back rail) out to 1.5 ft in front of the crease's apex, and 1 ft outside each post (the
+// crease's own width, y = +/-4). ⚠️ IT USED TO STOP AT THE GOAL LINE (x 89), so the label
+// "goal frame" named a net box — x 89 to 92.33 — that the shading did not cover. A diagram
+// review found it on 29 September 2026; the band was extended rather than relabelled, because
+// the caption voices "the shaded goal frame and goalie" in three documents. It is
+// what a body moved across the front of your own net meets, and it is drawn as ice no body
+// is steered into rather than as a route away from it.
 //
-// ⚠️ ONE ROUTE, AND IT IS THE ATTACKER'S. THE DEFENCEMAN'S OWN ROUTE WAS DRAWN AND CUT.
-// The obvious version gives each player an arrow, since they travel together. Rendered, it
-// is wrong twice. The two of them are on the SAME LINE 8 ft apart — the driver behind, the
-// driven in front — so any line drawn from the man behind passes straight through the glyph
-// of the man in front, and a route through a player reads as a player skating through a
-// player. Offsetting the defenceman sideways to clear him fixes the drawing by falsifying
-// the hockey: a defenceman standing beside an opponent cannot drive him sideways, only one
-// standing behind that shoulder can.
+// ⚠️ WHY IT COVERS THE PAINT AND NOT ONLY THE ICE IN FRONT OF IT. A band lying wholly
+// outside the crease would shade the spot a screener legally stands on and the spot the
+// defenceman is holding — the D's ink reaches x ~ 81.1 — and would point at empty ice
+// rather than at the post and the goaltender, which are the hazard.
 //
-// So the single arrow is the path of the player BEING MOVED, which is also the half the
-// section's warning is about — "it is the player being moved who meets the post". The
-// defenceman's part is carried by where he stands and by his label.
-//
-// ⚠️ AND `skate` IS THE ORDINARY FORWARD-SKATING MARK, WHICH HE IS NOT DOING. There is no
-// glyph in either published key for a player walked off a spot, and inventing one would put
-// a symbol in the corpus that the reader's key does not define. So the mark is the ordinary
-// one and the CAPTION says he goes where he is driven. That is the same trade the file
-// header records for the missing stick symbol: draw what the key has, and say the rest.
-//
-// Neither limb of the arrival invariant is engaged. The route is owned by an OPPOSITION
-// skater, so the players at risk are ours: the defenceman at (75, -1.5) and the goaltender
-// at (85, 0) both lie behind the tip at (82, 30), 32.3 ft and 30.2 ft away respectively.
-// ⚠️ THOSE READ "24.5 ft and 30.8 ft". The conclusion held — both are far outside the 9 ft
-// limb (b) sets, and (a) excludes a goaltender outright — but neither figure was the
-// distance it claimed to be, and 24.42 is the route's own LENGTH, which is probably where
-// the 24.5 came from. Re-derive: hypot(82-75, 30+1.5) = 32.27, hypot(82-85, 30-0) = 30.15.
-const NF_A_TO = { at: 'corner:right', dy: -4 };                  // (82, 30)
+// ⚠️ LABELLED BY WHAT IS IN IT, NOT WITH A REGION NAME. "The goalmouth" is a named region
+// owned by content/foundation/rink_map.md; writing it here would make this polygon a
+// competing definition for `scripts/check_zones.py` to compare. The band CONTAINS
+// `the-goalmouth` (x 83-89): 48 of its 86.6 sq ft, about 55% since the band was extended to
+// the back rail, below check_zones' same-ice threshold, so the tool now lists the pair only
+// under a shared y span (it reported 80% before the extension). The overlap is deliberate: the
+// goalmouth is COVERAGE vocabulary in rink_map.md ("the weak-side defenceman owns the
+// goalmouth"), a place a defender is sent, so labelling a no-body-steered-here band with it
+// would contradict the owner. The label names the object;
+// the goaltender's G is visibly inside the band and the caption names both. Its centroid
+// sits on the G, so the label is nudged above the net, right of the forward's ink. labelDx 3.85
+// from the vertex-mean centroid (86.9) keeps the text at x 90.75, where it sat before the band
+// was extended. The
+// fill is a stronger `danger` red than the default because the crease paint under it
+// otherwise swallows the tint.
+const NF_BAND = [
+  { at: 'goal-line', dx: 3.33, dy: -4 },                         // (92.33, -4)
+  { at: 'goal-line', dx: -7.5, dy: -4 },                         // (81.5, -4)
+  { at: 'goal-line', dx: -7.5, dy: 4 },                          // (81.5, 4)
+  { at: 'goal-line', dx: 3.33, dy: 4 },                          // (92.33, 4)
+];
 
-// ⚠️ THIS CAPTION IS VOICED INSIDE THREE DOCUMENTS — content/positions/defender.md,
-// content/positions/goaltender.md and the owner — so every sentence in it has to be true in
-// all three, and none of it may say "this section".
+// ⚠️ THIS CAPTION IS VOICED INSIDE THREE DOCUMENTS — body_contact_and_battles.md (the
+// owner), positions/defender.md and positions/goaltender.md — so it must be true in all
+// three and may not say "this section". It carries only what the picture needs: the
+// cardinal-rule hedge (the D glyph otherwise reads as an assignment), the instruction, and
+// what the shaded band is. The penalty ladder, the from-behind tariffs and the receiving
+// posture live in all three hosts' prose and are not repeated here.
 //
-// ⚠️ IT WAS ALSO WRITTEN ON A PREMISE THAT HAS SINCE STOPPED BEING TRUE, AND THAT IS WHY IT
-// WAS THE LONGEST CAPTION IN THE CORPUS. The premise, stated here in capitals for a long
-// time, was that NOTHING THE CAPTION LEANS ON MAY LIVE IN A HOST'S SURROUNDING PROSE — so
-// the whole walk-out penalty ladder, the 56.1 entitlement and its provisos, the stick-lift
-// bounds and the checking-from-behind tariffs were all carried inside the picture's own
-// voiced unit. One clause of it said in terms that "content/positions/goaltender.md carries
-// neither 608(b) nor 7.5(c) ANYWHERE". Measured against the tree on 10 September 2026, that
-// is false: goaltender.md carries 608(b) four times and 7.5(c) four times, and both hosts
-// now set the whole ladder out in the prose immediately around their marker —
-// goaltender.md's "Box out on rebounds" and "move them toward the corner" bullets, and
-// defender.md's three "Net-front technique" subsections. The owner's §9 always did.
-// ⚠️ SO THE LADDER IS NOT CUT FROM THE CORPUS HERE; it is cut from the picture, which is a
-// second place every one of those rule numbers otherwise has to be corrected.
-//
-// WHAT THE CAPTION KEEPS, AND WHY EACH PIECE IS NOT SEVERABLE:
-//   - the cardinal-rule hedge on whose job the net front is. The picture draws a D and the
-//     unit is voiced alone, so without it the glyph reads as an assignment.
-//   - the two notation disclosures: no position-neutral shape, and no mark for a player
-//     being walked off a spot. Only the caption can say either.
-//   - why the two marks sit further apart than a real battle. A picture fact.
-//   - the DIRECTION, which is what the diagram is for, with its "caution rather than a rule
-//     anyone writes" disclaimer AND the counterweight in the same breath. The disclaimer
-//     alone once told a listener the hazard is unpriced.
-//   - the league scope, with 604(a)'s local-governing-body sentence and 604(b)'s per-game
-//     bar, because a reader who checks the classification list and finds they are not on it
-//     will drive. Re-grepped this session, whitespace-flattened, sources/usah.txt:
-//     "A local governing body may prohibit body checking in any classification"; "Any time a
-//     team from a Competitive Contact category (see sub-section (a) above) plays a team from
-//     a Body Checking category, body checking shall be prohibited under this rule."
-//   - the bound on the stick lift IN THE SENTENCE A LISTENER RETAINS. "stop at the position
-//     and the stick" was once the whole instruction left to every non-checking reader, and
-//     it was unbounded; "a stick lift taken below their bottom hand" is the retained form.
-//     The hooking citations behind that bound are in all three hosts and are not repeated
-//     here.
-//   - the skates-on-the-ice constraint and the receiving posture, both scoped to every
-//     league rather than to checking leagues.
-//
-// ⚠️ RE-ANCHORED 15 September 2026: "THE THREE TARIFFS THAT REMAIN" DESCRIBES NO STRING. The
-// shortening the same day cut ALL of them, and this repair restored TWO — 608(b) and 7.5(c). The
-// NHL's 43.2 and the IIHF's are quoted below and are NOT in the caption; they are in the hosts'
-// prose. Read what follows as the evidence file for four books, not as a description of the
-// caption. The caption's own two citations are re-grepped beside it, at the const.
-// PRIMARY TEXT FOR THE THREE TARIFFS THAT REMAIN, re-grepped this session with whitespace
-// flattened: USA Hockey 608(b), sources/usah.txt:3726 — "A major penalty plus game
-// misconduct penalty shall be assessed to any player who recklessly endangers an opponent,
-// or causes them to go head first into the boards or goal frame, as a result of checking
-// from behind"; Hockey Canada 7.5(c), sources/hc_layout.txt:4853 — a match penalty for one
-// who "pushes, body-checks, cross-checks, or hits an opposing player in any manner from
-// behind into the boards or goal frame, in such a way that the player is unable to protect
-// or defend themselves" (the first verb is "pushes", and a walk-out is a push, and the
-// vulnerability limb is quoted rather than dropped because that limb is the scope); NHL
-// 43.2, sources/nhl_rules.txt:5473 — "There is no provision for a minor penalty for checking
-// from behind"; IIHF 43.2, sources/iihf_rules_2026-27.txt:4053 and iihf_rules_v1.1.txt:3994
-// — "there is no option to award a minor penalty", the same clause number in both books and
-// in both editions. ⚠️ FOUR BOOKS ARE NAMED AND NO COUNT IS TAKEN OVER THEM: "three of the
-// four" says something about the fourth that naming three does not.
-//
-// ⚠️ THE NEGATION SEAM AT "and never at two minutes" IS A FULL STOP AND MUST STAY ONE. Run
-// on with a colon, "never at two minutes: a major plus a game misconduct under 608(b)…"
-// inverts to a listener as those penalties NOT applying. The same is true of "Never walk
-// anybody across the front of your own net.", which was a colon and is now a full stop.
+// ⚠️ NO `**bold**` IN A CAPTION. Captions are plain strings; remark-corpus.mjs's
+// `captionNodes` splits at the first ⚠️ and makes EVERYTHING after it one `warn-inline`
+// run, so the instruction sits after the glyph and the hedge before it.
 const netFrontWalkOut = {
   id: 'net-front-walk-out-direction',
   owner: 'content/technique/body_contact_and_battles.md',
   half: true,
   width: 900,
 
-  // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. Any note
-  // below was written against the longer text: a clause it names may no longer be in the
-  // caption, and it is kept for its reasoning rather than as a description of the string.
-  // ⚠️ AND THAT SHORTENING KEPT THE DISCOUNTING HALF AND CUT THE COUNTERWEIGHT, WHICH IS THE ONE
-  // DIRECTION THIS PARTICULAR SENTENCE MUST NEVER BE CUT IN. What survived was "Taking them to
-  // the corner instead is caution drawn from that hazard rather than a rule anyone writes.", full
-  // stop — so the caption's LAST WORD on walking a man across your own goalmouth was that nobody
-  // writes a rule about it, in a voiced unit heard with no surrounding context. Measured across
-  // the tree: "rule anyone writes" occurs SEVEN times in content/ and site/src/diagrams/, and the
-  // other SIX all attach the tariff in the same sentence or the next —
-  // body_contact_and_battles.md:1095 and :1527, goaltender.md:1112 and :1311, defender.md:237 and
-  // :728. This caption was the only naked one in the corpus. ⚠️ AND IT IS VOICED BEFORE THE
-  // COUNTERWEIGHT IN TWO OF ITS THREE HOSTS.
-  // ⚠️ THE DISCLAIMER ITSELF IS NOT THE FIX AND MUST NOT BE CUT. "not a rule anyone writes" is the
-  // honest disclosure — the corner direction genuinely is coaching caution — and non-negotiable 4
-  // protects it. What was missing was the second half, not the first.
-  // ⚠️ TWO BOOKS ARE NAMED, NOT FOUR, AND NO COUNT IS TAKEN OVER THEM. The four-book ladder stays
-  // cut from the picture for the reason recorded above — it is a second place every one of those
-  // rule numbers would otherwise have to be corrected — and the two restored are the two that
-  // reach a WALK-OUT: 608(b) because the goal frame is named in it, and 7.5(c) because the first
-  // of its four verbs is "pushes" and a walk-out is a push. The NHL's and the IIHF's "no minor at
-  // all" limb is deliberately NOT restored: it is a negation, it would be the third and fourth
-  // books in a sentence that takes no count, and both hosts' prose carries it.
-  // PRIMARY TEXT, re-grepped this session with whitespace flattened. USA Hockey 608(b),
-  // sources/usah.txt:3724-3727 — "A major penalty plus game misconduct penalty shall be assessed
-  // to any player who recklessly endangers an opponent, or causes them to go head first into the
-  // boards or goal frame, as a result of checking from behind". Hockey Canada 7.5(c),
-  // sources/hc_layout.txt:4853-4856 — "A Match penalty will be assessed to any player who pushes,
-  // body-checks, cross-checks, or hits an opposing player in any manner from behind into the
-  // boards or goal frame, in such a way that the player is unable to protect or defend
-  // themselves". ⚠️ THE VULNERABILITY LIMB IS CARRIED RATHER THAN DROPPED, because that limb is
-  // the scope; and 608(b)'s "head first" limb likewise, because 7.5(c) does NOT require head
-  // first and collapsing the two books into one clause would misstate whichever it fitted worse.
-  // ⚠️ AND THE NEGATION SEAM WARNING BELOW IS LIVE AGAIN. It went dormant when the clause it
-  // guards was cut; "and never at two minutes" is back, and it is back AS A FULL STOP.
-  // ⚠️ THE RECEIVING POSTURE IS ITS OWN SENTENCE AND ITS OWN SCOPE, AND THAT IS THE WHOLE POINT
-  // OF THIS BREAK. It used to be coordinated with "and" INSIDE the "In a checking league,"
-  // clause above, so a reader in a non-check league -- USA Hockey 12U and below, all
-  // girls'/women's and all non-check adult; Hockey Canada U13 and below and all female hockey;
-  // IIHF women's play; British rec -- heard the whole sentence as not addressed to them, and
-  // what they lost was "head up and chin off your chest" while being driven across a goal frame.
-  // The owner scopes it the other way in terms, at §6's first line: "Read this section whatever
-  // league you play in -- unexpected contact happens in non-check hockey too, and the boards and
-  // the goal posts are just as hard." Both siblings on the identical hazard carry the same
-  // scope: positions/winger.md and hockey-iq/playing_without_the_puck.md, "in every league,
-  // checking or not". The delivering instruction stays scoped to checking leagues; this does not.
-  // ⚠️ AND THE WALKING-SPEED FINDING ATTACHES TO THE INJURY, NOT THE COLLISION. This read "that
-  // collision can happen at walking speed", which as the last sentence of a safety block degrades
-  // to a true, empty statement and reads as a reason to relax. USA Hockey's sentence NEGATES A
-  // SPEED REQUIREMENT -- "A player doesn't have to be going at full speed for this to happen --
-  // it can occur at walking speed" (sources/huh.txt:229, read this session) -- and a
-  // collision at walking speed needs no such disclaimer. Only the injury does.
   caption:
-    'Defending your own net front, the net at the right: your defenceman underneath the opposition ' +
-    'forward on the side away from the corner. The one route drawn is the attacker’s — out toward the ' +
-    'corner, away from the goal — and he is not choosing it. Whose job the net front is in the first ' +
-    'place is a coaching choice rather than a law of hockey, so find out which your team plays. ⚠️ ' +
-    'Which league you are in decides whether you may move them at all, and it is the game in front of ' +
-    'you that settles that rather than your age group: USA Hockey Rule 604(a) lets a local governing ' +
-    'body prohibit body checking in any classification, and Rule 604(b) bars it any time a ' +
-    'Competitive Contact team plays a Body Checking team. Unless body checking is legal in the game ' +
-    'you are actually playing, stop at the position and a stick lift taken below their bottom hand. ' +
-    'Which way you move them decides what they hit, and that half applies in every league. Never walk ' +
-    'anybody across the front of your own net. That path has a steel goal frame at one edge and your ' +
-    'own goaltender at the other, and it is the player being moved who meets the post, travelling ' +
-    'sideways or backwards. Taking them to the corner instead is caution drawn from that hazard ' +
-    'rather than a rule anyone writes. But the worst version of it is priced, and never at two ' +
-    'minutes. USA Hockey Rule 608(b) is a major plus a game misconduct where a check from behind ' +
-    'causes an opponent to go head first into the boards or goal frame, and Hockey Canada Rule ' +
-    '7.5(c) is a match penalty where a player is pushed from behind into the boards or goal frame ' +
-    'and left unable to protect or defend themselves. ' +
-    'And where your league does let you drive from under the arm, ' +
-    'keep their skates on the ice, because a player whose edges are gone cannot brace at all. And in ' +
-    'every league, checking or not, if you are the one being moved: head up, chin off your chest.',
+    'Your net front; who covers it is your team’s call. ⚠️ Never walk a screener out, in any ' +
+    'game: they have no puck, so it is interference. Hold the inside beside them, no lean, no ' +
+    'push, and lift their stick below their bottom hand as the puck arrives, then let go. ' +
+    'Move nobody into or across the shaded goal frame and goalie.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right with our goaltender in its ' +
-    'crease. Two skaters and no puck. An opposition forward stands in front of the net, about eleven ' +
-    'and a half feet out from the goal line and six feet to the side drawn at the top of the ' +
-    'picture, clear of ' +
-    'the blue crease paint. Our defenceman stands below them and a little further from the goal ' +
-    'line, ' +
-    'on the side away from the corner. A single straight route leaves the opposition forward and ' +
-    'runs across the ice toward the corner at the top of the picture, ending in an arrowhead about ' +
-    'twenty-four feet along and short of the boards. No route is drawn for our defenceman. No route ' +
-    'runs across the front of the goal. The puck is not drawn, because at this moment it is up at ' +
-    'the point with a player outside the picture, and the battle is for the spot rather than for a ' +
-    'puck on the ice. Nothing in the picture shows a body check being delivered.',
+    'The defensive half of the rink, the net being defended at the right with our goaltender in ' +
+    'its crease. Two skaters and no puck, and nothing moves: no route is drawn. An opposition ' +
+    'forward stands in front of the net, about eleven and a half feet out from the goal line and ' +
+    'six feet to the side drawn at the top of the picture, clear of the blue crease paint. Our ' +
+    'defenceman stands beside them at the same distance from the goal line, on the inside, ' +
+    'nearer the middle of the net. A red shaded band covers the goal and the goaltender, from ' +
+    'the back of the net to a foot and a half in front of the crease and a foot outside each ' +
+    'post, labelled goal frame. The puck is at the point, not drawn. Nothing in the picture shows contact between the two skaters.',
+
+  zones: [
+    { points: NF_BAND, label: 'goal frame', danger: true, fill: 'rgba(200,16,46,0.28)',
+      labelDx: 3.85, labelDy: 5.5 },
+  ],
 
   players: [
     // The opposition, so SOLID; a forward, so a CIRCLE. Shape is the position, fill is the
     // team — the Hockey Eastern Ontario sheet's `● ○ Forward / Player` row.
     { id: 'A1', team: 'opp', pos: 'F', at: A_PLANTED, label: 'has the spot' },
 
-    // ⚠️ A DEFENCEMAN, AND THE SECTION DOES NOT SETTLE THAT. §9 is headed "Defending the net
-    // front" and names no position at all. The owner of the assignment is
-    // content/systems/defensive_zone_coverage.md, which settles it in terms and is quoted
-    // rather than paraphrased: "Under the house-default low zone collapse it is the
-    // weak-side defenceman, and that pairing is what the rest of this document assumes. It
-    // is not universal: under man-on-man the net front belongs to whoever's check went
-    // there" — which can be a forward. §8's own "Whose corner is it?" makes the same move
-    // about the neighbouring patch of ice.
-    //
-    // ⚠️ AN EARLIER VERSION OF THIS COMMENT IDENTIFIED THE PROBLEM AND THEN CONCLUDED THAT
-    // THE CAPTION HANDLED IT. It did not. The caption said "your defenceman is underneath
-    // him" and stopped: no system named, no alternative named, and no instruction to find
-    // out which the reader's team plays — which is the cardinal rule of the style guide, in
-    // a unit that is voiced alone with a 300 ms break either side, so it read as an
-    // assignment. The refutation was in this same file: `corner-escape-routes`, written the
-    // same round by the same author for the adjacent patch of ice, carries the full
-    // three-part treatment. This caption now carries it too. ⚠️ Naming the difficulty in a
-    // comment is not discharging it.
-    //
-    // The notation has no position-neutral glyph, so this is a D because the net front is
-    // the commonest place to find one, and the caption says so instead of implying it.
-    { id: 'D', pos: 'D', at: D_UNDER, label: 'drives from underneath' },
+    // ⚠️ A DEFENCEMAN, AND THE SECTION DOES NOT SETTLE THAT. §9 names no position. The
+    // owner of the assignment is content/systems/defensive_zone_coverage.md: under the
+    // house-default low zone collapse it is the weak-side defenceman, and under man-on-man
+    // it is whoever's check went there, which can be a forward. The notation has no
+    // position-neutral glyph, so this is a D because that is the commonest case, and the
+    // caption's "who covers it is your team's call" says so rather than letting
+    // the triangle read as an assignment.
+    { id: 'D', pos: 'D', at: D_INSIDE, label: 'holds the inside' },
 
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
   ],
 
-  // NOT NUMBERED. One route cannot carry an order, and adding a badge to a single route
-  // would imply a second one exists somewhere.
-  routes: [
-    { from: A_PLANTED, to: NF_A_TO, kind: 'skate' },
-  ],
+  // NO ROUTES. See the redraw note above: the only route this picture ever carried was the
+  // one the corpus now forbids.
+  routes: [],
 };
 
 // ---------------------------------------------------------------------------

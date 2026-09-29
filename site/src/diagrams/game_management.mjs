@@ -441,7 +441,7 @@ const clearAtFiveOnSix = {
     'changes the on-ice strength; the one that lets a goaltender come back in belongs to the team ' +
     'that pulled its own, and that is not you. USA Hockey attaches no substitution restriction to an ' +
     'icing at all, and Hockey Canada writes one only in the categories its Rule 6.7(d) names — ' +
-    'U18AAA, Junior, and Senior at the Member’s option — so find out which rules your league runs. ' +
+    'U18AAA and Junior, and in Senior at the Member’s option — so find out which rules your league runs. ' +
     'This is a shot to take when you can actually hit the net, and not a blind heave.',
 
   describe:
