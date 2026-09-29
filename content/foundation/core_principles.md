@@ -6,35 +6,43 @@
 > book, amended locally; see [UK and England Rules](uk_rules.md). **This page is a starting
 > point, not a substitute for the documents it points at** — each principle names the
 > document that covers it in full, and that document carries the detail, the exceptions
-> and the evidence.
+> and the evidence, and is the one to follow where the two differ.
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Rules Primer](rules_primer.md) · [UK and England Rules](uk_rules.md) · [Rink Map](rink_map.md) · [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Risk Management](../hockey-iq/risk_management.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md)
 
 ## Key focus
 
-**You almost never have the puck** — about forty seconds in every twenty minutes of ice time, measured on professional forwards at five-on-five, on tracking data the NHL itself calls unofficial — so the rest of the shift is most of your game: be somewhere the carrier can pass to, and get back above the puck when your team loses it.
+**Play the part of the shift you spend without the puck.** NHL forwards at five-on-five have it for about forty seconds in every twenty minutes of ice time, and yours will be a small share too, so the rest is most of your game: be somewhere the carrier can pass to, and when your team loses it, get back above the puck.
 
-**Look before the puck reaches you** — unless you are the goaltender, where the puck is already live and looking away from it is never free. Otherwise, a glance while the pass is travelling is free; one taken after it arrives is paid for in possession.
+**Look before the puck reaches you.** A glance while the pass is still travelling is free; one taken after it arrives is paid for in possession. The exception is the goaltender, who tracks a live puck all the way in and has nothing to gain by looking away from it.
 
-**Where you are standing decides what a mistake costs**, so take the stride that changes the ice before you choose the play.
+**Defending, stay goal side.** Keep your body between the attacker you are responsible for and your own net, with your stick in the passing lane. Once they are between you and your goal, your goaltender is doing your job.
+
+**When the puck goes to the net, go with it** — unless your team has made you the safety on that shot, a defenceman at the point or the high forward at the top of the circle. Get to the front of the goal and stop there, just outside the crease, with your stick on the ice, because a rebound or a tip belongs to the player who is already standing there. Take the ice in front of the net, never the goaltender.
+
+**Where you are standing decides what a mistake costs.** Play simple in your own end and creative in theirs, and take the stride that changes the ice before you choose the play.
+
+**Never pass the puck — or skate it — across the front of your own goal.** Take it behind the net, up the wall, or through a high exchange above the tops of the circles instead — teams differ on which, so ask what yours uses. A puck lost there is a battle, and a puck lost in your own slot is a shot against.
 
 **Give the player with the puck two places to put it, at different angles**, because two teammates in one line from the puck are a single option.
 
-**Most of what a coach tells you is your team's system rather than a law of hockey.** When your bench and this page disagree, your bench wins.
+**Find out what system your team plays, and play it.** Most "always do X" in hockey is your team's system rather than a law of the game, so when your bench and this page disagree, your bench wins.
 
-**Whether you may body check, or be body checked, is set by your age group, your league and your country** rather than by anything visible on the ice — ⚠️ **so ask your coach or your league which category you are in before your first game.**
+**Find out whether your league allows body checking before your first game.** Whether you may body check, or be body checked, is set by your age group, your league and your country rather than by anything visible on the ice — ⚠️ **so ask your coach or your league which category you are in.**
 
-**Decide how you will meet the boards on the way in, not on arrival:** go in on an angle rather than straight at the wall, and get your skates parallel to it with your head up and your chin off your chest. ⚠️ **Never turn your back to the wall, and never duck.** The angle is not available in the last half-stride, and a wall does not need an opponent to hurt you — so this one is yours in a non-checking league exactly as it is in a checking one.
+**Decide how you will meet the boards on the way in, not on arrival:** go in on an angle rather than straight at the wall, with your skates parallel to it, your head up and your chin off your chest. ⚠️ **Never turn your back to the wall, and never duck.** A wall does not need an opponent to hurt you, so this holds in non-checking hockey exactly as it does in checking hockey.
 
 ## Overview
 
-Hockey has a small number of ideas that stay true after the systems, the positions and the rule books change. This page collects them, says what evidence each one rests on, and points at the document that covers each one in full.
+Hockey has a handful of ideas that hold whatever system, position or league you play in, and this page is those ideas. Most of them are about the time you spend without the puck, because that is most of your shift.
 
-The reason to learn them as principles rather than as instructions is that instructions expire. The instruction you were given for a defensive-zone corner belongs to the system your team happened to play that season; the reasoning underneath it transfers to a new position, a new coach and a new league. A player who knows only the instruction is stuck the first time the situation is one nobody described to them.
+Defending, they come down to three habits. Stay goal side of the attacker you are responsible for, with your stick in the lane. When your team loses the puck, get back above it rather than chasing it. And treat the front of your own net as the most expensive ice in the game: nothing goes across it, and under pressure you play simple — behind the net, up the wall — rather than clever, because a mistake there is a shot against rather than a lost possession.
 
-Two of the seven are not tactics at all. One is a rule about rules — which book you are under, and where you sit inside it, decides what is legal for you — and one is a safety constraint that holds in every league whether or not yours allows body checking. Those two are the ones to settle before your first game, because being penalised, ejected or hurt costs more than being out of position.
+Attacking, your job is to be useful to the player with the puck. Look before it comes to you, so the decision is made before the puck arrives. Stand where you give the carrier a second option at a different angle from the first, not in the same line as a teammate. And when the puck goes to the net, go with it unless you are the one your team keeps back as the safety, and stop at the front — just outside the crease, never on the goaltender — because the rebound goes to whoever is already there.
 
-The rest are judgement, and each says plainly how much measurement is behind it. Some rest on published research. Some are coaching reasoning with no measurement behind them, and where that is the case the section says so rather than dressing it up.
+Three of the points you settle before the play reaches you, and they cost the most if you get them wrong. Find out what system your team plays, because most "always do X" is a system and a different coach will want something else. Find out whether your league allows body checking, because that is the difference between a legal play and a penalty — or, for a reckless hit, an ejection. And decide how you meet the boards before you reach them, because a wall does not need an opponent to hurt you.
+
+The reason to learn these as principles rather than as instructions is that instructions expire with the system your team happened to play that season, while the reasoning underneath them transfers to a new position, a new coach and a new league. Each section below says what its evidence is — published research, the governing documents themselves, or coaching reasoning with no measurement behind it — and names the document that covers it in full.
 
 ---
 
@@ -96,7 +104,7 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 
 **What to notice.** Watch your own shift back and count how many seconds you were actually touching the puck. The number will be smaller than your memory of it, because the seconds with the puck are the ones you remember.
 
-**What to do.** Treat off-puck play as four separate jobs rather than one — your team has the puck, they have the puck, the puck is loose, or possession has just changed — because what is right in one of those states is close to the opposite of what is right in another. Most players have a plan for one of the four.
+**What to do.** Treat off-puck play as four separate jobs rather than one, because what is right in one of them is close to the opposite of what is right in another. **When your team has the puck**, get open where the carrier can see you, and when the puck goes to the net, go with it and stop at the front for the rebound — just outside the crease, never on the goaltender — unless your job on that shot is the safety at the point or the top of the circle. **When they have the puck**, the default these pages assume is that the closest player pressures it, with the stick and an angle; under a 1-2-2 forecheck or a trap fewer players go, so find out what your team runs. If you are not the one pressing, stay goal side of the attacker you are responsible for, with your stick in the passing lane. **When the puck is loose**, one player goes hard, one supports and nobody else joins — which of you is which is your team's call. **When possession has just changed**, act before the other side does: if your team won it, go; if it lost it, get back above the puck, between it and your net. Most players have a plan for one of the four.
 
 **Worked example.** A winger who "had a quiet game" usually means they touched the puck rarely. But the two most valuable things they did that night — arriving at the right moment so the defenceman had somewhere to put a breakout pass, and getting back above the puck so a turnover did not become a rush — both happened without the puck, and neither shows up in anybody's memory of the game.
 
@@ -136,7 +144,7 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 
 **What to notice.** The question is: *if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?* In front of your own net the answer is none and none. Deep in their corner it is four or five seconds and the whole team.
 
-**What to do.** Change where you are standing before you decide what to do. One stride out of the most expensive ice improves every option on your list, and it is almost always available.
+**What to do.** Change where you are standing before you decide what to do. One stride out of the most expensive ice improves every option on your list, and it is almost always available. **And never pass the puck — or skate it — across the front of your own goal.** Go behind the net or up the wall instead. Teams differ on the route out — some exchange behind the net, some high above the circles — so ask which yours uses; what does not vary is that your own slot is not a route.
 
 **Worked example.** You are behind your own net with the puck and a forechecker arriving. The cross-ice pass to the far winger is on. It is also the one option on your list whose failure is a goal rather than a lost possession, because if it is read you have handed them the puck in the one place where the turnover and the shot are the same event. The rim up the wall is worth less if it works and costs almost nothing if it does not, and that is what makes it the better bet from there and the worse bet from the other end of the ice.
 
@@ -190,6 +198,9 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 
 ## Common Mistakes
 
+- **Watching the puck instead of the attacker you are covering.** The puck pulls every eye on the ice, and the player you were meant to be between it and your net walks in behind you. Stay goal side, keep them in view, and take short looks at the puck rather than long ones.
+- **Stopping short of the net, or peeling away once the shot has gone.** The rebound goes to whoever is already at the front of the goal. Unless you are the one your team keeps back as the safety, go all the way and stop there, just outside the crease, with your stick on the ice — the ice in front of the net, never the goaltender.
+- **Moving the puck through your own slot under pressure.** A pass across the front of your own goal that gets read is a shot against, not a lost possession. Go behind the net, up the wall or through a high exchange above the circles — whichever your team uses — and save the clever play for their end.
 - **Using a principle to argue with a coach.** If your bench tells you something that contradicts a page here, your bench wins on the ice and you ask about it afterwards. A principle is for the situations nobody has given you an instruction for.
 - **Treating a principle as though it were a rule.** Only principle 2 is about rules, and it is about finding out which rules are yours; principle 7 is a safety constraint: when the angle has gone, its fallback takes over — but you never turn your back and never duck, in any situation. The other five are judgement, and judgement can be overruled by a situation: use them to choose when nobody has told you what to do, and let the play in front of you win when the two disagree.
 - **Assuming that what is measured in professional hockey is true of your league.** Take the direction from professional measurements and leave the exact numbers with the players they were measured on. The two measured findings on this page — how little of a shift is spent with the puck, and what looking first is worth — were both measured on professionals, but not both in the NHL: the puck-possession figures are NHL tracking data, and the scanning figures are from the Swedish men's and women's top leagues.
@@ -200,16 +211,17 @@ The rest are judgement, and each says plainly how much measurement is behind it.
 
 ## Key Takeaways
 
-1. **Most of what you are told is your team's system, not a law of hockey.** Name the system, ask what the alternative would change, and find out which one your team plays.
-2. **Which rule book you are under, and which age and league category you sit in, decides what is legal for you** — ⚠️ **so ask your coach or your league which category you are in before you play a shift, because you cannot work it out on the ice.**
-3. **If you play adult recreational hockey,** ⚠️ **find out whether your league is CARHA-affiliated before you rely on "hold your ground."** CARHA Rule 49(a) reaches a player who *"does not avert body contact with an opponent"*, which the NHL, IIHF, PWHL and USA Hockey books do not, and it can cost a minor, or an ejection with a suspension — but **Rule 49(c) keeps genuinely accidental contact outside it**, and **that the limb amounts to a duty to get out of the way is a reading of the rule's grammar, which CARHA does not gloss.**
-4. **You almost never have the puck.** Measured on NHL forwards at five-on-five — on tracking data the league itself calls **unofficial** — it is about forty seconds in every twenty minutes of ice time, in bursts of about 1.3 seconds, so the off-puck shift is the game. Have a plan for when your team has it, when the other team has it, when it is loose and when it has just changed hands, not only for the moment it is on your stick.
-5. **Look before the puck reaches you.** In professional hockey the action after a reception succeeded 78.8% of the time when the player had looked first against 70.1% when they had not, on the researchers' own definition of success — and those researchers say their data cannot tell you whether looking more than once adds anything. **This one reverses in goal**: a goaltender facing a live puck has nothing to look away for, and tracks it all the way in instead.
-6. **Where you are standing decides what a mistake costs**, so take the stride that changes the ice before you choose the play. That ranking is coaching reasoning rather than a measured result.
+1. **You almost never have the puck.** Measured on NHL forwards at five-on-five — on tracking data the league itself calls **unofficial** — it is about forty seconds in every twenty minutes of ice time, in bursts of about 1.3 seconds, so the off-puck shift is the game. Have a plan for when your team has it, when the other team has it, when it is loose and when it has just changed hands, not only for the moment it is on your stick.
+2. **Look before the puck reaches you.** In professional hockey the action after a reception succeeded 78.8% of the time when the player had looked first against 70.1% when they had not, on the researchers' own definition of success — and those researchers say their data cannot tell you whether looking more than once adds anything. **This one reverses in goal**: a goaltender facing a live puck has nothing to look away for, and tracks it all the way in instead.
+3. **Defending, stay goal side of the attacker you are responsible for** — your body between them and your net, your stick in the passing lane. Unless your team sends you to pressure the puck, hold that position rather than joining the chase.
+4. **When the puck goes to the net, go with it** unless you are the one your team keeps back as the safety, and stop at the front — just outside the crease, stick on the ice — because the rebound goes to whoever is already there. Take the ice in front of the net, never the goaltender.
+5. **Where you are standing decides what a mistake costs**, so take the stride that changes the ice before you choose the play. That ranking is coaching reasoning rather than a measured result.
+6. **Never pass the puck — or skate it — across the front of your own goal.** Take it behind the net, up the wall, or through a high exchange above the tops of the circles, and ask which your team uses. A puck lost there is a battle, and a puck lost in your own slot is a shot against.
 7. **Give the carrier two places to put the puck, and make sure they are at different angles**, because two teammates in one line from the puck are one option. That is coaching reasoning too, rather than a measured result.
-8. **Go in on an angle rather than straight at the wall** — ⚠️ **and when you cannot avoid it, meet it with your skates parallel to the boards, feet apart and knees bent, and your forearm and hip to the wall — never the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest.** Never turn your back to the boards, and never duck. ⚠️ **If it arrives with you already facing it and no time to turn, spread the load instead: stick and gloves up on the glass, arms out — damage limitation, not the posture to aim for.**
-9. **The turned back and the tucked chin are two prohibitions against two different injuries** — a turned back makes the contact a hit from behind, and a tucked chin straightens the cervical spine — ⚠️ **an injury that research restated by USA Hockey says can happen at walking speed.**
-10. **Every principle here names the document that covers it in full, and that document is the one to follow where the two differ**, because the short version on this page cannot carry every exception.
+8. **Most of what you are told is your team's system, not a law of hockey.** Name the system, ask what the alternative would change, and find out which one your team plays.
+9. **Which rule book you are under, and which age and league category you sit in, decides what is legal for you** — ⚠️ **so ask your coach or your league which category you are in before you play a shift, because you cannot work it out on the ice.**
+10. **If you play adult recreational hockey,** ⚠️ **find out whether your league is CARHA-affiliated before you rely on "hold your ground."** CARHA Rule 49(a) reaches a player who *"does not avert body contact with an opponent"*, which the NHL, IIHF, PWHL and USA Hockey books do not, and it can cost a minor, or an ejection with a suspension — but **Rule 49(c) keeps genuinely accidental contact outside it**, and **that the limb amounts to a duty to get out of the way is a reading of the rule's grammar, which CARHA does not gloss.**
+11. **Go in on an angle rather than straight at the wall** — ⚠️ **and when you cannot avoid it, meet it with your skates parallel to the boards, feet apart and knees bent, and your forearm and hip to the wall — never the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest.** Never turn your back to the boards, because that makes the contact a hit from behind, and never duck: a tucked chin straightens the cervical spine, ⚠️ **and research restated by USA Hockey says a head-down collision can injure it at walking speed.** ⚠️ **If the wall arrives with you already facing it and no time to turn, spread the load instead: stick and gloves up on the glass, arms out — damage limitation, not the posture to aim for.**
 
 ---
 

@@ -1,0 +1,114 @@
+# Round 29 September 2026, wave 8: P1/P2 batch A (ten files), and a corpus-wide airway repair
+
+**Scope.** 15 content files.
+- **P1 re-aim of ten documents never before waved.** Key focus, Overview, Common Mistakes and Key Takeaways were aimed at what a player does, with absent kernels filled. The ten were `neutral_zone_systems`, `breakouts`, `puck_support_and_spacing`, `scanning_and_anticipation`, `time_and_space`, `skating`, `mental_game`, `practice_and_development`, `conditioning_and_recovery` and `core_principles`.
+- **P2 placement** where a file had panels: `neutral_zone_systems` 4→0, `scanning_and_anticipation` 2→0, `breakouts` 1→0.
+- **Safety repairs the re-aim surfaced**, in `team_play_and_culture`, `body_contact_and_battles`, `on_ice_communication`, `rules_primer` and `uk_rules`.
+- **The owner's instruction:** `/loop` "keep working on P1 and P2 with as much parallelism as possible".
+
+**Method.**
+- Ten authors ran in parallel, one per file, under the owner's lane rule: repair a rules defect only if it is permissive and penalty-bearing, and report the rest.
+- Each file had a safety and craft read. Every finding was fixed by a follow-up author, then four grouped final reads (A–D) and a last read of every later fix were run.
+- The live plan log is Appendix A, verbatim.
+
+## What the reads found
+
+- **Absence, again.** Every Key focus was short of kernels a coach names first: gap and angling in `time_and_space`; goal side and going to the net in `core_principles`; backpressure in `neutral_zone_systems`; rebound position in `scanning_and_anticipation`; change of speed in `skating`; load progression in `practice_and_development`. Board posture inherited from `body_contact_and_battles` was demoted from four Key focus layers under the owner's document-relative ruling, each with a layer test.
+- **LIFE-SAFETY, found by a reviewer and then swept corpus-wide: the CRT6 airway exception.**
+  - CRT6's "Remember" box says: *"Do not attempt to move the athlete (other than required for airway support) unless trained to do so."*
+  - About 20 sites told a bystander flatly "do not move them" (several were Key Takeaways voiced alone). One (`body_contact` :924/:941) made airway support conditional on being trained.
+  - All are repaired: `conditioning_and_recovery`, `team_play_and_culture` ×5, `body_contact_and_battles` ×12, `rules_primer` :453 and `uk_rules` ×3. The helmet instruction stays unconditional. A final read found the 11th `body_contact` site after the fix brief listed ten.
+- **Penalty-bearing:**
+  - "eat it against the wall" and its gloss in `on_ice_communication` read as pinning the puck for a whistle. That is a delay-of-game minor under USAH 632(b), NHL/IIHF 63.2(i) and PWHL 65.2(i). HC 10.1(i) and CARHA 74(b) excuse it only while the player is being checked. It is now "shield it, never pin it".
+  - `breakouts`' net-front screen was scoped only to USA Hockey. HC 8.3 and CARHA 66(a) Note 2 bar running interference too; that is now in every layer.
+  - `time_and_space` facts :267's false "only through 640(d)" (USAH 640(g) also reaches via 640(b)) is fixed.
+  - The CARHA Rule 49 casebook tiers were added.
+  - HC 6.7(d)'s "U18AAA, Junior and Senior at the Member's option" (U18AAA/Junior are mandatory) is fixed in `neutral_zone_systems`. About 25 other sites are carried.
+- **Coaching choices stated as laws.** Several were caught in summary layers voiced alone: "go to the net" given to every player (the D/F3 safety), "pressure if closest" (the 1-2-2 / trap), "the middle of your own end" (the high exchange), "never hang at the red line" (the stretch man), and `mental_game`'s "make the play". The last contradicted `risk_management`'s "glass and out".
+- **Evidence overstatements:** unsourced superlatives, "the largest meta-analysis", "better outcomes" and "no strides at all" (USAH Casebook 607 Sit. 3 says "without the two fast strides"). Each is scoped to its source.
+
+## Gate
+
+- **Build:** the first build ran 17:22:19–17:23:10. After the gate-block repairs the covering build ran **18:27:39–18:28:44**, with the absolute npm binary: exit 0, through `check:links` (11,601 links; all resolve). The newest content edit (in any file) was 18:27:01, and it also covers the wave-9 files in the tree.
+- **Mechanical gates:** `check_links`, `check_facts`, `check_absolutes`, `check_geometry` and `check_secrets` all exit 0. `check_counts --update`: all figures match.
+- **Callout checks:** `--bare` is 0. `--panels` was 46 on the first build (53 before). On the covering build it is 31, a figure that includes the unstaged wave-9 panel moves.
+- **Markers:** re-run on the final tree across all 15 files, `check_marker_pairs` finds 0 lost markers in 14 files. The 15th, `mental_game`, flags one unit, the "finish every check" split: the marker moved with its hazard into its own paragraph. Three readers verified this.
+- **Site (C10):** a `site-reviewer` checked all 15 pages on the 17:23 dist and found no Critical or Major. DOM: 0 bare glyphs and 0 untreated strong runs. Three target pages had 0 panels. Key focus siblings matched. Moved runs were checked in light and dark, with contrast AA. 400px via iframe, no console errors, no off-origin requests. Minors are carried.
+
+## Dimension coverage
+
+| # | Dimension | Checked? | By whom | Notes |
+|---|---|---|---|---|
+| D1 | Rules accuracy | Yes | `safety-reviewer` per file (rules-checked against `sources/`), and final reads A–D | Every changed rule claim re-derived: USAH 604/607/632/640, HC 6.7/7.3/8.3/10.1, CARHA 49/52/74, NHL/IIHF 63.2/69/78.5, IIHF 101.1, PWHL 65.2/83.4. |
+| D2 | Rules travelling without exceptions | Yes | same | The airway exception; HC/CARHA on the screen and on pinning; 640(b). |
+| D3 | Rule-set divergence | Yes | same | |
+| D4 | Citation integrity | Yes | readers + `check_quote_drift` | New quotations verified verbatim (CARHA casebook 49; CRT6 read on the rendered page). |
+| D5 | Provenance | Partly | readers | The time_and_space trailer was updated. The on_ice_communication trailer lacks its new citations (carried). |
+| D6 | Negative existence claims | Yes | readers | Unsourced superlatives scoped (mental_game, practice, puck_support). |
+| D7 | The cardinal rule | Yes | `content-reviewer` (core_principles, time_and_space) + combined readers | Role- and system-scoping of tactics in five files. |
+| D8 | Numeric ownership | Partly | readers | Checked against their owners: "a second early" (aligned to its owner); the 30–45 s shift figure (owner conditioning_and_recovery :73). Checked against this document's body only, not re-derived from the owner: the practice_and_development load and possession figures and conditioning's "more than three times" (10.10 vs 3.11). No other numeric claim changed in this diff. The owner-document re-derivation of the practice and conditioning figures is **declared out of scope** for this wave and carried in the plan. |
+| D9 | The summary layer | Yes | every reader (the P1 subject) | |
+| D10 | The key-facts layer | Yes | readers | Facts lines read voiced alone. |
+| D11 | Reader safety | Yes | `safety-reviewer` on every file, twice (a per-file read and the final reads A–D), plus the last read | The airway census. |
+| D12 | Read-aloud integrity | Yes | every reader rendered with `md_to_speech` | |
+| D13 | Folklore | Yes | readers | Superlatives removed ("punishes hardest", "single most common", "largest"). |
+| D14 | Structure, style, cross-links | Partly | `check_links`, readers | Links and anchors were checked mechanically; house style was read only in the re-aimed summary layers. The body prose of the 15 files outside those layers was not style-reviewed and is declared out of scope. |
+| D15 | The rendered site | Yes | `site-reviewer`, 15 pages | |
+
+## Gate block and repair
+
+The first `commit-gate` run returned **BLOCK** on four conditions. All four were right.
+
+- **C8.** Folding the live log into the plan dropped the WNIHL "non-checking" safety row and three minor rows. They are now carried in the plan. The WNIHL row itself was then fixed in `defending_the_rush` (wave 9), and `team_play_and_culture` :511 and `switching_positions` :212 remain carried.
+- **C11/C6.** Nothing on disk showed the final bytes had been read. Two `safety-reviewer`s then read the staged bytes (`git show :<path>`) of all nine late-edited files, and both were **CLEAR**.
+  - Minors from those reads were applied in a tiny batch, which was read and found **CLEAR**:
+    - `mental_game` now says "off the glass — not over it — and out" (NHL 63.2(iii), IIHF 63.2(III), PWHL 65.2(iii));
+    - `body_contact` KT8's airway lead and "[a]ssume";
+    - `uk_rules`' "CRT6 adds the airway exception".
+- **C5.** A `source-verifier` rendered `crt6.pdf`. It is byte-identical to England Ice Hockey's mirror, and Crossref confirms vol 57(11):692-694. All 57 CRT6 quotations are **VERBATIM**.
+- **C4.** A `rules-verifier` checked the staged claims. It confirmed the pinning rule in all six books, the CARHA 49 casebook tiers, HC 6.7(d) in neutral_zone_systems, Casebook 607 Sit. 3, and the scanning, breakouts, conditioning and skating citations. It found three blockers, all since fixed and read:
+  - **`breakouts` (permissive).** It told CARHA and HC screeners to "ask your officials". It now applies CARHA **49(a)** ("does not avert body contact"): up to a major, mandatory on injury, which means an ejection via 30(a) and **at least** a one-game suspension via 32(d). It also applies HC **8.3** impeding in every layer. KT10's HC 6.7(d) now reads "only in U18AAA and Junior, and in Senior where the Member opts in". The facts Never line is now scoped: stand still under the NHL/IIHF; USA Hockey 625(a)(1) makes the screen a minor; under CARHA, give the forechecker the ice.
+  - **`time_and_space` :267 (permissive by omission).** "Two routes" was a closed count and missed **604(c)/(d)/(e)**, a pick made as a body check where checking is barred. That route is now in the facts, body and CM, with the local-prohibition/604(b) scope, and 640(b) is qualified.
+  - **`puck_support_and_spacing` :438.** The time-out bar is **NHL 87.1**, not Rule 81.
+- **C3.** D14's partial scope is now stated in the table.
+
+The account hit its weekly usage limit mid-round and the owner switched accounts. The agents that failed were re-dispatched; nothing was lost.
+
+**Last reads.** A `safety-reviewer` read every unstaged hunk against the index: **no Critical or Major**. It found puck_support, time_and_space, body_contact, uk_rules and mental_game CLEAR. Three breakouts minors were applied ("at least" at 7 sites, the Never-line scope, the 49(a) mandatory major), and a final quick read of those was **CLEAR**. One readability minor is carried (the Never line's "Get there" has no antecedent).
+
+## Carried forward
+
+- Every open 🔴 row in Appendix A is carried in `OPEN_ITEMS.md` under "OPEN ROWS CARRIED OUT OF WAVE 8", including the four the first gate found dropped. The gate-block, C4 and last-read findings (and the censuses they opened: covering the puck, "ask your officials", "two routes", "a one-game suspension", "hips and back") are there too.
+- **Heads for the next wave:** P1 batch B (12 files); the HC 6.7(d) "Member's option" sweep (about 25 sites, permissive); the PWHL 84.1 → 83.4 citation sweep; the USAH 69.1 screen reasoning at `center.md:428`; the Casebook 607 "no strides" and "writes no bare one" sweeps; the context-aware "(i)" renderer fix.
+
+## What this method could not have found
+
+- **Lexical sweeps.** Other wordings of an act slip past: airway was swept by five phrasings, and "hold / pin / eat it" by a few.
+- **Officiating practice and field execution.** How officials apply these rules, and whether a legal technique is done safely, are not on disk.
+- **Real devices.** The site review used a 400px iframe, not a phone.
+
+## Appendix A — the live plan log, verbatim
+
+**Wave 8 (P1/P2, owner /loop "keep working on P1 and P2 with as much parallelism as possible", 29 Sep):** ⏳ batch A dispatched, 10 files, one agent each, P1 re-aim + P2 placement under the lane rule: neutral_zone_systems, breakouts, puck_support_and_spacing, scanning_and_anticipation, time_and_space, skating, mental_game, practice_and_development, conditioning_and_recovery, core_principles. Batch B after readers: how_to_watch_hockey, getting_started, reading_ice_hockey_diagrams, language_and_glossary, rink_map, rules_primer, uk_rules, special_teams, offensive_zone_play, defending_the_rush, passing_and_receiving, shooting. The wave-7 files (staged, awaiting the gate) are held until commit.
+- ✅ **W7 committed `773c96b`, pushed 29 Sep** (record `round_2026-09-29_wave7_census_rows.md`; the gate CLEARED on its 3rd run after C4/C6/C10/C8 repairs).
+- 🔴🔴 **LIFE-SAFETY CENSUS, airway (found by the W8 conditioning reader):** CRT6 "Do not attempt to move the athlete (other than required for airway support) unless trained to do so." Sites that dropped the airway exception: conditioning KT11/CM (✅ fixed, W8), team_play ×5 layers (✅ fixed, W8), body_contact ✅ FIXED at 10 sites (the census had named 4; the Key focus :31, Overview :43, facts :922, :1580 slew-foot line and body :1713 were also flat; :924/:941's "trained AND airway" is now CRT6's logic). Further flat sites: rules_primer :453 (⚠️) and uk_rules :432/:472/:601 ✅ fixed: rules_primer :453 and uk_rules :432/:472/KT15 :601 (:601 was an unquoted paraphrase of ukcg.txt:381-382; the UK guidance itself has no airway exception, which comes from CRT6 alone). The airway census is now CLOSED lexically (helmet / move them / neck injury / airway / lying). ⏳ final read.
+- ✅ W8 FINAL READ A (core_principles, time_and_space, scanning): all CLEAR. Carried minors: time_and_space Overview "any contact you steer or lean into is a penalty" and Key focus/KT6 are STRICTER than IIHF 101.1 / USAH competitive contact / HC 7.3 (pursuit push-and-lean is allowed) → rules-verifier; scanning :368 "planted on the crease line" is allowed under NHL/IIHF, but USAH's crease includes its lines (usah.txt:4508-4509; goal only); core_principles net-front lacks "blade out of the paint"; **PWHL 84.1 cited as printing the three line-change exceptions, but only 83.4 does (pwhl_rules.txt:7176-7181)**: scanning facts :316/trailer :648, on_ice_communication, winger, goaltender, forechecking; the time_and_space angling facts block has no CARHA limb (pre-existing); scanning facts :473 vs :474 tension.
+- ✅ W8 FINAL READ B (breakouts, neutral_zone_systems, puck_support): all CLEAR. breakouts :840/:864 "hold it in the corner" ruled the pinning shape and :866 "cannot be punished" contradicts the own-goal line (⏳ tiny fix). Carried: breakouts Key focus/Overview wall protection lacks "never duck/head up" (acceptable demotion; KT3/KT4 carry it); puck_support Key focus "unless your team makes you the second player in" has no posture beside it (optional); the breakouts Key focus/KT10 delay minor names only NHL/IIHF (USAH 610(c), HC 10.1(ii), CARHA 75(b) price a deliberate one; the CM carries it); IIHF 63.2(I) is not named in the pin line; USAH 610(a) is a second freezing rule.
+- ✅ W8 FINAL READ C (skating, practice, conditioning, team_play): all CLEAR; every airway line was verified against rendered CRT6. Minors fixed in a tiny follow-up: team_play's slogan is now "Nobody moves them except to keep their airway clear, and somebody phones" at :40/:322/KT1 (the agent declined "lifts", which is narrower than move and could permit dragging); conditioning :33 now matches KT13 verbatim; the CM population is added; "outside sled hockey". 0 lost markers (the conditioning 11→9 is the two reviewed Key focus drops). ⏳ Quick read, batched with the breakouts tiny fix.
+- ✅ W8A mental_game fix: M1 rescoped all four layers to "decide early and commit … glass-and-out chosen early is a good play; the same chip half a second late is a turnover" (it had contradicted risk_management); "punishes hardest"/"single most common"/"play not to lose" are gone corpus-wide; "finish every check" re-led; Key focus routine+warm-up merged. ⏳ final read.
+- ✅ W8A breakouts fix: "eat it" → "protect it on the wall … never pin it for a whistle" + a new Rule facts line (USAH 632(b) no checked-exemption; HC 10.1(i)/CARHA 74(b) exempt a player being checked); the screen is now "only where your book allows it", with HC 8.3/CARHA 66(a) Note 2 at every layer. ⏳ final read. ✅ on_ice_communication fixed: facts :143 and bullet :190 now say shield it and never pin it for a whistle, with book scope (a minor under NHL/IIHF 63.2(i), PWHL 65.2(i), USAH 632(b); HC 10.1(i)/CARHA 74(b) excuse it only while being checked); the clock meaning is "on your stick, not frozen". ⏳ final read D. 🔴 on_ice_communication's Sources trailer lacks the new citations. 🔴 breakouts :840/:864 "hold it in the corner" (delayed penalty): the final reader will rule. Any other wording of the act ("keep them still", "immobilise") is being listed by that agent.
+- 🔴 USAH 69.1 screen reasoning: center.md :428 says 69.1's positioning sentence "requires the attacker to have entered the crease" (false; limb (1) names no location). The result is right via NHL Table 14 / IIHF Table 16 5C/5E. Check rules_primer and goaltender for the same.
+- 🔴 Wording censuses from the NZS fix: (a) "no strides (taken) at all" overstates USAH Casebook 607 Sit. 3 ("without taking the two fast strides") at defender :378/:448/:803, DTR :435/:445/:739 (bc :871, fc :237 need reading); (b) "607(a) writes no bare one" (poor voicing) at defender ×5, DTR ×3, DZC :177; (c) **HC 6.7(d) "U18AAA, Junior and Senior at the Member's option" reads as all-optional (PERMISSIVE: U18AAA/Junior are mandatory)** at how_to_watch :274, rules_primer ×8, switching :256, winger :602/:611, game_management :1106, special_teams :1020, center ×4 (6.7(e) too), breakouts ×4, faceoffs :1028.
+- 🔴 breakouts.md :14/:144 name the cross-ice "over" as the one deliberate play across the front of your own net; core_principles and defender say a flat "never". Reconcile.
+- 🔴 defender.md :15 (Key focus) "the middle is not a route" contradicts the high exchange and breakouts.md :203/:242; use "your own slot" (from the core_principles craft read). defender is in the wave-7 commit, so this goes to the next wave.
+- ✅ W8A scanning_and_anticipation: Key focus 7→10 (defend by scanning for bodies, read a passer, be where the puck will be next); the board-posture Key focus was demoted (1 spoken "Important." left the Key focus; the limb stays in the body, facts, CM and KT12); `--panels` 2→0; KT 13→12. ⏳ combined reader. 🔴 facts "Rule: A no-contact screen outside the crease is legal" is flat against NHL 69.1's "by his positioning" limb (goal only).
+- ✅ W8A conditioning_and_recovery: Key focus led by fitness and recovery (aerobic base, train the shift, groin, warm-up, change early, fuel, sleep, season); concussion moved to Key focus 9-10 / KT10-11 (verbatim); body-checking + VO₂max Key focus paragraphs dropped (2 "Important."s, deliberate); CM body-checking shortened. ⏳ safety reader (ORDERING judgement). 🔴 The inherited boards/shoulder limb is a demotion candidate.
+- ✅ W8A neutral_zone_systems: Key focus 5→7 (backpressure, receive moving, play the same structure); `--panels` 4→0; KT 13→10; 13 CM re-ordered. The author self-caught a Situation 3 narrowing in its own KT4 merge. ⏳ combined reader. 🔴 CARHA 52(a)/(b) and HC 7.4(b) are missing from the charging treatment (completeness); faceoffs facts :702 HC 6.2(e) voiced alone omits the mandatory linesperson limb.
+- ✅ W8A mental_game: Key focus 6→10 (bench, make the play, focus triggers, warm-up level, frustration); the crisis line stays first; "finish every check" demoted from the Key focus, and its ⚠️ moved onto the hazard. ⏳ combined reader. 🔴 TOOL: check_callout_flow --stacks --file crashes with ZeroDivisionError (:654) on a file with no flow-breaking callouts. 🔴 Trailer cites NHL 2025-26 but disk has nhl_rules_2024-25.txt.
+- ✅ W7 C4 rules-verifier on the staged wave-7 bytes: nothing contradicted or cheaper. Harsher/neutral incompletes: switching facts :211 lacks the 49(a) mandatory-on-injury limb; switching trailer :571 omits 32(d)'s high-stick carve-out (harsher, unvoiced); PWP :988 trailer "31(a) Note 1" is really 31(c). 🔴 **For safety: WNIHL RoC labels both formats "Full ice, non-checking" while the corpus says 101.1 "allows bodychecking" in women's hockey ("every level of it in Britain"); "non-checking" is undefined there. A British women's reader could read the corpus as more permissive than her league's own label.**
+- ✅ W8A time_and_space: Key focus 7→10 (gap, angling with the checking-barred/CARHA limb, pressure with a second layer "2-1-2 default / 1-2-2", play without the puck); board-posture Key focus demoted (still carried in the body :82/:202, facts :73/:186, KT5); Overview +2 paragraphs; 13 CM re-ordered + 1 new; KT4 rewritten. The prior :318/KT6 rows had already been fixed. ⏳ content + safety readers. 🔴 The crease red line lives only in KT10 + trailer (rules-verifier before it goes into the body); KT10 is a demotion candidate.
+- ✅ W8A core_principles: the owner's two-panel complaint was ALREADY FIXED (0 panels). Key focus 7→10 (goal side / go to the net, never the goalie / never across the front of your own goal); Overview rewritten as a discussion; §3 per-state off-puck instructions; 3 new CM; KT 10→13. ⚠️ The Key focus dropped "tracking data the NHL itself calls unofficial" (kept in the body and KT1): non-negotiable-4 check sent to the reader. ⏳ content + safety readers. 🔴 CM/KT10 "the NHL, IIHF, PWHL and USA Hockey books all permit it" drops the body's non-check scope for USAH.
+- ✅ W8A puck_support_and_spacing: Key focus 8→10 (be the missing angle, never across your own slot; skate to space; available; pass and move; layer on defence); board-arrival Key focus demoted with a layer test; Overview rewritten (27%→0% rules); §3 too close/too far instructions added; 2 new CM; KT 12→10. ⏳ combined reader. 🔴 §11 facts block at 8/8 coaching; :418/:566 are 2-3 chars from the cap.
+- ✅ W8A skating: Key focus 6→10 (change speed, feet moving on the catch, crossover vs tight turn, backwards/late pivot); the boards bullet was cut to the route (the USAH detail stays in facts/CM/KT1); Overview mechanics paragraphs replaced (still in the body); new "### Changing speed" subsection (from time_and_space); KT1/KT5/KT6 re-led. ⏳ combined reader. 🔴 RENDERER: Key focus bullets are voiced as one continuous run with no boundary between items (likely corpus-wide).
+- ✅ W8A practice_and_development: Key focus 7→10; Overview now opens "Build every hour around one thing"; KT1/KT13/KT14/KT15/KT16 compressed (evidence qualifiers kept, per the author); goalie Key focus "in most books play stops only once a referee judges the goalie hurt" (the author counts 5 of 6). ⏳ combined reader (evidence compressions + the goalie count). 🔴 18 KTs.
+
