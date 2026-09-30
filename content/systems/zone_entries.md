@@ -710,7 +710,7 @@ Rule: Hockey Canada's Interpretation 3 to Rule 10.1(a), clause v, makes freezing
 Read: The USA Hockey and Hockey Canada freezing clauses are about a retrieval, not a save — a cover after a save outside the crease is a different case, and the carve-outs reverse; Goaltender sets them out
 Rule: Chasing their goalie is not licence to hit them — six books say he is not "fair game" outside the crease (IIHF and NHL 42.1, USA Hockey 607(d), Hockey Canada 8.5, CARHA 52(b), PWHL 42.1); charging him is an automatic ejection under Hockey Canada 8.5(b), and under USA Hockey 607(b) if reckless
 Rule: Chasing a goaltender from behind changes which IIHF rule you are under — a hit landed on their back that puts them into their own net is checking from behind, where 43.2 leaves the referee no minor to award and 43.1 names the goal frame itself
-Rule: CARHA 52(b) makes a major plus a game misconduct mandatory for charging a goalie in his crease and for a charge that injures anyone anywhere, and its 52(a) Note counts over two strides as a charge; NHL and PWHL 42.5 make the misconduct mandatory once a major is called for a face or head injury
+Rule: CARHA 52(b) (CARHA-affiliated adult leagues) mandates a major and game misconduct for charging a goalie in his crease and for a charge that injures anyone anywhere; 52(a)'s Note makes over two strides a charge. NHL and PWHL 42.5 mandate the misconduct on a charging major for a face or head injury
 Rule: Out of the crease CARHA answers with its Rule 66 — 66(b) makes deliberate contact with a goalkeeper "whether in or out of the goal crease" a minor, a major at the referee's discretion, and 66(e) a mandatory major for injuring an opponent by interference; any CARHA major is an ejection (Rule 30(a))
 ```
 

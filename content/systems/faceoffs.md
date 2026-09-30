@@ -912,7 +912,7 @@ Never: Rim it halfway. Rim it hard enough to reach your winger instead, or tight
 Read: Use the reverse against a team that overloads the boards side
 Action: Call off the glass and out when you are tired, pinned, or a man down
 Never: Your back to the boards fetching a dead rim in your own corner, and never duck. Skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
-Rule: Whether the forechecker chasing a rim may check you is set by your classification — a minor on him in a USA Hockey Competitive Contact category (604(c)), or at Hockey Canada U13 and below, in female hockey or in any Member-approved division (7.3(a)). Incidental board contact stays legal
+Rule: Whether the forechecker chasing a rim may check you is set by your classification — at least a minor on him in a USA Hockey Competitive Contact category (604(c)), or at Hockey Canada U13 and below, in female hockey or in any Member-approved division (7.3(a)). Incidental board contact stays legal
 Rule: A minor is the floor for an illegal check on a rim retrieval, not the price — Hockey Canada 7.3(b) mandates a major and game misconduct once the check injures, USA Hockey 604(d) the same pair for reckless endangerment, both a match penalty. No IHUK regulation prices a breach of its own band
 Rule: In Britain checking is set by your competition's Rules of Competition, not a rule book — IHUK's four: junior U14 up and NIHL 1 and 2 checking, U10, U12 and WNIHL not. Those four settle no other league — not the EIHL, NIHL National, BUIHA, the PNIHL or the SNL. ⚠️ **Ask; until you know, do not hit**
 ```
