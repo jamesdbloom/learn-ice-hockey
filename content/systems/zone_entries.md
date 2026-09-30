@@ -19,7 +19,7 @@
 
 **You stay onside for longer than most players believe.** You are onside as long as one skate has not completely crossed the line, judged at the instant the puck completely crosses it — under the NHL, the IIHF and the PWHL that trailing skate may even be in the air, though under USA Hockey and Hockey Canada it must be touching the line or the ice behind it.
 
-**Never forecheck during a delayed offside — hold at the line and wait for the arm to drop.** Under USA Hockey, Hockey Canada and CARHA nothing stops play before you arrive, and the retreating defenceman is not braced for you: hitting him there is checking from behind, which ends your night under the NHL, the IIHF, Hockey Canada and CARHA, and costs a minor plus a ten-minute misconduct at its very lightest under USA Hockey.
+**Never forecheck during a delayed offside — hold at the line and wait for the arm to drop.** Under USA Hockey, Hockey Canada and CARHA nothing stops play before you arrive, and the retreating defenceman is not braced for you: hitting him there is checking from behind, which ends your night under the NHL, the IIHF, Hockey Canada and CARHA, and costs a minor plus a ten-minute misconduct at its very lightest under USA Hockey — where a forceful hit on him standing along the boards ends your night too.
 
 ## Overview
 
