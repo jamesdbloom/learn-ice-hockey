@@ -235,8 +235,8 @@ const denyTheReception = {
     'Denying the reception rather than the pass, drawn as one instance: a pass from ' +
     'the wall into the middle of your own end. The read is the same wherever the pass goes. ' +
     'The pass and the covering run ' +
-    'are one instant here, not one after the other. Your stick is not drawn and belongs on ' +
-    'the receiver’s blade or in the lane. The route ends in two bars rather than an arrowhead because ' +
+    'are one instant here, not one after the other. Your stick is not drawn and belongs in the ' +
+    'lane, or on the receiver’s blade as the puck lands — a press, not a chop. The route ends in two bars rather than an arrowhead because ' +
     'it finishes on a patch of ice and not on a person, no contact is drawn here, and what ' +
     'an arrival like this may end in depends on whether your league allows body checking. ' +
     'Come from where the receiver can see you, and never finish into the back of a player ' +

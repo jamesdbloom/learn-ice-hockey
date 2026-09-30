@@ -394,11 +394,12 @@ const icingTheRaceAndTheDot = {
     'first touch the puck, not which player would first reach the end zone face-off dots." So being ' +
     'level at the box settles nothing. What settles it is being clearly on course to reach the puck ' +
     'first, and a race too close to determine by that instant is icing. Your goaltender is drawn ' +
-    'staying put on purpose: under those two books a goaltender who "feigns playing the puck, ' +
-    'attempts to play the puck, or skates in the direction of the puck on an icing at any time" waves ' +
-    'it off (Rule 81.3). ⚠️ And this is not everybody’s icing. USA Hockey plays automatic icing, ' +
-    'completed "the instant the puck has completely crossed the goal line" (Rule 624, Note), so there ' +
-    'is no race to draw at all. Hockey Canada runs hybrid only in U18AAA and Junior, and in Senior at ' +
+    'staying put on purpose: under those two books (Rule 81.3) and the PWHL’s (Rule 83.3), a goaltender ' +
+    'who "feigns playing the puck, attempts to play the puck, or skates in the direction of the puck on ' +
+    'an icing at any time" waves it off. ⚠️ And this is not everybody’s icing. USA Hockey plays ' +
+    'automatic icing outside adult sled hockey, completed "the instant the puck has completely crossed ' +
+    'the goal line" (Rule 624, Note), so there is no race to draw at all, and CARHA’s icing is ' +
+    'automatic too (Rule 65). Hockey Canada runs hybrid only in U18AAA and Junior, and in Senior at ' +
     'the Member’s option (Rule 6.7(e)). Ask which your league plays. The race is not a licence to hit. ' +
     'Unnecessary contact with a player playing the puck on an obvious icing play that results in him ' +
     'hitting or impacting the boards "is boarding and must be penalized as such" under NHL 41.1, IIHF ' +
