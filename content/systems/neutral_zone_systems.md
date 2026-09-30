@@ -147,7 +147,7 @@ Convention: Coaching material calls it the most widely played neutral zone struc
 
 **Weaknesses.** It concedes the first pass. A calm defence with time will break out cleanly against it most of the time, because F1 alone cannot generate real pressure. It also depends completely on F1 taking away the middle — if F1 chases the puck instead of steering it, the whole structure is playing the wrong side of the ice.
 
-**How it is beaten.** Quick D-to-D behind the net to change the side before F1 can re-establish the angle; a middle-lane forward supporting low to receive under F2 and F3; and simple patience — the 1-2-2 rewards you for panicking and punishes you very little for waiting.
+**How it is beaten.** Quick D-to-D behind the net to change the side before F1 can re-establish the angle; a middle-lane forward supporting low to receive under F2 and F3; and simple patience — the 1-2-2 rewards you for panicking and punishes you very little for taking an extra second to make the right play.
 
 ### The 1-2-2 trap ("the neutral zone trap")
 
@@ -677,7 +677,7 @@ Read: Stretch a forward behind the wall against a 1-3-1 or a trap, but not again
 Never: Attempt the seam unless it is obviously there — the highest-risk answer, and the one amateurs try first and should try last
 Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth more than a turnover at the blue line
 Key: Dumping past the red line is a read on a trap, not a general preference — the one-third threshold is modelled from one team's games, and that NHL tracking found players give the puck up too readily
-Mindset: Be patient — a trap gives you the puck and waits for you to do something stupid with it
+Mindset: Be patient, and keep the puck moving — a trap gives you the puck and waits for you to do something stupid with it
 ```
 
 This deserves its own section because a trap inverts everything else here: it hands you the puck and defends the ice instead, so having possession tells you nothing on its own about what to do next. Everything below assumes you are facing a passive structure — a 1-2-2 trap, a 1-3-1, or a 1-4 — that is refusing to come and get the puck.
@@ -694,7 +694,7 @@ This deserves its own section because a trap inverts everything else here: it ha
 
 **5. Dump it and forecheck — on purpose.** If the entry is not on, **put the puck deep past the red line and go hunt it with three forwards.** You are choosing to play the game as a grind rather than as a rush, and against a trapping team that is often the right choice — a team that has committed five players to the neutral zone has, by definition, structured itself to defend rushes rather than forechecks. A controlled entry is worth roughly twice a dump-in, but **a dump-in you chase is worth more than a turnover at the blue line.** The published analytics work on this suggests a carry attempt is only the better decision when you are somewhere around a third confident of completing it — below that, dump it — and that threshold is modelled from one team's tracked games and an assumed shooting percentage, so it is a shape to think with rather than a precise number. Note which way that work points, too: it watched NHL players, and it concluded they give the puck up at the line **too readily**, not too rarely. So the argument here is situational, not general. **Against a structure that has committed five players to the neutral zone, your chance of completing a carry is low by construction** — that is the whole design of the thing — and a dump you hunt with three forwards beats an entry forced into a set wall. That is a read on the picture in front of you, not a reason to dump by default.
 
-**6. Be patient, and make them come.** A trap is designed to punish impatience. It gives you the puck and waits for you to do something stupid with it. Holding the puck in your own end, regrouping twice, and making them either come and forecheck or stand and watch is a completely legitimate response — and if they stand and watch, you have a free 200 feet to build speed into. This is what the Flyers were demonstrating, crudely, in 2011. ⚠️ **In a CARHA-affiliated league, do the waiting in the neutral zone instead:** CARHA Rule 74(a) makes a team with the puck in its own zone advance it unless opponents prevent it, and stops play for a face-off in that zone if it does not.
+**6. Be patient, and make them come.** A trap is designed to punish impatience. It gives you the puck and waits for you to do something stupid with it. Keeping the puck in your own end, regrouping twice, and making them either come and forecheck or stand and watch is a completely legitimate response — and if they stand and watch, you have a free 200 feet to build speed into. This is what the Flyers were demonstrating, crudely, in 2011. **Patience means moving the puck, not standing on it:** every rulebook lets the referee penalise a team for delaying the game, and Hockey Canada's Rule 10.1(a) and CARHA's Rule 55(a) make deliberate delay by a team a bench minor. ⚠️ **In a CARHA-affiliated league, do your regrouping in the neutral zone instead:** CARHA Rule 74(a) makes a team with the puck in its own zone advance it unless opponents prevent it, and stops play for a face-off in that zone if it does not.
 
 ---
 

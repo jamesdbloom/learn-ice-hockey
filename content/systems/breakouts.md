@@ -651,7 +651,7 @@ Mindset: You will usually have time — use it; this is the forecheck that punis
 Action: Make F1 commit with a wheel, or simply by skating at F1 — once they pick a side, the other side is genuinely open
 Key: The low centre is your key, because the 1-2-2's two middle forwards are positioned relatively high and the space beneath them is real
 Never: Rim into a set 1-2-2 — it hands the puck to two waiting forwards. Beat it with numbers up the middle instead
-Action: Against the 1-2-2 trap, keep the puck and be patient — regroup in your own zone rather than skate into the wall, or in the neutral zone under CARHA, whose 74(a) makes you advance it in your own zone
+Action: Against the 1-2-2 trap, keep the puck moving and be patient — regroup in your own zone, or in the neutral zone under CARHA, whose 74(a) makes you advance it in your own zone; never skate into the wall
 ```
 
 **One line:** F1 pressures, two forwards hold the middle-and-wall band behind, two defencemen hold the line. Containment, not chaos — F1 steers rather than attacks.
@@ -663,7 +663,7 @@ Action: Against the 1-2-2 trap, keep the puck and be patient — regroup in your
 - **Make F1 commit.** A wheel, or simply skating at F1, forces the containing forechecker to pick a side. Once they pick, the other side is genuinely open.
 - **The low centre is your key.** The 1-2-2's two middle forwards are positioned relatively high; the space beneath them is real.
 - **Beat it with numbers up the middle**, not with a rim. Rimming into a set 1-2-2 hands the puck to two waiting forwards.
-- **Against the extreme version (the 1-2-2 trap)**, the answer is usually controlled possession, patience, and forcing them to come to you — including regrouping in your own zone rather than skating into the wall of players. ⚠️ **In a CARHA-affiliated league, regroup in the neutral zone instead:** CARHA Rule 74(a) makes a team with the puck in its own zone advance it unless opponents prevent it, and stops play for a face-off in that zone if it does not. See [Neutral Zone Systems](neutral_zone_systems.md).
+- **Against the extreme version (the 1-2-2 trap)**, the answer is usually controlled possession, patience, and forcing them to come to you — including regrouping in your own zone rather than skating into the wall of players. Keep the puck moving while you do: every rulebook lets the referee penalise a team for delaying the game. ⚠️ **In a CARHA-affiliated league, regroup in the neutral zone instead:** CARHA Rule 74(a) makes a team with the puck in its own zone advance it unless opponents prevent it, and stops play for a face-off in that zone if it does not. See [Neutral Zone Systems](neutral_zone_systems.md).
 
 ### Against a 2-1-2
 
