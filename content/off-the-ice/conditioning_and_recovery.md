@@ -6,7 +6,7 @@
 > whether **body checking** is legal, both change what your body has to survive, and those
 > are flagged where they matter. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **⚠️ This document covers injury and health. It is a hockey document, not medical advice.**
+> **This document covers injury and health.** ⚠️ **It is a hockey document, not medical advice.**
 > Nothing here diagnoses, treats or rehabilitates anything. Where it says "see a professional",
 > that is the actual instruction, not a disclaimer.
 >
@@ -54,6 +54,7 @@ Most of what follows is reasoned from one demand: repeated near-maximal efforts 
 **Across the year, build in the off-season and maintain in-season.** The off-season is for the big changes — aerobic base, maximum strength, fixing a nagging issue with a physiotherapist. In-season the games are the hard conditioning, so the gym keeps what you built rather than adding to it: keep the loads, cut the volume, and put your hardest session as far from game day as your schedule allows.
 
 **The concussion material below is the one part of this document that is not a judgement call, and two ideas carry most of it.** The first is *suspected*, never *confirmed*: nobody at a rec-league rink is qualified to rule a concussion out, judgement is one of the things a concussion impairs, and a concussed player will tell you they are fine — so it is never their decision, and it is never a decision that waits for certainty. The second is that **any one of the red flags is an ambulance call on its own**, and most of them ask nothing about whether the player is getting worse: neck pain or tenderness, repeated vomiting, or weakness or numbness or tingling in more than one arm or leg is the ambulance the first time you see it, steady or not. Where **escalation** does the work is the flags written by degree. An ordinary headache is a symptom; a severe or worsening one is a red flag. Ordinary confusion about the score is a symptom; confusion that is increasing, or a player getting progressively drowsier, is a red flag. Both patterns are how an evolving bleed inside the skull presents, so **a symptom that is getting worse rather than holding steady is a red flag too — but a red flag that is holding steady is still an ambulance.** 🇬🇧 **And make sure you have learned the right list.** [The Concussion section](#concussion) carries CRT6's ten red flags in the tool's own wording, but the guidance England Ice Hockey has adopted publishes fourteen that differ from them in both directions — so in Britain, knowing CRT6's ten is not knowing the list you are actually under.
+
 ---
 
 ## What Hockey Actually Demands of Your Body

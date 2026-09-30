@@ -831,9 +831,18 @@ pre code .line {
   sentence went amber — the emphasis inverted in reading order. Measured on
   /positions/goaltender/, /systems/faceoffs/ and
   /off-the-ice/conditioning_and_recovery/, five notes in all, both themes.
+
+  ⚠️ `>` on the note, because the descendant form also reached the `strong`
+  inside a mid-note `.warn-inline` run — that strong is its span's first child
+  too — and at (0,3,1) beat `.warn-inline`'s amber, leaving the tint, bar and
+  glyph but painting the words body colour: rgb(27,28,30) light and
+  rgb(230,232,234) dark on the amber band. Measured on the same three pages,
+  three runs. Checked in dist: every note's label is a direct child of the
+  `<p>` (six labels), so the child combinator keeps all of them and drops
+  exactly the three warning runs.
 */
 .doc-header-ruleset strong:first-child,
-.doc-header-note:not(.is-warning) strong:first-child {
+.doc-header-note:not(.is-warning) > strong:first-child {
   color: var(--text);
 }
 
