@@ -392,8 +392,9 @@ const netFrontWalkOut = {
 
   caption:
     'Your net front; who covers it is your team’s call. ⚠️ Never walk a screener out, in any ' +
-    'game: they have no puck, so it is interference. Hold the inside beside them, no lean, no ' +
-    'push, and lift their stick below their bottom hand as the puck arrives, then let go. ' +
+    'game: they have no puck, so it is interference. Hold the inside, no lean, no ' +
+    'push, and lift their stick low on the shaft, well below their bottom hand, as the puck ' +
+    'arrives, then let go. ' +
     'Move nobody into or across the shaded goal frame and goalie.',
 
   describe:

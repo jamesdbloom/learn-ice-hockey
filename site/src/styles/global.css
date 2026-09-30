@@ -1142,6 +1142,14 @@ a.chip:hover {
   two or three lines long, and cloning would redraw the left mark at the start of
   every wrapped line — three bars for one warning, reading as three warnings.
   The mark belongs where the warning begins.
+
+  The RIGHT padding is a hair, not the left's 0.4em. Most runs end mid-sentence
+  and are followed straight away by a comma, full stop or dash; at 0.3em (~5px)
+  that punctuation sat visibly detached from the word it closes — "neck
+  protection ," — which a site-reviewer counted at 491 places. The tint still
+  reads as a highlight because the left bar and left padding carry the "this
+  begins here" signal; the right edge only needs to stop, not to breathe. For
+  that reason `box-decoration-break: clone` is NOT the remedy either (see above).
 */
 .warn-inline {
   display: inline;
@@ -1149,7 +1157,7 @@ a.chip:hover {
   background: var(--warn-bg);
   border-left: 3px solid var(--warn-border);
   border-radius: 0 2px 2px 0;
-  padding: 0.1em 0.3em 0.1em 0.4em;
+  padding: 0.1em 0.05em 0.1em 0.4em;
 }
 
 /*

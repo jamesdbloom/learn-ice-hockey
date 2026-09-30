@@ -780,6 +780,25 @@ export default function remarkCorpus(options = {}) {
     // already has its own border and label colour, where the emoji is itself a
     // non-colour signal. To re-derive: count `dd.facts__value` in dist/ whose
     // text starts with a warning glyph, against the total.
+    //
+    // ⚠️ THE GLYPH MUST NOT WRAP ALONE. At narrow widths the ordinary space after
+    // ⚠️ is a line-break opportunity, so the glyph could end one line and its
+    // words start the next — an amber triangle stranded at a line end, pointing
+    // at nothing. So the whitespace straight after the glyph (and its U+FE0F
+    // selector) inside the wrapper becomes ONE U+00A0 no-break space: for shapes
+    // (b)/(c) in the glyph text node built below, for shape (a) in the strong
+    // run's first text node. Only the rendered HTML changes — md_to_speech reads
+    // the markdown, not this plugin — and every WARNING_* / NOTE_START_RE test
+    // uses `\s`, which matches U+00A0 in a JS regex.
+    const bindGlyph = (value) => value.replace(/((?:⚠|❗|🚫)\uFE0F?)\s+/u, '$1\u00A0');
+    const firstText = (n) => {
+      if (n.type === 'text') return n;
+      for (const c of n.children ?? []) {
+        const t = firstText(c);
+        if (t) return t;
+      }
+      return null;
+    };
     const markInlineWarnings = (node, suppressed) => {
       const kids = node.children;
       if (!Array.isArray(kids)) return;
@@ -793,6 +812,8 @@ export default function remarkCorpus(options = {}) {
           if (kids[i].type !== 'strong') continue;
           const strong = kids[i];
           if (WARNING_LEAD_RE.test(toText(strong))) {
+            const lead = firstText(strong);
+            if (lead) lead.value = bindGlyph(lead.value);
             kids[i] = inline('span', { class: 'warn-inline' }, [strong]);
             continue;
           }
@@ -808,7 +829,7 @@ export default function remarkCorpus(options = {}) {
           const head = prev.value.slice(0, at);
           const glyph = prev.value.slice(at);
           const marked = inline('span', { class: 'warn-inline' }, [
-            { type: 'text', value: glyph },
+            { type: 'text', value: bindGlyph(glyph) },
             strong,
           ]);
           kids.splice(i - 1, 2, ...(head ? [{ type: 'text', value: head }, marked] : [marked]));
