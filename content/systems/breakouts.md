@@ -651,7 +651,7 @@ Mindset: You will usually have time — use it; this is the forecheck that punis
 Action: Make F1 commit with a wheel, or simply by skating at F1 — once they pick a side, the other side is genuinely open
 Key: The low centre is your key, because the 1-2-2's two middle forwards are positioned relatively high and the space beneath them is real
 Never: Rim into a set 1-2-2 — it hands the puck to two waiting forwards. Beat it with numbers up the middle instead
-Action: Against the extreme version, the 1-2-2 trap, take controlled possession and patience, including regrouping in your own zone rather than skating into the wall of players
+Action: Against the 1-2-2 trap, keep the puck and be patient — regroup in your own zone rather than skate into the wall, or in the neutral zone under CARHA, whose 74(a) makes you advance it in your own zone
 ```
 
 **One line:** F1 pressures, two forwards hold the middle-and-wall band behind, two defencemen hold the line. Containment, not chaos — F1 steers rather than attacks.
@@ -663,7 +663,7 @@ Action: Against the extreme version, the 1-2-2 trap, take controlled possession 
 - **Make F1 commit.** A wheel, or simply skating at F1, forces the containing forechecker to pick a side. Once they pick, the other side is genuinely open.
 - **The low centre is your key.** The 1-2-2's two middle forwards are positioned relatively high; the space beneath them is real.
 - **Beat it with numbers up the middle**, not with a rim. Rimming into a set 1-2-2 hands the puck to two waiting forwards.
-- **Against the extreme version (the 1-2-2 trap)**, the answer is usually controlled possession, patience, and forcing them to come to you — including regrouping in your own zone rather than skating into the wall of players. See [Neutral Zone Systems](neutral_zone_systems.md).
+- **Against the extreme version (the 1-2-2 trap)**, the answer is usually controlled possession, patience, and forcing them to come to you — including regrouping in your own zone rather than skating into the wall of players. ⚠️ **In a CARHA-affiliated league, regroup in the neutral zone instead:** CARHA Rule 74(a) makes a team with the puck in its own zone advance it unless opponents prevent it, and stops play for a face-off in that zone if it does not. See [Neutral Zone Systems](neutral_zone_systems.md).
 
 ### Against a 2-1-2
 
@@ -745,9 +745,10 @@ Options: Three high — all three forwards stay up in the neutral zone and the D
 Convention: One coaching manual, Johnston and Walter's Hockey Plays and Strategies, is the source for all three; it presents them as workable and advises drilling one rather than carrying all three, and no published count says which teams run which
 Never: Stand still waiting for the pass, unless your pattern posts a winger up on purpose — otherwise a control breakout with stationary receivers is a slow breakout into a set trap
 Technique: Posted up still means body open to the ice, head up, never your back to the boards and never duck. Skates parallel to the wall, forearm and hip into contact if it comes, chin off your chest
+Rule: In a CARHA-affiliated league do not park the puck behind your net waiting for the pattern — CARHA 74(a): a team in possession in its defending zone "shall always advance the puck towards the opposing goal" unless opponents prevent it; if you do not, play stops for a face-off in that zone
 ```
 
-Everything above answers a forecheck that is **coming at you**. This answers the opposite problem: you have the puck behind your own net with full control, nobody is pressuring you, and the reason nobody is pressuring you is that all five of them are standing in the neutral zone waiting. Chipping it out gives them the puck. Skating into them gives them the puck.
+Everything above answers a forecheck that is **coming at you**. This answers the opposite problem: you have the puck behind your own net with full control, nobody is pressuring you, and the reason nobody is pressuring you is that all five of them are standing in the neutral zone waiting. Chipping it out gives them the puck. Skating into them gives them the puck. ⚠️ **In a CARHA-affiliated adult league, keep the puck moving rather than parking it back there:** CARHA Rule 74(a) says *"A team in possession of the puck in its defending zone shall always advance the puck towards the opposing goal, except if prevented from doing so by players of the opposing team"*, and an infraction stops play for a face-off in your own zone — so there the carrier starts the pattern moving rather than waiting for it.
 
 **A control breakout is a coordinated five-player pattern designed for exactly that.** It works on two conditions: **the four players without the puck all move, with speed** — bar a receiver your pattern deliberately posts up — and **the puck carrier knows where every one of them will be** and picks whichever the trap has not taken away. The carrier is not choosing between two safe outlets; they are picking whichever of four or five running teammates the trap has failed to cover. Run properly these do not merely escape the zone — they often arrive with speed and produce a chance.
 

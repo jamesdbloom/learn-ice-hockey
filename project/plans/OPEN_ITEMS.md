@@ -321,16 +321,22 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ## Open rows
 
+### Wave 24 follow-ups (30 Sep)
+
+- [rebound 69.7 framing] goaltender, winger, offensive_zone_play and any other rebound carrier — the "EIHL doesn't allow it; elsewhere don't lean" contrast implies rebound contact is fine outside the EIHL; only NHL/IIHF 69.7 and PWHL 71.7 carve it out (HC 8.5(a) Interp. 1, USAH Note 1 + Casebook 607 Sit. 4, CARHA none). center.md is fixed and is the model (direction: permissive)
+- [42.1 route] NHL/IIHF/PWHL 42.1 repeats "not fair game… unnecessary contact in every case" and carries its own discretionary incidental permission — unrouted wherever goalie contact is priced via 69.2/69.4 alone (direction: completeness; check for an unscoped permission)
+- [HC 8.5(b)] Hockey Canada's mandatory major+GM for charging the goaltender (no location) is not voiced in scanning_and_anticipation and possibly in siblings (direction: completeness)
+- [USAH Casebook 607 Sits. 4/5] the corpus now states Note 1 in its both-readings form; Sit. 4 (pushed-in attacker who made every attempt: no penalty; "going hard to the goal" then an honest attempt: minor+misconduct) and Sit. 5 (goalie with the puck may be engaged outside the privileged area; 604 scope) are carried unevenly — winger lacks Sit. 4; goaltender never states Sit. 5's "can be legally checked" (a goalie may overestimate protection) (direction: completeness/harsher)
+- [CARHA 55(a)] bench minor for a team "deliberately delaying the game in any manner" vs NZS "do the waiting in the neutral zone" and breakouts KT7 "you have time — use it"; NZS :131/:150 patience lines vs 74(a) (candidates; direction: possibly permissive for CARHA)
+- [scanning CARHA] scanning_and_anticipation :371 — add CARHA 52(b) Note + 66(b) to the new "not fair game" sentence (optional completeness)
+- [W24 wording nits] ozp :556 "USA Hockey writes none" (cap-bound; "no such permission" preferred); shooting :301/:477 69.7 permission in facts scoped by book but without the USAH contrast; rules_primer :704 "narrower" Casebook permission vs :706; center :432 "disallows" slightly flatter than the EIHL's "calls for disallowing" (readability/harsher)
+- [goaltender wording] goaltender facts :1118 "a defender forced them into you" → "a teammate" (same length; the book means any defending player) (readability)
+- [slew-foot] body_contact :1573 "the leg alone is slew-footing in every book" vs CARHA 86(b) "from behind" (harsher scope)
+
+
 ### Wave 23 follow-ups (30 Sep)
 
-- [69.4 permission] playing_without_the_puck.md facts :633 (found by the W23 commit gate), offensive_zone_play, winger, goaltender, rules_primer — the NHL/IIHF 69.4 incidental-contact permission voiced without USA Hockey 607(d) Note 1 ("any accidental or unavoidable contact… penalized under the Interference rule"); a zone_entries repair created this shape three times in W23. Read, never sweep (direction: permissive)
-- [69.2 without 69.4] corpus — NHL/IIHF/PWHL goalie contact framed as deliberate-only (69.2) with no 69.4/71.4 "unnecessary contact" limb; worst beside a line giving another book "any" or "even accidental" (direction: permissive)
-- [CARHA lane] body_contact_and_battles.md :1341/:1359/:1904 — loose-puck "hold only a lane you already have" addressed to any CARHA player; Note 2 writes the right for defenders only — scope it or add "never to shield a teammate" (direction: permissive-mild)
-- [USAH 607 Sit. 5] playing_without_the_puck.md :631 — "USA Hockey keys engaging a goalkeeper to their having possession" lacks 607(d) Note 1 and the 604 scope (pre-existing; safety read) (direction: permissive)
 - [pwtp KT11 opener] playing_without_the_puck.md KT11 "nowhere at a cheap two minutes" while NHL/IIHF 69.2 price deliberate contact "minor or major" (direction: harsher)
-- [level] puck_support_and_spacing.md and scanning_and_anticipation.md — 0 hits for body checking / non-checking; never read for the checking-level limb (W23 closed the [level] row on breakouts, zone_entries, passing and puck_handling only). Report-only unless a reader delivers contact (direction: possibly permissive)
-- [CARHA 54(b)] shooting.md :538/:861 — cross-check above the shoulders is a mandatory major+GM "whether or not injury results", no location; :861 reads as CARHA's whole mandatory cross-check tier (direction: completeness)
-- [CARHA 74] neutral_zone_systems / breakouts low regroup — CARHA 74(a) "shall always advance the puck" in the defending zone, 74(b) minor for holding it against the boards or goal, 75(d) goalkeeper puck onto the netting; absent. Read first (direction: possibly permissive for CARHA)
 - [EIHL overtime] special_teams.md ~:912-918 — "a tied game simply ends tied" is In-House scope only; EIHL Casebook 84 plays 3-on-3 then a shootout, playoff semi-finals 20 min 5-on-5 (direction: factual scope)
 - [EIHL Casebook] sweep beyond Rules 37, 38, 41, 42, 46, 63, 64, 84 and §11 against every corpus "Britain" claim; also IIHF 42.1 "superseded by… 'illegal hit to the head'" (Rule 48) route unfollowed (direction: completeness)
 - [defender 640] defender.md :266, KT3 :881, facts :251 — "can be roughing under Rule 640": USAH 640(b) excludes Adult Male classifications; there only 640(d) (stick above the knees) or 609(b) reach a walk-out; also :266 "two-handed… is a cross-check" vs the 609 Note (no stick on ice) (direction: harsher)
@@ -389,7 +395,6 @@ places in the old plan.
 - [CARHA 16(i)] goaltender :1035 facts/CM price lone goalie's CARHA ejection without Rule 16(i) Note 1 (would soften a "Never") — owner/reader call, harsher (direction: harsher) — (plan 54, 561) — [T1]
 - [CARHA 46] mental_game KT10 / CM :644 "referee can skip straight to the GM" for CARHA — 46(a) Note REQUIRES a minor first; align with body :529; CARHA 46 "notwithstanding" GM scope (rules-verifier), harsher (direction: harsher) — (plan 716, 734) — [T1]
 - [CARHA 48] rules_primer CARHA biting via 48(a)?; PWHL 51.3 "minimal degree" scope, unverified (direction: accuracy) — (plan 654) — [T1]
-- [CARHA 54(b)] corpus — CARHA 54(b) "whether or not injury results" cross-check sentence scores 0 in content (unused same-tier parallel to HC 7.7(b)); sibling "only Hockey Canada" head cross-check claims, completeness (direction: completeness) — (plan 652, 2571) — [T1]
 - [CARHA tags] corpus — "CARHA adult leagues only" short tag (7 sites) vs long tag (148) consistency, readability (direction: readability) — (plan 687) — [T1]
 - [CARHA/PWHL] clipping — does CARHA or PWHL write an equivalent of HC 8.7 ("stops at the hips" reasoning is HC-only), unverified (direction: accuracy) — (plan 3619) — [T1]
 - [CARHA offside] CARHA — any other rule reaching a raised/airborne skate or a player entering ahead of the puck ("settles it neither way" could be false-cautious), low (direction: accuracy) — (plan 2197, 2638) — [T1]
@@ -1259,6 +1264,11 @@ places in the old plan.
 
 ### Podcast
 
+- [podcast v4] **Owner decision 30 Sep 2026: synthesise Style B audio on ElevenLabs Eleven v4 (`eleven_v4`), and generate every episode before 12 Oct 2026, when v4's 72% API launch discount ($0.022 vs $0.08 per 1k chars) ends.** To do:
+  (1) A/B v4 against v2 on defender chunk 1 (plain, and tagged: `tts-comparison/defender_chunk1_v4_tagged.local.md`, words verified identical); blocked on AWS SSO login for the key.
+  (2) Confirm v4 accepts `voice_settings` and `previous_text`/`next_text`, and switch `synthesize_style_b.py` DEFAULT_MODEL_ID between waves.
+  (3) The bottleneck is scripts, not synthesis: 1 of 39 Style B scripts exists and it is HARD-BLOCKED (next row). 38 scripts in 12 days, each needing a rules and a safety read, is the plan to size.
+  (4) Confirm which discount applies to this account (API price list versus subscription credits; the v4 page says "3x credits on Creator+ until October 12").
 - [P3] podcast_defender_script.local.md — HARD BLOCK, verified still present: "Taking the inside position and tying up the stick are yours in every league" (script :44) and "hooking in three of the four rulebooks"; release duty ("let it go") and slashing limb absent; CARHA duty-to-avert cut for length. Order: re-cut (not find-and-replace) → rules-verifier + safety-reviewer on the SCRIPT (never run) → `synthesize_style_b.py --dry-run --max-chunk-chars 5000` → only then synthesise (spends money), safety (direction: safety) — (plan 5269, 5325, 5367) — [T1]
 - [P3] five findings vs the Style B standard: §5 residue "a safety point that overrides everything in this section" (58.4%); backward pointer "Gap control, as we covered it" (71.6%) invisible to §5's phrase list; §4 recap rule not met (9.4%/95.0% only); Britain/competition scope collision inherited from defender.md :172 vs :160; clipping "a different offence with a higher ceiling" names no book, readability/standard (direction: safety) — (plan 5458) — [T1]
 - [P3] §12 checkboxes cannot be done as written: md_to_speech renders corpus markdown not a Style B script (chunker is `synthesize_style_b.split_script`); check_pointers reads content/ only; restate §12, tooling/standard (direction: tooling) — (plan 5476) — [T1]
