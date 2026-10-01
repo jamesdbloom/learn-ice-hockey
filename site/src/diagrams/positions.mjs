@@ -709,7 +709,7 @@ const wingerOffensiveZone = {
     'Hockey names the goal post beside the boards as the same head-down, head-first ' +
     'cervical spine injury, and says that injury can occur at walking speed — so take ' +
     'either one with an arm, a leg, anything but your head first. That holds in every ' +
-    'league, checking or not: a legal box-out walks you along the same path as an ' +
+    'league, checking or not: a box-out, legal or not, walks you along the same path as an ' +
     'illegal shove.',
 
   describe:

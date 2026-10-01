@@ -213,8 +213,8 @@ const wideEntry = {
     // ⚠️ AND "IT" IN THE WALKING-SPEED SENTENCE IS THE INJURY, NOT THE COLLISION — the Sources
     // trailer of the host document makes that reading explicit, so the clause below says the
     // injury occurs at walking speed rather than that the hit does.
-    // ⚠️ SCOPE IS EVERY BOOK AND EVERY LEVEL. This is not a checking-league point: a legal
-    // box-out moves you along the same path, and huh.txt attaches the mechanism to the head's
+    // ⚠️ SCOPE IS EVERY BOOK AND EVERY LEVEL. This is not a checking-league point: a box-out,
+    // legal or not, moves you along the same path, and huh.txt attaches the mechanism to the head's
     // angle, not to whether a check was thrown.
     //
     // NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the BOARDS posture and is
@@ -224,7 +224,7 @@ const wideEntry = {
     'duck into one. USA Hockey names the boards and the goal post together as the same ' +
     'cervical-spine injury, and says the injury can occur at walking speed, so take either with ' +
     'an arm, a leg, anything but your head first. That is every level and every book, not a ' +
-    'checking-league point: a legal box-out moves you along the same path' +
+    'checking-league point: a box-out, legal or not, moves you along the same path' +
     // ⚠️ THE CONTACT TEST IS KEYED TO THE GOALTENDER'S POSITION, NOT THE ATTACKER'S, AND THIS
     // CAPTION HAD IT KEYED TO THE ATTACKER'S. It read "any contact once you are in the crease,
     // and more than incidental contact outside it". Both books key both limbs on the goalie:
