@@ -23,7 +23,7 @@
 - **Drag your trail blade in contact with the blue line until the puck is in.** Contact is onside under all four books — and under the PWHL's and CARHA's as well, which makes six. An **airborne** skate held wholly back over the neutral zone is onside only under the NHL, the IIHF and the PWHL: USA Hockey and Hockey Canada require contact, and CARHA does not answer it either way.
 - **Get the puck itself past the centre red line before you send it away**, which keeps a clear out of icing in all four books.
 
-**Keep your stick on the puck and off the player.** Hooking, slashing and tripping are what a beaten player reaches for instead of skating, and each of them is two minutes a skater short (NHL Rule 16.1) — so the cheapest penalty-killing you will ever do is the stride you take instead. ⚠️ **That price is not two minutes in British junior hockey:** at U12 a minor runs three minutes, or four in a four-line game, and you serve it on your own line's shifts rather than on the clock. [UK and England Rules](uk_rules.md) carries that, the questions the U12 rules leave open, and the rest of the format.
+**Keep your stick on the puck and off the player.** Hooking, slashing and tripping are what a beaten player reaches for instead of skating, and each of them costs you at least a minor — two minutes a skater short (NHL Rule 16.1) — so the cheapest penalty-killing you will ever do is the stride you take instead. ⚠️ **That price is not two minutes in British junior hockey:** at U12 a minor runs three minutes, or four in a four-line game, and you serve it on your own line's shifts rather than on the clock. [UK and England Rules](uk_rules.md) carries that, the questions the U12 rules leave open, and the rest of the format.
 
 ## Overview
 
