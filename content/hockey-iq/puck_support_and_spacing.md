@@ -248,7 +248,7 @@ You are further up ice than the carrier.
 
 - **What the ahead-of-the-puck pass offers:** territory. This is the only one of the three that gains ground, and gaining ground is how you score.
 - **The cost of the ahead pass:** it is the most interceptable, and if it fails you are behind the play and cannot recover.
-- **The offside constraint:** a pass to a teammate ahead of you into the offensive zone only works if they are onside. **Offside requires both skates to have completely crossed the blue line before the puck completely crosses it.** One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside **under NHL, IIHF and PWHL rules — not under USA Hockey or Hockey Canada, where Rule 630(a) and Rule 6.11 require skate *contact***. So the ahead-of-the-puck option at the blue line is real but requires the receiver to time their entry, not just park in the zone.
+- **The offside constraint:** a pass to a teammate ahead of you into the offensive zone only works if they are onside. **Offside requires both skates to have completely crossed the blue line before the puck completely crosses it.** One skate on or behind the line keeps them onside, and a skate in the air over the neutral zone counts as onside **under NHL, IIHF and PWHL rules — not under USA Hockey or Hockey Canada, where Rule 630(a) and Rule 6.11 require skate *contact***, so keep that trailing blade on the ice wherever you play. The ahead-of-the-puck option at the blue line is real but requires the receiver to time their entry, not just park in the zone.
 
 ### The principle: all three at once
 
