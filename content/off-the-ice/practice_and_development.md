@@ -4,8 +4,8 @@
 > differ in a way that changes how you play, it is flagged inline. Almost none of the *content* of
 > this document changes between rule sets. **Two things do.** The first is equipment:
 > England Ice Hockey's *Rules & Regulations* 24.3 make an approved neck guard mandatory
-> *"whilst participating in all on ice activities"* — so in England and Wales it is required at
-> practice and not only in games. See [Equipment](equipment.md). The second is what happens
+> *"whilst participating in all on ice activities"* — so under England Ice Hockey it is required at
+> practice and not only in games, as it is in the Elite League (its Casebook Rule 9.12). See [Equipment](equipment.md). The second is what happens
 > when a shot hits your goaltender's mask, where every book stops play for an injured goalkeeper but only two trigger on the hit itself —
 > see [During the drill](#during-the-drill). What else changes
 > is how much ice you get, and that is the constraint this document is really about. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
@@ -16,7 +16,7 @@
 
 **Give every repetition a specific goal, and find out before the next one whether it worked.** Get an outside eye on it — a coach, a training partner, or a phone on a tripod — because you cannot see your own stride, and that is the part amateurs leave out and the part that costs most.
 
-**Do every repetition at game pace, once you are fit to.** Half-speed reps build half-speed skills, and the gap between practice pace and game pace is where players discover their technique does not survive. If a drill is too fast to do cleanly at full speed, that is the drill working correctly — don't cheat the rep to make it look tidy.
+**Do your drill reps at game pace, once you are fit to.** Half-speed reps build half-speed skills, and the gap between practice pace and game pace is where players discover their technique does not survive. If a drill is too fast to do cleanly at full speed, that is the drill working correctly — don't cheat the rep to make it look tidy.
 
 **Work at the edge of what you can do, and take the hard side.** Weak-side stops, backhand receptions, your bad-hand corner. If you succeed at a rep every time, you are performing it, not practising it — the reps you need are the ones that make you look bad.
 

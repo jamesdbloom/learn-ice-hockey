@@ -72,13 +72,13 @@ in either theme; the one exception is a region drawn as a hazard, tinted red rat
 blue — a difference greyscale loses, so its caption says in words which it is. You do
 not need to memorise the rest; come back when a symbol is unfamiliar.
 
+## Where each symbol comes from
+
 The notation is drawn from **two published symbol keys**, and one symbol is compared
 below against a third source that is a coaching manual with its own house key, not a governing-body one. The two keys
 disagree in places, so it is worth two minutes to know which is which.
 
 ![](diagram:notation-key)
-
-### Where each symbol comes from
 
 Six line symbols are drawn the same way in both keys:
 forward skating, skate and stickhandle, passing, shooting, the drop pass and the two-bar
@@ -134,7 +134,7 @@ player is facing is not something this notation can draw. The rest:
   diagrams draw the marker and the straight line without the leading wave, so the mark
   shows the drop and not the carry that set it up. It is this guide's own version.
 
-### What a tinted area or a faint dashed line means
+## What a tinted area or a faint dashed line means
 
 **Shaded regions and faint dashed lines are this guide's own, and neither published
 key has anything like them.** Many diagrams here wash an area of the ice in a light
@@ -187,7 +187,7 @@ compared against a blue one the order inverts outright, because a light blue pri
 darker than the faintest red. So a graded picture names its regions in order in words,
 and the words are the part to trust.
 
-### Shape, fill and what goes inside a glyph
+## Shape, fill and what goes inside a glyph
 
 **Shape is the position.** The *International Drill Symbols* sheet gives it in two
 lines — *"● ○ Forward / Player"* and *"▲ △ Defender / Player"* — so a **circle is a
@@ -242,7 +242,7 @@ who does not see red and green apart all get the same information as the screen 
 holds for every symbol here except the red tint on a hazard region, where the caption has
 to carry the warning instead.
 
-### The word "international"
+## The word "international"
 
 *Both* keys above carry the word "international" in their titles — *International Drill
 Symbols* and *International Symbols* — and what is drawn here is neither of them, ⚠️ **so
@@ -254,7 +254,7 @@ not the same system. None of this has been
 checked against how any particular club or coach actually draws things; if your
 coach's whiteboard disagrees, their whiteboard wins.
 
-### Numbered tags on a route
+## Numbered tags on a route
 
 **Numbered tags say what happened first, and they count routes rather than players.**
 A still picture cannot say whether the pass beat the forechecker or the forechecker beat
@@ -263,7 +263,7 @@ along it. The numbers run in the order the things happen. They are never a playe
 name and never sit inside a player's shape, which is where the letters go — and like the
 shading, the tag is this guide's own and appears in neither key.
 
-### What a diagram is and is not
+## What a diagram is and is not
 
 A diagram shows one moment. A movement that only
 makes sense over time needs two diagrams, so where you see a pair, read them as a
