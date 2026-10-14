@@ -430,26 +430,26 @@ that made stitched two-speaker attempts sound electronic. Style A's dialogue com
 NotebookLM, so the two do not collide. `scripts/tts_sample.py`'s *"SINGLE-VOICE by decision —
 do not re-add a dialogue path"* note stands for Style B.
 
-**Engine: ElevenLabs.** Voice `L0Dsvb3SLTyegXwtm47J`. Settings:
+**Engine: ElevenLabs.** Model `eleven_v4`. Voice `ShSKKFA7dFwxYhKZGUoY`. Model, voice, stability and similarity are the owner's choices of 14 October 2026; they replace `eleven_multilingual_v2`, `L0Dsvb3SLTyegXwtm47J`, 35% and 75%. Settings:
 
 | Setting | Value |
 |---|---|
 | Speed | 1.00 |
-| Stability | 35% |
-| Similarity | 75% |
+| Stability | 30% |
+| Similarity | 50% |
 | Style exaggeration | 20% |
 | Speaker boost | ON |
 
 ⚠️⚠️ **THESE SETTINGS ARE CHOSEN AND UNHEARD.** The comparison that selected ElevenLabs was
 run on the engine's **defaults** — `scripts/tts_sample.py` sends no `voice_settings` at all.
-**Nobody has heard 35 / 75 / 20 with speaker boost**, and the winning sample was short.
+**Nobody has heard 30 / 50 / 20 with speaker boost**, and the winning sample was short.
 **Test at length before treating this table as settled**, and update it here when someone has
 listened.
 
 ### ⚠️ Request stitching is a pipeline requirement, and the pipeline is written but UNHEARD
 
 **A full episode exceeds ElevenLabs' per-request limit, so an episode is synthesised as
-several calls and stitched.** ⚠️ **Whether the seams are audible at stability 35% is a KNOWN
+several calls and stitched.** ⚠️ **Whether the seams are audible at stability 30% is a KNOWN
 RISK, NOT A MEASURED FACT — verify it by listening.** ⚠️ **An earlier draft of this sentence
 explained the risk by asserting a vendor mechanism** — *"low stability means the engine's prosody
 is less consistent between independently synthesised requests"* — **written by an author who had

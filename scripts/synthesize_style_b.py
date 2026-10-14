@@ -11,7 +11,7 @@ five settings, and then says plainly that the pipeline those settings belong to
 **is unbuilt**. `scripts/build_podcast_audio.py` is a RE-ENCODER for NotebookLM
 masters and generates nothing; `scripts/tts_sample.py` is a one-shot comparison
 harness that sends `text` and `model_id` and **no `voice_settings` at all** — which
-is why the owner's chosen 35 / 75 / 20 with speaker boost has still never been
+is why the owner's chosen 30 / 50 / 20 with speaker boost has still never been
 heard. This is the missing generator.
 
 ⚠️ THE SETTINGS BELOW ARE CHOSEN AND UNHEARD. The comparison that selected
@@ -31,7 +31,7 @@ against the live API, which states the number in its own 400:
      characters. Please use Studio for long form TTS."
 
 The exemplar script is 20,148 characters, so an episode is SEVERAL CALLS. ⚠️ At
-stability 0.35 the engine's prosody is deliberately less consistent between
+stability 0.30 the engine's prosody is deliberately less consistent between
 independently synthesised requests, so a naive splitter produces an episode whose
 voice steps at each seam. Three things keep that from happening, and all three are
 required:
@@ -135,15 +135,16 @@ import urllib.request
 # ── The owner's chosen settings, project/podcast_style_b_script_standard.md §11 ──
 # ⚠️ CHOSEN AND UNHEARD. Every one has a CLI override for exactly that reason.
 DEFAULT_SPEED = 1.00
-DEFAULT_STABILITY = 0.35
-DEFAULT_SIMILARITY = 0.75
+DEFAULT_STABILITY = 0.30
+DEFAULT_SIMILARITY = 0.50
 DEFAULT_STYLE = 0.20
 DEFAULT_SPEAKER_BOOST = True
 
-DEFAULT_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "L0Dsvb3SLTyegXwtm47J")
-# ⚠️ The model the owner's comparison actually heard. `tts_sample.py` sends the
-# same one. Changing it changes the voice, so change it deliberately.
-DEFAULT_MODEL_ID = "eleven_multilingual_v2"
+DEFAULT_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "ShSKKFA7dFwxYhKZGUoY")
+# ⚠️ The owner's choice, 14 October 2026 (decided 30 September). Whether v4 honours
+# `voice_settings` and `previous_text`/`next_text` as v2 does has NOT been tested
+# against the live API. `--model eleven_multilingual_v2` restores the old model.
+DEFAULT_MODEL_ID = "eleven_v4"
 
 # ⚠️ 10,000 is the API's own stated hard limit (see the module docstring for the
 # verbatim 400). This is the SPLIT TARGET, not the limit: smaller chunks make a
@@ -545,7 +546,7 @@ def main(argv=None) -> int:
     print(f"  billed          {billed:,} credits this run"
           + ("" if fresh else " (everything came from cache)"))
     print("\n⚠️ The seams are at paragraph boundaries and have NOT been listened to. "
-          "\n   Stability 0.35 is chosen and unheard; §11 of the standard asks for an "
+          "\n   Stability 0.30 is chosen and unheard; §11 of the standard asks for an "
           "\n   ear test at length before those settings are treated as settled.")
     return 0
 

@@ -140,7 +140,7 @@ Set up only the ones you picked. Each is a signup, a key, and one line in a file
    American — comparing her against en-GB `Amy` tells you about the accent, not the engine.
    Browse **https://elevenlabs.io/app/voice-library**, filter to English (UK), open a voice
    you like, and copy its **voice ID**. That goes in `ELEVENLABS_VOICE_ID` below.
-   ✅ **ALREADY CHOSEN — the owner's preferred voice is `L0Dsvb3SLTyegXwtm47J`.** Use that unless
+   ✅ **ALREADY CHOSEN — the owner's preferred voice is `ShSKKFA7dFwxYhKZGUoY`** (set 14 October 2026, replacing `L0Dsvb3SLTyegXwtm47J`). Use that unless
    you are deliberately re-auditioning. ⚠️ **A voice id is an identifier, not a credential** — it
    belongs in the environment beside the key, but it is not a secret and does not need the secret
    store.
@@ -152,7 +152,7 @@ Set up only the ones you picked. Each is a signup, a key, and one line in a file
      aws secretsmanager get-secret-value \
      --secret-id ice-hockey-production/elevenlabs-api-key \
      --query SecretString --output text)
-   export ELEVENLABS_VOICE_ID=L0Dsvb3SLTyegXwtm47J
+   export ELEVENLABS_VOICE_ID=ShSKKFA7dFwxYhKZGUoY
    ```
    ⚠️ **It is NOT in Terraform.** `infra/` does not manage it, so it is unmanaged drift, tagged
    `ManagedBy=manual`. Importing it into state is a separate decision.
