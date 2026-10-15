@@ -831,7 +831,8 @@ const angleIntoTheCorner = {
   // "cannot turn," applies to this sentence too.
   // ⚠️ TWO SENTENCES, NOT ONE COMMA LIST — the §6 form, at "Get your skates parallel to the
   // wall and put your forearm and hip to it — not the point of your shoulder, not the whole
-  // shoulder if you can help it, and never your back. Head up, chin off your chest." (That
+  // shoulder if you can help it, and never turn your back to the checker. Head up, chin off
+  // your chest." (That
   // quotation carried only the tip limb until 19 Sep 2026; body_contact_and_battles.md:788
   // now carries both, and the caption below was brought to it in the same edit — see the
   // SHOULDER note below.) Run as one list, the "not ... your shoulder" is still
@@ -873,7 +874,7 @@ const angleIntoTheCorner = {
     'takes you out of the collision altogether. ⚠️ How you meet the wall once you are there is the ' +
     'half no picture can draw, and it is not optional. Whether the player closing on you may check ' +
     'you at all depends on your age group, your league and the book they play under, and nothing that ' +
-    'follows depends on the answer. Never take that contact with your back to the boards, and never ' +
+    'follows depends on the answer. Never turn your back to the checker, and never ' +
     'duck. Those are two separate injuries with two separate mechanisms. A back turned makes it a hit ' +
     // ⚠️ BOTH BORROWINGS QUOTED. The addressee was already right here; what was missing was the
     // quotation marks. "Even a light hit..." is sources/ibc.txt:1570 verbatim (§5 Checking From

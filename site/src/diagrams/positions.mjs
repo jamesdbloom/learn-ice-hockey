@@ -1129,7 +1129,7 @@ const wingerDzRim = {
     ' exactly the checker a RIM beats: a hard shot along the boards that follows the curve of the ' +
     'rink past him to a teammate further around, because it goes where he is not. It is a valid play ' +
     'and not an admission of failure. Decide where the puck is going while you are still skating to ' +
-    'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the wall and ' +
+    'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the checker and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
     'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
     'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
@@ -1193,10 +1193,10 @@ const wingerDzReverse = {
     ' sent back the way it came, against the direction the pressure is flowing, to a teammate ' +
     'arriving behind you. Read which of the two you are facing before the puck arrives, because the ' +
     'plays are opposites and the wrong one hands him the puck in your own end. Feet wide and moving, ' +
-    'backside into him, puck on the far side of your body — a stationary player on the wall gets ' +
+    'side-on with your hip and backside into him, puck on the far side of your body — a stationary player on the wall gets ' +
     'pinned whichever mistake the checker is making. Call for it — "reverse!" — because the teammate ' +
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
-    'back to the wall and never duck. Those are two different injuries — a hit from behind you cannot' +
+    'back to the checker and never duck. Those are two different injuries — a hit from behind you cannot' +
     ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
     'to the boards, forearm and hip into the contact, head up and chin off your chest' +
     SHOULDER_TAIL,
@@ -1293,11 +1293,11 @@ const offWingOpenToTheIce = {
     ' OPEN TO THE ICE, hips turned out and a step or two off the boards. That separation is what ' +
     'leaves all four answers available: skate, pass to the centre, pass back to your defenceman, or ' +
     'attack the middle. Three of them are drawn, as alternatives rather than a sequence, and none of ' +
-    'the four is ranked above the others; flush against the wall you have one. Note that the coaching' +
-    ' source this section otherwise follows teaches the opposite reception — taking the pass with ' +
-    'your back to the boards — and this guide does not follow it there. ⚠️ Two things this picture ' +
-    'cannot show, and both of them are prohibitions: never turn your back to the boards to receive ' +
-    'it, and never duck. Those are two different injuries — a hit from behind you cannot brace for, ' +
+    'the four is ranked above the others; flush against the wall you have one. The coaching' +
+    ' source this section follows teaches the same reception in other words — your back to the ' +
+    'boards, facing the ice — and the step off the wall is the one thing added here. ⚠️ Two things this picture ' +
+    'cannot show, and both of them are prohibitions: never turn your back to the checker as you ' +
+    'receive it, and never duck. Those are two different injuries — a hit from behind you cannot brace for, ' +
     'and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the wall,' +
     ' forearm and hip, head up and chin off your chest' + SHOULDER_TAIL,
 

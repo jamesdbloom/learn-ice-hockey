@@ -355,8 +355,8 @@ const wideEntry = {
 // ---------------------------------------------------------------------------
 
 // In OPEN ICE, deliberately. The section carries a safety override that outranks
-// the play: "Curl in open ice, not against the wall. Never take contact with your
-// back to the boards." A curl-back drawn against the wall would be the corpus
+// the play: "Curl in open ice, not against the wall. Never turn your back to the
+// checker." A curl-back drawn against the wall would be the corpus
 // teaching the behaviour it says is most associated with catastrophic spinal
 // injury, so this one is in the middle third of the ice and nowhere near it.
 const DELAY_AT = { at: 'blue-line', dx: -3, dy: -10 };    // (22, -10)
@@ -375,12 +375,12 @@ const delayCurl = {
     'body between the defender and the puck, and buys the one or two seconds his late support ' +
     'needs to arrive at speed. The re-attack that follows is not drawn. ' +
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
-    'curl away from the wall, and never take contact with your back to the boards. ' +
+    'curl away from the wall, and never turn your back to an oncoming checker near it. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
     // in its own <p> with a 700 ms break either side -- verified this session by rendering
-    // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never take contact with
-    // your back to the boards" leaves a reader tight to the wall a prohibition and no permitted
-    // alternative, and the move that satisfies "curl away from the wall" plus "never your back"
+    // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never turn your back to
+    // an oncoming checker near it" leaves a reader tight to the wall a prohibition and no permitted
+    // alternative, and the move that satisfies "curl away from the wall" plus "never turn your back"
     // is the one the section names as the error: turning away INTO the boards. The section
     // carries the counterweight in four other layers and this was the layer without it --
     // zone_entries.md:453 (the §5 override blockquote), :443-444 and :475-476 (both facts
@@ -403,7 +403,7 @@ const delayCurl = {
     //     -- zone_entries.md:475, verbatim.
     //   "skates parallel to the wall, forearm and hip into it, head up and chin off your chest"
     //     -- zone_entries.md:476, verbatim.
-    //   "never duck" -- body_contact_and_battles.md:714, "Never your back to the wall, never duck."
+    //   "never duck" -- body_contact_and_battles.md, "Never turn your back to the checker, never duck."
     //
     // NO BODY-CHECKING LEVEL CAVEAT HERE, on purpose. This is how to RECEIVE contact, and
     // body_contact_and_battles.md:649 is explicit that its receiving section is to be read

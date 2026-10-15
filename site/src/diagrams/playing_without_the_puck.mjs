@@ -207,17 +207,17 @@ const loosePuckWhoGoes = {
     // wording with the word order shuffled and no quotation marks, which is invisible to
     // check_quote_drift.py. The source's own "Even a light hit" carries the not-only-fast-hits
     // point that the old trailing "even when the hit is light" was carrying by paraphrase.
-    'contact with the boards or the goal post. A back turned to the boards is the ' +
+    'contact with the boards or the goal post. A back turned to the checker is the ' +
     'other: it makes the contact a hit from behind. USA Hockey addresses its warning about those ' +
     'to the checker delivering one: "Even a light hit from behind could inflict a severe head or ' +
     'neck injury." Neither warning depends on the ' +
     'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
-    // KT6's mid-sentence slot rather than the tail: this sentence ends on two absolutes
-    // ("never turn your back to the wall or duck") and a hedged clause appended after them
+    // KT6's mid-sentence slot rather than the tail: the caption ends on two absolutes
+    // ("never turn your back to the checker, and never duck") and a hedged clause appended after them
     // would read as qualifying them.
     'skates parallel to it, take the contact on your forearm and hip — and ' +
     SHOULDER_NOT_THE_SURFACE + ' — head up and chin off ' +
-    'your chest, and never turn your back to the wall or duck.',
+    'your chest. Never turn your back to the checker, and never duck.',
 
   describe:
     'Your own end zone, the net at the right, your goaltender in the crease. A loose puck sits ' +

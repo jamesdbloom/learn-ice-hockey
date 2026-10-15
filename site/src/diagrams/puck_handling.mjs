@@ -98,7 +98,7 @@
  *     `winger-dz-reverse`. What is left of the section — hip and forearm to the wall,
  *     square to the boards versus angled — is facing, and see above.
  *
- *   "### Back into the checker" — facing, entirely. Its one positional consequence, that
+ *   "### Side-on into the checker" — facing, entirely. Its one positional consequence, that
  *     the puck ends up on the side of you away from the pressure, IS the first diagram
  *     below, so this section's picture already exists under the section that owns the idea.
  *
@@ -274,11 +274,11 @@ const puckOnTheFarSide = {
     'be chosen; the section says only "the checker". ' +
     'Nothing in the picture shows contact. ' +
     '⚠️ And the moment a battle like this reaches the boards, this document\'s own override ' +
-    'outranks every word of it: never turn your back to the wall and never duck, and neither ' +
+    'outranks every word of it: never turn your back to the checker and never duck, and neither ' +
     'prohibition is a rule for fast checkers only. Get your skates parallel to the wall and take ' +
     'the contact on your forearm and hip, head up and chin off your chest' + SHOULDER_TAIL +
     // The clause sits after the POSTURE and before the two quoted warnings, never after them:
-    // appended to "never turn your back to the wall" its "if you can help it" would attach
+    // appended to "never turn your back to the checker" its "if you can help it" would attach
     // backwards to an absolute.
     ' USA Hockey addresses ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
@@ -778,7 +778,7 @@ const youCannotBeatTwo = {
     'only that a second defender is arriving. ' +
     '⚠️ And protecting is a way to buy a second, not a place to live: every second you hold the ' +
     'puck under pressure another checker is arriving. If this drifts to the boards, the override in ' +
-    'this document outranks all of it — never turn your back to the wall and never duck, and ' +
+    'this document outranks all of it — never turn your back to the checker and never duck, and ' +
     'neither prohibition is a rule for fast checkers only. Skates parallel to the wall, forearm and ' +
     'hip, head up and chin off your chest' + SHOULDER_TAIL,
 
@@ -1027,7 +1027,7 @@ const theLastPlayerBack = {
     'What is assumed here is a possession-oriented breakout ' +
     'with a two-one-two forecheck, and this is your coach\'s call. Ask. ' +
     '⚠️ And if the decision you take turns into a battle and that battle reaches the boards, this ' +
-    'document\'s override outranks every word of it: never turn your back to the wall and never ' +
+    'document\'s override outranks every word of it: never turn your back to the checker and never ' +
     'duck, and neither prohibition is a rule for fast checkers only. Get your skates parallel to ' +
     'the wall and take the contact on your forearm and hip, head up and chin off your chest' +
     SHOULDER_TAIL,

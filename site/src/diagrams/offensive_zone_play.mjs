@@ -1071,7 +1071,7 @@ const cycleRim = {
     'from a reverse. Ranking the wrong read as a leading cycle turnover is coaching craft ' +
     'rather than a measurement, because nobody has counted cycle turnovers by cause. ' +
     '⚠️ And whichever one is on, this is a ' +
-    'wall battle: never turn your back to the boards and never duck. Skates parallel to the wall, ' +
+    'wall battle: never turn your back to the checker and never duck. Skates parallel to the wall, ' +
     'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL +
     ' Only the checker and the ' +
     'goaltender are drawn on the other team.',
@@ -1145,7 +1145,7 @@ const cycleReverse = {
     'momentum — read him as past and unable to stop, and call for it. Ranking the wrong ' +
     'read as a leading cycle turnover is coaching craft rather than a measurement, because ' +
     'nobody has counted cycle turnovers by cause. ⚠️ And ' +
-    'whichever one is on, this is a wall battle: never turn your back to the boards and never ' +
+    'whichever one is on, this is a wall battle: never turn your back to the checker and never ' +
     'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
     'your chest — and not on the point of your shoulder, and not the whole shoulder if you can ' +
     'help it. Only the checker and the goaltender are ' +

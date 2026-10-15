@@ -658,8 +658,8 @@ const battleSupport = {
     // `off-wing-open-to-the-ice` all carry the warning, so the form already existed and this was
     // the outlier. Wording is the owning section's own — `content/hockey-iq/
     // puck_support_and_spacing.md`: "going in does not change how you arrive", "skates parallel
-    // to the wall … forearm and hip, head up and chin off your chest — never your back to the
-    // boards, never duck". The caption is VOICED (`md_to_speech.py` resolves `diagram:<id>` to
+    // to the wall … forearm and hip, head up and chin off your chest — never turn your back to the
+    // checker, never duck". The caption is VOICED (`md_to_speech.py` resolves `diagram:<id>` to
     // it) and is also the SVG title and the visible figcaption, which is why it cannot rely on
     // the paragraph beside it: quoted anywhere else, the instruction to go in would travel
     // without the posture.
@@ -678,11 +678,11 @@ const battleSupport = {
     // ⚠️ WHAT MAY NOT CHANGE IS THE PROHIBITION. Only the evidence attached to each limb moves.
     // Read aloud, two clauses of unequal strength can be heard as the weaker one granting
     // permission, so the absolute lands first and on its own — "Never turn your back to the
-    // wall and never duck" — and "neither prohibition is a rule for fast arrivals only" covers
+    // checker, and never duck" — and "neither prohibition is a rule for fast arrivals only" covers
     // both before either quote is heard. A listener must not be able to reach
     // "so a slow hit from behind is fine."
     '⚠️ And if you do go in, how you arrive outranks winning the puck. Never turn your back to ' +
-    'the wall and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
+    'the checker, and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
     'head up and chin off your chest' + SHOULDER_TAIL +
     ' Loose-puck races and fifty-fifty pucks at the wall are ' +
     'where checking-from-behind and boarding injuries happen, and neither prohibition is a rule ' +

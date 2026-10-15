@@ -129,7 +129,7 @@
  *     document. `forecheck-212`, placed above under "Offensive Zone: Pressuring an
  *     Opponent with the Puck", carries the identical warning in its own caption ("take the
  *     puck, take the ice, or angle him off it, and never finish into his back") over a
- *     carrier drawn with his back to the boards. That section already cross-links this one
+ *     carrier drawn about to turn his back to the forechecker. That section already cross-links this one
  *     by name ("read [§May you check at all] below"), so a reader reaches the picture
  *     before reaching the rule text it is warning about. A second copy here would be the
  *     same defect spec 1's header warns against, just carried across sections instead of

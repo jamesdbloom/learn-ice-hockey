@@ -508,7 +508,7 @@ Action: Arrive at the puck on an angle rather than straight at the passer, curli
 Goal: Your next option should already be visible when the puck lands on your blade
 Key: Decide which way you are going before the puck arrives, and be pointing that way when it does
 Risk: A closed body invites the pressure to arrive on your back — worst on the offensive half-wall and on breakout receptions
-Never: Take contact with your back to the boards, and never duck — skates parallel to the wall, forearm and hip rather than the point of your shoulder, head up, chin off your chest
+Never: Turn your back to the checker, and never duck — skates parallel to the wall, forearm and hip rather than the point of your shoulder, head up, chin off your chest
 Technique: If you are already facing the wall and cannot turn, get your stick and gloves up on the glass and spread the impact over as wide a surface as you have, with no head contact at all
 ```
 
@@ -520,7 +520,7 @@ Technique: If you are already facing the wall and cannot turn, get your stick an
 
 This is especially valuable on the half-wall in the offensive zone and on any breakout reception, where a closed body invites the pressure to arrive on your back.
 
-**And on the wall, "pressure arriving on your back" is a hit from behind into the boards.** Opening your body is the tactical answer to it; there is a separate answer about your posture at the moment of contact, and that one is not a preference. ⚠️ **Never take that contact with your back to the boards, and never duck.** Get your **skates parallel to the wall** and take it on your **forearm and hip**, head up and chin off your chest — not on the point of your shoulder, and not the whole shoulder if you can help it. If you are already facing the wall and cannot turn, that is a fallback rather than the position you were aiming for: get your stick and gloves up and spread out on the glass, and spread the impact over as wide a surface as you have, with no head contact at all. Turning your back and ducking are two prohibitions against two different injuries, and [Body Contact and Battles](body_contact_and_battles.md) owns the full three-case rule, the wording it is quoted from and the evidence behind each prohibition.
+**And on the wall, "pressure arriving on your back" is a hit from behind into the boards.** Opening your body to the ice is the tactical answer to it, because it lets you see the checker coming instead of feeling them arrive; there is a separate answer about your posture at the moment of contact, and that one is not a preference. ⚠️ **Never turn your back to the checker, and never duck.** Get your **skates parallel to the wall** and take it on your **forearm and hip**, head up and chin off your chest — not on the point of your shoulder, and not the whole shoulder if you can help it. If you are caught facing the wall with the checker behind you and cannot turn, that is a fallback rather than the position you were aiming for: get your stick and gloves up and spread out on the glass, and spread the impact over as wide a surface as you have, with no head contact at all. Turning your back and ducking are two prohibitions against two different injuries, and [Body Contact and Battles](body_contact_and_battles.md) owns the full three-case rule, the wording it is quoted from and the evidence behind each prohibition.
 
 ### Receiving while moving
 
