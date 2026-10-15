@@ -1446,6 +1446,8 @@ builds its own SVG outside `rink.mjs` was not ruled out.
 
 ## Hockey Canada writes almost no suspensions into its playing rules — check before asserting one
 
+⚠️⚠️ **CORRECTION, 15 October 2026: the measurement below searched only the WORD `suspension`, and that word is not how Hockey Canada writes it.** Rules **4.8(c)** and **4.9(b)** say a player *"will automatically be suspended"* for the next game (or seven days) after a game misconduct or gross misconduct in the last ten minutes, in overtime, or after the game (`hc.txt` around 4.8(c)/4.9(b)). The corpus already cites 4.8(c) correctly. Treat the section below as a lesson in label searching, not as a finding that Hockey Canada writes no suspensions.
+
 Measured 2 September 2026, with a positive control proving the extraction is sound (`Game Misconduct`
 **148** hits, `Match penalty` **75**, `Gross Misconduct` **38**, `Game Incident Report` **8**):
 
