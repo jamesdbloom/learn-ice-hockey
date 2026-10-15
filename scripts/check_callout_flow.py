@@ -651,7 +651,7 @@ def main():
         st.sort(key=lambda s: -len(s[1]))
         held = sum(len(r) for _, r in st)
         print(f"check_callout_flow: {len(st)} stacks of 2+ consecutive flow-breaking callouts, "
-              f"holding {held} of {len(fb)} ({round(100 * held / len(fb))}%)\n")
+              f"holding {held} of {len(fb)} ({round(100 * held / len(fb)) if fb else 0}%)\n")
         for p, run in st:
             shape = "one blockquote" if all(b for _, _, b in run) else "separate blocks"
             sec = run[0][1]

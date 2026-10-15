@@ -140,6 +140,7 @@ DOCS=(
   "ukcg|https://sportandrecreation.org.uk/|https://sportandrecreation.org.uk/files/uk-concussion-guidelines-for-grassroots-non-elite-sport---november-2024-update-061124084139.pdf"
   "crt6|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2024/02/Concussion-tool-CRT6.pdf"
   "carha|https://carhahockey.ca/|https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf"
+  "carha_2026|https://carhahockey.ca/|https://carhahockey.ca/wp-content/uploads/2026/09/RuleBk-2026e.pdf"  # 2026 book; corpus still cites the 2020 one, see sources/README.md
 
   # ⚠️ THE FOUR IHUK RULES OF COMPETITION. These answer a question the corpus spent a long time
   # saying no British document answers: WHICH AGE GROUPS MAY BODY CHECK. The two rule books

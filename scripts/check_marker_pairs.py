@@ -111,6 +111,20 @@ def main(argv):
         base, argv = argv[1], argv[2:]
     root = subprocess.run(["git", "rev-parse", "--show-toplevel"],
                           capture_output=True, text=True).stdout.strip()
+    if argv[:1] in (["-h"], ["--help"]):
+        print("usage: check_marker_pairs.py [--base REV] [content/....md ...]\n"
+              "With no paths, checks every content/ file that differs from REV (default HEAD).")
+        return
+    if not argv:
+        # Until 15 October 2026 a bare run checked NOTHING and exited 0, which read
+        # as a clean pass. A commit gate measured it. Default to the changed files.
+        argv = [os.path.join(root, f) for f in subprocess.run(
+            ["git", "diff", "--name-only", base, "--", "content"],
+            capture_output=True, text=True, cwd=root).stdout.split() if f.endswith(".md")]
+        if not argv:
+            print(f"check_marker_pairs: no content/ file differs from {base} -- nothing to check")
+            return
+    total_lost = 0
     for path in argv:
         # git show needs a REPO-RELATIVE path. An absolute path silently yields an
         # empty blob, which printed HEAD=0 and read like a catastrophic marker loss.
@@ -127,12 +141,15 @@ def main(argv):
         vanished = [k for k, v in o.items() if v and k not in n]
         print(f"{path}")
         print(f"   marked units {base}={sum(o.values())} tree={sum(n.values())}")
+        total_lost += len(lost)
         print(f"   LOST MARKER (same unit, marker gone): {len(lost)}")
         for k in lost:
             print(f"      -> {k!r}")
         print(f"   unit no longer present by key: {len(vanished)}")
         for k in vanished:
             print(f"      ?? {k!r}")
+    print(f"\ncheck_marker_pairs: {len(argv)} file(s), {total_lost} LOST MARKER(s) in total "
+          f"(a worklist: read each; exit status is always 0)")
 
 
 if __name__ == "__main__":

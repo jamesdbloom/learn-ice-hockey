@@ -39,7 +39,7 @@ extraction traps, and there are several that have manufactured false findings.
 | `nhl_rules_2024-25_layout.txt` | The same superseded book, `-layout`. Same restriction. |
 | `iihf_rules_2026-27.txt` | IIHF Official Rulebook **2026/27 v1.0** — the IIHF's current edition. ⚠️ **Rule 46 is rewritten and RENUMBERED in full, and Appendix IV merges three major-penalty tables into one, shifting everything from Rule 22 onward by −2.** Its **Appendix VII restates rule text under existing numbers for PILOT rules explicitly NOT in force** — anchor any rule-number search to line starts or you will read a pilot as the body rule |
 | `iihf_situations_2026-27.txt` | IIHF Situation Handbook **2026/27** |
-| `iihf_rules_v1.1.txt` | IIHF Official Rulebook 2025/26 **v1.1 — ⚠️ cite this edition for the BRITISH layer**, which adopts 2025/26. Which edition is current depends on whose competition the reader is in: say which, every time |
+| `iihf_rules_v1.1.txt` | IIHF Official Rulebook 2025/26 **v1.1 — ⚠️ cite this edition for the In-House (NIHL, SNL, BUIHA, WNIHL) British layer**, which adopts 2025/26; **the Elite League's Casebook falls back to the 2026/27 book** (`eihl_casebook.txt` Preamble), so an EIHL claim cites 2026/27. Which edition is current depends on whose competition the reader is in: say which, every time |
 | `iihf_rules_v1.0.txt` | IIHF Official Rulebook 2025/26 v1.0, May 2025 — superseded, kept for comparison |
 | `iihf_rules.txt` | The repaired mirror extraction of v1.1. Prefer `iihf_rules_v1.1.txt` |
 | `iihf_situations_v1.1.txt` | IIHF Situation Handbook 2025/26 **v1.1, August 2025 — cite this edition** |

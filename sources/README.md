@@ -2213,3 +2213,12 @@ Measures) was not compared.
 - **Hockey Canada Appendix D, the "Time Penalty Options Chart", lists "Interference with the Goaltender" only in its Match column**, although Rule 8.5(a) is a minor and 8.5(b) a major plus game misconduct. The corpus prices goalie contact from 8.5 itself, not from the chart. Do not use the chart as a tariff source for this act.
 - **The IIHF 2026/27 book has changes its own Summary of Changes does not list.** A sentence-level diff against v1.1 found that 28.1 now makes the head coach liable to supplementary discipline, and that 70.2–70.6 (leaving the bench or penalty box) add supplementary discipline for the player and the coach. Rule numbers are otherwise unchanged except Rule 46's clauses, Rules 102/202 and the Appendix IV tables. Do not treat the Summary of Changes as complete.
 
+## ⚠️ 15 October 2026: Hockey Canada republished 2026-28, and CARHA published a 2026 book
+
+- **`hc.txt` / `hc_layout.txt` are now the Hockey Canada 2026-28 rulebook as republished on 10 September 2026** (PDF `CreationDate` 10 Sep 2026, 167 pages, sha256 `4628570e…`, same URL as before). The previous print is kept as `hc_2026-08-print.txt` / `hc_layout_2026-08-print.txt` for comparison. A research diff found 23 changed hunks. Three bear on corpus claims:
+  - **4.11(a)(iii):** the goalkeeper limb adds "blocker or trapper".
+  - **4.11(a)(v):** the crease limb now covers falling on or gathering the puck.
+  - **Interpretation 6 to 4.11(b):** now carries a crossbar condition on the lacrosse-style move.
+  - These are plan rows in the "Wave 34 follow-ups" section. ⚠️ **Line numbers quoted from `hc.txt` before 15 October 2026 refer to the previous print.** Re-locate them by text.
+- **`carha_2026.txt` / `carha_2026_layout.txt`: the CARHA Hockey 2026 rulebook** (`https://carhahockey.ca/wp-content/uploads/2026/09/RuleBk-2026e.pdf`, sha256 `c7f64d67…`). It is added **alongside** `carha.txt` (the 2020 interactive book that every corpus citation still names), not in place of it. Research reported that numbering and text are unchanged except two provisions: the face-off location after the puck leaves play, and shootout eligibility (players serving a penalty are ineligible). Whether to relabel the corpus's 77 "printed 2020" CARHA citations is an owner question. Until that is decided, cite `carha.txt` and check `carha_2026.txt` for any change.
+
