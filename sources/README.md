@@ -2217,7 +2217,7 @@ Measures) was not compared.
 
 ## ⚠️ 15 October 2026: Hockey Canada republished 2026-28, and CARHA published a 2026 book
 
-- **`hc.txt` / `hc_layout.txt` are now the Hockey Canada 2026-28 rulebook as republished on 10 September 2026** (PDF `CreationDate` 10 Sep 2026, 167 pages, sha256 `4628570e…`, same URL as before). The previous print is kept as `hc_2026-08-print.txt` / `hc_layout_2026-08-print.txt` for comparison. A research diff found 23 changed hunks. Three bear on corpus claims:
+- **`hc.txt` / `hc_layout.txt` are now the Hockey Canada 2026-28 rulebook as republished on 10 September 2026** (PDF `CreationDate` 10 Sep 2026, 167 pages, sha256 `4628570e…`, same URL as before). The previous print is kept as `hc_2026-08-print.txt` / `hc_layout_2026-08-print.txt` for comparison. ⚠️ **That file is the SUPERSEDED August print, not the republication — never verify a current claim against it.** Several agents in waves 37–40 read the name as "the 2026 book" and one nearly reverted a correct 4.11(a)(iii) change on the strength of it. Cite and check `hc.txt`. A research diff found 23 changed hunks. Three bear on corpus claims:
   - **4.11(a)(iii):** the goalkeeper limb adds "blocker or trapper".
   - **4.11(a)(v):** the crease limb now covers falling on or gathering the puck.
   - **Interpretation 6 to 4.11(b):** now carries a crossbar condition on the lacrosse-style move.
