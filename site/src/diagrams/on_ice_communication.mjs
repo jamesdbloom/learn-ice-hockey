@@ -246,70 +246,34 @@ const whoCanSeeIt = {
   half: true,
   width: 900,
 
+  // ⚠️ W34 TRIM, 495 → ~170 words. Cut, because both hosts already carry it
+  // (on_ice_communication.md :23/:108/trailer; goaltender.md :704/:716/:1241): the notation
+  // disclaimer (a hedge about the drawing), the USA Hockey "light hit from behind" quotation
+  // and the Tator / Heads Up mechanism, and the checker-obligation / find-your-book close —
+  // this caption is about RECEIVING contact, which happens in non-check hockey too.
+  // Kept: "in this picture", the false-"time" hazard, and the posture with BOTH absolutes.
   caption:
-    'Why the call exists at all: the player going to get the puck is the one who cannot see the ' +
     // ⚠️ "IN THIS PICTURE" IS LOAD-BEARING. Anyone with a view can make the call — the owner
     // document's own organising principle, and on_ice_communication.md:60 says flatly "Everyone
     // else can see it" — so a bare "the two who can see it" would be an absolute that document
     // contradicts three times. Only four players are drawn here; this sentence describes them,
     // not hockey.
-    'danger, and in this picture the two who can see it are the two who cannot reach it. A ' +
-    'defenceman is going back into his own corner for a loose puck; a forechecker is closing ' +
-    'from the one place his eyes do not reach; and his partner and his goaltender can see both ' +
-    'and can do nothing about it except say so. Both ' +
-    'are labelled "calls it", because where two people can see it both should call it: the ' +
-    'failure being guarded against is silence, not duplication. The words themselves are a team ' +
-    'matter, not a law of hockey: there is no official vocabulary, so agree your own list. ' +
-    'This notation has no facing and no sightline, so that the retriever cannot see him rests ' +
-    'on which way he is travelling; which side the ' +
-    'forechecker arrives from is one instance rather than a fixed ' +
-    'arrangement. The mirror of this picture is the same corner with nobody arriving, where the ' +
-    'call is "time" — and a false "time" sends a teammate into ' +
-    'contact he was not braced for. ⚠️ The safety instruction this picture carries is the one ' +
-    'shouted at a player arriving at the wall who cannot see the check coming. Two ' +
-    'separate postures injure a neck at the boards, and they are not the same warning. A back ' +
-    // ⚠️ QUOTED AT LAST. This module's own header comment above already printed this sentence
-    // as a quotation from Introduction To Body Contact §5 — sources/ibc.txt:1570 — while the
-    // shipped caption paraphrased its word order and dropped the quotation marks entirely. The
-    // addressee is named because §5 is addressed to the checker, not to the player who turns.
-    // The source's "Even a light hit" already blocks the "so a slow one is fine" reading that
-    // the old trailing "even when the hit is light" was doing by hand.
-    'turned to the wall is one: it makes the contact a hit from behind. USA Hockey addresses its ' +
-    'warning about those to the checker delivering one: "Even a light hit from behind could ' +
-    'inflict a severe head or neck injury." A chin dropped to the ' +
-    'chest is the other: it straightens the cervical spine, and USA Hockey’s Heads Up Hockey ' +
-    'guide, restating research by Charles Tator and colleagues, has it that almost all on-ice ' +
-    'cervical spine injuries have come from the head being slightly flexed while making head-on ' +
-    'contact with the boards or the goal post. So never take that contact with your back to the ' +
-    'boards, and never duck. ' +
-    // ⚠️ THIS SENTENCE NAMES ITS OWN SUBJECT AND RE-CARRIES BOTH PROHIBITIONS ON PURPOSE,
-    // and that is now belt and braces rather than the only thing holding the caption
-    // together. It used to be load-bearing: at 3,989 characters against md_to_speech's
-    // MAX_BILLED_CHARS of 2,800 the caption could not be voiced in one chunk, and
-    // `_split_paragraph` cut it at the sentence boundary nearest the limit, which fell
-    // immediately after "and never duck." A listener who heard only the second half would
-    // otherwise have opened on a bare "The posture that survives an arrival at the wall…",
-    // an instruction about contact they were never told to expect. The caption is now under
-    // the limit and is voiced whole, so there is no boundary to engineer — but leave this
-    // sentence carrying both absolutes anyway, because the limit moves the moment anyone
-    // adds to the caption. ⚠️ If it grows past 2,800 again, re-run
-    // md_to_speech.transform_document and read the new boundary before shipping it.
-    // ⚠️ KT6'S MID-SENTENCE SLOT, AND ONE SENTENCE STILL. The shoulder clause cannot go at the
-    // end: this run finishes on two absolutes and a hedge appended there attaches backwards to
-    // them. It cannot be given its own sentence either, because the comment above requires the
-    // posture and both absolutes to stay in ONE sentence so no chunk boundary can separate them.
-    // So the clause takes Key Takeaway 6's own slot, immediately after the forearm and hip, and
-    // the em dash before "never your back" becomes a semicolon -- every word preserved, one
-    // sentence still. 88 of the corpus's 204 captions already carry a semicolon.
-    'The posture that survives an arrival at the wall is skates parallel to it, the contact taken ' +
-    'on your forearm and hip — and ' + SHOULDER_NOT_THE_SURFACE + ' — ' +
-    'head up and chin off your chest; never your back to the boards, ' +
-    'and never a chin dropped to look for the puck. Protecting the puck never justifies squaring ' +
-    'your back to an oncoming checker. The checker carries the legal obligation here, not you — but that is ' +
-    'not something to lean on, because the penalty arrives after the injury does, and because in ' +
-    'many leagues body checking is not allowed at all. Find out which book you are under, and ' +
-    'whether you may body check in this game rather than merely in your division, before ' +
-    'you plan on taking contact or making it.',
+    'Why the call exists: the player going to get the puck is the one who cannot see the danger, ' +
+    'and in this picture the two who can see it, his partner and his goaltender, are the two who ' +
+    'cannot reach it, so all they can do is say so. Both are labelled "calls it": where two people ' +
+    'can see it, both should call it, because the failure is silence, not duplication. The words ' +
+    'are a team matter, so agree your own. The mirror of this picture is the same corner with ' +
+    'nobody arriving, where the call is "time" — and a false "time" sends a teammate into contact ' +
+    'he was not braced for. ' +
+    // ⚠️ ONE SENTENCE, ON PURPOSE: the posture, the shoulder clause (KT6's mid-sentence slot,
+    // the shared constant, NOT edited here) and BOTH absolutes stay together so no chunk
+    // boundary can ever separate them. "not even to protect the puck" folds in the old
+    // "Protecting the puck never justifies squaring your back". "never duck" carries the chin
+    // limb; the hosts carry the full "chin dropped to look for the puck" wording.
+    '⚠️ At the wall, whether or not anyone calls "man on", take the contact with your skates parallel to it, on ' +
+    'your forearm and hip — ' + SHOULDER_NOT_THE_SURFACE + ' — head up and chin off your chest; ' +
+    'never your back to the boards, not even to protect the puck, and never duck, because those ' +
+    'are the two postures that turn contact with the boards into a neck injury.',
     // ⚠️ CUT FOR LENGTH, NOT BECAUSE IT WAS WRONG, AND RECORDED SO IT IS RECOVERABLE.
     // The sentence above used to end in a colon followed by a book-by-book survey of who
     // may body check: USA Hockey 604(a) and 604(b), Hockey Canada 7.3, and the IIHF's

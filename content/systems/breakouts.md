@@ -984,7 +984,7 @@ The standard goalie vocabulary — your team may vary it, and should agree it in
 Rule: Under the NHL and IIHF books the goaltender may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game, and "the determining factor shall be the position of the puck" (NHL Rules 27.8 and 63.2(viii))
 Rule: Exactly one exception, the NOTE to 63.2(viii) — no minor is assessed "when a goalkeeper plays the puck while maintaining skate contact with his goal crease"; there is no teammate-based exception
 Never: Take the geometry from Rule 27.8 — its six-foot figure is stale, describing the pre-2014 trapezoid; Rule 1.8 describes the lines actually painted
-Rule: The trapezoid applies in the NHL and under the IIHF book (IIHF Rule 27.7), the KHL reportedly too but unverified; nothing the Elite League publishes switches it off and England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced" — in Britain assume it binds
+Rule: The trapezoid applies in the NHL and under the IIHF book (IIHF Rule 27.7); nothing the Elite League publishes switches it off, and England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced" in its own competitions — in Britain assume it binds
 Key: USA Hockey, Hockey Canada and CARHA write no trapezoid, so your goalie may fetch a rim anywhere behind the net; a PWHL goalie plays as if it binds (65.2(viii))
 Rule: "No trapezoid" is not "no restriction" — USA Hockey 614(c) makes it a minor for a goalkeeper who freezes the puck outside the "goalkeeper's privileged" area, and equally when "the puck is behind the goal line and their body is entirely outside of the goal crease"
 Rule: Hockey Canada's bar is the wider one — leave the crease and "they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued" (Interpretation 3 to Rule 10.1(a), clause v) — but on a rim behind your net it lands where USA Hockey 614(c)(1) does
@@ -1003,7 +1003,7 @@ Action: Look behind your own net before your first shift and see whether the tra
 ### What it does to your breakout
 
 ```facts
-Never: Aim a rim straight into the corner under the NHL or IIHF book — your goalie legally cannot go and get it there, so a defenceman has to, under pressure, back to the forecheck
+Never: Aim a rim straight into the corner where the trapezoid applies — your goalie legally cannot go and get it there, so a defenceman has to, under pressure, back to the forecheck
 Never: Send a teammate into a corner for a rim without the retrieval posture — angle in rather than skating square at the end boards, never your back to the wall, never your chin on your chest
 Options: Hard and all the way around, arriving where your winger can meet it in stride — good
 Options: Tight and short, staying close enough behind the net that your goalie can legally stop it inside the trapezoid and leave it for you — good

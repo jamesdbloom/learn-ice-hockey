@@ -2189,7 +2189,8 @@ export function legendSvg(width = 820, opts = {}) {
     ['stopmark', 'Stop'],
     ['pivot', 'Pivot'],
     ['stop', 'Sudden stop — the route ends here'],
-    ['blocking', 'Blocking (screening)'],
+    // NO `blocking` ROW (W34): implemented, but no diagram in this corpus draws it, so a
+    // legend row would advertise a glyph the reader never meets. Same reason as `bodycheck`.
     // NO `bodycheck` ROW, DELIBERATELY. `bodycheck` is implemented (it is in §21.1 and
     // a reader may meet it on another key) but NO diagram in this corpus uses it, and a
     // legend that advertises a body-check glyph without saying who may legally deliver

@@ -102,8 +102,13 @@ const containment122 = {
     'blue line, F2 on the strong-side wall and F3 in the middle; and both defencemen on our own blue ' +
     'line, the strong-side one in the dot lane and the weak-side one nearer the middle. Three numbered ' +
     'routes: one, F1 curves across behind the net taking the middle and the D-to-D away; two, the ' +
-    'conceded first pass out to the winger on the wall; three, F2 steps up on that winger, arriving on ' +
-    'his inside rather than into his back. The opposition centre, who can beat this ' +
+    // W34: "steps up on that winger" read as a step onto the PLAYER, and the pass is still in
+    // flight in this frame — contact before it arrives is interference in every book. The
+    // owner (neutral_zone_systems.md, F2 bullet) times the arrival to the puck: "the puck,
+    // not the player". Matched here. Not voiced (describe is screen-reader text only).
+    'conceded first pass out to the winger on the wall; three, F2 steps up to meet the puck as it ' +
+    'reaches that winger, arriving on his inside to play the puck rather than the player. The ' +
+    'opposition centre, who can beat this ' +
     'structure by supporting low under F2 and F3, is not drawn.',
 
   players: [

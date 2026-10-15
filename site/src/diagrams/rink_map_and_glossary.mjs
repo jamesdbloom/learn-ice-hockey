@@ -438,9 +438,11 @@ const theTrapezoid = {
     // League limb is folded in: the IIHF book governs it and its Casebook is silent.
     'red line and limit where the puck may be frozen. The PWHL switches it off in Rules 1.8 ' +
     'and 27.8, yet its 65.2(viii) still writes the minor, so a PWHL goaltender should play as ' +
-    'if it binds. In Britain, play as if it binds too: the IIHF book is the base everywhere, ' +
-    'the Elite League included, and whether England Ice Hockey’s Rule 22.3 suspension still ' +
-    'stands in England and Wales is unsettled, so ask your league. That suspension never ' +
+    // W34: owner standard is uk_rules.md KT7 / rink_map.md KT10 — 22.3 is scoped to England
+    // Ice Hockey's own competitions (eih_rr.txt 22.2), not to "England and Wales".
+    'if it binds. In Britain, play as if it binds too: nothing the Elite League publishes ' +
+    'switches it off, and England Ice Hockey’s Rule 22.3 suspension covers only its own ' +
+    'competitions and may no longer stand, so ask your league. That suspension never ' +
     // ⚠️⚠️ CRITICAL, CAUGHT BY `safety-reviewer`. This ended at "freeze it" — a flat NEVER,
     // read ALONE by a listener, while the body treats two carve-outs as inseparable from
     // this exact sentence: "Both carve-outs travel with that, or you produce a goaltender

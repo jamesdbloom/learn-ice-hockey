@@ -58,6 +58,9 @@ DOCS=(
   # the corpus cites 2025/26 by name and those citations are honest about their edition.
   "iihf_rules_2026-27|https://www.iihf.com/|https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/rule%20book/2026-27_iihf_rule_book.pdf"
   "iihf_situations_2026-27|https://www.iihf.com/|https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2026-27_iihf_situation_handbook.pdf"
+  "iihf_disciplinary_regs_2026|https://www.iihf.com/|https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/regulations/2026/2026_iihf_disciplinary_regulations_-_final.pdf"  # in effect 6 Oct 2025; see sources/README.md
+  # adultsskatetoo_how_to_fall is an HTML page, not a PDF, so this script does not fetch it:
+  # https://adultsskatetoo.com/pages/how-to-fall-safely-and-get-back-up-on-ice (browser UA; see sources/README.md)
   "nhl_rules|https://www.nhl.com/|https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf"
   # ⚠️ THE SUPERSEDED 2024-2025 NHL EDITION. It is here as DATING EVIDENCE and
   # nothing else. The corpus asserted that NHL Rule 60.1 and 60.3 were rewritten

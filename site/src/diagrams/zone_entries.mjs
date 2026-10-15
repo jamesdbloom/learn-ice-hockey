@@ -846,21 +846,28 @@ const trapezoidAim = {
   width: 900,
 
   caption:
-    'Dump to the corners, not to the goaltender: behind the goal line the marked area is the ' +
-    'only ice on which he may play the puck, so a puck dying straight behind the net is ' +
-    'exactly the help you were trying to deny him. Where it applies is not universal — the ' +
-    'NHL and the IIHF book mark one, with the KHL commonly said to have one too though no KHL ' +
+    'Dump to the corners, not to the goaltender: where a trapezoid applies, the marked area is ' +
+    'the only ice behind the goal line on which he may play the puck, so a puck dying straight ' +
+    'behind the net is exactly the help you were trying to deny him. The NHL and the IIHF book ' +
+    'mark one, with the KHL commonly said to have one too though no KHL ' +
     // W33: CARHA, PWHL and Elite League limbs added, matching zone_entries.md §7 "Where the
     // trapezoid applies". carha.txt scores 0 for trapezoid / restricted area / designated
     // area. pwhl_rules.txt 1.8 and 27.8 switch it off while 65.2(viii) still writes the minor;
     // for an ATTACKER the owner's reading is "plan for her to come out". The EIHL Casebook
     // hands every rule it does not mention to the IIHF book and never mentions this one, so
     // EIH Rule 22.3's suspension is not an Elite League answer (uk_rules.md KT7).
+    // W34: the British limb read "The Elite League plays the IIHF book; elsewhere in England
+    // and Wales the status is unsettled" — settled where the owner says unsettled, and it
+    // scoped the attacker's planning below the Elite League. Now the owner's standard
+    // (uk_rules.md KT7, rink_map.md KT10): attackers in ANY British competition plan for the
+    // goalie to come out. eih_rr.txt 22.3 "not currently enforced"; 22.2 "EIH competitions";
+    // eihl_casebook.txt Preamble hands unmentioned rules to the 2026-2027 IIHF book.
     'rulebook was available to check that; the USA Hockey, Hockey Canada and CARHA books mark ' +
     'none, and the PWHL switches its off though one rule still writes the minor, so plan for a ' +
-    'PWHL goaltender to come out. The Elite League plays the IIHF book; elsewhere in England ' +
-    'and Wales the status is unsettled — so look behind the ' +
-    'net, ask your league, and where there is none, rim it hard and low instead.',
+    'PWHL goaltender to come out. In any British competition, plan for him to come out too: ' +
+    'England Ice Hockey calls it "not currently enforced" in its own competitions, and nothing ' +
+    'published settles how far that reaches. Look behind the net, ask your league, and ' +
+    'where there is none, rim it hard and low instead.',
 
   describe:
     'The attacking half of the rink, opposition net at the right, with the goalkeeper’s ' +

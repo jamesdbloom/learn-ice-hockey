@@ -710,7 +710,7 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 Rule: Under the NHL and IIHF books a goalkeeper may not play the puck outside the designated area behind the net — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
 Rule: On a trapezoid violation what is judged is the position of the puck, not the goalie's; the only exception is playing it while maintaining skate contact with his crease (NHL Rule 27.8)
 Rule: The trapezoid applies in the NHL and IIHF (IIHF Rule 27.7); KHL reportedly too, unverified here. In any British competition plan for their goalie to come for a dumped puck — England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced" in its own competitions
-Key: The USA Hockey, Hockey Canada and CARHA books have no trapezoid; the PWHL's 1.8 drops it but its 65.2(viii) keeps the minor, so plan for her to come out; Britain runs the IIHF book, which does have it
+Key: USA Hockey, Hockey Canada and CARHA have no trapezoid, and the PWHL's 1.8 drops it though its 65.2(viii) keeps the minor — under all four, plan for the goalie to come out
 Action: Dump to the corners, not to the goalie — the corners are legally out of bounds for him, straight behind the net is not
 Action: If you must put it behind the net, put it there hard — a rocketing puck is far harder to stop and distribute cleanly
 Action: Where there is no trapezoid, rim it hard and low so he cannot set up on it, or dump to the corner furthest from his stick hand

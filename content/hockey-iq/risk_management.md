@@ -800,7 +800,7 @@ Never: Change while the play is live because you are embarrassed. Finish the shi
 ```facts
 Key: The most damaging thing about a bad decision is the decision that tries to fix it
 Never: Force a low-percentage play to make up for a giveaway — a pinch you have not read, a cross-ice pass, a hit you leave your feet for
-Risk: The second mistake is nearly always worse, because the first was an error of execution and the second an error of judgement made on purpose
+Risk: The play you force to make up for a giveaway is nearly always worse than the giveaway, because the first was an error of execution and the second an error of judgement made on purpose
 Mindset: The next play is a new play — its expected value has nothing to do with what just happened
 Key: If the boring option was right before your turnover, it is still right after it
 ```

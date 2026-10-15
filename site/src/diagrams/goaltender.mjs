@@ -557,9 +557,13 @@ const rimStopOrClear = {
     'the puck. Under the NHL book, whether a deliberate body block counts as playing it is this ' +
     'document’s reading rather than a quoted interpretation. In front of the goal line, and ' +
     'behind it inside the shaded area, blocking a rim with your pads is completely legal. Where a ' +
-    'trapezoid applies is not universal — the NHL and IIHF play have one, none of USA Hockey, ' +
-    'Hockey Canada or CARHA marks one at all, and England Ice Hockey’s 2024-25 regulations ' +
-    'say it is "not currently enforced" in England and Wales, which the current In-House Rules do ' +
+    // W34: the British limb scoped England Ice Hockey's 22.3 to "England and Wales" — a place,
+    // where eih_rr.txt 22.2 scopes it to "EIH competitions", and the Elite League plays in
+    // England under a Casebook that hands Rule 27 to the IIHF book. Owner: uk_rules.md KT7.
+    'trapezoid applies is not universal — the NHL and IIHF books have one, and none of USA Hockey, ' +
+    'Hockey Canada or CARHA marks one at all. In Britain, nothing the Elite League publishes ' +
+    'switches it off, and England Ice Hockey’s "not currently enforced" is written for its own ' +
+    'competitions and may no longer stand. ' +
     // ⚠️ FULL STOP, NOT A COLON, before "Assume it binds" below. "…do not settle whether the
     // suspension still stands: assume it binds, ask your league…" puts a MAIN-CLAUSE negation
     // immediately before the colon and three bare imperatives after it, so a listener can hear
@@ -567,7 +571,7 @@ const rimStopOrClear = {
     // the restriction does NOT bind and to play the puck where they may not — a delay-of-game
     // minor. "Assume it binds" is the conservative half of an unsettled question and it must
     // survive being read aloud.
-    'not settle. Assume it binds, ask your league, and look behind the net to see whether the ' +
+    'Assume it binds, ask your league, and look behind the net to see whether the ' +
     'lines are painted. And no trapezoid still does not free you to freeze the puck out here: ' +
     'Hockey Canada keys that to your crease and its own interpretation is in two minds about it, ' +
     'and USA Hockey Rule 614(c) keys it to a "goaltender’s privileged" area that excludes the ' +
