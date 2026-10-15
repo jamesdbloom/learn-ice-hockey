@@ -374,7 +374,7 @@ const collapseCorner = {
   // automatic game misconduct. "At two minutes alone" rather than "ejects you in
   // every book" is deliberate and load-bearing: USA Hockey 608(a) writes "a minor
   // plus a misconduct penalty", and a USA Hockey misconduct is ten minutes (404(a)),
-  // NOT an ejection. It is still never bare in any of the four.
+  // NOT an ejection. It is still never bare in any of the six (CARHA 53(a) and PWHL 43.2 checked W33).
   // ⚠️ THIS CAPTION IS THE MODULE'S LONGEST AND IT IS DELIBERATELY OVER THE OWNER'S
   // 25-50 WORD TARGET. Cut from 240 words to about 170 on 15 September 2026 by
   // removing everything that was NOT a warning: the reason two on one wins the
@@ -393,8 +393,11 @@ const collapseCorner = {
     '⚠️ The second body is the one that arrives late and unseen, and this carrier has the puck ' +
     'at his stick against the boards, with his back to the ice. ' +
     'Arrive on the puck, or on the ice he wants, or angle him off it — never into his back. ' +
-    'No book prices a check from behind at two minutes alone: under the NHL and the IIHF there ' +
-    'is no minor for it at all, so the floor is a major and an ejection. ' +
+    // W33: PWHL added — pwhl_rules.txt 43.2 "There is no provision for a minor penalty for
+    // checking from behind", 43.5 game misconduct mandatory with the major. CARHA 53(a) starts
+    // at a minor plus a game misconduct, so "two minutes alone" still holds in all six books.
+    'No book prices a check from behind at two minutes alone: under the NHL, the IIHF and the ' +
+    'PWHL there is no minor for it at all, so the floor is a major and an ejection. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
     'illegal hit. ' +
@@ -412,7 +415,10 @@ const collapseCorner = {
     // the one with a bare imperative straight after the dash.
     'Under man-on-man or a hybrid these five would be reading bodies, not areas. Ask your ' +
     'coach which your team plays. ' +
-    'All four books are set out earlier in this document.',
+    // Six, not four: §"The base shape" (defensive_zone_coverage.md, the paragraph opening
+    // "And there is a second half") prices it in the NHL, IIHF, PWHL, USA Hockey, Hockey
+    // Canada and CARHA, above this diagram's marker. Sole host is the owner document.
+    'All six books are set out earlier in this document.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +

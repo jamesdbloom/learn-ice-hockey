@@ -176,8 +176,11 @@
  * `winger-offensive-zone-patches` (followed by "."), `entry-wide` (followed by
  * ". Screening from …"). All four still read as one sentence chain after it.
  */
+// W33: CARHA added. carha.txt Glossary "Creases": "The lines which designate these areas
+// are to be considered as part of the creases." Matches language_and_glossary.md's
+// "The paint" entry, which already names CARHA beside the IIHF, USA Hockey and Hockey Canada.
 export const CREASE_LINE_IS_THE_CREASE =
-  'the crease line at its edge. USA Hockey and Hockey Canada both count that line ' +
+  'the crease line at its edge. USA Hockey, Hockey Canada and CARHA all count that line ' +
   'as part of the crease, and so does the IIHF’s Rule 1.7 — but the IIHF’s own ' +
   'appendix table allows the goal to a screener planted on the line: the same play ' +
   'answered in opposite directions inside one book, and unresolved. Off the line is ' +

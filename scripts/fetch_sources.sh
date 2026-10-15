@@ -154,7 +154,7 @@ DOCS=(
     # ⚠️ 2026/09 path with the trailing -1, NOT 2026/08 — the publisher moved it and the OLD URL STILL
   #    RETURNS 200 serving the 26 Aug original, which is OLDER than the copy on disk. See sources/README.md.
 "ihuk_nihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf"
-  "ihuk_wnihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/08/WNIHL-Rules-of-Competition-2026-2027.pdf"
+  "ihuk_wnihl_roc|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/09/WNIHL-Rules-of-Competition-2026-2027.pdf"
   # ⚠️ 2026/09 path. The 2026/08 one ALSO returns 200 with an older, smaller revision (358,330 vs
   #    544,036). Named as a blocker by two agents before it was fetched on 22 September 2026.
   "ihuk_coaching_regs|https://englandicehockey.com/|https://englandicehockey.com/wp-content/uploads/2026/09/Coaching-Regulations-2026-2027.pdf"

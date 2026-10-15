@@ -62,7 +62,7 @@
  *
  * ⚠️ THE SHADED BAND IS NOT LABELLED, AND THAT IS A CHOICE.
  * §2 writes: "Coaches call the middle **good ice** and the outside **bad ice**."
- * Those two phrases appear ZERO times in content/foundation/rink_map_and_glossary.md,
+ * Those two phrases appear ZERO times in content/foundation/rink_map.md,
  * which owns the corpus's named regions — they are attributed in §2 to coaches, and
  * to a USA Hockey coaching write-up, not to a rink map. A diagram that writes a name
  * onto a patch of ice makes that name a region, and a band labelled "the high slot"
@@ -70,7 +70,7 @@
  * matching the owner's words, and passed every gate. So the band here carries no text
  * at all and the caption describes it in ordinary words instead.
  *
- * WHAT THE BAND IS, AND WHOSE GEOMETRY IT IS. rink_map_and_glossary.md owns both
+ * WHAT THE BAND IS, AND WHOSE GEOMETRY IT IS. rink_map.md owns both
  * halves of it, and it is worth quoting because they are the words §2's point 1 is
  * written on top of:
  *   §"Wide and middle" — "**Middle** = the central lane. ... 'take away the middle'
@@ -229,7 +229,7 @@ const anglingYourRoute = {
     'Nothing in the picture shows contact between the two players.',
 
   // THE MIDDLE LANE. Sides on the faceoff-dot lines at y = +/-22 (rink.json
-  // `faceoff.dot_y`, owned by rink_map_and_glossary.md); ends at the centre red line
+  // `faceoff.dot_y`, owned by rink_map.md); ends at the centre red line
   // and the tops of the circles. UNLABELLED — see the warning in the file header for
   // why, and for what that costs.
   //
@@ -459,7 +459,7 @@ const netFrontWalkOut = {
 // ⚠️ AND THE SLOT IS NOT SHADED, THOUGH IT IS THE OBVIOUS THING TO SHADE. A tinted, labelled
 // slot would be the clearest possible statement of "never back toward the slot" — and it
 // would be a FOURTH definition of a corpus region living in a diagram module. The region
-// belongs to content/foundation/rink_map_and_glossary.md, drawn once as `the-slot`; three
+// belongs to content/foundation/rink_map.md, drawn once as `the-slot`; three
 // modules each defining their own HIGH_SLOT is how a band came to be drawn at 3.14x the area
 // its owner defines, in two diagrams, under captions matching the owner's words, and pass
 // every gate. The cost of leaving it out is stated rather than hidden: a reader who does not
@@ -1144,8 +1144,14 @@ const insideLaneLongerRoute = {
     'are going for the puck. USA Hockey lets a skater keep the ice they occupy so long as they hold ' +
     'their skating speed and their body between the opponent and the loose puck, and use that ' +
     'position, while maintaining their skating lane, to force an opponent onto exactly that less ' +
+    // W33: scoped. "Stopping does not cost you your ice" was flat, and the owner's facts line
+    // (body_contact_and_battles.md, "Hockey Canada and CARHA write no right to lengthen an
+    // opponent's path") says two books grant neither entitlement — HC 8.3 and CARHA 66(a) make
+    // impeding an opponent without the puck interference. Sole host is the owner.
     'direct route. Standing your ground is a separate entitlement in the same book, and NHL Rule ' +
-    '56.1 attaches no speed condition at all. Stopping does not cost you your ice. Change your ' +
+    '56.1 attaches no speed condition at all, so under those books stopping does not cost you your ' +
+    'ice. Hockey Canada and CARHA write no right to lengthen his path: impeding an opponent without ' +
+    'the puck is interference there, so hold only a lane you already have. Change your ' +
     'skating lane or your foot speed to play his body rather than the puck and USA Hockey Rule ' +
     '625(a)(4) makes that a minor for interference. The other limit is the instrument: under that ' +
     'book, a stick, an arm or the skates used to obstruct his ability to skate to the puck, and a ' +

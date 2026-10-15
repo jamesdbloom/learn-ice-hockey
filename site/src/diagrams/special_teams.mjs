@@ -112,8 +112,8 @@ const PP_131_OPP = [
 //
 // ⚠️ THAT QUOTATION HAS BEEN RE-TAKEN. It used to read "one player at the point
 // (the blue line)" — text special_teams.md:92 no longer contains, because
-// content/foundation/rink_map_and_glossary.md owns the term and denies it three
-// times (:356, :372, :621): the point is the AREA JUST INSIDE the blue line, not
+// content/foundation/rink_map.md §5 "The point" owns the term and denies it
+// (the line numbers once cited here were the pre-split file's): the point is the AREA JUST INSIDE the blue line, not
 // the line. The glyph still stands ON the line, at rink.json's `point` anchor,
 // and that is deliberate — see the note on `point` in rink.json. Only the words
 // changed.
@@ -570,7 +570,7 @@ const ppBackdoor = {
 // THE SECOND BRANCH IS NOT DRAWN. The section's own words for it — a shot "from
 // the top of the circle" — name a spot the glossary defines as the *shallow* end
 // of the circle, nearer the blue line than the half-wall the carrier starts from
-// (rink_map_and_glossary.md:387-391; rink.json's `top-of-circle` is x 54 against
+// (rink_map.md §5 "The top of the circle"; rink.json's `top-of-circle` is x 54 against
 // `half-wall`'s x 69). A walk-down toward the goal line moves the carrier deeper,
 // not shallower, so this diagram does not place a marker for that branch — it is
 // spoken in the caption in the section's own words, not drawn as a coordinate

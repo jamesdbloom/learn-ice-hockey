@@ -57,8 +57,8 @@ import {
 // polygon on those four bare anchors is a 15 x 44 ft rectangle LAID ACROSS both
 // faceoff circles — 660 sq ft, more than three times the region the corpus
 // defines, and it renders with the shading cutting through the painted circle
-// arcs. The owner is content/foundation/rink_map_and_glossary.md ("still between
-// the two circles"), whose own diagram `the-high-slot` draws 15 x 14 = 210 sq ft;
+// arcs. The owner is content/foundation/rink_map.md (§5 "The high
+// slot"), whose own diagram `the-high-slot` draws 15 x 14 = 210 sq ft;
 // `drive-the-net-after` in playing_without_the_puck.mjs draws the identical
 // polygon, and the comment there records the disagreement as a finding about THIS
 // file. The circles' inner edges are 22 - 15 = 7 ft either side of the middle, so
@@ -408,8 +408,8 @@ const backcheckMiddleLane = {
 // ⚠️ THAT QUOTATION HAS BEEN RE-TAKEN, AND THE LINE NUMBER WITH IT. It used to
 // read "the point is at the blue line, 64 ft out from the goal line" at :175 —
 // a sentence winger.md no longer contains. It was corrected because
-// rink_map_and_glossary.md makes the point an AREA JUST INSIDE the blue line
-// rather than the line (:356, :372, :621), so the floor of the range moved from
+// rink_map.md §5 "The point" makes the point an AREA JUST INSIDE the blue line
+// rather than the line, so the floor of the range moved from
 // a flat 44 to "a little under 44". That gives the drawn 45 ft MORE headroom than
 // it had, not less — the correction cannot invalidate this picture, only relax it.
 //
@@ -498,8 +498,11 @@ const wingerHighThenWall = {
     'goes, corner included, so find out which one your team plays. It expires the moment your team ' +
     'wins the battle below you, and you come down the wall to between the hash marks and the goal ' +
     'line, stick on the ice and feet already moving — but do not leave the point until the battle is ' +
+    // W33: stretch / flying-winger limb added — both hosts carry it (winger.md :29/:64/:175
+    // facts, switching_positions.md :138) and the caption alone omitted it.
     'actually won. That wall position belongs to the conventional swing breakout: a flat or spread ' +
-    'structure asks you to hold higher toward the blue line, so find out which one you are in.',
+    'structure asks you to hold higher toward the blue line, and a stretch sends one winger up ice ' +
+    'instead, so find out which one you are in.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition players: a ' +
@@ -995,7 +998,7 @@ const dToD = {
     'of the ice between the inner edges of the two faceoff circles, running from the top of the ' +
     'circles to the front of the crease. It is not a marking on the ice.',
 
-  // THE GLOSSARY'S SLOT, corner for corner. content/foundation/rink_map_and_glossary.md
+  // THE GLOSSARY'S SLOT, corner for corner. content/foundation/rink_map.md
   // owns the word — "the area directly in front of the net, between the two faceoff
   // circles, running from the top of the circles down to the goalmouth" — and its own
   // diagram `the-slot` draws (54,±7) to (83,±7). This polygon is that one.

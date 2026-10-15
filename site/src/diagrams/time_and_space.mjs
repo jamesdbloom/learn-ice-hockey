@@ -40,7 +40,7 @@
  *
  *   §7's rink sizes. "The length is the same, so the change is entirely lateral"
  *   wants two sheets overlaid. The renderer draws one sheet, from rink.json, whose
- *   width is owned by rink_map_and_glossary.md. A second outline would be a
+ *   width is owned by rink_map.md. A second outline would be a
  *   dimension invented here.
  *
  * ASSUMES, and dies if any of them moves: site/src/data/rink.json AS ON DISK IN

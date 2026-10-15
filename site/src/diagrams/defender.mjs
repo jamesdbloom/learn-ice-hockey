@@ -75,7 +75,7 @@
  *                               personnel — whether you are on the ice at all — and the
  *                               four formations are a list. Drawing one of four nominates
  *                               it. special_teams.md owns the shapes and draws all five.
- *   The trapezoid            -> `the-trapezoid` (rink_map_and_glossary.md) and
+ *   The trapezoid            -> `the-trapezoid` (rink_map.md) and
  *                               `goalie-rim-stop-or-clear` (goaltender.md) both draw it,
  *                               and defender.md's treatment is a four-book rules
  *                               comparison rather than a position on the ice. The one
@@ -88,7 +88,7 @@
  *                               draw, and it is right.
  *   Icing / line changes     -> a rule and a clock. Neither is a place on the ice.
  *   A Note on Language       -> definitions. `the-goalmouth`, `the-high-slot`,
- *                               `strong-side-and-weak-side` are rink_map_and_glossary.md's
+ *                               `strong-side-and-weak-side` are rink_map.md's
  *                               and the section already points there as the dictionary.
  *
  * ⚠️ A LATER ROUND ADDED FIVE MORE BORROWED MARKERS TO THE CONTENT FILE, NOT TO THIS
@@ -127,7 +127,7 @@
  *                               centre" almost word for word. Its caption already
  *                               carries the man-on-man hedge this section states.
  *   The trapezoid retrieval   -> `goalie-rim-stop-or-clear` (goaltender.md), NOT
- *                               `the-trapezoid` (rink_map_and_glossary.md), which
+ *                               `the-trapezoid` (rink_map.md), which
  *                               the note above left "for a reviewer to decide" and
  *                               called a defensible borrow. Re-read both: `the-
  *                               trapezoid` draws the shape alone, no players, which
@@ -452,7 +452,7 @@ const stepUp = {
  * ⚠️ THE SECTION'S OWN WORDING WAS AMBIGUOUS AND THE DIAGRAM COULD NOT
  * DUCK IT. It read "one defender on each side of the center line", and
  * in this corpus the centre line is the RED LINE at centre ice
- * (rink_map_and_glossary.md, "The centre red line"). Read that way the
+ * (rink_map.md, "The centre red line"). Read that way the
  * sentence is false — two defencemen at their own blue line are both on
  * the same side of it. It means the middle of the ice lengthwise, which
  * is the reading `faceoff-neutral-zone`'s caption already uses for the
@@ -652,7 +652,7 @@ const pairOverview = {
     //     carrier contradicted the geometry it was drawn on.
     // (2) The goalmouth is glossed in ITS OWNER'S words. It read 'the ice between any
     //     opposing forward and your goaltender' — a region defined against a MOBILE
-    //     opponent, which is not a layer. rink_map_and_glossary.md owns the term and
+    //     opponent, which is not a layer. rink_map.md owns the term and
     //     warns that confusing goalmouth with slot is a common cause of a blown assignment.
     // (3) NO trailing 'every zone below'. This caption is BORROWED into
     //     switching_positions.md, which has no zone sections below its heading — the exact

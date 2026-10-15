@@ -61,7 +61,7 @@
  *   - Offensive Zone: Without the Puck — Getting Open in the Slot, and its crease
  *     subsection, are `oz-net-front-screen` (offensive_zone_play.md),
  *     `screen-the-goalie-sightline` (playing_without_the_puck.md) and `the-goalmouth`
- *     (rink_map_and_glossary.md). The first of those already carries the Rule 69 clauses,
+ *     (rink_map.md). The first of those already carries the Rule 69 clauses,
  *     and its marker is now placed under "The crease is the one line you don't cross" —
  *     the H4 that carries this document's own four-book goaltender-interference
  *     comparison, which is a large enough addition on its own that the other two ids are

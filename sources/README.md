@@ -45,7 +45,10 @@ bash scripts/fetch_sources.sh          # download and extract all of it
 | `carha.txt` | ⚠️ **CARHA Hockey Official Rule Book, PRINTED 2020, 99pp — added at round 53's fourth gate pass, after five documents had cited it with the book in NO reproducible source.** Its only record was a row in `project/verification/link_baseline.tsv`. A `rules-verifier` fetched it and located **seven corpus quotations verbatim** — Rules 66(b), 73(d), 39(b), 65(a), **65(b)/(c)**, the red-line-off-side signal and Section Seven item 16 — so the claims were never unverifiable; the book was unregistered. ⚠️ **Two more verified 17 September, after three separate reviewers had each re-derived them from scratch — recorded here so a fourth doesn't have to**: **Rule 37(e)** (goaltender centre-red-line participation, a Minor, no skate-position test — `carha.txt:1811-1813`) and **Rule 58(b)** (goaltender freezing behind the goal line with the body entirely outside the crease, a Minor, no privileged-area concept and no four-trigger structure the way USA Hockey's parallel rule has — `carha.txt:2812-2817`). **Rule 61(b)** (handling the puck to cause an unnecessary stoppage, no location condition) is also quoted correctly in the corpus but was not independently re-verified against this extraction on 17 September — flagged here as a candidate for the next reviewer who touches this area, not as confirmed. **Governs CARHA-affiliated leagues only, and is never a general rec-hockey standard.** Extracts cleanly with `-layout`. ⚠️⚠️ **BUT IT SPLICES A PAGE FOOTER MID-WORD, AND ALPHANUMERIC FLATTENING DOES *NOT* DEFEAT IT — measured 25 September 2026.** `carha.txt:2931-2938` breaks Rule 61(a) (the footer itself at `:2934-2935`) as `attempt-` / `56 i n f o @carhahockey.ca carhahockey.ca` / `« INDEX` / `ing to gain any advantage by this action`. ⚠️ **The footer IS alphanumerics, so it flattens to `carhahockeyca` and lands INSIDE the word** — `withoutgainingorattemptingtogainanyadvantagebythisaction` scores **0** on the flattened file while the sentence is plainly there. ⚠️⚠️ **THIS REFUTES THE GENERAL CLAIM THAT MATCHING ON ALPHANUMERICS ONLY DEFEATS THE PAGE-FURNITURE SPLICE.** It defeats a footer sitting BETWEEN words; it does not defeat one sitting INSIDE one. ✅ **Consequence: `check_quote_drift.py` reports an affected quotation as NOT FOUND, and that is an EXTRACTION ARTEFACT, not a misquote.** An agent hit this on a correct CARHA 61(a) quotation and verified it by eye instead. ⚠️ **So a NOT-FOUND on `carha.txt` is a CANDIDATE, not a verdict — read the lines.** Same shape already recorded for the EIHL Casebook and the USA Hockey Casebook; `carha.txt` was not listed as carrying it until now. ⚠️ **The 1,008,517 bytes byte-identical to the link baseline is the PDF's size, not the extraction's** — `carha.txt` is 206,667 bytes. The sentence used to place that figure where it read as the extraction size. <br><br> ✅✅ **PROVENANCE TESTED 24 September 2026, AND IT WAS THE LARGEST DECLARED GAP IN THE CORPUS — five successive commit gates named this extraction as untested, two of them having blocked on a CARHA limb.** The PDF was **refetched from the publisher URL and is BYTE-IDENTICAL to the link baseline at 1,008,517 bytes**, so the file at that address has not moved. **99 pages, and NO PAGE WHOSE RULE TEXT IS IMAGE-ONLY.** ⚠️⚠️ **STATED THAT WAY ON PURPOSE — THE FIRST DRAFT OF THIS ROW SAID "ZERO IMAGE-ONLY PAGES" AND "nothing in this book that a grep cannot reach", AND BOTH WERE FALSE.** A per-page census with a 40-character floor **cannot tell a text page from a furniture-only page**, which is exactly the `crt6.txt` mode this corpus has filed four false reports about. Measured properly with `-layout` (median **2,196** chars/page), **three pages fall under 300: page 1 (139, the title page) and pages 92-93 (170 and 106) — equipment-measurement DIAGRAM pages whose captions extract and whose FIGURES ARE IMAGES.** ✅ **No rule is lost: the limits those figures depict are stated in the rule text and are greppable** — stick dimensions at **Rule 21** (`carha.txt:983`ff, *"shall not exceed 63 in (1.60 m) from the heel to the end of the shaft"*) and goalkeeper equipment at **Rule 23** (`:1057`ff, *"Goalkeeper's pads shall not exceed 11 in (27.94 cm) in width"* at `:1096`). ⚠️ **So the conclusion survives for RULES and the original sentence's METHOD never supported it.** **A page-yield floor is evidence about extraction, not about coverage.** A fresh `pdftotext -layout` of the refetched PDF is **byte-identical to `carha.txt` (206,667) and flattened-identical**, so the extraction on disk faithfully represents the source. Spot-checked present in both: **52(b)** both limbs, **48(a)**, **55(a)**, **53(a)**'s match sentence and **66(e)**. ⚠️ **WHAT THIS DOES NOT PROVE, and it is the honest limit: byte-identity shows the file at THAT URL is unchanged since the baseline, NOT that CARHA has published no newer edition elsewhere.** The PDF's own `CreationDate` is 18 December 2024 (Ghostscript), for a book whose title page says **printed 2020** — a re-processing date, not an edition date. **Take the edition from the title page.** ⚠️ **A METHOD NOTE FROM THE CHECK ITSELF: the first comparison pass reported two rule fragments ABSENT FROM BOTH FILES.** That was the checker's own bug — the haystack was lowercased and the needles were not. **A case-sensitive needle against a case-folded haystack is a false zero that looks exactly like a missing rule**, and it is the fourth distinct false-negative shape this corpus has recorded. | [carhahockey.ca](https://carhahockey.ca/wp-content/uploads/2024/01/RuleBk-2020-interactive-1.pdf) |
 | `heo_intl_drill_symbols.pdf` | **"International Drill Symbols"** — Hockey Eastern Ontario NCCP Development 1 clinic handout. The **player-symbol** authority for this corpus: `● ○ Forward / Player`, `▲ △ Defender / Player`. ⚠️ **Scanned. `pdftotext` yields the title and nothing else** — the key is image-only, so read the rendered page, never the `.txt`. | [hockeyeasternontario.ca](https://www.hockeyeasternontario.ca/media/ns2jrj0c/dev1_international_drill_symbols.pdf) |
 | `ihuk_coaching_regs.txt` | ⚠️ **IHUK Coaching Regulations & Requirements 2026-2027 — added 22 September 2026 after TWO separate agents named its absence as the highest-value follow-up they could not reach.** 15pp, ModDate 8 Sep 2026, fetched from the **`2026/09`** path (the `2026/08` one also returns 200 with an older 358,330-byte revision — see the moved-path pattern above). Text-to-PDF **5.0%**, real text layer, greps honestly; `_layout` twin kept because §9.3 is a nested bullet list that plain `pdftotext` flattens. ⚠️ **WHAT IT SETTLES, AND IT IS A NEGATIVE:** §9 *Team Requirements* is scoped in terms to *"junior and senior teams, including **practices**, games, camps, and hockey schools"*. Within that scope §9.3 makes an *"ice hockey neck guard, properly secured… not altered"* **mandatory for the COACH's own on-ice PPE** — and the coach's duty toward **players** reads *"Coaches must ensure players wear approved **helmets and face protection, sticks, and gloves**, in line with Section 4"*, with skates, elbow pads and shin guards only *"wherever possible… (full kit recommended)"*. ⚠️ **THE NECK GUARD IS ABSENT FROM THE PLAYER LIST**, in the one document whose scope explicitly reaches training. **So this source does NOT extend the player neck-guard mandate to practice, and the corpus's cautious training disclosure STANDS — it is now a searched negative rather than a gap.** State the asymmetry; do not editorialise it into a duty the document does not write. Also: `jewel|earring|piercing|bracelet` scores **0**. §9.3 additionally requires 16–17-year-old Foundation Coaches to wear a neck guard and bars them from gameplay drills or scrimmages. | [englandicehockey.com](https://englandicehockey.com/wp-content/uploads/2026/09/Coaching-Regulations-2026-2027.pdf) |
-| `pwhl_rules.txt` | ⚠️ **PWHL Official Rule Book 2025-2026 — added 21 September 2026, and until now not on disk at all.** `body_contact_and_battles.md` quotes its Rule 52.1 (angling/bodychecking) and names this exact URL in its own Sources trailer, but a `rules-verifier` this session had to fetch the PDF live rather than finding it here. 188pp, `pdfinfo` marks it Producer *"macOS ... Quartz PDFContext"*, CreationDate 14 November 2025. **First download attempt was silently truncated** — `curl -sL` alone stopped at 10,720,448 of the 19,772,272 bytes `Content-Length` promised and left a PDF that `pdftotext` could open far enough to throw xref errors and produce nothing; `--retry-all-errors` on a second attempt got the full file. Both `pdftotext` (plain, 502,715 bytes) and `pdftotext -layout` (580,204 bytes, kept as `pwhl_rules_layout.txt`) were run. **Rule 52.1 extracts identically, word for word, under both methods** — checked by diffing the two files at the rule's location, not by grepping one: `pwhl_rules.txt:5027-5034` and `pwhl_rules_layout.txt:4602-4609` agree exactly, including *"In the PWHL, a form of Bodychecking is permitted. Players may angle their opponent by using their body in order to separate her opponent from the puck"* and the *"opposite-directional force"* clause the corpus quotes. ⚠️ **But the two extractions do diverge elsewhere in the book, the same species of fault flagged for `hc.txt` and `nhl_rules.txt` above:** the front-matter officials roster is set in three newspaper columns, and plain `pdftotext` reads down each column in sequence (`Jake Kamrass` immediately followed by `Jenn Berezowski`, who sits in the next row of the *same* column, not beside him) rather than across the row, while `-layout` reconstructs the columns correctly. **Use `pwhl_rules_layout.txt` for anything tabular; either file is fine for prose, including all of Rule 52 read so far.** The source prints curly quotation marks (*"Bodychecking"*, *"illegal hit"*); the corpus quotes them with straight ones — an ordinary typographic transcription that changes no character `check_quote_drift.py` compares, since it matches on alphanumerics only. ⚠ **STALE AS OF 23 SEPTEMBER 2026 — this said *"Nothing beyond Rule 52.1 has been read against this file yet"* while a single day's waves read roughly THIRTY of its rules.** Verified against primary text on 23 September, by several agents independently: **1.7, 1.8, 9.6, 10.3, 10.4, 11.9, 25.1, 27.6, 42.1, 43.1–43.5, 49.2, 51.1/51.2, 55, 56.1, 58.1, 58.3, 58.4, 61.1, 63.1/63.3/63.5, 65.2, 65.6, 65.8, 70.3, 71.1–71.7, 72.3, 72.7, 76.1, 78.5, 78.7, 83.1–83.4, 84.1, 84.2, 85.1, 85.3, 85.4, 88.6, 89.1 and Reference Table 14.** ⚠ **Everything else in the book remains unread — and a scope sentence in THIS file goes stale in the direction that flatters the next agent, which is why the list is enumerated rather than summarised.** <br><br> ⚠⚠ **RENUMBERING, MEASURED 23 SEPTEMBER — THE SINGLE MOST USEFUL FACT ABOUT THIS BOOK.** It tracks the NHL but **renumbers from Rule 52 onward by a VARYING offset**, so a search by the NHL's rule number finds it for contact fouls and **silently misses it for everything else**. NHL 41/43/44/48/50 are **identical**; **52 Body Checking is INSERTED**; then 55→56, 57→58, 60→61, 61→63, 63→65, **69→71**, 70→72, 74→76, 76→78, 81→83, 83→85, 86→88, 87→89. ⚠ **Rule 27 keeps its number while the SUB-number shifts (NHL 27.7 → PWHL 27.6).** ⚠ **PWHL Rule 69 is a real, different rule — *Handling Puck* — so a stray "Rule 69" citation lands on the hand-pass rule rather than missing.** <br><br> ⚠ **EXTRACTION TRAPS, all hit live on 23 September:** this file uses **EN-DASHES** (`face–off`, `shoot–in`, `on–side`) and curly quotes, so a straight-hyphen or straight-quote grep returns a **false zero**; the text is in the **feminine**, so a pattern built on *his/he* misses it; and **Reference Table 14's result column interleaves mid-phrase**, so a row and its result must be paired **positionally, by eye** — `check_quote_drift.py` scores those rows NOT FOUND for the NHL **and** the PWHL, a false signal in both directions. ⚠ **The table IS readable in this plain extraction, split across lines; `_layout` is needed for the PAIRING, not for the text.** ⚠️⚠️ **DATING TRAP, MEASURED 22 SEPTEMBER 2026: ELEVEN PAGES CARRY THE PRIOR EDITION'S RUNNING HEADER.** `grep -oE "PWHL Official Rule Book [0-9 –-]+" sources/pwhl_rules.txt | sort | uniq -c` returns **11 × `2024 – 2025`** against **172 × `2025 – 2026`**, and the `_layout` twin gives the page numbers: **1, 6, 11, 28, 53, 74, 91, 97, 101, 120, 143**. The title page reads `2025-2026`, so the book on disk **is** the 2025-2026 edition and those eleven headers are the publisher's own stale furniture. ⚠️ **Page 74 is Rule 42, CHARGING** — a rule this corpus cites. **A verifier who quotes from one of those eleven pages and takes the edition from the running header above it will date the book a full season wrong**, and the citation will look impeccable. **Take the edition from the title page, never from a running header.** Same species as the three disagreeing version stamps recorded for the EIHL Casebook. | [assets.contentstack.io](https://assets.contentstack.io/v3/assets/bltebdb4296e05d53db/bltb8440fe08a5e6dc5/69178cd0a582d7db321ad107/2025-2026_PWHL_Rulebook.pdf) |
+| `pwhl_rules.txt` | ⚠️ **PWHL Official Rule Book 2025-2026 — added 21 September 2026, and until now not on disk at all.** `body_contact_and_battles.md` quotes its Rule 52.1 (angling/bodychecking) and names this exact URL in its own Sources trailer, but a `rules-verifier` this session had to fetch the PDF live rather than finding it here. 188pp, `pdfinfo` marks it Producer *"macOS ... Quartz PDFContext"*, CreationDate 14 November 2025. **First download attempt was silently truncated** — `curl -sL` alone stopped at 10,720,448 of the 19,772,272 bytes `Content-Length` promised and left a PDF that `pdftotext` could open far enough to throw xref errors and produce nothing; `--retry-all-errors` on a second attempt got the full file. Both `pdftotext` (plain, 502,715 bytes) and `pdftotext -layout` (580,204 bytes, kept as `pwhl_rules_layout.txt`) were run. **Rule 52.1 extracts identically, word for word, under both methods** — checked by diffing the two files at the rule's location, not by grepping one: `pwhl_rules.txt:5027-5034` and `pwhl_rules_layout.txt:4602-4609` agree exactly, including *"In the PWHL, a form of Bodychecking is permitted. Players may angle their opponent by using their body in order to separate her opponent from the puck"* and the *"opposite-directional force"* clause the corpus quotes. ⚠️ **But the two extractions do diverge elsewhere in the book, the same species of fault flagged for `hc.txt` and `nhl_rules.txt` above:** the front-matter officials roster is set in three newspaper columns, and plain `pdftotext` reads down each column in sequence (`Jake Kamrass` immediately followed by `Jenn Berezowski`, who sits in the next row of the *same* column, not beside him) rather than across the row, while `-layout` reconstructs the columns correctly. **Use `pwhl_rules_layout.txt` for anything tabular; either file is fine for prose, including all of Rule 52 read so far.** The source prints curly quotation marks (*"Bodychecking"*, *"illegal hit"*); the corpus quotes them with straight ones — an ordinary typographic transcription that changes no character `check_quote_drift.py` compares, since it matches on alphanumerics only. ⚠ **STALE AS OF 23 SEPTEMBER 2026 — this said *"Nothing beyond Rule 52.1 has been read against this file yet"* while a single day's waves read roughly THIRTY of its rules.** Verified against primary text on 23 September, by several agents independently: **1.7, 1.8, 9.6, 10.3, 10.4, 11.9, 25.1, 27.6, 42.1, 43.1–43.5, 49.2, 51.1/51.2, 55, 56.1, 58.1, 58.3, 58.4, 61.1, 63.1/63.3/63.5, 65.2, 65.6, 65.8, 70.3, 71.1–71.7, 72.3, 72.7, 76.1, 78.5, 78.7, 83.1–83.4, 84.1, 84.2, 85.1, 85.3, 85.4, 88.6, 89.1 and Reference Table 14.** ⚠ **Everything else in the book remains unread — and a scope sentence in THIS file goes stale in the direction that flatters the next agent, which is why the list is enumerated rather than summarised.** <br><br> ⚠⚠ **RENUMBERING, MEASURED 23 SEPTEMBER — THE SINGLE MOST USEFUL FACT ABOUT THIS BOOK.** It tracks the NHL but **renumbers from Rule 52 onward by a VARYING offset**, so a search by the NHL's rule number finds it for contact fouls and **silently misses it for everything else**. NHL 41/43/44/48/50 are **identical**; **52 Body Checking is INSERTED**; then 55→56, 57→58, 60→61, 61→63, 63→65, **69→71**, 70→72, 74→76, 76→78, 81→83, 83→85, 86→88, 87→89. ⚠ **Rule 27 keeps its number while the SUB-number shifts (NHL 27.7 → PWHL 27.6).** ⚠ **PWHL Rule 69 is a real, different rule — *Handling Puck* — so a stray "Rule 69" citation lands on the hand-pass rule rather than missing.** <br><br> ⚠ **EXTRACTION TRAPS, all hit live on 23 September:** this file uses **EN-DASHES** (`face–off`, `shoot–in`, `on–side`) and curly quotes, so a straight-hyphen or straight-quote grep returns a **false zero**; the text is in the **feminine**, so a pattern built on *his/he* misses it; and **Reference Table 14's result column interleaves mid-phrase**, so a row and its result must be paired **positionally, by eye** — `check_quote_drift.py` scores those rows NOT FOUND for the NHL **and** the PWHL, a false signal in both directions. ⚠ **The table IS readable in this plain extraction, split across lines; `_layout` is needed for the PAIRING, not for the text.** ⚠️⚠️ **DATING TRAP, MEASURED 22 SEPTEMBER 2026: ELEVEN PAGES CARRY THE PRIOR EDITION'S RUNNING HEADER.** `grep -oE "PWHL Official Rule Book [0-9 –-]+" sources/pwhl_rules.txt | sort | uniq -c` returns **11 × `2024 – 2025`** against **172 × `2025 – 2026`**, and the `_layout` twin gives the page numbers: **1, 6, 11, 28, 53, 74, 91, 97, 101, 120, 143**. The title page reads `2025-2026`, so the book on disk **is** the 2025-2026 edition and those eleven headers are the publisher's own stale furniture. ⚠️ **CORRECTED 15 October 2026: this said *"Page 74 is Rule 42, CHARGING"*, and that was wrong.** Printed page 74 is **Rule 41 BOARDING (41.1–41.6)**. Rule 42 starts on page **75**, which carries the correct `2025 – 2026` footer. It was measured by splitting `pwhl_rules_layout.txt` on form feeds; the printed page number is the form-feed index minus 17. **The pattern: all eleven stale-footed pages are the FIRST PAGE OF A SECTION** (Sections 1–11 in order) — p1 Rule 1 · p6 Rule 5 · p11 Rule 9 · p28 Rule 15 · p53 Rules 30–31 · p74 **Rule 41 Boarding** · p91 **Rules 55 Holding (55.1–55.4, incl. 55.3 Penalty Shot) and 56 Hooking (56.1–56.3)** · p97 **Rules 59 Butt-ending and 60 Cross-checking (60.1–60.3)** · p101 **Rule 65 Delaying the Game (65.1–65.2)** · p120 Rule 78 Face-offs · p143 Reference Tables 1–2. **So 55.3, 56.x, 60.x and 65.x are quoted from stale-footed pages.** That makes this a dating trap only, not a text defect: the rule text on those pages is the 2025-2026 book's. **A verifier who quotes from one of those eleven pages and takes the edition from the running header above it will date the book a full season wrong**, and the citation will look impeccable. **Take the edition from the title page, never from a running header.** Same species as the three disagreeing version stamps recorded for the EIHL Casebook. | [assets.contentstack.io](https://assets.contentstack.io/v3/assets/bltebdb4296e05d53db/bltb8440fe08a5e6dc5/69178cd0a582d7db321ad107/2025-2026_PWHL_Rulebook.pdf) |
+| `iihf_disciplinary_regs_2026.pdf` / `.txt` | **IIHF Disciplinary Regulations**. The file is named `2026_…` and the text says *"These Regulations come into effect on October 6th, 2025"* (`.txt:7`). It has 21 pages, `CreationDate` 31 October 2025, and was fetched 15 October 2026 (HTTP 200, 435,072 bytes, sha256 `faa35fab…`). Extracted with `pdftotext -layout`, giving 59,112 bytes, a **13.6%** text-to-PDF ratio and a real text layer. ⚠️⚠️ **THE IIHF RENAMED THE DOCUMENT, SO A SEARCH BY THE RULEBOOK'S NAME FOR IT FINDS THE WRONG ONE.** `iihf_rules_2026-27.txt` still points readers to the *"IIHF Disciplinary Code"* (e.g. `:228`, `:232`, `:2305-2319`). Searching that title surfaces the superseded **"2022/23 – 2023/24" Disciplinary Code**, *"in effect on 01 June 2022"*. ⚠️ **England Ice Hockey's rules page still links that superseded Code** (`englandicehockey.com/wp-content/uploads/2023/12/2023_iihf_disciplinary_code.pdf`, 325,924 bytes, 29pp, checked 15 October 2026). The publisher also lists 2024 and 2025 editions under `blob.iihf.com/…/regulations/<year>/`. **Nothing on disk says this is the latest; it is the newest found by one search on 15 October 2026.** ⚠️ **Read for its headings only: its §10 *Suspensions* governs IIHF Events.** No corpus claim has been checked against it. **It is not in `scripts/fetch_sources.sh`.** | [blob.iihf.com](https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/regulations/2026/2026_iihf_disciplinary_regulations_-_final.pdf) |
+| `eiha_inhouse_2026-27.pdf` | The PDF behind `eiha_inhouse_2026-27.txt`. It was not on disk until 15 October 2026, when it was fetched from the URL in `fetch_sources.sh`: HTTP 200, **330,387 bytes, the same size as the link baseline**, sha256 `11860646…`, 15pp, `ModDate` 26 Aug 2026 13:59. A fresh `pdftotext -layout` is **whitespace-normalised identical** to the `.txt` on disk, so the extraction represents this file. | [englandicehockey.com](https://englandicehockey.com/wp-content/uploads/2026/08/IHUK-In-House-Rules-2026-2027.pdf) |
+| `adultsskatetoo_how_to_fall.html` / `.txt` | **Adults Skate Too, *"How to Fall Safely on Ice (and Get Back Up)"*, by Erika Venza.** The page reads *"Updated October 2026"* and also *"Last updated: October 2026"*. Fetched 15 October 2026 with a browser UA: HTTP 200, no redirect, **294,125 bytes** of HTML, sha256 `6f7b9ca7…`. The `.txt` is the rendered body with HTML comments, scripts and styles stripped, wrapped at 100 columns (15,384 chars). ⚠️ **The byte size moves.** The baseline recorded 211,692 on 22 September 2026. That is a Shopify page carrying app blocks, so treat byte drift as expected, not as evidence. **The two chin-tuck strings `skating.md` aligns to are both located** in the `.txt`: the Key takeaways line *"Tuck your chin every time you go down, and if your head does hit the ice, stop for the day and get checked, even if you feel fine."* (`:32`) and the body line *"Tuck your chin toward your chest as you go down. It keeps your head from snapping back into the ice, which matters most on backward falls."* (`:52`). There is also *"[backward falls are] the reason the chin tuck matters so much"* (`:60`). ⚠️ **Scope: a learn-to-skate guide about falling to the ICE.** It says nothing about going into the boards, which is the case where the corpus says *not* to tuck the chin. Do not carry its chin cue across to that case. **Not in `scripts/fetch_sources.sh`.** | [adultsskatetoo.com](https://adultsskatetoo.com/pages/how-to-fall-safely-and-get-back-up-on-ice) |
 
 ---
 
@@ -1406,7 +1409,7 @@ The whole file is one page of glyphs against labels — read visually, 2 Septemb
 | **dashed** circle / triangle | **Player position at the END of the repetition** |
 | solid arrow | Forward skating |
 | wavy line | Backward skating |
-| hatched line | Lateral crossovers |
+| a row of short vertical bars with **no line through it** (a bare picket, no arrowhead) | Lateral crossovers |
 | wavy with a hook | Pivoting |
 | wavy with an arrow | Skating with control of the puck |
 | dashed arrow | Passing |
@@ -1417,11 +1420,26 @@ The whole file is one page of glyphs against labels — read visually, 2 Septemb
 | **X** | **Pylon** |
 | a cluster of dots | Cluster of pucks |
 
+⚠️ **The lateral-crossovers row said *"hatched line"* until 15 October 2026, and that was wrong.** Read
+visually from a `pdftoppm -r 110` render of the sheet (it extracts to 30 bytes, so no grep can check this):
+the glyph is a row of short vertical bars with no base line and no arrow. *"Hatched line"* implies a line
+with ticks across it. `reading_ice_hockey_diagrams.md` describes it correctly as a *"picket of bars with no
+line through it and no direction"*, and says the corpus adds the arrow and line itself.
+
 **This corroborates the corpus's core axis** — circle = forward, triangle = defender, `G` for the
 goaltender, dashed arrow = pass — which a census measured at **328 circles, 183 triangles, 104 bare
 `G`, 615 glyphs, 0 pylons**. ⚠️ **Two entries nobody has checked the corpus against: the standard's
 DASHED outline for *"player position at the end of the repetition"*, and its `X` for a pylon.** If the
 corpus uses a dashed outline for anything else, it collides with the standard.
+
+⚠️ **Checked 15 October 2026: the collision is LATENT, not live.** In `site/scripts/lib/rink.mjs` the
+corpus draws **no player glyph with a dashed outline**. Its notation comment lists *"Position at end of the
+repetition — same shape, dashed outline"*, but no diagram source sets it. Dashes appear only on
+**region polygons** (shaded zones, `stroke-dasharray="1.6 1.2"`), the **trapezoid**, label leader lines and
+the **pass route**. A dashed polygon is not a dashed circle or triangle, so nothing collides today. **The
+collision would become live the first time a diagram draws a dashed player shape for anything other than an
+end position.** This check covered the renderer, not every module in `site/src/diagrams/`. A module that
+builds its own SVG outside `rink.mjs` was not ruled out.
 
 ## Hockey Canada writes almost no suspensions into its playing rules — check before asserting one
 
@@ -1870,6 +1888,39 @@ and `.txt` were deliberately NOT refreshed in the same action** — agents were 
 and a source file is shared state. Refresh it between waves, and re-read this table first: **a byte
 mismatch against the live URL is expected here and is not evidence of anything.**
 
+### ⚠️⚠️ 15 OCTOBER 2026: THE WNIHL ROC HAS MOVED TOO, AND HERE THE DISK COPY IS THE CURRENT ONE
+
+This is a third instance of the moved-path pattern above. `https://englandicehockey.com/rules-and-regulations/`
+now links **`2026/09/WNIHL-Rules-of-Competition-2026-2027.pdf`**. The filename is unchanged; only the month
+directory moved, the same shape as Coaching Regulations. Every path below was fetched on 15 October 2026 with a
+browser UA and an `englandicehockey.com` referer, and every one returned HTTP 200 with no redirect:
+
+| document | path | bytes | `ModDate` | sha256 | status |
+|---|---|---:|---|---|---|
+| WNIHL RoC | `2026/08/WNIHL-Rules-of-Competition-2026-2027.pdf` | 431,890 | 26 Aug 17:23 | `c0d027bc…` | **older text, still served, no longer linked** |
+| WNIHL RoC | `2026/09/WNIHL-Rules-of-Competition-2026-2027.pdf` | **540,666** | **7 Sep 19:03** | `04f2dff0…` | **linked by the publisher. SHA-IDENTICAL to `sources/ihuk_wnihl_roc.pdf`** |
+| NIHL 1 & 2 RoC | `2026/08/NIHL-1-and-2-ROC-2026-2027.pdf` | 542,722 | 26 Aug 17:53 | `efaf0ed3…` | 1st revision, still served, no longer linked |
+| NIHL 1 & 2 RoC | `2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf` | 369,646 | 11 Sep 11:09 | `72ddb5f9…` | 3rd revision, linked by the publisher |
+
+✅ **The WNIHL copy on disk is the current publisher-linked file**, which is the opposite of NIHL, where disk holds
+the unserved 2nd revision (sha256 `80cb5151…`). The `2026/08` WNIHL file is the 26 August original that the
+16 September rollback table above recorded as *"live"*. A `-layout` diff of 08 against 09 reproduces exactly the
+differences recorded there: the 09 file adds *"without any players being dual registered with other clubs"*
+twice and carries the typo *"Eacho WNIHL team"*. Nothing else differs. ⚠️ **So the corpus's `2026/08` WNIHL
+links point at older text than the copy every quotation was checked against.** Both checking-format rows are
+verbatim in both, so no quotation changes.
+
+⚠️⚠️ **`scripts/fetch_sources.sh` STILL FETCHES WNIHL FROM `2026/08`** (as of 15 October 2026). Re-running it
+would **replace the current disk copy with the older 26 August text**. That is the NIHL rollback hazard again,
+on the other document. **Repoint it to `2026/09` before the next refetch.** `scripts/` is not owned by this
+file's editor; this is reported, not fixed.
+
+**NIHL path history, in one place:** `2026/08/…ROC-2026-2027.pdf` (1st, 26 Aug) → *(2nd, 1 Sep, served at
+`2026/08` around 10 Sep and now at no URL; this is the disk copy)* → `2026/09/…ROC-2026-2027-1.pdf` (3rd,
+11 Sep, linked since at least 22 Sep and still linked 15 Oct). **The on-disk NIHL copy was NOT refreshed on
+15 October**, because content agents were live and grepping `sources/`. The 2nd → 3rd difference is one U18
+eligibility clause, so no corpus quotation turns on it.
+
 **Text-to-PDF ratios, for spotting a failed re-extraction:** `ihuk_junior_roc` **5.0%** · `ihuk_u10_roc`
 **2.8%** · `ihuk_nihl_roc` **10.7%** · `ihuk_wnihl_roc` **6.5%**. All four have a real text layer.
 
@@ -2059,3 +2110,98 @@ Flattening is for FINDING, never for QUOTING.**
 ⚠️ **A zero from a flattened search is not an absence.** This file already says an empty extraction is
 not an absence and a zero from a LABEL is not an absence of the RULE. **This is the third member of that
 family: a zero from a WORD is not an absence of the word.**
+
+---
+
+## ⚠️ IIHF 2026/27 RULE 19 POINTS TO TWO DIFFERENT TABLES, AND THE TABLE NUMBERS SHIFTED BETWEEN EDITIONS (15 October 2026)
+
+⚠️ **The open item said Rule 19 points to *"Table 15 and 16"* while the coincidental-penalties table is Table 13,
+which reads as a misprint. It is not one, and an agent that "corrected" it would be wrong.** Read in
+`iihf_rules_2026-27.txt`:
+
+- **19.1** ends on *"For "Coincidental Penalties" that carry over into, or are assessed during Overtime, see ➔
+  Rule 84 – Overtime Operations."* and then *"➔ For more information refer to Appendix IV – Tables Overview –
+  Table 15 and 16."* (`:2096-2098`). **Tables 15 and 16 are `RULE 84 OVERTIME`** (`:10210`, `:10278`). So that
+  pointer belongs to the overtime sentence immediately before it, and it is **correct**.
+- **19.4 *Applying the Coincidental Penalty Rule*** ends *"➔ … Table 13."* (`:2143`). **Table 13 is `RULE 19
+  (COINCIDENTAL PENALTIES)`** (`:9739`, continuing at `:9792` and `:9844`). That is the coincidental table,
+  and the book does point to it, from 19.4.
+
+⚠️⚠️ **THE REAL TRAP IS THE EDITION SHIFT.** In `iihf_rules_v1.1.txt` the same two pointers read
+*"Table 17 and 18"* (`:2045`, overtime) and *"Table 15"* (`:2092`, **coincidental**). **So "Table 15" is the
+coincidental table in 2025/26 and an OVERTIME table in 2026/27.** A citation of *"IIHF Table 15"* carried
+across editions lands on a different rule. Name the rule, never the table number alone, and check which edition
+it was written against. The same shift hits Table 13 (v1.1 Rule 27, goalkeeper penalties; 2026/27 Rule 19)
+and Table 14/16 (Rule 69 is Table 16 in v1.1 and Table 14 in 2026/27).
+
+⚠️ **One genuine stale cross-reference exists, and it is in both editions:** 19.1 says *"see Rule 19.5 –
+Applying the Coincidental Penalty Rule"* (2026/27 `:2093`; v1.1 `:2041`). **That rule is numbered 19.4** in both
+books. There is no 19.5.
+
+## ⚠️ ICEHOCKEYSYSTEMS.COM SOFT-404s ON ONE PATH PREFIX ONLY (15 October 2026)
+
+This was recorded only in two `content/` Sources trailers (`puck_handling.md`, `time_and_space.md`), so the
+*"read the README first"* routing could not surface it. **Measured 15 October 2026 with a browser UA, using
+nonsense slugs:**
+
+| path | status | bytes | title served |
+|---|---|---:|---|
+| `/hockey-drills/<nonsense>` | **200** | 108,697 | *"Ice Hockey Drills \| Ice Hockey Systems Inc."* (the drill index) |
+| `/hockey-systems/<nonsense>` | 404 | 40,059 | *"Page not found"* |
+| `/blog/coaching-tips/<nonsense>` | 404 | 40,059 | *"Page not found"* |
+| `/<nonsense>` | 404 | 40,059 | *"Page not found"* |
+
+⚠️ **So a 200 from a `/hockey-drills/` URL proves nothing.** Confirm it by the page `<title>` or by a quoted
+string in the rendered body. On the other prefixes tested, a dead page returns a hard 404. The control's real
+page, `/hockey-drills/one-on-one-breakdown-forward`, returned 200 with its own title. ⚠️ **Only four
+prefixes were tested.** `/coaching-clip/`, `/skill-development-videos/` and `/savard-videos/` were not.
+The last of these returned a hard 404 for a real dead page on 21 August 2026 (link baseline). Run the
+nonsense-slug control on any other prefix before trusting a 200.
+
+## IHUK IN-HOUSE RULES 2026-27 — THE INTRODUCTION ON EIH AND SIH POLICIES (evidence only; scope not decided)
+
+Recorded for the `uk_rules.md` owner question: does this extend EIH Rules & Regulations provisions such as R&R
+24.3 or 22.3 beyond England? **This entry quotes the text and decides nothing.** From
+`eiha_inhouse_2026-27.txt:34-45`, confirmed identical in a fresh `-layout` extraction of the publisher PDF
+fetched 15 October 2026 (now on disk as `eiha_inhouse_2026-27.pdf`):
+
+> *"The governing body for ice hockey in the United Kingdom is Ice Hockey UK Limited (IHUK). There may
+> be references in these terms to policies of England Ice Hockey (EIH) and Scottish Ice Hockey (SIH)
+> which are now policies of IHUK and will continue to apply to all Clubs and Teams. IHUK is now entitled
+> to enforce these. In due course we will rebrand EIH and SIH policies and other documentation.
+> References to EIH or SIH shall, where the context requires, be construed as references to IHUK."*
+> (`:36-40`; the last sentence is printed **twice**, at `:40` and `:41`, in the publisher's own text)
+
+> *"IHUK and the British Universities Ice Hockey Association (BUIHA) adopt the latest IIHF Official
+> Rule Book (Version 1.1, published July 2025) as the foundation for the rules of the game to be
+> applied in England, Wales, Scotland and Northern Ireland (the Home Countries)."* (`:43-45`)
+
+**Facts a scope reader needs, none of them a conclusion:**
+
+- **It is new in 2026-27.** The 2025-26 In-House Introduction (`eiha_inhouse.txt:34`ff) has no such passage.
+  A grep for `now policies`, `construed` and `rebrand` returns 0 there.
+- It names **both EIH and SIH** policies, not EIH alone.
+- It says *"references **in these terms**"*, meaning the In-House Rules document. Whether that reaches a
+  provision that lives in the **EIH Rules & Regulations** (`eih_rr.txt`, 2024-25) rather than in the In-House
+  Rules is the open question, and it is not answered here.
+- *"Where the context requires"* is a qualifier the text itself supplies.
+- **Not checked:** whether any IHUK document after 25 July 2026 (a Rule Bulletin, an R&R reissue) settles it.
+  Rule Bulletins go to club secretaries by email and are not on disk.
+
+## EIHL CASEBOOK: THE DISK COPY IS VERSION 1.1, AND STILL THE ONE LINKED (re-confirmed 15 October 2026)
+
+A trailer item said *"EIHL Casebook URL version 1.1 vs disk 1.0"*. **The disk copy is version 1.1.**
+`eihl_casebook.txt:12` reads *"CASEBOOK 26-27 Version 1.1 080926"*, and `:17` gives *"Replaces Version … 1.0
+010826"*. On 15 October 2026 `https://www.eliteleague.co.uk/casebook` (HTTP 200, 63,773 bytes, *"Last updated:
+08.09.26"*) linked *"EIHL Casebook 26 - 27 Version 1.1 080926 (\*.pdf, 674.3 KB)"* at
+`/document/191-eihl-casebook-26-27-version-1-1-080926`. That link returned **690,498 bytes, MD5
+`98d584645d058462febe4563e2e39a39` — identical to `sources/eihl_casebook.pdf`**. The *"1.0"* that a reader sees is
+the **replaced-version** field and the page footers, both recorded above as the three disagreeing stamps.
+
+## IIHF RULE 43.1–43.3 IS UNCHANGED BETWEEN v1.1 AND 2026/27 (15 October 2026)
+
+Compared from the `43.1. CHECKING FROM BEHIND` heading to the `43.4.` heading in `iihf_rules_v1.1.txt` and
+`iihf_rules_2026-27.txt`, word-diffed after collapsing whitespace. **The only differences are extraction
+furniture:** line-break hyphenation (`cross-` / `checking`, `“che-` / `cking`) and the position of the
+running `PHYSICAL INFRACTIONS` side label. **No word of 43.1, 43.2 or 43.3 changed.** 43.4 (Disciplinary
+Measures) was not compared.

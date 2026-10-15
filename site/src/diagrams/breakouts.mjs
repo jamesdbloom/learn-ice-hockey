@@ -248,7 +248,13 @@ const wheel = {
     'right. It needs two things, speed and space — a step on the first forechecker, and no second ' +
     'forechecker waiting on the far side — and the second of those is an absence, so it is the empty ' +
     'far side of this picture rather than anything drawn in it. Cut tight, because the net is your ' +
-    'screen and cutting wide gives the forechecker a straight line to you. ⚠️ D2 is drawn already ' +
+    // W33: the tactical close moved up here, ahead of the first ⚠ — `captionNodes` makes the
+    // rest of the caption one amber run, and this sentence (what to look for, what kills it)
+    // was the last clause of a ~2,100-char tariff run. "all of this" → "the wheel": it no
+    // longer follows the tariff it pointed back at.
+    'screen and cutting wide gives the forechecker a straight line to you. The far-side winger and ' +
+    'the centre are the outlets, and a second forechecker holding the far side, which is exactly ' +
+    'what F2 does in a 2-1-2, turns the wheel into a trap. ⚠️ D2 is drawn already ' +
     'standing at the net front and with no route at all, and whether that is even legal is the first ' +
     'thing to settle, because the books split on the act itself and not just on the penalty for it. ' +
     'Under NHL and IIHF Rule 56.1, and PWHL Rule 57.1 in the same words, it is legal — a player is ' +
@@ -271,9 +277,7 @@ const wheel = {
     'Sliding across into his path is interference wherever you play. ⚠️ And do not read the NHL as the ' +
     'lenient book: two minutes is only the floor, its Rule 21.1 match penalty needs no injury and no ' +
     'named foul, and what differs between the books is the bar for a major or an ejection, not ' +
-    'whether one is available at all. The far-side winger and the centre are the outlets, and a second ' +
-    'forechecker holding the far side, which is exactly what F2 does in a 2-1-2, turns all of this ' +
-    'into a trap.',
+    'whether one is available at all.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
@@ -387,7 +391,9 @@ const reverse = {
     // ⚠️ THE SHOULDER CLAUSE IS NOT LEFT TO SECTION 6 ANY MORE and travels inside the
     // constant -- the rim note records why the reasoning that dropped it was wrong.
     '⚠️ Both players here can be hit on the wall, and D2 is arriving onto a puck he has not seen ' +
-    'travel. Never take that contact with your back to the boards, and never duck. ' +
+    // W33: same second-person fix as breakout-rim — also voiced into goaltender.md.
+    'travel. If you are one of them, never take that contact with your back to the boards, and ' +
+    'never duck. ' +
     WALL_POSTURE_INSTEAD,
 
   describe:
@@ -462,7 +468,10 @@ const rim = {
   width: 900,
 
   caption:
-    'The rim: a hard shot along the boards that follows the curve of the rink around behind the net ' +
+    // W33: "a hard PASS", not "a hard shot" — the route is `kind: 'pass'` (dashed) and it goes to a
+    // teammate; the corpus's `kind: 'shot'` is a shot on goal, and the owner (breakouts.md :22)
+    // calls the rim sending it "to a teammate further along".
+    'The rim: a hard pass along the boards that follows the curve of the rink around behind the net ' +
     'to a teammate further along, usually the far-side winger. Drawn in your own defensive zone at ' +
     'the left of the picture, and it travels onward in the direction the puck was already going — ' +
     'which is the whole difference between this and a reverse. The read drawn is a forechecker who ' +
@@ -517,7 +526,10 @@ const rim = {
     // PROHIBITION PLUS INSTRUCTION, never a prohibition alone: "never your back, never duck" is
     // followed by the posture that replaces them.
     '⚠️ This is a wall play at both ends. D1 is sealed on the boards and the winger takes it on ' +
-    'the far wall. Never take that contact with your back to the boards, and never duck. ' +
+    // W33: "If you are the skater on the wall" — this caption is voiced into goaltender.md too,
+    // where a bare "your back" addressed the goaltender reading it (OPEN_ITEMS second-person row).
+    'the far wall. If you are the skater on the wall, never take that contact with your back to ' +
+    'the boards, and never duck. ' +
     WALL_POSTURE_INSTEAD,
 
   describe:
@@ -596,7 +608,7 @@ const dToD = {
     'to D2. It never enters the shaded region. The goaltender is in the crease.',
 
   // The house, or home plate, exactly as the OWNER defines it —
-  // content/foundation/rink_map_and_glossary.md, section 'The "home plate" /
+  // content/foundation/rink_map.md, section 'The "home plate" /
   // high-danger area (also "the house")': square across the top along the tops
   // of the two faceoff circles, straight down the dot lines to the two faceoff
   // dots 44 ft apart, then angling in to the two goalposts, 6 ft apart on the
@@ -798,8 +810,8 @@ const stretch = {
 // ⚠️ THAT QUOTATION HAS BEEN RE-TAKEN. It used to read "Those two spots are **44 to
 // 64 feet apart** — the point is at the blue line, 64 ft out from the goal line" —
 // a sentence breakouts.md no longer contains, because
-// content/foundation/rink_map_and_glossary.md makes the point the AREA JUST INSIDE
-// the blue line rather than the line (:356, :372, :621, and the derivation at :683).
+// content/foundation/rink_map.md §5 "The point" makes the point the AREA JUST INSIDE
+// the blue line rather than the line.
 // So the FLOOR of the range moved from a flat 44 down to "a little under 44". That
 // RELAXES this picture, it cannot invalidate it: everything drawn here already
 // cleared 44.

@@ -25,9 +25,9 @@
  *            reads "Position: Two at the points, two on the half-walls, one at the
  *            net front, one below the goal line or in the middle", which names the
  *            area and not the line, and is correct as written. Do not "fix" it on
- *            the strength of a comment. content/foundation/rink_map_and_glossary.md
- *            owns the term and denies the line reading three times (:356, :372,
- *            :621); :268 has been brought into line with it.
+ *            the strength of a comment. content/foundation/rink_map.md
+ *            owns the term (§5 "The point") and denies the line reading; the
+ *            line numbers once cited here were the pre-split file's.
  *   Hedged:  "The most common shape" — and the section's own box names the
  *            umbrella, the overload and "their normal power-play look" as real
  *            alternatives. The caption carries all three.
@@ -279,8 +279,8 @@ const sixOnFivePinch = {
     { id: 'P', pos: 'D', at: 'point:right',      label: 'pinches to keep it in' },
     // ⚠️ THIS LABEL READ "stays at the line", WHICH ASSERTED THE RETRACTED
     // DEFINITION the sibling caption above is at pains to deny — the point is the
-    // area just inside the blue line, NOT the line (rink_map_and_glossary.md :356,
-    // :372, :621, and rink.json's `point` $comment). A label is four words on a
+    // area just inside the blue line, NOT the line (rink_map.md §"The point",
+    // and rink.json's `point` $comment). A label is four words on a
     // picture and carries no room to hedge, so it must not make the claim at all.
     { id: 'P', pos: 'F', at: 'point:left',       label: 'holds the point' },
     { id: 'H', pos: 'F', at: 'half-wall:right' },

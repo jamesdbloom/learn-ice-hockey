@@ -167,7 +167,7 @@
  * ⚠️ QUOTE RULE 1 WHOLE: it reads "for all levels of hockey, EXCEPT: England: Sutton -
  * permitted up to U16 only. Scotland: Coatbridge - permitted up to U16 only." Three layers
  * of this document quoted the clause and then wrote "for all levels", presenting a
- * truncation as complete. The exception is small but it is the rule's own text. content/foundation/rink_map_and_glossary.md, which owns rink size, tells a
+ * truncation as complete. The exception is small but it is the rule's own text. content/foundation/rink_map.md, which owns rink size, tells a
  * British reader to assume a sheet SMALLER than both standards and lists narrow sheets of
  * 65-80 ft. So the old caption told a reader in a 70 ft rec rink to rely LESS on the wall
  * when on their sheet it helps MORE -- inverted for exactly the reader the flag addressed.
@@ -375,8 +375,12 @@ const forcingThemOutside = {
     'from getting beaten wide. No gap distance and no retreat are drawn. ' +
     '⚠️ Steering with the route you skate is legal. Riding him into the wall with your body ' +
     'is a body check — barred outright in many classifications by USA Hockey 604 and Hockey ' +
+    // W33: 101.1's last paragraph added — "Any move by a Player to step or glide into an opposing
+    // Player will be assessed at least a minor penalty (2') for an 'illegal hit'"
+    // (iihf_rules_2026-27.txt). A defender riding a carrier wide is exactly that move; the boards
+    // limb alone left it unstated.
     'Canada 7.3; in women\'s hockey IIHF 101.1 bars using the boards to push, pin or eliminate ' +
-    'an opponent. Find out which book you ' +
+    'an opponent, and makes any step or glide into one an illegal hit. Find out which book you ' +
     'are under. Nothing here ends in contact.',
 
   describe:

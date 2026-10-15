@@ -958,7 +958,7 @@ const backOffAtTheLine = {
   // three lanes, three forwards" says only "Divide the ice lengthways into three
   // lanes: left wall, middle, right wall" and states no width, here or anywhere
   // else in the document. Equal thirds was this file's own inference, and the owner
-  // contradicts it: rink_map_and_glossary.md §"The neutral-zone dots" has them
+  // contradicts it: rink_map.md §"The neutral-zone dots" has them
   // "44 ft apart" and says "they mark the standard lateral lanes for a neutral-zone
   // setup" — which is this diagram's zone exactly. The lanes are 20.5 / 44 / 20.5,
   // not 28 / 28 / 28, and three other diagrams already draw the middle on the dots:

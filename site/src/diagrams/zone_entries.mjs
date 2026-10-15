@@ -37,7 +37,7 @@
  *    ending behind them.
  *  - The trapezoid's dimensions. The renderer paints it from src/data/rink.json,
  *    which takes Rule 1.8 and is checked against
- *    content/foundation/rink_map_and_glossary.md by scripts/check_geometry.py.
+ *    content/foundation/rink_map.md by scripts/check_geometry.py.
  *    Nothing in this file restates those figures, and no caption carries a number
  *    for them — that document spends four paragraphs on why the commonly-quoted
  *    ones are stale.
@@ -59,7 +59,8 @@ import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.m
 // ---------------------------------------------------------------------------
 
 // The two wide players are ON THE BLUE LINE -- on its twelve inches of paint, and NOT
-// `on the paint`, which rink_map_and_glossary.md owns for the CREASE. The section wants
+// `on the paint`, which language_and_glossary.md (Glossary, "The paint") and rink_map.md
+// (§"The crease / the paint") own for the CREASE. The section wants
 // them "at the line, at speed, onside, before the puck gets there", and the puck below
 // has not crossed, so the picture is legal as drawn under every book in the document.
 const WIDE_R = { at: 'blue-line', dy: 31 };            // (25, 31)
@@ -77,7 +78,7 @@ const threeLanes = {
 
   // ⚠️ THIS CAPTION SAYS `on the blue line` AND MUST NOT GO BACK TO `on the paint`.
   // It once read `already on the paint at speed`, meaning the blue line's twelve inches.
-  // `The paint` is an owned term: rink_map_and_glossary.md §"The paint" defines it as the
+  // `The paint` is an owned term: language_and_glossary.md's Glossary entry "The paint" defines it as the
   // light-blue CREASE, and most captions in this corpus use it that way — grep the
   // caption strings rather than trusting a count written here, which goes stale.
   // Voiced alone, and BORROWED into how_to_watch_hockey.md, which defines nothing, the
@@ -828,7 +829,7 @@ const flipOverTrap = {
 // The one piece of painted geometry on this page, and the one the coordinate table
 // already owns. The renderer draws the trapezoid from src/data/rink.json (Rule
 // 1.8); nothing here re-declares it, and the caption carries no number for it,
-// because content/foundation/rink_map_and_glossary.md owns those figures and
+// because content/foundation/rink_map.md owns those figures and
 // spends four paragraphs on why the commonly-quoted ones are stale.
 // ---------------------------------------------------------------------------
 
@@ -849,8 +850,16 @@ const trapezoidAim = {
     'only ice on which he may play the puck, so a puck dying straight behind the net is ' +
     'exactly the help you were trying to deny him. Where it applies is not universal — the ' +
     'NHL and the IIHF book mark one, with the KHL commonly said to have one too though no KHL ' +
-    'rulebook was available to check that; neither the USA Hockey nor the Hockey Canada book ' +
-    'marks one at all, and in England and Wales the status is unsettled — so look behind the ' +
+    // W33: CARHA, PWHL and Elite League limbs added, matching zone_entries.md §7 "Where the
+    // trapezoid applies". carha.txt scores 0 for trapezoid / restricted area / designated
+    // area. pwhl_rules.txt 1.8 and 27.8 switch it off while 65.2(viii) still writes the minor;
+    // for an ATTACKER the owner's reading is "plan for her to come out". The EIHL Casebook
+    // hands every rule it does not mention to the IIHF book and never mentions this one, so
+    // EIH Rule 22.3's suspension is not an Elite League answer (uk_rules.md KT7).
+    'rulebook was available to check that; the USA Hockey, Hockey Canada and CARHA books mark ' +
+    'none, and the PWHL switches its off though one rule still writes the minor, so plan for a ' +
+    'PWHL goaltender to come out. The Elite League plays the IIHF book; elsewhere in England ' +
+    'and Wales the status is unsettled — so look behind the ' +
     'net, ask your league, and where there is none, rim it hard and low instead.',
 
   describe:
@@ -1247,7 +1256,7 @@ const trailSkateDrag = {
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
     { id: 'D', team: 'opp', pos: 'D', at: DRAG_D, label: 'standing up at the line' },
     // ⚠️ LABEL: `on the line`, NOT `on the paint`. A player label is read in total
-    // isolation on the picture, and `the paint` is an OWNED TERM: rink_map_and_glossary.md
+    // isolation on the picture, and `the paint` is an OWNED TERM: language_and_glossary.md's Glossary
     // defines it as the light-blue CREASE, and the corpus's own instruction is `stay out of
     // the paint`. A label reading `trail skate on the paint` put a winger's blade in the
     // goal crease, sixty-four feet away, for any reader who took the glossary's sense.

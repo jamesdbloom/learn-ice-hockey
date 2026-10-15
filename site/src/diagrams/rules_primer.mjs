@@ -515,7 +515,7 @@ const icingTheRaceAndTheDot = {
 // from the prose is exactly the work a reader should not have to do in their head.
 //
 // THE TRAPEZOID IS NOT REDRAWN HERE — and it turns up anyway. `the-trapezoid`, owned
-// by content/foundation/rink_map_and_glossary.md, is the diagram that draws it. But
+// by content/foundation/rink_map.md, is the diagram that draws it. But
 // `rinkSvg`'s `endZone` paints the trapezoid lines on EVERY end of EVERY diagram, so
 // this picture shows a USA Hockey rule on an NHL-marked sheet whether it wants to or
 // not. Found by rendering it; invisible in the source. That is a conflict — the

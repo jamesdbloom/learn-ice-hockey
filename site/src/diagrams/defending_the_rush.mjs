@@ -193,7 +193,7 @@ const gapAndAngle = {
   //
   // WIDTH is the only dimension anything owns, and it is 44 ft: edge to edge on the
   // two faceoff-dot lines. This document's own §"Backchecking lanes" says "the middle
-  // lane between the faceoff dots" in terms, and rink_map_and_glossary.md §"The
+  // lane between the faceoff dots" in terms, and rink_map.md §"The
   // neutral-zone dots" has them "44 ft apart" and "they mark the standard lateral
   // lanes". Three other diagrams draw it on the same lines.
   //

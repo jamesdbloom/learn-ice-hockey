@@ -43,7 +43,7 @@
 
 // One circle radius, used to reach the circles' INNER edges from an anchor that
 // already sits on a dot 22 ft off the middle. One arithmetic step from
-// content/foundation/rink_map_and_glossary.md: the end-zone dots sit 22 ft either
+// content/foundation/rink_map.md: the end-zone dots sit 22 ft either
 // side of the middle with a 15 ft circle, so the inner edges are 7 ft out and the
 // gap between the circles is 14 ft. Copied rather than imported, deliberately:
 // rink_map_and_glossary.mjs owns this and three other modules restate it, which is

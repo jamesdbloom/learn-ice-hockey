@@ -316,8 +316,11 @@ const leavesThePoint = {
     'have gone down into the corner to help with the battle; the puck has come out of it to the ' +
     'opposing defenceman you were covering, and he is walking in off the point with nobody near him. ' +
     'Two things have gone at once. He has the time and space to shoot or to walk into the middle, ' +
+    // W33: the outlet spot is the conventional swing breakout's (winger.md :64/:175 facts), and the
+    // scope clause below covers only the COVERAGE system, so the breakout half is scoped here.
     'which is the thing covering the point exists to deny; and there is nobody on the boards between ' +
-    'the hash marks and the goal line, so if your team does win it back the exit starts late. ⚠️ This ' +
+    'the hash marks and the goal line, where a swing breakout wants its outlet, so if your team does ' +
+    'win it back the exit starts late. ⚠️ This ' +
     'is a mistake only under the system the picture assumes. Staying high out of the corner is the ' +
     'low zone collapse job — a coaching choice rather than a rule of hockey. Under man-on-man you ' +
     'follow your check wherever he goes, corner included, and going down there is the job rather than ' +

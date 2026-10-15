@@ -1,5 +1,6 @@
 /**
- * Diagrams for content/foundation/rink_map_and_glossary.md.
+ * Diagrams for content/foundation/rink_map.md (the regions and dimensions; the module
+ * keeps its pre-split name — the vocabulary now lives in language_and_glossary.md).
  *
  * This document owns the rink's dimensions and its spatial vocabulary, so its
  * diagrams are mostly **shaded regions** rather than plays. That makes them the
@@ -419,10 +420,27 @@ const theTrapezoid = {
     'text\u2019s one exception is a goaltender keeping skate contact with the crease, which ' +
     'excuses playing the puck and never freezing it; and the ' +
     'IIHF\u2019s Situation Handbook adds two more — a puck stopped on the goal line, and one ' +
-    'that only deflects into you. USA Hockey and Hockey ' +
-    'Canada mark no trapezoid, but both still stop the goaltender at the centre red line and ' +
-    'limit where the puck may be frozen. In England and Wales, England Ice Hockey’s Rule ' +
-    '22.3 says the area is not currently enforced — which frees where a goaltender may play ' +
+    'that only deflects into you. USA Hockey, Hockey ' +
+    // CARHA added W33: carha.txt has no "trapezoid", "restricted area" or "designated area";
+    // Rule 37(e) is the centre-red-line minor and Rule 58(b) the behind-the-goal-line
+    // freezing minor. PWHL: pwhl_rules.txt 1.8 ("No restricted Goalkeeper's Area ... will be
+    // enforced") and 27.8 ("does not apply a restricted area"), yet 65.2(viii) still makes it
+    // a minor to play "outside of the designated area behind the net". rink_map.md :269 owns
+    // the "play as if it binds" reading. Elite League: the EIHL Casebook says the IIHF book
+    // governs every rule it does not mention, and it never mentions the restricted area;
+    // EIH Rule 22.3 governs EIH competitions — uk_rules.md KT7 is the owner of that carve-out.
+    'Canada and CARHA mark no trapezoid, but all three still stop the goaltender at the centre ' +
+    // ⚠️ W33 REVIEW, MAJOR: the British limb read as if EIH Rule 22.3's suspension were in force
+    // ("says the area is not currently enforced — which frees where a goaltender may play").
+    // The owners say UNSETTLED and play as though it binds: rink_map.md §3 "Whether it is live
+    // in England and Wales is genuinely unsettled … Ask your league", goaltender.md "treat the
+    // trapezoid as unsettled — and play as though it binds everywhere in Britain". The Elite
+    // League limb is folded in: the IIHF book governs it and its Casebook is silent.
+    'red line and limit where the puck may be frozen. The PWHL switches it off in Rules 1.8 ' +
+    'and 27.8, yet its 65.2(viii) still writes the minor, so a PWHL goaltender should play as ' +
+    'if it binds. In Britain, play as if it binds too: the IIHF book is the base everywhere, ' +
+    'the Elite League included, and whether England Ice Hockey’s Rule 22.3 suspension still ' +
+    'stands in England and Wales is unsettled, so ask your league. That suspension never ' +
     // ⚠️⚠️ CRITICAL, CAUGHT BY `safety-reviewer`. This ended at "freeze it" — a flat NEVER,
     // read ALONE by a listener, while the body treats two carve-outs as inseparable from
     // this exact sentence: "Both carve-outs travel with that, or you produce a goaltender
@@ -434,7 +452,7 @@ const theTrapezoid = {
     // not: IIHF 63.2(VII) and NHL 63.2(vii) are written for a goalkeeper "in their own goal
     // crease", and IIHF Situation 63.1 penalises a goalkeeper out of the crease who falls on
     // the puck as an attacker bears down. Only the save-then-cover carve-out travels.
-    'the puck and never where they may freeze it. One thing stays legal either way: coming ' +
+    'touched where a goaltender may freeze the puck. One thing stays legal either way: coming ' +
     'out to cut down the angle, making the save and covering the puck (IIHF 63.2(VI)). Being ' +
     'checked excuses a freeze only inside the crease (63.2(VII)); out of it, falling on a ' +
     'loose puck as an attacker bears down is still a minor. Cover the rebound.',
@@ -1008,7 +1026,7 @@ export const MAPS = [
     // in: a quarter of the way across, not at the edge. The centre red line IS drawn
     // (full width, 1 ft, PALETTE red) and `centre-ice` is one of the overlay labels, so
     // naming it points at something the reader can see. This caption said "the blue line
-    // is at the left" and the prose at rink_map_and_glossary.md §5 said the same; both
+    // is at the left" and the prose in the pre-split rink_map_and_glossary file said the same; both
     // were wrong, and this diagram is borrowed into getting_started.md, whose readers
     // cannot tell a blue line from a red one by looking. `endZoneMarkings` above — the
     // other `half: true` map in §2 — already words it correctly; keep the two together.

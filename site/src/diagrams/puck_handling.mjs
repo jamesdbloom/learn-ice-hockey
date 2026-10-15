@@ -482,14 +482,22 @@ const wherethePuckIs = {
     'volume and not a patch of ice — every book runs it from the ice up to the top of the goal ' +
     'frame — so a puck plucked out of the air over this paint, below the crossbar, is a puck in ' +
     'the crease, and a plan view has no height in it to draw that with. ' +
-    'The instruction is the same wherever you are standing: do not keep hold of it. Knock it ' +
-    'straight down at your feet in one ' +
-    'continuous motion and play it with your skate or your blade. ' +
     'The goal ' +
     'crease is genuinely painted on the ice, unlike the tinted regions elsewhere in this corpus. ' +
     'You are drawn as a defenceman, but the rule reaches ' +
     'any skater. ' +
-    '⚠️ And your goaltender is on the ice in this picture, deliberately. With him pulled for an ' +
+    // ⚠️ W33: THE GLYPH MOVED ONTO THE INSTRUCTION, AND THE TWO DRAWING NOTES MOVED ABOVE IT.
+    // `captionNodes` in remark-corpus.mjs splits a caption at its FIRST ⚠ and makes the rest
+    // one amber `.warn-inline` run; markdown is NOT parsed in a caption, so `**…**` would
+    // render as literal asterisks. The only glyph used to sit on "And your goaltender is on the
+    // ice", so the amber fell on a drawing note while "do not keep hold of it" — the
+    // instruction — sat in muted grey three-quarters of the way through. Now the instruction
+    // opens the amber run and the goaltender-pulled warning stays inside it. Speech is
+    // unchanged: md_to_speech marks a caption "Important." once if it holds any ⚠.
+    '⚠️ The instruction is the same wherever you are standing: do not keep hold of the puck. Knock it ' +
+    'straight down at your feet in one ' +
+    'continuous motion and play it with your skate or your blade. ' +
+    'And your goaltender is on the ice in this picture, deliberately. With him pulled for an ' +
     'extra attacker the price is worse rather than the same.',
 
   describe:
