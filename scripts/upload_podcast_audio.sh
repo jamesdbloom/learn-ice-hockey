@@ -5,6 +5,13 @@
 #     OWNER BEFORE RUNNING IT. It defaults to a DRY RUN for that reason — you must
 #     pass --go to move a single byte.
 #
+# THE DRY RUN MAKES NO AWS CALL AT ALL. It does not run `aws`, it does not check
+# credentials and it does not need S3_BUCKET (a placeholder is printed if it is unset).
+# It reads the two JSON files and the local encodes, prints every check, and prints
+# exactly what --go would upload and to which key. An earlier version ran
+# `aws sts get-caller-identity` and `aws s3 cp --dryrun` even in a dry run, so a dry
+# run needed working credentials and touched the account.
+#
 # WHY THE AUDIO IS NOT IN `site/dist` AND MUST NEVER BE PUT THERE.
 # `.github/workflows/deploy.yml` syncs `site/dist` to the bucket with `--delete`,
 # and excludes `audio/*` from EVERY pass. Its own comment says why: the audio is
@@ -14,18 +21,39 @@
 #     deploy is deliberately blind to it. Do not "simplify" by copying the audio
 #     into site/public — that would put 1.12 GB into git and into every build.
 #
-# THE SERVED NAME IS NOT THE FILE NAME. The masters are laid out as
-# `Section Name/Document Title.m4a`, with SPACES. Apple requires "only ASCII
-# filenames and URLs that include a-z, A-Z, or 0-9". So each file is uploaded to
-# `audio/<doc_id>.m4a` — the mapping is in `podcasts_web/manifest.json`, which
-# `scripts/build_podcast_audio.py` writes, and it is the same path
-# `site/src/data/podcast.json` publishes to the feed and the downloads page.
-# ⚠️  The three must agree. They all derive from that one manifest; keep it that way.
+# WHERE EACH FILE GOES: THE `audio` FIELD, NEVER A PATH DERIVED FROM doc_id.
+# The masters are laid out as `Section Name/Document Title.m4a`, with SPACES, and Apple
+# requires "only ASCII filenames and URLs that include a-z, A-Z, or 0-9", so the served
+# name is not the file name. The served path is the `audio` field of each episode in
+# `site/src/data/podcast.json` — the feed's <enclosure url> is `origin + audio`
+# (`site/src/pages/feed/podcast.xml.ts`) — and `scripts/build_podcast_audio.py` writes
+# the same `audio` into `podcasts_web/manifest.json`. That field is PRESERVED across
+# rebuilds, so an episode published under an old name keeps its URL.
+# ⚠️  This script used to upload to `audio/<doc_id>.m4a` and ignore `audio`. For
+#     foundation/rink_map the feed serves /audio/foundation/rink_map_and_glossary.m4a, so
+#     an upload would have put the new bytes at a URL the feed does not serve, while the
+#     agreement check passed — it compared byte sizes only, never paths.
+#
+# THE AGREEMENT CHECK. Before anything is uploaded (and in a dry run, before the plan is
+# trusted) every one of these must hold, or the script refuses with exit 3:
+#   - manifest.json and podcast.json list the same doc_ids, each once;
+#   - every manifest entry HAS an `audio` field (a manifest written before the build
+#     script recorded it cannot say where its file goes) and it equals podcast.json's;
+#   - their `bytes` agree, and the local encode on disk is exactly that many bytes —
+#     Apple validates <enclosure length>, so the feed must declare the file we upload;
+#   - every `audio` is a plain ASCII path under /audio/ ending .m4a, and no two
+#     episodes share one.
+# ⚠️  It compares against the LOCAL podcast.json. The feed in production serves the
+#     DEPLOYED one; if the local file has uncommitted or undeployed changes, the paths
+#     checked here are not the paths production serves. Deploy the site data first.
 #
 # CACHING. Audio is immutable in practice — a re-encode is a new file, and the
 # feed's guid is deliberately NOT derived from the enclosure URL, so a changed
-# file does not orphan a subscription. A year is right. The COVER is not: it is
-# referenced by a stable URL and may be replaced, so it gets a short max-age.
+# file does not orphan a subscription. A year is right.
+# ⚠️  BUT AN UPLOAD TO AN EXISTING KEY REPLACES THE BYTES BEHIND AN `immutable` URL,
+#     and deploy.yml invalidates nothing under /audio/ (see the cover note below). A
+#     re-encode uploaded to an unchanged `audio` path may be served stale from the edge
+#     for up to that year unless /audio/<path> is invalidated by hand.
 #
 # ⚠️  THE MIME TYPE MUST MATCH THE FEED. `site/src/pages/feed/podcast.xml.ts` emits
 #     <enclosure type="audio/x-m4a">, which is the type Apple lists for M4A and uses in
@@ -41,12 +69,18 @@ set -euo pipefail
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SRC="$REPO/podcasts_web"
 MANIFEST="$SRC/manifest.json"
+SITE_DATA="$REPO/site/src/data/podcast.json"
 COVER="$SRC/cover.png"
+COVER_DATA="$REPO/site/src/data/podcast-cover.json"
 
-DRY="--dryrun"
+GO=0
 for arg in "$@"; do
   case "$arg" in
-    --go) DRY="" ;;
+    --go) GO=1 ;;
+    --dry-run|--dryrun) GO=0 ;;
+    -h|--help)
+      echo "usage: $0 [--dry-run | --go]   (default: --dry-run; no AWS call is made)"
+      exit 0 ;;
     *) echo "unknown argument: $arg" >&2; exit 2 ;;
   esac
 done
@@ -55,8 +89,6 @@ done
 # same GitHub repository variable `.github/workflows/deploy.yml` reads, so the script
 # and the deploy can never disagree about where the site lives.
 #
-# An earlier version of this guard just named the variable, which told the operator
-# what was missing and not where to get it. Say where.
 # ⚠️ THE `default` PROFILE HAS NO CREDENTIALS FOR THIS ACCOUNT, AND THE ERROR SAYS
 # "session has expired" RATHER THAN "wrong profile" — which sends you to re-run a
 # login you have already run. Measured 9 September 2026: `aws login` succeeded and
@@ -72,27 +104,201 @@ done
 # So default to that profile, and let the environment override it.
 export AWS_PROFILE="${AWS_PROFILE:-ice-hockey}"
 
-if [ -z "${S3_BUCKET:-}" ]; then
+if [ "$GO" = 1 ] && [ -z "${S3_BUCKET:-}" ]; then
   cat >&2 <<'HELP'
 S3_BUCKET is not set.
 
 It is a GitHub repository variable, the same one .github/workflows/deploy.yml uses.
 Get it and re-run in one line:
 
-    S3_BUCKET="$(gh variable get S3_BUCKET)" ./scripts/upload_podcast_audio.sh
+    S3_BUCKET="$(gh variable get S3_BUCKET)" ./scripts/upload_podcast_audio.sh --go
 
 or look it up first:
 
     gh variable list
 
-⚠️ This script is a DRY RUN by default and moves no bytes. Add --go to publish,
-   and only after the owner has approved it — it uploads ~1.12 GB.
+⚠️ Without --go this script is a DRY RUN, needs no bucket, and makes no AWS call.
+   Use --go only after the owner has approved it — it uploads ~1.12 GB.
 HELP
   exit 2
 fi
+BUCKET_SHOWN="${S3_BUCKET:-<S3_BUCKET>}"
 
-[ -f "$MANIFEST" ] || { echo "missing $MANIFEST — run scripts/build_podcast_audio.py first" >&2; exit 2; }
+[ -f "$MANIFEST" ]  || { echo "missing $MANIFEST — run scripts/build_podcast_audio.py first" >&2; exit 2; }
+[ -f "$SITE_DATA" ] || { echo "missing $SITE_DATA — run scripts/build_podcast_audio.py first" >&2; exit 2; }
 
+# ⚠️ NOT /tmp. CLAUDE.md: "Scratchpad, not /tmp" — /tmp is world-readable and gets
+# clobbered by concurrent agents. mktemp -d gives a 0700 directory; the trap removes it
+# on any exit path including a failure part-way through the upload loop.
+PAIRS_DIR="$(mktemp -d)"
+trap 'rm -rf "$PAIRS_DIR"' EXIT
+PAIRS="$PAIRS_DIR/pairs.tsv"
+
+# ---- the agreement check, and the upload plan it produces ------------------------
+# Writes `<local path>\t<s3 key>\t<bytes>` per episode to $PAIRS, IN THE FEED'S ORDER,
+# using the `audio` field (leading slash stripped) as the key. Exit 3 on any
+# disagreement. The plan is written even when the check fails, so that a dry run can
+# show what WOULD have been uploaded; --go never reads it in that case.
+set +e
+python3 - "$MANIFEST" "$SITE_DATA" "$SRC" > "$PAIRS" <<'PY'
+import json, pathlib, re, sys
+manifest_path, site_path, src = (pathlib.Path(a) for a in sys.argv[1:4])
+problems = []
+
+man_list = json.loads(manifest_path.read_text())
+site_list = json.loads(site_path.read_text())["episodes"]
+
+def index(entries, label):
+    out = {}
+    for e in entries:
+        d = e.get("doc_id")
+        if d in out:
+            problems.append(f"{label} lists doc_id {d!r} more than once")
+        out[d] = e
+    return out
+
+man = index(man_list, "manifest.json")
+site = index(site_list, "podcast.json")
+
+for d in sorted(set(man) - set(site)):
+    problems.append(f"only in manifest.json: {d}")
+for d in sorted(set(site) - set(man)):
+    problems.append(f"only in podcast.json: {d}")
+
+# ASCII only, under /audio/, ending .m4a; no '..', no '//'. Apple: "only ASCII filenames
+# and URLs that include a-z, A-Z, or 0-9".
+AUDIO_RE = re.compile(r"^/audio/[A-Za-z0-9][A-Za-z0-9_\-/.]*\.m4a$")
+served = {}
+for d, s in site.items():
+    a = s.get("audio")
+    if not isinstance(a, str) or not AUDIO_RE.match(a) or ".." in a or "//" in a:
+        problems.append(f"podcast.json {d}: audio path {a!r} is not a plain ASCII /audio/…/.m4a path")
+    elif a in served:
+        problems.append(f"podcast.json: {d} and {served[a]} both serve {a}")
+    else:
+        served[a] = d
+
+for d in sorted(set(man) & set(site)):
+    m, s = man[d], site[d]
+    if "audio" not in m:
+        problems.append(f"PATH UNKNOWN {d}: manifest.json has no `audio` field "
+                        f"(podcast.json serves {s.get('audio')})")
+    elif m["audio"] != s.get("audio"):
+        problems.append(f"PATH differs {d}: manifest.json {m['audio']} vs podcast.json {s.get('audio')}")
+    if m.get("bytes") != s.get("bytes"):
+        problems.append(f"BYTES differ {d}: manifest.json {m.get('bytes')} vs podcast.json {s.get('bytes')}")
+    f = src / m.get("file", "")
+    if not m.get("file") or not f.is_file():
+        problems.append(f"MISSING {d}: no local encode at podcasts_web/{m.get('file')}")
+    elif f.stat().st_size != s.get("bytes"):
+        problems.append(f"BYTES differ {d}: podcasts_web/{m['file']} is {f.stat().st_size} bytes, "
+                        f"podcast.json declares {s.get('bytes')}")
+
+# The plan: the feed's order, the feed's path, the manifest's local file.
+for s in site_list:
+    d = s.get("doc_id")
+    m = man.get(d)
+    if not isinstance(s.get("audio"), str):
+        continue
+    if m is None:          # shown in a dry run as unplannable; --go has already refused
+        print(f"-\t{s['audio'].lstrip('/')}\t{s.get('bytes')}")
+        continue
+    print(f"{src / m.get('file', '')}\t{s['audio'].lstrip('/')}\t{s.get('bytes')}")
+
+if problems:
+    print("⚠️  REFUSING: podcasts_web/manifest.json, site/src/data/podcast.json and the local "
+          "encodes DISAGREE.", file=sys.stderr)
+    print("    The feed would point at a URL, or declare a length, that is not what this "
+          "script would upload.", file=sys.stderr)
+    for p in problems:
+        print(f"      {p}", file=sys.stderr)
+    print(f"    {len(problems)} problem(s). Re-run scripts/build_podcast_audio.py (it writes "
+          "`audio` into both files), then commit and deploy site/src/data/podcast.json.",
+          file=sys.stderr)
+    sys.exit(3)
+print(f"manifest.json, podcast.json and the local encodes agree: {len(site)} episodes, "
+      "paths and bytes", file=sys.stderr)
+PY
+CHECK=$?
+set -e
+
+if [ "$CHECK" != 0 ] && [ "$CHECK" != 3 ]; then
+  echo "agreement check crashed (exit $CHECK); nothing uploaded" >&2
+  exit "$CHECK"
+fi
+if [ "$CHECK" = 3 ] && [ "$GO" = 1 ]; then
+  echo "Nothing uploaded." >&2
+  exit 3
+fi
+
+# ---- the cover ------------------------------------------------------------------
+# ⚠️ THE COVER IS UPLOADED UNDER A CONTENT-HASHED NAME AND IS IMMUTABLE.
+#     It used to be `audio/cover.png` with a one-hour max-age, replaced in place.
+#     That does not work here, for two reasons measured on 10 September 2026:
+#       1. deploy.yml excludes `audio/*` from BOTH sync passes and only pass 2's log
+#          feeds the CloudFront invalidation, so NOTHING under /audio/ is invalidated
+#          by a deploy. The edge served the superseded cover with `Age: 71651` against
+#          its own `max-age=3600` — twenty hours past its stated TTL.
+#       2. ⚠️ Apple caches show artwork against the URL it fetched it from, so a cover
+#          replaced in place can keep showing the old image in the directory after the
+#          origin is right. After a show is LISTED that is slow to unpick.
+#     So a new cover is a NEW URL, and the old one is simply left where it is.
+# The served name comes from `site/src/data/podcast-cover.json`, which
+# `scripts/build_podcast_cover.py` writes and `site/src/pages/feed/podcast.xml.ts`
+# reads. ⚠️ All three derive from that one file; keep it that way.
+COVER_KEY=""
+if [ -f "$COVER" ]; then
+  COVER_NAME="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["file"])' "$COVER_DATA")"
+  # ⚠️ Refuse if the tracked name is not the hash of the file about to be uploaded —
+  #     that means the cover was rebuilt without the site data being regenerated, and the
+  #     feed would point at a URL that does not exist.
+  ACTUAL="cover-$(python3 -c 'import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],"rb").read()).hexdigest()[:8])' "$COVER").png"
+  if [ "$COVER_NAME" != "$ACTUAL" ]; then
+    echo "⚠️  REFUSING: site/src/data/podcast-cover.json says '$COVER_NAME' but $COVER hashes to '$ACTUAL'." >&2
+    echo "    Re-run scripts/build_podcast_cover.py and commit the site data." >&2
+    [ "$GO" = 1 ] && { echo "Nothing uploaded." >&2; exit 3; }
+    CHECK=3
+  else
+    COVER_KEY="audio/${COVER_NAME}"
+  fi
+else
+  echo "⚠️  no cover at $COVER — run scripts/build_podcast_cover.py. The feed REQUIRES it:" >&2
+  echo "    itunes:image is a REQUIRED channel tag for Apple Podcasts." >&2
+fi
+
+# ---- dry run: print the plan, touch nothing ---------------------------------------
+if [ "$GO" = 0 ]; then
+  echo
+  if [ "$CHECK" = 3 ]; then
+    echo "⚠️  DRY RUN — AND --go WOULD REFUSE (see above). This is the plan as podcast.json"
+    echo "    describes it; it would NOT run until the disagreement is fixed."
+  else
+    echo "DRY RUN. No AWS call is made and nothing is uploaded. --go would run exactly:"
+  fi
+  echo
+  n=0; total=0
+  while IFS=$'\t' read -r local key bytes; do
+    if [ "$local" = "-" ]; then
+      printf '  %-62s -> s3://%s/%s  NOT PLANNED: in podcast.json, not in manifest.json\n' "<no local file>" "$BUCKET_SHOWN" "$key"
+      continue
+    fi
+    n=$((n + 1)); case "$bytes" in (*[!0-9]*|"") ;; (*) total=$((total + bytes)) ;; esac
+    printf '  %-62s -> s3://%s/%s  (%s bytes)\n' "${local#"$SRC"/}" "$BUCKET_SHOWN" "$key" "$bytes"
+  done < "$PAIRS"
+  [ -n "$COVER_KEY" ] && printf '  %-62s -> s3://%s/%s\n' "cover.png" "$BUCKET_SHOWN" "$COVER_KEY"
+  echo
+  echo "  ${n} episode(s), ${total} bytes; content-type audio/x-m4a,"
+  echo "  cache-control 'public, max-age=31536000, immutable'. No --delete."
+  echo
+  if [ "$CHECK" = 3 ]; then
+    echo "Dry run complete. Nothing was uploaded. --go WOULD REFUSE."
+    exit 3
+  fi
+  echo "Dry run complete. Nothing was uploaded. Re-run with --go to publish."
+  exit 0
+fi
+
+# ---- --go: authenticate, then upload --------------------------------------------
 # ⚠️ FAIL ON AUTH BEFORE MOVING A GIGABYTE, NOT AFTER THE FIRST FILE. The previous
 # run discovered an expired session by attempting a 29 MB upload and failing on it.
 # Cheap to check, and it names the profile so the remedy is obvious.
@@ -115,96 +321,22 @@ HELP
 fi
 echo "authenticated as: ${CALLER}"
 
-# ⚠️ Refuse to upload against a manifest that disagrees with the tracked site data.
-# If they differ, the feed would declare byte sizes for files that are not the ones
-# in the bucket — and Apple validates on <enclosure length>. Fail loudly.
-python3 - "$REPO" <<'PY'
-import json, pathlib, sys
-repo = pathlib.Path(sys.argv[1])
-man = {r["doc_id"]: r["bytes"] for r in json.loads((repo / "podcasts_web/manifest.json").read_text())}
-site = {e["doc_id"]: e["bytes"] for e in json.loads((repo / "site/src/data/podcast.json").read_text())["episodes"]}
-if man != site:
-    only_m = sorted(set(man) - set(site))
-    only_s = sorted(set(site) - set(man))
-    diff = sorted(k for k in set(man) & set(site) if man[k] != site[k])
-    print("⚠️  podcasts_web/manifest.json and site/src/data/podcast.json DISAGREE.", file=sys.stderr)
-    print("    The feed would declare sizes for files that are not these.", file=sys.stderr)
-    for k in only_m: print(f"      only in manifest: {k}", file=sys.stderr)
-    for k in only_s: print(f"      only in site data: {k}", file=sys.stderr)
-    for k in diff:   print(f"      size differs: {k} ({man[k]} vs {site[k]})", file=sys.stderr)
-    print("    Re-run scripts/build_podcast_audio.py, then commit site/src/data/podcast.json.", file=sys.stderr)
-    sys.exit(3)
-print(f"manifest agrees with site data: {len(man)} episodes")
-PY
-
-if [ -n "$DRY" ]; then
-  echo
-  echo "⚠️  DRY RUN. Nothing will be uploaded. Re-run with --go to publish."
-  echo
-fi
-
-# Each episode, to its ASCII served path.
-# ⚠️ NOT /tmp. CLAUDE.md: "Scratchpad, not /tmp" — /tmp is world-readable and gets
-# clobbered by concurrent agents. mktemp -d gives a 0700 directory; the trap removes it
-# on any exit path including a failure part-way through the upload loop.
-PAIRS_DIR="$(mktemp -d)"
-trap 'rm -rf "$PAIRS_DIR"' EXIT
-PAIRS="$PAIRS_DIR/pairs.tsv"
-
-python3 - "$REPO" <<'PY' > "$PAIRS"
-import json, pathlib, sys
-repo = pathlib.Path(sys.argv[1])
-for r in json.loads((repo / "podcasts_web/manifest.json").read_text()):
-    print(f'{r["file"]}\t{r["doc_id"]}')
-PY
-
-while IFS=$'\t' read -r rel doc_id; do
-  aws s3 cp $DRY "$SRC/$rel" "s3://${S3_BUCKET}/audio/${doc_id}.m4a" \
+while IFS=$'\t' read -r local key bytes; do
+  [ "$local" = "-" ] && { echo "internal error: unplanned entry $key reached --go" >&2; exit 3; }
+  aws s3 cp "$local" "s3://${S3_BUCKET}/${key}" \
     --content-type "audio/x-m4a" \
     --cache-control "public, max-age=31536000, immutable" \
     --no-progress
 done < "$PAIRS"
 
-if [ -f "$COVER" ]; then
-  # ⚠️ THE COVER IS UPLOADED UNDER A CONTENT-HASHED NAME AND IS IMMUTABLE.
-  #     It used to be `audio/cover.png` with a one-hour max-age, replaced in place.
-  #     That does not work here, for two reasons measured on 10 September 2026:
-  #       1. deploy.yml excludes `audio/*` from BOTH sync passes and only pass 2's log
-  #          feeds the CloudFront invalidation, so NOTHING under /audio/ is invalidated
-  #          by a deploy. The edge served the superseded cover with `Age: 71651` against
-  #          its own `max-age=3600` — twenty hours past its stated TTL.
-  #       2. ⚠️ Apple caches show artwork against the URL it fetched it from, so a cover
-  #          replaced in place can keep showing the old image in the directory after the
-  #          origin is right. After a show is LISTED that is slow to unpick.
-  #     So a new cover is a NEW URL, and the old one is simply left where it is.
-  # The served name comes from `site/src/data/podcast-cover.json`, which
-  # `scripts/build_podcast_cover.py` writes and `site/src/pages/feed/podcast.xml.ts`
-  # reads. ⚠️ All three derive from that one file; keep it that way.
-  COVER_NAME="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["file"])' "$REPO/site/src/data/podcast-cover.json")"
-
-  # ⚠️ Refuse if the tracked name is not the hash of the file about to be uploaded —
-  #     that means the cover was rebuilt without the site data being regenerated, and the
-  #     feed would point at a URL that does not exist.
-  ACTUAL="cover-$(python3 -c 'import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],"rb").read()).hexdigest()[:8])' "$COVER").png"
-  if [ "$COVER_NAME" != "$ACTUAL" ]; then
-    echo "⚠️  site/src/data/podcast-cover.json says '$COVER_NAME' but $COVER hashes to '$ACTUAL'." >&2
-    echo "    Re-run scripts/build_podcast_cover.py and commit the site data." >&2
-    exit 3
-  fi
-
-  aws s3 cp $DRY "$COVER" "s3://${S3_BUCKET}/audio/${COVER_NAME}" \
+if [ -n "$COVER_KEY" ]; then
+  aws s3 cp "$COVER" "s3://${S3_BUCKET}/${COVER_KEY}" \
     --content-type "image/png" \
     --cache-control "public, max-age=31536000, immutable" \
     --no-progress
-else
-  echo "⚠️  no cover at $COVER — run scripts/build_podcast_cover.py. The feed REQUIRES it:" >&2
-  echo "    itunes:image is a REQUIRED channel tag for Apple Podcasts." >&2
 fi
 
 echo
-if [ -n "$DRY" ]; then
-  echo "Dry run complete. Nothing was uploaded."
-else
-  echo "Uploaded. ⚠️ Now check the feed's enclosure URLs actually resolve, and that"
-  echo "   HTTP HEAD and byte-range requests work on them — Apple requires both."
-fi
+echo "Uploaded. ⚠️ Now check the feed's enclosure URLs actually resolve, and that"
+echo "   HTTP HEAD and byte-range requests work on them — Apple requires both."
+echo "   A replaced file under an unchanged path may need a CloudFront invalidation."
