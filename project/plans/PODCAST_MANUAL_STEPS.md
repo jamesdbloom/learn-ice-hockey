@@ -35,7 +35,23 @@ Tell the coordinator what you heard, in your own words. The settings are adjuste
 # Part A — Style A: making the NotebookLM episodes by hand
 
 One episode per document, one notebook per episode, at most ten episodes per batch.
-Every command below runs from the repository root:
+
+**The shortcut: use the kit.** The coordinator builds a ready-made kit at
+`~/Documents/personal/ice_hockey_notebooklm_kit/`. It has one folder per episode, and
+each folder holds four numbered files:
+
+1. `1 notebook name.txt`
+2. `2 <document>.txt`
+3. `3 instructions.txt`
+4. `4 focus text.txt`
+
+The kit already does Steps 1–4 for you. It skips documents with uncommitted edits, and
+it records each upload. Its instructions file has no producer notes in it. So with the
+kit, start at Step 5 and use the numbered files in order. `README.md` in the kit names
+the commit it was built from. Ask the coordinator to rebuild the kit after any content
+commit.
+
+If you are working without the kit, every command below runs from the repository root:
 
 ```bash
 cd ~/Documents/personal/ice_hockey

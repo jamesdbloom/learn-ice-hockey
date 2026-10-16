@@ -368,10 +368,34 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   4. `--style principles` pipeline in the scripts.
   5. Playing principles episodes appear on their pages as each is made. They join the feed only when all 39 exist.
 
+  ⚠️ **Must be settled before any re-made Conversation episode is published.** The owner is re-making all 39 Conversation episodes. `build_podcast_audio.py` keeps each existing audio path, and CloudFront caches `/audio/*` for a year, so re-uploading to the same key would keep serving the old audio. Re-made Conversation masters therefore need a new, versioned or hashed enclosure path, as Playing principles already uses. The guid stays the same, which is allowed: an enclosure URL may change, a guid may not. This needs a `--move-audio-path` policy, or a hash in the name, and the same change in `check-podcast-guids.mjs`, which currently pins the enclosure URLs.
   Risks: Conversation guids; saved play positions in `audio-player.js`; sticky player height on mobile; the `/audio/*.m3u` invalidation wildcard.
-- [W47 residuals] Two items, both of which make the rule sound stricter than it is (the safe direction):
-  - goaltender :416 says Casebook 610 Situation 8 makes all covering a minor. The Situation only covers the stick; the glove case comes from the 610(b) Note.
-  - offensive_zone_play facts :659: the not-in-possession limb drops "fails to attempt to avoid".
+- [W48 residuals] (1) Hockey Canada 8.5(b) Note 1 pointer: winger :493 repeats "Rule 7.4 (b)(Interpretation 2)" with no caveat (batch 1, held). The definition is 7.4's opening list i–v. (2) glossary :363 attaches the 604 scope only to the "legally checked" half of Situation 5 (batch 1, held). (3) A sweep for non-checking goalie-contact permissions worded without 604, Situation 5 or "engage" has not been run.
+- [Style B source findings] Problems found in source documents while writing Style B scripts on 16 Oct 2026. Fix each one in the document, then update its script, because a script may only say what its document says.
+  - **core_principles** (batch 1, held):
+    - (a) MAJOR. The body says "a goal scored while you stand in the crease can be disallowed" with no scope. Under USA Hockey 625(b)/617(c)(4) and CARHA 66(b) the goal is disallowed automatically. Under NHL 69.1/69.3, PWHL 71.1/71.3 and IIHF 69.1/69.3 it comes off only if your position affects the goalie. Under Hockey Canada 8.5 it comes off if you play the puck from the crease, interfere with play, or block the goalie's view or movement. The trailer names only Hockey Canada and CARHA. Related: [crease standing].
+    - (b) CM :209 says "Only principle 2 is about rules", but principle 3 is also about rules.
+    - (c) The USA Hockey stand-your-ground scope reads differently in the body, CM :213 and KT10.
+    - (d) :113 gives "3.3% to 4.2%"; 40/1200 to 49/1200 works out to 3.3%–4.1%.
+    - (e) Key focus says "never the goaltender", but the body never prices goalie contact outside the crease.
+    - (f) The banner says "Written to NHL rules", but the page covers several rulebooks.
+  - **getting_started** (batch 1, held):
+    - (a) MAJOR at :191. The sentence says the North American two minutes "never come alone, a misconduct or game misconduct". That understates two books:
+      - HC 7.5(a) and CARHA 53(a) always add a game misconduct, which is an ejection.
+      - Driving someone from behind into the boards or goal frame is a match penalty under HC 7.5(c) and CARHA 53(b).
+      - USAH 608(b) makes it a mandatory major plus game misconduct for head first or reckless, and 608(c) a match penalty for a defenceless player.
+      - The unit also never says "don't do it".
+    - (b) No concussion action anywhere in the document. Check it against conditioning_and_recovery.md.
+    - (c) A British women's visor rule is missing: In-House 102 allows a half visor only from the season after the player's 18th birthday.
+    - (d) The script-writer's findings: the England Ice Hockey clauses are voiced in the present tense, though EIH memberships ended on 30 Jun 2026; CM :630 states Hockey Canada's registration timing as a general rule; :434 applies USA Hockey figures to everyone; :635 and the Key focus/KT word the Elite League neck-guard warning differently; the Overview :46 points at a section ("Section 2 quotes…").
+  - **skating:**
+    - (a) The header says "nothing in this document changes between rule sets", but the crease line and boarding do change.
+    - (b) Driving the net (:792/:802, KT :988) gives only the skates limb. The glossary says USA Hockey 625(b) also stops play for a stick in the crease. Verify this.
+    - (c) "some books count the red line as crease" understates; the glossary says every book that settles it counts the line.
+    - (d) Facts :133 "six-patient case series" is not backed by the body.
+    - (e) The knee-angle timing at :240/:245 is inconsistent.
+    - (f) MAJOR. Concussion is raised only as a pointer (:644 facts, :651 body, CM :929, KT10 :987), and "Once you have cleared step 1, speed matters" (:657) implies a self-check rules it out. The action is in no layer. It needs conditioning_and_recovery.md's absolute rule: if a concussion is suspected, come off, tell someone, and do not return that day. A concussed player usually feels fine.
+  - **defender** (held for Style B): CARHA 86 puck-first Note missing from :801; Key focus "is a penalty" for the slide (Hockey Canada and CARHA excuse contact when the puck is played first); CM :816 against the body on boarding where checking is legal; the KT :893 screener geometry; CM :816 "no book prices it as a bare two minutes" lacks the Hockey Canada 7.6 head-contact edge.
 - [W47 held for NotebookLM batch 1] Found by the wave-47 sweep on 16 Oct 2026 in files the owner is currently turning into NotebookLM episodes. **Do not edit until the owner says batch 1 is downloaded.**
   - rules_primer :493 and :530: IIHF 75.2 "routes … onward to Rule 21" and "fires". The Note says the referee "may apply" Rule 21. The current wording is harsher than the rule.
   - winger facts :95: the holding line names only Hockey Canada 8.1(b) above the minor. CARHA 63(a) gives a discretionary major, which ejects under 30(a). The line is mildly permissive when voiced alone.

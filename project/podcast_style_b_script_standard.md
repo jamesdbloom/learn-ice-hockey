@@ -10,6 +10,18 @@ has read and approved: `podcast_defender_script.local.md` in the repository root
 from [`content/positions/defender.md`](../content/positions/defender.md). *(That file is
 gitignored scratch, so it is named rather than linked.)*
 
+⚠️ **THE MODEL SCRIPT CHANGED ON 16 OCTOBER 2026.** The owner read the plain-register rewrite
+and said: *"I prefer the new style for the defence content, so lets follow this style for the
+podcast scripts we're creating"*.
+
+**The model for every Style B script is now `podcast_style_b/defender.script.local.md`.** It is
+also gitignored scratch, so it is named here rather than linked. Its traceability and omissions
+files sit beside it, and every new script ships the same three files.
+
+Where the 23 September exemplar and the plain model disagree on **register**, follow the plain
+model and §2 *"Plain, not polished"*. The §3 measurements were taken from the old exemplar. Treat
+them as a ceiling, not a target.
+
 Every figure in this document was measured. The command that produced each one is stated
 beside it, and **no figure here should be quoted without re-running its command** — a number
 copied out of its owner goes stale silently, which is this repository's single most repeated
