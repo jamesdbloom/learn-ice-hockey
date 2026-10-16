@@ -439,12 +439,23 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
     - (b) Facts :724 lacks "never the point of your shoulder"; KT10 :846 lacks forearm-and-hip and chin.
     - (c) MAJOR. Shot blocking: the facts line at :544 teaches the method, and the never-dos (never lift a leg, never turn your back or go sideways, never lunge, stay up until the release) sit only behind a pointer at :552. The body :495 and facts :486 "closing hard at the top of the circle" carry no head-out-of-the-lane limb.
     - (d) Low-to-high is "from the high slot" at :47/:212 but "from the point" at :490/facts :483.
+  - **game_management** :1061 still says "no Hockey Canada rule or Interpretation held here covers it, so price the shot under that book" (crease cover, player in, puck out). HC 4.11(a)(v) and 10.2 Interp 5 settle it as a minor; fix to match defensive_zone_coverage after wave 51.
+  - **defending_the_rush:**
+    - (a) BD :243 says CARHA "grants you less than an angle", citing 66(a) Note 2. That Note sits under interference with a player NOT in possession, so it is the wrong anchor. The real CARHA limb is 49(a) "does not avert body contact": the route is yours, but the contact (even passive) is not.
+    - (b) Facts :233 drops the PWHL from the iced-puck boarding case.
+    - (c) CM :930 drops PWHL 58.3 from the puck-first penalty-shot rule.
+    - (d) CM :929 states a Hockey Canada 8.6 trip cap that the body calls unsettled.
+    - (e) The thrown-stick/goalie-pulled goal is named for the NHL and USA Hockey only; all six books award it.
+    - (f) IIHF clipping has no plain-major tier.
   - **faceoffs:**
     - (a) The PWHL 52.1 stationary-player limb is in facts :283 and CM :1200 but not in the body :291; the game misconduct is at 52.5, not 52.1.
     - (b) CM :1192 and KT6 are more confident on the British retrieval-check price than the body :582 ("unsettled").
     - (c) :360 contradicts itself: "every one of the five … in four of them".
     - (d) The posture appears only in short form.
     - (e) Facts :1004 names three books where five grant it.
+    - (f) Kicking an opponent at :307 / facts :301 / CM :1201 / KT4 names no PWHL rule; PWHL 49.3 is a match penalty.
+    - (g) The post-icing freeze at :1053–1055 says nothing on CARHA, which has no such bar.
+    - (h) Holding the stick at :272 names five books; PWHL 55.2 is the sixth.
   - **Wave-50 follow-ups:** check defending_the_rush, winger and others for "IIHF 76.3(V)… replaced" with no edition, and for a flat "every book penalises the slide". The three MINORs from the wave-50 fresh read are in the wave50 record.
   - **Corpus-wide, boards posture:** several documents teach only part of the full posture (angle in; feet apart, knees bent; the facing-the-wall fallback). Add the missing limbs per document, or point to body_contact_and_battles.
   - **Corpus-wide wording:** "take the contact on your forearm and hip" (body_contact :33, core_principles :187 and others) is ambiguous when heard once. Prefer "forearm and hip to the wall", which core_principles KT11 and breakouts already use.
