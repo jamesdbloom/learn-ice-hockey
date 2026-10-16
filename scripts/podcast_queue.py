@@ -14,22 +14,27 @@ named states, and enforces the plan's batching ceiling. It does NOT touch a
 browser — NotebookLM has no API, and driving it is `.claude/skills/notebooklm-episode/`'s
 job, using this script's `next-batch` output as its worklist.
 
-ORDERING, AND WHY IT IS NOT THE SKILL'S OWN TABLE
---------------------------------------------------
-`.claude/skills/notebooklm-episode/SKILL.md` groups episodes by LAYER (one
-episode per content family: "Positions", "Systems I", etc.). The corpus has
-never actually shipped that way: `site/src/data/podcast.json` (formerly
-`podcasts_web/manifest.json`) is PER-DOCUMENT, one episode per page, 37 of
-39 documents, in the same order the pages appear on the site. This script
-follows what is actually deployed, not the skill's grouping table — one
-episode per document, ordered by `site/src/data/structure.json`, which is
-the single source of truth for page order ("Every markdown file under
-content/ must appear exactly once here").
+ORDERING
+--------
+One episode per document, in site order. `site/src/data/podcast.json` (formerly
+`podcasts_web/manifest.json`) is PER-DOCUMENT, and
+`.claude/skills/notebooklm-episode/SKILL.md` now says the same thing ("This corpus
+ships one episode per document, not one per layer"). ⚠️ An earlier version of this
+paragraph said SKILL.md "groups episodes by LAYER" and described a grouping table
+there; by 16 October 2026 SKILL.md had no such table, so the paragraph was arguing
+with something that no longer existed. Order comes from
+`site/src/data/structure.json`, the single source of truth for page order ("Every
+markdown file under content/ must appear exactly once here"), and is RE-READ on
+every run — never taken from the track number stored in the state file, which is a
+snapshot from whenever the item was queued and goes stale when pages are reordered.
 
 ⚠️ `getting-started/getting_started` is deliberately excluded from the
-queue this script builds, per an explicit instruction: it already has an
-episode (track 1) and needs no new work, but the exclusion is a queue-scope
-decision, not a claim that the page doesn't belong in the site order.
+AUTOMATIC queue, per an explicit instruction: it already has an episode
+(track 1). The exclusion is a queue-scope decision, not a claim that the page
+doesn't belong in the site order — and naming it with `build-queue --stale`
+overrides it, because that is an explicit instruction too. Without that
+override it could never reach `accepted`, and `build_podcast_audio.py` refuses
+any new master that is not `accepted`.
 
 STALENESS
 ---------
@@ -51,18 +56,23 @@ risk this tool exists to avoid. It queues only:
 USAGE
 -----
   python3 scripts/podcast_queue.py status
-      Show every document's current state: has-episode / missing / stale /
+      Read-only. Show every document's current state: has-episode / missing / stale /
       in-queue, with its target track number from structure.json.
 
-  python3 scripts/podcast_queue.py build-queue [--stale DOC_ID ...] [--reason TEXT]
+  python3 scripts/podcast_queue.py build-queue [--stale DOC_ID ...] [--unblock DOC_ID ...] [--reason TEXT]
       (Re)build the queue file from structure.json + the manifest. Items
-      already past `queued` in the checkpoint are left alone. Pass
+      already past `queued` in the checkpoint are left alone, and a
+      `blocked` (rejected) item is NEVER overwritten unless named with
+      --unblock, which requeues it keeping its history and failure count. Pass
       --stale to add specific known-stale documents (see STALENESS above).
 
   python3 scripts/podcast_queue.py next-batch [--limit N]
       Print up to N (default 10, the plan's hard ceiling; never pass more)
-      queued items ready for the next step, oldest-queued first, skipping
-      anything `blocked`. This is what a driving session consumes.
+      queued items ready for the next step, IN SITE ORDER (structure.json, read
+      fresh), skipping anything `blocked`. Read-only. This is what a driving
+      session consumes. ⚠️ It used to sort by `queued_at`; every item was
+      queued in one run with one timestamp, so the tie fell through to the
+      state file's sorted keys and the batch printed ALPHABETICALLY.
 
   python3 scripts/podcast_queue.py set-status DOC_ID STATUS [--note TEXT]
       Advance (or block) one item. STATUS must be one of the plan's named
@@ -228,7 +238,7 @@ def cmd_status(args):
         excluded = doc_id in EXCLUDED_DOC_IDS
         has_episode = doc_id in manifest
         item = state["items"].get(doc_id)
-        qstatus = "excluded" if excluded else (item["status"] if item else "-")
+        qstatus = item["status"] if item else ("excluded" if excluded else "-")
         print(f"{track:>3}  {doc_id:<45} {str(has_episode):<12} {qstatus:<12} {section}")
 
 
@@ -238,22 +248,46 @@ def cmd_build_queue(args):
     order = load_structure_order()
     manifest, _ = load_manifest()
     state = load_state()
+    unblock_ids = set(args.unblock or [])
     added, skipped_existing, skipped_excluded, skipped_unknown_stale = [], [], [], []
+    skipped_blocked, unblocked = [], []
 
     valid_doc_ids = {doc_id for doc_id, _, _ in order}
-    for sid in stale_ids:
+    for sid in stale_ids | unblock_ids:
         if sid not in valid_doc_ids:
             skipped_unknown_stale.append(sid)
+    not_blocked = sorted(d for d in unblock_ids & valid_doc_ids
+                         if state["items"].get(d, {}).get("status") != "blocked")
 
     for doc_id, track, section in order:
-        if doc_id in EXCLUDED_DOC_IDS:
+        if doc_id in EXCLUDED_DOC_IDS and doc_id not in stale_ids | unblock_ids:
             skipped_excluded.append(doc_id)
             continue
         already_tracked = doc_id in state["items"]
         has_episode = doc_id in manifest
         is_stale_pick = doc_id in stale_ids
 
-        if already_tracked and state["items"][doc_id]["status"] != "blocked":
+        prev = state["items"].get(doc_id)
+        if already_tracked and prev["status"] == "blocked":
+            # ⚠️ A blocked item is a REJECTED episode with a recorded reason. A plain
+            # build-queue (or --stale) used to overwrite it with a fresh `queued` entry and
+            # an empty history, silently. Only an explicit --unblock requeues it, and the
+            # history and failure count are kept.
+            if doc_id not in unblock_ids:
+                skipped_blocked.append(doc_id)
+                continue
+            prev["status"] = "queued"
+            prev["target_track"] = track
+            prev["section"] = section
+            prev["queued_at"] = now_iso()
+            prev["reason"] = args.reason or prev.get("reason", "unblocked")
+            prev.setdefault("history", []).append(
+                {"status": "queued", "at": now_iso(),
+                 "note": f"--unblock: {args.reason or 'no reason given'}"})
+            unblocked.append(doc_id)
+            continue
+
+        if already_tracked:
             # Never clobber progress already made on a real attempt.
             skipped_existing.append(doc_id)
             continue
@@ -279,29 +313,53 @@ def cmd_build_queue(args):
         print(f"  + {d}")
     if skipped_excluded:
         print(f"Excluded by instruction (already have an episode, no new work needed): {len(skipped_excluded)}")
+    if unblocked:
+        print(f"Unblocked and requeued (history and failure count kept): {len(unblocked)}")
+        for d in unblocked:
+            print(f"  ↺ {d}")
+    if skipped_blocked:
+        print(f"⚠️  BLOCKED, left blocked (pass --unblock DOC_ID to requeue): {skipped_blocked}")
+    if not_blocked:
+        print(f"⚠️  --unblock named doc_id(s) that are not blocked, ignored: {not_blocked}")
     if skipped_existing:
         print(f"Already tracked, left alone: {len(skipped_existing)}")
     if skipped_unknown_stale:
         print(f"⚠️  --stale named doc_id(s) not found in structure.json, ignored: {skipped_unknown_stale}")
-    if not added:
+    if not added and not unblocked:
         print("Nothing new to queue. Documents with no recorded episode and no "
               "--stale flag are the only automatic additions — pass --stale "
               "DOC_ID for a specific document you have separately confirmed "
               "needs regenerating; this tool will not guess.")
 
 
+def _short(text, n=70):
+    text = " ".join(str(text).split())
+    return text if len(text) <= n else text[: n - 1] + "…"
+
+
 def cmd_next_batch(args):
-    limit = min(args.limit or BATCH_HARD_CEILING, BATCH_HARD_CEILING)
-    if args.limit and args.limit > BATCH_HARD_CEILING:
-        print(f"⚠️  Requested {args.limit}, capped to the plan's hard ceiling of {BATCH_HARD_CEILING}.")
-    state = load_state()
+    requested = BATCH_HARD_CEILING if args.limit is None else args.limit
+    limit = max(1, min(requested, BATCH_HARD_CEILING))
+    if requested != limit:
+        print(f"⚠️  Requested {requested}, clamped to {limit} (range 1..{BATCH_HARD_CEILING}).")
+    state = load_state()  # read-only: this command never calls save_state
+    # Site order, read fresh from structure.json. Items no longer in it sort last.
+    site_track = {doc_id: track for doc_id, track, _ in load_structure_order()}
     items = [v for v in state["items"].values() if v["status"] == "queued"]
-    items.sort(key=lambda v: v["queued_at"])
+    unknown = [v["doc_id"] for v in items if v["doc_id"] not in site_track]
+    items.sort(key=lambda v: (site_track.get(v["doc_id"], 10**6), v["doc_id"]))
     batch = items[:limit]
-    print(f"Next batch ({len(batch)} of {len(items)} queued, ceiling {limit}):")
+    print(f"Next batch ({len(batch)} of {len(items)} queued, ceiling {limit}), in site order:")
     for it in batch:
-        print(f"  track {it['target_track']:>2}  {it['doc_id']:<45} "
-              f"(queued {it['queued_at']}, reason: {it['reason']})")
+        track = site_track.get(it["doc_id"])
+        print(f"  track {track if track is not None else '??':>2}  {it['doc_id']:<45} "
+              f"(queued {it['queued_at'][:10]}, reason: {_short(it['reason'])})")
+    if items:
+        oldest = min(v["queued_at"] for v in items)
+        print(f"  (oldest queue entry: {oldest} — if that predates content changes, "
+              f"rebuild deliberately; this command does not)")
+    if unknown:
+        print(f"⚠️  queued doc_id(s) not in structure.json (renamed or removed?): {unknown}")
     if not batch:
         print("  (nothing queued — run build-queue first, or everything queued is already in progress)")
 
@@ -356,6 +414,8 @@ def main():
 
     bq = sub.add_parser("build-queue", help="(Re)build the queue from structure.json + the manifest.")
     bq.add_argument("--stale", nargs="*", help="doc_id(s) to requeue despite having an episode.")
+    bq.add_argument("--unblock", nargs="*",
+                    help="blocked doc_id(s) to requeue. Without it a blocked item is never touched.")
     bq.add_argument("--reason", help="Why the --stale items are being requeued (recorded in state).")
 
     nb = sub.add_parser("next-batch", help="Print the next batch of queued items.")

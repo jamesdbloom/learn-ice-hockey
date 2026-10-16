@@ -2,9 +2,68 @@
 """Re-encode the podcast masters for the web, and give them the metadata they ship with none of.
 
 ⚠️  NEVER MODIFIES `podcasts/`. It reads the masters and writes to `podcasts_web/`.
-    A backup is not the safety net here — an original you never touched is.
-    Masters additionally backed up 8 September 2026 to
-    `~/Documents/personal/ice_hockey_podcast_masters_backup_2026-09-08/`.
+    Nothing in this script writes, moves or deletes a master. Masters are replaced BY
+    HAND (an accepted episode moved in from `~/Documents/personal/ice_hockey_podcast_incoming/`),
+    and that manual step is the one this script cannot guard.
+
+⚠️  BACKUPS. An earlier version of this docstring said the masters were "additionally
+    backed up 8 September 2026 to `~/Documents/personal/ice_hockey_podcast_masters_backup_2026-09-08/`".
+    ON 16 OCTOBER 2026 THAT FOLDER WAS NOT ON DISK, so `podcasts/` was the only copy —
+    and by then four masters had already been overwritten by rejected September
+    attempts. Do not trust a sentence about a backup; this script now checks for one:
+      --backup     copies every file under `podcasts/` and `podcasts_web/` that is not
+                   already backed up (same relative path, same size) into a NEW
+                   timestamped folder under BACKUP_ROOT, outside the repository. It never
+                   overwrites an earlier snapshot.
+      a real run   REFUSES to encode any master that has no same-size copy in some
+                   snapshot under BACKUP_ROOT, and copies every `podcasts_web/` file it is
+                   about to overwrite into its own timestamped folder first.
+
+⚠️  WHAT GETS PUBLISHED IS OPT-IN, AND A REFUSAL STOPS THE RUN. The four September
+    attempts (Core Principles, Language and Glossary, Rink Map, On-Ice Communication)
+    were REJECTED but their masters sit in `podcasts/`, and the old version of this
+    script published every `.m4a` it found there. Now, per master, using the queue state
+    in `.podcast_queue/state.json` (written by `scripts/podcast_queue.py`):
+      * queue status `blocked`              -> REFUSED, always.
+      * a NEW master                         -> REFUSED unless its queue status is `accepted`.
+                                                No state file means no status, so a new
+                                                master is refused — the safe default.
+      * an UNCHANGED master                  -> allowed; this is the master the live
+                                                episode was encoded from.
+      * `--retag` on a NEW master            -> REFUSED: retag remuxes the OLD web output,
+                                                and would then hide the new master.
+    "New" means: not the master the web output was encoded from. Every encode now records
+    the master's size, mtime and sha256 in `podcasts_web/manifest.json`; with a record, a
+    master whose size+mtime differ is judged by sha256, so a restore that loses timestamps
+    is decided by CONTENT. Entries encoded before 16 Oct 2026 have no record and fall back
+    to the old rule (no output, or master newer than output), and the run says so.
+    Any refusal exits 2 BEFORE anything is written. To publish around a refused master
+    you must name it: `--exclude DOC_ID`. An excluded document keeps its EXISTING feed
+    entry exactly as it is (guid, audio path, bytes, duration) and its web file is not
+    touched; a document with no existing entry simply stays out of the feed.
+
+⚠️  GUID AND AUDIO PATH ARE PRESERVED, because changing either can re-deliver an episode
+    to every subscriber. `guid` is copied from the existing `site/src/data/podcast.json`
+    entry whenever there is one (e.g. `learn-ice-hockey:foundation/rink_map_and_glossary`,
+    pinned when `rink_map_and_glossary` was renamed `rink_map`), and the existing `audio`
+    path is kept too. ⚠️ `scripts/upload_podcast_audio.sh` uploads to `audio/<doc_id>.m4a`
+    REGARDLESS of `audio`, so for an episode whose preserved path differs from that (today:
+    rink_map) a re-encode or retag would put new bytes at a URL the feed does not serve,
+    while the feed declared the new length for the old file. That is REFUSED unless you pass
+    `--move-audio-path DOC_ID`, which adopts `/audio/<doc_id>.m4a` and keeps the guid.
+    `manifest.json` now carries `audio` too, so the upload script can be made to read it.
+
+TRACK NUMBERS are kept. The feed emits `track` as <itunes:episode>; an existing episode
+keeps its published track unless `--renumber` is given, and a new one takes its
+`structure.json` position. A clash between the two is refused until it is decided.
+
+Encodes and retags write to a temp file beside the output, check it has a duration, then
+replace() — an interrupted run never leaves a truncated file under the published name.
+Both JSON files are written atomically, and the old manifest is backed up first.
+
+ALWAYS DRY-RUN FIRST: `--dry-run` writes nothing (no encode, no retag, no backup, no
+manifest, no `podcast.json`) and prints, per master, what would happen and why, then
+the field-by-field change to every feed entry.
 
 WHY 64 kbps MONO, and why that is not a quality cut.
     The masters are 257 kbps STEREO AAC — and the stereo is fake. Phase-inverting one
@@ -59,6 +118,10 @@ owner fixed at source. A stale docstring outlives the code it describes.
 
 Idempotent: an output newer than its input, encoded at the same settings, is skipped.
 Run with --force to re-encode regardless.
+
+`site/src/data/podcast.json` and `podcasts_web/manifest.json` are rewritten only by a
+full, non-dry run with no refusals. Episodes are never dropped from the feed silently:
+an existing entry whose document has no publishable master is carried forward unchanged.
 """
 
 from __future__ import annotations
@@ -66,7 +129,10 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import datetime
+import hashlib
 import re
+import shutil
 import subprocess
 import sys
 import unicodedata
@@ -85,6 +151,11 @@ CONTENT = REPO / "content"
 # ⚠️ If this file is stale the feed lies about file sizes. Regenerate it in the
 # same run that encodes.
 SITE_DATA = REPO / "site" / "src" / "data" / "podcast.json"
+# Written by scripts/podcast_queue.py; gitignored. Read-only here.
+QUEUE_STATE = REPO / ".podcast_queue" / "state.json"
+# OUTSIDE the repository on purpose: `podcasts/` and `podcasts_web/` are gitignored,
+# so a backup inside the checkout would share the checkout's fate.
+BACKUP_ROOT = pathlib.Path.home() / "Documents" / "personal" / "ice_hockey_podcast_backups"
 
 BITRATE = "64k"
 CHANNELS = "1"
@@ -182,15 +253,197 @@ def tags(doc_id: str, layer_title: str, doc_title: str,
     ]
 
 
+def default_audio_path(doc_id: str) -> str:
+    """Where `scripts/upload_podcast_audio.sh` puts an episode: `audio/<doc_id>.m4a`.
+    Pure ASCII — Apple requires "only ASCII filenames and URLs that include a-z, A-Z,
+    or 0-9", and the master filenames contain spaces, so the served name is NOT the
+    file name."""
+    return f"/audio/{doc_id}.m4a"
+
+
+def load_queue_status() -> dict[str, str]:
+    """doc_id -> queue status from `.podcast_queue/state.json`. Read-only. A missing
+    file yields {}, under which every NEW master is refused (no `accepted` status)."""
+    if not QUEUE_STATE.exists():
+        return {}
+    items = json.loads(QUEUE_STATE.read_text()).get("items", {})
+    return {k: v.get("status", "") for k, v in items.items()}
+
+
+def load_site_data() -> dict[str, dict]:
+    """doc_id -> the EXISTING feed entry, verbatim. The source of preserved guids and
+    audio paths, and of every entry carried forward unchanged."""
+    if not SITE_DATA.exists():
+        return {}
+    return {e["doc_id"]: e for e in json.loads(SITE_DATA.read_text()).get("episodes", [])}
+
+
+def load_web_manifest() -> dict[str, dict]:
+    path = OUT / "manifest.json"
+    if not path.exists():
+        return {}
+    return {e["doc_id"]: e for e in json.loads(path.read_text())}
+
+
+TEMP_SUFFIXES = (".partial.m4a", ".retag.m4a")
+
+
+def is_temp(path: pathlib.Path) -> bool:
+    return path.name.endswith(TEMP_SUFFIXES)
+
+
+def sha256_of(path: pathlib.Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def master_record(master: pathlib.Path) -> dict:
+    """What a manifest entry records about the master it was ENCODED from. Written only
+    at encode time — the one moment we know which master produced the output."""
+    st = master.stat()
+    return {"master_size": st.st_size, "master_mtime": int(st.st_mtime),
+            "master_sha256": sha256_of(master)}
+
+
+def master_identity(master: pathlib.Path, dest: pathlib.Path, rel: pathlib.Path,
+                    old: dict | None) -> tuple[bool, str]:
+    """(is_new, how-decided). A master is NEW when it is not the one the existing web
+    output was encoded from.
+
+    With a record (`master_sha256` in the old manifest entry for this file): size+mtime
+    match -> unchanged; otherwise the sha256 decides, so a restore that loses or changes
+    timestamps is judged by CONTENT, not by its clock.
+    Without a record (every entry encoded before 16 Oct 2026): the legacy mtime rule —
+    no output, or master newer than output -> new — and the output says so."""
+    if not dest.exists():
+        return True, "no web output"
+    rec = old if old and old.get("file") == str(rel) and old.get("master_sha256") else None
+    if rec:
+        st = master.stat()
+        if st.st_size == rec.get("master_size") and int(st.st_mtime) == rec.get("master_mtime"):
+            return False, "matches recorded size+mtime"
+        if st.st_size != rec.get("master_size"):
+            return True, "size differs from recorded master"
+        same = sha256_of(master) == rec["master_sha256"]
+        return (not same), ("sha256 matches record (mtime changed)" if same
+                            else "sha256 differs from recorded master")
+    new = master.stat().st_mtime > dest.stat().st_mtime
+    return new, "NO master record — legacy mtime rule"
+
+
+def backed_up(rel: pathlib.Path, area: str, src: pathlib.Path) -> pathlib.Path | None:
+    """A copy of `<area>/<rel>` with the same size AND mtime (copy2 preserves it) in ANY
+    snapshot under BACKUP_ROOT, or None."""
+    if not BACKUP_ROOT.is_dir():
+        return None
+    st = src.stat()
+    for snap in sorted(BACKUP_ROOT.iterdir(), reverse=True):
+        cand = snap / area / rel
+        if cand.is_file():
+            cs = cand.stat()
+            if cs.st_size == st.st_size and abs(cs.st_mtime - st.st_mtime) < 1:
+                return cand
+    return None
+
+
+def stamp() -> str:
+    return datetime.datetime.now().strftime("%Y-%m-%dT%H%M%S")
+
+
+def assert_outside_repo(path: pathlib.Path) -> None:
+    try:
+        path.resolve().relative_to(REPO)
+    except ValueError:
+        return
+    raise SystemExit(f"refusing: backup location {path} is INSIDE the repository")
+
+
+def copy_verified(src: pathlib.Path, dst: pathlib.Path) -> None:
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    if dst.stat().st_size != src.stat().st_size:
+        raise SystemExit(f"backup copy size mismatch, stopping: {src} -> {dst}")
+
+
+def write_json_atomic(path: pathlib.Path, data) -> None:
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(data, indent=2) + "\n")
+    tmp.replace(path)
+
+
+def cmd_backup(dry_run: bool) -> int:
+    """Incremental, timestamped, never-overwriting snapshot of both audio trees."""
+    assert_outside_repo(BACKUP_ROOT)
+    todo = []
+    for area, root in (("podcasts", MASTERS), ("podcasts_web", OUT)):
+        if not root.is_dir():
+            continue
+        for f in sorted(root.rglob("*")):
+            if f.is_file() and f.name != ".DS_Store" and not is_temp(f):
+                rel = f.relative_to(root)
+                if backed_up(rel, area, f) is None:
+                    todo.append((area, root, rel, f.stat().st_size))
+    snap = BACKUP_ROOT / stamp()
+    total = sum(t[3] for t in todo)
+    print(f"backup: {len(todo)} file(s), {total/1e9:.2f} GB not yet backed up"
+          f" -> {snap}{'  (DRY RUN — nothing copied)' if dry_run else ''}")
+    for area, _root, rel, size in todo:
+        print(f"    {area}/{rel}  {size/1e6:.1f} MB")
+    if dry_run or not todo:
+        return 0
+    assert_outside_repo(snap)
+    snap.mkdir(parents=True, exist_ok=False)
+    for area, root, rel, _size in todo:
+        copy_verified(root / rel, snap / area / rel)
+    print(f"backed up {len(todo)} file(s) to {snap}")
+    return 0
+
+
 def main() -> int:
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(
+        description="Encode accepted podcast masters for the web and regenerate the feed's "
+                    "site data. Run with --dry-run first; it writes nothing.")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="write NOTHING (no encode, retag, backup, manifest or podcast.json); "
+                         "print what would happen to every master and every feed entry")
     ap.add_argument("--force", action="store_true", help="re-encode even if the output looks current")
-    ap.add_argument("--limit", type=int, default=0, help="encode at most N files (for a trial run)")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="encode at most N files (trial run; never rewrites podcast.json or "
+                         "manifest.json, and exits non-zero to say so)")
     ap.add_argument("--retag", action="store_true",
                     help="rewrite metadata on the EXISTING podcasts_web files with -c copy. "
                          "Lossless: same AAC stream, new container tags. Use this, never --force, "
-                         "when only the metadata is wrong.")
+                         "when only the metadata is wrong. Refused for a NEW master.")
+    ap.add_argument("--exclude", action="append", default=[], metavar="DOC_ID",
+                    help="leave this document's master unpublished and carry its EXISTING feed "
+                         "entry forward unchanged. Required, by name, for every refused master.")
+    ap.add_argument("--move-audio-path", action="append", default=[], metavar="DOC_ID",
+                    help="allow a rewritten (encoded/retagged) episode to move from its preserved "
+                         "audio path to /audio/<doc_id>.m4a (where upload_podcast_audio.sh "
+                         "uploads). guid is kept.")
+    ap.add_argument("--renumber", action="store_true",
+                    help="renumber every episode's track from structure.json. Without it, existing "
+                         "episodes keep their published track (<itunes:episode>).")
+    ap.add_argument("--backup", action="store_true",
+                    help=f"snapshot podcasts/ and podcasts_web/ into a new timestamped folder under "
+                         f"{BACKUP_ROOT} (incremental; with --dry-run, lists only). Combine with "
+                         f"nothing but --dry-run.")
     args = ap.parse_args()
+    sys.stdout.reconfigure(line_buffering=True)  # keep stdout and the stderr refusals in order
+
+    if args.backup:
+        others = [n for n, v in (("--force", args.force), ("--limit", args.limit),
+                                 ("--retag", args.retag), ("--exclude", args.exclude),
+                                 ("--move-audio-path", args.move_audio_path),
+                                 ("--renumber", args.renumber)) if v]
+        if others:
+            print(f"⚠️  --backup does nothing else; it cannot be combined with {others}",
+                  file=sys.stderr)
+            return 2
+        return cmd_backup(args.dry_run)
 
     if not MASTERS.is_dir():
         raise SystemExit(f"masters not found: {MASTERS}")
@@ -199,8 +452,15 @@ def main() -> int:
     by_norm_title = {norm(t): (d, l, t, n) for d, l, t, n in order}
     by_norm_id = {norm(d.split("/")[-1]): (d, l, t, n) for d, l, t, n in order}
     total_docs = len(order)
+    known_ids = {r[0] for r in order}
 
-    masters = [p for p in sorted(MASTERS.rglob("*.m4a")) if "_bitrate_samples" not in str(p)]
+    bad = [d for d in args.exclude + args.move_audio_path if d not in known_ids]
+    if bad:
+        print(f"⚠️  unknown doc_id(s), not in structure.json: {bad}", file=sys.stderr)
+        return 2
+
+    masters = [p for p in sorted(MASTERS.rglob("*.m4a"))
+               if "_bitrate_samples" not in str(p) and not is_temp(p)]
 
     pairs, unmatched = [], []
     for m in masters:
@@ -222,51 +482,192 @@ def main() -> int:
             print("      " + str(m.relative_to(MASTERS)), file=sys.stderr)
         return 2
 
+    dupes = sorted({r[0] for _, r in pairs if sum(1 for _, q in pairs if q[0] == r[0]) > 1})
+    if dupes:
+        print(f"⚠️  more than one master matches {dupes} — refusing to choose", file=sys.stderr)
+        return 2
+
+    status = load_queue_status()
+    existing = load_site_data()
+    old_manifest = load_web_manifest()
+    excluded = set(args.exclude)
+    struct_track = {d: n for d, _l, _t, n in order}
+
+    def feed_track(doc_id: str) -> int:
+        """Existing episodes keep their published track unless --renumber."""
+        if not args.renumber and doc_id in existing and "track" in existing[doc_id]:
+            return existing[doc_id]["track"]
+        return struct_track[doc_id]
+
+    # ---- the publish gate: decide every master BEFORE anything is written ----------
+    plan, refused, legacy = [], [], 0
+    for master, row in pairs:
+        doc_id = row[0]
+        rel = master.relative_to(MASTERS)
+        dest = OUT / rel
+        st = status.get(doc_id, "(no queue state)")
+        new, how = master_identity(master, dest, rel, old_manifest.get(doc_id))
+        if doc_id in excluded:
+            plan.append((master, row, "EXCLUDED", f"--exclude; queue status {st}"))
+            continue
+        if st == "blocked":
+            refused.append((rel, doc_id, "queue status is 'blocked' (rejected episode)"))
+            continue
+        if new and st != "accepted":
+            refused.append((rel, doc_id, f"NEW master ({how}) and queue status is {st!r}, not 'accepted'"))
+            continue
+        if args.retag and new:
+            # ⚠️ A retag remuxes the OLD web output, never the master. On a new master it
+            # would publish the old audio under fresh tags, and the newer output mtime would
+            # then make the new master read as already published — lost silently.
+            refused.append((rel, doc_id, f"--retag on a NEW master ({how}) would retag the OLD "
+                                         f"encode and hide the new master; encode it without --retag"))
+            continue
+        if "legacy" in how:
+            legacy += 1
+        if args.retag:
+            action = "retag"
+        elif new or args.force:
+            action = "encode"
+        else:
+            action = "skip"
+        plan.append((master, row, action, f"queue status {st}; {'new' if new else 'unchanged'} master, {how}"))
+
+    action_of = {row[0]: a for _m, row, a, _w in plan if a != "EXCLUDED"}
+
+    # ---- --move-audio-path only means something for a rewritten episode -------------
+    misused = [d for d in args.move_audio_path if action_of.get(d) not in ("encode", "retag")]
+    if misused:
+        print(f"⚠️  --move-audio-path is only allowed for an episode this run encodes or retags; "
+              f"not for {misused} ({[action_of.get(d, 'not processed') for d in misused]})",
+              file=sys.stderr)
+        return 2
+
+    # ---- path-preservation gate ------------------------------------------------------
+    path_refused = []
+    for doc_id, action in action_of.items():
+        if action in ("encode", "retag") and doc_id in existing:
+            kept = existing[doc_id].get("audio", default_audio_path(doc_id))
+            if kept != default_audio_path(doc_id) and doc_id not in args.move_audio_path:
+                path_refused.append((doc_id, kept))
+
+    print(f"build_podcast_audio: {len(pairs)} master(s) matched to {total_docs} document(s)"
+          f"{'  — DRY RUN, nothing will be written' if args.dry_run else ''}")
+    print(f"queue state: {QUEUE_STATE}"
+          f"{'' if QUEUE_STATE.exists() else '  (MISSING — every new master will be refused)'}")
+    print()
+    print("Per master, in site order:")
+    rows = [(row[3], row[0], str(master.relative_to(MASTERS)), action, why)
+            for master, row, action, why in plan]
+    rows += [(struct_track[d], d, str(rel), "REFUSED", why) for rel, d, why in refused]
+    for n, d, rel, action, why in sorted(rows):
+        print(f"  [{n:2d}] {action:8s} {d:45s} {rel}  ({why})")
+    if legacy:
+        print(f"\nℹ️  {legacy} master(s) have NO recorded identity in manifest.json (encoded before "
+              f"records were kept), so 'unchanged' was decided by mtime alone. A re-encode "
+              f"records size, mtime and sha256.")
+
     claimed = {row[0] for _, row in pairs}
     missing = [r for r in order if r[0] not in claimed]
-
-    print(f"build_podcast_audio: {len(pairs)} master(s) matched to {total_docs} document(s)")
     if missing:
-        print(f"⚠️  {len(missing)} document(s) have NO audio — recorded, not an error:")
+        print(f"\n{len(missing)} document(s) have NO master — recorded, not an error:")
         for d, _l, t, _n in missing:
             print(f"      {t}  ({d})")
 
-    if args.limit:
-        pairs = pairs[: args.limit]
+    if refused:
+        print("\n⚠️⚠️  REFUSED — these masters must NOT be published, and the run STOPS here:",
+              file=sys.stderr)
+        for rel, d, why in refused:
+            print(f"      {d:45s} {rel}\n          {why}", file=sys.stderr)
+        print("    Nothing has been written. To publish everything else, name each one:\n"
+              "      " + " ".join(f"--exclude {d}" for _r, d, _w in refused) + "\n"
+              "    An excluded document keeps its existing feed entry unchanged. A new master is\n"
+              "    publishable only once its queue status is 'accepted' (scripts/podcast_queue.py\n"
+              "    set-status), which is set only after transcript review has passed.",
+              file=sys.stderr)
+    if path_refused:
+        print("\n⚠️⚠️  REFUSED — audio path would split from the upload path:", file=sys.stderr)
+        for d, kept in path_refused:
+            print(f"      {d}: feed serves {kept}, but upload_podcast_audio.sh uploads to "
+                  f"{default_audio_path(d)}.\n"
+                  f"          Rewriting it would declare NEW bytes for the OLD file. Fix the upload\n"
+                  f"          script to read manifest 'audio', or pass --move-audio-path {d}\n"
+                  f"          (guid is kept; the enclosure URL changes).", file=sys.stderr)
+    if refused or path_refused:
+        return 2
 
-    manifest, done, skipped = [], 0, 0
-    for master, (doc_id, layer_title, doc_title, track) in pairs:
+    # ---- backup gate: same answer in a dry run and a real one ------------------------
+    no_backup = [m.relative_to(MASTERS) for m, _row, a, _w in plan
+                 if a == "encode" and backed_up(m.relative_to(MASTERS), "podcasts", m) is None]
+    if no_backup:
+        print(f"\n⚠️⚠️  REFUSED — no backup (same size and mtime) of these masters under {BACKUP_ROOT}:",
+              file=sys.stderr)
+        for rel in no_backup:
+            print(f"      {rel}", file=sys.stderr)
+        print("    `podcasts/` may be the only copy. Run first:\n"
+              "      python3 scripts/build_podcast_audio.py --backup", file=sys.stderr)
+        if not args.dry_run:
+            return 2
+
+    run_backup = BACKUP_ROOT / f"{stamp()}-before-build"
+    if not args.dry_run:
+        assert_outside_repo(BACKUP_ROOT)
+
+    if args.limit:
+        live = [p for p in plan if p[2] != "EXCLUDED"][: args.limit]
+        plan = live + [p for p in plan if p[2] == "EXCLUDED"]
+
+    manifest, done, skipped, would = [], 0, 0, 0
+    for master, (doc_id, layer_title, doc_title, _struct_n), action, _why in plan:
+        if action == "EXCLUDED":
+            continue
+        track = feed_track(doc_id)
         rel = master.relative_to(MASTERS)
         dest = OUT / rel
-        dest.parent.mkdir(parents=True, exist_ok=True)
+        old = old_manifest.get(doc_id) or {}
+        record = {k: old[k] for k in ("master_size", "master_mtime", "master_sha256")
+                  if k in old and old.get("file") == str(rel)}
 
-        if args.retag:
-            # Container-only rewrite: the SAME AAC stream under new tags. Via a temp
-            # file because ffmpeg cannot read and write one path at once.
-            if not dest.exists():
-                print(f"⚠️  --retag: no output to retag, run without it first: {rel}", file=sys.stderr)
-                return 2
-            tmp = dest.with_suffix(".retag.m4a")
+        if action in ("encode", "retag") and args.dry_run:
+            would += 1
+            manifest.append({"doc_id": doc_id, "title": doc_title, "section": layer_title,
+                             "track": track, "file": str(rel), "bytes": None,
+                             "duration_s": None, "bitrate": None,
+                             "url": f"{SITE}/{doc_id}/"})
+            continue
+
+        if action in ("encode", "retag"):
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            # ⚠️ podcasts_web/ can hold the ONLY copy of a published encode (the masters
+            # behind On-Ice Communication and Rink Map were overwritten in September), so
+            # never overwrite one without copying it out first.
+            if dest.exists():
+                copy_verified(dest, run_backup / "podcasts_web" / rel)
+
+        if action == "skip":
+            skipped += 1
+        else:
+            # Write to a temp file in the SAME directory, check it, then replace(): an
+            # interrupted run must never leave a truncated file under the published name.
+            tmp = dest.with_name(dest.stem + (".retag.m4a" if action == "retag" else ".partial.m4a"))
+            if action == "retag":
+                src_args = ["-i", str(dest), "-map", "0:a:0", "-c", "copy", "-map_metadata", "-1"]
+            else:
+                src_args = ["-i", str(master), "-map", "0:a:0", "-c:a", "aac", "-b:a", BITRATE,
+                            "-ac", CHANNELS, "-ar", SAMPLE_RATE]
+                record = master_record(master)
             subprocess.run(
-                ["ffmpeg", "-v", "error", "-y", "-i", str(dest),
-                 "-map", "0:a:0", "-c", "copy", "-map_metadata", "-1",
+                ["ffmpeg", "-v", "error", "-y", *src_args,
                  *tags(doc_id, layer_title, doc_title, track, total_docs),
                  "-movflags", "+faststart", str(tmp)],
                 check=True)
+            dur = float(probe(tmp).get("duration", 0) or 0)
+            if dur <= 0:
+                tmp.unlink(missing_ok=True)
+                print(f"⚠️  {action} produced no playable audio for {rel}; stopping, "
+                      f"{dest.name} left as it was", file=sys.stderr)
+                return 2
             tmp.replace(dest)
-            done += 1
-        elif dest.exists() and not args.force and dest.stat().st_mtime >= master.stat().st_mtime:
-            skipped += 1
-        else:
-            cmd = [
-                "ffmpeg", "-v", "error", "-y", "-i", str(master),
-                "-map", "0:a:0", "-c:a", "aac", "-b:a", BITRATE,
-                "-ac", CHANNELS, "-ar", SAMPLE_RATE,
-                *tags(doc_id, layer_title, doc_title, track, total_docs),
-                "-movflags", "+faststart",
-                str(dest),
-            ]
-            subprocess.run(cmd, check=True)
             done += 1
 
         info = probe(dest)
@@ -280,46 +681,157 @@ def main() -> int:
             "duration_s": round(float(info.get("duration", 0)), 1),
             "bitrate": int(info.get("bit_rate", 0)),
             "url": f"{SITE}/{doc_id}/",
+            **record,
         })
-        print(f"  [{track:2d}/{total_docs}] {doc_title[:44]:44s} {dest.stat().st_size/1e6:6.1f} MB")
+        if not args.dry_run:
+            print(f"  [{track:2d}/{total_docs}] {doc_title[:44]:44s} {dest.stat().st_size/1e6:6.1f} MB")
 
-    manifest.sort(key=lambda r: r["track"])
-    (OUT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+    # ---- carry forward every existing feed entry this run did not produce ------------
+    processed = set(action_of)
+    carried, carry_problems = [], []
+    for doc_id, ep in existing.items():
+        if doc_id in processed:
+            continue
+        old = old_manifest.get(doc_id)
+        file = None
+        if old and old.get("file"):
+            f = OUT / old["file"]
+            if f.is_file() and f.stat().st_size == ep.get("bytes"):
+                file = old["file"]
+        if file is None:
+            # Identify the local file by EXACT byte length — the very number the feed's
+            # <enclosure length> declares, so a match is the file the feed describes.
+            hits = [f for f in OUT.rglob("*.m4a")
+                    if not is_temp(f) and f.stat().st_size == ep.get("bytes")]
+            if len(hits) == 1:
+                file = str(hits[0].relative_to(OUT))
+        if file is None:
+            carry_problems.append(doc_id)
+        carried.append((doc_id, ep, file))
+        if doc_id not in known_ids:
+            print(f"⚠️  feed entry {doc_id} is not in structure.json — carried forward unchanged")
 
-    # The tracked, audio-free half. `audio` is the published path: `/audio/<doc_id>.m4a`,
-    # which is the convention `site/src/consts.ts` already documents and is pure ASCII —
-    # Apple requires "only ASCII filenames and URLs that include a-z, A-Z, or 0-9", and
-    # the master filenames contain spaces, so the served name is NOT the file name.
-    if len(manifest) == total_docs:
-        SITE_DATA.write_text(json.dumps({
-            "note": ("Generated by scripts/build_podcast_audio.py. Metadata only — the audio "
-                     "itself is gitignored and uploaded to the bucket out of band. Byte sizes "
-                     "and durations are read from the encoded files and are what the podcast "
-                     "feed's <enclosure> elements declare."),
-            "episodes": [{
-                "doc_id": r["doc_id"],
-                "title": r["title"],
-                "section": r["section"],
-                "track": r["track"],
-                "bytes": r["bytes"],
-                "duration_s": r["duration_s"],
-                "audio": f"/audio/{r['doc_id']}.m4a",
-            } for r in manifest],
-        }, indent=2) + "\n")
-        print(f"site data: {SITE_DATA.relative_to(REPO)} ({len(manifest)} episodes)")
-    else:
-        # ⚠️ A PARTIAL RUN MUST NOT REWRITE THE TRACKED FILE. `--limit` exists for trial
-        # runs; letting one truncate the feed's source data to a handful of episodes is
-        # exactly the silent, mechanically-clean breakage this repository keeps recording.
-        print(f"⚠️  partial run ({len(manifest)} of {total_docs}) — {SITE_DATA.name} NOT rewritten")
+    def site_entry(r: dict) -> dict:
+        prev = existing.get(r["doc_id"], {})
+        e = {}
+        if "guid" in prev:
+            e["guid"] = prev["guid"]          # NEVER drop a pinned guid
+        audio = prev.get("audio", default_audio_path(r["doc_id"]))
+        if r["doc_id"] in args.move_audio_path:
+            audio = default_audio_path(r["doc_id"])
+        e.update({"doc_id": r["doc_id"], "title": r["title"], "section": r["section"],
+                  "track": r["track"], "bytes": r["bytes"], "duration_s": r["duration_s"],
+                  "audio": audio})
+        return e
 
-    tot_b = sum(r["bytes"] for r in manifest)
-    tot_s = sum(r["duration_s"] for r in manifest)
-    src_b = sum(m.stat().st_size for m, _ in pairs)
-    print(f"\n{'retagged' if args.retag else 'encoded'} {done}, skipped {skipped}")
-    print(f"masters {src_b/1e9:.2f} GB  ->  web {tot_b/1e9:.2f} GB "
-          f"({tot_b/src_b*100:.0f}%)  ·  {tot_s/3600:.1f} h")
+    new_eps = [site_entry(r) for r in manifest]
+    for doc_id, ep, _file in carried:
+        e = dict(ep)
+        if args.renumber and doc_id in struct_track:
+            e["track"] = struct_track[doc_id]
+        new_eps.append(e)
+    new_eps.sort(key=lambda e: e["track"])
+
+    # ---- the feed diff, field by field -----------------------------------------------
+    print("\nFeed entries (site/src/data/podcast.json), planned vs existing:")
+    new_by = {e["doc_id"]: e for e in new_eps}
+    for doc_id in sorted(set(existing) | set(new_by), key=lambda d: struct_track.get(d, 999)):
+        a, b = existing.get(doc_id), new_by.get(doc_id)
+        if a is None:
+            print(f"  + ADDED    {doc_id}  guid=learn-ice-hockey:{doc_id} (default)  "
+                  f"audio={b['audio']}  track={b['track']}")
+            continue
+        if b is None:
+            print(f"  - DROPPED  {doc_id}  ⚠️ an episode would leave the feed")
+            continue
+        changes = []
+        for k in ("guid", "audio", "track", "title", "section", "bytes", "duration_s"):
+            if a.get(k) != b.get(k):
+                tag = "  ⚠️ RE-DELIVERY RISK" if k in ("guid", "audio") else ""
+                val = "(after encode)" if b.get(k) is None else b.get(k)
+                changes.append(f"{k}: {a.get(k)} -> {val}{tag}")
+        how = action_of.get(doc_id, "carried")
+        print(f"  {'=' if not changes else '~'} {how:9s} {doc_id}"
+              + (f"  guid={a['guid']} (pinned, kept)" if "guid" in a and a.get("guid") == b.get("guid") else "")
+              + ("" if not changes else "\n        " + "\n        ".join(changes)))
+
+    renumbered = [d for d in existing if d in new_by and existing[d].get("track") != new_by[d].get("track")]
+    if renumbered:
+        print(f"\n⚠️  {len(renumbered)} existing episode(s) change track number (--renumber), which the "
+              f"feed emits as <itunes:episode> and <itunes:order>. Not a re-delivery (guid decides "
+              f"that), but podcast apps will show new episode numbers.")
+    tracks = [e["track"] for e in new_eps]
+    clashes = sorted({t for t in tracks if tracks.count(t) > 1})
+    if clashes:
+        print(f"\n⚠️⚠️  track number(s) {clashes} would be used by more than one episode. A new "
+              f"episode takes its structure.json track; existing ones keep theirs. Decide on "
+              f"--renumber (renumbers every episode) before publishing.", file=sys.stderr)
+
+    if carry_problems:
+        print("\n⚠️  carried-forward feed entries with NO local web file of matching byte length:",
+              file=sys.stderr)
+        for d in carry_problems:
+            print(f"      {d}", file=sys.stderr)
+
+    if args.dry_run:
+        print(f"\nDRY RUN: would encode/retag {would}, skip {sum(1 for p in plan if p[2] == 'skip')}, "
+              f"exclude {len(excluded)}, carry forward {len(carried)}. "
+              f"Nothing written; {SITE_DATA.relative_to(REPO)} and manifest.json untouched.")
+        if no_backup or carry_problems or clashes:
+            print("⚠️  a real run with these arguments would REFUSE (see above).", file=sys.stderr)
+            return 2
+        return 0
+
+    if args.limit:
+        # ⚠️ A PARTIAL RUN MUST NOT REWRITE EITHER TRACKED-SHAPE FILE. `--limit` exists for
+        # trial runs; letting one truncate the feed's source data (or the upload manifest)
+        # to a handful of episodes is exactly the silent, mechanically-clean breakage this
+        # repository keeps recording.
+        print(f"⚠️  partial run (--limit) — {SITE_DATA.name} and manifest.json NOT rewritten; "
+              f"they no longer describe {OUT.name}/ until a full run.", file=sys.stderr)
+        return 1
+    if carry_problems or clashes:
+        print(f"⚠️  {SITE_DATA.name} and manifest.json NOT rewritten (see above)", file=sys.stderr)
+        return 2
+
+    out_manifest = []
+    for r in manifest:
+        r = dict(r)
+        r["audio"] = site_entry(r)["audio"]
+        out_manifest.append(r)
+    for doc_id, ep, file in carried:
+        old = old_manifest.get(doc_id) or {}
+        rec = {k: old[k] for k in ("master_size", "master_mtime", "master_sha256")
+               if k in old and old.get("file") == file}
+        out_manifest.append({"doc_id": doc_id, "title": ep.get("title"), "section": ep.get("section"),
+                             "track": ep.get("track") if not args.renumber
+                             else struct_track.get(doc_id, ep.get("track")),
+                             "file": file, "bytes": ep.get("bytes"),
+                             "duration_s": ep.get("duration_s"),
+                             "url": f"{SITE}/{doc_id}/", "audio": ep.get("audio"), **rec})
+    out_manifest.sort(key=lambda r: r["track"])
+
+    old_manifest_path = OUT / "manifest.json"
+    if old_manifest_path.exists():
+        copy_verified(old_manifest_path, run_backup / "podcasts_web" / "manifest.json")
+    write_json_atomic(old_manifest_path, out_manifest)
+    write_json_atomic(SITE_DATA, {
+        "note": ("Generated by scripts/build_podcast_audio.py. Metadata only — the audio "
+                 "itself is gitignored and uploaded to the bucket out of band. Byte sizes "
+                 "and durations are read from the encoded files and are what the podcast "
+                 "feed's <enclosure> elements declare."),
+        "episodes": new_eps,
+    })
+    print(f"site data: {SITE_DATA.relative_to(REPO)} ({len(new_eps)} episodes)")
+
+    tot_b = sum(r["bytes"] for r in out_manifest)
+    tot_s = sum(r["duration_s"] for r in out_manifest)
+    print(f"\n{'retagged' if args.retag else 'encoded'} {done}, skipped {skipped}, "
+          f"carried forward {len(carried)}")
+    print(f"web {tot_b/1e9:.2f} GB  ·  {tot_s/3600:.1f} h")
     print(f"manifest: {OUT.relative_to(REPO)}/manifest.json")
+    if run_backup.exists():
+        print(f"overwritten files backed up to: {run_backup}")
     return 0
 
 
