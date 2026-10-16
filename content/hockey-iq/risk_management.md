@@ -780,7 +780,7 @@ Action: Turn and skate to the middle of the ice between the puck and your net �
 Action: Get to the inside and take away the middle; deny the pass to the slot and a scoring chance becomes a shot from the outside
 Action: Talk — one word, "turnover", "back", "I'm high", reorganises four teammates who are still reading the play
 Never: Foul the puck carrier from behind. Backcheck hard instead — a trip, hook, hold or slash invites a penalty shot
-Never: Check anyone from behind — if you see their numbers, pull up, play the puck. A hit on the back ejects in five books of six (IIHF if reckless); USA Hockey if reckless, head first or forceful at boards
+Never: Check from behind — see their numbers, pull up, play the puck. A hit that stays on the back ejects in five books of six (IIHF if reckless); USA Hockey if reckless, head first or forceful at boards
 Rule: A hit that stays on the back ends your game in five books of six — no minor in NHL, IIHF or PWHL 43.2 (IIHF 43.3: if judged reckless); Hockey Canada 7.5(a), (e) and CARHA 53(a) a minor plus game misconduct. Only USA Hockey 608(a) goes lower, never if reckless, head first, or forceful at the boards
 Rule: USA Hockey's Casebook requires a minor plus a misconduct for a push "not near the boards" or a minimal-contact "pinch"; a major plus game misconduct or a match "must be called" for a forceful check on one "standing along the boards" (608, Situation 1); for a reckless one, plan on a match (602(a))
 Rule: Under USA Hockey a check from behind still ends your game where it "recklessly endangers an opponent, or causes them to go head first into the boards or goal frame" — 608(b) mandates the major plus game misconduct, and plan on a match (602(a)); its Casebook adds a forceful check at the boards

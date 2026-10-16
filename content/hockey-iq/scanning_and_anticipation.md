@@ -353,7 +353,7 @@ Action: As a goaltender, move your head to look around a screen rather than over
 Rule: A no-contact screen outside the crease is legal and the goal stands — NHL Table 14 and IIHF 2025/26 Table 16, Situations 5C and 5E — unless you stop the goalie moving in the crease (Rule 69.1); stand off the line too, as most books count it as crease
 Rule: Getting in a returning goalie's way is interference — NHL and IIHF 56.2(i), PWHL 57.2(i), Hockey Canada 8.3(i), CARHA 66(a); USA Hockey 625 Sit. 9: no goal, a minor; deliberate contact is charging (607), at least a minor plus misconduct; reckless: major and game misconduct, plan on a match
 Rule: Stay off a goaltender outside the crease: they are not "fair game" there — NHL and IIHF 69.4, PWHL 71.4, Hockey Canada 8.5, CARHA 52(b) and USA Hockey 607(d) each call for a penalty for unnecessary contact, and NHL and IIHF 69.2 and PWHL 71.2 price deliberate contact at a minor or a major
-Rule: Never charge a goaltender, in or out of the crease — Hockey Canada 8.5(b): a major and a game misconduct; CARHA 52(b) the same in the crease or on injury, 66(b) a minor or ejecting major for deliberate contact anywhere; NHL, IIHF and PWHL 42 and USA Hockey 607 can reach that pair too
+Rule: Never charge a goaltender, in or out of the crease — mandatory major and game misconduct: Hockey Canada 8.5(b), CARHA 52(b) in the crease or on any injury, USA Hockey 607(b) when reckless; CARHA 66(b) a minor or ejecting major for deliberate contact anywhere; NHL, IIHF, PWHL 42 can reach that pair
 ```
 
 Whether you are a goaltender or a defender trying to block a shot, the cues are similar.
