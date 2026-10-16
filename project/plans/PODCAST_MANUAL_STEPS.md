@@ -1,342 +1,308 @@
-# Podcast: the steps only you can do
+# Podcasts: the steps only you can do
 
-**Purpose.** Everything in the podcast pipeline that needs a human — a login, a card, a
-browser, or a pair of ears. Each step says what to click, what to paste, what "done" looks
-like, and what it unblocks. Nothing here needs you to search for anything.
+There are two podcast formats.
 
-**Scope.** This file is the manual worklist. The engineering state, the open defects and the
-history live in [`OPEN_ITEMS.md`](OPEN_ITEMS.md) (podcast section) and
-[`../reviews/podcast_automation_plan_consolidated_2026-09-20.md`](../reviews/podcast_automation_plan_consolidated_2026-09-20.md).
-Do not duplicate those here.
+- **Style A, "Discussion".** The two-host NotebookLM episodes. You make these by hand in NotebookLM, following Part A below. The coordinator then checks each one and publishes it.
+- **Style B, "Playing principles".** Single-voice scripted episodes. The coordinator writes each script from one document, has it reviewed, and synthesises it with ElevenLabs. The voice is `ShSKKFA7dFwxYhKZGUoY` on model `eleven_v4`, at stability 30% and similarity 50%. Your part is Part B: log in, so the coordinator can read the ElevenLabs key, and then listen.
 
-**Where the project is.** Two scripted single-voice episodes (`skating`, 17.7 min;
-`equipment`, 85.4 min) are fully synthesised through Polly generative `Amy` and cleared by
-text review. **Nobody has listened to either by ear.** The engine was picked on price and one
-sample; four other vendors were priced but never heard. So the two things a human unblocks are
-the **ear test** (steps 1–3) and the **listening pass** (step 4).
+The engine ear test that this file used to describe is finished. ElevenLabs `eleven_v4` was chosen on 14 October 2026. The old version of this file is in the git history.
 
 ---
 
-## Step 0 — AWS login (5 minutes, do this first, it expires)
+# Part B — Style B: log in, then listen
 
-⚠️ **Checked 22 September 2026: the `ice-hockey` profile's SSO token is EXPIRED.** Every
-Polly command fails with `Token has expired and refresh failed` until you re-login. This is
-the one step that silently blocks everything else, and it will expire again.
+**B1. Log in to AWS.** The ElevenLabs key is held in AWS Secrets Manager. Your login expires after a few hours, and nothing can be synthesised without it.
 
 ```bash
 aws sso login --profile ice-hockey
 ```
 
-A browser tab opens at **https://d-9c674c1c64.awsapps.com/start** — approve the device code it
-shows you.
-
-**Done looks like:**
+Approve the device code in the browser tab that opens. To check it worked, run the command below. It should print your account and role, not an error.
 
 ```bash
 AWS_PROFILE=ice-hockey aws sts get-caller-identity
 ```
-printing your account and role, not an error. (The account id is in `~/.aws/config`
-under `[profile ice-hockey]`; it is deliberately not written down here — this repository is
-public, and `check_secrets.py` flags it.)
 
-**Unblocks:** Polly — the engine the two existing episodes were made with, and the baseline
-every other engine in step 2 is compared against.
+**B2. Listen to the example episode before any others are made.** The coordinator will tell you where the file is. Listen for three things:
+- **Pace and voice.** Is 30% stability too loose or too flat over a long episode?
+- **The joins.** The episode is synthesised in pieces and stitched together. Can you hear the seams?
+- **Content and teaching.** Does it teach you how to play?
 
----
-
-## Step 1 — decide how far you want the ear test to go
-
-⚠️ **Before you sign up for anything: there is already Polly audio on this machine that nobody
-recorded in any plan, and it answers a narrower question for free.**
-`~/Downloads/polly-voice-test/` (18 September) holds the *same* passage — `uk_rules` chunk 010 —
-read three times by Amy, once on each Polly engine tier:
-
-```
-uk_rules_010_Amy_standard.mp3     2:45
-uk_rules_010_Amy_neural.mp3       2:55
-uk_rules_010_Amy_generative.mp3   3:07
-```
-
-Three minutes of listening tells you whether the **generative** tier the two episodes were built
-on is audibly worth its price over `neural` — a question entirely separate from whether a
-different vendor beats Polly, and one you can answer right now with no login and no signup.
-(`polly-voice-test/dialogue/` is the abandoned two-speaker experiment; the single-voice decision
-of 18 September superseded it, so ignore it unless you want to hear why it was dropped.)
-
-Step 2 compares up to five engines on one identical 475-word passage. **Polly alone costs you
-nothing extra and needs no new account.** Each additional engine is a separate signup.
-
-| Engine | Account needed | Worth it because |
-|---|---|---|
-| Polly generative `Amy` | already have it (step 0) | the incumbent — the baseline everything else is judged against |
-| ElevenLabs | new signup; has a free tier | the quality benchmark every other vendor markets itself against, and the one claim this project has never been able to check |
-| OpenAI `gpt-4o-mini-tts` | new signup; **card required** | the only engine here that takes a **tone instruction** in the request — `tts_sample.py` already sends one |
-| Google Gemini-TTS | new signup; free tier, no card | free to try, and the same key covers Chirp 3 HD |
-| Google Chirp 3 HD | the Gemini key **plus** a billing-enabled GCP project with the API switched on | Google's premium en-GB line |
-
-⚠️ **Only two vendors have a price here, and they are priced two DIFFERENT WAYS — read the next
-paragraph before comparing them.** Every other vendor's price would be their marketing, restated
-from memory, and prices move. **Each signup step below links that vendor's own pricing page; read
-it there.**
-
-- **Polly generative — $0.028 per minute of finished audio.** ✅ **MEASURED, from the two real
-  episodes, not from a rate card.** That puts the 475-word sample at roughly **8 cents**.
-- **ElevenLabs — see the costing below.** ⚠️ **NOT measured: a published rate card multiplied by a
-  character count.** Nobody has rendered a minute of this corpus on it.
-
-⚠⚠ **SO THE TWO NUMBERS ARE NOT LIKE FOR LIKE.** One is what this project actually paid; the other
-is what a price list says it would pay. **Treat the ratio as an order of magnitude, not a quote.**
-
-### ElevenLabs costing — the whole corpus
-
-**The two inputs, both reproducible:**
-
-| input | value | where it comes from |
-|---|---|---|
-| corpus size | **7,257,563 billed characters** (39 documents, 3,337 chunks) | `python3 scripts/md_to_speech.py --dry-run` |
-| audio length | **107.3 hours ≈ 6,438 minutes** at 220 wpm | `python3 scripts/check_counts.py` |
-| credit conversion | **1 text character = 1 credit** | elevenlabs.com/pricing, *"For V2 Multilingual models, 1 text character equals 1 credit"* |
-
-**So the whole corpus is 7,257,563 credits.** Published plans, fetched **23 September 2026** —
-⚠️ **re-read the page rather than trusting this table; the whole point of the paragraph above is
-that prices move:**
-
-| plan | $/month | credits/month | $/credit | months to cover the corpus | total |
-|---|---|---|---|---|---|
-| Starter | 6 | 30,000 | 0.000200 | 242 | $1,452 |
-| Creator | 22 | 121,000 | 0.000182 | 60 | $1,320 |
-| **Pro** | **99** | **600,000** | **0.000165** | **13** | **$1,287** |
-| Scale | 299 | 1,800,000 | 0.000166 | 5 | $1,495 |
-| Business | 990 | 6,000,000 | 0.000165 | 2 | $1,980 |
-
-⚠️⚠️ **NO OVERAGE RATE IS PUBLISHED ON THAT PAGE.** It states plan allowances and nothing about the
-price of a credit beyond them, so **every total above assumes you buy whole months and waste the
-remainder.** At the best published rate the corpus is **$1,198 of credit value** — but **no plan
-sells that bundle**, and the cheapest real path is the one that wastes least, not the one with the
-lowest headline.
-
-**Against the one measured figure:** Polly generative at $0.028/min × 6,438 minutes =
-**$180**. ⚠️ **ElevenLabs is roughly 6.6× that at its best published rate** — ⚠️ **subject to the
-not-like-for-like warning above.**
-
-✅ **AND THE COMPARISON SAMPLE IS FREE.** At 5.124 billed characters per word the 475-word passage
-is **~2,434 credits**, and the free tier is **10,000 credits/month** — it fits four times over.
-**Running step 2's ElevenLabs comparison costs nothing and needs no card.**
-
-**The minimum useful test is Polly + one challenger.** If you only want to do one signup, do
-**ElevenLabs** — it is the one whose quality claim the project has never been able to check.
+Tell the coordinator what you heard, in your own words. The settings are adjusted from that, and then the rest of the episodes are made.
 
 ---
 
-## Step 2 — get the API keys you chose
+# Part A — Style A: making the NotebookLM episodes by hand
 
-Set up only the ones you picked. Each is a signup, a key, and one line in a file.
-
-### 2a. ElevenLabs
-
-1. Sign up: **https://elevenlabs.io/sign-up**
-2. Key: **https://elevenlabs.io/app/developers/api-keys** → *Create API key* → copy it.
-3. ⚠️ **Also pick a British voice.** The script's default is the public "Rachel", who is
-   American — comparing her against en-GB `Amy` tells you about the accent, not the engine.
-   Browse **https://elevenlabs.io/app/voice-library**, filter to English (UK), open a voice
-   you like, and copy its **voice ID**. That goes in `ELEVENLABS_VOICE_ID` below.
-   ✅ **ALREADY CHOSEN — the owner's preferred voice is `ShSKKFA7dFwxYhKZGUoY`** (set 14 October 2026, replacing `L0Dsvb3SLTyegXwtm47J`). Use that unless
-   you are deliberately re-auditioning. ⚠️ **A voice id is an identifier, not a credential** — it
-   belongs in the environment beside the key, but it is not a secret and does not need the secret
-   store.
-4. ✅ **The API key is already stored**, in AWS Secrets Manager at
-   `ice-hockey-production/elevenlabs-api-key` (eu-west-2, account `ice-hockey`). Retrieve it into
-   the environment rather than pasting it anywhere:
-   ```bash
-   export ELEVENLABS_API_KEY=$(AWS_PROFILE=ice-hockey AWS_REGION=eu-west-2 \
-     aws secretsmanager get-secret-value \
-     --secret-id ice-hockey-production/elevenlabs-api-key \
-     --query SecretString --output text)
-   export ELEVENLABS_VOICE_ID=ShSKKFA7dFwxYhKZGUoY
-   ```
-   ⚠️ **It is NOT in Terraform.** `infra/` does not manage it, so it is unmanaged drift, tagged
-   `ManagedBy=manual`. Importing it into state is a separate decision.
-5. Pricing, and the source for the costing above: **https://elevenlabs.io/pricing**
-   ⚠️ **Re-read it rather than trusting the table — it was fetched 23 September 2026.**
-
-### 2b. OpenAI
-
-1. Sign up / sign in: **https://platform.openai.com/**
-2. A **payment method is required** before the API will answer. ⚠️ **API billing is a separate
-   system from a ChatGPT subscription — a ChatGPT Plus account does not give you API access**,
-   which is OpenAI's own documented position
-   (**https://help.openai.com/en/articles/9039756-billing-settings-in-chatgpt-vs-platform**:
-   each product's charges and billing history are managed in its own settings). Add a payment
-   method at **https://platform.openai.com/settings/organization/billing/overview**
-3. Key: **https://platform.openai.com/api-keys** → *Create new secret key* → copy it. It is
-   shown once.
-4. Pricing: **https://openai.com/api/pricing/**
-
-### 2c. Google Gemini-TTS (the free-tier one)
-
-1. Go to **https://aistudio.google.com/apikey**, sign in with a Google account.
-2. *Create API key* → copy it.
-3. Pricing and free-tier limits: **https://ai.google.dev/gemini-api/docs/pricing**
-
-### 2d. Google Chirp 3 HD (only if you want the premium Google voice)
-
-Uses the **same** `GOOGLE_API_KEY` as 2c — per `scripts/tts_sample.py`'s own note, the key
-works here once the API is switched on. That switch is the extra step:
-
-1. **https://console.cloud.google.com/apis/library/texttospeech.googleapis.com** → select the
-   project your key belongs to → **Enable**.
-2. Billing must be enabled on that project. Pricing:
-   **https://cloud.google.com/text-to-speech/pricing**
-3. If step 3's run reports `google_cloud FAILED — HTTP 403`, this is the step that was missed.
-
----
-
-## Step 3 — put the keys somewhere safe and run the comparison
-
-⚠️ **Never type a key directly on a command line** — it lands in your shell history and in
-`ps`, where any process on the machine can read it. `tts_sample.py` reads the environment only
-and never prints a key.
-
-Keep them **outside the repository**, in your home directory. ⚠️ **Create the file in an
-editor, not by pasting a heredoc into the terminal** — a heredoc puts every key in your shell
-history, which is the exact thing the warning above is about:
-
-```bash
-touch ~/.ice-hockey-tts.env && chmod 600 ~/.ice-hockey-tts.env
-open -e ~/.ice-hockey-tts.env          # or: nano ~/.ice-hockey-tts.env
-```
-
-Paste this in, filling in the keys, and save:
-
-```
-export AWS_PROFILE=ice-hockey
-export AWS_REGION=eu-west-2
-export ELEVENLABS_API_KEY=
-export ELEVENLABS_VOICE_ID=
-export OPENAI_API_KEY=
-export GOOGLE_API_KEY=
-```
-
-Delete the lines for engines you skipped — `tts_sample.py` skips a missing key **loudly** and
-carries on with the rest, which is the behaviour you want.
-
-Then run it:
+One episode per document, one notebook per episode, at most ten episodes per batch.
+Every command below runs from the repository root:
 
 ```bash
 cd ~/Documents/personal/ice_hockey
-source ~/.ice-hockey-tts.env
-python3 scripts/tts_sample.py project/tts_ear_test_sample.txt --out ~/Downloads/tts-compare-$(date +%F)
-open ~/Downloads/tts-compare-$(date +%F)
 ```
-
-⚠️ **The dated directory is not decoration — `~/Downloads/tts-compare/` already exists**, from a
-`tts_sample.py` run on 18 September, and it holds a `polly_generative_Amy.mp3` of a **different
-and unrecorded sample text** (2 min 23 s, which is not this 475-word sample). `tts_sample.py`
-names its output files by engine, not by run, so writing into that directory would overwrite it
-silently — and a Polly-only run would leave you comparing a file you had not just made. Date
-every run and you can never be confused about which one you are hearing.
-
-**The sample.** `project/tts_ear_test_sample.txt` is 475 words of real corpus output — the
-`skating` document's **Key focus** safety block plus its **recovery-speed** research block,
-taken from `scripts/md_to_speech.py`'s own render, not written for the demo. It was chosen to
-exercise what actually breaks: the em-dashed safety clauses, an accented proper noun
-(*Pierre Pagé*), a quotation inside a sentence, and the renderer's spelled-out decimals
-("nought point three seven seconds"). It is plain text, not SSML, deliberately — the engines
-disagree about SSML and the point is to compare voices on identical input.
-
-**Done looks like:** a line per engine and a non-zero exit only if nothing synthesised —
-
-```
-  polly          -> ~/Downloads/tts-compare/polly_generative_Amy.mp3
-  elevenlabs     -> ~/Downloads/tts-compare/elevenlabs_v2.mp3
-  openai         SKIPPED — credential not set (gpt-4o-mini-tts; `instructions` steers tone)
-  ...
-tts_sample: 2 synthesised, 3 skipped, 0 failed
-```
-
-⚠️ **`SKIPPED` is not `FAILED`.** Skipped means the key wasn't in the environment — go back and
-check you sourced the file. Failed means the key was there and the vendor refused it, and the
-line prints the vendor's own reason.
 
 ---
 
-## Step 4 — listen, and write down what you heard
+## Section 1 — Once per batch: get ready
 
-This is the step no script can do and the one the whole engine decision is waiting on.
+**1. Check which documents are mid-repair.** Any document listed by this command has
+uncommitted edits. Skip it this batch, because the episode would be built from a
+version that has not been reviewed.
 
-Play the files back to back. **Judge them on the same four things, in this order** — these are
-what this corpus's audio actually has to survive:
-
-1. **The safety clauses.** "never turn your back to the wall, at any speed and in any league"
-   — does the emphasis land, or does it flatten into the sentence around it? A safety limb
-   that reads as an aside is the defect this corpus exists to prevent.
-2. **The em-dashes.** They carry the corpus's qualifications. Does the voice pause, or run
-   through them?
-3. **"nought point three seven seconds"** and **"seventy-four point two percent"**. Do they
-   sound like a person saying a number, or like a machine reading digits?
-4. **"Pierre Pagé"**, **"Dalhousie"**, **"bantam"**. Mangled proper nouns are the known
-   failure mode.
-
-Then pick one of: *keep Polly*, *switch to X*, *re-test with a different voice*.
-
-**Tell me the verdict and I will record it** — which engine, why, and what you heard — in
-`project/reviews/`, and update the podcast orientation in
-[`OPEN_ITEMS.md`](OPEN_ITEMS.md), which currently states the Polly decision as settled on
-price and one sample.
-
-⚠️ **Separately and just as important: listen to one of the two finished episodes.** Both were
-cleared on transcript review alone.
-
-⚠️ **They very nearly did not survive to be listened to.** Checked 22 September 2026: the only
-copies of both episodes were sitting in an **ephemeral session scratchpad** under
-`/private/tmp/`, which is cleaned without warning — and the whisper model that went missing the
-same way is why that transcription step is a separate open item at all. They have been copied
-out to a durable place **outside the repository**, together with their scripts, provenance
-tables and review notes:
-
-```
-~/Documents/personal/ice_hockey_scripted_episodes/
-  skating/    skating_episode.mp3     (17.7 min, 6.4 MB)  + script.md, provenance.md, notes.md
-  equipment/  equipment_episode.mp3   (85.4 min, 31 MB)   + script.md, provenance.md, notes.md, spoken.txt
+```bash
+git status --short content/
 ```
 
-Durations confirmed by `ffprobe` at 1,064.1 s and 5,123.6 s — exactly the 17.7 and 85.4 minutes
-the record claims, so these are the cleared renders and not an earlier cut.
+**2. Build the instructions file.** This joins the accuracy constraints and the
+teaching prompt into one file, with the constraints first. The order matters: the
+constraints override the teaching prompt. Rebuild the file at the start of every batch
+in case either file has changed.
 
-**Start with `skating`.** At 17.7 minutes it is one sitting, and it is the episode that took
-five straight NOT-SAFE verdicts to clear — if the scripted route sounds right anywhere, it
-sounds right there.
+```bash
+mkdir -p .podcast_queue/notebooklm
+cat .claude/skills/notebooklm-episode/prompt_constraints.md \
+    project/podcast_generation_prompt_longer.md \
+    > .podcast_queue/notebooklm/instructions.md
+```
 
-**Then sample `equipment` if you have time.** You do not need all 85 minutes: the known concern
-is **ordering**, not content. **Skip to 56:03.** That is where the protective-fit block opens,
-with the words *"Protective fit, and the three gaps"*; the three coverage gaps themselves begin
-at **57:39**, behind a long run of blade-radius and stick-lie material.
+The `.podcast_queue/` folder is gitignored, so nothing here can be committed by mistake.
 
-⚠️ **Those two timestamps are MEASURED**, from a whisper transcription of the actual audio on
-22 September 2026 — not derived, and not the review record's *"~51 minutes"*, which was taken
-against an earlier and shorter cut of the episode. **Ignore that figure; it does not describe
-the file you have.**
+**3. Choose the batch.** Work down the table in Section 5 in order and take the next ten
+documents or fewer, leaving out anything Step 1 listed. Ten is the hard ceiling that
+`scripts/podcast_queue.py` enforces. It exists because NotebookLM rate-limits audio
+generation, and a smaller batch is easier to recover from. If NotebookLM says you have
+reached a daily limit, stop there and carry on the next day.
 
-**And the reviewer who ruled this non-blocking was right on the facts:** the three gaps *are*
-re-voiced in the closing recap, at **1:23:03** of an 85:24 episode — confirmed in the same
-transcript. So the question genuinely is ordering and nothing else. A second reviewer recorded
-the reorder as feasible and preferable. **Your ear settles it: is 56 minutes too late for a
-listener who came for fit?**
+Use the table for the order, not `podcast_queue.py next-batch`. Its queue still dates
+from September and prints in alphabetical order, not site order.
 
 ---
 
-## Step 5 — nothing else needs you
+## Section 2 — For each episode
 
-For completeness, so you know what you are *not* on the hook for. These are mine, tracked in
-[`OPEN_ITEMS.md`](OPEN_ITEMS.md) under "Podcast — engineering":
+**4. Record what you are uploading.** This saves a copy of the document stamped with
+the commit and a fingerprint. That copy is the record of exactly which version fed the
+episode. Use the title and path from the table:
 
-- the whisper transcription model — **fetched 22 September 2026**, no longer a manual step;
-- the podcast-script-vs-corpus divergence question (episode three) — **resolved 22 September**;
-  see `project/reviews/podcast_corpus_divergence_resolved_2026-09-22.md`;
-- running `source-verifier` on a script for the first time;
-- the `long-form` engine string `md_to_speech.py` writes into every manifest, for an engine
-  that does not exist in `eu-west-2`;
-- the wrong-pointer-right-quote provenance row in episode three;
-- extending `check_pointers.py` to read a script.
+```bash
+python3 .claude/skills/notebooklm-episode/build_episode.py \
+    .podcast_queue/bundles "Defender" content/positions/defender.md
+```
 
-**Ask me to start any of them.** None is blocked on you.
+Note the commit it prints. You will need it in Step 13.
+
+**5. Open a new notebook** at notebooklm.google.com. Always use a new one. Never add
+a document to an old notebook. Name it after the document and today's date, for example
+`Defender — 2026-10-16`.
+
+**6. Add the document as a source.** Upload the original Markdown file from the table,
+for example `content/positions/defender.md`. Upload the document itself, not the
+`__sources.md` copy from Step 4. That copy carries a header the hosts might read out.
+If the upload dialog refuses `.md`, make a `.txt` copy and upload that instead:
+
+```bash
+cp content/positions/defender.md .podcast_queue/notebooklm/defender.txt
+```
+
+**7. Add the instructions as a second source.** Copy the file to the clipboard:
+
+```bash
+pbcopy < .podcast_queue/notebooklm/instructions.md
+```
+
+Then choose **Add source → Copied text** and paste. It should be titled *"Accuracy
+constraints for corpus podcast generation"*. The instructions cannot go in the
+Customise box, because that box has a hidden 5,000-character limit. It was measured in
+September, and it cut longer text off mid-sentence without any warning. The
+instructions file is about 33,000 characters.
+
+**8. Wait until both sources have finished processing** before you touch Audio
+Overview. Generating from a source that is only half processed loses quality silently.
+
+**9. Open Audio Overview → Customise**, and set:
+
+| Setting | Choose |
+|---|---|
+| Format | **Deep Dive** (the two-host conversation) |
+| Length | **Longer** |
+| Language | **English** |
+
+In the "focus" box, paste this text exactly. It is about 1,000 characters, so it fits:
+
+```text
+This notebook has two sources with different jobs. The source titled "Accuracy constraints for corpus podcast generation" is PRODUCTION INSTRUCTIONS, not episode material: follow it exactly, and where it conflicts with anything else it wins — but never discuss it, quote it, or mention that it exists. The other source is the ONLY topic of this episode. Teach that document and nothing else, in its own order: open on its Key focus section, and lead each point with what a player does before the rule that prices it. Say nothing that is not in that document — no player names, no history, no statistics, distances or speeds, no comparisons between rulebooks, no injury or medical advice — unless you can point to the sentence in the document that says it. Keep every hedge, exception and rulebook name the document attaches, and never settle a question it calls unsettled. Make it long and thorough: cover every section, recap often, and finish with "if you only remember ten things".
+```
+
+**10. Generate and wait.** A long episode takes several minutes or more. The
+"Generating…" panel can stay stuck long after the audio is ready, so reload the page
+before you assume it is still working.
+
+**11. Download the audio** and save it as described in Section 4. Note how long it runs.
+
+---
+
+## Section 3 — The ear check, before you accept an episode
+
+Listen with the document open. **Your check is a triage, not the final word.** No
+episode is published until the coordinator has transcribed it and two reviewers (one
+for rules, one for safety) have checked the transcript against the document. Your job
+is to reject the obvious failures fast and to note the timestamps of anything doubtful.
+
+These checks come from the four September attempts, all four rejected. The later
+attempts did not mainly invent things. They mis-transmitted rules that the document
+states correctly, and that sounds sourced unless you check it.
+
+**Reject outright (stop-the-line). Any one of these fails the episode:**
+
+1. **An injury-response segment the document does not contain.** For example *"if
+   you suspect an injury, come off the ice, tell someone, don't drive, see a doctor"*.
+   Three attempts invented this on documents that never mention it. Where the document
+   does cover injury, check that concussion and suspected spinal injury are kept
+   apart. They call for opposite first actions: for a suspected spinal injury nobody
+   moves the player.
+2. **Medical detail of any kind**: recovery times, return-to-play stages, or
+   confident body mechanics the document does not use (one attempt invented *"axial
+   loading"*).
+3. **A safety point softened or given an exception.** Examples: "head up", "never
+   turn your back to the checker", "never duck into a check", the rule on whether checking
+   is allowed at all, and neck guards.
+4. **A penalty mis-transmitted.** Write down the timestamp of every penalty or rule
+   you hear, then compare it with the document. These are the commonest failures:
+   - the size changed (minor to major, or major to ejection, or the reverse);
+   - "may" became "must", or "must" became "may";
+   - an exception the document attaches was dropped;
+   - one rulebook's rule described as true everywhere, or given to the wrong book
+     (NHL, IIHF, USA Hockey, Hockey Canada, CARHA, PWHL, or the British rules).
+
+**Note the timestamp and tell the coordinator.** These need checking but are not an
+automatic fail:
+
+5. **Invented specifics**: a number, speed, weight or distance, a real player (Brodeur,
+   McDavid and Crosby have all appeared), or the history of a rule.
+6. **A comparison between rulebooks that the document does not make.**
+7. **A hedge resolved.** The document says "genuinely unsettled" or "ask your league",
+   and the episode states an answer.
+8. **British scope changed.** "England" said where the document says England and
+   Scotland, or the reverse, or anything about what the EIHL Casebook contains.
+9. **Leakage from the instructions source.** Talk of "constraints", "instructions",
+   IIHF rulebook editions, the In-House Rules or Northern Ireland, on a document that
+   does not discuss them.
+10. **A promised count not delivered**, such as "the three things you never do"
+    followed by only two.
+11. **A coaching choice stated as a law**, such as "wingers always…" where the
+    document says "in most systems…".
+
+**Also report these. They never fail an episode on their own:**
+
+12. **Length.** Earlier episodes ran about 45 to 70 minutes. Anything under about 30
+    minutes is suspicious, because one attempt ran 18 minutes where the previous one
+    ran 43.
+13. **Opening.** Does the episode open on what a player does (the document's Key focus)
+    or on rulebooks and penalties?
+
+If an episode fails, do not regenerate it straight away. Tell the coordinator. A
+document that fails three times is stopped and goes back to you as a decision.
+
+---
+
+## Section 4 — Where to save the audio
+
+**12. Save each download outside the repository**, in this folder:
+
+```text
+~/Documents/personal/ice_hockey_podcast_incoming/<Folder>/<File name>
+```
+
+`<Folder>` and `<File name>` come from the table in Section 5, for example
+`~/Documents/personal/ice_hockey_podcast_incoming/Positions/Defender.m4a`.
+
+- **Do not save into `podcasts/`.** The publishing script picks up every `.m4a` file
+  in that folder. An unreviewed episode there could be published, and it would
+  overwrite the current master. The backup of the current masters, which the script's
+  notes say is in `~/Documents/personal/`, is not on disk.
+- **The file name must match the document title exactly**, as in the table. The
+  publishing script matches audio to documents by title, and it refuses to run on a
+  name it cannot match.
+- **If the download is not a `.m4a` file**, keep its original extension and tell the
+  coordinator. The script only looks for `.m4a`.
+
+**13. When the batch is done, send the coordinator a message like this:**
+
+```text
+NotebookLM batch done. Commit stamped by build_episode: <hash>.
+Saved under ~/Documents/personal/ice_hockey_podcast_incoming/
+- positions/defender      Positions/Defender.m4a     52 min   ear check: pass
+- positions/goaltender    Positions/Goaltender.m4a   61 min   ear check: doubt at 23:10 (penalty size?)
+- systems/faceoffs        (rejected: invented injury segment at 48:00)
+Skipped as mid-repair: <list from Step 1>
+```
+
+The coordinator takes it from there. They transcribe each episode, run the two
+reviewers, and update the queue. Then they move accepted episodes into `podcasts/`,
+keeping the old master, run `scripts/build_podcast_audio.py`, and **ask you before
+anything is uploaded**.
+
+---
+
+## Section 5 — The episode list, in site order
+
+This is the order the site and the podcast feed use. It comes from
+`site/src/data/structure.json`; `python3 scripts/podcast_queue.py status` prints the
+same order (the `trk` column). "Title" is what goes in the Step 4 command. "File
+name" is the title plus `.m4a`.
+
+| # | Upload this file | Title | Folder |
+|---|---|---|---|
+| 1 | `content/getting-started/getting_started.md` | Getting Started | Getting Started |
+| 2 | `content/foundation/core_principles.md` | Core Principles | Foundation |
+| 3 | `content/reading-diagrams/reading_ice_hockey_diagrams.md` | Reading Ice Hockey Diagrams | Reading the Diagrams |
+| 4 | `content/foundation/rink_map.md` | Rink Map | Foundation |
+| 5 | `content/foundation/language_and_glossary.md` | Language and Glossary | Foundation |
+| 6 | `content/foundation/rules_primer.md` | Rules Primer | Foundation |
+| 7 | `content/foundation/uk_rules.md` | UK and England Rules | Foundation |
+| 8 | `content/foundation/on_ice_communication.md` | On-Ice Communication | Foundation |
+| 9 | `content/positions/center.md` | Center | Positions |
+| 10 | `content/positions/winger.md` | Winger | Positions |
+| 11 | `content/positions/defender.md` | Defender | Positions |
+| 12 | `content/positions/goaltender.md` | Goaltender | Positions |
+| 13 | `content/positions/switching_positions.md` | Switching Positions | Positions |
+| 14 | `content/systems/breakouts.md` | Breakouts | Systems and Situations |
+| 15 | `content/systems/zone_entries.md` | Zone Entries | Systems and Situations |
+| 16 | `content/systems/offensive_zone_play.md` | Offensive Zone Play | Systems and Situations |
+| 17 | `content/systems/forechecking_systems.md` | Forechecking Systems | Systems and Situations |
+| 18 | `content/systems/neutral_zone_systems.md` | Neutral Zone Systems | Systems and Situations |
+| 19 | `content/systems/defensive_zone_coverage.md` | Defensive Zone Coverage | Systems and Situations |
+| 20 | `content/systems/defending_the_rush.md` | Defending the Rush | Systems and Situations |
+| 21 | `content/systems/special_teams.md` | Special Teams | Systems and Situations |
+| 22 | `content/systems/faceoffs.md` | Faceoffs | Systems and Situations |
+| 23 | `content/systems/game_management.md` | Game Management | Systems and Situations |
+| 24 | `content/technique/skating.md` | Skating | Technique |
+| 25 | `content/technique/puck_handling.md` | Puck Handling | Technique |
+| 26 | `content/technique/passing_and_receiving.md` | Passing and Receiving | Technique |
+| 27 | `content/technique/shooting.md` | Shooting | Technique |
+| 28 | `content/technique/body_contact_and_battles.md` | Body Contact and Battles | Technique |
+| 29 | `content/hockey-iq/puck_support_and_spacing.md` | Puck Support and Spacing | Hockey IQ |
+| 30 | `content/hockey-iq/time_and_space.md` | Time and Space | Hockey IQ |
+| 31 | `content/hockey-iq/scanning_and_anticipation.md` | Scanning and Anticipation | Hockey IQ |
+| 32 | `content/hockey-iq/risk_management.md` | Risk Management and Decision-Making | Hockey IQ |
+| 33 | `content/hockey-iq/playing_without_the_puck.md` | Playing Without the Puck | Hockey IQ |
+| 34 | `content/off-the-ice/equipment.md` | Equipment | Off the Ice |
+| 35 | `content/off-the-ice/conditioning_and_recovery.md` | Conditioning and Recovery | Off the Ice |
+| 36 | `content/off-the-ice/practice_and_development.md` | Practice and Development | Off the Ice |
+| 37 | `content/off-the-ice/mental_game.md` | The Mental Game | Off the Ice |
+| 38 | `content/off-the-ice/team_play_and_culture.md` | Team Play and Culture | Off the Ice |
+| 39 | `content/off-the-ice/how_to_watch_hockey.md` | How to Watch Hockey | Off the Ice |
+
+Notes on particular documents:
+
+- **#1 Getting Started** is left out of the queue tool, because it already had an
+  episode. Its document has changed 26 times since that episode was made, so it is
+  listed here. Whether to remake it is your call.
+- **#2, #4, #5 and #8** were the four September attempts, all rejected. Core
+  Principles and Rink Map have each failed twice. Listen to these especially carefully
+  against the Section 3 checklist.
+- **#11 Defender** is stable. The single-voice ("Style B") script is being written from
+  it at the same time, which does not affect this.
+- **The biggest documents** are Rules Primer and Body Contact and Battles (about
+  121,000 words each) and Goaltender (about 96,000). The episode cannot cover them
+  word for word. Listen hardest to the penalty checks (Section 3, item 4) on these three.
