@@ -662,7 +662,7 @@ Never: Force a low-percentage shot — a missed net in 3-on-3 is often a goal ag
 Never: Change without possession; you never surrender the puck to get fresh legs
 Read: With the NHL's long change, the goal usually comes from isolating a defender who has been stuck out and cannot get off
 Rule: A penalty makes it 4-on-3, coincidental minors leave it 3-on-3, and no team ever has fewer than three skaters (NHL Rule 84.3)
-Rule: Lose with your goalie pulled in overtime and you forfeit the point you had already earned (NHL Rule 84.2)
+Rule: Lose with your goalie pulled in regular-season overtime and you forfeit the point you had already earned, unless you pulled them at a delayed penalty call against the other team (NHL Rule 84.2, PWHL 86.2)
 ```
 
 **Rule 84.1**: five minutes maximum, sudden death, **three skaters and one goalkeeper** per side, teams change ends (they defend the same end as in the second period — the long change). Both points are secured before it starts: a tie after regulation guarantees each team one point.

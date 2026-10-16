@@ -656,6 +656,7 @@ Rule: On a screen from outside the crease the books split — the IIHF prints th
 Rule: Hockey Canada is not capped at a minor, nor is USA Hockey (607(a)–(c), (e)) — 8.5(b) reaches a major plus game misconduct on degree of violence with nobody hurt, and mandatorily for charging the goaltender and for any such foul that injures; 8.5(c) a match penalty, and 8.5(d) bars a misconduct
 Rule: CARHA is not crease-only — 66(b) makes deliberate contact with a goalkeeper a minor "whether in or out of the goal crease" or a discretionary major; 66(e)'s mandatory major for injury by interference names no location; Rule 30(a) makes either major an ejection (CARHA-affiliated adult leagues only)
 Rule: CARHA 66(b) (CARHA leagues) bars standing in the crease "unless the puck is in the goal crease area", like Hockey Canada 8.5, but voids a goal whoever scores; neither has the NHL's incidental-contact allowance. CARHA's push-in relief saves position only — contact impeding the goalie is still a minor
+Rule: Fouled into the goalie, still try to avoid him — under CARHA 66(b) an attacker whose team has the puck, interfered with by a defender, who "fails to attempt to avoid" contact takes a minor and loses any goal; one not in possession, tripped or caused to fall, takes a minor in or out of the crease
 Never: Plant your feet in the blue paint, or on the crease line that every book settling the question counts as crease — the paint risks the goal under every book, and the zone under USA Hockey 625(b)
 ```
 

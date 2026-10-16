@@ -140,7 +140,7 @@ DEFAULT_SIMILARITY = 0.50
 DEFAULT_STYLE = 0.20
 DEFAULT_SPEAKER_BOOST = True
 
-DEFAULT_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "ShSKKFA7dFwxYhKZGUoY")
+DEFAULT_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "L0Dsvb3SLTyegXwtm47J")
 # ⚠️ The owner's choice, 14 October 2026 (decided 30 September). Whether v4 honours
 # `voice_settings` and `previous_text`/`next_text` as v2 does has NOT been tested
 # against the live API. `--model eleven_multilingual_v2` restores the old model.

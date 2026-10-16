@@ -70,6 +70,19 @@ already forbids, and §8 below outranks this one.
 This section narrows it for Style B: **even in the "cite freely" tier, prefer the consequence
 to the number, because a listener cannot look a number up.**
 
+### ⚠️ Plain, not polished — the owner, 16 October 2026
+
+After hearing the first full example the owner said: *"the style is a little cute or polished, it would be better to have a style of content that was simpler, imagine we're explaining to a teenager rather then trying to sound too sophistocated"*.
+
+**So explain, do not perform.** Write the way a good coach talks to a 14-to-16-year-old player:
+
+- Say what to do, then say why, in everyday words. *"Stay between your man and your net. If he gets past you, he has a clear path to the goal."*
+- **No epigrams and no crafted reversals.** Lines like *"The way it usually goes wrong is quiet"*, *"A person, not a position"* or *"The angle is yours everywhere. The contact is not."* sound clever and explain less. Replace each with the plain statement it was hinting at.
+- Explain every hockey term the first time it is used (gap, pinch, goal side, the slot, the weak side).
+- Prefer a concrete picture — where you are, where the puck is, what you do next — to an abstract summary.
+- Short sentences are still right, but short because they are simple, not because they are punchy.
+- **The safety floor in §8 is unchanged.** Plain wording must keep every limb and every penalty consequence. Simpler is not shorter where a scope lives.
+
 ### The register of a sentence
 
 Match these, which are the corpus's own:
@@ -430,7 +443,7 @@ that made stitched two-speaker attempts sound electronic. Style A's dialogue com
 NotebookLM, so the two do not collide. `scripts/tts_sample.py`'s *"SINGLE-VOICE by decision —
 do not re-add a dialogue path"* note stands for Style B.
 
-**Engine: ElevenLabs.** Model `eleven_v4`. Voice `ShSKKFA7dFwxYhKZGUoY`. Model, voice, stability and similarity are the owner's choices of 14 October 2026; they replace `eleven_multilingual_v2`, `L0Dsvb3SLTyegXwtm47J`, 35% and 75%. Settings:
+**Engine: ElevenLabs.** Model `eleven_v4`. Voice `L0Dsvb3SLTyegXwtm47J`. The owner chose the model, stability and similarity on 14 October 2026 (replacing `eleven_multilingual_v2`, 35% and 75%), and on 16 October 2026 switched the voice back to `L0Dsvb3SLTyegXwtm47J` after hearing the defender example in `ShSKKFA7dFwxYhKZGUoY`. Settings:
 
 | Setting | Value |
 |---|---|
