@@ -95,6 +95,16 @@ After hearing the first full example the owner said: *"the style is a little cut
 - Short sentences are still right, but short because they are simple, not because they are punchy.
 - **The safety floor in §8 is unchanged.** Plain wording must keep every limb and every penalty consequence. Simpler is not shorter where a scope lives.
 
+### ⚠️ The boards posture: one wording, every time (found 16 October 2026)
+
+A safety reviewer found that the first seven scripts said *"take the contact on your forearm and hip"*. Heard once, that is ambiguous: a listener can take it to mean bracing a forearm into the checker. The corpus means the part of you that meets the **wall**. `core_principles.md` KT11 and `breakouts.md` (:146 and elsewhere) say *"forearm and hip to the wall"*, and `body_contact_and_battles.md` :832 says *"Forearm and hip meet the wall"*.
+
+Seven different short forms also made it sound like seven lists rather than one rule. **So:**
+
+- **Teach it in full once**, wherever the source teaches it: angle in; skates parallel to the boards, feet apart, knees bent; **forearm and hip to the boards, never the point of your shoulder** (and not the whole shoulder if you can help it); head up, chin off your chest; never your back to the checker; never duck; and the facing-the-wall fallback, labelled as damage limitation.
+- **Everywhere else, use one fixed short form word for word:** *"Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck."*
+- Never write *"take the contact on your forearm and hip"* in a script.
+
 ### The register of a sentence
 
 Match these, which are the corpus's own:

@@ -388,13 +388,41 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
     - (b) No concussion action anywhere in the document. Check it against conditioning_and_recovery.md.
     - (c) A British women's visor rule is missing: In-House 102 allows a half visor only from the season after the player's 18th birthday.
     - (d) The script-writer's findings: the England Ice Hockey clauses are voiced in the present tense, though EIH memberships ended on 30 Jun 2026; CM :630 states Hockey Canada's registration timing as a general rule; :434 applies USA Hockey figures to everyone; :635 and the Key focus/KT word the Elite League neck-guard warning differently; the Overview :46 points at a section ("Section 2 quotes…").
+  - **breakouts:**
+    - (a) MAJOR. CM :1032, KT :1100 and facts :156 say flatly that the NHL and IIHF allow the net-front screen. Body :176 says the IIHF writes "shall be assessed", so the referee has no discretion. These units are voiced alone and permissive for British players.
+    - (b) CM :1032 extends CARHA's "give him the ice" to Hockey Canada.
+    - (c) :571 and facts :577 say pinning is delay of game "in every book", then excuse Hockey Canada and CARHA.
+    - (d) Facts :1017 and KT :1093 say no book lets a goalie freeze a rim, dropping USAH Casebook Situations 7 and 11.
+    - (e) An unhedged "highest-risk of the nine" ranking appears in several layers, while :380 says nothing ranks them.
+    - (f) The PWHL is absent from the screen and interference material.
+    - (g) KT :1093 leaves the PWHL out of the trapezoid.
+    - (h) The British U12 limb is only in the header.
+  - **center** (batch 1, held):
+    - (a) KT14 "clear it whenever you get it" on the penalty kill drops two of the body's three conditions.
+    - (b) Body :213/:289 says the IIHF is "the only" book weighing a head-down carrier against you; facts and CM add the NHL and PWHL.
+    - (c) CM :744 names only the IIHF as having no minor for checking a goalie from behind; the NHL and PWHL have none either.
+    - (d) KT6 drops the NHL/IIHF/PWHL discretionary minor.
+    - (e) Linemate encroachment "in all six" rests on IIHF 2026/27, while In-House adopts 2025/26.
+    - (f) The hand rule at the draw is scoped to 3 books in facts/body but to every book in KT9.
+    - (g) "Off the glass and out" has no over-the-glass warning.
+    - (h) :834 still says "Interpretation 3".
+  - **switching_positions:**
+    - (a) Body :281 and facts :267 say flatly that "a slide that takes out the carrier is a penalty"; HC 8.6 and CARHA 86 have puck-first defences.
+    - (b) CM :510 and KT :580 say "can" where NHL 76.6, PWHL 78.6, HC 6.2(a), CARHA 57(a) and USAH 613(d) say "shall": the centre is thrown out of the faceoff.
+    - (c) "Six books" means two different sets (:54 versus :327/:343).
+    - (d) Facts :129 "ejects the centre" sounds like a game ejection when voiced alone.
+    - (e) CM :516's goalie-gear exception is incapacitation, not "replacement", in the NHL, PWHL and USAH.
+    - (f) "Even the lowest call ends your game" (CM :513, KT :582) lacks the HC 7.6 head-contact edge.
+    - (g) "High slot" in body :94 differs from rink_map.md.
+  - **Corpus-wide wording:** "take the contact on your forearm and hip" (body_contact :33, core_principles :187 and others) is ambiguous when heard once. Prefer "forearm and hip to the wall", which core_principles KT11 and breakouts already use.
+  - **Stale agent table:** `.claude/agents/rules-verifier.md` omits carha_2026, hc_2026-08-print, iihf_disciplinary_regs_2026, adultsskatetoo_how_to_fall and ihuk_coaching_regs_layout.
   - **skating:**
     - (a) The header says "nothing in this document changes between rule sets", but the crease line and boarding do change.
     - (b) Driving the net (:792/:802, KT :988) gives only the skates limb. The glossary says USA Hockey 625(b) also stops play for a stick in the crease. Verify this.
     - (c) "some books count the red line as crease" understates; the glossary says every book that settles it counts the line.
     - (d) Facts :133 "six-patient case series" is not backed by the body.
     - (e) The knee-angle timing at :240/:245 is inconsistent.
-    - (f) MAJOR. Concussion is raised only as a pointer (:644 facts, :651 body, CM :929, KT10 :987), and "Once you have cleared step 1, speed matters" (:657) implies a self-check rules it out. The action is in no layer. It needs conditioning_and_recovery.md's absolute rule: if a concussion is suspected, come off, tell someone, and do not return that day. A concussed player usually feels fine.
+    - (a)–(f) DONE in wave 49, except (c), which the rules-verifier judged accurate. Still open: the Priority line (sketch "check whether you are hurt; you can be concussed without being knocked out"), the 625(b) stoppage limb, "stick blade" changed to "stick", and concussion pointers in goaltender facts :1352 and practice_and_development :564/:610. Was: (f) MAJOR. Concussion is raised only as a pointer (:644 facts, :651 body, CM :929, KT10 :987), and "Once you have cleared step 1, speed matters" (:657) implies a self-check rules it out. The action is in no layer. It needs conditioning_and_recovery.md's absolute rule: if a concussion is suspected, come off, tell someone, and do not return that day. A concussed player usually feels fine.
   - **defender** (held for Style B): CARHA 86 puck-first Note missing from :801; Key focus "is a penalty" for the slide (Hockey Canada and CARHA excuse contact when the puck is played first); CM :816 against the body on boarding where checking is legal; the KT :893 screener geometry; CM :816 "no book prices it as a bare two minutes" lacks the Hockey Canada 7.6 head-contact edge.
 - [W47 held for NotebookLM batch 1] Found by the wave-47 sweep on 16 Oct 2026 in files the owner is currently turning into NotebookLM episodes. **Do not edit until the owner says batch 1 is downloaded.**
   - rules_primer :493 and :530: IIHF 75.2 "routes … onward to Rule 21" and "fires". The Note says the referee "may apply" Rule 21. The current wording is harsher than the rule.
