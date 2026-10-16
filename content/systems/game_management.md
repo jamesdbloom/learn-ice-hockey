@@ -687,7 +687,7 @@ The format arrived in 2015-16 to reduce shootouts and worked — the share of **
 - A two-man advantage is **5 against 3**.
 - **No team ever has fewer than three skaters.**
 
-**Pulling the goalie in overtime (Rule 84.2)** is possible but almost never sensible: if you lose while the goalie is out, **you forfeit the point you'd already earned** — unless the goalie was pulled for a delayed penalty. And once pulled in regular-season overtime, the goalie **must wait for a stoppage to return and cannot change on the fly** (Rules 84.2 and 74.5), on pain of a bench minor. **Both of those riders are NHL-only** — IIHF 84.2 is a single permissive sentence, so if you play in Britain neither applies to you; see the rule-set note below.
+**Pulling the goalie in overtime (Rule 84.2)** is possible but almost never sensible: if you lose while the goalie is out, **you forfeit the point you'd already earned** — unless the goalie was pulled for a delayed penalty. And once pulled in regular-season overtime, the goalie **must wait for a stoppage to return and cannot change on the fly** (Rules 84.2 and 74.5), on pain of a bench minor. **Both of those riders are NHL and PWHL (86.2) only** — IIHF 84.2 is a single permissive sentence, so if you play in Britain neither applies to you; see the rule-set note below.
 
 One more detail: **in the last two minutes of regulation and at any time in overtime**, the five-second whistle forcing players to set up for a faceoff does not apply (Rule 82.2(viii)) — officials give teams reasonable time.
 

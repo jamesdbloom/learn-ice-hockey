@@ -784,7 +784,7 @@ Without the trapezoid, a puck-handling goaltender is a third defenceman. They st
 
 So the puck battle you would have won against a defenceman either never happens or happens on much narrower terms, and dump-and-chase loses most of its value.
 
-With the trapezoid, **the corners belong to you**. Their defenceman has to go and get it, turning their back to a forechecker arriving at speed. That is the whole engine of modern forechecking. ⚠️ **The one thing that arrival must never finish in is contact with a back.** Take the puck, take the ice, or steer them off it; never finish into the back of a player facing the wall. **The two books that write a trapezoid are the same two that write no minor for checking from behind at all** — NHL and IIHF Rule 43.2 — so on this ice that hit is never two minutes: the NHL makes it a major with a game misconduct whenever it is called (43.5), and the IIHF a major and automatic game misconduct where the referee judges it reckless (43.3).
+With the trapezoid, **the corners belong to you**. Their defenceman has to go and get it, turning their back to a forechecker arriving at speed. That is the whole engine of modern forechecking. ⚠️ **The one thing that arrival must never finish in is contact with a back.** Take the puck, take the ice, or steer them off it; never finish into the back of a player facing the wall. **The two books that write a trapezoid also write no minor for checking from behind at all** — NHL and IIHF Rule 43.2, as does the PWHL's 43.2 — so on this ice that hit is never two minutes: the NHL makes it a major with a game misconduct whenever it is called (43.5), and the IIHF a major and automatic game misconduct where the referee judges it reckless (43.3).
 
 ### How to aim your dump-ins to exploit it
 
