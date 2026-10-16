@@ -1,18 +1,35 @@
 ---
 import Base from '../layouts/Base.astro';
 import { LAYERS, DOC_COUNT } from '../data/nav';
-import podcast from '../data/podcast.json';
+import { getFormat, episodesFor, DOCUMENT_COUNT } from '../data/podcast';
+import { principlesInFeed } from '../lib/podcast-feed';
 import { AUDIO_ENABLED } from '../consts';
 
-// The audio episodes, grouped by section, in the corpus's reading order.
+// The audio episodes, in the corpus's reading order. Two formats per document
+// (owner, 16 October 2026): Conversation and Playing principles.
 // Sizes and durations are MEASURED, from scripts/build_podcast_audio.py reading
 // the encoded files — never estimated. A reader on mobile data should see "28 MB"
 // before they tap, which is the same reason build-downloads.mjs carries byte sizes.
-const episodes = [...podcast.episodes].sort((a, b) => a.track - b.track);
-const audioHours = episodes.reduce((n, e) => n + e.duration_s, 0) / 3600;
-const audioGb = episodes.reduce((n, e) => n + e.bytes, 0) / 1e9;
+const conversation = getFormat('conversation');
+const principles = getFormat('principles');
+const all = [...conversation.episodes, ...principles.episodes];
+const audioHours = all.reduce((n, e) => n + e.duration_s, 0) / 3600;
+const audioGb = all.reduce((n, e) => n + e.bytes, 0) / 1e9;
+// One decimal under ten hours, so a format with a handful of short episodes does not
+// read as "about 0 hours".
+const hours = (eps: readonly { duration_s: number }[]) => {
+  const h = eps.reduce((n, e) => n + e.duration_s, 0) / 3600;
+  return h < 10 ? h.toFixed(1) : h.toFixed(0);
+};
+const allOf = (n: number, what: string) => (n === 1 ? `the one ${what} episode` : `all ${n} ${what} episodes`);
 const mb = (bytes: number) => `${Math.round(bytes / 1e6)} MB`;
 const mins = (s: number) => `${Math.round(s / 60)} min`;
+const hasPrinciples = principles.episodes.length > 0;
+const principlesHeldBack = hasPrinciples && !principlesInFeed();
+// One row per document that has at least one episode, in site order.
+const rows = LAYERS.flatMap((l) =>
+  l.docs.map((d) => ({ doc: d, eps: episodesFor(d.id) })).filter((r) => r.eps.length > 0),
+);
 
 // Filenames are deterministic and mirror scripts/build-downloads.mjs. That
 // script runs *after* Astro (it reads the rendered HTML), so this page cannot
@@ -99,7 +116,7 @@ const epubs = [
           once. */}
       {!AUDIO_ENABLED && (
         <p>
-          <strong>Not published yet.</strong> The {episodes.length} episodes are
+          <strong>Not published yet.</strong> The {all.length} episodes are
           recorded and encoded &mdash; about {audioHours.toFixed(0)} hours, one per
           document &mdash; but they are not on the server yet, so there is nothing here
           to download. A podcast feed, per-section playlists and direct downloads are
@@ -109,21 +126,45 @@ const epubs = [
 
       {AUDIO_ENABLED && (
         <Fragment>
-      <p>
-        One episode per document, in reading order — {episodes.length} of them,
-        about {audioHours.toFixed(0)} hours. They are spoken editions of the
-        documents rather than word-for-word readings, so they are worth having
-        alongside the text rather than instead of it. AAC in an <code>.m4a</code>
-        container, mono, about {audioGb.toFixed(2)} GB for the lot.
-      </p>
+      {/* ⚠️ HONEST COUNTS. Every figure below is computed from the manifests, and
+          Playing principles is mentioned only once at least one episode exists —
+          a format promised with nothing behind it is the affordance this page was
+          once caught offering. */}
+      {hasPrinciples ? (
+        <p>
+          Two kinds of episode, in reading order. <strong>Conversation</strong>:
+          {' '}{conversation.episodes.length} of {DOCUMENT_COUNT} documents, about
+          {' '}{hours(conversation.episodes)} hours. <strong>Playing principles</strong>:
+          {' '}{principles.episodes.length} of {DOCUMENT_COUNT} documents so far, about
+          {' '}{hours(principles.episodes)} hours. They are spoken editions of the
+          documents rather than word-for-word readings, so they are worth having
+          alongside the text rather than instead of it. AAC in an <code>.m4a</code>{' '}
+          container, mono, about {audioGb.toFixed(2)} GB for the lot.
+        </p>
+      ) : (
+        <p>
+          Conversation episodes for {conversation.episodes.length} of the
+          {' '}{DOCUMENT_COUNT} documents, in reading order &mdash; about
+          {' '}{audioHours.toFixed(0)} hours. They are spoken editions of the
+          documents rather than word-for-word readings, so they are worth having
+          alongside the text rather than instead of it. AAC in an <code>.m4a</code>{' '}
+          container, mono, about {audioGb.toFixed(2)} GB for the lot.
+        </p>
+      )}
 
       <h3>Subscribe</h3>
       <p>
         <a href="/feed/podcast.xml">The podcast feed</a> works in Apple Podcasts,
         Overcast, Pocket Casts and anything else that reads RSS: copy that
         address into your app's &ldquo;add a show by URL&rdquo; box. Episodes are
-        numbered rather than dated, so your app will play them in the order the
+        numbered section by section, so your app will play them in the order the
         corpus is meant to be read.
+        {principlesHeldBack && (
+          <Fragment>
+            {' '}Playing principles episodes join the feed once every document has
+            one; until then they are here and on each document&rsquo;s page.
+          </Fragment>
+        )}
       </p>
       {/*
         The Spotify show, as a LINK and not an embed. The owner chose that trade on
@@ -160,10 +201,11 @@ const epubs = [
         An <code>.m3u</code> playlist opens in VLC, Apple Music, most car stereos
         and almost any desktop player, and needs no account or app.
       </p>
+      {hasPrinciples && <h4>Conversation</h4>}
       <ul class="download-list">
         <li>
           <a href="/audio/all.m3u" download>The complete corpus</a>
-          <span class="download-note"> — all {episodes.length} episodes, in reading order.</span>
+          <span class="download-note"> — {allOf(conversation.episodes.length, 'Conversation')}, in reading order.</span>
         </li>
         {LAYERS.map((l) => (
           <li>
@@ -172,6 +214,26 @@ const epubs = [
           </li>
         ))}
       </ul>
+      {/* Only sections that HAVE a Playing principles episode get a playlist — the
+          same rule [playlist].m3u.ts uses to decide which files exist, so no link
+          here can point at a playlist that was never built. */}
+      {hasPrinciples && (
+        <Fragment>
+          <h4>Playing principles</h4>
+          <ul class="download-list">
+            <li>
+              <a href="/audio/principles-all.m3u" download>The complete corpus</a>
+              <span class="download-note"> — {allOf(principles.episodes.length, 'Playing principles')}, in reading order.</span>
+            </li>
+            {LAYERS.filter((l) => l.docs.some((d) => principles.episodes.some((e) => e.doc_id === d.id))).map((l) => (
+              <li>
+                <a href={`/audio/principles-${l.id}.m3u`} download>{l.title}</a>
+                {l.tagline && <span class="download-note"> — {l.tagline}</span>}
+              </li>
+            ))}
+          </ul>
+        </Fragment>
+      )}
 
       <h3>One episode at a time</h3>
       <p>
@@ -180,10 +242,21 @@ const epubs = [
         one to Files lets you open it in an audiobook player such as BookPlayer.
       </p>
       <ul class="download-list">
-        {episodes.map((e) => (
+        {rows.map(({ doc, eps }) => (
           <li>
-            <a href={e.audio} download>{e.title}</a>
-            <span class="download-note"> — {e.section} · {mins(e.duration_s)} · {mb(e.bytes)}</span>
+            <span class="download-doc">{doc.title}</span>
+            {/* Same rule as the feed title: a section name that only repeats the
+                document's own ("Getting Started — Getting Started") is dropped. */}
+            {doc.layerTitle !== doc.title && <span class="download-note"> — {doc.layerTitle}</span>}
+            {eps.map(({ format, episode }) => (
+              <span class="download-format">
+                {/* The visible text is just the format, so 37 links would otherwise all
+                    be announced as "Conversation". The hidden prefix makes each one
+                    "Defender, Conversation", and the visible word is still in the name. */}
+                <a href={episode.audio} download><span class="visually-hidden">{doc.title}, </span>{format.label}</a>
+                <span class="download-note"> · {mins(episode.duration_s)} · {mb(episode.bytes)}</span>
+              </span>
+            ))}
           </li>
         ))}
       </ul>
@@ -208,4 +281,8 @@ const epubs = [
   }
   .download-list a { font-weight: 600; }
   .download-note { color: var(--text-muted); font-size: 0.92em; }
+  .download-doc { font-weight: 600; }
+  /* Each format on its own line under the document, so a row reads the same
+     with one link or two. */
+  .download-format { display: block; padding-left: 1rem; }
 </style>

@@ -1,13 +1,15 @@
 ---
-import { AUDIO_ENABLED, AUDIO_BASE } from '../consts';
+import { AUDIO_ENABLED } from '../consts';
+import { minutes } from '../data/podcast';
 
-interface Props {
-  /** Collection id, e.g. `faceoffs` or `positions/center`. Keys the saved position. */
+export interface PlayerFormat {
+  /** `conversation` or `principles` — see src/data/podcast.ts. */
   id: string;
-  title: string;
+  /** "Conversation" or "Playing principles". */
+  label: string;
   /**
-   * The episode's URL, from podcast.json. REQUIRED, and deliberately not derived
-   * from `id`.
+   * The episode's URL, from the format's manifest. REQUIRED, and deliberately not
+   * derived from the document id.
    *
    * ⚠️ It used to be `${AUDIO_BASE}/${id}.m4a`, which held only while every
    * collection id matched its encoded filename. Renaming a document broke that
@@ -21,10 +23,24 @@ interface Props {
    * so the page cannot disagree with the feed.
    */
   src: string;
+  durationS: number;
+  /** localStorage key for the resume position. Conversation keeps the original
+   *  `audio-position:<doc_id>` so nobody loses their place. */
+  storageKey: string;
 }
 
-const { id, title, src } = Astro.props;
-const storageKey = `audio-position:${id}`;
+interface Props {
+  /** Collection id, e.g. `faceoffs` or `positions/center`. */
+  id: string;
+  title: string;
+  /** One entry per format that exists for this document, Conversation first. */
+  formats: PlayerFormat[];
+}
+
+const { id, title, formats } = Astro.props;
+const [first] = formats;
+const multi = formats.length > 1;
+const optionText = (f: PlayerFormat) => `${f.label} · ${minutes(f.durationS)} min`;
 ---
 
 {/*
@@ -50,13 +66,51 @@ const storageKey = `audio-position:${id}`;
   aria-label while telling the next editor to use it. The correction reached the
   podcast metadata and stopped, which is this corpus's signature defect.
 */}
+{/*
+  TWO FORMATS, ONE BAR (owner, 16 October 2026; project/podcast_two_formats.md).
+  Each document can have a Conversation and a Playing principles episode. With two,
+  a radio group picks which <audio> is shown, and the switch is pure CSS (`:has()` in
+  global.css) — ⚠️ NOT an inline handler: the production CSP is `script-src 'self'`,
+  so an inline script works locally and silently dies in production.
+  audio-player.js only ADDS to this: per-format resume, pausing the other element,
+  remembering the choice, and hiding one option whose file fails.
+  With one format the bar is as it always was, labelled with the format's name.
+  ⚠️ Without `:has()` support both players show. That is a degraded layout, not a
+  broken one, and every control still works.
+*/}
 {
-  AUDIO_ENABLED && (
-    <div class="audio-player" data-audio-player data-storage-key={storageKey}>
-      <span class="audio-player__label">Listen</span>
-      <audio controls preload="none" src={src} aria-label={`Listen to ${title}`}>
-        <a href={src}>Download the {title} episode</a>
-      </audio>
+  AUDIO_ENABLED && first && (
+    <div
+      class={multi ? 'audio-player audio-player--multi' : 'audio-player'}
+      data-audio-player
+      data-doc-id={id}
+    >
+      {multi ? (
+        <fieldset class="audio-player__formats">
+          <legend class="visually-hidden">Choose an episode format</legend>
+          {formats.map((f, i) => (
+            <label class="audio-player__option" data-format-option={f.id}>
+              <input type="radio" name="audio-format" value={f.id} checked={i === 0} />
+              <span>{optionText(f)}</span>
+            </label>
+          ))}
+        </fieldset>
+      ) : (
+        <span class="audio-player__label">{optionText(first)}</span>
+      )}
+      {formats.map((f) => (
+        <div class="audio-player__track" data-format={f.id}>
+          <audio
+            controls
+            preload="none"
+            src={f.src}
+            data-storage-key={f.storageKey}
+            aria-label={`Listen to ${title}: ${f.label}`}
+          >
+            <a href={f.src}>Download the {title} {f.label} episode</a>
+          </audio>
+        </div>
+      ))}
     </div>
   )
 }

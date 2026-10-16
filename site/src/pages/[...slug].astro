@@ -7,7 +7,7 @@ import PrevNext from '../components/PrevNext.astro';
 import AudioPlayer from '../components/AudioPlayer.astro';
 import CiteThis from '../components/CiteThis.astro';
 import { getDoc, getNeighbours } from '../data/nav';
-import podcast from '../data/podcast.json';
+import { episodesFor } from '../data/podcast';
 import { AUDIO_ENABLED } from '../consts';
 
 export async function getStaticPaths() {
@@ -21,10 +21,17 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
 
-// The episode for this document, or undefined. A document with no episode renders
-// no player at all — 38 pages were rendering one against 37 episodes, so the newest
-// document offered a control that could never play.
-const episode = podcast.episodes.find((e) => e.doc_id === entry.id);
+// The episodes for this document, one per format that exists. A document with none
+// renders no player at all — 38 pages were rendering one against 37 episodes, so the
+// newest document offered a control that could never play.
+const playerFormats = episodesFor(entry.id).map(({ format, episode }) => ({
+  id: format.id,
+  label: format.label,
+  src: episode.audio,
+  durationS: episode.duration_s,
+  storageKey: `audio-position:${entry.id}${format.storageSuffix}`,
+}));
+const hasPlayer = AUDIO_ENABLED && playerFormats.length > 0;
 
 const doc = getDoc(entry.id);
 const { prev, next } = getNeighbours(entry.id);
@@ -41,8 +48,11 @@ const { prev, next } = getNeighbours(entry.id);
       Hardcoding `true` here made the two disagree the moment audio is switched
       off: every document page would keep the 128px padding with no player to
       justify it, putting 56px of dead space above every deep-linked heading —
-      the exact over-correction global.css warns about. They must be one flag. */}
-  hasPlayer={AUDIO_ENABLED}
+      the exact over-correction global.css warns about. They must be one flag.
+      ⚠️ AND IT MUST ALSO REQUIRE AN EPISODE. It was `AUDIO_ENABLED` alone, so the
+      documents with no episode got the player's padding with no player rendered. */}
+  hasPlayer={hasPlayer}
+  playerMulti={hasPlayer && playerFormats.length > 1}
 >
   <main class="main" id="main">
     {/* ⚠️ BEFORE the article, not after it, and the reason is keyboard order.
@@ -56,7 +66,7 @@ const { prev, next } = getNeighbours(entry.id);
         point DOM order and visual order agree again and it belongs back at the bottom.
         ⚠️ It is deliberately OUTSIDE <article data-pagefind-body> so the player's text
         never enters the search index. */}
-    {episode && <AudioPlayer id={entry.id} title={doc.title} src={episode.audio} />}
+    {hasPlayer && <AudioPlayer id={entry.id} title={doc.title} formats={playerFormats} />}
 
     <article data-pagefind-body>
       <p class="doc-eyebrow">

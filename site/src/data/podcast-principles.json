@@ -1,0 +1,4 @@
+{
+  "note": "Playing principles episodes (Style B, ElevenLabs, one voice). Same shape as podcast.json. Each episode carries an explicit guid of the form learn-ice-hockey:principles:<doc_id>, written when it is first published and never changed. Audio lives at /audio/principles/<doc_id>-<sha8>.m4a. Each episode plays on its document page as soon as it exists, but stays OUT of the podcast feed until every document has one (owner, 16 October 2026; project/podcast_two_formats.md).",
+  "episodes": []
+}

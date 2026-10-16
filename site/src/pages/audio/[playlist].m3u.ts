@@ -1,7 +1,47 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { LAYERS } from '../../data/nav';
 import { SITE_TITLE } from '../../consts';
-import podcast from '../../data/podcast.json';
+import { getFormat, position, type Episode } from '../../data/podcast';
+
+const conversation = getFormat('conversation');
+const principles = getFormat('principles');
+
+/**
+ * PLAYING PRINCIPLES PLAYLISTS (owner, 16 October 2026: two formats per document).
+ * `principles-all` and `principles-<layer>`, each emitted ONLY when it has at least
+ * one episode — an empty playlist is a file that plays nothing. Grouped by the
+ * document's place in structure.json, not by a stored `section` string, so the
+ * orphan problem described below cannot happen to this set.
+ * The Conversation set keeps its original names and order, unchanged.
+ */
+const PRINCIPLES_PREFIX = 'principles-';
+
+function principlesFor(layerId: string | null): Episode[] {
+  return principles.episodes
+    .filter((ep) => layerId === null || position(ep.doc_id).layerId === layerId)
+    .slice()
+    .sort((a, b) => position(a.doc_id).globalIndex - position(b.doc_id).globalIndex);
+}
+
+function playlistNames(): string[] {
+  const names = ['all', ...LAYERS.map((l) => l.id)];
+  if (principles.episodes.length > 0) {
+    names.push(`${PRINCIPLES_PREFIX}all`);
+    for (const l of LAYERS) {
+      if (principlesFor(l.id).length > 0) names.push(`${PRINCIPLES_PREFIX}${l.id}`);
+    }
+  }
+  // ⚠️ A layer whose id were `all`, or began `principles-`, would make two playlists
+  // claim one file name and Astro would silently keep one. Fail instead.
+  const dupes = names.filter((n, i) => names.indexOf(n) !== i);
+  if (dupes.length) throw new Error(`m3u: playlist name collision: ${dupes.join(', ')}`);
+  for (const l of LAYERS) {
+    if (l.id.startsWith(PRINCIPLES_PREFIX)) {
+      throw new Error(`m3u: layer id "${l.id}" collides with the Playing principles playlist prefix`);
+    }
+  }
+  return names;
+}
 
 /**
  * Extended M3U playlists — the whole corpus, and one per section.
@@ -28,10 +68,8 @@ import podcast from '../../data/podcast.json';
  * rss.xml.ts uses it: this is a book, and the sequence is meant.
  */
 
-export const getStaticPaths: GetStaticPaths = () => [
-  { params: { playlist: 'all' } },
-  ...LAYERS.map((l) => ({ params: { playlist: l.id } })),
-];
+export const getStaticPaths: GetStaticPaths = () =>
+  playlistNames().map((playlist) => ({ params: { playlist } }));
 
 /** ⚠️ A newline inside a title would terminate the entry early and silently
  *  shift every following track's name onto the wrong file. Titles come from
@@ -55,7 +93,7 @@ function assertSingleLine(text: string, what: string): string {
  *  regenerating podcast.json is not always possible — hence a check here instead. */
 function assertSectionsAreRealLayers(): void {
   const titles = new Set(LAYERS.map((l) => l.title));
-  const orphans = podcast.episodes.filter((ep) => !titles.has(ep.section));
+  const orphans = conversation.episodes.filter((ep) => !titles.has(ep.section));
   if (orphans.length > 0) {
     throw new Error(
       `m3u: ${orphans.length} episode(s) name a section that is not a layer in structure.json, ` +
@@ -72,19 +110,31 @@ export const GET: APIRoute = ({ params, site }) => {
 
   assertSectionsAreRealLayers();
 
-  const layer = LAYERS.find((l) => l.id === id);
-  const episodes = podcast.episodes
-    .slice()
-    .sort((a, b) => a.track - b.track)
-    .filter((ep) => (layer ? ep.section === layer.title : true));
+  const isPrinciples = id.startsWith(PRINCIPLES_PREFIX);
+  const layerId = isPrinciples ? id.slice(PRINCIPLES_PREFIX.length) : id;
+  const layer = LAYERS.find((l) => l.id === layerId);
 
-  const name = layer ? `${SITE_TITLE} — ${layer.title}` : SITE_TITLE;
+  let episodes: Episode[];
+  let name: string;
+  let entryTitle: (ep: Episode) => string;
+  if (isPrinciples) {
+    episodes = principlesFor(layer ? layer.id : null);
+    name = `${SITE_TITLE} — ${principles.label}${layer ? ` — ${layer.title}` : ''}`;
+    entryTitle = (ep) => `${ep.title} — ${principles.label}`;
+  } else {
+    episodes = conversation.episodes
+      .slice()
+      .sort((a, b) => (a.track ?? 0) - (b.track ?? 0))
+      .filter((ep) => (layer ? ep.section === layer.title : true));
+    name = layer ? `${SITE_TITLE} — ${layer.title}` : SITE_TITLE;
+    entryTitle = (ep) => ep.title;
+  }
 
   const lines = [
     '#EXTM3U',
     `#PLAYLIST:${assertSingleLine(name, 'playlist name')}`,
     ...episodes.flatMap((ep) => [
-      `#EXTINF:${Math.round(ep.duration_s)},${assertSingleLine(ep.title, 'episode title')}`,
+      `#EXTINF:${Math.round(ep.duration_s)},${assertSingleLine(entryTitle(ep), 'episode title')}`,
       `${origin}${ep.audio}`,
     ]),
   ];

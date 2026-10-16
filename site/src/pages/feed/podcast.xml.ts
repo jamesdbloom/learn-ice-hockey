@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getDoc } from '../../data/nav';
 import { SITE_TITLE, PODCAST_DESCRIPTION, SITE_AUTHOR, PODCAST_OWNER_EMAIL } from '../../consts';
-import podcast from '../../data/podcast.json';
+import { feedItems } from '../../lib/podcast-feed';
 import coverData from '../../data/podcast-cover.json';
 
 /**
@@ -43,15 +43,15 @@ import coverData from '../../data/podcast-cover.json';
  *     cardinality 1..1 — MANDATORY. The two disagree, and this is the one place
  *     the podcast feed cannot keep rss.xml.ts's position outright.
  *
- * ⚠️ WHY `PUB_DATE` IS A HARD-CODED CONSTANT AND MUST STAY ONE.
- * It is emitted because Spotify's schema requires the field to exist, and it
- * carries NO ordering meaning in either platform — `itunes:episode` and
- * `itunes:order` do that job, which is exactly why a single shared date is
- * honest enough to emit and a spread of invented weekly dates would not be.
- * It is a constant, never `new Date()`, for the reason rss.xml.ts already gives:
- * a build-time date would change on every rebuild and republish all 37 episodes
- * to every subscriber — in a podcast client that means 37 push notifications.
- * **If you find yourself computing this value, stop.**
+ * ⚠️ pubDate IS FIXED AND NEVER COMPUTED FROM THE BUILD TIME.
+ * Until 16 October 2026 it was one shared constant carrying no ordering meaning.
+ * The owner then chose to group the show by site section (`itunes:season`) and to
+ * RE-DATE it at once, so each pubDate is now a synthetic fixed date that encodes the
+ * site order — see `pubDateFor()` in src/lib/podcast-feed.ts. It is still never
+ * `new Date()`, for the reason rss.xml.ts already gives: a build-time date would
+ * change on every rebuild and republish every episode to every subscriber — in a
+ * podcast client that means a push notification per episode.
+ * **If you find yourself deriving it from the clock, stop.**
  *
  * ⚠️ GUIDs ARE NOT DERIVED FROM THE ENCLOSURE URL. Apple: a GUID must "never
  * change, even if an episode's metadata, like title or enclosure URL, do
@@ -96,8 +96,7 @@ function cdata(value: string): string {
   return `<![CDATA[${value.replace(/]]>/g, ']]&gt;')}]]>`;
 }
 
-/** ⚠️ A CONSTANT. See the note above. Never compute this. */
-const PUB_DATE = 'Mon, 08 Sep 2026 00:00:00 +0000';
+// ⚠️ The pubDate constant and the ordering now live in src/lib/podcast-feed.ts.
 
 /**
  * ⚠️ THE LINK BACK TO THE SITE MUST BE AN ANCHOR, NOT A BARE URL.
@@ -136,38 +135,39 @@ export const GET: APIRoute = ({ site }) => {
   // drift. ⚠️ DO NOT hardcode `cover.png` back into this line to "simplify" it.
   const cover = `${origin}/audio/${coverData.file}`;
 
-  const items = podcast.episodes
-    .slice()
-    .sort((a, b) => a.track - b.track)
-    .map((ep) => {
+  const items = feedItems()
+    .map((it) => {
+      const ep = it.episode;
       const doc = getDoc(ep.doc_id);
       const page = `${origin}${doc.href}`;
       return [
         '    <item>',
-        `      <title>${xml(ep.title)}</title>`,
-        // Stable for the life of the episode: the document id, not the file.
+        `      <title>${xml(it.title)}</title>`,
+        // Stable for the life of the episode — see guidFor() in src/data/podcast.ts.
         // An episode may pin its guid explicitly. A guid derived from doc_id changes
         // when a document is renamed, and a changed guid makes every podcast client
         // drop the old episode and re-download it as new — subscribers lose their
         // place on something already published. `foundation/rink_map_and_glossary`
         // became `foundation/rink_map`; the pinned guid keeps the published identity.
-        `      <guid isPermaLink="false">${xml(ep.guid ?? `learn-ice-hockey:${ep.doc_id}`)}</guid>`,
+        // site/scripts/check-podcast-guids.mjs asserts the built set never moves.
+        `      <guid isPermaLink="false">${xml(it.guid)}</guid>`,
         `      <link>${xml(page)}</link>`,
         `      <description>${cdata(
           `<p>${html(doc.description)}</p>` +
           `<p>Full text, diagrams and sources at ` +
           `<a href="${html(page)}">${html(page.replace(/^https?:\/\//, ''))}</a></p>`,
         )}</description>`,
-        `      <itunes:title>${xml(ep.title)}</itunes:title>`,
-        `      <itunes:episode>${ep.track}</itunes:episode>`,
-        // Spotify-only; Apple ignores it. Same value, so the two agree.
-        `      <itunes:order>${ep.track}</itunes:order>`,
+        `      <itunes:title>${xml(it.itunesTitle)}</itunes:title>`,
+        `      <itunes:season>${it.season}</itunes:season>`,
+        `      <itunes:episode>${it.episodeNumber}</itunes:episode>`,
+        // Spotify-only; Apple ignores it.
+        `      <itunes:order>${it.order}</itunes:order>`,
         '      <itunes:episodeType>full</itunes:episodeType>',
         // Apple and Spotify both accept a bare integer of seconds and both
         // prefer or permit it, so that is the intersection.
         `      <itunes:duration>${Math.round(ep.duration_s)}</itunes:duration>`,
         '      <itunes:explicit>false</itunes:explicit>',
-        `      <pubDate>${PUB_DATE}</pubDate>`,
+        `      <pubDate>${it.pubDate}</pubDate>`,
         `      <enclosure url="${xml(`${origin}${ep.audio}`)}" length="${ep.bytes}" type="audio/x-m4a" />`,
         '    </item>',
       ].join('\n');

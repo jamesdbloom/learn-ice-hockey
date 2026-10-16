@@ -166,6 +166,30 @@ html.has-player {
   --player-h: 3.5rem;
 }
 
+/* The label or toggle goes on its OWN ROW in two cases (see the .audio-player rules):
+   the two-format bar at every width, and the single bar below 40rem, where the
+   "Conversation · 60 min" label would otherwise squeeze the native control until it
+   loses its scrubber. The bar is then two rows tall and `--player-h` must say so, or
+   a deep link lands behind the second row. Measured in Chrome: 84px for both. */
+@media (max-width: 39.99rem) {
+  html.has-player {
+    --player-h: 5.3rem;
+  }
+}
+html.has-player--multi {
+  --player-h: 5.3rem;
+}
+/* Below 25rem the two labels themselves no longer fit side by side (measured: 154px +
+   180px + gap against 287px of bar at a 320px viewport), so the bar is THREE rows.
+   ⚠️ These are the no-script values. audio-player.js overwrites `--player-h` with
+   the bar's measured height, because label width depends on the durations and on
+   the reader's font size, and no breakpoint can know either. */
+@media (max-width: 24.99rem) {
+  html.has-player--multi {
+    --player-h: 7.1rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1718,10 +1742,96 @@ figcaption .warn-inline {
   white-space: nowrap;
 }
 
-.audio-player audio {
+.audio-player__track {
   flex: 1;
   min-width: 0;
+  display: flex;
+}
+
+.audio-player audio {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
   height: 2.25rem;
+}
+
+/* ---- Two formats: Conversation / Playing principles ----
+   The radio group switches which track shows, with no script at all — the CSP
+   forbids inline handlers. ⚠️ A browser without `:has()` shows both tracks, which
+   is a cluttered bar but a working one. audio-player.js hides an option whose file
+   failed by setting `hidden` on both its label and its track. */
+.audio-player__formats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.9rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.audio-player__option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.audio-player__option input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.audio-player__option:has(input:checked) {
+  color: var(--text);
+}
+
+.audio-player__option[hidden],
+.audio-player__track[hidden] {
+  display: none;
+}
+
+.audio-player--multi:has(input[value='conversation']:checked) .audio-player__track:not([data-format='conversation']),
+.audio-player--multi:has(input[value='principles']:checked) .audio-player__track:not([data-format='principles']) {
+  display: none;
+}
+
+.audio-player__note {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* ⚠️ THE NATIVE CONTROL MUST NEVER BE THE THING THAT SHRINKS. Below about 200px
+   Chrome drops the scrubber and the time display, leaving a play button that cannot
+   seek. A site-reviewer measured that regression three ways on 16 October 2026:
+     - the single bar's "Conversation · 60 min" label (it was "Listen") shrank the
+       control from 294px to 196px at 375 and to 140px at 320;
+     - the two-format toggle beside the control left it about 199px at 960, because
+       the main column narrows when the sidebar and contents column appear;
+     - the "not available" note's `flex-basis: 100%` inside a nowrap bar collapsed
+       the remaining control to 0px at 40rem and up.
+   So the bar may wrap; the toggle ALWAYS takes its own row; the single label takes
+   its own row below 40rem; and the note always gets its own row. `--player-h` above
+   matches, and audio-player.js measures the bar so it stays true in every case. */
+.audio-player {
+  flex-wrap: wrap;
+  row-gap: 0.4rem;
+}
+
+.audio-player--multi .audio-player__formats {
+  flex-basis: 100%;
+}
+
+@media (max-width: 39.99rem) {
+  .audio-player__label {
+    flex-basis: 100%;
+  }
 }
 
 /* ---------------------------------------------------------------- home --- */

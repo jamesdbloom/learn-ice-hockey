@@ -19,13 +19,26 @@ interface Props {
    *  lands its heading behind the player. Deliberately NOT inferred from
    *  `withToc`: those two happen to coincide today and nothing enforces it. */
   hasPlayer?: boolean;
+  /** True when the player carries the two-format toggle. On a narrow screen that
+   *  bar wraps to two rows, so `--player-h` must grow with it (global.css). */
+  playerMulti?: boolean;
 }
 
-const { title, description, ogType, section, withToc = false, bare = false, hasPlayer = false } = Astro.props;
+const {
+  title,
+  description,
+  ogType,
+  section,
+  withToc = false,
+  bare = false,
+  hasPlayer = false,
+  playerMulti = false,
+} = Astro.props;
+const htmlClass = hasPlayer ? (playerMulti ? 'has-player has-player--multi' : 'has-player') : undefined;
 ---
 
 <!doctype html>
-<html lang="en-GB" class={hasPlayer ? 'has-player' : undefined}>
+<html lang="en-GB" class={htmlClass}>
   <head>
     <Fragment set:html={`<!-- ${VERSION_COMMENT} -->`} />
     <BaseHead title={title} description={description} ogType={ogType} section={section} />
