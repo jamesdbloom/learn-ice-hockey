@@ -104,6 +104,7 @@ Seven different short forms also made it sound like seven lists rather than one 
 - **Teach it in full once**, wherever the source teaches it: angle in; skates parallel to the boards, feet apart, knees bent; **forearm and hip to the boards, never the point of your shoulder** (and not the whole shoulder if you can help it); head up, chin off your chest; never your back to the checker; never duck; and the facing-the-wall fallback, labelled as damage limitation.
 - **Everywhere else, use one fixed short form word for word:** *"Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck."*
 - Never write *"take the contact on your forearm and hip"* in a script.
+- **If the source document teaches only part of the full posture**, teach what it teaches. List the missing limbs in the omissions file, and file a plan row so they get added to the document. Do not import limbs from another document into the script, because §9 traceability binds.
 
 ### The register of a sentence
 

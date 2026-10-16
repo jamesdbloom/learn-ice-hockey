@@ -369,6 +369,7 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   5. Playing principles episodes appear on their pages as each is made. They join the feed only when all 39 exist.
 
   ⚠️ **Must be settled before any re-made Conversation episode is published.** The owner is re-making all 39 Conversation episodes. `build_podcast_audio.py` keeps each existing audio path, and CloudFront caches `/audio/*` for a year, so re-uploading to the same key would keep serving the old audio. Re-made Conversation masters therefore need a new, versioned or hashed enclosure path, as Playing principles already uses. The guid stays the same, which is allowed: an enclosure URL may change, a guid may not. This needs a `--move-audio-path` policy, or a hash in the name, and the same change in `check-podcast-guids.mjs`, which currently pins the enclosure URLs.
+  Steps 1–3 are done and live (site commit after e821c42). Small follow-up: the comment heading "ORDERING WITHOUT MEANINGFUL DATES" at site/src/pages/feed/podcast.xml.ts:36 is stale.
   Risks: Conversation guids; saved play positions in `audio-player.js`; sticky player height on mobile; the `/audio/*.m3u` invalidation wildcard.
 - [W48 residuals] (1) Hockey Canada 8.5(b) Note 1 pointer: winger :493 repeats "Rule 7.4 (b)(Interpretation 2)" with no caveat (batch 1, held). The definition is 7.4's opening list i–v. (2) glossary :363 attaches the 604 scope only to the "legally checked" half of Situation 5 (batch 1, held). (3) A sweep for non-checking goalie-contact permissions worded without 604, Situation 5 or "engage" has not been run.
 - [Style B source findings] Problems found in source documents while writing Style B scripts on 16 Oct 2026. Fix each one in the document, then update its script, because a script may only say what its document says.
@@ -414,6 +415,38 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
     - (e) CM :516's goalie-gear exception is incapacitation, not "replacement", in the NHL, PWHL and USAH.
     - (f) "Even the lowest call ends your game" (CM :513, KT :582) lacks the HC 7.6 head-contact edge.
     - (g) "High slot" in body :94 differs from rink_map.md.
+  - **passing_and_receiving:**
+    - (a) CM :811 says the PWHL refuses the follow-through excuse, which no other layer supports.
+    - (b) Facts :459, CM :808 and KT :876 drop "deliberately" from HC 7.1(c)(iii) and CARHA 48(c).
+    - (c) Facts :431 states a flat penalty shot for a USAH crease cover; the other team may choose a minor instead.
+    - (d) :446 says a shoulder-height blade near a face is a penalty "in all six" with no contact needed.
+    - (e) KT :872 frames the designed D-to-D as "above the circles", contradicting the Key focus and :721.
+  - **puck_handling:**
+    - (a) The boards wording "contact on your forearm and hip" appears at :34, :440 and :803, and in facts :507.
+    - (b) The trailer :1082 points to a missing "Puck Protection on the Wall" section.
+    - (c) KT10 states USAH's fend-off condition as universal.
+    - (d) "PWHL" is never expanded.
+  - **neutral_zone_systems:**
+    - (a) The no-change-after-icing rule is stated as "NHL and IIHF" at facts :642, body :651, CM :801 and KT :861; PWHL 83.4 is the same.
+    - (b) The two-line pass date is flat ("removed in 2005") at :602 and facts :592, but hedged at :69.
+    - (c) Facts :513 carries a goalie-skate-contact trapezoid exception that the body does not.
+    - (d) "far red-line dot" at :783 is ambiguous.
+    - (e) "House default" project vocabulary appears in reader text at :113, :340, :363 and :859.
+    - (f) The 1-3-1 concedes "no" odd-man rushes (facts :196) against "almost never" (body :210).
+    - (g) "PWHL" is never expanded.
+  - **defensive_zone_coverage:**
+    - (a) KT12 :848 and CM :784 say "the puck's position decides". The body :665 says Hockey Canada leaves you-in-the-crease/puck-outside unsettled, so price the penalty shot (permissive direction in KT).
+    - (b) Facts :724 lacks "never the point of your shoulder"; KT10 :846 lacks forearm-and-hip and chin.
+    - (c) MAJOR. Shot blocking: the facts line at :544 teaches the method, and the never-dos (never lift a leg, never turn your back or go sideways, never lunge, stay up until the release) sit only behind a pointer at :552. The body :495 and facts :486 "closing hard at the top of the circle" carry no head-out-of-the-lane limb.
+    - (d) Low-to-high is "from the high slot" at :47/:212 but "from the point" at :490/facts :483.
+  - **faceoffs:**
+    - (a) The PWHL 52.1 stationary-player limb is in facts :283 and CM :1200 but not in the body :291; the game misconduct is at 52.5, not 52.1.
+    - (b) CM :1192 and KT6 are more confident on the British retrieval-check price than the body :582 ("unsettled").
+    - (c) :360 contradicts itself: "every one of the five … in four of them".
+    - (d) The posture appears only in short form.
+    - (e) Facts :1004 names three books where five grant it.
+  - **Wave-50 follow-ups:** check defending_the_rush, winger and others for "IIHF 76.3(V)… replaced" with no edition, and for a flat "every book penalises the slide". The three MINORs from the wave-50 fresh read are in the wave50 record.
+  - **Corpus-wide, boards posture:** several documents teach only part of the full posture (angle in; feet apart, knees bent; the facing-the-wall fallback). Add the missing limbs per document, or point to body_contact_and_battles.
   - **Corpus-wide wording:** "take the contact on your forearm and hip" (body_contact :33, core_principles :187 and others) is ambiguous when heard once. Prefer "forearm and hip to the wall", which core_principles KT11 and breakouts already use.
   - **Stale agent table:** `.claude/agents/rules-verifier.md` omits carha_2026, hc_2026-08-print, iihf_disciplinary_regs_2026, adultsskatetoo_how_to_fall and ihuk_coaching_regs_layout.
   - **skating:**
