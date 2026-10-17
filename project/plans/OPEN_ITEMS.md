@@ -380,6 +380,17 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   Risks: Conversation guids; saved play positions in `audio-player.js`; sticky player height on mobile; the `/audio/*.m3u` invalidation wildcard.
 - [W48 residuals] (1) Hockey Canada 8.5(b) Note 1 pointer: winger :493 repeats "Rule 7.4 (b)(Interpretation 2)" with no caveat (batch 1, held). The definition is 7.4's opening list i–v. (2) glossary :363 attaches the 604 scope only to the "legally checked" half of Situation 5 (batch 1, held). (3) A sweep for non-checking goalie-contact permissions worded without 604, Situation 5 or "engage" has not been run.
 - [Style B source findings] Problems found in source documents while writing Style B scripts on 16 Oct 2026. Fix each one in the document, then update its script, because a script may only say what its document says.
+  - **Corpus sweep: Hockey Canada 8.5(b) goalie tariff (wave 56).** 8.5(b) has three limbs:
+    - a discretionary major + GM for violent interference;
+    - a mandatory major + GM for charging the goaltender;
+    - a mandatory major + GM where interference that would otherwise be a minor injures.
+    special_teams and time_and_space now carry all three. Sweep the siblings by the act (goaltender contact under Hockey Canada) for "charging only" pricing: goaltender, offensive_zone_play, zone_entries, shooting, body_contact_and_battles, playing_without_the_puck, winger, rules_primer.
+  - **From the 17 Oct script updates (low):**
+    - neutral_zone_systems body :139 says "it is boarding too" with no price; the script can't price it.
+    - faceoffs counts its books two ways: "five books" at :9/:604 vs "six" at :288/:307/:1016, while CM :1197 and KT :1280 still say "all five". Consistency only.
+    - faceoffs BD :476: the net-front goalie-contact ejection limb is still PENDING SOURCE.
+    - puck_handling.mjs: a stale guard comment says the caption "carries no book count… DO NOT PUT ONE BACK"; rewrite or delete it.
+    - getting_started :560 calls every British red flag "an ambulance call", where ukcg says "urgent medical assessment… ambulance if necessary". This errs cautious; raise it with the owner docs.
   - **Census, from the special_teams fix pair (17 Oct):** check sibling documents (faceoffs and others) for:
     - the draw-taker ejection scoped "under the NHL and in Britain". All six books eject the centre: PWHL 78.6, USAH 613(d), HC 6.2(a), CARHA 57(a), IIHF 76.6 2026/27.
     - a stride threshold for charging a goalie attributed to CARHA only. HC 7.4 counts two or more strides; USAH 607 Note and CARHA 52(a) count more than two.
@@ -387,10 +398,6 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   - **HC crease, diagrams:** the caption is fixed (wave 55). Still open:
     - Its title "The puck decides, not you" is still unscoped.
     - The dormant spec `centre-crease-the-puck-decides` in site/src/diagrams/center.mjs says Hockey Canada gives "the same answer". It is not exported today; fix or delete it before it is ever re-enabled.
-  - **Residuals from the 17 Oct script updates:**
-    - risk_management facts :784 lacks the body :793 IIHF "referee's call" limb (strict direction); its old findings 6 (PWHL bench over-glass) and 8 (charging priced in three books) are still open.
-    - special_teams facts :755 and :758 omit PWHL 65.6/69.5, and :758 omits CARHA; CM :1202's "flatly under the NHL and the IIHF" may omit the PWHL; facts :985 lacks "never lunge / until released".
-  - **time_and_space residuals (script update, 17 Oct):** facts :83 and :197 (each voiced alone) lack "never the point of your shoulder"; :532 opens with "If you play in Britain" before the Elite League scope; :69 says "turning away from pressure" with no own-end exception.
   - **Corpus-wide, EIHL Casebook Rule 42 (W54 review):** lists of where a charging ejection is mandatory that name NHL/PWHL 42.5 but not the Elite League understate it for EIHL readers. Fixed in shooting and playing_without_the_puck. Sweep the rest (offensive_zone_play, goaltender, defensive_zone_coverage and others) by the act.
   - **HC crease converse, MINOR (away-from-crease context):** body_contact_and_battles.md :1102 and defender.md :207 (defender is held for Style B) say "a penalty shot when the puck is in your own crease". That is incomplete for Hockey Canada. Apply b48/_HCCREASE.md when these files are next opened.
   - **breakouts:**
