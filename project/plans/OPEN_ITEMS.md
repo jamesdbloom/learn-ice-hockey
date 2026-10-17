@@ -368,6 +368,12 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   - **Breakouts: KEEP WITH NOTE.** [26:12] and [28:39] say the stationary D2 screen is legal under the IIHF; in practice the IIHF's minor for impeding "shall be assessed".
   - **17 others: KEEP.** The old "take the hit on your forearm and hip" wording is voiced in several, but always alongside "skates parallel / never your back / chin up".
   - **Still to check:** the 6 pending episodes and Shooting.
+- [POD Style B script status, 17 Oct] A script is FINAL when its source is fixed and committed, the script matches it, and a review is clean. Only final scripts are synthesised (owner on ElevenLabs Pro; PCM 44.1k, gapless joins).
+  - **FINAL:** defending_the_rush (--max-chunk-chars 5690; source b4347fb).
+  - **Updated and reviewed, sources committed (wave 57); need a light final check against HEAD:** faceoffs (6459), neutral_zone_systems (6380), defensive_zone_coverage. **Waiting on wave 58/59 sources:** time_and_space (9280), risk_management (8760), special_teams (8714).
+  - **Updated, not yet reviewed:** passing_and_receiving (7866) and puck_handling (7520), with sources committed in wave 57. Also puck_support_and_spacing (7300), equipment (8930), shooting (9700) and playing_without_the_puck (8360), whose sources are in wave 59 and uncommitted.
+  - **Drafted, need update and review:** scanning_and_anticipation, breakouts, switching_positions, skating, defender, forechecking_systems, offensive_zone_play, zone_entries, game_management, goaltender. Batch-1 sources (core_principles, getting_started, center) are now fixed, so those scripts need updating too.
+  - **Not started:** language_and_glossary, rink_map, reading_ice_hockey_diagrams, rules_primer, uk_rules, on_ice_communication, winger, body_contact_and_battles, conditioning_and_recovery, practice_and_development, mental_game, team_play_and_culture, how_to_watch_hockey.
 - [POD two formats] **Owner decisions of 16 Oct 2026 are recorded in `project/podcast_two_formats.md`, which is the spec.** Work order:
   1. Site refactor with no change to output. Diff the feed, playlists and pages against main.
   2. Renumber the live Conversation feed to section seasons, with section-prefixed titles and synthetic dates. Every guid must stay unchanged, enforced by a scripted assertion.
@@ -380,11 +386,15 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   Risks: Conversation guids; saved play positions in `audio-player.js`; sticky player height on mobile; the `/audio/*.m3u` invalidation wildcard.
 - [W48 residuals] (1) Hockey Canada 8.5(b) Note 1 pointer: winger :493 repeats "Rule 7.4 (b)(Interpretation 2)" with no caveat (batch 1, held). The definition is 7.4's opening list i–v. (2) glossary :363 attaches the 604 scope only to the "legally checked" half of Situation 5 (batch 1, held). (3) A sweep for non-checking goalie-contact permissions worded without 604, Situation 5 or "engage" has not been run.
 - [Style B source findings] Problems found in source documents while writing Style B scripts on 16 Oct 2026. Fix each one in the document, then update its script, because a script may only say what its document says.
+  - **Corpus sweep: NHL/PWHL 21.1 (wave 57).** NHL 21.1 and PWHL 21.1 make a deliberate attempt to injure, in any manner, a MANDATORY match penalty. Sites that cite 42.4's charging "may" alone understate it. Wave 57 covered neutral_zone_systems. Wave 58 (glossary, goaltender, offensive_zone_play, scanning, special_teams, zone_entries) is in its final check, uncommitted. Still to do: risk_management :304, playing_without_the_puck :647, defending_the_rush :760/:777. Sweep with `grep -rn '42\.4' content/` and pair each site with 21.1 (and CARHA 48(a)). The model is defending_the_rush :644/:650.
+  - **passing_and_receiving (script update, 17 Oct):**
+    - (1) FB :460, CM :809 and KT :877 still drop "deliberately" from the HC 7.1(c)(iii) and CARHA 48(c) kicking rules. This errs harsher.
+    - (3) The HC crease where-you-are test appears only in BD :451; no CM or KT carries it.
   - **Corpus sweep: Hockey Canada 8.5(b) goalie tariff (wave 56).** 8.5(b) has three limbs:
     - a discretionary major + GM for violent interference;
     - a mandatory major + GM for charging the goaltender;
     - a mandatory major + GM where interference that would otherwise be a minor injures.
-    special_teams and time_and_space now carry all three. Sweep the siblings by the act (goaltender contact under Hockey Canada) for "charging only" pricing: goaltender, offensive_zone_play, zone_entries, shooting, body_contact_and_battles, playing_without_the_puck, winger, rules_primer.
+    special_teams carries all three; time_and_space carries them at :501 only, so :288 and CM :596 still give charging alone. special_teams facts :1122 dropped USA Hockey 607(b) to fit the cap (:1123 carries it). Sweep the siblings by the act (goaltender contact under Hockey Canada) for "charging only" pricing: goaltender, offensive_zone_play, zone_entries, shooting, body_contact_and_battles, playing_without_the_puck, winger, rules_primer.
   - **From the 17 Oct script updates (low):**
     - neutral_zone_systems body :139 says "it is boarding too" with no price; the script can't price it.
     - faceoffs counts its books two ways: "five books" at :9/:604 vs "six" at :288/:307/:1016, while CM :1197 and KT :1280 still say "all five". Consistency only.
