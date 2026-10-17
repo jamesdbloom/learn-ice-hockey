@@ -120,6 +120,10 @@ site/public/og/
 # ~1.1 GB. The .m4a rule below already covers the audio; this covers the manifest too.
 podcasts_web/
 
+# Playing principles web encodes and their manifest — a build product of
+# `scripts/build_podcast_audio.py --style principles`. Same reasoning as podcasts_web/.
+podcasts_principles/
+
 # The podcast MASTERS. 4.31 GB, and the originals nothing may modify.
 #
 # ⚠️ The *.m4a rule above covered the audio and NOTHING ELSE IN THIS DIRECTORY.
@@ -139,3 +143,6 @@ podcasts/
 # credentials or account identifiers. Not the corpus record; project/reviews/
 # holds the tracked, accepted-episode record once an episode ships.
 .podcast_queue/
+
+# synthesize_style_b.py chunk caches (the audio is *.wav, already ignored; this covers concat.txt).
+podcast_style_b/*.chunks/

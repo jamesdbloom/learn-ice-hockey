@@ -122,6 +122,33 @@ Run with --force to re-encode regardless.
 `site/src/data/podcast.json` and `podcasts_web/manifest.json` are rewritten only by a
 full, non-dry run with no refusals. Episodes are never dropped from the feed silently:
 an existing entry whose document has no publishable master is carried forward unchanged.
+
+--style principles  — THE SECOND FORMAT (project/podcast_two_formats.md, owner 16 Oct 2026)
+    Everything above describes the DEFAULT style, `conversation` (NotebookLM, two hosts).
+    `--style principles` is a separate path for the Playing principles episodes (ElevenLabs
+    Style B, one voice) and shares only the encoder settings, `tags()` and the title rules:
+      input    `podcast_style_b/<stem>.wav` — lossless PCM, so this is ONE generation of
+               loss, not the Conversation pipeline's two. The stem is the document's file
+               stem (`shooting`); it must match exactly one doc_id in structure.json.
+      output   `podcasts_principles/<doc_id>-<sha8>.m4a`, e.g.
+               `podcasts_principles/technique/shooting-1a2b3c4d.m4a`, 64k mono AAC, and
+               `podcasts_principles/manifest.json`. sha8 is the first 8 hex digits of the
+               sha256 of the ENCODED FILE, so different bytes always get a different key —
+               the bucket serves /audio/ `immutable` for a year and nothing invalidates it.
+      site     `site/src/data/podcast-principles.json` — served path
+               `/audio/principles/<doc_id>-<sha8>.m4a`, and an explicit guid
+               `learn-ice-hockey:principles:<doc_id>` written on FIRST publish and copied
+               verbatim forever after, even if the document is later renamed.
+    ⚠️ OPT-IN BY NAME. A WAV in `podcast_style_b/` is NOT a publishable episode — on
+       17 October 2026 that directory held three WAVs of which one was approved. So this
+       path encodes ONLY the documents named with `--doc` (stem or doc_id), and refuses
+       any whose `podcast_queue.py --style principles` state is `blocked`.
+    ⚠️ ORDER OF OPERATIONS: encode (this) -> `upload_podcast_audio.sh --style principles --go`
+       -> commit podcast-principles.json -> push. The JSON names a hashed key, so committing
+       it before the upload ships a page whose Playing principles option 404s.
+    ⚠️ The feed holds every Playing principles episode back until all documents have one
+       (`principlesInFeed()` in site/src/lib/podcast-feed.ts, enforced again by
+       site/scripts/check-podcast-guids.mjs). This script does not decide that.
 """
 
 from __future__ import annotations
@@ -235,13 +262,15 @@ def doc_description(doc_id: str) -> str:
 
 
 def tags(doc_id: str, layer_title: str, doc_title: str,
-         track: int, total_docs: int) -> list[str]:
+         track: int, total_docs: int, title: str | None = None) -> list[str]:
     """The ffmpeg -metadata arguments. ONE definition, so an encode and a retag
     cannot drift apart — which is exactly how the wrong description survived in
-    all 37 files while the script that wrote it looked fine."""
+    all 37 files while the script that wrote it looked fine.
+    `title` overrides the title tag only (Playing principles names its format in it);
+    Conversation passes nothing and keeps the plain document title it always had."""
     url = f"{SITE}/{doc_id}/"
     return [
-        "-metadata", f"title={doc_title}",
+        "-metadata", f"title={title or doc_title}",
         "-metadata", f"artist={AUTHOR}",
         "-metadata", f"album_artist={ALBUM_ARTIST}",
         "-metadata", f"album={layer_title}",
@@ -402,6 +431,191 @@ def cmd_backup(dry_run: bool) -> int:
     return 0
 
 
+# ---- --style principles ------------------------------------------------------------
+STYLE_B = REPO / "podcast_style_b"
+PRINCIPLES_OUT = REPO / "podcasts_principles"
+PRINCIPLES_DATA = REPO / "site" / "src" / "data" / "podcast-principles.json"
+PRINCIPLES_QUEUE_STATE = REPO / ".podcast_queue" / "state-principles.json"
+PRINCIPLES_LABEL = "Playing principles"
+PRINCIPLES_GUID_PREFIX = "learn-ice-hockey:principles:"
+
+
+def principles_audio_path(doc_id: str, sha8: str) -> str:
+    """The served path. doc_id keeps its slash, literally: technique/shooting ->
+    /audio/principles/technique/shooting-<sha8>.m4a (project/podcast_two_formats.md)."""
+    return f"/audio/principles/{doc_id}-{sha8}.m4a"
+
+
+def principles_feed_title(doc_id: str, order: list, conversation_ids: set[str]) -> str:
+    """`<Section> <n> · <Document> — Playing principles`, numbered exactly as
+    `feedItems()` in site/src/lib/podcast-feed.ts will number it on the day Playing
+    principles joins the feed: n counts the items in the SEASON, in site order,
+    Conversation before Playing principles per document — and the feed only carries
+    Playing principles once every document has one, so every principles slot counts.
+    ⚠️ It is a SNAPSHOT of today's Conversation set: if a Conversation episode is added
+    earlier in the same section, the feed's n moves and this file tag does not (the
+    feed's <title> is computed at build time and stays right). Same rule as the feed
+    for a document named like its section ("Getting Started"): no prefix."""
+    layer_title = next(l for d, l, _t, _n in order if d == doc_id)
+    doc_title = next(t for d, _l, t, _n in order if d == doc_id)
+    n = 0
+    for d, l, _t, _n in order:
+        if l != layer_title:
+            continue
+        n += (1 if d in conversation_ids else 0) + 1
+        if d == doc_id:
+            break
+    name = f"{doc_title} — {PRINCIPLES_LABEL}"
+    return name if layer_title == doc_title else f"{layer_title} {n} · {name}"
+
+
+def cmd_principles(args) -> int:
+    order = reading_order()                       # (doc_id, layer_title, doc_title, track)
+    total_docs = len(order)
+    by_id = {r[0]: r for r in order}
+    by_stem: dict[str, list[str]] = {}
+    for d in by_id:
+        by_stem.setdefault(d.split("/")[-1], []).append(d)
+
+    if not args.doc:
+        print("⚠️  --style principles encodes ONLY the documents named with --doc (stem or doc_id).\n"
+              "    A WAV in podcast_style_b/ is not an approved episode; name each one you mean "
+              "to publish.", file=sys.stderr)
+        return 2
+
+    wanted, problems = [], []
+    for name in args.doc:
+        if name in by_id:
+            doc_id = name
+        elif len(by_stem.get(name, [])) == 1:
+            doc_id = by_stem[name][0]
+        else:
+            problems.append(f"--doc {name!r}: not a doc_id or a unique document stem in structure.json")
+            continue
+        if doc_id in (w for w, _ in wanted):
+            continue
+        wav = STYLE_B / f"{doc_id.split('/')[-1]}.wav"
+        if not wav.is_file():
+            problems.append(f"{doc_id}: no master at {wav.relative_to(REPO)}")
+            continue
+        wanted.append((doc_id, wav))
+
+    qstate = {}
+    if PRINCIPLES_QUEUE_STATE.exists():
+        qstate = {k: v.get("status", "") for k, v in
+                  json.loads(PRINCIPLES_QUEUE_STATE.read_text()).get("items", {}).items()}
+    for doc_id, _wav in wanted:
+        if qstate.get(doc_id) == "blocked":
+            problems.append(f"{doc_id}: queue status is 'blocked' in "
+                            f"{PRINCIPLES_QUEUE_STATE.relative_to(REPO)} (rejected episode)")
+    if problems:
+        print("⚠️⚠️  REFUSED — nothing written:", file=sys.stderr)
+        for p in problems:
+            print(f"      {p}", file=sys.stderr)
+        return 2
+
+    site = json.loads(PRINCIPLES_DATA.read_text())
+    existing = {e["doc_id"]: e for e in site.get("episodes", [])}
+    man_path = PRINCIPLES_OUT / "manifest.json"
+    old_man = {e["doc_id"]: e for e in json.loads(man_path.read_text())} if man_path.exists() else {}
+    conversation_ids = set(load_site_data())
+
+    print(f"build_podcast_audio --style principles: {len(wanted)} document(s)"
+          f"{'  — DRY RUN, nothing will be written' if args.dry_run else ''}")
+
+    new_entries: dict[str, dict] = {}
+    new_man: dict[str, dict] = {}
+    for doc_id, wav in wanted:
+        _d, layer_title, doc_title, track = by_id[doc_id]
+        title_tag = principles_feed_title(doc_id, order, conversation_ids)
+        prev_m = old_man.get(doc_id) or {}
+        prev_e = existing.get(doc_id)
+        st = wav.stat()
+        local = PRINCIPLES_OUT / prev_m["file"] if prev_m.get("file") else None
+        current = (
+            not args.force and prev_e is not None and local is not None and local.is_file()
+            and local.stat().st_size == prev_m.get("bytes") == prev_e.get("bytes")
+            and prev_e.get("audio") == prev_m.get("audio")
+            and prev_m.get("title_tag") == title_tag
+            and (
+                (st.st_size == prev_m.get("master_size") and int(st.st_mtime) == prev_m.get("master_mtime"))
+                or (st.st_size == prev_m.get("master_size") and sha256_of(wav) == prev_m.get("master_sha256"))
+            )
+        )
+        print(f"  {'skip' if current else 'encode':6s} {doc_id:40s} <- {wav.relative_to(REPO)}")
+        print(f"         title tag: {title_tag}")
+        if current:
+            continue
+        if args.dry_run:
+            print(f"         -> podcasts_principles/{doc_id}-<sha8>.m4a, "
+                  f"audio /audio/principles/{doc_id}-<sha8>.m4a")
+            continue
+
+        tmp = PRINCIPLES_OUT / f"{doc_id}.partial.m4a"
+        tmp.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            ["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-map", "0:a:0",
+             "-c:a", "aac", "-b:a", BITRATE, "-ac", CHANNELS, "-ar", SAMPLE_RATE,
+             "-map_metadata", "-1",
+             *tags(doc_id, layer_title, doc_title, track, total_docs, title=title_tag),
+             "-movflags", "+faststart", str(tmp)],
+            check=True)
+        info = probe(tmp)
+        dur = float(info.get("duration", 0) or 0)
+        if dur <= 0:
+            tmp.unlink(missing_ok=True)
+            print(f"⚠️  encode produced no playable audio for {doc_id}; stopping", file=sys.stderr)
+            return 2
+        sha8 = sha256_of(tmp)[:8]
+        dest = PRINCIPLES_OUT / f"{doc_id}-{sha8}.m4a"
+        tmp.replace(dest)
+        audio = principles_audio_path(doc_id, sha8)
+        rel = str(dest.relative_to(PRINCIPLES_OUT))
+        if local is not None and local.is_file() and local != dest:
+            print(f"         ℹ️  supersedes podcasts_principles/{prev_m['file']} (left in place; "
+                  f"anything already uploaded under its key stays in the bucket)")
+        # ⚠️ THE GUID IS WRITTEN ONCE. An existing entry's guid is copied verbatim, even if
+        #    it does not match today's form — changing it re-delivers the episode.
+        guid = (prev_e or {}).get("guid") or f"{PRINCIPLES_GUID_PREFIX}{doc_id}"
+        if guid != f"{PRINCIPLES_GUID_PREFIX}{doc_id}":
+            print(f"         ⚠️  keeping existing guid {guid!r} (never changed once published)")
+        new_entries[doc_id] = {
+            "doc_id": doc_id, "title": doc_title, "section": layer_title,
+            "bytes": dest.stat().st_size, "duration_s": round(dur, 1),
+            "audio": audio, "guid": guid,
+        }
+        new_man[doc_id] = {
+            "doc_id": doc_id, "title": doc_title, "section": layer_title,
+            "title_tag": title_tag, "file": rel, "bytes": dest.stat().st_size,
+            "duration_s": round(dur, 1), "bitrate": int(info.get("bit_rate", 0)),
+            "audio": audio, "url": f"{SITE}/{doc_id}/",
+            "master": str(wav.relative_to(REPO)), "master_size": st.st_size,
+            "master_mtime": int(st.st_mtime), "master_sha256": sha256_of(wav),
+        }
+        print(f"         -> {dest.relative_to(REPO)}  {dest.stat().st_size/1e6:.1f} MB, "
+              f"{dur/60:.1f} min, audio {audio}")
+
+    if args.dry_run:
+        print("\nDRY RUN: nothing written.")
+        return 0
+    if not new_entries:
+        print("\nNothing to encode; podcast-principles.json and manifest.json untouched.")
+        return 0
+
+    site_pos = {r[0]: i for i, r in enumerate(order)}
+    eps = {**existing, **new_entries}
+    site["episodes"] = sorted(eps.values(), key=lambda e: site_pos.get(e["doc_id"], 10**6))
+    man = {**old_man, **new_man}
+    PRINCIPLES_OUT.mkdir(parents=True, exist_ok=True)
+    write_json_atomic(man_path, sorted(man.values(), key=lambda e: site_pos.get(e["doc_id"], 10**6)))
+    write_json_atomic(PRINCIPLES_DATA, site)   # `note` kept verbatim
+    print(f"\nsite data: {PRINCIPLES_DATA.relative_to(REPO)} ({len(site['episodes'])} episode(s))")
+    print(f"manifest:  {man_path.relative_to(REPO)}")
+    print("NEXT: scripts/upload_podcast_audio.sh --style principles   (dry run), then --go,\n"
+          "      THEN commit site/src/data/podcast-principles.json. Never commit it first.")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description="Encode accepted podcast masters for the web and regenerate the feed's "
@@ -431,8 +645,30 @@ def main() -> int:
                     help=f"snapshot podcasts/ and podcasts_web/ into a new timestamped folder under "
                          f"{BACKUP_ROOT} (incremental; with --dry-run, lists only). Combine with "
                          f"nothing but --dry-run.")
+    ap.add_argument("--style", choices=("conversation", "principles"), default="conversation",
+                    help="conversation (default): NotebookLM masters in podcasts/. principles: "
+                         "Playing principles WAVs in podcast_style_b/, encoded to "
+                         "podcasts_principles/ and site/src/data/podcast-principles.json. "
+                         "See the docstring.")
+    ap.add_argument("--doc", action="append", default=[], metavar="STEM_OR_DOC_ID",
+                    help="--style principles only, REQUIRED: a document to encode (repeatable). "
+                         "Nothing is encoded that is not named.")
     args = ap.parse_args()
     sys.stdout.reconfigure(line_buffering=True)  # keep stdout and the stderr refusals in order
+
+    if args.style == "principles":
+        others = [n for n, v in (("--limit", args.limit), ("--retag", args.retag),
+                                 ("--exclude", args.exclude), ("--backup", args.backup),
+                                 ("--move-audio-path", args.move_audio_path),
+                                 ("--renumber", args.renumber)) if v]
+        if others:
+            print(f"⚠️  --style principles takes only --doc, --dry-run and --force; not {others}",
+                  file=sys.stderr)
+            return 2
+        return cmd_principles(args)
+    if args.doc:
+        print("⚠️  --doc is for --style principles only", file=sys.stderr)
+        return 2
 
     if args.backup:
         others = [n for n, v in (("--force", args.force), ("--limit", args.limit),

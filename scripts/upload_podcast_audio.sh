@@ -63,27 +63,62 @@
 #
 # ⚠️  NO `--delete` ANYWHERE IN THIS SCRIPT, ON PURPOSE. This uploads; it never
 #     removes. Deleting audio from the bucket is a separate, deliberate act.
+#
+# --style principles — THE PLAYING PRINCIPLES EPISODES (project/podcast_two_formats.md).
+# A separate run that reads `podcasts_principles/manifest.json` and
+# `site/src/data/podcast-principles.json` (both written by
+# `build_podcast_audio.py --style principles`) and uploads ONLY those files, ONLY to keys
+# under `audio/principles/`. It never reads podcast.json or podcasts_web/, never uploads
+# the cover, and so cannot touch a Conversation episode. Still a dry run without --go.
+# Extra checks in this style, all refusals (exit 3):
+#   - every `audio` is `/audio/principles/<doc_id>-<sha8>.m4a` for its OWN doc_id;
+#   - <sha8> is the first 8 hex digits of the sha256 of the local file — the name is a
+#     content hash, so a key can never be given different bytes (nothing invalidates
+#     /audio/ at the edge, and it is served `immutable` for a year);
+#   - every episode has its permanent guid `learn-ice-hockey:principles:<doc_id>`.
+# With --go, a key that already exists in the bucket at the same byte length is SKIPPED
+# (same name means same bytes), so publishing one new episode uploads one file.
+# ⚠️ ORDER: upload FIRST, then commit podcast-principles.json, then push. The page
+#    serves whatever path the deployed JSON names.
 
 set -euo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SRC="$REPO/podcasts_web"
-MANIFEST="$SRC/manifest.json"
-SITE_DATA="$REPO/site/src/data/podcast.json"
-COVER="$SRC/cover.png"
-COVER_DATA="$REPO/site/src/data/podcast-cover.json"
-
 GO=0
+STYLE=conversation
+EXPECT_STYLE=0
 for arg in "$@"; do
+  if [ "$EXPECT_STYLE" = 1 ]; then STYLE="$arg"; EXPECT_STYLE=0; continue; fi
   case "$arg" in
     --go) GO=1 ;;
     --dry-run|--dryrun) GO=0 ;;
+    --style) EXPECT_STYLE=1 ;;
+    --style=*) STYLE="${arg#--style=}" ;;
     -h|--help)
-      echo "usage: $0 [--dry-run | --go]   (default: --dry-run; no AWS call is made)"
+      echo "usage: $0 [--style conversation|principles] [--dry-run | --go]"
+      echo "       (default: conversation, --dry-run; a dry run makes no AWS call)"
       exit 0 ;;
     *) echo "unknown argument: $arg" >&2; exit 2 ;;
   esac
 done
+[ "$EXPECT_STYLE" = 1 ] && { echo "--style needs a value: conversation or principles" >&2; exit 2; }
+
+case "$STYLE" in
+  conversation)
+    SRC="$REPO/podcasts_web"
+    SITE_DATA="$REPO/site/src/data/podcast.json"
+    BUILD_HINT="scripts/build_podcast_audio.py"
+    ;;
+  principles)
+    SRC="$REPO/podcasts_principles"
+    SITE_DATA="$REPO/site/src/data/podcast-principles.json"
+    BUILD_HINT="scripts/build_podcast_audio.py --style principles --doc <stem>"
+    ;;
+  *) echo "unknown --style: $STYLE (conversation or principles)" >&2; exit 2 ;;
+esac
+MANIFEST="$SRC/manifest.json"
+COVER="$REPO/podcasts_web/cover.png"
+COVER_DATA="$REPO/site/src/data/podcast-cover.json"
 
 # ⚠️ The bucket is NOT hardcoded, deliberately — this repository is public. It is the
 # same GitHub repository variable `.github/workflows/deploy.yml` reads, so the script
@@ -124,8 +159,8 @@ HELP
 fi
 BUCKET_SHOWN="${S3_BUCKET:-<S3_BUCKET>}"
 
-[ -f "$MANIFEST" ]  || { echo "missing $MANIFEST — run scripts/build_podcast_audio.py first" >&2; exit 2; }
-[ -f "$SITE_DATA" ] || { echo "missing $SITE_DATA — run scripts/build_podcast_audio.py first" >&2; exit 2; }
+[ -f "$MANIFEST" ]  || { echo "missing $MANIFEST — run $BUILD_HINT first" >&2; exit 2; }
+[ -f "$SITE_DATA" ] || { echo "missing $SITE_DATA — run $BUILD_HINT first" >&2; exit 2; }
 
 # ⚠️ NOT /tmp. CLAUDE.md: "Scratchpad, not /tmp" — /tmp is world-readable and gets
 # clobbered by concurrent agents. mktemp -d gives a 0700 directory; the trap removes it
@@ -140,9 +175,11 @@ PAIRS="$PAIRS_DIR/pairs.tsv"
 # disagreement. The plan is written even when the check fails, so that a dry run can
 # show what WOULD have been uploaded; --go never reads it in that case.
 set +e
-python3 - "$MANIFEST" "$SITE_DATA" "$SRC" > "$PAIRS" <<'PY'
-import json, pathlib, re, sys
+python3 - "$MANIFEST" "$SITE_DATA" "$SRC" "$STYLE" > "$PAIRS" <<'PY'
+import hashlib, json, pathlib, re, sys
 manifest_path, site_path, src = (pathlib.Path(a) for a in sys.argv[1:4])
+style = sys.argv[4]
+site_label = site_path.name
 problems = []
 
 man_list = json.loads(manifest_path.read_text())
@@ -158,12 +195,12 @@ def index(entries, label):
     return out
 
 man = index(man_list, "manifest.json")
-site = index(site_list, "podcast.json")
+site = index(site_list, site_label)
 
 for d in sorted(set(man) - set(site)):
     problems.append(f"only in manifest.json: {d}")
 for d in sorted(set(site) - set(man)):
-    problems.append(f"only in podcast.json: {d}")
+    problems.append(f"only in {site_label}: {d}")
 
 # ASCII only, under /audio/, ending .m4a; no '..', no '//'. Apple: "only ASCII filenames
 # and URLs that include a-z, A-Z, or 0-9".
@@ -172,11 +209,25 @@ served = {}
 for d, s in site.items():
     a = s.get("audio")
     if not isinstance(a, str) or not AUDIO_RE.match(a) or ".." in a or "//" in a:
-        problems.append(f"podcast.json {d}: audio path {a!r} is not a plain ASCII /audio/…/.m4a path")
+        problems.append(f"{site_label} {d}: audio path {a!r} is not a plain ASCII /audio/…/.m4a path")
     elif a in served:
-        problems.append(f"podcast.json: {d} and {served[a]} both serve {a}")
+        problems.append(f"{site_label}: {d} and {served[a]} both serve {a}")
     else:
         served[a] = d
+    # ⚠️ Playing principles: the key must be under /audio/principles/, name its OWN
+    # doc_id, and carry the content hash of the file that will be uploaded to it.
+    if style == "principles" and isinstance(a, str):
+        m_ = re.fullmatch(r"/audio/principles/(.+)-([0-9a-f]{8})\.m4a", a)
+        if not m_ or m_.group(1) != d:
+            problems.append(f"{site_label} {d}: audio {a!r} is not /audio/principles/{d}-<sha8>.m4a")
+        else:
+            f = src / (man.get(d, {}).get("file") or "")
+            if f.is_file():
+                h = hashlib.sha256(f.read_bytes()).hexdigest()[:8]
+                if h != m_.group(2):
+                    problems.append(f"HASH {d}: {a} names {m_.group(2)} but the local file hashes to {h}")
+        if s.get("guid") != f"learn-ice-hockey:principles:{d}":
+            problems.append(f"GUID {d}: {s.get('guid')!r} is not learn-ice-hockey:principles:{d}")
 
 for d in sorted(set(man) & set(site)):
     m, s = man[d], site[d]
@@ -184,15 +235,15 @@ for d in sorted(set(man) & set(site)):
         problems.append(f"PATH UNKNOWN {d}: manifest.json has no `audio` field "
                         f"(podcast.json serves {s.get('audio')})")
     elif m["audio"] != s.get("audio"):
-        problems.append(f"PATH differs {d}: manifest.json {m['audio']} vs podcast.json {s.get('audio')}")
+        problems.append(f"PATH differs {d}: manifest.json {m['audio']} vs {site_label} {s.get('audio')}")
     if m.get("bytes") != s.get("bytes"):
-        problems.append(f"BYTES differ {d}: manifest.json {m.get('bytes')} vs podcast.json {s.get('bytes')}")
+        problems.append(f"BYTES differ {d}: manifest.json {m.get('bytes')} vs {site_label} {s.get('bytes')}")
     f = src / m.get("file", "")
     if not m.get("file") or not f.is_file():
-        problems.append(f"MISSING {d}: no local encode at podcasts_web/{m.get('file')}")
+        problems.append(f"MISSING {d}: no local encode at {src.name}/{m.get('file')}")
     elif f.stat().st_size != s.get("bytes"):
-        problems.append(f"BYTES differ {d}: podcasts_web/{m['file']} is {f.stat().st_size} bytes, "
-                        f"podcast.json declares {s.get('bytes')}")
+        problems.append(f"BYTES differ {d}: {src.name}/{m['file']} is {f.stat().st_size} bytes, "
+                        f"{site_label} declares {s.get('bytes')}")
 
 # The plan: the feed's order, the feed's path, the manifest's local file.
 for s in site_list:
@@ -206,18 +257,20 @@ for s in site_list:
     print(f"{src / m.get('file', '')}\t{s['audio'].lstrip('/')}\t{s.get('bytes')}")
 
 if problems:
-    print("⚠️  REFUSING: podcasts_web/manifest.json, site/src/data/podcast.json and the local "
+    print(f"⚠️  REFUSING: {src.name}/manifest.json, site/src/data/{site_label} and the local "
           "encodes DISAGREE.", file=sys.stderr)
     print("    The feed would point at a URL, or declare a length, that is not what this "
           "script would upload.", file=sys.stderr)
     for p in problems:
         print(f"      {p}", file=sys.stderr)
-    print(f"    {len(problems)} problem(s). Re-run scripts/build_podcast_audio.py (it writes "
-          "`audio` into both files), then commit and deploy site/src/data/podcast.json.",
+    print(f"    {len(problems)} problem(s). Re-run scripts/build_podcast_audio.py"
+          f"{' --style principles' if style == 'principles' else ''} (it writes "
+          f"`audio` into both files), then commit and deploy site/src/data/{site_label}.",
           file=sys.stderr)
     sys.exit(3)
-print(f"manifest.json, podcast.json and the local encodes agree: {len(site)} episodes, "
-      "paths and bytes", file=sys.stderr)
+print(f"{src.name}/manifest.json, {site_label} and the local encodes agree: {len(site)} episodes, "
+      "paths and bytes" + (", content hashes and guids" if style == "principles" else ""),
+      file=sys.stderr)
 PY
 CHECK=$?
 set -e
@@ -247,7 +300,9 @@ fi
 # `scripts/build_podcast_cover.py` writes and `site/src/pages/feed/podcast.xml.ts`
 # reads. ⚠️ All three derive from that one file; keep it that way.
 COVER_KEY=""
-if [ -f "$COVER" ]; then
+if [ "$STYLE" = principles ]; then
+  : # ⚠️ The cover belongs to the Conversation run. A principles run uploads episodes only.
+elif [ -f "$COVER" ]; then
   COVER_NAME="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["file"])' "$COVER_DATA")"
   # ⚠️ Refuse if the tracked name is not the hash of the file about to be uploaded —
   #     that means the cover was rebuilt without the site data being regenerated, and the
@@ -270,7 +325,7 @@ fi
 if [ "$GO" = 0 ]; then
   echo
   if [ "$CHECK" = 3 ]; then
-    echo "⚠️  DRY RUN — AND --go WOULD REFUSE (see above). This is the plan as podcast.json"
+    echo "⚠️  DRY RUN — AND --go WOULD REFUSE (see above). This is the plan as $(basename "$SITE_DATA")"
     echo "    describes it; it would NOT run until the disagreement is fixed."
   else
     echo "DRY RUN. No AWS call is made and nothing is uploaded. --go would run exactly:"
@@ -279,7 +334,7 @@ if [ "$GO" = 0 ]; then
   n=0; total=0
   while IFS=$'\t' read -r local key bytes; do
     if [ "$local" = "-" ]; then
-      printf '  %-62s -> s3://%s/%s  NOT PLANNED: in podcast.json, not in manifest.json\n' "<no local file>" "$BUCKET_SHOWN" "$key"
+      printf '  %-62s -> s3://%s/%s  NOT PLANNED: in %s, not in manifest.json\n' "<no local file>" "$BUCKET_SHOWN" "$key" "$(basename "$SITE_DATA")"
       continue
     fi
     n=$((n + 1)); case "$bytes" in (*[!0-9]*|"") ;; (*) total=$((total + bytes)) ;; esac
@@ -287,8 +342,9 @@ if [ "$GO" = 0 ]; then
   done < "$PAIRS"
   [ -n "$COVER_KEY" ] && printf '  %-62s -> s3://%s/%s\n' "cover.png" "$BUCKET_SHOWN" "$COVER_KEY"
   echo
-  echo "  ${n} episode(s), ${total} bytes; content-type audio/x-m4a,"
+  echo "  ${n} ${STYLE} episode(s), ${total} bytes; content-type audio/x-m4a,"
   echo "  cache-control 'public, max-age=31536000, immutable'. No --delete."
+  [ "$STYLE" = principles ] && echo "  With --go, a key already in the bucket at the same byte length is skipped."
   echo
   if [ "$CHECK" = 3 ]; then
     echo "Dry run complete. Nothing was uploaded. --go WOULD REFUSE."
@@ -323,6 +379,19 @@ echo "authenticated as: ${CALLER}"
 
 while IFS=$'\t' read -r local key bytes; do
   [ "$local" = "-" ] && { echo "internal error: unplanned entry $key reached --go" >&2; exit 3; }
+  if [ "$STYLE" = principles ]; then
+    case "$key" in
+      audio/principles/*) ;;
+      *) echo "internal error: principles run planned $key, outside audio/principles/" >&2; exit 3 ;;
+    esac
+    # Content-hashed key: if it is already there at this length, it is these bytes.
+    have="$(aws s3api head-object --bucket "$S3_BUCKET" --key "$key" \
+             --query ContentLength --output text 2>/dev/null || true)"
+    if [ "$have" = "$bytes" ]; then
+      echo "already in bucket, skipped: $key"
+      continue
+    fi
+  fi
   aws s3 cp "$local" "s3://${S3_BUCKET}/${key}" \
     --content-type "audio/x-m4a" \
     --cache-control "public, max-age=31536000, immutable" \

@@ -1,4 +1,68 @@
 {
   "note": "Playing principles episodes (Style B, ElevenLabs, one voice). Same shape as podcast.json. Each episode carries an explicit guid of the form learn-ice-hockey:principles:<doc_id>, written when it is first published and never changed. Audio lives at /audio/principles/<doc_id>-<sha8>.m4a. Each episode plays on its document page as soon as it exists, but stays OUT of the podcast feed until every document has one (owner, 16 October 2026; project/podcast_two_formats.md).",
-  "episodes": []
+  "episodes": [
+    {
+      "doc_id": "technique/puck_handling",
+      "title": "Puck Handling",
+      "section": "Technique",
+      "bytes": 14802719,
+      "duration_s": 1773.2,
+      "audio": "/audio/principles/technique/puck_handling-16870e61.m4a",
+      "guid": "learn-ice-hockey:principles:technique/puck_handling"
+    },
+    {
+      "doc_id": "technique/passing_and_receiving",
+      "title": "Passing and Receiving",
+      "section": "Technique",
+      "bytes": 16262097,
+      "duration_s": 1948.9,
+      "audio": "/audio/principles/technique/passing_and_receiving-c0ecfe20.m4a",
+      "guid": "learn-ice-hockey:principles:technique/passing_and_receiving"
+    },
+    {
+      "doc_id": "technique/shooting",
+      "title": "Shooting",
+      "section": "Technique",
+      "bytes": 16433491,
+      "duration_s": 1968.9,
+      "audio": "/audio/principles/technique/shooting-558e3fb3.m4a",
+      "guid": "learn-ice-hockey:principles:technique/shooting"
+    },
+    {
+      "doc_id": "hockey-iq/puck_support_and_spacing",
+      "title": "Puck Support and Spacing",
+      "section": "Hockey IQ",
+      "bytes": 15196587,
+      "duration_s": 1821.4,
+      "audio": "/audio/principles/hockey-iq/puck_support_and_spacing-18c7be81.m4a",
+      "guid": "learn-ice-hockey:principles:hockey-iq/puck_support_and_spacing"
+    },
+    {
+      "doc_id": "hockey-iq/risk_management",
+      "title": "Risk Management and Decision-Making",
+      "section": "Hockey IQ",
+      "bytes": 17228627,
+      "duration_s": 2065.4,
+      "audio": "/audio/principles/hockey-iq/risk_management-cd46680c.m4a",
+      "guid": "learn-ice-hockey:principles:hockey-iq/risk_management"
+    },
+    {
+      "doc_id": "hockey-iq/playing_without_the_puck",
+      "title": "Playing Without the Puck",
+      "section": "Hockey IQ",
+      "bytes": 17587690,
+      "duration_s": 2106.6,
+      "audio": "/audio/principles/hockey-iq/playing_without_the_puck-1016c392.m4a",
+      "guid": "learn-ice-hockey:principles:hockey-iq/playing_without_the_puck"
+    },
+    {
+      "doc_id": "off-the-ice/equipment",
+      "title": "Equipment",
+      "section": "Off the Ice",
+      "bytes": 16217867,
+      "duration_s": 1941.8,
+      "audio": "/audio/principles/off-the-ice/equipment-409e09e3.m4a",
+      "guid": "learn-ice-hockey:principles:off-the-ice/equipment"
+    }
+  ]
 }

@@ -84,6 +84,16 @@ USAGE
       `build-queue` runs can detect drift automatically instead of relying
       on --stale.
 
+--style principles
+------------------
+Every subcommand takes `--style conversation|principles` (default conversation). The
+Playing principles episodes (ElevenLabs Style B; project/podcast_two_formats.md) are a
+SEPARATE queue: their episodes are read from `site/src/data/podcast-principles.json`,
+their state lives in `.podcast_queue/state-principles.json`, and nothing is excluded —
+`getting_started` has a Conversation episode, not a Playing principles one. A `blocked`
+status there makes `build_podcast_audio.py --style principles` refuse that document.
+  python3 scripts/podcast_queue.py status --style principles
+
 STATE FILE
 ----------
 `.podcast_queue/state.json` (gitignored — see .gitignore). Holds only
@@ -127,6 +137,19 @@ VALID_STATUSES = [
 # said it for two days. A citation outlives the sentence it cites; prefer owning the
 # figure here to pointing at prose that can be edited underneath it.
 BATCH_HARD_CEILING = 10
+
+STYLE = "conversation"
+
+
+def apply_style(style):
+    """Point the module at one format's episodes and state. Conversation is the
+    historical default and its paths are unchanged."""
+    global STYLE, MANIFEST_CANDIDATES, STATE_PATH, EXCLUDED_DOC_IDS
+    STYLE = style
+    if style == "principles":
+        MANIFEST_CANDIDATES = [REPO_ROOT / "site" / "src" / "data" / "podcast-principles.json"]
+        STATE_PATH = QUEUE_DIR / "state-principles.json"
+        EXCLUDED_DOC_IDS = set()
 
 
 def load_structure_order():
@@ -230,6 +253,7 @@ def cmd_status(args):
     print(f"Canonical order: {STRUCTURE_PATH.relative_to(REPO_ROOT)} ({len(order)} documents)")
     print(f"Manifest: {manifest_path.relative_to(REPO_ROOT) if manifest_path else '(none found)'} "
           f"({len(manifest)} episodes)")
+    print(f"Format: {STYLE}")
     print(f"Queue state: {STATE_PATH.relative_to(REPO_ROOT)} "
           f"({'exists' if STATE_PATH.exists() else 'not yet created — run build-queue'})")
     print()
@@ -409,27 +433,33 @@ def main():
     import argparse
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
+    common = argparse.ArgumentParser(add_help=False)
+    common.add_argument("--style", choices=("conversation", "principles"), default="conversation",
+                        help="which format's queue (default conversation). principles: "
+                             "podcast-principles.json and .podcast_queue/state-principles.json")
 
-    sub.add_parser("status", help="Show every document's episode/queue state.")
+    sub.add_parser("status", parents=[common], help="Show every document's episode/queue state.")
 
-    bq = sub.add_parser("build-queue", help="(Re)build the queue from structure.json + the manifest.")
+    bq = sub.add_parser("build-queue", parents=[common],
+                        help="(Re)build the queue from structure.json + the manifest.")
     bq.add_argument("--stale", nargs="*", help="doc_id(s) to requeue despite having an episode.")
     bq.add_argument("--unblock", nargs="*",
                     help="blocked doc_id(s) to requeue. Without it a blocked item is never touched.")
     bq.add_argument("--reason", help="Why the --stale items are being requeued (recorded in state).")
 
-    nb = sub.add_parser("next-batch", help="Print the next batch of queued items.")
+    nb = sub.add_parser("next-batch", parents=[common], help="Print the next batch of queued items.")
     nb.add_argument("--limit", type=int, help=f"Max items (default/ceiling {BATCH_HARD_CEILING}).")
 
-    ss = sub.add_parser("set-status", help="Advance or block one queue item.")
+    ss = sub.add_parser("set-status", parents=[common], help="Advance or block one queue item.")
     ss.add_argument("doc_id")
     ss.add_argument("status")
     ss.add_argument("--note")
 
-    rh = sub.add_parser("record-hash", help="Store the current content hash for an accepted episode.")
+    rh = sub.add_parser("record-hash", parents=[common], help="Store the current content hash for an accepted episode.")
     rh.add_argument("doc_id")
 
     args = p.parse_args()
+    apply_style(args.style)
     {
         "status": cmd_status,
         "build-queue": cmd_build_queue,

@@ -25,6 +25,8 @@ The owner's decisions, in order:
 - **Conversation:** `site/src/data/podcast.json` stays as it is. No guid, audio path or track number changes.
 - **Playing principles:** a new file, `site/src/data/podcast-principles.json`, with the same shape. Each episode has an explicit guid of the form `learn-ice-hockey:principles:<doc_id>`, written when the episode is first published and never changed.
   - Audio goes under `/audio/principles/<doc_id>-<sha8>.m4a`. The hash in the name means a re-render always gets a new key, which avoids the one-year CloudFront cache.
+    - `<doc_id>` keeps its slash, literally: `technique/shooting` is served at `/audio/principles/technique/shooting-<sha8>.m4a`, not `/audio/principles/shooting-<sha8>.m4a`. (Decided 17 October 2026; this line was ambiguous until then, and a local preview used the stem-only form.)
+    - `<sha8>` is the first 8 hex digits of the SHA-256 of the **encoded `.m4a` file**, not of the WAV, so any change to the bytes, including a tag change, gets a new key. The encode is deterministic: re-encoding the same WAV gives the same bytes and the same name.
   - Each file is 64k mono AAC, matching the Conversation episodes.
 - **`site/src/data/podcast.ts`** is the single place pages read podcast data from. It provides the list of formats, the episodes for a given document, and each document's position (season and order) computed from `structure.json`.
 
@@ -63,7 +65,10 @@ Because the dates are synthetic, Playing principles episodes added later carry b
 
 ### Pipeline
 
-- `--style principles` is added to `build_podcast_audio.py`, `podcast_queue.py` and `upload_podcast_audio.sh`. Each Playing principles master is named by its doc_id and sits in `podcasts_principles/`.
-- The order of operations is: upload to the hashed key first, then commit the JSON.
+- `--style principles` is added to `build_podcast_audio.py`, `podcast_queue.py` and `upload_podcast_audio.sh`. Each Playing principles encode is named by its doc_id and sits in `podcasts_principles/` (gitignored), at the same relative path as its bucket key under `audio/principles/`, e.g. `podcasts_principles/technique/shooting-<sha8>.m4a`, with `podcasts_principles/manifest.json` beside it.
+  - The source WAV stays where `synthesize_style_b.py` writes it, `podcast_style_b/<stem>.wav`. It is not copied or renamed. (Decided 17 October 2026: "master" in the line above was read as the encoded file, because the WAVs already have a home.)
+  - The build encodes **only the documents named with `--doc`**. A WAV in `podcast_style_b/` is not an approved episode. A document whose `podcast_queue.py --style principles` state is `blocked` is refused.
+  - The Playing principles queue is separate: `.podcast_queue/state-principles.json`, with no `getting_started` exclusion.
+- The order of operations is: encode, upload to the hashed key first, then commit the JSON, then push.
 - `synthesize_style_b.py` gains `--doc-id` and a sidecar file recording the script hash, voice and settings.
 - The full design rationale is in the 16 October planning report summarised in [POD two formats].
