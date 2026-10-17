@@ -431,8 +431,8 @@ const wherethePuckIs = {
 
   caption:
     'A loose puck inside the ' +
-    'shaded crease paint beside your goaltender, with you standing outside it. The test is not ' +
-    'where you are — it is where the puck is. ' +
+    'shaded crease paint beside your goaltender, with you standing outside it. In five of the six ' +
+    'books the test is not where you are — it is where the puck is. ' +
     'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
     // ⚠️⚠️ THIS CAPTION CARRIES NO BOOK COUNT, AND THAT IS DELIBERATE — DO NOT PUT ONE BACK.
     // It said "all four books" until 25 September 2026, then "all five" for part of that day, and
@@ -473,11 +473,19 @@ const wherethePuckIs = {
     '"a penalty shot/optional minor penalty shall be assessed", so that book alone offers a lesser ' +
     'option, and its Rule 406(a) puts that election with the non-offending team rather than with ' +
     'the referee or with you. Every book exempts the goalkeeper, whose ' +
-    'job that is. What decides it is the puck\'s location at the instant it is covered. So the two ' +
-    'cases run opposite to the way most players guess: standing inside the crease and ' +
-    'covering a puck that was outside it is a minor penalty; standing ' +
+    'job that is. In those five books what decides it is the puck\'s location at the instant it is ' +
+    'covered, so the two cases run opposite to the way most players guess: standing inside the ' +
+    'crease and covering a puck that was outside it is a minor penalty; standing ' +
     'outside the crease, exactly as drawn here, and covering a puck that was inside it is ' +
     'the penalty shot. ' +
+    // ⚠️ HOCKEY CANADA ADDS A WHERE-YOU-ARE TEST (ruling 17 Oct 2026, conservative reading).
+    // 10.2(a)(v) gives the shot "when the infraction occurs inside the offending team's goal
+    // crease" (hc.txt:7642-7646) and 10.2(a)(vi) the goal, in the same words, with the
+    // goaltender legally substituted (hc.txt:7648-7651). 4.11(a)(v) reads by the puck but does
+    // not settle it, and Interpretation 5 has player and puck both outside. Mirrors
+    // content/technique/puck_handling.md's committed wording.
+    'Hockey Canada also counts where you are, so under that book covering from inside your crease ' +
+    'is the penalty shot too, or the goal with your net empty. ' +
     'The crease is a ' +
     'volume and not a patch of ice — every book runs it from the ice up to the top of the goal ' +
     'frame — so a puck plucked out of the air over this paint, below the crossbar, is a puck in ' +
