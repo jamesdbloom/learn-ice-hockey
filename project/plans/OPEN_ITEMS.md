@@ -373,6 +373,7 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   Risks: Conversation guids; saved play positions in `audio-player.js`; sticky player height on mobile; the `/audio/*.m3u` invalidation wildcard.
 - [W48 residuals] (1) Hockey Canada 8.5(b) Note 1 pointer: winger :493 repeats "Rule 7.4 (b)(Interpretation 2)" with no caveat (batch 1, held). The definition is 7.4's opening list i–v. (2) glossary :363 attaches the 604 scope only to the "legally checked" half of Situation 5 (batch 1, held). (3) A sweep for non-checking goalie-contact permissions worded without 604, Situation 5 or "engage" has not been run.
 - [Style B source findings] Problems found in source documents while writing Style B scripts on 16 Oct 2026. Fix each one in the document, then update its script, because a script may only say what its document says.
+  - **HC crease converse, MINOR (away-from-crease context):** body_contact_and_battles.md :1102 and defender.md :207 (defender is held for Style B) say "a penalty shot when the puck is in your own crease". That is incomplete for Hockey Canada. Apply b48/_HCCREASE.md when these files are next opened.
   - **core_principles** (batch 1, held):
     - (a) MAJOR. The body says "a goal scored while you stand in the crease can be disallowed" with no scope. Under USA Hockey 625(b)/617(c)(4) and CARHA 66(b) the goal is disallowed automatically. Under NHL 69.1/69.3, PWHL 71.1/71.3 and IIHF 69.1/69.3 it comes off only if your position affects the goalie. Under Hockey Canada 8.5 it comes off if you play the puck from the crease, interfere with play, or block the goalie's view or movement. The trailer names only Hockey Canada and CARHA. Related: [crease standing].
     - (b) CM :209 says "Only principle 2 is about rules", but principle 3 is also about rules.
@@ -426,37 +427,42 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
     - (b) The trailer :1082 points to a missing "Puck Protection on the Wall" section.
     - (c) KT10 states USAH's fend-off condition as universal.
     - (d) "PWHL" is never expanded.
-  - **neutral_zone_systems:**
-    - (a) The no-change-after-icing rule is stated as "NHL and IIHF" at facts :642, body :651, CM :801 and KT :861; PWHL 83.4 is the same.
-    - (b) The two-line pass date is flat ("removed in 2005") at :602 and facts :592, but hedged at :69.
-    - (c) Facts :513 carries a goalie-skate-contact trapezoid exception that the body does not.
-    - (d) "far red-line dot" at :783 is ambiguous.
-    - (e) "House default" project vocabulary appears in reader text at :113, :340, :363 and :859.
-    - (f) The 1-3-1 concedes "no" odd-man rushes (facts :196) against "almost never" (body :210).
-    - (g) "PWHL" is never expanded.
   - **defensive_zone_coverage:**
     - (a) KT12 :848 and CM :784 say "the puck's position decides". The body :665 says Hockey Canada leaves you-in-the-crease/puck-outside unsettled, so price the penalty shot (permissive direction in KT).
     - (b) Facts :724 lacks "never the point of your shoulder"; KT10 :846 lacks forearm-and-hip and chin.
     - (c) MAJOR. Shot blocking: the facts line at :544 teaches the method, and the never-dos (never lift a leg, never turn your back or go sideways, never lunge, stay up until the release) sit only behind a pointer at :552. The body :495 and facts :486 "closing hard at the top of the circle" carry no head-out-of-the-lane limb.
     - (d) Low-to-high is "from the high slot" at :47/:212 but "from the point" at :490/facts :483.
-  - **game_management** :1061 still says "no Hockey Canada rule or Interpretation held here covers it, so price the shot under that book" (crease cover, player in, puck out). HC 4.11(a)(v) and 10.2 Interp 5 settle it as a minor; fix to match defensive_zone_coverage after wave 51.
-  - **defending_the_rush:**
-    - (a) BD :243 says CARHA "grants you less than an angle", citing 66(a) Note 2. That Note sits under interference with a player NOT in possession, so it is the wrong anchor. The real CARHA limb is 49(a) "does not avert body contact": the route is yours, but the contact (even passive) is not.
-    - (b) Facts :233 drops the PWHL from the iced-puck boarding case.
-    - (c) CM :930 drops PWHL 58.3 from the puck-first penalty-shot rule.
-    - (d) CM :929 states a Hockey Canada 8.6 trip cap that the body calls unsettled.
-    - (e) The thrown-stick/goalie-pulled goal is named for the NHL and USA Hockey only; all six books award it.
-    - (f) IIHF clipping has no plain-major tier.
-  - **faceoffs:**
-    - (a) The PWHL 52.1 stationary-player limb is in facts :283 and CM :1200 but not in the body :291; the game misconduct is at 52.5, not 52.1.
-    - (b) CM :1192 and KT6 are more confident on the British retrieval-check price than the body :582 ("unsettled").
-    - (c) :360 contradicts itself: "every one of the five … in four of them".
-    - (d) The posture appears only in short form.
-    - (e) Facts :1004 names three books where five grant it.
-    - (f) Kicking an opponent at :307 / facts :301 / CM :1201 / KT4 names no PWHL rule; PWHL 49.3 is a match penalty.
-    - (g) The post-icing freeze at :1053–1055 says nothing on CARHA, which has no such bar.
-    - (h) Holding the stick at :272 names five books; PWHL 55.2 is the sixth.
-  - **Wave-50 follow-ups:** check defending_the_rush, winger and others for "IIHF 76.3(V)… replaced" with no edition, and for a flat "every book penalises the slide". The three MINORs from the wave-50 fresh read are in the wave50 record.
+  - **Hockey Canada crease cover, standing ruling (17 Oct 2026):** Hockey Canada ADDS a where-you-are test to the puck test (10.2(a)(v)/(vi); 4.11(a)(v); 4.12(a)). Price the shot, or the goal with the net empty. The other five books decide by the puck. The brief is scratchpad b48/_HCCREASE.md, applied in waves 52–53 to eight documents (see project/reviews/wave52_53_2026-10-17.md). Held carriers are listed under [W47 held]. Scripts must follow.
+  - **playing_without_the_puck:**
+    - (a) "take (the contact) on your forearm and hip" at :38, :312, :320, :883, :905 and :972; the posture also lacks "angle in" and "feet apart, knees bent".
+    - (b) The USA Hockey 625(b) crease face-off (a skate or stick in the crease while you have the puck) appears only in the trailer :1006.
+    - (c) The bench clear (:331, :342) names only the NHL and IIHF; the PWHL's 65.2(iii) carries the same rule.
+    - (d) CM :901 and KT :974 drop the NHL/PWHL 42.5 mandatory game misconduct for a charging major that injures a goalie's face or head.
+  - **shooting:**
+    - (a) KT5 (:940) and CM :880 list the mandatory ejection for charging a goalie as Hockey Canada, CARHA and USA Hockey only. The body (:324, :490, :544) and facts (:308, :516) add NHL/PWHL 42.5 and EIHL Casebook 42 for face or head injury. Voiced alone, the short list understates the penalty.
+    - (b) CM :880's CARHA skate-in-crease claim has no matching body sentence. Verify it against carha_2026.txt.
+    - (c) CM :879 ("no two-minute answer while it stays on the back") has no head-contact counterweight.
+    - (d) PWHL is never expanded.
+    - (e) KT10 :945 gives a flex figure the body doesn't.
+    - (f) Omission noted by the script author: USA Hockey's mandatory major and ejection for careless head or face contact (including a goalie's mask). Check whether the slap-shot or high-stick layers need it.
+  - **equipment:**
+    - (a) The PWHL is missing from three NHL/IIHF penalties:
+      - 54.5: game misconduct for throwing a stick out of the playing area
+      - 9.6/51.2: roughing minor for pulling off a helmet
+      - 10.3: minor for carrying a broken stick
+      Locations: :394, :398, :118-119, CM :742, KT :815.
+    - (b) Body :575 says the IIHF "only recommends" a mouthguard, while :147 says it is required for men's U20 without full face protection.
+    - (c) "A goalie may not go to the bench for a new stick" (:394) is stated generally but cites only the NHL, IIHF and USAH; Hockey Canada and CARHA are unchecked.
+    - (d) KT :807 and CM :716 word adult face protection differently ("under 18").
+    - (e) Minor, misconduct, game misconduct and gross misconduct are not defined in spoken layers; PWHL, IHUK, WNIHL, SIHA and BUIHA are not expanded.
+  - **puck_support_and_spacing:**
+    - (a) "take contact / take it on your forearm and hip" at facts :333 and :577, body :345 and :597, and KT5 :724.
+    - (b) No "angle in" or "feet apart, knees bent" limbs.
+    - (c) PWHL 84.1 is cited for no change after icing at facts :419 and trailer :753; the correct rule is 83.4.
+    - (d) :345 says ducking "can break your neck at walking speed", but the Heads Up Hockey source says "can occur at walking speed".
+    - (e) The table row at :188 says "below the goal line" but explains it as "below the dots".
+    - (f) Pressured-support distance is given three ways: "eight to ten feet" (:18), "closer to two stick lengths" (:184) and "about two stick lengths" (:659).
+  - **Wave-50 follow-ups:** defending_the_rush, faceoffs, neutral_zone_systems, game_management and time_and_space checked clean in waves 52–53; still check winger (batch 1, held) and others for "IIHF 76.3(V)… replaced" with no edition, and for a flat "every book penalises the slide". The three MINORs from the wave-50 fresh read are in the wave50 record.
   - **Corpus-wide, boards posture:** several documents teach only part of the full posture (angle in; feet apart, knees bent; the facing-the-wall fallback). Add the missing limbs per document, or point to body_contact_and_battles.
   - **Corpus-wide wording:** "take the contact on your forearm and hip" (body_contact :33, core_principles :187 and others) is ambiguous when heard once. Prefer "forearm and hip to the wall", which core_principles KT11 and breakouts already use.
   - **Stale agent table:** `.claude/agents/rules-verifier.md` omits carha_2026, hc_2026-08-print, iihf_disciplinary_regs_2026, adultsskatetoo_how_to_fall and ihuk_coaching_regs_layout.
@@ -469,6 +475,8 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
     - (a)–(f) DONE in wave 49, except (c), which the rules-verifier judged accurate. Still open: the Priority line (sketch "check whether you are hurt; you can be concussed without being knocked out"), the 625(b) stoppage limb, "stick blade" changed to "stick", and concussion pointers in goaltender facts :1352 and practice_and_development :564/:610. Was: (f) MAJOR. Concussion is raised only as a pointer (:644 facts, :651 body, CM :929, KT10 :987), and "Once you have cleared step 1, speed matters" (:657) implies a self-check rules it out. The action is in no layer. It needs conditioning_and_recovery.md's absolute rule: if a concussion is suspected, come off, tell someone, and do not return that day. A concussed player usually feels fine.
   - **defender** (held for Style B): CARHA 86 puck-first Note missing from :801; Key focus "is a penalty" for the slide (Hockey Canada and CARHA excuse contact when the puck is played first); CM :816 against the body on boarding where checking is legal; the KT :893 screener geometry; CM :816 "no book prices it as a bare two minutes" lacks the Hockey Canada 7.6 head-contact edge.
 - [W47 held for NotebookLM batch 1] Found by the wave-47 sweep on 16 Oct 2026 in files the owner is currently turning into NotebookLM episodes. **Do not edit until the owner says batch 1 is downloaded.**
+  - **rules_primer.md :534 (HC crease cover, MAJOR):** "**The deciding factor is where the puck is, not where the player is**" is unscoped and directly follows a Hockey Canada sentence. Scope it to the NHL, IIHF and PWHL, and add: under Hockey Canada a cover from inside your crease can be the shot (10.2(a)(v)), or the goal with the net empty (vi). Apply b48/_HCCREASE.md.
+  - **center.md facts :547 (HC crease cover):** voiced alone, it lists Hockey Canada 4.11(a)(v) under "the puck's location decides, not yours". The 17 Oct ruling says Hockey Canada 10.2(a)(v) locates the infraction, so price the shot (or the goal with the net empty, (vi)). :549 already agrees. Apply scratchpad brief b48/_HCCREASE.md.
   - rules_primer :493 and :530: IIHF 75.2 "routes … onward to Rule 21" and "fires". The Note says the referee "may apply" Rule 21. The current wording is harsher than the rule.
   - winger facts :95: the holding line names only Hockey Canada 8.1(b) above the minor. CARHA 63(a) gives a discretionary major, which ejects under 30(a). The line is mildly permissive when voiced alone.
   - winger facts :471: "a minor or major" for goalie contact has no mandatory injury limb (HC 8.5(b), CARHA 66(e)). Permissive.
