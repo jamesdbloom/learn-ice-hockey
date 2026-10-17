@@ -2,6 +2,51 @@
   "note": "Playing principles episodes (Style B, ElevenLabs, one voice). Same shape as podcast.json. Each episode carries an explicit guid of the form learn-ice-hockey:principles:<doc_id>, written when it is first published and never changed. Audio lives at /audio/principles/<doc_id>-<sha8>.m4a. Each episode plays on its document page as soon as it exists, but stays OUT of the podcast feed until every document has one (owner, 16 October 2026; project/podcast_two_formats.md).",
   "episodes": [
     {
+      "doc_id": "systems/neutral_zone_systems",
+      "title": "Neutral Zone Systems",
+      "section": "Systems and Situations",
+      "bytes": 15390450,
+      "duration_s": 1843.3,
+      "audio": "/audio/principles/systems/neutral_zone_systems-45c3369c.m4a",
+      "guid": "learn-ice-hockey:principles:systems/neutral_zone_systems"
+    },
+    {
+      "doc_id": "systems/defensive_zone_coverage",
+      "title": "Defensive Zone Coverage",
+      "section": "Systems and Situations",
+      "bytes": 17304978,
+      "duration_s": 2073.0,
+      "audio": "/audio/principles/systems/defensive_zone_coverage-2e3b33fd.m4a",
+      "guid": "learn-ice-hockey:principles:systems/defensive_zone_coverage"
+    },
+    {
+      "doc_id": "systems/defending_the_rush",
+      "title": "Defending the Rush",
+      "section": "Systems and Situations",
+      "bytes": 16739221,
+      "duration_s": 2005.6,
+      "audio": "/audio/principles/systems/defending_the_rush-da40f122.m4a",
+      "guid": "learn-ice-hockey:principles:systems/defending_the_rush"
+    },
+    {
+      "doc_id": "systems/special_teams",
+      "title": "Special Teams",
+      "section": "Systems and Situations",
+      "bytes": 17935131,
+      "duration_s": 2150.0,
+      "audio": "/audio/principles/systems/special_teams-430144ec.m4a",
+      "guid": "learn-ice-hockey:principles:systems/special_teams"
+    },
+    {
+      "doc_id": "systems/faceoffs",
+      "title": "Faceoffs",
+      "section": "Systems and Situations",
+      "bytes": 16718387,
+      "duration_s": 2001.8,
+      "audio": "/audio/principles/systems/faceoffs-f2a1c489.m4a",
+      "guid": "learn-ice-hockey:principles:systems/faceoffs"
+    },
+    {
       "doc_id": "technique/puck_handling",
       "title": "Puck Handling",
       "section": "Technique",
@@ -36,6 +81,15 @@
       "duration_s": 1821.4,
       "audio": "/audio/principles/hockey-iq/puck_support_and_spacing-18c7be81.m4a",
       "guid": "learn-ice-hockey:principles:hockey-iq/puck_support_and_spacing"
+    },
+    {
+      "doc_id": "hockey-iq/time_and_space",
+      "title": "Time and Space",
+      "section": "Hockey IQ",
+      "bytes": 17780743,
+      "duration_s": 2131.6,
+      "audio": "/audio/principles/hockey-iq/time_and_space-4de57a83.m4a",
+      "guid": "learn-ice-hockey:principles:hockey-iq/time_and_space"
     },
     {
       "doc_id": "hockey-iq/risk_management",
