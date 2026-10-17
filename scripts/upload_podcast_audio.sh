@@ -47,13 +47,17 @@
 #     DEPLOYED one; if the local file has uncommitted or undeployed changes, the paths
 #     checked here are not the paths production serves. Deploy the site data first.
 #
-# CACHING. Audio is immutable in practice — a re-encode is a new file, and the
+# CACHING. Audio is immutable — a re-encode is a new file under a NEW KEY, and the
 # feed's guid is deliberately NOT derived from the enclosure URL, so a changed
 # file does not orphan a subscription. A year is right.
-# ⚠️  BUT AN UPLOAD TO AN EXISTING KEY REPLACES THE BYTES BEHIND AN `immutable` URL,
-#     and deploy.yml invalidates nothing under /audio/ (see the cover note below). A
-#     re-encode uploaded to an unchanged `audio` path may be served stale from the edge
-#     for up to that year unless /audio/<path> is invalidated by hand.
+# ⚠️  AN UPLOAD TO AN EXISTING KEY WOULD REPLACE THE BYTES BEHIND AN `immutable` URL,
+#     and deploy.yml invalidates nothing under /audio/ (see the cover note below), so the
+#     edge would keep serving the old audio for up to that year. Since 17 October 2026
+#     BOTH styles therefore use content-hashed keys — Conversation at
+#     /audio/<doc_id>-<sha8>.m4a, Playing principles at /audio/principles/<doc_id>-<sha8>.m4a
+#     — and the agreement check REFUSES an unhashed Conversation path or a hash that does
+#     not match the local file. With --go, a key already in the bucket at the same byte
+#     length is skipped (same name means same bytes). Superseded keys stay in the bucket.
 #
 # ⚠️  THE MIME TYPE MUST MATCH THE FEED. `site/src/pages/feed/podcast.xml.ts` emits
 #     <enclosure type="audio/x-m4a">, which is the type Apple lists for M4A and uses in
@@ -228,6 +232,20 @@ for d, s in site.items():
                     problems.append(f"HASH {d}: {a} names {m_.group(2)} but the local file hashes to {h}")
         if s.get("guid") != f"learn-ice-hockey:principles:{d}":
             problems.append(f"GUID {d}: {s.get('guid')!r} is not learn-ice-hockey:principles:{d}")
+    # ⚠️ Conversation (since 17 Oct 2026): the same content-hash rule, at
+    # /audio/<doc_id>-<sha8>.m4a. An UNHASHED path is refused: uploading new bytes to an
+    # old key is exactly what the one-year `immutable` edge cache turns into stale audio.
+    if style == "conversation" and isinstance(a, str):
+        m_ = re.fullmatch(r"/audio/(.+)-([0-9a-f]{8})\.m4a", a)
+        if not m_ or m_.group(1) != d or a.startswith("/audio/principles/"):
+            problems.append(f"{site_label} {d}: audio {a!r} is not the content-hashed "
+                            f"/audio/{d}-<sha8>.m4a (re-run build_podcast_audio.py)")
+        else:
+            f = src / (man.get(d, {}).get("file") or "")
+            if f.is_file():
+                h = hashlib.sha256(f.read_bytes()).hexdigest()[:8]
+                if h != m_.group(2):
+                    problems.append(f"HASH {d}: {a} names {m_.group(2)} but the local file hashes to {h}")
 
 for d in sorted(set(man) & set(site)):
     m, s = man[d], site[d]
@@ -344,7 +362,7 @@ if [ "$GO" = 0 ]; then
   echo
   echo "  ${n} ${STYLE} episode(s), ${total} bytes; content-type audio/x-m4a,"
   echo "  cache-control 'public, max-age=31536000, immutable'. No --delete."
-  [ "$STYLE" = principles ] && echo "  With --go, a key already in the bucket at the same byte length is skipped."
+  echo "  With --go, a key already in the bucket at the same byte length is skipped."
   echo
   if [ "$CHECK" = 3 ]; then
     echo "Dry run complete. Nothing was uploaded. --go WOULD REFUSE."
@@ -379,18 +397,17 @@ echo "authenticated as: ${CALLER}"
 
 while IFS=$'\t' read -r local key bytes; do
   [ "$local" = "-" ] && { echo "internal error: unplanned entry $key reached --go" >&2; exit 3; }
-  if [ "$STYLE" = principles ]; then
-    case "$key" in
-      audio/principles/*) ;;
-      *) echo "internal error: principles run planned $key, outside audio/principles/" >&2; exit 3 ;;
-    esac
-    # Content-hashed key: if it is already there at this length, it is these bytes.
-    have="$(aws s3api head-object --bucket "$S3_BUCKET" --key "$key" \
-             --query ContentLength --output text 2>/dev/null || true)"
-    if [ "$have" = "$bytes" ]; then
-      echo "already in bucket, skipped: $key"
-      continue
-    fi
+  case "$STYLE:$key" in
+    principles:audio/principles/*) ;;
+    principles:*) echo "internal error: principles run planned $key, outside audio/principles/" >&2; exit 3 ;;
+    conversation:audio/principles/*) echo "internal error: conversation run planned $key, inside audio/principles/" >&2; exit 3 ;;
+  esac
+  # Content-hashed key (both styles): if it is already there at this length, it is these bytes.
+  have="$(aws s3api head-object --bucket "$S3_BUCKET" --key "$key" \
+           --query ContentLength --output text 2>/dev/null || true)"
+  if [ "$have" = "$bytes" ]; then
+    echo "already in bucket, skipped: $key"
+    continue
   fi
   aws s3 cp "$local" "s3://${S3_BUCKET}/${key}" \
     --content-type "audio/x-m4a" \

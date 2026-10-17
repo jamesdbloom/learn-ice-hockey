@@ -62,6 +62,56 @@ const docCount = structure.layers.reduce((n, l) => n + l.docs.length, 0);
 
 const PINNED_RINK_MAP = 'learn-ice-hockey:foundation/rink_map_and_glossary';
 
+// ⚠️ THE GUIDS LIVE SUBSCRIBERS HOLD, FROZEN HERE (17 October 2026). Everything above
+// derives the expected set from podcast.json, so a rewrite of podcast.json that dropped
+// or altered a guid would agree with itself. This list does not move with the data: each
+// of these must still be in the feed. The ENCLOSURE URL may change — since 17 October
+// 2026 a re-made Conversation episode is served from a content-hashed
+// /audio/<doc_id>-<sha8>.m4a, because CloudFront caches /audio/ for a year — but the
+// guid may not. Add a guid here once its episode has been published; never remove one.
+const LIVE_CONVERSATION_GUIDS = [
+  'learn-ice-hockey:getting-started/getting_started',
+  'learn-ice-hockey:reading-diagrams/reading_ice_hockey_diagrams',
+  'learn-ice-hockey:foundation/rink_map_and_glossary',
+  'learn-ice-hockey:foundation/rules_primer',
+  'learn-ice-hockey:foundation/uk_rules',
+  'learn-ice-hockey:foundation/on_ice_communication',
+  'learn-ice-hockey:positions/center',
+  'learn-ice-hockey:positions/winger',
+  'learn-ice-hockey:positions/defender',
+  'learn-ice-hockey:positions/goaltender',
+  'learn-ice-hockey:positions/switching_positions',
+  'learn-ice-hockey:systems/breakouts',
+  'learn-ice-hockey:systems/zone_entries',
+  'learn-ice-hockey:systems/offensive_zone_play',
+  'learn-ice-hockey:systems/forechecking_systems',
+  'learn-ice-hockey:systems/neutral_zone_systems',
+  'learn-ice-hockey:systems/defensive_zone_coverage',
+  'learn-ice-hockey:systems/defending_the_rush',
+  'learn-ice-hockey:systems/special_teams',
+  'learn-ice-hockey:systems/faceoffs',
+  'learn-ice-hockey:systems/game_management',
+  'learn-ice-hockey:technique/skating',
+  'learn-ice-hockey:technique/puck_handling',
+  'learn-ice-hockey:technique/passing_and_receiving',
+  'learn-ice-hockey:technique/shooting',
+  'learn-ice-hockey:technique/body_contact_and_battles',
+  'learn-ice-hockey:hockey-iq/puck_support_and_spacing',
+  'learn-ice-hockey:hockey-iq/time_and_space',
+  'learn-ice-hockey:hockey-iq/scanning_and_anticipation',
+  'learn-ice-hockey:hockey-iq/risk_management',
+  'learn-ice-hockey:hockey-iq/playing_without_the_puck',
+  'learn-ice-hockey:off-the-ice/equipment',
+  'learn-ice-hockey:off-the-ice/conditioning_and_recovery',
+  'learn-ice-hockey:off-the-ice/practice_and_development',
+  'learn-ice-hockey:off-the-ice/mental_game',
+  'learn-ice-hockey:off-the-ice/team_play_and_culture',
+  'learn-ice-hockey:off-the-ice/how_to_watch_hockey',
+  // First published 17 October 2026, minted in the derived form learn-ice-hockey:<doc_id>.
+  'learn-ice-hockey:foundation/core_principles',
+  'learn-ice-hockey:foundation/language_and_glossary',
+];
+
 // ---- expected: the OLD logic, restated --------------------------------------
 const expected = new Map(); // guid -> enclosure url
 for (const ep of conversation) {
@@ -122,6 +172,17 @@ for (const guid of actual.keys()) {
   }
 }
 if (!actual.has(PINNED_RINK_MAP)) fail(`pinned rink_map guid ${PINNED_RINK_MAP} is not in the feed`);
+for (const guid of LIVE_CONVERSATION_GUIDS) {
+  if (!actual.has(guid)) fail(`LIVE guid ${guid} is not in the feed (frozen list; a guid may never change)`);
+}
+// Conversation enclosures must be content-hashed: new bytes under an old /audio/ key are
+// served stale from the edge for a year.
+for (const ep of conversation) {
+  const prefix = `/audio/${ep.doc_id}-`;
+  if (!ep.audio.startsWith(prefix) || !/^[0-9a-f]{8}\.m4a$/.test(ep.audio.slice(prefix.length))) {
+    fail(`Conversation ${ep.doc_id}: audio ${ep.audio} is not /audio/${ep.doc_id}-<sha8>.m4a`);
+  }
+}
 
 // ---- numbering and dates ----------------------------------------------------
 const CEILING = Date.UTC(2026, 8, 8);
@@ -151,7 +212,7 @@ const summary =
   `${items.length} items in ${seasons.size} seasons; ${expected.size} expected guids ` +
   `(${conversation.length} Conversation` +
   (principlesExpectedInFeed ? `, ${principles.length} Playing principles` : `; Playing principles held back, ${principles.length}/${docCount} exist`) +
-  `); pinned rink_map guid ${actual.has(PINNED_RINK_MAP) ? 'present' : 'ABSENT'}`;
+  `); ${LIVE_CONVERSATION_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_CONVERSATION_GUIDS.length} frozen live guids present; pinned rink_map guid ${actual.has(PINNED_RINK_MAP) ? 'present' : 'ABSENT'}`;
 
 if (failures.length) {
   console.error(`check-podcast-guids: FAIL — ${summary}`);

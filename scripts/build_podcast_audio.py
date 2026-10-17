@@ -42,16 +42,22 @@
     entry exactly as it is (guid, audio path, bytes, duration) and its web file is not
     touched; a document with no existing entry simply stays out of the feed.
 
-⚠️  GUID AND AUDIO PATH ARE PRESERVED, because changing either can re-deliver an episode
-    to every subscriber. `guid` is copied from the existing `site/src/data/podcast.json`
+⚠️  THE GUID IS PRESERVED; THE AUDIO PATH IS A CONTENT HASH (since 17 October 2026).
+    `guid` is what a podcast client keys an episode on, so changing it re-delivers the
+    episode to every subscriber. It is copied from the existing `site/src/data/podcast.json`
     entry whenever there is one (e.g. `learn-ice-hockey:foundation/rink_map_and_glossary`,
-    pinned when `rink_map_and_glossary` was renamed `rink_map`), and the existing `audio`
-    path is kept too. ⚠️ `scripts/upload_podcast_audio.sh` uploads to `audio/<doc_id>.m4a`
-    REGARDLESS of `audio`, so for an episode whose preserved path differs from that (today:
-    rink_map) a re-encode or retag would put new bytes at a URL the feed does not serve,
-    while the feed declared the new length for the old file. That is REFUSED unless you pass
-    `--move-audio-path DOC_ID`, which adopts `/audio/<doc_id>.m4a` and keeps the guid.
-    `manifest.json` now carries `audio` too, so the upload script can be made to read it.
+    pinned when `rink_map_and_glossary` was renamed `rink_map`); an entry with no `guid`
+    field keeps the derived `learn-ice-hockey:<doc_id>`, and a NEW episode gets that same
+    derived form. The feed's `<enclosure url>` is allowed to change; the guid is not.
+    ⚠️ THE AUDIO PATH IS NOT PRESERVED FOR NEW BYTES. CloudFront serves /audio/ `immutable`
+    for a year and nothing invalidates it, so new bytes uploaded to an old key would keep
+    being served as the OLD audio. So every episode this run ENCODES OR RETAGS gets
+    `/audio/<doc_id>-<sha8>.m4a` — the same rule as Playing principles: <sha8> is the first
+    8 hex digits of the sha256 of the ENCODED file, so different bytes always get a
+    different key and the same key always means the same bytes. A SKIPPED or EXCLUDED
+    episode keeps whatever path it has, because its bytes have not changed. The old key is
+    left in the bucket (the upload script never deletes). `--move-audio-path`, the earlier
+    answer to the rink_map path split, is obsolete and now refused with this explanation.
 
 TRACK NUMBERS are kept. The feed emits `track` as <itunes:episode>; an existing episode
 keeps its published track unless `--renumber` is given, and a new one takes its
@@ -283,11 +289,19 @@ def tags(doc_id: str, layer_title: str, doc_title: str,
 
 
 def default_audio_path(doc_id: str) -> str:
-    """Where `scripts/upload_podcast_audio.sh` puts an episode: `audio/<doc_id>.m4a`.
-    Pure ASCII — Apple requires "only ASCII filenames and URLs that include a-z, A-Z,
-    or 0-9", and the master filenames contain spaces, so the served name is NOT the
-    file name."""
+    """The LEGACY unhashed path, `/audio/<doc_id>.m4a`. Only an entry written before
+    17 October 2026 that carries no `audio` field could still mean this; nothing this
+    script writes now uses it. Pure ASCII — Apple requires "only ASCII filenames and URLs
+    that include a-z, A-Z, or 0-9", and the master filenames contain spaces, so the
+    served name is NOT the file name."""
     return f"/audio/{doc_id}.m4a"
+
+
+def conversation_audio_path(doc_id: str, sha8: str) -> str:
+    """The served path for Conversation bytes this run wrote: `/audio/<doc_id>-<sha8>.m4a`,
+    doc_id keeping its slash, exactly as Playing principles does under /audio/principles/.
+    A content hash, so a re-encode can never be served from a stale edge cache."""
+    return f"/audio/{doc_id}-{sha8}.m4a"
 
 
 def load_queue_status() -> dict[str, str]:
@@ -635,9 +649,9 @@ def main() -> int:
                     help="leave this document's master unpublished and carry its EXISTING feed "
                          "entry forward unchanged. Required, by name, for every refused master.")
     ap.add_argument("--move-audio-path", action="append", default=[], metavar="DOC_ID",
-                    help="allow a rewritten (encoded/retagged) episode to move from its preserved "
-                         "audio path to /audio/<doc_id>.m4a (where upload_podcast_audio.sh "
-                         "uploads). guid is kept.")
+                    help="OBSOLETE since 17 Oct 2026 and refused: every encoded or retagged "
+                         "episode now gets a content-hashed /audio/<doc_id>-<sha8>.m4a path "
+                         "(guid kept). See the docstring.")
     ap.add_argument("--renumber", action="store_true",
                     help="renumber every episode's track from structure.json. Without it, existing "
                          "episodes keep their published track (<itunes:episode>).")
@@ -690,7 +704,13 @@ def main() -> int:
     total_docs = len(order)
     known_ids = {r[0] for r in order}
 
-    bad = [d for d in args.exclude + args.move_audio_path if d not in known_ids]
+    if args.move_audio_path:
+        print("⚠️  --move-audio-path is obsolete: every episode this run encodes or retags now "
+              "gets a content-hashed /audio/<doc_id>-<sha8>.m4a path, and its guid is kept. "
+              "Drop the flag.", file=sys.stderr)
+        return 2
+
+    bad = [d for d in args.exclude if d not in known_ids]
     if bad:
         print(f"⚠️  unknown doc_id(s), not in structure.json: {bad}", file=sys.stderr)
         return 2
@@ -771,21 +791,10 @@ def main() -> int:
 
     action_of = {row[0]: a for _m, row, a, _w in plan if a != "EXCLUDED"}
 
-    # ---- --move-audio-path only means something for a rewritten episode -------------
-    misused = [d for d in args.move_audio_path if action_of.get(d) not in ("encode", "retag")]
-    if misused:
-        print(f"⚠️  --move-audio-path is only allowed for an episode this run encodes or retags; "
-              f"not for {misused} ({[action_of.get(d, 'not processed') for d in misused]})",
-              file=sys.stderr)
-        return 2
-
-    # ---- path-preservation gate ------------------------------------------------------
-    path_refused = []
-    for doc_id, action in action_of.items():
-        if action in ("encode", "retag") and doc_id in existing:
-            kept = existing[doc_id].get("audio", default_audio_path(doc_id))
-            if kept != default_audio_path(doc_id) and doc_id not in args.move_audio_path:
-                path_refused.append((doc_id, kept))
+    # (The old path-preservation gate lived here. It refused a rewrite whose preserved
+    # `audio` differed from /audio/<doc_id>.m4a. Rewritten bytes now always get a new
+    # content-hashed key, which the upload script reads from `audio`, so the split it
+    # guarded against cannot occur.)
 
     print(f"build_podcast_audio: {len(pairs)} master(s) matched to {total_docs} document(s)"
           f"{'  — DRY RUN, nothing will be written' if args.dry_run else ''}")
@@ -821,15 +830,7 @@ def main() -> int:
               "    publishable only once its queue status is 'accepted' (scripts/podcast_queue.py\n"
               "    set-status), which is set only after transcript review has passed.",
               file=sys.stderr)
-    if path_refused:
-        print("\n⚠️⚠️  REFUSED — audio path would split from the upload path:", file=sys.stderr)
-        for d, kept in path_refused:
-            print(f"      {d}: feed serves {kept}, but upload_podcast_audio.sh uploads to "
-                  f"{default_audio_path(d)}.\n"
-                  f"          Rewriting it would declare NEW bytes for the OLD file. Fix the upload\n"
-                  f"          script to read manifest 'audio', or pass --move-audio-path {d}\n"
-                  f"          (guid is kept; the enclosure URL changes).", file=sys.stderr)
-    if refused or path_refused:
+    if refused:
         return 2
 
     # ---- backup gate: same answer in a dry run and a real one ------------------------
@@ -869,7 +870,7 @@ def main() -> int:
             manifest.append({"doc_id": doc_id, "title": doc_title, "section": layer_title,
                              "track": track, "file": str(rel), "bytes": None,
                              "duration_s": None, "bitrate": None,
-                             "url": f"{SITE}/{doc_id}/"})
+                             "url": f"{SITE}/{doc_id}/", "new_audio": None})
             continue
 
         if action in ("encode", "retag"):
@@ -906,8 +907,13 @@ def main() -> int:
             tmp.replace(dest)
             done += 1
 
+        # ⚠️ New bytes, new key: the served path is the content hash of the file just
+        # written. A skipped episode has no `new_audio` and keeps its existing path.
+        new_audio = (conversation_audio_path(doc_id, sha256_of(dest)[:8])
+                     if action in ("encode", "retag") else None)
         info = probe(dest)
         manifest.append({
+            "new_audio": new_audio,
             "doc_id": doc_id,
             "title": doc_title,
             "section": layer_title,
@@ -952,9 +958,12 @@ def main() -> int:
         e = {}
         if "guid" in prev:
             e["guid"] = prev["guid"]          # NEVER drop a pinned guid
-        audio = prev.get("audio", default_audio_path(r["doc_id"]))
-        if r["doc_id"] in args.move_audio_path:
-            audio = default_audio_path(r["doc_id"])
+        if r.get("new_audio"):
+            audio = r["new_audio"]
+        elif action_of.get(r["doc_id"]) in ("encode", "retag"):
+            audio = f"/audio/{r['doc_id']}-<sha8>.m4a"          # dry run: hash not yet known
+        else:
+            audio = prev.get("audio", default_audio_path(r["doc_id"]))
         e.update({"doc_id": r["doc_id"], "title": r["title"], "section": r["section"],
                   "track": r["track"], "bytes": r["bytes"], "duration_s": r["duration_s"],
                   "audio": audio})
@@ -983,7 +992,8 @@ def main() -> int:
         changes = []
         for k in ("guid", "audio", "track", "title", "section", "bytes", "duration_s"):
             if a.get(k) != b.get(k):
-                tag = "  ⚠️ RE-DELIVERY RISK" if k in ("guid", "audio") else ""
+                tag = ("  ⚠️ RE-DELIVERY RISK" if k == "guid" else
+                       "  (new content-hashed key; guid unchanged)" if k == "audio" else "")
                 val = "(after encode)" if b.get(k) is None else b.get(k)
                 changes.append(f"{k}: {a.get(k)} -> {val}{tag}")
         how = action_of.get(doc_id, "carried")
@@ -993,9 +1003,10 @@ def main() -> int:
 
     renumbered = [d for d in existing if d in new_by and existing[d].get("track") != new_by[d].get("track")]
     if renumbered:
-        print(f"\n⚠️  {len(renumbered)} existing episode(s) change track number (--renumber), which the "
-              f"feed emits as <itunes:episode> and <itunes:order>. Not a re-delivery (guid decides "
-              f"that), but podcast apps will show new episode numbers.")
+        print(f"\nℹ️  {len(renumbered)} existing episode(s) change track number (--renumber). Since "
+              f"16 Oct 2026 the feed numbers episodes from structure.json, not from `track`; "
+              f"`track` now sets the m3u playlist order and the file's track tag. Not a "
+              f"re-delivery (guid decides that).")
     tracks = [e["track"] for e in new_eps]
     clashes = sorted({t for t in tracks if tracks.count(t) > 1})
     if clashes:
@@ -1034,6 +1045,7 @@ def main() -> int:
     for r in manifest:
         r = dict(r)
         r["audio"] = site_entry(r)["audio"]
+        r.pop("new_audio", None)
         out_manifest.append(r)
     for doc_id, ep, file in carried:
         old = old_manifest.get(doc_id) or {}
