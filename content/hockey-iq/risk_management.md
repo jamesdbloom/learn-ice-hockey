@@ -704,7 +704,7 @@ Never: Reach higher to hold a puck above the crossbar — once you are holding i
 ### Slew-footing: the one the carve-outs never reach
 
 ```facts
-Rule: NHL 52.2 is a mandatory match penalty with no lower tier; USA Hockey 639 a minimum major plus game misconduct with a match above it (639(c)); Hockey Canada 8.8 a double minor rising to a match, with its checking-from-behind rule 7.5 reaching the same act once you push the player into the boards
+Rule: NHL 52.2 is a mandatory match with no lower tier; USA Hockey 639 a minimum major plus game misconduct, and plan on a match if reckless (639(c), 602(a)); Hockey Canada 8.8 a double minor rising to a match, with its checking-from-behind rule 7.5 reaching the act once you push them into the boards
 Rule: 8.8 is not Hockey Canada's only slew-foot rule — 7.5's checking-from-behind preamble names a player who "kicks" or "pulls" an opponent's feet out from behind and then pushes them into the boards, and 7.5(c)'s Match penalty is mandatory where the opponent cannot protect or defend themselves
 Rule: Once a player is driven from behind into the boards or the goal, unable to protect or defend themselves, the Match penalty is mandatory in Hockey Canada 7.5(c) and in CARHA 53(b), whose Note tells referees "not to substitute other penalties when a player is checked from behind in any manner"
 Rule: IIHF 52.2, the British reader's, is a major plus an automatic game misconduct, framed "The Referee shall, at their discretion, assess" — and Rule 52 writes no lesser tier beneath it: 52.1 defines the foul, 52.2 is its only penalty clause
