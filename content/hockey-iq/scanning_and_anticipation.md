@@ -161,7 +161,7 @@ Priority: The highest-value moment to scan is the one to three seconds while the
 Action: Look while the puck is on the far side of the ice — nothing is being asked of your hands
 Action: On the backcheck, look over your inside shoulder and count opponents, not pucks
 Action: Before receiving on the wall take an early look and a late one — the early one tells you your options, the late one whether they still exist
-Never: Turn your back to a checker or duck. Angle in, feet apart, knees bent, skates parallel to the wall, forearm and hip on it — never the shoulder tip, ideally not the whole shoulder — head and chin up
+Never: Turn your back to a checker or duck. Angle in, feet apart, knees bent, skates parallel to the wall, forearm and hip on it — never the shoulder tip, ideally not the whole shoulder — chin off your chest
 Action: Scan during stoppages — who is out, who takes the draw, which defence pair, where your bench is, the score and the clock
 Action: Break the reflex of following your own pass; the moment the puck leaves your blade you are an off-puck player
 Convention: The scan counts in this section are coaching craft — nobody has validated an optimal number for any of these moments

@@ -383,22 +383,16 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
   - DZC facts :513: "604(e) can add a match" has no reckless antecedent when voiced alone. Same shape as the wave-63 DTR fix.
   - DTR facts :644: "a trip meant to injure is a match under NHL, PWHL, CARHA" omits USAH 602(a). Add USA Hockey.
 - [W66 DISCARDED, 18 Oct — owner ruling stands] ⚠️ **Hockey Canada: a check from behind that reaches the head (including head-first into the boards or goal frame) is priced via 7.6 (7.7 in Junior/Senior) ONLY. Do not add 7.5's game misconduct or boards match** (owner, 15 Oct; reconfirmed 18 Oct: "Keep my 15 Oct ruling"). Wave 66 had rewritten 18 documents to a 7.5-floor reading. A facts-reviewer flagged the conflict and the owner chose the ruling, so the round was discarded (patch kept in scratchpad w66/discarded/w66.patch). Wave 67 (18 Oct) reverted wave 65's two drifted passages (offensive_zone_play :919–939, game_management :878); see wave67_2026-10-18.md. Do not re-brief the 7.5-floor reading.
-  - Unrelated good items from the discarded round, to redo: (done in wave 67: goaltender :1220 high-sticking scope; game_management facts :851 602(a)). Still to do: game_management :878 should run the 7.7 tiers harshest first, with the 7.7(c) match bold, and gloss Interpretation 1(i) as "drives a shoulder, elbow, forearm, hand or stick into his head" so the chunk does not end on the roughing exit; goaltender :1220 CARHA high stick "reaches the head" → "above the shoulders", and add the 62(c) match; offensive_zone_play :928 could carry the Interpretation 1 to 7.7(a) late-hit floor; game_management needs a facts line for the head-reaching HC hit (block has room); special_teams/defender/center/winger "up to a match" wording does not apply under the ruling; forechecking facts :665 7.5(b) mandatory on injury, but only for a hit that stays off the head; defending_the_rush facts :388 citation "major and a match (608(c), 7.5(c))" cites match clauses for the major; :608 "And you are behind them" antecedent; zone_entries :229 cites 7.5(d)/(e), which its body never mentions.
+  - The unrelated items from the discarded round were done in waves 67–68 (see wave68_2026-10-18.md).
   - Still open: whether other books' head-contact rules (NHL/PWHL 48, IIHF 48.1) price a head-reaching hit from behind below their own Rule 43. The owner ruled the IIHF stays on 43 (15 Oct). The NHL/PWHL question is unasked.
-- [W65 leftovers] Found during wave 65 (see project/reviews/wave65_2026-10-18.md).
-  - body_contact: the HC 7.6(b) cross-check lines at :1320/:624/:684 are missing Interpretation 2's "deliberate"; :1812 gives IIHF 47.3 without its discretion; a blank line splits the head-butting facts block at :1799; :540/:1548 kneeing has no 602(a) match (:540 is at 299/300).
-  - rules_primer: the "CARHA any major ends your game" row (:485, KT :1148) is unchecked against the 30(a) accidental-high-stick exception.
-  - scanning: the facts block is at HARD_MAX 14; OPEN_ITEMS :225 (NHL 56.5 without 21.1) not swept.
-  - game_management: open for a rules-verifier: does a direct head hit from behind escape 7.5's GM under 7.6? Also check whether 7.4 charging and 8.3 interference also price no-check contact.
-  - goaltender: does HC define "player" to include goalkeepers (the body says "all four books")?
-  - center: confirm Body Contact states the IIHF 48.1 limit itself.
-  - language_and_glossary :301 "the four books" in the empty-net entry is stale against six books; check each book's icing rule.
-  - scanning facts :164 now reads "head and chin up" where the other sites say "chin off your chest"; restore that if room allows.
-  - winger :479/:577/:702 charging: no 602(a); facts :480 reckless USAH cross-check at 609(b) only (line is full).
-  - body_contact "interference in any game / whenever you do it" at :216, :217, :1273, :1279, :1289, :1326, :1371 and :1846 is stronger than the books (NHL 56.2 "can"; USAH Casebook 609 Sit 2 "may"). It errs harsh. Soften all eight together or none.
-  - goaltender :1220 "a major that must be called where it injures under Hockey Canada" includes high-sticking, but HC 9.5(b) says no major for a high stick (overstates).
-  - game_management facts :851 stops a reckless USAH from-behind hit at 608(b); winger now carries 602(a).
-  - mental_game: confirm every tier in :543/:547 is still backed by a rule the trailer names, now that the inline numbers are gone.
+- [W68 follow-ups] Open items from wave 68 (see project/reviews/wave68_2026-10-18.md). The W65 leftover rows closed in wave 68.
+  - **Sibling sweep:** look for "walking/moving a screener is interference in every game" and for the HC 7.5(c) boards match cited for a head-first hit. Candidates: defender, special_teams, defensive_zone_coverage. Body Contact now says "can be called interference" and scopes 7.5(c) to a hit that stays off the head.
+  - **"Stays off the head" vs a head-first drive:** a listener could read a hit that drives the head into the boards as having "stayed off the head" (harsh direction). This applies corpus-wide.
+  - **defending_the_rush :388:** the 608(b) condition says "head first" without "into the boards or goal frame" (harsh direction; the line is at 295).
+  - **zone_entries facts :229:** its block gives no head-reaching counterpart (the block at :778 does).
+  - **offensive_zone_play facts :751:** the 7.5(c) frame match has no head scope (295/300; the price is the same either way).
+  - **game_management :893–897:** optional clause noting that HC 7.4(c) charging is a match where the player cannot defend himself. 7.4 and 8.3 are not division-scoped.
+
 - [POD two formats] **Step 4 is done (17 Oct): `--style principles` in build_podcast_audio, upload_podcast_audio and podcast_queue. The owner approved the page design from the local Shooting preview: "looks good lets follow that for all pages".** **Owner decisions of 16 Oct 2026 are recorded in `project/podcast_two_formats.md`, which is the spec.** Work order:
   1. Site refactor with no change to output. Diff the feed, playlists and pages against main.
   2. Renumber the live Conversation feed to section seasons, with section-prefixed titles and synthetic dates. Every guid must stay unchanged, enforced by a scripted assertion.

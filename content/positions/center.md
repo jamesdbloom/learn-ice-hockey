@@ -694,7 +694,7 @@ Rule: IIHF 101.1 excepts itself more than once — competing for possession you 
 Rule: The NHL, IIHF and PWHL write no minor for checking from behind at all (43.2 in all three) — what is left is a major, mandatory under NHL 43.3 and at the referee's discretion under IIHF 43.3 for a check that recklessly endangers, with a game misconduct on it (NHL 43.5)
 Rule: From behind: USA Hockey's minor adds a misconduct (608(a)), CARHA's and Hockey Canada's a game misconduct (53(a), 7.5(a) off the head; major on injury). USA Hockey: at least a major and game misconduct if reckless, head first into boards or goal frame (608(b)) or forceful along the boards (Casebook)
 Rule: Once a hit from behind reaches his head or drives him head first into the boards, Hockey Canada prices it as head contact (Rule 7.6; 7.7 in Junior and Senior) — up to a mandatory major and game misconduct, and a match if he could not protect himself
-Rule: A hit from behind into boards or net on a player "unable to protect or defend themselves" is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b) — and a reckless one with excessive force on a vulnerable or defenseless player is a match anywhere under USA Hockey 608(c)
+Rule: A hit from behind into boards or net on a player "unable to protect or defend themselves" is a mandatory match in Hockey Canada 7.5(c), off the head, and CARHA 53(b) — and a reckless one with excessive force on a vulnerable or defenseless player is a match anywhere under USA Hockey 608(c)
 Never: Finish a backcheck into the back of a player skating at his own end boards — take the puck, the ice, or angle him off it. Ask your book and classification before you plan any hit
 ```
 
