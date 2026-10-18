@@ -385,16 +385,22 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
 - [W66 DISCARDED, 18 Oct — owner ruling stands] ⚠️ **Hockey Canada: a check from behind that reaches the head (including head-first into the boards or goal frame) is priced via 7.6 (7.7 in Junior/Senior) ONLY. Do not add 7.5's game misconduct or boards match** (owner, 15 Oct; reconfirmed 18 Oct: "Keep my 15 Oct ruling"). Wave 66 had rewritten 18 documents to a 7.5-floor reading. A facts-reviewer flagged the conflict and the owner chose the ruling, so the round was discarded (patch kept in scratchpad w66/discarded/w66.patch). Wave 67 (18 Oct) reverted wave 65's two drifted passages (offensive_zone_play :919–939, game_management :878); see wave67_2026-10-18.md. Do not re-brief the 7.5-floor reading.
   - The unrelated items from the discarded round were done in waves 67–68 (see wave68_2026-10-18.md).
   - Still open: whether other books' head-contact rules (NHL/PWHL 48, IIHF 48.1) price a head-reaching hit from behind below their own Rule 43. The owner ruled the IIHF stays on 43 (15 Oct). The NHL/PWHL question is unasked.
-- [W68 follow-ups] **Wave 69 dispatched 18 Oct: per-file agents on game_management, goaltender, body_contact, defender, special_teams, DZC, ozp/zone_entries/dtr and switching/uk_rules, each working every open row that names its file.** Open items from wave 68 (see project/reviews/wave68_2026-10-18.md). The W65 leftover rows closed in wave 68.
-  - **Sibling sweep:** look for "walking/moving a screener is interference in every game" and for the HC 7.5(c) boards match cited for a head-first hit. Candidates: defender, special_teams, defensive_zone_coverage. Body Contact now says "can be called interference" and scopes 7.5(c) to a hit that stays off the head.
-  - **"Stays off the head" vs a head-first drive:** a listener could read a hit that drives the head into the boards as having "stayed off the head" (harsh direction). This applies corpus-wide.
-  - **defending_the_rush :388:** the 608(b) condition says "head first" without "into the boards or goal frame" (harsh direction; the line is at 295).
-  - **zone_entries facts :229:** its block gives no head-reaching counterpart (the block at :778 does).
-  - **offensive_zone_play facts :751:** the 7.5(c) frame match has no head scope (295/300; the price is the same either way).
-  - **game_management facts :851 (gate note):** heard alone, the line gives only part of the ladder. It omits 7.7(b)'s major plus GM at high violence and 7.6(b)'s discretionary major on violence, so "if hurt" can sound like the only route to a major. Add "a major and GM at high violence (7.7(b))" if it fits.
-  - **"Deliberate" cross-check (gate note):** body_contact limits 7.6(b)'s cross-check limb to a deliberate cross-check (Interpretation 2). goaltender :1220 and game_management :879 state it flat (harsh direction). Align them.
-  - **body_contact :1371:** "can get you called every time you do it" mixes "can" with "every time". Wording nit.
-  - **game_management :893–897:** optional clause noting that HC 7.4(c) charging is a match where the player cannot defend himself. 7.4 and 8.3 are not division-scoped.
+- [W69 follow-ups] Open items from wave 69 (see project/reviews/wave69_2026-10-18.md). The W68 follow-up rows closed in wave 69, and the per-file rows for game_management, goaltender, body_contact, defender, special_teams, DZC, ozp, zone_entries, dtr, switching_positions and uk_rules were worked. The rows below are what is left.
+  - **Sibling sweep, HC head price:** wherever a unit states Hockey Canada's off-the-head floor (7.5), the head price must sit in the same unit (7.6; 7.7 in Junior/Senior; up to a match). Candidates: puck_handling, risk_management, center, winger, rules_primer, forechecking.
+  - **Sibling sweep, screener:** "walking a screener out is interference" should read "can be called interference" (NHL 56.2 "can"; USAH Casebook 609 Sit 2 "may apply"). The instruction still leads. Done in body_contact, defender, DZC and goaltender.
+  - **Sibling sweep, HC crease penalty shot:** every 10.2(a)(v) citation needs its 4.11(a)(v) puck-in-crease limb too.
+  - **Sibling sweep, puck after the whistle:** all six books make intentionally knocking or shooting the puck out of an official's reach a misconduct (39.4 / 601(c)(3) / 11.1(d)(iii) / 46(b)(3)). Look for "the NHL/IIHF write no puck limb".
+  - **dtr :310 and KT9 :993:** HC 7.4 "blind side" applied at the end boards, where Interpretation 2 defines blind side as open ice. Harsh direction; needs a rules-verifier.
+  - **CARHA ceiling lines without 48(a):** ozp :878 and similar.
+  - **Owner questions still open:** ze :755 USAH 604(c) disagreement; the ozp spin-off vs "never turn your back" tension; NHL/PWHL 48 vs 43 for a head-reaching hit from behind.
+  - **Readability, too large for a safe single edit:**
+    - game_management long chunks (:136, :206, :647, :864–:933, :1068–:1076) and its 14 KTs.
+    - DZC :132/:177 ~10k-char paragraphs.
+    - body_contact CM :1858 (3.1k, sole carrier) and other long CMs.
+    - switching CM :513.
+    - ze KT count.
+  - **goaltender LEFT rows:** 733, 752, 754, 844, 870/874, 963, 797, 738.
+  - **Method:** brief every Hockey Canada wave with sources/hc.txt. hc_2026-08-print.txt is superseded.
 
 - [POD two formats] **Step 4 is done (17 Oct): `--style principles` in build_podcast_audio, upload_podcast_audio and podcast_queue. The owner approved the page design from the local Shooting preview: "looks good lets follow that for all pages".** **Owner decisions of 16 Oct 2026 are recorded in `project/podcast_two_formats.md`, which is the spec.** Work order:
   1. Site refactor with no change to output. Diff the feed, playlists and pages against main.
