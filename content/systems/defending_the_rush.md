@@ -513,7 +513,7 @@ Risk: A late or wild slide is the one that trips somebody — but the timing is 
 Rule: Under USA Hockey, leaving your feet and sliding an opponent down is tripping "regardless of who gains possession of the puck" — sole exception, knees dropped to block a shot (Casebook 639, Sit. 4); a reckless one is a mandatory major plus game misconduct (639(b)) — plan on a match (602(a))
 Rule: A slide catching an opponent low reads as clipping, not tripping — NHL and IIHF 44.1, "throwing the body across or below the knees of an opponent from any direction", though neither names it; Hockey Canada 8.7 draws it at the hips; NHL 44.3 mandates the major on injury, 44.5 the game misconduct
 Rule: IIHF clipping needs no injury — 44.3 reaches a major plus an automatic game misconduct, at the referee's discretion, where the clip "recklessly endangers" an opponent and a minor would not sanction it sufficiently; on the NHL side 21.1 makes a match mandatory for a clip meant to injure
-Rule: A low hit from behind isn't clipping — IIHF 43.1 "in any manner", no minor (43.2); CARHA 53(a) adds a game misconduct, as Hockey Canada 7.5(a) does off the head (on it, its 7.6, 7.7: up to a match, a must if defenceless); USA Hockey: if reckless, plan on a match (602(a)). NHL, PWHL: vaguer, no laxer
+Rule: A low hit from behind isn't clipping — IIHF 43.1 "in any manner", no minor (43.2); CARHA 53(a) adds a game misconduct; Hockey Canada 7.5(a) too off the head; on the head, 7.6, 7.7: up to a match, a must if defenceless; USA Hockey: if reckless, plan on a match (602(a)). NHL, PWHL: vaguer, no laxer
 Action: Ask which of the two your team plays, and settle it with your goalie before the game rather than during it
 ```
 
