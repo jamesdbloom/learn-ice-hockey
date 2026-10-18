@@ -104,7 +104,9 @@ export const PODCAST_DESCRIPTION =
   'The podcast that teaches you to think the game. Learn exactly where to ' +
   'position yourself, how to make the right play, how to anticipate what ' +
   'happens next, and how to flow with your teammates as a single unit. If you ' +
-  'want smarter hockey, this is where it starts.';
+  'want smarter hockey, this is where it starts. Every topic now comes in two ' +
+  'formats: a Conversation, with two hosts talking it through, and Playing ' +
+  'principles, a single narrator explaining plainly what to do and why.';
 
 export const PODCAST_OWNER_EMAIL = 'podcast@learn-ice-hockey.com';
 

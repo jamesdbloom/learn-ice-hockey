@@ -29,6 +29,69 @@
       "guid": "learn-ice-hockey:principles:reading-diagrams/reading_ice_hockey_diagrams"
     },
     {
+      "doc_id": "foundation/rink_map",
+      "title": "Rink Map",
+      "section": "Foundation",
+      "bytes": 16243755,
+      "duration_s": 1946.0,
+      "audio": "/audio/principles/foundation/rink_map-28ffd017.m4a",
+      "guid": "learn-ice-hockey:principles:foundation/rink_map"
+    },
+    {
+      "doc_id": "foundation/language_and_glossary",
+      "title": "Language and Glossary",
+      "section": "Foundation",
+      "bytes": 18439727,
+      "duration_s": 2208.0,
+      "audio": "/audio/principles/foundation/language_and_glossary-f84c5e27.m4a",
+      "guid": "learn-ice-hockey:principles:foundation/language_and_glossary"
+    },
+    {
+      "doc_id": "foundation/rules_primer",
+      "title": "Rules Primer",
+      "section": "Foundation",
+      "bytes": 20018610,
+      "duration_s": 2397.5,
+      "audio": "/audio/principles/foundation/rules_primer-96b4ea76.m4a",
+      "guid": "learn-ice-hockey:principles:foundation/rules_primer"
+    },
+    {
+      "doc_id": "foundation/uk_rules",
+      "title": "UK and England Rules",
+      "section": "Foundation",
+      "bytes": 20443065,
+      "duration_s": 2453.6,
+      "audio": "/audio/principles/foundation/uk_rules-13fe9a8e.m4a",
+      "guid": "learn-ice-hockey:principles:foundation/uk_rules"
+    },
+    {
+      "doc_id": "foundation/on_ice_communication",
+      "title": "On-Ice Communication",
+      "section": "Foundation",
+      "bytes": 19153708,
+      "duration_s": 2294.5,
+      "audio": "/audio/principles/foundation/on_ice_communication-b0fa5dca.m4a",
+      "guid": "learn-ice-hockey:principles:foundation/on_ice_communication"
+    },
+    {
+      "doc_id": "positions/center",
+      "title": "Center",
+      "section": "Positions",
+      "bytes": 16459162,
+      "duration_s": 1973.0,
+      "audio": "/audio/principles/positions/center-1bf21985.m4a",
+      "guid": "learn-ice-hockey:principles:positions/center"
+    },
+    {
+      "doc_id": "positions/winger",
+      "title": "Winger",
+      "section": "Positions",
+      "bytes": 19928322,
+      "duration_s": 2388.2,
+      "audio": "/audio/principles/positions/winger-d363280c.m4a",
+      "guid": "learn-ice-hockey:principles:positions/winger"
+    },
+    {
       "doc_id": "positions/defender",
       "title": "Defender",
       "section": "Positions",
@@ -36,6 +99,24 @@
       "duration_s": 1789.9,
       "audio": "/audio/principles/positions/defender-213d97a3.m4a",
       "guid": "learn-ice-hockey:principles:positions/defender"
+    },
+    {
+      "doc_id": "positions/goaltender",
+      "title": "Goaltender",
+      "section": "Positions",
+      "bytes": 17047865,
+      "duration_s": 2042.0,
+      "audio": "/audio/principles/positions/goaltender-bace78a1.m4a",
+      "guid": "learn-ice-hockey:principles:positions/goaltender"
+    },
+    {
+      "doc_id": "positions/switching_positions",
+      "title": "Switching Positions",
+      "section": "Positions",
+      "bytes": 16840318,
+      "duration_s": 2016.9,
+      "audio": "/audio/principles/positions/switching_positions-5c715bd2.m4a",
+      "guid": "learn-ice-hockey:principles:positions/switching_positions"
     },
     {
       "doc_id": "systems/breakouts",
@@ -54,6 +135,15 @@
       "duration_s": 1934.6,
       "audio": "/audio/principles/systems/zone_entries-40f9d30a.m4a",
       "guid": "learn-ice-hockey:principles:systems/zone_entries"
+    },
+    {
+      "doc_id": "systems/offensive_zone_play",
+      "title": "Offensive Zone Play",
+      "section": "Systems and Situations",
+      "bytes": 17306384,
+      "duration_s": 2073.8,
+      "audio": "/audio/principles/systems/offensive_zone_play-60e43af4.m4a",
+      "guid": "learn-ice-hockey:principles:systems/offensive_zone_play"
     },
     {
       "doc_id": "systems/forechecking_systems",
@@ -110,6 +200,15 @@
       "guid": "learn-ice-hockey:principles:systems/faceoffs"
     },
     {
+      "doc_id": "systems/game_management",
+      "title": "Game Management",
+      "section": "Systems and Situations",
+      "bytes": 17334371,
+      "duration_s": 2076.5,
+      "audio": "/audio/principles/systems/game_management-15aa9d5b.m4a",
+      "guid": "learn-ice-hockey:principles:systems/game_management"
+    },
+    {
       "doc_id": "technique/skating",
       "title": "Skating",
       "section": "Technique",
@@ -144,6 +243,15 @@
       "duration_s": 1968.9,
       "audio": "/audio/principles/technique/shooting-558e3fb3.m4a",
       "guid": "learn-ice-hockey:principles:technique/shooting"
+    },
+    {
+      "doc_id": "technique/body_contact_and_battles",
+      "title": "Body Contact and Battles",
+      "section": "Technique",
+      "bytes": 24360075,
+      "duration_s": 2918.0,
+      "audio": "/audio/principles/technique/body_contact_and_battles-b077b549.m4a",
+      "guid": "learn-ice-hockey:principles:technique/body_contact_and_battles"
     },
     {
       "doc_id": "hockey-iq/puck_support_and_spacing",
@@ -200,6 +308,15 @@
       "guid": "learn-ice-hockey:principles:off-the-ice/equipment"
     },
     {
+      "doc_id": "off-the-ice/conditioning_and_recovery",
+      "title": "Conditioning and Recovery",
+      "section": "Off the Ice",
+      "bytes": 20417890,
+      "duration_s": 2449.9,
+      "audio": "/audio/principles/off-the-ice/conditioning_and_recovery-ddb1c8fd.m4a",
+      "guid": "learn-ice-hockey:principles:off-the-ice/conditioning_and_recovery"
+    },
+    {
       "doc_id": "off-the-ice/practice_and_development",
       "title": "Practice and Development",
       "section": "Off the Ice",
@@ -207,6 +324,24 @@
       "duration_s": 2311.5,
       "audio": "/audio/principles/off-the-ice/practice_and_development-4f85c964.m4a",
       "guid": "learn-ice-hockey:principles:off-the-ice/practice_and_development"
+    },
+    {
+      "doc_id": "off-the-ice/mental_game",
+      "title": "The Mental Game",
+      "section": "Off the Ice",
+      "bytes": 20032167,
+      "duration_s": 2400.9,
+      "audio": "/audio/principles/off-the-ice/mental_game-3e2deb24.m4a",
+      "guid": "learn-ice-hockey:principles:off-the-ice/mental_game"
+    },
+    {
+      "doc_id": "off-the-ice/team_play_and_culture",
+      "title": "Team Play and Culture",
+      "section": "Off the Ice",
+      "bytes": 20403976,
+      "duration_s": 2444.1,
+      "audio": "/audio/principles/off-the-ice/team_play_and_culture-d34ca451.m4a",
+      "guid": "learn-ice-hockey:principles:off-the-ice/team_play_and_culture"
     },
     {
       "doc_id": "off-the-ice/how_to_watch_hockey",
