@@ -416,7 +416,7 @@ Position: The weak-side winger higher and wider than everyone, for the width tha
 Priority: In your own end the safe outlet outranks the attacking option — support short, keep the angles safe
 Action: Use the goalie as support — best view on the ice, no puck to look at
 Rule: Firing it the length of the ice is icing: defensive-zone draw, no line change (NHL 81.4, which excepts only injury, a returning pulled goalie and a strength-changing penalty) and no timeout (87.1 — Rule 81 has no timeout provision); Special Teams covers the shorthanded exemption and its carve-outs
-Rule: The no-change and no-timeout consequences after an icing are NHL, IIHF and PWHL — USA Hockey imposes neither (NHL 81.4, 87.1; IIHF 81.4, 87.1; PWHL 83.4, 89.1)
+Rule: The no-change and no-timeout consequences after an icing are NHL, IIHF and PWHL — an injured player can still be replaced, and USA Hockey imposes neither (NHL 81.4, 87.1; IIHF 81.4, 87.1; PWHL 83.4, 89.1)
 Rule: USA Hockey grants the shorthanded icing exemption only from Youth 15-Only, Girls 16U, High School and Adult upward, so below those a shorthanded team can be called for icing (USA Hockey 624(b)(1))
 Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid, unless keeping skate contact with the crease (NHL Rule 1.8; 27.8, 63.2(viii); IIHF Rule 27.7) — the KHL reportedly too, but unverified here
 Key: USA Hockey, Hockey Canada and CARHA have no trapezoid, so your goalie is a fourth breakout option but may not freeze it; the PWHL drops it but 65.2(viii) keeps the minor, so do not count on her there
