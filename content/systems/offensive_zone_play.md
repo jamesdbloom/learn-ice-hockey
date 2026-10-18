@@ -919,16 +919,17 @@ The governing principle is **take the puck, or — where your league permits bod
 > Canada's rule names this exact scenario, a player digging a puck out along the
 > boards, driven head-first into them. ⚠️ **If you can see their numbers, pull up
 > and play the puck — and if a hit reaches the head, as driving them head-first
-> into the boards does, Hockey Canada prices it as head contact,** because its
-> Rule 7.6 overrides every other rule but fighting. In minor and female hockey,
-> under Rule 7.6, that is a minor if accidental and a double minor if intentional,
+> into the boards does, Hockey Canada's head-contact rules reach it too.** In minor
+> and female hockey Rule 7.6 overrides every other rule but fighting, and under it
+> that is a minor if accidental and a double minor if intentional,
 > with a third in one game an ejection; a major plus a game misconduct the referee
 > may give on the violence alone and **must** give if they are hurt or it was a
 > cross-check to the head; and a match penalty if they could not protect or defend
-> themselves or you meant to injure them. In Junior and Senior hockey, under Rule
-> 7.7, it is a minor plus a ten-minute misconduct at a moderate degree of violence,
+> themselves or you meant to injure them. In Junior and Senior hockey Rule 7.7
+> overrides only the other head-contact rules, so a hit from behind keeps 7.5's
+> game misconduct, and 7.7 adds its own tiers: a minor plus a ten-minute misconduct at a moderate degree of violence,
 > a major plus a game misconduct at a high one, for a cross-check to the head, or
-> where their head hits the boards and is injured, and a match penalty on the same
+> where their head hits the glass, the ice or the boards and is injured, and a match penalty on the same
 > two grounds. USA Hockey's Casebook writes the posture
 > itself: a forceful check on an opponent *"standing along the boards (back toward
 > the middle of the ice)"* is a major plus a game misconduct, or a match penalty,
