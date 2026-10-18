@@ -389,19 +389,16 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
 - [W66 DISCARDED, 18 Oct — owner ruling stands] ⚠️ **Hockey Canada: a check from behind that reaches the head (including head-first into the boards or goal frame) is priced via 7.6 (7.7 in Junior/Senior) ONLY. Do not add 7.5's game misconduct or boards match** (owner, 15 Oct; reconfirmed 18 Oct: "Keep my 15 Oct ruling"). Wave 66 had rewritten 18 documents to a 7.5-floor reading. A facts-reviewer flagged the conflict and the owner chose the ruling, so the round was discarded (patch kept in scratchpad w66/discarded/w66.patch). Wave 67 (18 Oct) reverted wave 65's two drifted passages (offensive_zone_play :919–939, game_management :878); see wave67_2026-10-18.md. Do not re-brief the 7.5-floor reading.
   - The unrelated items from the discarded round were done in waves 67–68 (see wave68_2026-10-18.md).
   - Still open: whether other books' head-contact rules (NHL/PWHL 48, IIHF 48.1) price a head-reaching hit from behind below their own Rule 43. The owner ruled the IIHF stays on 43 (15 Oct). The NHL/PWHL question is unasked.
-- [W71 follow-ups] Open items from waves 69–71 (see the wave69, wave70 and wave71 review records). Wave 71 closed the claim-wide "mandatory major" wave, the slashes in its 13 files, crease alignment and the body_contact posture.
-  - **Canonical HC head-contact ladder, two refinements (wave 71 rules_primer review):**
+- [W72 follow-ups] Open items from waves 69–72 (see the wave69–72 review records). Wave 72 closed: defender :286/gloss/F5/F7; glossary :283; ze :779; special_teams slashes; pwtp :737; F7 at rp :989, dtr :526, risk :836; body_contact :1841/:354.
+  - **USAH reckless without 602(a), per-site wave.** About 60 lines may price a reckless USA Hockey act with no 602(a) on the line: special_teams :650 (named by the wave-71 rules-verifier and not yet fixed), body_contact (most), rules_primer :21/:36/:464/:486/:500/:515/:1058/:1067/:1144/:1172, dtr :244/:308/:923/:1002, risk_management :290/:372/:785/:786/:899/:900/:907. This is a filter, not a finding. Read each site.
+  - **F5 left:** body_contact facts :667 (299/300; needs a split) and DZC facts :159 (block at HARD_MAX). Both say "injury (7.6)" without minor/female. These err harsh.
+  - **defender facts :419 (197/200):** the closed list of books omits NHL/PWHL 43.3/43.5 and IIHF 43.3, and "a hard hit" implies a lighter one is cheaper. Fix needs a trade.
+  - **"Up to a match" right after an off-head defenceless match:** sweep for this pattern elsewhere (ze :779 fixed in wave 72).
+  - **defender restatement:** the 7.6 ladder now sits in five units (three facts lines, :291, CM :817). Needs a per-limb trim.
     - (1) Junior/Senior minimal-violence head contact goes to roughing or charging (7.7 preamble, Interpretation 2). 7.9(b) and 7.4(b) make the major mandatory on injury, so the model's "(minor and female hockey)" injury scope is half the answer.
     - (2) Spoken order: the scope label follows its condition. Reorder to "mandatory in minor and female hockey if he is hurt, in Junior and Senior if…, and anywhere for a cross-check above the shoulders".
     - Change every carrier together: center, winger, rules_primer, glossary, body_contact, pwtp, special_teams, defender, DZC, ze, dtr, risk_management.
   - **rules_primer KT7** is about 2,050 characters voiced alone and reads as a rules appendix. It is a demotion candidate (per-limb layer test).
-  - **glossary :283** match tiers omit CARHA 53(a) "could also be assessed" and HC 7.5(c)'s second paragraph (intent to injure). These are in the cheap direction.
-  - **defender facts :286** has no off-head scope. Adding it also needs the head price, about 50 characters over the cap, so split the line. This errs in the harsh direction, and :287 follows.
-  - **"can't brace"** glosses "unable to protect or defend themselves" at defender :286, :287 and :418. It is slightly narrower; use "can't protect himself" if room allows.
-  - **Wave 71 rules-verifier follow-ups:**
-    - F5: "if he's hurt (7.6)" does not say that 7.6 is minor and female hockey only (defender :287, DZC :159, body_contact :667). This errs harsh.
-    - F6: pwtp :737 "mandatory into the boards" omits "unable to protect or defend themselves". This errs harsh.
-    - F7: body passages price a reckless USAH hit from behind at 608(b) with no 602(a): special_teams :650, rules_primer :989, defender :290, dtr :526, risk_management :836 (tripping). Decide whether the 602(a) ruling applies at every pricing site or only in the summary layers.
   - **Read-aloud slashes outside the wave-71 files** ("NHL/PWHL 43.3/43.5"-style pairs where both rules apply) are still unswept.
   - **HC 9.2 Interpretation 1** ("If a pushing motion is used, a penalty may not be necessary") vs "a cross-check is a minor in every book": this errs harsh. Body only, if at all; never in CM or KT (licence risk).
   - **USA Hockey Casebook 614 Sit 2** (no penalty for a puck shot under a crease player with no deliberate act) vs puck_handling :317's flat "falls on". This errs harsh.
