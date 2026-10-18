@@ -2,6 +2,69 @@
   "note": "Playing principles episodes (Style B, ElevenLabs, one voice). Same shape as podcast.json. Each episode carries an explicit guid of the form learn-ice-hockey:principles:<doc_id>, written when it is first published and never changed. Audio lives at /audio/principles/<doc_id>-<sha8>.m4a. Each episode plays on its document page as soon as it exists, but stays OUT of the podcast feed until every document has one (owner, 16 October 2026; project/podcast_two_formats.md).",
   "episodes": [
     {
+      "doc_id": "getting-started/getting_started",
+      "title": "Getting Started",
+      "section": "Getting Started",
+      "bytes": 17631953,
+      "duration_s": 2113.4,
+      "audio": "/audio/principles/getting-started/getting_started-e4efac96.m4a",
+      "guid": "learn-ice-hockey:principles:getting-started/getting_started"
+    },
+    {
+      "doc_id": "foundation/core_principles",
+      "title": "Core Principles",
+      "section": "Foundation",
+      "bytes": 12872255,
+      "duration_s": 1541.9,
+      "audio": "/audio/principles/foundation/core_principles-de2f66f2.m4a",
+      "guid": "learn-ice-hockey:principles:foundation/core_principles"
+    },
+    {
+      "doc_id": "reading-diagrams/reading_ice_hockey_diagrams",
+      "title": "Reading Ice Hockey Diagrams",
+      "section": "Foundation",
+      "bytes": 10608464,
+      "duration_s": 1271.4,
+      "audio": "/audio/principles/reading-diagrams/reading_ice_hockey_diagrams-e2dd0936.m4a",
+      "guid": "learn-ice-hockey:principles:reading-diagrams/reading_ice_hockey_diagrams"
+    },
+    {
+      "doc_id": "positions/defender",
+      "title": "Defender",
+      "section": "Positions",
+      "bytes": 14933863,
+      "duration_s": 1789.9,
+      "audio": "/audio/principles/positions/defender-213d97a3.m4a",
+      "guid": "learn-ice-hockey:principles:positions/defender"
+    },
+    {
+      "doc_id": "systems/breakouts",
+      "title": "Breakouts",
+      "section": "Systems and Situations",
+      "bytes": 16025377,
+      "duration_s": 1920.4,
+      "audio": "/audio/principles/systems/breakouts-7f2ff902.m4a",
+      "guid": "learn-ice-hockey:principles:systems/breakouts"
+    },
+    {
+      "doc_id": "systems/zone_entries",
+      "title": "Zone Entries",
+      "section": "Systems and Situations",
+      "bytes": 16146730,
+      "duration_s": 1934.6,
+      "audio": "/audio/principles/systems/zone_entries-40f9d30a.m4a",
+      "guid": "learn-ice-hockey:principles:systems/zone_entries"
+    },
+    {
+      "doc_id": "systems/forechecking_systems",
+      "title": "Forechecking Systems",
+      "section": "Systems and Situations",
+      "bytes": 16641630,
+      "duration_s": 1994.2,
+      "audio": "/audio/principles/systems/forechecking_systems-fd5a6d06.m4a",
+      "guid": "learn-ice-hockey:principles:systems/forechecking_systems"
+    },
+    {
       "doc_id": "systems/neutral_zone_systems",
       "title": "Neutral Zone Systems",
       "section": "Systems and Situations",
@@ -45,6 +108,15 @@
       "duration_s": 2001.8,
       "audio": "/audio/principles/systems/faceoffs-f2a1c489.m4a",
       "guid": "learn-ice-hockey:principles:systems/faceoffs"
+    },
+    {
+      "doc_id": "technique/skating",
+      "title": "Skating",
+      "section": "Technique",
+      "bytes": 13109281,
+      "duration_s": 1570.6,
+      "audio": "/audio/principles/technique/skating-aff837ca.m4a",
+      "guid": "learn-ice-hockey:principles:technique/skating"
     },
     {
       "doc_id": "technique/puck_handling",
@@ -92,6 +164,15 @@
       "guid": "learn-ice-hockey:principles:hockey-iq/time_and_space"
     },
     {
+      "doc_id": "hockey-iq/scanning_and_anticipation",
+      "title": "Scanning and Anticipation",
+      "section": "Hockey IQ",
+      "bytes": 14671742,
+      "duration_s": 1758.5,
+      "audio": "/audio/principles/hockey-iq/scanning_and_anticipation-d35b01b4.m4a",
+      "guid": "learn-ice-hockey:principles:hockey-iq/scanning_and_anticipation"
+    },
+    {
       "doc_id": "hockey-iq/risk_management",
       "title": "Risk Management and Decision-Making",
       "section": "Hockey IQ",
@@ -117,6 +198,24 @@
       "duration_s": 1941.8,
       "audio": "/audio/principles/off-the-ice/equipment-409e09e3.m4a",
       "guid": "learn-ice-hockey:principles:off-the-ice/equipment"
+    },
+    {
+      "doc_id": "off-the-ice/practice_and_development",
+      "title": "Practice and Development",
+      "section": "Off the Ice",
+      "bytes": 19275049,
+      "duration_s": 2311.5,
+      "audio": "/audio/principles/off-the-ice/practice_and_development-4f85c964.m4a",
+      "guid": "learn-ice-hockey:principles:off-the-ice/practice_and_development"
+    },
+    {
+      "doc_id": "off-the-ice/how_to_watch_hockey",
+      "title": "How to Watch Hockey",
+      "section": "Off the Ice",
+      "bytes": 20605155,
+      "duration_s": 2470.7,
+      "audio": "/audio/principles/off-the-ice/how_to_watch_hockey-c6e23550.m4a",
+      "guid": "learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey"
     }
   ]
 }
