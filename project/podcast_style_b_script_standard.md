@@ -53,6 +53,21 @@ compromise on accuracy for Style A, because NotebookLM is a generator we cannot 
 
 ## 2. The register — principles, not rulebook law
 
+### ⚠️⚠️ The owner, 18 October 2026: far less rules. This outranks everything else in this section.
+
+After listening to two published episodes the owner said: *"too much content is devoted to rules and discussion of the different rule books … the content that is there is good in how to play but there is too much in rules which is not interesting, some rules where it is relevant is fine but it should have a lot less then what is has now"*. The first set of 39 scripts spent roughly a fifth to a third of their words in rules-heavy paragraphs (measured on shooting, defender and winger: 21%, 26% and 35%). All 39 are to be remade. The owner chose a two-episode pilot first.
+
+**The rules budget:**
+
+1. **Teach the play.** Every paragraph should be about what to do on the ice and why it works. If a paragraph is mainly about what a rulebook says, it does not belong. The exception is a paragraph whose rule changes what the player does.
+2. **No tours of the rulebooks.** Do not list books, compare books, or walk through a ladder of tiers. Do not name the NHL, IIHF, USA Hockey, Hockey Canada, CARHA, PWHL or Elite League unless the instruction itself changes by league. Where it does, say so once: *"whether you can hit at all depends on your league, so check before you play."*
+3. **Say what happens to you, in one plain sentence, at the moment it matters.** For example: *"That's a penalty, and if you hit him from behind into the boards you'll almost certainly be thrown out of the game."* Give the most serious realistic consequence plainly, and never a cheaper one. The source's exact tiers stay in the document, and the listener does not need them.
+4. **No rule numbers, no rulebook names for their own sake, and no "the book says".**
+5. **Aim for less than about one minute in ten on rules** for position, system, skill and hockey-IQ episodes, and about two in ten for the rule-shaped four (faceoffs, body contact, goaltender, game management). This is a guide, not a gate. Measure it on the finished script.
+6. **Rules documents** (rules_primer, uk_rules, rink_map) stay about the rules, because that is their subject. The owner chose this on 18 October: explain each rule once, plainly, and cut the side-by-side book comparisons down to the few places where the difference changes what a player does.
+
+**What does not change:** §8's safety floor. Every safety instruction keeps its limb in the same breath: never hit from behind, keep your stick down, head up at the boards, and the eligibility gate for checking. A rule may shrink to one plain sentence; it may never disappear from a safety instruction, and it may never be made to sound cheaper. Honest hedges stay too ("check your league", "your coach decides"), said once, not repeated per book.
+
 The owner's description of Style B is *"the key tactical principles to follow and the set of
 ideas you should keep in mind"*. ⚠️ **He first said "rules" and corrected himself in the same
 breath.** *Principles* here means **the governing ideas of playing the position** — not
