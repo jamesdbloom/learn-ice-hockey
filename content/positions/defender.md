@@ -283,7 +283,7 @@ Read that section before you next play this role, and read [Body Contact and Bat
 ```facts
 Never: Let a battle or a legal check carry a body across your own goalmouth — that path has a goal post at one edge and your goaltender at the other. Take it toward the corner instead
 Never: Lift a net-front opponent off their edges, even in a legal check on a forward who has the puck — a player whose skates are off the ice cannot brace or choose what meets the post first
-Rule: Never a free play: a hit to his back ejects under CARHA 53(a) and, missing the head, Hockey Canada 7.5(a)/(e), both a mandatory match into boards or goal if he cannot brace (53(b), 7.5(c)); head first or reckless, USA Hockey 608(b) ejects; NHL and PWHL 43.3/43.5 eject; IIHF 43.3 is discretionary
+Rule: CARHA 53(a) and Hockey Canada 7.5(a) and (e) eject for a hit to his back, each a mandatory match into boards or goal if he can't brace (53(b), 7.5(c)); USA Hockey 608(b) ejects if head first, and if reckless plan on a match (602(a)); NHL and PWHL 43.3 and 43.5 too; IIHF 43.3 at discretion
 Rule: Once a hit from behind reaches his head or drives him head first into the boards or goal frame, Hockey Canada prices it as head contact (Rule 7.6; 7.7 in Junior and Senior) — up to a mandatory major and game misconduct, and a match if he could not protect himself
 ```
 

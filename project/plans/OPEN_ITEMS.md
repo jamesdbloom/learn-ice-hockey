@@ -385,13 +385,13 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
 - [W66 DISCARDED, 18 Oct — owner ruling stands] ⚠️ **Hockey Canada: a check from behind that reaches the head (including head-first into the boards or goal frame) is priced via 7.6 (7.7 in Junior/Senior) ONLY. Do not add 7.5's game misconduct or boards match** (owner, 15 Oct; reconfirmed 18 Oct: "Keep my 15 Oct ruling"). Wave 66 had rewritten 18 documents to a 7.5-floor reading. A facts-reviewer flagged the conflict and the owner chose the ruling, so the round was discarded (patch kept in scratchpad w66/discarded/w66.patch). Wave 67 (18 Oct) reverted wave 65's two drifted passages (offensive_zone_play :919–939, game_management :878); see wave67_2026-10-18.md. Do not re-brief the 7.5-floor reading.
   - The unrelated items from the discarded round were done in waves 67–68 (see wave68_2026-10-18.md).
   - Still open: whether other books' head-contact rules (NHL/PWHL 48, IIHF 48.1) price a head-reaching hit from behind below their own Rule 43. The owner ruled the IIHF stays on 43 (15 Oct). The NHL/PWHL question is unasked.
-- [W69 follow-ups] **Wave 70 dispatched 18 Oct: sibling sweeps per file (puck_handling, risk_management, center, winger, rules_primer, forechecking_systems), plus body_contact and defender gate notes.** Open items from wave 69 (see project/reviews/wave69_2026-10-18.md). The W68 follow-up rows closed in wave 69, and the per-file rows for game_management, goaltender, body_contact, defender, special_teams, DZC, ozp, zone_entries, dtr, switching_positions and uk_rules were worked. The rows below are what is left.
-  - **Sibling sweep, HC head price:** wherever a unit states Hockey Canada's off-the-head floor (7.5), the head price must sit in the same unit (7.6; 7.7 in Junior/Senior; up to a match). Candidates: puck_handling, risk_management, center, winger, rules_primer, forechecking.
-  - **Sibling sweep, screener:** "walking a screener out is interference" should read "can be called interference" (NHL 56.2 "can"; USAH Casebook 609 Sit 2 "may apply"). The instruction still leads. Done in body_contact, defender, DZC and goaltender.
-  - **Sibling sweep, HC crease penalty shot:** every 10.2(a)(v) citation needs its 4.11(a)(v) puck-in-crease limb too.
-  - **Sibling sweep, puck after the whistle:** all six books make intentionally knocking or shooting the puck out of an official's reach a misconduct (39.4 / 601(c)(3) / 11.1(d)(iii) / 46(b)(3)). Look for "the NHL/IIHF write no puck limb".
-  - **body_contact CM (goalie bracing), gate note:** the trim softened NHL 42.5's mandatory GM for a face or head injury to "can add". Restore 42.5.
-  - **defender facts :286, gate note:** the HC off-the-head floor puts its head price in the next line (:287), which breaks the same-unit rule.
+- [W70 follow-ups] Open items from waves 69–70 (see project/reviews/wave69_2026-10-18.md and wave70_2026-10-18.md). The W69 sibling sweeps are done for puck_handling, risk_management, center, winger, rules_primer and forechecking.
+  - **Claim-wide wave: "up to a mandatory major and game misconduct"** (HC head contact) is still at ~25 sites: glossary, rules_primer, body_contact, pwtp, goaltender, DZC, defender, zone_entries, special_teams, dtr. "Mandatory" must be scoped: 7.6(b) on injury or a cross-check above the shoulders; 7.7(b) on high violence or a head injury off glass, ice or boards, or a cross-check above the shoulders. Where 7.5 is stated flat as "a minor and game misconduct", restore 7.5(b) ("starts at"). Models: center :696 / CM :736, winger :663.
+  - **Read-aloud: a slash between rule numbers is voiced "or"** ("NHL/PWHL 43.3/43.5", "7.6/7.7"), which turns a major-plus-GM pair into alternatives. Corpus sweep; replace with "and" where both apply.
+  - **HC crease penalty shot "you in it" is stated as certain** in puck_handling :318 and center :548. rules_primer :534 now says "possible", because Interpretation 5 turns on where the puck was covered. Align these.
+  - **body_contact bare "forearm and hip"** at :33, :856, :1433 and :1834 should read "to the wall" (USA Hockey IBC "against the boards").
+  - **HC 9.2 Interpretation 1** ("If a pushing motion is used, a penalty may not be necessary") vs "a cross-check is a minor in every book": this errs harsh. Body only, if at all; never in CM or KT (licence risk).
+  - **USA Hockey Casebook 614 Sit 2** (no penalty for a puck shot under a crease player with no deliberate act) vs puck_handling :317's flat "falls on". This errs harsh.
   - **dtr :310 and KT9 :993:** HC 7.4 "blind side" applied at the end boards, where Interpretation 2 defines blind side as open ice. Harsh direction; needs a rules-verifier.
   - **CARHA ceiling lines without 48(a):** ozp :878 and similar.
   - **Owner questions still open:** ze :755 USAH 604(c) disagreement; the ozp spin-off vs "never turn your back" tension; NHL/PWHL 48 vs 43 for a head-reaching hit from behind.
@@ -402,7 +402,6 @@ The owner, verbatim: *"lets make sure the content is more focused on how to play
     - switching CM :513.
     - ze KT count.
   - **goaltender LEFT rows:** 733, 752, 754, 844, 870/874, 963, 797, 738.
-  - **Method:** brief every Hockey Canada wave with sources/hc.txt. hc_2026-08-print.txt is superseded.
 
 - [POD two formats] **Step 4 is done (17 Oct): `--style principles` in build_podcast_audio, upload_podcast_audio and podcast_queue. The owner approved the page design from the local Shooting preview: "looks good lets follow that for all pages".** **Owner decisions of 16 Oct 2026 are recorded in `project/podcast_two_formats.md`, which is the spec.** Work order:
   1. Site refactor with no change to output. Diff the feed, playlists and pages against main.
