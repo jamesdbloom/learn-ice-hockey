@@ -245,7 +245,7 @@ Rule: Never angle into contact: CARHA 49(a) prices standing in front of an oppon
 Rule: In the Women's NIHL plan no hit: it plays "non-checking", so read it as at least as tight as IIHF 101.1, which bars using the boards to push, pin or eliminate an opponent and makes any "step or glide into" her at least a minor; elsewhere, ask your league before you hit anyone
 Rule: Where checking IS legal the ride has a limit, and the onus is on the hitter: USA Hockey 603 asks no defencelessness question in its base sentence; NHL, IIHF, PWHL and Hockey Canada name unnecessary contact in an icing or off-side race as boarding, USA Hockey 624(d) penalises it in an icing race
 Rule: USA Hockey boarding is never a bare minor — 603(a) adds a misconduct to it, 603(b) makes a hit that recklessly endangers an opponent a major plus a game misconduct, and plan on a match (602(a))
-Rule: His back to you? Take the puck: diagonal is from behind (USA Hockey 608); no book has a bare minor off the head; into the boards defenceless, a mandatory match in CARHA 53(b) and Hockey Canada (7.5(c), and 7.6(c)/7.7(c) too if it reaches his head); IIHF 43.3: major and game misconduct
+Rule: His back to you? Take the puck: diagonal is from behind (USA Hockey 608); no book has a bare minor off the head; into the boards defenceless, mandatory match in CARHA 53(b), Hockey Canada 7.5(c) (7.6(c)/7.7(c) if head contact) and, if reckless, USA Hockey 608(c); IIHF 43.3: major and game misconduct
 Rule: USA Hockey writes no bare minor for a check from behind (608(a)); a forceful one on a player along the boards, or one head first into boards or goal frame, is a major plus game misconduct or a match (608(b); Casebook Situation 1) — and plan on the match for a reckless one (602(a), 608(c))
 Rule: What the wall does for you depends on sheet width — wider ice leaves a carrier forced outside more room, so gap control matters more than steering — and do not assume yours is wide: IHUK In-House Rules 2026-27, Rule 1 authorise British rinks below the IIHF Rule 1.2 minimum, bar two capped at U16
 Position: Still between the attacker and the net — that is what makes it forcing outside rather than getting beaten wide
@@ -599,9 +599,7 @@ document, that is named too.*
 
 7. You are a left shot and you have been put on the right wing. What does that
    buy you, what does it cost you and where on the ice does the cost land, and
-   how do you receive that pass — including what the source cited for this
-   section says instead, and why this document does not teach it? *(§Playing
-   your off wing)*
+   how do you receive that pass? *(§Playing your off wing)*
 
 8. Name the good habit that becomes passivity for a winger moving to centre, and
    the good habit that becomes reluctance to attack for a defenceman moving to

@@ -578,8 +578,8 @@ Technique: Close enough to take over the coverage, far enough not to be beaten b
 Action: Talk — "I've got your back", "you have time", "man on"; the layer only works if they know it is there
 Convention: A double-team is a coaching decision, commonly allowed below your own goal line — ask where and when
 Never: Arrive at a double-team at the wall with your back to the checker, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
-Rule: A push or hit from behind is checking from behind even where body checking is barred — USA Hockey 608(a), at least a minor plus misconduct, and a mandatory major plus game misconduct if it puts them head first into the boards (608(b))
-Rule: Into the boards unable to protect themselves: a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and in USA Hockey 608(c) with excessive force on a defenceless player — plan on one there for any reckless push (602(a)); an intentional push ejects in Hockey Canada 7.5(a) and CARHA 53(a)
+Rule: A push or hit from behind is checking from behind even without body checking. It ejects in NHL/IIHF/PWHL 43; if intentional, in Hockey Canada 7.5(a) and CARHA 53(a). USA Hockey 608(a) starts at a minor plus misconduct; a hard one at the boards or head first ejects (608(b); Casebook 608 Situation 1)
+Rule: Into the boards unable to protect themselves: a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and in USA Hockey 608(c) with excessive force on a defenceless player — plan on one there for any reckless push (602(a))
 ```
 
 Your teammate is pressuring the carrier, and you are the second defender. You can:
