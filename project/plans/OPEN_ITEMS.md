@@ -880,7 +880,7 @@ places in the old plan.
     - (jj) DONE in S3.
     - (ll) DONE 19 Oct (S4): check_marker_pairs reports SPLIT HALF UNMARKED (candidate). It recovers all nine S3 losses on a reconstruction; on the 16 S3 files its only hits are :870 and :891, both ruled LEAVE. Uncalibrated on R2 (298 candidates against 2c7435b~1, unread).
     - (mm) DONE 19 Oct (S4): md_to_speech keep-with-next. Headings, generated intros and short bold or colon labels never end a chunk. Lead-ins ending a chunk went 127 → 0; the joined speech is byte-identical; no chunk is over the limit.
-    - (nn) **Read the chunk tails the keep-with-next repack moved.** `check_chunk_tails --prose` permission tails went 257 → 275, and facts tails 332 → 337. Some of these are prose newly exposed where a heading used to sit; some may be new boundaries that cut a permission off from its limit. Before/after lists are in session scratchpad s4/render/*.before.txt and *.after.txt. Known: puck_handling chunk 028 ends on the strength-move permission.
+    - (nn) DONE 19 Oct: the repack caused no listener-facing regression. 20 of the new tails were already there, only newly visible. 3 are real moves, all facts lines: two safe; puck_handling :485 lacked its cross-check limit when voiced alone, so it is being fixed in content. The zone_entries icing grant is no longer chunk-terminal, which is an improvement. Note: published episodes (NotebookLM and Style B) do not go through md_to_speech's chunker.
     - (kk) **Site findings, owner sign-off:**
       - On phones the sticky audio player takes about 85 px under the header (17% of the screen at 400 px).
       - The ToC has no active-heading tracking.
@@ -890,6 +890,7 @@ places in the old plan.
   - **S2 DONE (19 Oct, 2a17bd5).** Fights outside the periods (cc) and leftovers (bb), (dd), (ee), (ff); browser pass (o). Record: project/reviews/s2_fights_outside_periods_2026-10-19.md.
   - **S3 DONE (19 Oct).** Rows (hh) placement in winger, body_contact and team_play; (ii) amber on citations; (jj) body_contact paragraphs (19 → 1 over 1,200); (aa) pre-existing quotation drift (~80 fixes). Committed 036b698. Record: project/reviews/s3_placement_amber_quotes_2026-10-19.md. Still open: (ll) the tool gap, and the (hh) owner design call on styling.
   - **S4 DONE (19 Oct).** Row (ll) check_marker_pairs split-half check (f59c942) and row (mm) renderer keep-with-next. The item 8 term census is below.
+  - **T1 DONE (19 Oct):** the glossary-consistent swaps (209 in 28 docs); record project/reviews/t1_glossary_terms_2026-10-19.md. Open: diagram captions still use the old forms (e.g. face-off in 7 captions); offensive_zone_play :903 keeps "bodycheck" (cap).
   - **[Item 8, consistent terms] census done 19 Oct** (session scratchpad s4/terms/; perdoc_counts.csv, rerun count.py). **T1 (glossary-consistent sweep, no owner decision needed):**
     - face-off → faceoff (~75)
     - short-handed → shorthanded (17)

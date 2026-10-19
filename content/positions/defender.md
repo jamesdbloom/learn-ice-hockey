@@ -224,7 +224,7 @@ The two defenders work as a pair. The **strong-side defender** (the one on the s
 
 **Key considerations:** Communicate with your partner so you always know who is strong side and who is weak side.
 
-**When their carrier takes the puck behind your net, do not chase him all the way round.** A defenceman trailing him out of the far side leaves him the slot. The common approach is a handover: the defenceman on the side he is heading for meets him at that post, stick on the ice, while the one who followed him in peels off to the front of the net, and your goaltender seals the post against the wraparound. Some teams keep one defenceman on him all the way round and send the partner to the net front instead. Ask which yours plays, and call the handover out loud either way.
+**When their carrier takes the puck behind your net, do not chase him all the way round.** A defenceman trailing him out of the far side leaves him the slot. The common approach is a handover: the defenceman on the side he is heading for meets him at that post, stick on the ice, while the one who followed him in peels off to the front of the net, and your goaltender seals the post against the wrap-around. Some teams keep one defenceman on him all the way round and send the partner to the net front instead. Ask which yours plays, and call the handover out loud either way.
 
 **Whether the wingers help you in the corner depends on the system your team plays** — a coaching choice, not a law of hockey. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) for the alternatives. The two you'll meet most often:
 
@@ -451,7 +451,7 @@ Action: Take away the middle and force them outside, where the wall becomes a se
 Rule: Steer the carrier to the boards with your route and add no bump, push or shove — legal in terms under Hockey Canada's Interpretation 1 to 7.3(a) (no bump), USA Hockey's Glossary "Angling" and PWHL 52.1, an inference elsewhere; IIHF women's 101.1 bars pinning her there
 Rule: In women's hockey IIHF 101.1 makes "Any move by a Player to step or glide into an opposing Player" at least a minor — carry the angle with your feet and never finish it with a step into her
 Rule: Riding them into the wall is barred outright in a great many classifications — USA Hockey 604(a) at 12U and below, in all Girls'/Women's and all non-check Adult, and Hockey Canada 7.3(a) at U13 and below, female hockey and any Member-approved division; steering with your route stays legal there
-Rule: Riding them into the wall with your body is a different act, and defenceless is not the whole test: USA Hockey 603's base sentence asks no such question, and the NHL, IIHF and Hockey Canada each name unnecessary contact in an icing or off-side race as boarding
+Rule: Riding them into the wall with your body is a different act, and defenceless is not the whole test: USA Hockey 603's base sentence asks no such question, and the NHL, IIHF and Hockey Canada each name unnecessary contact in an icing or offside race as boarding
 Rule: The onus is on the checker in five of the six books, and the sixth, CARHA, penalises failing to avert contact (49(a)); none caps boarding at a minor — USA Hockey's floor is a minor plus a misconduct (603(a)), a reckless one a mandatory major plus game misconduct (603(b)): plan on a match (602(a))
 Rule: CARHA 49(a) makes failing to avert contact a minor or major, the major mandatory if intentional contact injures; a major ejects and suspends you (30(a), 32(d)); a minor that puts an opponent into the boards doubles, two of the three penalties that eject you (49(b), 32(a)) (CARHA adult leagues only)
 Rule: Never hit a turned back at the wall — pull up, play the puck. Ejects: NHL, PWHL, IIHF, CARHA; USA Hockey and HC if head first into boards or frame; USA Hockey if forceful at the boards (if reckless, a match: 602(a)); HC off the head (on it: minor to match). Defenceless: CARHA, HC mandatory match
@@ -718,7 +718,7 @@ Action: Shoot for tips and rebounds rather than trying to beat the goalie clean 
 
 Whichever you're in: your first job is **keeping the puck in the zone**. A power play that gets cleared has to re-enter against four killers already set in their structure, which is a great deal harder than holding the line was. Your second job is shooting for tips and rebounds rather than trying to beat the goalie clean through four bodies.
 
-### Penalty Kill (your team is short-handed)
+### Penalty Kill (your team is shorthanded)
 
 ```facts
 Key: A kill is four skaters, normally two forwards and two defencemen — where you and your partner stand depends on which of the three shapes your team kills in

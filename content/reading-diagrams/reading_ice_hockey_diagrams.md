@@ -7,7 +7,7 @@
 >
 > **No symbol on this page tells you what your league permits.** The mark at the end of a
 > route says where it stops, never whether you may make contact there. Whether you may
-> body-check at all depends on your age group, your league and your book: USA Hockey
+> body check at all depends on your age group, your league and your book: USA Hockey
 > prohibits it in 12 & under, all girls' and women's classifications and all non-check
 > adult classifications, and in any game against a team from one of those, and Hockey Canada penalises it at U13 and below, in female
 > hockey, *"and any other divisions approved by a Member of Hockey Canada"*. Read
@@ -26,7 +26,7 @@
 
 **Keep the relationship, not the spot.** A drawn position is where a player is relative to the puck and the other players at one instant. As the puck moves, keep that relationship rather than skating to the drawn mark and staying there.
 
-**Treat a route that ends on an opponent as "arrive under control", never as permission to hit.** Whether you may body-check at all depends on your age group, your league and your book. Find out first, and until you know, do not hit anyone.
+**Treat a route that ends on an opponent as "arrive under control", never as permission to hit.** Whether you may body check at all depends on your age group, your league and your book. Find out first, and until you know, do not hit anyone.
 
 **Check the key on anyone else's diagram — and on your own team, the coach's whiteboard wins.** The IIHF's own key uses the two shapes for the two *teams*, so a defending right wing there is a triangle. Where no key is printed, ask whoever drew it.
 

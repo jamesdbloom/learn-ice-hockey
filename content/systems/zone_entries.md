@@ -139,14 +139,14 @@ Most players know offside as something whistled against them. Learn the exact wo
 ### The four clauses the technique rests on
 
 ```facts
-Rule: You are off-side only when both skates are completely over the leading edge of the blue line (NHL Rule 83; IIHF Rule 83.1 word-for-word)
+Rule: You are offside only when both skates are completely over the leading edge of the blue line (NHL Rule 83; IIHF Rule 83.1 word-for-word)
 Rule: One skate in contact with the line, or on your own side of it, keeps you onside at the instant the puck completely crosses (NHL Rule 83; IIHF Rule 83.1)
 Rule: The whole width of the painted blue line counts as "the line" — a skate touching any of it is onside (NHL Rule 1.5)
 Rule: Your own side of the line is a vertical plane — a skate lifted and held back over the neutral zone is onside (NHL Rule 83; IIHF Rule 83.1 and PWHL Rule 85.1, in the same words), but not under USA Hockey or Hockey Canada
 Rule: A "skate" is the blade only — NHL Rule 83.1 since 2025-26, PWHL Rule 85.1, and the IIHF's 2026/27 book; the 2025/26 IIHF book carries no such definition. USA Hockey defines it more broadly: its Casebook (Rule 630, Situation 8) says "skate" means "the blade or the boot"
 Rule: An airborne trail skate is offside under USA Hockey 630(a), whose Casebook Situation 7 answers this exact case, and Hockey Canada Rule 6.11 with its Interpretation 3 — the blade must have contact. CARHA 72(c) borrows "own side" without defining it, so it settles nothing either way
 Rule: British hockey runs the IIHF book at every level, so the IIHF wording is the rule you play under — an Elite League game runs the 2026/27 edition, which its Casebook makes the ruling for every rule it does not mention, and it mentions no Rule 83; below that the edition is unsettled, so ask
-Rule: Under the IIHF's 2026/27 Rule 83.1 a carrier crossing ahead of the puck is not off-side only where they have "possession and control" of it "with their stick" before "both skates completely" cross the leading edge
+Rule: Under the IIHF's 2026/27 Rule 83.1 a carrier crossing ahead of the puck is not offside only where they have "possession and control" of it "with their stick" before "both skates completely" cross the leading edge
 Rule: The IIHF's 2025/26 Rule 83.1 asks only for possession and control "prior to their skates crossing" — no stick, and not "both skates", so the 2026/27 book is stricter on one limb and looser on the other, not uniformly stricter
 ```
 
@@ -178,7 +178,7 @@ Rule: Lifting the trail skate is legal under the NHL, the IIHF and the PWHL, so 
 
 This is the single most useful piece of applied rules knowledge for a forward, and it comes straight out of the wording above.
 
-You are the far-side winger. You are flying. The puck carrier is a stride behind you and about to put the puck over the line. If you simply skate, both blades cross, the puck crosses second, and the linesman's arm goes up.
+You are the far-side winger. You are flying. The puck carrier is a stride behind you and about to put the puck over the line. If you simply skate, both blades cross, the puck crosses second, and the linesperson's arm goes up.
 
 Instead:
 
@@ -200,7 +200,7 @@ Three details that separate people who *sort of* know this from people who use i
 ### Delayed offside and tagging up — three consequences for the entry
 
 ```facts
-Rule: On a delayed offside the linesman raises a non-whistle arm and play continues (NHL Rule 83.3; IIHF Rule 83.3 in the same terms)
+Rule: On a delayed offside the linesperson raises a non-whistle arm and play continues (NHL Rule 83.3; IIHF Rule 83.3 in the same terms)
 Rule: Under USA Hockey Rule 630(d) delayed offside and tag-up exist only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below that the whistle is immediate. That restriction is USA Hockey's alone; Hockey Canada 6.11(b), the NHL and the IIHF set no classification limit
 Rule: Tagging up needs actual skate contact with the line; the vertical plane does not apply — "'3D' judgement is not used in this situation" (IIHF Rule 83.3(I), the wording British hockey plays under; NHL 83.3(i) says "skate contact with the blue line" without the gloss)
 Rule: The zone must be empty before anyone re-enters — NHL 83.3(i), IIHF 83.3(I) and USA Hockey 630(d)(2) word it "at the same instant"; Hockey Canada 6.11(b)(ii) as a result, "completely clear of attacking players". Both cite the tag-up clause. Same requirement, not a permission
@@ -210,7 +210,7 @@ Action: Get everybody out at once — one straggler keeps the arm up in every bo
 
 **What to do is the same everywhere: stop, get back to the line, put a skate on it together, and come again.** The detail below is why that is the whole answer, and what it costs to try anything else.
 
-A **delayed offside** is when attackers precede the puck but the defending team can bring it out without interference: the linesman raises a non-whistle arm and play continues (Rule 83.3). **The IIHF's 83.3 is the same rule in the same order** — the arm comes down when *"All Players of the offending team clear the zone at the same instant (skate contact with the blue line, '3D' judgement is not used in this situation)"* or when *"the defending team passes or carries the puck into the neutral zone"* — so this describes the British game as written. [Rules Primer](../foundation/rules_primer.md) has the full procedure. Three things change what you do at the line:
+A **delayed offside** is when attackers precede the puck but the defending team can bring it out without interference: the linesperson raises a non-whistle arm and play continues (Rule 83.3). **The IIHF's 83.3 is the same rule in the same order** — the arm comes down when *"All Players of the offending team clear the zone at the same instant (skate contact with the blue line, '3D' judgement is not used in this situation)"* or when *"the defending team passes or carries the puck into the neutral zone"* — so this describes the British game as written. [Rules Primer](../foundation/rules_primer.md) has the full procedure. Three things change what you do at the line:
 
 - **First, check that you have a delayed offside at all.** Under **USA Hockey Rule 630(d)** the delayed offside and the tag-up exist only *"(For all Youth 15-Only levels and above, all Girls 16U levels and above, High School and Adult classifications **only**)"*. Below those levels the whistle goes the moment you precede the puck in, so the entry has to be right first time. ⚠️ **Check your own classification.** How much minor hockey sits below that line is a question about leagues rather than books, and this document has no count for it. **This restriction is USA Hockey's alone** — Hockey Canada's Rule 6.11(b), the NHL's 83.3 and the IIHF's carry no classification limit.
 - **Tagging up needs actual skate contact with the line.** The vertical plane does *not* apply: the IIHF says *"'3D' judgement is not used in this situation"* (Rule 83.3(I)), and NHL 83.3(i) says *"(skate contact with the blue line)"*. So the airborne trail skate that keeps you onside on the entry does **not** clear you here. Touch the painted line.
@@ -252,7 +252,7 @@ And name ⚠️ **the hit you are lining up.** A defenceman turned to retrieve a
 - **NHL, IIHF and PWHL:** there is no minor for checking from behind (Rule 43.2 in each), and a major carries a game misconduct.
 - **Five books:** a hit from behind meant to injure is a mandatory match penalty — NHL and PWHL 21.1, USA Hockey 602(a), Hockey Canada 7.5(c) and CARHA 48(a).
 
-[Body Contact and Battles](../technique/body_contact_and_battles.md) covers how to arrive on a puck-retriever without becoming that. Hockey Canada's off-side rule answers the player who hits anyway only with a faceoff; **the protection is Rules 7.5 and 7.6, not the off-side rule.**
+[Body Contact and Battles](../technique/body_contact_and_battles.md) covers how to arrive on a puck-retriever without becoming that. Hockey Canada's offside rule answers the player who hits anyway only with a faceoff; **the protection is Rules 7.5 and 7.6, not the offside rule.**
 
 ### The territorial asymmetry — why the safe play isn't
 
@@ -1175,7 +1175,7 @@ document, that is named too.*
    airborne version of it away from you.
    *(§The four clauses the technique rests on, §The trail-skate drag)*
 
-3. You are in the zone with the linesman's arm up. What clears the delayed
+3. You are in the zone with the linesperson's arm up. What clears the delayed
    offside, what does *not* clear it even though it keeps you onside on an entry,
    and which of the acts that bring the whistle is written in only three of
    the six rule books? *(§Delayed offside and tagging up — three consequences for

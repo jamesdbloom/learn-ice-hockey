@@ -462,7 +462,7 @@ No figure is given here for your association, because an invented one would be w
 
 For a first session, allow longer. Learn to Play tells parents to *"arrive a minimum of 60 minutes prior to start time for your first on-ice session to provide enough time for your child to check-in and get dressed."* Dressing takes twice as long the first three times.
 
-**In England the 60 minutes is written into the rules — for your coaches.** EIH requires *"[r]elevant representatives of each team"* — *"the team coaches or manager"* — to *"arrive at the game venue a minimum of 60 minute[s]"* before face-off, with any officials' meeting 40 minutes before. That is a guide to what your coach expects. One rule *is* about you, from the In-House Rules: **every player must be dressed and on the bench or the ice by the start of the second period to take part in the game**, and the officials cross off anybody who is not.
+**In England the 60 minutes is written into the rules — for your coaches.** EIH requires *"[r]elevant representatives of each team"* — *"the team coaches or manager"* — to *"arrive at the game venue a minimum of 60 minute[s]"* before faceoff, with any officials' meeting 40 minutes before. That is a guide to what your coach expects. One rule *is* about you, from the In-House Rules: **every player must be dressed and on the bench or the ice by the start of the second period to take part in the game**, and the officials cross off anybody who is not.
 
 ### The dressing room
 
