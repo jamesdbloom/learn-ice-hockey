@@ -117,8 +117,10 @@ resource "aws_cloudfront_cache_policy" "audio" {
 # ---------------------------------------------------------------------------
 # Response headers
 #
-# The CSP names no external origin because the site loads nothing external:
-# no CDN, no analytics, no hosted fonts. See local.content_security_policy.
+# The CSP names one external family of origins: Google Analytics
+# (googletagmanager.com, google-analytics.com), which production loads when
+# PUBLIC_GA_ID is set at build. Otherwise the site loads nothing external: no
+# CDN, no hosted fonts. See local.content_security_policy.
 # ---------------------------------------------------------------------------
 
 resource "aws_cloudfront_response_headers_policy" "security" {

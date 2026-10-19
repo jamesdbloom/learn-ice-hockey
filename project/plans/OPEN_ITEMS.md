@@ -350,32 +350,21 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ## Open rows
 
-**Re-triaged 19 Oct 2026.** The previous 670-entry section and its per-row triage are archived in [project/reviews/plan_open_rows_archive_2026-10-19.md](../reviews/plan_open_rows_archive_2026-10-19.md). Of those entries, 339 were already done. **The 53 UNCLEAR rows are listed there; re-check one there before re-opening it.** Line numbers below are from the triage and will drift, so brief each item as a CLAIM to find in every layer, never as a line.
+**Re-triaged 19 Oct 2026.** The previous 670-entry section and its per-row triage are archived in [project/reviews/plan_open_rows_archive_2026-10-19.md](../reviews/plan_open_rows_archive_2026-10-19.md). Of those entries, 339 were already done. **The 53 UNCLEAR rows were resolved on 19 Oct: 31 done, 16 removed, and 6 open (below). The archive records each verdict.** Line numbers below are from the triage and will drift, so brief each item as a CLAIM to find in every layer, never as a line.
 
 **Recent rounds, all committed and pushed:** T1 277ece1, S5 30209b4, T2 6641032, site 9–11 a91aeef, IS 722e036, W 4435b6e, kk 92ca6e6, gg 65b14f5. Records are in project/reviews/.
 
-### Owner decisions pending
-- **Google Analytics.** Production runs GA4 (PUBLIC_GA_ID via deploy.yml; the locals.tf CSP allows it). Keep it? infra/cloudfront.tf:120-121 says no external origin; editing infra needs owner OK.
-- **In-short above facts.** In about 300 sections an In-short line sits directly above a facts block, so they overlap by structure. Keep both, or show one?
-- **"What it costs" frame.** It is label-only now. Restore a frame, ending at the next heading or at a content end marker?
-- **IIHF 48.1 versus the "keep Rule 43" ruling (z).** Also the HC head-first questions Q1–Q5 and NHL/PWHL 48 versus 43.
-- **The 2025/26 IIHF book contradicts itself on the willing fight.** 46.1 says "may be ejected"; Table 6 says automatic game misconduct. The corpus states each half in a different place (rules_primer :481, uk_rules :306). Disclose it once? (Content can do this without the owner; see the content list.)
-- **Other owner items** from the triage:
-  - an HC goalie hit under 7.5 (shooting :536);
-  - Wave 34 Q2–6 (In-House reach to Scotland/NI, CARHA suspensions, USAH Level 1, caption trim, centre-fly label);
-  - HC 8.6 versus 8.7 puck-first slide;
-  - the KT count ceiling (14 documents over 10);
-  - a tactics-ratio target;
-  - `## Check yourself` in 36 documents;
-  - the PWHL as standing sixth book and `Rule set:` headers;
-  - the PNIHL/NIHL trailer;
-  - the five D-zone families;
-  - the centre low-zone-collapse exception;
-  - the dead `creaseThePuckDecides` spec;
-  - panels per page;
-  - "(2) minor" shorthand;
-  - `*.local.md` in VCS;
-  - the podcast ear test.
+### Owner decisions — ANSWERED 19 Oct 2026 (memory: project_owner_rulings_oct15)
+- **Analytics:** keep GA; fix the infra/cloudfront.tf:120-121 comment (comment-only infra edit approved).
+- **Layout:** keep both In-short and facts. "What it costs" stays label-only. KT count kept as is (no cap). Keep `## Check yourself`.
+- **PWHL** is a standing sixth book wherever books are compared.
+- **Head-reaching hit from behind (IIHF, NHL, PWHL):** state the HARSHER of Rule 43 and Rule 48. This supersedes the 15 Oct "keep Rule 43" IIHF ruling. → content wave.
+- **CARHA 32(d):** "at least a one-game suspension" wherever a CARHA major, match or game misconduct is priced. → content wave.
+- **EIH R&R reach to Scotland and Northern Ireland:** say it is unsettled; play as if it applies. → content wave.
+- **USAH 602(a):** add the likely multi-game suspension where "plan on a match" is stated. → content wave.
+- **HC head-first Q1–Q5:** treated as answered by the 18 Oct "harsher of 7.5 and 7.6" ruling and the goal-frame ruling.
+- **HC goalie hit from behind:** harsher of 7.5 and 8.5. **HC slide:** note 8.6's exception but plan on 8.7 clipping. Both → content wave. **Podcast ear test:** DONE (owner, all fine).
+- **Minor items the coordinator decides, no owner needed:** tactics-ratio target (none; worklist only); PNIHL/NIHL trailer; the five D-zone families; centre low-zone-collapse exception; panels per page; "(2) minor" shorthand; `*.local.md` stays gitignored.
 
 ### Re-triaged dispatch list (19 Oct 2026)
 
@@ -438,6 +427,22 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 
 ---
 
+
+### From the UNCLEAR resolution (19 Oct)
+- **body_contact:**
+  - :1661, the Kneeing table cell: HC 7.8 says "an opponent's knee"; match facts :580.
+  - :1148 facts and :1155 body: IIHF 101.1 also bars pushing a player into the boards or eliminating her from the play. As written, the permissive direction. Run --near first.
+- **faceoffs :1051:** an empty penalty box is a bench minor under NHL and IIHF; add the PWHL.
+- **rules_primer:**
+  - :19-22: four Key focus items are a bulleted list; make them bold-lead paragraphs like the rest.
+  - :1163: the NIHL 1 & 2 RoC path is superseded; the publisher now serves 2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf.
+  - :1102: covering the puck with the net empty is not an awarded goal in every book; USAH 614(b) requires "obvious and imminent". Harsh direction.
+- **conditioning_and_recovery :695:** the same superseded NIHL path.
+- **equipment :935-936 and mental_game :781:** edition notes carry inline ⚠️ that changes nothing a player does. equipment :935 also narrates the corpus's own history (non-negotiable 6).
+- **site global.css:**
+  - the amber left bar contrast is 2.1:1 against the 3:1 expected for non-text marks; darken it or record why it is acceptable;
+  - :951 has a stale anchor comment.
+- **site-reviewer pass:** the diagram scene at 400 px, the 🇬🇧 wrap in conditioning's Key focus, and a special_teams bold run.
 
 ### Also open from this session
 - The phone-bar `audio-idle` hook lives in essentials-view.js; consider moving it to audio-player.js.
