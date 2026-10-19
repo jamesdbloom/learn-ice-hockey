@@ -421,8 +421,8 @@ const icingTheRaceAndTheDot = {
     // instruction now ENDS ON THE NEGATION, hedge after the absolute, beside the named substitute.
     // ⚠️ The only count word in the safety tail is "neither see nor brace for", a correlative about
     // seeing and bracing. It is NOT a count of prohibitions, so the added limbs do not strand it.
-    // Contrast `support-a-battle-from-outside`, whose "neither prohibition" IS a count and which
-    // therefore cannot take this limb without a substitution in the same edit.
+    // Contrast `support-a-battle-from-outside`, whose "neither prohibition" WAS a count: when it took
+    // a never-push-from-behind limb (19 Oct 2026) the count became "none of this" in the same edit.
     'that hurts people, in every league, checking or not. Never turn your back to ' +
     'the checker, and never duck. A turned back makes it a hit from behind, which you can neither ' +
     'see nor brace for, and a tucked chin straightens the cervical spine. Get your skates parallel ' +

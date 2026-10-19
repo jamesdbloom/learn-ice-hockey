@@ -678,14 +678,23 @@ const battleSupport = {
     // ⚠️ WHAT MAY NOT CHANGE IS THE PROHIBITION. Only the evidence attached to each limb moves.
     // Read aloud, two clauses of unequal strength can be heard as the weaker one granting
     // permission, so the absolute lands first and on its own — "Never turn your back to the
-    // checker, and never duck" — and "neither prohibition is a rule for fast arrivals only" covers
-    // both before either quote is heard. A listener must not be able to reach
+    // checker, and never duck" — and "none of this is a rule for fast arrivals only" covers
+    // every limb before either quote is heard. A listener must not be able to reach
     // "so a slow hit from behind is fine."
     '⚠️ And if you do go in, how you arrive outranks winning the puck. Never turn your back to ' +
     'the checker, and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
     'head up and chin off your chest' + SHOULDER_TAIL +
-    ' Loose-puck races and fifty-fifty pucks at the wall are ' +
-    'where checking-from-behind and boarding injuries happen, and neither prohibition is a rule ' +
+    // ⚠️ THE THIRD LIMB IS LOCAL, NEVER IN SHOULDER_TAIL (shared with four other modules). It is
+    // the owning section's own wording and scope (puck_support_and_spacing.md §"Supporting a
+    // battle" and its facts line): "never push or hit the opponent on the wall from behind — go
+    // for the puck at their feet … checking from behind even where body checking is not
+    // allowed". Adding it made "neither prohibition" a wrong count, so the count became "none of
+    // this", the body's own phrase, in the same edit (see rules_primer.mjs, which names this
+    // dependency).
+    ' Never push or hit the opponent on the wall from behind. Go for the puck at their feet. ' +
+    'A push from behind into the boards is checking from behind even where body checking is not ' +
+    'allowed. Loose-puck races and fifty-fifty pucks at the wall are ' +
+    'where checking-from-behind and boarding injuries happen, and none of this is a rule ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570, §5 Checking From Behind, is
     // addressed to the player delivering the check. The caption carried the twelve words
     // verbatim and unquoted. The colon that used to introduce this clause became a full stop so

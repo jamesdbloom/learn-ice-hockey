@@ -890,6 +890,9 @@ places in the old plan.
   - **S2 DONE (19 Oct, 2a17bd5).** Fights outside the periods (cc) and leftovers (bb), (dd), (ee), (ff); browser pass (o). Record: project/reviews/s2_fights_outside_periods_2026-10-19.md.
   - **S3 DONE (19 Oct).** Rows (hh) placement in winger, body_contact and team_play; (ii) amber on citations; (jj) body_contact paragraphs (19 → 1 over 1,200); (aa) pre-existing quotation drift (~80 fixes). Committed 036b698. Record: project/reviews/s3_placement_amber_quotes_2026-10-19.md. Still open: (ll) the tool gap, and the (hh) owner design call on styling.
   - **S4 DONE (19 Oct).** Row (ll) check_marker_pairs split-half check (f59c942) and row (mm) renderer keep-with-next. The item 8 term census is below.
+  - **[S5 leftover] puck_handling.mjs :790 and :1039 captions say "neither prohibition is a rule for fast checkers only".** Check whether their hosts need a never-push-from-behind limb (as puck_support's caption got in S5), and change the count word in the same edit.
+  - **[S5 review leftovers]** (1) equipment :779: the HC facemask ladder skips 7.1(b)'s major-plus-game-misconduct rung (discretionary on violence, mandatory on injury). (2) Propagate the HC/CARHA intent-to-injure slew-foot limb (Appendix D Note 1; CARHA 48(a)) to siblings that carry the slew-foot ladder: winger, defender, switching_positions, uk_rules and others. (3) The puck_support §6 caption and the :342 body are near-verbatim and voiced back to back (caption echo).
+  - **S5 DONE (19 Oct):** leftover claim rows from the Style B reviews and W80/W81. Record: project/reviews/s5_leftover_claims_2026-10-19.md. Most rows were already closed; the edits are in 7 documents plus the puck_support caption.
   - **T1 DONE (19 Oct):** the glossary-consistent swaps (209 in 28 docs); record project/reviews/t1_glossary_terms_2026-10-19.md. Open: diagram captions still use the old forms (e.g. face-off in 7 captions); offensive_zone_play :903 keeps "bodycheck" (cap).
   - **[Item 8, consistent terms] census done 19 Oct** (session scratchpad s4/terms/; perdoc_counts.csv, rerun count.py). **T1 (glossary-consistent sweep, no owner decision needed):**
     - face-off → faceoff (~75)
@@ -903,7 +906,8 @@ places in the old plan.
 
     Never inside quotations, rule titles or verbatim rulings. Mind facts caps and anchor headings. Diagram captions are a separate pass.
 
-    **OWNER QUESTIONS:**
+    **OWNER ANSWERED 19 Oct (T2 term sweep, next):** (a) British everywhere: centre/defenceman in prose, page title "Center" → "Centre" ("Defender" stays). (b) **goalie** in prose; goaltender/goalkeeper only in rule names and quotations. (c) "off side" for the hand sense. (d) rename "house default". (e) "penalty box" in prose. **Items 9–11 approved, all four:** essentials view; "In short" section summaries; reading time plus collapsed Sources; styling for "What it costs." blocks.
+    **OWNER QUESTIONS (now answered, kept for the census figures):**
     - (a) US spellings in the position pages. Style guide :995 tolerates "defenseman" (32) and "center" (36) there, but British spelling dominates everywhere, including inside center.md (centre 82 vs center 16). Should those pages be swept to defenceman/centre, and are the `# Center` / `# Defender` page titles and URLs kept?
     - (b) goalie vs goaltender vs goalkeeper. The glossary has no headword for any of them. Prose uses goalie 1,893, goaltender 735 and goalkeeper 461; diagrams use goaltender 273. The census recommends **goalie** in prose (with goaltender kept in rule names such as "goaltender interference" and in the page title) and goalkeeper only in quotations. That is about 440–1,130 edits plus diagrams.
     - (c) The glossary uses "off-side" for the unnatural-hand side, the same spelling the books use for the rule. Suggest "off side" for the hand sense.
