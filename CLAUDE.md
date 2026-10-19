@@ -1680,7 +1680,10 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     an Overview paragraph can collide with it and a LOST may pair two different
                     units — grep the key. ⚠️ It keys a unit by its first 60 characters with ⚠
                     and ** stripped, so a REWRITTEN OPENING reports as "no longer present by key" — a
-                    CANDIDATE, not a finding. WORKLIST: read every hit.
+                    CANDIDATE, not a finding. ⚠️ Keying on the opening hid the NEW half of a split ⚠️
+                    paragraph (S3, body_contact_and_battles, nine halves), so since 19 October 2026
+                    it also reports SPLIT HALF UNMARKED: an unmarked new unit whose text lies inside,
+                    or shares 80+ alphanumerics with, a marked base unit. WORKLIST: read every hit.
 site/               Astro static site built from content/. Never writes to it.
 infra/              Terraform. Do not run it. Do not stage its state or tfvars.
 docs/               Architecture, operations, decision log.

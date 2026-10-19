@@ -39,6 +39,18 @@ of the key (a renumbered Key Takeaway still pairs), so a Key Takeaway that opens
 words as an Overview paragraph collides with it, and a LOST can then be two different units
 paired by accident -- measured on goaltender.md :52 against the old KT6. Grep the key.
 
+SPLIT HALF UNMARKED (added 19 October 2026, plan row ll). Keying on the opening means a SPLIT
+paragraph pairs only the half that kept the opening words; the new half was never compared, and in
+S3 this hid five-plus lost escalations in body_contact_and_battles.md. So every tree unit with no ⚠
+whose text, normalised to lower-case alphanumerics, is a substring of a base unit that DID carry ⚠
+(or shares a run of at least OVERLAP_MIN characters with one) is reported as a candidate. A unit
+whose key is in the base is skipped (it IS that base unit: marked means already LOST, unmarked
+means a quotation it shares with some other marked unit is not a split), as is one identical to an
+unmarked base unit; a unit under SUBSTRING_MIN normalised characters is skipped too, since a short fragment
+matches everywhere. A hit is a CANDIDATE: the half may rightly be unmarked (a permission, a
+disclosure, a costs line whose instruction is escalated elsewhere). It cannot see a split whose
+new half was REWORDED so no 80-character run survives.
+
 WORKLIST, NOT A GATE. Read every hit.
 
 Usage: python3 scripts/check_marker_pairs.py [--base REV] <path> [<path> ...]
@@ -66,8 +78,38 @@ def units(text):
     the inner paragraph is a list); ```facts -> render_facts (one unit per line). Headings,
     tables and non-facts code blocks never set `important`, so they are not units.
     """
-    out = []
+    return _units_of(md_to_speech.parse_blocks(text))
+
+
+def voiced_units(text):
+    """units() minus the blocks md_to_speech DROPS: everything from the Sources trailer
+    ("Sources retrieved ...") on, and a "Notes on verification" style section. Used only by
+    the split-half check, because a trailer quoting a rule beside a ⚠ is not a spoken unit and
+    made every shared quotation look like a split parent (winger.md :527 and :598 on S3).
+    Mirrors build_chunks' two drop rules by hand; the rest of the tool still uses units()."""
+    kept, skip_level = [], 0
     for block in md_to_speech.parse_blocks(text):
+        if block.kind == "heading":
+            h = md_to_speech.strip_for_classification(block.lines[0]).lower()
+            if any(h.startswith(d) for d in md_to_speech.DROP_SECTION_HEADINGS):
+                skip_level = block.level
+                continue
+            if skip_level and block.level > skip_level:
+                continue
+            skip_level = 0
+            continue
+        if skip_level:
+            continue
+        if block.kind in ("paragraph", "quote") and md_to_speech.is_sources_paragraph(
+                re.sub(r"^\s*>\s?", "", "\n".join(block.lines), flags=re.M)):
+            break
+        kept.append(block)
+    return _units_of(kept)
+
+
+def _units_of(blocks):
+    out = []
+    for block in blocks:
         if block.kind == "code":
             if block.lines and block.lines[0].strip().lower().startswith("```facts"):
                 out.extend(l.strip() for l in block.lines[1:-1] if l.strip())
@@ -101,6 +143,61 @@ def marked(unit):
     return "⚠" in unit
 
 
+OVERLAP_MIN = 80
+SUBSTRING_MIN = 20
+
+
+def norm(unit):
+    return re.sub(r"[^0-9a-z]", "", unit.lower())
+
+
+def split_halves(old_units, new_units, lost_keys):
+    """Unmarked tree units that are a substring of, or share OVERLAP_MIN chars with, a
+    marked base unit. Returns (unit, matched base key) pairs."""
+    marked_old = [norm(u) for u in old_units if marked(u)]
+    unmarked_old = {norm(u) for u in old_units if not marked(u)}
+    grams = {}
+    for i, t in enumerate(marked_old):
+        for j in range(0, len(t) - OVERLAP_MIN + 1):
+            grams.setdefault(t[j:j + OVERLAP_MIN], i)
+    marked_old_units = [u for u in old_units if marked(u)]
+    old_keys = {key(u) for u in old_units}
+    hits = []
+    for u in new_units:
+        # A unit whose key is in the base IS that base unit by this tool's own pairing: if the
+        # base unit was marked it is already LOST, and if it was unmarked a shared quotation
+        # with some other marked unit does not make it a split half of one.
+        if marked(u) or key(u) in lost_keys or key(u) in old_keys:
+            continue
+        t = norm(u)
+        if len(t) < SUBSTRING_MIN or t in unmarked_old:
+            continue
+        match = None
+        for i, o in enumerate(marked_old):
+            if t in o:
+                match = i
+                break
+        if match is None:
+            # Name the marked base unit sharing the MOST 80-character runs, not the first.
+            counts = {}
+            for j in range(0, len(t) - OVERLAP_MIN + 1):
+                i = grams.get(t[j:j + OVERLAP_MIN])
+                if i is not None:
+                    counts[i] = counts.get(i, 0) + 1
+            if counts:
+                match = max(counts, key=counts.get)
+        if match is not None:
+            hits.append((u, key(marked_old_units[match])))
+    return hits
+
+
+def line_of(text, unit):
+    """Best-effort 1-based line of a unit in the file (its first 40 raw characters)."""
+    probe = unit.strip()[:40]
+    idx = text.find(probe)
+    return text.count("\n", 0, idx) + 1 if idx >= 0 else "?"
+
+
 def main(argv):
     base = "HEAD"
     if argv[:1] == ["--base"]:
@@ -121,6 +218,7 @@ def main(argv):
             print(f"check_marker_pairs: no content/ file differs from {base} -- nothing to check")
             return
     total_lost = 0
+    total_split = 0
     for path in argv:
         # git show needs a REPO-RELATIVE path. An absolute path silently yields an
         # empty blob, which printed HEAD=0 and read like a catastrophic marker loss.
@@ -131,8 +229,9 @@ def main(argv):
             print(f"{path}: NOT IN {base} (new file?) -- skipping")
             continue
         new_text = open(path, encoding="utf-8").read()
-        o = {key(u): marked(u) for u in units(r.stdout)}
-        n = {key(u): marked(u) for u in units(new_text)}
+        old_units, new_units = units(r.stdout), units(new_text)
+        o = {key(u): marked(u) for u in old_units}
+        n = {key(u): marked(u) for u in new_units}
         lost = [k for k, v in o.items() if v and k in n and not n[k]]
         vanished = [k for k, v in o.items() if v and k not in n]
         print(f"{path}")
@@ -144,8 +243,14 @@ def main(argv):
         print(f"   unit no longer present by key: {len(vanished)}")
         for k in vanished:
             print(f"      ?? {k!r}")
-    print(f"\ncheck_marker_pairs: {len(argv)} file(s), {total_lost} LOST MARKER(s) in total "
-          f"(a worklist: read each; exit status is always 0)")
+        halves = split_halves(voiced_units(r.stdout), voiced_units(new_text), set(lost))
+        total_split += len(halves)
+        print(f"   SPLIT HALF UNMARKED (candidate): {len(halves)}")
+        for u, ok in halves:
+            print(f"      ~~ :{line_of(new_text, u)} {key(u)!r}")
+            print(f"         from marked {base} unit {ok!r}")
+    print(f"\ncheck_marker_pairs: {len(argv)} file(s), {total_lost} LOST MARKER(s) in total, "
+          f"{total_split} SPLIT HALF UNMARKED candidate(s) (a worklist: read each; exit status is always 0)")
 
 
 if __name__ == "__main__":

@@ -878,7 +878,7 @@ places in the old plan.
     - (hh) Placement DONE in S3 (winger, body_contact, team_play). **Still open, owner design call:** whether the site should style a "What it costs." paragraph so the block is visible. Labels are now normalised to "What it costs." in those three documents.
     - (ii) DONE in S3.
     - (jj) DONE in S3.
-    - (ll) **check_marker_pairs cannot see a SPLIT that leaves the new half unmarked.** It keys on a unit's first 60 characters, so when a ⚠️ paragraph is split, the half that keeps the opening keeps the key and the new half is never compared. S3 review found 5 such losses in body_contact (:592, :664, :697, :1148, :1282), one of them a counterweight. Fix the tool: also flag any tree unit whose normalised text is a substring of a marked HEAD unit and that carries no marker.
+    - (ll) DONE 19 Oct (S4): check_marker_pairs reports SPLIT HALF UNMARKED (candidate). It recovers all nine S3 losses on a reconstruction; on the 16 S3 files its only hits are :870 and :891, both ruled LEAVE. Uncalibrated on R2 (298 candidates against 2c7435b~1, unread).
     - (mm) **Orphaned "What it costs." labels in audio.** The bare label is its own `<p>`, and it ends a chunk in body_contact (chunks 009, 020, 039, 046, 166) and winger (009, 059). The listener hears the label, then a chunk break. Fold the label into the first item, e.g. `- **What it costs.** <first item>`, or into a lead sentence.
     - (kk) **Site findings, owner sign-off:**
       - On phones the sticky audio player takes about 85 px under the header (17% of the screen at 400 px).
