@@ -303,7 +303,7 @@ In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a **five-minute major*
 
 **Two limits sit on the In-House fighting amendment, and both matter more than the five minutes does.**
 
-**It reaches those three competitions and no others.** Elsewhere under the In-House Rules the IIHF book stands, and there ⚠️ **a fighting major is a Reference Table 6 entry with an automatic game misconduct**; 46.1 reaches the plain willing fight directly. In junior hockey any major adds a game misconduct regardless.
+**It reaches those three competitions and no others.** Elsewhere under the In-House Rules the IIHF book stands, and there ⚠️ **a willing combatant's fighting major carries an automatic game misconduct** (Table 6 in 2025/26, Table 5 in 2026/27); 46.1 reaches the plain willing fight directly. In junior hockey any major adds a game misconduct regardless.
 
 **And it reaches the plain willing fight and nothing else.** The rest of Rule 46 is untouched: **instigator (46.3)** and **aggressor (46.4)** each add a major and an automatic game misconduct on top of a minor; **sucker-punching (46.5)** and **fighting outside the periods (46.9)** are a major plus an automatic game misconduct; **fighting off the playing surface (46.11)** adds a game misconduct to any major; **third man in (46.7)** is a game misconduct at the referee's discretion, unless one is already imposed in the original altercation; and persisting after being told to stop, or resisting a linesperson, can draw *"at least"* a major plus an automatic game misconduct. Rule 28 supplementary discipline sits above all of it.
 
@@ -418,7 +418,7 @@ New for 2026-27, and addressed to referees. In-House **Section 4** asks official
 
 **This changes the name of the call, not what is legal.** Nothing in it permits an act that was a penalty before, or forbids one that was not, and it attaches no age to anything. In particular it is not a body-checking rule — see §What this document does not cover.
 
-**And a relabelled call is not the lesser one.** **Cross-checking 59.3** and **Illegal Check to the Head 48.3** are both on IIHF **Reference Table 6**, the automatic-ejection table — ⚠️ **so a cross-check to the head called *cross-checking* carries exactly the same ejection exposure.** **Interference 56.5** and **Tripping 57.4** are both on **Table 7**, where the game misconduct is the referee's judgement. §A first major can end your game sets out both tables.
+**And a relabelled call is not the lesser one.** **Cross-checking 59.3** and **Illegal Check to the Head 48.3** are both on IIHF **Reference Table 6** (2025/26), the automatic-ejection table — ⚠️ **so a cross-check to the head called *cross-checking* carries exactly the same ejection exposure.** **Interference 56.5** and **Tripping 57.4** are both on the 2025/26 **Table 7**, where the game misconduct is the referee's judgement. §A first major can end your game sets out both tables.
 
 Both table numbers are the 2025/26 book's; the 2026/27 book merges them into one Table 5, and every entry named here is still on it.
 

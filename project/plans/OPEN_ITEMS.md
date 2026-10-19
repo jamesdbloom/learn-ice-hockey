@@ -874,7 +874,7 @@ places in the old plan.
     - (dd) DONE in S2.
     - (ee) DONE in S2.
     - (ff) DONE in S2.
-    - (gg) **IIHF table numbering.** It is Table 16 in 2025/26 and Table 14 in 2026/27, and several documents cite the 2025/26 number. Make one corpus-wide edition decision.
+    - (gg) DONE 19 Oct (record gg_iihf_tables_2026-10-19.md). Open: re-read sibling layers built on "every Table 6 fighting major ejects" (rules_primer :1031, uk_rules KT). Was: **IIHF table numbering.** It is Table 16 in 2025/26 and Table 14 in 2026/27, and several documents cite the 2025/26 number. Make one corpus-wide edition decision.
     - (hh) Placement DONE in S3 (winger, body_contact, team_play). **Still open, owner design call:** whether the site should style a "What it costs." paragraph so the block is visible. Labels are now normalised to "What it costs." in those three documents.
     - (ii) DONE in S3.
     - (jj) DONE in S3.
