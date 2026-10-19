@@ -1375,7 +1375,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_layer_echo.py,
                     check_quote_drift.py, check_caption_hosts.py, check_instruction_first.py,
                     check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py,
-                    check_marker_pairs.py.
+                    check_marker_pairs.py, check_readability.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
@@ -1658,6 +1658,10 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     word, a disclosure voiced in two layers is propagation, and a repeated safety
                     limb is repeated on purpose. Only narrative restatement is cuttable, and the
                     tool cannot tell the difference.
+                    check_readability.py — the readability programme's progress meter (owner, 19 Oct 2026):
+                    per-document prose words, sentence lengths, paragraphs over 1,200 chars, Key Takeaways
+                    over 60 words, rule references and ⚠ in prose. WORKLIST, never a gate. --json for
+                    before/after; READABILITY_CONTENT_DIR points it at an archived tree for a baseline.
                     check_marker_pairs.py — paragraphs that carried a ⚠️ in HEAD and carry none
                     now. ⚠️ `md_to_speech.py` sets `important` PER PARAGRAPH, so a paragraph losing
                     its LAST marker silently loses a spoken "Important." and NO other checker can
