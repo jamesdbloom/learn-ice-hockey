@@ -482,7 +482,7 @@ Numbers let you watch hockey when you cannot be at the rink. They are also the f
 
 **Penalty minutes (PIM).** Total minutes of penalties assessed.
 
-- *Limits:* lumps together stick fouls that cost your team and fighting majors that may not. Without the breakdown it tells you almost nothing. See [Risk Management](../hockey-iq/risk_management.md).
+- *Limits:* lumps together stick fouls that give the other team a power play and fighting majors, which usually do not, because both fighters go off. Without the breakdown it tells you almost nothing. See [Risk Management](../hockey-iq/risk_management.md).
 
 **Time on ice (TOI).** Total minutes played, usually split by strength state (even strength, power play, shorthanded).
 

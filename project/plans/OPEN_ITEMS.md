@@ -869,12 +869,29 @@ places in the old plan.
     - (y) **GitHub dependabot reports 10 vulnerabilities on main.** Triage site/package-lock.json and do not stage it with content.
     - (z) **Open owner question, IIHF 48.1.** It says it "supersedes all similar actions regarding hits to the head and neck", and the text leans against the "keep Rule 43" ruling. The corpus applies the ruling as the operative reading (for example winger: "treat … as a Rule 43 hit"). The owner may want to confirm.
     - (aa) **Pre-existing quotation drift.** About 30 quotations were already flagged at HEAD by check_quote_drift in the R2 documents: lowered capitals without `[x]`, and full stops inside quote marks where the source continues. Examples: forechecking :244/:281/:818, goaltender :1676, shooting :987/:1015, puck_handling :1129, defender :276, rules_primer (19), zone_entries (8), risk_management (6). None changes meaning. Repair this in a dedicated wave, and build the baseline with `sources/` symlinked beside the HEAD copy: the tool resolves `sources/` relative to the document.
-    - (bb) **Unscoped USA Hockey "head first"** in defender.md (the facts line and :891). 608(b) says "head first into the boards or goal frame". The facts line is at its cap.
-    - (cc) **Post-game fights priced off in-game rules.** NHL and PWHL 46.9 and IIHF 46.8 (2026/27) make a fight "other than during the periods of the game" a mandatory major plus game misconduct. Sweep the corpus for any handshake-line or after-the-buzzer text that prices a fight, a helmet removal or a peacemaker off the in-game rule. (Found in S1 in team_play.)
-    - (dd) **mental_game CM 677.** The USAH slammed-stick tariff may compress 601 and the Casebook. A rules-verifier should check it.
-    - (ee) **how_to_watch :485.** "Fighting majors that may not [cost your team]" can be heard alone as "fights are free". This is a judgement call on wording.
-    - (ff) **on_ice_communication HC "10.1(v)" and "11.1(v)".** These have the same list-item label shape as row (u). Cosmetic.
+    - (bb) DONE in S2.
+    - (cc) DONE in S2 (project/reviews/s2_fights_outside_periods_2026-10-19.md). Open: whether In-House Section 6's NIHL/SNL fight softening reaches fights outside the periods is unsettled; the corpus takes the harsher v1.1 46.9 reading.
+    - (dd) DONE in S2.
+    - (ee) DONE in S2.
+    - (ff) DONE in S2.
     - (gg) **IIHF table numbering.** It is Table 16 in 2025/26 and Table 14 in 2026/27, and several documents cite the 2025/26 number. Make one corpus-wide edition decision.
+    - (hh) **"What it costs" blocks are not one block at the end of each section** (site-reviewer, 19 Oct). Cases:
+      - winger: Power Play has the costs mid-section, before the main instruction; Net-front has 6 separate costs paragraphs; Backchecking.
+      - body_contact: up to 4 costs blocks per section; Slew-footing has an instruction after its costs block.
+      - team_play: a bare "What it costs:" label, with nothing marking where the block ends.
+
+      Faceoffs and goaltender are the clean model. The label wording also varies, e.g. "What it costs." / "What it costs:" / "What boarding costs.". **Owner design call:** whether the site should style a "What … costs" paragraph so the block is visible.
+    - (ii) **Amber on a citation instead of the instruction**, at 7 sites:
+      - body_contact: "IIHF Rule 43.1", "Rule 32(d)", "USA Hockey 604(d)" and "CARHA 59(b)";
+      - rules_primer: "USA Hockey 614(c)", the table cell "Elite League:" (×2), and the verification-notes "Scope:".
+
+      Split each bold run so the amber lands on the instruction.
+    - (jj) **Paragraph length.** body_contact has 10 body paragraphs of 1,202–1,347 characters. The Sources `<details>` hold very long paragraphs: goaltender has one of 36,813 characters.
+    - (kk) **Site findings, owner sign-off:**
+      - On phones the sticky audio player takes about 85 px under the header (17% of the screen at 400 px).
+      - The ToC has no active-heading tracking.
+      - Empty `<p>` elements sit around figures.
+      - The GA4 bootstrap (`analytics.js`) is inert unless a `ga-measurement-id` meta tag is present. Confirm production does not inject one, against the "no third-party requests" claim.
   - **S1 DONE (19 Oct).** The claim sweep of the 19 R1-only documents is complete: 13 edited, 6 clean. Record: project/reviews/claim_sweep_s1_2026-10-19.md. That closes rows (a), (b), (d), (e), (i)–(n), (q), (s) and (t) for the R1-only documents; R2 had already covered its own 20.
   - **[R1 corpus-claim leftovers] Sweep each of these claims across sibling documents, by claim and not by line.**
     - (a) "From behind ends your game in every book but USA Hockey's" is wrong at the boards: USAH Casebook 608 Situation 1 makes it mandatory there.
@@ -897,7 +914,7 @@ places in the old plan.
       - 614(c)(2)/(4)
       - Situation 5 avoidable contact
       - a downed player is not moved
-    - (o) Run a site-reviewer pass in a browser on the R1 pages, which were checked only by --panels and --bare.
+    - (o) DONE 19 Oct (S2): site-reviewer on 8 pages; no critical issues. Findings are in rows (hh)–(kk).
     - (p) DONE in R2: special_teams --panels 0.
     - (q) conditioning :590 says "plan on a match" for a reckless USAH check. That is harsher than 604(e)'s "may" (safe direction), so align it with the owner's 602(a) ruling wording.
     - (r) DONE in R2 (2c7435b).
