@@ -1673,7 +1673,12 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     per blockquote inner paragraph, per facts line. Until 29 September 2026 it split on
                     blank lines only and MISSED SIX losses in one wave (rules_primer :798, shooting
                     :512/:514, special_teams :712/:1115/:1157); `--base <rev>` re-checks a committed
-                    wave and reproduced all six. ⚠️ It keys a unit by its first 60 characters with ⚠
+                    wave and reproduced all six. ✅ The list-fusion blind spot is fixed (19 Oct 2026):
+                    units now come from md_to_speech's own `parse_blocks` and `_list_items`, so an
+                    indented continuation no longer fuses a Common Mistakes list into one 13k-char
+                    unit. List markers are no longer part of the key, so a Key Takeaway opening like
+                    an Overview paragraph can collide with it and a LOST may pair two different
+                    units — grep the key. ⚠️ It keys a unit by its first 60 characters with ⚠
                     and ** stripped, so a REWRITTEN OPENING reports as "no longer present by key" — a
                     CANDIDATE, not a finding. WORKLIST: read every hit.
 site/               Astro static site built from content/. Never writes to it.

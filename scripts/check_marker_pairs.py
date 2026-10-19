@@ -12,9 +12,15 @@ lines), and per ` ```facts ` line. So a blank-line block holding several list it
 a unit that lost its last marker while a sibling in the same block kept one was invisible.
 Wave 6 measured it: the tool missed rules_primer :798, shooting :512/:514 and special_teams
 :712/:1115/:1157 -- six lost escalations, every one found only by a reviewer pairing rendered
-units by hand. The units below mirror `render_quote` and `_list_items` in md_to_speech.py.
-⚠️ If those functions change, this must change with them: a comment asserting fidelity to
-another file is not fidelity to it, so re-validate with `--base` against a known wave.
+units by hand. 
+⚠️ THE 29 SEPTEMBER REWRITE STILL RE-IMPLEMENTED THE PARSER, AND IT DIVERGED (fixed 19 October
+2026). md_to_speech ends a list at a blank line unless a list item follows; this tool's blank-line
+split took a block opening with an indented continuation paragraph and fused it with the items
+after it, so inside Common Mistakes one "unit" ran to 13-24k characters -- a lost marker inside it
+went unreported and untouched siblings reported as "no longer present by key". units() now calls
+md_to_speech.parse_blocks and _list_items directly. It still mirrors the DISPATCH in
+render_quote / render_facts by hand: if those change, re-validate with `--base` against a known
+wave.
 
 WHY AN AGGREGATE DELTA IS NOT ENOUGH. A net figure is the sum of a loss and a gain and both
 are invisible in it. Measured 24 September 2026: a wave showed 79 -> 77 and the -2 was
@@ -28,8 +34,10 @@ so moving a glyph or splitting a bold run does not change the key, but a unit wh
 WORDS were rewritten reports as "no longer present by key" rather than as a loss. That is a
 CANDIDATE, not a finding: check whether the rewritten unit still carries a marker. A re-aiming
 wave rewrites Key focus bullets by design and will always produce these. Duplicate keys (two
-units opening with the same 60 characters) collapse to one; that is rare and errs toward
-reporting nothing for the duplicate.
+units opening with the same 60 characters) collapse to the LAST one. List markers are not part
+of the key (a renumbered Key Takeaway still pairs), so a Key Takeaway that opens with the same
+words as an Overview paragraph collides with it, and a LOST can then be two different units
+paired by accident -- measured on goaltender.md :52 against the old KT6. Grep the key.
 
 WORKLIST, NOT A GATE. Read every hit.
 
@@ -44,55 +52,43 @@ import sys
 
 LIST_RE = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
 
-
-def blocks(text):
-    return [b for b in re.split(r"\n\s*\n", text) if b.strip()]
-
-
-def list_items(lines):
-    """Mirror md_to_speech._list_items: one string per item, continuation lines attached."""
-    items, current = [], []
-    for line in lines:
-        if not line.strip():
-            continue
-        if LIST_RE.match(line):
-            if current:
-                items.append("\n".join(current))
-            current = [line]
-        elif current:
-            current.append(line)
-        else:
-            current = [line]
-    if current:
-        items.append("\n".join(current))
-    return items
-
-
-def split_para(para):
-    return list_items(para.split("\n")) if LIST_RE.match(para) else [para]
+# Use md_to_speech's OWN block parser and list flattener, so a unit here is a unit there by
+# construction rather than by a comment asserting it.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import md_to_speech  # noqa: E402
 
 
 def units(text):
-    """Spoken units, in the granularity md_to_speech uses for `important`."""
-    out, in_fence = [], False
-    for block in blocks(text):
-        lines = block.split("\n")
-        first = lines[0].lstrip()
-        if first.startswith("```") or in_fence:
-            # A fenced block: each content line of a ```facts block is voiced alone.
-            for line in lines:
-                if line.lstrip().startswith("```"):
-                    in_fence = not in_fence
+    """Spoken units, exactly where md_to_speech computes `important`.
+
+    paragraph -> render_paragraph (one unit); list -> render_list (one unit per
+    _list_items item); quote -> render_quote (one unit per inner paragraph, or per item if
+    the inner paragraph is a list); ```facts -> render_facts (one unit per line). Headings,
+    tables and non-facts code blocks never set `important`, so they are not units.
+    """
+    out = []
+    for block in md_to_speech.parse_blocks(text):
+        if block.kind == "code":
+            if block.lines and block.lines[0].strip().lower().startswith("```facts"):
+                out.extend(l.strip() for l in block.lines[1:-1] if l.strip())
+        elif block.kind == "list":
+            out.extend(md_to_speech._list_items(block.lines))
+        elif block.kind == "quote":
+            inner = "\n".join(re.sub(r"^\s*>\s?", "", l) for l in block.lines)
+            for para in re.split(r"\n\s*\n", inner):
+                lines = [l for l in para.split("\n") if l.strip()]
+                if not lines:
                     continue
-                if line.strip():
-                    out.append(line)
-            continue
-        if all(l.lstrip().startswith(">") for l in lines if l.strip()):
-            inner = "\n".join(re.sub(r"^\s*>\s?", "", l) for l in lines)
-            for para in blocks(inner):
-                out.extend(split_para(para))
-            continue
-        out.extend(split_para(block))
+                if len(lines) >= 2 and all(l.lstrip().startswith("|") for l in lines):
+                    continue  # render_table: no `important`
+                if re.match(r"^\s*(#{1,6})\s+", para):
+                    continue  # render_heading: no `important`
+                if LIST_RE.match(para):
+                    out.extend(md_to_speech._list_items(para.split("\n")))
+                else:
+                    out.append(para.replace("\n", " "))
+        elif block.kind == "paragraph":
+            out.append(" ".join(block.lines))
     return out
 
 

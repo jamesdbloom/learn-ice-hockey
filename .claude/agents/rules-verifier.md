@@ -59,6 +59,11 @@ extraction traps, and there are several that have manufactured false findings.
 | `pwhl_rules.txt` | **PWHL Official Rule Book 2025-2026.** ⚠️ **Added 21 September 2026 and absent from this table until 22 September** — `body_contact_and_battles.md` quotes its Rule 52.1 on angling and bodychecking. `_layout` twin present. ⚠️ **A WOMEN'S PROFESSIONAL book — never a general standard, and not one of the five the corpus normally compares** |
 | `ibc.txt` | USA Hockey *Introduction To Body Contact* |
 | `carha.txt` | CARHA Hockey Official Rule Book, printed 2020. ⚠️ **Governs CARHA-affiliated leagues only — never a general rec-hockey standard** |
+| `carha_2026.txt` (+ `carha_2026_layout.txt`) | **CARHA Hockey 2026 rulebook — the CURRENT CARHA book. Cite this, not `carha.txt` (2020).** Governs CARHA-affiliated adult leagues only. Owner ruling 15 Oct 2026: CARHA claims follow the 2026 book |
+| `hc_2026-08-print.txt` (+ `hc_layout_2026-08-print.txt`) | **SUPERSEDED** Hockey Canada August 2026 print; `hc.txt` is the 10 Sept 2026 republication. Never cite the `-print` files |
+| `iihf_disciplinary_regs_2026.txt` | IIHF Disciplinary Regulations (in force 6 Oct 2025) — supplementary discipline, not playing rules |
+| `adultsskatetoo_how_to_fall.txt` | Adults Skate Too, "How to Fall Safely on Ice" — a technique source, not a rulebook; source-verifier/safety-reviewer ground |
+| `ihuk_coaching_regs_layout.txt` | `-layout` twin of `ihuk_coaching_regs.txt` |
 | `huh.txt` | USA Hockey *Heads Up Hockey* Program Guide. ⚠️ **Extracted with PLAIN `pdftotext`, not `-layout`** — it is a multi-column brochure and `-layout` splices the columns mid-sentence |
 | `huh_layout.txt` | The same book, `-layout`. Use only to check a table; **the spinal-injury passage is unrecoverable in it** |
 | `iihf_coachdev_off_tactics.txt` | IIHF coach-development offensive tactics — **coaching material, not a rulebook. Never cite it as a rule** |

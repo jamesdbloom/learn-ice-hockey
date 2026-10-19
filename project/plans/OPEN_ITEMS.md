@@ -863,13 +863,14 @@ places in the old plan.
     - (s) **Fight priced only for intervening, never for the fight itself.** IIHF 46.1, USAH 615(a) and HC 7.10(b) are major plus game misconduct. CARHA 59(a) is a match for the instigator or aggressor, and 59(d) suspends any fighter. This was found in goaltender and body_contact; sweep the other documents by claim.
     - (t) **Closed lists on a mandatory match that drop USAH 608(c).** These recurred in 6 R2 documents; sweep R1-only documents for the same pattern.
     - (u) **"HC 10.1(i)" citation form.** It means item i of 10.1's list. It appears in on_ice_communication, body_contact, dzc and breakouts; this is cosmetic. Also check where CARHA 58(a), the open-ice gather minor, belongs beside 74(b).
-    - (v) **`.claude/agents/rules-verifier.md` source table is stale.** It is missing carha_2026, iihf_disciplinary_regs_2026 and adultsskatetoo_how_to_fall, and it still lists the superseded hc_2026-08-print. Agents may cite carha.txt (2020).
+    - (v) DONE 19 Oct: rules-verifier.md's table now lists carha_2026 (current), hc_2026-08-print (superseded), iihf_disciplinary_regs_2026, adultsskatetoo_how_to_fall and ihuk_coaching_regs_layout. Every sources/*.txt is named.
     - (w) **Scratchpad naming in briefs.** `rvf_<stem>` let agents collide on a shared `rvf_tools/`. Give each agent a unique directory.
-    - (x) **check_marker_pairs fuses Common Mistakes list items** after an indented continuation paragraph, so it is blind inside Common Mistakes (W35 row). Two R2 authors hand-checked to work around it. Fix it between waves.
+    - (x) DONE 19 Oct: check_marker_pairs.units() now uses md_to_speech.parse_blocks. It is validated on the R2 commit (4 new LOSTs, all splits or duplicate-key artefacts) and on the 29 Sept regression set (all 6 reproduce). One caveat remains: duplicate 60-char keys still collapse, so grep the key.
     - (y) **GitHub dependabot reports 10 vulnerabilities on main.** Triage site/package-lock.json and do not stage it with content.
     - (z) **Open owner question, IIHF 48.1.** It says it "supersedes all similar actions regarding hits to the head and neck", and the text leans against the "keep Rule 43" ruling. The corpus applies the ruling as the operative reading (for example winger: "treat … as a Rule 43 hit"). The owner may want to confirm.
     - (aa) **Pre-existing quotation drift.** About 30 quotations were already flagged at HEAD by check_quote_drift in the R2 documents: lowered capitals without `[x]`, and full stops inside quote marks where the source continues. Examples: forechecking :244/:281/:818, goaltender :1676, shooting :987/:1015, puck_handling :1129, defender :276, rules_primer (19), zone_entries (8), risk_management (6). None changes meaning. Repair this in a dedicated wave, and build the baseline with `sources/` symlinked beside the HEAD copy: the tool resolves `sources/` relative to the document.
     - (bb) **Unscoped USA Hockey "head first"** in defender.md (the facts line and :891). 608(b) says "head first into the boards or goal frame". The facts line is at its cap.
+  - **S1 IN PROGRESS (19 Oct).** A claim sweep of the 19 R1-only documents, one agent each. The brief is in session scratchpad s1/brief.md and covers rows (a), (b), (i)–(n), (q), (s) and (t), the screen ruling, and the head-contact and Rule 43 rulings. Each agent's fixes then go to reviewers, then the gate.
   - **[R1 corpus-claim leftovers] Sweep each of these claims across sibling documents, by claim and not by line.**
     - (a) "From behind ends your game in every book but USA Hockey's" is wrong at the boards: USAH Casebook 608 Situation 1 makes it mandatory there.
     - (b) Goalie injury stoppage: "every book stops play" leaves out the possession gate in five books (NHL/IIHF/PWHL 8.1, USAH 206(a), HC 2.4(b)).
@@ -878,7 +879,7 @@ places in the old plan.
     - (e) switching_positions Check-yourself Q7 says the CARHA source differs, but it teaches the same thing.
     - (f) USAH 610(d) deliberate net displacement is not covered in game_management.
     - (g) HC 8.6 versus 8.7: a puck-first slide may be priced as clipping. This is a reading and needs a ruling.
-    - (h) "A screen outside the crease keeps the goal" is false under NHL/PWHL/IIHF 69.1 "by positioning". Check ozp, winger, center and scanning.
+    - (h) SUPERSEDED: the premise was wrong. A no-contact screen outside the crease DOES keep the goal (Table 14 5C/5E); corrected corpus-wide in R2 (2c7435b). S1 sweeps the R1-only docs.
     - (i) The IIHF "twenty" major+GM count: 2026/27 Table 5 has 22. Check sibling documents.
     - (j) CARHA's mandatory goalie charge applies "in the crease OR if it injures" (52(b)). Siblings may carry only one limb.
     - (k) "Pick up a teammate's stick off the ice" is NHL 10.3 only; HC 3.2(b) and CARHA 51(b) forbid it. Check sibling documents.
@@ -892,9 +893,9 @@ places in the old plan.
       - Situation 5 avoidable contact
       - a downed player is not moved
     - (o) Run a site-reviewer pass in a browser on the R1 pages, which were checked only by --panels and --bare.
-    - (p) special_teams :1084/:1104 render as amber panels (pre-existing).
+    - (p) DONE in R2: special_teams --panels 0.
     - (q) conditioning :590 says "plan on a match" for a reckless USAH check. That is harsher than 604(e)'s "may" (safe direction), so align it with the owner's 602(a) ruling wording.
-    - (r) core_principles :130 ("can cost the goal wherever you stand") versus the glossary's "normally legal" screen outside the crease: reconcile the NHL/PWHL/IIHF framing across pages.
+    - (r) DONE in R2 (2c7435b).
   - **Rollout:** the 20 documents in flight in R1 have the shortening brief only. The queued 19 get preamble_v2 (shortening plus items 1–6). An R2 pass then applies items 1–6 to the first 20.
 - **[OWNER, 19 Oct 2026: SHORTER IS BETTER]** Verbatim: *"make the text as short as possible, I want it to still be clear and easy to understand but shorter text is better then longer text as it is easier and faster to read"*. This is a standing rule for every edit and a readability workstream of its own. Cut words that do no work: repeated qualifiers, restated citations, book tours, throat-clearing, and a second sentence that says the first again. Prefer one short sentence to a long one. Keep every safety limb and honest disclosure (non-negotiables 3 and 4), but say each once and briefly. Rules detail belongs in the body or facts, not repeated in every layer. Measure each document's word count before and after, and review every cut for a lost limb.
 
