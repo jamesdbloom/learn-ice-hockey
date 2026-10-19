@@ -468,14 +468,11 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - :1602 HC slide is 8.6 tripping first, 8.7 can reach;
     - "likely" consistency at puck_handling :1127, shooting :572/:925, goaltender :1640.
   - Noted, no change: "harsher of 43 and 48" in the NHL/PWHL is the owner's ruling (a reading, not rule text).
-- **IIHF residuals from f4S (all harsh direction, next wave):**
-  - "no minor (43.2)" as rule text on the head: rules_primer :465, goaltender :1268/:1269, body_contact :1331.
-  - IIHF flat "ends your game" at carrier sites: defender :463/:488/:907, forechecking :326.
-  - "None of the six asks whether he had the puck" includes the IIHF: dtr :356/:1041, winger :746.
-  - "five of the six" counts different books: body_contact :31/:2090 vs dtr :442/:1041/:1111.
-  - special_teams :653 "no match or minor (43.2)" citation.
-  - zone_entries :241 optional plan-on.
-- **goaltender :1246:** "EIHL 42 make only the game misconduct mandatory" omits that IIHF Table 6 already attaches a GM to a 42.4 major (harsh, incomplete).
+- **qR notes (later):** "nothing the Elite League publishes" (on_ice :148, :198) is wider than the Casebook on disk; faceoffs :949 states PWHL 15.5 without the body's "plain reading" hedge.
+- **P wave done 19 Oct** (record p_residuals_2026-10-19.md).
+  - Residual 22.3 wording to align: rink_map :303, neutral_zone_systems :553/:569, center :394, offensive_zone_play :820, special_teams :354/:1047.
+  - Glossary reason given more than once in body_contact (4), game_management (2) and rules_primer (2). This is brevity, not safety.
+  - HC 7.6(a) head-contact minor vs "lightest call ends your game" for HC in body_contact :31/KT6. Harsh direction.
 - **Fix round 4 (19 Oct, done):** IIHF wording cleanup.
   - Glossary reason only for a skater without the puck, once per document.
   - Carrier and goalie: "plan on the major and game misconduct". The IIHF Situation 46.4 calls a carrier hit from behind boarding (41.2 keeps a minor).

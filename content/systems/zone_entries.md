@@ -238,7 +238,7 @@ Rule: Hitting a defenceman turned to retrieve is checking from behind — under 
 Rule: USA Hockey's Casebook names its minor plus misconduct for a push "not near the boards" or a minimal-contact "pinch"; a check from behind that "recklessly endangers the opponent", board contact or none, is a major plus a game misconduct — plan on a match (608 Situation 1; 602(a))
 Rule: Hockey Canada 7.5 is a minor and game misconduct for an intentional hit from behind "anywhere on the ice", off the head or head first into boards, and a match if he is defenceless into boards or goal frame; on his head, head contact (7.6; 7.7 Junior/Senior), up to a match, a must if defenceless
 Rule: The checking-from-behind ejection does not wait for an injury — Hockey Canada 7.5(b) reaches a major plus a game misconduct on the violence of the impact alone and makes both mandatory on injury; USA Hockey 608(b) requires the pair if reckless, and plan on a match (602(a))
-Rule: A hit from behind meant to injure is a mandatory match wherever the player lands — Hockey Canada 7.5(c)'s second paragraph (7.6(c) or 7.7(c) on the head), NHL and PWHL 21.1, USA Hockey 602(a) and CARHA 48(a); the IIHF ejects a reckless one instead (43.3)
+Rule: A hit from behind meant to injure is a mandatory match wherever the player lands — Hockey Canada 7.5(c)'s second paragraph (7.6(c) or 7.7(c) on the head), NHL and PWHL 21.1, USA Hockey 602(a) and CARHA 48(a); the IIHF has no match, so plan on its major and game misconduct (43.3)
 Rule: CARHA 53(a) ends your night — a Minor or Major, each plus a Game Misconduct, for an intentional hit from behind "anywhere on the ice", and a Match "could also be assessed"; 53(b) a certain Match into the boards or net if he cannot protect himself, no intent needed, no lesser penalty in its place
 Action: Retreat to the line, tag up, come again
 ```
@@ -785,7 +785,7 @@ See the [Rules Primer](../foundation/rules_primer.md) for the full icing rule an
 ```facts
 Rule: Under the NHL and IIHF books a goalie may not play the puck outside the designated area behind the net — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
 Rule: On a trapezoid violation what is judged is the position of the puck, not the goalie's; the only exception is playing it while maintaining skate contact with his crease (NHL Rule 27.8)
-Rule: The trapezoid applies in the NHL and IIHF (IIHF Rule 27.7); KHL reportedly too, unverified here. In any British competition plan for their goalie to come for a dumped puck — England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope unstated
+Rule: The trapezoid applies in the NHL and IIHF (IIHF Rule 27.7); KHL reportedly too, unverified here. In any British competition plan for their goalie to come for a dumped puck — England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", its scope and standing unsettled
 Key: USA Hockey, Hockey Canada and CARHA have no trapezoid, and the PWHL's 1.8 drops it though its 65.2(viii) keeps the minor — under all four, plan for the goalie to come out
 Action: Dump to the corners, not to the goalie — the corners are legally out of bounds for him, straight behind the net is not
 Action: If you must put it behind the net, put it there hard — a rocketing puck is far harder to stop and distribute cleanly
