@@ -820,7 +820,7 @@ Action: Racing for a loose puck, drive the first three steps, then arrive knees 
 Action: When the puck turns over, stop and go the other way — a loop carries you away from the play for a second you do not get back
 Position: Backchecking, come back in your lane and pick up your attacker on the inside — goal side of them, not alongside
 Action: Driving the net, skate a straight line, stick on the ice, and pull up a skate's width outside the crease's red line, short of the goalie
-Rule: Under USA Hockey, keep your stick blade out of the crease too, line included, while the goalie is in it — a goal scored with an attacker's stick or skates in there is disallowed (Rule 625(b) and its Casebook)
+Rule: Under USA Hockey, keep your stick out of the crease too, line included, while the goalie is in it — a goal scored with an attacker's stick or skates in there is disallowed (Rule 625(b) and its Casebook)
 Action: To get open for a pass, stop in the open ice rather than circling through it — a stopped player is a target
 Options: On a breakout or regroup many teams want the opposite — swing with speed and take the pass moving
 Action: Forechecking, skate at where the carrier is going rather than where they are, so your angle steers them toward the wall
@@ -830,7 +830,7 @@ Convention: Lane assignments on the backcheck and how hard the first forechecker
 - **The loose puck.** Drive the first three steps. Then arrive knees bent, head up, on an angle to the boards, able to stop — a player who wins the race at full stretch has no balance left to protect the puck.
 - **The turnover.** The instant your team loses the puck, stop and go the other way. A loop feels faster and is not — it carries you away from the play.
 - **The backcheck.** Come back hard in your lane and pick up your attacker on the inside — goal side, not level with them. Commonly the centre takes the middle lane and the wingers the outside, but some teams give the middle to the first player back; [Defending the Rush](../systems/defending_the_rush.md#backchecking--lanes-and-assignments) covers it. Ask your bench.
-- **Driving the net.** Skate a straight line, stick on the ice, and pull up a skate's width outside the crease's red line, short of the goalie — rebounds come to the player who is stopped and ready, not the one gliding past the post. Some books count the red line as crease, so keep your skates off it too. [Offensive Zone Play](../systems/offensive_zone_play.md#6-net-front-play) covers the net front. **Under USA Hockey, keep your stick blade out of the crease too, line included, while the goalie is in it** — it counts the lines as crease, and a goal scored with an attacker's stick or skates in there must be disallowed.
+- **Driving the net.** Skate a straight line, stick on the ice, and pull up a skate's width outside the crease's red line, short of the goalie — rebounds come to the player who is stopped and ready, not the one gliding past the post. Some books count the red line as crease, so keep your skates off it too. [Offensive Zone Play](../systems/offensive_zone_play.md#6-net-front-play) covers the net front. **Under USA Hockey, keep your stick out of the crease too, line included, while the goalie is in it** — it counts the lines as crease, and a goal scored with an attacker's stick or skates in there must be disallowed.
 - **Getting open.** In the offensive zone, find open ice and stop in it — a stopped player is a target; one circling through is open for an instant. Keep your eyes up and feet ready, because a stopped player is also easy to hit. On a breakout or regroup many teams want the opposite — swing with speed and take the pass moving. Ask which.
 - **The forecheck.** Skate at where the carrier is going, not where they are. An angle that takes away the middle steers them to the wall. [Forechecking Systems](../systems/forechecking_systems.md) covers who goes and how hard.
 
@@ -1012,7 +1012,7 @@ it wrong and then checking teaches more than recognising the right answer.*
 8. **Defending a rush, skate backwards fast enough to hold your gap, and pivot late.** Pivoting toward the boards is a coaching default, not a law — ask your coach and drill both ways.
 9. **When the play turns, stop and go straight back — on either side, so train your weak one.** Get filmed, and expect months for the basics — one provider's guidance, not a measurement.
 10. **When you fall, take the case you are in.** To the ice: to the side, hands in, chin in. Into the boards: head up, chin off your chest. Sliding into them: feet or side first, head up. Then take two or three seconds before you rise.
-11. **A fall can concuss you without knocking you out.** If a concussion is suspected, come off, do not return that day, and do not skate again until a medical professional clears you — even if you feel fine.
+11. **A fall can concuss you without knocking you out.** If a concussion is suspected, come off, do not return that day, and do not play again until a medical professional clears you — even if you feel fine.
 12. **Match your skating to the situation.** Backchecking, come back goal side of your attacker. Driving the net, skate straight and pull up just outside the crease, short of the goalie. Wanting the puck, stop in open ice. Forechecking, skate at where the carrier is going.
 
 ---

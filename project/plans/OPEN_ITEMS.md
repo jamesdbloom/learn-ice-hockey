@@ -444,6 +444,94 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - :951 has a stale anchor comment.
 - **site-reviewer pass:** the diagram scene at 400 px, the 🇬🇧 wrap in conditioning's Key focus, and a special_teams bold run.
 
+### From the OR wave (19 Oct)
+- **OR review, safeOR (done; recorded in or_owner_rulings_2026-10-19.md):**
+  - M1: "6–10 games" sits beside 607(e), 608(c), 603(c), 620(c) (4–8, Level 2) and 604(e), 609(c), 621(c), 628(c) (3–5, Level 3), per usah.txt:1206-1225. Fix: exact figures only in owner passages (rules_primer :388 with all three levels, body_contact :803, goaltender :1259, special_teams :1126); elsewhere "a likely multi-game suspension".
+  - M3: cut the clause from every facts line and keep one summary layer per document (safeOR table in scratchpad or/).
+  - M2/m1: practice_and_development :607 and :560 concussion lines → "do not skate again until a medical professional clears you".
+  - m2: restore "skates parallel" in time_and_space KT5.
+  - m3: zone_entries KT7 and CM :1167 → add "and never duck".
+  - Remove the penalty clause from language_and_glossary Key focus :27.
+- **OR review, rvG1 (technique + goalie):**
+  - MAJOR: goaltender :1618 (and :611, special_teams :1048) "22.3 suspends the Restricted Area" tells an England reader the trapezoid is off.
+  - MAJOR: CARHA 32(d) is applied to a match or a non-major ejection (body_contact :768, passing :223); a match is 34(a).
+  - MINORs: puck_handling :340 split by book; passing :437 IIHF 60.4 "may"; body :1602 8.7(b) may/must; :1665 kneeing row; :1648 CARHA clipping; :88 accident limb.
+  - Open for the owner: HC 7.6 against 8.5(b) on a goalie charge that reaches the head.
+- **Re-review rrA (done; recorded in or_owner_rulings_2026-10-19.md):**
+  - MAJOR: body_contact :1331 still says IIHF head-reaching from behind "never costs less than 43's no-minor tariff". Same claim at :750, :764 ("IIHF ends your game every time", but 43.3 needs reckless) and :766. Align with rules_primer :466.
+  - MINORs:
+    - rules_primer :388 Level 2 also includes spearing, butt-ending and head-butting;
+    - body_contact :798 "never only tonight" overstated for CARHA (32(c));
+    - puck_handling :339 "no test" → "no advantage test";
+    - :351 CARHA wording;
+    - body_contact :88 "or net";
+    - :1602 HC slide is 8.6 tripping first, 8.7 can reach;
+    - "likely" consistency at puck_handling :1127, shooting :572/:925, goaltender :1640.
+  - Noted, no change: "harsher of 43 and 48" in the NHL/PWHL is the owner's ruling (a reading, not rule text).
+- **IIHF residuals from f4S (all harsh direction, next wave):**
+  - "no minor (43.2)" as rule text on the head: rules_primer :465, goaltender :1268/:1269, body_contact :1331.
+  - IIHF flat "ends your game" at carrier sites: defender :463/:488/:907, forechecking :326.
+  - "None of the six asks whether he had the puck" includes the IIHF: dtr :356/:1041, winger :746.
+  - "five of the six" counts different books: body_contact :31/:2090 vs dtr :442/:1041/:1111.
+  - special_teams :653 "no match or minor (43.2)" citation.
+  - zone_entries :241 optional plan-on.
+- **goaltender :1246:** "EIHL 42 make only the game misconduct mandatory" omits that IIHF Table 6 already attaches a GM to a 42.4 major (harsh, incomplete).
+- **Fix round 4 (19 Oct, done):** IIHF wording cleanup.
+  - Glossary reason only for a skater without the puck, once per document.
+  - Carrier and goalie: "plan on the major and game misconduct". The IIHF Situation 46.4 calls a carrier hit from behind boarding (41.2 keeps a minor).
+  - No IIHF in "harsher of 43 and 48".
+  - Drop the 48.1 quote at game_management :929.
+  - Restore the puck_handling 627(b) suspension.
+  - Later row: "in its own competitions" on 22.3 remains at about 13 sites in 9 documents (on_ice, time_and_space, puck_support, pwtp, defender, goaltender, breakouts, dzc, faceoffs). Make them consistent with "scope unstated".
+- **Fix round 3 (19 Oct, done):**
+  - The final rules check found that the IIHF Glossary ("Vulnerable Position … automatically considered reckless") plus the 43.1 definition make a check from behind on a skater reckless by definition. So round 2's "short of reckless, 48.2's minor" was the PERMISSIVE reading. Reverting it to "plan on the major and game misconduct, never a minor" at about 35 sites. rvG2's original MAJOR had missed the Glossary.
+  - Plus finS/finR minors.
+  - Open for the owner:
+    - In-House Rules §4 directs cross-check-to-head be called cross-checking, not Rule 48;
+    - is IIHF puck-carrier vulnerability (Glossary) an official interpretation? Search the Situation Handbooks.
+  - Later row: puck_handling and sibling crease-cover summaries.
+- **Re-review rrB (done; recorded in or_owner_rulings_2026-10-19.md):**
+  - MAJOR: uk_rules :256 "play as though the trapezoid binds there" implies it is off in England and Wales (correction is in the next chunk).
+  - MINORs:
+    - uk_rules :106 "22.3 switches the trapezoid off";
+    - rink_map :305 "The suspension frees…" → "Even where it applies…";
+    - special_teams :1126 "until your case has been heard" → "dealt with", plus "a hearing can raise or lower";
+    - special_teams :669/:1145 add the IIHF non-reckless 48.2 minor;
+    - special_teams :1116 facts omits the 7.5(c) match into the boards/frame;
+    - game_management :624 "NHL 82.3 skips the warning" (82.2(v) writes it).
+  - Later rows:
+    - team_play :290 Level 3 Note;
+    - special_teams :685 bench minor vs NHL 20.3.
+- **Leftovers from the fix wave:**
+  - faceoffs :4-6 opening blockquote implies every NHL faceoff rule has a PWHL twin (false for 78.8);
+  - defender :337 stick lift "hooking in three of six books" vs USAH Casebook 623 Sit 1;
+  - uk_rules :104 R&R scope wording;
+  - puck_support trailer cites a 6–10 policy no longer used in the text.
+- **Fix wave fx1–fx8 dispatched 19 Oct** with all OR review findings (brief at scratchpad or/fix_brief.md).
+- **OR review, rvG3 (systems, no MAJOR):**
+  - game_management :637: 610(d) add "or deprives… an immediate scoring opportunity" (permissive half-rule).
+  - special_teams facts: the HC head-hit limb lost "a match if defenceless"; "a major and one on a charge" → "a major and game misconduct".
+  - offensive_zone_play :929: cite the IHUK Junior RoC checking age (from U14); :784 restore "unable to protect or defend".
+  - game_management :624: "at the dot the attackers pick".
+  - faceoffs :1349: the "No divergence" provenance now contradicts 78.8.
+  - New: pwhl_rules.txt has 11 pages with 2024-25 footers; add to sources/README.
+- **OR review, rvG4 (no MAJOR):**
+  - time_and_space :555: add the Casebook 607 Sit 5 limits ("never to intimidate or punish him; avoidable contact is still a penalty").
+  - rink_map :224: "intimidate or punish".
+  - Both sites: "one exception" → "an exception" (Sit 4 is a second no-penalty case).
+  - on_ice_communication :148: restore "in its own competitions" if the cap allows.
+  - team_play :137: optional CARHA 19 Note 1 limb.
+  - Confirm the 3 LOST markers (equipment and mental_game edition notes) are unvoiced.
+- **OR review, rvG2:**
+  - SUPERSEDED by rounds 3–4 (Glossary: a check on a vulnerable skater is reckless by definition; the conservative IIHF formula is settled; do not reopen). Original: "still no minor even when it reaches the head" is false for the IIHF (43.3 needs reckless; 48.2 minor survives). Scope it to NHL+PWHL corpus-wide (rules_primer :35 :465 :1100 KT7 :1155; glossary :289; grep others).
+  - MINOR: uk_rules :256 restore "read as written for"; rules_primer :835 attribute "England and Wales" to R&R 1.1, not 22.3.
+  - MINOR: cite IIHF 20.4 with Table 6; the disagreement is the willing-combatant limb only.
+  - MINOR: uk_rules :106 bridge clause between the neck guard and the trapezoid.
+- **PWHL as sixth book, residual:** about 70 "NHL and IIHF" pairs in the systems documents (and likely elsewhere) omit the PWHL. Check each against pwhl_rules.txt; add it where the PWHL has the rule. The forechecking_systems trailer (:1111) still calls the PWHL "not one of the four".
+- **Board posture in KT and CM layers of inherited documents** (per-limb layer test, 23 Sep KEEP/DEMOTE ruling): defensive_zone_coverage, forechecking_systems, neutral_zone_systems, offensive_zone_play.
+- **rules_primer:** about 20 body bullets say "plan on one (602(a))" and rely on one stated suspension sentence; consider whether each needs it.
+- **Facts lines at cap** could not take the 602(a) suspension or the 43/48 clause; the body carries them.
+
 ### Also open from this session
 - The phone-bar `audio-idle` hook lives in essentials-view.js; consider moving it to audio-player.js.
 - ReadingTools.astro header comment: it says src/lib, but the file is public/essentials-view.js.
