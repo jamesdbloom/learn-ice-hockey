@@ -840,6 +840,19 @@ places in the old plan.
 
 ### P1 readability — tactics ratio, layers, kernels, lengths
 
+- **[READABILITY PROGRAMME, owner-approved 19 Oct 2026: HIGHEST PRIORITY]** The owner approved this list ("yes please … put these in the readability section so they are the highest priority"). Per-document passes apply items 1–6. Item 7 is coordinator tooling. Items 8–11 need owner sign-off on the site design.
+  1. **Short paragraphs:** at most about 4–5 sentences and about 1,200 characters each. Split wherever the idea changes. Some paragraphs today run past 9,000 characters.
+  2. **Rules go last in each section:** lead with what to do, then one short "What it costs" block (or the existing facts block) at the end. Every safety limb stays in that section.
+  3. **Each layer does a different job:** Key focus = the 5–10 things a player does; Overview = why they matter; Key Takeaways = one line per instruction; Common Mistakes = the mistake, then the fix. No sentence repeated word for word across layers.
+  4. **Plain words over rulebook words in the teaching text:** "thrown out of the game", not "game misconduct". Define each term once. Facts lines and costs blocks may use the exact terms.
+  5. **Fewer rule numbers in prose:** keep them in facts lines, costs blocks and the Sources trailer; elsewhere name the book.
+  6. **Fewer ⚠️ markers:** keep them only for real injury, ejection or penalty risk. Use check_marker_pairs, 0 lost; a paragraph that had a marker keeps at least one.
+  7. **A readability measure (tooling):** a script reporting per-document word count, mean and maximum sentence length, maximum paragraph length, hard-word rate and Key Takeaway lengths, so each round shows its progress.
+  8. **Consistent terms across documents** ("defender" vs "defenceman", "net" vs "goal frame"): pick one, glossary first, then sweep.
+  9. **(Site, owner sign-off)** A "Just the essentials" view: each page opens with Key focus and Key Takeaways, and the full detail is one click away.
+  10. **(Site, owner sign-off)** A one-line "in short" summary at the top of each long section.
+  11. **(Site, owner sign-off)** Reading time per page. Also trim or collapse the long Sources trailers on the site.
+  - **Rollout:** the 20 documents in flight in R1 have the shortening brief only. The queued 19 get preamble_v2 (shortening plus items 1–6). An R2 pass then applies items 1–6 to the first 20.
 - **[OWNER, 19 Oct 2026: SHORTER IS BETTER]** Verbatim: *"make the text as short as possible, I want it to still be clear and easy to understand but shorter text is better then longer text as it is easier and faster to read"*. This is a standing rule for every edit and a readability workstream of its own. Cut words that do no work: repeated qualifiers, restated citations, book tours, throat-clearing, and a second sentence that says the first again. Prefer one short sentence to a long one. Keep every safety limb and honest disclosure (non-negotiables 3 and 4), but say each once and briefly. Rules detail belongs in the body or facts, not repeated in every layer. Measure each document's word count before and after, and review every cut for a lost limb.
 
 - [P1] P1 coverage check of the 28-Sep "not yet waved" list (puck_support_and_spacing, skating, practice_and_development, conditioning_and_recovery, scanning, NZS, mental_game) — most were waved in W8/W9/W11; verify which never got a P1 pass, readability (direction: readability) — (plan 748) — [T1; untested since 30 Sep 2026] — W32 14 Oct: neutral_zone_systems closed, practice_and_development closed, puck_support_and_spacing closed, scanning_and_anticipation closed, skating closed (see review record) — W33 15 Oct: conditioning_and_recovery closed, mental_game closed, skating closed (see review record)
