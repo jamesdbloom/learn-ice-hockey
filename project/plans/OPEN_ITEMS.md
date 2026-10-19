@@ -879,7 +879,8 @@ places in the old plan.
     - (ii) DONE in S3.
     - (jj) DONE in S3.
     - (ll) DONE 19 Oct (S4): check_marker_pairs reports SPLIT HALF UNMARKED (candidate). It recovers all nine S3 losses on a reconstruction; on the 16 S3 files its only hits are :870 and :891, both ruled LEAVE. Uncalibrated on R2 (298 candidates against 2c7435b~1, unread).
-    - (mm) **Orphaned "What it costs." labels in audio.** The bare label is its own `<p>`, and it ends a chunk in body_contact (chunks 009, 020, 039, 046, 166) and winger (009, 059). The listener hears the label, then a chunk break. Fold the label into the first item, e.g. `- **What it costs.** <first item>`, or into a lead sentence.
+    - (mm) DONE 19 Oct (S4): md_to_speech keep-with-next. Headings, generated intros and short bold or colon labels never end a chunk. Lead-ins ending a chunk went 127 → 0; the joined speech is byte-identical; no chunk is over the limit.
+    - (nn) **Read the chunk tails the keep-with-next repack moved.** `check_chunk_tails --prose` permission tails went 257 → 275, and facts tails 332 → 337. Some of these are prose newly exposed where a heading used to sit; some may be new boundaries that cut a permission off from its limit. Before/after lists are in session scratchpad s4/render/*.before.txt and *.after.txt. Known: puck_handling chunk 028 ends on the strength-move permission.
     - (kk) **Site findings, owner sign-off:**
       - On phones the sticky audio player takes about 85 px under the header (17% of the screen at 400 px).
       - The ToC has no active-heading tracking.
@@ -888,7 +889,25 @@ places in the old plan.
   - **S1 DONE (19 Oct).** The claim sweep of the 19 R1-only documents is complete: 13 edited, 6 clean. Record: project/reviews/claim_sweep_s1_2026-10-19.md. That closes rows (a), (b), (d), (e), (i)–(n), (q), (s) and (t) for the R1-only documents; R2 had already covered its own 20.
   - **S2 DONE (19 Oct, 2a17bd5).** Fights outside the periods (cc) and leftovers (bb), (dd), (ee), (ff); browser pass (o). Record: project/reviews/s2_fights_outside_periods_2026-10-19.md.
   - **S3 DONE (19 Oct).** Rows (hh) placement in winger, body_contact and team_play; (ii) amber on citations; (jj) body_contact paragraphs (19 → 1 over 1,200); (aa) pre-existing quotation drift (~80 fixes). Committed 036b698. Record: project/reviews/s3_placement_amber_quotes_2026-10-19.md. Still open: (ll) the tool gap, and the (hh) owner design call on styling.
-  - **S4 IN PROGRESS (19 Oct).** Row (ll): check_marker_pairs split-half check. Row (mm): orphaned "What it costs." audio labels, corpus scan then fixes.
+  - **S4 DONE (19 Oct).** Row (ll) check_marker_pairs split-half check (f59c942) and row (mm) renderer keep-with-next. The item 8 term census is below.
+  - **[Item 8, consistent terms] census done 19 Oct** (session scratchpad s4/terms/; perdoc_counts.csv, rerun count.py). **T1 (glossary-consistent sweep, no owner decision needed):**
+    - face-off → faceoff (~75)
+    - short-handed → shorthanded (17)
+    - on-side → onside (~5)
+    - rule-sense off-side → offside (~33)
+    - bodycheck/bodychecking/non-attributive body-check → body check/body checking (~50)
+    - linesman → linesperson, except uk_rules for British books (~10)
+    - netminder → goalie (2)
+    - wraparound → wrap-around (2)
+
+    Never inside quotations, rule titles or verbatim rulings. Mind facts caps and anchor headings. Diagram captions are a separate pass.
+
+    **OWNER QUESTIONS:**
+    - (a) US spellings in the position pages. Style guide :995 tolerates "defenseman" (32) and "center" (36) there, but British spelling dominates everywhere, including inside center.md (centre 82 vs center 16). Should those pages be swept to defenceman/centre, and are the `# Center` / `# Defender` page titles and URLs kept?
+    - (b) goalie vs goaltender vs goalkeeper. The glossary has no headword for any of them. Prose uses goalie 1,893, goaltender 735 and goalkeeper 461; diagrams use goaltender 273. The census recommends **goalie** in prose (with goaltender kept in rule names such as "goaltender interference" and in the page title) and goalkeeper only in quotations. That is about 440–1,130 edits plus diagrams.
+    - (c) The glossary uses "off-side" for the unnatural-hand side, the same spelling the books use for the rule. Suggest "off side" for the hand sense.
+    - (d) "House default" (about 45 uses, mostly defensive_zone_coverage) collides with the glossary's "the house" = home plate. Rename the default?
+    - (e) "Penalty bench" vs "penalty box". The census suggests penalty box in prose.
   - **[R1 corpus-claim leftovers] Sweep each of these claims across sibling documents, by claim and not by line.**
     - (a) "From behind ends your game in every book but USA Hockey's" is wrong at the boards: USAH Casebook 608 Situation 1 makes it mandatory there.
     - (b) Goalie injury stoppage: "every book stops play" leaves out the possession gate in five books (NHL/IIHF/PWHL 8.1, USAH 206(a), HC 2.4(b)).

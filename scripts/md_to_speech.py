@@ -549,6 +549,20 @@ class Token:
     text: str
 
 
+#: Keep-with-next marker. A LEAD-IN -- a heading, a generated intro ("The key
+#: facts for this section."), or a short label ("What it costs.", "The jobs:")
+#: -- carries this token straight after its opening ``<p>``. It renders to
+#: NOTHING (SSML kind, empty text: ``render`` and ``plain`` both emit ""), so
+#: the SSML and the billed count are unchanged; ``split_oversized`` reads it to
+#: avoid ending a chunk on a lead-in whose content opens the next chunk.
+#: Measured 19 Oct 2026, before it existed: 127 chunks ended on one, so a listener heard
+#: "What it costs." and then the request boundary, with the costs in the next file.
+KEEP_WITH_NEXT = Token(SSML, "")
+
+#: A label paragraph is keep-with-next only when it is this short (spoken chars).
+LEAD_IN_MAX_CHARS = 60
+
+
 def raw(text: str) -> list[Token]:
     return [Token(RAW, text)] if text else []
 
@@ -2785,7 +2799,15 @@ def render_paragraph(text: str, report: DocReport) -> list[Token]:
         report.converted["callout.important"] += 1
         prefix = done("Important. ")
     body = _retokenise_trimmed(tokens)
-    return [Token(SSML, "<p>")] + prefix + body + [Token(SSML, "</p>")]
+    # A short label paragraph -- bold-only ("**What it costs.**") or ending in a
+    # colon ("The jobs:") -- introduces what follows; mark it keep-with-next.
+    lead: list[Token] = []
+    if len(spoken) <= LEAD_IN_MAX_CHARS and (
+        spoken.endswith(":")
+        or re.fullmatch(r"[\s⚠️❗🚫]*\*\*[^*]+\*\*\s*[:.]?\s*", text)
+    ):
+        lead = [KEEP_WITH_NEXT]
+    return [Token(SSML, "<p>")] + lead + prefix + body + [Token(SSML, "</p>")]
 
 
 def _retokenise_trimmed(tokens: list[Token]) -> list[Token]:
@@ -2940,7 +2962,7 @@ def render_facts(block: Block, report: DocReport) -> list[Token]:
     if not rows:
         return []
 
-    out: list[Token] = [Token(SSML, "<p>")]
+    out: list[Token] = [Token(SSML, "<p>"), KEEP_WITH_NEXT]
     out.extend(done("The key facts for this section. "))
     out.append(Token(SSML, "</p>"))
     for label, value in rows:
@@ -3088,7 +3110,7 @@ def render_table(block: Block, report: DocReport) -> list[Token]:
     ]
     heads = [plain(t).strip().rstrip(":?") for t in heading_tokens]
 
-    out: list[Token] = [Token(SSML, "<p>")]
+    out: list[Token] = [Token(SSML, "<p>"), KEEP_WITH_NEXT]
     out.extend(done("The following reads as a list."))
     out.append(Token(SSML, "</p>"))
 
@@ -3122,7 +3144,7 @@ def render_heading(block: Block, report: DocReport) -> list[Token]:
     pause = BREAK_SECTION if block.level <= 2 else BREAK_SUBSECTION
     report.converted[f"heading.h{block.level}"] += 1
     return (
-        [Token(SSML, f'<break time="{pause}"/>'), Token(SSML, "<p>")]
+        [Token(SSML, f'<break time="{pause}"/>'), Token(SSML, "<p>"), KEEP_WITH_NEXT]
         + _retokenise_trimmed(tokens)
         + [Token(SSML, "</p>"), Token(SSML, f'<break time="{BREAK_AFTER_HEADING}"/>')]
     )
@@ -3300,20 +3322,60 @@ def split_oversized(chunks: Sequence[Chunk]) -> list[Chunk]:
         groups: list[list[Token]] = []
         for group in _group_top_level(chunk.tokens):
             groups.extend(_split_paragraph(group) if _exceeds_limits(group) else [group])
-        current: list[Token] = []
+        current: list[list[Token]] = []
         part = 1
-        for group in groups:
-            candidate = current + group
-            if current and _exceeds_limits(candidate):
-                out.append(Chunk(_part_name(chunk.section, part), current))
-                part += 1
-                current = list(group)
+        index = 0
+        while index < len(groups):
+            group = groups[index]
+            index += 1
+            if current and _exceeds_limits(_flat(current) + group):
+                # Keep-with-next: never end a chunk on a lead-in (heading,
+                # generated intro, short label) whose content is `group`. Peel
+                # trailing lead-ins, and the <break/>s around them, off the
+                # chunk being closed and open the next chunk with them.
+                keep = len(current)
+                while keep and (_is_break_group(current[keep - 1])
+                                or _is_lead_in(current[keep - 1])):
+                    keep -= 1
+                carried = current[keep:]
+                if not any(_is_lead_in(g) for g in carried):
+                    keep, carried = len(current), []   # no lead-in: unchanged
+                if carried and _exceeds_limits(_flat(carried) + group):
+                    # The lead-in does not fit beside its content: split the
+                    # content again, leaving room for the lead-in in the first
+                    # piece. If even that cannot fit (one huge sentence), fall
+                    # back to the old behaviour -- the budget outranks the
+                    # lead-in, and oversized_after_split reports nothing new.
+                    pieces = _split_paragraph(group, reserve=_flat(carried))
+                    if _exceeds_limits(_flat(carried) + pieces[0]):
+                        keep, carried = len(current), []
+                    else:
+                        groups[index - 1:index] = pieces
+                        group = pieces[0]
+                head = current[:keep]
+                if head:
+                    out.append(Chunk(_part_name(chunk.section, part), _flat(head)))
+                    part += 1
+                current = carried + [group]
             else:
-                current = candidate
+                current.append(group)
         if current:
             name = chunk.section if part == 1 else _part_name(chunk.section, part)
-            out.append(Chunk(name, current))
+            out.append(Chunk(name, _flat(current)))
     return out
+
+
+def _flat(groups: Sequence[Sequence[Token]]) -> list[Token]:
+    return [token for group in groups for token in group]
+
+
+def _is_break_group(group: Sequence[Token]) -> bool:
+    return all(t.kind == SSML and t.text.startswith("<break") for t in group)
+
+
+def _is_lead_in(group: Sequence[Token]) -> bool:
+    """A <p> group marked KEEP_WITH_NEXT (see the marker's definition)."""
+    return len(group) > 1 and group[0].text == "<p>" and group[1] == KEEP_WITH_NEXT
 
 
 def oversized_after_split(chunks: Sequence[Chunk]) -> list[tuple[str, int, int]]:
@@ -3424,7 +3486,7 @@ RE_SENTENCE_END = re.compile(
 RE_SENTENCE_TAIL = re.compile(r"[.!?][\"'\u201d\u2019\)\]]*\s*$")
 
 
-def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
+def _split_paragraph(group: Sequence[Token], reserve: Sequence[Token] = ()) -> list[list[Token]]:
     """Break one oversized <p> into several, at sentence boundaries.
 
     Only splits where no nested element is open AND the previous atom ended a
@@ -3516,8 +3578,11 @@ def _split_paragraph(group: Sequence[Token]) -> list[list[Token]]:
         current: list[Token] = []
         for unit in units:
             candidate = current + list(unit)
+            # `reserve` (keep-with-next) is room for a lead-in that will open
+            # the same chunk as the FIRST group; later groups need none.
+            ahead = [] if groups else list(reserve)
             if current and _exceeds_limits(
-                [Token(SSML, "<p>")] + candidate + [Token(SSML, "</p>")]
+                ahead + [Token(SSML, "<p>")] + candidate + [Token(SSML, "</p>")]
             ):
                 groups.append([Token(SSML, "<p>")] + current + [Token(SSML, "</p>")])
                 current = list(unit)
